@@ -32,16 +32,16 @@ object transitionServiceMod extends js.Object {
   class TransitionService protected ()
     extends IHookRegistry
        with Disposable {
-    /** @hidden */
+    /** @internal */
     def this(_router: UIRouter) = this()
-    /** @hidden */
+    /** @internal */
     @JSName("$view")
     var $view: ViewService = js.native
-    /** @hidden The  paths on a criteria object */
+    /** The  paths on a criteria object */
     var _criteriaPaths: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _defineCoreEvents: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _defineCorePaths: js.Any = js.native
     /**
       * Adds a Path to be used as a criterion against a TreeChanges path
@@ -54,35 +54,100 @@ object transitionServiceMod extends js.Object {
       * It was defined by calling `defineTreeChangesCriterion('to', TransitionHookScope.TRANSITION)`
       * Only the tail of the `to` path is checked against the criteria and returned as part of the match.
       *
-      * @hidden
+      * @internal
       */
     var _definePathType: js.Any = js.native
     /**
       * This object has hook de-registration functions for the built-in hooks.
       * This can be used by third parties libraries that wish to customize the behaviors
       *
-      * @hidden
+      * @internal
       */
     var _deregisterHookFns: ActivateViews = js.native
-    /** @hidden The transition hook types, such as `onEnter`, `onStart`, etc */
+    /** The transition hook types, such as `onEnter`, `onStart`, etc */
     var _eventTypes: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _getEvents: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _getPathTypes: js.Any = js.native
-    /** @internalapi */
+    /** @internal */
     var _pluginapi: TransitionServicePluginAPI = js.native
-    /** @hidden */
+    /** @internal */
     var _registerCoreTransitionHooks: js.Any = js.native
-    /** @hidden The registered transition hooks */
+    /** @internal The registered transition hooks */
     @JSName("_registeredHooks")
     var _registeredHooks_TransitionService: RegisteredHooks = js.native
-    /** @hidden */
     var _router: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _transitionCount: Double = js.native
-    /** @hidden */
+    /** @internal */
     def _defineEvent(name: String, hookPhase: TransitionHookPhase, hookOrder: Double, criteriaMatchPath: PathType): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      synchronous: Boolean
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler,
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      synchronous: Boolean
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ): Unit = js.native
     def _defineEvent(
       name: String,
       hookPhase: TransitionHookPhase,
@@ -96,7 +161,46 @@ object transitionServiceMod extends js.Object {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      synchronous: Boolean
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
       getResultHandler: GetResultHandler
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      synchronous: Boolean
     ): Unit = js.native
     def _defineEvent(
       name: String,
@@ -123,6 +227,7 @@ object transitionServiceMod extends js.Object {
       * This is a factory function for creating new Transition objects.
       * It is used internally by the [[StateService]] and should generally not be called by application code.
       *
+      * @internal
       * @param fromPath the path to the current state (the from state)
       * @param targetState the target state (destination)
       * @returns a Transition
@@ -145,7 +250,7 @@ object transitionServiceMod extends js.Object {
       *
       * The hook's return value is ignored
       *
-      * @internalapi
+      * @internal
       * @param criteria defines which Transitions the Hook should be invoked for.
       * @param callback the hook function which will be invoked.
       * @param options the registration options
@@ -167,6 +272,72 @@ object transitionServiceMod extends js.Object {
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      rejectIfSuperseded: Boolean
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler,
+      rejectIfSuperseded: Boolean
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler,
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      rejectIfSuperseded: Boolean
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler,
+      rejectIfSuperseded: Boolean
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
       reverseSort: Boolean
     ): js.Any = js.native
     def _defineEvent(
@@ -175,7 +346,46 @@ object transitionServiceMod extends js.Object {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      rejectIfSuperseded: Boolean
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler,
+      rejectIfSuperseded: Boolean
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
       getResultHandler: GetResultHandler
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      rejectIfSuperseded: Boolean
     ): js.Any = js.native
     def _defineEvent(
       name: String,

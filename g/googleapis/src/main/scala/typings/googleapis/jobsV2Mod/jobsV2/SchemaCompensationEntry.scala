@@ -47,22 +47,46 @@ trait SchemaCompensationEntry extends js.Object {
 
 object SchemaCompensationEntry {
   @scala.inline
-  def apply(
-    amount: SchemaMoney = null,
-    description: String = null,
-    expectedUnitsPerYear: js.UndefOr[Double] = js.undefined,
-    range: SchemaCompensationRange = null,
-    `type`: String = null,
-    unit: String = null
-  ): SchemaCompensationEntry = {
+  def apply(): SchemaCompensationEntry = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(expectedUnitsPerYear)) __obj.updateDynamic("expectedUnitsPerYear")(expectedUnitsPerYear.get.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCompensationEntry]
   }
+  @scala.inline
+  implicit class SchemaCompensationEntryOps[Self <: SchemaCompensationEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: SchemaMoney): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExpectedUnitsPerYear(value: Double): Self = this.set("expectedUnitsPerYear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedUnitsPerYear: Self = this.set("expectedUnitsPerYear", js.undefined)
+    @scala.inline
+    def setRange(value: SchemaCompensationRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+  }
+  
 }
 

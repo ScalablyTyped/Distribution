@@ -50,30 +50,66 @@ trait GetDocumentResult extends js.Object {
 
 object GetDocumentResult {
   @scala.inline
-  def apply(
-    AttachmentsContent: AttachmentContentList = null,
-    Content: DocumentContent = null,
-    DocumentFormat: DocumentFormat = null,
-    DocumentType: DocumentType = null,
-    DocumentVersion: DocumentVersion = null,
-    Name: DocumentARN = null,
-    Requires: DocumentRequiresList = null,
-    Status: DocumentStatus = null,
-    StatusInformation: DocumentStatusInformation = null,
-    VersionName: DocumentVersionName = null
-  ): GetDocumentResult = {
+  def apply(): GetDocumentResult = {
     val __obj = js.Dynamic.literal()
-    if (AttachmentsContent != null) __obj.updateDynamic("AttachmentsContent")(AttachmentsContent.asInstanceOf[js.Any])
-    if (Content != null) __obj.updateDynamic("Content")(Content.asInstanceOf[js.Any])
-    if (DocumentFormat != null) __obj.updateDynamic("DocumentFormat")(DocumentFormat.asInstanceOf[js.Any])
-    if (DocumentType != null) __obj.updateDynamic("DocumentType")(DocumentType.asInstanceOf[js.Any])
-    if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Requires != null) __obj.updateDynamic("Requires")(Requires.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusInformation != null) __obj.updateDynamic("StatusInformation")(StatusInformation.asInstanceOf[js.Any])
-    if (VersionName != null) __obj.updateDynamic("VersionName")(VersionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDocumentResult]
   }
+  @scala.inline
+  implicit class GetDocumentResultOps[Self <: GetDocumentResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentsContentVarargs(value: AttachmentContent*): Self = this.set("AttachmentsContent", js.Array(value :_*))
+    @scala.inline
+    def setAttachmentsContent(value: AttachmentContentList): Self = this.set("AttachmentsContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentsContent: Self = this.set("AttachmentsContent", js.undefined)
+    @scala.inline
+    def setContent(value: DocumentContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("Content", js.undefined)
+    @scala.inline
+    def setDocumentFormat(value: DocumentFormat): Self = this.set("DocumentFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentFormat: Self = this.set("DocumentFormat", js.undefined)
+    @scala.inline
+    def setDocumentType(value: DocumentType): Self = this.set("DocumentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentType: Self = this.set("DocumentType", js.undefined)
+    @scala.inline
+    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    @scala.inline
+    def setName(value: DocumentARN): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRequiresVarargs(value: DocumentRequires*): Self = this.set("Requires", js.Array(value :_*))
+    @scala.inline
+    def setRequires(value: DocumentRequiresList): Self = this.set("Requires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequires: Self = this.set("Requires", js.undefined)
+    @scala.inline
+    def setStatus(value: DocumentStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusInformation(value: DocumentStatusInformation): Self = this.set("StatusInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusInformation: Self = this.set("StatusInformation", js.undefined)
+    @scala.inline
+    def setVersionName(value: DocumentVersionName): Self = this.set("VersionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionName: Self = this.set("VersionName", js.undefined)
+  }
+  
 }
 

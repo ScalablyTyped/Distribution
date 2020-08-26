@@ -11,7 +11,7 @@ Priority queue data structures
 | Keywords           | priority, queue, bheap, b-heap, binary, heap, dequeue, comparator |
 | # releases         | 1 |
 | # dependents       | 29 |
-| # downloads        | 109285 |
+| # downloads        | 111424 |
 | # stars            | 2 |
 
 ## Links

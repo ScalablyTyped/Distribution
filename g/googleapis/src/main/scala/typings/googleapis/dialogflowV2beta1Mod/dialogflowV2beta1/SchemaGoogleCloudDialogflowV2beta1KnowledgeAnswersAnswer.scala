@@ -48,20 +48,42 @@ trait SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer extends js.Object
 
 object SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer {
   @scala.inline
-  def apply(
-    answer: String = null,
-    faqQuestion: String = null,
-    matchConfidence: js.UndefOr[Double] = js.undefined,
-    matchConfidenceLevel: String = null,
-    source: String = null
-  ): SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer = {
     val __obj = js.Dynamic.literal()
-    if (answer != null) __obj.updateDynamic("answer")(answer.asInstanceOf[js.Any])
-    if (faqQuestion != null) __obj.updateDynamic("faqQuestion")(faqQuestion.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchConfidence)) __obj.updateDynamic("matchConfidence")(matchConfidence.get.asInstanceOf[js.Any])
-    if (matchConfidenceLevel != null) __obj.updateDynamic("matchConfidenceLevel")(matchConfidenceLevel.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswerOps[Self <: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnswer(value: String): Self = this.set("answer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnswer: Self = this.set("answer", js.undefined)
+    @scala.inline
+    def setFaqQuestion(value: String): Self = this.set("faqQuestion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaqQuestion: Self = this.set("faqQuestion", js.undefined)
+    @scala.inline
+    def setMatchConfidence(value: Double): Self = this.set("matchConfidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchConfidence: Self = this.set("matchConfidence", js.undefined)
+    @scala.inline
+    def setMatchConfidenceLevel(value: String): Self = this.set("matchConfidenceLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchConfidenceLevel: Self = this.set("matchConfidenceLevel", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+  }
+  
 }
 

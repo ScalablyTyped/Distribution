@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBrowser extends js.Object {
   /**
     * Determined dynamically
     * @deprecated
     */
-  var major: js.UndefOr[String] = js.undefined
+  var major: js.UndefOr[String] = js.native
   /**
     * Possible values :
     * Amaya, Android Browser, Arora, Avant, Baidu, Blazer, Bolt, Camino, Chimera, Chrome,
@@ -22,21 +23,43 @@ trait IBrowser extends js.Object {
     * Tizen, UCBrowser, Vivaldi, w3m, Yandex
     *
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Determined dynamically
     */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
 }
 
 object IBrowser {
   @scala.inline
-  def apply(major: String = null, name: String = null, version: String = null): IBrowser = {
+  def apply(): IBrowser = {
     val __obj = js.Dynamic.literal()
-    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBrowser]
   }
+  @scala.inline
+  implicit class IBrowserOps[Self <: IBrowser] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMajor(value: String): Self = this.set("major", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajor: Self = this.set("major", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

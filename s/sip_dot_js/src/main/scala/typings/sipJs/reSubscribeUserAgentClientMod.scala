@@ -17,6 +17,7 @@ object reSubscribeUserAgentClientMod extends js.Object {
   class ReSubscribeUserAgentClient protected () extends UserAgentClient {
     def this(dialog: SubscriptionDialog) = this()
     def this(dialog: SubscriptionDialog, delegate: OutgoingRequestDelegate) = this()
+    def this(dialog: SubscriptionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
     def this(dialog: SubscriptionDialog, delegate: OutgoingRequestDelegate, options: RequestOptions) = this()
     var dialog: js.Any = js.native
     /** Stop waiting for an inital subscription creating NOTIFY. */

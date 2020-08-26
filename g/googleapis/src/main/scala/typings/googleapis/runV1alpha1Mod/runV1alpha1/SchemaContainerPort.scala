@@ -39,20 +39,42 @@ trait SchemaContainerPort extends js.Object {
 
 object SchemaContainerPort {
   @scala.inline
-  def apply(
-    containerPort: js.UndefOr[Double] = js.undefined,
-    hostIP: String = null,
-    hostPort: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    protocol: String = null
-  ): SchemaContainerPort = {
+  def apply(): SchemaContainerPort = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(containerPort)) __obj.updateDynamic("containerPort")(containerPort.get.asInstanceOf[js.Any])
-    if (hostIP != null) __obj.updateDynamic("hostIP")(hostIP.asInstanceOf[js.Any])
-    if (!js.isUndefined(hostPort)) __obj.updateDynamic("hostPort")(hostPort.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContainerPort]
   }
+  @scala.inline
+  implicit class SchemaContainerPortOps[Self <: SchemaContainerPort] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerPort(value: Double): Self = this.set("containerPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerPort: Self = this.set("containerPort", js.undefined)
+    @scala.inline
+    def setHostIP(value: String): Self = this.set("hostIP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostIP: Self = this.set("hostIP", js.undefined)
+    @scala.inline
+    def setHostPort(value: Double): Self = this.set("hostPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostPort: Self = this.set("hostPort", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+  }
+  
 }
 

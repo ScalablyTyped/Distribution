@@ -1,6 +1,6 @@
 package typings.tsInvariant
 
-import typings.node.NodeJS.Process
+import typings.node.processMod.global.NodeJS.Process
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,10 +14,6 @@ object mod extends js.Object {
     def this(message: String) = this()
     def this(message: Double) = this()
     var framesToPop: Double = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   var process: Process = js.native

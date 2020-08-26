@@ -10,9 +10,9 @@ omggif is a JavaScript implementation of a GIF 89a encoder and decoder.
 | ------------------ | :-------------: |
 | Full name          | omggif |
 | Keywords           | gif, gif89a, gif87a, plask |
-| # releases         | 3 |
-| # dependents       | 49 |
-| # downloads        | 19107084 |
+| # releases         | 2 |
+| # dependents       | 51 |
+| # downloads        | 20411326 |
 | # stars            | 0 |
 
 ## Links

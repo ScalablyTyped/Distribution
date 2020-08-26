@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createWrapService extends js.Object {
   def apply(acsHost: String): WrapService = js.native
+  def apply(acsHost: String, issuer: js.UndefOr[scala.Nothing], accessKey: String): WrapService = js.native
   def apply(acsHost: String, issuer: String): WrapService = js.native
   def apply(acsHost: String, issuer: String, accessKey: String): WrapService = js.native
 }

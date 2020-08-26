@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServerOptions extends js.Object {
-  var disconnect_delay: js.UndefOr[Double] = js.undefined
-  var heartbeat_delay: js.UndefOr[Double] = js.undefined
-  var jsessionid: js.UndefOr[js.Any] = js.undefined
-  var log: js.UndefOr[js.Function2[/* severity */ String, /* message */ String, Unit]] = js.undefined
-  var prefix: js.UndefOr[String] = js.undefined
-  var response_limit: js.UndefOr[Double] = js.undefined
-  var sockjs_url: js.UndefOr[String] = js.undefined
-  var websocket: js.UndefOr[Boolean] = js.undefined
+  var disconnect_delay: js.UndefOr[Double] = js.native
+  var heartbeat_delay: js.UndefOr[Double] = js.native
+  var jsessionid: js.UndefOr[js.Any] = js.native
+  var log: js.UndefOr[js.Function2[/* severity */ String, /* message */ String, Unit]] = js.native
+  var prefix: js.UndefOr[String] = js.native
+  var response_limit: js.UndefOr[Double] = js.native
+  var sockjs_url: js.UndefOr[String] = js.native
+  var websocket: js.UndefOr[Boolean] = js.native
 }
 
 object ServerOptions {
   @scala.inline
-  def apply(
-    disconnect_delay: js.UndefOr[Double] = js.undefined,
-    heartbeat_delay: js.UndefOr[Double] = js.undefined,
-    jsessionid: js.Any = null,
-    log: (/* severity */ String, /* message */ String) => Unit = null,
-    prefix: String = null,
-    response_limit: js.UndefOr[Double] = js.undefined,
-    sockjs_url: String = null,
-    websocket: js.UndefOr[Boolean] = js.undefined
-  ): ServerOptions = {
+  def apply(): ServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disconnect_delay)) __obj.updateDynamic("disconnect_delay")(disconnect_delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(heartbeat_delay)) __obj.updateDynamic("heartbeat_delay")(heartbeat_delay.get.asInstanceOf[js.Any])
-    if (jsessionid != null) __obj.updateDynamic("jsessionid")(jsessionid.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(response_limit)) __obj.updateDynamic("response_limit")(response_limit.get.asInstanceOf[js.Any])
-    if (sockjs_url != null) __obj.updateDynamic("sockjs_url")(sockjs_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(websocket)) __obj.updateDynamic("websocket")(websocket.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
+  @scala.inline
+  implicit class ServerOptionsOps[Self <: ServerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisconnect_delay(value: Double): Self = this.set("disconnect_delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisconnect_delay: Self = this.set("disconnect_delay", js.undefined)
+    @scala.inline
+    def setHeartbeat_delay(value: Double): Self = this.set("heartbeat_delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeartbeat_delay: Self = this.set("heartbeat_delay", js.undefined)
+    @scala.inline
+    def setJsessionid(value: js.Any): Self = this.set("jsessionid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsessionid: Self = this.set("jsessionid", js.undefined)
+    @scala.inline
+    def setLog(value: (/* severity */ String, /* message */ String) => Unit): Self = this.set("log", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLog: Self = this.set("log", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setResponse_limit(value: Double): Self = this.set("response_limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse_limit: Self = this.set("response_limit", js.undefined)
+    @scala.inline
+    def setSockjs_url(value: String): Self = this.set("sockjs_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSockjs_url: Self = this.set("sockjs_url", js.undefined)
+    @scala.inline
+    def setWebsocket(value: Boolean): Self = this.set("websocket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsocket: Self = this.set("websocket", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait Mitigation extends js.Object {
 
 object Mitigation {
   @scala.inline
-  def apply(MitigationName: String = null): Mitigation = {
+  def apply(): Mitigation = {
     val __obj = js.Dynamic.literal()
-    if (MitigationName != null) __obj.updateDynamic("MitigationName")(MitigationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mitigation]
   }
+  @scala.inline
+  implicit class MitigationOps[Self <: Mitigation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMitigationName(value: String): Self = this.set("MitigationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMitigationName: Self = this.set("MitigationName", js.undefined)
+  }
+  
 }
 

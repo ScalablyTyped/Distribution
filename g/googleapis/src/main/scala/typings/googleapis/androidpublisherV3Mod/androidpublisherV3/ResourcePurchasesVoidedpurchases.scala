@@ -32,6 +32,7 @@ class ResourcePurchasesVoidedpurchases protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaVoidedPurchasesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaVoidedPurchasesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVoidedPurchasesListResponse] = js.native
   def list(params: ParamsResourcePurchasesVoidedpurchasesList): GaxiosPromise[SchemaVoidedPurchasesListResponse] = js.native
   def list(
     params: ParamsResourcePurchasesVoidedpurchasesList,

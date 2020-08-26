@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait City extends js.Object {
-  var countryCode: js.UndefOr[String] = js.undefined
-  var countryDartId: js.UndefOr[String] = js.undefined
-  var dartId: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var metroCode: js.UndefOr[String] = js.undefined
-  var metroDmaId: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var regionCode: js.UndefOr[String] = js.undefined
-  var regionDartId: js.UndefOr[String] = js.undefined
+  var countryCode: js.UndefOr[String] = js.native
+  var countryDartId: js.UndefOr[String] = js.native
+  var dartId: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var metroCode: js.UndefOr[String] = js.native
+  var metroDmaId: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.native
+  var regionDartId: js.UndefOr[String] = js.native
 }
 
 object City {
   @scala.inline
-  def apply(
-    countryCode: String = null,
-    countryDartId: String = null,
-    dartId: String = null,
-    kind: String = null,
-    metroCode: String = null,
-    metroDmaId: String = null,
-    name: String = null,
-    regionCode: String = null,
-    regionDartId: String = null
-  ): City = {
+  def apply(): City = {
     val __obj = js.Dynamic.literal()
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
-    if (countryDartId != null) __obj.updateDynamic("countryDartId")(countryDartId.asInstanceOf[js.Any])
-    if (dartId != null) __obj.updateDynamic("dartId")(dartId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (metroCode != null) __obj.updateDynamic("metroCode")(metroCode.asInstanceOf[js.Any])
-    if (metroDmaId != null) __obj.updateDynamic("metroDmaId")(metroDmaId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
-    if (regionDartId != null) __obj.updateDynamic("regionDartId")(regionDartId.asInstanceOf[js.Any])
     __obj.asInstanceOf[City]
   }
+  @scala.inline
+  implicit class CityOps[Self <: City] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    @scala.inline
+    def setCountryDartId(value: String): Self = this.set("countryDartId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryDartId: Self = this.set("countryDartId", js.undefined)
+    @scala.inline
+    def setDartId(value: String): Self = this.set("dartId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDartId: Self = this.set("dartId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMetroCode(value: String): Self = this.set("metroCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetroCode: Self = this.set("metroCode", js.undefined)
+    @scala.inline
+    def setMetroDmaId(value: String): Self = this.set("metroDmaId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetroDmaId: Self = this.set("metroDmaId", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
+    @scala.inline
+    def setRegionDartId(value: String): Self = this.set("regionDartId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionDartId: Self = this.set("regionDartId", js.undefined)
+  }
+  
 }
 

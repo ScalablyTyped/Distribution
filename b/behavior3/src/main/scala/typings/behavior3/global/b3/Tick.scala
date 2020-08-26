@@ -25,31 +25,5 @@ import scala.scalajs.js.annotation._
   * Initialization method.
   */
 class Tick ()
-  extends typings.behavior3.b3.Tick {
-  /**
-    * Callback when closing a node (called by BaseNode).
-    */
-  /* CompleteClass */
-  override def _closeNode(node: js.Any): Unit = js.native
-  /**
-    * Called when entering a node (called by BaseNode).
-    */
-  /* CompleteClass */
-  override def _enterNode(node: js.Any): Unit = js.native
-  /**
-    * Callback when exiting a node (called by BaseNode).
-    */
-  /* CompleteClass */
-  override def _exitNode(node: js.Any): Unit = js.native
-  /**
-    * Callback when opening a node (called by BaseNode).
-    */
-  /* CompleteClass */
-  override def _openNode(node: js.Any): Unit = js.native
-  /**
-    * Callback when ticking a node (called by BaseNode).
-    */
-  /* CompleteClass */
-  override def _tickNode(node: js.Any): Unit = js.native
-}
+  extends typings.behavior3.b3.Tick
 

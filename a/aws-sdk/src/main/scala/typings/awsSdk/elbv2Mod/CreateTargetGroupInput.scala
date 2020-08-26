@@ -66,37 +66,76 @@ trait CreateTargetGroupInput extends js.Object {
 
 object CreateTargetGroupInput {
   @scala.inline
-  def apply(
-    Name: TargetGroupName,
-    HealthCheckEnabled: js.UndefOr[HealthCheckEnabled] = js.undefined,
-    HealthCheckIntervalSeconds: js.UndefOr[HealthCheckIntervalSeconds] = js.undefined,
-    HealthCheckPath: Path = null,
-    HealthCheckPort: HealthCheckPort = null,
-    HealthCheckProtocol: ProtocolEnum = null,
-    HealthCheckTimeoutSeconds: js.UndefOr[HealthCheckTimeoutSeconds] = js.undefined,
-    HealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined,
-    Matcher: Matcher = null,
-    Port: js.UndefOr[Port] = js.undefined,
-    Protocol: ProtocolEnum = null,
-    TargetType: TargetTypeEnum = null,
-    UnhealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined,
-    VpcId: VpcId = null
-  ): CreateTargetGroupInput = {
+  def apply(Name: TargetGroupName): CreateTargetGroupInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(HealthCheckEnabled)) __obj.updateDynamic("HealthCheckEnabled")(HealthCheckEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HealthCheckIntervalSeconds)) __obj.updateDynamic("HealthCheckIntervalSeconds")(HealthCheckIntervalSeconds.get.asInstanceOf[js.Any])
-    if (HealthCheckPath != null) __obj.updateDynamic("HealthCheckPath")(HealthCheckPath.asInstanceOf[js.Any])
-    if (HealthCheckPort != null) __obj.updateDynamic("HealthCheckPort")(HealthCheckPort.asInstanceOf[js.Any])
-    if (HealthCheckProtocol != null) __obj.updateDynamic("HealthCheckProtocol")(HealthCheckProtocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(HealthCheckTimeoutSeconds)) __obj.updateDynamic("HealthCheckTimeoutSeconds")(HealthCheckTimeoutSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HealthyThresholdCount)) __obj.updateDynamic("HealthyThresholdCount")(HealthyThresholdCount.get.asInstanceOf[js.Any])
-    if (Matcher != null) __obj.updateDynamic("Matcher")(Matcher.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
-    if (TargetType != null) __obj.updateDynamic("TargetType")(TargetType.asInstanceOf[js.Any])
-    if (!js.isUndefined(UnhealthyThresholdCount)) __obj.updateDynamic("UnhealthyThresholdCount")(UnhealthyThresholdCount.get.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTargetGroupInput]
   }
+  @scala.inline
+  implicit class CreateTargetGroupInputOps[Self <: CreateTargetGroupInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: TargetGroupName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHealthCheckEnabled(value: HealthCheckEnabled): Self = this.set("HealthCheckEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckEnabled: Self = this.set("HealthCheckEnabled", js.undefined)
+    @scala.inline
+    def setHealthCheckIntervalSeconds(value: HealthCheckIntervalSeconds): Self = this.set("HealthCheckIntervalSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckIntervalSeconds: Self = this.set("HealthCheckIntervalSeconds", js.undefined)
+    @scala.inline
+    def setHealthCheckPath(value: Path): Self = this.set("HealthCheckPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckPath: Self = this.set("HealthCheckPath", js.undefined)
+    @scala.inline
+    def setHealthCheckPort(value: HealthCheckPort): Self = this.set("HealthCheckPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckPort: Self = this.set("HealthCheckPort", js.undefined)
+    @scala.inline
+    def setHealthCheckProtocol(value: ProtocolEnum): Self = this.set("HealthCheckProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckProtocol: Self = this.set("HealthCheckProtocol", js.undefined)
+    @scala.inline
+    def setHealthCheckTimeoutSeconds(value: HealthCheckTimeoutSeconds): Self = this.set("HealthCheckTimeoutSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckTimeoutSeconds: Self = this.set("HealthCheckTimeoutSeconds", js.undefined)
+    @scala.inline
+    def setHealthyThresholdCount(value: HealthCheckThresholdCount): Self = this.set("HealthyThresholdCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthyThresholdCount: Self = this.set("HealthyThresholdCount", js.undefined)
+    @scala.inline
+    def setMatcher(value: Matcher): Self = this.set("Matcher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatcher: Self = this.set("Matcher", js.undefined)
+    @scala.inline
+    def setPort(value: Port): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setProtocol(value: ProtocolEnum): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    @scala.inline
+    def setTargetType(value: TargetTypeEnum): Self = this.set("TargetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetType: Self = this.set("TargetType", js.undefined)
+    @scala.inline
+    def setUnhealthyThresholdCount(value: HealthCheckThresholdCount): Self = this.set("UnhealthyThresholdCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnhealthyThresholdCount: Self = this.set("UnhealthyThresholdCount", js.undefined)
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

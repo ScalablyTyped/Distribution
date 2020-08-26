@@ -56,24 +56,52 @@ trait SchemaConferenceData extends js.Object {
 
 object SchemaConferenceData {
   @scala.inline
-  def apply(
-    conferenceId: String = null,
-    conferenceSolution: SchemaConferenceSolution = null,
-    createRequest: SchemaCreateConferenceRequest = null,
-    entryPoints: js.Array[SchemaEntryPoint] = null,
-    notes: String = null,
-    parameters: SchemaConferenceParameters = null,
-    signature: String = null
-  ): SchemaConferenceData = {
+  def apply(): SchemaConferenceData = {
     val __obj = js.Dynamic.literal()
-    if (conferenceId != null) __obj.updateDynamic("conferenceId")(conferenceId.asInstanceOf[js.Any])
-    if (conferenceSolution != null) __obj.updateDynamic("conferenceSolution")(conferenceSolution.asInstanceOf[js.Any])
-    if (createRequest != null) __obj.updateDynamic("createRequest")(createRequest.asInstanceOf[js.Any])
-    if (entryPoints != null) __obj.updateDynamic("entryPoints")(entryPoints.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConferenceData]
   }
+  @scala.inline
+  implicit class SchemaConferenceDataOps[Self <: SchemaConferenceData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConferenceId(value: String): Self = this.set("conferenceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConferenceId: Self = this.set("conferenceId", js.undefined)
+    @scala.inline
+    def setConferenceSolution(value: SchemaConferenceSolution): Self = this.set("conferenceSolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConferenceSolution: Self = this.set("conferenceSolution", js.undefined)
+    @scala.inline
+    def setCreateRequest(value: SchemaCreateConferenceRequest): Self = this.set("createRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateRequest: Self = this.set("createRequest", js.undefined)
+    @scala.inline
+    def setEntryPointsVarargs(value: SchemaEntryPoint*): Self = this.set("entryPoints", js.Array(value :_*))
+    @scala.inline
+    def setEntryPoints(value: js.Array[SchemaEntryPoint]): Self = this.set("entryPoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntryPoints: Self = this.set("entryPoints", js.undefined)
+    @scala.inline
+    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotes: Self = this.set("notes", js.undefined)
+    @scala.inline
+    def setParameters(value: SchemaConferenceParameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("signature", js.undefined)
+  }
+  
 }
 

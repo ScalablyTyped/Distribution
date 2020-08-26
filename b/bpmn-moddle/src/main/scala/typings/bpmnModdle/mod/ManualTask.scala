@@ -1,6 +1,5 @@
 package typings.bpmnModdle.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +7,10 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line:no-empty-interface
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.bpmnModdle.mod.TypeDerived because Already inherited
-- typings.bpmnModdle.mod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks */ trait ManualTask extends Activity {
-  var incomingConversationLinks: js.Array[ConversationLink]
-  var outgoingConversationLinks: js.Array[ConversationLink]
+- typings.bpmnModdle.mod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks */ @js.native
+trait ManualTask extends Activity {
+  var incomingConversationLinks: js.Array[ConversationLink] = js.native
+  var outgoingConversationLinks: js.Array[ConversationLink] = js.native
 }
 
 object ManualTask {
@@ -37,20 +37,31 @@ object ManualTask {
     outgoingConversationLinks: js.Array[ConversationLink],
     properties: js.Array[Property],
     resources: ResourceRole,
-    startQuantity: Double,
-    $attrs: StringDictionary[js.Any] = null,
-    documentation: js.Array[Documentation] = null,
-    extensionDefinitions: js.Array[ExtensionDefinition] = null,
-    extensionElements: ExtensionElements = null,
-    name: String = null
+    startQuantity: Double
   ): ManualTask = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], auditing = auditing.asInstanceOf[js.Any], boundaryEventRefs = boundaryEventRefs.asInstanceOf[js.Any], categoryValueRef = categoryValueRef.asInstanceOf[js.Any], completionQuantity = completionQuantity.asInstanceOf[js.Any], dataInputAssociations = dataInputAssociations.asInstanceOf[js.Any], dataOutputAssociations = dataOutputAssociations.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], incoming = incoming.asInstanceOf[js.Any], incomingConversationLinks = incomingConversationLinks.asInstanceOf[js.Any], ioSpecification = ioSpecification.asInstanceOf[js.Any], isForCompensation = isForCompensation.asInstanceOf[js.Any], lanes = lanes.asInstanceOf[js.Any], loopCharacteristics = loopCharacteristics.asInstanceOf[js.Any], monitoring = monitoring.asInstanceOf[js.Any], outgoing = outgoing.asInstanceOf[js.Any], outgoingConversationLinks = outgoingConversationLinks.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], startQuantity = startQuantity.asInstanceOf[js.Any])
-    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions.asInstanceOf[js.Any])
-    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManualTask]
   }
+  @scala.inline
+  implicit class ManualTaskOps[Self <: ManualTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIncomingConversationLinksVarargs(value: ConversationLink*): Self = this.set("incomingConversationLinks", js.Array(value :_*))
+    @scala.inline
+    def setIncomingConversationLinks(value: js.Array[ConversationLink]): Self = this.set("incomingConversationLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutgoingConversationLinksVarargs(value: ConversationLink*): Self = this.set("outgoingConversationLinks", js.Array(value :_*))
+    @scala.inline
+    def setOutgoingConversationLinks(value: js.Array[ConversationLink]): Self = this.set("outgoingConversationLinks", value.asInstanceOf[js.Any])
+  }
+  
 }
 

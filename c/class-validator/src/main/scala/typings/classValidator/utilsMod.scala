@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("class-validator/utils", JSImport.Namespace)
+@JSImport("class-validator/types/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
   def convertToArray[T](`val`: js.Array[T]): js.Array[T] = js.native

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * @name umbraco.resources.mediaTypeResource
   * @description Loads in data for media types
   **/
+@js.native
 trait IMediaTypeResource extends js.Object {
   /**
     * @ngdoc method
@@ -30,7 +31,7 @@ trait IMediaTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getAllowedTypes(mediaId: Double): IPromise[IResourcePromise]
+  def getAllowedTypes(mediaId: Double): IPromise[IResourcePromise] = js.native
 }
 
 object IMediaTypeResource {
@@ -39,5 +40,20 @@ object IMediaTypeResource {
     val __obj = js.Dynamic.literal(getAllowedTypes = js.Any.fromFunction1(getAllowedTypes))
     __obj.asInstanceOf[IMediaTypeResource]
   }
+  @scala.inline
+  implicit class IMediaTypeResourceOps[Self <: IMediaTypeResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetAllowedTypes(value: Double => IPromise[IResourcePromise]): Self = this.set("getAllowedTypes", js.Any.fromFunction1(value))
+  }
+  
 }
 

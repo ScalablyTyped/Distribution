@@ -40,33 +40,61 @@ trait AppState extends js.Object {
     */
   val quietTime: js.UndefOr[Input[AppQuietTime]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object AppState {
   @scala.inline
-  def apply(
-    applicationId: Input[String] = null,
-    arn: Input[String] = null,
-    campaignHook: Input[AppCampaignHook] = null,
-    limits: Input[AppLimits] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    quietTime: Input[AppQuietTime] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): AppState = {
+  def apply(): AppState = {
     val __obj = js.Dynamic.literal()
-    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (campaignHook != null) __obj.updateDynamic("campaignHook")(campaignHook.asInstanceOf[js.Any])
-    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (quietTime != null) __obj.updateDynamic("quietTime")(quietTime.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppState]
   }
+  @scala.inline
+  implicit class AppStateOps[Self <: AppState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: Input[String]): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCampaignHook(value: Input[AppCampaignHook]): Self = this.set("campaignHook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignHook: Self = this.set("campaignHook", js.undefined)
+    @scala.inline
+    def setLimits(value: Input[AppLimits]): Self = this.set("limits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimits: Self = this.set("limits", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setQuietTime(value: Input[AppQuietTime]): Self = this.set("quietTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuietTime: Self = this.set("quietTime", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

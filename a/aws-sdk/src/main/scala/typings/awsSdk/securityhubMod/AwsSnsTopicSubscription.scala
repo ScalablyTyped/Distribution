@@ -18,11 +18,30 @@ trait AwsSnsTopicSubscription extends js.Object {
 
 object AwsSnsTopicSubscription {
   @scala.inline
-  def apply(Endpoint: NonEmptyString = null, Protocol: NonEmptyString = null): AwsSnsTopicSubscription = {
+  def apply(): AwsSnsTopicSubscription = {
     val __obj = js.Dynamic.literal()
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsSnsTopicSubscription]
   }
+  @scala.inline
+  implicit class AwsSnsTopicSubscriptionOps[Self <: AwsSnsTopicSubscription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpoint(value: NonEmptyString): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setProtocol(value: NonEmptyString): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+  }
+  
 }
 

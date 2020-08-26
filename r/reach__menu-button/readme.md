@@ -12,7 +12,7 @@ Accessible React button dropdown menu.
 | Keywords           | - |
 | # releases         | 36 |
 | # dependents       | 17 |
-| # downloads        | 351948 |
+| # downloads        | 363973 |
 | # stars            | 0 |
 
 ## Links

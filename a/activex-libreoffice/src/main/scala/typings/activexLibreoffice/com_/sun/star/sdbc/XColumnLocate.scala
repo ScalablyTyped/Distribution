@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * when column names are used in the SQL query. For columns that are NOT explicitly named in the query, it is best to use column numbers. If column names
   * are used, there is no way for the programmer to guarantee that they actually refer to the intended columns.
   */
+@js.native
 trait XColumnLocate extends XInterface {
   /**
     * maps the given {@link ResultSet} column name to its {@link ResultSet} column index.
@@ -23,7 +24,7 @@ trait XColumnLocate extends XInterface {
     * @returns the position of the column
     * @throws SQLException if the column named `columnName` does not exist, or a database access error occurs.
     */
-  def findColumn(columnName: String): Double
+  def findColumn(columnName: String): Double = js.native
 }
 
 object XColumnLocate {
@@ -37,5 +38,20 @@ object XColumnLocate {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), findColumn = js.Any.fromFunction1(findColumn), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XColumnLocate]
   }
+  @scala.inline
+  implicit class XColumnLocateOps[Self <: XColumnLocate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFindColumn(value: String => Double): Self = this.set("findColumn", js.Any.fromFunction1(value))
+  }
+  
 }
 

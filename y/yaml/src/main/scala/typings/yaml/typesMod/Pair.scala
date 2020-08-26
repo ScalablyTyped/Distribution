@@ -15,14 +15,25 @@ import scala.scalajs.js.annotation._
 class Pair protected () extends Node {
   def this(key: js.Any) = this()
   def this(key: js.Any, value: js.Any) = this()
+  @JSName("cstNode")
+  var cstNode_Pair: js.UndefOr[scala.Nothing] = js.native
   /** Always Node or null when parsed, but can be set to anything. */
   var key: js.Any = js.native
   @JSName("type")
   var type_Pair: PAIR | MERGE_PAIR = js.native
   /** Always Node or null when parsed, but can be set to anything. */
   var value: js.Any = js.native
+  def toJSON(arg: js.UndefOr[scala.Nothing], ctx: NodeToJsonContext): js.Object | (Map[_, _]) = js.native
   def toJSON(arg: js.Any, ctx: NodeToJsonContext): js.Object | (Map[_, _]) = js.native
+  def toString(
+    ctx: js.UndefOr[scala.Nothing],
+    onComment: js.UndefOr[scala.Nothing],
+    onChompKeep: js.Function0[Unit]
+  ): String = js.native
+  def toString(ctx: js.UndefOr[scala.Nothing], onComment: js.Function0[Unit]): String = js.native
+  def toString(ctx: js.UndefOr[scala.Nothing], onComment: js.Function0[Unit], onChompKeep: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext): String = js.native
+  def toString(ctx: StringifyContext, onComment: js.UndefOr[scala.Nothing], onChompKeep: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext, onComment: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext, onComment: js.Function0[Unit], onChompKeep: js.Function0[Unit]): String = js.native
 }

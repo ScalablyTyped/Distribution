@@ -30,6 +30,7 @@ object test extends js.Object {
     * XRegExp.test('abc', /c/, 2, 'sticky'); // -> true
     */
   def apply(str: String, regex: Pattern): Boolean = js.native
+  def apply(str: String, regex: Pattern, pos: js.UndefOr[scala.Nothing], sticky: Boolean): Boolean = js.native
   def apply(str: String, regex: Pattern, pos: Double): Boolean = js.native
   def apply(str: String, regex: Pattern, pos: Double, sticky: Boolean): Boolean = js.native
 }

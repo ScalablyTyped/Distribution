@@ -23,11 +23,32 @@ trait BucketObjectLockConfigurationRuleDefaultRetention extends js.Object {
 
 object BucketObjectLockConfigurationRuleDefaultRetention {
   @scala.inline
-  def apply(mode: Input[String], days: Input[Double] = null, years: Input[Double] = null): BucketObjectLockConfigurationRuleDefaultRetention = {
+  def apply(mode: Input[String]): BucketObjectLockConfigurationRuleDefaultRetention = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
-    if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketObjectLockConfigurationRuleDefaultRetention]
   }
+  @scala.inline
+  implicit class BucketObjectLockConfigurationRuleDefaultRetentionOps[Self <: BucketObjectLockConfigurationRuleDefaultRetention] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMode(value: Input[String]): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDays(value: Input[Double]): Self = this.set("days", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDays: Self = this.set("days", js.undefined)
+    @scala.inline
+    def setYears(value: Input[Double]): Self = this.set("years", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYears: Self = this.set("years", js.undefined)
+  }
+  
 }
 

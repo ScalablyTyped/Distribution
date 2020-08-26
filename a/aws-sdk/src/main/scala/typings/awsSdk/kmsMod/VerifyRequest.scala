@@ -38,14 +38,41 @@ object VerifyRequest {
     KeyId: KeyIdType,
     Message: PlaintextType,
     Signature: CiphertextType,
-    SigningAlgorithm: SigningAlgorithmSpec,
-    GrantTokens: GrantTokenList = null,
-    MessageType: MessageType = null
+    SigningAlgorithm: SigningAlgorithmSpec
   ): VerifyRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Signature = Signature.asInstanceOf[js.Any], SigningAlgorithm = SigningAlgorithm.asInstanceOf[js.Any])
-    if (GrantTokens != null) __obj.updateDynamic("GrantTokens")(GrantTokens.asInstanceOf[js.Any])
-    if (MessageType != null) __obj.updateDynamic("MessageType")(MessageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyRequest]
   }
+  @scala.inline
+  implicit class VerifyRequestOps[Self <: VerifyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessage(value: PlaintextType): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSignature(value: CiphertextType): Self = this.set("Signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSigningAlgorithm(value: SigningAlgorithmSpec): Self = this.set("SigningAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGrantTokensVarargs(value: GrantTokenType*): Self = this.set("GrantTokens", js.Array(value :_*))
+    @scala.inline
+    def setGrantTokens(value: GrantTokenList): Self = this.set("GrantTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantTokens: Self = this.set("GrantTokens", js.undefined)
+    @scala.inline
+    def setMessageType(value: MessageType): Self = this.set("MessageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageType: Self = this.set("MessageType", js.undefined)
+  }
+  
 }
 

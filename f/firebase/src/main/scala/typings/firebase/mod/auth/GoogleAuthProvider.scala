@@ -72,6 +72,7 @@ object GoogleAuthProvider extends js.Object {
     * @return The auth provider credential.
     */
   def credential(): OAuthCredential = js.native
+  def credential(idToken: js.UndefOr[scala.Nothing], accessToken: String): OAuthCredential = js.native
   def credential(idToken: String): OAuthCredential = js.native
   def credential(idToken: String, accessToken: String): OAuthCredential = js.native
   def credential(idToken: Null, accessToken: String): OAuthCredential = js.native

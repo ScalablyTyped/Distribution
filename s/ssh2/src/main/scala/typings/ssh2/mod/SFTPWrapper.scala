@@ -61,6 +61,13 @@ trait SFTPWrapper extends EventEmitter {
     */
   def end(): Unit = js.native
   /**
+    * (Client-only)
+    * `path` exists.
+    *
+    * Returns `false` if you should wait for the `continue` event before sending any more traffic.
+    */
+  def exists(path: String, callback: js.Function1[/* err */ js.Any, Unit]): Boolean = js.native
+  /**
     * (Client-only, OpenSSH extension)
     * Performs POSIX fstatvfs(2) on open handle `handle`.
     *

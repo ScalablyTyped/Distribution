@@ -5,39 +5,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InlineQueryResultVenue
   extends InlineQueryResultLocationBase
      with InlineQueryResult {
-  var address: String
-  var foursquare_id: js.UndefOr[String] = js.undefined
-  var `type`: venue
+  var address: String = js.native
+  var foursquare_id: js.UndefOr[String] = js.native
+  var `type`: venue = js.native
 }
 
 object InlineQueryResultVenue {
   @scala.inline
-  def apply(
-    address: String,
-    id: String,
-    latitude: Double,
-    longitude: Double,
-    title: String,
-    `type`: venue,
-    foursquare_id: String = null,
-    input_message_content: InputMessageContent = null,
-    reply_markup: InlineKeyboardMarkup = null,
-    thumb_height: js.UndefOr[Double] = js.undefined,
-    thumb_url: String = null,
-    thumb_width: js.UndefOr[Double] = js.undefined
-  ): InlineQueryResultVenue = {
+  def apply(address: String, id: String, latitude: Double, longitude: Double, title: String, `type`: venue): InlineQueryResultVenue = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (foursquare_id != null) __obj.updateDynamic("foursquare_id")(foursquare_id.asInstanceOf[js.Any])
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumb_height)) __obj.updateDynamic("thumb_height")(thumb_height.get.asInstanceOf[js.Any])
-    if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumb_width)) __obj.updateDynamic("thumb_width")(thumb_width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultVenue]
   }
+  @scala.inline
+  implicit class InlineQueryResultVenueOps[Self <: InlineQueryResultVenue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: venue): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFoursquare_id(value: String): Self = this.set("foursquare_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFoursquare_id: Self = this.set("foursquare_id", js.undefined)
+  }
+  
 }
 

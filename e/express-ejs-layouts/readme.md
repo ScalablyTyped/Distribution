@@ -12,7 +12,7 @@ Layout support for ejs in express.
 | Keywords           | express, layout, ejs |
 | # releases         | 3 |
 | # dependents       | 73 |
-| # downloads        | 331912 |
+| # downloads        | 335271 |
 | # stars            | 13 |
 
 ## Links

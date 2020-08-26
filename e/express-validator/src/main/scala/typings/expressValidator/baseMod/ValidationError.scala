@@ -24,9 +24,8 @@ object ValidationError {
     __obj.asInstanceOf[ValidationError]
   }
   @scala.inline
-  def Msg(location: Location, msg: js.Any, param: String, value: js.Any, nestedErrors: js.Array[_] = null): ValidationError = {
+  def Msg(location: Location, msg: js.Any, param: String, value: js.Any): ValidationError = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (nestedErrors != null) __obj.updateDynamic("nestedErrors")(nestedErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationError]
   }
 }

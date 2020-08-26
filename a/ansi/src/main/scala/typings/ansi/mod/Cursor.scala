@@ -51,6 +51,7 @@ class Cursor protected ()
     * Moves cursor to specific position
     */
   def goto(): Cursor = js.native
+  def goto(x: js.UndefOr[scala.Nothing], y: Double): Cursor = js.native
   def goto(x: Double): Cursor = js.native
   def goto(x: Double, y: Double): Cursor = js.native
   def green(): Cursor = js.native

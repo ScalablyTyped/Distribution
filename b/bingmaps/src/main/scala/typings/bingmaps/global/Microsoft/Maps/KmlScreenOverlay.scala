@@ -17,6 +17,7 @@ class KmlScreenOverlay ()
   extends typings.bingmaps.Microsoft.Maps.KmlScreenOverlay {
   def this(htmlElement: String) = this()
   def this(htmlElement: HTMLElement) = this()
+  def this(htmlElement: js.UndefOr[scala.Nothing], options: IKmlScreenOverlayOptions) = this()
   def this(htmlElement: String, options: IKmlScreenOverlayOptions) = this()
   def this(htmlElement: HTMLElement, options: IKmlScreenOverlayOptions) = this()
 }

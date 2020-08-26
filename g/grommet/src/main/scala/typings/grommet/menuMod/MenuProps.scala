@@ -18,62 +18,108 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MenuProps extends js.Object {
-  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
-  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var dropAlign: js.UndefOr[Right] = js.undefined
-  var dropBackground: js.UndefOr[String | Opacity] = js.undefined
-  var dropProps: js.UndefOr[DropProps] = js.undefined
-  var dropTarget: js.UndefOr[js.Object] = js.undefined
-  var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var icon: js.UndefOr[Boolean | ReactNode] = js.undefined
-  var items: js.Array[js.Object]
-  var justifyContent: js.UndefOr[JustifyContentType] = js.undefined
-  var label: js.UndefOr[String | ReactNode] = js.undefined
-  var margin: js.UndefOr[MarginType] = js.undefined
-  var messages: js.UndefOr[CloseMenu] = js.undefined
-  var open: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+  var alignSelf: js.UndefOr[AlignSelfType] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var dropAlign: js.UndefOr[Right] = js.native
+  var dropBackground: js.UndefOr[String | Opacity] = js.native
+  var dropProps: js.UndefOr[DropProps] = js.native
+  var dropTarget: js.UndefOr[js.Object] = js.native
+  var gridArea: js.UndefOr[GridAreaType] = js.native
+  var icon: js.UndefOr[Boolean | ReactNode] = js.native
+  var items: js.Array[js.Object] = js.native
+  var justifyContent: js.UndefOr[JustifyContentType] = js.native
+  var label: js.UndefOr[String | ReactNode] = js.native
+  var margin: js.UndefOr[MarginType] = js.native
+  var messages: js.UndefOr[CloseMenu] = js.native
+  var open: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[small | medium | large | xlarge | String] = js.native
 }
 
 object MenuProps {
   @scala.inline
-  def apply(
-    items: js.Array[js.Object],
-    a11yTitle: A11yTitleType = null,
-    alignSelf: AlignSelfType = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dropAlign: Right = null,
-    dropBackground: String | Opacity = null,
-    dropProps: DropProps = null,
-    dropTarget: js.Object = null,
-    gridArea: GridAreaType = null,
-    icon: Boolean | ReactNode = null,
-    justifyContent: JustifyContentType = null,
-    label: String | ReactNode = null,
-    margin: MarginType = null,
-    messages: CloseMenu = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    size: small | medium | large | xlarge | String = null
-  ): MenuProps = {
+  def apply(items: js.Array[js.Object]): MenuProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (dropAlign != null) __obj.updateDynamic("dropAlign")(dropAlign.asInstanceOf[js.Any])
-    if (dropBackground != null) __obj.updateDynamic("dropBackground")(dropBackground.asInstanceOf[js.Any])
-    if (dropProps != null) __obj.updateDynamic("dropProps")(dropProps.asInstanceOf[js.Any])
-    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps]
   }
+  @scala.inline
+  implicit class MenuPropsOps[Self <: MenuProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: js.Object*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[js.Object]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setA11yTitle(value: A11yTitleType): Self = this.set("a11yTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA11yTitle: Self = this.set("a11yTitle", js.undefined)
+    @scala.inline
+    def setAlignSelf(value: AlignSelfType): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDropAlign(value: Right): Self = this.set("dropAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropAlign: Self = this.set("dropAlign", js.undefined)
+    @scala.inline
+    def setDropBackground(value: String | Opacity): Self = this.set("dropBackground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropBackground: Self = this.set("dropBackground", js.undefined)
+    @scala.inline
+    def setDropProps(value: DropProps): Self = this.set("dropProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropProps: Self = this.set("dropProps", js.undefined)
+    @scala.inline
+    def setDropTarget(value: js.Object): Self = this.set("dropTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropTarget: Self = this.set("dropTarget", js.undefined)
+    @scala.inline
+    def setGridArea(value: GridAreaType): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    @scala.inline
+    def setIcon(value: Boolean | ReactNode): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setJustifyContent(value: JustifyContentType): Self = this.set("justifyContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJustifyContent: Self = this.set("justifyContent", js.undefined)
+    @scala.inline
+    def setLabel(value: String | ReactNode): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMargin(value: MarginType): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMessages(value: CloseMenu): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setSize(value: small | medium | large | xlarge | String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

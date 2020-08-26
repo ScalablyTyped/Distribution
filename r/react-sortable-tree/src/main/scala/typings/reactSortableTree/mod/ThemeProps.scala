@@ -1,40 +1,36 @@
 package typings.reactSortableTree.mod
 
-import typings.react.mod.CSSProperties
-import typings.reactSortableTree.anon.PartialListProps
-import typings.reactVirtualized.mod.Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThemeProps extends ThemeTreeProps {
-  var treeNodeRenderer: js.UndefOr[TreeRenderer] = js.undefined
+  var treeNodeRenderer: js.UndefOr[TreeRenderer] = js.native
 }
 
 object ThemeProps {
   @scala.inline
-  def apply(
-    innerStyle: CSSProperties = null,
-    nodeContentRenderer: NodeRenderer = null,
-    placeholderRenderer: PlaceholderRenderer = null,
-    reactVirtualizedListProps: PartialListProps = null,
-    rowHeight: (js.Function1[/* info */ Index, Double]) | Double = null,
-    scaffoldBlockPxWidth: js.UndefOr[Double] = js.undefined,
-    slideRegionSize: js.UndefOr[Double] = js.undefined,
-    style: CSSProperties = null,
-    treeNodeRenderer: TreeRenderer = null
-  ): ThemeProps = {
+  def apply(): ThemeProps = {
     val __obj = js.Dynamic.literal()
-    if (innerStyle != null) __obj.updateDynamic("innerStyle")(innerStyle.asInstanceOf[js.Any])
-    if (nodeContentRenderer != null) __obj.updateDynamic("nodeContentRenderer")(nodeContentRenderer.asInstanceOf[js.Any])
-    if (placeholderRenderer != null) __obj.updateDynamic("placeholderRenderer")(placeholderRenderer.asInstanceOf[js.Any])
-    if (reactVirtualizedListProps != null) __obj.updateDynamic("reactVirtualizedListProps")(reactVirtualizedListProps.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaffoldBlockPxWidth)) __obj.updateDynamic("scaffoldBlockPxWidth")(scaffoldBlockPxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideRegionSize)) __obj.updateDynamic("slideRegionSize")(slideRegionSize.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (treeNodeRenderer != null) __obj.updateDynamic("treeNodeRenderer")(treeNodeRenderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeProps]
   }
+  @scala.inline
+  implicit class ThemePropsOps[Self <: ThemeProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTreeNodeRenderer(value: TreeRenderer): Self = this.set("treeNodeRenderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreeNodeRenderer: Self = this.set("treeNodeRenderer", js.undefined)
+  }
+  
 }
 

@@ -5,7 +5,6 @@ import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.browserfs.keyValueFilesystemMod.SimpleSyncStore
 import typings.browserfs.keyValueFilesystemMod.SyncKeyValueFileSystem
 import typings.browserfs.keyValueFilesystemMod.SyncKeyValueStore
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,12 +17,6 @@ object inMemoryMod extends js.Object {
     extends SyncKeyValueStore
        with SimpleSyncStore {
     var store: js.Any = js.native
-    /* CompleteClass */
-    override def del(key: String): Unit = js.native
-    /* CompleteClass */
-    override def get(key: String): js.UndefOr[Buffer] = js.native
-    /* CompleteClass */
-    override def put(key: String, data: Buffer, overwrite: Boolean): Boolean = js.native
   }
   
   @js.native

@@ -36,8 +36,29 @@ class Interface protected () extends EventEmitter {
     */
   protected def this(options: ReadLineOptions) = this()
   protected def this(input: ReadableStream, output: WritableStream) = this()
+  protected def this(input: ReadableStream, output: js.UndefOr[scala.Nothing], completer: AsyncCompleter) = this()
+  protected def this(input: ReadableStream, output: js.UndefOr[scala.Nothing], completer: Completer) = this()
   protected def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter) = this()
   protected def this(input: ReadableStream, output: WritableStream, completer: Completer) = this()
+  protected def this(
+    input: ReadableStream,
+    output: js.UndefOr[scala.Nothing],
+    completer: js.UndefOr[scala.Nothing],
+    terminal: Boolean
+  ) = this()
+  protected def this(
+    input: ReadableStream,
+    output: js.UndefOr[scala.Nothing],
+    completer: AsyncCompleter,
+    terminal: Boolean
+  ) = this()
+  protected def this(input: ReadableStream, output: js.UndefOr[scala.Nothing], completer: Completer, terminal: Boolean) = this()
+  protected def this(
+    input: ReadableStream,
+    output: WritableStream,
+    completer: js.UndefOr[scala.Nothing],
+    terminal: Boolean
+  ) = this()
   protected def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean) = this()
   protected def this(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean) = this()
   /** The current cursor position in the input line */

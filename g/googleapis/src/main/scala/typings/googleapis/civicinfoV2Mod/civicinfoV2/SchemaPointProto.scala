@@ -14,18 +14,38 @@ trait SchemaPointProto extends js.Object {
 
 object SchemaPointProto {
   @scala.inline
-  def apply(
-    latE7: js.UndefOr[Double] = js.undefined,
-    lngE7: js.UndefOr[Double] = js.undefined,
-    metadata: SchemaFieldMetadataProto = null,
-    temporaryData: SchemaMessageSet = null
-  ): SchemaPointProto = {
+  def apply(): SchemaPointProto = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(latE7)) __obj.updateDynamic("latE7")(latE7.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lngE7)) __obj.updateDynamic("lngE7")(lngE7.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (temporaryData != null) __obj.updateDynamic("temporaryData")(temporaryData.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPointProto]
   }
+  @scala.inline
+  implicit class SchemaPointProtoOps[Self <: SchemaPointProto] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLatE7(value: Double): Self = this.set("latE7", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatE7: Self = this.set("latE7", js.undefined)
+    @scala.inline
+    def setLngE7(value: Double): Self = this.set("lngE7", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLngE7: Self = this.set("lngE7", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaFieldMetadataProto): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setTemporaryData(value: SchemaMessageSet): Self = this.set("temporaryData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemporaryData: Self = this.set("temporaryData", js.undefined)
+  }
+  
 }
 

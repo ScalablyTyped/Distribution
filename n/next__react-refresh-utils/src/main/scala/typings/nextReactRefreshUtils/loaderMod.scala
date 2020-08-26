@@ -1,6 +1,5 @@
 package typings.nextReactRefreshUtils
 
-import typings.webpack.mod.loader.Loader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@next/react-refresh-utils/loader", JSImport.Namespace)
 @js.native
 object loaderMod extends js.Object {
-  val default: Loader = js.native
+  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify loader.Loader */ js.Any = js.native
 }
 

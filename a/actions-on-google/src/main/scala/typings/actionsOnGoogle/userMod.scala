@@ -127,6 +127,7 @@ object userMod extends js.Object {
   /** @hidden */
   class User[TUserStorage] () extends js.Object {
     def this(raw: GoogleActionsV2User) = this()
+    def this(raw: js.UndefOr[scala.Nothing], initial: TUserStorage) = this()
     def this(raw: GoogleActionsV2User, initial: TUserStorage) = this()
     /** @hidden */
     var _id: String = js.native

@@ -38,20 +38,44 @@ trait SchemaInlineObject extends js.Object {
 
 object SchemaInlineObject {
   @scala.inline
-  def apply(
-    inlineObjectProperties: SchemaInlineObjectProperties = null,
-    objectId: String = null,
-    suggestedDeletionIds: js.Array[String] = null,
-    suggestedInlineObjectPropertiesChanges: StringDictionary[SchemaSuggestedInlineObjectProperties] = null,
-    suggestedInsertionId: String = null
-  ): SchemaInlineObject = {
+  def apply(): SchemaInlineObject = {
     val __obj = js.Dynamic.literal()
-    if (inlineObjectProperties != null) __obj.updateDynamic("inlineObjectProperties")(inlineObjectProperties.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds.asInstanceOf[js.Any])
-    if (suggestedInlineObjectPropertiesChanges != null) __obj.updateDynamic("suggestedInlineObjectPropertiesChanges")(suggestedInlineObjectPropertiesChanges.asInstanceOf[js.Any])
-    if (suggestedInsertionId != null) __obj.updateDynamic("suggestedInsertionId")(suggestedInsertionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInlineObject]
   }
+  @scala.inline
+  implicit class SchemaInlineObjectOps[Self <: SchemaInlineObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInlineObjectProperties(value: SchemaInlineObjectProperties): Self = this.set("inlineObjectProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineObjectProperties: Self = this.set("inlineObjectProperties", js.undefined)
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    @scala.inline
+    def setSuggestedDeletionIdsVarargs(value: String*): Self = this.set("suggestedDeletionIds", js.Array(value :_*))
+    @scala.inline
+    def setSuggestedDeletionIds(value: js.Array[String]): Self = this.set("suggestedDeletionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedDeletionIds: Self = this.set("suggestedDeletionIds", js.undefined)
+    @scala.inline
+    def setSuggestedInlineObjectPropertiesChanges(value: StringDictionary[SchemaSuggestedInlineObjectProperties]): Self = this.set("suggestedInlineObjectPropertiesChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedInlineObjectPropertiesChanges: Self = this.set("suggestedInlineObjectPropertiesChanges", js.undefined)
+    @scala.inline
+    def setSuggestedInsertionId(value: String): Self = this.set("suggestedInsertionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedInsertionId: Self = this.set("suggestedInsertionId", js.undefined)
+  }
+  
 }
 

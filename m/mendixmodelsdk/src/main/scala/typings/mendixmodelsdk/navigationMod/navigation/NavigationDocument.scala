@@ -44,41 +44,41 @@ class NavigationDocument protected () extends ProjectDocument {
     * In version 7.2.0: deleted
     */
   def desktopProfile: NavigationProfile = js.native
-  def desktopProfile(newValue: NavigationProfile): js.Any = js.native
+  def desktopProfile_=(newValue: NavigationProfile): Unit = js.native
   /**
     * In version 7.2.0: deleted
     * In version 7.0.2: introduced
     */
   def hybridPhoneProfile: NavigationProfile = js.native
-  def hybridPhoneProfile(newValue: NavigationProfile): js.Any = js.native
   /**
     * In version 7.0.0: deleted
     * In version 6.10.4: introduced
     */
   def hybridPhoneProfile6: NavigationProfile = js.native
-  def hybridPhoneProfile6(newValue: NavigationProfile): js.Any = js.native
+  def hybridPhoneProfile6_=(newValue: NavigationProfile): Unit = js.native
+  def hybridPhoneProfile_=(newValue: NavigationProfile): Unit = js.native
   /**
     * In version 7.2.0: deleted
     * In version 7.0.2: introduced
     */
   def hybridTabletProfile: NavigationProfile = js.native
-  def hybridTabletProfile(newValue: NavigationProfile): js.Any = js.native
   /**
     * In version 7.0.0: deleted
     * In version 6.10.4: introduced
     */
   def hybridTabletProfile6: NavigationProfile = js.native
-  def hybridTabletProfile6(newValue: NavigationProfile): js.Any = js.native
+  def hybridTabletProfile6_=(newValue: NavigationProfile): Unit = js.native
+  def hybridTabletProfile_=(newValue: NavigationProfile): Unit = js.native
   /**
     * In version 7.0.2: deleted
     */
   def offlinePhoneProfile: NavigationProfile = js.native
-  def offlinePhoneProfile(newValue: NavigationProfile): js.Any = js.native
+  def offlinePhoneProfile_=(newValue: NavigationProfile): Unit = js.native
   /**
     * In version 7.2.0: deleted
     */
   def phoneProfile: NavigationProfile = js.native
-  def phoneProfile(newValue: NavigationProfile): js.Any = js.native
+  def phoneProfile_=(newValue: NavigationProfile): Unit = js.native
   /**
     * In version 7.2.0: introduced
     */
@@ -87,7 +87,7 @@ class NavigationDocument protected () extends ProjectDocument {
     * In version 7.2.0: deleted
     */
   def tabletProfile: NavigationProfile = js.native
-  def tabletProfile(newValue: NavigationProfile): js.Any = js.native
+  def tabletProfile_=(newValue: NavigationProfile): Unit = js.native
 }
 
 /* static members */

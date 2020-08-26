@@ -18,11 +18,32 @@ trait ListFindingsFiltersResponse extends js.Object {
 
 object ListFindingsFiltersResponse {
   @scala.inline
-  def apply(findingsFilterListItems: listOfFindingsFilterListItem = null, nextToken: string = null): ListFindingsFiltersResponse = {
+  def apply(): ListFindingsFiltersResponse = {
     val __obj = js.Dynamic.literal()
-    if (findingsFilterListItems != null) __obj.updateDynamic("findingsFilterListItems")(findingsFilterListItems.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFindingsFiltersResponse]
   }
+  @scala.inline
+  implicit class ListFindingsFiltersResponseOps[Self <: ListFindingsFiltersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFindingsFilterListItemsVarargs(value: FindingsFilterListItem*): Self = this.set("findingsFilterListItems", js.Array(value :_*))
+    @scala.inline
+    def setFindingsFilterListItems(value: listOfFindingsFilterListItem): Self = this.set("findingsFilterListItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindingsFilterListItems: Self = this.set("findingsFilterListItems", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

@@ -22,10 +22,32 @@ trait DisassociateNodeRequest extends js.Object {
 
 object DisassociateNodeRequest {
   @scala.inline
-  def apply(NodeName: NodeName, ServerName: ServerName, EngineAttributes: EngineAttributes = null): DisassociateNodeRequest = {
+  def apply(NodeName: NodeName, ServerName: ServerName): DisassociateNodeRequest = {
     val __obj = js.Dynamic.literal(NodeName = NodeName.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any])
-    if (EngineAttributes != null) __obj.updateDynamic("EngineAttributes")(EngineAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateNodeRequest]
   }
+  @scala.inline
+  implicit class DisassociateNodeRequestOps[Self <: DisassociateNodeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNodeName(value: NodeName): Self = this.set("NodeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerName(value: ServerName): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEngineAttributesVarargs(value: EngineAttribute*): Self = this.set("EngineAttributes", js.Array(value :_*))
+    @scala.inline
+    def setEngineAttributes(value: EngineAttributes): Self = this.set("EngineAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineAttributes: Self = this.set("EngineAttributes", js.undefined)
+  }
+  
 }
 

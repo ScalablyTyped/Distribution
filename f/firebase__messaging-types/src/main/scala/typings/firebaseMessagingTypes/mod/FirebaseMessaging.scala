@@ -17,15 +17,19 @@ trait FirebaseMessaging extends js.Object {
   def deleteToken(token: String): js.Promise[Boolean] = js.native
   def getToken(): js.Promise[String] = js.native
   def onMessage(nextOrObserver: NextFn[_]): Unsubscribe = js.native
+  def onMessage(nextOrObserver: NextFn[_], error: js.UndefOr[scala.Nothing], completed: CompleteFn): Unsubscribe = js.native
   def onMessage(nextOrObserver: NextFn[_], error: ErrorFn): Unsubscribe = js.native
   def onMessage(nextOrObserver: NextFn[_], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
   def onMessage(nextOrObserver: Observer[_]): Unsubscribe = js.native
+  def onMessage(nextOrObserver: Observer[_], error: js.UndefOr[scala.Nothing], completed: CompleteFn): Unsubscribe = js.native
   def onMessage(nextOrObserver: Observer[_], error: ErrorFn): Unsubscribe = js.native
   def onMessage(nextOrObserver: Observer[_], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
   def onTokenRefresh(nextOrObserver: NextFn[_]): Unsubscribe = js.native
+  def onTokenRefresh(nextOrObserver: NextFn[_], error: js.UndefOr[scala.Nothing], completed: CompleteFn): Unsubscribe = js.native
   def onTokenRefresh(nextOrObserver: NextFn[_], error: ErrorFn): Unsubscribe = js.native
   def onTokenRefresh(nextOrObserver: NextFn[_], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
   def onTokenRefresh(nextOrObserver: Observer[_]): Unsubscribe = js.native
+  def onTokenRefresh(nextOrObserver: Observer[_], error: js.UndefOr[scala.Nothing], completed: CompleteFn): Unsubscribe = js.native
   def onTokenRefresh(nextOrObserver: Observer[_], error: ErrorFn): Unsubscribe = js.native
   def onTokenRefresh(nextOrObserver: Observer[_], error: ErrorFn, completed: CompleteFn): Unsubscribe = js.native
   /**

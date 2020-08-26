@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
+@js.native
 trait SettableColumnProperties extends SettableCellProperties {
   /**
     *
@@ -18,7 +19,7 @@ trait SettableColumnProperties extends SettableCellProperties {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var columnHidden: js.UndefOr[Boolean] = js.undefined
+  var columnHidden: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the `format` property.
@@ -26,23 +27,35 @@ trait SettableColumnProperties extends SettableCellProperties {
     * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
-  var format_SettableColumnProperties: js.UndefOr[CellPropertiesFormatcolum] = js.undefined
+  var format_SettableColumnProperties: js.UndefOr[CellPropertiesFormatcolum] = js.native
 }
 
 object SettableColumnProperties {
   @scala.inline
-  def apply(
-    columnHidden: js.UndefOr[Boolean] = js.undefined,
-    format: CellPropertiesFormatcolum = null,
-    hyperlink: RangeHyperlink = null,
-    style: String = null
-  ): SettableColumnProperties = {
+  def apply(): SettableColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableColumnProperties]
   }
+  @scala.inline
+  implicit class SettableColumnPropertiesOps[Self <: SettableColumnProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnHidden(value: Boolean): Self = this.set("columnHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnHidden: Self = this.set("columnHidden", js.undefined)
+    @scala.inline
+    def setFormat(value: CellPropertiesFormatcolum): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+  }
+  
 }
 

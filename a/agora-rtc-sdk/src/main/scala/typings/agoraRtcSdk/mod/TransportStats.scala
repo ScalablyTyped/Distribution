@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   *
   * If {@link getTransportStats} is called successfully, this interface provides the statistics.
   */
+@js.native
 trait TransportStats extends js.Object {
   /**
     * Network type.
@@ -39,25 +40,43 @@ trait TransportStats extends js.Object {
     */
   val NetworkType: js.UndefOr[
     bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED
-  ] = js.undefined
+  ] = js.native
   /** The estimated available bandwidth for sending the stream, in Kbps. */
-  val OutgoingAvailableBandwidth: js.UndefOr[String] = js.undefined
+  val OutgoingAvailableBandwidth: js.UndefOr[String] = js.native
   /** RTT (Round-Trip Time) between the SDK and the access node of the SD-RTN, in ms. */
-  val RTT: js.UndefOr[String] = js.undefined
+  val RTT: js.UndefOr[String] = js.native
 }
 
 object TransportStats {
   @scala.inline
-  def apply(
-    NetworkType: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED = null,
-    OutgoingAvailableBandwidth: String = null,
-    RTT: String = null
-  ): TransportStats = {
+  def apply(): TransportStats = {
     val __obj = js.Dynamic.literal()
-    if (NetworkType != null) __obj.updateDynamic("NetworkType")(NetworkType.asInstanceOf[js.Any])
-    if (OutgoingAvailableBandwidth != null) __obj.updateDynamic("OutgoingAvailableBandwidth")(OutgoingAvailableBandwidth.asInstanceOf[js.Any])
-    if (RTT != null) __obj.updateDynamic("RTT")(RTT.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransportStats]
   }
+  @scala.inline
+  implicit class TransportStatsOps[Self <: TransportStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetworkType(value: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): Self = this.set("NetworkType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkType: Self = this.set("NetworkType", js.undefined)
+    @scala.inline
+    def setOutgoingAvailableBandwidth(value: String): Self = this.set("OutgoingAvailableBandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutgoingAvailableBandwidth: Self = this.set("OutgoingAvailableBandwidth", js.undefined)
+    @scala.inline
+    def setRTT(value: String): Self = this.set("RTT", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRTT: Self = this.set("RTT", js.undefined)
+  }
+  
 }
 

@@ -34,13 +34,11 @@ class CalculatedValue protected () extends ValueType {
   var model_FCalculatedValue: IModel = js.native
   @JSName("containerAsAttribute")
   def containerAsAttribute_MCalculatedValue: Attribute = js.native
-  def microflow(): js.Any = js.native
-  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflow: IMicroflow | Null = js.native
   def microflowQualifiedName: String | Null = js.native
-  @JSName("microflow")
-  def microflow_Union: IMicroflow | Null = js.native
+  def microflow_=(newValue: IMicroflow | Null): Unit = js.native
   def passEntity: Boolean = js.native
-  def passEntity(newValue: Boolean): js.Any = js.native
+  def passEntity_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

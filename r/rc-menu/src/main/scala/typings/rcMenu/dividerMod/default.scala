@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-menu/lib/Divider", JSImport.Default)
+@JSImport("rc-menu/es/Divider", JSImport.Default)
 @js.native
 object default extends TopLevel[FC[DividerProps]]
 

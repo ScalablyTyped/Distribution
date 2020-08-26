@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BaseBlock[T /* <: LocalValueBlock */] () extends LocalBaseBlock {
   def this(parameters: BaseBlockParams) = this()
+  def this(parameters: js.UndefOr[scala.Nothing], valueBlockType: Instantiable0[LocalValueBlock]) = this()
   def this(parameters: BaseBlockParams, valueBlockType: Instantiable0[LocalValueBlock]) = this()
   var idBlock: LocalIdentificationBlock = js.native
   var lenBlock: LocalLengthBlock = js.native

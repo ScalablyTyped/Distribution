@@ -22,16 +22,34 @@ trait CodeContent extends js.Object {
 
 object CodeContent {
   @scala.inline
-  def apply(
-    S3ContentLocation: S3ContentLocation = null,
-    TextContent: TextContent = null,
-    ZipFileContent: ZipFileContent = null
-  ): CodeContent = {
+  def apply(): CodeContent = {
     val __obj = js.Dynamic.literal()
-    if (S3ContentLocation != null) __obj.updateDynamic("S3ContentLocation")(S3ContentLocation.asInstanceOf[js.Any])
-    if (TextContent != null) __obj.updateDynamic("TextContent")(TextContent.asInstanceOf[js.Any])
-    if (ZipFileContent != null) __obj.updateDynamic("ZipFileContent")(ZipFileContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeContent]
   }
+  @scala.inline
+  implicit class CodeContentOps[Self <: CodeContent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3ContentLocation(value: S3ContentLocation): Self = this.set("S3ContentLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3ContentLocation: Self = this.set("S3ContentLocation", js.undefined)
+    @scala.inline
+    def setTextContent(value: TextContent): Self = this.set("TextContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextContent: Self = this.set("TextContent", js.undefined)
+    @scala.inline
+    def setZipFileContent(value: ZipFileContent): Self = this.set("ZipFileContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZipFileContent: Self = this.set("ZipFileContent", js.undefined)
+  }
+  
 }
 

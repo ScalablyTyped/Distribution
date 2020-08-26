@@ -14,10 +14,6 @@ class FeathersError protected () extends Error {
   val code: Double = js.native
   val data: js.Any = js.native
   val errors: js.Any = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   def toJSON(): FeathersErrorJSON = js.native
 }
 

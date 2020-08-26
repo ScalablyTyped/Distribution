@@ -52,18 +52,38 @@ trait SchemaInstall extends js.Object {
 
 object SchemaInstall {
   @scala.inline
-  def apply(
-    installState: String = null,
-    kind: String = null,
-    productId: String = null,
-    versionCode: js.UndefOr[Double] = js.undefined
-  ): SchemaInstall = {
+  def apply(): SchemaInstall = {
     val __obj = js.Dynamic.literal()
-    if (installState != null) __obj.updateDynamic("installState")(installState.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstall]
   }
+  @scala.inline
+  implicit class SchemaInstallOps[Self <: SchemaInstall] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstallState(value: String): Self = this.set("installState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallState: Self = this.set("installState", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+    @scala.inline
+    def setVersionCode(value: Double): Self = this.set("versionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
+  }
+  
 }
 

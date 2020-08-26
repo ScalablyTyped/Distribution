@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-connection-string
 
-Typings are for version 2.2.3
+Typings are for version 2.3.0
 
 ## Library description:
 Functions for dealing with a PostgresSQL connection string
@@ -11,8 +11,8 @@ Functions for dealing with a PostgresSQL connection string
 | Full name          | pg-connection-string |
 | Keywords           | pg, connection, string, parse |
 | # releases         | 2 |
-| # dependents       | 119 |
-| # downloads        | 45811569 |
+| # dependents       | 121 |
+| # downloads        | 47470472 |
 | # stars            | 0 |
 
 ## Links

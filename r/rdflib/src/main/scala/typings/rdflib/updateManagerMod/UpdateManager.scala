@@ -214,6 +214,16 @@ trait UpdateManager extends js.Object {
     insertions: js.Array[
       typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
     ],
+    callback: js.UndefOr[scala.Nothing],
+    secondTry: Boolean
+  ): Unit | js.Promise[Unit] = js.native
+  def update(
+    deletions: js.Array[
+      typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+    ],
+    insertions: js.Array[
+      typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+    ],
     callback: js.Function4[
       /* uri */ js.UndefOr[String | Null], 
       /* success */ Boolean, 
@@ -248,6 +258,23 @@ trait UpdateManager extends js.Object {
     * @param callbackFunction
     */
   def updateLocalFile(doc: NamedNode, ds: js.Any, is: js.Any, callbackFunction: js.Any): Unit = js.native
+  /**
+    * This high-level function updates the local store iff the web is changed successfully.
+    * Deletions, insertions may be undefined or single statements or lists or formulae (may contain bnodes which can be indirectly identified by a where clause).
+    * The `why` property of each statement must be the give the web document to be updated.
+    * The statements to be deleted and inserted may span more than one web document.
+    * @param deletions - Statement or statements to be deleted.
+    * @param insertions - Statement or statements to be inserted.
+    * @returns a promise
+    */
+  def updateMany(
+    deletions: js.Array[
+      typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+    ],
+    insertions: js.Array[
+      typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+    ]
+  ): js.Promise[js.Array[Unit]] = js.native
   /** return a statemnet updating function
     *
     * This does NOT update the statement.

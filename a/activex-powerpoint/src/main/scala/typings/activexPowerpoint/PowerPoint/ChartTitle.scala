@@ -36,6 +36,7 @@ trait ChartTitle extends js.Object {
   var VerticalAlignment: js.Any = js.native
   val Width: Double = js.native
   def Characters(): ChartCharacters = js.native
+  def Characters(Start: js.UndefOr[scala.Nothing], Length: js.Any): ChartCharacters = js.native
   def Characters(Start: js.Any): ChartCharacters = js.native
   def Characters(Start: js.Any, Length: js.Any): ChartCharacters = js.native
   def Delete(): js.Any = js.native

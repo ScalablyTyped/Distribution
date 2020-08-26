@@ -30,20 +30,42 @@ trait Image extends js.Object {
 
 object Image {
   @scala.inline
-  def apply(
-    imageId: ImageIdentifier = null,
-    imageManifest: ImageManifest = null,
-    imageManifestMediaType: MediaType = null,
-    registryId: RegistryId = null,
-    repositoryName: RepositoryName = null
-  ): Image = {
+  def apply(): Image = {
     val __obj = js.Dynamic.literal()
-    if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
-    if (imageManifest != null) __obj.updateDynamic("imageManifest")(imageManifest.asInstanceOf[js.Any])
-    if (imageManifestMediaType != null) __obj.updateDynamic("imageManifestMediaType")(imageManifestMediaType.asInstanceOf[js.Any])
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
+  @scala.inline
+  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageId(value: ImageIdentifier): Self = this.set("imageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageId: Self = this.set("imageId", js.undefined)
+    @scala.inline
+    def setImageManifest(value: ImageManifest): Self = this.set("imageManifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageManifest: Self = this.set("imageManifest", js.undefined)
+    @scala.inline
+    def setImageManifestMediaType(value: MediaType): Self = this.set("imageManifestMediaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageManifestMediaType: Self = this.set("imageManifestMediaType", js.undefined)
+    @scala.inline
+    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ListObjectParentPathsResponse extends js.Object {
 
 object ListObjectParentPathsResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, PathToObjectIdentifiersList: PathToObjectIdentifiersList = null): ListObjectParentPathsResponse = {
+  def apply(): ListObjectParentPathsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PathToObjectIdentifiersList != null) __obj.updateDynamic("PathToObjectIdentifiersList")(PathToObjectIdentifiersList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectParentPathsResponse]
   }
+  @scala.inline
+  implicit class ListObjectParentPathsResponseOps[Self <: ListObjectParentPathsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPathToObjectIdentifiersListVarargs(value: PathToObjectIdentifiers*): Self = this.set("PathToObjectIdentifiersList", js.Array(value :_*))
+    @scala.inline
+    def setPathToObjectIdentifiersList(value: PathToObjectIdentifiersList): Self = this.set("PathToObjectIdentifiersList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathToObjectIdentifiersList: Self = this.set("PathToObjectIdentifiersList", js.undefined)
+  }
+  
 }
 

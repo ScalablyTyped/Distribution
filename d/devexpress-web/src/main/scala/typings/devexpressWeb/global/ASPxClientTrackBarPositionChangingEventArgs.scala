@@ -24,45 +24,5 @@ class ASPxClientTrackBarPositionChangingEventArgs protected ()
     newPositionStart: Double,
     newPositionEnd: Double
   ) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets the current drag handle position.
-    */
-  /* CompleteClass */
-  override var currentPosition: Double = js.native
-  /**
-    * Gets the current secondary drag handle position.
-    */
-  /* CompleteClass */
-  override var currentPositionEnd: Double = js.native
-  /**
-    * Gets the current main drag handle position.
-    */
-  /* CompleteClass */
-  override var currentPositionStart: Double = js.native
-  /**
-    * Gets a position where the drag handle is being moved.
-    */
-  /* CompleteClass */
-  override var newPosition: Double = js.native
-  /**
-    * Gets a position where the secondary drag handle is being moved.
-    */
-  /* CompleteClass */
-  override var newPositionEnd: Double = js.native
-  /**
-    * Gets a position where the main drag handle is being moved.
-    */
-  /* CompleteClass */
-  override var newPositionStart: Double = js.native
-  /**
-    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
-    */
-  /* CompleteClass */
-  override var processOnServer: Boolean = js.native
 }
 

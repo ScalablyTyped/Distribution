@@ -8,21 +8,22 @@ import scala.scalajs.js.annotation._
 /**
   * An options object for creating a command item.
   */
+@js.native
 trait IItemOptions extends js.Object {
   /**
     * The arguments for the command.
     *
     * The default value is an empty object.
     */
-  var args: js.UndefOr[ReadonlyJSONObject] = js.undefined
+  var args: js.UndefOr[ReadonlyJSONObject] = js.native
   /**
     * The category for the item.
     */
-  var category: String
+  var category: String = js.native
   /**
     * The command to execute when the item is triggered.
     */
-  var command: String
+  var command: String = js.native
   /**
     * The rank for the command item.
     *
@@ -35,21 +36,39 @@ trait IItemOptions extends js.Object {
     *
     * The default rank is `Infinity`.
     */
-  var rank: js.UndefOr[Double] = js.undefined
+  var rank: js.UndefOr[Double] = js.native
 }
 
 object IItemOptions {
   @scala.inline
-  def apply(
-    category: String,
-    command: String,
-    args: ReadonlyJSONObject = null,
-    rank: js.UndefOr[Double] = js.undefined
-  ): IItemOptions = {
+  def apply(category: String, command: String): IItemOptions = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemOptions]
   }
+  @scala.inline
+  implicit class IItemOptionsOps[Self <: IItemOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArgs(value: ReadonlyJSONObject): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRank: Self = this.set("rank", js.undefined)
+  }
+  
 }
 

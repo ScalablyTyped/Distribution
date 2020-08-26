@@ -30,6 +30,8 @@ object View extends js.Object {
   @JSName("to$El")
   def to$El(el: js.Any): JQuery[HTMLElement] = js.native
   @JSName("to$El")
+  def to$El(el: js.Any, parent: js.UndefOr[scala.Nothing], allowParentMatch: Boolean): JQuery[HTMLElement] = js.native
+  @JSName("to$El")
   def to$El(el: js.Any, parent: js.Any): JQuery[HTMLElement] = js.native
   @JSName("to$El")
   def to$El(el: js.Any, parent: js.Any, allowParentMatch: Boolean): JQuery[HTMLElement] = js.native

@@ -31,18 +31,38 @@ trait SchemaUpdateInstanceMetadata extends js.Object {
 
 object SchemaUpdateInstanceMetadata {
   @scala.inline
-  def apply(
-    cancelTime: String = null,
-    endTime: String = null,
-    instance: SchemaInstance = null,
-    startTime: String = null
-  ): SchemaUpdateInstanceMetadata = {
+  def apply(): SchemaUpdateInstanceMetadata = {
     val __obj = js.Dynamic.literal()
-    if (cancelTime != null) __obj.updateDynamic("cancelTime")(cancelTime.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateInstanceMetadata]
   }
+  @scala.inline
+  implicit class SchemaUpdateInstanceMetadataOps[Self <: SchemaUpdateInstanceMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancelTime(value: String): Self = this.set("cancelTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelTime: Self = this.set("cancelTime", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setInstance(value: SchemaInstance): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

@@ -15,11 +15,32 @@ trait ListLocalDisksOutput extends js.Object {
 
 object ListLocalDisksOutput {
   @scala.inline
-  def apply(Disks: Disks = null, GatewayARN: GatewayARN = null): ListLocalDisksOutput = {
+  def apply(): ListLocalDisksOutput = {
     val __obj = js.Dynamic.literal()
-    if (Disks != null) __obj.updateDynamic("Disks")(Disks.asInstanceOf[js.Any])
-    if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLocalDisksOutput]
   }
+  @scala.inline
+  implicit class ListLocalDisksOutputOps[Self <: ListLocalDisksOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisksVarargs(value: Disk*): Self = this.set("Disks", js.Array(value :_*))
+    @scala.inline
+    def setDisks(value: Disks): Self = this.set("Disks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisks: Self = this.set("Disks", js.undefined)
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+  }
+  
 }
 

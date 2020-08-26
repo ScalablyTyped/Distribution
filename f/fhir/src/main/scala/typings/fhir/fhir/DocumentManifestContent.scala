@@ -7,39 +7,44 @@ import scala.scalajs.js.annotation._
 /**
   * The items included
   */
+@js.native
 trait DocumentManifestContent extends BackboneElement {
   /**
     * Contents of this set of documents
     */
-  var pAttachment: js.UndefOr[Attachment] = js.undefined
+  var pAttachment: js.UndefOr[Attachment] = js.native
   /**
     * Contents of this set of documents
     */
-  var pReference: js.UndefOr[Reference] = js.undefined
+  var pReference: js.UndefOr[Reference] = js.native
 }
 
 object DocumentManifestContent {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    pAttachment: Attachment = null,
-    pReference: Reference = null
-  ): DocumentManifestContent = {
+  def apply(): DocumentManifestContent = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (pAttachment != null) __obj.updateDynamic("pAttachment")(pAttachment.asInstanceOf[js.Any])
-    if (pReference != null) __obj.updateDynamic("pReference")(pReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentManifestContent]
   }
+  @scala.inline
+  implicit class DocumentManifestContentOps[Self <: DocumentManifestContent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPAttachment(value: Attachment): Self = this.set("pAttachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePAttachment: Self = this.set("pAttachment", js.undefined)
+    @scala.inline
+    def setPReference(value: Reference): Self = this.set("pReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePReference: Self = this.set("pReference", js.undefined)
+  }
+  
 }
 

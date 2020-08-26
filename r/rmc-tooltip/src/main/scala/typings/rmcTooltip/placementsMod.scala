@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rmc-tooltip/lib/placements", JSImport.Namespace)
+@JSImport("rmc-tooltip/es/placements", JSImport.Namespace)
 @js.native
 object placementsMod extends js.Object {
   @js.native

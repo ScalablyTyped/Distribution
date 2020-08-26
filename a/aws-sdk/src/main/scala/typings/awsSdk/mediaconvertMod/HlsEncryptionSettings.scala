@@ -38,24 +38,50 @@ trait HlsEncryptionSettings extends js.Object {
 
 object HlsEncryptionSettings {
   @scala.inline
-  def apply(
-    ConstantInitializationVector: stringMin32Max32Pattern09aFAF32 = null,
-    EncryptionMethod: HlsEncryptionType = null,
-    InitializationVectorInManifest: HlsInitializationVectorInManifest = null,
-    OfflineEncrypted: HlsOfflineEncrypted = null,
-    SpekeKeyProvider: SpekeKeyProvider = null,
-    StaticKeyProvider: StaticKeyProvider = null,
-    Type: HlsKeyProviderType = null
-  ): HlsEncryptionSettings = {
+  def apply(): HlsEncryptionSettings = {
     val __obj = js.Dynamic.literal()
-    if (ConstantInitializationVector != null) __obj.updateDynamic("ConstantInitializationVector")(ConstantInitializationVector.asInstanceOf[js.Any])
-    if (EncryptionMethod != null) __obj.updateDynamic("EncryptionMethod")(EncryptionMethod.asInstanceOf[js.Any])
-    if (InitializationVectorInManifest != null) __obj.updateDynamic("InitializationVectorInManifest")(InitializationVectorInManifest.asInstanceOf[js.Any])
-    if (OfflineEncrypted != null) __obj.updateDynamic("OfflineEncrypted")(OfflineEncrypted.asInstanceOf[js.Any])
-    if (SpekeKeyProvider != null) __obj.updateDynamic("SpekeKeyProvider")(SpekeKeyProvider.asInstanceOf[js.Any])
-    if (StaticKeyProvider != null) __obj.updateDynamic("StaticKeyProvider")(StaticKeyProvider.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsEncryptionSettings]
   }
+  @scala.inline
+  implicit class HlsEncryptionSettingsOps[Self <: HlsEncryptionSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConstantInitializationVector(value: stringMin32Max32Pattern09aFAF32): Self = this.set("ConstantInitializationVector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstantInitializationVector: Self = this.set("ConstantInitializationVector", js.undefined)
+    @scala.inline
+    def setEncryptionMethod(value: HlsEncryptionType): Self = this.set("EncryptionMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionMethod: Self = this.set("EncryptionMethod", js.undefined)
+    @scala.inline
+    def setInitializationVectorInManifest(value: HlsInitializationVectorInManifest): Self = this.set("InitializationVectorInManifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitializationVectorInManifest: Self = this.set("InitializationVectorInManifest", js.undefined)
+    @scala.inline
+    def setOfflineEncrypted(value: HlsOfflineEncrypted): Self = this.set("OfflineEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfflineEncrypted: Self = this.set("OfflineEncrypted", js.undefined)
+    @scala.inline
+    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = this.set("SpekeKeyProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpekeKeyProvider: Self = this.set("SpekeKeyProvider", js.undefined)
+    @scala.inline
+    def setStaticKeyProvider(value: StaticKeyProvider): Self = this.set("StaticKeyProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticKeyProvider: Self = this.set("StaticKeyProvider", js.undefined)
+    @scala.inline
+    def setType(value: HlsKeyProviderType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

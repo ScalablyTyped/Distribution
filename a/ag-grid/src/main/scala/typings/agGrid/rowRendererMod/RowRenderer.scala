@@ -90,13 +90,9 @@ class RowRenderer () extends BeanStub {
   def navigateToNextCell(event: KeyboardEvent, key: Double, previousCell: GridCell, allowUserOverride: Boolean): Unit = js.native
   /* private */ def onDisplayedColumnsChanged(): js.Any = js.native
   /* private */ def onModelUpdated(refreshEvent: js.Any): js.Any = js.native
-  /* private */ def onPageLoaded(): js.Any = js.native
   /* private */ def onPageLoaded(refreshEvent: js.Any): js.Any = js.native
   /* private */ def onPinnedRowDataChanged(): js.Any = js.native
   def onTabKeyDown(previousRenderedCell: CellComp, keyboardEvent: KeyboardEvent): Unit = js.native
-  /* private */ def redraw(): js.Any = js.native
-  /* private */ def redraw(rowsToRecycle: js.Any): js.Any = js.native
-  /* private */ def redraw(rowsToRecycle: js.Any, animate: js.Any): js.Any = js.native
   /* private */ def redraw(rowsToRecycle: js.Any, animate: js.Any, afterScroll: js.Any): js.Any = js.native
   def redrawAfterModelUpdate(): Unit = js.native
   def redrawAfterModelUpdate(params: RefreshViewParams): Unit = js.native

@@ -26,6 +26,7 @@ object highchartsAugmentingMod extends js.Object {
       *        for export only.
       */
     def exportChartLocal(): Unit = js.native
+    def exportChartLocal(exportingOptions: js.UndefOr[scala.Nothing], chartOptions: Options): Unit = js.native
     def exportChartLocal(exportingOptions: ExportingOptions): Unit = js.native
     def exportChartLocal(exportingOptions: ExportingOptions, chartOptions: Options): Unit = js.native
   }

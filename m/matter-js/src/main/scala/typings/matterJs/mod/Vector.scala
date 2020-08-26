@@ -1,6 +1,5 @@
 package typings.matterJs.mod
 
-import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,6 +48,7 @@ object Vector extends js.Object {
     * @return {vector} A new vector
     */
   def create(): Vector = js.native
+  def create(x: js.UndefOr[scala.Nothing], y: Double): Vector = js.native
   def create(x: Double): Vector = js.native
   def create(x: Double, y: Double): Vector = js.native
   /**
@@ -83,7 +83,7 @@ object Vector extends js.Object {
     * @param {vector} vectorB
     * @return {number} The dot product of the two vectors
     */
-  def dot(vectorA: Vector, vectorB: Vector): Number = js.native
+  def dot(vectorA: Vector, vectorB: Vector): Double = js.native
   /**
     * Returns the magnitude (length) of a vector.
     * @method magnitude

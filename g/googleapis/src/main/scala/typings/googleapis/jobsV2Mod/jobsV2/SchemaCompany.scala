@@ -126,46 +126,100 @@ trait SchemaCompany extends js.Object {
 
 object SchemaCompany {
   @scala.inline
-  def apply(
-    careerPageLink: String = null,
-    companyInfoSources: js.Array[SchemaCompanyInfoSource] = null,
-    companySize: String = null,
-    disableLocationOptimization: js.UndefOr[Boolean] = js.undefined,
-    displayName: String = null,
-    distributorBillingCompanyId: String = null,
-    distributorCompanyId: String = null,
-    eeoText: String = null,
-    hiringAgency: js.UndefOr[Boolean] = js.undefined,
-    hqLocation: String = null,
-    imageUrl: String = null,
-    keywordSearchableCustomAttributes: js.Array[String] = null,
-    keywordSearchableCustomFields: js.Array[Double] = null,
-    name: String = null,
-    structuredCompanyHqLocation: SchemaJobLocation = null,
-    suspended: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    website: String = null
-  ): SchemaCompany = {
+  def apply(): SchemaCompany = {
     val __obj = js.Dynamic.literal()
-    if (careerPageLink != null) __obj.updateDynamic("careerPageLink")(careerPageLink.asInstanceOf[js.Any])
-    if (companyInfoSources != null) __obj.updateDynamic("companyInfoSources")(companyInfoSources.asInstanceOf[js.Any])
-    if (companySize != null) __obj.updateDynamic("companySize")(companySize.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableLocationOptimization)) __obj.updateDynamic("disableLocationOptimization")(disableLocationOptimization.get.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (distributorBillingCompanyId != null) __obj.updateDynamic("distributorBillingCompanyId")(distributorBillingCompanyId.asInstanceOf[js.Any])
-    if (distributorCompanyId != null) __obj.updateDynamic("distributorCompanyId")(distributorCompanyId.asInstanceOf[js.Any])
-    if (eeoText != null) __obj.updateDynamic("eeoText")(eeoText.asInstanceOf[js.Any])
-    if (!js.isUndefined(hiringAgency)) __obj.updateDynamic("hiringAgency")(hiringAgency.get.asInstanceOf[js.Any])
-    if (hqLocation != null) __obj.updateDynamic("hqLocation")(hqLocation.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (keywordSearchableCustomAttributes != null) __obj.updateDynamic("keywordSearchableCustomAttributes")(keywordSearchableCustomAttributes.asInstanceOf[js.Any])
-    if (keywordSearchableCustomFields != null) __obj.updateDynamic("keywordSearchableCustomFields")(keywordSearchableCustomFields.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (structuredCompanyHqLocation != null) __obj.updateDynamic("structuredCompanyHqLocation")(structuredCompanyHqLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(suspended)) __obj.updateDynamic("suspended")(suspended.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCompany]
   }
+  @scala.inline
+  implicit class SchemaCompanyOps[Self <: SchemaCompany] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCareerPageLink(value: String): Self = this.set("careerPageLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCareerPageLink: Self = this.set("careerPageLink", js.undefined)
+    @scala.inline
+    def setCompanyInfoSourcesVarargs(value: SchemaCompanyInfoSource*): Self = this.set("companyInfoSources", js.Array(value :_*))
+    @scala.inline
+    def setCompanyInfoSources(value: js.Array[SchemaCompanyInfoSource]): Self = this.set("companyInfoSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyInfoSources: Self = this.set("companyInfoSources", js.undefined)
+    @scala.inline
+    def setCompanySize(value: String): Self = this.set("companySize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanySize: Self = this.set("companySize", js.undefined)
+    @scala.inline
+    def setDisableLocationOptimization(value: Boolean): Self = this.set("disableLocationOptimization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableLocationOptimization: Self = this.set("disableLocationOptimization", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setDistributorBillingCompanyId(value: String): Self = this.set("distributorBillingCompanyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributorBillingCompanyId: Self = this.set("distributorBillingCompanyId", js.undefined)
+    @scala.inline
+    def setDistributorCompanyId(value: String): Self = this.set("distributorCompanyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributorCompanyId: Self = this.set("distributorCompanyId", js.undefined)
+    @scala.inline
+    def setEeoText(value: String): Self = this.set("eeoText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEeoText: Self = this.set("eeoText", js.undefined)
+    @scala.inline
+    def setHiringAgency(value: Boolean): Self = this.set("hiringAgency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiringAgency: Self = this.set("hiringAgency", js.undefined)
+    @scala.inline
+    def setHqLocation(value: String): Self = this.set("hqLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHqLocation: Self = this.set("hqLocation", js.undefined)
+    @scala.inline
+    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    @scala.inline
+    def setKeywordSearchableCustomAttributesVarargs(value: String*): Self = this.set("keywordSearchableCustomAttributes", js.Array(value :_*))
+    @scala.inline
+    def setKeywordSearchableCustomAttributes(value: js.Array[String]): Self = this.set("keywordSearchableCustomAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywordSearchableCustomAttributes: Self = this.set("keywordSearchableCustomAttributes", js.undefined)
+    @scala.inline
+    def setKeywordSearchableCustomFieldsVarargs(value: Double*): Self = this.set("keywordSearchableCustomFields", js.Array(value :_*))
+    @scala.inline
+    def setKeywordSearchableCustomFields(value: js.Array[Double]): Self = this.set("keywordSearchableCustomFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywordSearchableCustomFields: Self = this.set("keywordSearchableCustomFields", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStructuredCompanyHqLocation(value: SchemaJobLocation): Self = this.set("structuredCompanyHqLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStructuredCompanyHqLocation: Self = this.set("structuredCompanyHqLocation", js.undefined)
+    @scala.inline
+    def setSuspended(value: Boolean): Self = this.set("suspended", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspended: Self = this.set("suspended", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsite: Self = this.set("website", js.undefined)
+  }
+  
 }
 

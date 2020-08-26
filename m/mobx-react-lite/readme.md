@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobx-react-lite
 
-Typings are for version 2.0.6
+Typings are for version 2.0.7
 
 ## Library description:
 Lightweight React bindings for MobX based on React 16.8 and Hooks

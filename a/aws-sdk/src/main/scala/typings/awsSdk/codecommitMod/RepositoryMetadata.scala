@@ -50,30 +50,62 @@ trait RepositoryMetadata extends js.Object {
 
 object RepositoryMetadata {
   @scala.inline
-  def apply(
-    Arn: Arn = null,
-    accountId: AccountId = null,
-    cloneUrlHttp: CloneUrlHttp = null,
-    cloneUrlSsh: CloneUrlSsh = null,
-    creationDate: CreationDate = null,
-    defaultBranch: BranchName = null,
-    lastModifiedDate: LastModifiedDate = null,
-    repositoryDescription: RepositoryDescription = null,
-    repositoryId: RepositoryId = null,
-    repositoryName: RepositoryName = null
-  ): RepositoryMetadata = {
+  def apply(): RepositoryMetadata = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (cloneUrlHttp != null) __obj.updateDynamic("cloneUrlHttp")(cloneUrlHttp.asInstanceOf[js.Any])
-    if (cloneUrlSsh != null) __obj.updateDynamic("cloneUrlSsh")(cloneUrlSsh.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (defaultBranch != null) __obj.updateDynamic("defaultBranch")(defaultBranch.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (repositoryDescription != null) __obj.updateDynamic("repositoryDescription")(repositoryDescription.asInstanceOf[js.Any])
-    if (repositoryId != null) __obj.updateDynamic("repositoryId")(repositoryId.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoryMetadata]
   }
+  @scala.inline
+  implicit class RepositoryMetadataOps[Self <: RepositoryMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setCloneUrlHttp(value: CloneUrlHttp): Self = this.set("cloneUrlHttp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloneUrlHttp: Self = this.set("cloneUrlHttp", js.undefined)
+    @scala.inline
+    def setCloneUrlSsh(value: CloneUrlSsh): Self = this.set("cloneUrlSsh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloneUrlSsh: Self = this.set("cloneUrlSsh", js.undefined)
+    @scala.inline
+    def setCreationDate(value: CreationDate): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setDefaultBranch(value: BranchName): Self = this.set("defaultBranch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultBranch: Self = this.set("defaultBranch", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: LastModifiedDate): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    @scala.inline
+    def setRepositoryDescription(value: RepositoryDescription): Self = this.set("repositoryDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryDescription: Self = this.set("repositoryDescription", js.undefined)
+    @scala.inline
+    def setRepositoryId(value: RepositoryId): Self = this.set("repositoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryId: Self = this.set("repositoryId", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "mapbox__geo-viewport"
-version := "0.4-dt-20190108Z-084bbd"
-scalaVersion := "2.13.2"
+version := "0.4-dt-20190108Z-5e7d59"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

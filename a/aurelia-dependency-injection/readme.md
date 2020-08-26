@@ -12,7 +12,7 @@ A lightweight, extensible dependency injection container for JavaScript.
 | Keywords           | aurelia, di, dependency injection, ioc |
 | # releases         | 7 |
 | # dependents       | 117 |
-| # downloads        | 559568 |
+| # downloads        | 566625 |
 | # stars            | 0 |
 
 ## Links

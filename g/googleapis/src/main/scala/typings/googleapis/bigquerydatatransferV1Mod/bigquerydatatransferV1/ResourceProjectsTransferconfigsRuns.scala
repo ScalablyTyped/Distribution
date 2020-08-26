@@ -28,6 +28,7 @@ class ResourceProjectsTransferconfigsRuns protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsTransferconfigsRunsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsTransferconfigsRunsDelete,
@@ -58,6 +59,7 @@ class ResourceProjectsTransferconfigsRuns protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTransferRun] = js.native
   def get(callback: BodyResponseCallback[SchemaTransferRun]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransferRun] = js.native
   def get(params: ParamsResourceProjectsTransferconfigsRunsGet): GaxiosPromise[SchemaTransferRun] = js.native
   def get(
     params: ParamsResourceProjectsTransferconfigsRunsGet,
@@ -92,6 +94,7 @@ class ResourceProjectsTransferconfigsRuns protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListTransferRunsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTransferRunsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTransferRunsResponse] = js.native
   def list(params: ParamsResourceProjectsTransferconfigsRunsList): GaxiosPromise[SchemaListTransferRunsResponse] = js.native
   def list(
     params: ParamsResourceProjectsTransferconfigsRunsList,

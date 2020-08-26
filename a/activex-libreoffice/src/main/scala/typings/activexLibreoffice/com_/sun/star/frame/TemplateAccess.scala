@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides a high level API to organize document templates */
+@js.native
 trait TemplateAccess
   extends XDocumentTemplates
      with XLocalizable

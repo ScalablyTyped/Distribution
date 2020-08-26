@@ -49,20 +49,48 @@ trait SchemaJwt extends js.Object {
 
 object SchemaJwt {
   @scala.inline
-  def apply(
-    audiences: js.Array[String] = null,
-    issuer: String = null,
-    jwksPublicKeys: String = null,
-    jwtHeaders: js.Array[SchemaJwtHeader] = null,
-    jwtParams: js.Array[String] = null
-  ): SchemaJwt = {
+  def apply(): SchemaJwt = {
     val __obj = js.Dynamic.literal()
-    if (audiences != null) __obj.updateDynamic("audiences")(audiences.asInstanceOf[js.Any])
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    if (jwksPublicKeys != null) __obj.updateDynamic("jwksPublicKeys")(jwksPublicKeys.asInstanceOf[js.Any])
-    if (jwtHeaders != null) __obj.updateDynamic("jwtHeaders")(jwtHeaders.asInstanceOf[js.Any])
-    if (jwtParams != null) __obj.updateDynamic("jwtParams")(jwtParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJwt]
   }
+  @scala.inline
+  implicit class SchemaJwtOps[Self <: SchemaJwt] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudiencesVarargs(value: String*): Self = this.set("audiences", js.Array(value :_*))
+    @scala.inline
+    def setAudiences(value: js.Array[String]): Self = this.set("audiences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudiences: Self = this.set("audiences", js.undefined)
+    @scala.inline
+    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    @scala.inline
+    def setJwksPublicKeys(value: String): Self = this.set("jwksPublicKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJwksPublicKeys: Self = this.set("jwksPublicKeys", js.undefined)
+    @scala.inline
+    def setJwtHeadersVarargs(value: SchemaJwtHeader*): Self = this.set("jwtHeaders", js.Array(value :_*))
+    @scala.inline
+    def setJwtHeaders(value: js.Array[SchemaJwtHeader]): Self = this.set("jwtHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJwtHeaders: Self = this.set("jwtHeaders", js.undefined)
+    @scala.inline
+    def setJwtParamsVarargs(value: String*): Self = this.set("jwtParams", js.Array(value :_*))
+    @scala.inline
+    def setJwtParams(value: js.Array[String]): Self = this.set("jwtParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJwtParams: Self = this.set("jwtParams", js.undefined)
+  }
+  
 }
 

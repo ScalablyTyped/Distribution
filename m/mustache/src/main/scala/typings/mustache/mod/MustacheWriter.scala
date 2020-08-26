@@ -76,11 +76,21 @@ trait MustacheWriter extends js.Object {
     * The tags to use.
     */
   def render(template: String, view: js.Any): String = js.native
+  def render(
+    template: String,
+    view: js.Any,
+    partials: js.UndefOr[PartialsOrLookupFn],
+    tags: OpeningAndClosingTags
+  ): String = js.native
   def render(template: String, view: js.Any, partials: PartialsOrLookupFn): String = js.native
-  def render(template: String, view: js.Any, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
   def render(template: String, view: MustacheContext): String = js.native
+  def render(
+    template: String,
+    view: MustacheContext,
+    partials: js.UndefOr[PartialsOrLookupFn],
+    tags: OpeningAndClosingTags
+  ): String = js.native
   def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn): String = js.native
-  def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
   /**
     * Renders an inverted section block.
     *
@@ -97,13 +107,13 @@ trait MustacheWriter extends js.Object {
     * An object used to extract the portion of the original template that was contained in a higher-order section.
     */
   def renderInverted(token: js.Array[String], context: MustacheContext): String = js.native
-  def renderInverted(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
   def renderInverted(
     token: js.Array[String],
     context: MustacheContext,
-    partials: PartialsOrLookupFn,
+    partials: js.UndefOr[PartialsOrLookupFn],
     originalTemplate: String
   ): String = js.native
+  def renderInverted(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
   /**
     * Renders a partial.
     *
@@ -120,13 +130,13 @@ trait MustacheWriter extends js.Object {
     * The tags to use.
     */
   def renderPartial(token: js.Array[String], context: MustacheContext): String = js.native
-  def renderPartial(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
   def renderPartial(
     token: js.Array[String],
     context: MustacheContext,
-    partials: PartialsOrLookupFn,
+    partials: js.UndefOr[PartialsOrLookupFn],
     tags: OpeningAndClosingTags
   ): String = js.native
+  def renderPartial(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
   /**
     * Renders a section block.
     *
@@ -143,13 +153,13 @@ trait MustacheWriter extends js.Object {
     * An object used to extract the portion of the original template that was contained in a higher-order section.
     */
   def renderSection(token: js.Array[String], context: MustacheContext): String = js.native
-  def renderSection(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
   def renderSection(
     token: js.Array[String],
     context: MustacheContext,
-    partials: PartialsOrLookupFn,
+    partials: js.UndefOr[PartialsOrLookupFn],
     originalTemplate: String
   ): String = js.native
+  def renderSection(token: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
   /**
     * Low-level method that renders the given array of `tokens` using the given `context` and `partials`.
     *
@@ -168,13 +178,13 @@ trait MustacheWriter extends js.Object {
     * If the template doesn't use higher-order sections, this argument may be omitted.
     */
   def renderTokens(tokens: js.Array[js.Array[String]], context: MustacheContext): String = js.native
-  def renderTokens(tokens: js.Array[js.Array[String]], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
   def renderTokens(
     tokens: js.Array[js.Array[String]],
     context: MustacheContext,
-    partials: PartialsOrLookupFn,
+    partials: js.UndefOr[PartialsOrLookupFn],
     originalTemplate: String
   ): String = js.native
+  def renderTokens(tokens: js.Array[js.Array[String]], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
   /**
     * Renders an unescaped value.
     *

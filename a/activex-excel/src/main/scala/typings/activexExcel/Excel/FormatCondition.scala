@@ -37,13 +37,201 @@ trait FormatCondition extends js.Object {
   def Borders(Index: XlBordersIndex): Border = js.native
   def Delete(): Unit = js.native
   def Modify(Type: XlFormatConditionType): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.UndefOr[scala.Nothing],
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.Any,
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: String
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: String,
+    String: js.UndefOr[scala.Nothing],
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: String,
+    String: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: String,
+    String: js.Any,
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(Type: XlFormatConditionType, Operator: js.UndefOr[scala.Nothing], Formula1: String): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String,
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.UndefOr[scala.Nothing],
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String,
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String,
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.Any,
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String,
+    Formula2: String
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String,
+    Formula2: String,
+    String: js.UndefOr[scala.Nothing],
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String,
+    Formula2: String,
+    String: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: String,
+    Formula2: String,
+    String: js.Any,
+    Operator2: js.Any
+  ): Unit = js.native
   def Modify(Type: XlFormatConditionType, Operator: XlFormatConditionOperator): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.UndefOr[scala.Nothing],
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.Any,
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: String
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: String,
+    String: js.UndefOr[scala.Nothing],
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: String,
+    String: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: String,
+    String: js.Any,
+    Operator2: js.Any
+  ): Unit = js.native
   def Modify(Type: XlFormatConditionType, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
   def Modify(
     Type: XlFormatConditionType,
     Operator: XlFormatConditionOperator,
     Formula1: String,
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.UndefOr[scala.Nothing],
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: String,
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: String,
+    Formula2: js.UndefOr[scala.Nothing],
+    String: js.Any,
+    Operator2: js.Any
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: String,
     Formula2: String
+  ): Unit = js.native
+  def Modify(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: String,
+    Formula2: String,
+    String: js.UndefOr[scala.Nothing],
+    Operator2: js.Any
   ): Unit = js.native
   def Modify(
     Type: XlFormatConditionType,
@@ -70,7 +258,26 @@ trait FormatCondition extends js.Object {
   def SetFirstPriority(): Unit = js.native
   def SetLastPriority(): Unit = js.native
   def _Modify(Type: XlFormatConditionType): Unit = js.native
+  def _Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: js.Any
+  ): Unit = js.native
+  def _Modify(Type: XlFormatConditionType, Operator: js.UndefOr[scala.Nothing], Formula1: js.Any): Unit = js.native
+  def _Modify(
+    Type: XlFormatConditionType,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: js.Any,
+    Formula2: js.Any
+  ): Unit = js.native
   def _Modify(Type: XlFormatConditionType, Operator: js.Any): Unit = js.native
+  def _Modify(
+    Type: XlFormatConditionType,
+    Operator: js.Any,
+    Formula1: js.UndefOr[scala.Nothing],
+    Formula2: js.Any
+  ): Unit = js.native
   def _Modify(Type: XlFormatConditionType, Operator: js.Any, Formula1: js.Any): Unit = js.native
   def _Modify(Type: XlFormatConditionType, Operator: js.Any, Formula1: js.Any, Formula2: js.Any): Unit = js.native
 }

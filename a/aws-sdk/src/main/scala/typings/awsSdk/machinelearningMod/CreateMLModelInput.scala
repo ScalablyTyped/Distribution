@@ -38,21 +38,44 @@ trait CreateMLModelInput extends js.Object {
 
 object CreateMLModelInput {
   @scala.inline
-  def apply(
-    MLModelId: EntityId,
-    MLModelType: MLModelType,
-    TrainingDataSourceId: EntityId,
-    MLModelName: EntityName = null,
-    Parameters: TrainingParameters = null,
-    Recipe: Recipe = null,
-    RecipeUri: S3Url = null
-  ): CreateMLModelInput = {
+  def apply(MLModelId: EntityId, MLModelType: MLModelType, TrainingDataSourceId: EntityId): CreateMLModelInput = {
     val __obj = js.Dynamic.literal(MLModelId = MLModelId.asInstanceOf[js.Any], MLModelType = MLModelType.asInstanceOf[js.Any], TrainingDataSourceId = TrainingDataSourceId.asInstanceOf[js.Any])
-    if (MLModelName != null) __obj.updateDynamic("MLModelName")(MLModelName.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (Recipe != null) __obj.updateDynamic("Recipe")(Recipe.asInstanceOf[js.Any])
-    if (RecipeUri != null) __obj.updateDynamic("RecipeUri")(RecipeUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMLModelInput]
   }
+  @scala.inline
+  implicit class CreateMLModelInputOps[Self <: CreateMLModelInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMLModelType(value: MLModelType): Self = this.set("MLModelType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingDataSourceId(value: EntityId): Self = this.set("TrainingDataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMLModelName(value: EntityName): Self = this.set("MLModelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMLModelName: Self = this.set("MLModelName", js.undefined)
+    @scala.inline
+    def setParameters(value: TrainingParameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setRecipe(value: Recipe): Self = this.set("Recipe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipe: Self = this.set("Recipe", js.undefined)
+    @scala.inline
+    def setRecipeUri(value: S3Url): Self = this.set("RecipeUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipeUri: Self = this.set("RecipeUri", js.undefined)
+  }
+  
 }
 

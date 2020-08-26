@@ -18,14 +18,32 @@ trait DescribeTransitGatewayPeeringAttachmentsResult extends js.Object {
 
 object DescribeTransitGatewayPeeringAttachmentsResult {
   @scala.inline
-  def apply(
-    NextToken: String = null,
-    TransitGatewayPeeringAttachments: TransitGatewayPeeringAttachmentList = null
-  ): DescribeTransitGatewayPeeringAttachmentsResult = {
+  def apply(): DescribeTransitGatewayPeeringAttachmentsResult = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (TransitGatewayPeeringAttachments != null) __obj.updateDynamic("TransitGatewayPeeringAttachments")(TransitGatewayPeeringAttachments.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTransitGatewayPeeringAttachmentsResult]
   }
+  @scala.inline
+  implicit class DescribeTransitGatewayPeeringAttachmentsResultOps[Self <: DescribeTransitGatewayPeeringAttachmentsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTransitGatewayPeeringAttachmentsVarargs(value: TransitGatewayPeeringAttachment*): Self = this.set("TransitGatewayPeeringAttachments", js.Array(value :_*))
+    @scala.inline
+    def setTransitGatewayPeeringAttachments(value: TransitGatewayPeeringAttachmentList): Self = this.set("TransitGatewayPeeringAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayPeeringAttachments: Self = this.set("TransitGatewayPeeringAttachments", js.undefined)
+  }
+  
 }
 

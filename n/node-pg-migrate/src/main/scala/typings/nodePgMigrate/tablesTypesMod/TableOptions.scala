@@ -7,32 +7,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableOptions extends IfNotExistsOption {
-  var comment: js.UndefOr[String | Null] = js.undefined
-  var constraints: js.UndefOr[ConstraintOptions] = js.undefined
-  var inherits: js.UndefOr[Name] = js.undefined
-  var like: js.UndefOr[Name | Options] = js.undefined
-  var temporary: js.UndefOr[Boolean] = js.undefined
+  var comment: js.UndefOr[String | Null] = js.native
+  var constraints: js.UndefOr[ConstraintOptions] = js.native
+  var inherits: js.UndefOr[Name] = js.native
+  var like: js.UndefOr[Name | Options] = js.native
+  var temporary: js.UndefOr[Boolean] = js.native
 }
 
 object TableOptions {
   @scala.inline
-  def apply(
-    comment: js.UndefOr[Null | String] = js.undefined,
-    constraints: ConstraintOptions = null,
-    ifNotExists: js.UndefOr[Boolean] = js.undefined,
-    inherits: Name = null,
-    like: Name | Options = null,
-    temporary: js.UndefOr[Boolean] = js.undefined
-  ): TableOptions = {
+  def apply(): TableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists.get.asInstanceOf[js.Any])
-    if (inherits != null) __obj.updateDynamic("inherits")(inherits.asInstanceOf[js.Any])
-    if (like != null) __obj.updateDynamic("like")(like.asInstanceOf[js.Any])
-    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableOptions]
   }
+  @scala.inline
+  implicit class TableOptionsOps[Self <: TableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setCommentNull: Self = this.set("comment", null)
+    @scala.inline
+    def setConstraints(value: ConstraintOptions): Self = this.set("constraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraints: Self = this.set("constraints", js.undefined)
+    @scala.inline
+    def setInherits(value: Name): Self = this.set("inherits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInherits: Self = this.set("inherits", js.undefined)
+    @scala.inline
+    def setLike(value: Name | Options): Self = this.set("like", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLike: Self = this.set("like", js.undefined)
+    @scala.inline
+    def setTemporary(value: Boolean): Self = this.set("temporary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemporary: Self = this.set("temporary", js.undefined)
+  }
+  
 }
 

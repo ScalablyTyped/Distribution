@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object AggregateError extends js.Object {
   def apply(message: String): Error = js.native
+  def apply(message: String, innerError: js.UndefOr[scala.Nothing], skipIfAlreadyAggregate: Boolean): Error = js.native
   def apply(message: String, innerError: Error): Error = js.native
   def apply(message: String, innerError: Error, skipIfAlreadyAggregate: Boolean): Error = js.native
 }

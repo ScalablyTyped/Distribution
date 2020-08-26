@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "hapi__pinpoint"
-version := "2.0.0-c7db22"
-scalaVersion := "2.13.2"
+version := "2.0.0-e287b5"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

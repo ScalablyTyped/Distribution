@@ -26,16 +26,9 @@ object getCommentsForComparedCommitCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetCommentsForComparedCommitInput) = this()
-    /* CompleteClass */
-    override val input: GetCommentsForComparedCommitInput = js.native
     val middlewareStack: MiddlewareStack[GetCommentsForComparedCommitInput, GetCommentsForComparedCommitOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[GetCommentsForComparedCommitInput, GetCommentsForComparedCommitOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[GetCommentsForComparedCommitInput, GetCommentsForComparedCommitOutput] = js.native
   }

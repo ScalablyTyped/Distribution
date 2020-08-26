@@ -20,6 +20,7 @@ abstract class ProviderResource protected ()
     */
   def this(pkg: String, name: String) = this()
   def this(pkg: String, name: String, props: Inputs) = this()
+  def this(pkg: String, name: String, props: js.UndefOr[scala.Nothing], opts: ResourceOptions) = this()
   def this(pkg: String, name: String, props: Inputs, opts: ResourceOptions) = this()
 }
 

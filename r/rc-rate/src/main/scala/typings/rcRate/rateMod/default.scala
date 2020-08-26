@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-rate/lib/Rate", JSImport.Default)
+@JSImport("rc-rate/es/Rate", JSImport.Default)
 @js.native
 class default protected () extends Rate {
   def this(props: RateProps) = this()
 }
 
 /* static members */
-@JSImport("rc-rate/lib/Rate", JSImport.Default)
+@JSImport("rc-rate/es/Rate", JSImport.Default)
 @js.native
 object default extends js.Object {
   var defaultProps: AllowClear = js.native

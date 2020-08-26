@@ -22,12 +22,34 @@ trait ProvisionedCapacityDescription extends js.Object {
 
 object ProvisionedCapacityDescription {
   @scala.inline
-  def apply(CapacityId: String = null, ExpirationDate: String = null, StartDate: String = null): ProvisionedCapacityDescription = {
+  def apply(): ProvisionedCapacityDescription = {
     val __obj = js.Dynamic.literal()
-    if (CapacityId != null) __obj.updateDynamic("CapacityId")(CapacityId.asInstanceOf[js.Any])
-    if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
-    if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionedCapacityDescription]
   }
+  @scala.inline
+  implicit class ProvisionedCapacityDescriptionOps[Self <: ProvisionedCapacityDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityId(value: String): Self = this.set("CapacityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityId: Self = this.set("CapacityId", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: String): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
+    @scala.inline
+    def setStartDate(value: String): Self = this.set("StartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+  }
+  
 }
 

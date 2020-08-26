@@ -31,6 +31,7 @@ object geometryMod extends js.Object {
     def intersectsExtent(extent: Extent): Boolean = js.native
     def rotate(angle: Double, anchor: Coordinate): Unit = js.native
     def scale(sx: Double): Unit = js.native
+    def scale(sx: Double, opt_sy: js.UndefOr[scala.Nothing], opt_anchor: Coordinate): Unit = js.native
     def scale(sx: Double, opt_sy: Double): Unit = js.native
     def scale(sx: Double, opt_sy: Double, opt_anchor: Coordinate): Unit = js.native
     def simplify(tolerance: Double): Geometry = js.native

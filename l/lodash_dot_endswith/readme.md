@@ -12,7 +12,7 @@ The lodash method `_.endsWith` exported as a module.
 | Keywords           | lodash-modularized, endswith |
 | # releases         | 0 |
 | # dependents       | 44 |
-| # downloads        | 10069131 |
+| # downloads        | 9819300 |
 | # stars            | 0 |
 
 ## Links

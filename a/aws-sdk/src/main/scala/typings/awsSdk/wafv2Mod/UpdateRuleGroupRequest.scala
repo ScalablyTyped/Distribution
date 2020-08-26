@@ -43,14 +43,43 @@ object UpdateRuleGroupRequest {
     LockToken: LockToken,
     Name: EntityName,
     Scope: Scope,
-    VisibilityConfig: VisibilityConfig,
-    Description: EntityDescription = null,
-    Rules: Rules = null
+    VisibilityConfig: VisibilityConfig
   ): UpdateRuleGroupRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], LockToken = LockToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any], VisibilityConfig = VisibilityConfig.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Rules != null) __obj.updateDynamic("Rules")(Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRuleGroupRequest]
   }
+  @scala.inline
+  implicit class UpdateRuleGroupRequestOps[Self <: UpdateRuleGroupRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: EntityId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLockToken(value: LockToken): Self = this.set("LockToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScope(value: Scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVisibilityConfig(value: VisibilityConfig): Self = this.set("VisibilityConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: EntityDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: Rule*): Self = this.set("Rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: Rules): Self = this.set("Rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("Rules", js.undefined)
+  }
+  
 }
 

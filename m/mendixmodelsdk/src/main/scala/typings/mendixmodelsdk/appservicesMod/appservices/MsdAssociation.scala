@@ -25,33 +25,33 @@ class MsdAssociation protected () extends Element {
   @JSName("model")
   var model_FMsdAssociation: IModel = js.native
   def associationKind: String = js.native
-  def associationKind(newValue: String): js.Any = js.native
+  def associationKind_=(newValue: String): Unit = js.native
   def associationOwner: String = js.native
-  def associationOwner(newValue: String): js.Any = js.native
+  def associationOwner_=(newValue: String): Unit = js.native
   def associationType: String = js.native
-  def associationType(newValue: String): js.Any = js.native
+  def associationType_=(newValue: String): Unit = js.native
   def childDeleteBehavior: String = js.native
-  def childDeleteBehavior(newValue: String): js.Any = js.native
+  def childDeleteBehavior_=(newValue: String): Unit = js.native
   def childEntityName: String = js.native
-  def childEntityName(newValue: String): js.Any = js.native
+  def childEntityName_=(newValue: String): Unit = js.native
   def childX: Double = js.native
-  def childX(newValue: Double): js.Any = js.native
+  def childX_=(newValue: Double): Unit = js.native
   def childY: Double = js.native
-  def childY(newValue: Double): js.Any = js.native
+  def childY_=(newValue: Double): Unit = js.native
   def containerAsDataAssociation: DataAssociation = js.native
   def containerAsMsdDomainModel: MsdDomainModel = js.native
   def guid: String = js.native
-  def guid(newValue: String): js.Any = js.native
+  def guid_=(newValue: String): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def parentDeleteBehavior: String = js.native
-  def parentDeleteBehavior(newValue: String): js.Any = js.native
+  def parentDeleteBehavior_=(newValue: String): Unit = js.native
   def parentEntityName: String = js.native
-  def parentEntityName(newValue: String): js.Any = js.native
+  def parentEntityName_=(newValue: String): Unit = js.native
   def parentX: Double = js.native
-  def parentX(newValue: Double): js.Any = js.native
+  def parentX_=(newValue: Double): Unit = js.native
   def parentY: Double = js.native
-  def parentY(newValue: Double): js.Any = js.native
+  def parentY_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

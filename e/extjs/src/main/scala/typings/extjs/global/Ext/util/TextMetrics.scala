@@ -34,6 +34,7 @@ object TextMetrics extends js.Object {
     * @param origin String/Object The original method name
     */
   def createAlias(): Unit = js.native
+  def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
   def createAlias(alias: js.Any): Unit = js.native
   def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
   /** [Method] Destroy the TextMetrics instance created by measure  */
@@ -51,7 +52,11 @@ object TextMetrics extends js.Object {
     * @returns Object An object containing the text's size {width: (width), height: (height)}
     */
   def measure(): js.Any = js.native
+  def measure(el: js.UndefOr[scala.Nothing], text: js.UndefOr[scala.Nothing], fixedWidth: Double): js.Any = js.native
+  def measure(el: js.UndefOr[scala.Nothing], text: String): js.Any = js.native
+  def measure(el: js.UndefOr[scala.Nothing], text: String, fixedWidth: Double): js.Any = js.native
   def measure(el: js.Any): js.Any = js.native
+  def measure(el: js.Any, text: js.UndefOr[scala.Nothing], fixedWidth: Double): js.Any = js.native
   def measure(el: js.Any, text: String): js.Any = js.native
   def measure(el: js.Any, text: String, fixedWidth: Double): js.Any = js.native
   /** [Method] Override members of this class

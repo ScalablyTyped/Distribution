@@ -22,6 +22,7 @@ class Stack protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: StackArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: StackArgs, opts: CustomResourceOptions) = this()
   /**
     * A list of capabilities.
@@ -53,11 +54,11 @@ class Stack protected () extends CustomResource {
   /**
     * A map of outputs from the stack.
     */
-  val outputs: Output_[StringDictionary[_]] = js.native
+  val outputs: Output_[StringDictionary[String]] = js.native
   /**
     * A map of Parameter structures that specify input parameters for the stack.
     */
-  val parameters: Output_[StringDictionary[_]] = js.native
+  val parameters: Output_[StringDictionary[String]] = js.native
   /**
     * Structure containing the stack policy body.
     * Conflicts w/ `policyUrl`.
@@ -71,7 +72,7 @@ class Stack protected () extends CustomResource {
   /**
     * A list of tags to associate with this stack.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Structure containing the template body (max size: 51,200 bytes).
     */
@@ -97,8 +98,10 @@ object Stack extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Stack = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Stack = js.native
   def get(name: String, id: Input[ID], state: StackState): Stack = js.native
   def get(name: String, id: Input[ID], state: StackState, opts: CustomResourceOptions): Stack = js.native
   /**

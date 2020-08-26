@@ -15,8 +15,5 @@ class ContentPrefetchTrigger ()
     * @param waitInterval Interval before next allowed content prefetch.
     */
   def this(waitInterval: Double) = this()
-  /** Retrieves the time interval for prefetching web content. */
-  /* CompleteClass */
-  override var waitInterval: Double = js.native
 }
 

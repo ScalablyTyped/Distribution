@@ -17,20 +17,5 @@ class ASPxClientHtmlEditorCustomDialogClosingEventArgs protected ()
     * @param status An object that specifies a status that is returned to the parent control when the custom dialog is closed. This value is assigned to the ASPxClientHtmlEditorCustomDialogCloseEventArgsBase.status property.
     */
   def this(name: String, status: js.Any) = this()
-  /**
-    * Gets or sets a value specifying whether the event was handled.
-    */
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /**
-    * Gets the name that uniquely identifies the processed custom dialog.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-  /**
-    * Gets the status of the closed custom dialog.
-    */
-  /* CompleteClass */
-  override var status: js.Any = js.native
 }
 

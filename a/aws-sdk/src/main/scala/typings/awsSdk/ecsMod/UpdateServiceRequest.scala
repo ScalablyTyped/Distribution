@@ -55,33 +55,74 @@ trait UpdateServiceRequest extends js.Object {
 
 object UpdateServiceRequest {
   @scala.inline
-  def apply(
-    service: String,
-    capacityProviderStrategy: CapacityProviderStrategy = null,
-    cluster: String = null,
-    deploymentConfiguration: DeploymentConfiguration = null,
-    desiredCount: js.UndefOr[BoxedInteger] = js.undefined,
-    forceNewDeployment: js.UndefOr[Boolean] = js.undefined,
-    healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.undefined,
-    networkConfiguration: NetworkConfiguration = null,
-    placementConstraints: PlacementConstraints = null,
-    placementStrategy: PlacementStrategies = null,
-    platformVersion: String = null,
-    taskDefinition: String = null
-  ): UpdateServiceRequest = {
+  def apply(service: String): UpdateServiceRequest = {
     val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any])
-    if (capacityProviderStrategy != null) __obj.updateDynamic("capacityProviderStrategy")(capacityProviderStrategy.asInstanceOf[js.Any])
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (deploymentConfiguration != null) __obj.updateDynamic("deploymentConfiguration")(deploymentConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceNewDeployment)) __obj.updateDynamic("forceNewDeployment")(forceNewDeployment.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(healthCheckGracePeriodSeconds)) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds.get.asInstanceOf[js.Any])
-    if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
-    if (placementConstraints != null) __obj.updateDynamic("placementConstraints")(placementConstraints.asInstanceOf[js.Any])
-    if (placementStrategy != null) __obj.updateDynamic("placementStrategy")(placementStrategy.asInstanceOf[js.Any])
-    if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
-    if (taskDefinition != null) __obj.updateDynamic("taskDefinition")(taskDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServiceRequest]
   }
+  @scala.inline
+  implicit class UpdateServiceRequestOps[Self <: UpdateServiceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = this.set("capacityProviderStrategy", js.Array(value :_*))
+    @scala.inline
+    def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = this.set("capacityProviderStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityProviderStrategy: Self = this.set("capacityProviderStrategy", js.undefined)
+    @scala.inline
+    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCluster: Self = this.set("cluster", js.undefined)
+    @scala.inline
+    def setDeploymentConfiguration(value: DeploymentConfiguration): Self = this.set("deploymentConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentConfiguration: Self = this.set("deploymentConfiguration", js.undefined)
+    @scala.inline
+    def setDesiredCount(value: BoxedInteger): Self = this.set("desiredCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredCount: Self = this.set("desiredCount", js.undefined)
+    @scala.inline
+    def setForceNewDeployment(value: Boolean): Self = this.set("forceNewDeployment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceNewDeployment: Self = this.set("forceNewDeployment", js.undefined)
+    @scala.inline
+    def setHealthCheckGracePeriodSeconds(value: BoxedInteger): Self = this.set("healthCheckGracePeriodSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckGracePeriodSeconds: Self = this.set("healthCheckGracePeriodSeconds", js.undefined)
+    @scala.inline
+    def setNetworkConfiguration(value: NetworkConfiguration): Self = this.set("networkConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkConfiguration: Self = this.set("networkConfiguration", js.undefined)
+    @scala.inline
+    def setPlacementConstraintsVarargs(value: PlacementConstraint*): Self = this.set("placementConstraints", js.Array(value :_*))
+    @scala.inline
+    def setPlacementConstraints(value: PlacementConstraints): Self = this.set("placementConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementConstraints: Self = this.set("placementConstraints", js.undefined)
+    @scala.inline
+    def setPlacementStrategyVarargs(value: PlacementStrategy*): Self = this.set("placementStrategy", js.Array(value :_*))
+    @scala.inline
+    def setPlacementStrategy(value: PlacementStrategies): Self = this.set("placementStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementStrategy: Self = this.set("placementStrategy", js.undefined)
+    @scala.inline
+    def setPlatformVersion(value: String): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
+    @scala.inline
+    def setTaskDefinition(value: String): Self = this.set("taskDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskDefinition: Self = this.set("taskDefinition", js.undefined)
+  }
+  
 }
 

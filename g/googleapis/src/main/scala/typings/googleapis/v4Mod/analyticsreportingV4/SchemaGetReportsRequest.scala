@@ -30,14 +30,32 @@ trait SchemaGetReportsRequest extends js.Object {
 
 object SchemaGetReportsRequest {
   @scala.inline
-  def apply(
-    reportRequests: js.Array[SchemaReportRequest] = null,
-    useResourceQuotas: js.UndefOr[Boolean] = js.undefined
-  ): SchemaGetReportsRequest = {
+  def apply(): SchemaGetReportsRequest = {
     val __obj = js.Dynamic.literal()
-    if (reportRequests != null) __obj.updateDynamic("reportRequests")(reportRequests.asInstanceOf[js.Any])
-    if (!js.isUndefined(useResourceQuotas)) __obj.updateDynamic("useResourceQuotas")(useResourceQuotas.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetReportsRequest]
   }
+  @scala.inline
+  implicit class SchemaGetReportsRequestOps[Self <: SchemaGetReportsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReportRequestsVarargs(value: SchemaReportRequest*): Self = this.set("reportRequests", js.Array(value :_*))
+    @scala.inline
+    def setReportRequests(value: js.Array[SchemaReportRequest]): Self = this.set("reportRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportRequests: Self = this.set("reportRequests", js.undefined)
+    @scala.inline
+    def setUseResourceQuotas(value: Boolean): Self = this.set("useResourceQuotas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseResourceQuotas: Self = this.set("useResourceQuotas", js.undefined)
+  }
+  
 }
 

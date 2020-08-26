@@ -16,15 +16,5 @@ class ASPxClientSpellCheckerBeforeCheckEventArgs protected ()
     * @param controlId A string, containing the control's programmatic identifier.
     */
   def this(controlId: String) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets the programmatic identifier assigned to the control which is going to be checked.
-    */
-  /* CompleteClass */
-  override var controlId: String = js.native
 }
 

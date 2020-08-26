@@ -17,7 +17,5 @@ class CalendarYear protected ()
   var _onNavPrev: js.Any = js.native
   var _renderGrid: js.Any = js.native
   var _renderHeader: js.Any = js.native
-  /* CompleteClass */
-  override def focus(): Unit = js.native
 }
 

@@ -34,22 +34,48 @@ trait DescribeScheduledAuditResponse extends js.Object {
 
 object DescribeScheduledAuditResponse {
   @scala.inline
-  def apply(
-    dayOfMonth: DayOfMonth = null,
-    dayOfWeek: DayOfWeek = null,
-    frequency: AuditFrequency = null,
-    scheduledAuditArn: ScheduledAuditArn = null,
-    scheduledAuditName: ScheduledAuditName = null,
-    targetCheckNames: TargetAuditCheckNames = null
-  ): DescribeScheduledAuditResponse = {
+  def apply(): DescribeScheduledAuditResponse = {
     val __obj = js.Dynamic.literal()
-    if (dayOfMonth != null) __obj.updateDynamic("dayOfMonth")(dayOfMonth.asInstanceOf[js.Any])
-    if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (scheduledAuditArn != null) __obj.updateDynamic("scheduledAuditArn")(scheduledAuditArn.asInstanceOf[js.Any])
-    if (scheduledAuditName != null) __obj.updateDynamic("scheduledAuditName")(scheduledAuditName.asInstanceOf[js.Any])
-    if (targetCheckNames != null) __obj.updateDynamic("targetCheckNames")(targetCheckNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScheduledAuditResponse]
   }
+  @scala.inline
+  implicit class DescribeScheduledAuditResponseOps[Self <: DescribeScheduledAuditResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDayOfMonth(value: DayOfMonth): Self = this.set("dayOfMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDayOfMonth: Self = this.set("dayOfMonth", js.undefined)
+    @scala.inline
+    def setDayOfWeek(value: DayOfWeek): Self = this.set("dayOfWeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDayOfWeek: Self = this.set("dayOfWeek", js.undefined)
+    @scala.inline
+    def setFrequency(value: AuditFrequency): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    @scala.inline
+    def setScheduledAuditArn(value: ScheduledAuditArn): Self = this.set("scheduledAuditArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduledAuditArn: Self = this.set("scheduledAuditArn", js.undefined)
+    @scala.inline
+    def setScheduledAuditName(value: ScheduledAuditName): Self = this.set("scheduledAuditName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduledAuditName: Self = this.set("scheduledAuditName", js.undefined)
+    @scala.inline
+    def setTargetCheckNamesVarargs(value: AuditCheckName*): Self = this.set("targetCheckNames", js.Array(value :_*))
+    @scala.inline
+    def setTargetCheckNames(value: TargetAuditCheckNames): Self = this.set("targetCheckNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetCheckNames: Self = this.set("targetCheckNames", js.undefined)
+  }
+  
 }
 

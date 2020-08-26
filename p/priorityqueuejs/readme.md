@@ -12,7 +12,7 @@ a simple priority queue data structure
 | Keywords           | heap, priority, queue, priority queue, data structure |
 | # releases         | 0 |
 | # dependents       | 23 |
-| # downloads        | 2003599 |
+| # downloads        | 2067386 |
 | # stars            | 1 |
 
 ## Links

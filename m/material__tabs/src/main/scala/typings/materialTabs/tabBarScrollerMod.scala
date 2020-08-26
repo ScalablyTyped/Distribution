@@ -1,7 +1,7 @@
 package typings.materialTabs
 
+import typings.materialBase.componentMod.default
 import typings.materialTabs.adapterMod.MDCTabBarScrollerAdapter
-import typings.materialTabs.foundationMod.default
 import typings.materialTabs.tabBarMod.MDCTabBar
 import typings.std.Element
 import scala.scalajs.js
@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object tabBarScrollerMod extends js.Object {
   @js.native
-  class MDCTabBarScroller ()
-    extends typings.materialBase.componentMod.default[MDCTabBarScrollerAdapter, default] {
+  class MDCTabBarScroller () extends default[MDCTabBarScrollerAdapter] {
     val tabBar: MDCTabBar = js.native
     def initialize(): Unit = js.native
     def initialize(tabBarFactory: js.Function1[/* root */ Element, MDCTabBar]): Unit = js.native
@@ -21,7 +20,8 @@ object tabBarScrollerMod extends js.Object {
   }
   
   @js.native
-  class MDCTabBarScrollerFoundation () extends default
+  class MDCTabBarScrollerFoundation ()
+    extends typings.materialTabs.foundationMod.default
   
   /* static members */
   @js.native

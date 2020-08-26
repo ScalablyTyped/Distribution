@@ -28,13 +28,13 @@ class PasswordPolicySettings protected () extends Element {
   var model_FPasswordPolicySettings: IModel = js.native
   def containerAsProjectSecurity: ProjectSecurity = js.native
   def minimumLength: Double = js.native
-  def minimumLength(newValue: Double): js.Any = js.native
+  def minimumLength_=(newValue: Double): Unit = js.native
   def requireDigit: Boolean = js.native
-  def requireDigit(newValue: Boolean): js.Any = js.native
+  def requireDigit_=(newValue: Boolean): Unit = js.native
   def requireMixedCase: Boolean = js.native
-  def requireMixedCase(newValue: Boolean): js.Any = js.native
+  def requireMixedCase_=(newValue: Boolean): Unit = js.native
   def requireSymbol: Boolean = js.native
-  def requireSymbol(newValue: Boolean): js.Any = js.native
+  def requireSymbol_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

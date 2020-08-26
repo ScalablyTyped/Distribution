@@ -29,6 +29,7 @@ import scala.scalajs.js.annotation._
   * // SHA256withRSA and set parameter empty by force
   * algId = new KJUR.asn1.x509.AlgorithmIdentifier({name: "SHA256withRSA", paramempty: true});
   */
+@js.native
 trait AlgorithmIdentifier extends ASN1Object
 
 object AlgorithmIdentifier {

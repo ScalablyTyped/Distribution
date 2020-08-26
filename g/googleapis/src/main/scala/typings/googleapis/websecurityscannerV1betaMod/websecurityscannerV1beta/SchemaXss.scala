@@ -21,11 +21,32 @@ trait SchemaXss extends js.Object {
 
 object SchemaXss {
   @scala.inline
-  def apply(errorMessage: String = null, stackTraces: js.Array[String] = null): SchemaXss = {
+  def apply(): SchemaXss = {
     val __obj = js.Dynamic.literal()
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (stackTraces != null) __obj.updateDynamic("stackTraces")(stackTraces.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaXss]
   }
+  @scala.inline
+  implicit class SchemaXssOps[Self <: SchemaXss] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setStackTracesVarargs(value: String*): Self = this.set("stackTraces", js.Array(value :_*))
+    @scala.inline
+    def setStackTraces(value: js.Array[String]): Self = this.set("stackTraces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackTraces: Self = this.set("stackTraces", js.undefined)
+  }
+  
 }
 

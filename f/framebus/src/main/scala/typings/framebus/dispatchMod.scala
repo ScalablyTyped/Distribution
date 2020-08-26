@@ -11,7 +11,29 @@ import scala.scalajs.js.annotation._
 @js.native
 object dispatchMod extends js.Object {
   def dispatch(origin: String, event: String): Unit = js.native
+  def dispatch(
+    origin: String,
+    event: String,
+    data: js.UndefOr[scala.Nothing],
+    reply: js.UndefOr[scala.Nothing],
+    e: MessageEvent
+  ): Unit = js.native
+  def dispatch(origin: String, event: String, data: js.UndefOr[scala.Nothing], reply: FramebusSubscribeHandler): Unit = js.native
+  def dispatch(
+    origin: String,
+    event: String,
+    data: js.UndefOr[scala.Nothing],
+    reply: FramebusSubscribeHandler,
+    e: MessageEvent
+  ): Unit = js.native
   def dispatch(origin: String, event: String, data: FramebusSubscriberArg): Unit = js.native
+  def dispatch(
+    origin: String,
+    event: String,
+    data: FramebusSubscriberArg,
+    reply: js.UndefOr[scala.Nothing],
+    e: MessageEvent
+  ): Unit = js.native
   def dispatch(origin: String, event: String, data: FramebusSubscriberArg, reply: FramebusSubscribeHandler): Unit = js.native
   def dispatch(
     origin: String,

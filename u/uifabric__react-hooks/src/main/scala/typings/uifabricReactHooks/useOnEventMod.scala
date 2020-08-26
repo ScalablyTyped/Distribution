@@ -11,13 +11,45 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/react-hooks/lib/useOnEvent", JSImport.Namespace)
 @js.native
 object useOnEventMod extends js.Object {
+  def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](element: TElement, eventName: String, callback: js.Function1[/* ev */ TEvent, Unit]): Unit = js.native
   def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](
-    element: js.UndefOr[Null | (RefObject[js.UndefOr[TElement | Null]]) | TElement | Window],
+    element: TElement,
+    eventName: String,
+    callback: js.Function1[/* ev */ TEvent, Unit],
+    useCapture: Boolean
+  ): Unit = js.native
+  def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](
+    element: js.UndefOr[scala.Nothing],
     eventName: String,
     callback: js.Function1[/* ev */ TEvent, Unit]
   ): Unit = js.native
   def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](
-    element: js.UndefOr[Null | (RefObject[js.UndefOr[TElement | Null]]) | TElement | Window],
+    element: js.UndefOr[scala.Nothing],
+    eventName: String,
+    callback: js.Function1[/* ev */ TEvent, Unit],
+    useCapture: Boolean
+  ): Unit = js.native
+  def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](element: Null, eventName: String, callback: js.Function1[/* ev */ TEvent, Unit]): Unit = js.native
+  def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](
+    element: Null,
+    eventName: String,
+    callback: js.Function1[/* ev */ TEvent, Unit],
+    useCapture: Boolean
+  ): Unit = js.native
+  def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](
+    element: RefObject[js.UndefOr[TElement | Null]],
+    eventName: String,
+    callback: js.Function1[/* ev */ TEvent, Unit]
+  ): Unit = js.native
+  def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](
+    element: RefObject[js.UndefOr[TElement | Null]],
+    eventName: String,
+    callback: js.Function1[/* ev */ TEvent, Unit],
+    useCapture: Boolean
+  ): Unit = js.native
+  def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](element: Window, eventName: String, callback: js.Function1[/* ev */ TEvent, Unit]): Unit = js.native
+  def useOnEvent[TElement /* <: Element */, TEvent /* <: Event */](
+    element: Window,
     eventName: String,
     callback: js.Function1[/* ev */ TEvent, Unit],
     useCapture: Boolean

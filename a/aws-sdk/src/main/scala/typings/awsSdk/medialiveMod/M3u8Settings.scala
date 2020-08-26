@@ -78,44 +78,90 @@ trait M3u8Settings extends js.Object {
 
 object M3u8Settings {
   @scala.inline
-  def apply(
-    AudioFramesPerPes: js.UndefOr[integerMin0] = js.undefined,
-    AudioPids: string = null,
-    EcmPid: string = null,
-    NielsenId3Behavior: M3u8NielsenId3Behavior = null,
-    PatInterval: js.UndefOr[integerMin0Max1000] = js.undefined,
-    PcrControl: M3u8PcrControl = null,
-    PcrPeriod: js.UndefOr[integerMin0Max500] = js.undefined,
-    PcrPid: string = null,
-    PmtInterval: js.UndefOr[integerMin0Max1000] = js.undefined,
-    PmtPid: string = null,
-    ProgramNum: js.UndefOr[integerMin0Max65535] = js.undefined,
-    Scte35Behavior: M3u8Scte35Behavior = null,
-    Scte35Pid: string = null,
-    TimedMetadataBehavior: M3u8TimedMetadataBehavior = null,
-    TimedMetadataPid: string = null,
-    TransportStreamId: js.UndefOr[integerMin0Max65535] = js.undefined,
-    VideoPid: string = null
-  ): M3u8Settings = {
+  def apply(): M3u8Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AudioFramesPerPes)) __obj.updateDynamic("AudioFramesPerPes")(AudioFramesPerPes.get.asInstanceOf[js.Any])
-    if (AudioPids != null) __obj.updateDynamic("AudioPids")(AudioPids.asInstanceOf[js.Any])
-    if (EcmPid != null) __obj.updateDynamic("EcmPid")(EcmPid.asInstanceOf[js.Any])
-    if (NielsenId3Behavior != null) __obj.updateDynamic("NielsenId3Behavior")(NielsenId3Behavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(PatInterval)) __obj.updateDynamic("PatInterval")(PatInterval.get.asInstanceOf[js.Any])
-    if (PcrControl != null) __obj.updateDynamic("PcrControl")(PcrControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(PcrPeriod)) __obj.updateDynamic("PcrPeriod")(PcrPeriod.get.asInstanceOf[js.Any])
-    if (PcrPid != null) __obj.updateDynamic("PcrPid")(PcrPid.asInstanceOf[js.Any])
-    if (!js.isUndefined(PmtInterval)) __obj.updateDynamic("PmtInterval")(PmtInterval.get.asInstanceOf[js.Any])
-    if (PmtPid != null) __obj.updateDynamic("PmtPid")(PmtPid.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgramNum)) __obj.updateDynamic("ProgramNum")(ProgramNum.get.asInstanceOf[js.Any])
-    if (Scte35Behavior != null) __obj.updateDynamic("Scte35Behavior")(Scte35Behavior.asInstanceOf[js.Any])
-    if (Scte35Pid != null) __obj.updateDynamic("Scte35Pid")(Scte35Pid.asInstanceOf[js.Any])
-    if (TimedMetadataBehavior != null) __obj.updateDynamic("TimedMetadataBehavior")(TimedMetadataBehavior.asInstanceOf[js.Any])
-    if (TimedMetadataPid != null) __obj.updateDynamic("TimedMetadataPid")(TimedMetadataPid.asInstanceOf[js.Any])
-    if (!js.isUndefined(TransportStreamId)) __obj.updateDynamic("TransportStreamId")(TransportStreamId.get.asInstanceOf[js.Any])
-    if (VideoPid != null) __obj.updateDynamic("VideoPid")(VideoPid.asInstanceOf[js.Any])
     __obj.asInstanceOf[M3u8Settings]
   }
+  @scala.inline
+  implicit class M3u8SettingsOps[Self <: M3u8Settings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioFramesPerPes(value: integerMin0): Self = this.set("AudioFramesPerPes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioFramesPerPes: Self = this.set("AudioFramesPerPes", js.undefined)
+    @scala.inline
+    def setAudioPids(value: string): Self = this.set("AudioPids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioPids: Self = this.set("AudioPids", js.undefined)
+    @scala.inline
+    def setEcmPid(value: string): Self = this.set("EcmPid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcmPid: Self = this.set("EcmPid", js.undefined)
+    @scala.inline
+    def setNielsenId3Behavior(value: M3u8NielsenId3Behavior): Self = this.set("NielsenId3Behavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNielsenId3Behavior: Self = this.set("NielsenId3Behavior", js.undefined)
+    @scala.inline
+    def setPatInterval(value: integerMin0Max1000): Self = this.set("PatInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatInterval: Self = this.set("PatInterval", js.undefined)
+    @scala.inline
+    def setPcrControl(value: M3u8PcrControl): Self = this.set("PcrControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePcrControl: Self = this.set("PcrControl", js.undefined)
+    @scala.inline
+    def setPcrPeriod(value: integerMin0Max500): Self = this.set("PcrPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePcrPeriod: Self = this.set("PcrPeriod", js.undefined)
+    @scala.inline
+    def setPcrPid(value: string): Self = this.set("PcrPid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePcrPid: Self = this.set("PcrPid", js.undefined)
+    @scala.inline
+    def setPmtInterval(value: integerMin0Max1000): Self = this.set("PmtInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePmtInterval: Self = this.set("PmtInterval", js.undefined)
+    @scala.inline
+    def setPmtPid(value: string): Self = this.set("PmtPid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePmtPid: Self = this.set("PmtPid", js.undefined)
+    @scala.inline
+    def setProgramNum(value: integerMin0Max65535): Self = this.set("ProgramNum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgramNum: Self = this.set("ProgramNum", js.undefined)
+    @scala.inline
+    def setScte35Behavior(value: M3u8Scte35Behavior): Self = this.set("Scte35Behavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScte35Behavior: Self = this.set("Scte35Behavior", js.undefined)
+    @scala.inline
+    def setScte35Pid(value: string): Self = this.set("Scte35Pid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScte35Pid: Self = this.set("Scte35Pid", js.undefined)
+    @scala.inline
+    def setTimedMetadataBehavior(value: M3u8TimedMetadataBehavior): Self = this.set("TimedMetadataBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimedMetadataBehavior: Self = this.set("TimedMetadataBehavior", js.undefined)
+    @scala.inline
+    def setTimedMetadataPid(value: string): Self = this.set("TimedMetadataPid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimedMetadataPid: Self = this.set("TimedMetadataPid", js.undefined)
+    @scala.inline
+    def setTransportStreamId(value: integerMin0Max65535): Self = this.set("TransportStreamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransportStreamId: Self = this.set("TransportStreamId", js.undefined)
+    @scala.inline
+    def setVideoPid(value: string): Self = this.set("VideoPid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoPid: Self = this.set("VideoPid", js.undefined)
+  }
+  
 }
 

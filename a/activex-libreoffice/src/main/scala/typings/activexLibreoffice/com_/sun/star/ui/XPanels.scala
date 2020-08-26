@@ -12,13 +12,14 @@ import scala.scalajs.js.annotation._
   * provides access to Panels of a Deck.
   * @since LibreOffice 5.1
   */
+@js.native
 trait XPanels
   extends XIndexAccess
      with XNameAccess {
   /** The deck Id that contains the Panels */
-  val DeckId: String
+  val DeckId: String = js.native
   /** The deck Id that contains the Panels */
-  def getDeckId(): String
+  def getDeckId(): String = js.native
 }
 
 object XPanels {
@@ -43,5 +44,22 @@ object XPanels {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], DeckId = DeckId.asInstanceOf[js.Any], ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByIndex = js.Any.fromFunction1(getByIndex), getByName = js.Any.fromFunction1(getByName), getCount = js.Any.fromFunction0(getCount), getDeckId = js.Any.fromFunction0(getDeckId), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XPanels]
   }
+  @scala.inline
+  implicit class XPanelsOps[Self <: XPanels] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeckId(value: String): Self = this.set("DeckId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetDeckId(value: () => String): Self = this.set("getDeckId", js.Any.fromFunction0(value))
+  }
+  
 }
 

@@ -5,18 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConstructorParams extends js.Object {
-  var apiKey: String
-  var domain: String
-  var endpoint: js.UndefOr[String] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var mute: js.UndefOr[Boolean] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var protocol: js.UndefOr[String] = js.undefined
-  var proxy: js.UndefOr[String] = js.undefined
-  var publicApiKey: js.UndefOr[String] = js.undefined
-  var retry: js.UndefOr[Double | Interval] = js.undefined
-  var testMode: js.UndefOr[Boolean] = js.undefined
+  var apiKey: String = js.native
+  var domain: String = js.native
+  var endpoint: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.native
+  var mute: js.UndefOr[Boolean] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var protocol: js.UndefOr[String] = js.native
+  var proxy: js.UndefOr[String] = js.native
+  var publicApiKey: js.UndefOr[String] = js.native
+  var retry: js.UndefOr[Double | Interval] = js.native
+  var testMode: js.UndefOr[Boolean] = js.native
   var testModeLogger: js.UndefOr[
     js.Function3[
       /* httpOptions */ LoggerHttpOptions, 
@@ -24,40 +25,78 @@ trait ConstructorParams extends js.Object {
       /* form */ typings.formData.mod.^, 
       Unit
     ]
-  ] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object ConstructorParams {
   @scala.inline
-  def apply(
-    apiKey: String,
-    domain: String,
-    endpoint: String = null,
-    host: String = null,
-    mute: js.UndefOr[Boolean] = js.undefined,
-    port: js.UndefOr[Double] = js.undefined,
-    protocol: String = null,
-    proxy: String = null,
-    publicApiKey: String = null,
-    retry: Double | Interval = null,
-    testMode: js.UndefOr[Boolean] = js.undefined,
-    testModeLogger: (/* httpOptions */ LoggerHttpOptions, /* payload */ String, /* form */ typings.formData.mod.^) => Unit = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): ConstructorParams = {
+  def apply(apiKey: String, domain: String): ConstructorParams = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (publicApiKey != null) __obj.updateDynamic("publicApiKey")(publicApiKey.asInstanceOf[js.Any])
-    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (!js.isUndefined(testMode)) __obj.updateDynamic("testMode")(testMode.get.asInstanceOf[js.Any])
-    if (testModeLogger != null) __obj.updateDynamic("testModeLogger")(js.Any.fromFunction3(testModeLogger))
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorParams]
   }
+  @scala.inline
+  implicit class ConstructorParamsOps[Self <: ConstructorParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiKey(value: String): Self = this.set("apiKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setMute(value: Boolean): Self = this.set("mute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMute: Self = this.set("mute", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setProxy(value: String): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxy: Self = this.set("proxy", js.undefined)
+    @scala.inline
+    def setPublicApiKey(value: String): Self = this.set("publicApiKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicApiKey: Self = this.set("publicApiKey", js.undefined)
+    @scala.inline
+    def setRetry(value: Double | Interval): Self = this.set("retry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetry: Self = this.set("retry", js.undefined)
+    @scala.inline
+    def setTestMode(value: Boolean): Self = this.set("testMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestMode: Self = this.set("testMode", js.undefined)
+    @scala.inline
+    def setTestModeLogger(
+      value: (/* httpOptions */ LoggerHttpOptions, /* payload */ String, /* form */ typings.formData.mod.^) => Unit
+    ): Self = this.set("testModeLogger", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteTestModeLogger: Self = this.set("testModeLogger", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

@@ -31,10 +31,10 @@ object servicequotas extends js.Object {
     def this(name: String, args: ServiceQuotaArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] with GetServiceResult = js.native
-  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] with GetServiceResult = js.native
-  def getServiceQuota(args: GetServiceQuotaArgs): js.Promise[GetServiceQuotaResult] with GetServiceQuotaResult = js.native
-  def getServiceQuota(args: GetServiceQuotaArgs, opts: InvokeOptions): js.Promise[GetServiceQuotaResult] with GetServiceQuotaResult = js.native
+  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = js.native
+  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = js.native
+  def getServiceQuota(args: GetServiceQuotaArgs): js.Promise[GetServiceQuotaResult] = js.native
+  def getServiceQuota(args: GetServiceQuotaArgs, opts: InvokeOptions): js.Promise[GetServiceQuotaResult] = js.native
   /* static members */
   @js.native
   object ServiceQuota extends js.Object {
@@ -45,8 +45,10 @@ object servicequotas extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.serviceQuotaMod.ServiceQuota = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.serviceQuotaMod.ServiceQuota = js.native
     def get(name: String, id: Input[ID], state: ServiceQuotaState): typings.pulumiAws.serviceQuotaMod.ServiceQuota = js.native
     def get(name: String, id: Input[ID], state: ServiceQuotaState, opts: CustomResourceOptions): typings.pulumiAws.serviceQuotaMod.ServiceQuota = js.native
     /**

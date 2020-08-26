@@ -18,10 +18,28 @@ trait VariableValue extends js.Object {
 
 object VariableValue {
   @scala.inline
-  def apply(propertyId: Macro, hierarchyId: Macro = null): VariableValue = {
+  def apply(propertyId: Macro): VariableValue = {
     val __obj = js.Dynamic.literal(propertyId = propertyId.asInstanceOf[js.Any])
-    if (hierarchyId != null) __obj.updateDynamic("hierarchyId")(hierarchyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableValue]
   }
+  @scala.inline
+  implicit class VariableValueOps[Self <: VariableValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPropertyId(value: Macro): Self = this.set("propertyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHierarchyId(value: Macro): Self = this.set("hierarchyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHierarchyId: Self = this.set("hierarchyId", js.undefined)
+  }
+  
 }
 

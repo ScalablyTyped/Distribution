@@ -37,6 +37,7 @@ trait AGTransport extends js.Object {
   def cancelPendingResponse(cid: Double): Unit = js.native
   def clearAllListeners(): Unit = js.native
   def close(): Unit = js.native
+  def close(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, reason: String): Unit = js.native
   def decode(message: js.Any): js.Any = js.native

@@ -4,15 +4,15 @@
 Typings are for version 1.0
 
 ## Library description:
-Lightweight util.format() for the browser.
+Lightweight format utility for the browser, based on util.format().
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | format-util |
-| Keywords           | util, format, string |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 19307774 |
+| Keywords           | format, string, util |
+| # releases         | 1 |
+| # dependents       | 4 |
+| # downloads        | 19618979 |
 | # stars            | 0 |
 
 ## Links

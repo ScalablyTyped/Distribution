@@ -6,49 +6,49 @@ import scala.scalajs.js.annotation._
 
 /* Inlined @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/layers/layer_serialization.LayerSerialization['class_name'] */
 /* Rewritten from type alias, can be one of: 
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dot
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SeparableConv2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Concatenate
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ZeroPadding2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GRU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PReLU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.InputLayer
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Flatten
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2DTranspose
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SimpleRNN
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ThresholdedReLU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LSTM
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ELU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Maximum
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ReLU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Embedding
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dropout
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.BatchNormalization
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.InputLayer
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PReLU
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.DepthwiseConv2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Average
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Concatenate
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dropout
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Softmax
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LeakyReLU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Multiply
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Minimum
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Add
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Cropping2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2DTranspose
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ZeroPadding2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Minimum
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Multiply
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.BatchNormalization
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ReLU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LeakyReLU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dot
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.DepthwiseConv2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SimpleRNN
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ELU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LSTM
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Maximum
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Average
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ThresholdedReLU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Embedding
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GRU
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UpSampling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Cropping2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SeparableConv2D
 */
 trait LayerClassName extends js.Object
 

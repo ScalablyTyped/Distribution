@@ -10,39 +10,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FormGroupProps
   extends AllHTMLAttributes[HTMLDivElement]
      with ClassAttributes[HTMLDivElement]
      with /* key */ StringDictionary[js.Any] {
-  var check: js.UndefOr[Boolean] = js.undefined
-  var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var `inline`: js.UndefOr[Boolean] = js.undefined
-  var row: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
+  var check: js.UndefOr[Boolean] = js.native
+  var cssModule: js.UndefOr[CSSModule] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.native
+  var row: js.UndefOr[Boolean] = js.native
+  var tag: js.UndefOr[String | ReactType[_]] = js.native
 }
 
 object FormGroupProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLDivElement] = null,
-    ClassAttributes: ClassAttributes[HTMLDivElement] = null,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    check: js.UndefOr[Boolean] = js.undefined,
-    cssModule: CSSModule = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    row: js.UndefOr[Boolean] = js.undefined,
-    tag: String | ReactType[_] = null
-  ): FormGroupProps = {
+  def apply(): FormGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.get.asInstanceOf[js.Any])
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormGroupProps]
   }
+  @scala.inline
+  implicit class FormGroupPropsOps[Self <: FormGroupProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheck(value: Boolean): Self = this.set("check", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheck: Self = this.set("check", js.undefined)
+    @scala.inline
+    def setCssModule(value: CSSModule): Self = this.set("cssModule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssModule: Self = this.set("cssModule", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setRow(value: Boolean): Self = this.set("row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRow: Self = this.set("row", js.undefined)
+    @scala.inline
+    def setTag(value: String | ReactType[_]): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+  }
+  
 }
 

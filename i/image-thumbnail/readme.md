@@ -10,9 +10,9 @@ Generate an image thumbnail.
 | ------------------ | :-------------: |
 | Full name          | image-thumbnail |
 | Keywords           | image, javascript, thumbnail, resize, sharp, percentage |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 2 |
-| # downloads        | 30236 |
+| # downloads        | 39105 |
 | # stars            | 0 |
 
 ## Links

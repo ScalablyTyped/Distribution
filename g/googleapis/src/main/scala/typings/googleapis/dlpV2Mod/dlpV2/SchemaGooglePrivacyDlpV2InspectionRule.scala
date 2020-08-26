@@ -22,14 +22,30 @@ trait SchemaGooglePrivacyDlpV2InspectionRule extends js.Object {
 
 object SchemaGooglePrivacyDlpV2InspectionRule {
   @scala.inline
-  def apply(
-    exclusionRule: SchemaGooglePrivacyDlpV2ExclusionRule = null,
-    hotwordRule: SchemaGooglePrivacyDlpV2HotwordRule = null
-  ): SchemaGooglePrivacyDlpV2InspectionRule = {
+  def apply(): SchemaGooglePrivacyDlpV2InspectionRule = {
     val __obj = js.Dynamic.literal()
-    if (exclusionRule != null) __obj.updateDynamic("exclusionRule")(exclusionRule.asInstanceOf[js.Any])
-    if (hotwordRule != null) __obj.updateDynamic("hotwordRule")(hotwordRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InspectionRule]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2InspectionRuleOps[Self <: SchemaGooglePrivacyDlpV2InspectionRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExclusionRule(value: SchemaGooglePrivacyDlpV2ExclusionRule): Self = this.set("exclusionRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusionRule: Self = this.set("exclusionRule", js.undefined)
+    @scala.inline
+    def setHotwordRule(value: SchemaGooglePrivacyDlpV2HotwordRule): Self = this.set("hotwordRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHotwordRule: Self = this.set("hotwordRule", js.undefined)
+  }
+  
 }
 

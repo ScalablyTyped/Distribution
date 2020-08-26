@@ -1,6 +1,9 @@
 package typings.semanticUiReact.feedEventMod
 
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.react.mod.ReactNodeArray
+import typings.react.mod.ReactType
 import typings.semanticUiReact.feedContentMod.FeedContentProps
 import typings.semanticUiReact.feedDateMod.FeedDateProps
 import typings.semanticUiReact.feedExtraMod.FeedExtraProps
@@ -12,59 +15,126 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrictFeedEventProps extends js.Object {
   /** An element type to render as (string or function). */
-  var as: js.UndefOr[js.Any] = js.undefined
+  var as: js.UndefOr[js.Any] = js.native
   /** Primary content. */
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.native
   /** Additional classes. */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /** Shorthand for FeedContent. */
-  var content: js.UndefOr[SemanticShorthandItem[FeedContentProps]] = js.undefined
+  var content: js.UndefOr[SemanticShorthandItem[FeedContentProps]] = js.native
   /** Shorthand for FeedDate. */
-  var date: js.UndefOr[SemanticShorthandItem[FeedDateProps]] = js.undefined
+  var date: js.UndefOr[SemanticShorthandItem[FeedDateProps]] = js.native
   /** Shorthand for FeedExtra with images. */
-  var extraImages: js.UndefOr[SemanticShorthandItem[FeedExtraProps]] = js.undefined
+  var extraImages: js.UndefOr[SemanticShorthandItem[FeedExtraProps]] = js.native
   /** Shorthand for FeedExtra with content. */
-  var extraText: js.UndefOr[SemanticShorthandItem[FeedExtraProps]] = js.undefined
+  var extraText: js.UndefOr[SemanticShorthandItem[FeedExtraProps]] = js.native
   /** An event can contain icon label. */
-  var icon: js.UndefOr[SemanticShorthandItem[FeedLabelProps]] = js.undefined
+  var icon: js.UndefOr[SemanticShorthandItem[FeedLabelProps]] = js.native
   /** An event can contain image label. */
-  var image: js.UndefOr[SemanticShorthandItem[FeedLabelProps]] = js.undefined
+  var image: js.UndefOr[SemanticShorthandItem[FeedLabelProps]] = js.native
   /** Shorthand for FeedMeta. */
-  var meta: js.UndefOr[SemanticShorthandItem[FeedMetaProps]] = js.undefined
+  var meta: js.UndefOr[SemanticShorthandItem[FeedMetaProps]] = js.native
   /** Shorthand for FeedSummary. */
-  var summary: js.UndefOr[SemanticShorthandItem[FeedSummaryProps]] = js.undefined
+  var summary: js.UndefOr[SemanticShorthandItem[FeedSummaryProps]] = js.native
 }
 
 object StrictFeedEventProps {
   @scala.inline
-  def apply(
-    as: js.Any = null,
-    children: ReactNode = null,
-    className: String = null,
-    content: SemanticShorthandItem[FeedContentProps] = null,
-    date: SemanticShorthandItem[FeedDateProps] = null,
-    extraImages: SemanticShorthandItem[FeedExtraProps] = null,
-    extraText: SemanticShorthandItem[FeedExtraProps] = null,
-    icon: SemanticShorthandItem[FeedLabelProps] = null,
-    image: SemanticShorthandItem[FeedLabelProps] = null,
-    meta: SemanticShorthandItem[FeedMetaProps] = null,
-    summary: SemanticShorthandItem[FeedSummaryProps] = null
-  ): StrictFeedEventProps = {
+  def apply(): StrictFeedEventProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (extraImages != null) __obj.updateDynamic("extraImages")(extraImages.asInstanceOf[js.Any])
-    if (extraText != null) __obj.updateDynamic("extraText")(extraText.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictFeedEventProps]
   }
+  @scala.inline
+  implicit class StrictFeedEventPropsOps[Self <: StrictFeedEventProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAs(value: js.Any): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setContentFunction3(
+      value: (/* component */ ReactType[FeedContentProps], FeedContentProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("content", js.Any.fromFunction3(value))
+    @scala.inline
+    def setContent(value: SemanticShorthandItem[FeedContentProps]): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDateFunction3(
+      value: (/* component */ ReactType[FeedDateProps], FeedDateProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("date", js.Any.fromFunction3(value))
+    @scala.inline
+    def setDate(value: SemanticShorthandItem[FeedDateProps]): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setExtraImagesFunction3(
+      value: (/* component */ ReactType[FeedExtraProps], FeedExtraProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("extraImages", js.Any.fromFunction3(value))
+    @scala.inline
+    def setExtraImages(value: SemanticShorthandItem[FeedExtraProps]): Self = this.set("extraImages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraImages: Self = this.set("extraImages", js.undefined)
+    @scala.inline
+    def setExtraTextFunction3(
+      value: (/* component */ ReactType[FeedExtraProps], FeedExtraProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("extraText", js.Any.fromFunction3(value))
+    @scala.inline
+    def setExtraText(value: SemanticShorthandItem[FeedExtraProps]): Self = this.set("extraText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraText: Self = this.set("extraText", js.undefined)
+    @scala.inline
+    def setIconFunction3(
+      value: (/* component */ ReactType[FeedLabelProps], FeedLabelProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("icon", js.Any.fromFunction3(value))
+    @scala.inline
+    def setIcon(value: SemanticShorthandItem[FeedLabelProps]): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setImageFunction3(
+      value: (/* component */ ReactType[FeedLabelProps], FeedLabelProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("image", js.Any.fromFunction3(value))
+    @scala.inline
+    def setImage(value: SemanticShorthandItem[FeedLabelProps]): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setMetaFunction3(
+      value: (/* component */ ReactType[FeedMetaProps], FeedMetaProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("meta", js.Any.fromFunction3(value))
+    @scala.inline
+    def setMeta(value: SemanticShorthandItem[FeedMetaProps]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeta: Self = this.set("meta", js.undefined)
+    @scala.inline
+    def setSummaryFunction3(
+      value: (/* component */ ReactType[FeedSummaryProps], FeedSummaryProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("summary", js.Any.fromFunction3(value))
+    @scala.inline
+    def setSummary(value: SemanticShorthandItem[FeedSummaryProps]): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+  }
+  
 }
 

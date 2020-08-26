@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("androidui.widget.PullRefreshLoadLayout.FooterView")
 @js.native
-abstract class FooterView () extends FrameLayout {
+trait FooterView extends FrameLayout {
   var state: js.Any = js.native
   var stateBeforeReady: js.Any = js.native
   def onStateChange(newState: Double, oldState: Double): Unit = js.native

@@ -44,24 +44,50 @@ trait SchemaImagePropertiesSuggestionState extends js.Object {
 
 object SchemaImagePropertiesSuggestionState {
   @scala.inline
-  def apply(
-    angleSuggested: js.UndefOr[Boolean] = js.undefined,
-    brightnessSuggested: js.UndefOr[Boolean] = js.undefined,
-    contentUriSuggested: js.UndefOr[Boolean] = js.undefined,
-    contrastSuggested: js.UndefOr[Boolean] = js.undefined,
-    cropPropertiesSuggestionState: SchemaCropPropertiesSuggestionState = null,
-    sourceUriSuggested: js.UndefOr[Boolean] = js.undefined,
-    transparencySuggested: js.UndefOr[Boolean] = js.undefined
-  ): SchemaImagePropertiesSuggestionState = {
+  def apply(): SchemaImagePropertiesSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(angleSuggested)) __obj.updateDynamic("angleSuggested")(angleSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(brightnessSuggested)) __obj.updateDynamic("brightnessSuggested")(brightnessSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentUriSuggested)) __obj.updateDynamic("contentUriSuggested")(contentUriSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(contrastSuggested)) __obj.updateDynamic("contrastSuggested")(contrastSuggested.get.asInstanceOf[js.Any])
-    if (cropPropertiesSuggestionState != null) __obj.updateDynamic("cropPropertiesSuggestionState")(cropPropertiesSuggestionState.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceUriSuggested)) __obj.updateDynamic("sourceUriSuggested")(sourceUriSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparencySuggested)) __obj.updateDynamic("transparencySuggested")(transparencySuggested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImagePropertiesSuggestionState]
   }
+  @scala.inline
+  implicit class SchemaImagePropertiesSuggestionStateOps[Self <: SchemaImagePropertiesSuggestionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAngleSuggested(value: Boolean): Self = this.set("angleSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngleSuggested: Self = this.set("angleSuggested", js.undefined)
+    @scala.inline
+    def setBrightnessSuggested(value: Boolean): Self = this.set("brightnessSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrightnessSuggested: Self = this.set("brightnessSuggested", js.undefined)
+    @scala.inline
+    def setContentUriSuggested(value: Boolean): Self = this.set("contentUriSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentUriSuggested: Self = this.set("contentUriSuggested", js.undefined)
+    @scala.inline
+    def setContrastSuggested(value: Boolean): Self = this.set("contrastSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContrastSuggested: Self = this.set("contrastSuggested", js.undefined)
+    @scala.inline
+    def setCropPropertiesSuggestionState(value: SchemaCropPropertiesSuggestionState): Self = this.set("cropPropertiesSuggestionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCropPropertiesSuggestionState: Self = this.set("cropPropertiesSuggestionState", js.undefined)
+    @scala.inline
+    def setSourceUriSuggested(value: Boolean): Self = this.set("sourceUriSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceUriSuggested: Self = this.set("sourceUriSuggested", js.undefined)
+    @scala.inline
+    def setTransparencySuggested(value: Boolean): Self = this.set("transparencySuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransparencySuggested: Self = this.set("transparencySuggested", js.undefined)
+  }
+  
 }
 

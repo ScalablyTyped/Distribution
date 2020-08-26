@@ -55,26 +55,64 @@ trait SchemaCorsPolicy extends js.Object {
 
 object SchemaCorsPolicy {
   @scala.inline
-  def apply(
-    allowCredentials: js.UndefOr[Boolean] = js.undefined,
-    allowHeaders: js.Array[String] = null,
-    allowMethods: js.Array[String] = null,
-    allowOriginRegexes: js.Array[String] = null,
-    allowOrigins: js.Array[String] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    exposeHeaders: js.Array[String] = null,
-    maxAge: js.UndefOr[Double] = js.undefined
-  ): SchemaCorsPolicy = {
+  def apply(): SchemaCorsPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCredentials)) __obj.updateDynamic("allowCredentials")(allowCredentials.get.asInstanceOf[js.Any])
-    if (allowHeaders != null) __obj.updateDynamic("allowHeaders")(allowHeaders.asInstanceOf[js.Any])
-    if (allowMethods != null) __obj.updateDynamic("allowMethods")(allowMethods.asInstanceOf[js.Any])
-    if (allowOriginRegexes != null) __obj.updateDynamic("allowOriginRegexes")(allowOriginRegexes.asInstanceOf[js.Any])
-    if (allowOrigins != null) __obj.updateDynamic("allowOrigins")(allowOrigins.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (exposeHeaders != null) __obj.updateDynamic("exposeHeaders")(exposeHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCorsPolicy]
   }
+  @scala.inline
+  implicit class SchemaCorsPolicyOps[Self <: SchemaCorsPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowCredentials(value: Boolean): Self = this.set("allowCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCredentials: Self = this.set("allowCredentials", js.undefined)
+    @scala.inline
+    def setAllowHeadersVarargs(value: String*): Self = this.set("allowHeaders", js.Array(value :_*))
+    @scala.inline
+    def setAllowHeaders(value: js.Array[String]): Self = this.set("allowHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowHeaders: Self = this.set("allowHeaders", js.undefined)
+    @scala.inline
+    def setAllowMethodsVarargs(value: String*): Self = this.set("allowMethods", js.Array(value :_*))
+    @scala.inline
+    def setAllowMethods(value: js.Array[String]): Self = this.set("allowMethods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowMethods: Self = this.set("allowMethods", js.undefined)
+    @scala.inline
+    def setAllowOriginRegexesVarargs(value: String*): Self = this.set("allowOriginRegexes", js.Array(value :_*))
+    @scala.inline
+    def setAllowOriginRegexes(value: js.Array[String]): Self = this.set("allowOriginRegexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowOriginRegexes: Self = this.set("allowOriginRegexes", js.undefined)
+    @scala.inline
+    def setAllowOriginsVarargs(value: String*): Self = this.set("allowOrigins", js.Array(value :_*))
+    @scala.inline
+    def setAllowOrigins(value: js.Array[String]): Self = this.set("allowOrigins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowOrigins: Self = this.set("allowOrigins", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setExposeHeadersVarargs(value: String*): Self = this.set("exposeHeaders", js.Array(value :_*))
+    @scala.inline
+    def setExposeHeaders(value: js.Array[String]): Self = this.set("exposeHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExposeHeaders: Self = this.set("exposeHeaders", js.undefined)
+    @scala.inline
+    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+  }
+  
 }
 

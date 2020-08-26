@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 object createCone extends js.Object {
   /**
     * Creates a procedural cone-shaped mesh.
-    
-    The size, shape and tesselation properties of the cone can be controlled via function
-    parameters. By default, the function will create a cone standing vertically centred
-    on the XZ-plane with a base radius of 0.5, a height of 1.0, 5 height segments and 20
-    cap segments.
-    
-    Note that the cone is created with UVs in the range of 0 to 1. Additionally, tangent
-    information is generated into the vertex buffer of the cone's mesh.
+    *
+    * The size, shape and tesselation properties of the cone can be controlled via function
+    * parameters. By default, the function will create a cone standing vertically centred
+    * on the XZ-plane with a base radius of 0.5, a height of 1.0, 5 height segments and 20
+    * cap segments.
+    *
+    * Note that the cone is created with UVs in the range of 0 to 1. Additionally, tangent
+    * information is generated into the vertex buffer of the cone's mesh.
     * @param device - The graphics device used to manage the mesh.
     * @param [opts] - An object that specifies optional inputs for the function as follows:
     * @param [opts.baseRadius] - The base radius of the cone (defaults to 0.5).

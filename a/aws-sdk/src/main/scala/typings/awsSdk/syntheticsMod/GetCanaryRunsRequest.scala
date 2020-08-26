@@ -22,11 +22,32 @@ trait GetCanaryRunsRequest extends js.Object {
 
 object GetCanaryRunsRequest {
   @scala.inline
-  def apply(Name: CanaryName, MaxResults: js.UndefOr[MaxSize100] = js.undefined, NextToken: Token = null): GetCanaryRunsRequest = {
+  def apply(Name: CanaryName): GetCanaryRunsRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCanaryRunsRequest]
   }
+  @scala.inline
+  implicit class GetCanaryRunsRequestOps[Self <: GetCanaryRunsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: CanaryName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxSize100): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

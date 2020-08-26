@@ -23,6 +23,16 @@ trait IQueryAPI extends js.Object {
       Unit
     ]
   ): IQueryResponse = js.native
+  def filter(
+    predicate: js.Function1[/* document */ js.Object, Boolean],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   def filter(predicate: js.Function1[/* document */ js.Object, Boolean], options: IFeedOptions): IQueryResponse = js.native
   def filter(
     predicate: js.Function1[/* document */ js.Object, Boolean],
@@ -36,6 +46,17 @@ trait IQueryAPI extends js.Object {
   ): IQueryResponse = js.native
   @JSName("filter")
   def filter_T[T](predicate: js.Function1[/* document */ js.Object, Boolean]): IQueryResponse = js.native
+  @JSName("filter")
+  def filter_T[T](
+    predicate: js.Function1[/* document */ js.Object, Boolean],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   @JSName("filter")
   def filter_T[T](predicate: js.Function1[/* document */ js.Object, Boolean], options: IFeedOptions): IQueryResponse = js.native
   @JSName("filter")
@@ -57,9 +78,49 @@ trait IQueryAPI extends js.Object {
     * @param callback Optional callback for the operation. If no callback is provided, any error in the operation will be thrown and the result document set will be written to the Response body. Should not be used in a chained call.
     */
   def flatten(): IQueryResponse = js.native
+  def flatten(
+    isShallow: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
+  def flatten(
+    isShallow: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
+  def flatten(isShallow: js.UndefOr[scala.Nothing], options: IFeedOptions): IQueryResponse = js.native
+  def flatten(
+    isShallow: js.UndefOr[scala.Nothing],
+    options: IFeedOptions,
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   def flatten(isShallow: Boolean): IQueryResponse = js.native
   def flatten(
     isShallow: Boolean,
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
+  def flatten(
+    isShallow: Boolean,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       /* error */ IFeedCallbackError, 
       /* resources */ js.Array[js.Object], 
@@ -81,7 +142,42 @@ trait IQueryAPI extends js.Object {
   @JSName("flatten")
   def flatten_T[T](): IQueryResponse = js.native
   @JSName("flatten")
+  def flatten_T[T](
+    isShallow: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
+  @JSName("flatten")
+  def flatten_T[T](isShallow: js.UndefOr[scala.Nothing], options: IFeedOptions): IQueryResponse = js.native
+  @JSName("flatten")
+  def flatten_T[T](
+    isShallow: js.UndefOr[scala.Nothing],
+    options: IFeedOptions,
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
+  @JSName("flatten")
   def flatten_T[T](isShallow: Boolean): IQueryResponse = js.native
+  @JSName("flatten")
+  def flatten_T[T](
+    isShallow: Boolean,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   @JSName("flatten")
   def flatten_T[T](isShallow: Boolean, options: IFeedOptions): IQueryResponse = js.native
   @JSName("flatten")
@@ -112,6 +208,16 @@ trait IQueryAPI extends js.Object {
       Unit
     ]
   ): IQueryResponse = js.native
+  def map(
+    predicate: js.Function1[/* document */ js.Object, js.Object],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   def map(predicate: js.Function1[/* document */ js.Object, js.Object], options: IFeedOptions): IQueryResponse = js.native
   def map(
     predicate: js.Function1[/* document */ js.Object, js.Object],
@@ -125,6 +231,17 @@ trait IQueryAPI extends js.Object {
   ): IQueryResponse = js.native
   @JSName("map")
   def map_T[T](predicate: js.Function1[/* document */ js.Object, js.Object]): IQueryResponse = js.native
+  @JSName("map")
+  def map_T[T](
+    predicate: js.Function1[/* document */ js.Object, js.Object],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   @JSName("map")
   def map_T[T](predicate: js.Function1[/* document */ js.Object, js.Object], options: IFeedOptions): IQueryResponse = js.native
   @JSName("map")
@@ -155,6 +272,16 @@ trait IQueryAPI extends js.Object {
       Unit
     ]
   ): IQueryResponse = js.native
+  def pluck(
+    propertyName: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   def pluck(propertyName: String, options: IFeedOptions): IQueryResponse = js.native
   def pluck(
     propertyName: String,
@@ -168,6 +295,17 @@ trait IQueryAPI extends js.Object {
   ): IQueryResponse = js.native
   @JSName("pluck")
   def pluck_T[T](propertyName: String): IQueryResponse = js.native
+  @JSName("pluck")
+  def pluck_T[T](
+    propertyName: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   @JSName("pluck")
   def pluck_T[T](propertyName: String, options: IFeedOptions): IQueryResponse = js.native
   @JSName("pluck")
@@ -191,6 +329,16 @@ trait IQueryAPI extends js.Object {
   def sortBy(predicate: js.Function1[/* document */ js.Object, String | Double]): IQueryResponse = js.native
   def sortBy(
     predicate: js.Function1[/* document */ js.Object, String | Double],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
+  def sortBy(
+    predicate: js.Function1[/* document */ js.Object, String | Double],
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       /* error */ IFeedCallbackError, 
       /* resources */ js.Array[js.Object], 
@@ -226,6 +374,16 @@ trait IQueryAPI extends js.Object {
       Unit
     ]
   ): IQueryResponse = js.native
+  def sortByDescending(
+    predicate: js.Function1[/* document */ js.Object, String | Double],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   def sortByDescending(predicate: js.Function1[/* document */ js.Object, String | Double], options: IFeedOptions): IQueryResponse = js.native
   def sortByDescending(
     predicate: js.Function1[/* document */ js.Object, String | Double],
@@ -239,6 +397,17 @@ trait IQueryAPI extends js.Object {
   ): IQueryResponse = js.native
   @JSName("sortByDescending")
   def sortByDescending_T[T](predicate: js.Function1[/* document */ js.Object, String | Double]): IQueryResponse = js.native
+  @JSName("sortByDescending")
+  def sortByDescending_T[T](
+    predicate: js.Function1[/* document */ js.Object, String | Double],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   @JSName("sortByDescending")
   def sortByDescending_T[T](predicate: js.Function1[/* document */ js.Object, String | Double], options: IFeedOptions): IQueryResponse = js.native
   @JSName("sortByDescending")
@@ -254,6 +423,17 @@ trait IQueryAPI extends js.Object {
   ): IQueryResponse = js.native
   @JSName("sortBy")
   def sortBy_T[T](predicate: js.Function1[/* document */ js.Object, String | Double]): IQueryResponse = js.native
+  @JSName("sortBy")
+  def sortBy_T[T](
+    predicate: js.Function1[/* document */ js.Object, String | Double],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   @JSName("sortBy")
   def sortBy_T[T](predicate: js.Function1[/* document */ js.Object, String | Double], options: IFeedOptions): IQueryResponse = js.native
   @JSName("sortBy")
@@ -282,6 +462,15 @@ trait IQueryAPI extends js.Object {
       Unit
     ]
   ): IQueryResponse = js.native
+  def value(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   def value(options: IFeedOptions): IQueryResponse = js.native
   def value(
     options: IFeedOptions,
@@ -294,6 +483,16 @@ trait IQueryAPI extends js.Object {
   ): IQueryResponse = js.native
   @JSName("value")
   def value_T[T](): IQueryResponse = js.native
+  @JSName("value")
+  def value_T[T](
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): IQueryResponse = js.native
   @JSName("value")
   def value_T[T](options: IFeedOptions): IQueryResponse = js.native
   @JSName("value")

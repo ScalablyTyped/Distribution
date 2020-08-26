@@ -18,6 +18,8 @@ trait AggregateModel extends js.Object {
   @JSName("apply")
   def apply(event: js.Any): Unit = js.native
   @JSName("apply")
+  def apply(event: js.Any, data: js.UndefOr[scala.Nothing], version: Double): Unit = js.native
+  @JSName("apply")
   def apply(event: js.Any, data: js.Any): Unit = js.native
   @JSName("apply")
   def apply(event: js.Any, data: js.Any, version: Double): Unit = js.native

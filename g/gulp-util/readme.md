@@ -11,8 +11,8 @@ Utility functions for gulp plugins
 | Full name          | gulp-util |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 6128 |
-| # downloads        | 77489306 |
+| # dependents       | 6125 |
+| # downloads        | 76494169 |
 | # stars            | 221 |
 
 ## Links

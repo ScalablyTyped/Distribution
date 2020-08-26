@@ -19,24 +19,50 @@ trait PartialStyleRulesSnackbar extends js.Object {
 
 object PartialStyleRulesSnackbar {
   @scala.inline
-  def apply(
-    anchorOriginBottomCenter: CSSProperties = null,
-    anchorOriginBottomLeft: CSSProperties = null,
-    anchorOriginBottomRight: CSSProperties = null,
-    anchorOriginTopCenter: CSSProperties = null,
-    anchorOriginTopLeft: CSSProperties = null,
-    anchorOriginTopRight: CSSProperties = null,
-    root: CSSProperties = null
-  ): PartialStyleRulesSnackbar = {
+  def apply(): PartialStyleRulesSnackbar = {
     val __obj = js.Dynamic.literal()
-    if (anchorOriginBottomCenter != null) __obj.updateDynamic("anchorOriginBottomCenter")(anchorOriginBottomCenter.asInstanceOf[js.Any])
-    if (anchorOriginBottomLeft != null) __obj.updateDynamic("anchorOriginBottomLeft")(anchorOriginBottomLeft.asInstanceOf[js.Any])
-    if (anchorOriginBottomRight != null) __obj.updateDynamic("anchorOriginBottomRight")(anchorOriginBottomRight.asInstanceOf[js.Any])
-    if (anchorOriginTopCenter != null) __obj.updateDynamic("anchorOriginTopCenter")(anchorOriginTopCenter.asInstanceOf[js.Any])
-    if (anchorOriginTopLeft != null) __obj.updateDynamic("anchorOriginTopLeft")(anchorOriginTopLeft.asInstanceOf[js.Any])
-    if (anchorOriginTopRight != null) __obj.updateDynamic("anchorOriginTopRight")(anchorOriginTopRight.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesSnackbar]
   }
+  @scala.inline
+  implicit class PartialStyleRulesSnackbarOps[Self <: PartialStyleRulesSnackbar] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnchorOriginBottomCenter(value: CSSProperties): Self = this.set("anchorOriginBottomCenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorOriginBottomCenter: Self = this.set("anchorOriginBottomCenter", js.undefined)
+    @scala.inline
+    def setAnchorOriginBottomLeft(value: CSSProperties): Self = this.set("anchorOriginBottomLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorOriginBottomLeft: Self = this.set("anchorOriginBottomLeft", js.undefined)
+    @scala.inline
+    def setAnchorOriginBottomRight(value: CSSProperties): Self = this.set("anchorOriginBottomRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorOriginBottomRight: Self = this.set("anchorOriginBottomRight", js.undefined)
+    @scala.inline
+    def setAnchorOriginTopCenter(value: CSSProperties): Self = this.set("anchorOriginTopCenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorOriginTopCenter: Self = this.set("anchorOriginTopCenter", js.undefined)
+    @scala.inline
+    def setAnchorOriginTopLeft(value: CSSProperties): Self = this.set("anchorOriginTopLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorOriginTopLeft: Self = this.set("anchorOriginTopLeft", js.undefined)
+    @scala.inline
+    def setAnchorOriginTopRight(value: CSSProperties): Self = this.set("anchorOriginTopRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorOriginTopRight: Self = this.set("anchorOriginTopRight", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

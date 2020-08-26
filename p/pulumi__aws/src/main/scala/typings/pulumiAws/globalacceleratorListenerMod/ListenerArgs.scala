@@ -31,12 +31,35 @@ object ListenerArgs {
   def apply(
     acceleratorArn: Input[String],
     portRanges: Input[js.Array[Input[ListenerPortRange]]],
-    protocol: Input[String],
-    clientAffinity: Input[String] = null
+    protocol: Input[String]
   ): ListenerArgs = {
     val __obj = js.Dynamic.literal(acceleratorArn = acceleratorArn.asInstanceOf[js.Any], portRanges = portRanges.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
-    if (clientAffinity != null) __obj.updateDynamic("clientAffinity")(clientAffinity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerArgs]
   }
+  @scala.inline
+  implicit class ListenerArgsOps[Self <: ListenerArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorArn(value: Input[String]): Self = this.set("acceleratorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortRangesVarargs(value: Input[ListenerPortRange]*): Self = this.set("portRanges", js.Array(value :_*))
+    @scala.inline
+    def setPortRanges(value: Input[js.Array[Input[ListenerPortRange]]]): Self = this.set("portRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProtocol(value: Input[String]): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientAffinity(value: Input[String]): Self = this.set("clientAffinity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientAffinity: Self = this.set("clientAffinity", js.undefined)
+  }
+  
 }
 

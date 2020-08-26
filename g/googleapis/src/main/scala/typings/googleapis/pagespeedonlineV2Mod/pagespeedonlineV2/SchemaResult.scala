@@ -64,32 +64,68 @@ trait SchemaResult extends js.Object {
 
 object SchemaResult {
   @scala.inline
-  def apply(
-    captchaResult: String = null,
-    formattedResults: RuleResults = null,
-    id: String = null,
-    invalidRules: js.Array[String] = null,
-    kind: String = null,
-    pageStats: CssResponseBytes = null,
-    responseCode: js.UndefOr[Double] = js.undefined,
-    ruleGroups: StringDictionary[Score] = null,
-    screenshot: SchemaPagespeedApiImageV2 = null,
-    title: String = null,
-    version: Major = null
-  ): SchemaResult = {
+  def apply(): SchemaResult = {
     val __obj = js.Dynamic.literal()
-    if (captchaResult != null) __obj.updateDynamic("captchaResult")(captchaResult.asInstanceOf[js.Any])
-    if (formattedResults != null) __obj.updateDynamic("formattedResults")(formattedResults.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (invalidRules != null) __obj.updateDynamic("invalidRules")(invalidRules.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (pageStats != null) __obj.updateDynamic("pageStats")(pageStats.asInstanceOf[js.Any])
-    if (!js.isUndefined(responseCode)) __obj.updateDynamic("responseCode")(responseCode.get.asInstanceOf[js.Any])
-    if (ruleGroups != null) __obj.updateDynamic("ruleGroups")(ruleGroups.asInstanceOf[js.Any])
-    if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResult]
   }
+  @scala.inline
+  implicit class SchemaResultOps[Self <: SchemaResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptchaResult(value: String): Self = this.set("captchaResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptchaResult: Self = this.set("captchaResult", js.undefined)
+    @scala.inline
+    def setFormattedResults(value: RuleResults): Self = this.set("formattedResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormattedResults: Self = this.set("formattedResults", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInvalidRulesVarargs(value: String*): Self = this.set("invalidRules", js.Array(value :_*))
+    @scala.inline
+    def setInvalidRules(value: js.Array[String]): Self = this.set("invalidRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidRules: Self = this.set("invalidRules", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPageStats(value: CssResponseBytes): Self = this.set("pageStats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageStats: Self = this.set("pageStats", js.undefined)
+    @scala.inline
+    def setResponseCode(value: Double): Self = this.set("responseCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseCode: Self = this.set("responseCode", js.undefined)
+    @scala.inline
+    def setRuleGroups(value: StringDictionary[Score]): Self = this.set("ruleGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleGroups: Self = this.set("ruleGroups", js.undefined)
+    @scala.inline
+    def setScreenshot(value: SchemaPagespeedApiImageV2): Self = this.set("screenshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenshot: Self = this.set("screenshot", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVersion(value: Major): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

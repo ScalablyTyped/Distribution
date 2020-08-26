@@ -26,11 +26,30 @@ trait SchemaAwsS3Data extends js.Object {
 
 object SchemaAwsS3Data {
   @scala.inline
-  def apply(awsAccessKey: SchemaAwsAccessKey = null, bucketName: String = null): SchemaAwsS3Data = {
+  def apply(): SchemaAwsS3Data = {
     val __obj = js.Dynamic.literal()
-    if (awsAccessKey != null) __obj.updateDynamic("awsAccessKey")(awsAccessKey.asInstanceOf[js.Any])
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAwsS3Data]
   }
+  @scala.inline
+  implicit class SchemaAwsS3DataOps[Self <: SchemaAwsS3Data] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccessKey(value: SchemaAwsAccessKey): Self = this.set("awsAccessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsAccessKey: Self = this.set("awsAccessKey", js.undefined)
+    @scala.inline
+    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+  }
+  
 }
 

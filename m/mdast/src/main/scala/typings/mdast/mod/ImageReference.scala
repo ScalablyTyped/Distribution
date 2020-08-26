@@ -1,40 +1,42 @@
 package typings.mdast.mod
 
 import typings.mdast.mdastStrings.imageReference
-import typings.unist.mod.Data
 import typings.unist.mod.Node
-import typings.unist.mod.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ImageReference
   extends StaticPhrasingContent
      with Node
      with Reference
      with Alternative {
   @JSName("type")
-  var type_ImageReference: imageReference
+  var type_ImageReference: imageReference = js.native
 }
 
 object ImageReference {
   @scala.inline
-  def apply(
-    identifier: String,
-    referenceType: ReferenceType,
-    `type`: imageReference,
-    alt: String = null,
-    data: Data = null,
-    label: String = null,
-    position: Position = null
-  ): ImageReference = {
+  def apply(identifier: String, referenceType: ReferenceType, `type`: imageReference): ImageReference = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], referenceType = referenceType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageReference]
   }
+  @scala.inline
+  implicit class ImageReferenceOps[Self <: ImageReference] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: imageReference): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -26,16 +26,9 @@ object mergeShardsCommandMod extends js.Object {
           Blob
         ] {
     def this(input: MergeShardsInput) = this()
-    /* CompleteClass */
-    override val input: MergeShardsInput = js.native
     val middlewareStack: MiddlewareStack[MergeShardsInput, MergeShardsOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KinesisResolvedConfiguration
-    ): Handler[MergeShardsInput, MergeShardsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KinesisResolvedConfiguration
     ): Handler[MergeShardsInput, MergeShardsOutput] = js.native
   }

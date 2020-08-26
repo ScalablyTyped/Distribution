@@ -5,39 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClosedCaption extends js.Object {
-  var closedCaption: js.UndefOr[js.Any] = js.undefined
-  var color: js.UndefOr[ColorType] = js.undefined
-  var configure: js.UndefOr[js.Any] = js.undefined
-  var fullScreen: js.UndefOr[js.Any] = js.undefined
-  var pause: js.UndefOr[js.Any] = js.undefined
-  var play: js.UndefOr[js.Any] = js.undefined
-  var reduceVolume: js.UndefOr[js.Any] = js.undefined
-  var volume: js.UndefOr[js.Any] = js.undefined
+  var closedCaption: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[ColorType] = js.native
+  var configure: js.UndefOr[js.Any] = js.native
+  var fullScreen: js.UndefOr[js.Any] = js.native
+  var pause: js.UndefOr[js.Any] = js.native
+  var play: js.UndefOr[js.Any] = js.native
+  var reduceVolume: js.UndefOr[js.Any] = js.native
+  var volume: js.UndefOr[js.Any] = js.native
 }
 
 object ClosedCaption {
   @scala.inline
-  def apply(
-    closedCaption: js.Any = null,
-    color: ColorType = null,
-    configure: js.Any = null,
-    fullScreen: js.Any = null,
-    pause: js.Any = null,
-    play: js.Any = null,
-    reduceVolume: js.Any = null,
-    volume: js.Any = null
-  ): ClosedCaption = {
+  def apply(): ClosedCaption = {
     val __obj = js.Dynamic.literal()
-    if (closedCaption != null) __obj.updateDynamic("closedCaption")(closedCaption.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (configure != null) __obj.updateDynamic("configure")(configure.asInstanceOf[js.Any])
-    if (fullScreen != null) __obj.updateDynamic("fullScreen")(fullScreen.asInstanceOf[js.Any])
-    if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
-    if (play != null) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
-    if (reduceVolume != null) __obj.updateDynamic("reduceVolume")(reduceVolume.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClosedCaption]
   }
+  @scala.inline
+  implicit class ClosedCaptionOps[Self <: ClosedCaption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClosedCaption(value: js.Any): Self = this.set("closedCaption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClosedCaption: Self = this.set("closedCaption", js.undefined)
+    @scala.inline
+    def setColor(value: ColorType): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setConfigure(value: js.Any): Self = this.set("configure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigure: Self = this.set("configure", js.undefined)
+    @scala.inline
+    def setFullScreen(value: js.Any): Self = this.set("fullScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullScreen: Self = this.set("fullScreen", js.undefined)
+    @scala.inline
+    def setPause(value: js.Any): Self = this.set("pause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePause: Self = this.set("pause", js.undefined)
+    @scala.inline
+    def setPlay(value: js.Any): Self = this.set("play", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlay: Self = this.set("play", js.undefined)
+    @scala.inline
+    def setReduceVolume(value: js.Any): Self = this.set("reduceVolume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReduceVolume: Self = this.set("reduceVolume", js.undefined)
+    @scala.inline
+    def setVolume(value: js.Any): Self = this.set("volume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolume: Self = this.set("volume", js.undefined)
+  }
+  
 }
 

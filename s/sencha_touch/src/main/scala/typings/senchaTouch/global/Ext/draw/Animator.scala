@@ -27,6 +27,7 @@ object Animator extends js.Object {
     * @returns String
     */
   def addFrameCallback(): String = js.native
+  def addFrameCallback(callback: js.UndefOr[scala.Nothing], scope: js.Any): String = js.native
   def addFrameCallback(callback: js.Any): String = js.native
   def addFrameCallback(callback: js.Any, scope: js.Any): String = js.native
   /** [Method] Cross platform animationTime implementation
@@ -96,6 +97,7 @@ object Animator extends js.Object {
     * @returns String
     */
   def schedule(): String = js.native
+  def schedule(callback: js.UndefOr[scala.Nothing], scope: js.Any): String = js.native
   def schedule(callback: js.Any): String = js.native
   def schedule(callback: js.Any, scope: js.Any): String = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

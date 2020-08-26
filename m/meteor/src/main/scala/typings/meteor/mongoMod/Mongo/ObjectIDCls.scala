@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObjectIDCls () extends ObjectID {
   def this(hexString: String) = this()
-  /* CompleteClass */
-  override def equals(otherID: ObjectID): Boolean = js.native
-  /* CompleteClass */
-  override def toHexString(): String = js.native
 }
 

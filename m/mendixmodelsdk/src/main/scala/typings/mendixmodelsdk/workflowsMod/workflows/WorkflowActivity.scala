@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowActivity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsWorkflow */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.WorkflowActivity")
+- typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowActivity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsWorkflow, caption */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.WorkflowActivity")
 @js.native
 abstract class WorkflowActivity protected () extends Element {
   def this(
@@ -33,17 +33,25 @@ abstract class WorkflowActivity protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
+  /**
+    * In version 8.12.0: added public
+    */
+  @JSName("caption")
+  val caption_FWorkflowActivity: String = js.native
   @JSName("containerAsWorkflow")
   val containerAsWorkflow_FWorkflowActivity: IWorkflow = js.native
   @JSName("model")
   var model_FWorkflowActivity: IModel = js.native
+  /**
+    * In version 8.12.0: added public
+    */
   def caption: String = js.native
-  def caption(newValue: String): js.Any = js.native
+  def caption_=(newValue: String): Unit = js.native
   def containerAsWorkflow: Workflow = js.native
   def location: IPoint = js.native
-  def location(newValue: IPoint): js.Any = js.native
+  def location_=(newValue: IPoint): Unit = js.native
   def size: ISize = js.native
-  def size(newValue: ISize): js.Any = js.native
+  def size_=(newValue: ISize): Unit = js.native
 }
 
 /* static members */

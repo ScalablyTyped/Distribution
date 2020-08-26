@@ -1,7 +1,7 @@
 
 # Scala.js typings for windows-release
 
-Typings are for version 3.2.0
+Typings are for version 3.3.1
 
 ## Library description:
 Get the name of a Windows version from the release number: `5.1.2600` → `XP`
@@ -12,7 +12,7 @@ Get the name of a Windows version from the release number: `5.1.2600` → `XP`
 | Keywords           | os, win, win32, windows, operating, system, platform, name, title, release, version |
 | # releases         | 4 |
 | # dependents       | 5 |
-| # downloads        | 43338658 |
+| # downloads        | 46994495 |
 | # stars            | 0 |
 
 ## Links

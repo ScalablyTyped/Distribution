@@ -22,10 +22,32 @@ trait PutEventsInput extends js.Object {
 
 object PutEventsInput {
   @scala.inline
-  def apply(clientContext: String, events: EventListDefinition, clientContextEncoding: String = null): PutEventsInput = {
+  def apply(clientContext: String, events: EventListDefinition): PutEventsInput = {
     val __obj = js.Dynamic.literal(clientContext = clientContext.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any])
-    if (clientContextEncoding != null) __obj.updateDynamic("clientContextEncoding")(clientContextEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventsInput]
   }
+  @scala.inline
+  implicit class PutEventsInputOps[Self <: PutEventsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientContext(value: String): Self = this.set("clientContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventsVarargs(value: Event*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: EventListDefinition): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientContextEncoding(value: String): Self = this.set("clientContextEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientContextEncoding: Self = this.set("clientContextEncoding", js.undefined)
+  }
+  
 }
 

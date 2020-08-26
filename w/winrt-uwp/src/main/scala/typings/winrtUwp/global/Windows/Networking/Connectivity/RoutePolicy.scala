@@ -22,14 +22,5 @@ class RoutePolicy protected ()
     hostName: HostName,
     `type`: DomainNameType
   ) = this()
-  /** Retrieves the connection profile for an access point connection. */
-  /* CompleteClass */
-  override var connectionProfile: typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile = js.native
-  /** Provides the host name for the route policy to the special PDP context. */
-  /* CompleteClass */
-  override var hostName: HostName = js.native
-  /** Indicates if the HostName is a suffix or a fully qualified domain name reference. Possible values are defined by DomainNameType . */
-  /* CompleteClass */
-  override var hostNameType: DomainNameType = js.native
 }
 

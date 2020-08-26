@@ -22,16 +22,34 @@ trait AutoMLJobCompletionCriteria extends js.Object {
 
 object AutoMLJobCompletionCriteria {
   @scala.inline
-  def apply(
-    MaxAutoMLJobRuntimeInSeconds: js.UndefOr[MaxAutoMLJobRuntimeInSeconds] = js.undefined,
-    MaxCandidates: js.UndefOr[MaxCandidates] = js.undefined,
-    MaxRuntimePerTrainingJobInSeconds: js.UndefOr[MaxRuntimePerTrainingJobInSeconds] = js.undefined
-  ): AutoMLJobCompletionCriteria = {
+  def apply(): AutoMLJobCompletionCriteria = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxAutoMLJobRuntimeInSeconds)) __obj.updateDynamic("MaxAutoMLJobRuntimeInSeconds")(MaxAutoMLJobRuntimeInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxCandidates)) __obj.updateDynamic("MaxCandidates")(MaxCandidates.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRuntimePerTrainingJobInSeconds)) __obj.updateDynamic("MaxRuntimePerTrainingJobInSeconds")(MaxRuntimePerTrainingJobInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoMLJobCompletionCriteria]
   }
+  @scala.inline
+  implicit class AutoMLJobCompletionCriteriaOps[Self <: AutoMLJobCompletionCriteria] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxAutoMLJobRuntimeInSeconds(value: MaxAutoMLJobRuntimeInSeconds): Self = this.set("MaxAutoMLJobRuntimeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAutoMLJobRuntimeInSeconds: Self = this.set("MaxAutoMLJobRuntimeInSeconds", js.undefined)
+    @scala.inline
+    def setMaxCandidates(value: MaxCandidates): Self = this.set("MaxCandidates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCandidates: Self = this.set("MaxCandidates", js.undefined)
+    @scala.inline
+    def setMaxRuntimePerTrainingJobInSeconds(value: MaxRuntimePerTrainingJobInSeconds): Self = this.set("MaxRuntimePerTrainingJobInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRuntimePerTrainingJobInSeconds: Self = this.set("MaxRuntimePerTrainingJobInSeconds", js.undefined)
+  }
+  
 }
 

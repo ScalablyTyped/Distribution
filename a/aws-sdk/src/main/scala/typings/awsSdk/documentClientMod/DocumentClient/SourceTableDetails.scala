@@ -51,18 +51,51 @@ object SourceTableDetails {
     ProvisionedThroughput: ProvisionedThroughput,
     TableCreationDateTime: TableCreationDateTime,
     TableId: TableId,
-    TableName: TableName,
-    BillingMode: BillingMode = null,
-    ItemCount: js.UndefOr[ItemCount] = js.undefined,
-    TableArn: TableArn = null,
-    TableSizeBytes: js.UndefOr[Long] = js.undefined
+    TableName: TableName
   ): SourceTableDetails = {
     val __obj = js.Dynamic.literal(KeySchema = KeySchema.asInstanceOf[js.Any], ProvisionedThroughput = ProvisionedThroughput.asInstanceOf[js.Any], TableCreationDateTime = TableCreationDateTime.asInstanceOf[js.Any], TableId = TableId.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (BillingMode != null) __obj.updateDynamic("BillingMode")(BillingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount.get.asInstanceOf[js.Any])
-    if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(TableSizeBytes)) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceTableDetails]
   }
+  @scala.inline
+  implicit class SourceTableDetailsOps[Self <: SourceTableDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
+    @scala.inline
+    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvisionedThroughput(value: ProvisionedThroughput): Self = this.set("ProvisionedThroughput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableCreationDateTime(value: TableCreationDateTime): Self = this.set("TableCreationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableId(value: TableId): Self = this.set("TableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBillingMode(value: BillingMode): Self = this.set("BillingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingMode: Self = this.set("BillingMode", js.undefined)
+    @scala.inline
+    def setItemCount(value: ItemCount): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    @scala.inline
+    def setTableArn(value: TableArn): Self = this.set("TableArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableArn: Self = this.set("TableArn", js.undefined)
+    @scala.inline
+    def setTableSizeBytes(value: Long): Self = this.set("TableSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableSizeBytes: Self = this.set("TableSizeBytes", js.undefined)
+  }
+  
 }
 

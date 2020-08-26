@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sane", "WatchmanWatcher")
 @js.native
 object WatchmanWatcher
-  extends TopLevel[Instantiable2[/* dir */ String, js.UndefOr[/* options */ Options], SaneWatcher]]
+  extends TopLevel[Instantiable2[/* dir */ String, /* options */ js.UndefOr[Options], SaneWatcher]]
 

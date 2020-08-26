@@ -42,26 +42,54 @@ trait BundleTask extends js.Object {
 
 object BundleTask {
   @scala.inline
-  def apply(
-    BundleId: String = null,
-    BundleTaskError: BundleTaskError = null,
-    InstanceId: String = null,
-    Progress: String = null,
-    StartTime: DateTime = null,
-    State: BundleTaskState = null,
-    Storage: Storage = null,
-    UpdateTime: DateTime = null
-  ): BundleTask = {
+  def apply(): BundleTask = {
     val __obj = js.Dynamic.literal()
-    if (BundleId != null) __obj.updateDynamic("BundleId")(BundleId.asInstanceOf[js.Any])
-    if (BundleTaskError != null) __obj.updateDynamic("BundleTaskError")(BundleTaskError.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Storage != null) __obj.updateDynamic("Storage")(Storage.asInstanceOf[js.Any])
-    if (UpdateTime != null) __obj.updateDynamic("UpdateTime")(UpdateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleTask]
   }
+  @scala.inline
+  implicit class BundleTaskOps[Self <: BundleTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBundleId(value: String): Self = this.set("BundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleId: Self = this.set("BundleId", js.undefined)
+    @scala.inline
+    def setBundleTaskError(value: BundleTaskError): Self = this.set("BundleTaskError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleTaskError: Self = this.set("BundleTaskError", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setProgress(value: String): Self = this.set("Progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("Progress", js.undefined)
+    @scala.inline
+    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setState(value: BundleTaskState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStorage(value: Storage): Self = this.set("Storage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorage: Self = this.set("Storage", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: DateTime): Self = this.set("UpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("UpdateTime", js.undefined)
+  }
+  
 }
 

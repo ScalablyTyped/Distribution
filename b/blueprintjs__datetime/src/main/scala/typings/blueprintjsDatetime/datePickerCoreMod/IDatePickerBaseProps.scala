@@ -8,42 +8,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IDatePickerBaseProps extends js.Object {
   /**
     * The initial month the calendar displays.
     */
-  var initialMonth: js.UndefOr[Date] = js.undefined
+  var initialMonth: js.UndefOr[Date] = js.native
   /**
     * The locale name, which is passed to the functions in `localeUtils`
     * (and `formatDate` and `parseDate` if supported).
     */
-  var locale: js.UndefOr[String] = js.undefined
+  var locale: js.UndefOr[String] = js.native
   /**
     * Collection of functions that provide internationalization support.
     */
-  var localeUtils: js.UndefOr[FormatDate] = js.undefined
+  var localeUtils: js.UndefOr[FormatDate] = js.native
   /**
     * The latest date the user can select.
     * @default Dec. 31st of this year.
     */
-  var maxDate: js.UndefOr[Date] = js.undefined
+  var maxDate: js.UndefOr[Date] = js.native
   /**
     * The earliest date the user can select.
     * @default Jan. 1st, 20 years in the past.
     */
-  var minDate: js.UndefOr[Date] = js.undefined
+  var minDate: js.UndefOr[Date] = js.native
   /**
     * Collection of functions that determine which modifier classes get applied to which days.
     * Each function should accept a `Date` and return a boolean.
     * See the [**react-day-picker** documentation](http://react-day-picker.js.org/api/ModifiersUtils) to learn more.
     */
-  var modifiers: js.UndefOr[IDatePickerModifiers] = js.undefined
+  var modifiers: js.UndefOr[IDatePickerModifiers] = js.native
   /**
     * If `true`, the month menu will appear to the left of the year menu.
     * Otherwise, the month menu will apear to the right of the year menu.
     * @default false
     */
-  var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined
+  var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.native
   /**
     * Further configure the `TimePicker` that appears beneath the calendar.
     * `onChange` and `value` are ignored in favor of the corresponding
@@ -51,7 +52,7 @@ trait IDatePickerBaseProps extends js.Object {
     *
     * Passing any non-empty object to this prop will cause the `TimePicker` to appear.
     */
-  var timePickerProps: js.UndefOr[ITimePickerProps] = js.undefined
+  var timePickerProps: js.UndefOr[ITimePickerProps] = js.native
   /**
     * The precision of time selection that accompanies the calendar. Passing a
     * `TimePrecision` value (or providing `timePickerProps`) shows a
@@ -60,33 +61,63 @@ trait IDatePickerBaseProps extends js.Object {
     * This is shorthand for `timePickerProps.precision` and is a quick way to
     * enable time selection.
     */
-  var timePrecision: js.UndefOr[TimePrecision] = js.undefined
+  var timePrecision: js.UndefOr[TimePrecision] = js.native
 }
 
 object IDatePickerBaseProps {
   @scala.inline
-  def apply(
-    initialMonth: Date = null,
-    locale: String = null,
-    localeUtils: FormatDate = null,
-    maxDate: Date = null,
-    minDate: Date = null,
-    modifiers: IDatePickerModifiers = null,
-    reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined,
-    timePickerProps: ITimePickerProps = null,
-    timePrecision: TimePrecision = null
-  ): IDatePickerBaseProps = {
+  def apply(): IDatePickerBaseProps = {
     val __obj = js.Dynamic.literal()
-    if (initialMonth != null) __obj.updateDynamic("initialMonth")(initialMonth.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (localeUtils != null) __obj.updateDynamic("localeUtils")(localeUtils.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseMonthAndYearMenus)) __obj.updateDynamic("reverseMonthAndYearMenus")(reverseMonthAndYearMenus.get.asInstanceOf[js.Any])
-    if (timePickerProps != null) __obj.updateDynamic("timePickerProps")(timePickerProps.asInstanceOf[js.Any])
-    if (timePrecision != null) __obj.updateDynamic("timePrecision")(timePrecision.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePickerBaseProps]
   }
+  @scala.inline
+  implicit class IDatePickerBasePropsOps[Self <: IDatePickerBaseProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitialMonth(value: Date): Self = this.set("initialMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialMonth: Self = this.set("initialMonth", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setLocaleUtils(value: FormatDate): Self = this.set("localeUtils", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocaleUtils: Self = this.set("localeUtils", js.undefined)
+    @scala.inline
+    def setMaxDate(value: Date): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDate: Self = this.set("maxDate", js.undefined)
+    @scala.inline
+    def setMinDate(value: Date): Self = this.set("minDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinDate: Self = this.set("minDate", js.undefined)
+    @scala.inline
+    def setModifiers(value: IDatePickerModifiers): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    @scala.inline
+    def setReverseMonthAndYearMenus(value: Boolean): Self = this.set("reverseMonthAndYearMenus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReverseMonthAndYearMenus: Self = this.set("reverseMonthAndYearMenus", js.undefined)
+    @scala.inline
+    def setTimePickerProps(value: ITimePickerProps): Self = this.set("timePickerProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePickerProps: Self = this.set("timePickerProps", js.undefined)
+    @scala.inline
+    def setTimePrecision(value: TimePrecision): Self = this.set("timePrecision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePrecision: Self = this.set("timePrecision", js.undefined)
+  }
+  
 }
 

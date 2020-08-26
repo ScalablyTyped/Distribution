@@ -144,6 +144,7 @@ trait Ticker extends js.Object {
     * @returns {PIXI.Ticker} This instance of a ticker
     */
   def add(fn: js.Function1[/* repeated */ js.Any, _]): Ticker = js.native
+  def add(fn: js.Function1[/* repeated */ js.Any, _], context: js.UndefOr[scala.Nothing], priority: Double): Ticker = js.native
   def add(fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): Ticker = js.native
   def add(fn: js.Function1[/* repeated */ js.Any, _], context: js.Any, priority: Double): Ticker = js.native
   /**
@@ -155,6 +156,7 @@ trait Ticker extends js.Object {
     * @returns {PIXI.Ticker} This instance of a ticker
     */
   def addOnce(fn: js.Function1[/* repeated */ js.Any, _]): Ticker = js.native
+  def addOnce(fn: js.Function1[/* repeated */ js.Any, _], context: js.UndefOr[scala.Nothing], priority: Double): Ticker = js.native
   def addOnce(fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): Ticker = js.native
   def addOnce(fn: js.Function1[/* repeated */ js.Any, _], context: js.Any, priority: Double): Ticker = js.native
   /**

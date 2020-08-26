@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dnd-test-backend
 
-Typings are for version 10.0.2
+Typings are for version 11.1.3
 
 ## Library description:
 A mock backend for testing React DnD apps

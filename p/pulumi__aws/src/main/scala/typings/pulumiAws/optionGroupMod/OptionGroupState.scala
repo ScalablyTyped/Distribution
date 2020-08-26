@@ -38,33 +38,63 @@ trait OptionGroupState extends js.Object {
     */
   val options: js.UndefOr[Input[js.Array[Input[OptionGroupOption]]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object OptionGroupState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    engineName: Input[String] = null,
-    majorEngineVersion: Input[String] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    optionGroupDescription: Input[String] = null,
-    options: Input[js.Array[Input[OptionGroupOption]]] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): OptionGroupState = {
+  def apply(): OptionGroupState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (engineName != null) __obj.updateDynamic("engineName")(engineName.asInstanceOf[js.Any])
-    if (majorEngineVersion != null) __obj.updateDynamic("majorEngineVersion")(majorEngineVersion.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (optionGroupDescription != null) __obj.updateDynamic("optionGroupDescription")(optionGroupDescription.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionGroupState]
   }
+  @scala.inline
+  implicit class OptionGroupStateOps[Self <: OptionGroupState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setEngineName(value: Input[String]): Self = this.set("engineName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineName: Self = this.set("engineName", js.undefined)
+    @scala.inline
+    def setMajorEngineVersion(value: Input[String]): Self = this.set("majorEngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajorEngineVersion: Self = this.set("majorEngineVersion", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setOptionGroupDescription(value: Input[String]): Self = this.set("optionGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupDescription: Self = this.set("optionGroupDescription", js.undefined)
+    @scala.inline
+    def setOptionsVarargs(value: Input[OptionGroupOption]*): Self = this.set("options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: Input[js.Array[Input[OptionGroupOption]]]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,5 @@ import scala.scalajs.js.annotation._
   * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.GetStatusRequest
   */
 class GetStatusRequest ()
-  extends typings.chrome.chrome.cast.media.GetStatusRequest {
-  /* CompleteClass */
-  override var customData: js.Object = js.native
-}
+  extends typings.chrome.chrome.cast.media.GetStatusRequest
 

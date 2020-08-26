@@ -17,22 +17,50 @@ trait Beta extends js.Object {
 
 object Beta {
   @scala.inline
-  def apply(
-    beta: js.UndefOr[Boolean] = js.undefined,
-    groups: js.Array[String] = null,
-    localizedRuleName: String = null,
-    ruleImpact: js.UndefOr[Double] = js.undefined,
-    summary: SchemaPagespeedApiFormatStringV4 = null,
-    urlBlocks: js.Array[HeaderUrls] = null
-  ): Beta = {
+  def apply(): Beta = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(beta)) __obj.updateDynamic("beta")(beta.get.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (localizedRuleName != null) __obj.updateDynamic("localizedRuleName")(localizedRuleName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ruleImpact)) __obj.updateDynamic("ruleImpact")(ruleImpact.get.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
-    if (urlBlocks != null) __obj.updateDynamic("urlBlocks")(urlBlocks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Beta]
   }
+  @scala.inline
+  implicit class BetaOps[Self <: Beta] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeta(value: Boolean): Self = this.set("beta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeta: Self = this.set("beta", js.undefined)
+    @scala.inline
+    def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("groups", js.undefined)
+    @scala.inline
+    def setLocalizedRuleName(value: String): Self = this.set("localizedRuleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalizedRuleName: Self = this.set("localizedRuleName", js.undefined)
+    @scala.inline
+    def setRuleImpact(value: Double): Self = this.set("ruleImpact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleImpact: Self = this.set("ruleImpact", js.undefined)
+    @scala.inline
+    def setSummary(value: SchemaPagespeedApiFormatStringV4): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+    @scala.inline
+    def setUrlBlocksVarargs(value: HeaderUrls*): Self = this.set("urlBlocks", js.Array(value :_*))
+    @scala.inline
+    def setUrlBlocks(value: js.Array[HeaderUrls]): Self = this.set("urlBlocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlBlocks: Self = this.set("urlBlocks", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for style-value-types
 
-Typings are for version 3.1.7
+Typings are for version 3.1.9
 
 ## Library description:
 Parsers, transformers and tests for special value types, eg: %, hex codes etc.

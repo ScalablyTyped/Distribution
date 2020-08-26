@@ -14,63 +14,108 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Line extends js.Object {
-  var additionalName: js.UndefOr[String] = js.undefined
-  var adminCode: js.UndefOr[String] = js.undefined
-  var express: js.UndefOr[Boolean] = js.undefined
-  var fahrtNr: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var metro: js.UndefOr[Boolean] = js.undefined
-  var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking
-  var name: js.UndefOr[String] = js.undefined
-  var night: js.UndefOr[Boolean] = js.undefined
-  var nr: js.UndefOr[Double] = js.undefined
-  var operator: js.UndefOr[Operator] = js.undefined
-  var product: js.UndefOr[String] = js.undefined
-  var public: js.UndefOr[Boolean] = js.undefined
+  var additionalName: js.UndefOr[String] = js.native
+  var adminCode: js.UndefOr[String] = js.native
+  var express: js.UndefOr[Boolean] = js.native
+  var fahrtNr: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var metro: js.UndefOr[Boolean] = js.native
+  var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking = js.native
+  var name: js.UndefOr[String] = js.native
+  var night: js.UndefOr[Boolean] = js.native
+  var nr: js.UndefOr[Double] = js.native
+  var operator: js.UndefOr[Operator] = js.native
+  var product: js.UndefOr[String] = js.native
+  var public: js.UndefOr[Boolean] = js.native
   /** routes ids */
-  var routes: js.UndefOr[js.Array[String]] = js.undefined
-  var symbol: js.UndefOr[String] = js.undefined
-  var `type`: line
+  var routes: js.UndefOr[js.Array[String]] = js.native
+  var symbol: js.UndefOr[String] = js.native
+  var `type`: line = js.native
 }
 
 object Line {
   @scala.inline
-  def apply(
-    mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking,
-    `type`: line,
-    additionalName: String = null,
-    adminCode: String = null,
-    express: js.UndefOr[Boolean] = js.undefined,
-    fahrtNr: String = null,
-    id: String = null,
-    metro: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    night: js.UndefOr[Boolean] = js.undefined,
-    nr: js.UndefOr[Double] = js.undefined,
-    operator: Operator = null,
-    product: String = null,
-    public: js.UndefOr[Boolean] = js.undefined,
-    routes: js.Array[String] = null,
-    symbol: String = null
-  ): Line = {
+  def apply(mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking, `type`: line): Line = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (additionalName != null) __obj.updateDynamic("additionalName")(additionalName.asInstanceOf[js.Any])
-    if (adminCode != null) __obj.updateDynamic("adminCode")(adminCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(express)) __obj.updateDynamic("express")(express.get.asInstanceOf[js.Any])
-    if (fahrtNr != null) __obj.updateDynamic("fahrtNr")(fahrtNr.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(metro)) __obj.updateDynamic("metro")(metro.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(night)) __obj.updateDynamic("night")(night.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nr)) __obj.updateDynamic("nr")(nr.get.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.get.asInstanceOf[js.Any])
-    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[Line]
   }
+  @scala.inline
+  implicit class LineOps[Self <: Line] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: line): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditionalName(value: String): Self = this.set("additionalName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalName: Self = this.set("additionalName", js.undefined)
+    @scala.inline
+    def setAdminCode(value: String): Self = this.set("adminCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminCode: Self = this.set("adminCode", js.undefined)
+    @scala.inline
+    def setExpress(value: Boolean): Self = this.set("express", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpress: Self = this.set("express", js.undefined)
+    @scala.inline
+    def setFahrtNr(value: String): Self = this.set("fahrtNr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFahrtNr: Self = this.set("fahrtNr", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setMetro(value: Boolean): Self = this.set("metro", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetro: Self = this.set("metro", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNight(value: Boolean): Self = this.set("night", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNight: Self = this.set("night", js.undefined)
+    @scala.inline
+    def setNr(value: Double): Self = this.set("nr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNr: Self = this.set("nr", js.undefined)
+    @scala.inline
+    def setOperator(value: Operator): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+    @scala.inline
+    def setProduct(value: String): Self = this.set("product", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduct: Self = this.set("product", js.undefined)
+    @scala.inline
+    def setPublic(value: Boolean): Self = this.set("public", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublic: Self = this.set("public", js.undefined)
+    @scala.inline
+    def setRoutesVarargs(value: String*): Self = this.set("routes", js.Array(value :_*))
+    @scala.inline
+    def setRoutes(value: js.Array[String]): Self = this.set("routes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutes: Self = this.set("routes", js.undefined)
+    @scala.inline
+    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+  }
+  
 }
 

@@ -15,6 +15,14 @@ trait Adaptor extends js.Object {
   def extend(overrides: js.Any): Adaptor = js.native
   def processQuery(dm: DataManager, query: Query): js.Any = js.native
   def processResponse(data: js.Any, ds: js.Any, query: Query, xhr: JQueryXHR): js.Any = js.native
+  def processResponse(
+    data: js.Any,
+    ds: js.Any,
+    query: Query,
+    xhr: JQueryXHR,
+    request: js.UndefOr[scala.Nothing],
+    changes: Changes
+  ): js.Any = js.native
   def processResponse(data: js.Any, ds: js.Any, query: Query, xhr: JQueryXHR, request: js.Any): js.Any = js.native
   def processResponse(data: js.Any, ds: js.Any, query: Query, xhr: JQueryXHR, request: js.Any, changes: Changes): js.Any = js.native
 }

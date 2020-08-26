@@ -20,6 +20,12 @@ object graphlib extends js.Object {
   object alg extends js.Object {
     def components(graph: typings.dagre.mod.graphlib.Graph[js.Object]): js.Array[js.Array[String]] = js.native
     def dijkstra(graph: typings.dagre.mod.graphlib.Graph[js.Object], source: String): js.Any = js.native
+    def dijkstra(
+      graph: typings.dagre.mod.graphlib.Graph[js.Object],
+      source: String,
+      weightFn: js.UndefOr[scala.Nothing],
+      edgeFn: EdgeFn
+    ): js.Any = js.native
     def dijkstra(graph: typings.dagre.mod.graphlib.Graph[js.Object], source: String, weightFn: WeightFn): js.Any = js.native
     def dijkstra(
       graph: typings.dagre.mod.graphlib.Graph[js.Object],
@@ -28,10 +34,20 @@ object graphlib extends js.Object {
       edgeFn: EdgeFn
     ): js.Any = js.native
     def dijkstraAll(graph: typings.dagre.mod.graphlib.Graph[js.Object]): js.Any = js.native
+    def dijkstraAll(
+      graph: typings.dagre.mod.graphlib.Graph[js.Object],
+      weightFn: js.UndefOr[scala.Nothing],
+      edgeFn: EdgeFn
+    ): js.Any = js.native
     def dijkstraAll(graph: typings.dagre.mod.graphlib.Graph[js.Object], weightFn: WeightFn): js.Any = js.native
     def dijkstraAll(graph: typings.dagre.mod.graphlib.Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = js.native
     def findCycles(graph: typings.dagre.mod.graphlib.Graph[js.Object]): js.Array[js.Array[String]] = js.native
     def floydWarchall(graph: typings.dagre.mod.graphlib.Graph[js.Object]): js.Any = js.native
+    def floydWarchall(
+      graph: typings.dagre.mod.graphlib.Graph[js.Object],
+      weightFn: js.UndefOr[scala.Nothing],
+      edgeFn: EdgeFn
+    ): js.Any = js.native
     def floydWarchall(graph: typings.dagre.mod.graphlib.Graph[js.Object], weightFn: WeightFn): js.Any = js.native
     def floydWarchall(graph: typings.dagre.mod.graphlib.Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = js.native
     def isAcyclic(graph: typings.dagre.mod.graphlib.Graph[js.Object]): Boolean = js.native

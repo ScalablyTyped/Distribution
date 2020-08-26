@@ -7,32 +7,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CheckableTagProps extends js.Object {
-  var checked: Boolean
-  var className: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* e */ MouseEventHandler[HTMLElement], Unit]] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var checked: Boolean = js.native
+  var className: js.UndefOr[String] = js.native
+  var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* e */ MouseEventHandler[HTMLElement], Unit]] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object CheckableTagProps {
   @scala.inline
-  def apply(
-    checked: Boolean,
-    className: String = null,
-    onChange: /* checked */ Boolean => Unit = null,
-    onClick: /* e */ MouseEventHandler[HTMLElement] => Unit = null,
-    prefixCls: String = null,
-    style: CSSProperties = null
-  ): CheckableTagProps = {
+  def apply(checked: Boolean): CheckableTagProps = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckableTagProps]
   }
+  @scala.inline
+  implicit class CheckableTagPropsOps[Self <: CheckableTagProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* checked */ Boolean => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* e */ MouseEventHandler[HTMLElement] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

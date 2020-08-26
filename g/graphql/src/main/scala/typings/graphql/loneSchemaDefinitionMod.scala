@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object loneSchemaDefinitionMod extends js.Object {
   def LoneSchemaDefinition(context: SDLValidationContext): ASTVisitor = js.native
-  def canNotDefineSchemaWithinExtensionMessage(): String = js.native
-  def schemaDefinitionNotAloneMessage(): String = js.native
 }
 

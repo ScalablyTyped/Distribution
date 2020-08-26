@@ -26,18 +26,40 @@ trait GlobalClusterMember extends js.Object {
 
 object GlobalClusterMember {
   @scala.inline
-  def apply(
-    DBClusterArn: String = null,
-    GlobalWriteForwardingStatus: WriteForwardingStatus = null,
-    IsWriter: js.UndefOr[Boolean] = js.undefined,
-    Readers: ReadersArnList = null
-  ): GlobalClusterMember = {
+  def apply(): GlobalClusterMember = {
     val __obj = js.Dynamic.literal()
-    if (DBClusterArn != null) __obj.updateDynamic("DBClusterArn")(DBClusterArn.asInstanceOf[js.Any])
-    if (GlobalWriteForwardingStatus != null) __obj.updateDynamic("GlobalWriteForwardingStatus")(GlobalWriteForwardingStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsWriter)) __obj.updateDynamic("IsWriter")(IsWriter.get.asInstanceOf[js.Any])
-    if (Readers != null) __obj.updateDynamic("Readers")(Readers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalClusterMember]
   }
+  @scala.inline
+  implicit class GlobalClusterMemberOps[Self <: GlobalClusterMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBClusterArn(value: String): Self = this.set("DBClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterArn: Self = this.set("DBClusterArn", js.undefined)
+    @scala.inline
+    def setGlobalWriteForwardingStatus(value: WriteForwardingStatus): Self = this.set("GlobalWriteForwardingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalWriteForwardingStatus: Self = this.set("GlobalWriteForwardingStatus", js.undefined)
+    @scala.inline
+    def setIsWriter(value: Boolean): Self = this.set("IsWriter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsWriter: Self = this.set("IsWriter", js.undefined)
+    @scala.inline
+    def setReadersVarargs(value: String*): Self = this.set("Readers", js.Array(value :_*))
+    @scala.inline
+    def setReaders(value: ReadersArnList): Self = this.set("Readers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReaders: Self = this.set("Readers", js.undefined)
+  }
+  
 }
 

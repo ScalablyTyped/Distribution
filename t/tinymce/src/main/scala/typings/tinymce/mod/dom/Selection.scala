@@ -16,6 +16,7 @@ class Selection protected () extends js.Object {
   def collapse(): Unit = js.native
   def collapse(toStart: Boolean): Unit = js.native
   def getBookmark(): js.Object = js.native
+  def getBookmark(`type`: js.UndefOr[scala.Nothing], normalized: Boolean): js.Object = js.native
   def getBookmark(`type`: Double): js.Object = js.native
   def getBookmark(`type`: Double, normalized: Boolean): js.Object = js.native
   def getContent(): String = js.native
@@ -35,6 +36,7 @@ class Selection protected () extends js.Object {
   def setContent(content: String): Unit = js.native
   def setContent(content: String, args: js.Object): Unit = js.native
   def setCursorLocation(): Unit = js.native
+  def setCursorLocation(node: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
   def setCursorLocation(node: Node): Unit = js.native
   def setCursorLocation(node: Node, offset: Double): Unit = js.native
   def setNode(elm: Element): Element = js.native

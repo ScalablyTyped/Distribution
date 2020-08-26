@@ -14,10 +14,26 @@ trait S3DestinationAccessControl extends js.Object {
 
 object S3DestinationAccessControl {
   @scala.inline
-  def apply(CannedAcl: S3ObjectCannedAcl = null): S3DestinationAccessControl = {
+  def apply(): S3DestinationAccessControl = {
     val __obj = js.Dynamic.literal()
-    if (CannedAcl != null) __obj.updateDynamic("CannedAcl")(CannedAcl.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3DestinationAccessControl]
   }
+  @scala.inline
+  implicit class S3DestinationAccessControlOps[Self <: S3DestinationAccessControl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCannedAcl(value: S3ObjectCannedAcl): Self = this.set("CannedAcl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCannedAcl: Self = this.set("CannedAcl", js.undefined)
+  }
+  
 }
 

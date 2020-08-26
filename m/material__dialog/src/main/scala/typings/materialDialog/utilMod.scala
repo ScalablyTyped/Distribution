@@ -1,7 +1,8 @@
 package typings.materialDialog
 
-import typings.materialDialog.anon.ClickOutsideDeactivates
-import typings.std.Element
+import typings.materialDom.focusTrapMod.FocusOptions
+import typings.materialDom.focusTrapMod.FocusTrap
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +10,11 @@ import scala.scalajs.js.annotation._
 @JSImport("@material/dialog/util", JSImport.Namespace)
 @js.native
 object utilMod extends js.Object {
-  def createFocusTrapInstance(surfaceEl: Element, acceptButtonEl: Element): js.Any = js.native
-  def createFocusTrapInstance(surfaceEl: Element, acceptButtonEl: Element, focusTrapFactory: MDCFocusTrapFactory): js.Any = js.native
-  type MDCFocusTrapFactory = js.Function2[/* a */ Element, /* b */ ClickOutsideDeactivates, js.Any]
+  def areTopsMisaligned(els: js.Array[HTMLElement]): Boolean = js.native
+  def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory): FocusTrap = js.native
+  def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory, initialFocusEl: HTMLElement): FocusTrap = js.native
+  def isScrollable(): Boolean = js.native
+  def isScrollable(el: HTMLElement): Boolean = js.native
+  type MDCDialogFocusTrapFactory = js.Function2[/* element */ HTMLElement, /* options */ FocusOptions, FocusTrap]
 }
 

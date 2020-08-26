@@ -309,132 +309,266 @@ trait SchemaGroups extends js.Object {
 
 object SchemaGroups {
   @scala.inline
-  def apply(
-    allowExternalMembers: String = null,
-    allowGoogleCommunication: String = null,
-    allowWebPosting: String = null,
-    archiveOnly: String = null,
-    customFooterText: String = null,
-    customReplyTo: String = null,
-    customRolesEnabledForSettingsToBeMerged: String = null,
-    defaultMessageDenyNotificationText: String = null,
-    description: String = null,
-    email: String = null,
-    enableCollaborativeInbox: String = null,
-    favoriteRepliesOnTop: String = null,
-    includeCustomFooter: String = null,
-    includeInGlobalAddressList: String = null,
-    isArchived: String = null,
-    kind: String = null,
-    maxMessageBytes: js.UndefOr[Double] = js.undefined,
-    membersCanPostAsTheGroup: String = null,
-    messageDisplayFont: String = null,
-    messageModerationLevel: String = null,
-    name: String = null,
-    primaryLanguage: String = null,
-    replyTo: String = null,
-    sendMessageDenyNotification: String = null,
-    showInGroupDirectory: String = null,
-    spamModerationLevel: String = null,
-    whoCanAdd: String = null,
-    whoCanAddReferences: String = null,
-    whoCanApproveMembers: String = null,
-    whoCanApproveMessages: String = null,
-    whoCanAssignTopics: String = null,
-    whoCanAssistContent: String = null,
-    whoCanBanUsers: String = null,
-    whoCanContactOwner: String = null,
-    whoCanDeleteAnyPost: String = null,
-    whoCanDeleteTopics: String = null,
-    whoCanDiscoverGroup: String = null,
-    whoCanEnterFreeFormTags: String = null,
-    whoCanHideAbuse: String = null,
-    whoCanInvite: String = null,
-    whoCanJoin: String = null,
-    whoCanLeaveGroup: String = null,
-    whoCanLockTopics: String = null,
-    whoCanMakeTopicsSticky: String = null,
-    whoCanMarkDuplicate: String = null,
-    whoCanMarkFavoriteReplyOnAnyTopic: String = null,
-    whoCanMarkFavoriteReplyOnOwnTopic: String = null,
-    whoCanMarkNoResponseNeeded: String = null,
-    whoCanModerateContent: String = null,
-    whoCanModerateMembers: String = null,
-    whoCanModifyMembers: String = null,
-    whoCanModifyTagsAndCategories: String = null,
-    whoCanMoveTopicsIn: String = null,
-    whoCanMoveTopicsOut: String = null,
-    whoCanPostAnnouncements: String = null,
-    whoCanPostMessage: String = null,
-    whoCanTakeTopics: String = null,
-    whoCanUnassignTopic: String = null,
-    whoCanUnmarkFavoriteReplyOnAnyTopic: String = null,
-    whoCanViewGroup: String = null,
-    whoCanViewMembership: String = null
-  ): SchemaGroups = {
+  def apply(): SchemaGroups = {
     val __obj = js.Dynamic.literal()
-    if (allowExternalMembers != null) __obj.updateDynamic("allowExternalMembers")(allowExternalMembers.asInstanceOf[js.Any])
-    if (allowGoogleCommunication != null) __obj.updateDynamic("allowGoogleCommunication")(allowGoogleCommunication.asInstanceOf[js.Any])
-    if (allowWebPosting != null) __obj.updateDynamic("allowWebPosting")(allowWebPosting.asInstanceOf[js.Any])
-    if (archiveOnly != null) __obj.updateDynamic("archiveOnly")(archiveOnly.asInstanceOf[js.Any])
-    if (customFooterText != null) __obj.updateDynamic("customFooterText")(customFooterText.asInstanceOf[js.Any])
-    if (customReplyTo != null) __obj.updateDynamic("customReplyTo")(customReplyTo.asInstanceOf[js.Any])
-    if (customRolesEnabledForSettingsToBeMerged != null) __obj.updateDynamic("customRolesEnabledForSettingsToBeMerged")(customRolesEnabledForSettingsToBeMerged.asInstanceOf[js.Any])
-    if (defaultMessageDenyNotificationText != null) __obj.updateDynamic("defaultMessageDenyNotificationText")(defaultMessageDenyNotificationText.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (enableCollaborativeInbox != null) __obj.updateDynamic("enableCollaborativeInbox")(enableCollaborativeInbox.asInstanceOf[js.Any])
-    if (favoriteRepliesOnTop != null) __obj.updateDynamic("favoriteRepliesOnTop")(favoriteRepliesOnTop.asInstanceOf[js.Any])
-    if (includeCustomFooter != null) __obj.updateDynamic("includeCustomFooter")(includeCustomFooter.asInstanceOf[js.Any])
-    if (includeInGlobalAddressList != null) __obj.updateDynamic("includeInGlobalAddressList")(includeInGlobalAddressList.asInstanceOf[js.Any])
-    if (isArchived != null) __obj.updateDynamic("isArchived")(isArchived.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxMessageBytes)) __obj.updateDynamic("maxMessageBytes")(maxMessageBytes.get.asInstanceOf[js.Any])
-    if (membersCanPostAsTheGroup != null) __obj.updateDynamic("membersCanPostAsTheGroup")(membersCanPostAsTheGroup.asInstanceOf[js.Any])
-    if (messageDisplayFont != null) __obj.updateDynamic("messageDisplayFont")(messageDisplayFont.asInstanceOf[js.Any])
-    if (messageModerationLevel != null) __obj.updateDynamic("messageModerationLevel")(messageModerationLevel.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (primaryLanguage != null) __obj.updateDynamic("primaryLanguage")(primaryLanguage.asInstanceOf[js.Any])
-    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
-    if (sendMessageDenyNotification != null) __obj.updateDynamic("sendMessageDenyNotification")(sendMessageDenyNotification.asInstanceOf[js.Any])
-    if (showInGroupDirectory != null) __obj.updateDynamic("showInGroupDirectory")(showInGroupDirectory.asInstanceOf[js.Any])
-    if (spamModerationLevel != null) __obj.updateDynamic("spamModerationLevel")(spamModerationLevel.asInstanceOf[js.Any])
-    if (whoCanAdd != null) __obj.updateDynamic("whoCanAdd")(whoCanAdd.asInstanceOf[js.Any])
-    if (whoCanAddReferences != null) __obj.updateDynamic("whoCanAddReferences")(whoCanAddReferences.asInstanceOf[js.Any])
-    if (whoCanApproveMembers != null) __obj.updateDynamic("whoCanApproveMembers")(whoCanApproveMembers.asInstanceOf[js.Any])
-    if (whoCanApproveMessages != null) __obj.updateDynamic("whoCanApproveMessages")(whoCanApproveMessages.asInstanceOf[js.Any])
-    if (whoCanAssignTopics != null) __obj.updateDynamic("whoCanAssignTopics")(whoCanAssignTopics.asInstanceOf[js.Any])
-    if (whoCanAssistContent != null) __obj.updateDynamic("whoCanAssistContent")(whoCanAssistContent.asInstanceOf[js.Any])
-    if (whoCanBanUsers != null) __obj.updateDynamic("whoCanBanUsers")(whoCanBanUsers.asInstanceOf[js.Any])
-    if (whoCanContactOwner != null) __obj.updateDynamic("whoCanContactOwner")(whoCanContactOwner.asInstanceOf[js.Any])
-    if (whoCanDeleteAnyPost != null) __obj.updateDynamic("whoCanDeleteAnyPost")(whoCanDeleteAnyPost.asInstanceOf[js.Any])
-    if (whoCanDeleteTopics != null) __obj.updateDynamic("whoCanDeleteTopics")(whoCanDeleteTopics.asInstanceOf[js.Any])
-    if (whoCanDiscoverGroup != null) __obj.updateDynamic("whoCanDiscoverGroup")(whoCanDiscoverGroup.asInstanceOf[js.Any])
-    if (whoCanEnterFreeFormTags != null) __obj.updateDynamic("whoCanEnterFreeFormTags")(whoCanEnterFreeFormTags.asInstanceOf[js.Any])
-    if (whoCanHideAbuse != null) __obj.updateDynamic("whoCanHideAbuse")(whoCanHideAbuse.asInstanceOf[js.Any])
-    if (whoCanInvite != null) __obj.updateDynamic("whoCanInvite")(whoCanInvite.asInstanceOf[js.Any])
-    if (whoCanJoin != null) __obj.updateDynamic("whoCanJoin")(whoCanJoin.asInstanceOf[js.Any])
-    if (whoCanLeaveGroup != null) __obj.updateDynamic("whoCanLeaveGroup")(whoCanLeaveGroup.asInstanceOf[js.Any])
-    if (whoCanLockTopics != null) __obj.updateDynamic("whoCanLockTopics")(whoCanLockTopics.asInstanceOf[js.Any])
-    if (whoCanMakeTopicsSticky != null) __obj.updateDynamic("whoCanMakeTopicsSticky")(whoCanMakeTopicsSticky.asInstanceOf[js.Any])
-    if (whoCanMarkDuplicate != null) __obj.updateDynamic("whoCanMarkDuplicate")(whoCanMarkDuplicate.asInstanceOf[js.Any])
-    if (whoCanMarkFavoriteReplyOnAnyTopic != null) __obj.updateDynamic("whoCanMarkFavoriteReplyOnAnyTopic")(whoCanMarkFavoriteReplyOnAnyTopic.asInstanceOf[js.Any])
-    if (whoCanMarkFavoriteReplyOnOwnTopic != null) __obj.updateDynamic("whoCanMarkFavoriteReplyOnOwnTopic")(whoCanMarkFavoriteReplyOnOwnTopic.asInstanceOf[js.Any])
-    if (whoCanMarkNoResponseNeeded != null) __obj.updateDynamic("whoCanMarkNoResponseNeeded")(whoCanMarkNoResponseNeeded.asInstanceOf[js.Any])
-    if (whoCanModerateContent != null) __obj.updateDynamic("whoCanModerateContent")(whoCanModerateContent.asInstanceOf[js.Any])
-    if (whoCanModerateMembers != null) __obj.updateDynamic("whoCanModerateMembers")(whoCanModerateMembers.asInstanceOf[js.Any])
-    if (whoCanModifyMembers != null) __obj.updateDynamic("whoCanModifyMembers")(whoCanModifyMembers.asInstanceOf[js.Any])
-    if (whoCanModifyTagsAndCategories != null) __obj.updateDynamic("whoCanModifyTagsAndCategories")(whoCanModifyTagsAndCategories.asInstanceOf[js.Any])
-    if (whoCanMoveTopicsIn != null) __obj.updateDynamic("whoCanMoveTopicsIn")(whoCanMoveTopicsIn.asInstanceOf[js.Any])
-    if (whoCanMoveTopicsOut != null) __obj.updateDynamic("whoCanMoveTopicsOut")(whoCanMoveTopicsOut.asInstanceOf[js.Any])
-    if (whoCanPostAnnouncements != null) __obj.updateDynamic("whoCanPostAnnouncements")(whoCanPostAnnouncements.asInstanceOf[js.Any])
-    if (whoCanPostMessage != null) __obj.updateDynamic("whoCanPostMessage")(whoCanPostMessage.asInstanceOf[js.Any])
-    if (whoCanTakeTopics != null) __obj.updateDynamic("whoCanTakeTopics")(whoCanTakeTopics.asInstanceOf[js.Any])
-    if (whoCanUnassignTopic != null) __obj.updateDynamic("whoCanUnassignTopic")(whoCanUnassignTopic.asInstanceOf[js.Any])
-    if (whoCanUnmarkFavoriteReplyOnAnyTopic != null) __obj.updateDynamic("whoCanUnmarkFavoriteReplyOnAnyTopic")(whoCanUnmarkFavoriteReplyOnAnyTopic.asInstanceOf[js.Any])
-    if (whoCanViewGroup != null) __obj.updateDynamic("whoCanViewGroup")(whoCanViewGroup.asInstanceOf[js.Any])
-    if (whoCanViewMembership != null) __obj.updateDynamic("whoCanViewMembership")(whoCanViewMembership.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGroups]
   }
+  @scala.inline
+  implicit class SchemaGroupsOps[Self <: SchemaGroups] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowExternalMembers(value: String): Self = this.set("allowExternalMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowExternalMembers: Self = this.set("allowExternalMembers", js.undefined)
+    @scala.inline
+    def setAllowGoogleCommunication(value: String): Self = this.set("allowGoogleCommunication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowGoogleCommunication: Self = this.set("allowGoogleCommunication", js.undefined)
+    @scala.inline
+    def setAllowWebPosting(value: String): Self = this.set("allowWebPosting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowWebPosting: Self = this.set("allowWebPosting", js.undefined)
+    @scala.inline
+    def setArchiveOnly(value: String): Self = this.set("archiveOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveOnly: Self = this.set("archiveOnly", js.undefined)
+    @scala.inline
+    def setCustomFooterText(value: String): Self = this.set("customFooterText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomFooterText: Self = this.set("customFooterText", js.undefined)
+    @scala.inline
+    def setCustomReplyTo(value: String): Self = this.set("customReplyTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomReplyTo: Self = this.set("customReplyTo", js.undefined)
+    @scala.inline
+    def setCustomRolesEnabledForSettingsToBeMerged(value: String): Self = this.set("customRolesEnabledForSettingsToBeMerged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomRolesEnabledForSettingsToBeMerged: Self = this.set("customRolesEnabledForSettingsToBeMerged", js.undefined)
+    @scala.inline
+    def setDefaultMessageDenyNotificationText(value: String): Self = this.set("defaultMessageDenyNotificationText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultMessageDenyNotificationText: Self = this.set("defaultMessageDenyNotificationText", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setEnableCollaborativeInbox(value: String): Self = this.set("enableCollaborativeInbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableCollaborativeInbox: Self = this.set("enableCollaborativeInbox", js.undefined)
+    @scala.inline
+    def setFavoriteRepliesOnTop(value: String): Self = this.set("favoriteRepliesOnTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFavoriteRepliesOnTop: Self = this.set("favoriteRepliesOnTop", js.undefined)
+    @scala.inline
+    def setIncludeCustomFooter(value: String): Self = this.set("includeCustomFooter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeCustomFooter: Self = this.set("includeCustomFooter", js.undefined)
+    @scala.inline
+    def setIncludeInGlobalAddressList(value: String): Self = this.set("includeInGlobalAddressList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeInGlobalAddressList: Self = this.set("includeInGlobalAddressList", js.undefined)
+    @scala.inline
+    def setIsArchived(value: String): Self = this.set("isArchived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsArchived: Self = this.set("isArchived", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMaxMessageBytes(value: Double): Self = this.set("maxMessageBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxMessageBytes: Self = this.set("maxMessageBytes", js.undefined)
+    @scala.inline
+    def setMembersCanPostAsTheGroup(value: String): Self = this.set("membersCanPostAsTheGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMembersCanPostAsTheGroup: Self = this.set("membersCanPostAsTheGroup", js.undefined)
+    @scala.inline
+    def setMessageDisplayFont(value: String): Self = this.set("messageDisplayFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageDisplayFont: Self = this.set("messageDisplayFont", js.undefined)
+    @scala.inline
+    def setMessageModerationLevel(value: String): Self = this.set("messageModerationLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageModerationLevel: Self = this.set("messageModerationLevel", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPrimaryLanguage(value: String): Self = this.set("primaryLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryLanguage: Self = this.set("primaryLanguage", js.undefined)
+    @scala.inline
+    def setReplyTo(value: String): Self = this.set("replyTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplyTo: Self = this.set("replyTo", js.undefined)
+    @scala.inline
+    def setSendMessageDenyNotification(value: String): Self = this.set("sendMessageDenyNotification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendMessageDenyNotification: Self = this.set("sendMessageDenyNotification", js.undefined)
+    @scala.inline
+    def setShowInGroupDirectory(value: String): Self = this.set("showInGroupDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowInGroupDirectory: Self = this.set("showInGroupDirectory", js.undefined)
+    @scala.inline
+    def setSpamModerationLevel(value: String): Self = this.set("spamModerationLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpamModerationLevel: Self = this.set("spamModerationLevel", js.undefined)
+    @scala.inline
+    def setWhoCanAdd(value: String): Self = this.set("whoCanAdd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanAdd: Self = this.set("whoCanAdd", js.undefined)
+    @scala.inline
+    def setWhoCanAddReferences(value: String): Self = this.set("whoCanAddReferences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanAddReferences: Self = this.set("whoCanAddReferences", js.undefined)
+    @scala.inline
+    def setWhoCanApproveMembers(value: String): Self = this.set("whoCanApproveMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanApproveMembers: Self = this.set("whoCanApproveMembers", js.undefined)
+    @scala.inline
+    def setWhoCanApproveMessages(value: String): Self = this.set("whoCanApproveMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanApproveMessages: Self = this.set("whoCanApproveMessages", js.undefined)
+    @scala.inline
+    def setWhoCanAssignTopics(value: String): Self = this.set("whoCanAssignTopics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanAssignTopics: Self = this.set("whoCanAssignTopics", js.undefined)
+    @scala.inline
+    def setWhoCanAssistContent(value: String): Self = this.set("whoCanAssistContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanAssistContent: Self = this.set("whoCanAssistContent", js.undefined)
+    @scala.inline
+    def setWhoCanBanUsers(value: String): Self = this.set("whoCanBanUsers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanBanUsers: Self = this.set("whoCanBanUsers", js.undefined)
+    @scala.inline
+    def setWhoCanContactOwner(value: String): Self = this.set("whoCanContactOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanContactOwner: Self = this.set("whoCanContactOwner", js.undefined)
+    @scala.inline
+    def setWhoCanDeleteAnyPost(value: String): Self = this.set("whoCanDeleteAnyPost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanDeleteAnyPost: Self = this.set("whoCanDeleteAnyPost", js.undefined)
+    @scala.inline
+    def setWhoCanDeleteTopics(value: String): Self = this.set("whoCanDeleteTopics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanDeleteTopics: Self = this.set("whoCanDeleteTopics", js.undefined)
+    @scala.inline
+    def setWhoCanDiscoverGroup(value: String): Self = this.set("whoCanDiscoverGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanDiscoverGroup: Self = this.set("whoCanDiscoverGroup", js.undefined)
+    @scala.inline
+    def setWhoCanEnterFreeFormTags(value: String): Self = this.set("whoCanEnterFreeFormTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanEnterFreeFormTags: Self = this.set("whoCanEnterFreeFormTags", js.undefined)
+    @scala.inline
+    def setWhoCanHideAbuse(value: String): Self = this.set("whoCanHideAbuse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanHideAbuse: Self = this.set("whoCanHideAbuse", js.undefined)
+    @scala.inline
+    def setWhoCanInvite(value: String): Self = this.set("whoCanInvite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanInvite: Self = this.set("whoCanInvite", js.undefined)
+    @scala.inline
+    def setWhoCanJoin(value: String): Self = this.set("whoCanJoin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanJoin: Self = this.set("whoCanJoin", js.undefined)
+    @scala.inline
+    def setWhoCanLeaveGroup(value: String): Self = this.set("whoCanLeaveGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanLeaveGroup: Self = this.set("whoCanLeaveGroup", js.undefined)
+    @scala.inline
+    def setWhoCanLockTopics(value: String): Self = this.set("whoCanLockTopics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanLockTopics: Self = this.set("whoCanLockTopics", js.undefined)
+    @scala.inline
+    def setWhoCanMakeTopicsSticky(value: String): Self = this.set("whoCanMakeTopicsSticky", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanMakeTopicsSticky: Self = this.set("whoCanMakeTopicsSticky", js.undefined)
+    @scala.inline
+    def setWhoCanMarkDuplicate(value: String): Self = this.set("whoCanMarkDuplicate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanMarkDuplicate: Self = this.set("whoCanMarkDuplicate", js.undefined)
+    @scala.inline
+    def setWhoCanMarkFavoriteReplyOnAnyTopic(value: String): Self = this.set("whoCanMarkFavoriteReplyOnAnyTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanMarkFavoriteReplyOnAnyTopic: Self = this.set("whoCanMarkFavoriteReplyOnAnyTopic", js.undefined)
+    @scala.inline
+    def setWhoCanMarkFavoriteReplyOnOwnTopic(value: String): Self = this.set("whoCanMarkFavoriteReplyOnOwnTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanMarkFavoriteReplyOnOwnTopic: Self = this.set("whoCanMarkFavoriteReplyOnOwnTopic", js.undefined)
+    @scala.inline
+    def setWhoCanMarkNoResponseNeeded(value: String): Self = this.set("whoCanMarkNoResponseNeeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanMarkNoResponseNeeded: Self = this.set("whoCanMarkNoResponseNeeded", js.undefined)
+    @scala.inline
+    def setWhoCanModerateContent(value: String): Self = this.set("whoCanModerateContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanModerateContent: Self = this.set("whoCanModerateContent", js.undefined)
+    @scala.inline
+    def setWhoCanModerateMembers(value: String): Self = this.set("whoCanModerateMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanModerateMembers: Self = this.set("whoCanModerateMembers", js.undefined)
+    @scala.inline
+    def setWhoCanModifyMembers(value: String): Self = this.set("whoCanModifyMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanModifyMembers: Self = this.set("whoCanModifyMembers", js.undefined)
+    @scala.inline
+    def setWhoCanModifyTagsAndCategories(value: String): Self = this.set("whoCanModifyTagsAndCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanModifyTagsAndCategories: Self = this.set("whoCanModifyTagsAndCategories", js.undefined)
+    @scala.inline
+    def setWhoCanMoveTopicsIn(value: String): Self = this.set("whoCanMoveTopicsIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanMoveTopicsIn: Self = this.set("whoCanMoveTopicsIn", js.undefined)
+    @scala.inline
+    def setWhoCanMoveTopicsOut(value: String): Self = this.set("whoCanMoveTopicsOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanMoveTopicsOut: Self = this.set("whoCanMoveTopicsOut", js.undefined)
+    @scala.inline
+    def setWhoCanPostAnnouncements(value: String): Self = this.set("whoCanPostAnnouncements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanPostAnnouncements: Self = this.set("whoCanPostAnnouncements", js.undefined)
+    @scala.inline
+    def setWhoCanPostMessage(value: String): Self = this.set("whoCanPostMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanPostMessage: Self = this.set("whoCanPostMessage", js.undefined)
+    @scala.inline
+    def setWhoCanTakeTopics(value: String): Self = this.set("whoCanTakeTopics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanTakeTopics: Self = this.set("whoCanTakeTopics", js.undefined)
+    @scala.inline
+    def setWhoCanUnassignTopic(value: String): Self = this.set("whoCanUnassignTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanUnassignTopic: Self = this.set("whoCanUnassignTopic", js.undefined)
+    @scala.inline
+    def setWhoCanUnmarkFavoriteReplyOnAnyTopic(value: String): Self = this.set("whoCanUnmarkFavoriteReplyOnAnyTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanUnmarkFavoriteReplyOnAnyTopic: Self = this.set("whoCanUnmarkFavoriteReplyOnAnyTopic", js.undefined)
+    @scala.inline
+    def setWhoCanViewGroup(value: String): Self = this.set("whoCanViewGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanViewGroup: Self = this.set("whoCanViewGroup", js.undefined)
+    @scala.inline
+    def setWhoCanViewMembership(value: String): Self = this.set("whoCanViewMembership", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhoCanViewMembership: Self = this.set("whoCanViewMembership", js.undefined)
+  }
+  
 }
 

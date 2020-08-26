@@ -4,20 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RNFetchBlobFetchRepsonse extends js.Object {
-  var bodyUsed: Boolean
-  var headers: js.Any
-  var ok: Boolean
-  var resp: FetchBlobResponse
-  var rnfbResp: FetchBlobResponse
-  var rnfbRespInfo: RNFetchBlobResponseInfo
-  var status: Double
-  var `type`: String
-  def arrayBuffer(): js.Promise[js.Array[_]]
-  def blob(): js.Promise[PolyfillBlob]
-  def json(): js.Promise[_]
-  def rawResp(): js.Promise[FetchBlobResponse]
-  def text(): js.Promise[String]
+  var bodyUsed: Boolean = js.native
+  var headers: js.Any = js.native
+  var ok: Boolean = js.native
+  var resp: FetchBlobResponse = js.native
+  var rnfbResp: FetchBlobResponse = js.native
+  var rnfbRespInfo: RNFetchBlobResponseInfo = js.native
+  var status: Double = js.native
+  var `type`: String = js.native
+  def arrayBuffer(): js.Promise[js.Array[_]] = js.native
+  def blob(): js.Promise[PolyfillBlob] = js.native
+  def json(): js.Promise[_] = js.native
+  def rawResp(): js.Promise[FetchBlobResponse] = js.native
+  def text(): js.Promise[String] = js.native
 }
 
 object RNFetchBlobFetchRepsonse {
@@ -41,5 +42,44 @@ object RNFetchBlobFetchRepsonse {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RNFetchBlobFetchRepsonse]
   }
+  @scala.inline
+  implicit class RNFetchBlobFetchRepsonseOps[Self <: RNFetchBlobFetchRepsonse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrayBuffer(value: () => js.Promise[js.Array[_]]): Self = this.set("arrayBuffer", js.Any.fromFunction0(value))
+    @scala.inline
+    def setBlob(value: () => js.Promise[PolyfillBlob]): Self = this.set("blob", js.Any.fromFunction0(value))
+    @scala.inline
+    def setBodyUsed(value: Boolean): Self = this.set("bodyUsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJson(value: () => js.Promise[_]): Self = this.set("json", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOk(value: Boolean): Self = this.set("ok", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRawResp(value: () => js.Promise[FetchBlobResponse]): Self = this.set("rawResp", js.Any.fromFunction0(value))
+    @scala.inline
+    def setResp(value: FetchBlobResponse): Self = this.set("resp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRnfbResp(value: FetchBlobResponse): Self = this.set("rnfbResp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRnfbRespInfo(value: RNFetchBlobResponseInfo): Self = this.set("rnfbRespInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: () => js.Promise[String]): Self = this.set("text", js.Any.fromFunction0(value))
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

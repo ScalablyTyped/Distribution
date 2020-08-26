@@ -33,12 +33,6 @@ object SpatialDataService extends js.Object {
       */
     def this(propertyName: String, operator: String, value: js.Any) = this()
     def this(propertyName: String, operator: FilterCompareOperator, value: js.Any) = this()
-    /**
-      * Executes the filter logic against a JSON object and returns a boolean indicating if the object meets the requirements of the Filter.
-      * @returns A boolean indicating if the specified object meets the requirements of the Filter.
-      */
-    /* CompleteClass */
-    override def execute(`object`: js.Any): Boolean = js.native
   }
   
   @js.native
@@ -53,12 +47,6 @@ object SpatialDataService extends js.Object {
       */
     def this(filters: js.Array[IFilter], operator: FilterLogicalOperator) = this()
     def this(filters: js.Array[IFilter], operator: FilterLogicalOperator, not: Boolean) = this()
-    /**
-      * Executes the filter logic against a JSON object and returns a boolean indicating if the object meets the requirements of the Filter.
-      * @returns A boolean indicating if the specified object meets the requirements of the Filter.
-      */
-    /* CompleteClass */
-    override def execute(`object`: js.Any): Boolean = js.native
   }
   
   @js.native
@@ -104,6 +92,18 @@ object SpatialDataService extends js.Object {
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
+      styles: js.UndefOr[scala.Nothing],
+      errorCallback: js.Function2[
+          /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
+          /* networkStatus */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Unit = js.native
+    def getBoundary(
+      locations: String,
+      request: IGetBoundaryRequestOptions,
+      credentials: String,
+      callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = js.native
     def getBoundary(
@@ -129,6 +129,18 @@ object SpatialDataService extends js.Object {
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
+      styles: js.UndefOr[scala.Nothing],
+      errorCallback: js.Function2[
+          /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
+          /* networkStatus */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Unit = js.native
+    def getBoundary(
+      locations: String,
+      request: IGetBoundaryRequestOptions,
+      credentials: typings.bingmaps.Microsoft.Maps.Map,
+      callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = js.native
     def getBoundary(
@@ -154,6 +166,18 @@ object SpatialDataService extends js.Object {
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
+      styles: js.UndefOr[scala.Nothing],
+      errorCallback: js.Function2[
+          /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
+          /* networkStatus */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Unit = js.native
+    def getBoundary(
+      locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
+      request: IGetBoundaryRequestOptions,
+      credentials: String,
+      callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = js.native
     def getBoundary(
@@ -173,6 +197,18 @@ object SpatialDataService extends js.Object {
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
+    ): Unit = js.native
+    def getBoundary(
+      locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
+      request: IGetBoundaryRequestOptions,
+      credentials: typings.bingmaps.Microsoft.Maps.Map,
+      callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
+      styles: js.UndefOr[scala.Nothing],
+      errorCallback: js.Function2[
+          /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
+          /* networkStatus */ js.UndefOr[String], 
+          Unit
+        ]
     ): Unit = js.native
     def getBoundary(
       locations: js.Array[String | typings.bingmaps.Microsoft.Maps.Location],
@@ -204,6 +240,18 @@ object SpatialDataService extends js.Object {
       request: IGetBoundaryRequestOptions,
       credentials: String,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
+      styles: js.UndefOr[scala.Nothing],
+      errorCallback: js.Function2[
+          /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
+          /* networkStatus */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Unit = js.native
+    def getBoundary(
+      locations: typings.bingmaps.Microsoft.Maps.Location,
+      request: IGetBoundaryRequestOptions,
+      credentials: String,
+      callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
       styles: IPolygonOptions
     ): Unit = js.native
     def getBoundary(
@@ -223,6 +271,18 @@ object SpatialDataService extends js.Object {
       request: IGetBoundaryRequestOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function1[/* results */ IGeoDataResultSet, Unit]
+    ): Unit = js.native
+    def getBoundary(
+      locations: typings.bingmaps.Microsoft.Maps.Location,
+      request: IGetBoundaryRequestOptions,
+      credentials: typings.bingmaps.Microsoft.Maps.Map,
+      callback: js.Function1[/* results */ IGeoDataResultSet, Unit],
+      styles: js.UndefOr[scala.Nothing],
+      errorCallback: js.Function2[
+          /* callbackState */ js.UndefOr[String | typings.bingmaps.Microsoft.Maps.Location], 
+          /* networkStatus */ js.UndefOr[String], 
+          Unit
+        ]
     ): Unit = js.native
     def getBoundary(
       locations: typings.bingmaps.Microsoft.Maps.Location,
@@ -256,6 +316,13 @@ object SpatialDataService extends js.Object {
       queryOptions: IQueryAPIOptions,
       credentials: String,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
+      styles: js.UndefOr[scala.Nothing],
+      errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
+    ): Unit = js.native
+    def search(
+      queryOptions: IQueryAPIOptions,
+      credentials: String,
+      callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
       styles: IStylesOptions
     ): Unit = js.native
     def search(
@@ -269,6 +336,13 @@ object SpatialDataService extends js.Object {
       queryOptions: IQueryAPIOptions,
       credentials: typings.bingmaps.Microsoft.Maps.Map,
       callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit]
+    ): Unit = js.native
+    def search(
+      queryOptions: IQueryAPIOptions,
+      credentials: typings.bingmaps.Microsoft.Maps.Map,
+      callback: js.Function2[/* data */ js.Array[IPrimitive], /* inlineCount */ js.UndefOr[Double], Unit],
+      styles: js.UndefOr[scala.Nothing],
+      errorCallback: js.Function2[/* networkStatus */ js.UndefOr[String], /* statusMessage */ js.UndefOr[String], Unit]
     ): Unit = js.native
     def search(
       queryOptions: IQueryAPIOptions,

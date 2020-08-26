@@ -24,8 +24,50 @@ trait HoneyBadgerInstance extends EventEmitter {
   def factory(): HoneyBadgerInstance = js.native
   def factory(options: ConfigureOptions): HoneyBadgerInstance = js.native
   def lambdaHandler(handler: LambdaHandler): LambdaHandler = js.native
+  def notify(
+    err: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    extra: js.UndefOr[scala.Nothing],
+    callback: CallbackFunction
+  ): Unit = js.native
+  def notify(err: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], extra: CallbackFunction): Unit = js.native
+  def notify(
+    err: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    extra: CallbackFunction,
+    callback: CallbackFunction
+  ): Unit = js.native
+  def notify(err: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], extra: metadata): Unit = js.native
+  def notify(
+    err: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    extra: metadata,
+    callback: CallbackFunction
+  ): Unit = js.native
+  def notify(err: js.UndefOr[scala.Nothing], name: js.Any): Unit = js.native
+  def notify(
+    err: js.UndefOr[scala.Nothing],
+    name: js.Any,
+    extra: js.UndefOr[scala.Nothing],
+    callback: CallbackFunction
+  ): Unit = js.native
+  def notify(err: js.UndefOr[scala.Nothing], name: js.Any, extra: CallbackFunction): Unit = js.native
+  def notify(err: js.UndefOr[scala.Nothing], name: js.Any, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
+  def notify(err: js.UndefOr[scala.Nothing], name: js.Any, extra: metadata): Unit = js.native
+  def notify(err: js.UndefOr[scala.Nothing], name: js.Any, extra: metadata, callback: CallbackFunction): Unit = js.native
   def notify(err: js.Any): Unit = js.native
+  def notify(
+    err: js.Any,
+    name: js.UndefOr[scala.Nothing],
+    extra: js.UndefOr[scala.Nothing],
+    callback: CallbackFunction
+  ): Unit = js.native
+  def notify(err: js.Any, name: js.UndefOr[scala.Nothing], extra: CallbackFunction): Unit = js.native
+  def notify(err: js.Any, name: js.UndefOr[scala.Nothing], extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
+  def notify(err: js.Any, name: js.UndefOr[scala.Nothing], extra: metadata): Unit = js.native
+  def notify(err: js.Any, name: js.UndefOr[scala.Nothing], extra: metadata, callback: CallbackFunction): Unit = js.native
   def notify(err: js.Any, name: js.Any): Unit = js.native
+  def notify(err: js.Any, name: js.Any, extra: js.UndefOr[scala.Nothing], callback: CallbackFunction): Unit = js.native
   def notify(err: js.Any, name: js.Any, extra: CallbackFunction): Unit = js.native
   def notify(err: js.Any, name: js.Any, extra: CallbackFunction, callback: CallbackFunction): Unit = js.native
   def notify(err: js.Any, name: js.Any, extra: metadata): Unit = js.native

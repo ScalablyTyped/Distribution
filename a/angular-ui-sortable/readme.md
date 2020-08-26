@@ -12,7 +12,7 @@ This directive allows you to jQueryUI Sortable.
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 15 |
-| # downloads        | 1088141 |
+| # downloads        | 1118395 |
 | # stars            | 2 |
 
 ## Links

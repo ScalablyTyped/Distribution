@@ -4,53 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RTCOutboundRTPStreamStats extends RTCRTPStreamStats {
-  var bytesSent: js.UndefOr[Double] = js.undefined
-  var packetsSent: js.UndefOr[Double] = js.undefined
-  var roundTripTime: js.UndefOr[Double] = js.undefined
-  var targetBitrate: js.UndefOr[Double] = js.undefined
+  var bytesSent: js.UndefOr[Double] = js.native
+  var packetsSent: js.UndefOr[Double] = js.native
+  var roundTripTime: js.UndefOr[Double] = js.native
+  var targetBitrate: js.UndefOr[Double] = js.native
 }
 
 object RTCOutboundRTPStreamStats {
   @scala.inline
-  def apply(
-    id: java.lang.String,
-    timestamp: Double,
-    `type`: RTCStatsType,
-    associateStatsId: java.lang.String = null,
-    bytesSent: js.UndefOr[Double] = js.undefined,
-    codecId: java.lang.String = null,
-    firCount: js.UndefOr[Double] = js.undefined,
-    isRemote: js.UndefOr[scala.Boolean] = js.undefined,
-    mediaTrackId: java.lang.String = null,
-    mediaType: java.lang.String = null,
-    nackCount: js.UndefOr[Double] = js.undefined,
-    packetsSent: js.UndefOr[Double] = js.undefined,
-    pliCount: js.UndefOr[Double] = js.undefined,
-    roundTripTime: js.UndefOr[Double] = js.undefined,
-    sliCount: js.UndefOr[Double] = js.undefined,
-    ssrc: java.lang.String = null,
-    targetBitrate: js.UndefOr[Double] = js.undefined,
-    transportId: java.lang.String = null
-  ): RTCOutboundRTPStreamStats = {
+  def apply(id: java.lang.String, timestamp: Double, `type`: RTCStatsType): RTCOutboundRTPStreamStats = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (associateStatsId != null) __obj.updateDynamic("associateStatsId")(associateStatsId.asInstanceOf[js.Any])
-    if (!js.isUndefined(bytesSent)) __obj.updateDynamic("bytesSent")(bytesSent.get.asInstanceOf[js.Any])
-    if (codecId != null) __obj.updateDynamic("codecId")(codecId.asInstanceOf[js.Any])
-    if (!js.isUndefined(firCount)) __obj.updateDynamic("firCount")(firCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRemote)) __obj.updateDynamic("isRemote")(isRemote.get.asInstanceOf[js.Any])
-    if (mediaTrackId != null) __obj.updateDynamic("mediaTrackId")(mediaTrackId.asInstanceOf[js.Any])
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
-    if (!js.isUndefined(nackCount)) __obj.updateDynamic("nackCount")(nackCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(packetsSent)) __obj.updateDynamic("packetsSent")(packetsSent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pliCount)) __obj.updateDynamic("pliCount")(pliCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundTripTime)) __obj.updateDynamic("roundTripTime")(roundTripTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sliCount)) __obj.updateDynamic("sliCount")(sliCount.get.asInstanceOf[js.Any])
-    if (ssrc != null) __obj.updateDynamic("ssrc")(ssrc.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetBitrate)) __obj.updateDynamic("targetBitrate")(targetBitrate.get.asInstanceOf[js.Any])
-    if (transportId != null) __obj.updateDynamic("transportId")(transportId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCOutboundRTPStreamStats]
   }
+  @scala.inline
+  implicit class RTCOutboundRTPStreamStatsOps[Self <: RTCOutboundRTPStreamStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytesSent(value: Double): Self = this.set("bytesSent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesSent: Self = this.set("bytesSent", js.undefined)
+    @scala.inline
+    def setPacketsSent(value: Double): Self = this.set("packetsSent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePacketsSent: Self = this.set("packetsSent", js.undefined)
+    @scala.inline
+    def setRoundTripTime(value: Double): Self = this.set("roundTripTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoundTripTime: Self = this.set("roundTripTime", js.undefined)
+    @scala.inline
+    def setTargetBitrate(value: Double): Self = this.set("targetBitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetBitrate: Self = this.set("targetBitrate", js.undefined)
+  }
+  
 }
 

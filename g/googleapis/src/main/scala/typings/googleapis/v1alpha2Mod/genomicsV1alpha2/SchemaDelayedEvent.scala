@@ -27,11 +27,32 @@ trait SchemaDelayedEvent extends js.Object {
 
 object SchemaDelayedEvent {
   @scala.inline
-  def apply(cause: String = null, metrics: js.Array[String] = null): SchemaDelayedEvent = {
+  def apply(): SchemaDelayedEvent = {
     val __obj = js.Dynamic.literal()
-    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDelayedEvent]
   }
+  @scala.inline
+  implicit class SchemaDelayedEventOps[Self <: SchemaDelayedEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCause(value: String): Self = this.set("cause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCause: Self = this.set("cause", js.undefined)
+    @scala.inline
+    def setMetricsVarargs(value: String*): Self = this.set("metrics", js.Array(value :_*))
+    @scala.inline
+    def setMetrics(value: js.Array[String]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("metrics", js.undefined)
+  }
+  
 }
 

@@ -25,7 +25,34 @@ object memoryContentCacheMod extends js.Object {
     def registerPrefix(
       name: Name,
       onRegisterFailed: js.Function1[/* prefix */ Name, _],
+      onRegisterSuccess: js.UndefOr[scala.Nothing],
+      onDataNotFound: js.UndefOr[scala.Nothing],
+      flags: ForwardingFlags
+    ): Unit = js.native
+    def registerPrefix(
+      name: Name,
+      onRegisterFailed: js.Function1[/* prefix */ Name, _],
+      onRegisterSuccess: js.UndefOr[scala.Nothing],
+      onDataNotFound: OnInterestCallback
+    ): Unit = js.native
+    def registerPrefix(
+      name: Name,
+      onRegisterFailed: js.Function1[/* prefix */ Name, _],
+      onRegisterSuccess: js.UndefOr[scala.Nothing],
+      onDataNotFound: OnInterestCallback,
+      flags: ForwardingFlags
+    ): Unit = js.native
+    def registerPrefix(
+      name: Name,
+      onRegisterFailed: js.Function1[/* prefix */ Name, _],
       onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, _]
+    ): Unit = js.native
+    def registerPrefix(
+      name: Name,
+      onRegisterFailed: js.Function1[/* prefix */ Name, _],
+      onRegisterSuccess: js.Function2[/* prefix */ Name, /* registeredPrefixId */ Double, _],
+      onDataNotFound: js.UndefOr[scala.Nothing],
+      flags: ForwardingFlags
     ): Unit = js.native
     def registerPrefix(
       name: Name,

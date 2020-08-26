@@ -27,11 +27,30 @@ trait SchemaAccountAdwordsLink extends js.Object {
 
 object SchemaAccountAdwordsLink {
   @scala.inline
-  def apply(adwordsId: String = null, status: String = null): SchemaAccountAdwordsLink = {
+  def apply(): SchemaAccountAdwordsLink = {
     val __obj = js.Dynamic.literal()
-    if (adwordsId != null) __obj.updateDynamic("adwordsId")(adwordsId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountAdwordsLink]
   }
+  @scala.inline
+  implicit class SchemaAccountAdwordsLinkOps[Self <: SchemaAccountAdwordsLink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdwordsId(value: String): Self = this.set("adwordsId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdwordsId: Self = this.set("adwordsId", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

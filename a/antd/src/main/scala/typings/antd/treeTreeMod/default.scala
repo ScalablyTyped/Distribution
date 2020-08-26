@@ -7,10 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd/lib/tree/Tree", JSImport.Default)
 @js.native
-object default extends TopLevel[CompoundedComponent] {
-  @js.native
-  class TreeNode ()
-    extends typings.rcTree.mod.TreeNode
-  
-}
+object default extends TopLevel[CompoundedComponent]
 

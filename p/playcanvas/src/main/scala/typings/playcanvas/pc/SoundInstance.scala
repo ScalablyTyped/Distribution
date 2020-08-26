@@ -100,7 +100,7 @@ trait SoundInstance extends EventHandler {
   def pause(): Boolean = js.native
   /**
     * Begins playback of sound. If the sound is not loaded this will return false.
-    If the sound is already playing this will restart the sound.
+    * If the sound is already playing this will restart the sound.
     * @returns True if the sound was started.
     */
   def play(): Boolean = js.native
@@ -111,20 +111,20 @@ trait SoundInstance extends EventHandler {
   def resume(): Boolean = js.native
   /**
     * Connects external Web Audio API nodes. You need to pass
-    the first node of the node graph that you created externally and the last node of that graph. The first
-    node will be connected to the audio source and the last node will be connected to the destination of the
-    AudioContext (e.g. speakers). Requires Web Audio API support.
+    * the first node of the node graph that you created externally and the last node of that graph. The first
+    * node will be connected to the audio source and the last node will be connected to the destination of the
+    * AudioContext (e.g. speakers). Requires Web Audio API support.
     * @example
     * var context = app.systems.sound.context;
-    var analyzer = context.createAnalyzer();
-    var distortion = context.createWaveShaper();
-    var filter = context.createBiquadFilter();
-    analyzer.connect(distortion);
-    distortion.connect(filter);
-    instance.setExternalNodes(analyzer, filter);
+    * var analyzer = context.createAnalyzer();
+    * var distortion = context.createWaveShaper();
+    * var filter = context.createBiquadFilter();
+    * analyzer.connect(distortion);
+    * distortion.connect(filter);
+    * instance.setExternalNodes(analyzer, filter);
     * @param firstNode - The first node that will be connected to the audio source of sound instances.
     * @param [lastNode] - The last node that will be connected to the destination of the AudioContext.
-    If unspecified then the firstNode will be connected to the destination instead.
+    * If unspecified then the firstNode will be connected to the destination instead.
     */
   def setExternalNodes(firstNode: AudioNode): Unit = js.native
   def setExternalNodes(firstNode: AudioNode, lastNode: AudioNode): Unit = js.native

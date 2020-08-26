@@ -1,14 +1,13 @@
 package typings.androiduix.android.view.animation
 
 import typings.androiduix.android.graphics.Matrix
-import typings.androiduix.java.lang.StringBuilder
+import typings.androiduix.java_.lang.StringBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.animation.Transformation")
 @js.native
-class Transformation () extends js.Object {
+trait Transformation extends js.Object {
   var mAlpha: Double = js.native
   var mMatrix: Matrix = js.native
   var mTransformationType: Double = js.native
@@ -23,15 +22,5 @@ class Transformation () extends js.Object {
   def setTransformationType(transformationType: Double): Unit = js.native
   def toShortString(): Unit = js.native
   def toShortString(sb: StringBuilder): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("android.view.animation.Transformation")
-@js.native
-object Transformation extends js.Object {
-  var TYPE_ALPHA: Double = js.native
-  var TYPE_BOTH: Double = js.native
-  var TYPE_IDENTITY: Double = js.native
-  var TYPE_MATRIX: Double = js.native
 }
 

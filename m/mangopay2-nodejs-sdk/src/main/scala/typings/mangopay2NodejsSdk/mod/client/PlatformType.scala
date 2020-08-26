@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.ValueOf<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.IPlatformType> */
 /* Rewritten from type alias, can be one of: 
+  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_LOAN
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified
-  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_REWARD
-  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE
-  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_DONATION
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_EQUITY
+  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_REWARD
+  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_DONATION
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.P2P_PAYMENT
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER
-  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_LOAN
+  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE
 */
 trait PlatformType extends js.Object
 

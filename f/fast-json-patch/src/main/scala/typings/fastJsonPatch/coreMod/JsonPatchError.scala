@@ -15,9 +15,9 @@ object JsonPatchError
       Instantiable5[
         /* message */ String, 
         /* name */ JsonPatchErrorName, 
-        js.UndefOr[/* index */ Double], 
-        js.UndefOr[/* operation */ js.Any], 
-        js.UndefOr[/* tree */ js.Any], 
+        /* index */ js.UndefOr[Double], 
+        /* operation */ js.UndefOr[js.Any], 
+        /* tree */ js.UndefOr[js.Any], 
         PatchError
       ]
     ]

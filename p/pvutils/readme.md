@@ -11,7 +11,7 @@ Common utilities for products from Peculiar Ventures
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 17 |
-| # downloads        | 220397 |
+| # downloads        | 255596 |
 | # stars            | 0 |
 
 ## Links

@@ -36,6 +36,10 @@ object Interceptor extends js.Object {
     */
   def detachAll(): Unit = js.native
   /**
+    * Ensure any pending changes have been committed to memory.
+    */
+  def flush(): Unit = js.native
+  /**
     * Replaces function at `target` with implementation at `replacement`.
     *
     * May be implemented using e.g. `NativeCallback` or `CModule`.

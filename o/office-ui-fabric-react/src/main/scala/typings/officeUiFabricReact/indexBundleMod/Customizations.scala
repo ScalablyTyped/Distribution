@@ -33,6 +33,7 @@ object Customizations extends js.Object {
     */
   def applySettings(settings: ISettings): Unit = js.native
   def getSettings(properties: js.Array[String]): js.Any = js.native
+  def getSettings(properties: js.Array[String], scopeName: js.UndefOr[scala.Nothing], localSettings: ICustomizations): js.Any = js.native
   def getSettings(properties: js.Array[String], scopeName: String): js.Any = js.native
   def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): js.Any = js.native
   def observe(onChange: js.Function0[Unit]): Unit = js.native

@@ -26,16 +26,9 @@ object getItemCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GetItemInput) = this()
-    /* CompleteClass */
-    override val input: GetItemInput = js.native
     val middlewareStack: MiddlewareStack[GetItemInput, GetItemOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: DynamoDBResolvedConfiguration
-    ): Handler[GetItemInput, GetItemOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: DynamoDBResolvedConfiguration
     ): Handler[GetItemInput, GetItemOutput] = js.native
   }

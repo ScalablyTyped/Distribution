@@ -18,10 +18,30 @@ trait DeleteVpcEndpointsRequest extends js.Object {
 
 object DeleteVpcEndpointsRequest {
   @scala.inline
-  def apply(VpcEndpointIds: VpcEndpointIdList, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteVpcEndpointsRequest = {
+  def apply(VpcEndpointIds: VpcEndpointIdList): DeleteVpcEndpointsRequest = {
     val __obj = js.Dynamic.literal(VpcEndpointIds = VpcEndpointIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpcEndpointsRequest]
   }
+  @scala.inline
+  implicit class DeleteVpcEndpointsRequestOps[Self <: DeleteVpcEndpointsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpcEndpointIdsVarargs(value: VpcEndpointId*): Self = this.set("VpcEndpointIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcEndpointIds(value: VpcEndpointIdList): Self = this.set("VpcEndpointIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

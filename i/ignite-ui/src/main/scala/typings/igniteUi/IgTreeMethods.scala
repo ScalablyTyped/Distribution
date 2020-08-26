@@ -14,6 +14,7 @@ trait IgTreeMethods extends js.Object {
     * @param nodeIndex Specifies the index at which the nodes to be inserted.
     */
   def addNode(node: js.Object): Unit = js.native
+  def addNode(node: js.Object, parent: js.UndefOr[scala.Nothing], nodeIndex: Double): Unit = js.native
   def addNode(node: js.Object, parent: js.Object): Unit = js.native
   def addNode(node: js.Object, parent: js.Object, nodeIndex: Double): Unit = js.native
   /**

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "contentful-resolve-response"
-version := "v0.1.2-dt-20200515Z-9c1066"
-scalaVersion := "2.13.2"
+version := "v0.1.2-dt-20200515Z-324e26"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

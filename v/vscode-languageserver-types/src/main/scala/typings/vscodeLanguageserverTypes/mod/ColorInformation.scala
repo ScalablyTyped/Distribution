@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColorInformation extends js.Object {
   /**
     * The actual color value for this color range.
     */
-  var color: Color
+  var color: Color = js.native
   /**
     * The range in the document where this color appers.
     */
-  var range: Range
+  var range: Range = js.native
 }
 
 @JSImport("vscode-languageserver-types", "ColorInformation")

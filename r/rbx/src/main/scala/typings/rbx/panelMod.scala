@@ -4,7 +4,7 @@ import typings.rbx.anon.AsElementType
 import typings.rbx.anon.NoneTAsComponentextendsElDisplayName
 import typings.rbx.anon.PickBadgeHelpersPropsFloa
 import typings.rbx.anon.PreferHelpersPropsOverridBackgroundColor
-import typings.rbx.anon.`7`
+import typings.rbx.anon.`6`
 import typings.rbx.exoticMod.ForwardRefAsExoticComponent
 import typings.rbx.exoticMod.FromReactType
 import typings.rbx.helpersMod.HelpersPropsOverrides
@@ -70,7 +70,7 @@ object panelMod extends js.Object {
       ]) = js.native
     var displayName: js.UndefOr[String] = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: `7`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[
+      props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 

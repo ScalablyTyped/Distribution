@@ -1,33 +1,39 @@
 package typings.rebassGrid.mod
 
 import typings.react.mod.ElementType
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseProps
   extends Props[js.Any] {
-  var as: js.UndefOr[ElementType[_]] = js.undefined
+  var as: js.UndefOr[ElementType[_]] = js.native
 }
 
 object BaseProps {
   @scala.inline
-  def apply(
-    as: ElementType[_] = null,
-    children: ReactNode = null,
-    key: Key = null,
-    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined
-  ): BaseProps = {
+  def apply(): BaseProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseProps]
   }
+  @scala.inline
+  implicit class BasePropsOps[Self <: BaseProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAs(value: ElementType[_]): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+  }
+  
 }
 

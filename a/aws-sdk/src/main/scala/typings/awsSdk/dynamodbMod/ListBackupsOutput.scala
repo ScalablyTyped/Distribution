@@ -18,11 +18,32 @@ trait ListBackupsOutput extends js.Object {
 
 object ListBackupsOutput {
   @scala.inline
-  def apply(BackupSummaries: BackupSummaries = null, LastEvaluatedBackupArn: BackupArn = null): ListBackupsOutput = {
+  def apply(): ListBackupsOutput = {
     val __obj = js.Dynamic.literal()
-    if (BackupSummaries != null) __obj.updateDynamic("BackupSummaries")(BackupSummaries.asInstanceOf[js.Any])
-    if (LastEvaluatedBackupArn != null) __obj.updateDynamic("LastEvaluatedBackupArn")(LastEvaluatedBackupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBackupsOutput]
   }
+  @scala.inline
+  implicit class ListBackupsOutputOps[Self <: ListBackupsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupSummariesVarargs(value: BackupSummary*): Self = this.set("BackupSummaries", js.Array(value :_*))
+    @scala.inline
+    def setBackupSummaries(value: BackupSummaries): Self = this.set("BackupSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupSummaries: Self = this.set("BackupSummaries", js.undefined)
+    @scala.inline
+    def setLastEvaluatedBackupArn(value: BackupArn): Self = this.set("LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEvaluatedBackupArn: Self = this.set("LastEvaluatedBackupArn", js.undefined)
+  }
+  
 }
 

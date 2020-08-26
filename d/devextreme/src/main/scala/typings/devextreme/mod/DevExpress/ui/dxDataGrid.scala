@@ -25,6 +25,7 @@ trait dxDataGrid extends GridBase {
   def expandAll(groupIndex: Double): Unit = js.native
   /** @name dxDataGrid.expandRow(key) */
   def expandRow(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
+  /** @deprecated */
   /** @name dxDataGrid.exportToExcel(selectionOnly) */
   def exportToExcel(selectionOnly: Boolean): Unit = js.native
   /** @name dxDataGrid.getSelectedRowKeys() */

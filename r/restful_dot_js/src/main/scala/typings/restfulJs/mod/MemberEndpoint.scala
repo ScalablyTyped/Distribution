@@ -20,6 +20,7 @@ trait MemberEndpoint extends Endpoint[MemberEndpoint] {
     * @param headers
     */
   def delete[T](): js.Promise[MemberResponse[T]] = js.native
+  def delete[T](data: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[MemberResponse[T]] = js.native
   def delete[T](data: js.Any): js.Promise[MemberResponse[T]] = js.native
   def delete[T](data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
   /**
@@ -28,6 +29,7 @@ trait MemberEndpoint extends Endpoint[MemberEndpoint] {
     * @param headers
     */
   def get[T](): js.Promise[MemberResponse[T]] = js.native
+  def get[T](params: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[MemberResponse[T]] = js.native
   def get[T](params: js.Any): js.Promise[MemberResponse[T]] = js.native
   def get[T](params: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
   /**

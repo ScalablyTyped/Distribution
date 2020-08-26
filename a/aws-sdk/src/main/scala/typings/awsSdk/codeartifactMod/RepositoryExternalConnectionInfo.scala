@@ -22,16 +22,34 @@ trait RepositoryExternalConnectionInfo extends js.Object {
 
 object RepositoryExternalConnectionInfo {
   @scala.inline
-  def apply(
-    externalConnectionName: ExternalConnectionName = null,
-    packageFormat: PackageFormat = null,
-    status: ExternalConnectionStatus = null
-  ): RepositoryExternalConnectionInfo = {
+  def apply(): RepositoryExternalConnectionInfo = {
     val __obj = js.Dynamic.literal()
-    if (externalConnectionName != null) __obj.updateDynamic("externalConnectionName")(externalConnectionName.asInstanceOf[js.Any])
-    if (packageFormat != null) __obj.updateDynamic("packageFormat")(packageFormat.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoryExternalConnectionInfo]
   }
+  @scala.inline
+  implicit class RepositoryExternalConnectionInfoOps[Self <: RepositoryExternalConnectionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExternalConnectionName(value: ExternalConnectionName): Self = this.set("externalConnectionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalConnectionName: Self = this.set("externalConnectionName", js.undefined)
+    @scala.inline
+    def setPackageFormat(value: PackageFormat): Self = this.set("packageFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageFormat: Self = this.set("packageFormat", js.undefined)
+    @scala.inline
+    def setStatus(value: ExternalConnectionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

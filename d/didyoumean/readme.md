@@ -11,8 +11,8 @@ Match human-quality input to potential matches by edit distance.
 | Full name          | didyoumean |
 | Keywords           | didyoumean, mean, edit, distance, levenshtein |
 | # releases         | 0 |
-| # dependents       | 146 |
-| # downloads        | 9533236 |
+| # dependents       | 151 |
+| # downloads        | 10173397 |
 | # stars            | 3 |
 
 ## Links

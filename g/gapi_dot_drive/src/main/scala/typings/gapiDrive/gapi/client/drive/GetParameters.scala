@@ -4,32 +4,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetParameters extends js.Object {
-  var acknowledgeAbuse: js.UndefOr[Boolean] = js.undefined
-  var fileId: String
-  var projection: js.UndefOr[String] = js.undefined
-  var revisionId: js.UndefOr[String] = js.undefined
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
-  var updateViewedDate: js.UndefOr[Boolean] = js.undefined
+  var acknowledgeAbuse: js.UndefOr[Boolean] = js.native
+  var fileId: String = js.native
+  var projection: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var updateViewedDate: js.UndefOr[Boolean] = js.native
 }
 
 object GetParameters {
   @scala.inline
-  def apply(
-    fileId: String,
-    acknowledgeAbuse: js.UndefOr[Boolean] = js.undefined,
-    projection: String = null,
-    revisionId: String = null,
-    supportsTeamDrives: js.UndefOr[Boolean] = js.undefined,
-    updateViewedDate: js.UndefOr[Boolean] = js.undefined
-  ): GetParameters = {
+  def apply(fileId: String): GetParameters = {
     val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
-    if (!js.isUndefined(acknowledgeAbuse)) __obj.updateDynamic("acknowledgeAbuse")(acknowledgeAbuse.get.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateViewedDate)) __obj.updateDynamic("updateViewedDate")(updateViewedDate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParameters]
   }
+  @scala.inline
+  implicit class GetParametersOps[Self <: GetParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileId(value: String): Self = this.set("fileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcknowledgeAbuse(value: Boolean): Self = this.set("acknowledgeAbuse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcknowledgeAbuse: Self = this.set("acknowledgeAbuse", js.undefined)
+    @scala.inline
+    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("projection", js.undefined)
+    @scala.inline
+    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    @scala.inline
+    def setSupportsTeamDrives(value: Boolean): Self = this.set("supportsTeamDrives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsTeamDrives: Self = this.set("supportsTeamDrives", js.undefined)
+    @scala.inline
+    def setUpdateViewedDate(value: Boolean): Self = this.set("updateViewedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateViewedDate: Self = this.set("updateViewedDate", js.undefined)
+  }
+  
 }
 

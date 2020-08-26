@@ -26,17 +26,38 @@ trait AddCommunicationToCaseRequest extends js.Object {
 
 object AddCommunicationToCaseRequest {
   @scala.inline
-  def apply(
-    communicationBody: CommunicationBody,
-    attachmentSetId: AttachmentSetId = null,
-    caseId: CaseId = null,
-    ccEmailAddresses: CcEmailAddressList = null
-  ): AddCommunicationToCaseRequest = {
+  def apply(communicationBody: CommunicationBody): AddCommunicationToCaseRequest = {
     val __obj = js.Dynamic.literal(communicationBody = communicationBody.asInstanceOf[js.Any])
-    if (attachmentSetId != null) __obj.updateDynamic("attachmentSetId")(attachmentSetId.asInstanceOf[js.Any])
-    if (caseId != null) __obj.updateDynamic("caseId")(caseId.asInstanceOf[js.Any])
-    if (ccEmailAddresses != null) __obj.updateDynamic("ccEmailAddresses")(ccEmailAddresses.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCommunicationToCaseRequest]
   }
+  @scala.inline
+  implicit class AddCommunicationToCaseRequestOps[Self <: AddCommunicationToCaseRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommunicationBody(value: CommunicationBody): Self = this.set("communicationBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttachmentSetId(value: AttachmentSetId): Self = this.set("attachmentSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentSetId: Self = this.set("attachmentSetId", js.undefined)
+    @scala.inline
+    def setCaseId(value: CaseId): Self = this.set("caseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseId: Self = this.set("caseId", js.undefined)
+    @scala.inline
+    def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = this.set("ccEmailAddresses", js.Array(value :_*))
+    @scala.inline
+    def setCcEmailAddresses(value: CcEmailAddressList): Self = this.set("ccEmailAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCcEmailAddresses: Self = this.set("ccEmailAddresses", js.undefined)
+  }
+  
 }
 

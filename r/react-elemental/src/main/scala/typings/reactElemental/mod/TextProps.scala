@@ -6,45 +6,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextProps extends js.Object {
-  val bold: js.UndefOr[Boolean] = js.undefined
-  val center: js.UndefOr[Boolean] = js.undefined
-  val children: js.UndefOr[ReactNode] = js.undefined
-  val color: js.UndefOr[String] = js.undefined
-  val `inline`: js.UndefOr[Boolean] = js.undefined
-  val right: js.UndefOr[Boolean] = js.undefined
-  val secondary: js.UndefOr[Boolean] = js.undefined
-  val size: js.UndefOr[String] = js.undefined
-  val style: js.UndefOr[CSSProperties] = js.undefined
-  val uppercase: js.UndefOr[Boolean] = js.undefined
+  val bold: js.UndefOr[Boolean] = js.native
+  val center: js.UndefOr[Boolean] = js.native
+  val children: js.UndefOr[ReactNode] = js.native
+  val color: js.UndefOr[String] = js.native
+  val `inline`: js.UndefOr[Boolean] = js.native
+  val right: js.UndefOr[Boolean] = js.native
+  val secondary: js.UndefOr[Boolean] = js.native
+  val size: js.UndefOr[String] = js.native
+  val style: js.UndefOr[CSSProperties] = js.native
+  val uppercase: js.UndefOr[Boolean] = js.native
 }
 
 object TextProps {
   @scala.inline
-  def apply(
-    bold: js.UndefOr[Boolean] = js.undefined,
-    center: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    color: String = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    right: js.UndefOr[Boolean] = js.undefined,
-    secondary: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
-    style: CSSProperties = null,
-    uppercase: js.UndefOr[Boolean] = js.undefined
-  ): TextProps = {
+  def apply(): TextProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(uppercase)) __obj.updateDynamic("uppercase")(uppercase.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextProps]
   }
+  @scala.inline
+  implicit class TextPropsOps[Self <: TextProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBold: Self = this.set("bold", js.undefined)
+    @scala.inline
+    def setCenter(value: Boolean): Self = this.set("center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenter: Self = this.set("center", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setRight(value: Boolean): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setSecondary(value: Boolean): Self = this.set("secondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setUppercase(value: Boolean): Self = this.set("uppercase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUppercase: Self = this.set("uppercase", js.undefined)
+  }
+  
 }
 

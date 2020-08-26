@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object locale extends js.Object {
   def apply(): String = js.native
+  def apply(language: js.UndefOr[scala.Nothing], definition: LocaleSpecification): String = js.native
   def apply(language: String): String = js.native
   def apply(language: String, definition: LocaleSpecification): String = js.native
   def apply(language: js.Array[String]): String = js.native

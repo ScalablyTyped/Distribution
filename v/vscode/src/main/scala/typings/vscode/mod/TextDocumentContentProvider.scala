@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextDocumentContentProvider extends js.Object {
   /**
     * An event to signal a resource has changed.
     */
-  var onDidChange: js.UndefOr[Event[Uri]] = js.undefined
+  var onDidChange: js.UndefOr[Event[Uri]] = js.native
   /**
     * Provide textual content for a given uri.
     *
@@ -23,18 +24,35 @@ trait TextDocumentContentProvider extends js.Object {
     * @param token A cancellation token.
     * @return A string or a thenable that resolves to such.
     */
-  def provideTextDocumentContent(uri: Uri, token: CancellationToken): ProviderResult[String]
+  def provideTextDocumentContent(uri: Uri, token: CancellationToken): ProviderResult[String] = js.native
 }
 
 object TextDocumentContentProvider {
   @scala.inline
-  def apply(
-    provideTextDocumentContent: (Uri, CancellationToken) => ProviderResult[String],
-    onDidChange: (/* listener */ js.Function1[Uri, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable = null
-  ): TextDocumentContentProvider = {
+  def apply(provideTextDocumentContent: (Uri, CancellationToken) => ProviderResult[String]): TextDocumentContentProvider = {
     val __obj = js.Dynamic.literal(provideTextDocumentContent = js.Any.fromFunction2(provideTextDocumentContent))
-    if (onDidChange != null) __obj.updateDynamic("onDidChange")(js.Any.fromFunction3(onDidChange))
     __obj.asInstanceOf[TextDocumentContentProvider]
   }
+  @scala.inline
+  implicit class TextDocumentContentProviderOps[Self <: TextDocumentContentProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvideTextDocumentContent(value: (Uri, CancellationToken) => ProviderResult[String]): Self = this.set("provideTextDocumentContent", js.Any.fromFunction2(value))
+    @scala.inline
+    def setOnDidChange(
+      value: (/* listener */ js.Function1[Uri, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+    ): Self = this.set("onDidChange", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnDidChange: Self = this.set("onDidChange", js.undefined)
+  }
+  
 }
 

@@ -42,26 +42,54 @@ trait ECSTaskSet extends js.Object {
 
 object ECSTaskSet {
   @scala.inline
-  def apply(
-    desiredCount: js.UndefOr[ECSTaskSetCount] = js.undefined,
-    identifer: ECSTaskSetIdentifier = null,
-    pendingCount: js.UndefOr[ECSTaskSetCount] = js.undefined,
-    runningCount: js.UndefOr[ECSTaskSetCount] = js.undefined,
-    status: ECSTaskSetStatus = null,
-    targetGroup: TargetGroupInfo = null,
-    taskSetLabel: TargetLabel = null,
-    trafficWeight: js.UndefOr[TrafficWeight] = js.undefined
-  ): ECSTaskSet = {
+  def apply(): ECSTaskSet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount.get.asInstanceOf[js.Any])
-    if (identifer != null) __obj.updateDynamic("identifer")(identifer.asInstanceOf[js.Any])
-    if (!js.isUndefined(pendingCount)) __obj.updateDynamic("pendingCount")(pendingCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(runningCount)) __obj.updateDynamic("runningCount")(runningCount.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (targetGroup != null) __obj.updateDynamic("targetGroup")(targetGroup.asInstanceOf[js.Any])
-    if (taskSetLabel != null) __obj.updateDynamic("taskSetLabel")(taskSetLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(trafficWeight)) __obj.updateDynamic("trafficWeight")(trafficWeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ECSTaskSet]
   }
+  @scala.inline
+  implicit class ECSTaskSetOps[Self <: ECSTaskSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesiredCount(value: ECSTaskSetCount): Self = this.set("desiredCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredCount: Self = this.set("desiredCount", js.undefined)
+    @scala.inline
+    def setIdentifer(value: ECSTaskSetIdentifier): Self = this.set("identifer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifer: Self = this.set("identifer", js.undefined)
+    @scala.inline
+    def setPendingCount(value: ECSTaskSetCount): Self = this.set("pendingCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingCount: Self = this.set("pendingCount", js.undefined)
+    @scala.inline
+    def setRunningCount(value: ECSTaskSetCount): Self = this.set("runningCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunningCount: Self = this.set("runningCount", js.undefined)
+    @scala.inline
+    def setStatus(value: ECSTaskSetStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTargetGroup(value: TargetGroupInfo): Self = this.set("targetGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroup: Self = this.set("targetGroup", js.undefined)
+    @scala.inline
+    def setTaskSetLabel(value: TargetLabel): Self = this.set("taskSetLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskSetLabel: Self = this.set("taskSetLabel", js.undefined)
+    @scala.inline
+    def setTrafficWeight(value: TrafficWeight): Self = this.set("trafficWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrafficWeight: Self = this.set("trafficWeight", js.undefined)
+  }
+  
 }
 

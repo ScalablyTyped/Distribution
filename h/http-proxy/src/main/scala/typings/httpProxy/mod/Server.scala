@@ -107,6 +107,12 @@ trait Server extends EventEmitter {
     * @param options - Additionnal options.
     */
   def web(req: IncomingMessage, res: ServerResponse): Unit = js.native
+  def web(
+    req: IncomingMessage,
+    res: ServerResponse,
+    options: js.UndefOr[scala.Nothing],
+    callback: ErrorCallback
+  ): Unit = js.native
   def web(req: IncomingMessage, res: ServerResponse, options: ServerOptions): Unit = js.native
   def web(req: IncomingMessage, res: ServerResponse, options: ServerOptions, callback: ErrorCallback): Unit = js.native
   /**
@@ -117,6 +123,13 @@ trait Server extends EventEmitter {
     * @param options - Additionnal options.
     */
   def ws(req: IncomingMessage, socket: js.Any, head: js.Any): Unit = js.native
+  def ws(
+    req: IncomingMessage,
+    socket: js.Any,
+    head: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    callback: ErrorCallback
+  ): Unit = js.native
   def ws(req: IncomingMessage, socket: js.Any, head: js.Any, options: ServerOptions): Unit = js.native
   def ws(
     req: IncomingMessage,

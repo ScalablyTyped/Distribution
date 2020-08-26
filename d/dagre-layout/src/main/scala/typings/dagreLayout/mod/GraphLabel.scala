@@ -4,51 +4,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GraphLabel extends js.Object {
-  var acyclicer: js.UndefOr[String] = js.undefined
-  var align: js.UndefOr[String] = js.undefined
-  var compound: js.UndefOr[Boolean] = js.undefined
-  var edgesep: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var marginx: js.UndefOr[Double] = js.undefined
-  var marginy: js.UndefOr[Double] = js.undefined
-  var nodesep: js.UndefOr[Double] = js.undefined
-  var rankdir: js.UndefOr[String] = js.undefined
-  var ranker: js.UndefOr[String] = js.undefined
-  var ranksep: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var acyclicer: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.native
+  var compound: js.UndefOr[Boolean] = js.native
+  var edgesep: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var marginx: js.UndefOr[Double] = js.native
+  var marginy: js.UndefOr[Double] = js.native
+  var nodesep: js.UndefOr[Double] = js.native
+  var rankdir: js.UndefOr[String] = js.native
+  var ranker: js.UndefOr[String] = js.native
+  var ranksep: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object GraphLabel {
   @scala.inline
-  def apply(
-    acyclicer: String = null,
-    align: String = null,
-    compound: js.UndefOr[Boolean] = js.undefined,
-    edgesep: js.UndefOr[Double] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    marginx: js.UndefOr[Double] = js.undefined,
-    marginy: js.UndefOr[Double] = js.undefined,
-    nodesep: js.UndefOr[Double] = js.undefined,
-    rankdir: String = null,
-    ranker: String = null,
-    ranksep: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): GraphLabel = {
+  def apply(): GraphLabel = {
     val __obj = js.Dynamic.literal()
-    if (acyclicer != null) __obj.updateDynamic("acyclicer")(acyclicer.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(compound)) __obj.updateDynamic("compound")(compound.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgesep)) __obj.updateDynamic("edgesep")(edgesep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginx)) __obj.updateDynamic("marginx")(marginx.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginy)) __obj.updateDynamic("marginy")(marginy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodesep)) __obj.updateDynamic("nodesep")(nodesep.get.asInstanceOf[js.Any])
-    if (rankdir != null) __obj.updateDynamic("rankdir")(rankdir.asInstanceOf[js.Any])
-    if (ranker != null) __obj.updateDynamic("ranker")(ranker.asInstanceOf[js.Any])
-    if (!js.isUndefined(ranksep)) __obj.updateDynamic("ranksep")(ranksep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphLabel]
   }
+  @scala.inline
+  implicit class GraphLabelOps[Self <: GraphLabel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcyclicer(value: String): Self = this.set("acyclicer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcyclicer: Self = this.set("acyclicer", js.undefined)
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setCompound(value: Boolean): Self = this.set("compound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompound: Self = this.set("compound", js.undefined)
+    @scala.inline
+    def setEdgesep(value: Double): Self = this.set("edgesep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgesep: Self = this.set("edgesep", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setMarginx(value: Double): Self = this.set("marginx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginx: Self = this.set("marginx", js.undefined)
+    @scala.inline
+    def setMarginy(value: Double): Self = this.set("marginy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginy: Self = this.set("marginy", js.undefined)
+    @scala.inline
+    def setNodesep(value: Double): Self = this.set("nodesep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodesep: Self = this.set("nodesep", js.undefined)
+    @scala.inline
+    def setRankdir(value: String): Self = this.set("rankdir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRankdir: Self = this.set("rankdir", js.undefined)
+    @scala.inline
+    def setRanker(value: String): Self = this.set("ranker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRanker: Self = this.set("ranker", js.undefined)
+    @scala.inline
+    def setRanksep(value: Double): Self = this.set("ranksep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRanksep: Self = this.set("ranksep", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

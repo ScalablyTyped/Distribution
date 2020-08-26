@@ -4,26 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AwsAccessKey extends js.Object {
   /**
     * AWS access key ID.
     * Required.
     */
-  var accessKeyId: js.UndefOr[String] = js.undefined
+  var accessKeyId: js.UndefOr[String] = js.native
   /**
     * AWS secret access key. This field is not returned in RPC responses.
     * Required.
     */
-  var secretAccessKey: js.UndefOr[String] = js.undefined
+  var secretAccessKey: js.UndefOr[String] = js.native
 }
 
 object AwsAccessKey {
   @scala.inline
-  def apply(accessKeyId: String = null, secretAccessKey: String = null): AwsAccessKey = {
+  def apply(): AwsAccessKey = {
     val __obj = js.Dynamic.literal()
-    if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId.asInstanceOf[js.Any])
-    if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsAccessKey]
   }
+  @scala.inline
+  implicit class AwsAccessKeyOps[Self <: AwsAccessKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessKeyId(value: String): Self = this.set("accessKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKeyId: Self = this.set("accessKeyId", js.undefined)
+    @scala.inline
+    def setSecretAccessKey(value: String): Self = this.set("secretAccessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretAccessKey: Self = this.set("secretAccessKey", js.undefined)
+  }
+  
 }
 

@@ -34,22 +34,46 @@ trait StartDeviceAuthorizationResponse extends js.Object {
 
 object StartDeviceAuthorizationResponse {
   @scala.inline
-  def apply(
-    deviceCode: DeviceCode = null,
-    expiresIn: js.UndefOr[ExpirationInSeconds] = js.undefined,
-    interval: js.UndefOr[IntervalInSeconds] = js.undefined,
-    userCode: UserCode = null,
-    verificationUri: URI = null,
-    verificationUriComplete: URI = null
-  ): StartDeviceAuthorizationResponse = {
+  def apply(): StartDeviceAuthorizationResponse = {
     val __obj = js.Dynamic.literal()
-    if (deviceCode != null) __obj.updateDynamic("deviceCode")(deviceCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(expiresIn)) __obj.updateDynamic("expiresIn")(expiresIn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (userCode != null) __obj.updateDynamic("userCode")(userCode.asInstanceOf[js.Any])
-    if (verificationUri != null) __obj.updateDynamic("verificationUri")(verificationUri.asInstanceOf[js.Any])
-    if (verificationUriComplete != null) __obj.updateDynamic("verificationUriComplete")(verificationUriComplete.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartDeviceAuthorizationResponse]
   }
+  @scala.inline
+  implicit class StartDeviceAuthorizationResponseOps[Self <: StartDeviceAuthorizationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceCode(value: DeviceCode): Self = this.set("deviceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceCode: Self = this.set("deviceCode", js.undefined)
+    @scala.inline
+    def setExpiresIn(value: ExpirationInSeconds): Self = this.set("expiresIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiresIn: Self = this.set("expiresIn", js.undefined)
+    @scala.inline
+    def setInterval(value: IntervalInSeconds): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setUserCode(value: UserCode): Self = this.set("userCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserCode: Self = this.set("userCode", js.undefined)
+    @scala.inline
+    def setVerificationUri(value: URI): Self = this.set("verificationUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerificationUri: Self = this.set("verificationUri", js.undefined)
+    @scala.inline
+    def setVerificationUriComplete(value: URI): Self = this.set("verificationUriComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerificationUriComplete: Self = this.set("verificationUriComplete", js.undefined)
+  }
+  
 }
 

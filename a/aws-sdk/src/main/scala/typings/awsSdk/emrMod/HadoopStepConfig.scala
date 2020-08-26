@@ -26,18 +26,40 @@ trait HadoopStepConfig extends js.Object {
 
 object HadoopStepConfig {
   @scala.inline
-  def apply(
-    Args: StringList = null,
-    Jar: String = null,
-    MainClass: String = null,
-    Properties: StringMap = null
-  ): HadoopStepConfig = {
+  def apply(): HadoopStepConfig = {
     val __obj = js.Dynamic.literal()
-    if (Args != null) __obj.updateDynamic("Args")(Args.asInstanceOf[js.Any])
-    if (Jar != null) __obj.updateDynamic("Jar")(Jar.asInstanceOf[js.Any])
-    if (MainClass != null) __obj.updateDynamic("MainClass")(MainClass.asInstanceOf[js.Any])
-    if (Properties != null) __obj.updateDynamic("Properties")(Properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[HadoopStepConfig]
   }
+  @scala.inline
+  implicit class HadoopStepConfigOps[Self <: HadoopStepConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("Args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: StringList): Self = this.set("Args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("Args", js.undefined)
+    @scala.inline
+    def setJar(value: String): Self = this.set("Jar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJar: Self = this.set("Jar", js.undefined)
+    @scala.inline
+    def setMainClass(value: String): Self = this.set("MainClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainClass: Self = this.set("MainClass", js.undefined)
+    @scala.inline
+    def setProperties(value: StringMap): Self = this.set("Properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("Properties", js.undefined)
+  }
+  
 }
 

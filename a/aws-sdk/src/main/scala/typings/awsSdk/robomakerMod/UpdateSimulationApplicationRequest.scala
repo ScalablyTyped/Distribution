@@ -38,14 +38,41 @@ object UpdateSimulationApplicationRequest {
     application: Arn,
     robotSoftwareSuite: RobotSoftwareSuite,
     simulationSoftwareSuite: SimulationSoftwareSuite,
-    sources: SourceConfigs,
-    currentRevisionId: RevisionId = null,
-    renderingEngine: RenderingEngine = null
+    sources: SourceConfigs
   ): UpdateSimulationApplicationRequest = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], robotSoftwareSuite = robotSoftwareSuite.asInstanceOf[js.Any], simulationSoftwareSuite = simulationSoftwareSuite.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
-    if (currentRevisionId != null) __obj.updateDynamic("currentRevisionId")(currentRevisionId.asInstanceOf[js.Any])
-    if (renderingEngine != null) __obj.updateDynamic("renderingEngine")(renderingEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSimulationApplicationRequest]
   }
+  @scala.inline
+  implicit class UpdateSimulationApplicationRequestOps[Self <: UpdateSimulationApplicationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Arn): Self = this.set("application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRobotSoftwareSuite(value: RobotSoftwareSuite): Self = this.set("robotSoftwareSuite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSimulationSoftwareSuite(value: SimulationSoftwareSuite): Self = this.set("simulationSoftwareSuite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourcesVarargs(value: SourceConfig*): Self = this.set("sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: SourceConfigs): Self = this.set("sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentRevisionId(value: RevisionId): Self = this.set("currentRevisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentRevisionId: Self = this.set("currentRevisionId", js.undefined)
+    @scala.inline
+    def setRenderingEngine(value: RenderingEngine): Self = this.set("renderingEngine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderingEngine: Self = this.set("renderingEngine", js.undefined)
+  }
+  
 }
 

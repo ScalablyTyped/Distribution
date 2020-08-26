@@ -20,15 +20,5 @@ class MVCxClientSchedulerToolTipDisplayingEventArgs protected ()
     toolTip: typings.devexpressWeb.MVCxClientSchedulerTemplateToolTip,
     data: typings.devexpressWeb.ASPxClientSchedulerToolTipData
   ) = this()
-  /**
-    * Gets information about the tooltip related to the event.
-    */
-  /* CompleteClass */
-  override var data: typings.devexpressWeb.ASPxClientSchedulerToolTipData = js.native
-  /**
-    * Gets the tooltip related to the event.
-    */
-  /* CompleteClass */
-  override var toolTip: typings.devexpressWeb.MVCxClientSchedulerTemplateToolTip = js.native
 }
 

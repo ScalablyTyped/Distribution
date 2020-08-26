@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ExpandAbstractTypes protected ()
   extends typings.graphqlTools.mod.ExpandAbstractTypes {
-  def this(transformedSchema: GraphQLSchema, targetSchema: GraphQLSchema) = this()
+  def this(sourceSchema: GraphQLSchema, targetSchema: GraphQLSchema) = this()
 }
 

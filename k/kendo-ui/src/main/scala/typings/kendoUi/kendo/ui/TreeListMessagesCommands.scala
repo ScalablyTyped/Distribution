@@ -4,45 +4,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeListMessagesCommands extends js.Object {
-  var cancel: js.UndefOr[String] = js.undefined
-  var canceledit: js.UndefOr[String] = js.undefined
-  var create: js.UndefOr[String] = js.undefined
-  var createchild: js.UndefOr[String] = js.undefined
-  var destroy: js.UndefOr[String] = js.undefined
-  var edit: js.UndefOr[String] = js.undefined
-  var excel: js.UndefOr[String] = js.undefined
-  var pdf: js.UndefOr[String] = js.undefined
-  var save: js.UndefOr[String] = js.undefined
-  var update: js.UndefOr[String] = js.undefined
+  var cancel: js.UndefOr[String] = js.native
+  var canceledit: js.UndefOr[String] = js.native
+  var create: js.UndefOr[String] = js.native
+  var createchild: js.UndefOr[String] = js.native
+  var destroy: js.UndefOr[String] = js.native
+  var edit: js.UndefOr[String] = js.native
+  var excel: js.UndefOr[String] = js.native
+  var pdf: js.UndefOr[String] = js.native
+  var save: js.UndefOr[String] = js.native
+  var update: js.UndefOr[String] = js.native
 }
 
 object TreeListMessagesCommands {
   @scala.inline
-  def apply(
-    cancel: String = null,
-    canceledit: String = null,
-    create: String = null,
-    createchild: String = null,
-    destroy: String = null,
-    edit: String = null,
-    excel: String = null,
-    pdf: String = null,
-    save: String = null,
-    update: String = null
-  ): TreeListMessagesCommands = {
+  def apply(): TreeListMessagesCommands = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (canceledit != null) __obj.updateDynamic("canceledit")(canceledit.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
-    if (createchild != null) __obj.updateDynamic("createchild")(createchild.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
-    if (excel != null) __obj.updateDynamic("excel")(excel.asInstanceOf[js.Any])
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListMessagesCommands]
   }
+  @scala.inline
+  implicit class TreeListMessagesCommandsOps[Self <: TreeListMessagesCommands] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setCanceledit(value: String): Self = this.set("canceledit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanceledit: Self = this.set("canceledit", js.undefined)
+    @scala.inline
+    def setCreate(value: String): Self = this.set("create", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setCreatechild(value: String): Self = this.set("createchild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatechild: Self = this.set("createchild", js.undefined)
+    @scala.inline
+    def setDestroy(value: String): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    @scala.inline
+    def setEdit(value: String): Self = this.set("edit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdit: Self = this.set("edit", js.undefined)
+    @scala.inline
+    def setExcel(value: String): Self = this.set("excel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcel: Self = this.set("excel", js.undefined)
+    @scala.inline
+    def setPdf(value: String): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePdf: Self = this.set("pdf", js.undefined)
+    @scala.inline
+    def setSave(value: String): Self = this.set("save", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSave: Self = this.set("save", js.undefined)
+    @scala.inline
+    def setUpdate(value: String): Self = this.set("update", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+  }
+  
 }
 

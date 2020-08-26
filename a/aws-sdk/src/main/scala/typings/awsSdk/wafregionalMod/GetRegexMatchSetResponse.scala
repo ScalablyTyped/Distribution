@@ -14,10 +14,26 @@ trait GetRegexMatchSetResponse extends js.Object {
 
 object GetRegexMatchSetResponse {
   @scala.inline
-  def apply(RegexMatchSet: RegexMatchSet = null): GetRegexMatchSetResponse = {
+  def apply(): GetRegexMatchSetResponse = {
     val __obj = js.Dynamic.literal()
-    if (RegexMatchSet != null) __obj.updateDynamic("RegexMatchSet")(RegexMatchSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRegexMatchSetResponse]
   }
+  @scala.inline
+  implicit class GetRegexMatchSetResponseOps[Self <: GetRegexMatchSetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegexMatchSet(value: RegexMatchSet): Self = this.set("RegexMatchSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexMatchSet: Self = this.set("RegexMatchSet", js.undefined)
+  }
+  
 }
 

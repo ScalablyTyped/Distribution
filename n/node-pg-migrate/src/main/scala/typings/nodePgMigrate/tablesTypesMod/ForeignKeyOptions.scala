@@ -1,34 +1,37 @@
 package typings.nodePgMigrate.tablesTypesMod
 
 import typings.nodePgMigrate.generalTypesMod.Name
-import typings.nodePgMigrate.nodePgMigrateStrings.FULL
-import typings.nodePgMigrate.nodePgMigrateStrings.SIMPLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ForeignKeyOptions extends ReferencesOptions {
-  var columns: Name | js.Array[Name]
+  var columns: Name | js.Array[Name] = js.native
 }
 
 object ForeignKeyOptions {
   @scala.inline
-  def apply(
-    columns: Name | js.Array[Name],
-    references: Name,
-    `match`: FULL | SIMPLE = null,
-    onDelete: Action = null,
-    onUpdate: Action = null,
-    referencesConstraintComment: String = null,
-    referencesConstraintName: String = null
-  ): ForeignKeyOptions = {
+  def apply(columns: Name | js.Array[Name], references: Name): ForeignKeyOptions = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate.asInstanceOf[js.Any])
-    if (referencesConstraintComment != null) __obj.updateDynamic("referencesConstraintComment")(referencesConstraintComment.asInstanceOf[js.Any])
-    if (referencesConstraintName != null) __obj.updateDynamic("referencesConstraintName")(referencesConstraintName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForeignKeyOptions]
   }
+  @scala.inline
+  implicit class ForeignKeyOptionsOps[Self <: ForeignKeyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnsVarargs(value: Name*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: Name | js.Array[Name]): Self = this.set("columns", value.asInstanceOf[js.Any])
+  }
+  
 }
 

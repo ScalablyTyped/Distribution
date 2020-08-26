@@ -44,7 +44,6 @@ object paramMod extends js.Object {
     def value(value: js.Any): js.Any = js.native
   }
   
-  /** @internalapi */
   @js.native
   object DefType extends js.Object {
     @js.native
@@ -84,6 +83,7 @@ object paramMod extends js.Object {
       * @returns any Param objects whose values were different between values1 and values2
       */
     def changed(params: js.Array[Param]): js.Array[Param] = js.native
+    def changed(params: js.Array[Param], values1: js.UndefOr[scala.Nothing], values2: RawParams): js.Array[Param] = js.native
     def changed(params: js.Array[Param], values1: RawParams): js.Array[Param] = js.native
     def changed(params: js.Array[Param], values1: RawParams, values2: RawParams): js.Array[Param] = js.native
     /**
@@ -96,6 +96,7 @@ object paramMod extends js.Object {
       * @returns true if the param values in values1 and values2 are equal
       */
     def equals(params: js.Array[Param]): Boolean = js.native
+    def equals(params: js.Array[Param], values1: js.UndefOr[scala.Nothing], values2: js.Object): Boolean = js.native
     def equals(params: js.Array[Param], values1: js.Object): Boolean = js.native
     def equals(params: js.Array[Param], values1: js.Object, values2: js.Object): Boolean = js.native
     /** Returns true if a the parameter values are valid, according to the Param definitions */

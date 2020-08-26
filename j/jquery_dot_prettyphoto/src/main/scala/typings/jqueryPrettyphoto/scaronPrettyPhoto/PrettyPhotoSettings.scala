@@ -7,246 +7,327 @@ import scala.scalajs.js.annotation._
 /**
   * Pretty photo settings
   */
+@js.native
 trait PrettyPhotoSettings extends js.Object {
-  var ajaxcallback: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var ajaxcallback: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Allow the user to expand a resized image. true/false
     * @default true
     */
-  var allow_expand: js.UndefOr[Boolean] = js.undefined
+  var allow_expand: js.UndefOr[Boolean] = js.native
   /**
     * Resize the photos bigger than viewport. true/false
     * @default true
     */
-  var allow_resize: js.UndefOr[Boolean] = js.undefined
+  var allow_resize: js.UndefOr[Boolean] = js.native
   /**
     * fast/slow/normal
     * @default 'fast'
     */
-  var animation_speed: js.UndefOr[String] = js.undefined
+  var animation_speed: js.UndefOr[String] = js.native
   /**
     * Automatically start videos: True/False
     * @default true
     */
-  var autoplay: js.UndefOr[Boolean] = js.undefined
+  var autoplay: js.UndefOr[Boolean] = js.native
   /**
     * true/false
     * @default false
     */
-  var autoplay_slideshow: js.UndefOr[Boolean] = js.undefined
+  var autoplay_slideshow: js.UndefOr[Boolean] = js.native
   /**
     * Called when prettyPhoto is closed
     * @default function () { }
     */
-  var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var callback: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Called everytime an item is shown/changed
     * @default function () { }
     */
-  var changepicturecallback: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var changepicturecallback: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * The separator for the gallery counter 1 "of" 2
     * @default '/'
     */
-  var counter_separator_label: js.UndefOr[String] = js.undefined
+  var counter_separator_label: js.UndefOr[String] = js.native
   /**
     * @default ''
     */
-  var custom_markup: js.UndefOr[String] = js.undefined
+  var custom_markup: js.UndefOr[String] = js.native
   /**
     * Allow prettyPhoto to update the url to enable deeplinking.
     * @default true
     */
-  var deeplinking: js.UndefOr[Boolean] = js.undefined
+  var deeplinking: js.UndefOr[Boolean] = js.native
   /**
     * Pixels
     * @default 344
     */
-  var default_height: js.UndefOr[Double] = js.undefined
+  var default_height: js.UndefOr[Double] = js.native
   /**
     * Pixels
     * @default 500
     */
-  var default_width: js.UndefOr[Double] = js.undefined
+  var default_width: js.UndefOr[Double] = js.native
   /**
     * Markup for flash
     * @default '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed src="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>'
     */
-  var flash_markup: js.UndefOr[String] = js.undefined
+  var flash_markup: js.UndefOr[String] = js.native
   /**
     * Markup for pretty photo gallery
     * @default omitted for brevity
     */
-  var gallery_markup: js.UndefOr[String] = js.undefined
+  var gallery_markup: js.UndefOr[String] = js.native
   /**
     * Hides all the flash object on a page, set to TRUE if flash appears over prettyPhoto
     * @default false
     */
-  var hideflash: js.UndefOr[Boolean] = js.undefined
+  var hideflash: js.UndefOr[Boolean] = js.native
   /**
     * the attribute tag to use for prettyPhoto hooks.  For HTML5, use "data-rel" or similar.
     * @default 'rel'
     */
-  var hook: js.UndefOr[String] = js.undefined
+  var hook: js.UndefOr[String] = js.native
   /**
     * The padding on each side of the picture
     * @default 20
     */
-  var horizontal_padding: js.UndefOr[Double] = js.undefined
+  var horizontal_padding: js.UndefOr[Double] = js.native
   /**
     * @default true
     */
-  var ie6_fallback: js.UndefOr[Boolean] = js.undefined
+  var ie6_fallback: js.UndefOr[Boolean] = js.native
   /**
     * Markup for iframe
     * @default '<iframe src ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>'
     */
-  var iframe_markup: js.UndefOr[String] = js.undefined
+  var iframe_markup: js.UndefOr[String] = js.native
   /**
     * Markup for image
     * @default '<img id="fullResImage" src="{path}" />'
     */
-  var image_markup: js.UndefOr[String] = js.undefined
+  var image_markup: js.UndefOr[String] = js.native
   /**
     * @default '<div class="pp_inline">{content}</div>'
     */
-  var inline_markup: js.UndefOr[String] = js.undefined
+  var inline_markup: js.UndefOr[String] = js.native
   /**
     * Set to false if you open forms inside prettyPhoto
     * @default true
     */
-  var keyboard_shortcuts: js.UndefOr[Boolean] = js.undefined
+  var keyboard_shortcuts: js.UndefOr[Boolean] = js.native
   /**
     * Markup for pretty photo
     * @default omitted for brevity
     */
-  var markup: js.UndefOr[String] = js.undefined
+  var markup: js.UndefOr[String] = js.native
   /**
     * If set to true, only the close button will close the window
     * @default false
     */
-  var modal: js.UndefOr[Boolean] = js.undefined
+  var modal: js.UndefOr[Boolean] = js.native
   /**
     * Value between 0 and 1
     * @default 0.80
     */
-  var opacity: js.UndefOr[Double] = js.undefined
+  var opacity: js.UndefOr[Double] = js.native
   /**
     * If set to true, a gallery will overlay the fullscreen image on mouse over
     * @default true
     */
-  var overlay_gallery: js.UndefOr[Boolean] = js.undefined
+  var overlay_gallery: js.UndefOr[Boolean] = js.native
   /**
     * Maximum number of pictures in the overlay gallery
     * @default 30
     */
-  var overlay_gallery_max: js.UndefOr[Double] = js.undefined
+  var overlay_gallery_max: js.UndefOr[Double] = js.native
   /**
     * Markup for quicktime
     * @default '<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" height="{height}" width="{width}"><param name="src" value="{path}"><param name="autoplay" value="{autoplay}"><param name="type" value="video/quicktime"><embed src="{path}" height="{height}" width="{width}" autoplay="{autoplay}" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"></embed></object>'
     */
-  var quicktime_markup: js.UndefOr[String] = js.undefined
+  var quicktime_markup: js.UndefOr[String] = js.native
   /**
     * true/false
     * @default true
     */
-  var show_title: js.UndefOr[Boolean] = js.undefined
+  var show_title: js.UndefOr[Boolean] = js.native
   /**
     * false OR interval time in ms
     * @default 5000
     */
-  var slideshow: js.UndefOr[js.Any] = js.undefined
+  var slideshow: js.UndefOr[js.Any] = js.native
   /**
     * Markup for social tools, set to html or false to disable
     * @default '<div class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div><div class="facebook"><iframe src="//www.facebook.com/plugins/like.php?locale=en_US&href={location_href}&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true"></iframe></div>'
     */
-  var social_tools: js.UndefOr[js.Any] = js.undefined
+  var social_tools: js.UndefOr[js.Any] = js.native
   /**
     * light_rounded / dark_rounded / light_square / dark_square / facebook
     * @default 'pp_default'
     */
-  var theme: js.UndefOr[String] = js.undefined
+  var theme: js.UndefOr[String] = js.native
   /**
     * Set the flash wmode attribute
     * @default 'opaque'
     */
-  var wmode: js.UndefOr[String] = js.undefined
+  var wmode: js.UndefOr[String] = js.native
 }
 
 object PrettyPhotoSettings {
   @scala.inline
-  def apply(
-    ajaxcallback: () => Unit = null,
-    allow_expand: js.UndefOr[Boolean] = js.undefined,
-    allow_resize: js.UndefOr[Boolean] = js.undefined,
-    animation_speed: String = null,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    autoplay_slideshow: js.UndefOr[Boolean] = js.undefined,
-    callback: () => Unit = null,
-    changepicturecallback: () => Unit = null,
-    counter_separator_label: String = null,
-    custom_markup: String = null,
-    deeplinking: js.UndefOr[Boolean] = js.undefined,
-    default_height: js.UndefOr[Double] = js.undefined,
-    default_width: js.UndefOr[Double] = js.undefined,
-    flash_markup: String = null,
-    gallery_markup: String = null,
-    hideflash: js.UndefOr[Boolean] = js.undefined,
-    hook: String = null,
-    horizontal_padding: js.UndefOr[Double] = js.undefined,
-    ie6_fallback: js.UndefOr[Boolean] = js.undefined,
-    iframe_markup: String = null,
-    image_markup: String = null,
-    inline_markup: String = null,
-    keyboard_shortcuts: js.UndefOr[Boolean] = js.undefined,
-    markup: String = null,
-    modal: js.UndefOr[Boolean] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    overlay_gallery: js.UndefOr[Boolean] = js.undefined,
-    overlay_gallery_max: js.UndefOr[Double] = js.undefined,
-    quicktime_markup: String = null,
-    show_title: js.UndefOr[Boolean] = js.undefined,
-    slideshow: js.Any = null,
-    social_tools: js.Any = null,
-    theme: String = null,
-    wmode: String = null
-  ): PrettyPhotoSettings = {
+  def apply(): PrettyPhotoSettings = {
     val __obj = js.Dynamic.literal()
-    if (ajaxcallback != null) __obj.updateDynamic("ajaxcallback")(js.Any.fromFunction0(ajaxcallback))
-    if (!js.isUndefined(allow_expand)) __obj.updateDynamic("allow_expand")(allow_expand.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allow_resize)) __obj.updateDynamic("allow_resize")(allow_resize.get.asInstanceOf[js.Any])
-    if (animation_speed != null) __obj.updateDynamic("animation_speed")(animation_speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay_slideshow)) __obj.updateDynamic("autoplay_slideshow")(autoplay_slideshow.get.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (changepicturecallback != null) __obj.updateDynamic("changepicturecallback")(js.Any.fromFunction0(changepicturecallback))
-    if (counter_separator_label != null) __obj.updateDynamic("counter_separator_label")(counter_separator_label.asInstanceOf[js.Any])
-    if (custom_markup != null) __obj.updateDynamic("custom_markup")(custom_markup.asInstanceOf[js.Any])
-    if (!js.isUndefined(deeplinking)) __obj.updateDynamic("deeplinking")(deeplinking.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(default_height)) __obj.updateDynamic("default_height")(default_height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(default_width)) __obj.updateDynamic("default_width")(default_width.get.asInstanceOf[js.Any])
-    if (flash_markup != null) __obj.updateDynamic("flash_markup")(flash_markup.asInstanceOf[js.Any])
-    if (gallery_markup != null) __obj.updateDynamic("gallery_markup")(gallery_markup.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideflash)) __obj.updateDynamic("hideflash")(hideflash.get.asInstanceOf[js.Any])
-    if (hook != null) __obj.updateDynamic("hook")(hook.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal_padding)) __obj.updateDynamic("horizontal_padding")(horizontal_padding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ie6_fallback)) __obj.updateDynamic("ie6_fallback")(ie6_fallback.get.asInstanceOf[js.Any])
-    if (iframe_markup != null) __obj.updateDynamic("iframe_markup")(iframe_markup.asInstanceOf[js.Any])
-    if (image_markup != null) __obj.updateDynamic("image_markup")(image_markup.asInstanceOf[js.Any])
-    if (inline_markup != null) __obj.updateDynamic("inline_markup")(inline_markup.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard_shortcuts)) __obj.updateDynamic("keyboard_shortcuts")(keyboard_shortcuts.get.asInstanceOf[js.Any])
-    if (markup != null) __obj.updateDynamic("markup")(markup.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlay_gallery)) __obj.updateDynamic("overlay_gallery")(overlay_gallery.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlay_gallery_max)) __obj.updateDynamic("overlay_gallery_max")(overlay_gallery_max.get.asInstanceOf[js.Any])
-    if (quicktime_markup != null) __obj.updateDynamic("quicktime_markup")(quicktime_markup.asInstanceOf[js.Any])
-    if (!js.isUndefined(show_title)) __obj.updateDynamic("show_title")(show_title.get.asInstanceOf[js.Any])
-    if (slideshow != null) __obj.updateDynamic("slideshow")(slideshow.asInstanceOf[js.Any])
-    if (social_tools != null) __obj.updateDynamic("social_tools")(social_tools.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (wmode != null) __obj.updateDynamic("wmode")(wmode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPhotoSettings]
   }
+  @scala.inline
+  implicit class PrettyPhotoSettingsOps[Self <: PrettyPhotoSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAjaxcallback(value: () => Unit): Self = this.set("ajaxcallback", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteAjaxcallback: Self = this.set("ajaxcallback", js.undefined)
+    @scala.inline
+    def setAllow_expand(value: Boolean): Self = this.set("allow_expand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllow_expand: Self = this.set("allow_expand", js.undefined)
+    @scala.inline
+    def setAllow_resize(value: Boolean): Self = this.set("allow_resize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllow_resize: Self = this.set("allow_resize", js.undefined)
+    @scala.inline
+    def setAnimation_speed(value: String): Self = this.set("animation_speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation_speed: Self = this.set("animation_speed", js.undefined)
+    @scala.inline
+    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    @scala.inline
+    def setAutoplay_slideshow(value: Boolean): Self = this.set("autoplay_slideshow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplay_slideshow: Self = this.set("autoplay_slideshow", js.undefined)
+    @scala.inline
+    def setCallback(value: () => Unit): Self = this.set("callback", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setChangepicturecallback(value: () => Unit): Self = this.set("changepicturecallback", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteChangepicturecallback: Self = this.set("changepicturecallback", js.undefined)
+    @scala.inline
+    def setCounter_separator_label(value: String): Self = this.set("counter_separator_label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCounter_separator_label: Self = this.set("counter_separator_label", js.undefined)
+    @scala.inline
+    def setCustom_markup(value: String): Self = this.set("custom_markup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom_markup: Self = this.set("custom_markup", js.undefined)
+    @scala.inline
+    def setDeeplinking(value: Boolean): Self = this.set("deeplinking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeeplinking: Self = this.set("deeplinking", js.undefined)
+    @scala.inline
+    def setDefault_height(value: Double): Self = this.set("default_height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_height: Self = this.set("default_height", js.undefined)
+    @scala.inline
+    def setDefault_width(value: Double): Self = this.set("default_width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_width: Self = this.set("default_width", js.undefined)
+    @scala.inline
+    def setFlash_markup(value: String): Self = this.set("flash_markup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlash_markup: Self = this.set("flash_markup", js.undefined)
+    @scala.inline
+    def setGallery_markup(value: String): Self = this.set("gallery_markup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGallery_markup: Self = this.set("gallery_markup", js.undefined)
+    @scala.inline
+    def setHideflash(value: Boolean): Self = this.set("hideflash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideflash: Self = this.set("hideflash", js.undefined)
+    @scala.inline
+    def setHook(value: String): Self = this.set("hook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHook: Self = this.set("hook", js.undefined)
+    @scala.inline
+    def setHorizontal_padding(value: Double): Self = this.set("horizontal_padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal_padding: Self = this.set("horizontal_padding", js.undefined)
+    @scala.inline
+    def setIe6_fallback(value: Boolean): Self = this.set("ie6_fallback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIe6_fallback: Self = this.set("ie6_fallback", js.undefined)
+    @scala.inline
+    def setIframe_markup(value: String): Self = this.set("iframe_markup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIframe_markup: Self = this.set("iframe_markup", js.undefined)
+    @scala.inline
+    def setImage_markup(value: String): Self = this.set("image_markup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage_markup: Self = this.set("image_markup", js.undefined)
+    @scala.inline
+    def setInline_markup(value: String): Self = this.set("inline_markup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline_markup: Self = this.set("inline_markup", js.undefined)
+    @scala.inline
+    def setKeyboard_shortcuts(value: Boolean): Self = this.set("keyboard_shortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboard_shortcuts: Self = this.set("keyboard_shortcuts", js.undefined)
+    @scala.inline
+    def setMarkup(value: String): Self = this.set("markup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkup: Self = this.set("markup", js.undefined)
+    @scala.inline
+    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModal: Self = this.set("modal", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setOverlay_gallery(value: Boolean): Self = this.set("overlay_gallery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay_gallery: Self = this.set("overlay_gallery", js.undefined)
+    @scala.inline
+    def setOverlay_gallery_max(value: Double): Self = this.set("overlay_gallery_max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay_gallery_max: Self = this.set("overlay_gallery_max", js.undefined)
+    @scala.inline
+    def setQuicktime_markup(value: String): Self = this.set("quicktime_markup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuicktime_markup: Self = this.set("quicktime_markup", js.undefined)
+    @scala.inline
+    def setShow_title(value: Boolean): Self = this.set("show_title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow_title: Self = this.set("show_title", js.undefined)
+    @scala.inline
+    def setSlideshow(value: js.Any): Self = this.set("slideshow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideshow: Self = this.set("slideshow", js.undefined)
+    @scala.inline
+    def setSocial_tools(value: js.Any): Self = this.set("social_tools", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocial_tools: Self = this.set("social_tools", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setWmode(value: String): Self = this.set("wmode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWmode: Self = this.set("wmode", js.undefined)
+  }
+  
 }
 

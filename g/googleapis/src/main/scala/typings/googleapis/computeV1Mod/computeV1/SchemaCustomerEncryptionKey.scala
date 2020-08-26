@@ -27,12 +27,34 @@ trait SchemaCustomerEncryptionKey extends js.Object {
 
 object SchemaCustomerEncryptionKey {
   @scala.inline
-  def apply(kmsKeyName: String = null, rawKey: String = null, sha256: String = null): SchemaCustomerEncryptionKey = {
+  def apply(): SchemaCustomerEncryptionKey = {
     val __obj = js.Dynamic.literal()
-    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
-    if (rawKey != null) __obj.updateDynamic("rawKey")(rawKey.asInstanceOf[js.Any])
-    if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomerEncryptionKey]
   }
+  @scala.inline
+  implicit class SchemaCustomerEncryptionKeyOps[Self <: SchemaCustomerEncryptionKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKmsKeyName(value: String): Self = this.set("kmsKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyName: Self = this.set("kmsKeyName", js.undefined)
+    @scala.inline
+    def setRawKey(value: String): Self = this.set("rawKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawKey: Self = this.set("rawKey", js.undefined)
+    @scala.inline
+    def setSha256(value: String): Self = this.set("sha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha256: Self = this.set("sha256", js.undefined)
+  }
+  
 }
 

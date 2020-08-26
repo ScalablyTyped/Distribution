@@ -26,17 +26,36 @@ trait PublishVersionRequest extends js.Object {
 
 object PublishVersionRequest {
   @scala.inline
-  def apply(
-    FunctionName: FunctionName,
-    CodeSha256: String = null,
-    Description: Description = null,
-    RevisionId: String = null
-  ): PublishVersionRequest = {
+  def apply(FunctionName: FunctionName): PublishVersionRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
-    if (CodeSha256 != null) __obj.updateDynamic("CodeSha256")(CodeSha256.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishVersionRequest]
   }
+  @scala.inline
+  implicit class PublishVersionRequestOps[Self <: PublishVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFunctionName(value: FunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCodeSha256(value: String): Self = this.set("CodeSha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeSha256: Self = this.set("CodeSha256", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setRevisionId(value: String): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+  }
+  
 }
 

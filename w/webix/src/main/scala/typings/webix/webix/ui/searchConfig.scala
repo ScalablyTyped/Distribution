@@ -7,162 +7,273 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait searchConfig extends js.Object {
-  var align: js.UndefOr[String] = js.undefined
-  var animate: js.UndefOr[js.Any] = js.undefined
-  var attributes: js.UndefOr[js.Any] = js.undefined
-  var autowidth: js.UndefOr[Boolean] = js.undefined
-  var borderless: js.UndefOr[Boolean] = js.undefined
-  var bottomLabel: js.UndefOr[String] = js.undefined
-  var bottomPadding: js.UndefOr[Double] = js.undefined
-  var click: js.UndefOr[WebixCallback] = js.undefined
-  var container: js.UndefOr[String | HTMLElement] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[js.Any] = js.undefined
-  var gravity: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var hotkey: js.UndefOr[String] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String | Double] = js.undefined
-  var inputAlign: js.UndefOr[String] = js.undefined
-  var inputHeight: js.UndefOr[Double] = js.undefined
-  var inputWidth: js.UndefOr[Double] = js.undefined
-  var invalid: js.UndefOr[Boolean] = js.undefined
-  var invalidMessage: js.UndefOr[String] = js.undefined
-  var keyPressTimeout: js.UndefOr[Double] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var labelAlign: js.UndefOr[String] = js.undefined
-  var labelPosition: js.UndefOr[String] = js.undefined
-  var labelWidth: js.UndefOr[Double] = js.undefined
-  var maxHeight: js.UndefOr[Double] = js.undefined
-  var maxWidth: js.UndefOr[Double] = js.undefined
-  var minHeight: js.UndefOr[Double] = js.undefined
-  var minWidth: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var on: js.UndefOr[EventHash] = js.undefined
-  var pattern: js.UndefOr[js.Any] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var popup: js.UndefOr[String] = js.undefined
-  var readonly: js.UndefOr[Boolean] = js.undefined
-  var relatedAction: js.UndefOr[String] = js.undefined
-  var relatedView: js.UndefOr[String] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var suggest: js.UndefOr[js.Any] = js.undefined
-  var tooltip: js.UndefOr[js.Any] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var validate: js.UndefOr[WebixCallback] = js.undefined
-  var validateEvent: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[String | Double] = js.undefined
-  var view: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var align: js.UndefOr[String] = js.native
+  var animate: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.native
+  var autowidth: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.native
+  var bottomLabel: js.UndefOr[String] = js.native
+  var bottomPadding: js.UndefOr[Double] = js.native
+  var click: js.UndefOr[WebixCallback] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.native
+  var css: js.UndefOr[js.Any] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[js.Any] = js.native
+  var gravity: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var hotkey: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String | Double] = js.native
+  var inputAlign: js.UndefOr[String] = js.native
+  var inputHeight: js.UndefOr[Double] = js.native
+  var inputWidth: js.UndefOr[Double] = js.native
+  var invalid: js.UndefOr[Boolean] = js.native
+  var invalidMessage: js.UndefOr[String] = js.native
+  var keyPressTimeout: js.UndefOr[Double] = js.native
+  var label: js.UndefOr[String] = js.native
+  var labelAlign: js.UndefOr[String] = js.native
+  var labelPosition: js.UndefOr[String] = js.native
+  var labelWidth: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var on: js.UndefOr[EventHash] = js.native
+  var pattern: js.UndefOr[js.Any] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var popup: js.UndefOr[String] = js.native
+  var readonly: js.UndefOr[Boolean] = js.native
+  var relatedAction: js.UndefOr[String] = js.native
+  var relatedView: js.UndefOr[String] = js.native
+  var required: js.UndefOr[Boolean] = js.native
+  var suggest: js.UndefOr[js.Any] = js.native
+  var tooltip: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var validate: js.UndefOr[WebixCallback] = js.native
+  var validateEvent: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String | Double] = js.native
+  var view: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object searchConfig {
   @scala.inline
-  def apply(
-    align: String = null,
-    animate: js.Any = null,
-    attributes: js.Any = null,
-    autowidth: js.UndefOr[Boolean] = js.undefined,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    bottomLabel: String = null,
-    bottomPadding: js.UndefOr[Double] = js.undefined,
-    click: /* repeated */ js.Any => js.Any = null,
-    container: String | HTMLElement = null,
-    css: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    format: js.Any = null,
-    gravity: js.UndefOr[Double] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hotkey: String = null,
-    icon: String = null,
-    id: String | Double = null,
-    inputAlign: String = null,
-    inputHeight: js.UndefOr[Double] = js.undefined,
-    inputWidth: js.UndefOr[Double] = js.undefined,
-    invalid: js.UndefOr[Boolean] = js.undefined,
-    invalidMessage: String = null,
-    keyPressTimeout: js.UndefOr[Double] = js.undefined,
-    label: String = null,
-    labelAlign: String = null,
-    labelPosition: String = null,
-    labelWidth: js.UndefOr[Double] = js.undefined,
-    maxHeight: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    minHeight: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    on: EventHash = null,
-    pattern: js.Any = null,
-    placeholder: String = null,
-    popup: String = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    relatedAction: String = null,
-    relatedView: String = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    suggest: js.Any = null,
-    tooltip: js.Any = null,
-    `type`: String = null,
-    validate: /* repeated */ js.Any => js.Any = null,
-    validateEvent: String = null,
-    value: String | Double = null,
-    view: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): searchConfig = {
+  def apply(): searchConfig = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(autowidth)) __obj.updateDynamic("autowidth")(autowidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.get.asInstanceOf[js.Any])
-    if (bottomLabel != null) __obj.updateDynamic("bottomLabel")(bottomLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottomPadding)) __obj.updateDynamic("bottomPadding")(bottomPadding.get.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(gravity)) __obj.updateDynamic("gravity")(gravity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (hotkey != null) __obj.updateDynamic("hotkey")(hotkey.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputAlign != null) __obj.updateDynamic("inputAlign")(inputAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputHeight)) __obj.updateDynamic("inputHeight")(inputHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputWidth)) __obj.updateDynamic("inputWidth")(inputWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(invalid)) __obj.updateDynamic("invalid")(invalid.get.asInstanceOf[js.Any])
-    if (invalidMessage != null) __obj.updateDynamic("invalidMessage")(invalidMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyPressTimeout)) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
-    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelWidth)) __obj.updateDynamic("labelWidth")(labelWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
-    if (relatedAction != null) __obj.updateDynamic("relatedAction")(relatedAction.asInstanceOf[js.Any])
-    if (relatedView != null) __obj.updateDynamic("relatedView")(relatedView.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (suggest != null) __obj.updateDynamic("suggest")(suggest.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
-    if (validateEvent != null) __obj.updateDynamic("validateEvent")(validateEvent.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[searchConfig]
   }
+  @scala.inline
+  implicit class searchConfigOps[Self <: searchConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setAnimate(value: js.Any): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setAttributes(value: js.Any): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setAutowidth(value: Boolean): Self = this.set("autowidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutowidth: Self = this.set("autowidth", js.undefined)
+    @scala.inline
+    def setBorderless(value: Boolean): Self = this.set("borderless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderless: Self = this.set("borderless", js.undefined)
+    @scala.inline
+    def setBottomLabel(value: String): Self = this.set("bottomLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomLabel: Self = this.set("bottomLabel", js.undefined)
+    @scala.inline
+    def setBottomPadding(value: Double): Self = this.set("bottomPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomPadding: Self = this.set("bottomPadding", js.undefined)
+    @scala.inline
+    def setClick(value: /* repeated */ js.Any => js.Any): Self = this.set("click", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClick: Self = this.set("click", js.undefined)
+    @scala.inline
+    def setContainer(value: String | HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setCss(value: js.Any): Self = this.set("css", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCss: Self = this.set("css", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setFormat(value: js.Any): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setGravity(value: Double): Self = this.set("gravity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGravity: Self = this.set("gravity", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setHotkey(value: String): Self = this.set("hotkey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHotkey: Self = this.set("hotkey", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInputAlign(value: String): Self = this.set("inputAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAlign: Self = this.set("inputAlign", js.undefined)
+    @scala.inline
+    def setInputHeight(value: Double): Self = this.set("inputHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputHeight: Self = this.set("inputHeight", js.undefined)
+    @scala.inline
+    def setInputWidth(value: Double): Self = this.set("inputWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputWidth: Self = this.set("inputWidth", js.undefined)
+    @scala.inline
+    def setInvalid(value: Boolean): Self = this.set("invalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalid: Self = this.set("invalid", js.undefined)
+    @scala.inline
+    def setInvalidMessage(value: String): Self = this.set("invalidMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidMessage: Self = this.set("invalidMessage", js.undefined)
+    @scala.inline
+    def setKeyPressTimeout(value: Double): Self = this.set("keyPressTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPressTimeout: Self = this.set("keyPressTimeout", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelAlign(value: String): Self = this.set("labelAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelAlign: Self = this.set("labelAlign", js.undefined)
+    @scala.inline
+    def setLabelPosition(value: String): Self = this.set("labelPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelPosition: Self = this.set("labelPosition", js.undefined)
+    @scala.inline
+    def setLabelWidth(value: Double): Self = this.set("labelWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelWidth: Self = this.set("labelWidth", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOn(value: EventHash): Self = this.set("on", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOn: Self = this.set("on", js.undefined)
+    @scala.inline
+    def setPattern(value: js.Any): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPopup(value: String): Self = this.set("popup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopup: Self = this.set("popup", js.undefined)
+    @scala.inline
+    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadonly: Self = this.set("readonly", js.undefined)
+    @scala.inline
+    def setRelatedAction(value: String): Self = this.set("relatedAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedAction: Self = this.set("relatedAction", js.undefined)
+    @scala.inline
+    def setRelatedView(value: String): Self = this.set("relatedView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedView: Self = this.set("relatedView", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setSuggest(value: js.Any): Self = this.set("suggest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggest: Self = this.set("suggest", js.undefined)
+    @scala.inline
+    def setTooltip(value: js.Any): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValidate(value: /* repeated */ js.Any => js.Any): Self = this.set("validate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteValidate: Self = this.set("validate", js.undefined)
+    @scala.inline
+    def setValidateEvent(value: String): Self = this.set("validateEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateEvent: Self = this.set("validateEvent", js.undefined)
+    @scala.inline
+    def setValue(value: String | Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

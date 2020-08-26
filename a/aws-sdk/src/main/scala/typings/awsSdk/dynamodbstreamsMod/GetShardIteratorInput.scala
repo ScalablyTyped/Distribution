@@ -26,15 +26,32 @@ trait GetShardIteratorInput extends js.Object {
 
 object GetShardIteratorInput {
   @scala.inline
-  def apply(
-    ShardId: ShardId,
-    ShardIteratorType: ShardIteratorType,
-    StreamArn: StreamArn,
-    SequenceNumber: SequenceNumber = null
-  ): GetShardIteratorInput = {
+  def apply(ShardId: ShardId, ShardIteratorType: ShardIteratorType, StreamArn: StreamArn): GetShardIteratorInput = {
     val __obj = js.Dynamic.literal(ShardId = ShardId.asInstanceOf[js.Any], ShardIteratorType = ShardIteratorType.asInstanceOf[js.Any], StreamArn = StreamArn.asInstanceOf[js.Any])
-    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetShardIteratorInput]
   }
+  @scala.inline
+  implicit class GetShardIteratorInputOps[Self <: GetShardIteratorInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShardId(value: ShardId): Self = this.set("ShardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShardIteratorType(value: ShardIteratorType): Self = this.set("ShardIteratorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamArn(value: StreamArn): Self = this.set("StreamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSequenceNumber(value: SequenceNumber): Self = this.set("SequenceNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSequenceNumber: Self = this.set("SequenceNumber", js.undefined)
+  }
+  
 }
 

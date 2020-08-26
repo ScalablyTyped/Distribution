@@ -38,23 +38,52 @@ trait ModifySnapshotAttributeRequest extends js.Object {
 
 object ModifySnapshotAttributeRequest {
   @scala.inline
-  def apply(
-    SnapshotId: SnapshotId,
-    Attribute: SnapshotAttributeName = null,
-    CreateVolumePermission: CreateVolumePermissionModifications = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    GroupNames: GroupNameStringList = null,
-    OperationType: OperationType = null,
-    UserIds: UserIdStringList = null
-  ): ModifySnapshotAttributeRequest = {
+  def apply(SnapshotId: SnapshotId): ModifySnapshotAttributeRequest = {
     val __obj = js.Dynamic.literal(SnapshotId = SnapshotId.asInstanceOf[js.Any])
-    if (Attribute != null) __obj.updateDynamic("Attribute")(Attribute.asInstanceOf[js.Any])
-    if (CreateVolumePermission != null) __obj.updateDynamic("CreateVolumePermission")(CreateVolumePermission.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (GroupNames != null) __obj.updateDynamic("GroupNames")(GroupNames.asInstanceOf[js.Any])
-    if (OperationType != null) __obj.updateDynamic("OperationType")(OperationType.asInstanceOf[js.Any])
-    if (UserIds != null) __obj.updateDynamic("UserIds")(UserIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifySnapshotAttributeRequest]
   }
+  @scala.inline
+  implicit class ModifySnapshotAttributeRequestOps[Self <: ModifySnapshotAttributeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnapshotId(value: SnapshotId): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttribute(value: SnapshotAttributeName): Self = this.set("Attribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttribute: Self = this.set("Attribute", js.undefined)
+    @scala.inline
+    def setCreateVolumePermission(value: CreateVolumePermissionModifications): Self = this.set("CreateVolumePermission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateVolumePermission: Self = this.set("CreateVolumePermission", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setGroupNamesVarargs(value: SecurityGroupName*): Self = this.set("GroupNames", js.Array(value :_*))
+    @scala.inline
+    def setGroupNames(value: GroupNameStringList): Self = this.set("GroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupNames: Self = this.set("GroupNames", js.undefined)
+    @scala.inline
+    def setOperationType(value: OperationType): Self = this.set("OperationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationType: Self = this.set("OperationType", js.undefined)
+    @scala.inline
+    def setUserIdsVarargs(value: String*): Self = this.set("UserIds", js.Array(value :_*))
+    @scala.inline
+    def setUserIds(value: UserIdStringList): Self = this.set("UserIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserIds: Self = this.set("UserIds", js.undefined)
+  }
+  
 }
 

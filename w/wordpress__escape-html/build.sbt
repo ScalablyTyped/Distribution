@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "wordpress__escape-html"
-version := "1.9.0-6e2f7b"
-scalaVersion := "2.13.2"
+version := "1.9.0-3c5dfb"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

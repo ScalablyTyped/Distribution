@@ -11,8 +11,8 @@ A simple and non-blocking PNG encoder / decoder.
 | Full name          | png-async |
 | Keywords           | png, stream, async, non-blocking |
 | # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 535100 |
+| # dependents       | 6 |
+| # downloads        | 573398 |
 | # stars            | 1 |
 
 ## Links

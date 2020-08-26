@@ -12,7 +12,7 @@ Official SendGrid NodeJS library.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 120 |
-| # downloads        | 3898466 |
+| # downloads        | 3895922 |
 | # stars            | 36 |
 
 ## Links

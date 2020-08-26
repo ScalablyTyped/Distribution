@@ -18,11 +18,34 @@ trait BatchGetNamedQueryOutput extends js.Object {
 
 object BatchGetNamedQueryOutput {
   @scala.inline
-  def apply(NamedQueries: NamedQueryList = null, UnprocessedNamedQueryIds: UnprocessedNamedQueryIdList = null): BatchGetNamedQueryOutput = {
+  def apply(): BatchGetNamedQueryOutput = {
     val __obj = js.Dynamic.literal()
-    if (NamedQueries != null) __obj.updateDynamic("NamedQueries")(NamedQueries.asInstanceOf[js.Any])
-    if (UnprocessedNamedQueryIds != null) __obj.updateDynamic("UnprocessedNamedQueryIds")(UnprocessedNamedQueryIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetNamedQueryOutput]
   }
+  @scala.inline
+  implicit class BatchGetNamedQueryOutputOps[Self <: BatchGetNamedQueryOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamedQueriesVarargs(value: NamedQuery*): Self = this.set("NamedQueries", js.Array(value :_*))
+    @scala.inline
+    def setNamedQueries(value: NamedQueryList): Self = this.set("NamedQueries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedQueries: Self = this.set("NamedQueries", js.undefined)
+    @scala.inline
+    def setUnprocessedNamedQueryIdsVarargs(value: UnprocessedNamedQueryId*): Self = this.set("UnprocessedNamedQueryIds", js.Array(value :_*))
+    @scala.inline
+    def setUnprocessedNamedQueryIds(value: UnprocessedNamedQueryIdList): Self = this.set("UnprocessedNamedQueryIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnprocessedNamedQueryIds: Self = this.set("UnprocessedNamedQueryIds", js.undefined)
+  }
+  
 }
 

@@ -26,17 +26,36 @@ trait UpdateResourceShareRequest extends js.Object {
 
 object UpdateResourceShareRequest {
   @scala.inline
-  def apply(
-    resourceShareArn: String,
-    allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined,
-    clientToken: String = null,
-    name: String = null
-  ): UpdateResourceShareRequest = {
+  def apply(resourceShareArn: String): UpdateResourceShareRequest = {
     val __obj = js.Dynamic.literal(resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExternalPrincipals)) __obj.updateDynamic("allowExternalPrincipals")(allowExternalPrincipals.get.asInstanceOf[js.Any])
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResourceShareRequest]
   }
+  @scala.inline
+  implicit class UpdateResourceShareRequestOps[Self <: UpdateResourceShareRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceShareArn(value: String): Self = this.set("resourceShareArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowExternalPrincipals(value: Boolean): Self = this.set("allowExternalPrincipals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowExternalPrincipals: Self = this.set("allowExternalPrincipals", js.undefined)
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

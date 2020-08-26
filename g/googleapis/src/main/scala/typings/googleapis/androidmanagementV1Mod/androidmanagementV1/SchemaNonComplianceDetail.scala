@@ -50,22 +50,46 @@ trait SchemaNonComplianceDetail extends js.Object {
 
 object SchemaNonComplianceDetail {
   @scala.inline
-  def apply(
-    currentValue: js.Any = null,
-    fieldPath: String = null,
-    installationFailureReason: String = null,
-    nonComplianceReason: String = null,
-    packageName: String = null,
-    settingName: String = null
-  ): SchemaNonComplianceDetail = {
+  def apply(): SchemaNonComplianceDetail = {
     val __obj = js.Dynamic.literal()
-    if (currentValue != null) __obj.updateDynamic("currentValue")(currentValue.asInstanceOf[js.Any])
-    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath.asInstanceOf[js.Any])
-    if (installationFailureReason != null) __obj.updateDynamic("installationFailureReason")(installationFailureReason.asInstanceOf[js.Any])
-    if (nonComplianceReason != null) __obj.updateDynamic("nonComplianceReason")(nonComplianceReason.asInstanceOf[js.Any])
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
-    if (settingName != null) __obj.updateDynamic("settingName")(settingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNonComplianceDetail]
   }
+  @scala.inline
+  implicit class SchemaNonComplianceDetailOps[Self <: SchemaNonComplianceDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentValue(value: js.Any): Self = this.set("currentValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentValue: Self = this.set("currentValue", js.undefined)
+    @scala.inline
+    def setFieldPath(value: String): Self = this.set("fieldPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldPath: Self = this.set("fieldPath", js.undefined)
+    @scala.inline
+    def setInstallationFailureReason(value: String): Self = this.set("installationFailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallationFailureReason: Self = this.set("installationFailureReason", js.undefined)
+    @scala.inline
+    def setNonComplianceReason(value: String): Self = this.set("nonComplianceReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonComplianceReason: Self = this.set("nonComplianceReason", js.undefined)
+    @scala.inline
+    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageName: Self = this.set("packageName", js.undefined)
+    @scala.inline
+    def setSettingName(value: String): Self = this.set("settingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingName: Self = this.set("settingName", js.undefined)
+  }
+  
 }
 

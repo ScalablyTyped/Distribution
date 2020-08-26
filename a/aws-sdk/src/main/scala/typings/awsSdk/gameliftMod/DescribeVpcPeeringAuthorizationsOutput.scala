@@ -14,10 +14,28 @@ trait DescribeVpcPeeringAuthorizationsOutput extends js.Object {
 
 object DescribeVpcPeeringAuthorizationsOutput {
   @scala.inline
-  def apply(VpcPeeringAuthorizations: VpcPeeringAuthorizationList = null): DescribeVpcPeeringAuthorizationsOutput = {
+  def apply(): DescribeVpcPeeringAuthorizationsOutput = {
     val __obj = js.Dynamic.literal()
-    if (VpcPeeringAuthorizations != null) __obj.updateDynamic("VpcPeeringAuthorizations")(VpcPeeringAuthorizations.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVpcPeeringAuthorizationsOutput]
   }
+  @scala.inline
+  implicit class DescribeVpcPeeringAuthorizationsOutputOps[Self <: DescribeVpcPeeringAuthorizationsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpcPeeringAuthorizationsVarargs(value: VpcPeeringAuthorization*): Self = this.set("VpcPeeringAuthorizations", js.Array(value :_*))
+    @scala.inline
+    def setVpcPeeringAuthorizations(value: VpcPeeringAuthorizationList): Self = this.set("VpcPeeringAuthorizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcPeeringAuthorizations: Self = this.set("VpcPeeringAuthorizations", js.undefined)
+  }
+  
 }
 

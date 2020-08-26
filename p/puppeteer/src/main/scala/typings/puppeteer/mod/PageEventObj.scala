@@ -5,53 +5,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PageEventObj extends js.Object {
   /** Emitted when the page closes. */
-  var close: js.UndefOr[scala.Nothing] = js.undefined
+  var close: js.UndefOr[scala.Nothing] = js.native
   /**
     * Emitted when JavaScript within the page calls one of console API methods, e.g. console.log or console.dir.
     * Also emitted if the page throws an error or a warning.
     */
-  var console: ConsoleMessage
+  var console: ConsoleMessage = js.native
   /**
     * Emitted when a JavaScript dialog appears, such as alert, prompt, confirm or beforeunload.
     * Puppeteer can respond to the dialog via Dialog's accept or dismiss methods.
     */
-  var dialog: Dialog
+  var dialog: Dialog = js.native
   /** Emitted when the page crashes. */
-  var error: Error
+  var error: Error = js.native
   /** Emitted when a frame is attached. */
-  var frameattached: Frame
+  var frameattached: Frame = js.native
   /** Emitted when a frame is detached. */
-  var framedetached: Frame
+  var framedetached: Frame = js.native
   /** Emitted when a frame is navigated to a new url. */
-  var framenavigated: Frame
+  var framenavigated: Frame = js.native
   /** Emitted when the JavaScript load event is dispatched. */
-  var load: js.UndefOr[scala.Nothing] = js.undefined
+  var load: js.UndefOr[scala.Nothing] = js.native
   /**
     * Emitted when the JavaScript code makes a call to `console.timeStamp`.
     * For the list of metrics see `page.metrics`.
     */
-  var metrics: typings.puppeteer.anon.Metrics
+  var metrics: typings.puppeteer.anon.Metrics = js.native
   /** Emitted when an uncaught exception happens within the page. */
-  var pageerror: Error
+  var pageerror: Error = js.native
   /** Emitted when the page opens a new tab or window. */
-  var popup: Page
+  var popup: Page = js.native
   /**
     * Emitted when a page issues a request. The request object is read-only.
     * In order to intercept and mutate requests, see page.setRequestInterceptionEnabled.
     */
-  var request: Request
+  var request: Request = js.native
   /** Emitted when a request fails, for example by timing out. */
-  var requestfailed: Request
+  var requestfailed: Request = js.native
   /** Emitted when a request finishes successfully. */
-  var requestfinished: Request
+  var requestfinished: Request = js.native
   /** Emitted when a response is received. */
-  var response: Response
+  var response: Response = js.native
   /** Emitted when a dedicated WebWorker is spawned by the page. */
-  var workercreated: Worker
+  var workercreated: Worker = js.native
   /** Emitted when a dedicated WebWorker is terminated. */
-  var workerdestroyed: Worker
+  var workerdestroyed: Worker = js.native
 }
 
 object PageEventObj {
@@ -76,5 +77,48 @@ object PageEventObj {
     val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], frameattached = frameattached.asInstanceOf[js.Any], framedetached = framedetached.asInstanceOf[js.Any], framenavigated = framenavigated.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], pageerror = pageerror.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], requestfailed = requestfailed.asInstanceOf[js.Any], requestfinished = requestfinished.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], workercreated = workercreated.asInstanceOf[js.Any], workerdestroyed = workerdestroyed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageEventObj]
   }
+  @scala.inline
+  implicit class PageEventObjOps[Self <: PageEventObj] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsole(value: ConsoleMessage): Self = this.set("console", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDialog(value: Dialog): Self = this.set("dialog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFrameattached(value: Frame): Self = this.set("frameattached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFramedetached(value: Frame): Self = this.set("framedetached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFramenavigated(value: Frame): Self = this.set("framenavigated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetrics(value: typings.puppeteer.anon.Metrics): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPageerror(value: Error): Self = this.set("pageerror", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPopup(value: Page): Self = this.set("popup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequest(value: Request): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequestfailed(value: Request): Self = this.set("requestfailed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequestfinished(value: Request): Self = this.set("requestfinished", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResponse(value: Response): Self = this.set("response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkercreated(value: Worker): Self = this.set("workercreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkerdestroyed(value: Worker): Self = this.set("workerdestroyed", value.asInstanceOf[js.Any])
+  }
+  
 }
 

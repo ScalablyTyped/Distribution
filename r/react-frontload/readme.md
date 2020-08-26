@@ -12,7 +12,7 @@ Bind Async Data Dependencies to React Components
 | Keywords           | react, load, data, async, bind, server, server render, ssr, server-side rendering, server side rendering, server rendering |
 | # releases         | 10 |
 | # dependents       | 5 |
-| # downloads        | 160245 |
+| # downloads        | 165317 |
 | # stars            | 0 |
 
 ## Links

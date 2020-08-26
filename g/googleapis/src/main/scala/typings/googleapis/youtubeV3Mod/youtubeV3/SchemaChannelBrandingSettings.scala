@@ -29,18 +29,40 @@ trait SchemaChannelBrandingSettings extends js.Object {
 
 object SchemaChannelBrandingSettings {
   @scala.inline
-  def apply(
-    channel: SchemaChannelSettings = null,
-    hints: js.Array[SchemaPropertyValue] = null,
-    image: SchemaImageSettings = null,
-    watch: SchemaWatchSettings = null
-  ): SchemaChannelBrandingSettings = {
+  def apply(): SchemaChannelBrandingSettings = {
     val __obj = js.Dynamic.literal()
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (watch != null) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChannelBrandingSettings]
   }
+  @scala.inline
+  implicit class SchemaChannelBrandingSettingsOps[Self <: SchemaChannelBrandingSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannel(value: SchemaChannelSettings): Self = this.set("channel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannel: Self = this.set("channel", js.undefined)
+    @scala.inline
+    def setHintsVarargs(value: SchemaPropertyValue*): Self = this.set("hints", js.Array(value :_*))
+    @scala.inline
+    def setHints(value: js.Array[SchemaPropertyValue]): Self = this.set("hints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHints: Self = this.set("hints", js.undefined)
+    @scala.inline
+    def setImage(value: SchemaImageSettings): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setWatch(value: SchemaWatchSettings): Self = this.set("watch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatch: Self = this.set("watch", js.undefined)
+  }
+  
 }
 

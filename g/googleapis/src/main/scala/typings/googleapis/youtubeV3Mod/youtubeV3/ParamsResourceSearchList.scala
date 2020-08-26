@@ -238,88 +238,150 @@ trait ParamsResourceSearchList extends StandardParameters {
 
 object ParamsResourceSearchList {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    channelId: String = null,
-    channelType: String = null,
-    eventType: String = null,
-    fields: String = null,
-    forContentOwner: js.UndefOr[Boolean] = js.undefined,
-    forDeveloper: js.UndefOr[Boolean] = js.undefined,
-    forMine: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    location: String = null,
-    locationRadius: String = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    oauth_token: String = null,
-    onBehalfOfContentOwner: String = null,
-    order: String = null,
-    pageToken: String = null,
-    part: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    publishedAfter: String = null,
-    publishedBefore: String = null,
-    q: String = null,
-    quotaUser: String = null,
-    regionCode: String = null,
-    relatedToVideoId: String = null,
-    relevanceLanguage: String = null,
-    safeSearch: String = null,
-    topicId: String = null,
-    `type`: String = null,
-    userIp: String = null,
-    videoCaption: String = null,
-    videoCategoryId: String = null,
-    videoDefinition: String = null,
-    videoDimension: String = null,
-    videoDuration: String = null,
-    videoEmbeddable: String = null,
-    videoLicense: String = null,
-    videoSyndicated: String = null,
-    videoType: String = null
-  ): ParamsResourceSearchList = {
+  def apply(): ParamsResourceSearchList = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (channelType != null) __obj.updateDynamic("channelType")(channelType.asInstanceOf[js.Any])
-    if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(forContentOwner)) __obj.updateDynamic("forContentOwner")(forContentOwner.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forDeveloper)) __obj.updateDynamic("forDeveloper")(forDeveloper.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forMine)) __obj.updateDynamic("forMine")(forMine.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (locationRadius != null) __obj.updateDynamic("locationRadius")(locationRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (publishedAfter != null) __obj.updateDynamic("publishedAfter")(publishedAfter.asInstanceOf[js.Any])
-    if (publishedBefore != null) __obj.updateDynamic("publishedBefore")(publishedBefore.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
-    if (relatedToVideoId != null) __obj.updateDynamic("relatedToVideoId")(relatedToVideoId.asInstanceOf[js.Any])
-    if (relevanceLanguage != null) __obj.updateDynamic("relevanceLanguage")(relevanceLanguage.asInstanceOf[js.Any])
-    if (safeSearch != null) __obj.updateDynamic("safeSearch")(safeSearch.asInstanceOf[js.Any])
-    if (topicId != null) __obj.updateDynamic("topicId")(topicId.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
-    if (videoCaption != null) __obj.updateDynamic("videoCaption")(videoCaption.asInstanceOf[js.Any])
-    if (videoCategoryId != null) __obj.updateDynamic("videoCategoryId")(videoCategoryId.asInstanceOf[js.Any])
-    if (videoDefinition != null) __obj.updateDynamic("videoDefinition")(videoDefinition.asInstanceOf[js.Any])
-    if (videoDimension != null) __obj.updateDynamic("videoDimension")(videoDimension.asInstanceOf[js.Any])
-    if (videoDuration != null) __obj.updateDynamic("videoDuration")(videoDuration.asInstanceOf[js.Any])
-    if (videoEmbeddable != null) __obj.updateDynamic("videoEmbeddable")(videoEmbeddable.asInstanceOf[js.Any])
-    if (videoLicense != null) __obj.updateDynamic("videoLicense")(videoLicense.asInstanceOf[js.Any])
-    if (videoSyndicated != null) __obj.updateDynamic("videoSyndicated")(videoSyndicated.asInstanceOf[js.Any])
-    if (videoType != null) __obj.updateDynamic("videoType")(videoType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceSearchList]
   }
+  @scala.inline
+  implicit class ParamsResourceSearchListOps[Self <: ParamsResourceSearchList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setChannelType(value: String): Self = this.set("channelType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelType: Self = this.set("channelType", js.undefined)
+    @scala.inline
+    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventType: Self = this.set("eventType", js.undefined)
+    @scala.inline
+    def setForContentOwner(value: Boolean): Self = this.set("forContentOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForContentOwner: Self = this.set("forContentOwner", js.undefined)
+    @scala.inline
+    def setForDeveloper(value: Boolean): Self = this.set("forDeveloper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForDeveloper: Self = this.set("forDeveloper", js.undefined)
+    @scala.inline
+    def setForMine(value: Boolean): Self = this.set("forMine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForMine: Self = this.set("forMine", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setLocationRadius(value: String): Self = this.set("locationRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationRadius: Self = this.set("locationRadius", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setOnBehalfOfContentOwner(value: String): Self = this.set("onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBehalfOfContentOwner: Self = this.set("onBehalfOfContentOwner", js.undefined)
+    @scala.inline
+    def setOrder(value: String): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setPart(value: String): Self = this.set("part", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePart: Self = this.set("part", js.undefined)
+    @scala.inline
+    def setPublishedAfter(value: String): Self = this.set("publishedAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishedAfter: Self = this.set("publishedAfter", js.undefined)
+    @scala.inline
+    def setPublishedBefore(value: String): Self = this.set("publishedBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishedBefore: Self = this.set("publishedBefore", js.undefined)
+    @scala.inline
+    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ: Self = this.set("q", js.undefined)
+    @scala.inline
+    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
+    @scala.inline
+    def setRelatedToVideoId(value: String): Self = this.set("relatedToVideoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedToVideoId: Self = this.set("relatedToVideoId", js.undefined)
+    @scala.inline
+    def setRelevanceLanguage(value: String): Self = this.set("relevanceLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelevanceLanguage: Self = this.set("relevanceLanguage", js.undefined)
+    @scala.inline
+    def setSafeSearch(value: String): Self = this.set("safeSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSafeSearch: Self = this.set("safeSearch", js.undefined)
+    @scala.inline
+    def setTopicId(value: String): Self = this.set("topicId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicId: Self = this.set("topicId", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVideoCaption(value: String): Self = this.set("videoCaption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoCaption: Self = this.set("videoCaption", js.undefined)
+    @scala.inline
+    def setVideoCategoryId(value: String): Self = this.set("videoCategoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoCategoryId: Self = this.set("videoCategoryId", js.undefined)
+    @scala.inline
+    def setVideoDefinition(value: String): Self = this.set("videoDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoDefinition: Self = this.set("videoDefinition", js.undefined)
+    @scala.inline
+    def setVideoDimension(value: String): Self = this.set("videoDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoDimension: Self = this.set("videoDimension", js.undefined)
+    @scala.inline
+    def setVideoDuration(value: String): Self = this.set("videoDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoDuration: Self = this.set("videoDuration", js.undefined)
+    @scala.inline
+    def setVideoEmbeddable(value: String): Self = this.set("videoEmbeddable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoEmbeddable: Self = this.set("videoEmbeddable", js.undefined)
+    @scala.inline
+    def setVideoLicense(value: String): Self = this.set("videoLicense", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoLicense: Self = this.set("videoLicense", js.undefined)
+    @scala.inline
+    def setVideoSyndicated(value: String): Self = this.set("videoSyndicated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoSyndicated: Self = this.set("videoSyndicated", js.undefined)
+    @scala.inline
+    def setVideoType(value: String): Self = this.set("videoType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoType: Self = this.set("videoType", js.undefined)
+  }
+  
 }
 

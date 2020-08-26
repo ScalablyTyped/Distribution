@@ -16,7 +16,15 @@ trait IResource[T] extends js.Object {
   @JSName("$delete")
   def $delete(): js.Any = js.native
   @JSName("$delete")
+  def $delete(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
+  @JSName("$delete")
+  def $delete(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
+  @JSName("$delete")
+  def $delete(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$delete")
   def $delete(params: js.Object): js.Any = js.native
+  @JSName("$delete")
+  def $delete(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$delete")
   def $delete(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$delete")
@@ -28,7 +36,15 @@ trait IResource[T] extends js.Object {
   @JSName("$get")
   def $get(): js.Any = js.native
   @JSName("$get")
+  def $get(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
+  @JSName("$get")
+  def $get(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
+  @JSName("$get")
+  def $get(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$get")
   def $get(params: js.Object): js.Any = js.native
+  @JSName("$get")
+  def $get(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$get")
   def $get(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$get")
@@ -40,7 +56,15 @@ trait IResource[T] extends js.Object {
   @JSName("$query")
   def $query(): js.Any = js.native
   @JSName("$query")
+  def $query(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
+  @JSName("$query")
+  def $query(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
+  @JSName("$query")
+  def $query(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$query")
   def $query(params: js.Object): js.Any = js.native
+  @JSName("$query")
+  def $query(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$query")
   def $query(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$query")
@@ -52,7 +76,15 @@ trait IResource[T] extends js.Object {
   @JSName("$remove")
   def $remove(): js.Any = js.native
   @JSName("$remove")
+  def $remove(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
+  @JSName("$remove")
+  def $remove(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
+  @JSName("$remove")
+  def $remove(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$remove")
   def $remove(params: js.Object): js.Any = js.native
+  @JSName("$remove")
+  def $remove(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$remove")
   def $remove(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$remove")
@@ -64,7 +96,15 @@ trait IResource[T] extends js.Object {
   @JSName("$save")
   def $save(): js.Any = js.native
   @JSName("$save")
+  def $save(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
+  @JSName("$save")
+  def $save(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
+  @JSName("$save")
+  def $save(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$save")
   def $save(params: js.Object): js.Any = js.native
+  @JSName("$save")
+  def $save(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$save")
   def $save(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$save")
@@ -76,7 +116,15 @@ trait IResource[T] extends js.Object {
   @JSName("$update")
   def $update(): js.Any = js.native
   @JSName("$update")
+  def $update(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
+  @JSName("$update")
+  def $update(params: js.UndefOr[scala.Nothing], success: js.Function): js.Any = js.native
+  @JSName("$update")
+  def $update(params: js.UndefOr[scala.Nothing], success: js.Function, error: js.Function): js.Any = js.native
+  @JSName("$update")
   def $update(params: js.Object): js.Any = js.native
+  @JSName("$update")
+  def $update(params: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   @JSName("$update")
   def $update(params: js.Object, success: js.Function): js.Any = js.native
   @JSName("$update")

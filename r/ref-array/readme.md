@@ -11,7 +11,7 @@ Create C "array" instances on top of Buffers
 | Keywords           | array, ref |
 | # releases         | 0 |
 | # dependents       | 133 |
-| # downloads        | 814114 |
+| # downloads        | 795521 |
 | # stars            | 1 |
 
 ## Links

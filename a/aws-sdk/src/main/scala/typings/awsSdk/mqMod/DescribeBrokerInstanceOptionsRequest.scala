@@ -30,20 +30,42 @@ trait DescribeBrokerInstanceOptionsRequest extends js.Object {
 
 object DescribeBrokerInstanceOptionsRequest {
   @scala.inline
-  def apply(
-    EngineType: string = null,
-    HostInstanceType: string = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: string = null,
-    StorageType: string = null
-  ): DescribeBrokerInstanceOptionsRequest = {
+  def apply(): DescribeBrokerInstanceOptionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (EngineType != null) __obj.updateDynamic("EngineType")(EngineType.asInstanceOf[js.Any])
-    if (HostInstanceType != null) __obj.updateDynamic("HostInstanceType")(HostInstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBrokerInstanceOptionsRequest]
   }
+  @scala.inline
+  implicit class DescribeBrokerInstanceOptionsRequestOps[Self <: DescribeBrokerInstanceOptionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEngineType(value: string): Self = this.set("EngineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineType: Self = this.set("EngineType", js.undefined)
+    @scala.inline
+    def setHostInstanceType(value: string): Self = this.set("HostInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostInstanceType: Self = this.set("HostInstanceType", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStorageType(value: string): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+  }
+  
 }
 

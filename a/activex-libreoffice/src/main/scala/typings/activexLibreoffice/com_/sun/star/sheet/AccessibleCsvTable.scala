@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sheet.AccessibleCsvCell
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleCsvTable
   extends XAccessibleContext
      with XAccessibleComponent

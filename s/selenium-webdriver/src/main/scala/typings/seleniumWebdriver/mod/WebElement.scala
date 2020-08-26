@@ -242,17 +242,6 @@ class WebElement protected () extends Serializable[IWebElementId] {
     */
   def sendKeys(var_args: (String | Double | (js.Promise[String | Double]))*): js.Promise[Unit] = js.native
   /**
-    * Returns either this instance's serialized represention, if immediately
-    * available, or a promise for its serialized representation. This function is
-    * conceptually equivalent to objects that have a {@code toJSON()} property,
-    * except the serialize() result may be a promise or an object containing a
-    * promise (which are not directly JSON friendly).
-    *
-    * @return {!(T|IThenable.<!T>)} This instance's serialized wire format.
-    */
-  /* CompleteClass */
-  override def serialize(): IWebElementId | js.Promise[IWebElementId] = js.native
-  /**
     * Schedules a command to submit the form containing this element (or this
     * element if it is a FORM element). This command is a no-op if the element is
     * not contained in a form.

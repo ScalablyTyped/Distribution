@@ -30,16 +30,34 @@ trait SchemaSpeakerDiarizationConfig extends js.Object {
 
 object SchemaSpeakerDiarizationConfig {
   @scala.inline
-  def apply(
-    enableSpeakerDiarization: js.UndefOr[Boolean] = js.undefined,
-    maxSpeakerCount: js.UndefOr[Double] = js.undefined,
-    minSpeakerCount: js.UndefOr[Double] = js.undefined
-  ): SchemaSpeakerDiarizationConfig = {
+  def apply(): SchemaSpeakerDiarizationConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableSpeakerDiarization)) __obj.updateDynamic("enableSpeakerDiarization")(enableSpeakerDiarization.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSpeakerCount)) __obj.updateDynamic("maxSpeakerCount")(maxSpeakerCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSpeakerCount)) __obj.updateDynamic("minSpeakerCount")(minSpeakerCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpeakerDiarizationConfig]
   }
+  @scala.inline
+  implicit class SchemaSpeakerDiarizationConfigOps[Self <: SchemaSpeakerDiarizationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnableSpeakerDiarization(value: Boolean): Self = this.set("enableSpeakerDiarization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSpeakerDiarization: Self = this.set("enableSpeakerDiarization", js.undefined)
+    @scala.inline
+    def setMaxSpeakerCount(value: Double): Self = this.set("maxSpeakerCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSpeakerCount: Self = this.set("maxSpeakerCount", js.undefined)
+    @scala.inline
+    def setMinSpeakerCount(value: Double): Self = this.set("minSpeakerCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSpeakerCount: Self = this.set("minSpeakerCount", js.undefined)
+  }
+  
 }
 

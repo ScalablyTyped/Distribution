@@ -6,33 +6,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait XmlSchema extends js.Object {
-  var items: js.UndefOr[StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with Type]] = js.undefined
-  var localName: js.UndefOr[String] = js.undefined
-  var namespaceURI: js.UndefOr[String | Null] = js.undefined
-  var parser: js.UndefOr[IXmlSerializableConstructor] = js.undefined
-  var prefix: js.UndefOr[String | Null] = js.undefined
-  var target: js.UndefOr[js.Any] = js.undefined
+  var items: js.UndefOr[StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with Type]] = js.native
+  var localName: js.UndefOr[String] = js.native
+  var namespaceURI: js.UndefOr[String | Null] = js.native
+  var parser: js.UndefOr[IXmlSerializableConstructor] = js.native
+  var prefix: js.UndefOr[String | Null] = js.native
+  var target: js.UndefOr[js.Any] = js.native
 }
 
 object XmlSchema {
   @scala.inline
-  def apply(
-    items: StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with Type] = null,
-    localName: String = null,
-    namespaceURI: js.UndefOr[Null | String] = js.undefined,
-    parser: IXmlSerializableConstructor = null,
-    prefix: js.UndefOr[Null | String] = js.undefined,
-    target: js.Any = null
-  ): XmlSchema = {
+  def apply(): XmlSchema = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (localName != null) __obj.updateDynamic("localName")(localName.asInstanceOf[js.Any])
-    if (!js.isUndefined(namespaceURI)) __obj.updateDynamic("namespaceURI")(namespaceURI.asInstanceOf[js.Any])
-    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
-    if (!js.isUndefined(prefix)) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlSchema]
   }
+  @scala.inline
+  implicit class XmlSchemaOps[Self <: XmlSchema] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItems(value: StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with Type]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setLocalName(value: String): Self = this.set("localName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalName: Self = this.set("localName", js.undefined)
+    @scala.inline
+    def setNamespaceURI(value: String): Self = this.set("namespaceURI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceURI: Self = this.set("namespaceURI", js.undefined)
+    @scala.inline
+    def setNamespaceURINull: Self = this.set("namespaceURI", null)
+    @scala.inline
+    def setParser(value: IXmlSerializableConstructor): Self = this.set("parser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParser: Self = this.set("parser", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setPrefixNull: Self = this.set("prefix", null)
+    @scala.inline
+    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+  }
+  
 }
 

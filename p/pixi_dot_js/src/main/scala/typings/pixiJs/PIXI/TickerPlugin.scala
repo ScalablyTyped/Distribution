@@ -15,5 +15,6 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
+@js.native
 trait TickerPlugin extends js.Object
 

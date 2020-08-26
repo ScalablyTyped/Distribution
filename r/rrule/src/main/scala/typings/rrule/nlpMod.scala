@@ -32,7 +32,26 @@ object nlpMod extends js.Object {
     def parseText(text: String): PartialOptions | Null = js.native
     def parseText(text: String, language: Language): PartialOptions | Null = js.native
     def toText(rrule: default): String = js.native
+    def toText(
+      rrule: default,
+      gettext: js.UndefOr[scala.Nothing],
+      language: js.UndefOr[scala.Nothing],
+      dateFormatter: DateFormatter
+    ): String = js.native
+    def toText(rrule: default, gettext: js.UndefOr[scala.Nothing], language: Language): String = js.native
+    def toText(
+      rrule: default,
+      gettext: js.UndefOr[scala.Nothing],
+      language: Language,
+      dateFormatter: DateFormatter
+    ): String = js.native
     def toText(rrule: default, gettext: GetText): String = js.native
+    def toText(
+      rrule: default,
+      gettext: GetText,
+      language: js.UndefOr[scala.Nothing],
+      dateFormatter: DateFormatter
+    ): String = js.native
     def toText(rrule: default, gettext: GetText, language: Language): String = js.native
     def toText(rrule: default, gettext: GetText, language: Language, dateFormatter: DateFormatter): String = js.native
   }
@@ -129,7 +148,26 @@ object nlpMod extends js.Object {
   def parseText(text: String): PartialOptions | Null = js.native
   def parseText(text: String, language: Language): PartialOptions | Null = js.native
   def toText(rrule: default): String = js.native
+  def toText(
+    rrule: default,
+    gettext: js.UndefOr[scala.Nothing],
+    language: js.UndefOr[scala.Nothing],
+    dateFormatter: DateFormatter
+  ): String = js.native
+  def toText(rrule: default, gettext: js.UndefOr[scala.Nothing], language: Language): String = js.native
+  def toText(
+    rrule: default,
+    gettext: js.UndefOr[scala.Nothing],
+    language: Language,
+    dateFormatter: DateFormatter
+  ): String = js.native
   def toText(rrule: default, gettext: GetText): String = js.native
+  def toText(
+    rrule: default,
+    gettext: GetText,
+    language: js.UndefOr[scala.Nothing],
+    dateFormatter: DateFormatter
+  ): String = js.native
   def toText(rrule: default, gettext: GetText, language: Language): String = js.native
   def toText(rrule: default, gettext: GetText, language: Language, dateFormatter: DateFormatter): String = js.native
 }

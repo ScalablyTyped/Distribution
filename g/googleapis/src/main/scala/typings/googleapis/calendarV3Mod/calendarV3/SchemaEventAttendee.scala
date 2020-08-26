@@ -62,30 +62,62 @@ trait SchemaEventAttendee extends js.Object {
 
 object SchemaEventAttendee {
   @scala.inline
-  def apply(
-    additionalGuests: js.UndefOr[Double] = js.undefined,
-    comment: String = null,
-    displayName: String = null,
-    email: String = null,
-    id: String = null,
-    optional: js.UndefOr[Boolean] = js.undefined,
-    organizer: js.UndefOr[Boolean] = js.undefined,
-    resource: js.UndefOr[Boolean] = js.undefined,
-    responseStatus: String = null,
-    self: js.UndefOr[Boolean] = js.undefined
-  ): SchemaEventAttendee = {
+  def apply(): SchemaEventAttendee = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(additionalGuests)) __obj.updateDynamic("additionalGuests")(additionalGuests.get.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(organizer)) __obj.updateDynamic("organizer")(organizer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resource)) __obj.updateDynamic("resource")(resource.get.asInstanceOf[js.Any])
-    if (responseStatus != null) __obj.updateDynamic("responseStatus")(responseStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEventAttendee]
   }
+  @scala.inline
+  implicit class SchemaEventAttendeeOps[Self <: SchemaEventAttendee] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalGuests(value: Double): Self = this.set("additionalGuests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalGuests: Self = this.set("additionalGuests", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptional: Self = this.set("optional", js.undefined)
+    @scala.inline
+    def setOrganizer(value: Boolean): Self = this.set("organizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizer: Self = this.set("organizer", js.undefined)
+    @scala.inline
+    def setResource(value: Boolean): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setResponseStatus(value: String): Self = this.set("responseStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseStatus: Self = this.set("responseStatus", js.undefined)
+    @scala.inline
+    def setSelf(value: Boolean): Self = this.set("self", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelf: Self = this.set("self", js.undefined)
+  }
+  
 }
 

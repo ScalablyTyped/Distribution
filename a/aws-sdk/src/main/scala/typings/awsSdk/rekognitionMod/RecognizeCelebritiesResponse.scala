@@ -22,16 +22,38 @@ trait RecognizeCelebritiesResponse extends js.Object {
 
 object RecognizeCelebritiesResponse {
   @scala.inline
-  def apply(
-    CelebrityFaces: CelebrityList = null,
-    OrientationCorrection: OrientationCorrection = null,
-    UnrecognizedFaces: ComparedFaceList = null
-  ): RecognizeCelebritiesResponse = {
+  def apply(): RecognizeCelebritiesResponse = {
     val __obj = js.Dynamic.literal()
-    if (CelebrityFaces != null) __obj.updateDynamic("CelebrityFaces")(CelebrityFaces.asInstanceOf[js.Any])
-    if (OrientationCorrection != null) __obj.updateDynamic("OrientationCorrection")(OrientationCorrection.asInstanceOf[js.Any])
-    if (UnrecognizedFaces != null) __obj.updateDynamic("UnrecognizedFaces")(UnrecognizedFaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecognizeCelebritiesResponse]
   }
+  @scala.inline
+  implicit class RecognizeCelebritiesResponseOps[Self <: RecognizeCelebritiesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCelebrityFacesVarargs(value: Celebrity*): Self = this.set("CelebrityFaces", js.Array(value :_*))
+    @scala.inline
+    def setCelebrityFaces(value: CelebrityList): Self = this.set("CelebrityFaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCelebrityFaces: Self = this.set("CelebrityFaces", js.undefined)
+    @scala.inline
+    def setOrientationCorrection(value: OrientationCorrection): Self = this.set("OrientationCorrection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientationCorrection: Self = this.set("OrientationCorrection", js.undefined)
+    @scala.inline
+    def setUnrecognizedFacesVarargs(value: ComparedFace*): Self = this.set("UnrecognizedFaces", js.Array(value :_*))
+    @scala.inline
+    def setUnrecognizedFaces(value: ComparedFaceList): Self = this.set("UnrecognizedFaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnrecognizedFaces: Self = this.set("UnrecognizedFaces", js.undefined)
+  }
+  
 }
 

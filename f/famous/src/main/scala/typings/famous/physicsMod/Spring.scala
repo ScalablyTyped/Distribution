@@ -9,8 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class Spring () extends Force {
   def this(source: Particle) = this()
+  def this(source: js.UndefOr[scala.Nothing], targets: js.Array[Particle]) = this()
+  def this(source: js.UndefOr[scala.Nothing], targets: Particle) = this()
   def this(source: Particle, targets: js.Array[Particle]) = this()
   def this(source: Particle, targets: Particle) = this()
+  def this(source: js.UndefOr[scala.Nothing], targets: js.UndefOr[scala.Nothing], options: ISpringOptions) = this()
+  def this(source: js.UndefOr[scala.Nothing], targets: js.Array[Particle], options: ISpringOptions) = this()
+  def this(source: js.UndefOr[scala.Nothing], targets: Particle, options: ISpringOptions) = this()
+  def this(source: Particle, targets: js.UndefOr[scala.Nothing], options: ISpringOptions) = this()
   def this(source: Particle, targets: js.Array[Particle], options: ISpringOptions) = this()
   def this(source: Particle, targets: Particle, options: ISpringOptions) = this()
   var anchor: Vec3 = js.native

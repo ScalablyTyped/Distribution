@@ -25,9 +25,11 @@ import scala.scalajs.js.annotation._
 object browserAction extends js.Object {
   var onClicked: BrowserClickedEvent = js.native
   def disable(): Unit = js.native
+  def disable(tabId: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def disable(tabId: Double): Unit = js.native
   def disable(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
   def enable(): Unit = js.native
+  def enable(tabId: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def enable(tabId: Double): Unit = js.native
   def enable(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
   def getBadgeBackgroundColor(details: TabDetails, callback: js.Function1[/* result */ ColorArray, Unit]): Unit = js.native

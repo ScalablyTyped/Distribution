@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object createNode extends js.Object {
   def apply(value: js.Any): YAMLMap | YAMLSeq | Scalar = js.native
+  def apply(value: js.Any, wrapScalars: js.UndefOr[scala.Nothing], tag: String): YAMLMap | YAMLSeq | Scalar = js.native
 }
 

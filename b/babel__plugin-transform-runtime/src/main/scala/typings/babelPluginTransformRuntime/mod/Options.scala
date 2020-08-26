@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var absoluteRuntime: js.UndefOr[Boolean | String] = js.undefined
-  var corejs: js.UndefOr[CorejsOption] = js.undefined
-  var helpers: js.UndefOr[Boolean] = js.undefined
-  var regenerator: js.UndefOr[Boolean] = js.undefined
-  var useESModules: js.UndefOr[Boolean] = js.undefined
-  var version: js.UndefOr[String] = js.undefined
+  var absoluteRuntime: js.UndefOr[Boolean | String] = js.native
+  var corejs: js.UndefOr[CorejsOption] = js.native
+  var helpers: js.UndefOr[Boolean] = js.native
+  var regenerator: js.UndefOr[Boolean] = js.native
+  var useESModules: js.UndefOr[Boolean] = js.native
+  var version: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    absoluteRuntime: Boolean | String = null,
-    corejs: CorejsOption = null,
-    helpers: js.UndefOr[Boolean] = js.undefined,
-    regenerator: js.UndefOr[Boolean] = js.undefined,
-    useESModules: js.UndefOr[Boolean] = js.undefined,
-    version: String = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (absoluteRuntime != null) __obj.updateDynamic("absoluteRuntime")(absoluteRuntime.asInstanceOf[js.Any])
-    if (corejs != null) __obj.updateDynamic("corejs")(corejs.asInstanceOf[js.Any])
-    if (!js.isUndefined(helpers)) __obj.updateDynamic("helpers")(helpers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(regenerator)) __obj.updateDynamic("regenerator")(regenerator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useESModules)) __obj.updateDynamic("useESModules")(useESModules.get.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbsoluteRuntime(value: Boolean | String): Self = this.set("absoluteRuntime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbsoluteRuntime: Self = this.set("absoluteRuntime", js.undefined)
+    @scala.inline
+    def setCorejs(value: CorejsOption): Self = this.set("corejs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorejs: Self = this.set("corejs", js.undefined)
+    @scala.inline
+    def setHelpers(value: Boolean): Self = this.set("helpers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelpers: Self = this.set("helpers", js.undefined)
+    @scala.inline
+    def setRegenerator(value: Boolean): Self = this.set("regenerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegenerator: Self = this.set("regenerator", js.undefined)
+    @scala.inline
+    def setUseESModules(value: Boolean): Self = this.set("useESModules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseESModules: Self = this.set("useESModules", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

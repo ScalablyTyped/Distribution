@@ -7,35 +7,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoadOnMount[V] extends js.Object {
-  var fetchOptionsOverride: js.UndefOr[GraphQLFetchOptionsOverride] = js.undefined
-  var loadOnMount: js.UndefOr[Boolean] = js.undefined
-  var loadOnReload: js.UndefOr[Boolean] = js.undefined
-  var loadOnReset: js.UndefOr[Boolean] = js.undefined
-  var operation: GraphQLOperation[V]
-  var reloadOnLoad: js.UndefOr[Boolean] = js.undefined
-  var resetOnLoad: js.UndefOr[Boolean] = js.undefined
+  var fetchOptionsOverride: js.UndefOr[GraphQLFetchOptionsOverride] = js.native
+  var loadOnMount: js.UndefOr[Boolean] = js.native
+  var loadOnReload: js.UndefOr[Boolean] = js.native
+  var loadOnReset: js.UndefOr[Boolean] = js.native
+  var operation: GraphQLOperation[V] = js.native
+  var reloadOnLoad: js.UndefOr[Boolean] = js.native
+  var resetOnLoad: js.UndefOr[Boolean] = js.native
 }
 
 object LoadOnMount {
   @scala.inline
-  def apply[V](
-    operation: GraphQLOperation[V],
-    fetchOptionsOverride: /* options */ GraphQLFetchOptions => Unit = null,
-    loadOnMount: js.UndefOr[Boolean] = js.undefined,
-    loadOnReload: js.UndefOr[Boolean] = js.undefined,
-    loadOnReset: js.UndefOr[Boolean] = js.undefined,
-    reloadOnLoad: js.UndefOr[Boolean] = js.undefined,
-    resetOnLoad: js.UndefOr[Boolean] = js.undefined
-  ): LoadOnMount[V] = {
+  def apply[V](operation: GraphQLOperation[V]): LoadOnMount[V] = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
-    if (fetchOptionsOverride != null) __obj.updateDynamic("fetchOptionsOverride")(js.Any.fromFunction1(fetchOptionsOverride))
-    if (!js.isUndefined(loadOnMount)) __obj.updateDynamic("loadOnMount")(loadOnMount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadOnReload)) __obj.updateDynamic("loadOnReload")(loadOnReload.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadOnReset)) __obj.updateDynamic("loadOnReset")(loadOnReset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reloadOnLoad)) __obj.updateDynamic("reloadOnLoad")(reloadOnLoad.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnLoad)) __obj.updateDynamic("resetOnLoad")(resetOnLoad.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadOnMount[V]]
   }
+  @scala.inline
+  implicit class LoadOnMountOps[Self <: LoadOnMount[_], V] (val x: Self with LoadOnMount[V]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOperation(value: GraphQLOperation[V]): Self = this.set("operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFetchOptionsOverride(value: /* options */ GraphQLFetchOptions => Unit): Self = this.set("fetchOptionsOverride", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFetchOptionsOverride: Self = this.set("fetchOptionsOverride", js.undefined)
+    @scala.inline
+    def setLoadOnMount(value: Boolean): Self = this.set("loadOnMount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadOnMount: Self = this.set("loadOnMount", js.undefined)
+    @scala.inline
+    def setLoadOnReload(value: Boolean): Self = this.set("loadOnReload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadOnReload: Self = this.set("loadOnReload", js.undefined)
+    @scala.inline
+    def setLoadOnReset(value: Boolean): Self = this.set("loadOnReset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadOnReset: Self = this.set("loadOnReset", js.undefined)
+    @scala.inline
+    def setReloadOnLoad(value: Boolean): Self = this.set("reloadOnLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReloadOnLoad: Self = this.set("reloadOnLoad", js.undefined)
+    @scala.inline
+    def setResetOnLoad(value: Boolean): Self = this.set("resetOnLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetOnLoad: Self = this.set("resetOnLoad", js.undefined)
+  }
+  
 }
 

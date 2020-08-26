@@ -2,7 +2,7 @@ package typings.pulumiAws.metricAlarmMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.cloudwatch.MetricAlarmMetricQuery
-import typings.pulumiAws.topicMod.Topic
+import typings.pulumiAws.snsMod.Topic
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,7 +37,7 @@ trait MetricAlarmState extends js.Object {
   /**
     * The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
     */
-  val dimensions: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val dimensions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Used only for alarms
     * based on percentiles. If you specify `ignore`, the alarm state will not
@@ -91,9 +91,9 @@ trait MetricAlarmState extends js.Object {
     */
   val statistic: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
     */
@@ -114,56 +114,122 @@ trait MetricAlarmState extends js.Object {
 
 object MetricAlarmState {
   @scala.inline
-  def apply(
-    actionsEnabled: Input[Boolean] = null,
-    alarmActions: Input[js.Array[Input[String | Topic]]] = null,
-    alarmDescription: Input[String] = null,
-    arn: Input[String] = null,
-    comparisonOperator: Input[String] = null,
-    datapointsToAlarm: Input[Double] = null,
-    dimensions: Input[StringDictionary[_]] = null,
-    evaluateLowSampleCountPercentiles: Input[String] = null,
-    evaluationPeriods: Input[Double] = null,
-    extendedStatistic: Input[String] = null,
-    insufficientDataActions: Input[js.Array[Input[String | Topic]]] = null,
-    metricName: Input[String] = null,
-    metricQueries: Input[js.Array[Input[MetricAlarmMetricQuery]]] = null,
-    name: Input[String] = null,
-    namespace: Input[String] = null,
-    okActions: Input[js.Array[Input[String | Topic]]] = null,
-    period: Input[Double] = null,
-    statistic: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    threshold: Input[Double] = null,
-    thresholdMetricId: Input[String] = null,
-    treatMissingData: Input[String] = null,
-    unit: Input[String] = null
-  ): MetricAlarmState = {
+  def apply(): MetricAlarmState = {
     val __obj = js.Dynamic.literal()
-    if (actionsEnabled != null) __obj.updateDynamic("actionsEnabled")(actionsEnabled.asInstanceOf[js.Any])
-    if (alarmActions != null) __obj.updateDynamic("alarmActions")(alarmActions.asInstanceOf[js.Any])
-    if (alarmDescription != null) __obj.updateDynamic("alarmDescription")(alarmDescription.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (comparisonOperator != null) __obj.updateDynamic("comparisonOperator")(comparisonOperator.asInstanceOf[js.Any])
-    if (datapointsToAlarm != null) __obj.updateDynamic("datapointsToAlarm")(datapointsToAlarm.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (evaluateLowSampleCountPercentiles != null) __obj.updateDynamic("evaluateLowSampleCountPercentiles")(evaluateLowSampleCountPercentiles.asInstanceOf[js.Any])
-    if (evaluationPeriods != null) __obj.updateDynamic("evaluationPeriods")(evaluationPeriods.asInstanceOf[js.Any])
-    if (extendedStatistic != null) __obj.updateDynamic("extendedStatistic")(extendedStatistic.asInstanceOf[js.Any])
-    if (insufficientDataActions != null) __obj.updateDynamic("insufficientDataActions")(insufficientDataActions.asInstanceOf[js.Any])
-    if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
-    if (metricQueries != null) __obj.updateDynamic("metricQueries")(metricQueries.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (okActions != null) __obj.updateDynamic("okActions")(okActions.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (statistic != null) __obj.updateDynamic("statistic")(statistic.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (thresholdMetricId != null) __obj.updateDynamic("thresholdMetricId")(thresholdMetricId.asInstanceOf[js.Any])
-    if (treatMissingData != null) __obj.updateDynamic("treatMissingData")(treatMissingData.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricAlarmState]
   }
+  @scala.inline
+  implicit class MetricAlarmStateOps[Self <: MetricAlarmState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsEnabled(value: Input[Boolean]): Self = this.set("actionsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionsEnabled: Self = this.set("actionsEnabled", js.undefined)
+    @scala.inline
+    def setAlarmActionsVarargs(value: (Input[String | Topic])*): Self = this.set("alarmActions", js.Array(value :_*))
+    @scala.inline
+    def setAlarmActions(value: Input[js.Array[Input[String | Topic]]]): Self = this.set("alarmActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmActions: Self = this.set("alarmActions", js.undefined)
+    @scala.inline
+    def setAlarmDescription(value: Input[String]): Self = this.set("alarmDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmDescription: Self = this.set("alarmDescription", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setComparisonOperator(value: Input[String]): Self = this.set("comparisonOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparisonOperator: Self = this.set("comparisonOperator", js.undefined)
+    @scala.inline
+    def setDatapointsToAlarm(value: Input[Double]): Self = this.set("datapointsToAlarm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatapointsToAlarm: Self = this.set("datapointsToAlarm", js.undefined)
+    @scala.inline
+    def setDimensions(value: Input[StringDictionary[Input[String]]]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    @scala.inline
+    def setEvaluateLowSampleCountPercentiles(value: Input[String]): Self = this.set("evaluateLowSampleCountPercentiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluateLowSampleCountPercentiles: Self = this.set("evaluateLowSampleCountPercentiles", js.undefined)
+    @scala.inline
+    def setEvaluationPeriods(value: Input[Double]): Self = this.set("evaluationPeriods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationPeriods: Self = this.set("evaluationPeriods", js.undefined)
+    @scala.inline
+    def setExtendedStatistic(value: Input[String]): Self = this.set("extendedStatistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedStatistic: Self = this.set("extendedStatistic", js.undefined)
+    @scala.inline
+    def setInsufficientDataActionsVarargs(value: (Input[String | Topic])*): Self = this.set("insufficientDataActions", js.Array(value :_*))
+    @scala.inline
+    def setInsufficientDataActions(value: Input[js.Array[Input[String | Topic]]]): Self = this.set("insufficientDataActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsufficientDataActions: Self = this.set("insufficientDataActions", js.undefined)
+    @scala.inline
+    def setMetricName(value: Input[String]): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("metricName", js.undefined)
+    @scala.inline
+    def setMetricQueriesVarargs(value: Input[MetricAlarmMetricQuery]*): Self = this.set("metricQueries", js.Array(value :_*))
+    @scala.inline
+    def setMetricQueries(value: Input[js.Array[Input[MetricAlarmMetricQuery]]]): Self = this.set("metricQueries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricQueries: Self = this.set("metricQueries", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamespace(value: Input[String]): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setOkActionsVarargs(value: (Input[String | Topic])*): Self = this.set("okActions", js.Array(value :_*))
+    @scala.inline
+    def setOkActions(value: Input[js.Array[Input[String | Topic]]]): Self = this.set("okActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOkActions: Self = this.set("okActions", js.undefined)
+    @scala.inline
+    def setPeriod(value: Input[Double]): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setStatistic(value: Input[String]): Self = this.set("statistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistic: Self = this.set("statistic", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setThreshold(value: Input[Double]): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    @scala.inline
+    def setThresholdMetricId(value: Input[String]): Self = this.set("thresholdMetricId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThresholdMetricId: Self = this.set("thresholdMetricId", js.undefined)
+    @scala.inline
+    def setTreatMissingData(value: Input[String]): Self = this.set("treatMissingData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreatMissingData: Self = this.set("treatMissingData", js.undefined)
+    @scala.inline
+    def setUnit(value: Input[String]): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+  }
+  
 }
 

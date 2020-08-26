@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Context extends js.Object {
   def alter(`type`: String, index: Double): Unit = js.native
+  def alter(`type`: String, index: Double, amount: js.UndefOr[scala.Nothing], source: String): Unit = js.native
   def alter(`type`: String, index: Double, amount: Double): Unit = js.native
   def alter(`type`: String, index: Double, amount: Double, source: String): Unit = js.native
   /**
@@ -18,6 +19,8 @@ trait Context extends js.Object {
     */
   @JSName("alter")
   def alter_insertcol(`type`: insert_col, index: Double): Unit = js.native
+  @JSName("alter")
+  def alter_insertcol(`type`: insert_col, index: Double, amount: js.UndefOr[scala.Nothing], source: String): Unit = js.native
   @JSName("alter")
   def alter_insertcol(`type`: insert_col, index: Double, amount: Double): Unit = js.native
   @JSName("alter")
@@ -28,6 +31,8 @@ trait Context extends js.Object {
   @JSName("alter")
   def alter_insertrow(`type`: insert_row, index: Double): Unit = js.native
   @JSName("alter")
+  def alter_insertrow(`type`: insert_row, index: Double, amount: js.UndefOr[scala.Nothing], source: String): Unit = js.native
+  @JSName("alter")
   def alter_insertrow(`type`: insert_row, index: Double, amount: Double): Unit = js.native
   @JSName("alter")
   def alter_insertrow(`type`: insert_row, index: Double, amount: Double, source: String): Unit = js.native
@@ -37,6 +42,8 @@ trait Context extends js.Object {
   @JSName("alter")
   def alter_removecol(`type`: remove_col, index: Double): Unit = js.native
   @JSName("alter")
+  def alter_removecol(`type`: remove_col, index: Double, amount: js.UndefOr[scala.Nothing], source: String): Unit = js.native
+  @JSName("alter")
   def alter_removecol(`type`: remove_col, index: Double, amount: Double): Unit = js.native
   @JSName("alter")
   def alter_removecol(`type`: remove_col, index: Double, amount: Double, source: String): Unit = js.native
@@ -45,6 +52,8 @@ trait Context extends js.Object {
     */
   @JSName("alter")
   def alter_removerow(`type`: remove_row, index: Double): Unit = js.native
+  @JSName("alter")
+  def alter_removerow(`type`: remove_row, index: Double, amount: js.UndefOr[scala.Nothing], source: String): Unit = js.native
   @JSName("alter")
   def alter_removerow(`type`: remove_row, index: Double, amount: Double): Unit = js.native
   @JSName("alter")
@@ -232,6 +241,15 @@ trait Context extends js.Object {
     * @param populateMethod (default value "overwrite", possible values "shift_down" and "shift_right") has the same effect as pasteMethod option (see Options page).
     */
   def populateFromArray(row: Double, col: Double, input: js.Array[_], endRow: Double, endCol: Double): Unit = js.native
+  def populateFromArray(
+    row: Double,
+    col: Double,
+    input: js.Array[_],
+    endRow: Double,
+    endCol: Double,
+    source: js.UndefOr[scala.Nothing],
+    populateMethod: String
+  ): Unit = js.native
   def populateFromArray(row: Double, col: Double, input: js.Array[_], endRow: Double, endCol: Double, source: String): Unit = js.native
   def populateFromArray(
     row: Double,

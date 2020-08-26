@@ -11,10 +11,26 @@ trait PutAccountSettingDefaultResponse extends js.Object {
 
 object PutAccountSettingDefaultResponse {
   @scala.inline
-  def apply(setting: Setting = null): PutAccountSettingDefaultResponse = {
+  def apply(): PutAccountSettingDefaultResponse = {
     val __obj = js.Dynamic.literal()
-    if (setting != null) __obj.updateDynamic("setting")(setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutAccountSettingDefaultResponse]
   }
+  @scala.inline
+  implicit class PutAccountSettingDefaultResponseOps[Self <: PutAccountSettingDefaultResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSetting(value: Setting): Self = this.set("setting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetting: Self = this.set("setting", js.undefined)
+  }
+  
 }
 

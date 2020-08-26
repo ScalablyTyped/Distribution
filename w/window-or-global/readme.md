@@ -11,8 +11,8 @@ Use either the window object in the browser or the global object in node.
 | Full name          | window-or-global |
 | Keywords           | window, global, isomorphic, universal |
 | # releases         | 0 |
-| # dependents       | 89 |
-| # downloads        | 4423727 |
+| # dependents       | 91 |
+| # downloads        | 4463473 |
 | # stars            | 4 |
 
 ## Links

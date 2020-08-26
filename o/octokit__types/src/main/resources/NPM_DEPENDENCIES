@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/types" : "5.0.1"
+      "@octokit/types" : "5.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/types" : "5.0.1"
+      "@octokit/types" : "5.2.0"
     }
   ],
   "compile-devDependencies" : [

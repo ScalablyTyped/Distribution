@@ -12,7 +12,7 @@ Sprintf() for node.js
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 366 |
-| # downloads        | 5522161 |
+| # downloads        | 5306242 |
 | # stars            | 7 |
 
 ## Links

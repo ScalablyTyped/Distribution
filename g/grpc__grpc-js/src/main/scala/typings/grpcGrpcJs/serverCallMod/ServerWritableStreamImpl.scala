@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.grpcGrpcJs.serverCallMod.ServerWritableStream because var conflicts: _writev, destroyed, writable. Inlined cancelled, getPeer, sendMetadata, request */ @JSImport("@grpc/grpc-js/build/src/server-call", "ServerWritableStreamImpl")
+- typings.grpcGrpcJs.serverCallMod.ServerWritableStream because var conflicts: _writev, destroyed, writable. Inlined cancelled, metadata, getPeer, sendMetadata, request */ @JSImport("@grpc/grpc-js/build/src/server-call", "ServerWritableStreamImpl")
 @js.native
 class ServerWritableStreamImpl[RequestType, ResponseType] protected () extends Writable {
   def this(
@@ -25,7 +25,7 @@ class ServerWritableStreamImpl[RequestType, ResponseType] protected () extends W
   var serialize_Original: Serialize[ResponseType] = js.native
   var trailingMetadata: js.Any = js.native
   def _final(callback: js.Function): Unit = js.native
-  def _write(chunk: ResponseType, encoding: String, callback: js.Function1[/* repeated */ js.Any, Unit]): js.Promise[Unit] = js.native
+  def _write(chunk: ResponseType, encoding: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def getPeer(): String = js.native
   def sendMetadata(responseMetadata: Metadata): Unit = js.native
   def serialize(value: ResponseType): Buffer = js.native

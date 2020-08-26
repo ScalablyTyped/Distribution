@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet-icons/themes", JSImport.Namespace)
+@JSImport("grommet-icons/es6/themes", JSImport.Namespace)
 @js.native
 object themesMod extends js.Object {
   @js.native

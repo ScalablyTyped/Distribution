@@ -18,11 +18,30 @@ trait EndpointItemResponse extends js.Object {
 
 object EndpointItemResponse {
   @scala.inline
-  def apply(Message: string = null, StatusCode: js.UndefOr[integer] = js.undefined): EndpointItemResponse = {
+  def apply(): EndpointItemResponse = {
     val __obj = js.Dynamic.literal()
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointItemResponse]
   }
+  @scala.inline
+  implicit class EndpointItemResponseOps[Self <: EndpointItemResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessage(value: string): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setStatusCode(value: integer): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
+  }
+  
 }
 

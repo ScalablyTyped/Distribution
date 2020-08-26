@@ -41,8 +41,10 @@ object anon extends js.Object {
           Collection[Model[js.Any, ModelSetOptions]]
         ]
        with Instantiable2[
-          /* models */ js.Array[
-            (/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any) | js.Object
+          js.UndefOr[
+            /* models */ js.Array[
+              (/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any) | js.Object
+            ]
           ], 
           /* options */ js.Any, 
           Collection[Model[js.Any, ModelSetOptions]]
@@ -67,7 +69,9 @@ object anon extends js.Object {
           Model[js.Object, js.Object]
         ]
        with Instantiable2[
-          /* import warning: RewrittenClass.unapply cls was tparam T */ /* attributes */ js.Any, 
+          js.UndefOr[
+            /* import warning: RewrittenClass.unapply cls was tparam T */ /* attributes */ js.Any
+          ], 
           /* options */ js.Any, 
           Model[js.Object, js.Object]
         ] {

@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Locale_ extends js.Object {
   def calendar(): String = js.native
+  def calendar(key: js.UndefOr[CalendarKey], m: js.UndefOr[scala.Nothing], now: Moment): String = js.native
+  def calendar(key: js.UndefOr[CalendarKey], m: Moment): String = js.native
+  def calendar(key: js.UndefOr[CalendarKey], m: Moment, now: Moment): String = js.native
   def calendar(key: CalendarKey): String = js.native
-  def calendar(key: CalendarKey, m: Moment): String = js.native
-  def calendar(key: CalendarKey, m: Moment, now: Moment): String = js.native
   def firstDayOfWeek(): Double = js.native
   def firstDayOfYear(): Double = js.native
   def invalidDate(): String = js.native

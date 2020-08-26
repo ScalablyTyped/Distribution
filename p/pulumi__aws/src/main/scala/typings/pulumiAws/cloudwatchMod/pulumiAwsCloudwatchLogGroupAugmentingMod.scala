@@ -24,6 +24,12 @@ object pulumiAwsCloudwatchLogGroupAugmentingMod extends js.Object {
       * not a [lambda.Function] instance.
       */
     def onDecodedEvent(name: String, callback: Callback[DecodedLogGroupEvent, Unit]): typings.pulumiAws.logGroupMixinsMod.LogGroupEventSubscription = js.native
+    def onDecodedEvent(
+      name: String,
+      callback: Callback[DecodedLogGroupEvent, Unit],
+      args: js.UndefOr[scala.Nothing],
+      opts: ComponentResourceOptions
+    ): typings.pulumiAws.logGroupMixinsMod.LogGroupEventSubscription = js.native
     def onDecodedEvent(name: String, callback: Callback[DecodedLogGroupEvent, Unit], args: LogGroupEventSubscriptionArgs): typings.pulumiAws.logGroupMixinsMod.LogGroupEventSubscription = js.native
     def onDecodedEvent(
       name: String,
@@ -38,6 +44,12 @@ object pulumiAwsCloudwatchLogGroupAugmentingMod extends js.Object {
       * The events will be produced in raw (gzipped + base64 encoded) form.
       */
     def onEvent(name: String, handler: LogGroupEventHandler): typings.pulumiAws.logGroupMixinsMod.LogGroupEventSubscription = js.native
+    def onEvent(
+      name: String,
+      handler: LogGroupEventHandler,
+      args: js.UndefOr[scala.Nothing],
+      opts: ComponentResourceOptions
+    ): typings.pulumiAws.logGroupMixinsMod.LogGroupEventSubscription = js.native
     def onEvent(name: String, handler: LogGroupEventHandler, args: LogGroupEventSubscriptionArgs): typings.pulumiAws.logGroupMixinsMod.LogGroupEventSubscription = js.native
     def onEvent(
       name: String,

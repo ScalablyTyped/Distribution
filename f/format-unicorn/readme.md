@@ -12,7 +12,7 @@ Stack Exchange's string format function.
 | Keywords           | string, format, formatunicorn, stackexchange |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 93208 |
+| # downloads        | 99560 |
 | # stars            | 0 |
 
 ## Links

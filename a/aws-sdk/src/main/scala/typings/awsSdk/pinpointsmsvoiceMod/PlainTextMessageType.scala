@@ -22,12 +22,34 @@ trait PlainTextMessageType extends js.Object {
 
 object PlainTextMessageType {
   @scala.inline
-  def apply(LanguageCode: String = null, Text: NonEmptyString = null, VoiceId: String = null): PlainTextMessageType = {
+  def apply(): PlainTextMessageType = {
     val __obj = js.Dynamic.literal()
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
-    if (VoiceId != null) __obj.updateDynamic("VoiceId")(VoiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlainTextMessageType]
   }
+  @scala.inline
+  implicit class PlainTextMessageTypeOps[Self <: PlainTextMessageType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setText(value: NonEmptyString): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("Text", js.undefined)
+    @scala.inline
+    def setVoiceId(value: String): Self = this.set("VoiceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoiceId: Self = this.set("VoiceId", js.undefined)
+  }
+  
 }
 

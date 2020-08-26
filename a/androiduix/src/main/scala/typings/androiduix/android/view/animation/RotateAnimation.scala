@@ -4,27 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.animation.RotateAnimation")
 @js.native
-class RotateAnimation protected () extends Animation {
-  def this(fromDegrees: Double, toDegrees: Double) = this()
-  def this(fromDegrees: Double, toDegrees: Double, pivotXType: Double) = this()
-  def this(fromDegrees: Double, toDegrees: Double, pivotXType: Double, pivotXValue: Double) = this()
-  def this(
-    fromDegrees: Double,
-    toDegrees: Double,
-    pivotXType: Double,
-    pivotXValue: Double,
-    pivotYType: Double
-  ) = this()
-  def this(
-    fromDegrees: Double,
-    toDegrees: Double,
-    pivotXType: Double,
-    pivotXValue: Double,
-    pivotYType: Double,
-    pivotYValue: Double
-  ) = this()
+trait RotateAnimation extends Animation {
   var mFromDegrees: js.Any = js.native
   var mPivotX: js.Any = js.native
   var mPivotXType: js.Any = js.native

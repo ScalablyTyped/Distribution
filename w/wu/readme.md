@@ -12,7 +12,7 @@ Combinators for ECMAScript 6 iterators.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 19667 |
+| # downloads        | 20033 |
 | # stars            | 0 |
 
 ## Links

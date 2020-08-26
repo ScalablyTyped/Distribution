@@ -18,11 +18,30 @@ trait GetAuthorizationTokenResult extends js.Object {
 
 object GetAuthorizationTokenResult {
   @scala.inline
-  def apply(authorizationToken: String = null, expiration: Timestamp = null): GetAuthorizationTokenResult = {
+  def apply(): GetAuthorizationTokenResult = {
     val __obj = js.Dynamic.literal()
-    if (authorizationToken != null) __obj.updateDynamic("authorizationToken")(authorizationToken.asInstanceOf[js.Any])
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAuthorizationTokenResult]
   }
+  @scala.inline
+  implicit class GetAuthorizationTokenResultOps[Self <: GetAuthorizationTokenResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizationToken(value: String): Self = this.set("authorizationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationToken: Self = this.set("authorizationToken", js.undefined)
+    @scala.inline
+    def setExpiration(value: Timestamp): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiration: Self = this.set("expiration", js.undefined)
+  }
+  
 }
 

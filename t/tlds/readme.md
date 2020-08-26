@@ -1,7 +1,7 @@
 
 # Scala.js typings for tlds
 
-Typings are for version 1.199
+Typings are for version 1.207.0
 
 ## Library description:
 List of TLDs
@@ -24,7 +24,7 @@ List of TLDs
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

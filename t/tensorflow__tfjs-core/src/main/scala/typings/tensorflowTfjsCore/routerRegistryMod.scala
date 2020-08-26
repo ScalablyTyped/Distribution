@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.typesMod.IOHandler
+import typings.tensorflowTfjsCore.typesMod.LoadOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +16,9 @@ object routerRegistryMod extends js.Object {
   }
   
   def getLoadHandlers(url: String): js.Array[IOHandler] = js.native
-  def getLoadHandlers(url: String, onProgress: js.Function): js.Array[IOHandler] = js.native
+  def getLoadHandlers(url: String, loadOptions: LoadOptions): js.Array[IOHandler] = js.native
   def getLoadHandlers(url: js.Array[String]): js.Array[IOHandler] = js.native
-  def getLoadHandlers(url: js.Array[String], onProgress: js.Function): js.Array[IOHandler] = js.native
+  def getLoadHandlers(url: js.Array[String], loadOptions: LoadOptions): js.Array[IOHandler] = js.native
   def getSaveHandlers(url: String): js.Array[IOHandler] = js.native
   def getSaveHandlers(url: js.Array[String]): js.Array[IOHandler] = js.native
   def registerLoadRouter(loudRouter: IORouter): Unit = js.native
@@ -32,15 +33,14 @@ object routerRegistryMod extends js.Object {
       * Look up IOHandler for loading, given a URL-like string.
       *
       * @param url
-      * @param onProgress Optional, progress callback function, fired periodically
-      *   before the load is completed.
+      * @param loadOptions Optional, custom load options.
       * @returns All valid handlers for `url`, given the currently registered
       *   handler routers.
       */
     def getLoadHandlers(url: String): js.Array[IOHandler] = js.native
-    def getLoadHandlers(url: String, onProgress: js.Function): js.Array[IOHandler] = js.native
+    def getLoadHandlers(url: String, loadOptions: LoadOptions): js.Array[IOHandler] = js.native
     def getLoadHandlers(url: js.Array[String]): js.Array[IOHandler] = js.native
-    def getLoadHandlers(url: js.Array[String], onProgress: js.Function): js.Array[IOHandler] = js.native
+    def getLoadHandlers(url: js.Array[String], loadOptions: LoadOptions): js.Array[IOHandler] = js.native
     /**
       * Look up IOHandler for saving, given a URL-like string.
       *
@@ -69,7 +69,7 @@ object routerRegistryMod extends js.Object {
   
   type IORouter = js.Function2[
     /* url */ String | js.Array[String], 
-    /* onProgress */ js.UndefOr[js.Function], 
+    /* loadOptions */ js.UndefOr[LoadOptions], 
     IOHandler
   ]
 }

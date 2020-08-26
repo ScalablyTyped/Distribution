@@ -38,22 +38,48 @@ trait DescribeAlarmsForMetricInput extends js.Object {
 
 object DescribeAlarmsForMetricInput {
   @scala.inline
-  def apply(
-    MetricName: MetricName,
-    Namespace: Namespace,
-    Dimensions: Dimensions = null,
-    ExtendedStatistic: ExtendedStatistic = null,
-    Period: js.UndefOr[Period] = js.undefined,
-    Statistic: Statistic = null,
-    Unit: StandardUnit = null
-  ): DescribeAlarmsForMetricInput = {
+  def apply(MetricName: MetricName, Namespace: Namespace): DescribeAlarmsForMetricInput = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any])
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (ExtendedStatistic != null) __obj.updateDynamic("ExtendedStatistic")(ExtendedStatistic.asInstanceOf[js.Any])
-    if (!js.isUndefined(Period)) __obj.updateDynamic("Period")(Period.get.asInstanceOf[js.Any])
-    if (Statistic != null) __obj.updateDynamic("Statistic")(Statistic.asInstanceOf[js.Any])
-    if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAlarmsForMetricInput]
   }
+  @scala.inline
+  implicit class DescribeAlarmsForMetricInputOps[Self <: DescribeAlarmsForMetricInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDimensionsVarargs(value: Dimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: Dimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setExtendedStatistic(value: ExtendedStatistic): Self = this.set("ExtendedStatistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedStatistic: Self = this.set("ExtendedStatistic", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("Period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("Period", js.undefined)
+    @scala.inline
+    def setStatistic(value: Statistic): Self = this.set("Statistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistic: Self = this.set("Statistic", js.undefined)
+    @scala.inline
+    def setUnit(value: StandardUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("Unit", js.undefined)
+  }
+  
 }
 

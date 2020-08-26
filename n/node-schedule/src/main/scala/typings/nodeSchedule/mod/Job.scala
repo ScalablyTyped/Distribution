@@ -23,8 +23,10 @@ class Job protected () extends EventEmitter {
   def this(name: String, job: JobCallback) = this()
   def this(name: JobCallback, job: js.Function0[Unit]) = this()
   def this(name: JobCallback, job: JobCallback) = this()
+  def this(name: String, job: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]) = this()
   def this(name: String, job: js.Function0[Unit], callback: js.Function0[Unit]) = this()
   def this(name: String, job: JobCallback, callback: js.Function0[Unit]) = this()
+  def this(name: JobCallback, job: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]) = this()
   def this(name: JobCallback, job: js.Function0[Unit], callback: js.Function0[Unit]) = this()
   def this(name: JobCallback, job: JobCallback, callback: js.Function0[Unit]) = this()
   val name: String = js.native

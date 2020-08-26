@@ -33,20 +33,42 @@ trait SchemaGdataContentTypeInfo extends js.Object {
 
 object SchemaGdataContentTypeInfo {
   @scala.inline
-  def apply(
-    bestGuess: String = null,
-    fromBytes: String = null,
-    fromFileName: String = null,
-    fromHeader: String = null,
-    fromUrlPath: String = null
-  ): SchemaGdataContentTypeInfo = {
+  def apply(): SchemaGdataContentTypeInfo = {
     val __obj = js.Dynamic.literal()
-    if (bestGuess != null) __obj.updateDynamic("bestGuess")(bestGuess.asInstanceOf[js.Any])
-    if (fromBytes != null) __obj.updateDynamic("fromBytes")(fromBytes.asInstanceOf[js.Any])
-    if (fromFileName != null) __obj.updateDynamic("fromFileName")(fromFileName.asInstanceOf[js.Any])
-    if (fromHeader != null) __obj.updateDynamic("fromHeader")(fromHeader.asInstanceOf[js.Any])
-    if (fromUrlPath != null) __obj.updateDynamic("fromUrlPath")(fromUrlPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGdataContentTypeInfo]
   }
+  @scala.inline
+  implicit class SchemaGdataContentTypeInfoOps[Self <: SchemaGdataContentTypeInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBestGuess(value: String): Self = this.set("bestGuess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBestGuess: Self = this.set("bestGuess", js.undefined)
+    @scala.inline
+    def setFromBytes(value: String): Self = this.set("fromBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromBytes: Self = this.set("fromBytes", js.undefined)
+    @scala.inline
+    def setFromFileName(value: String): Self = this.set("fromFileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromFileName: Self = this.set("fromFileName", js.undefined)
+    @scala.inline
+    def setFromHeader(value: String): Self = this.set("fromHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromHeader: Self = this.set("fromHeader", js.undefined)
+    @scala.inline
+    def setFromUrlPath(value: String): Self = this.set("fromUrlPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromUrlPath: Self = this.set("fromUrlPath", js.undefined)
+  }
+  
 }
 

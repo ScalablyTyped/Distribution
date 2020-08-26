@@ -1,37 +1,77 @@
 package typings.mailcheck.MailcheckModule
 
+import typings.mailcheck.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IAsynchronousOptions extends js.Object {
-  var distanceFunction: js.UndefOr[IDistanceFunction] = js.undefined
-  var domains: js.UndefOr[js.Array[String]] = js.undefined
-  var email: String
-  var empty: js.UndefOr[IEmpty | IJQueryEmpty] = js.undefined
-  var secondLevelDomains: js.UndefOr[js.Array[String]] = js.undefined
-  var suggested: ISuggested | IJQuerySuggested
-  var topLevelDomains: js.UndefOr[js.Array[String]] = js.undefined
+  var distanceFunction: js.UndefOr[IDistanceFunction] = js.native
+  var domains: js.UndefOr[js.Array[String]] = js.native
+  var email: String = js.native
+  var empty: js.UndefOr[IEmpty | IJQueryEmpty] = js.native
+  var secondLevelDomains: js.UndefOr[js.Array[String]] = js.native
+  var suggested: ISuggested | IJQuerySuggested = js.native
+  var topLevelDomains: js.UndefOr[js.Array[String]] = js.native
 }
 
 object IAsynchronousOptions {
   @scala.inline
-  def apply(
-    email: String,
-    suggested: ISuggested | IJQuerySuggested,
-    distanceFunction: (/* s1 */ String, /* s2 */ String) => Double = null,
-    domains: js.Array[String] = null,
-    empty: IEmpty | IJQueryEmpty = null,
-    secondLevelDomains: js.Array[String] = null,
-    topLevelDomains: js.Array[String] = null
-  ): IAsynchronousOptions = {
+  def apply(email: String, suggested: ISuggested | IJQuerySuggested): IAsynchronousOptions = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], suggested = suggested.asInstanceOf[js.Any])
-    if (distanceFunction != null) __obj.updateDynamic("distanceFunction")(js.Any.fromFunction2(distanceFunction))
-    if (domains != null) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
-    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
-    if (secondLevelDomains != null) __obj.updateDynamic("secondLevelDomains")(secondLevelDomains.asInstanceOf[js.Any])
-    if (topLevelDomains != null) __obj.updateDynamic("topLevelDomains")(topLevelDomains.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAsynchronousOptions]
   }
+  @scala.inline
+  implicit class IAsynchronousOptionsOps[Self <: IAsynchronousOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuggestedFunction2(value: (/* element */ JQuery, /* suggested */ ISuggestion) => Unit): Self = this.set("suggested", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSuggestedFunction1(value: /* suggested */ ISuggestion => Unit): Self = this.set("suggested", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSuggested(value: ISuggested | IJQuerySuggested): Self = this.set("suggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDistanceFunction(value: (/* s1 */ String, /* s2 */ String) => Double): Self = this.set("distanceFunction", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDistanceFunction: Self = this.set("distanceFunction", js.undefined)
+    @scala.inline
+    def setDomainsVarargs(value: String*): Self = this.set("domains", js.Array(value :_*))
+    @scala.inline
+    def setDomains(value: js.Array[String]): Self = this.set("domains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomains: Self = this.set("domains", js.undefined)
+    @scala.inline
+    def setEmptyFunction1(value: /* element */ JQuery => Unit): Self = this.set("empty", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEmptyFunction0(value: () => Unit): Self = this.set("empty", js.Any.fromFunction0(value))
+    @scala.inline
+    def setEmpty(value: IEmpty | IJQueryEmpty): Self = this.set("empty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmpty: Self = this.set("empty", js.undefined)
+    @scala.inline
+    def setSecondLevelDomainsVarargs(value: String*): Self = this.set("secondLevelDomains", js.Array(value :_*))
+    @scala.inline
+    def setSecondLevelDomains(value: js.Array[String]): Self = this.set("secondLevelDomains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondLevelDomains: Self = this.set("secondLevelDomains", js.undefined)
+    @scala.inline
+    def setTopLevelDomainsVarargs(value: String*): Self = this.set("topLevelDomains", js.Array(value :_*))
+    @scala.inline
+    def setTopLevelDomains(value: js.Array[String]): Self = this.set("topLevelDomains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopLevelDomains: Self = this.set("topLevelDomains", js.undefined)
+  }
+  
 }
 

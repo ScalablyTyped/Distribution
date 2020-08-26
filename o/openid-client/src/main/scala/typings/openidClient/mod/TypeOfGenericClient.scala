@@ -14,7 +14,7 @@ trait TypeOfGenericClient[TClient /* <: Client */]
      with Instantiable2[/* metadata */ ClientMetadata, /* jwks */ JSONWebKeySet, TClient]
      with Instantiable3[
       /* metadata */ ClientMetadata, 
-      /* jwks */ JSONWebKeySet, 
+      js.UndefOr[/* jwks */ JSONWebKeySet], 
       /* options */ ClientOptions, 
       TClient
     ]

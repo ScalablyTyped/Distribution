@@ -57,6 +57,7 @@ object sha1Mod extends js.Object {
     def digest(): js.Array[Double] = js.native
     def reset(): Unit = js.native
     def update(): Unit = js.native
+    def update(bytes: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
     def update(bytes: String): Unit = js.native
     def update(bytes: String, length: Double): Unit = js.native
     def update(bytes: js.Array[Double]): Unit = js.native

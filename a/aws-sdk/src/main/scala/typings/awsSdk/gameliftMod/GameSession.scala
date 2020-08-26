@@ -82,46 +82,96 @@ trait GameSession extends js.Object {
 
 object GameSession {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    CreatorId: NonZeroAndMaxString = null,
-    CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined,
-    DnsName: DnsName = null,
-    FleetArn: FleetArn = null,
-    FleetId: FleetId = null,
-    GameProperties: GamePropertyList = null,
-    GameSessionData: GameSessionData = null,
-    GameSessionId: NonZeroAndMaxString = null,
-    IpAddress: IpAddress = null,
-    MatchmakerData: MatchmakerData = null,
-    MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined,
-    Name: NonZeroAndMaxString = null,
-    PlayerSessionCreationPolicy: PlayerSessionCreationPolicy = null,
-    Port: js.UndefOr[PortNumber] = js.undefined,
-    Status: GameSessionStatus = null,
-    StatusReason: GameSessionStatusReason = null,
-    TerminationTime: Timestamp = null
-  ): GameSession = {
+  def apply(): GameSession = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (CreatorId != null) __obj.updateDynamic("CreatorId")(CreatorId.asInstanceOf[js.Any])
-    if (!js.isUndefined(CurrentPlayerSessionCount)) __obj.updateDynamic("CurrentPlayerSessionCount")(CurrentPlayerSessionCount.get.asInstanceOf[js.Any])
-    if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName.asInstanceOf[js.Any])
-    if (FleetArn != null) __obj.updateDynamic("FleetArn")(FleetArn.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (GameProperties != null) __obj.updateDynamic("GameProperties")(GameProperties.asInstanceOf[js.Any])
-    if (GameSessionData != null) __obj.updateDynamic("GameSessionData")(GameSessionData.asInstanceOf[js.Any])
-    if (GameSessionId != null) __obj.updateDynamic("GameSessionId")(GameSessionId.asInstanceOf[js.Any])
-    if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress.asInstanceOf[js.Any])
-    if (MatchmakerData != null) __obj.updateDynamic("MatchmakerData")(MatchmakerData.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumPlayerSessionCount)) __obj.updateDynamic("MaximumPlayerSessionCount")(MaximumPlayerSessionCount.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (PlayerSessionCreationPolicy != null) __obj.updateDynamic("PlayerSessionCreationPolicy")(PlayerSessionCreationPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
-    if (TerminationTime != null) __obj.updateDynamic("TerminationTime")(TerminationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSession]
   }
+  @scala.inline
+  implicit class GameSessionOps[Self <: GameSession] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setCreatorId(value: NonZeroAndMaxString): Self = this.set("CreatorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorId: Self = this.set("CreatorId", js.undefined)
+    @scala.inline
+    def setCurrentPlayerSessionCount(value: WholeNumber): Self = this.set("CurrentPlayerSessionCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentPlayerSessionCount: Self = this.set("CurrentPlayerSessionCount", js.undefined)
+    @scala.inline
+    def setDnsName(value: DnsName): Self = this.set("DnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsName: Self = this.set("DnsName", js.undefined)
+    @scala.inline
+    def setFleetArn(value: FleetArn): Self = this.set("FleetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetArn: Self = this.set("FleetArn", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setGamePropertiesVarargs(value: GameProperty*): Self = this.set("GameProperties", js.Array(value :_*))
+    @scala.inline
+    def setGameProperties(value: GamePropertyList): Self = this.set("GameProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameProperties: Self = this.set("GameProperties", js.undefined)
+    @scala.inline
+    def setGameSessionData(value: GameSessionData): Self = this.set("GameSessionData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameSessionData: Self = this.set("GameSessionData", js.undefined)
+    @scala.inline
+    def setGameSessionId(value: NonZeroAndMaxString): Self = this.set("GameSessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameSessionId: Self = this.set("GameSessionId", js.undefined)
+    @scala.inline
+    def setIpAddress(value: IpAddress): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+    @scala.inline
+    def setMatchmakerData(value: MatchmakerData): Self = this.set("MatchmakerData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchmakerData: Self = this.set("MatchmakerData", js.undefined)
+    @scala.inline
+    def setMaximumPlayerSessionCount(value: WholeNumber): Self = this.set("MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumPlayerSessionCount: Self = this.set("MaximumPlayerSessionCount", js.undefined)
+    @scala.inline
+    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPlayerSessionCreationPolicy(value: PlayerSessionCreationPolicy): Self = this.set("PlayerSessionCreationPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayerSessionCreationPolicy: Self = this.set("PlayerSessionCreationPolicy", js.undefined)
+    @scala.inline
+    def setPort(value: PortNumber): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setStatus(value: GameSessionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: GameSessionStatusReason): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+    @scala.inline
+    def setTerminationTime(value: Timestamp): Self = this.set("TerminationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminationTime: Self = this.set("TerminationTime", js.undefined)
+  }
+  
 }
 

@@ -66,35 +66,76 @@ trait PutBotRequest extends js.Object {
 
 object PutBotRequest {
   @scala.inline
-  def apply(
-    childDirected: Boolean,
-    locale: Locale,
-    name: BotName,
-    abortStatement: Statement = null,
-    checksum: String = null,
-    clarificationPrompt: Prompt = null,
-    createVersion: js.UndefOr[Boolean] = js.undefined,
-    description: Description = null,
-    detectSentiment: js.UndefOr[Boolean] = js.undefined,
-    idleSessionTTLInSeconds: js.UndefOr[SessionTTL] = js.undefined,
-    intents: IntentList = null,
-    processBehavior: ProcessBehavior = null,
-    tags: TagList = null,
-    voiceId: String = null
-  ): PutBotRequest = {
+  def apply(childDirected: Boolean, locale: Locale, name: BotName): PutBotRequest = {
     val __obj = js.Dynamic.literal(childDirected = childDirected.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (abortStatement != null) __obj.updateDynamic("abortStatement")(abortStatement.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
-    if (clarificationPrompt != null) __obj.updateDynamic("clarificationPrompt")(clarificationPrompt.asInstanceOf[js.Any])
-    if (!js.isUndefined(createVersion)) __obj.updateDynamic("createVersion")(createVersion.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectSentiment)) __obj.updateDynamic("detectSentiment")(detectSentiment.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(idleSessionTTLInSeconds)) __obj.updateDynamic("idleSessionTTLInSeconds")(idleSessionTTLInSeconds.get.asInstanceOf[js.Any])
-    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
-    if (processBehavior != null) __obj.updateDynamic("processBehavior")(processBehavior.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (voiceId != null) __obj.updateDynamic("voiceId")(voiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBotRequest]
   }
+  @scala.inline
+  implicit class PutBotRequestOps[Self <: PutBotRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildDirected(value: Boolean): Self = this.set("childDirected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocale(value: Locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: BotName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAbortStatement(value: Statement): Self = this.set("abortStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortStatement: Self = this.set("abortStatement", js.undefined)
+    @scala.inline
+    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    @scala.inline
+    def setClarificationPrompt(value: Prompt): Self = this.set("clarificationPrompt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClarificationPrompt: Self = this.set("clarificationPrompt", js.undefined)
+    @scala.inline
+    def setCreateVersion(value: Boolean): Self = this.set("createVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateVersion: Self = this.set("createVersion", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDetectSentiment(value: Boolean): Self = this.set("detectSentiment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectSentiment: Self = this.set("detectSentiment", js.undefined)
+    @scala.inline
+    def setIdleSessionTTLInSeconds(value: SessionTTL): Self = this.set("idleSessionTTLInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdleSessionTTLInSeconds: Self = this.set("idleSessionTTLInSeconds", js.undefined)
+    @scala.inline
+    def setIntentsVarargs(value: Intent*): Self = this.set("intents", js.Array(value :_*))
+    @scala.inline
+    def setIntents(value: IntentList): Self = this.set("intents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntents: Self = this.set("intents", js.undefined)
+    @scala.inline
+    def setProcessBehavior(value: ProcessBehavior): Self = this.set("processBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessBehavior: Self = this.set("processBehavior", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVoiceId(value: String): Self = this.set("voiceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoiceId: Self = this.set("voiceId", js.undefined)
+  }
+  
 }
 

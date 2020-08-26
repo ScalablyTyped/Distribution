@@ -1,9 +1,6 @@
 package typings.reactFlexr.ReactFlexr
 
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
-import typings.react.mod.ReactNode
 import typings.reactFlexr.reactFlexrStrings.bottom
 import typings.reactFlexr.reactFlexrStrings.center
 import typings.reactFlexr.reactFlexrStrings.left
@@ -13,47 +10,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridProps extends Props[Grid] {
   /**
     * Vertical Align Sub Cells: top, center, bottom
     */
-  var align: js.UndefOr[top | center | bottom] = js.undefined
+  var align: js.UndefOr[top | center | bottom] = js.native
   /**
     * All sub cells will be full height.
     */
-  var flexCells: js.UndefOr[Boolean] = js.undefined
+  var flexCells: js.UndefOr[Boolean] = js.native
   /**
     * Override default gutter: '1em', '5%', '10px', etc.
     * Propagates downwards. Cells inside this Grid component
     * will use the same gutter.
     */
-  var gutter: js.UndefOr[String] = js.undefined
+  var gutter: js.UndefOr[String] = js.native
   /**
     * Horizontal Align Sub Cells: left, center, right
     */
-  var hAlign: js.UndefOr[left | center | right] = js.undefined
+  var hAlign: js.UndefOr[left | center | right] = js.native
 }
 
 object GridProps {
   @scala.inline
-  def apply(
-    align: top | center | bottom = null,
-    children: ReactNode = null,
-    flexCells: js.UndefOr[Boolean] = js.undefined,
-    gutter: String = null,
-    hAlign: left | center | right = null,
-    key: Key = null,
-    ref: js.UndefOr[Null | LegacyRef[Grid]] = js.undefined
-  ): GridProps = {
+  def apply(): GridProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(flexCells)) __obj.updateDynamic("flexCells")(flexCells.get.asInstanceOf[js.Any])
-    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
-    if (hAlign != null) __obj.updateDynamic("hAlign")(hAlign.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps]
   }
+  @scala.inline
+  implicit class GridPropsOps[Self <: GridProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: top | center | bottom): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setFlexCells(value: Boolean): Self = this.set("flexCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexCells: Self = this.set("flexCells", js.undefined)
+    @scala.inline
+    def setGutter(value: String): Self = this.set("gutter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGutter: Self = this.set("gutter", js.undefined)
+    @scala.inline
+    def setHAlign(value: left | center | right): Self = this.set("hAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHAlign: Self = this.set("hAlign", js.undefined)
+  }
+  
 }
 

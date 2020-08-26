@@ -4,26 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PromiseRejectionEventInit extends EventInit {
-  var promise: js.Promise[_]
-  var reason: js.UndefOr[js.Any] = js.undefined
+  var promise: js.Promise[_] = js.native
+  var reason: js.UndefOr[js.Any] = js.native
 }
 
 object PromiseRejectionEventInit {
   @scala.inline
-  def apply(
-    promise: js.Promise[_],
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    reason: js.Any = null
-  ): PromiseRejectionEventInit = {
+  def apply(promise: js.Promise[_]): PromiseRejectionEventInit = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromiseRejectionEventInit]
   }
+  @scala.inline
+  implicit class PromiseRejectionEventInitOps[Self <: PromiseRejectionEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPromise(value: js.Promise[_]): Self = this.set("promise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReason(value: js.Any): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+  }
+  
 }
 

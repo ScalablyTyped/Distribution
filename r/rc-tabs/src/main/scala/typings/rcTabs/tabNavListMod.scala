@@ -21,7 +21,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tabs/lib/TabNavList", JSImport.Namespace)
+@JSImport("rc-tabs/es/TabNavList", JSImport.Namespace)
 @js.native
 object tabNavListMod extends js.Object {
   @js.native

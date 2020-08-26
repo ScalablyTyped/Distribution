@@ -11,9 +11,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object deleteMatchMod extends js.Object {
   def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D): D = js.native
+  def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](
+    dataset: D,
+    subject: js.UndefOr[Term],
+    predicate: js.UndefOr[Term],
+    `object`: js.UndefOr[Term],
+    graph: Term
+  ): D = js.native
+  def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: js.UndefOr[Term], predicate: js.UndefOr[Term], `object`: Term): D = js.native
+  def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: js.UndefOr[Term], predicate: Term): D = js.native
   def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term): D = js.native
-  def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Term): D = js.native
-  def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Term, `object`: Term): D = js.native
-  def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Term, `object`: Term, graph: Term): D = js.native
 }
 

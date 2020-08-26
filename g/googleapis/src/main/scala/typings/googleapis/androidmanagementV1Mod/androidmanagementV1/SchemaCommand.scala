@@ -48,24 +48,52 @@ trait SchemaCommand extends js.Object {
 
 object SchemaCommand {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    duration: String = null,
-    errorCode: String = null,
-    newPassword: String = null,
-    resetPasswordFlags: js.Array[String] = null,
-    `type`: String = null,
-    userName: String = null
-  ): SchemaCommand = {
+  def apply(): SchemaCommand = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (newPassword != null) __obj.updateDynamic("newPassword")(newPassword.asInstanceOf[js.Any])
-    if (resetPasswordFlags != null) __obj.updateDynamic("resetPasswordFlags")(resetPasswordFlags.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCommand]
   }
+  @scala.inline
+  implicit class SchemaCommandOps[Self <: SchemaCommand] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setErrorCode(value: String): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    @scala.inline
+    def setNewPassword(value: String): Self = this.set("newPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewPassword: Self = this.set("newPassword", js.undefined)
+    @scala.inline
+    def setResetPasswordFlagsVarargs(value: String*): Self = this.set("resetPasswordFlags", js.Array(value :_*))
+    @scala.inline
+    def setResetPasswordFlags(value: js.Array[String]): Self = this.set("resetPasswordFlags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetPasswordFlags: Self = this.set("resetPasswordFlags", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("userName", js.undefined)
+  }
+  
 }
 

@@ -21,28 +21,15 @@ object AppSchema {
     projectDir: String,
     projectId: String,
     template: String,
-    `type`: ProjectType,
-    appflowId: String = null,
-    packageId: String = null
+    `type`: ProjectType
   ): AppSchema = {
     val __obj = js.Dynamic.literal(cloned = cloned.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (appflowId != null) __obj.updateDynamic("appflowId")(appflowId.asInstanceOf[js.Any])
-    if (packageId != null) __obj.updateDynamic("packageId")(packageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppSchema]
   }
   @scala.inline
-  def ClonedAppSchema(
-    cloned: `true`,
-    projectDir: String,
-    projectId: String,
-    url: String,
-    appflowId: String = null,
-    packageId: String = null
-  ): AppSchema = {
+  def ClonedAppSchema(cloned: `true`, projectDir: String, projectId: String, url: String): AppSchema = {
     val __obj = js.Dynamic.literal(cloned = cloned.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (appflowId != null) __obj.updateDynamic("appflowId")(appflowId.asInstanceOf[js.Any])
-    if (packageId != null) __obj.updateDynamic("packageId")(packageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppSchema]
   }
 }

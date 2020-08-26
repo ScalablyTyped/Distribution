@@ -21,6 +21,11 @@ trait SoundRecorder extends js.Object {
     *   be called once the recording completes
     */
   def record(soundFile: SoundFile): Unit = js.native
+  def record(
+    soundFile: SoundFile,
+    duration: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): Unit = js.native
   def record(soundFile: SoundFile, duration: Double): Unit = js.native
   def record(soundFile: SoundFile, duration: Double, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
   /**

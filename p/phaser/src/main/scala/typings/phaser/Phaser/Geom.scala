@@ -78,6 +78,7 @@ object Geom extends js.Object {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
     /**
@@ -101,6 +102,7 @@ object Geom extends js.Object {
       * @param y The y position of the center of the circle. Default 0.
       */
     def setPosition(): this.type = js.native
+    def setPosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
     def setPosition(x: Double): this.type = js.native
     def setPosition(x: Double, y: Double): this.type = js.native
     /**
@@ -110,7 +112,11 @@ object Geom extends js.Object {
       * @param radius The radius of the circle. Default 0.
       */
     def setTo(): this.type = js.native
+    def setTo(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], radius: Double): this.type = js.native
+    def setTo(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
+    def setTo(x: js.UndefOr[scala.Nothing], y: Double, radius: Double): this.type = js.native
     def setTo(x: Double): this.type = js.native
+    def setTo(x: Double, y: js.UndefOr[scala.Nothing], radius: Double): this.type = js.native
     def setTo(x: Double, y: Double): this.type = js.native
     def setTo(x: Double, y: Double, radius: Double): this.type = js.native
   }
@@ -192,6 +198,7 @@ object Geom extends js.Object {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
     /**
@@ -306,6 +313,7 @@ object Geom extends js.Object {
       * @param output An optional array of Points, or point-like objects, to store the coordinates of the points on the line.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: integer): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: integer, output: O): O = js.native
     /**
@@ -322,8 +330,24 @@ object Geom extends js.Object {
       * @param y2 The y coordinate of the lines ending point. Default 0.
       */
     def setTo(): this.type = js.native
+    def setTo(
+      x1: js.UndefOr[scala.Nothing],
+      y1: js.UndefOr[scala.Nothing],
+      x2: js.UndefOr[scala.Nothing],
+      y2: Double
+    ): this.type = js.native
+    def setTo(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double): this.type = js.native
+    def setTo(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double): this.type = js.native
+    def setTo(x1: js.UndefOr[scala.Nothing], y1: Double): this.type = js.native
+    def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
+    def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double): this.type = js.native
+    def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double, y2: Double): this.type = js.native
     def setTo(x1: Double): this.type = js.native
+    def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
+    def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double): this.type = js.native
+    def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double): this.type = js.native
     def setTo(x1: Double, y1: Double): this.type = js.native
+    def setTo(x1: Double, y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
     def setTo(x1: Double, y1: Double, x2: Double): this.type = js.native
     def setTo(x1: Double, y1: Double, x2: Double, y2: Double): this.type = js.native
   }
@@ -352,6 +376,7 @@ object Geom extends js.Object {
       * @param y The y coordinate of this Point. Default x.
       */
     def setTo(): this.type = js.native
+    def setTo(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
     def setTo(x: Double): this.type = js.native
     def setTo(x: Double, y: Double): this.type = js.native
   }
@@ -398,6 +423,7 @@ object Geom extends js.Object {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
     /**
@@ -519,6 +545,7 @@ object Geom extends js.Object {
       * @param output An array to which to append the points.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
     /**
@@ -649,6 +676,7 @@ object Geom extends js.Object {
       * @param output Optional Array for writing the calculated points into. Otherwise a new array will be created.
       */
     def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: js.UndefOr[scala.Nothing], output: O): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
     /**

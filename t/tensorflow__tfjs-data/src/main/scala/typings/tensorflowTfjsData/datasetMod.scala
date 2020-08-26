@@ -3,7 +3,6 @@ package typings.tensorflowTfjsData
 import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
 import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
 import typings.tensorflowTfjsData.typesMod.Container
-import typings.tensorflowTfjsData.typesMod.DataElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -101,8 +100,6 @@ object datasetMod extends js.Object {
       */
     /** @doc {heading: 'Data', subheading: 'Classes'} */
     def filter(predicate: js.Function1[/* value */ T, Boolean]): Dataset[T] = js.native
-    /** @deprecated Please use `dataset.forEachAsync()` instead. */
-    def forEach(f: js.Function1[/* input */ T, Unit]): js.Promise[Unit] = js.native
     /**
       * Apply a function to every element of the dataset.
       *
@@ -207,6 +204,7 @@ object datasetMod extends js.Object {
       */
     /** @doc {heading: 'Data', subheading: 'Classes'} */
     def shuffle(bufferSize: Double): Dataset[T] = js.native
+    def shuffle(bufferSize: Double, seed: js.UndefOr[scala.Nothing], reshuffleEachIteration: Boolean): Dataset[T] = js.native
     def shuffle(bufferSize: Double, seed: String): Dataset[T] = js.native
     def shuffle(bufferSize: Double, seed: String, reshuffleEachIteration: Boolean): Dataset[T] = js.native
     /**
@@ -283,6 +281,6 @@ object datasetMod extends js.Object {
     val MAX_BUFFER_SIZE: /* 10000 */ Double = js.native
   }
   
-  type DatasetContainer = Container[Dataset[DataElement]]
+  type DatasetContainer = Container[Dataset[TensorContainer]]
 }
 

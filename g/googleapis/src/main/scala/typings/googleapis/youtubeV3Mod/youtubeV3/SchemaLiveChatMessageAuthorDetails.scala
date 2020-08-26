@@ -42,26 +42,54 @@ trait SchemaLiveChatMessageAuthorDetails extends js.Object {
 
 object SchemaLiveChatMessageAuthorDetails {
   @scala.inline
-  def apply(
-    channelId: String = null,
-    channelUrl: String = null,
-    displayName: String = null,
-    isChatModerator: js.UndefOr[Boolean] = js.undefined,
-    isChatOwner: js.UndefOr[Boolean] = js.undefined,
-    isChatSponsor: js.UndefOr[Boolean] = js.undefined,
-    isVerified: js.UndefOr[Boolean] = js.undefined,
-    profileImageUrl: String = null
-  ): SchemaLiveChatMessageAuthorDetails = {
+  def apply(): SchemaLiveChatMessageAuthorDetails = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (channelUrl != null) __obj.updateDynamic("channelUrl")(channelUrl.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isChatModerator)) __obj.updateDynamic("isChatModerator")(isChatModerator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isChatOwner)) __obj.updateDynamic("isChatOwner")(isChatOwner.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isChatSponsor)) __obj.updateDynamic("isChatSponsor")(isChatSponsor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVerified)) __obj.updateDynamic("isVerified")(isVerified.get.asInstanceOf[js.Any])
-    if (profileImageUrl != null) __obj.updateDynamic("profileImageUrl")(profileImageUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveChatMessageAuthorDetails]
   }
+  @scala.inline
+  implicit class SchemaLiveChatMessageAuthorDetailsOps[Self <: SchemaLiveChatMessageAuthorDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setChannelUrl(value: String): Self = this.set("channelUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelUrl: Self = this.set("channelUrl", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setIsChatModerator(value: Boolean): Self = this.set("isChatModerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsChatModerator: Self = this.set("isChatModerator", js.undefined)
+    @scala.inline
+    def setIsChatOwner(value: Boolean): Self = this.set("isChatOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsChatOwner: Self = this.set("isChatOwner", js.undefined)
+    @scala.inline
+    def setIsChatSponsor(value: Boolean): Self = this.set("isChatSponsor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsChatSponsor: Self = this.set("isChatSponsor", js.undefined)
+    @scala.inline
+    def setIsVerified(value: Boolean): Self = this.set("isVerified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsVerified: Self = this.set("isVerified", js.undefined)
+    @scala.inline
+    def setProfileImageUrl(value: String): Self = this.set("profileImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileImageUrl: Self = this.set("profileImageUrl", js.undefined)
+  }
+  
 }
 

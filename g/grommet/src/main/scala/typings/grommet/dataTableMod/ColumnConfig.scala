@@ -16,47 +16,81 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColumnConfig[TRowType] extends js.Object {
-  var aggregate: js.UndefOr[avg | max | min | sum] = js.undefined
-  var align: js.UndefOr[center | start | end] = js.undefined
-  var footer: js.UndefOr[ReactNode | Aggregate] = js.undefined
-  var header: js.UndefOr[String | ReactNode | Aggregate] = js.undefined
-  var primary: js.UndefOr[Boolean] = js.undefined
-  var property: String
-  var render: js.UndefOr[js.Function1[/* datum */ TRowType, ReactNode]] = js.undefined
-  var search: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[ColumnSizeType | String] = js.undefined
-  var sortable: js.UndefOr[Boolean] = js.undefined
-  var verticalAlign: js.UndefOr[middle | top | bottom] = js.undefined
+  var aggregate: js.UndefOr[avg | max | min | sum] = js.native
+  var align: js.UndefOr[center | start | end] = js.native
+  var footer: js.UndefOr[ReactNode | Aggregate] = js.native
+  var header: js.UndefOr[String | ReactNode | Aggregate] = js.native
+  var primary: js.UndefOr[Boolean] = js.native
+  var property: String = js.native
+  var render: js.UndefOr[js.Function1[/* datum */ TRowType, ReactNode]] = js.native
+  var search: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[ColumnSizeType | String] = js.native
+  var sortable: js.UndefOr[Boolean] = js.native
+  var verticalAlign: js.UndefOr[middle | top | bottom] = js.native
 }
 
 object ColumnConfig {
   @scala.inline
-  def apply[TRowType](
-    property: String,
-    aggregate: avg | max | min | sum = null,
-    align: center | start | end = null,
-    footer: ReactNode | Aggregate = null,
-    header: String | ReactNode | Aggregate = null,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    render: /* datum */ TRowType => ReactNode = null,
-    search: js.UndefOr[Boolean] = js.undefined,
-    size: ColumnSizeType | String = null,
-    sortable: js.UndefOr[Boolean] = js.undefined,
-    verticalAlign: middle | top | bottom = null
-  ): ColumnConfig[TRowType] = {
+  def apply[TRowType](property: String): ColumnConfig[TRowType] = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.get.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnConfig[TRowType]]
   }
+  @scala.inline
+  implicit class ColumnConfigOps[Self <: ColumnConfig[_], TRowType] (val x: Self with ColumnConfig[TRowType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAggregate(value: avg | max | min | sum): Self = this.set("aggregate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregate: Self = this.set("aggregate", js.undefined)
+    @scala.inline
+    def setAlign(value: center | start | end): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setFooter(value: ReactNode | Aggregate): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setHeader(value: String | ReactNode | Aggregate): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setRender(value: /* datum */ TRowType => ReactNode): Self = this.set("render", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRender: Self = this.set("render", js.undefined)
+    @scala.inline
+    def setSearch(value: Boolean): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch: Self = this.set("search", js.undefined)
+    @scala.inline
+    def setSize(value: ColumnSizeType | String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSortable(value: Boolean): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortable: Self = this.set("sortable", js.undefined)
+    @scala.inline
+    def setVerticalAlign(value: middle | top | bottom): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+  }
+  
 }
 

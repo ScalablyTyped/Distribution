@@ -4,26 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MapOptions extends js.Object {
   /**
     * If set to false the implementation may omit mappings for columns
     * @default true
     */
-  var columns: js.UndefOr[Boolean] = js.undefined
+  var columns: js.UndefOr[Boolean] = js.native
   /**
     * If set to false the implementation may omit inner mappings for modules.
     * @default true
     */
-  var module: js.UndefOr[Boolean] = js.undefined
+  var module: js.UndefOr[Boolean] = js.native
 }
 
 object MapOptions {
   @scala.inline
-  def apply(columns: js.UndefOr[Boolean] = js.undefined, module: js.UndefOr[Boolean] = js.undefined): MapOptions = {
+  def apply(): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
+  @scala.inline
+  implicit class MapOptionsOps[Self <: MapOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumns(value: Boolean): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setModule(value: Boolean): Self = this.set("module", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModule: Self = this.set("module", js.undefined)
+  }
+  
 }
 

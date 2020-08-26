@@ -25,8 +25,8 @@ trait MediaQueryList extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
-  def addListener(): Unit = js.native
   /** @deprecated */
+  def addListener(): Unit = js.native
   def addListener(listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, _]): Unit = js.native
@@ -42,8 +42,8 @@ trait MediaQueryList extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, _],
     options: EventListenerOptions
   ): Unit = js.native
-  def removeListener(): Unit = js.native
   /** @deprecated */
+  def removeListener(): Unit = js.native
   def removeListener(listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, _]): Unit = js.native
 }
 

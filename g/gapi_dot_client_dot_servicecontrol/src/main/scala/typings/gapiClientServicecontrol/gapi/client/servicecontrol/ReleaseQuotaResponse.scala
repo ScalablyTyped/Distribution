@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReleaseQuotaResponse extends js.Object {
   /**
     * The same operation_id value used in the ReleaseQuotaRequest. Used for
     * logging and diagnostics purposes.
     */
-  var operationId: js.UndefOr[String] = js.undefined
+  var operationId: js.UndefOr[String] = js.native
   /**
     * Quota metrics to indicate the result of release. Depending on the
     * request, one or more of the following metrics will be included:
@@ -26,27 +27,51 @@ trait ReleaseQuotaResponse extends js.Object {
     * the metrics will be specified using the following gauge metric:
     * "serviceruntime.googleapis.com/quota/limit"
     */
-  var quotaMetrics: js.UndefOr[js.Array[MetricValueSet]] = js.undefined
+  var quotaMetrics: js.UndefOr[js.Array[MetricValueSet]] = js.native
   /** Indicates the decision of the release. */
-  var releaseErrors: js.UndefOr[js.Array[QuotaError]] = js.undefined
+  var releaseErrors: js.UndefOr[js.Array[QuotaError]] = js.native
   /** ID of the actual config used to process the request. */
-  var serviceConfigId: js.UndefOr[String] = js.undefined
+  var serviceConfigId: js.UndefOr[String] = js.native
 }
 
 object ReleaseQuotaResponse {
   @scala.inline
-  def apply(
-    operationId: String = null,
-    quotaMetrics: js.Array[MetricValueSet] = null,
-    releaseErrors: js.Array[QuotaError] = null,
-    serviceConfigId: String = null
-  ): ReleaseQuotaResponse = {
+  def apply(): ReleaseQuotaResponse = {
     val __obj = js.Dynamic.literal()
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics.asInstanceOf[js.Any])
-    if (releaseErrors != null) __obj.updateDynamic("releaseErrors")(releaseErrors.asInstanceOf[js.Any])
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseQuotaResponse]
   }
+  @scala.inline
+  implicit class ReleaseQuotaResponseOps[Self <: ReleaseQuotaResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setQuotaMetricsVarargs(value: MetricValueSet*): Self = this.set("quotaMetrics", js.Array(value :_*))
+    @scala.inline
+    def setQuotaMetrics(value: js.Array[MetricValueSet]): Self = this.set("quotaMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaMetrics: Self = this.set("quotaMetrics", js.undefined)
+    @scala.inline
+    def setReleaseErrorsVarargs(value: QuotaError*): Self = this.set("releaseErrors", js.Array(value :_*))
+    @scala.inline
+    def setReleaseErrors(value: js.Array[QuotaError]): Self = this.set("releaseErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseErrors: Self = this.set("releaseErrors", js.undefined)
+    @scala.inline
+    def setServiceConfigId(value: String): Self = this.set("serviceConfigId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceConfigId: Self = this.set("serviceConfigId", js.undefined)
+  }
+  
 }
 

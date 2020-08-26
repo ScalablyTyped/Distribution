@@ -64,10 +64,10 @@ object relayModernRecordMod extends js.Object {
       * Set the value of a field to a reference to another record.
       */
     def setLinkedRecordID(record: Record, storageKey: String, linkedID: DataID): Unit = js.native
-    def setLinkedRecordIDs(record: Record, storageKey: String): Unit = js.native
     /**
       * Set the value of a field to a list of references other records.
       */
+    def setLinkedRecordIDs(record: Record, storageKey: String): Unit = js.native
     def setLinkedRecordIDs(record: Record, storageKey: String, linkedIDs: js.Array[DataID]): Unit = js.native
     /**
       * Set the value of a storageKey to a scalar.

@@ -30,19 +30,40 @@ trait ModifyInstanceMetadataOptionsRequest extends js.Object {
 
 object ModifyInstanceMetadataOptionsRequest {
   @scala.inline
-  def apply(
-    InstanceId: InstanceId,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    HttpEndpoint: InstanceMetadataEndpointState = null,
-    HttpPutResponseHopLimit: js.UndefOr[Integer] = js.undefined,
-    HttpTokens: HttpTokensState = null
-  ): ModifyInstanceMetadataOptionsRequest = {
+  def apply(InstanceId: InstanceId): ModifyInstanceMetadataOptionsRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (HttpEndpoint != null) __obj.updateDynamic("HttpEndpoint")(HttpEndpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(HttpPutResponseHopLimit)) __obj.updateDynamic("HttpPutResponseHopLimit")(HttpPutResponseHopLimit.get.asInstanceOf[js.Any])
-    if (HttpTokens != null) __obj.updateDynamic("HttpTokens")(HttpTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceMetadataOptionsRequest]
   }
+  @scala.inline
+  implicit class ModifyInstanceMetadataOptionsRequestOps[Self <: ModifyInstanceMetadataOptionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setHttpEndpoint(value: InstanceMetadataEndpointState): Self = this.set("HttpEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpEndpoint: Self = this.set("HttpEndpoint", js.undefined)
+    @scala.inline
+    def setHttpPutResponseHopLimit(value: Integer): Self = this.set("HttpPutResponseHopLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpPutResponseHopLimit: Self = this.set("HttpPutResponseHopLimit", js.undefined)
+    @scala.inline
+    def setHttpTokens(value: HttpTokensState): Self = this.set("HttpTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpTokens: Self = this.set("HttpTokens", js.undefined)
+  }
+  
 }
 

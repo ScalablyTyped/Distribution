@@ -14,10 +14,28 @@ trait PutRemediationExceptionsResponse extends js.Object {
 
 object PutRemediationExceptionsResponse {
   @scala.inline
-  def apply(FailedBatches: FailedRemediationExceptionBatches = null): PutRemediationExceptionsResponse = {
+  def apply(): PutRemediationExceptionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (FailedBatches != null) __obj.updateDynamic("FailedBatches")(FailedBatches.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRemediationExceptionsResponse]
   }
+  @scala.inline
+  implicit class PutRemediationExceptionsResponseOps[Self <: PutRemediationExceptionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailedBatchesVarargs(value: FailedRemediationExceptionBatch*): Self = this.set("FailedBatches", js.Array(value :_*))
+    @scala.inline
+    def setFailedBatches(value: FailedRemediationExceptionBatches): Self = this.set("FailedBatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedBatches: Self = this.set("FailedBatches", js.undefined)
+  }
+  
 }
 

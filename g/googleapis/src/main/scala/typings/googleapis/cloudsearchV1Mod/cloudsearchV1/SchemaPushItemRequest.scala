@@ -23,12 +23,34 @@ trait SchemaPushItemRequest extends js.Object {
 
 object SchemaPushItemRequest {
   @scala.inline
-  def apply(connectorName: String = null, debugOptions: SchemaDebugOptions = null, item: SchemaPushItem = null): SchemaPushItemRequest = {
+  def apply(): SchemaPushItemRequest = {
     val __obj = js.Dynamic.literal()
-    if (connectorName != null) __obj.updateDynamic("connectorName")(connectorName.asInstanceOf[js.Any])
-    if (debugOptions != null) __obj.updateDynamic("debugOptions")(debugOptions.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPushItemRequest]
   }
+  @scala.inline
+  implicit class SchemaPushItemRequestOps[Self <: SchemaPushItemRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectorName(value: String): Self = this.set("connectorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectorName: Self = this.set("connectorName", js.undefined)
+    @scala.inline
+    def setDebugOptions(value: SchemaDebugOptions): Self = this.set("debugOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugOptions: Self = this.set("debugOptions", js.undefined)
+    @scala.inline
+    def setItem(value: SchemaPushItem): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+  }
+  
 }
 

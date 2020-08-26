@@ -22,16 +22,34 @@ trait MessageTemplateType extends js.Object {
 
 object MessageTemplateType {
   @scala.inline
-  def apply(
-    EmailMessage: EmailVerificationMessageType = null,
-    EmailSubject: EmailVerificationSubjectType = null,
-    SMSMessage: SmsVerificationMessageType = null
-  ): MessageTemplateType = {
+  def apply(): MessageTemplateType = {
     val __obj = js.Dynamic.literal()
-    if (EmailMessage != null) __obj.updateDynamic("EmailMessage")(EmailMessage.asInstanceOf[js.Any])
-    if (EmailSubject != null) __obj.updateDynamic("EmailSubject")(EmailSubject.asInstanceOf[js.Any])
-    if (SMSMessage != null) __obj.updateDynamic("SMSMessage")(SMSMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageTemplateType]
   }
+  @scala.inline
+  implicit class MessageTemplateTypeOps[Self <: MessageTemplateType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmailMessage(value: EmailVerificationMessageType): Self = this.set("EmailMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailMessage: Self = this.set("EmailMessage", js.undefined)
+    @scala.inline
+    def setEmailSubject(value: EmailVerificationSubjectType): Self = this.set("EmailSubject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailSubject: Self = this.set("EmailSubject", js.undefined)
+    @scala.inline
+    def setSMSMessage(value: SmsVerificationMessageType): Self = this.set("SMSMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSMSMessage: Self = this.set("SMSMessage", js.undefined)
+  }
+  
 }
 

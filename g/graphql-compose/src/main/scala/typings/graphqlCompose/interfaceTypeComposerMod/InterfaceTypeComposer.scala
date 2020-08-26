@@ -43,10 +43,7 @@ class InterfaceTypeComposer[TSource, TContext] protected () extends _ComposeOutp
     * Add new fields or replace existed in a GraphQL type
     */
   def addFields(newValues: ComposeFieldConfigMap[TSource, TContext]): this.type = js.native
-  def addTypeResolver[TSrc](
-    `type`: GraphQLObjectType[_, _, StringDictionary[_]],
-    checkFn: InterfaceTypeResolverCheckFn[TSrc, TContext]
-  ): this.type = js.native
+  def addTypeResolver[TSrc](`type`: GraphQLObjectType[_, _], checkFn: InterfaceTypeResolverCheckFn[TSrc, TContext]): this.type = js.native
   def addTypeResolver[TSrc](`type`: ObjectTypeComposer[TSrc, TContext], checkFn: InterfaceTypeResolverCheckFn[TSrc, TContext]): this.type = js.native
   def clearExtensions(): this.type = js.native
   def clearFieldArgExtensions(fieldName: String, argName: String): this.type = js.native
@@ -134,7 +131,7 @@ class InterfaceTypeComposer[TSource, TContext] protected () extends _ComposeOutp
     * ResolveType methods
     * -----------------------------------------------
     */
-  def getResolveType(): (GraphQLTypeResolver[TSource, TContext, StringDictionary[_]]) | Null | Unit = js.native
+  def getResolveType(): (GraphQLTypeResolver[TSource, TContext]) | Null | Unit = js.native
   /**
     * -----------------------------------------------
     * Type methods
@@ -144,10 +141,10 @@ class InterfaceTypeComposer[TSource, TContext] protected () extends _ComposeOutp
   def getTypeName(): String = js.native
   def getTypeNonNull(): GraphQLNonNull[GraphQLInterfaceType] = js.native
   def getTypePlural(): GraphQLList[GraphQLInterfaceType] = js.native
-  def getTypeResolverCheckFn(`type`: GraphQLObjectType[_, _, StringDictionary[_]]): InterfaceTypeResolverCheckFn[TSource, TContext] = js.native
+  def getTypeResolverCheckFn(`type`: GraphQLObjectType[_, _]): InterfaceTypeResolverCheckFn[TSource, TContext] = js.native
   def getTypeResolverCheckFn(`type`: ObjectTypeComposer[_, TContext]): InterfaceTypeResolverCheckFn[TSource, TContext] = js.native
   def getTypeResolverNames(): js.Array[String] = js.native
-  def getTypeResolverTypes(): js.Array[GraphQLObjectType[_, _, StringDictionary[_]]] = js.native
+  def getTypeResolverTypes(): js.Array[GraphQLObjectType[_, _]] = js.native
   def getTypeResolvers(): InterfaceTypeResolversMap[TContext] = js.native
   def hasExtension(extensionName: String): Boolean = js.native
   /**
@@ -160,7 +157,7 @@ class InterfaceTypeComposer[TSource, TContext] protected () extends _ComposeOutp
   def hasFieldArgExtension(fieldName: String, argName: String, extensionName: String): Boolean = js.native
   def hasFieldExtension(fieldName: String, extensionName: String): Boolean = js.native
   def hasInputTypeComposer(): Boolean = js.native
-  def hasTypeResolver(`type`: GraphQLObjectType[_, _, StringDictionary[_]]): Boolean = js.native
+  def hasTypeResolver(`type`: GraphQLObjectType[_, _]): Boolean = js.native
   def hasTypeResolver(`type`: ObjectTypeComposer[_, TContext]): Boolean = js.native
   def isFieldNonNull(fieldName: String): Boolean = js.native
   def makeFieldNonNull(fieldNameOrArray: String): this.type = js.native
@@ -175,7 +172,7 @@ class InterfaceTypeComposer[TSource, TContext] protected () extends _ComposeOutp
   def removeInputTypeComposer(): this.type = js.native
   def removeOtherFields(fieldNameOrArray: String): this.type = js.native
   def removeOtherFields(fieldNameOrArray: js.Array[String]): this.type = js.native
-  def removeTypeResolver(`type`: GraphQLObjectType[_, _, StringDictionary[_]]): this.type = js.native
+  def removeTypeResolver(`type`: GraphQLObjectType[_, _]): this.type = js.native
   def removeTypeResolver(`type`: ObjectTypeComposer[_, TContext]): this.type = js.native
   def reorderFields(names: js.Array[String]): this.type = js.native
   def setDescription(description: String): this.type = js.native
@@ -192,7 +189,7 @@ class InterfaceTypeComposer[TSource, TContext] protected () extends _ComposeOutp
   def setInputTypeComposer(itc: InputTypeComposer[TContext]): this.type = js.native
   def setResolveType(): this.type = js.native
   def setResolveType(fn: Unit): this.type = js.native
-  def setResolveType(fn: GraphQLTypeResolver[TSource, TContext, StringDictionary[_]]): this.type = js.native
+  def setResolveType(fn: GraphQLTypeResolver[TSource, TContext]): this.type = js.native
   def setTypeName(name: String): this.type = js.native
   def setTypeResolvers(typeResolversMap: InterfaceTypeResolversMap[TContext]): this.type = js.native
 }

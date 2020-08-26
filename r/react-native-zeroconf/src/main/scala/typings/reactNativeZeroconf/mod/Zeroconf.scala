@@ -68,7 +68,17 @@ trait Zeroconf extends EventEmitter {
     * @param port should be an integer between 0 and 65535.
     */
   def publishService(`type`: String, protocol: String): Unit = js.native
+  def publishService(
+    `type`: String,
+    protocol: String,
+    domain: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    port: Double
+  ): Unit = js.native
+  def publishService(`type`: String, protocol: String, domain: js.UndefOr[scala.Nothing], name: String): Unit = js.native
+  def publishService(`type`: String, protocol: String, domain: js.UndefOr[scala.Nothing], name: String, port: Double): Unit = js.native
   def publishService(`type`: String, protocol: String, domain: String): Unit = js.native
+  def publishService(`type`: String, protocol: String, domain: String, name: js.UndefOr[scala.Nothing], port: Double): Unit = js.native
   def publishService(`type`: String, protocol: String, domain: String, name: String): Unit = js.native
   def publishService(`type`: String, protocol: String, domain: String, name: String, port: Double): Unit = js.native
   /**
@@ -91,7 +101,11 @@ trait Zeroconf extends EventEmitter {
     * @param domain Default `local`
     */
   def scan(): Unit = js.native
+  def scan(`type`: js.UndefOr[scala.Nothing], protocol: js.UndefOr[scala.Nothing], domain: String): Unit = js.native
+  def scan(`type`: js.UndefOr[scala.Nothing], protocol: String): Unit = js.native
+  def scan(`type`: js.UndefOr[scala.Nothing], protocol: String, domain: String): Unit = js.native
   def scan(`type`: String): Unit = js.native
+  def scan(`type`: String, protocol: js.UndefOr[scala.Nothing], domain: String): Unit = js.native
   def scan(`type`: String, protocol: String): Unit = js.native
   def scan(`type`: String, protocol: String, domain: String): Unit = js.native
   /**

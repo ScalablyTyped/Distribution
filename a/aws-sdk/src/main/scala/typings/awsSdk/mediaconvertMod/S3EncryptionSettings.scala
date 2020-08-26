@@ -20,14 +20,32 @@ trait S3EncryptionSettings extends js.Object {
 
 object S3EncryptionSettings {
   @scala.inline
-  def apply(
-    EncryptionType: S3ServerSideEncryptionType = null,
-    KmsKeyArn: stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912 = null
-  ): S3EncryptionSettings = {
+  def apply(): S3EncryptionSettings = {
     val __obj = js.Dynamic.literal()
-    if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
-    if (KmsKeyArn != null) __obj.updateDynamic("KmsKeyArn")(KmsKeyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3EncryptionSettings]
   }
+  @scala.inline
+  implicit class S3EncryptionSettingsOps[Self <: S3EncryptionSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptionType(value: S3ServerSideEncryptionType): Self = this.set("EncryptionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionType: Self = this.set("EncryptionType", js.undefined)
+    @scala.inline
+    def setKmsKeyArn(
+      value: stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912
+    ): Self = this.set("KmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("KmsKeyArn", js.undefined)
+  }
+  
 }
 

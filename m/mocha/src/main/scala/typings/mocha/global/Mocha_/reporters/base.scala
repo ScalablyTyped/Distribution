@@ -15,6 +15,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object base
   extends TopLevel[
-      TypeofBase with (Instantiable2[/* runner */ Runner, js.UndefOr[/* options */ MochaOptions], Base])
+      TypeofBase with (Instantiable2[/* runner */ Runner, /* options */ js.UndefOr[MochaOptions], Base])
     ]
 

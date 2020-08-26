@@ -12,7 +12,7 @@ A sane FTP client implementation for NodeJS
 | Keywords           | ftp, protocol, files, server, client, async |
 | # releases         | 2 |
 | # dependents       | 107 |
-| # downloads        | 2285246 |
+| # downloads        | 2348894 |
 | # stars            | 21 |
 
 ## Links

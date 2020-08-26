@@ -4,50 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait `2` extends js.Object {
   /**
-    * Specify the delay time before animation start.
-    * Callback function can be used, where different delay time
-    * can be used on different element.
-    *
-    * For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
-    *
-    * For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasingUpdate.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-gauge.emphasis.itemStyle
     */
-  var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
-  /**
-    * Specify the delay time before update animation.
-    * Callback function can be used, where different delay time
-    * can be used on different element.
-    *
-    * For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
-    *
-    * For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pictorialBar.pictorialBar.animationEasingUpdate)
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasingUpdate.animationDelayUpdate
-    */
-  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.native
 }
 
 object `2` {
   @scala.inline
-  def apply(animationDelay: js.Function | Double = null, animationDelayUpdate: js.Function | Double = null): `2` = {
+  def apply(): `2` = {
     val __obj = js.Dynamic.literal()
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
-    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[`2`]
   }
+  @scala.inline
+  implicit class `2Ops`[Self <: `2`] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+  }
+  
 }
 

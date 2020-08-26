@@ -10,9 +10,9 @@ A npm package for easy downloading of ZingChart.
 | ------------------ | :-------------: |
 | Full name          | zingchart |
 | Keywords           | zingchart, chart, charting, javascript, charts, html5, charts |
-| # releases         | 15 |
+| # releases         | 13 |
 | # dependents       | 4 |
-| # downloads        | 60131 |
+| # downloads        | 62937 |
 | # stars            | 0 |
 
 ## Links

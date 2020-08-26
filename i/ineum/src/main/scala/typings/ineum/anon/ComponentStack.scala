@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ComponentStack extends js.Object {
-  var componentStack: String
+  var componentStack: String = js.native
 }
 
 object ComponentStack {
@@ -14,5 +15,20 @@ object ComponentStack {
     val __obj = js.Dynamic.literal(componentStack = componentStack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentStack]
   }
+  @scala.inline
+  implicit class ComponentStackOps[Self <: ComponentStack] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentStack(value: String): Self = this.set("componentStack", value.asInstanceOf[js.Any])
+  }
+  
 }
 

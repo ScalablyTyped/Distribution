@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#collection/layout
   */
+@js.native
 trait CollectionLayout extends js.Object {
-  def createLayout(options: LayoutOptions): Layouts
+  def createLayout(options: LayoutOptions): Layouts = js.native
   /**
     * Get a new layout, which can be used to algorithmically position the nodes in the collection.
     * This function is useful for running a layout on a subset of the elements in the graph, perhaps in parallel to other layouts.
@@ -19,8 +20,8 @@ trait CollectionLayout extends js.Object {
     *
     * @param options The layout options.
     */
-  def layout(options: LayoutOptions): Layouts
-  def makeLayout(options: LayoutOptions): Layouts
+  def layout(options: LayoutOptions): Layouts = js.native
+  def makeLayout(options: LayoutOptions): Layouts = js.native
 }
 
 object CollectionLayout {
@@ -33,5 +34,24 @@ object CollectionLayout {
     val __obj = js.Dynamic.literal(createLayout = js.Any.fromFunction1(createLayout), layout = js.Any.fromFunction1(layout), makeLayout = js.Any.fromFunction1(makeLayout))
     __obj.asInstanceOf[CollectionLayout]
   }
+  @scala.inline
+  implicit class CollectionLayoutOps[Self <: CollectionLayout] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateLayout(value: LayoutOptions => Layouts): Self = this.set("createLayout", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLayout(value: LayoutOptions => Layouts): Self = this.set("layout", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMakeLayout(value: LayoutOptions => Layouts): Self = this.set("makeLayout", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -51,6 +51,7 @@ trait ModuleDepsObject
   def on_transform(event: transform, listener: js.Function2[/* tr */ js.Any, /* file */ String, _]): this.type = js.native
   def parseDeps(file: String, src: String, cb: js.Any): js.Array[_] = js.native
   def readFile(file: String): ReadableStream = js.native
+  def readFile(file: String, id: js.UndefOr[scala.Nothing], pkg: PackageObject): ReadableStream = js.native
   def readFile(file: String, id: js.Any): ReadableStream = js.native
   def readFile(file: String, id: js.Any, pkg: PackageObject): ReadableStream = js.native
   def resolve(

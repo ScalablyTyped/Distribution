@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * @name umbraco.resources.contentTypeResource
   * @description Loads in data for content types
   **/
+@js.native
 trait IContentTypeResource extends js.Object {
   /**
     * @ngdoc method
@@ -22,7 +23,7 @@ trait IContentTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getAllPropertyTypeAliases(): IPromise[IResourcePromise]
+  def getAllPropertyTypeAliases(): IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.contentTypeResource#getAllowedTypes
@@ -42,7 +43,7 @@ trait IContentTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getAllowedTypes(contentId: Double): IPromise[IResourcePromise]
+  def getAllowedTypes(contentId: Double): IPromise[IResourcePromise] = js.native
 }
 
 object IContentTypeResource {
@@ -54,5 +55,22 @@ object IContentTypeResource {
     val __obj = js.Dynamic.literal(getAllPropertyTypeAliases = js.Any.fromFunction0(getAllPropertyTypeAliases), getAllowedTypes = js.Any.fromFunction1(getAllowedTypes))
     __obj.asInstanceOf[IContentTypeResource]
   }
+  @scala.inline
+  implicit class IContentTypeResourceOps[Self <: IContentTypeResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetAllPropertyTypeAliases(value: () => IPromise[IResourcePromise]): Self = this.set("getAllPropertyTypeAliases", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetAllowedTypes(value: Double => IPromise[IResourcePromise]): Self = this.set("getAllowedTypes", js.Any.fromFunction1(value))
+  }
+  
 }
 

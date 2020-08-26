@@ -18,11 +18,32 @@ trait DescribeTransitGatewayRouteTablesResult extends js.Object {
 
 object DescribeTransitGatewayRouteTablesResult {
   @scala.inline
-  def apply(NextToken: String = null, TransitGatewayRouteTables: TransitGatewayRouteTableList = null): DescribeTransitGatewayRouteTablesResult = {
+  def apply(): DescribeTransitGatewayRouteTablesResult = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (TransitGatewayRouteTables != null) __obj.updateDynamic("TransitGatewayRouteTables")(TransitGatewayRouteTables.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTransitGatewayRouteTablesResult]
   }
+  @scala.inline
+  implicit class DescribeTransitGatewayRouteTablesResultOps[Self <: DescribeTransitGatewayRouteTablesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTransitGatewayRouteTablesVarargs(value: TransitGatewayRouteTable*): Self = this.set("TransitGatewayRouteTables", js.Array(value :_*))
+    @scala.inline
+    def setTransitGatewayRouteTables(value: TransitGatewayRouteTableList): Self = this.set("TransitGatewayRouteTables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayRouteTables: Self = this.set("TransitGatewayRouteTables", js.undefined)
+  }
+  
 }
 

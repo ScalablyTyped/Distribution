@@ -5,30 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddToCalendarEvent extends js.Object {
-  var description: js.UndefOr[String] = js.undefined
-  var endTime: js.UndefOr[String | Date] = js.undefined
-  var location: js.UndefOr[String] = js.undefined
-  var startTime: js.UndefOr[String | Date] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String | Date] = js.native
+  var location: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String | Date] = js.native
+  var title: js.UndefOr[String] = js.native
 }
 
 object AddToCalendarEvent {
   @scala.inline
-  def apply(
-    description: String = null,
-    endTime: String | Date = null,
-    location: String = null,
-    startTime: String | Date = null,
-    title: String = null
-  ): AddToCalendarEvent = {
+  def apply(): AddToCalendarEvent = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddToCalendarEvent]
   }
+  @scala.inline
+  implicit class AddToCalendarEventOps[Self <: AddToCalendarEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEndTime(value: String | Date): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setStartTime(value: String | Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

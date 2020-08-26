@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "uuidv4" : "6.1.1"
+      "uuidv4" : "6.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "uuidv4" : "6.1.1"
+      "uuidv4" : "6.2.1"
     }
   ],
   "compile-devDependencies" : [

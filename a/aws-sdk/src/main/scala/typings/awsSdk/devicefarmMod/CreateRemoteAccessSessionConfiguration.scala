@@ -18,11 +18,32 @@ trait CreateRemoteAccessSessionConfiguration extends js.Object {
 
 object CreateRemoteAccessSessionConfiguration {
   @scala.inline
-  def apply(billingMethod: BillingMethod = null, vpceConfigurationArns: AmazonResourceNames = null): CreateRemoteAccessSessionConfiguration = {
+  def apply(): CreateRemoteAccessSessionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (billingMethod != null) __obj.updateDynamic("billingMethod")(billingMethod.asInstanceOf[js.Any])
-    if (vpceConfigurationArns != null) __obj.updateDynamic("vpceConfigurationArns")(vpceConfigurationArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRemoteAccessSessionConfiguration]
   }
+  @scala.inline
+  implicit class CreateRemoteAccessSessionConfigurationOps[Self <: CreateRemoteAccessSessionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillingMethod(value: BillingMethod): Self = this.set("billingMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingMethod: Self = this.set("billingMethod", js.undefined)
+    @scala.inline
+    def setVpceConfigurationArnsVarargs(value: AmazonResourceName*): Self = this.set("vpceConfigurationArns", js.Array(value :_*))
+    @scala.inline
+    def setVpceConfigurationArns(value: AmazonResourceNames): Self = this.set("vpceConfigurationArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpceConfigurationArns: Self = this.set("vpceConfigurationArns", js.undefined)
+  }
+  
 }
 

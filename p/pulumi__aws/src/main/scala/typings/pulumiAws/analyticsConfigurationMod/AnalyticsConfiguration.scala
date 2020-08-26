@@ -23,9 +23,21 @@ class AnalyticsConfiguration protected () extends CustomResource {
     */
   def this(name: String, args: AnalyticsConfigurationArgs) = this()
   def this(name: String, args: AnalyticsConfigurationArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The name of the bucket this analytics configuration is associated with.
+    */
   val bucket: Output_[String] = js.native
+  /**
+    * Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).
+    */
   val filter: Output_[js.UndefOr[AnalyticsConfigurationFilter]] = js.native
+  /**
+    * Unique identifier of the analytics configuration for the bucket.
+    */
   val name: Output_[String] = js.native
+  /**
+    * Configuration for the analytics data export (documented below).
+    */
   val storageClassAnalysis: Output_[js.UndefOr[AnalyticsConfigurationStorageClassAnalysis]] = js.native
 }
 
@@ -40,8 +52,10 @@ object AnalyticsConfiguration extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): AnalyticsConfiguration = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AnalyticsConfiguration = js.native
   def get(name: String, id: Input[ID], state: AnalyticsConfigurationState): AnalyticsConfiguration = js.native
   def get(name: String, id: Input[ID], state: AnalyticsConfigurationState, opts: CustomResourceOptions): AnalyticsConfiguration = js.native
   /**

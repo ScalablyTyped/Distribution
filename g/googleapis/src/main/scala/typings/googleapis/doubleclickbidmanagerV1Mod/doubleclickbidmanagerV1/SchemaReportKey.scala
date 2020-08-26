@@ -21,11 +21,30 @@ trait SchemaReportKey extends js.Object {
 
 object SchemaReportKey {
   @scala.inline
-  def apply(queryId: String = null, reportId: String = null): SchemaReportKey = {
+  def apply(): SchemaReportKey = {
     val __obj = js.Dynamic.literal()
-    if (queryId != null) __obj.updateDynamic("queryId")(queryId.asInstanceOf[js.Any])
-    if (reportId != null) __obj.updateDynamic("reportId")(reportId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReportKey]
   }
+  @scala.inline
+  implicit class SchemaReportKeyOps[Self <: SchemaReportKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryId(value: String): Self = this.set("queryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryId: Self = this.set("queryId", js.undefined)
+    @scala.inline
+    def setReportId(value: String): Self = this.set("reportId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportId: Self = this.set("reportId", js.undefined)
+  }
+  
 }
 

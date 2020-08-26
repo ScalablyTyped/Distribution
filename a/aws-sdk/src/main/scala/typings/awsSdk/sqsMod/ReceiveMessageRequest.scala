@@ -38,23 +38,52 @@ trait ReceiveMessageRequest extends js.Object {
 
 object ReceiveMessageRequest {
   @scala.inline
-  def apply(
-    QueueUrl: String,
-    AttributeNames: AttributeNameList = null,
-    MaxNumberOfMessages: js.UndefOr[Integer] = js.undefined,
-    MessageAttributeNames: MessageAttributeNameList = null,
-    ReceiveRequestAttemptId: String = null,
-    VisibilityTimeout: js.UndefOr[Integer] = js.undefined,
-    WaitTimeSeconds: js.UndefOr[Integer] = js.undefined
-  ): ReceiveMessageRequest = {
+  def apply(QueueUrl: String): ReceiveMessageRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
-    if (AttributeNames != null) __obj.updateDynamic("AttributeNames")(AttributeNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxNumberOfMessages)) __obj.updateDynamic("MaxNumberOfMessages")(MaxNumberOfMessages.get.asInstanceOf[js.Any])
-    if (MessageAttributeNames != null) __obj.updateDynamic("MessageAttributeNames")(MessageAttributeNames.asInstanceOf[js.Any])
-    if (ReceiveRequestAttemptId != null) __obj.updateDynamic("ReceiveRequestAttemptId")(ReceiveRequestAttemptId.asInstanceOf[js.Any])
-    if (!js.isUndefined(VisibilityTimeout)) __obj.updateDynamic("VisibilityTimeout")(VisibilityTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(WaitTimeSeconds)) __obj.updateDynamic("WaitTimeSeconds")(WaitTimeSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiveMessageRequest]
   }
+  @scala.inline
+  implicit class ReceiveMessageRequestOps[Self <: ReceiveMessageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueueUrl(value: String): Self = this.set("QueueUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributeNamesVarargs(value: QueueAttributeName*): Self = this.set("AttributeNames", js.Array(value :_*))
+    @scala.inline
+    def setAttributeNames(value: AttributeNameList): Self = this.set("AttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeNames: Self = this.set("AttributeNames", js.undefined)
+    @scala.inline
+    def setMaxNumberOfMessages(value: Integer): Self = this.set("MaxNumberOfMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxNumberOfMessages: Self = this.set("MaxNumberOfMessages", js.undefined)
+    @scala.inline
+    def setMessageAttributeNamesVarargs(value: MessageAttributeName*): Self = this.set("MessageAttributeNames", js.Array(value :_*))
+    @scala.inline
+    def setMessageAttributeNames(value: MessageAttributeNameList): Self = this.set("MessageAttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageAttributeNames: Self = this.set("MessageAttributeNames", js.undefined)
+    @scala.inline
+    def setReceiveRequestAttemptId(value: String): Self = this.set("ReceiveRequestAttemptId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReceiveRequestAttemptId: Self = this.set("ReceiveRequestAttemptId", js.undefined)
+    @scala.inline
+    def setVisibilityTimeout(value: Integer): Self = this.set("VisibilityTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibilityTimeout: Self = this.set("VisibilityTimeout", js.undefined)
+    @scala.inline
+    def setWaitTimeSeconds(value: Integer): Self = this.set("WaitTimeSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitTimeSeconds: Self = this.set("WaitTimeSeconds", js.undefined)
+  }
+  
 }
 

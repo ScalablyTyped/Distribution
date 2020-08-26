@@ -17,15 +17,5 @@ class ASPxClientButtonEditClickEventArgs protected ()
     * @param buttonIndex An integer value representing the zero based index of the clicked button. Initializes the ASPxClientButtonEditClickEventArgs.buttonIndex property.
     */
   def this(processOnServer: Boolean, buttonIndex: Double) = this()
-  /**
-    * Gets the index of the clicked button.
-    */
-  /* CompleteClass */
-  override var buttonIndex: Double = js.native
-  /**
-    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
-    */
-  /* CompleteClass */
-  override var processOnServer: Boolean = js.native
 }
 

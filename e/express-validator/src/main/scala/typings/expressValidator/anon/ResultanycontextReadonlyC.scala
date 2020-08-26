@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined express-validator.express-validator/src/validation-result.Result<any> & {  context  :express-validator.express-validator/src/context.ReadonlyContext} */
+/* Inlined express-validator.express-validator/src/validation-result.Result<any> & {  context :express-validator.express-validator/src/context.ReadonlyContext} */
 @js.native
 trait ResultanycontextReadonlyC extends js.Object {
   var context: ReadonlyContext = js.native

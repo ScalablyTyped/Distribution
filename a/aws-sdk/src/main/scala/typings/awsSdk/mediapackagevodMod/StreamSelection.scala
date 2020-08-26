@@ -22,16 +22,34 @@ trait StreamSelection extends js.Object {
 
 object StreamSelection {
   @scala.inline
-  def apply(
-    MaxVideoBitsPerSecond: js.UndefOr[integer] = js.undefined,
-    MinVideoBitsPerSecond: js.UndefOr[integer] = js.undefined,
-    StreamOrder: StreamOrder = null
-  ): StreamSelection = {
+  def apply(): StreamSelection = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxVideoBitsPerSecond)) __obj.updateDynamic("MaxVideoBitsPerSecond")(MaxVideoBitsPerSecond.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinVideoBitsPerSecond)) __obj.updateDynamic("MinVideoBitsPerSecond")(MinVideoBitsPerSecond.get.asInstanceOf[js.Any])
-    if (StreamOrder != null) __obj.updateDynamic("StreamOrder")(StreamOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamSelection]
   }
+  @scala.inline
+  implicit class StreamSelectionOps[Self <: StreamSelection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxVideoBitsPerSecond(value: integer): Self = this.set("MaxVideoBitsPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxVideoBitsPerSecond: Self = this.set("MaxVideoBitsPerSecond", js.undefined)
+    @scala.inline
+    def setMinVideoBitsPerSecond(value: integer): Self = this.set("MinVideoBitsPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinVideoBitsPerSecond: Self = this.set("MinVideoBitsPerSecond", js.undefined)
+    @scala.inline
+    def setStreamOrder(value: StreamOrder): Self = this.set("StreamOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamOrder: Self = this.set("StreamOrder", js.undefined)
+  }
+  
 }
 

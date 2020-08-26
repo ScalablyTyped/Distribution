@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/singletonlayout", JSImport.Namespace)
+@JSImport("@lumino/widgets/types/singletonlayout", JSImport.Namespace)
 @js.native
 object singletonlayoutMod extends js.Object {
   @js.native

@@ -23,34 +23,70 @@ trait PartialClassNameMapTabCla extends js.Object {
 
 object PartialClassNameMapTabCla {
   @scala.inline
-  def apply(
-    disabled: String = null,
-    fullWidth: String = null,
-    label: String = null,
-    labelContainer: String = null,
-    labelIcon: String = null,
-    labelWrapped: String = null,
-    root: String = null,
-    selected: String = null,
-    textColorInherit: String = null,
-    textColorPrimary: String = null,
-    textColorSecondary: String = null,
-    wrapper: String = null
-  ): PartialClassNameMapTabCla = {
+  def apply(): PartialClassNameMapTabCla = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelContainer != null) __obj.updateDynamic("labelContainer")(labelContainer.asInstanceOf[js.Any])
-    if (labelIcon != null) __obj.updateDynamic("labelIcon")(labelIcon.asInstanceOf[js.Any])
-    if (labelWrapped != null) __obj.updateDynamic("labelWrapped")(labelWrapped.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (textColorInherit != null) __obj.updateDynamic("textColorInherit")(textColorInherit.asInstanceOf[js.Any])
-    if (textColorPrimary != null) __obj.updateDynamic("textColorPrimary")(textColorPrimary.asInstanceOf[js.Any])
-    if (textColorSecondary != null) __obj.updateDynamic("textColorSecondary")(textColorSecondary.asInstanceOf[js.Any])
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapTabCla]
   }
+  @scala.inline
+  implicit class PartialClassNameMapTabClaOps[Self <: PartialClassNameMapTabCla] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setFullWidth(value: String): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelContainer(value: String): Self = this.set("labelContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelContainer: Self = this.set("labelContainer", js.undefined)
+    @scala.inline
+    def setLabelIcon(value: String): Self = this.set("labelIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelIcon: Self = this.set("labelIcon", js.undefined)
+    @scala.inline
+    def setLabelWrapped(value: String): Self = this.set("labelWrapped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelWrapped: Self = this.set("labelWrapped", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setTextColorInherit(value: String): Self = this.set("textColorInherit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextColorInherit: Self = this.set("textColorInherit", js.undefined)
+    @scala.inline
+    def setTextColorPrimary(value: String): Self = this.set("textColorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextColorPrimary: Self = this.set("textColorPrimary", js.undefined)
+    @scala.inline
+    def setTextColorSecondary(value: String): Self = this.set("textColorSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextColorSecondary: Self = this.set("textColorSecondary", js.undefined)
+    @scala.inline
+    def setWrapper(value: String): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+  }
+  
 }
 

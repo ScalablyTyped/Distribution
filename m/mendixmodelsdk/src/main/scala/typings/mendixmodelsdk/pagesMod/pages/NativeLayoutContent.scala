@@ -43,25 +43,23 @@ class NativeLayoutContent protected () extends LayoutContent {
     * In version 8.5.0: introduced
     */
   def layoutType: NativeLayoutType = js.native
-  def layoutType(newValue: NativeLayoutType): js.Any = js.native
-  def rightHeaderPlaceholder(): js.Any = js.native
-  def rightHeaderPlaceholder(newValue: Placeholder): js.Any = js.native
-  @JSName("rightHeaderPlaceholder")
-  def rightHeaderPlaceholder_Union: Placeholder | Null = js.native
+  def layoutType_=(newValue: NativeLayoutType): Unit = js.native
+  def rightHeaderPlaceholder: Placeholder | Null = js.native
+  def rightHeaderPlaceholder_=(newValue: Placeholder | Null): Unit = js.native
   /**
     * In version 8.2.0: introduced
     */
   def showBottomBar: Boolean = js.native
-  def showBottomBar(newValue: Boolean): js.Any = js.native
+  def showBottomBar_=(newValue: Boolean): Unit = js.native
   /**
     * In version 8.5.0: introduced
     */
   def sidebar: Boolean = js.native
-  def sidebar(newValue: Boolean): js.Any = js.native
   /**
     * In version 8.5.0: introduced
     */
   def sidebarWidgets: IList[Widget] = js.native
+  def sidebar_=(newValue: Boolean): Unit = js.native
   def widgets: IList[Widget] = js.native
 }
 

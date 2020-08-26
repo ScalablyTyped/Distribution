@@ -30,19 +30,42 @@ trait DecryptRequest extends js.Object {
 
 object DecryptRequest {
   @scala.inline
-  def apply(
-    CiphertextBlob: CiphertextType,
-    EncryptionAlgorithm: EncryptionAlgorithmSpec = null,
-    EncryptionContext: EncryptionContextType = null,
-    GrantTokens: GrantTokenList = null,
-    KeyId: KeyIdType = null
-  ): DecryptRequest = {
+  def apply(CiphertextBlob: CiphertextType): DecryptRequest = {
     val __obj = js.Dynamic.literal(CiphertextBlob = CiphertextBlob.asInstanceOf[js.Any])
-    if (EncryptionAlgorithm != null) __obj.updateDynamic("EncryptionAlgorithm")(EncryptionAlgorithm.asInstanceOf[js.Any])
-    if (EncryptionContext != null) __obj.updateDynamic("EncryptionContext")(EncryptionContext.asInstanceOf[js.Any])
-    if (GrantTokens != null) __obj.updateDynamic("GrantTokens")(GrantTokens.asInstanceOf[js.Any])
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptRequest]
   }
+  @scala.inline
+  implicit class DecryptRequestOps[Self <: DecryptRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCiphertextBlob(value: CiphertextType): Self = this.set("CiphertextBlob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = this.set("EncryptionAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionAlgorithm: Self = this.set("EncryptionAlgorithm", js.undefined)
+    @scala.inline
+    def setEncryptionContext(value: EncryptionContextType): Self = this.set("EncryptionContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionContext: Self = this.set("EncryptionContext", js.undefined)
+    @scala.inline
+    def setGrantTokensVarargs(value: GrantTokenType*): Self = this.set("GrantTokens", js.Array(value :_*))
+    @scala.inline
+    def setGrantTokens(value: GrantTokenList): Self = this.set("GrantTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantTokens: Self = this.set("GrantTokens", js.undefined)
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+  }
+  
 }
 

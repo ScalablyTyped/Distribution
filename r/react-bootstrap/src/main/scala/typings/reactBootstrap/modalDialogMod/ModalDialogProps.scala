@@ -7,49 +7,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModalDialogProps
   extends AllHTMLAttributes[ModalDialog]
      with ClassAttributes[ModalDialog] {
-  var bsClass: js.UndefOr[String] = js.undefined
-  var bsSize: js.UndefOr[Sizes] = js.undefined
-  var onEnter: js.UndefOr[js.Function] = js.undefined
-  var onEntered: js.UndefOr[js.Function] = js.undefined
-  var onEntering: js.UndefOr[js.Function] = js.undefined
-  var onExit: js.UndefOr[js.Function] = js.undefined
-  var onExited: js.UndefOr[js.Function] = js.undefined
-  var onExiting: js.UndefOr[js.Function] = js.undefined
+  var bsClass: js.UndefOr[String] = js.native
+  var bsSize: js.UndefOr[Sizes] = js.native
+  var onEnter: js.UndefOr[js.Function] = js.native
+  var onEntered: js.UndefOr[js.Function] = js.native
+  var onEntering: js.UndefOr[js.Function] = js.native
+  var onExit: js.UndefOr[js.Function] = js.native
+  var onExited: js.UndefOr[js.Function] = js.native
+  var onExiting: js.UndefOr[js.Function] = js.native
   // TODO: these props are not correct https://github.com/react-bootstrap/react-bootstrap/blob/v0.31.1/src/ModalDialog.js#L9
-  var onHide: js.UndefOr[js.Function] = js.undefined
+  var onHide: js.UndefOr[js.Function] = js.native
 }
 
 object ModalDialogProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[ModalDialog] = null,
-    ClassAttributes: ClassAttributes[ModalDialog] = null,
-    bsClass: String = null,
-    bsSize: Sizes = null,
-    onEnter: js.Function = null,
-    onEntered: js.Function = null,
-    onEntering: js.Function = null,
-    onExit: js.Function = null,
-    onExited: js.Function = null,
-    onExiting: js.Function = null,
-    onHide: js.Function = null
-  ): ModalDialogProps = {
+  def apply(): ModalDialogProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
-    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered.asInstanceOf[js.Any])
-    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering.asInstanceOf[js.Any])
-    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
-    if (onExited != null) __obj.updateDynamic("onExited")(onExited.asInstanceOf[js.Any])
-    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting.asInstanceOf[js.Any])
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogProps]
   }
+  @scala.inline
+  implicit class ModalDialogPropsOps[Self <: ModalDialogProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBsClass(value: String): Self = this.set("bsClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsClass: Self = this.set("bsClass", js.undefined)
+    @scala.inline
+    def setBsSize(value: Sizes): Self = this.set("bsSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsSize: Self = this.set("bsSize", js.undefined)
+    @scala.inline
+    def setOnEnter(value: js.Function): Self = this.set("onEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    @scala.inline
+    def setOnEntered(value: js.Function): Self = this.set("onEntered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEntered: Self = this.set("onEntered", js.undefined)
+    @scala.inline
+    def setOnEntering(value: js.Function): Self = this.set("onEntering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEntering: Self = this.set("onEntering", js.undefined)
+    @scala.inline
+    def setOnExit(value: js.Function): Self = this.set("onExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnExit: Self = this.set("onExit", js.undefined)
+    @scala.inline
+    def setOnExited(value: js.Function): Self = this.set("onExited", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnExited: Self = this.set("onExited", js.undefined)
+    @scala.inline
+    def setOnExiting(value: js.Function): Self = this.set("onExiting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnExiting: Self = this.set("onExiting", js.undefined)
+    @scala.inline
+    def setOnHide(value: js.Function): Self = this.set("onHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnHide: Self = this.set("onHide", js.undefined)
+  }
+  
 }
 

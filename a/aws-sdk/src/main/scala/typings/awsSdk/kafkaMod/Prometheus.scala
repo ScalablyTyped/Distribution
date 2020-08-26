@@ -22,11 +22,30 @@ trait Prometheus extends js.Object {
 
 object Prometheus {
   @scala.inline
-  def apply(JmxExporter: JmxExporter = null, NodeExporter: NodeExporter = null): Prometheus = {
+  def apply(): Prometheus = {
     val __obj = js.Dynamic.literal()
-    if (JmxExporter != null) __obj.updateDynamic("JmxExporter")(JmxExporter.asInstanceOf[js.Any])
-    if (NodeExporter != null) __obj.updateDynamic("NodeExporter")(NodeExporter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Prometheus]
   }
+  @scala.inline
+  implicit class PrometheusOps[Self <: Prometheus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJmxExporter(value: JmxExporter): Self = this.set("JmxExporter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJmxExporter: Self = this.set("JmxExporter", js.undefined)
+    @scala.inline
+    def setNodeExporter(value: NodeExporter): Self = this.set("NodeExporter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeExporter: Self = this.set("NodeExporter", js.undefined)
+  }
+  
 }
 

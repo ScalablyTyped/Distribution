@@ -41,18 +41,38 @@ trait SchemaTable extends js.Object {
 
 object SchemaTable {
   @scala.inline
-  def apply(
-    clusterStates: StringDictionary[SchemaClusterState] = null,
-    columnFamilies: StringDictionary[SchemaColumnFamily] = null,
-    granularity: String = null,
-    name: String = null
-  ): SchemaTable = {
+  def apply(): SchemaTable = {
     val __obj = js.Dynamic.literal()
-    if (clusterStates != null) __obj.updateDynamic("clusterStates")(clusterStates.asInstanceOf[js.Any])
-    if (columnFamilies != null) __obj.updateDynamic("columnFamilies")(columnFamilies.asInstanceOf[js.Any])
-    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTable]
   }
+  @scala.inline
+  implicit class SchemaTableOps[Self <: SchemaTable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterStates(value: StringDictionary[SchemaClusterState]): Self = this.set("clusterStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterStates: Self = this.set("clusterStates", js.undefined)
+    @scala.inline
+    def setColumnFamilies(value: StringDictionary[SchemaColumnFamily]): Self = this.set("columnFamilies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnFamilies: Self = this.set("columnFamilies", js.undefined)
+    @scala.inline
+    def setGranularity(value: String): Self = this.set("granularity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGranularity: Self = this.set("granularity", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

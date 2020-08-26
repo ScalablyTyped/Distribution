@@ -101,6 +101,7 @@ trait Component
     * @since 3.0.0
     */
   def off(event: String): Unit = js.native
+  def off(event: String, listener: js.UndefOr[scala.Nothing], thisArg: js.Any): Unit = js.native
   def off(event: String, listener: js.Function): Unit = js.native
   def off(event: String, listener: js.Function, thisArg: js.Any): Unit = js.native
   /**

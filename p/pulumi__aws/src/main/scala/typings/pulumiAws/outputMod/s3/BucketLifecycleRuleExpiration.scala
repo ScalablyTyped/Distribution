@@ -22,16 +22,34 @@ trait BucketLifecycleRuleExpiration extends js.Object {
 
 object BucketLifecycleRuleExpiration {
   @scala.inline
-  def apply(
-    date: String = null,
-    days: js.UndefOr[Double] = js.undefined,
-    expiredObjectDeleteMarker: js.UndefOr[Boolean] = js.undefined
-  ): BucketLifecycleRuleExpiration = {
+  def apply(): BucketLifecycleRuleExpiration = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expiredObjectDeleteMarker)) __obj.updateDynamic("expiredObjectDeleteMarker")(expiredObjectDeleteMarker.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketLifecycleRuleExpiration]
   }
+  @scala.inline
+  implicit class BucketLifecycleRuleExpirationOps[Self <: BucketLifecycleRuleExpiration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDays(value: Double): Self = this.set("days", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDays: Self = this.set("days", js.undefined)
+    @scala.inline
+    def setExpiredObjectDeleteMarker(value: Boolean): Self = this.set("expiredObjectDeleteMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiredObjectDeleteMarker: Self = this.set("expiredObjectDeleteMarker", js.undefined)
+  }
+  
 }
 

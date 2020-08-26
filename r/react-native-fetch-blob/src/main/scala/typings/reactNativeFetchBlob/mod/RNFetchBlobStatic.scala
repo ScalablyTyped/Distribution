@@ -18,6 +18,7 @@ trait RNFetchBlobStatic extends js.Object {
   var polyfill: Polyfill = js.native
   def config(options: RNFetchBlobConfig): RNFetchBlobStatic = js.native
   def fetch(method: Methods, url: String): StatefulPromise[FetchBlobResponse] = js.native
+  def fetch(method: Methods, url: String, headers: js.UndefOr[scala.Nothing], body: js.Any): StatefulPromise[FetchBlobResponse] = js.native
   def fetch(method: Methods, url: String, headers: StringDictionary[String]): StatefulPromise[FetchBlobResponse] = js.native
   def fetch(method: Methods, url: String, headers: StringDictionary[String], body: js.Any): StatefulPromise[FetchBlobResponse] = js.native
   def session(name: String): RNFetchBlobSession = js.native

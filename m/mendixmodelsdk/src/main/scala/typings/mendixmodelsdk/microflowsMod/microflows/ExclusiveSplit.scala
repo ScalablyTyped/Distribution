@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/exclusive-split relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/decisions relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExclusiveSplit")
 @js.native
@@ -26,13 +26,13 @@ class ExclusiveSplit protected () extends MicroflowObject {
   @JSName("model")
   var model_FExclusiveSplit: IModel = js.native
   def caption: String = js.native
-  def caption(newValue: String): js.Any = js.native
+  def caption_=(newValue: String): Unit = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def errorHandlingType: ErrorHandlingType = js.native
-  def errorHandlingType(newValue: ErrorHandlingType): js.Any = js.native
+  def errorHandlingType_=(newValue: ErrorHandlingType): Unit = js.native
   def splitCondition: SplitCondition = js.native
-  def splitCondition(newValue: SplitCondition): js.Any = js.native
+  def splitCondition_=(newValue: SplitCondition): Unit = js.native
 }
 
 /* static members */

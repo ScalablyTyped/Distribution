@@ -9,6 +9,11 @@ trait FnCallThisDurationSchedulerConfig extends js.Object {
   def apply[T](duration: Double): js.Any = js.native
   def apply[T](
     duration: Double,
+    scheduler: js.UndefOr[scala.Nothing],
+    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThrottleConfig */ js.Any
+  ): js.Any = js.native
+  def apply[T](
+    duration: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = js.native
   def apply[T](

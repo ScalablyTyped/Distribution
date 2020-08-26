@@ -12,7 +12,7 @@ if your image doesn't exist, fallback onto another provided image.
 | Keywords           | react, image, fallback, preload, preloader, reactjs |
 | # releases         | 3 |
 | # dependents       | 12 |
-| # downloads        | 316329 |
+| # downloads        | 325911 |
 | # stars            | 1 |
 
 ## Links

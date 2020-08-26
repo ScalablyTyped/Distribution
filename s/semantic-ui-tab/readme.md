@@ -12,7 +12,7 @@ Single component release of tab
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 20466 |
+| # downloads        | 21434 |
 | # stars            | 0 |
 
 ## Links

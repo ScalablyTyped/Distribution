@@ -12,17 +12,7 @@ class QuestionPanelDynamicItem protected ()
      with ITextProcessor {
   def this(data: IQuestionPanelDynamicData, panel: PanelModel) = this()
   val panel: PanelModel = js.native
-  /* CompleteClass */
-  override def geSurveyData(): ISurveyData = js.native
-  /* CompleteClass */
-  override def getSurvey(): ISurvey = js.native
-  /* CompleteClass */
-  override def getTextProcessor(): ITextProcessor = js.native
-  /* CompleteClass */
-  override def processText(text: String, returnDisplayValue: Boolean): String = js.native
   def processTextEx(text: String, returnDisplayValue: Boolean): js.Any = js.native
-  /* CompleteClass */
-  override def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any = js.native
   def setSurveyImpl(): Unit = js.native
   def setValue(name: String, newValue: js.Any): Unit = js.native
 }

@@ -1,43 +1,39 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.devextremeStrings.always
-import typings.devextreme.devextremeStrings.auto
-import typings.devextreme.devextremeStrings.never
-import typings.devextreme.devextremeStrings.onHover
-import typings.devextreme.devextremeStrings.onScroll
 import typings.devextreme.devextremeStrings.standard
 import typings.devextreme.devextremeStrings.virtual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxTreeListScrolling extends GridBaseScrolling {
   /** @name dxTreeList.Options.scrolling.mode */
-  var mode: js.UndefOr[standard | virtual] = js.undefined
+  var mode: js.UndefOr[standard | virtual] = js.native
 }
 
 object dxTreeListScrolling {
   @scala.inline
-  def apply(
-    columnRenderingMode: standard | virtual = null,
-    mode: standard | virtual = null,
-    preloadEnabled: js.UndefOr[Boolean] = js.undefined,
-    rowRenderingMode: standard | virtual = null,
-    scrollByContent: js.UndefOr[Boolean] = js.undefined,
-    scrollByThumb: js.UndefOr[Boolean] = js.undefined,
-    showScrollbar: always | never | onHover | onScroll = null,
-    useNative: Boolean | auto = null
-  ): dxTreeListScrolling = {
+  def apply(): dxTreeListScrolling = {
     val __obj = js.Dynamic.literal()
-    if (columnRenderingMode != null) __obj.updateDynamic("columnRenderingMode")(columnRenderingMode.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(preloadEnabled)) __obj.updateDynamic("preloadEnabled")(preloadEnabled.get.asInstanceOf[js.Any])
-    if (rowRenderingMode != null) __obj.updateDynamic("rowRenderingMode")(rowRenderingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollByContent)) __obj.updateDynamic("scrollByContent")(scrollByContent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollByThumb)) __obj.updateDynamic("scrollByThumb")(scrollByThumb.get.asInstanceOf[js.Any])
-    if (showScrollbar != null) __obj.updateDynamic("showScrollbar")(showScrollbar.asInstanceOf[js.Any])
-    if (useNative != null) __obj.updateDynamic("useNative")(useNative.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxTreeListScrolling]
   }
+  @scala.inline
+  implicit class dxTreeListScrollingOps[Self <: dxTreeListScrolling] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMode(value: standard | virtual): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+  }
+  
 }
 

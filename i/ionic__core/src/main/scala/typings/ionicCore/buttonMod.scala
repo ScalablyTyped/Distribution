@@ -5,17 +5,14 @@ import typings.ionicCore.elementInterfaceMod.AnchorInterface
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.ionicCoreStrings.block
-import typings.ionicCore.ionicCoreStrings.button
 import typings.ionicCore.ionicCoreStrings.clear
 import typings.ionicCore.ionicCoreStrings.default
 import typings.ionicCore.ionicCoreStrings.full
 import typings.ionicCore.ionicCoreStrings.large
 import typings.ionicCore.ionicCoreStrings.outline
-import typings.ionicCore.ionicCoreStrings.reset
 import typings.ionicCore.ionicCoreStrings.round
 import typings.ionicCore.ionicCoreStrings.small
 import typings.ionicCore.ionicCoreStrings.solid
-import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
@@ -42,8 +39,6 @@ object buttonMod extends js.Object {
       * For more information on colors, see [theming](/docs/theming/basics).
       */
     var color: js.UndefOr[Color] = js.native
-    /* CompleteClass */
-    override var disabled: Boolean = js.native
     var el: HTMLElement = js.native
     /**
       * Set to `"block"` for a full-width button or to `"full"` for a full-width button
@@ -92,8 +87,6 @@ object buttonMod extends js.Object {
       * If `true`, activates a button with a heavier font weight.
       */
     var strong: Boolean = js.native
-    /* CompleteClass */
-    override var `type`: submit | reset | button = js.native
     @JSName("componentWillLoad")
     def componentWillLoad_MButton(): Unit = js.native
     /* private */ def hasIconOnly: js.Any = js.native

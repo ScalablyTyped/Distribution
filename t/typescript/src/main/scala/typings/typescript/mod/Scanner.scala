@@ -39,7 +39,11 @@ trait Scanner extends js.Object {
   def setOnError(onError: ErrorCallback): Unit = js.native
   def setScriptTarget(scriptTarget: ScriptTarget): Unit = js.native
   def setText(): Unit = js.native
+  def setText(text: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
+  def setText(text: js.UndefOr[scala.Nothing], start: Double): Unit = js.native
+  def setText(text: js.UndefOr[scala.Nothing], start: Double, length: Double): Unit = js.native
   def setText(text: java.lang.String): Unit = js.native
+  def setText(text: java.lang.String, start: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
   def setText(text: java.lang.String, start: Double): Unit = js.native
   def setText(text: java.lang.String, start: Double, length: Double): Unit = js.native
   def setTextPos(textPos: Double): Unit = js.native

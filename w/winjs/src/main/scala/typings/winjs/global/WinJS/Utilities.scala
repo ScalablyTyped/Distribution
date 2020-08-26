@@ -129,6 +129,7 @@ object Utilities extends js.Object {
     * @returns The relative left coordinate.
     **/
   def getRelativeLeft(): Double = js.native
+  def getRelativeLeft(element: js.UndefOr[scala.Nothing], parent: HTMLElement): Double = js.native
   def getRelativeLeft(element: HTMLElement): Double = js.native
   def getRelativeLeft(element: HTMLElement, parent: HTMLElement): Double = js.native
   /**
@@ -138,6 +139,7 @@ object Utilities extends js.Object {
     * @returns The relative top coordinate.
     **/
   def getRelativeTop(): Double = js.native
+  def getRelativeTop(element: js.UndefOr[scala.Nothing], parent: HTMLElement): Double = js.native
   def getRelativeTop(element: HTMLElement): Double = js.native
   def getRelativeTop(element: HTMLElement, parent: HTMLElement): Double = js.native
   /**
@@ -219,6 +221,7 @@ object Utilities extends js.Object {
     * @returns A promise that completes after the DOMContentLoaded event has occurred.
     **/
   def ready(): typings.winjs.WinJS.Promise[_] = js.native
+  def ready(callback: js.UndefOr[scala.Nothing], async: Boolean): typings.winjs.WinJS.Promise[_] = js.native
   def ready(callback: js.Function): typings.winjs.WinJS.Promise[_] = js.native
   def ready(callback: js.Function, async: Boolean): typings.winjs.WinJS.Promise[_] = js.native
   /**
@@ -467,6 +470,7 @@ object Utilities extends js.Object {
       * @returns A Promise which completes when the drain has finished. Canceling this Promise cancels the drain request. This Promise will never enter an error state.
       **/
     def requestDrain(): typings.winjs.WinJS.Promise[_] = js.native
+    def requestDrain(priority: js.UndefOr[scala.Nothing], name: String): typings.winjs.WinJS.Promise[_] = js.native
     def requestDrain(priority: Priority): typings.winjs.WinJS.Promise[_] = js.native
     def requestDrain(priority: Priority, name: String): typings.winjs.WinJS.Promise[_] = js.native
     /**
@@ -483,7 +487,30 @@ object Utilities extends js.Object {
       * @returns The job instance that represents this work item.
       **/
     def schedule(work: js.Function1[/* jobInfo */ IJobInfo, _]): IJob = js.native
+    def schedule(
+      work: js.Function1[/* jobInfo */ IJobInfo, _],
+      priority: js.UndefOr[scala.Nothing],
+      thisArg: js.UndefOr[scala.Nothing],
+      name: String
+    ): IJob = js.native
+    def schedule(
+      work: js.Function1[/* jobInfo */ IJobInfo, _],
+      priority: js.UndefOr[scala.Nothing],
+      thisArg: js.Any
+    ): IJob = js.native
+    def schedule(
+      work: js.Function1[/* jobInfo */ IJobInfo, _],
+      priority: js.UndefOr[scala.Nothing],
+      thisArg: js.Any,
+      name: String
+    ): IJob = js.native
     def schedule(work: js.Function1[/* jobInfo */ IJobInfo, _], priority: Priority): IJob = js.native
+    def schedule(
+      work: js.Function1[/* jobInfo */ IJobInfo, _],
+      priority: Priority,
+      thisArg: js.UndefOr[scala.Nothing],
+      name: String
+    ): IJob = js.native
     def schedule(work: js.Function1[/* jobInfo */ IJobInfo, _], priority: Priority, thisArg: js.Any): IJob = js.native
     def schedule(work: js.Function1[/* jobInfo */ IJobInfo, _], priority: Priority, thisArg: js.Any, name: String): IJob = js.native
     /**
@@ -495,6 +522,7 @@ object Utilities extends js.Object {
     def schedulePromiseAboveNormal[U](): typings.winjs.WinJS.Promise[U] = js.native
     def schedulePromiseAboveNormal[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = js.native
     def schedulePromiseAboveNormal[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = js.native
+    def schedulePromiseAboveNormal[U](promiseValue: js.UndefOr[scala.Nothing], jobName: String): typings.winjs.WinJS.Promise[U] = js.native
     /**
       * Schedules a job to complete the returned Promise at WinJS.Utilities.Scheduler.Priority.belowNormal priority.
       * @param promiseValue The value returned by the completed Promise.
@@ -504,6 +532,7 @@ object Utilities extends js.Object {
     def schedulePromiseBelowNormal[U](): typings.winjs.WinJS.Promise[U] = js.native
     def schedulePromiseBelowNormal[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = js.native
     def schedulePromiseBelowNormal[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = js.native
+    def schedulePromiseBelowNormal[U](promiseValue: js.UndefOr[scala.Nothing], jobName: String): typings.winjs.WinJS.Promise[U] = js.native
     /**
       * Schedules a job to complete the returned Promise at WinJS.Utilities.Scheduler.Priority.high priority.
       * @param promiseValue The value returned by the completed Promise.
@@ -513,6 +542,7 @@ object Utilities extends js.Object {
     def schedulePromiseHigh[U](): typings.winjs.WinJS.Promise[U] = js.native
     def schedulePromiseHigh[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = js.native
     def schedulePromiseHigh[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = js.native
+    def schedulePromiseHigh[U](promiseValue: js.UndefOr[scala.Nothing], jobName: String): typings.winjs.WinJS.Promise[U] = js.native
     /**
       * Schedules a job to complete the returned Promise at WinJS.Utilities.Scheduler.Priority.Idle priority.
       * @param promiseValue The value returned by the completed Promise.
@@ -522,6 +552,7 @@ object Utilities extends js.Object {
     def schedulePromiseIdle[U](): typings.winjs.WinJS.Promise[U] = js.native
     def schedulePromiseIdle[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = js.native
     def schedulePromiseIdle[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = js.native
+    def schedulePromiseIdle[U](promiseValue: js.UndefOr[scala.Nothing], jobName: String): typings.winjs.WinJS.Promise[U] = js.native
     /**
       * Schedules a job to complete the returned Promise at WinJS.Utilities.Scheduler.Priority.normal priority.
       * @param promiseValue The value returned by the completed Promise.
@@ -531,6 +562,7 @@ object Utilities extends js.Object {
     def schedulePromiseNormal[U](): typings.winjs.WinJS.Promise[U] = js.native
     def schedulePromiseNormal[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = js.native
     def schedulePromiseNormal[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = js.native
+    def schedulePromiseNormal[U](promiseValue: js.UndefOr[scala.Nothing], jobName: String): typings.winjs.WinJS.Promise[U] = js.native
     //#region Enumerations
     /**
       * Represents a priority for a job managed by the Scheduler.

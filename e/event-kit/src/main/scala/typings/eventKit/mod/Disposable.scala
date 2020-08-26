@@ -12,8 +12,6 @@ class Disposable () extends DisposableLike {
   /** A callback which will be called within dispose(). */
   var disposalAction: js.UndefOr[js.Function0[Unit]] = js.native
   var disposed: Boolean = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
 
 /* static members */

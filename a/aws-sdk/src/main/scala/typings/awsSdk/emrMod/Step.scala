@@ -30,20 +30,42 @@ trait Step extends js.Object {
 
 object Step {
   @scala.inline
-  def apply(
-    ActionOnFailure: ActionOnFailure = null,
-    Config: HadoopStepConfig = null,
-    Id: StepId = null,
-    Name: String = null,
-    Status: StepStatus = null
-  ): Step = {
+  def apply(): Step = {
     val __obj = js.Dynamic.literal()
-    if (ActionOnFailure != null) __obj.updateDynamic("ActionOnFailure")(ActionOnFailure.asInstanceOf[js.Any])
-    if (Config != null) __obj.updateDynamic("Config")(Config.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
+  @scala.inline
+  implicit class StepOps[Self <: Step] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionOnFailure(value: ActionOnFailure): Self = this.set("ActionOnFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionOnFailure: Self = this.set("ActionOnFailure", js.undefined)
+    @scala.inline
+    def setConfig(value: HadoopStepConfig): Self = this.set("Config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("Config", js.undefined)
+    @scala.inline
+    def setId(value: StepId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStatus(value: StepStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

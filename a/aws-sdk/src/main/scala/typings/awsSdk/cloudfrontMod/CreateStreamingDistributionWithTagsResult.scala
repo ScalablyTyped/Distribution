@@ -11,7 +11,7 @@ trait CreateStreamingDistributionWithTagsResult extends js.Object {
     */
   var ETag: js.UndefOr[String] = js.native
   /**
-    * The fully qualified URI of the new streaming distribution resource just created. For example: https://cloudfront.amazonaws.com/2010-11-01/streaming-distribution/EGTXBD79H29TRA8.
+    * The fully qualified URI of the new streaming distribution resource just created.
     */
   var Location: js.UndefOr[String] = js.native
   /**
@@ -22,12 +22,34 @@ trait CreateStreamingDistributionWithTagsResult extends js.Object {
 
 object CreateStreamingDistributionWithTagsResult {
   @scala.inline
-  def apply(ETag: String = null, Location: String = null, StreamingDistribution: StreamingDistribution = null): CreateStreamingDistributionWithTagsResult = {
+  def apply(): CreateStreamingDistributionWithTagsResult = {
     val __obj = js.Dynamic.literal()
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
-    if (StreamingDistribution != null) __obj.updateDynamic("StreamingDistribution")(StreamingDistribution.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStreamingDistributionWithTagsResult]
   }
+  @scala.inline
+  implicit class CreateStreamingDistributionWithTagsResultOps[Self <: CreateStreamingDistributionWithTagsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("ETag", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("Location", js.undefined)
+    @scala.inline
+    def setStreamingDistribution(value: StreamingDistribution): Self = this.set("StreamingDistribution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingDistribution: Self = this.set("StreamingDistribution", js.undefined)
+  }
+  
 }
 

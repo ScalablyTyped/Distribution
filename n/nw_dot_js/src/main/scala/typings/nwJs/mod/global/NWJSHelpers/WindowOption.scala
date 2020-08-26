@@ -7,135 +7,188 @@ import scala.scalajs.js.annotation._
 /**
   * nw.Window Option that is in the same format as the Window subfields in manifest format.
   */
+@js.native
 trait WindowOption extends js.Object {
   /**
     * Whether the window should always stay on top of other windows.
     */
-  var always_on_top: js.UndefOr[Boolean] = js.undefined
+  var always_on_top: js.UndefOr[Boolean] = js.native
   /**
     * Show as desktop background window under X11 environment
     */
-  var as_desktop: js.UndefOr[Boolean] = js.undefined
+  var as_desktop: js.UndefOr[Boolean] = js.native
   /**
     * Specify it to false to make the window frameless
     */
-  var frame: js.UndefOr[Boolean] = js.undefined
+  var frame: js.UndefOr[Boolean] = js.native
   /**
     * Whether window is fullscreen
     */
-  var fullscreen: js.UndefOr[Boolean] = js.undefined
+  var fullscreen: js.UndefOr[Boolean] = js.native
   /**
     * The initial height of the main window.
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     * Path to window’s icon
     */
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String] = js.native
   /**
     * The id used to identify the window.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Whether to use Kiosk mode.
     */
-  var kiosk: js.UndefOr[Boolean] = js.undefined
+  var kiosk: js.UndefOr[Boolean] = js.native
   /**
     * Maximum height of window
     */
-  var max_height: js.UndefOr[Double] = js.undefined
+  var max_height: js.UndefOr[Double] = js.native
   /**
     * Maximum width of window
     */
-  var max_width: js.UndefOr[Double] = js.undefined
+  var max_width: js.UndefOr[Double] = js.native
   /**
     * Minimum height of window
     */
-  var min_height: js.UndefOr[Double] = js.undefined
+  var min_height: js.UndefOr[Double] = js.native
   /**
     * Minimum width of window
     */
-  var min_width: js.UndefOr[Double] = js.undefined
+  var min_width: js.UndefOr[Double] = js.native
   /**
     * Controls where window will be put, be `null` or `center` or `mouse`
     */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[String] = js.native
   /**
     * Whether window is resizable
     */
-  var resizable: js.UndefOr[Boolean] = js.undefined
+  var resizable: js.UndefOr[Boolean] = js.native
   /**
     * Specify it to false if you want your app to be hidden on startup
     */
-  var show: js.UndefOr[Boolean] = js.undefined
+  var show: js.UndefOr[Boolean] = js.native
   /**
     * Whether the window is shown in taskbar or dock. The default is true.
     */
-  var show_in_taskbar: js.UndefOr[Boolean] = js.undefined
+  var show_in_taskbar: js.UndefOr[Boolean] = js.native
   /**
     * The default title of window created by NW.js
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * Whether to turn on transparent window mode.
     */
-  var transparent: js.UndefOr[Boolean] = js.undefined
+  var transparent: js.UndefOr[Boolean] = js.native
   /**
     * Whether the window should be visible on all workspaces simultaneously (on platforms that support multiple workspaces, currently Mac OS X and Linux).
     */
-  var visible_on_all_workspaces: js.UndefOr[Boolean] = js.undefined
+  var visible_on_all_workspaces: js.UndefOr[Boolean] = js.native
   /**
     * The initial width of the main window.
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object WindowOption {
   @scala.inline
-  def apply(
-    always_on_top: js.UndefOr[Boolean] = js.undefined,
-    as_desktop: js.UndefOr[Boolean] = js.undefined,
-    frame: js.UndefOr[Boolean] = js.undefined,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    icon: String = null,
-    id: String = null,
-    kiosk: js.UndefOr[Boolean] = js.undefined,
-    max_height: js.UndefOr[Double] = js.undefined,
-    max_width: js.UndefOr[Double] = js.undefined,
-    min_height: js.UndefOr[Double] = js.undefined,
-    min_width: js.UndefOr[Double] = js.undefined,
-    position: String = null,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    show_in_taskbar: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    visible_on_all_workspaces: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): WindowOption = {
+  def apply(): WindowOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(always_on_top)) __obj.updateDynamic("always_on_top")(always_on_top.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(as_desktop)) __obj.updateDynamic("as_desktop")(as_desktop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(kiosk)) __obj.updateDynamic("kiosk")(kiosk.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max_height)) __obj.updateDynamic("max_height")(max_height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max_width)) __obj.updateDynamic("max_width")(max_width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min_height)) __obj.updateDynamic("min_height")(min_height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min_width)) __obj.updateDynamic("min_width")(min_width.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show_in_taskbar)) __obj.updateDynamic("show_in_taskbar")(show_in_taskbar.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible_on_all_workspaces)) __obj.updateDynamic("visible_on_all_workspaces")(visible_on_all_workspaces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowOption]
   }
+  @scala.inline
+  implicit class WindowOptionOps[Self <: WindowOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlways_on_top(value: Boolean): Self = this.set("always_on_top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlways_on_top: Self = this.set("always_on_top", js.undefined)
+    @scala.inline
+    def setAs_desktop(value: Boolean): Self = this.set("as_desktop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs_desktop: Self = this.set("as_desktop", js.undefined)
+    @scala.inline
+    def setFrame(value: Boolean): Self = this.set("frame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrame: Self = this.set("frame", js.undefined)
+    @scala.inline
+    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKiosk(value: Boolean): Self = this.set("kiosk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKiosk: Self = this.set("kiosk", js.undefined)
+    @scala.inline
+    def setMax_height(value: Double): Self = this.set("max_height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax_height: Self = this.set("max_height", js.undefined)
+    @scala.inline
+    def setMax_width(value: Double): Self = this.set("max_width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax_width: Self = this.set("max_width", js.undefined)
+    @scala.inline
+    def setMin_height(value: Double): Self = this.set("min_height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin_height: Self = this.set("min_height", js.undefined)
+    @scala.inline
+    def setMin_width(value: Double): Self = this.set("min_width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin_width: Self = this.set("min_width", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizable: Self = this.set("resizable", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setShow_in_taskbar(value: Boolean): Self = this.set("show_in_taskbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow_in_taskbar: Self = this.set("show_in_taskbar", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    @scala.inline
+    def setVisible_on_all_workspaces(value: Boolean): Self = this.set("visible_on_all_workspaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible_on_all_workspaces: Self = this.set("visible_on_all_workspaces", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

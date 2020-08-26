@@ -128,6 +128,7 @@ trait EmitterOp extends js.Object {
     * @param newKey The new key to use for this property, if any.
     */
   def loadConfig(): Unit = js.native
+  def loadConfig(config: js.UndefOr[scala.Nothing], newKey: String): Unit = js.native
   def loadConfig(config: ParticleEmitterConfig): Unit = js.native
   def loadConfig(config: ParticleEmitterConfig, newKey: String): Unit = js.native
   /**

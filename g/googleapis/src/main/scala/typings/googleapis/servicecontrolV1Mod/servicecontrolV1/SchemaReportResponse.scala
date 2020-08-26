@@ -40,16 +40,38 @@ trait SchemaReportResponse extends js.Object {
 
 object SchemaReportResponse {
   @scala.inline
-  def apply(
-    reportErrors: js.Array[SchemaReportError] = null,
-    reportInfos: js.Array[SchemaReportInfo] = null,
-    serviceConfigId: String = null
-  ): SchemaReportResponse = {
+  def apply(): SchemaReportResponse = {
     val __obj = js.Dynamic.literal()
-    if (reportErrors != null) __obj.updateDynamic("reportErrors")(reportErrors.asInstanceOf[js.Any])
-    if (reportInfos != null) __obj.updateDynamic("reportInfos")(reportInfos.asInstanceOf[js.Any])
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReportResponse]
   }
+  @scala.inline
+  implicit class SchemaReportResponseOps[Self <: SchemaReportResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReportErrorsVarargs(value: SchemaReportError*): Self = this.set("reportErrors", js.Array(value :_*))
+    @scala.inline
+    def setReportErrors(value: js.Array[SchemaReportError]): Self = this.set("reportErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportErrors: Self = this.set("reportErrors", js.undefined)
+    @scala.inline
+    def setReportInfosVarargs(value: SchemaReportInfo*): Self = this.set("reportInfos", js.Array(value :_*))
+    @scala.inline
+    def setReportInfos(value: js.Array[SchemaReportInfo]): Self = this.set("reportInfos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportInfos: Self = this.set("reportInfos", js.undefined)
+    @scala.inline
+    def setServiceConfigId(value: String): Self = this.set("serviceConfigId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceConfigId: Self = this.set("serviceConfigId", js.undefined)
+  }
+  
 }
 

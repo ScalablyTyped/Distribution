@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults")
 @js.native
 abstract class ProvisionFromXmlDocumentResults ()
-  extends typings.winrtUwp.Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults {
-  /** Determines whether all elements specified in the provisioning XML were applied. */
-  /* CompleteClass */
-  override var allElementsProvisioned: Boolean = js.native
-  /** Indicates which elements in the provisioning profile could not be successfully provisioned. */
-  /* CompleteClass */
-  override var provisionResultsXml: String = js.native
-}
+  extends typings.winrtUwp.Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults
 

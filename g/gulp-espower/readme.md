@@ -11,7 +11,7 @@ A gulp plugin for power-assert
 | Keywords           | assert, assertion, gulpplugin, power-assert, test, testing |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 17442 |
+| # downloads        | 17388 |
 | # stars            | 0 |
 
 ## Links

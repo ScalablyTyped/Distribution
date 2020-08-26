@@ -18,12 +18,12 @@ object mod extends js.Object {
     *      state. On change it calls its parameter, which is a change handler function.
     */
   def apply(getState: js.Function0[_]): ChangeHandlerWrapper[_] = js.native
-  def apply(getState: js.Function0[_], pathToField: FieldPath): ChangeHandlerWrapper[_] = js.native
   def apply(
     getState: js.Function0[_],
-    pathToField: FieldPath,
+    pathToField: js.UndefOr[FieldPath],
     compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
   ): ChangeHandlerWrapper[_] = js.native
+  def apply(getState: js.Function0[_], pathToField: FieldPath): ChangeHandlerWrapper[_] = js.native
   /** Whenever a given state field changes this handler will be called. */
   type ChangeHandler[T] = js.Function3[/* newValue */ T, /* oldValue */ T, /* pathToField */ FieldPath, Unit]
   /**

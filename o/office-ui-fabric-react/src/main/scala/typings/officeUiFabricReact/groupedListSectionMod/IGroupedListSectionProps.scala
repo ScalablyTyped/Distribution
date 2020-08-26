@@ -82,7 +82,11 @@ trait IGroupedListSectionProps extends ClassAttributes[GroupedListSection] {
   var viewport: js.UndefOr[IViewport] = js.native
   /** Rendering callback to render the group items. */
   def onRenderCell(): ReactNode = js.native
+  def onRenderCell(nestingDepth: js.UndefOr[scala.Nothing], item: js.UndefOr[scala.Nothing], index: Double): ReactNode = js.native
+  def onRenderCell(nestingDepth: js.UndefOr[scala.Nothing], item: js.Any): ReactNode = js.native
+  def onRenderCell(nestingDepth: js.UndefOr[scala.Nothing], item: js.Any, index: Double): ReactNode = js.native
   def onRenderCell(nestingDepth: Double): ReactNode = js.native
+  def onRenderCell(nestingDepth: Double, item: js.UndefOr[scala.Nothing], index: Double): ReactNode = js.native
   def onRenderCell(nestingDepth: Double, item: js.Any): ReactNode = js.native
   def onRenderCell(nestingDepth: Double, item: js.Any, index: Double): ReactNode = js.native
 }

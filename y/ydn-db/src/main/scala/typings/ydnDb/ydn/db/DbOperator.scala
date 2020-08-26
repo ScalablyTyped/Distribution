@@ -25,8 +25,86 @@ trait DbOperator extends js.Object {
   def keys(iter: Iterator, limit: Double): Request = js.native
   def keys(store_name: String): Request = js.native
   def keys(store_name: String, index_name: String): Request = js.native
+  def keys(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def keys(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): Request = js.native
+  def keys(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
+  def keys(store_name: String, index_name: String, key_range: js.UndefOr[scala.Nothing], limit: Double): Request = js.native
+  def keys(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: Double,
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def keys(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: Double,
+    offset: Double
+  ): Request = js.native
+  def keys(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: Double,
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
   def keys(store_name: String, index_name: String, key_range: js.Object): Request = js.native
+  def keys(
+    store_name: String,
+    index_name: String,
+    key_range: js.Object,
+    limit: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def keys(
+    store_name: String,
+    index_name: String,
+    key_range: js.Object,
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): Request = js.native
+  def keys(
+    store_name: String,
+    index_name: String,
+    key_range: js.Object,
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
   def keys(store_name: String, index_name: String, key_range: js.Object, limit: Double): Request = js.native
+  def keys(
+    store_name: String,
+    index_name: String,
+    key_range: js.Object,
+    limit: Double,
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
   def keys(store_name: String, index_name: String, key_range: js.Object, limit: Double, offset: Double): Request = js.native
   def keys(
     store_name: String,
@@ -36,8 +114,66 @@ trait DbOperator extends js.Object {
     offset: Double,
     reverse: Boolean
   ): Request = js.native
+  def keys(
+    store_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def keys(
+    store_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): Request = js.native
+  def keys(
+    store_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
+  def keys(store_name: String, key_range: js.UndefOr[scala.Nothing], limit: Double): Request = js.native
+  def keys(
+    store_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: Double,
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def keys(store_name: String, key_range: js.UndefOr[scala.Nothing], limit: Double, offset: Double): Request = js.native
+  def keys(
+    store_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: Double,
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
   def keys(store_name: String, key_range: js.Object): Request = js.native
+  def keys(
+    store_name: String,
+    key_range: js.Object,
+    limit: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def keys(store_name: String, key_range: js.Object, limit: js.UndefOr[scala.Nothing], offset: Double): Request = js.native
+  def keys(
+    store_name: String,
+    key_range: js.Object,
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
   def keys(store_name: String, key_range: js.Object, limit: Double): Request = js.native
+  def keys(
+    store_name: String,
+    key_range: js.Object,
+    limit: Double,
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
   def keys(store_name: String, key_range: js.Object, limit: Double, offset: Double): Request = js.native
   def keys(store_name: String, key_range: js.Object, limit: Double, offset: Double, reverse: Boolean): Request = js.native
   def keys(store_name: String, limit: Boolean): Request = js.native
@@ -60,8 +196,86 @@ trait DbOperator extends js.Object {
   def values(store_name: String): Request = js.native
   def values(store_name: String, ids: js.Array[_]): Request = js.native
   def values(store_name: String, index_name: String): Request = js.native
+  def values(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def values(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): Request = js.native
+  def values(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
+  def values(store_name: String, index_name: String, key_range: js.UndefOr[scala.Nothing], limit: Double): Request = js.native
+  def values(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: Double,
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def values(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: Double,
+    offset: Double
+  ): Request = js.native
+  def values(
+    store_name: String,
+    index_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: Double,
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
   def values(store_name: String, index_name: String, key_range: js.Object): Request = js.native
+  def values(
+    store_name: String,
+    index_name: String,
+    key_range: js.Object,
+    limit: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def values(
+    store_name: String,
+    index_name: String,
+    key_range: js.Object,
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): Request = js.native
+  def values(
+    store_name: String,
+    index_name: String,
+    key_range: js.Object,
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
   def values(store_name: String, index_name: String, key_range: js.Object, limit: Double): Request = js.native
+  def values(
+    store_name: String,
+    index_name: String,
+    key_range: js.Object,
+    limit: Double,
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
   def values(store_name: String, index_name: String, key_range: js.Object, limit: Double, offset: Double): Request = js.native
   def values(
     store_name: String,
@@ -71,8 +285,66 @@ trait DbOperator extends js.Object {
     offset: Double,
     reverse: Boolean
   ): Request = js.native
+  def values(
+    store_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def values(
+    store_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): Request = js.native
+  def values(
+    store_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
+  def values(store_name: String, key_range: js.UndefOr[scala.Nothing], limit: Double): Request = js.native
+  def values(
+    store_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: Double,
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def values(store_name: String, key_range: js.UndefOr[scala.Nothing], limit: Double, offset: Double): Request = js.native
+  def values(
+    store_name: String,
+    key_range: js.UndefOr[scala.Nothing],
+    limit: Double,
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
   def values(store_name: String, key_range: js.Object): Request = js.native
+  def values(
+    store_name: String,
+    key_range: js.Object,
+    limit: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
+  def values(store_name: String, key_range: js.Object, limit: js.UndefOr[scala.Nothing], offset: Double): Request = js.native
+  def values(
+    store_name: String,
+    key_range: js.Object,
+    limit: js.UndefOr[scala.Nothing],
+    offset: Double,
+    reverse: Boolean
+  ): Request = js.native
   def values(store_name: String, key_range: js.Object, limit: Double): Request = js.native
+  def values(
+    store_name: String,
+    key_range: js.Object,
+    limit: Double,
+    offset: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Request = js.native
   def values(store_name: String, key_range: js.Object, limit: Double, offset: Double): Request = js.native
   def values(store_name: String, key_range: js.Object, limit: Double, offset: Double, reverse: Boolean): Request = js.native
 }

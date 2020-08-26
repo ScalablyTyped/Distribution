@@ -36,14 +36,39 @@ object DistributionOrderedCacheBehaviorForwardedValues {
   @scala.inline
   def apply(
     cookies: Input[DistributionOrderedCacheBehaviorForwardedValuesCookies],
-    queryString: Input[Boolean],
-    headers: Input[js.Array[Input[String]]] = null,
-    queryStringCacheKeys: Input[js.Array[Input[String]]] = null
+    queryString: Input[Boolean]
   ): DistributionOrderedCacheBehaviorForwardedValues = {
     val __obj = js.Dynamic.literal(cookies = cookies.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (queryStringCacheKeys != null) __obj.updateDynamic("queryStringCacheKeys")(queryStringCacheKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionOrderedCacheBehaviorForwardedValues]
   }
+  @scala.inline
+  implicit class DistributionOrderedCacheBehaviorForwardedValuesOps[Self <: DistributionOrderedCacheBehaviorForwardedValues] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCookies(value: Input[DistributionOrderedCacheBehaviorForwardedValuesCookies]): Self = this.set("cookies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQueryString(value: Input[Boolean]): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeadersVarargs(value: Input[String]*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: Input[js.Array[Input[String]]]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setQueryStringCacheKeysVarargs(value: Input[String]*): Self = this.set("queryStringCacheKeys", js.Array(value :_*))
+    @scala.inline
+    def setQueryStringCacheKeys(value: Input[js.Array[Input[String]]]): Self = this.set("queryStringCacheKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryStringCacheKeys: Self = this.set("queryStringCacheKeys", js.undefined)
+  }
+  
 }
 

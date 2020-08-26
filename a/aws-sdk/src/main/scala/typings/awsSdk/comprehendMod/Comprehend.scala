@@ -91,12 +91,12 @@ trait Comprehend extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ClassifyDocumentResponse, Unit]
   ): Request[ClassifyDocumentResponse, AWSError] = js.native
   /**
-    * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
+    * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
     */
   def createDocumentClassifier(): Request[CreateDocumentClassifierResponse, AWSError] = js.native
   def createDocumentClassifier(callback: js.Function2[/* err */ AWSError, /* data */ CreateDocumentClassifierResponse, Unit]): Request[CreateDocumentClassifierResponse, AWSError] = js.native
   /**
-    * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
+    * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
     */
   def createDocumentClassifier(params: CreateDocumentClassifierRequest): Request[CreateDocumentClassifierResponse, AWSError] = js.native
   def createDocumentClassifier(

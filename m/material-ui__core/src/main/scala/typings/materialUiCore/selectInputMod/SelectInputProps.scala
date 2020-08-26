@@ -55,44 +55,101 @@ object SelectInputProps {
     autoWidth: Boolean,
     multiple: Boolean,
     native: Boolean,
-    value: String | Double | Boolean | (js.Array[String | Double | Boolean]),
-    IconComponent: ReactType[_] = null,
-    MenuProps: PartialMenuProps = null,
-    SelectDisplayProps: HTMLAttributes[HTMLDivElement] = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    inputRef: /* ref */ HTMLSelectElement | Value => Unit = null,
-    name: String = null,
-    onBlur: FocusEvent[_] => Unit = null,
-    onChange: (/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode) => Unit = null,
-    onClose: /* event */ ChangeEvent[js.Object] => Unit = null,
-    onFocus: FocusEvent[_] => Unit = null,
-    onOpen: /* event */ ChangeEvent[js.Object] => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    renderValue: /* value */ String | Double | Boolean | (js.Array[String | Double | Boolean]) => ReactNode = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    variant: standard | outlined | filled = null
+    value: String | Double | Boolean | (js.Array[String | Double | Boolean])
   ): SelectInputProps = {
     val __obj = js.Dynamic.literal(autoWidth = autoWidth.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (IconComponent != null) __obj.updateDynamic("IconComponent")(IconComponent.asInstanceOf[js.Any])
-    if (MenuProps != null) __obj.updateDynamic("MenuProps")(MenuProps.asInstanceOf[js.Any])
-    if (SelectDisplayProps != null) __obj.updateDynamic("SelectDisplayProps")(SelectDisplayProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (renderValue != null) __obj.updateDynamic("renderValue")(js.Any.fromFunction1(renderValue))
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectInputProps]
   }
+  @scala.inline
+  implicit class SelectInputPropsOps[Self <: SelectInputProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoWidth(value: Boolean): Self = this.set("autoWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNative(value: Boolean): Self = this.set("native", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValueVarargs(value: (String | Double | Boolean)*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: String | Double | Boolean | (js.Array[String | Double | Boolean])): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIconComponent(value: ReactType[_]): Self = this.set("IconComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconComponent: Self = this.set("IconComponent", js.undefined)
+    @scala.inline
+    def setMenuProps(value: PartialMenuProps): Self = this.set("MenuProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuProps: Self = this.set("MenuProps", js.undefined)
+    @scala.inline
+    def setSelectDisplayProps(value: HTMLAttributes[HTMLDivElement]): Self = this.set("SelectDisplayProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectDisplayProps: Self = this.set("SelectDisplayProps", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setInputRef(value: /* ref */ HTMLSelectElement | Value => Unit): Self = this.set("inputRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInputRef: Self = this.set("inputRef", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnBlur(value: FocusEvent[_] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: (/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode) => Unit): Self = this.set("onChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClose(value: /* event */ ChangeEvent[js.Object] => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnFocus(value: FocusEvent[_] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnOpen(value: /* event */ ChangeEvent[js.Object] => Unit): Self = this.set("onOpen", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    @scala.inline
+    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRenderValue(value: /* value */ String | Double | Boolean | (js.Array[String | Double | Boolean]) => ReactNode): Self = this.set("renderValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderValue: Self = this.set("renderValue", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setVariant(value: standard | outlined | filled): Self = this.set("variant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariant: Self = this.set("variant", js.undefined)
+  }
+  
 }
 

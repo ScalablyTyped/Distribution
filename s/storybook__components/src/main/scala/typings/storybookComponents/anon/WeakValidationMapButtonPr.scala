@@ -25,32 +25,66 @@ trait WeakValidationMapButtonPr extends js.Object {
 
 object WeakValidationMapButtonPr {
   @scala.inline
-  def apply(
-    containsIcon: Validator[js.UndefOr[Boolean | Null]] = null,
-    disabled: Validator[js.UndefOr[Boolean | Null]] = null,
-    inForm: Validator[js.UndefOr[Boolean | Null]] = null,
-    isLink: Validator[js.UndefOr[Boolean | Null]] = null,
-    key: Validator[js.UndefOr[Key | Null]] = null,
-    outline: Validator[js.UndefOr[Boolean | Null]] = null,
-    primary: Validator[js.UndefOr[Boolean | Null]] = null,
-    ref: Validator[js.UndefOr[Null | Ref[_]]] = null,
-    secondary: Validator[js.UndefOr[Boolean | Null]] = null,
-    small: Validator[js.UndefOr[Boolean | Null]] = null,
-    tertiary: Validator[js.UndefOr[Boolean | Null]] = null
-  ): WeakValidationMapButtonPr = {
+  def apply(): WeakValidationMapButtonPr = {
     val __obj = js.Dynamic.literal()
-    if (containsIcon != null) __obj.updateDynamic("containsIcon")(containsIcon.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (inForm != null) __obj.updateDynamic("inForm")(inForm.asInstanceOf[js.Any])
-    if (isLink != null) __obj.updateDynamic("isLink")(isLink.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
-    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
-    if (tertiary != null) __obj.updateDynamic("tertiary")(tertiary.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeakValidationMapButtonPr]
   }
+  @scala.inline
+  implicit class WeakValidationMapButtonPrOps[Self <: WeakValidationMapButtonPr] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainsIcon(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("containsIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsIcon: Self = this.set("containsIcon", js.undefined)
+    @scala.inline
+    def setDisabled(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setInForm(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("inForm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInForm: Self = this.set("inForm", js.undefined)
+    @scala.inline
+    def setIsLink(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("isLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsLink: Self = this.set("isLink", js.undefined)
+    @scala.inline
+    def setKey(value: Validator[js.UndefOr[Key | Null]]): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setOutline(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("outline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutline: Self = this.set("outline", js.undefined)
+    @scala.inline
+    def setPrimary(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setRef(value: Validator[js.UndefOr[Null | Ref[_]]]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setSecondary(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("secondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    @scala.inline
+    def setSmall(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("small", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmall: Self = this.set("small", js.undefined)
+    @scala.inline
+    def setTertiary(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("tertiary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTertiary: Self = this.set("tertiary", js.undefined)
+  }
+  
 }
 

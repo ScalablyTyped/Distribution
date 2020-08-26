@@ -42,18 +42,40 @@ trait SchemaPolicy extends js.Object {
 
 object SchemaPolicy {
   @scala.inline
-  def apply(
-    autoUpdatePolicy: String = null,
-    maintenanceWindow: SchemaMaintenanceWindow = null,
-    productAvailabilityPolicy: String = null,
-    productPolicy: js.Array[SchemaProductPolicy] = null
-  ): SchemaPolicy = {
+  def apply(): SchemaPolicy = {
     val __obj = js.Dynamic.literal()
-    if (autoUpdatePolicy != null) __obj.updateDynamic("autoUpdatePolicy")(autoUpdatePolicy.asInstanceOf[js.Any])
-    if (maintenanceWindow != null) __obj.updateDynamic("maintenanceWindow")(maintenanceWindow.asInstanceOf[js.Any])
-    if (productAvailabilityPolicy != null) __obj.updateDynamic("productAvailabilityPolicy")(productAvailabilityPolicy.asInstanceOf[js.Any])
-    if (productPolicy != null) __obj.updateDynamic("productPolicy")(productPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPolicy]
   }
+  @scala.inline
+  implicit class SchemaPolicyOps[Self <: SchemaPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoUpdatePolicy(value: String): Self = this.set("autoUpdatePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoUpdatePolicy: Self = this.set("autoUpdatePolicy", js.undefined)
+    @scala.inline
+    def setMaintenanceWindow(value: SchemaMaintenanceWindow): Self = this.set("maintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceWindow: Self = this.set("maintenanceWindow", js.undefined)
+    @scala.inline
+    def setProductAvailabilityPolicy(value: String): Self = this.set("productAvailabilityPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductAvailabilityPolicy: Self = this.set("productAvailabilityPolicy", js.undefined)
+    @scala.inline
+    def setProductPolicyVarargs(value: SchemaProductPolicy*): Self = this.set("productPolicy", js.Array(value :_*))
+    @scala.inline
+    def setProductPolicy(value: js.Array[SchemaProductPolicy]): Self = this.set("productPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductPolicy: Self = this.set("productPolicy", js.undefined)
+  }
+  
 }
 

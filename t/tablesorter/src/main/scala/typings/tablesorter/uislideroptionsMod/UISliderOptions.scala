@@ -16,108 +16,165 @@ import scala.scalajs.js.annotation._
 /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/PreviewableOptions.PreviewableOptions */
 /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/DelayableOptions.DelayableOptions */
 /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/StrictOptions.StrictOptions */
+@js.native
 trait UISliderOptions extends js.Object {
   /**
     * The text indicating the whole range.
     */
-  var allText: js.UndefOr[String] = js.undefined
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var allText: js.UndefOr[String] = js.native
+  var animate: js.UndefOr[js.Any] = js.native
   /**
     * The label of the control.
     */
-  var cellText: js.UndefOr[String] = js.undefined
-  var change: js.UndefOr[SliderEvent] = js.undefined
-  var classes: js.UndefOr[SliderClasses] = js.undefined
+  var cellText: js.UndefOr[String] = js.native
+  var change: js.UndefOr[SliderEvent] = js.native
+  var classes: js.UndefOr[SliderClasses] = js.native
   /**
     * The compare-operators supported by the control.
     */
-  var compare: js.UndefOr[String | js.Array[String]] = js.undefined
-  var create: js.UndefOr[SliderEvent] = js.undefined
+  var compare: js.UndefOr[String | js.Array[String]] = js.native
+  var create: js.UndefOr[SliderEvent] = js.native
   /**
     * A value indicating whether the value of the filter should be set delayed.
     */
-  var delayed: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var delayed: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
   /**
     * A value indicatin whether only exact matching values should be included.
     */
-  var exactMatch: js.UndefOr[Boolean] = js.undefined
-  var highlight: js.UndefOr[Boolean] = js.undefined
+  var exactMatch: js.UndefOr[Boolean] = js.native
+  var highlight: js.UndefOr[Boolean] = js.native
   /**
     * The maximum value of the control.
     */
-  var max: js.UndefOr[Double] = js.undefined
+  var max: js.UndefOr[Double] = js.native
   /**
     * The minimum value of the control.
     */
-  var min: js.UndefOr[Double] = js.undefined
-  var orientation: js.UndefOr[String] = js.undefined
-  var range: js.UndefOr[js.Any] = js.undefined
-  var slide: js.UndefOr[SliderEvent] = js.undefined
-  var start: js.UndefOr[SliderEvent] = js.undefined
+  var min: js.UndefOr[Double] = js.native
+  var orientation: js.UndefOr[String] = js.native
+  var range: js.UndefOr[js.Any] = js.native
+  var slide: js.UndefOr[SliderEvent] = js.native
+  var start: js.UndefOr[SliderEvent] = js.native
   /**
     * The interval of the control.
     */
-  var step: js.UndefOr[Double] = js.undefined
-  var stop: js.UndefOr[SliderEvent] = js.undefined
+  var step: js.UndefOr[Double] = js.native
+  var stop: js.UndefOr[SliderEvent] = js.native
   /**
     * The default value of the control.
     */
-  var value: js.UndefOr[Double] = js.undefined
+  var value: js.UndefOr[Double] = js.native
   /**
     * A value indicating whether the value should be visible in the table header.
     */
-  var valueToHeader: js.UndefOr[Boolean] = js.undefined
+  var valueToHeader: js.UndefOr[Boolean] = js.native
 }
 
 object UISliderOptions {
   @scala.inline
-  def apply(
-    allText: String = null,
-    animate: js.Any = null,
-    cellText: String = null,
-    change: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
-    classes: SliderClasses = null,
-    compare: String | js.Array[String] = null,
-    create: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
-    delayed: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    exactMatch: js.UndefOr[Boolean] = js.undefined,
-    highlight: js.UndefOr[Boolean] = js.undefined,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    orientation: String = null,
-    range: js.Any = null,
-    slide: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
-    start: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
-    step: js.UndefOr[Double] = js.undefined,
-    stop: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
-    value: js.UndefOr[Double] = js.undefined,
-    valueToHeader: js.UndefOr[Boolean] = js.undefined
-  ): UISliderOptions = {
+  def apply(): UISliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (allText != null) __obj.updateDynamic("allText")(allText.asInstanceOf[js.Any])
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (cellText != null) __obj.updateDynamic("cellText")(cellText.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (compare != null) __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (!js.isUndefined(delayed)) __obj.updateDynamic("delayed")(delayed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction2(slide))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueToHeader)) __obj.updateDynamic("valueToHeader")(valueToHeader.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UISliderOptions]
   }
+  @scala.inline
+  implicit class UISliderOptionsOps[Self <: UISliderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllText(value: String): Self = this.set("allText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllText: Self = this.set("allText", js.undefined)
+    @scala.inline
+    def setAnimate(value: js.Any): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setCellText(value: String): Self = this.set("cellText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellText: Self = this.set("cellText", js.undefined)
+    @scala.inline
+    def setChange(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit): Self = this.set("change", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setClasses(value: SliderClasses): Self = this.set("classes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClasses: Self = this.set("classes", js.undefined)
+    @scala.inline
+    def setCompareVarargs(value: String*): Self = this.set("compare", js.Array(value :_*))
+    @scala.inline
+    def setCompare(value: String | js.Array[String]): Self = this.set("compare", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompare: Self = this.set("compare", js.undefined)
+    @scala.inline
+    def setCreate(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit): Self = this.set("create", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setDelayed(value: Boolean): Self = this.set("delayed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelayed: Self = this.set("delayed", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setExactMatch(value: Boolean): Self = this.set("exactMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExactMatch: Self = this.set("exactMatch", js.undefined)
+    @scala.inline
+    def setHighlight(value: Boolean): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setRange(value: js.Any): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setSlide(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit): Self = this.set("slide", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSlide: Self = this.set("slide", js.undefined)
+    @scala.inline
+    def setStart(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit): Self = this.set("start", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setStop(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit): Self = this.set("stop", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStop: Self = this.set("stop", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValueToHeader(value: Boolean): Self = this.set("valueToHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueToHeader: Self = this.set("valueToHeader", js.undefined)
+  }
+  
 }
 

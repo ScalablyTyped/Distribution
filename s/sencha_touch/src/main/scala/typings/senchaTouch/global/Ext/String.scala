@@ -26,7 +26,11 @@ object String extends js.Object {
     * @returns String The converted text.
     */
   def ellipsis(): java.lang.String = js.native
+  def ellipsis(value: js.UndefOr[scala.Nothing], length: js.UndefOr[scala.Nothing], word: Boolean): java.lang.String = js.native
+  def ellipsis(value: js.UndefOr[scala.Nothing], length: Double): java.lang.String = js.native
+  def ellipsis(value: js.UndefOr[scala.Nothing], length: Double, word: Boolean): java.lang.String = js.native
   def ellipsis(value: java.lang.String): java.lang.String = js.native
+  def ellipsis(value: java.lang.String, length: js.UndefOr[scala.Nothing], word: Boolean): java.lang.String = js.native
   def ellipsis(value: java.lang.String, length: Double): java.lang.String = js.native
   def ellipsis(value: java.lang.String, length: Double, word: Boolean): java.lang.String = js.native
   /** [Method] Escapes the passed string for  and
@@ -66,7 +70,11 @@ object String extends js.Object {
     * @returns String The padded string.
     */
   def leftPad(): java.lang.String = js.native
+  def leftPad(string: js.UndefOr[scala.Nothing], size: js.UndefOr[scala.Nothing], character: java.lang.String): java.lang.String = js.native
+  def leftPad(string: js.UndefOr[scala.Nothing], size: Double): java.lang.String = js.native
+  def leftPad(string: js.UndefOr[scala.Nothing], size: Double, character: java.lang.String): java.lang.String = js.native
   def leftPad(string: java.lang.String): java.lang.String = js.native
+  def leftPad(string: java.lang.String, size: js.UndefOr[scala.Nothing], character: java.lang.String): java.lang.String = js.native
   def leftPad(string: java.lang.String, size: Double): java.lang.String = js.native
   def leftPad(string: java.lang.String, size: Double, character: java.lang.String): java.lang.String = js.native
   /** [Method] Returns a string with a specified number of repetitions a given string pattern
@@ -75,7 +83,11 @@ object String extends js.Object {
     * @param sep String An option string to separate each pattern.
     */
   def repeat(): Unit = js.native
+  def repeat(pattern: js.UndefOr[scala.Nothing], count: js.UndefOr[scala.Nothing], sep: java.lang.String): Unit = js.native
+  def repeat(pattern: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
+  def repeat(pattern: js.UndefOr[scala.Nothing], count: Double, sep: java.lang.String): Unit = js.native
   def repeat(pattern: java.lang.String): Unit = js.native
+  def repeat(pattern: java.lang.String, count: js.UndefOr[scala.Nothing], sep: java.lang.String): Unit = js.native
   def repeat(pattern: java.lang.String, count: Double): Unit = js.native
   def repeat(pattern: java.lang.String, count: Double, sep: java.lang.String): Unit = js.native
   /** [Method] Utility function that allows you to easily switch a string between two alternating values
@@ -85,7 +97,11 @@ object String extends js.Object {
     * @returns String The new value.
     */
   def toggle(): java.lang.String = js.native
+  def toggle(string: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], other: java.lang.String): java.lang.String = js.native
+  def toggle(string: js.UndefOr[scala.Nothing], value: java.lang.String): java.lang.String = js.native
+  def toggle(string: js.UndefOr[scala.Nothing], value: java.lang.String, other: java.lang.String): java.lang.String = js.native
   def toggle(string: java.lang.String): java.lang.String = js.native
+  def toggle(string: java.lang.String, value: js.UndefOr[scala.Nothing], other: java.lang.String): java.lang.String = js.native
   def toggle(string: java.lang.String, value: java.lang.String): java.lang.String = js.native
   def toggle(string: java.lang.String, value: java.lang.String, other: java.lang.String): java.lang.String = js.native
   /** [Method] Trims whitespace from either end of a string leaving spaces within the string intact
@@ -100,6 +116,7 @@ object String extends js.Object {
     * @returns String The resulting URL.
     */
   def urlAppend(): java.lang.String = js.native
+  def urlAppend(url: js.UndefOr[scala.Nothing], string: java.lang.String): java.lang.String = js.native
   def urlAppend(url: java.lang.String): java.lang.String = js.native
   def urlAppend(url: java.lang.String, string: java.lang.String): java.lang.String = js.native
 }

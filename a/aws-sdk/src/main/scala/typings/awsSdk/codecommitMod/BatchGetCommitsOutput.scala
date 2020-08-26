@@ -18,11 +18,34 @@ trait BatchGetCommitsOutput extends js.Object {
 
 object BatchGetCommitsOutput {
   @scala.inline
-  def apply(commits: CommitObjectsList = null, errors: BatchGetCommitsErrorsList = null): BatchGetCommitsOutput = {
+  def apply(): BatchGetCommitsOutput = {
     val __obj = js.Dynamic.literal()
-    if (commits != null) __obj.updateDynamic("commits")(commits.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetCommitsOutput]
   }
+  @scala.inline
+  implicit class BatchGetCommitsOutputOps[Self <: BatchGetCommitsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommitsVarargs(value: Commit*): Self = this.set("commits", js.Array(value :_*))
+    @scala.inline
+    def setCommits(value: CommitObjectsList): Self = this.set("commits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommits: Self = this.set("commits", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: BatchGetCommitsError*): Self = this.set("errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: BatchGetCommitsErrorsList): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+  }
+  
 }
 

@@ -6,132 +6,223 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var backdrop: js.UndefOr[Boolean | String] = js.undefined
-  var button: js.UndefOr[Boolean] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var container: js.UndefOr[String | Element] = js.undefined
-  var filter: js.UndefOr[js.Function] = js.undefined
-  var fullscreen: js.UndefOr[Boolean] = js.undefined
-  var hidden: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
-  var hide: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
-  var initialViewIndex: js.UndefOr[Double] = js.undefined
-  var `inline`: js.UndefOr[Boolean] = js.undefined
-  var interval: js.UndefOr[Double] = js.undefined
-  var keyboard: js.UndefOr[Boolean] = js.undefined
-  var loading: js.UndefOr[Boolean] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var maxZoomRatio: js.UndefOr[Double] = js.undefined
-  var minHeight: js.UndefOr[Double] = js.undefined
-  var minWidth: js.UndefOr[Double] = js.undefined
-  var minZoomRatio: js.UndefOr[Double] = js.undefined
-  var movable: js.UndefOr[Boolean] = js.undefined
-  var navbar: js.UndefOr[Boolean | Visibility] = js.undefined
-  var ready: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
-  var rotatable: js.UndefOr[Boolean] = js.undefined
-  var scalable: js.UndefOr[Boolean] = js.undefined
-  var show: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
-  var shown: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
-  var title: js.UndefOr[Boolean | Visibility | js.Function | (js.Tuple2[Visibility, js.Function])] = js.undefined
-  var toggleOnDblclick: js.UndefOr[Boolean] = js.undefined
-  var toolbar: js.UndefOr[Boolean | Visibility | ToolbarOptions] = js.undefined
-  var tooltip: js.UndefOr[Boolean] = js.undefined
-  var transition: js.UndefOr[Boolean] = js.undefined
-  var url: js.UndefOr[String | js.Function] = js.undefined
-  var view: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
-  var viewed: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
-  var zIndexInline: js.UndefOr[Double] = js.undefined
-  var zoom: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
-  var zoomRatio: js.UndefOr[Double] = js.undefined
-  var zoomable: js.UndefOr[Boolean] = js.undefined
-  var zoomed: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.undefined
+  var backdrop: js.UndefOr[Boolean | String] = js.native
+  var button: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String | Element] = js.native
+  var filter: js.UndefOr[js.Function] = js.native
+  var fullscreen: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+  var hide: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+  var initialViewIndex: js.UndefOr[Double] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.native
+  var interval: js.UndefOr[Double] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var maxZoomRatio: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.native
+  var minZoomRatio: js.UndefOr[Double] = js.native
+  var movable: js.UndefOr[Boolean] = js.native
+  var navbar: js.UndefOr[Boolean | Visibility] = js.native
+  var ready: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+  var rotatable: js.UndefOr[Boolean] = js.native
+  var scalable: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+  var shown: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+  var title: js.UndefOr[Boolean | Visibility | js.Function | (js.Tuple2[Visibility, js.Function])] = js.native
+  var toggleOnDblclick: js.UndefOr[Boolean] = js.native
+  var toolbar: js.UndefOr[Boolean | Visibility | ToolbarOptions] = js.native
+  var tooltip: js.UndefOr[Boolean] = js.native
+  var transition: js.UndefOr[Boolean] = js.native
+  var url: js.UndefOr[String | js.Function] = js.native
+  var view: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+  var viewed: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
+  var zIndexInline: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+  var zoomRatio: js.UndefOr[Double] = js.native
+  var zoomable: js.UndefOr[Boolean] = js.native
+  var zoomed: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    backdrop: Boolean | String = null,
-    button: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    container: String | Element = null,
-    filter: js.Function = null,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    hidden: /* event */ CustomEvent[_] => Unit = null,
-    hide: /* event */ CustomEvent[_] => Unit = null,
-    initialViewIndex: js.UndefOr[Double] = js.undefined,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    interval: js.UndefOr[Double] = js.undefined,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    maxZoomRatio: js.UndefOr[Double] = js.undefined,
-    minHeight: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    minZoomRatio: js.UndefOr[Double] = js.undefined,
-    movable: js.UndefOr[Boolean] = js.undefined,
-    navbar: Boolean | Visibility = null,
-    ready: /* event */ CustomEvent[_] => Unit = null,
-    rotatable: js.UndefOr[Boolean] = js.undefined,
-    scalable: js.UndefOr[Boolean] = js.undefined,
-    show: /* event */ CustomEvent[_] => Unit = null,
-    shown: /* event */ CustomEvent[_] => Unit = null,
-    title: Boolean | Visibility | js.Function | (js.Tuple2[Visibility, js.Function]) = null,
-    toggleOnDblclick: js.UndefOr[Boolean] = js.undefined,
-    toolbar: Boolean | Visibility | ToolbarOptions = null,
-    tooltip: js.UndefOr[Boolean] = js.undefined,
-    transition: js.UndefOr[Boolean] = js.undefined,
-    url: String | js.Function = null,
-    view: /* event */ CustomEvent[_] => Unit = null,
-    viewed: /* event */ CustomEvent[_] => Unit = null,
-    zIndex: js.UndefOr[Double] = js.undefined,
-    zIndexInline: js.UndefOr[Double] = js.undefined,
-    zoom: /* event */ CustomEvent[_] => Unit = null,
-    zoomRatio: js.UndefOr[Double] = js.undefined,
-    zoomable: js.UndefOr[Boolean] = js.undefined,
-    zoomed: /* event */ CustomEvent[_] => Unit = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
-    if (hidden != null) __obj.updateDynamic("hidden")(js.Any.fromFunction1(hidden))
-    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
-    if (!js.isUndefined(initialViewIndex)) __obj.updateDynamic("initialViewIndex")(initialViewIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxZoomRatio)) __obj.updateDynamic("maxZoomRatio")(maxZoomRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minZoomRatio)) __obj.updateDynamic("minZoomRatio")(minZoomRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable.get.asInstanceOf[js.Any])
-    if (navbar != null) __obj.updateDynamic("navbar")(navbar.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scalable)) __obj.updateDynamic("scalable")(scalable.get.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (shown != null) __obj.updateDynamic("shown")(js.Any.fromFunction1(shown))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggleOnDblclick)) __obj.updateDynamic("toggleOnDblclick")(toggleOnDblclick.get.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(js.Any.fromFunction1(view))
-    if (viewed != null) __obj.updateDynamic("viewed")(js.Any.fromFunction1(viewed))
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndexInline)) __obj.updateDynamic("zIndexInline")(zIndexInline.get.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(js.Any.fromFunction1(zoom))
-    if (!js.isUndefined(zoomRatio)) __obj.updateDynamic("zoomRatio")(zoomRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable.get.asInstanceOf[js.Any])
-    if (zoomed != null) __obj.updateDynamic("zoomed")(js.Any.fromFunction1(zoomed))
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackdrop(value: Boolean | String): Self = this.set("backdrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackdrop: Self = this.set("backdrop", js.undefined)
+    @scala.inline
+    def setButton(value: Boolean): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("button", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setContainer(value: String | Element): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setFilter(value: js.Function): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    @scala.inline
+    def setHidden(value: /* event */ CustomEvent[_] => Unit): Self = this.set("hidden", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setHide(value: /* event */ CustomEvent[_] => Unit): Self = this.set("hide", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHide: Self = this.set("hide", js.undefined)
+    @scala.inline
+    def setInitialViewIndex(value: Double): Self = this.set("initialViewIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialViewIndex: Self = this.set("initialViewIndex", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    @scala.inline
+    def setLoading(value: Boolean): Self = this.set("loading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoading: Self = this.set("loading", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setMaxZoomRatio(value: Double): Self = this.set("maxZoomRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoomRatio: Self = this.set("maxZoomRatio", js.undefined)
+    @scala.inline
+    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setMinZoomRatio(value: Double): Self = this.set("minZoomRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinZoomRatio: Self = this.set("minZoomRatio", js.undefined)
+    @scala.inline
+    def setMovable(value: Boolean): Self = this.set("movable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovable: Self = this.set("movable", js.undefined)
+    @scala.inline
+    def setNavbar(value: Boolean | Visibility): Self = this.set("navbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavbar: Self = this.set("navbar", js.undefined)
+    @scala.inline
+    def setReady(value: /* event */ CustomEvent[_] => Unit): Self = this.set("ready", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteReady: Self = this.set("ready", js.undefined)
+    @scala.inline
+    def setRotatable(value: Boolean): Self = this.set("rotatable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotatable: Self = this.set("rotatable", js.undefined)
+    @scala.inline
+    def setScalable(value: Boolean): Self = this.set("scalable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalable: Self = this.set("scalable", js.undefined)
+    @scala.inline
+    def setShow(value: /* event */ CustomEvent[_] => Unit): Self = this.set("show", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setShown(value: /* event */ CustomEvent[_] => Unit): Self = this.set("shown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteShown: Self = this.set("shown", js.undefined)
+    @scala.inline
+    def setTitle(value: Boolean | Visibility | js.Function | (js.Tuple2[Visibility, js.Function])): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setToggleOnDblclick(value: Boolean): Self = this.set("toggleOnDblclick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleOnDblclick: Self = this.set("toggleOnDblclick", js.undefined)
+    @scala.inline
+    def setToolbar(value: Boolean | Visibility | ToolbarOptions): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    @scala.inline
+    def setTooltip(value: Boolean): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTransition(value: Boolean): Self = this.set("transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransition: Self = this.set("transition", js.undefined)
+    @scala.inline
+    def setUrl(value: String | js.Function): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setView(value: /* event */ CustomEvent[_] => Unit): Self = this.set("view", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setViewed(value: /* event */ CustomEvent[_] => Unit): Self = this.set("viewed", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteViewed: Self = this.set("viewed", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    @scala.inline
+    def setZIndexInline(value: Double): Self = this.set("zIndexInline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndexInline: Self = this.set("zIndexInline", js.undefined)
+    @scala.inline
+    def setZoom(value: /* event */ CustomEvent[_] => Unit): Self = this.set("zoom", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+    @scala.inline
+    def setZoomRatio(value: Double): Self = this.set("zoomRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomRatio: Self = this.set("zoomRatio", js.undefined)
+    @scala.inline
+    def setZoomable(value: Boolean): Self = this.set("zoomable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomable: Self = this.set("zoomable", js.undefined)
+    @scala.inline
+    def setZoomed(value: /* event */ CustomEvent[_] => Unit): Self = this.set("zoomed", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomed: Self = this.set("zoomed", js.undefined)
+  }
+  
 }
 

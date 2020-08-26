@@ -18,11 +18,32 @@ trait ListQueryExecutionsOutput extends js.Object {
 
 object ListQueryExecutionsOutput {
   @scala.inline
-  def apply(NextToken: Token = null, QueryExecutionIds: QueryExecutionIdList = null): ListQueryExecutionsOutput = {
+  def apply(): ListQueryExecutionsOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (QueryExecutionIds != null) __obj.updateDynamic("QueryExecutionIds")(QueryExecutionIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQueryExecutionsOutput]
   }
+  @scala.inline
+  implicit class ListQueryExecutionsOutputOps[Self <: ListQueryExecutionsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setQueryExecutionIdsVarargs(value: QueryExecutionId*): Self = this.set("QueryExecutionIds", js.Array(value :_*))
+    @scala.inline
+    def setQueryExecutionIds(value: QueryExecutionIdList): Self = this.set("QueryExecutionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryExecutionIds: Self = this.set("QueryExecutionIds", js.undefined)
+  }
+  
 }
 

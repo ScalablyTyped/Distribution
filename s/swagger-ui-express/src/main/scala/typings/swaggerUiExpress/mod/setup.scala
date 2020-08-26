@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object setup extends js.Object {
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(swaggerDoc: js.UndefOr[scala.Nothing], isExplorer: Boolean): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(
     swaggerDoc: js.UndefOr[JsonObject],
     opts: js.UndefOr[SwaggerUiOptions],

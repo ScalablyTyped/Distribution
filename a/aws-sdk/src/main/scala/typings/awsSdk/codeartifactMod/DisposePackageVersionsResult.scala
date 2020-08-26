@@ -18,14 +18,30 @@ trait DisposePackageVersionsResult extends js.Object {
 
 object DisposePackageVersionsResult {
   @scala.inline
-  def apply(
-    failedVersions: PackageVersionErrorMap = null,
-    successfulVersions: SuccessfulPackageVersionInfoMap = null
-  ): DisposePackageVersionsResult = {
+  def apply(): DisposePackageVersionsResult = {
     val __obj = js.Dynamic.literal()
-    if (failedVersions != null) __obj.updateDynamic("failedVersions")(failedVersions.asInstanceOf[js.Any])
-    if (successfulVersions != null) __obj.updateDynamic("successfulVersions")(successfulVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisposePackageVersionsResult]
   }
+  @scala.inline
+  implicit class DisposePackageVersionsResultOps[Self <: DisposePackageVersionsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailedVersions(value: PackageVersionErrorMap): Self = this.set("failedVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedVersions: Self = this.set("failedVersions", js.undefined)
+    @scala.inline
+    def setSuccessfulVersions(value: SuccessfulPackageVersionInfoMap): Self = this.set("successfulVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessfulVersions: Self = this.set("successfulVersions", js.undefined)
+  }
+  
 }
 

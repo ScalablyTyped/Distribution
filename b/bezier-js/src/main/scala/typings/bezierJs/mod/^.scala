@@ -24,6 +24,16 @@ class ^ protected () extends Bezier {
   def this(p1: Point, p2: Point, p3: Point, p4: Point) = this()
   def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double) = this()
   def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double) = this()
+  def this(
+    x1: Double,
+    y1: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: js.UndefOr[scala.Nothing],
+    y4: Double
+  ) = this()
   def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double) = this()
 }
 
@@ -31,6 +41,7 @@ class ^ protected () extends Bezier {
 @js.native
 object ^ extends js.Object {
   def cubicFromPoints(S: Point, B: Point, E: Point): Bezier = js.native
+  def cubicFromPoints(S: Point, B: Point, E: Point, t: js.UndefOr[scala.Nothing], d1: Double): Bezier = js.native
   def cubicFromPoints(S: Point, B: Point, E: Point, t: Double): Bezier = js.native
   def cubicFromPoints(S: Point, B: Point, E: Point, t: Double, d1: Double): Bezier = js.native
   def fromSVG(svgString: String): Bezier = js.native

@@ -81,32 +81,72 @@ trait SchemaUptimeCheckConfig extends js.Object {
 
 object SchemaUptimeCheckConfig {
   @scala.inline
-  def apply(
-    contentMatchers: js.Array[SchemaContentMatcher] = null,
-    displayName: String = null,
-    httpCheck: SchemaHttpCheck = null,
-    internalCheckers: js.Array[SchemaInternalChecker] = null,
-    monitoredResource: SchemaMonitoredResource = null,
-    name: String = null,
-    period: String = null,
-    resourceGroup: SchemaResourceGroup = null,
-    selectedRegions: js.Array[String] = null,
-    tcpCheck: SchemaTcpCheck = null,
-    timeout: String = null
-  ): SchemaUptimeCheckConfig = {
+  def apply(): SchemaUptimeCheckConfig = {
     val __obj = js.Dynamic.literal()
-    if (contentMatchers != null) __obj.updateDynamic("contentMatchers")(contentMatchers.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (httpCheck != null) __obj.updateDynamic("httpCheck")(httpCheck.asInstanceOf[js.Any])
-    if (internalCheckers != null) __obj.updateDynamic("internalCheckers")(internalCheckers.asInstanceOf[js.Any])
-    if (monitoredResource != null) __obj.updateDynamic("monitoredResource")(monitoredResource.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (resourceGroup != null) __obj.updateDynamic("resourceGroup")(resourceGroup.asInstanceOf[js.Any])
-    if (selectedRegions != null) __obj.updateDynamic("selectedRegions")(selectedRegions.asInstanceOf[js.Any])
-    if (tcpCheck != null) __obj.updateDynamic("tcpCheck")(tcpCheck.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUptimeCheckConfig]
   }
+  @scala.inline
+  implicit class SchemaUptimeCheckConfigOps[Self <: SchemaUptimeCheckConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentMatchersVarargs(value: SchemaContentMatcher*): Self = this.set("contentMatchers", js.Array(value :_*))
+    @scala.inline
+    def setContentMatchers(value: js.Array[SchemaContentMatcher]): Self = this.set("contentMatchers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMatchers: Self = this.set("contentMatchers", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setHttpCheck(value: SchemaHttpCheck): Self = this.set("httpCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpCheck: Self = this.set("httpCheck", js.undefined)
+    @scala.inline
+    def setInternalCheckersVarargs(value: SchemaInternalChecker*): Self = this.set("internalCheckers", js.Array(value :_*))
+    @scala.inline
+    def setInternalCheckers(value: js.Array[SchemaInternalChecker]): Self = this.set("internalCheckers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternalCheckers: Self = this.set("internalCheckers", js.undefined)
+    @scala.inline
+    def setMonitoredResource(value: SchemaMonitoredResource): Self = this.set("monitoredResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoredResource: Self = this.set("monitoredResource", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPeriod(value: String): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setResourceGroup(value: SchemaResourceGroup): Self = this.set("resourceGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceGroup: Self = this.set("resourceGroup", js.undefined)
+    @scala.inline
+    def setSelectedRegionsVarargs(value: String*): Self = this.set("selectedRegions", js.Array(value :_*))
+    @scala.inline
+    def setSelectedRegions(value: js.Array[String]): Self = this.set("selectedRegions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedRegions: Self = this.set("selectedRegions", js.undefined)
+    @scala.inline
+    def setTcpCheck(value: SchemaTcpCheck): Self = this.set("tcpCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTcpCheck: Self = this.set("tcpCheck", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

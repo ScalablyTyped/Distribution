@@ -1,12 +1,12 @@
 package typings.stripe.mod.invoices
 
 import typings.stripe.mod.IDataOptionsWithMetadata
-import typings.stripe.mod.IOptionsMetadata
 import typings.stripe.mod.cards.ICardSourceCreationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IInvoicePayOptions extends IDataOptionsWithMetadata {
   /**
     * In cases where the source used to pay the invoice has insufficient
@@ -20,37 +20,49 @@ trait IInvoicePayOptions extends IDataOptionsWithMetadata {
     * than the amount due by a small amount, you might want to forgive
     * the difference.
     */
-  var forgive: js.UndefOr[Boolean] = js.undefined
+  var forgive: js.UndefOr[Boolean] = js.native
   /**
     * Boolean representing whether an invoice is paid outside of Stripe.
     * This will result in no charge being made.
     */
-  var paid_out_of_band: js.UndefOr[Boolean] = js.undefined
+  var paid_out_of_band: js.UndefOr[Boolean] = js.native
   /**
     * A payment source to be charged. The source must be the ID of a source
     * belonging to the customer associated with the invoice being paid.
     */
-  var source: js.UndefOr[String | ICardSourceCreationOptions] = js.undefined
+  var source: js.UndefOr[String | ICardSourceCreationOptions] = js.native
 }
 
 object IInvoicePayOptions {
   @scala.inline
-  def apply(
-    expand: js.Array[String] = null,
-    forgive: js.UndefOr[Boolean] = js.undefined,
-    include: js.Array[String] = null,
-    metadata: IOptionsMetadata = null,
-    paid_out_of_band: js.UndefOr[Boolean] = js.undefined,
-    source: String | ICardSourceCreationOptions = null
-  ): IInvoicePayOptions = {
+  def apply(): IInvoicePayOptions = {
     val __obj = js.Dynamic.literal()
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (!js.isUndefined(forgive)) __obj.updateDynamic("forgive")(forgive.get.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(paid_out_of_band)) __obj.updateDynamic("paid_out_of_band")(paid_out_of_band.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoicePayOptions]
   }
+  @scala.inline
+  implicit class IInvoicePayOptionsOps[Self <: IInvoicePayOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForgive(value: Boolean): Self = this.set("forgive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForgive: Self = this.set("forgive", js.undefined)
+    @scala.inline
+    def setPaid_out_of_band(value: Boolean): Self = this.set("paid_out_of_band", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaid_out_of_band: Self = this.set("paid_out_of_band", js.undefined)
+    @scala.inline
+    def setSource(value: String | ICardSourceCreationOptions): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+  }
+  
 }
 

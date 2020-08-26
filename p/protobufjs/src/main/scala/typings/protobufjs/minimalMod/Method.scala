@@ -21,128 +21,15 @@ class Method protected ()
     * @param [options] Declared options
     * @param [comment] The comment for this method
     */
-  def this(name: String, `type`: js.UndefOr[String], requestType: String, responseType: String) = this()
   def this(
     name: String,
     `type`: js.UndefOr[String],
     requestType: String,
     responseType: String,
-    requestStream: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean,
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean,
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean,
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean,
-    options: StringDictionary[js.Any],
-    comment: String
+    requestStream: js.UndefOr[Boolean | StringDictionary[js.Any]],
+    responseStream: js.UndefOr[Boolean | StringDictionary[js.Any]],
+    options: js.UndefOr[StringDictionary[js.Any]],
+    comment: js.UndefOr[String]
   ) = this()
 }
 

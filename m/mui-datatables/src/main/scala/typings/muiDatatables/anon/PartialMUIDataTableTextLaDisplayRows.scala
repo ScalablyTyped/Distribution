@@ -5,27 +5,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsPagination> */
+@js.native
 trait PartialMUIDataTableTextLaDisplayRows extends js.Object {
-  var displayRows: js.UndefOr[String] = js.undefined
-  var next: js.UndefOr[String] = js.undefined
-  var previous: js.UndefOr[String] = js.undefined
-  var rowsPerPage: js.UndefOr[String] = js.undefined
+  var displayRows: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.native
+  var previous: js.UndefOr[String] = js.native
+  var rowsPerPage: js.UndefOr[String] = js.native
 }
 
 object PartialMUIDataTableTextLaDisplayRows {
   @scala.inline
-  def apply(
-    displayRows: String = null,
-    next: String = null,
-    previous: String = null,
-    rowsPerPage: String = null
-  ): PartialMUIDataTableTextLaDisplayRows = {
+  def apply(): PartialMUIDataTableTextLaDisplayRows = {
     val __obj = js.Dynamic.literal()
-    if (displayRows != null) __obj.updateDynamic("displayRows")(displayRows.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
-    if (rowsPerPage != null) __obj.updateDynamic("rowsPerPage")(rowsPerPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialMUIDataTableTextLaDisplayRows]
   }
+  @scala.inline
+  implicit class PartialMUIDataTableTextLaDisplayRowsOps[Self <: PartialMUIDataTableTextLaDisplayRows] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayRows(value: String): Self = this.set("displayRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayRows: Self = this.set("displayRows", js.undefined)
+    @scala.inline
+    def setNext(value: String): Self = this.set("next", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNext: Self = this.set("next", js.undefined)
+    @scala.inline
+    def setPrevious(value: String): Self = this.set("previous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevious: Self = this.set("previous", js.undefined)
+    @scala.inline
+    def setRowsPerPage(value: String): Self = this.set("rowsPerPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowsPerPage: Self = this.set("rowsPerPage", js.undefined)
+  }
+  
 }
 

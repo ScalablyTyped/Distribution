@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react.react.FC<P & styletron-react.styletron-react.StyletronComponentInjectedProps<P>> & {  __STYLETRON__  :styletron-react.styletron-react.Styletron} */
+/* Inlined react.react.FC<P & styletron-react.styletron-react.StyletronComponentInjectedProps<P>> & {  __STYLETRON__ :styletron-react.styletron-react.Styletron} */
 @js.native
 trait StyletronComponent[P /* <: js.Object */] extends js.Object {
   var __STYLETRON__ : Styletron = js.native

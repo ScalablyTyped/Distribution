@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object encodingMod extends js.Object {
   def decodeFromCompressedBase64(base64String: String): AbstractHistogram = js.native
+  def decodeFromCompressedBase64(
+    base64String: String,
+    histogramConstr: js.UndefOr[scala.Nothing],
+    minBarForHighestTrackableValue: Double
+  ): AbstractHistogram = js.native
   def decodeFromCompressedBase64(base64String: String, histogramConstr: HistogramConstructor): AbstractHistogram = js.native
   def decodeFromCompressedBase64(
     base64String: String,

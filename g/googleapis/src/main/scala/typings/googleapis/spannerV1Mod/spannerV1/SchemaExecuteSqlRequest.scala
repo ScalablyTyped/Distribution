@@ -83,26 +83,54 @@ trait SchemaExecuteSqlRequest extends js.Object {
 
 object SchemaExecuteSqlRequest {
   @scala.inline
-  def apply(
-    paramTypes: StringDictionary[SchemaType] = null,
-    params: StringDictionary[js.Any] = null,
-    partitionToken: String = null,
-    queryMode: String = null,
-    resumeToken: String = null,
-    seqno: String = null,
-    sql: String = null,
-    transaction: SchemaTransactionSelector = null
-  ): SchemaExecuteSqlRequest = {
+  def apply(): SchemaExecuteSqlRequest = {
     val __obj = js.Dynamic.literal()
-    if (paramTypes != null) __obj.updateDynamic("paramTypes")(paramTypes.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (partitionToken != null) __obj.updateDynamic("partitionToken")(partitionToken.asInstanceOf[js.Any])
-    if (queryMode != null) __obj.updateDynamic("queryMode")(queryMode.asInstanceOf[js.Any])
-    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
-    if (seqno != null) __obj.updateDynamic("seqno")(seqno.asInstanceOf[js.Any])
-    if (sql != null) __obj.updateDynamic("sql")(sql.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExecuteSqlRequest]
   }
+  @scala.inline
+  implicit class SchemaExecuteSqlRequestOps[Self <: SchemaExecuteSqlRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParamTypes(value: StringDictionary[SchemaType]): Self = this.set("paramTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParamTypes: Self = this.set("paramTypes", js.undefined)
+    @scala.inline
+    def setParams(value: StringDictionary[js.Any]): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setPartitionToken(value: String): Self = this.set("partitionToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionToken: Self = this.set("partitionToken", js.undefined)
+    @scala.inline
+    def setQueryMode(value: String): Self = this.set("queryMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryMode: Self = this.set("queryMode", js.undefined)
+    @scala.inline
+    def setResumeToken(value: String): Self = this.set("resumeToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResumeToken: Self = this.set("resumeToken", js.undefined)
+    @scala.inline
+    def setSeqno(value: String): Self = this.set("seqno", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeqno: Self = this.set("seqno", js.undefined)
+    @scala.inline
+    def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSql: Self = this.set("sql", js.undefined)
+    @scala.inline
+    def setTransaction(value: SchemaTransactionSelector): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransaction: Self = this.set("transaction", js.undefined)
+  }
+  
 }
 

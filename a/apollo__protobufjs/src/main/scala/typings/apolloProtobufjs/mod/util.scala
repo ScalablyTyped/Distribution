@@ -41,6 +41,7 @@ object util extends js.Object {
       * @returns `this`
       */
     def off(): this.type = js.native
+    def off(evt: js.UndefOr[scala.Nothing], fn: EventEmitterListener): this.type = js.native
     def off(evt: String): this.type = js.native
     def off(evt: String, fn: EventEmitterListener): this.type = js.native
     /**
@@ -115,10 +116,6 @@ object util extends js.Object {
     def this(message: String, properties: StringDictionary[js.Any]) = this()
     /** So far decoded message instance. */
     var instance: Message[T] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   /** Long.js's Long class if available. */

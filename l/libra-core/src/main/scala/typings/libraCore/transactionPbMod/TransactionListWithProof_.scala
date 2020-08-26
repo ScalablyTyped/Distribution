@@ -13,9 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class TransactionListWithProof_ () extends Message {
   def addInfos(): TransactionInfo = js.native
+  def addInfos(value: js.UndefOr[scala.Nothing], index: Double): TransactionInfo = js.native
   def addInfos(value: TransactionInfo): TransactionInfo = js.native
   def addInfos(value: TransactionInfo, index: Double): TransactionInfo = js.native
   def addTransactions(): SignedTransaction = js.native
+  def addTransactions(value: js.UndefOr[scala.Nothing], index: Double): SignedTransaction = js.native
   def addTransactions(value: SignedTransaction): SignedTransaction = js.native
   def addTransactions(value: SignedTransaction, index: Double): SignedTransaction = js.native
   def clearEventsForVersions(): Unit = js.native

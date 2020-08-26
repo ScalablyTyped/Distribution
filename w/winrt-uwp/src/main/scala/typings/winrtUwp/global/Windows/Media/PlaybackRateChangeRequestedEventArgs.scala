@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.PlaybackRateChangeRequestedEventArgs")
 @js.native
 abstract class PlaybackRateChangeRequestedEventArgs ()
-  extends typings.winrtUwp.Windows.Media.PlaybackRateChangeRequestedEventArgs {
-  /** Gets the requested playback rate. */
-  /* CompleteClass */
-  override var requestedPlaybackRate: Double = js.native
-}
+  extends typings.winrtUwp.Windows.Media.PlaybackRateChangeRequestedEventArgs
 

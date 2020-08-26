@@ -15,6 +15,7 @@ object mod extends js.Object {
     def this(`type`: ServiceType, port: Double, args: js.Any*) = this()
     def start(): Advertisement = js.native
     def stop(): Unit = js.native
+    def stop(forceImmediate: js.UndefOr[scala.Nothing], callback: js.Function0[_]): Unit = js.native
     def stop(forceImmediate: Boolean): Unit = js.native
     def stop(forceImmediate: Boolean, callback: js.Function0[_]): Unit = js.native
     def updateTXT(txtObj: js.Any): Unit = js.native

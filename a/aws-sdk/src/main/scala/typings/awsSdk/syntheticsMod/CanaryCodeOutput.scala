@@ -18,11 +18,30 @@ trait CanaryCodeOutput extends js.Object {
 
 object CanaryCodeOutput {
   @scala.inline
-  def apply(Handler: String = null, SourceLocationArn: String = null): CanaryCodeOutput = {
+  def apply(): CanaryCodeOutput = {
     val __obj = js.Dynamic.literal()
-    if (Handler != null) __obj.updateDynamic("Handler")(Handler.asInstanceOf[js.Any])
-    if (SourceLocationArn != null) __obj.updateDynamic("SourceLocationArn")(SourceLocationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanaryCodeOutput]
   }
+  @scala.inline
+  implicit class CanaryCodeOutputOps[Self <: CanaryCodeOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHandler(value: String): Self = this.set("Handler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandler: Self = this.set("Handler", js.undefined)
+    @scala.inline
+    def setSourceLocationArn(value: String): Self = this.set("SourceLocationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLocationArn: Self = this.set("SourceLocationArn", js.undefined)
+  }
+  
 }
 

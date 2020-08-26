@@ -20,6 +20,7 @@ object rpc extends js.Object {
       */
     def this(rpcImpl: RPCImpl) = this()
     def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
+    def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
     def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
   }
   

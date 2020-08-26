@@ -26,16 +26,9 @@ object uploadArchiveCommandMod extends js.Object {
           Readable
         ] {
     def this(input: UploadArchiveInput[Readable]) = this()
-    /* CompleteClass */
-    override val input: UploadArchiveInput[Readable] = js.native
     val middlewareStack: MiddlewareStack[UploadArchiveInput[Readable], UploadArchiveOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: GlacierResolvedConfiguration
-    ): Handler[UploadArchiveInput[Readable], UploadArchiveOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: GlacierResolvedConfiguration
     ): Handler[UploadArchiveInput[Readable], UploadArchiveOutput] = js.native
   }

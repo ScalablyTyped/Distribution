@@ -16,7 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "TextInput")
+@JSImport("grommet/es6", "TextInput")
 @js.native
 class TextInput protected ()
   extends Component[
@@ -40,7 +40,7 @@ class TextInput protected ()
   ) = this()
 }
 
-@JSImport("grommet", "TextInput")
+@JSImport("grommet/es6", "TextInput")
 @js.native
 object TextInput extends TopLevel[
       ComponentClass[

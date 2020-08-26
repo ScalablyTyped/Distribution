@@ -16,55 +16,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Crop extends js.Object {
-  var crop: js.UndefOr[H] = js.undefined
+  var crop: js.UndefOr[H] = js.native
   /**
     * @default "UTF-8"
     */
-  var encoding: js.UndefOr[`UCS-2` | ASCII7 | Latin1 | `UTF-8` | ZapfDingbats | Symbol] = js.undefined
-  var eol: js.UndefOr[unix | dos | mac] = js.undefined
-  var firstPage: js.UndefOr[Double] = js.undefined
-  var lastPage: js.UndefOr[Double] = js.undefined
+  var encoding: js.UndefOr[`UCS-2` | ASCII7 | Latin1 | `UTF-8` | ZapfDingbats | Symbol] = js.native
+  var eol: js.UndefOr[unix | dos | mac] = js.native
+  var firstPage: js.UndefOr[Double] = js.native
+  var lastPage: js.UndefOr[Double] = js.native
   /**
     * Do not change unless you know what you are doing!
     * @default "raw"
     */
-  var layout: js.UndefOr[typings.textract.textractStrings.layout | raw | htmlmeta] = js.undefined
-  var ownerPassword: js.UndefOr[String] = js.undefined
-  var resolution: js.UndefOr[Double] = js.undefined
+  var layout: js.UndefOr[typings.textract.textractStrings.layout | raw | htmlmeta] = js.native
+  var ownerPassword: js.UndefOr[String] = js.native
+  var resolution: js.UndefOr[Double] = js.native
   /**
     * @default true
     */
-  var splitPages: js.UndefOr[Boolean] = js.undefined
-  var userPassword: js.UndefOr[String] = js.undefined
+  var splitPages: js.UndefOr[Boolean] = js.native
+  var userPassword: js.UndefOr[String] = js.native
 }
 
 object Crop {
   @scala.inline
-  def apply(
-    crop: H = null,
-    encoding: `UCS-2` | ASCII7 | Latin1 | `UTF-8` | ZapfDingbats | Symbol = null,
-    eol: unix | dos | mac = null,
-    firstPage: js.UndefOr[Double] = js.undefined,
-    lastPage: js.UndefOr[Double] = js.undefined,
-    layout: layout | raw | htmlmeta = null,
-    ownerPassword: String = null,
-    resolution: js.UndefOr[Double] = js.undefined,
-    splitPages: js.UndefOr[Boolean] = js.undefined,
-    userPassword: String = null
-  ): Crop = {
+  def apply(): Crop = {
     val __obj = js.Dynamic.literal()
-    if (crop != null) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstPage)) __obj.updateDynamic("firstPage")(firstPage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastPage)) __obj.updateDynamic("lastPage")(lastPage.get.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (ownerPassword != null) __obj.updateDynamic("ownerPassword")(ownerPassword.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(splitPages)) __obj.updateDynamic("splitPages")(splitPages.get.asInstanceOf[js.Any])
-    if (userPassword != null) __obj.updateDynamic("userPassword")(userPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[Crop]
   }
+  @scala.inline
+  implicit class CropOps[Self <: Crop] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCrop(value: H): Self = this.set("crop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrop: Self = this.set("crop", js.undefined)
+    @scala.inline
+    def setEncoding(value: `UCS-2` | ASCII7 | Latin1 | `UTF-8` | ZapfDingbats | Symbol): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setEol(value: unix | dos | mac): Self = this.set("eol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEol: Self = this.set("eol", js.undefined)
+    @scala.inline
+    def setFirstPage(value: Double): Self = this.set("firstPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstPage: Self = this.set("firstPage", js.undefined)
+    @scala.inline
+    def setLastPage(value: Double): Self = this.set("lastPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastPage: Self = this.set("lastPage", js.undefined)
+    @scala.inline
+    def setLayout(value: layout | raw | htmlmeta): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setOwnerPassword(value: String): Self = this.set("ownerPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerPassword: Self = this.set("ownerPassword", js.undefined)
+    @scala.inline
+    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+    @scala.inline
+    def setSplitPages(value: Boolean): Self = this.set("splitPages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitPages: Self = this.set("splitPages", js.undefined)
+    @scala.inline
+    def setUserPassword(value: String): Self = this.set("userPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPassword: Self = this.set("userPassword", js.undefined)
+  }
+  
 }
 

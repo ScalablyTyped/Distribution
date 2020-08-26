@@ -19,11 +19,30 @@ trait SchemaMaterializedViewDefinition extends js.Object {
 
 object SchemaMaterializedViewDefinition {
   @scala.inline
-  def apply(lastRefreshTime: String = null, query: String = null): SchemaMaterializedViewDefinition = {
+  def apply(): SchemaMaterializedViewDefinition = {
     val __obj = js.Dynamic.literal()
-    if (lastRefreshTime != null) __obj.updateDynamic("lastRefreshTime")(lastRefreshTime.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMaterializedViewDefinition]
   }
+  @scala.inline
+  implicit class SchemaMaterializedViewDefinitionOps[Self <: SchemaMaterializedViewDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastRefreshTime(value: String): Self = this.set("lastRefreshTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRefreshTime: Self = this.set("lastRefreshTime", js.undefined)
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+  }
+  
 }
 

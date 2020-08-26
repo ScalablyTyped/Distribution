@@ -1,5 +1,6 @@
 package typings.pulumiAws.resolverMod
 
+import typings.pulumiAws.outputMod.appsync.ResolverCachingConfig
 import typings.pulumiAws.outputMod.appsync.ResolverPipelineConfig
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
@@ -31,6 +32,10 @@ class Resolver protected () extends CustomResource {
     */
   val arn: Output_[String] = js.native
   /**
+    * The CachingConfig.
+    */
+  val cachingConfig: Output_[js.UndefOr[ResolverCachingConfig]] = js.native
+  /**
     * The DataSource name.
     */
   val dataSource: Output_[js.UndefOr[String]] = js.native
@@ -43,7 +48,7 @@ class Resolver protected () extends CustomResource {
     */
   val kind: Output_[js.UndefOr[String]] = js.native
   /**
-    * The PipelineConfig. A `pipelineConfig` block is documented below.
+    * The PipelineConfig.
     */
   val pipelineConfig: Output_[js.UndefOr[ResolverPipelineConfig]] = js.native
   /**
@@ -71,8 +76,10 @@ object Resolver extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Resolver = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Resolver = js.native
   def get(name: String, id: Input[ID], state: ResolverState): Resolver = js.native
   def get(name: String, id: Input[ID], state: ResolverState, opts: CustomResourceOptions): Resolver = js.native
   /**

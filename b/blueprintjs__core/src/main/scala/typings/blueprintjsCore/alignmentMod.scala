@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/common/alignment", JSImport.Namespace)
 @js.native
 object alignmentMod extends js.Object {
-  /* Inlined {  CENTER  :'center',   LEFT  :'left',   RIGHT  :'right'}[keyof {  CENTER  :'center',   LEFT  :'left',   RIGHT  :'right'}] */
+  /* Inlined {  CENTER :'center',   LEFT :'left',   RIGHT :'right'}[keyof {  CENTER :'center',   LEFT :'left',   RIGHT :'right'}] */
   /* Rewritten from type alias, can be one of: 
     - typings.blueprintjsCore.blueprintjsCoreStrings.center
     - typings.blueprintjsCore.blueprintjsCoreStrings.left

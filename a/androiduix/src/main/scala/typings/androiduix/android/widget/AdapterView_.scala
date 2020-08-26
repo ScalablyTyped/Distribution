@@ -9,9 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.widget.AdapterView")
 @js.native
-abstract class AdapterView_[T /* <: Adapter */] () extends ViewGroup {
+trait AdapterView_[T /* <: Adapter */] extends ViewGroup {
   var mBlockLayoutRequests: Boolean = js.native
   var mDataChanged: Boolean = js.native
   var mDesiredFocusableInTouchModeState: js.Any = js.native

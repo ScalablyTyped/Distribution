@@ -7,68 +7,55 @@ import scala.scalajs.js.annotation._
 /**
   * These are valid for compact-format
   */
+@js.native
 trait IExpandedFilesConfig extends IFilesConfig {
   /**
     * Replace any existing extension with this value in generated {@link IExpandedFilesConfig.dest} paths.
     */
-  var ext: js.UndefOr[String] = js.undefined
+  var ext: js.UndefOr[String] = js.native
   /**
     * Remove all path parts from generated {@link IExpandedFilesConfig.dest} paths.
     */
-  var flatten: js.UndefOr[Boolean] = js.undefined
+  var flatten: js.UndefOr[Boolean] = js.native
   /**
     * This function is called for each matched src file, (after extension renaming and flattening).
     * The {@link IExpandedFilesConfig.dest} and matched {@link IExpandedFilesConfig.src} path are passed in,
     * and this function must return a new dest value.
     * If the same dest is returned more than once, each src which used it will be added to an array of sources for it.
     */
-  var rename: js.UndefOr[js.Function] = js.undefined
+  var rename: js.UndefOr[js.Function] = js.native
 }
 
 object IExpandedFilesConfig {
   @scala.inline
-  def apply(
-    cwd: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    dest: String = null,
-    dot: js.UndefOr[Boolean] = js.undefined,
-    expand: js.UndefOr[Boolean] = js.undefined,
-    ext: String = null,
-    filter: js.Any = null,
-    flatten: js.UndefOr[Boolean] = js.undefined,
-    flipNegate: js.UndefOr[Boolean] = js.undefined,
-    matchBase: js.UndefOr[Boolean] = js.undefined,
-    nobrace: js.UndefOr[Boolean] = js.undefined,
-    nocase: js.UndefOr[Boolean] = js.undefined,
-    nocomment: js.UndefOr[Boolean] = js.undefined,
-    noext: js.UndefOr[Boolean] = js.undefined,
-    noglobstar: js.UndefOr[Boolean] = js.undefined,
-    nonegate: js.UndefOr[Boolean] = js.undefined,
-    nonull: js.UndefOr[Boolean] = js.undefined,
-    rename: js.Function = null,
-    src: js.Array[String] = null
-  ): IExpandedFilesConfig = {
+  def apply(): IExpandedFilesConfig = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.get.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipNegate)) __obj.updateDynamic("flipNegate")(flipNegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchBase)) __obj.updateDynamic("matchBase")(matchBase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nobrace)) __obj.updateDynamic("nobrace")(nobrace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocase)) __obj.updateDynamic("nocase")(nocase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocomment)) __obj.updateDynamic("nocomment")(nocomment.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noext)) __obj.updateDynamic("noext")(noext.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noglobstar)) __obj.updateDynamic("noglobstar")(noglobstar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonegate)) __obj.updateDynamic("nonegate")(nonegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonull)) __obj.updateDynamic("nonull")(nonull.get.asInstanceOf[js.Any])
-    if (rename != null) __obj.updateDynamic("rename")(rename.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExpandedFilesConfig]
   }
+  @scala.inline
+  implicit class IExpandedFilesConfigOps[Self <: IExpandedFilesConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExt(value: String): Self = this.set("ext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExt: Self = this.set("ext", js.undefined)
+    @scala.inline
+    def setFlatten(value: Boolean): Self = this.set("flatten", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlatten: Self = this.set("flatten", js.undefined)
+    @scala.inline
+    def setRename(value: js.Function): Self = this.set("rename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRename: Self = this.set("rename", js.undefined)
+  }
+  
 }
 

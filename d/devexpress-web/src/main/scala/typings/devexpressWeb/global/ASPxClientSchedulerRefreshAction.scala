@@ -10,21 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ASPxClientSchedulerRefreshAction")
 @js.native
 class ASPxClientSchedulerRefreshAction ()
-  extends typings.devexpressWeb.ASPxClientSchedulerRefreshAction {
-  /**
-    * Gets the value of the action parameter which initiates reloading of the main ASPxScheduler control and its satellite View controls.
-    */
-  /* CompleteClass */
-  override var ActiveViewTypeChanged: Double = js.native
-  /**
-    * Gets the value of the action parameter which initiates a simple reload of the control.
-    */
-  /* CompleteClass */
-  override var None: Double = js.native
-  /**
-    * Gets the value of the action parameter which initiates reloading of the main ASPxScheduler control and its data-dependent satellites.
-    */
-  /* CompleteClass */
-  override var VisibleIntervalChanged: Double = js.native
-}
+  extends typings.devexpressWeb.ASPxClientSchedulerRefreshAction
 

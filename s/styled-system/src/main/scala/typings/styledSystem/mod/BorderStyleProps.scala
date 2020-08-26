@@ -1,63 +1,151 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.BorderBottomStyleProperty
-import typings.csstype.mod.BorderLeftStyleProperty
-import typings.csstype.mod.BorderRightStyleProperty
-import typings.csstype.mod.BorderStyleProperty
-import typings.csstype.mod.BorderTopStyleProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BorderStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
   /**
     * The border-bottom-style CSS property sets the line style of an element's bottom border.
     *
     * [MDN * reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-style)
     */
-  var borderBottomStyle: js.UndefOr[ResponsiveValue[BorderBottomStyleProperty, ThemeType]] = js.undefined
+  var borderBottomStyle: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BorderBottomStyleProperty */ _, 
+      ThemeType
+    ]
+  ] = js.native
   /**
     * The border-left-style CSS property sets the line style of an element's left border.
     *
     * [MDN * reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-style)
     */
-  var borderLeftStyle: js.UndefOr[ResponsiveValue[BorderLeftStyleProperty, ThemeType]] = js.undefined
+  var borderLeftStyle: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BorderLeftStyleProperty */ _, 
+      ThemeType
+    ]
+  ] = js.native
   /**
     * The border-right-style CSS property sets the line style of an element's right border.
     *
     * [MDN * reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-style)
     */
-  var borderRightStyle: js.UndefOr[ResponsiveValue[BorderRightStyleProperty, ThemeType]] = js.undefined
+  var borderRightStyle: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BorderRightStyleProperty */ _, 
+      ThemeType
+    ]
+  ] = js.native
   /**
     * The border-style shorthand CSS property sets the style of all sides of an element's border.
     *
     * [MDN * reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style)
     */
-  var borderStyle: js.UndefOr[ResponsiveValue[BorderStyleProperty, ThemeType]] = js.undefined
+  var borderStyle: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BorderStyleProperty */ _, 
+      ThemeType
+    ]
+  ] = js.native
   /**
     * The border-top-style CSS property sets the line style of an element's top border.
     *
     * [MDN * reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-style)
     */
-  var borderTopStyle: js.UndefOr[ResponsiveValue[BorderTopStyleProperty, ThemeType]] = js.undefined
+  var borderTopStyle: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BorderTopStyleProperty */ _, 
+      ThemeType
+    ]
+  ] = js.native
 }
 
 object BorderStyleProps {
   @scala.inline
-  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
-    borderBottomStyle: js.UndefOr[Null | (ResponsiveValue[BorderBottomStyleProperty, ThemeType])] = js.undefined,
-    borderLeftStyle: js.UndefOr[Null | (ResponsiveValue[BorderLeftStyleProperty, ThemeType])] = js.undefined,
-    borderRightStyle: js.UndefOr[Null | (ResponsiveValue[BorderRightStyleProperty, ThemeType])] = js.undefined,
-    borderStyle: js.UndefOr[Null | (ResponsiveValue[BorderStyleProperty, ThemeType])] = js.undefined,
-    borderTopStyle: js.UndefOr[Null | (ResponsiveValue[BorderTopStyleProperty, ThemeType])] = js.undefined
-  ): BorderStyleProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](): BorderStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(borderBottomStyle)) __obj.updateDynamic("borderBottomStyle")(borderBottomStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderLeftStyle)) __obj.updateDynamic("borderLeftStyle")(borderLeftStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderRightStyle)) __obj.updateDynamic("borderRightStyle")(borderRightStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderStyle)) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderTopStyle)) __obj.updateDynamic("borderTopStyle")(borderTopStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderStyleProps[ThemeType]]
   }
+  @scala.inline
+  implicit class BorderStylePropsOps[Self <: BorderStyleProps[_], /* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType] (val x: Self with BorderStyleProps[ThemeType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderBottomStyleVarargs(value: (js.Any | Null)*): Self = this.set("borderBottomStyle", js.Array(value :_*))
+    @scala.inline
+    def setBorderBottomStyle(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BorderBottomStyleProperty */ _, 
+          ThemeType
+        ]
+    ): Self = this.set("borderBottomStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderBottomStyle: Self = this.set("borderBottomStyle", js.undefined)
+    @scala.inline
+    def setBorderBottomStyleNull: Self = this.set("borderBottomStyle", null)
+    @scala.inline
+    def setBorderLeftStyleVarargs(value: (js.Any | Null)*): Self = this.set("borderLeftStyle", js.Array(value :_*))
+    @scala.inline
+    def setBorderLeftStyle(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BorderLeftStyleProperty */ _, 
+          ThemeType
+        ]
+    ): Self = this.set("borderLeftStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderLeftStyle: Self = this.set("borderLeftStyle", js.undefined)
+    @scala.inline
+    def setBorderLeftStyleNull: Self = this.set("borderLeftStyle", null)
+    @scala.inline
+    def setBorderRightStyleVarargs(value: (js.Any | Null)*): Self = this.set("borderRightStyle", js.Array(value :_*))
+    @scala.inline
+    def setBorderRightStyle(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BorderRightStyleProperty */ _, 
+          ThemeType
+        ]
+    ): Self = this.set("borderRightStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderRightStyle: Self = this.set("borderRightStyle", js.undefined)
+    @scala.inline
+    def setBorderRightStyleNull: Self = this.set("borderRightStyle", null)
+    @scala.inline
+    def setBorderStyleVarargs(value: (js.Any | Null)*): Self = this.set("borderStyle", js.Array(value :_*))
+    @scala.inline
+    def setBorderStyle(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BorderStyleProperty */ _, 
+          ThemeType
+        ]
+    ): Self = this.set("borderStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderStyle: Self = this.set("borderStyle", js.undefined)
+    @scala.inline
+    def setBorderStyleNull: Self = this.set("borderStyle", null)
+    @scala.inline
+    def setBorderTopStyleVarargs(value: (js.Any | Null)*): Self = this.set("borderTopStyle", js.Array(value :_*))
+    @scala.inline
+    def setBorderTopStyle(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BorderTopStyleProperty */ _, 
+          ThemeType
+        ]
+    ): Self = this.set("borderTopStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderTopStyle: Self = this.set("borderTopStyle", js.undefined)
+    @scala.inline
+    def setBorderTopStyleNull: Self = this.set("borderTopStyle", null)
+  }
+  
 }
 

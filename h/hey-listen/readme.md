@@ -12,7 +12,7 @@ Warning and invariant dev-ex messaging.
 | Keywords           | warning, invariant |
 | # releases         | 11 |
 | # dependents       | 23 |
-| # downloads        | 4134105 |
+| # downloads        | 4354367 |
 | # stars            | 0 |
 
 ## Links

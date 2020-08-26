@@ -103,6 +103,7 @@ trait IUtilMisc extends js.Object {
     * @param [options] Options object
     */
   def groupSVGElements(elements: js.Array[_]): Object | Group = js.native
+  def groupSVGElements(elements: js.Array[_], options: js.UndefOr[scala.Nothing], path: String): Object | Group = js.native
   def groupSVGElements(elements: js.Array[_], options: js.Any): Object | Group = js.native
   def groupSVGElements(elements: js.Array[_], options: js.Any, path: String): Object | Group = js.native
   /**
@@ -127,6 +128,12 @@ trait IUtilMisc extends js.Object {
     * @param [crossOrigin] crossOrigin value to set image element to
     */
   def loadImage(url: String, callback: js.Function1[/* image */ HTMLImageElement, Unit]): Unit = js.native
+  def loadImage(
+    url: String,
+    callback: js.Function1[/* image */ HTMLImageElement, Unit],
+    context: js.UndefOr[scala.Nothing],
+    crossOrigin: String
+  ): Unit = js.native
   def loadImage(url: String, callback: js.Function1[/* image */ HTMLImageElement, Unit], context: js.Any): Unit = js.native
   def loadImage(
     url: String,

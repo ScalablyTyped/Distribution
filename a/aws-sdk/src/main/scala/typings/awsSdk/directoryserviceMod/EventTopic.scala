@@ -30,20 +30,42 @@ trait EventTopic extends js.Object {
 
 object EventTopic {
   @scala.inline
-  def apply(
-    CreatedDateTime: CreatedDateTime = null,
-    DirectoryId: DirectoryId = null,
-    Status: TopicStatus = null,
-    TopicArn: TopicArn = null,
-    TopicName: TopicName = null
-  ): EventTopic = {
+  def apply(): EventTopic = {
     val __obj = js.Dynamic.literal()
-    if (CreatedDateTime != null) __obj.updateDynamic("CreatedDateTime")(CreatedDateTime.asInstanceOf[js.Any])
-    if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TopicArn != null) __obj.updateDynamic("TopicArn")(TopicArn.asInstanceOf[js.Any])
-    if (TopicName != null) __obj.updateDynamic("TopicName")(TopicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTopic]
   }
+  @scala.inline
+  implicit class EventTopicOps[Self <: EventTopic] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedDateTime(value: CreatedDateTime): Self = this.set("CreatedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDateTime: Self = this.set("CreatedDateTime", js.undefined)
+    @scala.inline
+    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    @scala.inline
+    def setStatus(value: TopicStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTopicArn(value: TopicArn): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
+    @scala.inline
+    def setTopicName(value: TopicName): Self = this.set("TopicName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicName: Self = this.set("TopicName", js.undefined)
+  }
+  
 }
 

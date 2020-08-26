@@ -8,6 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Json
   extends /* x */ StringDictionary[js.UndefOr[JsonData]]
      with _JsonData
@@ -15,9 +16,8 @@ trait Json
 
 object Json {
   @scala.inline
-  def apply(StringDictionary: /* x */ StringDictionary[js.UndefOr[JsonData]] = null): Json = {
+  def apply(): Json = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Json]
   }
 }

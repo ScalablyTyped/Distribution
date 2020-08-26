@@ -11,8 +11,8 @@ A document head manager for React
 | Full name          | react-helmet |
 | Keywords           | react-helmet, nfl, react, document, head, title, meta, link, script, base, noscript, style |
 | # releases         | 3 |
-| # dependents       | 1188 |
-| # downloads        | 31640556 |
+| # dependents       | 1246 |
+| # downloads        | 32592242 |
 | # stars            | 63 |
 
 ## Links

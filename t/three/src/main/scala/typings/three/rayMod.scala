@@ -15,6 +15,7 @@ object rayMod extends js.Object {
   @js.native
   class Ray () extends js.Object {
     def this(origin: Vector3) = this()
+    def this(origin: js.UndefOr[scala.Nothing], direction: Vector3) = this()
     def this(origin: Vector3, direction: Vector3) = this()
     var direction: Vector3 = js.native
     var origin: Vector3 = js.native
@@ -24,6 +25,12 @@ object rayMod extends js.Object {
     def copy(ray: Ray): this.type = js.native
     def distanceSqToPoint(point: Vector3): Double = js.native
     def distanceSqToSegment(v0: Vector3, v1: Vector3): Double = js.native
+    def distanceSqToSegment(
+      v0: Vector3,
+      v1: Vector3,
+      optionalPointOnRay: js.UndefOr[scala.Nothing],
+      optionalPointOnSegment: Vector3
+    ): Double = js.native
     def distanceSqToSegment(v0: Vector3, v1: Vector3, optionalPointOnRay: Vector3): Double = js.native
     def distanceSqToSegment(v0: Vector3, v1: Vector3, optionalPointOnRay: Vector3, optionalPointOnSegment: Vector3): Double = js.native
     def distanceToPlane(plane: Plane): Double = js.native

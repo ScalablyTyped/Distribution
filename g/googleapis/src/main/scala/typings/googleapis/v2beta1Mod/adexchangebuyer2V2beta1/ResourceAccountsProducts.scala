@@ -28,6 +28,7 @@ class ResourceAccountsProducts protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaProduct] = js.native
   def get(callback: BodyResponseCallback[SchemaProduct]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProduct] = js.native
   def get(params: ParamsResourceAccountsProductsGet): GaxiosPromise[SchemaProduct] = js.native
   def get(params: ParamsResourceAccountsProductsGet, callback: BodyResponseCallback[SchemaProduct]): Unit = js.native
   def get(
@@ -59,6 +60,7 @@ class ResourceAccountsProducts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListProductsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListProductsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListProductsResponse] = js.native
   def list(params: ParamsResourceAccountsProductsList): GaxiosPromise[SchemaListProductsResponse] = js.native
   def list(
     params: ParamsResourceAccountsProductsList,

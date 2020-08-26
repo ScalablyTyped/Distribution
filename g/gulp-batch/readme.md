@@ -10,9 +10,9 @@ Event batcher for gulp-watcher
 | ------------------ | :-------------: |
 | Full name          | gulp-batch |
 | Keywords           | gulp, batch, throttle, debounce, gulpfriendly, watch, mocha |
-| # releases         | 1 |
-| # dependents       | 57 |
-| # downloads        | 1300379 |
+| # releases         | 0 |
+| # dependents       | 56 |
+| # downloads        | 1271101 |
 | # stars            | 7 |
 
 ## Links

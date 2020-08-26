@@ -1,9 +1,6 @@
 package typings.durandal
 
 import typings.durandal.anon.Callback
-import typings.knockout.KnockoutComputed
-import typings.knockout.KnockoutObservable
-import typings.knockout.KnockoutObservableArray
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,13 +12,11 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     * An observable surfacing the active routing instruction that is currently being processed or has recently finished processing.
     * The instruction object has `config`, `fragment`, `queryString`, `params` and `queryParams` properties.
     */
-  @JSName("activeInstruction")
-  var activeInstruction_Original: KnockoutObservable[DurandalRouteInstruction] = js.native
+  var activeInstruction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<DurandalRouteInstruction> */ js.Any = js.native
   /**
     * The active item/screen based on the current navigation state.
     */
-  @JSName("activeItem")
-  var activeItem_Original: DurandalActivator[_] = js.native
+  var activeItem: DurandalActivator[_] = js.native
   /**
     * Inspects routes and modules before activation. Can be used to protect access by cancelling navigation or redirecting.
     * @param {object} instance The module instance that is about to be activated by the router.
@@ -42,13 +37,11 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
   /**
     * Indicates that the router (or a child router) is currently in the process of navigating.
     */
-  @JSName("isNavigating")
-  var isNavigating_Original: KnockoutComputed[Boolean] = js.native
+  var isNavigating: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any = js.native
   /**
     * The route configurations that have been designated as displayable in a nav ui (nav:true).
     */
-  @JSName("navigationModel")
-  var navigationModel_Original: KnockoutObservableArray[DurandalRouteConfiguration] = js.native
+  var navigationModel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<DurandalRouteConfiguration> */ js.Any = js.native
   /**
     * Parent router of the current child router.
     */
@@ -57,24 +50,6 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     * The route configs that are registered.
     */
   var routes: js.Array[DurandalRouteConfiguration] = js.native
-  /**
-    * An observable surfacing the active routing instruction that is currently being processed or has recently finished processing.
-    * The instruction object has `config`, `fragment`, `queryString`, `params` and `queryParams` properties.
-    */
-  def activeInstruction(): DurandalRouteInstruction = js.native
-  /**
-    * An observable surfacing the active routing instruction that is currently being processed or has recently finished processing.
-    * The instruction object has `config`, `fragment`, `queryString`, `params` and `queryParams` properties.
-    */
-  def activeInstruction(value: DurandalRouteInstruction): Unit = js.native
-  /**
-    * The active item/screen based on the current navigation state.
-    */
-  def activeItem(): js.Any = js.native
-  /**
-    * The active item/screen based on the current navigation state.
-    */
-  def activeItem(value: js.Any): Unit = js.native
   /**
     * Builds an observable array designed to bind a navigation UI to. The model will exist in the `navigationModel` property.
     * @param {number} defaultOrder The default order to use for navigation visible routes that don't specify an order. The defualt is 100.
@@ -106,14 +81,6 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     * @returns {Router} The child router.
     */
   def createChildRouter(): T = js.native
-  /**
-    * Indicates that the router (or a child router) is currently in the process of navigating.
-    */
-  def isNavigating(): Boolean = js.native
-  /**
-    * Indicates that the router (or a child router) is currently in the process of navigating.
-    */
-  def isNavigating(value: Boolean): Unit = js.native
   /**
     * Attempt to load the specified URL fragment. If a route succeeds with a match, returns `true`. If no defined routes matches the fragment, returns `false`.
     * @param {string} fragment The URL fragment to find a match for.
@@ -233,14 +200,6 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
     * Navigates back in the browser history.
     */
   def navigateBack(): Unit = js.native
-  /**
-    * The route configurations that have been designated as displayable in a nav ui (nav:true).
-    */
-  def navigationModel(): js.Array[DurandalRouteConfiguration] = js.native
-  /**
-    * The route configurations that have been designated as displayable in a nav ui (nav:true).
-    */
-  def navigationModel(value: js.Array[DurandalRouteConfiguration]): Unit = js.native
   /**
     * Parses a query string into an object.
     * @param {string} queryString The query string to parse.

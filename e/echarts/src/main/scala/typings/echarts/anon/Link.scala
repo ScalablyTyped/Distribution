@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Link extends js.Object {
   /**
     * child nodes, recursive definition, configurations are the
@@ -15,7 +16,7 @@ trait Link extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent.children
     */
-  var children: js.UndefOr[js.Array[_]] = js.undefined
+  var children: js.UndefOr[js.Array[_]] = js.native
   /**
     * Enable hyperlink jump when clicking on node.
     * It is avaliable when
@@ -29,7 +30,7 @@ trait Link extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent.link
     */
-  var link: js.UndefOr[String] = js.undefined
+  var link: js.UndefOr[String] = js.native
   /**
     * The same meaning as `target` in `html` `<a>` label, See
     * [series-treemap.data.link](https://echarts.apache.org/en/option.html#series-treemap.data.link)
@@ -40,30 +41,52 @@ trait Link extends js.Object {
     * "blank"
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent.target
     */
-  var target: js.UndefOr[String] = js.undefined
+  var target: js.UndefOr[String] = js.native
   /**
     * tooltip settings in this series data.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent.tooltip
     */
-  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.native
 }
 
 object Link {
   @scala.inline
-  def apply(
-    children: js.Array[_] = null,
-    link: String = null,
-    target: String = null,
-    tooltip: BaseTooltip = null
-  ): Link = {
+  def apply(): Link = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Link]
   }
+  @scala.inline
+  implicit class LinkOps[Self <: Link] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildrenVarargs(value: js.Any*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[_]): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+  }
+  
 }
 

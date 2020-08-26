@@ -4,35 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetPutOptions extends ItemInfo {
-  var maxAge: js.UndefOr[Double] = js.undefined
-  var onExpire: js.UndefOr[OnExpireCallback] = js.undefined
-  var storeOnReject: js.UndefOr[Boolean] = js.undefined
-  var storeOnResolve: js.UndefOr[Boolean] = js.undefined
+  var maxAge: js.UndefOr[Double] = js.native
+  var onExpire: js.UndefOr[OnExpireCallback] = js.native
+  var storeOnReject: js.UndefOr[Boolean] = js.native
+  var storeOnResolve: js.UndefOr[Boolean] = js.native
 }
 
 object GetPutOptions {
   @scala.inline
-  def apply(
-    accessed: js.UndefOr[Double] = js.undefined,
-    created: js.UndefOr[Double] = js.undefined,
-    expires: js.UndefOr[Double] = js.undefined,
-    isExpired: js.UndefOr[Boolean] = js.undefined,
-    maxAge: js.UndefOr[Double] = js.undefined,
-    onExpire: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit = null,
-    storeOnReject: js.UndefOr[Boolean] = js.undefined,
-    storeOnResolve: js.UndefOr[Boolean] = js.undefined
-  ): GetPutOptions = {
+  def apply(): GetPutOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accessed)) __obj.updateDynamic("accessed")(accessed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(created)) __obj.updateDynamic("created")(created.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpired)) __obj.updateDynamic("isExpired")(isExpired.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
-    if (onExpire != null) __obj.updateDynamic("onExpire")(js.Any.fromFunction3(onExpire))
-    if (!js.isUndefined(storeOnReject)) __obj.updateDynamic("storeOnReject")(storeOnReject.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(storeOnResolve)) __obj.updateDynamic("storeOnResolve")(storeOnResolve.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPutOptions]
   }
+  @scala.inline
+  implicit class GetPutOptionsOps[Self <: GetPutOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    @scala.inline
+    def setOnExpire(value: (/* key */ String, /* value */ js.Any, /* done */ js.UndefOr[js.Function]) => Unit): Self = this.set("onExpire", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnExpire: Self = this.set("onExpire", js.undefined)
+    @scala.inline
+    def setStoreOnReject(value: Boolean): Self = this.set("storeOnReject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreOnReject: Self = this.set("storeOnReject", js.undefined)
+    @scala.inline
+    def setStoreOnResolve(value: Boolean): Self = this.set("storeOnResolve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreOnResolve: Self = this.set("storeOnResolve", js.undefined)
+  }
+  
 }
 

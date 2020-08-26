@@ -19,7 +19,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined typescript.typescript.CallExpression & {  expression  :typescript.typescript.Token<typescript.typescript.SyntaxKind.ImportKeyword> | typescript.typescript.Identifier & {  text  :'require'},   arguments  :[typescript.typescript.Expression]} */
+/* Inlined typescript.typescript.CallExpression & {  expression :typescript.typescript.Token<typescript.typescript.SyntaxKind.ImportKeyword> | typescript.typescript.Identifier & {  text :'require'},   arguments :[typescript.typescript.Expression]} */
 @js.native
 trait CallExpressionexpressionT extends _ImportLike {
   var _declarationBrand: js.Any = js.native
@@ -62,6 +62,7 @@ trait CallExpressionexpressionT extends _ImportLike {
   def getLeadingTriviaWidth(sourceFile: SourceFile): Double = js.native
   def getSourceFile(): SourceFile = js.native
   def getStart(): Double = js.native
+  def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
   def getStart(sourceFile: SourceFile): Double = js.native
   def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
   def getText(): String = js.native

@@ -27,16 +27,6 @@ class ProviderAst protected () extends TemplateAst {
   var multiProvider: Boolean = js.native
   var providerType: ProviderAstType = js.native
   var providers: js.Array[CompileProviderMetadata] = js.native
-  /**
-    * The source span from which this node was parsed.
-    */
-  /* CompleteClass */
-  override var sourceSpan: ParseSourceSpan = js.native
   var token: CompileTokenMetadata = js.native
-  /**
-    * Visit this node and possibly transform it.
-    */
-  /* CompleteClass */
-  override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
 }
 

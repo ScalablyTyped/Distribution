@@ -25,6 +25,7 @@ object mod extends js.Object {
       * @return The generated pseudo-random number.
       */
     def next(): Double = js.native
+    def next(min: js.UndefOr[scala.Nothing], pseudoMax: Double): Double = js.native
     def next(min: Double): Double = js.native
     def next(min: Double, pseudoMax: Double): Double = js.native
     /**
@@ -61,6 +62,7 @@ object mod extends js.Object {
       * @return The generated pseudo-random number.
       */
     def nextInt(): Double = js.native
+    def nextInt(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
     def nextInt(min: Double): Double = js.native
     def nextInt(min: Double, max: Double): Double = js.native
     /**
@@ -75,6 +77,7 @@ object mod extends js.Object {
       * @return The generated string sequence.
       */
     def nextString(): String = js.native
+    def nextString(length: js.UndefOr[scala.Nothing], chars: String): String = js.native
     def nextString(length: Double): String = js.native
     def nextString(length: Double, chars: String): String = js.native
     /**

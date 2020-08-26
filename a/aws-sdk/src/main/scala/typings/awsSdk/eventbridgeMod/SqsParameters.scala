@@ -14,10 +14,26 @@ trait SqsParameters extends js.Object {
 
 object SqsParameters {
   @scala.inline
-  def apply(MessageGroupId: MessageGroupId = null): SqsParameters = {
+  def apply(): SqsParameters = {
     val __obj = js.Dynamic.literal()
-    if (MessageGroupId != null) __obj.updateDynamic("MessageGroupId")(MessageGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqsParameters]
   }
+  @scala.inline
+  implicit class SqsParametersOps[Self <: SqsParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessageGroupId(value: MessageGroupId): Self = this.set("MessageGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageGroupId: Self = this.set("MessageGroupId", js.undefined)
+  }
+  
 }
 

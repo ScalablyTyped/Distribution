@@ -17,7 +17,11 @@ class Group ()
   extends Object
      with ICollection[Group] {
   def this(objects: js.Array[Object]) = this()
+  def this(objects: js.UndefOr[scala.Nothing], options: IGroupOptions) = this()
   def this(objects: js.Array[Object], options: IGroupOptions) = this()
+  def this(objects: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], isAlreadyGrouped: Boolean) = this()
+  def this(objects: js.UndefOr[scala.Nothing], options: IGroupOptions, isAlreadyGrouped: Boolean) = this()
+  def this(objects: js.Array[Object], options: js.UndefOr[scala.Nothing], isAlreadyGrouped: Boolean) = this()
   def this(objects: js.Array[Object], options: IGroupOptions, isAlreadyGrouped: Boolean) = this()
   /**
     * Indicates if click, mouseover, mouseout events & hoverCursor should also check for subtargets

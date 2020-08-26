@@ -45,12 +45,36 @@ trait SchemaGoogleApiHttpBody extends js.Object {
 
 object SchemaGoogleApiHttpBody {
   @scala.inline
-  def apply(contentType: String = null, data: String = null, extensions: js.Array[StringDictionary[_]] = null): SchemaGoogleApiHttpBody = {
+  def apply(): SchemaGoogleApiHttpBody = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleApiHttpBody]
   }
+  @scala.inline
+  implicit class SchemaGoogleApiHttpBodyOps[Self <: SchemaGoogleApiHttpBody] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setExtensionsVarargs(value: StringDictionary[js.Any]*): Self = this.set("extensions", js.Array(value :_*))
+    @scala.inline
+    def setExtensions(value: js.Array[StringDictionary[_]]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtensions: Self = this.set("extensions", js.undefined)
+  }
+  
 }
 

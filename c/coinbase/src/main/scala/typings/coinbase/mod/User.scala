@@ -54,11 +54,6 @@ class User () extends Resource {
     */
   var profile_url: js.UndefOr[String] = js.native
   /**
-    * Resource type
-    */
-  /* CompleteClass */
-  override var resource: ResourceType = js.native
-  /**
     * Resource type, constant "user"
     */
   @JSName("resource")

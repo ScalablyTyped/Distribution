@@ -12,7 +12,7 @@ An express-session Store for Azure's DocumentDB NoSQL database service.
 | Keywords           | documentdb, express-session, express, session, azure |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 4742 |
+| # downloads        | 4798 |
 | # stars            | 1 |
 
 ## Links

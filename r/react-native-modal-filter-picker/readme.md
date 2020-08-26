@@ -10,9 +10,9 @@ Cross-platform modal picker for React Native which supports keyword filtering, c
 | ------------------ | :-------------: |
 | Full name          | react-native-modal-filter-picker |
 | Keywords           | react, native, react-native, react-component, ios, android, dropdown, popover, select, modal, picker, filter, render |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 19549 |
+| # downloads        | 19446 |
 | # stars            | 0 |
 
 ## Links

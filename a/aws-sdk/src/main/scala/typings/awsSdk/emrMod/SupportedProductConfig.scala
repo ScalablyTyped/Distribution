@@ -18,11 +18,32 @@ trait SupportedProductConfig extends js.Object {
 
 object SupportedProductConfig {
   @scala.inline
-  def apply(Args: XmlStringList = null, Name: XmlStringMaxLen256 = null): SupportedProductConfig = {
+  def apply(): SupportedProductConfig = {
     val __obj = js.Dynamic.literal()
-    if (Args != null) __obj.updateDynamic("Args")(Args.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportedProductConfig]
   }
+  @scala.inline
+  implicit class SupportedProductConfigOps[Self <: SupportedProductConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: XmlString*): Self = this.set("Args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: XmlStringList): Self = this.set("Args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("Args", js.undefined)
+    @scala.inline
+    def setName(value: XmlStringMaxLen256): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

@@ -71,48 +71,98 @@ trait MLModel extends js.Object {
 
 object MLModel {
   @scala.inline
-  def apply(
-    Algorithm: Algorithm = null,
-    ComputeTime: js.UndefOr[LongType] = js.undefined,
-    CreatedAt: EpochTime = null,
-    CreatedByIamUser: AwsUserArn = null,
-    EndpointInfo: RealtimeEndpointInfo = null,
-    FinishedAt: EpochTime = null,
-    InputDataLocationS3: S3Url = null,
-    LastUpdatedAt: EpochTime = null,
-    MLModelId: EntityId = null,
-    MLModelType: MLModelType = null,
-    Message: Message = null,
-    Name: MLModelName = null,
-    ScoreThreshold: js.UndefOr[ScoreThreshold] = js.undefined,
-    ScoreThresholdLastUpdatedAt: EpochTime = null,
-    SizeInBytes: js.UndefOr[LongType] = js.undefined,
-    StartedAt: EpochTime = null,
-    Status: EntityStatus = null,
-    TrainingDataSourceId: EntityId = null,
-    TrainingParameters: TrainingParameters = null
-  ): MLModel = {
+  def apply(): MLModel = {
     val __obj = js.Dynamic.literal()
-    if (Algorithm != null) __obj.updateDynamic("Algorithm")(Algorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(ComputeTime)) __obj.updateDynamic("ComputeTime")(ComputeTime.get.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (CreatedByIamUser != null) __obj.updateDynamic("CreatedByIamUser")(CreatedByIamUser.asInstanceOf[js.Any])
-    if (EndpointInfo != null) __obj.updateDynamic("EndpointInfo")(EndpointInfo.asInstanceOf[js.Any])
-    if (FinishedAt != null) __obj.updateDynamic("FinishedAt")(FinishedAt.asInstanceOf[js.Any])
-    if (InputDataLocationS3 != null) __obj.updateDynamic("InputDataLocationS3")(InputDataLocationS3.asInstanceOf[js.Any])
-    if (LastUpdatedAt != null) __obj.updateDynamic("LastUpdatedAt")(LastUpdatedAt.asInstanceOf[js.Any])
-    if (MLModelId != null) __obj.updateDynamic("MLModelId")(MLModelId.asInstanceOf[js.Any])
-    if (MLModelType != null) __obj.updateDynamic("MLModelType")(MLModelType.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScoreThreshold)) __obj.updateDynamic("ScoreThreshold")(ScoreThreshold.get.asInstanceOf[js.Any])
-    if (ScoreThresholdLastUpdatedAt != null) __obj.updateDynamic("ScoreThresholdLastUpdatedAt")(ScoreThresholdLastUpdatedAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizeInBytes)) __obj.updateDynamic("SizeInBytes")(SizeInBytes.get.asInstanceOf[js.Any])
-    if (StartedAt != null) __obj.updateDynamic("StartedAt")(StartedAt.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TrainingDataSourceId != null) __obj.updateDynamic("TrainingDataSourceId")(TrainingDataSourceId.asInstanceOf[js.Any])
-    if (TrainingParameters != null) __obj.updateDynamic("TrainingParameters")(TrainingParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[MLModel]
   }
+  @scala.inline
+  implicit class MLModelOps[Self <: MLModel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithm(value: Algorithm): Self = this.set("Algorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithm: Self = this.set("Algorithm", js.undefined)
+    @scala.inline
+    def setComputeTime(value: LongType): Self = this.set("ComputeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeTime: Self = this.set("ComputeTime", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: EpochTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setCreatedByIamUser(value: AwsUserArn): Self = this.set("CreatedByIamUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedByIamUser: Self = this.set("CreatedByIamUser", js.undefined)
+    @scala.inline
+    def setEndpointInfo(value: RealtimeEndpointInfo): Self = this.set("EndpointInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointInfo: Self = this.set("EndpointInfo", js.undefined)
+    @scala.inline
+    def setFinishedAt(value: EpochTime): Self = this.set("FinishedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinishedAt: Self = this.set("FinishedAt", js.undefined)
+    @scala.inline
+    def setInputDataLocationS3(value: S3Url): Self = this.set("InputDataLocationS3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDataLocationS3: Self = this.set("InputDataLocationS3", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: EpochTime): Self = this.set("LastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("LastUpdatedAt", js.undefined)
+    @scala.inline
+    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMLModelId: Self = this.set("MLModelId", js.undefined)
+    @scala.inline
+    def setMLModelType(value: MLModelType): Self = this.set("MLModelType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMLModelType: Self = this.set("MLModelType", js.undefined)
+    @scala.inline
+    def setMessage(value: Message): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setName(value: MLModelName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setScoreThreshold(value: ScoreThreshold): Self = this.set("ScoreThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScoreThreshold: Self = this.set("ScoreThreshold", js.undefined)
+    @scala.inline
+    def setScoreThresholdLastUpdatedAt(value: EpochTime): Self = this.set("ScoreThresholdLastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScoreThresholdLastUpdatedAt: Self = this.set("ScoreThresholdLastUpdatedAt", js.undefined)
+    @scala.inline
+    def setSizeInBytes(value: LongType): Self = this.set("SizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeInBytes: Self = this.set("SizeInBytes", js.undefined)
+    @scala.inline
+    def setStartedAt(value: EpochTime): Self = this.set("StartedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedAt: Self = this.set("StartedAt", js.undefined)
+    @scala.inline
+    def setStatus(value: EntityStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTrainingDataSourceId(value: EntityId): Self = this.set("TrainingDataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingDataSourceId: Self = this.set("TrainingDataSourceId", js.undefined)
+    @scala.inline
+    def setTrainingParameters(value: TrainingParameters): Self = this.set("TrainingParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingParameters: Self = this.set("TrainingParameters", js.undefined)
+  }
+  
 }
 

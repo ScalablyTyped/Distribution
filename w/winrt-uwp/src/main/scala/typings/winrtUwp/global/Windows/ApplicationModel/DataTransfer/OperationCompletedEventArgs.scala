@@ -8,11 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs")
 @js.native
 abstract class OperationCompletedEventArgs ()
-  extends typings.winrtUwp.Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs {
-  /* CompleteClass */
-  override var acceptedFormatId: js.Any = js.native
-   /* unmapped type */ /** Specifies the operation that the target app completed. */
-  /* CompleteClass */
-  override var operation: typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackageOperation = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs
 

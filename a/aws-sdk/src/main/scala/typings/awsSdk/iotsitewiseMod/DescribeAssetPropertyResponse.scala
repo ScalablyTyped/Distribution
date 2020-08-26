@@ -30,5 +30,26 @@ object DescribeAssetPropertyResponse {
     val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any], assetModelId = assetModelId.asInstanceOf[js.Any], assetName = assetName.asInstanceOf[js.Any], assetProperty = assetProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAssetPropertyResponse]
   }
+  @scala.inline
+  implicit class DescribeAssetPropertyResponseOps[Self <: DescribeAssetPropertyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetId(value: ID): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssetModelId(value: ID): Self = this.set("assetModelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssetName(value: Name): Self = this.set("assetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssetProperty(value: Property): Self = this.set("assetProperty", value.asInstanceOf[js.Any])
+  }
+  
 }
 

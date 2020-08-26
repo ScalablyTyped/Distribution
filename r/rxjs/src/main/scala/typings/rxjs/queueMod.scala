@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object queueMod extends js.Object {
   val queue: QueueScheduler = js.native
+  val queueScheduler: QueueScheduler = js.native
 }
 

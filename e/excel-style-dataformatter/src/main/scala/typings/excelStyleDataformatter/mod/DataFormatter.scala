@@ -24,11 +24,11 @@ trait DataFormatter extends js.Object {
     * @param locale
     */
   def setLocale(locale: String): Unit = js.native
-  def setUTCOffset(): Unit = js.native
   /**
     * Sets UTC offset for dates
     * @param offset in minutes
     */
+  def setUTCOffset(): Unit = js.native
   def setUTCOffset(offset: Double): Unit = js.native
 }
 

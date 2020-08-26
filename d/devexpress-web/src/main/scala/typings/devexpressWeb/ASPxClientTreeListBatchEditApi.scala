@@ -73,6 +73,7 @@ trait ASPxClientTreeListBatchEditApi extends js.Object {
     * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's WebColumnBase.Name property value).
     */
   def HasChanges(): Boolean = js.native
+  def HasChanges(nodeKey: js.UndefOr[scala.Nothing], columnFieldNameOrId: String): Boolean = js.native
   def HasChanges(nodeKey: String): Boolean = js.native
   def HasChanges(nodeKey: String, columnFieldNameOrId: String): Boolean = js.native
   /**
@@ -114,6 +115,13 @@ trait ASPxClientTreeListBatchEditApi extends js.Object {
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
   def SetCellValue(nodeKey: String, columnFieldNameOrId: String, value: js.Any): Unit = js.native
+  def SetCellValue(
+    nodeKey: String,
+    columnFieldNameOrId: String,
+    value: js.Any,
+    displayText: js.UndefOr[scala.Nothing],
+    cancelCellHighlighting: Boolean
+  ): Unit = js.native
   def SetCellValue(nodeKey: String, columnFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
   def SetCellValue(
     nodeKey: String,

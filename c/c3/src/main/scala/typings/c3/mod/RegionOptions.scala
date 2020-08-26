@@ -6,54 +6,79 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RegionOptions extends js.Object {
   /**
     * The axis on which `start` and `end` values lie.
     */
-  var axis: js.UndefOr[AxisName] = js.undefined
+  var axis: js.UndefOr[AxisName] = js.native
   /**
     * An optional class to apply to the region, which can be used for styling
     * or targeting.
     */
-  var `class`: js.UndefOr[String] = js.undefined
+  var `class`: js.UndefOr[String] = js.native
   /**
     * The point on the axis at which to end the region. If not provided, will
     * use the end edge of the axis.
     */
-  var end: js.UndefOr[String | Double | Date] = js.undefined
+  var end: js.UndefOr[String | Double | Date] = js.native
   /**
     * Control the opacity of the region area.
     */
-  var opacity: js.UndefOr[Double] = js.undefined
+  var opacity: js.UndefOr[Double] = js.native
   /**
     * The point on the axis at which to start the region. If not provided, will
     * use the start edge of the axis.
     */
-  var start: js.UndefOr[String | Double | Date] = js.undefined
+  var start: js.UndefOr[String | Double | Date] = js.native
   /**
     * If `'dashed'`, renders the line as dashed in this range instead of showing a region block.
     */
-  var style: js.UndefOr[dashed] = js.undefined
+  var style: js.UndefOr[dashed] = js.native
 }
 
 object RegionOptions {
   @scala.inline
-  def apply(
-    axis: AxisName = null,
-    `class`: String = null,
-    end: String | Double | Date = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    start: String | Double | Date = null,
-    style: dashed = null
-  ): RegionOptions = {
+  def apply(): RegionOptions = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegionOptions]
   }
+  @scala.inline
+  implicit class RegionOptionsOps[Self <: RegionOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAxis(value: AxisName): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClass: Self = this.set("class", js.undefined)
+    @scala.inline
+    def setEnd(value: String | Double | Date): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setStart(value: String | Double | Date): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setStyle(value: dashed): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

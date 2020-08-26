@@ -11,8 +11,8 @@ Returns true if a number or string value is a finite number. Useful for regex ma
 | Full name          | is-number |
 | Keywords           | cast, check, coerce, coercion, finite, integer, is, isnan, is-nan, is-num, is-number, isnumber, isfinite, istype, kind, math, nan, num, number, numeric, parseFloat, parseInt, test, type, typeof, value |
 | # releases         | 4 |
-| # dependents       | 216 |
-| # downloads        | 1002203486 |
+| # dependents       | 218 |
+| # downloads        | 1013416593 |
 | # stars            | 13 |
 
 ## Links

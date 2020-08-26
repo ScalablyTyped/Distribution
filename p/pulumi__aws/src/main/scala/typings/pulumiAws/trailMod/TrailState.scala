@@ -78,49 +78,95 @@ trait TrailState extends js.Object {
     */
   val snsTopicName: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the trail
+    * A map of tags to assign to the trail
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object TrailState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    cloudWatchLogsGroupArn: Input[String] = null,
-    cloudWatchLogsRoleArn: Input[String] = null,
-    enableLogFileValidation: Input[Boolean] = null,
-    enableLogging: Input[Boolean] = null,
-    eventSelectors: Input[js.Array[Input[TrailEventSelector]]] = null,
-    homeRegion: Input[String] = null,
-    includeGlobalServiceEvents: Input[Boolean] = null,
-    isMultiRegionTrail: Input[Boolean] = null,
-    isOrganizationTrail: Input[Boolean] = null,
-    kmsKeyId: Input[String] = null,
-    name: Input[String] = null,
-    s3BucketName: Input[String] = null,
-    s3KeyPrefix: Input[String] = null,
-    snsTopicName: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): TrailState = {
+  def apply(): TrailState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (cloudWatchLogsGroupArn != null) __obj.updateDynamic("cloudWatchLogsGroupArn")(cloudWatchLogsGroupArn.asInstanceOf[js.Any])
-    if (cloudWatchLogsRoleArn != null) __obj.updateDynamic("cloudWatchLogsRoleArn")(cloudWatchLogsRoleArn.asInstanceOf[js.Any])
-    if (enableLogFileValidation != null) __obj.updateDynamic("enableLogFileValidation")(enableLogFileValidation.asInstanceOf[js.Any])
-    if (enableLogging != null) __obj.updateDynamic("enableLogging")(enableLogging.asInstanceOf[js.Any])
-    if (eventSelectors != null) __obj.updateDynamic("eventSelectors")(eventSelectors.asInstanceOf[js.Any])
-    if (homeRegion != null) __obj.updateDynamic("homeRegion")(homeRegion.asInstanceOf[js.Any])
-    if (includeGlobalServiceEvents != null) __obj.updateDynamic("includeGlobalServiceEvents")(includeGlobalServiceEvents.asInstanceOf[js.Any])
-    if (isMultiRegionTrail != null) __obj.updateDynamic("isMultiRegionTrail")(isMultiRegionTrail.asInstanceOf[js.Any])
-    if (isOrganizationTrail != null) __obj.updateDynamic("isOrganizationTrail")(isOrganizationTrail.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (s3BucketName != null) __obj.updateDynamic("s3BucketName")(s3BucketName.asInstanceOf[js.Any])
-    if (s3KeyPrefix != null) __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix.asInstanceOf[js.Any])
-    if (snsTopicName != null) __obj.updateDynamic("snsTopicName")(snsTopicName.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrailState]
   }
+  @scala.inline
+  implicit class TrailStateOps[Self <: TrailState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCloudWatchLogsGroupArn(value: Input[String]): Self = this.set("cloudWatchLogsGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLogsGroupArn: Self = this.set("cloudWatchLogsGroupArn", js.undefined)
+    @scala.inline
+    def setCloudWatchLogsRoleArn(value: Input[String]): Self = this.set("cloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLogsRoleArn: Self = this.set("cloudWatchLogsRoleArn", js.undefined)
+    @scala.inline
+    def setEnableLogFileValidation(value: Input[Boolean]): Self = this.set("enableLogFileValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLogFileValidation: Self = this.set("enableLogFileValidation", js.undefined)
+    @scala.inline
+    def setEnableLogging(value: Input[Boolean]): Self = this.set("enableLogging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLogging: Self = this.set("enableLogging", js.undefined)
+    @scala.inline
+    def setEventSelectorsVarargs(value: Input[TrailEventSelector]*): Self = this.set("eventSelectors", js.Array(value :_*))
+    @scala.inline
+    def setEventSelectors(value: Input[js.Array[Input[TrailEventSelector]]]): Self = this.set("eventSelectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventSelectors: Self = this.set("eventSelectors", js.undefined)
+    @scala.inline
+    def setHomeRegion(value: Input[String]): Self = this.set("homeRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeRegion: Self = this.set("homeRegion", js.undefined)
+    @scala.inline
+    def setIncludeGlobalServiceEvents(value: Input[Boolean]): Self = this.set("includeGlobalServiceEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeGlobalServiceEvents: Self = this.set("includeGlobalServiceEvents", js.undefined)
+    @scala.inline
+    def setIsMultiRegionTrail(value: Input[Boolean]): Self = this.set("isMultiRegionTrail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMultiRegionTrail: Self = this.set("isMultiRegionTrail", js.undefined)
+    @scala.inline
+    def setIsOrganizationTrail(value: Input[Boolean]): Self = this.set("isOrganizationTrail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOrganizationTrail: Self = this.set("isOrganizationTrail", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setS3BucketName(value: Input[String]): Self = this.set("s3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BucketName: Self = this.set("s3BucketName", js.undefined)
+    @scala.inline
+    def setS3KeyPrefix(value: Input[String]): Self = this.set("s3KeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3KeyPrefix: Self = this.set("s3KeyPrefix", js.undefined)
+    @scala.inline
+    def setSnsTopicName(value: Input[String]): Self = this.set("snsTopicName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnsTopicName: Self = this.set("snsTopicName", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

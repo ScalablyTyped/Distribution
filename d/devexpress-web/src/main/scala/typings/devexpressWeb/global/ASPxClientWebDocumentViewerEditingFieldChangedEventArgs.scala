@@ -22,20 +22,5 @@ class ASPxClientWebDocumentViewerEditingFieldChangedEventArgs protected ()
     oldValue: js.Any,
     newValue: js.Any
   ) = this()
-  /**
-    * Gets an editing field whose value has been changed.
-    */
-  /* CompleteClass */
-  override var Field: typings.devexpressWeb.ASPxClientWebDocumentViewerEditingField = js.native
-  /**
-    * Provides access to a new value of an editing field.
-    */
-  /* CompleteClass */
-  override var NewValue: js.Any = js.native
-  /**
-    * Provides access to a previous value of an editing field.
-    */
-  /* CompleteClass */
-  override var OldValue: js.Any = js.native
 }
 

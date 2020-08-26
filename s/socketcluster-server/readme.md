@@ -10,9 +10,9 @@ Server module for SocketCluster
 | ------------------ | :-------------: |
 | Full name          | socketcluster-server |
 | Keywords           | websocket, realtime, socketcluster |
-| # releases         | 33 |
+| # releases         | 34 |
 | # dependents       | 12 |
-| # downloads        | 925357 |
+| # downloads        | 937125 |
 | # stars            | 1 |
 
 ## Links

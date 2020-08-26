@@ -13,20 +13,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModalPropsIOS extends js.Object {
   /**
     * The `onDismiss` prop allows passing a function that will be called once the modal has been dismissed.
     */
-  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * The `onOrientationChange` callback is called when the orientation changes while the modal is being displayed.
     * The orientation provided is only 'portrait' or 'landscape'. This callback is also called on initial render, regardless of the current orientation.
     */
-  var onOrientationChange: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]] = js.undefined
+  var onOrientationChange: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]] = js.native
   /**
     * The `presentationStyle` determines the style of modal to show
     */
-  var presentationStyle: js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen] = js.undefined
+  var presentationStyle: js.UndefOr[fullScreen | pageSheet | formSheet | overFullScreen] = js.native
   /**
     * The `supportedOrientations` prop allows the modal to be rotated to any of the specified orientations.
     * On iOS, the modal is still restricted by what's specified in your app's Info.plist's UISupportedInterfaceOrientations field.
@@ -35,25 +36,49 @@ trait ModalPropsIOS extends js.Object {
     js.Array[
       portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object ModalPropsIOS {
   @scala.inline
-  def apply(
-    onDismiss: () => Unit = null,
-    onOrientationChange: /* event */ NativeSyntheticEvent[_] => Unit = null,
-    presentationStyle: fullScreen | pageSheet | formSheet | overFullScreen = null,
-    supportedOrientations: js.Array[
-      portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
-    ] = null
-  ): ModalPropsIOS = {
+  def apply(): ModalPropsIOS = {
     val __obj = js.Dynamic.literal()
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
-    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(js.Any.fromFunction1(onOrientationChange))
-    if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])
-    if (supportedOrientations != null) __obj.updateDynamic("supportedOrientations")(supportedOrientations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalPropsIOS]
   }
+  @scala.inline
+  implicit class ModalPropsIOSOps[Self <: ModalPropsIOS] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnDismiss(value: () => Unit): Self = this.set("onDismiss", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    @scala.inline
+    def setOnOrientationChange(value: /* event */ NativeSyntheticEvent[_] => Unit): Self = this.set("onOrientationChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOrientationChange: Self = this.set("onOrientationChange", js.undefined)
+    @scala.inline
+    def setPresentationStyle(value: fullScreen | pageSheet | formSheet | overFullScreen): Self = this.set("presentationStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresentationStyle: Self = this.set("presentationStyle", js.undefined)
+    @scala.inline
+    def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = this.set("supportedOrientations", js.Array(value :_*))
+    @scala.inline
+    def setSupportedOrientations(
+      value: js.Array[
+          portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
+        ]
+    ): Self = this.set("supportedOrientations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedOrientations: Self = this.set("supportedOrientations", js.undefined)
+  }
+  
 }
 

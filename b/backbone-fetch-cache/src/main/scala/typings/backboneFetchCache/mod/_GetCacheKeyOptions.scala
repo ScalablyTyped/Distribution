@@ -13,10 +13,8 @@ object _GetCacheKeyOptions {
     __obj.asInstanceOf[_GetCacheKeyOptions]
   }
   @scala.inline
-  def GetCacheKeyObject(getCacheKey: /* opts */ js.UndefOr[GetCacheOptions] => String = null, url: () => String = null): _GetCacheKeyOptions = {
+  def GetCacheKeyObject(): _GetCacheKeyOptions = {
     val __obj = js.Dynamic.literal()
-    if (getCacheKey != null) __obj.updateDynamic("getCacheKey")(js.Any.fromFunction1(getCacheKey))
-    if (url != null) __obj.updateDynamic("url")(js.Any.fromFunction0(url))
     __obj.asInstanceOf[_GetCacheKeyOptions]
   }
 }

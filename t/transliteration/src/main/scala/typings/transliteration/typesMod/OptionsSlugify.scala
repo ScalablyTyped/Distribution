@@ -5,55 +5,66 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.transliteration.typesMod.Options because Already inherited */ trait OptionsSlugify extends OptionsTransliterate {
+- typings.transliteration.typesMod.Options because Already inherited */ @js.native
+trait OptionsSlugify extends OptionsTransliterate {
   /**
     * Allowed characters.
     * When `allowedChars` is set to `'abc'`, then only characters match `/[abc]/g` will be preserved.
     * Other characters will all be converted to `separator`
     * @default 'a-zA-Z0-9-_.~''
     */
-  var allowedChars: js.UndefOr[String] = js.undefined
+  var allowedChars: js.UndefOr[String] = js.native
   /**
     * Whether the result need to be converted into lowercase
     * @default true
     */
-  var lowercase: js.UndefOr[Boolean] = js.undefined
+  var lowercase: js.UndefOr[Boolean] = js.native
   /**
     * Custom separator string
     * @default '-'
     */
-  var separator: js.UndefOr[String] = js.undefined
+  var separator: js.UndefOr[String] = js.native
   /**
     * Whether the result need to be converted into uppercase
     * @default false
     */
-  var uppercase: js.UndefOr[Boolean] = js.undefined
+  var uppercase: js.UndefOr[Boolean] = js.native
 }
 
 object OptionsSlugify {
   @scala.inline
-  def apply(
-    allowedChars: String = null,
-    ignore: js.Array[String] = null,
-    lowercase: js.UndefOr[Boolean] = js.undefined,
-    replace: OptionReplaceCombined = null,
-    replaceAfter: OptionReplaceCombined = null,
-    separator: String = null,
-    trim: js.UndefOr[Boolean] = js.undefined,
-    unknown: String = null,
-    uppercase: js.UndefOr[Boolean] = js.undefined
-  ): OptionsSlugify = {
+  def apply(): OptionsSlugify = {
     val __obj = js.Dynamic.literal()
-    if (allowedChars != null) __obj.updateDynamic("allowedChars")(allowedChars.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase.get.asInstanceOf[js.Any])
-    if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (replaceAfter != null) __obj.updateDynamic("replaceAfter")(replaceAfter.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.get.asInstanceOf[js.Any])
-    if (unknown != null) __obj.updateDynamic("unknown")(unknown.asInstanceOf[js.Any])
-    if (!js.isUndefined(uppercase)) __obj.updateDynamic("uppercase")(uppercase.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsSlugify]
   }
+  @scala.inline
+  implicit class OptionsSlugifyOps[Self <: OptionsSlugify] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedChars(value: String): Self = this.set("allowedChars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedChars: Self = this.set("allowedChars", js.undefined)
+    @scala.inline
+    def setLowercase(value: Boolean): Self = this.set("lowercase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowercase: Self = this.set("lowercase", js.undefined)
+    @scala.inline
+    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparator: Self = this.set("separator", js.undefined)
+    @scala.inline
+    def setUppercase(value: Boolean): Self = this.set("uppercase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUppercase: Self = this.set("uppercase", js.undefined)
+  }
+  
 }
 

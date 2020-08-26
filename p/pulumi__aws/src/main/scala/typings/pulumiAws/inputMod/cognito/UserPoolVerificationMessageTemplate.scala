@@ -35,22 +35,46 @@ trait UserPoolVerificationMessageTemplate extends js.Object {
 
 object UserPoolVerificationMessageTemplate {
   @scala.inline
-  def apply(
-    defaultEmailOption: Input[String] = null,
-    emailMessage: Input[String] = null,
-    emailMessageByLink: Input[String] = null,
-    emailSubject: Input[String] = null,
-    emailSubjectByLink: Input[String] = null,
-    smsMessage: Input[String] = null
-  ): UserPoolVerificationMessageTemplate = {
+  def apply(): UserPoolVerificationMessageTemplate = {
     val __obj = js.Dynamic.literal()
-    if (defaultEmailOption != null) __obj.updateDynamic("defaultEmailOption")(defaultEmailOption.asInstanceOf[js.Any])
-    if (emailMessage != null) __obj.updateDynamic("emailMessage")(emailMessage.asInstanceOf[js.Any])
-    if (emailMessageByLink != null) __obj.updateDynamic("emailMessageByLink")(emailMessageByLink.asInstanceOf[js.Any])
-    if (emailSubject != null) __obj.updateDynamic("emailSubject")(emailSubject.asInstanceOf[js.Any])
-    if (emailSubjectByLink != null) __obj.updateDynamic("emailSubjectByLink")(emailSubjectByLink.asInstanceOf[js.Any])
-    if (smsMessage != null) __obj.updateDynamic("smsMessage")(smsMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolVerificationMessageTemplate]
   }
+  @scala.inline
+  implicit class UserPoolVerificationMessageTemplateOps[Self <: UserPoolVerificationMessageTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultEmailOption(value: Input[String]): Self = this.set("defaultEmailOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEmailOption: Self = this.set("defaultEmailOption", js.undefined)
+    @scala.inline
+    def setEmailMessage(value: Input[String]): Self = this.set("emailMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailMessage: Self = this.set("emailMessage", js.undefined)
+    @scala.inline
+    def setEmailMessageByLink(value: Input[String]): Self = this.set("emailMessageByLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailMessageByLink: Self = this.set("emailMessageByLink", js.undefined)
+    @scala.inline
+    def setEmailSubject(value: Input[String]): Self = this.set("emailSubject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailSubject: Self = this.set("emailSubject", js.undefined)
+    @scala.inline
+    def setEmailSubjectByLink(value: Input[String]): Self = this.set("emailSubjectByLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailSubjectByLink: Self = this.set("emailSubjectByLink", js.undefined)
+    @scala.inline
+    def setSmsMessage(value: Input[String]): Self = this.set("smsMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmsMessage: Self = this.set("smsMessage", js.undefined)
+  }
+  
 }
 

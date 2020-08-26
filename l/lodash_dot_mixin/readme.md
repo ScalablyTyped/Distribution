@@ -12,7 +12,7 @@ The lodash method `_.mixin` exported as a module.
 | Keywords           | lodash-modularized, mixin |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 4770 |
+| # downloads        | 4758 |
 | # stars            | 0 |
 
 ## Links

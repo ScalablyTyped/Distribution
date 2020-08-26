@@ -22,14 +22,34 @@ trait SchemaGetWorkspaceStatusResponse extends js.Object {
 
 object SchemaGetWorkspaceStatusResponse {
   @scala.inline
-  def apply(
-    mergeConflict: js.Array[SchemaMergeConflict] = null,
-    workspaceChange: js.Array[SchemaEntity] = null
-  ): SchemaGetWorkspaceStatusResponse = {
+  def apply(): SchemaGetWorkspaceStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (mergeConflict != null) __obj.updateDynamic("mergeConflict")(mergeConflict.asInstanceOf[js.Any])
-    if (workspaceChange != null) __obj.updateDynamic("workspaceChange")(workspaceChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetWorkspaceStatusResponse]
   }
+  @scala.inline
+  implicit class SchemaGetWorkspaceStatusResponseOps[Self <: SchemaGetWorkspaceStatusResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMergeConflictVarargs(value: SchemaMergeConflict*): Self = this.set("mergeConflict", js.Array(value :_*))
+    @scala.inline
+    def setMergeConflict(value: js.Array[SchemaMergeConflict]): Self = this.set("mergeConflict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeConflict: Self = this.set("mergeConflict", js.undefined)
+    @scala.inline
+    def setWorkspaceChangeVarargs(value: SchemaEntity*): Self = this.set("workspaceChange", js.Array(value :_*))
+    @scala.inline
+    def setWorkspaceChange(value: js.Array[SchemaEntity]): Self = this.set("workspaceChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaceChange: Self = this.set("workspaceChange", js.undefined)
+  }
+  
 }
 

@@ -33,7 +33,15 @@ trait PlusKey extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   def addEventListener(): Unit = js.native
+  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
+  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.Function1[/* result */ PlusKeyKeyEvent, Unit]): Unit = js.native
+  def addEventListener(
+    event: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* result */ PlusKeyKeyEvent, Unit],
+    capture: Boolean
+  ): Unit = js.native
   def addEventListener(event: PlusKeyKeyType): Unit = js.native
+  def addEventListener(event: PlusKeyKeyType, listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
   def addEventListener(event: PlusKeyKeyType, listener: js.Function1[/* result */ PlusKeyKeyEvent, Unit]): Unit = js.native
   def addEventListener(
     event: PlusKeyKeyType,
@@ -54,6 +62,7 @@ trait PlusKey extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
     */
   def removeEventListener(): Unit = js.native
+  def removeEventListener(event: js.UndefOr[scala.Nothing], listener: js.Function1[/* result */ PlusKeyKeyEvent, Unit]): Unit = js.native
   def removeEventListener(event: PlusKeyKeyType): Unit = js.native
   def removeEventListener(event: PlusKeyKeyType, listener: js.Function1[/* result */ PlusKeyKeyEvent, Unit]): Unit = js.native
   /**

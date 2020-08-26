@@ -34,20 +34,42 @@ trait PutObjectRequest extends js.Object {
 
 object PutObjectRequest {
   @scala.inline
-  def apply(
-    Body: PayloadBlob,
-    Path: PathNaming,
-    CacheControl: StringPrimitive = null,
-    ContentType: ContentType = null,
-    StorageClass: StorageClass = null,
-    UploadAvailability: UploadAvailability = null
-  ): PutObjectRequest = {
+  def apply(Body: PayloadBlob, Path: PathNaming): PutObjectRequest = {
     val __obj = js.Dynamic.literal(Body = Body.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any])
-    if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (UploadAvailability != null) __obj.updateDynamic("UploadAvailability")(UploadAvailability.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutObjectRequest]
   }
+  @scala.inline
+  implicit class PutObjectRequestOps[Self <: PutObjectRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: PayloadBlob): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: PathNaming): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCacheControl(value: StringPrimitive): Self = this.set("CacheControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheControl: Self = this.set("CacheControl", js.undefined)
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setStorageClass(value: StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+    @scala.inline
+    def setUploadAvailability(value: UploadAvailability): Self = this.set("UploadAvailability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadAvailability: Self = this.set("UploadAvailability", js.undefined)
+  }
+  
 }
 

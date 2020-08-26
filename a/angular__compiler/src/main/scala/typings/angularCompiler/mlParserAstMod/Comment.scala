@@ -10,10 +10,6 @@ import scala.scalajs.js.annotation._
 class Comment protected () extends Node {
   def this(value: String, sourceSpan: ParseSourceSpan) = this()
   def this(value: Null, sourceSpan: ParseSourceSpan) = this()
-  /* CompleteClass */
-  override var sourceSpan: ParseSourceSpan = js.native
   var value: String | Null = js.native
-  /* CompleteClass */
-  override def visit(visitor: Visitor, context: js.Any): js.Any = js.native
 }
 

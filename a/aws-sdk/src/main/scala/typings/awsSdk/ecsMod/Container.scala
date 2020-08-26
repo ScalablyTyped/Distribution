@@ -74,42 +74,92 @@ trait Container extends js.Object {
 
 object Container {
   @scala.inline
-  def apply(
-    containerArn: String = null,
-    cpu: String = null,
-    exitCode: js.UndefOr[BoxedInteger] = js.undefined,
-    gpuIds: GpuIds = null,
-    healthStatus: HealthStatus = null,
-    image: String = null,
-    imageDigest: String = null,
-    lastStatus: String = null,
-    memory: String = null,
-    memoryReservation: String = null,
-    name: String = null,
-    networkBindings: NetworkBindings = null,
-    networkInterfaces: NetworkInterfaces = null,
-    reason: String = null,
-    runtimeId: String = null,
-    taskArn: String = null
-  ): Container = {
+  def apply(): Container = {
     val __obj = js.Dynamic.literal()
-    if (containerArn != null) __obj.updateDynamic("containerArn")(containerArn.asInstanceOf[js.Any])
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitCode)) __obj.updateDynamic("exitCode")(exitCode.get.asInstanceOf[js.Any])
-    if (gpuIds != null) __obj.updateDynamic("gpuIds")(gpuIds.asInstanceOf[js.Any])
-    if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (imageDigest != null) __obj.updateDynamic("imageDigest")(imageDigest.asInstanceOf[js.Any])
-    if (lastStatus != null) __obj.updateDynamic("lastStatus")(lastStatus.asInstanceOf[js.Any])
-    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
-    if (memoryReservation != null) __obj.updateDynamic("memoryReservation")(memoryReservation.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (networkBindings != null) __obj.updateDynamic("networkBindings")(networkBindings.asInstanceOf[js.Any])
-    if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (runtimeId != null) __obj.updateDynamic("runtimeId")(runtimeId.asInstanceOf[js.Any])
-    if (taskArn != null) __obj.updateDynamic("taskArn")(taskArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
+  @scala.inline
+  implicit class ContainerOps[Self <: Container] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerArn(value: String): Self = this.set("containerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerArn: Self = this.set("containerArn", js.undefined)
+    @scala.inline
+    def setCpu(value: String): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpu: Self = this.set("cpu", js.undefined)
+    @scala.inline
+    def setExitCode(value: BoxedInteger): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    @scala.inline
+    def setGpuIdsVarargs(value: String*): Self = this.set("gpuIds", js.Array(value :_*))
+    @scala.inline
+    def setGpuIds(value: GpuIds): Self = this.set("gpuIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGpuIds: Self = this.set("gpuIds", js.undefined)
+    @scala.inline
+    def setHealthStatus(value: HealthStatus): Self = this.set("healthStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthStatus: Self = this.set("healthStatus", js.undefined)
+    @scala.inline
+    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setImageDigest(value: String): Self = this.set("imageDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageDigest: Self = this.set("imageDigest", js.undefined)
+    @scala.inline
+    def setLastStatus(value: String): Self = this.set("lastStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStatus: Self = this.set("lastStatus", js.undefined)
+    @scala.inline
+    def setMemory(value: String): Self = this.set("memory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemory: Self = this.set("memory", js.undefined)
+    @scala.inline
+    def setMemoryReservation(value: String): Self = this.set("memoryReservation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryReservation: Self = this.set("memoryReservation", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetworkBindingsVarargs(value: NetworkBinding*): Self = this.set("networkBindings", js.Array(value :_*))
+    @scala.inline
+    def setNetworkBindings(value: NetworkBindings): Self = this.set("networkBindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkBindings: Self = this.set("networkBindings", js.undefined)
+    @scala.inline
+    def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = this.set("networkInterfaces", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaces(value: NetworkInterfaces): Self = this.set("networkInterfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaces: Self = this.set("networkInterfaces", js.undefined)
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+    @scala.inline
+    def setRuntimeId(value: String): Self = this.set("runtimeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeId: Self = this.set("runtimeId", js.undefined)
+    @scala.inline
+    def setTaskArn(value: String): Self = this.set("taskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskArn: Self = this.set("taskArn", js.undefined)
+  }
+  
 }
 

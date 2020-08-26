@@ -21,12 +21,15 @@ trait Create extends js.Object {
   def or(a: Buffer, b: Buffer): Buffer = js.native
   def or(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
   def read(buffer: Buffer): js.Array[Bit] = js.native
+  def read(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Array[Bit] = js.native
   def read(buffer: Buffer, offset: Double): js.Array[Bit] = js.native
   def read(buffer: Buffer, offset: Double, length: Double): js.Array[Bit] = js.native
   def readInt(buffer: Buffer): Double = js.native
+  def readInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
   def readInt(buffer: Buffer, offset: Double): Double = js.native
   def readInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
   def readUInt(buffer: Buffer): Double = js.native
+  def readUInt(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
   def readUInt(buffer: Buffer, offset: Double): Double = js.native
   def readUInt(buffer: Buffer, offset: Double, length: Double): Double = js.native
   def xnor(a: Buffer, b: Buffer): Buffer = js.native

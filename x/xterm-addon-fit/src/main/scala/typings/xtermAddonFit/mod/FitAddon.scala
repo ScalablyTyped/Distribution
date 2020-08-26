@@ -1,7 +1,6 @@
 package typings.xtermAddonFit.mod
 
 import typings.xterm.mod.ITerminalAddon
-import typings.xterm.mod.Terminal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,13 +11,6 @@ import scala.scalajs.js.annotation._
   * Creates a new fit addon.
   */
 class FitAddon () extends ITerminalAddon {
-  /**
-    * This is called when the addon is activated.
-    */
-  /* CompleteClass */
-  override def activate(terminal: Terminal): Unit = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /**
     * Resizes the terminal to the dimensions of its containing element.
     */

@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/config-resolver |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 368 |
-| # downloads        | 30257 |
+| # releases         | 13 |
+| # dependents       | 556 |
+| # downloads        | 38711 |
 | # stars            | 0 |
 
 ## Links

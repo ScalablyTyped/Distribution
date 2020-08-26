@@ -28,18 +28,40 @@ trait OrganizationalUnitState extends js.Object {
 
 object OrganizationalUnitState {
   @scala.inline
-  def apply(
-    accounts: Input[js.Array[Input[OrganizationalUnitAccount]]] = null,
-    arn: Input[String] = null,
-    name: Input[String] = null,
-    parentId: Input[String] = null
-  ): OrganizationalUnitState = {
+  def apply(): OrganizationalUnitState = {
     val __obj = js.Dynamic.literal()
-    if (accounts != null) __obj.updateDynamic("accounts")(accounts.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationalUnitState]
   }
+  @scala.inline
+  implicit class OrganizationalUnitStateOps[Self <: OrganizationalUnitState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountsVarargs(value: Input[OrganizationalUnitAccount]*): Self = this.set("accounts", js.Array(value :_*))
+    @scala.inline
+    def setAccounts(value: Input[js.Array[Input[OrganizationalUnitAccount]]]): Self = this.set("accounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccounts: Self = this.set("accounts", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParentId(value: Input[String]): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("parentId", js.undefined)
+  }
+  
 }
 

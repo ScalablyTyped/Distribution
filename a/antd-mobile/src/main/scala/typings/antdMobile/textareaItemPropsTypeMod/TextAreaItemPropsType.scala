@@ -5,69 +5,118 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextAreaItemPropsType extends js.Object {
-  var autoHeight: js.UndefOr[Boolean] = js.undefined
-  var clear: js.UndefOr[Boolean] = js.undefined
-  var count: js.UndefOr[Double] = js.undefined
-  var defaultValue: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var editable: js.UndefOr[Boolean] = js.undefined
-  var error: js.UndefOr[Boolean] = js.undefined
-  var labelNumber: js.UndefOr[Double] = js.undefined
-  var maxLength: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var onBlur: js.UndefOr[TextAreaEventHandle] = js.undefined
-  var onChange: js.UndefOr[TextAreaEventHandle] = js.undefined
-  var onErrorClick: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onFocus: js.UndefOr[TextAreaEventHandle] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var rows: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
+  var autoHeight: js.UndefOr[Boolean] = js.native
+  var clear: js.UndefOr[Boolean] = js.native
+  var count: js.UndefOr[Double] = js.native
+  var defaultValue: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.native
+  var labelNumber: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var onBlur: js.UndefOr[TextAreaEventHandle] = js.native
+  var onChange: js.UndefOr[TextAreaEventHandle] = js.native
+  var onErrorClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFocus: js.UndefOr[TextAreaEventHandle] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var rows: js.UndefOr[Double] = js.native
+  var title: js.UndefOr[ReactNode] = js.native
+  var value: js.UndefOr[String] = js.native
 }
 
 object TextAreaItemPropsType {
   @scala.inline
-  def apply(
-    autoHeight: js.UndefOr[Boolean] = js.undefined,
-    clear: js.UndefOr[Boolean] = js.undefined,
-    count: js.UndefOr[Double] = js.undefined,
-    defaultValue: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    error: js.UndefOr[Boolean] = js.undefined,
-    labelNumber: js.UndefOr[Double] = js.undefined,
-    maxLength: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    onBlur: /* val */ js.UndefOr[String] => Unit = null,
-    onChange: /* val */ js.UndefOr[String] => Unit = null,
-    onErrorClick: () => Unit = null,
-    onFocus: /* val */ js.UndefOr[String] => Unit = null,
-    placeholder: String = null,
-    rows: js.UndefOr[Double] = js.undefined,
-    title: ReactNode = null,
-    value: String = null
-  ): TextAreaItemPropsType = {
+  def apply(): TextAreaItemPropsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelNumber)) __obj.updateDynamic("labelNumber")(labelNumber.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onErrorClick != null) __obj.updateDynamic("onErrorClick")(js.Any.fromFunction0(onErrorClick))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextAreaItemPropsType]
   }
+  @scala.inline
+  implicit class TextAreaItemPropsTypeOps[Self <: TextAreaItemPropsType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoHeight(value: Boolean): Self = this.set("autoHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHeight: Self = this.set("autoHeight", js.undefined)
+    @scala.inline
+    def setClear(value: Boolean): Self = this.set("clear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClear: Self = this.set("clear", js.undefined)
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setLabelNumber(value: Double): Self = this.set("labelNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelNumber: Self = this.set("labelNumber", js.undefined)
+    @scala.inline
+    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnBlur(value: /* val */ js.UndefOr[String] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* val */ js.UndefOr[String] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnErrorClick(value: () => Unit): Self = this.set("onErrorClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnErrorClick: Self = this.set("onErrorClick", js.undefined)
+    @scala.inline
+    def setOnFocus(value: /* val */ js.UndefOr[String] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

@@ -35,18 +35,40 @@ trait SchemaGooglePrivacyDlpV2FieldTransformation extends js.Object {
 
 object SchemaGooglePrivacyDlpV2FieldTransformation {
   @scala.inline
-  def apply(
-    condition: SchemaGooglePrivacyDlpV2RecordCondition = null,
-    fields: js.Array[SchemaGooglePrivacyDlpV2FieldId] = null,
-    infoTypeTransformations: SchemaGooglePrivacyDlpV2InfoTypeTransformations = null,
-    primitiveTransformation: SchemaGooglePrivacyDlpV2PrimitiveTransformation = null
-  ): SchemaGooglePrivacyDlpV2FieldTransformation = {
+  def apply(): SchemaGooglePrivacyDlpV2FieldTransformation = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (infoTypeTransformations != null) __obj.updateDynamic("infoTypeTransformations")(infoTypeTransformations.asInstanceOf[js.Any])
-    if (primitiveTransformation != null) __obj.updateDynamic("primitiveTransformation")(primitiveTransformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2FieldTransformation]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2FieldTransformationOps[Self <: SchemaGooglePrivacyDlpV2FieldTransformation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCondition(value: SchemaGooglePrivacyDlpV2RecordCondition): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+    @scala.inline
+    def setFieldsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = this.set("fields", js.Array(value :_*))
+    @scala.inline
+    def setFields(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setInfoTypeTransformations(value: SchemaGooglePrivacyDlpV2InfoTypeTransformations): Self = this.set("infoTypeTransformations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfoTypeTransformations: Self = this.set("infoTypeTransformations", js.undefined)
+    @scala.inline
+    def setPrimitiveTransformation(value: SchemaGooglePrivacyDlpV2PrimitiveTransformation): Self = this.set("primitiveTransformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimitiveTransformation: Self = this.set("primitiveTransformation", js.undefined)
+  }
+  
 }
 

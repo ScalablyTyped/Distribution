@@ -29,17 +29,6 @@ class NumberInputValidator () extends ICellInputValidator {
     *
     * @returns An object with validation result.
     */
-  /* CompleteClass */
-  override def validate(cell: CellConfig, value: js.Any): ICellInputValidatorResponse = js.native
-  /**
-    * Validate cell input.
-    *
-    * @param cell - The object holding cell configuration data.
-    *
-    * @param value - The cell value input.
-    *
-    * @returns An object with validation result.
-    */
   def validate(cell: CellConfig, value: Double): ICellInputValidatorResponse = js.native
 }
 

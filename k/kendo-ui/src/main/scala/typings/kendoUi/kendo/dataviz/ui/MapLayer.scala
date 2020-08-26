@@ -6,87 +6,148 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MapLayer extends js.Object {
-  var attribution: js.UndefOr[String] = js.undefined
-  var autoBind: js.UndefOr[Boolean] = js.undefined
-  var culture: js.UndefOr[String] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
-  var extent: js.UndefOr[js.Any | Extent] = js.undefined
-  var imagerySet: js.UndefOr[String] = js.undefined
-  var key: js.UndefOr[String] = js.undefined
-  var locationField: js.UndefOr[String] = js.undefined
-  var maxSize: js.UndefOr[Double] = js.undefined
-  var maxZoom: js.UndefOr[Double] = js.undefined
-  var minSize: js.UndefOr[Double] = js.undefined
-  var minZoom: js.UndefOr[Double] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var shape: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[MapLayerStyle] = js.undefined
-  var subdomains: js.UndefOr[js.Any] = js.undefined
-  var symbol: js.UndefOr[String | js.Function] = js.undefined
-  var tileSize: js.UndefOr[Double] = js.undefined
-  var titleField: js.UndefOr[String] = js.undefined
-  var tooltip: js.UndefOr[MapLayerTooltip] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var urlTemplate: js.UndefOr[String] = js.undefined
-  var valueField: js.UndefOr[String] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var attribution: js.UndefOr[String] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.native
+  var culture: js.UndefOr[String] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var extent: js.UndefOr[js.Any | Extent] = js.native
+  var imagerySet: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.native
+  var locationField: js.UndefOr[String] = js.native
+  var maxSize: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var shape: js.UndefOr[String] = js.native
+  var style: js.UndefOr[MapLayerStyle] = js.native
+  var subdomains: js.UndefOr[js.Any] = js.native
+  var symbol: js.UndefOr[String | js.Function] = js.native
+  var tileSize: js.UndefOr[Double] = js.native
+  var titleField: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[MapLayerTooltip] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var urlTemplate: js.UndefOr[String] = js.native
+  var valueField: js.UndefOr[String] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object MapLayer {
   @scala.inline
-  def apply(
-    attribution: String = null,
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    culture: String = null,
-    dataSource: js.Any | DataSource = null,
-    extent: js.Any | Extent = null,
-    imagerySet: String = null,
-    key: String = null,
-    locationField: String = null,
-    maxSize: js.UndefOr[Double] = js.undefined,
-    maxZoom: js.UndefOr[Double] = js.undefined,
-    minSize: js.UndefOr[Double] = js.undefined,
-    minZoom: js.UndefOr[Double] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    shape: String = null,
-    style: MapLayerStyle = null,
-    subdomains: js.Any = null,
-    symbol: String | js.Function = null,
-    tileSize: js.UndefOr[Double] = js.undefined,
-    titleField: String = null,
-    tooltip: MapLayerTooltip = null,
-    `type`: String = null,
-    urlTemplate: String = null,
-    valueField: String = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): MapLayer = {
+  def apply(): MapLayer = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
-    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (imagerySet != null) __obj.updateDynamic("imagerySet")(imagerySet.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (locationField != null) __obj.updateDynamic("locationField")(locationField.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (subdomains != null) __obj.updateDynamic("subdomains")(subdomains.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(tileSize)) __obj.updateDynamic("tileSize")(tileSize.get.asInstanceOf[js.Any])
-    if (titleField != null) __obj.updateDynamic("titleField")(titleField.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (urlTemplate != null) __obj.updateDynamic("urlTemplate")(urlTemplate.asInstanceOf[js.Any])
-    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayer]
   }
+  @scala.inline
+  implicit class MapLayerOps[Self <: MapLayer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttribution(value: String): Self = this.set("attribution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttribution: Self = this.set("attribution", js.undefined)
+    @scala.inline
+    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    @scala.inline
+    def setCulture(value: String): Self = this.set("culture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCulture: Self = this.set("culture", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any | DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setExtent(value: js.Any | Extent): Self = this.set("extent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtent: Self = this.set("extent", js.undefined)
+    @scala.inline
+    def setImagerySet(value: String): Self = this.set("imagerySet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagerySet: Self = this.set("imagerySet", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLocationField(value: String): Self = this.set("locationField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationField: Self = this.set("locationField", js.undefined)
+    @scala.inline
+    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    @scala.inline
+    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    @scala.inline
+    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    @scala.inline
+    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setShape(value: String): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setStyle(value: MapLayerStyle): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSubdomains(value: js.Any): Self = this.set("subdomains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubdomains: Self = this.set("subdomains", js.undefined)
+    @scala.inline
+    def setSymbol(value: String | js.Function): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setTileSize(value: Double): Self = this.set("tileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileSize: Self = this.set("tileSize", js.undefined)
+    @scala.inline
+    def setTitleField(value: String): Self = this.set("titleField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleField: Self = this.set("titleField", js.undefined)
+    @scala.inline
+    def setTooltip(value: MapLayerTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUrlTemplate(value: String): Self = this.set("urlTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlTemplate: Self = this.set("urlTemplate", js.undefined)
+    @scala.inline
+    def setValueField(value: String): Self = this.set("valueField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueField: Self = this.set("valueField", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

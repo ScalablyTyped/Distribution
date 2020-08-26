@@ -22,11 +22,32 @@ trait SchemaLeaseWorkItemResponse extends js.Object {
 
 object SchemaLeaseWorkItemResponse {
   @scala.inline
-  def apply(unifiedWorkerResponse: StringDictionary[js.Any] = null, workItems: js.Array[SchemaWorkItem] = null): SchemaLeaseWorkItemResponse = {
+  def apply(): SchemaLeaseWorkItemResponse = {
     val __obj = js.Dynamic.literal()
-    if (unifiedWorkerResponse != null) __obj.updateDynamic("unifiedWorkerResponse")(unifiedWorkerResponse.asInstanceOf[js.Any])
-    if (workItems != null) __obj.updateDynamic("workItems")(workItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLeaseWorkItemResponse]
   }
+  @scala.inline
+  implicit class SchemaLeaseWorkItemResponseOps[Self <: SchemaLeaseWorkItemResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUnifiedWorkerResponse(value: StringDictionary[js.Any]): Self = this.set("unifiedWorkerResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnifiedWorkerResponse: Self = this.set("unifiedWorkerResponse", js.undefined)
+    @scala.inline
+    def setWorkItemsVarargs(value: SchemaWorkItem*): Self = this.set("workItems", js.Array(value :_*))
+    @scala.inline
+    def setWorkItems(value: js.Array[SchemaWorkItem]): Self = this.set("workItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkItems: Self = this.set("workItems", js.undefined)
+  }
+  
 }
 

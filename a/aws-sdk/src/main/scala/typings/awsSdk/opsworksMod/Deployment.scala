@@ -58,34 +58,72 @@ trait Deployment extends js.Object {
 
 object Deployment {
   @scala.inline
-  def apply(
-    AppId: String = null,
-    Command: DeploymentCommand = null,
-    Comment: String = null,
-    CompletedAt: DateTime = null,
-    CreatedAt: DateTime = null,
-    CustomJson: String = null,
-    DeploymentId: String = null,
-    Duration: js.UndefOr[Integer] = js.undefined,
-    IamUserArn: String = null,
-    InstanceIds: Strings = null,
-    StackId: String = null,
-    Status: String = null
-  ): Deployment = {
+  def apply(): Deployment = {
     val __obj = js.Dynamic.literal()
-    if (AppId != null) __obj.updateDynamic("AppId")(AppId.asInstanceOf[js.Any])
-    if (Command != null) __obj.updateDynamic("Command")(Command.asInstanceOf[js.Any])
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (CompletedAt != null) __obj.updateDynamic("CompletedAt")(CompletedAt.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (CustomJson != null) __obj.updateDynamic("CustomJson")(CustomJson.asInstanceOf[js.Any])
-    if (DeploymentId != null) __obj.updateDynamic("DeploymentId")(DeploymentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (IamUserArn != null) __obj.updateDynamic("IamUserArn")(IamUserArn.asInstanceOf[js.Any])
-    if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deployment]
   }
+  @scala.inline
+  implicit class DeploymentOps[Self <: Deployment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: String): Self = this.set("AppId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppId: Self = this.set("AppId", js.undefined)
+    @scala.inline
+    def setCommand(value: DeploymentCommand): Self = this.set("Command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommand: Self = this.set("Command", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("Comment", js.undefined)
+    @scala.inline
+    def setCompletedAt(value: DateTime): Self = this.set("CompletedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedAt: Self = this.set("CompletedAt", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: DateTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setCustomJson(value: String): Self = this.set("CustomJson", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomJson: Self = this.set("CustomJson", js.undefined)
+    @scala.inline
+    def setDeploymentId(value: String): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
+    @scala.inline
+    def setDuration(value: Integer): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setIamUserArn(value: String): Self = this.set("IamUserArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamUserArn: Self = this.set("IamUserArn", js.undefined)
+    @scala.inline
+    def setInstanceIdsVarargs(value: String*): Self = this.set("InstanceIds", js.Array(value :_*))
+    @scala.inline
+    def setInstanceIds(value: Strings): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceIds: Self = this.set("InstanceIds", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

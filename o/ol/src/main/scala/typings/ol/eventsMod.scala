@@ -29,6 +29,13 @@ object eventsMod extends js.Object {
   }
   
   def listen(target: EventTargetLike, `type`: String, listener: ListenerFunction): EventsKey = js.native
+  def listen(
+    target: EventTargetLike,
+    `type`: String,
+    listener: ListenerFunction,
+    opt_this: js.UndefOr[scala.Nothing],
+    opt_once: Boolean
+  ): EventsKey = js.native
   def listen(target: EventTargetLike, `type`: String, listener: ListenerFunction, opt_this: js.Any): EventsKey = js.native
   def listen(
     target: EventTargetLike,

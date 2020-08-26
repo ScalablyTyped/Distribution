@@ -31,15 +31,15 @@ class GridSortItem protected () extends Element {
     * In version 7.11.0: deleted
     */
   def attributePath: String = js.native
-  def attributePath(newValue: String): js.Any = js.native
+  def attributePath_=(newValue: String): Unit = js.native
   /**
     * In version 7.11.0: introduced
     */
   def attributeRef: AttributeRef = js.native
-  def attributeRef(newValue: AttributeRef): js.Any = js.native
+  def attributeRef_=(newValue: AttributeRef): Unit = js.native
   def containerAsGridSortBar: GridSortBar = js.native
   def sortOrder: SortDirection = js.native
-  def sortOrder(newValue: SortDirection): js.Any = js.native
+  def sortOrder_=(newValue: SortDirection): Unit = js.native
 }
 
 /* static members */

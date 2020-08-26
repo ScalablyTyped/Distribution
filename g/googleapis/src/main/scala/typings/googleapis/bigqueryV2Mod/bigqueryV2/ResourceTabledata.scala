@@ -94,6 +94,7 @@ class ResourceTabledata protected () extends js.Object {
     */
   def insertAll(): GaxiosPromise[SchemaTableDataInsertAllResponse] = js.native
   def insertAll(callback: BodyResponseCallback[SchemaTableDataInsertAllResponse]): Unit = js.native
+  def insertAll(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTableDataInsertAllResponse] = js.native
   def insertAll(params: ParamsResourceTabledataInsertall): GaxiosPromise[SchemaTableDataInsertAllResponse] = js.native
   def insertAll(
     params: ParamsResourceTabledataInsertall,
@@ -203,6 +204,7 @@ class ResourceTabledata protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTableDataList] = js.native
   def list(callback: BodyResponseCallback[SchemaTableDataList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTableDataList] = js.native
   def list(params: ParamsResourceTabledataList): GaxiosPromise[SchemaTableDataList] = js.native
   def list(params: ParamsResourceTabledataList, callback: BodyResponseCallback[SchemaTableDataList]): Unit = js.native
   def list(

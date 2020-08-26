@@ -18,11 +18,30 @@ trait GetAssignmentResponse extends js.Object {
 
 object GetAssignmentResponse {
   @scala.inline
-  def apply(Assignment: Assignment = null, HIT: HIT = null): GetAssignmentResponse = {
+  def apply(): GetAssignmentResponse = {
     val __obj = js.Dynamic.literal()
-    if (Assignment != null) __obj.updateDynamic("Assignment")(Assignment.asInstanceOf[js.Any])
-    if (HIT != null) __obj.updateDynamic("HIT")(HIT.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssignmentResponse]
   }
+  @scala.inline
+  implicit class GetAssignmentResponseOps[Self <: GetAssignmentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignment(value: Assignment): Self = this.set("Assignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignment: Self = this.set("Assignment", js.undefined)
+    @scala.inline
+    def setHIT(value: HIT): Self = this.set("HIT", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHIT: Self = this.set("HIT", js.undefined)
+  }
+  
 }
 

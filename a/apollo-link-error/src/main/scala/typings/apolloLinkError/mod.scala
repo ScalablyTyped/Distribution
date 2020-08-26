@@ -9,7 +9,6 @@ import typings.apolloLinkError.mod.ErrorLink.ErrorHandler
 import typings.apolloLinkHttpCommon.mod.ServerError
 import typings.apolloLinkHttpCommon.mod.ServerParseError
 import typings.graphql.executeMod.ExecutionResult
-import typings.graphql.executeMod.ExecutionResultDataDefault
 import typings.graphql.mod.GraphQLError
 import typings.std.Error
 import typings.std.Record
@@ -34,7 +33,7 @@ object mod extends js.Object {
     var graphQLErrors: js.UndefOr[js.Array[GraphQLError]] = js.native
     var networkError: js.UndefOr[Error | ServerError | ServerParseError] = js.native
     var operation: Operation = js.native
-    var response: js.UndefOr[ExecutionResult[ExecutionResultDataDefault]] = js.native
+    var response: js.UndefOr[ExecutionResult[StringDictionary[_], StringDictionary[_]]] = js.native
     def forward(operation: Operation): Observable[FetchResult[StringDictionary[_], Record[String, _], Record[String, _]]] = js.native
   }
   

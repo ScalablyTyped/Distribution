@@ -11,24 +11,6 @@ object global extends js.Object {
   class Url[T] ()
     extends typings.jsurl.Url[T] {
     def this(url: String) = this()
-    /* CompleteClass */
-    override var hash: String = js.native
-    /* CompleteClass */
-    override var host: String = js.native
-    /* CompleteClass */
-    override var href: String = js.native
-    /* CompleteClass */
-    override var pass: String = js.native
-    /* CompleteClass */
-    override var path: String = js.native
-    /* CompleteClass */
-    override var port: String = js.native
-    /* CompleteClass */
-    override var protocol: String = js.native
-    /* CompleteClass */
-    override var query: T = js.native
-    /* CompleteClass */
-    override var user: String = js.native
   }
   
 }

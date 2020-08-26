@@ -26,18 +26,38 @@ trait EmbeddedSourceSettings extends js.Object {
 
 object EmbeddedSourceSettings {
   @scala.inline
-  def apply(
-    Convert608To708: EmbeddedConvert608To708 = null,
-    Source608ChannelNumber: js.UndefOr[integerMin1Max4] = js.undefined,
-    Source608TrackNumber: js.UndefOr[integerMin1Max1] = js.undefined,
-    TerminateCaptions: EmbeddedTerminateCaptions = null
-  ): EmbeddedSourceSettings = {
+  def apply(): EmbeddedSourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (Convert608To708 != null) __obj.updateDynamic("Convert608To708")(Convert608To708.asInstanceOf[js.Any])
-    if (!js.isUndefined(Source608ChannelNumber)) __obj.updateDynamic("Source608ChannelNumber")(Source608ChannelNumber.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Source608TrackNumber)) __obj.updateDynamic("Source608TrackNumber")(Source608TrackNumber.get.asInstanceOf[js.Any])
-    if (TerminateCaptions != null) __obj.updateDynamic("TerminateCaptions")(TerminateCaptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddedSourceSettings]
   }
+  @scala.inline
+  implicit class EmbeddedSourceSettingsOps[Self <: EmbeddedSourceSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConvert608To708(value: EmbeddedConvert608To708): Self = this.set("Convert608To708", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvert608To708: Self = this.set("Convert608To708", js.undefined)
+    @scala.inline
+    def setSource608ChannelNumber(value: integerMin1Max4): Self = this.set("Source608ChannelNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource608ChannelNumber: Self = this.set("Source608ChannelNumber", js.undefined)
+    @scala.inline
+    def setSource608TrackNumber(value: integerMin1Max1): Self = this.set("Source608TrackNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource608TrackNumber: Self = this.set("Source608TrackNumber", js.undefined)
+    @scala.inline
+    def setTerminateCaptions(value: EmbeddedTerminateCaptions): Self = this.set("TerminateCaptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminateCaptions: Self = this.set("TerminateCaptions", js.undefined)
+  }
+  
 }
 

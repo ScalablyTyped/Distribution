@@ -35,7 +35,6 @@ class ClientSideRowModel () extends js.Object {
   var valueService: js.Any = js.native
   def batchUpdateRowData(rowDataTransaction: RowDataTransaction): Unit = js.native
   def batchUpdateRowData(rowDataTransaction: RowDataTransaction, callback: js.Function1[/* res */ RowNodeTransaction, Unit]): Unit = js.native
-  /* private */ def commonUpdateRowData(rowNodeTrans: js.Any): js.Any = js.native
   /* private */ def commonUpdateRowData(rowNodeTrans: js.Any, rowNodeOrder: js.Any): js.Any = js.native
   /* private */ def createChangePath(rowNodeTransactions: js.Any): js.Any = js.native
   def doAggregate(): Unit = js.native

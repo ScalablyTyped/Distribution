@@ -14,9 +14,19 @@ object mod extends js.Object {
   def filter[K /* <: Objects[js.Object] */](topology: Topology[K], filter: Filter_): Topology[OrNull[K]] = js.native
   def filterAttached(topology: Topology[Objects[Properties]]): Filter_ = js.native
   def filterAttachedWeight(topology: Topology[Objects[Properties]]): Filter_ = js.native
+  def filterAttachedWeight(
+    topology: Topology[Objects[Properties]],
+    minWeight: js.UndefOr[scala.Nothing],
+    weight: RingWeighter
+  ): Filter_ = js.native
   def filterAttachedWeight(topology: Topology[Objects[Properties]], minWeight: Double): Filter_ = js.native
   def filterAttachedWeight(topology: Topology[Objects[Properties]], minWeight: Double, weight: RingWeighter): Filter_ = js.native
   def filterWeight(topology: Topology[Objects[Properties]]): Filter_ = js.native
+  def filterWeight(
+    topology: Topology[Objects[Properties]],
+    minWeight: js.UndefOr[scala.Nothing],
+    weight: RingWeighter
+  ): Filter_ = js.native
   def filterWeight(topology: Topology[Objects[Properties]], minWeight: Double): Filter_ = js.native
   def filterWeight(topology: Topology[Objects[Properties]], minWeight: Double, weight: RingWeighter): Filter_ = js.native
   def planarRingArea(ring: Ring): Double = js.native

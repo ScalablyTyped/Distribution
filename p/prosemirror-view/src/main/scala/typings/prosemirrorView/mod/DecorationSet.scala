@@ -27,7 +27,23 @@ class DecorationSet[S /* <: Schema[_, _] */] () extends js.Object {
     * assumed to match.
     */
   def find(): js.Array[Decoration[StringDictionary[_]]] = js.native
+  def find(
+    start: js.UndefOr[scala.Nothing],
+    end: js.UndefOr[scala.Nothing],
+    predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]
+  ): js.Array[Decoration[StringDictionary[_]]] = js.native
+  def find(start: js.UndefOr[scala.Nothing], end: Double): js.Array[Decoration[StringDictionary[_]]] = js.native
+  def find(
+    start: js.UndefOr[scala.Nothing],
+    end: Double,
+    predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]
+  ): js.Array[Decoration[StringDictionary[_]]] = js.native
   def find(start: Double): js.Array[Decoration[StringDictionary[_]]] = js.native
+  def find(
+    start: Double,
+    end: js.UndefOr[scala.Nothing],
+    predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]
+  ): js.Array[Decoration[StringDictionary[_]]] = js.native
   def find(start: Double, end: Double): js.Array[Decoration[StringDictionary[_]]] = js.native
   def find(start: Double, end: Double, predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]): js.Array[Decoration[StringDictionary[_]]] = js.native
   /**

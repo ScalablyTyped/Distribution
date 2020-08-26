@@ -170,6 +170,7 @@ object object3DMod extends js.Object {
     	 */
     def localToWorld(vector: Vector3): Vector3 = js.native
     def lookAt(vector: Double): Unit = js.native
+    def lookAt(vector: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
     def lookAt(vector: Double, y: Double): Unit = js.native
     def lookAt(vector: Double, y: Double, z: Double): Unit = js.native
     /**
@@ -177,6 +178,7 @@ object object3DMod extends js.Object {
     	 * @param vector A world vector to look at.
     	 */
     def lookAt(vector: Vector3): Unit = js.native
+    def lookAt(vector: Vector3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
     def lookAt(vector: Vector3, y: Double): Unit = js.native
     def lookAt(vector: Vector3, y: Double, z: Double): Unit = js.native
     def onAfterRender(

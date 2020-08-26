@@ -182,7 +182,7 @@ trait Sublayer
     */
   var visible: Boolean = js.native
   /**
-    * A convenient method for creating a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) instance based on the Sublayer's configuration, including [dynamic sources](https://enterprise.arcgis.com/en/server/latest/publish-services/linux/about-dynamic-layers.htm). This allows you to take advantage of FeatureLayer capabilities not supported in Sublayer, such as the [Smart Mapping creator functions](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html).
+    * A convenient method for creating a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) instance based on the Sublayer's configuration, including [dynamic sources](https://enterprise.arcgis.com/en/server/latest/publish-services/linux/about-dynamic-layers.htm). This allows you to take advantage of FeatureLayer capabilities not supported in Sublayer, such as the [Smart Mapping creator functions](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#createFeatureLayer)
     *
@@ -195,12 +195,10 @@ trait Sublayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#createPopupTemplate)
     *
     * @param options Options for creating the popup template.
-    * @param options.maximumFields The maximum number of fields to include in the popup template.
-    * @param options.ignoreFieldTypes Field types to ignore when creating the popup. By default the `geometry`, `blob`, `raster`, `guid` and `xml` field types are ignored.
     *
     */
   def createPopupTemplate(): PopupTemplate = js.native
-  def createPopupTemplate(options: SublayerCreatePopupTemplateOptions): PopupTemplate = js.native
+  def createPopupTemplate(options: CreatePopupTemplateOptions): PopupTemplate = js.native
   /**
     * Creates a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) object with default values representing the layer's state, including filters (definition expression) on the layer's features.
     *
@@ -241,6 +239,7 @@ trait Sublayer
     *
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: js.UndefOr[scala.Nothing], options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: SublayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native

@@ -10,47 +10,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxFormTabbedItem extends js.Object {
   /** @name dxFormTabbedItem.colSpan */
-  var colSpan: js.UndefOr[Double] = js.undefined
+  var colSpan: js.UndefOr[Double] = js.native
   /** @name dxFormTabbedItem.cssClass */
-  var cssClass: js.UndefOr[String] = js.undefined
+  var cssClass: js.UndefOr[String] = js.native
   /** @name dxFormTabbedItem.itemType */
-  var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
+  var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.native
   /** @name dxFormTabbedItem.name */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** @name dxFormTabbedItem.tabPanelOptions */
-  var tabPanelOptions: js.UndefOr[dxTabPanelOptions] = js.undefined
+  var tabPanelOptions: js.UndefOr[dxTabPanelOptions] = js.native
   /** @name dxFormTabbedItem.tabs */
-  var tabs: js.UndefOr[js.Array[AlignItemLabels]] = js.undefined
+  var tabs: js.UndefOr[js.Array[AlignItemLabels]] = js.native
   /** @name dxFormTabbedItem.visible */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
   /** @name dxFormTabbedItem.visibleIndex */
-  var visibleIndex: js.UndefOr[Double] = js.undefined
+  var visibleIndex: js.UndefOr[Double] = js.native
 }
 
 object dxFormTabbedItem {
   @scala.inline
-  def apply(
-    colSpan: js.UndefOr[Double] = js.undefined,
-    cssClass: String = null,
-    itemType: empty | group | simple | tabbed | button = null,
-    name: String = null,
-    tabPanelOptions: dxTabPanelOptions = null,
-    tabs: js.Array[AlignItemLabels] = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    visibleIndex: js.UndefOr[Double] = js.undefined
-  ): dxFormTabbedItem = {
+  def apply(): dxFormTabbedItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tabPanelOptions != null) __obj.updateDynamic("tabPanelOptions")(tabPanelOptions.asInstanceOf[js.Any])
-    if (tabs != null) __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleIndex)) __obj.updateDynamic("visibleIndex")(visibleIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFormTabbedItem]
   }
+  @scala.inline
+  implicit class dxFormTabbedItemOps[Self <: dxFormTabbedItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setItemType(value: empty | group | simple | tabbed | button): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemType: Self = this.set("itemType", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTabPanelOptions(value: dxTabPanelOptions): Self = this.set("tabPanelOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabPanelOptions: Self = this.set("tabPanelOptions", js.undefined)
+    @scala.inline
+    def setTabsVarargs(value: AlignItemLabels*): Self = this.set("tabs", js.Array(value :_*))
+    @scala.inline
+    def setTabs(value: js.Array[AlignItemLabels]): Self = this.set("tabs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabs: Self = this.set("tabs", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setVisibleIndex(value: Double): Self = this.set("visibleIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleIndex: Self = this.set("visibleIndex", js.undefined)
+  }
+  
 }
 

@@ -14,6 +14,7 @@ class PointsMaterial () extends Material {
   var alphaMap: Texture | Null = js.native
   var color: Color = js.native
   var map: Texture | Null = js.native
+  var morphTargets: Boolean = js.native
   var size: Double = js.native
   var sizeAttenuation: Boolean = js.native
   def setValues(parameters: PointsMaterialParameters): Unit = js.native

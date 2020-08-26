@@ -24,14 +24,30 @@ trait SchemaSuggestedTableCellStyle extends js.Object {
 
 object SchemaSuggestedTableCellStyle {
   @scala.inline
-  def apply(
-    tableCellStyle: SchemaTableCellStyle = null,
-    tableCellStyleSuggestionState: SchemaTableCellStyleSuggestionState = null
-  ): SchemaSuggestedTableCellStyle = {
+  def apply(): SchemaSuggestedTableCellStyle = {
     val __obj = js.Dynamic.literal()
-    if (tableCellStyle != null) __obj.updateDynamic("tableCellStyle")(tableCellStyle.asInstanceOf[js.Any])
-    if (tableCellStyleSuggestionState != null) __obj.updateDynamic("tableCellStyleSuggestionState")(tableCellStyleSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSuggestedTableCellStyle]
   }
+  @scala.inline
+  implicit class SchemaSuggestedTableCellStyleOps[Self <: SchemaSuggestedTableCellStyle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTableCellStyle(value: SchemaTableCellStyle): Self = this.set("tableCellStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableCellStyle: Self = this.set("tableCellStyle", js.undefined)
+    @scala.inline
+    def setTableCellStyleSuggestionState(value: SchemaTableCellStyleSuggestionState): Self = this.set("tableCellStyleSuggestionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableCellStyleSuggestionState: Self = this.set("tableCellStyleSuggestionState", js.undefined)
+  }
+  
 }
 

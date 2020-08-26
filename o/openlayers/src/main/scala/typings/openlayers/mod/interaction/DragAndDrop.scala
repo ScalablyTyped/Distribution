@@ -62,6 +62,12 @@ object DragAndDrop extends js.Object {
     def this(
       `type`: DragAndDropEventType,
       file: File,
+      opt_features: js.UndefOr[scala.Nothing],
+      opt_projection: Projection
+    ) = this()
+    def this(
+      `type`: DragAndDropEventType,
+      file: File,
       opt_features: js.Array[Feature],
       opt_projection: Projection
     ) = this()

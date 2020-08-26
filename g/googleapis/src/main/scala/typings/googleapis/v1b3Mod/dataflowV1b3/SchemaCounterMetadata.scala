@@ -29,18 +29,38 @@ trait SchemaCounterMetadata extends js.Object {
 
 object SchemaCounterMetadata {
   @scala.inline
-  def apply(
-    description: String = null,
-    kind: String = null,
-    otherUnits: String = null,
-    standardUnits: String = null
-  ): SchemaCounterMetadata = {
+  def apply(): SchemaCounterMetadata = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (otherUnits != null) __obj.updateDynamic("otherUnits")(otherUnits.asInstanceOf[js.Any])
-    if (standardUnits != null) __obj.updateDynamic("standardUnits")(standardUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCounterMetadata]
   }
+  @scala.inline
+  implicit class SchemaCounterMetadataOps[Self <: SchemaCounterMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setOtherUnits(value: String): Self = this.set("otherUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtherUnits: Self = this.set("otherUnits", js.undefined)
+    @scala.inline
+    def setStandardUnits(value: String): Self = this.set("standardUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandardUnits: Self = this.set("standardUnits", js.undefined)
+  }
+  
 }
 

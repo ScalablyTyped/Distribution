@@ -30,6 +30,7 @@ class ResourceBiddersFiltersetsBidresponseerrors protected () extends js.Object 
     */
   def list(): GaxiosPromise[SchemaListBidResponseErrorsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListBidResponseErrorsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListBidResponseErrorsResponse] = js.native
   def list(params: ParamsResourceBiddersFiltersetsBidresponseerrorsList): GaxiosPromise[SchemaListBidResponseErrorsResponse] = js.native
   def list(
     params: ParamsResourceBiddersFiltersetsBidresponseerrorsList,

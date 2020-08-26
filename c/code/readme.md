@@ -12,7 +12,7 @@ assertion library
 | Keywords           | test, expect, assertion |
 | # releases         | 6 |
 | # dependents       | 49 |
-| # downloads        | 1055508 |
+| # downloads        | 1042592 |
 | # stars            | 17 |
 
 ## Links

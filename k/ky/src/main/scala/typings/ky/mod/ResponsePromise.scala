@@ -3,14 +3,14 @@ package typings.ky.mod
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.FormData
-import typings.std.Promise
 import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ResponsePromise extends Promise[Response] {
+trait ResponsePromise
+  extends js.Promise[Response] {
   def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
   def blob(): js.Promise[Blob] = js.native
   def formData(): js.Promise[FormData] = js.native

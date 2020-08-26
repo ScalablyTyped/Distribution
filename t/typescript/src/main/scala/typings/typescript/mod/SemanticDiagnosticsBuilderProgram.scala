@@ -14,6 +14,10 @@ trait SemanticDiagnosticsBuilderProgram extends BuilderProgram {
     * Returns undefined if the iteration is complete
     */
   def getSemanticDiagnosticsOfNextAffectedFile(): AffectedFileResult[js.Array[Diagnostic]] = js.native
+  def getSemanticDiagnosticsOfNextAffectedFile(
+    cancellationToken: js.UndefOr[scala.Nothing],
+    ignoreSourceFile: js.Function1[/* sourceFile */ SourceFile, Boolean]
+  ): AffectedFileResult[js.Array[Diagnostic]] = js.native
   def getSemanticDiagnosticsOfNextAffectedFile(cancellationToken: CancellationToken): AffectedFileResult[js.Array[Diagnostic]] = js.native
   def getSemanticDiagnosticsOfNextAffectedFile(
     cancellationToken: CancellationToken,

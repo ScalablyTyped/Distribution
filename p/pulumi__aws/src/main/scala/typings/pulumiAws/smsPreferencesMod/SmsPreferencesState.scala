@@ -35,22 +35,46 @@ trait SmsPreferencesState extends js.Object {
 
 object SmsPreferencesState {
   @scala.inline
-  def apply(
-    defaultSenderId: Input[String] = null,
-    defaultSmsType: Input[String] = null,
-    deliveryStatusIamRoleArn: Input[String] = null,
-    deliveryStatusSuccessSamplingRate: Input[String] = null,
-    monthlySpendLimit: Input[String] = null,
-    usageReportS3Bucket: Input[String] = null
-  ): SmsPreferencesState = {
+  def apply(): SmsPreferencesState = {
     val __obj = js.Dynamic.literal()
-    if (defaultSenderId != null) __obj.updateDynamic("defaultSenderId")(defaultSenderId.asInstanceOf[js.Any])
-    if (defaultSmsType != null) __obj.updateDynamic("defaultSmsType")(defaultSmsType.asInstanceOf[js.Any])
-    if (deliveryStatusIamRoleArn != null) __obj.updateDynamic("deliveryStatusIamRoleArn")(deliveryStatusIamRoleArn.asInstanceOf[js.Any])
-    if (deliveryStatusSuccessSamplingRate != null) __obj.updateDynamic("deliveryStatusSuccessSamplingRate")(deliveryStatusSuccessSamplingRate.asInstanceOf[js.Any])
-    if (monthlySpendLimit != null) __obj.updateDynamic("monthlySpendLimit")(monthlySpendLimit.asInstanceOf[js.Any])
-    if (usageReportS3Bucket != null) __obj.updateDynamic("usageReportS3Bucket")(usageReportS3Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmsPreferencesState]
   }
+  @scala.inline
+  implicit class SmsPreferencesStateOps[Self <: SmsPreferencesState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultSenderId(value: Input[String]): Self = this.set("defaultSenderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSenderId: Self = this.set("defaultSenderId", js.undefined)
+    @scala.inline
+    def setDefaultSmsType(value: Input[String]): Self = this.set("defaultSmsType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSmsType: Self = this.set("defaultSmsType", js.undefined)
+    @scala.inline
+    def setDeliveryStatusIamRoleArn(value: Input[String]): Self = this.set("deliveryStatusIamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryStatusIamRoleArn: Self = this.set("deliveryStatusIamRoleArn", js.undefined)
+    @scala.inline
+    def setDeliveryStatusSuccessSamplingRate(value: Input[String]): Self = this.set("deliveryStatusSuccessSamplingRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryStatusSuccessSamplingRate: Self = this.set("deliveryStatusSuccessSamplingRate", js.undefined)
+    @scala.inline
+    def setMonthlySpendLimit(value: Input[String]): Self = this.set("monthlySpendLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonthlySpendLimit: Self = this.set("monthlySpendLimit", js.undefined)
+    @scala.inline
+    def setUsageReportS3Bucket(value: Input[String]): Self = this.set("usageReportS3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsageReportS3Bucket: Self = this.set("usageReportS3Bucket", js.undefined)
+  }
+  
 }
 

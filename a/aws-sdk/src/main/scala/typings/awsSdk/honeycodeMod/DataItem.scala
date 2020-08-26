@@ -22,12 +22,34 @@ trait DataItem extends js.Object {
 
 object DataItem {
   @scala.inline
-  def apply(formattedValue: FormattedValue = null, overrideFormat: Format = null, rawValue: RawValue = null): DataItem = {
+  def apply(): DataItem = {
     val __obj = js.Dynamic.literal()
-    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue.asInstanceOf[js.Any])
-    if (overrideFormat != null) __obj.updateDynamic("overrideFormat")(overrideFormat.asInstanceOf[js.Any])
-    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataItem]
   }
+  @scala.inline
+  implicit class DataItemOps[Self <: DataItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormattedValue(value: FormattedValue): Self = this.set("formattedValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormattedValue: Self = this.set("formattedValue", js.undefined)
+    @scala.inline
+    def setOverrideFormat(value: Format): Self = this.set("overrideFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrideFormat: Self = this.set("overrideFormat", js.undefined)
+    @scala.inline
+    def setRawValue(value: RawValue): Self = this.set("rawValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawValue: Self = this.set("rawValue", js.undefined)
+  }
+  
 }
 

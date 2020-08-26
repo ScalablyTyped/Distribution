@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ManifestAction extends js.Object {
-  var default_icon: js.UndefOr[typings.chrome.chrome.runtime.ManifestIcons] = js.undefined
-  var default_popup: js.UndefOr[String] = js.undefined
-  var default_title: js.UndefOr[String] = js.undefined
+  var default_icon: js.UndefOr[typings.chrome.chrome.runtime.ManifestIcons] = js.native
+  var default_popup: js.UndefOr[String] = js.native
+  var default_title: js.UndefOr[String] = js.native
 }
 
 object ManifestAction {
   @scala.inline
-  def apply(
-    default_icon: typings.chrome.chrome.runtime.ManifestIcons = null,
-    default_popup: String = null,
-    default_title: String = null
-  ): ManifestAction = {
+  def apply(): ManifestAction = {
     val __obj = js.Dynamic.literal()
-    if (default_icon != null) __obj.updateDynamic("default_icon")(default_icon.asInstanceOf[js.Any])
-    if (default_popup != null) __obj.updateDynamic("default_popup")(default_popup.asInstanceOf[js.Any])
-    if (default_title != null) __obj.updateDynamic("default_title")(default_title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManifestAction]
   }
+  @scala.inline
+  implicit class ManifestActionOps[Self <: ManifestAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefault_icon(value: typings.chrome.chrome.runtime.ManifestIcons): Self = this.set("default_icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_icon: Self = this.set("default_icon", js.undefined)
+    @scala.inline
+    def setDefault_popup(value: String): Self = this.set("default_popup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_popup: Self = this.set("default_popup", js.undefined)
+    @scala.inline
+    def setDefault_title(value: String): Self = this.set("default_title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_title: Self = this.set("default_title", js.undefined)
+  }
+  
 }
 

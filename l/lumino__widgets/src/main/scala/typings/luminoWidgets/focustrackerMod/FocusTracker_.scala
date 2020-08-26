@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/focustracker", "FocusTracker")
+@JSImport("@lumino/widgets/types/focustracker", "FocusTracker")
 @js.native
 /**
   * Construct a new focus tracker.
@@ -75,14 +75,6 @@ class FocusTracker_[T /* <: Widget */] () extends IDisposable {
     */
   val currentWidget: T | Null = js.native
   /**
-    * Test whether the object has been disposed.
-    *
-    * #### Notes
-    * This property is always safe to access.
-    */
-  /* CompleteClass */
-  override val isDisposed: Boolean = js.native
-  /**
     * A read only array of the widgets being tracked.
     */
   val widgets: js.Array[T] = js.native
@@ -98,19 +90,6 @@ class FocusTracker_[T /* <: Widget */] () extends IDisposable {
     * If the widget is already tracked, this is a no-op.
     */
   def add(widget: T): Unit = js.native
-  /**
-    * Dispose of the resources held by the object.
-    *
-    * #### Notes
-    * If the object's `dispose` method is called more than once, all
-    * calls made after the first will be a no-op.
-    *
-    * #### Undefined Behavior
-    * It is undefined behavior to use any functionality of the object
-    * after it has been disposed unless otherwise explicitly noted.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /**
     * Get the focus number for a particular widget in the tracker.
     *

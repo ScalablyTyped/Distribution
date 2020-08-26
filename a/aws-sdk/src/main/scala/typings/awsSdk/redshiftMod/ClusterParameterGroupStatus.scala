@@ -22,16 +22,36 @@ trait ClusterParameterGroupStatus extends js.Object {
 
 object ClusterParameterGroupStatus {
   @scala.inline
-  def apply(
-    ClusterParameterStatusList: ClusterParameterStatusList = null,
-    ParameterApplyStatus: String = null,
-    ParameterGroupName: String = null
-  ): ClusterParameterGroupStatus = {
+  def apply(): ClusterParameterGroupStatus = {
     val __obj = js.Dynamic.literal()
-    if (ClusterParameterStatusList != null) __obj.updateDynamic("ClusterParameterStatusList")(ClusterParameterStatusList.asInstanceOf[js.Any])
-    if (ParameterApplyStatus != null) __obj.updateDynamic("ParameterApplyStatus")(ParameterApplyStatus.asInstanceOf[js.Any])
-    if (ParameterGroupName != null) __obj.updateDynamic("ParameterGroupName")(ParameterGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterParameterGroupStatus]
   }
+  @scala.inline
+  implicit class ClusterParameterGroupStatusOps[Self <: ClusterParameterGroupStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterParameterStatusListVarargs(value: ClusterParameterStatus*): Self = this.set("ClusterParameterStatusList", js.Array(value :_*))
+    @scala.inline
+    def setClusterParameterStatusList(value: ClusterParameterStatusList): Self = this.set("ClusterParameterStatusList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterParameterStatusList: Self = this.set("ClusterParameterStatusList", js.undefined)
+    @scala.inline
+    def setParameterApplyStatus(value: String): Self = this.set("ParameterApplyStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterApplyStatus: Self = this.set("ParameterApplyStatus", js.undefined)
+    @scala.inline
+    def setParameterGroupName(value: String): Self = this.set("ParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterGroupName: Self = this.set("ParameterGroupName", js.undefined)
+  }
+  
 }
 

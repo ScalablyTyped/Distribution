@@ -23,7 +23,11 @@ trait Static
   extends EventEmitter
      with Instantiable0[Database[js.Object]]
      with Instantiable1[/* name */ String, Database[js.Object]]
-     with Instantiable2[/* name */ String, /* options */ DatabaseConfiguration, Database[js.Object]] {
+     with Instantiable2[
+      js.UndefOr[/* name */ String], 
+      /* options */ DatabaseConfiguration, 
+      Database[js.Object]
+    ] {
   @JSName("debug")
   var debug_Original: IDebug = js.native
   @JSName("fetch")

@@ -26,31 +26,31 @@ class WebUIProjectSettingsPart protected () extends ProjectSettingsPart {
     * In version 6.6.0: introduced
     */
   def enableDownloadResources: Boolean = js.native
-  def enableDownloadResources(newValue: Boolean): js.Any = js.native
+  def enableDownloadResources_=(newValue: Boolean): Unit = js.native
   /**
     * In version 7.0.2: introduced
     */
   def enableMicroflowReachabilityAnalysis: Boolean = js.native
-  def enableMicroflowReachabilityAnalysis(newValue: Boolean): js.Any = js.native
+  def enableMicroflowReachabilityAnalysis_=(newValue: Boolean): Unit = js.native
   def enableWidgetBundling: Boolean = js.native
-  def enableWidgetBundling(newValue: Boolean): js.Any = js.native
+  def enableWidgetBundling_=(newValue: Boolean): Unit = js.native
   /**
     * In version 6.2.0: deleted
     */
   def feedbackWidgetUpdated: Boolean = js.native
-  def feedbackWidgetUpdated(newValue: Boolean): js.Any = js.native
+  def feedbackWidgetUpdated_=(newValue: Boolean): Unit = js.native
   def theme: String = js.native
-  def theme(newValue: String): js.Any = js.native
   /**
     * In version 8.0.0: introduced
     */
   def themeConversionStatus: ThemeConversionStatusEnum = js.native
-  def themeConversionStatus(newValue: ThemeConversionStatusEnum): js.Any = js.native
+  def themeConversionStatus_=(newValue: ThemeConversionStatusEnum): Unit = js.native
   /**
     * In version 7.9.0: introduced
     */
   def themeModuleName: String = js.native
-  def themeModuleName(newValue: String): js.Any = js.native
+  def themeModuleName_=(newValue: String): Unit = js.native
+  def theme_=(newValue: String): Unit = js.native
 }
 
 /* static members */

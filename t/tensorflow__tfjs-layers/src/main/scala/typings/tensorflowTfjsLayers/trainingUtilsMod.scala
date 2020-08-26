@@ -20,8 +20,30 @@ object trainingUtilsMod extends js.Object {
   def standardizeSampleWeights(classWeight: ClassWeightMap, outputNames: js.Array[String]): js.Array[ClassWeight] = js.native
   def standardizeSampleWeights(classWeight: ClassWeight, outputNames: js.Array[String]): js.Array[ClassWeight] = js.native
   def standardizeWeights(y: Tensor[Rank]): js.Promise[Tensor[Rank]] = js.native
+  def standardizeWeights(y: Tensor[Rank], sampleWeight: js.UndefOr[scala.Nothing], classWeight: ClassWeight): js.Promise[Tensor[Rank]] = js.native
   def standardizeWeights(y: Tensor[Rank], sampleWeight: Tensor[Rank]): js.Promise[Tensor[Rank]] = js.native
   def standardizeWeights(y: Tensor[Rank], sampleWeight: Tensor[Rank], classWeight: ClassWeight): js.Promise[Tensor[Rank]] = js.native
+  @JSName("standardizeWeights")
+  def standardizeWeights_temporal(
+    y: Tensor[Rank],
+    sampleWeight: js.UndefOr[scala.Nothing],
+    classWeight: js.UndefOr[scala.Nothing],
+    sampleWeightMode: temporal
+  ): js.Promise[Tensor[Rank]] = js.native
+  @JSName("standardizeWeights")
+  def standardizeWeights_temporal(
+    y: Tensor[Rank],
+    sampleWeight: js.UndefOr[scala.Nothing],
+    classWeight: ClassWeight,
+    sampleWeightMode: temporal
+  ): js.Promise[Tensor[Rank]] = js.native
+  @JSName("standardizeWeights")
+  def standardizeWeights_temporal(
+    y: Tensor[Rank],
+    sampleWeight: Tensor[Rank],
+    classWeight: js.UndefOr[scala.Nothing],
+    sampleWeightMode: temporal
+  ): js.Promise[Tensor[Rank]] = js.native
   @JSName("standardizeWeights")
   def standardizeWeights_temporal(y: Tensor[Rank], sampleWeight: Tensor[Rank], classWeight: ClassWeight, sampleWeightMode: temporal): js.Promise[Tensor[Rank]] = js.native
   type ClassWeight = NumberDictionary[Double]

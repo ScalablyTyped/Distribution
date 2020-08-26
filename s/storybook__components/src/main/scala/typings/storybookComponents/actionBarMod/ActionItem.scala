@@ -17,14 +17,30 @@ trait ActionItem extends js.Object {
 
 object ActionItem {
   @scala.inline
-  def apply(
-    onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit,
-    title: String | Element,
-    disabled: js.UndefOr[Boolean] = js.undefined
-  ): ActionItem = {
+  def apply(onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit, title: String | Element): ActionItem = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionItem]
   }
+  @scala.inline
+  implicit class ActionItemOps[Self <: ActionItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTitle(value: String | Element): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+  }
+  
 }
 

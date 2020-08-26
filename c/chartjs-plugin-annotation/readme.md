@@ -11,8 +11,8 @@ Annotations for Chart.js
 | Full name          | chartjs-plugin-annotation |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 1310502 |
+| # dependents       | 10 |
+| # downloads        | 1180754 |
 | # stars            | 0 |
 
 ## Links

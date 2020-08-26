@@ -54,7 +54,7 @@ object deploymentmanagerMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Deploymentmanager
               ]
             ]
@@ -64,7 +64,7 @@ object deploymentmanagerMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2.Deploymentmanager
               ]
             ]
@@ -74,7 +74,7 @@ object deploymentmanagerMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.v2betaMod.deploymentmanagerV2beta.Deploymentmanager
               ]
             ]

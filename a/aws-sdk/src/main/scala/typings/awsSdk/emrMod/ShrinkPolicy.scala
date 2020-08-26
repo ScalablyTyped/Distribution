@@ -18,14 +18,30 @@ trait ShrinkPolicy extends js.Object {
 
 object ShrinkPolicy {
   @scala.inline
-  def apply(
-    DecommissionTimeout: js.UndefOr[Integer] = js.undefined,
-    InstanceResizePolicy: InstanceResizePolicy = null
-  ): ShrinkPolicy = {
+  def apply(): ShrinkPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DecommissionTimeout)) __obj.updateDynamic("DecommissionTimeout")(DecommissionTimeout.get.asInstanceOf[js.Any])
-    if (InstanceResizePolicy != null) __obj.updateDynamic("InstanceResizePolicy")(InstanceResizePolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShrinkPolicy]
   }
+  @scala.inline
+  implicit class ShrinkPolicyOps[Self <: ShrinkPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDecommissionTimeout(value: Integer): Self = this.set("DecommissionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecommissionTimeout: Self = this.set("DecommissionTimeout", js.undefined)
+    @scala.inline
+    def setInstanceResizePolicy(value: InstanceResizePolicy): Self = this.set("InstanceResizePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceResizePolicy: Self = this.set("InstanceResizePolicy", js.undefined)
+  }
+  
 }
 

@@ -5,17 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides subscription info for a product SKU that represents a subscription with recurring billing. */
+@js.native
 trait StoreSubscriptionInfo extends js.Object {
   /** Gets the duration of the billing period for a subscription, in the units specified by the BillingPeriodUnit property. */
-  var billingPeriod: Double
+  var billingPeriod: Double = js.native
   /** Gets the units of the billing period for a subscription. */
-  var billingPeriodUnit: StoreDurationUnit
+  var billingPeriodUnit: StoreDurationUnit = js.native
   /** Gets a value that indicates whether the subscription contains a trial period. */
-  var hasTrialPeriod: Boolean
+  var hasTrialPeriod: Boolean = js.native
   /** Gets the duration of the trial period for the subscription, in the units specified by the TrialPeriodUnit property. To determine whether the subscription has a trial period, use the HasTrialPeriod property. */
-  var trialPeriod: Double
+  var trialPeriod: Double = js.native
   /** Gets the units of the trial period for the subscription. */
-  var trialPeriodUnit: StoreDurationUnit
+  var trialPeriodUnit: StoreDurationUnit = js.native
 }
 
 object StoreSubscriptionInfo {
@@ -30,5 +31,28 @@ object StoreSubscriptionInfo {
     val __obj = js.Dynamic.literal(billingPeriod = billingPeriod.asInstanceOf[js.Any], billingPeriodUnit = billingPeriodUnit.asInstanceOf[js.Any], hasTrialPeriod = hasTrialPeriod.asInstanceOf[js.Any], trialPeriod = trialPeriod.asInstanceOf[js.Any], trialPeriodUnit = trialPeriodUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreSubscriptionInfo]
   }
+  @scala.inline
+  implicit class StoreSubscriptionInfoOps[Self <: StoreSubscriptionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillingPeriod(value: Double): Self = this.set("billingPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBillingPeriodUnit(value: StoreDurationUnit): Self = this.set("billingPeriodUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasTrialPeriod(value: Boolean): Self = this.set("hasTrialPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrialPeriod(value: Double): Self = this.set("trialPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrialPeriodUnit(value: StoreDurationUnit): Self = this.set("trialPeriodUnit", value.asInstanceOf[js.Any])
+  }
+  
 }
 

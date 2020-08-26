@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Icon extends js.Object {
   /**
     * Parses the input to an icon-id.
@@ -17,15 +18,31 @@ trait Icon extends js.Object {
     * @return
     * The id of the icon to get.
     */
-  var iconIdParser: js.UndefOr[js.Function2[/* id */ String, /* params */ js.Array[String], String]] = js.undefined
+  var iconIdParser: js.UndefOr[js.Function2[/* id */ String, /* params */ js.Array[String], String]] = js.native
 }
 
 object Icon {
   @scala.inline
-  def apply(iconIdParser: (/* id */ String, /* params */ js.Array[String]) => String = null): Icon = {
+  def apply(): Icon = {
     val __obj = js.Dynamic.literal()
-    if (iconIdParser != null) __obj.updateDynamic("iconIdParser")(js.Any.fromFunction2(iconIdParser))
     __obj.asInstanceOf[Icon]
   }
+  @scala.inline
+  implicit class IconOps[Self <: Icon] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIconIdParser(value: (/* id */ String, /* params */ js.Array[String]) => String): Self = this.set("iconIdParser", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteIconIdParser: Self = this.set("iconIdParser", js.undefined)
+  }
+  
 }
 

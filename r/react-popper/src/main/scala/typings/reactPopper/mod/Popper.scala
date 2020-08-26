@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-popper", "Popper")
 @js.native
-class Popper ()
-  extends Component[PopperProps, js.Object, js.Any]
+class Popper[Modifiers] ()
+  extends Component[PopperProps[Modifiers], js.Object, js.Any]
 

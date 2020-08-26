@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MinMaxNormArgs extends js.Object {
   /**
     * Axis along which to calculate norms.
@@ -18,15 +19,15 @@ trait MinMaxNormArgs extends js.Object {
     * to constrain the weights of each filter tensor of size
     * `[rows, cols, inputDepth]`.
     */
-  var axis: js.UndefOr[Double] = js.undefined
+  var axis: js.UndefOr[Double] = js.native
   /**
     * Maximum norm for incoming weights
     */
-  var maxValue: js.UndefOr[Double] = js.undefined
+  var maxValue: js.UndefOr[Double] = js.native
   /**
     * Minimum norm for incoming weights
     */
-  var minValue: js.UndefOr[Double] = js.undefined
+  var minValue: js.UndefOr[Double] = js.native
   /**
     * Rate for enforcing the constraint: weights will be rescaled to yield:
     * `(1 - rate) * norm + rate * norm.clip(minValue, maxValue)`.
@@ -35,23 +36,43 @@ trait MinMaxNormArgs extends js.Object {
     * weights will be rescaled at each step to slowly move
     * towards a value inside the desired interval.
     */
-  var rate: js.UndefOr[Double] = js.undefined
+  var rate: js.UndefOr[Double] = js.native
 }
 
 object MinMaxNormArgs {
   @scala.inline
-  def apply(
-    axis: js.UndefOr[Double] = js.undefined,
-    maxValue: js.UndefOr[Double] = js.undefined,
-    minValue: js.UndefOr[Double] = js.undefined,
-    rate: js.UndefOr[Double] = js.undefined
-  ): MinMaxNormArgs = {
+  def apply(): MinMaxNormArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinMaxNormArgs]
   }
+  @scala.inline
+  implicit class MinMaxNormArgsOps[Self <: MinMaxNormArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAxis(value: Double): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRate: Self = this.set("rate", js.undefined)
+  }
+  
 }
 

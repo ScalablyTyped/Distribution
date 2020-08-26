@@ -18,11 +18,32 @@ trait Metrics extends js.Object {
 
 object Metrics {
   @scala.inline
-  def apply(RMSE: js.UndefOr[Double] = js.undefined, WeightedQuantileLosses: WeightedQuantileLosses = null): Metrics = {
+  def apply(): Metrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(RMSE)) __obj.updateDynamic("RMSE")(RMSE.get.asInstanceOf[js.Any])
-    if (WeightedQuantileLosses != null) __obj.updateDynamic("WeightedQuantileLosses")(WeightedQuantileLosses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metrics]
   }
+  @scala.inline
+  implicit class MetricsOps[Self <: Metrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRMSE(value: Double): Self = this.set("RMSE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRMSE: Self = this.set("RMSE", js.undefined)
+    @scala.inline
+    def setWeightedQuantileLossesVarargs(value: WeightedQuantileLoss*): Self = this.set("WeightedQuantileLosses", js.Array(value :_*))
+    @scala.inline
+    def setWeightedQuantileLosses(value: WeightedQuantileLosses): Self = this.set("WeightedQuantileLosses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeightedQuantileLosses: Self = this.set("WeightedQuantileLosses", js.undefined)
+  }
+  
 }
 

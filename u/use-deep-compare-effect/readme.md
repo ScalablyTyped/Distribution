@@ -11,8 +11,8 @@ It's react's useEffect hook, except using deep comparison on the inputs, not ref
 | Full name          | use-deep-compare-effect |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 17 |
-| # downloads        | 219174 |
+| # dependents       | 19 |
+| # downloads        | 261169 |
 | # stars            | 0 |
 
 ## Links

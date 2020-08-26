@@ -26,16 +26,34 @@ trait CompareFacesRequest extends js.Object {
 
 object CompareFacesRequest {
   @scala.inline
-  def apply(
-    SourceImage: Image,
-    TargetImage: Image,
-    QualityFilter: QualityFilter = null,
-    SimilarityThreshold: js.UndefOr[Percent] = js.undefined
-  ): CompareFacesRequest = {
+  def apply(SourceImage: Image, TargetImage: Image): CompareFacesRequest = {
     val __obj = js.Dynamic.literal(SourceImage = SourceImage.asInstanceOf[js.Any], TargetImage = TargetImage.asInstanceOf[js.Any])
-    if (QualityFilter != null) __obj.updateDynamic("QualityFilter")(QualityFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(SimilarityThreshold)) __obj.updateDynamic("SimilarityThreshold")(SimilarityThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompareFacesRequest]
   }
+  @scala.inline
+  implicit class CompareFacesRequestOps[Self <: CompareFacesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceImage(value: Image): Self = this.set("SourceImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetImage(value: Image): Self = this.set("TargetImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQualityFilter(value: QualityFilter): Self = this.set("QualityFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualityFilter: Self = this.set("QualityFilter", js.undefined)
+    @scala.inline
+    def setSimilarityThreshold(value: Percent): Self = this.set("SimilarityThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimilarityThreshold: Self = this.set("SimilarityThreshold", js.undefined)
+  }
+  
 }
 

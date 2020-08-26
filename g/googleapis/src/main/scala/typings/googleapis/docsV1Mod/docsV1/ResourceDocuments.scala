@@ -41,6 +41,7 @@ class ResourceDocuments protected () extends js.Object {
     */
   def batchUpdate(): GaxiosPromise[SchemaBatchUpdateDocumentResponse] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaBatchUpdateDocumentResponse]): Unit = js.native
+  def batchUpdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchUpdateDocumentResponse] = js.native
   def batchUpdate(params: ParamsResourceDocumentsBatchupdate): GaxiosPromise[SchemaBatchUpdateDocumentResponse] = js.native
   def batchUpdate(
     params: ParamsResourceDocumentsBatchupdate,
@@ -73,6 +74,7 @@ class ResourceDocuments protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaDocument] = js.native
   def create(callback: BodyResponseCallback[SchemaDocument]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
   def create(params: ParamsResourceDocumentsCreate): GaxiosPromise[SchemaDocument] = js.native
   def create(params: ParamsResourceDocumentsCreate, callback: BodyResponseCallback[SchemaDocument]): Unit = js.native
   def create(
@@ -101,6 +103,7 @@ class ResourceDocuments protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDocument] = js.native
   def get(callback: BodyResponseCallback[SchemaDocument]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
   def get(params: ParamsResourceDocumentsGet): GaxiosPromise[SchemaDocument] = js.native
   def get(params: ParamsResourceDocumentsGet, callback: BodyResponseCallback[SchemaDocument]): Unit = js.native
   def get(

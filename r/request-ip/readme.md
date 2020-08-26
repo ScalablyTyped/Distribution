@@ -10,8 +10,8 @@ A small node.js module to retrieve the request's IP address
 | Full name          | request-ip |
 | Keywords           | request ip, ip, address, request, proxy, client, header, X-Client-IP, X-Forwarded-For, CF-Connecting-IP, Fastly-Client-IP, True-Client-IP, X-Real-IP, X-Cluster-Client-IP, X-Forwarded, Forwarded-For, connection.remoteAddress, connection.socket.remoteAddress, req.info.remoteAddress, middleware, ipv4, ipv6 |
 | # releases         | 4 |
-| # dependents       | 120 |
-| # downloads        | 9819611 |
+| # dependents       | 125 |
+| # downloads        | 10185432 |
 | # stars            | 25 |
 
 ## Links

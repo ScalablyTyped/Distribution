@@ -22,16 +22,38 @@ trait SkewedInfo extends js.Object {
 
 object SkewedInfo {
   @scala.inline
-  def apply(
-    SkewedColumnNames: NameStringList = null,
-    SkewedColumnValueLocationMaps: LocationMap = null,
-    SkewedColumnValues: ColumnValueStringList = null
-  ): SkewedInfo = {
+  def apply(): SkewedInfo = {
     val __obj = js.Dynamic.literal()
-    if (SkewedColumnNames != null) __obj.updateDynamic("SkewedColumnNames")(SkewedColumnNames.asInstanceOf[js.Any])
-    if (SkewedColumnValueLocationMaps != null) __obj.updateDynamic("SkewedColumnValueLocationMaps")(SkewedColumnValueLocationMaps.asInstanceOf[js.Any])
-    if (SkewedColumnValues != null) __obj.updateDynamic("SkewedColumnValues")(SkewedColumnValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkewedInfo]
   }
+  @scala.inline
+  implicit class SkewedInfoOps[Self <: SkewedInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSkewedColumnNamesVarargs(value: NameString*): Self = this.set("SkewedColumnNames", js.Array(value :_*))
+    @scala.inline
+    def setSkewedColumnNames(value: NameStringList): Self = this.set("SkewedColumnNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkewedColumnNames: Self = this.set("SkewedColumnNames", js.undefined)
+    @scala.inline
+    def setSkewedColumnValueLocationMaps(value: LocationMap): Self = this.set("SkewedColumnValueLocationMaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkewedColumnValueLocationMaps: Self = this.set("SkewedColumnValueLocationMaps", js.undefined)
+    @scala.inline
+    def setSkewedColumnValuesVarargs(value: ColumnValuesString*): Self = this.set("SkewedColumnValues", js.Array(value :_*))
+    @scala.inline
+    def setSkewedColumnValues(value: ColumnValueStringList): Self = this.set("SkewedColumnValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkewedColumnValues: Self = this.set("SkewedColumnValues", js.undefined)
+  }
+  
 }
 

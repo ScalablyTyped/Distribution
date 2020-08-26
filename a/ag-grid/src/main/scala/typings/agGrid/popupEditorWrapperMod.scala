@@ -27,9 +27,6 @@ object popupEditorWrapperMod extends js.Object {
     def focusIn_MPopupEditorWrapper(): Unit = js.native
     @JSName("focusOut")
     def focusOut_MPopupEditorWrapper(): Unit = js.native
-    /** Return the final value - called by the grid once after editing is complete */
-    /* CompleteClass */
-    override def getValue(): js.Any = js.native
     @JSName("init")
     def init_MPopupEditorWrapper(params: ICellEditorParams): Unit = js.native
     @JSName("isCancelAfterEnd")

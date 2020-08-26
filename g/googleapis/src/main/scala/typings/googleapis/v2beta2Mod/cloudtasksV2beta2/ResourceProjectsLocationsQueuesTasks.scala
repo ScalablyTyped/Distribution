@@ -90,6 +90,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     */
   def acknowledge(): GaxiosPromise[SchemaEmpty] = js.native
   def acknowledge(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def acknowledge(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def acknowledge(params: ParamsResourceProjectsLocationsQueuesTasksAcknowledge): GaxiosPromise[SchemaEmpty] = js.native
   def acknowledge(
     params: ParamsResourceProjectsLocationsQueuesTasksAcknowledge,
@@ -183,6 +184,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     */
   def cancelLease(): GaxiosPromise[SchemaTask] = js.native
   def cancelLease(callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  def cancelLease(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def cancelLease(params: ParamsResourceProjectsLocationsQueuesTasksCancellease): GaxiosPromise[SchemaTask] = js.native
   def cancelLease(
     params: ParamsResourceProjectsLocationsQueuesTasksCancellease,
@@ -276,6 +278,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaTask] = js.native
   def create(callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def create(params: ParamsResourceProjectsLocationsQueuesTasksCreate): GaxiosPromise[SchemaTask] = js.native
   def create(
     params: ParamsResourceProjectsLocationsQueuesTasksCreate,
@@ -361,6 +364,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsQueuesTasksDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsQueuesTasksDelete,
@@ -448,6 +452,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTask] = js.native
   def get(callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def get(params: ParamsResourceProjectsLocationsQueuesTasksGet): GaxiosPromise[SchemaTask] = js.native
   def get(params: ParamsResourceProjectsLocationsQueuesTasksGet, callback: BodyResponseCallback[SchemaTask]): Unit = js.native
   def get(
@@ -484,6 +489,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     */
   def lease(): GaxiosPromise[SchemaLeaseTasksResponse] = js.native
   def lease(callback: BodyResponseCallback[SchemaLeaseTasksResponse]): Unit = js.native
+  def lease(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaseTasksResponse] = js.native
   def lease(params: ParamsResourceProjectsLocationsQueuesTasksLease): GaxiosPromise[SchemaLeaseTasksResponse] = js.native
   def lease(
     params: ParamsResourceProjectsLocationsQueuesTasksLease,
@@ -590,6 +596,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListTasksResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTasksResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTasksResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsQueuesTasksList): GaxiosPromise[SchemaListTasksResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsQueuesTasksList,
@@ -683,6 +690,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     */
   def renewLease(): GaxiosPromise[SchemaTask] = js.native
   def renewLease(callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  def renewLease(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def renewLease(params: ParamsResourceProjectsLocationsQueuesTasksRenewlease): GaxiosPromise[SchemaTask] = js.native
   def renewLease(
     params: ParamsResourceProjectsLocationsQueuesTasksRenewlease,
@@ -786,6 +794,7 @@ class ResourceProjectsLocationsQueuesTasks protected () extends js.Object {
     */
   def run(): GaxiosPromise[SchemaTask] = js.native
   def run(callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  def run(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def run(params: ParamsResourceProjectsLocationsQueuesTasksRun): GaxiosPromise[SchemaTask] = js.native
   def run(params: ParamsResourceProjectsLocationsQueuesTasksRun, callback: BodyResponseCallback[SchemaTask]): Unit = js.native
   def run(

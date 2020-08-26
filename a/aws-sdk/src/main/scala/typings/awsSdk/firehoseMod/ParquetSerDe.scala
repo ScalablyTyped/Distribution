@@ -34,22 +34,46 @@ trait ParquetSerDe extends js.Object {
 
 object ParquetSerDe {
   @scala.inline
-  def apply(
-    BlockSizeBytes: js.UndefOr[BlockSizeBytes] = js.undefined,
-    Compression: ParquetCompression = null,
-    EnableDictionaryCompression: js.UndefOr[BooleanObject] = js.undefined,
-    MaxPaddingBytes: js.UndefOr[NonNegativeIntegerObject] = js.undefined,
-    PageSizeBytes: js.UndefOr[ParquetPageSizeBytes] = js.undefined,
-    WriterVersion: ParquetWriterVersion = null
-  ): ParquetSerDe = {
+  def apply(): ParquetSerDe = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BlockSizeBytes)) __obj.updateDynamic("BlockSizeBytes")(BlockSizeBytes.get.asInstanceOf[js.Any])
-    if (Compression != null) __obj.updateDynamic("Compression")(Compression.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableDictionaryCompression)) __obj.updateDynamic("EnableDictionaryCompression")(EnableDictionaryCompression.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxPaddingBytes)) __obj.updateDynamic("MaxPaddingBytes")(MaxPaddingBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(PageSizeBytes)) __obj.updateDynamic("PageSizeBytes")(PageSizeBytes.get.asInstanceOf[js.Any])
-    if (WriterVersion != null) __obj.updateDynamic("WriterVersion")(WriterVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParquetSerDe]
   }
+  @scala.inline
+  implicit class ParquetSerDeOps[Self <: ParquetSerDe] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockSizeBytes(value: BlockSizeBytes): Self = this.set("BlockSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockSizeBytes: Self = this.set("BlockSizeBytes", js.undefined)
+    @scala.inline
+    def setCompression(value: ParquetCompression): Self = this.set("Compression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompression: Self = this.set("Compression", js.undefined)
+    @scala.inline
+    def setEnableDictionaryCompression(value: BooleanObject): Self = this.set("EnableDictionaryCompression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDictionaryCompression: Self = this.set("EnableDictionaryCompression", js.undefined)
+    @scala.inline
+    def setMaxPaddingBytes(value: NonNegativeIntegerObject): Self = this.set("MaxPaddingBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPaddingBytes: Self = this.set("MaxPaddingBytes", js.undefined)
+    @scala.inline
+    def setPageSizeBytes(value: ParquetPageSizeBytes): Self = this.set("PageSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSizeBytes: Self = this.set("PageSizeBytes", js.undefined)
+    @scala.inline
+    def setWriterVersion(value: ParquetWriterVersion): Self = this.set("WriterVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriterVersion: Self = this.set("WriterVersion", js.undefined)
+  }
+  
 }
 

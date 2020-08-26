@@ -22,16 +22,34 @@ trait SourceDetail extends js.Object {
 
 object SourceDetail {
   @scala.inline
-  def apply(
-    EventSource: EventSource = null,
-    MaximumExecutionFrequency: MaximumExecutionFrequency = null,
-    MessageType: MessageType = null
-  ): SourceDetail = {
+  def apply(): SourceDetail = {
     val __obj = js.Dynamic.literal()
-    if (EventSource != null) __obj.updateDynamic("EventSource")(EventSource.asInstanceOf[js.Any])
-    if (MaximumExecutionFrequency != null) __obj.updateDynamic("MaximumExecutionFrequency")(MaximumExecutionFrequency.asInstanceOf[js.Any])
-    if (MessageType != null) __obj.updateDynamic("MessageType")(MessageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceDetail]
   }
+  @scala.inline
+  implicit class SourceDetailOps[Self <: SourceDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventSource(value: EventSource): Self = this.set("EventSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventSource: Self = this.set("EventSource", js.undefined)
+    @scala.inline
+    def setMaximumExecutionFrequency(value: MaximumExecutionFrequency): Self = this.set("MaximumExecutionFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumExecutionFrequency: Self = this.set("MaximumExecutionFrequency", js.undefined)
+    @scala.inline
+    def setMessageType(value: MessageType): Self = this.set("MessageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageType: Self = this.set("MessageType", js.undefined)
+  }
+  
 }
 

@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Organizationsurl extends js.Object {
-  var avatar_url: String
-  var followers_url: String
-  var gravatar_id: String
-  var html_url: String
-  var id: Double
-  var login: String
-  var node_id: String
-  var organizations_url: String
-  var received_events_url: String
-  var repos_url: String
-  var score: Double
-  var subscriptions_url: String
-  var `type`: String
-  var url: String
+  var avatar_url: String = js.native
+  var followers_url: String = js.native
+  var gravatar_id: String = js.native
+  var html_url: String = js.native
+  var id: Double = js.native
+  var login: String = js.native
+  var node_id: String = js.native
+  var organizations_url: String = js.native
+  var received_events_url: String = js.native
+  var repos_url: String = js.native
+  var score: Double = js.native
+  var subscriptions_url: String = js.native
+  var `type`: String = js.native
+  var url: String = js.native
 }
 
 object Organizationsurl {
@@ -43,5 +44,46 @@ object Organizationsurl {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Organizationsurl]
   }
+  @scala.inline
+  implicit class OrganizationsurlOps[Self <: Organizationsurl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvatar_url(value: String): Self = this.set("avatar_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFollowers_url(value: String): Self = this.set("followers_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGravatar_id(value: String): Self = this.set("gravatar_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrganizations_url(value: String): Self = this.set("organizations_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReceived_events_url(value: String): Self = this.set("received_events_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepos_url(value: String): Self = this.set("repos_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubscriptions_url(value: String): Self = this.set("subscriptions_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+  }
+  
 }
 

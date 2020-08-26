@@ -1,7 +1,10 @@
 package typings.jestReporters
 
+import typings.jestReporters.typesMod.Test
+import typings.jestTestResult.typesMod.AggregatedResult
 import typings.jestTestResult.typesMod.AssertionResult
 import typings.jestTestResult.typesMod.Suite
+import typings.jestTestResult.typesMod.TestResult
 import typings.jestTypes.configMod.GlobalConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,6 +23,8 @@ object verboseReporterMod extends js.Object {
     var _logTestResults: js.Any = js.native
     var _logTests: js.Any = js.native
     var _logTodoOrPendingTest: js.Any = js.native
+    @JSName("onTestResult")
+    def onTestResult_MVerboseReporter(test: Test, result: TestResult, aggregatedResults: AggregatedResult): Unit = js.native
   }
   
   @js.native

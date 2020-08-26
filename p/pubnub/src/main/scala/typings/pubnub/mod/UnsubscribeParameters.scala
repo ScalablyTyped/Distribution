@@ -5,18 +5,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // unsubscribe
+@js.native
 trait UnsubscribeParameters extends js.Object {
-  var channelGroups: js.UndefOr[js.Array[String]] = js.undefined
-  var channels: js.UndefOr[js.Array[String]] = js.undefined
+  var channelGroups: js.UndefOr[js.Array[String]] = js.native
+  var channels: js.UndefOr[js.Array[String]] = js.native
 }
 
 object UnsubscribeParameters {
   @scala.inline
-  def apply(channelGroups: js.Array[String] = null, channels: js.Array[String] = null): UnsubscribeParameters = {
+  def apply(): UnsubscribeParameters = {
     val __obj = js.Dynamic.literal()
-    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups.asInstanceOf[js.Any])
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsubscribeParameters]
   }
+  @scala.inline
+  implicit class UnsubscribeParametersOps[Self <: UnsubscribeParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelGroupsVarargs(value: String*): Self = this.set("channelGroups", js.Array(value :_*))
+    @scala.inline
+    def setChannelGroups(value: js.Array[String]): Self = this.set("channelGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelGroups: Self = this.set("channelGroups", js.undefined)
+    @scala.inline
+    def setChannelsVarargs(value: String*): Self = this.set("channels", js.Array(value :_*))
+    @scala.inline
+    def setChannels(value: js.Array[String]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannels: Self = this.set("channels", js.undefined)
+  }
+  
 }
 

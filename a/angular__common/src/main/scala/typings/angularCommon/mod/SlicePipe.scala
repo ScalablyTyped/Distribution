@@ -13,8 +13,6 @@ class SlicePipe () extends PipeTransform {
   def transform(value: js.UndefOr[scala.Nothing], start: Double, end: Double): js.UndefOr[scala.Nothing] = js.native
   def transform(value: String, start: Double): String = js.native
   def transform(value: String, start: Double, end: Double): String = js.native
-  /* CompleteClass */
-  override def transform(value: js.Any, args: js.Any*): js.Any = js.native
   def transform(value: Null, start: Double): Null = js.native
   def transform(value: Null, start: Double, end: Double): Null = js.native
   /**

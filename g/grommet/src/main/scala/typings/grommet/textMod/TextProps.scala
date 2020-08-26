@@ -22,51 +22,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextProps extends js.Object {
-  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
-  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var as: js.UndefOr[PolymorphicType] = js.undefined
-  var color: js.UndefOr[ColorType] = js.undefined
-  var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var margin: js.UndefOr[MarginType] = js.undefined
-  var size: js.UndefOr[xsmall | small | medium | large | xlarge | xxlarge | String] = js.undefined
-  var tag: js.UndefOr[PolymorphicType] = js.undefined
-  var textAlign: js.UndefOr[TextAlignType] = js.undefined
-  var truncate: js.UndefOr[Boolean] = js.undefined
-  var weight: js.UndefOr[normal | bold | Double] = js.undefined
-  var wordBreak: js.UndefOr[normal | `break-all` | `keep-all` | `break-word`] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+  var alignSelf: js.UndefOr[AlignSelfType] = js.native
+  var as: js.UndefOr[PolymorphicType] = js.native
+  var color: js.UndefOr[ColorType] = js.native
+  var gridArea: js.UndefOr[GridAreaType] = js.native
+  var margin: js.UndefOr[MarginType] = js.native
+  var size: js.UndefOr[xsmall | small | medium | large | xlarge | xxlarge | String] = js.native
+  var tag: js.UndefOr[PolymorphicType] = js.native
+  var textAlign: js.UndefOr[TextAlignType] = js.native
+  var truncate: js.UndefOr[Boolean] = js.native
+  var weight: js.UndefOr[normal | bold | Double] = js.native
+  var wordBreak: js.UndefOr[normal | `break-all` | `keep-all` | `break-word`] = js.native
 }
 
 object TextProps {
   @scala.inline
-  def apply(
-    a11yTitle: A11yTitleType = null,
-    alignSelf: AlignSelfType = null,
-    as: PolymorphicType = null,
-    color: ColorType = null,
-    gridArea: GridAreaType = null,
-    margin: MarginType = null,
-    size: xsmall | small | medium | large | xlarge | xxlarge | String = null,
-    tag: PolymorphicType = null,
-    textAlign: TextAlignType = null,
-    truncate: js.UndefOr[Boolean] = js.undefined,
-    weight: normal | bold | Double = null,
-    wordBreak: normal | `break-all` | `keep-all` | `break-word` = null
-  ): TextProps = {
+  def apply(): TextProps = {
     val __obj = js.Dynamic.literal()
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.get.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
-    if (wordBreak != null) __obj.updateDynamic("wordBreak")(wordBreak.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextProps]
   }
+  @scala.inline
+  implicit class TextPropsOps[Self <: TextProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setA11yTitle(value: A11yTitleType): Self = this.set("a11yTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA11yTitle: Self = this.set("a11yTitle", js.undefined)
+    @scala.inline
+    def setAlignSelf(value: AlignSelfType): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    @scala.inline
+    def setAs(value: PolymorphicType): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setColor(value: ColorType): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setGridArea(value: GridAreaType): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    @scala.inline
+    def setMargin(value: MarginType): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setSize(value: xsmall | small | medium | large | xlarge | xxlarge | String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTag(value: PolymorphicType): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+    @scala.inline
+    def setTextAlign(value: TextAlignType): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    @scala.inline
+    def setTruncate(value: Boolean): Self = this.set("truncate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTruncate: Self = this.set("truncate", js.undefined)
+    @scala.inline
+    def setWeight(value: normal | bold | Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("weight", js.undefined)
+    @scala.inline
+    def setWordBreak(value: normal | `break-all` | `keep-all` | `break-word`): Self = this.set("wordBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWordBreak: Self = this.set("wordBreak", js.undefined)
+  }
+  
 }
 

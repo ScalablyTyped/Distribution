@@ -6,41 +6,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Specifies a {@link FolderPicker} interface. */
+@js.native
 trait XFolderPicker extends XExecutableDialog {
   /**
     * Returns the selected directory as url conforming to [Rfc1738]{@link url="http://www.w3.org/Addressing/rfc1738.txt"} .
     * @returns The selected directory as url if the user did close the dialog with Ok else the returned value is undefined.
     */
-  val Directory: String
+  val Directory: String = js.native
   /**
     * Returns the root directory that the {@link FolderPicker} is showing. The return value is undefined if the client did not choose a root directory or
     * the previously specified root directory doesn't exist.
     * @returns The directory in url format.
     */
-  var DisplayDirectory: String
+  var DisplayDirectory: String = js.native
   /**
     * Returns the selected directory as url conforming to [Rfc1738]{@link url="http://www.w3.org/Addressing/rfc1738.txt"} .
     * @returns The selected directory as url if the user did close the dialog with Ok else the returned value is undefined.
     */
-  def getDirectory(): String
+  def getDirectory(): String = js.native
   /**
     * Returns the root directory that the {@link FolderPicker} is showing. The return value is undefined if the client did not choose a root directory or
     * the previously specified root directory doesn't exist.
     * @returns The directory in url format.
     */
-  def getDisplayDirectory(): String
+  def getDisplayDirectory(): String = js.native
   /**
     * The implementation may optionally show the given text as a description for the user within the dialog, e.g. "Please select a directory". If the client
     * doesn't set a description the dialog may show a default description.
     */
-  def setDescription(aDescription: String): Unit
+  def setDescription(aDescription: String): Unit = js.native
   /**
     * Sets the root directory that the {@link FolderPicker} should display. It is not specified which root directory the {@link FolderPicker} chooses if the
     * specified root directory doesn't exist.
     * @param aDirectory Specifies the root directory in url format, conforming to [Rfc1738]{@link url="http://www.w3.org/Addressing/rfc1738.txt"} .
     * @throws com::sun::star::lang::IllegalArgumentException if the given url is invalid.
     */
-  def setDisplayDirectory(aDirectory: String): Unit
+  def setDisplayDirectory(aDirectory: String): Unit = js.native
 }
 
 object XFolderPicker {
@@ -61,5 +62,30 @@ object XFolderPicker {
     val __obj = js.Dynamic.literal(Directory = Directory.asInstanceOf[js.Any], DisplayDirectory = DisplayDirectory.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction0(execute), getDirectory = js.Any.fromFunction0(getDirectory), getDisplayDirectory = js.Any.fromFunction0(getDisplayDirectory), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDescription = js.Any.fromFunction1(setDescription), setDisplayDirectory = js.Any.fromFunction1(setDisplayDirectory), setTitle = js.Any.fromFunction1(setTitle))
     __obj.asInstanceOf[XFolderPicker]
   }
+  @scala.inline
+  implicit class XFolderPickerOps[Self <: XFolderPicker] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectory(value: String): Self = this.set("Directory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisplayDirectory(value: String): Self = this.set("DisplayDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetDirectory(value: () => String): Self = this.set("getDirectory", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetDisplayDirectory(value: () => String): Self = this.set("getDisplayDirectory", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetDescription(value: String => Unit): Self = this.set("setDescription", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetDisplayDirectory(value: String => Unit): Self = this.set("setDisplayDirectory", js.Any.fromFunction1(value))
+  }
+  
 }
 

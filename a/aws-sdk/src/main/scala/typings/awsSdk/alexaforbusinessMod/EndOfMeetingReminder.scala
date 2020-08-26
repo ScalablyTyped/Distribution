@@ -22,16 +22,36 @@ trait EndOfMeetingReminder extends js.Object {
 
 object EndOfMeetingReminder {
   @scala.inline
-  def apply(
-    Enabled: js.UndefOr[Boolean] = js.undefined,
-    ReminderAtMinutes: EndOfMeetingReminderMinutesList = null,
-    ReminderType: EndOfMeetingReminderType = null
-  ): EndOfMeetingReminder = {
+  def apply(): EndOfMeetingReminder = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (ReminderAtMinutes != null) __obj.updateDynamic("ReminderAtMinutes")(ReminderAtMinutes.asInstanceOf[js.Any])
-    if (ReminderType != null) __obj.updateDynamic("ReminderType")(ReminderType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndOfMeetingReminder]
   }
+  @scala.inline
+  implicit class EndOfMeetingReminderOps[Self <: EndOfMeetingReminder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setReminderAtMinutesVarargs(value: Minutes*): Self = this.set("ReminderAtMinutes", js.Array(value :_*))
+    @scala.inline
+    def setReminderAtMinutes(value: EndOfMeetingReminderMinutesList): Self = this.set("ReminderAtMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReminderAtMinutes: Self = this.set("ReminderAtMinutes", js.undefined)
+    @scala.inline
+    def setReminderType(value: EndOfMeetingReminderType): Self = this.set("ReminderType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReminderType: Self = this.set("ReminderType", js.undefined)
+  }
+  
 }
 

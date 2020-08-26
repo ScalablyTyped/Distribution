@@ -26,16 +26,9 @@ object getPullRequestCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetPullRequestInput) = this()
-    /* CompleteClass */
-    override val input: GetPullRequestInput = js.native
     val middlewareStack: MiddlewareStack[GetPullRequestInput, GetPullRequestOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[GetPullRequestInput, GetPullRequestOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[GetPullRequestInput, GetPullRequestOutput] = js.native
   }

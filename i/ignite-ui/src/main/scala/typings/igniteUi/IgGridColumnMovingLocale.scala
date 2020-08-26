@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgGridColumnMovingLocale
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,110 +15,148 @@ trait IgGridColumnMovingLocale
     * Specifies caption for the move first dropdown button.
     *
     */
-  var dropDownMoveFirstText: js.UndefOr[String] = js.undefined
+  var dropDownMoveFirstText: js.UndefOr[String] = js.native
   /**
     * Specifies caption for the move last dropdown button.
     *
     */
-  var dropDownMoveLastText: js.UndefOr[String] = js.undefined
+  var dropDownMoveLastText: js.UndefOr[String] = js.native
   /**
     * Specifies caption for the move left dropdown button.
     *
     */
-  var dropDownMoveLeftText: js.UndefOr[String] = js.undefined
+  var dropDownMoveLeftText: js.UndefOr[String] = js.native
   /**
     * Specifies caption for the move right dropdown button.
     *
     */
-  var dropDownMoveRightText: js.UndefOr[String] = js.undefined
+  var dropDownMoveRightText: js.UndefOr[String] = js.native
   /**
     * Specifies caption text for the feature chooser submenu button.
     *
     */
-  var featureChooserSubmenuText: js.UndefOr[String] = js.undefined
+  var featureChooserSubmenuText: js.UndefOr[String] = js.native
   /**
     * Specifies the apply button text.
     *
     */
-  var movingDialogButtonApplyText: js.UndefOr[String] = js.undefined
+  var movingDialogButtonApplyText: js.UndefOr[String] = js.native
   /**
     * Specifies the cancel button text.
     *
     */
-  var movingDialogButtonCancelText: js.UndefOr[String] = js.undefined
+  var movingDialogButtonCancelText: js.UndefOr[String] = js.native
   /**
     * Specifies caption for each move up button in the column moving dialog.
     *
     */
-  var movingDialogCaptionButtonAsc: js.UndefOr[String] = js.undefined
+  var movingDialogCaptionButtonAsc: js.UndefOr[String] = js.native
   /**
     * Specifies caption for each move down button in the column moving dialog.
     *
     */
-  var movingDialogCaptionButtonDesc: js.UndefOr[String] = js.undefined
+  var movingDialogCaptionButtonDesc: js.UndefOr[String] = js.native
   /**
     * Specifies caption text for the column moving dialog.
     *
     */
-  var movingDialogCaptionText: js.UndefOr[String] = js.undefined
+  var movingDialogCaptionText: js.UndefOr[String] = js.native
   /**
     * Specifies title for close dialog button.
     *
     */
-  var movingDialogCloseButtonTitle: js.UndefOr[String] = js.undefined
+  var movingDialogCloseButtonTitle: js.UndefOr[String] = js.native
   /**
     * Specifies caption text for the feature chooser entry.
     *
     */
-  var movingDialogDisplayText: js.UndefOr[String] = js.undefined
+  var movingDialogDisplayText: js.UndefOr[String] = js.native
   /**
     * Specifies text for drop tooltip in column moving dialog.
     *
     */
-  var movingDialogDropTooltipText: js.UndefOr[String] = js.undefined
+  var movingDialogDropTooltipText: js.UndefOr[String] = js.native
   /**
     * Specifies tooltip text for the move indicator.
     *
     */
-  var movingToolTipMove: js.UndefOr[String] = js.undefined
+  var movingToolTipMove: js.UndefOr[String] = js.native
 }
 
 object IgGridColumnMovingLocale {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    dropDownMoveFirstText: String = null,
-    dropDownMoveLastText: String = null,
-    dropDownMoveLeftText: String = null,
-    dropDownMoveRightText: String = null,
-    featureChooserSubmenuText: String = null,
-    movingDialogButtonApplyText: String = null,
-    movingDialogButtonCancelText: String = null,
-    movingDialogCaptionButtonAsc: String = null,
-    movingDialogCaptionButtonDesc: String = null,
-    movingDialogCaptionText: String = null,
-    movingDialogCloseButtonTitle: String = null,
-    movingDialogDisplayText: String = null,
-    movingDialogDropTooltipText: String = null,
-    movingToolTipMove: String = null
-  ): IgGridColumnMovingLocale = {
+  def apply(): IgGridColumnMovingLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dropDownMoveFirstText != null) __obj.updateDynamic("dropDownMoveFirstText")(dropDownMoveFirstText.asInstanceOf[js.Any])
-    if (dropDownMoveLastText != null) __obj.updateDynamic("dropDownMoveLastText")(dropDownMoveLastText.asInstanceOf[js.Any])
-    if (dropDownMoveLeftText != null) __obj.updateDynamic("dropDownMoveLeftText")(dropDownMoveLeftText.asInstanceOf[js.Any])
-    if (dropDownMoveRightText != null) __obj.updateDynamic("dropDownMoveRightText")(dropDownMoveRightText.asInstanceOf[js.Any])
-    if (featureChooserSubmenuText != null) __obj.updateDynamic("featureChooserSubmenuText")(featureChooserSubmenuText.asInstanceOf[js.Any])
-    if (movingDialogButtonApplyText != null) __obj.updateDynamic("movingDialogButtonApplyText")(movingDialogButtonApplyText.asInstanceOf[js.Any])
-    if (movingDialogButtonCancelText != null) __obj.updateDynamic("movingDialogButtonCancelText")(movingDialogButtonCancelText.asInstanceOf[js.Any])
-    if (movingDialogCaptionButtonAsc != null) __obj.updateDynamic("movingDialogCaptionButtonAsc")(movingDialogCaptionButtonAsc.asInstanceOf[js.Any])
-    if (movingDialogCaptionButtonDesc != null) __obj.updateDynamic("movingDialogCaptionButtonDesc")(movingDialogCaptionButtonDesc.asInstanceOf[js.Any])
-    if (movingDialogCaptionText != null) __obj.updateDynamic("movingDialogCaptionText")(movingDialogCaptionText.asInstanceOf[js.Any])
-    if (movingDialogCloseButtonTitle != null) __obj.updateDynamic("movingDialogCloseButtonTitle")(movingDialogCloseButtonTitle.asInstanceOf[js.Any])
-    if (movingDialogDisplayText != null) __obj.updateDynamic("movingDialogDisplayText")(movingDialogDisplayText.asInstanceOf[js.Any])
-    if (movingDialogDropTooltipText != null) __obj.updateDynamic("movingDialogDropTooltipText")(movingDialogDropTooltipText.asInstanceOf[js.Any])
-    if (movingToolTipMove != null) __obj.updateDynamic("movingToolTipMove")(movingToolTipMove.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridColumnMovingLocale]
   }
+  @scala.inline
+  implicit class IgGridColumnMovingLocaleOps[Self <: IgGridColumnMovingLocale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDropDownMoveFirstText(value: String): Self = this.set("dropDownMoveFirstText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropDownMoveFirstText: Self = this.set("dropDownMoveFirstText", js.undefined)
+    @scala.inline
+    def setDropDownMoveLastText(value: String): Self = this.set("dropDownMoveLastText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropDownMoveLastText: Self = this.set("dropDownMoveLastText", js.undefined)
+    @scala.inline
+    def setDropDownMoveLeftText(value: String): Self = this.set("dropDownMoveLeftText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropDownMoveLeftText: Self = this.set("dropDownMoveLeftText", js.undefined)
+    @scala.inline
+    def setDropDownMoveRightText(value: String): Self = this.set("dropDownMoveRightText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropDownMoveRightText: Self = this.set("dropDownMoveRightText", js.undefined)
+    @scala.inline
+    def setFeatureChooserSubmenuText(value: String): Self = this.set("featureChooserSubmenuText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureChooserSubmenuText: Self = this.set("featureChooserSubmenuText", js.undefined)
+    @scala.inline
+    def setMovingDialogButtonApplyText(value: String): Self = this.set("movingDialogButtonApplyText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovingDialogButtonApplyText: Self = this.set("movingDialogButtonApplyText", js.undefined)
+    @scala.inline
+    def setMovingDialogButtonCancelText(value: String): Self = this.set("movingDialogButtonCancelText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovingDialogButtonCancelText: Self = this.set("movingDialogButtonCancelText", js.undefined)
+    @scala.inline
+    def setMovingDialogCaptionButtonAsc(value: String): Self = this.set("movingDialogCaptionButtonAsc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovingDialogCaptionButtonAsc: Self = this.set("movingDialogCaptionButtonAsc", js.undefined)
+    @scala.inline
+    def setMovingDialogCaptionButtonDesc(value: String): Self = this.set("movingDialogCaptionButtonDesc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovingDialogCaptionButtonDesc: Self = this.set("movingDialogCaptionButtonDesc", js.undefined)
+    @scala.inline
+    def setMovingDialogCaptionText(value: String): Self = this.set("movingDialogCaptionText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovingDialogCaptionText: Self = this.set("movingDialogCaptionText", js.undefined)
+    @scala.inline
+    def setMovingDialogCloseButtonTitle(value: String): Self = this.set("movingDialogCloseButtonTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovingDialogCloseButtonTitle: Self = this.set("movingDialogCloseButtonTitle", js.undefined)
+    @scala.inline
+    def setMovingDialogDisplayText(value: String): Self = this.set("movingDialogDisplayText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovingDialogDisplayText: Self = this.set("movingDialogDisplayText", js.undefined)
+    @scala.inline
+    def setMovingDialogDropTooltipText(value: String): Self = this.set("movingDialogDropTooltipText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovingDialogDropTooltipText: Self = this.set("movingDialogDropTooltipText", js.undefined)
+    @scala.inline
+    def setMovingToolTipMove(value: String): Self = this.set("movingToolTipMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovingToolTipMove: Self = this.set("movingToolTipMove", js.undefined)
+  }
+  
 }
 

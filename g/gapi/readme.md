@@ -11,7 +11,7 @@ Node implementation of Google's JavaScript Library (Currently Implemented: Googl
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 38590 |
+| # downloads        | 42388 |
 | # stars            | 1 |
 
 ## Links

@@ -14,24 +14,25 @@ import scala.scalajs.js.annotation._
   *     var item = form.addParagraphTextItem();
   *     item.setTitle('What is your address?');
   */
+@js.native
 trait ParagraphTextItem extends js.Object {
-  def clearValidation(): ParagraphTextItem
-  def createResponse(response: String): ItemResponse
-  def duplicate(): ParagraphTextItem
-  def getGeneralFeedback(): QuizFeedback
-  def getHelpText(): String
-  def getId(): Integer
-  def getIndex(): Integer
-  def getPoints(): Integer
-  def getTitle(): String
-  def getType(): ItemType
-  def isRequired(): Boolean
-  def setGeneralFeedback(feedback: QuizFeedback): ParagraphTextItem
-  def setHelpText(text: String): ParagraphTextItem
-  def setPoints(points: Integer): ParagraphTextItem
-  def setRequired(enabled: Boolean): ParagraphTextItem
-  def setTitle(title: String): ParagraphTextItem
-  def setValidation(validation: ParagraphTextValidation): ParagraphTextItem
+  def clearValidation(): ParagraphTextItem = js.native
+  def createResponse(response: String): ItemResponse = js.native
+  def duplicate(): ParagraphTextItem = js.native
+  def getGeneralFeedback(): QuizFeedback = js.native
+  def getHelpText(): String = js.native
+  def getId(): Integer = js.native
+  def getIndex(): Integer = js.native
+  def getPoints(): Integer = js.native
+  def getTitle(): String = js.native
+  def getType(): ItemType = js.native
+  def isRequired(): Boolean = js.native
+  def setGeneralFeedback(feedback: QuizFeedback): ParagraphTextItem = js.native
+  def setHelpText(text: String): ParagraphTextItem = js.native
+  def setPoints(points: Integer): ParagraphTextItem = js.native
+  def setRequired(enabled: Boolean): ParagraphTextItem = js.native
+  def setTitle(title: String): ParagraphTextItem = js.native
+  def setValidation(validation: ParagraphTextValidation): ParagraphTextItem = js.native
 }
 
 object ParagraphTextItem {
@@ -58,5 +59,52 @@ object ParagraphTextItem {
     val __obj = js.Dynamic.literal(clearValidation = js.Any.fromFunction0(clearValidation), createResponse = js.Any.fromFunction1(createResponse), duplicate = js.Any.fromFunction0(duplicate), getGeneralFeedback = js.Any.fromFunction0(getGeneralFeedback), getHelpText = js.Any.fromFunction0(getHelpText), getId = js.Any.fromFunction0(getId), getIndex = js.Any.fromFunction0(getIndex), getPoints = js.Any.fromFunction0(getPoints), getTitle = js.Any.fromFunction0(getTitle), getType = js.Any.fromFunction0(getType), isRequired = js.Any.fromFunction0(isRequired), setGeneralFeedback = js.Any.fromFunction1(setGeneralFeedback), setHelpText = js.Any.fromFunction1(setHelpText), setPoints = js.Any.fromFunction1(setPoints), setRequired = js.Any.fromFunction1(setRequired), setTitle = js.Any.fromFunction1(setTitle), setValidation = js.Any.fromFunction1(setValidation))
     __obj.asInstanceOf[ParagraphTextItem]
   }
+  @scala.inline
+  implicit class ParagraphTextItemOps[Self <: ParagraphTextItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClearValidation(value: () => ParagraphTextItem): Self = this.set("clearValidation", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCreateResponse(value: String => ItemResponse): Self = this.set("createResponse", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDuplicate(value: () => ParagraphTextItem): Self = this.set("duplicate", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetGeneralFeedback(value: () => QuizFeedback): Self = this.set("getGeneralFeedback", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetHelpText(value: () => String): Self = this.set("getHelpText", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetId(value: () => Integer): Self = this.set("getId", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetIndex(value: () => Integer): Self = this.set("getIndex", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetPoints(value: () => Integer): Self = this.set("getPoints", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetType(value: () => ItemType): Self = this.set("getType", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsRequired(value: () => Boolean): Self = this.set("isRequired", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetGeneralFeedback(value: QuizFeedback => ParagraphTextItem): Self = this.set("setGeneralFeedback", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetHelpText(value: String => ParagraphTextItem): Self = this.set("setHelpText", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetPoints(value: Integer => ParagraphTextItem): Self = this.set("setPoints", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetRequired(value: Boolean => ParagraphTextItem): Self = this.set("setRequired", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetTitle(value: String => ParagraphTextItem): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetValidation(value: ParagraphTextValidation => ParagraphTextItem): Self = this.set("setValidation", js.Any.fromFunction1(value))
+  }
+  
 }
 

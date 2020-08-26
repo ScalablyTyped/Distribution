@@ -18,11 +18,32 @@ trait BatchDetectKeyPhrasesItemResult extends js.Object {
 
 object BatchDetectKeyPhrasesItemResult {
   @scala.inline
-  def apply(Index: js.UndefOr[Integer] = js.undefined, KeyPhrases: ListOfKeyPhrases = null): BatchDetectKeyPhrasesItemResult = {
+  def apply(): BatchDetectKeyPhrasesItemResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Index)) __obj.updateDynamic("Index")(Index.get.asInstanceOf[js.Any])
-    if (KeyPhrases != null) __obj.updateDynamic("KeyPhrases")(KeyPhrases.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetectKeyPhrasesItemResult]
   }
+  @scala.inline
+  implicit class BatchDetectKeyPhrasesItemResultOps[Self <: BatchDetectKeyPhrasesItemResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndex(value: Integer): Self = this.set("Index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("Index", js.undefined)
+    @scala.inline
+    def setKeyPhrasesVarargs(value: KeyPhrase*): Self = this.set("KeyPhrases", js.Array(value :_*))
+    @scala.inline
+    def setKeyPhrases(value: ListOfKeyPhrases): Self = this.set("KeyPhrases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPhrases: Self = this.set("KeyPhrases", js.undefined)
+  }
+  
 }
 

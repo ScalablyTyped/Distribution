@@ -12,9 +12,5 @@ class ExecError protected () extends Error {
   def this(command: String, exitCode: Double, out: String, errorOut: String, code: String) = this()
   var alreadyLogged: Boolean = js.native
   val exitCode: Double = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

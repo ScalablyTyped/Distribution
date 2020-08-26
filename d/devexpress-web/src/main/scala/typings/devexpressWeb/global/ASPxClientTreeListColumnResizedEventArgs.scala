@@ -16,15 +16,5 @@ class ASPxClientTreeListColumnResizedEventArgs protected ()
     * @param column A ASPxClientTreeListColumn object that is the column related to the event.
     */
   def this(column: typings.devexpressWeb.ASPxClientTreeListColumn) = this()
-  /**
-    * Gets the processed client column.
-    */
-  /* CompleteClass */
-  override var column: typings.devexpressWeb.ASPxClientTreeListColumn = js.native
-  /**
-    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
-    */
-  /* CompleteClass */
-  override var processOnServer: Boolean = js.native
 }
 

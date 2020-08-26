@@ -90,6 +90,7 @@ trait ContextDelegatedResponse extends js.Object {
     * Optionally specify the filename of the download and some options.
     */
   def attachment(): Unit = js.native
+  def attachment(filename: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def attachment(filename: String): Unit = js.native
   def attachment(filename: String, options: Options): Unit = js.native
   /**

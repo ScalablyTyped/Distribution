@@ -41,24 +41,50 @@ trait SchemaGridProperties extends js.Object {
 
 object SchemaGridProperties {
   @scala.inline
-  def apply(
-    columnCount: js.UndefOr[Double] = js.undefined,
-    columnGroupControlAfter: js.UndefOr[Boolean] = js.undefined,
-    frozenColumnCount: js.UndefOr[Double] = js.undefined,
-    frozenRowCount: js.UndefOr[Double] = js.undefined,
-    hideGridlines: js.UndefOr[Boolean] = js.undefined,
-    rowCount: js.UndefOr[Double] = js.undefined,
-    rowGroupControlAfter: js.UndefOr[Boolean] = js.undefined
-  ): SchemaGridProperties = {
+  def apply(): SchemaGridProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnGroupControlAfter)) __obj.updateDynamic("columnGroupControlAfter")(columnGroupControlAfter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(frozenColumnCount)) __obj.updateDynamic("frozenColumnCount")(frozenColumnCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(frozenRowCount)) __obj.updateDynamic("frozenRowCount")(frozenRowCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideGridlines)) __obj.updateDynamic("hideGridlines")(hideGridlines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowGroupControlAfter)) __obj.updateDynamic("rowGroupControlAfter")(rowGroupControlAfter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGridProperties]
   }
+  @scala.inline
+  implicit class SchemaGridPropertiesOps[Self <: SchemaGridProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    @scala.inline
+    def setColumnGroupControlAfter(value: Boolean): Self = this.set("columnGroupControlAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnGroupControlAfter: Self = this.set("columnGroupControlAfter", js.undefined)
+    @scala.inline
+    def setFrozenColumnCount(value: Double): Self = this.set("frozenColumnCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrozenColumnCount: Self = this.set("frozenColumnCount", js.undefined)
+    @scala.inline
+    def setFrozenRowCount(value: Double): Self = this.set("frozenRowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrozenRowCount: Self = this.set("frozenRowCount", js.undefined)
+    @scala.inline
+    def setHideGridlines(value: Boolean): Self = this.set("hideGridlines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideGridlines: Self = this.set("hideGridlines", js.undefined)
+    @scala.inline
+    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    @scala.inline
+    def setRowGroupControlAfter(value: Boolean): Self = this.set("rowGroupControlAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowGroupControlAfter: Self = this.set("rowGroupControlAfter", js.undefined)
+  }
+  
 }
 

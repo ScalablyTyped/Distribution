@@ -1,12 +1,12 @@
 package typings.bpmnModdle.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChoreographyTask extends ChoreographyActivity {
-  var messageFlowRef: js.Array[MessageFlow]
+  var messageFlowRef: js.Array[MessageFlow] = js.native
 }
 
 object ChoreographyTask {
@@ -25,20 +25,27 @@ object ChoreographyTask {
     messageFlowRef: js.Array[MessageFlow],
     monitoring: Monitoring,
     outgoing: js.Array[SequenceFlow],
-    participantRef: js.Array[Participant],
-    $attrs: StringDictionary[js.Any] = null,
-    documentation: js.Array[Documentation] = null,
-    extensionDefinitions: js.Array[ExtensionDefinition] = null,
-    extensionElements: ExtensionElements = null,
-    name: String = null
+    participantRef: js.Array[Participant]
   ): ChoreographyTask = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], auditing = auditing.asInstanceOf[js.Any], categoryValueRef = categoryValueRef.asInstanceOf[js.Any], correlationKeys = correlationKeys.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], incoming = incoming.asInstanceOf[js.Any], initiatingParticipantRef = initiatingParticipantRef.asInstanceOf[js.Any], lanes = lanes.asInstanceOf[js.Any], loopType = loopType.asInstanceOf[js.Any], messageFlowRef = messageFlowRef.asInstanceOf[js.Any], monitoring = monitoring.asInstanceOf[js.Any], outgoing = outgoing.asInstanceOf[js.Any], participantRef = participantRef.asInstanceOf[js.Any])
-    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions.asInstanceOf[js.Any])
-    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChoreographyTask]
   }
+  @scala.inline
+  implicit class ChoreographyTaskOps[Self <: ChoreographyTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessageFlowRefVarargs(value: MessageFlow*): Self = this.set("messageFlowRef", js.Array(value :_*))
+    @scala.inline
+    def setMessageFlowRef(value: js.Array[MessageFlow]): Self = this.set("messageFlowRef", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -27,11 +27,30 @@ trait SchemaMetricRule extends js.Object {
 
 object SchemaMetricRule {
   @scala.inline
-  def apply(metricCosts: StringDictionary[String] = null, selector: String = null): SchemaMetricRule = {
+  def apply(): SchemaMetricRule = {
     val __obj = js.Dynamic.literal()
-    if (metricCosts != null) __obj.updateDynamic("metricCosts")(metricCosts.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMetricRule]
   }
+  @scala.inline
+  implicit class SchemaMetricRuleOps[Self <: SchemaMetricRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetricCosts(value: StringDictionary[String]): Self = this.set("metricCosts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricCosts: Self = this.set("metricCosts", js.undefined)
+    @scala.inline
+    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+  }
+  
 }
 

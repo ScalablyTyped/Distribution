@@ -17,33 +17,13 @@ trait ConfigContext extends js.Object
 
 object ConfigContext {
   @scala.inline
-  def GlobalConfigContext(
-    config: IConfig,
-    force: Boolean,
-    global: `true`,
-    json: Boolean,
-    root: Boolean,
-    property: String = null,
-    value: js.Any = null
-  ): ConfigContext = {
+  def GlobalConfigContext(config: IConfig, force: Boolean, global: `true`, json: Boolean, root: Boolean): ConfigContext = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigContext]
   }
   @scala.inline
-  def ProjectConfigContext(
-    config: BaseConfig[IProjectConfig],
-    force: Boolean,
-    global: `false`,
-    json: Boolean,
-    root: Boolean,
-    property: String = null,
-    value: js.Any = null
-  ): ConfigContext = {
+  def ProjectConfigContext(config: BaseConfig[IProjectConfig], force: Boolean, global: `false`, json: Boolean, root: Boolean): ConfigContext = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigContext]
   }
 }

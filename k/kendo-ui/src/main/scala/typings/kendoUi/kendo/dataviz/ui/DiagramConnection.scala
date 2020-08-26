@@ -4,54 +4,95 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DiagramConnection extends js.Object {
-  var content: js.UndefOr[DiagramConnectionContent] = js.undefined
-  var editable: js.UndefOr[Boolean | DiagramConnectionEditable] = js.undefined
-  var endCap: js.UndefOr[String | DiagramConnectionEndCap] = js.undefined
-  var from: js.UndefOr[String | DiagramConnectionFrom] = js.undefined
-  var fromConnector: js.UndefOr[String] = js.undefined
-  var hover: js.UndefOr[DiagramConnectionHover] = js.undefined
-  var points: js.UndefOr[js.Array[DiagramConnectionPoint]] = js.undefined
-  var selection: js.UndefOr[DiagramConnectionSelection] = js.undefined
-  var startCap: js.UndefOr[String | DiagramConnectionStartCap] = js.undefined
-  var stroke: js.UndefOr[DiagramConnectionStroke] = js.undefined
-  var to: js.UndefOr[String | DiagramConnectionTo] = js.undefined
-  var toConnector: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var content: js.UndefOr[DiagramConnectionContent] = js.native
+  var editable: js.UndefOr[Boolean | DiagramConnectionEditable] = js.native
+  var endCap: js.UndefOr[String | DiagramConnectionEndCap] = js.native
+  var from: js.UndefOr[String | DiagramConnectionFrom] = js.native
+  var fromConnector: js.UndefOr[String] = js.native
+  var hover: js.UndefOr[DiagramConnectionHover] = js.native
+  var points: js.UndefOr[js.Array[DiagramConnectionPoint]] = js.native
+  var selection: js.UndefOr[DiagramConnectionSelection] = js.native
+  var startCap: js.UndefOr[String | DiagramConnectionStartCap] = js.native
+  var stroke: js.UndefOr[DiagramConnectionStroke] = js.native
+  var to: js.UndefOr[String | DiagramConnectionTo] = js.native
+  var toConnector: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object DiagramConnection {
   @scala.inline
-  def apply(
-    content: DiagramConnectionContent = null,
-    editable: Boolean | DiagramConnectionEditable = null,
-    endCap: String | DiagramConnectionEndCap = null,
-    from: String | DiagramConnectionFrom = null,
-    fromConnector: String = null,
-    hover: DiagramConnectionHover = null,
-    points: js.Array[DiagramConnectionPoint] = null,
-    selection: DiagramConnectionSelection = null,
-    startCap: String | DiagramConnectionStartCap = null,
-    stroke: DiagramConnectionStroke = null,
-    to: String | DiagramConnectionTo = null,
-    toConnector: String = null,
-    `type`: String = null
-  ): DiagramConnection = {
+  def apply(): DiagramConnection = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (endCap != null) __obj.updateDynamic("endCap")(endCap.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (fromConnector != null) __obj.updateDynamic("fromConnector")(fromConnector.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (startCap != null) __obj.updateDynamic("startCap")(startCap.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (toConnector != null) __obj.updateDynamic("toConnector")(toConnector.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramConnection]
   }
+  @scala.inline
+  implicit class DiagramConnectionOps[Self <: DiagramConnection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: DiagramConnectionContent): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setEditable(value: Boolean | DiagramConnectionEditable): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setEndCap(value: String | DiagramConnectionEndCap): Self = this.set("endCap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndCap: Self = this.set("endCap", js.undefined)
+    @scala.inline
+    def setFrom(value: String | DiagramConnectionFrom): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setFromConnector(value: String): Self = this.set("fromConnector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromConnector: Self = this.set("fromConnector", js.undefined)
+    @scala.inline
+    def setHover(value: DiagramConnectionHover): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+    @scala.inline
+    def setPointsVarargs(value: DiagramConnectionPoint*): Self = this.set("points", js.Array(value :_*))
+    @scala.inline
+    def setPoints(value: js.Array[DiagramConnectionPoint]): Self = this.set("points", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoints: Self = this.set("points", js.undefined)
+    @scala.inline
+    def setSelection(value: DiagramConnectionSelection): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setStartCap(value: String | DiagramConnectionStartCap): Self = this.set("startCap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartCap: Self = this.set("startCap", js.undefined)
+    @scala.inline
+    def setStroke(value: DiagramConnectionStroke): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+    @scala.inline
+    def setTo(value: String | DiagramConnectionTo): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+    @scala.inline
+    def setToConnector(value: String): Self = this.set("toConnector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToConnector: Self = this.set("toConnector", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

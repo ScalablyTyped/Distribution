@@ -18,10 +18,28 @@ trait ApplicationSettings extends js.Object {
 
 object ApplicationSettings {
   @scala.inline
-  def apply(Enabled: Boolean, SettingsGroup: SettingsGroup = null): ApplicationSettings = {
+  def apply(Enabled: Boolean): ApplicationSettings = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
-    if (SettingsGroup != null) __obj.updateDynamic("SettingsGroup")(SettingsGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationSettings]
   }
+  @scala.inline
+  implicit class ApplicationSettingsOps[Self <: ApplicationSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSettingsGroup(value: SettingsGroup): Self = this.set("SettingsGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsGroup: Self = this.set("SettingsGroup", js.undefined)
+  }
+  
 }
 

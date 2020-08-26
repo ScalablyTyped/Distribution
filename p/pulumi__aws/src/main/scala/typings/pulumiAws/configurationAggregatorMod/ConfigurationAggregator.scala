@@ -24,6 +24,7 @@ class ConfigurationAggregator protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: ConfigurationAggregatorArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ConfigurationAggregatorArgs, opts: CustomResourceOptions) = this()
   /**
     * The account(s) to aggregate config data from as documented below.
@@ -42,9 +43,9 @@ class ConfigurationAggregator protected () extends CustomResource {
     */
   val organizationAggregationSource: Output_[js.UndefOr[ConfigurationAggregatorOrganizationAggregationSource]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -58,8 +59,10 @@ object ConfigurationAggregator extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ConfigurationAggregator = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ConfigurationAggregator = js.native
   def get(name: String, id: Input[ID], state: ConfigurationAggregatorState): ConfigurationAggregator = js.native
   def get(name: String, id: Input[ID], state: ConfigurationAggregatorState, opts: CustomResourceOptions): ConfigurationAggregator = js.native
   /**

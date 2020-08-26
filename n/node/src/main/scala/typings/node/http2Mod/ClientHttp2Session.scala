@@ -138,6 +138,7 @@ trait ClientHttp2Session extends Http2Session {
     ]
   ): this.type = js.native
   def request(): ClientHttp2Stream = js.native
+  def request(headers: js.UndefOr[scala.Nothing], options: ClientSessionRequestOptions): ClientHttp2Stream = js.native
   def request(headers: OutgoingHttpHeaders): ClientHttp2Stream = js.native
   def request(headers: OutgoingHttpHeaders, options: ClientSessionRequestOptions): ClientHttp2Stream = js.native
 }

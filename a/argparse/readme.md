@@ -11,8 +11,8 @@ Very powerful CLI arguments parser. Native port of argparse - python's options p
 | Full name          | argparse |
 | Keywords           | cli, parser, argparse, option, args |
 | # releases         | 2 |
-| # dependents       | 866 |
-| # downloads        | 489187026 |
+| # dependents       | 867 |
+| # downloads        | 499658029 |
 | # stars            | 21 |
 
 ## Links

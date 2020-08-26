@@ -12,7 +12,7 @@ A fully featured Memcached API client, supporting both single and clustered Memc
 | Keywords           | InnoDB memcached API, cache, client, cluster, failover, hashing, membase, memcache, memcached, nMemcached, nosql |
 | # releases         | 0 |
 | # dependents       | 210 |
-| # downloads        | 2430767 |
+| # downloads        | 2557644 |
 | # stars            | 44 |
 
 ## Links

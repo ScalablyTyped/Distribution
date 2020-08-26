@@ -1,47 +1,43 @@
 package typings.argparse.mod
 
-import typings.argparse.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubArgumentParserOptions extends ArgumentParserOptions {
-  var aliases: js.UndefOr[js.Array[String]] = js.undefined
-  var help: js.UndefOr[String] = js.undefined
+  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var help: js.UndefOr[String] = js.native
 }
 
 object SubArgumentParserOptions {
   @scala.inline
-  def apply(
-    addHelp: js.UndefOr[Boolean] = js.undefined,
-    aliases: js.Array[String] = null,
-    argumentDefault: js.Any = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    epilog: String = null,
-    formatterClass: `0` = null,
-    help: String = null,
-    parents: js.Array[ArgumentParser] = null,
-    prefixChars: String = null,
-    prog: String = null,
-    usage: String = null,
-    version: String = null
-  ): SubArgumentParserOptions = {
+  def apply(): SubArgumentParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addHelp)) __obj.updateDynamic("addHelp")(addHelp.get.asInstanceOf[js.Any])
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (argumentDefault != null) __obj.updateDynamic("argumentDefault")(argumentDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (epilog != null) __obj.updateDynamic("epilog")(epilog.asInstanceOf[js.Any])
-    if (formatterClass != null) __obj.updateDynamic("formatterClass")(formatterClass.asInstanceOf[js.Any])
-    if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    if (parents != null) __obj.updateDynamic("parents")(parents.asInstanceOf[js.Any])
-    if (prefixChars != null) __obj.updateDynamic("prefixChars")(prefixChars.asInstanceOf[js.Any])
-    if (prog != null) __obj.updateDynamic("prog")(prog.asInstanceOf[js.Any])
-    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubArgumentParserOptions]
   }
+  @scala.inline
+  implicit class SubArgumentParserOptionsOps[Self <: SubArgumentParserOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    @scala.inline
+    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("aliases", js.undefined)
+    @scala.inline
+    def setHelp(value: String): Self = this.set("help", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelp: Self = this.set("help", js.undefined)
+  }
+  
 }
 

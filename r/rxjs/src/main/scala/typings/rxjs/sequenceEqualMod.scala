@@ -5,7 +5,6 @@ import typings.rxjs.operatorMod.Operator
 import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.Observer
 import typings.rxjs.typesMod.OperatorFunction
-import typings.rxjs.typesMod.TeardownLogic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +17,6 @@ object sequenceEqualMod extends js.Object {
     def this(compareTo: Observable[T], comparator: js.Function2[/* a */ T, /* b */ T, Boolean]) = this()
     var comparator: js.Any = js.native
     var compareTo: js.Any = js.native
-    /* CompleteClass */
-    override def call(subscriber: Subscriber[Boolean], source: js.Any): TeardownLogic = js.native
   }
   
   @js.native

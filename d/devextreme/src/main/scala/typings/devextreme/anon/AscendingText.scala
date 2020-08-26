@@ -7,30 +7,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AscendingText extends js.Object {
-  var ascendingText: js.UndefOr[String] = js.undefined
-  var clearText: js.UndefOr[String] = js.undefined
-  var descendingText: js.UndefOr[String] = js.undefined
-  var mode: js.UndefOr[multiple | none | single_] = js.undefined
-  var showSortIndexes: js.UndefOr[Boolean] = js.undefined
+  var ascendingText: js.UndefOr[String] = js.native
+  var clearText: js.UndefOr[String] = js.native
+  var descendingText: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[multiple | none | single_] = js.native
+  var showSortIndexes: js.UndefOr[Boolean] = js.native
 }
 
 object AscendingText {
   @scala.inline
-  def apply(
-    ascendingText: String = null,
-    clearText: String = null,
-    descendingText: String = null,
-    mode: multiple | none | single_ = null,
-    showSortIndexes: js.UndefOr[Boolean] = js.undefined
-  ): AscendingText = {
+  def apply(): AscendingText = {
     val __obj = js.Dynamic.literal()
-    if (ascendingText != null) __obj.updateDynamic("ascendingText")(ascendingText.asInstanceOf[js.Any])
-    if (clearText != null) __obj.updateDynamic("clearText")(clearText.asInstanceOf[js.Any])
-    if (descendingText != null) __obj.updateDynamic("descendingText")(descendingText.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSortIndexes)) __obj.updateDynamic("showSortIndexes")(showSortIndexes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AscendingText]
   }
+  @scala.inline
+  implicit class AscendingTextOps[Self <: AscendingText] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAscendingText(value: String): Self = this.set("ascendingText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAscendingText: Self = this.set("ascendingText", js.undefined)
+    @scala.inline
+    def setClearText(value: String): Self = this.set("clearText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearText: Self = this.set("clearText", js.undefined)
+    @scala.inline
+    def setDescendingText(value: String): Self = this.set("descendingText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescendingText: Self = this.set("descendingText", js.undefined)
+    @scala.inline
+    def setMode(value: multiple | none | single_): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setShowSortIndexes(value: Boolean): Self = this.set("showSortIndexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSortIndexes: Self = this.set("showSortIndexes", js.undefined)
+  }
+  
 }
 

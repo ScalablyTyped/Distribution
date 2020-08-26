@@ -4,47 +4,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MochaSetupOptions extends js.Object {
   // bail on the first test failure
-  var bail: js.UndefOr[Boolean] = js.undefined
+  var bail: js.UndefOr[Boolean] = js.native
   //array of accepted globals
-  var globals: js.UndefOr[js.Array[_]] = js.undefined
+  var globals: js.UndefOr[js.Array[_]] = js.native
   // grep string or regexp to filter tests with
-  var grep: js.UndefOr[js.Any] = js.undefined
+  var grep: js.UndefOr[js.Any] = js.native
   // ignore global leaks
-  var ignoreLeaks: js.UndefOr[Boolean] = js.undefined
+  var ignoreLeaks: js.UndefOr[Boolean] = js.native
   // reporter instance (function or string), defaults to `mocha.reporters.Spec`
-  var reporter: js.UndefOr[js.Any] = js.undefined
+  var reporter: js.UndefOr[js.Any] = js.native
   //milliseconds to wait before considering a test slow
-  var slow: js.UndefOr[Double] = js.undefined
+  var slow: js.UndefOr[Double] = js.native
   // timeout in milliseconds
-  var timeout: js.UndefOr[Double] = js.undefined
+  var timeout: js.UndefOr[Double] = js.native
   // ui name "bdd", "tdd", "exports" etc
-  var ui: js.UndefOr[String] = js.undefined
+  var ui: js.UndefOr[String] = js.native
 }
 
 object MochaSetupOptions {
   @scala.inline
-  def apply(
-    bail: js.UndefOr[Boolean] = js.undefined,
-    globals: js.Array[_] = null,
-    grep: js.Any = null,
-    ignoreLeaks: js.UndefOr[Boolean] = js.undefined,
-    reporter: js.Any = null,
-    slow: js.UndefOr[Double] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    ui: String = null
-  ): MochaSetupOptions = {
+  def apply(): MochaSetupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.get.asInstanceOf[js.Any])
-    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
-    if (grep != null) __obj.updateDynamic("grep")(grep.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreLeaks)) __obj.updateDynamic("ignoreLeaks")(ignoreLeaks.get.asInstanceOf[js.Any])
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
-    if (!js.isUndefined(slow)) __obj.updateDynamic("slow")(slow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[MochaSetupOptions]
   }
+  @scala.inline
+  implicit class MochaSetupOptionsOps[Self <: MochaSetupOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBail(value: Boolean): Self = this.set("bail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBail: Self = this.set("bail", js.undefined)
+    @scala.inline
+    def setGlobalsVarargs(value: js.Any*): Self = this.set("globals", js.Array(value :_*))
+    @scala.inline
+    def setGlobals(value: js.Array[_]): Self = this.set("globals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobals: Self = this.set("globals", js.undefined)
+    @scala.inline
+    def setGrep(value: js.Any): Self = this.set("grep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrep: Self = this.set("grep", js.undefined)
+    @scala.inline
+    def setIgnoreLeaks(value: Boolean): Self = this.set("ignoreLeaks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreLeaks: Self = this.set("ignoreLeaks", js.undefined)
+    @scala.inline
+    def setReporter(value: js.Any): Self = this.set("reporter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReporter: Self = this.set("reporter", js.undefined)
+    @scala.inline
+    def setSlow(value: Double): Self = this.set("slow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlow: Self = this.set("slow", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUi(value: String): Self = this.set("ui", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUi: Self = this.set("ui", js.undefined)
+  }
+  
 }
 

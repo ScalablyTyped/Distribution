@@ -23,16 +23,34 @@ trait UserPoolAdminCreateUserConfigInviteMessageTemplate extends js.Object {
 
 object UserPoolAdminCreateUserConfigInviteMessageTemplate {
   @scala.inline
-  def apply(
-    emailMessage: Input[String] = null,
-    emailSubject: Input[String] = null,
-    smsMessage: Input[String] = null
-  ): UserPoolAdminCreateUserConfigInviteMessageTemplate = {
+  def apply(): UserPoolAdminCreateUserConfigInviteMessageTemplate = {
     val __obj = js.Dynamic.literal()
-    if (emailMessage != null) __obj.updateDynamic("emailMessage")(emailMessage.asInstanceOf[js.Any])
-    if (emailSubject != null) __obj.updateDynamic("emailSubject")(emailSubject.asInstanceOf[js.Any])
-    if (smsMessage != null) __obj.updateDynamic("smsMessage")(smsMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolAdminCreateUserConfigInviteMessageTemplate]
   }
+  @scala.inline
+  implicit class UserPoolAdminCreateUserConfigInviteMessageTemplateOps[Self <: UserPoolAdminCreateUserConfigInviteMessageTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmailMessage(value: Input[String]): Self = this.set("emailMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailMessage: Self = this.set("emailMessage", js.undefined)
+    @scala.inline
+    def setEmailSubject(value: Input[String]): Self = this.set("emailSubject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailSubject: Self = this.set("emailSubject", js.undefined)
+    @scala.inline
+    def setSmsMessage(value: Input[String]): Self = this.set("smsMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmsMessage: Self = this.set("smsMessage", js.undefined)
+  }
+  
 }
 

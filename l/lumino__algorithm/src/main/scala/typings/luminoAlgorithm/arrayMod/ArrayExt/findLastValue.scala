@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.findLastValue")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.findLastValue")
 @js.native
 object findLastValue extends js.Object {
   /**
@@ -53,6 +53,12 @@ object findLastValue extends js.Object {
     * ```
     */
   def apply[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.UndefOr[T] = js.native
+  def apply[T](
+    array: ArrayLike[T],
+    fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+    start: js.UndefOr[scala.Nothing],
+    stop: Double
+  ): js.UndefOr[T] = js.native
   def apply[T](array: ArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): js.UndefOr[T] = js.native
   def apply[T](
     array: ArrayLike[T],

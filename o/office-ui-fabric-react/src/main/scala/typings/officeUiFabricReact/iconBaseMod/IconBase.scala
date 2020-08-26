@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 class IconBase protected ()
   extends Component[IIconProps, IIconState, js.Any] {
   def this(props: IIconProps) = this()
-  var onImageLoadingStateChange: js.Any = js.native
+  var _onImageLoadingStateChange: js.Any = js.native
 }
 

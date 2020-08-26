@@ -40,5 +40,28 @@ object GetLaunchConfigurationRootBlockDevice {
     val __obj = js.Dynamic.literal(deleteOnTermination = deleteOnTermination.asInstanceOf[js.Any], encrypted = encrypted.asInstanceOf[js.Any], iops = iops.asInstanceOf[js.Any], volumeSize = volumeSize.asInstanceOf[js.Any], volumeType = volumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLaunchConfigurationRootBlockDevice]
   }
+  @scala.inline
+  implicit class GetLaunchConfigurationRootBlockDeviceOps[Self <: GetLaunchConfigurationRootBlockDevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteOnTermination(value: Boolean): Self = this.set("deleteOnTermination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncrypted(value: Boolean): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIops(value: Double): Self = this.set("iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVolumeSize(value: Double): Self = this.set("volumeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVolumeType(value: String): Self = this.set("volumeType", value.asInstanceOf[js.Any])
+  }
+  
 }
 

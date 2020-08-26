@@ -22,11 +22,32 @@ trait GetSavingsPlansUtilizationRequest extends js.Object {
 
 object GetSavingsPlansUtilizationRequest {
   @scala.inline
-  def apply(TimePeriod: DateInterval, Filter: Expression = null, Granularity: Granularity = null): GetSavingsPlansUtilizationRequest = {
+  def apply(TimePeriod: DateInterval): GetSavingsPlansUtilizationRequest = {
     val __obj = js.Dynamic.literal(TimePeriod = TimePeriod.asInstanceOf[js.Any])
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (Granularity != null) __obj.updateDynamic("Granularity")(Granularity.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavingsPlansUtilizationRequest]
   }
+  @scala.inline
+  implicit class GetSavingsPlansUtilizationRequestOps[Self <: GetSavingsPlansUtilizationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimePeriod(value: DateInterval): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: Expression): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+    @scala.inline
+    def setGranularity(value: Granularity): Self = this.set("Granularity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGranularity: Self = this.set("Granularity", js.undefined)
+  }
+  
 }
 

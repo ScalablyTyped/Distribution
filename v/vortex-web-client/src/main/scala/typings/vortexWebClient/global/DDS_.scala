@@ -46,27 +46,6 @@ object DDS_ extends js.Object {
       * @param qos - DataReader quality of service
       */
     def this(runtime: Runtime, topic: typings.vortexWebClient.DDS.Topic, qos: EntityQos) = this()
-    /**
-      * Attaches the  listener `l` to this data reader and returns
-      * the id associated to the listener.
-      * @param l - listener code
-      * @returns listener handle
-      */
-    /* CompleteClass */
-    override def addListener(l: js.Function1[/* msg */ js.Any, Unit]): Double = js.native
-    /**
-      * closes the DataReader
-      */
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /**
-      * removes a listener from this data reader.
-      * @param idx - listener id
-      */
-    /* CompleteClass */
-    override def removeListener(idx: Double): Unit = js.native
-    /* CompleteClass */
-    override def resetStats(): Unit = js.native
   }
   
   @js.native
@@ -98,17 +77,6 @@ object DDS_ extends js.Object {
       * @param qos - DataWriter quality of service
       */
     def this(runtime: Runtime, topic: typings.vortexWebClient.DDS.Topic, qos: EntityQos) = this()
-    /**
-      * Closes the DataWriter
-      */
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /**
-      * Writes one or more samples.
-      * @param ds - data sample
-      */
-    /* CompleteClass */
-    override def write(ds: js.Any*): Unit = js.native
   }
   
   @js.native
@@ -144,17 +112,8 @@ object DDS_ extends js.Object {
       */
     def this(did: Double, tname: String, qos: EntityQos) = this()
     def this(did: Double, tname: String, qos: EntityQos, ttype: String) = this()
+    def this(did: Double, tname: String, qos: EntityQos, ttype: js.UndefOr[scala.Nothing], tregtype: String) = this()
     def this(did: Double, tname: String, qos: EntityQos, ttype: String, tregtype: String) = this()
-    /**
-      * Called when topic gets registered in the runtime
-      */
-    /* CompleteClass */
-    override def onregistered(): Unit = js.native
-    /**
-      * Called when topic gets unregistered in the runtime
-      */
-    /* CompleteClass */
-    override def onunregistered(): Unit = js.native
   }
   
   @js.native

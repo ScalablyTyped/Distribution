@@ -27,18 +27,38 @@ trait PolicyGrantingServiceAccess extends js.Object {
 
 object PolicyGrantingServiceAccess {
   @scala.inline
-  def apply(
-    PolicyName: policyNameType,
-    PolicyType: policyType,
-    EntityName: entityNameType = null,
-    EntityType: policyOwnerEntityType = null,
-    PolicyArn: arnType = null
-  ): PolicyGrantingServiceAccess = {
+  def apply(PolicyName: policyNameType, PolicyType: policyType): PolicyGrantingServiceAccess = {
     val __obj = js.Dynamic.literal(PolicyName = PolicyName.asInstanceOf[js.Any], PolicyType = PolicyType.asInstanceOf[js.Any])
-    if (EntityName != null) __obj.updateDynamic("EntityName")(EntityName.asInstanceOf[js.Any])
-    if (EntityType != null) __obj.updateDynamic("EntityType")(EntityType.asInstanceOf[js.Any])
-    if (PolicyArn != null) __obj.updateDynamic("PolicyArn")(PolicyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyGrantingServiceAccess]
   }
+  @scala.inline
+  implicit class PolicyGrantingServiceAccessOps[Self <: PolicyGrantingServiceAccess] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyName(value: policyNameType): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicyType(value: policyType): Self = this.set("PolicyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEntityName(value: entityNameType): Self = this.set("EntityName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityName: Self = this.set("EntityName", js.undefined)
+    @scala.inline
+    def setEntityType(value: policyOwnerEntityType): Self = this.set("EntityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityType: Self = this.set("EntityType", js.undefined)
+    @scala.inline
+    def setPolicyArn(value: arnType): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyArn: Self = this.set("PolicyArn", js.undefined)
+  }
+  
 }
 

@@ -44,6 +44,7 @@ trait Archiver extends Transform {
   def directory_false(dirpath: String, destpath: `false`, data: EntryDataFunction): this.type = js.native
   def file(filename: String, data: EntryData): this.type = js.native
   def glob(pattern: String): this.type = js.native
+  def glob(pattern: String, options: js.UndefOr[scala.Nothing], data: PartialEntryData): this.type = js.native
   def glob(pattern: String, options: IOptions): this.type = js.native
   def glob(pattern: String, options: IOptions, data: PartialEntryData): this.type = js.native
   @JSName("on")

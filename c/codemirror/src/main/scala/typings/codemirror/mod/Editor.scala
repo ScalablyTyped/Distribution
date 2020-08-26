@@ -51,6 +51,7 @@ import typings.codemirror.codemirrorStrings.inputRead
 import typings.codemirror.codemirrorStrings.inputStyle
 import typings.codemirror.codemirrorStrings.keyHandled
 import typings.codemirror.codemirrorStrings.keyMap
+import typings.codemirror.codemirrorStrings.lineNumberFormatter
 import typings.codemirror.codemirrorStrings.lineNumbers
 import typings.codemirror.codemirrorStrings.lineWiseCopyCut
 import typings.codemirror.codemirrorStrings.lineWrapping
@@ -59,6 +60,8 @@ import typings.codemirror.codemirrorStrings.matchBrackets
 import typings.codemirror.codemirrorStrings.matchTags
 import typings.codemirror.codemirrorStrings.maxHighlightLength
 import typings.codemirror.codemirrorStrings.mode
+import typings.codemirror.codemirrorStrings.onDragEvent
+import typings.codemirror.codemirrorStrings.onKeyEvent
 import typings.codemirror.codemirrorStrings.optionChange
 import typings.codemirror.codemirrorStrings.overwriteToggle
 import typings.codemirror.codemirrorStrings.paste
@@ -92,6 +95,7 @@ import typings.codemirror.codemirrorStrings.viewportChange
 import typings.codemirror.codemirrorStrings.viewportMargin
 import typings.codemirror.codemirrorStrings.workDelay
 import typings.codemirror.codemirrorStrings.workTime
+import typings.std.DragEvent
 import typings.std.Event
 import typings.std.FocusEvent
 import typings.std.HTMLElement
@@ -162,6 +166,7 @@ trait Editor extends Doc {
     If it is "page" or not given, they are relative to the top-left corner of the page.
     where is a boolean indicating whether you want the start(true) or the end(false) of the selection. */
   def cursorCoords(): Left = js.native
+  def cursorCoords(where: js.UndefOr[scala.Nothing], mode: CoordsMode): Left = js.native
   def cursorCoords(where: Boolean): Left = js.native
   def cursorCoords(where: Boolean, mode: CoordsMode): Left = js.native
   def cursorCoords(where: Null, mode: CoordsMode): Left = js.native
@@ -200,122 +205,128 @@ trait Editor extends Doc {
   /** Gets the inner mode at a given position. This will return the same as getMode for simple modes, but will return an inner mode for nesting modes (such as htmlmixed). */
   def getModeAt(pos: Position): js.Any = js.native
   @JSName("getOption")
-  def getOption_addModeClass(option: addModeClass): Boolean = js.native
+  def getOption_addModeClass(option: addModeClass): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_allowDropFileTypes(option: allowDropFileTypes): js.Array[String] = js.native
+  def getOption_allowDropFileTypes(option: allowDropFileTypes): js.UndefOr[js.Array[String]] = js.native
   @JSName("getOption")
-  def getOption_autoCloseBrackets(option: autoCloseBrackets): AutoCloseBrackets | Boolean | String = js.native
+  def getOption_autoCloseBrackets(option: autoCloseBrackets): js.UndefOr[AutoCloseBrackets | Boolean | String] = js.native
   @JSName("getOption")
-  def getOption_autoCloseTags(option: autoCloseTags): AutoCloseTags | Boolean = js.native
+  def getOption_autoCloseTags(option: autoCloseTags): js.UndefOr[AutoCloseTags | Boolean] = js.native
   @JSName("getOption")
-  def getOption_autoRefresh(option: autoRefresh): Boolean | Delay = js.native
+  def getOption_autoRefresh(option: autoRefresh): js.UndefOr[Boolean | Delay] = js.native
   @JSName("getOption")
-  def getOption_autocapitalize(option: autocapitalize): Boolean = js.native
+  def getOption_autocapitalize(option: autocapitalize): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_autocorrect(option: autocorrect): Boolean = js.native
+  def getOption_autocorrect(option: autocorrect): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_autofocus(option: autofocus): Boolean = js.native
+  def getOption_autofocus(option: autofocus): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_coverGutterNextToScrollbar(option: coverGutterNextToScrollbar): Boolean = js.native
+  def getOption_coverGutterNextToScrollbar(option: coverGutterNextToScrollbar): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_cursorBlinkRate(option: cursorBlinkRate): Double = js.native
+  def getOption_cursorBlinkRate(option: cursorBlinkRate): js.UndefOr[Double] = js.native
   @JSName("getOption")
-  def getOption_cursorHeight(option: cursorHeight): Double = js.native
+  def getOption_cursorHeight(option: cursorHeight): js.UndefOr[Double] = js.native
   @JSName("getOption")
-  def getOption_cursorScrollMargin(option: cursorScrollMargin): Double = js.native
+  def getOption_cursorScrollMargin(option: cursorScrollMargin): js.UndefOr[Double] = js.native
   @JSName("getOption")
-  def getOption_dragDrop(option: dragDrop): Boolean = js.native
+  def getOption_dragDrop(option: dragDrop): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_electricChars(option: electricChars): Boolean = js.native
+  def getOption_electricChars(option: electricChars): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_extraKeys(option: extraKeys): String | KeyMap = js.native
+  def getOption_extraKeys(option: extraKeys): js.UndefOr[String | KeyMap] = js.native
   @JSName("getOption")
-  def getOption_firstLineNumber(option: firstLineNumber): Double = js.native
+  def getOption_firstLineNumber(option: firstLineNumber): js.UndefOr[Double] = js.native
   @JSName("getOption")
-  def getOption_fixedGutter(option: fixedGutter): Boolean = js.native
+  def getOption_fixedGutter(option: fixedGutter): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_flattenSpans(option: flattenSpans): Boolean = js.native
+  def getOption_flattenSpans(option: flattenSpans): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_foldGutter(option: foldGutter): Boolean = js.native
+  def getOption_foldGutter(option: foldGutter): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_gutters(option: gutters): js.Array[String] = js.native
+  def getOption_gutters(option: gutters): js.UndefOr[js.Array[String]] = js.native
   @JSName("getOption")
-  def getOption_highlightSelectionMatches(option: highlightSelectionMatches): HighlightSelectionMatches | Boolean = js.native
+  def getOption_highlightSelectionMatches(option: highlightSelectionMatches): js.UndefOr[HighlightSelectionMatches | Boolean] = js.native
   @JSName("getOption")
-  def getOption_hintOptions(option: hintOptions): ShowHintOptions = js.native
+  def getOption_hintOptions(option: hintOptions): js.UndefOr[ShowHintOptions] = js.native
   @JSName("getOption")
-  def getOption_historyEventDelay(option: historyEventDelay): Double = js.native
+  def getOption_historyEventDelay(option: historyEventDelay): js.UndefOr[Double] = js.native
   @JSName("getOption")
-  def getOption_indentUnit(option: indentUnit): Double = js.native
+  def getOption_indentUnit(option: indentUnit): js.UndefOr[Double] = js.native
   @JSName("getOption")
-  def getOption_indentWithTabs(option: indentWithTabs): Boolean = js.native
+  def getOption_indentWithTabs(option: indentWithTabs): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_inputStyle(option: inputStyle): InputStyle = js.native
+  def getOption_inputStyle(option: inputStyle): js.UndefOr[InputStyle] = js.native
   @JSName("getOption")
-  def getOption_keyMap(option: keyMap): String = js.native
+  def getOption_keyMap(option: keyMap): js.UndefOr[String] = js.native
   @JSName("getOption")
-  def getOption_lineNumbers(option: lineNumbers): Boolean = js.native
+  def getOption_lineNumberFormatter(option: lineNumberFormatter): js.UndefOr[js.Function1[/* line */ Double, String]] = js.native
   @JSName("getOption")
-  def getOption_lineWiseCopyCut(option: lineWiseCopyCut): Boolean = js.native
+  def getOption_lineNumbers(option: lineNumbers): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_lineWrapping(option: lineWrapping): Boolean = js.native
+  def getOption_lineWiseCopyCut(option: lineWiseCopyCut): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_lint(option: lint): Boolean | LintStateOptions | Linter | AsyncLinter = js.native
+  def getOption_lineWrapping(option: lineWrapping): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_matchBrackets(option: matchBrackets): MatchBrackets | Boolean = js.native
+  def getOption_lint(option: lint): js.UndefOr[Boolean | LintStateOptions | Linter | AsyncLinter] = js.native
   @JSName("getOption")
-  def getOption_matchTags(option: matchTags): MatchTags | Boolean = js.native
+  def getOption_matchBrackets(option: matchBrackets): js.UndefOr[MatchBrackets | Boolean] = js.native
   @JSName("getOption")
-  def getOption_maxHighlightLength(option: maxHighlightLength): Double = js.native
+  def getOption_matchTags(option: matchTags): js.UndefOr[MatchTags | Boolean] = js.native
   @JSName("getOption")
-  def getOption_mode(option: mode): js.Any = js.native
+  def getOption_maxHighlightLength(option: maxHighlightLength): js.UndefOr[Double] = js.native
   @JSName("getOption")
-  def getOption_pasteLinesPerSelection(option: pasteLinesPerSelection): Boolean = js.native
+  def getOption_mode(option: mode): js.UndefOr[js.Any] = js.native
   @JSName("getOption")
-  def getOption_placeholder(option: placeholder): String = js.native
+  def getOption_onDragEvent(option: onDragEvent): js.UndefOr[js.Function2[/* instance */ this.type, /* event */ DragEvent, Boolean]] = js.native
   @JSName("getOption")
-  def getOption_pollInterval(option: pollInterval): Double = js.native
+  def getOption_onKeyEvent(option: onKeyEvent): js.UndefOr[js.Function2[/* instance */ this.type, /* event */ KeyboardEvent, Boolean]] = js.native
   @JSName("getOption")
-  def getOption_readOnly(option: readOnly): js.Any = js.native
+  def getOption_pasteLinesPerSelection(option: pasteLinesPerSelection): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_resetSelectionOnContextMenu(option: resetSelectionOnContextMenu): Boolean = js.native
+  def getOption_placeholder(option: placeholder): js.UndefOr[String] = js.native
   @JSName("getOption")
-  def getOption_rtlMoveVisually(option: rtlMoveVisually): Boolean = js.native
+  def getOption_pollInterval(option: pollInterval): js.UndefOr[Double] = js.native
   @JSName("getOption")
-  def getOption_screenReaderLabel(option: screenReaderLabel): String = js.native
+  def getOption_readOnly(option: readOnly): js.UndefOr[js.Any] = js.native
   @JSName("getOption")
-  def getOption_scrollPastEnd(option: scrollPastEnd): Boolean = js.native
+  def getOption_resetSelectionOnContextMenu(option: resetSelectionOnContextMenu): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_scrollbarStyle(option: scrollbarStyle): String = js.native
+  def getOption_rtlMoveVisually(option: rtlMoveVisually): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_selectionsMayTouch(option: selectionsMayTouch): Boolean = js.native
+  def getOption_screenReaderLabel(option: screenReaderLabel): js.UndefOr[String] = js.native
   @JSName("getOption")
-  def getOption_showCursorWhenSelecting(option: showCursorWhenSelecting): Boolean = js.native
+  def getOption_scrollPastEnd(option: scrollPastEnd): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_showHint(option: showHint): Boolean = js.native
+  def getOption_scrollbarStyle(option: scrollbarStyle): js.UndefOr[String] = js.native
   @JSName("getOption")
-  def getOption_smartIndent(option: smartIndent): Boolean = js.native
+  def getOption_selectionsMayTouch(option: selectionsMayTouch): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_spellcheck(option: spellcheck): Boolean = js.native
+  def getOption_showCursorWhenSelecting(option: showCursorWhenSelecting): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_styleActiveLine(option: styleActiveLine): StyleActiveLine | Boolean = js.native
+  def getOption_showHint(option: showHint): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_tabSize(option: tabSize): Double = js.native
+  def getOption_smartIndent(option: smartIndent): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_tabindex(option: tabindex): Double = js.native
+  def getOption_spellcheck(option: spellcheck): js.UndefOr[Boolean] = js.native
   @JSName("getOption")
-  def getOption_theme(option: theme): String = js.native
+  def getOption_styleActiveLine(option: styleActiveLine): js.UndefOr[StyleActiveLine | Boolean] = js.native
   @JSName("getOption")
-  def getOption_undoDepth(option: undoDepth): Double = js.native
+  def getOption_tabSize(option: tabSize): js.UndefOr[Double] = js.native
+  @JSName("getOption")
+  def getOption_tabindex(option: tabindex): js.UndefOr[Double] = js.native
+  @JSName("getOption")
+  def getOption_theme(option: theme): js.UndefOr[String] = js.native
+  @JSName("getOption")
+  def getOption_undoDepth(option: undoDepth): js.UndefOr[Double] = js.native
   /** Retrieves the current value of the given option for this editor instance. */
   @JSName("getOption")
-  def getOption_value(option: value): js.Any = js.native
+  def getOption_value(option: value): js.UndefOr[js.Any] = js.native
   @JSName("getOption")
-  def getOption_viewportMargin(option: viewportMargin): Double = js.native
+  def getOption_viewportMargin(option: viewportMargin): js.UndefOr[Double] = js.native
   @JSName("getOption")
-  def getOption_workDelay(option: workDelay): Double = js.native
+  def getOption_workDelay(option: workDelay): js.UndefOr[Double] = js.native
   @JSName("getOption")
-  def getOption_workTime(option: workTime): Double = js.native
+  def getOption_workTime(option: workTime): js.UndefOr[Double] = js.native
   /** Get an { left , top , width , height , clientWidth , clientHeight } object that represents the current scroll position, the size of the scrollable area,
     and the size of the visible area(minus scrollbars). */
   def getScrollInfo(): ScrollInfo = js.native
@@ -346,6 +357,7 @@ trait Editor extends Doc {
     is the bottom of the last line in the document. By default, the position of the actual text is returned.
     If includeWidgets is true and the line has line widgets, the position above the first line widget is returned. */
   def heightAtLine(line: js.Any): Double = js.native
+  def heightAtLine(line: js.Any, mode: js.UndefOr[scala.Nothing], includeWidgets: Boolean): Double = js.native
   def heightAtLine(line: js.Any, mode: CoordsMode): Double = js.native
   def heightAtLine(line: js.Any, mode: CoordsMode, includeWidgets: Boolean): Double = js.native
   /** Adjust the indentation of the given line.
@@ -369,8 +381,6 @@ trait Editor extends Doc {
   def lineComment(from: Position, to: Position, options: CommentOptions): Unit = js.native
   /** Returns the line number, text content, and marker status of the given line, which can be either a number or a line handle. */
   def lineInfo(line: js.Any): BgClass = js.native
-  /** Returns the preferred line separator string for this document, as per the option by the same name. When that option is null, the string "\n" is returned. */
-  def lineSeparator(): String = js.native
   def off(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   def off(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
   def off[K /* <: DOMEvent with (copy | cut | paste) */](
@@ -651,6 +661,8 @@ trait Editor extends Doc {
   def removeLineClass(line: js.Any, where: String, class_ : String): LineHandle = js.native
   /** Pass this the exact argument passed for the mode parameter to addOverlay to remove an overlay again. */
   def removeOverlay(mode: js.Any): Unit = js.native
+  /** Scrolls the given element into view. pos is a { line , ch } position, referring to a given character, null, to refer to the cursor.
+    The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
   def scrollIntoView(): Unit = js.native
   def scrollIntoView(pos: Null, margin: Double): Unit = js.native
   /** Scrolls the given element into view. pos is a { left , top , right , bottom } object, in editor-local coordinates.
@@ -665,23 +677,28 @@ trait Editor extends Doc {
     The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
   def scrollIntoView(pos: Line): Unit = js.native
   def scrollIntoView(pos: Line, margin: Double): Unit = js.native
-  /** Scrolls the given element into view. pos is a { line , ch } position, referring to a given character, null, to refer to the cursor.
-    The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
   def scrollIntoView(pos: Position): Unit = js.native
   def scrollIntoView(pos: Position, margin: Double): Unit = js.native
   /** Scroll the editor to a given(pixel) position.Both arguments may be left as null or undefined to have no effect. */
   def scrollTo(): Unit = js.native
+  def scrollTo(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def scrollTo(x: Double): Unit = js.native
   def scrollTo(x: Double, y: Double): Unit = js.native
   def scrollTo(x: Null, y: Double): Unit = js.native
-  def setGutterMarker(line: js.Any, gutterID: String): LineHandle = js.native
   /** Sets the gutter marker for the given gutter (identified by its CSS class, see the gutters option) to the given value.
     Value can be either null, to clear the marker, or a DOM element, to set it. The DOM element will be shown in the specified gutter next to the specified line. */
+  def setGutterMarker(line: js.Any, gutterID: String): LineHandle = js.native
   def setGutterMarker(line: js.Any, gutterID: String, value: HTMLElement): LineHandle = js.native
+  @JSName("setOption")
+  def setOption_addModeClass(option: addModeClass): Unit = js.native
   @JSName("setOption")
   def setOption_addModeClass(option: addModeClass, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_allowDropFileTypes(option: allowDropFileTypes): Unit = js.native
+  @JSName("setOption")
   def setOption_allowDropFileTypes(option: allowDropFileTypes, value: js.Array[String]): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoCloseBrackets(option: autoCloseBrackets): Unit = js.native
   @JSName("setOption")
   def setOption_autoCloseBrackets(option: autoCloseBrackets, value: String): Unit = js.native
   @JSName("setOption")
@@ -689,67 +706,127 @@ trait Editor extends Doc {
   @JSName("setOption")
   def setOption_autoCloseBrackets(option: autoCloseBrackets, value: AutoCloseBrackets): Unit = js.native
   @JSName("setOption")
+  def setOption_autoCloseTags(option: autoCloseTags): Unit = js.native
+  @JSName("setOption")
   def setOption_autoCloseTags(option: autoCloseTags, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_autoCloseTags(option: autoCloseTags, value: AutoCloseTags): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoRefresh(option: autoRefresh): Unit = js.native
   @JSName("setOption")
   def setOption_autoRefresh(option: autoRefresh, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_autoRefresh(option: autoRefresh, value: Delay): Unit = js.native
   @JSName("setOption")
+  def setOption_autocapitalize(option: autocapitalize): Unit = js.native
+  @JSName("setOption")
   def setOption_autocapitalize(option: autocapitalize, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_autocorrect(option: autocorrect): Unit = js.native
   @JSName("setOption")
   def setOption_autocorrect(option: autocorrect, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_autofocus(option: autofocus): Unit = js.native
+  @JSName("setOption")
   def setOption_autofocus(option: autofocus, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_coverGutterNextToScrollbar(option: coverGutterNextToScrollbar): Unit = js.native
   @JSName("setOption")
   def setOption_coverGutterNextToScrollbar(option: coverGutterNextToScrollbar, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_cursorBlinkRate(option: cursorBlinkRate): Unit = js.native
+  @JSName("setOption")
   def setOption_cursorBlinkRate(option: cursorBlinkRate, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_cursorHeight(option: cursorHeight): Unit = js.native
   @JSName("setOption")
   def setOption_cursorHeight(option: cursorHeight, value: Double): Unit = js.native
   @JSName("setOption")
+  def setOption_cursorScrollMargin(option: cursorScrollMargin): Unit = js.native
+  @JSName("setOption")
   def setOption_cursorScrollMargin(option: cursorScrollMargin, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_dragDrop(option: dragDrop): Unit = js.native
   @JSName("setOption")
   def setOption_dragDrop(option: dragDrop, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_electricChars(option: electricChars): Unit = js.native
+  @JSName("setOption")
   def setOption_electricChars(option: electricChars, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_extraKeys(option: extraKeys): Unit = js.native
   @JSName("setOption")
   def setOption_extraKeys(option: extraKeys, value: String): Unit = js.native
   @JSName("setOption")
   def setOption_extraKeys(option: extraKeys, value: KeyMap): Unit = js.native
   @JSName("setOption")
+  def setOption_firstLineNumber(option: firstLineNumber): Unit = js.native
+  @JSName("setOption")
   def setOption_firstLineNumber(option: firstLineNumber, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_fixedGutter(option: fixedGutter): Unit = js.native
   @JSName("setOption")
   def setOption_fixedGutter(option: fixedGutter, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_flattenSpans(option: flattenSpans): Unit = js.native
+  @JSName("setOption")
   def setOption_flattenSpans(option: flattenSpans, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_foldGutter(option: foldGutter): Unit = js.native
   @JSName("setOption")
   def setOption_foldGutter(option: foldGutter, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_gutters(option: gutters): Unit = js.native
+  @JSName("setOption")
   def setOption_gutters(option: gutters, value: js.Array[String]): Unit = js.native
+  @JSName("setOption")
+  def setOption_highlightSelectionMatches(option: highlightSelectionMatches): Unit = js.native
   @JSName("setOption")
   def setOption_highlightSelectionMatches(option: highlightSelectionMatches, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_highlightSelectionMatches(option: highlightSelectionMatches, value: HighlightSelectionMatches): Unit = js.native
   @JSName("setOption")
+  def setOption_hintOptions(option: hintOptions): Unit = js.native
+  @JSName("setOption")
   def setOption_hintOptions(option: hintOptions, value: ShowHintOptions): Unit = js.native
+  @JSName("setOption")
+  def setOption_historyEventDelay(option: historyEventDelay): Unit = js.native
   @JSName("setOption")
   def setOption_historyEventDelay(option: historyEventDelay, value: Double): Unit = js.native
   @JSName("setOption")
+  def setOption_indentUnit(option: indentUnit): Unit = js.native
+  @JSName("setOption")
   def setOption_indentUnit(option: indentUnit, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_indentWithTabs(option: indentWithTabs): Unit = js.native
   @JSName("setOption")
   def setOption_indentWithTabs(option: indentWithTabs, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_inputStyle(option: inputStyle): Unit = js.native
+  @JSName("setOption")
   def setOption_inputStyle(option: inputStyle, value: InputStyle): Unit = js.native
+  @JSName("setOption")
+  def setOption_keyMap(option: keyMap): Unit = js.native
   @JSName("setOption")
   def setOption_keyMap(option: keyMap, value: String): Unit = js.native
   @JSName("setOption")
+  def setOption_lineNumberFormatter(option: lineNumberFormatter): Unit = js.native
+  @JSName("setOption")
+  def setOption_lineNumberFormatter(option: lineNumberFormatter, value: js.Function1[/* line */ Double, String]): Unit = js.native
+  @JSName("setOption")
+  def setOption_lineNumbers(option: lineNumbers): Unit = js.native
+  @JSName("setOption")
   def setOption_lineNumbers(option: lineNumbers, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_lineWiseCopyCut(option: lineWiseCopyCut): Unit = js.native
   @JSName("setOption")
   def setOption_lineWiseCopyCut(option: lineWiseCopyCut, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_lineWrapping(option: lineWrapping): Unit = js.native
+  @JSName("setOption")
   def setOption_lineWrapping(option: lineWrapping, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_lint(option: lint): Unit = js.native
   @JSName("setOption")
   def setOption_lint(option: lint, value: Boolean): Unit = js.native
   @JSName("setOption")
@@ -759,64 +836,129 @@ trait Editor extends Doc {
   @JSName("setOption")
   def setOption_lint(option: lint, value: Linter): Unit = js.native
   @JSName("setOption")
+  def setOption_matchBrackets(option: matchBrackets): Unit = js.native
+  @JSName("setOption")
   def setOption_matchBrackets(option: matchBrackets, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_matchBrackets(option: matchBrackets, value: MatchBrackets): Unit = js.native
+  @JSName("setOption")
+  def setOption_matchTags(option: matchTags): Unit = js.native
   @JSName("setOption")
   def setOption_matchTags(option: matchTags, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_matchTags(option: matchTags, value: MatchTags): Unit = js.native
   @JSName("setOption")
+  def setOption_maxHighlightLength(option: maxHighlightLength): Unit = js.native
+  @JSName("setOption")
   def setOption_maxHighlightLength(option: maxHighlightLength, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_mode(option: mode): Unit = js.native
   @JSName("setOption")
   def setOption_mode(option: mode, value: js.Any): Unit = js.native
   @JSName("setOption")
+  def setOption_onDragEvent(option: onDragEvent): Unit = js.native
+  @JSName("setOption")
+  def setOption_onDragEvent(option: onDragEvent, value: js.Function2[/* instance */ this.type, /* event */ DragEvent, Boolean]): Unit = js.native
+  @JSName("setOption")
+  def setOption_onKeyEvent(option: onKeyEvent): Unit = js.native
+  @JSName("setOption")
+  def setOption_onKeyEvent(
+    option: onKeyEvent,
+    value: js.Function2[/* instance */ this.type, /* event */ KeyboardEvent, Boolean]
+  ): Unit = js.native
+  @JSName("setOption")
+  def setOption_pasteLinesPerSelection(option: pasteLinesPerSelection): Unit = js.native
+  @JSName("setOption")
   def setOption_pasteLinesPerSelection(option: pasteLinesPerSelection, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_placeholder(option: placeholder): Unit = js.native
   @JSName("setOption")
   def setOption_placeholder(option: placeholder, value: String): Unit = js.native
   @JSName("setOption")
+  def setOption_pollInterval(option: pollInterval): Unit = js.native
+  @JSName("setOption")
   def setOption_pollInterval(option: pollInterval, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_readOnly(option: readOnly): Unit = js.native
   @JSName("setOption")
   def setOption_readOnly(option: readOnly, value: js.Any): Unit = js.native
   @JSName("setOption")
+  def setOption_resetSelectionOnContextMenu(option: resetSelectionOnContextMenu): Unit = js.native
+  @JSName("setOption")
   def setOption_resetSelectionOnContextMenu(option: resetSelectionOnContextMenu, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_rtlMoveVisually(option: rtlMoveVisually): Unit = js.native
   @JSName("setOption")
   def setOption_rtlMoveVisually(option: rtlMoveVisually, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_screenReaderLabel(option: screenReaderLabel): Unit = js.native
+  @JSName("setOption")
   def setOption_screenReaderLabel(option: screenReaderLabel, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_scrollPastEnd(option: scrollPastEnd): Unit = js.native
   @JSName("setOption")
   def setOption_scrollPastEnd(option: scrollPastEnd, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_scrollbarStyle(option: scrollbarStyle): Unit = js.native
+  @JSName("setOption")
   def setOption_scrollbarStyle(option: scrollbarStyle, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_selectionsMayTouch(option: selectionsMayTouch): Unit = js.native
   @JSName("setOption")
   def setOption_selectionsMayTouch(option: selectionsMayTouch, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_showCursorWhenSelecting(option: showCursorWhenSelecting): Unit = js.native
+  @JSName("setOption")
   def setOption_showCursorWhenSelecting(option: showCursorWhenSelecting, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_showHint(option: showHint): Unit = js.native
   @JSName("setOption")
   def setOption_showHint(option: showHint, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_smartIndent(option: smartIndent): Unit = js.native
+  @JSName("setOption")
   def setOption_smartIndent(option: smartIndent, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_spellcheck(option: spellcheck): Unit = js.native
+  @JSName("setOption")
   def setOption_spellcheck(option: spellcheck, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_styleActiveLine(option: styleActiveLine): Unit = js.native
   @JSName("setOption")
   def setOption_styleActiveLine(option: styleActiveLine, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_styleActiveLine(option: styleActiveLine, value: StyleActiveLine): Unit = js.native
   @JSName("setOption")
+  def setOption_tabSize(option: tabSize): Unit = js.native
+  @JSName("setOption")
   def setOption_tabSize(option: tabSize, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_tabindex(option: tabindex): Unit = js.native
   @JSName("setOption")
   def setOption_tabindex(option: tabindex, value: Double): Unit = js.native
   @JSName("setOption")
+  def setOption_theme(option: theme): Unit = js.native
+  @JSName("setOption")
   def setOption_theme(option: theme, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_undoDepth(option: undoDepth): Unit = js.native
   @JSName("setOption")
   def setOption_undoDepth(option: undoDepth, value: Double): Unit = js.native
   /** Change the configuration of the editor. option should the name of an option, and value should be a valid value for that option. */
   @JSName("setOption")
+  def setOption_value(option: value): Unit = js.native
+  @JSName("setOption")
   def setOption_value(option: value, value: js.Any): Unit = js.native
+  @JSName("setOption")
+  def setOption_viewportMargin(option: viewportMargin): Unit = js.native
   @JSName("setOption")
   def setOption_viewportMargin(option: viewportMargin, value: Double): Unit = js.native
   @JSName("setOption")
+  def setOption_workDelay(option: workDelay): Unit = js.native
+  @JSName("setOption")
   def setOption_workDelay(option: workDelay, value: Double): Unit = js.native
+  @JSName("setOption")
+  def setOption_workTime(option: workTime): Unit = js.native
   @JSName("setOption")
   def setOption_workTime(option: workTime, value: Double): Unit = js.native
   /** Programatically set the size of the editor (overriding the applicable CSS rules).

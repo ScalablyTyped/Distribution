@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "optimism" : "0.12.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "optimism" : "0.12.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

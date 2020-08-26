@@ -15,51 +15,90 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<plotly.js.plotly.js.Scene> */
+@js.native
 trait PartialScene extends js.Object {
-  var annotations: js.UndefOr[PartialAnnotations | js.Array[PartialAnnotations]] = js.undefined
-  var aspectmode: js.UndefOr[auto | cube | data | manual] = js.undefined
-  var aspectratio: js.UndefOr[PartialPoint] = js.undefined
-  var bgcolor: js.UndefOr[String] = js.undefined
-  var camera: js.UndefOr[PartialCamera] = js.undefined
-  var captureevents: js.UndefOr[Boolean] = js.undefined
-  var domain: js.UndefOr[PartialDomain] = js.undefined
-  var dragmode: js.UndefOr[orbit | turntable | zoom | pan | `false`] = js.undefined
-  var hovermode: js.UndefOr[closest | `false`] = js.undefined
-  var xaxis: js.UndefOr[PartialSceneAxis] = js.undefined
-  var yaxis: js.UndefOr[PartialSceneAxis] = js.undefined
-  var zaxis: js.UndefOr[PartialSceneAxis] = js.undefined
+  var annotations: js.UndefOr[PartialAnnotations | js.Array[PartialAnnotations]] = js.native
+  var aspectmode: js.UndefOr[auto | cube | data | manual] = js.native
+  var aspectratio: js.UndefOr[PartialPoint] = js.native
+  var bgcolor: js.UndefOr[String] = js.native
+  var camera: js.UndefOr[PartialCamera] = js.native
+  var captureevents: js.UndefOr[Boolean] = js.native
+  var domain: js.UndefOr[PartialDomain] = js.native
+  var dragmode: js.UndefOr[orbit | turntable | zoom | pan | `false`] = js.native
+  var hovermode: js.UndefOr[closest | `false`] = js.native
+  var xaxis: js.UndefOr[PartialSceneAxis] = js.native
+  var yaxis: js.UndefOr[PartialSceneAxis] = js.native
+  var zaxis: js.UndefOr[PartialSceneAxis] = js.native
 }
 
 object PartialScene {
   @scala.inline
-  def apply(
-    annotations: PartialAnnotations | js.Array[PartialAnnotations] = null,
-    aspectmode: auto | cube | data | manual = null,
-    aspectratio: PartialPoint = null,
-    bgcolor: String = null,
-    camera: PartialCamera = null,
-    captureevents: js.UndefOr[Boolean] = js.undefined,
-    domain: PartialDomain = null,
-    dragmode: orbit | turntable | zoom | pan | `false` = null,
-    hovermode: closest | `false` = null,
-    xaxis: PartialSceneAxis = null,
-    yaxis: PartialSceneAxis = null,
-    zaxis: PartialSceneAxis = null
-  ): PartialScene = {
+  def apply(): PartialScene = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (aspectmode != null) __obj.updateDynamic("aspectmode")(aspectmode.asInstanceOf[js.Any])
-    if (aspectratio != null) __obj.updateDynamic("aspectratio")(aspectratio.asInstanceOf[js.Any])
-    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
-    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureevents)) __obj.updateDynamic("captureevents")(captureevents.get.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (dragmode != null) __obj.updateDynamic("dragmode")(dragmode.asInstanceOf[js.Any])
-    if (hovermode != null) __obj.updateDynamic("hovermode")(hovermode.asInstanceOf[js.Any])
-    if (xaxis != null) __obj.updateDynamic("xaxis")(xaxis.asInstanceOf[js.Any])
-    if (yaxis != null) __obj.updateDynamic("yaxis")(yaxis.asInstanceOf[js.Any])
-    if (zaxis != null) __obj.updateDynamic("zaxis")(zaxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialScene]
   }
+  @scala.inline
+  implicit class PartialSceneOps[Self <: PartialScene] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotationsVarargs(value: PartialAnnotations*): Self = this.set("annotations", js.Array(value :_*))
+    @scala.inline
+    def setAnnotations(value: PartialAnnotations | js.Array[PartialAnnotations]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    @scala.inline
+    def setAspectmode(value: auto | cube | data | manual): Self = this.set("aspectmode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspectmode: Self = this.set("aspectmode", js.undefined)
+    @scala.inline
+    def setAspectratio(value: PartialPoint): Self = this.set("aspectratio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspectratio: Self = this.set("aspectratio", js.undefined)
+    @scala.inline
+    def setBgcolor(value: String): Self = this.set("bgcolor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgcolor: Self = this.set("bgcolor", js.undefined)
+    @scala.inline
+    def setCamera(value: PartialCamera): Self = this.set("camera", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCamera: Self = this.set("camera", js.undefined)
+    @scala.inline
+    def setCaptureevents(value: Boolean): Self = this.set("captureevents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureevents: Self = this.set("captureevents", js.undefined)
+    @scala.inline
+    def setDomain(value: PartialDomain): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setDragmode(value: orbit | turntable | zoom | pan | `false`): Self = this.set("dragmode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragmode: Self = this.set("dragmode", js.undefined)
+    @scala.inline
+    def setHovermode(value: closest | `false`): Self = this.set("hovermode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHovermode: Self = this.set("hovermode", js.undefined)
+    @scala.inline
+    def setXaxis(value: PartialSceneAxis): Self = this.set("xaxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXaxis: Self = this.set("xaxis", js.undefined)
+    @scala.inline
+    def setYaxis(value: PartialSceneAxis): Self = this.set("yaxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYaxis: Self = this.set("yaxis", js.undefined)
+    @scala.inline
+    def setZaxis(value: PartialSceneAxis): Self = this.set("zaxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZaxis: Self = this.set("zaxis", js.undefined)
+  }
+  
 }
 

@@ -33,17 +33,17 @@ class SidebarToggleButton protected () extends Button {
     * In version 6.10.0: deleted
     */
   def initiallyOpen: Boolean = js.native
-  def initiallyOpen(newValue: Boolean): js.Any = js.native
+  def initiallyOpen_=(newValue: Boolean): Unit = js.native
   /**
     * In version 6.10.0: deleted
     */
   def mode: SidebarToggleMode = js.native
-  def mode(newValue: SidebarToggleMode): js.Any = js.native
+  def mode_=(newValue: SidebarToggleMode): Unit = js.native
   /**
     * In version 6.10.0: deleted
     */
   def region: SidebarToggleRegion = js.native
-  def region(newValue: SidebarToggleRegion): js.Any = js.native
+  def region_=(newValue: SidebarToggleRegion): Unit = js.native
 }
 
 /* static members */

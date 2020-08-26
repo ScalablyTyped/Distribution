@@ -25,11 +25,30 @@ trait SchemaAchievementRevealResponse extends js.Object {
 
 object SchemaAchievementRevealResponse {
   @scala.inline
-  def apply(currentState: String = null, kind: String = null): SchemaAchievementRevealResponse = {
+  def apply(): SchemaAchievementRevealResponse = {
     val __obj = js.Dynamic.literal()
-    if (currentState != null) __obj.updateDynamic("currentState")(currentState.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAchievementRevealResponse]
   }
+  @scala.inline
+  implicit class SchemaAchievementRevealResponseOps[Self <: SchemaAchievementRevealResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentState(value: String): Self = this.set("currentState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentState: Self = this.set("currentState", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

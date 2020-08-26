@@ -12,7 +12,7 @@ parse XML response of to JS object for AWS SDK
 | Keywords           | - |
 | # releases         | 11 |
 | # dependents       | 44 |
-| # downloads        | 10773 |
+| # downloads        | 13358 |
 | # stars            | 0 |
 
 ## Links

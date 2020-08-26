@@ -12,7 +12,7 @@ dom matchers for Jasmine
 | Keywords           | jasmine |
 | # releases         | 1 |
 | # dependents       | 2 |
-| # downloads        | 130702 |
+| # downloads        | 129907 |
 | # stars            | 0 |
 
 ## Links

@@ -22,6 +22,7 @@ trait JQuery extends js.Object {
     * @return Returns the jQuery object
     */
   def pjax(delegationSelector: String): JQuery = js.native
+  def pjax(delegationSelector: String, containerSelector: js.UndefOr[scala.Nothing], options: PjaxSettings): JQuery = js.native
   def pjax(delegationSelector: String, containerSelector: String): JQuery = js.native
   def pjax(delegationSelector: String, containerSelector: String, options: PjaxSettings): JQuery = js.native
   def pjax(delegationSelector: String, options: PjaxSettings): JQuery = js.native

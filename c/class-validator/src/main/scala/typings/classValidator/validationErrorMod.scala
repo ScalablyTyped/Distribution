@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("class-validator/validation/ValidationError", JSImport.Namespace)
+@JSImport("class-validator/types/validation/ValidationError", JSImport.Namespace)
 @js.native
 object validationErrorMod extends js.Object {
   @js.native
@@ -17,7 +17,7 @@ object validationErrorMod extends js.Object {
     /**
       * Constraints that failed validation with error messages.
       */
-    var constraints: StringDictionary[String] = js.native
+    var constraints: js.UndefOr[StringDictionary[String]] = js.native
     var contexts: js.UndefOr[StringDictionary[js.Any]] = js.native
     /**
       * Object's property that haven't pass validation.
@@ -35,7 +35,15 @@ object validationErrorMod extends js.Object {
       * OPTIONAL - configurable via the ValidatorOptions.validationError.value option
       */
     var value: js.UndefOr[js.Any] = js.native
+    def toString(
+      shouldDecorate: js.UndefOr[scala.Nothing],
+      hasParent: js.UndefOr[scala.Nothing],
+      parentPath: String
+    ): String = js.native
+    def toString(shouldDecorate: js.UndefOr[scala.Nothing], hasParent: Boolean): String = js.native
+    def toString(shouldDecorate: js.UndefOr[scala.Nothing], hasParent: Boolean, parentPath: String): String = js.native
     def toString(shouldDecorate: Boolean): String = js.native
+    def toString(shouldDecorate: Boolean, hasParent: js.UndefOr[scala.Nothing], parentPath: String): String = js.native
     def toString(shouldDecorate: Boolean, hasParent: Boolean): String = js.native
     def toString(shouldDecorate: Boolean, hasParent: Boolean, parentPath: String): String = js.native
   }

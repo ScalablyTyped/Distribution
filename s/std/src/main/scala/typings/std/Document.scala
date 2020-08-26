@@ -386,19 +386,6 @@ trait Document
     */
   /** @deprecated */
   var vlinkColor: java.lang.String = js.native
-  /**
-    * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-    * 
-    * The options argument sets listener-specific options. For compatibility this can be a boolean, in which case the method behaves exactly as if the value was specified as options's capture.
-    * 
-    * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
-    * 
-    * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in § 2.8 Observing event listeners.
-    * 
-    * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will be removed.
-    * 
-    * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
-    */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -1272,6 +1259,7 @@ trait Document
     * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
     */
   def createNodeIterator(root: Node): NodeIterator = js.native
+  def createNodeIterator(root: Node, whatToShow: js.UndefOr[scala.Nothing], filter: NodeFilter): NodeIterator = js.native
   def createNodeIterator(root: Node, whatToShow: Double): NodeIterator = js.native
   def createNodeIterator(root: Node, whatToShow: Double, filter: NodeFilter): NodeIterator = js.native
   /**
@@ -1295,6 +1283,7 @@ trait Document
     * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
     */
   def createTreeWalker(root: Node): TreeWalker = js.native
+  def createTreeWalker(root: Node, whatToShow: js.UndefOr[scala.Nothing], filter: NodeFilter): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: Null, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: Double, filter: NodeFilter): TreeWalker = js.native
@@ -1306,6 +1295,7 @@ trait Document
     * @param value Value to assign.
     */
   def execCommand(commandId: java.lang.String): scala.Boolean = js.native
+  def execCommand(commandId: java.lang.String, showUI: js.UndefOr[scala.Nothing], value: java.lang.String): scala.Boolean = js.native
   def execCommand(commandId: java.lang.String, showUI: scala.Boolean): scala.Boolean = js.native
   def execCommand(commandId: java.lang.String, showUI: scala.Boolean, value: java.lang.String): scala.Boolean = js.native
   /**
@@ -1704,8 +1694,54 @@ trait Document
     * @param replace Specifies whether the existing entry for the document is replaced in the history list.
     */
   def open(): Document = js.native
+  def open(
+    url: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    features: js.UndefOr[scala.Nothing],
+    replace: scala.Boolean
+  ): Document = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], features: java.lang.String): Document = js.native
+  def open(
+    url: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    features: java.lang.String,
+    replace: scala.Boolean
+  ): Document = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: java.lang.String): Document = js.native
+  def open(
+    url: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    features: js.UndefOr[scala.Nothing],
+    replace: scala.Boolean
+  ): Document = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: java.lang.String, features: java.lang.String): Document = js.native
+  def open(
+    url: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    features: java.lang.String,
+    replace: scala.Boolean
+  ): Document = js.native
   def open(url: java.lang.String): Document = js.native
+  def open(
+    url: java.lang.String,
+    name: js.UndefOr[scala.Nothing],
+    features: js.UndefOr[scala.Nothing],
+    replace: scala.Boolean
+  ): Document = js.native
+  def open(url: java.lang.String, name: js.UndefOr[scala.Nothing], features: java.lang.String): Document = js.native
+  def open(
+    url: java.lang.String,
+    name: js.UndefOr[scala.Nothing],
+    features: java.lang.String,
+    replace: scala.Boolean
+  ): Document = js.native
   def open(url: java.lang.String, name: java.lang.String): Document = js.native
+  def open(
+    url: java.lang.String,
+    name: java.lang.String,
+    features: js.UndefOr[scala.Nothing],
+    replace: scala.Boolean
+  ): Document = js.native
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String): Document = js.native
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String, replace: scala.Boolean): Document = js.native
   /**
@@ -1735,9 +1771,6 @@ trait Document
   def queryCommandValue(commandId: java.lang.String): java.lang.String = js.native
   /** @deprecated */
   def releaseEvents(): Unit = js.native
-  /**
-    * Removes the event listener in target's event listener list with the same type, callback, and options.
-    */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

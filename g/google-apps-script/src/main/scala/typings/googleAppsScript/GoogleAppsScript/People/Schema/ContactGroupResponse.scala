@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContactGroupResponse extends js.Object {
-  var contactGroup: js.UndefOr[ContactGroup] = js.undefined
-  var requestedResourceName: js.UndefOr[String] = js.undefined
-  var status: js.UndefOr[Status] = js.undefined
+  var contactGroup: js.UndefOr[ContactGroup] = js.native
+  var requestedResourceName: js.UndefOr[String] = js.native
+  var status: js.UndefOr[Status] = js.native
 }
 
 object ContactGroupResponse {
   @scala.inline
-  def apply(contactGroup: ContactGroup = null, requestedResourceName: String = null, status: Status = null): ContactGroupResponse = {
+  def apply(): ContactGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (contactGroup != null) __obj.updateDynamic("contactGroup")(contactGroup.asInstanceOf[js.Any])
-    if (requestedResourceName != null) __obj.updateDynamic("requestedResourceName")(requestedResourceName.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactGroupResponse]
   }
+  @scala.inline
+  implicit class ContactGroupResponseOps[Self <: ContactGroupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContactGroup(value: ContactGroup): Self = this.set("contactGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactGroup: Self = this.set("contactGroup", js.undefined)
+    @scala.inline
+    def setRequestedResourceName(value: String): Self = this.set("requestedResourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedResourceName: Self = this.set("requestedResourceName", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

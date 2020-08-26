@@ -1,41 +1,36 @@
 package typings.reactSvgMap.mod
 
-import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OnChangeMapProps extends BaseMapProps {
-  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
 }
 
 object OnChangeMapProps {
   @scala.inline
-  def apply(
-    map: Map,
-    childrenAfter: ReactElement = null,
-    childrenBefore: ReactElement = null,
-    className: String = null,
-    locationClassName: String | (js.Function1[/* repeated */ js.Any, _]) = null,
-    onChange: /* repeated */ js.Any => _ = null,
-    onLocationBlur: /* repeated */ js.Any => _ = null,
-    onLocationFocus: /* repeated */ js.Any => _ = null,
-    onLocationMouseMove: /* repeated */ js.Any => _ = null,
-    onLocationMouseOut: /* repeated */ js.Any => _ = null,
-    onLocationMouseOver: /* repeated */ js.Any => _ = null
-  ): OnChangeMapProps = {
+  def apply(map: Map): OnChangeMapProps = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
-    if (childrenAfter != null) __obj.updateDynamic("childrenAfter")(childrenAfter.asInstanceOf[js.Any])
-    if (childrenBefore != null) __obj.updateDynamic("childrenBefore")(childrenBefore.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (locationClassName != null) __obj.updateDynamic("locationClassName")(locationClassName.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onLocationBlur != null) __obj.updateDynamic("onLocationBlur")(js.Any.fromFunction1(onLocationBlur))
-    if (onLocationFocus != null) __obj.updateDynamic("onLocationFocus")(js.Any.fromFunction1(onLocationFocus))
-    if (onLocationMouseMove != null) __obj.updateDynamic("onLocationMouseMove")(js.Any.fromFunction1(onLocationMouseMove))
-    if (onLocationMouseOut != null) __obj.updateDynamic("onLocationMouseOut")(js.Any.fromFunction1(onLocationMouseOut))
-    if (onLocationMouseOver != null) __obj.updateDynamic("onLocationMouseOver")(js.Any.fromFunction1(onLocationMouseOver))
     __obj.asInstanceOf[OnChangeMapProps]
   }
+  @scala.inline
+  implicit class OnChangeMapPropsOps[Self <: OnChangeMapProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnChange(value: /* repeated */ js.Any => _): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+  }
+  
 }
 

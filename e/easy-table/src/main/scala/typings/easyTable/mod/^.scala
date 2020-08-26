@@ -28,11 +28,13 @@ object ^ extends js.Object {
     * Same as `Table.print()` but yields the result to `console.log()`
     */
   def log[T](obj: T): Unit = js.native
+  def log[T](obj: T, format: js.UndefOr[scala.Nothing], cb: TablePostProcessing): Unit = js.native
   def log[T](obj: T, format: FormatFunction[T]): Unit = js.native
   def log[T](obj: T, format: FormatFunction[T], cb: TablePostProcessing): Unit = js.native
   def log[T](obj: T, format: FormatObject): Unit = js.native
   def log[T](obj: T, format: FormatObject, cb: TablePostProcessing): Unit = js.native
   def log[T](obj: js.Array[T]): Unit = js.native
+  def log[T](obj: js.Array[T], format: js.UndefOr[scala.Nothing], cb: TablePostProcessing): Unit = js.native
   def log[T](obj: js.Array[T], format: FormatFunction[T]): Unit = js.native
   def log[T](obj: js.Array[T], format: FormatFunction[T], cb: TablePostProcessing): Unit = js.native
   def log[T](obj: js.Array[T], format: FormatObject): Unit = js.native
@@ -58,11 +60,13 @@ object ^ extends js.Object {
     * @returns {String}
     */
   def print[T](obj: T): String = js.native
+  def print[T](obj: T, format: js.UndefOr[scala.Nothing], cb: TablePostProcessing): String = js.native
   def print[T](obj: T, format: FormatFunction[T]): String = js.native
   def print[T](obj: T, format: FormatFunction[T], cb: TablePostProcessing): String = js.native
   def print[T](obj: T, format: FormatObject): String = js.native
   def print[T](obj: T, format: FormatObject, cb: TablePostProcessing): String = js.native
   def print[T](obj: js.Array[T]): String = js.native
+  def print[T](obj: js.Array[T], format: js.UndefOr[scala.Nothing], cb: TablePostProcessing): String = js.native
   def print[T](obj: js.Array[T], format: FormatFunction[T]): String = js.native
   def print[T](obj: js.Array[T], format: FormatFunction[T], cb: TablePostProcessing): String = js.native
   def print[T](obj: js.Array[T], format: FormatObject): String = js.native

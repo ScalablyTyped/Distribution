@@ -14,18 +14,38 @@ trait ApplicationName extends js.Object {
 
 object ApplicationName {
   @scala.inline
-  def apply(
-    applicationName: String = null,
-    customerId: String = null,
-    time: String = null,
-    uniqueQualifier: String = null
-  ): ApplicationName = {
+  def apply(): ApplicationName = {
     val __obj = js.Dynamic.literal()
-    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (uniqueQualifier != null) __obj.updateDynamic("uniqueQualifier")(uniqueQualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationName]
   }
+  @scala.inline
+  implicit class ApplicationNameOps[Self <: ApplicationName] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: String): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationName: Self = this.set("applicationName", js.undefined)
+    @scala.inline
+    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    @scala.inline
+    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("time", js.undefined)
+    @scala.inline
+    def setUniqueQualifier(value: String): Self = this.set("uniqueQualifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniqueQualifier: Self = this.set("uniqueQualifier", js.undefined)
+  }
+  
 }
 

@@ -29,12 +29,23 @@ class ec_ protected () extends js.Object {
   def genKeyPair(): KeyPair = js.native
   def genKeyPair(options: GenKeyPairOptions): KeyPair = js.native
   def getKeyRecoveryParam(
-    e: js.UndefOr[Error],
+    e: js.UndefOr[scala.Nothing],
     signature: SignatureInput,
     Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   ): Double = js.native
   def getKeyRecoveryParam(
-    e: js.UndefOr[Error],
+    e: js.UndefOr[scala.Nothing],
+    signature: SignatureInput,
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+    enc: String
+  ): Double = js.native
+  def getKeyRecoveryParam(
+    e: Error,
+    signature: SignatureInput,
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+  ): Double = js.native
+  def getKeyRecoveryParam(
+    e: Error,
     signature: SignatureInput,
     Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
     enc: String

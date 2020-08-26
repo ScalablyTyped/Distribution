@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TokenOptions extends js.Object {
-  var admin: js.UndefOr[Boolean] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var expires: js.UndefOr[Double] = js.undefined
-  var iat: js.UndefOr[Double] = js.undefined
-  var notBefore: js.UndefOr[Double] = js.undefined
-  var simulate: js.UndefOr[Boolean] = js.undefined
+  var admin: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var expires: js.UndefOr[Double] = js.native
+  var iat: js.UndefOr[Double] = js.native
+  var notBefore: js.UndefOr[Double] = js.native
+  var simulate: js.UndefOr[Boolean] = js.native
 }
 
 object TokenOptions {
   @scala.inline
-  def apply(
-    admin: js.UndefOr[Boolean] = js.undefined,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    expires: js.UndefOr[Double] = js.undefined,
-    iat: js.UndefOr[Double] = js.undefined,
-    notBefore: js.UndefOr[Double] = js.undefined,
-    simulate: js.UndefOr[Boolean] = js.undefined
-  ): TokenOptions = {
+  def apply(): TokenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expires)) __obj.updateDynamic("expires")(expires.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iat)) __obj.updateDynamic("iat")(iat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(notBefore)) __obj.updateDynamic("notBefore")(notBefore.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(simulate)) __obj.updateDynamic("simulate")(simulate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenOptions]
   }
+  @scala.inline
+  implicit class TokenOptionsOps[Self <: TokenOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdmin(value: Boolean): Self = this.set("admin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdmin: Self = this.set("admin", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setExpires(value: Double): Self = this.set("expires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpires: Self = this.set("expires", js.undefined)
+    @scala.inline
+    def setIat(value: Double): Self = this.set("iat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIat: Self = this.set("iat", js.undefined)
+    @scala.inline
+    def setNotBefore(value: Double): Self = this.set("notBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotBefore: Self = this.set("notBefore", js.undefined)
+    @scala.inline
+    def setSimulate(value: Boolean): Self = this.set("simulate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimulate: Self = this.set("simulate", js.undefined)
+  }
+  
 }
 

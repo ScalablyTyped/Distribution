@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type OptimizeCssAssetsPlugin = typings.webpack.mod.Plugin
+  type OptimizeCssAssetsPlugin = typings.std.Plugin
 }

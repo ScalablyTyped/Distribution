@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   * specifies accessibility support for a pop-up menu.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessiblePopupMenu
   extends XAccessibleExtendedComponent
      with XAccessibleContext

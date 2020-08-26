@@ -22,15 +22,32 @@ trait LambdaAction extends js.Object {
 
 object LambdaAction {
   @scala.inline
-  def apply(
-    FunctionArn: AmazonResourceName,
-    InvocationType: InvocationType = null,
-    TopicArn: AmazonResourceName = null
-  ): LambdaAction = {
+  def apply(FunctionArn: AmazonResourceName): LambdaAction = {
     val __obj = js.Dynamic.literal(FunctionArn = FunctionArn.asInstanceOf[js.Any])
-    if (InvocationType != null) __obj.updateDynamic("InvocationType")(InvocationType.asInstanceOf[js.Any])
-    if (TopicArn != null) __obj.updateDynamic("TopicArn")(TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaAction]
   }
+  @scala.inline
+  implicit class LambdaActionOps[Self <: LambdaAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFunctionArn(value: AmazonResourceName): Self = this.set("FunctionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInvocationType(value: InvocationType): Self = this.set("InvocationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvocationType: Self = this.set("InvocationType", js.undefined)
+    @scala.inline
+    def setTopicArn(value: AmazonResourceName): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
+  }
+  
 }
 

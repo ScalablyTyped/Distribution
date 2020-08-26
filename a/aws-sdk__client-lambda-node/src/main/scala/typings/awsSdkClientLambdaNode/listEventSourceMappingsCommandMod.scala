@@ -26,16 +26,9 @@ object listEventSourceMappingsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: ListEventSourceMappingsInput) = this()
-    /* CompleteClass */
-    override val input: ListEventSourceMappingsInput = js.native
     val middlewareStack: MiddlewareStack[ListEventSourceMappingsInput, ListEventSourceMappingsOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: LambdaResolvedConfiguration
-    ): Handler[ListEventSourceMappingsInput, ListEventSourceMappingsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: LambdaResolvedConfiguration
     ): Handler[ListEventSourceMappingsInput, ListEventSourceMappingsOutput] = js.native
   }

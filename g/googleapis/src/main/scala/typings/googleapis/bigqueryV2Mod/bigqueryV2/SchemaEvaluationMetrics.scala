@@ -31,18 +31,38 @@ trait SchemaEvaluationMetrics extends js.Object {
 
 object SchemaEvaluationMetrics {
   @scala.inline
-  def apply(
-    binaryClassificationMetrics: SchemaBinaryClassificationMetrics = null,
-    clusteringMetrics: SchemaClusteringMetrics = null,
-    multiClassClassificationMetrics: SchemaMultiClassClassificationMetrics = null,
-    regressionMetrics: SchemaRegressionMetrics = null
-  ): SchemaEvaluationMetrics = {
+  def apply(): SchemaEvaluationMetrics = {
     val __obj = js.Dynamic.literal()
-    if (binaryClassificationMetrics != null) __obj.updateDynamic("binaryClassificationMetrics")(binaryClassificationMetrics.asInstanceOf[js.Any])
-    if (clusteringMetrics != null) __obj.updateDynamic("clusteringMetrics")(clusteringMetrics.asInstanceOf[js.Any])
-    if (multiClassClassificationMetrics != null) __obj.updateDynamic("multiClassClassificationMetrics")(multiClassClassificationMetrics.asInstanceOf[js.Any])
-    if (regressionMetrics != null) __obj.updateDynamic("regressionMetrics")(regressionMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEvaluationMetrics]
   }
+  @scala.inline
+  implicit class SchemaEvaluationMetricsOps[Self <: SchemaEvaluationMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBinaryClassificationMetrics(value: SchemaBinaryClassificationMetrics): Self = this.set("binaryClassificationMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinaryClassificationMetrics: Self = this.set("binaryClassificationMetrics", js.undefined)
+    @scala.inline
+    def setClusteringMetrics(value: SchemaClusteringMetrics): Self = this.set("clusteringMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusteringMetrics: Self = this.set("clusteringMetrics", js.undefined)
+    @scala.inline
+    def setMultiClassClassificationMetrics(value: SchemaMultiClassClassificationMetrics): Self = this.set("multiClassClassificationMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiClassClassificationMetrics: Self = this.set("multiClassClassificationMetrics", js.undefined)
+    @scala.inline
+    def setRegressionMetrics(value: SchemaRegressionMetrics): Self = this.set("regressionMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegressionMetrics: Self = this.set("regressionMetrics", js.undefined)
+  }
+  
 }
 

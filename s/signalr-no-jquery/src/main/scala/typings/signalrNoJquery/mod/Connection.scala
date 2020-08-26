@@ -19,9 +19,11 @@ trait Connection extends js.Object {
     */
   def createHubProxy(hubName: String): Proxy = js.native
   def start(): js.Any = js.native
+  def start(options: js.UndefOr[scala.Nothing], callback: js.Any): js.Any = js.native
   def start(options: js.Any): js.Any = js.native
   def start(options: js.Any, callback: js.Any): js.Any = js.native
   def stop(): Unit = js.native
+  def stop(async: js.UndefOr[scala.Nothing], notifyServer: Boolean): Unit = js.native
   def stop(async: Boolean): Unit = js.native
   def stop(async: Boolean, notifyServer: Boolean): Unit = js.native
 }

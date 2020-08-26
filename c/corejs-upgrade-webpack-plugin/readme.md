@@ -10,9 +10,9 @@ a webpack plugin that transforms core-js v2 paths to core-js v3 paths
 | ------------------ | :-------------: |
 | Full name          | corejs-upgrade-webpack-plugin |
 | Keywords           | core-js, path, resolve, transform, webpack |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 13792144 |
+| # releases         | 9 |
+| # dependents       | 2 |
+| # downloads        | 16031842 |
 | # stars            | 0 |
 
 ## Links

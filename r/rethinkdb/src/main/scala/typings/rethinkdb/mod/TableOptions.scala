@@ -4,29 +4,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableOptions extends js.Object {
    // 'soft'
-  var cache_size: js.UndefOr[Double] = js.undefined
-  var datacenter: js.UndefOr[String] = js.undefined
+  var cache_size: js.UndefOr[Double] = js.native
+  var datacenter: js.UndefOr[String] = js.native
    // 'id'
-  var durability: js.UndefOr[String] = js.undefined
-  var primary_key: js.UndefOr[String] = js.undefined
+  var durability: js.UndefOr[String] = js.native
+  var primary_key: js.UndefOr[String] = js.native
 }
 
 object TableOptions {
   @scala.inline
-  def apply(
-    cache_size: js.UndefOr[Double] = js.undefined,
-    datacenter: String = null,
-    durability: String = null,
-    primary_key: String = null
-  ): TableOptions = {
+  def apply(): TableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache_size)) __obj.updateDynamic("cache_size")(cache_size.get.asInstanceOf[js.Any])
-    if (datacenter != null) __obj.updateDynamic("datacenter")(datacenter.asInstanceOf[js.Any])
-    if (durability != null) __obj.updateDynamic("durability")(durability.asInstanceOf[js.Any])
-    if (primary_key != null) __obj.updateDynamic("primary_key")(primary_key.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableOptions]
   }
+  @scala.inline
+  implicit class TableOptionsOps[Self <: TableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCache_size(value: Double): Self = this.set("cache_size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache_size: Self = this.set("cache_size", js.undefined)
+    @scala.inline
+    def setDatacenter(value: String): Self = this.set("datacenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatacenter: Self = this.set("datacenter", js.undefined)
+    @scala.inline
+    def setDurability(value: String): Self = this.set("durability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurability: Self = this.set("durability", js.undefined)
+    @scala.inline
+    def setPrimary_key(value: String): Self = this.set("primary_key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary_key: Self = this.set("primary_key", js.undefined)
+  }
+  
 }
 

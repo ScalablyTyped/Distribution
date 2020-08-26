@@ -42,23 +42,48 @@ trait ImportJobRequest extends js.Object {
 
 object ImportJobRequest {
   @scala.inline
-  def apply(
-    Format: Format,
-    RoleArn: string,
-    S3Url: string,
-    DefineSegment: js.UndefOr[boolean] = js.undefined,
-    ExternalId: string = null,
-    RegisterEndpoints: js.UndefOr[boolean] = js.undefined,
-    SegmentId: string = null,
-    SegmentName: string = null
-  ): ImportJobRequest = {
+  def apply(Format: Format, RoleArn: string, S3Url: string): ImportJobRequest = {
     val __obj = js.Dynamic.literal(Format = Format.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], S3Url = S3Url.asInstanceOf[js.Any])
-    if (!js.isUndefined(DefineSegment)) __obj.updateDynamic("DefineSegment")(DefineSegment.get.asInstanceOf[js.Any])
-    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId.asInstanceOf[js.Any])
-    if (!js.isUndefined(RegisterEndpoints)) __obj.updateDynamic("RegisterEndpoints")(RegisterEndpoints.get.asInstanceOf[js.Any])
-    if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId.asInstanceOf[js.Any])
-    if (SegmentName != null) __obj.updateDynamic("SegmentName")(SegmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportJobRequest]
   }
+  @scala.inline
+  implicit class ImportJobRequestOps[Self <: ImportJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: Format): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3Url(value: string): Self = this.set("S3Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefineSegment(value: boolean): Self = this.set("DefineSegment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefineSegment: Self = this.set("DefineSegment", js.undefined)
+    @scala.inline
+    def setExternalId(value: string): Self = this.set("ExternalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("ExternalId", js.undefined)
+    @scala.inline
+    def setRegisterEndpoints(value: boolean): Self = this.set("RegisterEndpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisterEndpoints: Self = this.set("RegisterEndpoints", js.undefined)
+    @scala.inline
+    def setSegmentId(value: string): Self = this.set("SegmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentId: Self = this.set("SegmentId", js.undefined)
+    @scala.inline
+    def setSegmentName(value: string): Self = this.set("SegmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentName: Self = this.set("SegmentName", js.undefined)
+  }
+  
 }
 

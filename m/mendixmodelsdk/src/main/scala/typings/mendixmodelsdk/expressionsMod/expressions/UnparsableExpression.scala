@@ -57,7 +57,7 @@ class UnparsableExpression protected () extends Expression {
   @JSName("model")
   var model_FUnparsableExpression: IModel = js.native
   def expression: String = js.native
-  def expression(newValue: String): js.Any = js.native
+  def expression_=(newValue: String): Unit = js.native
 }
 
 /* static members */

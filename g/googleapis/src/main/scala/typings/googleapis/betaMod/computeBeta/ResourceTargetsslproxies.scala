@@ -86,6 +86,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargetsslproxiesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargetsslproxiesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -172,6 +173,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTargetSslProxy] = js.native
   def get(callback: BodyResponseCallback[SchemaTargetSslProxy]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetSslProxy] = js.native
   def get(params: ParamsResourceTargetsslproxiesGet): GaxiosPromise[SchemaTargetSslProxy] = js.native
   def get(params: ParamsResourceTargetsslproxiesGet, callback: BodyResponseCallback[SchemaTargetSslProxy]): Unit = js.native
   def get(
@@ -259,6 +261,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargetsslproxiesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargetsslproxiesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -357,6 +360,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTargetSslProxyList] = js.native
   def list(callback: BodyResponseCallback[SchemaTargetSslProxyList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetSslProxyList] = js.native
   def list(params: ParamsResourceTargetsslproxiesList): GaxiosPromise[SchemaTargetSslProxyList] = js.native
   def list(
     params: ParamsResourceTargetsslproxiesList,
@@ -449,6 +453,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     */
   def setBackendService(): GaxiosPromise[SchemaOperation] = js.native
   def setBackendService(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setBackendService(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setBackendService(params: ParamsResourceTargetsslproxiesSetbackendservice): GaxiosPromise[SchemaOperation] = js.native
   def setBackendService(
     params: ParamsResourceTargetsslproxiesSetbackendservice,
@@ -541,6 +546,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     */
   def setProxyHeader(): GaxiosPromise[SchemaOperation] = js.native
   def setProxyHeader(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setProxyHeader(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setProxyHeader(params: ParamsResourceTargetsslproxiesSetproxyheader): GaxiosPromise[SchemaOperation] = js.native
   def setProxyHeader(
     params: ParamsResourceTargetsslproxiesSetproxyheader,
@@ -633,6 +639,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     */
   def setSslCertificates(): GaxiosPromise[SchemaOperation] = js.native
   def setSslCertificates(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setSslCertificates(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setSslCertificates(params: ParamsResourceTargetsslproxiesSetsslcertificates): GaxiosPromise[SchemaOperation] = js.native
   def setSslCertificates(
     params: ParamsResourceTargetsslproxiesSetsslcertificates,
@@ -669,6 +676,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     */
   def setSslPolicy(): GaxiosPromise[SchemaOperation] = js.native
   def setSslPolicy(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setSslPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setSslPolicy(params: ParamsResourceTargetsslproxiesSetsslpolicy): GaxiosPromise[SchemaOperation] = js.native
   def setSslPolicy(
     params: ParamsResourceTargetsslproxiesSetsslpolicy,
@@ -759,6 +767,7 @@ class ResourceTargetsslproxies protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceTargetsslproxiesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceTargetsslproxiesTestiampermissions,

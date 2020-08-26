@@ -43,18 +43,38 @@ trait SchemaAttestorPublicKey extends js.Object {
 
 object SchemaAttestorPublicKey {
   @scala.inline
-  def apply(
-    asciiArmoredPgpPublicKey: String = null,
-    comment: String = null,
-    id: String = null,
-    pkixPublicKey: SchemaPkixPublicKey = null
-  ): SchemaAttestorPublicKey = {
+  def apply(): SchemaAttestorPublicKey = {
     val __obj = js.Dynamic.literal()
-    if (asciiArmoredPgpPublicKey != null) __obj.updateDynamic("asciiArmoredPgpPublicKey")(asciiArmoredPgpPublicKey.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (pkixPublicKey != null) __obj.updateDynamic("pkixPublicKey")(pkixPublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttestorPublicKey]
   }
+  @scala.inline
+  implicit class SchemaAttestorPublicKeyOps[Self <: SchemaAttestorPublicKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsciiArmoredPgpPublicKey(value: String): Self = this.set("asciiArmoredPgpPublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsciiArmoredPgpPublicKey: Self = this.set("asciiArmoredPgpPublicKey", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setPkixPublicKey(value: SchemaPkixPublicKey): Self = this.set("pkixPublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePkixPublicKey: Self = this.set("pkixPublicKey", js.undefined)
+  }
+  
 }
 

@@ -19,15 +19,32 @@ trait DetectStackSetDriftInput extends js.Object {
 
 object DetectStackSetDriftInput {
   @scala.inline
-  def apply(
-    StackSetName: StackSetNameOrId,
-    OperationId: ClientRequestToken = null,
-    OperationPreferences: StackSetOperationPreferences = null
-  ): DetectStackSetDriftInput = {
+  def apply(StackSetName: StackSetNameOrId): DetectStackSetDriftInput = {
     val __obj = js.Dynamic.literal(StackSetName = StackSetName.asInstanceOf[js.Any])
-    if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId.asInstanceOf[js.Any])
-    if (OperationPreferences != null) __obj.updateDynamic("OperationPreferences")(OperationPreferences.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectStackSetDriftInput]
   }
+  @scala.inline
+  implicit class DetectStackSetDriftInputOps[Self <: DetectStackSetDriftInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackSetName(value: StackSetNameOrId): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOperationId(value: ClientRequestToken): Self = this.set("OperationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("OperationId", js.undefined)
+    @scala.inline
+    def setOperationPreferences(value: StackSetOperationPreferences): Self = this.set("OperationPreferences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationPreferences: Self = this.set("OperationPreferences", js.undefined)
+  }
+  
 }
 

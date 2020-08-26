@@ -7,23 +7,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * A hash of key - value pairs used to convert constants to values.
     */
-  val constants: js.UndefOr[Record[String, _]] = js.undefined
+  val constants: js.UndefOr[Record[String, _]] = js.native
   /**
     * A hash of key-value pairs used to resolve formula functions.
     */
-  val functions: js.UndefOr[Record[String, js.Function]] = js.undefined
+  val functions: js.UndefOr[Record[String, js.Function]] = js.native
   /**
     * A variable resolver factory function.
     */
-  val reference: js.UndefOr[Reference] = js.undefined
+  val reference: js.UndefOr[Reference] = js.native
   /**
     * A regular expression used to validate token variables.
     */
-  val tokenRx: js.UndefOr[RegExp] = js.undefined
+  val tokenRx: js.UndefOr[RegExp] = js.native
 }
 
 @JSImport("@hapi/formula", "Options")

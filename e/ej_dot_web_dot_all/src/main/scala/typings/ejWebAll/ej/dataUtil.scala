@@ -8,13 +8,16 @@ import scala.scalajs.js.annotation._
 trait dataUtil extends js.Object {
   def avg(json: js.Any, fieldName: String): Double = js.native
   def distinct(jsonArray: js.Array[_]): js.Array[_] = js.native
+  def distinct(jsonArray: js.Array[_], fieldName: js.UndefOr[scala.Nothing], requiresCompleteRecord: js.Any): js.Array[_] = js.native
   def distinct(jsonArray: js.Array[_], fieldName: String): js.Array[_] = js.native
   def distinct(jsonArray: js.Array[_], fieldName: String, requiresCompleteRecord: js.Any): js.Array[_] = js.native
   def group(jsonArray: js.Array[_], field: String, /* internal */ level: Double): js.Array[_] = js.native
   def max(jsonArray: js.Array[_]): js.Array[_] = js.native
+  def max(jsonArray: js.Array[_], fieldName: js.UndefOr[scala.Nothing], comparer: String): js.Array[_] = js.native
   def max(jsonArray: js.Array[_], fieldName: String): js.Array[_] = js.native
   def max(jsonArray: js.Array[_], fieldName: String, comparer: String): js.Array[_] = js.native
   def mergeSort(jsonArray: js.Array[_]): js.Array[_] = js.native
+  def mergeSort(jsonArray: js.Array[_], fieldName: js.UndefOr[scala.Nothing], comparer: js.Any): js.Array[_] = js.native
   def mergeSort(jsonArray: js.Array[_], fieldName: String): js.Array[_] = js.native
   def mergeSort(jsonArray: js.Array[_], fieldName: String, comparer: js.Any): js.Array[_] = js.native
   def min(jsonArray: js.Array[_], fieldName: String, comparer: String): js.Array[_] = js.native

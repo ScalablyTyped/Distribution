@@ -38,6 +38,7 @@ trait Client extends BaseClient {
     * http://appium.io/docs/en/commands/device/app/activate-app/
     */
   def activateApp(): Unit = js.native
+  def activateApp(appId: js.UndefOr[scala.Nothing], bundleId: String): Unit = js.native
   def activateApp(appId: String): Unit = js.native
   def activateApp(appId: String, bundleId: String): Unit = js.native
   /**
@@ -65,12 +66,12 @@ trait Client extends BaseClient {
     * https://w3c.github.io/webdriver/#dfn-back
     */
   def back(): Unit = js.native
-  def background(): Unit = js.native
   /**
     * [appium]
     * Send the currently running app for this session to the background. iOS tests with XCUITest can also use the `mobile: terminateApp` method to terminate the current app (see detailed [documentation](http://appium.io/docs/en/writing-running-appium/ios/ios-xctest-mobile-apps-management/index.html#mobile-terminateapp)), and the `mobile: activateApp` to activate an existing application on the device under test and moves it to the foreground (see detailed [documentation](http://appium.io/docs/en/writing-running-appium/ios/ios-xctest-mobile-apps-management/index.html#mobile-activateapp)).
     * http://appium.io/docs/en/commands/device/app/background-app/
     */
+  def background(): Unit = js.native
   def background(seconds: Double): Unit = js.native
   /**
     * [jsonwp]
@@ -93,6 +94,12 @@ trait Client extends BaseClient {
     */
   def clearLocalStorage(): Unit = js.native
   /**
+    * [saucelabs]
+    * Clear list of mock calls.
+    * https://wiki.saucelabs.com/display/DOCS/Custom+Sauce+Labs+WebDriver+Extensions+for+Network+and+Log+Commands
+    */
+  def clearMockCalls(mockId: String, restore: Boolean): Unit = js.native
+  /**
     * [jsonwp]
     * Clear the storage.
     * https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#delete-sessionsessionidsession_storage
@@ -110,6 +117,12 @@ trait Client extends BaseClient {
     * https://w3c.github.io/webdriver/#dfn-close-window
     */
   def closeWindow(): Unit = js.native
+  /**
+    * [appium]
+    * Performs images comparison using OpenCV framework features. It is expected that both OpenCV framework and opencv4nodejs module are installed on the machine where Appium server is running.
+    * http://appium.io/docs/en/writing-running-appium/image-comparison/
+    */
+  def compareImages(mode: String, firstImage: String, secondImage: String, options: js.Object): ProtocolCommandResponse = js.native
   /**
     * [webdriver]
     * Create a new top-level browsing context.
@@ -143,7 +156,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Disable any network throttling which might have been set. Equivalent of setting the `No throttling` preset.
-    * https://github.com/bayandin/chromedriver/blob/2.45/window_commands.cc#L1724-L1745
+    * https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L1724-L1745
     */
   def deleteNetworkConditions(): Unit = js.native
   /**
@@ -170,6 +183,7 @@ trait Client extends BaseClient {
     * https://github.com/appium/appium/blob/master/docs/en/commands/session/execute-driver.md
     */
   def driverScript(script: String): ProtocolCommandResponse = js.native
+  def driverScript(script: String, `type`: js.UndefOr[scala.Nothing], timeout: Double): ProtocolCommandResponse = js.native
   def driverScript(script: String, `type`: String): ProtocolCommandResponse = js.native
   def driverScript(script: String, `type`: String, timeout: Double): ProtocolCommandResponse = js.native
   /**
@@ -193,7 +207,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Enable hover state for an element, which is reset upon next interaction.
-    * https://github.com/bayandin/chromedriver/blob/2.45/element_commands.cc#L126-L146
+    * https://github.com/bayandin/chromedriver/blob/v2.45/element_commands.cc#L126-L146
     */
   def elementHover(elementId: String): Unit = js.native
   /**
@@ -202,7 +216,6 @@ trait Client extends BaseClient {
     * https://w3c.github.io/webdriver/#dfn-element-send-keys
     */
   def elementSendKeys(elementId: String, text: String): Unit = js.native
-  def elementSendKeys(elementId: String, text: String, value: js.Array[String]): Unit = js.native
   /**
     * [jsonwp]
     * 
@@ -237,7 +250,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Upload a file to remote machine on which the browser is running.
-    * https://github.com/bayandin/chromedriver/blob/2.45/session_commands.cc#L1037-L1065
+    * https://github.com/bayandin/chromedriver/blob/v2.45/session_commands.cc#L1037-L1065
     */
   def file(file: String): String = js.native
   /**
@@ -279,7 +292,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Freeze the current page. Extension for [Page Lifecycle API](https://developers.google.com/web/updates/2018/07/page-lifecycle-api).
-    * https://github.com/bayandin/chromedriver/blob/2.45/window_commands.cc#L625-L633
+    * https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L625-L633
     */
   def freeze(): Unit = js.native
   /**
@@ -437,7 +450,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Retrieves the value of a given form control element.
-    * https://github.com/bayandin/chromedriver/blob/2.45/element_commands.cc#L431-L443
+    * https://github.com/bayandin/chromedriver/blob/v2.45/element_commands.cc#L431-L443
     */
   def getElementValue(elementId: String): String | Null = js.native
   /**
@@ -489,6 +502,12 @@ trait Client extends BaseClient {
     */
   def getLogs(`type`: String): js.Array[js.Object] = js.native
   /**
+    * [saucelabs]
+    * Receive request information about requests that match the mocked resource.
+    * https://wiki.saucelabs.com/display/DOCS/Custom+Sauce+Labs+WebDriver+Extensions+for+Network+and+Log+Commands
+    */
+  def getMockCalls(mockId: String): ProtocolCommandResponse = js.native
+  /**
     * [webdriver]
     * The Get Named Cookie command returns the cookie with the requested name from the associated cookies in the cookie store of the current browsing context's active document. If no cookie is found, a no such cookie error is returned.
     * https://w3c.github.io/webdriver/#dfn-get-named-cookie
@@ -497,7 +516,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Get current network conditions used for emulation.
-    * https://github.com/bayandin/chromedriver/blob/2.45/session_commands.cc#L839-L859
+    * https://github.com/bayandin/chromedriver/blob/v2.45/session_commands.cc#L839-L859
     */
   def getNetworkConditions(): ProtocolCommandResponse = js.native
   /**
@@ -585,6 +604,7 @@ trait Client extends BaseClient {
     * http://appium.io/docs/en/commands/device/app/get-app-strings/
     */
   def getStrings(): StringsReturn = js.native
+  def getStrings(language: js.UndefOr[scala.Nothing], stringFile: String): StringsReturn = js.native
   def getStrings(language: String): StringsReturn = js.native
   def getStrings(language: String, stringFile: String): StringsReturn = js.native
   /**
@@ -672,8 +692,39 @@ trait Client extends BaseClient {
     * http://appium.io/docs/en/commands/device/keys/hide-keyboard/
     */
   def hideKeyboard(): Unit = js.native
+  def hideKeyboard(
+    strategy: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    keyCode: js.UndefOr[scala.Nothing],
+    keyName: String
+  ): Unit = js.native
+  def hideKeyboard(strategy: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], keyCode: String): Unit = js.native
+  def hideKeyboard(
+    strategy: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    keyCode: String,
+    keyName: String
+  ): Unit = js.native
+  def hideKeyboard(strategy: js.UndefOr[scala.Nothing], key: String): Unit = js.native
+  def hideKeyboard(
+    strategy: js.UndefOr[scala.Nothing],
+    key: String,
+    keyCode: js.UndefOr[scala.Nothing],
+    keyName: String
+  ): Unit = js.native
+  def hideKeyboard(strategy: js.UndefOr[scala.Nothing], key: String, keyCode: String): Unit = js.native
+  def hideKeyboard(strategy: js.UndefOr[scala.Nothing], key: String, keyCode: String, keyName: String): Unit = js.native
   def hideKeyboard(strategy: String): Unit = js.native
+  def hideKeyboard(
+    strategy: String,
+    key: js.UndefOr[scala.Nothing],
+    keyCode: js.UndefOr[scala.Nothing],
+    keyName: String
+  ): Unit = js.native
+  def hideKeyboard(strategy: String, key: js.UndefOr[scala.Nothing], keyCode: String): Unit = js.native
+  def hideKeyboard(strategy: String, key: js.UndefOr[scala.Nothing], keyCode: String, keyName: String): Unit = js.native
   def hideKeyboard(strategy: String, key: String): Unit = js.native
+  def hideKeyboard(strategy: String, key: String, keyCode: js.UndefOr[scala.Nothing], keyName: String): Unit = js.native
   def hideKeyboard(strategy: String, key: String, keyCode: String): Unit = js.native
   def hideKeyboard(strategy: String, key: String, keyCode: String, keyName: String): Unit = js.native
   /**
@@ -691,7 +742,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Whether a simple dialog is currently open.
-    * https://github.com/bayandin/chromedriver/blob/2.45/alert_commands.cc#L42-L49
+    * https://github.com/bayandin/chromedriver/blob/v2.45/alert_commands.cc#L42-L49
     */
   def isAlertOpen(): Boolean = js.native
   /**
@@ -700,6 +751,7 @@ trait Client extends BaseClient {
     * http://appium.io/docs/en/commands/device/app/is-app-installed/
     */
   def isAppInstalled(): Boolean = js.native
+  def isAppInstalled(appId: js.UndefOr[scala.Nothing], bundleId: String): Boolean = js.native
   def isAppInstalled(appId: String): Boolean = js.native
   def isAppInstalled(appId: String, bundleId: String): Boolean = js.native
   /**
@@ -741,7 +793,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Determines load status for active window handle.
-    * https://github.com/bayandin/chromedriver/blob/2.45/session_commands.cc#L783-L802
+    * https://github.com/bayandin/chromedriver/blob/v2.45/session_commands.cc#L783-L802
     */
   def isLoading(): Boolean = js.native
   /**
@@ -765,9 +817,9 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Launches a Chrome app by specified id.
-    * https://github.com/bayandin/chromedriver/blob/2.45/session_commands.cc#L521-L539
+    * https://github.com/bayandin/chromedriver/blob/v2.45/session_commands.cc#L521-L539
     */
-  def launchApp(id: String): Unit = js.native
+  def launchChromeApp(id: String): Unit = js.native
   /**
     * [appium]
     * Lock the device.
@@ -787,6 +839,7 @@ trait Client extends BaseClient {
     * http://appium.io/docs/en/commands/device/keys/long-press-keycode/
     */
   def longPressKeyCode(keycode: Double): Unit = js.native
+  def longPressKeyCode(keycode: Double, metastate: js.UndefOr[scala.Nothing], flags: Double): Unit = js.native
   def longPressKeyCode(keycode: Double, metastate: Double): Unit = js.native
   def longPressKeyCode(keycode: Double, metastate: Double, flags: Double): Unit = js.native
   /**
@@ -815,14 +868,26 @@ trait Client extends BaseClient {
     */
   def minimizeWindow(): RectReturn = js.native
   /**
+    * [saucelabs]
+    * Mocks a network resource.
+    * https://wiki.saucelabs.com/display/DOCS/Custom+Sauce+Labs+WebDriver+Extensions+for+Network+and+Log+Commands
+    */
+  def mockRequest(url: String): ProtocolCommandResponse = js.native
+  def mockRequest(url: String, filterOptions: js.Object): ProtocolCommandResponse = js.native
+  /**
     * [jsonwp]
     * 
     * https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidmoveto
     */
   def moveToElement(): Unit = js.native
+  def moveToElement(element: js.UndefOr[scala.Nothing], xoffset: js.UndefOr[scala.Nothing], yoffset: Double): Unit = js.native
+  def moveToElement(element: js.UndefOr[scala.Nothing], xoffset: Double): Unit = js.native
+  def moveToElement(element: js.UndefOr[scala.Nothing], xoffset: Double, yoffset: Double): Unit = js.native
   def moveToElement(element: String): Unit = js.native
+  def moveToElement(element: String, xoffset: js.UndefOr[scala.Nothing], yoffset: Double): Unit = js.native
   def moveToElement(element: String, xoffset: Double): Unit = js.native
   def moveToElement(element: String, xoffset: Double, yoffset: Double): Unit = js.native
+  def moveToElement(element: Null, xoffset: js.UndefOr[scala.Nothing], yoffset: Double): Unit = js.native
   def moveToElement(element: Null, xoffset: Double): Unit = js.native
   def moveToElement(element: Null, xoffset: Double, yoffset: Double): Unit = js.native
   /**
@@ -905,6 +970,7 @@ trait Client extends BaseClient {
     * http://appium.io/docs/en/commands/device/keys/press-keycode/
     */
   def pressKeyCode(keycode: Double): Unit = js.native
+  def pressKeyCode(keycode: Double, metastate: js.UndefOr[scala.Nothing], flags: Double): Unit = js.native
   def pressKeyCode(keycode: Double, metastate: Double): Unit = js.native
   def pressKeyCode(keycode: Double, metastate: Double, flags: Double): Unit = js.native
   /**
@@ -931,6 +997,7 @@ trait Client extends BaseClient {
     * http://appium.io/docs/en/commands/device/app/app-state/
     */
   def queryAppState(): Double = js.native
+  def queryAppState(appId: js.UndefOr[scala.Nothing], bundleId: String): Double = js.native
   def queryAppState(appId: String): Double = js.native
   def queryAppState(appId: String, bundleId: String): Double = js.native
   /**
@@ -963,6 +1030,7 @@ trait Client extends BaseClient {
     * http://appium.io/docs/en/commands/device/app/remove-app/
     */
   def removeApp(): Unit = js.native
+  def removeApp(appId: js.UndefOr[scala.Nothing], bundleId: String): Unit = js.native
   def removeApp(appId: String): Unit = js.native
   def removeApp(appId: String, bundleId: String): Unit = js.native
   /**
@@ -978,9 +1046,15 @@ trait Client extends BaseClient {
     */
   def reset(): Unit = js.native
   /**
+    * [saucelabs]
+    * Respond if mock matches a specific resource.
+    * https://wiki.saucelabs.com/display/DOCS/Custom+Sauce+Labs+WebDriver+Extensions+for+Network+and+Log+Commands
+    */
+  def respondMock(mockId: String, payload: js.Object): Unit = js.native
+  /**
     * [chromium]
     * Resume the current page. Extension for [Page Lifecycle API](https://developers.google.com/web/updates/2018/07/page-lifecycle-api).
-    * https://github.com/bayandin/chromedriver/blob/2.45/window_commands.cc#L635-L645
+    * https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L635-L645
     */
   def resume(): Unit = js.native
   /**
@@ -1007,13 +1081,13 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Send a command to the DevTools debugger.<br>For a list of available commands and their parameters refer to the [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/).
-    * https://github.com/bayandin/chromedriver/blob/2.45/window_commands.cc#L1290-L1304
+    * https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L1290-L1304
     */
   def sendCommand(cmd: String, params: js.Object): Unit = js.native
   /**
     * [chromium]
     * Send a command to the DevTools debugger and wait for the result.<br>For a list of available commands and their parameters refer to the [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/).
-    * https://github.com/bayandin/chromedriver/blob/2.45/window_commands.cc#L1306-L1320
+    * https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L1306-L1320
     */
   def sendCommandAndGetResult(cmd: String, params: js.Object): js.Any = js.native
   /**
@@ -1053,6 +1127,7 @@ trait Client extends BaseClient {
     * http://appium.io/docs/en/commands/device/clipboard/set-clipboard/
     */
   def setClipboard(content: String): String = js.native
+  def setClipboard(content: String, contentType: js.UndefOr[scala.Nothing], label: String): String = js.native
   def setClipboard(content: String, contentType: String): String = js.native
   def setClipboard(content: String, contentType: String, label: String): String = js.native
   /**
@@ -1076,7 +1151,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Set network conditions used for emulation by throttling connection.
-    * https://github.com/bayandin/chromedriver/blob/2.45/window_commands.cc#L1663-L1722
+    * https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L1663-L1722
     */
   def setNetworkConditions(network_conditions: js.Object): Unit = js.native
   def setNetworkConditions(network_conditions: js.Object, network_name: String): Unit = js.native
@@ -1110,7 +1185,11 @@ trait Client extends BaseClient {
     * https://w3c.github.io/webdriver/#dfn-set-timeouts
     */
   def setTimeouts(): Unit = js.native
+  def setTimeouts(`implicit`: js.UndefOr[scala.Nothing], pageLoad: js.UndefOr[scala.Nothing], script: Double): Unit = js.native
+  def setTimeouts(`implicit`: js.UndefOr[scala.Nothing], pageLoad: Double): Unit = js.native
+  def setTimeouts(`implicit`: js.UndefOr[scala.Nothing], pageLoad: Double, script: Double): Unit = js.native
   def setTimeouts(`implicit`: Double): Unit = js.native
+  def setTimeouts(`implicit`: Double, pageLoad: js.UndefOr[scala.Nothing], script: Double): Unit = js.native
   def setTimeouts(`implicit`: Double, pageLoad: Double): Unit = js.native
   def setTimeouts(`implicit`: Double, pageLoad: Double, script: Double): Unit = js.native
   /**
@@ -1131,15 +1210,15 @@ trait Client extends BaseClient {
     * https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#post-sessionsessionidwindowwindowhandleposition
     */
   def setWindowPosition(x: Double, y: Double): ProtocolCommandResponse = js.native
-  def setWindowRect(): RectReturn = js.native
-  def setWindowRect(x: Double): RectReturn = js.native
-  def setWindowRect(x: Double, y: Double): RectReturn = js.native
-  def setWindowRect(x: Double, y: Double, width: Double): RectReturn = js.native
   /**
     * [webdriver]
     * The Set Window Rect command alters the size and the position of the operating system window corresponding to the current top-level browsing context.
     * https://w3c.github.io/webdriver/#dfn-set-window-rect
     */
+  def setWindowRect(): RectReturn = js.native
+  def setWindowRect(x: Double): RectReturn = js.native
+  def setWindowRect(x: Double, y: Double): RectReturn = js.native
+  def setWindowRect(x: Double, y: Double, width: Double): RectReturn = js.native
   def setWindowRect(x: Double, y: Double, width: Double, height: Double): RectReturn = js.native
   def setWindowRect(x: Double, y: Double, width: Null, height: Double): RectReturn = js.native
   def setWindowRect(x: Double, y: Null, width: Double): RectReturn = js.native
@@ -1161,7 +1240,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Shutdown ChromeDriver process and consequently terminating all active sessions.
-    * https://github.com/bayandin/chromedriver/blob/2.45/session_commands.cc#L489-L498
+    * https://github.com/bayandin/chromedriver/blob/v2.45/session_commands.cc#L489-L498
     */
   def shutdown(): Unit = js.native
   /**
@@ -1199,8 +1278,39 @@ trait Client extends BaseClient {
     * http://appium.io/docs/en/commands/device/recording-screen/stop-recording-screen/
     */
   def stopRecordingScreen(): String = js.native
+  def stopRecordingScreen(
+    remotePath: js.UndefOr[scala.Nothing],
+    username: js.UndefOr[scala.Nothing],
+    password: js.UndefOr[scala.Nothing],
+    method: String
+  ): String = js.native
+  def stopRecordingScreen(remotePath: js.UndefOr[scala.Nothing], username: js.UndefOr[scala.Nothing], password: String): String = js.native
+  def stopRecordingScreen(
+    remotePath: js.UndefOr[scala.Nothing],
+    username: js.UndefOr[scala.Nothing],
+    password: String,
+    method: String
+  ): String = js.native
+  def stopRecordingScreen(remotePath: js.UndefOr[scala.Nothing], username: String): String = js.native
+  def stopRecordingScreen(
+    remotePath: js.UndefOr[scala.Nothing],
+    username: String,
+    password: js.UndefOr[scala.Nothing],
+    method: String
+  ): String = js.native
+  def stopRecordingScreen(remotePath: js.UndefOr[scala.Nothing], username: String, password: String): String = js.native
+  def stopRecordingScreen(remotePath: js.UndefOr[scala.Nothing], username: String, password: String, method: String): String = js.native
   def stopRecordingScreen(remotePath: String): String = js.native
+  def stopRecordingScreen(
+    remotePath: String,
+    username: js.UndefOr[scala.Nothing],
+    password: js.UndefOr[scala.Nothing],
+    method: String
+  ): String = js.native
+  def stopRecordingScreen(remotePath: String, username: js.UndefOr[scala.Nothing], password: String): String = js.native
+  def stopRecordingScreen(remotePath: String, username: js.UndefOr[scala.Nothing], password: String, method: String): String = js.native
   def stopRecordingScreen(remotePath: String, username: String): String = js.native
+  def stopRecordingScreen(remotePath: String, username: String, password: js.UndefOr[scala.Nothing], method: String): String = js.native
   def stopRecordingScreen(remotePath: String, username: String, password: String): String = js.native
   def stopRecordingScreen(remotePath: String, username: String, password: String, method: String): String = js.native
   /**
@@ -1209,19 +1319,14 @@ trait Client extends BaseClient {
     * https://github.com/SeleniumHQ/mobile-spec/blob/master/spec-draft.md#webviews-and-other-contexts
     */
   def switchContext(name: String): Unit = js.native
-  def switchToFrame(): Unit = js.native
-  /**
-    * [jsonwp]
-    * Change focus to another frame on the page. If the frame `id` is `null`, the server should switch to the page's default content.
-    * https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidframe
-    */
-  def switchToFrame(id: String): Unit = js.native
-  def switchToFrame(id: js.Object): Unit = js.native
   /**
     * [webdriver]
     * The Switch To Frame command is used to select the current top-level browsing context or a child browsing context of the current browsing context to use as the current browsing context for subsequent commands.
     * https://w3c.github.io/webdriver/#dfn-switch-to-frame
     */
+  def switchToFrame(): Unit = js.native
+  def switchToFrame(id: String): Unit = js.native
+  def switchToFrame(id: js.Object): Unit = js.native
   def switchToFrame(id: Double): Unit = js.native
   /**
     * [webdriver]
@@ -1245,7 +1350,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Takes a heap snapshot of the current execution context.
-    * https://github.com/bayandin/chromedriver/blob/2.45/chrome/web_view.h#L198-L202
+    * https://github.com/bayandin/chromedriver/blob/v2.45/chrome/web_view.h#L198-L202
     */
   def takeHeapSnapshot(): ProtocolCommandResponse = js.native
   /**
@@ -1260,6 +1365,7 @@ trait Client extends BaseClient {
     * http://appium.io/docs/en/commands/device/app/terminate-app/
     */
   def terminateApp(): Unit = js.native
+  def terminateApp(appId: js.UndefOr[scala.Nothing], bundleId: String): Unit = js.native
   def terminateApp(appId: String): Unit = js.native
   def terminateApp(appId: String, bundleId: String): Unit = js.native
   /**
@@ -1370,7 +1476,7 @@ trait Client extends BaseClient {
   /**
     * [chromium]
     * Trigger a pinch zoom effect.
-    * https://github.com/bayandin/chromedriver/blob/2.45/window_commands.cc#L813-L827
+    * https://github.com/bayandin/chromedriver/blob/v2.45/window_commands.cc#L813-L827
     */
   def touchPinch(x: Double, y: Double, scale: Double): Unit = js.native
   /**

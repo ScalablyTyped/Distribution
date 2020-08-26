@@ -20,14 +20,83 @@ import scala.scalajs.js.annotation._
   */
 class RestClient () extends js.Object {
   def this(userAgent: String) = this()
+  def this(userAgent: js.UndefOr[scala.Nothing], baseUrl: String) = this()
   def this(userAgent: String, baseUrl: String) = this()
   def this(userAgent: Null, baseUrl: String) = this()
+  def this(
+    userAgent: js.UndefOr[scala.Nothing],
+    baseUrl: js.UndefOr[scala.Nothing],
+    handlers: js.Array[IRequestHandler]
+  ) = this()
+  def this(userAgent: js.UndefOr[scala.Nothing], baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+  def this(userAgent: String, baseUrl: js.UndefOr[scala.Nothing], handlers: js.Array[IRequestHandler]) = this()
   def this(userAgent: String, baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+  def this(userAgent: Null, baseUrl: js.UndefOr[scala.Nothing], handlers: js.Array[IRequestHandler]) = this()
   def this(userAgent: Null, baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+  def this(
+    userAgent: js.UndefOr[scala.Nothing],
+    baseUrl: js.UndefOr[scala.Nothing],
+    handlers: js.UndefOr[scala.Nothing],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
+  def this(
+    userAgent: js.UndefOr[scala.Nothing],
+    baseUrl: js.UndefOr[scala.Nothing],
+    handlers: js.Array[IRequestHandler],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
+  def this(
+    userAgent: js.UndefOr[scala.Nothing],
+    baseUrl: String,
+    handlers: js.UndefOr[scala.Nothing],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
+  def this(
+    userAgent: js.UndefOr[scala.Nothing],
+    baseUrl: String,
+    handlers: js.Array[IRequestHandler],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
+  def this(
+    userAgent: String,
+    baseUrl: js.UndefOr[scala.Nothing],
+    handlers: js.UndefOr[scala.Nothing],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
+  def this(
+    userAgent: String,
+    baseUrl: js.UndefOr[scala.Nothing],
+    handlers: js.Array[IRequestHandler],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
+  def this(
+    userAgent: String,
+    baseUrl: String,
+    handlers: js.UndefOr[scala.Nothing],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
   def this(
     userAgent: String,
     baseUrl: String,
     handlers: js.Array[IRequestHandler],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
+  def this(
+    userAgent: Null,
+    baseUrl: js.UndefOr[scala.Nothing],
+    handlers: js.UndefOr[scala.Nothing],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
+  def this(
+    userAgent: Null,
+    baseUrl: js.UndefOr[scala.Nothing],
+    handlers: js.Array[IRequestHandler],
+    requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+  ) = this()
+  def this(
+    userAgent: Null,
+    baseUrl: String,
+    handlers: js.UndefOr[scala.Nothing],
     requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
   ) = this()
   def this(

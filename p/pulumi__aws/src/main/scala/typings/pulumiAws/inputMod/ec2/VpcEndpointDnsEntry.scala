@@ -19,11 +19,30 @@ trait VpcEndpointDnsEntry extends js.Object {
 
 object VpcEndpointDnsEntry {
   @scala.inline
-  def apply(dnsName: Input[String] = null, hostedZoneId: Input[String] = null): VpcEndpointDnsEntry = {
+  def apply(): VpcEndpointDnsEntry = {
     val __obj = js.Dynamic.literal()
-    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
-    if (hostedZoneId != null) __obj.updateDynamic("hostedZoneId")(hostedZoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcEndpointDnsEntry]
   }
+  @scala.inline
+  implicit class VpcEndpointDnsEntryOps[Self <: VpcEndpointDnsEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDnsName(value: Input[String]): Self = this.set("dnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsName: Self = this.set("dnsName", js.undefined)
+    @scala.inline
+    def setHostedZoneId(value: Input[String]): Self = this.set("hostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZoneId: Self = this.set("hostedZoneId", js.undefined)
+  }
+  
 }
 

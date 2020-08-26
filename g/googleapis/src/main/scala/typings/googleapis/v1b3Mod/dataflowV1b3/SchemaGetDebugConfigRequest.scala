@@ -27,12 +27,34 @@ trait SchemaGetDebugConfigRequest extends js.Object {
 
 object SchemaGetDebugConfigRequest {
   @scala.inline
-  def apply(componentId: String = null, location: String = null, workerId: String = null): SchemaGetDebugConfigRequest = {
+  def apply(): SchemaGetDebugConfigRequest = {
     val __obj = js.Dynamic.literal()
-    if (componentId != null) __obj.updateDynamic("componentId")(componentId.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (workerId != null) __obj.updateDynamic("workerId")(workerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetDebugConfigRequest]
   }
+  @scala.inline
+  implicit class SchemaGetDebugConfigRequestOps[Self <: SchemaGetDebugConfigRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentId(value: String): Self = this.set("componentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentId: Self = this.set("componentId", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setWorkerId(value: String): Self = this.set("workerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerId: Self = this.set("workerId", js.undefined)
+  }
+  
 }
 

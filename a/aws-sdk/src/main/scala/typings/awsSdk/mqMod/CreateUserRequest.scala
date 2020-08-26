@@ -30,18 +30,40 @@ trait CreateUserRequest extends js.Object {
 
 object CreateUserRequest {
   @scala.inline
-  def apply(
-    BrokerId: string,
-    Username: string,
-    ConsoleAccess: js.UndefOr[boolean] = js.undefined,
-    Groups: listOfString = null,
-    Password: string = null
-  ): CreateUserRequest = {
+  def apply(BrokerId: string, Username: string): CreateUserRequest = {
     val __obj = js.Dynamic.literal(BrokerId = BrokerId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsoleAccess)) __obj.updateDynamic("ConsoleAccess")(ConsoleAccess.get.asInstanceOf[js.Any])
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
-    if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserRequest]
   }
+  @scala.inline
+  implicit class CreateUserRequestOps[Self <: CreateUserRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: string): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConsoleAccess(value: boolean): Self = this.set("ConsoleAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsoleAccess: Self = this.set("ConsoleAccess", js.undefined)
+    @scala.inline
+    def setGroupsVarargs(value: string*): Self = this.set("Groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: listOfString): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("Groups", js.undefined)
+    @scala.inline
+    def setPassword(value: string): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("Password", js.undefined)
+  }
+  
 }
 

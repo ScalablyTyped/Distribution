@@ -36,15 +36,13 @@ class Logger protected () extends js.Object {
   def info(args: js.Any*): Unit = js.native
   def log(args: js.Any*): Unit = js.native
   def logHandler: LogHandler = js.native
-  def logHandler(`val`: LogHandler): js.Any = js.native
+  def logHandler_=(`val`: LogHandler): Unit = js.native
   def logLevel: LogLevel = js.native
-  def logLevel(`val`: LogLevel): js.Any = js.native
+  def logLevel_=(`val`: LogLevel): Unit = js.native
   def setLogLevel(`val`: LogLevel): Unit = js.native
   def setLogLevel(`val`: LogLevelString): Unit = js.native
-  def userLogHandler(): js.Any = js.native
-  def userLogHandler(`val`: LogHandler): js.Any = js.native
-  @JSName("userLogHandler")
-  def userLogHandler_Union: LogHandler | Null = js.native
+  def userLogHandler: LogHandler | Null = js.native
+  def userLogHandler_=(`val`: LogHandler | Null): Unit = js.native
   def warn(args: js.Any*): Unit = js.native
 }
 

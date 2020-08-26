@@ -79,22 +79,46 @@ trait SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig extends js.Object {
 
 object SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig {
   @scala.inline
-  def apply(
-    commonAlphabet: String = null,
-    context: SchemaGooglePrivacyDlpV2FieldId = null,
-    cryptoKey: SchemaGooglePrivacyDlpV2CryptoKey = null,
-    customAlphabet: String = null,
-    radix: js.UndefOr[Double] = js.undefined,
-    surrogateInfoType: SchemaGooglePrivacyDlpV2InfoType = null
-  ): SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig = {
+  def apply(): SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig = {
     val __obj = js.Dynamic.literal()
-    if (commonAlphabet != null) __obj.updateDynamic("commonAlphabet")(commonAlphabet.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (cryptoKey != null) __obj.updateDynamic("cryptoKey")(cryptoKey.asInstanceOf[js.Any])
-    if (customAlphabet != null) __obj.updateDynamic("customAlphabet")(customAlphabet.asInstanceOf[js.Any])
-    if (!js.isUndefined(radix)) __obj.updateDynamic("radix")(radix.get.asInstanceOf[js.Any])
-    if (surrogateInfoType != null) __obj.updateDynamic("surrogateInfoType")(surrogateInfoType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfigOps[Self <: SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommonAlphabet(value: String): Self = this.set("commonAlphabet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommonAlphabet: Self = this.set("commonAlphabet", js.undefined)
+    @scala.inline
+    def setContext(value: SchemaGooglePrivacyDlpV2FieldId): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setCryptoKey(value: SchemaGooglePrivacyDlpV2CryptoKey): Self = this.set("cryptoKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCryptoKey: Self = this.set("cryptoKey", js.undefined)
+    @scala.inline
+    def setCustomAlphabet(value: String): Self = this.set("customAlphabet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAlphabet: Self = this.set("customAlphabet", js.undefined)
+    @scala.inline
+    def setRadix(value: Double): Self = this.set("radix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadix: Self = this.set("radix", js.undefined)
+    @scala.inline
+    def setSurrogateInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = this.set("surrogateInfoType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSurrogateInfoType: Self = this.set("surrogateInfoType", js.undefined)
+  }
+  
 }
 

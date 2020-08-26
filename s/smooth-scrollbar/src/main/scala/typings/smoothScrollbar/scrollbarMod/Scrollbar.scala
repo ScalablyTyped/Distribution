@@ -35,13 +35,48 @@ trait Scrollbar extends js.Object {
   def scrollIntoView(elem: HTMLElement): Unit = js.native
   def scrollIntoView(elem: HTMLElement, options: PartialScrollIntoViewOpti): Unit = js.native
   def scrollTo(): Unit = js.native
+  def scrollTo(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    duration: js.UndefOr[scala.Nothing],
+    options: PartialScrollToOptions
+  ): Unit = js.native
+  def scrollTo(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
+  def scrollTo(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    duration: Double,
+    options: PartialScrollToOptions
+  ): Unit = js.native
+  def scrollTo(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def scrollTo(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    options: PartialScrollToOptions
+  ): Unit = js.native
+  def scrollTo(x: js.UndefOr[scala.Nothing], y: Double, duration: Double): Unit = js.native
+  def scrollTo(x: js.UndefOr[scala.Nothing], y: Double, duration: Double, options: PartialScrollToOptions): Unit = js.native
   def scrollTo(x: Double): Unit = js.native
+  def scrollTo(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    duration: js.UndefOr[scala.Nothing],
+    options: PartialScrollToOptions
+  ): Unit = js.native
+  def scrollTo(x: Double, y: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
+  def scrollTo(x: Double, y: js.UndefOr[scala.Nothing], duration: Double, options: PartialScrollToOptions): Unit = js.native
   def scrollTo(x: Double, y: Double): Unit = js.native
+  def scrollTo(x: Double, y: Double, duration: js.UndefOr[scala.Nothing], options: PartialScrollToOptions): Unit = js.native
   def scrollTo(x: Double, y: Double, duration: Double): Unit = js.native
   def scrollTo(x: Double, y: Double, duration: Double, options: PartialScrollToOptions): Unit = js.native
   def setMomentum(x: Double, y: Double): Unit = js.native
   def setPosition(): Unit = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], options: PartialSetPositionOptions): Unit = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: Double, options: PartialSetPositionOptions): Unit = js.native
   def setPosition(x: Double): Unit = js.native
+  def setPosition(x: Double, y: js.UndefOr[scala.Nothing], options: PartialSetPositionOptions): Unit = js.native
   def setPosition(x: Double, y: Double): Unit = js.native
   def setPosition(x: Double, y: Double, options: PartialSetPositionOptions): Unit = js.native
   def update(): Unit = js.native

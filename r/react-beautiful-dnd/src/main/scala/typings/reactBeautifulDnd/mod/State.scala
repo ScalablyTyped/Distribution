@@ -33,13 +33,9 @@ object State {
     movementMode: MovementMode,
     onLiftImpact: DragImpact,
     phase: COLLECTING,
-    viewport: Viewport,
-    forceShouldAnimate: js.UndefOr[Boolean] = js.undefined,
-    scrollJumpRequest: Position = null
+    viewport: Viewport
   ): State = {
     val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceShouldAnimate)) __obj.updateDynamic("forceShouldAnimate")(forceShouldAnimate.get.asInstanceOf[js.Any])
-    if (scrollJumpRequest != null) __obj.updateDynamic("scrollJumpRequest")(scrollJumpRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
   @scala.inline
@@ -57,13 +53,9 @@ object State {
     onLiftImpact: DragImpact,
     phase: DROP_PENDING,
     reason: DropReason,
-    viewport: Viewport,
-    forceShouldAnimate: js.UndefOr[Boolean] = js.undefined,
-    scrollJumpRequest: Position = null
+    viewport: Viewport
   ): State = {
     val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isWaiting = isWaiting.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceShouldAnimate)) __obj.updateDynamic("forceShouldAnimate")(forceShouldAnimate.get.asInstanceOf[js.Any])
-    if (scrollJumpRequest != null) __obj.updateDynamic("scrollJumpRequest")(scrollJumpRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
   @scala.inline
@@ -79,13 +71,9 @@ object State {
     movementMode: MovementMode,
     onLiftImpact: DragImpact,
     phase: DRAGGING,
-    viewport: Viewport,
-    forceShouldAnimate: js.UndefOr[Boolean] = js.undefined,
-    scrollJumpRequest: Position = null
+    viewport: Viewport
   ): State = {
     val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceShouldAnimate)) __obj.updateDynamic("forceShouldAnimate")(forceShouldAnimate.get.asInstanceOf[js.Any])
-    if (scrollJumpRequest != null) __obj.updateDynamic("scrollJumpRequest")(scrollJumpRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
   @scala.inline
@@ -100,9 +88,8 @@ object State {
     __obj.asInstanceOf[State]
   }
   @scala.inline
-  def IdleState(phase: IDLE, shouldFlush: Boolean, completed: CompletedDrag = null): State = {
+  def IdleState(phase: IDLE, shouldFlush: Boolean): State = {
     val __obj = js.Dynamic.literal(phase = phase.asInstanceOf[js.Any], shouldFlush = shouldFlush.asInstanceOf[js.Any])
-    if (completed != null) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

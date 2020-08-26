@@ -30,20 +30,42 @@ trait SyntaxToken extends js.Object {
 
 object SyntaxToken {
   @scala.inline
-  def apply(
-    BeginOffset: js.UndefOr[Integer] = js.undefined,
-    EndOffset: js.UndefOr[Integer] = js.undefined,
-    PartOfSpeech: PartOfSpeechTag = null,
-    Text: String = null,
-    TokenId: js.UndefOr[Integer] = js.undefined
-  ): SyntaxToken = {
+  def apply(): SyntaxToken = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BeginOffset)) __obj.updateDynamic("BeginOffset")(BeginOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EndOffset)) __obj.updateDynamic("EndOffset")(EndOffset.get.asInstanceOf[js.Any])
-    if (PartOfSpeech != null) __obj.updateDynamic("PartOfSpeech")(PartOfSpeech.asInstanceOf[js.Any])
-    if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
-    if (!js.isUndefined(TokenId)) __obj.updateDynamic("TokenId")(TokenId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxToken]
   }
+  @scala.inline
+  implicit class SyntaxTokenOps[Self <: SyntaxToken] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeginOffset(value: Integer): Self = this.set("BeginOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeginOffset: Self = this.set("BeginOffset", js.undefined)
+    @scala.inline
+    def setEndOffset(value: Integer): Self = this.set("EndOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndOffset: Self = this.set("EndOffset", js.undefined)
+    @scala.inline
+    def setPartOfSpeech(value: PartOfSpeechTag): Self = this.set("PartOfSpeech", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartOfSpeech: Self = this.set("PartOfSpeech", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("Text", js.undefined)
+    @scala.inline
+    def setTokenId(value: Integer): Self = this.set("TokenId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenId: Self = this.set("TokenId", js.undefined)
+  }
+  
 }
 

@@ -12,6 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPopoverSharedProps
   extends IOverlayableProps
      with IProps {
@@ -21,7 +22,7 @@ trait IPopoverSharedProps
     * Popper will find the correct DOM element itself.
     * @default "scrollParent"
     */
-  var boundary: js.UndefOr[Boundary] = js.undefined
+  var boundary: js.UndefOr[Boundary] = js.native
   /**
     * When enabled, `preventDefault()` is invoked on `click` events that close
     * this popover, which will prevent those clicks from closing outer
@@ -31,37 +32,37 @@ trait IPopoverSharedProps
     * See http://blueprintjs.com/docs/#core/components/popover.closing-on-click
     * @default false
     */
-  var captureDismiss: js.UndefOr[Boolean] = js.undefined
+  var captureDismiss: js.UndefOr[Boolean] = js.native
   /**
     * Initial opened state when uncontrolled.
     * @default false
     */
-  var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
+  var defaultIsOpen: js.UndefOr[Boolean] = js.native
   /**
     * Prevents the popover from appearing when `true`.
     * @default false
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /**
     * The amount of time in milliseconds the popover should remain open after
     * the user hovers off the trigger. The timer is canceled if the user mouses
     * over the target before it expires.
     * @default 300
     */
-  var hoverCloseDelay: js.UndefOr[Double] = js.undefined
+  var hoverCloseDelay: js.UndefOr[Double] = js.native
   /**
     * The amount of time in milliseconds the popover should wait before opening
     * after the user hovers over the trigger. The timer is canceled if the user
     * mouses away from the target before it expires.
     * @default 150
     */
-  var hoverOpenDelay: js.UndefOr[Double] = js.undefined
+  var hoverOpenDelay: js.UndefOr[Double] = js.native
   /**
     * Whether a popover that uses a `Portal` should automatically inherit the
     * dark theme from its parent.
     * @default true
     */
-  var inheritDarkTheme: js.UndefOr[Boolean] = js.undefined
+  var inheritDarkTheme: js.UndefOr[Boolean] = js.native
   /**
     * Whether the popover is visible. Passing this prop puts the popover in
     * controlled mode, where the only way to change visibility is by updating
@@ -69,13 +70,13 @@ trait IPopoverSharedProps
     * popover will remain closed.
     * @default undefined
     */
-  var isOpen: js.UndefOr[Boolean] = js.undefined
+  var isOpen: js.UndefOr[Boolean] = js.native
   /**
     * Popper modifier options, passed directly to internal Popper instance. See
     * https://popper.js.org/docs/modifiers/ for complete
     * details.
     */
-  var modifiers: js.UndefOr[Modifiers] = js.undefined
+  var modifiers: js.UndefOr[Modifiers] = js.native
   /**
     * Callback invoked in controlled mode when the popover open state *would*
     * change due to user interaction.
@@ -86,18 +87,18 @@ trait IPopoverSharedProps
       /* e */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Whether the popover should open when its target is focused. If `true`,
     * target will render with `tabindex="0"` to make it focusable via keyboard
     * navigation.
     * @default true
     */
-  var openOnTargetFocus: js.UndefOr[Boolean] = js.undefined
+  var openOnTargetFocus: js.UndefOr[Boolean] = js.native
   /**
     * A space-delimited string of class names applied to the popover element.
     */
-  var popoverClassName: js.UndefOr[String] = js.undefined
+  var popoverClassName: js.UndefOr[String] = js.native
   /**
     * The position (relative to the target) at which the popover should appear.
     *
@@ -106,16 +107,16 @@ trait IPopoverSharedProps
     * user scrolls around.
     * @default "auto"
     */
-  var position: js.UndefOr[PopoverPosition] = js.undefined
+  var position: js.UndefOr[PopoverPosition] = js.native
   /**
     * Space-delimited string of class names applied to the target element.
     */
-  var targetClassName: js.UndefOr[String] = js.undefined
+  var targetClassName: js.UndefOr[String] = js.native
   /**
     * HTML props to spread to target element. Use `targetTagName` to change
     * the type of element rendered. Note that `ref` is not supported.
     */
-  var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
+  var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.native
   /**
     * HTML tag name for the target element. This must be an HTML element to
     * ensure that it supports the necessary DOM event handlers.
@@ -126,7 +127,7 @@ trait IPopoverSharedProps
     */
   var targetTagName: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-  ] = js.undefined
+  ] = js.native
   /**
     * HTML tag name for the wrapper element, which also receives the
     * `className` prop.
@@ -134,77 +135,97 @@ trait IPopoverSharedProps
     */
   var wrapperTagName: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-  ] = js.undefined
+  ] = js.native
 }
 
 object IPopoverSharedProps {
   @scala.inline
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    boundary: Boundary = null,
-    canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined,
-    captureDismiss: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    defaultIsOpen: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    enforceFocus: js.UndefOr[Boolean] = js.undefined,
-    hoverCloseDelay: js.UndefOr[Double] = js.undefined,
-    hoverOpenDelay: js.UndefOr[Double] = js.undefined,
-    inheritDarkTheme: js.UndefOr[Boolean] = js.undefined,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    `lazy`: js.UndefOr[Boolean] = js.undefined,
-    modifiers: Modifiers = null,
-    onClose: /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit = null,
-    onClosed: /* node */ HTMLElement => Unit = null,
-    onClosing: /* node */ HTMLElement => Unit = null,
-    onInteraction: (/* nextOpenState */ Boolean, /* e */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => Unit = null,
-    onOpened: /* node */ HTMLElement => Unit = null,
-    onOpening: /* node */ HTMLElement => Unit = null,
-    openOnTargetFocus: js.UndefOr[Boolean] = js.undefined,
-    popoverClassName: String = null,
-    portalClassName: String = null,
-    portalContainer: HTMLElement = null,
-    position: PopoverPosition = null,
-    targetClassName: String = null,
-    targetProps: HTMLAttributes[HTMLElement] = null,
-    targetTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
-    transitionDuration: js.UndefOr[Double] = js.undefined,
-    usePortal: js.UndefOr[Boolean] = js.undefined,
-    wrapperTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null
-  ): IPopoverSharedProps = {
+  def apply(): IPopoverSharedProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (!js.isUndefined(canEscapeKeyClose)) __obj.updateDynamic("canEscapeKeyClose")(canEscapeKeyClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDismiss)) __obj.updateDynamic("captureDismiss")(captureDismiss.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultIsOpen)) __obj.updateDynamic("defaultIsOpen")(defaultIsOpen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverCloseDelay)) __obj.updateDynamic("hoverCloseDelay")(hoverCloseDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverOpenDelay)) __obj.updateDynamic("hoverOpenDelay")(hoverOpenDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inheritDarkTheme)) __obj.updateDynamic("inheritDarkTheme")(inheritDarkTheme.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction1(onClosed))
-    if (onClosing != null) __obj.updateDynamic("onClosing")(js.Any.fromFunction1(onClosing))
-    if (onInteraction != null) __obj.updateDynamic("onInteraction")(js.Any.fromFunction2(onInteraction))
-    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction1(onOpened))
-    if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction1(onOpening))
-    if (!js.isUndefined(openOnTargetFocus)) __obj.updateDynamic("openOnTargetFocus")(openOnTargetFocus.get.asInstanceOf[js.Any])
-    if (popoverClassName != null) __obj.updateDynamic("popoverClassName")(popoverClassName.asInstanceOf[js.Any])
-    if (portalClassName != null) __obj.updateDynamic("portalClassName")(portalClassName.asInstanceOf[js.Any])
-    if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (targetClassName != null) __obj.updateDynamic("targetClassName")(targetClassName.asInstanceOf[js.Any])
-    if (targetProps != null) __obj.updateDynamic("targetProps")(targetProps.asInstanceOf[js.Any])
-    if (targetTagName != null) __obj.updateDynamic("targetTagName")(targetTagName.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal.get.asInstanceOf[js.Any])
-    if (wrapperTagName != null) __obj.updateDynamic("wrapperTagName")(wrapperTagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPopoverSharedProps]
   }
+  @scala.inline
+  implicit class IPopoverSharedPropsOps[Self <: IPopoverSharedProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundary(value: Boundary): Self = this.set("boundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundary: Self = this.set("boundary", js.undefined)
+    @scala.inline
+    def setCaptureDismiss(value: Boolean): Self = this.set("captureDismiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureDismiss: Self = this.set("captureDismiss", js.undefined)
+    @scala.inline
+    def setDefaultIsOpen(value: Boolean): Self = this.set("defaultIsOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultIsOpen: Self = this.set("defaultIsOpen", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setHoverCloseDelay(value: Double): Self = this.set("hoverCloseDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverCloseDelay: Self = this.set("hoverCloseDelay", js.undefined)
+    @scala.inline
+    def setHoverOpenDelay(value: Double): Self = this.set("hoverOpenDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverOpenDelay: Self = this.set("hoverOpenDelay", js.undefined)
+    @scala.inline
+    def setInheritDarkTheme(value: Boolean): Self = this.set("inheritDarkTheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInheritDarkTheme: Self = this.set("inheritDarkTheme", js.undefined)
+    @scala.inline
+    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    @scala.inline
+    def setModifiers(value: Modifiers): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    @scala.inline
+    def setOnInteraction(
+      value: (/* nextOpenState */ Boolean, /* e */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => Unit
+    ): Self = this.set("onInteraction", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnInteraction: Self = this.set("onInteraction", js.undefined)
+    @scala.inline
+    def setOpenOnTargetFocus(value: Boolean): Self = this.set("openOnTargetFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenOnTargetFocus: Self = this.set("openOnTargetFocus", js.undefined)
+    @scala.inline
+    def setPopoverClassName(value: String): Self = this.set("popoverClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopoverClassName: Self = this.set("popoverClassName", js.undefined)
+    @scala.inline
+    def setPosition(value: PopoverPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setTargetClassName(value: String): Self = this.set("targetClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetClassName: Self = this.set("targetClassName", js.undefined)
+    @scala.inline
+    def setTargetProps(value: HTMLAttributes[HTMLElement]): Self = this.set("targetProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetProps: Self = this.set("targetProps", js.undefined)
+    @scala.inline
+    def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = this.set("targetTagName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetTagName: Self = this.set("targetTagName", js.undefined)
+    @scala.inline
+    def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = this.set("wrapperTagName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapperTagName: Self = this.set("wrapperTagName", js.undefined)
+  }
+  
 }
 

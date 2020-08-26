@@ -96,47 +96,96 @@ trait MsSmoothGroupSettings extends js.Object {
 
 object MsSmoothGroupSettings {
   @scala.inline
-  def apply(
-    Destination: OutputLocationRef,
-    AcquisitionPointId: string = null,
-    AudioOnlyTimecodeControl: SmoothGroupAudioOnlyTimecodeControl = null,
-    CertificateMode: SmoothGroupCertificateMode = null,
-    ConnectionRetryInterval: js.UndefOr[integerMin0] = js.undefined,
-    EventId: string = null,
-    EventIdMode: SmoothGroupEventIdMode = null,
-    EventStopBehavior: SmoothGroupEventStopBehavior = null,
-    FilecacheDuration: js.UndefOr[integerMin0] = js.undefined,
-    FragmentLength: js.UndefOr[integerMin1] = js.undefined,
-    InputLossAction: InputLossActionForMsSmoothOut = null,
-    NumRetries: js.UndefOr[integerMin0] = js.undefined,
-    RestartDelay: js.UndefOr[integerMin0] = js.undefined,
-    SegmentationMode: SmoothGroupSegmentationMode = null,
-    SendDelayMs: js.UndefOr[integerMin0Max10000] = js.undefined,
-    SparseTrackType: SmoothGroupSparseTrackType = null,
-    StreamManifestBehavior: SmoothGroupStreamManifestBehavior = null,
-    TimestampOffset: string = null,
-    TimestampOffsetMode: SmoothGroupTimestampOffsetMode = null
-  ): MsSmoothGroupSettings = {
+  def apply(Destination: OutputLocationRef): MsSmoothGroupSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any])
-    if (AcquisitionPointId != null) __obj.updateDynamic("AcquisitionPointId")(AcquisitionPointId.asInstanceOf[js.Any])
-    if (AudioOnlyTimecodeControl != null) __obj.updateDynamic("AudioOnlyTimecodeControl")(AudioOnlyTimecodeControl.asInstanceOf[js.Any])
-    if (CertificateMode != null) __obj.updateDynamic("CertificateMode")(CertificateMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConnectionRetryInterval)) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval.get.asInstanceOf[js.Any])
-    if (EventId != null) __obj.updateDynamic("EventId")(EventId.asInstanceOf[js.Any])
-    if (EventIdMode != null) __obj.updateDynamic("EventIdMode")(EventIdMode.asInstanceOf[js.Any])
-    if (EventStopBehavior != null) __obj.updateDynamic("EventStopBehavior")(EventStopBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(FilecacheDuration)) __obj.updateDynamic("FilecacheDuration")(FilecacheDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FragmentLength)) __obj.updateDynamic("FragmentLength")(FragmentLength.get.asInstanceOf[js.Any])
-    if (InputLossAction != null) __obj.updateDynamic("InputLossAction")(InputLossAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumRetries)) __obj.updateDynamic("NumRetries")(NumRetries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RestartDelay)) __obj.updateDynamic("RestartDelay")(RestartDelay.get.asInstanceOf[js.Any])
-    if (SegmentationMode != null) __obj.updateDynamic("SegmentationMode")(SegmentationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(SendDelayMs)) __obj.updateDynamic("SendDelayMs")(SendDelayMs.get.asInstanceOf[js.Any])
-    if (SparseTrackType != null) __obj.updateDynamic("SparseTrackType")(SparseTrackType.asInstanceOf[js.Any])
-    if (StreamManifestBehavior != null) __obj.updateDynamic("StreamManifestBehavior")(StreamManifestBehavior.asInstanceOf[js.Any])
-    if (TimestampOffset != null) __obj.updateDynamic("TimestampOffset")(TimestampOffset.asInstanceOf[js.Any])
-    if (TimestampOffsetMode != null) __obj.updateDynamic("TimestampOffsetMode")(TimestampOffsetMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MsSmoothGroupSettings]
   }
+  @scala.inline
+  implicit class MsSmoothGroupSettingsOps[Self <: MsSmoothGroupSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestination(value: OutputLocationRef): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcquisitionPointId(value: string): Self = this.set("AcquisitionPointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcquisitionPointId: Self = this.set("AcquisitionPointId", js.undefined)
+    @scala.inline
+    def setAudioOnlyTimecodeControl(value: SmoothGroupAudioOnlyTimecodeControl): Self = this.set("AudioOnlyTimecodeControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioOnlyTimecodeControl: Self = this.set("AudioOnlyTimecodeControl", js.undefined)
+    @scala.inline
+    def setCertificateMode(value: SmoothGroupCertificateMode): Self = this.set("CertificateMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateMode: Self = this.set("CertificateMode", js.undefined)
+    @scala.inline
+    def setConnectionRetryInterval(value: integerMin0): Self = this.set("ConnectionRetryInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionRetryInterval: Self = this.set("ConnectionRetryInterval", js.undefined)
+    @scala.inline
+    def setEventId(value: string): Self = this.set("EventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventId: Self = this.set("EventId", js.undefined)
+    @scala.inline
+    def setEventIdMode(value: SmoothGroupEventIdMode): Self = this.set("EventIdMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventIdMode: Self = this.set("EventIdMode", js.undefined)
+    @scala.inline
+    def setEventStopBehavior(value: SmoothGroupEventStopBehavior): Self = this.set("EventStopBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventStopBehavior: Self = this.set("EventStopBehavior", js.undefined)
+    @scala.inline
+    def setFilecacheDuration(value: integerMin0): Self = this.set("FilecacheDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilecacheDuration: Self = this.set("FilecacheDuration", js.undefined)
+    @scala.inline
+    def setFragmentLength(value: integerMin1): Self = this.set("FragmentLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFragmentLength: Self = this.set("FragmentLength", js.undefined)
+    @scala.inline
+    def setInputLossAction(value: InputLossActionForMsSmoothOut): Self = this.set("InputLossAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputLossAction: Self = this.set("InputLossAction", js.undefined)
+    @scala.inline
+    def setNumRetries(value: integerMin0): Self = this.set("NumRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumRetries: Self = this.set("NumRetries", js.undefined)
+    @scala.inline
+    def setRestartDelay(value: integerMin0): Self = this.set("RestartDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestartDelay: Self = this.set("RestartDelay", js.undefined)
+    @scala.inline
+    def setSegmentationMode(value: SmoothGroupSegmentationMode): Self = this.set("SegmentationMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentationMode: Self = this.set("SegmentationMode", js.undefined)
+    @scala.inline
+    def setSendDelayMs(value: integerMin0Max10000): Self = this.set("SendDelayMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendDelayMs: Self = this.set("SendDelayMs", js.undefined)
+    @scala.inline
+    def setSparseTrackType(value: SmoothGroupSparseTrackType): Self = this.set("SparseTrackType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSparseTrackType: Self = this.set("SparseTrackType", js.undefined)
+    @scala.inline
+    def setStreamManifestBehavior(value: SmoothGroupStreamManifestBehavior): Self = this.set("StreamManifestBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamManifestBehavior: Self = this.set("StreamManifestBehavior", js.undefined)
+    @scala.inline
+    def setTimestampOffset(value: string): Self = this.set("TimestampOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampOffset: Self = this.set("TimestampOffset", js.undefined)
+    @scala.inline
+    def setTimestampOffsetMode(value: SmoothGroupTimestampOffsetMode): Self = this.set("TimestampOffsetMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampOffsetMode: Self = this.set("TimestampOffsetMode", js.undefined)
+  }
+  
 }
 

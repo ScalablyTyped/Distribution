@@ -53,22 +53,46 @@ trait SchemaBigtableColumn extends js.Object {
 
 object SchemaBigtableColumn {
   @scala.inline
-  def apply(
-    encoding: String = null,
-    fieldName: String = null,
-    onlyReadLatest: js.UndefOr[Boolean] = js.undefined,
-    qualifierEncoded: String = null,
-    qualifierString: String = null,
-    `type`: String = null
-  ): SchemaBigtableColumn = {
+  def apply(): SchemaBigtableColumn = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyReadLatest)) __obj.updateDynamic("onlyReadLatest")(onlyReadLatest.get.asInstanceOf[js.Any])
-    if (qualifierEncoded != null) __obj.updateDynamic("qualifierEncoded")(qualifierEncoded.asInstanceOf[js.Any])
-    if (qualifierString != null) __obj.updateDynamic("qualifierString")(qualifierString.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBigtableColumn]
   }
+  @scala.inline
+  implicit class SchemaBigtableColumnOps[Self <: SchemaBigtableColumn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldName: Self = this.set("fieldName", js.undefined)
+    @scala.inline
+    def setOnlyReadLatest(value: Boolean): Self = this.set("onlyReadLatest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyReadLatest: Self = this.set("onlyReadLatest", js.undefined)
+    @scala.inline
+    def setQualifierEncoded(value: String): Self = this.set("qualifierEncoded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualifierEncoded: Self = this.set("qualifierEncoded", js.undefined)
+    @scala.inline
+    def setQualifierString(value: String): Self = this.set("qualifierString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualifierString: Self = this.set("qualifierString", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

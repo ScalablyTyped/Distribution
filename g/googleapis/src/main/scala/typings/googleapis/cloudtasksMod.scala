@@ -52,7 +52,7 @@ object cloudtasksMod extends js.Object {
     @js.native
     object v2
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Cloudtasks]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudtasks]
             ]
     
     @js.native
@@ -60,7 +60,7 @@ object cloudtasksMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Cloudtasks
               ]
             ]
@@ -70,7 +70,7 @@ object cloudtasksMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Cloudtasks
               ]
             ]

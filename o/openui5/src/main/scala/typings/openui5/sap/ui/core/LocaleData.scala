@@ -316,6 +316,7 @@ trait LocaleData extends Object {
     * @returns the relative format pattern
     */
   def getRelativePattern(sScale: String, iDiff: Double): String = js.native
+  def getRelativePattern(sScale: String, iDiff: Double, bFuture: js.UndefOr[scala.Nothing], sStyle: String): String = js.native
   def getRelativePattern(sScale: String, iDiff: Double, bFuture: Boolean): String = js.native
   def getRelativePattern(sScale: String, iDiff: Double, bFuture: Boolean, sStyle: String): String = js.native
   /**

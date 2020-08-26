@@ -22,15 +22,32 @@ trait InstanceFleetModifyConfig extends js.Object {
 
 object InstanceFleetModifyConfig {
   @scala.inline
-  def apply(
-    InstanceFleetId: InstanceFleetId,
-    TargetOnDemandCapacity: js.UndefOr[WholeNumber] = js.undefined,
-    TargetSpotCapacity: js.UndefOr[WholeNumber] = js.undefined
-  ): InstanceFleetModifyConfig = {
+  def apply(InstanceFleetId: InstanceFleetId): InstanceFleetModifyConfig = {
     val __obj = js.Dynamic.literal(InstanceFleetId = InstanceFleetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(TargetOnDemandCapacity)) __obj.updateDynamic("TargetOnDemandCapacity")(TargetOnDemandCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TargetSpotCapacity)) __obj.updateDynamic("TargetSpotCapacity")(TargetSpotCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceFleetModifyConfig]
   }
+  @scala.inline
+  implicit class InstanceFleetModifyConfigOps[Self <: InstanceFleetModifyConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceFleetId(value: InstanceFleetId): Self = this.set("InstanceFleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetOnDemandCapacity(value: WholeNumber): Self = this.set("TargetOnDemandCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetOnDemandCapacity: Self = this.set("TargetOnDemandCapacity", js.undefined)
+    @scala.inline
+    def setTargetSpotCapacity(value: WholeNumber): Self = this.set("TargetSpotCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetSpotCapacity: Self = this.set("TargetSpotCapacity", js.undefined)
+  }
+  
 }
 

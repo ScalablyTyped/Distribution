@@ -18,11 +18,32 @@ trait ListTopicRuleDestinationsResponse extends js.Object {
 
 object ListTopicRuleDestinationsResponse {
   @scala.inline
-  def apply(destinationSummaries: TopicRuleDestinationSummaries = null, nextToken: NextToken = null): ListTopicRuleDestinationsResponse = {
+  def apply(): ListTopicRuleDestinationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (destinationSummaries != null) __obj.updateDynamic("destinationSummaries")(destinationSummaries.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTopicRuleDestinationsResponse]
   }
+  @scala.inline
+  implicit class ListTopicRuleDestinationsResponseOps[Self <: ListTopicRuleDestinationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationSummariesVarargs(value: TopicRuleDestinationSummary*): Self = this.set("destinationSummaries", js.Array(value :_*))
+    @scala.inline
+    def setDestinationSummaries(value: TopicRuleDestinationSummaries): Self = this.set("destinationSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationSummaries: Self = this.set("destinationSummaries", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

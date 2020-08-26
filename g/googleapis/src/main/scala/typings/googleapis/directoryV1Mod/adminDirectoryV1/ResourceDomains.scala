@@ -28,6 +28,7 @@ class ResourceDomains protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDomainsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDomainsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -52,6 +53,7 @@ class ResourceDomains protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDomains] = js.native
   def get(callback: BodyResponseCallback[SchemaDomains]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomains] = js.native
   def get(params: ParamsResourceDomainsGet): GaxiosPromise[SchemaDomains] = js.native
   def get(params: ParamsResourceDomainsGet, callback: BodyResponseCallback[SchemaDomains]): Unit = js.native
   def get(
@@ -80,6 +82,7 @@ class ResourceDomains protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaDomains] = js.native
   def insert(callback: BodyResponseCallback[SchemaDomains]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomains] = js.native
   def insert(params: ParamsResourceDomainsInsert): GaxiosPromise[SchemaDomains] = js.native
   def insert(params: ParamsResourceDomainsInsert, callback: BodyResponseCallback[SchemaDomains]): Unit = js.native
   def insert(
@@ -107,6 +110,7 @@ class ResourceDomains protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaDomains2] = js.native
   def list(callback: BodyResponseCallback[SchemaDomains2]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomains2] = js.native
   def list(params: ParamsResourceDomainsList): GaxiosPromise[SchemaDomains2] = js.native
   def list(params: ParamsResourceDomainsList, callback: BodyResponseCallback[SchemaDomains2]): Unit = js.native
   def list(

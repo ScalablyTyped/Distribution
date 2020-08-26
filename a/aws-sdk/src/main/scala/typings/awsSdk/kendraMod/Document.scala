@@ -35,23 +35,52 @@ trait Document extends js.Object {
 
 object Document {
   @scala.inline
-  def apply(
-    Id: DocumentId,
-    AccessControlList: PrincipalList = null,
-    Attributes: DocumentAttributeList = null,
-    Blob: _Blob = null,
-    ContentType: ContentType = null,
-    S3Path: S3Path = null,
-    Title: Title = null
-  ): Document = {
+  def apply(Id: DocumentId): Document = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-    if (AccessControlList != null) __obj.updateDynamic("AccessControlList")(AccessControlList.asInstanceOf[js.Any])
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (Blob != null) __obj.updateDynamic("Blob")(Blob.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (S3Path != null) __obj.updateDynamic("S3Path")(S3Path.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
+  @scala.inline
+  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: DocumentId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessControlListVarargs(value: Principal*): Self = this.set("AccessControlList", js.Array(value :_*))
+    @scala.inline
+    def setAccessControlList(value: PrincipalList): Self = this.set("AccessControlList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessControlList: Self = this.set("AccessControlList", js.undefined)
+    @scala.inline
+    def setAttributesVarargs(value: DocumentAttribute*): Self = this.set("Attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: DocumentAttributeList): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setBlob(value: _Blob): Self = this.set("Blob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlob: Self = this.set("Blob", js.undefined)
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setS3Path(value: S3Path): Self = this.set("S3Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Path: Self = this.set("S3Path", js.undefined)
+    @scala.inline
+    def setTitle(value: Title): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+  }
+  
 }
 

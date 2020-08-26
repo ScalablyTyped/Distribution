@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "Interpolation")
 @js.native
 class Interpolation protected ()
-  extends typings.angularCompiler.publicApiMod.Interpolation {
+  extends typings.angularCompiler.compilerMod.Interpolation {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

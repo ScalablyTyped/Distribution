@@ -10,67 +10,92 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
+@js.native
 trait ChartErrorBarsLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies if error bars have an end style cap.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endStyleCap: js.UndefOr[Boolean] = js.undefined
+  var endStyleCap: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies the formatting type of the error bars.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var format: js.UndefOr[ChartErrorBarsFormatLoadOptions] = js.undefined
+  var format: js.UndefOr[ChartErrorBarsFormatLoadOptions] = js.native
   /**
     *
     * Specifies which parts of the error bars to include.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var include: js.UndefOr[Boolean] = js.undefined
+  var include: js.UndefOr[Boolean] = js.native
   /**
     *
     * The type of range marked by the error bars.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: js.UndefOr[Boolean] = js.undefined
+  var `type`: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies whether the error bars are displayed.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object ChartErrorBarsLoadOptions {
   @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    endStyleCap: js.UndefOr[Boolean] = js.undefined,
-    format: ChartErrorBarsFormatLoadOptions = null,
-    include: js.UndefOr[Boolean] = js.undefined,
-    `type`: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): ChartErrorBarsLoadOptions = {
+  def apply(): ChartErrorBarsLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(endStyleCap)) __obj.updateDynamic("endStyleCap")(endStyleCap.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartErrorBarsLoadOptions]
   }
+  @scala.inline
+  implicit class ChartErrorBarsLoadOptionsOps[Self <: ChartErrorBarsLoadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$all: Self = this.set("$all", js.undefined)
+    @scala.inline
+    def setEndStyleCap(value: Boolean): Self = this.set("endStyleCap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndStyleCap: Self = this.set("endStyleCap", js.undefined)
+    @scala.inline
+    def setFormat(value: ChartErrorBarsFormatLoadOptions): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setInclude(value: Boolean): Self = this.set("include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude: Self = this.set("include", js.undefined)
+    @scala.inline
+    def setType(value: Boolean): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

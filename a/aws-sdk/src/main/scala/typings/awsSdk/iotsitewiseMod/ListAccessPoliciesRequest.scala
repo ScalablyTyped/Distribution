@@ -34,22 +34,46 @@ trait ListAccessPoliciesRequest extends js.Object {
 
 object ListAccessPoliciesRequest {
   @scala.inline
-  def apply(
-    identityId: IdentityId = null,
-    identityType: IdentityType = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    resourceId: ID = null,
-    resourceType: ResourceType = null
-  ): ListAccessPoliciesRequest = {
+  def apply(): ListAccessPoliciesRequest = {
     val __obj = js.Dynamic.literal()
-    if (identityId != null) __obj.updateDynamic("identityId")(identityId.asInstanceOf[js.Any])
-    if (identityType != null) __obj.updateDynamic("identityType")(identityType.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAccessPoliciesRequest]
   }
+  @scala.inline
+  implicit class ListAccessPoliciesRequestOps[Self <: ListAccessPoliciesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentityId(value: IdentityId): Self = this.set("identityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityId: Self = this.set("identityId", js.undefined)
+    @scala.inline
+    def setIdentityType(value: IdentityType): Self = this.set("identityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityType: Self = this.set("identityType", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setResourceId(value: ID): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+  }
+  
 }
 

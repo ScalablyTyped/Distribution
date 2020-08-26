@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   * contain any URL, which will be treated as the target of a hierarchy link."Children", which is of type {@link HierarchyDataReadAccess} or of type
   * {@link HierarchyDataReadWriteAccess} , depending on the type of the node. This member provides access to the children of a node.
   */
+@js.native
 trait HierarchyDataReadAccess
   extends XNameAccess
      with XHierarchicalNameAccess

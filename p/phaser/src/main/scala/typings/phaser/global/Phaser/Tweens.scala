@@ -574,6 +574,24 @@ object Tweens extends js.Object {
       */
     val TWEEN_START: js.Any = js.native
     /**
+      * The Tween Stop Event.
+      * 
+      * This event is dispatched by a Tween when it is stopped.
+      * 
+      * Listen to it from a Tween instance using `Tween.on('stop', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var tween = this.tweens.add({
+      *     targets: image,
+      *     x: 500,
+      *     ease: 'Power1',
+      *     duration: 3000
+      * });
+      * tween.on('stop', listener);
+      * ```
+      */
+    val TWEEN_STOP: js.Any = js.native
+    /**
       * The Tween Update Event.
       * 
       * This event is dispatched by a Tween every time it updates _any_ of the properties it is tweening.

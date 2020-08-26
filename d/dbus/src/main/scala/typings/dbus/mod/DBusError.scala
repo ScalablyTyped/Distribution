@@ -10,9 +10,5 @@ import scala.scalajs.js.annotation._
 class DBusError protected () extends Error {
   def this(name: String, message: String) = this()
   val dbusName: String = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

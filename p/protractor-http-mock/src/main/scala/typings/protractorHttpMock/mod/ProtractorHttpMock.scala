@@ -20,7 +20,15 @@ trait ProtractorHttpMock extends js.Object {
     * @param skipDefaults Set true to skip loading of default mocks.
     */
   def apply(): ProtractorHttpMock = js.native
+  def apply(mocks: js.UndefOr[scala.Nothing], plugins: js.UndefOr[scala.Nothing], skipDefaults: Boolean): ProtractorHttpMock = js.native
+  def apply(mocks: js.UndefOr[scala.Nothing], plugins: js.Array[Plugin1[_] | (Plugin2[_, _]) | String]): ProtractorHttpMock = js.native
+  def apply(
+    mocks: js.UndefOr[scala.Nothing],
+    plugins: js.Array[Plugin1[_] | (Plugin2[_, _]) | String],
+    skipDefaults: Boolean
+  ): ProtractorHttpMock = js.native
   def apply(mocks: js.Array[AllRequests | String]): ProtractorHttpMock = js.native
+  def apply(mocks: js.Array[AllRequests | String], plugins: js.UndefOr[scala.Nothing], skipDefaults: Boolean): ProtractorHttpMock = js.native
   def apply(mocks: js.Array[AllRequests | String], plugins: js.Array[Plugin1[_] | (Plugin2[_, _]) | String]): ProtractorHttpMock = js.native
   def apply(
     mocks: js.Array[AllRequests | String],

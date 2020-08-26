@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object stringifyString extends js.Object {
   def apply(item: Scalar, ctx: StringifyContext): String = js.native
+  def apply(
+    item: Scalar,
+    ctx: StringifyContext,
+    onComment: js.UndefOr[scala.Nothing],
+    onChompKeep: js.Function0[Unit]
+  ): String = js.native
   def apply(item: Scalar, ctx: StringifyContext, onComment: js.Function0[Unit]): String = js.native
   def apply(
     item: Scalar,

@@ -43,14 +43,41 @@ object Member {
     Email: Email,
     MasterId: String,
     RelationshipStatus: String,
-    UpdatedAt: String,
-    DetectorId: DetectorId = null,
-    InvitedAt: String = null
+    UpdatedAt: String
   ): Member = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], MasterId = MasterId.asInstanceOf[js.Any], RelationshipStatus = RelationshipStatus.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
-    if (DetectorId != null) __obj.updateDynamic("DetectorId")(DetectorId.asInstanceOf[js.Any])
-    if (InvitedAt != null) __obj.updateDynamic("InvitedAt")(InvitedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Member]
   }
+  @scala.inline
+  implicit class MemberOps[Self <: Member] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmail(value: Email): Self = this.set("Email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMasterId(value: String): Self = this.set("MasterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelationshipStatus(value: String): Self = this.set("RelationshipStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatedAt(value: String): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorId: Self = this.set("DetectorId", js.undefined)
+    @scala.inline
+    def setInvitedAt(value: String): Self = this.set("InvitedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitedAt: Self = this.set("InvitedAt", js.undefined)
+  }
+  
 }
 

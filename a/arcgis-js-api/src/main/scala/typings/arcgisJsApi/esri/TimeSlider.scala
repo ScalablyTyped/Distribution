@@ -3,7 +3,10 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`cumulative-from-end`
 import typings.arcgisJsApi.arcgisJsApiStrings.`cumulative-from-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.`time-window`
+import typings.arcgisJsApi.arcgisJsApiStrings.auto
+import typings.arcgisJsApi.arcgisJsApiStrings.compact
 import typings.arcgisJsApi.arcgisJsApiStrings.instant
+import typings.arcgisJsApi.arcgisJsApiStrings.wide
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,6 +14,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TimeSlider extends Widget_ {
+  /**
+    * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#disabled)
+    *
+    * @default false
+    */
+  var disabled: Boolean = js.native
   /**
     * Lists the specific locations on the timeline where handle(s) will snap to when manipulated.
     *
@@ -31,6 +42,21 @@ trait TimeSlider extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#iconClass)
     */
   val iconClass: String = js.native
+  /**
+    * Determines the layout used by the TimeSlider widget.  Possible values are listed below:
+    *
+    * | Value   | Description |
+    * | ---     | --- |
+    * | auto    | Automatically uses the "compact" layout when the widget width is less than 858 pixels. Otherwise the "wide" layout it used. |
+    * | compact | Widget elements are oriented vertically. This layout is better suited to narrower widths. |
+    * | wide    | Widget elements are oriented laterally. This thinner design is better suited to wide applications. |
+    *
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#layout)
+    *
+    * @default auto
+    */
+  var layout: auto | compact | wide = js.native
   /**
     * When `true`, the time slider will play its animation in a loop.
     *
@@ -71,6 +97,14 @@ trait TimeSlider extends Widget_ {
     * @default { count : 10 }
     */
   var stops: StopsByDates | StopsByCount | StopsByInterval = js.native
+  /**
+    * When set, overrides the default TimeSlider ticks labelling system. Please refer to [TickConfig](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig) for detailed documentation on how to configure tick placement, style, and behavior.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#tickConfigs)
+    *
+    * @default null
+    */
+  var tickConfigs: js.Array[TickConfig] = js.native
   /**
     * The current time extent of the time slider. This property can be watched for updates and used to update the time extent property in queries and/or the layer filters and effects.
     *

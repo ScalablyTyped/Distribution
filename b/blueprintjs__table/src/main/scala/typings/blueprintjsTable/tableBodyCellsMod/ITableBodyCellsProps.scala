@@ -14,6 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITableBodyCellsProps
   extends IRowIndices
      with IColumnIndices
@@ -21,25 +22,25 @@ trait ITableBodyCellsProps
   /**
     * A cell renderer for the cells in the body.
     */
-  var cellRenderer: ICellRenderer
+  var cellRenderer: ICellRenderer = js.native
   /**
     * The coordinates of the currently focused cell, for setting the "isFocused" prop on cells.
     */
-  var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.undefined
+  var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.native
   /**
     * The grid computes sizes of cells, rows, or columns from the
     * configurable `columnWidths` and `rowHeights`.
     */
-  var grid: Grid
+  var grid: Grid = js.native
   /**
     * If true, all `Cell`s render their loading state except for those who have
     * their `loading` prop explicitly set to false.
     */
-  var loading: Boolean
+  var loading: Boolean = js.native
   /**
     * An optional callback invoked when all cells in view have completely rendered.
     */
-  var onCompleteRender: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onCompleteRender: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Dictates how cells should be rendered. This component doesn't support
     * `RenderMode.BATCH_ON_UPDATE`, because there are actually multiple updates
@@ -47,13 +48,13 @@ trait ITableBodyCellsProps
     * "mounted"; thus, we let higher components tell us when to switch modes.
     * @default RenderMode.BATCH
     */
-  var renderMode: js.UndefOr[BATCH | NONE] = js.undefined
+  var renderMode: js.UndefOr[BATCH | NONE] = js.native
   /**
     * The `Rect` bounds of the visible viewport with respect to its parent
     * scrollable pane. While not directly used by the component, this prop is
     * necessary for shouldComponentUpdate logic to run properly.
     */
-  var viewportRect: Rect
+  var viewportRect: Rect = js.native
 }
 
 object ITableBodyCellsProps {
@@ -66,18 +67,43 @@ object ITableBodyCellsProps {
     loading: Boolean,
     rowIndexEnd: Double,
     rowIndexStart: Double,
-    viewportRect: Rect,
-    className: String = null,
-    focusedCell: IFocusedCellCoordinates = null,
-    onCompleteRender: () => Unit = null,
-    renderMode: BATCH | NONE = null
+    viewportRect: Rect
   ): ITableBodyCellsProps = {
     val __obj = js.Dynamic.literal(cellRenderer = js.Any.fromFunction2(cellRenderer), columnIndexEnd = columnIndexEnd.asInstanceOf[js.Any], columnIndexStart = columnIndexStart.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], rowIndexEnd = rowIndexEnd.asInstanceOf[js.Any], rowIndexStart = rowIndexStart.asInstanceOf[js.Any], viewportRect = viewportRect.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (focusedCell != null) __obj.updateDynamic("focusedCell")(focusedCell.asInstanceOf[js.Any])
-    if (onCompleteRender != null) __obj.updateDynamic("onCompleteRender")(js.Any.fromFunction0(onCompleteRender))
-    if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableBodyCellsProps]
   }
+  @scala.inline
+  implicit class ITableBodyCellsPropsOps[Self <: ITableBodyCellsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement): Self = this.set("cellRenderer", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGrid(value: Grid): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoading(value: Boolean): Self = this.set("loading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setViewportRect(value: Rect): Self = this.set("viewportRect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFocusedCell(value: IFocusedCellCoordinates): Self = this.set("focusedCell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusedCell: Self = this.set("focusedCell", js.undefined)
+    @scala.inline
+    def setOnCompleteRender(value: () => Unit): Self = this.set("onCompleteRender", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnCompleteRender: Self = this.set("onCompleteRender", js.undefined)
+    @scala.inline
+    def setRenderMode(value: BATCH | NONE): Self = this.set("renderMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderMode: Self = this.set("renderMode", js.undefined)
+  }
+  
 }
 

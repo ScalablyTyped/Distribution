@@ -51,28 +51,58 @@ trait SchemaGoogleCloudMlV1OperationMetadata extends js.Object {
 
 object SchemaGoogleCloudMlV1OperationMetadata {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    endTime: String = null,
-    isCancellationRequested: js.UndefOr[Boolean] = js.undefined,
-    labels: StringDictionary[String] = null,
-    modelName: String = null,
-    operationType: String = null,
-    projectNumber: String = null,
-    startTime: String = null,
-    version: SchemaGoogleCloudMlV1Version = null
-  ): SchemaGoogleCloudMlV1OperationMetadata = {
+  def apply(): SchemaGoogleCloudMlV1OperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCancellationRequested)) __obj.updateDynamic("isCancellationRequested")(isCancellationRequested.get.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (modelName != null) __obj.updateDynamic("modelName")(modelName.asInstanceOf[js.Any])
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
-    if (projectNumber != null) __obj.updateDynamic("projectNumber")(projectNumber.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1OperationMetadata]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudMlV1OperationMetadataOps[Self <: SchemaGoogleCloudMlV1OperationMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setIsCancellationRequested(value: Boolean): Self = this.set("isCancellationRequested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsCancellationRequested: Self = this.set("isCancellationRequested", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setModelName(value: String): Self = this.set("modelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelName: Self = this.set("modelName", js.undefined)
+    @scala.inline
+    def setOperationType(value: String): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    @scala.inline
+    def setProjectNumber(value: String): Self = this.set("projectNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectNumber: Self = this.set("projectNumber", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setVersion(value: SchemaGoogleCloudMlV1Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

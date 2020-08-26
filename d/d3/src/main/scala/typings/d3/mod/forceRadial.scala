@@ -12,6 +12,16 @@ object forceRadial extends js.Object {
   def apply[NodeDatum /* <: SimulationNodeDatum */](radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceRadial_[NodeDatum] = js.native
   def apply[NodeDatum /* <: SimulationNodeDatum */](
     radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
+    x: js.UndefOr[scala.Nothing],
+    y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
+  ): ForceRadial_[NodeDatum] = js.native
+  def apply[NodeDatum /* <: SimulationNodeDatum */](
+    radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
+    x: js.UndefOr[scala.Nothing],
+    y: Double
+  ): ForceRadial_[NodeDatum] = js.native
+  def apply[NodeDatum /* <: SimulationNodeDatum */](
+    radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double],
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
   ): ForceRadial_[NodeDatum] = js.native
   def apply[NodeDatum /* <: SimulationNodeDatum */](
@@ -39,6 +49,12 @@ object forceRadial extends js.Object {
     y: Double
   ): ForceRadial_[NodeDatum] = js.native
   def apply[NodeDatum /* <: SimulationNodeDatum */](radius: Double): ForceRadial_[NodeDatum] = js.native
+  def apply[NodeDatum /* <: SimulationNodeDatum */](
+    radius: Double,
+    x: js.UndefOr[scala.Nothing],
+    y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]
+  ): ForceRadial_[NodeDatum] = js.native
+  def apply[NodeDatum /* <: SimulationNodeDatum */](radius: Double, x: js.UndefOr[scala.Nothing], y: Double): ForceRadial_[NodeDatum] = js.native
   def apply[NodeDatum /* <: SimulationNodeDatum */](
     radius: Double,
     x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]

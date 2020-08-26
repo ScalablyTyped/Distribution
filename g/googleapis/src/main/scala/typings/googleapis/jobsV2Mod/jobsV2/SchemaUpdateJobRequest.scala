@@ -43,18 +43,38 @@ trait SchemaUpdateJobRequest extends js.Object {
 
 object SchemaUpdateJobRequest {
   @scala.inline
-  def apply(
-    disableStreetAddressResolution: js.UndefOr[Boolean] = js.undefined,
-    job: SchemaJob = null,
-    processingOptions: SchemaJobProcessingOptions = null,
-    updateJobFields: String = null
-  ): SchemaUpdateJobRequest = {
+  def apply(): SchemaUpdateJobRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableStreetAddressResolution)) __obj.updateDynamic("disableStreetAddressResolution")(disableStreetAddressResolution.get.asInstanceOf[js.Any])
-    if (job != null) __obj.updateDynamic("job")(job.asInstanceOf[js.Any])
-    if (processingOptions != null) __obj.updateDynamic("processingOptions")(processingOptions.asInstanceOf[js.Any])
-    if (updateJobFields != null) __obj.updateDynamic("updateJobFields")(updateJobFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateJobRequest]
   }
+  @scala.inline
+  implicit class SchemaUpdateJobRequestOps[Self <: SchemaUpdateJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisableStreetAddressResolution(value: Boolean): Self = this.set("disableStreetAddressResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableStreetAddressResolution: Self = this.set("disableStreetAddressResolution", js.undefined)
+    @scala.inline
+    def setJob(value: SchemaJob): Self = this.set("job", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJob: Self = this.set("job", js.undefined)
+    @scala.inline
+    def setProcessingOptions(value: SchemaJobProcessingOptions): Self = this.set("processingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingOptions: Self = this.set("processingOptions", js.undefined)
+    @scala.inline
+    def setUpdateJobFields(value: String): Self = this.set("updateJobFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateJobFields: Self = this.set("updateJobFields", js.undefined)
+  }
+  
 }
 

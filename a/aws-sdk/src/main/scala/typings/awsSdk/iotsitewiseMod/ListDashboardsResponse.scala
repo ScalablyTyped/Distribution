@@ -18,10 +18,30 @@ trait ListDashboardsResponse extends js.Object {
 
 object ListDashboardsResponse {
   @scala.inline
-  def apply(dashboardSummaries: DashboardSummaries, nextToken: NextToken = null): ListDashboardsResponse = {
+  def apply(dashboardSummaries: DashboardSummaries): ListDashboardsResponse = {
     val __obj = js.Dynamic.literal(dashboardSummaries = dashboardSummaries.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDashboardsResponse]
   }
+  @scala.inline
+  implicit class ListDashboardsResponseOps[Self <: ListDashboardsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDashboardSummariesVarargs(value: DashboardSummary*): Self = this.set("dashboardSummaries", js.Array(value :_*))
+    @scala.inline
+    def setDashboardSummaries(value: DashboardSummaries): Self = this.set("dashboardSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

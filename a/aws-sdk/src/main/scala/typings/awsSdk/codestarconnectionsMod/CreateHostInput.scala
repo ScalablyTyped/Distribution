@@ -26,15 +26,32 @@ trait CreateHostInput extends js.Object {
 
 object CreateHostInput {
   @scala.inline
-  def apply(
-    Name: HostName,
-    ProviderEndpoint: Url,
-    ProviderType: ProviderType,
-    VpcConfiguration: VpcConfiguration = null
-  ): CreateHostInput = {
+  def apply(Name: HostName, ProviderEndpoint: Url, ProviderType: ProviderType): CreateHostInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ProviderEndpoint = ProviderEndpoint.asInstanceOf[js.Any], ProviderType = ProviderType.asInstanceOf[js.Any])
-    if (VpcConfiguration != null) __obj.updateDynamic("VpcConfiguration")(VpcConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHostInput]
   }
+  @scala.inline
+  implicit class CreateHostInputOps[Self <: CreateHostInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: HostName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProviderEndpoint(value: Url): Self = this.set("ProviderEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProviderType(value: ProviderType): Self = this.set("ProviderType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcConfiguration(value: VpcConfiguration): Self = this.set("VpcConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfiguration: Self = this.set("VpcConfiguration", js.undefined)
+  }
+  
 }
 

@@ -94,6 +94,7 @@ trait Overrides[T] extends js.Object {
     ]
   ): Immutable[TTarget, js.Object] = js.native
   def slice(): Immutable[js.Array[T], js.Object] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): Immutable[js.Array[T], js.Object] = js.native
   def slice(start: Double): Immutable[js.Array[T], js.Object] = js.native
   def slice(start: Double, end: Double): Immutable[js.Array[T], js.Object] = js.native
 }

@@ -18,10 +18,30 @@ trait Condition extends js.Object {
 
 object Condition {
   @scala.inline
-  def apply(ComparisonOperator: ComparisonOperator, AttributeValueList: AttributeValueList = null): Condition = {
+  def apply(ComparisonOperator: ComparisonOperator): Condition = {
     val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any])
-    if (AttributeValueList != null) __obj.updateDynamic("AttributeValueList")(AttributeValueList.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition]
   }
+  @scala.inline
+  implicit class ConditionOps[Self <: Condition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparisonOperator(value: ComparisonOperator): Self = this.set("ComparisonOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributeValueListVarargs(value: AttributeValue*): Self = this.set("AttributeValueList", js.Array(value :_*))
+    @scala.inline
+    def setAttributeValueList(value: AttributeValueList): Self = this.set("AttributeValueList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeValueList: Self = this.set("AttributeValueList", js.undefined)
+  }
+  
 }
 

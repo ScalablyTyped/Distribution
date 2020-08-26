@@ -4,31 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AppDetails extends js.Object {
   /** The user-visible support email for this app. */
-  var contactEmail: js.UndefOr[String] = js.undefined
+  var contactEmail: js.UndefOr[String] = js.native
   /** The user-visible support telephone number for this app. */
-  var contactPhone: js.UndefOr[String] = js.undefined
+  var contactPhone: js.UndefOr[String] = js.native
   /** The user-visible website for this app. */
-  var contactWebsite: js.UndefOr[String] = js.undefined
+  var contactWebsite: js.UndefOr[String] = js.native
   /** Default language code, in BCP 47 format (eg "en-US"). */
-  var defaultLanguage: js.UndefOr[String] = js.undefined
+  var defaultLanguage: js.UndefOr[String] = js.native
 }
 
 object AppDetails {
   @scala.inline
-  def apply(
-    contactEmail: String = null,
-    contactPhone: String = null,
-    contactWebsite: String = null,
-    defaultLanguage: String = null
-  ): AppDetails = {
+  def apply(): AppDetails = {
     val __obj = js.Dynamic.literal()
-    if (contactEmail != null) __obj.updateDynamic("contactEmail")(contactEmail.asInstanceOf[js.Any])
-    if (contactPhone != null) __obj.updateDynamic("contactPhone")(contactPhone.asInstanceOf[js.Any])
-    if (contactWebsite != null) __obj.updateDynamic("contactWebsite")(contactWebsite.asInstanceOf[js.Any])
-    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppDetails]
   }
+  @scala.inline
+  implicit class AppDetailsOps[Self <: AppDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContactEmail(value: String): Self = this.set("contactEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactEmail: Self = this.set("contactEmail", js.undefined)
+    @scala.inline
+    def setContactPhone(value: String): Self = this.set("contactPhone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactPhone: Self = this.set("contactPhone", js.undefined)
+    @scala.inline
+    def setContactWebsite(value: String): Self = this.set("contactWebsite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactWebsite: Self = this.set("contactWebsite", js.undefined)
+    @scala.inline
+    def setDefaultLanguage(value: String): Self = this.set("defaultLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLanguage: Self = this.set("defaultLanguage", js.undefined)
+  }
+  
 }
 

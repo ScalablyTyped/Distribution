@@ -22,14 +22,30 @@ trait UpdateBillingGroupRequest extends js.Object {
 
 object UpdateBillingGroupRequest {
   @scala.inline
-  def apply(
-    billingGroupName: BillingGroupName,
-    billingGroupProperties: BillingGroupProperties,
-    expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
-  ): UpdateBillingGroupRequest = {
+  def apply(billingGroupName: BillingGroupName, billingGroupProperties: BillingGroupProperties): UpdateBillingGroupRequest = {
     val __obj = js.Dynamic.literal(billingGroupName = billingGroupName.asInstanceOf[js.Any], billingGroupProperties = billingGroupProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBillingGroupRequest]
   }
+  @scala.inline
+  implicit class UpdateBillingGroupRequestOps[Self <: UpdateBillingGroupRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillingGroupName(value: BillingGroupName): Self = this.set("billingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBillingGroupProperties(value: BillingGroupProperties): Self = this.set("billingGroupProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpectedVersion(value: OptionalVersion): Self = this.set("expectedVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedVersion: Self = this.set("expectedVersion", js.undefined)
+  }
+  
 }
 

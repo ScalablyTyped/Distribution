@@ -54,32 +54,66 @@ trait ScalingPolicy extends js.Object {
 
 object ScalingPolicy {
   @scala.inline
-  def apply(
-    ComparisonOperator: ComparisonOperatorType = null,
-    EvaluationPeriods: js.UndefOr[PositiveInteger] = js.undefined,
-    FleetId: FleetId = null,
-    MetricName: MetricName = null,
-    Name: NonZeroAndMaxString = null,
-    PolicyType: PolicyType = null,
-    ScalingAdjustment: js.UndefOr[Integer] = js.undefined,
-    ScalingAdjustmentType: ScalingAdjustmentType = null,
-    Status: ScalingStatusType = null,
-    TargetConfiguration: TargetConfiguration = null,
-    Threshold: js.UndefOr[Double] = js.undefined
-  ): ScalingPolicy = {
+  def apply(): ScalingPolicy = {
     val __obj = js.Dynamic.literal()
-    if (ComparisonOperator != null) __obj.updateDynamic("ComparisonOperator")(ComparisonOperator.asInstanceOf[js.Any])
-    if (!js.isUndefined(EvaluationPeriods)) __obj.updateDynamic("EvaluationPeriods")(EvaluationPeriods.get.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (PolicyType != null) __obj.updateDynamic("PolicyType")(PolicyType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScalingAdjustment)) __obj.updateDynamic("ScalingAdjustment")(ScalingAdjustment.get.asInstanceOf[js.Any])
-    if (ScalingAdjustmentType != null) __obj.updateDynamic("ScalingAdjustmentType")(ScalingAdjustmentType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TargetConfiguration != null) __obj.updateDynamic("TargetConfiguration")(TargetConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(Threshold)) __obj.updateDynamic("Threshold")(Threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingPolicy]
   }
+  @scala.inline
+  implicit class ScalingPolicyOps[Self <: ScalingPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparisonOperator(value: ComparisonOperatorType): Self = this.set("ComparisonOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparisonOperator: Self = this.set("ComparisonOperator", js.undefined)
+    @scala.inline
+    def setEvaluationPeriods(value: PositiveInteger): Self = this.set("EvaluationPeriods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationPeriods: Self = this.set("EvaluationPeriods", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("MetricName", js.undefined)
+    @scala.inline
+    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPolicyType(value: PolicyType): Self = this.set("PolicyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyType: Self = this.set("PolicyType", js.undefined)
+    @scala.inline
+    def setScalingAdjustment(value: Integer): Self = this.set("ScalingAdjustment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingAdjustment: Self = this.set("ScalingAdjustment", js.undefined)
+    @scala.inline
+    def setScalingAdjustmentType(value: ScalingAdjustmentType): Self = this.set("ScalingAdjustmentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingAdjustmentType: Self = this.set("ScalingAdjustmentType", js.undefined)
+    @scala.inline
+    def setStatus(value: ScalingStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTargetConfiguration(value: TargetConfiguration): Self = this.set("TargetConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetConfiguration: Self = this.set("TargetConfiguration", js.undefined)
+    @scala.inline
+    def setThreshold(value: Double): Self = this.set("Threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreshold: Self = this.set("Threshold", js.undefined)
+  }
+  
 }
 

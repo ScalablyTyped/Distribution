@@ -22,5 +22,132 @@ object mergeOptions extends js.Object {
   def apply[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D): A with B with C with D with E with F = js.native
   def apply[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D, option5: E): A with B with C with D with E with F = js.native
   def apply[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D, option5: E, option6: F): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D, option5: js.UndefOr[scala.Nothing], option6: F): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: js.UndefOr[scala.Nothing], option5: E): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: js.UndefOr[scala.Nothing], option5: E, option6: F): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: B,
+    option3: C,
+    option4: js.UndefOr[scala.Nothing],
+    option5: js.UndefOr[scala.Nothing],
+    option6: F
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](option: A, option2: B, option3: js.UndefOr[scala.Nothing], option4: D): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](option: A, option2: B, option3: js.UndefOr[scala.Nothing], option4: D, option5: E): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](option: A, option2: B, option3: js.UndefOr[scala.Nothing], option4: D, option5: E, option6: F): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: B,
+    option3: js.UndefOr[scala.Nothing],
+    option4: D,
+    option5: js.UndefOr[scala.Nothing],
+    option6: F
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: B,
+    option3: js.UndefOr[scala.Nothing],
+    option4: js.UndefOr[scala.Nothing],
+    option5: E
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: B,
+    option3: js.UndefOr[scala.Nothing],
+    option4: js.UndefOr[scala.Nothing],
+    option5: E,
+    option6: F
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: B,
+    option3: js.UndefOr[scala.Nothing],
+    option4: js.UndefOr[scala.Nothing],
+    option5: js.UndefOr[scala.Nothing],
+    option6: F
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](option: A, option2: js.UndefOr[scala.Nothing], option3: C): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](option: A, option2: js.UndefOr[scala.Nothing], option3: C, option4: D): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](option: A, option2: js.UndefOr[scala.Nothing], option3: C, option4: D, option5: E): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](option: A, option2: js.UndefOr[scala.Nothing], option3: C, option4: D, option5: E, option6: F): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: js.UndefOr[scala.Nothing],
+    option3: C,
+    option4: D,
+    option5: js.UndefOr[scala.Nothing],
+    option6: F
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: js.UndefOr[scala.Nothing],
+    option3: C,
+    option4: js.UndefOr[scala.Nothing],
+    option5: E
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: js.UndefOr[scala.Nothing],
+    option3: C,
+    option4: js.UndefOr[scala.Nothing],
+    option5: E,
+    option6: F
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: js.UndefOr[scala.Nothing],
+    option3: C,
+    option4: js.UndefOr[scala.Nothing],
+    option5: js.UndefOr[scala.Nothing],
+    option6: F
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](option: A, option2: js.UndefOr[scala.Nothing], option3: js.UndefOr[scala.Nothing], option4: D): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: js.UndefOr[scala.Nothing],
+    option3: js.UndefOr[scala.Nothing],
+    option4: D,
+    option5: E
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: js.UndefOr[scala.Nothing],
+    option3: js.UndefOr[scala.Nothing],
+    option4: D,
+    option5: E,
+    option6: F
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: js.UndefOr[scala.Nothing],
+    option3: js.UndefOr[scala.Nothing],
+    option4: D,
+    option5: js.UndefOr[scala.Nothing],
+    option6: F
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: js.UndefOr[scala.Nothing],
+    option3: js.UndefOr[scala.Nothing],
+    option4: js.UndefOr[scala.Nothing],
+    option5: E
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: js.UndefOr[scala.Nothing],
+    option3: js.UndefOr[scala.Nothing],
+    option4: js.UndefOr[scala.Nothing],
+    option5: E,
+    option6: F
+  ): A with B with C with D with E with F = js.native
+  def apply[A, B, C, D, E, F](
+    option: A,
+    option2: js.UndefOr[scala.Nothing],
+    option3: js.UndefOr[scala.Nothing],
+    option4: js.UndefOr[scala.Nothing],
+    option5: js.UndefOr[scala.Nothing],
+    option6: F
+  ): A with B with C with D with E with F = js.native
 }
 

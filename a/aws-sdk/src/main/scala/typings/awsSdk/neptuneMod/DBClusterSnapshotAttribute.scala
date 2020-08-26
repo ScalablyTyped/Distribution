@@ -18,11 +18,32 @@ trait DBClusterSnapshotAttribute extends js.Object {
 
 object DBClusterSnapshotAttribute {
   @scala.inline
-  def apply(AttributeName: String = null, AttributeValues: AttributeValueList = null): DBClusterSnapshotAttribute = {
+  def apply(): DBClusterSnapshotAttribute = {
     val __obj = js.Dynamic.literal()
-    if (AttributeName != null) __obj.updateDynamic("AttributeName")(AttributeName.asInstanceOf[js.Any])
-    if (AttributeValues != null) __obj.updateDynamic("AttributeValues")(AttributeValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterSnapshotAttribute]
   }
+  @scala.inline
+  implicit class DBClusterSnapshotAttributeOps[Self <: DBClusterSnapshotAttribute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeName(value: String): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeName: Self = this.set("AttributeName", js.undefined)
+    @scala.inline
+    def setAttributeValuesVarargs(value: String*): Self = this.set("AttributeValues", js.Array(value :_*))
+    @scala.inline
+    def setAttributeValues(value: AttributeValueList): Self = this.set("AttributeValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeValues: Self = this.set("AttributeValues", js.undefined)
+  }
+  
 }
 

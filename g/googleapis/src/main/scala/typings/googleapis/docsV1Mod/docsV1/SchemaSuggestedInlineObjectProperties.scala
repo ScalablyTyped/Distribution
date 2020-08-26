@@ -25,14 +25,30 @@ trait SchemaSuggestedInlineObjectProperties extends js.Object {
 
 object SchemaSuggestedInlineObjectProperties {
   @scala.inline
-  def apply(
-    inlineObjectProperties: SchemaInlineObjectProperties = null,
-    inlineObjectPropertiesSuggestionState: SchemaInlineObjectPropertiesSuggestionState = null
-  ): SchemaSuggestedInlineObjectProperties = {
+  def apply(): SchemaSuggestedInlineObjectProperties = {
     val __obj = js.Dynamic.literal()
-    if (inlineObjectProperties != null) __obj.updateDynamic("inlineObjectProperties")(inlineObjectProperties.asInstanceOf[js.Any])
-    if (inlineObjectPropertiesSuggestionState != null) __obj.updateDynamic("inlineObjectPropertiesSuggestionState")(inlineObjectPropertiesSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSuggestedInlineObjectProperties]
   }
+  @scala.inline
+  implicit class SchemaSuggestedInlineObjectPropertiesOps[Self <: SchemaSuggestedInlineObjectProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInlineObjectProperties(value: SchemaInlineObjectProperties): Self = this.set("inlineObjectProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineObjectProperties: Self = this.set("inlineObjectProperties", js.undefined)
+    @scala.inline
+    def setInlineObjectPropertiesSuggestionState(value: SchemaInlineObjectPropertiesSuggestionState): Self = this.set("inlineObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineObjectPropertiesSuggestionState: Self = this.set("inlineObjectPropertiesSuggestionState", js.undefined)
+  }
+  
 }
 

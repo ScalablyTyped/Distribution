@@ -7,85 +7,108 @@ import scala.scalajs.js.annotation._
 /**
   * A measured or measurable amount
   */
+@js.native
 trait Quantity extends Element {
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.undefined
+  var _code: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'comparator'.
     */
-  var _comparator: js.UndefOr[Element] = js.undefined
+  var _comparator: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'system'.
     */
-  var _system: js.UndefOr[Element] = js.undefined
+  var _system: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'unit'.
     */
-  var _unit: js.UndefOr[Element] = js.undefined
+  var _unit: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'value'.
     */
-  var _value: js.UndefOr[Element] = js.undefined
+  var _value: js.UndefOr[Element] = js.native
   /**
     * Coded form of the unit
     */
-  var code: js.UndefOr[typings.fhir.fhir.code] = js.undefined
+  var code: js.UndefOr[typings.fhir.fhir.code] = js.native
   /**
     * < | <= | >= | > - how to understand the value
     */
-  var comparator: js.UndefOr[code] = js.undefined
+  var comparator: js.UndefOr[code] = js.native
   /**
     * System that defines coded unit form
     */
-  var system: js.UndefOr[uri] = js.undefined
+  var system: js.UndefOr[uri] = js.native
   /**
     * Unit representation
     */
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[String] = js.native
   /**
     * Numerical value (with implicit precision)
     */
-  var value: js.UndefOr[decimal] = js.undefined
+  var value: js.UndefOr[decimal] = js.native
 }
 
 object Quantity {
   @scala.inline
-  def apply(
-    _code: Element = null,
-    _comparator: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _system: Element = null,
-    _unit: Element = null,
-    _value: Element = null,
-    code: code = null,
-    comparator: code = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    system: uri = null,
-    unit: String = null,
-    value: js.UndefOr[decimal] = js.undefined
-  ): Quantity = {
+  def apply(): Quantity = {
     val __obj = js.Dynamic.literal()
-    if (_code != null) __obj.updateDynamic("_code")(_code.asInstanceOf[js.Any])
-    if (_comparator != null) __obj.updateDynamic("_comparator")(_comparator.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_system != null) __obj.updateDynamic("_system")(_system.asInstanceOf[js.Any])
-    if (_unit != null) __obj.updateDynamic("_unit")(_unit.asInstanceOf[js.Any])
-    if (_value != null) __obj.updateDynamic("_value")(_value.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Quantity]
   }
+  @scala.inline
+  implicit class QuantityOps[Self <: Quantity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_code: Self = this.set("_code", js.undefined)
+    @scala.inline
+    def set_comparator(value: Element): Self = this.set("_comparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_comparator: Self = this.set("_comparator", js.undefined)
+    @scala.inline
+    def set_system(value: Element): Self = this.set("_system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_system: Self = this.set("_system", js.undefined)
+    @scala.inline
+    def set_unit(value: Element): Self = this.set("_unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_unit: Self = this.set("_unit", js.undefined)
+    @scala.inline
+    def set_value(value: Element): Self = this.set("_value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_value: Self = this.set("_value", js.undefined)
+    @scala.inline
+    def setCode(value: code): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setComparator(value: code): Self = this.set("comparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparator: Self = this.set("comparator", js.undefined)
+    @scala.inline
+    def setSystem(value: uri): Self = this.set("system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystem: Self = this.set("system", js.undefined)
+    @scala.inline
+    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+    @scala.inline
+    def setValue(value: decimal): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

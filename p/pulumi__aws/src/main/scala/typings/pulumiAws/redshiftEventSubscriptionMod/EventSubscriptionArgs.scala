@@ -37,32 +37,63 @@ trait EventSubscriptionArgs extends js.Object {
     */
   val sourceType: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object EventSubscriptionArgs {
   @scala.inline
-  def apply(
-    snsTopicArn: Input[String],
-    enabled: Input[Boolean] = null,
-    eventCategories: Input[js.Array[Input[String]]] = null,
-    name: Input[String] = null,
-    severity: Input[String] = null,
-    sourceIds: Input[js.Array[Input[String]]] = null,
-    sourceType: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): EventSubscriptionArgs = {
+  def apply(snsTopicArn: Input[String]): EventSubscriptionArgs = {
     val __obj = js.Dynamic.literal(snsTopicArn = snsTopicArn.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (eventCategories != null) __obj.updateDynamic("eventCategories")(eventCategories.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
-    if (sourceIds != null) __obj.updateDynamic("sourceIds")(sourceIds.asInstanceOf[js.Any])
-    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSubscriptionArgs]
   }
+  @scala.inline
+  implicit class EventSubscriptionArgsOps[Self <: EventSubscriptionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnsTopicArn(value: Input[String]): Self = this.set("snsTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setEventCategoriesVarargs(value: Input[String]*): Self = this.set("eventCategories", js.Array(value :_*))
+    @scala.inline
+    def setEventCategories(value: Input[js.Array[Input[String]]]): Self = this.set("eventCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventCategories: Self = this.set("eventCategories", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSeverity(value: Input[String]): Self = this.set("severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("severity", js.undefined)
+    @scala.inline
+    def setSourceIdsVarargs(value: Input[String]*): Self = this.set("sourceIds", js.Array(value :_*))
+    @scala.inline
+    def setSourceIds(value: Input[js.Array[Input[String]]]): Self = this.set("sourceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceIds: Self = this.set("sourceIds", js.undefined)
+    @scala.inline
+    def setSourceType(value: Input[String]): Self = this.set("sourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceType: Self = this.set("sourceType", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

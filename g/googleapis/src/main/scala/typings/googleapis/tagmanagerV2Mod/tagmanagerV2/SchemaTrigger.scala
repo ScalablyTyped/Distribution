@@ -170,74 +170,158 @@ trait SchemaTrigger extends js.Object {
 
 object SchemaTrigger {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    autoEventFilter: js.Array[SchemaCondition] = null,
-    checkValidation: SchemaParameter = null,
-    containerId: String = null,
-    continuousTimeMinMilliseconds: SchemaParameter = null,
-    customEventFilter: js.Array[SchemaCondition] = null,
-    eventName: SchemaParameter = null,
-    filter: js.Array[SchemaCondition] = null,
-    fingerprint: String = null,
-    horizontalScrollPercentageList: SchemaParameter = null,
-    interval: SchemaParameter = null,
-    intervalSeconds: SchemaParameter = null,
-    limit: SchemaParameter = null,
-    maxTimerLengthSeconds: SchemaParameter = null,
-    name: String = null,
-    notes: String = null,
-    parameter: js.Array[SchemaParameter] = null,
-    parentFolderId: String = null,
-    path: String = null,
-    selector: SchemaParameter = null,
-    tagManagerUrl: String = null,
-    totalTimeMinMilliseconds: SchemaParameter = null,
-    triggerId: String = null,
-    `type`: String = null,
-    uniqueTriggerId: SchemaParameter = null,
-    verticalScrollPercentageList: SchemaParameter = null,
-    visibilitySelector: SchemaParameter = null,
-    visiblePercentageMax: SchemaParameter = null,
-    visiblePercentageMin: SchemaParameter = null,
-    waitForTags: SchemaParameter = null,
-    waitForTagsTimeout: SchemaParameter = null,
-    workspaceId: String = null
-  ): SchemaTrigger = {
+  def apply(): SchemaTrigger = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (autoEventFilter != null) __obj.updateDynamic("autoEventFilter")(autoEventFilter.asInstanceOf[js.Any])
-    if (checkValidation != null) __obj.updateDynamic("checkValidation")(checkValidation.asInstanceOf[js.Any])
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
-    if (continuousTimeMinMilliseconds != null) __obj.updateDynamic("continuousTimeMinMilliseconds")(continuousTimeMinMilliseconds.asInstanceOf[js.Any])
-    if (customEventFilter != null) __obj.updateDynamic("customEventFilter")(customEventFilter.asInstanceOf[js.Any])
-    if (eventName != null) __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (horizontalScrollPercentageList != null) __obj.updateDynamic("horizontalScrollPercentageList")(horizontalScrollPercentageList.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (intervalSeconds != null) __obj.updateDynamic("intervalSeconds")(intervalSeconds.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (maxTimerLengthSeconds != null) __obj.updateDynamic("maxTimerLengthSeconds")(maxTimerLengthSeconds.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
-    if (parentFolderId != null) __obj.updateDynamic("parentFolderId")(parentFolderId.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (tagManagerUrl != null) __obj.updateDynamic("tagManagerUrl")(tagManagerUrl.asInstanceOf[js.Any])
-    if (totalTimeMinMilliseconds != null) __obj.updateDynamic("totalTimeMinMilliseconds")(totalTimeMinMilliseconds.asInstanceOf[js.Any])
-    if (triggerId != null) __obj.updateDynamic("triggerId")(triggerId.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (uniqueTriggerId != null) __obj.updateDynamic("uniqueTriggerId")(uniqueTriggerId.asInstanceOf[js.Any])
-    if (verticalScrollPercentageList != null) __obj.updateDynamic("verticalScrollPercentageList")(verticalScrollPercentageList.asInstanceOf[js.Any])
-    if (visibilitySelector != null) __obj.updateDynamic("visibilitySelector")(visibilitySelector.asInstanceOf[js.Any])
-    if (visiblePercentageMax != null) __obj.updateDynamic("visiblePercentageMax")(visiblePercentageMax.asInstanceOf[js.Any])
-    if (visiblePercentageMin != null) __obj.updateDynamic("visiblePercentageMin")(visiblePercentageMin.asInstanceOf[js.Any])
-    if (waitForTags != null) __obj.updateDynamic("waitForTags")(waitForTags.asInstanceOf[js.Any])
-    if (waitForTagsTimeout != null) __obj.updateDynamic("waitForTagsTimeout")(waitForTagsTimeout.asInstanceOf[js.Any])
-    if (workspaceId != null) __obj.updateDynamic("workspaceId")(workspaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrigger]
   }
+  @scala.inline
+  implicit class SchemaTriggerOps[Self <: SchemaTrigger] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAutoEventFilterVarargs(value: SchemaCondition*): Self = this.set("autoEventFilter", js.Array(value :_*))
+    @scala.inline
+    def setAutoEventFilter(value: js.Array[SchemaCondition]): Self = this.set("autoEventFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoEventFilter: Self = this.set("autoEventFilter", js.undefined)
+    @scala.inline
+    def setCheckValidation(value: SchemaParameter): Self = this.set("checkValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckValidation: Self = this.set("checkValidation", js.undefined)
+    @scala.inline
+    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    @scala.inline
+    def setContinuousTimeMinMilliseconds(value: SchemaParameter): Self = this.set("continuousTimeMinMilliseconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinuousTimeMinMilliseconds: Self = this.set("continuousTimeMinMilliseconds", js.undefined)
+    @scala.inline
+    def setCustomEventFilterVarargs(value: SchemaCondition*): Self = this.set("customEventFilter", js.Array(value :_*))
+    @scala.inline
+    def setCustomEventFilter(value: js.Array[SchemaCondition]): Self = this.set("customEventFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomEventFilter: Self = this.set("customEventFilter", js.undefined)
+    @scala.inline
+    def setEventName(value: SchemaParameter): Self = this.set("eventName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventName: Self = this.set("eventName", js.undefined)
+    @scala.inline
+    def setFilterVarargs(value: SchemaCondition*): Self = this.set("filter", js.Array(value :_*))
+    @scala.inline
+    def setFilter(value: js.Array[SchemaCondition]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setHorizontalScrollPercentageList(value: SchemaParameter): Self = this.set("horizontalScrollPercentageList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalScrollPercentageList: Self = this.set("horizontalScrollPercentageList", js.undefined)
+    @scala.inline
+    def setInterval(value: SchemaParameter): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setIntervalSeconds(value: SchemaParameter): Self = this.set("intervalSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntervalSeconds: Self = this.set("intervalSeconds", js.undefined)
+    @scala.inline
+    def setLimit(value: SchemaParameter): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setMaxTimerLengthSeconds(value: SchemaParameter): Self = this.set("maxTimerLengthSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxTimerLengthSeconds: Self = this.set("maxTimerLengthSeconds", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotes: Self = this.set("notes", js.undefined)
+    @scala.inline
+    def setParameterVarargs(value: SchemaParameter*): Self = this.set("parameter", js.Array(value :_*))
+    @scala.inline
+    def setParameter(value: js.Array[SchemaParameter]): Self = this.set("parameter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameter: Self = this.set("parameter", js.undefined)
+    @scala.inline
+    def setParentFolderId(value: String): Self = this.set("parentFolderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentFolderId: Self = this.set("parentFolderId", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setSelector(value: SchemaParameter): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+    @scala.inline
+    def setTagManagerUrl(value: String): Self = this.set("tagManagerUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagManagerUrl: Self = this.set("tagManagerUrl", js.undefined)
+    @scala.inline
+    def setTotalTimeMinMilliseconds(value: SchemaParameter): Self = this.set("totalTimeMinMilliseconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalTimeMinMilliseconds: Self = this.set("totalTimeMinMilliseconds", js.undefined)
+    @scala.inline
+    def setTriggerId(value: String): Self = this.set("triggerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerId: Self = this.set("triggerId", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUniqueTriggerId(value: SchemaParameter): Self = this.set("uniqueTriggerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniqueTriggerId: Self = this.set("uniqueTriggerId", js.undefined)
+    @scala.inline
+    def setVerticalScrollPercentageList(value: SchemaParameter): Self = this.set("verticalScrollPercentageList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalScrollPercentageList: Self = this.set("verticalScrollPercentageList", js.undefined)
+    @scala.inline
+    def setVisibilitySelector(value: SchemaParameter): Self = this.set("visibilitySelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibilitySelector: Self = this.set("visibilitySelector", js.undefined)
+    @scala.inline
+    def setVisiblePercentageMax(value: SchemaParameter): Self = this.set("visiblePercentageMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisiblePercentageMax: Self = this.set("visiblePercentageMax", js.undefined)
+    @scala.inline
+    def setVisiblePercentageMin(value: SchemaParameter): Self = this.set("visiblePercentageMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisiblePercentageMin: Self = this.set("visiblePercentageMin", js.undefined)
+    @scala.inline
+    def setWaitForTags(value: SchemaParameter): Self = this.set("waitForTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForTags: Self = this.set("waitForTags", js.undefined)
+    @scala.inline
+    def setWaitForTagsTimeout(value: SchemaParameter): Self = this.set("waitForTagsTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForTagsTimeout: Self = this.set("waitForTagsTimeout", js.undefined)
+    @scala.inline
+    def setWorkspaceId(value: String): Self = this.set("workspaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaceId: Self = this.set("workspaceId", js.undefined)
+  }
+  
 }
 

@@ -5,6 +5,7 @@ import typings.jestEach.bindMod.GlobalCallback
 import typings.jestTypes.globalMod.EachTable
 import typings.jestTypes.globalMod.EachTestFn
 import typings.jestTypes.globalMod.TemplateData
+import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +28,10 @@ object mod extends js.Object {
     def apply(
       table: EachTable,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type Global.TemplateData is not an array type */ data: TemplateData
-    ): Describe = js.native
-    def withGlobal(g: typings.jestTypes.globalMod.Global): js.Function2[/* table */ EachTable, /* data */ TemplateData, Describe] = js.native
+    ): ReturnType[
+        js.Function3[/* g */ Global, /* table */ EachTable, /* data */ TemplateData, Describe]
+      ] = js.native
+    def withGlobal(g: Global): js.Function2[/* table */ EachTable, /* data */ TemplateData, Describe] = js.native
   }
   
   type Global = typings.jestTypes.globalMod.Global

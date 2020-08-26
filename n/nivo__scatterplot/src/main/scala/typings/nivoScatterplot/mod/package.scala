@@ -14,7 +14,7 @@ package object mod {
     /* props */ typings.nivoScatterplot.mod.CustomSvgLayerProps, 
     typings.react.mod.ReactNode
   ]
-  type CustomTooltip = js.Function1[/* hasNode */ js.Any, typings.react.mod.ReactNode]
+  type CustomTooltip = js.Function1[/* props */ typings.nivoScatterplot.mod.TooltipProps, typings.react.mod.ReactNode]
   type DerivedDatumProp[T] = js.Function1[/* node */ typings.nivoScatterplot.mod.Datum, T]
   type DerivedNodeProp[T] = js.Function1[/* node */ typings.nivoScatterplot.mod.Node, T]
   type MouseHandler = js.Function2[
@@ -28,7 +28,6 @@ package object mod {
     scala.Unit
   ]
   type NodeComponent = js.Function1[/* props */ typings.nivoScatterplot.mod.NodeProps, typings.react.mod.ReactNode]
-  type Scale = js.Function1[/* value */ typings.nivoScatterplot.mod.Value, scala.Double]
   type Value = scala.Double | java.lang.String | typings.std.Date
   type ValueFormatter = js.Function1[/* value */ typings.nivoScatterplot.mod.Value, java.lang.String | scala.Double]
 }

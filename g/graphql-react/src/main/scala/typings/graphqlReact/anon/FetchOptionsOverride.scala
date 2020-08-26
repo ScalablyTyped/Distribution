@@ -7,26 +7,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FetchOptionsOverride[V] extends js.Object {
-  var fetchOptionsOverride: js.UndefOr[GraphQLFetchOptionsOverride] = js.undefined
-  var operation: GraphQLOperation[V]
-  var reloadOnLoad: js.UndefOr[Boolean] = js.undefined
-  var resetOnLoad: js.UndefOr[Boolean] = js.undefined
+  var fetchOptionsOverride: js.UndefOr[GraphQLFetchOptionsOverride] = js.native
+  var operation: GraphQLOperation[V] = js.native
+  var reloadOnLoad: js.UndefOr[Boolean] = js.native
+  var resetOnLoad: js.UndefOr[Boolean] = js.native
 }
 
 object FetchOptionsOverride {
   @scala.inline
-  def apply[V](
-    operation: GraphQLOperation[V],
-    fetchOptionsOverride: /* options */ GraphQLFetchOptions => Unit = null,
-    reloadOnLoad: js.UndefOr[Boolean] = js.undefined,
-    resetOnLoad: js.UndefOr[Boolean] = js.undefined
-  ): FetchOptionsOverride[V] = {
+  def apply[V](operation: GraphQLOperation[V]): FetchOptionsOverride[V] = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
-    if (fetchOptionsOverride != null) __obj.updateDynamic("fetchOptionsOverride")(js.Any.fromFunction1(fetchOptionsOverride))
-    if (!js.isUndefined(reloadOnLoad)) __obj.updateDynamic("reloadOnLoad")(reloadOnLoad.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnLoad)) __obj.updateDynamic("resetOnLoad")(resetOnLoad.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchOptionsOverride[V]]
   }
+  @scala.inline
+  implicit class FetchOptionsOverrideOps[Self <: FetchOptionsOverride[_], V] (val x: Self with FetchOptionsOverride[V]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOperation(value: GraphQLOperation[V]): Self = this.set("operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFetchOptionsOverride(value: /* options */ GraphQLFetchOptions => Unit): Self = this.set("fetchOptionsOverride", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFetchOptionsOverride: Self = this.set("fetchOptionsOverride", js.undefined)
+    @scala.inline
+    def setReloadOnLoad(value: Boolean): Self = this.set("reloadOnLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReloadOnLoad: Self = this.set("reloadOnLoad", js.undefined)
+    @scala.inline
+    def setResetOnLoad(value: Boolean): Self = this.set("resetOnLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetOnLoad: Self = this.set("resetOnLoad", js.undefined)
+  }
+  
 }
 

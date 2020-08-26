@@ -11,7 +11,7 @@ Forget Function.bind and func.apply(context, arguments), performance matters! Fo
 | Keywords           | curry, function, bind, currying, partial function, functional, delegate |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 129142 |
+| # downloads        | 126181 |
 | # stars            | 1 |
 
 ## Links

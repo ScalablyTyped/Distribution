@@ -4,40 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PagerClickEventArgs extends js.Object {
   /** returns the current slide index.
     */
-  var activeItemIndex: js.UndefOr[Double] = js.undefined
+  var activeItemIndex: js.UndefOr[Double] = js.native
   /** if the event should be canceled; otherwise, false.
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** the current rotator id.
     */
-  var itemId: js.UndefOr[String] = js.undefined
+  var itemId: js.UndefOr[String] = js.native
   /** returns the rotator model
     */
-  var model: js.UndefOr[Model] = js.undefined
+  var model: js.UndefOr[Model] = js.native
   /** returns the name of the event
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object PagerClickEventArgs {
   @scala.inline
-  def apply(
-    activeItemIndex: js.UndefOr[Double] = js.undefined,
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    itemId: String = null,
-    model: Model = null,
-    `type`: String = null
-  ): PagerClickEventArgs = {
+  def apply(): PagerClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeItemIndex)) __obj.updateDynamic("activeItemIndex")(activeItemIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagerClickEventArgs]
   }
+  @scala.inline
+  implicit class PagerClickEventArgsOps[Self <: PagerClickEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveItemIndex(value: Double): Self = this.set("activeItemIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveItemIndex: Self = this.set("activeItemIndex", js.undefined)
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setItemId(value: String): Self = this.set("itemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemId: Self = this.set("itemId", js.undefined)
+    @scala.inline
+    def setModel(value: Model): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

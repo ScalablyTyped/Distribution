@@ -11,7 +11,7 @@ trait Organization extends js.Object {
     */
   var Arn: js.UndefOr[OrganizationArn] = js.native
   /**
-    * A list of policy types that are enabled for this organization. For example, if your organization has all features enabled, then service control policies (SCPs) are included in the list.  Even if a policy type is shown as available in the organization, you can separately enable and disable them at the root level by using EnablePolicyType and DisablePolicyType. Use ListRoots to see the status of a policy type in that root. 
+    *  Do not use. This field is deprecated and doesn't provide complete information about the policies in your organization.  To determine the policies that are enabled and available for use in your organization, use the ListRoots operation instead.
     */
   var AvailablePolicyTypes: js.UndefOr[PolicyTypes] = js.native
   /**
@@ -38,24 +38,52 @@ trait Organization extends js.Object {
 
 object Organization {
   @scala.inline
-  def apply(
-    Arn: OrganizationArn = null,
-    AvailablePolicyTypes: PolicyTypes = null,
-    FeatureSet: OrganizationFeatureSet = null,
-    Id: OrganizationId = null,
-    MasterAccountArn: AccountArn = null,
-    MasterAccountEmail: Email = null,
-    MasterAccountId: AccountId = null
-  ): Organization = {
+  def apply(): Organization = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (AvailablePolicyTypes != null) __obj.updateDynamic("AvailablePolicyTypes")(AvailablePolicyTypes.asInstanceOf[js.Any])
-    if (FeatureSet != null) __obj.updateDynamic("FeatureSet")(FeatureSet.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (MasterAccountArn != null) __obj.updateDynamic("MasterAccountArn")(MasterAccountArn.asInstanceOf[js.Any])
-    if (MasterAccountEmail != null) __obj.updateDynamic("MasterAccountEmail")(MasterAccountEmail.asInstanceOf[js.Any])
-    if (MasterAccountId != null) __obj.updateDynamic("MasterAccountId")(MasterAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Organization]
   }
+  @scala.inline
+  implicit class OrganizationOps[Self <: Organization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: OrganizationArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAvailablePolicyTypesVarargs(value: PolicyTypeSummary*): Self = this.set("AvailablePolicyTypes", js.Array(value :_*))
+    @scala.inline
+    def setAvailablePolicyTypes(value: PolicyTypes): Self = this.set("AvailablePolicyTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailablePolicyTypes: Self = this.set("AvailablePolicyTypes", js.undefined)
+    @scala.inline
+    def setFeatureSet(value: OrganizationFeatureSet): Self = this.set("FeatureSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureSet: Self = this.set("FeatureSet", js.undefined)
+    @scala.inline
+    def setId(value: OrganizationId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setMasterAccountArn(value: AccountArn): Self = this.set("MasterAccountArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterAccountArn: Self = this.set("MasterAccountArn", js.undefined)
+    @scala.inline
+    def setMasterAccountEmail(value: Email): Self = this.set("MasterAccountEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterAccountEmail: Self = this.set("MasterAccountEmail", js.undefined)
+    @scala.inline
+    def setMasterAccountId(value: AccountId): Self = this.set("MasterAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterAccountId: Self = this.set("MasterAccountId", js.undefined)
+  }
+  
 }
 

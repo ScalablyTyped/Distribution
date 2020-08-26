@@ -5,42 +5,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpinProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var indicator: js.UndefOr[SpinIndicator] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var size: js.UndefOr[SpinSize] = js.undefined
-  var spinning: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var tip: js.UndefOr[String] = js.undefined
-  var wrapperClassName: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var indicator: js.UndefOr[SpinIndicator] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var size: js.UndefOr[SpinSize] = js.native
+  var spinning: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var tip: js.UndefOr[String] = js.native
+  var wrapperClassName: js.UndefOr[String] = js.native
 }
 
 object SpinProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    indicator: SpinIndicator = null,
-    prefixCls: String = null,
-    size: SpinSize = null,
-    spinning: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    tip: String = null,
-    wrapperClassName: String = null
-  ): SpinProps = {
+  def apply(): SpinProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(spinning)) __obj.updateDynamic("spinning")(spinning.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tip != null) __obj.updateDynamic("tip")(tip.asInstanceOf[js.Any])
-    if (wrapperClassName != null) __obj.updateDynamic("wrapperClassName")(wrapperClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinProps]
   }
+  @scala.inline
+  implicit class SpinPropsOps[Self <: SpinProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setIndicator(value: SpinIndicator): Self = this.set("indicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndicator: Self = this.set("indicator", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setSize(value: SpinSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSpinning(value: Boolean): Self = this.set("spinning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpinning: Self = this.set("spinning", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTip(value: String): Self = this.set("tip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTip: Self = this.set("tip", js.undefined)
+    @scala.inline
+    def setWrapperClassName(value: String): Self = this.set("wrapperClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapperClassName: Self = this.set("wrapperClassName", js.undefined)
+  }
+  
 }
 

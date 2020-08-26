@@ -1,7 +1,5 @@
 package typings.winrtUwp.global.Windows.System
 
-import typings.winrtUwp.Windows.Foundation.Collections.IIterator
-import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
@@ -9,13 +7,11 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Globalization.DayOfWeek
 import typings.winrtUwp.Windows.Storage.IStorageFile
-import typings.winrtUwp.Windows.Storage.StorageFile
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrtUwp.Windows.System.UserProfile.AccountPictureKind
 import typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult
 import typings.winrtUwp.Windows.System.UserProfile.SetImageFeedResult
 import typings.winrtUwp.Windows.WinRTEvent
-import typings.winrtUwp.anon.Second
 import typings.winrtUwp.winrtUwpStrings.accountpicturechanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,36 +29,7 @@ object UserProfile extends js.Object {
   /** Represents a collection of settings that a user can opt-in to during the first run experience. */
   @js.native
   abstract class FirstSignInSettings ()
-    extends typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings {
-    /** Returns the number of elements in the map. */
-    /* CompleteClass */
-    override var size: Double = js.native
-    /**
-      * Returns an iterator for the items in the collection.
-      * @return The iterator.
-      */
-    /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[_, _]] = js.native
-    /**
-      * Determines whether the map view contains the specified key.
-      * @param key The key to locate in the map view.
-      * @return true if the key is found; otherwise, false.
-      */
-    /* CompleteClass */
-    override def hasKey(key: String): Boolean = js.native
-    /**
-      * Returns the item in the map view with the specified key.
-      * @param key The key to locate in the map view.
-      * @return The item associated with the specified key.
-      */
-    /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
-    /**
-      * Splits the map view into two views.
-      */
-    /* CompleteClass */
-    override def split(): Second = js.native
-  }
+    extends typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings
   
   /** A static class for holding various user globalization preferences. */
   @js.native
@@ -82,22 +49,7 @@ object UserProfile extends js.Object {
   /** Provides properties and methods to manage the user's desktop wallpaper and lock screen background image. */
   @js.native
   abstract class UserProfilePersonalizationSettings ()
-    extends typings.winrtUwp.Windows.System.UserProfile.UserProfilePersonalizationSettings {
-    /**
-      * Attempts to set the specified image file as the lock screen background image.
-      * @param imageFile The image to set as the lock screen background.
-      * @return The result of the async operation. true if the background image was set successfully; otherwise, false.
-      */
-    /* CompleteClass */
-    override def trySetLockScreenImageAsync(imageFile: StorageFile): IPromiseWithIAsyncOperation[Boolean] = js.native
-    /**
-      * Attempts to set the specified image file as the desktop wallpaper image.
-      * @param imageFile The image to set as the desktop background.
-      * @return The result of the async operation. true if the background image was set successfully; otherwise, false.
-      */
-    /* CompleteClass */
-    override def trySetWallpaperImageAsync(imageFile: StorageFile): IPromiseWithIAsyncOperation[Boolean] = js.native
-  }
+    extends typings.winrtUwp.Windows.System.UserProfile.UserProfilePersonalizationSettings
   
   /** Allows you to request a specific image type when using GetAccountPicture . */
   @js.native

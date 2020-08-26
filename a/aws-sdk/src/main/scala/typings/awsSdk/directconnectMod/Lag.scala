@@ -78,44 +78,94 @@ trait Lag extends js.Object {
 
 object Lag {
   @scala.inline
-  def apply(
-    allowsHostedConnections: js.UndefOr[BooleanFlag] = js.undefined,
-    awsDevice: AwsDevice = null,
-    awsDeviceV2: AwsDeviceV2 = null,
-    connections: ConnectionList = null,
-    connectionsBandwidth: Bandwidth = null,
-    hasLogicalRedundancy: HasLogicalRedundancy = null,
-    jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.undefined,
-    lagId: LagId = null,
-    lagName: LagName = null,
-    lagState: LagState = null,
-    location: LocationCode = null,
-    minimumLinks: js.UndefOr[Count] = js.undefined,
-    numberOfConnections: js.UndefOr[Count] = js.undefined,
-    ownerAccount: OwnerAccount = null,
-    providerName: ProviderName = null,
-    region: Region = null,
-    tags: TagList = null
-  ): Lag = {
+  def apply(): Lag = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowsHostedConnections)) __obj.updateDynamic("allowsHostedConnections")(allowsHostedConnections.get.asInstanceOf[js.Any])
-    if (awsDevice != null) __obj.updateDynamic("awsDevice")(awsDevice.asInstanceOf[js.Any])
-    if (awsDeviceV2 != null) __obj.updateDynamic("awsDeviceV2")(awsDeviceV2.asInstanceOf[js.Any])
-    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
-    if (connectionsBandwidth != null) __obj.updateDynamic("connectionsBandwidth")(connectionsBandwidth.asInstanceOf[js.Any])
-    if (hasLogicalRedundancy != null) __obj.updateDynamic("hasLogicalRedundancy")(hasLogicalRedundancy.asInstanceOf[js.Any])
-    if (!js.isUndefined(jumboFrameCapable)) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.get.asInstanceOf[js.Any])
-    if (lagId != null) __obj.updateDynamic("lagId")(lagId.asInstanceOf[js.Any])
-    if (lagName != null) __obj.updateDynamic("lagName")(lagName.asInstanceOf[js.Any])
-    if (lagState != null) __obj.updateDynamic("lagState")(lagState.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumLinks)) __obj.updateDynamic("minimumLinks")(minimumLinks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfConnections)) __obj.updateDynamic("numberOfConnections")(numberOfConnections.get.asInstanceOf[js.Any])
-    if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount.asInstanceOf[js.Any])
-    if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lag]
   }
+  @scala.inline
+  implicit class LagOps[Self <: Lag] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowsHostedConnections(value: BooleanFlag): Self = this.set("allowsHostedConnections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowsHostedConnections: Self = this.set("allowsHostedConnections", js.undefined)
+    @scala.inline
+    def setAwsDevice(value: AwsDevice): Self = this.set("awsDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsDevice: Self = this.set("awsDevice", js.undefined)
+    @scala.inline
+    def setAwsDeviceV2(value: AwsDeviceV2): Self = this.set("awsDeviceV2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsDeviceV2: Self = this.set("awsDeviceV2", js.undefined)
+    @scala.inline
+    def setConnectionsVarargs(value: Connection*): Self = this.set("connections", js.Array(value :_*))
+    @scala.inline
+    def setConnections(value: ConnectionList): Self = this.set("connections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnections: Self = this.set("connections", js.undefined)
+    @scala.inline
+    def setConnectionsBandwidth(value: Bandwidth): Self = this.set("connectionsBandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionsBandwidth: Self = this.set("connectionsBandwidth", js.undefined)
+    @scala.inline
+    def setHasLogicalRedundancy(value: HasLogicalRedundancy): Self = this.set("hasLogicalRedundancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasLogicalRedundancy: Self = this.set("hasLogicalRedundancy", js.undefined)
+    @scala.inline
+    def setJumboFrameCapable(value: JumboFrameCapable): Self = this.set("jumboFrameCapable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJumboFrameCapable: Self = this.set("jumboFrameCapable", js.undefined)
+    @scala.inline
+    def setLagId(value: LagId): Self = this.set("lagId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLagId: Self = this.set("lagId", js.undefined)
+    @scala.inline
+    def setLagName(value: LagName): Self = this.set("lagName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLagName: Self = this.set("lagName", js.undefined)
+    @scala.inline
+    def setLagState(value: LagState): Self = this.set("lagState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLagState: Self = this.set("lagState", js.undefined)
+    @scala.inline
+    def setLocation(value: LocationCode): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMinimumLinks(value: Count): Self = this.set("minimumLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumLinks: Self = this.set("minimumLinks", js.undefined)
+    @scala.inline
+    def setNumberOfConnections(value: Count): Self = this.set("numberOfConnections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfConnections: Self = this.set("numberOfConnections", js.undefined)
+    @scala.inline
+    def setOwnerAccount(value: OwnerAccount): Self = this.set("ownerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAccount: Self = this.set("ownerAccount", js.undefined)
+    @scala.inline
+    def setProviderName(value: ProviderName): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderName: Self = this.set("providerName", js.undefined)
+    @scala.inline
+    def setRegion(value: Region): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

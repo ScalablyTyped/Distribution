@@ -26,15 +26,32 @@ trait UsageRecord extends js.Object {
 
 object UsageRecord {
   @scala.inline
-  def apply(
-    CustomerIdentifier: CustomerIdentifier,
-    Dimension: UsageDimension,
-    Timestamp: Timestamp,
-    Quantity: js.UndefOr[UsageQuantity] = js.undefined
-  ): UsageRecord = {
+  def apply(CustomerIdentifier: CustomerIdentifier, Dimension: UsageDimension, Timestamp: Timestamp): UsageRecord = {
     val __obj = js.Dynamic.literal(CustomerIdentifier = CustomerIdentifier.asInstanceOf[js.Any], Dimension = Dimension.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(Quantity)) __obj.updateDynamic("Quantity")(Quantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageRecord]
   }
+  @scala.inline
+  implicit class UsageRecordOps[Self <: UsageRecord] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomerIdentifier(value: CustomerIdentifier): Self = this.set("CustomerIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDimension(value: UsageDimension): Self = this.set("Dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQuantity(value: UsageQuantity): Self = this.set("Quantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantity: Self = this.set("Quantity", js.undefined)
+  }
+  
 }
 

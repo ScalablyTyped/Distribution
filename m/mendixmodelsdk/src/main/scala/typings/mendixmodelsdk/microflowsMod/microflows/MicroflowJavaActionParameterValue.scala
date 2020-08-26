@@ -26,11 +26,9 @@ class MicroflowJavaActionParameterValue protected () extends JavaActionParameter
   ) = this()
   @JSName("model")
   var model_FMicroflowJavaActionParameterValue: IModel = js.native
-  def microflow(): js.Any = js.native
-  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflow: IMicroflow | Null = js.native
   def microflowQualifiedName: String | Null = js.native
-  @JSName("microflow")
-  def microflow_Union: IMicroflow | Null = js.native
+  def microflow_=(newValue: IMicroflow | Null): Unit = js.native
 }
 
 /* static members */

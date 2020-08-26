@@ -42,39 +42,74 @@ trait PresetArgs extends js.Object {
     * Video parameters object (documented below)
     */
   val video: js.UndefOr[Input[PresetVideo]] = js.native
-  val videoCodecOptions: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
+    * Codec options for the video parameters
+    */
+  val videoCodecOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Watermark parameters for the video parameters (documented below)
-    * * `videoCodecOptions` (Optional, Forces new resource) Codec options for the video parameters
     */
   val videoWatermarks: js.UndefOr[Input[js.Array[Input[PresetVideoWatermark]]]] = js.native
 }
 
 object PresetArgs {
   @scala.inline
-  def apply(
-    container: Input[String],
-    audio: Input[PresetAudio] = null,
-    audioCodecOptions: Input[PresetAudioCodecOptions] = null,
-    description: Input[String] = null,
-    name: Input[String] = null,
-    thumbnails: Input[PresetThumbnails] = null,
-    `type`: Input[String] = null,
-    video: Input[PresetVideo] = null,
-    videoCodecOptions: Input[StringDictionary[_]] = null,
-    videoWatermarks: Input[js.Array[Input[PresetVideoWatermark]]] = null
-  ): PresetArgs = {
+  def apply(container: Input[String]): PresetArgs = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
-    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (audioCodecOptions != null) __obj.updateDynamic("audioCodecOptions")(audioCodecOptions.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
-    if (videoCodecOptions != null) __obj.updateDynamic("videoCodecOptions")(videoCodecOptions.asInstanceOf[js.Any])
-    if (videoWatermarks != null) __obj.updateDynamic("videoWatermarks")(videoWatermarks.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresetArgs]
   }
+  @scala.inline
+  implicit class PresetArgsOps[Self <: PresetArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: Input[String]): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAudio(value: Input[PresetAudio]): Self = this.set("audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudio: Self = this.set("audio", js.undefined)
+    @scala.inline
+    def setAudioCodecOptions(value: Input[PresetAudioCodecOptions]): Self = this.set("audioCodecOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioCodecOptions: Self = this.set("audioCodecOptions", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setThumbnails(value: Input[PresetThumbnails]): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVideo(value: Input[PresetVideo]): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+    @scala.inline
+    def setVideoCodecOptions(value: Input[StringDictionary[Input[String]]]): Self = this.set("videoCodecOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoCodecOptions: Self = this.set("videoCodecOptions", js.undefined)
+    @scala.inline
+    def setVideoWatermarksVarargs(value: Input[PresetVideoWatermark]*): Self = this.set("videoWatermarks", js.Array(value :_*))
+    @scala.inline
+    def setVideoWatermarks(value: Input[js.Array[Input[PresetVideoWatermark]]]): Self = this.set("videoWatermarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoWatermarks: Self = this.set("videoWatermarks", js.undefined)
+  }
+  
 }
 

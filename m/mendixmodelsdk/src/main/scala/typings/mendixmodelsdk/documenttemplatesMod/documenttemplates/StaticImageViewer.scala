@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/static-image-(document-template) relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/static-image-document-template relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticImageViewer")
 @js.native
@@ -27,14 +27,12 @@ class StaticImageViewer protected () extends Widget {
   @JSName("model")
   var model_FStaticImageViewer: IModel = js.native
   def height: Double = js.native
-  def height(newValue: Double): js.Any = js.native
-  def image(): js.Any = js.native
-  def image(newValue: IImage): js.Any = js.native
+  def height_=(newValue: Double): Unit = js.native
+  def image: IImage | Null = js.native
   def imageQualifiedName: String | Null = js.native
-  @JSName("image")
-  def image_Union: IImage | Null = js.native
+  def image_=(newValue: IImage | Null): Unit = js.native
   def width: Double = js.native
-  def width(newValue: Double): js.Any = js.native
+  def width_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 class ^ () extends Hexo {
   def this(base: String) = this()
+  def this(base: js.UndefOr[scala.Nothing], args: InstanceOptions) = this()
   def this(base: String, args: InstanceOptions) = this()
 }
 

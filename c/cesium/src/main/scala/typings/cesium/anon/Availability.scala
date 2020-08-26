@@ -26,96 +26,163 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Availability extends js.Object {
-  var availability: js.UndefOr[TimeIntervalCollection] = js.undefined
-  var billboard: js.UndefOr[BillboardGraphics] = js.undefined
-  var box: js.UndefOr[BoxGraphics] = js.undefined
-  var corridor: js.UndefOr[CorridorGraphics] = js.undefined
-  var cylinder: js.UndefOr[CylinderGraphics] = js.undefined
-  var description: js.UndefOr[Property] = js.undefined
-  var ellipse: js.UndefOr[EllipseGraphics] = js.undefined
-  var ellipsoid: js.UndefOr[EllipsoidGraphics] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[LabelGraphics] = js.undefined
-  var model: js.UndefOr[ModelGraphics] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var orientation: js.UndefOr[Property | Quaternion] = js.undefined
-  var parent: js.UndefOr[typings.cesium.mod.Entity] = js.undefined
-  var path: js.UndefOr[PathGraphics] = js.undefined
-  var plane: js.UndefOr[js.Any] = js.undefined
-  var point: js.UndefOr[PointGraphics] = js.undefined
-  var polygon: js.UndefOr[PolygonGraphics] = js.undefined
-  var polyline: js.UndefOr[PolylineGraphics] = js.undefined
-  var polylineVolume: js.UndefOr[PolylineVolumeGraphics] = js.undefined
-  var position: js.UndefOr[CallbackProperty | PositionProperty] = js.undefined
-  var properties: js.UndefOr[PropertyBag] = js.undefined
-  var rectangle: js.UndefOr[RectangleGraphics] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
-  var tileset: js.UndefOr[Cesium3DTilesetGraphics] = js.undefined
-  var viewFrom: js.UndefOr[Property] = js.undefined
-  var wall: js.UndefOr[WallGraphics] = js.undefined
+  var availability: js.UndefOr[TimeIntervalCollection] = js.native
+  var billboard: js.UndefOr[BillboardGraphics] = js.native
+  var box: js.UndefOr[BoxGraphics] = js.native
+  var corridor: js.UndefOr[CorridorGraphics] = js.native
+  var cylinder: js.UndefOr[CylinderGraphics] = js.native
+  var description: js.UndefOr[Property] = js.native
+  var ellipse: js.UndefOr[EllipseGraphics] = js.native
+  var ellipsoid: js.UndefOr[EllipsoidGraphics] = js.native
+  var id: js.UndefOr[String] = js.native
+  var label: js.UndefOr[LabelGraphics] = js.native
+  var model: js.UndefOr[ModelGraphics] = js.native
+  var name: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[Property | Quaternion] = js.native
+  var parent: js.UndefOr[typings.cesium.mod.Entity] = js.native
+  var path: js.UndefOr[PathGraphics] = js.native
+  var plane: js.UndefOr[js.Any] = js.native
+  var point: js.UndefOr[PointGraphics] = js.native
+  var polygon: js.UndefOr[PolygonGraphics] = js.native
+  var polyline: js.UndefOr[PolylineGraphics] = js.native
+  var polylineVolume: js.UndefOr[PolylineVolumeGraphics] = js.native
+  var position: js.UndefOr[CallbackProperty | PositionProperty] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.native
+  var rectangle: js.UndefOr[RectangleGraphics] = js.native
+  var show: js.UndefOr[Boolean] = js.native
+  var tileset: js.UndefOr[Cesium3DTilesetGraphics] = js.native
+  var viewFrom: js.UndefOr[Property] = js.native
+  var wall: js.UndefOr[WallGraphics] = js.native
 }
 
 object Availability {
   @scala.inline
-  def apply(
-    availability: TimeIntervalCollection = null,
-    billboard: BillboardGraphics = null,
-    box: BoxGraphics = null,
-    corridor: CorridorGraphics = null,
-    cylinder: CylinderGraphics = null,
-    description: Property = null,
-    ellipse: EllipseGraphics = null,
-    ellipsoid: EllipsoidGraphics = null,
-    id: String = null,
-    label: LabelGraphics = null,
-    model: ModelGraphics = null,
-    name: String = null,
-    orientation: Property | Quaternion = null,
-    parent: typings.cesium.mod.Entity = null,
-    path: PathGraphics = null,
-    plane: js.Any = null,
-    point: PointGraphics = null,
-    polygon: PolygonGraphics = null,
-    polyline: PolylineGraphics = null,
-    polylineVolume: PolylineVolumeGraphics = null,
-    position: CallbackProperty | PositionProperty = null,
-    properties: PropertyBag = null,
-    rectangle: RectangleGraphics = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    tileset: Cesium3DTilesetGraphics = null,
-    viewFrom: Property = null,
-    wall: WallGraphics = null
-  ): Availability = {
+  def apply(): Availability = {
     val __obj = js.Dynamic.literal()
-    if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
-    if (billboard != null) __obj.updateDynamic("billboard")(billboard.asInstanceOf[js.Any])
-    if (box != null) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
-    if (corridor != null) __obj.updateDynamic("corridor")(corridor.asInstanceOf[js.Any])
-    if (cylinder != null) __obj.updateDynamic("cylinder")(cylinder.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (ellipse != null) __obj.updateDynamic("ellipse")(ellipse.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (plane != null) __obj.updateDynamic("plane")(plane.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (polygon != null) __obj.updateDynamic("polygon")(polygon.asInstanceOf[js.Any])
-    if (polyline != null) __obj.updateDynamic("polyline")(polyline.asInstanceOf[js.Any])
-    if (polylineVolume != null) __obj.updateDynamic("polylineVolume")(polylineVolume.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (tileset != null) __obj.updateDynamic("tileset")(tileset.asInstanceOf[js.Any])
-    if (viewFrom != null) __obj.updateDynamic("viewFrom")(viewFrom.asInstanceOf[js.Any])
-    if (wall != null) __obj.updateDynamic("wall")(wall.asInstanceOf[js.Any])
     __obj.asInstanceOf[Availability]
   }
+  @scala.inline
+  implicit class AvailabilityOps[Self <: Availability] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailability(value: TimeIntervalCollection): Self = this.set("availability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailability: Self = this.set("availability", js.undefined)
+    @scala.inline
+    def setBillboard(value: BillboardGraphics): Self = this.set("billboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillboard: Self = this.set("billboard", js.undefined)
+    @scala.inline
+    def setBox(value: BoxGraphics): Self = this.set("box", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBox: Self = this.set("box", js.undefined)
+    @scala.inline
+    def setCorridor(value: CorridorGraphics): Self = this.set("corridor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorridor: Self = this.set("corridor", js.undefined)
+    @scala.inline
+    def setCylinder(value: CylinderGraphics): Self = this.set("cylinder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCylinder: Self = this.set("cylinder", js.undefined)
+    @scala.inline
+    def setDescription(value: Property): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEllipse(value: EllipseGraphics): Self = this.set("ellipse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEllipse: Self = this.set("ellipse", js.undefined)
+    @scala.inline
+    def setEllipsoid(value: EllipsoidGraphics): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLabel(value: LabelGraphics): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setModel(value: ModelGraphics): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrientation(value: Property | Quaternion): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setParent(value: typings.cesium.mod.Entity): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setPath(value: PathGraphics): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPlane(value: js.Any): Self = this.set("plane", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlane: Self = this.set("plane", js.undefined)
+    @scala.inline
+    def setPoint(value: PointGraphics): Self = this.set("point", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoint: Self = this.set("point", js.undefined)
+    @scala.inline
+    def setPolygon(value: PolygonGraphics): Self = this.set("polygon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolygon: Self = this.set("polygon", js.undefined)
+    @scala.inline
+    def setPolyline(value: PolylineGraphics): Self = this.set("polyline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolyline: Self = this.set("polyline", js.undefined)
+    @scala.inline
+    def setPolylineVolume(value: PolylineVolumeGraphics): Self = this.set("polylineVolume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolylineVolume: Self = this.set("polylineVolume", js.undefined)
+    @scala.inline
+    def setPosition(value: CallbackProperty | PositionProperty): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setRectangle(value: RectangleGraphics): Self = this.set("rectangle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRectangle: Self = this.set("rectangle", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setTileset(value: Cesium3DTilesetGraphics): Self = this.set("tileset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileset: Self = this.set("tileset", js.undefined)
+    @scala.inline
+    def setViewFrom(value: Property): Self = this.set("viewFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewFrom: Self = this.set("viewFrom", js.undefined)
+    @scala.inline
+    def setWall(value: WallGraphics): Self = this.set("wall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWall: Self = this.set("wall", js.undefined)
+  }
+  
 }
 

@@ -8,14 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.KeyNamePair")
 @js.native
-class KeyNamePair () extends IKeyNamePair {
-  /* CompleteClass */
-  override val Key: Double = js.native
-  /* CompleteClass */
-  override val Name: String = js.native
-  /* CompleteClass */
-  override def Clone(): IKeyNamePair = js.native
-}
+class KeyNamePair () extends IKeyNamePair
 
 @JSGlobal("MFiles.KeyNamePair")
 @js.native

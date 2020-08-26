@@ -47,16 +47,49 @@ object CreateCustomActionTypeInput {
     inputArtifactDetails: ArtifactDetails,
     outputArtifactDetails: ArtifactDetails,
     provider: ActionProvider,
-    version: Version,
-    configurationProperties: ActionConfigurationPropertyList = null,
-    settings: ActionTypeSettings = null,
-    tags: TagList = null
+    version: Version
   ): CreateCustomActionTypeInput = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], inputArtifactDetails = inputArtifactDetails.asInstanceOf[js.Any], outputArtifactDetails = outputArtifactDetails.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (configurationProperties != null) __obj.updateDynamic("configurationProperties")(configurationProperties.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCustomActionTypeInput]
   }
+  @scala.inline
+  implicit class CreateCustomActionTypeInputOps[Self <: CreateCustomActionTypeInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: ActionCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputArtifactDetails(value: ArtifactDetails): Self = this.set("inputArtifactDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputArtifactDetails(value: ArtifactDetails): Self = this.set("outputArtifactDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvider(value: ActionProvider): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigurationPropertiesVarargs(value: ActionConfigurationProperty*): Self = this.set("configurationProperties", js.Array(value :_*))
+    @scala.inline
+    def setConfigurationProperties(value: ActionConfigurationPropertyList): Self = this.set("configurationProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationProperties: Self = this.set("configurationProperties", js.undefined)
+    @scala.inline
+    def setSettings(value: ActionTypeSettings): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

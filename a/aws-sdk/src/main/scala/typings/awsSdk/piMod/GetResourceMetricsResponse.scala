@@ -30,20 +30,44 @@ trait GetResourceMetricsResponse extends js.Object {
 
 object GetResourceMetricsResponse {
   @scala.inline
-  def apply(
-    AlignedEndTime: ISOTimestamp = null,
-    AlignedStartTime: ISOTimestamp = null,
-    Identifier: String = null,
-    MetricList: MetricKeyDataPointsList = null,
-    NextToken: String = null
-  ): GetResourceMetricsResponse = {
+  def apply(): GetResourceMetricsResponse = {
     val __obj = js.Dynamic.literal()
-    if (AlignedEndTime != null) __obj.updateDynamic("AlignedEndTime")(AlignedEndTime.asInstanceOf[js.Any])
-    if (AlignedStartTime != null) __obj.updateDynamic("AlignedStartTime")(AlignedStartTime.asInstanceOf[js.Any])
-    if (Identifier != null) __obj.updateDynamic("Identifier")(Identifier.asInstanceOf[js.Any])
-    if (MetricList != null) __obj.updateDynamic("MetricList")(MetricList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceMetricsResponse]
   }
+  @scala.inline
+  implicit class GetResourceMetricsResponseOps[Self <: GetResourceMetricsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignedEndTime(value: ISOTimestamp): Self = this.set("AlignedEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignedEndTime: Self = this.set("AlignedEndTime", js.undefined)
+    @scala.inline
+    def setAlignedStartTime(value: ISOTimestamp): Self = this.set("AlignedStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignedStartTime: Self = this.set("AlignedStartTime", js.undefined)
+    @scala.inline
+    def setIdentifier(value: String): Self = this.set("Identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("Identifier", js.undefined)
+    @scala.inline
+    def setMetricListVarargs(value: MetricKeyDataPoints*): Self = this.set("MetricList", js.Array(value :_*))
+    @scala.inline
+    def setMetricList(value: MetricKeyDataPointsList): Self = this.set("MetricList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricList: Self = this.set("MetricList", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -28,6 +28,7 @@ class ResourceAdclients protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAdClients] = js.native
   def list(callback: BodyResponseCallback[SchemaAdClients]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdClients] = js.native
   def list(params: ParamsResourceAdclientsList): GaxiosPromise[SchemaAdClients] = js.native
   def list(params: ParamsResourceAdclientsList, callback: BodyResponseCallback[SchemaAdClients]): Unit = js.native
   def list(

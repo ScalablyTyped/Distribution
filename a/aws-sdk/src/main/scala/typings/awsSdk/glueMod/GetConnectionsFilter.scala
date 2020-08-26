@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetConnectionsFilter extends js.Object {
   /**
-    * The type of connections to return. Currently, only JDBC is supported; SFTP is not supported.
+    * The type of connections to return. Currently, SFTP is not supported.
     */
   var ConnectionType: js.UndefOr[typings.awsSdk.glueMod.ConnectionType] = js.native
   /**
@@ -18,11 +18,32 @@ trait GetConnectionsFilter extends js.Object {
 
 object GetConnectionsFilter {
   @scala.inline
-  def apply(ConnectionType: ConnectionType = null, MatchCriteria: MatchCriteria = null): GetConnectionsFilter = {
+  def apply(): GetConnectionsFilter = {
     val __obj = js.Dynamic.literal()
-    if (ConnectionType != null) __obj.updateDynamic("ConnectionType")(ConnectionType.asInstanceOf[js.Any])
-    if (MatchCriteria != null) __obj.updateDynamic("MatchCriteria")(MatchCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectionsFilter]
   }
+  @scala.inline
+  implicit class GetConnectionsFilterOps[Self <: GetConnectionsFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionType(value: ConnectionType): Self = this.set("ConnectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionType: Self = this.set("ConnectionType", js.undefined)
+    @scala.inline
+    def setMatchCriteriaVarargs(value: NameString*): Self = this.set("MatchCriteria", js.Array(value :_*))
+    @scala.inline
+    def setMatchCriteria(value: MatchCriteria): Self = this.set("MatchCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchCriteria: Self = this.set("MatchCriteria", js.undefined)
+  }
+  
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/grid-action-button relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/control-bar relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridActionButton")
 @js.native
@@ -26,9 +26,9 @@ class GridActionButton protected () extends GridControlBarButton {
   @JSName("model")
   var model_FGridActionButton: IModel = js.native
   def action: ClientAction = js.native
-  def action(newValue: ClientAction): js.Any = js.native
+  def action_=(newValue: ClientAction): Unit = js.native
   def maintainSelectionAfterMicroflow: Boolean = js.native
-  def maintainSelectionAfterMicroflow(newValue: Boolean): js.Any = js.native
+  def maintainSelectionAfterMicroflow_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

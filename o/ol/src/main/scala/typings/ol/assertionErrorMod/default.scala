@@ -8,11 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected () extends AssertionError {
   def this(code: Double) = this()
-  /* CompleteClass */
-  override var code: Double = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

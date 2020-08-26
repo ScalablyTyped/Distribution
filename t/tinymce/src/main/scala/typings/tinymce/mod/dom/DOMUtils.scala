@@ -19,7 +19,23 @@ class DOMUtils protected () extends js.Object {
   def this(doc: Document) = this()
   def this(doc: Document, settings: js.Object) = this()
   def add[T](parentElm: String, name: String): Element | js.Array[T] = js.native
+  def add[T](
+    parentElm: String,
+    name: String,
+    attrs: js.UndefOr[scala.Nothing],
+    html: js.UndefOr[scala.Nothing],
+    create: Boolean
+  ): Element | js.Array[T] = js.native
+  def add[T](parentElm: String, name: String, attrs: js.UndefOr[scala.Nothing], html: String): Element | js.Array[T] = js.native
+  def add[T](parentElm: String, name: String, attrs: js.UndefOr[scala.Nothing], html: String, create: Boolean): Element | js.Array[T] = js.native
   def add[T](parentElm: String, name: String, attrs: js.Object): Element | js.Array[T] = js.native
+  def add[T](
+    parentElm: String,
+    name: String,
+    attrs: js.Object,
+    html: js.UndefOr[scala.Nothing],
+    create: Boolean
+  ): Element | js.Array[T] = js.native
   def add[T](parentElm: String, name: String, attrs: js.Object, html: String): Element | js.Array[T] = js.native
   def add[T](parentElm: String, name: String, attrs: js.Object, html: String, create: Boolean): Element | js.Array[T] = js.native
   def addClass[T](elm: String, cls: String): String | js.Array[T] = js.native
@@ -27,10 +43,12 @@ class DOMUtils protected () extends js.Object {
   def bind(target: Element, name: String, func: js.Function0[Unit]): js.Function0[Unit] = js.native
   def bind(target: Element, name: String, func: js.Function0[Unit], scope: js.Object): js.Function0[Unit] = js.native
   def create(name: String): Element = js.native
+  def create(name: String, attrs: js.UndefOr[scala.Nothing], html: String): Element = js.native
   def create(name: String, attrs: js.Object): Element = js.native
   def create(name: String, attrs: js.Object, html: String): Element = js.native
   def createFragment(html: String): DocumentFragment = js.native
   def createHTML(name: String): String = js.native
+  def createHTML(name: String, attrs: js.UndefOr[scala.Nothing], html: String): String = js.native
   def createHTML(name: String, attrs: js.Object): String = js.native
   def createHTML(name: String, attrs: js.Object, html: String): String = js.native
   def createRng(): Range = js.native

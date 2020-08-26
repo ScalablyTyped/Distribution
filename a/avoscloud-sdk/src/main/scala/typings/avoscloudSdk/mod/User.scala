@@ -25,6 +25,7 @@ class User () extends Object {
   def logIn[T](): Promise[T] = js.native
   def logIn[T](options: SuccessFailureOptions): Promise[T] = js.native
   def save[T](arg1: js.Any): Promise[T] = js.native
+  def save[T](arg1: js.Any, arg2: js.UndefOr[scala.Nothing], arg3: js.Any): Promise[T] = js.native
   def save[T](arg1: js.Any, arg2: js.Any): Promise[T] = js.native
   def save[T](arg1: js.Any, arg2: js.Any, arg3: js.Any): Promise[T] = js.native
   def setEmail(email: String, options: SuccessFailureOptions): Boolean = js.native

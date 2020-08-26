@@ -10,9 +10,9 @@ Enforces SSL for node.js express projects
 | ------------------ | :-------------: |
 | Full name          | express-enforces-ssl |
 | Keywords           | express, expressjs, ssl, enforces, enforces-ssl, http, https, redirect |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 353114 |
+| # downloads        | 364844 |
 | # stars            | 8 |
 
 ## Links

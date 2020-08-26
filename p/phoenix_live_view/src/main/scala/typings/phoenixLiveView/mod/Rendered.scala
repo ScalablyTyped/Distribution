@@ -12,6 +12,7 @@ class Rendered protected () extends js.Object {
   def componentCIDs(diff: js.Any): js.Array[Double] = js.native
   def componentToString(cid: Double): String = js.native
   def expandStatics(diff: js.Any): Unit = js.native
+  def getComponent(diff: js.Any, cid: Double): js.Any = js.native
   def isComponentOnlyDiff(diff: js.Any): Boolean = js.native
   def mergeDiff(diff: js.Any): Unit = js.native
   def parentViewId(): String = js.native

@@ -234,6 +234,10 @@ class ManagementClient[A, U] protected () extends js.Object {
   def getUser_Promise(params: ObjectWithId): js.Promise[User[A, U]] = js.native
   def getUsers(): Unit = js.native
   def getUsers(cb: js.Function2[/* err */ Error, /* users */ js.Array[User[A, U]], Unit]): Unit = js.native
+  def getUsers(
+    params: js.UndefOr[scala.Nothing],
+    cb: js.Function2[/* err */ Error, /* users */ js.Array[User[A, U]], Unit]
+  ): Unit = js.native
   def getUsers(params: GetUsersData): Unit = js.native
   // Users
   def getUsers(params: GetUsersDataPaged): js.Promise[UserPage[A, U]] = js.native

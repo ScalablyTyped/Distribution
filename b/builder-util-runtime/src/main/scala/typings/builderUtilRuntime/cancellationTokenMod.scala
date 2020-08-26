@@ -10,12 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object cancellationTokenMod extends js.Object {
   @js.native
-  class CancellationError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+  class CancellationError () extends Error
   
   @js.native
   class CancellationToken () extends EventEmitter {
@@ -36,7 +31,7 @@ object cancellationTokenMod extends js.Object {
         ]
     ): js.Promise[R] = js.native
     def dispose(): Unit = js.native
-    def parent(value: CancellationToken): js.Any = js.native
+    def parent_=(value: CancellationToken): Unit = js.native
   }
   
 }

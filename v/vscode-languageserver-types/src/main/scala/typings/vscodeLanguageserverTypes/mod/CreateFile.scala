@@ -5,20 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateFile extends ResourceOperation {
   /**
     * A create
     */
   @JSName("kind")
-  var kind_CreateFile: create
+  var kind_CreateFile: create = js.native
   /**
     * Additional options
     */
-  var options: js.UndefOr[CreateFileOptions] = js.undefined
+  var options: js.UndefOr[CreateFileOptions] = js.native
   /**
     * The resource to create.
     */
-  var uri: DocumentUri
+  var uri: DocumentUri = js.native
 }
 
 @JSImport("vscode-languageserver-types", "CreateFile")

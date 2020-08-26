@@ -30,6 +30,12 @@ trait Imprint_ extends js.Object {
   def capture(
     canvas: HTMLCanvasElement,
     pixelRatio: Double,
+    callback: js.UndefOr[scala.Nothing],
+    opt_errback: js.Function1[/* s */ String, Unit]
+  ): Unit = js.native
+  def capture(
+    canvas: HTMLCanvasElement,
+    pixelRatio: Double,
     callback: js.Function1[/* canvas */ HTMLCanvasElement, Unit]
   ): Unit = js.native
   def capture(

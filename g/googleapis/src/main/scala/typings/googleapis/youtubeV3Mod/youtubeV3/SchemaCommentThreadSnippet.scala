@@ -42,22 +42,46 @@ trait SchemaCommentThreadSnippet extends js.Object {
 
 object SchemaCommentThreadSnippet {
   @scala.inline
-  def apply(
-    canReply: js.UndefOr[Boolean] = js.undefined,
-    channelId: String = null,
-    isPublic: js.UndefOr[Boolean] = js.undefined,
-    topLevelComment: SchemaComment = null,
-    totalReplyCount: js.UndefOr[Double] = js.undefined,
-    videoId: String = null
-  ): SchemaCommentThreadSnippet = {
+  def apply(): SchemaCommentThreadSnippet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canReply)) __obj.updateDynamic("canReply")(canReply.get.asInstanceOf[js.Any])
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic.get.asInstanceOf[js.Any])
-    if (topLevelComment != null) __obj.updateDynamic("topLevelComment")(topLevelComment.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalReplyCount)) __obj.updateDynamic("totalReplyCount")(totalReplyCount.get.asInstanceOf[js.Any])
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCommentThreadSnippet]
   }
+  @scala.inline
+  implicit class SchemaCommentThreadSnippetOps[Self <: SchemaCommentThreadSnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanReply(value: Boolean): Self = this.set("canReply", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanReply: Self = this.set("canReply", js.undefined)
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setIsPublic(value: Boolean): Self = this.set("isPublic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPublic: Self = this.set("isPublic", js.undefined)
+    @scala.inline
+    def setTopLevelComment(value: SchemaComment): Self = this.set("topLevelComment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopLevelComment: Self = this.set("topLevelComment", js.undefined)
+    @scala.inline
+    def setTotalReplyCount(value: Double): Self = this.set("totalReplyCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalReplyCount: Self = this.set("totalReplyCount", js.undefined)
+    @scala.inline
+    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoId: Self = this.set("videoId", js.undefined)
+  }
+  
 }
 

@@ -26,17 +26,38 @@ trait CreateReplicationGroupMemberAction extends js.Object {
 
 object CreateReplicationGroupMemberAction {
   @scala.inline
-  def apply(
-    RegionName: RegionName,
-    GlobalSecondaryIndexes: ReplicaGlobalSecondaryIndexList = null,
-    KMSMasterKeyId: KMSMasterKeyId = null,
-    ProvisionedThroughputOverride: ProvisionedThroughputOverride = null
-  ): CreateReplicationGroupMemberAction = {
+  def apply(RegionName: RegionName): CreateReplicationGroupMemberAction = {
     val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
-    if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes.asInstanceOf[js.Any])
-    if (KMSMasterKeyId != null) __obj.updateDynamic("KMSMasterKeyId")(KMSMasterKeyId.asInstanceOf[js.Any])
-    if (ProvisionedThroughputOverride != null) __obj.updateDynamic("ProvisionedThroughputOverride")(ProvisionedThroughputOverride.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReplicationGroupMemberAction]
   }
+  @scala.inline
+  implicit class CreateReplicationGroupMemberActionOps[Self <: CreateReplicationGroupMemberAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegionName(value: RegionName): Self = this.set("RegionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndex*): Self = this.set("GlobalSecondaryIndexes", js.Array(value :_*))
+    @scala.inline
+    def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexList): Self = this.set("GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalSecondaryIndexes: Self = this.set("GlobalSecondaryIndexes", js.undefined)
+    @scala.inline
+    def setKMSMasterKeyId(value: KMSMasterKeyId): Self = this.set("KMSMasterKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSMasterKeyId: Self = this.set("KMSMasterKeyId", js.undefined)
+    @scala.inline
+    def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = this.set("ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedThroughputOverride: Self = this.set("ProvisionedThroughputOverride", js.undefined)
+  }
+  
 }
 

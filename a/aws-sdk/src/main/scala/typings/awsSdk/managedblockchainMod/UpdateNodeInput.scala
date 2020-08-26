@@ -26,15 +26,32 @@ trait UpdateNodeInput extends js.Object {
 
 object UpdateNodeInput {
   @scala.inline
-  def apply(
-    MemberId: ResourceIdString,
-    NetworkId: ResourceIdString,
-    NodeId: ResourceIdString,
-    LogPublishingConfiguration: NodeLogPublishingConfiguration = null
-  ): UpdateNodeInput = {
+  def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString, NodeId: ResourceIdString): UpdateNodeInput = {
     val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any], NodeId = NodeId.asInstanceOf[js.Any])
-    if (LogPublishingConfiguration != null) __obj.updateDynamic("LogPublishingConfiguration")(LogPublishingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNodeInput]
   }
+  @scala.inline
+  implicit class UpdateNodeInputOps[Self <: UpdateNodeInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMemberId(value: ResourceIdString): Self = this.set("MemberId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNetworkId(value: ResourceIdString): Self = this.set("NetworkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeId(value: ResourceIdString): Self = this.set("NodeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLogPublishingConfiguration(value: NodeLogPublishingConfiguration): Self = this.set("LogPublishingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogPublishingConfiguration: Self = this.set("LogPublishingConfiguration", js.undefined)
+  }
+  
 }
 

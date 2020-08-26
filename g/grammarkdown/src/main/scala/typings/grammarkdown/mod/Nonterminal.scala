@@ -16,6 +16,11 @@ class Nonterminal protected ()
   ) = this()
   def this(
     name: typings.grammarkdown.nodesMod.Identifier,
+    argumentList: js.UndefOr[scala.Nothing],
+    questionToken: typings.grammarkdown.nodesMod.Token[QuestionToken]
+  ) = this()
+  def this(
+    name: typings.grammarkdown.nodesMod.Identifier,
     argumentList: typings.grammarkdown.nodesMod.ArgumentList,
     questionToken: typings.grammarkdown.nodesMod.Token[QuestionToken]
   ) = this()

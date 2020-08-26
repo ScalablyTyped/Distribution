@@ -21,11 +21,6 @@ class State () extends StateInfo {
     */
   var formattedDefaults: js.Any = js.native
   /**
-    * Gets the unique key
-    */
-  /* CompleteClass */
-  override var key: String = js.native
-  /**
     * Gets the route Url patterns
     */
   @JSName("route")

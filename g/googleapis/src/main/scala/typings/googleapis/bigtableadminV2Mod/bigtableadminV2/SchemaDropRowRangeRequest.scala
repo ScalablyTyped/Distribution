@@ -23,11 +23,30 @@ trait SchemaDropRowRangeRequest extends js.Object {
 
 object SchemaDropRowRangeRequest {
   @scala.inline
-  def apply(deleteAllDataFromTable: js.UndefOr[Boolean] = js.undefined, rowKeyPrefix: String = null): SchemaDropRowRangeRequest = {
+  def apply(): SchemaDropRowRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteAllDataFromTable)) __obj.updateDynamic("deleteAllDataFromTable")(deleteAllDataFromTable.get.asInstanceOf[js.Any])
-    if (rowKeyPrefix != null) __obj.updateDynamic("rowKeyPrefix")(rowKeyPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDropRowRangeRequest]
   }
+  @scala.inline
+  implicit class SchemaDropRowRangeRequestOps[Self <: SchemaDropRowRangeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteAllDataFromTable(value: Boolean): Self = this.set("deleteAllDataFromTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteAllDataFromTable: Self = this.set("deleteAllDataFromTable", js.undefined)
+    @scala.inline
+    def setRowKeyPrefix(value: String): Self = this.set("rowKeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowKeyPrefix: Self = this.set("rowKeyPrefix", js.undefined)
+  }
+  
 }
 

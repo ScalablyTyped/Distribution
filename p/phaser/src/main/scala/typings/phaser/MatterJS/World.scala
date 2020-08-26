@@ -16,9 +16,10 @@ import scala.scalajs.js.annotation._
   * @class World
   * @extends Composite
   */
+@js.native
 trait World extends js.Object {
-  var bounds: Bounds
-  var gravity: Gravity
+  var bounds: Bounds = js.native
+  var gravity: Gravity = js.native
 }
 
 object World {
@@ -27,5 +28,22 @@ object World {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], gravity = gravity.asInstanceOf[js.Any])
     __obj.asInstanceOf[World]
   }
+  @scala.inline
+  implicit class WorldOps[Self <: World] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBounds(value: Bounds): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGravity(value: Gravity): Self = this.set("gravity", value.asInstanceOf[js.Any])
+  }
+  
 }
 

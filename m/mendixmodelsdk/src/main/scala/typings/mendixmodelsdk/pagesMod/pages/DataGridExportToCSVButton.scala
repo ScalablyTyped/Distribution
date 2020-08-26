@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/export-to-csv-button relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/control-bar relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataGridExportToCSVButton")
 @js.native
@@ -26,17 +26,17 @@ class DataGridExportToCSVButton protected () extends GridControlBarButton {
   @JSName("model")
   var model_FDataGridExportToCSVButton: IModel = js.native
   def decimalSeparator: String = js.native
-  def decimalSeparator(newValue: String): js.Any = js.native
+  def decimalSeparator_=(newValue: String): Unit = js.native
   def delimiter: String = js.native
-  def delimiter(newValue: String): js.Any = js.native
+  def delimiter_=(newValue: String): Unit = js.native
   def generateExcelHint: Boolean = js.native
-  def generateExcelHint(newValue: Boolean): js.Any = js.native
+  def generateExcelHint_=(newValue: Boolean): Unit = js.native
   def groupSeparator: String = js.native
-  def groupSeparator(newValue: String): js.Any = js.native
+  def groupSeparator_=(newValue: String): Unit = js.native
   def maxNumberOfRows: Double = js.native
-  def maxNumberOfRows(newValue: Double): js.Any = js.native
+  def maxNumberOfRows_=(newValue: Double): Unit = js.native
   def useGridDateFormat: Boolean = js.native
-  def useGridDateFormat(newValue: Boolean): js.Any = js.native
+  def useGridDateFormat_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

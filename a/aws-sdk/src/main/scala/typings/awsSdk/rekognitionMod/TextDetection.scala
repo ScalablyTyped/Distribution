@@ -34,22 +34,46 @@ trait TextDetection extends js.Object {
 
 object TextDetection {
   @scala.inline
-  def apply(
-    Confidence: js.UndefOr[Percent] = js.undefined,
-    DetectedText: String = null,
-    Geometry: Geometry = null,
-    Id: js.UndefOr[UInteger] = js.undefined,
-    ParentId: js.UndefOr[UInteger] = js.undefined,
-    Type: TextTypes = null
-  ): TextDetection = {
+  def apply(): TextDetection = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
-    if (DetectedText != null) __obj.updateDynamic("DetectedText")(DetectedText.asInstanceOf[js.Any])
-    if (Geometry != null) __obj.updateDynamic("Geometry")(Geometry.asInstanceOf[js.Any])
-    if (!js.isUndefined(Id)) __obj.updateDynamic("Id")(Id.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParentId)) __obj.updateDynamic("ParentId")(ParentId.get.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDetection]
   }
+  @scala.inline
+  implicit class TextDetectionOps[Self <: TextDetection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    @scala.inline
+    def setDetectedText(value: String): Self = this.set("DetectedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectedText: Self = this.set("DetectedText", js.undefined)
+    @scala.inline
+    def setGeometry(value: Geometry): Self = this.set("Geometry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeometry: Self = this.set("Geometry", js.undefined)
+    @scala.inline
+    def setId(value: UInteger): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setParentId(value: UInteger): Self = this.set("ParentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("ParentId", js.undefined)
+    @scala.inline
+    def setType(value: TextTypes): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

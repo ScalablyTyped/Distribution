@@ -83,26 +83,56 @@ trait SchemaAttachedDiskInitializeParams extends js.Object {
 
 object SchemaAttachedDiskInitializeParams {
   @scala.inline
-  def apply(
-    description: String = null,
-    diskName: String = null,
-    diskSizeGb: String = null,
-    diskType: String = null,
-    guestOsFeatures: js.Array[SchemaGuestOsFeature] = null,
-    labels: StringDictionary[String] = null,
-    sourceImage: String = null,
-    sourceImageEncryptionKey: SchemaCustomerEncryptionKey = null
-  ): SchemaAttachedDiskInitializeParams = {
+  def apply(): SchemaAttachedDiskInitializeParams = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (diskName != null) __obj.updateDynamic("diskName")(diskName.asInstanceOf[js.Any])
-    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
-    if (diskType != null) __obj.updateDynamic("diskType")(diskType.asInstanceOf[js.Any])
-    if (guestOsFeatures != null) __obj.updateDynamic("guestOsFeatures")(guestOsFeatures.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage.asInstanceOf[js.Any])
-    if (sourceImageEncryptionKey != null) __obj.updateDynamic("sourceImageEncryptionKey")(sourceImageEncryptionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttachedDiskInitializeParams]
   }
+  @scala.inline
+  implicit class SchemaAttachedDiskInitializeParamsOps[Self <: SchemaAttachedDiskInitializeParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDiskName(value: String): Self = this.set("diskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskName: Self = this.set("diskName", js.undefined)
+    @scala.inline
+    def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    @scala.inline
+    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskType: Self = this.set("diskType", js.undefined)
+    @scala.inline
+    def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = this.set("guestOsFeatures", js.Array(value :_*))
+    @scala.inline
+    def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = this.set("guestOsFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuestOsFeatures: Self = this.set("guestOsFeatures", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setSourceImage(value: String): Self = this.set("sourceImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImage: Self = this.set("sourceImage", js.undefined)
+    @scala.inline
+    def setSourceImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceImageEncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImageEncryptionKey: Self = this.set("sourceImageEncryptionKey", js.undefined)
+  }
+  
 }
 

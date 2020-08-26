@@ -158,6 +158,15 @@ trait Board extends EventEmitter {
     stepsPerRev: Double,
     dirOrMotor1Pin: Double,
     stepOrMotor2Pin: Double,
+    motor3Pin: js.UndefOr[scala.Nothing],
+    motor4Pin: Double
+  ): Unit = js.native
+  def stepperConfig(
+    deviceNum: Double,
+    `type`: Double,
+    stepsPerRev: Double,
+    dirOrMotor1Pin: Double,
+    stepOrMotor2Pin: Double,
     motor3Pin: Double
   ): Unit = js.native
   def stepperConfig(
@@ -182,6 +191,15 @@ trait Board extends EventEmitter {
     steps: Double,
     speed: Double,
     accel: js.Function1[/* bool */ js.UndefOr[Boolean], Unit],
+    decel: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* bool */ js.UndefOr[Boolean], Unit]
+  ): Unit = js.native
+  def stepperStep(
+    deviceNum: Double,
+    direction: STEPPER_DIRECTION,
+    steps: Double,
+    speed: Double,
+    accel: js.Function1[/* bool */ js.UndefOr[Boolean], Unit],
     decel: Double
   ): Unit = js.native
   def stepperStep(
@@ -194,6 +212,15 @@ trait Board extends EventEmitter {
     callback: js.Function1[/* bool */ js.UndefOr[Boolean], Unit]
   ): Unit = js.native
   def stepperStep(deviceNum: Double, direction: STEPPER_DIRECTION, steps: Double, speed: Double, accel: Double): Unit = js.native
+  def stepperStep(
+    deviceNum: Double,
+    direction: STEPPER_DIRECTION,
+    steps: Double,
+    speed: Double,
+    accel: Double,
+    decel: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* bool */ js.UndefOr[Boolean], Unit]
+  ): Unit = js.native
   def stepperStep(
     deviceNum: Double,
     direction: STEPPER_DIRECTION,

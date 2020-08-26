@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * see the guide to extending Google
   * Docs.
   */
+@js.native
 trait PageBreak extends Element
 
 object PageBreak {

@@ -23,19 +23,5 @@ class ApplicationLoadEventArgs protected ()
     *           true to indicate that the event is a partial-page update.
     */
   def this(components: js.Any, isPartialLoad: Boolean) = this()
-  //#endregion
-  //#region Properties
-  /**
-    * Gets an array of all the components that were created since the last time the load event was raised.
-    * @return An array of all the components that were created since the last time the load event was raised.
-    */
-  /* CompleteClass */
-  override def get_components(): js.Array[typings.microsoftAjax.Sys.Component] = js.native
-  /**
-    * Returns a value that indicates whether the page is engaged in a partial-page update.
-    * @return true if the page is engaged in a partial-page update; otherwise, false.
-    */
-  /* CompleteClass */
-  override def get_isPartialLoad(): Boolean = js.native
 }
 

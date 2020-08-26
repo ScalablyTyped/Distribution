@@ -85,7 +85,26 @@ trait PlusContacts extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
   def getAddressBook(): Unit = js.native
+  def getAddressBook(
+    `type`: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def getAddressBook(
+    `type`: js.UndefOr[scala.Nothing],
+    successCB: js.Function1[/* result */ PlusContactsAddressBook, Unit]
+  ): Unit = js.native
+  def getAddressBook(
+    `type`: js.UndefOr[scala.Nothing],
+    successCB: js.Function1[/* result */ PlusContactsAddressBook, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def getAddressBook(`type`: Double): Unit = js.native
+  def getAddressBook(
+    `type`: Double,
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def getAddressBook(`type`: Double, successCB: js.Function1[/* result */ PlusContactsAddressBook, Unit]): Unit = js.native
   def getAddressBook(
     `type`: Double,

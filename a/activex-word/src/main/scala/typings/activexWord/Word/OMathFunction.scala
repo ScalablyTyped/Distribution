@@ -4,36 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OMathFunction extends js.Object {
-  val Acc: OMathAcc
-  val Application: typings.activexWord.Word.Application
-  val Args: OMathArgs
-  val Bar: OMathBar
-  val BorderBox: OMathBorderBox
-  val Box: OMathBox
-  val Creator: Double
-  val Delim: OMathDelim
-  val EqArray: OMathEqArray
-  val Frac: OMathFrac
-  val Func: OMathFunc
-  val GroupChar: OMathGroupChar
-  val LimLow: OMathLimLow
-  val LimUpp: OMathLimUpp
-  val Mat: OMathMat
-  val Nary: OMathNary
-  val OMath: typings.activexWord.Word.OMath
-  val Parent: js.Any
-  val Phantom: OMathPhantom
-  val Rad: OMathRad
-  val Range: typings.activexWord.Word.Range
-  val ScrPre: OMathScrPre
-  val ScrSub: OMathScrSub
-  val ScrSubSup: OMathScrSubSup
-  val ScrSup: OMathScrSup
-  val Type: WdOMathFunctionType
+  val Acc: OMathAcc = js.native
+  val Application: typings.activexWord.Word.Application = js.native
+  val Args: OMathArgs = js.native
+  val Bar: OMathBar = js.native
+  val BorderBox: OMathBorderBox = js.native
+  val Box: OMathBox = js.native
+  val Creator: Double = js.native
+  val Delim: OMathDelim = js.native
+  val EqArray: OMathEqArray = js.native
+  val Frac: OMathFrac = js.native
+  val Func: OMathFunc = js.native
+  val GroupChar: OMathGroupChar = js.native
+  val LimLow: OMathLimLow = js.native
+  val LimUpp: OMathLimUpp = js.native
+  val Mat: OMathMat = js.native
+  val Nary: OMathNary = js.native
+  val OMath: typings.activexWord.Word.OMath = js.native
+  val Parent: js.Any = js.native
+  val Phantom: OMathPhantom = js.native
+  val Rad: OMathRad = js.native
+  val Range: typings.activexWord.Word.Range = js.native
+  val ScrPre: OMathScrPre = js.native
+  val ScrSub: OMathScrSub = js.native
+  val ScrSubSup: OMathScrSubSup = js.native
+  val ScrSup: OMathScrSup = js.native
+  val Type: WdOMathFunctionType = js.native
   @JSName("Word.OMathFunction_typekey")
-  var WordDotOMathFunction_typekey: OMathFunction
-  def Remove(): OMathFunction
+  var WordDotOMathFunction_typekey: OMathFunction = js.native
+  def Remove(): OMathFunction = js.native
 }
 
 object OMathFunction {
@@ -72,5 +73,74 @@ object OMathFunction {
     __obj.updateDynamic("Word.OMathFunction_typekey")(WordDotOMathFunction_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OMathFunction]
   }
+  @scala.inline
+  implicit class OMathFunctionOps[Self <: OMathFunction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcc(value: OMathAcc): Self = this.set("Acc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArgs(value: OMathArgs): Self = this.set("Args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBar(value: OMathBar): Self = this.set("Bar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBorderBox(value: OMathBorderBox): Self = this.set("BorderBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBox(value: OMathBox): Self = this.set("Box", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelim(value: OMathDelim): Self = this.set("Delim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEqArray(value: OMathEqArray): Self = this.set("EqArray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFrac(value: OMathFrac): Self = this.set("Frac", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFunc(value: OMathFunc): Self = this.set("Func", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupChar(value: OMathGroupChar): Self = this.set("GroupChar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimLow(value: OMathLimLow): Self = this.set("LimLow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimUpp(value: OMathLimUpp): Self = this.set("LimUpp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMat(value: OMathMat): Self = this.set("Mat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNary(value: OMathNary): Self = this.set("Nary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOMath(value: OMath): Self = this.set("OMath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPhantom(value: OMathPhantom): Self = this.set("Phantom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRad(value: OMathRad): Self = this.set("Rad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRemove(value: () => OMathFunction): Self = this.set("Remove", js.Any.fromFunction0(value))
+    @scala.inline
+    def setScrPre(value: OMathScrPre): Self = this.set("ScrPre", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScrSub(value: OMathScrSub): Self = this.set("ScrSub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScrSubSup(value: OMathScrSubSup): Self = this.set("ScrSubSup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScrSup(value: OMathScrSup): Self = this.set("ScrSup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: WdOMathFunctionType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordDotOMathFunction_typekey(value: OMathFunction): Self = this.set("Word.OMathFunction_typekey", value.asInstanceOf[js.Any])
+  }
+  
 }
 

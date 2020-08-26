@@ -1,65 +1,87 @@
 package typings.antDesignReactNative.drawerPropsTypeMod
 
-import typings.antDesignReactNative.antDesignReactNativeStrings.bottom
-import typings.antDesignReactNative.antDesignReactNativeStrings.left
-import typings.antDesignReactNative.antDesignReactNativeStrings.right
-import typings.antDesignReactNative.antDesignReactNativeStrings.top
 import typings.react.mod.CSSProperties
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DrawerWebProps extends DrawerProps {
-  var className: js.UndefOr[String] = js.undefined
-  var contentStyle: js.UndefOr[CSSProperties] = js.undefined
-  var docked: js.UndefOr[Boolean] = js.undefined
-  var dragHandleStyle: js.UndefOr[CSSProperties] = js.undefined
-  var dragToggleDistance: js.UndefOr[Double] = js.undefined
-  var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var sidebarStyle: js.UndefOr[CSSProperties] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var touch: js.UndefOr[Boolean] = js.undefined
-  var transitions: js.UndefOr[Boolean] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var contentStyle: js.UndefOr[CSSProperties] = js.native
+  var docked: js.UndefOr[Boolean] = js.native
+  var dragHandleStyle: js.UndefOr[CSSProperties] = js.native
+  var dragToggleDistance: js.UndefOr[Double] = js.native
+  var overlayStyle: js.UndefOr[CSSProperties] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var sidebarStyle: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var touch: js.UndefOr[Boolean] = js.native
+  var transitions: js.UndefOr[Boolean] = js.native
 }
 
 object DrawerWebProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    contentStyle: CSSProperties = null,
-    docked: js.UndefOr[Boolean] = js.undefined,
-    dragHandleStyle: CSSProperties = null,
-    dragToggleDistance: js.UndefOr[Double] = js.undefined,
-    onOpenChange: /* isOpen */ Boolean => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    overlayStyle: CSSProperties = null,
-    position: left | right | top | bottom = null,
-    prefixCls: String = null,
-    sidebar: ReactNode = null,
-    sidebarStyle: CSSProperties = null,
-    style: CSSProperties = null,
-    touch: js.UndefOr[Boolean] = js.undefined,
-    transitions: js.UndefOr[Boolean] = js.undefined
-  ): DrawerWebProps = {
+  def apply(): DrawerWebProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(docked)) __obj.updateDynamic("docked")(docked.get.asInstanceOf[js.Any])
-    if (dragHandleStyle != null) __obj.updateDynamic("dragHandleStyle")(dragHandleStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragToggleDistance)) __obj.updateDynamic("dragToggleDistance")(dragToggleDistance.get.asInstanceOf[js.Any])
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (sidebar != null) __obj.updateDynamic("sidebar")(sidebar.asInstanceOf[js.Any])
-    if (sidebarStyle != null) __obj.updateDynamic("sidebarStyle")(sidebarStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerWebProps]
   }
+  @scala.inline
+  implicit class DrawerWebPropsOps[Self <: DrawerWebProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setContentStyle(value: CSSProperties): Self = this.set("contentStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentStyle: Self = this.set("contentStyle", js.undefined)
+    @scala.inline
+    def setDocked(value: Boolean): Self = this.set("docked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocked: Self = this.set("docked", js.undefined)
+    @scala.inline
+    def setDragHandleStyle(value: CSSProperties): Self = this.set("dragHandleStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragHandleStyle: Self = this.set("dragHandleStyle", js.undefined)
+    @scala.inline
+    def setDragToggleDistance(value: Double): Self = this.set("dragToggleDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragToggleDistance: Self = this.set("dragToggleDistance", js.undefined)
+    @scala.inline
+    def setOverlayStyle(value: CSSProperties): Self = this.set("overlayStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayStyle: Self = this.set("overlayStyle", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setSidebarStyle(value: CSSProperties): Self = this.set("sidebarStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSidebarStyle: Self = this.set("sidebarStyle", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTouch(value: Boolean): Self = this.set("touch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouch: Self = this.set("touch", js.undefined)
+    @scala.inline
+    def setTransitions(value: Boolean): Self = this.set("transitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitions: Self = this.set("transitions", js.undefined)
+  }
+  
 }
 

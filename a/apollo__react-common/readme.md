@@ -10,9 +10,9 @@ React Apollo common utilities.
 | ------------------ | :-------------: |
 | Full name          | @apollo/react-common |
 | Keywords           | apollo, graphql, react |
-| # releases         | 22 |
+| # releases         | 21 |
 | # dependents       | 16 |
-| # downloads        | 6396348 |
+| # downloads        | 7221647 |
 | # stars            | 0 |
 
 ## Links

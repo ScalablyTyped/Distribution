@@ -4,93 +4,164 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MapOptions extends js.Object {
-  var animateEnable: js.UndefOr[Boolean] = js.undefined
-  var center: js.UndefOr[LngLat] = js.undefined
-  var crs: js.UndefOr[String] = js.undefined
-  var cursor: js.UndefOr[String] = js.undefined
-  var defaultLayer: js.UndefOr[TileLayer] = js.undefined
-  var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
-  var dragEnable: js.UndefOr[Boolean] = js.undefined
-  var expandZoomRange: js.UndefOr[Boolean] = js.undefined
-  var features: js.UndefOr[js.Array[String]] = js.undefined
-  var indoorMap: js.UndefOr[IndoorMap] = js.undefined
-  var isHotspot: js.UndefOr[Boolean] = js.undefined
-  var jogEnable: js.UndefOr[Boolean] = js.undefined
-  var keyboardEnable: js.UndefOr[Boolean] = js.undefined
-  var labelzIndex: js.UndefOr[Double] = js.undefined
-  var lang: js.UndefOr[String] = js.undefined
-  var layers: js.UndefOr[js.Array[TileLayer]] = js.undefined
-  var level: js.UndefOr[Double] = js.undefined
-  var mapStyle: js.UndefOr[String] = js.undefined
-  var resizeEnable: js.UndefOr[Boolean] = js.undefined
-  var rotateEnable: js.UndefOr[Boolean] = js.undefined
-  var scrollWheel: js.UndefOr[Boolean] = js.undefined
-  var showIndoorMap: js.UndefOr[Boolean] = js.undefined
-  var touchZoom: js.UndefOr[Boolean] = js.undefined
-  var view: js.UndefOr[View2D] = js.undefined
-  var zoomEnable: js.UndefOr[Boolean] = js.undefined
-  var zooms: js.UndefOr[js.Array[Double]] = js.undefined
+  var animateEnable: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[LngLat] = js.native
+  var crs: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.native
+  var defaultLayer: js.UndefOr[TileLayer] = js.native
+  var doubleClickZoom: js.UndefOr[Boolean] = js.native
+  var dragEnable: js.UndefOr[Boolean] = js.native
+  var expandZoomRange: js.UndefOr[Boolean] = js.native
+  var features: js.UndefOr[js.Array[String]] = js.native
+  var indoorMap: js.UndefOr[IndoorMap] = js.native
+  var isHotspot: js.UndefOr[Boolean] = js.native
+  var jogEnable: js.UndefOr[Boolean] = js.native
+  var keyboardEnable: js.UndefOr[Boolean] = js.native
+  var labelzIndex: js.UndefOr[Double] = js.native
+  var lang: js.UndefOr[String] = js.native
+  var layers: js.UndefOr[js.Array[TileLayer]] = js.native
+  var level: js.UndefOr[Double] = js.native
+  var mapStyle: js.UndefOr[String] = js.native
+  var resizeEnable: js.UndefOr[Boolean] = js.native
+  var rotateEnable: js.UndefOr[Boolean] = js.native
+  var scrollWheel: js.UndefOr[Boolean] = js.native
+  var showIndoorMap: js.UndefOr[Boolean] = js.native
+  var touchZoom: js.UndefOr[Boolean] = js.native
+  var view: js.UndefOr[View2D] = js.native
+  var zoomEnable: js.UndefOr[Boolean] = js.native
+  var zooms: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object MapOptions {
   @scala.inline
-  def apply(
-    animateEnable: js.UndefOr[Boolean] = js.undefined,
-    center: LngLat = null,
-    crs: String = null,
-    cursor: String = null,
-    defaultLayer: TileLayer = null,
-    doubleClickZoom: js.UndefOr[Boolean] = js.undefined,
-    dragEnable: js.UndefOr[Boolean] = js.undefined,
-    expandZoomRange: js.UndefOr[Boolean] = js.undefined,
-    features: js.Array[String] = null,
-    indoorMap: IndoorMap = null,
-    isHotspot: js.UndefOr[Boolean] = js.undefined,
-    jogEnable: js.UndefOr[Boolean] = js.undefined,
-    keyboardEnable: js.UndefOr[Boolean] = js.undefined,
-    labelzIndex: js.UndefOr[Double] = js.undefined,
-    lang: String = null,
-    layers: js.Array[TileLayer] = null,
-    level: js.UndefOr[Double] = js.undefined,
-    mapStyle: String = null,
-    resizeEnable: js.UndefOr[Boolean] = js.undefined,
-    rotateEnable: js.UndefOr[Boolean] = js.undefined,
-    scrollWheel: js.UndefOr[Boolean] = js.undefined,
-    showIndoorMap: js.UndefOr[Boolean] = js.undefined,
-    touchZoom: js.UndefOr[Boolean] = js.undefined,
-    view: View2D = null,
-    zoomEnable: js.UndefOr[Boolean] = js.undefined,
-    zooms: js.Array[Double] = null
-  ): MapOptions = {
+  def apply(): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animateEnable)) __obj.updateDynamic("animateEnable")(animateEnable.get.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (crs != null) __obj.updateDynamic("crs")(crs.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (defaultLayer != null) __obj.updateDynamic("defaultLayer")(defaultLayer.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragEnable)) __obj.updateDynamic("dragEnable")(dragEnable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandZoomRange)) __obj.updateDynamic("expandZoomRange")(expandZoomRange.get.asInstanceOf[js.Any])
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (indoorMap != null) __obj.updateDynamic("indoorMap")(indoorMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHotspot)) __obj.updateDynamic("isHotspot")(isHotspot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(jogEnable)) __obj.updateDynamic("jogEnable")(jogEnable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardEnable)) __obj.updateDynamic("keyboardEnable")(keyboardEnable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelzIndex)) __obj.updateDynamic("labelzIndex")(labelzIndex.get.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
-    if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeEnable)) __obj.updateDynamic("resizeEnable")(resizeEnable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateEnable)) __obj.updateDynamic("rotateEnable")(rotateEnable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollWheel)) __obj.updateDynamic("scrollWheel")(scrollWheel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIndoorMap)) __obj.updateDynamic("showIndoorMap")(showIndoorMap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.get.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomEnable)) __obj.updateDynamic("zoomEnable")(zoomEnable.get.asInstanceOf[js.Any])
-    if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
+  @scala.inline
+  implicit class MapOptionsOps[Self <: MapOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimateEnable(value: Boolean): Self = this.set("animateEnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimateEnable: Self = this.set("animateEnable", js.undefined)
+    @scala.inline
+    def setCenter(value: LngLat): Self = this.set("center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenter: Self = this.set("center", js.undefined)
+    @scala.inline
+    def setCrs(value: String): Self = this.set("crs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrs: Self = this.set("crs", js.undefined)
+    @scala.inline
+    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursor: Self = this.set("cursor", js.undefined)
+    @scala.inline
+    def setDefaultLayer(value: TileLayer): Self = this.set("defaultLayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLayer: Self = this.set("defaultLayer", js.undefined)
+    @scala.inline
+    def setDoubleClickZoom(value: Boolean): Self = this.set("doubleClickZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleClickZoom: Self = this.set("doubleClickZoom", js.undefined)
+    @scala.inline
+    def setDragEnable(value: Boolean): Self = this.set("dragEnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragEnable: Self = this.set("dragEnable", js.undefined)
+    @scala.inline
+    def setExpandZoomRange(value: Boolean): Self = this.set("expandZoomRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandZoomRange: Self = this.set("expandZoomRange", js.undefined)
+    @scala.inline
+    def setFeaturesVarargs(value: String*): Self = this.set("features", js.Array(value :_*))
+    @scala.inline
+    def setFeatures(value: js.Array[String]): Self = this.set("features", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatures: Self = this.set("features", js.undefined)
+    @scala.inline
+    def setIndoorMap(value: IndoorMap): Self = this.set("indoorMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndoorMap: Self = this.set("indoorMap", js.undefined)
+    @scala.inline
+    def setIsHotspot(value: Boolean): Self = this.set("isHotspot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsHotspot: Self = this.set("isHotspot", js.undefined)
+    @scala.inline
+    def setJogEnable(value: Boolean): Self = this.set("jogEnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJogEnable: Self = this.set("jogEnable", js.undefined)
+    @scala.inline
+    def setKeyboardEnable(value: Boolean): Self = this.set("keyboardEnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardEnable: Self = this.set("keyboardEnable", js.undefined)
+    @scala.inline
+    def setLabelzIndex(value: Double): Self = this.set("labelzIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelzIndex: Self = this.set("labelzIndex", js.undefined)
+    @scala.inline
+    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setLayersVarargs(value: TileLayer*): Self = this.set("layers", js.Array(value :_*))
+    @scala.inline
+    def setLayers(value: js.Array[TileLayer]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayers: Self = this.set("layers", js.undefined)
+    @scala.inline
+    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setMapStyle(value: String): Self = this.set("mapStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapStyle: Self = this.set("mapStyle", js.undefined)
+    @scala.inline
+    def setResizeEnable(value: Boolean): Self = this.set("resizeEnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizeEnable: Self = this.set("resizeEnable", js.undefined)
+    @scala.inline
+    def setRotateEnable(value: Boolean): Self = this.set("rotateEnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotateEnable: Self = this.set("rotateEnable", js.undefined)
+    @scala.inline
+    def setScrollWheel(value: Boolean): Self = this.set("scrollWheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollWheel: Self = this.set("scrollWheel", js.undefined)
+    @scala.inline
+    def setShowIndoorMap(value: Boolean): Self = this.set("showIndoorMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowIndoorMap: Self = this.set("showIndoorMap", js.undefined)
+    @scala.inline
+    def setTouchZoom(value: Boolean): Self = this.set("touchZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchZoom: Self = this.set("touchZoom", js.undefined)
+    @scala.inline
+    def setView(value: View2D): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setZoomEnable(value: Boolean): Self = this.set("zoomEnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomEnable: Self = this.set("zoomEnable", js.undefined)
+    @scala.inline
+    def setZoomsVarargs(value: Double*): Self = this.set("zooms", js.Array(value :_*))
+    @scala.inline
+    def setZooms(value: js.Array[Double]): Self = this.set("zooms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZooms: Self = this.set("zooms", js.undefined)
+  }
+  
 }
 

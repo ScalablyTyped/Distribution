@@ -10,9 +10,9 @@ Storybook decorator to center components
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-centered |
 | Keywords           | addon, storybook |
-| # releases         | 426 |
-| # dependents       | 23 |
-| # downloads        | 3455176 |
+| # releases         | 427 |
+| # dependents       | 25 |
+| # downloads        | 3547892 |
 | # stars            | 0 |
 
 ## Links

@@ -18,48 +18,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MeterProps extends js.Object {
-  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
-  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var background: js.UndefOr[String | ColorOpacity] = js.undefined
-  var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var margin: js.UndefOr[MarginType] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var round: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[xsmall | small | medium | large | xlarge | full | String] = js.undefined
-  var thickness: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
-  var `type`: js.UndefOr[bar | circle] = js.undefined
-  var values: js.UndefOr[js.Array[Highlight]] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+  var alignSelf: js.UndefOr[AlignSelfType] = js.native
+  var background: js.UndefOr[String | ColorOpacity] = js.native
+  var gridArea: js.UndefOr[GridAreaType] = js.native
+  var margin: js.UndefOr[MarginType] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var round: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[xsmall | small | medium | large | xlarge | full | String] = js.native
+  var thickness: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.native
+  var `type`: js.UndefOr[bar | circle] = js.native
+  var values: js.UndefOr[js.Array[Highlight]] = js.native
 }
 
 object MeterProps {
   @scala.inline
-  def apply(
-    a11yTitle: A11yTitleType = null,
-    alignSelf: AlignSelfType = null,
-    background: String | ColorOpacity = null,
-    gridArea: GridAreaType = null,
-    margin: MarginType = null,
-    max: js.UndefOr[Double] = js.undefined,
-    round: js.UndefOr[Boolean] = js.undefined,
-    size: xsmall | small | medium | large | xlarge | full | String = null,
-    thickness: xsmall | small | medium | large | xlarge | String = null,
-    `type`: bar | circle = null,
-    values: js.Array[Highlight] = null
-  ): MeterProps = {
+  def apply(): MeterProps = {
     val __obj = js.Dynamic.literal()
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeterProps]
   }
+  @scala.inline
+  implicit class MeterPropsOps[Self <: MeterProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setA11yTitle(value: A11yTitleType): Self = this.set("a11yTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA11yTitle: Self = this.set("a11yTitle", js.undefined)
+    @scala.inline
+    def setAlignSelf(value: AlignSelfType): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    @scala.inline
+    def setBackground(value: String | ColorOpacity): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setGridArea(value: GridAreaType): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    @scala.inline
+    def setMargin(value: MarginType): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setRound(value: Boolean): Self = this.set("round", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRound: Self = this.set("round", js.undefined)
+    @scala.inline
+    def setSize(value: xsmall | small | medium | large | xlarge | full | String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setThickness(value: xsmall | small | medium | large | xlarge | String): Self = this.set("thickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThickness: Self = this.set("thickness", js.undefined)
+    @scala.inline
+    def setType(value: bar | circle): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: Highlight*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: js.Array[Highlight]): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SwitchOptions extends js.Object {
-  var change: js.UndefOr[js.Function1[/* e */ SwitchChangeEvent, Unit]] = js.undefined
-  var checked: js.UndefOr[Boolean] = js.undefined
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  var messages: js.UndefOr[SwitchMessages] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var readonly: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
+  var change: js.UndefOr[js.Function1[/* e */ SwitchChangeEvent, Unit]] = js.native
+  var checked: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.native
+  var messages: js.UndefOr[SwitchMessages] = js.native
+  var name: js.UndefOr[String] = js.native
+  var readonly: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 
 object SwitchOptions {
   @scala.inline
-  def apply(
-    change: /* e */ SwitchChangeEvent => Unit = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    messages: SwitchMessages = null,
-    name: String = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String = null
-  ): SwitchOptions = {
+  def apply(): SwitchOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchOptions]
   }
+  @scala.inline
+  implicit class SwitchOptionsOps[Self <: SwitchOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChange(value: /* e */ SwitchChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecked: Self = this.set("checked", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setMessages(value: SwitchMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadonly: Self = this.set("readonly", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

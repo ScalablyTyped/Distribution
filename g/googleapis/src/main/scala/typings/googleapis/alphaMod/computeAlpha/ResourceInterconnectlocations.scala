@@ -29,6 +29,7 @@ class ResourceInterconnectlocations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInterconnectLocation] = js.native
   def get(callback: BodyResponseCallback[SchemaInterconnectLocation]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInterconnectLocation] = js.native
   def get(params: ParamsResourceInterconnectlocationsGet): GaxiosPromise[SchemaInterconnectLocation] = js.native
   def get(
     params: ParamsResourceInterconnectlocationsGet,
@@ -64,6 +65,7 @@ class ResourceInterconnectlocations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaInterconnectLocationList] = js.native
   def list(callback: BodyResponseCallback[SchemaInterconnectLocationList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInterconnectLocationList] = js.native
   def list(params: ParamsResourceInterconnectlocationsList): GaxiosPromise[SchemaInterconnectLocationList] = js.native
   def list(
     params: ParamsResourceInterconnectlocationsList,
@@ -96,6 +98,7 @@ class ResourceInterconnectlocations protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceInterconnectlocationsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceInterconnectlocationsTestiampermissions,

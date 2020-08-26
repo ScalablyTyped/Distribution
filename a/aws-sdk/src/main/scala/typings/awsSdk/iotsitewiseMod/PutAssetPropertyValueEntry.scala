@@ -30,18 +30,40 @@ trait PutAssetPropertyValueEntry extends js.Object {
 
 object PutAssetPropertyValueEntry {
   @scala.inline
-  def apply(
-    entryId: EntryId,
-    propertyValues: AssetPropertyValues,
-    assetId: ID = null,
-    propertyAlias: AssetPropertyAlias = null,
-    propertyId: ID = null
-  ): PutAssetPropertyValueEntry = {
+  def apply(entryId: EntryId, propertyValues: AssetPropertyValues): PutAssetPropertyValueEntry = {
     val __obj = js.Dynamic.literal(entryId = entryId.asInstanceOf[js.Any], propertyValues = propertyValues.asInstanceOf[js.Any])
-    if (assetId != null) __obj.updateDynamic("assetId")(assetId.asInstanceOf[js.Any])
-    if (propertyAlias != null) __obj.updateDynamic("propertyAlias")(propertyAlias.asInstanceOf[js.Any])
-    if (propertyId != null) __obj.updateDynamic("propertyId")(propertyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutAssetPropertyValueEntry]
   }
+  @scala.inline
+  implicit class PutAssetPropertyValueEntryOps[Self <: PutAssetPropertyValueEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntryId(value: EntryId): Self = this.set("entryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPropertyValuesVarargs(value: AssetPropertyValue*): Self = this.set("propertyValues", js.Array(value :_*))
+    @scala.inline
+    def setPropertyValues(value: AssetPropertyValues): Self = this.set("propertyValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssetId(value: ID): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetId: Self = this.set("assetId", js.undefined)
+    @scala.inline
+    def setPropertyAlias(value: AssetPropertyAlias): Self = this.set("propertyAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyAlias: Self = this.set("propertyAlias", js.undefined)
+    @scala.inline
+    def setPropertyId(value: ID): Self = this.set("propertyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyId: Self = this.set("propertyId", js.undefined)
+  }
+  
 }
 

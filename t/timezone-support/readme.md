@@ -12,7 +12,7 @@ Lightweight time zone support for your applications or other date libraries.
 | Keywords           | timezone, tzdata, convert, offset, date, time |
 | # releases         | 27 |
 | # dependents       | 14 |
-| # downloads        | 1468516 |
+| # downloads        | 1583188 |
 | # stars            | 0 |
 
 ## Links

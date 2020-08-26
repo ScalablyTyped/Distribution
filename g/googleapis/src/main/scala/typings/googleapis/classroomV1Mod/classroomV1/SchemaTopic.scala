@@ -33,13 +33,38 @@ trait SchemaTopic extends js.Object {
 
 object SchemaTopic {
   @scala.inline
-  def apply(courseId: String = null, name: String = null, topicId: String = null, updateTime: String = null): SchemaTopic = {
+  def apply(): SchemaTopic = {
     val __obj = js.Dynamic.literal()
-    if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (topicId != null) __obj.updateDynamic("topicId")(topicId.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTopic]
   }
+  @scala.inline
+  implicit class SchemaTopicOps[Self <: SchemaTopic] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCourseId(value: String): Self = this.set("courseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCourseId: Self = this.set("courseId", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTopicId(value: String): Self = this.set("topicId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicId: Self = this.set("topicId", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

@@ -22,12 +22,34 @@ trait GetRecoveryPointRestoreMetadataOutput extends js.Object {
 
 object GetRecoveryPointRestoreMetadataOutput {
   @scala.inline
-  def apply(BackupVaultArn: ARN = null, RecoveryPointArn: ARN = null, RestoreMetadata: Metadata = null): GetRecoveryPointRestoreMetadataOutput = {
+  def apply(): GetRecoveryPointRestoreMetadataOutput = {
     val __obj = js.Dynamic.literal()
-    if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn.asInstanceOf[js.Any])
-    if (RecoveryPointArn != null) __obj.updateDynamic("RecoveryPointArn")(RecoveryPointArn.asInstanceOf[js.Any])
-    if (RestoreMetadata != null) __obj.updateDynamic("RestoreMetadata")(RestoreMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecoveryPointRestoreMetadataOutput]
   }
+  @scala.inline
+  implicit class GetRecoveryPointRestoreMetadataOutputOps[Self <: GetRecoveryPointRestoreMetadataOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupVaultArn(value: ARN): Self = this.set("BackupVaultArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupVaultArn: Self = this.set("BackupVaultArn", js.undefined)
+    @scala.inline
+    def setRecoveryPointArn(value: ARN): Self = this.set("RecoveryPointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecoveryPointArn: Self = this.set("RecoveryPointArn", js.undefined)
+    @scala.inline
+    def setRestoreMetadata(value: Metadata): Self = this.set("RestoreMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestoreMetadata: Self = this.set("RestoreMetadata", js.undefined)
+  }
+  
 }
 

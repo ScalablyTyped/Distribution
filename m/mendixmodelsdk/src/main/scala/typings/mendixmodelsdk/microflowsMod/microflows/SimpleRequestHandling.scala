@@ -27,7 +27,7 @@ class SimpleRequestHandling protected () extends RequestHandling {
     * In version 6.7.0: introduced
     */
   def nullValueOption: NullValueOption = js.native
-  def nullValueOption(newValue: NullValueOption): js.Any = js.native
+  def nullValueOption_=(newValue: NullValueOption): Unit = js.native
   def parameterMappings: IList[WebServiceOperationSimpleParameterMapping] = js.native
 }
 

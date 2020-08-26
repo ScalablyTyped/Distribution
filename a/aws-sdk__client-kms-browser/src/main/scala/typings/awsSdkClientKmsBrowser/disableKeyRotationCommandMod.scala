@@ -26,16 +26,9 @@ object disableKeyRotationCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DisableKeyRotationInput) = this()
-    /* CompleteClass */
-    override val input: DisableKeyRotationInput = js.native
     val middlewareStack: MiddlewareStack[DisableKeyRotationInput, DisableKeyRotationOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KMSResolvedConfiguration
-    ): Handler[DisableKeyRotationInput, DisableKeyRotationOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KMSResolvedConfiguration
     ): Handler[DisableKeyRotationInput, DisableKeyRotationOutput] = js.native
   }

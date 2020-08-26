@@ -10,9 +10,9 @@ Utility to help find out why Node isn't exiting
 | ------------------ | :-------------: |
 | Full name          | wtfnode |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 11 |
-| # downloads        | 661866 |
+| # downloads        | 714379 |
 | # stars            | 11 |
 
 ## Links

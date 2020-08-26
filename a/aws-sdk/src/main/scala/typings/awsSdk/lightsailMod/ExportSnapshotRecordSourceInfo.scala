@@ -42,26 +42,54 @@ trait ExportSnapshotRecordSourceInfo extends js.Object {
 
 object ExportSnapshotRecordSourceInfo {
   @scala.inline
-  def apply(
-    arn: NonEmptyString = null,
-    createdAt: IsoDate = null,
-    diskSnapshotInfo: DiskSnapshotInfo = null,
-    fromResourceArn: NonEmptyString = null,
-    fromResourceName: NonEmptyString = null,
-    instanceSnapshotInfo: InstanceSnapshotInfo = null,
-    name: NonEmptyString = null,
-    resourceType: ExportSnapshotRecordSourceType = null
-  ): ExportSnapshotRecordSourceInfo = {
+  def apply(): ExportSnapshotRecordSourceInfo = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (diskSnapshotInfo != null) __obj.updateDynamic("diskSnapshotInfo")(diskSnapshotInfo.asInstanceOf[js.Any])
-    if (fromResourceArn != null) __obj.updateDynamic("fromResourceArn")(fromResourceArn.asInstanceOf[js.Any])
-    if (fromResourceName != null) __obj.updateDynamic("fromResourceName")(fromResourceName.asInstanceOf[js.Any])
-    if (instanceSnapshotInfo != null) __obj.updateDynamic("instanceSnapshotInfo")(instanceSnapshotInfo.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSnapshotRecordSourceInfo]
   }
+  @scala.inline
+  implicit class ExportSnapshotRecordSourceInfoOps[Self <: ExportSnapshotRecordSourceInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDiskSnapshotInfo(value: DiskSnapshotInfo): Self = this.set("diskSnapshotInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSnapshotInfo: Self = this.set("diskSnapshotInfo", js.undefined)
+    @scala.inline
+    def setFromResourceArn(value: NonEmptyString): Self = this.set("fromResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromResourceArn: Self = this.set("fromResourceArn", js.undefined)
+    @scala.inline
+    def setFromResourceName(value: NonEmptyString): Self = this.set("fromResourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromResourceName: Self = this.set("fromResourceName", js.undefined)
+    @scala.inline
+    def setInstanceSnapshotInfo(value: InstanceSnapshotInfo): Self = this.set("instanceSnapshotInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceSnapshotInfo: Self = this.set("instanceSnapshotInfo", js.undefined)
+    @scala.inline
+    def setName(value: NonEmptyString): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResourceType(value: ExportSnapshotRecordSourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+  }
+  
 }
 

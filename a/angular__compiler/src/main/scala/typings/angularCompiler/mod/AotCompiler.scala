@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "AotCompiler")
 @js.native
 class AotCompiler protected ()
-  extends typings.angularCompiler.publicApiMod.AotCompiler {
+  extends typings.angularCompiler.compilerMod.AotCompiler {
   def this(
     _config: typings.angularCompiler.configMod.CompilerConfig,
     _options: AotCompilerOptions,

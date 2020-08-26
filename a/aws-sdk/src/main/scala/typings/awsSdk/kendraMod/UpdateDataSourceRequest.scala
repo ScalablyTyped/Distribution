@@ -35,22 +35,46 @@ trait UpdateDataSourceRequest extends js.Object {
 
 object UpdateDataSourceRequest {
   @scala.inline
-  def apply(
-    Id: DataSourceId,
-    IndexId: IndexId,
-    Configuration: DataSourceConfiguration = null,
-    Description: Description = null,
-    Name: DataSourceName = null,
-    RoleArn: RoleArn = null,
-    Schedule: ScanSchedule = null
-  ): UpdateDataSourceRequest = {
+  def apply(Id: DataSourceId, IndexId: IndexId): UpdateDataSourceRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
-    if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDataSourceRequest]
   }
+  @scala.inline
+  implicit class UpdateDataSourceRequestOps[Self <: UpdateDataSourceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: DataSourceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndexId(value: IndexId): Self = this.set("IndexId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfiguration(value: DataSourceConfiguration): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("Configuration", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setName(value: DataSourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setSchedule(value: ScanSchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+  }
+  
 }
 

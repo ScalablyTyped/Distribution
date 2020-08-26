@@ -102,7 +102,7 @@ object SchemaTypes extends js.Object {
           Instantiable3[
             /* schema */ Schema[js.Any], 
             /* key */ String, 
-            js.UndefOr[/* options */ js.Any], 
+            /* options */ js.UndefOr[js.Any], 
             typings.mongoose.mod.Schema.Types.Embedded
           ]
         ]
@@ -116,7 +116,7 @@ object SchemaTypes extends js.Object {
     extends TopLevel[
           Instantiable2[
             /* key */ String, 
-            js.UndefOr[/* options */ js.Any], 
+            /* options */ js.UndefOr[js.Any], 
             typings.mongoose.mod.Schema.Types.Map
           ]
         ]

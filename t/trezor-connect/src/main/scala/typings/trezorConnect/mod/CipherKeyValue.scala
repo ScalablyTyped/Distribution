@@ -1,29 +1,34 @@
 package typings.trezorConnect.mod
 
-import typings.trezorConnect.anon.Instance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CipherKeyValue extends CommonParams {
-  var value: String
+  var value: String = js.native
 }
 
 object CipherKeyValue {
   @scala.inline
-  def apply(
-    value: String,
-    allowSeedlessDevice: js.UndefOr[Boolean] = js.undefined,
-    device: Instance = null,
-    keepSession: js.UndefOr[Boolean] = js.undefined,
-    useEmptyPassphrase: js.UndefOr[Boolean] = js.undefined
-  ): CipherKeyValue = {
+  def apply(value: String): CipherKeyValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice.get.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CipherKeyValue]
   }
+  @scala.inline
+  implicit class CipherKeyValueOps[Self <: CipherKeyValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+  }
+  
 }
 

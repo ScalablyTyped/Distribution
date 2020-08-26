@@ -36,35 +36,31 @@ class DocumentTemplate protected () extends Document {
   @JSName("model")
   var model_FDocumentTemplate: IModel = js.native
   def canvasWidth: Double = js.native
-  def canvasWidth(newValue: Double): js.Any = js.native
+  def canvasWidth_=(newValue: Double): Unit = js.native
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MDocumentTemplate: FolderBase = js.native
-  def footer(): js.Any = js.native
-  def footer(newValue: Footer): js.Any = js.native
-  @JSName("footer")
-  def footer_Union: Footer | Null = js.native
-  def header(): js.Any = js.native
-  def header(newValue: Header): js.Any = js.native
-  @JSName("header")
-  def header_Union: Header | Null = js.native
+  def footer: Footer | Null = js.native
+  def footer_=(newValue: Footer | Null): Unit = js.native
+  def header: Header | Null = js.native
+  def header_=(newValue: Header | Null): Unit = js.native
   def marginBottomInInch: Double = js.native
-  def marginBottomInInch(newValue: Double): js.Any = js.native
+  def marginBottomInInch_=(newValue: Double): Unit = js.native
   def marginLeftInInch: Double = js.native
-  def marginLeftInInch(newValue: Double): js.Any = js.native
+  def marginLeftInInch_=(newValue: Double): Unit = js.native
   def marginRightInInch: Double = js.native
-  def marginRightInInch(newValue: Double): js.Any = js.native
+  def marginRightInInch_=(newValue: Double): Unit = js.native
   def marginTopInInch: Double = js.native
-  def marginTopInInch(newValue: Double): js.Any = js.native
+  def marginTopInInch_=(newValue: Double): Unit = js.native
   def pageHeight: String = js.native
-  def pageHeight(newValue: String): js.Any = js.native
+  def pageHeight_=(newValue: String): Unit = js.native
   def pageWidth: String = js.native
-  def pageWidth(newValue: String): js.Any = js.native
+  def pageWidth_=(newValue: String): Unit = js.native
   def ppi: Double = js.native
-  def ppi(newValue: Double): js.Any = js.native
+  def ppi_=(newValue: Double): Unit = js.native
   def showHeaderAndFooterOnFirstPage: Boolean = js.native
-  def showHeaderAndFooterOnFirstPage(newValue: Boolean): js.Any = js.native
+  def showHeaderAndFooterOnFirstPage_=(newValue: Boolean): Unit = js.native
   def style: Style = js.native
-  def style(newValue: Style): js.Any = js.native
+  def style_=(newValue: Style): Unit = js.native
   def toplevels: IList[Widget] = js.native
 }
 

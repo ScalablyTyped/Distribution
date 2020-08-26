@@ -5,55 +5,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClientDetails extends ShopifyObject {
   /**
     * Shopify does not offer documentation for this field.
     */
-  var accept_language: js.UndefOr[String] = js.undefined
+  var accept_language: js.UndefOr[String] = js.native
   /**
     *  The browser screen height in pixels, if available.
     */
-  var browser_height: js.UndefOr[String] = js.undefined
+  var browser_height: js.UndefOr[String] = js.native
   /**
     *  The browser IP address.
     */
-  var browser_ip: js.UndefOr[String] = js.undefined
+  var browser_ip: js.UndefOr[String] = js.native
   /**
     *  The browser screen width in pixels, if available.
     */
-  var browser_width: js.UndefOr[String] = js.undefined
+  var browser_width: js.UndefOr[String] = js.native
   /**
     *  A hash of the session.
     */
-  var session_height: js.UndefOr[String] = js.undefined
+  var session_height: js.UndefOr[String] = js.native
   /**
     *  The browser's user agent string.
     */
-  var user_agent: js.UndefOr[String] = js.undefined
+  var user_agent: js.UndefOr[String] = js.native
 }
 
 object ClientDetails {
   @scala.inline
-  def apply(
-    accept_language: String = null,
-    admin_graphql_api_id: String = null,
-    browser_height: String = null,
-    browser_ip: String = null,
-    browser_width: String = null,
-    id: js.UndefOr[Double] = js.undefined,
-    session_height: String = null,
-    user_agent: String = null
-  ): ClientDetails = {
+  def apply(): ClientDetails = {
     val __obj = js.Dynamic.literal()
-    if (accept_language != null) __obj.updateDynamic("accept_language")(accept_language.asInstanceOf[js.Any])
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (browser_height != null) __obj.updateDynamic("browser_height")(browser_height.asInstanceOf[js.Any])
-    if (browser_ip != null) __obj.updateDynamic("browser_ip")(browser_ip.asInstanceOf[js.Any])
-    if (browser_width != null) __obj.updateDynamic("browser_width")(browser_width.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (session_height != null) __obj.updateDynamic("session_height")(session_height.asInstanceOf[js.Any])
-    if (user_agent != null) __obj.updateDynamic("user_agent")(user_agent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientDetails]
   }
+  @scala.inline
+  implicit class ClientDetailsOps[Self <: ClientDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccept_language(value: String): Self = this.set("accept_language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccept_language: Self = this.set("accept_language", js.undefined)
+    @scala.inline
+    def setBrowser_height(value: String): Self = this.set("browser_height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser_height: Self = this.set("browser_height", js.undefined)
+    @scala.inline
+    def setBrowser_ip(value: String): Self = this.set("browser_ip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser_ip: Self = this.set("browser_ip", js.undefined)
+    @scala.inline
+    def setBrowser_width(value: String): Self = this.set("browser_width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser_width: Self = this.set("browser_width", js.undefined)
+    @scala.inline
+    def setSession_height(value: String): Self = this.set("session_height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession_height: Self = this.set("session_height", js.undefined)
+    @scala.inline
+    def setUser_agent(value: String): Self = this.set("user_agent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser_agent: Self = this.set("user_agent", js.undefined)
+  }
+  
 }
 

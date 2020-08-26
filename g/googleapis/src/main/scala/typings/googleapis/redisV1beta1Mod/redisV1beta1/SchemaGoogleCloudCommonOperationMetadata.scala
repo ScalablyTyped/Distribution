@@ -45,24 +45,50 @@ trait SchemaGoogleCloudCommonOperationMetadata extends js.Object {
 
 object SchemaGoogleCloudCommonOperationMetadata {
   @scala.inline
-  def apply(
-    apiVersion: String = null,
-    cancelRequested: js.UndefOr[Boolean] = js.undefined,
-    createTime: String = null,
-    endTime: String = null,
-    statusDetail: String = null,
-    target: String = null,
-    verb: String = null
-  ): SchemaGoogleCloudCommonOperationMetadata = {
+  def apply(): SchemaGoogleCloudCommonOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelRequested)) __obj.updateDynamic("cancelRequested")(cancelRequested.get.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (statusDetail != null) __obj.updateDynamic("statusDetail")(statusDetail.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (verb != null) __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudCommonOperationMetadata]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudCommonOperationMetadataOps[Self <: SchemaGoogleCloudCommonOperationMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    @scala.inline
+    def setCancelRequested(value: Boolean): Self = this.set("cancelRequested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelRequested: Self = this.set("cancelRequested", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setStatusDetail(value: String): Self = this.set("statusDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetail: Self = this.set("statusDetail", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setVerb(value: String): Self = this.set("verb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerb: Self = this.set("verb", js.undefined)
+  }
+  
 }
 

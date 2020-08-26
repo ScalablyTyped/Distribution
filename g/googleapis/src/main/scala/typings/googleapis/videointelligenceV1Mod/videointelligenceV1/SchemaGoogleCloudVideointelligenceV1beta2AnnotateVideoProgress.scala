@@ -19,12 +19,28 @@ trait SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress extends js.
 
 object SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress {
   @scala.inline
-  def apply(
-    annotationProgress: js.Array[SchemaGoogleCloudVideointelligenceV1beta2VideoAnnotationProgress] = null
-  ): SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress = {
     val __obj = js.Dynamic.literal()
-    if (annotationProgress != null) __obj.updateDynamic("annotationProgress")(annotationProgress.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgressOps[Self <: SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotationProgressVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2VideoAnnotationProgress*): Self = this.set("annotationProgress", js.Array(value :_*))
+    @scala.inline
+    def setAnnotationProgress(value: js.Array[SchemaGoogleCloudVideointelligenceV1beta2VideoAnnotationProgress]): Self = this.set("annotationProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotationProgress: Self = this.set("annotationProgress", js.undefined)
+  }
+  
 }
 

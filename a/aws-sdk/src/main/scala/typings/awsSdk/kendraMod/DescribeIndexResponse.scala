@@ -62,36 +62,76 @@ trait DescribeIndexResponse extends js.Object {
 
 object DescribeIndexResponse {
   @scala.inline
-  def apply(
-    CapacityUnits: CapacityUnitsConfiguration = null,
-    CreatedAt: Timestamp = null,
-    Description: Description = null,
-    DocumentMetadataConfigurations: DocumentMetadataConfigurationList = null,
-    Edition: IndexEdition = null,
-    ErrorMessage: ErrorMessage = null,
-    Id: IndexId = null,
-    IndexStatistics: IndexStatistics = null,
-    Name: IndexName = null,
-    RoleArn: RoleArn = null,
-    ServerSideEncryptionConfiguration: ServerSideEncryptionConfiguration = null,
-    Status: IndexStatus = null,
-    UpdatedAt: Timestamp = null
-  ): DescribeIndexResponse = {
+  def apply(): DescribeIndexResponse = {
     val __obj = js.Dynamic.literal()
-    if (CapacityUnits != null) __obj.updateDynamic("CapacityUnits")(CapacityUnits.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DocumentMetadataConfigurations != null) __obj.updateDynamic("DocumentMetadataConfigurations")(DocumentMetadataConfigurations.asInstanceOf[js.Any])
-    if (Edition != null) __obj.updateDynamic("Edition")(Edition.asInstanceOf[js.Any])
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (IndexStatistics != null) __obj.updateDynamic("IndexStatistics")(IndexStatistics.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (ServerSideEncryptionConfiguration != null) __obj.updateDynamic("ServerSideEncryptionConfiguration")(ServerSideEncryptionConfiguration.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (UpdatedAt != null) __obj.updateDynamic("UpdatedAt")(UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIndexResponse]
   }
+  @scala.inline
+  implicit class DescribeIndexResponseOps[Self <: DescribeIndexResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityUnits(value: CapacityUnitsConfiguration): Self = this.set("CapacityUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityUnits: Self = this.set("CapacityUnits", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDocumentMetadataConfigurationsVarargs(value: DocumentMetadataConfiguration*): Self = this.set("DocumentMetadataConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setDocumentMetadataConfigurations(value: DocumentMetadataConfigurationList): Self = this.set("DocumentMetadataConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentMetadataConfigurations: Self = this.set("DocumentMetadataConfigurations", js.undefined)
+    @scala.inline
+    def setEdition(value: IndexEdition): Self = this.set("Edition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdition: Self = this.set("Edition", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: ErrorMessage): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setId(value: IndexId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setIndexStatistics(value: IndexStatistics): Self = this.set("IndexStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexStatistics: Self = this.set("IndexStatistics", js.undefined)
+    @scala.inline
+    def setName(value: IndexName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setServerSideEncryptionConfiguration(value: ServerSideEncryptionConfiguration): Self = this.set("ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideEncryptionConfiguration: Self = this.set("ServerSideEncryptionConfiguration", js.undefined)
+    @scala.inline
+    def setStatus(value: IndexStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+  }
+  
 }
 

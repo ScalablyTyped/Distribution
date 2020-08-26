@@ -9,6 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FilePickerFileTypesOrderedMap extends IMap[String, IVector[String]]
 
 object FilePickerFileTypesOrderedMap {

@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountTaxTaxRule extends js.Object {
-  var country: js.UndefOr[String] = js.undefined
-  var locationId: js.UndefOr[String] = js.undefined
-  var ratePercent: js.UndefOr[String] = js.undefined
-  var shippingTaxed: js.UndefOr[Boolean] = js.undefined
-  var useGlobalRate: js.UndefOr[Boolean] = js.undefined
+  var country: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.native
+  var ratePercent: js.UndefOr[String] = js.native
+  var shippingTaxed: js.UndefOr[Boolean] = js.native
+  var useGlobalRate: js.UndefOr[Boolean] = js.native
 }
 
 object AccountTaxTaxRule {
   @scala.inline
-  def apply(
-    country: String = null,
-    locationId: String = null,
-    ratePercent: String = null,
-    shippingTaxed: js.UndefOr[Boolean] = js.undefined,
-    useGlobalRate: js.UndefOr[Boolean] = js.undefined
-  ): AccountTaxTaxRule = {
+  def apply(): AccountTaxTaxRule = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (locationId != null) __obj.updateDynamic("locationId")(locationId.asInstanceOf[js.Any])
-    if (ratePercent != null) __obj.updateDynamic("ratePercent")(ratePercent.asInstanceOf[js.Any])
-    if (!js.isUndefined(shippingTaxed)) __obj.updateDynamic("shippingTaxed")(shippingTaxed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGlobalRate)) __obj.updateDynamic("useGlobalRate")(useGlobalRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountTaxTaxRule]
   }
+  @scala.inline
+  implicit class AccountTaxTaxRuleOps[Self <: AccountTaxTaxRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationId: Self = this.set("locationId", js.undefined)
+    @scala.inline
+    def setRatePercent(value: String): Self = this.set("ratePercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRatePercent: Self = this.set("ratePercent", js.undefined)
+    @scala.inline
+    def setShippingTaxed(value: Boolean): Self = this.set("shippingTaxed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingTaxed: Self = this.set("shippingTaxed", js.undefined)
+    @scala.inline
+    def setUseGlobalRate(value: Boolean): Self = this.set("useGlobalRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseGlobalRate: Self = this.set("useGlobalRate", js.undefined)
+  }
+  
 }
 

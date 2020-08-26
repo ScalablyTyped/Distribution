@@ -7,42 +7,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextAreaProps extends js.Object {
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var error: js.UndefOr[String] = js.undefined
-  var helperText: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String | Double] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[String] = js.native
+  var helperText: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String | Double] = js.native
+  var label: js.UndefOr[String] = js.native
+  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var required: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[String] = js.native
 }
 
 object TextAreaProps {
   @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    error: String = null,
-    helperText: String = null,
-    id: String | Double = null,
-    label: String = null,
-    onChange: ChangeEvent[HTMLInputElement] => Unit = null,
-    placeholder: String = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    value: String = null
-  ): TextAreaProps = {
+  def apply(): TextAreaProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (helperText != null) __obj.updateDynamic("helperText")(helperText.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextAreaProps]
   }
+  @scala.inline
+  implicit class TextAreaPropsOps[Self <: TextAreaProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setHelperText(value: String): Self = this.set("helperText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelperText: Self = this.set("helperText", js.undefined)
+    @scala.inline
+    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

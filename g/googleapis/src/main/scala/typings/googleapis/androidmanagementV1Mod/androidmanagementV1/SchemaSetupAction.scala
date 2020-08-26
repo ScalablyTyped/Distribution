@@ -25,16 +25,34 @@ trait SchemaSetupAction extends js.Object {
 
 object SchemaSetupAction {
   @scala.inline
-  def apply(
-    description: SchemaUserFacingMessage = null,
-    launchApp: SchemaLaunchAppAction = null,
-    title: SchemaUserFacingMessage = null
-  ): SchemaSetupAction = {
+  def apply(): SchemaSetupAction = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (launchApp != null) __obj.updateDynamic("launchApp")(launchApp.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSetupAction]
   }
+  @scala.inline
+  implicit class SchemaSetupActionOps[Self <: SchemaSetupAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: SchemaUserFacingMessage): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLaunchApp(value: SchemaLaunchAppAction): Self = this.set("launchApp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchApp: Self = this.set("launchApp", js.undefined)
+    @scala.inline
+    def setTitle(value: SchemaUserFacingMessage): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object mockEventTargetMod extends js.Object {
   @js.native
   trait MockEventTarget extends EventTarget {
-    var listeners: js.UndefOr[js.Any] = js.native
+    var listeners: js.Any = js.native
   }
   
   @js.native

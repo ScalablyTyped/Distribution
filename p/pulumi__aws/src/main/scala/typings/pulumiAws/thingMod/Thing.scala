@@ -22,6 +22,7 @@ class Thing protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: ThingArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ThingArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN of the thing.
@@ -30,7 +31,7 @@ class Thing protected () extends CustomResource {
   /**
     * Map of attributes of the thing.
     */
-  val attributes: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val attributes: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The default client ID.
     */
@@ -60,8 +61,10 @@ object Thing extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Thing = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Thing = js.native
   def get(name: String, id: Input[ID], state: ThingState): Thing = js.native
   def get(name: String, id: Input[ID], state: ThingState, opts: CustomResourceOptions): Thing = js.native
   /**

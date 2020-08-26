@@ -12,7 +12,7 @@ Chain promises declaratively using high-level graphs. Tiny, portable, dependency
 | Keywords           | promise, async, graph, dag |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3815 |
+| # downloads        | 3768 |
 | # stars            | 0 |
 
 ## Links

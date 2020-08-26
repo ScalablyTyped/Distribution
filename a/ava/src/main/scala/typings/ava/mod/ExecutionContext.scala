@@ -31,6 +31,7 @@ trait ExecutionContext[Context] extends Assertions {
   def plan(count: Double): Unit = js.native
   def teardown(fn: js.Function0[Unit]): Unit = js.native
   def timeout(ms: Double): Unit = js.native
+  def timeout(ms: Double, message: String): Unit = js.native
   /**
   	 * Attempt to run some assertions. The result must be explicitly committed or discarded or else
   	 * the test will fail. A macro may be provided.

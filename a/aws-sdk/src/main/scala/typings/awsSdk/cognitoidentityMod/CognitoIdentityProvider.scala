@@ -22,16 +22,34 @@ trait CognitoIdentityProvider extends js.Object {
 
 object CognitoIdentityProvider {
   @scala.inline
-  def apply(
-    ClientId: CognitoIdentityProviderClientId = null,
-    ProviderName: CognitoIdentityProviderName = null,
-    ServerSideTokenCheck: js.UndefOr[CognitoIdentityProviderTokenCheck] = js.undefined
-  ): CognitoIdentityProvider = {
+  def apply(): CognitoIdentityProvider = {
     val __obj = js.Dynamic.literal()
-    if (ClientId != null) __obj.updateDynamic("ClientId")(ClientId.asInstanceOf[js.Any])
-    if (ProviderName != null) __obj.updateDynamic("ProviderName")(ProviderName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ServerSideTokenCheck)) __obj.updateDynamic("ServerSideTokenCheck")(ServerSideTokenCheck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoIdentityProvider]
   }
+  @scala.inline
+  implicit class CognitoIdentityProviderOps[Self <: CognitoIdentityProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientId(value: CognitoIdentityProviderClientId): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    @scala.inline
+    def setProviderName(value: CognitoIdentityProviderName): Self = this.set("ProviderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderName: Self = this.set("ProviderName", js.undefined)
+    @scala.inline
+    def setServerSideTokenCheck(value: CognitoIdentityProviderTokenCheck): Self = this.set("ServerSideTokenCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideTokenCheck: Self = this.set("ServerSideTokenCheck", js.undefined)
+  }
+  
 }
 

@@ -34,6 +34,7 @@ class ResourceProjectsEvents protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListEventsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListEventsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListEventsResponse] = js.native
   def list(params: ParamsResourceProjectsEventsList): GaxiosPromise[SchemaListEventsResponse] = js.native
   def list(params: ParamsResourceProjectsEventsList, callback: BodyResponseCallback[SchemaListEventsResponse]): Unit = js.native
   def list(
@@ -67,6 +68,7 @@ class ResourceProjectsEvents protected () extends js.Object {
     */
   def report(): GaxiosPromise[SchemaReportErrorEventResponse] = js.native
   def report(callback: BodyResponseCallback[SchemaReportErrorEventResponse]): Unit = js.native
+  def report(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReportErrorEventResponse] = js.native
   def report(params: ParamsResourceProjectsEventsReport): GaxiosPromise[SchemaReportErrorEventResponse] = js.native
   def report(
     params: ParamsResourceProjectsEventsReport,

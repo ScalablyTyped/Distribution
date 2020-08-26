@@ -16,15 +16,15 @@ trait BeaconRegion
      with Instantiable4[
       /* identifier */ String, 
       /* uuid */ String, 
-      /* major */ Double, 
+      js.UndefOr[/* major */ Double], 
       /* minor */ Double, 
       BeaconRegion
     ]
      with Instantiable5[
       /* identifier */ String, 
       /* uuid */ String, 
-      /* major */ Double, 
-      /* minor */ Double, 
+      js.UndefOr[/* major */ Double], 
+      js.UndefOr[/* minor */ Double], 
       /* notifyEntryStateOnDisplay */ Boolean, 
       BeaconRegion
     ] {

@@ -129,6 +129,7 @@ trait Vector3 extends js.Object {
     */
   def scale(scale: Double): Vector3 = js.native
   def set(x: js.Object): Vector3 = js.native
+  def set(x: js.Object, y: js.UndefOr[scala.Nothing], z: Double): Vector3 = js.native
   def set(x: js.Object, y: Double): Vector3 = js.native
   def set(x: js.Object, y: Double, z: Double): Vector3 = js.native
   /**
@@ -138,6 +139,7 @@ trait Vector3 extends js.Object {
     * @param z The z value to set for this Vector.
     */
   def set(x: Double): Vector3 = js.native
+  def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector3 = js.native
   def set(x: Double, y: Double): Vector3 = js.native
   def set(x: Double, y: Double, z: Double): Vector3 = js.native
   /**

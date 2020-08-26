@@ -12,7 +12,7 @@ List of archive file extensions
 | Keywords           | extensions, extension, file, json, list, array, archive, compressed, compress, archive, zip, tar, rar, 7z |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 1069 |
+| # downloads        | 1075 |
 | # stars            | 0 |
 
 ## Links

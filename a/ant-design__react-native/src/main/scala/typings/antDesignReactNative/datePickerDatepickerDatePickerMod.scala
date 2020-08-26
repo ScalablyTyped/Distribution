@@ -22,9 +22,9 @@ object datePickerDatepickerDatePickerMod extends js.Object {
     var defaultMinDate: js.Any = js.native
     @JSName("state")
     var state_DatePicker: Date = js.native
+    @JSName("UNSAFE_componentWillReceiveProps")
+    def UNSAFE_componentWillReceiveProps_MDatePicker(nextProps: DefaultDate): Unit = js.native
     def clipDate(date: js.Any): js.Any = js.native
-    @JSName("componentWillReceiveProps")
-    def componentWillReceiveProps_MDatePicker(nextProps: DefaultDate): Unit = js.native
     def getDate(): js.Any = js.native
     def getDateData(): js.Array[Key] = js.native
     def getDefaultMaxDate(): js.Any = js.native

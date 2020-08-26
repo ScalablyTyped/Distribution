@@ -14,10 +14,26 @@ trait GetChangeTokenStatusResponse extends js.Object {
 
 object GetChangeTokenStatusResponse {
   @scala.inline
-  def apply(ChangeTokenStatus: ChangeTokenStatus = null): GetChangeTokenStatusResponse = {
+  def apply(): GetChangeTokenStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (ChangeTokenStatus != null) __obj.updateDynamic("ChangeTokenStatus")(ChangeTokenStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetChangeTokenStatusResponse]
   }
+  @scala.inline
+  implicit class GetChangeTokenStatusResponseOps[Self <: GetChangeTokenStatusResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeTokenStatus(value: ChangeTokenStatus): Self = this.set("ChangeTokenStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeTokenStatus: Self = this.set("ChangeTokenStatus", js.undefined)
+  }
+  
 }
 

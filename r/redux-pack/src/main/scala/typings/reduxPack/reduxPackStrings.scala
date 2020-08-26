@@ -19,10 +19,7 @@ object reduxPackStrings {
   sealed trait start extends LIFECYCLEValues
   
   @js.native
-  sealed trait succes extends LIFECYCLEValues
-  
-  @js.native
-  sealed trait success extends js.Object
+  sealed trait success extends LIFECYCLEValues
   
   @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]
@@ -32,8 +29,6 @@ object reduxPackStrings {
   def `redux-packSlashTRANSACTION`: `redux-packSlashTRANSACTION` = "redux-pack/TRANSACTION".asInstanceOf[`redux-packSlashTRANSACTION`]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def succes: succes = "succes".asInstanceOf[succes]
   @scala.inline
   def success: success = "success".asInstanceOf[success]
 }

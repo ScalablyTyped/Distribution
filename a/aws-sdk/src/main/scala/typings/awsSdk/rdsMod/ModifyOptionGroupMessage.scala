@@ -26,17 +26,40 @@ trait ModifyOptionGroupMessage extends js.Object {
 
 object ModifyOptionGroupMessage {
   @scala.inline
-  def apply(
-    OptionGroupName: String,
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
-    OptionsToInclude: OptionConfigurationList = null,
-    OptionsToRemove: OptionNamesList = null
-  ): ModifyOptionGroupMessage = {
+  def apply(OptionGroupName: String): ModifyOptionGroupMessage = {
     val __obj = js.Dynamic.literal(OptionGroupName = OptionGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.get.asInstanceOf[js.Any])
-    if (OptionsToInclude != null) __obj.updateDynamic("OptionsToInclude")(OptionsToInclude.asInstanceOf[js.Any])
-    if (OptionsToRemove != null) __obj.updateDynamic("OptionsToRemove")(OptionsToRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyOptionGroupMessage]
   }
+  @scala.inline
+  implicit class ModifyOptionGroupMessageOps[Self <: ModifyOptionGroupMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOptionGroupName(value: String): Self = this.set("OptionGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplyImmediately(value: Boolean): Self = this.set("ApplyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyImmediately: Self = this.set("ApplyImmediately", js.undefined)
+    @scala.inline
+    def setOptionsToIncludeVarargs(value: OptionConfiguration*): Self = this.set("OptionsToInclude", js.Array(value :_*))
+    @scala.inline
+    def setOptionsToInclude(value: OptionConfigurationList): Self = this.set("OptionsToInclude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionsToInclude: Self = this.set("OptionsToInclude", js.undefined)
+    @scala.inline
+    def setOptionsToRemoveVarargs(value: String*): Self = this.set("OptionsToRemove", js.Array(value :_*))
+    @scala.inline
+    def setOptionsToRemove(value: OptionNamesList): Self = this.set("OptionsToRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionsToRemove: Self = this.set("OptionsToRemove", js.undefined)
+  }
+  
 }
 

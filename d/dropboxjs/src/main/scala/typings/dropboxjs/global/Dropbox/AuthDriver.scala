@@ -1,6 +1,5 @@
 package typings.dropboxjs.global.Dropbox
 
-import typings.dropboxjs.Dropbox.QueryParamsCallback
 import typings.dropboxjs.Dropbox.RedirectOptions
 import typings.dropboxjs.anon.Port
 import typings.dropboxjs.anon.ReceiverPath
@@ -15,25 +14,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Dropbox.AuthDriver")
 @js.native
 class AuthDriver ()
-  extends typings.dropboxjs.Dropbox.AuthDriver {
-  /* CompleteClass */
-  override def authType(): String = js.native
-  /* CompleteClass */
-  override def doAuthorize(
-    authUrl: String,
-    stateParam: String,
-    client: typings.dropboxjs.Dropbox.Client,
-    callback: QueryParamsCallback
-  ): Unit = js.native
-  /* CompleteClass */
-  override def getStateParam(client: typings.dropboxjs.Dropbox.Client, callback: js.Function1[/* state */ String, Unit]): Unit = js.native
-  /* CompleteClass */
-  override def onAuthStepChange(client: typings.dropboxjs.Dropbox.Client, callback: js.Function0[Unit]): Unit = js.native
-  /* CompleteClass */
-  override def resumeAuthorize(stateParam: String, client: typings.dropboxjs.Dropbox.Client, callback: QueryParamsCallback): Unit = js.native
-  /* CompleteClass */
-  override def url(): String = js.native
-}
+  extends typings.dropboxjs.Dropbox.AuthDriver
 
 @JSGlobal("Dropbox.AuthDriver")
 @js.native
@@ -42,12 +23,6 @@ object AuthDriver extends js.Object {
   class BrowserBase protected ()
     extends typings.dropboxjs.Dropbox.AuthDriver.BrowserBase {
     def this(options: RememberUser) = this()
-    /* CompleteClass */
-    override def authType(): String = js.native
-    /* CompleteClass */
-    override def locationStateParam(url: String): String = js.native
-    /* CompleteClass */
-    override def onAuthStepChange(client: typings.dropboxjs.Dropbox.Client, callback: js.Function0[Unit]): Unit = js.native
   }
   
   @js.native
@@ -89,12 +64,6 @@ object AuthDriver extends js.Object {
   class Redirect ()
     extends typings.dropboxjs.Dropbox.AuthDriver.Redirect {
     def this(options: RedirectFile) = this()
-    /* CompleteClass */
-    override def doAuthorize(authUrl: String, stateParam: String, client: typings.dropboxjs.Dropbox.Client): Unit = js.native
-    /* CompleteClass */
-    override def resumeAuthorize(stateParam: String, client: typings.dropboxjs.Dropbox.Client, callback: QueryParamsCallback): Unit = js.native
-    /* CompleteClass */
-    override def url(): String = js.native
   }
   
   /* static members */

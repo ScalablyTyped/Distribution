@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BooleanPolicy extends js.Object {
   /**
     * If `true`, then the `Policy` is enforced. If `false`, then any
@@ -50,15 +51,31 @@ trait BooleanPolicy extends js.Object {
     * The constraint at `projects/bar` is not enforced, because
     * `constraint_default` for the `Constraint` is `ALLOW`.
     */
-  var enforced: js.UndefOr[Boolean] = js.undefined
+  var enforced: js.UndefOr[Boolean] = js.native
 }
 
 object BooleanPolicy {
   @scala.inline
-  def apply(enforced: js.UndefOr[Boolean] = js.undefined): BooleanPolicy = {
+  def apply(): BooleanPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enforced)) __obj.updateDynamic("enforced")(enforced.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BooleanPolicy]
   }
+  @scala.inline
+  implicit class BooleanPolicyOps[Self <: BooleanPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnforced(value: Boolean): Self = this.set("enforced", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforced: Self = this.set("enforced", js.undefined)
+  }
+  
 }
 

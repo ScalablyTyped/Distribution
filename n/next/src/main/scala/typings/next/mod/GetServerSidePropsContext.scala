@@ -7,30 +7,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetServerSidePropsContext[Q /* <: ParsedUrlQuery */] extends js.Object {
-  var params: js.UndefOr[Q] = js.undefined
-  var preview: js.UndefOr[Boolean] = js.undefined
-  var previewData: js.UndefOr[js.Any] = js.undefined
-  var query: ParsedUrlQuery
-  var req: IncomingMessage
-  var res: ServerResponse
+  var params: js.UndefOr[Q] = js.native
+  var preview: js.UndefOr[Boolean] = js.native
+  var previewData: js.UndefOr[js.Any] = js.native
+  var query: ParsedUrlQuery = js.native
+  var req: IncomingMessage = js.native
+  var res: ServerResponse = js.native
 }
 
 object GetServerSidePropsContext {
   @scala.inline
-  def apply[/* <: typings.node.querystringMod.ParsedUrlQuery */ Q](
-    query: ParsedUrlQuery,
-    req: IncomingMessage,
-    res: ServerResponse,
-    params: Q = null,
-    preview: js.UndefOr[Boolean] = js.undefined,
-    previewData: js.Any = null
-  ): GetServerSidePropsContext[Q] = {
+  def apply[/* <: typings.node.querystringMod.ParsedUrlQuery */ Q](query: ParsedUrlQuery, req: IncomingMessage, res: ServerResponse): GetServerSidePropsContext[Q] = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.get.asInstanceOf[js.Any])
-    if (previewData != null) __obj.updateDynamic("previewData")(previewData.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServerSidePropsContext[Q]]
   }
+  @scala.inline
+  implicit class GetServerSidePropsContextOps[Self <: GetServerSidePropsContext[_], /* <: typings.node.querystringMod.ParsedUrlQuery */ Q] (val x: Self with GetServerSidePropsContext[Q]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQuery(value: ParsedUrlQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReq(value: IncomingMessage): Self = this.set("req", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRes(value: ServerResponse): Self = this.set("res", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParams(value: Q): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setPreview(value: Boolean): Self = this.set("preview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreview: Self = this.set("preview", js.undefined)
+    @scala.inline
+    def setPreviewData(value: js.Any): Self = this.set("previewData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewData: Self = this.set("previewData", js.undefined)
+  }
+  
 }
 

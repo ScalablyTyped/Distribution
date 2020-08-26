@@ -28,22 +28,46 @@ trait AdministrativeAction extends js.Object {
 
 object AdministrativeAction {
   @scala.inline
-  def apply(
-    AdministrativeActionType: AdministrativeActionType = null,
-    FailureDetails: AdministrativeActionFailureDetails = null,
-    ProgressPercent: js.UndefOr[ProgressPercent] = js.undefined,
-    RequestTime: RequestTime = null,
-    Status: Status = null,
-    TargetFileSystemValues: FileSystem = null
-  ): AdministrativeAction = {
+  def apply(): AdministrativeAction = {
     val __obj = js.Dynamic.literal()
-    if (AdministrativeActionType != null) __obj.updateDynamic("AdministrativeActionType")(AdministrativeActionType.asInstanceOf[js.Any])
-    if (FailureDetails != null) __obj.updateDynamic("FailureDetails")(FailureDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgressPercent)) __obj.updateDynamic("ProgressPercent")(ProgressPercent.get.asInstanceOf[js.Any])
-    if (RequestTime != null) __obj.updateDynamic("RequestTime")(RequestTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TargetFileSystemValues != null) __obj.updateDynamic("TargetFileSystemValues")(TargetFileSystemValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdministrativeAction]
   }
+  @scala.inline
+  implicit class AdministrativeActionOps[Self <: AdministrativeAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdministrativeActionType(value: AdministrativeActionType): Self = this.set("AdministrativeActionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdministrativeActionType: Self = this.set("AdministrativeActionType", js.undefined)
+    @scala.inline
+    def setFailureDetails(value: AdministrativeActionFailureDetails): Self = this.set("FailureDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureDetails: Self = this.set("FailureDetails", js.undefined)
+    @scala.inline
+    def setProgressPercent(value: ProgressPercent): Self = this.set("ProgressPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressPercent: Self = this.set("ProgressPercent", js.undefined)
+    @scala.inline
+    def setRequestTime(value: RequestTime): Self = this.set("RequestTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestTime: Self = this.set("RequestTime", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTargetFileSystemValues(value: FileSystem): Self = this.set("TargetFileSystemValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetFileSystemValues: Self = this.set("TargetFileSystemValues", js.undefined)
+  }
+  
 }
 

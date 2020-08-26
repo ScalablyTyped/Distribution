@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   *  DIGEST-MD5 - 30
   *  Plain - 20
   */
+@js.native
 trait SASLMechanism extends js.Object {
   /** Variable: priority
     *  Determines which <SASLMechanism> is chosen for authentication (Higher is better).
@@ -36,7 +37,7 @@ trait SASLMechanism extends js.Object {
     *  See <SASL mechanisms> for a list of available mechanisms.
     *
     */
-  var priority: Double
+  var priority: Double = js.native
   /**
     *  Function: test
     *  Checks if mechanism able to run.
@@ -55,7 +56,7 @@ trait SASLMechanism extends js.Object {
     *  Returns:
     *    (Boolean) If mechanism was able to run.
     */
-  def test(connection: Connection): Boolean
+  def test(connection: Connection): Boolean = js.native
 }
 
 object SASLMechanism {
@@ -64,5 +65,22 @@ object SASLMechanism {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any], test = js.Any.fromFunction1(test))
     __obj.asInstanceOf[SASLMechanism]
   }
+  @scala.inline
+  implicit class SASLMechanismOps[Self <: SASLMechanism] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTest(value: Connection => Boolean): Self = this.set("test", js.Any.fromFunction1(value))
+  }
+  
 }
 

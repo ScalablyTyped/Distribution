@@ -4,36 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IntrinsicElements extends js.Object {
-  var `blessed-bigtext`: js.Any
-  var `blessed-box`: js.Any
-  var `blessed-button`: js.Any
-  var `blessed-checkbox`: js.Any
-  var `blessed-escape`: js.Any
-  var `blessed-filemanager`: js.Any
-  var `blessed-form`: js.Any
-  var `blessed-input`: js.Any
-  var `blessed-layout`: js.Any
-  var `blessed-line`: js.Any
-  var `blessed-list`: js.Any
-  var `blessed-listbar`: js.Any
-  var `blessed-listtable`: js.Any
-  var `blessed-loading`: js.Any
-  var `blessed-log`: js.Any
-  var `blessed-message`: js.Any
-  var `blessed-program`: js.Any
-  var `blessed-progressbar`: js.Any
-  var `blessed-prompt`: js.Any
-  var `blessed-question`: js.Any
-  var `blessed-radiobutton`: js.Any
-  var `blessed-radioset`: js.Any
-  var `blessed-scrollablebox`: js.Any
-  var `blessed-scrollabletext`: js.Any
-  var `blessed-table`: js.Any
-  var `blessed-terminal`: js.Any
-  var `blessed-text`: js.Any
-  var `blessed-textarea`: js.Any
-  var `blessed-textbox`: js.Any
+  var `blessed-bigtext`: js.Any = js.native
+  var `blessed-box`: js.Any = js.native
+  var `blessed-button`: js.Any = js.native
+  var `blessed-checkbox`: js.Any = js.native
+  var `blessed-escape`: js.Any = js.native
+  var `blessed-filemanager`: js.Any = js.native
+  var `blessed-form`: js.Any = js.native
+  var `blessed-input`: js.Any = js.native
+  var `blessed-layout`: js.Any = js.native
+  var `blessed-line`: js.Any = js.native
+  var `blessed-list`: js.Any = js.native
+  var `blessed-listbar`: js.Any = js.native
+  var `blessed-listtable`: js.Any = js.native
+  var `blessed-loading`: js.Any = js.native
+  var `blessed-log`: js.Any = js.native
+  var `blessed-message`: js.Any = js.native
+  var `blessed-program`: js.Any = js.native
+  var `blessed-progressbar`: js.Any = js.native
+  var `blessed-prompt`: js.Any = js.native
+  var `blessed-question`: js.Any = js.native
+  var `blessed-radiobutton`: js.Any = js.native
+  var `blessed-radioset`: js.Any = js.native
+  var `blessed-scrollablebox`: js.Any = js.native
+  var `blessed-scrollabletext`: js.Any = js.native
+  var `blessed-table`: js.Any = js.native
+  var `blessed-terminal`: js.Any = js.native
+  var `blessed-text`: js.Any = js.native
+  var `blessed-textarea`: js.Any = js.native
+  var `blessed-textbox`: js.Any = js.native
 }
 
 object IntrinsicElements {
@@ -101,5 +102,76 @@ object IntrinsicElements {
     __obj.updateDynamic("blessed-textbox")(`blessed-textbox`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrinsicElements]
   }
+  @scala.inline
+  implicit class IntrinsicElementsOps[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setBlessed-bigtext`(value: js.Any): Self = this.set("blessed-bigtext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-box`(value: js.Any): Self = this.set("blessed-box", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-button`(value: js.Any): Self = this.set("blessed-button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-checkbox`(value: js.Any): Self = this.set("blessed-checkbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-escape`(value: js.Any): Self = this.set("blessed-escape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-filemanager`(value: js.Any): Self = this.set("blessed-filemanager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-form`(value: js.Any): Self = this.set("blessed-form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-input`(value: js.Any): Self = this.set("blessed-input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-layout`(value: js.Any): Self = this.set("blessed-layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-line`(value: js.Any): Self = this.set("blessed-line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-list`(value: js.Any): Self = this.set("blessed-list", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-listbar`(value: js.Any): Self = this.set("blessed-listbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-listtable`(value: js.Any): Self = this.set("blessed-listtable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-loading`(value: js.Any): Self = this.set("blessed-loading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-log`(value: js.Any): Self = this.set("blessed-log", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-message`(value: js.Any): Self = this.set("blessed-message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-program`(value: js.Any): Self = this.set("blessed-program", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-progressbar`(value: js.Any): Self = this.set("blessed-progressbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-prompt`(value: js.Any): Self = this.set("blessed-prompt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-question`(value: js.Any): Self = this.set("blessed-question", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-radiobutton`(value: js.Any): Self = this.set("blessed-radiobutton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-radioset`(value: js.Any): Self = this.set("blessed-radioset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-scrollablebox`(value: js.Any): Self = this.set("blessed-scrollablebox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-scrollabletext`(value: js.Any): Self = this.set("blessed-scrollabletext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-table`(value: js.Any): Self = this.set("blessed-table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-terminal`(value: js.Any): Self = this.set("blessed-terminal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-text`(value: js.Any): Self = this.set("blessed-text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-textarea`(value: js.Any): Self = this.set("blessed-textarea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBlessed-textbox`(value: js.Any): Self = this.set("blessed-textbox", value.asInstanceOf[js.Any])
+  }
+  
 }
 

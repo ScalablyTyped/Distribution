@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 
 // Note: Duplex extends both Readable and Writable.
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.node.NodeJS.EventEmitter because Already inherited
+- typings.node.eventsMod.global.NodeJS.EventEmitter because Already inherited
 - typings.node.eventsMod.EventEmitter because Already inherited
-- typings.node.NodeJS.EventEmitter because Already inherited
+- typings.node.eventsMod.global.NodeJS.EventEmitter because Already inherited
 - typings.node.childProcessMod.StdioNull because Already inherited
 - typings.node.streamMod.internal because Already inherited
 - typings.node.NodeJS.WritableStream because var conflicts: writable. Inlined 
@@ -61,6 +61,7 @@ class Duplex () extends Readable {
   def end(cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any): Unit = js.native
   def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
+  def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
   def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
@@ -107,6 +108,11 @@ class Duplex () extends Readable {
   def uncork(): Unit = js.native
   def write(chunk: js.Any): Boolean = js.native
   def write(chunk: js.Any, cb: js.Function1[js.UndefOr[Error | Null], Unit]): Boolean = js.native
+  def write(
+    chunk: js.Any,
+    encoding: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  ): Boolean = js.native
   def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
   def write(chunk: js.Any, encoding: BufferEncoding, cb: js.Function1[js.UndefOr[Error | Null], Unit]): Boolean = js.native
 }

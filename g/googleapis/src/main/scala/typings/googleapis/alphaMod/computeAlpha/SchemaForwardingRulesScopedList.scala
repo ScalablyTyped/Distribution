@@ -20,11 +20,32 @@ trait SchemaForwardingRulesScopedList extends js.Object {
 
 object SchemaForwardingRulesScopedList {
   @scala.inline
-  def apply(forwardingRules: js.Array[SchemaForwardingRule] = null, warning: Code = null): SchemaForwardingRulesScopedList = {
+  def apply(): SchemaForwardingRulesScopedList = {
     val __obj = js.Dynamic.literal()
-    if (forwardingRules != null) __obj.updateDynamic("forwardingRules")(forwardingRules.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaForwardingRulesScopedList]
   }
+  @scala.inline
+  implicit class SchemaForwardingRulesScopedListOps[Self <: SchemaForwardingRulesScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForwardingRulesVarargs(value: SchemaForwardingRule*): Self = this.set("forwardingRules", js.Array(value :_*))
+    @scala.inline
+    def setForwardingRules(value: js.Array[SchemaForwardingRule]): Self = this.set("forwardingRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForwardingRules: Self = this.set("forwardingRules", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

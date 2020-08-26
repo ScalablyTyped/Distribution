@@ -14,11 +14,15 @@ trait BaseComponent[P /* <: PropsType */, S /* <: StateType */]
   @JSName("action")
   def action_down(`type`: down, e: js.Any): Unit = js.native
   @JSName("action")
+  def action_down(`type`: down, e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
+  @JSName("action")
   def action_down(`type`: down, e: js.Any, ratio: js.Any): Unit = js.native
   @JSName("action")
   def action_down(`type`: down, e: js.Any, ratio: js.Any, recursive: js.Any): Unit = js.native
   @JSName("action")
   def action_up(`type`: up, e: js.Any): Unit = js.native
+  @JSName("action")
+  def action_up(`type`: up, e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
   @JSName("action")
   def action_up(`type`: up, e: js.Any, ratio: js.Any): Unit = js.native
   @JSName("action")
@@ -28,6 +32,7 @@ trait BaseComponent[P /* <: PropsType */, S /* <: StateType */]
   @JSName("componentWillUnmount")
   def componentWillUnmount_MBaseComponent(): Unit = js.native
   def down(e: js.Any): Unit = js.native
+  def down(e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
   def down(e: js.Any, ratio: js.Any): Unit = js.native
   def down(e: js.Any, ratio: js.Any, recursive: js.Any): Unit = js.native
   def getCurrentValidValue(value: js.Any): js.Any = js.native
@@ -61,6 +66,7 @@ trait BaseComponent[P /* <: PropsType */, S /* <: StateType */]
   def toNumberWhenUserInput(num: js.Any): js.Any = js.native
   def toPrecisionAsStep(num: js.Any): js.Any = js.native
   def up(e: js.Any): Unit = js.native
+  def up(e: js.Any, ratio: js.UndefOr[scala.Nothing], recursive: js.Any): Unit = js.native
   def up(e: js.Any, ratio: js.Any): Unit = js.native
   def up(e: js.Any, ratio: js.Any, recursive: js.Any): Unit = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for credit-card-type
 
-Typings are for version v7.0.0
+Typings are for version 9.0.1
 
 ## Library description:
 A library for determining credit card type
@@ -24,7 +24,7 @@ A library for determining credit card type
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -38,24 +38,52 @@ trait OperatingSystem extends js.Object {
 
 object OperatingSystem {
   @scala.inline
-  def apply(
-    ConfigurationManagers: OperatingSystemConfigurationManagers = null,
-    Id: String = null,
-    Name: String = null,
-    ReportedName: String = null,
-    ReportedVersion: String = null,
-    Supported: js.UndefOr[Boolean] = js.undefined,
-    Type: String = null
-  ): OperatingSystem = {
+  def apply(): OperatingSystem = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationManagers != null) __obj.updateDynamic("ConfigurationManagers")(ConfigurationManagers.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ReportedName != null) __obj.updateDynamic("ReportedName")(ReportedName.asInstanceOf[js.Any])
-    if (ReportedVersion != null) __obj.updateDynamic("ReportedVersion")(ReportedVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(Supported)) __obj.updateDynamic("Supported")(Supported.get.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperatingSystem]
   }
+  @scala.inline
+  implicit class OperatingSystemOps[Self <: OperatingSystem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationManagersVarargs(value: OperatingSystemConfigurationManager*): Self = this.set("ConfigurationManagers", js.Array(value :_*))
+    @scala.inline
+    def setConfigurationManagers(value: OperatingSystemConfigurationManagers): Self = this.set("ConfigurationManagers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationManagers: Self = this.set("ConfigurationManagers", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setReportedName(value: String): Self = this.set("ReportedName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportedName: Self = this.set("ReportedName", js.undefined)
+    @scala.inline
+    def setReportedVersion(value: String): Self = this.set("ReportedVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportedVersion: Self = this.set("ReportedVersion", js.undefined)
+    @scala.inline
+    def setSupported(value: Boolean): Self = this.set("Supported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupported: Self = this.set("Supported", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

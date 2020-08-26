@@ -12,7 +12,7 @@ Regular expression for matching the parts of a file path.
 | Keywords           | expression, file, filepath, match, matching, path, regex, regexp, regular |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 200 |
+| # downloads        | 204 |
 | # stars            | 0 |
 
 ## Links

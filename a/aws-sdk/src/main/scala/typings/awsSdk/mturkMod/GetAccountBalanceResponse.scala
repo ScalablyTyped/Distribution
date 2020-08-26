@@ -12,11 +12,30 @@ trait GetAccountBalanceResponse extends js.Object {
 
 object GetAccountBalanceResponse {
   @scala.inline
-  def apply(AvailableBalance: CurrencyAmount = null, OnHoldBalance: CurrencyAmount = null): GetAccountBalanceResponse = {
+  def apply(): GetAccountBalanceResponse = {
     val __obj = js.Dynamic.literal()
-    if (AvailableBalance != null) __obj.updateDynamic("AvailableBalance")(AvailableBalance.asInstanceOf[js.Any])
-    if (OnHoldBalance != null) __obj.updateDynamic("OnHoldBalance")(OnHoldBalance.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccountBalanceResponse]
   }
+  @scala.inline
+  implicit class GetAccountBalanceResponseOps[Self <: GetAccountBalanceResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailableBalance(value: CurrencyAmount): Self = this.set("AvailableBalance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableBalance: Self = this.set("AvailableBalance", js.undefined)
+    @scala.inline
+    def setOnHoldBalance(value: CurrencyAmount): Self = this.set("OnHoldBalance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnHoldBalance: Self = this.set("OnHoldBalance", js.undefined)
+  }
+  
 }
 

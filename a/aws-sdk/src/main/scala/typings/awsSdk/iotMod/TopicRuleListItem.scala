@@ -30,20 +30,42 @@ trait TopicRuleListItem extends js.Object {
 
 object TopicRuleListItem {
   @scala.inline
-  def apply(
-    createdAt: CreatedAtDate = null,
-    ruleArn: RuleArn = null,
-    ruleDisabled: js.UndefOr[IsDisabled] = js.undefined,
-    ruleName: RuleName = null,
-    topicPattern: TopicPattern = null
-  ): TopicRuleListItem = {
+  def apply(): TopicRuleListItem = {
     val __obj = js.Dynamic.literal()
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (ruleArn != null) __obj.updateDynamic("ruleArn")(ruleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(ruleDisabled)) __obj.updateDynamic("ruleDisabled")(ruleDisabled.get.asInstanceOf[js.Any])
-    if (ruleName != null) __obj.updateDynamic("ruleName")(ruleName.asInstanceOf[js.Any])
-    if (topicPattern != null) __obj.updateDynamic("topicPattern")(topicPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleListItem]
   }
+  @scala.inline
+  implicit class TopicRuleListItemOps[Self <: TopicRuleListItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAt(value: CreatedAtDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setRuleArn(value: RuleArn): Self = this.set("ruleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleArn: Self = this.set("ruleArn", js.undefined)
+    @scala.inline
+    def setRuleDisabled(value: IsDisabled): Self = this.set("ruleDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleDisabled: Self = this.set("ruleDisabled", js.undefined)
+    @scala.inline
+    def setRuleName(value: RuleName): Self = this.set("ruleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleName: Self = this.set("ruleName", js.undefined)
+    @scala.inline
+    def setTopicPattern(value: TopicPattern): Self = this.set("topicPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicPattern: Self = this.set("topicPattern", js.undefined)
+  }
+  
 }
 

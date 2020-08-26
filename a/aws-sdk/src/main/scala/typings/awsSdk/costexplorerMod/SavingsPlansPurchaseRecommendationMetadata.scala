@@ -18,11 +18,30 @@ trait SavingsPlansPurchaseRecommendationMetadata extends js.Object {
 
 object SavingsPlansPurchaseRecommendationMetadata {
   @scala.inline
-  def apply(GenerationTimestamp: GenericString = null, RecommendationId: GenericString = null): SavingsPlansPurchaseRecommendationMetadata = {
+  def apply(): SavingsPlansPurchaseRecommendationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (GenerationTimestamp != null) __obj.updateDynamic("GenerationTimestamp")(GenerationTimestamp.asInstanceOf[js.Any])
-    if (RecommendationId != null) __obj.updateDynamic("RecommendationId")(RecommendationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingsPlansPurchaseRecommendationMetadata]
   }
+  @scala.inline
+  implicit class SavingsPlansPurchaseRecommendationMetadataOps[Self <: SavingsPlansPurchaseRecommendationMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGenerationTimestamp(value: GenericString): Self = this.set("GenerationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenerationTimestamp: Self = this.set("GenerationTimestamp", js.undefined)
+    @scala.inline
+    def setRecommendationId(value: GenericString): Self = this.set("RecommendationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationId: Self = this.set("RecommendationId", js.undefined)
+  }
+  
 }
 

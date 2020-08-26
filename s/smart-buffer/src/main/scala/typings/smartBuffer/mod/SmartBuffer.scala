@@ -480,6 +480,7 @@ class SmartBuffer () extends js.Object {
     * @return { String }
     */
   def readString(): String = js.native
+  def readString(arg1: js.UndefOr[scala.Nothing], encoding: BufferEncoding): String = js.native
   def readString(arg1: Double): String = js.native
   def readString(arg1: Double, encoding: BufferEncoding): String = js.native
   def readString(arg1: BufferEncoding): String = js.native
@@ -706,6 +707,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def writeString(value: String): SmartBuffer = js.native
+  def writeString(value: String, arg2: js.UndefOr[scala.Nothing], encoding: BufferEncoding): SmartBuffer = js.native
   def writeString(value: String, arg2: Double): SmartBuffer = js.native
   def writeString(value: String, arg2: Double, encoding: BufferEncoding): SmartBuffer = js.native
   def writeString(value: String, arg2: BufferEncoding): SmartBuffer = js.native
@@ -720,6 +722,7 @@ class SmartBuffer () extends js.Object {
     * @return this
     */
   def writeStringNT(value: String): SmartBuffer = js.native
+  def writeStringNT(value: String, arg2: js.UndefOr[scala.Nothing], encoding: BufferEncoding): SmartBuffer = js.native
   def writeStringNT(value: String, arg2: Double): SmartBuffer = js.native
   def writeStringNT(value: String, arg2: Double, encoding: BufferEncoding): SmartBuffer = js.native
   def writeStringNT(value: String, arg2: BufferEncoding): SmartBuffer = js.native

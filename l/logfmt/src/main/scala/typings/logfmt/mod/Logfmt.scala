@@ -22,12 +22,14 @@ trait Logfmt extends js.Object {
   def error(err: Error): Unit = js.native
   def error(err: Error, id: String): Unit = js.native
   def log(): Unit = js.native
+  def log(data: js.UndefOr[scala.Nothing], stream: WritableStream): Unit = js.native
   def log(data: js.Object): Unit = js.native
   def log(data: js.Object, stream: WritableStream): Unit = js.native
   def namespace(data: js.Object): Logfmt = js.native
   def parse(line: String): js.Object = js.native
   def requestLogger(): HTTPHandler = js.native
   def requestLogger(formatter: RequestLoggerFormatter): HTTPHandler = js.native
+  def requestLogger(options: js.UndefOr[scala.Nothing], formatter: RequestLoggerFormatter): HTTPHandler = js.native
   def requestLogger(options: RequestLoggerOptions): HTTPHandler = js.native
   def requestLogger(options: RequestLoggerOptions, formatter: RequestLoggerFormatter): HTTPHandler = js.native
   def streamParser(): ReadWriteStream = js.native

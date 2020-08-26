@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "driftless"
-version := "2.0-dt-20190223Z-5c268f"
-scalaVersion := "2.13.2"
+version := "2.0-dt-20190223Z-615a92"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

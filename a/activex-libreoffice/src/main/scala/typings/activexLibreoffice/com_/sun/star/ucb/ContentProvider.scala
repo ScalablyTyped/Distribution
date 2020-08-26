@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides access to a set of Contents. */
+@js.native
 trait ContentProvider
   extends XContentProvider
      with XContentIdentifierFactory

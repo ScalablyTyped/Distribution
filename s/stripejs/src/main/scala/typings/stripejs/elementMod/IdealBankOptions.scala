@@ -1,11 +1,10 @@
 package typings.stripejs.elementMod
 
-import typings.stripejs.anon.Empty
-import typings.stripejs.anon.Invalid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdealBankOptions extends BaseOptions {
   /**
     * A pre-filled value for the Element. Can be one of the banks listed in the
@@ -13,25 +12,31 @@ trait IdealBankOptions extends BaseOptions {
     *
     * @example 'abn_amro'
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String] = js.native
 }
 
 object IdealBankOptions {
   @scala.inline
-  def apply(
-    classes: Empty = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    hideIcon: js.UndefOr[Boolean] = js.undefined,
-    style: Invalid = null,
-    value: String = null
-  ): IdealBankOptions = {
+  def apply(): IdealBankOptions = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdealBankOptions]
   }
+  @scala.inline
+  implicit class IdealBankOptionsOps[Self <: IdealBankOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

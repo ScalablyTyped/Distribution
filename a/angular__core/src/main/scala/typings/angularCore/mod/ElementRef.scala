@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core", "ElementRef")
 @js.native
-class ElementRef[T /* <: js.Any */] protected () extends js.Object {
+class ElementRef[T] protected () extends js.Object {
   def this(nativeElement: T) = this()
   /**
     * The underlying native element or `null` if direct access to native elements is not supported

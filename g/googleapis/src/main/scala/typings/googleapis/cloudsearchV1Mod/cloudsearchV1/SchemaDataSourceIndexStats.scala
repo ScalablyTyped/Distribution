@@ -24,11 +24,32 @@ trait SchemaDataSourceIndexStats extends js.Object {
 
 object SchemaDataSourceIndexStats {
   @scala.inline
-  def apply(date: SchemaDate = null, itemCountByStatus: js.Array[SchemaItemCountByStatus] = null): SchemaDataSourceIndexStats = {
+  def apply(): SchemaDataSourceIndexStats = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (itemCountByStatus != null) __obj.updateDynamic("itemCountByStatus")(itemCountByStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDataSourceIndexStats]
   }
+  @scala.inline
+  implicit class SchemaDataSourceIndexStatsOps[Self <: SchemaDataSourceIndexStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: SchemaDate): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setItemCountByStatusVarargs(value: SchemaItemCountByStatus*): Self = this.set("itemCountByStatus", js.Array(value :_*))
+    @scala.inline
+    def setItemCountByStatus(value: js.Array[SchemaItemCountByStatus]): Self = this.set("itemCountByStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemCountByStatus: Self = this.set("itemCountByStatus", js.undefined)
+  }
+  
 }
 

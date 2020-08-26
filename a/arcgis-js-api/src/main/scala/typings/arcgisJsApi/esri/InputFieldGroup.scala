@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.collapsed
+import typings.arcgisJsApi.arcgisJsApiStrings.expanded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +20,7 @@ trait InputFieldGroup extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#evaluatedVisibility)
     */
   val evaluatedVisibility: Boolean = js.native
+  var initialState: expanded | collapsed = js.native
   /**
     * The input fields belonging to this group.
     *

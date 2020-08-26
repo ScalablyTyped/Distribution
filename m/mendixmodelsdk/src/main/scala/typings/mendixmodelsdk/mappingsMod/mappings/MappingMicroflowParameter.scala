@@ -31,28 +31,26 @@ class MappingMicroflowParameter protected ()
     * In version 7.6.0: introduced
     */
   def jsonValueElementPath: String = js.native
-  def jsonValueElementPath(newValue: String): js.Any = js.native
+  def jsonValueElementPath_=(newValue: String): Unit = js.native
   def levelOfParent: Double = js.native
-  def levelOfParent(newValue: Double): js.Any = js.native
-  def parameter(): js.Any = js.native
-  def parameter(newValue: IMicroflowParameter): js.Any = js.native
+  def levelOfParent_=(newValue: Double): Unit = js.native
+  def parameter: IMicroflowParameter | Null = js.native
   def parameterQualifiedName: String | Null = js.native
-  @JSName("parameter")
-  def parameter_Union: IMicroflowParameter | Null = js.native
+  def parameter_=(newValue: IMicroflowParameter | Null): Unit = js.native
   /**
     * The value of this property is conceptually of type mappings.ElementPath.
     *
     * In version 7.6.0: deleted
     */
   def valueElementPath: String = js.native
-  def valueElementPath(newValue: String): js.Any = js.native
+  def valueElementPath_=(newValue: String): Unit = js.native
   /**
     * The value of this property is conceptually of type mappings.ElementPath.
     *
     * In version 7.6.0: introduced
     */
   def xmlValueElementPath: String = js.native
-  def xmlValueElementPath(newValue: String): js.Any = js.native
+  def xmlValueElementPath_=(newValue: String): Unit = js.native
 }
 
 /* static members */

@@ -129,180 +129,181 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {[ P in keyof petit-dom.petit-dom.PetitDom.DomElements ]: petit-dom.petit-dom.PetitDom.Props<petit-dom.petit-dom.PetitDom.DomElements[P]> & {  content? :petit-dom.petit-dom.PetitDom.Content | std.ReadonlyArray<petit-dom.petit-dom.PetitDom.Content>}} */
+/* Inlined {[ P in keyof petit-dom.petit-dom.PetitDom.DomElements ]: petit-dom.petit-dom.PetitDom.Props<petit-dom.petit-dom.PetitDom.DomElements[P]> & {  content :petit-dom.petit-dom.PetitDom.Content | std.ReadonlyArray<petit-dom.petit-dom.PetitDom.Content> | undefined}} */
+@js.native
 trait IntrinsicElements extends js.Object {
-  var a: PropsHTMLAnchorElementcon
-  var abbr: PropsHTMLElementcontentCo
-  var address: PropsHTMLElementcontentCo
-  var applet: PropsHTMLAppletElementcon
-  var area: PropsHTMLAreaElementconte
-  var article: PropsHTMLElementcontentCo
-  var aside: PropsHTMLElementcontentCo
-  var audio: PropsHTMLAudioElementcont
-  var b: PropsHTMLElementcontentCo
-  var base: PropsHTMLBaseElementconte
-  var basefont: PropsHTMLBaseFontElementc
-  var bdi: PropsHTMLElementcontentCo
-  var bdo: PropsHTMLElementcontentCo
-  var blockquote: PropsHTMLQuoteElementcont
-  var body: PropsHTMLBodyElementconte
-  var br: PropsHTMLBRElementcontent
-  var button: PropsHTMLButtonElementcon
-  var canvas: PropsHTMLCanvasElementcon
-  var caption: PropsHTMLTableCaptionElem
-  var circle: PropsSVGCircleElementcont
-  var cite: PropsHTMLElementcontentCo
-  var clipPath: PropsSVGClipPathElementco
-  var code: PropsHTMLElementcontentCo
-  var col: PropsHTMLTableColElementc
-  var colgroup: PropsHTMLTableColElementc
-  var data: PropsHTMLDataElementconte
-  var datalist: PropsHTMLDataListElementc
-  var dd: PropsHTMLElementcontentCo
-  var defs: PropsSVGDefsElementconten
-  var del: PropsHTMLModElementconten
-  var desc: PropsSVGDescElementconten
-  var details: PropsHTMLDetailsElementco
-  var dfn: PropsHTMLElementcontentCo
-  var dialog: PropsHTMLDialogElementcon
-  var dir: PropsHTMLDirectoryElement
-  var div: PropsHTMLDivElementconten
-  var dl: PropsHTMLDListElementcont
-  var dt: PropsHTMLElementcontentCo
-  var ellipse: PropsSVGEllipseElementcon
-  var em: PropsHTMLElementcontentCo
-  var embed: PropsHTMLEmbedElementcont
-  var feBlend: PropsSVGFEBlendElementcon
-  var feColorMatrix: PropsSVGFEColorMatrixElem
-  var feComponentTransfer: PropsSVGFEComponentTransf
-  var feComposite: PropsSVGFECompositeElemen
-  var feConvolveMatrix: PropsSVGFEConvolveMatrixE
-  var feDiffuseLighting: PropsSVGFEDiffuseLighting
-  var feDisplacementMap: PropsSVGFEDisplacementMap
-  var feDistantLight: PropsSVGFEDistantLightEle
-  var feFlood: PropsSVGFEFloodElementcon
-  var feFuncA: PropsSVGFEFuncAElementcon
-  var feFuncB: PropsSVGFEFuncBElementcon
-  var feFuncG: PropsSVGFEFuncGElementcon
-  var feFuncR: PropsSVGFEFuncRElementcon
-  var feGaussianBlur: PropsSVGFEGaussianBlurEle
-  var feImage: PropsSVGFEImageElementcon
-  var feMerge: PropsSVGFEMergeElementcon
-  var feMergeNode: PropsSVGFEMergeNodeElemen
-  var feMorphology: PropsSVGFEMorphologyEleme
-  var feOffset: PropsSVGFEOffsetElementco
-  var fePointLight: PropsSVGFEPointLightEleme
-  var feSpecularLighting: PropsSVGFESpecularLightin
-  var feSpotLight: PropsSVGFESpotLightElemen
-  var feTile: PropsSVGFETileElementcont
-  var feTurbulence: PropsSVGFETurbulenceEleme
-  var fieldset: PropsHTMLFieldSetElementc
-  var figcaption: PropsHTMLElementcontentCo
-  var figure: PropsHTMLElementcontentCo
-  var filter: PropsSVGFilterElementcont
-  var font: PropsHTMLFontElementconte
-  var footer: PropsHTMLElementcontentCo
-  var foreignObject: PropsSVGForeignObjectElem
-  var form: PropsHTMLFormElementconte
-  var frame: PropsHTMLFrameElementcont
-  var frameset: PropsHTMLFrameSetElementc
-  var g: PropsSVGGElementcontentCo
-  var h1: PropsHTMLHeadingElementco
-  var h2: PropsHTMLHeadingElementco
-  var h3: PropsHTMLHeadingElementco
-  var h4: PropsHTMLHeadingElementco
-  var h5: PropsHTMLHeadingElementco
-  var h6: PropsHTMLHeadingElementco
-  var head: PropsHTMLHeadElementconte
-  var header: PropsHTMLElementcontentCo
-  var hgroup: PropsHTMLElementcontentCo
-  var hr: PropsHTMLHRElementcontent
-  var html: PropsHTMLHtmlElementconte
-  var i: PropsHTMLElementcontentCo
-  var iframe: PropsHTMLIFrameElementcon
-  var image: PropsSVGImageElementconte
-  var img: PropsHTMLImageElementcont
-  var input: PropsHTMLInputElementcont
-  var ins: PropsHTMLModElementconten
-  var kbd: PropsHTMLElementcontentCo
-  var label: PropsHTMLLabelElementcont
-  var legend: PropsHTMLLegendElementcon
-  var li: PropsHTMLLIElementcontent
-  var line: PropsSVGLineElementconten
-  var linearGradient: PropsSVGLinearGradientEle
-  var link: PropsHTMLLinkElementconte
-  var main: PropsHTMLElementcontentCo
-  var map: PropsHTMLMapElementconten
-  var mark: PropsHTMLElementcontentCo
-  var marker: PropsSVGMarkerElementcont
-  var marquee: PropsHTMLMarqueeElementco
-  var mask: PropsSVGMaskElementconten
-  var menu: PropsHTMLMenuElementconte
-  var meta: PropsHTMLMetaElementconte
-  var metadata: PropsSVGMetadataElementco
-  var meter: PropsHTMLMeterElementcont
-  var nav: PropsHTMLElementcontentCo
-  var noscript: PropsHTMLElementcontentCo
-  var `object`: PropsHTMLObjectElementcon
-  var ol: PropsHTMLOListElementcont
-  var optgroup: PropsHTMLOptGroupElementc
-  var option: PropsHTMLOptionElementcon
-  var output: PropsHTMLOutputElementcon
-  var p: PropsHTMLParagraphElement
-  var param: PropsHTMLParamElementcont
-  var path: PropsSVGPathElementconten
-  var pattern: PropsSVGPatternElementcon
-  var picture: PropsHTMLPictureElementco
-  var polygon: PropsSVGPolygonElementcon
-  var polyline: PropsSVGPolylineElementco
-  var pre: PropsHTMLPreElementconten
-  var progress: PropsHTMLProgressElementc
-  var q: PropsHTMLQuoteElementcont
-  var radialGradient: PropsSVGRadialGradientEle
-  var rect: PropsSVGRectElementconten
-  var rp: PropsHTMLElementcontentCo
-  var rt: PropsHTMLElementcontentCo
-  var ruby: PropsHTMLElementcontentCo
-  var s: PropsHTMLElementcontentCo
-  var samp: PropsHTMLElementcontentCo
-  var script: PropsHTMLScriptElementcon
-  var section: PropsHTMLElementcontentCo
-  var select: PropsHTMLSelectElementcon
-  var slot: PropsHTMLSlotElementconte
-  var small: PropsHTMLElementcontentCo
-  var source: PropsHTMLSourceElementcon
-  var span: PropsHTMLSpanElementconte
-  var stop: PropsSVGStopElementconten
-  var strong: PropsHTMLElementcontentCo
-  var style: PropsHTMLStyleElementcont
-  var sub: PropsHTMLElementcontentCo
-  var summary: PropsHTMLElementcontentCo
-  var sup: PropsHTMLElementcontentCo
-  var svg: PropsSVGSVGElementcontent
-  var switch: PropsSVGSwitchElementcont
-  var symbol: PropsSVGSymbolElementcont
-  var table: PropsHTMLTableElementcont
-  var tbody: PropsHTMLTableSectionElem
-  var td: PropsHTMLTableDataCellEle
-  var template: PropsHTMLTemplateElementc
-  var text: PropsSVGTextElementconten
-  var textPath: PropsSVGTextPathElementco
-  var textarea: PropsHTMLTextAreaElementc
-  var tfoot: PropsHTMLTableSectionElem
-  var th: PropsHTMLTableHeaderCellE
-  var thead: PropsHTMLTableSectionElem
-  var time: PropsHTMLTimeElementconte
-  var title: PropsHTMLTitleElementcont
-  var tr: PropsHTMLTableRowElementc
-  var track: PropsHTMLTrackElementcont
-  var tspan: PropsSVGTSpanElementconte
-  var u: PropsHTMLElementcontentCo
-  var ul: PropsHTMLUListElementcont
-  var use: PropsSVGUseElementcontent
-  var `var`: PropsHTMLElementcontentCo
-  var video: PropsHTMLVideoElementcont
-  var view: PropsSVGViewElementconten
-  var wbr: PropsHTMLElementcontentCo
+  var a: PropsHTMLAnchorElementcon = js.native
+  var abbr: PropsHTMLElementcontentCo = js.native
+  var address: PropsHTMLElementcontentCo = js.native
+  var applet: PropsHTMLAppletElementcon = js.native
+  var area: PropsHTMLAreaElementconte = js.native
+  var article: PropsHTMLElementcontentCo = js.native
+  var aside: PropsHTMLElementcontentCo = js.native
+  var audio: PropsHTMLAudioElementcont = js.native
+  var b: PropsHTMLElementcontentCo = js.native
+  var base: PropsHTMLBaseElementconte = js.native
+  var basefont: PropsHTMLBaseFontElementc = js.native
+  var bdi: PropsHTMLElementcontentCo = js.native
+  var bdo: PropsHTMLElementcontentCo = js.native
+  var blockquote: PropsHTMLQuoteElementcont = js.native
+  var body: PropsHTMLBodyElementconte = js.native
+  var br: PropsHTMLBRElementcontent = js.native
+  var button: PropsHTMLButtonElementcon = js.native
+  var canvas: PropsHTMLCanvasElementcon = js.native
+  var caption: PropsHTMLTableCaptionElem = js.native
+  var circle: PropsSVGCircleElementcont = js.native
+  var cite: PropsHTMLElementcontentCo = js.native
+  var clipPath: PropsSVGClipPathElementco = js.native
+  var code: PropsHTMLElementcontentCo = js.native
+  var col: PropsHTMLTableColElementc = js.native
+  var colgroup: PropsHTMLTableColElementc = js.native
+  var data: PropsHTMLDataElementconte = js.native
+  var datalist: PropsHTMLDataListElementc = js.native
+  var dd: PropsHTMLElementcontentCo = js.native
+  var defs: PropsSVGDefsElementconten = js.native
+  var del: PropsHTMLModElementconten = js.native
+  var desc: PropsSVGDescElementconten = js.native
+  var details: PropsHTMLDetailsElementco = js.native
+  var dfn: PropsHTMLElementcontentCo = js.native
+  var dialog: PropsHTMLDialogElementcon = js.native
+  var dir: PropsHTMLDirectoryElement = js.native
+  var div: PropsHTMLDivElementconten = js.native
+  var dl: PropsHTMLDListElementcont = js.native
+  var dt: PropsHTMLElementcontentCo = js.native
+  var ellipse: PropsSVGEllipseElementcon = js.native
+  var em: PropsHTMLElementcontentCo = js.native
+  var embed: PropsHTMLEmbedElementcont = js.native
+  var feBlend: PropsSVGFEBlendElementcon = js.native
+  var feColorMatrix: PropsSVGFEColorMatrixElem = js.native
+  var feComponentTransfer: PropsSVGFEComponentTransf = js.native
+  var feComposite: PropsSVGFECompositeElemen = js.native
+  var feConvolveMatrix: PropsSVGFEConvolveMatrixE = js.native
+  var feDiffuseLighting: PropsSVGFEDiffuseLighting = js.native
+  var feDisplacementMap: PropsSVGFEDisplacementMap = js.native
+  var feDistantLight: PropsSVGFEDistantLightEle = js.native
+  var feFlood: PropsSVGFEFloodElementcon = js.native
+  var feFuncA: PropsSVGFEFuncAElementcon = js.native
+  var feFuncB: PropsSVGFEFuncBElementcon = js.native
+  var feFuncG: PropsSVGFEFuncGElementcon = js.native
+  var feFuncR: PropsSVGFEFuncRElementcon = js.native
+  var feGaussianBlur: PropsSVGFEGaussianBlurEle = js.native
+  var feImage: PropsSVGFEImageElementcon = js.native
+  var feMerge: PropsSVGFEMergeElementcon = js.native
+  var feMergeNode: PropsSVGFEMergeNodeElemen = js.native
+  var feMorphology: PropsSVGFEMorphologyEleme = js.native
+  var feOffset: PropsSVGFEOffsetElementco = js.native
+  var fePointLight: PropsSVGFEPointLightEleme = js.native
+  var feSpecularLighting: PropsSVGFESpecularLightin = js.native
+  var feSpotLight: PropsSVGFESpotLightElemen = js.native
+  var feTile: PropsSVGFETileElementcont = js.native
+  var feTurbulence: PropsSVGFETurbulenceEleme = js.native
+  var fieldset: PropsHTMLFieldSetElementc = js.native
+  var figcaption: PropsHTMLElementcontentCo = js.native
+  var figure: PropsHTMLElementcontentCo = js.native
+  var filter: PropsSVGFilterElementcont = js.native
+  var font: PropsHTMLFontElementconte = js.native
+  var footer: PropsHTMLElementcontentCo = js.native
+  var foreignObject: PropsSVGForeignObjectElem = js.native
+  var form: PropsHTMLFormElementconte = js.native
+  var frame: PropsHTMLFrameElementcont = js.native
+  var frameset: PropsHTMLFrameSetElementc = js.native
+  var g: PropsSVGGElementcontentCo = js.native
+  var h1: PropsHTMLHeadingElementco = js.native
+  var h2: PropsHTMLHeadingElementco = js.native
+  var h3: PropsHTMLHeadingElementco = js.native
+  var h4: PropsHTMLHeadingElementco = js.native
+  var h5: PropsHTMLHeadingElementco = js.native
+  var h6: PropsHTMLHeadingElementco = js.native
+  var head: PropsHTMLHeadElementconte = js.native
+  var header: PropsHTMLElementcontentCo = js.native
+  var hgroup: PropsHTMLElementcontentCo = js.native
+  var hr: PropsHTMLHRElementcontent = js.native
+  var html: PropsHTMLHtmlElementconte = js.native
+  var i: PropsHTMLElementcontentCo = js.native
+  var iframe: PropsHTMLIFrameElementcon = js.native
+  var image: PropsSVGImageElementconte = js.native
+  var img: PropsHTMLImageElementcont = js.native
+  var input: PropsHTMLInputElementcont = js.native
+  var ins: PropsHTMLModElementconten = js.native
+  var kbd: PropsHTMLElementcontentCo = js.native
+  var label: PropsHTMLLabelElementcont = js.native
+  var legend: PropsHTMLLegendElementcon = js.native
+  var li: PropsHTMLLIElementcontent = js.native
+  var line: PropsSVGLineElementconten = js.native
+  var linearGradient: PropsSVGLinearGradientEle = js.native
+  var link: PropsHTMLLinkElementconte = js.native
+  var main: PropsHTMLElementcontentCo = js.native
+  var map: PropsHTMLMapElementconten = js.native
+  var mark: PropsHTMLElementcontentCo = js.native
+  var marker: PropsSVGMarkerElementcont = js.native
+  var marquee: PropsHTMLMarqueeElementco = js.native
+  var mask: PropsSVGMaskElementconten = js.native
+  var menu: PropsHTMLMenuElementconte = js.native
+  var meta: PropsHTMLMetaElementconte = js.native
+  var metadata: PropsSVGMetadataElementco = js.native
+  var meter: PropsHTMLMeterElementcont = js.native
+  var nav: PropsHTMLElementcontentCo = js.native
+  var noscript: PropsHTMLElementcontentCo = js.native
+  var `object`: PropsHTMLObjectElementcon = js.native
+  var ol: PropsHTMLOListElementcont = js.native
+  var optgroup: PropsHTMLOptGroupElementc = js.native
+  var option: PropsHTMLOptionElementcon = js.native
+  var output: PropsHTMLOutputElementcon = js.native
+  var p: PropsHTMLParagraphElement = js.native
+  var param: PropsHTMLParamElementcont = js.native
+  var path: PropsSVGPathElementconten = js.native
+  var pattern: PropsSVGPatternElementcon = js.native
+  var picture: PropsHTMLPictureElementco = js.native
+  var polygon: PropsSVGPolygonElementcon = js.native
+  var polyline: PropsSVGPolylineElementco = js.native
+  var pre: PropsHTMLPreElementconten = js.native
+  var progress: PropsHTMLProgressElementc = js.native
+  var q: PropsHTMLQuoteElementcont = js.native
+  var radialGradient: PropsSVGRadialGradientEle = js.native
+  var rect: PropsSVGRectElementconten = js.native
+  var rp: PropsHTMLElementcontentCo = js.native
+  var rt: PropsHTMLElementcontentCo = js.native
+  var ruby: PropsHTMLElementcontentCo = js.native
+  var s: PropsHTMLElementcontentCo = js.native
+  var samp: PropsHTMLElementcontentCo = js.native
+  var script: PropsHTMLScriptElementcon = js.native
+  var section: PropsHTMLElementcontentCo = js.native
+  var select: PropsHTMLSelectElementcon = js.native
+  var slot: PropsHTMLSlotElementconte = js.native
+  var small: PropsHTMLElementcontentCo = js.native
+  var source: PropsHTMLSourceElementcon = js.native
+  var span: PropsHTMLSpanElementconte = js.native
+  var stop: PropsSVGStopElementconten = js.native
+  var strong: PropsHTMLElementcontentCo = js.native
+  var style: PropsHTMLStyleElementcont = js.native
+  var sub: PropsHTMLElementcontentCo = js.native
+  var summary: PropsHTMLElementcontentCo = js.native
+  var sup: PropsHTMLElementcontentCo = js.native
+  var svg: PropsSVGSVGElementcontent = js.native
+  var switch: PropsSVGSwitchElementcont = js.native
+  var symbol: PropsSVGSymbolElementcont = js.native
+  var table: PropsHTMLTableElementcont = js.native
+  var tbody: PropsHTMLTableSectionElem = js.native
+  var td: PropsHTMLTableDataCellEle = js.native
+  var template: PropsHTMLTemplateElementc = js.native
+  var text: PropsSVGTextElementconten = js.native
+  var textPath: PropsSVGTextPathElementco = js.native
+  var textarea: PropsHTMLTextAreaElementc = js.native
+  var tfoot: PropsHTMLTableSectionElem = js.native
+  var th: PropsHTMLTableHeaderCellE = js.native
+  var thead: PropsHTMLTableSectionElem = js.native
+  var time: PropsHTMLTimeElementconte = js.native
+  var title: PropsHTMLTitleElementcont = js.native
+  var tr: PropsHTMLTableRowElementc = js.native
+  var track: PropsHTMLTrackElementcont = js.native
+  var tspan: PropsSVGTSpanElementconte = js.native
+  var u: PropsHTMLElementcontentCo = js.native
+  var ul: PropsHTMLUListElementcont = js.native
+  var use: PropsSVGUseElementcontent = js.native
+  var `var`: PropsHTMLElementcontentCo = js.native
+  var video: PropsHTMLVideoElementcont = js.native
+  var view: PropsSVGViewElementconten = js.native
+  var wbr: PropsHTMLElementcontentCo = js.native
 }
 
 object IntrinsicElements {
@@ -486,5 +487,362 @@ object IntrinsicElements {
     __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrinsicElements]
   }
+  @scala.inline
+  implicit class IntrinsicElementsOps[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setA(value: PropsHTMLAnchorElementcon): Self = this.set("a", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAbbr(value: PropsHTMLElementcontentCo): Self = this.set("abbr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddress(value: PropsHTMLElementcontentCo): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplet(value: PropsHTMLAppletElementcon): Self = this.set("applet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArea(value: PropsHTMLAreaElementconte): Self = this.set("area", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArticle(value: PropsHTMLElementcontentCo): Self = this.set("article", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAside(value: PropsHTMLElementcontentCo): Self = this.set("aside", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAudio(value: PropsHTMLAudioElementcont): Self = this.set("audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setB(value: PropsHTMLElementcontentCo): Self = this.set("b", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBase(value: PropsHTMLBaseElementconte): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBasefont(value: PropsHTMLBaseFontElementc): Self = this.set("basefont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBdi(value: PropsHTMLElementcontentCo): Self = this.set("bdi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBdo(value: PropsHTMLElementcontentCo): Self = this.set("bdo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlockquote(value: PropsHTMLQuoteElementcont): Self = this.set("blockquote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBody(value: PropsHTMLBodyElementconte): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBr(value: PropsHTMLBRElementcontent): Self = this.set("br", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setButton(value: PropsHTMLButtonElementcon): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCanvas(value: PropsHTMLCanvasElementcon): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCaption(value: PropsHTMLTableCaptionElem): Self = this.set("caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCircle(value: PropsSVGCircleElementcont): Self = this.set("circle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCite(value: PropsHTMLElementcontentCo): Self = this.set("cite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClipPath(value: PropsSVGClipPathElementco): Self = this.set("clipPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCode(value: PropsHTMLElementcontentCo): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCol(value: PropsHTMLTableColElementc): Self = this.set("col", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColgroup(value: PropsHTMLTableColElementc): Self = this.set("colgroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setData(value: PropsHTMLDataElementconte): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDatalist(value: PropsHTMLDataListElementc): Self = this.set("datalist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDd(value: PropsHTMLElementcontentCo): Self = this.set("dd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefs(value: PropsSVGDefsElementconten): Self = this.set("defs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDel(value: PropsHTMLModElementconten): Self = this.set("del", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDesc(value: PropsSVGDescElementconten): Self = this.set("desc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetails(value: PropsHTMLDetailsElementco): Self = this.set("details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDfn(value: PropsHTMLElementcontentCo): Self = this.set("dfn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDialog(value: PropsHTMLDialogElementcon): Self = this.set("dialog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDir(value: PropsHTMLDirectoryElement): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiv(value: PropsHTMLDivElementconten): Self = this.set("div", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDl(value: PropsHTMLDListElementcont): Self = this.set("dl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDt(value: PropsHTMLElementcontentCo): Self = this.set("dt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEllipse(value: PropsSVGEllipseElementcon): Self = this.set("ellipse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEm(value: PropsHTMLElementcontentCo): Self = this.set("em", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmbed(value: PropsHTMLEmbedElementcont): Self = this.set("embed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeBlend(value: PropsSVGFEBlendElementcon): Self = this.set("feBlend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeColorMatrix(value: PropsSVGFEColorMatrixElem): Self = this.set("feColorMatrix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeComponentTransfer(value: PropsSVGFEComponentTransf): Self = this.set("feComponentTransfer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeComposite(value: PropsSVGFECompositeElemen): Self = this.set("feComposite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeConvolveMatrix(value: PropsSVGFEConvolveMatrixE): Self = this.set("feConvolveMatrix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeDiffuseLighting(value: PropsSVGFEDiffuseLighting): Self = this.set("feDiffuseLighting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeDisplacementMap(value: PropsSVGFEDisplacementMap): Self = this.set("feDisplacementMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeDistantLight(value: PropsSVGFEDistantLightEle): Self = this.set("feDistantLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeFlood(value: PropsSVGFEFloodElementcon): Self = this.set("feFlood", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeFuncA(value: PropsSVGFEFuncAElementcon): Self = this.set("feFuncA", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeFuncB(value: PropsSVGFEFuncBElementcon): Self = this.set("feFuncB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeFuncG(value: PropsSVGFEFuncGElementcon): Self = this.set("feFuncG", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeFuncR(value: PropsSVGFEFuncRElementcon): Self = this.set("feFuncR", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeGaussianBlur(value: PropsSVGFEGaussianBlurEle): Self = this.set("feGaussianBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeImage(value: PropsSVGFEImageElementcon): Self = this.set("feImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeMerge(value: PropsSVGFEMergeElementcon): Self = this.set("feMerge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeMergeNode(value: PropsSVGFEMergeNodeElemen): Self = this.set("feMergeNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeMorphology(value: PropsSVGFEMorphologyEleme): Self = this.set("feMorphology", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeOffset(value: PropsSVGFEOffsetElementco): Self = this.set("feOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFePointLight(value: PropsSVGFEPointLightEleme): Self = this.set("fePointLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeSpecularLighting(value: PropsSVGFESpecularLightin): Self = this.set("feSpecularLighting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeSpotLight(value: PropsSVGFESpotLightElemen): Self = this.set("feSpotLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeTile(value: PropsSVGFETileElementcont): Self = this.set("feTile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeTurbulence(value: PropsSVGFETurbulenceEleme): Self = this.set("feTurbulence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFieldset(value: PropsHTMLFieldSetElementc): Self = this.set("fieldset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFigcaption(value: PropsHTMLElementcontentCo): Self = this.set("figcaption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFigure(value: PropsHTMLElementcontentCo): Self = this.set("figure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: PropsSVGFilterElementcont): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFont(value: PropsHTMLFontElementconte): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFooter(value: PropsHTMLElementcontentCo): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForeignObject(value: PropsSVGForeignObjectElem): Self = this.set("foreignObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForm(value: PropsHTMLFormElementconte): Self = this.set("form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFrame(value: PropsHTMLFrameElementcont): Self = this.set("frame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFrameset(value: PropsHTMLFrameSetElementc): Self = this.set("frameset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setG(value: PropsSVGGElementcontentCo): Self = this.set("g", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH1(value: PropsHTMLHeadingElementco): Self = this.set("h1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH2(value: PropsHTMLHeadingElementco): Self = this.set("h2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH3(value: PropsHTMLHeadingElementco): Self = this.set("h3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH4(value: PropsHTMLHeadingElementco): Self = this.set("h4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH5(value: PropsHTMLHeadingElementco): Self = this.set("h5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH6(value: PropsHTMLHeadingElementco): Self = this.set("h6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHead(value: PropsHTMLHeadElementconte): Self = this.set("head", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeader(value: PropsHTMLElementcontentCo): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHgroup(value: PropsHTMLElementcontentCo): Self = this.set("hgroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHr(value: PropsHTMLHRElementcontent): Self = this.set("hr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHtml(value: PropsHTMLHtmlElementconte): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setI(value: PropsHTMLElementcontentCo): Self = this.set("i", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIframe(value: PropsHTMLIFrameElementcon): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImage(value: PropsSVGImageElementconte): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImg(value: PropsHTMLImageElementcont): Self = this.set("img", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInput(value: PropsHTMLInputElementcont): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIns(value: PropsHTMLModElementconten): Self = this.set("ins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKbd(value: PropsHTMLElementcontentCo): Self = this.set("kbd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabel(value: PropsHTMLLabelElementcont): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLegend(value: PropsHTMLLegendElementcon): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLi(value: PropsHTMLLIElementcontent): Self = this.set("li", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLine(value: PropsSVGLineElementconten): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLinearGradient(value: PropsSVGLinearGradientEle): Self = this.set("linearGradient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLink(value: PropsHTMLLinkElementconte): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMain(value: PropsHTMLElementcontentCo): Self = this.set("main", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMap(value: PropsHTMLMapElementconten): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMark(value: PropsHTMLElementcontentCo): Self = this.set("mark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMarker(value: PropsSVGMarkerElementcont): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMarquee(value: PropsHTMLMarqueeElementco): Self = this.set("marquee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMask(value: PropsSVGMaskElementconten): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMenu(value: PropsHTMLMenuElementconte): Self = this.set("menu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMeta(value: PropsHTMLMetaElementconte): Self = this.set("meta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetadata(value: PropsSVGMetadataElementco): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMeter(value: PropsHTMLMeterElementcont): Self = this.set("meter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNav(value: PropsHTMLElementcontentCo): Self = this.set("nav", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNoscript(value: PropsHTMLElementcontentCo): Self = this.set("noscript", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObject(value: PropsHTMLObjectElementcon): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOl(value: PropsHTMLOListElementcont): Self = this.set("ol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptgroup(value: PropsHTMLOptGroupElementc): Self = this.set("optgroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOption(value: PropsHTMLOptionElementcon): Self = this.set("option", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutput(value: PropsHTMLOutputElementcon): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setP(value: PropsHTMLParagraphElement): Self = this.set("p", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParam(value: PropsHTMLParamElementcont): Self = this.set("param", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: PropsSVGPathElementconten): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPattern(value: PropsSVGPatternElementcon): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPicture(value: PropsHTMLPictureElementco): Self = this.set("picture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolygon(value: PropsSVGPolygonElementcon): Self = this.set("polygon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolyline(value: PropsSVGPolylineElementco): Self = this.set("polyline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPre(value: PropsHTMLPreElementconten): Self = this.set("pre", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProgress(value: PropsHTMLProgressElementc): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQ(value: PropsHTMLQuoteElementcont): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRadialGradient(value: PropsSVGRadialGradientEle): Self = this.set("radialGradient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRect(value: PropsSVGRectElementconten): Self = this.set("rect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRp(value: PropsHTMLElementcontentCo): Self = this.set("rp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRt(value: PropsHTMLElementcontentCo): Self = this.set("rt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuby(value: PropsHTMLElementcontentCo): Self = this.set("ruby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS(value: PropsHTMLElementcontentCo): Self = this.set("s", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSamp(value: PropsHTMLElementcontentCo): Self = this.set("samp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScript(value: PropsHTMLScriptElementcon): Self = this.set("script", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSection(value: PropsHTMLElementcontentCo): Self = this.set("section", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelect(value: PropsHTMLSelectElementcon): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSlot(value: PropsHTMLSlotElementconte): Self = this.set("slot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSmall(value: PropsHTMLElementcontentCo): Self = this.set("small", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: PropsHTMLSourceElementcon): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpan(value: PropsHTMLSpanElementconte): Self = this.set("span", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStop(value: PropsSVGStopElementconten): Self = this.set("stop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStrong(value: PropsHTMLElementcontentCo): Self = this.set("strong", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStyle(value: PropsHTMLStyleElementcont): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSub(value: PropsHTMLElementcontentCo): Self = this.set("sub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSummary(value: PropsHTMLElementcontentCo): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSup(value: PropsHTMLElementcontentCo): Self = this.set("sup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSvg(value: PropsSVGSVGElementcontent): Self = this.set("svg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSwitch(value: PropsSVGSwitchElementcont): Self = this.set("switch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSymbol(value: PropsSVGSymbolElementcont): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTable(value: PropsHTMLTableElementcont): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTbody(value: PropsHTMLTableSectionElem): Self = this.set("tbody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTd(value: PropsHTMLTableDataCellEle): Self = this.set("td", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplate(value: PropsHTMLTemplateElementc): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: PropsSVGTextElementconten): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTextPath(value: PropsSVGTextPathElementco): Self = this.set("textPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTextarea(value: PropsHTMLTextAreaElementc): Self = this.set("textarea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTfoot(value: PropsHTMLTableSectionElem): Self = this.set("tfoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTh(value: PropsHTMLTableHeaderCellE): Self = this.set("th", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThead(value: PropsHTMLTableSectionElem): Self = this.set("thead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTime(value: PropsHTMLTimeElementconte): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: PropsHTMLTitleElementcont): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTr(value: PropsHTMLTableRowElementc): Self = this.set("tr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrack(value: PropsHTMLTrackElementcont): Self = this.set("track", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTspan(value: PropsSVGTSpanElementconte): Self = this.set("tspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setU(value: PropsHTMLElementcontentCo): Self = this.set("u", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUl(value: PropsHTMLUListElementcont): Self = this.set("ul", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUse(value: PropsSVGUseElementcontent): Self = this.set("use", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVar(value: PropsHTMLElementcontentCo): Self = this.set("var", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVideo(value: PropsHTMLVideoElementcont): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setView(value: PropsSVGViewElementconten): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWbr(value: PropsHTMLElementcontentCo): Self = this.set("wbr", value.asInstanceOf[js.Any])
+  }
+  
 }
 

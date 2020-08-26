@@ -20,24 +20,10 @@ class Maybe_[T] protected ()
   def this(`type`: MaybeType, value: T) = this()
   var `type`: js.Any = js.native
   var value: js.Any = js.native
-  /* CompleteClass */
-  override def bind[U](f: js.Function1[T, Monad[U]]): Monad[U] = js.native
   def caseOf[U](patterns: MaybePatterns[T, U]): U = js.native
-  /* CompleteClass */
-  override def chain[U](f: js.Function1[T, Monad[U]]): Monad[U] = js.native
   def defaulting(defaultValue: T): Maybe_[T] = js.native
   def `do`(): Maybe_[T] = js.native
   def `do`(patterns: Partial[MaybePatterns[T, Unit]]): Maybe_[T] = js.native
-  /* CompleteClass */
-  override def fmap[U](f: js.Function1[T, U]): Functor[U] = js.native
-  /* CompleteClass */
-  override def lift[U](f: js.Function1[T, U]): Functor[U] = js.native
-  /* CompleteClass */
-  override def map[U](f: js.Function1[T, U]): Functor[U] = js.native
-  /* CompleteClass */
-  override def of[U](t: U): Monad[U] = js.native
-  /* CompleteClass */
-  override def unit[U](t: U): Monad[U] = js.native
   def valueOr[U /* <: T */](defaultValue: U): T | U = js.native
   def valueOrCompute[U /* <: T */](defaultValueFunction: js.Function0[U]): T | U = js.native
   def valueOrThrow(): T = js.native

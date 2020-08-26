@@ -42,24 +42,52 @@ trait SchemaDeployment extends js.Object {
 
 object SchemaDeployment {
   @scala.inline
-  def apply(
-    address: String = null,
-    config: String = null,
-    deployTime: String = null,
-    platform: String = null,
-    resourceUri: js.Array[String] = null,
-    undeployTime: String = null,
-    userEmail: String = null
-  ): SchemaDeployment = {
+  def apply(): SchemaDeployment = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (deployTime != null) __obj.updateDynamic("deployTime")(deployTime.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (resourceUri != null) __obj.updateDynamic("resourceUri")(resourceUri.asInstanceOf[js.Any])
-    if (undeployTime != null) __obj.updateDynamic("undeployTime")(undeployTime.asInstanceOf[js.Any])
-    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeployment]
   }
+  @scala.inline
+  implicit class SchemaDeploymentOps[Self <: SchemaDeployment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setConfig(value: String): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setDeployTime(value: String): Self = this.set("deployTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployTime: Self = this.set("deployTime", js.undefined)
+    @scala.inline
+    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setResourceUriVarargs(value: String*): Self = this.set("resourceUri", js.Array(value :_*))
+    @scala.inline
+    def setResourceUri(value: js.Array[String]): Self = this.set("resourceUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceUri: Self = this.set("resourceUri", js.undefined)
+    @scala.inline
+    def setUndeployTime(value: String): Self = this.set("undeployTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUndeployTime: Self = this.set("undeployTime", js.undefined)
+    @scala.inline
+    def setUserEmail(value: String): Self = this.set("userEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserEmail: Self = this.set("userEmail", js.undefined)
+  }
+  
 }
 

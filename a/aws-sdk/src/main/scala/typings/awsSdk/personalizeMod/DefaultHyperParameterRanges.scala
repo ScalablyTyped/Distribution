@@ -22,16 +22,40 @@ trait DefaultHyperParameterRanges extends js.Object {
 
 object DefaultHyperParameterRanges {
   @scala.inline
-  def apply(
-    categoricalHyperParameterRanges: DefaultCategoricalHyperParameterRanges = null,
-    continuousHyperParameterRanges: DefaultContinuousHyperParameterRanges = null,
-    integerHyperParameterRanges: DefaultIntegerHyperParameterRanges = null
-  ): DefaultHyperParameterRanges = {
+  def apply(): DefaultHyperParameterRanges = {
     val __obj = js.Dynamic.literal()
-    if (categoricalHyperParameterRanges != null) __obj.updateDynamic("categoricalHyperParameterRanges")(categoricalHyperParameterRanges.asInstanceOf[js.Any])
-    if (continuousHyperParameterRanges != null) __obj.updateDynamic("continuousHyperParameterRanges")(continuousHyperParameterRanges.asInstanceOf[js.Any])
-    if (integerHyperParameterRanges != null) __obj.updateDynamic("integerHyperParameterRanges")(integerHyperParameterRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultHyperParameterRanges]
   }
+  @scala.inline
+  implicit class DefaultHyperParameterRangesOps[Self <: DefaultHyperParameterRanges] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategoricalHyperParameterRangesVarargs(value: DefaultCategoricalHyperParameterRange*): Self = this.set("categoricalHyperParameterRanges", js.Array(value :_*))
+    @scala.inline
+    def setCategoricalHyperParameterRanges(value: DefaultCategoricalHyperParameterRanges): Self = this.set("categoricalHyperParameterRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoricalHyperParameterRanges: Self = this.set("categoricalHyperParameterRanges", js.undefined)
+    @scala.inline
+    def setContinuousHyperParameterRangesVarargs(value: DefaultContinuousHyperParameterRange*): Self = this.set("continuousHyperParameterRanges", js.Array(value :_*))
+    @scala.inline
+    def setContinuousHyperParameterRanges(value: DefaultContinuousHyperParameterRanges): Self = this.set("continuousHyperParameterRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinuousHyperParameterRanges: Self = this.set("continuousHyperParameterRanges", js.undefined)
+    @scala.inline
+    def setIntegerHyperParameterRangesVarargs(value: DefaultIntegerHyperParameterRange*): Self = this.set("integerHyperParameterRanges", js.Array(value :_*))
+    @scala.inline
+    def setIntegerHyperParameterRanges(value: DefaultIntegerHyperParameterRanges): Self = this.set("integerHyperParameterRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegerHyperParameterRanges: Self = this.set("integerHyperParameterRanges", js.undefined)
+  }
+  
 }
 

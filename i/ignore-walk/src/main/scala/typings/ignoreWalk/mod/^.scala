@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): js.Promise[js.Array[String]] = js.native
+  def apply(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* results */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
   def apply(options: WalkerOptions): js.Promise[js.Array[String]] = js.native
   def apply(options: WalkerOptions, callback: js.Function1[/* results */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
 }

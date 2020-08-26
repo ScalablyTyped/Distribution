@@ -26,3 +26,10 @@ abstract class AbstractButton[H /* <: HTMLAttributes[HTMLElement] */] ()
   /* protected */ def renderChildren(): ReactNode = js.native
 }
 
+/* static members */
+@JSImport("@blueprintjs/core/lib/esm/components/button/abstractButton", "AbstractButton")
+@js.native
+object AbstractButton extends js.Object {
+  def getDerivedStateFromProps(props: IButtonProps, state: IButtonState): IsActive = js.native
+}
+

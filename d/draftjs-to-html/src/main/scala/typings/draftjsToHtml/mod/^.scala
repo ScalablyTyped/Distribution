@@ -9,7 +9,30 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(editorContent: RawDraftContentState): String = js.native
+  def apply(
+    editorContent: RawDraftContentState,
+    hashtagConfig: js.UndefOr[scala.Nothing],
+    directional: js.UndefOr[scala.Nothing],
+    customEntityTransform: js.Function1[/* repeated */ js.Any, _]
+  ): String = js.native
+  def apply(
+    editorContent: RawDraftContentState,
+    hashtagConfig: js.UndefOr[scala.Nothing],
+    directional: Boolean
+  ): String = js.native
+  def apply(
+    editorContent: RawDraftContentState,
+    hashtagConfig: js.UndefOr[scala.Nothing],
+    directional: Boolean,
+    customEntityTransform: js.Function1[/* repeated */ js.Any, _]
+  ): String = js.native
   def apply(editorContent: RawDraftContentState, hashtagConfig: HashtagConfig): String = js.native
+  def apply(
+    editorContent: RawDraftContentState,
+    hashtagConfig: HashtagConfig,
+    directional: js.UndefOr[scala.Nothing],
+    customEntityTransform: js.Function1[/* repeated */ js.Any, _]
+  ): String = js.native
   def apply(editorContent: RawDraftContentState, hashtagConfig: HashtagConfig, directional: Boolean): String = js.native
   def apply(
     editorContent: RawDraftContentState,

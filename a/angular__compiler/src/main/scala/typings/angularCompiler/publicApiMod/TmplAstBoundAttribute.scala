@@ -55,6 +55,26 @@ class TmplAstBoundAttribute protected ()
     value: typings.angularCompiler.astMod.AST,
     unit: String,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
+    i18n: Message
+  ) = this()
+  def this(
+    name: String,
+    `type`: BindingType,
+    securityContext: SecurityContext,
+    value: typings.angularCompiler.astMod.AST,
+    unit: String,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
+    i18n: Node
+  ) = this()
+  def this(
+    name: String,
+    `type`: BindingType,
+    securityContext: SecurityContext,
+    value: typings.angularCompiler.astMod.AST,
+    unit: String,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     i18n: Message
   ) = this()
@@ -66,6 +86,26 @@ class TmplAstBoundAttribute protected ()
     unit: String,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    i18n: Node
+  ) = this()
+  def this(
+    name: String,
+    `type`: BindingType,
+    securityContext: SecurityContext,
+    value: typings.angularCompiler.astMod.AST,
+    unit: Null,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
+    i18n: Message
+  ) = this()
+  def this(
+    name: String,
+    `type`: BindingType,
+    securityContext: SecurityContext,
+    value: typings.angularCompiler.astMod.AST,
+    unit: Null,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
     i18n: Node
   ) = this()
   def this(

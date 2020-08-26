@@ -35,18 +35,38 @@ trait SchemaAddonsConfig extends js.Object {
 
 object SchemaAddonsConfig {
   @scala.inline
-  def apply(
-    horizontalPodAutoscaling: SchemaHorizontalPodAutoscaling = null,
-    httpLoadBalancing: SchemaHttpLoadBalancing = null,
-    kubernetesDashboard: SchemaKubernetesDashboard = null,
-    networkPolicyConfig: SchemaNetworkPolicyConfig = null
-  ): SchemaAddonsConfig = {
+  def apply(): SchemaAddonsConfig = {
     val __obj = js.Dynamic.literal()
-    if (horizontalPodAutoscaling != null) __obj.updateDynamic("horizontalPodAutoscaling")(horizontalPodAutoscaling.asInstanceOf[js.Any])
-    if (httpLoadBalancing != null) __obj.updateDynamic("httpLoadBalancing")(httpLoadBalancing.asInstanceOf[js.Any])
-    if (kubernetesDashboard != null) __obj.updateDynamic("kubernetesDashboard")(kubernetesDashboard.asInstanceOf[js.Any])
-    if (networkPolicyConfig != null) __obj.updateDynamic("networkPolicyConfig")(networkPolicyConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAddonsConfig]
   }
+  @scala.inline
+  implicit class SchemaAddonsConfigOps[Self <: SchemaAddonsConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHorizontalPodAutoscaling(value: SchemaHorizontalPodAutoscaling): Self = this.set("horizontalPodAutoscaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalPodAutoscaling: Self = this.set("horizontalPodAutoscaling", js.undefined)
+    @scala.inline
+    def setHttpLoadBalancing(value: SchemaHttpLoadBalancing): Self = this.set("httpLoadBalancing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpLoadBalancing: Self = this.set("httpLoadBalancing", js.undefined)
+    @scala.inline
+    def setKubernetesDashboard(value: SchemaKubernetesDashboard): Self = this.set("kubernetesDashboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKubernetesDashboard: Self = this.set("kubernetesDashboard", js.undefined)
+    @scala.inline
+    def setNetworkPolicyConfig(value: SchemaNetworkPolicyConfig): Self = this.set("networkPolicyConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkPolicyConfig: Self = this.set("networkPolicyConfig", js.undefined)
+  }
+  
 }
 

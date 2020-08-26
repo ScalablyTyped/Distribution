@@ -8,9 +8,8 @@ trait _WhereExpression extends js.Object
 
 object _WhereExpression {
   @scala.inline
-  def WhereGroup(expressions: js.Array[WhereExpression], op: String = null): _WhereExpression = {
+  def WhereGroup(expressions: js.Array[WhereExpression]): _WhereExpression = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
-    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
     __obj.asInstanceOf[_WhereExpression]
   }
   @scala.inline

@@ -16,11 +16,11 @@ trait HistogramConstructor
 Instantiable0[Histogram_]
      with Instantiable1[/* properties */ HistogramProperties, Histogram_] {
   /**
-    * A convenience function used to create a Histogram widget instance from the result of the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html) statistics function.
+    * A convenience function used to create a Histogram widget instance from the result of the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html) statistics function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#fromHistogramResult)
     *
-    * @param result The result of the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html) statistics function used to generate a histogram for a field or expression from a layer.
+    * @param result The result of the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html) statistics function used to generate a histogram for a field or expression from a layer.
     *
     */
   def fromHistogramResult(result: HistogramResult): Histogram_ = js.native

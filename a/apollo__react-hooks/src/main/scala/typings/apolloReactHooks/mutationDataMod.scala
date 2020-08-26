@@ -22,7 +22,7 @@ object mutationDataMod extends js.Object {
     var onMutationCompleted: js.Any = js.native
     var onMutationError: js.Any = js.native
     var onMutationStart: js.Any = js.native
-    var previousResult: js.UndefOr[js.Any] = js.native
+    var previousResult: js.Any = js.native
     var result: js.Any = js.native
     var runMutation: js.Any = js.native
     var setResult: js.Any = js.native

@@ -10,11 +10,13 @@ import scala.scalajs.js.annotation._
 trait Throw extends js.Object {
   def apply(): Assertion = js.native
   def apply(constructor: js.Function): Assertion = js.native
+  def apply(constructor: js.Function, expected: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
   def apply(constructor: js.Function, expected: String): Assertion = js.native
   def apply(constructor: js.Function, expected: String, message: String): Assertion = js.native
   def apply(constructor: js.Function, expected: RegExp): Assertion = js.native
   def apply(constructor: js.Function, expected: RegExp, message: String): Assertion = js.native
   def apply(constructor: Error): Assertion = js.native
+  def apply(constructor: Error, expected: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
   def apply(constructor: Error, expected: String): Assertion = js.native
   def apply(constructor: Error, expected: String, message: String): Assertion = js.native
   def apply(constructor: Error, expected: RegExp): Assertion = js.native

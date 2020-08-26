@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait TypeofRecord
   extends Instantiable0[default]
      with Instantiable1[/* props */ js.Any, default]
-     with Instantiable2[/* props */ js.Any, /* opts */ js.Any, default] {
+     with Instantiable2[js.UndefOr[/* props */ js.Any], /* opts */ js.Any, default] {
   var creatingPath: String = js.native
   var keepChangeHistoryPath: String = js.native
   var mapper: typings.jsData.mapperMod.default = js.native

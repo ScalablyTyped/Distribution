@@ -30,6 +30,7 @@ class ResourceRegionnotificationendpoints protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegionnotificationendpointsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceRegionnotificationendpointsDelete,
@@ -63,6 +64,7 @@ class ResourceRegionnotificationendpoints protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaNotificationEndpoint] = js.native
   def get(callback: BodyResponseCallback[SchemaNotificationEndpoint]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotificationEndpoint] = js.native
   def get(params: ParamsResourceRegionnotificationendpointsGet): GaxiosPromise[SchemaNotificationEndpoint] = js.native
   def get(
     params: ParamsResourceRegionnotificationendpointsGet,
@@ -97,6 +99,7 @@ class ResourceRegionnotificationendpoints protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegionnotificationendpointsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(
     params: ParamsResourceRegionnotificationendpointsInsert,
@@ -132,6 +135,7 @@ class ResourceRegionnotificationendpoints protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaNotificationEndpointList] = js.native
   def list(callback: BodyResponseCallback[SchemaNotificationEndpointList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotificationEndpointList] = js.native
   def list(params: ParamsResourceRegionnotificationendpointsList): GaxiosPromise[SchemaNotificationEndpointList] = js.native
   def list(
     params: ParamsResourceRegionnotificationendpointsList,
@@ -165,6 +169,7 @@ class ResourceRegionnotificationendpoints protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceRegionnotificationendpointsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceRegionnotificationendpointsTestiampermissions,

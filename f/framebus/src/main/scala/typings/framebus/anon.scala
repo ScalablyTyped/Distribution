@@ -15,6 +15,7 @@ object anon extends js.Object {
   trait Emit extends js.Object {
     var origin: String = js.native
     def emit(event: String): Boolean = js.native
+    def emit(event: String, data: js.UndefOr[scala.Nothing], reply: FramebusReplyHandler): Boolean = js.native
     def emit(event: String, data: FramebusReplyHandler): Boolean = js.native
     def emit(event: String, data: FramebusReplyHandler, reply: FramebusReplyHandler): Boolean = js.native
     def emit(event: String, data: Record[String, _]): Boolean = js.native

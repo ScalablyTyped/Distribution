@@ -13,19 +13,34 @@ import scala.scalajs.js.annotation._
   *
   * If the metadata JSON file is being generated from JSDoc comments, include the tag `@cancelable`.
   */
+@js.native
 trait CancelableInvocation extends Invocation {
   /**
     * Event handler called when the custom function is canceled.
     */
-  def onCanceled(): Unit
+  def onCanceled(): Unit = js.native
 }
 
 object CancelableInvocation {
   @scala.inline
-  def apply(onCanceled: () => Unit, address: String = null): CancelableInvocation = {
+  def apply(onCanceled: () => Unit): CancelableInvocation = {
     val __obj = js.Dynamic.literal(onCanceled = js.Any.fromFunction0(onCanceled))
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelableInvocation]
   }
+  @scala.inline
+  implicit class CancelableInvocationOps[Self <: CancelableInvocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnCanceled(value: () => Unit): Self = this.set("onCanceled", js.Any.fromFunction0(value))
+  }
+  
 }
 

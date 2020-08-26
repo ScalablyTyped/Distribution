@@ -24,12 +24,20 @@ trait ModernizrAPI extends js.Object {
   def prefixedCSS(prop: String): String = js.native
   def prefixedCSSValue(prop: String, value: String): Boolean = js.native
   def testAllProps(prop: String): Boolean = js.native
+  def testAllProps(prop: String, value: js.UndefOr[scala.Nothing], skipValueTest: Boolean): Boolean = js.native
   def testAllProps(prop: String, value: String): Boolean = js.native
   def testAllProps(prop: String, value: String, skipValueTest: Boolean): Boolean = js.native
   def testProp(prop: String): Boolean = js.native
+  def testProp(prop: String, value: js.UndefOr[scala.Nothing], useValue: Boolean): Boolean = js.native
   def testProp(prop: String, value: String): Boolean = js.native
   def testProp(prop: String, value: String, useValue: Boolean): Boolean = js.native
   def testStyles(rule: String, callback: js.Function2[/* elem */ HTMLDivElement, /* rule */ String, Unit]): Boolean = js.native
+  def testStyles(
+    rule: String,
+    callback: js.Function2[/* elem */ HTMLDivElement, /* rule */ String, Unit],
+    nodes: js.UndefOr[scala.Nothing],
+    testnames: js.Array[String]
+  ): Boolean = js.native
   def testStyles(
     rule: String,
     callback: js.Function2[/* elem */ HTMLDivElement, /* rule */ String, Unit],

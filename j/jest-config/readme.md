@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-config
 
-Typings are for version 24.9.0
+Typings are for version 26.2.2
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-config |
 | Keywords           | - |
-| # releases         | 75 |
+| # releases         | 74 |
 | # dependents       | 47 |
-| # downloads        | 237126839 |
+| # downloads        | 238968115 |
 | # stars            | 0 |
 
 ## Links

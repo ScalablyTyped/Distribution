@@ -967,6 +967,19 @@ trait Glue extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetPlanResponse, Unit]
   ): Request[GetPlanResponse, AWSError] = js.native
   /**
+    * Retrieves the security configurations for the resource policies set on individual resources, and also the account-level policy. This operation also returns the Data Catalog resource policy. However, if you enabled metadata encryption in Data Catalog settings, and you do not have permission on the AWS KMS key, the operation can't return the Data Catalog resource policy.
+    */
+  def getResourcePolicies(): Request[GetResourcePoliciesResponse, AWSError] = js.native
+  def getResourcePolicies(callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePoliciesResponse, Unit]): Request[GetResourcePoliciesResponse, AWSError] = js.native
+  /**
+    * Retrieves the security configurations for the resource policies set on individual resources, and also the account-level policy. This operation also returns the Data Catalog resource policy. However, if you enabled metadata encryption in Data Catalog settings, and you do not have permission on the AWS KMS key, the operation can't return the Data Catalog resource policy.
+    */
+  def getResourcePolicies(params: GetResourcePoliciesRequest): Request[GetResourcePoliciesResponse, AWSError] = js.native
+  def getResourcePolicies(
+    params: GetResourcePoliciesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePoliciesResponse, Unit]
+  ): Request[GetResourcePoliciesResponse, AWSError] = js.native
+  /**
     * Retrieves a specified resource policy.
     */
   def getResourcePolicy(): Request[GetResourcePolicyResponse, AWSError] = js.native
@@ -1319,6 +1332,19 @@ trait Glue extends Service {
     params: ResetJobBookmarkRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ResetJobBookmarkResponse, Unit]
   ): Request[ResetJobBookmarkResponse, AWSError] = js.native
+  /**
+    * Restarts any completed nodes in a workflow run and resumes the run execution.
+    */
+  def resumeWorkflowRun(): Request[ResumeWorkflowRunResponse, AWSError] = js.native
+  def resumeWorkflowRun(callback: js.Function2[/* err */ AWSError, /* data */ ResumeWorkflowRunResponse, Unit]): Request[ResumeWorkflowRunResponse, AWSError] = js.native
+  /**
+    * Restarts any completed nodes in a workflow run and resumes the run execution.
+    */
+  def resumeWorkflowRun(params: ResumeWorkflowRunRequest): Request[ResumeWorkflowRunResponse, AWSError] = js.native
+  def resumeWorkflowRun(
+    params: ResumeWorkflowRunRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ResumeWorkflowRunResponse, Unit]
+  ): Request[ResumeWorkflowRunResponse, AWSError] = js.native
   /**
     * Searches a set of tables based on properties in the table metadata as well as on the parent database. You can search against text or filter conditions.  You can only get tables that you have access to based on the security policies defined in Lake Formation. You need at least a read-only access to the table for it to be returned. If you do not have access to all the columns in the table, these columns will not be searched against when returning the list of tables back to you. If you have access to the columns but not the data in the columns, those columns and the associated metadata for those columns will be included in the search. 
     */

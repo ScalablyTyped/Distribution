@@ -16,7 +16,7 @@ trait IHashSetStatic
       IHashSet[js.Object]
     ]
      with Instantiable2[
-      /* hashCode */ js.Function1[/* value */ js.Object, js.Any], 
+      js.UndefOr[/* hashCode */ js.Function1[/* value */ js.Object, js.Any]], 
       /* equals */ js.Function2[/* value1 */ js.Object, /* value2 */ js.Object, Boolean], 
       IHashSet[js.Object]
     ]

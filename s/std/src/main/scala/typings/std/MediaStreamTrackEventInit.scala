@@ -4,23 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MediaStreamTrackEventInit extends EventInit {
-  var track: MediaStreamTrack
+  var track: MediaStreamTrack = js.native
 }
 
 object MediaStreamTrackEventInit {
   @scala.inline
-  def apply(
-    track: MediaStreamTrack,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined
-  ): MediaStreamTrackEventInit = {
+  def apply(track: MediaStreamTrack): MediaStreamTrackEventInit = {
     val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamTrackEventInit]
   }
+  @scala.inline
+  implicit class MediaStreamTrackEventInitOps[Self <: MediaStreamTrackEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrack(value: MediaStreamTrack): Self = this.set("track", value.asInstanceOf[js.Any])
+  }
+  
 }
 

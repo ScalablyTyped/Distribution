@@ -135,6 +135,7 @@ object Animation extends js.Object {
     * @returns An object that completes when the animation is finished.
     **/
   def dragSourceEnd(dragSource: js.Any): Promise[_] = js.native
+  def dragSourceEnd(dragSource: js.Any, offset: js.UndefOr[scala.Nothing], affected: js.Any): Promise[_] = js.native
   def dragSourceEnd(dragSource: js.Any, offset: js.Any): Promise[_] = js.native
   def dragSourceEnd(dragSource: js.Any, offset: js.Any, affected: js.Any): Promise[_] = js.native
   /**
@@ -177,6 +178,7 @@ object Animation extends js.Object {
     * @returns An object that completes when the animation is finished.
     **/
   def enterContent(incoming: js.Any): Promise[_] = js.native
+  def enterContent(incoming: js.Any, offset: js.UndefOr[scala.Nothing], options: js.Any): Promise[_] = js.native
   def enterContent(incoming: js.Any, offset: js.Any): Promise[_] = js.native
   def enterContent(incoming: js.Any, offset: js.Any, options: js.Any): Promise[_] = js.native
   /**
@@ -223,6 +225,7 @@ object Animation extends js.Object {
     * @returns An object that completes when the animation is finished.
     **/
   def hideEdgeUI(element: js.Any): Promise[_] = js.native
+  def hideEdgeUI(element: js.Any, offset: js.UndefOr[scala.Nothing], options: js.Any): Promise[_] = js.native
   def hideEdgeUI(element: js.Any, offset: js.Any): Promise[_] = js.native
   def hideEdgeUI(element: js.Any, offset: js.Any, options: js.Any): Promise[_] = js.native
   /**
@@ -259,6 +262,7 @@ object Animation extends js.Object {
     * @returns An object that completes when the animation is finished.
     **/
   def showEdgeUI(element: js.Any): Promise[_] = js.native
+  def showEdgeUI(element: js.Any, offset: js.UndefOr[scala.Nothing], options: js.Any): Promise[_] = js.native
   def showEdgeUI(element: js.Any, offset: js.Any): Promise[_] = js.native
   def showEdgeUI(element: js.Any, offset: js.Any, options: js.Any): Promise[_] = js.native
   /**

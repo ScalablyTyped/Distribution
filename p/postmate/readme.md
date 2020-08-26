@@ -12,7 +12,7 @@ A powerful, simple, promise-based postMessage library
 | Keywords           | postMessage, secure, handshake, promise, iframes, pci, security |
 | # releases         | 11 |
 | # dependents       | 8 |
-| # downloads        | 170488 |
+| # downloads        | 191231 |
 | # stars            | 6 |
 
 ## Links

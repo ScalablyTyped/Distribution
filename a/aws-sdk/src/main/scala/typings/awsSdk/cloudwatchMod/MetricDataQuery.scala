@@ -34,21 +34,44 @@ trait MetricDataQuery extends js.Object {
 
 object MetricDataQuery {
   @scala.inline
-  def apply(
-    Id: MetricId,
-    Expression: MetricExpression = null,
-    Label: MetricLabel = null,
-    MetricStat: MetricStat = null,
-    Period: js.UndefOr[Period] = js.undefined,
-    ReturnData: js.UndefOr[ReturnData] = js.undefined
-  ): MetricDataQuery = {
+  def apply(Id: MetricId): MetricDataQuery = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-    if (Expression != null) __obj.updateDynamic("Expression")(Expression.asInstanceOf[js.Any])
-    if (Label != null) __obj.updateDynamic("Label")(Label.asInstanceOf[js.Any])
-    if (MetricStat != null) __obj.updateDynamic("MetricStat")(MetricStat.asInstanceOf[js.Any])
-    if (!js.isUndefined(Period)) __obj.updateDynamic("Period")(Period.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReturnData)) __obj.updateDynamic("ReturnData")(ReturnData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDataQuery]
   }
+  @scala.inline
+  implicit class MetricDataQueryOps[Self <: MetricDataQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: MetricId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpression(value: MetricExpression): Self = this.set("Expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpression: Self = this.set("Expression", js.undefined)
+    @scala.inline
+    def setLabel(value: MetricLabel): Self = this.set("Label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("Label", js.undefined)
+    @scala.inline
+    def setMetricStat(value: MetricStat): Self = this.set("MetricStat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricStat: Self = this.set("MetricStat", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("Period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("Period", js.undefined)
+    @scala.inline
+    def setReturnData(value: ReturnData): Self = this.set("ReturnData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnData: Self = this.set("ReturnData", js.undefined)
+  }
+  
 }
 

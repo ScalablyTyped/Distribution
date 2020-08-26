@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Packery extends js.Object {
-  var columnWidth: js.UndefOr[Double | String] = js.undefined
-  var gutter: js.UndefOr[Double | String] = js.undefined
-  var horizontal: js.UndefOr[Boolean] = js.undefined
-  var rowHeight: js.UndefOr[Double] = js.undefined
+  var columnWidth: js.UndefOr[Double | String] = js.native
+  var gutter: js.UndefOr[Double | String] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.native
+  var rowHeight: js.UndefOr[Double] = js.native
 }
 
 object Packery {
   @scala.inline
-  def apply(
-    columnWidth: Double | String = null,
-    gutter: Double | String = null,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    rowHeight: js.UndefOr[Double] = js.undefined
-  ): Packery = {
+  def apply(): Packery = {
     val __obj = js.Dynamic.literal()
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Packery]
   }
+  @scala.inline
+  implicit class PackeryOps[Self <: Packery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnWidth(value: Double | String): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    @scala.inline
+    def setGutter(value: Double | String): Self = this.set("gutter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGutter: Self = this.set("gutter", js.undefined)
+    @scala.inline
+    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setRowHeight(value: Double): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowHeight: Self = this.set("rowHeight", js.undefined)
+  }
+  
 }
 

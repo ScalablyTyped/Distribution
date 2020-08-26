@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BucketManager () extends js.Object {
   def this(mac: Mac) = this()
+  def this(mac: js.UndefOr[scala.Nothing], config: Config) = this()
   def this(mac: Mac, config: Config) = this()
   var config: Config = js.native
   var mac: Mac = js.native

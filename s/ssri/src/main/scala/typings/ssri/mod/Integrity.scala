@@ -31,6 +31,7 @@ class Integrity () extends js.Object {
     * Safely merges another IntegrityLike or integrity string into an Integrity object.
     */
   def merge(): Unit = js.native
+  def merge(otherIntegrity: js.UndefOr[scala.Nothing], opts: Single): Unit = js.native
   def merge(otherIntegrity: String): Unit = js.native
   def merge(otherIntegrity: String, opts: Single): Unit = js.native
   def merge(otherIntegrity: HashLike): Unit = js.native

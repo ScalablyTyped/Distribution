@@ -9,15 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 /** Initializes a new instance of the TimedTextSubformat class. */
 class TimedTextSubformat ()
-  extends typings.winrtUwp.Windows.Media.Core.TimedTextSubformat {
-  /** Gets or sets the length of the substring to which the SubformatStyle applies. */
-  /* CompleteClass */
-  override var length: Double = js.native
-  /** Gets or sets the staring index of the substring to which the SubformatStyle applies. */
-  /* CompleteClass */
-  override var startIndex: Double = js.native
-  /** Gets or sets the TimedTextStyle object that conveys the formatting of a substring in a TimedTextLine . */
-  /* CompleteClass */
-  override var subformatStyle: typings.winrtUwp.Windows.Media.Core.TimedTextStyle = js.native
-}
+  extends typings.winrtUwp.Windows.Media.Core.TimedTextSubformat
 

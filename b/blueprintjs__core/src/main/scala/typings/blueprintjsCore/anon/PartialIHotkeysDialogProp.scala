@@ -14,90 +14,155 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/hotkeys/hotkeysDialog.IHotkeysDialogProps> */
+@js.native
 trait PartialIHotkeysDialogProp extends js.Object {
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var backdropClassName: js.UndefOr[String] = js.undefined
-  var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
-  var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
-  var canOutsideClickClose: js.UndefOr[Boolean] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var enforceFocus: js.UndefOr[Boolean] = js.undefined
-  var globalHotkeysGroup: js.UndefOr[String] = js.undefined
-  var hasBackdrop: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
-  var isCloseButtonShown: js.UndefOr[Boolean] = js.undefined
-  var isOpen: js.UndefOr[Boolean] = js.undefined
-  var `lazy`: js.UndefOr[Boolean] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.undefined
-  var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-  var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-  var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-  var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-  var portalClassName: js.UndefOr[String] = js.undefined
-  var portalContainer: js.UndefOr[HTMLElement] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
-  var transitionDuration: js.UndefOr[Double] = js.undefined
-  var transitionName: js.UndefOr[String] = js.undefined
-  var usePortal: js.UndefOr[Boolean] = js.undefined
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var backdropClassName: js.UndefOr[String] = js.native
+  var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.native
+  var canEscapeKeyClose: js.UndefOr[Boolean] = js.native
+  var canOutsideClickClose: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
+  var enforceFocus: js.UndefOr[Boolean] = js.native
+  var globalHotkeysGroup: js.UndefOr[String] = js.native
+  var hasBackdrop: js.UndefOr[Boolean] = js.native
+  var icon: js.UndefOr[IconName | MaybeElement] = js.native
+  var isCloseButtonShown: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.native
+  var `lazy`: js.UndefOr[Boolean] = js.native
+  var onClose: js.UndefOr[js.Function1[/* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.native
+  var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var portalClassName: js.UndefOr[String] = js.native
+  var portalContainer: js.UndefOr[HTMLElement] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var title: js.UndefOr[ReactNode] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.native
+  var transitionName: js.UndefOr[String] = js.native
+  var usePortal: js.UndefOr[Boolean] = js.native
 }
 
 object PartialIHotkeysDialogProp {
   @scala.inline
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    backdropClassName: String = null,
-    backdropProps: HTMLProps[HTMLDivElement] = null,
-    canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined,
-    canOutsideClickClose: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    enforceFocus: js.UndefOr[Boolean] = js.undefined,
-    globalHotkeysGroup: String = null,
-    hasBackdrop: js.UndefOr[Boolean] = js.undefined,
-    icon: js.UndefOr[Null | IconName | MaybeElement] = js.undefined,
-    isCloseButtonShown: js.UndefOr[Boolean] = js.undefined,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    `lazy`: js.UndefOr[Boolean] = js.undefined,
-    onClose: /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit = null,
-    onClosed: /* node */ HTMLElement => Unit = null,
-    onClosing: /* node */ HTMLElement => Unit = null,
-    onOpened: /* node */ HTMLElement => Unit = null,
-    onOpening: /* node */ HTMLElement => Unit = null,
-    portalClassName: String = null,
-    portalContainer: HTMLElement = null,
-    style: CSSProperties = null,
-    title: ReactNode = null,
-    transitionDuration: js.UndefOr[Double] = js.undefined,
-    transitionName: String = null,
-    usePortal: js.UndefOr[Boolean] = js.undefined
-  ): PartialIHotkeysDialogProp = {
+  def apply(): PartialIHotkeysDialogProp = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (backdropClassName != null) __obj.updateDynamic("backdropClassName")(backdropClassName.asInstanceOf[js.Any])
-    if (backdropProps != null) __obj.updateDynamic("backdropProps")(backdropProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(canEscapeKeyClose)) __obj.updateDynamic("canEscapeKeyClose")(canEscapeKeyClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(canOutsideClickClose)) __obj.updateDynamic("canOutsideClickClose")(canOutsideClickClose.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus.get.asInstanceOf[js.Any])
-    if (globalHotkeysGroup != null) __obj.updateDynamic("globalHotkeysGroup")(globalHotkeysGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCloseButtonShown)) __obj.updateDynamic("isCloseButtonShown")(isCloseButtonShown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction1(onClosed))
-    if (onClosing != null) __obj.updateDynamic("onClosing")(js.Any.fromFunction1(onClosing))
-    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction1(onOpened))
-    if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction1(onOpening))
-    if (portalClassName != null) __obj.updateDynamic("portalClassName")(portalClassName.asInstanceOf[js.Any])
-    if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialIHotkeysDialogProp]
   }
+  @scala.inline
+  implicit class PartialIHotkeysDialogPropOps[Self <: PartialIHotkeysDialogProp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setBackdropClassName(value: String): Self = this.set("backdropClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackdropClassName: Self = this.set("backdropClassName", js.undefined)
+    @scala.inline
+    def setBackdropProps(value: HTMLProps[HTMLDivElement]): Self = this.set("backdropProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackdropProps: Self = this.set("backdropProps", js.undefined)
+    @scala.inline
+    def setCanEscapeKeyClose(value: Boolean): Self = this.set("canEscapeKeyClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanEscapeKeyClose: Self = this.set("canEscapeKeyClose", js.undefined)
+    @scala.inline
+    def setCanOutsideClickClose(value: Boolean): Self = this.set("canOutsideClickClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanOutsideClickClose: Self = this.set("canOutsideClickClose", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setEnforceFocus(value: Boolean): Self = this.set("enforceFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceFocus: Self = this.set("enforceFocus", js.undefined)
+    @scala.inline
+    def setGlobalHotkeysGroup(value: String): Self = this.set("globalHotkeysGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalHotkeysGroup: Self = this.set("globalHotkeysGroup", js.undefined)
+    @scala.inline
+    def setHasBackdrop(value: Boolean): Self = this.set("hasBackdrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasBackdrop: Self = this.set("hasBackdrop", js.undefined)
+    @scala.inline
+    def setIcon(value: IconName | MaybeElement): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconNull: Self = this.set("icon", null)
+    @scala.inline
+    def setIsCloseButtonShown(value: Boolean): Self = this.set("isCloseButtonShown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsCloseButtonShown: Self = this.set("isCloseButtonShown", js.undefined)
+    @scala.inline
+    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    @scala.inline
+    def setLazy(value: Boolean): Self = this.set("lazy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazy: Self = this.set("lazy", js.undefined)
+    @scala.inline
+    def setOnClose(value: /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnClosed(value: /* node */ HTMLElement => Unit): Self = this.set("onClosed", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClosed: Self = this.set("onClosed", js.undefined)
+    @scala.inline
+    def setOnClosing(value: /* node */ HTMLElement => Unit): Self = this.set("onClosing", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClosing: Self = this.set("onClosing", js.undefined)
+    @scala.inline
+    def setOnOpened(value: /* node */ HTMLElement => Unit): Self = this.set("onOpened", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOpened: Self = this.set("onOpened", js.undefined)
+    @scala.inline
+    def setOnOpening(value: /* node */ HTMLElement => Unit): Self = this.set("onOpening", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOpening: Self = this.set("onOpening", js.undefined)
+    @scala.inline
+    def setPortalClassName(value: String): Self = this.set("portalClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortalClassName: Self = this.set("portalClassName", js.undefined)
+    @scala.inline
+    def setPortalContainer(value: HTMLElement): Self = this.set("portalContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortalContainer: Self = this.set("portalContainer", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTransitionDuration(value: Double): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    @scala.inline
+    def setTransitionName(value: String): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionName: Self = this.set("transitionName", js.undefined)
+    @scala.inline
+    def setUsePortal(value: Boolean): Self = this.set("usePortal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsePortal: Self = this.set("usePortal", js.undefined)
+  }
+  
 }
 

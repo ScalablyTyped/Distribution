@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class EDAMUserException () extends Error {
   var errorCode: EDAMErrorCode = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var parameter: String = js.native
 }
 

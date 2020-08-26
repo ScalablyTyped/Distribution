@@ -4,64 +4,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReaderConnectionConfigOptions extends ConnectionConfigOptions {
-  var lookupdHTTPAddresses: js.UndefOr[String | js.Array[String]] = js.undefined
-  var lookupdPollInterval: js.UndefOr[Double] = js.undefined
-  var lookupdPollJitter: js.UndefOr[Double] = js.undefined
-  var maxAttempts: js.UndefOr[Double] = js.undefined
-  var maxBackoffDuration: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var nsqdTCPAddresses: js.UndefOr[String | js.Array[String]] = js.undefined
+  var lookupdHTTPAddresses: js.UndefOr[String | js.Array[String]] = js.native
+  var lookupdPollInterval: js.UndefOr[Double] = js.native
+  var lookupdPollJitter: js.UndefOr[Double] = js.native
+  var maxAttempts: js.UndefOr[Double] = js.native
+  var maxBackoffDuration: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var nsqdTCPAddresses: js.UndefOr[String | js.Array[String]] = js.native
 }
 
 object ReaderConnectionConfigOptions {
   @scala.inline
-  def apply(
-    authSecret: String = null,
-    clientId: String = null,
-    deflate: js.UndefOr[Boolean] = js.undefined,
-    deflateLevel: js.UndefOr[Double] = js.undefined,
-    heartbeatInterval: js.UndefOr[Double] = js.undefined,
-    lookupdHTTPAddresses: String | js.Array[String] = null,
-    lookupdPollInterval: js.UndefOr[Double] = js.undefined,
-    lookupdPollJitter: js.UndefOr[Double] = js.undefined,
-    maxAttempts: js.UndefOr[Double] = js.undefined,
-    maxBackoffDuration: js.UndefOr[Double] = js.undefined,
-    maxInFlight: js.UndefOr[Double] = js.undefined,
-    messageTimeout: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    nsqdTCPAddresses: String | js.Array[String] = null,
-    outputBufferSize: js.UndefOr[Double] = js.undefined,
-    outputBufferTimeout: js.UndefOr[Double] = js.undefined,
-    requeueDelay: js.UndefOr[Double] = js.undefined,
-    sampleRate: js.UndefOr[Double] = js.undefined,
-    snappy: js.UndefOr[Boolean] = js.undefined,
-    tls: js.UndefOr[Boolean] = js.undefined,
-    tlsVerification: js.UndefOr[Boolean] = js.undefined
-  ): ReaderConnectionConfigOptions = {
+  def apply(): ReaderConnectionConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (authSecret != null) __obj.updateDynamic("authSecret")(authSecret.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(deflate)) __obj.updateDynamic("deflate")(deflate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deflateLevel)) __obj.updateDynamic("deflateLevel")(deflateLevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(heartbeatInterval)) __obj.updateDynamic("heartbeatInterval")(heartbeatInterval.get.asInstanceOf[js.Any])
-    if (lookupdHTTPAddresses != null) __obj.updateDynamic("lookupdHTTPAddresses")(lookupdHTTPAddresses.asInstanceOf[js.Any])
-    if (!js.isUndefined(lookupdPollInterval)) __obj.updateDynamic("lookupdPollInterval")(lookupdPollInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lookupdPollJitter)) __obj.updateDynamic("lookupdPollJitter")(lookupdPollJitter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAttempts)) __obj.updateDynamic("maxAttempts")(maxAttempts.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBackoffDuration)) __obj.updateDynamic("maxBackoffDuration")(maxBackoffDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxInFlight)) __obj.updateDynamic("maxInFlight")(maxInFlight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(messageTimeout)) __obj.updateDynamic("messageTimeout")(messageTimeout.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nsqdTCPAddresses != null) __obj.updateDynamic("nsqdTCPAddresses")(nsqdTCPAddresses.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputBufferSize)) __obj.updateDynamic("outputBufferSize")(outputBufferSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputBufferTimeout)) __obj.updateDynamic("outputBufferTimeout")(outputBufferTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requeueDelay)) __obj.updateDynamic("requeueDelay")(requeueDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snappy)) __obj.updateDynamic("snappy")(snappy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tlsVerification)) __obj.updateDynamic("tlsVerification")(tlsVerification.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderConnectionConfigOptions]
   }
+  @scala.inline
+  implicit class ReaderConnectionConfigOptionsOps[Self <: ReaderConnectionConfigOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLookupdHTTPAddressesVarargs(value: String*): Self = this.set("lookupdHTTPAddresses", js.Array(value :_*))
+    @scala.inline
+    def setLookupdHTTPAddresses(value: String | js.Array[String]): Self = this.set("lookupdHTTPAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookupdHTTPAddresses: Self = this.set("lookupdHTTPAddresses", js.undefined)
+    @scala.inline
+    def setLookupdPollInterval(value: Double): Self = this.set("lookupdPollInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookupdPollInterval: Self = this.set("lookupdPollInterval", js.undefined)
+    @scala.inline
+    def setLookupdPollJitter(value: Double): Self = this.set("lookupdPollJitter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookupdPollJitter: Self = this.set("lookupdPollJitter", js.undefined)
+    @scala.inline
+    def setMaxAttempts(value: Double): Self = this.set("maxAttempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAttempts: Self = this.set("maxAttempts", js.undefined)
+    @scala.inline
+    def setMaxBackoffDuration(value: Double): Self = this.set("maxBackoffDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBackoffDuration: Self = this.set("maxBackoffDuration", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNsqdTCPAddressesVarargs(value: String*): Self = this.set("nsqdTCPAddresses", js.Array(value :_*))
+    @scala.inline
+    def setNsqdTCPAddresses(value: String | js.Array[String]): Self = this.set("nsqdTCPAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNsqdTCPAddresses: Self = this.set("nsqdTCPAddresses", js.undefined)
+  }
+  
 }
 

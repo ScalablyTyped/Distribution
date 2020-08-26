@@ -29,6 +29,7 @@ class ResourceEnterprisesWebtokens protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaWebToken] = js.native
   def create(callback: BodyResponseCallback[SchemaWebToken]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWebToken] = js.native
   def create(params: ParamsResourceEnterprisesWebtokensCreate): GaxiosPromise[SchemaWebToken] = js.native
   def create(params: ParamsResourceEnterprisesWebtokensCreate, callback: BodyResponseCallback[SchemaWebToken]): Unit = js.native
   def create(

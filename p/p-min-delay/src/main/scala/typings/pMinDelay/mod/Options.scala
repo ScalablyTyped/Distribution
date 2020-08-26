@@ -4,21 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
   		Delay the rejection.
   		Turn this off if you want a rejected promise to fail fast.
   		@default true
   		*/
-  val delayRejection: js.UndefOr[Boolean] = js.undefined
+  val delayRejection: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(delayRejection: js.UndefOr[Boolean] = js.undefined): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delayRejection)) __obj.updateDynamic("delayRejection")(delayRejection.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelayRejection(value: Boolean): Self = this.set("delayRejection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelayRejection: Self = this.set("delayRejection", js.undefined)
+  }
+  
 }
 

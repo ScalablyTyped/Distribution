@@ -1,13 +1,13 @@
 package typings.workerPlugin.mod
 
-import typings.webpack.mod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("worker-plugin", JSImport.Namespace)
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("worker-plugin", JSImport.Namespace)
 @js.native
-class ^ () extends Plugin {
+class ^ () extends js.Object {
   def this(options: Options) = this()
 }
 

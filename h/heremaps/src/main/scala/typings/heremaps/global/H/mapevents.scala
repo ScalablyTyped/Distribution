@@ -4,7 +4,6 @@ import typings.heremaps.H.map.Object
 import typings.heremaps.H.mapevents.Behavior.Options
 import typings.heremaps.H.mapevents.Pointer.Button
 import typings.heremaps.H.math.BitMask
-import typings.heremaps.H.util.ContextItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,30 +62,6 @@ object mapevents extends js.Object {
       target: Object,
       originalEvent: typings.heremaps.H.mapevents.Event
     ) = this()
-    /* CompleteClass */
-    override var currentTarget: js.Any = js.native
-    /* CompleteClass */
-    override var defaultPrevented: Boolean = js.native
-    /* CompleteClass */
-    override var originalEvent: typings.heremaps.H.mapevents.Event = js.native
-    /* CompleteClass */
-    override var target: js.Any = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
-    /* CompleteClass */
-    override var viewportX: js.Array[ContextItem] = js.native
-    /* CompleteClass */
-    override var viewportY: Double = js.native
-    /**
-      * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
-      */
-    /* CompleteClass */
-    override def preventDefault(): Unit = js.native
-    /**
-      * Stops propagation for current event.
-      */
-    /* CompleteClass */
-    override def stopPropagation(): Unit = js.native
   }
   
   /**
@@ -132,34 +107,6 @@ object mapevents extends js.Object {
       target: Object,
       originalEvent: typings.heremaps.H.mapevents.Event
     ) = this()
-    /* CompleteClass */
-    override var changedPointers: js.Array[typings.heremaps.H.mapevents.Pointer] = js.native
-    /* CompleteClass */
-    override var currentPointer: typings.heremaps.H.mapevents.Pointer = js.native
-    /* CompleteClass */
-    override var currentTarget: js.Any = js.native
-    /* CompleteClass */
-    override var defaultPrevented: Boolean = js.native
-    /* CompleteClass */
-    override var originalEvent: typings.heremaps.H.mapevents.Event = js.native
-    /* CompleteClass */
-    override var pointers: js.Array[typings.heremaps.H.mapevents.Pointer] = js.native
-    /* CompleteClass */
-    override var target: js.Any = js.native
-    /* CompleteClass */
-    override var targetPointers: js.Array[typings.heremaps.H.mapevents.Pointer] = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
-    /**
-      * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
-      */
-    /* CompleteClass */
-    override def preventDefault(): Unit = js.native
-    /**
-      * Stops propagation for current event.
-      */
-    /* CompleteClass */
-    override def stopPropagation(): Unit = js.native
   }
   
   /**
@@ -206,23 +153,17 @@ object mapevents extends js.Object {
       viewportY: Double,
       id: Double,
       `type`: String,
+      opt_button: js.UndefOr[scala.Nothing],
+      opt_buttons: BitMask
+    ) = this()
+    def this(
+      viewportX: Double,
+      viewportY: Double,
+      id: Double,
+      `type`: String,
       opt_button: Button,
       opt_buttons: BitMask
     ) = this()
-    /* CompleteClass */
-    override var button: Button = js.native
-    /* CompleteClass */
-    override var dragTarget: Object | typings.heremaps.H.Map_ = js.native
-    /* CompleteClass */
-    override var id: Double = js.native
-    /* CompleteClass */
-    override var target: Object | typings.heremaps.H.Map_ = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
-    /* CompleteClass */
-    override var viewportX: Double = js.native
-    /* CompleteClass */
-    override var viewportY: Double = js.native
   }
   
   /**
@@ -261,32 +202,6 @@ object mapevents extends js.Object {
       target: Object,
       originalEvent: typings.heremaps.H.mapevents.Event
     ) = this()
-    /* CompleteClass */
-    override var currentTarget: js.Any = js.native
-    /* CompleteClass */
-    override var defaultPrevented: Boolean = js.native
-    /* CompleteClass */
-    override var delta: Double = js.native
-    /* CompleteClass */
-    override var originalEvent: typings.heremaps.H.mapevents.Event = js.native
-    /* CompleteClass */
-    override var target: js.Any = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
-    /* CompleteClass */
-    override var viewportX: Double = js.native
-    /* CompleteClass */
-    override var viewportY: Double = js.native
-    /**
-      * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
-      */
-    /* CompleteClass */
-    override def preventDefault(): Unit = js.native
-    /**
-      * Stops propagation for current event.
-      */
-    /* CompleteClass */
-    override def stopPropagation(): Unit = js.native
   }
   
   /* static members */

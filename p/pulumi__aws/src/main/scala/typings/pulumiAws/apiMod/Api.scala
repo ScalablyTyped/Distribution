@@ -1,6 +1,7 @@
 package typings.pulumiAws.apiMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.outputMod.apigatewayv2.ApiCorsConfiguration
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -37,12 +38,20 @@ class Api protected () extends CustomResource {
     */
   val arn: Output_[String] = js.native
   /**
+    * The cross-origin resource sharing (CORS) [configuration](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-cors.html). Applicable for HTTP APIs.
+    */
+  val corsConfiguration: Output_[js.UndefOr[ApiCorsConfiguration]] = js.native
+  /**
+    * Part of _quick create_. Specifies any credentials required for the integration. Applicable for HTTP APIs.
+    */
+  val credentialsArn: Output_[js.UndefOr[String]] = js.native
+  /**
     * The description of the API.
     */
   val description: Output_[js.UndefOr[String]] = js.native
   /**
-    * The ARN prefix to be used in an [`aws.lambda.Permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `sourceArn` attribute
-    * or in an [`aws.iam.Policy`](https://www.terraform.io/docs/providers/aws/r/iam_policy.html) to authorize access to the [`@connections` API](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-how-to-call-websocket-api-connections.html).
+    * The ARN prefix to be used in an `aws.lambda.Permission`'s `sourceArn` attribute
+    * or in an `aws.iam.Policy` to authorize access to the [`@connections` API](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-how-to-call-websocket-api-connections.html).
     * See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-control-access-iam.html) for details.
     */
   val executionArn: Output_[String] = js.native
@@ -55,14 +64,24 @@ class Api protected () extends CustomResource {
     */
   val protocolType: Output_[String] = js.native
   /**
+    * Part of _quick create_. Specifies any [route key](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html). Applicable for HTTP APIs.
+    */
+  val routeKey: Output_[js.UndefOr[String]] = js.native
+  /**
     * The [route selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-route-selection-expressions) for the API.
     * Defaults to `$request.method $request.path`.
     */
   val routeSelectionExpression: Output_[js.UndefOr[String]] = js.native
   /**
-    * A mapping of tags to assign to the API.
+    * A map of tags to assign to the API.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  /**
+    * Part of _quick create_. Quick create produces an API with an integration, a default catch-all route, and a default stage which is configured to automatically deploy changes.
+    * For HTTP integrations, specify a fully qualified URL. For Lambda integrations, specify a function ARN.
+    * The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. Applicable for HTTP APIs.
+    */
+  val target: Output_[js.UndefOr[String]] = js.native
   /**
     * A version identifier for the API.
     */
@@ -80,8 +99,10 @@ object Api extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Api = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Api = js.native
   def get(name: String, id: Input[ID], state: ApiState): Api = js.native
   def get(name: String, id: Input[ID], state: ApiState, opts: CustomResourceOptions): Api = js.native
   /**

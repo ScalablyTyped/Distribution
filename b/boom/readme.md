@@ -11,8 +11,8 @@ HTTP-friendly error objects
 | Full name          | boom |
 | Keywords           | error, http |
 | # releases         | 5 |
-| # dependents       | 1190 |
-| # downloads        | 238281252 |
+| # dependents       | 1187 |
+| # downloads        | 231584781 |
 | # stars            | 118 |
 
 ## Links

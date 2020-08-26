@@ -11,7 +11,7 @@ Provides access to Apigee-specific functionality
 | Keywords           | apigee |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 105641 |
+| # downloads        | 99664 |
 | # stars            | 1 |
 
 ## Links

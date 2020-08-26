@@ -6,129 +6,178 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgGridModalDialog
   extends /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
-  var animationDuration: js.UndefOr[Double] = js.undefined
-  var buttonApplyDisabled: js.UndefOr[Boolean] = js.undefined
+  var animationDuration: js.UndefOr[Double] = js.native
+  var buttonApplyDisabled: js.UndefOr[Boolean] = js.native
   /**
     * Event fired when the button Cancel is clicked
     */
-  var buttonCancelClick: js.UndefOr[ButtonCancelClickEvent] = js.undefined
+  var buttonCancelClick: js.UndefOr[ButtonCancelClickEvent] = js.native
   /**
     * Event fired when the button OK/Apply is clicked
     */
-  var buttonOKClick: js.UndefOr[ButtonOKClickEvent] = js.undefined
+  var buttonOKClick: js.UndefOr[ButtonOKClickEvent] = js.native
   /**
     * If true and Enter is pressed - close modal dialog(NOTE: buttonApplyDisabled should be set to false - otherwise this options is ignored)
     */
-  var closeModalDialogOnEnter: js.UndefOr[Boolean] = js.undefined
+  var closeModalDialogOnEnter: js.UndefOr[Boolean] = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String] = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[js.Any] = js.native
   /**
     * Event fired after the modal dialog has been closed.
     */
-  var modalDialogClosed: js.UndefOr[ModalDialogClosedEvent] = js.undefined
+  var modalDialogClosed: js.UndefOr[ModalDialogClosedEvent] = js.native
   /**
     * Event fired before the modal dialog is closed.
     */
-  var modalDialogClosing: js.UndefOr[ModalDialogClosingEvent] = js.undefined
+  var modalDialogClosing: js.UndefOr[ModalDialogClosingEvent] = js.native
   /**
     * Event fired after the contents of the modal dialog are rendered.
     */
-  var modalDialogContentsRendered: js.UndefOr[ModalDialogContentsRenderedEvent] = js.undefined
+  var modalDialogContentsRendered: js.UndefOr[ModalDialogContentsRenderedEvent] = js.native
   /**
     * Event fired before the contents of the modal dialog are rendered.
     */
-  var modalDialogContentsRendering: js.UndefOr[ModalDialogContentsRenderingEvent] = js.undefined
+  var modalDialogContentsRendering: js.UndefOr[ModalDialogContentsRenderingEvent] = js.native
   /**
     * The default modal dialog height in pixels.
     */
-  var modalDialogHeight: js.UndefOr[Double] = js.undefined
+  var modalDialogHeight: js.UndefOr[Double] = js.native
   /**
     * Event fired every time the modal dialog changes its position.
     */
-  var modalDialogMoving: js.UndefOr[ModalDialogMovingEvent] = js.undefined
+  var modalDialogMoving: js.UndefOr[ModalDialogMovingEvent] = js.native
   /**
     * Event fired after the modal dialog is already opened.
     */
-  var modalDialogOpened: js.UndefOr[ModalDialogOpenedEvent] = js.undefined
+  var modalDialogOpened: js.UndefOr[ModalDialogOpenedEvent] = js.native
   /**
     * Event fired before the modal dialog is opened.
     */
-  var modalDialogOpening: js.UndefOr[ModalDialogOpeningEvent] = js.undefined
+  var modalDialogOpening: js.UndefOr[ModalDialogOpeningEvent] = js.native
   /**
     * The default modal dialog width in pixels.
     */
-  var modalDialogWidth: js.UndefOr[Double] = js.undefined
+  var modalDialogWidth: js.UndefOr[Double] = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.undefined
-  var renderFooterButtons: js.UndefOr[Boolean] = js.undefined
+  var regional: js.UndefOr[String | js.Object] = js.native
+  var renderFooterButtons: js.UndefOr[Boolean] = js.native
   /**
     * Tab index to assign to containers and buttons inside the dialog
     */
-  var tabIndex: js.UndefOr[Double] = js.undefined
+  var tabIndex: js.UndefOr[Double] = js.native
 }
 
 object IgGridModalDialog {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    buttonApplyDisabled: js.UndefOr[Boolean] = js.undefined,
-    buttonCancelClick: (/* event */ Event, /* ui */ ButtonCancelClickEventUIParam) => Unit = null,
-    buttonOKClick: (/* event */ Event, /* ui */ ButtonOKClickEventUIParam) => Unit = null,
-    closeModalDialogOnEnter: js.UndefOr[Boolean] = js.undefined,
-    language: String = null,
-    locale: js.Any = null,
-    modalDialogClosed: (/* event */ Event, /* ui */ ModalDialogClosedEventUIParam) => Unit = null,
-    modalDialogClosing: (/* event */ Event, /* ui */ ModalDialogClosingEventUIParam) => Unit = null,
-    modalDialogContentsRendered: (/* event */ Event, /* ui */ ModalDialogContentsRenderedEventUIParam) => Unit = null,
-    modalDialogContentsRendering: (/* event */ Event, /* ui */ ModalDialogContentsRenderingEventUIParam) => Unit = null,
-    modalDialogHeight: js.UndefOr[Double] = js.undefined,
-    modalDialogMoving: (/* event */ Event, /* ui */ ModalDialogMovingEventUIParam) => Unit = null,
-    modalDialogOpened: (/* event */ Event, /* ui */ ModalDialogOpenedEventUIParam) => Unit = null,
-    modalDialogOpening: (/* event */ Event, /* ui */ ModalDialogOpeningEventUIParam) => Unit = null,
-    modalDialogWidth: js.UndefOr[Double] = js.undefined,
-    regional: String | js.Object = null,
-    renderFooterButtons: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: js.UndefOr[Double] = js.undefined
-  ): IgGridModalDialog = {
+  def apply(): IgGridModalDialog = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonApplyDisabled)) __obj.updateDynamic("buttonApplyDisabled")(buttonApplyDisabled.get.asInstanceOf[js.Any])
-    if (buttonCancelClick != null) __obj.updateDynamic("buttonCancelClick")(js.Any.fromFunction2(buttonCancelClick))
-    if (buttonOKClick != null) __obj.updateDynamic("buttonOKClick")(js.Any.fromFunction2(buttonOKClick))
-    if (!js.isUndefined(closeModalDialogOnEnter)) __obj.updateDynamic("closeModalDialogOnEnter")(closeModalDialogOnEnter.get.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (modalDialogClosed != null) __obj.updateDynamic("modalDialogClosed")(js.Any.fromFunction2(modalDialogClosed))
-    if (modalDialogClosing != null) __obj.updateDynamic("modalDialogClosing")(js.Any.fromFunction2(modalDialogClosing))
-    if (modalDialogContentsRendered != null) __obj.updateDynamic("modalDialogContentsRendered")(js.Any.fromFunction2(modalDialogContentsRendered))
-    if (modalDialogContentsRendering != null) __obj.updateDynamic("modalDialogContentsRendering")(js.Any.fromFunction2(modalDialogContentsRendering))
-    if (!js.isUndefined(modalDialogHeight)) __obj.updateDynamic("modalDialogHeight")(modalDialogHeight.get.asInstanceOf[js.Any])
-    if (modalDialogMoving != null) __obj.updateDynamic("modalDialogMoving")(js.Any.fromFunction2(modalDialogMoving))
-    if (modalDialogOpened != null) __obj.updateDynamic("modalDialogOpened")(js.Any.fromFunction2(modalDialogOpened))
-    if (modalDialogOpening != null) __obj.updateDynamic("modalDialogOpening")(js.Any.fromFunction2(modalDialogOpening))
-    if (!js.isUndefined(modalDialogWidth)) __obj.updateDynamic("modalDialogWidth")(modalDialogWidth.get.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderFooterButtons)) __obj.updateDynamic("renderFooterButtons")(renderFooterButtons.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridModalDialog]
   }
+  @scala.inline
+  implicit class IgGridModalDialogOps[Self <: IgGridModalDialog] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setButtonApplyDisabled(value: Boolean): Self = this.set("buttonApplyDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonApplyDisabled: Self = this.set("buttonApplyDisabled", js.undefined)
+    @scala.inline
+    def setButtonCancelClick(value: (/* event */ Event, /* ui */ ButtonCancelClickEventUIParam) => Unit): Self = this.set("buttonCancelClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteButtonCancelClick: Self = this.set("buttonCancelClick", js.undefined)
+    @scala.inline
+    def setButtonOKClick(value: (/* event */ Event, /* ui */ ButtonOKClickEventUIParam) => Unit): Self = this.set("buttonOKClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteButtonOKClick: Self = this.set("buttonOKClick", js.undefined)
+    @scala.inline
+    def setCloseModalDialogOnEnter(value: Boolean): Self = this.set("closeModalDialogOnEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseModalDialogOnEnter: Self = this.set("closeModalDialogOnEnter", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setModalDialogClosed(value: (/* event */ Event, /* ui */ ModalDialogClosedEventUIParam) => Unit): Self = this.set("modalDialogClosed", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteModalDialogClosed: Self = this.set("modalDialogClosed", js.undefined)
+    @scala.inline
+    def setModalDialogClosing(value: (/* event */ Event, /* ui */ ModalDialogClosingEventUIParam) => Unit): Self = this.set("modalDialogClosing", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteModalDialogClosing: Self = this.set("modalDialogClosing", js.undefined)
+    @scala.inline
+    def setModalDialogContentsRendered(value: (/* event */ Event, /* ui */ ModalDialogContentsRenderedEventUIParam) => Unit): Self = this.set("modalDialogContentsRendered", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteModalDialogContentsRendered: Self = this.set("modalDialogContentsRendered", js.undefined)
+    @scala.inline
+    def setModalDialogContentsRendering(value: (/* event */ Event, /* ui */ ModalDialogContentsRenderingEventUIParam) => Unit): Self = this.set("modalDialogContentsRendering", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteModalDialogContentsRendering: Self = this.set("modalDialogContentsRendering", js.undefined)
+    @scala.inline
+    def setModalDialogHeight(value: Double): Self = this.set("modalDialogHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModalDialogHeight: Self = this.set("modalDialogHeight", js.undefined)
+    @scala.inline
+    def setModalDialogMoving(value: (/* event */ Event, /* ui */ ModalDialogMovingEventUIParam) => Unit): Self = this.set("modalDialogMoving", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteModalDialogMoving: Self = this.set("modalDialogMoving", js.undefined)
+    @scala.inline
+    def setModalDialogOpened(value: (/* event */ Event, /* ui */ ModalDialogOpenedEventUIParam) => Unit): Self = this.set("modalDialogOpened", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteModalDialogOpened: Self = this.set("modalDialogOpened", js.undefined)
+    @scala.inline
+    def setModalDialogOpening(value: (/* event */ Event, /* ui */ ModalDialogOpeningEventUIParam) => Unit): Self = this.set("modalDialogOpening", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteModalDialogOpening: Self = this.set("modalDialogOpening", js.undefined)
+    @scala.inline
+    def setModalDialogWidth(value: Double): Self = this.set("modalDialogWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModalDialogWidth: Self = this.set("modalDialogWidth", js.undefined)
+    @scala.inline
+    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegional: Self = this.set("regional", js.undefined)
+    @scala.inline
+    def setRenderFooterButtons(value: Boolean): Self = this.set("renderFooterButtons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderFooterButtons: Self = this.set("renderFooterButtons", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+  }
+  
 }
 

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TestExecutionStep extends js.Object {
   /**
     * Issues observed during the test execution.
@@ -13,7 +14,7 @@ trait TestExecutionStep extends js.Object {
     *
     * - In response: present if set by create or update - In create/update request: optional
     */
-  var testIssues: js.UndefOr[js.Array[TestIssue]] = js.undefined
+  var testIssues: js.UndefOr[js.Array[TestIssue]] = js.native
   /**
     * List of test suite overview contents. This could be parsed from xUnit XML log by server, or uploaded directly by user. This references should only be
     * called when test suites are fully parsed or uploaded.
@@ -22,13 +23,13 @@ trait TestExecutionStep extends js.Object {
     *
     * - In response: always set - In create request: optional - In update request: never (use publishXunitXmlFiles custom method instead)
     */
-  var testSuiteOverviews: js.UndefOr[js.Array[TestSuiteOverview]] = js.undefined
+  var testSuiteOverviews: js.UndefOr[js.Array[TestSuiteOverview]] = js.native
   /**
     * The timing break down of the test execution.
     *
     * - In response: present if set by create or update - In create/update request: optional
     */
-  var testTiming: js.UndefOr[TestTiming] = js.undefined
+  var testTiming: js.UndefOr[TestTiming] = js.native
   /**
     * Represents the execution of the test runner.
     *
@@ -36,23 +37,47 @@ trait TestExecutionStep extends js.Object {
     *
     * - In response: always set - In create/update request: optional
     */
-  var toolExecution: js.UndefOr[ToolExecution] = js.undefined
+  var toolExecution: js.UndefOr[ToolExecution] = js.native
 }
 
 object TestExecutionStep {
   @scala.inline
-  def apply(
-    testIssues: js.Array[TestIssue] = null,
-    testSuiteOverviews: js.Array[TestSuiteOverview] = null,
-    testTiming: TestTiming = null,
-    toolExecution: ToolExecution = null
-  ): TestExecutionStep = {
+  def apply(): TestExecutionStep = {
     val __obj = js.Dynamic.literal()
-    if (testIssues != null) __obj.updateDynamic("testIssues")(testIssues.asInstanceOf[js.Any])
-    if (testSuiteOverviews != null) __obj.updateDynamic("testSuiteOverviews")(testSuiteOverviews.asInstanceOf[js.Any])
-    if (testTiming != null) __obj.updateDynamic("testTiming")(testTiming.asInstanceOf[js.Any])
-    if (toolExecution != null) __obj.updateDynamic("toolExecution")(toolExecution.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestExecutionStep]
   }
+  @scala.inline
+  implicit class TestExecutionStepOps[Self <: TestExecutionStep] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTestIssuesVarargs(value: TestIssue*): Self = this.set("testIssues", js.Array(value :_*))
+    @scala.inline
+    def setTestIssues(value: js.Array[TestIssue]): Self = this.set("testIssues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestIssues: Self = this.set("testIssues", js.undefined)
+    @scala.inline
+    def setTestSuiteOverviewsVarargs(value: TestSuiteOverview*): Self = this.set("testSuiteOverviews", js.Array(value :_*))
+    @scala.inline
+    def setTestSuiteOverviews(value: js.Array[TestSuiteOverview]): Self = this.set("testSuiteOverviews", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestSuiteOverviews: Self = this.set("testSuiteOverviews", js.undefined)
+    @scala.inline
+    def setTestTiming(value: TestTiming): Self = this.set("testTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestTiming: Self = this.set("testTiming", js.undefined)
+    @scala.inline
+    def setToolExecution(value: ToolExecution): Self = this.set("toolExecution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolExecution: Self = this.set("toolExecution", js.undefined)
+  }
+  
 }
 

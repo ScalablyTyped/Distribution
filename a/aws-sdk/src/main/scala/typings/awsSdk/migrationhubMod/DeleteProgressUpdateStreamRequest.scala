@@ -18,10 +18,28 @@ trait DeleteProgressUpdateStreamRequest extends js.Object {
 
 object DeleteProgressUpdateStreamRequest {
   @scala.inline
-  def apply(ProgressUpdateStreamName: ProgressUpdateStream, DryRun: js.UndefOr[DryRun] = js.undefined): DeleteProgressUpdateStreamRequest = {
+  def apply(ProgressUpdateStreamName: ProgressUpdateStream): DeleteProgressUpdateStreamRequest = {
     val __obj = js.Dynamic.literal(ProgressUpdateStreamName = ProgressUpdateStreamName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProgressUpdateStreamRequest]
   }
+  @scala.inline
+  implicit class DeleteProgressUpdateStreamRequestOps[Self <: DeleteProgressUpdateStreamRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProgressUpdateStreamName(value: ProgressUpdateStream): Self = this.set("ProgressUpdateStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: DryRun): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

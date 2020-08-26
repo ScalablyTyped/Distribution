@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * An implementation of this service in general does not need to buffer data itself.
   * @see com.sun.star.io.ObjectInputStream
   */
+@js.native
 trait DataInputStream
   extends XDataInputStream
      with XActiveDataSink

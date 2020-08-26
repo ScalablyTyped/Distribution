@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojgaugeMod
 
 import typings.oracleOraclejet.anon.Source
-import typings.oracleOraclejet.anon.`9`
+import typings.oracleOraclejet.anon.`11`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojgaugeMod.ojRatingGauge.Threshold
 import typings.oracleOraclejet.oracleOraclejetNumbers.`0.5`
@@ -65,7 +65,7 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   var onSelectedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
   var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[`0.5` | `1`], _]) | Null = js.native
   var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`9`], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`11`], _]) | Null = js.native
   var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
   var onUnselectedStateChanged: (js.Function1[/* event */ JetElementCustomEvent[Source], _]) | Null = js.native
   var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
@@ -76,7 +76,7 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   var selectedState: Source = js.native
   var step: `0.5` | `1` = js.native
   var thresholds: js.Array[Threshold] = js.native
-  var tooltip: `9` = js.native
+  var tooltip: `11` = js.native
   val transientValue: Double | Null = js.native
   var unselectedState: Source = js.native
   var value: Double | Null = js.native
@@ -208,12 +208,12 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`9`], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`11`], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`9`], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`11`], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -272,7 +272,7 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   @JSName("getProperty")
   def getProperty_thresholds(property: thresholds): js.Array[Threshold] = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): `9` = js.native
+  def getProperty_tooltip(property: tooltip): `11` = js.native
   @JSName("getProperty")
   def getProperty_transientValue(property: typings.oracleOraclejet.oracleOraclejetStrings.transientValue): Double | Null = js.native
   @JSName("getProperty")
@@ -307,7 +307,7 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   @JSName("setProperty")
   def setProperty_thresholds(property: thresholds, value: js.Array[Threshold]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: `9`): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: `11`): Unit = js.native
   @JSName("setProperty")
   def setProperty_transientValue(property: typings.oracleOraclejet.oracleOraclejetStrings.transientValue): Unit = js.native
   @JSName("setProperty")

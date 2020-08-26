@@ -31,18 +31,44 @@ trait SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation extends js.Obje
 
 object SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation {
   @scala.inline
-  def apply(
-    categoryEntities: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1Entity] = null,
-    entity: SchemaGoogleCloudVideointelligenceV1p1beta1Entity = null,
-    frames: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1LabelFrame] = null,
-    segments: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1LabelSegment] = null
-  ): SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (categoryEntities != null) __obj.updateDynamic("categoryEntities")(categoryEntities.asInstanceOf[js.Any])
-    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
-    if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
-    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotationOps[Self <: SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategoryEntitiesVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1Entity*): Self = this.set("categoryEntities", js.Array(value :_*))
+    @scala.inline
+    def setCategoryEntities(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1Entity]): Self = this.set("categoryEntities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryEntities: Self = this.set("categoryEntities", js.undefined)
+    @scala.inline
+    def setEntity(value: SchemaGoogleCloudVideointelligenceV1p1beta1Entity): Self = this.set("entity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntity: Self = this.set("entity", js.undefined)
+    @scala.inline
+    def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1LabelFrame*): Self = this.set("frames", js.Array(value :_*))
+    @scala.inline
+    def setFrames(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1LabelFrame]): Self = this.set("frames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrames: Self = this.set("frames", js.undefined)
+    @scala.inline
+    def setSegmentsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1LabelSegment*): Self = this.set("segments", js.Array(value :_*))
+    @scala.inline
+    def setSegments(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1LabelSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegments: Self = this.set("segments", js.undefined)
+  }
+  
 }
 

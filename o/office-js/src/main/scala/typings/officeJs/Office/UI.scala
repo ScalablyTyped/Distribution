@@ -133,6 +133,11 @@ trait UI extends js.Object {
     */
   def displayDialogAsync(startAddress: String): Unit = js.native
   def displayDialogAsync(startAddress: String, callback: js.Function1[/* result */ AsyncResult[Dialog], Unit]): Unit = js.native
+  def displayDialogAsync(
+    startAddress: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Dialog], Unit]
+  ): Unit = js.native
   def displayDialogAsync(startAddress: String, options: DialogOptions): Unit = js.native
   def displayDialogAsync(
     startAddress: String,

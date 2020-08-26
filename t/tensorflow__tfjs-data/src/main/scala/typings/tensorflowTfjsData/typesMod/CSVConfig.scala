@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CSVConfig extends js.Object {
   /**
     * A dictionary whose key is column names, value is an object stating if this
@@ -31,7 +32,7 @@ trait CSVConfig extends js.Object {
     * key/value pairs, ys is a dict of labels key/value pairs. If no column is
     * marked as label, returns a dict of features only.
     */
-  var columnConfigs: js.UndefOr[StringDictionary[ColumnConfig]] = js.undefined
+  var columnConfigs: js.UndefOr[StringDictionary[ColumnConfig]] = js.native
   /**
     * A list of strings that corresponds to the CSV column names, in order. If
     * provided, it ignores the column names inferred from the header row. If not
@@ -39,46 +40,72 @@ trait CSVConfig extends js.Object {
     * `hasHeader` is false and `columnNames` is not provided, this method will
     * throw an error.
     */
-  var columnNames: js.UndefOr[js.Array[String]] = js.undefined
+  var columnNames: js.UndefOr[js.Array[String]] = js.native
   /**
     * If true, only columns provided in `columnConfigs` will be parsed and
     * provided during iteration.
     */
-  var configuredColumnsOnly: js.UndefOr[Boolean] = js.undefined
+  var configuredColumnsOnly: js.UndefOr[Boolean] = js.native
   /**
     * If true, delimiter field should be null. Parsing delimiter is whitespace
     * and treat continuous multiple whitespace as one delimiter.
     */
-  var delimWhitespace: js.UndefOr[Boolean] = js.undefined
+  var delimWhitespace: js.UndefOr[Boolean] = js.native
   /**
     * The string used to parse each line of the input file.
     */
-  var delimiter: js.UndefOr[String] = js.undefined
+  var delimiter: js.UndefOr[String] = js.native
   /**
     * A boolean value that indicates whether the first row of provided CSV file
     * is a header line with column names, and should not be included in the data.
     */
-  var hasHeader: js.UndefOr[Boolean] = js.undefined
+  var hasHeader: js.UndefOr[Boolean] = js.native
 }
 
 object CSVConfig {
   @scala.inline
-  def apply(
-    columnConfigs: StringDictionary[ColumnConfig] = null,
-    columnNames: js.Array[String] = null,
-    configuredColumnsOnly: js.UndefOr[Boolean] = js.undefined,
-    delimWhitespace: js.UndefOr[Boolean] = js.undefined,
-    delimiter: String = null,
-    hasHeader: js.UndefOr[Boolean] = js.undefined
-  ): CSVConfig = {
+  def apply(): CSVConfig = {
     val __obj = js.Dynamic.literal()
-    if (columnConfigs != null) __obj.updateDynamic("columnConfigs")(columnConfigs.asInstanceOf[js.Any])
-    if (columnNames != null) __obj.updateDynamic("columnNames")(columnNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(configuredColumnsOnly)) __obj.updateDynamic("configuredColumnsOnly")(configuredColumnsOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delimWhitespace)) __obj.updateDynamic("delimWhitespace")(delimWhitespace.get.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasHeader)) __obj.updateDynamic("hasHeader")(hasHeader.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSVConfig]
   }
+  @scala.inline
+  implicit class CSVConfigOps[Self <: CSVConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnConfigs(value: StringDictionary[ColumnConfig]): Self = this.set("columnConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnConfigs: Self = this.set("columnConfigs", js.undefined)
+    @scala.inline
+    def setColumnNamesVarargs(value: String*): Self = this.set("columnNames", js.Array(value :_*))
+    @scala.inline
+    def setColumnNames(value: js.Array[String]): Self = this.set("columnNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnNames: Self = this.set("columnNames", js.undefined)
+    @scala.inline
+    def setConfiguredColumnsOnly(value: Boolean): Self = this.set("configuredColumnsOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguredColumnsOnly: Self = this.set("configuredColumnsOnly", js.undefined)
+    @scala.inline
+    def setDelimWhitespace(value: Boolean): Self = this.set("delimWhitespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimWhitespace: Self = this.set("delimWhitespace", js.undefined)
+    @scala.inline
+    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    @scala.inline
+    def setHasHeader(value: Boolean): Self = this.set("hasHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasHeader: Self = this.set("hasHeader", js.undefined)
+  }
+  
 }
 

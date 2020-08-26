@@ -21,11 +21,30 @@ trait SchemaGdataDiffVersionResponse extends js.Object {
 
 object SchemaGdataDiffVersionResponse {
   @scala.inline
-  def apply(objectSizeBytes: String = null, objectVersion: String = null): SchemaGdataDiffVersionResponse = {
+  def apply(): SchemaGdataDiffVersionResponse = {
     val __obj = js.Dynamic.literal()
-    if (objectSizeBytes != null) __obj.updateDynamic("objectSizeBytes")(objectSizeBytes.asInstanceOf[js.Any])
-    if (objectVersion != null) __obj.updateDynamic("objectVersion")(objectVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGdataDiffVersionResponse]
   }
+  @scala.inline
+  implicit class SchemaGdataDiffVersionResponseOps[Self <: SchemaGdataDiffVersionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setObjectSizeBytes(value: String): Self = this.set("objectSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectSizeBytes: Self = this.set("objectSizeBytes", js.undefined)
+    @scala.inline
+    def setObjectVersion(value: String): Self = this.set("objectVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectVersion: Self = this.set("objectVersion", js.undefined)
+  }
+  
 }
 

@@ -13,6 +13,7 @@ trait CustomViews extends js.Object {
   def apply(ViewName: String): CustomView = js.native
   def apply(ViewName: Double): CustomView = js.native
   def Add(ViewName: String): CustomView = js.native
+  def Add(ViewName: String, PrintSettings: js.UndefOr[scala.Nothing], RowColSettings: Boolean): CustomView = js.native
   def Add(ViewName: String, PrintSettings: Boolean): CustomView = js.native
   def Add(ViewName: String, PrintSettings: Boolean, RowColSettings: Boolean): CustomView = js.native
   def Item(ViewName: String): CustomView = js.native

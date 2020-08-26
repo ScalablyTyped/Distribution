@@ -159,6 +159,10 @@ trait Logger
   def prompt(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
   def prompt(message: js.Any): Logger = js.native
   def query(): js.Any = js.native
+  def query(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* results */ js.Any, Unit]
+  ): js.Any = js.native
   def query(options: QueryOptions): js.Any = js.native
   def query(options: QueryOptions, callback: js.Function2[/* err */ Error, /* results */ js.Any, Unit]): js.Any = js.native
   def remove(transport: typings.winstonTransport.mod.^): Logger = js.native

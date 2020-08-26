@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-config", "readConfigs")
 @js.native
 object readConfigs extends js.Object {
-  def apply(argv: Argv, projectPaths: js.Array[Path]): Configs = js.native
+  def apply(argv: Argv, projectPaths: js.Array[Path]): js.Promise[Configs] = js.native
 }
 

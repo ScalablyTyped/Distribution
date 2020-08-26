@@ -22,14 +22,32 @@ trait SchemaCompleteQueryResponse extends js.Object {
 
 object SchemaCompleteQueryResponse {
   @scala.inline
-  def apply(
-    completionResults: js.Array[SchemaCompletionResult] = null,
-    metadata: SchemaResponseMetadata = null
-  ): SchemaCompleteQueryResponse = {
+  def apply(): SchemaCompleteQueryResponse = {
     val __obj = js.Dynamic.literal()
-    if (completionResults != null) __obj.updateDynamic("completionResults")(completionResults.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCompleteQueryResponse]
   }
+  @scala.inline
+  implicit class SchemaCompleteQueryResponseOps[Self <: SchemaCompleteQueryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionResultsVarargs(value: SchemaCompletionResult*): Self = this.set("completionResults", js.Array(value :_*))
+    @scala.inline
+    def setCompletionResults(value: js.Array[SchemaCompletionResult]): Self = this.set("completionResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionResults: Self = this.set("completionResults", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaResponseMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+  }
+  
 }
 

@@ -15,6 +15,7 @@ object mod extends js.Object {
     * @param context The number of characters to display in each direction around the position of an error.
     */
   def apply(txt: String): js.Any = js.native
+  def apply(txt: String, reviver: js.UndefOr[scala.Nothing], context: Double): js.Any = js.native
   def apply(txt: String, reviver: js.Function2[/* key */ String, /* value */ js.Any, _]): js.Any = js.native
   def apply(txt: String, reviver: js.Function2[/* key */ String, /* value */ js.Any, _], context: Double): js.Any = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "R3Identifiers")
 @js.native
 class R3Identifiers ()
-  extends typings.angularCompiler.publicApiMod.R3Identifiers
+  extends typings.angularCompiler.compilerMod.R3Identifiers
 
 /* static members */
 @JSImport("@angular/compiler", "R3Identifiers")
@@ -49,9 +49,7 @@ object R3Identifiers extends js.Object {
   var classMapInterpolate8: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var classMapInterpolateV: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var classProp: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var componentHostSyntheticListener: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var contentQuery: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var defaultStyleSanitizer: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var defineComponent: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var defineDirective: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var defineInjector: typings.angularCompiler.outputAstMod.ExternalReference = js.native
@@ -154,6 +152,8 @@ object R3Identifiers extends js.Object {
   var stylePropInterpolate7: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var stylePropInterpolate8: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var stylePropInterpolateV: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var syntheticHostListener: typings.angularCompiler.outputAstMod.ExternalReference = js.native
+  var syntheticHostProperty: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var templateCreate: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var templateRefExtractor: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var text: typings.angularCompiler.outputAstMod.ExternalReference = js.native
@@ -167,7 +167,6 @@ object R3Identifiers extends js.Object {
   var textInterpolate7: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var textInterpolate8: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var textInterpolateV: typings.angularCompiler.outputAstMod.ExternalReference = js.native
-  var updateSyntheticHostBinding: typings.angularCompiler.outputAstMod.ExternalReference = js.native
   var viewQuery: typings.angularCompiler.outputAstMod.ExternalReference = js.native
 }
 

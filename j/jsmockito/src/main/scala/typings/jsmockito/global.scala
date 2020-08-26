@@ -2,7 +2,6 @@ package typings.jsmockito
 
 import typings.jsmockito.JsMockito.Verifier
 import typings.jsmockito.anon.Instantiable
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -153,32 +152,7 @@ object global extends js.Object {
   object JsMockito extends js.Object {
     @js.native
     class JsMockitoStubBuilder ()
-      extends typings.jsmockito.JsMockito.JsMockitoStubBuilder {
-      /**
-        * Provide functions to be run in place of the mocked method.
-        *
-        * @param func Functions to be run in order of execution.
-        * @return {JsMockitoStubBuilder} Itself for method chaining
-        */
-      /* CompleteClass */
-      override def `then`(func: (js.Function1[/* obj */ js.Any, _])*): typings.jsmockito.JsMockito.JsMockitoStubBuilder = js.native
-      /**
-        * Provide values to be returned by the mocked function.
-        *
-        * @param obj Values to be returned in order of execution.
-        * @return {JsMockitoStubBuilder} Itself for method chaining
-        */
-      /* CompleteClass */
-      override def thenReturn(obj: js.Any*): typings.jsmockito.JsMockito.JsMockitoStubBuilder = js.native
-      /**
-        * Provide exceptions to be thrown by the mocked function.
-        *
-        * @param obj Exceptions to be thrown in order of execution.
-        * @return {JsMockitoStubBuilder} Itself for method chaining
-        */
-      /* CompleteClass */
-      override def thenThrow(obj: Error*): typings.jsmockito.JsMockito.JsMockitoStubBuilder = js.native
-    }
+      extends typings.jsmockito.JsMockito.JsMockitoStubBuilder
     
     var version: String = js.native
     def isMock(maybeMock: js.Any): Boolean = js.native

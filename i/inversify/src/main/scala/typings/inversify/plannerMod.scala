@@ -32,7 +32,46 @@ object plannerMod extends js.Object {
     isMultiInject: Boolean,
     targetType: TargetType,
     serviceIdentifier: ServiceIdentifier[_],
+    key: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    avoidConstraints: Boolean
+  ): Context = js.native
+  def plan(
+    metadataReader: MetadataReader,
+    container: Container,
+    isMultiInject: Boolean,
+    targetType: TargetType,
+    serviceIdentifier: ServiceIdentifier[_],
+    key: js.UndefOr[scala.Nothing],
+    value: js.Any
+  ): Context = js.native
+  def plan(
+    metadataReader: MetadataReader,
+    container: Container,
+    isMultiInject: Boolean,
+    targetType: TargetType,
+    serviceIdentifier: ServiceIdentifier[_],
+    key: js.UndefOr[scala.Nothing],
+    value: js.Any,
+    avoidConstraints: Boolean
+  ): Context = js.native
+  def plan(
+    metadataReader: MetadataReader,
+    container: Container,
+    isMultiInject: Boolean,
+    targetType: TargetType,
+    serviceIdentifier: ServiceIdentifier[_],
     key: String
+  ): Context = js.native
+  def plan(
+    metadataReader: MetadataReader,
+    container: Container,
+    isMultiInject: Boolean,
+    targetType: TargetType,
+    serviceIdentifier: ServiceIdentifier[_],
+    key: String,
+    value: js.UndefOr[scala.Nothing],
+    avoidConstraints: Boolean
   ): Context = js.native
   def plan(
     metadataReader: MetadataReader,
@@ -68,6 +107,16 @@ object plannerMod extends js.Object {
     targetType: TargetType,
     serviceIdentifier: ServiceIdentifier[_],
     key: js.Symbol,
+    value: js.UndefOr[scala.Nothing],
+    avoidConstraints: Boolean
+  ): Context = js.native
+  def plan(
+    metadataReader: MetadataReader,
+    container: Container,
+    isMultiInject: Boolean,
+    targetType: TargetType,
+    serviceIdentifier: ServiceIdentifier[_],
+    key: js.Symbol,
     value: js.Any
   ): Context = js.native
   def plan(
@@ -87,6 +136,16 @@ object plannerMod extends js.Object {
     targetType: TargetType,
     serviceIdentifier: ServiceIdentifier[_],
     key: Double
+  ): Context = js.native
+  def plan(
+    metadataReader: MetadataReader,
+    container: Container,
+    isMultiInject: Boolean,
+    targetType: TargetType,
+    serviceIdentifier: ServiceIdentifier[_],
+    key: Double,
+    value: js.UndefOr[scala.Nothing],
+    avoidConstraints: Boolean
   ): Context = js.native
   def plan(
     metadataReader: MetadataReader,

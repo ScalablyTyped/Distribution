@@ -11,8 +11,8 @@ Autogenerate IDs to facilitate WAI-ARIA and server rendering.
 | Full name          | @reach/auto-id |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 18 |
-| # downloads        | 1372205 |
+| # dependents       | 19 |
+| # downloads        | 1424117 |
 | # stars            | 0 |
 
 ## Links

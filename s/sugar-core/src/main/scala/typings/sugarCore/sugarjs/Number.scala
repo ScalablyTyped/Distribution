@@ -15,6 +15,7 @@ object Number extends js.Object {
     def toExponential(fractionDigits: Double): SugarDefaultChainable[java.lang.String] = js.native
     def toFixed(): SugarDefaultChainable[java.lang.String] = js.native
     def toFixed(fractionDigits: Double): SugarDefaultChainable[java.lang.String] = js.native
+    def toLocaleString(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleString(locales: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleString(locales: java.lang.String, options: NumberFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleString(locales: js.Array[java.lang.String]): SugarDefaultChainable[java.lang.String] = js.native

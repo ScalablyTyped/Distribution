@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "money-math"
-version := "2.5-dt-20200515Z-07ddcb"
-scalaVersion := "2.13.2"
+version := "2.5-dt-20200515Z-65dfd8"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

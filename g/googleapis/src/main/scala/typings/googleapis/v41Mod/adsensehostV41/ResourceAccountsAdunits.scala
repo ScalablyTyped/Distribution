@@ -30,6 +30,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaAdUnit] = js.native
   def delete(callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdUnit] = js.native
   def delete(params: ParamsResourceAccountsAdunitsDelete): GaxiosPromise[SchemaAdUnit] = js.native
   def delete(params: ParamsResourceAccountsAdunitsDelete, callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
   def delete(
@@ -59,6 +60,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAdUnit] = js.native
   def get(callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdUnit] = js.native
   def get(params: ParamsResourceAccountsAdunitsGet): GaxiosPromise[SchemaAdUnit] = js.native
   def get(params: ParamsResourceAccountsAdunitsGet, callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
   def get(
@@ -90,6 +92,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     */
   def getAdCode(): GaxiosPromise[SchemaAdCode] = js.native
   def getAdCode(callback: BodyResponseCallback[SchemaAdCode]): Unit = js.native
+  def getAdCode(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdCode] = js.native
   def getAdCode(params: ParamsResourceAccountsAdunitsGetadcode): GaxiosPromise[SchemaAdCode] = js.native
   def getAdCode(params: ParamsResourceAccountsAdunitsGetadcode, callback: BodyResponseCallback[SchemaAdCode]): Unit = js.native
   def getAdCode(
@@ -120,6 +123,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaAdUnit] = js.native
   def insert(callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdUnit] = js.native
   def insert(params: ParamsResourceAccountsAdunitsInsert): GaxiosPromise[SchemaAdUnit] = js.native
   def insert(params: ParamsResourceAccountsAdunitsInsert, callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
   def insert(
@@ -151,6 +155,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAdUnits] = js.native
   def list(callback: BodyResponseCallback[SchemaAdUnits]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdUnits] = js.native
   def list(params: ParamsResourceAccountsAdunitsList): GaxiosPromise[SchemaAdUnits] = js.native
   def list(params: ParamsResourceAccountsAdunitsList, callback: BodyResponseCallback[SchemaAdUnits]): Unit = js.native
   def list(
@@ -182,6 +187,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaAdUnit] = js.native
   def patch(callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdUnit] = js.native
   def patch(params: ParamsResourceAccountsAdunitsPatch): GaxiosPromise[SchemaAdUnit] = js.native
   def patch(params: ParamsResourceAccountsAdunitsPatch, callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
   def patch(
@@ -212,6 +218,7 @@ class ResourceAccountsAdunits protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaAdUnit] = js.native
   def update(callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdUnit] = js.native
   def update(params: ParamsResourceAccountsAdunitsUpdate): GaxiosPromise[SchemaAdUnit] = js.native
   def update(params: ParamsResourceAccountsAdunitsUpdate, callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
   def update(

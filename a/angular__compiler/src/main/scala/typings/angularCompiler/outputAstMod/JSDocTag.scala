@@ -12,9 +12,8 @@ trait JSDocTag extends js.Object
 
 object JSDocTag {
   @scala.inline
-  def TagName(tagName: JSDocTagName | String, text: String = null): JSDocTag = {
+  def TagName(tagName: JSDocTagName | String): JSDocTag = {
     val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSDocTag]
   }
   @scala.inline

@@ -54,22 +54,46 @@ trait SchemaClientEvent extends js.Object {
 
 object SchemaClientEvent {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    eventId: String = null,
-    extraInfo: StringDictionary[String] = null,
-    jobEvent: SchemaJobEvent = null,
-    parentEventId: String = null,
-    requestId: String = null
-  ): SchemaClientEvent = {
+  def apply(): SchemaClientEvent = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
-    if (extraInfo != null) __obj.updateDynamic("extraInfo")(extraInfo.asInstanceOf[js.Any])
-    if (jobEvent != null) __obj.updateDynamic("jobEvent")(jobEvent.asInstanceOf[js.Any])
-    if (parentEventId != null) __obj.updateDynamic("parentEventId")(parentEventId.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClientEvent]
   }
+  @scala.inline
+  implicit class SchemaClientEventOps[Self <: SchemaClientEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setEventId(value: String): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventId: Self = this.set("eventId", js.undefined)
+    @scala.inline
+    def setExtraInfo(value: StringDictionary[String]): Self = this.set("extraInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraInfo: Self = this.set("extraInfo", js.undefined)
+    @scala.inline
+    def setJobEvent(value: SchemaJobEvent): Self = this.set("jobEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobEvent: Self = this.set("jobEvent", js.undefined)
+    @scala.inline
+    def setParentEventId(value: String): Self = this.set("parentEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentEventId: Self = this.set("parentEventId", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+  }
+  
 }
 

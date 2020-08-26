@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LiveChatTextMessageDetails extends js.Object {
-  var messageText: js.UndefOr[String] = js.undefined
+  var messageText: js.UndefOr[String] = js.native
 }
 
 object LiveChatTextMessageDetails {
   @scala.inline
-  def apply(messageText: String = null): LiveChatTextMessageDetails = {
+  def apply(): LiveChatTextMessageDetails = {
     val __obj = js.Dynamic.literal()
-    if (messageText != null) __obj.updateDynamic("messageText")(messageText.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatTextMessageDetails]
   }
+  @scala.inline
+  implicit class LiveChatTextMessageDetailsOps[Self <: LiveChatTextMessageDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessageText(value: String): Self = this.set("messageText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageText: Self = this.set("messageText", js.undefined)
+  }
+  
 }
 

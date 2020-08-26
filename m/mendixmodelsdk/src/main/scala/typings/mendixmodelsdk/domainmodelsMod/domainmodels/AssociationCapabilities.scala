@@ -35,7 +35,7 @@ class AssociationCapabilities protected () extends Element {
   var model_FAssociationCapabilities: IModel = js.native
   def containerAsAssociationBase: AssociationBase = js.native
   def navigability: AssociationNavigability = js.native
-  def navigability(newValue: AssociationNavigability): js.Any = js.native
+  def navigability_=(newValue: AssociationNavigability): Unit = js.native
 }
 
 /* static members */

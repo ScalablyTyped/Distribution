@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesSunburstOptions extends PlotSunburstOptions {
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ @js.native
+trait SeriesSunburstOptions extends PlotSunburstOptions {
   /**
     * (Highcharts) An array of data points for the series. For the `treemap`
     * series type, points can be given in the following ways:
@@ -20,197 +21,130 @@ import scala.scalajs.js.annotation._
     * number of data points exceeds the series' turboThreshold, this option is
     * not available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[Double | Null | PointOptionsObject]] = js.undefined
+  var data: js.UndefOr[js.Array[Double | Null | PointOptionsObject]] = js.native
   /**
     * Not available
     */
-  var dataParser: js.UndefOr[scala.Nothing] = js.undefined
+  var dataParser: js.UndefOr[scala.Nothing] = js.native
   /**
     * Not available
     */
-  var dataURL: js.UndefOr[scala.Nothing] = js.undefined
+  var dataURL: js.UndefOr[scala.Nothing] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The index of the series in the
     * chart, affecting the internal index in the `chart.series` array, the
     * visible Z index as well as the order in the legend.
     */
-  var index: js.UndefOr[Double] = js.undefined
+  var index: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The sequential index of the
     * series in the legend.
     */
-  var legendIndex: js.UndefOr[Double] = js.undefined
+  var legendIndex: js.UndefOr[Double] = js.native
   /**
     * (Highmaps) A map data object containing a `path` definition and
     * optionally additional properties to join in the data as per the `joinBy`
     * option.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
+  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Not available
     */
-  var stack: js.UndefOr[Double | String] = js.undefined
+  var stack: js.UndefOr[Double | String] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
     * unknown sources.
     */
-  var `type`: String | sunburst
+  var `type`: String | sunburst = js.native
   /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
     * defines which xAxis the particular series is connected to. It refers to
     * either the axis id or the index of the axis in the xAxis array, with 0
     * being the first.
     */
-  var xAxis: js.UndefOr[Double | String] = js.undefined
+  var xAxis: js.UndefOr[Double | String] = js.native
   /**
     * (Highcharts, Highstock) When using dual or multiple y axes, this number
     * defines which yAxis the particular series is connected to. It refers to
     * either the axis id or the index of the axis in the yAxis array, with 0
     * being the first.
     */
-  var yAxis: js.UndefOr[Double | String] = js.undefined
+  var yAxis: js.UndefOr[Double | String] = js.native
 }
 
 object SeriesSunburstOptions {
   @scala.inline
-  def apply(
-    `type`: String | sunburst,
-    accessibility: SeriesAccessibilityOptionsObject = null,
-    allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    allowTraversingTree: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject = null,
-    boostBlending: OptionsBoostBlendingValue = null,
-    borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    center: js.Array[Double | String] = null,
-    className: String = null,
-    color: ColorString | GradientColorObject | PatternObject = null,
-    colorByPoint: js.UndefOr[Boolean] = js.undefined,
-    colorIndex: js.UndefOr[Double] = js.undefined,
-    colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
-    compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: SeriesConnectorsOptionsObject = null,
-    crisp: js.UndefOr[Boolean] = js.undefined,
-    cursor: String | CursorValue = null,
-    custom: Dictionary[_] = null,
-    data: js.Array[Double | Null | PointOptionsObject] = null,
-    dataLabels: SeriesSunburstDataLabelsOptionsObject | js.Array[SeriesSunburstDataLabelsOptionsObject] = null,
-    description: String = null,
-    enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: SeriesEventsOptionsObject = null,
-    fillColor: ColorString | GradientColorObject | PatternObject = null,
-    id: String = null,
-    includeInDataExport: js.UndefOr[Boolean] = js.undefined,
-    index: js.UndefOr[Double] = js.undefined,
-    keys: js.Array[String] = null,
-    lastPrice: SeriesLastPriceOptionsObject = null,
-    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
-    legendIndex: js.UndefOr[Double] = js.undefined,
-    levelIsConstant: js.UndefOr[Boolean] = js.undefined,
-    levelSize: PlotSunburstLevelSizeOptions = null,
-    levels: js.Array[PlotSunburstLevelsOptions] = null,
-    linkedTo: String = null,
-    mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
-    name: String = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    point: PlotSeriesPointOptions = null,
-    pointDescriptionFormatter: js.Function = null,
-    rootId: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    shadow: Boolean | ShadowOptionsObject = null,
-    showCheckbox: js.UndefOr[Boolean] = js.undefined,
-    showInLegend: js.UndefOr[Boolean] = js.undefined,
-    showInNavigator: js.UndefOr[Boolean] = js.undefined,
-    size: js.UndefOr[Null | Double | String] = js.undefined,
-    skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    slicedOffset: js.UndefOr[Double] = js.undefined,
-    stack: Double | scala.Nothing | String = null,
-    startAngle: js.UndefOr[Double] = js.undefined,
-    states: SeriesStatesOptionsObject = null,
-    stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tooltip: SeriesTooltipOptionsObject = null,
-    traverseUpButton: PlotSunburstTraverseUpButtonOptions = null,
-    useOhlcData: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    xAxis: Double | String = null,
-    yAxis: Double | String = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): SeriesSunburstOptions = {
+  def apply(`type`: String | sunburst): SeriesSunburstOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPointSelect)) __obj.updateDynamic("allowPointSelect")(allowPointSelect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTraversingTree)) __obj.updateDynamic("allowTraversingTree")(allowTraversingTree.get.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorIndex)) __obj.updateDynamic("colorIndex")(colorIndex.get.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart.get.asInstanceOf[js.Any])
-    if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(crisp)) __obj.updateDynamic("crisp")(crisp.get.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.get.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (lastPrice != null) __obj.updateDynamic("lastPrice")(lastPrice.asInstanceOf[js.Any])
-    if (lastVisiblePrice != null) __obj.updateDynamic("lastVisiblePrice")(lastVisiblePrice.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendIndex)) __obj.updateDynamic("legendIndex")(legendIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(levelIsConstant)) __obj.updateDynamic("levelIsConstant")(levelIsConstant.get.asInstanceOf[js.Any])
-    if (levelSize != null) __obj.updateDynamic("levelSize")(levelSize.asInstanceOf[js.Any])
-    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
-    if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo.asInstanceOf[js.Any])
-    if (mapData != null) __obj.updateDynamic("mapData")(mapData.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter.asInstanceOf[js.Any])
-    if (rootId != null) __obj.updateDynamic("rootId")(rootId.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInNavigator)) __obj.updateDynamic("showInNavigator")(showInNavigator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipKeyboardNavigation)) __obj.updateDynamic("skipKeyboardNavigation")(skipKeyboardNavigation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(slicedOffset)) __obj.updateDynamic("slicedOffset")(slicedOffset.get.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
-    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.get.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (traverseUpButton != null) __obj.updateDynamic("traverseUpButton")(traverseUpButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(useOhlcData)) __obj.updateDynamic("useOhlcData")(useOhlcData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesSunburstOptions]
   }
+  @scala.inline
+  implicit class SeriesSunburstOptionsOps[Self <: SeriesSunburstOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: String | sunburst): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataVarargs(value: (Double | Null | PointOptionsObject)*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[Double | Null | PointOptionsObject]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setLegendIndex(value: Double): Self = this.set("legendIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegendIndex: Self = this.set("legendIndex", js.undefined)
+    @scala.inline
+    def setMapDataVarargs(value: SeriesMapDataOptions*): Self = this.set("mapData", js.Array(value :_*))
+    @scala.inline
+    def setMapData(value: js.Array[SeriesMapDataOptions] | js.Any): Self = this.set("mapData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapData: Self = this.set("mapData", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStack(value: Double | scala.Nothing | String): Self = this.set("stack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStack: Self = this.set("stack", js.undefined)
+    @scala.inline
+    def setXAxis(value: Double | String): Self = this.set("xAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxis: Self = this.set("xAxis", js.undefined)
+    @scala.inline
+    def setYAxis(value: Double | String): Self = this.set("yAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxis: Self = this.set("yAxis", js.undefined)
+  }
+  
 }
 

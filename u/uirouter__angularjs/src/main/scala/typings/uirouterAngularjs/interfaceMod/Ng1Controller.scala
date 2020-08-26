@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Ng1Controller extends js.Object {
   /** @hidden */
   @JSName("$onInit")
-  def $onInit(): Unit
+  def $onInit(): Unit = js.native
   /**
     * This callback is called when the view's state is about to be exited.
     *
@@ -56,7 +57,7 @@ trait Ng1Controller extends js.Object {
     * @param transition the new Transition that is about to exit the component's state
     * @return a HookResult, or a promise for a HookResult
     */
-  def uiCanExit(transition: Transition): HookResult
+  def uiCanExit(transition: Transition): HookResult = js.native
   /**
     * This callback is called when parameter values have changed.
     *
@@ -82,7 +83,7 @@ trait Ng1Controller extends js.Object {
     * });
     * ```
     */
-  def uiOnParamsChanged(newValues: js.Any, DollartransitionDollar: Transition): Unit
+  def uiOnParamsChanged(newValues: js.Any, DollartransitionDollar: Transition): Unit = js.native
 }
 
 object Ng1Controller {
@@ -95,5 +96,24 @@ object Ng1Controller {
     val __obj = js.Dynamic.literal($onInit = js.Any.fromFunction0($onInit), uiCanExit = js.Any.fromFunction1(uiCanExit), uiOnParamsChanged = js.Any.fromFunction2(uiOnParamsChanged))
     __obj.asInstanceOf[Ng1Controller]
   }
+  @scala.inline
+  implicit class Ng1ControllerOps[Self <: Ng1Controller] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$onInit(value: () => Unit): Self = this.set("$onInit", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUiCanExit(value: Transition => HookResult): Self = this.set("uiCanExit", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUiOnParamsChanged(value: (js.Any, Transition) => Unit): Self = this.set("uiOnParamsChanged", js.Any.fromFunction2(value))
+  }
+  
 }
 

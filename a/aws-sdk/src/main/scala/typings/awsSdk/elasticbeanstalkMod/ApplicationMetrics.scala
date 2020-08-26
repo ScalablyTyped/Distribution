@@ -26,18 +26,38 @@ trait ApplicationMetrics extends js.Object {
 
 object ApplicationMetrics {
   @scala.inline
-  def apply(
-    Duration: js.UndefOr[NullableInteger] = js.undefined,
-    Latency: Latency = null,
-    RequestCount: js.UndefOr[RequestCount] = js.undefined,
-    StatusCodes: StatusCodes = null
-  ): ApplicationMetrics = {
+  def apply(): ApplicationMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (Latency != null) __obj.updateDynamic("Latency")(Latency.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequestCount)) __obj.updateDynamic("RequestCount")(RequestCount.get.asInstanceOf[js.Any])
-    if (StatusCodes != null) __obj.updateDynamic("StatusCodes")(StatusCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationMetrics]
   }
+  @scala.inline
+  implicit class ApplicationMetricsOps[Self <: ApplicationMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: NullableInteger): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setLatency(value: Latency): Self = this.set("Latency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatency: Self = this.set("Latency", js.undefined)
+    @scala.inline
+    def setRequestCount(value: RequestCount): Self = this.set("RequestCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCount: Self = this.set("RequestCount", js.undefined)
+    @scala.inline
+    def setStatusCodes(value: StatusCodes): Self = this.set("StatusCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCodes: Self = this.set("StatusCodes", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ListFleetsResponse extends js.Object {
 
 object ListFleetsResponse {
   @scala.inline
-  def apply(FleetSummaryList: FleetSummaryList = null, NextToken: NextToken = null): ListFleetsResponse = {
+  def apply(): ListFleetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (FleetSummaryList != null) __obj.updateDynamic("FleetSummaryList")(FleetSummaryList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFleetsResponse]
   }
+  @scala.inline
+  implicit class ListFleetsResponseOps[Self <: ListFleetsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetSummaryListVarargs(value: FleetSummary*): Self = this.set("FleetSummaryList", js.Array(value :_*))
+    @scala.inline
+    def setFleetSummaryList(value: FleetSummaryList): Self = this.set("FleetSummaryList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetSummaryList: Self = this.set("FleetSummaryList", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

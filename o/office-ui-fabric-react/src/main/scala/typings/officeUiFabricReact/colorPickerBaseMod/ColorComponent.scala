@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 /* Inlined keyof std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/utilities/color/interfaces.IColor, 'r' | 'g' | 'b' | 'a' | 't' | 'hex'> */
 /* Rewritten from type alias, can be one of: 
-  - typings.officeUiFabricReact.officeUiFabricReactStrings.t
-  - typings.officeUiFabricReact.officeUiFabricReactStrings.a
-  - typings.officeUiFabricReact.officeUiFabricReactStrings.hex
-  - typings.officeUiFabricReact.officeUiFabricReactStrings.b
   - typings.officeUiFabricReact.officeUiFabricReactStrings.g
+  - typings.officeUiFabricReact.officeUiFabricReactStrings.b
+  - typings.officeUiFabricReact.officeUiFabricReactStrings.a
   - typings.officeUiFabricReact.officeUiFabricReactStrings.r
+  - typings.officeUiFabricReact.officeUiFabricReactStrings.hex
+  - typings.officeUiFabricReact.officeUiFabricReactStrings.t
 */
 trait ColorComponent extends js.Object
 

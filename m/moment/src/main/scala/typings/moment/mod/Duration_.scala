@@ -11,8 +11,8 @@ trait Duration_
      with _LocaleSpecifier {
   def abs(): Duration_ = js.native
   def add(): Duration_ = js.native
+  def add(inp: js.UndefOr[DurationInputArg1], unit: DurationInputArg2): Duration_ = js.native
   def add(inp: DurationInputArg1): Duration_ = js.native
-  def add(inp: DurationInputArg1, unit: DurationInputArg2): Duration_ = js.native
   def as(units: Base): Double = js.native
   def asDays(): Double = js.native
   def asHours(): Double = js.native
@@ -27,6 +27,7 @@ trait Duration_
   def hours(): Double = js.native
   def humanize(): String = js.native
   def humanize(argThresholds: argThresholdOpts): String = js.native
+  def humanize(argWithSuffix: js.UndefOr[scala.Nothing], argThresholds: argThresholdOpts): String = js.native
   def humanize(argWithSuffix: Boolean): String = js.native
   def humanize(argWithSuffix: Boolean, argThresholds: argThresholdOpts): String = js.native
   def isValid(): Boolean = js.native
@@ -46,8 +47,8 @@ trait Duration_
   def months(): Double = js.native
   def seconds(): Double = js.native
   def subtract(): Duration_ = js.native
+  def subtract(inp: js.UndefOr[DurationInputArg1], unit: DurationInputArg2): Duration_ = js.native
   def subtract(inp: DurationInputArg1): Duration_ = js.native
-  def subtract(inp: DurationInputArg1, unit: DurationInputArg2): Duration_ = js.native
   def toISOString(): String = js.native
   /**
     * @deprecated

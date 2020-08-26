@@ -22,16 +22,36 @@ trait GetAggregateConfigRuleComplianceSummaryResponse extends js.Object {
 
 object GetAggregateConfigRuleComplianceSummaryResponse {
   @scala.inline
-  def apply(
-    AggregateComplianceCounts: AggregateComplianceCountList = null,
-    GroupByKey: StringWithCharLimit256 = null,
-    NextToken: NextToken = null
-  ): GetAggregateConfigRuleComplianceSummaryResponse = {
+  def apply(): GetAggregateConfigRuleComplianceSummaryResponse = {
     val __obj = js.Dynamic.literal()
-    if (AggregateComplianceCounts != null) __obj.updateDynamic("AggregateComplianceCounts")(AggregateComplianceCounts.asInstanceOf[js.Any])
-    if (GroupByKey != null) __obj.updateDynamic("GroupByKey")(GroupByKey.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAggregateConfigRuleComplianceSummaryResponse]
   }
+  @scala.inline
+  implicit class GetAggregateConfigRuleComplianceSummaryResponseOps[Self <: GetAggregateConfigRuleComplianceSummaryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregateComplianceCountsVarargs(value: AggregateComplianceCount*): Self = this.set("AggregateComplianceCounts", js.Array(value :_*))
+    @scala.inline
+    def setAggregateComplianceCounts(value: AggregateComplianceCountList): Self = this.set("AggregateComplianceCounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregateComplianceCounts: Self = this.set("AggregateComplianceCounts", js.undefined)
+    @scala.inline
+    def setGroupByKey(value: StringWithCharLimit256): Self = this.set("GroupByKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupByKey: Self = this.set("GroupByKey", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

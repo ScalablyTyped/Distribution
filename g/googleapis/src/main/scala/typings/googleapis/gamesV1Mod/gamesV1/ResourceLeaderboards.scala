@@ -28,6 +28,7 @@ class ResourceLeaderboards protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLeaderboard] = js.native
   def get(callback: BodyResponseCallback[SchemaLeaderboard]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaderboard] = js.native
   def get(params: ParamsResourceLeaderboardsGet): GaxiosPromise[SchemaLeaderboard] = js.native
   def get(params: ParamsResourceLeaderboardsGet, callback: BodyResponseCallback[SchemaLeaderboard]): Unit = js.native
   def get(
@@ -57,6 +58,7 @@ class ResourceLeaderboards protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaLeaderboardListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaLeaderboardListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaderboardListResponse] = js.native
   def list(params: ParamsResourceLeaderboardsList): GaxiosPromise[SchemaLeaderboardListResponse] = js.native
   def list(
     params: ParamsResourceLeaderboardsList,

@@ -18,11 +18,32 @@ trait DescribeInsightRulesOutput extends js.Object {
 
 object DescribeInsightRulesOutput {
   @scala.inline
-  def apply(InsightRules: InsightRules = null, NextToken: NextToken = null): DescribeInsightRulesOutput = {
+  def apply(): DescribeInsightRulesOutput = {
     val __obj = js.Dynamic.literal()
-    if (InsightRules != null) __obj.updateDynamic("InsightRules")(InsightRules.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInsightRulesOutput]
   }
+  @scala.inline
+  implicit class DescribeInsightRulesOutputOps[Self <: DescribeInsightRulesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInsightRulesVarargs(value: InsightRule*): Self = this.set("InsightRules", js.Array(value :_*))
+    @scala.inline
+    def setInsightRules(value: InsightRules): Self = this.set("InsightRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsightRules: Self = this.set("InsightRules", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

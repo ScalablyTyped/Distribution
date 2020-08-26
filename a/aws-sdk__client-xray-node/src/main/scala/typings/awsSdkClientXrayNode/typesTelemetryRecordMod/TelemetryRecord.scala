@@ -6,52 +6,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TelemetryRecord extends js.Object {
   /**
     * <p/>
     */
   var BackendConnectionErrors: js.UndefOr[
     typings.awsSdkClientXrayNode.typesBackendConnectionErrorsMod.BackendConnectionErrors
-  ] = js.undefined
+  ] = js.native
   /**
     * <p/>
     */
-  var SegmentsReceivedCount: js.UndefOr[Double] = js.undefined
+  var SegmentsReceivedCount: js.UndefOr[Double] = js.native
   /**
     * <p/>
     */
-  var SegmentsRejectedCount: js.UndefOr[Double] = js.undefined
+  var SegmentsRejectedCount: js.UndefOr[Double] = js.native
   /**
     * <p/>
     */
-  var SegmentsSentCount: js.UndefOr[Double] = js.undefined
+  var SegmentsSentCount: js.UndefOr[Double] = js.native
   /**
     * <p/>
     */
-  var SegmentsSpilloverCount: js.UndefOr[Double] = js.undefined
+  var SegmentsSpilloverCount: js.UndefOr[Double] = js.native
   /**
     * <p/>
     */
-  var Timestamp: Date | String | Double
+  var Timestamp: Date | String | Double = js.native
 }
 
 object TelemetryRecord {
   @scala.inline
-  def apply(
-    Timestamp: Date | String | Double,
-    BackendConnectionErrors: BackendConnectionErrors = null,
-    SegmentsReceivedCount: js.UndefOr[Double] = js.undefined,
-    SegmentsRejectedCount: js.UndefOr[Double] = js.undefined,
-    SegmentsSentCount: js.UndefOr[Double] = js.undefined,
-    SegmentsSpilloverCount: js.UndefOr[Double] = js.undefined
-  ): TelemetryRecord = {
+  def apply(Timestamp: Date | String | Double): TelemetryRecord = {
     val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any])
-    if (BackendConnectionErrors != null) __obj.updateDynamic("BackendConnectionErrors")(BackendConnectionErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentsReceivedCount)) __obj.updateDynamic("SegmentsReceivedCount")(SegmentsReceivedCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentsRejectedCount)) __obj.updateDynamic("SegmentsRejectedCount")(SegmentsRejectedCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentsSentCount)) __obj.updateDynamic("SegmentsSentCount")(SegmentsSentCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentsSpilloverCount)) __obj.updateDynamic("SegmentsSpilloverCount")(SegmentsSpilloverCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TelemetryRecord]
   }
+  @scala.inline
+  implicit class TelemetryRecordOps[Self <: TelemetryRecord] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimestamp(value: Date | String | Double): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBackendConnectionErrors(value: BackendConnectionErrors): Self = this.set("BackendConnectionErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackendConnectionErrors: Self = this.set("BackendConnectionErrors", js.undefined)
+    @scala.inline
+    def setSegmentsReceivedCount(value: Double): Self = this.set("SegmentsReceivedCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentsReceivedCount: Self = this.set("SegmentsReceivedCount", js.undefined)
+    @scala.inline
+    def setSegmentsRejectedCount(value: Double): Self = this.set("SegmentsRejectedCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentsRejectedCount: Self = this.set("SegmentsRejectedCount", js.undefined)
+    @scala.inline
+    def setSegmentsSentCount(value: Double): Self = this.set("SegmentsSentCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentsSentCount: Self = this.set("SegmentsSentCount", js.undefined)
+    @scala.inline
+    def setSegmentsSpilloverCount(value: Double): Self = this.set("SegmentsSpilloverCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentsSpilloverCount: Self = this.set("SegmentsSpilloverCount", js.undefined)
+  }
+  
 }
 

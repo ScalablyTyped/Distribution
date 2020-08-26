@@ -26,16 +26,9 @@ object getOpenIdTokenCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GetOpenIdTokenInput) = this()
-    /* CompleteClass */
-    override val input: GetOpenIdTokenInput = js.native
     val middlewareStack: MiddlewareStack[GetOpenIdTokenInput, GetOpenIdTokenOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: CognitoIdentityResolvedConfiguration
-    ): Handler[GetOpenIdTokenInput, GetOpenIdTokenOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: CognitoIdentityResolvedConfiguration
     ): Handler[GetOpenIdTokenInput, GetOpenIdTokenOutput] = js.native
   }

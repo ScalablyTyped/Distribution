@@ -26,18 +26,38 @@ trait SwapEnvironmentCNAMEsMessage extends js.Object {
 
 object SwapEnvironmentCNAMEsMessage {
   @scala.inline
-  def apply(
-    DestinationEnvironmentId: EnvironmentId = null,
-    DestinationEnvironmentName: EnvironmentName = null,
-    SourceEnvironmentId: EnvironmentId = null,
-    SourceEnvironmentName: EnvironmentName = null
-  ): SwapEnvironmentCNAMEsMessage = {
+  def apply(): SwapEnvironmentCNAMEsMessage = {
     val __obj = js.Dynamic.literal()
-    if (DestinationEnvironmentId != null) __obj.updateDynamic("DestinationEnvironmentId")(DestinationEnvironmentId.asInstanceOf[js.Any])
-    if (DestinationEnvironmentName != null) __obj.updateDynamic("DestinationEnvironmentName")(DestinationEnvironmentName.asInstanceOf[js.Any])
-    if (SourceEnvironmentId != null) __obj.updateDynamic("SourceEnvironmentId")(SourceEnvironmentId.asInstanceOf[js.Any])
-    if (SourceEnvironmentName != null) __obj.updateDynamic("SourceEnvironmentName")(SourceEnvironmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwapEnvironmentCNAMEsMessage]
   }
+  @scala.inline
+  implicit class SwapEnvironmentCNAMEsMessageOps[Self <: SwapEnvironmentCNAMEsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationEnvironmentId(value: EnvironmentId): Self = this.set("DestinationEnvironmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationEnvironmentId: Self = this.set("DestinationEnvironmentId", js.undefined)
+    @scala.inline
+    def setDestinationEnvironmentName(value: EnvironmentName): Self = this.set("DestinationEnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationEnvironmentName: Self = this.set("DestinationEnvironmentName", js.undefined)
+    @scala.inline
+    def setSourceEnvironmentId(value: EnvironmentId): Self = this.set("SourceEnvironmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceEnvironmentId: Self = this.set("SourceEnvironmentId", js.undefined)
+    @scala.inline
+    def setSourceEnvironmentName(value: EnvironmentName): Self = this.set("SourceEnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceEnvironmentName: Self = this.set("SourceEnvironmentName", js.undefined)
+  }
+  
 }
 

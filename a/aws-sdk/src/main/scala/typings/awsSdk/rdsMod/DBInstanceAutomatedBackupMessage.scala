@@ -18,11 +18,32 @@ trait DBInstanceAutomatedBackupMessage extends js.Object {
 
 object DBInstanceAutomatedBackupMessage {
   @scala.inline
-  def apply(DBInstanceAutomatedBackups: DBInstanceAutomatedBackupList = null, Marker: String = null): DBInstanceAutomatedBackupMessage = {
+  def apply(): DBInstanceAutomatedBackupMessage = {
     val __obj = js.Dynamic.literal()
-    if (DBInstanceAutomatedBackups != null) __obj.updateDynamic("DBInstanceAutomatedBackups")(DBInstanceAutomatedBackups.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBInstanceAutomatedBackupMessage]
   }
+  @scala.inline
+  implicit class DBInstanceAutomatedBackupMessageOps[Self <: DBInstanceAutomatedBackupMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBInstanceAutomatedBackupsVarargs(value: DBInstanceAutomatedBackup*): Self = this.set("DBInstanceAutomatedBackups", js.Array(value :_*))
+    @scala.inline
+    def setDBInstanceAutomatedBackups(value: DBInstanceAutomatedBackupList): Self = this.set("DBInstanceAutomatedBackups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceAutomatedBackups: Self = this.set("DBInstanceAutomatedBackups", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

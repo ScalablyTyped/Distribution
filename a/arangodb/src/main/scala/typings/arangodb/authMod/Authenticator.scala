@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait Authenticator extends js.Object {
   def create(password: String): AuthData = js.native
   def verify(): Boolean = js.native
+  def verify(hash: js.UndefOr[scala.Nothing], password: String): Boolean = js.native
   def verify(hash: AuthData): Boolean = js.native
   def verify(hash: AuthData, password: String): Boolean = js.native
 }

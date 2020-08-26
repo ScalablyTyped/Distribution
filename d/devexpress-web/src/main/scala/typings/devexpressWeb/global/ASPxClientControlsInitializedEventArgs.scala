@@ -16,10 +16,5 @@ class ASPxClientControlsInitializedEventArgs protected ()
     * @param isCallback true if a callback is sent to the server during controls initialization; otherwise, false.
     */
   def this(isCallback: Boolean) = this()
-  /**
-    * Gets a value that specifies whether a callback is sent during a controls initialization.
-    */
-  /* CompleteClass */
-  override var isCallback: Boolean = js.native
 }
 

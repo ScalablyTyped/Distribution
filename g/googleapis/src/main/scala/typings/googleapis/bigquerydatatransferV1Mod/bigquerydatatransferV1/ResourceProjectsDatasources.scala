@@ -32,6 +32,7 @@ class ResourceProjectsDatasources protected () extends js.Object {
     */
   def checkValidCreds(): GaxiosPromise[SchemaCheckValidCredsResponse] = js.native
   def checkValidCreds(callback: BodyResponseCallback[SchemaCheckValidCredsResponse]): Unit = js.native
+  def checkValidCreds(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCheckValidCredsResponse] = js.native
   def checkValidCreds(params: ParamsResourceProjectsDatasourcesCheckvalidcreds): GaxiosPromise[SchemaCheckValidCredsResponse] = js.native
   def checkValidCreds(
     params: ParamsResourceProjectsDatasourcesCheckvalidcreds,
@@ -63,6 +64,7 @@ class ResourceProjectsDatasources protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDataSource] = js.native
   def get(callback: BodyResponseCallback[SchemaDataSource]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataSource] = js.native
   def get(params: ParamsResourceProjectsDatasourcesGet): GaxiosPromise[SchemaDataSource] = js.native
   def get(params: ParamsResourceProjectsDatasourcesGet, callback: BodyResponseCallback[SchemaDataSource]): Unit = js.native
   def get(
@@ -93,6 +95,7 @@ class ResourceProjectsDatasources protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListDataSourcesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDataSourcesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDataSourcesResponse] = js.native
   def list(params: ParamsResourceProjectsDatasourcesList): GaxiosPromise[SchemaListDataSourcesResponse] = js.native
   def list(
     params: ParamsResourceProjectsDatasourcesList,

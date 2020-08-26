@@ -18,14 +18,32 @@ trait FacetResult extends js.Object {
 
 object FacetResult {
   @scala.inline
-  def apply(
-    DocumentAttributeKey: DocumentAttributeKey = null,
-    DocumentAttributeValueCountPairs: DocumentAttributeValueCountPairList = null
-  ): FacetResult = {
+  def apply(): FacetResult = {
     val __obj = js.Dynamic.literal()
-    if (DocumentAttributeKey != null) __obj.updateDynamic("DocumentAttributeKey")(DocumentAttributeKey.asInstanceOf[js.Any])
-    if (DocumentAttributeValueCountPairs != null) __obj.updateDynamic("DocumentAttributeValueCountPairs")(DocumentAttributeValueCountPairs.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacetResult]
   }
+  @scala.inline
+  implicit class FacetResultOps[Self <: FacetResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentAttributeKey(value: DocumentAttributeKey): Self = this.set("DocumentAttributeKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentAttributeKey: Self = this.set("DocumentAttributeKey", js.undefined)
+    @scala.inline
+    def setDocumentAttributeValueCountPairsVarargs(value: DocumentAttributeValueCountPair*): Self = this.set("DocumentAttributeValueCountPairs", js.Array(value :_*))
+    @scala.inline
+    def setDocumentAttributeValueCountPairs(value: DocumentAttributeValueCountPairList): Self = this.set("DocumentAttributeValueCountPairs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentAttributeValueCountPairs: Self = this.set("DocumentAttributeValueCountPairs", js.undefined)
+  }
+  
 }
 

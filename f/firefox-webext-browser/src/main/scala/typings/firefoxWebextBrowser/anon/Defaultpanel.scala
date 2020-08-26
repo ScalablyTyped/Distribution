@@ -5,30 +5,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Defaultpanel extends js.Object {
-  var browser_style: js.UndefOr[Boolean] = js.undefined
-  var default_icon: js.UndefOr[IconPath] = js.undefined
-  var default_panel: String
-  var default_title: js.UndefOr[String] = js.undefined
+  var browser_style: js.UndefOr[Boolean] = js.native
+  var default_icon: js.UndefOr[IconPath] = js.native
+  var default_panel: String = js.native
+  var default_title: js.UndefOr[String] = js.native
   /** Whether or not the sidebar is opened at install. Default is `true`. */
-  var open_at_install: js.UndefOr[Boolean] = js.undefined
+  var open_at_install: js.UndefOr[Boolean] = js.native
 }
 
 object Defaultpanel {
   @scala.inline
-  def apply(
-    default_panel: String,
-    browser_style: js.UndefOr[Boolean] = js.undefined,
-    default_icon: IconPath = null,
-    default_title: String = null,
-    open_at_install: js.UndefOr[Boolean] = js.undefined
-  ): Defaultpanel = {
+  def apply(default_panel: String): Defaultpanel = {
     val __obj = js.Dynamic.literal(default_panel = default_panel.asInstanceOf[js.Any])
-    if (!js.isUndefined(browser_style)) __obj.updateDynamic("browser_style")(browser_style.get.asInstanceOf[js.Any])
-    if (default_icon != null) __obj.updateDynamic("default_icon")(default_icon.asInstanceOf[js.Any])
-    if (default_title != null) __obj.updateDynamic("default_title")(default_title.asInstanceOf[js.Any])
-    if (!js.isUndefined(open_at_install)) __obj.updateDynamic("open_at_install")(open_at_install.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Defaultpanel]
   }
+  @scala.inline
+  implicit class DefaultpanelOps[Self <: Defaultpanel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefault_panel(value: String): Self = this.set("default_panel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBrowser_style(value: Boolean): Self = this.set("browser_style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser_style: Self = this.set("browser_style", js.undefined)
+    @scala.inline
+    def setDefault_icon(value: IconPath): Self = this.set("default_icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_icon: Self = this.set("default_icon", js.undefined)
+    @scala.inline
+    def setDefault_title(value: String): Self = this.set("default_title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_title: Self = this.set("default_title", js.undefined)
+    @scala.inline
+    def setOpen_at_install(value: Boolean): Self = this.set("open_at_install", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen_at_install: Self = this.set("open_at_install", js.undefined)
+  }
+  
 }
 

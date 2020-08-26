@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PresenceCallbacks extends js.Object {
   def get(): Unit = js.native
+  def get(paramsOrCallback: js.UndefOr[scala.Nothing], callback: paginatedResultCallback[PresenceMessage]): Unit = js.native
   def get(paramsOrCallback: RestPresenceParams): Unit = js.native
   def get(paramsOrCallback: RestPresenceParams, callback: paginatedResultCallback[PresenceMessage]): Unit = js.native
   def get(paramsOrCallback: paginatedResultCallback[PresenceMessage]): Unit = js.native

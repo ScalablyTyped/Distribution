@@ -44,22 +44,48 @@ trait SchemaDevice extends js.Object {
 
 object SchemaDevice {
   @scala.inline
-  def apply(
-    claims: js.Array[SchemaDeviceClaim] = null,
-    configuration: String = null,
-    deviceId: String = null,
-    deviceIdentifier: SchemaDeviceIdentifier = null,
-    deviceMetadata: SchemaDeviceMetadata = null,
-    name: String = null
-  ): SchemaDevice = {
+  def apply(): SchemaDevice = {
     val __obj = js.Dynamic.literal()
-    if (claims != null) __obj.updateDynamic("claims")(claims.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier.asInstanceOf[js.Any])
-    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDevice]
   }
+  @scala.inline
+  implicit class SchemaDeviceOps[Self <: SchemaDevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClaimsVarargs(value: SchemaDeviceClaim*): Self = this.set("claims", js.Array(value :_*))
+    @scala.inline
+    def setClaims(value: js.Array[SchemaDeviceClaim]): Self = this.set("claims", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaims: Self = this.set("claims", js.undefined)
+    @scala.inline
+    def setConfiguration(value: String): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    @scala.inline
+    def setDeviceIdentifier(value: SchemaDeviceIdentifier): Self = this.set("deviceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceIdentifier: Self = this.set("deviceIdentifier", js.undefined)
+    @scala.inline
+    def setDeviceMetadata(value: SchemaDeviceMetadata): Self = this.set("deviceMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceMetadata: Self = this.set("deviceMetadata", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

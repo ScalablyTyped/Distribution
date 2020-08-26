@@ -40,69 +40,125 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ojLegendItemSettableProperties extends JetSettableProperties {
-  var borderColor: js.UndefOr[String] = js.undefined
-  var categories: js.UndefOr[js.Array[String]] = js.undefined
-  var categoryVisibility: js.UndefOr[hidden | visible] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var drilling: js.UndefOr[on | off | inherit] = js.undefined
-  var lineStyle: js.UndefOr[dotted | dashed | solid] = js.undefined
-  var lineWidth: js.UndefOr[Double] = js.undefined
-  var markerColor: js.UndefOr[String] = js.undefined
-  var markerShape: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
-  var markerSvgClassName: js.UndefOr[String] = js.undefined
-  var markerSvgStyle: js.UndefOr[js.Object] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categoryVisibility: js.UndefOr[hidden | visible] = js.native
+  var color: js.UndefOr[String] = js.native
+  var drilling: js.UndefOr[on | off | inherit] = js.native
+  var lineStyle: js.UndefOr[dotted | dashed | solid] = js.native
+  var lineWidth: js.UndefOr[Double] = js.native
+  var markerColor: js.UndefOr[String] = js.native
+  var markerShape: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String = js.native
+  var markerSvgClassName: js.UndefOr[String] = js.native
+  var markerSvgStyle: js.UndefOr[js.Object] = js.native
   var pattern: js.UndefOr[
     smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
-  ] = js.undefined
-  var shortDesc: js.UndefOr[String] = js.undefined
-  var source: js.UndefOr[String] = js.undefined
-  var svgClassName: js.UndefOr[String] = js.undefined
-  var svgStyle: js.UndefOr[js.Object] = js.undefined
-  var symbolType: js.UndefOr[line | lineWithMarker | image | marker] = js.undefined
-  var text: String
+  ] = js.native
+  var shortDesc: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.native
+  var svgClassName: js.UndefOr[String] = js.native
+  var svgStyle: js.UndefOr[js.Object] = js.native
+  var symbolType: js.UndefOr[line | lineWithMarker | image | marker] = js.native
+  var text: String = js.native
 }
 
 object ojLegendItemSettableProperties {
   @scala.inline
   def apply(
     markerShape: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String,
-    text: String,
-    borderColor: String = null,
-    categories: js.Array[String] = null,
-    categoryVisibility: hidden | visible = null,
-    color: String = null,
-    drilling: on | off | inherit = null,
-    lineStyle: dotted | dashed | solid = null,
-    lineWidth: js.UndefOr[Double] = js.undefined,
-    markerColor: String = null,
-    markerSvgClassName: String = null,
-    markerSvgStyle: js.Object = null,
-    pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none = null,
-    shortDesc: String = null,
-    source: String = null,
-    svgClassName: String = null,
-    svgStyle: js.Object = null,
-    symbolType: line | lineWithMarker | image | marker = null
+    text: String
   ): ojLegendItemSettableProperties = {
     val __obj = js.Dynamic.literal(markerShape = markerShape.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (categoryVisibility != null) __obj.updateDynamic("categoryVisibility")(categoryVisibility.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
-    if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor.asInstanceOf[js.Any])
-    if (markerSvgClassName != null) __obj.updateDynamic("markerSvgClassName")(markerSvgClassName.asInstanceOf[js.Any])
-    if (markerSvgStyle != null) __obj.updateDynamic("markerSvgStyle")(markerSvgStyle.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojLegendItemSettableProperties]
   }
+  @scala.inline
+  implicit class ojLegendItemSettablePropertiesOps[Self <: ojLegendItemSettableProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarkerShape(
+      value: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
+    ): Self = this.set("markerShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    @scala.inline
+    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategories: Self = this.set("categories", js.undefined)
+    @scala.inline
+    def setCategoryVisibility(value: hidden | visible): Self = this.set("categoryVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryVisibility: Self = this.set("categoryVisibility", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDrilling(value: on | off | inherit): Self = this.set("drilling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrilling: Self = this.set("drilling", js.undefined)
+    @scala.inline
+    def setLineStyle(value: dotted | dashed | solid): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    @scala.inline
+    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    @scala.inline
+    def setMarkerColor(value: String): Self = this.set("markerColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerColor: Self = this.set("markerColor", js.undefined)
+    @scala.inline
+    def setMarkerSvgClassName(value: String): Self = this.set("markerSvgClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerSvgClassName: Self = this.set("markerSvgClassName", js.undefined)
+    @scala.inline
+    def setMarkerSvgStyle(value: js.Object): Self = this.set("markerSvgStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerSvgStyle: Self = this.set("markerSvgStyle", js.undefined)
+    @scala.inline
+    def setPattern(
+      value: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
+    ): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setShortDesc(value: String): Self = this.set("shortDesc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortDesc: Self = this.set("shortDesc", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgClassName: Self = this.set("svgClassName", js.undefined)
+    @scala.inline
+    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgStyle: Self = this.set("svgStyle", js.undefined)
+    @scala.inline
+    def setSymbolType(value: line | lineWithMarker | image | marker): Self = this.set("symbolType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolType: Self = this.set("symbolType", js.undefined)
+  }
+  
 }
 

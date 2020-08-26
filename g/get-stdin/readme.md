@@ -1,7 +1,7 @@
 
 # Scala.js typings for get-stdin
 
-Typings are for version 7.0.0
+Typings are for version 8.0.0
 
 ## Library description:
 Get stdin as a string or buffer
@@ -11,8 +11,8 @@ Get stdin as a string or buffer
 | Full name          | get-stdin |
 | Keywords           | std, stdin, stdio, concat, buffer, stream, process, read |
 | # releases         | 3 |
-| # dependents       | 746 |
-| # downloads        | 473880910 |
+| # dependents       | 750 |
+| # downloads        | 489533463 |
 | # stars            | 8 |
 
 ## Links

@@ -46,6 +46,14 @@ class MapField protected ()
     id: Double,
     keyType: String,
     `type`: String,
+    options: js.UndefOr[scala.Nothing],
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    keyType: String,
+    `type`: String,
     options: StringDictionary[js.Any],
     comment: String
   ) = this()

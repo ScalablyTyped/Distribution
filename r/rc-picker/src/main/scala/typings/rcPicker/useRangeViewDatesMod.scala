@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/hooks/useRangeViewDates", JSImport.Namespace)
+@JSImport("rc-picker/es/hooks/useRangeViewDates", JSImport.Namespace)
 @js.native
 object useRangeViewDatesMod extends js.Object {
   def default[DateType](hasValuesPickerDefaultDatesGenerateConfig: DefaultDates[DateType]): js.Tuple2[

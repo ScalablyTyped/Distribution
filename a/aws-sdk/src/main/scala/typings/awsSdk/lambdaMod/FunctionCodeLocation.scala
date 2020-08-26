@@ -18,11 +18,30 @@ trait FunctionCodeLocation extends js.Object {
 
 object FunctionCodeLocation {
   @scala.inline
-  def apply(Location: String = null, RepositoryType: String = null): FunctionCodeLocation = {
+  def apply(): FunctionCodeLocation = {
     val __obj = js.Dynamic.literal()
-    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
-    if (RepositoryType != null) __obj.updateDynamic("RepositoryType")(RepositoryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionCodeLocation]
   }
+  @scala.inline
+  implicit class FunctionCodeLocationOps[Self <: FunctionCodeLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocation(value: String): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("Location", js.undefined)
+    @scala.inline
+    def setRepositoryType(value: String): Self = this.set("RepositoryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryType: Self = this.set("RepositoryType", js.undefined)
+  }
+  
 }
 

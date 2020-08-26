@@ -4,23 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined office-js-preview.Office.AsyncContextOptions & {  isRest ? :boolean} */
+/* Inlined office-js-preview.Office.AsyncContextOptions & {  isRest :boolean | undefined} */
+@js.native
 trait AsyncContextOptionsisRest extends js.Object {
   /**
     * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object
     * that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.undefined
-  var isRest: js.UndefOr[Boolean] = js.undefined
+  var asyncContext: js.UndefOr[js.Any] = js.native
+  var isRest: js.UndefOr[Boolean] = js.native
 }
 
 object AsyncContextOptionsisRest {
   @scala.inline
-  def apply(asyncContext: js.Any = null, isRest: js.UndefOr[Boolean] = js.undefined): AsyncContextOptionsisRest = {
+  def apply(): AsyncContextOptionsisRest = {
     val __obj = js.Dynamic.literal()
-    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRest)) __obj.updateDynamic("isRest")(isRest.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncContextOptionsisRest]
   }
+  @scala.inline
+  implicit class AsyncContextOptionsisRestOps[Self <: AsyncContextOptionsisRest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsyncContext(value: js.Any): Self = this.set("asyncContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsyncContext: Self = this.set("asyncContext", js.undefined)
+    @scala.inline
+    def setIsRest(value: Boolean): Self = this.set("isRest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRest: Self = this.set("isRest", js.undefined)
+  }
+  
 }
 

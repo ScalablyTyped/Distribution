@@ -5,24 +5,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@uifabric/styling.@uifabric/styling/lib/interfaces/ISpacing.ISpacing> */
+@js.native
 trait PartialISpacing extends js.Object {
-  var l1: js.UndefOr[String] = js.undefined
-  var l2: js.UndefOr[String] = js.undefined
-  var m: js.UndefOr[String] = js.undefined
-  var s1: js.UndefOr[String] = js.undefined
-  var s2: js.UndefOr[String] = js.undefined
+  var l1: js.UndefOr[String] = js.native
+  var l2: js.UndefOr[String] = js.native
+  var m: js.UndefOr[String] = js.native
+  var s1: js.UndefOr[String] = js.native
+  var s2: js.UndefOr[String] = js.native
 }
 
 object PartialISpacing {
   @scala.inline
-  def apply(l1: String = null, l2: String = null, m: String = null, s1: String = null, s2: String = null): PartialISpacing = {
+  def apply(): PartialISpacing = {
     val __obj = js.Dynamic.literal()
-    if (l1 != null) __obj.updateDynamic("l1")(l1.asInstanceOf[js.Any])
-    if (l2 != null) __obj.updateDynamic("l2")(l2.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (s1 != null) __obj.updateDynamic("s1")(s1.asInstanceOf[js.Any])
-    if (s2 != null) __obj.updateDynamic("s2")(s2.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialISpacing]
   }
+  @scala.inline
+  implicit class PartialISpacingOps[Self <: PartialISpacing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setL1(value: String): Self = this.set("l1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteL1: Self = this.set("l1", js.undefined)
+    @scala.inline
+    def setL2(value: String): Self = this.set("l2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteL2: Self = this.set("l2", js.undefined)
+    @scala.inline
+    def setM(value: String): Self = this.set("m", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteM: Self = this.set("m", js.undefined)
+    @scala.inline
+    def setS1(value: String): Self = this.set("s1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS1: Self = this.set("s1", js.undefined)
+    @scala.inline
+    def setS2(value: String): Self = this.set("s2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS2: Self = this.set("s2", js.undefined)
+  }
+  
 }
 

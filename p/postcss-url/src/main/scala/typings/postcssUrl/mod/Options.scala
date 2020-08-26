@@ -11,29 +11,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * The assets files will be copied in that destination.
     *
     * @default false
     */
-  var assetsPath: js.UndefOr[Boolean | String] = js.undefined
+  var assetsPath: js.UndefOr[Boolean | String] = js.native
   /**
     * Specify the base path or list of base paths where to search images from.
     */
-  var basePath: js.UndefOr[String | js.Array[String]] = js.undefined
+  var basePath: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * The fallback method to use if the maximum size is exceeded or the URL contains a hash.
     */
-  var fallback: js.UndefOr[CustomTransformFunction] = js.undefined
+  var fallback: js.UndefOr[CustomTransformFunction] = js.native
   /**
     * Determine wether a file should be inlined.
     */
-  var filter: js.UndefOr[RegExp | CustomFilterFunction | String] = js.undefined
+  var filter: js.UndefOr[RegExp | CustomFilterFunction | String] = js.native
   /**
     * Hash options
     */
-  var hashOptions: js.UndefOr[Append] = js.undefined
+  var hashOptions: js.UndefOr[Append] = js.native
   /**
     * Do not warn when an SVG URL with a fragment is inlined.
     * PostCSS-URL does not support partial inlining.
@@ -42,65 +43,105 @@ trait Options extends js.Object {
     *
     * @default false
     */
-  var ignoreFragmentWarning: js.UndefOr[Boolean] = js.undefined
+  var ignoreFragmentWarning: js.UndefOr[Boolean] = js.native
   /**
     * Specifies whether the URL's fragment identifer value, if present, will be added to the inlined data URI.
     *
     * @default false
     */
-  var includeUriFragment: js.UndefOr[Boolean] = js.undefined
+  var includeUriFragment: js.UndefOr[Boolean] = js.native
   /**
     * Specify the maximum file size to inline (in kilobytes).
     */
-  var maxSize: js.UndefOr[Double] = js.undefined
+  var maxSize: js.UndefOr[Double] = js.native
   /**
     * Reduce size of inlined svg (IE9+, Android 3+)
     *
     * @default false
     */
-  var optimizeSvgEncode: js.UndefOr[Boolean] = js.undefined
+  var optimizeSvgEncode: js.UndefOr[Boolean] = js.native
   /**
     * URL rewriting mechanism.
     *
     * @default 'rebase'
     */
-  var url: js.UndefOr[copy | `inline` | rebase | CustomTransformFunction] = js.undefined
+  var url: js.UndefOr[copy | `inline` | rebase | CustomTransformFunction] = js.native
   /**
     * Rename the path of the files by a hash name.
     *
     * @default false
     */
-  var useHash: js.UndefOr[Boolean] = js.undefined
+  var useHash: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    assetsPath: Boolean | String = null,
-    basePath: String | js.Array[String] = null,
-    fallback: (/* asset */ AbsolutePath, /* dir */ File) => String = null,
-    filter: RegExp | CustomFilterFunction | String = null,
-    hashOptions: Append = null,
-    ignoreFragmentWarning: js.UndefOr[Boolean] = js.undefined,
-    includeUriFragment: js.UndefOr[Boolean] = js.undefined,
-    maxSize: js.UndefOr[Double] = js.undefined,
-    optimizeSvgEncode: js.UndefOr[Boolean] = js.undefined,
-    url: copy | `inline` | rebase | CustomTransformFunction = null,
-    useHash: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (assetsPath != null) __obj.updateDynamic("assetsPath")(assetsPath.asInstanceOf[js.Any])
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (fallback != null) __obj.updateDynamic("fallback")(js.Any.fromFunction2(fallback))
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (hashOptions != null) __obj.updateDynamic("hashOptions")(hashOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreFragmentWarning)) __obj.updateDynamic("ignoreFragmentWarning")(ignoreFragmentWarning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeUriFragment)) __obj.updateDynamic("includeUriFragment")(includeUriFragment.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimizeSvgEncode)) __obj.updateDynamic("optimizeSvgEncode")(optimizeSvgEncode.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetsPath(value: Boolean | String): Self = this.set("assetsPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetsPath: Self = this.set("assetsPath", js.undefined)
+    @scala.inline
+    def setBasePathVarargs(value: String*): Self = this.set("basePath", js.Array(value :_*))
+    @scala.inline
+    def setBasePath(value: String | js.Array[String]): Self = this.set("basePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasePath: Self = this.set("basePath", js.undefined)
+    @scala.inline
+    def setFallback(value: (/* asset */ AbsolutePath, /* dir */ File) => String): Self = this.set("fallback", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFallback: Self = this.set("fallback", js.undefined)
+    @scala.inline
+    def setFilterFunction1(value: /* file */ String => Boolean): Self = this.set("filter", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFilter(value: RegExp | CustomFilterFunction | String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setHashOptions(value: Append): Self = this.set("hashOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashOptions: Self = this.set("hashOptions", js.undefined)
+    @scala.inline
+    def setIgnoreFragmentWarning(value: Boolean): Self = this.set("ignoreFragmentWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreFragmentWarning: Self = this.set("ignoreFragmentWarning", js.undefined)
+    @scala.inline
+    def setIncludeUriFragment(value: Boolean): Self = this.set("includeUriFragment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeUriFragment: Self = this.set("includeUriFragment", js.undefined)
+    @scala.inline
+    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    @scala.inline
+    def setOptimizeSvgEncode(value: Boolean): Self = this.set("optimizeSvgEncode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptimizeSvgEncode: Self = this.set("optimizeSvgEncode", js.undefined)
+    @scala.inline
+    def setUrlFunction2(value: (/* asset */ AbsolutePath, /* dir */ File) => String): Self = this.set("url", js.Any.fromFunction2(value))
+    @scala.inline
+    def setUrl(value: copy | `inline` | rebase | CustomTransformFunction): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUseHash(value: Boolean): Self = this.set("useHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseHash: Self = this.set("useHash", js.undefined)
+  }
+  
 }
 

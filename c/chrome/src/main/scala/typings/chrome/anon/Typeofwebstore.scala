@@ -18,6 +18,11 @@ trait Typeofwebstore extends js.Object {
     failureCallback: js.Function2[/* error */ String, /* errorCode */ js.UndefOr[String], Unit]
   ): Unit = js.native
   def install(url: String): Unit = js.native
+  def install(
+    url: String,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function2[/* error */ String, /* errorCode */ js.UndefOr[String], Unit]
+  ): Unit = js.native
   def install(url: String, successCallback: js.Function): Unit = js.native
   def install(
     url: String,

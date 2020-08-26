@@ -25,9 +25,9 @@ trait CachesIscsiVolumeArgs extends js.Object {
     */
   val sourceVolumeArn: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
     */
@@ -44,16 +44,43 @@ object CachesIscsiVolumeArgs {
     gatewayArn: Input[String],
     networkInterfaceId: Input[String],
     targetName: Input[String],
-    volumeSizeInBytes: Input[Double],
-    snapshotId: Input[String] = null,
-    sourceVolumeArn: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
+    volumeSizeInBytes: Input[Double]
   ): CachesIscsiVolumeArgs = {
     val __obj = js.Dynamic.literal(gatewayArn = gatewayArn.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any], targetName = targetName.asInstanceOf[js.Any], volumeSizeInBytes = volumeSizeInBytes.asInstanceOf[js.Any])
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
-    if (sourceVolumeArn != null) __obj.updateDynamic("sourceVolumeArn")(sourceVolumeArn.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachesIscsiVolumeArgs]
   }
+  @scala.inline
+  implicit class CachesIscsiVolumeArgsOps[Self <: CachesIscsiVolumeArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayArn(value: Input[String]): Self = this.set("gatewayArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNetworkInterfaceId(value: Input[String]): Self = this.set("networkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetName(value: Input[String]): Self = this.set("targetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVolumeSizeInBytes(value: Input[Double]): Self = this.set("volumeSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnapshotId(value: Input[String]): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotId: Self = this.set("snapshotId", js.undefined)
+    @scala.inline
+    def setSourceVolumeArn(value: Input[String]): Self = this.set("sourceVolumeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceVolumeArn: Self = this.set("sourceVolumeArn", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

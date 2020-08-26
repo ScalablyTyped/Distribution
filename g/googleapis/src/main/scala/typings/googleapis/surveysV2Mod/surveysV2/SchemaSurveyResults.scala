@@ -21,11 +21,30 @@ trait SchemaSurveyResults extends js.Object {
 
 object SchemaSurveyResults {
   @scala.inline
-  def apply(status: String = null, surveyUrlId: String = null): SchemaSurveyResults = {
+  def apply(): SchemaSurveyResults = {
     val __obj = js.Dynamic.literal()
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (surveyUrlId != null) __obj.updateDynamic("surveyUrlId")(surveyUrlId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSurveyResults]
   }
+  @scala.inline
+  implicit class SchemaSurveyResultsOps[Self <: SchemaSurveyResults] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSurveyUrlId(value: String): Self = this.set("surveyUrlId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSurveyUrlId: Self = this.set("surveyUrlId", js.undefined)
+  }
+  
 }
 

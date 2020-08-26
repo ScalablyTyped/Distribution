@@ -20,8 +20,62 @@ trait Formatter extends js.Object {
   def postFormat(): Formatter = js.native
   def preCalculateMinTotalWidth(voices: js.Array[Voice]): Double = js.native
   def preFormat(): Unit = js.native
+  def preFormat(
+    justifyWidth: js.UndefOr[scala.Nothing],
+    rendering_context: js.UndefOr[scala.Nothing],
+    voices: js.UndefOr[scala.Nothing],
+    stave: Stave
+  ): Unit = js.native
+  def preFormat(
+    justifyWidth: js.UndefOr[scala.Nothing],
+    rendering_context: js.UndefOr[scala.Nothing],
+    voices: js.Array[Voice]
+  ): Unit = js.native
+  def preFormat(
+    justifyWidth: js.UndefOr[scala.Nothing],
+    rendering_context: js.UndefOr[scala.Nothing],
+    voices: js.Array[Voice],
+    stave: Stave
+  ): Unit = js.native
+  def preFormat(justifyWidth: js.UndefOr[scala.Nothing], rendering_context: IRenderContext): Unit = js.native
+  def preFormat(
+    justifyWidth: js.UndefOr[scala.Nothing],
+    rendering_context: IRenderContext,
+    voices: js.UndefOr[scala.Nothing],
+    stave: Stave
+  ): Unit = js.native
+  def preFormat(
+    justifyWidth: js.UndefOr[scala.Nothing],
+    rendering_context: IRenderContext,
+    voices: js.Array[Voice]
+  ): Unit = js.native
+  def preFormat(
+    justifyWidth: js.UndefOr[scala.Nothing],
+    rendering_context: IRenderContext,
+    voices: js.Array[Voice],
+    stave: Stave
+  ): Unit = js.native
   def preFormat(justifyWidth: Double): Unit = js.native
+  def preFormat(
+    justifyWidth: Double,
+    rendering_context: js.UndefOr[scala.Nothing],
+    voices: js.UndefOr[scala.Nothing],
+    stave: Stave
+  ): Unit = js.native
+  def preFormat(justifyWidth: Double, rendering_context: js.UndefOr[scala.Nothing], voices: js.Array[Voice]): Unit = js.native
+  def preFormat(
+    justifyWidth: Double,
+    rendering_context: js.UndefOr[scala.Nothing],
+    voices: js.Array[Voice],
+    stave: Stave
+  ): Unit = js.native
   def preFormat(justifyWidth: Double, rendering_context: IRenderContext): Unit = js.native
+  def preFormat(
+    justifyWidth: Double,
+    rendering_context: IRenderContext,
+    voices: js.UndefOr[scala.Nothing],
+    stave: Stave
+  ): Unit = js.native
   def preFormat(justifyWidth: Double, rendering_context: IRenderContext, voices: js.Array[Voice]): Unit = js.native
   def preFormat(justifyWidth: Double, rendering_context: IRenderContext, voices: js.Array[Voice], stave: Stave): Unit = js.native
 }

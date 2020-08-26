@@ -268,12 +268,33 @@ trait View extends Control {
     * @param mSettings optional configuration for preprocessor
     */
   def registerPreprocessor(sType: String, vPreprocessor: String, bSyncSupport: Boolean): Unit = js.native
+  def registerPreprocessor(
+    sType: String,
+    vPreprocessor: String,
+    bSyncSupport: Boolean,
+    bOnDemand: js.UndefOr[scala.Nothing],
+    mSettings: js.Any
+  ): Unit = js.native
   def registerPreprocessor(sType: String, vPreprocessor: String, bSyncSupport: Boolean, bOnDemand: Boolean): Unit = js.native
   def registerPreprocessor(sType: String, vPreprocessor: String, bSyncSupport: Boolean, bOnDemand: Boolean, mSettings: js.Any): Unit = js.native
   def registerPreprocessor(sType: String, vPreprocessor: js.Any, bSyncSupport: Boolean): Unit = js.native
+  def registerPreprocessor(
+    sType: String,
+    vPreprocessor: js.Any,
+    bSyncSupport: Boolean,
+    bOnDemand: js.UndefOr[scala.Nothing],
+    mSettings: js.Any
+  ): Unit = js.native
   def registerPreprocessor(sType: String, vPreprocessor: js.Any, bSyncSupport: Boolean, bOnDemand: Boolean): Unit = js.native
   def registerPreprocessor(sType: String, vPreprocessor: js.Any, bSyncSupport: Boolean, bOnDemand: Boolean, mSettings: js.Any): Unit = js.native
   def registerPreprocessor(sType: PreprocessorType, vPreprocessor: String, bSyncSupport: Boolean): Unit = js.native
+  def registerPreprocessor(
+    sType: PreprocessorType,
+    vPreprocessor: String,
+    bSyncSupport: Boolean,
+    bOnDemand: js.UndefOr[scala.Nothing],
+    mSettings: js.Any
+  ): Unit = js.native
   def registerPreprocessor(sType: PreprocessorType, vPreprocessor: String, bSyncSupport: Boolean, bOnDemand: Boolean): Unit = js.native
   def registerPreprocessor(
     sType: PreprocessorType,
@@ -283,6 +304,13 @@ trait View extends Control {
     mSettings: js.Any
   ): Unit = js.native
   def registerPreprocessor(sType: PreprocessorType, vPreprocessor: js.Any, bSyncSupport: Boolean): Unit = js.native
+  def registerPreprocessor(
+    sType: PreprocessorType,
+    vPreprocessor: js.Any,
+    bSyncSupport: Boolean,
+    bOnDemand: js.UndefOr[scala.Nothing],
+    mSettings: js.Any
+  ): Unit = js.native
   def registerPreprocessor(sType: PreprocessorType, vPreprocessor: js.Any, bSyncSupport: Boolean, bOnDemand: Boolean): Unit = js.native
   def registerPreprocessor(
     sType: PreprocessorType,

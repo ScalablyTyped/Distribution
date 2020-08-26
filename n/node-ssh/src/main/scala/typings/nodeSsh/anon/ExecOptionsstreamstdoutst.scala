@@ -8,34 +8,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined node-ssh.node-ssh.ExecOptions & {  stream ? :'stdout' | 'stderr'} */
+/* Inlined node-ssh.node-ssh.ExecOptions & {  stream :'stdout' | 'stderr' | undefined} */
+@js.native
 trait ExecOptionsstreamstdoutst extends js.Object {
-  var cwd: js.UndefOr[String] = js.undefined
-  var onStderr: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.undefined
-  var onStdout: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.undefined
-  var options: js.UndefOr[ExecOptions] = js.undefined
-  var stdin: js.UndefOr[String] = js.undefined
-  var stream: js.UndefOr[stdout | stderr] = js.undefined
+  var cwd: js.UndefOr[String] = js.native
+  var onStderr: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.native
+  var onStdout: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.native
+  var options: js.UndefOr[ExecOptions] = js.native
+  var stdin: js.UndefOr[String] = js.native
+  var stream: js.UndefOr[stdout | stderr] = js.native
 }
 
 object ExecOptionsstreamstdoutst {
   @scala.inline
-  def apply(
-    cwd: String = null,
-    onStderr: /* chunk */ Buffer => Unit = null,
-    onStdout: /* chunk */ Buffer => Unit = null,
-    options: ExecOptions = null,
-    stdin: String = null,
-    stream: stdout | stderr = null
-  ): ExecOptionsstreamstdoutst = {
+  def apply(): ExecOptionsstreamstdoutst = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (onStderr != null) __obj.updateDynamic("onStderr")(js.Any.fromFunction1(onStderr))
-    if (onStdout != null) __obj.updateDynamic("onStdout")(js.Any.fromFunction1(onStdout))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (stdin != null) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecOptionsstreamstdoutst]
   }
+  @scala.inline
+  implicit class ExecOptionsstreamstdoutstOps[Self <: ExecOptionsstreamstdoutst] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCwd: Self = this.set("cwd", js.undefined)
+    @scala.inline
+    def setOnStderr(value: /* chunk */ Buffer => Unit): Self = this.set("onStderr", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStderr: Self = this.set("onStderr", js.undefined)
+    @scala.inline
+    def setOnStdout(value: /* chunk */ Buffer => Unit): Self = this.set("onStdout", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStdout: Self = this.set("onStdout", js.undefined)
+    @scala.inline
+    def setOptions(value: ExecOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setStdin(value: String): Self = this.set("stdin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdin: Self = this.set("stdin", js.undefined)
+    @scala.inline
+    def setStream(value: stdout | stderr): Self = this.set("stream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStream: Self = this.set("stream", js.undefined)
+  }
+  
 }
 

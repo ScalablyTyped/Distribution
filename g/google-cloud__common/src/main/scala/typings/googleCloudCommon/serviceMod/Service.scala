@@ -1,6 +1,7 @@
 package typings.googleCloudCommon.serviceMod
 
 import typings.googleAuthLibrary.mod.GoogleAuth
+import typings.googleCloudCommon.serviceObjectMod.Interceptor
 import typings.googleCloudCommon.utilMod.Abortable
 import typings.googleCloudCommon.utilMod.BodyResponseCallback
 import typings.googleCloudCommon.utilMod.DecorateRequestOptions
@@ -8,7 +9,6 @@ import typings.googleCloudCommon.utilMod.Duplexify
 import typings.googleCloudCommon.utilMod.MakeAuthenticatedRequest
 import typings.googleCloudCommon.utilMod.MakeAuthenticatedRequestOptions
 import typings.std.Error
-import typings.std.PromiseConstructor
 import typings.teenyRequest.mod.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,18 +34,18 @@ class Service protected () extends js.Object {
     */
   def this(config: ServiceConfig) = this()
   def this(config: ServiceConfig, options: ServiceOptions) = this()
-  var Promise: PromiseConstructor = js.native
   val apiEndpoint: String = js.native
   var authClient: GoogleAuth = js.native
   var baseUrl: String = js.native
   var getCredentials: js.Any = js.native
   var globalInterceptors: js.Any = js.native
-  var interceptors: js.Any = js.native
+  var interceptors: js.Array[Interceptor] = js.native
   @JSName("makeAuthenticatedRequest")
   var makeAuthenticatedRequest_Original: MakeAuthenticatedRequest = js.native
   var packageJson: js.Any = js.native
   var projectId: String = js.native
   var projectIdRequired: js.Any = js.native
+  var providedUserAgent: js.UndefOr[String] = js.native
   /**
     * Make an authenticated API request.
     *
@@ -65,6 +65,10 @@ class Service protected () extends js.Object {
   def getProjectId(): js.Promise[String] = js.native
   def getProjectId(callback: js.Function2[/* err */ Error | Null, /* projectId */ js.UndefOr[String], Unit]): Unit = js.native
   /* protected */ def getProjectIdAsync(): js.Promise[String] = js.native
+  /**
+    * Return the user's custom request interceptors.
+    */
+  def getRequestInterceptors(): js.Array[js.Function] = js.native
   def makeAuthenticatedRequest(reqOpts: DecorateRequestOptions): Duplexify = js.native
   def makeAuthenticatedRequest(reqOpts: DecorateRequestOptions, callback: BodyResponseCallback): Unit | Abortable = js.native
   def makeAuthenticatedRequest(reqOpts: DecorateRequestOptions, options: MakeAuthenticatedRequestOptions): Unit | Abortable = js.native

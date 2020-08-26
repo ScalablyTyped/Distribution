@@ -4,63 +4,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZoomSettings extends js.Object {
   /** Specifies animation duration for map shapes while zooming.
     * @Default {600}
     */
-  var animationDuration: js.UndefOr[String] = js.undefined
+  var animationDuration: js.UndefOr[String] = js.native
   /** Enables or Disables the zoom on mouse wheel the map.
     * @Default {true}
     */
-  var enableMouseWheelZoom: js.UndefOr[Boolean] = js.undefined
+  var enableMouseWheelZoom: js.UndefOr[Boolean] = js.native
   /** Enables or Disables the zooming of map
     * @Default {true}
     */
-  var enableZoom: js.UndefOr[Boolean] = js.undefined
+  var enableZoom: js.UndefOr[Boolean] = js.native
   /** Enables or Disables the zoom on selecting the map shape
     * @Default {false}
     */
-  var enableZoomOnSelection: js.UndefOr[Boolean] = js.undefined
+  var enableZoomOnSelection: js.UndefOr[Boolean] = js.native
   /** Specifies the zoom factor for map zoom value.
     * @Default {1}
     */
-  var factor: js.UndefOr[Double] = js.undefined
+  var factor: js.UndefOr[Double] = js.native
   /** Specifies the zoom level value for which map to be zoomed
     * @Default {1}
     */
-  var level: js.UndefOr[Double] = js.undefined
+  var level: js.UndefOr[Double] = js.native
   /** Specifies the maximum zoom level of the map
     * @Default {100}
     */
-  var maxValue: js.UndefOr[Double] = js.undefined
+  var maxValue: js.UndefOr[Double] = js.native
   /** Specifies the minimum zoomSettings level of the map
     * @Default {1}
     */
-  var minValue: js.UndefOr[Double] = js.undefined
+  var minValue: js.UndefOr[Double] = js.native
 }
 
 object ZoomSettings {
   @scala.inline
-  def apply(
-    animationDuration: String = null,
-    enableMouseWheelZoom: js.UndefOr[Boolean] = js.undefined,
-    enableZoom: js.UndefOr[Boolean] = js.undefined,
-    enableZoomOnSelection: js.UndefOr[Boolean] = js.undefined,
-    factor: js.UndefOr[Double] = js.undefined,
-    level: js.UndefOr[Double] = js.undefined,
-    maxValue: js.UndefOr[Double] = js.undefined,
-    minValue: js.UndefOr[Double] = js.undefined
-  ): ZoomSettings = {
+  def apply(): ZoomSettings = {
     val __obj = js.Dynamic.literal()
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMouseWheelZoom)) __obj.updateDynamic("enableMouseWheelZoom")(enableMouseWheelZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableZoom)) __obj.updateDynamic("enableZoom")(enableZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableZoomOnSelection)) __obj.updateDynamic("enableZoomOnSelection")(enableZoomOnSelection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomSettings]
   }
+  @scala.inline
+  implicit class ZoomSettingsOps[Self <: ZoomSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimationDuration(value: String): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setEnableMouseWheelZoom(value: Boolean): Self = this.set("enableMouseWheelZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableMouseWheelZoom: Self = this.set("enableMouseWheelZoom", js.undefined)
+    @scala.inline
+    def setEnableZoom(value: Boolean): Self = this.set("enableZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableZoom: Self = this.set("enableZoom", js.undefined)
+    @scala.inline
+    def setEnableZoomOnSelection(value: Boolean): Self = this.set("enableZoomOnSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableZoomOnSelection: Self = this.set("enableZoomOnSelection", js.undefined)
+    @scala.inline
+    def setFactor(value: Double): Self = this.set("factor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFactor: Self = this.set("factor", js.undefined)
+    @scala.inline
+    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+  }
+  
 }
 

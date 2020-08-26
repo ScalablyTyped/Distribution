@@ -50,30 +50,62 @@ trait DetectorModelConfiguration extends js.Object {
 
 object DetectorModelConfiguration {
   @scala.inline
-  def apply(
-    creationTime: Timestamp = null,
-    detectorModelArn: DetectorModelArn = null,
-    detectorModelDescription: DetectorModelDescription = null,
-    detectorModelName: DetectorModelName = null,
-    detectorModelVersion: DetectorModelVersion = null,
-    evaluationMethod: EvaluationMethod = null,
-    key: AttributeJsonPath = null,
-    lastUpdateTime: Timestamp = null,
-    roleArn: AmazonResourceName = null,
-    status: DetectorModelVersionStatus = null
-  ): DetectorModelConfiguration = {
+  def apply(): DetectorModelConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (detectorModelArn != null) __obj.updateDynamic("detectorModelArn")(detectorModelArn.asInstanceOf[js.Any])
-    if (detectorModelDescription != null) __obj.updateDynamic("detectorModelDescription")(detectorModelDescription.asInstanceOf[js.Any])
-    if (detectorModelName != null) __obj.updateDynamic("detectorModelName")(detectorModelName.asInstanceOf[js.Any])
-    if (detectorModelVersion != null) __obj.updateDynamic("detectorModelVersion")(detectorModelVersion.asInstanceOf[js.Any])
-    if (evaluationMethod != null) __obj.updateDynamic("evaluationMethod")(evaluationMethod.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectorModelConfiguration]
   }
+  @scala.inline
+  implicit class DetectorModelConfigurationOps[Self <: DetectorModelConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDetectorModelArn(value: DetectorModelArn): Self = this.set("detectorModelArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorModelArn: Self = this.set("detectorModelArn", js.undefined)
+    @scala.inline
+    def setDetectorModelDescription(value: DetectorModelDescription): Self = this.set("detectorModelDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorModelDescription: Self = this.set("detectorModelDescription", js.undefined)
+    @scala.inline
+    def setDetectorModelName(value: DetectorModelName): Self = this.set("detectorModelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorModelName: Self = this.set("detectorModelName", js.undefined)
+    @scala.inline
+    def setDetectorModelVersion(value: DetectorModelVersion): Self = this.set("detectorModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorModelVersion: Self = this.set("detectorModelVersion", js.undefined)
+    @scala.inline
+    def setEvaluationMethod(value: EvaluationMethod): Self = this.set("evaluationMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationMethod: Self = this.set("evaluationMethod", js.undefined)
+    @scala.inline
+    def setKey(value: AttributeJsonPath): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    @scala.inline
+    def setRoleArn(value: AmazonResourceName): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    @scala.inline
+    def setStatus(value: DetectorModelVersionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

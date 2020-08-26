@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 class CSSKeywordValue protected ()
   extends typings.w3cCssTypedObjectModelLevel1.CSSKeywordValue {
   def this(value: String) = this()
-  /* CompleteClass */
-  override var value: String = js.native
 }
 

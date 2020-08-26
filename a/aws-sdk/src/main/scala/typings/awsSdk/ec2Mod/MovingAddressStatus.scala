@@ -18,11 +18,30 @@ trait MovingAddressStatus extends js.Object {
 
 object MovingAddressStatus {
   @scala.inline
-  def apply(MoveStatus: MoveStatus = null, PublicIp: String = null): MovingAddressStatus = {
+  def apply(): MovingAddressStatus = {
     val __obj = js.Dynamic.literal()
-    if (MoveStatus != null) __obj.updateDynamic("MoveStatus")(MoveStatus.asInstanceOf[js.Any])
-    if (PublicIp != null) __obj.updateDynamic("PublicIp")(PublicIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[MovingAddressStatus]
   }
+  @scala.inline
+  implicit class MovingAddressStatusOps[Self <: MovingAddressStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMoveStatus(value: MoveStatus): Self = this.set("MoveStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoveStatus: Self = this.set("MoveStatus", js.undefined)
+    @scala.inline
+    def setPublicIp(value: String): Self = this.set("PublicIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIp: Self = this.set("PublicIp", js.undefined)
+  }
+  
 }
 

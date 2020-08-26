@@ -47,6 +47,7 @@ object latlonNvectorEllipsoidalMod extends js.Object {
   class Nvector protected () extends NvectorEllipsoidal {
     def this(x: Double, y: Double, z: Double) = this()
     def this(x: Double, y: Double, z: Double, h: Double) = this()
+    def this(x: Double, y: Double, z: Double, h: js.UndefOr[scala.Nothing], datum: Datum) = this()
     def this(x: Double, y: Double, z: Double, h: Double, datum: Datum) = this()
   }
   
@@ -54,6 +55,7 @@ object latlonNvectorEllipsoidalMod extends js.Object {
   trait NvectorEllipsoidal extends Vector3d {
     def toCartesian(): CartesianNvector = js.native
     def toLatLon(): LatLonNvectorEllipsoidal = js.native
+    def toString(dp: js.UndefOr[scala.Nothing], dpHeight: Double): String = js.native
     def toString(dp: Double, dpHeight: Double): String = js.native
   }
   
@@ -69,18 +71,22 @@ object latlonNvectorEllipsoidalMod extends js.Object {
     def parse(dms: String): Double = js.native
     def parse(dms: Double): Double = js.native
     def separator: String = js.native
-    def separator(char: String): js.Any = js.native
+    def separator_=(char: String): Unit = js.native
     def toBrng(deg: Double): String = js.native
+    def toBrng(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toBrng(deg: Double, format: Format): String = js.native
     def toBrng(deg: Double, format: Format, dp: Dp): String = js.native
     def toDms(deg: Double): String = js.native
+    def toDms(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toDms(deg: Double, format: Format): String = js.native
     def toDms(deg: Double, format: Format, dp: Dp): String = js.native
     def toLat(deg: Double): String = js.native
+    def toLat(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toLat(deg: Double, format: Format): String = js.native
     def toLat(deg: Double, format: Format, dp: Dp): String = js.native
     def toLocale(str: String): String = js.native
     def toLon(deg: Double): String = js.native
+    def toLon(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toLon(deg: Double, format: Format): String = js.native
     def toLon(deg: Double, format: Format, dp: Dp): String = js.native
     def wrap360(degrees: Double): String = js.native

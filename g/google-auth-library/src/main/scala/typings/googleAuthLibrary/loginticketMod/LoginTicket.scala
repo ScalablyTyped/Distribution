@@ -16,9 +16,10 @@ import scala.scalajs.js.annotation._
   */
 class LoginTicket () extends js.Object {
   def this(env: String) = this()
+  def this(env: js.UndefOr[scala.Nothing], pay: TokenPayload) = this()
   def this(env: String, pay: TokenPayload) = this()
-  var envelope: js.UndefOr[js.Any] = js.native
-  var payload: js.UndefOr[js.Any] = js.native
+  var envelope: js.Any = js.native
+  var payload: js.Any = js.native
   /**
     * Returns attributes from the login ticket.  This can contain
     * various information about the user session.

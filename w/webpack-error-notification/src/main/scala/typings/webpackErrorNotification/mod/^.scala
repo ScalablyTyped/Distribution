@@ -14,6 +14,6 @@ import scala.scalajs.js.annotation._
   */
 class ^ () extends WebpackErrorNotificationPlugin {
   def this(strategy: Strategy) = this()
-  def this(strategy: Strategy, options: Options) = this()
+  def this(strategy: js.UndefOr[Strategy], options: Options) = this()
 }
 

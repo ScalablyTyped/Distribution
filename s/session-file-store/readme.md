@@ -11,8 +11,8 @@ Session file store is a provision for storing session data in the session file
 | Full name          | session-file-store |
 | Keywords           | session, file, store, express, connect |
 | # releases         | 3 |
-| # dependents       | 77 |
-| # downloads        | 2328658 |
+| # dependents       | 78 |
+| # downloads        | 2140959 |
 | # stars            | 10 |
 
 ## Links

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "graphql-tools" : "4.0.8"
+      "graphql-tools" : "6.0.15"
     }
   ],
   "test-dependencies" : [
     {
-      "graphql-tools" : "4.0.8"
+      "graphql-tools" : "6.0.15"
     }
   ],
   "compile-devDependencies" : [

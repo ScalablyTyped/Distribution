@@ -70,14 +70,21 @@ class Server protected () extends EventEmitter {
     * @param callback An optional callback to add to the `listening` event of the server.
     */
   def listen(handle: typings.node.netMod.Server): this.type = js.native
+  def listen(
+    handle: typings.node.netMod.Server,
+    backlog: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): this.type = js.native
   def listen(handle: typings.node.netMod.Server, backlog: Double): this.type = js.native
   def listen(handle: typings.node.netMod.Server, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: typings.node.netMod.Server, callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Socket): this.type = js.native
+  def listen(handle: Socket, backlog: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Socket, backlog: Double): this.type = js.native
   def listen(handle: Socket, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Socket, callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Fd): this.type = js.native
+  def listen(handle: Fd, backlog: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Fd, backlog: Double): this.type = js.native
   def listen(handle: Fd, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Fd, callback: js.Function0[Unit]): this.type = js.native
@@ -101,6 +108,7 @@ class Server protected () extends EventEmitter {
     * @param callback An optional callback to add to the `listening` event of the server.
     */
   def listen(path: String): this.type = js.native
+  def listen(path: String, backlog: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def listen(path: String, backlog: Double): this.type = js.native
   def listen(path: String, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
   def listen(path: String, callback: js.Function0[Unit]): this.type = js.native
@@ -122,7 +130,17 @@ class Server protected () extends EventEmitter {
   def listen(port: Double, backlog: Double): this.type = js.native
   def listen(port: Double, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, callback: js.Function0[Unit]): this.type = js.native
+  def listen(
+    port: Double,
+    hostname: js.UndefOr[scala.Nothing],
+    backlog: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): this.type = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): this.type = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double, callback: js.Function0[Unit]): this.type = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, hostname: String): this.type = js.native
+  def listen(port: Double, hostname: String, backlog: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, hostname: String, backlog: Double): this.type = js.native
   def listen(port: Double, hostname: String, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, hostname: String, callback: js.Function0[Unit]): this.type = js.native

@@ -45,6 +45,7 @@ object ComponentManager extends js.Object {
     * @returns Ext.Component The newly instantiated Component.
     */
   def create(): IComponent = js.native
+  def create(config: js.UndefOr[scala.Nothing], defaultType: java.lang.String): IComponent = js.native
   def create(config: js.Any): IComponent = js.native
   def create(config: js.Any, defaultType: java.lang.String): IComponent = js.native
   /** [Method] Executes the specified function once for each item in the collection
@@ -52,6 +53,7 @@ object ComponentManager extends js.Object {
     * @param scope Object The scope to execute in. Defaults to this.
     */
   def each(): Unit = js.native
+  def each(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def each(fn: js.Any): Unit = js.native
   def each(fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Returns an item by id
@@ -88,7 +90,11 @@ object ComponentManager extends js.Object {
     * @param scope Object The scope (this reference) in which the callback is executed. Defaults to the item.
     */
   def onAvailable(): Unit = js.native
+  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def onAvailable(id: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def onAvailable(id: java.lang.String): Unit = js.native
+  def onAvailable(id: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def onAvailable(id: java.lang.String, fn: js.Any): Unit = js.native
   def onAvailable(id: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Registers an item to be managed
@@ -101,6 +107,7 @@ object ComponentManager extends js.Object {
     * @param cls Object
     */
   def registerType(): Unit = js.native
+  def registerType(`type`: js.UndefOr[scala.Nothing], cls: js.Any): Unit = js.native
   def registerType(`type`: js.Any): Unit = js.native
   def registerType(`type`: js.Any, cls: js.Any): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

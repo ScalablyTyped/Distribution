@@ -13,47 +13,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModuleOptions extends js.Object {
-  var context: js.UndefOr[String] = js.undefined
-  var getLocalIdent: js.UndefOr[GetLocalIdent] = js.undefined
-  var hashPrefix: js.UndefOr[String] = js.undefined
+  var context: js.UndefOr[String] = js.native
+  var getLocalIdent: js.UndefOr[GetLocalIdent] = js.native
+  var hashPrefix: js.UndefOr[String] = js.native
   /**
     * 0 => no loaders (default);
     * 1 => postcss-loader;
     * 2 => postcss-loader, sass-loader
     */
-  var importLoaders: js.UndefOr[`0` | `1` | `2`] = js.undefined
-  var localIdentName: js.UndefOr[String] = js.undefined
-  var localIdentRegExp: js.UndefOr[String | RegExp] = js.undefined
-  var localsConvention: js.UndefOr[asIs | camelCase | camelCaseOnly | dashes | dashesOnly] = js.undefined
-  var mode: js.UndefOr[String] = js.undefined
-  var onlyLocals: js.UndefOr[Boolean] = js.undefined
+  var importLoaders: js.UndefOr[`0` | `1` | `2`] = js.native
+  var localIdentName: js.UndefOr[String] = js.native
+  var localIdentRegExp: js.UndefOr[String | RegExp] = js.native
+  var localsConvention: js.UndefOr[asIs | camelCase | camelCaseOnly | dashes | dashesOnly] = js.native
+  var mode: js.UndefOr[String] = js.native
+  var onlyLocals: js.UndefOr[Boolean] = js.native
 }
 
 object ModuleOptions {
   @scala.inline
-  def apply(
-    context: String = null,
-    getLocalIdent: (/* context */ js.Any, /* localIdentName */ js.Any, /* localName */ js.Any, /* options */ js.Any) => String = null,
-    hashPrefix: String = null,
-    importLoaders: `0` | `1` | `2` = null,
-    localIdentName: String = null,
-    localIdentRegExp: String | RegExp = null,
-    localsConvention: asIs | camelCase | camelCaseOnly | dashes | dashesOnly = null,
-    mode: String = null,
-    onlyLocals: js.UndefOr[Boolean] = js.undefined
-  ): ModuleOptions = {
+  def apply(): ModuleOptions = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (getLocalIdent != null) __obj.updateDynamic("getLocalIdent")(js.Any.fromFunction4(getLocalIdent))
-    if (hashPrefix != null) __obj.updateDynamic("hashPrefix")(hashPrefix.asInstanceOf[js.Any])
-    if (importLoaders != null) __obj.updateDynamic("importLoaders")(importLoaders.asInstanceOf[js.Any])
-    if (localIdentName != null) __obj.updateDynamic("localIdentName")(localIdentName.asInstanceOf[js.Any])
-    if (localIdentRegExp != null) __obj.updateDynamic("localIdentRegExp")(localIdentRegExp.asInstanceOf[js.Any])
-    if (localsConvention != null) __obj.updateDynamic("localsConvention")(localsConvention.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyLocals)) __obj.updateDynamic("onlyLocals")(onlyLocals.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleOptions]
   }
+  @scala.inline
+  implicit class ModuleOptionsOps[Self <: ModuleOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setGetLocalIdent(
+      value: (/* context */ js.Any, /* localIdentName */ js.Any, /* localName */ js.Any, /* options */ js.Any) => String
+    ): Self = this.set("getLocalIdent", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteGetLocalIdent: Self = this.set("getLocalIdent", js.undefined)
+    @scala.inline
+    def setHashPrefix(value: String): Self = this.set("hashPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashPrefix: Self = this.set("hashPrefix", js.undefined)
+    @scala.inline
+    def setImportLoaders(value: `0` | `1` | `2`): Self = this.set("importLoaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportLoaders: Self = this.set("importLoaders", js.undefined)
+    @scala.inline
+    def setLocalIdentName(value: String): Self = this.set("localIdentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalIdentName: Self = this.set("localIdentName", js.undefined)
+    @scala.inline
+    def setLocalIdentRegExp(value: String | RegExp): Self = this.set("localIdentRegExp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalIdentRegExp: Self = this.set("localIdentRegExp", js.undefined)
+    @scala.inline
+    def setLocalsConvention(value: asIs | camelCase | camelCaseOnly | dashes | dashesOnly): Self = this.set("localsConvention", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalsConvention: Self = this.set("localsConvention", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setOnlyLocals(value: Boolean): Self = this.set("onlyLocals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyLocals: Self = this.set("onlyLocals", js.undefined)
+  }
+  
 }
 

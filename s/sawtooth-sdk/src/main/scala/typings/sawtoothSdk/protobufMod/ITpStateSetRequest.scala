@@ -4,23 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITpStateSetRequest extends js.Object {
   /** TpStateSetRequest contextId */
-  var contextId: js.UndefOr[String | Null] = js.undefined
+  var contextId: js.UndefOr[String | Null] = js.native
   /** TpStateSetRequest entries */
-  var entries: js.UndefOr[js.Array[ITpStateEntry] | Null] = js.undefined
+  var entries: js.UndefOr[js.Array[ITpStateEntry] | Null] = js.native
 }
 
 object ITpStateSetRequest {
   @scala.inline
-  def apply(
-    contextId: js.UndefOr[Null | String] = js.undefined,
-    entries: js.UndefOr[Null | js.Array[ITpStateEntry]] = js.undefined
-  ): ITpStateSetRequest = {
+  def apply(): ITpStateSetRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contextId)) __obj.updateDynamic("contextId")(contextId.asInstanceOf[js.Any])
-    if (!js.isUndefined(entries)) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITpStateSetRequest]
   }
+  @scala.inline
+  implicit class ITpStateSetRequestOps[Self <: ITpStateSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContextId(value: String): Self = this.set("contextId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextId: Self = this.set("contextId", js.undefined)
+    @scala.inline
+    def setContextIdNull: Self = this.set("contextId", null)
+    @scala.inline
+    def setEntriesVarargs(value: ITpStateEntry*): Self = this.set("entries", js.Array(value :_*))
+    @scala.inline
+    def setEntries(value: js.Array[ITpStateEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntries: Self = this.set("entries", js.undefined)
+    @scala.inline
+    def setEntriesNull: Self = this.set("entries", null)
+  }
+  
 }
 

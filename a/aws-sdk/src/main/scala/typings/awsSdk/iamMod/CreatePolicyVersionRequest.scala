@@ -22,14 +22,30 @@ trait CreatePolicyVersionRequest extends js.Object {
 
 object CreatePolicyVersionRequest {
   @scala.inline
-  def apply(
-    PolicyArn: arnType,
-    PolicyDocument: policyDocumentType,
-    SetAsDefault: js.UndefOr[booleanType] = js.undefined
-  ): CreatePolicyVersionRequest = {
+  def apply(PolicyArn: arnType, PolicyDocument: policyDocumentType): CreatePolicyVersionRequest = {
     val __obj = js.Dynamic.literal(PolicyArn = PolicyArn.asInstanceOf[js.Any], PolicyDocument = PolicyDocument.asInstanceOf[js.Any])
-    if (!js.isUndefined(SetAsDefault)) __obj.updateDynamic("SetAsDefault")(SetAsDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePolicyVersionRequest]
   }
+  @scala.inline
+  implicit class CreatePolicyVersionRequestOps[Self <: CreatePolicyVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyArn(value: arnType): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicyDocument(value: policyDocumentType): Self = this.set("PolicyDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSetAsDefault(value: booleanType): Self = this.set("SetAsDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetAsDefault: Self = this.set("SetAsDefault", js.undefined)
+  }
+  
 }
 

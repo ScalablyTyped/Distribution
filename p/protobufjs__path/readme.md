@@ -12,7 +12,7 @@ A minimal path module to resolve Unix, Windows and URL paths alike.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 28 |
-| # downloads        | 52950366 |
+| # downloads        | 55604042 |
 | # stars            | 0 |
 
 ## Links

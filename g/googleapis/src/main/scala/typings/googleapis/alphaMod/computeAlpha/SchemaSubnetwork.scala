@@ -198,64 +198,132 @@ trait SchemaSubnetwork extends js.Object {
 
 object SchemaSubnetwork {
   @scala.inline
-  def apply(
-    aggregationInterval: String = null,
-    allowSubnetCidrRoutesOverlap: js.UndefOr[Boolean] = js.undefined,
-    creationTimestamp: String = null,
-    description: String = null,
-    enableFlowLogs: js.UndefOr[Boolean] = js.undefined,
-    enablePrivateV6Access: js.UndefOr[Boolean] = js.undefined,
-    fingerprint: String = null,
-    flowSampling: js.UndefOr[Double] = js.undefined,
-    gatewayAddress: String = null,
-    id: String = null,
-    ipCidrRange: String = null,
-    ipv6CidrRange: String = null,
-    kind: String = null,
-    logConfig: SchemaSubnetworkLogConfig = null,
-    metadata: String = null,
-    name: String = null,
-    network: String = null,
-    privateIpGoogleAccess: js.UndefOr[Boolean] = js.undefined,
-    privateIpv6GoogleAccess: String = null,
-    purpose: String = null,
-    rangeType: String = null,
-    region: String = null,
-    role: String = null,
-    secondaryIpRanges: js.Array[SchemaSubnetworkSecondaryRange] = null,
-    selfLink: String = null,
-    selfLinkWithId: String = null,
-    state: String = null
-  ): SchemaSubnetwork = {
+  def apply(): SchemaSubnetwork = {
     val __obj = js.Dynamic.literal()
-    if (aggregationInterval != null) __obj.updateDynamic("aggregationInterval")(aggregationInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSubnetCidrRoutesOverlap)) __obj.updateDynamic("allowSubnetCidrRoutesOverlap")(allowSubnetCidrRoutesOverlap.get.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFlowLogs)) __obj.updateDynamic("enableFlowLogs")(enableFlowLogs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePrivateV6Access)) __obj.updateDynamic("enablePrivateV6Access")(enablePrivateV6Access.get.asInstanceOf[js.Any])
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (!js.isUndefined(flowSampling)) __obj.updateDynamic("flowSampling")(flowSampling.get.asInstanceOf[js.Any])
-    if (gatewayAddress != null) __obj.updateDynamic("gatewayAddress")(gatewayAddress.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange.asInstanceOf[js.Any])
-    if (ipv6CidrRange != null) __obj.updateDynamic("ipv6CidrRange")(ipv6CidrRange.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (logConfig != null) __obj.updateDynamic("logConfig")(logConfig.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (!js.isUndefined(privateIpGoogleAccess)) __obj.updateDynamic("privateIpGoogleAccess")(privateIpGoogleAccess.get.asInstanceOf[js.Any])
-    if (privateIpv6GoogleAccess != null) __obj.updateDynamic("privateIpv6GoogleAccess")(privateIpv6GoogleAccess.asInstanceOf[js.Any])
-    if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
-    if (rangeType != null) __obj.updateDynamic("rangeType")(rangeType.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (secondaryIpRanges != null) __obj.updateDynamic("secondaryIpRanges")(secondaryIpRanges.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubnetwork]
   }
+  @scala.inline
+  implicit class SchemaSubnetworkOps[Self <: SchemaSubnetwork] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregationInterval(value: String): Self = this.set("aggregationInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregationInterval: Self = this.set("aggregationInterval", js.undefined)
+    @scala.inline
+    def setAllowSubnetCidrRoutesOverlap(value: Boolean): Self = this.set("allowSubnetCidrRoutesOverlap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSubnetCidrRoutesOverlap: Self = this.set("allowSubnetCidrRoutesOverlap", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnableFlowLogs(value: Boolean): Self = this.set("enableFlowLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableFlowLogs: Self = this.set("enableFlowLogs", js.undefined)
+    @scala.inline
+    def setEnablePrivateV6Access(value: Boolean): Self = this.set("enablePrivateV6Access", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePrivateV6Access: Self = this.set("enablePrivateV6Access", js.undefined)
+    @scala.inline
+    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setFlowSampling(value: Double): Self = this.set("flowSampling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowSampling: Self = this.set("flowSampling", js.undefined)
+    @scala.inline
+    def setGatewayAddress(value: String): Self = this.set("gatewayAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayAddress: Self = this.set("gatewayAddress", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIpCidrRange(value: String): Self = this.set("ipCidrRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpCidrRange: Self = this.set("ipCidrRange", js.undefined)
+    @scala.inline
+    def setIpv6CidrRange(value: String): Self = this.set("ipv6CidrRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6CidrRange: Self = this.set("ipv6CidrRange", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLogConfig(value: SchemaSubnetworkLogConfig): Self = this.set("logConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogConfig: Self = this.set("logConfig", js.undefined)
+    @scala.inline
+    def setMetadata(value: String): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setPrivateIpGoogleAccess(value: Boolean): Self = this.set("privateIpGoogleAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpGoogleAccess: Self = this.set("privateIpGoogleAccess", js.undefined)
+    @scala.inline
+    def setPrivateIpv6GoogleAccess(value: String): Self = this.set("privateIpv6GoogleAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpv6GoogleAccess: Self = this.set("privateIpv6GoogleAccess", js.undefined)
+    @scala.inline
+    def setPurpose(value: String): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurpose: Self = this.set("purpose", js.undefined)
+    @scala.inline
+    def setRangeType(value: String): Self = this.set("rangeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeType: Self = this.set("rangeType", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setSecondaryIpRangesVarargs(value: SchemaSubnetworkSecondaryRange*): Self = this.set("secondaryIpRanges", js.Array(value :_*))
+    @scala.inline
+    def setSecondaryIpRanges(value: js.Array[SchemaSubnetworkSecondaryRange]): Self = this.set("secondaryIpRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondaryIpRanges: Self = this.set("secondaryIpRanges", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSelfLinkWithId(value: String): Self = this.set("selfLinkWithId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLinkWithId: Self = this.set("selfLinkWithId", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

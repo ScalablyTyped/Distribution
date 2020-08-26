@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BinaryHeap () extends js.Object {
   def this(weightFunc: js.Function) = this()
+  def this(weightFunc: js.UndefOr[scala.Nothing], compareFunc: js.Function) = this()
   def this(weightFunc: js.Function, compareFunc: js.Function) = this()
   def peek(): js.Any = js.native
   def pop(): js.Any = js.native

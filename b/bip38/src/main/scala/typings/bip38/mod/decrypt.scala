@@ -12,6 +12,12 @@ object decrypt extends js.Object {
   def apply(
     string: String,
     passphrase: String,
+    progressCallback: js.UndefOr[scala.Nothing],
+    scryptParams: ScryptParams
+  ): Compressed = js.native
+  def apply(
+    string: String,
+    passphrase: String,
     progressCallback: js.Function1[/* status */ ProgressStatus, Unit]
   ): Compressed = js.native
   def apply(

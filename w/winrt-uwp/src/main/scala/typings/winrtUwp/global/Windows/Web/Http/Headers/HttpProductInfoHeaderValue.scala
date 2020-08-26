@@ -21,12 +21,6 @@ class HttpProductInfoHeaderValue protected ()
     * @param productVersion The version of the product token used in the User-Agent HTTP header.
     */
   def this(productName: String, productVersion: String) = this()
-  /** Gets the product comment from the HttpProductInfoHeaderValue used in the User-Agent HTTP header. */
-  /* CompleteClass */
-  override var comment: String = js.native
-  /** Gets the product from the HttpProductInfoHeaderValue used in the User-Agent HTTP header. */
-  /* CompleteClass */
-  override var product: typings.winrtUwp.Windows.Web.Http.Headers.HttpProductHeaderValue = js.native
 }
 
 /* static members */

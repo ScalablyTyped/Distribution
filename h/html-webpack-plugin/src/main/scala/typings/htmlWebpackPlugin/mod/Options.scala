@@ -1,161 +1,165 @@
 package typings.htmlWebpackPlugin.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.htmlWebpackPlugin.anon.BodyTags
+import typings.htmlWebpackPlugin.anon.Css
 import typings.htmlWebpackPlugin.htmlWebpackPluginBooleans.`false`
+import typings.htmlWebpackPlugin.htmlWebpackPluginBooleans.`true`
 import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.all
 import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.auto
+import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.blocking
 import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.body
-import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.dependency
+import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.defer
 import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.head
 import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.manual
-import typings.htmlWebpackPlugin.htmlWebpackPluginStrings.none
-import typings.webpack.mod.compilation.Chunk
-import typings.webpack.mod.compilation.Compilation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options
-  extends /**
-  * In addition to the options actually used by this plugin, you can use this hash to pass arbitrary data through
-  * to your template.
-  */
-/* option */ StringDictionary[js.Any] {
-  /**
-    * Emit the file only if it was changed.
-    * Default: `true`.
-    */
-  var cache: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Allows you to add only some chunks (e.g. only the unit-test chunk).
-    * Default: 'all'.
-    */
-  var chunks: js.UndefOr[all | js.Array[String]] = js.undefined
-  /**
-    * Allows to control how chunks should be sorted before they are included to the html.
-    * Default: `'auto'`.
-    */
+/* Inlined parent std.Partial<html-webpack-plugin.html-webpack-plugin.ProcessedOptions> */
+@js.native
+trait Options extends js.Object {
+  var cache: js.UndefOr[Boolean] = js.native
+  var chunks: js.UndefOr[all | js.Array[String]] = js.native
   var chunksSortMode: js.UndefOr[
-    none | auto | dependency | manual | (js.Function2[/* a */ Chunk, /* b */ Chunk, Double])
-  ] = js.undefined
-  /**
-    * Allows you to skip some chunks (e.g. don't add the unit-test chunk).
-    * Default: `[]`.
-    */
-  var excludeChunks: js.UndefOr[js.Array[String]] = js.undefined
-  /**
-    * Adds the given favicon path to the output html.
-    * Default: `false`.
-    */
-  var favicon: js.UndefOr[`false` | String] = js.undefined
-  /**
-    * The file to write the HTML to.
-    * You can specify a subdirectory here too (eg: `assets/admin.html`).
-    * Default: `'index.html'`.
-    */
-  var filename: js.UndefOr[String] = js.undefined
-  /**
-    * If true then append a unique webpack compilation hash to all included scripts and CSS files.
-    * This is useful for cache busting.
-    * Default: `false`.
-    */
-  var hash: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Inject all assets into the given template or templateContent.
-    * When passing true or 'body' all javascript resources will be placed at the bottom of the body element.
-    * 'head' will place the scripts in the head element.
-    * Default: `true`.
-    */
-  var inject: js.UndefOr[body | head | Boolean] = js.undefined
-  /**
-    * Allows to inject meta-tags, e.g. meta: `{viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'}`.
-    * Default: `{}`.
-    */
-  var meta: js.UndefOr[`false` | StringDictionary[js.Any]] = js.undefined
-  /**
-    * Pass a html-minifier options object to minify the output.
-    * https://github.com/kangax/html-minifier#options-quick-reference
-    * Default: `false`.
-    */
-  var minify: js.UndefOr[`false` | MinifyOptions] = js.undefined
-  /**
-    * Errors details will be written into the HTML page.
-    * Default: `true`.
-    */
-  var showErrors: js.UndefOr[Boolean] = js.undefined
-  /**
-    * The `webpack` require path to the template.
-    * @see https://github.com/jantimon/html-webpack-plugin/blob/master/docs/template-option.md
-    */
-  var template: js.UndefOr[String] = js.undefined
-  /**
-    * Allow to use a html string instead of reading from a file.
-    * Default: `false`, meaning the `template` option should be used instead.
-    */
-  var templateContent: js.UndefOr[`false` | String | js.Promise[String]] = js.undefined
-  /**
-    * Allows to overwrite the parameters used in the template.
-    */
+    auto | manual | (js.Function2[/* entryNameA */ String, /* entryNameB */ String, Double])
+  ] = js.native
+  var excludeChunks: js.UndefOr[js.Array[String]] = js.native
+  var favicon: js.UndefOr[`false` | String] = js.native
+  var filename: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[Boolean] = js.native
+  var inject: js.UndefOr[`false` | `true` | body | head] = js.native
+  var meta: js.UndefOr[
+    `false` | (StringDictionary[String | `false` | (StringDictionary[String | Boolean])])
+  ] = js.native
+  var minify: js.UndefOr[auto | Boolean | MinifyOptions] = js.native
+  var scriptLoading: js.UndefOr[blocking | defer] = js.native
+  var showErrors: js.UndefOr[Boolean] = js.native
+  var template: js.UndefOr[String] = js.native
+  var templateContent: js.UndefOr[
+    `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String]
+  ] = js.native
   var templateParameters: js.UndefOr[
-    `false` | (js.Function3[
-      /* compilation */ Compilation, 
-      /* assets */ TemplateParametersAssets, 
-      /* options */ this.type, 
-      _
+    `false` | (js.Function4[
+      /* compilation */ js.Any, 
+      /* assets */ Css, 
+      /* assetTags */ BodyTags, 
+      /* options */ ProcessedOptions, 
+      StringDictionary[_] | js.Promise[StringDictionary[_]]
     ]) | StringDictionary[js.Any]
-  ] = js.undefined
-  /**
-    * The title to use for the generated HTML document.
-    * Default: `'Webpack App'`.
-    */
-  var title: js.UndefOr[String] = js.undefined
-  /**
-    * If true render the link tags as self-closing (XHTML compliant).
-    * Default: `false`.
-    */
-  var xhtml: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var title: js.UndefOr[String] = js.native
+  var xhtml: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    cache: js.UndefOr[Boolean] = js.undefined,
-    chunks: all | js.Array[String] = null,
-    chunksSortMode: none | auto | dependency | manual | (js.Function2[/* a */ Chunk, /* b */ Chunk, Double]) = null,
-    excludeChunks: js.Array[String] = null,
-    favicon: `false` | String = null,
-    filename: String = null,
-    hash: js.UndefOr[Boolean] = js.undefined,
-    inject: body | head | Boolean = null,
-    meta: `false` | StringDictionary[js.Any] = null,
-    minify: `false` | MinifyOptions = null,
-    showErrors: js.UndefOr[Boolean] = js.undefined,
-    template: String = null,
-    templateContent: `false` | String | js.Promise[String] = null,
-    templateParameters: `false` | (js.Function3[/* compilation */ Compilation, /* assets */ TemplateParametersAssets, Options, _]) | StringDictionary[js.Any] = null,
-    title: String = null,
-    xhtml: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
-    if (chunks != null) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])
-    if (chunksSortMode != null) __obj.updateDynamic("chunksSortMode")(chunksSortMode.asInstanceOf[js.Any])
-    if (excludeChunks != null) __obj.updateDynamic("excludeChunks")(excludeChunks.asInstanceOf[js.Any])
-    if (favicon != null) __obj.updateDynamic("favicon")(favicon.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash.get.asInstanceOf[js.Any])
-    if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (minify != null) __obj.updateDynamic("minify")(minify.asInstanceOf[js.Any])
-    if (!js.isUndefined(showErrors)) __obj.updateDynamic("showErrors")(showErrors.get.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (templateContent != null) __obj.updateDynamic("templateContent")(templateContent.asInstanceOf[js.Any])
-    if (templateParameters != null) __obj.updateDynamic("templateParameters")(templateParameters.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhtml)) __obj.updateDynamic("xhtml")(xhtml.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCache(value: Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setChunksVarargs(value: String*): Self = this.set("chunks", js.Array(value :_*))
+    @scala.inline
+    def setChunks(value: all | js.Array[String]): Self = this.set("chunks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChunks: Self = this.set("chunks", js.undefined)
+    @scala.inline
+    def setChunksSortModeFunction2(value: (/* entryNameA */ String, /* entryNameB */ String) => Double): Self = this.set("chunksSortMode", js.Any.fromFunction2(value))
+    @scala.inline
+    def setChunksSortMode(value: auto | manual | (js.Function2[/* entryNameA */ String, /* entryNameB */ String, Double])): Self = this.set("chunksSortMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChunksSortMode: Self = this.set("chunksSortMode", js.undefined)
+    @scala.inline
+    def setExcludeChunksVarargs(value: String*): Self = this.set("excludeChunks", js.Array(value :_*))
+    @scala.inline
+    def setExcludeChunks(value: js.Array[String]): Self = this.set("excludeChunks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeChunks: Self = this.set("excludeChunks", js.undefined)
+    @scala.inline
+    def setFavicon(value: `false` | String): Self = this.set("favicon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFavicon: Self = this.set("favicon", js.undefined)
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setHash(value: Boolean): Self = this.set("hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash: Self = this.set("hash", js.undefined)
+    @scala.inline
+    def setInject(value: `false` | `true` | body | head): Self = this.set("inject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInject: Self = this.set("inject", js.undefined)
+    @scala.inline
+    def setMeta(value: `false` | (StringDictionary[String | `false` | (StringDictionary[String | Boolean])])): Self = this.set("meta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeta: Self = this.set("meta", js.undefined)
+    @scala.inline
+    def setMinify(value: auto | Boolean | MinifyOptions): Self = this.set("minify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinify: Self = this.set("minify", js.undefined)
+    @scala.inline
+    def setScriptLoading(value: blocking | defer): Self = this.set("scriptLoading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScriptLoading: Self = this.set("scriptLoading", js.undefined)
+    @scala.inline
+    def setShowErrors(value: Boolean): Self = this.set("showErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowErrors: Self = this.set("showErrors", js.undefined)
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTemplateContentFunction1(value: /* templateParameters */ StringDictionary[js.Any] => String | js.Promise[String]): Self = this.set("templateContent", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTemplateContent(
+      value: `false` | String | (js.Function1[/* templateParameters */ StringDictionary[js.Any], String | js.Promise[String]]) | js.Promise[String]
+    ): Self = this.set("templateContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateContent: Self = this.set("templateContent", js.undefined)
+    @scala.inline
+    def setTemplateParametersFunction4(
+      value: (/* compilation */ js.Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[_] | js.Promise[StringDictionary[_]]
+    ): Self = this.set("templateParameters", js.Any.fromFunction4(value))
+    @scala.inline
+    def setTemplateParameters(
+      value: `false` | (js.Function4[
+          /* compilation */ js.Any, 
+          /* assets */ Css, 
+          /* assetTags */ BodyTags, 
+          /* options */ ProcessedOptions, 
+          StringDictionary[_] | js.Promise[StringDictionary[_]]
+        ]) | StringDictionary[js.Any]
+    ): Self = this.set("templateParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateParameters: Self = this.set("templateParameters", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setXhtml(value: Boolean): Self = this.set("xhtml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXhtml: Self = this.set("xhtml", js.undefined)
+  }
+  
 }
 

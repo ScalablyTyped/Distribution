@@ -4,27 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DiagramDragStartEvent extends DiagramEvent {
-  var connectionHandle: js.UndefOr[String] = js.undefined
-  var connections: js.UndefOr[js.Any] = js.undefined
-  var shapes: js.UndefOr[js.Any] = js.undefined
+  var connectionHandle: js.UndefOr[String] = js.native
+  var connections: js.UndefOr[js.Any] = js.native
+  var shapes: js.UndefOr[js.Any] = js.native
 }
 
 object DiagramDragStartEvent {
   @scala.inline
-  def apply(
-    isDefaultPrevented: () => Boolean,
-    preventDefault: js.Function,
-    sender: Diagram,
-    connectionHandle: String = null,
-    connections: js.Any = null,
-    shapes: js.Any = null
-  ): DiagramDragStartEvent = {
+  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Diagram): DiagramDragStartEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    if (connectionHandle != null) __obj.updateDynamic("connectionHandle")(connectionHandle.asInstanceOf[js.Any])
-    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
-    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramDragStartEvent]
   }
+  @scala.inline
+  implicit class DiagramDragStartEventOps[Self <: DiagramDragStartEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionHandle(value: String): Self = this.set("connectionHandle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionHandle: Self = this.set("connectionHandle", js.undefined)
+    @scala.inline
+    def setConnections(value: js.Any): Self = this.set("connections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnections: Self = this.set("connections", js.undefined)
+    @scala.inline
+    def setShapes(value: js.Any): Self = this.set("shapes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapes: Self = this.set("shapes", js.undefined)
+  }
+  
 }
 

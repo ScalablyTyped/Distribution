@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContentRangeType extends js.Object {
-  var firstBytePosition: js.UndefOr[Double] = js.undefined
-  var instanceLength: js.UndefOr[Double] = js.undefined
-  var lastBytePosition: js.UndefOr[Double] = js.undefined
+  var firstBytePosition: js.UndefOr[Double] = js.native
+  var instanceLength: js.UndefOr[Double] = js.native
+  var lastBytePosition: js.UndefOr[Double] = js.native
 }
 
 object ContentRangeType {
   @scala.inline
-  def apply(
-    firstBytePosition: js.UndefOr[Double] = js.undefined,
-    instanceLength: js.UndefOr[Double] = js.undefined,
-    lastBytePosition: js.UndefOr[Double] = js.undefined
-  ): ContentRangeType = {
+  def apply(): ContentRangeType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(firstBytePosition)) __obj.updateDynamic("firstBytePosition")(firstBytePosition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(instanceLength)) __obj.updateDynamic("instanceLength")(instanceLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastBytePosition)) __obj.updateDynamic("lastBytePosition")(lastBytePosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentRangeType]
   }
+  @scala.inline
+  implicit class ContentRangeTypeOps[Self <: ContentRangeType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFirstBytePosition(value: Double): Self = this.set("firstBytePosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstBytePosition: Self = this.set("firstBytePosition", js.undefined)
+    @scala.inline
+    def setInstanceLength(value: Double): Self = this.set("instanceLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceLength: Self = this.set("instanceLength", js.undefined)
+    @scala.inline
+    def setLastBytePosition(value: Double): Self = this.set("lastBytePosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastBytePosition: Self = this.set("lastBytePosition", js.undefined)
+  }
+  
 }
 

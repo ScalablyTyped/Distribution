@@ -35,18 +35,38 @@ trait SchemaResultSetStats extends js.Object {
 
 object SchemaResultSetStats {
   @scala.inline
-  def apply(
-    queryPlan: SchemaQueryPlan = null,
-    queryStats: StringDictionary[js.Any] = null,
-    rowCountExact: String = null,
-    rowCountLowerBound: String = null
-  ): SchemaResultSetStats = {
+  def apply(): SchemaResultSetStats = {
     val __obj = js.Dynamic.literal()
-    if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan.asInstanceOf[js.Any])
-    if (queryStats != null) __obj.updateDynamic("queryStats")(queryStats.asInstanceOf[js.Any])
-    if (rowCountExact != null) __obj.updateDynamic("rowCountExact")(rowCountExact.asInstanceOf[js.Any])
-    if (rowCountLowerBound != null) __obj.updateDynamic("rowCountLowerBound")(rowCountLowerBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResultSetStats]
   }
+  @scala.inline
+  implicit class SchemaResultSetStatsOps[Self <: SchemaResultSetStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryPlan(value: SchemaQueryPlan): Self = this.set("queryPlan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryPlan: Self = this.set("queryPlan", js.undefined)
+    @scala.inline
+    def setQueryStats(value: StringDictionary[js.Any]): Self = this.set("queryStats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryStats: Self = this.set("queryStats", js.undefined)
+    @scala.inline
+    def setRowCountExact(value: String): Self = this.set("rowCountExact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowCountExact: Self = this.set("rowCountExact", js.undefined)
+    @scala.inline
+    def setRowCountLowerBound(value: String): Self = this.set("rowCountLowerBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowCountLowerBound: Self = this.set("rowCountLowerBound", js.undefined)
+  }
+  
 }
 

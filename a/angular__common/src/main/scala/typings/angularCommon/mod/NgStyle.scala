@@ -20,16 +20,6 @@ class NgStyle protected () extends DoCheck {
   var _ngStyle: js.Any = js.native
   var _renderer: js.Any = js.native
   var _setStyle: js.Any = js.native
-  /**
-    * A callback method that performs change-detection, invoked
-    * after the default change-detector runs.
-    * See `KeyValueDiffers` and `IterableDiffers` for implementing
-    * custom change checking for collections.
-    *
-    */
-  /* CompleteClass */
-  override def ngDoCheck(): Unit = js.native
-  def ngStyle(): js.Any = js.native
-  def ngStyle(values: StringDictionary[js.Any]): js.Any = js.native
+  def ngStyle_=(values: StringDictionary[js.Any] | Null): Unit = js.native
 }
 

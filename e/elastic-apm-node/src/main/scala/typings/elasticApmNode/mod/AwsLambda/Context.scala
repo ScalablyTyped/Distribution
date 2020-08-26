@@ -21,6 +21,7 @@ trait Context extends js.Object {
   // Functions for compatibility with earlier Node.js Runtime v0.10.42
   // For more details see http://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-using-old-runtime.html#nodejs-prog-model-oldruntime-context-methods
   def done(): Unit = js.native
+  def done(error: js.UndefOr[scala.Nothing], result: js.Any): Unit = js.native
   def done(error: Error): Unit = js.native
   def done(error: Error, result: js.Any): Unit = js.native
   def fail(error: String): Unit = js.native

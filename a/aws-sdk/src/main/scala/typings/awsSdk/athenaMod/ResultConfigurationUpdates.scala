@@ -26,18 +26,38 @@ trait ResultConfigurationUpdates extends js.Object {
 
 object ResultConfigurationUpdates {
   @scala.inline
-  def apply(
-    EncryptionConfiguration: EncryptionConfiguration = null,
-    OutputLocation: String = null,
-    RemoveEncryptionConfiguration: js.UndefOr[BoxedBoolean] = js.undefined,
-    RemoveOutputLocation: js.UndefOr[BoxedBoolean] = js.undefined
-  ): ResultConfigurationUpdates = {
+  def apply(): ResultConfigurationUpdates = {
     val __obj = js.Dynamic.literal()
-    if (EncryptionConfiguration != null) __obj.updateDynamic("EncryptionConfiguration")(EncryptionConfiguration.asInstanceOf[js.Any])
-    if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(RemoveEncryptionConfiguration)) __obj.updateDynamic("RemoveEncryptionConfiguration")(RemoveEncryptionConfiguration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RemoveOutputLocation)) __obj.updateDynamic("RemoveOutputLocation")(RemoveOutputLocation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultConfigurationUpdates]
   }
+  @scala.inline
+  implicit class ResultConfigurationUpdatesOps[Self <: ResultConfigurationUpdates] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("EncryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionConfiguration: Self = this.set("EncryptionConfiguration", js.undefined)
+    @scala.inline
+    def setOutputLocation(value: String): Self = this.set("OutputLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputLocation: Self = this.set("OutputLocation", js.undefined)
+    @scala.inline
+    def setRemoveEncryptionConfiguration(value: BoxedBoolean): Self = this.set("RemoveEncryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveEncryptionConfiguration: Self = this.set("RemoveEncryptionConfiguration", js.undefined)
+    @scala.inline
+    def setRemoveOutputLocation(value: BoxedBoolean): Self = this.set("RemoveOutputLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveOutputLocation: Self = this.set("RemoveOutputLocation", js.undefined)
+  }
+  
 }
 

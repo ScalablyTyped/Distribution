@@ -42,26 +42,54 @@ trait Item extends js.Object {
 
 object Item {
   @scala.inline
-  def apply(
-    AbsoluteTime: Instant = null,
-    Content: ChatContent = null,
-    ContentType: ChatContentType = null,
-    DisplayName: DisplayName = null,
-    Id: ChatItemId = null,
-    ParticipantId: ParticipantId = null,
-    ParticipantRole: ParticipantRole = null,
-    Type: ChatItemType = null
-  ): Item = {
+  def apply(): Item = {
     val __obj = js.Dynamic.literal()
-    if (AbsoluteTime != null) __obj.updateDynamic("AbsoluteTime")(AbsoluteTime.asInstanceOf[js.Any])
-    if (Content != null) __obj.updateDynamic("Content")(Content.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (ParticipantId != null) __obj.updateDynamic("ParticipantId")(ParticipantId.asInstanceOf[js.Any])
-    if (ParticipantRole != null) __obj.updateDynamic("ParticipantRole")(ParticipantRole.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
+  @scala.inline
+  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbsoluteTime(value: Instant): Self = this.set("AbsoluteTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbsoluteTime: Self = this.set("AbsoluteTime", js.undefined)
+    @scala.inline
+    def setContent(value: ChatContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("Content", js.undefined)
+    @scala.inline
+    def setContentType(value: ChatContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setDisplayName(value: DisplayName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setId(value: ChatItemId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setParticipantId(value: ParticipantId): Self = this.set("ParticipantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParticipantId: Self = this.set("ParticipantId", js.undefined)
+    @scala.inline
+    def setParticipantRole(value: ParticipantRole): Self = this.set("ParticipantRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParticipantRole: Self = this.set("ParticipantRole", js.undefined)
+    @scala.inline
+    def setType(value: ChatItemType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

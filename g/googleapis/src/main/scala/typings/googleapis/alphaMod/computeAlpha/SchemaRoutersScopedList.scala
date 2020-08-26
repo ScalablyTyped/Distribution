@@ -20,11 +20,32 @@ trait SchemaRoutersScopedList extends js.Object {
 
 object SchemaRoutersScopedList {
   @scala.inline
-  def apply(routers: js.Array[SchemaRouter] = null, warning: Code = null): SchemaRoutersScopedList = {
+  def apply(): SchemaRoutersScopedList = {
     val __obj = js.Dynamic.literal()
-    if (routers != null) __obj.updateDynamic("routers")(routers.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRoutersScopedList]
   }
+  @scala.inline
+  implicit class SchemaRoutersScopedListOps[Self <: SchemaRoutersScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoutersVarargs(value: SchemaRouter*): Self = this.set("routers", js.Array(value :_*))
+    @scala.inline
+    def setRouters(value: js.Array[SchemaRouter]): Self = this.set("routers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouters: Self = this.set("routers", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

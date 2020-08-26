@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExecaError[StdoutErrorType] extends ExecaSyncError[StdoutErrorType] {
   /**
   		The output of the process with `stdout` and `stderr` interleaved.
@@ -11,11 +12,11 @@ trait ExecaError[StdoutErrorType] extends ExecaSyncError[StdoutErrorType] {
   		- the `all` option is `false` (default value)
   		- `execa.sync()` was used
   		*/
-  var all: js.UndefOr[StdoutErrorType] = js.undefined
+  var all: js.UndefOr[StdoutErrorType] = js.native
   /**
   		Whether the process was canceled.
   		*/
-  var isCanceled: Boolean
+  var isCanceled: Boolean = js.native
 }
 
 object ExecaError {
@@ -31,20 +32,29 @@ object ExecaError {
     shortMessage: String,
     stderr: StdoutErrorType,
     stdout: StdoutErrorType,
-    timedOut: Boolean,
-    all: StdoutErrorType = null,
-    originalMessage: String = null,
-    signal: String = null,
-    signalDescription: String = null,
-    stack: String = null
+    timedOut: Boolean
   ): ExecaError[StdoutErrorType] = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], exitCode = exitCode.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], isCanceled = isCanceled.asInstanceOf[js.Any], killed = killed.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shortMessage = shortMessage.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any], timedOut = timedOut.asInstanceOf[js.Any])
-    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    if (originalMessage != null) __obj.updateDynamic("originalMessage")(originalMessage.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (signalDescription != null) __obj.updateDynamic("signalDescription")(signalDescription.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecaError[StdoutErrorType]]
   }
+  @scala.inline
+  implicit class ExecaErrorOps[Self <: ExecaError[_], StdoutErrorType] (val x: Self with ExecaError[StdoutErrorType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsCanceled(value: Boolean): Self = this.set("isCanceled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAll(value: StdoutErrorType): Self = this.set("all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAll: Self = this.set("all", js.undefined)
+  }
+  
 }
 

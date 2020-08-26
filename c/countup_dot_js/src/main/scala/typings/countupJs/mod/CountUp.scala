@@ -16,7 +16,6 @@ class CountUp protected () extends js.Object {
   def this(target: HTMLElement, endVal: Double, options: CountUpOptions) = this()
   def this(target: HTMLInputElement, endVal: Double, options: CountUpOptions) = this()
   var countDown: js.Any = js.native
-  var decimalMult: js.Any = js.native
   var defaults: js.Any = js.native
   var determineDirectionAndSmartEasing: js.Any = js.native
   var duration: Double = js.native
@@ -28,7 +27,7 @@ class CountUp protected () extends js.Object {
   var error: String = js.native
   var finalEndVal: js.Any = js.native
   var frameVal: Double = js.native
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[CountUpOptions] = js.native
   var paused: Boolean = js.native
   var rAF: js.Any = js.native
   var remaining: js.Any = js.native

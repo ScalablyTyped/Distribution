@@ -21,25 +21,45 @@ trait TrafficMirrorTargetArgs extends js.Object {
     */
   val networkLoadBalancerArn: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of resource tags.
+    * Key-value map of resource tags.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object TrafficMirrorTargetArgs {
   @scala.inline
-  def apply(
-    description: Input[String] = null,
-    networkInterfaceId: Input[String] = null,
-    networkLoadBalancerArn: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): TrafficMirrorTargetArgs = {
+  def apply(): TrafficMirrorTargetArgs = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
-    if (networkLoadBalancerArn != null) __obj.updateDynamic("networkLoadBalancerArn")(networkLoadBalancerArn.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficMirrorTargetArgs]
   }
+  @scala.inline
+  implicit class TrafficMirrorTargetArgsOps[Self <: TrafficMirrorTargetArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: Input[String]): Self = this.set("networkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("networkInterfaceId", js.undefined)
+    @scala.inline
+    def setNetworkLoadBalancerArn(value: Input[String]): Self = this.set("networkLoadBalancerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkLoadBalancerArn: Self = this.set("networkLoadBalancerArn", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

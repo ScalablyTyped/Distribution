@@ -46,28 +46,62 @@ trait CreateVpcLinkResponse extends js.Object {
 
 object CreateVpcLinkResponse {
   @scala.inline
-  def apply(
-    CreatedDate: timestampIso8601 = null,
-    Name: StringWithLengthBetween1And128 = null,
-    SecurityGroupIds: SecurityGroupIdList = null,
-    SubnetIds: SubnetIdList = null,
-    Tags: Tags = null,
-    VpcLinkId: Id = null,
-    VpcLinkStatus: VpcLinkStatus = null,
-    VpcLinkStatusMessage: StringWithLengthBetween0And1024 = null,
-    VpcLinkVersion: VpcLinkVersion = null
-  ): CreateVpcLinkResponse = {
+  def apply(): CreateVpcLinkResponse = {
     val __obj = js.Dynamic.literal()
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcLinkId != null) __obj.updateDynamic("VpcLinkId")(VpcLinkId.asInstanceOf[js.Any])
-    if (VpcLinkStatus != null) __obj.updateDynamic("VpcLinkStatus")(VpcLinkStatus.asInstanceOf[js.Any])
-    if (VpcLinkStatusMessage != null) __obj.updateDynamic("VpcLinkStatusMessage")(VpcLinkStatusMessage.asInstanceOf[js.Any])
-    if (VpcLinkVersion != null) __obj.updateDynamic("VpcLinkVersion")(VpcLinkVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVpcLinkResponse]
   }
+  @scala.inline
+  implicit class CreateVpcLinkResponseOps[Self <: CreateVpcLinkResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedDate(value: timestampIso8601): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setName(value: StringWithLengthBetween1And128): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: string*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: SecurityGroupIdList): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: string*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: SubnetIdList): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcLinkId(value: Id): Self = this.set("VpcLinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcLinkId: Self = this.set("VpcLinkId", js.undefined)
+    @scala.inline
+    def setVpcLinkStatus(value: VpcLinkStatus): Self = this.set("VpcLinkStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcLinkStatus: Self = this.set("VpcLinkStatus", js.undefined)
+    @scala.inline
+    def setVpcLinkStatusMessage(value: StringWithLengthBetween0And1024): Self = this.set("VpcLinkStatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcLinkStatusMessage: Self = this.set("VpcLinkStatusMessage", js.undefined)
+    @scala.inline
+    def setVpcLinkVersion(value: VpcLinkVersion): Self = this.set("VpcLinkVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcLinkVersion: Self = this.set("VpcLinkVersion", js.undefined)
+  }
+  
 }
 

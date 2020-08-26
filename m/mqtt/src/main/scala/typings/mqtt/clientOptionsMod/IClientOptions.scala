@@ -14,143 +14,197 @@ import typings.mqtt.mqttStrings.wss
 import typings.mqtt.mqttStrings.wx
 import typings.mqtt.mqttStrings.wxs
 import typings.mqtt.storeMod.Store
-import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IClientOptions extends ISecureClientOptions {
   /**
     * true, set to false to receive QoS 1 and 2 messages while offline
     */
-  var clean: js.UndefOr[Boolean] = js.undefined
+  var clean: js.UndefOr[Boolean] = js.native
   /**
     * 'mqttjs_' + Math.random().toString(16).substr(2, 8)
     */
-  var clientId: js.UndefOr[String] = js.undefined
+  var clientId: js.UndefOr[String] = js.native
   /**
     * 30 * 1000 milliseconds, time to wait before a CONNACK is received
     */
-  var connectTimeout: js.UndefOr[Double] = js.undefined
+  var connectTimeout: js.UndefOr[Double] = js.native
   // port is made into a number subsequently
-  var host: js.UndefOr[String] = js.undefined
+  var host: js.UndefOr[String] = js.native
   // host does NOT include port
-  var hostname: js.UndefOr[String] = js.undefined
+  var hostname: js.UndefOr[String] = js.native
   /**
     * a Store for the incoming packets
     */
-  var incomingStore: js.UndefOr[Store] = js.undefined
+  var incomingStore: js.UndefOr[Store] = js.native
   /**
     *  10 seconds, set to 0 to disable
     */
-  var keepalive: js.UndefOr[Double] = js.undefined
+  var keepalive: js.UndefOr[Double] = js.native
   /**
     * a Store for the outgoing packets
     */
-  var outgoingStore: js.UndefOr[Store] = js.undefined
+  var outgoingStore: js.UndefOr[Store] = js.native
   /**
     * the password required by your broker, if any
     */
-  var password: js.UndefOr[String] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var properties: js.UndefOr[AuthenticationData] = js.undefined
-  var protocol: js.UndefOr[wss | ws | mqtt | mqtts | tcp | ssl | wx | wxs] = js.undefined
+  var password: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var properties: js.UndefOr[AuthenticationData] = js.native
+  var protocol: js.UndefOr[wss | ws | mqtt | mqtts | tcp | ssl | wx | wxs] = js.native
   /**
     * 'MQTT'
     */
-  var protocolId: js.UndefOr[String] = js.undefined
+  var protocolId: js.UndefOr[String] = js.native
   /**
     * 4
     */
-  var protocolVersion: js.UndefOr[Double] = js.undefined
-  var queueQoSZero: js.UndefOr[Boolean] = js.undefined
+  var protocolVersion: js.UndefOr[Double] = js.native
+  var queueQoSZero: js.UndefOr[Boolean] = js.native
   /**
     * 1000 milliseconds, interval between two reconnections
     */
-  var reconnectPeriod: js.UndefOr[Double] = js.undefined
-  var reschedulePings: js.UndefOr[Boolean] = js.undefined
+  var reconnectPeriod: js.UndefOr[Double] = js.native
+  var reschedulePings: js.UndefOr[Boolean] = js.native
   /**
     * true, set to false to disable re-subscribe functionality
     */
-  var resubscribe: js.UndefOr[Boolean] = js.undefined
-  var servers: js.UndefOr[js.Array[Host]] = js.undefined
+  var resubscribe: js.UndefOr[Boolean] = js.native
+  var servers: js.UndefOr[js.Array[Host]] = js.native
   var transformWsUrl: js.UndefOr[
-    js.Function3[/* url */ String, /* options */ IClientOptions, /* client */ MqttClient, String]
-  ] = js.undefined
+    js.Function3[/* url */ String, /* options */ this.type, /* client */ MqttClient, String]
+  ] = js.native
   /**
     * the username required by your broker, if any
     */
-  var username: js.UndefOr[String] = js.undefined
+  var username: js.UndefOr[String] = js.native
   /**
     * a message that will sent by the broker automatically when the client disconnect badly.
     */
-  var will: js.UndefOr[Payload] = js.undefined
-  var wsOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var will: js.UndefOr[Payload] = js.native
+  var wsOptions: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 
 object IClientOptions {
   @scala.inline
-  def apply(
-    ca: String | (js.Array[Buffer | String]) | Buffer = null,
-    cert: String | (js.Array[Buffer | String]) | Buffer = null,
-    clean: js.UndefOr[Boolean] = js.undefined,
-    clientId: String = null,
-    connectTimeout: js.UndefOr[Double] = js.undefined,
-    host: String = null,
-    hostname: String = null,
-    incomingStore: Store = null,
-    keepalive: js.UndefOr[Double] = js.undefined,
-    key: String | (js.Array[Buffer | js.Object | String]) | Buffer = null,
-    outgoingStore: Store = null,
-    password: String = null,
-    path: String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    properties: AuthenticationData = null,
-    protocol: wss | ws | mqtt | mqtts | tcp | ssl | wx | wxs = null,
-    protocolId: String = null,
-    protocolVersion: js.UndefOr[Double] = js.undefined,
-    queueQoSZero: js.UndefOr[Boolean] = js.undefined,
-    reconnectPeriod: js.UndefOr[Double] = js.undefined,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    reschedulePings: js.UndefOr[Boolean] = js.undefined,
-    resubscribe: js.UndefOr[Boolean] = js.undefined,
-    servers: js.Array[Host] = null,
-    transformWsUrl: (/* url */ String, /* options */ IClientOptions, /* client */ MqttClient) => String = null,
-    username: String = null,
-    will: Payload = null,
-    wsOptions: StringDictionary[js.Any] = null
-  ): IClientOptions = {
+  def apply(): IClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.get.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectTimeout)) __obj.updateDynamic("connectTimeout")(connectTimeout.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (incomingStore != null) __obj.updateDynamic("incomingStore")(incomingStore.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (outgoingStore != null) __obj.updateDynamic("outgoingStore")(outgoingStore.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (protocolId != null) __obj.updateDynamic("protocolId")(protocolId.asInstanceOf[js.Any])
-    if (!js.isUndefined(protocolVersion)) __obj.updateDynamic("protocolVersion")(protocolVersion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(queueQoSZero)) __obj.updateDynamic("queueQoSZero")(queueQoSZero.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectPeriod)) __obj.updateDynamic("reconnectPeriod")(reconnectPeriod.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reschedulePings)) __obj.updateDynamic("reschedulePings")(reschedulePings.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resubscribe)) __obj.updateDynamic("resubscribe")(resubscribe.get.asInstanceOf[js.Any])
-    if (servers != null) __obj.updateDynamic("servers")(servers.asInstanceOf[js.Any])
-    if (transformWsUrl != null) __obj.updateDynamic("transformWsUrl")(js.Any.fromFunction3(transformWsUrl))
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (will != null) __obj.updateDynamic("will")(will.asInstanceOf[js.Any])
-    if (wsOptions != null) __obj.updateDynamic("wsOptions")(wsOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientOptions]
   }
+  @scala.inline
+  implicit class IClientOptionsOps[Self <: IClientOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClean(value: Boolean): Self = this.set("clean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClean: Self = this.set("clean", js.undefined)
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setConnectTimeout(value: Double): Self = this.set("connectTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectTimeout: Self = this.set("connectTimeout", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("hostname", js.undefined)
+    @scala.inline
+    def setIncomingStore(value: Store): Self = this.set("incomingStore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncomingStore: Self = this.set("incomingStore", js.undefined)
+    @scala.inline
+    def setKeepalive(value: Double): Self = this.set("keepalive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepalive: Self = this.set("keepalive", js.undefined)
+    @scala.inline
+    def setOutgoingStore(value: Store): Self = this.set("outgoingStore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutgoingStore: Self = this.set("outgoingStore", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setProperties(value: AuthenticationData): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setProtocol(value: wss | ws | mqtt | mqtts | tcp | ssl | wx | wxs): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setProtocolId(value: String): Self = this.set("protocolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocolId: Self = this.set("protocolId", js.undefined)
+    @scala.inline
+    def setProtocolVersion(value: Double): Self = this.set("protocolVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocolVersion: Self = this.set("protocolVersion", js.undefined)
+    @scala.inline
+    def setQueueQoSZero(value: Boolean): Self = this.set("queueQoSZero", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueueQoSZero: Self = this.set("queueQoSZero", js.undefined)
+    @scala.inline
+    def setReconnectPeriod(value: Double): Self = this.set("reconnectPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnectPeriod: Self = this.set("reconnectPeriod", js.undefined)
+    @scala.inline
+    def setReschedulePings(value: Boolean): Self = this.set("reschedulePings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReschedulePings: Self = this.set("reschedulePings", js.undefined)
+    @scala.inline
+    def setResubscribe(value: Boolean): Self = this.set("resubscribe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResubscribe: Self = this.set("resubscribe", js.undefined)
+    @scala.inline
+    def setServersVarargs(value: Host*): Self = this.set("servers", js.Array(value :_*))
+    @scala.inline
+    def setServers(value: js.Array[Host]): Self = this.set("servers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServers: Self = this.set("servers", js.undefined)
+    @scala.inline
+    def setTransformWsUrl(value: (/* url */ String, IClientOptions, /* client */ MqttClient) => String): Self = this.set("transformWsUrl", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteTransformWsUrl: Self = this.set("transformWsUrl", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+    @scala.inline
+    def setWill(value: Payload): Self = this.set("will", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWill: Self = this.set("will", js.undefined)
+    @scala.inline
+    def setWsOptions(value: StringDictionary[js.Any]): Self = this.set("wsOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWsOptions: Self = this.set("wsOptions", js.undefined)
+  }
+  
 }
 

@@ -67,6 +67,11 @@ object Database extends js.Object {
       * Asynchronously executes an SQL statement against the database and fires a callback with a possible `Error` argument, and a second argument holding a possible `ResultSet`.
       */
     def executeAsync(query: String): Unit = js.native
+    def executeAsync(
+      query: String,
+      vararg: js.UndefOr[scala.Nothing],
+      callback: js.Function2[/* param0 */ js.Any, /* param1 */ ResultSet, Unit]
+    ): Unit = js.native
     def executeAsync(query: String, vararg: js.Any): Unit = js.native
     def executeAsync(
       query: String,

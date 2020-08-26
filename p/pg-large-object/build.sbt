@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "pg-large-object"
-version := "2.0-dt-20190904Z-861115"
-scalaVersion := "2.13.2"
+version := "2.0-dt-20190904Z-2f0e07"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "pg" % "7.14-dt-20200515Z-16d6a3",
-  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20200515Z-54c1db",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "pg" % "7.14-dt-20200709Z-98135d",
+  "org.scalablytyped" %%% "pg-types" % "2.2.0-cf735f",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

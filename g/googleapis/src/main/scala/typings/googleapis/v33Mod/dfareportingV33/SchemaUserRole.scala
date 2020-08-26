@@ -55,26 +55,56 @@ trait SchemaUserRole extends js.Object {
 
 object SchemaUserRole {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    defaultUserRole: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    kind: String = null,
-    name: String = null,
-    parentUserRoleId: String = null,
-    permissions: js.Array[SchemaUserRolePermission] = null,
-    subaccountId: String = null
-  ): SchemaUserRole = {
+  def apply(): SchemaUserRole = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultUserRole)) __obj.updateDynamic("defaultUserRole")(defaultUserRole.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentUserRoleId != null) __obj.updateDynamic("parentUserRoleId")(parentUserRoleId.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserRole]
   }
+  @scala.inline
+  implicit class SchemaUserRoleOps[Self <: SchemaUserRole] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setDefaultUserRole(value: Boolean): Self = this.set("defaultUserRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultUserRole: Self = this.set("defaultUserRole", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParentUserRoleId(value: String): Self = this.set("parentUserRoleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentUserRoleId: Self = this.set("parentUserRoleId", js.undefined)
+    @scala.inline
+    def setPermissionsVarargs(value: SchemaUserRolePermission*): Self = this.set("permissions", js.Array(value :_*))
+    @scala.inline
+    def setPermissions(value: js.Array[SchemaUserRolePermission]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+  }
+  
 }
 

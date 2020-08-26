@@ -25,11 +25,32 @@ trait SchemaGoogleFirestoreAdminV1ImportDocumentsRequest extends js.Object {
 
 object SchemaGoogleFirestoreAdminV1ImportDocumentsRequest {
   @scala.inline
-  def apply(collectionIds: js.Array[String] = null, inputUriPrefix: String = null): SchemaGoogleFirestoreAdminV1ImportDocumentsRequest = {
+  def apply(): SchemaGoogleFirestoreAdminV1ImportDocumentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (collectionIds != null) __obj.updateDynamic("collectionIds")(collectionIds.asInstanceOf[js.Any])
-    if (inputUriPrefix != null) __obj.updateDynamic("inputUriPrefix")(inputUriPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1ImportDocumentsRequest]
   }
+  @scala.inline
+  implicit class SchemaGoogleFirestoreAdminV1ImportDocumentsRequestOps[Self <: SchemaGoogleFirestoreAdminV1ImportDocumentsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollectionIdsVarargs(value: String*): Self = this.set("collectionIds", js.Array(value :_*))
+    @scala.inline
+    def setCollectionIds(value: js.Array[String]): Self = this.set("collectionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionIds: Self = this.set("collectionIds", js.undefined)
+    @scala.inline
+    def setInputUriPrefix(value: String): Self = this.set("inputUriPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputUriPrefix: Self = this.set("inputUriPrefix", js.undefined)
+  }
+  
 }
 

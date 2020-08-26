@@ -49,11 +49,11 @@ object enumerationsMod extends js.Object {
       @JSName("model")
       var model_FCondition: IModel = js.native
       def attributeValue: String = js.native
-      def attributeValue(newValue: String): js.Any = js.native
+      def attributeValue_=(newValue: String): Unit = js.native
       def containerAsConditionSettings: ConditionSettings = js.native
       def containerAsConditionalSettings: ConditionalSettings = js.native
       def editableVisible: Boolean = js.native
-      def editableVisible(newValue: Boolean): js.Any = js.native
+      def editableVisible_=(newValue: Boolean): Unit = js.native
     }
     
     /**
@@ -87,7 +87,7 @@ object enumerationsMod extends js.Object {
     }
     
     /**
-      * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
       */
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -112,24 +112,14 @@ object enumerationsMod extends js.Object {
       var model_FEnumerationValue: IModel = js.native
       @JSName("name")
       val name_FEnumerationValue: String = js.native
-      /**
-        * Returns the qualified name of this element, or
-        * null if this element is not a part of the model,
-        * or if it or one of its namespace containers does not have a
-        * valid name.
-        */
-      /* CompleteClass */
-      override val qualifiedName: String | Null = js.native
       def caption: Text = js.native
-      def caption(newValue: Text): js.Any = js.native
+      def caption_=(newValue: Text): Unit = js.native
       def containerAsEnumeration: Enumeration = js.native
-      def image(): js.Any = js.native
-      def image(newValue: IImage): js.Any = js.native
+      def image: IImage | Null = js.native
       def imageQualifiedName: String | Null = js.native
-      @JSName("image")
-      def image_Union: IImage | Null = js.native
+      def image_=(newValue: IImage | Null): Unit = js.native
       def name: String = js.native
-      def name(newValue: String): js.Any = js.native
+      def name_=(newValue: String): Unit = js.native
       @JSName("qualifiedName")
       def qualifiedName_MEnumerationValue: String | Null = js.native
     }
@@ -143,7 +133,7 @@ object enumerationsMod extends js.Object {
     }
     
     /**
-      * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
       */
     @js.native
     trait IEnumerationValue

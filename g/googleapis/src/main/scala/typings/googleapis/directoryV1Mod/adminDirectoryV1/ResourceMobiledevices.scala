@@ -29,6 +29,7 @@ class ResourceMobiledevices protected () extends js.Object {
     */
   def action(): GaxiosPromise[Unit] = js.native
   def action(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def action(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def action(params: ParamsResourceMobiledevicesAction): GaxiosPromise[Unit] = js.native
   def action(params: ParamsResourceMobiledevicesAction, callback: BodyResponseCallback[Unit]): Unit = js.native
   def action(
@@ -57,6 +58,7 @@ class ResourceMobiledevices protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceMobiledevicesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceMobiledevicesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -86,6 +88,7 @@ class ResourceMobiledevices protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaMobileDevice] = js.native
   def get(callback: BodyResponseCallback[SchemaMobileDevice]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMobileDevice] = js.native
   def get(params: ParamsResourceMobiledevicesGet): GaxiosPromise[SchemaMobileDevice] = js.native
   def get(params: ParamsResourceMobiledevicesGet, callback: BodyResponseCallback[SchemaMobileDevice]): Unit = js.native
   def get(
@@ -119,6 +122,7 @@ class ResourceMobiledevices protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaMobileDevices] = js.native
   def list(callback: BodyResponseCallback[SchemaMobileDevices]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMobileDevices] = js.native
   def list(params: ParamsResourceMobiledevicesList): GaxiosPromise[SchemaMobileDevices] = js.native
   def list(params: ParamsResourceMobiledevicesList, callback: BodyResponseCallback[SchemaMobileDevices]): Unit = js.native
   def list(

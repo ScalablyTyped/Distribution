@@ -74,14 +74,46 @@ object LocalTime extends js.Object {
   def now(clockOrZone: Clock): LocalTime = js.native
   def now(clockOrZone: ZoneId): LocalTime = js.native
   def of(): LocalTime = js.native
+  def of(
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: js.UndefOr[scala.Nothing],
+    nanoOfSecond: Double
+  ): LocalTime = js.native
+  def of(hour: js.UndefOr[scala.Nothing], minute: js.UndefOr[scala.Nothing], second: Double): LocalTime = js.native
+  def of(
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double,
+    nanoOfSecond: Double
+  ): LocalTime = js.native
+  def of(hour: js.UndefOr[scala.Nothing], minute: Double): LocalTime = js.native
+  def of(
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: js.UndefOr[scala.Nothing],
+    nanoOfSecond: Double
+  ): LocalTime = js.native
+  def of(hour: js.UndefOr[scala.Nothing], minute: Double, second: Double): LocalTime = js.native
+  def of(hour: js.UndefOr[scala.Nothing], minute: Double, second: Double, nanoOfSecond: Double): LocalTime = js.native
   def of(hour: Double): LocalTime = js.native
+  def of(
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: js.UndefOr[scala.Nothing],
+    nanoOfSecond: Double
+  ): LocalTime = js.native
+  def of(hour: Double, minute: js.UndefOr[scala.Nothing], second: Double): LocalTime = js.native
+  def of(hour: Double, minute: js.UndefOr[scala.Nothing], second: Double, nanoOfSecond: Double): LocalTime = js.native
   def of(hour: Double, minute: Double): LocalTime = js.native
+  def of(hour: Double, minute: Double, second: js.UndefOr[scala.Nothing], nanoOfSecond: Double): LocalTime = js.native
   def of(hour: Double, minute: Double, second: Double): LocalTime = js.native
   def of(hour: Double, minute: Double, second: Double, nanoOfSecond: Double): LocalTime = js.native
   def ofInstant(instant: Instant): LocalTime = js.native
   def ofInstant(instant: Instant, zone: ZoneId): LocalTime = js.native
   def ofNanoOfDay(nanoOfDay: Double): LocalTime = js.native
   def ofSecondOfDay(): LocalTime = js.native
+  def ofSecondOfDay(secondOfDay: js.UndefOr[scala.Nothing], nanoOfSecond: Double): LocalTime = js.native
   def ofSecondOfDay(secondOfDay: Double): LocalTime = js.native
   def ofSecondOfDay(secondOfDay: Double, nanoOfSecond: Double): LocalTime = js.native
   def parse(text: String): LocalTime = js.native

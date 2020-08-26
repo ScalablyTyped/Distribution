@@ -53,5 +53,46 @@ object Color {
     __obj.updateDynamic("900")(`900`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
+  @scala.inline
+  implicit class ColorOps[Self <: Color] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set100(value: String): Self = this.set("100", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set200(value: String): Self = this.set("200", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set300(value: String): Self = this.set("300", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set400(value: String): Self = this.set("400", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set50(value: String): Self = this.set("50", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set500(value: String): Self = this.set("500", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set600(value: String): Self = this.set("600", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set700(value: String): Self = this.set("700", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set800(value: String): Self = this.set("800", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set900(value: String): Self = this.set("900", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setA100(value: String): Self = this.set("A100", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setA200(value: String): Self = this.set("A200", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setA400(value: String): Self = this.set("A400", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setA700(value: String): Self = this.set("A700", value.asInstanceOf[js.Any])
+  }
+  
 }
 

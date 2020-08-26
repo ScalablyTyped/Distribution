@@ -12,10 +12,25 @@ class AES_CCM protected ()
   def this(
     key: Uint8Array,
     nonce: Uint8Array,
-    adata: js.UndefOr[Uint8Array],
-    tagSize: js.UndefOr[Double],
+    adata: js.UndefOr[scala.Nothing],
+    tagSize: js.UndefOr[scala.Nothing],
     dataLength: Double
   ) = this()
+  def this(
+    key: Uint8Array,
+    nonce: Uint8Array,
+    adata: js.UndefOr[scala.Nothing],
+    tagSize: Double,
+    dataLength: Double
+  ) = this()
+  def this(
+    key: Uint8Array,
+    nonce: Uint8Array,
+    adata: Uint8Array,
+    tagSize: js.UndefOr[scala.Nothing],
+    dataLength: Double
+  ) = this()
+  def this(key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagSize: Double, dataLength: Double) = this()
 }
 
 /* static members */
@@ -23,9 +38,23 @@ class AES_CCM protected ()
 @js.native
 object AES_CCM extends js.Object {
   def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
+  def decrypt(
+    cipher: Uint8Array,
+    key: Uint8Array,
+    nonce: Uint8Array,
+    adata: js.UndefOr[scala.Nothing],
+    tagsize: Double
+  ): Uint8Array = js.native
   def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
   def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
   def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
+  def encrypt(
+    clear: Uint8Array,
+    key: Uint8Array,
+    nonce: Uint8Array,
+    adata: js.UndefOr[scala.Nothing],
+    tagsize: Double
+  ): Uint8Array = js.native
   def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
   def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
 }

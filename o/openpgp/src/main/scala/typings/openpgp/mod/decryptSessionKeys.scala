@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object decryptSessionKeys extends js.Object {
   def apply(message: Message): js.Promise[js.UndefOr[js.Array[Algorithm]]] = js.native
+  def apply(message: Message, privateKeys: js.UndefOr[scala.Nothing], passwords: String): js.Promise[js.UndefOr[js.Array[Algorithm]]] = js.native
+  def apply(message: Message, privateKeys: js.UndefOr[scala.Nothing], passwords: js.Array[String]): js.Promise[js.UndefOr[js.Array[Algorithm]]] = js.native
   def apply(message: Message, privateKeys: js.Array[Key]): js.Promise[js.UndefOr[js.Array[Algorithm]]] = js.native
   def apply(message: Message, privateKeys: js.Array[Key], passwords: String): js.Promise[js.UndefOr[js.Array[Algorithm]]] = js.native
   def apply(message: Message, privateKeys: js.Array[Key], passwords: js.Array[String]): js.Promise[js.UndefOr[js.Array[Algorithm]]] = js.native

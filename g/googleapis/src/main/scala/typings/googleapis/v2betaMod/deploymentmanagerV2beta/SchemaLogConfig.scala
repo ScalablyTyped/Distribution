@@ -25,16 +25,34 @@ trait SchemaLogConfig extends js.Object {
 
 object SchemaLogConfig {
   @scala.inline
-  def apply(
-    cloudAudit: SchemaLogConfigCloudAuditOptions = null,
-    counter: SchemaLogConfigCounterOptions = null,
-    dataAccess: SchemaLogConfigDataAccessOptions = null
-  ): SchemaLogConfig = {
+  def apply(): SchemaLogConfig = {
     val __obj = js.Dynamic.literal()
-    if (cloudAudit != null) __obj.updateDynamic("cloudAudit")(cloudAudit.asInstanceOf[js.Any])
-    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
-    if (dataAccess != null) __obj.updateDynamic("dataAccess")(dataAccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLogConfig]
   }
+  @scala.inline
+  implicit class SchemaLogConfigOps[Self <: SchemaLogConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudAudit(value: SchemaLogConfigCloudAuditOptions): Self = this.set("cloudAudit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudAudit: Self = this.set("cloudAudit", js.undefined)
+    @scala.inline
+    def setCounter(value: SchemaLogConfigCounterOptions): Self = this.set("counter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCounter: Self = this.set("counter", js.undefined)
+    @scala.inline
+    def setDataAccess(value: SchemaLogConfigDataAccessOptions): Self = this.set("dataAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataAccess: Self = this.set("dataAccess", js.undefined)
+  }
+  
 }
 

@@ -12,18 +12,15 @@ import scala.scalajs.js.annotation._
 object PullHelpers extends js.Object {
   @js.native
   class OtherPullDeclsWalker ()
-    extends typings.typescriptServices.TypeScript.PullHelpers.OtherPullDeclsWalker {
-    /* CompleteClass */
-    override var currentlyWalkingOtherDecls: js.Any = js.native
-    /* CompleteClass */
-    override def walkOtherPullDecls(
-      currentDecl: typings.typescriptServices.TypeScript.PullDecl,
-      otherDecls: js.Array[typings.typescriptServices.TypeScript.PullDecl],
-      callBack: js.Function1[/* otherDecl */ typings.typescriptServices.TypeScript.PullDecl, Unit]
-    ): Unit = js.native
-  }
+    extends typings.typescriptServices.TypeScript.PullHelpers.OtherPullDeclsWalker
   
   def diagnosticFromDecl(decl: typings.typescriptServices.TypeScript.PullDecl, diagnosticKey: String): typings.typescriptServices.TypeScript.Diagnostic = js.native
+  def diagnosticFromDecl(
+    decl: typings.typescriptServices.TypeScript.PullDecl,
+    diagnosticKey: String,
+    _arguments: js.UndefOr[scala.Nothing],
+    additionalLocations: js.Array[typings.typescriptServices.TypeScript.Location]
+  ): typings.typescriptServices.TypeScript.Diagnostic = js.native
   def diagnosticFromDecl(
     decl: typings.typescriptServices.TypeScript.PullDecl,
     diagnosticKey: String,

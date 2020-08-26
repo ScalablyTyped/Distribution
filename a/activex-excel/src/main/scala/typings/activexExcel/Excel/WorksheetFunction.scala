@@ -193,15 +193,26 @@ trait WorksheetFunction extends js.Object {
   def BesselK(Arg1: js.Any, Arg2: js.Any): Double = js.native
   def BesselY(Arg1: js.Any, Arg2: js.Any): Double = js.native
   def BetaDist(Arg1: Double, Arg2: Double, Arg3: Double): Double = js.native
+  def BetaDist(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.UndefOr[scala.Nothing], Arg5: js.Any): Double = js.native
   def BetaDist(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any): Double = js.native
   def BetaDist(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any, Arg5: js.Any): Double = js.native
   def BetaInv(Arg1: Double, Arg2: Double, Arg3: Double): Double = js.native
+  def BetaInv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.UndefOr[scala.Nothing], Arg5: js.Any): Double = js.native
   def BetaInv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any): Double = js.native
   def BetaInv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any, Arg5: js.Any): Double = js.native
   def Beta_Dist(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Boolean): Double = js.native
+  def Beta_Dist(
+    Arg1: Double,
+    Arg2: Double,
+    Arg3: Double,
+    Arg4: Boolean,
+    Arg5: js.UndefOr[scala.Nothing],
+    Arg6: js.Any
+  ): Double = js.native
   def Beta_Dist(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Boolean, Arg5: js.Any): Double = js.native
   def Beta_Dist(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Boolean, Arg5: js.Any, Arg6: js.Any): Double = js.native
   def Beta_Inv(Arg1: Double, Arg2: Double, Arg3: Double): Double = js.native
+  def Beta_Inv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.UndefOr[scala.Nothing], Arg5: js.Any): Double = js.native
   def Beta_Inv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any): Double = js.native
   def Beta_Inv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any, Arg5: js.Any): Double = js.native
   def Bin2Dec(Arg1: js.Any): String = js.native
@@ -512,6 +523,7 @@ trait WorksheetFunction extends js.Object {
   def Fisher(Arg1: Double): Double = js.native
   def FisherInv(Arg1: Double): Double = js.native
   def Fixed(Arg1: Double): String = js.native
+  def Fixed(Arg1: Double, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any): String = js.native
   def Fixed(Arg1: Double, Arg2: js.Any): String = js.native
   def Fixed(Arg1: Double, Arg2: js.Any, Arg3: js.Any): String = js.native
   def Floor(Arg1: Double, Arg2: Double): Double = js.native
@@ -520,6 +532,7 @@ trait WorksheetFunction extends js.Object {
   def Forecast(Arg1: Double, Arg2: js.Any, Arg3: js.Any): Double = js.native
   def Frequency(Arg1: js.Any, Arg2: js.Any): js.Any = js.native
   def Fv(Arg1: Double, Arg2: Double, Arg3: Double): Double = js.native
+  def Fv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.UndefOr[scala.Nothing], Arg5: js.Any): Double = js.native
   def Fv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any): Double = js.native
   def Fv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any, Arg5: js.Any): Double = js.native
   def GammaDist(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Boolean): Double = js.native
@@ -595,7 +608,11 @@ trait WorksheetFunction extends js.Object {
     Arg30: js.UndefOr[js.Any]
   ): Double = js.native
   def Growth(Arg1: js.Any): js.Any = js.native
+  def Growth(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
+  def Growth(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any): js.Any = js.native
+  def Growth(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def Growth(Arg1: js.Any, Arg2: js.Any): js.Any = js.native
+  def Growth(Arg1: js.Any, Arg2: js.Any, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
   def Growth(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any): js.Any = js.native
   def Growth(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def HLookup(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any): js.Any = js.native
@@ -722,12 +739,21 @@ trait WorksheetFunction extends js.Object {
   ): String = js.native
   def Imaginary(Arg1: js.Any): Double = js.native
   def Index(Arg1: js.Any, Arg2: Double): js.Any = js.native
+  def Index(Arg1: js.Any, Arg2: Double, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
   def Index(Arg1: js.Any, Arg2: Double, Arg3: js.Any): js.Any = js.native
   def Index(Arg1: js.Any, Arg2: Double, Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def IntRate(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): Double = js.native
   def IntRate(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any, Arg5: js.Any): Double = js.native
   def Intercept(Arg1: js.Any, Arg2: js.Any): Double = js.native
   def Ipmt(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Double): Double = js.native
+  def Ipmt(
+    Arg1: Double,
+    Arg2: Double,
+    Arg3: Double,
+    Arg4: Double,
+    Arg5: js.UndefOr[scala.Nothing],
+    Arg6: js.Any
+  ): Double = js.native
   def Ipmt(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Double, Arg5: js.Any): Double = js.native
   def Ipmt(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Double, Arg5: js.Any, Arg6: js.Any): Double = js.native
   def Irr(Arg1: js.Any): Double = js.native
@@ -809,7 +835,11 @@ trait WorksheetFunction extends js.Object {
     Arg30: js.UndefOr[js.Any]
   ): Double = js.native
   def LinEst(Arg1: js.Any): js.Any = js.native
+  def LinEst(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
+  def LinEst(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any): js.Any = js.native
+  def LinEst(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def LinEst(Arg1: js.Any, Arg2: js.Any): js.Any = js.native
+  def LinEst(Arg1: js.Any, Arg2: js.Any, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
   def LinEst(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any): js.Any = js.native
   def LinEst(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def Ln(Arg1: Double): Double = js.native
@@ -817,7 +847,11 @@ trait WorksheetFunction extends js.Object {
   def Log(Arg1: Double, Arg2: js.Any): Double = js.native
   def Log10(Arg1: Double): Double = js.native
   def LogEst(Arg1: js.Any): js.Any = js.native
+  def LogEst(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
+  def LogEst(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any): js.Any = js.native
+  def LogEst(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def LogEst(Arg1: js.Any, Arg2: js.Any): js.Any = js.native
+  def LogEst(Arg1: js.Any, Arg2: js.Any, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
   def LogEst(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any): js.Any = js.native
   def LogEst(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def LogInv(Arg1: Double, Arg2: Double, Arg3: Double): Double = js.native
@@ -1060,6 +1094,7 @@ trait WorksheetFunction extends js.Object {
     Arg30: js.UndefOr[js.Any]
   ): Double = js.native
   def NPer(Arg1: Double, Arg2: Double, Arg3: Double): Double = js.native
+  def NPer(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.UndefOr[scala.Nothing], Arg5: js.Any): Double = js.native
   def NPer(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any): Double = js.native
   def NPer(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any, Arg5: js.Any): Double = js.native
   def NegBinomDist(Arg1: Double, Arg2: Double, Arg3: Double): Double = js.native
@@ -1067,6 +1102,7 @@ trait WorksheetFunction extends js.Object {
   def NetworkDays(Arg1: js.Any, Arg2: js.Any): Double = js.native
   def NetworkDays(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any): Double = js.native
   def NetworkDays_Intl(Arg1: js.Any, Arg2: js.Any): Double = js.native
+  def NetworkDays_Intl(Arg1: js.Any, Arg2: js.Any, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): Double = js.native
   def NetworkDays_Intl(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any): Double = js.native
   def NetworkDays_Intl(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): Double = js.native
   def Nominal(Arg1: js.Any, Arg2: js.Any): Double = js.native
@@ -1226,12 +1262,21 @@ trait WorksheetFunction extends js.Object {
   def Phonetic(Arg1: Range): String = js.native
   def Pi(): Double = js.native
   def Pmt(Arg1: Double, Arg2: Double, Arg3: Double): Double = js.native
+  def Pmt(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.UndefOr[scala.Nothing], Arg5: js.Any): Double = js.native
   def Pmt(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any): Double = js.native
   def Pmt(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any, Arg5: js.Any): Double = js.native
   def Poisson(Arg1: Double, Arg2: Double, Arg3: Boolean): Double = js.native
   def Poisson_Dist(Arg1: Double, Arg2: Double, Arg3: Boolean): Double = js.native
   def Power(Arg1: Double, Arg2: Double): Double = js.native
   def Ppmt(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Double): Double = js.native
+  def Ppmt(
+    Arg1: Double,
+    Arg2: Double,
+    Arg3: Double,
+    Arg4: Double,
+    Arg5: js.UndefOr[scala.Nothing],
+    Arg6: js.Any
+  ): Double = js.native
   def Ppmt(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Double, Arg5: js.Any): Double = js.native
   def Ppmt(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Double, Arg5: js.Any, Arg6: js.Any): Double = js.native
   def Price(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any, Arg5: js.Any, Arg6: js.Any): Double = js.native
@@ -1276,6 +1321,7 @@ trait WorksheetFunction extends js.Object {
   ): Double = js.native
   def Proper(Arg1: String): String = js.native
   def Pv(Arg1: Double, Arg2: Double, Arg3: Double): Double = js.native
+  def Pv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.UndefOr[scala.Nothing], Arg5: js.Any): Double = js.native
   def Pv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any): Double = js.native
   def Pv(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any, Arg5: js.Any): Double = js.native
   def Quartile(Arg1: js.Any, Arg2: Double): Double = js.native
@@ -1324,7 +1370,32 @@ trait WorksheetFunction extends js.Object {
   def Rank_Eq(Arg1: Double, Arg2: Range): Double = js.native
   def Rank_Eq(Arg1: Double, Arg2: Range, Arg3: js.Any): Double = js.native
   def Rate(Arg1: Double, Arg2: Double, Arg3: Double): Double = js.native
+  def Rate(
+    Arg1: Double,
+    Arg2: Double,
+    Arg3: Double,
+    Arg4: js.UndefOr[scala.Nothing],
+    Arg5: js.UndefOr[scala.Nothing],
+    Arg6: js.Any
+  ): Double = js.native
+  def Rate(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.UndefOr[scala.Nothing], Arg5: js.Any): Double = js.native
+  def Rate(
+    Arg1: Double,
+    Arg2: Double,
+    Arg3: Double,
+    Arg4: js.UndefOr[scala.Nothing],
+    Arg5: js.Any,
+    Arg6: js.Any
+  ): Double = js.native
   def Rate(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any): Double = js.native
+  def Rate(
+    Arg1: Double,
+    Arg2: Double,
+    Arg3: Double,
+    Arg4: js.Any,
+    Arg5: js.UndefOr[scala.Nothing],
+    Arg6: js.Any
+  ): Double = js.native
   def Rate(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any, Arg5: js.Any): Double = js.native
   def Rate(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: js.Any, Arg5: js.Any, Arg6: js.Any): Double = js.native
   def Received(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): Double = js.native
@@ -1704,7 +1775,11 @@ trait WorksheetFunction extends js.Object {
   def ThaiYear(Arg1: Double): Double = js.native
   def Transpose(Arg1: js.Any): js.Any = js.native
   def Trend(Arg1: js.Any): js.Any = js.native
+  def Trend(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
+  def Trend(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any): js.Any = js.native
+  def Trend(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def Trend(Arg1: js.Any, Arg2: js.Any): js.Any = js.native
+  def Trend(Arg1: js.Any, Arg2: js.Any, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
   def Trend(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any): js.Any = js.native
   def Trend(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def Trim(Arg1: String): String = js.native
@@ -1841,6 +1916,15 @@ trait WorksheetFunction extends js.Object {
     Arg30: js.UndefOr[js.Any]
   ): Double = js.native
   def Vdb(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Double, Arg5: Double): Double = js.native
+  def Vdb(
+    Arg1: Double,
+    Arg2: Double,
+    Arg3: Double,
+    Arg4: Double,
+    Arg5: Double,
+    Arg6: js.UndefOr[scala.Nothing],
+    Arg7: js.Any
+  ): Double = js.native
   def Vdb(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Double, Arg5: Double, Arg6: js.Any): Double = js.native
   def Vdb(Arg1: Double, Arg2: Double, Arg3: Double, Arg4: Double, Arg5: Double, Arg6: js.Any, Arg7: js.Any): Double = js.native
   def WeekNum(Arg1: js.Any): Double = js.native
@@ -1852,6 +1936,7 @@ trait WorksheetFunction extends js.Object {
   def WorkDay(Arg1: js.Any, Arg2: js.Any): Double = js.native
   def WorkDay(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any): Double = js.native
   def WorkDay_Intl(Arg1: js.Any, Arg2: js.Any): Double = js.native
+  def WorkDay_Intl(Arg1: js.Any, Arg2: js.Any, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): Double = js.native
   def WorkDay_Intl(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any): Double = js.native
   def WorkDay_Intl(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): Double = js.native
   def Xirr(Arg1: js.Any, Arg2: js.Any): Double = js.native

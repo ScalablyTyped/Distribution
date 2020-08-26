@@ -45,6 +45,7 @@ object cloudfrontMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: OriginAccessIdentityArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: OriginAccessIdentityArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -62,8 +63,8 @@ object cloudfrontMod extends js.Object {
     def this(name: String, args: PublicKeyArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getDistribution(args: GetDistributionArgs): js.Promise[GetDistributionResult] with GetDistributionResult = js.native
-  def getDistribution(args: GetDistributionArgs, opts: InvokeOptions): js.Promise[GetDistributionResult] with GetDistributionResult = js.native
+  def getDistribution(args: GetDistributionArgs): js.Promise[GetDistributionResult] = js.native
+  def getDistribution(args: GetDistributionArgs, opts: InvokeOptions): js.Promise[GetDistributionResult] = js.native
   /* static members */
   @js.native
   object Distribution extends js.Object {
@@ -74,8 +75,10 @@ object cloudfrontMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.distributionMod.Distribution = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.distributionMod.Distribution = js.native
     def get(name: String, id: Input[ID], state: DistributionState): typings.pulumiAws.distributionMod.Distribution = js.native
     def get(name: String, id: Input[ID], state: DistributionState, opts: CustomResourceOptions): typings.pulumiAws.distributionMod.Distribution = js.native
     /**
@@ -95,8 +98,10 @@ object cloudfrontMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.originAccessIdentityMod.OriginAccessIdentity = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.originAccessIdentityMod.OriginAccessIdentity = js.native
     def get(name: String, id: Input[ID], state: OriginAccessIdentityState): typings.pulumiAws.originAccessIdentityMod.OriginAccessIdentity = js.native
     def get(name: String, id: Input[ID], state: OriginAccessIdentityState, opts: CustomResourceOptions): typings.pulumiAws.originAccessIdentityMod.OriginAccessIdentity = js.native
     /**
@@ -116,8 +121,10 @@ object cloudfrontMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.publicKeyMod.PublicKey = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.publicKeyMod.PublicKey = js.native
     def get(name: String, id: Input[ID], state: PublicKeyState): typings.pulumiAws.publicKeyMod.PublicKey = js.native
     def get(name: String, id: Input[ID], state: PublicKeyState, opts: CustomResourceOptions): typings.pulumiAws.publicKeyMod.PublicKey = js.native
     /**

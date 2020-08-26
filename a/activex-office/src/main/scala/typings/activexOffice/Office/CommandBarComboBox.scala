@@ -51,6 +51,7 @@ trait CommandBarComboBox extends js.Object {
   def AddItem(Text: String, Index: js.Any): Unit = js.native
   def Clear(): Unit = js.native
   def Copy(): CommandBarControl = js.native
+  def Copy(Bar: js.UndefOr[scala.Nothing], Before: Double): CommandBarControl = js.native
   def Copy(Bar: CommandBar): CommandBarControl = js.native
   def Copy(Bar: CommandBar, Before: Double): CommandBarControl = js.native
   def Delete(): Unit = js.native
@@ -58,6 +59,7 @@ trait CommandBarComboBox extends js.Object {
   def Execute(): Unit = js.native
   def List(Index: Double): String = js.native
   def Move(): CommandBarControl = js.native
+  def Move(Bar: js.UndefOr[scala.Nothing], Before: Double): CommandBarControl = js.native
   def Move(Bar: CommandBar): CommandBarControl = js.native
   def Move(Bar: CommandBar, Before: Double): CommandBarControl = js.native
   def RemoveItem(Index: Double): Unit = js.native

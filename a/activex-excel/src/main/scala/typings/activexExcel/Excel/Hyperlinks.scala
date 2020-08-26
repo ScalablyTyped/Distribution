@@ -13,11 +13,55 @@ trait Hyperlinks extends js.Object {
   def apply(Index: String): Hyperlink = js.native
   def apply(Index: Double): Hyperlink = js.native
   def Add(Anchor: Range, Address: String): Hyperlink = js.native
+  def Add(
+    Anchor: Range,
+    Address: String,
+    SubAddress: js.UndefOr[scala.Nothing],
+    ScreenTip: js.UndefOr[scala.Nothing],
+    TextToDisplay: String
+  ): Hyperlink = js.native
+  def Add(Anchor: Range, Address: String, SubAddress: js.UndefOr[scala.Nothing], ScreenTip: String): Hyperlink = js.native
+  def Add(
+    Anchor: Range,
+    Address: String,
+    SubAddress: js.UndefOr[scala.Nothing],
+    ScreenTip: String,
+    TextToDisplay: String
+  ): Hyperlink = js.native
   def Add(Anchor: Range, Address: String, SubAddress: String): Hyperlink = js.native
+  def Add(
+    Anchor: Range,
+    Address: String,
+    SubAddress: String,
+    ScreenTip: js.UndefOr[scala.Nothing],
+    TextToDisplay: String
+  ): Hyperlink = js.native
   def Add(Anchor: Range, Address: String, SubAddress: String, ScreenTip: String): Hyperlink = js.native
   def Add(Anchor: Range, Address: String, SubAddress: String, ScreenTip: String, TextToDisplay: String): Hyperlink = js.native
   def Add(Anchor: Shape, Address: String): Hyperlink = js.native
+  def Add(
+    Anchor: Shape,
+    Address: String,
+    SubAddress: js.UndefOr[scala.Nothing],
+    ScreenTip: js.UndefOr[scala.Nothing],
+    TextToDisplay: String
+  ): Hyperlink = js.native
+  def Add(Anchor: Shape, Address: String, SubAddress: js.UndefOr[scala.Nothing], ScreenTip: String): Hyperlink = js.native
+  def Add(
+    Anchor: Shape,
+    Address: String,
+    SubAddress: js.UndefOr[scala.Nothing],
+    ScreenTip: String,
+    TextToDisplay: String
+  ): Hyperlink = js.native
   def Add(Anchor: Shape, Address: String, SubAddress: String): Hyperlink = js.native
+  def Add(
+    Anchor: Shape,
+    Address: String,
+    SubAddress: String,
+    ScreenTip: js.UndefOr[scala.Nothing],
+    TextToDisplay: String
+  ): Hyperlink = js.native
   def Add(Anchor: Shape, Address: String, SubAddress: String, ScreenTip: String): Hyperlink = js.native
   def Add(Anchor: Shape, Address: String, SubAddress: String, ScreenTip: String, TextToDisplay: String): Hyperlink = js.native
   def Delete(): Unit = js.native

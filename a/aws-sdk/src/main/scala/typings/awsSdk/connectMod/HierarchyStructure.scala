@@ -30,20 +30,42 @@ trait HierarchyStructure extends js.Object {
 
 object HierarchyStructure {
   @scala.inline
-  def apply(
-    LevelFive: HierarchyLevel = null,
-    LevelFour: HierarchyLevel = null,
-    LevelOne: HierarchyLevel = null,
-    LevelThree: HierarchyLevel = null,
-    LevelTwo: HierarchyLevel = null
-  ): HierarchyStructure = {
+  def apply(): HierarchyStructure = {
     val __obj = js.Dynamic.literal()
-    if (LevelFive != null) __obj.updateDynamic("LevelFive")(LevelFive.asInstanceOf[js.Any])
-    if (LevelFour != null) __obj.updateDynamic("LevelFour")(LevelFour.asInstanceOf[js.Any])
-    if (LevelOne != null) __obj.updateDynamic("LevelOne")(LevelOne.asInstanceOf[js.Any])
-    if (LevelThree != null) __obj.updateDynamic("LevelThree")(LevelThree.asInstanceOf[js.Any])
-    if (LevelTwo != null) __obj.updateDynamic("LevelTwo")(LevelTwo.asInstanceOf[js.Any])
     __obj.asInstanceOf[HierarchyStructure]
   }
+  @scala.inline
+  implicit class HierarchyStructureOps[Self <: HierarchyStructure] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLevelFive(value: HierarchyLevel): Self = this.set("LevelFive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevelFive: Self = this.set("LevelFive", js.undefined)
+    @scala.inline
+    def setLevelFour(value: HierarchyLevel): Self = this.set("LevelFour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevelFour: Self = this.set("LevelFour", js.undefined)
+    @scala.inline
+    def setLevelOne(value: HierarchyLevel): Self = this.set("LevelOne", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevelOne: Self = this.set("LevelOne", js.undefined)
+    @scala.inline
+    def setLevelThree(value: HierarchyLevel): Self = this.set("LevelThree", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevelThree: Self = this.set("LevelThree", js.undefined)
+    @scala.inline
+    def setLevelTwo(value: HierarchyLevel): Self = this.set("LevelTwo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevelTwo: Self = this.set("LevelTwo", js.undefined)
+  }
+  
 }
 

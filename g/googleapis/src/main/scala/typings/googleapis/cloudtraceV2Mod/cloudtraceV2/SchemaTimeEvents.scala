@@ -29,16 +29,36 @@ trait SchemaTimeEvents extends js.Object {
 
 object SchemaTimeEvents {
   @scala.inline
-  def apply(
-    droppedAnnotationsCount: js.UndefOr[Double] = js.undefined,
-    droppedMessageEventsCount: js.UndefOr[Double] = js.undefined,
-    timeEvent: js.Array[SchemaTimeEvent] = null
-  ): SchemaTimeEvents = {
+  def apply(): SchemaTimeEvents = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(droppedAnnotationsCount)) __obj.updateDynamic("droppedAnnotationsCount")(droppedAnnotationsCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(droppedMessageEventsCount)) __obj.updateDynamic("droppedMessageEventsCount")(droppedMessageEventsCount.get.asInstanceOf[js.Any])
-    if (timeEvent != null) __obj.updateDynamic("timeEvent")(timeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTimeEvents]
   }
+  @scala.inline
+  implicit class SchemaTimeEventsOps[Self <: SchemaTimeEvents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDroppedAnnotationsCount(value: Double): Self = this.set("droppedAnnotationsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDroppedAnnotationsCount: Self = this.set("droppedAnnotationsCount", js.undefined)
+    @scala.inline
+    def setDroppedMessageEventsCount(value: Double): Self = this.set("droppedMessageEventsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDroppedMessageEventsCount: Self = this.set("droppedMessageEventsCount", js.undefined)
+    @scala.inline
+    def setTimeEventVarargs(value: SchemaTimeEvent*): Self = this.set("timeEvent", js.Array(value :_*))
+    @scala.inline
+    def setTimeEvent(value: js.Array[SchemaTimeEvent]): Self = this.set("timeEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeEvent: Self = this.set("timeEvent", js.undefined)
+  }
+  
 }
 

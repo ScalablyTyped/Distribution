@@ -26,18 +26,38 @@ trait KeyPhrase extends js.Object {
 
 object KeyPhrase {
   @scala.inline
-  def apply(
-    BeginOffset: js.UndefOr[Integer] = js.undefined,
-    EndOffset: js.UndefOr[Integer] = js.undefined,
-    Score: js.UndefOr[Float] = js.undefined,
-    Text: String = null
-  ): KeyPhrase = {
+  def apply(): KeyPhrase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BeginOffset)) __obj.updateDynamic("BeginOffset")(BeginOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EndOffset)) __obj.updateDynamic("EndOffset")(EndOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
-    if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPhrase]
   }
+  @scala.inline
+  implicit class KeyPhraseOps[Self <: KeyPhrase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeginOffset(value: Integer): Self = this.set("BeginOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeginOffset: Self = this.set("BeginOffset", js.undefined)
+    @scala.inline
+    def setEndOffset(value: Integer): Self = this.set("EndOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndOffset: Self = this.set("EndOffset", js.undefined)
+    @scala.inline
+    def setScore(value: Float): Self = this.set("Score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("Score", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("Text", js.undefined)
+  }
+  
 }
 

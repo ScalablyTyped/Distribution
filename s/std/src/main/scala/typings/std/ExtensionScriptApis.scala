@@ -14,6 +14,7 @@ trait ExtensionScriptApis extends js.Object {
     errorString: java.lang.String
   ): Unit = js.native
   def genericFunction(routerAddress: js.Any): Unit = js.native
+  def genericFunction(routerAddress: js.Any, parameters: js.UndefOr[scala.Nothing], callbackId: Double): Unit = js.native
   def genericFunction(routerAddress: js.Any, parameters: java.lang.String): Unit = js.native
   def genericFunction(routerAddress: js.Any, parameters: java.lang.String, callbackId: Double): Unit = js.native
   def genericSynchronousFunction(functionId: Double): java.lang.String = js.native

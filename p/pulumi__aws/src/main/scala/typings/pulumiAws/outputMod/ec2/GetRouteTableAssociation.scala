@@ -40,5 +40,28 @@ object GetRouteTableAssociation {
     val __obj = js.Dynamic.literal(gatewayId = gatewayId.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], routeTableAssociationId = routeTableAssociationId.asInstanceOf[js.Any], routeTableId = routeTableId.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRouteTableAssociation]
   }
+  @scala.inline
+  implicit class GetRouteTableAssociationOps[Self <: GetRouteTableAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayId(value: String): Self = this.set("gatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMain(value: Boolean): Self = this.set("main", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRouteTableAssociationId(value: String): Self = this.set("routeTableAssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRouteTableId(value: String): Self = this.set("routeTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetId(value: String): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

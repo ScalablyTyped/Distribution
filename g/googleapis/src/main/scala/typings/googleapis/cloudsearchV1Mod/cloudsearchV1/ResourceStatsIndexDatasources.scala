@@ -33,6 +33,7 @@ class ResourceStatsIndexDatasources protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGetDataSourceIndexStatsResponse] = js.native
   def get(callback: BodyResponseCallback[SchemaGetDataSourceIndexStatsResponse]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetDataSourceIndexStatsResponse] = js.native
   def get(params: ParamsResourceStatsIndexDatasourcesGet): GaxiosPromise[SchemaGetDataSourceIndexStatsResponse] = js.native
   def get(
     params: ParamsResourceStatsIndexDatasourcesGet,

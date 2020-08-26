@@ -250,7 +250,7 @@ trait DirectConnect extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDirectConnectGatewayAssociationResult, Unit]
   ): Request[CreateDirectConnectGatewayAssociationResult, AWSError] = js.native
   /**
-    * Creates a proposal to associate the specified virtual private gateway or transit gateway with the specified Direct Connect gateway. You can only associate a Direct Connect gateway and virtual private gateway or transit gateway when the account that owns the Direct Connect gateway and the account that owns the virtual private gateway or transit gateway have the same AWS Payer ID.
+    * Creates a proposal to associate the specified virtual private gateway or transit gateway with the specified Direct Connect gateway. You can associate a Direct Connect gateway and virtual private gateway or transit gateway that is owned by any AWS account. 
     */
   def createDirectConnectGatewayAssociationProposal(): Request[CreateDirectConnectGatewayAssociationProposalResult, AWSError] = js.native
   def createDirectConnectGatewayAssociationProposal(
@@ -261,7 +261,7 @@ trait DirectConnect extends Service {
     ]
   ): Request[CreateDirectConnectGatewayAssociationProposalResult, AWSError] = js.native
   /**
-    * Creates a proposal to associate the specified virtual private gateway or transit gateway with the specified Direct Connect gateway. You can only associate a Direct Connect gateway and virtual private gateway or transit gateway when the account that owns the Direct Connect gateway and the account that owns the virtual private gateway or transit gateway have the same AWS Payer ID.
+    * Creates a proposal to associate the specified virtual private gateway or transit gateway with the specified Direct Connect gateway. You can associate a Direct Connect gateway and virtual private gateway or transit gateway that is owned by any AWS account. 
     */
   def createDirectConnectGatewayAssociationProposal(params: CreateDirectConnectGatewayAssociationProposalRequest): Request[CreateDirectConnectGatewayAssociationProposalResult, AWSError] = js.native
   def createDirectConnectGatewayAssociationProposal(

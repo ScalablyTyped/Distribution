@@ -26,18 +26,38 @@ trait InputAttachment extends js.Object {
 
 object InputAttachment {
   @scala.inline
-  def apply(
-    AutomaticInputFailoverSettings: AutomaticInputFailoverSettings = null,
-    InputAttachmentName: string = null,
-    InputId: string = null,
-    InputSettings: InputSettings = null
-  ): InputAttachment = {
+  def apply(): InputAttachment = {
     val __obj = js.Dynamic.literal()
-    if (AutomaticInputFailoverSettings != null) __obj.updateDynamic("AutomaticInputFailoverSettings")(AutomaticInputFailoverSettings.asInstanceOf[js.Any])
-    if (InputAttachmentName != null) __obj.updateDynamic("InputAttachmentName")(InputAttachmentName.asInstanceOf[js.Any])
-    if (InputId != null) __obj.updateDynamic("InputId")(InputId.asInstanceOf[js.Any])
-    if (InputSettings != null) __obj.updateDynamic("InputSettings")(InputSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputAttachment]
   }
+  @scala.inline
+  implicit class InputAttachmentOps[Self <: InputAttachment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomaticInputFailoverSettings(value: AutomaticInputFailoverSettings): Self = this.set("AutomaticInputFailoverSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticInputFailoverSettings: Self = this.set("AutomaticInputFailoverSettings", js.undefined)
+    @scala.inline
+    def setInputAttachmentName(value: string): Self = this.set("InputAttachmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAttachmentName: Self = this.set("InputAttachmentName", js.undefined)
+    @scala.inline
+    def setInputId(value: string): Self = this.set("InputId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputId: Self = this.set("InputId", js.undefined)
+    @scala.inline
+    def setInputSettings(value: InputSettings): Self = this.set("InputSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputSettings: Self = this.set("InputSettings", js.undefined)
+  }
+  
 }
 

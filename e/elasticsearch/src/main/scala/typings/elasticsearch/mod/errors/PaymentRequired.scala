@@ -7,10 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("elasticsearch", "errors.PaymentRequired")
 @js.native
-class PaymentRequired () extends Error {
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-}
+class PaymentRequired () extends Error
 

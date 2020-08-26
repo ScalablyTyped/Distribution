@@ -17,15 +17,5 @@ class ASPxClientHtmlEditorCommandEventArgs protected ()
     * @param parameter An object that can contain a command specific infomation needed for handling of the command execution. Initializes the ASPxClientHtmlEditorCommandEventArgs.parameter property.
     */
   def this(commandName: String, parameter: js.Any) = this()
-  /**
-    * Gets the name of the processed command.
-    */
-  /* CompleteClass */
-  override var commandName: String = js.native
-  /**
-    * Gets an optional parameter that complements the processed command.
-    */
-  /* CompleteClass */
-  override var parameter: js.Any = js.native
 }
 

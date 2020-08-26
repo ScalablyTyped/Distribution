@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.PointOfService.CashDrawerOpenedEventArgs")
 @js.native
 abstract class CashDrawerOpenedEventArgs ()
-  extends typings.winrtUwp.Windows.Devices.PointOfService.CashDrawerOpenedEventArgs {
-  /** Gets the data associated with the DrawerOpened event. */
-  /* CompleteClass */
-  override var cashDrawer: typings.winrtUwp.Windows.Devices.PointOfService.CashDrawer = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.PointOfService.CashDrawerOpenedEventArgs
 

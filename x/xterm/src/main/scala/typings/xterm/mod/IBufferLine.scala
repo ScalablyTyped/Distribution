@@ -41,7 +41,11 @@ trait IBufferLine extends js.Object {
     * @param endColumn The column to end at (exclusive).
     */
   def translateToString(): String = js.native
+  def translateToString(trimRight: js.UndefOr[scala.Nothing], startColumn: js.UndefOr[scala.Nothing], endColumn: Double): String = js.native
+  def translateToString(trimRight: js.UndefOr[scala.Nothing], startColumn: Double): String = js.native
+  def translateToString(trimRight: js.UndefOr[scala.Nothing], startColumn: Double, endColumn: Double): String = js.native
   def translateToString(trimRight: Boolean): String = js.native
+  def translateToString(trimRight: Boolean, startColumn: js.UndefOr[scala.Nothing], endColumn: Double): String = js.native
   def translateToString(trimRight: Boolean, startColumn: Double): String = js.native
   def translateToString(trimRight: Boolean, startColumn: Double, endColumn: Double): String = js.native
 }

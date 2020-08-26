@@ -22,6 +22,7 @@ object mod extends js.Object {
     * //=hull
     */
   def apply(points: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = js.native
+  def apply(points: js.Array[js.Array[Double]], concavity: js.UndefOr[scala.Nothing], lengthThreshold: Double): js.Array[js.Array[Double]] = js.native
   def apply(points: js.Array[js.Array[Double]], concavity: Double): js.Array[js.Array[Double]] = js.native
   def apply(points: js.Array[js.Array[Double]], concavity: Double, lengthThreshold: Double): js.Array[js.Array[Double]] = js.native
 }

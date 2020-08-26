@@ -58,9 +58,6 @@ object displayMod extends js.Object {
       */
     def computeSize(availWidth: Double, availHeight: Double): js.Tuple2[Double, Double] = js.native
     def computeTileSize(availWidth: Double, availHeight: Double): js.Array[Double] = js.native
-    def draw(x: Double, y: Double): Unit = js.native
-    def draw(x: Double, y: Double, ch: String): Unit = js.native
-    def draw(x: Double, y: Double, ch: String, fg: String): Unit = js.native
     /**
       * @param {int} x
       * @param {int} y
@@ -68,6 +65,9 @@ object displayMod extends js.Object {
       * @param {string} [fg] foreground color
       * @param {string} [bg] background color
       */
+    def draw(x: Double, y: Double): Unit = js.native
+    def draw(x: Double, y: Double, ch: String): Unit = js.native
+    def draw(x: Double, y: Double, ch: String, fg: String): Unit = js.native
     def draw(x: Double, y: Double, ch: String, fg: String, bg: String): Unit = js.native
     def draw(x: Double, y: Double, ch: String, fg: Null, bg: String): Unit = js.native
     def draw(x: Double, y: Double, ch: js.Array[String]): Unit = js.native

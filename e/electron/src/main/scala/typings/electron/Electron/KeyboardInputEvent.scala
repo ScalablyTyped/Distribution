@@ -1,54 +1,49 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.alt
-import typings.electron.electronStrings.capsLock
 import typings.electron.electronStrings.char
-import typings.electron.electronStrings.cmd
-import typings.electron.electronStrings.command
-import typings.electron.electronStrings.control
-import typings.electron.electronStrings.ctrl
-import typings.electron.electronStrings.isAutoRepeat
-import typings.electron.electronStrings.isKeypad
 import typings.electron.electronStrings.keyDown
 import typings.electron.electronStrings.keyUp
-import typings.electron.electronStrings.left
-import typings.electron.electronStrings.leftButtonDown
-import typings.electron.electronStrings.meta
-import typings.electron.electronStrings.middleButtonDown
-import typings.electron.electronStrings.numLock
-import typings.electron.electronStrings.right
-import typings.electron.electronStrings.rightButtonDown
-import typings.electron.electronStrings.shift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeyboardInputEvent extends InputEvent {
   // Docs: http://electronjs.org/docs/api/structures/keyboard-input-event
   /**
     * The character that will be sent as the keyboard event. Should only use the valid
     * key codes in Accelerator.
     */
-  var keyCode: String
+  var keyCode: String = js.native
   /**
     * The type of the event, can be `keyDown`, `keyUp` or `char`.
     */
-  var `type`: keyDown | keyUp | char
+  var `type`: keyDown | keyUp | char = js.native
 }
 
 object KeyboardInputEvent {
   @scala.inline
-  def apply(
-    keyCode: String,
-    `type`: keyDown | keyUp | char,
-    modifiers: js.Array[
-      shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right
-    ] = null
-  ): KeyboardInputEvent = {
+  def apply(keyCode: String, `type`: keyDown | keyUp | char): KeyboardInputEvent = {
     val __obj = js.Dynamic.literal(keyCode = keyCode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardInputEvent]
   }
+  @scala.inline
+  implicit class KeyboardInputEventOps[Self <: KeyboardInputEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyCode(value: String): Self = this.set("keyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: keyDown | keyUp | char): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

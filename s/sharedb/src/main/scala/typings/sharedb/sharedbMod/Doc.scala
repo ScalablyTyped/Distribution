@@ -41,8 +41,18 @@ class Doc () extends EventEmitter {
   def addListener_op(event: op, callback: js.Function2[/* ops */ js.Array[Op], /* source */ Boolean, Unit]): this.type = js.native
   def create(data: js.Any): Unit = js.native
   def create(data: js.Any, callback: Callback): Unit = js.native
+  def create(data: js.Any, `type`: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
+  def create(
+    data: js.Any,
+    `type`: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def create(data: js.Any, `type`: js.UndefOr[scala.Nothing], options: ShareDBSourceOptions): Unit = js.native
+  def create(data: js.Any, `type`: js.UndefOr[scala.Nothing], options: ShareDBSourceOptions, callback: Callback): Unit = js.native
   def create(data: js.Any, `type`: OTType): Unit = js.native
   def create(data: js.Any, `type`: OTType, callback: Callback): Unit = js.native
+  def create(data: js.Any, `type`: OTType, options: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
   def create(data: js.Any, `type`: OTType, options: ShareDBSourceOptions): Unit = js.native
   def create(data: js.Any, `type`: OTType, options: ShareDBSourceOptions, callback: Callback): Unit = js.native
   def del(options: ShareDBSourceOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
@@ -66,6 +76,7 @@ class Doc () extends EventEmitter {
   @JSName("on")
   def on_op(event: op, callback: js.Function2[/* ops */ js.Array[Op], /* source */ Boolean, Unit]): this.type = js.native
   def submitOp(data: js.Array[Op]): Unit = js.native
+  def submitOp(data: js.Array[Op], options: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
   def submitOp(data: js.Array[Op], options: ShareDBSourceOptions): Unit = js.native
   def submitOp(data: js.Array[Op], options: ShareDBSourceOptions, callback: Callback): Unit = js.native
   def subscribe(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native

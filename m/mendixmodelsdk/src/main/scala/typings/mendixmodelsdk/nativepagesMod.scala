@@ -81,14 +81,12 @@ object nativepagesMod extends js.Object {
       @JSName("model")
       var model_FBottomBarItem: IModel = js.native
       def action: ClientAction = js.native
-      def action(newValue: ClientAction): js.Any = js.native
+      def action_=(newValue: ClientAction): Unit = js.native
       def caption: Text = js.native
-      def caption(newValue: Text): js.Any = js.native
+      def caption_=(newValue: Text): Unit = js.native
       def containerAsNativeNavigationProfile: NativeNavigationProfile = js.native
-      def icon(): js.Any = js.native
-      def icon(newValue: Icon): js.Any = js.native
-      @JSName("icon")
-      def icon_Union: Icon | Null = js.native
+      def icon: Icon | Null = js.native
+      def icon_=(newValue: Icon | Null): Unit = js.native
     }
     
     /**
@@ -138,13 +136,11 @@ object nativepagesMod extends js.Object {
       var model_FNativeLayout: IModel = js.native
       @JSName("containerAsFolderBase")
       def containerAsFolderBase_MNativeLayout: FolderBase = js.native
-      def headerWidget(): js.Any = js.native
-      def headerWidget(newValue: Widget): js.Any = js.native
       /**
         * In version 7.22.0: introduced
         */
-      @JSName("headerWidget")
-      def headerWidget_Union: Widget | Null = js.native
+      def headerWidget: Widget | Null = js.native
+      def headerWidget_=(newValue: Widget | Null): Unit = js.native
       def widgets: IList[Widget] = js.native
     }
     
@@ -168,8 +164,8 @@ object nativepagesMod extends js.Object {
       var model_FNativeLayoutCallArgument: IModel = js.native
       def containerAsNativePage: NativePage = js.native
       def parameter: ILayoutParameter = js.native
-      def parameter(newValue: ILayoutParameter): js.Any = js.native
       def parameterQualifiedName: String = js.native
+      def parameter_=(newValue: ILayoutParameter): Unit = js.native
       def widgets: IList[Widget] = js.native
     }
     
@@ -212,8 +208,8 @@ object nativepagesMod extends js.Object {
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
       def layout: INativeLayout = js.native
-      def layout(newValue: INativeLayout): js.Any = js.native
       def layoutQualifiedName: String = js.native
+      def layout_=(newValue: INativeLayout): Unit = js.native
     }
     
     /**
@@ -234,14 +230,12 @@ object nativepagesMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FNativePageClientAction: IModel = js.native
-      def page(): js.Any = js.native
-      def page(newValue: INativePage): js.Any = js.native
-      def pageQualifiedName: String | Null = js.native
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         */
-      @JSName("page")
-      def page_Union: INativePage | Null = js.native
+      def page: INativePage | Null = js.native
+      def pageQualifiedName: String | Null = js.native
+      def page_=(newValue: INativePage | Null): Unit = js.native
     }
     
     /**

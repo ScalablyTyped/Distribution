@@ -12,7 +12,7 @@ Detect if a string is a data URL
 | Keywords           | valid, data-uri, data-url, data, uri, url, datauri, dataurl |
 | # releases         | 5 |
 | # dependents       | 7 |
-| # downloads        | 7940274 |
+| # downloads        | 8254903 |
 | # stars            | 0 |
 
 ## Links

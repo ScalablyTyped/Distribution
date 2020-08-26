@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Survey () extends SurveyModel {
   def this(jsonObj: js.Any) = this()
+  def this(jsonObj: js.UndefOr[scala.Nothing], renderedElement: js.Any) = this()
   def this(jsonObj: js.Any, renderedElement: js.Any) = this()
+  def this(jsonObj: js.UndefOr[scala.Nothing], renderedElement: js.UndefOr[scala.Nothing], css: js.Any) = this()
+  def this(jsonObj: js.UndefOr[scala.Nothing], renderedElement: js.Any, css: js.Any) = this()
+  def this(jsonObj: js.Any, renderedElement: js.UndefOr[scala.Nothing], css: js.Any) = this()
   def this(jsonObj: js.Any, renderedElement: js.Any, css: js.Any) = this()
   var dummyObservable: js.Any = js.native
   var koAfterRenderHeader: js.Any = js.native
@@ -23,10 +27,14 @@ class Survey () extends SurveyModel {
   var koProgressText: js.Any = js.native
   var koState: js.Any = js.native
   var koTimerInfoText: js.Any = js.native
+  var koTitleTemplate: js.Any = js.native
   /* protected */ def getHtmlTemplate(): String = js.native
   def koEventAfterRender(element: js.Any, survey: js.Any): Unit = js.native
+  def loadSurveyFromService(surveyId: js.UndefOr[scala.Nothing], clientId: js.UndefOr[scala.Nothing], renderedElement: js.Any): Unit = js.native
+  def loadSurveyFromService(surveyId: js.UndefOr[scala.Nothing], clientId: String, renderedElement: js.Any): Unit = js.native
+  def loadSurveyFromService(surveyId: String, clientId: js.UndefOr[scala.Nothing], renderedElement: js.Any): Unit = js.native
   def loadSurveyFromService(surveyId: String, clientId: String, renderedElement: js.Any): Unit = js.native
-  def nextPageMouseDown(): Unit = js.native
+  def nextPageMouseDown(): Boolean = js.native
   def nextPageUIClick(): Unit = js.native
   def render(): Unit = js.native
   def render(element: js.Any): Unit = js.native

@@ -17,7 +17,7 @@ trait AcceleratorState extends js.Object {
   /**
     * The DNS name of the accelerator. For example, `a5d53ff5ee6bca4ce.awsglobalaccelerator.com`.
     * * `hostedZoneId` --  The Global Accelerator Route 53 zone ID that can be used to
-    * route an [Alias Resource Record Set][1] to the Global Accelerator. This attribute
+    * route an [Alias Resource Record Set](https://docs.aws.amazon.com/Route53/latest/APIReference/API_AliasTarget.html) to the Global Accelerator. This attribute
     * is simply an alias for the zone ID `Z2BJ6XQ5FK7U4H`.
     */
   val dnsName: js.UndefOr[Input[String]] = js.native
@@ -39,33 +39,63 @@ trait AcceleratorState extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object AcceleratorState {
   @scala.inline
-  def apply(
-    attributes: Input[AcceleratorAttributes] = null,
-    dnsName: Input[String] = null,
-    enabled: Input[Boolean] = null,
-    hostedZoneId: Input[String] = null,
-    ipAddressType: Input[String] = null,
-    ipSets: Input[js.Array[Input[AcceleratorIpSet]]] = null,
-    name: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): AcceleratorState = {
+  def apply(): AcceleratorState = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (hostedZoneId != null) __obj.updateDynamic("hostedZoneId")(hostedZoneId.asInstanceOf[js.Any])
-    if (ipAddressType != null) __obj.updateDynamic("ipAddressType")(ipAddressType.asInstanceOf[js.Any])
-    if (ipSets != null) __obj.updateDynamic("ipSets")(ipSets.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceleratorState]
   }
+  @scala.inline
+  implicit class AcceleratorStateOps[Self <: AcceleratorState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: Input[AcceleratorAttributes]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setDnsName(value: Input[String]): Self = this.set("dnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsName: Self = this.set("dnsName", js.undefined)
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setHostedZoneId(value: Input[String]): Self = this.set("hostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZoneId: Self = this.set("hostedZoneId", js.undefined)
+    @scala.inline
+    def setIpAddressType(value: Input[String]): Self = this.set("ipAddressType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddressType: Self = this.set("ipAddressType", js.undefined)
+    @scala.inline
+    def setIpSetsVarargs(value: Input[AcceleratorIpSet]*): Self = this.set("ipSets", js.Array(value :_*))
+    @scala.inline
+    def setIpSets(value: Input[js.Array[Input[AcceleratorIpSet]]]): Self = this.set("ipSets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpSets: Self = this.set("ipSets", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -38,7 +38,7 @@ trait StackArgs extends js.Object {
   /**
     * A map of Parameter structures that specify input parameters for the stack.
     */
-  val parameters: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Structure containing the stack policy body.
     * Conflicts w/ `policyUrl`.
@@ -52,7 +52,7 @@ trait StackArgs extends js.Object {
   /**
     * A list of tags to associate with this stack.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Structure containing the template body (max size: 51,200 bytes).
     */
@@ -69,36 +69,78 @@ trait StackArgs extends js.Object {
 
 object StackArgs {
   @scala.inline
-  def apply(
-    capabilities: Input[js.Array[Input[String]]] = null,
-    disableRollback: Input[Boolean] = null,
-    iamRoleArn: Input[String] = null,
-    name: Input[String] = null,
-    notificationArns: Input[js.Array[Input[String]]] = null,
-    onFailure: Input[String] = null,
-    parameters: Input[StringDictionary[_]] = null,
-    policyBody: Input[String] = null,
-    policyUrl: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    templateBody: Input[String] = null,
-    templateUrl: Input[String] = null,
-    timeoutInMinutes: Input[Double] = null
-  ): StackArgs = {
+  def apply(): StackArgs = {
     val __obj = js.Dynamic.literal()
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (disableRollback != null) __obj.updateDynamic("disableRollback")(disableRollback.asInstanceOf[js.Any])
-    if (iamRoleArn != null) __obj.updateDynamic("iamRoleArn")(iamRoleArn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (notificationArns != null) __obj.updateDynamic("notificationArns")(notificationArns.asInstanceOf[js.Any])
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (policyBody != null) __obj.updateDynamic("policyBody")(policyBody.asInstanceOf[js.Any])
-    if (policyUrl != null) __obj.updateDynamic("policyUrl")(policyUrl.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (templateBody != null) __obj.updateDynamic("templateBody")(templateBody.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (timeoutInMinutes != null) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackArgs]
   }
+  @scala.inline
+  implicit class StackArgsOps[Self <: StackArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapabilitiesVarargs(value: Input[String]*): Self = this.set("capabilities", js.Array(value :_*))
+    @scala.inline
+    def setCapabilities(value: Input[js.Array[Input[String]]]): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    @scala.inline
+    def setDisableRollback(value: Input[Boolean]): Self = this.set("disableRollback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableRollback: Self = this.set("disableRollback", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: Input[String]): Self = this.set("iamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("iamRoleArn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotificationArnsVarargs(value: Input[String]*): Self = this.set("notificationArns", js.Array(value :_*))
+    @scala.inline
+    def setNotificationArns(value: Input[js.Array[Input[String]]]): Self = this.set("notificationArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationArns: Self = this.set("notificationArns", js.undefined)
+    @scala.inline
+    def setOnFailure(value: Input[String]): Self = this.set("onFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
+    @scala.inline
+    def setParameters(value: Input[StringDictionary[Input[String]]]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setPolicyBody(value: Input[String]): Self = this.set("policyBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyBody: Self = this.set("policyBody", js.undefined)
+    @scala.inline
+    def setPolicyUrl(value: Input[String]): Self = this.set("policyUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyUrl: Self = this.set("policyUrl", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTemplateBody(value: Input[String]): Self = this.set("templateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateBody: Self = this.set("templateBody", js.undefined)
+    @scala.inline
+    def setTemplateUrl(value: Input[String]): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
+    @scala.inline
+    def setTimeoutInMinutes(value: Input[Double]): Self = this.set("timeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutInMinutes: Self = this.set("timeoutInMinutes", js.undefined)
+  }
+  
 }
 

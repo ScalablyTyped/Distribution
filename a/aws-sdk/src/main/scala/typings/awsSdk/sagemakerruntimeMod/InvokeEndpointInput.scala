@@ -38,22 +38,46 @@ trait InvokeEndpointInput extends js.Object {
 
 object InvokeEndpointInput {
   @scala.inline
-  def apply(
-    Body: BodyBlob,
-    EndpointName: EndpointName,
-    Accept: Header = null,
-    ContentType: Header = null,
-    CustomAttributes: CustomAttributesHeader = null,
-    TargetModel: TargetModelHeader = null,
-    TargetVariant: TargetVariantHeader = null
-  ): InvokeEndpointInput = {
+  def apply(Body: BodyBlob, EndpointName: EndpointName): InvokeEndpointInput = {
     val __obj = js.Dynamic.literal(Body = Body.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any])
-    if (Accept != null) __obj.updateDynamic("Accept")(Accept.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (CustomAttributes != null) __obj.updateDynamic("CustomAttributes")(CustomAttributes.asInstanceOf[js.Any])
-    if (TargetModel != null) __obj.updateDynamic("TargetModel")(TargetModel.asInstanceOf[js.Any])
-    if (TargetVariant != null) __obj.updateDynamic("TargetVariant")(TargetVariant.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeEndpointInput]
   }
+  @scala.inline
+  implicit class InvokeEndpointInputOps[Self <: InvokeEndpointInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: BodyBlob): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpointName(value: EndpointName): Self = this.set("EndpointName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccept(value: Header): Self = this.set("Accept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccept: Self = this.set("Accept", js.undefined)
+    @scala.inline
+    def setContentType(value: Header): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setCustomAttributes(value: CustomAttributesHeader): Self = this.set("CustomAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAttributes: Self = this.set("CustomAttributes", js.undefined)
+    @scala.inline
+    def setTargetModel(value: TargetModelHeader): Self = this.set("TargetModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetModel: Self = this.set("TargetModel", js.undefined)
+    @scala.inline
+    def setTargetVariant(value: TargetVariantHeader): Self = this.set("TargetVariant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetVariant: Self = this.set("TargetVariant", js.undefined)
+  }
+  
 }
 

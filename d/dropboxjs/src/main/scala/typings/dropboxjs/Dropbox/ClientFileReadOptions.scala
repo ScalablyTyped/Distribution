@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClientFileReadOptions extends js.Object {
-  var arrayBuffer: js.UndefOr[Boolean] = js.undefined
-  var binary: js.UndefOr[Boolean] = js.undefined
-  var blob: js.UndefOr[Boolean] = js.undefined
-  var buffer: js.UndefOr[Boolean] = js.undefined
-  var httpCache: js.UndefOr[Boolean] = js.undefined
-  var length: js.UndefOr[Double] = js.undefined
-  var rev: js.UndefOr[String] = js.undefined
-  var start: js.UndefOr[Double] = js.undefined
-  var versionTag: js.UndefOr[String] = js.undefined
+  var arrayBuffer: js.UndefOr[Boolean] = js.native
+  var binary: js.UndefOr[Boolean] = js.native
+  var blob: js.UndefOr[Boolean] = js.native
+  var buffer: js.UndefOr[Boolean] = js.native
+  var httpCache: js.UndefOr[Boolean] = js.native
+  var length: js.UndefOr[Double] = js.native
+  var rev: js.UndefOr[String] = js.native
+  var start: js.UndefOr[Double] = js.native
+  var versionTag: js.UndefOr[String] = js.native
 }
 
 object ClientFileReadOptions {
   @scala.inline
-  def apply(
-    arrayBuffer: js.UndefOr[Boolean] = js.undefined,
-    binary: js.UndefOr[Boolean] = js.undefined,
-    blob: js.UndefOr[Boolean] = js.undefined,
-    buffer: js.UndefOr[Boolean] = js.undefined,
-    httpCache: js.UndefOr[Boolean] = js.undefined,
-    length: js.UndefOr[Double] = js.undefined,
-    rev: String = null,
-    start: js.UndefOr[Double] = js.undefined,
-    versionTag: String = null
-  ): ClientFileReadOptions = {
+  def apply(): ClientFileReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrayBuffer)) __obj.updateDynamic("arrayBuffer")(arrayBuffer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(blob)) __obj.updateDynamic("blob")(blob.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
-    if (rev != null) __obj.updateDynamic("rev")(rev.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
-    if (versionTag != null) __obj.updateDynamic("versionTag")(versionTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientFileReadOptions]
   }
+  @scala.inline
+  implicit class ClientFileReadOptionsOps[Self <: ClientFileReadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrayBuffer(value: Boolean): Self = this.set("arrayBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrayBuffer: Self = this.set("arrayBuffer", js.undefined)
+    @scala.inline
+    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinary: Self = this.set("binary", js.undefined)
+    @scala.inline
+    def setBlob(value: Boolean): Self = this.set("blob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlob: Self = this.set("blob", js.undefined)
+    @scala.inline
+    def setBuffer(value: Boolean): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    @scala.inline
+    def setHttpCache(value: Boolean): Self = this.set("httpCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpCache: Self = this.set("httpCache", js.undefined)
+    @scala.inline
+    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLength: Self = this.set("length", js.undefined)
+    @scala.inline
+    def setRev(value: String): Self = this.set("rev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRev: Self = this.set("rev", js.undefined)
+    @scala.inline
+    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setVersionTag(value: String): Self = this.set("versionTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionTag: Self = this.set("versionTag", js.undefined)
+  }
+  
 }
 

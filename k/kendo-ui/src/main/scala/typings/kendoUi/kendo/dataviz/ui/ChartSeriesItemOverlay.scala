@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartSeriesItemOverlay extends js.Object {
-  var gradient: js.UndefOr[String] = js.undefined
+  var gradient: js.UndefOr[String] = js.native
 }
 
 object ChartSeriesItemOverlay {
   @scala.inline
-  def apply(gradient: String = null): ChartSeriesItemOverlay = {
+  def apply(): ChartSeriesItemOverlay = {
     val __obj = js.Dynamic.literal()
-    if (gradient != null) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesItemOverlay]
   }
+  @scala.inline
+  implicit class ChartSeriesItemOverlayOps[Self <: ChartSeriesItemOverlay] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGradient(value: String): Self = this.set("gradient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGradient: Self = this.set("gradient", js.undefined)
+  }
+  
 }
 

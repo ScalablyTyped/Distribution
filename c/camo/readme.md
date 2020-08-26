@@ -12,7 +12,7 @@ A class-based ES6 ODM for Mongo-like databases.
 | Keywords           | es6, odm, mongodb, nedb, nosql, document, model, schema, database, data, datastore, query, db |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 6948 |
+| # downloads        | 7124 |
 | # stars            | 6 |
 
 ## Links

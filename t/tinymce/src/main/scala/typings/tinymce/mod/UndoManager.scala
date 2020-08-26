@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UndoManager extends js.Object {
   def add(): js.Object = js.native
+  def add(level: js.UndefOr[scala.Nothing], event: DocumentEvent): js.Object = js.native
   def add(level: js.Object): js.Object = js.native
   def add(level: js.Object, event: DocumentEvent): js.Object = js.native
   def beforeChange(): Unit = js.native

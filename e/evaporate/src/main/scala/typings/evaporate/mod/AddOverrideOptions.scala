@@ -7,98 +7,166 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Pick<evaporate.evaporate.CreateConfig, evaporate.evaporate.AddOverrideOptionKeys> */
+@js.native
 trait AddOverrideOptions extends js.Object {
-  var abortCompletionThrottlingMs: js.UndefOr[Double] = js.undefined
-  var aws_key: js.UndefOr[String] = js.undefined
-  var aws_url: js.UndefOr[String] = js.undefined
-  var bucket: String
+  var abortCompletionThrottlingMs: js.UndefOr[Double] = js.native
+  var aws_key: js.UndefOr[String] = js.native
+  var aws_url: js.UndefOr[String] = js.native
+  var bucket: String = js.native
   var customAuthMethod: js.UndefOr[
-    js.Function5[
+    Null | (js.Function5[
       /* signParams */ String, 
       /* signHeaders */ String, 
       /* stringToSign */ String, 
       /* signatureDateTime */ String, 
       /* canonicalRequest */ String, 
       js.Promise[String]
-    ]
-  ] = js.undefined
-  var localTimeOffset: js.UndefOr[Double] = js.undefined
-  var maxFileSize: js.UndefOr[Double] = js.undefined
-  var maxRetryBackoffSecs: js.UndefOr[Double] = js.undefined
-  var mockLocalStorage: js.UndefOr[Boolean] = js.undefined
-  var partSize: js.UndefOr[Double] = js.undefined
-  var progressIntervalMS: js.UndefOr[Double] = js.undefined
+    ])
+  ] = js.native
+  var localTimeOffset: js.UndefOr[Double] = js.native
+  var maxFileSize: js.UndefOr[Double] = js.native
+  var maxRetryBackoffSecs: js.UndefOr[Double] = js.native
+  var mockLocalStorage: js.UndefOr[Boolean] = js.native
+  var partSize: js.UndefOr[Double] = js.native
+  var progressIntervalMS: js.UndefOr[Double] = js.native
   var readableStreamPartMethod: js.UndefOr[
-    js.Function3[/* file */ File, /* start */ Double, /* end */ Double, ReadableStream[_]]
-  ] = js.undefined
-  var readableStreams: js.UndefOr[Boolean] = js.undefined
-  var retryBackoffPower: js.UndefOr[Double] = js.undefined
-  var s3Acceleration: js.UndefOr[Boolean] = js.undefined
-  var s3FileCacheHoursAgo: js.UndefOr[Double] = js.undefined
-  var sendCanonicalRequestToSignerUrl: js.UndefOr[Boolean] = js.undefined
-  var signHeaders: js.UndefOr[js.Object] = js.undefined
-  var signParams: js.UndefOr[js.Object] = js.undefined
+    Null | (js.Function3[/* file */ File, /* start */ Double, /* end */ Double, ReadableStream[_]])
+  ] = js.native
+  var readableStreams: js.UndefOr[Boolean] = js.native
+  var retryBackoffPower: js.UndefOr[Double] = js.native
+  var s3Acceleration: js.UndefOr[Boolean] = js.native
+  var s3FileCacheHoursAgo: js.UndefOr[Null | Double] = js.native
+  var sendCanonicalRequestToSignerUrl: js.UndefOr[Boolean] = js.native
+  var signHeaders: js.UndefOr[js.Object] = js.native
+  var signParams: js.UndefOr[js.Object] = js.native
   var signResponseHandler: js.UndefOr[
-    js.Function3[
+    Null | (js.Function3[
       /* response */ js.Any, 
       /* stringToSign */ String, 
       /* signatureDateTime */ String, 
       js.Promise[String]
-    ]
-  ] = js.undefined
-  var signerUrl: js.UndefOr[String] = js.undefined
-  var xhrWithCredentials: js.UndefOr[Boolean] = js.undefined
+    ])
+  ] = js.native
+  var signerUrl: js.UndefOr[String] = js.native
+  var xhrWithCredentials: js.UndefOr[Boolean] = js.native
 }
 
 object AddOverrideOptions {
   @scala.inline
-  def apply(
-    bucket: String,
-    abortCompletionThrottlingMs: js.UndefOr[Double] = js.undefined,
-    aws_key: String = null,
-    aws_url: String = null,
-    customAuthMethod: (/* signParams */ String, /* signHeaders */ String, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String] = null,
-    localTimeOffset: js.UndefOr[Double] = js.undefined,
-    maxFileSize: js.UndefOr[Double] = js.undefined,
-    maxRetryBackoffSecs: js.UndefOr[Double] = js.undefined,
-    mockLocalStorage: js.UndefOr[Boolean] = js.undefined,
-    partSize: js.UndefOr[Double] = js.undefined,
-    progressIntervalMS: js.UndefOr[Double] = js.undefined,
-    readableStreamPartMethod: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[_] = null,
-    readableStreams: js.UndefOr[Boolean] = js.undefined,
-    retryBackoffPower: js.UndefOr[Double] = js.undefined,
-    s3Acceleration: js.UndefOr[Boolean] = js.undefined,
-    s3FileCacheHoursAgo: js.UndefOr[Double] = js.undefined,
-    sendCanonicalRequestToSignerUrl: js.UndefOr[Boolean] = js.undefined,
-    signHeaders: js.Object = null,
-    signParams: js.Object = null,
-    signResponseHandler: (/* response */ js.Any, /* stringToSign */ String, /* signatureDateTime */ String) => js.Promise[String] = null,
-    signerUrl: String = null,
-    xhrWithCredentials: js.UndefOr[Boolean] = js.undefined
-  ): AddOverrideOptions = {
+  def apply(bucket: String): AddOverrideOptions = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
-    if (!js.isUndefined(abortCompletionThrottlingMs)) __obj.updateDynamic("abortCompletionThrottlingMs")(abortCompletionThrottlingMs.get.asInstanceOf[js.Any])
-    if (aws_key != null) __obj.updateDynamic("aws_key")(aws_key.asInstanceOf[js.Any])
-    if (aws_url != null) __obj.updateDynamic("aws_url")(aws_url.asInstanceOf[js.Any])
-    if (customAuthMethod != null) __obj.updateDynamic("customAuthMethod")(js.Any.fromFunction5(customAuthMethod))
-    if (!js.isUndefined(localTimeOffset)) __obj.updateDynamic("localTimeOffset")(localTimeOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFileSize)) __obj.updateDynamic("maxFileSize")(maxFileSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetryBackoffSecs)) __obj.updateDynamic("maxRetryBackoffSecs")(maxRetryBackoffSecs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mockLocalStorage)) __obj.updateDynamic("mockLocalStorage")(mockLocalStorage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(partSize)) __obj.updateDynamic("partSize")(partSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressIntervalMS)) __obj.updateDynamic("progressIntervalMS")(progressIntervalMS.get.asInstanceOf[js.Any])
-    if (readableStreamPartMethod != null) __obj.updateDynamic("readableStreamPartMethod")(js.Any.fromFunction3(readableStreamPartMethod))
-    if (!js.isUndefined(readableStreams)) __obj.updateDynamic("readableStreams")(readableStreams.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(retryBackoffPower)) __obj.updateDynamic("retryBackoffPower")(retryBackoffPower.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(s3Acceleration)) __obj.updateDynamic("s3Acceleration")(s3Acceleration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(s3FileCacheHoursAgo)) __obj.updateDynamic("s3FileCacheHoursAgo")(s3FileCacheHoursAgo.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendCanonicalRequestToSignerUrl)) __obj.updateDynamic("sendCanonicalRequestToSignerUrl")(sendCanonicalRequestToSignerUrl.get.asInstanceOf[js.Any])
-    if (signHeaders != null) __obj.updateDynamic("signHeaders")(signHeaders.asInstanceOf[js.Any])
-    if (signParams != null) __obj.updateDynamic("signParams")(signParams.asInstanceOf[js.Any])
-    if (signResponseHandler != null) __obj.updateDynamic("signResponseHandler")(js.Any.fromFunction3(signResponseHandler))
-    if (signerUrl != null) __obj.updateDynamic("signerUrl")(signerUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOverrideOptions]
   }
+  @scala.inline
+  implicit class AddOverrideOptionsOps[Self <: AddOverrideOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAbortCompletionThrottlingMs(value: Double): Self = this.set("abortCompletionThrottlingMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortCompletionThrottlingMs: Self = this.set("abortCompletionThrottlingMs", js.undefined)
+    @scala.inline
+    def setAws_key(value: String): Self = this.set("aws_key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAws_key: Self = this.set("aws_key", js.undefined)
+    @scala.inline
+    def setAws_url(value: String): Self = this.set("aws_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAws_url: Self = this.set("aws_url", js.undefined)
+    @scala.inline
+    def setCustomAuthMethod(
+      value: (/* signParams */ String, /* signHeaders */ String, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String]
+    ): Self = this.set("customAuthMethod", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteCustomAuthMethod: Self = this.set("customAuthMethod", js.undefined)
+    @scala.inline
+    def setCustomAuthMethodNull: Self = this.set("customAuthMethod", null)
+    @scala.inline
+    def setLocalTimeOffset(value: Double): Self = this.set("localTimeOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalTimeOffset: Self = this.set("localTimeOffset", js.undefined)
+    @scala.inline
+    def setMaxFileSize(value: Double): Self = this.set("maxFileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFileSize: Self = this.set("maxFileSize", js.undefined)
+    @scala.inline
+    def setMaxRetryBackoffSecs(value: Double): Self = this.set("maxRetryBackoffSecs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRetryBackoffSecs: Self = this.set("maxRetryBackoffSecs", js.undefined)
+    @scala.inline
+    def setMockLocalStorage(value: Boolean): Self = this.set("mockLocalStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMockLocalStorage: Self = this.set("mockLocalStorage", js.undefined)
+    @scala.inline
+    def setPartSize(value: Double): Self = this.set("partSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartSize: Self = this.set("partSize", js.undefined)
+    @scala.inline
+    def setProgressIntervalMS(value: Double): Self = this.set("progressIntervalMS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressIntervalMS: Self = this.set("progressIntervalMS", js.undefined)
+    @scala.inline
+    def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[_]): Self = this.set("readableStreamPartMethod", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteReadableStreamPartMethod: Self = this.set("readableStreamPartMethod", js.undefined)
+    @scala.inline
+    def setReadableStreamPartMethodNull: Self = this.set("readableStreamPartMethod", null)
+    @scala.inline
+    def setReadableStreams(value: Boolean): Self = this.set("readableStreams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadableStreams: Self = this.set("readableStreams", js.undefined)
+    @scala.inline
+    def setRetryBackoffPower(value: Double): Self = this.set("retryBackoffPower", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryBackoffPower: Self = this.set("retryBackoffPower", js.undefined)
+    @scala.inline
+    def setS3Acceleration(value: Boolean): Self = this.set("s3Acceleration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Acceleration: Self = this.set("s3Acceleration", js.undefined)
+    @scala.inline
+    def setS3FileCacheHoursAgo(value: Double): Self = this.set("s3FileCacheHoursAgo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3FileCacheHoursAgo: Self = this.set("s3FileCacheHoursAgo", js.undefined)
+    @scala.inline
+    def setS3FileCacheHoursAgoNull: Self = this.set("s3FileCacheHoursAgo", null)
+    @scala.inline
+    def setSendCanonicalRequestToSignerUrl(value: Boolean): Self = this.set("sendCanonicalRequestToSignerUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendCanonicalRequestToSignerUrl: Self = this.set("sendCanonicalRequestToSignerUrl", js.undefined)
+    @scala.inline
+    def setSignHeaders(value: js.Object): Self = this.set("signHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignHeaders: Self = this.set("signHeaders", js.undefined)
+    @scala.inline
+    def setSignParams(value: js.Object): Self = this.set("signParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignParams: Self = this.set("signParams", js.undefined)
+    @scala.inline
+    def setSignResponseHandler(
+      value: (/* response */ js.Any, /* stringToSign */ String, /* signatureDateTime */ String) => js.Promise[String]
+    ): Self = this.set("signResponseHandler", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteSignResponseHandler: Self = this.set("signResponseHandler", js.undefined)
+    @scala.inline
+    def setSignResponseHandlerNull: Self = this.set("signResponseHandler", null)
+    @scala.inline
+    def setSignerUrl(value: String): Self = this.set("signerUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignerUrl: Self = this.set("signerUrl", js.undefined)
+    @scala.inline
+    def setXhrWithCredentials(value: Boolean): Self = this.set("xhrWithCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXhrWithCredentials: Self = this.set("xhrWithCredentials", js.undefined)
+  }
+  
 }
 

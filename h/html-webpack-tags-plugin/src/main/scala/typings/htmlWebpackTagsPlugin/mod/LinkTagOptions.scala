@@ -4,42 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LinkTagOptions extends BaseTagOptions {
-  var attributes: js.UndefOr[AttributesObject] = js.undefined
-  var path: String
+  var attributes: js.UndefOr[AttributesObject] = js.native
+  var path: String = js.native
 }
 
 object LinkTagOptions {
   @scala.inline
-  def apply(
-    path: String,
-    addHash: (/* assetPath */ String, /* hash */ String) => String = null,
-    addPublicPath: (/* assetPath */ String, /* publicPath */ String) => String = null,
-    append: js.UndefOr[Boolean] = js.undefined,
-    attributes: AttributesObject = null,
-    glob: String = null,
-    globFlatten: js.UndefOr[Boolean] = js.undefined,
-    globPath: String = null,
-    hash: Boolean | String | AddHashFunction = null,
-    publicPath: Boolean | String | AddPublicPathFunction = null,
-    sourcePath: String = null,
-    useHash: js.UndefOr[Boolean] = js.undefined,
-    usePublicPath: js.UndefOr[Boolean] = js.undefined
-  ): LinkTagOptions = {
+  def apply(path: String): LinkTagOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (addHash != null) __obj.updateDynamic("addHash")(js.Any.fromFunction2(addHash))
-    if (addPublicPath != null) __obj.updateDynamic("addPublicPath")(js.Any.fromFunction2(addPublicPath))
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.get.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (glob != null) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
-    if (!js.isUndefined(globFlatten)) __obj.updateDynamic("globFlatten")(globFlatten.get.asInstanceOf[js.Any])
-    if (globPath != null) __obj.updateDynamic("globPath")(globPath.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
-    if (sourcePath != null) __obj.updateDynamic("sourcePath")(sourcePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePublicPath)) __obj.updateDynamic("usePublicPath")(usePublicPath.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkTagOptions]
   }
+  @scala.inline
+  implicit class LinkTagOptionsOps[Self <: LinkTagOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributes(value: AttributesObject): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+  }
+  
 }
 

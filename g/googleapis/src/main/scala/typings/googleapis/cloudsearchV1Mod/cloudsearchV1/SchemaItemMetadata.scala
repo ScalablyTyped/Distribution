@@ -81,34 +81,74 @@ trait SchemaItemMetadata extends js.Object {
 
 object SchemaItemMetadata {
   @scala.inline
-  def apply(
-    containerName: String = null,
-    contentLanguage: String = null,
-    createTime: String = null,
-    hash: String = null,
-    interactions: js.Array[SchemaInteraction] = null,
-    keywords: js.Array[String] = null,
-    mimeType: String = null,
-    objectType: String = null,
-    searchQualityMetadata: SchemaSearchQualityMetadata = null,
-    sourceRepositoryUrl: String = null,
-    title: String = null,
-    updateTime: String = null
-  ): SchemaItemMetadata = {
+  def apply(): SchemaItemMetadata = {
     val __obj = js.Dynamic.literal()
-    if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (interactions != null) __obj.updateDynamic("interactions")(interactions.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
-    if (searchQualityMetadata != null) __obj.updateDynamic("searchQualityMetadata")(searchQualityMetadata.asInstanceOf[js.Any])
-    if (sourceRepositoryUrl != null) __obj.updateDynamic("sourceRepositoryUrl")(sourceRepositoryUrl.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaItemMetadata]
   }
+  @scala.inline
+  implicit class SchemaItemMetadataOps[Self <: SchemaItemMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    @scala.inline
+    def setContentLanguage(value: String): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLanguage: Self = this.set("contentLanguage", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash: Self = this.set("hash", js.undefined)
+    @scala.inline
+    def setInteractionsVarargs(value: SchemaInteraction*): Self = this.set("interactions", js.Array(value :_*))
+    @scala.inline
+    def setInteractions(value: js.Array[SchemaInteraction]): Self = this.set("interactions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteractions: Self = this.set("interactions", js.undefined)
+    @scala.inline
+    def setKeywordsVarargs(value: String*): Self = this.set("keywords", js.Array(value :_*))
+    @scala.inline
+    def setKeywords(value: js.Array[String]): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    @scala.inline
+    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    @scala.inline
+    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectType: Self = this.set("objectType", js.undefined)
+    @scala.inline
+    def setSearchQualityMetadata(value: SchemaSearchQualityMetadata): Self = this.set("searchQualityMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchQualityMetadata: Self = this.set("searchQualityMetadata", js.undefined)
+    @scala.inline
+    def setSourceRepositoryUrl(value: String): Self = this.set("sourceRepositoryUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRepositoryUrl: Self = this.set("sourceRepositoryUrl", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

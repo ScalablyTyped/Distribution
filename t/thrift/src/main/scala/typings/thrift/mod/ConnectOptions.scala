@@ -5,48 +5,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectOptions extends js.Object {
-  var connect_timeout: js.UndefOr[Double] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var headers: js.UndefOr[HttpHeaders] = js.undefined
-  var https: js.UndefOr[Boolean] = js.undefined
-  var max_attempts: js.UndefOr[Double] = js.undefined
-  var nodeOptions: js.UndefOr[RequestOptions | typings.node.httpsMod.RequestOptions] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var protocol: js.UndefOr[TProtocolConstructor] = js.undefined
-  var retry_max_delay: js.UndefOr[Double] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
-  var transport: js.UndefOr[TTransportConstructor] = js.undefined
+  var connect_timeout: js.UndefOr[Double] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var headers: js.UndefOr[HttpHeaders] = js.native
+  var https: js.UndefOr[Boolean] = js.native
+  var max_attempts: js.UndefOr[Double] = js.native
+  var nodeOptions: js.UndefOr[RequestOptions | typings.node.httpsMod.RequestOptions] = js.native
+  var path: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[TProtocolConstructor] = js.native
+  var retry_max_delay: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var transport: js.UndefOr[TTransportConstructor] = js.native
 }
 
 object ConnectOptions {
   @scala.inline
-  def apply(
-    connect_timeout: js.UndefOr[Double] = js.undefined,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    headers: HttpHeaders = null,
-    https: js.UndefOr[Boolean] = js.undefined,
-    max_attempts: js.UndefOr[Double] = js.undefined,
-    nodeOptions: RequestOptions | typings.node.httpsMod.RequestOptions = null,
-    path: String = null,
-    protocol: TProtocolConstructor = null,
-    retry_max_delay: js.UndefOr[Double] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    transport: TTransportConstructor = null
-  ): ConnectOptions = {
+  def apply(): ConnectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(connect_timeout)) __obj.updateDynamic("connect_timeout")(connect_timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max_attempts)) __obj.updateDynamic("max_attempts")(max_attempts.get.asInstanceOf[js.Any])
-    if (nodeOptions != null) __obj.updateDynamic("nodeOptions")(nodeOptions.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(retry_max_delay)) __obj.updateDynamic("retry_max_delay")(retry_max_delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOptions]
   }
+  @scala.inline
+  implicit class ConnectOptionsOps[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnect_timeout(value: Double): Self = this.set("connect_timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnect_timeout: Self = this.set("connect_timeout", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setHeaders(value: HttpHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHttps(value: Boolean): Self = this.set("https", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttps: Self = this.set("https", js.undefined)
+    @scala.inline
+    def setMax_attempts(value: Double): Self = this.set("max_attempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax_attempts: Self = this.set("max_attempts", js.undefined)
+    @scala.inline
+    def setNodeOptions(value: RequestOptions | typings.node.httpsMod.RequestOptions): Self = this.set("nodeOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeOptions: Self = this.set("nodeOptions", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setProtocol(value: TProtocolConstructor): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setRetry_max_delay(value: Double): Self = this.set("retry_max_delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetry_max_delay: Self = this.set("retry_max_delay", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTransport(value: TTransportConstructor): Self = this.set("transport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransport: Self = this.set("transport", js.undefined)
+  }
+  
 }
 

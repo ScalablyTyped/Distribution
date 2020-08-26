@@ -37,6 +37,7 @@ object mod extends js.Object {
   def bool(numerator: Double, denominator: Double): Distribution[Boolean] = js.native
   def bool(percentage: Double): Distribution[Boolean] = js.native
   def createEntropy(): js.Array[Double] = js.native
+  def createEntropy(engine: js.UndefOr[scala.Nothing], length: Double): js.Array[Double] = js.native
   def createEntropy(engine: Engine): js.Array[Double] = js.native
   def createEntropy(engine: Engine, length: Double): js.Array[Double] = js.native
   def date(start: Date, end: Date): Distribution[Date] = js.native
@@ -49,9 +50,11 @@ object mod extends js.Object {
   def int53Full(engine: Engine): Double = js.native
   def integer(min: Double, max: Double): Distribution[Double] = js.native
   def pick[T](engine: Engine, source: ArrayLike[T]): T = js.native
+  def pick[T](engine: Engine, source: ArrayLike[T], begin: js.UndefOr[scala.Nothing], end: Double): T = js.native
   def pick[T](engine: Engine, source: ArrayLike[T], begin: Double): T = js.native
   def pick[T](engine: Engine, source: ArrayLike[T], begin: Double, end: Double): T = js.native
   def picker[T](source: ArrayLike[T]): Distribution[T] = js.native
+  def picker[T](source: ArrayLike[T], begin: js.UndefOr[scala.Nothing], end: Double): Distribution[T] = js.native
   def picker[T](source: ArrayLike[T], begin: Double): Distribution[T] = js.native
   def picker[T](source: ArrayLike[T], begin: Double, end: Double): Distribution[T] = js.native
   def real(min: Double, max: Double): Distribution[Double] = js.native

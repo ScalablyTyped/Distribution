@@ -37,18 +37,40 @@ trait SchemaTemplate extends js.Object {
 
 object SchemaTemplate {
   @scala.inline
-  def apply(
-    action: SchemaAction = null,
-    healthChecks: js.Array[SchemaHealthCheck] = null,
-    version: String = null,
-    vmParams: SchemaVmParams = null
-  ): SchemaTemplate = {
+  def apply(): SchemaTemplate = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (vmParams != null) __obj.updateDynamic("vmParams")(vmParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTemplate]
   }
+  @scala.inline
+  implicit class SchemaTemplateOps[Self <: SchemaTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: SchemaAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setHealthChecksVarargs(value: SchemaHealthCheck*): Self = this.set("healthChecks", js.Array(value :_*))
+    @scala.inline
+    def setHealthChecks(value: js.Array[SchemaHealthCheck]): Self = this.set("healthChecks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthChecks: Self = this.set("healthChecks", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVmParams(value: SchemaVmParams): Self = this.set("vmParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmParams: Self = this.set("vmParams", js.undefined)
+  }
+  
 }
 

@@ -24,7 +24,7 @@ trait UpdateOperation extends js.Object
 
 object UpdateOperation {
   @scala.inline
-  def LoadOperation(destination: String | `false`, silent: Boolean, source: String, `type`: load): UpdateOperation = {
+  def LoadOperation(destination: IriTerm | `false`, silent: Boolean, source: IriTerm, `type`: load): UpdateOperation = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOperation]
@@ -36,24 +36,14 @@ object UpdateOperation {
     __obj.asInstanceOf[UpdateOperation]
   }
   @scala.inline
-  def CreateOperation(graph: String, silent: Boolean, `type`: create): UpdateOperation = {
+  def CreateOperation(graph: IriTerm, silent: Boolean, `type`: create): UpdateOperation = {
     val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOperation]
   }
   @scala.inline
-  def InsertDeleteOperation(
-    updateType: insert | delete | deletewhere | insertdelete,
-    delete: js.Array[Quads] = null,
-    graph: String = null,
-    insert: js.Array[Quads] = null,
-    where: js.Array[Pattern] = null
-  ): UpdateOperation = {
+  def InsertDeleteOperation(updateType: insert | delete | deletewhere | insertdelete): UpdateOperation = {
     val __obj = js.Dynamic.literal(updateType = updateType.asInstanceOf[js.Any])
-    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
-    if (graph != null) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
-    if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOperation]
   }
   @scala.inline

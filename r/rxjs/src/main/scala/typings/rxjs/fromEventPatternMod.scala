@@ -12,6 +12,11 @@ object fromEventPatternMod extends js.Object {
   def fromEventPattern[T](addHandler: js.Function1[/* handler */ NodeEventHandler, _]): Observable[T] = js.native
   def fromEventPattern[T](
     addHandler: js.Function1[/* handler */ NodeEventHandler, _],
+    removeHandler: js.UndefOr[scala.Nothing],
+    resultSelector: js.Function1[/* repeated */ js.Any, T]
+  ): Observable[T] = js.native
+  def fromEventPattern[T](
+    addHandler: js.Function1[/* handler */ NodeEventHandler, _],
     removeHandler: js.Function2[/* handler */ NodeEventHandler, js.UndefOr[js.Any], Unit]
   ): Observable[T] = js.native
   def fromEventPattern[T](

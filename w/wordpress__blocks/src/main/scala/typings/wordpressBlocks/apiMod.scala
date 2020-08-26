@@ -50,6 +50,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object apiMod extends js.Object {
   def cloneBlock[T /* <: Record[String, _] */](block: BlockInstance[T]): BlockInstance[T] = js.native
+  def cloneBlock[T /* <: Record[String, _] */](
+    block: BlockInstance[T],
+    mergeAttributes: js.UndefOr[scala.Nothing],
+    newInnerBlocks: js.Array[BlockInstance[StringDictionary[_]]]
+  ): BlockInstance[T] = js.native
   def cloneBlock[T /* <: Record[String, _] */](block: BlockInstance[T], mergeAttributes: Partial[T]): BlockInstance[T] = js.native
   def cloneBlock[T /* <: Record[String, _] */](
     block: BlockInstance[T],
@@ -57,9 +62,15 @@ object apiMod extends js.Object {
     newInnerBlocks: js.Array[BlockInstance[StringDictionary[_]]]
   ): BlockInstance[T] = js.native
   def createBlock[T /* <: Record[String, _] */](name: String): BlockInstance[T] = js.native
+  def createBlock[T /* <: Record[String, _] */](
+    name: String,
+    attributes: js.UndefOr[scala.Nothing],
+    innerBlocks: js.Array[BlockInstance[StringDictionary[_]]]
+  ): BlockInstance[T] = js.native
   def createBlock[T /* <: Record[String, _] */](name: String, attributes: Partial[T]): BlockInstance[T] = js.native
   def createBlock[T /* <: Record[String, _] */](name: String, attributes: Partial[T], innerBlocks: js.Array[BlockInstance[StringDictionary[_]]]): BlockInstance[T] = js.native
   def doBlocksMatchTemplate(): Boolean = js.native
+  def doBlocksMatchTemplate(blocks: js.UndefOr[scala.Nothing], template: TemplateArray): Boolean = js.native
   def doBlocksMatchTemplate(blocks: js.Array[BlockInstance[StringDictionary[_]]]): Boolean = js.native
   def doBlocksMatchTemplate(blocks: js.Array[BlockInstance[StringDictionary[_]]], template: TemplateArray): Boolean = js.native
   def findTransform[T /* <: Transform[Record[String, _]] */, U /* <: Record[String, _] */](transforms: js.Array[T], predicate: js.Function1[/* transform */ T, Boolean]): Transform[U] | Null = js.native
@@ -288,6 +299,7 @@ object apiMod extends js.Object {
   def switchToBlockType(blocks: js.Array[BlockInstance[StringDictionary[_]]], name: String): js.Array[BlockInstance[StringDictionary[_]]] | Null = js.native
   def switchToBlockType(blocks: BlockInstance[StringDictionary[_]], name: String): js.Array[BlockInstance[StringDictionary[_]]] | Null = js.native
   def synchronizeBlocksWithTemplate(): js.Array[BlockInstance[StringDictionary[_]]] = js.native
+  def synchronizeBlocksWithTemplate(blocks: js.UndefOr[scala.Nothing], template: TemplateArray): js.Array[BlockInstance[StringDictionary[_]]] = js.native
   def synchronizeBlocksWithTemplate(blocks: js.Array[BlockInstance[StringDictionary[_]]]): js.Array[BlockInstance[StringDictionary[_]]] = js.native
   def synchronizeBlocksWithTemplate(blocks: js.Array[BlockInstance[StringDictionary[_]]], template: TemplateArray): js.Array[BlockInstance[StringDictionary[_]]] = js.native
   def unregisterBlockStyle(blockName: String, styleVariationName: String): Unit = js.native

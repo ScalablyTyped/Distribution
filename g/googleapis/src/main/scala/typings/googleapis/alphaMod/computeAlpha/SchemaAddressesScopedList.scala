@@ -20,11 +20,32 @@ trait SchemaAddressesScopedList extends js.Object {
 
 object SchemaAddressesScopedList {
   @scala.inline
-  def apply(addresses: js.Array[SchemaAddress] = null, warning: Code = null): SchemaAddressesScopedList = {
+  def apply(): SchemaAddressesScopedList = {
     val __obj = js.Dynamic.literal()
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAddressesScopedList]
   }
+  @scala.inline
+  implicit class SchemaAddressesScopedListOps[Self <: SchemaAddressesScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressesVarargs(value: SchemaAddress*): Self = this.set("addresses", js.Array(value :_*))
+    @scala.inline
+    def setAddresses(value: js.Array[SchemaAddress]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddresses: Self = this.set("addresses", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

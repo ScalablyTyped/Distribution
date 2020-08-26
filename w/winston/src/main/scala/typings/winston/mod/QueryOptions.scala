@@ -7,35 +7,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QueryOptions extends js.Object {
-  var fields: js.Any
-  var from: js.UndefOr[Date] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var order: js.UndefOr[asc | desc] = js.undefined
-  var rows: js.UndefOr[Double] = js.undefined
-  var start: js.UndefOr[Double] = js.undefined
-  var until: js.UndefOr[Date] = js.undefined
+  var fields: js.Any = js.native
+  var from: js.UndefOr[Date] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[asc | desc] = js.native
+  var rows: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.native
+  var until: js.UndefOr[Date] = js.native
 }
 
 object QueryOptions {
   @scala.inline
-  def apply(
-    fields: js.Any,
-    from: Date = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    order: asc | desc = null,
-    rows: js.UndefOr[Double] = js.undefined,
-    start: js.UndefOr[Double] = js.undefined,
-    until: Date = null
-  ): QueryOptions = {
+  def apply(fields: js.Any): QueryOptions = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
-    if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
+  @scala.inline
+  implicit class QueryOptionsOps[Self <: QueryOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFields(value: js.Any): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFrom(value: Date): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setOrder(value: asc | desc): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setUntil(value: Date): Self = this.set("until", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUntil: Self = this.set("until", js.undefined)
+  }
+  
 }
 

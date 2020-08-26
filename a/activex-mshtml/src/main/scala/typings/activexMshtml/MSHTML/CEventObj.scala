@@ -57,6 +57,7 @@ trait CEventObj extends js.Object {
   var y: Double = js.native
   def bookmarks(index: Double): js.Any = js.native
   def boundElements(): js.Any = js.native
+  def boundElements(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def boundElements(name: js.Any): js.Any = js.native
   def boundElements(name: js.Any, index: js.Any): js.Any = js.native
   /** @param lFlags [lFlags=0] */

@@ -13,7 +13,15 @@ trait JQueryNotify extends js.Object {
     * @param options notification options
     */
   def apply(): JQuery = js.native
+  def apply(
+    element: js.UndefOr[scala.Nothing],
+    notificationdata: js.UndefOr[scala.Nothing],
+    options: NotificationOptions
+  ): JQuery = js.native
+  def apply(element: js.UndefOr[scala.Nothing], notificationdata: js.Any): JQuery = js.native
+  def apply(element: js.UndefOr[scala.Nothing], notificationdata: js.Any, options: NotificationOptions): JQuery = js.native
   def apply(element: js.Any): JQuery = js.native
+  def apply(element: js.Any, notificationdata: js.UndefOr[scala.Nothing], options: NotificationOptions): JQuery = js.native
   def apply(element: js.Any, notificationdata: js.Any): JQuery = js.native
   def apply(element: js.Any, notificationdata: js.Any, options: NotificationOptions): JQuery = js.native
   /**

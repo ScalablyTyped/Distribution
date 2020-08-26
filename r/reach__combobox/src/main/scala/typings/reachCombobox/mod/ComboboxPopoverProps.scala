@@ -7,24 +7,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ComboboxPopoverProps
   extends AllHTMLAttributes[HTMLElement]
      with ClassAttributes[HTMLElement] {
-  var portal: js.UndefOr[Boolean] = js.undefined
+  var portal: js.UndefOr[Boolean] = js.native
 }
 
 object ComboboxPopoverProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
-    ClassAttributes: ClassAttributes[HTMLElement] = null,
-    portal: js.UndefOr[Boolean] = js.undefined
-  ): ComboboxPopoverProps = {
+  def apply(): ComboboxPopoverProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(portal)) __obj.updateDynamic("portal")(portal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComboboxPopoverProps]
   }
+  @scala.inline
+  implicit class ComboboxPopoverPropsOps[Self <: ComboboxPopoverProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPortal(value: Boolean): Self = this.set("portal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortal: Self = this.set("portal", js.undefined)
+  }
+  
 }
 

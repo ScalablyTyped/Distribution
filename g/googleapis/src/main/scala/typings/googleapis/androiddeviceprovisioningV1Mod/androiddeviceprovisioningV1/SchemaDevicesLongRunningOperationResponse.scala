@@ -26,14 +26,32 @@ trait SchemaDevicesLongRunningOperationResponse extends js.Object {
 
 object SchemaDevicesLongRunningOperationResponse {
   @scala.inline
-  def apply(
-    perDeviceStatus: js.Array[SchemaOperationPerDevice] = null,
-    successCount: js.UndefOr[Double] = js.undefined
-  ): SchemaDevicesLongRunningOperationResponse = {
+  def apply(): SchemaDevicesLongRunningOperationResponse = {
     val __obj = js.Dynamic.literal()
-    if (perDeviceStatus != null) __obj.updateDynamic("perDeviceStatus")(perDeviceStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(successCount)) __obj.updateDynamic("successCount")(successCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDevicesLongRunningOperationResponse]
   }
+  @scala.inline
+  implicit class SchemaDevicesLongRunningOperationResponseOps[Self <: SchemaDevicesLongRunningOperationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPerDeviceStatusVarargs(value: SchemaOperationPerDevice*): Self = this.set("perDeviceStatus", js.Array(value :_*))
+    @scala.inline
+    def setPerDeviceStatus(value: js.Array[SchemaOperationPerDevice]): Self = this.set("perDeviceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerDeviceStatus: Self = this.set("perDeviceStatus", js.undefined)
+    @scala.inline
+    def setSuccessCount(value: Double): Self = this.set("successCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessCount: Self = this.set("successCount", js.undefined)
+  }
+  
 }
 

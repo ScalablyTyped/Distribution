@@ -19,6 +19,10 @@ trait Target extends js.Object {
     */
   var EcsParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.EcsParameters] = js.native
   /**
+    * Contains the HTTP parameters to use when the target is a API Gateway REST endpoint. If you specify an API Gateway REST API as a target, you can use this parameter to specify headers, path parameter, query string keys/values as part of your target invoking request.
+    */
+  var HttpParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.HttpParameters] = js.native
+  /**
     * The ID of the target.
     */
   var Id: TargetId = js.native
@@ -54,30 +58,66 @@ trait Target extends js.Object {
 
 object Target {
   @scala.inline
-  def apply(
-    Arn: TargetArn,
-    Id: TargetId,
-    BatchParameters: BatchParameters = null,
-    EcsParameters: EcsParameters = null,
-    Input: TargetInput = null,
-    InputPath: TargetInputPath = null,
-    InputTransformer: InputTransformer = null,
-    KinesisParameters: KinesisParameters = null,
-    RoleArn: RoleArn = null,
-    RunCommandParameters: RunCommandParameters = null,
-    SqsParameters: SqsParameters = null
-  ): Target = {
+  def apply(Arn: TargetArn, Id: TargetId): Target = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
-    if (BatchParameters != null) __obj.updateDynamic("BatchParameters")(BatchParameters.asInstanceOf[js.Any])
-    if (EcsParameters != null) __obj.updateDynamic("EcsParameters")(EcsParameters.asInstanceOf[js.Any])
-    if (Input != null) __obj.updateDynamic("Input")(Input.asInstanceOf[js.Any])
-    if (InputPath != null) __obj.updateDynamic("InputPath")(InputPath.asInstanceOf[js.Any])
-    if (InputTransformer != null) __obj.updateDynamic("InputTransformer")(InputTransformer.asInstanceOf[js.Any])
-    if (KinesisParameters != null) __obj.updateDynamic("KinesisParameters")(KinesisParameters.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (RunCommandParameters != null) __obj.updateDynamic("RunCommandParameters")(RunCommandParameters.asInstanceOf[js.Any])
-    if (SqsParameters != null) __obj.updateDynamic("SqsParameters")(SqsParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Target]
   }
+  @scala.inline
+  implicit class TargetOps[Self <: Target] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: TargetArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: TargetId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBatchParameters(value: BatchParameters): Self = this.set("BatchParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchParameters: Self = this.set("BatchParameters", js.undefined)
+    @scala.inline
+    def setEcsParameters(value: EcsParameters): Self = this.set("EcsParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcsParameters: Self = this.set("EcsParameters", js.undefined)
+    @scala.inline
+    def setHttpParameters(value: HttpParameters): Self = this.set("HttpParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpParameters: Self = this.set("HttpParameters", js.undefined)
+    @scala.inline
+    def setInput(value: TargetInput): Self = this.set("Input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("Input", js.undefined)
+    @scala.inline
+    def setInputPath(value: TargetInputPath): Self = this.set("InputPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputPath: Self = this.set("InputPath", js.undefined)
+    @scala.inline
+    def setInputTransformer(value: InputTransformer): Self = this.set("InputTransformer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputTransformer: Self = this.set("InputTransformer", js.undefined)
+    @scala.inline
+    def setKinesisParameters(value: KinesisParameters): Self = this.set("KinesisParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisParameters: Self = this.set("KinesisParameters", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setRunCommandParameters(value: RunCommandParameters): Self = this.set("RunCommandParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunCommandParameters: Self = this.set("RunCommandParameters", js.undefined)
+    @scala.inline
+    def setSqsParameters(value: SqsParameters): Self = this.set("SqsParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqsParameters: Self = this.set("SqsParameters", js.undefined)
+  }
+  
 }
 

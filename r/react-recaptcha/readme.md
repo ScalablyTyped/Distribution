@@ -12,7 +12,7 @@ A react.js reCAPTCHA for Google
 | Keywords           | react, react-component, reCAPTCHA, component |
 | # releases         | 6 |
 | # dependents       | 14 |
-| # downloads        | 1502936 |
+| # downloads        | 1556684 |
 | # stars            | 5 |
 
 ## Links

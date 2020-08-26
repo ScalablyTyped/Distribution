@@ -5,28 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InventoryLevel extends ShopifyObject {
-  var available: js.UndefOr[Double] = js.undefined
-  var inventory_item_id: js.UndefOr[Double] = js.undefined
-  var location_id: js.UndefOr[Double] = js.undefined
+  var available: js.UndefOr[Double] = js.native
+  var inventory_item_id: js.UndefOr[Double] = js.native
+  var location_id: js.UndefOr[Double] = js.native
 }
 
 object InventoryLevel {
   @scala.inline
-  def apply(
-    admin_graphql_api_id: String = null,
-    available: js.UndefOr[Double] = js.undefined,
-    id: js.UndefOr[Double] = js.undefined,
-    inventory_item_id: js.UndefOr[Double] = js.undefined,
-    location_id: js.UndefOr[Double] = js.undefined
-  ): InventoryLevel = {
+  def apply(): InventoryLevel = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inventory_item_id)) __obj.updateDynamic("inventory_item_id")(inventory_item_id.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(location_id)) __obj.updateDynamic("location_id")(location_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryLevel]
   }
+  @scala.inline
+  implicit class InventoryLevelOps[Self <: InventoryLevel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailable(value: Double): Self = this.set("available", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailable: Self = this.set("available", js.undefined)
+    @scala.inline
+    def setInventory_item_id(value: Double): Self = this.set("inventory_item_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventory_item_id: Self = this.set("inventory_item_id", js.undefined)
+    @scala.inline
+    def setLocation_id(value: Double): Self = this.set("location_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation_id: Self = this.set("location_id", js.undefined)
+  }
+  
 }
 

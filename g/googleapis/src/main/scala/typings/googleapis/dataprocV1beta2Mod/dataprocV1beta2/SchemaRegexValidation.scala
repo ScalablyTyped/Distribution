@@ -19,10 +19,28 @@ trait SchemaRegexValidation extends js.Object {
 
 object SchemaRegexValidation {
   @scala.inline
-  def apply(regexes: js.Array[String] = null): SchemaRegexValidation = {
+  def apply(): SchemaRegexValidation = {
     val __obj = js.Dynamic.literal()
-    if (regexes != null) __obj.updateDynamic("regexes")(regexes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRegexValidation]
   }
+  @scala.inline
+  implicit class SchemaRegexValidationOps[Self <: SchemaRegexValidation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegexesVarargs(value: String*): Self = this.set("regexes", js.Array(value :_*))
+    @scala.inline
+    def setRegexes(value: js.Array[String]): Self = this.set("regexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexes: Self = this.set("regexes", js.undefined)
+  }
+  
 }
 

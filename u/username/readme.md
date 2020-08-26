@@ -11,8 +11,8 @@ Get the username of the current user
 | Full name          | username |
 | Keywords           | username, user, login, name, logname, lname, whoami, shell, env, environment, variable |
 | # releases         | 5 |
-| # dependents       | 160 |
-| # downloads        | 4488149 |
+| # dependents       | 159 |
+| # downloads        | 4403043 |
 | # stars            | 5 |
 
 ## Links

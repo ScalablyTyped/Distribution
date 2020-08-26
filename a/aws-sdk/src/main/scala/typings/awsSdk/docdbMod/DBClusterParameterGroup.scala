@@ -26,18 +26,38 @@ trait DBClusterParameterGroup extends js.Object {
 
 object DBClusterParameterGroup {
   @scala.inline
-  def apply(
-    DBClusterParameterGroupArn: String = null,
-    DBClusterParameterGroupName: String = null,
-    DBParameterGroupFamily: String = null,
-    Description: String = null
-  ): DBClusterParameterGroup = {
+  def apply(): DBClusterParameterGroup = {
     val __obj = js.Dynamic.literal()
-    if (DBClusterParameterGroupArn != null) __obj.updateDynamic("DBClusterParameterGroupArn")(DBClusterParameterGroupArn.asInstanceOf[js.Any])
-    if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName.asInstanceOf[js.Any])
-    if (DBParameterGroupFamily != null) __obj.updateDynamic("DBParameterGroupFamily")(DBParameterGroupFamily.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterParameterGroup]
   }
+  @scala.inline
+  implicit class DBClusterParameterGroupOps[Self <: DBClusterParameterGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBClusterParameterGroupArn(value: String): Self = this.set("DBClusterParameterGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterParameterGroupArn: Self = this.set("DBClusterParameterGroupArn", js.undefined)
+    @scala.inline
+    def setDBClusterParameterGroupName(value: String): Self = this.set("DBClusterParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterParameterGroupName: Self = this.set("DBClusterParameterGroupName", js.undefined)
+    @scala.inline
+    def setDBParameterGroupFamily(value: String): Self = this.set("DBParameterGroupFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBParameterGroupFamily: Self = this.set("DBParameterGroupFamily", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

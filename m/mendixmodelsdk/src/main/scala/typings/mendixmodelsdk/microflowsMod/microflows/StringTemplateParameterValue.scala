@@ -30,12 +30,12 @@ class StringTemplateParameterValue protected () extends CodeActionParameterValue
     * In version 8.6.0: deleted
     */
   def template: StringTemplate = js.native
-  def template(newValue: StringTemplate): js.Any = js.native
+  def template_=(newValue: StringTemplate): Unit = js.native
   /**
     * In version 8.6.0: introduced
     */
   def typedTemplate: TypedTemplate = js.native
-  def typedTemplate(newValue: TypedTemplate): js.Any = js.native
+  def typedTemplate_=(newValue: TypedTemplate): Unit = js.native
 }
 
 /* static members */

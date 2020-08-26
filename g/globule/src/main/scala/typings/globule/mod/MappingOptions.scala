@@ -1,108 +1,58 @@
 package typings.globule.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.glob.anon.IsDirectory
-import typings.glob.globBooleans.`false`
-import typings.glob.globStrings.DIR
-import typings.glob.globStrings.FILE
 import typings.globule.globuleStrings.first
 import typings.globule.globuleStrings.last
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MappingOptions extends FindOptions {
-  var destBase: js.UndefOr[String] = js.undefined
-  var ext: js.UndefOr[String] = js.undefined
-  var extDot: js.UndefOr[first | last] = js.undefined
-  var flatten: js.UndefOr[Boolean] = js.undefined
-  var rename: js.UndefOr[js.Function1[/* p */ String, String]] = js.undefined
+  var destBase: js.UndefOr[String] = js.native
+  var ext: js.UndefOr[String] = js.native
+  var extDot: js.UndefOr[first | last] = js.native
+  var flatten: js.UndefOr[Boolean] = js.native
+  var rename: js.UndefOr[js.Function1[/* p */ String, String]] = js.native
 }
 
 object MappingOptions {
   @scala.inline
-  def apply(
-    absolute: js.UndefOr[Boolean] = js.undefined,
-    cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]] = null,
-    cwd: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    destBase: String = null,
-    dot: js.UndefOr[Boolean] = js.undefined,
-    ext: String = null,
-    extDot: first | last = null,
-    filter: String | (js.Function2[/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[js.Any], Boolean]) = null,
-    flatten: js.UndefOr[Boolean] = js.undefined,
-    flipNegate: js.UndefOr[Boolean] = js.undefined,
-    follow: js.UndefOr[Boolean] = js.undefined,
-    ignore: String | js.Array[String] = null,
-    mark: js.UndefOr[Boolean] = js.undefined,
-    matchBase: js.UndefOr[Boolean] = js.undefined,
-    nobrace: js.UndefOr[Boolean] = js.undefined,
-    nocase: js.UndefOr[Boolean] = js.undefined,
-    nocomment: js.UndefOr[Boolean] = js.undefined,
-    nodir: js.UndefOr[Boolean] = js.undefined,
-    noext: js.UndefOr[Boolean] = js.undefined,
-    noglobstar: js.UndefOr[Boolean] = js.undefined,
-    nomount: js.UndefOr[Boolean] = js.undefined,
-    nonegate: js.UndefOr[Boolean] = js.undefined,
-    nonull: js.UndefOr[Boolean] = js.undefined,
-    nosort: js.UndefOr[Boolean] = js.undefined,
-    nounique: js.UndefOr[Boolean] = js.undefined,
-    prefixBase: js.UndefOr[Boolean] = js.undefined,
-    realpath: js.UndefOr[Boolean] = js.undefined,
-    realpathCache: StringDictionary[String] = null,
-    rename: /* p */ String => String = null,
-    root: String = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    src: String = null,
-    srcBase: String = null,
-    stat: js.UndefOr[Boolean] = js.undefined,
-    statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]] = null,
-    strict: js.UndefOr[Boolean] = js.undefined,
-    symlinks: StringDictionary[js.UndefOr[Boolean]] = null,
-    sync: js.UndefOr[Boolean] = js.undefined
-  ): MappingOptions = {
+  def apply(): MappingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.get.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (destBase != null) __obj.updateDynamic("destBase")(destBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.get.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (extDot != null) __obj.updateDynamic("extDot")(extDot.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipNegate)) __obj.updateDynamic("flipNegate")(flipNegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchBase)) __obj.updateDynamic("matchBase")(matchBase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nobrace)) __obj.updateDynamic("nobrace")(nobrace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocase)) __obj.updateDynamic("nocase")(nocase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocomment)) __obj.updateDynamic("nocomment")(nocomment.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodir)) __obj.updateDynamic("nodir")(nodir.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noext)) __obj.updateDynamic("noext")(noext.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noglobstar)) __obj.updateDynamic("noglobstar")(noglobstar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nomount)) __obj.updateDynamic("nomount")(nomount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonegate)) __obj.updateDynamic("nonegate")(nonegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonull)) __obj.updateDynamic("nonull")(nonull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nosort)) __obj.updateDynamic("nosort")(nosort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nounique)) __obj.updateDynamic("nounique")(nounique.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(prefixBase)) __obj.updateDynamic("prefixBase")(prefixBase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath.get.asInstanceOf[js.Any])
-    if (realpathCache != null) __obj.updateDynamic("realpathCache")(realpathCache.asInstanceOf[js.Any])
-    if (rename != null) __obj.updateDynamic("rename")(js.Any.fromFunction1(rename))
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (srcBase != null) __obj.updateDynamic("srcBase")(srcBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(stat)) __obj.updateDynamic("stat")(stat.get.asInstanceOf[js.Any])
-    if (statCache != null) __obj.updateDynamic("statCache")(statCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
-    if (symlinks != null) __obj.updateDynamic("symlinks")(symlinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappingOptions]
   }
+  @scala.inline
+  implicit class MappingOptionsOps[Self <: MappingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestBase(value: String): Self = this.set("destBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestBase: Self = this.set("destBase", js.undefined)
+    @scala.inline
+    def setExt(value: String): Self = this.set("ext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExt: Self = this.set("ext", js.undefined)
+    @scala.inline
+    def setExtDot(value: first | last): Self = this.set("extDot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtDot: Self = this.set("extDot", js.undefined)
+    @scala.inline
+    def setFlatten(value: Boolean): Self = this.set("flatten", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlatten: Self = this.set("flatten", js.undefined)
+    @scala.inline
+    def setRename(value: /* p */ String => String): Self = this.set("rename", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRename: Self = this.set("rename", js.undefined)
+  }
+  
 }
 

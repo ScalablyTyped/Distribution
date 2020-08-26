@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
 class ResourceLoader ()
   extends typings.winrt.Windows.ApplicationModel.Resources.ResourceLoader {
   def this(name: String) = this()
-  /* CompleteClass */
-  override def getString(resource: String): String = js.native
 }
 
 /* static members */

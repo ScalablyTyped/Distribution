@@ -22,16 +22,36 @@ trait UserPendingChanges extends js.Object {
 
 object UserPendingChanges {
   @scala.inline
-  def apply(
-    ConsoleAccess: js.UndefOr[boolean] = js.undefined,
-    Groups: listOfString = null,
-    PendingChange: ChangeType = null
-  ): UserPendingChanges = {
+  def apply(): UserPendingChanges = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ConsoleAccess)) __obj.updateDynamic("ConsoleAccess")(ConsoleAccess.get.asInstanceOf[js.Any])
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
-    if (PendingChange != null) __obj.updateDynamic("PendingChange")(PendingChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPendingChanges]
   }
+  @scala.inline
+  implicit class UserPendingChangesOps[Self <: UserPendingChanges] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsoleAccess(value: boolean): Self = this.set("ConsoleAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsoleAccess: Self = this.set("ConsoleAccess", js.undefined)
+    @scala.inline
+    def setGroupsVarargs(value: string*): Self = this.set("Groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: listOfString): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("Groups", js.undefined)
+    @scala.inline
+    def setPendingChange(value: ChangeType): Self = this.set("PendingChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingChange: Self = this.set("PendingChange", js.undefined)
+  }
+  
 }
 

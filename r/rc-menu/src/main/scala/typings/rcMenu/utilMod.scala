@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-menu/lib/util", JSImport.Namespace)
+@JSImport("rc-menu/es/util", JSImport.Namespace)
 @js.native
 object utilMod extends js.Object {
   val menuAllProps: js.Array[String] = js.native
@@ -22,12 +22,12 @@ object utilMod extends js.Object {
   def noop(): Unit = js.native
   def setStyle(
     elem: HTMLElement,
-    styleProperty: /* keyof react.react.CSSProperties */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any,
+    styleProperty: /* keyof react.react.CSSProperties */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 765 */ js.Any,
     value: String
   ): Unit = js.native
   def setStyle(
     elem: HTMLElement,
-    styleProperty: /* keyof react.react.CSSProperties */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 759 */ js.Any,
+    styleProperty: /* keyof react.react.CSSProperties */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 765 */ js.Any,
     value: Double
   ): Unit = js.native
 }

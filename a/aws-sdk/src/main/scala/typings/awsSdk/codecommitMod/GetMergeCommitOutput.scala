@@ -26,18 +26,38 @@ trait GetMergeCommitOutput extends js.Object {
 
 object GetMergeCommitOutput {
   @scala.inline
-  def apply(
-    baseCommitId: ObjectId = null,
-    destinationCommitId: ObjectId = null,
-    mergedCommitId: ObjectId = null,
-    sourceCommitId: ObjectId = null
-  ): GetMergeCommitOutput = {
+  def apply(): GetMergeCommitOutput = {
     val __obj = js.Dynamic.literal()
-    if (baseCommitId != null) __obj.updateDynamic("baseCommitId")(baseCommitId.asInstanceOf[js.Any])
-    if (destinationCommitId != null) __obj.updateDynamic("destinationCommitId")(destinationCommitId.asInstanceOf[js.Any])
-    if (mergedCommitId != null) __obj.updateDynamic("mergedCommitId")(mergedCommitId.asInstanceOf[js.Any])
-    if (sourceCommitId != null) __obj.updateDynamic("sourceCommitId")(sourceCommitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMergeCommitOutput]
   }
+  @scala.inline
+  implicit class GetMergeCommitOutputOps[Self <: GetMergeCommitOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseCommitId(value: ObjectId): Self = this.set("baseCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseCommitId: Self = this.set("baseCommitId", js.undefined)
+    @scala.inline
+    def setDestinationCommitId(value: ObjectId): Self = this.set("destinationCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationCommitId: Self = this.set("destinationCommitId", js.undefined)
+    @scala.inline
+    def setMergedCommitId(value: ObjectId): Self = this.set("mergedCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergedCommitId: Self = this.set("mergedCommitId", js.undefined)
+    @scala.inline
+    def setSourceCommitId(value: ObjectId): Self = this.set("sourceCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCommitId: Self = this.set("sourceCommitId", js.undefined)
+  }
+  
 }
 

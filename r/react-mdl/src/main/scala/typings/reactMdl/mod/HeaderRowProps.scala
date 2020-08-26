@@ -6,29 +6,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HeaderRowProps
   extends AllHTMLAttributes[js.Any]
      with ClassAttributes[js.Any] {
    // string | JSX.Element
-  var hideSpacer: js.UndefOr[Boolean] = js.undefined
+  var hideSpacer: js.UndefOr[Boolean] = js.native
   @JSName("title")
-  var title_HeaderRowProps: js.UndefOr[js.Any] = js.undefined
+  var title_HeaderRowProps: js.UndefOr[js.Any] = js.native
 }
 
 object HeaderRowProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    hideSpacer: js.UndefOr[Boolean] = js.undefined,
-    title: js.Any = null
-  ): HeaderRowProps = {
+  def apply(): HeaderRowProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(hideSpacer)) __obj.updateDynamic("hideSpacer")(hideSpacer.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderRowProps]
   }
+  @scala.inline
+  implicit class HeaderRowPropsOps[Self <: HeaderRowProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHideSpacer(value: Boolean): Self = this.set("hideSpacer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideSpacer: Self = this.set("hideSpacer", js.undefined)
+    @scala.inline
+    def setTitle(value: js.Any): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

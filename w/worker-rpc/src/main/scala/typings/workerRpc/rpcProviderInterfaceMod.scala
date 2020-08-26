@@ -20,9 +20,11 @@ object rpcProviderInterfaceMod extends js.Object {
     def rpc[T, U](id: String): js.Promise[U] = js.native
     def rpc[T, U](id: String, payload: T): js.Promise[U] = js.native
     def rpc[T, U](id: String, payload: T, transfer: js.Array[_]): js.Promise[U] = js.native
+    def rpc[T, U](id: String, payload: js.UndefOr[scala.Nothing], transfer: js.Array[_]): js.Promise[U] = js.native
     def signal[T](id: String): this.type = js.native
     def signal[T](id: String, payload: T): this.type = js.native
     def signal[T](id: String, payload: T, transfer: js.Array[_]): this.type = js.native
+    def signal[T](id: String, payload: js.UndefOr[scala.Nothing], transfer: js.Array[_]): this.type = js.native
   }
   
   @js.native

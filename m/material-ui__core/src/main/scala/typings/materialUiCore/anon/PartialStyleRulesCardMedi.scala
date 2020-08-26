@@ -14,11 +14,30 @@ trait PartialStyleRulesCardMedi extends js.Object {
 
 object PartialStyleRulesCardMedi {
   @scala.inline
-  def apply(media: CSSProperties = null, root: CSSProperties = null): PartialStyleRulesCardMedi = {
+  def apply(): PartialStyleRulesCardMedi = {
     val __obj = js.Dynamic.literal()
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesCardMedi]
   }
+  @scala.inline
+  implicit class PartialStyleRulesCardMediOps[Self <: PartialStyleRulesCardMedi] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMedia(value: CSSProperties): Self = this.set("media", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedia: Self = this.set("media", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

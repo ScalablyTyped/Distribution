@@ -21,18 +21,43 @@ trait GetIpRangesArgs extends js.Object {
     */
   val services: js.Array[String] = js.native
   /**
-    * Custom URL for source JSON file. Syntax must match [AWS IP Address Ranges documention][1]. Defaults to `https://ip-ranges.amazonaws.com/ip-ranges.json`.
+    * Custom URL for source JSON file. Syntax must match [AWS IP Address Ranges documention](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html). Defaults to `https://ip-ranges.amazonaws.com/ip-ranges.json`.
     */
   val url: js.UndefOr[String] = js.native
 }
 
 object GetIpRangesArgs {
   @scala.inline
-  def apply(services: js.Array[String], regions: js.Array[String] = null, url: String = null): GetIpRangesArgs = {
+  def apply(services: js.Array[String]): GetIpRangesArgs = {
     val __obj = js.Dynamic.literal(services = services.asInstanceOf[js.Any])
-    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIpRangesArgs]
   }
+  @scala.inline
+  implicit class GetIpRangesArgsOps[Self <: GetIpRangesArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServicesVarargs(value: String*): Self = this.set("services", js.Array(value :_*))
+    @scala.inline
+    def setServices(value: js.Array[String]): Self = this.set("services", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegionsVarargs(value: String*): Self = this.set("regions", js.Array(value :_*))
+    @scala.inline
+    def setRegions(value: js.Array[String]): Self = this.set("regions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegions: Self = this.set("regions", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

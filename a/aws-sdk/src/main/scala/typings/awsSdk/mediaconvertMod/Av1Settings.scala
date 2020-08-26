@@ -58,34 +58,70 @@ trait Av1Settings extends js.Object {
 
 object Av1Settings {
   @scala.inline
-  def apply(
-    AdaptiveQuantization: Av1AdaptiveQuantization = null,
-    FramerateControl: Av1FramerateControl = null,
-    FramerateConversionAlgorithm: Av1FramerateConversionAlgorithm = null,
-    FramerateDenominator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    FramerateNumerator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    GopSize: js.UndefOr[doubleMin0] = js.undefined,
-    MaxBitrate: js.UndefOr[integerMin1000Max1152000000] = js.undefined,
-    NumberBFramesBetweenReferenceFrames: js.UndefOr[integerMin7Max15] = js.undefined,
-    QvbrSettings: Av1QvbrSettings = null,
-    RateControlMode: Av1RateControlMode = null,
-    Slices: js.UndefOr[integerMin1Max32] = js.undefined,
-    SpatialAdaptiveQuantization: Av1SpatialAdaptiveQuantization = null
-  ): Av1Settings = {
+  def apply(): Av1Settings = {
     val __obj = js.Dynamic.literal()
-    if (AdaptiveQuantization != null) __obj.updateDynamic("AdaptiveQuantization")(AdaptiveQuantization.asInstanceOf[js.Any])
-    if (FramerateControl != null) __obj.updateDynamic("FramerateControl")(FramerateControl.asInstanceOf[js.Any])
-    if (FramerateConversionAlgorithm != null) __obj.updateDynamic("FramerateConversionAlgorithm")(FramerateConversionAlgorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(FramerateDenominator)) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FramerateNumerator)) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(GopSize)) __obj.updateDynamic("GopSize")(GopSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberBFramesBetweenReferenceFrames)) __obj.updateDynamic("NumberBFramesBetweenReferenceFrames")(NumberBFramesBetweenReferenceFrames.get.asInstanceOf[js.Any])
-    if (QvbrSettings != null) __obj.updateDynamic("QvbrSettings")(QvbrSettings.asInstanceOf[js.Any])
-    if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Slices)) __obj.updateDynamic("Slices")(Slices.get.asInstanceOf[js.Any])
-    if (SpatialAdaptiveQuantization != null) __obj.updateDynamic("SpatialAdaptiveQuantization")(SpatialAdaptiveQuantization.asInstanceOf[js.Any])
     __obj.asInstanceOf[Av1Settings]
   }
+  @scala.inline
+  implicit class Av1SettingsOps[Self <: Av1Settings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdaptiveQuantization(value: Av1AdaptiveQuantization): Self = this.set("AdaptiveQuantization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdaptiveQuantization: Self = this.set("AdaptiveQuantization", js.undefined)
+    @scala.inline
+    def setFramerateControl(value: Av1FramerateControl): Self = this.set("FramerateControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateControl: Self = this.set("FramerateControl", js.undefined)
+    @scala.inline
+    def setFramerateConversionAlgorithm(value: Av1FramerateConversionAlgorithm): Self = this.set("FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateConversionAlgorithm: Self = this.set("FramerateConversionAlgorithm", js.undefined)
+    @scala.inline
+    def setFramerateDenominator(value: integerMin1Max2147483647): Self = this.set("FramerateDenominator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateDenominator: Self = this.set("FramerateDenominator", js.undefined)
+    @scala.inline
+    def setFramerateNumerator(value: integerMin1Max2147483647): Self = this.set("FramerateNumerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateNumerator: Self = this.set("FramerateNumerator", js.undefined)
+    @scala.inline
+    def setGopSize(value: doubleMin0): Self = this.set("GopSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGopSize: Self = this.set("GopSize", js.undefined)
+    @scala.inline
+    def setMaxBitrate(value: integerMin1000Max1152000000): Self = this.set("MaxBitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBitrate: Self = this.set("MaxBitrate", js.undefined)
+    @scala.inline
+    def setNumberBFramesBetweenReferenceFrames(value: integerMin7Max15): Self = this.set("NumberBFramesBetweenReferenceFrames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberBFramesBetweenReferenceFrames: Self = this.set("NumberBFramesBetweenReferenceFrames", js.undefined)
+    @scala.inline
+    def setQvbrSettings(value: Av1QvbrSettings): Self = this.set("QvbrSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQvbrSettings: Self = this.set("QvbrSettings", js.undefined)
+    @scala.inline
+    def setRateControlMode(value: Av1RateControlMode): Self = this.set("RateControlMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRateControlMode: Self = this.set("RateControlMode", js.undefined)
+    @scala.inline
+    def setSlices(value: integerMin1Max32): Self = this.set("Slices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlices: Self = this.set("Slices", js.undefined)
+    @scala.inline
+    def setSpatialAdaptiveQuantization(value: Av1SpatialAdaptiveQuantization): Self = this.set("SpatialAdaptiveQuantization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpatialAdaptiveQuantization: Self = this.set("SpatialAdaptiveQuantization", js.undefined)
+  }
+  
 }
 

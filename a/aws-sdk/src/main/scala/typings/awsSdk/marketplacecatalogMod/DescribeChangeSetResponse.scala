@@ -42,26 +42,56 @@ trait DescribeChangeSetResponse extends js.Object {
 
 object DescribeChangeSetResponse {
   @scala.inline
-  def apply(
-    ChangeSet: ChangeSetDescription = null,
-    ChangeSetArn: ARN = null,
-    ChangeSetId: ResourceId = null,
-    ChangeSetName: ChangeSetName = null,
-    EndTime: DateTimeISO8601 = null,
-    FailureDescription: StringValue = null,
-    StartTime: DateTimeISO8601 = null,
-    Status: ChangeStatus = null
-  ): DescribeChangeSetResponse = {
+  def apply(): DescribeChangeSetResponse = {
     val __obj = js.Dynamic.literal()
-    if (ChangeSet != null) __obj.updateDynamic("ChangeSet")(ChangeSet.asInstanceOf[js.Any])
-    if (ChangeSetArn != null) __obj.updateDynamic("ChangeSetArn")(ChangeSetArn.asInstanceOf[js.Any])
-    if (ChangeSetId != null) __obj.updateDynamic("ChangeSetId")(ChangeSetId.asInstanceOf[js.Any])
-    if (ChangeSetName != null) __obj.updateDynamic("ChangeSetName")(ChangeSetName.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (FailureDescription != null) __obj.updateDynamic("FailureDescription")(FailureDescription.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChangeSetResponse]
   }
+  @scala.inline
+  implicit class DescribeChangeSetResponseOps[Self <: DescribeChangeSetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeSetVarargs(value: ChangeSummary*): Self = this.set("ChangeSet", js.Array(value :_*))
+    @scala.inline
+    def setChangeSet(value: ChangeSetDescription): Self = this.set("ChangeSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSet: Self = this.set("ChangeSet", js.undefined)
+    @scala.inline
+    def setChangeSetArn(value: ARN): Self = this.set("ChangeSetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetArn: Self = this.set("ChangeSetArn", js.undefined)
+    @scala.inline
+    def setChangeSetId(value: ResourceId): Self = this.set("ChangeSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetId: Self = this.set("ChangeSetId", js.undefined)
+    @scala.inline
+    def setChangeSetName(value: ChangeSetName): Self = this.set("ChangeSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetName: Self = this.set("ChangeSetName", js.undefined)
+    @scala.inline
+    def setEndTime(value: DateTimeISO8601): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setFailureDescription(value: StringValue): Self = this.set("FailureDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureDescription: Self = this.set("FailureDescription", js.undefined)
+    @scala.inline
+    def setStartTime(value: DateTimeISO8601): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setStatus(value: ChangeStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

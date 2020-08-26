@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object open extends js.Object {
   def apply(): Unit = js.native
+  def apply(
+    affixes: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.Any, /* result */ OpenFile, Unit]
+  ): Unit = js.native
   def apply(affixes: String): Unit = js.native
   def apply(affixes: String, callback: js.Function2[/* err */ js.Any, /* result */ OpenFile, Unit]): Unit = js.native
   def apply(affixes: AffixOptions): Unit = js.native

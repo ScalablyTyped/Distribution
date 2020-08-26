@@ -2,7 +2,7 @@ package typings.reactNativeElements.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
-import typings.reactNativeElements.anon.bottomnumberleftnumberrig
+import typings.reactNativeElements.anon.bottomnumberundefinedleft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object withBadge extends js.Object {
   def apply(): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
+  def apply(
+    /**
+    * Text value to be displayed by badge
+    */
+  value: js.UndefOr[ReactNode],
+    /**
+    * Options to configure the badge
+    */
+  options: bottomnumberundefinedleft
+  ): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
   def apply(/**
     * Text value to be displayed by badge
     */
@@ -23,21 +33,11 @@ object withBadge extends js.Object {
     /**
     * Options to configure the badge
     */
-  options: bottomnumberleftnumberrig
+  options: bottomnumberundefinedleft
   ): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
   def apply(/**
     * Text value to be displayed by badge
     */
   value: ReactNode): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
-  def apply(
-    /**
-    * Text value to be displayed by badge
-    */
-  value: ReactNode,
-    /**
-    * Options to configure the badge
-    */
-  options: bottomnumberleftnumberrig
-  ): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
 }
 

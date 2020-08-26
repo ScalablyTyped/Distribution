@@ -6,24 +6,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/Panel/Panel.base.IPanelState> */
+@js.native
 trait PartialIPanelState extends js.Object {
-  var id: js.UndefOr[String] = js.undefined
-  var isFooterSticky: js.UndefOr[Boolean] = js.undefined
-  var visibility: js.UndefOr[PanelVisibilityState] = js.undefined
+  var id: js.UndefOr[String] = js.native
+  var isFooterSticky: js.UndefOr[Boolean] = js.native
+  var visibility: js.UndefOr[PanelVisibilityState] = js.native
 }
 
 object PartialIPanelState {
   @scala.inline
-  def apply(
-    id: String = null,
-    isFooterSticky: js.UndefOr[Boolean] = js.undefined,
-    visibility: PanelVisibilityState = null
-  ): PartialIPanelState = {
+  def apply(): PartialIPanelState = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFooterSticky)) __obj.updateDynamic("isFooterSticky")(isFooterSticky.get.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialIPanelState]
   }
+  @scala.inline
+  implicit class PartialIPanelStateOps[Self <: PartialIPanelState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsFooterSticky(value: Boolean): Self = this.set("isFooterSticky", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFooterSticky: Self = this.set("isFooterSticky", js.undefined)
+    @scala.inline
+    def setVisibility(value: PanelVisibilityState): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibility: Self = this.set("visibility", js.undefined)
+  }
+  
 }
 

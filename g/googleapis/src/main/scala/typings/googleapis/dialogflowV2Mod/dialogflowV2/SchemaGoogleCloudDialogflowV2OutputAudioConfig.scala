@@ -29,16 +29,34 @@ trait SchemaGoogleCloudDialogflowV2OutputAudioConfig extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2OutputAudioConfig {
   @scala.inline
-  def apply(
-    audioEncoding: String = null,
-    sampleRateHertz: js.UndefOr[Double] = js.undefined,
-    synthesizeSpeechConfig: SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig = null
-  ): SchemaGoogleCloudDialogflowV2OutputAudioConfig = {
+  def apply(): SchemaGoogleCloudDialogflowV2OutputAudioConfig = {
     val __obj = js.Dynamic.literal()
-    if (audioEncoding != null) __obj.updateDynamic("audioEncoding")(audioEncoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(sampleRateHertz)) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.get.asInstanceOf[js.Any])
-    if (synthesizeSpeechConfig != null) __obj.updateDynamic("synthesizeSpeechConfig")(synthesizeSpeechConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2OutputAudioConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2OutputAudioConfigOps[Self <: SchemaGoogleCloudDialogflowV2OutputAudioConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioEncoding(value: String): Self = this.set("audioEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioEncoding: Self = this.set("audioEncoding", js.undefined)
+    @scala.inline
+    def setSampleRateHertz(value: Double): Self = this.set("sampleRateHertz", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleRateHertz: Self = this.set("sampleRateHertz", js.undefined)
+    @scala.inline
+    def setSynthesizeSpeechConfig(value: SchemaGoogleCloudDialogflowV2SynthesizeSpeechConfig): Self = this.set("synthesizeSpeechConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSynthesizeSpeechConfig: Self = this.set("synthesizeSpeechConfig", js.undefined)
+  }
+  
 }
 

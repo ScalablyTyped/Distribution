@@ -1,16 +1,13 @@
 package typings.pulumiAws.lambdaMixinsMod
 
-import typings.pulumiAws.anon.CodePathOptions
-import typings.pulumiAws.arnMod.ARN
-import typings.pulumiAws.iamMod.Role
-import typings.pulumiAws.runtimesMod.Runtime
+import typings.pulumiAws.anon.Code
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in @pulumi/aws.@pulumi/aws/utils.Diff<keyof @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, keyof @pulumi/aws.anon.CodePathOptions> ]: @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs[P]} */ @js.native
-trait CallbackFunctionArgs[E, R] extends CodePathOptions {
+- Dropped {[ P in @pulumi/aws.@pulumi/aws/utils.Diff<keyof @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, keyof @pulumi/aws.anon.Code> ]: @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs[P]} */ @js.native
+trait CallbackFunctionArgs[E, R] extends Code {
   /**
     * The Javascript callback to use as the entrypoint for the AWS Lambda out of.  Either
     * [callback] or [callbackFactory] must be provided.
@@ -31,22 +28,32 @@ trait CallbackFunctionArgs[E, R] extends CodePathOptions {
 
 object CallbackFunctionArgs {
   @scala.inline
-  def apply[E, R](
-    callback: (E, /* context */ Context, /* callback */ js.Function2[/* error */ js.UndefOr[js.Any], /* result */ js.UndefOr[R], Unit]) => js.Promise[R] | Unit = null,
-    callbackFactory: () => Callback[E, R] = null,
-    codePathOptions: typings.pulumiPulumi.codePathsMod.CodePathOptions = null,
-    policies: js.Array[ARN] = null,
-    role: Role = null,
-    runtime: Runtime = null
-  ): CallbackFunctionArgs[E, R] = {
+  def apply[E, R](): CallbackFunctionArgs[E, R] = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3(callback))
-    if (callbackFactory != null) __obj.updateDynamic("callbackFactory")(js.Any.fromFunction0(callbackFactory))
-    if (codePathOptions != null) __obj.updateDynamic("codePathOptions")(codePathOptions.asInstanceOf[js.Any])
-    if (policies != null) __obj.updateDynamic("policies")(policies.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (runtime != null) __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFunctionArgs[E, R]]
   }
+  @scala.inline
+  implicit class CallbackFunctionArgsOps[Self <: CallbackFunctionArgs[_, _], E, R] (val x: Self with (CallbackFunctionArgs[E, R])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallback(
+      value: (E, /* context */ Context, /* callback */ js.Function2[/* error */ js.UndefOr[js.Any], /* result */ js.UndefOr[R], Unit]) => js.Promise[R] | Unit
+    ): Self = this.set("callback", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setCallbackFactory(value: () => Callback[E, R]): Self = this.set("callbackFactory", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCallbackFactory: Self = this.set("callbackFactory", js.undefined)
+  }
+  
 }
 

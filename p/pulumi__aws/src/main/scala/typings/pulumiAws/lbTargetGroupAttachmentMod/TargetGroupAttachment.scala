@@ -22,7 +22,7 @@ class TargetGroupAttachment protected () extends CustomResource {
   def this(name: String, args: TargetGroupAttachmentArgs) = this()
   def this(name: String, args: TargetGroupAttachmentArgs, opts: CustomResourceOptions) = this()
   /**
-    * The Availability Zone where the IP address of the target is to be registered.
+    * The Availability Zone where the IP address of the target is to be registered. If the private ip address is outside of the VPC scope, this value must be set to 'all'.
     */
   val availabilityZone: Output_[js.UndefOr[String]] = js.native
   /**
@@ -50,8 +50,10 @@ object TargetGroupAttachment extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): TargetGroupAttachment = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TargetGroupAttachment = js.native
   def get(name: String, id: Input[ID], state: TargetGroupAttachmentState): TargetGroupAttachment = js.native
   def get(name: String, id: Input[ID], state: TargetGroupAttachmentState, opts: CustomResourceOptions): TargetGroupAttachment = js.native
   /**

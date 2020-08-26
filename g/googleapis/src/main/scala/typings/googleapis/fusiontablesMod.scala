@@ -43,7 +43,7 @@ object fusiontablesMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Fusiontables
               ]
             ]
@@ -53,7 +53,7 @@ object fusiontablesMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.fusiontablesV2Mod.fusiontablesV2.Fusiontables
               ]
             ]

@@ -25,10 +25,11 @@ import scala.scalajs.js.annotation._
   *
   * Note: the enforcement of non-nullability occurs within the executor.
   */
+@js.native
 trait GraphQLNonNull[T /* <: GraphQLNullableType */] extends js.Object {
-  val ofType: T
-  def inspect(): String
-  def toJSON(): String
+  val ofType: T = js.native
+  def inspect(): String = js.native
+  def toJSON(): String = js.native
 }
 
 @JSImport("graphql/type/definition", "GraphQLNonNull")

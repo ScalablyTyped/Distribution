@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
 @JSImport("stylelint-webpack-plugin/declarations/cjs", JSImport.Namespace)
 @js.native
 object cjsMod
-  extends TopLevel[Instantiable1[js.UndefOr[/* options */ js.Object], default]]
+  extends TopLevel[Instantiable1[/* options */ js.UndefOr[js.Object], default]]
 

@@ -34,4 +34,5 @@ package object viewsTypesMod {
     /* newViewName */ typings.nodePgMigrate.generalTypesMod.Name, 
     java.lang.String | js.Array[java.lang.String]
   ]
+  type ViewOptions = org.scalablytyped.runtime.StringDictionary[scala.Boolean | scala.Double | java.lang.String]
 }

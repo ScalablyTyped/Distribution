@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ExternalEditor () extends js.Object {
   def this(text: String) = this()
+  def this(text: js.UndefOr[scala.Nothing], fileOptions: IFileOptions) = this()
   def this(text: String, fileOptions: IFileOptions) = this()
   var createTemporaryFile: js.Any = js.native
   var determineEditor: js.Any = js.native

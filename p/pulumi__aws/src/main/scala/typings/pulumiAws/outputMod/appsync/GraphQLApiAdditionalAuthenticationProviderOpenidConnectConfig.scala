@@ -26,17 +26,36 @@ trait GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig extends js.O
 
 object GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig {
   @scala.inline
-  def apply(
-    issuer: String,
-    authTtl: js.UndefOr[Double] = js.undefined,
-    clientId: String = null,
-    iatTtl: js.UndefOr[Double] = js.undefined
-  ): GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig = {
+  def apply(issuer: String): GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig = {
     val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any])
-    if (!js.isUndefined(authTtl)) __obj.updateDynamic("authTtl")(authTtl.get.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (!js.isUndefined(iatTtl)) __obj.updateDynamic("iatTtl")(iatTtl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig]
   }
+  @scala.inline
+  implicit class GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfigOps[Self <: GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthTtl(value: Double): Self = this.set("authTtl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthTtl: Self = this.set("authTtl", js.undefined)
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setIatTtl(value: Double): Self = this.set("iatTtl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIatTtl: Self = this.set("iatTtl", js.undefined)
+  }
+  
 }
 

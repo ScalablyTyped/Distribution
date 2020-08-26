@@ -86,6 +86,7 @@ class Socket () extends EventEmitter {
     * Sends a message, performing message = toString(arguments[0]) unless sending binary data, which is sent as is.
     */
   def send(message: Message): Unit = js.native
+  def send(message: Message, opts: js.UndefOr[scala.Nothing], fn: js.Function1[/* transport */ js.Any, Unit]): Unit = js.native
   def send(message: Message, opts: MessageOptions): Unit = js.native
   def send(message: Message, opts: MessageOptions, fn: js.Function1[/* transport */ js.Any, Unit]): Unit = js.native
 }

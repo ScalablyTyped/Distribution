@@ -33,7 +33,7 @@ trait TrainingSpecification extends js.Object {
   /**
     * The Amazon ECR registry path of the Docker image that contains the training algorithm.
     */
-  var TrainingImage: Image = js.native
+  var TrainingImage: ContainerImage = js.native
   /**
     * An MD5 hash of the training algorithm that identifies the Docker image used for training.
     */
@@ -45,20 +45,59 @@ object TrainingSpecification {
   def apply(
     SupportedTrainingInstanceTypes: TrainingInstanceTypes,
     TrainingChannels: ChannelSpecifications,
-    TrainingImage: Image,
-    MetricDefinitions: MetricDefinitionList = null,
-    SupportedHyperParameters: HyperParameterSpecifications = null,
-    SupportedTuningJobObjectiveMetrics: HyperParameterTuningJobObjectives = null,
-    SupportsDistributedTraining: js.UndefOr[Boolean] = js.undefined,
-    TrainingImageDigest: ImageDigest = null
+    TrainingImage: ContainerImage
   ): TrainingSpecification = {
     val __obj = js.Dynamic.literal(SupportedTrainingInstanceTypes = SupportedTrainingInstanceTypes.asInstanceOf[js.Any], TrainingChannels = TrainingChannels.asInstanceOf[js.Any], TrainingImage = TrainingImage.asInstanceOf[js.Any])
-    if (MetricDefinitions != null) __obj.updateDynamic("MetricDefinitions")(MetricDefinitions.asInstanceOf[js.Any])
-    if (SupportedHyperParameters != null) __obj.updateDynamic("SupportedHyperParameters")(SupportedHyperParameters.asInstanceOf[js.Any])
-    if (SupportedTuningJobObjectiveMetrics != null) __obj.updateDynamic("SupportedTuningJobObjectiveMetrics")(SupportedTuningJobObjectiveMetrics.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsDistributedTraining)) __obj.updateDynamic("SupportsDistributedTraining")(SupportsDistributedTraining.get.asInstanceOf[js.Any])
-    if (TrainingImageDigest != null) __obj.updateDynamic("TrainingImageDigest")(TrainingImageDigest.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingSpecification]
   }
+  @scala.inline
+  implicit class TrainingSpecificationOps[Self <: TrainingSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSupportedTrainingInstanceTypesVarargs(value: TrainingInstanceType*): Self = this.set("SupportedTrainingInstanceTypes", js.Array(value :_*))
+    @scala.inline
+    def setSupportedTrainingInstanceTypes(value: TrainingInstanceTypes): Self = this.set("SupportedTrainingInstanceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingChannelsVarargs(value: ChannelSpecification*): Self = this.set("TrainingChannels", js.Array(value :_*))
+    @scala.inline
+    def setTrainingChannels(value: ChannelSpecifications): Self = this.set("TrainingChannels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingImage(value: ContainerImage): Self = this.set("TrainingImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetricDefinitionsVarargs(value: MetricDefinition*): Self = this.set("MetricDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setMetricDefinitions(value: MetricDefinitionList): Self = this.set("MetricDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricDefinitions: Self = this.set("MetricDefinitions", js.undefined)
+    @scala.inline
+    def setSupportedHyperParametersVarargs(value: HyperParameterSpecification*): Self = this.set("SupportedHyperParameters", js.Array(value :_*))
+    @scala.inline
+    def setSupportedHyperParameters(value: HyperParameterSpecifications): Self = this.set("SupportedHyperParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedHyperParameters: Self = this.set("SupportedHyperParameters", js.undefined)
+    @scala.inline
+    def setSupportedTuningJobObjectiveMetricsVarargs(value: HyperParameterTuningJobObjective*): Self = this.set("SupportedTuningJobObjectiveMetrics", js.Array(value :_*))
+    @scala.inline
+    def setSupportedTuningJobObjectiveMetrics(value: HyperParameterTuningJobObjectives): Self = this.set("SupportedTuningJobObjectiveMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedTuningJobObjectiveMetrics: Self = this.set("SupportedTuningJobObjectiveMetrics", js.undefined)
+    @scala.inline
+    def setSupportsDistributedTraining(value: Boolean): Self = this.set("SupportsDistributedTraining", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsDistributedTraining: Self = this.set("SupportsDistributedTraining", js.undefined)
+    @scala.inline
+    def setTrainingImageDigest(value: ImageDigest): Self = this.set("TrainingImageDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingImageDigest: Self = this.set("TrainingImageDigest", js.undefined)
+  }
+  
 }
 

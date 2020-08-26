@@ -12,7 +12,7 @@ Cross domain local storage
 | Keywords           | local, storage, cross, domain |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 191296 |
+| # downloads        | 200301 |
 | # stars            | 5 |
 
 ## Links

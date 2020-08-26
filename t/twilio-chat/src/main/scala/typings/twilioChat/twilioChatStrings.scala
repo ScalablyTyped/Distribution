@@ -47,7 +47,8 @@ object twilioChatStrings {
   
   @js.native
   sealed trait dateCreated
-    extends typings.twilioChat.channelMod.Channel.UpdateReason
+    extends UpdateReason
+       with typings.twilioChat.channelMod.Channel.UpdateReason
        with typings.twilioChat.memberMod.Member.UpdateReason
   
   @js.native
@@ -90,9 +91,6 @@ object twilioChatStrings {
   sealed trait joined extends Status
   
   @js.native
-  sealed trait known extends Status
-  
-  @js.native
   sealed trait lastConsumedMessageIndex
     extends typings.twilioChat.channelMod.Channel.UpdateReason
        with typings.twilioChat.memberMod.Member.UpdateReason
@@ -115,6 +113,9 @@ object twilioChatStrings {
   
   @js.native
   sealed trait muted extends NotificationLevel
+  
+  @js.native
+  sealed trait notParticipating extends Status
   
   @js.native
   sealed trait notifiable
@@ -166,9 +167,6 @@ object twilioChatStrings {
   @js.native
   sealed trait text
     extends typings.twilioChat.messageMod.Message.Type
-  
-  @js.native
-  sealed trait timestamp extends UpdateReason
   
   @js.native
   sealed trait trace extends _LogLevel
@@ -247,8 +245,6 @@ object twilioChatStrings {
   @scala.inline
   def joined: joined = "joined".asInstanceOf[joined]
   @scala.inline
-  def known: known = "known".asInstanceOf[known]
-  @scala.inline
   def lastConsumedMessageIndex: lastConsumedMessageIndex = "lastConsumedMessageIndex".asInstanceOf[lastConsumedMessageIndex]
   @scala.inline
   def lastConsumptionTimestamp: lastConsumptionTimestamp = "lastConsumptionTimestamp".asInstanceOf[lastConsumptionTimestamp]
@@ -260,6 +256,8 @@ object twilioChatStrings {
   def media: media = "media".asInstanceOf[media]
   @scala.inline
   def muted: muted = "muted".asInstanceOf[muted]
+  @scala.inline
+  def notParticipating: notParticipating = "notParticipating".asInstanceOf[notParticipating]
   @scala.inline
   def notifiable: notifiable = "notifiable".asInstanceOf[notifiable]
   @scala.inline
@@ -288,8 +286,6 @@ object twilioChatStrings {
   def synclist: synclist = "synclist".asInstanceOf[synclist]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
   @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
   @scala.inline

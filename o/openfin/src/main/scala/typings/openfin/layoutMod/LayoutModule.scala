@@ -22,10 +22,10 @@ trait LayoutModule extends js.Object {
     */
   def getCurrentSync(): Layout = js.native
   /**
-    * Initialize the window's Layout.  Must be called from a custom window that has a truthy 'layout' option property (set `layout` to
-    * `true` in order to use this call with your own layout).  If a layout is not provided in the options for this call, the `layout`
-    * property set upon creation of that window is used.  If a containerId is not provided, this method attempts to find an element
-    * with the id `layout-container`.
+    * Initialize the window's Layout.  Must be called from a custom window that has a 'layout' option set upon creation of that window.
+    * If a containerId is not provided, this method attempts to find an element with the id `layout-container`.
+    * A Layout will <a href="tutorial-Layout.DOMEvents.html">emit events locally</a> on the DOM element representing the layout-container.
+    * In order to capture the relevant events during Layout initiation, set up the listeners on the DOM element prior to calling `init`.
     * @param { InitLayoutOptions } [options] - Layout init options.
     * @return { Promise<Layout> }
     * @static

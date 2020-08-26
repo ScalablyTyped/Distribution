@@ -47,22 +47,46 @@ trait SchemaProfileFilterLink extends js.Object {
 
 object SchemaProfileFilterLink {
   @scala.inline
-  def apply(
-    filterRef: SchemaFilterRef = null,
-    id: String = null,
-    kind: String = null,
-    profileRef: SchemaProfileRef = null,
-    rank: js.UndefOr[Double] = js.undefined,
-    selfLink: String = null
-  ): SchemaProfileFilterLink = {
+  def apply(): SchemaProfileFilterLink = {
     val __obj = js.Dynamic.literal()
-    if (filterRef != null) __obj.updateDynamic("filterRef")(filterRef.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (profileRef != null) __obj.updateDynamic("profileRef")(profileRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProfileFilterLink]
   }
+  @scala.inline
+  implicit class SchemaProfileFilterLinkOps[Self <: SchemaProfileFilterLink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterRef(value: SchemaFilterRef): Self = this.set("filterRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterRef: Self = this.set("filterRef", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setProfileRef(value: SchemaProfileRef): Self = this.set("profileRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileRef: Self = this.set("profileRef", js.undefined)
+    @scala.inline
+    def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRank: Self = this.set("rank", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+  }
+  
 }
 

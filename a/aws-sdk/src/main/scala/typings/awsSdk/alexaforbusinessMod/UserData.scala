@@ -34,22 +34,46 @@ trait UserData extends js.Object {
 
 object UserData {
   @scala.inline
-  def apply(
-    Email: Email = null,
-    EnrollmentId: EnrollmentId = null,
-    EnrollmentStatus: EnrollmentStatus = null,
-    FirstName: userFirstName = null,
-    LastName: userLastName = null,
-    UserArn: Arn = null
-  ): UserData = {
+  def apply(): UserData = {
     val __obj = js.Dynamic.literal()
-    if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
-    if (EnrollmentId != null) __obj.updateDynamic("EnrollmentId")(EnrollmentId.asInstanceOf[js.Any])
-    if (EnrollmentStatus != null) __obj.updateDynamic("EnrollmentStatus")(EnrollmentStatus.asInstanceOf[js.Any])
-    if (FirstName != null) __obj.updateDynamic("FirstName")(FirstName.asInstanceOf[js.Any])
-    if (LastName != null) __obj.updateDynamic("LastName")(LastName.asInstanceOf[js.Any])
-    if (UserArn != null) __obj.updateDynamic("UserArn")(UserArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserData]
   }
+  @scala.inline
+  implicit class UserDataOps[Self <: UserData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmail(value: Email): Self = this.set("Email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("Email", js.undefined)
+    @scala.inline
+    def setEnrollmentId(value: EnrollmentId): Self = this.set("EnrollmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnrollmentId: Self = this.set("EnrollmentId", js.undefined)
+    @scala.inline
+    def setEnrollmentStatus(value: EnrollmentStatus): Self = this.set("EnrollmentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnrollmentStatus: Self = this.set("EnrollmentStatus", js.undefined)
+    @scala.inline
+    def setFirstName(value: userFirstName): Self = this.set("FirstName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstName: Self = this.set("FirstName", js.undefined)
+    @scala.inline
+    def setLastName(value: userLastName): Self = this.set("LastName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastName: Self = this.set("LastName", js.undefined)
+    @scala.inline
+    def setUserArn(value: Arn): Self = this.set("UserArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserArn: Self = this.set("UserArn", js.undefined)
+  }
+  
 }
 

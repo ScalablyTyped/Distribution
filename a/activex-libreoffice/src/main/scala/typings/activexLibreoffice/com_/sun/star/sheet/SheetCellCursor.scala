@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   *
   * A cursor is a cell range which provides additional methods to move through the table (i.e. to find specific cell ranges).
   */
+@js.native
 trait SheetCellCursor
   extends SheetCellRange
      with XCellCursor

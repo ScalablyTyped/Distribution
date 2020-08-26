@@ -38,24 +38,50 @@ trait IpAddressResponse extends js.Object {
 
 object IpAddressResponse {
   @scala.inline
-  def apply(
-    CreationTime: Rfc3339TimeString = null,
-    Ip: Ip = null,
-    IpId: ResourceId = null,
-    ModificationTime: Rfc3339TimeString = null,
-    Status: IpAddressStatus = null,
-    StatusMessage: StatusMessage = null,
-    SubnetId: SubnetId = null
-  ): IpAddressResponse = {
+  def apply(): IpAddressResponse = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Ip != null) __obj.updateDynamic("Ip")(Ip.asInstanceOf[js.Any])
-    if (IpId != null) __obj.updateDynamic("IpId")(IpId.asInstanceOf[js.Any])
-    if (ModificationTime != null) __obj.updateDynamic("ModificationTime")(ModificationTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpAddressResponse]
   }
+  @scala.inline
+  implicit class IpAddressResponseOps[Self <: IpAddressResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Rfc3339TimeString): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setIp(value: Ip): Self = this.set("Ip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIp: Self = this.set("Ip", js.undefined)
+    @scala.inline
+    def setIpId(value: ResourceId): Self = this.set("IpId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpId: Self = this.set("IpId", js.undefined)
+    @scala.inline
+    def setModificationTime(value: Rfc3339TimeString): Self = this.set("ModificationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModificationTime: Self = this.set("ModificationTime", js.undefined)
+    @scala.inline
+    def setStatus(value: IpAddressStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+  }
+  
 }
 

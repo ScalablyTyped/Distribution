@@ -29,18 +29,38 @@ trait SchemaAndroidTest extends js.Object {
 
 object SchemaAndroidTest {
   @scala.inline
-  def apply(
-    androidAppInfo: SchemaAndroidAppInfo = null,
-    androidInstrumentationTest: SchemaAndroidInstrumentationTest = null,
-    androidRoboTest: SchemaAndroidRoboTest = null,
-    testTimeout: SchemaDuration = null
-  ): SchemaAndroidTest = {
+  def apply(): SchemaAndroidTest = {
     val __obj = js.Dynamic.literal()
-    if (androidAppInfo != null) __obj.updateDynamic("androidAppInfo")(androidAppInfo.asInstanceOf[js.Any])
-    if (androidInstrumentationTest != null) __obj.updateDynamic("androidInstrumentationTest")(androidInstrumentationTest.asInstanceOf[js.Any])
-    if (androidRoboTest != null) __obj.updateDynamic("androidRoboTest")(androidRoboTest.asInstanceOf[js.Any])
-    if (testTimeout != null) __obj.updateDynamic("testTimeout")(testTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAndroidTest]
   }
+  @scala.inline
+  implicit class SchemaAndroidTestOps[Self <: SchemaAndroidTest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidAppInfo(value: SchemaAndroidAppInfo): Self = this.set("androidAppInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidAppInfo: Self = this.set("androidAppInfo", js.undefined)
+    @scala.inline
+    def setAndroidInstrumentationTest(value: SchemaAndroidInstrumentationTest): Self = this.set("androidInstrumentationTest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidInstrumentationTest: Self = this.set("androidInstrumentationTest", js.undefined)
+    @scala.inline
+    def setAndroidRoboTest(value: SchemaAndroidRoboTest): Self = this.set("androidRoboTest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidRoboTest: Self = this.set("androidRoboTest", js.undefined)
+    @scala.inline
+    def setTestTimeout(value: SchemaDuration): Self = this.set("testTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestTimeout: Self = this.set("testTimeout", js.undefined)
+  }
+  
 }
 

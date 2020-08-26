@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object pregQuoteMod extends js.Object {
   def apply(): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], delimiter: js.Any): js.Any = js.native
   def apply(str: js.Any): js.Any = js.native
   def apply(str: js.Any, delimiter: js.Any): js.Any = js.native
 }

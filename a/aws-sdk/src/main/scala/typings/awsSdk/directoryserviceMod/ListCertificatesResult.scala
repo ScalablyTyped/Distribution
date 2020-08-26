@@ -18,11 +18,32 @@ trait ListCertificatesResult extends js.Object {
 
 object ListCertificatesResult {
   @scala.inline
-  def apply(CertificatesInfo: CertificatesInfo = null, NextToken: NextToken = null): ListCertificatesResult = {
+  def apply(): ListCertificatesResult = {
     val __obj = js.Dynamic.literal()
-    if (CertificatesInfo != null) __obj.updateDynamic("CertificatesInfo")(CertificatesInfo.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCertificatesResult]
   }
+  @scala.inline
+  implicit class ListCertificatesResultOps[Self <: ListCertificatesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificatesInfoVarargs(value: CertificateInfo*): Self = this.set("CertificatesInfo", js.Array(value :_*))
+    @scala.inline
+    def setCertificatesInfo(value: CertificatesInfo): Self = this.set("CertificatesInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificatesInfo: Self = this.set("CertificatesInfo", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

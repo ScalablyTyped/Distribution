@@ -34,19 +34,42 @@ trait GetMetricDataInput extends js.Object {
 
 object GetMetricDataInput {
   @scala.inline
-  def apply(
-    EndTime: Timestamp,
-    MetricDataQueries: MetricDataQueries,
-    StartTime: Timestamp,
-    MaxDatapoints: js.UndefOr[GetMetricDataMaxDatapoints] = js.undefined,
-    NextToken: NextToken = null,
-    ScanBy: ScanBy = null
-  ): GetMetricDataInput = {
+  def apply(EndTime: Timestamp, MetricDataQueries: MetricDataQueries, StartTime: Timestamp): GetMetricDataInput = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], MetricDataQueries = MetricDataQueries.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxDatapoints)) __obj.updateDynamic("MaxDatapoints")(MaxDatapoints.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ScanBy != null) __obj.updateDynamic("ScanBy")(ScanBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMetricDataInput]
   }
+  @scala.inline
+  implicit class GetMetricDataInputOps[Self <: GetMetricDataInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetricDataQueriesVarargs(value: MetricDataQuery*): Self = this.set("MetricDataQueries", js.Array(value :_*))
+    @scala.inline
+    def setMetricDataQueries(value: MetricDataQueries): Self = this.set("MetricDataQueries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxDatapoints(value: GetMetricDataMaxDatapoints): Self = this.set("MaxDatapoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDatapoints: Self = this.set("MaxDatapoints", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setScanBy(value: ScanBy): Self = this.set("ScanBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanBy: Self = this.set("ScanBy", js.undefined)
+  }
+  
 }
 

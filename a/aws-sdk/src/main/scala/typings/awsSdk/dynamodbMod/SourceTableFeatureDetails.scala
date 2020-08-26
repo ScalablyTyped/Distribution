@@ -30,20 +30,46 @@ trait SourceTableFeatureDetails extends js.Object {
 
 object SourceTableFeatureDetails {
   @scala.inline
-  def apply(
-    GlobalSecondaryIndexes: GlobalSecondaryIndexes = null,
-    LocalSecondaryIndexes: LocalSecondaryIndexes = null,
-    SSEDescription: SSEDescription = null,
-    StreamDescription: StreamSpecification = null,
-    TimeToLiveDescription: TimeToLiveDescription = null
-  ): SourceTableFeatureDetails = {
+  def apply(): SourceTableFeatureDetails = {
     val __obj = js.Dynamic.literal()
-    if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes.asInstanceOf[js.Any])
-    if (LocalSecondaryIndexes != null) __obj.updateDynamic("LocalSecondaryIndexes")(LocalSecondaryIndexes.asInstanceOf[js.Any])
-    if (SSEDescription != null) __obj.updateDynamic("SSEDescription")(SSEDescription.asInstanceOf[js.Any])
-    if (StreamDescription != null) __obj.updateDynamic("StreamDescription")(StreamDescription.asInstanceOf[js.Any])
-    if (TimeToLiveDescription != null) __obj.updateDynamic("TimeToLiveDescription")(TimeToLiveDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceTableFeatureDetails]
   }
+  @scala.inline
+  implicit class SourceTableFeatureDetailsOps[Self <: SourceTableFeatureDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexInfo*): Self = this.set("GlobalSecondaryIndexes", js.Array(value :_*))
+    @scala.inline
+    def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexes): Self = this.set("GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalSecondaryIndexes: Self = this.set("GlobalSecondaryIndexes", js.undefined)
+    @scala.inline
+    def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexInfo*): Self = this.set("LocalSecondaryIndexes", js.Array(value :_*))
+    @scala.inline
+    def setLocalSecondaryIndexes(value: LocalSecondaryIndexes): Self = this.set("LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalSecondaryIndexes: Self = this.set("LocalSecondaryIndexes", js.undefined)
+    @scala.inline
+    def setSSEDescription(value: SSEDescription): Self = this.set("SSEDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSEDescription: Self = this.set("SSEDescription", js.undefined)
+    @scala.inline
+    def setStreamDescription(value: StreamSpecification): Self = this.set("StreamDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamDescription: Self = this.set("StreamDescription", js.undefined)
+    @scala.inline
+    def setTimeToLiveDescription(value: TimeToLiveDescription): Self = this.set("TimeToLiveDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeToLiveDescription: Self = this.set("TimeToLiveDescription", js.undefined)
+  }
+  
 }
 

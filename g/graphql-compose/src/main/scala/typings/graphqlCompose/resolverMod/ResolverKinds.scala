@@ -1,22 +1,25 @@
 package typings.graphqlCompose.resolverMod
 
+import typings.graphqlCompose.graphqlComposeStrings.mutation_
+import typings.graphqlCompose.graphqlComposeStrings.query_
+import typings.graphqlCompose.graphqlComposeStrings.subscription_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.graphqlCompose.graphqlComposeStrings.query
-  - typings.graphqlCompose.graphqlComposeStrings.mutation
-  - typings.graphqlCompose.graphqlComposeStrings.subscription
+  - typings.graphqlCompose.graphqlComposeStrings.query_
+  - typings.graphqlCompose.graphqlComposeStrings.mutation_
+  - typings.graphqlCompose.graphqlComposeStrings.subscription_
 */
 trait ResolverKinds extends js.Object
 
 object ResolverKinds {
   @scala.inline
-  def mutation: typings.graphqlCompose.graphqlComposeStrings.mutation = "mutation".asInstanceOf[typings.graphqlCompose.graphqlComposeStrings.mutation]
+  def mutation: mutation_ = "mutation".asInstanceOf[mutation_]
   @scala.inline
-  def query: typings.graphqlCompose.graphqlComposeStrings.query = "query".asInstanceOf[typings.graphqlCompose.graphqlComposeStrings.query]
+  def query: query_ = "query".asInstanceOf[query_]
   @scala.inline
-  def subscription: typings.graphqlCompose.graphqlComposeStrings.subscription = "subscription".asInstanceOf[typings.graphqlCompose.graphqlComposeStrings.subscription]
+  def subscription: subscription_ = "subscription".asInstanceOf[subscription_]
 }
 

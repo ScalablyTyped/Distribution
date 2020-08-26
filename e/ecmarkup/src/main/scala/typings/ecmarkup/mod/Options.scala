@@ -13,75 +13,130 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var assets: js.UndefOr[none | `inline` | external] = js.undefined
-  var boilerplate: js.UndefOr[Boilerplate] = js.undefined
-  var contributors: js.UndefOr[String] = js.undefined
-  var copyright: js.UndefOr[Boolean] = js.undefined
-  var cssOut: js.UndefOr[String] = js.undefined
-  var date: js.UndefOr[Date] = js.undefined
-  var ecma262Biblio: js.UndefOr[Boolean] = js.undefined
-  var jsOut: js.UndefOr[String] = js.undefined
-  var lintSpec: js.UndefOr[Boolean] = js.undefined
-  var location: js.UndefOr[String] = js.undefined
-  var oldToc: js.UndefOr[Boolean] = js.undefined
-  var outfile: js.UndefOr[String] = js.undefined
-  var reportLintErrors: js.UndefOr[Reporter] = js.undefined
-  var shortname: js.UndefOr[String] = js.undefined
-  var stage: js.UndefOr[String | Null] = js.undefined
-  var status: js.UndefOr[proposal | draft | standard] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var toc: js.UndefOr[Boolean] = js.undefined
-  var verbose: js.UndefOr[Boolean] = js.undefined
-  var version: js.UndefOr[String] = js.undefined
+  var assets: js.UndefOr[none | `inline` | external] = js.native
+  var boilerplate: js.UndefOr[Boilerplate] = js.native
+  var contributors: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[Boolean] = js.native
+  var cssOut: js.UndefOr[String] = js.native
+  var date: js.UndefOr[Date] = js.native
+  var ecma262Biblio: js.UndefOr[Boolean] = js.native
+  var jsOut: js.UndefOr[String] = js.native
+  var lintSpec: js.UndefOr[Boolean] = js.native
+  var location: js.UndefOr[String] = js.native
+  var oldToc: js.UndefOr[Boolean] = js.native
+  var outfile: js.UndefOr[String] = js.native
+  var reportLintErrors: js.UndefOr[Reporter] = js.native
+  var shortname: js.UndefOr[String] = js.native
+  var stage: js.UndefOr[String | Null] = js.native
+  var status: js.UndefOr[proposal | draft | standard] = js.native
+  var title: js.UndefOr[String] = js.native
+  var toc: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.native
+  var version: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    assets: none | `inline` | external = null,
-    boilerplate: Boilerplate = null,
-    contributors: String = null,
-    copyright: js.UndefOr[Boolean] = js.undefined,
-    cssOut: String = null,
-    date: Date = null,
-    ecma262Biblio: js.UndefOr[Boolean] = js.undefined,
-    jsOut: String = null,
-    lintSpec: js.UndefOr[Boolean] = js.undefined,
-    location: String = null,
-    oldToc: js.UndefOr[Boolean] = js.undefined,
-    outfile: String = null,
-    reportLintErrors: (/* lintingError */ js.Array[LintingError], /* sourceText */ String) => Unit = null,
-    shortname: String = null,
-    stage: js.UndefOr[Null | String] = js.undefined,
-    status: proposal | draft | standard = null,
-    title: String = null,
-    toc: js.UndefOr[Boolean] = js.undefined,
-    verbose: js.UndefOr[Boolean] = js.undefined,
-    version: String = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (assets != null) __obj.updateDynamic("assets")(assets.asInstanceOf[js.Any])
-    if (boilerplate != null) __obj.updateDynamic("boilerplate")(boilerplate.asInstanceOf[js.Any])
-    if (contributors != null) __obj.updateDynamic("contributors")(contributors.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyright)) __obj.updateDynamic("copyright")(copyright.get.asInstanceOf[js.Any])
-    if (cssOut != null) __obj.updateDynamic("cssOut")(cssOut.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(ecma262Biblio)) __obj.updateDynamic("ecma262Biblio")(ecma262Biblio.get.asInstanceOf[js.Any])
-    if (jsOut != null) __obj.updateDynamic("jsOut")(jsOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(lintSpec)) __obj.updateDynamic("lintSpec")(lintSpec.get.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(oldToc)) __obj.updateDynamic("oldToc")(oldToc.get.asInstanceOf[js.Any])
-    if (outfile != null) __obj.updateDynamic("outfile")(outfile.asInstanceOf[js.Any])
-    if (reportLintErrors != null) __obj.updateDynamic("reportLintErrors")(js.Any.fromFunction2(reportLintErrors))
-    if (shortname != null) __obj.updateDynamic("shortname")(shortname.asInstanceOf[js.Any])
-    if (!js.isUndefined(stage)) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(toc)) __obj.updateDynamic("toc")(toc.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssets(value: none | `inline` | external): Self = this.set("assets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssets: Self = this.set("assets", js.undefined)
+    @scala.inline
+    def setBoilerplate(value: Boilerplate): Self = this.set("boilerplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoilerplate: Self = this.set("boilerplate", js.undefined)
+    @scala.inline
+    def setContributors(value: String): Self = this.set("contributors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContributors: Self = this.set("contributors", js.undefined)
+    @scala.inline
+    def setCopyright(value: Boolean): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    @scala.inline
+    def setCssOut(value: String): Self = this.set("cssOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssOut: Self = this.set("cssOut", js.undefined)
+    @scala.inline
+    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setEcma262Biblio(value: Boolean): Self = this.set("ecma262Biblio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcma262Biblio: Self = this.set("ecma262Biblio", js.undefined)
+    @scala.inline
+    def setJsOut(value: String): Self = this.set("jsOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsOut: Self = this.set("jsOut", js.undefined)
+    @scala.inline
+    def setLintSpec(value: Boolean): Self = this.set("lintSpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLintSpec: Self = this.set("lintSpec", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setOldToc(value: Boolean): Self = this.set("oldToc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOldToc: Self = this.set("oldToc", js.undefined)
+    @scala.inline
+    def setOutfile(value: String): Self = this.set("outfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutfile: Self = this.set("outfile", js.undefined)
+    @scala.inline
+    def setReportLintErrors(value: (/* lintingError */ js.Array[LintingError], /* sourceText */ String) => Unit): Self = this.set("reportLintErrors", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteReportLintErrors: Self = this.set("reportLintErrors", js.undefined)
+    @scala.inline
+    def setShortname(value: String): Self = this.set("shortname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortname: Self = this.set("shortname", js.undefined)
+    @scala.inline
+    def setStage(value: String): Self = this.set("stage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStage: Self = this.set("stage", js.undefined)
+    @scala.inline
+    def setStageNull: Self = this.set("stage", null)
+    @scala.inline
+    def setStatus(value: proposal | draft | standard): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setToc(value: Boolean): Self = this.set("toc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToc: Self = this.set("toc", js.undefined)
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

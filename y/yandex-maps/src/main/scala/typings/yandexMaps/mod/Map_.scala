@@ -27,8 +27,6 @@ class Map_ protected () extends IEventEmitter {
   var converter: Converter = js.native
   var copyrights: Copyrights = js.native
   var cursors: typings.yandexMaps.mod.util.cursor.Manager = js.native
-  /* CompleteClass */
-  override var events: IEventManager = js.native
   @JSName("events")
   var events_Map_ : typings.yandexMaps.mod.event.Manager = js.native
   var geoObjects: GeoObjects = js.native
@@ -53,9 +51,11 @@ class Map_ protected () extends IEventEmitter {
   def setBounds(bounds: js.Array[js.Array[Double]]): js.Promise[Unit] = js.native
   def setBounds(bounds: js.Array[js.Array[Double]], options: IMapBoundsOptions): js.Promise[Unit] = js.native
   def setCenter(center: js.Array[Double]): js.Promise[Unit] = js.native
+  def setCenter(center: js.Array[Double], zoom: js.UndefOr[scala.Nothing], options: IMapPositionOptions): js.Promise[Unit] = js.native
   def setCenter(center: js.Array[Double], zoom: Double): js.Promise[Unit] = js.native
   def setCenter(center: js.Array[Double], zoom: Double, options: IMapPositionOptions): js.Promise[Unit] = js.native
   def setGlobalPixelCenter(globalPixelCenter: js.Array[Double]): js.Promise[Unit] = js.native
+  def setGlobalPixelCenter(globalPixelCenter: js.Array[Double], zoom: js.UndefOr[scala.Nothing], options: IMapPositionOptions): js.Promise[Unit] = js.native
   def setGlobalPixelCenter(globalPixelCenter: js.Array[Double], zoom: Double): js.Promise[Unit] = js.native
   def setGlobalPixelCenter(globalPixelCenter: js.Array[Double], zoom: Double, options: IMapPositionOptions): js.Promise[Unit] = js.native
   def setType(`type`: String): js.Promise[Unit] = js.native

@@ -1,75 +1,76 @@
 package typings.reactJoyride.mod
 
-import typings.react.mod.ElementType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Props extends CommonProps {
-  var callback: js.UndefOr[js.Function1[/* data */ CallBackProps, Unit]] = js.undefined
-  var continuous: js.UndefOr[Boolean] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var getHelpers: js.UndefOr[js.Function1[/* helpers */ StoreHelpers, _]] = js.undefined
-  var run: js.UndefOr[Boolean] = js.undefined
-  var scrollOffset: js.UndefOr[Double] = js.undefined
-  var scrollToFirstStep: js.UndefOr[Boolean] = js.undefined
-  var stepIndex: js.UndefOr[Double] = js.undefined
-  var steps: js.Array[Step]
+  var callback: js.UndefOr[js.Function1[/* data */ CallBackProps, Unit]] = js.native
+  var continuous: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var getHelpers: js.UndefOr[js.Function1[/* helpers */ StoreHelpers, _]] = js.native
+  var run: js.UndefOr[Boolean] = js.native
+  var scrollOffset: js.UndefOr[Double] = js.native
+  var scrollToFirstStep: js.UndefOr[Boolean] = js.native
+  var stepIndex: js.UndefOr[Double] = js.native
+  var steps: js.Array[Step] = js.native
 }
 
 object Props {
   @scala.inline
-  def apply(
-    steps: js.Array[Step],
-    beaconComponent: ElementType[BeaconRenderProps] = null,
-    callback: /* data */ CallBackProps => Unit = null,
-    continuous: js.UndefOr[Boolean] = js.undefined,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined,
-    disableOverlay: js.UndefOr[Boolean] = js.undefined,
-    disableOverlayClose: js.UndefOr[Boolean] = js.undefined,
-    disableScrollParentFix: js.UndefOr[Boolean] = js.undefined,
-    disableScrolling: js.UndefOr[Boolean] = js.undefined,
-    floaterProps: FloaterProps = null,
-    getHelpers: /* helpers */ StoreHelpers => _ = null,
-    hideBackButton: js.UndefOr[Boolean] = js.undefined,
-    locale: Locale = null,
-    run: js.UndefOr[Boolean] = js.undefined,
-    scrollOffset: js.UndefOr[Double] = js.undefined,
-    scrollToFirstStep: js.UndefOr[Boolean] = js.undefined,
-    showProgress: js.UndefOr[Boolean] = js.undefined,
-    showSkipButton: js.UndefOr[Boolean] = js.undefined,
-    spotlightClicks: js.UndefOr[Boolean] = js.undefined,
-    spotlightPadding: js.UndefOr[Double] = js.undefined,
-    stepIndex: js.UndefOr[Double] = js.undefined,
-    styles: Styles = null,
-    tooltipComponent: ElementType[TooltipRenderProps] = null
-  ): Props = {
+  def apply(steps: js.Array[Step]): Props = {
     val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any])
-    if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOverlay)) __obj.updateDynamic("disableOverlay")(disableOverlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOverlayClose)) __obj.updateDynamic("disableOverlayClose")(disableOverlayClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScrollParentFix)) __obj.updateDynamic("disableScrollParentFix")(disableScrollParentFix.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScrolling)) __obj.updateDynamic("disableScrolling")(disableScrolling.get.asInstanceOf[js.Any])
-    if (floaterProps != null) __obj.updateDynamic("floaterProps")(floaterProps.asInstanceOf[js.Any])
-    if (getHelpers != null) __obj.updateDynamic("getHelpers")(js.Any.fromFunction1(getHelpers))
-    if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(run)) __obj.updateDynamic("run")(run.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollOffset)) __obj.updateDynamic("scrollOffset")(scrollOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollToFirstStep)) __obj.updateDynamic("scrollToFirstStep")(scrollToFirstStep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showProgress)) __obj.updateDynamic("showProgress")(showProgress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSkipButton)) __obj.updateDynamic("showSkipButton")(showSkipButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spotlightClicks)) __obj.updateDynamic("spotlightClicks")(spotlightClicks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spotlightPadding)) __obj.updateDynamic("spotlightPadding")(spotlightPadding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepIndex)) __obj.updateDynamic("stepIndex")(stepIndex.get.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tooltipComponent != null) __obj.updateDynamic("tooltipComponent")(tooltipComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
+  @scala.inline
+  implicit class PropsOps[Self <: Props] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStepsVarargs(value: Step*): Self = this.set("steps", js.Array(value :_*))
+    @scala.inline
+    def setSteps(value: js.Array[Step]): Self = this.set("steps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCallback(value: /* data */ CallBackProps => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setContinuous(value: Boolean): Self = this.set("continuous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinuous: Self = this.set("continuous", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setGetHelpers(value: /* helpers */ StoreHelpers => _): Self = this.set("getHelpers", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetHelpers: Self = this.set("getHelpers", js.undefined)
+    @scala.inline
+    def setRun(value: Boolean): Self = this.set("run", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRun: Self = this.set("run", js.undefined)
+    @scala.inline
+    def setScrollOffset(value: Double): Self = this.set("scrollOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollOffset: Self = this.set("scrollOffset", js.undefined)
+    @scala.inline
+    def setScrollToFirstStep(value: Boolean): Self = this.set("scrollToFirstStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollToFirstStep: Self = this.set("scrollToFirstStep", js.undefined)
+    @scala.inline
+    def setStepIndex(value: Double): Self = this.set("stepIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepIndex: Self = this.set("stepIndex", js.undefined)
+  }
+  
 }
 

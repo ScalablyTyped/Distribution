@@ -21,14 +21,30 @@ trait SchemaGooglePrivacyDlpV2DeidentifyContentResponse extends js.Object {
 
 object SchemaGooglePrivacyDlpV2DeidentifyContentResponse {
   @scala.inline
-  def apply(
-    item: SchemaGooglePrivacyDlpV2ContentItem = null,
-    overview: SchemaGooglePrivacyDlpV2TransformationOverview = null
-  ): SchemaGooglePrivacyDlpV2DeidentifyContentResponse = {
+  def apply(): SchemaGooglePrivacyDlpV2DeidentifyContentResponse = {
     val __obj = js.Dynamic.literal()
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DeidentifyContentResponse]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2DeidentifyContentResponseOps[Self <: SchemaGooglePrivacyDlpV2DeidentifyContentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItem(value: SchemaGooglePrivacyDlpV2ContentItem): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setOverview(value: SchemaGooglePrivacyDlpV2TransformationOverview): Self = this.set("overview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverview: Self = this.set("overview", js.undefined)
+  }
+  
 }
 

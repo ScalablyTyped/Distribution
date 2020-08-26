@@ -23,7 +23,7 @@ package object mod {
   type OneOrMoreCbMacros[Args /* <: js.Array[_] */, Context] = (typings.ava.mod.EitherCbMacro[Args, Context]) | (Array[typings.ava.mod.EitherCbMacro[Args, Context]])
   type OneOrMoreMacros[Args /* <: js.Array[_] */, Context] = (typings.ava.mod.EitherMacro[Args, Context]) | (Array[typings.ava.mod.EitherMacro[Args, Context]])
   type TeardownFn = js.Function1[/* fn */ js.Function0[scala.Unit], scala.Unit]
-  type TimeoutFn = js.Function1[/* ms */ scala.Double, scala.Unit]
+  type TimeoutFn = js.Function2[/* ms */ scala.Double, /* message */ js.UndefOr[java.lang.String], scala.Unit]
   type TodoDeclaration = js.Function1[/* title */ java.lang.String, scala.Unit]
   type UntitledCbMacro[Args /* <: js.Array[_] */, Context] = js.Function2[
     /* t */ typings.ava.mod.CbExecutionContext[Context], 

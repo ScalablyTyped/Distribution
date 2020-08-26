@@ -22,14 +22,30 @@ trait DeregisterTargetFromMaintenanceWindowRequest extends js.Object {
 
 object DeregisterTargetFromMaintenanceWindowRequest {
   @scala.inline
-  def apply(
-    WindowId: MaintenanceWindowId,
-    WindowTargetId: MaintenanceWindowTargetId,
-    Safe: js.UndefOr[Boolean] = js.undefined
-  ): DeregisterTargetFromMaintenanceWindowRequest = {
+  def apply(WindowId: MaintenanceWindowId, WindowTargetId: MaintenanceWindowTargetId): DeregisterTargetFromMaintenanceWindowRequest = {
     val __obj = js.Dynamic.literal(WindowId = WindowId.asInstanceOf[js.Any], WindowTargetId = WindowTargetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Safe)) __obj.updateDynamic("Safe")(Safe.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterTargetFromMaintenanceWindowRequest]
   }
+  @scala.inline
+  implicit class DeregisterTargetFromMaintenanceWindowRequestOps[Self <: DeregisterTargetFromMaintenanceWindowRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWindowId(value: MaintenanceWindowId): Self = this.set("WindowId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWindowTargetId(value: MaintenanceWindowTargetId): Self = this.set("WindowTargetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSafe(value: Boolean): Self = this.set("Safe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSafe: Self = this.set("Safe", js.undefined)
+  }
+  
 }
 

@@ -19,7 +19,7 @@ object globalsMod extends js.Object {
       * Current state (internal object)
       *
       * The to-state from the latest successful transition
-      * @internalapi
+      * @internal
       */
     @JSName("$current")
     var $current: StateObject = js.native
@@ -29,7 +29,7 @@ object globalsMod extends js.Object {
       * The to-state from the latest successful transition
       */
     var current: StateDeclaration = js.native
-    /** @internalapi */
+    /** @internal */
     var lastStartedTransitionId: Double = js.native
     /**
       * Current parameter values
@@ -37,14 +37,14 @@ object globalsMod extends js.Object {
       * The parameter values from the latest successful transition
       */
     var params: StateParams = js.native
-    /** @internalapi */
+    /** @internal */
     var successfulTransitions: Queue[Transition] = js.native
     /**
       * The current started/running transition.
       * This transition has reached at least the onStart phase, but is not yet complete
       */
     var transition: Transition = js.native
-    /** @internalapi */
+    /** @internal */
     var transitionHistory: Queue[Transition] = js.native
   }
   

@@ -3,8 +3,8 @@ package typings.oracleOraclejet.ojgaugeMod
 import typings.oracleOraclejet.anon.BorderColorBorderRadius
 import typings.oracleOraclejet.anon.ConverterPosition
 import typings.oracleOraclejet.anon.PositionStyle
-import typings.oracleOraclejet.anon.`10`
-import typings.oracleOraclejet.anon.`11`
+import typings.oracleOraclejet.anon.`12`
+import typings.oracleOraclejet.anon.`13`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojgaugeMod.ojStatusMeterGauge.ReferenceLine
 import typings.oracleOraclejet.ojgaugeMod.ojStatusMeterGauge.Threshold
@@ -84,7 +84,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   var animationOnDisplay: auto | none = js.native
   var borderColor: String = js.native
   var borderRadius: String = js.native
-  var center: `10` = js.native
+  var center: `12` = js.native
   var color: String = js.native
   var indicatorSize: Double = js.native
   var innerRadius: Double = js.native
@@ -98,7 +98,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
   var onBorderColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onBorderRadiusChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
-  var onCenterChanged: (js.Function1[/* event */ JetElementCustomEvent[`10`], _]) | Null = js.native
+  var onCenterChanged: (js.Function1[/* event */ JetElementCustomEvent[`12`], _]) | Null = js.native
   var onColorChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onIndicatorSizeChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
   var onInnerRadiusChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], _]) | Null = js.native
@@ -121,7 +121,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   ]) | Null = js.native
   var onThresholdDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[currentOnly | all | onIndicator], _]) | Null = js.native
   var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`11`], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`13`], _]) | Null = js.native
   var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
   var onValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
   var onVisualEffectsChanged: (js.Function1[/* event */ JetElementCustomEvent[none | auto], _]) | Null = js.native
@@ -135,7 +135,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   var svgStyle: js.Object = js.native
   var thresholdDisplay: currentOnly | all | onIndicator = js.native
   var thresholds: js.Array[Threshold] = js.native
-  var tooltip: `11` = js.native
+  var tooltip: `13` = js.native
   val transientValue: Double | Null = js.native
   var value: Double | Null = js.native
   var visualEffects: none | auto = js.native
@@ -268,12 +268,12 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("addEventListener")
   def addEventListener_centerChanged(
     `type`: centerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`10`], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`12`], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_centerChanged(
     `type`: centerChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`10`], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`12`], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -433,12 +433,12 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`11`], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`13`], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`11`], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`13`], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -477,7 +477,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("getProperty")
   def getProperty_borderRadius(property: borderRadius): String = js.native
   @JSName("getProperty")
-  def getProperty_center(property: center): `10` = js.native
+  def getProperty_center(property: center): `12` = js.native
   @JSName("getProperty")
   def getProperty_color(property: color): String = js.native
   @JSName("getProperty")
@@ -513,7 +513,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("getProperty")
   def getProperty_thresholds(property: thresholds): js.Array[Threshold] = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): `11` = js.native
+  def getProperty_tooltip(property: tooltip): `13` = js.native
   @JSName("getProperty")
   def getProperty_transientValue(property: typings.oracleOraclejet.oracleOraclejetStrings.transientValue): Double | Null = js.native
   @JSName("getProperty")
@@ -536,13 +536,15 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("setProperty")
   def setProperty_angleExtent(property: angleExtent, value: Double): Unit = js.native
   @JSName("setProperty")
+  def setProperty_animationDuration(property: animationDuration): Unit = js.native
+  @JSName("setProperty")
   def setProperty_animationDuration(property: animationDuration, value: Double): Unit = js.native
   @JSName("setProperty")
   def setProperty_borderColor(property: borderColor, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_borderRadius(property: borderRadius, value: String): Unit = js.native
   @JSName("setProperty")
-  def setProperty_center(property: center, value: `10`): Unit = js.native
+  def setProperty_center(property: center, value: `12`): Unit = js.native
   @JSName("setProperty")
   def setProperty_color(property: color, value: String): Unit = js.native
   @JSName("setProperty")
@@ -576,7 +578,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("setProperty")
   def setProperty_thresholds(property: thresholds, value: js.Array[Threshold]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: `11`): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: `13`): Unit = js.native
   @JSName("setProperty")
   def setProperty_transientValue(property: typings.oracleOraclejet.oracleOraclejetStrings.transientValue): Unit = js.native
   @JSName("setProperty")

@@ -5,18 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StaveModifier extends js.Object {
-  def addEndModifier(): Unit
-  def addModifier(): Unit
-  def addToStave(stave: Stave, firstGlyph: Boolean): StaveModifier
-  def addToStaveEnd(stave: Stave, firstGlyph: Boolean): StaveModifier
-  def getCategory(): String
-  def getPadding(index: Double): Double
-  def getPosition(): Double
-  def getWidth(): Double
-  def makeSpacer(padding: Double): GetContext
-  def placeGlyphOnLine(glyph: Glyph, stave: Stave, line: Double): Unit
-  def setPadding(padding: Double): Unit
+  def addEndModifier(): Unit = js.native
+  def addModifier(): Unit = js.native
+  def addToStave(stave: Stave, firstGlyph: Boolean): StaveModifier = js.native
+  def addToStaveEnd(stave: Stave, firstGlyph: Boolean): StaveModifier = js.native
+  def getCategory(): String = js.native
+  def getPadding(index: Double): Double = js.native
+  def getPosition(): Double = js.native
+  def getWidth(): Double = js.native
+  def makeSpacer(padding: Double): GetContext = js.native
+  def placeGlyphOnLine(glyph: Glyph, stave: Stave, line: Double): Unit = js.native
+  def setPadding(padding: Double): Unit = js.native
 }
 
 @JSGlobal("Vex.Flow.StaveModifier")

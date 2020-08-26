@@ -91,28 +91,79 @@ object DescribeAutoMLJobResponse {
     InputDataConfig: AutoMLInputDataConfig,
     LastModifiedTime: Timestamp,
     OutputDataConfig: AutoMLOutputDataConfig,
-    RoleArn: RoleArn,
-    AutoMLJobArtifacts: AutoMLJobArtifacts = null,
-    AutoMLJobConfig: AutoMLJobConfig = null,
-    AutoMLJobObjective: AutoMLJobObjective = null,
-    BestCandidate: AutoMLCandidate = null,
-    EndTime: Timestamp = null,
-    FailureReason: AutoMLFailureReason = null,
-    GenerateCandidateDefinitionsOnly: js.UndefOr[GenerateCandidateDefinitionsOnly] = js.undefined,
-    ProblemType: ProblemType = null,
-    ResolvedAttributes: ResolvedAttributes = null
+    RoleArn: RoleArn
   ): DescribeAutoMLJobResponse = {
     val __obj = js.Dynamic.literal(AutoMLJobArn = AutoMLJobArn.asInstanceOf[js.Any], AutoMLJobName = AutoMLJobName.asInstanceOf[js.Any], AutoMLJobSecondaryStatus = AutoMLJobSecondaryStatus.asInstanceOf[js.Any], AutoMLJobStatus = AutoMLJobStatus.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], InputDataConfig = InputDataConfig.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], OutputDataConfig = OutputDataConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-    if (AutoMLJobArtifacts != null) __obj.updateDynamic("AutoMLJobArtifacts")(AutoMLJobArtifacts.asInstanceOf[js.Any])
-    if (AutoMLJobConfig != null) __obj.updateDynamic("AutoMLJobConfig")(AutoMLJobConfig.asInstanceOf[js.Any])
-    if (AutoMLJobObjective != null) __obj.updateDynamic("AutoMLJobObjective")(AutoMLJobObjective.asInstanceOf[js.Any])
-    if (BestCandidate != null) __obj.updateDynamic("BestCandidate")(BestCandidate.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(GenerateCandidateDefinitionsOnly)) __obj.updateDynamic("GenerateCandidateDefinitionsOnly")(GenerateCandidateDefinitionsOnly.get.asInstanceOf[js.Any])
-    if (ProblemType != null) __obj.updateDynamic("ProblemType")(ProblemType.asInstanceOf[js.Any])
-    if (ResolvedAttributes != null) __obj.updateDynamic("ResolvedAttributes")(ResolvedAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAutoMLJobResponse]
   }
+  @scala.inline
+  implicit class DescribeAutoMLJobResponseOps[Self <: DescribeAutoMLJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoMLJobArn(value: AutoMLJobArn): Self = this.set("AutoMLJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoMLJobName(value: AutoMLJobName): Self = this.set("AutoMLJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoMLJobSecondaryStatus(value: AutoMLJobSecondaryStatus): Self = this.set("AutoMLJobSecondaryStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoMLJobStatus(value: AutoMLJobStatus): Self = this.set("AutoMLJobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputDataConfigVarargs(value: AutoMLChannel*): Self = this.set("InputDataConfig", js.Array(value :_*))
+    @scala.inline
+    def setInputDataConfig(value: AutoMLInputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputDataConfig(value: AutoMLOutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoMLJobArtifacts(value: AutoMLJobArtifacts): Self = this.set("AutoMLJobArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMLJobArtifacts: Self = this.set("AutoMLJobArtifacts", js.undefined)
+    @scala.inline
+    def setAutoMLJobConfig(value: AutoMLJobConfig): Self = this.set("AutoMLJobConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMLJobConfig: Self = this.set("AutoMLJobConfig", js.undefined)
+    @scala.inline
+    def setAutoMLJobObjective(value: AutoMLJobObjective): Self = this.set("AutoMLJobObjective", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMLJobObjective: Self = this.set("AutoMLJobObjective", js.undefined)
+    @scala.inline
+    def setBestCandidate(value: AutoMLCandidate): Self = this.set("BestCandidate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBestCandidate: Self = this.set("BestCandidate", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setFailureReason(value: AutoMLFailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setGenerateCandidateDefinitionsOnly(value: GenerateCandidateDefinitionsOnly): Self = this.set("GenerateCandidateDefinitionsOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenerateCandidateDefinitionsOnly: Self = this.set("GenerateCandidateDefinitionsOnly", js.undefined)
+    @scala.inline
+    def setProblemType(value: ProblemType): Self = this.set("ProblemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProblemType: Self = this.set("ProblemType", js.undefined)
+    @scala.inline
+    def setResolvedAttributes(value: ResolvedAttributes): Self = this.set("ResolvedAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolvedAttributes: Self = this.set("ResolvedAttributes", js.undefined)
+  }
+  
 }
 

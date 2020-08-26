@@ -12,7 +12,7 @@ Typings are for version v1.6.0
 | Keywords           | angularjs, toastr, popup |
 | # releases         | 0 |
 | # dependents       | 31 |
-| # downloads        | 796535 |
+| # downloads        | 798449 |
 | # stars            | 4 |
 
 ## Links

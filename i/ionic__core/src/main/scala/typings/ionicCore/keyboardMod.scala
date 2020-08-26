@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object keyboardMod extends js.Object {
   val KEYBOARD_DID_CLOSE: /* "ionKeyboardDidHide" */ String = js.native
   val KEYBOARD_DID_OPEN: /* "ionKeyboardDidShow" */ String = js.native
-  def copyLayoutViewport(win: Window): js.Any = js.native
   def copyVisualViewport(visualViewport: js.Any): js.Any = js.native
   def keyboardDidClose(win: Window): Boolean = js.native
   def keyboardDidOpen(): Boolean = js.native

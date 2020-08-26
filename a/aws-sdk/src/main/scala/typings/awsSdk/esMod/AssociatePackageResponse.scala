@@ -14,10 +14,26 @@ trait AssociatePackageResponse extends js.Object {
 
 object AssociatePackageResponse {
   @scala.inline
-  def apply(DomainPackageDetails: DomainPackageDetails = null): AssociatePackageResponse = {
+  def apply(): AssociatePackageResponse = {
     val __obj = js.Dynamic.literal()
-    if (DomainPackageDetails != null) __obj.updateDynamic("DomainPackageDetails")(DomainPackageDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociatePackageResponse]
   }
+  @scala.inline
+  implicit class AssociatePackageResponseOps[Self <: AssociatePackageResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainPackageDetails(value: DomainPackageDetails): Self = this.set("DomainPackageDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainPackageDetails: Self = this.set("DomainPackageDetails", js.undefined)
+  }
+  
 }
 

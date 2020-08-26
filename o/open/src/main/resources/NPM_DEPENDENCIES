@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "open" : "7.0.4"
+      "open" : "7.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "open" : "7.0.4"
+      "open" : "7.1.0"
     }
   ],
   "compile-devDependencies" : [

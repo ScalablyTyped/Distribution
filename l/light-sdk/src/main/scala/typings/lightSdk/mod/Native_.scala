@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Native_ extends js.Object {
   /**
     * 通过js添加导航栏按钮，目前允许在左右两边各加两个扩展按钮
@@ -25,7 +26,7 @@ trait Native_ extends js.Object {
     * 3. backgroundColor字段 ：设置红点的背景颜色
     * @param cb 功能处理后的回调函数
     */
-  def addButton(params: js.Any, cb: js.Function0[Unit]): Unit
+  def addButton(params: js.Any, cb: js.Function0[Unit]): Unit = js.native
   /**
     * 通过JS发送统计分析埋点事件
     * @param params - 接口入参
@@ -34,14 +35,14 @@ trait Native_ extends js.Object {
     * @param params.duration -事件时长（毫秒），该字段可以为持续性事件标识事件持续的时长，默认值为0
     * @param cb 功能处理后的回调函数
     */
-  def analyticsSendEvent(params: js.Any, cb: js.Function0[Unit]): Unit
+  def analyticsSendEvent(params: js.Any, cb: js.Function0[Unit]): Unit = js.native
   /**
     * 通过js调用页面返回事件
     * @param params - 接口入参
     * @param params.number - 返回的层数。如为1，则返回上一层。大于等于页面栈数量，则返回首页，小于等于0，则无效。不配置该字段，则默认返回上一层
     * @param cb 功能处理后的回调函数
     */
-  def back(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def back(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js接口页面中返回指定图片的base64编码字符串
     *
@@ -55,11 +56,11 @@ trait Native_ extends js.Object {
     * @param params.reverselyOrdered - 多选图片(即type为CAMERA_MUTIL-ALBUM或MUTIL-ALBUM)情况下相册选择器是否倒序显示，默认正序显示，仅支持iOS
     * @param cb 功能处理后的回调函数
     */
-  def chooseImage(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def chooseImage(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js调用关闭页面
     */
-  def close(params: Null, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def close(params: Null, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 用于向系统日历增加事件
     * @param params - 接口入参
@@ -71,7 +72,7 @@ trait Native_ extends js.Object {
     * @param params.alarmOffset - 提前提醒时间，单位：分 ，默认值为0，即事件开始时间提醒.注意事项：类型必须为整数，入参小于0时为默认值
     * @param cb 功能处理后的回调函数
     */
-  def createCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def createCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 用于向系统日历删除事件
     * @param params - 接口入参
@@ -80,7 +81,7 @@ trait Native_ extends js.Object {
     * @param params.id - 事件id
     * @param cb 功能处理后的回调函数
     */
-  def deleteCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def deleteCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js接口在网页中删除存储在native的属性
     * @param params - 接口入参
@@ -89,7 +90,7 @@ trait Native_ extends js.Object {
     * @param params.scope - native存储域
     * @param cb 功能处理后的回调函数
     */
-  def deleteData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def deleteData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 文件预览，支持doc，docx ，xls，xlsx，pdf，txt，ppt ，pptX。
     * @param params - 接口入参
@@ -97,7 +98,7 @@ trait Native_ extends js.Object {
     * @param params.title -预览页面标题，如果不传title，默认为文件名（参见注意事项
     * @param cb 功能处理后的回调函数
     */
-  def filePreview(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def filePreview(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 文件下载保存功能。文件支持doc，docx ，xls，xlsx，pdf，txt，ppt ，pptX。
     * @param params - 接口入参
@@ -107,7 +108,7 @@ trait Native_ extends js.Object {
     * @param params.overwrite -是否覆盖（默认不覆盖）
     * @param cb 功能处理后的回调函数
     */
-  def fileSave(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def fileSave(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口返回指定字符串内容的二维码图片的base64编码字符串
     *
@@ -116,82 +117,82 @@ trait Native_ extends js.Object {
     * @param params.size - 二维码尺寸,默认为300x300，
     * @param cb 功能处理后的回调函数
     */
-  def genCode(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def genCode(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口在网页中返回指定文件ID对应的base64编码字符串
     * @param params - 接口入参
     * @param params.path - 文件ID,协议为LightResource://xxx.类型
     */
-  def getBase64(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def getBase64(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口获取客户端系统剪贴板内容
     * @param params - 接口入参
     * @param cb 功能处理后的回调函数
     */
-  def getClipBoardContent(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def getClipBoardContent(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js获取手机通讯录信息
     * @param params - 接口入参
     * @param cb 功能处理后的回调函数
     */
-  def getContactInfo(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def getContactInfo(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口获得当前框架页面堆栈信息
     * @param params
     * @param cb
     */
-  def getCurrentPages(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def getCurrentPages(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js调用获取经纬度
     * @param params - 接口入参
     * @param params.scanSpan - 定位刷新间隔（单位毫秒）
     * @param cb 功能处理后的回调函数
     */
-  def getLocation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def getLocation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 获取当前是否可获取定位状态
     * @param params - 接口入参
     * @param cb 功能处理后的回调函数
     */
-  def getLocationStatus(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def getLocationStatus(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口获取当前网络状态
     * @param params - 接口入参
     * @param cb 功能处理后的回调函数
     */
-  def getNetworkStatus(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def getNetworkStatus(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口获取APP状态栏高度
     * @param params - 接口入参
     */
-  def getStatusBarHeight(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def getStatusBarHeight(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过网页js获取客户端基本信息
     *
     * @param params - 接口入参
     * @param cb 功能处理后的回调函数
     */
-  def getSystemInfo(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def getSystemInfo(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口获取设备唯一标识码
     * @param params - 接口入参
     * @param cb 功能处理后的回调函数
     */
-  def getUDID(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def getUDID(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过网页js获取客户端版本信息
     *
     * @param params - 接口入参
     * @param cb 功能处理后的回调函数
     */
-  def getVersion(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def getVersion(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 修改导航栏透明度
     * @param params - 接口入参
     * @param params.alpha -设置透明度，透明度设置越小越透明
     * @param cb 功能处理后的回调函数
     */
-  def headSetAlpha(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def headSetAlpha(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js设置导航栏搜索视图
     * @param params - 接口入参
@@ -202,7 +203,7 @@ trait Native_ extends js.Object {
     * @param params.placeholderTextColor -搜索框文字颜色，格式为 #ffffff，默认灰色
     * @param cb 功能处理后的回调函数
     */
-  def headSetSearchView(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def headSetSearchView(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 苹果内购接口
     * @param params - 接口入参
@@ -210,7 +211,7 @@ trait Native_ extends js.Object {
     * @param params.orderId -商户订单号(此订单号为客户自己业务生成的订单号，用于最后一步校验苹果收据时做检测唯一性使用，保证内购链路完整性)
     * @param cb 功能处理后的回调函数
     */
-  def iapPurchase(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def iapPurchase(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口在网页中返回指定图片的文件ID，协议格式为LightResource://xxx.image
     * @param params - 接口入参
@@ -218,7 +219,7 @@ trait Native_ extends js.Object {
     * @param params.sizeType -original原图，compressed 压缩图，默认 ['original','compressed']
     * @param params.sourceType - 相册选取或者拍照，默认 ['camera','album']
     */
-  def imagePicker(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def imagePicker(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 图片预览功能，支持预览多张图片。
     * @param params - 接口入参
@@ -226,7 +227,7 @@ trait Native_ extends js.Object {
     * @param params.selectedIndex -预览时的图片数组下标(从0开始)，表示展示当前选中的图片。默认情况为0
     * @param cb 功能处理后的回调函数
     */
-  def imagePreview(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def imagePreview(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js接口记录日志信息
     * @param params - 接口入参
@@ -234,27 +235,27 @@ trait Native_ extends js.Object {
     * @param params.content -日志内容
     * @param cb 功能处理后的回调函数
     */
-  def log(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def log(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 打开native系统特殊的外部链接 如电话，邮箱，短信，网页，其他APP等。
     * @param params - 接口入参
     * @param url - 电话: tel:10086 邮箱: mailto:abc@163.com 短信: sms:10086 网页:https://www.baidu.com App: weixin://
     * @param cb 功能处理后的回调函数
     */
-  def openURL(params: js.Any, cb: js.Function0[Unit]): Unit
+  def openURL(params: js.Any, cb: js.Function0[Unit]): Unit = js.native
   /**
     * 通过js获取是否含有手势或指纹验证信息
     * @param params - 接口入参
     * @param params.verifyType    -验证方式（FP:指纹 GL:手势）
     * @param cb 功能处理后的回调函数
     */
-  def preVerifyOpeation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def preVerifyOpeation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过JS获取推送消息
     * @param params - 接口入参
     * @param cb 功能处理后的回调函数
     */
-  def pushAddEventListener(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def pushAddEventListener(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 当前用户添加标签
     * @deprecated
@@ -262,7 +263,7 @@ trait Native_ extends js.Object {
     * @param params.tags -用户所传的标签集合
     * @param cb
     */
-  def pushAddTags(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def pushAddTags(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 当前用户删除标签
     * @deprecated
@@ -270,28 +271,28 @@ trait Native_ extends js.Object {
     * @param params.tags -用户所传的标签集合
     * @param cb
     */
-  def pushDeleteTags(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def pushDeleteTags(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过JS获取推送registrationID
     * @deprecated
     * @param params - 接口入参
     * @param cb
     */
-  def pushGetRegistrationID(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def pushGetRegistrationID(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 获取当前用户的所有标签
     * @deprecated
     * @param params
     * @param cb
     */
-  def pushGetTags(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def pushGetTags(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过JS向客户端传递推送alias，用于推送服务器定点推送
     * @param params - 接口入参
     * @param params.alias    -推送alias，为空字符串时为清除已有alias
     * @param cb 功能处理后的回调函数
     */
-  def pushSetAlias(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def pushSetAlias(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 用于向系统日历查询事件
     * @param params - 接口入参
@@ -300,7 +301,7 @@ trait Native_ extends js.Object {
     * @param params.id - 事件id
     * @param cb 功能处理后的回调函数
     */
-  def queryCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def queryCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口在网页中查询存储在native的属性
     * @param params - 接口入参
@@ -310,21 +311,21 @@ trait Native_ extends js.Object {
     * @param params.scope - native存储域
     * @param cb 功能处理后的回调函数
     */
-  def readData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def readData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js删除已添加的导航栏按钮
     * @param params - 接口入参
     * @param params.string    -若为“left”，则删除左侧按钮，若为“right”，则删除右侧按钮，默认为“right”
     * @param cb 功能处理后的回调函数
     */
-  def removeButton(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def removeButton(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js关闭安全键盘
     * @deprecated
     * @param params - 接口入参
     * @param cb
     */
-  def safekeyboardHide(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def safekeyboardHide(params: Null, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js展现安全键盘
     * @deprecated
@@ -340,14 +341,14 @@ trait Native_ extends js.Object {
     * @param params.titleText -设置键盘顶部自定义文案，不配置或者配置字符串为空默认为“恒生安全输入键盘”。注意:不配置字段时，安全键盘顶部文案默认显示为safekeyboard.gmu中的配置。如果gmu中再没有的话，则默认显示为”恒生安全输入键盘”。
     * @param cb
     */
-  def safekeyboardShow(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def safekeyboardShow(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js对web页或JSNative页面上的图片进行本地化处理，保存至本地相册
     * @param params - 接口入参
     * @param params.image -图片数据，支持以下格式：1. 标准http或https图片链接 2. 图片base64编码，以data:image/png;base64, //开头
     * @param cb 功能处理后的回调函数
     */
-  def saveImage(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def saveImage(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js接口打开本地二维码扫描页面，扫码成功后在网页中返回扫码结果信息
     *
@@ -358,28 +359,28 @@ trait Native_ extends js.Object {
     * @param params.type - 扫一扫识别类型。参数值有2种可选，qrcode：二维码， barcode：条形码，不传或参数错误时默认为二维码效果
     * @param cb 功能处理后的回调函数
     */
-  def scanCode(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def scanCode(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js修改导航栏背景色
     * @param params - 接口入参
     * @param params.color    -颜色，格式为 #ffffff
     * @param cb 功能处理后的回调函数
     */
-  def setBackgroundColor(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def setBackgroundColor(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js接口在web或者JSNative页面中复制内容到剪贴板
     * @param params - 接口入参
     * @param params.value - 需要复制到剪贴板的内容，目前只支持字符串
     * @param cb 功能处理后的回调函数
     */
-  def setClipBoardContent(params: js.Any, cb: js.Any): Unit
+  def setClipBoardContent(params: js.Any, cb: js.Any): Unit = js.native
   /**
     * 通过js接口设置屏幕方向
     * @param params - 接口入参
     * @param params.screenOrientation    -    landscape_left:左横屏  landscape_right：右横屏 portrait：竖屏
     * @param cb 功能处理后的回调函数
     */
-  def setScreenOrientation(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def setScreenOrientation(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js接口设置导航栏上下标题样式
     * @param params - 接口入参
@@ -387,21 +388,21 @@ trait Native_ extends js.Object {
     * @param params.subtitle    -副标题
     * @param cb 功能处理后的回调函数
     */
-  def setSubtitle(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def setSubtitle(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js接口设置屏幕可旋转方向
     * @param params - 接口入参
     * @param params.supportScreenOrientation    -    以数组形式，添加可设置方向。
     * @param cb 功能处理后的回调函数
     */
-  def setSupportScreenOrientation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def setSupportScreenOrientation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口控制是否隐藏状态栏
     * @param params - 接口入参
     * @param params.hidden    -是否隐藏
     * @param cb 功能处理后的回调函数
     */
-  def setSystemStatusBar(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def setSystemStatusBar(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 设置首页tab小红点
     * @param params - 接口入参
@@ -410,14 +411,14 @@ trait Native_ extends js.Object {
     * @param params.value -type为0时，忽略value字段值为""以外的所有值。若value为"",则清除红点。type为1时，value为必须字段，显示在红点中心的文本,若value为"",则清除文本
     * @param cb 功能处理后的回调函数
     */
-  def setTabBarBadge(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def setTabBarBadge(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js接口控制导航栏标题
     * @param params - 接口入参
     * @param params.title    -标题
     * @param cb 功能处理后的回调函数
     */
-  def setTitle(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def setTitle(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 控制导航栏红点按钮是否隐藏
     * @param params - 接口入参
@@ -425,7 +426,7 @@ trait Native_ extends js.Object {
     * @param params.badgeId    -红点Id,供查询红点信息使用。注意:要跟你创建导航栏红点时Id保持一致。
     * @param cb 功能处理后的回调函数
     */
-  def showNativeBadge(params: js.Any, cb: js.Function0[Unit]): Unit
+  def showNativeBadge(params: js.Any, cb: js.Function0[Unit]): Unit = js.native
   /**
     * 显示蒙层
     * @param params - 接口入参
@@ -433,21 +434,21 @@ trait Native_ extends js.Object {
     * @param params.dataType -data的类型 strh5 或 url ，默认strh5 （strh5: 加载字符串格式HTML, url: 远程地址或本地www下的HTML）
     * @param params.callbackDataType - 返回的data字段类型 json 或 text，默认是text
     */
-  def showOverlay(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def showOverlay(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js判断各个平台app在设备上是否已安装
     * @param params - 接口入参
     * @param params.type -平台类型，目前type值只支持'qq'，'weibo'，'weixin'三个
     * @param cb 功能处理后的回调函数
     */
-  def socialAppInstalled(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def socialAppInstalled(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 三方登录接口
     * @param params - 接口入参
     * @param params.type            登录平台类别,只支持qq,weibo,weixin三个type
     * @param cb 功能处理后的回调函数
     */
-  def socialLogin(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def socialLogin(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js分享内容到各平台
     * @param params - 接口入参
@@ -473,26 +474,26 @@ trait Native_ extends js.Object {
     * “system”(系统分享)”
     * @param cb 功能处理后的回调函数
     */
-  def socialShare(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def socialShare(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js接口录制音频
     * @param params - 接口入参
     * @param params.duration -音频录制的最长时间，以秒为单位
     * @param cb 功能处理后的回调函数
     */
-  def startRecord(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def startRecord(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js调用关闭定位服务
     * @deprecated
     * @param params - 接口入参
     * @param cb
     */
-  def stopLocation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def stopLocation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口结束录制音频
     * @param cb
     */
-  def stopRecord(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def stopRecord(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 用于实现网络请求
     * @param params - 接口入参
@@ -503,7 +504,7 @@ trait Native_ extends js.Object {
     * @param params.body - HTTP 请求体
     * @param params.timeout - 请求超时时间，单位ms,默认30000ms
     */
-  def streamFetch(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def streamFetch(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口在网页或JsNative页面中切换底部tab
     *
@@ -511,7 +512,7 @@ trait Native_ extends js.Object {
     * @param params.index - 切换至下标为index位置的tab
     * @param cb 功能处理后的回调函数
     */
-  def switchTab(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def switchTab(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js传入经服务器加签后的订单信息(orderInfo)并调用相应支付渠道SDK的支付接口
     * @param params - 接口入参
@@ -520,7 +521,7 @@ trait Native_ extends js.Object {
     * @param params.isSandBox            -是否进入沙箱环境（只对支付宝有效）
     * @param cb 功能处理后的回调函数
     */
-  def tradePay(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def tradePay(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * t通过js关闭交易键盘
     * @deprecated
@@ -528,7 +529,7 @@ trait Native_ extends js.Object {
     * @param params.type -关闭的键盘类型（price:交易价格键盘 volume:交易量键盘 search:股票代码搜索键盘）
     * @param cb
     */
-  def tradekeyboardHide(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit
+  def tradekeyboardHide(params: js.Any, cb: js.Function1[/* res */ CallbackResultNoData, Unit]): Unit = js.native
   /**
     * 通过js展现交易键盘
     * @deprecated
@@ -539,7 +540,7 @@ trait Native_ extends js.Object {
     * @param params.describe -键盘工具类描述
     * @param cb
     */
-  def tradekeyboardShow(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def tradekeyboardShow(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 用于向系统日历更新相应事件信息
     * @param params - 接口入参
@@ -552,12 +553,12 @@ trait Native_ extends js.Object {
     * @param params.alarmOffset - 提前提醒时间，单位：分 ，默认值为0，即事件开始时间提醒.注意事项：类型必须为整数，入参小于0时为默认值
     * @param cb 功能处理后的回调函数
     */
-  def updateCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def updateCalendar(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过JS获取登录用户信息
     * @param cb
     */
-  def userGetInfo(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def userGetInfo(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js登录用户
     * @param params - 接口入参
@@ -569,7 +570,7 @@ trait Native_ extends js.Object {
     * @param params.logoutWhenExit            -app退出后是否注销当前用户
     * @param cb 功能处理后的回调函数
     */
-  def userLogin(params: js.Any, cb: js.Any): Unit
+  def userLogin(params: js.Any, cb: js.Any): Unit = js.native
   /**
     * 通过js设置登录用户信息
     * @param params - 接口入参
@@ -582,12 +583,12 @@ trait Native_ extends js.Object {
     * @param params.extraInfo            -用户额外信息
     * @param cb 功能处理后的回调函数
     */
-  def userSetInfo(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def userSetInfo(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过JS退出用户登录
     * @param cb
     */
-  def userlogout(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def userlogout(cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js调用手势或指纹验证
     * @param params - 接口入参
@@ -597,7 +598,7 @@ trait Native_ extends js.Object {
     * @param params.additionalTitle    -附加方式点击按钮title
     * @param cb 功能处理后的回调函数
     */
-  def verifyOpeation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def verifyOpeation(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
   /**
     * 通过js接口在网页中向native保存数据
     * @param params - 接口入参
@@ -608,7 +609,7 @@ trait Native_ extends js.Object {
     * @param params.scope - native存储域
     * @param cb 功能处理后的回调函数
     */
-  def writeData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit
+  def writeData(params: js.Any, cb: js.Function1[/* res */ CallbackResult, Unit]): Unit = js.native
 }
 
 object Native_ {
@@ -689,5 +690,160 @@ object Native_ {
     val __obj = js.Dynamic.literal(addButton = js.Any.fromFunction2(addButton), analyticsSendEvent = js.Any.fromFunction2(analyticsSendEvent), back = js.Any.fromFunction2(back), chooseImage = js.Any.fromFunction2(chooseImage), close = js.Any.fromFunction2(close), createCalendar = js.Any.fromFunction2(createCalendar), deleteCalendar = js.Any.fromFunction2(deleteCalendar), deleteData = js.Any.fromFunction2(deleteData), filePreview = js.Any.fromFunction2(filePreview), fileSave = js.Any.fromFunction2(fileSave), genCode = js.Any.fromFunction2(genCode), getBase64 = js.Any.fromFunction2(getBase64), getClipBoardContent = js.Any.fromFunction2(getClipBoardContent), getContactInfo = js.Any.fromFunction2(getContactInfo), getCurrentPages = js.Any.fromFunction2(getCurrentPages), getLocation = js.Any.fromFunction2(getLocation), getLocationStatus = js.Any.fromFunction2(getLocationStatus), getNetworkStatus = js.Any.fromFunction2(getNetworkStatus), getStatusBarHeight = js.Any.fromFunction2(getStatusBarHeight), getSystemInfo = js.Any.fromFunction2(getSystemInfo), getUDID = js.Any.fromFunction2(getUDID), getVersion = js.Any.fromFunction2(getVersion), headSetAlpha = js.Any.fromFunction2(headSetAlpha), headSetSearchView = js.Any.fromFunction2(headSetSearchView), iapPurchase = js.Any.fromFunction2(iapPurchase), imagePicker = js.Any.fromFunction2(imagePicker), imagePreview = js.Any.fromFunction2(imagePreview), log = js.Any.fromFunction2(log), openURL = js.Any.fromFunction2(openURL), preVerifyOpeation = js.Any.fromFunction2(preVerifyOpeation), pushAddEventListener = js.Any.fromFunction2(pushAddEventListener), pushAddTags = js.Any.fromFunction2(pushAddTags), pushDeleteTags = js.Any.fromFunction2(pushDeleteTags), pushGetRegistrationID = js.Any.fromFunction2(pushGetRegistrationID), pushGetTags = js.Any.fromFunction2(pushGetTags), pushSetAlias = js.Any.fromFunction2(pushSetAlias), queryCalendar = js.Any.fromFunction2(queryCalendar), readData = js.Any.fromFunction2(readData), removeButton = js.Any.fromFunction2(removeButton), safekeyboardHide = js.Any.fromFunction2(safekeyboardHide), safekeyboardShow = js.Any.fromFunction2(safekeyboardShow), saveImage = js.Any.fromFunction2(saveImage), scanCode = js.Any.fromFunction2(scanCode), setBackgroundColor = js.Any.fromFunction2(setBackgroundColor), setClipBoardContent = js.Any.fromFunction2(setClipBoardContent), setScreenOrientation = js.Any.fromFunction2(setScreenOrientation), setSubtitle = js.Any.fromFunction2(setSubtitle), setSupportScreenOrientation = js.Any.fromFunction2(setSupportScreenOrientation), setSystemStatusBar = js.Any.fromFunction2(setSystemStatusBar), setTabBarBadge = js.Any.fromFunction2(setTabBarBadge), setTitle = js.Any.fromFunction2(setTitle), showNativeBadge = js.Any.fromFunction2(showNativeBadge), showOverlay = js.Any.fromFunction2(showOverlay), socialAppInstalled = js.Any.fromFunction2(socialAppInstalled), socialLogin = js.Any.fromFunction2(socialLogin), socialShare = js.Any.fromFunction2(socialShare), startRecord = js.Any.fromFunction2(startRecord), stopLocation = js.Any.fromFunction2(stopLocation), stopRecord = js.Any.fromFunction1(stopRecord), streamFetch = js.Any.fromFunction2(streamFetch), switchTab = js.Any.fromFunction2(switchTab), tradePay = js.Any.fromFunction2(tradePay), tradekeyboardHide = js.Any.fromFunction2(tradekeyboardHide), tradekeyboardShow = js.Any.fromFunction2(tradekeyboardShow), updateCalendar = js.Any.fromFunction2(updateCalendar), userGetInfo = js.Any.fromFunction1(userGetInfo), userLogin = js.Any.fromFunction2(userLogin), userSetInfo = js.Any.fromFunction2(userSetInfo), userlogout = js.Any.fromFunction1(userlogout), verifyOpeation = js.Any.fromFunction2(verifyOpeation), writeData = js.Any.fromFunction2(writeData))
     __obj.asInstanceOf[Native_]
   }
+  @scala.inline
+  implicit class Native_Ops[Self <: Native_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddButton(value: (js.Any, js.Function0[Unit]) => Unit): Self = this.set("addButton", js.Any.fromFunction2(value))
+    @scala.inline
+    def setAnalyticsSendEvent(value: (js.Any, js.Function0[Unit]) => Unit): Self = this.set("analyticsSendEvent", js.Any.fromFunction2(value))
+    @scala.inline
+    def setBack(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("back", js.Any.fromFunction2(value))
+    @scala.inline
+    def setChooseImage(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("chooseImage", js.Any.fromFunction2(value))
+    @scala.inline
+    def setClose(value: (Null, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("close", js.Any.fromFunction2(value))
+    @scala.inline
+    def setCreateCalendar(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("createCalendar", js.Any.fromFunction2(value))
+    @scala.inline
+    def setDeleteCalendar(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("deleteCalendar", js.Any.fromFunction2(value))
+    @scala.inline
+    def setDeleteData(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("deleteData", js.Any.fromFunction2(value))
+    @scala.inline
+    def setFilePreview(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("filePreview", js.Any.fromFunction2(value))
+    @scala.inline
+    def setFileSave(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("fileSave", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGenCode(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("genCode", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetBase64(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("getBase64", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetClipBoardContent(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("getClipBoardContent", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetContactInfo(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("getContactInfo", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetCurrentPages(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("getCurrentPages", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetLocation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("getLocation", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetLocationStatus(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("getLocationStatus", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetNetworkStatus(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("getNetworkStatus", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetStatusBarHeight(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("getStatusBarHeight", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetSystemInfo(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("getSystemInfo", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetUDID(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("getUDID", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetVersion(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("getVersion", js.Any.fromFunction2(value))
+    @scala.inline
+    def setHeadSetAlpha(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("headSetAlpha", js.Any.fromFunction2(value))
+    @scala.inline
+    def setHeadSetSearchView(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("headSetSearchView", js.Any.fromFunction2(value))
+    @scala.inline
+    def setIapPurchase(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("iapPurchase", js.Any.fromFunction2(value))
+    @scala.inline
+    def setImagePicker(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("imagePicker", js.Any.fromFunction2(value))
+    @scala.inline
+    def setImagePreview(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("imagePreview", js.Any.fromFunction2(value))
+    @scala.inline
+    def setLog(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("log", js.Any.fromFunction2(value))
+    @scala.inline
+    def setOpenURL(value: (js.Any, js.Function0[Unit]) => Unit): Self = this.set("openURL", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPreVerifyOpeation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("preVerifyOpeation", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPushAddEventListener(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("pushAddEventListener", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPushAddTags(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("pushAddTags", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPushDeleteTags(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("pushDeleteTags", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPushGetRegistrationID(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("pushGetRegistrationID", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPushGetTags(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("pushGetTags", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPushSetAlias(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("pushSetAlias", js.Any.fromFunction2(value))
+    @scala.inline
+    def setQueryCalendar(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("queryCalendar", js.Any.fromFunction2(value))
+    @scala.inline
+    def setReadData(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("readData", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRemoveButton(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("removeButton", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSafekeyboardHide(value: (Null, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("safekeyboardHide", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSafekeyboardShow(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("safekeyboardShow", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSaveImage(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("saveImage", js.Any.fromFunction2(value))
+    @scala.inline
+    def setScanCode(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("scanCode", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetBackgroundColor(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("setBackgroundColor", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetClipBoardContent(value: (js.Any, js.Any) => Unit): Self = this.set("setClipBoardContent", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetScreenOrientation(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("setScreenOrientation", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetSubtitle(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("setSubtitle", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetSupportScreenOrientation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("setSupportScreenOrientation", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetSystemStatusBar(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("setSystemStatusBar", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetTabBarBadge(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("setTabBarBadge", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetTitle(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("setTitle", js.Any.fromFunction2(value))
+    @scala.inline
+    def setShowNativeBadge(value: (js.Any, js.Function0[Unit]) => Unit): Self = this.set("showNativeBadge", js.Any.fromFunction2(value))
+    @scala.inline
+    def setShowOverlay(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("showOverlay", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSocialAppInstalled(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("socialAppInstalled", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSocialLogin(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("socialLogin", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSocialShare(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("socialShare", js.Any.fromFunction2(value))
+    @scala.inline
+    def setStartRecord(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("startRecord", js.Any.fromFunction2(value))
+    @scala.inline
+    def setStopLocation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("stopLocation", js.Any.fromFunction2(value))
+    @scala.inline
+    def setStopRecord(value: js.Function1[/* res */ CallbackResult, Unit] => Unit): Self = this.set("stopRecord", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStreamFetch(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("streamFetch", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSwitchTab(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("switchTab", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTradePay(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("tradePay", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTradekeyboardHide(value: (js.Any, js.Function1[/* res */ CallbackResultNoData, Unit]) => Unit): Self = this.set("tradekeyboardHide", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTradekeyboardShow(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("tradekeyboardShow", js.Any.fromFunction2(value))
+    @scala.inline
+    def setUpdateCalendar(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("updateCalendar", js.Any.fromFunction2(value))
+    @scala.inline
+    def setUserGetInfo(value: js.Function1[/* res */ CallbackResult, Unit] => Unit): Self = this.set("userGetInfo", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUserLogin(value: (js.Any, js.Any) => Unit): Self = this.set("userLogin", js.Any.fromFunction2(value))
+    @scala.inline
+    def setUserSetInfo(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("userSetInfo", js.Any.fromFunction2(value))
+    @scala.inline
+    def setUserlogout(value: js.Function1[/* res */ CallbackResult, Unit] => Unit): Self = this.set("userlogout", js.Any.fromFunction1(value))
+    @scala.inline
+    def setVerifyOpeation(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("verifyOpeation", js.Any.fromFunction2(value))
+    @scala.inline
+    def setWriteData(value: (js.Any, js.Function1[/* res */ CallbackResult, Unit]) => Unit): Self = this.set("writeData", js.Any.fromFunction2(value))
+  }
+  
 }
 

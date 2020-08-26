@@ -23,6 +23,7 @@ abstract class Resource protected () extends js.Object {
     */
   def this(t: String, name: String, custom: Boolean) = this()
   def this(t: String, name: String, custom: Boolean, props: Inputs) = this()
+  def this(t: String, name: String, custom: Boolean, props: js.UndefOr[scala.Nothing], opts: ResourceOptions) = this()
   def this(t: String, name: String, custom: Boolean, props: Inputs, opts: ResourceOptions) = this()
   /**
     * urn is the stable logical URN used to distinctly address a resource, both before and after

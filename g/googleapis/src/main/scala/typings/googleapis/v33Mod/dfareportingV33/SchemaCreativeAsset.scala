@@ -327,110 +327,228 @@ trait SchemaCreativeAsset extends js.Object {
 
 object SchemaCreativeAsset {
   @scala.inline
-  def apply(
-    actionScript3: js.UndefOr[Boolean] = js.undefined,
-    active: js.UndefOr[Boolean] = js.undefined,
-    additionalSizes: js.Array[SchemaSize] = null,
-    alignment: String = null,
-    artworkType: String = null,
-    assetIdentifier: SchemaCreativeAssetId = null,
-    audioBitRate: js.UndefOr[Double] = js.undefined,
-    audioSampleRate: js.UndefOr[Double] = js.undefined,
-    backupImageExit: SchemaCreativeCustomEvent = null,
-    bitRate: js.UndefOr[Double] = js.undefined,
-    childAssetType: String = null,
-    collapsedSize: SchemaSize = null,
-    companionCreativeIds: js.Array[String] = null,
-    customStartTimeValue: js.UndefOr[Double] = js.undefined,
-    detectedFeatures: js.Array[String] = null,
-    displayType: String = null,
-    duration: js.UndefOr[Double] = js.undefined,
-    durationType: String = null,
-    expandedDimension: SchemaSize = null,
-    fileSize: String = null,
-    flashVersion: js.UndefOr[Double] = js.undefined,
-    frameRate: js.UndefOr[Double] = js.undefined,
-    hideFlashObjects: js.UndefOr[Boolean] = js.undefined,
-    hideSelectionBoxes: js.UndefOr[Boolean] = js.undefined,
-    horizontallyLocked: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    idDimensionValue: SchemaDimensionValue = null,
-    mediaDuration: js.UndefOr[Double] = js.undefined,
-    mimeType: String = null,
-    offset: SchemaOffsetPosition = null,
-    orientation: String = null,
-    originalBackup: js.UndefOr[Boolean] = js.undefined,
-    politeLoad: js.UndefOr[Boolean] = js.undefined,
-    position: SchemaOffsetPosition = null,
-    positionLeftUnit: String = null,
-    positionTopUnit: String = null,
-    progressiveServingUrl: String = null,
-    pushdown: js.UndefOr[Boolean] = js.undefined,
-    pushdownDuration: js.UndefOr[Double] = js.undefined,
-    role: String = null,
-    size: SchemaSize = null,
-    sslCompliant: js.UndefOr[Boolean] = js.undefined,
-    startTimeType: String = null,
-    streamingServingUrl: String = null,
-    transparency: js.UndefOr[Boolean] = js.undefined,
-    verticallyLocked: js.UndefOr[Boolean] = js.undefined,
-    windowMode: String = null,
-    zIndex: js.UndefOr[Double] = js.undefined,
-    zipFilename: String = null,
-    zipFilesize: String = null
-  ): SchemaCreativeAsset = {
+  def apply(): SchemaCreativeAsset = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(actionScript3)) __obj.updateDynamic("actionScript3")(actionScript3.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (additionalSizes != null) __obj.updateDynamic("additionalSizes")(additionalSizes.asInstanceOf[js.Any])
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (artworkType != null) __obj.updateDynamic("artworkType")(artworkType.asInstanceOf[js.Any])
-    if (assetIdentifier != null) __obj.updateDynamic("assetIdentifier")(assetIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(audioBitRate)) __obj.updateDynamic("audioBitRate")(audioBitRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(audioSampleRate)) __obj.updateDynamic("audioSampleRate")(audioSampleRate.get.asInstanceOf[js.Any])
-    if (backupImageExit != null) __obj.updateDynamic("backupImageExit")(backupImageExit.asInstanceOf[js.Any])
-    if (!js.isUndefined(bitRate)) __obj.updateDynamic("bitRate")(bitRate.get.asInstanceOf[js.Any])
-    if (childAssetType != null) __obj.updateDynamic("childAssetType")(childAssetType.asInstanceOf[js.Any])
-    if (collapsedSize != null) __obj.updateDynamic("collapsedSize")(collapsedSize.asInstanceOf[js.Any])
-    if (companionCreativeIds != null) __obj.updateDynamic("companionCreativeIds")(companionCreativeIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(customStartTimeValue)) __obj.updateDynamic("customStartTimeValue")(customStartTimeValue.get.asInstanceOf[js.Any])
-    if (detectedFeatures != null) __obj.updateDynamic("detectedFeatures")(detectedFeatures.asInstanceOf[js.Any])
-    if (displayType != null) __obj.updateDynamic("displayType")(displayType.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (durationType != null) __obj.updateDynamic("durationType")(durationType.asInstanceOf[js.Any])
-    if (expandedDimension != null) __obj.updateDynamic("expandedDimension")(expandedDimension.asInstanceOf[js.Any])
-    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(flashVersion)) __obj.updateDynamic("flashVersion")(flashVersion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(frameRate)) __obj.updateDynamic("frameRate")(frameRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFlashObjects)) __obj.updateDynamic("hideFlashObjects")(hideFlashObjects.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideSelectionBoxes)) __obj.updateDynamic("hideSelectionBoxes")(hideSelectionBoxes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontallyLocked)) __obj.updateDynamic("horizontallyLocked")(horizontallyLocked.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(mediaDuration)) __obj.updateDynamic("mediaDuration")(mediaDuration.get.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(originalBackup)) __obj.updateDynamic("originalBackup")(originalBackup.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(politeLoad)) __obj.updateDynamic("politeLoad")(politeLoad.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (positionLeftUnit != null) __obj.updateDynamic("positionLeftUnit")(positionLeftUnit.asInstanceOf[js.Any])
-    if (positionTopUnit != null) __obj.updateDynamic("positionTopUnit")(positionTopUnit.asInstanceOf[js.Any])
-    if (progressiveServingUrl != null) __obj.updateDynamic("progressiveServingUrl")(progressiveServingUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(pushdown)) __obj.updateDynamic("pushdown")(pushdown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pushdownDuration)) __obj.updateDynamic("pushdownDuration")(pushdownDuration.get.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant.get.asInstanceOf[js.Any])
-    if (startTimeType != null) __obj.updateDynamic("startTimeType")(startTimeType.asInstanceOf[js.Any])
-    if (streamingServingUrl != null) __obj.updateDynamic("streamingServingUrl")(streamingServingUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparency)) __obj.updateDynamic("transparency")(transparency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticallyLocked)) __obj.updateDynamic("verticallyLocked")(verticallyLocked.get.asInstanceOf[js.Any])
-    if (windowMode != null) __obj.updateDynamic("windowMode")(windowMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
-    if (zipFilename != null) __obj.updateDynamic("zipFilename")(zipFilename.asInstanceOf[js.Any])
-    if (zipFilesize != null) __obj.updateDynamic("zipFilesize")(zipFilesize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreativeAsset]
   }
+  @scala.inline
+  implicit class SchemaCreativeAssetOps[Self <: SchemaCreativeAsset] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionScript3(value: Boolean): Self = this.set("actionScript3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionScript3: Self = this.set("actionScript3", js.undefined)
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setAdditionalSizesVarargs(value: SchemaSize*): Self = this.set("additionalSizes", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalSizes(value: js.Array[SchemaSize]): Self = this.set("additionalSizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalSizes: Self = this.set("additionalSizes", js.undefined)
+    @scala.inline
+    def setAlignment(value: String): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    @scala.inline
+    def setArtworkType(value: String): Self = this.set("artworkType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtworkType: Self = this.set("artworkType", js.undefined)
+    @scala.inline
+    def setAssetIdentifier(value: SchemaCreativeAssetId): Self = this.set("assetIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetIdentifier: Self = this.set("assetIdentifier", js.undefined)
+    @scala.inline
+    def setAudioBitRate(value: Double): Self = this.set("audioBitRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioBitRate: Self = this.set("audioBitRate", js.undefined)
+    @scala.inline
+    def setAudioSampleRate(value: Double): Self = this.set("audioSampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioSampleRate: Self = this.set("audioSampleRate", js.undefined)
+    @scala.inline
+    def setBackupImageExit(value: SchemaCreativeCustomEvent): Self = this.set("backupImageExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupImageExit: Self = this.set("backupImageExit", js.undefined)
+    @scala.inline
+    def setBitRate(value: Double): Self = this.set("bitRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitRate: Self = this.set("bitRate", js.undefined)
+    @scala.inline
+    def setChildAssetType(value: String): Self = this.set("childAssetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildAssetType: Self = this.set("childAssetType", js.undefined)
+    @scala.inline
+    def setCollapsedSize(value: SchemaSize): Self = this.set("collapsedSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsedSize: Self = this.set("collapsedSize", js.undefined)
+    @scala.inline
+    def setCompanionCreativeIdsVarargs(value: String*): Self = this.set("companionCreativeIds", js.Array(value :_*))
+    @scala.inline
+    def setCompanionCreativeIds(value: js.Array[String]): Self = this.set("companionCreativeIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanionCreativeIds: Self = this.set("companionCreativeIds", js.undefined)
+    @scala.inline
+    def setCustomStartTimeValue(value: Double): Self = this.set("customStartTimeValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomStartTimeValue: Self = this.set("customStartTimeValue", js.undefined)
+    @scala.inline
+    def setDetectedFeaturesVarargs(value: String*): Self = this.set("detectedFeatures", js.Array(value :_*))
+    @scala.inline
+    def setDetectedFeatures(value: js.Array[String]): Self = this.set("detectedFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectedFeatures: Self = this.set("detectedFeatures", js.undefined)
+    @scala.inline
+    def setDisplayType(value: String): Self = this.set("displayType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayType: Self = this.set("displayType", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setDurationType(value: String): Self = this.set("durationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationType: Self = this.set("durationType", js.undefined)
+    @scala.inline
+    def setExpandedDimension(value: SchemaSize): Self = this.set("expandedDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandedDimension: Self = this.set("expandedDimension", js.undefined)
+    @scala.inline
+    def setFileSize(value: String): Self = this.set("fileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSize: Self = this.set("fileSize", js.undefined)
+    @scala.inline
+    def setFlashVersion(value: Double): Self = this.set("flashVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlashVersion: Self = this.set("flashVersion", js.undefined)
+    @scala.inline
+    def setFrameRate(value: Double): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+    @scala.inline
+    def setHideFlashObjects(value: Boolean): Self = this.set("hideFlashObjects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideFlashObjects: Self = this.set("hideFlashObjects", js.undefined)
+    @scala.inline
+    def setHideSelectionBoxes(value: Boolean): Self = this.set("hideSelectionBoxes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideSelectionBoxes: Self = this.set("hideSelectionBoxes", js.undefined)
+    @scala.inline
+    def setHorizontallyLocked(value: Boolean): Self = this.set("horizontallyLocked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontallyLocked: Self = this.set("horizontallyLocked", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdDimensionValue(value: SchemaDimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    @scala.inline
+    def setMediaDuration(value: Double): Self = this.set("mediaDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaDuration: Self = this.set("mediaDuration", js.undefined)
+    @scala.inline
+    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    @scala.inline
+    def setOffset(value: SchemaOffsetPosition): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setOriginalBackup(value: Boolean): Self = this.set("originalBackup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalBackup: Self = this.set("originalBackup", js.undefined)
+    @scala.inline
+    def setPoliteLoad(value: Boolean): Self = this.set("politeLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoliteLoad: Self = this.set("politeLoad", js.undefined)
+    @scala.inline
+    def setPosition(value: SchemaOffsetPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setPositionLeftUnit(value: String): Self = this.set("positionLeftUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionLeftUnit: Self = this.set("positionLeftUnit", js.undefined)
+    @scala.inline
+    def setPositionTopUnit(value: String): Self = this.set("positionTopUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionTopUnit: Self = this.set("positionTopUnit", js.undefined)
+    @scala.inline
+    def setProgressiveServingUrl(value: String): Self = this.set("progressiveServingUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressiveServingUrl: Self = this.set("progressiveServingUrl", js.undefined)
+    @scala.inline
+    def setPushdown(value: Boolean): Self = this.set("pushdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePushdown: Self = this.set("pushdown", js.undefined)
+    @scala.inline
+    def setPushdownDuration(value: Double): Self = this.set("pushdownDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePushdownDuration: Self = this.set("pushdownDuration", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setSize(value: SchemaSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSslCompliant(value: Boolean): Self = this.set("sslCompliant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslCompliant: Self = this.set("sslCompliant", js.undefined)
+    @scala.inline
+    def setStartTimeType(value: String): Self = this.set("startTimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimeType: Self = this.set("startTimeType", js.undefined)
+    @scala.inline
+    def setStreamingServingUrl(value: String): Self = this.set("streamingServingUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingServingUrl: Self = this.set("streamingServingUrl", js.undefined)
+    @scala.inline
+    def setTransparency(value: Boolean): Self = this.set("transparency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransparency: Self = this.set("transparency", js.undefined)
+    @scala.inline
+    def setVerticallyLocked(value: Boolean): Self = this.set("verticallyLocked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticallyLocked: Self = this.set("verticallyLocked", js.undefined)
+    @scala.inline
+    def setWindowMode(value: String): Self = this.set("windowMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowMode: Self = this.set("windowMode", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    @scala.inline
+    def setZipFilename(value: String): Self = this.set("zipFilename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZipFilename: Self = this.set("zipFilename", js.undefined)
+    @scala.inline
+    def setZipFilesize(value: String): Self = this.set("zipFilesize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZipFilesize: Self = this.set("zipFilesize", js.undefined)
+  }
+  
 }
 

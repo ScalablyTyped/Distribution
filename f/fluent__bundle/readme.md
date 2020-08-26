@@ -10,9 +10,9 @@ Localization library for expressive translations.
 | ------------------ | :-------------: |
 | Full name          | @fluent/bundle |
 | Keywords           | localization, l10n, internationalization, i18n, ftl, plural, gender, locale, language, formatting, translate, translation, format, parser |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 16069 |
+| # downloads        | 21433 |
 | # stars            | 0 |
 
 ## Links

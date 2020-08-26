@@ -29,58 +29,6 @@ class DefaultIterableDiffer[V] ()
   val collection: js.Array[V] | Iterable[V] | Null = js.native
   val length: Double = js.native
   def check(collection: NgIterable[V]): Boolean = js.native
-  /** Iterate over all added items. */
-  /* CompleteClass */
-  override def forEachAddedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
-  /**
-    * Iterate over all items which had their identity (as computed by the `TrackByFunction`)
-    * changed.
-    */
-  /* CompleteClass */
-  override def forEachIdentityChange(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
-  /**
-    * Iterate over all changes. `IterableChangeRecord` will contain information about changes
-    * to each item.
-    */
-  /* CompleteClass */
-  override def forEachItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
-  /** Iterate over all moved items. */
-  /* CompleteClass */
-  override def forEachMovedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
-  /**
-    * Iterate over a set of operations which when applied to the original `Iterable` will produce the
-    * new `Iterable`.
-    *
-    * NOTE: These are not necessarily the actual operations which were applied to the original
-    * `Iterable`, rather these are a set of computed operations which may not be the same as the
-    * ones applied.
-    *
-    * @param record A change which needs to be applied
-    * @param previousIndex The `IterableChangeRecord#previousIndex` of the `record` refers to the
-    *        original `Iterable` location, where as `previousIndex` refers to the transient location
-    *        of the item, after applying the operations up to this point.
-    * @param currentIndex The `IterableChangeRecord#currentIndex` of the `record` refers to the
-    *        original `Iterable` location, where as `currentIndex` refers to the transient location
-    *        of the item, after applying the operations up to this point.
-    */
-  /* CompleteClass */
-  override def forEachOperation(
-    fn: js.Function3[
-      /* record */ IterableChangeRecord[V], 
-      /* previousIndex */ Double | Null, 
-      /* currentIndex */ Double | Null, 
-      Unit
-    ]
-  ): Unit = js.native
-  /**
-    * Iterate over changes in the order of original `Iterable` showing where the original items
-    * have moved.
-    */
-  /* CompleteClass */
-  override def forEachPreviousItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
-  /** Iterate over all removed items. */
-  /* CompleteClass */
-  override def forEachRemovedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
   def isDirty: Boolean = js.native
   def onDestroy(): Unit = js.native
 }

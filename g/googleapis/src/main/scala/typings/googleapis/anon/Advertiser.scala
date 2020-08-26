@@ -22,34 +22,72 @@ trait Advertiser extends js.Object {
 
 object Advertiser {
   @scala.inline
-  def apply(
-    advertiser: String = null,
-    appIcon: Height = null,
-    body: String = null,
-    callToAction: String = null,
-    clickTrackingUrl: String = null,
-    headline: String = null,
-    image: Height = null,
-    impressionTrackingUrl: js.Array[String] = null,
-    logo: Height = null,
-    price: String = null,
-    starRating: js.UndefOr[Double] = js.undefined,
-    store: String = null
-  ): Advertiser = {
+  def apply(): Advertiser = {
     val __obj = js.Dynamic.literal()
-    if (advertiser != null) __obj.updateDynamic("advertiser")(advertiser.asInstanceOf[js.Any])
-    if (appIcon != null) __obj.updateDynamic("appIcon")(appIcon.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (callToAction != null) __obj.updateDynamic("callToAction")(callToAction.asInstanceOf[js.Any])
-    if (clickTrackingUrl != null) __obj.updateDynamic("clickTrackingUrl")(clickTrackingUrl.asInstanceOf[js.Any])
-    if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (impressionTrackingUrl != null) __obj.updateDynamic("impressionTrackingUrl")(impressionTrackingUrl.asInstanceOf[js.Any])
-    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (!js.isUndefined(starRating)) __obj.updateDynamic("starRating")(starRating.get.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[Advertiser]
   }
+  @scala.inline
+  implicit class AdvertiserOps[Self <: Advertiser] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertiser(value: String): Self = this.set("advertiser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiser: Self = this.set("advertiser", js.undefined)
+    @scala.inline
+    def setAppIcon(value: Height): Self = this.set("appIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppIcon: Self = this.set("appIcon", js.undefined)
+    @scala.inline
+    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setCallToAction(value: String): Self = this.set("callToAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallToAction: Self = this.set("callToAction", js.undefined)
+    @scala.inline
+    def setClickTrackingUrl(value: String): Self = this.set("clickTrackingUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickTrackingUrl: Self = this.set("clickTrackingUrl", js.undefined)
+    @scala.inline
+    def setHeadline(value: String): Self = this.set("headline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadline: Self = this.set("headline", js.undefined)
+    @scala.inline
+    def setImage(value: Height): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setImpressionTrackingUrlVarargs(value: String*): Self = this.set("impressionTrackingUrl", js.Array(value :_*))
+    @scala.inline
+    def setImpressionTrackingUrl(value: js.Array[String]): Self = this.set("impressionTrackingUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImpressionTrackingUrl: Self = this.set("impressionTrackingUrl", js.undefined)
+    @scala.inline
+    def setLogo(value: Height): Self = this.set("logo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogo: Self = this.set("logo", js.undefined)
+    @scala.inline
+    def setPrice(value: String): Self = this.set("price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("price", js.undefined)
+    @scala.inline
+    def setStarRating(value: Double): Self = this.set("starRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStarRating: Self = this.set("starRating", js.undefined)
+    @scala.inline
+    def setStore(value: String): Self = this.set("store", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStore: Self = this.set("store", js.undefined)
+  }
+  
 }
 

@@ -1,24 +1,36 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Text extends js.Object {
-  var extend: js.UndefOr[ExtendType] = js.undefined
-  var size: js.UndefOr[Xlarge] = js.undefined
-  var text: js.UndefOr[FontWeight] = js.undefined
+  var text: js.UndefOr[Large] = js.native
 }
 
 object Text {
   @scala.inline
-  def apply(extend: ExtendType = null, size: Xlarge = null, text: FontWeight = null): Text = {
+  def apply(): Text = {
     val __obj = js.Dynamic.literal()
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Text]
   }
+  @scala.inline
+  implicit class TextOps[Self <: Text] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setText(value: Large): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

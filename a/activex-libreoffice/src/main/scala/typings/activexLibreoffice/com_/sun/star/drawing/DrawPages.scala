@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * @see XDrawPagesSupplier
   * @see DrawingDocument
   */
+@js.native
 trait DrawPages
   extends XDrawPages
      with XDrawPageSummarizer

@@ -4,40 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RuleRaws extends ContainerRaws {
   /**
     * The rule's full selector. If there are multiple comma-separated selectors,
     * the entire group will be included.
     */
-  var selector: js.UndefOr[String] = js.undefined
+  var selector: js.UndefOr[String] = js.native
 }
 
 object RuleRaws {
   @scala.inline
-  def apply(
-    after: String = null,
-    afterName: String = null,
-    before: String = null,
-    between: String = null,
-    important: String = null,
-    indent: String = null,
-    left: String = null,
-    right: String = null,
-    selector: String = null,
-    semicolon: js.UndefOr[Boolean] = js.undefined
-  ): RuleRaws = {
+  def apply(): RuleRaws = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (afterName != null) __obj.updateDynamic("afterName")(afterName.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (between != null) __obj.updateDynamic("between")(between.asInstanceOf[js.Any])
-    if (important != null) __obj.updateDynamic("important")(important.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(semicolon)) __obj.updateDynamic("semicolon")(semicolon.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleRaws]
   }
+  @scala.inline
+  implicit class RuleRawsOps[Self <: RuleRaws] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+  }
+  
 }
 

@@ -12,17 +12,13 @@ trait ValidationOptions extends js.Object
 
 object ValidationOptions {
   @scala.inline
-  def ValidationOptionsWithKey(publicKey: String, audience: js.Any = null, bypassExpiration: js.UndefOr[Boolean] = js.undefined): ValidationOptions = {
+  def ValidationOptionsWithKey(publicKey: String): ValidationOptions = {
     val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any])
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (!js.isUndefined(bypassExpiration)) __obj.updateDynamic("bypassExpiration")(bypassExpiration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptions]
   }
   @scala.inline
-  def ValidationOptionsWithPrint(thumbprint: String, audience: js.Any = null, bypassExpiration: js.UndefOr[Boolean] = js.undefined): ValidationOptions = {
+  def ValidationOptionsWithPrint(thumbprint: String): ValidationOptions = {
     val __obj = js.Dynamic.literal(thumbprint = thumbprint.asInstanceOf[js.Any])
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (!js.isUndefined(bypassExpiration)) __obj.updateDynamic("bypassExpiration")(bypassExpiration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptions]
   }
 }

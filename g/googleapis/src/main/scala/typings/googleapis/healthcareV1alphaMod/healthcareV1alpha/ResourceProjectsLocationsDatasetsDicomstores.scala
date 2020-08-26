@@ -30,6 +30,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     */
   def create(): GaxiosPromise[SchemaDicomStore] = js.native
   def create(callback: BodyResponseCallback[SchemaDicomStore]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDicomStore] = js.native
   def create(params: ParamsResourceProjectsLocationsDatasetsDicomstoresCreate): GaxiosPromise[SchemaDicomStore] = js.native
   def create(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresCreate,
@@ -61,6 +62,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDelete,
@@ -93,6 +95,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     */
   def export(): GaxiosPromise[SchemaOperation] = js.native
   def export(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def export(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def export(params: ParamsResourceProjectsLocationsDatasetsDicomstoresExport): GaxiosPromise[SchemaOperation] = js.native
   def export(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresExport,
@@ -123,6 +126,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     */
   def get(): GaxiosPromise[SchemaDicomStore] = js.native
   def get(callback: BodyResponseCallback[SchemaDicomStore]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDicomStore] = js.native
   def get(params: ParamsResourceProjectsLocationsDatasetsDicomstoresGet): GaxiosPromise[SchemaDicomStore] = js.native
   def get(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresGet,
@@ -154,6 +158,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsLocationsDatasetsDicomstoresGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresGetiampolicy,
@@ -189,6 +194,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     */
   def `import`(): GaxiosPromise[SchemaOperation] = js.native
   def `import`(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def `import`(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def `import`(params: ParamsResourceProjectsLocationsDatasetsDicomstoresImport): GaxiosPromise[SchemaOperation] = js.native
   def `import`(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresImport,
@@ -221,6 +227,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     */
   def list(): GaxiosPromise[SchemaListDicomStoresResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDicomStoresResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDicomStoresResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsDatasetsDicomstoresList): GaxiosPromise[SchemaListDicomStoresResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresList,
@@ -253,6 +260,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     */
   def patch(): GaxiosPromise[SchemaDicomStore] = js.native
   def patch(callback: BodyResponseCallback[SchemaDicomStore]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDicomStore] = js.native
   def patch(params: ParamsResourceProjectsLocationsDatasetsDicomstoresPatch): GaxiosPromise[SchemaDicomStore] = js.native
   def patch(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresPatch,
@@ -285,6 +293,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsLocationsDatasetsDicomstoresSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresSetiampolicy,
@@ -321,6 +330,7 @@ class ResourceProjectsLocationsDatasetsDicomstores protected () extends js.Objec
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsLocationsDatasetsDicomstoresTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresTestiampermissions,

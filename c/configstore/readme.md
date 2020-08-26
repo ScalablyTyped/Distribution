@@ -11,8 +11,8 @@ Easily load and save config without having to think about where and how
 | Full name          | configstore |
 | Keywords           | config, store, storage, configuration, settings, preferences, json, data, persist, persistent, save |
 | # releases         | 4 |
-| # dependents       | 910 |
-| # downloads        | 248878157 |
+| # dependents       | 919 |
+| # downloads        | 255261930 |
 | # stars            | 36 |
 
 ## Links

@@ -38,16 +38,34 @@ trait SchemaBackendServiceFailoverPolicy extends js.Object {
 
 object SchemaBackendServiceFailoverPolicy {
   @scala.inline
-  def apply(
-    disableConnectionDrainOnFailover: js.UndefOr[Boolean] = js.undefined,
-    dropTrafficIfUnhealthy: js.UndefOr[Boolean] = js.undefined,
-    failoverRatio: js.UndefOr[Double] = js.undefined
-  ): SchemaBackendServiceFailoverPolicy = {
+  def apply(): SchemaBackendServiceFailoverPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableConnectionDrainOnFailover)) __obj.updateDynamic("disableConnectionDrainOnFailover")(disableConnectionDrainOnFailover.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropTrafficIfUnhealthy)) __obj.updateDynamic("dropTrafficIfUnhealthy")(dropTrafficIfUnhealthy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(failoverRatio)) __obj.updateDynamic("failoverRatio")(failoverRatio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackendServiceFailoverPolicy]
   }
+  @scala.inline
+  implicit class SchemaBackendServiceFailoverPolicyOps[Self <: SchemaBackendServiceFailoverPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisableConnectionDrainOnFailover(value: Boolean): Self = this.set("disableConnectionDrainOnFailover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableConnectionDrainOnFailover: Self = this.set("disableConnectionDrainOnFailover", js.undefined)
+    @scala.inline
+    def setDropTrafficIfUnhealthy(value: Boolean): Self = this.set("dropTrafficIfUnhealthy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropTrafficIfUnhealthy: Self = this.set("dropTrafficIfUnhealthy", js.undefined)
+    @scala.inline
+    def setFailoverRatio(value: Double): Self = this.set("failoverRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailoverRatio: Self = this.set("failoverRatio", js.undefined)
+  }
+  
 }
 

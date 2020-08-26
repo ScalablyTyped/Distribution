@@ -30,19 +30,40 @@ trait ListDatasetContentsRequest extends js.Object {
 
 object ListDatasetContentsRequest {
   @scala.inline
-  def apply(
-    datasetName: DatasetName,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    scheduledBefore: Timestamp = null,
-    scheduledOnOrAfter: Timestamp = null
-  ): ListDatasetContentsRequest = {
+  def apply(datasetName: DatasetName): ListDatasetContentsRequest = {
     val __obj = js.Dynamic.literal(datasetName = datasetName.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (scheduledBefore != null) __obj.updateDynamic("scheduledBefore")(scheduledBefore.asInstanceOf[js.Any])
-    if (scheduledOnOrAfter != null) __obj.updateDynamic("scheduledOnOrAfter")(scheduledOnOrAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDatasetContentsRequest]
   }
+  @scala.inline
+  implicit class ListDatasetContentsRequestOps[Self <: ListDatasetContentsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatasetName(value: DatasetName): Self = this.set("datasetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setScheduledBefore(value: Timestamp): Self = this.set("scheduledBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduledBefore: Self = this.set("scheduledBefore", js.undefined)
+    @scala.inline
+    def setScheduledOnOrAfter(value: Timestamp): Self = this.set("scheduledOnOrAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduledOnOrAfter: Self = this.set("scheduledOnOrAfter", js.undefined)
+  }
+  
 }
 

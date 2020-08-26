@@ -1,29 +1,37 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.anon.Fill
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BarGaugeLegendItem extends BaseLegendItem {
   /** @name BarGaugeLegendItem.item */
-  var item: js.UndefOr[BarGaugeBarInfo] = js.undefined
+  var item: js.UndefOr[BarGaugeBarInfo] = js.native
 }
 
 object BarGaugeLegendItem {
   @scala.inline
-  def apply(
-    item: BarGaugeBarInfo = null,
-    marker: Fill = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): BarGaugeLegendItem = {
+  def apply(): BarGaugeLegendItem = {
     val __obj = js.Dynamic.literal()
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarGaugeLegendItem]
   }
+  @scala.inline
+  implicit class BarGaugeLegendItemOps[Self <: BarGaugeLegendItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItem(value: BarGaugeBarInfo): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+  }
+  
 }
 

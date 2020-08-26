@@ -26,16 +26,34 @@ trait SchemaWriteResult extends js.Object {
 
 object SchemaWriteResult {
   @scala.inline
-  def apply(
-    currentStateVersion: String = null,
-    kind: String = null,
-    stateKey: js.UndefOr[Double] = js.undefined
-  ): SchemaWriteResult = {
+  def apply(): SchemaWriteResult = {
     val __obj = js.Dynamic.literal()
-    if (currentStateVersion != null) __obj.updateDynamic("currentStateVersion")(currentStateVersion.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(stateKey)) __obj.updateDynamic("stateKey")(stateKey.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWriteResult]
   }
+  @scala.inline
+  implicit class SchemaWriteResultOps[Self <: SchemaWriteResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentStateVersion(value: String): Self = this.set("currentStateVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentStateVersion: Self = this.set("currentStateVersion", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setStateKey(value: Double): Self = this.set("stateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateKey: Self = this.set("stateKey", js.undefined)
+  }
+  
 }
 

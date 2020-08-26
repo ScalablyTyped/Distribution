@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * The default `Renderer` instance.
   */
-@JSImport("@lumino/widgets/lib/tabbar", "TabBar.defaultRenderer")
+@JSImport("@lumino/widgets/types/tabbar", "TabBar.defaultRenderer")
 @js.native
 object defaultRenderer extends TopLevel[Renderer]
 

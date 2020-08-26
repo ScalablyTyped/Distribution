@@ -26,11 +26,34 @@ trait PublishSchemaRequest extends js.Object {
 
 object PublishSchemaRequest {
   @scala.inline
-  def apply(DevelopmentSchemaArn: Arn, Version: Version, MinorVersion: Version = null, Name: SchemaName = null): PublishSchemaRequest = {
+  def apply(DevelopmentSchemaArn: Arn, Version: Version): PublishSchemaRequest = {
     val __obj = js.Dynamic.literal(DevelopmentSchemaArn = DevelopmentSchemaArn.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
-    if (MinorVersion != null) __obj.updateDynamic("MinorVersion")(MinorVersion.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishSchemaRequest]
   }
+  @scala.inline
+  implicit class PublishSchemaRequestOps[Self <: PublishSchemaRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDevelopmentSchemaArn(value: Arn): Self = this.set("DevelopmentSchemaArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: Version): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinorVersion(value: Version): Self = this.set("MinorVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorVersion: Self = this.set("MinorVersion", js.undefined)
+    @scala.inline
+    def setName(value: SchemaName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

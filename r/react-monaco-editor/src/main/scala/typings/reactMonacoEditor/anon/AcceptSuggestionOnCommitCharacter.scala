@@ -172,185 +172,186 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AcceptSuggestionOnCommitCharacter extends js.Object {
   var acceptSuggestionOnCommitCharacter: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.acceptSuggestionOnCommitCharacter, 
     Boolean
-  ]
+  ] = js.native
   var acceptSuggestionOnEnter: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.acceptSuggestionOnEnter, 
     on | off | smart
-  ]
-  var accessibilityPageSize: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.accessibilityPageSize, Double]
+  ] = js.native
+  var accessibilityPageSize: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.accessibilityPageSize, Double] = js.native
   var accessibilitySupport: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.accessibilitySupport, 
     AccessibilitySupport
-  ]
-  var ariaLabel: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.ariaLabel, String]
+  ] = js.native
+  var ariaLabel: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.ariaLabel, String] = js.native
   var autoClosingBrackets: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.autoClosingBrackets, 
     EditorAutoClosingStrategy
-  ]
+  ] = js.native
   var autoClosingOvertype: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.autoClosingOvertype, 
     EditorAutoClosingOvertypeStrategy
-  ]
+  ] = js.native
   var autoClosingQuotes: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.autoClosingQuotes, 
     EditorAutoClosingStrategy
-  ]
-  var autoIndent: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.autoIndent, EditorAutoIndentStrategy]
+  ] = js.native
+  var autoIndent: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.autoIndent, EditorAutoIndentStrategy] = js.native
   var autoSurround: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.autoSurround, 
     EditorAutoSurroundStrategy
-  ]
-  var automaticLayout: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.automaticLayout, Boolean]
-  var codeLens: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.codeLens, Boolean]
-  var colorDecorators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.colorDecorators, Boolean]
-  var comments: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.comments, EditorCommentsOptions]
-  var contextmenu: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.contextmenu, Boolean]
-  var copyWithSyntaxHighlighting: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.copyWithSyntaxHighlighting, Boolean]
+  ] = js.native
+  var automaticLayout: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.automaticLayout, Boolean] = js.native
+  var codeLens: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.codeLens, Boolean] = js.native
+  var colorDecorators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.colorDecorators, Boolean] = js.native
+  var comments: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.comments, EditorCommentsOptions] = js.native
+  var contextmenu: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.contextmenu, Boolean] = js.native
+  var copyWithSyntaxHighlighting: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.copyWithSyntaxHighlighting, Boolean] = js.native
   var cursorBlinking: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.cursorBlinking, 
     TextEditorCursorBlinkingStyle
-  ]
-  var cursorSmoothCaretAnimation: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorSmoothCaretAnimation, Boolean]
-  var cursorStyle: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorStyle, TextEditorCursorStyle]
-  var cursorSurroundingLines: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLines, Double]
+  ] = js.native
+  var cursorSmoothCaretAnimation: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorSmoothCaretAnimation, Boolean] = js.native
+  var cursorStyle: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorStyle, TextEditorCursorStyle] = js.native
+  var cursorSurroundingLines: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLines, Double] = js.native
   var cursorSurroundingLinesStyle: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLinesStyle, 
     default | all
-  ]
-  var cursorWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorWidth, Double]
-  var disableLayerHinting: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.disableLayerHinting, Boolean]
+  ] = js.native
+  var cursorWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorWidth, Double] = js.native
+  var disableLayerHinting: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.disableLayerHinting, Boolean] = js.native
   var disableMonospaceOptimizations: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.disableMonospaceOptimizations, 
     Boolean
-  ]
-  var dragAndDrop: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.dragAndDrop, Boolean]
-  var editorClassName: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.editorClassName, String]
-  var emptySelectionClipboard: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.emptySelectionClipboard, Boolean]
-  var extraEditorClassName: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.extraEditorClassName, String]
-  var fastScrollSensitivity: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fastScrollSensitivity, Double]
-  var find: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.find, EditorFindOptions]
-  var fixedOverflowWidgets: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fixedOverflowWidgets, Boolean]
-  var folding: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.folding, Boolean]
-  var foldingHighlight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.foldingHighlight, Boolean]
-  var foldingStrategy: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.foldingStrategy, auto | indentation]
-  var fontFamily: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontFamily, String]
-  var fontInfo: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontInfo, FontInfo]
-  var fontLigatures2: IEditorOption[fontLigatures, String]
-  var fontSize: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontSize, Double]
-  var fontWeight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontWeight, String]
-  var formatOnPaste: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.formatOnPaste, Boolean]
-  var formatOnType: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.formatOnType, Boolean]
-  var glyphMargin: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.glyphMargin, Boolean]
-  var gotoLocation: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.gotoLocation, GoToLocationOptions]
-  var hideCursorInOverviewRuler: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.hideCursorInOverviewRuler, Boolean]
-  var highlightActiveIndentGuide: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.highlightActiveIndentGuide, Boolean]
-  var hover: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.hover, EditorHoverOptions]
-  var inDiffEditor: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.inDiffEditor, Boolean]
-  var layoutInfo: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.layoutInfo, EditorLayoutInfo]
-  var letterSpacing: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.letterSpacing, Double]
-  var lightbulb: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lightbulb, EditorLightbulbOptions]
-  var lineDecorationsWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineDecorationsWidth, String | Double]
-  var lineHeight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineHeight, Double]
+  ] = js.native
+  var dragAndDrop: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.dragAndDrop, Boolean] = js.native
+  var editorClassName: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.editorClassName, String] = js.native
+  var emptySelectionClipboard: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.emptySelectionClipboard, Boolean] = js.native
+  var extraEditorClassName: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.extraEditorClassName, String] = js.native
+  var fastScrollSensitivity: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fastScrollSensitivity, Double] = js.native
+  var find: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.find, EditorFindOptions] = js.native
+  var fixedOverflowWidgets: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fixedOverflowWidgets, Boolean] = js.native
+  var folding: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.folding, Boolean] = js.native
+  var foldingHighlight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.foldingHighlight, Boolean] = js.native
+  var foldingStrategy: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.foldingStrategy, auto | indentation] = js.native
+  var fontFamily: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontFamily, String] = js.native
+  var fontInfo: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontInfo, FontInfo] = js.native
+  var fontLigatures2: IEditorOption[fontLigatures, String] = js.native
+  var fontSize: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontSize, Double] = js.native
+  var fontWeight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontWeight, String] = js.native
+  var formatOnPaste: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.formatOnPaste, Boolean] = js.native
+  var formatOnType: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.formatOnType, Boolean] = js.native
+  var glyphMargin: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.glyphMargin, Boolean] = js.native
+  var gotoLocation: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.gotoLocation, GoToLocationOptions] = js.native
+  var hideCursorInOverviewRuler: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.hideCursorInOverviewRuler, Boolean] = js.native
+  var highlightActiveIndentGuide: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.highlightActiveIndentGuide, Boolean] = js.native
+  var hover: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.hover, EditorHoverOptions] = js.native
+  var inDiffEditor: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.inDiffEditor, Boolean] = js.native
+  var layoutInfo: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.layoutInfo, EditorLayoutInfo] = js.native
+  var letterSpacing: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.letterSpacing, Double] = js.native
+  var lightbulb: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lightbulb, EditorLightbulbOptions] = js.native
+  var lineDecorationsWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineDecorationsWidth, String | Double] = js.native
+  var lineHeight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineHeight, Double] = js.native
   var lineNumbers: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.lineNumbers, 
     InternalEditorRenderLineNumbersOptions
-  ]
-  var lineNumbersMinChars: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineNumbersMinChars, Double]
-  var links: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.links, Boolean]
-  var matchBrackets: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.matchBrackets, always | never | near]
-  var minimap: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.minimap, EditorMinimapOptions]
-  var mouseStyle: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.mouseStyle, default | text | copy]
-  var mouseWheelScrollSensitivity: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.mouseWheelScrollSensitivity, Double]
-  var mouseWheelZoom: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.mouseWheelZoom, Boolean]
-  var multiCursorMergeOverlapping: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.multiCursorMergeOverlapping, Boolean]
+  ] = js.native
+  var lineNumbersMinChars: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineNumbersMinChars, Double] = js.native
+  var links: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.links, Boolean] = js.native
+  var matchBrackets: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.matchBrackets, always | never | near] = js.native
+  var minimap: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.minimap, EditorMinimapOptions] = js.native
+  var mouseStyle: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.mouseStyle, default | text | copy] = js.native
+  var mouseWheelScrollSensitivity: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.mouseWheelScrollSensitivity, Double] = js.native
+  var mouseWheelZoom: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.mouseWheelZoom, Boolean] = js.native
+  var multiCursorMergeOverlapping: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.multiCursorMergeOverlapping, Boolean] = js.native
   var multiCursorModifier: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.multiCursorModifier, 
     altKey | metaKey | ctrlKey
-  ]
-  var multiCursorPaste: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.multiCursorPaste, spread | full]
-  var occurrencesHighlight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.occurrencesHighlight, Boolean]
-  var overviewRulerBorder: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.overviewRulerBorder, Boolean]
-  var overviewRulerLanes: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.overviewRulerLanes, Double]
+  ] = js.native
+  var multiCursorPaste: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.multiCursorPaste, spread | full] = js.native
+  var occurrencesHighlight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.occurrencesHighlight, Boolean] = js.native
+  var overviewRulerBorder: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.overviewRulerBorder, Boolean] = js.native
+  var overviewRulerLanes: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.overviewRulerLanes, Double] = js.native
   var parameterHints: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.parameterHints, 
     InternalParameterHintOptions
-  ]
-  var peekWidgetDefaultFocus: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.peekWidgetDefaultFocus, tree | editor]
-  var pixelRatio: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.pixelRatio, Double]
+  ] = js.native
+  var peekWidgetDefaultFocus: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.peekWidgetDefaultFocus, tree | editor] = js.native
+  var pixelRatio: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.pixelRatio, Double] = js.native
   var quickSuggestions: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.quickSuggestions, 
     ValidQuickSuggestionsOptions
-  ]
-  var quickSuggestionsDelay: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.quickSuggestionsDelay, Double]
-  var readOnly: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.readOnly, Boolean]
-  var renderControlCharacters: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderControlCharacters, Boolean]
-  var renderFinalNewline: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline, Boolean]
-  var renderIndentGuides: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderIndentGuides, Boolean]
+  ] = js.native
+  var quickSuggestionsDelay: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.quickSuggestionsDelay, Double] = js.native
+  var readOnly: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.readOnly, Boolean] = js.native
+  var renderControlCharacters: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderControlCharacters, Boolean] = js.native
+  var renderFinalNewline: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline, Boolean] = js.native
+  var renderIndentGuides: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderIndentGuides, Boolean] = js.native
   var renderLineHighlight: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.renderLineHighlight, 
     all | line | none | gutter
-  ]
+  ] = js.native
   var renderValidationDecorations: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.renderValidationDecorations, 
     on | off | editable
-  ]
+  ] = js.native
   var renderWhitespace: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.renderWhitespace, 
     all | none | boundary | selection
-  ]
-  var revealHorizontalRightPadding: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.revealHorizontalRightPadding, Double]
-  var roundedSelection: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.roundedSelection, Boolean]
-  var rulers: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.rulers, js.Object]
-  var scrollBeyondLastColumn: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastColumn, Double]
-  var scrollBeyondLastLine: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastLine, Boolean]
+  ] = js.native
+  var revealHorizontalRightPadding: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.revealHorizontalRightPadding, Double] = js.native
+  var roundedSelection: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.roundedSelection, Boolean] = js.native
+  var rulers: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.rulers, js.Object] = js.native
+  var scrollBeyondLastColumn: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastColumn, Double] = js.native
+  var scrollBeyondLastLine: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastLine, Boolean] = js.native
   var scrollbar: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.scrollbar, 
     InternalEditorScrollbarOptions
-  ]
-  var selectOnLineNumbers: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.selectOnLineNumbers, Boolean]
-  var selectionClipboard: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.selectionClipboard, Boolean]
-  var selectionHighlight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.selectionHighlight, Boolean]
+  ] = js.native
+  var selectOnLineNumbers: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.selectOnLineNumbers, Boolean] = js.native
+  var selectionClipboard: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.selectionClipboard, Boolean] = js.native
+  var selectionHighlight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.selectionHighlight, Boolean] = js.native
   var showFoldingControls: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.showFoldingControls, 
     always | mouseover
-  ]
-  var showUnused: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.showUnused, Boolean]
-  var smoothScrolling: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.smoothScrolling, Boolean]
+  ] = js.native
+  var showUnused: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.showUnused, Boolean] = js.native
+  var smoothScrolling: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.smoothScrolling, Boolean] = js.native
   var snippetSuggestions: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.snippetSuggestions, 
     none | top | bottom | `inline`
-  ]
-  var stopRenderingLineAfter: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.stopRenderingLineAfter, Double]
-  var suggest: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.suggest, InternalSuggestOptions]
-  var suggestFontSize: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.suggestFontSize, Double]
-  var suggestLineHeight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.suggestLineHeight, Double]
-  var suggestOnTriggerCharacters: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.suggestOnTriggerCharacters, Boolean]
+  ] = js.native
+  var stopRenderingLineAfter: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.stopRenderingLineAfter, Double] = js.native
+  var suggest: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.suggest, InternalSuggestOptions] = js.native
+  var suggestFontSize: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.suggestFontSize, Double] = js.native
+  var suggestLineHeight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.suggestLineHeight, Double] = js.native
+  var suggestOnTriggerCharacters: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.suggestOnTriggerCharacters, Boolean] = js.native
   var suggestSelection: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.suggestSelection, 
     first | recentlyUsed | recentlyUsedByPrefix
-  ]
+  ] = js.native
   var tabCompletion: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.tabCompletion, 
     on | off | onlySnippets
-  ]
-  var tabFocusMode: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.tabFocusMode, Boolean]
-  var useTabStops: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.useTabStops, Boolean]
-  var wordSeparators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordSeparators, String]
+  ] = js.native
+  var tabFocusMode: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.tabFocusMode, Boolean] = js.native
+  var useTabStops: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.useTabStops, Boolean] = js.native
+  var wordSeparators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordSeparators, String] = js.native
   var wordWrap: IEditorOption[
     typings.monacoEditor.mod.editor.EditorOption.wordWrap, 
     on | off | wordWrapColumn | bounded
-  ]
-  var wordWrapBreakAfterCharacters: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakAfterCharacters, String]
-  var wordWrapBreakBeforeCharacters: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakBeforeCharacters, String]
-  var wordWrapColumn: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordWrapColumn, Double]
-  var wordWrapMinified: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordWrapMinified, Boolean]
-  var wrappingIndent: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wrappingIndent, WrappingIndent]
-  var wrappingInfo: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wrappingInfo, EditorWrappingInfo]
-  var wrappingStrategy: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wrappingStrategy, simple | advanced]
+  ] = js.native
+  var wordWrapBreakAfterCharacters: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakAfterCharacters, String] = js.native
+  var wordWrapBreakBeforeCharacters: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakBeforeCharacters, String] = js.native
+  var wordWrapColumn: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordWrapColumn, Double] = js.native
+  var wordWrapMinified: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordWrapMinified, Boolean] = js.native
+  var wrappingIndent: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wrappingIndent, WrappingIndent] = js.native
+  var wrappingInfo: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wrappingInfo, EditorWrappingInfo] = js.native
+  var wrappingStrategy: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wrappingStrategy, simple | advanced] = js.native
 }
 
 object AcceptSuggestionOnCommitCharacter {
@@ -469,5 +470,236 @@ object AcceptSuggestionOnCommitCharacter {
     val __obj = js.Dynamic.literal(acceptSuggestionOnCommitCharacter = acceptSuggestionOnCommitCharacter.asInstanceOf[js.Any], acceptSuggestionOnEnter = acceptSuggestionOnEnter.asInstanceOf[js.Any], accessibilityPageSize = accessibilityPageSize.asInstanceOf[js.Any], accessibilitySupport = accessibilitySupport.asInstanceOf[js.Any], ariaLabel = ariaLabel.asInstanceOf[js.Any], autoClosingBrackets = autoClosingBrackets.asInstanceOf[js.Any], autoClosingOvertype = autoClosingOvertype.asInstanceOf[js.Any], autoClosingQuotes = autoClosingQuotes.asInstanceOf[js.Any], autoIndent = autoIndent.asInstanceOf[js.Any], autoSurround = autoSurround.asInstanceOf[js.Any], automaticLayout = automaticLayout.asInstanceOf[js.Any], codeLens = codeLens.asInstanceOf[js.Any], colorDecorators = colorDecorators.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copyWithSyntaxHighlighting = copyWithSyntaxHighlighting.asInstanceOf[js.Any], cursorBlinking = cursorBlinking.asInstanceOf[js.Any], cursorSmoothCaretAnimation = cursorSmoothCaretAnimation.asInstanceOf[js.Any], cursorStyle = cursorStyle.asInstanceOf[js.Any], cursorSurroundingLines = cursorSurroundingLines.asInstanceOf[js.Any], cursorSurroundingLinesStyle = cursorSurroundingLinesStyle.asInstanceOf[js.Any], cursorWidth = cursorWidth.asInstanceOf[js.Any], disableLayerHinting = disableLayerHinting.asInstanceOf[js.Any], disableMonospaceOptimizations = disableMonospaceOptimizations.asInstanceOf[js.Any], dragAndDrop = dragAndDrop.asInstanceOf[js.Any], editorClassName = editorClassName.asInstanceOf[js.Any], emptySelectionClipboard = emptySelectionClipboard.asInstanceOf[js.Any], extraEditorClassName = extraEditorClassName.asInstanceOf[js.Any], fastScrollSensitivity = fastScrollSensitivity.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], fixedOverflowWidgets = fixedOverflowWidgets.asInstanceOf[js.Any], folding = folding.asInstanceOf[js.Any], foldingHighlight = foldingHighlight.asInstanceOf[js.Any], foldingStrategy = foldingStrategy.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontInfo = fontInfo.asInstanceOf[js.Any], fontLigatures2 = fontLigatures2.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], formatOnPaste = formatOnPaste.asInstanceOf[js.Any], formatOnType = formatOnType.asInstanceOf[js.Any], glyphMargin = glyphMargin.asInstanceOf[js.Any], gotoLocation = gotoLocation.asInstanceOf[js.Any], hideCursorInOverviewRuler = hideCursorInOverviewRuler.asInstanceOf[js.Any], highlightActiveIndentGuide = highlightActiveIndentGuide.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], inDiffEditor = inDiffEditor.asInstanceOf[js.Any], layoutInfo = layoutInfo.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lightbulb = lightbulb.asInstanceOf[js.Any], lineDecorationsWidth = lineDecorationsWidth.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], lineNumbers = lineNumbers.asInstanceOf[js.Any], lineNumbersMinChars = lineNumbersMinChars.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], matchBrackets = matchBrackets.asInstanceOf[js.Any], minimap = minimap.asInstanceOf[js.Any], mouseStyle = mouseStyle.asInstanceOf[js.Any], mouseWheelScrollSensitivity = mouseWheelScrollSensitivity.asInstanceOf[js.Any], mouseWheelZoom = mouseWheelZoom.asInstanceOf[js.Any], multiCursorMergeOverlapping = multiCursorMergeOverlapping.asInstanceOf[js.Any], multiCursorModifier = multiCursorModifier.asInstanceOf[js.Any], multiCursorPaste = multiCursorPaste.asInstanceOf[js.Any], occurrencesHighlight = occurrencesHighlight.asInstanceOf[js.Any], overviewRulerBorder = overviewRulerBorder.asInstanceOf[js.Any], overviewRulerLanes = overviewRulerLanes.asInstanceOf[js.Any], parameterHints = parameterHints.asInstanceOf[js.Any], peekWidgetDefaultFocus = peekWidgetDefaultFocus.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], quickSuggestions = quickSuggestions.asInstanceOf[js.Any], quickSuggestionsDelay = quickSuggestionsDelay.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], renderControlCharacters = renderControlCharacters.asInstanceOf[js.Any], renderFinalNewline = renderFinalNewline.asInstanceOf[js.Any], renderIndentGuides = renderIndentGuides.asInstanceOf[js.Any], renderLineHighlight = renderLineHighlight.asInstanceOf[js.Any], renderValidationDecorations = renderValidationDecorations.asInstanceOf[js.Any], renderWhitespace = renderWhitespace.asInstanceOf[js.Any], revealHorizontalRightPadding = revealHorizontalRightPadding.asInstanceOf[js.Any], roundedSelection = roundedSelection.asInstanceOf[js.Any], rulers = rulers.asInstanceOf[js.Any], scrollBeyondLastColumn = scrollBeyondLastColumn.asInstanceOf[js.Any], scrollBeyondLastLine = scrollBeyondLastLine.asInstanceOf[js.Any], scrollbar = scrollbar.asInstanceOf[js.Any], selectOnLineNumbers = selectOnLineNumbers.asInstanceOf[js.Any], selectionClipboard = selectionClipboard.asInstanceOf[js.Any], selectionHighlight = selectionHighlight.asInstanceOf[js.Any], showFoldingControls = showFoldingControls.asInstanceOf[js.Any], showUnused = showUnused.asInstanceOf[js.Any], smoothScrolling = smoothScrolling.asInstanceOf[js.Any], snippetSuggestions = snippetSuggestions.asInstanceOf[js.Any], stopRenderingLineAfter = stopRenderingLineAfter.asInstanceOf[js.Any], suggest = suggest.asInstanceOf[js.Any], suggestFontSize = suggestFontSize.asInstanceOf[js.Any], suggestLineHeight = suggestLineHeight.asInstanceOf[js.Any], suggestOnTriggerCharacters = suggestOnTriggerCharacters.asInstanceOf[js.Any], suggestSelection = suggestSelection.asInstanceOf[js.Any], tabCompletion = tabCompletion.asInstanceOf[js.Any], tabFocusMode = tabFocusMode.asInstanceOf[js.Any], useTabStops = useTabStops.asInstanceOf[js.Any], wordSeparators = wordSeparators.asInstanceOf[js.Any], wordWrap = wordWrap.asInstanceOf[js.Any], wordWrapBreakAfterCharacters = wordWrapBreakAfterCharacters.asInstanceOf[js.Any], wordWrapBreakBeforeCharacters = wordWrapBreakBeforeCharacters.asInstanceOf[js.Any], wordWrapColumn = wordWrapColumn.asInstanceOf[js.Any], wordWrapMinified = wordWrapMinified.asInstanceOf[js.Any], wrappingIndent = wrappingIndent.asInstanceOf[js.Any], wrappingInfo = wrappingInfo.asInstanceOf[js.Any], wrappingStrategy = wrappingStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptSuggestionOnCommitCharacter]
   }
+  @scala.inline
+  implicit class AcceptSuggestionOnCommitCharacterOps[Self <: AcceptSuggestionOnCommitCharacter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptSuggestionOnCommitCharacter(value: IEditorOption[acceptSuggestionOnCommitCharacter, Boolean]): Self = this.set("acceptSuggestionOnCommitCharacter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptSuggestionOnEnter(value: IEditorOption[acceptSuggestionOnEnter, on | off | smart]): Self = this.set("acceptSuggestionOnEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessibilityPageSize(value: IEditorOption[accessibilityPageSize, Double]): Self = this.set("accessibilityPageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessibilitySupport(value: IEditorOption[accessibilitySupport, AccessibilitySupport]): Self = this.set("accessibilitySupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAriaLabel(value: IEditorOption[ariaLabel, String]): Self = this.set("ariaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoClosingBrackets(value: IEditorOption[autoClosingBrackets, EditorAutoClosingStrategy]): Self = this.set("autoClosingBrackets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoClosingOvertype(value: IEditorOption[autoClosingOvertype, EditorAutoClosingOvertypeStrategy]): Self = this.set("autoClosingOvertype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoClosingQuotes(value: IEditorOption[autoClosingQuotes, EditorAutoClosingStrategy]): Self = this.set("autoClosingQuotes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoIndent(value: IEditorOption[autoIndent, EditorAutoIndentStrategy]): Self = this.set("autoIndent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoSurround(value: IEditorOption[autoSurround, EditorAutoSurroundStrategy]): Self = this.set("autoSurround", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutomaticLayout(value: IEditorOption[automaticLayout, Boolean]): Self = this.set("automaticLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCodeLens(value: IEditorOption[codeLens, Boolean]): Self = this.set("codeLens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColorDecorators(value: IEditorOption[colorDecorators, Boolean]): Self = this.set("colorDecorators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComments(value: IEditorOption[comments, EditorCommentsOptions]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContextmenu(value: IEditorOption[contextmenu, Boolean]): Self = this.set("contextmenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCopyWithSyntaxHighlighting(value: IEditorOption[copyWithSyntaxHighlighting, Boolean]): Self = this.set("copyWithSyntaxHighlighting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCursorBlinking(value: IEditorOption[cursorBlinking, TextEditorCursorBlinkingStyle]): Self = this.set("cursorBlinking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCursorSmoothCaretAnimation(value: IEditorOption[cursorSmoothCaretAnimation, Boolean]): Self = this.set("cursorSmoothCaretAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCursorStyle(value: IEditorOption[cursorStyle, TextEditorCursorStyle]): Self = this.set("cursorStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCursorSurroundingLines(value: IEditorOption[cursorSurroundingLines, Double]): Self = this.set("cursorSurroundingLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCursorSurroundingLinesStyle(value: IEditorOption[cursorSurroundingLinesStyle, default | all]): Self = this.set("cursorSurroundingLinesStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCursorWidth(value: IEditorOption[cursorWidth, Double]): Self = this.set("cursorWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisableLayerHinting(value: IEditorOption[disableLayerHinting, Boolean]): Self = this.set("disableLayerHinting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisableMonospaceOptimizations(value: IEditorOption[disableMonospaceOptimizations, Boolean]): Self = this.set("disableMonospaceOptimizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDragAndDrop(value: IEditorOption[dragAndDrop, Boolean]): Self = this.set("dragAndDrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEditorClassName(value: IEditorOption[editorClassName, String]): Self = this.set("editorClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmptySelectionClipboard(value: IEditorOption[emptySelectionClipboard, Boolean]): Self = this.set("emptySelectionClipboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExtraEditorClassName(value: IEditorOption[extraEditorClassName, String]): Self = this.set("extraEditorClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFastScrollSensitivity(value: IEditorOption[fastScrollSensitivity, Double]): Self = this.set("fastScrollSensitivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFind(value: IEditorOption[find, EditorFindOptions]): Self = this.set("find", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFixedOverflowWidgets(value: IEditorOption[fixedOverflowWidgets, Boolean]): Self = this.set("fixedOverflowWidgets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFolding(value: IEditorOption[folding, Boolean]): Self = this.set("folding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFoldingHighlight(value: IEditorOption[foldingHighlight, Boolean]): Self = this.set("foldingHighlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFoldingStrategy(value: IEditorOption[foldingStrategy, auto | indentation]): Self = this.set("foldingStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFontFamily(value: IEditorOption[fontFamily, String]): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFontInfo(value: IEditorOption[fontInfo, FontInfo]): Self = this.set("fontInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFontLigatures2(value: IEditorOption[fontLigatures, String]): Self = this.set("fontLigatures2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFontSize(value: IEditorOption[fontSize, Double]): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFontWeight(value: IEditorOption[fontWeight, String]): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormatOnPaste(value: IEditorOption[formatOnPaste, Boolean]): Self = this.set("formatOnPaste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormatOnType(value: IEditorOption[formatOnType, Boolean]): Self = this.set("formatOnType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGlyphMargin(value: IEditorOption[glyphMargin, Boolean]): Self = this.set("glyphMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGotoLocation(value: IEditorOption[gotoLocation, GoToLocationOptions]): Self = this.set("gotoLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHideCursorInOverviewRuler(value: IEditorOption[hideCursorInOverviewRuler, Boolean]): Self = this.set("hideCursorInOverviewRuler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHighlightActiveIndentGuide(value: IEditorOption[highlightActiveIndentGuide, Boolean]): Self = this.set("highlightActiveIndentGuide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHover(value: IEditorOption[hover, EditorHoverOptions]): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInDiffEditor(value: IEditorOption[inDiffEditor, Boolean]): Self = this.set("inDiffEditor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLayoutInfo(value: IEditorOption[layoutInfo, EditorLayoutInfo]): Self = this.set("layoutInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLetterSpacing(value: IEditorOption[letterSpacing, Double]): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLightbulb(value: IEditorOption[lightbulb, EditorLightbulbOptions]): Self = this.set("lightbulb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLineDecorationsWidth(value: IEditorOption[lineDecorationsWidth, String | Double]): Self = this.set("lineDecorationsWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLineHeight(value: IEditorOption[lineHeight, Double]): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLineNumbers(value: IEditorOption[lineNumbers, InternalEditorRenderLineNumbersOptions]): Self = this.set("lineNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLineNumbersMinChars(value: IEditorOption[lineNumbersMinChars, Double]): Self = this.set("lineNumbersMinChars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLinks(value: IEditorOption[links, Boolean]): Self = this.set("links", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMatchBrackets(value: IEditorOption[matchBrackets, always | never | near]): Self = this.set("matchBrackets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinimap(value: IEditorOption[minimap, EditorMinimapOptions]): Self = this.set("minimap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMouseStyle(value: IEditorOption[mouseStyle, default | text | copy]): Self = this.set("mouseStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMouseWheelScrollSensitivity(value: IEditorOption[mouseWheelScrollSensitivity, Double]): Self = this.set("mouseWheelScrollSensitivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMouseWheelZoom(value: IEditorOption[mouseWheelZoom, Boolean]): Self = this.set("mouseWheelZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMultiCursorMergeOverlapping(value: IEditorOption[multiCursorMergeOverlapping, Boolean]): Self = this.set("multiCursorMergeOverlapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMultiCursorModifier(value: IEditorOption[multiCursorModifier, altKey | metaKey | ctrlKey]): Self = this.set("multiCursorModifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMultiCursorPaste(value: IEditorOption[multiCursorPaste, spread | full]): Self = this.set("multiCursorPaste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOccurrencesHighlight(value: IEditorOption[occurrencesHighlight, Boolean]): Self = this.set("occurrencesHighlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOverviewRulerBorder(value: IEditorOption[overviewRulerBorder, Boolean]): Self = this.set("overviewRulerBorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOverviewRulerLanes(value: IEditorOption[overviewRulerLanes, Double]): Self = this.set("overviewRulerLanes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParameterHints(value: IEditorOption[parameterHints, InternalParameterHintOptions]): Self = this.set("parameterHints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPeekWidgetDefaultFocus(value: IEditorOption[peekWidgetDefaultFocus, tree | editor]): Self = this.set("peekWidgetDefaultFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPixelRatio(value: IEditorOption[pixelRatio, Double]): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQuickSuggestions(value: IEditorOption[quickSuggestions, ValidQuickSuggestionsOptions]): Self = this.set("quickSuggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQuickSuggestionsDelay(value: IEditorOption[quickSuggestionsDelay, Double]): Self = this.set("quickSuggestionsDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReadOnly(value: IEditorOption[readOnly, Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenderControlCharacters(value: IEditorOption[renderControlCharacters, Boolean]): Self = this.set("renderControlCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenderFinalNewline(value: IEditorOption[renderFinalNewline, Boolean]): Self = this.set("renderFinalNewline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenderIndentGuides(value: IEditorOption[renderIndentGuides, Boolean]): Self = this.set("renderIndentGuides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenderLineHighlight(value: IEditorOption[renderLineHighlight, all | line | none | gutter]): Self = this.set("renderLineHighlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenderValidationDecorations(value: IEditorOption[renderValidationDecorations, on | off | editable]): Self = this.set("renderValidationDecorations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenderWhitespace(value: IEditorOption[renderWhitespace, all | none | boundary | selection]): Self = this.set("renderWhitespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevealHorizontalRightPadding(value: IEditorOption[revealHorizontalRightPadding, Double]): Self = this.set("revealHorizontalRightPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoundedSelection(value: IEditorOption[roundedSelection, Boolean]): Self = this.set("roundedSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRulers(value: IEditorOption[rulers, js.Object]): Self = this.set("rulers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScrollBeyondLastColumn(value: IEditorOption[scrollBeyondLastColumn, Double]): Self = this.set("scrollBeyondLastColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScrollBeyondLastLine(value: IEditorOption[scrollBeyondLastLine, Boolean]): Self = this.set("scrollBeyondLastLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScrollbar(value: IEditorOption[scrollbar, InternalEditorScrollbarOptions]): Self = this.set("scrollbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelectOnLineNumbers(value: IEditorOption[selectOnLineNumbers, Boolean]): Self = this.set("selectOnLineNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelectionClipboard(value: IEditorOption[selectionClipboard, Boolean]): Self = this.set("selectionClipboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelectionHighlight(value: IEditorOption[selectionHighlight, Boolean]): Self = this.set("selectionHighlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowFoldingControls(value: IEditorOption[showFoldingControls, always | mouseover]): Self = this.set("showFoldingControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowUnused(value: IEditorOption[showUnused, Boolean]): Self = this.set("showUnused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSmoothScrolling(value: IEditorOption[smoothScrolling, Boolean]): Self = this.set("smoothScrolling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnippetSuggestions(value: IEditorOption[snippetSuggestions, none | top | bottom | `inline`]): Self = this.set("snippetSuggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStopRenderingLineAfter(value: IEditorOption[stopRenderingLineAfter, Double]): Self = this.set("stopRenderingLineAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuggest(value: IEditorOption[suggest, InternalSuggestOptions]): Self = this.set("suggest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuggestFontSize(value: IEditorOption[suggestFontSize, Double]): Self = this.set("suggestFontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuggestLineHeight(value: IEditorOption[suggestLineHeight, Double]): Self = this.set("suggestLineHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuggestOnTriggerCharacters(value: IEditorOption[suggestOnTriggerCharacters, Boolean]): Self = this.set("suggestOnTriggerCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuggestSelection(value: IEditorOption[suggestSelection, first | recentlyUsed | recentlyUsedByPrefix]): Self = this.set("suggestSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTabCompletion(value: IEditorOption[tabCompletion, on | off | onlySnippets]): Self = this.set("tabCompletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTabFocusMode(value: IEditorOption[tabFocusMode, Boolean]): Self = this.set("tabFocusMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUseTabStops(value: IEditorOption[useTabStops, Boolean]): Self = this.set("useTabStops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordSeparators(value: IEditorOption[wordSeparators, String]): Self = this.set("wordSeparators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordWrap(value: IEditorOption[wordWrap, on | off | wordWrapColumn | bounded]): Self = this.set("wordWrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordWrapBreakAfterCharacters(value: IEditorOption[wordWrapBreakAfterCharacters, String]): Self = this.set("wordWrapBreakAfterCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordWrapBreakBeforeCharacters(value: IEditorOption[wordWrapBreakBeforeCharacters, String]): Self = this.set("wordWrapBreakBeforeCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordWrapColumn(value: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordWrapColumn, Double]): Self = this.set("wordWrapColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordWrapMinified(value: IEditorOption[wordWrapMinified, Boolean]): Self = this.set("wordWrapMinified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWrappingIndent(value: IEditorOption[wrappingIndent, WrappingIndent]): Self = this.set("wrappingIndent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWrappingInfo(value: IEditorOption[wrappingInfo, EditorWrappingInfo]): Self = this.set("wrappingInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWrappingStrategy(value: IEditorOption[wrappingStrategy, simple | advanced]): Self = this.set("wrappingStrategy", value.asInstanceOf[js.Any])
+  }
+  
 }
 

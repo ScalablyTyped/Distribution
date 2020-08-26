@@ -1,11 +1,7 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.anon.ComponentDataField
-import typings.devextreme.anon.ComponentElement
 import typings.devextreme.anon.DataFieldElement
-import typings.devextreme.anon.Element
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
 import typings.devextreme.devextremeStrings.auto
 import typings.devextreme.devextremeStrings.left
 import typings.devextreme.devextremeStrings.right
@@ -14,148 +10,179 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxFormOptions extends WidgetOptions[dxForm] {
   /** @name dxForm.Options.alignItemLabels */
-  var alignItemLabels: js.UndefOr[Boolean] = js.undefined
+  var alignItemLabels: js.UndefOr[Boolean] = js.native
   /** @name dxForm.Options.alignItemLabelsInAllGroups */
-  var alignItemLabelsInAllGroups: js.UndefOr[Boolean] = js.undefined
+  var alignItemLabelsInAllGroups: js.UndefOr[Boolean] = js.native
   /** @name dxForm.Options.colCount */
-  var colCount: js.UndefOr[Double | auto] = js.undefined
+  var colCount: js.UndefOr[Double | auto] = js.native
   /** @name dxForm.Options.colCountByScreen */
-  var colCountByScreen: js.UndefOr[js.Any] = js.undefined
+  var colCountByScreen: js.UndefOr[js.Any] = js.native
   /** @name dxForm.Options.customizeItem */
   var customizeItem: js.UndefOr[
     js.Function1[
       /* item */ dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem, 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /** @name dxForm.Options.formData */
-  var formData: js.UndefOr[js.Any] = js.undefined
+  var formData: js.UndefOr[js.Any] = js.native
   /** @name dxForm.Options.items */
   var items: js.UndefOr[
     js.Array[
       dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
     ]
-  ] = js.undefined
+  ] = js.native
   /** @name dxForm.Options.labelLocation */
-  var labelLocation: js.UndefOr[left | right | top] = js.undefined
+  var labelLocation: js.UndefOr[left | right | top] = js.native
   /** @name dxForm.Options.minColWidth */
-  var minColWidth: js.UndefOr[Double] = js.undefined
+  var minColWidth: js.UndefOr[Double] = js.native
   /** @name dxForm.Options.onEditorEnterKey */
-  var onEditorEnterKey: js.UndefOr[js.Function1[/* e */ ComponentDataField, _]] = js.undefined
+  var onEditorEnterKey: js.UndefOr[js.Function1[/* e */ ComponentDataField, _]] = js.native
   /** @name dxForm.Options.onFieldDataChanged */
-  var onFieldDataChanged: js.UndefOr[js.Function1[/* e */ DataFieldElement, _]] = js.undefined
+  var onFieldDataChanged: js.UndefOr[js.Function1[/* e */ DataFieldElement, _]] = js.native
   /** @name dxForm.Options.optionalMark */
-  var optionalMark: js.UndefOr[String] = js.undefined
+  var optionalMark: js.UndefOr[String] = js.native
   /** @name dxForm.Options.readOnly */
-  var readOnly: js.UndefOr[Boolean] = js.undefined
+  var readOnly: js.UndefOr[Boolean] = js.native
   /** @name dxForm.Options.requiredMark */
-  var requiredMark: js.UndefOr[String] = js.undefined
+  var requiredMark: js.UndefOr[String] = js.native
   /** @name dxForm.Options.requiredMessage */
-  var requiredMessage: js.UndefOr[String] = js.undefined
+  var requiredMessage: js.UndefOr[String] = js.native
   /** @name dxForm.Options.screenByWidth */
-  var screenByWidth: js.UndefOr[js.Function] = js.undefined
+  var screenByWidth: js.UndefOr[js.Function] = js.native
   /** @name dxForm.Options.scrollingEnabled */
-  var scrollingEnabled: js.UndefOr[Boolean] = js.undefined
+  var scrollingEnabled: js.UndefOr[Boolean] = js.native
   /** @name dxForm.Options.showColonAfterLabel */
-  var showColonAfterLabel: js.UndefOr[Boolean] = js.undefined
+  var showColonAfterLabel: js.UndefOr[Boolean] = js.native
   /** @name dxForm.Options.showOptionalMark */
-  var showOptionalMark: js.UndefOr[Boolean] = js.undefined
+  var showOptionalMark: js.UndefOr[Boolean] = js.native
   /** @name dxForm.Options.showRequiredMark */
-  var showRequiredMark: js.UndefOr[Boolean] = js.undefined
+  var showRequiredMark: js.UndefOr[Boolean] = js.native
   /** @name dxForm.Options.showValidationSummary */
-  var showValidationSummary: js.UndefOr[Boolean] = js.undefined
+  var showValidationSummary: js.UndefOr[Boolean] = js.native
   /** @name dxForm.Options.validationGroup */
-  var validationGroup: js.UndefOr[String] = js.undefined
+  var validationGroup: js.UndefOr[String] = js.native
 }
 
 object dxFormOptions {
   @scala.inline
-  def apply(
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    alignItemLabels: js.UndefOr[Boolean] = js.undefined,
-    alignItemLabelsInAllGroups: js.UndefOr[Boolean] = js.undefined,
-    bindingOptions: js.Any = null,
-    colCount: Double | auto = null,
-    colCountByScreen: js.Any = null,
-    customizeItem: /* item */ dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem => _ = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    formData: js.Any = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    items: js.Array[
-      dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
-    ] = null,
-    labelLocation: left | right | top = null,
-    minColWidth: js.UndefOr[Double] = js.undefined,
-    onContentReady: /* e */ ComponentElement[dxForm] => _ = null,
-    onDisposing: /* e */ Model[dxForm] => _ = null,
-    onEditorEnterKey: /* e */ ComponentDataField => _ = null,
-    onFieldDataChanged: /* e */ DataFieldElement => _ = null,
-    onInitialized: /* e */ Element[dxForm] => _ = null,
-    onOptionChanged: /* e */ Name[dxForm] => _ = null,
-    optionalMark: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    requiredMark: String = null,
-    requiredMessage: String = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    screenByWidth: js.Function = null,
-    scrollingEnabled: js.UndefOr[Boolean] = js.undefined,
-    showColonAfterLabel: js.UndefOr[Boolean] = js.undefined,
-    showOptionalMark: js.UndefOr[Boolean] = js.undefined,
-    showRequiredMark: js.UndefOr[Boolean] = js.undefined,
-    showValidationSummary: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    validationGroup: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxFormOptions = {
+  def apply(): dxFormOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(alignItemLabels)) __obj.updateDynamic("alignItemLabels")(alignItemLabels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(alignItemLabelsInAllGroups)) __obj.updateDynamic("alignItemLabelsInAllGroups")(alignItemLabelsInAllGroups.get.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (colCount != null) __obj.updateDynamic("colCount")(colCount.asInstanceOf[js.Any])
-    if (colCountByScreen != null) __obj.updateDynamic("colCountByScreen")(colCountByScreen.asInstanceOf[js.Any])
-    if (customizeItem != null) __obj.updateDynamic("customizeItem")(js.Any.fromFunction1(customizeItem))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
-    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (labelLocation != null) __obj.updateDynamic("labelLocation")(labelLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(minColWidth)) __obj.updateDynamic("minColWidth")(minColWidth.get.asInstanceOf[js.Any])
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1(onContentReady))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onEditorEnterKey != null) __obj.updateDynamic("onEditorEnterKey")(js.Any.fromFunction1(onEditorEnterKey))
-    if (onFieldDataChanged != null) __obj.updateDynamic("onFieldDataChanged")(js.Any.fromFunction1(onFieldDataChanged))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (optionalMark != null) __obj.updateDynamic("optionalMark")(optionalMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (requiredMark != null) __obj.updateDynamic("requiredMark")(requiredMark.asInstanceOf[js.Any])
-    if (requiredMessage != null) __obj.updateDynamic("requiredMessage")(requiredMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (screenByWidth != null) __obj.updateDynamic("screenByWidth")(screenByWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollingEnabled)) __obj.updateDynamic("scrollingEnabled")(scrollingEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColonAfterLabel)) __obj.updateDynamic("showColonAfterLabel")(showColonAfterLabel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOptionalMark)) __obj.updateDynamic("showOptionalMark")(showOptionalMark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRequiredMark)) __obj.updateDynamic("showRequiredMark")(showRequiredMark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showValidationSummary)) __obj.updateDynamic("showValidationSummary")(showValidationSummary.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (validationGroup != null) __obj.updateDynamic("validationGroup")(validationGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFormOptions]
   }
+  @scala.inline
+  implicit class dxFormOptionsOps[Self <: dxFormOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignItemLabels(value: Boolean): Self = this.set("alignItemLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignItemLabels: Self = this.set("alignItemLabels", js.undefined)
+    @scala.inline
+    def setAlignItemLabelsInAllGroups(value: Boolean): Self = this.set("alignItemLabelsInAllGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignItemLabelsInAllGroups: Self = this.set("alignItemLabelsInAllGroups", js.undefined)
+    @scala.inline
+    def setColCount(value: Double | auto): Self = this.set("colCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColCount: Self = this.set("colCount", js.undefined)
+    @scala.inline
+    def setColCountByScreen(value: js.Any): Self = this.set("colCountByScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColCountByScreen: Self = this.set("colCountByScreen", js.undefined)
+    @scala.inline
+    def setCustomizeItem(
+      value: /* item */ dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem => _
+    ): Self = this.set("customizeItem", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomizeItem: Self = this.set("customizeItem", js.undefined)
+    @scala.inline
+    def setFormData(value: js.Any): Self = this.set("formData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormData: Self = this.set("formData", js.undefined)
+    @scala.inline
+    def setItemsVarargs(
+      value: (dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem)*
+    ): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(
+      value: js.Array[
+          dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
+        ]
+    ): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setLabelLocation(value: left | right | top): Self = this.set("labelLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelLocation: Self = this.set("labelLocation", js.undefined)
+    @scala.inline
+    def setMinColWidth(value: Double): Self = this.set("minColWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinColWidth: Self = this.set("minColWidth", js.undefined)
+    @scala.inline
+    def setOnEditorEnterKey(value: /* e */ ComponentDataField => _): Self = this.set("onEditorEnterKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEditorEnterKey: Self = this.set("onEditorEnterKey", js.undefined)
+    @scala.inline
+    def setOnFieldDataChanged(value: /* e */ DataFieldElement => _): Self = this.set("onFieldDataChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFieldDataChanged: Self = this.set("onFieldDataChanged", js.undefined)
+    @scala.inline
+    def setOptionalMark(value: String): Self = this.set("optionalMark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionalMark: Self = this.set("optionalMark", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRequiredMark(value: String): Self = this.set("requiredMark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiredMark: Self = this.set("requiredMark", js.undefined)
+    @scala.inline
+    def setRequiredMessage(value: String): Self = this.set("requiredMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiredMessage: Self = this.set("requiredMessage", js.undefined)
+    @scala.inline
+    def setScreenByWidth(value: js.Function): Self = this.set("screenByWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenByWidth: Self = this.set("screenByWidth", js.undefined)
+    @scala.inline
+    def setScrollingEnabled(value: Boolean): Self = this.set("scrollingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollingEnabled: Self = this.set("scrollingEnabled", js.undefined)
+    @scala.inline
+    def setShowColonAfterLabel(value: Boolean): Self = this.set("showColonAfterLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowColonAfterLabel: Self = this.set("showColonAfterLabel", js.undefined)
+    @scala.inline
+    def setShowOptionalMark(value: Boolean): Self = this.set("showOptionalMark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOptionalMark: Self = this.set("showOptionalMark", js.undefined)
+    @scala.inline
+    def setShowRequiredMark(value: Boolean): Self = this.set("showRequiredMark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowRequiredMark: Self = this.set("showRequiredMark", js.undefined)
+    @scala.inline
+    def setShowValidationSummary(value: Boolean): Self = this.set("showValidationSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowValidationSummary: Self = this.set("showValidationSummary", js.undefined)
+    @scala.inline
+    def setValidationGroup(value: String): Self = this.set("validationGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationGroup: Self = this.set("validationGroup", js.undefined)
+  }
+  
 }
 

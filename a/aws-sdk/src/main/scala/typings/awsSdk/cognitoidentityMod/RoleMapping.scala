@@ -22,15 +22,32 @@ trait RoleMapping extends js.Object {
 
 object RoleMapping {
   @scala.inline
-  def apply(
-    Type: RoleMappingType,
-    AmbiguousRoleResolution: AmbiguousRoleResolutionType = null,
-    RulesConfiguration: RulesConfigurationType = null
-  ): RoleMapping = {
+  def apply(Type: RoleMappingType): RoleMapping = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (AmbiguousRoleResolution != null) __obj.updateDynamic("AmbiguousRoleResolution")(AmbiguousRoleResolution.asInstanceOf[js.Any])
-    if (RulesConfiguration != null) __obj.updateDynamic("RulesConfiguration")(RulesConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleMapping]
   }
+  @scala.inline
+  implicit class RoleMappingOps[Self <: RoleMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: RoleMappingType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmbiguousRoleResolution(value: AmbiguousRoleResolutionType): Self = this.set("AmbiguousRoleResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmbiguousRoleResolution: Self = this.set("AmbiguousRoleResolution", js.undefined)
+    @scala.inline
+    def setRulesConfiguration(value: RulesConfigurationType): Self = this.set("RulesConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRulesConfiguration: Self = this.set("RulesConfiguration", js.undefined)
+  }
+  
 }
 

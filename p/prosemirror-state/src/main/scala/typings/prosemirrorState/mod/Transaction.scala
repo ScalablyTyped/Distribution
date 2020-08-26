@@ -67,6 +67,7 @@ class Transaction[S /* <: Schema[_, _] */] () extends Transform[S] {
     * with a text node containing the given string.
     */
   def insertText(text: String): Transaction[_] = js.native
+  def insertText(text: String, from: js.UndefOr[scala.Nothing], to: Double): Transaction[_] = js.native
   def insertText(text: String, from: Double): Transaction[_] = js.native
   def insertText(text: String, from: Double, to: Double): Transaction[_] = js.native
   /**

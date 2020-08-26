@@ -37,6 +37,7 @@ trait Orchestrator extends EventEmitter {
     *  - Return a stream or a promise
     */
   def add(name: String): Orchestrator = js.native
+  def add(name: String, deps: js.UndefOr[scala.Nothing], fn: TaskFunc): Orchestrator = js.native
   def add(name: String, deps: js.Array[String]): Orchestrator = js.native
   def add(name: String, deps: js.Array[String], fn: TaskFunc): Orchestrator = js.native
   def add(name: String, fn: TaskFunc): Orchestrator = js.native
@@ -113,6 +114,7 @@ trait Orchestrator extends EventEmitter {
   def start(tasks: Strings): Orchestrator = js.native
   def start(tasks: Strings, cb: js.Function1[/* error */ js.UndefOr[js.Any], _]): Orchestrator = js.native
   def stop(): Unit = js.native
+  def stop(err: js.UndefOr[scala.Nothing], successfulFinish: Boolean): Unit = js.native
   def stop(err: js.Any): Unit = js.native
   def stop(err: js.Any, successfulFinish: Boolean): Unit = js.native
   def task(name: String): Task = js.native

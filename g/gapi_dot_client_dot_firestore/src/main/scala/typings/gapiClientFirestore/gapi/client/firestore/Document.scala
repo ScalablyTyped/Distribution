@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Document extends js.Object {
   /**
     * Output only. The time at which the document was created.
@@ -13,7 +14,7 @@ trait Document extends js.Object {
     * recreated. It can also be compared to values from other documents and
     * the `read_time` of a query.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String] = js.native
   /**
     * The document's fields.
     *
@@ -40,12 +41,12 @@ trait Document extends js.Object {
     * escaped using a `\`. For example, `` `x&y` `` represents `x&y` and
     * `` `bak\`tik` `` represents `` bak`tik ``.
     */
-  var fields: js.UndefOr[Record[String, Value]] = js.undefined
+  var fields: js.UndefOr[Record[String, Value]] = js.native
   /**
     * The resource name of the document, for example
     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Output only. The time at which the document was last changed.
     *
@@ -53,23 +54,43 @@ trait Document extends js.Object {
     * monotonically with each change to the document. It can also be
     * compared to values from other documents and the `read_time` of a query.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String] = js.native
 }
 
 object Document {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    fields: Record[String, Value] = null,
-    name: String = null,
-    updateTime: String = null
-  ): Document = {
+  def apply(): Document = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
+  @scala.inline
+  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setFields(value: Record[String, Value]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

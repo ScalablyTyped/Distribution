@@ -39,6 +39,11 @@ object localByNameReferencePropertyMod extends js.Object {
     @JSName("parent")
     var parent_LocalByNameReferenceProperty: AbstractElement = js.native
     def deepCopyInto(clone: Structure): Unit = js.native
+    def deepCopyInto(
+      clone: Structure,
+      idMap: js.UndefOr[scala.Nothing],
+      unresolvedIdentifierFixers: js.Array[js.Function1[/* idMap */ IMap[Structure], Unit]]
+    ): Unit = js.native
     def deepCopyInto(clone: Structure, idMap: IMap[Structure]): Unit = js.native
     def localName(): String | Null = js.native
     def set(): Unit = js.native

@@ -26,18 +26,38 @@ trait DescribeCollectionResponse extends js.Object {
 
 object DescribeCollectionResponse {
   @scala.inline
-  def apply(
-    CollectionARN: String = null,
-    CreationTimestamp: DateTime = null,
-    FaceCount: js.UndefOr[ULong] = js.undefined,
-    FaceModelVersion: String = null
-  ): DescribeCollectionResponse = {
+  def apply(): DescribeCollectionResponse = {
     val __obj = js.Dynamic.literal()
-    if (CollectionARN != null) __obj.updateDynamic("CollectionARN")(CollectionARN.asInstanceOf[js.Any])
-    if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(FaceCount)) __obj.updateDynamic("FaceCount")(FaceCount.get.asInstanceOf[js.Any])
-    if (FaceModelVersion != null) __obj.updateDynamic("FaceModelVersion")(FaceModelVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCollectionResponse]
   }
+  @scala.inline
+  implicit class DescribeCollectionResponseOps[Self <: DescribeCollectionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollectionARN(value: String): Self = this.set("CollectionARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionARN: Self = this.set("CollectionARN", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: DateTime): Self = this.set("CreationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("CreationTimestamp", js.undefined)
+    @scala.inline
+    def setFaceCount(value: ULong): Self = this.set("FaceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceCount: Self = this.set("FaceCount", js.undefined)
+    @scala.inline
+    def setFaceModelVersion(value: String): Self = this.set("FaceModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceModelVersion: Self = this.set("FaceModelVersion", js.undefined)
+  }
+  
 }
 

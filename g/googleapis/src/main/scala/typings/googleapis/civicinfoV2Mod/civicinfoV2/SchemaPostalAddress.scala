@@ -30,50 +30,104 @@ trait SchemaPostalAddress extends js.Object {
 
 object SchemaPostalAddress {
   @scala.inline
-  def apply(
-    addressLines: js.Array[String] = null,
-    administrativeAreaName: String = null,
-    countryName: String = null,
-    countryNameCode: String = null,
-    dependentLocalityName: String = null,
-    dependentThoroughfareName: String = null,
-    firmName: String = null,
-    isDisputed: js.UndefOr[Boolean] = js.undefined,
-    languageCode: String = null,
-    localityName: String = null,
-    postBoxNumber: String = null,
-    postalCodeNumber: String = null,
-    postalCodeNumberExtension: String = null,
-    premiseName: String = null,
-    recipientName: String = null,
-    sortingCode: String = null,
-    subAdministrativeAreaName: String = null,
-    subPremiseName: String = null,
-    thoroughfareName: String = null,
-    thoroughfareNumber: String = null
-  ): SchemaPostalAddress = {
+  def apply(): SchemaPostalAddress = {
     val __obj = js.Dynamic.literal()
-    if (addressLines != null) __obj.updateDynamic("addressLines")(addressLines.asInstanceOf[js.Any])
-    if (administrativeAreaName != null) __obj.updateDynamic("administrativeAreaName")(administrativeAreaName.asInstanceOf[js.Any])
-    if (countryName != null) __obj.updateDynamic("countryName")(countryName.asInstanceOf[js.Any])
-    if (countryNameCode != null) __obj.updateDynamic("countryNameCode")(countryNameCode.asInstanceOf[js.Any])
-    if (dependentLocalityName != null) __obj.updateDynamic("dependentLocalityName")(dependentLocalityName.asInstanceOf[js.Any])
-    if (dependentThoroughfareName != null) __obj.updateDynamic("dependentThoroughfareName")(dependentThoroughfareName.asInstanceOf[js.Any])
-    if (firmName != null) __obj.updateDynamic("firmName")(firmName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisputed)) __obj.updateDynamic("isDisputed")(isDisputed.get.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (localityName != null) __obj.updateDynamic("localityName")(localityName.asInstanceOf[js.Any])
-    if (postBoxNumber != null) __obj.updateDynamic("postBoxNumber")(postBoxNumber.asInstanceOf[js.Any])
-    if (postalCodeNumber != null) __obj.updateDynamic("postalCodeNumber")(postalCodeNumber.asInstanceOf[js.Any])
-    if (postalCodeNumberExtension != null) __obj.updateDynamic("postalCodeNumberExtension")(postalCodeNumberExtension.asInstanceOf[js.Any])
-    if (premiseName != null) __obj.updateDynamic("premiseName")(premiseName.asInstanceOf[js.Any])
-    if (recipientName != null) __obj.updateDynamic("recipientName")(recipientName.asInstanceOf[js.Any])
-    if (sortingCode != null) __obj.updateDynamic("sortingCode")(sortingCode.asInstanceOf[js.Any])
-    if (subAdministrativeAreaName != null) __obj.updateDynamic("subAdministrativeAreaName")(subAdministrativeAreaName.asInstanceOf[js.Any])
-    if (subPremiseName != null) __obj.updateDynamic("subPremiseName")(subPremiseName.asInstanceOf[js.Any])
-    if (thoroughfareName != null) __obj.updateDynamic("thoroughfareName")(thoroughfareName.asInstanceOf[js.Any])
-    if (thoroughfareNumber != null) __obj.updateDynamic("thoroughfareNumber")(thoroughfareNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPostalAddress]
   }
+  @scala.inline
+  implicit class SchemaPostalAddressOps[Self <: SchemaPostalAddress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressLinesVarargs(value: String*): Self = this.set("addressLines", js.Array(value :_*))
+    @scala.inline
+    def setAddressLines(value: js.Array[String]): Self = this.set("addressLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressLines: Self = this.set("addressLines", js.undefined)
+    @scala.inline
+    def setAdministrativeAreaName(value: String): Self = this.set("administrativeAreaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdministrativeAreaName: Self = this.set("administrativeAreaName", js.undefined)
+    @scala.inline
+    def setCountryName(value: String): Self = this.set("countryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryName: Self = this.set("countryName", js.undefined)
+    @scala.inline
+    def setCountryNameCode(value: String): Self = this.set("countryNameCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryNameCode: Self = this.set("countryNameCode", js.undefined)
+    @scala.inline
+    def setDependentLocalityName(value: String): Self = this.set("dependentLocalityName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependentLocalityName: Self = this.set("dependentLocalityName", js.undefined)
+    @scala.inline
+    def setDependentThoroughfareName(value: String): Self = this.set("dependentThoroughfareName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependentThoroughfareName: Self = this.set("dependentThoroughfareName", js.undefined)
+    @scala.inline
+    def setFirmName(value: String): Self = this.set("firmName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirmName: Self = this.set("firmName", js.undefined)
+    @scala.inline
+    def setIsDisputed(value: Boolean): Self = this.set("isDisputed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDisputed: Self = this.set("isDisputed", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setLocalityName(value: String): Self = this.set("localityName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalityName: Self = this.set("localityName", js.undefined)
+    @scala.inline
+    def setPostBoxNumber(value: String): Self = this.set("postBoxNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostBoxNumber: Self = this.set("postBoxNumber", js.undefined)
+    @scala.inline
+    def setPostalCodeNumber(value: String): Self = this.set("postalCodeNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostalCodeNumber: Self = this.set("postalCodeNumber", js.undefined)
+    @scala.inline
+    def setPostalCodeNumberExtension(value: String): Self = this.set("postalCodeNumberExtension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostalCodeNumberExtension: Self = this.set("postalCodeNumberExtension", js.undefined)
+    @scala.inline
+    def setPremiseName(value: String): Self = this.set("premiseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePremiseName: Self = this.set("premiseName", js.undefined)
+    @scala.inline
+    def setRecipientName(value: String): Self = this.set("recipientName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipientName: Self = this.set("recipientName", js.undefined)
+    @scala.inline
+    def setSortingCode(value: String): Self = this.set("sortingCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortingCode: Self = this.set("sortingCode", js.undefined)
+    @scala.inline
+    def setSubAdministrativeAreaName(value: String): Self = this.set("subAdministrativeAreaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubAdministrativeAreaName: Self = this.set("subAdministrativeAreaName", js.undefined)
+    @scala.inline
+    def setSubPremiseName(value: String): Self = this.set("subPremiseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubPremiseName: Self = this.set("subPremiseName", js.undefined)
+    @scala.inline
+    def setThoroughfareName(value: String): Self = this.set("thoroughfareName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThoroughfareName: Self = this.set("thoroughfareName", js.undefined)
+    @scala.inline
+    def setThoroughfareNumber(value: String): Self = this.set("thoroughfareNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThoroughfareNumber: Self = this.set("thoroughfareNumber", js.undefined)
+  }
+  
 }
 

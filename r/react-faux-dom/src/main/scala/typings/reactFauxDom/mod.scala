@@ -9,10 +9,8 @@ import typings.reactFauxDom.reactFauxDomStrings.connectFauxDOM
 import typings.reactFauxDom.reactFauxDomStrings.drawFauxDOM
 import typings.reactFauxDom.reactFauxDomStrings.isAnimatingFauxDOM
 import typings.reactFauxDom.reactFauxDomStrings.stopAnimatingFauxDOM
-import typings.std.CSSStyleDeclaration
 import typings.std.Exclude
 import typings.std.HTMLElement
-import typings.std.HTMLSlotElement
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,28 +23,6 @@ object mod extends js.Object {
   class Element protected () extends HTMLElement {
     def this(nodeName: String) = this()
     def this(nodeName: String, parentNode: Element) = this()
-    /* CompleteClass */
-    override val assignedSlot: HTMLSlotElement | Null = js.native
-    /* CompleteClass */
-    override var contentEditable: String = js.native
-    /* CompleteClass */
-    override var innerHTML: String = js.native
-    /* CompleteClass */
-    override var inputMode: String = js.native
-    /* CompleteClass */
-    override val isContentEditable: Boolean = js.native
-    /**
-      * Returns the first following sibling that is an element, and null otherwise.
-      */
-    /* CompleteClass */
-    override val nextElementSibling: typings.std.Element | Null = js.native
-    /**
-      * Returns the first preceding sibling that is an element, and null otherwise.
-      */
-    /* CompleteClass */
-    override val previousElementSibling: typings.std.Element | Null = js.native
-    /* CompleteClass */
-    override val style: CSSStyleDeclaration = js.native
     def toReact(): ReactElement = js.native
   }
   

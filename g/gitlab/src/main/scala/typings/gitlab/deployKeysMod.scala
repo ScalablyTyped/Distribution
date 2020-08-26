@@ -1,6 +1,6 @@
 package typings.gitlab
 
-import typings.gitlab.anon.projectIdstringnumberPagi
+import typings.gitlab.anon.projectIdstringnumberunde
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
@@ -18,7 +18,7 @@ object deployKeysMod extends js.Object {
     def add(projectId: String, options: Sudo): js.Promise[js.Object] = js.native
     def add(projectId: Double): js.Promise[js.Object] = js.native
     def add(projectId: Double, options: Sudo): js.Promise[js.Object] = js.native
-    def all(hasProjectIdOptions: projectIdstringnumberPagi): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdOptions: projectIdstringnumberunde): js.Promise[GetResponse] = js.native
     def edit(projectId: String, keyId: String): js.Promise[js.Object] = js.native
     def edit(projectId: String, keyId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     def edit(projectId: Double, keyId: String): js.Promise[js.Object] = js.native

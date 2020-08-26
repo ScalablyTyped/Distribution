@@ -54,7 +54,7 @@ object youtubeAnalyticsMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Youtubeanalytics
               ]
             ]
@@ -64,7 +64,7 @@ object youtubeAnalyticsMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics
               ]
             ]
@@ -74,7 +74,7 @@ object youtubeAnalyticsMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics
               ]
             ]

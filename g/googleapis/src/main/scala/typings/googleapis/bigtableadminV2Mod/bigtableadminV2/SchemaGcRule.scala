@@ -30,18 +30,38 @@ trait SchemaGcRule extends js.Object {
 
 object SchemaGcRule {
   @scala.inline
-  def apply(
-    intersection: SchemaIntersection = null,
-    maxAge: String = null,
-    maxNumVersions: js.UndefOr[Double] = js.undefined,
-    union: SchemaUnion = null
-  ): SchemaGcRule = {
+  def apply(): SchemaGcRule = {
     val __obj = js.Dynamic.literal()
-    if (intersection != null) __obj.updateDynamic("intersection")(intersection.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxNumVersions)) __obj.updateDynamic("maxNumVersions")(maxNumVersions.get.asInstanceOf[js.Any])
-    if (union != null) __obj.updateDynamic("union")(union.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGcRule]
   }
+  @scala.inline
+  implicit class SchemaGcRuleOps[Self <: SchemaGcRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIntersection(value: SchemaIntersection): Self = this.set("intersection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntersection: Self = this.set("intersection", js.undefined)
+    @scala.inline
+    def setMaxAge(value: String): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    @scala.inline
+    def setMaxNumVersions(value: Double): Self = this.set("maxNumVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxNumVersions: Self = this.set("maxNumVersions", js.undefined)
+    @scala.inline
+    def setUnion(value: SchemaUnion): Self = this.set("union", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnion: Self = this.set("union", js.undefined)
+  }
+  
 }
 

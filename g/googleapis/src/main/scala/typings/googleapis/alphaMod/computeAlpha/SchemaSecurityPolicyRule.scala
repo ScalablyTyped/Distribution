@@ -76,32 +76,68 @@ trait SchemaSecurityPolicyRule extends js.Object {
 
 object SchemaSecurityPolicyRule {
   @scala.inline
-  def apply(
-    action: String = null,
-    description: String = null,
-    direction: String = null,
-    enableLogging: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    `match`: SchemaSecurityPolicyRuleMatcher = null,
-    preview: js.UndefOr[Boolean] = js.undefined,
-    priority: js.UndefOr[Double] = js.undefined,
-    rateLimitOptions: SchemaSecurityPolicyRuleRateLimitOptions = null,
-    ruleTupleCount: js.UndefOr[Double] = js.undefined,
-    targetResources: js.Array[String] = null
-  ): SchemaSecurityPolicyRule = {
+  def apply(): SchemaSecurityPolicyRule = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
-    if (rateLimitOptions != null) __obj.updateDynamic("rateLimitOptions")(rateLimitOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(ruleTupleCount)) __obj.updateDynamic("ruleTupleCount")(ruleTupleCount.get.asInstanceOf[js.Any])
-    if (targetResources != null) __obj.updateDynamic("targetResources")(targetResources.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecurityPolicyRule]
   }
+  @scala.inline
+  implicit class SchemaSecurityPolicyRuleOps[Self <: SchemaSecurityPolicyRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setEnableLogging(value: Boolean): Self = this.set("enableLogging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLogging: Self = this.set("enableLogging", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMatch(value: SchemaSecurityPolicyRuleMatcher): Self = this.set("match", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatch: Self = this.set("match", js.undefined)
+    @scala.inline
+    def setPreview(value: Boolean): Self = this.set("preview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreview: Self = this.set("preview", js.undefined)
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setRateLimitOptions(value: SchemaSecurityPolicyRuleRateLimitOptions): Self = this.set("rateLimitOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRateLimitOptions: Self = this.set("rateLimitOptions", js.undefined)
+    @scala.inline
+    def setRuleTupleCount(value: Double): Self = this.set("ruleTupleCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleTupleCount: Self = this.set("ruleTupleCount", js.undefined)
+    @scala.inline
+    def setTargetResourcesVarargs(value: String*): Self = this.set("targetResources", js.Array(value :_*))
+    @scala.inline
+    def setTargetResources(value: js.Array[String]): Self = this.set("targetResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetResources: Self = this.set("targetResources", js.undefined)
+  }
+  
 }
 

@@ -3,9 +3,7 @@ package typings.wordpressBlocks.mod
 import org.scalablytyped.runtime.TopLevel
 import typings.wordpressBlocks.wordpressBlocksStrings.array
 import typings.wordpressBlocks.wordpressBlocksStrings.html
-import typings.wordpressBlocks.wordpressBlocksStrings.li
 import typings.wordpressBlocks.wordpressBlocksStrings.meta
-import typings.wordpressBlocks.wordpressBlocksStrings.p
 import typings.wordpressBlocks.wordpressBlocksStrings.query_
 import typings.wordpressBlocks.wordpressBlocksStrings.string
 import typings.wordpressBlocks.wordpressBlocksStrings.text
@@ -17,33 +15,21 @@ trait _BlockAttribute[T] extends js.Object
 
 object _BlockAttribute {
   @scala.inline
-  def Meta[T](meta: String, source: meta, `type`: string, default: String = null): _BlockAttribute[T] = {
+  def Meta[T](meta: String, source: meta, `type`: string): _BlockAttribute[T] = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BlockAttribute[T]]
   }
   @scala.inline
-  def HTML[T](
-    source: html,
-    `type`: string,
-    default: String = null,
-    multiline: li | p = null,
-    selector: String = null
-  ): _BlockAttribute[T] = {
+  def HTML[T](source: html, `type`: string): _BlockAttribute[T] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (multiline != null) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BlockAttribute[T]]
   }
   @scala.inline
-  def Text[T](source: text, `type`: string, default: String = null, selector: String = null): _BlockAttribute[T] = {
+  def Text[T](source: text, `type`: string): _BlockAttribute[T] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BlockAttribute[T]]
   }
   @scala.inline
@@ -53,23 +39,16 @@ object _BlockAttribute {
     */ typings.wordpressBlocks.wordpressBlocksStrings.Query with TopLevel[js.Any],
     selector: String,
     source: query_,
-    `type`: array,
-    default: js.Array[_] = null
+    `type`: array
   ): _BlockAttribute[T] = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BlockAttribute[T]]
   }
   @scala.inline
-  def Children[T](
-    source: typings.wordpressBlocks.wordpressBlocksStrings.children,
-    `type`: array,
-    selector: String = null
-  ): _BlockAttribute[T] = {
+  def Children[T](source: typings.wordpressBlocks.wordpressBlocksStrings.children, `type`: array): _BlockAttribute[T] = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BlockAttribute[T]]
   }
 }

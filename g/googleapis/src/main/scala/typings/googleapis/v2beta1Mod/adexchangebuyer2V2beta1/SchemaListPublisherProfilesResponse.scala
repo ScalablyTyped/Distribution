@@ -21,11 +21,32 @@ trait SchemaListPublisherProfilesResponse extends js.Object {
 
 object SchemaListPublisherProfilesResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, publisherProfiles: js.Array[SchemaPublisherProfile] = null): SchemaListPublisherProfilesResponse = {
+  def apply(): SchemaListPublisherProfilesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (publisherProfiles != null) __obj.updateDynamic("publisherProfiles")(publisherProfiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListPublisherProfilesResponse]
   }
+  @scala.inline
+  implicit class SchemaListPublisherProfilesResponseOps[Self <: SchemaListPublisherProfilesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setPublisherProfilesVarargs(value: SchemaPublisherProfile*): Self = this.set("publisherProfiles", js.Array(value :_*))
+    @scala.inline
+    def setPublisherProfiles(value: js.Array[SchemaPublisherProfile]): Self = this.set("publisherProfiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisherProfiles: Self = this.set("publisherProfiles", js.undefined)
+  }
+  
 }
 

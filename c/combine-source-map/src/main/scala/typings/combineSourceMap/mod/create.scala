@@ -14,6 +14,7 @@ object create extends js.Object {
     * @return Combiner instance to which source maps can be added and later combined
     */
   def apply(): Combiner = js.native
+  def apply(file: js.UndefOr[scala.Nothing], sourceRoot: String): Combiner = js.native
   def apply(file: String): Combiner = js.native
   def apply(file: String, sourceRoot: String): Combiner = js.native
 }

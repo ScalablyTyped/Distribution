@@ -38,22 +38,46 @@ trait SchemaDomain extends js.Object {
 
 object SchemaDomain {
   @scala.inline
-  def apply(
-    domainName: String = null,
-    domainRedirect: SchemaDomainRedirect = null,
-    provisioning: SchemaDomainProvisioning = null,
-    site: String = null,
-    status: String = null,
-    updateTime: String = null
-  ): SchemaDomain = {
+  def apply(): SchemaDomain = {
     val __obj = js.Dynamic.literal()
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (domainRedirect != null) __obj.updateDynamic("domainRedirect")(domainRedirect.asInstanceOf[js.Any])
-    if (provisioning != null) __obj.updateDynamic("provisioning")(provisioning.asInstanceOf[js.Any])
-    if (site != null) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDomain]
   }
+  @scala.inline
+  implicit class SchemaDomainOps[Self <: SchemaDomain] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: String): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setDomainRedirect(value: SchemaDomainRedirect): Self = this.set("domainRedirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainRedirect: Self = this.set("domainRedirect", js.undefined)
+    @scala.inline
+    def setProvisioning(value: SchemaDomainProvisioning): Self = this.set("provisioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisioning: Self = this.set("provisioning", js.undefined)
+    @scala.inline
+    def setSite(value: String): Self = this.set("site", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSite: Self = this.set("site", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

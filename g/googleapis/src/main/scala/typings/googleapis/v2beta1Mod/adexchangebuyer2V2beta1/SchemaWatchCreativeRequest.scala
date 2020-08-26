@@ -20,10 +20,26 @@ trait SchemaWatchCreativeRequest extends js.Object {
 
 object SchemaWatchCreativeRequest {
   @scala.inline
-  def apply(topic: String = null): SchemaWatchCreativeRequest = {
+  def apply(): SchemaWatchCreativeRequest = {
     val __obj = js.Dynamic.literal()
-    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWatchCreativeRequest]
   }
+  @scala.inline
+  implicit class SchemaWatchCreativeRequestOps[Self <: SchemaWatchCreativeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopic: Self = this.set("topic", js.undefined)
+  }
+  
 }
 

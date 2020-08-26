@@ -1,8 +1,8 @@
 package typings.pulumiAws.environmentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.applicationVersionMod.ApplicationVersion
-import typings.pulumiAws.elasticbeanstalkApplicationMod.Application
+import typings.pulumiAws.elasticbeanstalkMod.Application
+import typings.pulumiAws.elasticbeanstalkMod.ApplicationVersion
 import typings.pulumiAws.inputMod.elasticbeanstalk.EnvironmentAllSetting
 import typings.pulumiAws.inputMod.elasticbeanstalk.EnvironmentSetting
 import typings.pulumiPulumi.outputMod.Input
@@ -63,7 +63,7 @@ trait EnvironmentState extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
-    * The [ARN][2] of the Elastic Beanstalk [Platform][3]
+    * The [ARN](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the Elastic Beanstalk [Platform](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-platformarn)
     * to use in deployment
     */
   val platformArn: js.UndefOr[Input[String]] = js.native
@@ -86,13 +86,13 @@ trait EnvironmentState extends js.Object {
   val settings: js.UndefOr[Input[js.Array[Input[EnvironmentSetting]]]] = js.native
   /**
     * A solution stack to base your environment
-    * off of. Example stacks can be found in the [Amazon API documentation][1]
+    * off of. Example stacks can be found in the [Amazon API documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html)
     */
   val solutionStackName: js.UndefOr[Input[String]] = js.native
   /**
     * A set of tags to apply to the Environment.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The name of the Elastic Beanstalk Configuration
     * template to use in deployment
@@ -123,56 +123,130 @@ trait EnvironmentState extends js.Object {
 
 object EnvironmentState {
   @scala.inline
-  def apply(
-    allSettings: Input[js.Array[Input[EnvironmentAllSetting]]] = null,
-    application: Input[String | Application] = null,
-    arn: Input[String] = null,
-    autoscalingGroups: Input[js.Array[Input[String]]] = null,
-    cname: Input[String] = null,
-    cnamePrefix: Input[String] = null,
-    description: Input[String] = null,
-    endpointUrl: Input[String] = null,
-    instances: Input[js.Array[Input[String]]] = null,
-    launchConfigurations: Input[js.Array[Input[String]]] = null,
-    loadBalancers: Input[js.Array[Input[String]]] = null,
-    name: Input[String] = null,
-    platformArn: Input[String] = null,
-    pollInterval: Input[String] = null,
-    queues: Input[js.Array[Input[String]]] = null,
-    settings: Input[js.Array[Input[EnvironmentSetting]]] = null,
-    solutionStackName: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    templateName: Input[String] = null,
-    tier: Input[String] = null,
-    triggers: Input[js.Array[Input[String]]] = null,
-    version: Input[ApplicationVersion] = null,
-    waitForReadyTimeout: Input[String] = null
-  ): EnvironmentState = {
+  def apply(): EnvironmentState = {
     val __obj = js.Dynamic.literal()
-    if (allSettings != null) __obj.updateDynamic("allSettings")(allSettings.asInstanceOf[js.Any])
-    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (autoscalingGroups != null) __obj.updateDynamic("autoscalingGroups")(autoscalingGroups.asInstanceOf[js.Any])
-    if (cname != null) __obj.updateDynamic("cname")(cname.asInstanceOf[js.Any])
-    if (cnamePrefix != null) __obj.updateDynamic("cnamePrefix")(cnamePrefix.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl.asInstanceOf[js.Any])
-    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
-    if (launchConfigurations != null) __obj.updateDynamic("launchConfigurations")(launchConfigurations.asInstanceOf[js.Any])
-    if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (platformArn != null) __obj.updateDynamic("platformArn")(platformArn.asInstanceOf[js.Any])
-    if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
-    if (queues != null) __obj.updateDynamic("queues")(queues.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (solutionStackName != null) __obj.updateDynamic("solutionStackName")(solutionStackName.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (templateName != null) __obj.updateDynamic("templateName")(templateName.asInstanceOf[js.Any])
-    if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
-    if (triggers != null) __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (waitForReadyTimeout != null) __obj.updateDynamic("waitForReadyTimeout")(waitForReadyTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentState]
   }
+  @scala.inline
+  implicit class EnvironmentStateOps[Self <: EnvironmentState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllSettingsVarargs(value: Input[EnvironmentAllSetting]*): Self = this.set("allSettings", js.Array(value :_*))
+    @scala.inline
+    def setAllSettings(value: Input[js.Array[Input[EnvironmentAllSetting]]]): Self = this.set("allSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllSettings: Self = this.set("allSettings", js.undefined)
+    @scala.inline
+    def setApplication(value: Input[String | Application]): Self = this.set("application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplication: Self = this.set("application", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAutoscalingGroupsVarargs(value: Input[String]*): Self = this.set("autoscalingGroups", js.Array(value :_*))
+    @scala.inline
+    def setAutoscalingGroups(value: Input[js.Array[Input[String]]]): Self = this.set("autoscalingGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscalingGroups: Self = this.set("autoscalingGroups", js.undefined)
+    @scala.inline
+    def setCname(value: Input[String]): Self = this.set("cname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCname: Self = this.set("cname", js.undefined)
+    @scala.inline
+    def setCnamePrefix(value: Input[String]): Self = this.set("cnamePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCnamePrefix: Self = this.set("cnamePrefix", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEndpointUrl(value: Input[String]): Self = this.set("endpointUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointUrl: Self = this.set("endpointUrl", js.undefined)
+    @scala.inline
+    def setInstancesVarargs(value: Input[String]*): Self = this.set("instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: Input[js.Array[Input[String]]]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("instances", js.undefined)
+    @scala.inline
+    def setLaunchConfigurationsVarargs(value: Input[String]*): Self = this.set("launchConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setLaunchConfigurations(value: Input[js.Array[Input[String]]]): Self = this.set("launchConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchConfigurations: Self = this.set("launchConfigurations", js.undefined)
+    @scala.inline
+    def setLoadBalancersVarargs(value: Input[String]*): Self = this.set("loadBalancers", js.Array(value :_*))
+    @scala.inline
+    def setLoadBalancers(value: Input[js.Array[Input[String]]]): Self = this.set("loadBalancers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancers: Self = this.set("loadBalancers", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPlatformArn(value: Input[String]): Self = this.set("platformArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformArn: Self = this.set("platformArn", js.undefined)
+    @scala.inline
+    def setPollInterval(value: Input[String]): Self = this.set("pollInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePollInterval: Self = this.set("pollInterval", js.undefined)
+    @scala.inline
+    def setQueuesVarargs(value: Input[String]*): Self = this.set("queues", js.Array(value :_*))
+    @scala.inline
+    def setQueues(value: Input[js.Array[Input[String]]]): Self = this.set("queues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueues: Self = this.set("queues", js.undefined)
+    @scala.inline
+    def setSettingsVarargs(value: Input[EnvironmentSetting]*): Self = this.set("settings", js.Array(value :_*))
+    @scala.inline
+    def setSettings(value: Input[js.Array[Input[EnvironmentSetting]]]): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setSolutionStackName(value: Input[String]): Self = this.set("solutionStackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSolutionStackName: Self = this.set("solutionStackName", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTemplateName(value: Input[String]): Self = this.set("templateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateName: Self = this.set("templateName", js.undefined)
+    @scala.inline
+    def setTier(value: Input[String]): Self = this.set("tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTier: Self = this.set("tier", js.undefined)
+    @scala.inline
+    def setTriggersVarargs(value: Input[String]*): Self = this.set("triggers", js.Array(value :_*))
+    @scala.inline
+    def setTriggers(value: Input[js.Array[Input[String]]]): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggers: Self = this.set("triggers", js.undefined)
+    @scala.inline
+    def setVersion(value: Input[ApplicationVersion]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setWaitForReadyTimeout(value: Input[String]): Self = this.set("waitForReadyTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForReadyTimeout: Self = this.set("waitForReadyTimeout", js.undefined)
+  }
+  
 }
 

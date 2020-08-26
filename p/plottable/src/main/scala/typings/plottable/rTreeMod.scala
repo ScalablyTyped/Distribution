@@ -18,6 +18,7 @@ object rTreeMod extends js.Object {
   @js.native
   class RTree[T] () extends js.Object {
     def this(maxNodeChildren: Double) = this()
+    def this(maxNodeChildren: js.UndefOr[scala.Nothing], splitStrategy: IRTreeSplitStrategy) = this()
     def this(maxNodeChildren: Double, splitStrategy: IRTreeSplitStrategy) = this()
     var maxNodeChildren: js.Any = js.native
     var root: js.Any = js.native

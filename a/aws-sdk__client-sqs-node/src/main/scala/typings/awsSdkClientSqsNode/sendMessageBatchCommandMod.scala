@@ -26,16 +26,9 @@ object sendMessageBatchCommandMod extends js.Object {
           Readable
         ] {
     def this(input: SendMessageBatchInput) = this()
-    /* CompleteClass */
-    override val input: SendMessageBatchInput = js.native
     val middlewareStack: MiddlewareStack[SendMessageBatchInput, SendMessageBatchOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: SQSResolvedConfiguration
-    ): Handler[SendMessageBatchInput, SendMessageBatchOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: SQSResolvedConfiguration
     ): Handler[SendMessageBatchInput, SendMessageBatchOutput] = js.native
   }

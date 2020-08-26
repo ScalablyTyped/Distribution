@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  class MissingProjectIdError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+  class MissingProjectIdError () extends Error
   
   def replaceProjectIdToken(value: js.Any, projectId: String): js.Any = js.native
 }

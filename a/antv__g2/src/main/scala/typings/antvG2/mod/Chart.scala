@@ -48,27 +48,29 @@ class Chart protected () extends BashView {
   def getAllGeoms(): js.Array[Geom] = js.native
   def getSnapRecords(ponit: X): js.Array[Double] = js.native
   @JSName("get")
-  def get_animate(prop: animate): Boolean = js.native
+  def get_animate(prop: animate): js.UndefOr[Boolean] = js.native
   @JSName("get")
-  def get_background(prop: background): typings.antvG2.mod.Styles.background = js.native
+  def get_background(prop: background): js.UndefOr[typings.antvG2.mod.Styles.background] = js.native
   @JSName("get")
   def get_container(prop: container): String | HTMLDivElement = js.native
   @JSName("get")
-  def get_data(prop: data): js.Object | js.Any = js.native
+  def get_data(prop: data): js.UndefOr[js.Object | js.Any] = js.native
   @JSName("get")
-  def get_forceFit(prop: forceFit): Boolean = js.native
+  def get_forceFit(prop: forceFit): js.UndefOr[Boolean] = js.native
   @JSName("get")
   def get_height(prop: height): Double = js.native
   @JSName("get")
-  def get_padding(prop: padding): Bottom | Double | String | (js.Tuple4[Double | String, Double | String, Double | String, Double | String]) | (js.Tuple2[String, String]) = js.native
+  def get_padding(prop: padding): js.UndefOr[
+    Bottom | Double | String | (js.Tuple4[Double | String, Double | String, Double | String, Double | String]) | (js.Tuple2[String, String])
+  ] = js.native
   @JSName("get")
-  def get_pixelRatio(prop: pixelRatio): Double = js.native
+  def get_pixelRatio(prop: pixelRatio): js.UndefOr[Double] = js.native
   @JSName("get")
-  def get_plotBackground(prop: plotBackground): typings.antvG2.mod.Styles.background = js.native
+  def get_plotBackground(prop: plotBackground): js.UndefOr[typings.antvG2.mod.Styles.background] = js.native
   @JSName("get")
-  def get_theme(prop: theme): js.Object | String = js.native
+  def get_theme(prop: theme): js.UndefOr[js.Object | String] = js.native
   @JSName("get")
-  def get_width(prop: width): Double = js.native
+  def get_width(prop: width): js.UndefOr[Double] = js.native
   def hideTooltip(): js.Any = js.native
   def legend(field: String, legendConfig: LegendConfig): this.type = js.native
   def legend(field: String, option: Boolean): this.type = js.native

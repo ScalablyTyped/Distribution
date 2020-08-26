@@ -18,14 +18,34 @@ trait RiskExceptionConfigurationType extends js.Object {
 
 object RiskExceptionConfigurationType {
   @scala.inline
-  def apply(
-    BlockedIPRangeList: BlockedIPRangeListType = null,
-    SkippedIPRangeList: SkippedIPRangeListType = null
-  ): RiskExceptionConfigurationType = {
+  def apply(): RiskExceptionConfigurationType = {
     val __obj = js.Dynamic.literal()
-    if (BlockedIPRangeList != null) __obj.updateDynamic("BlockedIPRangeList")(BlockedIPRangeList.asInstanceOf[js.Any])
-    if (SkippedIPRangeList != null) __obj.updateDynamic("SkippedIPRangeList")(SkippedIPRangeList.asInstanceOf[js.Any])
     __obj.asInstanceOf[RiskExceptionConfigurationType]
   }
+  @scala.inline
+  implicit class RiskExceptionConfigurationTypeOps[Self <: RiskExceptionConfigurationType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockedIPRangeListVarargs(value: StringType*): Self = this.set("BlockedIPRangeList", js.Array(value :_*))
+    @scala.inline
+    def setBlockedIPRangeList(value: BlockedIPRangeListType): Self = this.set("BlockedIPRangeList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockedIPRangeList: Self = this.set("BlockedIPRangeList", js.undefined)
+    @scala.inline
+    def setSkippedIPRangeListVarargs(value: StringType*): Self = this.set("SkippedIPRangeList", js.Array(value :_*))
+    @scala.inline
+    def setSkippedIPRangeList(value: SkippedIPRangeListType): Self = this.set("SkippedIPRangeList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkippedIPRangeList: Self = this.set("SkippedIPRangeList", js.undefined)
+  }
+  
 }
 

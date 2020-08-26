@@ -18,11 +18,30 @@ trait GetDeploymentTargetInput extends js.Object {
 
 object GetDeploymentTargetInput {
   @scala.inline
-  def apply(deploymentId: DeploymentId = null, targetId: TargetId = null): GetDeploymentTargetInput = {
+  def apply(): GetDeploymentTargetInput = {
     val __obj = js.Dynamic.literal()
-    if (deploymentId != null) __obj.updateDynamic("deploymentId")(deploymentId.asInstanceOf[js.Any])
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeploymentTargetInput]
   }
+  @scala.inline
+  implicit class GetDeploymentTargetInputOps[Self <: GetDeploymentTargetInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeploymentId(value: DeploymentId): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentId: Self = this.set("deploymentId", js.undefined)
+    @scala.inline
+    def setTargetId(value: TargetId): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetId: Self = this.set("targetId", js.undefined)
+  }
+  
 }
 

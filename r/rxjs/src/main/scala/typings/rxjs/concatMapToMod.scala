@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object concatMapToMod extends js.Object {
   def concatMapTo[T, O /* <: ObservableInput[_] */](observable: O): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def concatMapTo[T, O /* <: ObservableInput[_] */](observable: O, resultSelector: js.UndefOr[scala.Nothing]): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def concatMapTo[T, R, O /* <: ObservableInput[_] */](
     observable: O,
     resultSelector: js.Function4[

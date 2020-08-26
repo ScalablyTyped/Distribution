@@ -22,16 +22,34 @@ trait ExecutionDetails extends js.Object {
 
 object ExecutionDetails {
   @scala.inline
-  def apply(
-    externalExecutionId: ExecutionId = null,
-    percentComplete: js.UndefOr[Percentage] = js.undefined,
-    summary: ExecutionSummary = null
-  ): ExecutionDetails = {
+  def apply(): ExecutionDetails = {
     val __obj = js.Dynamic.literal()
-    if (externalExecutionId != null) __obj.updateDynamic("externalExecutionId")(externalExecutionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentComplete)) __obj.updateDynamic("percentComplete")(percentComplete.get.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionDetails]
   }
+  @scala.inline
+  implicit class ExecutionDetailsOps[Self <: ExecutionDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExternalExecutionId(value: ExecutionId): Self = this.set("externalExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalExecutionId: Self = this.set("externalExecutionId", js.undefined)
+    @scala.inline
+    def setPercentComplete(value: Percentage): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentComplete: Self = this.set("percentComplete", js.undefined)
+    @scala.inline
+    def setSummary(value: ExecutionSummary): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+  }
+  
 }
 

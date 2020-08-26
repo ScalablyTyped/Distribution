@@ -12,7 +12,7 @@ Connect querystring middleware
 | Keywords           | connect, querystring |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 45389 |
+| # downloads        | 46394 |
 | # stars            | 0 |
 
 ## Links

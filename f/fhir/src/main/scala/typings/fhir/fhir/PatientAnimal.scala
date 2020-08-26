@@ -7,44 +7,50 @@ import scala.scalajs.js.annotation._
 /**
   * This patient is known to be an animal (non-human)
   */
+@js.native
 trait PatientAnimal extends BackboneElement {
   /**
     * E.g. Poodle, Angus
     */
-  var breed: js.UndefOr[CodeableConcept] = js.undefined
+  var breed: js.UndefOr[CodeableConcept] = js.native
   /**
     * E.g. Neutered, Intact
     */
-  var genderStatus: js.UndefOr[CodeableConcept] = js.undefined
+  var genderStatus: js.UndefOr[CodeableConcept] = js.native
   /**
     * E.g. Dog, Cow
     */
-  var species: CodeableConcept
+  var species: CodeableConcept = js.native
 }
 
 object PatientAnimal {
   @scala.inline
-  def apply(
-    species: CodeableConcept,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    breed: CodeableConcept = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    genderStatus: CodeableConcept = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null
-  ): PatientAnimal = {
+  def apply(species: CodeableConcept): PatientAnimal = {
     val __obj = js.Dynamic.literal(species = species.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (breed != null) __obj.updateDynamic("breed")(breed.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (genderStatus != null) __obj.updateDynamic("genderStatus")(genderStatus.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatientAnimal]
   }
+  @scala.inline
+  implicit class PatientAnimalOps[Self <: PatientAnimal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpecies(value: CodeableConcept): Self = this.set("species", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBreed(value: CodeableConcept): Self = this.set("breed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreed: Self = this.set("breed", js.undefined)
+    @scala.inline
+    def setGenderStatus(value: CodeableConcept): Self = this.set("genderStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenderStatus: Self = this.set("genderStatus", js.undefined)
+  }
+  
 }
 

@@ -218,6 +218,7 @@ class Diva protected () extends js.Object {
     * @param yAnchor - Max be either "top", "bottom", or default "center".
     */
   def gotoPageByIndex(pageIndex: Double): Boolean = js.native
+  def gotoPageByIndex(pageIndex: Double, xAnchor: js.UndefOr[scala.Nothing], yAnchor: String): Boolean = js.native
   def gotoPageByIndex(pageIndex: Double, xAnchor: String): Boolean = js.native
   def gotoPageByIndex(pageIndex: Double, xAnchor: String, yAnchor: String): Boolean = js.native
   /**
@@ -227,6 +228,7 @@ class Diva protected () extends js.Object {
     * @param yAnchor - May be either "top", "bottom", or default "center".
     */
   def gotoPageByLabel(label: String): Boolean = js.native
+  def gotoPageByLabel(label: String, xAnchor: js.UndefOr[scala.Nothing], yAnchor: String): Boolean = js.native
   def gotoPageByLabel(label: String, xAnchor: String): Boolean = js.native
   def gotoPageByLabel(label: String, xAnchor: String, yAnchor: String): Boolean = js.native
   /**
@@ -236,6 +238,7 @@ class Diva protected () extends js.Object {
     * @param yAnchor - May be either "top", "bottom", or default "center".
     */
   def gotoPageByName(filename: String): Boolean = js.native
+  def gotoPageByName(filename: String, xAnchor: js.UndefOr[scala.Nothing], yAnchor: String): Boolean = js.native
   def gotoPageByName(filename: String, xAnchor: String): Boolean = js.native
   def gotoPageByName(filename: String, xAnchor: String, yAnchor: String): Boolean = js.native
   /**
@@ -244,6 +247,7 @@ class Diva protected () extends js.Object {
     * @param yAnchor - May be either "top", "bottom", or default "center".
     */
   def gotoPageByURI(uri: String): Boolean = js.native
+  def gotoPageByURI(uri: String, xAnchor: js.UndefOr[scala.Nothing], yAnchor: String): Boolean = js.native
   def gotoPageByURI(uri: String, xAnchor: String): Boolean = js.native
   def gotoPageByURI(uri: String, xAnchor: String, yAnchor: String): Boolean = js.native
   /**

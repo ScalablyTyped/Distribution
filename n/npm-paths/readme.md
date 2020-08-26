@@ -10,9 +10,9 @@ Returns an array of NPM directory paths based on the user's platform and environ
 | ------------------ | :-------------: |
 | Full name          | npm-paths |
 | Keywords           | directory, dirname, global, module, npm, package, path, paths, prefix, resolve |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 2501483 |
+| # downloads        | 2543471 |
 | # stars            | 0 |
 
 ## Links

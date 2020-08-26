@@ -26,5 +26,24 @@ object CalculatedColumn {
     val __obj = js.Dynamic.literal(ColumnId = ColumnId.asInstanceOf[js.Any], ColumnName = ColumnName.asInstanceOf[js.Any], Expression = Expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalculatedColumn]
   }
+  @scala.inline
+  implicit class CalculatedColumnOps[Self <: CalculatedColumn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnId(value: ColumnId): Self = this.set("ColumnId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColumnName(value: ColumnName): Self = this.set("ColumnName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpression(value: Expression): Self = this.set("Expression", value.asInstanceOf[js.Any])
+  }
+  
 }
 

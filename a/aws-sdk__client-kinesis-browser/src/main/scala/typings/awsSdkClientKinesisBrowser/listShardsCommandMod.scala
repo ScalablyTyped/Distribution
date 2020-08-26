@@ -26,16 +26,9 @@ object listShardsCommandMod extends js.Object {
           Blob
         ] {
     def this(input: ListShardsInput) = this()
-    /* CompleteClass */
-    override val input: ListShardsInput = js.native
     val middlewareStack: MiddlewareStack[ListShardsInput, ListShardsOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KinesisResolvedConfiguration
-    ): Handler[ListShardsInput, ListShardsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KinesisResolvedConfiguration
     ): Handler[ListShardsInput, ListShardsOutput] = js.native
   }

@@ -14,7 +14,26 @@ abstract class DataSource () extends js.Object {
     * Invokes a function in the DataSource's JSONGraph object.
     */
   def call(functionPath: Path): Observable[JSONGraphEnvelope] = js.native
+  def call(
+    functionPath: Path,
+    args: js.UndefOr[scala.Nothing],
+    refSuffixes: js.UndefOr[scala.Nothing],
+    thisPaths: js.Array[PathSet]
+  ): Observable[JSONGraphEnvelope] = js.native
+  def call(functionPath: Path, args: js.UndefOr[scala.Nothing], refSuffixes: js.Array[PathSet]): Observable[JSONGraphEnvelope] = js.native
+  def call(
+    functionPath: Path,
+    args: js.UndefOr[scala.Nothing],
+    refSuffixes: js.Array[PathSet],
+    thisPaths: js.Array[PathSet]
+  ): Observable[JSONGraphEnvelope] = js.native
   def call(functionPath: Path, args: js.Array[_]): Observable[JSONGraphEnvelope] = js.native
+  def call(
+    functionPath: Path,
+    args: js.Array[_],
+    refSuffixes: js.UndefOr[scala.Nothing],
+    thisPaths: js.Array[PathSet]
+  ): Observable[JSONGraphEnvelope] = js.native
   def call(functionPath: Path, args: js.Array[_], refSuffixes: js.Array[PathSet]): Observable[JSONGraphEnvelope] = js.native
   def call(
     functionPath: Path,

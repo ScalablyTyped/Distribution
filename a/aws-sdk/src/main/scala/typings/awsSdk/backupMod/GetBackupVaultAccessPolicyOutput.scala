@@ -22,12 +22,34 @@ trait GetBackupVaultAccessPolicyOutput extends js.Object {
 
 object GetBackupVaultAccessPolicyOutput {
   @scala.inline
-  def apply(BackupVaultArn: ARN = null, BackupVaultName: BackupVaultName = null, Policy: IAMPolicy = null): GetBackupVaultAccessPolicyOutput = {
+  def apply(): GetBackupVaultAccessPolicyOutput = {
     val __obj = js.Dynamic.literal()
-    if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn.asInstanceOf[js.Any])
-    if (BackupVaultName != null) __obj.updateDynamic("BackupVaultName")(BackupVaultName.asInstanceOf[js.Any])
-    if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBackupVaultAccessPolicyOutput]
   }
+  @scala.inline
+  implicit class GetBackupVaultAccessPolicyOutputOps[Self <: GetBackupVaultAccessPolicyOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupVaultArn(value: ARN): Self = this.set("BackupVaultArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupVaultArn: Self = this.set("BackupVaultArn", js.undefined)
+    @scala.inline
+    def setBackupVaultName(value: BackupVaultName): Self = this.set("BackupVaultName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupVaultName: Self = this.set("BackupVaultName", js.undefined)
+    @scala.inline
+    def setPolicy(value: IAMPolicy): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("Policy", js.undefined)
+  }
+  
 }
 

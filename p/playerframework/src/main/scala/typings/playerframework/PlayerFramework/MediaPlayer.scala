@@ -654,6 +654,7 @@ trait MediaPlayer extends js.Object {
     * @param language String The BCP47 language tag of the track. For example "en" for English or "fr" for French
     **/
   def addTextTrack(kind: String): Unit = js.native
+  def addTextTrack(kind: String, label: js.UndefOr[scala.Nothing], language: String): Unit = js.native
   def addTextTrack(kind: String, label: String): Unit = js.native
   def addTextTrack(kind: String, label: String, language: String): Unit = js.native
   /**

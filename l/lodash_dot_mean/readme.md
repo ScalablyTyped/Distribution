@@ -12,7 +12,7 @@ The lodash method `_.mean` exported as a module.
 | Keywords           | lodash-modularized, mean |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 100337 |
+| # downloads        | 105705 |
 | # stars            | 0 |
 
 ## Links

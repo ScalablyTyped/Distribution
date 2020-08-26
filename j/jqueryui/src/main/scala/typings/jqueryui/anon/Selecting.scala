@@ -5,16 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Selecting extends js.Object {
-  var selecting: js.UndefOr[Element] = js.undefined
+  var selecting: js.UndefOr[Element] = js.native
 }
 
 object Selecting {
   @scala.inline
-  def apply(selecting: Element = null): Selecting = {
+  def apply(): Selecting = {
     val __obj = js.Dynamic.literal()
-    if (selecting != null) __obj.updateDynamic("selecting")(selecting.asInstanceOf[js.Any])
     __obj.asInstanceOf[Selecting]
   }
+  @scala.inline
+  implicit class SelectingOps[Self <: Selecting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSelecting(value: Element): Self = this.set("selecting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelecting: Self = this.set("selecting", js.undefined)
+  }
+  
 }
 

@@ -17,7 +17,7 @@ package object mod {
     * a single argument, which is useful for many top-level API defs.
     * See https://github.com/Microsoft/TypeScript/issues/7234 for more info.
     */
-  type ClassType[P, T /* <: typings.babelPluginReactHtmlAttrs.mod.Component[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState, _] */, C /* <: typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState] */] = C with (org.scalablytyped.runtime.Instantiable2[/* props */ P, js.UndefOr[/* context */ js.Any], T])
+  type ClassType[P, T /* <: typings.babelPluginReactHtmlAttrs.mod.Component[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState, _] */, C /* <: typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState] */] = C with (org.scalablytyped.runtime.Instantiable2[/* props */ P, /* context */ js.UndefOr[js.Any], T])
   type ClassicElement[P] = typings.babelPluginReactHtmlAttrs.mod.CElement[
     P, 
     typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]
@@ -200,7 +200,7 @@ package object mod {
   ]
   type PropsWithChildren[P] = P with typings.babelPluginReactHtmlAttrs.anon.Children
   /** Ensures that the props do not include string ref, which cannot be forwarded */
-  type PropsWithRef[P] = P | (typings.babelPluginReactHtmlAttrs.mod.PropsWithoutRef[P] with typings.babelPluginReactHtmlAttrs.anon.RefExclude)
+  type PropsWithRef[P] = P | (typings.babelPluginReactHtmlAttrs.mod.PropsWithoutRef[P] with typings.babelPluginReactHtmlAttrs.anon.`0`)
   /** Ensures that the props do not include ref at all */
   type PropsWithoutRef[P] = P | (typings.std.Pick[
     P, 

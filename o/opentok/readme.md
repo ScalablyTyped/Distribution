@@ -12,7 +12,7 @@ OpenTok server-side SDK
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 13 |
-| # downloads        | 383480 |
+| # downloads        | 406366 |
 | # stars            | 1 |
 
 ## Links

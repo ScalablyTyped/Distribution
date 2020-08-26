@@ -18,11 +18,30 @@ trait PercentPair extends js.Object {
 
 object PercentPair {
   @scala.inline
-  def apply(percent: js.UndefOr[Percent] = js.undefined, value: js.UndefOr[PercentValue] = js.undefined): PercentPair = {
+  def apply(): PercentPair = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PercentPair]
   }
+  @scala.inline
+  implicit class PercentPairOps[Self <: PercentPair] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPercent(value: Percent): Self = this.set("percent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercent: Self = this.set("percent", js.undefined)
+    @scala.inline
+    def setValue(value: PercentValue): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

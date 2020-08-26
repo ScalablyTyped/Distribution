@@ -7,68 +7,82 @@ import scala.scalajs.js.annotation._
 /**
   * Processing errors
   */
+@js.native
 trait ClaimResponseError extends BackboneElement {
   /**
     * Contains extended information for property 'detailSequenceLinkId'.
     */
-  var _detailSequenceLinkId: js.UndefOr[Element] = js.undefined
+  var _detailSequenceLinkId: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'sequenceLinkId'.
     */
-  var _sequenceLinkId: js.UndefOr[Element] = js.undefined
+  var _sequenceLinkId: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'subdetailSequenceLinkId'.
     */
-  var _subdetailSequenceLinkId: js.UndefOr[Element] = js.undefined
+  var _subdetailSequenceLinkId: js.UndefOr[Element] = js.native
   /**
     * Error code detailing processing issues
     */
-  var code: CodeableConcept
+  var code: CodeableConcept = js.native
   /**
     * Detail sequence number
     */
-  var detailSequenceLinkId: js.UndefOr[positiveInt] = js.undefined
+  var detailSequenceLinkId: js.UndefOr[positiveInt] = js.native
   /**
     * Item sequence number
     */
-  var sequenceLinkId: js.UndefOr[positiveInt] = js.undefined
+  var sequenceLinkId: js.UndefOr[positiveInt] = js.native
   /**
     * Subdetail sequence number
     */
-  var subdetailSequenceLinkId: js.UndefOr[positiveInt] = js.undefined
+  var subdetailSequenceLinkId: js.UndefOr[positiveInt] = js.native
 }
 
 object ClaimResponseError {
   @scala.inline
-  def apply(
-    code: CodeableConcept,
-    _detailSequenceLinkId: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _sequenceLinkId: Element = null,
-    _subdetailSequenceLinkId: Element = null,
-    detailSequenceLinkId: js.UndefOr[positiveInt] = js.undefined,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    sequenceLinkId: js.UndefOr[positiveInt] = js.undefined,
-    subdetailSequenceLinkId: js.UndefOr[positiveInt] = js.undefined
-  ): ClaimResponseError = {
+  def apply(code: CodeableConcept): ClaimResponseError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-    if (_detailSequenceLinkId != null) __obj.updateDynamic("_detailSequenceLinkId")(_detailSequenceLinkId.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_sequenceLinkId != null) __obj.updateDynamic("_sequenceLinkId")(_sequenceLinkId.asInstanceOf[js.Any])
-    if (_subdetailSequenceLinkId != null) __obj.updateDynamic("_subdetailSequenceLinkId")(_subdetailSequenceLinkId.asInstanceOf[js.Any])
-    if (!js.isUndefined(detailSequenceLinkId)) __obj.updateDynamic("detailSequenceLinkId")(detailSequenceLinkId.get.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(sequenceLinkId)) __obj.updateDynamic("sequenceLinkId")(sequenceLinkId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(subdetailSequenceLinkId)) __obj.updateDynamic("subdetailSequenceLinkId")(subdetailSequenceLinkId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimResponseError]
   }
+  @scala.inline
+  implicit class ClaimResponseErrorOps[Self <: ClaimResponseError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_detailSequenceLinkId(value: Element): Self = this.set("_detailSequenceLinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_detailSequenceLinkId: Self = this.set("_detailSequenceLinkId", js.undefined)
+    @scala.inline
+    def set_sequenceLinkId(value: Element): Self = this.set("_sequenceLinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_sequenceLinkId: Self = this.set("_sequenceLinkId", js.undefined)
+    @scala.inline
+    def set_subdetailSequenceLinkId(value: Element): Self = this.set("_subdetailSequenceLinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_subdetailSequenceLinkId: Self = this.set("_subdetailSequenceLinkId", js.undefined)
+    @scala.inline
+    def setDetailSequenceLinkId(value: positiveInt): Self = this.set("detailSequenceLinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailSequenceLinkId: Self = this.set("detailSequenceLinkId", js.undefined)
+    @scala.inline
+    def setSequenceLinkId(value: positiveInt): Self = this.set("sequenceLinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSequenceLinkId: Self = this.set("sequenceLinkId", js.undefined)
+    @scala.inline
+    def setSubdetailSequenceLinkId(value: positiveInt): Self = this.set("subdetailSequenceLinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubdetailSequenceLinkId: Self = this.set("subdetailSequenceLinkId", js.undefined)
+  }
+  
 }
 

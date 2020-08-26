@@ -5,48 +5,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ToolbarProps extends js.Object {
-  var centerElement: js.UndefOr[Element | String] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var isSearchActive: js.UndefOr[Boolean] = js.undefined
-  var leftElement: js.UndefOr[Element | String] = js.undefined
-  var onLeftElementPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onRightElementPress: js.UndefOr[js.Function1[/* e */ RightElementPressEvent, Unit]] = js.undefined
-  var rightElement: js.UndefOr[Element | String | js.Array[String] | ToolBarRightElement] = js.undefined
-  var searchable: js.UndefOr[Searchable] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[ToolbarStyle] = js.undefined
+  var centerElement: js.UndefOr[Element | String] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var isSearchActive: js.UndefOr[Boolean] = js.native
+  var leftElement: js.UndefOr[Element | String] = js.native
+  var onLeftElementPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRightElementPress: js.UndefOr[js.Function1[/* e */ RightElementPressEvent, Unit]] = js.native
+  var rightElement: js.UndefOr[Element | String | js.Array[String] | ToolBarRightElement] = js.native
+  var searchable: js.UndefOr[Searchable] = js.native
+  var size: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[ToolbarStyle] = js.native
 }
 
 object ToolbarProps {
   @scala.inline
-  def apply(
-    centerElement: Element | String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    isSearchActive: js.UndefOr[Boolean] = js.undefined,
-    leftElement: Element | String = null,
-    onLeftElementPress: () => Unit = null,
-    onPress: () => Unit = null,
-    onRightElementPress: /* e */ RightElementPressEvent => Unit = null,
-    rightElement: Element | String | js.Array[String] | ToolBarRightElement = null,
-    searchable: Searchable = null,
-    size: js.UndefOr[Double] = js.undefined,
-    style: ToolbarStyle = null
-  ): ToolbarProps = {
+  def apply(): ToolbarProps = {
     val __obj = js.Dynamic.literal()
-    if (centerElement != null) __obj.updateDynamic("centerElement")(centerElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSearchActive)) __obj.updateDynamic("isSearchActive")(isSearchActive.get.asInstanceOf[js.Any])
-    if (leftElement != null) __obj.updateDynamic("leftElement")(leftElement.asInstanceOf[js.Any])
-    if (onLeftElementPress != null) __obj.updateDynamic("onLeftElementPress")(js.Any.fromFunction0(onLeftElementPress))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
-    if (onRightElementPress != null) __obj.updateDynamic("onRightElementPress")(js.Any.fromFunction1(onRightElementPress))
-    if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement.asInstanceOf[js.Any])
-    if (searchable != null) __obj.updateDynamic("searchable")(searchable.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarProps]
   }
+  @scala.inline
+  implicit class ToolbarPropsOps[Self <: ToolbarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCenterElement(value: Element | String): Self = this.set("centerElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenterElement: Self = this.set("centerElement", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setIsSearchActive(value: Boolean): Self = this.set("isSearchActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSearchActive: Self = this.set("isSearchActive", js.undefined)
+    @scala.inline
+    def setLeftElement(value: Element | String): Self = this.set("leftElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftElement: Self = this.set("leftElement", js.undefined)
+    @scala.inline
+    def setOnLeftElementPress(value: () => Unit): Self = this.set("onLeftElementPress", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnLeftElementPress: Self = this.set("onLeftElementPress", js.undefined)
+    @scala.inline
+    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    @scala.inline
+    def setOnRightElementPress(value: /* e */ RightElementPressEvent => Unit): Self = this.set("onRightElementPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRightElementPress: Self = this.set("onRightElementPress", js.undefined)
+    @scala.inline
+    def setRightElementVarargs(value: String*): Self = this.set("rightElement", js.Array(value :_*))
+    @scala.inline
+    def setRightElement(value: Element | String | js.Array[String] | ToolBarRightElement): Self = this.set("rightElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightElement: Self = this.set("rightElement", js.undefined)
+    @scala.inline
+    def setSearchable(value: Searchable): Self = this.set("searchable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchable: Self = this.set("searchable", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStyle(value: ToolbarStyle): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

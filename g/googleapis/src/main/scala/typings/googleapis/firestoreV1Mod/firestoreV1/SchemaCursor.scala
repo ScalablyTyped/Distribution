@@ -24,11 +24,32 @@ trait SchemaCursor extends js.Object {
 
 object SchemaCursor {
   @scala.inline
-  def apply(before: js.UndefOr[Boolean] = js.undefined, values: js.Array[SchemaValue] = null): SchemaCursor = {
+  def apply(): SchemaCursor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(before)) __obj.updateDynamic("before")(before.get.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCursor]
   }
+  @scala.inline
+  implicit class SchemaCursorOps[Self <: SchemaCursor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBefore(value: Boolean): Self = this.set("before", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBefore: Self = this.set("before", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: SchemaValue*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: js.Array[SchemaValue]): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

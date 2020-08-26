@@ -11,7 +11,29 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]]): /* is T */ Boolean = js.native
+  def apply[T /* <: Node */](
+    node: js.Any,
+    test: js.Array[Test[_]],
+    index: js.UndefOr[scala.Nothing],
+    parent: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): /* is T */ Boolean = js.native
+  def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: js.UndefOr[scala.Nothing], parent: Parent): /* is T */ Boolean = js.native
+  def apply[T /* <: Node */](
+    node: js.Any,
+    test: js.Array[Test[_]],
+    index: js.UndefOr[scala.Nothing],
+    parent: Parent,
+    context: js.Any
+  ): /* is T */ Boolean = js.native
   def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: Double): /* is T */ Boolean = js.native
+  def apply[T /* <: Node */](
+    node: js.Any,
+    test: js.Array[Test[_]],
+    index: Double,
+    parent: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): /* is T */ Boolean = js.native
   def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: Double, parent: Parent): /* is T */ Boolean = js.native
   def apply[T /* <: Node */](node: js.Any, test: js.Array[Test[_]], index: Double, parent: Parent, context: js.Any): /* is T */ Boolean = js.native
   /**
@@ -30,7 +52,17 @@ object mod extends js.Object {
     * @returns Whether test passed and `node` is a `Node` (object with `type` set to non-empty `string`).
     */
   def apply[T /* <: Node */](node: js.Any, test: Test[T]): /* is T */ Boolean = js.native
+  def apply[T /* <: Node */](
+    node: js.Any,
+    test: Test[T],
+    index: js.UndefOr[scala.Nothing],
+    parent: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): /* is T */ Boolean = js.native
+  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: js.UndefOr[scala.Nothing], parent: Parent): /* is T */ Boolean = js.native
+  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: js.UndefOr[scala.Nothing], parent: Parent, context: js.Any): /* is T */ Boolean = js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double): /* is T */ Boolean = js.native
+  def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: js.UndefOr[scala.Nothing], context: js.Any): /* is T */ Boolean = js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: Parent): /* is T */ Boolean = js.native
   def apply[T /* <: Node */](node: js.Any, test: Test[T], index: Double, parent: Parent, context: js.Any): /* is T */ Boolean = js.native
   /**

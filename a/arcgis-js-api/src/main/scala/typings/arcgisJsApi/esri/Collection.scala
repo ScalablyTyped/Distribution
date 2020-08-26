@@ -73,6 +73,7 @@ trait Collection[T]
   def reverse(): Collection[T] = js.native
   def shift(): T = js.native
   def slice(): Collection[T] = js.native
+  def slice(begin: js.UndefOr[scala.Nothing], end: Double): Collection[T] = js.native
   def slice(begin: Double): Collection[T] = js.native
   def slice(begin: Double, end: Double): Collection[T] = js.native
   def some(callback: ItemCallback[T]): Boolean = js.native

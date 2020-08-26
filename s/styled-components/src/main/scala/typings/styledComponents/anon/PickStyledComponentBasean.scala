@@ -14,12 +14,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<styled-components.styled-components.StyledComponentBase<any, any, any, any>, keyof styled-components.styled-components.StyledComponentBase<any, any, {}, never>> */
+@js.native
 trait PickStyledComponentBasean extends StyledComponentInterpolation {
   @JSName("$$typeof")
-  var DollarDollartypeof: js.Symbol
-  var defaultProps: js.UndefOr[Partial[StyledComponentProps[_, _, _, _]]] = js.undefined
-  var displayName: js.UndefOr[String] = js.undefined
-  var propTypes: js.UndefOr[WeakValidationMap[StyledComponentProps[_, _, _, _]]] = js.undefined
+  var DollarDollartypeof: js.Symbol = js.native
+  var defaultProps: js.UndefOr[Partial[StyledComponentProps[_, _, _, _]]] = js.native
+  var displayName: js.UndefOr[String] = js.native
+  var propTypes: js.UndefOr[WeakValidationMap[StyledComponentProps[_, _, _, _]]] = js.native
   var withComponent: js.Function1[
     /* component */ AnyStyledComponent, 
     StyledComponent[
@@ -28,7 +29,7 @@ trait PickStyledComponentBasean extends StyledComponentInterpolation {
       js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
       _ | StyledComponentInnerAttrs[AnyStyledComponent]
     ]
-  ]
+  ] = js.native
 }
 
 object PickStyledComponentBasean {
@@ -40,17 +41,47 @@ object PickStyledComponentBasean {
       _, 
       js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
       _ | StyledComponentInnerAttrs[AnyStyledComponent]
-    ],
-    defaultProps: Partial[StyledComponentProps[_, _, _, _]] = null,
-    displayName: String = null,
-    propTypes: WeakValidationMap[StyledComponentProps[_, _, _, _]] = null
+    ]
   ): PickStyledComponentBasean = {
     val __obj = js.Dynamic.literal(withComponent = js.Any.fromFunction1(withComponent))
     __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
-    if (defaultProps != null) __obj.updateDynamic("defaultProps")(defaultProps.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (propTypes != null) __obj.updateDynamic("propTypes")(propTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickStyledComponentBasean]
   }
+  @scala.inline
+  implicit class PickStyledComponentBaseanOps[Self <: PickStyledComponentBasean] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDollarDollartypeof(value: js.Symbol): Self = this.set("$$typeof", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWithComponent(
+      value: /* component */ AnyStyledComponent => StyledComponent[
+          StyledComponentInnerComponent[AnyStyledComponent], 
+          _, 
+          js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
+          _ | StyledComponentInnerAttrs[AnyStyledComponent]
+        ]
+    ): Self = this.set("withComponent", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDefaultProps(value: Partial[StyledComponentProps[_, _, _, _]]): Self = this.set("defaultProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultProps: Self = this.set("defaultProps", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setPropTypes(value: WeakValidationMap[StyledComponentProps[_, _, _, _]]): Self = this.set("propTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropTypes: Self = this.set("propTypes", js.undefined)
+  }
+  
 }
 

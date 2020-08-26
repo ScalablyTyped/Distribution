@@ -101,7 +101,7 @@ object mod extends js.Object {
         /* segmentSize */ Double, 
         ModeOfOperationCFB
       ] = js.native
-    val ctr: Instantiable2[/* key */ ByteSource, js.UndefOr[/* counter */ Counter], ModeOfOperationCTR] = js.native
+    val ctr: Instantiable2[/* key */ ByteSource, /* counter */ js.UndefOr[Counter], ModeOfOperationCTR] = js.native
     val ecb: Instantiable1[/* key */ ByteSource, ModeOfOperationECB] = js.native
     val ofb: Instantiable2[/* key */ ByteSource, /* iv */ ByteSource, ModeOfOperationOFB] = js.native
   }

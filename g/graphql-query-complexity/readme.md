@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-query-complexity
 
-Typings are for version 0.4.1
+Typings are for version 0.6.0
 
 ## Library description:
 Validation rule for GraphQL query complexity analysis

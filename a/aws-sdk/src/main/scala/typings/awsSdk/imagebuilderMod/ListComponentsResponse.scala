@@ -22,16 +22,36 @@ trait ListComponentsResponse extends js.Object {
 
 object ListComponentsResponse {
   @scala.inline
-  def apply(
-    componentVersionList: ComponentVersionList = null,
-    nextToken: NonEmptyString = null,
-    requestId: NonEmptyString = null
-  ): ListComponentsResponse = {
+  def apply(): ListComponentsResponse = {
     val __obj = js.Dynamic.literal()
-    if (componentVersionList != null) __obj.updateDynamic("componentVersionList")(componentVersionList.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListComponentsResponse]
   }
+  @scala.inline
+  implicit class ListComponentsResponseOps[Self <: ListComponentsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentVersionListVarargs(value: ComponentVersion*): Self = this.set("componentVersionList", js.Array(value :_*))
+    @scala.inline
+    def setComponentVersionList(value: ComponentVersionList): Self = this.set("componentVersionList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentVersionList: Self = this.set("componentVersionList", js.undefined)
+    @scala.inline
+    def setNextToken(value: NonEmptyString): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+  }
+  
 }
 

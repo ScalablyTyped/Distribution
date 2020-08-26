@@ -34,19 +34,42 @@ trait ListResourceRecordSetsResponse extends js.Object {
 
 object ListResourceRecordSetsResponse {
   @scala.inline
-  def apply(
-    IsTruncated: PageTruncated,
-    MaxItems: PageMaxItems,
-    ResourceRecordSets: ResourceRecordSets,
-    NextRecordIdentifier: ResourceRecordSetIdentifier = null,
-    NextRecordName: DNSName = null,
-    NextRecordType: RRType = null
-  ): ListResourceRecordSetsResponse = {
+  def apply(IsTruncated: PageTruncated, MaxItems: PageMaxItems, ResourceRecordSets: ResourceRecordSets): ListResourceRecordSetsResponse = {
     val __obj = js.Dynamic.literal(IsTruncated = IsTruncated.asInstanceOf[js.Any], MaxItems = MaxItems.asInstanceOf[js.Any], ResourceRecordSets = ResourceRecordSets.asInstanceOf[js.Any])
-    if (NextRecordIdentifier != null) __obj.updateDynamic("NextRecordIdentifier")(NextRecordIdentifier.asInstanceOf[js.Any])
-    if (NextRecordName != null) __obj.updateDynamic("NextRecordName")(NextRecordName.asInstanceOf[js.Any])
-    if (NextRecordType != null) __obj.updateDynamic("NextRecordType")(NextRecordType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceRecordSetsResponse]
   }
+  @scala.inline
+  implicit class ListResourceRecordSetsResponseOps[Self <: ListResourceRecordSetsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsTruncated(value: PageTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceRecordSetsVarargs(value: ResourceRecordSet*): Self = this.set("ResourceRecordSets", js.Array(value :_*))
+    @scala.inline
+    def setResourceRecordSets(value: ResourceRecordSets): Self = this.set("ResourceRecordSets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextRecordIdentifier(value: ResourceRecordSetIdentifier): Self = this.set("NextRecordIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextRecordIdentifier: Self = this.set("NextRecordIdentifier", js.undefined)
+    @scala.inline
+    def setNextRecordName(value: DNSName): Self = this.set("NextRecordName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextRecordName: Self = this.set("NextRecordName", js.undefined)
+    @scala.inline
+    def setNextRecordType(value: RRType): Self = this.set("NextRecordType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextRecordType: Self = this.set("NextRecordType", js.undefined)
+  }
+  
 }
 

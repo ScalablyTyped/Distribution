@@ -27,16 +27,34 @@ trait GraphQLApiUserPoolConfig extends js.Object {
 
 object GraphQLApiUserPoolConfig {
   @scala.inline
-  def apply(
-    defaultAction: Input[String],
-    userPoolId: Input[String],
-    appIdClientRegex: Input[String] = null,
-    awsRegion: Input[String] = null
-  ): GraphQLApiUserPoolConfig = {
+  def apply(defaultAction: Input[String], userPoolId: Input[String]): GraphQLApiUserPoolConfig = {
     val __obj = js.Dynamic.literal(defaultAction = defaultAction.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
-    if (appIdClientRegex != null) __obj.updateDynamic("appIdClientRegex")(appIdClientRegex.asInstanceOf[js.Any])
-    if (awsRegion != null) __obj.updateDynamic("awsRegion")(awsRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLApiUserPoolConfig]
   }
+  @scala.inline
+  implicit class GraphQLApiUserPoolConfigOps[Self <: GraphQLApiUserPoolConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultAction(value: Input[String]): Self = this.set("defaultAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserPoolId(value: Input[String]): Self = this.set("userPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAppIdClientRegex(value: Input[String]): Self = this.set("appIdClientRegex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppIdClientRegex: Self = this.set("appIdClientRegex", js.undefined)
+    @scala.inline
+    def setAwsRegion(value: Input[String]): Self = this.set("awsRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsRegion: Self = this.set("awsRegion", js.undefined)
+  }
+  
 }
 

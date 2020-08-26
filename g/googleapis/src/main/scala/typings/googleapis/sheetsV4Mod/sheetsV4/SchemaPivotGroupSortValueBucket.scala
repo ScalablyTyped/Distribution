@@ -29,11 +29,32 @@ trait SchemaPivotGroupSortValueBucket extends js.Object {
 
 object SchemaPivotGroupSortValueBucket {
   @scala.inline
-  def apply(buckets: js.Array[SchemaExtendedValue] = null, valuesIndex: js.UndefOr[Double] = js.undefined): SchemaPivotGroupSortValueBucket = {
+  def apply(): SchemaPivotGroupSortValueBucket = {
     val __obj = js.Dynamic.literal()
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
-    if (!js.isUndefined(valuesIndex)) __obj.updateDynamic("valuesIndex")(valuesIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPivotGroupSortValueBucket]
   }
+  @scala.inline
+  implicit class SchemaPivotGroupSortValueBucketOps[Self <: SchemaPivotGroupSortValueBucket] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketsVarargs(value: SchemaExtendedValue*): Self = this.set("buckets", js.Array(value :_*))
+    @scala.inline
+    def setBuckets(value: js.Array[SchemaExtendedValue]): Self = this.set("buckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuckets: Self = this.set("buckets", js.undefined)
+    @scala.inline
+    def setValuesIndex(value: Double): Self = this.set("valuesIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuesIndex: Self = this.set("valuesIndex", js.undefined)
+  }
+  
 }
 

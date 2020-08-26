@@ -19,6 +19,12 @@ object mod extends js.Object {
     def memsize(): Double = js.native
     def misses(): Double = js.native
     def put(key: K, value: V): V = js.native
+    def put(
+      key: K,
+      value: V,
+      time: js.UndefOr[scala.Nothing],
+      timeoutCallback: js.Function2[/* key */ K, /* value */ V, Unit]
+    ): V = js.native
     def put(key: K, value: V, time: Double): V = js.native
     def put(key: K, value: V, time: Double, timeoutCallback: js.Function2[/* key */ K, /* value */ V, Unit]): V = js.native
     def size(): Double = js.native
@@ -34,6 +40,12 @@ object mod extends js.Object {
   def memsize(): Double = js.native
   def misses(): Double = js.native
   def put[V](key: js.Any, value: V): V = js.native
+  def put[V](
+    key: js.Any,
+    value: V,
+    time: js.UndefOr[scala.Nothing],
+    timeoutCallback: js.Function2[/* key */ js.Any, /* value */ js.Any, Unit]
+  ): V = js.native
   def put[V](key: js.Any, value: V, time: Double): V = js.native
   def put[V](
     key: js.Any,

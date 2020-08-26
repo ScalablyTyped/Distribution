@@ -34,21 +34,44 @@ trait UpdateJobRequest extends js.Object {
 
 object UpdateJobRequest {
   @scala.inline
-  def apply(
-    jobId: JobId,
-    abortConfig: AbortConfig = null,
-    description: JobDescription = null,
-    jobExecutionsRolloutConfig: JobExecutionsRolloutConfig = null,
-    presignedUrlConfig: PresignedUrlConfig = null,
-    timeoutConfig: TimeoutConfig = null
-  ): UpdateJobRequest = {
+  def apply(jobId: JobId): UpdateJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any])
-    if (abortConfig != null) __obj.updateDynamic("abortConfig")(abortConfig.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (jobExecutionsRolloutConfig != null) __obj.updateDynamic("jobExecutionsRolloutConfig")(jobExecutionsRolloutConfig.asInstanceOf[js.Any])
-    if (presignedUrlConfig != null) __obj.updateDynamic("presignedUrlConfig")(presignedUrlConfig.asInstanceOf[js.Any])
-    if (timeoutConfig != null) __obj.updateDynamic("timeoutConfig")(timeoutConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobRequest]
   }
+  @scala.inline
+  implicit class UpdateJobRequestOps[Self <: UpdateJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAbortConfig(value: AbortConfig): Self = this.set("abortConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortConfig: Self = this.set("abortConfig", js.undefined)
+    @scala.inline
+    def setDescription(value: JobDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setJobExecutionsRolloutConfig(value: JobExecutionsRolloutConfig): Self = this.set("jobExecutionsRolloutConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobExecutionsRolloutConfig: Self = this.set("jobExecutionsRolloutConfig", js.undefined)
+    @scala.inline
+    def setPresignedUrlConfig(value: PresignedUrlConfig): Self = this.set("presignedUrlConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresignedUrlConfig: Self = this.set("presignedUrlConfig", js.undefined)
+    @scala.inline
+    def setTimeoutConfig(value: TimeoutConfig): Self = this.set("timeoutConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutConfig: Self = this.set("timeoutConfig", js.undefined)
+  }
+  
 }
 

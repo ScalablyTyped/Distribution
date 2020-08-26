@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "BindingPipe")
 @js.native
 class BindingPipe protected ()
-  extends typings.angularCompiler.publicApiMod.BindingPipe {
+  extends typings.angularCompiler.compilerMod.BindingPipe {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

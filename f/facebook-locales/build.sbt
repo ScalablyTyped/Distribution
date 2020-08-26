@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "facebook-locales"
-version := "1.0-dt-20190628Z-2b73b3"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20190628Z-c1a1df"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OlkBusinessCardControl extends js.Object {
-  var MouseIcon: StdPicture
-  var MousePointer: OlMousePointer
+  var MouseIcon: StdPicture = js.native
+  var MousePointer: OlMousePointer = js.native
   @JSName("Outlook.OlkBusinessCardControl_typekey")
-  var OutlookDotOlkBusinessCardControl_typekey: OlkBusinessCardControl
+  var OutlookDotOlkBusinessCardControl_typekey: OlkBusinessCardControl = js.native
 }
 
 object OlkBusinessCardControl {
@@ -23,5 +24,24 @@ object OlkBusinessCardControl {
     __obj.updateDynamic("Outlook.OlkBusinessCardControl_typekey")(OutlookDotOlkBusinessCardControl_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OlkBusinessCardControl]
   }
+  @scala.inline
+  implicit class OlkBusinessCardControlOps[Self <: OlkBusinessCardControl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMouseIcon(value: StdPicture): Self = this.set("MouseIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMousePointer(value: OlMousePointer): Self = this.set("MousePointer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutlookDotOlkBusinessCardControl_typekey(value: OlkBusinessCardControl): Self = this.set("Outlook.OlkBusinessCardControl_typekey", value.asInstanceOf[js.Any])
+  }
+  
 }
 

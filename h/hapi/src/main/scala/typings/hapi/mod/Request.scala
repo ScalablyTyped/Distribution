@@ -156,7 +156,6 @@ trait Request extends Podium {
     * (e.g. client disconnected or aborted early).
     */
   def active(): Boolean = js.native
-  def generateResponse(): ResponseObject = js.native
   /**
     * Returns a response which you can pass into the reply interface where:
     * @param source - the value to set as the source of the reply interface, optional.
@@ -165,6 +164,7 @@ trait Request extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestgenerateresponsesource-options)
     */
   /* tslint:disable-next-line:max-line-length */
+  def generateResponse(): ResponseObject = js.native
   def generateResponse(source: String): ResponseObject = js.native
   def generateResponse(source: String, options: Close): ResponseObject = js.native
   def generateResponse(source: js.Object): ResponseObject = js.native

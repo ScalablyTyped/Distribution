@@ -50,18 +50,40 @@ trait SchemaExecutionRequest extends js.Object {
 
 object SchemaExecutionRequest {
   @scala.inline
-  def apply(
-    devMode: js.UndefOr[Boolean] = js.undefined,
-    function: String = null,
-    parameters: js.Array[_] = null,
-    sessionState: String = null
-  ): SchemaExecutionRequest = {
+  def apply(): SchemaExecutionRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode.get.asInstanceOf[js.Any])
-    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (sessionState != null) __obj.updateDynamic("sessionState")(sessionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExecutionRequest]
   }
+  @scala.inline
+  implicit class SchemaExecutionRequestOps[Self <: SchemaExecutionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDevMode(value: Boolean): Self = this.set("devMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevMode: Self = this.set("devMode", js.undefined)
+    @scala.inline
+    def setFunction(value: String): Self = this.set("function", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunction: Self = this.set("function", js.undefined)
+    @scala.inline
+    def setParametersVarargs(value: js.Any*): Self = this.set("parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: js.Array[_]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setSessionState(value: String): Self = this.set("sessionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionState: Self = this.set("sessionState", js.undefined)
+  }
+  
 }
 

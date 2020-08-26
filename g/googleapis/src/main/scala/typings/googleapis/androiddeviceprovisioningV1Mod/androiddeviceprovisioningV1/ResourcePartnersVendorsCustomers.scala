@@ -29,6 +29,7 @@ class ResourcePartnersVendorsCustomers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListVendorCustomersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListVendorCustomersResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListVendorCustomersResponse] = js.native
   def list(params: ParamsResourcePartnersVendorsCustomersList): GaxiosPromise[SchemaListVendorCustomersResponse] = js.native
   def list(
     params: ParamsResourcePartnersVendorsCustomersList,

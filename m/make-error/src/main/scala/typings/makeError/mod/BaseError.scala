@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class BaseError () extends Error {
   def this(message: String) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   @JSName("stack")
   var stack_BaseError: String = js.native
 }

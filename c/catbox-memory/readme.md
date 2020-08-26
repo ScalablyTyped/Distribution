@@ -12,7 +12,7 @@ Memory adapter for catbox
 | Keywords           | cache, catbox, memory |
 | # releases         | 6 |
 | # dependents       | 28 |
-| # downloads        | 10263754 |
+| # downloads        | 10137944 |
 | # stars            | 1 |
 
 ## Links

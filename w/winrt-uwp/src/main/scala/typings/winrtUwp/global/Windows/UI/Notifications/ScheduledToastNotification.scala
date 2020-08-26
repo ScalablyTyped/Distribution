@@ -25,29 +25,5 @@ class ScheduledToastNotification protected ()
     * @param maximumSnoozeCount The maximum number of times to display this notification. Valid values range from 1 to 5.
     */
   def this(content: XmlDocument, deliveryTime: Date, snoozeInterval: Double, maximumSnoozeCount: Double) = this()
-  /** Gets the XML that defines this scheduled toast notification. */
-  /* CompleteClass */
-  override var content: XmlDocument = js.native
-  /** Gets the time that this toast notification is scheduled to be displayed. */
-  /* CompleteClass */
-  override var deliveryTime: Date = js.native
-  /** Gets or sets the group identifier for the notification. */
-  /* CompleteClass */
-  override var group: String = js.native
-  /** Gets a developer-specified value used to identify a specific scheduled toast. */
-  /* CompleteClass */
-  override var id: String = js.native
-  /** Gets the maximum number of times to display this notification. */
-  /* CompleteClass */
-  override var maximumSnoozeCount: Double = js.native
-  /** Gets the amount of time between occurrences of the notification. */
-  /* CompleteClass */
-  override var snoozeInterval: Double = js.native
-  /** Gets or sets whether a toast's pop-up UI is displayed on the Windows Phone 8.1 screen. */
-  /* CompleteClass */
-  override var suppressPopup: Boolean = js.native
-  /** Gets or sets a string that uniquely identifies a toast notification inside a Group . */
-  /* CompleteClass */
-  override var tag: String = js.native
 }
 

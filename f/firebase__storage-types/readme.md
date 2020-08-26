@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__storage-types
 
-Typings are for version 0.3.12
+Typings are for version 0.3.13
 
 ## Library description:
 @firebase/storage Types
@@ -10,9 +10,9 @@ Typings are for version 0.3.12
 | ------------------ | :-------------: |
 | Full name          | @firebase/storage-types |
 | Keywords           | - |
-| # releases         | 886 |
+| # releases         | 901 |
 | # dependents       | 3 |
-| # downloads        | 16272530 |
+| # downloads        | 16535942 |
 | # stars            | 0 |
 
 ## Links

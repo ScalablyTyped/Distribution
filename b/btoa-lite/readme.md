@@ -12,7 +12,7 @@ Smallest/simplest possible means of using btoa with both Node and browserify
 | Keywords           | btoa, base64, isomorphic, browser, node, shared |
 | # releases         | 0 |
 | # dependents       | 25 |
-| # downloads        | 37211771 |
+| # downloads        | 39710518 |
 | # stars            | 1 |
 
 ## Links

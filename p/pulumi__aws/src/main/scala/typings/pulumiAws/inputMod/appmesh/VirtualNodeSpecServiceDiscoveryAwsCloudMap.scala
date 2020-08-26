@@ -14,25 +14,41 @@ trait VirtualNodeSpecServiceDiscoveryAwsCloudMap extends js.Object {
   var attributes: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The name of the AWS Cloud Map namespace to use.
-    * Use the [`aws.servicediscovery.HttpNamespace`](https://www.terraform.io/docs/providers/aws/r/service_discovery_http_namespace.html) resource to configure a Cloud Map namespace.
+    * Use the `aws.servicediscovery.HttpNamespace` resource to configure a Cloud Map namespace.
     */
   var namespaceName: Input[String] = js.native
   /**
-    * The name of the AWS Cloud Map service to use. Use the [`aws.servicediscovery.Service`](https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html) resource to configure a Cloud Map service.
+    * The name of the AWS Cloud Map service to use. Use the `aws.servicediscovery.Service` resource to configure a Cloud Map service.
     */
   var serviceName: Input[String] = js.native
 }
 
 object VirtualNodeSpecServiceDiscoveryAwsCloudMap {
   @scala.inline
-  def apply(
-    namespaceName: Input[String],
-    serviceName: Input[String],
-    attributes: Input[StringDictionary[Input[String]]] = null
-  ): VirtualNodeSpecServiceDiscoveryAwsCloudMap = {
+  def apply(namespaceName: Input[String], serviceName: Input[String]): VirtualNodeSpecServiceDiscoveryAwsCloudMap = {
     val __obj = js.Dynamic.literal(namespaceName = namespaceName.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecServiceDiscoveryAwsCloudMap]
   }
+  @scala.inline
+  implicit class VirtualNodeSpecServiceDiscoveryAwsCloudMapOps[Self <: VirtualNodeSpecServiceDiscoveryAwsCloudMap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamespaceName(value: Input[String]): Self = this.set("namespaceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceName(value: Input[String]): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributes(value: Input[StringDictionary[Input[String]]]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+  }
+  
 }
 

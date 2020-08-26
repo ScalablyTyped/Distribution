@@ -16,17 +16,5 @@ class OnCellErrorStateChanged protected ()
     bCellHadError: Boolean,
     errorId: Double
   ) = this()
-  /* CompleteClass */
-  override var bAddingError: Boolean = js.native
-  /* CompleteClass */
-  override var bCellCurrentlyHasError: Boolean = js.native
-  /* CompleteClass */
-  override var bCellHadError: Boolean = js.native
-  /* CompleteClass */
-  override var errorId: Double = js.native
-  /* CompleteClass */
-  override var fieldKey: String = js.native
-  /* CompleteClass */
-  override var recordKey: Double = js.native
 }
 

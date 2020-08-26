@@ -14,10 +14,26 @@ trait ServiceSpecification extends js.Object {
 
 object ServiceSpecification {
   @scala.inline
-  def apply(EC2Specification: EC2Specification = null): ServiceSpecification = {
+  def apply(): ServiceSpecification = {
     val __obj = js.Dynamic.literal()
-    if (EC2Specification != null) __obj.updateDynamic("EC2Specification")(EC2Specification.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceSpecification]
   }
+  @scala.inline
+  implicit class ServiceSpecificationOps[Self <: ServiceSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEC2Specification(value: EC2Specification): Self = this.set("EC2Specification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEC2Specification: Self = this.set("EC2Specification", js.undefined)
+  }
+  
 }
 

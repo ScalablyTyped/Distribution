@@ -42,12 +42,6 @@ class DatePickerBase protected ()
   def UNSAFE_componentWillReceiveProps_MDatePickerBase(nextProps: IDatePickerProps): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MDatePickerBase(prevProps: IDatePickerProps, prevState: IDatePickerState): Unit = js.native
-  /** Sets focus to the text field */
-  /* CompleteClass */
-  override def focus(): Unit = js.native
-  /** Reset the state of the picker to the default */
-  /* CompleteClass */
-  override def reset(): Unit = js.native
 }
 
 /* static members */

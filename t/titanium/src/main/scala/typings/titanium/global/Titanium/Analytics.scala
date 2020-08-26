@@ -78,6 +78,7 @@ object Analytics extends js.Object {
     * @deprecated
     */
   def navEvent(from: String, to: String): Unit = js.native
+  def navEvent(from: String, to: String, name: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
   def navEvent(from: String, to: String, name: String): Unit = js.native
   def navEvent(from: String, to: String, name: String, data: js.Any): Unit = js.native
   /**

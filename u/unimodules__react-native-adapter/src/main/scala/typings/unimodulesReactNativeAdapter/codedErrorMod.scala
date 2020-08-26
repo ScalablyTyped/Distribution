@@ -13,10 +13,6 @@ object codedErrorMod extends js.Object {
     def this(code: String, message: String) = this()
     var code: String = js.native
     var info: js.UndefOr[js.Any] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
 }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "firebase__performance-types"
-version := "0.0.13-1c6e4e"
-scalaVersion := "2.13.2"
+version := "0.0.13-8c14d9"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeObject extends /* k */ StringDictionary[TreeValue]
 
 object TreeObject {
   @scala.inline
-  def apply(StringDictionary: /* k */ StringDictionary[TreeValue] = null): TreeObject = {
+  def apply(): TreeObject = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[TreeObject]
   }
 }

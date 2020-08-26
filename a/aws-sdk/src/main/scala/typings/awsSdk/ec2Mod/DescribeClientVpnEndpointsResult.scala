@@ -18,11 +18,32 @@ trait DescribeClientVpnEndpointsResult extends js.Object {
 
 object DescribeClientVpnEndpointsResult {
   @scala.inline
-  def apply(ClientVpnEndpoints: EndpointSet = null, NextToken: NextToken = null): DescribeClientVpnEndpointsResult = {
+  def apply(): DescribeClientVpnEndpointsResult = {
     val __obj = js.Dynamic.literal()
-    if (ClientVpnEndpoints != null) __obj.updateDynamic("ClientVpnEndpoints")(ClientVpnEndpoints.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClientVpnEndpointsResult]
   }
+  @scala.inline
+  implicit class DescribeClientVpnEndpointsResultOps[Self <: DescribeClientVpnEndpointsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientVpnEndpointsVarargs(value: ClientVpnEndpoint*): Self = this.set("ClientVpnEndpoints", js.Array(value :_*))
+    @scala.inline
+    def setClientVpnEndpoints(value: EndpointSet): Self = this.set("ClientVpnEndpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientVpnEndpoints: Self = this.set("ClientVpnEndpoints", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

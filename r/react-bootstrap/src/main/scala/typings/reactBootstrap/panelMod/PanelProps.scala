@@ -8,43 +8,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PanelProps
   extends AllHTMLAttributes[Panel]
      with TransitionCallbacks
      with ClassAttributes[Panel] {
-  var bsStyle: js.UndefOr[String] = js.undefined
-  var defaultExpanded: js.UndefOr[Boolean] = js.undefined
-  var eventKey: js.UndefOr[js.Any] = js.undefined
-  var expanded: js.UndefOr[Boolean] = js.undefined
+  var bsStyle: js.UndefOr[String] = js.native
+  var defaultExpanded: js.UndefOr[Boolean] = js.native
+  var eventKey: js.UndefOr[js.Any] = js.native
+  var expanded: js.UndefOr[Boolean] = js.native
   @JSName("onSelect")
-  var onSelect_PanelProps: js.UndefOr[SelectCallback] = js.undefined
-  var onToggle: js.UndefOr[SelectCallback] = js.undefined
+  var onSelect_PanelProps: js.UndefOr[SelectCallback] = js.native
+  var onToggle: js.UndefOr[SelectCallback] = js.native
 }
 
 object PanelProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[Panel] = null,
-    ClassAttributes: ClassAttributes[Panel] = null,
-    TransitionCallbacks: TransitionCallbacks = null,
-    bsStyle: String = null,
-    defaultExpanded: js.UndefOr[Boolean] = js.undefined,
-    eventKey: js.Any = null,
-    expanded: js.UndefOr[Boolean] = js.undefined,
-    onSelect: SelectCallback = null,
-    onToggle: SelectCallback = null
-  ): PanelProps = {
+  def apply(): PanelProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (TransitionCallbacks != null) js.Dynamic.global.Object.assign(__obj, TransitionCallbacks)
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultExpanded)) __obj.updateDynamic("defaultExpanded")(defaultExpanded.get.asInstanceOf[js.Any])
-    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
-    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelProps]
   }
+  @scala.inline
+  implicit class PanelPropsOps[Self <: PanelProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBsStyle(value: String): Self = this.set("bsStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsStyle: Self = this.set("bsStyle", js.undefined)
+    @scala.inline
+    def setDefaultExpanded(value: Boolean): Self = this.set("defaultExpanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultExpanded: Self = this.set("defaultExpanded", js.undefined)
+    @scala.inline
+    def setEventKey(value: js.Any): Self = this.set("eventKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventKey: Self = this.set("eventKey", js.undefined)
+    @scala.inline
+    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    @scala.inline
+    def setOnSelect(value: SelectCallback): Self = this.set("onSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setOnToggle(value: SelectCallback): Self = this.set("onToggle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnToggle: Self = this.set("onToggle", js.undefined)
+  }
+  
 }
 

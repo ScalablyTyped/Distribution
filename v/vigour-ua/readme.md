@@ -12,7 +12,7 @@ lightweight ua parser
 | Keywords           | useragent, browserify |
 | # releases         | 2 |
 | # dependents       | 32 |
-| # downloads        | 8693 |
+| # downloads        | 8533 |
 | # stars            | 1 |
 
 ## Links

@@ -49,22 +49,50 @@ trait SchemaCompany extends js.Object {
 
 object SchemaCompany {
   @scala.inline
-  def apply(
-    adminEmails: js.Array[String] = null,
-    companyId: String = null,
-    companyName: String = null,
-    name: String = null,
-    ownerEmails: js.Array[String] = null,
-    termsStatus: String = null
-  ): SchemaCompany = {
+  def apply(): SchemaCompany = {
     val __obj = js.Dynamic.literal()
-    if (adminEmails != null) __obj.updateDynamic("adminEmails")(adminEmails.asInstanceOf[js.Any])
-    if (companyId != null) __obj.updateDynamic("companyId")(companyId.asInstanceOf[js.Any])
-    if (companyName != null) __obj.updateDynamic("companyName")(companyName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ownerEmails != null) __obj.updateDynamic("ownerEmails")(ownerEmails.asInstanceOf[js.Any])
-    if (termsStatus != null) __obj.updateDynamic("termsStatus")(termsStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCompany]
   }
+  @scala.inline
+  implicit class SchemaCompanyOps[Self <: SchemaCompany] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdminEmailsVarargs(value: String*): Self = this.set("adminEmails", js.Array(value :_*))
+    @scala.inline
+    def setAdminEmails(value: js.Array[String]): Self = this.set("adminEmails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminEmails: Self = this.set("adminEmails", js.undefined)
+    @scala.inline
+    def setCompanyId(value: String): Self = this.set("companyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyId: Self = this.set("companyId", js.undefined)
+    @scala.inline
+    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyName: Self = this.set("companyName", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOwnerEmailsVarargs(value: String*): Self = this.set("ownerEmails", js.Array(value :_*))
+    @scala.inline
+    def setOwnerEmails(value: js.Array[String]): Self = this.set("ownerEmails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerEmails: Self = this.set("ownerEmails", js.undefined)
+    @scala.inline
+    def setTermsStatus(value: String): Self = this.set("termsStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTermsStatus: Self = this.set("termsStatus", js.undefined)
+  }
+  
 }
 

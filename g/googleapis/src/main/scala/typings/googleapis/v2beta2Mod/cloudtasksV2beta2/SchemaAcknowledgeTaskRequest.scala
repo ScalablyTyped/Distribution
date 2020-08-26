@@ -19,10 +19,26 @@ trait SchemaAcknowledgeTaskRequest extends js.Object {
 
 object SchemaAcknowledgeTaskRequest {
   @scala.inline
-  def apply(scheduleTime: String = null): SchemaAcknowledgeTaskRequest = {
+  def apply(): SchemaAcknowledgeTaskRequest = {
     val __obj = js.Dynamic.literal()
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAcknowledgeTaskRequest]
   }
+  @scala.inline
+  implicit class SchemaAcknowledgeTaskRequestOps[Self <: SchemaAcknowledgeTaskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScheduleTime(value: String): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
+  }
+  
 }
 

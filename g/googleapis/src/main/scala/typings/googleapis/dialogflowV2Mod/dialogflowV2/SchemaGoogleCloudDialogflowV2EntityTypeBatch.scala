@@ -17,10 +17,28 @@ trait SchemaGoogleCloudDialogflowV2EntityTypeBatch extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2EntityTypeBatch {
   @scala.inline
-  def apply(entityTypes: js.Array[SchemaGoogleCloudDialogflowV2EntityType] = null): SchemaGoogleCloudDialogflowV2EntityTypeBatch = {
+  def apply(): SchemaGoogleCloudDialogflowV2EntityTypeBatch = {
     val __obj = js.Dynamic.literal()
-    if (entityTypes != null) __obj.updateDynamic("entityTypes")(entityTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2EntityTypeBatch]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2EntityTypeBatchOps[Self <: SchemaGoogleCloudDialogflowV2EntityTypeBatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2EntityType*): Self = this.set("entityTypes", js.Array(value :_*))
+    @scala.inline
+    def setEntityTypes(value: js.Array[SchemaGoogleCloudDialogflowV2EntityType]): Self = this.set("entityTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityTypes: Self = this.set("entityTypes", js.undefined)
+  }
+  
 }
 

@@ -21,6 +21,20 @@ class TmplAstTextAttribute protected () extends TextAttribute {
     name: String,
     value: String,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
+    i18n: Message
+  ) = this()
+  def this(
+    name: String,
+    value: String,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    valueSpan: js.UndefOr[scala.Nothing],
+    i18n: Node
+  ) = this()
+  def this(
+    name: String,
+    value: String,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     i18n: Message
   ) = this()

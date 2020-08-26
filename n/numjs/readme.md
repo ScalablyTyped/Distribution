@@ -12,7 +12,7 @@ Like NumPy, in JavaScript
 | Keywords           | ndarray, array, multi, multidimensional, dimension, higher, image, volume, webgl, tensor, matrix, linear, algebra, science, numerical, computing, stride, shape, numpy |
 | # releases         | 2 |
 | # dependents       | 17 |
-| # downloads        | 131176 |
+| # downloads        | 130138 |
 | # stars            | 7 |
 
 ## Links

@@ -10,9 +10,9 @@ jQuery plugin to mask data entry in the input text in the form of money (currenc
 | ------------------ | :-------------: |
 | Full name          | jquery-maskmoney |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 94765 |
+| # downloads        | 96461 |
 | # stars            | 4 |
 
 ## Links

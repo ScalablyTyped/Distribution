@@ -12,7 +12,7 @@ Responsive Modal / Dialog window for jQuery, Zepto and AngularJS
 | Keywords           | modal, dialog, window, popup, alert, lightbox, responsive, mobile, jquery, jquery-plugin, zepto, angular, angularjs |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 256 |
+| # downloads        | 245 |
 | # stars            | 1 |
 
 ## Links

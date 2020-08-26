@@ -31,6 +31,7 @@ class ResourceCampaigncreativeassociations protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaCampaignCreativeAssociation] = js.native
   def insert(callback: BodyResponseCallback[SchemaCampaignCreativeAssociation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCampaignCreativeAssociation] = js.native
   def insert(params: ParamsResourceCampaigncreativeassociationsInsert): GaxiosPromise[SchemaCampaignCreativeAssociation] = js.native
   def insert(
     params: ParamsResourceCampaigncreativeassociationsInsert,
@@ -66,6 +67,7 @@ class ResourceCampaigncreativeassociations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCampaignCreativeAssociationsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCampaignCreativeAssociationsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCampaignCreativeAssociationsListResponse] = js.native
   def list(params: ParamsResourceCampaigncreativeassociationsList): GaxiosPromise[SchemaCampaignCreativeAssociationsListResponse] = js.native
   def list(
     params: ParamsResourceCampaigncreativeassociationsList,

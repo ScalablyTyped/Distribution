@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.ValueOf<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.IPayInPaymentType> */
 /* Rewritten from type alias, can be one of: 
-  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DIRECT_DEBIT
-  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PREAUTHORIZED
-  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CARD
-  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYPAL
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANK_WIRE
+  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYPAL
+  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CARD
+  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PREAUTHORIZED
+  - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DIRECT_DEBIT
 */
 trait PayInPaymentType extends js.Object
 

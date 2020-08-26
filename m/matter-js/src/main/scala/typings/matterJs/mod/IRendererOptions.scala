@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IRendererOptions extends js.Object {
   /**
     * Sets scene background
     * @type string
     * default undefined
     */
-  var background: js.UndefOr[String] = js.undefined
+  var background: js.UndefOr[String] = js.native
   /**
     * A flag that specifies if `render.bounds` should be used when rendering.
     *
@@ -18,7 +19,7 @@ trait IRendererOptions extends js.Object {
     * @type boolean
     * @default false
     */
-  var hasBounds: js.UndefOr[Boolean] = js.undefined
+  var hasBounds: js.UndefOr[Boolean] = js.native
   /**
     * The target height in pixels of the `render.canvas` to be created.
     *
@@ -26,7 +27,7 @@ trait IRendererOptions extends js.Object {
     * @type number
     * @default 600
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     * The target width in pixels of the `render.canvas` to be created.
     *
@@ -34,39 +35,63 @@ trait IRendererOptions extends js.Object {
     * @type number
     * @default 800
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
   /**
     * Sets wireframe background if `render.options.wireframes` is enabled
     * @type string
     * default undefined
     */
-  var wireframeBackground: js.UndefOr[String] = js.undefined
+  var wireframeBackground: js.UndefOr[String] = js.native
   /**
     * Render wireframes only
     * @type boolean
     * @default true
     */
-  var wireframes: js.UndefOr[Boolean] = js.undefined
+  var wireframes: js.UndefOr[Boolean] = js.native
 }
 
 object IRendererOptions {
   @scala.inline
-  def apply(
-    background: String = null,
-    hasBounds: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    wireframeBackground: String = null,
-    wireframes: js.UndefOr[Boolean] = js.undefined
-  ): IRendererOptions = {
+  def apply(): IRendererOptions = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasBounds)) __obj.updateDynamic("hasBounds")(hasBounds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (wireframeBackground != null) __obj.updateDynamic("wireframeBackground")(wireframeBackground.asInstanceOf[js.Any])
-    if (!js.isUndefined(wireframes)) __obj.updateDynamic("wireframes")(wireframes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRendererOptions]
   }
+  @scala.inline
+  implicit class IRendererOptionsOps[Self <: IRendererOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setHasBounds(value: Boolean): Self = this.set("hasBounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasBounds: Self = this.set("hasBounds", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWireframeBackground(value: String): Self = this.set("wireframeBackground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWireframeBackground: Self = this.set("wireframeBackground", js.undefined)
+    @scala.inline
+    def setWireframes(value: Boolean): Self = this.set("wireframes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWireframes: Self = this.set("wireframes", js.undefined)
+  }
+  
 }
 

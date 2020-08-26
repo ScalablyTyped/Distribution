@@ -12,7 +12,7 @@ A 53-bit wide implementation of integers for GraphQL
 | Keywords           | graphql, int, bigint, long, number |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 195925 |
+| # downloads        | 207462 |
 | # stars            | 0 |
 
 ## Links

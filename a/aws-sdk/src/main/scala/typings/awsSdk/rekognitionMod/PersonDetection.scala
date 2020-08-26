@@ -18,11 +18,30 @@ trait PersonDetection extends js.Object {
 
 object PersonDetection {
   @scala.inline
-  def apply(Person: PersonDetail = null, Timestamp: js.UndefOr[Timestamp] = js.undefined): PersonDetection = {
+  def apply(): PersonDetection = {
     val __obj = js.Dynamic.literal()
-    if (Person != null) __obj.updateDynamic("Person")(Person.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timestamp)) __obj.updateDynamic("Timestamp")(Timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersonDetection]
   }
+  @scala.inline
+  implicit class PersonDetectionOps[Self <: PersonDetection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPerson(value: PersonDetail): Self = this.set("Person", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerson: Self = this.set("Person", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+  }
+  
 }
 

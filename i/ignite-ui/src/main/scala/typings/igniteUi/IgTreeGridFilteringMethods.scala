@@ -27,6 +27,7 @@ trait IgTreeGridFilteringMethods extends js.Object {
     * @param addedFromAdvanced
     */
   def filter(expressions: js.Array[_]): Unit = js.native
+  def filter(expressions: js.Array[_], updateUI: js.UndefOr[scala.Nothing], addedFromAdvanced: Boolean): Unit = js.native
   def filter(expressions: js.Array[_], updateUI: Boolean): Unit = js.native
   def filter(expressions: js.Array[_], updateUI: Boolean, addedFromAdvanced: Boolean): Unit = js.native
   /**

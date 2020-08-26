@@ -27,11 +27,9 @@ class ExportMappingJavaActionParameterValue protected () extends JavaActionParam
   ) = this()
   @JSName("model")
   var model_FExportMappingJavaActionParameterValue: IModel = js.native
-  def exportMapping(): js.Any = js.native
-  def exportMapping(newValue: IExportMapping): js.Any = js.native
+  def exportMapping: IExportMapping | Null = js.native
   def exportMappingQualifiedName: String | Null = js.native
-  @JSName("exportMapping")
-  def exportMapping_Union: IExportMapping | Null = js.native
+  def exportMapping_=(newValue: IExportMapping | Null): Unit = js.native
 }
 
 /* static members */

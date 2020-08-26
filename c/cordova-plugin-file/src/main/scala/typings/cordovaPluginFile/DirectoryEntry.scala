@@ -25,7 +25,30 @@ trait DirectoryEntry extends Entry {
     * @param errorCallback   A callback that is called when errors happen.
     */
   def getDirectory(path: String): Unit = js.native
+  def getDirectory(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def getDirectory(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* entry */ this.type, Unit]
+  ): Unit = js.native
+  def getDirectory(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* entry */ this.type, Unit],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
   def getDirectory(path: String, options: Flags): Unit = js.native
+  def getDirectory(
+    path: String,
+    options: Flags,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
   def getDirectory(path: String, options: Flags, successCallback: js.Function1[/* entry */ this.type, Unit]): Unit = js.native
   def getDirectory(
     path: String,
@@ -47,7 +70,30 @@ trait DirectoryEntry extends Entry {
     * @param errorCallback   A callback that is called when errors happen.
     */
   def getFile(path: String): Unit = js.native
+  def getFile(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def getFile(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* entry */ FileEntry, Unit]
+  ): Unit = js.native
+  def getFile(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* entry */ FileEntry, Unit],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
   def getFile(path: String, options: Flags): Unit = js.native
+  def getFile(
+    path: String,
+    options: Flags,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
   def getFile(path: String, options: Flags, successCallback: js.Function1[/* entry */ FileEntry, Unit]): Unit = js.native
   def getFile(
     path: String,

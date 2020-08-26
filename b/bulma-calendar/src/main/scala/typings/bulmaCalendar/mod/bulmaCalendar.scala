@@ -18,17 +18,17 @@ trait bulmaCalendar extends js.Object {
     */
   def date: End = js.native
   /**
-    * Set date
-    */
-  def date(date: End): js.Any = js.native
-  /**
     * Get date format pattern
     */
   def dateFormat: String = js.native
   /**
     * Set date format pattern
     */
-  def dateFormat(dateFormat: String): js.Any = js.native
+  def dateFormat_=(dateFormat: String): Unit = js.native
+  /**
+    * Set date
+    */
+  def date_=(date: End): Unit = js.native
   def emit(name: EventType, data: bulmaCalendar): Unit = js.native
   def emit(name: EventType, data: bulmaCalendar, silent: Boolean): Unit = js.native
   /**
@@ -38,7 +38,7 @@ trait bulmaCalendar extends js.Object {
   /**
     * Set end date
     */
-  def endDate(endDate: Date): js.Any = js.native
+  def endDate_=(endDate: Date): Unit = js.native
   /**
     * Get selected end time
     */
@@ -46,7 +46,7 @@ trait bulmaCalendar extends js.Object {
   /**
     * Set end time
     */
-  def endTime(endTime: Date): js.Any = js.native
+  def endTime_=(endTime: Date): Unit = js.native
   /**
     * Close date picker (not available with "inline" display style)
     */
@@ -75,7 +75,7 @@ trait bulmaCalendar extends js.Object {
   /**
     * Set component lang
     */
-  def lang(lang: String): js.Any = js.native
+  def lang_=(lang: String): Unit = js.native
   // Custom EventEmitter implementation
   def listenerCount(eventName: EventType): Unit = js.native
   /**
@@ -85,7 +85,7 @@ trait bulmaCalendar extends js.Object {
   /**
     * Set max possible date
     */
-  def maxDate(maxDate: Date): js.Any = js.native
+  def maxDate_=(maxDate: Date): Unit = js.native
   def middleware[T /* <: EventType */](eventName: T, fn: js.Function1[/* event */ Event[T], Unit]): Unit = js.native
   /**
     * Get min possible date
@@ -94,7 +94,7 @@ trait bulmaCalendar extends js.Object {
   /**
     * Set min possible date
     */
-  def minDate(minDate: Date): js.Any = js.native
+  def minDate_=(minDate: Date): Unit = js.native
   def on[T /* <: EventType */](name: T, callback: js.Function1[/* event */ Event[T], Unit]): Unit = js.native
   def on[T /* <: EventType */](name: T, callback: js.Function1[/* event */ Event[T], Unit], once: Boolean): Unit = js.native
   def once[T /* <: EventType */](name: T, callback: js.Function1[/* event */ Event[T], Unit]): Unit = js.native
@@ -121,7 +121,7 @@ trait bulmaCalendar extends js.Object {
   /**
     * Se start date
     */
-  def startDate(startDate: Date): js.Any = js.native
+  def startDate_=(startDate: Date): Unit = js.native
   /**
     * Get selected start time
     */
@@ -129,15 +129,11 @@ trait bulmaCalendar extends js.Object {
   /**
     * Set start time
     */
-  def startTime(startTime: Date): js.Any = js.native
+  def startTime_=(startTime: Date): Unit = js.native
   /**
     * Get selected time
     */
   def time: Date = js.native
-  /**
-    * Set time
-    */
-  def time(time: Date): js.Any = js.native
   /**
     * Get time format pattern
     */
@@ -145,7 +141,11 @@ trait bulmaCalendar extends js.Object {
   /**
     * Set time format pattern
     */
-  def timeFormat(timeFormat: String): js.Any = js.native
+  def timeFormat_=(timeFormat: String): Unit = js.native
+  /**
+    * Set time
+    */
+  def time_=(time: Date): Unit = js.native
   /**
     * Get the date picker value as formatted string if no parameter else set the passed value
     *

@@ -31,13 +31,38 @@ trait SchemaElectoralDistrict extends js.Object {
 
 object SchemaElectoralDistrict {
   @scala.inline
-  def apply(id: String = null, kgForeignKey: String = null, name: String = null, scope: String = null): SchemaElectoralDistrict = {
+  def apply(): SchemaElectoralDistrict = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kgForeignKey != null) __obj.updateDynamic("kgForeignKey")(kgForeignKey.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaElectoralDistrict]
   }
+  @scala.inline
+  implicit class SchemaElectoralDistrictOps[Self <: SchemaElectoralDistrict] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKgForeignKey(value: String): Self = this.set("kgForeignKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKgForeignKey: Self = this.set("kgForeignKey", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+  }
+  
 }
 

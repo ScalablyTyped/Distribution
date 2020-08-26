@@ -39,24 +39,50 @@ trait SchemaReadingPosition extends js.Object {
 
 object SchemaReadingPosition {
   @scala.inline
-  def apply(
-    epubCfiPosition: String = null,
-    gbImagePosition: String = null,
-    gbTextPosition: String = null,
-    kind: String = null,
-    pdfPosition: String = null,
-    updated: String = null,
-    volumeId: String = null
-  ): SchemaReadingPosition = {
+  def apply(): SchemaReadingPosition = {
     val __obj = js.Dynamic.literal()
-    if (epubCfiPosition != null) __obj.updateDynamic("epubCfiPosition")(epubCfiPosition.asInstanceOf[js.Any])
-    if (gbImagePosition != null) __obj.updateDynamic("gbImagePosition")(gbImagePosition.asInstanceOf[js.Any])
-    if (gbTextPosition != null) __obj.updateDynamic("gbTextPosition")(gbTextPosition.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (pdfPosition != null) __obj.updateDynamic("pdfPosition")(pdfPosition.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReadingPosition]
   }
+  @scala.inline
+  implicit class SchemaReadingPositionOps[Self <: SchemaReadingPosition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEpubCfiPosition(value: String): Self = this.set("epubCfiPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEpubCfiPosition: Self = this.set("epubCfiPosition", js.undefined)
+    @scala.inline
+    def setGbImagePosition(value: String): Self = this.set("gbImagePosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGbImagePosition: Self = this.set("gbImagePosition", js.undefined)
+    @scala.inline
+    def setGbTextPosition(value: String): Self = this.set("gbTextPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGbTextPosition: Self = this.set("gbTextPosition", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPdfPosition(value: String): Self = this.set("pdfPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePdfPosition: Self = this.set("pdfPosition", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+  }
+  
 }
 

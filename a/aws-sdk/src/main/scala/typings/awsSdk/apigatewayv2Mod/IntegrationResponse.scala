@@ -34,21 +34,44 @@ trait IntegrationResponse extends js.Object {
 
 object IntegrationResponse {
   @scala.inline
-  def apply(
-    IntegrationResponseKey: SelectionKey,
-    ContentHandlingStrategy: ContentHandlingStrategy = null,
-    IntegrationResponseId: Id = null,
-    ResponseParameters: IntegrationParameters = null,
-    ResponseTemplates: TemplateMap = null,
-    TemplateSelectionExpression: SelectionExpression = null
-  ): IntegrationResponse = {
+  def apply(IntegrationResponseKey: SelectionKey): IntegrationResponse = {
     val __obj = js.Dynamic.literal(IntegrationResponseKey = IntegrationResponseKey.asInstanceOf[js.Any])
-    if (ContentHandlingStrategy != null) __obj.updateDynamic("ContentHandlingStrategy")(ContentHandlingStrategy.asInstanceOf[js.Any])
-    if (IntegrationResponseId != null) __obj.updateDynamic("IntegrationResponseId")(IntegrationResponseId.asInstanceOf[js.Any])
-    if (ResponseParameters != null) __obj.updateDynamic("ResponseParameters")(ResponseParameters.asInstanceOf[js.Any])
-    if (ResponseTemplates != null) __obj.updateDynamic("ResponseTemplates")(ResponseTemplates.asInstanceOf[js.Any])
-    if (TemplateSelectionExpression != null) __obj.updateDynamic("TemplateSelectionExpression")(TemplateSelectionExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegrationResponse]
   }
+  @scala.inline
+  implicit class IntegrationResponseOps[Self <: IntegrationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIntegrationResponseKey(value: SelectionKey): Self = this.set("IntegrationResponseKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentHandlingStrategy(value: ContentHandlingStrategy): Self = this.set("ContentHandlingStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentHandlingStrategy: Self = this.set("ContentHandlingStrategy", js.undefined)
+    @scala.inline
+    def setIntegrationResponseId(value: Id): Self = this.set("IntegrationResponseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrationResponseId: Self = this.set("IntegrationResponseId", js.undefined)
+    @scala.inline
+    def setResponseParameters(value: IntegrationParameters): Self = this.set("ResponseParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseParameters: Self = this.set("ResponseParameters", js.undefined)
+    @scala.inline
+    def setResponseTemplates(value: TemplateMap): Self = this.set("ResponseTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTemplates: Self = this.set("ResponseTemplates", js.undefined)
+    @scala.inline
+    def setTemplateSelectionExpression(value: SelectionExpression): Self = this.set("TemplateSelectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateSelectionExpression: Self = this.set("TemplateSelectionExpression", js.undefined)
+  }
+  
 }
 

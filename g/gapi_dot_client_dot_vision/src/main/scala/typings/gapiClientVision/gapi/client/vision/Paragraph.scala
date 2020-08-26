@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Paragraph extends js.Object {
   /**
     * The bounding box for the paragraph.
@@ -22,21 +23,45 @@ trait Paragraph extends js.Object {
     * 1----0
     * and the vertice order will still be (0, 1, 2, 3).
     */
-  var boundingBox: js.UndefOr[BoundingPoly] = js.undefined
+  var boundingBox: js.UndefOr[BoundingPoly] = js.native
   /** Additional information detected for the paragraph. */
-  var property: js.UndefOr[TextProperty] = js.undefined
+  var property: js.UndefOr[TextProperty] = js.native
   /** List of words in this paragraph. */
-  var words: js.UndefOr[js.Array[Word]] = js.undefined
+  var words: js.UndefOr[js.Array[Word]] = js.native
 }
 
 object Paragraph {
   @scala.inline
-  def apply(boundingBox: BoundingPoly = null, property: TextProperty = null, words: js.Array[Word] = null): Paragraph = {
+  def apply(): Paragraph = {
     val __obj = js.Dynamic.literal()
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[Paragraph]
   }
+  @scala.inline
+  implicit class ParagraphOps[Self <: Paragraph] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingBox(value: BoundingPoly): Self = this.set("boundingBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingBox: Self = this.set("boundingBox", js.undefined)
+    @scala.inline
+    def setProperty(value: TextProperty): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+    @scala.inline
+    def setWordsVarargs(value: Word*): Self = this.set("words", js.Array(value :_*))
+    @scala.inline
+    def setWords(value: js.Array[Word]): Self = this.set("words", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWords: Self = this.set("words", js.undefined)
+  }
+  
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ui-box/dist/cache", JSImport.Namespace)
+@JSImport("ui-box/dist/src/cache", JSImport.Namespace)
 @js.native
 object cacheMod extends js.Object {
   def clear(): Unit = js.native
@@ -14,7 +14,7 @@ object cacheMod extends js.Object {
   def hydrate(newEntries: js.Array[CacheEntry]): Unit = js.native
   def set(property: String, value: js.Object, className: String): Unit = js.native
   def set(property: String, value: CacheValue, className: String): Unit = js.native
-  type CacheEntry = js.Tuple2[/** key */ String, /** value */ String]
+  type CacheEntry = js.Tuple2[String, String]
   type CacheValue = BoxPropValue
 }
 

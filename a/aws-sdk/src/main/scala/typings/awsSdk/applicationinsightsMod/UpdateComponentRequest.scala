@@ -26,16 +26,36 @@ trait UpdateComponentRequest extends js.Object {
 
 object UpdateComponentRequest {
   @scala.inline
-  def apply(
-    ComponentName: ComponentName,
-    ResourceGroupName: ResourceGroupName,
-    NewComponentName: NewComponentName = null,
-    ResourceList: ResourceList = null
-  ): UpdateComponentRequest = {
+  def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName): UpdateComponentRequest = {
     val __obj = js.Dynamic.literal(ComponentName = ComponentName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
-    if (NewComponentName != null) __obj.updateDynamic("NewComponentName")(NewComponentName.asInstanceOf[js.Any])
-    if (ResourceList != null) __obj.updateDynamic("ResourceList")(ResourceList.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateComponentRequest]
   }
+  @scala.inline
+  implicit class UpdateComponentRequestOps[Self <: UpdateComponentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentName(value: ComponentName): Self = this.set("ComponentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceGroupName(value: ResourceGroupName): Self = this.set("ResourceGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewComponentName(value: NewComponentName): Self = this.set("NewComponentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewComponentName: Self = this.set("NewComponentName", js.undefined)
+    @scala.inline
+    def setResourceListVarargs(value: ResourceARN*): Self = this.set("ResourceList", js.Array(value :_*))
+    @scala.inline
+    def setResourceList(value: ResourceList): Self = this.set("ResourceList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceList: Self = this.set("ResourceList", js.undefined)
+  }
+  
 }
 

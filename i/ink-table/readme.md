@@ -12,7 +12,7 @@ A table component for Ink.
 | Keywords           | cli, ink-cli, ink, table, ink-table, ink-component, component |
 | # releases         | 7 |
 | # dependents       | 14 |
-| # downloads        | 2748 |
+| # downloads        | 2911 |
 | # stars            | 0 |
 
 ## Links

@@ -36,6 +36,12 @@ trait SignedData extends js.Object {
     * @memberOf SignedData
     */
   def sign(privateKey: CryptoKey, signerIndex: Double): ArrayBuffer = js.native
+  def sign(
+    privateKey: CryptoKey,
+    signerIndex: Double,
+    hashAlgorithm: js.UndefOr[scala.Nothing],
+    data: BufferSource
+  ): ArrayBuffer = js.native
   def sign(privateKey: CryptoKey, signerIndex: Double, hashAlgorithm: String): ArrayBuffer = js.native
   def sign(privateKey: CryptoKey, signerIndex: Double, hashAlgorithm: String, data: BufferSource): ArrayBuffer = js.native
   def toJSON(): js.Any = js.native

@@ -12,6 +12,12 @@ object progressMod extends js.Object {
   def monitorPromisesProgress(
     promises: js.Array[js.Promise[js.Object | Unit]],
     onProgress: OnProgressCallback,
+    startFraction: js.UndefOr[scala.Nothing],
+    endFraction: Double
+  ): js.Promise[js.Array[js.Object]] = js.native
+  def monitorPromisesProgress(
+    promises: js.Array[js.Promise[js.Object | Unit]],
+    onProgress: OnProgressCallback,
     startFraction: Double
   ): js.Promise[js.Array[js.Object]] = js.native
   def monitorPromisesProgress(

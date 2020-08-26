@@ -81,6 +81,7 @@ class ResourceSpreadsheetsDevelopermetadata protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDeveloperMetadata] = js.native
   def get(callback: BodyResponseCallback[SchemaDeveloperMetadata]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeveloperMetadata] = js.native
   def get(params: ParamsResourceSpreadsheetsDevelopermetadataGet): GaxiosPromise[SchemaDeveloperMetadata] = js.native
   def get(
     params: ParamsResourceSpreadsheetsDevelopermetadataGet,
@@ -168,6 +169,7 @@ class ResourceSpreadsheetsDevelopermetadata protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaSearchDeveloperMetadataResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchDeveloperMetadataResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchDeveloperMetadataResponse] = js.native
   def search(params: ParamsResourceSpreadsheetsDevelopermetadataSearch): GaxiosPromise[SchemaSearchDeveloperMetadataResponse] = js.native
   def search(
     params: ParamsResourceSpreadsheetsDevelopermetadataSearch,

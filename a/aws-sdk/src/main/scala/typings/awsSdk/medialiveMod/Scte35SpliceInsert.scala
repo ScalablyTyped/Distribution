@@ -22,16 +22,34 @@ trait Scte35SpliceInsert extends js.Object {
 
 object Scte35SpliceInsert {
   @scala.inline
-  def apply(
-    AdAvailOffset: js.UndefOr[integerMinNegative1000Max1000] = js.undefined,
-    NoRegionalBlackoutFlag: Scte35SpliceInsertNoRegionalBlackoutBehavior = null,
-    WebDeliveryAllowedFlag: Scte35SpliceInsertWebDeliveryAllowedBehavior = null
-  ): Scte35SpliceInsert = {
+  def apply(): Scte35SpliceInsert = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AdAvailOffset)) __obj.updateDynamic("AdAvailOffset")(AdAvailOffset.get.asInstanceOf[js.Any])
-    if (NoRegionalBlackoutFlag != null) __obj.updateDynamic("NoRegionalBlackoutFlag")(NoRegionalBlackoutFlag.asInstanceOf[js.Any])
-    if (WebDeliveryAllowedFlag != null) __obj.updateDynamic("WebDeliveryAllowedFlag")(WebDeliveryAllowedFlag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35SpliceInsert]
   }
+  @scala.inline
+  implicit class Scte35SpliceInsertOps[Self <: Scte35SpliceInsert] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdAvailOffset(value: integerMinNegative1000Max1000): Self = this.set("AdAvailOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdAvailOffset: Self = this.set("AdAvailOffset", js.undefined)
+    @scala.inline
+    def setNoRegionalBlackoutFlag(value: Scte35SpliceInsertNoRegionalBlackoutBehavior): Self = this.set("NoRegionalBlackoutFlag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoRegionalBlackoutFlag: Self = this.set("NoRegionalBlackoutFlag", js.undefined)
+    @scala.inline
+    def setWebDeliveryAllowedFlag(value: Scte35SpliceInsertWebDeliveryAllowedBehavior): Self = this.set("WebDeliveryAllowedFlag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebDeliveryAllowedFlag: Self = this.set("WebDeliveryAllowedFlag", js.undefined)
+  }
+  
 }
 

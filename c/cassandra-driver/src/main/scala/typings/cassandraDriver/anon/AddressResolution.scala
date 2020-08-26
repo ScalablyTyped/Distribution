@@ -10,33 +10,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddressResolution extends js.Object {
-  var addressResolution: js.UndefOr[AddressTranslator] = js.undefined
-  var loadBalancing: js.UndefOr[LoadBalancingPolicy] = js.undefined
-  var reconnection: js.UndefOr[ReconnectionPolicy] = js.undefined
-  var retry: js.UndefOr[RetryPolicy] = js.undefined
-  var speculativeExecution: js.UndefOr[SpeculativeExecutionPolicy] = js.undefined
-  var timestampGeneration: js.UndefOr[TimestampGenerator] = js.undefined
+  var addressResolution: js.UndefOr[AddressTranslator] = js.native
+  var loadBalancing: js.UndefOr[LoadBalancingPolicy] = js.native
+  var reconnection: js.UndefOr[ReconnectionPolicy] = js.native
+  var retry: js.UndefOr[RetryPolicy] = js.native
+  var speculativeExecution: js.UndefOr[SpeculativeExecutionPolicy] = js.native
+  var timestampGeneration: js.UndefOr[TimestampGenerator] = js.native
 }
 
 object AddressResolution {
   @scala.inline
-  def apply(
-    addressResolution: AddressTranslator = null,
-    loadBalancing: LoadBalancingPolicy = null,
-    reconnection: ReconnectionPolicy = null,
-    retry: RetryPolicy = null,
-    speculativeExecution: SpeculativeExecutionPolicy = null,
-    timestampGeneration: TimestampGenerator = null
-  ): AddressResolution = {
+  def apply(): AddressResolution = {
     val __obj = js.Dynamic.literal()
-    if (addressResolution != null) __obj.updateDynamic("addressResolution")(addressResolution.asInstanceOf[js.Any])
-    if (loadBalancing != null) __obj.updateDynamic("loadBalancing")(loadBalancing.asInstanceOf[js.Any])
-    if (reconnection != null) __obj.updateDynamic("reconnection")(reconnection.asInstanceOf[js.Any])
-    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (speculativeExecution != null) __obj.updateDynamic("speculativeExecution")(speculativeExecution.asInstanceOf[js.Any])
-    if (timestampGeneration != null) __obj.updateDynamic("timestampGeneration")(timestampGeneration.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressResolution]
   }
+  @scala.inline
+  implicit class AddressResolutionOps[Self <: AddressResolution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressResolution(value: AddressTranslator): Self = this.set("addressResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressResolution: Self = this.set("addressResolution", js.undefined)
+    @scala.inline
+    def setLoadBalancing(value: LoadBalancingPolicy): Self = this.set("loadBalancing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancing: Self = this.set("loadBalancing", js.undefined)
+    @scala.inline
+    def setReconnection(value: ReconnectionPolicy): Self = this.set("reconnection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnection: Self = this.set("reconnection", js.undefined)
+    @scala.inline
+    def setRetry(value: RetryPolicy): Self = this.set("retry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetry: Self = this.set("retry", js.undefined)
+    @scala.inline
+    def setSpeculativeExecution(value: SpeculativeExecutionPolicy): Self = this.set("speculativeExecution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeculativeExecution: Self = this.set("speculativeExecution", js.undefined)
+    @scala.inline
+    def setTimestampGeneration(value: TimestampGenerator): Self = this.set("timestampGeneration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampGeneration: Self = this.set("timestampGeneration", js.undefined)
+  }
+  
 }
 

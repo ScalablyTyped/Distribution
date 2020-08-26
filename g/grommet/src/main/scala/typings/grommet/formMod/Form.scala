@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Form", "Form")
+@JSImport("grommet/es6/components/Form", "Form")
 @js.native
 class Form protected ()
   extends Component[
@@ -27,7 +27,7 @@ class Form protected ()
   ) = this()
 }
 
-@JSImport("grommet/components/Form", "Form")
+@JSImport("grommet/es6/components/Form", "Form")
 @js.native
 object Form
   extends TopLevel[TypedForm[js.Any]]

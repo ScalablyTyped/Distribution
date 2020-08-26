@@ -15,13 +15,38 @@ trait PartialClassNameMapListCl extends js.Object {
 
 object PartialClassNameMapListCl {
   @scala.inline
-  def apply(dense: String = null, padding: String = null, root: String = null, subheader: String = null): PartialClassNameMapListCl = {
+  def apply(): PartialClassNameMapListCl = {
     val __obj = js.Dynamic.literal()
-    if (dense != null) __obj.updateDynamic("dense")(dense.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (subheader != null) __obj.updateDynamic("subheader")(subheader.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapListCl]
   }
+  @scala.inline
+  implicit class PartialClassNameMapListClOps[Self <: PartialClassNameMapListCl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDense(value: String): Self = this.set("dense", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDense: Self = this.set("dense", js.undefined)
+    @scala.inline
+    def setPadding(value: String): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSubheader(value: String): Self = this.set("subheader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubheader: Self = this.set("subheader", js.undefined)
+  }
+  
 }
 

@@ -36,22 +36,46 @@ trait GlobalConfiguration extends js.Object {
 
 object GlobalConfiguration {
   @scala.inline
-  def apply(
-    InitialAudioGain: js.UndefOr[integerMinNegative60Max60] = js.undefined,
-    InputEndAction: GlobalConfigurationInputEndAction = null,
-    InputLossBehavior: InputLossBehavior = null,
-    OutputLockingMode: GlobalConfigurationOutputLockingMode = null,
-    OutputTimingSource: GlobalConfigurationOutputTimingSource = null,
-    SupportLowFramerateInputs: GlobalConfigurationLowFramerateInputs = null
-  ): GlobalConfiguration = {
+  def apply(): GlobalConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(InitialAudioGain)) __obj.updateDynamic("InitialAudioGain")(InitialAudioGain.get.asInstanceOf[js.Any])
-    if (InputEndAction != null) __obj.updateDynamic("InputEndAction")(InputEndAction.asInstanceOf[js.Any])
-    if (InputLossBehavior != null) __obj.updateDynamic("InputLossBehavior")(InputLossBehavior.asInstanceOf[js.Any])
-    if (OutputLockingMode != null) __obj.updateDynamic("OutputLockingMode")(OutputLockingMode.asInstanceOf[js.Any])
-    if (OutputTimingSource != null) __obj.updateDynamic("OutputTimingSource")(OutputTimingSource.asInstanceOf[js.Any])
-    if (SupportLowFramerateInputs != null) __obj.updateDynamic("SupportLowFramerateInputs")(SupportLowFramerateInputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalConfiguration]
   }
+  @scala.inline
+  implicit class GlobalConfigurationOps[Self <: GlobalConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitialAudioGain(value: integerMinNegative60Max60): Self = this.set("InitialAudioGain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialAudioGain: Self = this.set("InitialAudioGain", js.undefined)
+    @scala.inline
+    def setInputEndAction(value: GlobalConfigurationInputEndAction): Self = this.set("InputEndAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputEndAction: Self = this.set("InputEndAction", js.undefined)
+    @scala.inline
+    def setInputLossBehavior(value: InputLossBehavior): Self = this.set("InputLossBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputLossBehavior: Self = this.set("InputLossBehavior", js.undefined)
+    @scala.inline
+    def setOutputLockingMode(value: GlobalConfigurationOutputLockingMode): Self = this.set("OutputLockingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputLockingMode: Self = this.set("OutputLockingMode", js.undefined)
+    @scala.inline
+    def setOutputTimingSource(value: GlobalConfigurationOutputTimingSource): Self = this.set("OutputTimingSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputTimingSource: Self = this.set("OutputTimingSource", js.undefined)
+    @scala.inline
+    def setSupportLowFramerateInputs(value: GlobalConfigurationLowFramerateInputs): Self = this.set("SupportLowFramerateInputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportLowFramerateInputs: Self = this.set("SupportLowFramerateInputs", js.undefined)
+  }
+  
 }
 

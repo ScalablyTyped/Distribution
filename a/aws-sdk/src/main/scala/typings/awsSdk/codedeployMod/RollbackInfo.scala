@@ -22,16 +22,34 @@ trait RollbackInfo extends js.Object {
 
 object RollbackInfo {
   @scala.inline
-  def apply(
-    rollbackDeploymentId: DeploymentId = null,
-    rollbackMessage: Description = null,
-    rollbackTriggeringDeploymentId: DeploymentId = null
-  ): RollbackInfo = {
+  def apply(): RollbackInfo = {
     val __obj = js.Dynamic.literal()
-    if (rollbackDeploymentId != null) __obj.updateDynamic("rollbackDeploymentId")(rollbackDeploymentId.asInstanceOf[js.Any])
-    if (rollbackMessage != null) __obj.updateDynamic("rollbackMessage")(rollbackMessage.asInstanceOf[js.Any])
-    if (rollbackTriggeringDeploymentId != null) __obj.updateDynamic("rollbackTriggeringDeploymentId")(rollbackTriggeringDeploymentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollbackInfo]
   }
+  @scala.inline
+  implicit class RollbackInfoOps[Self <: RollbackInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRollbackDeploymentId(value: DeploymentId): Self = this.set("rollbackDeploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRollbackDeploymentId: Self = this.set("rollbackDeploymentId", js.undefined)
+    @scala.inline
+    def setRollbackMessage(value: Description): Self = this.set("rollbackMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRollbackMessage: Self = this.set("rollbackMessage", js.undefined)
+    @scala.inline
+    def setRollbackTriggeringDeploymentId(value: DeploymentId): Self = this.set("rollbackTriggeringDeploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRollbackTriggeringDeploymentId: Self = this.set("rollbackTriggeringDeploymentId", js.undefined)
+  }
+  
 }
 

@@ -10,7 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @octokit/types.@octokit/types/dist-types/RequestParameters.RequestParameters & {  method  :@octokit/types.@octokit/types/dist-types/RequestMethod.RequestMethod,   url  :@octokit/types.@octokit/types/dist-types/Url.Url} */
+/* Inlined @octokit/types.@octokit/types/dist-types/RequestParameters.RequestParameters & {  method :@octokit/types.@octokit/types/dist-types/RequestMethod.RequestMethod,   url :@octokit/types.@octokit/types/dist-types/Url.Url} */
+@js.native
 trait EndpointOptions
   extends /**
   * Any additional parameter will be passed as follows
@@ -25,41 +26,61 @@ trait EndpointOptions
     * If `baseUrl` is `https://enterprise.acme-inc.com/api/v3`, then the request
     * will be sent to `https://enterprise.acme-inc.com/api/v3/orgs/:org`.
     */
-  var baseUrl: js.UndefOr[Url] = js.undefined
+  var baseUrl: js.UndefOr[Url] = js.native
   /**
     * HTTP headers. Use lowercase keys.
     */
-  var headers: js.UndefOr[RequestHeaders] = js.undefined
+  var headers: js.UndefOr[RequestHeaders] = js.native
   /**
     * Media type options, see {@link https://developer.github.com/v3/media/|GitHub Developer Guide}
     */
-  var mediaType: js.UndefOr[Format] = js.undefined
-  var method: RequestMethod
+  var mediaType: js.UndefOr[Format] = js.native
+  var method: RequestMethod = js.native
   /**
     * Pass custom meta information for the request. The `request` object will be returned as is.
     */
-  var request: js.UndefOr[RequestRequestOptions] = js.undefined
-  var url: Url
+  var request: js.UndefOr[RequestRequestOptions] = js.native
+  var url: Url = js.native
 }
 
 object EndpointOptions {
   @scala.inline
-  def apply(
-    method: RequestMethod,
-    url: Url,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    baseUrl: Url = null,
-    headers: RequestHeaders = null,
-    mediaType: Format = null,
-    request: RequestRequestOptions = null
-  ): EndpointOptions = {
+  def apply(method: RequestMethod, url: Url): EndpointOptions = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointOptions]
   }
+  @scala.inline
+  implicit class EndpointOptionsOps[Self <: EndpointOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMethod(value: RequestMethod): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: Url): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBaseUrl(value: Url): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    @scala.inline
+    def setHeaders(value: RequestHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setMediaType(value: Format): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaType: Self = this.set("mediaType", js.undefined)
+    @scala.inline
+    def setRequest(value: RequestRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+  }
+  
 }
 

@@ -30,18 +30,38 @@ trait CreateSavingsPlanRequest extends js.Object {
 
 object CreateSavingsPlanRequest {
   @scala.inline
-  def apply(
-    commitment: Amount,
-    savingsPlanOfferingId: SavingsPlanOfferingId,
-    clientToken: ClientToken = null,
-    tags: TagMap = null,
-    upfrontPaymentAmount: Amount = null
-  ): CreateSavingsPlanRequest = {
+  def apply(commitment: Amount, savingsPlanOfferingId: SavingsPlanOfferingId): CreateSavingsPlanRequest = {
     val __obj = js.Dynamic.literal(commitment = commitment.asInstanceOf[js.Any], savingsPlanOfferingId = savingsPlanOfferingId.asInstanceOf[js.Any])
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (upfrontPaymentAmount != null) __obj.updateDynamic("upfrontPaymentAmount")(upfrontPaymentAmount.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSavingsPlanRequest]
   }
+  @scala.inline
+  implicit class CreateSavingsPlanRequestOps[Self <: CreateSavingsPlanRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommitment(value: Amount): Self = this.set("commitment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSavingsPlanOfferingId(value: SavingsPlanOfferingId): Self = this.set("savingsPlanOfferingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUpfrontPaymentAmount(value: Amount): Self = this.set("upfrontPaymentAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpfrontPaymentAmount: Self = this.set("upfrontPaymentAmount", js.undefined)
+  }
+  
 }
 

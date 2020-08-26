@@ -10,9 +10,9 @@ Map of nouns to their irregular plural form
 | ------------------ | :-------------: |
 | Full name          | irregular-plurals |
 | Keywords           | word, words, list, map, hash, json, irregular, plural, plurals, noun, nouns |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 36249126 |
+| # releases         | 4 |
+| # dependents       | 6 |
+| # downloads        | 41030507 |
 | # stars            | 2 |
 
 ## Links

@@ -35,16 +35,38 @@ trait SchemaDayPartTargeting extends js.Object {
 
 object SchemaDayPartTargeting {
   @scala.inline
-  def apply(
-    daysOfWeek: js.Array[String] = null,
-    hoursOfDay: js.Array[Double] = null,
-    userLocalTime: js.UndefOr[Boolean] = js.undefined
-  ): SchemaDayPartTargeting = {
+  def apply(): SchemaDayPartTargeting = {
     val __obj = js.Dynamic.literal()
-    if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek.asInstanceOf[js.Any])
-    if (hoursOfDay != null) __obj.updateDynamic("hoursOfDay")(hoursOfDay.asInstanceOf[js.Any])
-    if (!js.isUndefined(userLocalTime)) __obj.updateDynamic("userLocalTime")(userLocalTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDayPartTargeting]
   }
+  @scala.inline
+  implicit class SchemaDayPartTargetingOps[Self <: SchemaDayPartTargeting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDaysOfWeekVarargs(value: String*): Self = this.set("daysOfWeek", js.Array(value :_*))
+    @scala.inline
+    def setDaysOfWeek(value: js.Array[String]): Self = this.set("daysOfWeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDaysOfWeek: Self = this.set("daysOfWeek", js.undefined)
+    @scala.inline
+    def setHoursOfDayVarargs(value: Double*): Self = this.set("hoursOfDay", js.Array(value :_*))
+    @scala.inline
+    def setHoursOfDay(value: js.Array[Double]): Self = this.set("hoursOfDay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoursOfDay: Self = this.set("hoursOfDay", js.undefined)
+    @scala.inline
+    def setUserLocalTime(value: Boolean): Self = this.set("userLocalTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserLocalTime: Self = this.set("userLocalTime", js.undefined)
+  }
+  
 }
 

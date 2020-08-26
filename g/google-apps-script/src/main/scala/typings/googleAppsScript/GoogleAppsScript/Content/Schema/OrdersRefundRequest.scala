@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrdersRefundRequest extends js.Object {
-  var amount: js.UndefOr[Price] = js.undefined
-  var amountPretax: js.UndefOr[Price] = js.undefined
-  var amountTax: js.UndefOr[Price] = js.undefined
-  var operationId: js.UndefOr[String] = js.undefined
-  var reason: js.UndefOr[String] = js.undefined
-  var reasonText: js.UndefOr[String] = js.undefined
+  var amount: js.UndefOr[Price] = js.native
+  var amountPretax: js.UndefOr[Price] = js.native
+  var amountTax: js.UndefOr[Price] = js.native
+  var operationId: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.native
+  var reasonText: js.UndefOr[String] = js.native
 }
 
 object OrdersRefundRequest {
   @scala.inline
-  def apply(
-    amount: Price = null,
-    amountPretax: Price = null,
-    amountTax: Price = null,
-    operationId: String = null,
-    reason: String = null,
-    reasonText: String = null
-  ): OrdersRefundRequest = {
+  def apply(): OrdersRefundRequest = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (amountPretax != null) __obj.updateDynamic("amountPretax")(amountPretax.asInstanceOf[js.Any])
-    if (amountTax != null) __obj.updateDynamic("amountTax")(amountTax.asInstanceOf[js.Any])
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersRefundRequest]
   }
+  @scala.inline
+  implicit class OrdersRefundRequestOps[Self <: OrdersRefundRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: Price): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setAmountPretax(value: Price): Self = this.set("amountPretax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmountPretax: Self = this.set("amountPretax", js.undefined)
+    @scala.inline
+    def setAmountTax(value: Price): Self = this.set("amountTax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmountTax: Self = this.set("amountTax", js.undefined)
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+    @scala.inline
+    def setReasonText(value: String): Self = this.set("reasonText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonText: Self = this.set("reasonText", js.undefined)
+  }
+  
 }
 

@@ -38,20 +38,42 @@ trait ActionConfigurationProperty extends js.Object {
 
 object ActionConfigurationProperty {
   @scala.inline
-  def apply(
-    key: Boolean,
-    name: ActionConfigurationKey,
-    required: Boolean,
-    secret: Boolean,
-    description: Description = null,
-    queryable: js.UndefOr[Boolean] = js.undefined,
-    `type`: ActionConfigurationPropertyType = null
-  ): ActionConfigurationProperty = {
+  def apply(key: Boolean, name: ActionConfigurationKey, required: Boolean, secret: Boolean): ActionConfigurationProperty = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(queryable)) __obj.updateDynamic("queryable")(queryable.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionConfigurationProperty]
   }
+  @scala.inline
+  implicit class ActionConfigurationPropertyOps[Self <: ActionConfigurationProperty] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: Boolean): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ActionConfigurationKey): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecret(value: Boolean): Self = this.set("secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setQueryable(value: Boolean): Self = this.set("queryable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryable: Self = this.set("queryable", js.undefined)
+    @scala.inline
+    def setType(value: ActionConfigurationPropertyType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

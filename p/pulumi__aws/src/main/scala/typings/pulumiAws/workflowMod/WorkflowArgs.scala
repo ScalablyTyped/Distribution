@@ -24,16 +24,34 @@ trait WorkflowArgs extends js.Object {
 
 object WorkflowArgs {
   @scala.inline
-  def apply(
-    defaultRunProperties: Input[StringDictionary[_]] = null,
-    description: Input[String] = null,
-    name: Input[String] = null
-  ): WorkflowArgs = {
+  def apply(): WorkflowArgs = {
     val __obj = js.Dynamic.literal()
-    if (defaultRunProperties != null) __obj.updateDynamic("defaultRunProperties")(defaultRunProperties.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowArgs]
   }
+  @scala.inline
+  implicit class WorkflowArgsOps[Self <: WorkflowArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultRunProperties(value: Input[StringDictionary[_]]): Self = this.set("defaultRunProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRunProperties: Self = this.set("defaultRunProperties", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

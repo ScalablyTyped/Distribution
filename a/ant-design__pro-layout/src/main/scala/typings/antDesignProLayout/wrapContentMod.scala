@@ -1,8 +1,7 @@
 package typings.antDesignProLayout
 
-import typings.antDesignProLayout.anon.Children
-import typings.antDesignProLayout.anon.ContentHeight
-import typings.react.mod.Component
+import typings.antDesignProLayout.anon.ClassName
+import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,16 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/pro-layout/lib/WrapContent", JSImport.Namespace)
 @js.native
 object wrapContentMod extends js.Object {
-  @js.native
-  trait ResizeObserverContent
-    extends Component[Children, ContentHeight, js.Any] {
-    var resize: js.Any = js.native
-    @JSName("componentWillUnmount")
-    def componentWillUnmount_MResizeObserverContent(): Unit = js.native
-  }
-  
-  @js.native
-  class default () extends ResizeObserverContent
-  
+  val default: FC[ClassName] = js.native
 }
 

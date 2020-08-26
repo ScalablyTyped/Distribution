@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * It hides the complexity of parsing and evaluating SQL Statements and provides sophisticated methods for expanding a SQL-Statement with filter and
   * order criteria.
   */
+@js.native
 trait SQLQueryComposer
   extends XSQLQueryComposer
      with XTablesSupplier

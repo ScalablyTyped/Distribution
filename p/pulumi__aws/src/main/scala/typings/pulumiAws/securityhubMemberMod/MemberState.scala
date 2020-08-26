@@ -24,27 +24,49 @@ trait MemberState extends js.Object {
     */
   val masterId: js.UndefOr[Input[String]] = js.native
   /**
-    * The status of the relationship between the member account and its master account.
+    * The status of the member account relationship.
     */
   val memberStatus: js.UndefOr[Input[String]] = js.native
 }
 
 object MemberState {
   @scala.inline
-  def apply(
-    accountId: Input[String] = null,
-    email: Input[String] = null,
-    invite: Input[Boolean] = null,
-    masterId: Input[String] = null,
-    memberStatus: Input[String] = null
-  ): MemberState = {
+  def apply(): MemberState = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (invite != null) __obj.updateDynamic("invite")(invite.asInstanceOf[js.Any])
-    if (masterId != null) __obj.updateDynamic("masterId")(masterId.asInstanceOf[js.Any])
-    if (memberStatus != null) __obj.updateDynamic("memberStatus")(memberStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemberState]
   }
+  @scala.inline
+  implicit class MemberStateOps[Self <: MemberState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: Input[String]): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setEmail(value: Input[String]): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setInvite(value: Input[Boolean]): Self = this.set("invite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvite: Self = this.set("invite", js.undefined)
+    @scala.inline
+    def setMasterId(value: Input[String]): Self = this.set("masterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterId: Self = this.set("masterId", js.undefined)
+    @scala.inline
+    def setMemberStatus(value: Input[String]): Self = this.set("memberStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberStatus: Self = this.set("memberStatus", js.undefined)
+  }
+  
 }
 

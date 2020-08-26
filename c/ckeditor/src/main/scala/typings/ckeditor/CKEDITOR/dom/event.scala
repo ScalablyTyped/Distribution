@@ -17,7 +17,34 @@ trait event extends js.Object {
   def on(
     eventName: String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
+    scopeObj: js.UndefOr[scala.Nothing],
+    listenerData: js.UndefOr[scala.Nothing],
+    priority: Double
+  ): RemoveListener = js.native
+  def on(
+    eventName: String,
+    listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
+    scopeObj: js.UndefOr[scala.Nothing],
+    listenerData: js.Any
+  ): RemoveListener = js.native
+  def on(
+    eventName: String,
+    listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
+    scopeObj: js.UndefOr[scala.Nothing],
+    listenerData: js.Any,
+    priority: Double
+  ): RemoveListener = js.native
+  def on(
+    eventName: String,
+    listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
     scopeObj: js.Any
+  ): RemoveListener = js.native
+  def on(
+    eventName: String,
+    listenerFunction: js.Function1[/* eventInfo */ eventInfo, Unit],
+    scopeObj: js.Any,
+    listenerData: js.UndefOr[scala.Nothing],
+    priority: Double
   ): RemoveListener = js.native
   def on(
     eventName: String,

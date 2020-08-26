@@ -16,81 +16,148 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<favicons.favicons.Configuration> */
+@js.native
 trait PartialConfiguration extends js.Object {
-  var appDescription: js.UndefOr[String] = js.undefined
-  var appName: js.UndefOr[String] = js.undefined
-  var appShortName: js.UndefOr[String] = js.undefined
-  var appleStatusBarStyle: js.UndefOr[`black-translucent` | default | black] = js.undefined
-  var background: js.UndefOr[String] = js.undefined
-  var developerName: js.UndefOr[String] = js.undefined
-  var developerURL: js.UndefOr[String] = js.undefined
-  var dir: js.UndefOr[String] = js.undefined
-  var display: js.UndefOr[fullscreen | standalone | `minimal-ui` | browser] = js.undefined
-  var icons: js.UndefOr[PartialandroidbooleanIcon] = js.undefined
-  var lang: js.UndefOr[String] = js.undefined
-  var loadManifestWithCredentials: js.UndefOr[Boolean] = js.undefined
-  var logging: js.UndefOr[Boolean] = js.undefined
-  var manifestRelativePaths: js.UndefOr[Boolean] = js.undefined
-  var orientation: js.UndefOr[any | natural | portrait | landscape] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var pipeHTML: js.UndefOr[Boolean] = js.undefined
-  var pixel_art: js.UndefOr[Boolean] = js.undefined
-  var scope: js.UndefOr[String] = js.undefined
-  var start_url: js.UndefOr[String] = js.undefined
-  var theme_color: js.UndefOr[String] = js.undefined
-  var version: js.UndefOr[String] = js.undefined
+  var appDescription: js.UndefOr[String | Null] = js.native
+  var appName: js.UndefOr[String | Null] = js.native
+  var appShortName: js.UndefOr[String | Null] = js.native
+  var appleStatusBarStyle: js.UndefOr[`black-translucent` | default | black] = js.native
+  var background: js.UndefOr[String] = js.native
+  var developerName: js.UndefOr[String | Null] = js.native
+  var developerURL: js.UndefOr[String | Null] = js.native
+  var dir: js.UndefOr[String] = js.native
+  var display: js.UndefOr[fullscreen | standalone | `minimal-ui` | browser] = js.native
+  var icons: js.UndefOr[PartialandroidbooleanIcon] = js.native
+  var lang: js.UndefOr[String] = js.native
+  var loadManifestWithCredentials: js.UndefOr[Boolean] = js.native
+  var logging: js.UndefOr[Boolean] = js.native
+  var manifestRelativePaths: js.UndefOr[Boolean] = js.native
+  var orientation: js.UndefOr[any | natural | portrait | landscape] = js.native
+  var path: js.UndefOr[String] = js.native
+  var pipeHTML: js.UndefOr[Boolean] = js.native
+  var pixel_art: js.UndefOr[Boolean] = js.native
+  var scope: js.UndefOr[String] = js.native
+  var start_url: js.UndefOr[String] = js.native
+  var theme_color: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.native
 }
 
 object PartialConfiguration {
   @scala.inline
-  def apply(
-    appDescription: String = null,
-    appName: String = null,
-    appShortName: String = null,
-    appleStatusBarStyle: `black-translucent` | default | black = null,
-    background: String = null,
-    developerName: String = null,
-    developerURL: String = null,
-    dir: String = null,
-    display: fullscreen | standalone | `minimal-ui` | browser = null,
-    icons: PartialandroidbooleanIcon = null,
-    lang: String = null,
-    loadManifestWithCredentials: js.UndefOr[Boolean] = js.undefined,
-    logging: js.UndefOr[Boolean] = js.undefined,
-    manifestRelativePaths: js.UndefOr[Boolean] = js.undefined,
-    orientation: any | natural | portrait | landscape = null,
-    path: String = null,
-    pipeHTML: js.UndefOr[Boolean] = js.undefined,
-    pixel_art: js.UndefOr[Boolean] = js.undefined,
-    scope: String = null,
-    start_url: String = null,
-    theme_color: String = null,
-    version: String = null
-  ): PartialConfiguration = {
+  def apply(): PartialConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (appDescription != null) __obj.updateDynamic("appDescription")(appDescription.asInstanceOf[js.Any])
-    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
-    if (appShortName != null) __obj.updateDynamic("appShortName")(appShortName.asInstanceOf[js.Any])
-    if (appleStatusBarStyle != null) __obj.updateDynamic("appleStatusBarStyle")(appleStatusBarStyle.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (developerName != null) __obj.updateDynamic("developerName")(developerName.asInstanceOf[js.Any])
-    if (developerURL != null) __obj.updateDynamic("developerURL")(developerURL.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadManifestWithCredentials)) __obj.updateDynamic("loadManifestWithCredentials")(loadManifestWithCredentials.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(manifestRelativePaths)) __obj.updateDynamic("manifestRelativePaths")(manifestRelativePaths.get.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(pipeHTML)) __obj.updateDynamic("pipeHTML")(pipeHTML.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixel_art)) __obj.updateDynamic("pixel_art")(pixel_art.get.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (start_url != null) __obj.updateDynamic("start_url")(start_url.asInstanceOf[js.Any])
-    if (theme_color != null) __obj.updateDynamic("theme_color")(theme_color.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialConfiguration]
   }
+  @scala.inline
+  implicit class PartialConfigurationOps[Self <: PartialConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppDescription(value: String): Self = this.set("appDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppDescription: Self = this.set("appDescription", js.undefined)
+    @scala.inline
+    def setAppDescriptionNull: Self = this.set("appDescription", null)
+    @scala.inline
+    def setAppName(value: String): Self = this.set("appName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppName: Self = this.set("appName", js.undefined)
+    @scala.inline
+    def setAppNameNull: Self = this.set("appName", null)
+    @scala.inline
+    def setAppShortName(value: String): Self = this.set("appShortName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppShortName: Self = this.set("appShortName", js.undefined)
+    @scala.inline
+    def setAppShortNameNull: Self = this.set("appShortName", null)
+    @scala.inline
+    def setAppleStatusBarStyle(value: `black-translucent` | default | black): Self = this.set("appleStatusBarStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppleStatusBarStyle: Self = this.set("appleStatusBarStyle", js.undefined)
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setDeveloperName(value: String): Self = this.set("developerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeveloperName: Self = this.set("developerName", js.undefined)
+    @scala.inline
+    def setDeveloperNameNull: Self = this.set("developerName", null)
+    @scala.inline
+    def setDeveloperURL(value: String): Self = this.set("developerURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeveloperURL: Self = this.set("developerURL", js.undefined)
+    @scala.inline
+    def setDeveloperURLNull: Self = this.set("developerURL", null)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setDisplay(value: fullscreen | standalone | `minimal-ui` | browser): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setIcons(value: PartialandroidbooleanIcon): Self = this.set("icons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcons: Self = this.set("icons", js.undefined)
+    @scala.inline
+    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setLoadManifestWithCredentials(value: Boolean): Self = this.set("loadManifestWithCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadManifestWithCredentials: Self = this.set("loadManifestWithCredentials", js.undefined)
+    @scala.inline
+    def setLogging(value: Boolean): Self = this.set("logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("logging", js.undefined)
+    @scala.inline
+    def setManifestRelativePaths(value: Boolean): Self = this.set("manifestRelativePaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestRelativePaths: Self = this.set("manifestRelativePaths", js.undefined)
+    @scala.inline
+    def setOrientation(value: any | natural | portrait | landscape): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPipeHTML(value: Boolean): Self = this.set("pipeHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipeHTML: Self = this.set("pipeHTML", js.undefined)
+    @scala.inline
+    def setPixel_art(value: Boolean): Self = this.set("pixel_art", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixel_art: Self = this.set("pixel_art", js.undefined)
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setStart_url(value: String): Self = this.set("start_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart_url: Self = this.set("start_url", js.undefined)
+    @scala.inline
+    def setTheme_color(value: String): Self = this.set("theme_color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme_color: Self = this.set("theme_color", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

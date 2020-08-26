@@ -10,9 +10,9 @@ WebSocket adapter plugin for hapi routes
 | ------------------ | :-------------: |
 | Full name          | @hapi/nes |
 | Keywords           | hapi, plugin, websocket |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 5 |
-| # downloads        | 96605 |
+| # downloads        | 113790 |
 | # stars            | 0 |
 
 ## Links

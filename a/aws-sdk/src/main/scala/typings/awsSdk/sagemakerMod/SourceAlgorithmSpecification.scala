@@ -18,5 +18,22 @@ object SourceAlgorithmSpecification {
     val __obj = js.Dynamic.literal(SourceAlgorithms = SourceAlgorithms.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceAlgorithmSpecification]
   }
+  @scala.inline
+  implicit class SourceAlgorithmSpecificationOps[Self <: SourceAlgorithmSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceAlgorithmsVarargs(value: SourceAlgorithm*): Self = this.set("SourceAlgorithms", js.Array(value :_*))
+    @scala.inline
+    def setSourceAlgorithms(value: SourceAlgorithmList): Self = this.set("SourceAlgorithms", value.asInstanceOf[js.Any])
+  }
+  
 }
 

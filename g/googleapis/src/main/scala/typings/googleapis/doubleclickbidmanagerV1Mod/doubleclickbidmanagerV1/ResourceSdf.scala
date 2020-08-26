@@ -27,6 +27,7 @@ class ResourceSdf protected () extends js.Object {
     */
   def download(): GaxiosPromise[SchemaDownloadResponse] = js.native
   def download(callback: BodyResponseCallback[SchemaDownloadResponse]): Unit = js.native
+  def download(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDownloadResponse] = js.native
   def download(params: ParamsResourceSdfDownload): GaxiosPromise[SchemaDownloadResponse] = js.native
   def download(params: ParamsResourceSdfDownload, callback: BodyResponseCallback[SchemaDownloadResponse]): Unit = js.native
   def download(

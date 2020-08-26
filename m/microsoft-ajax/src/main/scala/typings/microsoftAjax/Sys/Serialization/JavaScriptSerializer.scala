@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
   * The JavaScriptSerializer class contains only static methods.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb310857(v=vs.100).aspx}
   */
+@js.native
 trait JavaScriptSerializer extends js.Object
 

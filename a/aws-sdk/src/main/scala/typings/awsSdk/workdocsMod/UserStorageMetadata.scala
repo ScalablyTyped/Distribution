@@ -18,11 +18,30 @@ trait UserStorageMetadata extends js.Object {
 
 object UserStorageMetadata {
   @scala.inline
-  def apply(StorageRule: StorageRuleType = null, StorageUtilizedInBytes: js.UndefOr[SizeType] = js.undefined): UserStorageMetadata = {
+  def apply(): UserStorageMetadata = {
     val __obj = js.Dynamic.literal()
-    if (StorageRule != null) __obj.updateDynamic("StorageRule")(StorageRule.asInstanceOf[js.Any])
-    if (!js.isUndefined(StorageUtilizedInBytes)) __obj.updateDynamic("StorageUtilizedInBytes")(StorageUtilizedInBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserStorageMetadata]
   }
+  @scala.inline
+  implicit class UserStorageMetadataOps[Self <: UserStorageMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStorageRule(value: StorageRuleType): Self = this.set("StorageRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageRule: Self = this.set("StorageRule", js.undefined)
+    @scala.inline
+    def setStorageUtilizedInBytes(value: SizeType): Self = this.set("StorageUtilizedInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageUtilizedInBytes: Self = this.set("StorageUtilizedInBytes", js.undefined)
+  }
+  
 }
 

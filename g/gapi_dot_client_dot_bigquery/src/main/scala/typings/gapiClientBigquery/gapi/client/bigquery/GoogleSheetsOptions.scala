@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoogleSheetsOptions extends js.Object {
   /**
     * [Optional] The number of rows at the top of a sheet that BigQuery will skip when reading the data. The default value is 0. This property is useful if
@@ -13,15 +14,31 @@ trait GoogleSheetsOptions extends js.Object {
     * Autodetect skips N-1 rows and tries to detect headers in row N. If headers are not detected, row N is just skipped. Otherwise row N is used to extract
     * column names for the detected schema.
     */
-  var skipLeadingRows: js.UndefOr[String] = js.undefined
+  var skipLeadingRows: js.UndefOr[String] = js.native
 }
 
 object GoogleSheetsOptions {
   @scala.inline
-  def apply(skipLeadingRows: String = null): GoogleSheetsOptions = {
+  def apply(): GoogleSheetsOptions = {
     val __obj = js.Dynamic.literal()
-    if (skipLeadingRows != null) __obj.updateDynamic("skipLeadingRows")(skipLeadingRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleSheetsOptions]
   }
+  @scala.inline
+  implicit class GoogleSheetsOptionsOps[Self <: GoogleSheetsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSkipLeadingRows(value: String): Self = this.set("skipLeadingRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipLeadingRows: Self = this.set("skipLeadingRows", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait CanaryScheduleOutput extends js.Object {
 
 object CanaryScheduleOutput {
   @scala.inline
-  def apply(DurationInSeconds: js.UndefOr[MaxOneYearInSeconds] = js.undefined, Expression: String = null): CanaryScheduleOutput = {
+  def apply(): CanaryScheduleOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DurationInSeconds)) __obj.updateDynamic("DurationInSeconds")(DurationInSeconds.get.asInstanceOf[js.Any])
-    if (Expression != null) __obj.updateDynamic("Expression")(Expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanaryScheduleOutput]
   }
+  @scala.inline
+  implicit class CanaryScheduleOutputOps[Self <: CanaryScheduleOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDurationInSeconds(value: MaxOneYearInSeconds): Self = this.set("DurationInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationInSeconds: Self = this.set("DurationInSeconds", js.undefined)
+    @scala.inline
+    def setExpression(value: String): Self = this.set("Expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpression: Self = this.set("Expression", js.undefined)
+  }
+  
 }
 

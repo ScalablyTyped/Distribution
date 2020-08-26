@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MirrorOptions extends js.Object {
-  var filter: js.UndefOr[js.Any] = js.undefined
-  var localDir: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[String] = js.undefined
-  var parallel: js.UndefOr[Boolean | Double] = js.undefined
-  var remoteDir: js.UndefOr[String] = js.undefined
-  var upload: js.UndefOr[Boolean] = js.undefined
+  var filter: js.UndefOr[js.Any] = js.native
+  var localDir: js.UndefOr[String] = js.native
+  var options: js.UndefOr[String] = js.native
+  var parallel: js.UndefOr[Boolean | Double] = js.native
+  var remoteDir: js.UndefOr[String] = js.native
+  var upload: js.UndefOr[Boolean] = js.native
 }
 
 object MirrorOptions {
   @scala.inline
-  def apply(
-    filter: js.Any = null,
-    localDir: String = null,
-    options: String = null,
-    parallel: Boolean | Double = null,
-    remoteDir: String = null,
-    upload: js.UndefOr[Boolean] = js.undefined
-  ): MirrorOptions = {
+  def apply(): MirrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (localDir != null) __obj.updateDynamic("localDir")(localDir.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
-    if (remoteDir != null) __obj.updateDynamic("remoteDir")(remoteDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(upload)) __obj.updateDynamic("upload")(upload.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MirrorOptions]
   }
+  @scala.inline
+  implicit class MirrorOptionsOps[Self <: MirrorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilter(value: js.Any): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setLocalDir(value: String): Self = this.set("localDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalDir: Self = this.set("localDir", js.undefined)
+    @scala.inline
+    def setOptions(value: String): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setParallel(value: Boolean | Double): Self = this.set("parallel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallel: Self = this.set("parallel", js.undefined)
+    @scala.inline
+    def setRemoteDir(value: String): Self = this.set("remoteDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteDir: Self = this.set("remoteDir", js.undefined)
+    @scala.inline
+    def setUpload(value: Boolean): Self = this.set("upload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpload: Self = this.set("upload", js.undefined)
+  }
+  
 }
 

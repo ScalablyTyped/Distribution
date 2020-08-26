@@ -29,6 +29,7 @@ class ResourceRealtime protected () extends js.Object {
     */
   def get(): GaxiosPromise[Unit] = js.native
   def get(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def get(params: ParamsResourceRealtimeGet): GaxiosPromise[Unit] = js.native
   def get(params: ParamsResourceRealtimeGet, callback: BodyResponseCallback[Unit]): Unit = js.native
   def get(
@@ -57,6 +58,7 @@ class ResourceRealtime protected () extends js.Object {
     */
   def update(): GaxiosPromise[Unit] = js.native
   def update(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def update(params: ParamsResourceRealtimeUpdate): GaxiosPromise[Unit] = js.native
   def update(params: ParamsResourceRealtimeUpdate, callback: BodyResponseCallback[Unit]): Unit = js.native
   def update(

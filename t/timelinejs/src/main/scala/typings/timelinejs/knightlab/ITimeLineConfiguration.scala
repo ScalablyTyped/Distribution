@@ -4,41 +4,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITimeLineConfiguration extends js.Object {
   /*
     * Optional path to css
     */
-  var css: js.UndefOr[String] = js.undefined
+  var css: js.UndefOr[String] = js.native
   /*
     * Optional debug to console
     */
-  var debug: js.UndefOr[Boolean] = js.undefined
+  var debug: js.UndefOr[Boolean] = js.native
   /*
     * Optional use a different div id for embed
     */
-  var embed_id: js.UndefOr[String] = js.undefined
+  var embed_id: js.UndefOr[String] = js.native
   /*
     * Optional font
     */
-  var font: js.UndefOr[String] = js.undefined
+  var font: js.UndefOr[String] = js.native
   /*
     * required in order to use maptype
     */
-  var gmap_key: js.UndefOr[String] = js.undefined
+  var gmap_key: js.UndefOr[String] = js.native
   /*
     * Optional location bar hashes
     */
-  var hash_bookmark: js.UndefOr[Boolean] = js.undefined
-  var height: String
+  var hash_bookmark: js.UndefOr[Boolean] = js.native
+  var height: String = js.native
   /*
     * Optional path to js
     */
   @JSName("js")
-  var js_ : js.UndefOr[String] = js.undefined
+  var js_ : js.UndefOr[String] = js.native
   /*
     * Optional language
     */
-  var lang: js.UndefOr[String] = js.undefined
+  var lang: js.UndefOr[String] = js.native
   /*
     * Stamen Maps:
     * toner
@@ -56,7 +57,7 @@ trait ITimeLineConfiguration extends js.Object {
     * OpenStreetMap:
     * osm
     */
-  var maptype: js.UndefOr[String] = js.undefined
+  var maptype: js.UndefOr[String] = js.native
   /*
     * path to json/ or link to googlespreadsheet
     * source Should be either the path to the JSON resource to load, or a JavaScript object corresponding to the
@@ -76,58 +77,99 @@ trait ITimeLineConfiguration extends js.Object {
     * Spreadsheets or Storify stories. Failing that, we assume the source is either JSON or JSONP. If string
     * matches on .jsonp, we will treat it as JSONP, otherwise, we will append ?callback=onJSONP_Data.
     */
-  var source: js.Any
+  var source: js.Any = js.native
   /*
     * Optional start at latest date
     */
-  var start_at_end: js.UndefOr[Boolean] = js.undefined
+  var start_at_end: js.UndefOr[Boolean] = js.native
   /*
     * Optional start at specific slide
     */
-  var start_at_slide: js.UndefOr[String] = js.undefined
+  var start_at_slide: js.UndefOr[String] = js.native
   /*
     * Optional tweak the default zoom level
     */
-  var start_zoom_adjust: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var width: String
+  var start_zoom_adjust: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var width: String = js.native
 }
 
 object ITimeLineConfiguration {
   @scala.inline
-  def apply(
-    height: String,
-    source: js.Any,
-    width: String,
-    css: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    embed_id: String = null,
-    font: String = null,
-    gmap_key: String = null,
-    hash_bookmark: js.UndefOr[Boolean] = js.undefined,
-    js_ : String = null,
-    lang: String = null,
-    maptype: String = null,
-    start_at_end: js.UndefOr[Boolean] = js.undefined,
-    start_at_slide: String = null,
-    start_zoom_adjust: String = null,
-    `type`: String = null
-  ): ITimeLineConfiguration = {
+  def apply(height: String, source: js.Any, width: String): ITimeLineConfiguration = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (embed_id != null) __obj.updateDynamic("embed_id")(embed_id.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (gmap_key != null) __obj.updateDynamic("gmap_key")(gmap_key.asInstanceOf[js.Any])
-    if (!js.isUndefined(hash_bookmark)) __obj.updateDynamic("hash_bookmark")(hash_bookmark.get.asInstanceOf[js.Any])
-    if (js_ != null) __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (maptype != null) __obj.updateDynamic("maptype")(maptype.asInstanceOf[js.Any])
-    if (!js.isUndefined(start_at_end)) __obj.updateDynamic("start_at_end")(start_at_end.get.asInstanceOf[js.Any])
-    if (start_at_slide != null) __obj.updateDynamic("start_at_slide")(start_at_slide.asInstanceOf[js.Any])
-    if (start_zoom_adjust != null) __obj.updateDynamic("start_zoom_adjust")(start_zoom_adjust.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimeLineConfiguration]
   }
+  @scala.inline
+  implicit class ITimeLineConfigurationOps[Self <: ITimeLineConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: js.Any): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCss(value: String): Self = this.set("css", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCss: Self = this.set("css", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setEmbed_id(value: String): Self = this.set("embed_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbed_id: Self = this.set("embed_id", js.undefined)
+    @scala.inline
+    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setGmap_key(value: String): Self = this.set("gmap_key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGmap_key: Self = this.set("gmap_key", js.undefined)
+    @scala.inline
+    def setHash_bookmark(value: Boolean): Self = this.set("hash_bookmark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash_bookmark: Self = this.set("hash_bookmark", js.undefined)
+    @scala.inline
+    def setJs_(value: String): Self = this.set("js", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJs_ : Self = this.set("js", js.undefined)
+    @scala.inline
+    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setMaptype(value: String): Self = this.set("maptype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaptype: Self = this.set("maptype", js.undefined)
+    @scala.inline
+    def setStart_at_end(value: Boolean): Self = this.set("start_at_end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart_at_end: Self = this.set("start_at_end", js.undefined)
+    @scala.inline
+    def setStart_at_slide(value: String): Self = this.set("start_at_slide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart_at_slide: Self = this.set("start_at_slide", js.undefined)
+    @scala.inline
+    def setStart_zoom_adjust(value: String): Self = this.set("start_zoom_adjust", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart_zoom_adjust: Self = this.set("start_zoom_adjust", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

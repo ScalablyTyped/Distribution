@@ -29,6 +29,7 @@ class ResourceProjectsNotificationchanneldescriptors protected () extends js.Obj
     */
   def get(): GaxiosPromise[SchemaNotificationChannelDescriptor] = js.native
   def get(callback: BodyResponseCallback[SchemaNotificationChannelDescriptor]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotificationChannelDescriptor] = js.native
   def get(params: ParamsResourceProjectsNotificationchanneldescriptorsGet): GaxiosPromise[SchemaNotificationChannelDescriptor] = js.native
   def get(
     params: ParamsResourceProjectsNotificationchanneldescriptorsGet,
@@ -63,6 +64,7 @@ class ResourceProjectsNotificationchanneldescriptors protected () extends js.Obj
     */
   def list(): GaxiosPromise[SchemaListNotificationChannelDescriptorsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListNotificationChannelDescriptorsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListNotificationChannelDescriptorsResponse] = js.native
   def list(params: ParamsResourceProjectsNotificationchanneldescriptorsList): GaxiosPromise[SchemaListNotificationChannelDescriptorsResponse] = js.native
   def list(
     params: ParamsResourceProjectsNotificationchanneldescriptorsList,

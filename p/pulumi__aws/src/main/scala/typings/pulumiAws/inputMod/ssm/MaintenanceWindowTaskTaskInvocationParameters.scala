@@ -27,18 +27,38 @@ trait MaintenanceWindowTaskTaskInvocationParameters extends js.Object {
 
 object MaintenanceWindowTaskTaskInvocationParameters {
   @scala.inline
-  def apply(
-    automationParameters: Input[MaintenanceWindowTaskTaskInvocationParametersAutomationParameters] = null,
-    lambdaParameters: Input[MaintenanceWindowTaskTaskInvocationParametersLambdaParameters] = null,
-    runCommandParameters: Input[MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters] = null,
-    stepFunctionsParameters: Input[MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters] = null
-  ): MaintenanceWindowTaskTaskInvocationParameters = {
+  def apply(): MaintenanceWindowTaskTaskInvocationParameters = {
     val __obj = js.Dynamic.literal()
-    if (automationParameters != null) __obj.updateDynamic("automationParameters")(automationParameters.asInstanceOf[js.Any])
-    if (lambdaParameters != null) __obj.updateDynamic("lambdaParameters")(lambdaParameters.asInstanceOf[js.Any])
-    if (runCommandParameters != null) __obj.updateDynamic("runCommandParameters")(runCommandParameters.asInstanceOf[js.Any])
-    if (stepFunctionsParameters != null) __obj.updateDynamic("stepFunctionsParameters")(stepFunctionsParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowTaskTaskInvocationParameters]
   }
+  @scala.inline
+  implicit class MaintenanceWindowTaskTaskInvocationParametersOps[Self <: MaintenanceWindowTaskTaskInvocationParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomationParameters(value: Input[MaintenanceWindowTaskTaskInvocationParametersAutomationParameters]): Self = this.set("automationParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomationParameters: Self = this.set("automationParameters", js.undefined)
+    @scala.inline
+    def setLambdaParameters(value: Input[MaintenanceWindowTaskTaskInvocationParametersLambdaParameters]): Self = this.set("lambdaParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaParameters: Self = this.set("lambdaParameters", js.undefined)
+    @scala.inline
+    def setRunCommandParameters(value: Input[MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters]): Self = this.set("runCommandParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunCommandParameters: Self = this.set("runCommandParameters", js.undefined)
+    @scala.inline
+    def setStepFunctionsParameters(value: Input[MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters]): Self = this.set("stepFunctionsParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepFunctionsParameters: Self = this.set("stepFunctionsParameters", js.undefined)
+  }
+  
 }
 

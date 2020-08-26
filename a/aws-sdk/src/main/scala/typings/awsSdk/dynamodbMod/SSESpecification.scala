@@ -22,16 +22,34 @@ trait SSESpecification extends js.Object {
 
 object SSESpecification {
   @scala.inline
-  def apply(
-    Enabled: js.UndefOr[SSEEnabled] = js.undefined,
-    KMSMasterKeyId: KMSMasterKeyId = null,
-    SSEType: SSEType = null
-  ): SSESpecification = {
+  def apply(): SSESpecification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (KMSMasterKeyId != null) __obj.updateDynamic("KMSMasterKeyId")(KMSMasterKeyId.asInstanceOf[js.Any])
-    if (SSEType != null) __obj.updateDynamic("SSEType")(SSEType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SSESpecification]
   }
+  @scala.inline
+  implicit class SSESpecificationOps[Self <: SSESpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: SSEEnabled): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setKMSMasterKeyId(value: KMSMasterKeyId): Self = this.set("KMSMasterKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSMasterKeyId: Self = this.set("KMSMasterKeyId", js.undefined)
+    @scala.inline
+    def setSSEType(value: SSEType): Self = this.set("SSEType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSEType: Self = this.set("SSEType", js.undefined)
+  }
+  
 }
 

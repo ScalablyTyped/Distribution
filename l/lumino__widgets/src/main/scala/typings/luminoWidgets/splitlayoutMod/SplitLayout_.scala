@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/splitlayout", "SplitLayout")
+@JSImport("@lumino/widgets/types/splitlayout", "SplitLayout")
 @js.native
 class SplitLayout_ protected () extends PanelLayout {
   /**

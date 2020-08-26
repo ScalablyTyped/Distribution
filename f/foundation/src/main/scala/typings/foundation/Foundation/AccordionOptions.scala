@@ -5,30 +5,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://foundation.zurb.com/docs/components/accordion.html#optional-javascript-configuration
+@js.native
 trait AccordionOptions extends js.Object {
-  var active_class: js.UndefOr[String] = js.undefined
-  var callback: js.UndefOr[js.Function0[_]] = js.undefined
-  var content_class: js.UndefOr[String] = js.undefined
-  var multi_expand: js.UndefOr[Boolean] = js.undefined
-  var toggleable: js.UndefOr[Boolean] = js.undefined
+  var active_class: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[js.Function0[_]] = js.native
+  var content_class: js.UndefOr[String] = js.native
+  var multi_expand: js.UndefOr[Boolean] = js.native
+  var toggleable: js.UndefOr[Boolean] = js.native
 }
 
 object AccordionOptions {
   @scala.inline
-  def apply(
-    active_class: String = null,
-    callback: () => _ = null,
-    content_class: String = null,
-    multi_expand: js.UndefOr[Boolean] = js.undefined,
-    toggleable: js.UndefOr[Boolean] = js.undefined
-  ): AccordionOptions = {
+  def apply(): AccordionOptions = {
     val __obj = js.Dynamic.literal()
-    if (active_class != null) __obj.updateDynamic("active_class")(active_class.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (content_class != null) __obj.updateDynamic("content_class")(content_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi_expand)) __obj.updateDynamic("multi_expand")(multi_expand.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccordionOptions]
   }
+  @scala.inline
+  implicit class AccordionOptionsOps[Self <: AccordionOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive_class(value: String): Self = this.set("active_class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive_class: Self = this.set("active_class", js.undefined)
+    @scala.inline
+    def setCallback(value: () => _): Self = this.set("callback", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setContent_class(value: String): Self = this.set("content_class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent_class: Self = this.set("content_class", js.undefined)
+    @scala.inline
+    def setMulti_expand(value: Boolean): Self = this.set("multi_expand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMulti_expand: Self = this.set("multi_expand", js.undefined)
+    @scala.inline
+    def setToggleable(value: Boolean): Self = this.set("toggleable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleable: Self = this.set("toggleable", js.undefined)
+  }
+  
 }
 

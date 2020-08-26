@@ -12,10 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Networking.Sockets.DatagramSocket")
 @js.native
 class DatagramSocket ()
-  extends typings.winrt.Windows.Networking.Sockets.DatagramSocket {
-  /* CompleteClass */
-  override def close(): Unit = js.native
-}
+  extends typings.winrt.Windows.Networking.Sockets.DatagramSocket
 
 /* static members */
 @JSGlobal("Windows.Networking.Sockets.DatagramSocket")

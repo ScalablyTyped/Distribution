@@ -32,22 +32,48 @@ trait CreateSystemInstanceRequest extends js.Object {
 
 object CreateSystemInstanceRequest {
   @scala.inline
-  def apply(
-    definition: DefinitionDocument,
-    target: DeploymentTarget,
-    flowActionsRoleArn: RoleArn = null,
-    greengrassGroupName: GroupName = null,
-    metricsConfiguration: MetricsConfiguration = null,
-    s3BucketName: S3BucketName = null,
-    tags: TagList = null
-  ): CreateSystemInstanceRequest = {
+  def apply(definition: DefinitionDocument, target: DeploymentTarget): CreateSystemInstanceRequest = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    if (flowActionsRoleArn != null) __obj.updateDynamic("flowActionsRoleArn")(flowActionsRoleArn.asInstanceOf[js.Any])
-    if (greengrassGroupName != null) __obj.updateDynamic("greengrassGroupName")(greengrassGroupName.asInstanceOf[js.Any])
-    if (metricsConfiguration != null) __obj.updateDynamic("metricsConfiguration")(metricsConfiguration.asInstanceOf[js.Any])
-    if (s3BucketName != null) __obj.updateDynamic("s3BucketName")(s3BucketName.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSystemInstanceRequest]
   }
+  @scala.inline
+  implicit class CreateSystemInstanceRequestOps[Self <: CreateSystemInstanceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefinition(value: DefinitionDocument): Self = this.set("definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTarget(value: DeploymentTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFlowActionsRoleArn(value: RoleArn): Self = this.set("flowActionsRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowActionsRoleArn: Self = this.set("flowActionsRoleArn", js.undefined)
+    @scala.inline
+    def setGreengrassGroupName(value: GroupName): Self = this.set("greengrassGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreengrassGroupName: Self = this.set("greengrassGroupName", js.undefined)
+    @scala.inline
+    def setMetricsConfiguration(value: MetricsConfiguration): Self = this.set("metricsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricsConfiguration: Self = this.set("metricsConfiguration", js.undefined)
+    @scala.inline
+    def setS3BucketName(value: S3BucketName): Self = this.set("s3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BucketName: Self = this.set("s3BucketName", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

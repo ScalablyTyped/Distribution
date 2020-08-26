@@ -26,11 +26,34 @@ trait SchemaFirstPartyMobileApplicationTargeting extends js.Object {
 
 object SchemaFirstPartyMobileApplicationTargeting {
   @scala.inline
-  def apply(excludedAppIds: js.Array[String] = null, targetedAppIds: js.Array[String] = null): SchemaFirstPartyMobileApplicationTargeting = {
+  def apply(): SchemaFirstPartyMobileApplicationTargeting = {
     val __obj = js.Dynamic.literal()
-    if (excludedAppIds != null) __obj.updateDynamic("excludedAppIds")(excludedAppIds.asInstanceOf[js.Any])
-    if (targetedAppIds != null) __obj.updateDynamic("targetedAppIds")(targetedAppIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFirstPartyMobileApplicationTargeting]
   }
+  @scala.inline
+  implicit class SchemaFirstPartyMobileApplicationTargetingOps[Self <: SchemaFirstPartyMobileApplicationTargeting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExcludedAppIdsVarargs(value: String*): Self = this.set("excludedAppIds", js.Array(value :_*))
+    @scala.inline
+    def setExcludedAppIds(value: js.Array[String]): Self = this.set("excludedAppIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedAppIds: Self = this.set("excludedAppIds", js.undefined)
+    @scala.inline
+    def setTargetedAppIdsVarargs(value: String*): Self = this.set("targetedAppIds", js.Array(value :_*))
+    @scala.inline
+    def setTargetedAppIds(value: js.Array[String]): Self = this.set("targetedAppIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetedAppIds: Self = this.set("targetedAppIds", js.undefined)
+  }
+  
 }
 

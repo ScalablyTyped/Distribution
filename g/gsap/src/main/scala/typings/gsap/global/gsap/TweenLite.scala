@@ -26,7 +26,34 @@ object TweenLite extends js.Object {
   var ticker: js.Any = js.native
   /** Provides a simple way to call a () => void after a set amount of time (or frames). */
   def delayedCall(delay: Double, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.gsap.gsap.TweenLite = js.native
+  def delayedCall(
+    delay: Double,
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    useFrames: Boolean
+  ): typings.gsap.gsap.TweenLite = js.native
+  def delayedCall(
+    delay: Double,
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): typings.gsap.gsap.TweenLite = js.native
+  def delayedCall(
+    delay: Double,
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    useFrames: Boolean
+  ): typings.gsap.gsap.TweenLite = js.native
   def delayedCall(delay: Double, callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[_]): typings.gsap.gsap.TweenLite = js.native
+  def delayedCall(
+    delay: Double,
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.Array[_],
+    scope: js.UndefOr[scala.Nothing],
+    useFrames: Boolean
+  ): typings.gsap.gsap.TweenLite = js.native
   def delayedCall(
     delay: Double,
     callback: js.Function1[/* repeated */ js.Any, Unit],
@@ -60,6 +87,7 @@ object TweenLite extends js.Object {
   def killDelayedCallsTo(func: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   /** Kills all the tweens (or specific tweening properties) of a particular object or delayedCalls to a particular () => void. */
   def killTweensOf(target: js.Any): Unit = js.native
+  def killTweensOf(target: js.Any, onlyActive: js.UndefOr[scala.Nothing], vars: js.Any): Unit = js.native
   def killTweensOf(target: js.Any, onlyActive: Boolean): Unit = js.native
   def killTweensOf(target: js.Any, onlyActive: Boolean, vars: js.Any): Unit = js.native
   /** Permits you to control what happens when too much time elapses between two ticks (updates) of the engine, adjusting the core timing mechanism to compensate and avoid "jumps". */

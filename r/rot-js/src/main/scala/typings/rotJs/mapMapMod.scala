@@ -24,6 +24,7 @@ object mapMapMod extends js.Object {
     */
   abstract class default () extends Map {
     def this(width: Double) = this()
+    def this(width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(width: Double, height: Double) = this()
   }
   

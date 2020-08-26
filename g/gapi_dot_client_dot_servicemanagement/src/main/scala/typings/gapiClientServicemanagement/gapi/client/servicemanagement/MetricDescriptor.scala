@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MetricDescriptor extends js.Object {
   /** A detailed description of the metric, which can be used in documentation. */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * A concise name for the metric, which can be displayed in user interfaces.
     * Use sentence case without an ending period, for example "Request count".
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String] = js.native
   /**
     * The set of labels that can be used to describe a specific
     * instance of this metric type. For example, the
@@ -20,12 +21,12 @@ trait MetricDescriptor extends js.Object {
     * you can look at latencies for successful responses or just
     * for responses that failed.
     */
-  var labels: js.UndefOr[js.Array[LabelDescriptor]] = js.undefined
+  var labels: js.UndefOr[js.Array[LabelDescriptor]] = js.native
   /**
     * Whether the metric records instantaneous values, changes to a value, etc.
     * Some combinations of `metric_kind` and `value_type` might not be supported.
     */
-  var metricKind: js.UndefOr[String] = js.undefined
+  var metricKind: js.UndefOr[String] = js.native
   /**
     * The resource name of the metric descriptor. Depending on the
     * implementation, the name typically includes: (1) the parent resource name
@@ -36,7 +37,7 @@ trait MetricDescriptor extends js.Object {
     *
     * "projects/my-project-id/metricDescriptors/custom.googleapis.com%2Finvoice%2Fpaid%2Famount"
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * The metric type, including its DNS name prefix. The type is not
     * URL-encoded.  All user-defined custom metric types have the DNS name
@@ -46,7 +47,7 @@ trait MetricDescriptor extends js.Object {
     * "custom.googleapis.com/invoice/paid/amount"
     * "appengine.googleapis.com/http/server/response_latencies"
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * The unit in which the metric value is reported. It is only applicable
     * if the `value_type` is `INT64`, `DOUBLE`, or `DISTRIBUTION`. The
@@ -113,36 +114,66 @@ trait MetricDescriptor extends js.Object {
     * &#42; `NAME` is a sequence of non-blank printable ASCII characters not
     * containing '{' or '}'.
     */
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[String] = js.native
   /**
     * Whether the measurement is an integer, a floating-point number, etc.
     * Some combinations of `metric_kind` and `value_type` might not be supported.
     */
-  var valueType: js.UndefOr[String] = js.undefined
+  var valueType: js.UndefOr[String] = js.native
 }
 
 object MetricDescriptor {
   @scala.inline
-  def apply(
-    description: String = null,
-    displayName: String = null,
-    labels: js.Array[LabelDescriptor] = null,
-    metricKind: String = null,
-    name: String = null,
-    `type`: String = null,
-    unit: String = null,
-    valueType: String = null
-  ): MetricDescriptor = {
+  def apply(): MetricDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (metricKind != null) __obj.updateDynamic("metricKind")(metricKind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDescriptor]
   }
+  @scala.inline
+  implicit class MetricDescriptorOps[Self <: MetricDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: LabelDescriptor*): Self = this.set("labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: js.Array[LabelDescriptor]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMetricKind(value: String): Self = this.set("metricKind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricKind: Self = this.set("metricKind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+    @scala.inline
+    def setValueType(value: String): Self = this.set("valueType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueType: Self = this.set("valueType", js.undefined)
+  }
+  
 }
 

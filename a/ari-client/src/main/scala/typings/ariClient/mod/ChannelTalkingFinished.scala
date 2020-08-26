@@ -5,31 +5,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChannelTalkingFinished extends Event {
   /**
     * The channel on which talking completed.
     */
-  var channel: Channel
+  var channel: Channel = js.native
   /**
     * The length of time, in milliseconds, that talking was detected on the channel.
     */
-  var duration: Double
+  var duration: Double = js.native
 }
 
 object ChannelTalkingFinished {
   @scala.inline
-  def apply(
-    application: String,
-    channel: Channel,
-    duration: Double,
-    timestamp: Date,
-    `type`: String,
-    asterisk_id: String = null
-  ): ChannelTalkingFinished = {
+  def apply(application: String, channel: Channel, duration: Double, timestamp: Date, `type`: String): ChannelTalkingFinished = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (asterisk_id != null) __obj.updateDynamic("asterisk_id")(asterisk_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelTalkingFinished]
   }
+  @scala.inline
+  implicit class ChannelTalkingFinishedOps[Self <: ChannelTalkingFinished] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannel(value: Channel): Self = this.set("channel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+  }
+  
 }
 

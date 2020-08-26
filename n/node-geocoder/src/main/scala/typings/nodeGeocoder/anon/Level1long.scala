@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Level1long extends js.Object {
-  var level1long: js.UndefOr[String] = js.undefined
-  var level1short: js.UndefOr[String] = js.undefined
-  var level2long: js.UndefOr[String] = js.undefined
-  var level2short: js.UndefOr[String] = js.undefined
+  var level1long: js.UndefOr[String] = js.native
+  var level1short: js.UndefOr[String] = js.native
+  var level2long: js.UndefOr[String] = js.native
+  var level2short: js.UndefOr[String] = js.native
 }
 
 object Level1long {
   @scala.inline
-  def apply(
-    level1long: String = null,
-    level1short: String = null,
-    level2long: String = null,
-    level2short: String = null
-  ): Level1long = {
+  def apply(): Level1long = {
     val __obj = js.Dynamic.literal()
-    if (level1long != null) __obj.updateDynamic("level1long")(level1long.asInstanceOf[js.Any])
-    if (level1short != null) __obj.updateDynamic("level1short")(level1short.asInstanceOf[js.Any])
-    if (level2long != null) __obj.updateDynamic("level2long")(level2long.asInstanceOf[js.Any])
-    if (level2short != null) __obj.updateDynamic("level2short")(level2short.asInstanceOf[js.Any])
     __obj.asInstanceOf[Level1long]
   }
+  @scala.inline
+  implicit class Level1longOps[Self <: Level1long] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLevel1long(value: String): Self = this.set("level1long", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel1long: Self = this.set("level1long", js.undefined)
+    @scala.inline
+    def setLevel1short(value: String): Self = this.set("level1short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel1short: Self = this.set("level1short", js.undefined)
+    @scala.inline
+    def setLevel2long(value: String): Self = this.set("level2long", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel2long: Self = this.set("level2long", js.undefined)
+    @scala.inline
+    def setLevel2short(value: String): Self = this.set("level2short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel2short: Self = this.set("level2short", js.undefined)
+  }
+  
 }
 

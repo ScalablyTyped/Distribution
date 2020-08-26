@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides dialogs implementing the {@link com.sun.star.awt.XDialog} interface. */
+@js.native
 trait XDialogProvider2 extends XDialogProvider {
   /**
     * creates a dialog for the given URL, accepting additional creation parameters
@@ -18,7 +19,7 @@ trait XDialogProvider2 extends XDialogProvider {
     * dialog.**EventHandler** - specifies a component handling events in the dialog. See {@link createDialogWithHandler()} for a detailed specification of
     * dialog event handling.
     */
-  def createDialogWithArguments(URL: String, Arguments: SeqEquiv[NamedValue]): XDialog
+  def createDialogWithArguments(URL: String, Arguments: SeqEquiv[NamedValue]): XDialog = js.native
   /**
     * creates a dialog for the given URL accepting an Interface used to handle dialog events.
     * @param URL is the URL.
@@ -27,7 +28,7 @@ trait XDialogProvider2 extends XDialogProvider {
     * @see com.sun.star.awt.XDialogEventHandler
     * @throws com::sun::star::lang::IllegalArgumentException if no dialog for the given URL is found or if the URL is invalid or xHandler is null.
     */
-  def createDialogWithHandler(URL: String, xHandler: XInterface): XDialog
+  def createDialogWithHandler(URL: String, xHandler: XInterface): XDialog = js.native
 }
 
 object XDialogProvider2 {
@@ -43,5 +44,22 @@ object XDialogProvider2 {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDialog = js.Any.fromFunction1(createDialog), createDialogWithArguments = js.Any.fromFunction2(createDialogWithArguments), createDialogWithHandler = js.Any.fromFunction2(createDialogWithHandler), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XDialogProvider2]
   }
+  @scala.inline
+  implicit class XDialogProvider2Ops[Self <: XDialogProvider2] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateDialogWithArguments(value: (String, SeqEquiv[NamedValue]) => XDialog): Self = this.set("createDialogWithArguments", js.Any.fromFunction2(value))
+    @scala.inline
+    def setCreateDialogWithHandler(value: (String, XInterface) => XDialog): Self = this.set("createDialogWithHandler", js.Any.fromFunction2(value))
+  }
+  
 }
 

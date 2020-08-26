@@ -16,6 +16,13 @@ class InvokeMethodExpr protected () extends Expression {
     receiver: Expression,
     method: String,
     args: js.Array[Expression],
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    receiver: Expression,
+    method: String,
+    args: js.Array[Expression],
     `type`: Null,
     sourceSpan: ParseSourceSpan
   ) = this()
@@ -24,6 +31,13 @@ class InvokeMethodExpr protected () extends Expression {
     method: String,
     args: js.Array[Expression],
     `type`: Type,
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    receiver: Expression,
+    method: BuiltinMethod,
+    args: js.Array[Expression],
+    `type`: js.UndefOr[scala.Nothing],
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(

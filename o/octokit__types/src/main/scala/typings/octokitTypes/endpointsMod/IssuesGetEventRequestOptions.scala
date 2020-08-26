@@ -8,11 +8,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IssuesGetEventRequestOptions extends js.Object {
-  var headers: RequestHeaders
-  var method: GET
-  var request: RequestRequestOptions
-  var url: SlashreposSlashColonownerSlashColonrepoSlashissuesSlasheventsSlashColonevent_id
+  var headers: RequestHeaders = js.native
+  var method: GET = js.native
+  var request: RequestRequestOptions = js.native
+  var url: SlashreposSlashColonownerSlashColonrepoSlashissuesSlasheventsSlashColonevent_id = js.native
 }
 
 object IssuesGetEventRequestOptions {
@@ -26,5 +27,26 @@ object IssuesGetEventRequestOptions {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesGetEventRequestOptions]
   }
+  @scala.inline
+  implicit class IssuesGetEventRequestOptionsOps[Self <: IssuesGetEventRequestOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeaders(value: RequestHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMethod(value: GET): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequest(value: RequestRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashissuesSlasheventsSlashColonevent_id): Self = this.set("url", value.asInstanceOf[js.Any])
+  }
+  
 }
 

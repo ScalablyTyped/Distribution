@@ -5,105 +5,178 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SchedulerView extends js.Object {
-  var adaptiveSlotHeight: js.UndefOr[Boolean] = js.undefined
-  var allDayEventTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var allDaySlot: js.UndefOr[Boolean] = js.undefined
-  var allDaySlotTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var columnWidth: js.UndefOr[Double] = js.undefined
-  var dateHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var dayTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var editable: js.UndefOr[Boolean | SchedulerViewEditable] = js.undefined
-  var endTime: js.UndefOr[Date] = js.undefined
-  var eventHeight: js.UndefOr[Double | String] = js.undefined
-  var eventSpacing: js.UndefOr[Double] = js.undefined
-  var eventTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var eventTimeTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var eventsPerDay: js.UndefOr[Double] = js.undefined
-  var group: js.UndefOr[SchedulerViewGroup] = js.undefined
-  var majorTick: js.UndefOr[Double] = js.undefined
-  var majorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var minorTickCount: js.UndefOr[Double] = js.undefined
-  var minorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var selected: js.UndefOr[Boolean] = js.undefined
-  var selectedDateFormat: js.UndefOr[String] = js.undefined
-  var selectedShortDateFormat: js.UndefOr[String] = js.undefined
-  var showWorkHours: js.UndefOr[Boolean] = js.undefined
-  var slotTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var startTime: js.UndefOr[Date] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var workWeekEnd: js.UndefOr[Double] = js.undefined
-  var workWeekStart: js.UndefOr[Double] = js.undefined
+  var adaptiveSlotHeight: js.UndefOr[Boolean] = js.native
+  var allDayEventTemplate: js.UndefOr[String | js.Function] = js.native
+  var allDaySlot: js.UndefOr[Boolean] = js.native
+  var allDaySlotTemplate: js.UndefOr[String | js.Function] = js.native
+  var columnWidth: js.UndefOr[Double] = js.native
+  var dateHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var dayTemplate: js.UndefOr[String | js.Function] = js.native
+  var editable: js.UndefOr[Boolean | SchedulerViewEditable] = js.native
+  var endTime: js.UndefOr[Date] = js.native
+  var eventHeight: js.UndefOr[Double | String] = js.native
+  var eventSpacing: js.UndefOr[Double] = js.native
+  var eventTemplate: js.UndefOr[String | js.Function] = js.native
+  var eventTimeTemplate: js.UndefOr[String | js.Function] = js.native
+  var eventsPerDay: js.UndefOr[Double] = js.native
+  var group: js.UndefOr[SchedulerViewGroup] = js.native
+  var majorTick: js.UndefOr[Double] = js.native
+  var majorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var minorTickCount: js.UndefOr[Double] = js.native
+  var minorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var name: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[Boolean] = js.native
+  var selectedDateFormat: js.UndefOr[String] = js.native
+  var selectedShortDateFormat: js.UndefOr[String] = js.native
+  var showWorkHours: js.UndefOr[Boolean] = js.native
+  var slotTemplate: js.UndefOr[String | js.Function] = js.native
+  var startTime: js.UndefOr[Date] = js.native
+  var title: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var workWeekEnd: js.UndefOr[Double] = js.native
+  var workWeekStart: js.UndefOr[Double] = js.native
 }
 
 object SchedulerView {
   @scala.inline
-  def apply(
-    adaptiveSlotHeight: js.UndefOr[Boolean] = js.undefined,
-    allDayEventTemplate: String | js.Function = null,
-    allDaySlot: js.UndefOr[Boolean] = js.undefined,
-    allDaySlotTemplate: String | js.Function = null,
-    columnWidth: js.UndefOr[Double] = js.undefined,
-    dateHeaderTemplate: String | js.Function = null,
-    dayTemplate: String | js.Function = null,
-    editable: Boolean | SchedulerViewEditable = null,
-    endTime: Date = null,
-    eventHeight: Double | String = null,
-    eventSpacing: js.UndefOr[Double] = js.undefined,
-    eventTemplate: String | js.Function = null,
-    eventTimeTemplate: String | js.Function = null,
-    eventsPerDay: js.UndefOr[Double] = js.undefined,
-    group: SchedulerViewGroup = null,
-    majorTick: js.UndefOr[Double] = js.undefined,
-    majorTimeHeaderTemplate: String | js.Function = null,
-    minorTickCount: js.UndefOr[Double] = js.undefined,
-    minorTimeHeaderTemplate: String | js.Function = null,
-    name: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    selectedDateFormat: String = null,
-    selectedShortDateFormat: String = null,
-    showWorkHours: js.UndefOr[Boolean] = js.undefined,
-    slotTemplate: String | js.Function = null,
-    startTime: Date = null,
-    title: String = null,
-    `type`: String = null,
-    workWeekEnd: js.UndefOr[Double] = js.undefined,
-    workWeekStart: js.UndefOr[Double] = js.undefined
-  ): SchedulerView = {
+  def apply(): SchedulerView = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adaptiveSlotHeight)) __obj.updateDynamic("adaptiveSlotHeight")(adaptiveSlotHeight.get.asInstanceOf[js.Any])
-    if (allDayEventTemplate != null) __obj.updateDynamic("allDayEventTemplate")(allDayEventTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(allDaySlot)) __obj.updateDynamic("allDaySlot")(allDaySlot.get.asInstanceOf[js.Any])
-    if (allDaySlotTemplate != null) __obj.updateDynamic("allDaySlotTemplate")(allDaySlotTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
-    if (dateHeaderTemplate != null) __obj.updateDynamic("dateHeaderTemplate")(dateHeaderTemplate.asInstanceOf[js.Any])
-    if (dayTemplate != null) __obj.updateDynamic("dayTemplate")(dayTemplate.asInstanceOf[js.Any])
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (eventHeight != null) __obj.updateDynamic("eventHeight")(eventHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventSpacing)) __obj.updateDynamic("eventSpacing")(eventSpacing.get.asInstanceOf[js.Any])
-    if (eventTemplate != null) __obj.updateDynamic("eventTemplate")(eventTemplate.asInstanceOf[js.Any])
-    if (eventTimeTemplate != null) __obj.updateDynamic("eventTimeTemplate")(eventTimeTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventsPerDay)) __obj.updateDynamic("eventsPerDay")(eventsPerDay.get.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(majorTick)) __obj.updateDynamic("majorTick")(majorTick.get.asInstanceOf[js.Any])
-    if (majorTimeHeaderTemplate != null) __obj.updateDynamic("majorTimeHeaderTemplate")(majorTimeHeaderTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(minorTickCount)) __obj.updateDynamic("minorTickCount")(minorTickCount.get.asInstanceOf[js.Any])
-    if (minorTimeHeaderTemplate != null) __obj.updateDynamic("minorTimeHeaderTemplate")(minorTimeHeaderTemplate.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (selectedDateFormat != null) __obj.updateDynamic("selectedDateFormat")(selectedDateFormat.asInstanceOf[js.Any])
-    if (selectedShortDateFormat != null) __obj.updateDynamic("selectedShortDateFormat")(selectedShortDateFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWorkHours)) __obj.updateDynamic("showWorkHours")(showWorkHours.get.asInstanceOf[js.Any])
-    if (slotTemplate != null) __obj.updateDynamic("slotTemplate")(slotTemplate.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(workWeekEnd)) __obj.updateDynamic("workWeekEnd")(workWeekEnd.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(workWeekStart)) __obj.updateDynamic("workWeekStart")(workWeekStart.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerView]
   }
+  @scala.inline
+  implicit class SchedulerViewOps[Self <: SchedulerView] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdaptiveSlotHeight(value: Boolean): Self = this.set("adaptiveSlotHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdaptiveSlotHeight: Self = this.set("adaptiveSlotHeight", js.undefined)
+    @scala.inline
+    def setAllDayEventTemplate(value: String | js.Function): Self = this.set("allDayEventTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllDayEventTemplate: Self = this.set("allDayEventTemplate", js.undefined)
+    @scala.inline
+    def setAllDaySlot(value: Boolean): Self = this.set("allDaySlot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllDaySlot: Self = this.set("allDaySlot", js.undefined)
+    @scala.inline
+    def setAllDaySlotTemplate(value: String | js.Function): Self = this.set("allDaySlotTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllDaySlotTemplate: Self = this.set("allDaySlotTemplate", js.undefined)
+    @scala.inline
+    def setColumnWidth(value: Double): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    @scala.inline
+    def setDateHeaderTemplate(value: String | js.Function): Self = this.set("dateHeaderTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateHeaderTemplate: Self = this.set("dateHeaderTemplate", js.undefined)
+    @scala.inline
+    def setDayTemplate(value: String | js.Function): Self = this.set("dayTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDayTemplate: Self = this.set("dayTemplate", js.undefined)
+    @scala.inline
+    def setEditable(value: Boolean | SchedulerViewEditable): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setEndTime(value: Date): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setEventHeight(value: Double | String): Self = this.set("eventHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventHeight: Self = this.set("eventHeight", js.undefined)
+    @scala.inline
+    def setEventSpacing(value: Double): Self = this.set("eventSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventSpacing: Self = this.set("eventSpacing", js.undefined)
+    @scala.inline
+    def setEventTemplate(value: String | js.Function): Self = this.set("eventTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTemplate: Self = this.set("eventTemplate", js.undefined)
+    @scala.inline
+    def setEventTimeTemplate(value: String | js.Function): Self = this.set("eventTimeTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTimeTemplate: Self = this.set("eventTimeTemplate", js.undefined)
+    @scala.inline
+    def setEventsPerDay(value: Double): Self = this.set("eventsPerDay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventsPerDay: Self = this.set("eventsPerDay", js.undefined)
+    @scala.inline
+    def setGroup(value: SchedulerViewGroup): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setMajorTick(value: Double): Self = this.set("majorTick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajorTick: Self = this.set("majorTick", js.undefined)
+    @scala.inline
+    def setMajorTimeHeaderTemplate(value: String | js.Function): Self = this.set("majorTimeHeaderTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajorTimeHeaderTemplate: Self = this.set("majorTimeHeaderTemplate", js.undefined)
+    @scala.inline
+    def setMinorTickCount(value: Double): Self = this.set("minorTickCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorTickCount: Self = this.set("minorTickCount", js.undefined)
+    @scala.inline
+    def setMinorTimeHeaderTemplate(value: String | js.Function): Self = this.set("minorTimeHeaderTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorTimeHeaderTemplate: Self = this.set("minorTimeHeaderTemplate", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setSelectedDateFormat(value: String): Self = this.set("selectedDateFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedDateFormat: Self = this.set("selectedDateFormat", js.undefined)
+    @scala.inline
+    def setSelectedShortDateFormat(value: String): Self = this.set("selectedShortDateFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedShortDateFormat: Self = this.set("selectedShortDateFormat", js.undefined)
+    @scala.inline
+    def setShowWorkHours(value: Boolean): Self = this.set("showWorkHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowWorkHours: Self = this.set("showWorkHours", js.undefined)
+    @scala.inline
+    def setSlotTemplate(value: String | js.Function): Self = this.set("slotTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlotTemplate: Self = this.set("slotTemplate", js.undefined)
+    @scala.inline
+    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWorkWeekEnd(value: Double): Self = this.set("workWeekEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkWeekEnd: Self = this.set("workWeekEnd", js.undefined)
+    @scala.inline
+    def setWorkWeekStart(value: Double): Self = this.set("workWeekStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkWeekStart: Self = this.set("workWeekStart", js.undefined)
+  }
+  
 }
 

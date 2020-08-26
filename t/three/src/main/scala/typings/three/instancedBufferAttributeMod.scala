@@ -14,6 +14,12 @@ object instancedBufferAttributeMod extends js.Object {
   class InstancedBufferAttribute protected () extends BufferAttribute {
     def this(array: ArrayLike[Double], itemSize: Double) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean) = this()
+    def this(
+      array: ArrayLike[Double],
+      itemSize: Double,
+      normalized: js.UndefOr[scala.Nothing],
+      meshPerAttribute: Double
+    ) = this()
     def this(array: ArrayLike[Double], itemSize: Double, normalized: Boolean, meshPerAttribute: Double) = this()
     var meshPerAttribute: Double = js.native
   }

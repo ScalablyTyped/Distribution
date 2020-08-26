@@ -12,7 +12,7 @@ Library to parse and normalize ISBNs
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 12419 |
+| # downloads        | 13022 |
 | # stars            | 0 |
 
 ## Links

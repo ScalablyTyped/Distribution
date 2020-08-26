@@ -1,9 +1,6 @@
 package typings.stremioAddonSdk.mod
 
 import typings.stremioAddonSdk.anon.DefaultVideo
-import typings.stremioAddonSdk.stremioAddonSdkStrings.landscape
-import typings.stremioAddonSdk.stremioAddonSdkStrings.regular
-import typings.stremioAddonSdk.stremioAddonSdkStrings.square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +10,13 @@ import scala.scalajs.js.annotation._
   *
   * This description is displayed when the user selects an item form the catalog.
   */
+@js.native
 trait MetaDetail extends MetaPreview {
   /**
     * Human-readable that describes all the significant awards.
     */
-  var awards: js.UndefOr[String] = js.undefined
-  var behaviourHints: js.UndefOr[DefaultVideo] = js.undefined
+  var awards: js.UndefOr[String] = js.native
+  var behaviourHints: js.UndefOr[DefaultVideo] = js.native
   /**
     * Array of members of the cast.
     *
@@ -26,11 +24,11 @@ trait MetaDetail extends MetaPreview {
     *
     * @deprecated
     */
-  var cast: js.UndefOr[js.Array[String]] = js.undefined
+  var cast: js.UndefOr[js.Array[String]] = js.native
   /**
     * Official country of origin.
     */
-  var country: js.UndefOr[String] = js.undefined
+  var country: js.UndefOr[String] = js.native
   /**
     * Array of directors.
     *
@@ -38,7 +36,7 @@ trait MetaDetail extends MetaPreview {
     *
     * @deprecated
     */
-  var director: js.UndefOr[js.Array[String]] = js.undefined
+  var director: js.UndefOr[js.Array[String]] = js.native
   /**
     * genre/categories of the content.
     *
@@ -46,22 +44,22 @@ trait MetaDetail extends MetaPreview {
     *
     * **WARNING: this will soon be deprecated, use 'links' instead**
     */
-  var genres: js.UndefOr[js.Array[String]] = js.undefined
+  var genres: js.UndefOr[js.Array[String]] = js.native
   /**
     * IMDb rating, which should be a number from 0.0 to 10.0.
     */
-  var imdbRating: js.UndefOr[String] = js.undefined
+  var imdbRating: js.UndefOr[String] = js.native
   /**
     * Spoken language.
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String] = js.native
   /**
     * Can be used to link to internal pages of Stremio.
     *
     * example: array of actor / genre / director links.
     */
-  var links: js.UndefOr[js.Array[MetaLink]] = js.undefined
-  var releaseInfo: js.UndefOr[String] = js.undefined
+  var links: js.UndefOr[js.Array[MetaLink]] = js.native
+  var releaseInfo: js.UndefOr[String] = js.native
   /**
     * ISO 8601, initial release date.
     *
@@ -69,73 +67,110 @@ trait MetaDetail extends MetaPreview {
     *
     * e.g. "2010-12-06T05:00:00.000Z"
     */
-  var released: js.UndefOr[String] = js.undefined
+  var released: js.UndefOr[String] = js.native
   /**
     * Human-readable expected runtime.
     *
     * e.g. "120m"
     */
-  var runtime: js.UndefOr[String] = js.undefined
+  var runtime: js.UndefOr[String] = js.native
   /**
     * Used for channel and series.
     *
     * If you do not provide this (e.g. for movie), Stremio assumes this meta item has one video, and it's ID is equal to the meta item id.
     */
-  var videos: js.UndefOr[js.Array[MetaVideo]] = js.undefined
+  var videos: js.UndefOr[js.Array[MetaVideo]] = js.native
   /**
     * URL to official website.
     */
-  var website: js.UndefOr[String] = js.undefined
+  var website: js.UndefOr[String] = js.native
 }
 
 object MetaDetail {
   @scala.inline
-  def apply(
-    id: String,
-    name: String,
-    `type`: ContentType,
-    awards: String = null,
-    background: String = null,
-    behaviourHints: DefaultVideo = null,
-    cast: js.Array[String] = null,
-    country: String = null,
-    description: String = null,
-    director: js.Array[String] = null,
-    genres: js.Array[String] = null,
-    imdbRating: String = null,
-    language: String = null,
-    links: js.Array[MetaLink] = null,
-    logo: String = null,
-    poster: String = null,
-    posterShape: square | regular | landscape = null,
-    releaseInfo: String = null,
-    released: String = null,
-    runtime: String = null,
-    videos: js.Array[MetaVideo] = null,
-    website: String = null
-  ): MetaDetail = {
+  def apply(id: String, name: String, `type`: ContentType): MetaDetail = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (awards != null) __obj.updateDynamic("awards")(awards.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (behaviourHints != null) __obj.updateDynamic("behaviourHints")(behaviourHints.asInstanceOf[js.Any])
-    if (cast != null) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (director != null) __obj.updateDynamic("director")(director.asInstanceOf[js.Any])
-    if (genres != null) __obj.updateDynamic("genres")(genres.asInstanceOf[js.Any])
-    if (imdbRating != null) __obj.updateDynamic("imdbRating")(imdbRating.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (poster != null) __obj.updateDynamic("poster")(poster.asInstanceOf[js.Any])
-    if (posterShape != null) __obj.updateDynamic("posterShape")(posterShape.asInstanceOf[js.Any])
-    if (releaseInfo != null) __obj.updateDynamic("releaseInfo")(releaseInfo.asInstanceOf[js.Any])
-    if (released != null) __obj.updateDynamic("released")(released.asInstanceOf[js.Any])
-    if (runtime != null) __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])
-    if (videos != null) __obj.updateDynamic("videos")(videos.asInstanceOf[js.Any])
-    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaDetail]
   }
+  @scala.inline
+  implicit class MetaDetailOps[Self <: MetaDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwards(value: String): Self = this.set("awards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwards: Self = this.set("awards", js.undefined)
+    @scala.inline
+    def setBehaviourHints(value: DefaultVideo): Self = this.set("behaviourHints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBehaviourHints: Self = this.set("behaviourHints", js.undefined)
+    @scala.inline
+    def setCastVarargs(value: String*): Self = this.set("cast", js.Array(value :_*))
+    @scala.inline
+    def setCast(value: js.Array[String]): Self = this.set("cast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCast: Self = this.set("cast", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setDirectorVarargs(value: String*): Self = this.set("director", js.Array(value :_*))
+    @scala.inline
+    def setDirector(value: js.Array[String]): Self = this.set("director", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirector: Self = this.set("director", js.undefined)
+    @scala.inline
+    def setGenresVarargs(value: String*): Self = this.set("genres", js.Array(value :_*))
+    @scala.inline
+    def setGenres(value: js.Array[String]): Self = this.set("genres", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenres: Self = this.set("genres", js.undefined)
+    @scala.inline
+    def setImdbRating(value: String): Self = this.set("imdbRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImdbRating: Self = this.set("imdbRating", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLinksVarargs(value: MetaLink*): Self = this.set("links", js.Array(value :_*))
+    @scala.inline
+    def setLinks(value: js.Array[MetaLink]): Self = this.set("links", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinks: Self = this.set("links", js.undefined)
+    @scala.inline
+    def setReleaseInfo(value: String): Self = this.set("releaseInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseInfo: Self = this.set("releaseInfo", js.undefined)
+    @scala.inline
+    def setReleased(value: String): Self = this.set("released", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleased: Self = this.set("released", js.undefined)
+    @scala.inline
+    def setRuntime(value: String): Self = this.set("runtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntime: Self = this.set("runtime", js.undefined)
+    @scala.inline
+    def setVideosVarargs(value: MetaVideo*): Self = this.set("videos", js.Array(value :_*))
+    @scala.inline
+    def setVideos(value: js.Array[MetaVideo]): Self = this.set("videos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideos: Self = this.set("videos", js.undefined)
+    @scala.inline
+    def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsite: Self = this.set("website", js.undefined)
+  }
+  
 }
 

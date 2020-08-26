@@ -102,56 +102,120 @@ trait FleetAttributes extends js.Object {
 
 object FleetAttributes {
   @scala.inline
-  def apply(
-    BuildArn: BuildArn = null,
-    BuildId: BuildId = null,
-    CertificateConfiguration: CertificateConfiguration = null,
-    CreationTime: Timestamp = null,
-    Description: NonZeroAndMaxString = null,
-    FleetArn: FleetArn = null,
-    FleetId: FleetId = null,
-    FleetType: FleetType = null,
-    InstanceRoleArn: NonEmptyString = null,
-    InstanceType: EC2InstanceType = null,
-    LogPaths: StringList = null,
-    MetricGroups: MetricGroupList = null,
-    Name: NonZeroAndMaxString = null,
-    NewGameSessionProtectionPolicy: ProtectionPolicy = null,
-    OperatingSystem: OperatingSystem = null,
-    ResourceCreationLimitPolicy: ResourceCreationLimitPolicy = null,
-    ScriptArn: ScriptArn = null,
-    ScriptId: ScriptId = null,
-    ServerLaunchParameters: NonZeroAndMaxString = null,
-    ServerLaunchPath: NonZeroAndMaxString = null,
-    Status: FleetStatus = null,
-    StoppedActions: FleetActionList = null,
-    TerminationTime: Timestamp = null
-  ): FleetAttributes = {
+  def apply(): FleetAttributes = {
     val __obj = js.Dynamic.literal()
-    if (BuildArn != null) __obj.updateDynamic("BuildArn")(BuildArn.asInstanceOf[js.Any])
-    if (BuildId != null) __obj.updateDynamic("BuildId")(BuildId.asInstanceOf[js.Any])
-    if (CertificateConfiguration != null) __obj.updateDynamic("CertificateConfiguration")(CertificateConfiguration.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (FleetArn != null) __obj.updateDynamic("FleetArn")(FleetArn.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (FleetType != null) __obj.updateDynamic("FleetType")(FleetType.asInstanceOf[js.Any])
-    if (InstanceRoleArn != null) __obj.updateDynamic("InstanceRoleArn")(InstanceRoleArn.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (LogPaths != null) __obj.updateDynamic("LogPaths")(LogPaths.asInstanceOf[js.Any])
-    if (MetricGroups != null) __obj.updateDynamic("MetricGroups")(MetricGroups.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NewGameSessionProtectionPolicy != null) __obj.updateDynamic("NewGameSessionProtectionPolicy")(NewGameSessionProtectionPolicy.asInstanceOf[js.Any])
-    if (OperatingSystem != null) __obj.updateDynamic("OperatingSystem")(OperatingSystem.asInstanceOf[js.Any])
-    if (ResourceCreationLimitPolicy != null) __obj.updateDynamic("ResourceCreationLimitPolicy")(ResourceCreationLimitPolicy.asInstanceOf[js.Any])
-    if (ScriptArn != null) __obj.updateDynamic("ScriptArn")(ScriptArn.asInstanceOf[js.Any])
-    if (ScriptId != null) __obj.updateDynamic("ScriptId")(ScriptId.asInstanceOf[js.Any])
-    if (ServerLaunchParameters != null) __obj.updateDynamic("ServerLaunchParameters")(ServerLaunchParameters.asInstanceOf[js.Any])
-    if (ServerLaunchPath != null) __obj.updateDynamic("ServerLaunchPath")(ServerLaunchPath.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StoppedActions != null) __obj.updateDynamic("StoppedActions")(StoppedActions.asInstanceOf[js.Any])
-    if (TerminationTime != null) __obj.updateDynamic("TerminationTime")(TerminationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetAttributes]
   }
+  @scala.inline
+  implicit class FleetAttributesOps[Self <: FleetAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuildArn(value: BuildArn): Self = this.set("BuildArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildArn: Self = this.set("BuildArn", js.undefined)
+    @scala.inline
+    def setBuildId(value: BuildId): Self = this.set("BuildId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildId: Self = this.set("BuildId", js.undefined)
+    @scala.inline
+    def setCertificateConfiguration(value: CertificateConfiguration): Self = this.set("CertificateConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateConfiguration: Self = this.set("CertificateConfiguration", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: NonZeroAndMaxString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setFleetArn(value: FleetArn): Self = this.set("FleetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetArn: Self = this.set("FleetArn", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setFleetType(value: FleetType): Self = this.set("FleetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetType: Self = this.set("FleetType", js.undefined)
+    @scala.inline
+    def setInstanceRoleArn(value: NonEmptyString): Self = this.set("InstanceRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceRoleArn: Self = this.set("InstanceRoleArn", js.undefined)
+    @scala.inline
+    def setInstanceType(value: EC2InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setLogPathsVarargs(value: NonZeroAndMaxString*): Self = this.set("LogPaths", js.Array(value :_*))
+    @scala.inline
+    def setLogPaths(value: StringList): Self = this.set("LogPaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogPaths: Self = this.set("LogPaths", js.undefined)
+    @scala.inline
+    def setMetricGroupsVarargs(value: MetricGroup*): Self = this.set("MetricGroups", js.Array(value :_*))
+    @scala.inline
+    def setMetricGroups(value: MetricGroupList): Self = this.set("MetricGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricGroups: Self = this.set("MetricGroups", js.undefined)
+    @scala.inline
+    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNewGameSessionProtectionPolicy(value: ProtectionPolicy): Self = this.set("NewGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewGameSessionProtectionPolicy: Self = this.set("NewGameSessionProtectionPolicy", js.undefined)
+    @scala.inline
+    def setOperatingSystem(value: OperatingSystem): Self = this.set("OperatingSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystem: Self = this.set("OperatingSystem", js.undefined)
+    @scala.inline
+    def setResourceCreationLimitPolicy(value: ResourceCreationLimitPolicy): Self = this.set("ResourceCreationLimitPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceCreationLimitPolicy: Self = this.set("ResourceCreationLimitPolicy", js.undefined)
+    @scala.inline
+    def setScriptArn(value: ScriptArn): Self = this.set("ScriptArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScriptArn: Self = this.set("ScriptArn", js.undefined)
+    @scala.inline
+    def setScriptId(value: ScriptId): Self = this.set("ScriptId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScriptId: Self = this.set("ScriptId", js.undefined)
+    @scala.inline
+    def setServerLaunchParameters(value: NonZeroAndMaxString): Self = this.set("ServerLaunchParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerLaunchParameters: Self = this.set("ServerLaunchParameters", js.undefined)
+    @scala.inline
+    def setServerLaunchPath(value: NonZeroAndMaxString): Self = this.set("ServerLaunchPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerLaunchPath: Self = this.set("ServerLaunchPath", js.undefined)
+    @scala.inline
+    def setStatus(value: FleetStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStoppedActionsVarargs(value: FleetAction*): Self = this.set("StoppedActions", js.Array(value :_*))
+    @scala.inline
+    def setStoppedActions(value: FleetActionList): Self = this.set("StoppedActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoppedActions: Self = this.set("StoppedActions", js.undefined)
+    @scala.inline
+    def setTerminationTime(value: Timestamp): Self = this.set("TerminationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminationTime: Self = this.set("TerminationTime", js.undefined)
+  }
+  
 }
 

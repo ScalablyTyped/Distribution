@@ -50,28 +50,58 @@ trait JobSummary extends js.Object {
 
 object JobSummary {
   @scala.inline
-  def apply(
-    jobId: String,
-    jobName: String,
-    arrayProperties: ArrayPropertiesSummary = null,
-    container: ContainerSummary = null,
-    createdAt: js.UndefOr[Long] = js.undefined,
-    nodeProperties: NodePropertiesSummary = null,
-    startedAt: js.UndefOr[Long] = js.undefined,
-    status: JobStatus = null,
-    statusReason: String = null,
-    stoppedAt: js.UndefOr[Long] = js.undefined
-  ): JobSummary = {
+  def apply(jobId: String, jobName: String): JobSummary = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any])
-    if (arrayProperties != null) __obj.updateDynamic("arrayProperties")(arrayProperties.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(createdAt)) __obj.updateDynamic("createdAt")(createdAt.get.asInstanceOf[js.Any])
-    if (nodeProperties != null) __obj.updateDynamic("nodeProperties")(nodeProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(startedAt)) __obj.updateDynamic("startedAt")(startedAt.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(stoppedAt)) __obj.updateDynamic("stoppedAt")(stoppedAt.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobSummary]
   }
+  @scala.inline
+  implicit class JobSummaryOps[Self <: JobSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayProperties(value: ArrayPropertiesSummary): Self = this.set("arrayProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrayProperties: Self = this.set("arrayProperties", js.undefined)
+    @scala.inline
+    def setContainer(value: ContainerSummary): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Long): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setNodeProperties(value: NodePropertiesSummary): Self = this.set("nodeProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeProperties: Self = this.set("nodeProperties", js.undefined)
+    @scala.inline
+    def setStartedAt(value: Long): Self = this.set("startedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedAt: Self = this.set("startedAt", js.undefined)
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: String): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+    @scala.inline
+    def setStoppedAt(value: Long): Self = this.set("stoppedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoppedAt: Self = this.set("stoppedAt", js.undefined)
+  }
+  
 }
 

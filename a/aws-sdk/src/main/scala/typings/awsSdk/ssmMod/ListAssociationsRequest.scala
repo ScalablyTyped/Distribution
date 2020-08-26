@@ -22,16 +22,36 @@ trait ListAssociationsRequest extends js.Object {
 
 object ListAssociationsRequest {
   @scala.inline
-  def apply(
-    AssociationFilterList: AssociationFilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null
-  ): ListAssociationsRequest = {
+  def apply(): ListAssociationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (AssociationFilterList != null) __obj.updateDynamic("AssociationFilterList")(AssociationFilterList.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssociationsRequest]
   }
+  @scala.inline
+  implicit class ListAssociationsRequestOps[Self <: ListAssociationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationFilterListVarargs(value: AssociationFilter*): Self = this.set("AssociationFilterList", js.Array(value :_*))
+    @scala.inline
+    def setAssociationFilterList(value: AssociationFilterList): Self = this.set("AssociationFilterList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationFilterList: Self = this.set("AssociationFilterList", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -21,6 +21,13 @@ class MapBrowserPointerEvent protected () extends default {
     `type`: String,
     map: typings.ol.pluggableMapMod.default,
     pointerEvent: PointerEvent,
+    opt_dragging: js.UndefOr[scala.Nothing],
+    opt_frameState: FrameState
+  ) = this()
+  def this(
+    `type`: String,
+    map: typings.ol.pluggableMapMod.default,
+    pointerEvent: PointerEvent,
     opt_dragging: Boolean,
     opt_frameState: FrameState
   ) = this()

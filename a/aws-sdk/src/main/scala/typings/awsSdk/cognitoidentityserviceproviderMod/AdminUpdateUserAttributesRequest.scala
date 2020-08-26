@@ -26,15 +26,34 @@ trait AdminUpdateUserAttributesRequest extends js.Object {
 
 object AdminUpdateUserAttributesRequest {
   @scala.inline
-  def apply(
-    UserAttributes: AttributeListType,
-    UserPoolId: UserPoolIdType,
-    Username: UsernameType,
-    ClientMetadata: ClientMetadataType = null
-  ): AdminUpdateUserAttributesRequest = {
+  def apply(UserAttributes: AttributeListType, UserPoolId: UserPoolIdType, Username: UsernameType): AdminUpdateUserAttributesRequest = {
     val __obj = js.Dynamic.literal(UserAttributes = UserAttributes.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (ClientMetadata != null) __obj.updateDynamic("ClientMetadata")(ClientMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminUpdateUserAttributesRequest]
   }
+  @scala.inline
+  implicit class AdminUpdateUserAttributesRequestOps[Self <: AdminUpdateUserAttributesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserAttributesVarargs(value: AttributeType*): Self = this.set("UserAttributes", js.Array(value :_*))
+    @scala.inline
+    def setUserAttributes(value: AttributeListType): Self = this.set("UserAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientMetadata(value: ClientMetadataType): Self = this.set("ClientMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientMetadata: Self = this.set("ClientMetadata", js.undefined)
+  }
+  
 }
 

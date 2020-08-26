@@ -14,6 +14,13 @@ class DeclareFunctionStmt protected () extends Statement {
     name: String,
     params: js.Array[FnParam],
     statements: js.Array[Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[StmtModifier]
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
     `type`: Null,
     modifiers: js.Array[StmtModifier]
   ) = this()
@@ -23,6 +30,38 @@ class DeclareFunctionStmt protected () extends Statement {
     statements: js.Array[Statement],
     `type`: Type,
     modifiers: js.Array[StmtModifier]
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[StmtModifier],
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    modifiers: Null,
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: Null,
+    modifiers: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
@@ -38,6 +77,14 @@ class DeclareFunctionStmt protected () extends Statement {
     statements: js.Array[Statement],
     `type`: Null,
     modifiers: Null,
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: Type,
+    modifiers: js.UndefOr[scala.Nothing],
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(

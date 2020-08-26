@@ -36,6 +36,7 @@ class ResourceAppsServicesVersionsInstances protected () extends js.Object {
     */
   def debug(): GaxiosPromise[SchemaOperation] = js.native
   def debug(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def debug(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def debug(params: ParamsResourceAppsServicesVersionsInstancesDebug): GaxiosPromise[SchemaOperation] = js.native
   def debug(
     params: ParamsResourceAppsServicesVersionsInstancesDebug,
@@ -69,6 +70,7 @@ class ResourceAppsServicesVersionsInstances protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAppsServicesVersionsInstancesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceAppsServicesVersionsInstancesDelete,
@@ -102,6 +104,7 @@ class ResourceAppsServicesVersionsInstances protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInstance] = js.native
   def get(callback: BodyResponseCallback[SchemaInstance]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstance] = js.native
   def get(params: ParamsResourceAppsServicesVersionsInstancesGet): GaxiosPromise[SchemaInstance] = js.native
   def get(
     params: ParamsResourceAppsServicesVersionsInstancesGet,
@@ -138,6 +141,7 @@ class ResourceAppsServicesVersionsInstances protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListInstancesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListInstancesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListInstancesResponse] = js.native
   def list(params: ParamsResourceAppsServicesVersionsInstancesList): GaxiosPromise[SchemaListInstancesResponse] = js.native
   def list(
     params: ParamsResourceAppsServicesVersionsInstancesList,

@@ -7,75 +7,132 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ViewOptions extends js.Object {
-  var center: js.UndefOr[Coordinate] = js.undefined
-  var constrainOnlyCenter: js.UndefOr[Boolean] = js.undefined
-  var constrainResolution: js.UndefOr[Boolean] = js.undefined
-  var constrainRotation: js.UndefOr[Boolean | Double] = js.undefined
-  var enableRotation: js.UndefOr[Boolean] = js.undefined
-  var extent: js.UndefOr[Extent] = js.undefined
-  var maxResolution: js.UndefOr[Double] = js.undefined
-  var maxZoom: js.UndefOr[Double] = js.undefined
-  var minResolution: js.UndefOr[Double] = js.undefined
-  var minZoom: js.UndefOr[Double] = js.undefined
-  var multiWorld: js.UndefOr[Boolean] = js.undefined
-  var projection: js.UndefOr[ProjectionLike] = js.undefined
-  var resolution: js.UndefOr[Double] = js.undefined
-  var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
-  var rotation: js.UndefOr[Double] = js.undefined
-  var showFullExtent: js.UndefOr[Boolean] = js.undefined
-  var smoothExtentConstraint: js.UndefOr[Boolean] = js.undefined
-  var smoothResolutionConstraint: js.UndefOr[Boolean] = js.undefined
-  var zoom: js.UndefOr[Double] = js.undefined
-  var zoomFactor: js.UndefOr[Double] = js.undefined
+  var center: js.UndefOr[Coordinate] = js.native
+  var constrainOnlyCenter: js.UndefOr[Boolean] = js.native
+  var constrainResolution: js.UndefOr[Boolean] = js.native
+  var constrainRotation: js.UndefOr[Boolean | Double] = js.native
+  var enableRotation: js.UndefOr[Boolean] = js.native
+  var extent: js.UndefOr[Extent] = js.native
+  var maxResolution: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.native
+  var minResolution: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.native
+  var multiWorld: js.UndefOr[Boolean] = js.native
+  var projection: js.UndefOr[ProjectionLike] = js.native
+  var resolution: js.UndefOr[Double] = js.native
+  var resolutions: js.UndefOr[js.Array[Double]] = js.native
+  var rotation: js.UndefOr[Double] = js.native
+  var showFullExtent: js.UndefOr[Boolean] = js.native
+  var smoothExtentConstraint: js.UndefOr[Boolean] = js.native
+  var smoothResolutionConstraint: js.UndefOr[Boolean] = js.native
+  var zoom: js.UndefOr[Double] = js.native
+  var zoomFactor: js.UndefOr[Double] = js.native
 }
 
 object ViewOptions {
   @scala.inline
-  def apply(
-    center: Coordinate = null,
-    constrainOnlyCenter: js.UndefOr[Boolean] = js.undefined,
-    constrainResolution: js.UndefOr[Boolean] = js.undefined,
-    constrainRotation: Boolean | Double = null,
-    enableRotation: js.UndefOr[Boolean] = js.undefined,
-    extent: Extent = null,
-    maxResolution: js.UndefOr[Double] = js.undefined,
-    maxZoom: js.UndefOr[Double] = js.undefined,
-    minResolution: js.UndefOr[Double] = js.undefined,
-    minZoom: js.UndefOr[Double] = js.undefined,
-    multiWorld: js.UndefOr[Boolean] = js.undefined,
-    projection: ProjectionLike = null,
-    resolution: js.UndefOr[Double] = js.undefined,
-    resolutions: js.Array[Double] = null,
-    rotation: js.UndefOr[Double] = js.undefined,
-    showFullExtent: js.UndefOr[Boolean] = js.undefined,
-    smoothExtentConstraint: js.UndefOr[Boolean] = js.undefined,
-    smoothResolutionConstraint: js.UndefOr[Boolean] = js.undefined,
-    zoom: js.UndefOr[Double] = js.undefined,
-    zoomFactor: js.UndefOr[Double] = js.undefined
-  ): ViewOptions = {
+  def apply(): ViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainOnlyCenter)) __obj.updateDynamic("constrainOnlyCenter")(constrainOnlyCenter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainResolution)) __obj.updateDynamic("constrainResolution")(constrainResolution.get.asInstanceOf[js.Any])
-    if (constrainRotation != null) __obj.updateDynamic("constrainRotation")(constrainRotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation.get.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResolution)) __obj.updateDynamic("maxResolution")(maxResolution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minResolution)) __obj.updateDynamic("minResolution")(minResolution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiWorld)) __obj.updateDynamic("multiWorld")(multiWorld.get.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
-    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFullExtent)) __obj.updateDynamic("showFullExtent")(showFullExtent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothExtentConstraint)) __obj.updateDynamic("smoothExtentConstraint")(smoothExtentConstraint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothResolutionConstraint)) __obj.updateDynamic("smoothResolutionConstraint")(smoothResolutionConstraint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomFactor)) __obj.updateDynamic("zoomFactor")(zoomFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewOptions]
   }
+  @scala.inline
+  implicit class ViewOptionsOps[Self <: ViewOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCenterVarargs(value: Double*): Self = this.set("center", js.Array(value :_*))
+    @scala.inline
+    def setCenter(value: Coordinate): Self = this.set("center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenter: Self = this.set("center", js.undefined)
+    @scala.inline
+    def setConstrainOnlyCenter(value: Boolean): Self = this.set("constrainOnlyCenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstrainOnlyCenter: Self = this.set("constrainOnlyCenter", js.undefined)
+    @scala.inline
+    def setConstrainResolution(value: Boolean): Self = this.set("constrainResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstrainResolution: Self = this.set("constrainResolution", js.undefined)
+    @scala.inline
+    def setConstrainRotation(value: Boolean | Double): Self = this.set("constrainRotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstrainRotation: Self = this.set("constrainRotation", js.undefined)
+    @scala.inline
+    def setEnableRotation(value: Boolean): Self = this.set("enableRotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableRotation: Self = this.set("enableRotation", js.undefined)
+    @scala.inline
+    def setExtent(value: Extent): Self = this.set("extent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtent: Self = this.set("extent", js.undefined)
+    @scala.inline
+    def setMaxResolution(value: Double): Self = this.set("maxResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResolution: Self = this.set("maxResolution", js.undefined)
+    @scala.inline
+    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    @scala.inline
+    def setMinResolution(value: Double): Self = this.set("minResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinResolution: Self = this.set("minResolution", js.undefined)
+    @scala.inline
+    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    @scala.inline
+    def setMultiWorld(value: Boolean): Self = this.set("multiWorld", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiWorld: Self = this.set("multiWorld", js.undefined)
+    @scala.inline
+    def setProjection(value: ProjectionLike): Self = this.set("projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("projection", js.undefined)
+    @scala.inline
+    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+    @scala.inline
+    def setResolutionsVarargs(value: Double*): Self = this.set("resolutions", js.Array(value :_*))
+    @scala.inline
+    def setResolutions(value: js.Array[Double]): Self = this.set("resolutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolutions: Self = this.set("resolutions", js.undefined)
+    @scala.inline
+    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    @scala.inline
+    def setShowFullExtent(value: Boolean): Self = this.set("showFullExtent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFullExtent: Self = this.set("showFullExtent", js.undefined)
+    @scala.inline
+    def setSmoothExtentConstraint(value: Boolean): Self = this.set("smoothExtentConstraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmoothExtentConstraint: Self = this.set("smoothExtentConstraint", js.undefined)
+    @scala.inline
+    def setSmoothResolutionConstraint(value: Boolean): Self = this.set("smoothResolutionConstraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmoothResolutionConstraint: Self = this.set("smoothResolutionConstraint", js.undefined)
+    @scala.inline
+    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+    @scala.inline
+    def setZoomFactor(value: Double): Self = this.set("zoomFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomFactor: Self = this.set("zoomFactor", js.undefined)
+  }
+  
 }
 

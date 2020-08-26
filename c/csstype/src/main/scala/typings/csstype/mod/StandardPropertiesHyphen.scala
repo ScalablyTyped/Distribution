@@ -4,20 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StandardPropertiesHyphen[TLength]
-  extends StandardLonghandPropertiesHyphen[TLength]
-     with StandardShorthandPropertiesHyphen[TLength]
+@js.native
+trait StandardPropertiesHyphen[TLength, TTime]
+  extends StandardLonghandPropertiesHyphen[TLength, TTime]
+     with StandardShorthandPropertiesHyphen[TLength, TTime]
 
 object StandardPropertiesHyphen {
   @scala.inline
-  def apply[TLength](
-    StandardLonghandPropertiesHyphen: StandardLonghandPropertiesHyphen[TLength] = null,
-    StandardShorthandPropertiesHyphen: StandardShorthandPropertiesHyphen[TLength] = null
-  ): StandardPropertiesHyphen[TLength] = {
+  def apply[TLength, TTime](): StandardPropertiesHyphen[TLength, TTime] = {
     val __obj = js.Dynamic.literal()
-    if (StandardLonghandPropertiesHyphen != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesHyphen)
-    if (StandardShorthandPropertiesHyphen != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesHyphen)
-    __obj.asInstanceOf[StandardPropertiesHyphen[TLength]]
+    __obj.asInstanceOf[StandardPropertiesHyphen[TLength, TTime]]
   }
 }
 

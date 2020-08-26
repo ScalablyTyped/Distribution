@@ -10,9 +10,9 @@ Pure React Carousel
 | ------------------ | :-------------: |
 | Full name          | nuka-carousel |
 | Keywords           | react, carousel, nuka |
-| # releases         | 50 |
+| # releases         | 51 |
 | # dependents       | 63 |
-| # downloads        | 3438397 |
+| # downloads        | 3493353 |
 | # stars            | 2 |
 
 ## Links

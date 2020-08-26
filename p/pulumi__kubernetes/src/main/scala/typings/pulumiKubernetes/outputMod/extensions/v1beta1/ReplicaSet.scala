@@ -8,42 +8,29 @@ import scala.scalajs.js.annotation._
 
 /**
   * ReplicaSet ensures that a specified number of pod replicas are running at any given time.
-  *
-  * @deprecated extensions/v1beta1/ReplicaSet is deprecated by apps/v1/ReplicaSet and not
-  * supported by Kubernetes v1.16+ clusters.
   */
+@js.native
 trait ReplicaSet extends js.Object {
   /**
-    * APIVersion defines the versioned schema of this representation of an object. Servers should
-    * convert recognized schemas to the latest internal value, and may reject unrecognized
-    * values. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+    * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  val apiVersion: extensionsSlashv1beta1
+  var apiVersion: extensionsSlashv1beta1 = js.native
   /**
-    * Kind is a string value representing the REST resource this object represents. Servers may
-    * infer this from the endpoint the client submits requests to. Cannot be updated. In
-    * CamelCase. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+    * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  val kind: typings.pulumiKubernetes.pulumiKubernetesStrings.ReplicaSet
+  var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.ReplicaSet = js.native
   /**
-    * If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s)
-    * that the ReplicaSet manages. Standard object's metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+    * If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s) that the ReplicaSet manages. Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
-  val metadata: ObjectMeta
+  var metadata: ObjectMeta = js.native
   /**
-    * Spec defines the specification of the desired behavior of the ReplicaSet. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+    * Spec defines the specification of the desired behavior of the ReplicaSet. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
-  val spec: ReplicaSetSpec
+  var spec: ReplicaSetSpec = js.native
   /**
-    * Status is the most recently observed status of the ReplicaSet. This data may be out of date
-    * by some window of time. Populated by the system. Read-only. More info:
-    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+    * Status is the most recently observed status of the ReplicaSet. This data may be out of date by some window of time. Populated by the system. Read-only. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
-  val status: ReplicaSetStatus
+  var status: ReplicaSetStatus = js.native
 }
 
 object ReplicaSet {
@@ -58,5 +45,28 @@ object ReplicaSet {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicaSet]
   }
+  @scala.inline
+  implicit class ReplicaSetOps[Self <: ReplicaSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiVersion(value: extensionsSlashv1beta1): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.ReplicaSet): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetadata(value: ObjectMeta): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpec(value: ReplicaSetSpec): Self = this.set("spec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: ReplicaSetStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -52,7 +52,11 @@ object Date extends js.Object {
     * @returns Date The new Date instance.
     */
   def add(): js.Any = js.native
+  def add(date: js.UndefOr[scala.Nothing], interval: js.UndefOr[scala.Nothing], value: Double): js.Any = js.native
+  def add(date: js.UndefOr[scala.Nothing], interval: java.lang.String): js.Any = js.native
+  def add(date: js.UndefOr[scala.Nothing], interval: java.lang.String, value: Double): js.Any = js.native
   def add(date: js.Any): js.Any = js.native
+  def add(date: js.Any, interval: js.UndefOr[scala.Nothing], value: Double): js.Any = js.native
   def add(date: js.Any, interval: java.lang.String): js.Any = js.native
   def add(date: js.Any, interval: java.lang.String, value: Double): js.Any = js.native
   /** [Method] Checks if a date falls on or between the given start and end dates
@@ -62,7 +66,11 @@ object Date extends js.Object {
     * @returns Boolean true if this date falls on or between the given start and end dates.
     */
   def between(): Boolean = js.native
+  def between(date: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], end: js.Any): Boolean = js.native
+  def between(date: js.UndefOr[scala.Nothing], start: js.Any): Boolean = js.native
+  def between(date: js.UndefOr[scala.Nothing], start: js.Any, end: js.Any): Boolean = js.native
   def between(date: js.Any): Boolean = js.native
+  def between(date: js.Any, start: js.UndefOr[scala.Nothing], end: js.Any): Boolean = js.native
   def between(date: js.Any, start: js.Any): Boolean = js.native
   def between(date: js.Any, start: js.Any, end: js.Any): Boolean = js.native
   /** [Method] Attempts to clear all time information from this Date by setting the time to midnight of the same day automatically
@@ -71,6 +79,7 @@ object Date extends js.Object {
     * @returns Date this or the clone.
     */
   def clearTime(): js.Any = js.native
+  def clearTime(date: js.UndefOr[scala.Nothing], clone: Boolean): js.Any = js.native
   def clearTime(date: js.Any): js.Any = js.native
   def clearTime(date: js.Any, clone: Boolean): js.Any = js.native
   def clone(date: js.Any): js.Any = js.native
@@ -80,6 +89,7 @@ object Date extends js.Object {
     * @returns String The formatted date or an empty string if date parameter is not a JavaScript Date object
     */
   def format(): java.lang.String = js.native
+  def format(date: js.UndefOr[scala.Nothing], format: java.lang.String): java.lang.String = js.native
   def format(date: js.Any): java.lang.String = js.native
   def format(date: js.Any, format: java.lang.String): java.lang.String = js.native
   /** [Method] Checks if the specified format contains information about anything other than the time
@@ -112,6 +122,7 @@ object Date extends js.Object {
     * @returns Number The difference in milliseconds
     */
   def getElapsed(): Double = js.native
+  def getElapsed(dateA: js.UndefOr[scala.Nothing], dateB: js.Any): Double = js.native
   def getElapsed(dateA: js.Any): Double = js.native
   def getElapsed(dateA: js.Any, dateB: js.Any): Double = js.native
   /** [Method] Get the date of the first day of the month in which this date resides
@@ -132,6 +143,7 @@ object Date extends js.Object {
     * @returns String The 4-character offset string prefixed with + or - (e.g. '-0600').
     */
   def getGMTOffset(): java.lang.String = js.native
+  def getGMTOffset(date: js.UndefOr[scala.Nothing], colon: Boolean): java.lang.String = js.native
   def getGMTOffset(date: js.Any): java.lang.String = js.native
   def getGMTOffset(date: js.Any, colon: Boolean): java.lang.String = js.native
   /** [Method] Get the date of the last day of the month in which this date resides
@@ -194,6 +206,7 @@ object Date extends js.Object {
     * @returns Boolean true if the date values are equal
     */
   def isEqual(): Boolean = js.native
+  def isEqual(date1: js.UndefOr[scala.Nothing], date2: js.Any): Boolean = js.native
   def isEqual(date1: js.Any): Boolean = js.native
   def isEqual(date1: js.Any, date2: js.Any): Boolean = js.native
   /** [Method] Checks if the current date falls within a leap year
@@ -232,7 +245,11 @@ object Date extends js.Object {
     * @returns Date The parsed Date.
     */
   def parse(): js.Any = js.native
+  def parse(input: js.UndefOr[scala.Nothing], format: js.UndefOr[scala.Nothing], strict: Boolean): js.Any = js.native
+  def parse(input: js.UndefOr[scala.Nothing], format: java.lang.String): js.Any = js.native
+  def parse(input: js.UndefOr[scala.Nothing], format: java.lang.String, strict: Boolean): js.Any = js.native
   def parse(input: java.lang.String): js.Any = js.native
+  def parse(input: java.lang.String, format: js.UndefOr[scala.Nothing], strict: Boolean): js.Any = js.native
   def parse(input: java.lang.String, format: java.lang.String): js.Any = js.native
   def parse(input: java.lang.String, format: java.lang.String, strict: Boolean): js.Any = js.native
   /** [Method] Provides a convenient method for performing basic date arithmetic
@@ -242,7 +259,11 @@ object Date extends js.Object {
     * @returns Date The new Date instance.
     */
   def subtract(): js.Any = js.native
+  def subtract(date: js.UndefOr[scala.Nothing], interval: js.UndefOr[scala.Nothing], value: Double): js.Any = js.native
+  def subtract(date: js.UndefOr[scala.Nothing], interval: java.lang.String): js.Any = js.native
+  def subtract(date: js.UndefOr[scala.Nothing], interval: java.lang.String, value: Double): js.Any = js.native
   def subtract(date: js.Any): js.Any = js.native
+  def subtract(date: js.Any, interval: js.UndefOr[scala.Nothing], value: Double): js.Any = js.native
   def subtract(date: js.Any, interval: java.lang.String): js.Any = js.native
   def subtract(date: js.Any, interval: java.lang.String, value: Double): js.Any = js.native
   /** [Method] Removes all escaping for a date format string

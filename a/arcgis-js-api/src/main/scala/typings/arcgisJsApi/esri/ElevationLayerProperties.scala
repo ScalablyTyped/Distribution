@@ -1,12 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`hide-children`
-import typings.arcgisJsApi.arcgisJsApiStrings.hide
-import typings.arcgisJsApi.arcgisJsApiStrings.show
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ElevationLayerProperties
   extends LayerProperties
      with ArcGISCachedServiceProperties
@@ -16,43 +14,41 @@ trait ElevationLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  var sourceJSON: js.UndefOr[js.Any] = js.native
   /**
     * URL pointing to the Elevation layer resource on an ArcGIS Image Server.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#url)
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String] = js.native
 }
 
 object ElevationLayerProperties {
   @scala.inline
-  def apply(
-    copyright: String = null,
-    fullExtent: ExtentProperties = null,
-    id: String = null,
-    listMode: show | hide | `hide-children` = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    portalItem: PortalItemProperties = null,
-    sourceJSON: js.Any = null,
-    tileInfo: TileInfoProperties = null,
-    title: String = null,
-    url: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): ElevationLayerProperties = {
+  def apply(): ElevationLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem.asInstanceOf[js.Any])
-    if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON.asInstanceOf[js.Any])
-    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElevationLayerProperties]
   }
+  @scala.inline
+  implicit class ElevationLayerPropertiesOps[Self <: ElevationLayerProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceJSON(value: js.Any): Self = this.set("sourceJSON", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceJSON: Self = this.set("sourceJSON", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

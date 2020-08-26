@@ -96,6 +96,7 @@ trait OSS extends js.Object {
     * Get an object from the bucket.
     */
   def get(name: String): js.Promise[GetObjectResult] = js.native
+  def get(name: String, file: js.UndefOr[scala.Nothing], options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
   def get(name: String, file: js.Any): js.Promise[GetObjectResult] = js.native
   def get(name: String, file: js.Any, options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
   /**
@@ -165,12 +166,14 @@ trait OSS extends js.Object {
     * Get signatured rtmp url for publishing.
     */
   def getRtmpUrl(): String = js.native
+  def getRtmpUrl(channelId: js.UndefOr[scala.Nothing], options: GetRtmpUrlOptions): String = js.native
   def getRtmpUrl(channelId: String): String = js.native
   def getRtmpUrl(channelId: String, options: GetRtmpUrlOptions): String = js.native
   /**
     * Get an object read stream.
     */
   def getStream(): js.Promise[GetStreamResult] = js.native
+  def getStream(name: js.UndefOr[scala.Nothing], options: GetStreamOptions): js.Promise[GetStreamResult] = js.native
   def getStream(name: String): js.Promise[GetStreamResult] = js.native
   def getStream(name: String, options: GetStreamOptions): js.Promise[GetStreamResult] = js.native
   /**
@@ -189,13 +192,13 @@ trait OSS extends js.Object {
     * List objects in the bucket.
     */
   def list(query: ListObjectsQuery, options: RequestOptions): js.Promise[ListObjectResult] = js.native
-  def listBuckets(): js.Promise[js.Array[Bucket]] = js.native
-  def listBuckets(query: Null, options: RequestOptions): js.Promise[js.Array[Bucket]] = js.native
   /******************************************* the bucket operations *************************************************/
   // base operators
   /**
     * List buckets in this account.
     */
+  def listBuckets(): js.Promise[js.Array[Bucket]] = js.native
+  def listBuckets(query: Null, options: RequestOptions): js.Promise[js.Array[Bucket]] = js.native
   def listBuckets(query: ListBucketsQueryType): js.Promise[js.Array[Bucket]] = js.native
   def listBuckets(query: ListBucketsQueryType, options: RequestOptions): js.Promise[js.Array[Bucket]] = js.native
   /**
@@ -207,6 +210,7 @@ trait OSS extends js.Object {
     * The ListParts command can be used to list all successfully uploaded parts mapped to a specific upload ID, i.e.: those not completed and not aborted.
     */
   def listParts(name: String, uploadId: String): js.Promise[ListPartsResult] = js.native
+  def listParts(name: String, uploadId: String, query: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[ListPartsResult] = js.native
   def listParts(name: String, uploadId: String, query: ListPartsQuery): js.Promise[ListPartsResult] = js.native
   def listParts(name: String, uploadId: String, query: ListPartsQuery, options: RequestOptions): js.Promise[ListPartsResult] = js.native
   /**
@@ -263,6 +267,7 @@ trait OSS extends js.Object {
     * Update the bucket logging settings. Log file will create every one hour and name format: <prefix><bucket>-YYYY-mm-DD-HH-MM-SS-UniqueString.
     */
   def putBucketLogging(name: String): js.Promise[NormalSuccessResponse] = js.native
+  def putBucketLogging(name: String, prefix: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   def putBucketLogging(name: String, prefix: String): js.Promise[NormalSuccessResponse] = js.native
   def putBucketLogging(name: String, prefix: String, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   // referer operations
@@ -286,6 +291,7 @@ trait OSS extends js.Object {
     * Change the live channel status.
     */
   def putChannelStatus(id: String): js.Promise[NormalSuccessResponse] = js.native
+  def putChannelStatus(id: String, status: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   def putChannelStatus(id: String, status: String): js.Promise[NormalSuccessResponse] = js.native
   def putChannelStatus(id: String, status: String, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   /**

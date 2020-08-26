@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Lists values that specify the visibility mode of the action button's text.
   */
+@js.native
 trait ASPxClientFloatingActionButtonTextVisibilityMode extends js.Object
 

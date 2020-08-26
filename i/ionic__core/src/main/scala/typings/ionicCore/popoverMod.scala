@@ -7,6 +7,7 @@ import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,6 +44,7 @@ object popoverMod extends js.Object {
       * The event to pass to the popover animation.
       */
     var event: js.Any = js.native
+    var lastFocus: js.UndefOr[HTMLElement] = js.native
     var onBackdropTap: js.Any = js.native
     var onDismiss: js.Any = js.native
     var onLifecycle: js.Any = js.native
@@ -56,7 +58,9 @@ object popoverMod extends js.Object {
       * [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
       */
     var translucent: Boolean = js.native
-    var usersElement: js.UndefOr[js.Any] = js.native
+    var usersElement: js.Any = js.native
+    @JSName("connectedCallback")
+    def connectedCallback_MPopover(): Unit = js.native
     /**
       * Returns a promise that resolves when the popover did dismiss.
       */

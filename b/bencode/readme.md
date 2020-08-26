@@ -12,7 +12,7 @@ Bencode de/encoder
 | Keywords           | bdecode, bencode, bencoding, bittorrent, torrent |
 | # releases         | 3 |
 | # dependents       | 86 |
-| # downloads        | 469975 |
+| # downloads        | 467442 |
 | # stars            | 5 |
 
 ## Links

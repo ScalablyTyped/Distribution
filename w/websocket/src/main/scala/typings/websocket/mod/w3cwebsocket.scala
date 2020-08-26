@@ -16,15 +16,100 @@ class w3cwebsocket protected () extends js.Object {
   def this(url: String) = this()
   def this(url: String, protocols: String) = this()
   def this(url: String, protocols: js.Array[String]) = this()
+  def this(url: String, protocols: js.UndefOr[scala.Nothing], origin: String) = this()
   def this(url: String, protocols: String, origin: String) = this()
   def this(url: String, protocols: js.Array[String], origin: String) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: js.UndefOr[scala.Nothing],
+    headers: OutgoingHttpHeaders
+  ) = this()
+  def this(url: String, protocols: js.UndefOr[scala.Nothing], origin: String, headers: OutgoingHttpHeaders) = this()
+  def this(url: String, protocols: String, origin: js.UndefOr[scala.Nothing], headers: OutgoingHttpHeaders) = this()
   def this(url: String, protocols: String, origin: String, headers: OutgoingHttpHeaders) = this()
+  def this(
+    url: String,
+    protocols: js.Array[String],
+    origin: js.UndefOr[scala.Nothing],
+    headers: OutgoingHttpHeaders
+  ) = this()
   def this(url: String, protocols: js.Array[String], origin: String, headers: OutgoingHttpHeaders) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: js.UndefOr[scala.Nothing],
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.Object
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: js.UndefOr[scala.Nothing],
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.Object
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: String,
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.Object
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: String,
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.Object
+  ) = this()
+  def this(
+    url: String,
+    protocols: String,
+    origin: js.UndefOr[scala.Nothing],
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.Object
+  ) = this()
+  def this(
+    url: String,
+    protocols: String,
+    origin: js.UndefOr[scala.Nothing],
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.Object
+  ) = this()
+  def this(
+    url: String,
+    protocols: String,
+    origin: String,
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.Object
+  ) = this()
   def this(
     url: String,
     protocols: String,
     origin: String,
     headers: OutgoingHttpHeaders,
+    requestOptions: js.Object
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.Array[String],
+    origin: js.UndefOr[scala.Nothing],
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.Object
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.Array[String],
+    origin: js.UndefOr[scala.Nothing],
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.Object
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.Array[String],
+    origin: String,
+    headers: js.UndefOr[scala.Nothing],
     requestOptions: js.Object
   ) = this()
   def this(
@@ -36,10 +121,186 @@ class w3cwebsocket protected () extends js.Object {
   ) = this()
   def this(
     url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: js.UndefOr[scala.Nothing],
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.UndefOr[scala.Nothing],
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: js.UndefOr[scala.Nothing],
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.Object,
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: js.UndefOr[scala.Nothing],
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.UndefOr[scala.Nothing],
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: js.UndefOr[scala.Nothing],
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.Object,
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: String,
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.UndefOr[scala.Nothing],
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: String,
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.Object,
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: String,
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.UndefOr[scala.Nothing],
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.UndefOr[scala.Nothing],
+    origin: String,
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.Object,
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: String,
+    origin: js.UndefOr[scala.Nothing],
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.UndefOr[scala.Nothing],
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: String,
+    origin: js.UndefOr[scala.Nothing],
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.Object,
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: String,
+    origin: js.UndefOr[scala.Nothing],
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.UndefOr[scala.Nothing],
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: String,
+    origin: js.UndefOr[scala.Nothing],
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.Object,
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: String,
+    origin: String,
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.UndefOr[scala.Nothing],
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: String,
+    origin: String,
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.Object,
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: String,
+    origin: String,
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.UndefOr[scala.Nothing],
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
     protocols: String,
     origin: String,
     headers: OutgoingHttpHeaders,
     requestOptions: js.Object,
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.Array[String],
+    origin: js.UndefOr[scala.Nothing],
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.UndefOr[scala.Nothing],
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.Array[String],
+    origin: js.UndefOr[scala.Nothing],
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.Object,
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.Array[String],
+    origin: js.UndefOr[scala.Nothing],
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.UndefOr[scala.Nothing],
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.Array[String],
+    origin: js.UndefOr[scala.Nothing],
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.Object,
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.Array[String],
+    origin: String,
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.UndefOr[scala.Nothing],
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.Array[String],
+    origin: String,
+    headers: js.UndefOr[scala.Nothing],
+    requestOptions: js.Object,
+    IClientConfig: typings.websocket.mod.IClientConfig
+  ) = this()
+  def this(
+    url: String,
+    protocols: js.Array[String],
+    origin: String,
+    headers: OutgoingHttpHeaders,
+    requestOptions: js.UndefOr[scala.Nothing],
     IClientConfig: typings.websocket.mod.IClientConfig
   ) = this()
   def this(
@@ -69,6 +330,7 @@ class w3cwebsocket protected () extends js.Object {
   var readyState: Double = js.native
   var url: String = js.native
   def close(): Unit = js.native
+  def close(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, reason: String): Unit = js.native
   def onclose(event: ICloseEvent): Unit = js.native

@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TestRunnerExport extends TestRunner {
   def createRunner(): TestRunner = js.native
+  def createRunner(options: js.UndefOr[scala.Nothing], mochaConfigFunction: js.Function1[/* mocha */ Mocha, Unit]): TestRunner = js.native
   def createRunner(options: AtomMochaOptions): TestRunner = js.native
   def createRunner(options: AtomMochaOptions, mochaConfigFunction: js.Function1[/* mocha */ Mocha, Unit]): TestRunner = js.native
 }

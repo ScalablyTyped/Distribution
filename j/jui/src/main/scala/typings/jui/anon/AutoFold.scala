@@ -4,41 +4,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AutoFold extends js.Object {
   /**
     * @cfg {Boolean} [autoFold=false]
     * When you click on a node, the node folding
     */
-  var autoFold: js.UndefOr[Boolean] = js.undefined
-  var event: js.UndefOr[js.Any] = js.undefined
+  var autoFold: js.UndefOr[Boolean] = js.native
+  var event: js.UndefOr[js.Any] = js.native
   /**
     * @cfg {Integer} [index=null]
     * Sets an enabled node
     */
-  var index: js.UndefOr[Double] = js.undefined
+  var index: js.UndefOr[Double] = js.native
   /**
     * @cfg {Boolean} [multipanel=false]
     */
-  var multipanel: js.UndefOr[Boolean] = js.undefined
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var multipanel: js.UndefOr[Boolean] = js.native
+  var tpl: js.UndefOr[js.Any] = js.native
 }
 
 object AutoFold {
   @scala.inline
-  def apply(
-    autoFold: js.UndefOr[Boolean] = js.undefined,
-    event: js.Any = null,
-    index: js.UndefOr[Double] = js.undefined,
-    multipanel: js.UndefOr[Boolean] = js.undefined,
-    tpl: js.Any = null
-  ): AutoFold = {
+  def apply(): AutoFold = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFold)) __obj.updateDynamic("autoFold")(autoFold.get.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipanel)) __obj.updateDynamic("multipanel")(multipanel.get.asInstanceOf[js.Any])
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoFold]
   }
+  @scala.inline
+  implicit class AutoFoldOps[Self <: AutoFold] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoFold(value: Boolean): Self = this.set("autoFold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFold: Self = this.set("autoFold", js.undefined)
+    @scala.inline
+    def setEvent(value: js.Any): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvent: Self = this.set("event", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setMultipanel(value: Boolean): Self = this.set("multipanel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultipanel: Self = this.set("multipanel", js.undefined)
+    @scala.inline
+    def setTpl(value: js.Any): Self = this.set("tpl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTpl: Self = this.set("tpl", js.undefined)
+  }
+  
 }
 

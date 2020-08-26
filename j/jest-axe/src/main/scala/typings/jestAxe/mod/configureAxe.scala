@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object configureAxe extends js.Object {
   def apply(): JestAxe = js.native
-  def apply(options: AxeOptions): JestAxe = js.native
+  def apply(options: JestAxeConfigureOptions): JestAxe = js.native
 }
 

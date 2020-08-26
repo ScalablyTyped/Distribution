@@ -27,16 +27,34 @@ trait SchemaGooglePrivacyDlpV2ContentItem extends js.Object {
 
 object SchemaGooglePrivacyDlpV2ContentItem {
   @scala.inline
-  def apply(
-    byteItem: SchemaGooglePrivacyDlpV2ByteContentItem = null,
-    table: SchemaGooglePrivacyDlpV2Table = null,
-    value: String = null
-  ): SchemaGooglePrivacyDlpV2ContentItem = {
+  def apply(): SchemaGooglePrivacyDlpV2ContentItem = {
     val __obj = js.Dynamic.literal()
-    if (byteItem != null) __obj.updateDynamic("byteItem")(byteItem.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2ContentItem]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2ContentItemOps[Self <: SchemaGooglePrivacyDlpV2ContentItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setByteItem(value: SchemaGooglePrivacyDlpV2ByteContentItem): Self = this.set("byteItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByteItem: Self = this.set("byteItem", js.undefined)
+    @scala.inline
+    def setTable(value: SchemaGooglePrivacyDlpV2Table): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

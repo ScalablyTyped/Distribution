@@ -125,7 +125,7 @@ object searchbarMod extends js.Object {
       */
     var ionStyle: EventEmitter[StyleEventDetail] = js.native
     var isCancelVisible: js.Any = js.native
-    var nativeInput: js.UndefOr[js.Any] = js.native
+    var nativeInput: js.Any = js.native
     var noAnimate: Boolean = js.native
     /**
       * Sets the Searchbar to not focused and checks if it should align left

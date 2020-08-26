@@ -32,7 +32,7 @@ trait Static extends Hyperscript {
   def jsonp[T](options: JsonpOptionsurlstring): js.Promise[T] = js.native
   def jsonp[T](url: String): js.Promise[T] = js.native
   def jsonp[T](url: String, options: JsonpOptions): js.Promise[T] = js.native
-  def mount(element: Element): Unit = js.native
+  def mount(element: Element, component: Null): Unit = js.native
   def mount(element: Element, component: ComponentTypes[_, _]): Unit = js.native
   /** Parse path name */
   def parsePathname(url: String): typings.mithril.anon.Params = js.native

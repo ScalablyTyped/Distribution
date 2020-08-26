@@ -1,12 +1,5 @@
 package typings.winrt.global.Windows.Graphics.Printing
 
-import typings.winrt.Windows.Foundation.Collections.IMapView
-import typings.winrt.Windows.Foundation.Collections.IVector
-import typings.winrt.Windows.Foundation.Collections.IVectorView
-import typings.winrt.Windows.Graphics.Printing.OptionDetails.IPrintOptionDetails
-import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates
-import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType
-import typings.winrt.Windows.Graphics.Printing.PrintPageDescription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,293 +9,67 @@ import scala.scalajs.js.annotation._
 object OptionDetails extends js.Object {
   @js.native
   class PrintBindingOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintBindingOptionDetails {
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var items: IVectorView[_] = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintBindingOptionDetails
   
   @js.native
   class PrintCollationOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCollationOptionDetails {
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var items: IVectorView[_] = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCollationOptionDetails
   
   @js.native
   class PrintColorModeOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintColorModeOptionDetails {
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var items: IVectorView[_] = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintColorModeOptionDetails
   
   @js.native
   class PrintCopiesOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCopiesOptionDetails {
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var maxValue: Double = js.native
-    /* CompleteClass */
-    override var minValue: Double = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCopiesOptionDetails
   
   @js.native
   class PrintCustomItemDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCustomItemDetails {
-    /* CompleteClass */
-    override var itemDisplayName: String = js.native
-    /* CompleteClass */
-    override var itemId: String = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCustomItemDetails
   
   @js.native
   class PrintCustomItemListOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCustomItemListOptionDetails {
-    /* CompleteClass */
-    override var displayName: String = js.native
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var items: IVectorView[_] = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def addItem(itemId: String, displayName: String): Unit = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCustomItemListOptionDetails
   
   @js.native
   class PrintCustomTextOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCustomTextOptionDetails {
-    /* CompleteClass */
-    override var displayName: String = js.native
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var maxCharacters: Double = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCustomTextOptionDetails
   
   @js.native
   class PrintDuplexOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintDuplexOptionDetails {
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var items: IVectorView[_] = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintDuplexOptionDetails
   
   @js.native
   class PrintHolePunchOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintHolePunchOptionDetails {
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var items: IVectorView[_] = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintHolePunchOptionDetails
   
   @js.native
   class PrintMediaSizeOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintMediaSizeOptionDetails {
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var items: IVectorView[_] = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintMediaSizeOptionDetails
   
   @js.native
   class PrintMediaTypeOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintMediaTypeOptionDetails {
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var items: IVectorView[_] = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintMediaTypeOptionDetails
   
   @js.native
   class PrintOrientationOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOrientationOptionDetails {
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var items: IVectorView[_] = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOrientationOptionDetails
   
   @js.native
   class PrintQualityOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintQualityOptionDetails {
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var items: IVectorView[_] = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintQualityOptionDetails
   
   @js.native
   class PrintStapleOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintStapleOptionDetails {
-    /* CompleteClass */
-    override var errorText: String = js.native
-    /* CompleteClass */
-    override var items: IVectorView[_] = js.native
-    /* CompleteClass */
-    override var optionId: String = js.native
-    /* CompleteClass */
-    override var optionType: PrintOptionType = js.native
-    /* CompleteClass */
-    override var state: PrintOptionStates = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
-    /* CompleteClass */
-    override def trySetValue(value: js.Any): Boolean = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintStapleOptionDetails
   
   @js.native
   class PrintTaskOptionChangedEventArgs ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionChangedEventArgs {
-    /* CompleteClass */
-    override var optionId: js.Any = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionChangedEventArgs
   
   @js.native
   class PrintTaskOptionDetails ()
-    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails {
-    /* CompleteClass */
-    override var displayedOptions: IVector[String] = js.native
-    /* CompleteClass */
-    override var onbeginvalidation: js.Any = js.native
-    /* CompleteClass */
-    override var onoptionchanged: js.Any = js.native
-    /* CompleteClass */
-    override var options: IMapView[String, IPrintOptionDetails] = js.native
-    /* CompleteClass */
-    override def createItemListOption(optionId: String, displayName: String): typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCustomItemListOptionDetails = js.native
-    /* CompleteClass */
-    override def createTextOption(optionId: String, displayName: String): typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintCustomTextOptionDetails = js.native
-    /* CompleteClass */
-    override def getPageDescription(jobPageNumber: Double): PrintPageDescription = js.native
-  }
+    extends typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails
   
   @js.native
   object PrintOptionStates extends js.Object {

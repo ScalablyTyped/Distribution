@@ -10,7 +10,7 @@ import typings.oracleOraclejet.anon.IndexSubId
 import typings.oracleOraclejet.anon.LabelAccSelectionAffordanceBottom
 import typings.oracleOraclejet.anon.MaxCount
 import typings.oracleOraclejet.anon.RowHeader
-import typings.oracleOraclejet.anon.`19`
+import typings.oracleOraclejet.anon.`21`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.baseComponent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
@@ -130,7 +130,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     ], 
     _
   ]) | Null = js.native
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[`19`], _]) | Null = js.native
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[`21`], _]) | Null = js.native
   var onSelectionRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
   var onVerticalGridVisibleChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | enabled | disabled], _]) | Null = js.native
   var rowRenderer: (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null = js.native
@@ -140,7 +140,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   var selection: js.Array[
     (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
   ] = js.native
-  var selectionMode: `19` = js.native
+  var selectionMode: `21` = js.native
   var selectionRequired: Boolean = js.native
   @JSName("translations")
   var translations_ojTable_ : LabelAccSelectionAffordanceBottom = js.native
@@ -445,12 +445,12 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   @JSName("addEventListener")
   def addEventListener_selectionModeChanged(
     `type`: selectionModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`19`], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`21`], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionModeChanged(
     `type`: selectionModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`19`], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`21`], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -501,7 +501,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
   ] = js.native
   @JSName("getProperty")
-  def getProperty_selectionMode(property: selectionMode): `19` = js.native
+  def getProperty_selectionMode(property: selectionMode): `21` = js.native
   @JSName("getProperty")
   def getProperty_selectionRequired(property: selectionRequired): Boolean = js.native
   @JSName("getProperty")
@@ -561,7 +561,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
     ]
   ): Unit = js.native
   @JSName("setProperty")
-  def setProperty_selectionMode(property: selectionMode, value: `19`): Unit = js.native
+  def setProperty_selectionMode(property: selectionMode, value: `21`): Unit = js.native
   @JSName("setProperty")
   def setProperty_selectionRequired(property: selectionRequired, value: Boolean): Unit = js.native
   @JSName("setProperty")

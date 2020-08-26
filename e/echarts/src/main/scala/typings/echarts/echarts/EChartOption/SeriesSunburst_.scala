@@ -2,8 +2,8 @@ package typings.echarts.echarts.EChartOption
 
 import typings.echarts.anon.BorderType
 import typings.echarts.anon.Downplay
-import typings.echarts.anon.LabelMinAngle
 import typings.echarts.anon.MinAngle
+import typings.echarts.anon.`22`
 import typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,6 +37,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-sunburst
   */
+@js.native
 trait SeriesSunburst_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -46,7 +47,7 @@ trait SeriesSunburst_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-sunburst.animation
     */
-  var animation: js.UndefOr[Boolean] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.native
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -62,7 +63,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.animationDelay
     */
-  var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelay: js.UndefOr[js.Function | Double] = js.native
   /**
     * Delay before updating animation, which supports callback function
     * for different data to have different animation effect.
@@ -78,7 +79,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.animationDelayUpdate
     */
-  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -90,7 +91,7 @@ trait SeriesSunburst_ extends js.Object {
     * 1000
     * @see https://echarts.apache.org/en/option.html#series-sunburst.animationDuration
     */
-  var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDuration: js.UndefOr[js.Function | Double] = js.native
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -102,7 +103,7 @@ trait SeriesSunburst_ extends js.Object {
     * 500
     * @see https://echarts.apache.org/en/option.html#series-sunburst.animationDurationUpdate
     */
-  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -114,7 +115,7 @@ trait SeriesSunburst_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-sunburst.animationEasing
     */
-  var animationEasing: js.UndefOr[String] = js.undefined
+  var animationEasing: js.UndefOr[String] = js.native
   /**
     * Easing method used for animation.
     *
@@ -123,7 +124,7 @@ trait SeriesSunburst_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-sunburst.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[String] = js.undefined
+  var animationEasingUpdate: js.UndefOr[String] = js.native
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -134,7 +135,7 @@ trait SeriesSunburst_ extends js.Object {
     * 2000
     * @see https://echarts.apache.org/en/option.html#series-sunburst.animationThreshold
     */
-  var animationThreshold: js.UndefOr[Double] = js.undefined
+  var animationThreshold: js.UndefOr[Double] = js.native
   /**
     * Center position of Sunburst chart, the first of which is the
     * horizontal position, and the second is the vertical position.
@@ -152,7 +153,7 @@ trait SeriesSunburst_ extends js.Object {
     * ['50%', '50%']
     * @see https://echarts.apache.org/en/option.html#series-sunburst.center
     */
-  var center: js.UndefOr[js.Array[_]] = js.undefined
+  var center: js.UndefOr[js.Array[_]] = js.native
   /**
     * The data structure of
     * [series-sunburst.data](https://echarts.apache.org/en/option.html#series-sunburst.data)
@@ -163,7 +164,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.data
     */
-  var data: js.UndefOr[js.Array[DataObject]] = js.undefined
+  var data: js.UndefOr[js.Array[DataObject]] = js.native
   /**
     * Item style when mouse is hovering unrelated items. See
     * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
@@ -172,7 +173,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.downplay
     */
-  var downplay: js.UndefOr[LabelMinAngle] = js.undefined
+  var downplay: js.UndefOr[`22`] = js.native
   /**
     * Item style when mouse is hovering. See
     * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
@@ -181,7 +182,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.emphasis
     */
-  var emphasis: js.UndefOr[LabelMinAngle] = js.undefined
+  var emphasis: js.UndefOr[`22`] = js.native
   /**
     * Item style when mouse is hovering related items. See
     * [highlightPolicy](https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy)
@@ -190,7 +191,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.highlight
     */
-  var highlight: js.UndefOr[LabelMinAngle] = js.undefined
+  var highlight: js.UndefOr[`22`] = js.native
   /**
     * When mouse hovers a sector, the sector is emphasized.
     * **If `highlightPolicy` is set to be `'descendant'`, then the
@@ -222,7 +223,7 @@ trait SeriesSunburst_ extends js.Object {
     * "descendant"
     * @see https://echarts.apache.org/en/option.html#series-sunburst.highlightPolicy
     */
-  var highlightPolicy: js.UndefOr[String] = js.undefined
+  var highlightPolicy: js.UndefOr[String] = js.native
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -231,7 +232,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.id
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Style of Sunburst sectors.
     *
@@ -267,7 +268,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.itemStyle
     */
-  var itemStyle: js.UndefOr[BorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.native
   /**
     * `label` sets the text style for every sectors.
     *
@@ -289,7 +290,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.label
     */
-  var label: js.UndefOr[MinAngle] = js.undefined
+  var label: js.UndefOr[MinAngle] = js.native
   /**
     * **Multiple levels**
     *
@@ -311,7 +312,7 @@ trait SeriesSunburst_ extends js.Object {
     * []
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels
     */
-  var levels: js.UndefOr[Downplay] = js.undefined
+  var levels: js.UndefOr[Downplay] = js.native
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -322,7 +323,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * The action of clicking a sector, which can be:
     *
@@ -337,7 +338,7 @@ trait SeriesSunburst_ extends js.Object {
     * "rootToNode"
     * @see https://echarts.apache.org/en/option.html#series-sunburst.nodeClick
     */
-  var nodeClick: js.UndefOr[Boolean | String] = js.undefined
+  var nodeClick: js.UndefOr[Boolean | String] = js.native
   /**
     * Radius of Sunburst chart. Value can be:
     *
@@ -355,14 +356,14 @@ trait SeriesSunburst_ extends js.Object {
     * [0, '75%']
     * @see https://echarts.apache.org/en/option.html#series-sunburst.radius
     */
-  var radius: js.UndefOr[js.Array[_] | Double | String] = js.undefined
+  var radius: js.UndefOr[js.Array[_] | Double | String] = js.native
   /**
     * If there is no `name`, whether need to render it.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.renderLabelForZeroData
     */
-  var renderLabelForZeroData: js.UndefOr[Boolean] = js.undefined
+  var renderLabelForZeroData: js.UndefOr[Boolean] = js.native
   /**
     * Sorting method that sectors use based on
     * [`value`](https://echarts.apache.org/en/option.html#series-sunburst.data.value)
@@ -378,13 +379,13 @@ trait SeriesSunburst_ extends js.Object {
     * "desc"
     * @see https://echarts.apache.org/en/option.html#series-sunburst.sort
     */
-  var sort: js.UndefOr[js.Function | String] = js.undefined
+  var sort: js.UndefOr[js.Function | String] = js.native
   /**
     * @default
     * "sunburst"
     * @see https://echarts.apache.org/en/option.html#series-sunburst.type
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * `z` value of all graghical elements in , which controls order
     * of drawing graphical components.
@@ -399,7 +400,7 @@ trait SeriesSunburst_ extends js.Object {
     * 2
     * @see https://echarts.apache.org/en/option.html#series-sunburst.z
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.native
   /**
     * `zlevel` value of all graghical elements in .
     *
@@ -417,67 +418,137 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.zlevel
     */
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var zlevel: js.UndefOr[Double] = js.native
 }
 
 object SeriesSunburst_ {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    animationDelay: js.Function | Double = null,
-    animationDelayUpdate: js.Function | Double = null,
-    animationDuration: js.Function | Double = null,
-    animationDurationUpdate: js.Function | Double = null,
-    animationEasing: String = null,
-    animationEasingUpdate: String = null,
-    animationThreshold: js.UndefOr[Double] = js.undefined,
-    center: js.Array[_] = null,
-    data: js.Array[DataObject] = null,
-    downplay: LabelMinAngle = null,
-    emphasis: LabelMinAngle = null,
-    highlight: LabelMinAngle = null,
-    highlightPolicy: String = null,
-    id: String = null,
-    itemStyle: BorderType = null,
-    label: MinAngle = null,
-    levels: Downplay = null,
-    name: String = null,
-    nodeClick: Boolean | String = null,
-    radius: js.Array[_] | Double | String = null,
-    renderLabelForZeroData: js.UndefOr[Boolean] = js.undefined,
-    sort: js.Function | String = null,
-    `type`: String = null,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): SeriesSunburst_ = {
+  def apply(): SeriesSunburst_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
-    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (downplay != null) __obj.updateDynamic("downplay")(downplay.asInstanceOf[js.Any])
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (highlightPolicy != null) __obj.updateDynamic("highlightPolicy")(highlightPolicy.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nodeClick != null) __obj.updateDynamic("nodeClick")(nodeClick.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderLabelForZeroData)) __obj.updateDynamic("renderLabelForZeroData")(renderLabelForZeroData.get.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesSunburst_]
   }
+  @scala.inline
+  implicit class SeriesSunburst_Ops[Self <: SeriesSunburst_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    @scala.inline
+    def setAnimationDelayUpdate(value: js.Function | Double): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    @scala.inline
+    def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    @scala.inline
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    @scala.inline
+    def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    @scala.inline
+    def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    @scala.inline
+    def setCenterVarargs(value: js.Any*): Self = this.set("center", js.Array(value :_*))
+    @scala.inline
+    def setCenter(value: js.Array[_]): Self = this.set("center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenter: Self = this.set("center", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: DataObject*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[DataObject]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDownplay(value: `22`): Self = this.set("downplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownplay: Self = this.set("downplay", js.undefined)
+    @scala.inline
+    def setEmphasis(value: `22`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setHighlight(value: `22`): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    @scala.inline
+    def setHighlightPolicy(value: String): Self = this.set("highlightPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightPolicy: Self = this.set("highlightPolicy", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    @scala.inline
+    def setLabel(value: MinAngle): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLevels(value: Downplay): Self = this.set("levels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevels: Self = this.set("levels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNodeClick(value: Boolean | String): Self = this.set("nodeClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeClick: Self = this.set("nodeClick", js.undefined)
+    @scala.inline
+    def setRadiusVarargs(value: js.Any*): Self = this.set("radius", js.Array(value :_*))
+    @scala.inline
+    def setRadius(value: js.Array[_] | Double | String): Self = this.set("radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadius: Self = this.set("radius", js.undefined)
+    @scala.inline
+    def setRenderLabelForZeroData(value: Boolean): Self = this.set("renderLabelForZeroData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderLabelForZeroData: Self = this.set("renderLabelForZeroData", js.undefined)
+    @scala.inline
+    def setSort(value: js.Function | String): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+  }
+  
 }
 

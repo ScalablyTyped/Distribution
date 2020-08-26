@@ -12,7 +12,7 @@ A jQuery image zoom plug-in, with tints, easing and gallery integration.
 | Keywords           | zoom, effects, elements, zooming |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 23169 |
+| # downloads        | 25850 |
 | # stars            | 1 |
 
 ## Links

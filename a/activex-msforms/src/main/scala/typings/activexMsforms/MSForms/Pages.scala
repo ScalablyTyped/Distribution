@@ -9,7 +9,11 @@ trait Pages extends js.Object {
   val Count: Double = js.native
   def apply(varg: js.Any): js.Any = js.native
   def Add(): Page = js.native
+  def Add(bstrName: js.UndefOr[scala.Nothing], bstrCaption: js.UndefOr[scala.Nothing], lIndex: js.Any): Page = js.native
+  def Add(bstrName: js.UndefOr[scala.Nothing], bstrCaption: js.Any): Page = js.native
+  def Add(bstrName: js.UndefOr[scala.Nothing], bstrCaption: js.Any, lIndex: js.Any): Page = js.native
   def Add(bstrName: js.Any): Page = js.native
+  def Add(bstrName: js.Any, bstrCaption: js.UndefOr[scala.Nothing], lIndex: js.Any): Page = js.native
   def Add(bstrName: js.Any, bstrCaption: js.Any): Page = js.native
   def Add(bstrName: js.Any, bstrCaption: js.Any, lIndex: js.Any): Page = js.native
   def Clear(): Unit = js.native

@@ -1,7 +1,6 @@
 package typings.three.webGLCapabilitiesMod
 
 import typings.std.WebGLRenderingContext
-import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,7 @@ class WebGLCapabilities protected () extends js.Object {
   def this(gl: WebGLRenderingContext, extensions: js.Any, parameters: WebGLCapabilitiesParameters) = this()
   var floatFragmentTextures: Boolean = js.native
   var floatVertexTextures: Boolean = js.native
-  val isWebGL2: `true` = js.native
+  val isWebGL2: Boolean = js.native
   var logarithmicDepthBuffer: Boolean = js.native
   var maxAttributes: Double = js.native
   var maxCubemapSize: Double = js.native

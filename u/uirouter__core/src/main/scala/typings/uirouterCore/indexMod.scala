@@ -27,6 +27,7 @@ object indexMod extends js.Object {
   class BrowserLocationConfig ()
     extends typings.uirouterCore.browserLocationConfigMod.BrowserLocationConfig {
     def this(router: js.Any) = this()
+    def this(router: js.UndefOr[scala.Nothing], _isHtml5: Boolean) = this()
     def this(router: js.Any, _isHtml5: Boolean) = this()
   }
   

@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 class ASPxClientChartDesignerCustomizeMenuActionsEventArgs protected ()
   extends typings.devexpressWeb.ASPxClientChartDesignerCustomizeMenuActionsEventArgs {
   def this(actions: js.Array[typings.devexpressWeb.ASPxClientChartDesignerMenuAction]) = this()
-  /* CompleteClass */
-  override var actions: js.Array[typings.devexpressWeb.ASPxClientChartDesignerMenuAction] = js.native
 }
 

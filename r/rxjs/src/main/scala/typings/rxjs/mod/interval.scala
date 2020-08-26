@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object interval extends js.Object {
   def apply(): Observable[Double] = js.native
+  def apply(period: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): Observable[Double] = js.native
   def apply(period: Double): Observable[Double] = js.native
   def apply(period: Double, scheduler: SchedulerLike): Observable[Double] = js.native
 }

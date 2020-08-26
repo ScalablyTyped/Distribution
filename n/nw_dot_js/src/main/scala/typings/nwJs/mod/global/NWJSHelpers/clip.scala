@@ -21,6 +21,7 @@ trait clip extends js.Object {
     * @returns {string} the data retrieved from the clipboard.
     */
   def get(): String = js.native
+  def get(`type`: js.UndefOr[scala.Nothing], raw: Boolean): String = js.native
   def get(`type`: String): String = js.native
   def get(`type`: String, raw: Boolean): String = js.native
   /**
@@ -38,6 +39,7 @@ trait clip extends js.Object {
     * @param raw {boolean} (Optional) requiring raw image data. This option is only valid if type is png or jpeg. By default, raw is set to false.
     */
   def set(data: String): Unit = js.native
+  def set(data: String, `type`: js.UndefOr[scala.Nothing], raw: Boolean): Unit = js.native
   def set(data: String, `type`: String): Unit = js.native
   def set(data: String, `type`: String, raw: Boolean): Unit = js.native
 }

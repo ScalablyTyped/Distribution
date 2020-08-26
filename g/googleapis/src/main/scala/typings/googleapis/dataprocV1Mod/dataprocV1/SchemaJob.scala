@@ -95,42 +95,90 @@ trait SchemaJob extends js.Object {
 
 object SchemaJob {
   @scala.inline
-  def apply(
-    driverControlFilesUri: String = null,
-    driverOutputResourceUri: String = null,
-    hadoopJob: SchemaHadoopJob = null,
-    hiveJob: SchemaHiveJob = null,
-    jobUuid: String = null,
-    labels: StringDictionary[String] = null,
-    pigJob: SchemaPigJob = null,
-    placement: SchemaJobPlacement = null,
-    pysparkJob: SchemaPySparkJob = null,
-    reference: SchemaJobReference = null,
-    scheduling: SchemaJobScheduling = null,
-    sparkJob: SchemaSparkJob = null,
-    sparkSqlJob: SchemaSparkSqlJob = null,
-    status: SchemaJobStatus = null,
-    statusHistory: js.Array[SchemaJobStatus] = null,
-    yarnApplications: js.Array[SchemaYarnApplication] = null
-  ): SchemaJob = {
+  def apply(): SchemaJob = {
     val __obj = js.Dynamic.literal()
-    if (driverControlFilesUri != null) __obj.updateDynamic("driverControlFilesUri")(driverControlFilesUri.asInstanceOf[js.Any])
-    if (driverOutputResourceUri != null) __obj.updateDynamic("driverOutputResourceUri")(driverOutputResourceUri.asInstanceOf[js.Any])
-    if (hadoopJob != null) __obj.updateDynamic("hadoopJob")(hadoopJob.asInstanceOf[js.Any])
-    if (hiveJob != null) __obj.updateDynamic("hiveJob")(hiveJob.asInstanceOf[js.Any])
-    if (jobUuid != null) __obj.updateDynamic("jobUuid")(jobUuid.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (pigJob != null) __obj.updateDynamic("pigJob")(pigJob.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (pysparkJob != null) __obj.updateDynamic("pysparkJob")(pysparkJob.asInstanceOf[js.Any])
-    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
-    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling.asInstanceOf[js.Any])
-    if (sparkJob != null) __obj.updateDynamic("sparkJob")(sparkJob.asInstanceOf[js.Any])
-    if (sparkSqlJob != null) __obj.updateDynamic("sparkSqlJob")(sparkSqlJob.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusHistory != null) __obj.updateDynamic("statusHistory")(statusHistory.asInstanceOf[js.Any])
-    if (yarnApplications != null) __obj.updateDynamic("yarnApplications")(yarnApplications.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJob]
   }
+  @scala.inline
+  implicit class SchemaJobOps[Self <: SchemaJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDriverControlFilesUri(value: String): Self = this.set("driverControlFilesUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriverControlFilesUri: Self = this.set("driverControlFilesUri", js.undefined)
+    @scala.inline
+    def setDriverOutputResourceUri(value: String): Self = this.set("driverOutputResourceUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriverOutputResourceUri: Self = this.set("driverOutputResourceUri", js.undefined)
+    @scala.inline
+    def setHadoopJob(value: SchemaHadoopJob): Self = this.set("hadoopJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHadoopJob: Self = this.set("hadoopJob", js.undefined)
+    @scala.inline
+    def setHiveJob(value: SchemaHiveJob): Self = this.set("hiveJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiveJob: Self = this.set("hiveJob", js.undefined)
+    @scala.inline
+    def setJobUuid(value: String): Self = this.set("jobUuid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobUuid: Self = this.set("jobUuid", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setPigJob(value: SchemaPigJob): Self = this.set("pigJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePigJob: Self = this.set("pigJob", js.undefined)
+    @scala.inline
+    def setPlacement(value: SchemaJobPlacement): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("placement", js.undefined)
+    @scala.inline
+    def setPysparkJob(value: SchemaPySparkJob): Self = this.set("pysparkJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePysparkJob: Self = this.set("pysparkJob", js.undefined)
+    @scala.inline
+    def setReference(value: SchemaJobReference): Self = this.set("reference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReference: Self = this.set("reference", js.undefined)
+    @scala.inline
+    def setScheduling(value: SchemaJobScheduling): Self = this.set("scheduling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduling: Self = this.set("scheduling", js.undefined)
+    @scala.inline
+    def setSparkJob(value: SchemaSparkJob): Self = this.set("sparkJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSparkJob: Self = this.set("sparkJob", js.undefined)
+    @scala.inline
+    def setSparkSqlJob(value: SchemaSparkSqlJob): Self = this.set("sparkSqlJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSparkSqlJob: Self = this.set("sparkSqlJob", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaJobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusHistoryVarargs(value: SchemaJobStatus*): Self = this.set("statusHistory", js.Array(value :_*))
+    @scala.inline
+    def setStatusHistory(value: js.Array[SchemaJobStatus]): Self = this.set("statusHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusHistory: Self = this.set("statusHistory", js.undefined)
+    @scala.inline
+    def setYarnApplicationsVarargs(value: SchemaYarnApplication*): Self = this.set("yarnApplications", js.Array(value :_*))
+    @scala.inline
+    def setYarnApplications(value: js.Array[SchemaYarnApplication]): Self = this.set("yarnApplications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYarnApplications: Self = this.set("yarnApplications", js.undefined)
+  }
+  
 }
 

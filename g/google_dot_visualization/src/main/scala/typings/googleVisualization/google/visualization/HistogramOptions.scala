@@ -8,99 +8,170 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HistogramOptions extends js.Object {
-  var animation: js.UndefOr[TransitionAnimation] = js.undefined
-  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.undefined
-  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
-  var bar: js.UndefOr[GroupWidth] = js.undefined
-  var chartArea: js.UndefOr[ChartArea] = js.undefined
-  var colors: js.UndefOr[js.Array[String]] = js.undefined
-  var dataOpacity: js.UndefOr[Double] = js.undefined
-  var enableInteractivity: js.UndefOr[Boolean] = js.undefined
-  var focusTarget: js.UndefOr[String] = js.undefined
-  var fontName: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[Double] = js.undefined
-  var hAxis: js.UndefOr[ChartAxis] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var histogram: js.UndefOr[HistogramHistogramOptions] = js.undefined
-  var interpolateNulls: js.UndefOr[Boolean] = js.undefined
-  var isStacked: js.UndefOr[Boolean | percent | relative | absolute] = js.undefined
-  var legend: js.UndefOr[ChartLegend | none] = js.undefined
-  var orientation: js.UndefOr[ChartOrientation] = js.undefined
-  var reverseCategories: js.UndefOr[Boolean] = js.undefined
-  var series: js.UndefOr[js.Any] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var titlePosition: js.UndefOr[String] = js.undefined
-  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
-  var tooltip: js.UndefOr[ChartTooltip] = js.undefined
-  var vAxes: js.UndefOr[js.Any] = js.undefined
-  var vAxis: js.UndefOr[ChartAxis] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var animation: js.UndefOr[TransitionAnimation] = js.native
+  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.native
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.native
+  var bar: js.UndefOr[GroupWidth] = js.native
+  var chartArea: js.UndefOr[ChartArea] = js.native
+  var colors: js.UndefOr[js.Array[String]] = js.native
+  var dataOpacity: js.UndefOr[Double] = js.native
+  var enableInteractivity: js.UndefOr[Boolean] = js.native
+  var focusTarget: js.UndefOr[String] = js.native
+  var fontName: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[Double] = js.native
+  var hAxis: js.UndefOr[ChartAxis] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var histogram: js.UndefOr[HistogramHistogramOptions] = js.native
+  var interpolateNulls: js.UndefOr[Boolean] = js.native
+  var isStacked: js.UndefOr[Boolean | percent | relative | absolute] = js.native
+  var legend: js.UndefOr[ChartLegend | none] = js.native
+  var orientation: js.UndefOr[ChartOrientation] = js.native
+  var reverseCategories: js.UndefOr[Boolean] = js.native
+  var series: js.UndefOr[js.Any] = js.native
+  var theme: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var titlePosition: js.UndefOr[String] = js.native
+  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.native
+  var tooltip: js.UndefOr[ChartTooltip] = js.native
+  var vAxes: js.UndefOr[js.Any] = js.native
+  var vAxis: js.UndefOr[ChartAxis] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object HistogramOptions {
   @scala.inline
-  def apply(
-    animation: TransitionAnimation = null,
-    axisTitlesPosition: ChartAxisTitlesPosition = null,
-    backgroundColor: String | ChartStrokeFill = null,
-    bar: GroupWidth = null,
-    chartArea: ChartArea = null,
-    colors: js.Array[String] = null,
-    dataOpacity: js.UndefOr[Double] = js.undefined,
-    enableInteractivity: js.UndefOr[Boolean] = js.undefined,
-    focusTarget: String = null,
-    fontName: String = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    hAxis: ChartAxis = null,
-    height: js.UndefOr[Double] = js.undefined,
-    histogram: HistogramHistogramOptions = null,
-    interpolateNulls: js.UndefOr[Boolean] = js.undefined,
-    isStacked: Boolean | percent | relative | absolute = null,
-    legend: ChartLegend | none = null,
-    orientation: ChartOrientation = null,
-    reverseCategories: js.UndefOr[Boolean] = js.undefined,
-    series: js.Any = null,
-    theme: String = null,
-    title: String = null,
-    titlePosition: String = null,
-    titleTextStyle: ChartTextStyle = null,
-    tooltip: ChartTooltip = null,
-    vAxes: js.Any = null,
-    vAxis: ChartAxis = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): HistogramOptions = {
+  def apply(): HistogramOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (axisTitlesPosition != null) __obj.updateDynamic("axisTitlesPosition")(axisTitlesPosition.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
-    if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataOpacity)) __obj.updateDynamic("dataOpacity")(dataOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.get.asInstanceOf[js.Any])
-    if (focusTarget != null) __obj.updateDynamic("focusTarget")(focusTarget.asInstanceOf[js.Any])
-    if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (hAxis != null) __obj.updateDynamic("hAxis")(hAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (histogram != null) __obj.updateDynamic("histogram")(histogram.asInstanceOf[js.Any])
-    if (!js.isUndefined(interpolateNulls)) __obj.updateDynamic("interpolateNulls")(interpolateNulls.get.asInstanceOf[js.Any])
-    if (isStacked != null) __obj.updateDynamic("isStacked")(isStacked.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseCategories)) __obj.updateDynamic("reverseCategories")(reverseCategories.get.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titlePosition != null) __obj.updateDynamic("titlePosition")(titlePosition.asInstanceOf[js.Any])
-    if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (vAxes != null) __obj.updateDynamic("vAxes")(vAxes.asInstanceOf[js.Any])
-    if (vAxis != null) __obj.updateDynamic("vAxis")(vAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramOptions]
   }
+  @scala.inline
+  implicit class HistogramOptionsOps[Self <: HistogramOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: TransitionAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAxisTitlesPosition(value: ChartAxisTitlesPosition): Self = this.set("axisTitlesPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisTitlesPosition: Self = this.set("axisTitlesPosition", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: String | ChartStrokeFill): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBar(value: GroupWidth): Self = this.set("bar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBar: Self = this.set("bar", js.undefined)
+    @scala.inline
+    def setChartArea(value: ChartArea): Self = this.set("chartArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChartArea: Self = this.set("chartArea", js.undefined)
+    @scala.inline
+    def setColorsVarargs(value: String*): Self = this.set("colors", js.Array(value :_*))
+    @scala.inline
+    def setColors(value: js.Array[String]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setDataOpacity(value: Double): Self = this.set("dataOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataOpacity: Self = this.set("dataOpacity", js.undefined)
+    @scala.inline
+    def setEnableInteractivity(value: Boolean): Self = this.set("enableInteractivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableInteractivity: Self = this.set("enableInteractivity", js.undefined)
+    @scala.inline
+    def setFocusTarget(value: String): Self = this.set("focusTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusTarget: Self = this.set("focusTarget", js.undefined)
+    @scala.inline
+    def setFontName(value: String): Self = this.set("fontName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontName: Self = this.set("fontName", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setHAxis(value: ChartAxis): Self = this.set("hAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHAxis: Self = this.set("hAxis", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHistogram(value: HistogramHistogramOptions): Self = this.set("histogram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistogram: Self = this.set("histogram", js.undefined)
+    @scala.inline
+    def setInterpolateNulls(value: Boolean): Self = this.set("interpolateNulls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterpolateNulls: Self = this.set("interpolateNulls", js.undefined)
+    @scala.inline
+    def setIsStacked(value: Boolean | percent | relative | absolute): Self = this.set("isStacked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsStacked: Self = this.set("isStacked", js.undefined)
+    @scala.inline
+    def setLegend(value: ChartLegend | none): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegend: Self = this.set("legend", js.undefined)
+    @scala.inline
+    def setOrientation(value: ChartOrientation): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setReverseCategories(value: Boolean): Self = this.set("reverseCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReverseCategories: Self = this.set("reverseCategories", js.undefined)
+    @scala.inline
+    def setSeries(value: js.Any): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitlePosition(value: String): Self = this.set("titlePosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitlePosition: Self = this.set("titlePosition", js.undefined)
+    @scala.inline
+    def setTitleTextStyle(value: ChartTextStyle): Self = this.set("titleTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleTextStyle: Self = this.set("titleTextStyle", js.undefined)
+    @scala.inline
+    def setTooltip(value: ChartTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setVAxes(value: js.Any): Self = this.set("vAxes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVAxes: Self = this.set("vAxes", js.undefined)
+    @scala.inline
+    def setVAxis(value: ChartAxis): Self = this.set("vAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVAxis: Self = this.set("vAxis", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

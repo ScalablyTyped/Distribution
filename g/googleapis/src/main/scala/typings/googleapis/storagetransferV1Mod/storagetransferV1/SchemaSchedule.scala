@@ -34,16 +34,34 @@ trait SchemaSchedule extends js.Object {
 
 object SchemaSchedule {
   @scala.inline
-  def apply(
-    scheduleEndDate: SchemaDate = null,
-    scheduleStartDate: SchemaDate = null,
-    startTimeOfDay: SchemaTimeOfDay = null
-  ): SchemaSchedule = {
+  def apply(): SchemaSchedule = {
     val __obj = js.Dynamic.literal()
-    if (scheduleEndDate != null) __obj.updateDynamic("scheduleEndDate")(scheduleEndDate.asInstanceOf[js.Any])
-    if (scheduleStartDate != null) __obj.updateDynamic("scheduleStartDate")(scheduleStartDate.asInstanceOf[js.Any])
-    if (startTimeOfDay != null) __obj.updateDynamic("startTimeOfDay")(startTimeOfDay.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSchedule]
   }
+  @scala.inline
+  implicit class SchemaScheduleOps[Self <: SchemaSchedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScheduleEndDate(value: SchemaDate): Self = this.set("scheduleEndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleEndDate: Self = this.set("scheduleEndDate", js.undefined)
+    @scala.inline
+    def setScheduleStartDate(value: SchemaDate): Self = this.set("scheduleStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleStartDate: Self = this.set("scheduleStartDate", js.undefined)
+    @scala.inline
+    def setStartTimeOfDay(value: SchemaTimeOfDay): Self = this.set("startTimeOfDay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimeOfDay: Self = this.set("startTimeOfDay", js.undefined)
+  }
+  
 }
 

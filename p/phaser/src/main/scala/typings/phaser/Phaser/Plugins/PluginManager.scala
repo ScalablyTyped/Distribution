@@ -135,7 +135,17 @@ trait PluginManager extends js.Object {
     * @param data A value passed to the plugin's `init` method.
     */
   def install(key: String, plugin: js.Function): BasePlugin = js.native
+  def install(
+    key: String,
+    plugin: js.Function,
+    start: js.UndefOr[scala.Nothing],
+    mapping: js.UndefOr[scala.Nothing],
+    data: js.Any
+  ): BasePlugin = js.native
+  def install(key: String, plugin: js.Function, start: js.UndefOr[scala.Nothing], mapping: String): BasePlugin = js.native
+  def install(key: String, plugin: js.Function, start: js.UndefOr[scala.Nothing], mapping: String, data: js.Any): BasePlugin = js.native
   def install(key: String, plugin: js.Function, start: Boolean): BasePlugin = js.native
+  def install(key: String, plugin: js.Function, start: Boolean, mapping: js.UndefOr[scala.Nothing], data: js.Any): BasePlugin = js.native
   def install(key: String, plugin: js.Function, start: Boolean, mapping: String): BasePlugin = js.native
   def install(key: String, plugin: js.Function, start: Boolean, mapping: String, data: js.Any): BasePlugin = js.native
   /**
@@ -164,7 +174,29 @@ trait PluginManager extends js.Object {
     * @param fromLoader Is this being called by the Loader? Default false.
     */
   def installScenePlugin(key: String, plugin: js.Function): Unit = js.native
+  def installScenePlugin(
+    key: String,
+    plugin: js.Function,
+    mapping: js.UndefOr[scala.Nothing],
+    addToScene: js.UndefOr[scala.Nothing],
+    fromLoader: Boolean
+  ): Unit = js.native
+  def installScenePlugin(key: String, plugin: js.Function, mapping: js.UndefOr[scala.Nothing], addToScene: Scene): Unit = js.native
+  def installScenePlugin(
+    key: String,
+    plugin: js.Function,
+    mapping: js.UndefOr[scala.Nothing],
+    addToScene: Scene,
+    fromLoader: Boolean
+  ): Unit = js.native
   def installScenePlugin(key: String, plugin: js.Function, mapping: String): Unit = js.native
+  def installScenePlugin(
+    key: String,
+    plugin: js.Function,
+    mapping: String,
+    addToScene: js.UndefOr[scala.Nothing],
+    fromLoader: Boolean
+  ): Unit = js.native
   def installScenePlugin(key: String, plugin: js.Function, mapping: String, addToScene: Scene): Unit = js.native
   def installScenePlugin(key: String, plugin: js.Function, mapping: String, addToScene: Scene, fromLoader: Boolean): Unit = js.native
   /**
@@ -235,6 +267,7 @@ trait PluginManager extends js.Object {
     * @param creatorCallback The callback to invoke when the Game Object Creator is called.
     */
   def registerGameObject(key: String): Unit = js.native
+  def registerGameObject(key: String, factoryCallback: js.UndefOr[scala.Nothing], creatorCallback: js.Function): Unit = js.native
   def registerGameObject(key: String, factoryCallback: js.Function): Unit = js.native
   def registerGameObject(key: String, factoryCallback: js.Function, creatorCallback: js.Function): Unit = js.native
   /**
@@ -245,6 +278,7 @@ trait PluginManager extends js.Object {
     * @param removeFromCreator Should the Game Object be removed from the Game Object Creator? Default true.
     */
   def removeGameObject(key: String): Unit = js.native
+  def removeGameObject(key: String, removeFromFactory: js.UndefOr[scala.Nothing], removeFromCreator: Boolean): Unit = js.native
   def removeGameObject(key: String, removeFromFactory: Boolean): Unit = js.native
   def removeGameObject(key: String, removeFromFactory: Boolean, removeFromCreator: Boolean): Unit = js.native
   /**

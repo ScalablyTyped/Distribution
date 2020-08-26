@@ -169,6 +169,7 @@ trait ASPxClientFileManager extends ASPxClientControl {
     * @param skipRootFolder true to skip the root folder; otherwise, false.
     */
   def GetCurrentFolderPath(): String = js.native
+  def GetCurrentFolderPath(separator: js.UndefOr[scala.Nothing], skipRootFolder: Boolean): String = js.native
   def GetCurrentFolderPath(separator: String): String = js.native
   def GetCurrentFolderPath(separator: String, skipRootFolder: Boolean): String = js.native
   /**

@@ -10,57 +10,78 @@ import scala.scalajs.js.annotation._
 - typings.webicon.iconMod.Icon because Already inherited
 - typings.webicon.sizeableMod.Sizeable because Already inherited
 - typings.webicon.downloadableMod.Downloadable because var conflicts: iconIdParser. Inlined url, uri
-- typings.webicon.sizeableOptionsMod.SizeableOptions because var conflicts: iconSize. Inlined size, svgIconSize */ trait IconSetOptions extends SvgIcon {
+- typings.webicon.sizeableOptionsMod.SizeableOptions because var conflicts: iconSize. Inlined size, svgIconSize */ @js.native
+trait IconSetOptions extends SvgIcon {
   /**
     * A value indicating whether the icons are loaded separately.
     */
-  var cumulative: js.UndefOr[Boolean] = js.undefined
+  var cumulative: js.UndefOr[Boolean] = js.native
   /**
     * An alias of the `iconSize`-property.
     */
   var size: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any
-  ] = js.undefined
+  ] = js.native
   /**
     * An alias of the `iconSize`-property.
     */
   var svgIconSize: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any
-  ] = js.undefined
+  ] = js.native
   /**
     * An alias of the `url`-property.
     */
   var uri: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any
-  ] = js.undefined
+  ] = js.native
   /**
     * The url to load the source from.
     */
-  var url: js.UndefOr[UrlConfig[scala.Nothing]] = js.undefined
+  var url: js.UndefOr[UrlConfig[scala.Nothing]] = js.native
 }
 
 object IconSetOptions {
   @scala.inline
-  def apply(
-    cumulative: js.UndefOr[Boolean] = js.undefined,
-    iconIdParser: (/* id */ String, /* params */ js.Array[String]) => String = null,
-    iconSize: js.UndefOr[Double] = js.undefined,
-    size: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null,
-    svgIconSize: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any = null,
-    uri: /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any = null,
-    url: UrlConfig[scala.Nothing] = null,
-    viewBox: String = null
-  ): IconSetOptions = {
+  def apply(): IconSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative.get.asInstanceOf[js.Any])
-    if (iconIdParser != null) __obj.updateDynamic("iconIdParser")(js.Any.fromFunction2(iconIdParser))
-    if (!js.isUndefined(iconSize)) __obj.updateDynamic("iconSize")(iconSize.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (svgIconSize != null) __obj.updateDynamic("svgIconSize")(svgIconSize.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconSetOptions]
   }
+  @scala.inline
+  implicit class IconSetOptionsOps[Self <: IconSetOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCumulative(value: Boolean): Self = this.set("cumulative", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCumulative: Self = this.set("cumulative", js.undefined)
+    @scala.inline
+    def setSize(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any
+    ): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSvgIconSize(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any
+    ): Self = this.set("svgIconSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgIconSize: Self = this.set("svgIconSize", js.undefined)
+    @scala.inline
+    def setUri(value: /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+    @scala.inline
+    def setUrl(value: UrlConfig[scala.Nothing]): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

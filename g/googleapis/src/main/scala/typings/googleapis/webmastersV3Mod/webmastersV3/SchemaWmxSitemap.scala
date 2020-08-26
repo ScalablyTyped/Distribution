@@ -53,28 +53,60 @@ trait SchemaWmxSitemap extends js.Object {
 
 object SchemaWmxSitemap {
   @scala.inline
-  def apply(
-    contents: js.Array[SchemaWmxSitemapContent] = null,
-    errors: String = null,
-    isPending: js.UndefOr[Boolean] = js.undefined,
-    isSitemapsIndex: js.UndefOr[Boolean] = js.undefined,
-    lastDownloaded: String = null,
-    lastSubmitted: String = null,
-    path: String = null,
-    `type`: String = null,
-    warnings: String = null
-  ): SchemaWmxSitemap = {
+  def apply(): SchemaWmxSitemap = {
     val __obj = js.Dynamic.literal()
-    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPending)) __obj.updateDynamic("isPending")(isPending.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSitemapsIndex)) __obj.updateDynamic("isSitemapsIndex")(isSitemapsIndex.get.asInstanceOf[js.Any])
-    if (lastDownloaded != null) __obj.updateDynamic("lastDownloaded")(lastDownloaded.asInstanceOf[js.Any])
-    if (lastSubmitted != null) __obj.updateDynamic("lastSubmitted")(lastSubmitted.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWmxSitemap]
   }
+  @scala.inline
+  implicit class SchemaWmxSitemapOps[Self <: SchemaWmxSitemap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentsVarargs(value: SchemaWmxSitemapContent*): Self = this.set("contents", js.Array(value :_*))
+    @scala.inline
+    def setContents(value: js.Array[SchemaWmxSitemapContent]): Self = this.set("contents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContents: Self = this.set("contents", js.undefined)
+    @scala.inline
+    def setErrors(value: String): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setIsPending(value: Boolean): Self = this.set("isPending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPending: Self = this.set("isPending", js.undefined)
+    @scala.inline
+    def setIsSitemapsIndex(value: Boolean): Self = this.set("isSitemapsIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSitemapsIndex: Self = this.set("isSitemapsIndex", js.undefined)
+    @scala.inline
+    def setLastDownloaded(value: String): Self = this.set("lastDownloaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastDownloaded: Self = this.set("lastDownloaded", js.undefined)
+    @scala.inline
+    def setLastSubmitted(value: String): Self = this.set("lastSubmitted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSubmitted: Self = this.set("lastSubmitted", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWarnings(value: String): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarnings: Self = this.set("warnings", js.undefined)
+  }
+  
 }
 

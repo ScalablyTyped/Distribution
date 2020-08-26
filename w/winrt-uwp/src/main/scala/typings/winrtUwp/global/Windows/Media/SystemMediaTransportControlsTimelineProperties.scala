@@ -9,21 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 /** Initializes a new instance of the SystemMediaTransportControlsTimelineProperties class. */
 class SystemMediaTransportControlsTimelineProperties ()
-  extends typings.winrtUwp.Windows.Media.SystemMediaTransportControlsTimelineProperties {
-  /** Gets or sets a value representing the end time of the currently playing media item. */
-  /* CompleteClass */
-  override var endTime: Double = js.native
-  /** Gets or sets a value indicating the latest time within the currently playing media item to which the user can seek. */
-  /* CompleteClass */
-  override var maxSeekTime: Double = js.native
-  /** Gets or sets a value indicating the earliest time within the currently playing media item to which the user can seek. */
-  /* CompleteClass */
-  override var minSeekTime: Double = js.native
-  /** Gets or sets a value representing the current playback position within the currently playing media item. */
-  /* CompleteClass */
-  override var position: Double = js.native
-  /** Gets or sets a value representing the start time of the currently playing media item. */
-  /* CompleteClass */
-  override var startTime: Double = js.native
-}
+  extends typings.winrtUwp.Windows.Media.SystemMediaTransportControlsTimelineProperties
 

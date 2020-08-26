@@ -44,20 +44,42 @@ trait SchemaDeveloperMetadata extends js.Object {
 
 object SchemaDeveloperMetadata {
   @scala.inline
-  def apply(
-    location: SchemaDeveloperMetadataLocation = null,
-    metadataId: js.UndefOr[Double] = js.undefined,
-    metadataKey: String = null,
-    metadataValue: String = null,
-    visibility: String = null
-  ): SchemaDeveloperMetadata = {
+  def apply(): SchemaDeveloperMetadata = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(metadataId)) __obj.updateDynamic("metadataId")(metadataId.get.asInstanceOf[js.Any])
-    if (metadataKey != null) __obj.updateDynamic("metadataKey")(metadataKey.asInstanceOf[js.Any])
-    if (metadataValue != null) __obj.updateDynamic("metadataValue")(metadataValue.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeveloperMetadata]
   }
+  @scala.inline
+  implicit class SchemaDeveloperMetadataOps[Self <: SchemaDeveloperMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocation(value: SchemaDeveloperMetadataLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMetadataId(value: Double): Self = this.set("metadataId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadataId: Self = this.set("metadataId", js.undefined)
+    @scala.inline
+    def setMetadataKey(value: String): Self = this.set("metadataKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadataKey: Self = this.set("metadataKey", js.undefined)
+    @scala.inline
+    def setMetadataValue(value: String): Self = this.set("metadataValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadataValue: Self = this.set("metadataValue", js.undefined)
+    @scala.inline
+    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibility: Self = this.set("visibility", js.undefined)
+  }
+  
 }
 

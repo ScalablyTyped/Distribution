@@ -12,7 +12,7 @@ A globbing fs.watch wrapper built from the best parts of other fine watch libs.
 | Keywords           | watch, glob |
 | # releases         | 2 |
 | # dependents       | 468 |
-| # downloads        | 231722756 |
+| # downloads        | 235188122 |
 | # stars            | 40 |
 
 ## Links

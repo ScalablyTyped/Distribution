@@ -14,12 +14,34 @@ trait PartialClassNameMapStepBu extends js.Object {
 
 object PartialClassNameMapStepBu {
   @scala.inline
-  def apply(root: String = null, touchRipple: String = null, vertical: String = null): PartialClassNameMapStepBu = {
+  def apply(): PartialClassNameMapStepBu = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (touchRipple != null) __obj.updateDynamic("touchRipple")(touchRipple.asInstanceOf[js.Any])
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapStepBu]
   }
+  @scala.inline
+  implicit class PartialClassNameMapStepBuOps[Self <: PartialClassNameMapStepBu] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setTouchRipple(value: String): Self = this.set("touchRipple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchRipple: Self = this.set("touchRipple", js.undefined)
+    @scala.inline
+    def setVertical(value: String): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical: Self = this.set("vertical", js.undefined)
+  }
+  
 }
 

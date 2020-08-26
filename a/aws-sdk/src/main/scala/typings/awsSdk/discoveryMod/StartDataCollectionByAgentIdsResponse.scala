@@ -14,10 +14,28 @@ trait StartDataCollectionByAgentIdsResponse extends js.Object {
 
 object StartDataCollectionByAgentIdsResponse {
   @scala.inline
-  def apply(agentsConfigurationStatus: AgentConfigurationStatusList = null): StartDataCollectionByAgentIdsResponse = {
+  def apply(): StartDataCollectionByAgentIdsResponse = {
     val __obj = js.Dynamic.literal()
-    if (agentsConfigurationStatus != null) __obj.updateDynamic("agentsConfigurationStatus")(agentsConfigurationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartDataCollectionByAgentIdsResponse]
   }
+  @scala.inline
+  implicit class StartDataCollectionByAgentIdsResponseOps[Self <: StartDataCollectionByAgentIdsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentsConfigurationStatusVarargs(value: AgentConfigurationStatus*): Self = this.set("agentsConfigurationStatus", js.Array(value :_*))
+    @scala.inline
+    def setAgentsConfigurationStatus(value: AgentConfigurationStatusList): Self = this.set("agentsConfigurationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentsConfigurationStatus: Self = this.set("agentsConfigurationStatus", js.undefined)
+  }
+  
 }
 

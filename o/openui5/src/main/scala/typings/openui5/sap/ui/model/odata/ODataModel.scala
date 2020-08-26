@@ -136,6 +136,7 @@ trait ODataModel extends Model {
     * @param oParameters optional parameter for additional information introduced in SAPUI5 1.9.1,
     */
   def createBatchOperation(sPath: String, sMethod: String): Unit = js.native
+  def createBatchOperation(sPath: String, sMethod: String, oData: js.UndefOr[scala.Nothing], oParameters: js.Any): Unit = js.native
   def createBatchOperation(sPath: String, sMethod: String, oData: js.Any): Unit = js.native
   def createBatchOperation(sPath: String, sMethod: String, oData: js.Any, oParameters: js.Any): Unit = js.native
   def createEntry(sPath: String, vProperties: js.Any): Context = js.native
@@ -245,6 +246,7 @@ trait ODataModel extends Model {
     * @returns oData Object containing the requested data if the path is valid.
     */
   def getData(sPath: String): js.Any = js.native
+  def getData(sPath: String, oContext: js.UndefOr[scala.Nothing], bIncludeExpandEntries: Boolean): js.Any = js.native
   def getData(sPath: String, oContext: js.Any): js.Any = js.native
   def getData(sPath: String, oContext: js.Any, bIncludeExpandEntries: Boolean): js.Any = js.native
   /**
@@ -264,6 +266,7 @@ trait ODataModel extends Model {
     */
   def getKey(oObject: js.Any, bDecode: Boolean): Unit = js.native
   def getKey(oObject: Context, bDecode: Boolean): Unit = js.native
+  def getProperty(sPath: String, oContext: js.UndefOr[scala.Nothing], bIncludeExpandEntries: Boolean): js.Any = js.native
   def getProperty(sPath: String, oContext: js.Any, bIncludeExpandEntries: Boolean): js.Any = js.native
   /**
     * Returns the current security token. If the token has not been requested from the server it will be
@@ -322,7 +325,11 @@ trait ODataModel extends Model {
     * @returns an object which has an <code>abort</code> function to abort the current request.
     */
   def refreshSecurityToken(): js.Any = js.native
+  def refreshSecurityToken(fnSuccess: js.UndefOr[scala.Nothing], fnError: js.UndefOr[scala.Nothing], bAsync: Boolean): js.Any = js.native
+  def refreshSecurityToken(fnSuccess: js.UndefOr[scala.Nothing], fnError: js.Any): js.Any = js.native
+  def refreshSecurityToken(fnSuccess: js.UndefOr[scala.Nothing], fnError: js.Any, bAsync: Boolean): js.Any = js.native
   def refreshSecurityToken(fnSuccess: js.Any): js.Any = js.native
+  def refreshSecurityToken(fnSuccess: js.Any, fnError: js.UndefOr[scala.Nothing], bAsync: Boolean): js.Any = js.native
   def refreshSecurityToken(fnSuccess: js.Any, fnError: js.Any): js.Any = js.native
   def refreshSecurityToken(fnSuccess: js.Any, fnError: js.Any, bAsync: Boolean): js.Any = js.native
   /**
@@ -385,6 +392,7 @@ trait ODataModel extends Model {
     * found or another entry was already updated.
     */
   def setProperty(sPath: String, oValue: js.Any): Boolean = js.native
+  def setProperty(sPath: String, oValue: js.Any, oContext: js.UndefOr[scala.Nothing], bAsyncUpdate: Boolean): Boolean = js.native
   def setProperty(sPath: String, oValue: js.Any, oContext: js.Any): Boolean = js.native
   def setProperty(sPath: String, oValue: js.Any, oContext: js.Any, bAsyncUpdate: Boolean): Boolean = js.native
   /**
@@ -435,6 +443,7 @@ trait ODataModel extends Model {
     * @returns an object which has an <code>abort</code> function to abort the current request.
     */
   def submitChanges(fnSuccess: js.Any): js.Any = js.native
+  def submitChanges(fnSuccess: js.Any, fnError: js.UndefOr[scala.Nothing], oParameters: js.Any): js.Any = js.native
   def submitChanges(fnSuccess: js.Any, fnError: js.Any): js.Any = js.native
   def submitChanges(fnSuccess: js.Any, fnError: js.Any, oParameters: js.Any): js.Any = js.native
   /**

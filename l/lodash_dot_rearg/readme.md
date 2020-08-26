@@ -12,7 +12,7 @@ The lodash method `_.rearg` exported as a module.
 | Keywords           | lodash-modularized, rearg |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 31291 |
+| # downloads        | 34938 |
 | # stars            | 0 |
 
 ## Links

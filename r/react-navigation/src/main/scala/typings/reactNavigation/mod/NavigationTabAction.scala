@@ -16,38 +16,21 @@ trait NavigationTabAction extends _NavigationAction
 
 object NavigationTabAction {
   @scala.inline
-  def NavigationInitAction(`type`: NavigationSlashINIT, key: String = null, params: NavigationParams = null): NavigationTabAction = {
+  def NavigationInitAction(`type`: NavigationSlashINIT): NavigationTabAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationTabAction]
   }
   @scala.inline
-  def NavigationNavigateAction(
-    routeName: String,
-    `type`: NavigationSlashNAVIGATE,
-    action: typings.reactNavigation.mod.NavigationNavigateAction = null,
-    key: String = null,
-    params: NavigationParams = null
-  ): NavigationTabAction = {
+  def NavigationNavigateAction(routeName: String, `type`: NavigationSlashNAVIGATE): NavigationTabAction = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationTabAction]
   }
   @scala.inline
-  def NavigationBackAction(
-    `type`: NavigationSlashBACK,
-    immediate: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Null | String] = js.undefined
-  ): NavigationTabAction = {
+  def NavigationBackAction(`type`: NavigationSlashBACK): NavigationTabAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationTabAction]
   }
 }

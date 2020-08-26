@@ -14,10 +14,26 @@ trait BackendDefaults extends js.Object {
 
 object BackendDefaults {
   @scala.inline
-  def apply(clientPolicy: ClientPolicy = null): BackendDefaults = {
+  def apply(): BackendDefaults = {
     val __obj = js.Dynamic.literal()
-    if (clientPolicy != null) __obj.updateDynamic("clientPolicy")(clientPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendDefaults]
   }
+  @scala.inline
+  implicit class BackendDefaultsOps[Self <: BackendDefaults] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientPolicy(value: ClientPolicy): Self = this.set("clientPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientPolicy: Self = this.set("clientPolicy", js.undefined)
+  }
+  
 }
 

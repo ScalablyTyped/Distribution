@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlotFlagsOptions extends js.Object {
   /**
     * (Highstock) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.native
   /**
     * (Highmaps) Whether all areas of the map defined in `mapData` should be
     * rendered. If `true`, areas which don't correspond to a data point, are
     * rendered as `null` points. If `false`, those areas are skipped.
     */
-  var allAreas: js.UndefOr[Boolean] = js.undefined
+  var allAreas: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) Whether the flags are allowed to overlap sideways. If
     * `false`, the flags are moved sideways using an algorithm that seeks to
     * place every flag as close as possible to its original position.
     */
-  var allowOverlapX: js.UndefOr[Boolean] = js.undefined
+  var allowOverlapX: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) Allow this series' points to be selected by clicking on the
     * graphic (columns, point markers, pie slices, map areas etc).
@@ -32,7 +33,7 @@ trait PlotFlagsOptions extends js.Object {
     *
     * And alternative way of selecting points is through dragging.
     */
-  var allowPointSelect: js.UndefOr[Boolean] = js.undefined
+  var allowPointSelect: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) For some series, there is a limit that shuts down initial
     * animation by default when the total number of points in the chart is too
@@ -40,11 +41,11 @@ trait PlotFlagsOptions extends js.Object {
     * not run if there is more than 250 points totally. To disable this cap,
     * set `animationLimit` to `Infinity`.
     */
-  var animationLimit: js.UndefOr[Double] = js.undefined
+  var animationLimit: js.UndefOr[Double] = js.native
   /**
     * (Highstock) Sets the color blending in the boost module.
     */
-  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.undefined
+  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.native
   /**
     * (Highstock) Set the point threshold for when a series should enter boost
     * mode.
@@ -60,26 +61,26 @@ trait PlotFlagsOptions extends js.Object {
     * rendered although outside the visible plot area, and the `boostThreshold`
     * won't take effect.
     */
-  var boostThreshold: js.UndefOr[Double] = js.undefined
+  var boostThreshold: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Gantt) When `true`, the columns will center in
     * the category, ignoring null or missing points. When `false`, space will
     * be reserved for null or missing points.
     */
-  var centerInCategory: js.UndefOr[Boolean] = js.undefined
+  var centerInCategory: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
     * graphical element.
     */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /**
     * (Highstock) Disable this option to allow series rendering in the whole
     * plotting area.
     *
     * **Note:** Clipping should be always enabled when chart.zoomType is set
     */
-  var clip: js.UndefOr[Boolean] = js.undefined
+  var clip: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) The main color of the series. In line type series it applies
     * to the line and the point markers unless otherwise specified. In bar type
@@ -92,7 +93,7 @@ trait PlotFlagsOptions extends js.Object {
     * `.highcharts-series-{n}` class, or individual classes given by the
     * `className` option.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps) When using dual or multiple color axes,
     * this number defines which colorAxis the particular series is connected
@@ -103,26 +104,26 @@ trait PlotFlagsOptions extends js.Object {
     * Since v7.2.0 the option can also be an axis id or an axis index instead
     * of a boolean flag.
     */
-  var colorAxis: js.UndefOr[Boolean | Double | String] = js.undefined
+  var colorAxis: js.UndefOr[Boolean | Double | String] = js.native
   /**
     * (Highstock) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
     */
-  var colorIndex: js.UndefOr[Double] = js.undefined
+  var colorIndex: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps) Determines what data value should be
     * used to calculate point color if `colorAxis` is used. Requires to set
     * `min` and `max` if some custom point property is used or if approximation
     * for data grouping is set to `'sum'`.
     */
-  var colorKey: js.UndefOr[String] = js.undefined
+  var colorKey: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Gantt) A series specific or series type specific
     * color set to apply instead of the global colors when colorByPoint is
     * true.
     */
-  var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
+  var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.native
   /**
     * (Highstock) Compare the values of the series against the first non-null,
     * non- zero value in the visible range. The y axis will show percentage or
@@ -131,12 +132,12 @@ trait PlotFlagsOptions extends js.Object {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[String] = js.native
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
+  var compareBase: js.UndefOr[`0` | `100`] = js.native
   /**
     * (Highstock) Defines if comparison should start from the first point
     * within the visible range or should start from the first point **before**
@@ -146,12 +147,12 @@ trait PlotFlagsOptions extends js.Object {
     * range will have 0% (`compareStart=true`) or should have been already
     * calculated according to the previous point (`compareStart=false`).
     */
-  var compareStart: js.UndefOr[Boolean] = js.undefined
+  var compareStart: js.UndefOr[Boolean] = js.native
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.native
   /**
     * (Highcharts, Highstock, Gantt) When true, each point or column edge is
     * rounded to its nearest pixel in order to render sharp on screen. In some
@@ -160,7 +161,7 @@ trait PlotFlagsOptions extends js.Object {
     * cases, setting `crisp` to `false` may look better, even though each
     * column is rendered blurry.
     */
-  var crisp: js.UndefOr[Boolean] = js.undefined
+  var crisp: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Gantt) When the series contains less points than
     * the crop threshold, all points are drawn, event if the points fall
@@ -171,7 +172,7 @@ trait PlotFlagsOptions extends js.Object {
     * contain points that fall within the plot area. The advantage of cropping
     * away invisible points is to increase performance on large series.
     */
-  var cropThreshold: js.UndefOr[Double] = js.undefined
+  var cropThreshold: js.UndefOr[Double] = js.native
   /**
     * (Highstock) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
@@ -180,13 +181,13 @@ trait PlotFlagsOptions extends js.Object {
     * In styled mode, the series cursor can be set with the same classes as
     * listed under series.color.
     */
-  var cursor: js.UndefOr[String | CursorValue] = js.undefined
+  var cursor: js.UndefOr[String | CursorValue] = js.native
   /**
     * (Highstock) A reserved subspace to store options and values for
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  var custom: js.UndefOr[Dictionary[_]] = js.native
   /**
     * (Highstock) Name of the dash style to use for the graph, or for some
     * series types the outline of each shape.
@@ -194,7 +195,7 @@ trait PlotFlagsOptions extends js.Object {
     * In styled mode, the stroke dash-array can be set with the same classes as
     * listed under series.color.
     */
-  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  var dashStyle: js.UndefOr[DashStyleValue] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
     * labels, appearing next to each data point.
@@ -206,52 +207,52 @@ trait PlotFlagsOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[PlotFlagsDataLabelsOptions | js.Array[PlotFlagsDataLabelsOptions]] = js.undefined
+  var dataLabels: js.UndefOr[PlotFlagsDataLabelsOptions | js.Array[PlotFlagsDataLabelsOptions]] = js.native
   /**
     * (Highcharts, Highstock) Options for the series data sorting.
     */
-  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotFlagsDataSortingOptions] = js.undefined
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotFlagsDataSortingOptions] = js.native
   /**
     * (Highcharts) Depth of the columns in a 3D column chart.
     */
-  var depth: js.UndefOr[Double] = js.undefined
+  var depth: js.UndefOr[Double] = js.native
   /**
     * (Highstock) A description of the series to add to the screen reader
     * information about the series.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * (Highstock) The draggable-points module allows points to be moved around
     * or modified in the chart. In addition to the options mentioned under the
     * `dragDrop` API structure, the module fires three events, point.dragStart,
     * point.drag and point.drop.
     */
-  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.undefined
+  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.native
   /**
     * (Highcharts) 3D columns only. The color of the edges. Similar to
     * `borderColor`, except it defaults to the same color as the column.
     */
-  var edgeColor: js.UndefOr[ColorString] = js.undefined
+  var edgeColor: js.UndefOr[ColorString] = js.native
   /**
     * (Highcharts) 3D columns only. The width of the colored edges.
     */
-  var edgeWidth: js.UndefOr[Double] = js.undefined
+  var edgeWidth: js.UndefOr[Double] = js.native
   /**
     * (Highstock) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
     * large datasets it improves performance.
     */
-  var enableMouseTracking: js.UndefOr[Boolean] = js.undefined
+  var enableMouseTracking: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) General event handlers for the series items. These event
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.native
   /**
     * (Highstock) The fill color for the flags.
     */
-  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highstock) Determines whether the series should look for the nearest
     * point in both dimensions or just the x-dimension when hovering the
@@ -262,34 +263,34 @@ trait PlotFlagsOptions extends js.Object {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
+  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
     * chart width or only the zoomed area when zooming in on parts of the X
     * axis. By default, the Y axis adjusts to the min and max of the visible
     * data. Cartesian series only.
     */
-  var getExtremesFromAll: js.UndefOr[Boolean] = js.undefined
+  var getExtremesFromAll: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Padding between each value groups, in x
     * axis units.
     */
-  var groupPadding: js.UndefOr[Double] = js.undefined
+  var groupPadding: js.UndefOr[Double] = js.native
   /**
     * (Highcharts) The spacing between columns on the Z Axis in a 3D chart.
     */
-  var groupZPadding: js.UndefOr[Double] = js.undefined
+  var groupZPadding: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Whether to group non-stacked columns or to
     * let them render independent of each other. Non-grouped columns will be
     * laid out individually and overlap each other.
     */
-  var grouping: js.UndefOr[Boolean] = js.undefined
+  var grouping: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) Fixed height of the flag's shape. By default, height is
     * autocalculated according to the flag's title.
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     * (Highstock) When set to `false` will prevent the series data from being
     * included in any form of data export.
@@ -297,7 +298,7 @@ trait PlotFlagsOptions extends js.Object {
     * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
     * `includeInCSVExport`.
     */
-  var includeInDataExport: js.UndefOr[Boolean] = js.undefined
+  var includeInDataExport: js.UndefOr[Boolean] = js.native
   /**
     * (Highmaps) What property to join the `mapData` to the value data. For
     * example, if joinBy is "code", the mapData items with a specific code is
@@ -314,13 +315,13 @@ trait PlotFlagsOptions extends js.Object {
     * points and have a backend that can preprocess the data into a parallel
     * array of the mapData.
     */
-  var joinBy: js.UndefOr[String | js.Array[String]] = js.undefined
+  var joinBy: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * (Highstock) An array specifying which option maps to which key in the
     * data point array. This makes it convenient to work with unstructured data
     * arrays from different sources.
     */
-  var keys: js.UndefOr[js.Array[String]] = js.undefined
+  var keys: js.UndefOr[js.Array[String]] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Series labels are placed as close to the
     * series as possible in a natural way, seeking to avoid other series. The
@@ -330,26 +331,26 @@ trait PlotFlagsOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.native
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.native
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.native
   /**
     * (Highstock) The color of the line/border of the flag.
     *
     * In styled mode, the stroke is set in the
     * `.highcharts-flag-series.highcharts-point` rule.
     */
-  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highstock) The pixel width of the flag's line/border.
     */
-  var lineWidth: js.UndefOr[Double] = js.undefined
+  var lineWidth: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
     * Additionally, the value can be ":previous" to link to the previous
@@ -360,14 +361,14 @@ trait PlotFlagsOptions extends js.Object {
     * own sorting definition, the linked series will be sorted in the same
     * order as the master one.
     */
-  var linkedTo: js.UndefOr[String] = js.undefined
+  var linkedTo: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Gantt) The maximum allowed pixel width for a
     * column, translated to the height of a bar in a bar chart. This prevents
     * the columns from becoming too wide when there is a small number of points
     * in the chart.
     */
-  var maxPointWidth: js.UndefOr[Double] = js.undefined
+  var maxPointWidth: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Gantt) The minimal height for a column or width
     * for a bar. By default, 0 values are not shown. To visualize a 0 (or close
@@ -375,7 +376,7 @@ trait PlotFlagsOptions extends js.Object {
     * stacked column charts, minPointLength might not be respected for tightly
     * packed values.
     */
-  var minPointLength: js.UndefOr[Double] = js.undefined
+  var minPointLength: js.UndefOr[Double] = js.native
   /**
     * (Highstock) Options for the corresponding navigator series if
     * `showInNavigator` is `true` for this series. Available options are the
@@ -384,40 +385,40 @@ trait PlotFlagsOptions extends js.Object {
     * These options are merged with options in navigator.series, and will take
     * precedence if the same option is defined both places.
     */
-  var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.undefined
+  var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.native
   /**
     * (Highstock) The color for the parts of the graph or points that are below
     * the threshold. Note that `zones` takes precedence over the negative
     * color. Using `negativeColor` is equivalent to applying a zone with value
     * of 0.
     */
-  var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highstock) In case the flag is placed on a series, on what point key to
     * place it. Line and columns have one key, `y`. In range or OHLC-type
     * series, however, the flag can optionally be placed on the `open`, `high`,
     * `low` or `close` key.
     */
-  var onKey: js.UndefOr[OptionsOnKeyValue] = js.undefined
+  var onKey: js.UndefOr[OptionsOnKeyValue] = js.native
   /**
     * (Highstock) The id of the series that the flags should be drawn on. If no
     * id is given, the flags are drawn on the x axis.
     */
-  var onSeries: js.UndefOr[String] = js.undefined
+  var onSeries: js.UndefOr[String] = js.native
   /**
     * (Highstock) Opacity of a series parts: line, fill (e.g. area) and
     * dataLabels.
     */
-  var opacity: js.UndefOr[Double] = js.undefined
+  var opacity: js.UndefOr[Double] = js.native
   /**
     * (Highstock) Properties for each single point.
     */
-  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.native
   /**
     * (Highstock) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
     */
-  var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
+  var pointDescriptionFormatter: js.UndefOr[js.Function] = js.native
   /**
     * (Highcharts, Highstock, Gantt) If no x values are given for the points in
     * a series, `pointInterval` defines the interval of the x values. For
@@ -431,7 +432,7 @@ trait PlotFlagsOptions extends js.Object {
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
     */
-  var pointInterval: js.UndefOr[Double] = js.undefined
+  var pointInterval: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Gantt) On datetime series, this allows for
     * setting the pointInterval to irregular time units, `day`, `month` and
@@ -443,7 +444,7 @@ trait PlotFlagsOptions extends js.Object {
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
     */
-  var pointIntervalUnit: js.UndefOr[OptionsPointIntervalUnitValue] = js.undefined
+  var pointIntervalUnit: js.UndefOr[OptionsPointIntervalUnitValue] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Possible values: `"on"`, `"between"`,
     * `number`.
@@ -469,7 +470,7 @@ trait PlotFlagsOptions extends js.Object {
     *
     * Defaults to `undefined` in cartesian charts, `"between"` in polar charts.
     */
-  var pointPlacement: js.UndefOr[Double | String] = js.undefined
+  var pointPlacement: js.UndefOr[Double | String] = js.native
   /**
     * (Highcharts, Highstock, Gantt) The X axis range that each point is valid
     * for. This determines the width of the column. On a categorized axis, the
@@ -482,55 +483,55 @@ trait PlotFlagsOptions extends js.Object {
     *
     * This option is set by default to 1 if data sorting is enabled.
     */
-  var pointRange: js.UndefOr[Double] = js.undefined
+  var pointRange: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Gantt) If no x values are given for the points in
     * a series, pointStart defines on what value to start. For example, if a
     * series contains one yearly value starting from 1945, set pointStart to
     * 1945.
     */
-  var pointStart: js.UndefOr[Double] = js.undefined
+  var pointStart: js.UndefOr[Double] = js.native
   /**
     * (Highstock) Whether to select the series initially. If `showCheckbox` is
     * true, the checkbox next to the series name in the legend will be checked
     * for a selected series.
     */
-  var selected: js.UndefOr[Boolean] = js.undefined
+  var selected: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) Whether to apply a drop shadow to the graph line. Since 2.3
     * the shadow can be an object configuration containing `color`, `offsetX`,
     * `offsetY`, `opacity` and `width`.
     */
-  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.native
   /**
     * (Highstock) The shape of the marker. Can be one of "flag", "circlepin",
     * "squarepin", or an image of the format `url(/path-to-image.jpg)`.
     * Individual shapes can also be set for each point.
     */
-  var shape: js.UndefOr[FlagsShapeValue] = js.undefined
+  var shape: js.UndefOr[FlagsShapeValue] = js.native
   /**
     * (Highstock) If true, a checkbox is displayed next to the legend item to
     * allow selecting the series. The state of the checkbox is determined by
     * the `selected` option.
     */
-  var showCheckbox: js.UndefOr[Boolean] = js.undefined
+  var showCheckbox: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) Whether to display this particular series or series type in
     * the legend. Standalone series are shown in legend by default, and linked
     * series are not. Since v7.2.0 it is possible to show series that use
     * colorAxis by setting this option to `true`.
     */
-  var showInLegend: js.UndefOr[Boolean] = js.undefined
+  var showInLegend: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) Whether or not to show the series in the navigator. Takes
     * precedence over navigator.baseSeries if defined.
     */
-  var showInNavigator: js.UndefOr[Boolean] = js.undefined
+  var showInNavigator: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) If set to `true`, the accessibility module will skip past the
     * points in this series for keyboard navigation.
     */
-  var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
+  var skipKeyboardNavigation: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock) When this is true, the series will not cause the
     * Y axis to cross the zero plane (or threshold option) unless the data
@@ -540,12 +541,12 @@ trait PlotFlagsOptions extends js.Object {
     * make the Y axis show negative values according to the `minPadding`
     * option. If `softThreshold` is `true`, the Y axis starts at 0.
     */
-  var softThreshold: js.UndefOr[Boolean] = js.undefined
+  var softThreshold: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) When multiple flags in the same series fall on the same
     * value, this number determines the vertical offset between them.
     */
-  var stackDistance: js.UndefOr[Double] = js.undefined
+  var stackDistance: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock) Whether to stack the values of each series on top
     * of each other. Possible values are `undefined` to disable, `"normal"` to
@@ -557,8 +558,8 @@ trait PlotFlagsOptions extends js.Object {
     * streamgraph series type, the stacking option is set to `"stream"`. The
     * second one is `"overlap"`, which only applies to waterfall series.
     */
-  var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
-  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
+  var stacking: js.UndefOr[OptionsStackingValue] = js.native
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.native
   /**
     * (Highstock) Sticky tracking of mouse events. When true, the `mouseOut`
     * event on a series isn't triggered until the mouse moves over another
@@ -572,66 +573,66 @@ trait PlotFlagsOptions extends js.Object {
     * **Note:** The boost module will force this option because of technical
     * limitations.
     */
-  var stickyTracking: js.UndefOr[Boolean] = js.undefined
+  var stickyTracking: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) The text styles of the flag.
     *
     * In styled mode, the styles are set in the `.highcharts-flag-series
     * .highcharts-point` rule.
     */
-  var style: js.UndefOr[CSSObject] = js.undefined
+  var style: js.UndefOr[CSSObject] = js.native
   /**
     * (Highstock) Text alignment for the text inside the flag.
     */
-  var textAlign: js.UndefOr[OptionsTextAlignValue] = js.undefined
+  var textAlign: js.UndefOr[OptionsTextAlignValue] = js.native
   /**
     * (Highcharts) The Y axis value to serve as the base for the columns, for
     * distinguishing between values above and below a threshold. If `null`, the
     * columns extend from the padding Y axis minimum.
     */
-  var threshold: js.UndefOr[Double | Null] = js.undefined
+  var threshold: js.UndefOr[Double | Null] = js.native
   /**
     * (Highstock) The text to display on each flag. This can be defined on
     * series level, or individually for each point. Defaults to `"A"`.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * (Highstock) Specific tooltip options for flag series. Flag series
     * tooltips are different from most other types in that a flag doesn't have
     * a data value, so the tooltip rather displays the `text` option for each
     * point.
     */
-  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.native
   /**
     * (Highstock) Whether to use HTML to render the flag texts. Using HTML
     * allows for advanced formatting, images and reliable bi-directional text
     * rendering. Note that exported images won't respect the HTML, and that
     * HTML won't respect Z-index settings.
     */
-  var useHTML: js.UndefOr[Boolean] = js.undefined
+  var useHTML: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) Set the initial visibility of the series.
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) Fixed width of the flag's shape. By default, width is
     * autocalculated according to the flag's title.
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
   /**
     * (Highstock) The y position of the top left corner of the flag relative to
     * either the series (if onSeries is defined), or the x axis. Defaults to
     * `-30`.
     */
-  var y: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double] = js.native
   /**
     * (Highmaps) Define the z index of the series.
     */
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var zIndex: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock) Defines the Axis on which the zones are applied.
     */
-  var zoneAxis: js.UndefOr[String] = js.undefined
+  var zoneAxis: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock) An array defining zones within a series. Zones
     * can be applied to the X axis, Y axis or Z axis for bubbles, according to
@@ -642,189 +643,387 @@ trait PlotFlagsOptions extends js.Object {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.native
 }
 
 object PlotFlagsOptions {
   @scala.inline
-  def apply(
-    accessibility: SeriesAccessibilityOptionsObject = null,
-    allAreas: js.UndefOr[Boolean] = js.undefined,
-    allowOverlapX: js.UndefOr[Boolean] = js.undefined,
-    allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animationLimit: js.UndefOr[Double] = js.undefined,
-    boostBlending: OptionsBoostBlendingValue = null,
-    boostThreshold: js.UndefOr[Double] = js.undefined,
-    centerInCategory: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    clip: js.UndefOr[Boolean] = js.undefined,
-    color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: Boolean | Double | String = null,
-    colorIndex: js.UndefOr[Double] = js.undefined,
-    colorKey: String = null,
-    colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
-    compare: String = null,
-    compareBase: `0` | `100` = null,
-    compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: SeriesConnectorsOptionsObject = null,
-    crisp: js.UndefOr[Boolean] = js.undefined,
-    cropThreshold: js.UndefOr[Double] = js.undefined,
-    cursor: String | CursorValue = null,
-    custom: Dictionary[_] = null,
-    dashStyle: DashStyleValue = null,
-    dataLabels: PlotFlagsDataLabelsOptions | js.Array[PlotFlagsDataLabelsOptions] = null,
-    dataSorting: DataSortingOptionsObject | PlotFlagsDataSortingOptions = null,
-    depth: js.UndefOr[Double] = js.undefined,
-    description: String = null,
-    dragDrop: SeriesDragDropOptionsObject = null,
-    edgeColor: ColorString = null,
-    edgeWidth: js.UndefOr[Double] = js.undefined,
-    enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: SeriesEventsOptionsObject = null,
-    fillColor: ColorString | GradientColorObject | PatternObject = null,
-    findNearestPointBy: OptionsFindNearestPointByValue = null,
-    getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
-    groupPadding: js.UndefOr[Double] = js.undefined,
-    groupZPadding: js.UndefOr[Double] = js.undefined,
-    grouping: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    includeInDataExport: js.UndefOr[Boolean] = js.undefined,
-    joinBy: String | js.Array[String] = null,
-    keys: js.Array[String] = null,
-    label: SeriesLabelOptionsObject = null,
-    lastPrice: SeriesLastPriceOptionsObject = null,
-    lastVisiblePrice: SeriesLastVisiblePriceOptionsObject = null,
-    lineColor: ColorString | GradientColorObject | PatternObject = null,
-    lineWidth: js.UndefOr[Double] = js.undefined,
-    linkedTo: String = null,
-    maxPointWidth: js.UndefOr[Double] = js.undefined,
-    minPointLength: js.UndefOr[Double] = js.undefined,
-    navigatorOptions: PlotSeriesOptions = null,
-    negativeColor: ColorString | GradientColorObject | PatternObject = null,
-    onKey: OptionsOnKeyValue = null,
-    onSeries: String = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    point: PlotSeriesPointOptions = null,
-    pointDescriptionFormatter: js.Function = null,
-    pointInterval: js.UndefOr[Double] = js.undefined,
-    pointIntervalUnit: OptionsPointIntervalUnitValue = null,
-    pointPlacement: Double | String = null,
-    pointRange: js.UndefOr[Double] = js.undefined,
-    pointStart: js.UndefOr[Double] = js.undefined,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    shadow: Boolean | ShadowOptionsObject = null,
-    shape: FlagsShapeValue = null,
-    showCheckbox: js.UndefOr[Boolean] = js.undefined,
-    showInLegend: js.UndefOr[Boolean] = js.undefined,
-    showInNavigator: js.UndefOr[Boolean] = js.undefined,
-    skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    softThreshold: js.UndefOr[Boolean] = js.undefined,
-    stackDistance: js.UndefOr[Double] = js.undefined,
-    stacking: OptionsStackingValue = null,
-    states: SeriesStatesOptionsObject = null,
-    stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    style: CSSObject = null,
-    textAlign: OptionsTextAlignValue = null,
-    threshold: js.UndefOr[Null | Double] = js.undefined,
-    title: String = null,
-    tooltip: SeriesTooltipOptionsObject = null,
-    useHTML: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined,
-    zIndex: js.UndefOr[Double] = js.undefined,
-    zoneAxis: String = null,
-    zones: js.Array[SeriesZonesOptionsObject] = null
-  ): PlotFlagsOptions = {
+  def apply(): PlotFlagsOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(allAreas)) __obj.updateDynamic("allAreas")(allAreas.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowOverlapX)) __obj.updateDynamic("allowOverlapX")(allowOverlapX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPointSelect)) __obj.updateDynamic("allowPointSelect")(allowPointSelect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationLimit)) __obj.updateDynamic("animationLimit")(animationLimit.get.asInstanceOf[js.Any])
-    if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending.asInstanceOf[js.Any])
-    if (!js.isUndefined(boostThreshold)) __obj.updateDynamic("boostThreshold")(boostThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerInCategory)) __obj.updateDynamic("centerInCategory")(centerInCategory.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorIndex)) __obj.updateDynamic("colorIndex")(colorIndex.get.asInstanceOf[js.Any])
-    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (compare != null) __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
-    if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart.get.asInstanceOf[js.Any])
-    if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(crisp)) __obj.updateDynamic("crisp")(crisp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cropThreshold)) __obj.updateDynamic("cropThreshold")(cropThreshold.get.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
-    if (edgeColor != null) __obj.updateDynamic("edgeColor")(edgeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeWidth)) __obj.updateDynamic("edgeWidth")(edgeWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.get.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(getExtremesFromAll)) __obj.updateDynamic("getExtremesFromAll")(getExtremesFromAll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupPadding)) __obj.updateDynamic("groupPadding")(groupPadding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupZPadding)) __obj.updateDynamic("groupZPadding")(groupZPadding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(grouping)) __obj.updateDynamic("grouping")(grouping.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport.get.asInstanceOf[js.Any])
-    if (joinBy != null) __obj.updateDynamic("joinBy")(joinBy.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lastPrice != null) __obj.updateDynamic("lastPrice")(lastPrice.asInstanceOf[js.Any])
-    if (lastVisiblePrice != null) __obj.updateDynamic("lastVisiblePrice")(lastVisiblePrice.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
-    if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxPointWidth)) __obj.updateDynamic("maxPointWidth")(maxPointWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minPointLength)) __obj.updateDynamic("minPointLength")(minPointLength.get.asInstanceOf[js.Any])
-    if (navigatorOptions != null) __obj.updateDynamic("navigatorOptions")(navigatorOptions.asInstanceOf[js.Any])
-    if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor.asInstanceOf[js.Any])
-    if (onKey != null) __obj.updateDynamic("onKey")(onKey.asInstanceOf[js.Any])
-    if (onSeries != null) __obj.updateDynamic("onSeries")(onSeries.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointInterval)) __obj.updateDynamic("pointInterval")(pointInterval.get.asInstanceOf[js.Any])
-    if (pointIntervalUnit != null) __obj.updateDynamic("pointIntervalUnit")(pointIntervalUnit.asInstanceOf[js.Any])
-    if (pointPlacement != null) __obj.updateDynamic("pointPlacement")(pointPlacement.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointRange)) __obj.updateDynamic("pointRange")(pointRange.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointStart)) __obj.updateDynamic("pointStart")(pointStart.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInNavigator)) __obj.updateDynamic("showInNavigator")(showInNavigator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipKeyboardNavigation)) __obj.updateDynamic("skipKeyboardNavigation")(skipKeyboardNavigation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(softThreshold)) __obj.updateDynamic("softThreshold")(softThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackDistance)) __obj.updateDynamic("stackDistance")(stackDistance.get.asInstanceOf[js.Any])
-    if (stacking != null) __obj.updateDynamic("stacking")(stacking.asInstanceOf[js.Any])
-    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
-    if (zoneAxis != null) __obj.updateDynamic("zoneAxis")(zoneAxis.asInstanceOf[js.Any])
-    if (zones != null) __obj.updateDynamic("zones")(zones.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotFlagsOptions]
   }
+  @scala.inline
+  implicit class PlotFlagsOptionsOps[Self <: PlotFlagsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = this.set("accessibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibility: Self = this.set("accessibility", js.undefined)
+    @scala.inline
+    def setAllAreas(value: Boolean): Self = this.set("allAreas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllAreas: Self = this.set("allAreas", js.undefined)
+    @scala.inline
+    def setAllowOverlapX(value: Boolean): Self = this.set("allowOverlapX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowOverlapX: Self = this.set("allowOverlapX", js.undefined)
+    @scala.inline
+    def setAllowPointSelect(value: Boolean): Self = this.set("allowPointSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowPointSelect: Self = this.set("allowPointSelect", js.undefined)
+    @scala.inline
+    def setAnimationLimit(value: Double): Self = this.set("animationLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationLimit: Self = this.set("animationLimit", js.undefined)
+    @scala.inline
+    def setBoostBlending(value: OptionsBoostBlendingValue): Self = this.set("boostBlending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoostBlending: Self = this.set("boostBlending", js.undefined)
+    @scala.inline
+    def setBoostThreshold(value: Double): Self = this.set("boostThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoostThreshold: Self = this.set("boostThreshold", js.undefined)
+    @scala.inline
+    def setCenterInCategory(value: Boolean): Self = this.set("centerInCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenterInCategory: Self = this.set("centerInCategory", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClip(value: Boolean): Self = this.set("clip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClip: Self = this.set("clip", js.undefined)
+    @scala.inline
+    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColorAxis(value: Boolean | Double | String): Self = this.set("colorAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorAxis: Self = this.set("colorAxis", js.undefined)
+    @scala.inline
+    def setColorIndex(value: Double): Self = this.set("colorIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorIndex: Self = this.set("colorIndex", js.undefined)
+    @scala.inline
+    def setColorKey(value: String): Self = this.set("colorKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorKey: Self = this.set("colorKey", js.undefined)
+    @scala.inline
+    def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = this.set("colors", js.Array(value :_*))
+    @scala.inline
+    def setColors(value: js.Array[ColorString | GradientColorObject | PatternObject]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setCompare(value: String): Self = this.set("compare", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompare: Self = this.set("compare", js.undefined)
+    @scala.inline
+    def setCompareBase(value: `0` | `100`): Self = this.set("compareBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompareBase: Self = this.set("compareBase", js.undefined)
+    @scala.inline
+    def setCompareStart(value: Boolean): Self = this.set("compareStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompareStart: Self = this.set("compareStart", js.undefined)
+    @scala.inline
+    def setConnectors(value: SeriesConnectorsOptionsObject): Self = this.set("connectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectors: Self = this.set("connectors", js.undefined)
+    @scala.inline
+    def setCrisp(value: Boolean): Self = this.set("crisp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrisp: Self = this.set("crisp", js.undefined)
+    @scala.inline
+    def setCropThreshold(value: Double): Self = this.set("cropThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCropThreshold: Self = this.set("cropThreshold", js.undefined)
+    @scala.inline
+    def setCursor(value: String | CursorValue): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursor: Self = this.set("cursor", js.undefined)
+    @scala.inline
+    def setCustom(value: Dictionary[_]): Self = this.set("custom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom: Self = this.set("custom", js.undefined)
+    @scala.inline
+    def setDashStyle(value: DashStyleValue): Self = this.set("dashStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashStyle: Self = this.set("dashStyle", js.undefined)
+    @scala.inline
+    def setDataLabelsVarargs(value: PlotFlagsDataLabelsOptions*): Self = this.set("dataLabels", js.Array(value :_*))
+    @scala.inline
+    def setDataLabels(value: PlotFlagsDataLabelsOptions | js.Array[PlotFlagsDataLabelsOptions]): Self = this.set("dataLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataLabels: Self = this.set("dataLabels", js.undefined)
+    @scala.inline
+    def setDataSorting(value: DataSortingOptionsObject | PlotFlagsDataSortingOptions): Self = this.set("dataSorting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSorting: Self = this.set("dataSorting", js.undefined)
+    @scala.inline
+    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepth: Self = this.set("depth", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDragDrop(value: SeriesDragDropOptionsObject): Self = this.set("dragDrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragDrop: Self = this.set("dragDrop", js.undefined)
+    @scala.inline
+    def setEdgeColor(value: ColorString): Self = this.set("edgeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeColor: Self = this.set("edgeColor", js.undefined)
+    @scala.inline
+    def setEdgeWidth(value: Double): Self = this.set("edgeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeWidth: Self = this.set("edgeWidth", js.undefined)
+    @scala.inline
+    def setEnableMouseTracking(value: Boolean): Self = this.set("enableMouseTracking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableMouseTracking: Self = this.set("enableMouseTracking", js.undefined)
+    @scala.inline
+    def setEvents(value: SeriesEventsOptionsObject): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setFillColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    @scala.inline
+    def setFindNearestPointBy(value: OptionsFindNearestPointByValue): Self = this.set("findNearestPointBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindNearestPointBy: Self = this.set("findNearestPointBy", js.undefined)
+    @scala.inline
+    def setGetExtremesFromAll(value: Boolean): Self = this.set("getExtremesFromAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetExtremesFromAll: Self = this.set("getExtremesFromAll", js.undefined)
+    @scala.inline
+    def setGroupPadding(value: Double): Self = this.set("groupPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupPadding: Self = this.set("groupPadding", js.undefined)
+    @scala.inline
+    def setGroupZPadding(value: Double): Self = this.set("groupZPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupZPadding: Self = this.set("groupZPadding", js.undefined)
+    @scala.inline
+    def setGrouping(value: Boolean): Self = this.set("grouping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrouping: Self = this.set("grouping", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIncludeInDataExport(value: Boolean): Self = this.set("includeInDataExport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeInDataExport: Self = this.set("includeInDataExport", js.undefined)
+    @scala.inline
+    def setJoinByVarargs(value: String*): Self = this.set("joinBy", js.Array(value :_*))
+    @scala.inline
+    def setJoinBy(value: String | js.Array[String]): Self = this.set("joinBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoinBy: Self = this.set("joinBy", js.undefined)
+    @scala.inline
+    def setKeysVarargs(value: String*): Self = this.set("keys", js.Array(value :_*))
+    @scala.inline
+    def setKeys(value: js.Array[String]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeys: Self = this.set("keys", js.undefined)
+    @scala.inline
+    def setLabel(value: SeriesLabelOptionsObject): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLastPrice(value: SeriesLastPriceOptionsObject): Self = this.set("lastPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastPrice: Self = this.set("lastPrice", js.undefined)
+    @scala.inline
+    def setLastVisiblePrice(value: SeriesLastVisiblePriceOptionsObject): Self = this.set("lastVisiblePrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastVisiblePrice: Self = this.set("lastVisiblePrice", js.undefined)
+    @scala.inline
+    def setLineColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    @scala.inline
+    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    @scala.inline
+    def setLinkedTo(value: String): Self = this.set("linkedTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkedTo: Self = this.set("linkedTo", js.undefined)
+    @scala.inline
+    def setMaxPointWidth(value: Double): Self = this.set("maxPointWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPointWidth: Self = this.set("maxPointWidth", js.undefined)
+    @scala.inline
+    def setMinPointLength(value: Double): Self = this.set("minPointLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinPointLength: Self = this.set("minPointLength", js.undefined)
+    @scala.inline
+    def setNavigatorOptions(value: PlotSeriesOptions): Self = this.set("navigatorOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorOptions: Self = this.set("navigatorOptions", js.undefined)
+    @scala.inline
+    def setNegativeColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("negativeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegativeColor: Self = this.set("negativeColor", js.undefined)
+    @scala.inline
+    def setOnKey(value: OptionsOnKeyValue): Self = this.set("onKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnKey: Self = this.set("onKey", js.undefined)
+    @scala.inline
+    def setOnSeries(value: String): Self = this.set("onSeries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSeries: Self = this.set("onSeries", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPoint(value: PlotSeriesPointOptions): Self = this.set("point", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoint: Self = this.set("point", js.undefined)
+    @scala.inline
+    def setPointDescriptionFormatter(value: js.Function): Self = this.set("pointDescriptionFormatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointDescriptionFormatter: Self = this.set("pointDescriptionFormatter", js.undefined)
+    @scala.inline
+    def setPointInterval(value: Double): Self = this.set("pointInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointInterval: Self = this.set("pointInterval", js.undefined)
+    @scala.inline
+    def setPointIntervalUnit(value: OptionsPointIntervalUnitValue): Self = this.set("pointIntervalUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointIntervalUnit: Self = this.set("pointIntervalUnit", js.undefined)
+    @scala.inline
+    def setPointPlacement(value: Double | String): Self = this.set("pointPlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointPlacement: Self = this.set("pointPlacement", js.undefined)
+    @scala.inline
+    def setPointRange(value: Double): Self = this.set("pointRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointRange: Self = this.set("pointRange", js.undefined)
+    @scala.inline
+    def setPointStart(value: Double): Self = this.set("pointStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointStart: Self = this.set("pointStart", js.undefined)
+    @scala.inline
+    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setShadow(value: Boolean | ShadowOptionsObject): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadow: Self = this.set("shadow", js.undefined)
+    @scala.inline
+    def setShape(value: FlagsShapeValue): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setShowCheckbox(value: Boolean): Self = this.set("showCheckbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCheckbox: Self = this.set("showCheckbox", js.undefined)
+    @scala.inline
+    def setShowInLegend(value: Boolean): Self = this.set("showInLegend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowInLegend: Self = this.set("showInLegend", js.undefined)
+    @scala.inline
+    def setShowInNavigator(value: Boolean): Self = this.set("showInNavigator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowInNavigator: Self = this.set("showInNavigator", js.undefined)
+    @scala.inline
+    def setSkipKeyboardNavigation(value: Boolean): Self = this.set("skipKeyboardNavigation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipKeyboardNavigation: Self = this.set("skipKeyboardNavigation", js.undefined)
+    @scala.inline
+    def setSoftThreshold(value: Boolean): Self = this.set("softThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSoftThreshold: Self = this.set("softThreshold", js.undefined)
+    @scala.inline
+    def setStackDistance(value: Double): Self = this.set("stackDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackDistance: Self = this.set("stackDistance", js.undefined)
+    @scala.inline
+    def setStacking(value: OptionsStackingValue): Self = this.set("stacking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStacking: Self = this.set("stacking", js.undefined)
+    @scala.inline
+    def setStates(value: SeriesStatesOptionsObject): Self = this.set("states", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStates: Self = this.set("states", js.undefined)
+    @scala.inline
+    def setStickyTracking(value: Boolean): Self = this.set("stickyTracking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStickyTracking: Self = this.set("stickyTracking", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTextAlign(value: OptionsTextAlignValue): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    @scala.inline
+    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    @scala.inline
+    def setThresholdNull: Self = this.set("threshold", null)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTooltip(value: SeriesTooltipOptionsObject): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setUseHTML(value: Boolean): Self = this.set("useHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseHTML: Self = this.set("useHTML", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    @scala.inline
+    def setZoneAxis(value: String): Self = this.set("zoneAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneAxis: Self = this.set("zoneAxis", js.undefined)
+    @scala.inline
+    def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = this.set("zones", js.Array(value :_*))
+    @scala.inline
+    def setZones(value: js.Array[SeriesZonesOptionsObject]): Self = this.set("zones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZones: Self = this.set("zones", js.undefined)
+  }
+  
 }
 

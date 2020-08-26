@@ -22,16 +22,34 @@ trait DescribeDashboardResponse extends js.Object {
 
 object DescribeDashboardResponse {
   @scala.inline
-  def apply(
-    Dashboard: Dashboard = null,
-    RequestId: String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined
-  ): DescribeDashboardResponse = {
+  def apply(): DescribeDashboardResponse = {
     val __obj = js.Dynamic.literal()
-    if (Dashboard != null) __obj.updateDynamic("Dashboard")(Dashboard.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDashboardResponse]
   }
+  @scala.inline
+  implicit class DescribeDashboardResponseOps[Self <: DescribeDashboardResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDashboard(value: Dashboard): Self = this.set("Dashboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashboard: Self = this.set("Dashboard", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

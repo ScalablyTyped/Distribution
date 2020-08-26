@@ -28,6 +28,7 @@ class ResourceEnterprisesApplications protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaApplication] = js.native
   def get(callback: BodyResponseCallback[SchemaApplication]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApplication] = js.native
   def get(params: ParamsResourceEnterprisesApplicationsGet): GaxiosPromise[SchemaApplication] = js.native
   def get(
     params: ParamsResourceEnterprisesApplicationsGet,

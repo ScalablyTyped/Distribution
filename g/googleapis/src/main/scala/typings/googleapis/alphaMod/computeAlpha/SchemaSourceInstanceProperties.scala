@@ -86,36 +86,82 @@ trait SchemaSourceInstanceProperties extends js.Object {
 
 object SchemaSourceInstanceProperties {
   @scala.inline
-  def apply(
-    canIpForward: js.UndefOr[Boolean] = js.undefined,
-    deletionProtection: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    disks: js.Array[SchemaSavedAttachedDisk] = null,
-    guestAccelerators: js.Array[SchemaAcceleratorConfig] = null,
-    labels: StringDictionary[String] = null,
-    machineType: String = null,
-    metadata: SchemaMetadata = null,
-    minCpuPlatform: String = null,
-    networkInterfaces: js.Array[SchemaNetworkInterface] = null,
-    scheduling: SchemaScheduling = null,
-    serviceAccounts: js.Array[SchemaServiceAccount] = null,
-    tags: SchemaTags = null
-  ): SchemaSourceInstanceProperties = {
+  def apply(): SchemaSourceInstanceProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deletionProtection)) __obj.updateDynamic("deletionProtection")(deletionProtection.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
-    if (guestAccelerators != null) __obj.updateDynamic("guestAccelerators")(guestAccelerators.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
-    if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces.asInstanceOf[js.Any])
-    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling.asInstanceOf[js.Any])
-    if (serviceAccounts != null) __obj.updateDynamic("serviceAccounts")(serviceAccounts.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceInstanceProperties]
   }
+  @scala.inline
+  implicit class SchemaSourceInstancePropertiesOps[Self <: SchemaSourceInstanceProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanIpForward(value: Boolean): Self = this.set("canIpForward", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanIpForward: Self = this.set("canIpForward", js.undefined)
+    @scala.inline
+    def setDeletionProtection(value: Boolean): Self = this.set("deletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionProtection: Self = this.set("deletionProtection", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisksVarargs(value: SchemaSavedAttachedDisk*): Self = this.set("disks", js.Array(value :_*))
+    @scala.inline
+    def setDisks(value: js.Array[SchemaSavedAttachedDisk]): Self = this.set("disks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisks: Self = this.set("disks", js.undefined)
+    @scala.inline
+    def setGuestAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = this.set("guestAccelerators", js.Array(value :_*))
+    @scala.inline
+    def setGuestAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = this.set("guestAccelerators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuestAccelerators: Self = this.set("guestAccelerators", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setMinCpuPlatform(value: String): Self = this.set("minCpuPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCpuPlatform: Self = this.set("minCpuPlatform", js.undefined)
+    @scala.inline
+    def setNetworkInterfacesVarargs(value: SchemaNetworkInterface*): Self = this.set("networkInterfaces", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaces(value: js.Array[SchemaNetworkInterface]): Self = this.set("networkInterfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaces: Self = this.set("networkInterfaces", js.undefined)
+    @scala.inline
+    def setScheduling(value: SchemaScheduling): Self = this.set("scheduling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduling: Self = this.set("scheduling", js.undefined)
+    @scala.inline
+    def setServiceAccountsVarargs(value: SchemaServiceAccount*): Self = this.set("serviceAccounts", js.Array(value :_*))
+    @scala.inline
+    def setServiceAccounts(value: js.Array[SchemaServiceAccount]): Self = this.set("serviceAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccounts: Self = this.set("serviceAccounts", js.undefined)
+    @scala.inline
+    def setTags(value: SchemaTags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

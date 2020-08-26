@@ -26,11 +26,32 @@ trait SchemaListBreakpointsResponse extends js.Object {
 
 object SchemaListBreakpointsResponse {
   @scala.inline
-  def apply(breakpoints: js.Array[SchemaBreakpoint] = null, nextWaitToken: String = null): SchemaListBreakpointsResponse = {
+  def apply(): SchemaListBreakpointsResponse = {
     val __obj = js.Dynamic.literal()
-    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints.asInstanceOf[js.Any])
-    if (nextWaitToken != null) __obj.updateDynamic("nextWaitToken")(nextWaitToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListBreakpointsResponse]
   }
+  @scala.inline
+  implicit class SchemaListBreakpointsResponseOps[Self <: SchemaListBreakpointsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBreakpointsVarargs(value: SchemaBreakpoint*): Self = this.set("breakpoints", js.Array(value :_*))
+    @scala.inline
+    def setBreakpoints(value: js.Array[SchemaBreakpoint]): Self = this.set("breakpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreakpoints: Self = this.set("breakpoints", js.undefined)
+    @scala.inline
+    def setNextWaitToken(value: String): Self = this.set("nextWaitToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextWaitToken: Self = this.set("nextWaitToken", js.undefined)
+  }
+  
 }
 

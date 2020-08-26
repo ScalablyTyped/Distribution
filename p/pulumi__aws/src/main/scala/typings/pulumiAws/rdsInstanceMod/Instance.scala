@@ -75,10 +75,9 @@ class Instance protected () extends CustomResource {
   val caCertIdentifier: Output_[String] = js.native
   /**
     * The character set name to use for DB
-    * encoding in Oracle instances. This can't be changed. See [Oracle Character Sets
-    * Supported in Amazon
-    * RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.OracleCharacterSets.html)
-    * for more information.
+    * encoding in Oracle and Microsoft SQL instances (collation). This can't be changed. See [Oracle Character Sets
+    * Supported in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.OracleCharacterSets.html)
+    * or [Server-Level Collation for Microsoft SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.CommonDBATasks.Collation.html) for more information.
     */
   val characterSetName: Output_[String] = js.native
   /**
@@ -86,7 +85,7 @@ class Instance protected () extends CustomResource {
     */
   val copyTagsToSnapshot: Output_[js.UndefOr[Boolean]] = js.native
   /**
-    * Name of [DB subnet group](https://www.terraform.io/docs/providers/aws/r/db_subnet_group.html). DB instance will
+    * Name of `DB subnet group`. DB instance will
     * be created in the VPC associated with the DB subnet group. If unspecified, will
     * be created in the `default` VPC, or in EC2 Classic, if available. When working
     * with read replicas, it should be specified only if the source database
@@ -112,7 +111,7 @@ class Instance protected () extends CustomResource {
     */
   val domainIamRoleName: Output_[js.UndefOr[String]] = js.native
   /**
-    * List of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on `engine`): `agent` (MSSQL), `alert`, `audit`, `error`, `general`, `listener`, `slowquery`, `trace`, `postgresql` (PostgreSQL), `upgrade` (PostgreSQL).
+    * List of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on `engine`). MySQL and MariaDB: `audit`, `error`, `general`, `slowquery`. PostgreSQL: `postgresql`, `upgrade`. MSSQL: `agent` , `error`. Oracle: `alert`, `audit`, `listener`, `trace`.
     */
   val enabledCloudwatchLogsExports: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
@@ -122,7 +121,7 @@ class Instance protected () extends CustomResource {
   /**
     * (Required unless a `snapshotIdentifier` or `replicateSourceDb`
     * is provided) The database engine to use.  For supported values, see the Engine parameter in [API action CreateDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html).
-    * Note that for Amazon Aurora instances the engine must match the [DB cluster](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html)'s engine'.
+    * Note that for Amazon Aurora instances the engine must match the `DB cluster`'s engine'.
     * For information on the difference between the available Aurora MySQL engines
     * see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
     * in the Amazon RDS User Guide.
@@ -133,7 +132,7 @@ class Instance protected () extends CustomResource {
     * is enabled, you can provide a prefix of the version such as `5.7` (for `5.7.10`) and
     * this attribute will ignore differences in the patch version automatically (e.g. `5.7.17`).
     * For supported values, see the EngineVersion parameter in [API action CreateDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html).
-    * Note that for Amazon Aurora instances the engine version must match the [DB cluster](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html)'s engine version'.
+    * Note that for Amazon Aurora instances the engine version must match the `DB cluster`'s engine version'.
     */
   val engineVersion: Output_[String] = js.native
   /**
@@ -257,7 +256,9 @@ class Instance protected () extends CustomResource {
   /**
     * Specifies that this resource is a Replicate
     * database, and to use this value as the source database. This correlates to the
-    * `identifier` of another Amazon RDS Database to replicate. Note that if you are
+    * `identifier` of another Amazon RDS Database to replicate (if replicating within
+    * a single region) or ARN of the Amazon RDS Database to replicate (if replicating
+    * cross-region). Note that if you are
     * creating a cross-region replica of an encrypted database you will also need to
     * specify a `kmsKeyId`. See [DB Instance Replication][1] and [Working with
     * PostgreSQL and MySQL Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
@@ -310,9 +311,9 @@ class Instance protected () extends CustomResource {
     */
   val storageType: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Time zone of the DB instance. `timezone` is currently
     * only supported by Microsoft SQL Server. The `timezone` can only be set on
@@ -344,8 +345,10 @@ object Instance extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Instance = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Instance = js.native
   def get(name: String, id: Input[ID], state: InstanceState): Instance = js.native
   def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): Instance = js.native
   /**

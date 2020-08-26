@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "VariableAst")
 @js.native
 class VariableAst protected ()
-  extends typings.angularCompiler.publicApiMod.VariableAst {
+  extends typings.angularCompiler.compilerMod.VariableAst {
   def this(name: String, value: String, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
   def this(
     name: String,

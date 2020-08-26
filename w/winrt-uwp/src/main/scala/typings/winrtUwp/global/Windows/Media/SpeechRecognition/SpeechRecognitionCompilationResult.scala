@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionCompilationResult")
 @js.native
 abstract class SpeechRecognitionCompilationResult ()
-  extends typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionCompilationResult {
-  /** Gets the result state ( SpeechRecognitionResultStatus ) from the compiling of grammar constraints. */
-  /* CompleteClass */
-  override var status: typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus = js.native
-}
+  extends typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionCompilationResult
 

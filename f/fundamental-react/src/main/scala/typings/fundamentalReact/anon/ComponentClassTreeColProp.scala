@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/TreeView/TreeView.TreeColProps, react.react.ComponentState> & {  displayName  :'TreeView.Col'} */
+/* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/TreeView/TreeView.TreeColProps, react.react.ComponentState> & {  displayName :'TreeView.Col'} */
 @js.native
 trait ComponentClassTreeColProp
   extends Instantiable1[/* props */ TreeColProps, Component[TreeColProps, ComponentState, js.Any]]
@@ -27,7 +27,7 @@ trait ComponentClassTreeColProp
   var contextType: js.UndefOr[Context[_]] = js.native
   var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
   var defaultProps: js.UndefOr[PartialTreeColProps] = js.native
-  var displayName: js.UndefOr[String with TreeViewDotCol] = js.native
+  var displayName: js.UndefOr[String] with TreeViewDotCol = js.native
   var getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[TreeColProps, ComponentState]] = js.native
   var getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[TreeColProps, ComponentState]] = js.native
   var propTypes: js.UndefOr[WeakValidationMapTreeColP] = js.native

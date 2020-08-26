@@ -12,10 +12,6 @@ class ReactiveVar[T] protected ()
   extends typings.meteor.ReactiveVar[T] {
   def this(initialValue: T) = this()
   def this(initialValue: T, equalsFunc: js.Function) = this()
-  /* CompleteClass */
-  override def get(): T = js.native
-  /* CompleteClass */
-  override def set(newValue: T): Unit = js.native
 }
 
 @JSGlobal("ReactiveVar")

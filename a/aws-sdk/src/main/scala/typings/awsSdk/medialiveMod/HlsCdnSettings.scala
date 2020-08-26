@@ -14,18 +14,38 @@ trait HlsCdnSettings extends js.Object {
 
 object HlsCdnSettings {
   @scala.inline
-  def apply(
-    HlsAkamaiSettings: HlsAkamaiSettings = null,
-    HlsBasicPutSettings: HlsBasicPutSettings = null,
-    HlsMediaStoreSettings: HlsMediaStoreSettings = null,
-    HlsWebdavSettings: HlsWebdavSettings = null
-  ): HlsCdnSettings = {
+  def apply(): HlsCdnSettings = {
     val __obj = js.Dynamic.literal()
-    if (HlsAkamaiSettings != null) __obj.updateDynamic("HlsAkamaiSettings")(HlsAkamaiSettings.asInstanceOf[js.Any])
-    if (HlsBasicPutSettings != null) __obj.updateDynamic("HlsBasicPutSettings")(HlsBasicPutSettings.asInstanceOf[js.Any])
-    if (HlsMediaStoreSettings != null) __obj.updateDynamic("HlsMediaStoreSettings")(HlsMediaStoreSettings.asInstanceOf[js.Any])
-    if (HlsWebdavSettings != null) __obj.updateDynamic("HlsWebdavSettings")(HlsWebdavSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsCdnSettings]
   }
+  @scala.inline
+  implicit class HlsCdnSettingsOps[Self <: HlsCdnSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHlsAkamaiSettings(value: HlsAkamaiSettings): Self = this.set("HlsAkamaiSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsAkamaiSettings: Self = this.set("HlsAkamaiSettings", js.undefined)
+    @scala.inline
+    def setHlsBasicPutSettings(value: HlsBasicPutSettings): Self = this.set("HlsBasicPutSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsBasicPutSettings: Self = this.set("HlsBasicPutSettings", js.undefined)
+    @scala.inline
+    def setHlsMediaStoreSettings(value: HlsMediaStoreSettings): Self = this.set("HlsMediaStoreSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsMediaStoreSettings: Self = this.set("HlsMediaStoreSettings", js.undefined)
+    @scala.inline
+    def setHlsWebdavSettings(value: HlsWebdavSettings): Self = this.set("HlsWebdavSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsWebdavSettings: Self = this.set("HlsWebdavSettings", js.undefined)
+  }
+  
 }
 

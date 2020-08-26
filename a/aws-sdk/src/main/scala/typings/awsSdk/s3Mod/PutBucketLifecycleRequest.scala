@@ -22,15 +22,32 @@ trait PutBucketLifecycleRequest extends js.Object {
 
 object PutBucketLifecycleRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    ContentMD5: ContentMD5 = null,
-    LifecycleConfiguration: LifecycleConfiguration = null
-  ): PutBucketLifecycleRequest = {
+  def apply(Bucket: BucketName): PutBucketLifecycleRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
-    if (LifecycleConfiguration != null) __obj.updateDynamic("LifecycleConfiguration")(LifecycleConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketLifecycleRequest]
   }
+  @scala.inline
+  implicit class PutBucketLifecycleRequestOps[Self <: PutBucketLifecycleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
+    @scala.inline
+    def setLifecycleConfiguration(value: LifecycleConfiguration): Self = this.set("LifecycleConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycleConfiguration: Self = this.set("LifecycleConfiguration", js.undefined)
+  }
+  
 }
 

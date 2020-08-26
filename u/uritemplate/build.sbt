@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "uritemplate"
-version := "0.3-dt-20200515Z-b866d7"
-scalaVersion := "2.13.2"
+version := "0.3-dt-20200515Z-e075b6"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

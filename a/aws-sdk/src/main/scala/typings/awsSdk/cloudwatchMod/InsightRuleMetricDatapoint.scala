@@ -42,25 +42,52 @@ trait InsightRuleMetricDatapoint extends js.Object {
 
 object InsightRuleMetricDatapoint {
   @scala.inline
-  def apply(
-    Timestamp: Timestamp,
-    Average: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
-    MaxContributorValue: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
-    Maximum: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
-    Minimum: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
-    SampleCount: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
-    Sum: js.UndefOr[InsightRuleUnboundDouble] = js.undefined,
-    UniqueContributors: js.UndefOr[InsightRuleUnboundDouble] = js.undefined
-  ): InsightRuleMetricDatapoint = {
+  def apply(Timestamp: Timestamp): InsightRuleMetricDatapoint = {
     val __obj = js.Dynamic.literal(Timestamp = Timestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(Average)) __obj.updateDynamic("Average")(Average.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxContributorValue)) __obj.updateDynamic("MaxContributorValue")(MaxContributorValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Maximum)) __obj.updateDynamic("Maximum")(Maximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Minimum)) __obj.updateDynamic("Minimum")(Minimum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SampleCount)) __obj.updateDynamic("SampleCount")(SampleCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Sum)) __obj.updateDynamic("Sum")(Sum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(UniqueContributors)) __obj.updateDynamic("UniqueContributors")(UniqueContributors.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightRuleMetricDatapoint]
   }
+  @scala.inline
+  implicit class InsightRuleMetricDatapointOps[Self <: InsightRuleMetricDatapoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAverage(value: InsightRuleUnboundDouble): Self = this.set("Average", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAverage: Self = this.set("Average", js.undefined)
+    @scala.inline
+    def setMaxContributorValue(value: InsightRuleUnboundDouble): Self = this.set("MaxContributorValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxContributorValue: Self = this.set("MaxContributorValue", js.undefined)
+    @scala.inline
+    def setMaximum(value: InsightRuleUnboundDouble): Self = this.set("Maximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximum: Self = this.set("Maximum", js.undefined)
+    @scala.inline
+    def setMinimum(value: InsightRuleUnboundDouble): Self = this.set("Minimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimum: Self = this.set("Minimum", js.undefined)
+    @scala.inline
+    def setSampleCount(value: InsightRuleUnboundDouble): Self = this.set("SampleCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleCount: Self = this.set("SampleCount", js.undefined)
+    @scala.inline
+    def setSum(value: InsightRuleUnboundDouble): Self = this.set("Sum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSum: Self = this.set("Sum", js.undefined)
+    @scala.inline
+    def setUniqueContributors(value: InsightRuleUnboundDouble): Self = this.set("UniqueContributors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniqueContributors: Self = this.set("UniqueContributors", js.undefined)
+  }
+  
 }
 

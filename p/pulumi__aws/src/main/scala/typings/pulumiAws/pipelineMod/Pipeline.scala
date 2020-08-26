@@ -30,7 +30,6 @@ class Pipeline protected () extends CustomResource {
   val arn: Output_[String] = js.native
   /**
     * One or more artifactStore blocks. Artifact stores are documented below.
-    * * `stage` (Minimum of at least two `stage` blocks is required) A stage block. Stages are documented below.
     */
   val artifactStore: Output_[PipelineArtifactStore] = js.native
   /**
@@ -41,11 +40,14 @@ class Pipeline protected () extends CustomResource {
     * A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.
     */
   val roleArn: Output_[String] = js.native
+  /**
+    * A stage block. Stages are documented below.
+    */
   val stages: Output_[js.Array[PipelineStage]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -59,8 +61,10 @@ object Pipeline extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Pipeline = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Pipeline = js.native
   def get(name: String, id: Input[ID], state: PipelineState): Pipeline = js.native
   def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): Pipeline = js.native
   /**

@@ -25,6 +25,13 @@ trait AuthenticationContext extends js.Object {
     * @returns {Promise} Promise either fulfilled with AuthenticationResult object or rejected with error
     */
   def acquireTokenAsync(resourceUrl: String, clientId: String, redirectUrl: String): PromiseAuthenticationResult = js.native
+  def acquireTokenAsync(
+    resourceUrl: String,
+    clientId: String,
+    redirectUrl: String,
+    userId: js.UndefOr[scala.Nothing],
+    extraQueryParameters: String
+  ): PromiseAuthenticationResult = js.native
   def acquireTokenAsync(resourceUrl: String, clientId: String, redirectUrl: String, userId: String): PromiseAuthenticationResult = js.native
   def acquireTokenAsync(
     resourceUrl: String,

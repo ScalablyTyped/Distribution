@@ -38,22 +38,46 @@ trait GetDifferencesInput extends js.Object {
 
 object GetDifferencesInput {
   @scala.inline
-  def apply(
-    afterCommitSpecifier: CommitName,
-    repositoryName: RepositoryName,
-    MaxResults: js.UndefOr[Limit] = js.undefined,
-    NextToken: NextToken = null,
-    afterPath: Path = null,
-    beforeCommitSpecifier: CommitName = null,
-    beforePath: Path = null
-  ): GetDifferencesInput = {
+  def apply(afterCommitSpecifier: CommitName, repositoryName: RepositoryName): GetDifferencesInput = {
     val __obj = js.Dynamic.literal(afterCommitSpecifier = afterCommitSpecifier.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (afterPath != null) __obj.updateDynamic("afterPath")(afterPath.asInstanceOf[js.Any])
-    if (beforeCommitSpecifier != null) __obj.updateDynamic("beforeCommitSpecifier")(beforeCommitSpecifier.asInstanceOf[js.Any])
-    if (beforePath != null) __obj.updateDynamic("beforePath")(beforePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDifferencesInput]
   }
+  @scala.inline
+  implicit class GetDifferencesInputOps[Self <: GetDifferencesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterCommitSpecifier(value: CommitName): Self = this.set("afterCommitSpecifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: Limit): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setAfterPath(value: Path): Self = this.set("afterPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterPath: Self = this.set("afterPath", js.undefined)
+    @scala.inline
+    def setBeforeCommitSpecifier(value: CommitName): Self = this.set("beforeCommitSpecifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeCommitSpecifier: Self = this.set("beforeCommitSpecifier", js.undefined)
+    @scala.inline
+    def setBeforePath(value: Path): Self = this.set("beforePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforePath: Self = this.set("beforePath", js.undefined)
+  }
+  
 }
 

@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.anon.ContentDispositionHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,24 +15,6 @@ class HttpContentDispositionHeaderValue protected ()
     * @param dispositionType The value of the disposition-type information to be used in the Content-Disposition HTTP header.
     */
   def this(dispositionType: String) = this()
-  /** Gets or sets the value of the disposition-type information in the Content-Disposition HTTP header. */
-  /* CompleteClass */
-  override var dispositionType: String = js.native
-  /** Gets or sets the value of the filename-parm information in the Content-Disposition HTTP header for a single file. */
-  /* CompleteClass */
-  override var fileName: String = js.native
-  /** Gets or sets the value of the filename-parm characteristic in the Content-Disposition HTTP header for multiple files. */
-  /* CompleteClass */
-  override var fileNameStar: String = js.native
-  /** Gets or sets the name for a content body part in the Content-Disposition HTTP header. */
-  /* CompleteClass */
-  override var name: String = js.native
-  /** Gets a set of parameters included in the Content-Disposition HTTP header. */
-  /* CompleteClass */
-  override var parameters: IVector[typings.winrtUwp.Windows.Web.Http.Headers.HttpNameValueHeaderValue] = js.native
-  /** Gets or sets the approximate size, in bytes, of the file used in the Content-Disposition HTTP header. */
-  /* CompleteClass */
-  override var size: Double = js.native
 }
 
 /* static members */

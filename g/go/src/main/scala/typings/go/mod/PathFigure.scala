@@ -23,8 +23,24 @@ import scala.scalajs.js.annotation._
   */
 class PathFigure () extends js.Object {
   def this(sx: Double) = this()
+  def this(sx: js.UndefOr[scala.Nothing], sy: Double) = this()
   def this(sx: Double, sy: Double) = this()
+  def this(sx: js.UndefOr[scala.Nothing], sy: js.UndefOr[scala.Nothing], filled: Boolean) = this()
+  def this(sx: js.UndefOr[scala.Nothing], sy: Double, filled: Boolean) = this()
+  def this(sx: Double, sy: js.UndefOr[scala.Nothing], filled: Boolean) = this()
   def this(sx: Double, sy: Double, filled: Boolean) = this()
+  def this(
+    sx: js.UndefOr[scala.Nothing],
+    sy: js.UndefOr[scala.Nothing],
+    filled: js.UndefOr[scala.Nothing],
+    shadowed: Boolean
+  ) = this()
+  def this(sx: js.UndefOr[scala.Nothing], sy: js.UndefOr[scala.Nothing], filled: Boolean, shadowed: Boolean) = this()
+  def this(sx: js.UndefOr[scala.Nothing], sy: Double, filled: js.UndefOr[scala.Nothing], shadowed: Boolean) = this()
+  def this(sx: js.UndefOr[scala.Nothing], sy: Double, filled: Boolean, shadowed: Boolean) = this()
+  def this(sx: Double, sy: js.UndefOr[scala.Nothing], filled: js.UndefOr[scala.Nothing], shadowed: Boolean) = this()
+  def this(sx: Double, sy: js.UndefOr[scala.Nothing], filled: Boolean, shadowed: Boolean) = this()
+  def this(sx: Double, sy: Double, filled: js.UndefOr[scala.Nothing], shadowed: Boolean) = this()
   def this(sx: Double, sy: Double, filled: Boolean, shadowed: Boolean) = this()
   /**Gets or sets whether this PathFigure is drawn filled.*/
   var isFilled: Boolean = js.native

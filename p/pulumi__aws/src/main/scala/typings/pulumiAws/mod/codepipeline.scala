@@ -52,8 +52,10 @@ object codepipeline extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.pipelineMod.Pipeline = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.pipelineMod.Pipeline = js.native
     def get(name: String, id: Input[ID], state: PipelineState): typings.pulumiAws.pipelineMod.Pipeline = js.native
     def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): typings.pulumiAws.pipelineMod.Pipeline = js.native
     /**
@@ -73,8 +75,10 @@ object codepipeline extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.codepipelineWebhookMod.Webhook = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.codepipelineWebhookMod.Webhook = js.native
     def get(name: String, id: Input[ID], state: WebhookState): typings.pulumiAws.codepipelineWebhookMod.Webhook = js.native
     def get(name: String, id: Input[ID], state: WebhookState, opts: CustomResourceOptions): typings.pulumiAws.codepipelineWebhookMod.Webhook = js.native
     /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for email-templates
 
-Typings are for version 7.0
+Typings are for version 7.1
 
 ## Library description:
 Create, preview, and send custom email templates for Node.js. Highly configurable and supports automatic inline CSS, stylesheets, embedded images and fonts, and much more! Made for sending beautiful emails with Lad.
@@ -10,9 +10,9 @@ Create, preview, and send custom email templates for Node.js. Highly configurabl
 | ------------------ | :-------------: |
 | Full name          | email-templates |
 | Keywords           | consolidate, email, engine, koa, lad, lass, mailchimp, mailgun, mandrill, moonmail, nodemailer, postmark, pug, sendgrid, template, templates, transport |
-| # releases         | 35 |
-| # dependents       | 130 |
-| # downloads        | 2422035 |
+| # releases         | 32 |
+| # dependents       | 132 |
+| # downloads        | 2469400 |
 | # stars            | 53 |
 
 ## Links

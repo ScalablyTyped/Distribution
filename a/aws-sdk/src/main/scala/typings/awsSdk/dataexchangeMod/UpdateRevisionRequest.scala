@@ -26,16 +26,34 @@ trait UpdateRevisionRequest extends js.Object {
 
 object UpdateRevisionRequest {
   @scala.inline
-  def apply(
-    DataSetId: string,
-    RevisionId: string,
-    Comment: stringMin0Max16384 = null,
-    Finalized: js.UndefOr[boolean] = js.undefined
-  ): UpdateRevisionRequest = {
+  def apply(DataSetId: string, RevisionId: string): UpdateRevisionRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(Finalized)) __obj.updateDynamic("Finalized")(Finalized.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRevisionRequest]
   }
+  @scala.inline
+  implicit class UpdateRevisionRequestOps[Self <: UpdateRevisionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSetId(value: string): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevisionId(value: string): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComment(value: stringMin0Max16384): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("Comment", js.undefined)
+    @scala.inline
+    def setFinalized(value: boolean): Self = this.set("Finalized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalized: Self = this.set("Finalized", js.undefined)
+  }
+  
 }
 

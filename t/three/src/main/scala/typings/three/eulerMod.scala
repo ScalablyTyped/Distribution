@@ -14,8 +14,24 @@ object eulerMod extends js.Object {
   @js.native
   class Euler () extends js.Object {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      z: js.UndefOr[scala.Nothing],
+      order: String
+    ) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, order: String) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], order: String) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, order: String) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], order: String) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, order: String) = this()
+    def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], order: String) = this()
     def this(x: Double, y: Double, z: Double, order: String) = this()
     var _onChangeCallback: js.Function = js.native
     val isEuler: `true` = js.native
@@ -37,6 +53,7 @@ object eulerMod extends js.Object {
     def setFromVector3(v: Vector3): Euler = js.native
     def setFromVector3(v: Vector3, order: String): Euler = js.native
     def toArray(): js.Array[Double] = js.native
+    def toArray(array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
     def toVector3(): Vector3 = js.native

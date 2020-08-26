@@ -38,24 +38,52 @@ trait InstanceStatus extends js.Object {
 
 object InstanceStatus {
   @scala.inline
-  def apply(
-    AvailabilityZone: String = null,
-    Events: InstanceStatusEventList = null,
-    InstanceId: String = null,
-    InstanceState: InstanceState = null,
-    InstanceStatus: InstanceStatusSummary = null,
-    OutpostArn: String = null,
-    SystemStatus: InstanceStatusSummary = null
-  ): InstanceStatus = {
+  def apply(): InstanceStatus = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (Events != null) __obj.updateDynamic("Events")(Events.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (InstanceState != null) __obj.updateDynamic("InstanceState")(InstanceState.asInstanceOf[js.Any])
-    if (InstanceStatus != null) __obj.updateDynamic("InstanceStatus")(InstanceStatus.asInstanceOf[js.Any])
-    if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
-    if (SystemStatus != null) __obj.updateDynamic("SystemStatus")(SystemStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceStatus]
   }
+  @scala.inline
+  implicit class InstanceStatusOps[Self <: InstanceStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setEventsVarargs(value: InstanceStatusEvent*): Self = this.set("Events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: InstanceStatusEventList): Self = this.set("Events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("Events", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setInstanceState(value: InstanceState): Self = this.set("InstanceState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceState: Self = this.set("InstanceState", js.undefined)
+    @scala.inline
+    def setInstanceStatus(value: InstanceStatusSummary): Self = this.set("InstanceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceStatus: Self = this.set("InstanceStatus", js.undefined)
+    @scala.inline
+    def setOutpostArn(value: String): Self = this.set("OutpostArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutpostArn: Self = this.set("OutpostArn", js.undefined)
+    @scala.inline
+    def setSystemStatus(value: InstanceStatusSummary): Self = this.set("SystemStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemStatus: Self = this.set("SystemStatus", js.undefined)
+  }
+  
 }
 

@@ -66,37 +66,80 @@ trait PutIntentRequest extends js.Object {
 
 object PutIntentRequest {
   @scala.inline
-  def apply(
-    name: IntentName,
-    checksum: String = null,
-    conclusionStatement: Statement = null,
-    confirmationPrompt: Prompt = null,
-    createVersion: js.UndefOr[Boolean] = js.undefined,
-    description: Description = null,
-    dialogCodeHook: CodeHook = null,
-    followUpPrompt: FollowUpPrompt = null,
-    fulfillmentActivity: FulfillmentActivity = null,
-    kendraConfiguration: KendraConfiguration = null,
-    parentIntentSignature: BuiltinIntentSignature = null,
-    rejectionStatement: Statement = null,
-    sampleUtterances: IntentUtteranceList = null,
-    slots: SlotList = null
-  ): PutIntentRequest = {
+  def apply(name: IntentName): PutIntentRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
-    if (conclusionStatement != null) __obj.updateDynamic("conclusionStatement")(conclusionStatement.asInstanceOf[js.Any])
-    if (confirmationPrompt != null) __obj.updateDynamic("confirmationPrompt")(confirmationPrompt.asInstanceOf[js.Any])
-    if (!js.isUndefined(createVersion)) __obj.updateDynamic("createVersion")(createVersion.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (dialogCodeHook != null) __obj.updateDynamic("dialogCodeHook")(dialogCodeHook.asInstanceOf[js.Any])
-    if (followUpPrompt != null) __obj.updateDynamic("followUpPrompt")(followUpPrompt.asInstanceOf[js.Any])
-    if (fulfillmentActivity != null) __obj.updateDynamic("fulfillmentActivity")(fulfillmentActivity.asInstanceOf[js.Any])
-    if (kendraConfiguration != null) __obj.updateDynamic("kendraConfiguration")(kendraConfiguration.asInstanceOf[js.Any])
-    if (parentIntentSignature != null) __obj.updateDynamic("parentIntentSignature")(parentIntentSignature.asInstanceOf[js.Any])
-    if (rejectionStatement != null) __obj.updateDynamic("rejectionStatement")(rejectionStatement.asInstanceOf[js.Any])
-    if (sampleUtterances != null) __obj.updateDynamic("sampleUtterances")(sampleUtterances.asInstanceOf[js.Any])
-    if (slots != null) __obj.updateDynamic("slots")(slots.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutIntentRequest]
   }
+  @scala.inline
+  implicit class PutIntentRequestOps[Self <: PutIntentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: IntentName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    @scala.inline
+    def setConclusionStatement(value: Statement): Self = this.set("conclusionStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConclusionStatement: Self = this.set("conclusionStatement", js.undefined)
+    @scala.inline
+    def setConfirmationPrompt(value: Prompt): Self = this.set("confirmationPrompt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmationPrompt: Self = this.set("confirmationPrompt", js.undefined)
+    @scala.inline
+    def setCreateVersion(value: Boolean): Self = this.set("createVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateVersion: Self = this.set("createVersion", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDialogCodeHook(value: CodeHook): Self = this.set("dialogCodeHook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialogCodeHook: Self = this.set("dialogCodeHook", js.undefined)
+    @scala.inline
+    def setFollowUpPrompt(value: FollowUpPrompt): Self = this.set("followUpPrompt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFollowUpPrompt: Self = this.set("followUpPrompt", js.undefined)
+    @scala.inline
+    def setFulfillmentActivity(value: FulfillmentActivity): Self = this.set("fulfillmentActivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFulfillmentActivity: Self = this.set("fulfillmentActivity", js.undefined)
+    @scala.inline
+    def setKendraConfiguration(value: KendraConfiguration): Self = this.set("kendraConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKendraConfiguration: Self = this.set("kendraConfiguration", js.undefined)
+    @scala.inline
+    def setParentIntentSignature(value: BuiltinIntentSignature): Self = this.set("parentIntentSignature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentIntentSignature: Self = this.set("parentIntentSignature", js.undefined)
+    @scala.inline
+    def setRejectionStatement(value: Statement): Self = this.set("rejectionStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectionStatement: Self = this.set("rejectionStatement", js.undefined)
+    @scala.inline
+    def setSampleUtterancesVarargs(value: Utterance*): Self = this.set("sampleUtterances", js.Array(value :_*))
+    @scala.inline
+    def setSampleUtterances(value: IntentUtteranceList): Self = this.set("sampleUtterances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleUtterances: Self = this.set("sampleUtterances", js.undefined)
+    @scala.inline
+    def setSlotsVarargs(value: Slot*): Self = this.set("slots", js.Array(value :_*))
+    @scala.inline
+    def setSlots(value: SlotList): Self = this.set("slots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlots: Self = this.set("slots", js.undefined)
+  }
+  
 }
 

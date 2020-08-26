@@ -34,22 +34,50 @@ trait Pipeline extends js.Object {
 
 object Pipeline {
   @scala.inline
-  def apply(
-    activities: PipelineActivities = null,
-    arn: PipelineArn = null,
-    creationTime: Timestamp = null,
-    lastUpdateTime: Timestamp = null,
-    name: PipelineName = null,
-    reprocessingSummaries: ReprocessingSummaries = null
-  ): Pipeline = {
+  def apply(): Pipeline = {
     val __obj = js.Dynamic.literal()
-    if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (reprocessingSummaries != null) __obj.updateDynamic("reprocessingSummaries")(reprocessingSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pipeline]
   }
+  @scala.inline
+  implicit class PipelineOps[Self <: Pipeline] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivitiesVarargs(value: PipelineActivity*): Self = this.set("activities", js.Array(value :_*))
+    @scala.inline
+    def setActivities(value: PipelineActivities): Self = this.set("activities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivities: Self = this.set("activities", js.undefined)
+    @scala.inline
+    def setArn(value: PipelineArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    @scala.inline
+    def setName(value: PipelineName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setReprocessingSummariesVarargs(value: ReprocessingSummary*): Self = this.set("reprocessingSummaries", js.Array(value :_*))
+    @scala.inline
+    def setReprocessingSummaries(value: ReprocessingSummaries): Self = this.set("reprocessingSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReprocessingSummaries: Self = this.set("reprocessingSummaries", js.undefined)
+  }
+  
 }
 

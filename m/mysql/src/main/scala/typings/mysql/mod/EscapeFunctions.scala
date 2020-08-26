@@ -14,6 +14,7 @@ trait EscapeFunctions extends js.Object {
     * @param timeZone Convert dates from UTC to the given timezone.
     */
   def escape(value: js.Any): String = js.native
+  def escape(value: js.Any, stringifyObjects: js.UndefOr[scala.Nothing], timeZone: String): String = js.native
   def escape(value: js.Any, stringifyObjects: Boolean): String = js.native
   def escape(value: js.Any, stringifyObjects: Boolean, timeZone: String): String = js.native
   /**
@@ -33,6 +34,7 @@ trait EscapeFunctions extends js.Object {
     * @param timeZone Convert dates from UTC to the given timezone.
     */
   def format(sql: String, values: js.Array[_]): String = js.native
+  def format(sql: String, values: js.Array[_], stringifyObjects: js.UndefOr[scala.Nothing], timeZone: String): String = js.native
   def format(sql: String, values: js.Array[_], stringifyObjects: Boolean): String = js.native
   def format(sql: String, values: js.Array[_], stringifyObjects: Boolean, timeZone: String): String = js.native
 }

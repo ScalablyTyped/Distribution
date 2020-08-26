@@ -17,54 +17,94 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Headers extends js.Object {
-  var devmajor: js.UndefOr[Double] = js.undefined
-  var devminor: js.UndefOr[Double] = js.undefined
-  var gid: js.UndefOr[Double] = js.undefined
-  var gname: js.UndefOr[String] = js.undefined
-  var linkname: js.UndefOr[String | Null] = js.undefined
-  var mode: js.UndefOr[Double] = js.undefined
-  var mtime: js.UndefOr[Date] = js.undefined
-  var name: String
-  var size: js.UndefOr[Double] = js.undefined
+  var devmajor: js.UndefOr[Double] = js.native
+  var devminor: js.UndefOr[Double] = js.native
+  var gid: js.UndefOr[Double] = js.native
+  var gname: js.UndefOr[String] = js.native
+  var linkname: js.UndefOr[String | Null] = js.native
+  var mode: js.UndefOr[Double] = js.native
+  var mtime: js.UndefOr[Date] = js.native
+  var name: String = js.native
+  var size: js.UndefOr[Double] = js.native
   var `type`: js.UndefOr[
     file | link | symlink | `character-device` | `block-device` | directory | fifo | `contiguous-file` | `pax-header` | `pax-global-header` | `gnu-long-link-path` | `gnu-long-path` | Null
-  ] = js.undefined
-  var uid: js.UndefOr[Double] = js.undefined
-  var uname: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var uid: js.UndefOr[Double] = js.native
+  var uname: js.UndefOr[String] = js.native
 }
 
 object Headers {
   @scala.inline
-  def apply(
-    name: String,
-    devmajor: js.UndefOr[Double] = js.undefined,
-    devminor: js.UndefOr[Double] = js.undefined,
-    gid: js.UndefOr[Double] = js.undefined,
-    gname: String = null,
-    linkname: js.UndefOr[Null | String] = js.undefined,
-    mode: js.UndefOr[Double] = js.undefined,
-    mtime: Date = null,
-    size: js.UndefOr[Double] = js.undefined,
-    `type`: js.UndefOr[
-      Null | file | link | symlink | `character-device` | `block-device` | directory | fifo | `contiguous-file` | `pax-header` | `pax-global-header` | `gnu-long-link-path` | `gnu-long-path`
-    ] = js.undefined,
-    uid: js.UndefOr[Double] = js.undefined,
-    uname: String = null
-  ): Headers = {
+  def apply(name: String): Headers = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(devmajor)) __obj.updateDynamic("devmajor")(devmajor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(devminor)) __obj.updateDynamic("devminor")(devminor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
-    if (gname != null) __obj.updateDynamic("gname")(gname.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkname)) __obj.updateDynamic("linkname")(linkname.asInstanceOf[js.Any])
-    if (!js.isUndefined(mode)) __obj.updateDynamic("mode")(mode.get.asInstanceOf[js.Any])
-    if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
-    if (uname != null) __obj.updateDynamic("uname")(uname.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }
+  @scala.inline
+  implicit class HeadersOps[Self <: Headers] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDevmajor(value: Double): Self = this.set("devmajor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevmajor: Self = this.set("devmajor", js.undefined)
+    @scala.inline
+    def setDevminor(value: Double): Self = this.set("devminor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevminor: Self = this.set("devminor", js.undefined)
+    @scala.inline
+    def setGid(value: Double): Self = this.set("gid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGid: Self = this.set("gid", js.undefined)
+    @scala.inline
+    def setGname(value: String): Self = this.set("gname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGname: Self = this.set("gname", js.undefined)
+    @scala.inline
+    def setLinkname(value: String): Self = this.set("linkname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkname: Self = this.set("linkname", js.undefined)
+    @scala.inline
+    def setLinknameNull: Self = this.set("linkname", null)
+    @scala.inline
+    def setMode(value: Double): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setMtime(value: Date): Self = this.set("mtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMtime: Self = this.set("mtime", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setType(
+      value: file | link | symlink | `character-device` | `block-device` | directory | fifo | `contiguous-file` | `pax-header` | `pax-global-header` | `gnu-long-link-path` | `gnu-long-path`
+    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setTypeNull: Self = this.set("type", null)
+    @scala.inline
+    def setUid(value: Double): Self = this.set("uid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUid: Self = this.set("uid", js.undefined)
+    @scala.inline
+    def setUname(value: String): Self = this.set("uname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUname: Self = this.set("uname", js.undefined)
+  }
+  
 }
 

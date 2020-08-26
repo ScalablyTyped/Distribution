@@ -14,7 +14,6 @@ class ClassFactory_ () extends ClassFactory
 @JSGlobal("Java.ClassFactory")
 @js.native
 object ClassFactory_ extends js.Object {
-  def get(): ClassFactory = js.native
   /**
     * Gets the class factory instance for a given class loader, or the
     * default factory when passing `null`.
@@ -25,6 +24,7 @@ object ClassFactory_ extends js.Object {
     * `Java.enumerateClassLoaders()`, and subsequently interacted with
     * through this API.
     */
+  def get(): ClassFactory = js.native
   def get(classLoader: Wrapper): ClassFactory = js.native
 }
 

@@ -18,7 +18,7 @@ object menuMod extends js.Object {
        with MenuI {
     var _isActive: js.Any = js.native
     var afterAnimation: js.Any = js.native
-    var animation: js.UndefOr[js.Any] = js.native
+    var animation: js.Any = js.native
     var beforeAnimation: js.Any = js.native
     var blocker: js.Any = js.native
     var canStart: js.Any = js.native
@@ -28,7 +28,7 @@ object menuMod extends js.Object {
       */
     var contentId: js.UndefOr[String] = js.native
     var forceClosing: js.Any = js.native
-    var gesture: js.UndefOr[js.Any] = js.native
+    var gesture: js.Any = js.native
     /**
       * Emitted when the menu is closed.
       */

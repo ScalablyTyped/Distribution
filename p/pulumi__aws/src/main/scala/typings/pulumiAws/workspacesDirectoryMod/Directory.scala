@@ -24,9 +24,41 @@ class Directory protected () extends CustomResource {
   def this(name: String, args: DirectoryArgs) = this()
   def this(name: String, args: DirectoryArgs, opts: CustomResourceOptions) = this()
   /**
+    * The directory alias.
+    */
+  val alias: Output_[String] = js.native
+  /**
+    * The user name for the service account.
+    */
+  val customerUserName: Output_[String] = js.native
+  /**
     * The directory identifier for registration in WorkSpaces service.
     */
   val directoryId: Output_[String] = js.native
+  /**
+    * The name of the directory.
+    */
+  val directoryName: Output_[String] = js.native
+  /**
+    * The directory type.
+    */
+  val directoryType: Output_[String] = js.native
+  /**
+    * The IP addresses of the DNS servers for the directory.
+    */
+  val dnsIpAddresses: Output_[js.Array[String]] = js.native
+  /**
+    * The identifier of the IAM role. This is the role that allows Amazon WorkSpaces to make calls to other services, such as Amazon EC2, on your behalf.
+    */
+  val iamRoleId: Output_[String] = js.native
+  /**
+    * The identifiers of the IP access control groups associated with the directory.
+    */
+  val ipGroupIds: Output_[js.Array[String]] = js.native
+  /**
+    * The registration code for the directory. This is the code that users enter in their Amazon WorkSpaces client application to connect to the directory.
+    */
+  val registrationCode: Output_[String] = js.native
   /**
     * The permissions to enable or disable self-service capabilities.
     */
@@ -36,9 +68,13 @@ class Directory protected () extends CustomResource {
     */
   val subnetIds: Output_[js.Array[String]] = js.native
   /**
-    * A mapping of tags assigned to the WorkSpaces directory.
+    * A map of tags assigned to the WorkSpaces directory.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  /**
+    * The identifier of the security group that is assigned to new WorkSpaces.
+    */
+  val workspaceSecurityGroupId: Output_[String] = js.native
 }
 
 /* static members */
@@ -52,8 +88,10 @@ object Directory extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Directory = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Directory = js.native
   def get(name: String, id: Input[ID], state: DirectoryState): Directory = js.native
   def get(name: String, id: Input[ID], state: DirectoryState, opts: CustomResourceOptions): Directory = js.native
   /**

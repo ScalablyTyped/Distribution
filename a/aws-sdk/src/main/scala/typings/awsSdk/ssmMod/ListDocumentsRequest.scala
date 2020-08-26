@@ -26,18 +26,42 @@ trait ListDocumentsRequest extends js.Object {
 
 object ListDocumentsRequest {
   @scala.inline
-  def apply(
-    DocumentFilterList: DocumentFilterList = null,
-    Filters: DocumentKeyValuesFilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null
-  ): ListDocumentsRequest = {
+  def apply(): ListDocumentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (DocumentFilterList != null) __obj.updateDynamic("DocumentFilterList")(DocumentFilterList.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDocumentsRequest]
   }
+  @scala.inline
+  implicit class ListDocumentsRequestOps[Self <: ListDocumentsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentFilterListVarargs(value: DocumentFilter*): Self = this.set("DocumentFilterList", js.Array(value :_*))
+    @scala.inline
+    def setDocumentFilterList(value: DocumentFilterList): Self = this.set("DocumentFilterList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentFilterList: Self = this.set("DocumentFilterList", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: DocumentKeyValuesFilter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: DocumentKeyValuesFilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

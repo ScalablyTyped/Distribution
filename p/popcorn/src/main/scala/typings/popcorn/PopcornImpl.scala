@@ -12,7 +12,6 @@ trait PopcornImpl extends js.Object {
   var media: HTMLMediaElement = js.native
   def autoplay(flag: Boolean): js.Any = js.native
   def buffered(): TimeRanges = js.native
-  def compose(name: String, definitionObject: js.Any): js.Any = js.native
   def compose(name: String, definitionObject: js.Any, manifest: js.Any): js.Any = js.native
   def controls(flag: Boolean): js.Any = js.native
   def cue(time: String, callback: js.Function): js.Any = js.native
@@ -24,7 +23,6 @@ trait PopcornImpl extends js.Object {
   def destroy(): js.Any = js.native
   def disable(pluginName: String): js.Any = js.native
   def duration(): Double = js.native
-  def emit(eventName: String): js.Any = js.native
   def emit(eventName: String, dataObject: js.Any): js.Any = js.native
   def enable(pluginName: String): PopcornImpl = js.native
   def exec(time: String, callback: js.Function): js.Any = js.native
@@ -57,7 +55,6 @@ trait PopcornImpl extends js.Object {
    // TimeRages?
   def seeking(): Boolean = js.native
   def toggle(pluginName: String): js.Any = js.native
-  def trigger(eventName: String): js.Any = js.native
   def trigger(eventName: String, dataObject: js.Any): js.Any = js.native
   def unlisten(eventName: String, callback: js.Function): js.Any = js.native
   def unmute(): js.Any = js.native

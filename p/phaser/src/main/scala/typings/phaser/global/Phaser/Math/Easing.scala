@@ -103,6 +103,7 @@ object Easing extends js.Object {
       * @param period Sets how tight the sine-wave is, where smaller values are tighter waves, which result in more cycles. Default 0.1.
       */
     def In(v: Double): Double = js.native
+    def In(v: Double, amplitude: js.UndefOr[scala.Nothing], period: Double): Double = js.native
     def In(v: Double, amplitude: Double): Double = js.native
     def In(v: Double, amplitude: Double, period: Double): Double = js.native
     /**
@@ -112,6 +113,7 @@ object Easing extends js.Object {
       * @param period Sets how tight the sine-wave is, where smaller values are tighter waves, which result in more cycles. Default 0.1.
       */
     def InOut(v: Double): Double = js.native
+    def InOut(v: Double, amplitude: js.UndefOr[scala.Nothing], period: Double): Double = js.native
     def InOut(v: Double, amplitude: Double): Double = js.native
     def InOut(v: Double, amplitude: Double, period: Double): Double = js.native
     /**
@@ -121,6 +123,7 @@ object Easing extends js.Object {
       * @param period Sets how tight the sine-wave is, where smaller values are tighter waves, which result in more cycles. Default 0.1.
       */
     def Out(v: Double): Double = js.native
+    def Out(v: Double, amplitude: js.UndefOr[scala.Nothing], period: Double): Double = js.native
     def Out(v: Double, amplitude: Double): Double = js.native
     def Out(v: Double, amplitude: Double, period: Double): Double = js.native
   }

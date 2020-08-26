@@ -22,12 +22,34 @@ trait TrailInfo extends js.Object {
 
 object TrailInfo {
   @scala.inline
-  def apply(HomeRegion: String = null, Name: String = null, TrailARN: String = null): TrailInfo = {
+  def apply(): TrailInfo = {
     val __obj = js.Dynamic.literal()
-    if (HomeRegion != null) __obj.updateDynamic("HomeRegion")(HomeRegion.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (TrailARN != null) __obj.updateDynamic("TrailARN")(TrailARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrailInfo]
   }
+  @scala.inline
+  implicit class TrailInfoOps[Self <: TrailInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHomeRegion(value: String): Self = this.set("HomeRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeRegion: Self = this.set("HomeRegion", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setTrailARN(value: String): Self = this.set("TrailARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrailARN: Self = this.set("TrailARN", js.undefined)
+  }
+  
 }
 

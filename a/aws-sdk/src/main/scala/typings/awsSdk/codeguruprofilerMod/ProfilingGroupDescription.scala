@@ -31,6 +31,10 @@ trait ProfilingGroupDescription extends js.Object {
     */
   var profilingStatus: js.UndefOr[ProfilingStatus] = js.native
   /**
+    *  A list of the tags that belong to this profiling group. 
+    */
+  var tags: js.UndefOr[TagsMap] = js.native
+  /**
     *  The date and time when the profiling group was last updated. Specify using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC. 
     */
   var updatedAt: js.UndefOr[Timestamp] = js.native
@@ -38,24 +42,54 @@ trait ProfilingGroupDescription extends js.Object {
 
 object ProfilingGroupDescription {
   @scala.inline
-  def apply(
-    agentOrchestrationConfig: AgentOrchestrationConfig = null,
-    arn: ProfilingGroupArn = null,
-    computePlatform: ComputePlatform = null,
-    createdAt: Timestamp = null,
-    name: ProfilingGroupName = null,
-    profilingStatus: ProfilingStatus = null,
-    updatedAt: Timestamp = null
-  ): ProfilingGroupDescription = {
+  def apply(): ProfilingGroupDescription = {
     val __obj = js.Dynamic.literal()
-    if (agentOrchestrationConfig != null) __obj.updateDynamic("agentOrchestrationConfig")(agentOrchestrationConfig.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (profilingStatus != null) __obj.updateDynamic("profilingStatus")(profilingStatus.asInstanceOf[js.Any])
-    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfilingGroupDescription]
   }
+  @scala.inline
+  implicit class ProfilingGroupDescriptionOps[Self <: ProfilingGroupDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentOrchestrationConfig(value: AgentOrchestrationConfig): Self = this.set("agentOrchestrationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentOrchestrationConfig: Self = this.set("agentOrchestrationConfig", js.undefined)
+    @scala.inline
+    def setArn(value: ProfilingGroupArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setComputePlatform(value: ComputePlatform): Self = this.set("computePlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputePlatform: Self = this.set("computePlatform", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setName(value: ProfilingGroupName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProfilingStatus(value: ProfilingStatus): Self = this.set("profilingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfilingStatus: Self = this.set("profilingStatus", js.undefined)
+    @scala.inline
+    def setTags(value: TagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+  }
+  
 }
 

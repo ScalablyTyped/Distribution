@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object dockerContainerStats extends js.Object {
   def apply(): js.Promise[js.Array[DockerContainerStatsData]] = js.native
+  def apply(id: js.UndefOr[scala.Nothing], cb: js.Function1[/* data */ js.Array[DockerContainerStatsData], _]): js.Promise[js.Array[DockerContainerStatsData]] = js.native
   def apply(id: String): js.Promise[js.Array[DockerContainerStatsData]] = js.native
   def apply(id: String, cb: js.Function1[/* data */ js.Array[DockerContainerStatsData], _]): js.Promise[js.Array[DockerContainerStatsData]] = js.native
 }

@@ -19,10 +19,28 @@ trait DomainEncryptAtRest extends js.Object {
 
 object DomainEncryptAtRest {
   @scala.inline
-  def apply(enabled: Input[Boolean], kmsKeyId: Input[String] = null): DomainEncryptAtRest = {
+  def apply(enabled: Input[Boolean]): DomainEncryptAtRest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainEncryptAtRest]
   }
+  @scala.inline
+  implicit class DomainEncryptAtRestOps[Self <: DomainEncryptAtRest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+  }
+  
 }
 

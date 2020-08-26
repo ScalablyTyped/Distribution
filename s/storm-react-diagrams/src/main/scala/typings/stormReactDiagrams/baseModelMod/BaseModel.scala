@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BaseModel[X /* <: BaseEntity[BaseListener[_]] */, T /* <: BaseModelListener */] () extends BaseEntity[T] {
   def this(`type`: String) = this()
+  def this(`type`: js.UndefOr[scala.Nothing], id: String) = this()
   def this(`type`: String, id: String) = this()
   var parent: X = js.native
   var selected: Boolean = js.native

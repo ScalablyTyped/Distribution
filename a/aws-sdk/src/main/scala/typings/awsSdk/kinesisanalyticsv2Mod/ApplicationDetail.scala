@@ -59,22 +59,59 @@ object ApplicationDetail {
     ApplicationName: ApplicationName,
     ApplicationStatus: ApplicationStatus,
     ApplicationVersionId: ApplicationVersionId,
-    RuntimeEnvironment: RuntimeEnvironment,
-    ApplicationConfigurationDescription: ApplicationConfigurationDescription = null,
-    ApplicationDescription: ApplicationDescription = null,
-    CloudWatchLoggingOptionDescriptions: CloudWatchLoggingOptionDescriptions = null,
-    CreateTimestamp: Timestamp = null,
-    LastUpdateTimestamp: Timestamp = null,
-    ServiceExecutionRole: RoleARN = null
+    RuntimeEnvironment: RuntimeEnvironment
   ): ApplicationDetail = {
     val __obj = js.Dynamic.literal(ApplicationARN = ApplicationARN.asInstanceOf[js.Any], ApplicationName = ApplicationName.asInstanceOf[js.Any], ApplicationStatus = ApplicationStatus.asInstanceOf[js.Any], ApplicationVersionId = ApplicationVersionId.asInstanceOf[js.Any], RuntimeEnvironment = RuntimeEnvironment.asInstanceOf[js.Any])
-    if (ApplicationConfigurationDescription != null) __obj.updateDynamic("ApplicationConfigurationDescription")(ApplicationConfigurationDescription.asInstanceOf[js.Any])
-    if (ApplicationDescription != null) __obj.updateDynamic("ApplicationDescription")(ApplicationDescription.asInstanceOf[js.Any])
-    if (CloudWatchLoggingOptionDescriptions != null) __obj.updateDynamic("CloudWatchLoggingOptionDescriptions")(CloudWatchLoggingOptionDescriptions.asInstanceOf[js.Any])
-    if (CreateTimestamp != null) __obj.updateDynamic("CreateTimestamp")(CreateTimestamp.asInstanceOf[js.Any])
-    if (LastUpdateTimestamp != null) __obj.updateDynamic("LastUpdateTimestamp")(LastUpdateTimestamp.asInstanceOf[js.Any])
-    if (ServiceExecutionRole != null) __obj.updateDynamic("ServiceExecutionRole")(ServiceExecutionRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationDetail]
   }
+  @scala.inline
+  implicit class ApplicationDetailOps[Self <: ApplicationDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationARN(value: ResourceARN): Self = this.set("ApplicationARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationStatus(value: ApplicationStatus): Self = this.set("ApplicationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationVersionId(value: ApplicationVersionId): Self = this.set("ApplicationVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuntimeEnvironment(value: RuntimeEnvironment): Self = this.set("RuntimeEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationConfigurationDescription(value: ApplicationConfigurationDescription): Self = this.set("ApplicationConfigurationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationConfigurationDescription: Self = this.set("ApplicationConfigurationDescription", js.undefined)
+    @scala.inline
+    def setApplicationDescription(value: ApplicationDescription): Self = this.set("ApplicationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationDescription: Self = this.set("ApplicationDescription", js.undefined)
+    @scala.inline
+    def setCloudWatchLoggingOptionDescriptionsVarargs(value: CloudWatchLoggingOptionDescription*): Self = this.set("CloudWatchLoggingOptionDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setCloudWatchLoggingOptionDescriptions(value: CloudWatchLoggingOptionDescriptions): Self = this.set("CloudWatchLoggingOptionDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLoggingOptionDescriptions: Self = this.set("CloudWatchLoggingOptionDescriptions", js.undefined)
+    @scala.inline
+    def setCreateTimestamp(value: Timestamp): Self = this.set("CreateTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTimestamp: Self = this.set("CreateTimestamp", js.undefined)
+    @scala.inline
+    def setLastUpdateTimestamp(value: Timestamp): Self = this.set("LastUpdateTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTimestamp: Self = this.set("LastUpdateTimestamp", js.undefined)
+    @scala.inline
+    def setServiceExecutionRole(value: RoleARN): Self = this.set("ServiceExecutionRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceExecutionRole: Self = this.set("ServiceExecutionRole", js.undefined)
+  }
+  
 }
 

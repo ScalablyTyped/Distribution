@@ -15,51 +15,90 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrokenRules[T] extends js.Object {
   var brokenRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
-  ] = js.undefined
-  var component: js.UndefOr[T] = js.undefined
-  var element: js.UndefOr[dxElement] = js.undefined
-  var errorText: js.UndefOr[String] = js.undefined
-  var isValid: js.UndefOr[Boolean] = js.undefined
-  var key: js.UndefOr[js.Any] = js.undefined
-  var model: js.UndefOr[js.Any] = js.undefined
-  var newData: js.UndefOr[js.Any] = js.undefined
-  var oldData: js.UndefOr[js.Any] = js.undefined
-  var promise: js.UndefOr[typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]] = js.undefined
+  ] = js.native
+  var component: js.UndefOr[T] = js.native
+  var element: js.UndefOr[dxElement] = js.native
+  var errorText: js.UndefOr[String] = js.native
+  var isValid: js.UndefOr[Boolean] = js.native
+  var key: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.native
+  var newData: js.UndefOr[js.Any] = js.native
+  var oldData: js.UndefOr[js.Any] = js.native
+  var promise: js.UndefOr[typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]] = js.native
 }
 
 object BrokenRules {
   @scala.inline
-  def apply[T](
-    brokenRules: js.Array[
-      RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-    ] = null,
-    component: T = null,
-    element: dxElement = null,
-    errorText: String = null,
-    isValid: js.UndefOr[Boolean] = js.undefined,
-    key: js.Any = null,
-    model: js.Any = null,
-    newData: js.Any = null,
-    oldData: js.Any = null,
-    promise: typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit] = null
-  ): BrokenRules[T] = {
+  def apply[T](): BrokenRules[T] = {
     val __obj = js.Dynamic.literal()
-    if (brokenRules != null) __obj.updateDynamic("brokenRules")(brokenRules.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (errorText != null) __obj.updateDynamic("errorText")(errorText.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (newData != null) __obj.updateDynamic("newData")(newData.asInstanceOf[js.Any])
-    if (oldData != null) __obj.updateDynamic("oldData")(oldData.asInstanceOf[js.Any])
-    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokenRules[T]]
   }
+  @scala.inline
+  implicit class BrokenRulesOps[Self <: BrokenRules[_], T] (val x: Self with BrokenRules[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrokenRulesVarargs(
+      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
+    ): Self = this.set("brokenRules", js.Array(value :_*))
+    @scala.inline
+    def setBrokenRules(
+      value: js.Array[
+          RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
+        ]
+    ): Self = this.set("brokenRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokenRules: Self = this.set("brokenRules", js.undefined)
+    @scala.inline
+    def setComponent(value: T): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    @scala.inline
+    def setErrorText(value: String): Self = this.set("errorText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorText: Self = this.set("errorText", js.undefined)
+    @scala.inline
+    def setIsValid(value: Boolean): Self = this.set("isValid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsValid: Self = this.set("isValid", js.undefined)
+    @scala.inline
+    def setKey(value: js.Any): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setNewData(value: js.Any): Self = this.set("newData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewData: Self = this.set("newData", js.undefined)
+    @scala.inline
+    def setOldData(value: js.Any): Self = this.set("oldData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOldData: Self = this.set("oldData", js.undefined)
+    @scala.inline
+    def setPromise(value: typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]): Self = this.set("promise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromise: Self = this.set("promise", js.undefined)
+  }
+  
 }
 

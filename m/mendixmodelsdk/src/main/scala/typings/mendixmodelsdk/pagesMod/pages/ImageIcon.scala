@@ -27,8 +27,8 @@ class ImageIcon protected () extends Icon {
   @JSName("model")
   var model_FImageIcon: IModel = js.native
   def image: IImage = js.native
-  def image(newValue: IImage): js.Any = js.native
   def imageQualifiedName: String = js.native
+  def image_=(newValue: IImage): Unit = js.native
 }
 
 /* static members */

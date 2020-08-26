@@ -26,15 +26,32 @@ trait IntegerParameterRange extends js.Object {
 
 object IntegerParameterRange {
   @scala.inline
-  def apply(
-    MaxValue: ParameterValue,
-    MinValue: ParameterValue,
-    Name: ParameterKey,
-    ScalingType: HyperParameterScalingType = null
-  ): IntegerParameterRange = {
+  def apply(MaxValue: ParameterValue, MinValue: ParameterValue, Name: ParameterKey): IntegerParameterRange = {
     val __obj = js.Dynamic.literal(MaxValue = MaxValue.asInstanceOf[js.Any], MinValue = MinValue.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (ScalingType != null) __obj.updateDynamic("ScalingType")(ScalingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerParameterRange]
   }
+  @scala.inline
+  implicit class IntegerParameterRangeOps[Self <: IntegerParameterRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxValue(value: ParameterValue): Self = this.set("MaxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinValue(value: ParameterValue): Self = this.set("MinValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ParameterKey): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScalingType(value: HyperParameterScalingType): Self = this.set("ScalingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingType: Self = this.set("ScalingType", js.undefined)
+  }
+  
 }
 

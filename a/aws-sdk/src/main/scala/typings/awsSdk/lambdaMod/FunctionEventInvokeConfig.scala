@@ -30,20 +30,42 @@ trait FunctionEventInvokeConfig extends js.Object {
 
 object FunctionEventInvokeConfig {
   @scala.inline
-  def apply(
-    DestinationConfig: DestinationConfig = null,
-    FunctionArn: FunctionArn = null,
-    LastModified: Date = null,
-    MaximumEventAgeInSeconds: js.UndefOr[MaximumEventAgeInSeconds] = js.undefined,
-    MaximumRetryAttempts: js.UndefOr[MaximumRetryAttempts] = js.undefined
-  ): FunctionEventInvokeConfig = {
+  def apply(): FunctionEventInvokeConfig = {
     val __obj = js.Dynamic.literal()
-    if (DestinationConfig != null) __obj.updateDynamic("DestinationConfig")(DestinationConfig.asInstanceOf[js.Any])
-    if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumEventAgeInSeconds)) __obj.updateDynamic("MaximumEventAgeInSeconds")(MaximumEventAgeInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumRetryAttempts)) __obj.updateDynamic("MaximumRetryAttempts")(MaximumRetryAttempts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionEventInvokeConfig]
   }
+  @scala.inline
+  implicit class FunctionEventInvokeConfigOps[Self <: FunctionEventInvokeConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationConfig(value: DestinationConfig): Self = this.set("DestinationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationConfig: Self = this.set("DestinationConfig", js.undefined)
+    @scala.inline
+    def setFunctionArn(value: FunctionArn): Self = this.set("FunctionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionArn: Self = this.set("FunctionArn", js.undefined)
+    @scala.inline
+    def setLastModified(value: Date): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setMaximumEventAgeInSeconds(value: MaximumEventAgeInSeconds): Self = this.set("MaximumEventAgeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumEventAgeInSeconds: Self = this.set("MaximumEventAgeInSeconds", js.undefined)
+    @scala.inline
+    def setMaximumRetryAttempts(value: MaximumRetryAttempts): Self = this.set("MaximumRetryAttempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumRetryAttempts: Self = this.set("MaximumRetryAttempts", js.undefined)
+  }
+  
 }
 

@@ -13,6 +13,9 @@ trait HlsManifest extends js.Object {
   markers (comments) taken directly from the input HTTP Live Streaming (HLS) manifest.
   "SCTE35_ENHANCED" generates ad markers and blackout tags based on SCTE-35
   messages in the input source.
+  "DATERANGE" inserts EXT-X-DATERANGE tags to signal ad and program transition events 
+  in HLS and CMAF manifests. For this option, you must set a programDateTimeIntervalSeconds value 
+  that is greater than 0.
     */
   var AdMarkers: js.UndefOr[typings.awsSdk.mediapackageMod.AdMarkers] = js.native
   /**
@@ -57,25 +60,52 @@ trait HlsManifest extends js.Object {
 
 object HlsManifest {
   @scala.inline
-  def apply(
-    Id: string,
-    AdMarkers: AdMarkers = null,
-    IncludeIframeOnlyStream: js.UndefOr[boolean] = js.undefined,
-    ManifestName: string = null,
-    PlaylistType: PlaylistType = null,
-    PlaylistWindowSeconds: js.UndefOr[integer] = js.undefined,
-    ProgramDateTimeIntervalSeconds: js.UndefOr[integer] = js.undefined,
-    Url: string = null
-  ): HlsManifest = {
+  def apply(Id: string): HlsManifest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-    if (AdMarkers != null) __obj.updateDynamic("AdMarkers")(AdMarkers.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeIframeOnlyStream)) __obj.updateDynamic("IncludeIframeOnlyStream")(IncludeIframeOnlyStream.get.asInstanceOf[js.Any])
-    if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName.asInstanceOf[js.Any])
-    if (PlaylistType != null) __obj.updateDynamic("PlaylistType")(PlaylistType.asInstanceOf[js.Any])
-    if (!js.isUndefined(PlaylistWindowSeconds)) __obj.updateDynamic("PlaylistWindowSeconds")(PlaylistWindowSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgramDateTimeIntervalSeconds)) __obj.updateDynamic("ProgramDateTimeIntervalSeconds")(ProgramDateTimeIntervalSeconds.get.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsManifest]
   }
+  @scala.inline
+  implicit class HlsManifestOps[Self <: HlsManifest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdMarkers(value: AdMarkers): Self = this.set("AdMarkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdMarkers: Self = this.set("AdMarkers", js.undefined)
+    @scala.inline
+    def setIncludeIframeOnlyStream(value: boolean): Self = this.set("IncludeIframeOnlyStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeIframeOnlyStream: Self = this.set("IncludeIframeOnlyStream", js.undefined)
+    @scala.inline
+    def setManifestName(value: string): Self = this.set("ManifestName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestName: Self = this.set("ManifestName", js.undefined)
+    @scala.inline
+    def setPlaylistType(value: PlaylistType): Self = this.set("PlaylistType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaylistType: Self = this.set("PlaylistType", js.undefined)
+    @scala.inline
+    def setPlaylistWindowSeconds(value: integer): Self = this.set("PlaylistWindowSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaylistWindowSeconds: Self = this.set("PlaylistWindowSeconds", js.undefined)
+    @scala.inline
+    def setProgramDateTimeIntervalSeconds(value: integer): Self = this.set("ProgramDateTimeIntervalSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgramDateTimeIntervalSeconds: Self = this.set("ProgramDateTimeIntervalSeconds", js.undefined)
+    @scala.inline
+    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

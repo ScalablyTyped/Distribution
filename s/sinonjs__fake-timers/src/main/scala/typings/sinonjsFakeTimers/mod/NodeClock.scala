@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @sinonjs/fake-timers.@sinonjs/fake-timers.FakeClock<@sinonjs/fake-timers.@sinonjs/fake-timers.NodeTimer> & {hrtime (prevTime ? : [number, number]): [number, number], queueMicrotask (callback : (): void): void, nextTick (callback : (args : ...any): void, args : ...any): void, runMicrotasks (): void} */
+/* Inlined @sinonjs/fake-timers.@sinonjs/fake-timers.FakeClock<@sinonjs/fake-timers.@sinonjs/fake-timers.NodeTimer> & {hrtime (prevTime : [number, number] | undefined): [number, number], queueMicrotask (callback : (): void): void, nextTick (callback : (args : ...any): void, args : ...any): void, runMicrotasks (): void} */
 @js.native
 trait NodeClock extends Clock {
   /**

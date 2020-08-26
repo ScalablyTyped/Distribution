@@ -7,27 +7,50 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<react-lazylog.react-lazylog/build/LineContent.LineContentProps> */
+@js.native
 trait PartialLineContentProps extends js.Object {
-  var data: js.UndefOr[js.Array[Text]] = js.undefined
-  var formatPart: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.undefined
-  var number: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var data: js.UndefOr[js.Array[Text]] = js.native
+  var formatPart: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.native
+  var number: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialLineContentProps {
   @scala.inline
-  def apply(
-    data: js.Array[Text] = null,
-    formatPart: /* text */ String => ReactNode = null,
-    number: js.UndefOr[Double] = js.undefined,
-    style: CSSProperties = null
-  ): PartialLineContentProps = {
+  def apply(): PartialLineContentProps = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (formatPart != null) __obj.updateDynamic("formatPart")(js.Any.fromFunction1(formatPart))
-    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialLineContentProps]
   }
+  @scala.inline
+  implicit class PartialLineContentPropsOps[Self <: PartialLineContentProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataVarargs(value: Text*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[Text]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setFormatPart(value: /* text */ String => ReactNode): Self = this.set("formatPart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFormatPart: Self = this.set("formatPart", js.undefined)
+    @scala.inline
+    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumber: Self = this.set("number", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

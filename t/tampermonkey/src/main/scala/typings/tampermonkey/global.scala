@@ -94,7 +94,20 @@ object global extends js.Object {
   @JSName("GM_notification")
   def GMNotification(text: String): Unit = js.native
   @JSName("GM_notification")
+  def GMNotification(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    image: js.UndefOr[scala.Nothing],
+    onclick: NotificationOnClick
+  ): Unit = js.native
+  @JSName("GM_notification")
+  def GMNotification(text: String, title: js.UndefOr[scala.Nothing], image: String): Unit = js.native
+  @JSName("GM_notification")
+  def GMNotification(text: String, title: js.UndefOr[scala.Nothing], image: String, onclick: NotificationOnClick): Unit = js.native
+  @JSName("GM_notification")
   def GMNotification(text: String, title: String): Unit = js.native
+  @JSName("GM_notification")
+  def GMNotification(text: String, title: String, image: js.UndefOr[scala.Nothing], onclick: NotificationOnClick): Unit = js.native
   @JSName("GM_notification")
   def GMNotification(text: String, title: String, image: String): Unit = js.native
   @JSName("GM_notification")

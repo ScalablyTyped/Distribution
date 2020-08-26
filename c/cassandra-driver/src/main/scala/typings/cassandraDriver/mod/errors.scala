@@ -28,10 +28,6 @@ object errors extends js.Object {
     def this(message: String) = this()
     def this(message: String, constructor: js.Any) = this()
     var info: String = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native

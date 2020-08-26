@@ -12,7 +12,7 @@ An advanced font engine for Node and the browser
 | Keywords           | opentype, font, typography, subset, emoji, glyph, layout |
 | # releases         | 3 |
 | # dependents       | 50 |
-| # downloads        | 8588981 |
+| # downloads        | 9101783 |
 | # stars            | 4 |
 
 ## Links

@@ -29,6 +29,7 @@ object mod extends js.Object {
   val SET: String = js.native
   val SET_OPTIONS: String = js.native
   def array(name: String, value: ArrayTypeKnobValue): js.Array[String] = js.native
+  def array(name: String, value: ArrayTypeKnobValue, separator: js.UndefOr[scala.Nothing], groupId: String): js.Array[String] = js.native
   def array(name: String, value: ArrayTypeKnobValue, separator: String): js.Array[String] = js.native
   def array(name: String, value: ArrayTypeKnobValue, separator: String, groupId: String): js.Array[String] = js.native
   def boolean(name: String, value: Boolean): Boolean = js.native
@@ -38,13 +39,16 @@ object mod extends js.Object {
   def color(name: String, value: String): String = js.native
   def color(name: String, value: String, groupId: String): String = js.native
   def date(name: String): Double = js.native
+  def date(name: String, value: js.UndefOr[scala.Nothing], groupId: String): Double = js.native
   def date(name: String, value: Date): Double = js.native
   def date(name: String, value: Date, groupId: String): Double = js.native
   def files(name: String, accept: String): js.Array[String] = js.native
+  def files(name: String, accept: String, value: js.UndefOr[scala.Nothing], groupId: String): js.Array[String] = js.native
   def files(name: String, accept: String, value: js.Array[String]): js.Array[String] = js.native
   def files(name: String, accept: String, value: js.Array[String], groupId: String): js.Array[String] = js.native
   def knob[T /* <: KnobType */, V](name: String, options: Knob[T]): V = js.native
   def number(name: String, value: Double): Double = js.native
+  def number(name: String, value: Double, options: js.UndefOr[scala.Nothing], groupId: String): Double = js.native
   def number(name: String, value: Double, options: NumberTypeKnobOptions): Double = js.native
   def number(name: String, value: Double, options: NumberTypeKnobOptions, groupId: String): Double = js.native
   def `object`[T](name: String, value: T): T = js.native

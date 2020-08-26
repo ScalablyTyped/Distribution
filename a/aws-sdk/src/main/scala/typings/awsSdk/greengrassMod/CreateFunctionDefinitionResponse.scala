@@ -38,24 +38,50 @@ trait CreateFunctionDefinitionResponse extends js.Object {
 
 object CreateFunctionDefinitionResponse {
   @scala.inline
-  def apply(
-    Arn: string = null,
-    CreationTimestamp: string = null,
-    Id: string = null,
-    LastUpdatedTimestamp: string = null,
-    LatestVersion: string = null,
-    LatestVersionArn: string = null,
-    Name: string = null
-  ): CreateFunctionDefinitionResponse = {
+  def apply(): CreateFunctionDefinitionResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (LastUpdatedTimestamp != null) __obj.updateDynamic("LastUpdatedTimestamp")(LastUpdatedTimestamp.asInstanceOf[js.Any])
-    if (LatestVersion != null) __obj.updateDynamic("LatestVersion")(LatestVersion.asInstanceOf[js.Any])
-    if (LatestVersionArn != null) __obj.updateDynamic("LatestVersionArn")(LatestVersionArn.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFunctionDefinitionResponse]
   }
+  @scala.inline
+  implicit class CreateFunctionDefinitionResponseOps[Self <: CreateFunctionDefinitionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: string): Self = this.set("CreationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("CreationTimestamp", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLastUpdatedTimestamp(value: string): Self = this.set("LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTimestamp: Self = this.set("LastUpdatedTimestamp", js.undefined)
+    @scala.inline
+    def setLatestVersion(value: string): Self = this.set("LatestVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestVersion: Self = this.set("LatestVersion", js.undefined)
+    @scala.inline
+    def setLatestVersionArn(value: string): Self = this.set("LatestVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestVersionArn: Self = this.set("LatestVersionArn", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

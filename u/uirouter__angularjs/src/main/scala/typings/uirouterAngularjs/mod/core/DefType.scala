@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** @internalapi */
 @JSImport("@uirouter/angularjs", "core.DefType")
 @js.native
 object DefType extends js.Object {

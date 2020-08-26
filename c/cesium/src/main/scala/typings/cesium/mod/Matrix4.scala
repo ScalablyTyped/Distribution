@@ -86,10 +86,12 @@ object Matrix4 extends js.Object {
   ): Matrix4 = js.native
   def computeViewportTransformation(viewport: js.Any, nearDepthRange: Double, farDepthRange: Double, result: Matrix4): Matrix4 = js.native
   def equals(): Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: Matrix4): Boolean = js.native
   def equals(left: Matrix4): Boolean = js.native
   def equals(left: Matrix4, right: Matrix4): Boolean = js.native
   def equalsEpsilon(left: Matrix4, right: Matrix4, epsilon: Double): Boolean = js.native
   def fromArray(array: js.Array[Double]): Matrix4 = js.native
+  def fromArray(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Matrix4): Matrix4 = js.native
   def fromArray(array: js.Array[Double], startingIndex: Double): Matrix4 = js.native
   def fromArray(array: js.Array[Double], startingIndex: Double, result: Matrix4): Matrix4 = js.native
   def fromCamera(camera: Camera): Matrix4 = js.native
@@ -97,6 +99,7 @@ object Matrix4 extends js.Object {
   def fromColumnMajorArray(values: js.Array[Double]): Matrix4 = js.native
   def fromColumnMajorArray(values: js.Array[Double], result: Matrix4): Matrix4 = js.native
   def fromRotationTranslation(rotation: Matrix3): Matrix4 = js.native
+  def fromRotationTranslation(rotation: Matrix3, translation: js.UndefOr[scala.Nothing], result: Matrix4): Matrix4 = js.native
   def fromRotationTranslation(rotation: Matrix3, translation: Cartesian3): Matrix4 = js.native
   def fromRotationTranslation(rotation: Matrix3, translation: Cartesian3, result: Matrix4): Matrix4 = js.native
   def fromRowMajorArray(values: js.Array[Double]): Matrix4 = js.native
@@ -138,6 +141,7 @@ object Matrix4 extends js.Object {
   def toArray(matrix: Matrix4, result: js.Array[Double]): js.Array[Double] = js.native
   def transpose(matrix: Matrix4, result: Matrix4): Matrix4 = js.native
   def unpack(array: js.Array[Double]): Matrix4 = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Matrix4): Matrix4 = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): Matrix4 = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: Matrix4): Matrix4 = js.native
 }

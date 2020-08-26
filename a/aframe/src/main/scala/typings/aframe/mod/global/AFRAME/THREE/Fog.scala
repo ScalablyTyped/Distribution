@@ -1,5 +1,6 @@
 package typings.aframe.mod.global.AFRAME.THREE
 
+import typings.three.colorMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Fog protected ()
   extends typings.three.mod.Fog {
-  def this(hex: Double) = this()
+  def this(color: Color) = this()
 }
 

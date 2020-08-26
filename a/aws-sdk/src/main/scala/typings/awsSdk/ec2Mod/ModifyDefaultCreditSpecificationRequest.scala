@@ -22,14 +22,30 @@ trait ModifyDefaultCreditSpecificationRequest extends js.Object {
 
 object ModifyDefaultCreditSpecificationRequest {
   @scala.inline
-  def apply(
-    CpuCredits: String,
-    InstanceFamily: UnlimitedSupportedInstanceFamily,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): ModifyDefaultCreditSpecificationRequest = {
+  def apply(CpuCredits: String, InstanceFamily: UnlimitedSupportedInstanceFamily): ModifyDefaultCreditSpecificationRequest = {
     val __obj = js.Dynamic.literal(CpuCredits = CpuCredits.asInstanceOf[js.Any], InstanceFamily = InstanceFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDefaultCreditSpecificationRequest]
   }
+  @scala.inline
+  implicit class ModifyDefaultCreditSpecificationRequestOps[Self <: ModifyDefaultCreditSpecificationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCpuCredits(value: String): Self = this.set("CpuCredits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceFamily(value: UnlimitedSupportedInstanceFamily): Self = this.set("InstanceFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

@@ -38,21 +38,44 @@ trait ProjectDescription extends js.Object {
 
 object ProjectDescription {
   @scala.inline
-  def apply(
-    createdDate: Time,
-    projectName: ProjectName,
-    updatedDate: Time,
-    arn: ProjectArn = null,
-    description: Description = null,
-    placementTemplate: PlacementTemplate = null,
-    tags: TagMap = null
-  ): ProjectDescription = {
+  def apply(createdDate: Time, projectName: ProjectName, updatedDate: Time): ProjectDescription = {
     val __obj = js.Dynamic.literal(createdDate = createdDate.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], updatedDate = updatedDate.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (placementTemplate != null) __obj.updateDynamic("placementTemplate")(placementTemplate.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectDescription]
   }
+  @scala.inline
+  implicit class ProjectDescriptionOps[Self <: ProjectDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedDate(value: Time): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProjectName(value: ProjectName): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatedDate(value: Time): Self = this.set("updatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArn(value: ProjectArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setPlacementTemplate(value: PlacementTemplate): Self = this.set("placementTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementTemplate: Self = this.set("placementTemplate", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

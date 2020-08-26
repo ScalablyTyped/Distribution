@@ -23,9 +23,160 @@ trait Hyperlink extends js.Object {
     * @param HeaderInfo [HeaderInfo='']
     */
   def Follow(): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(NewWindow: js.UndefOr[scala.Nothing], AddHistory: js.UndefOr[scala.Nothing], ExtraInfo: js.Any): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.Any,
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.Any,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.Any,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(NewWindow: js.UndefOr[scala.Nothing], AddHistory: Boolean): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: Boolean,
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: Boolean,
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: Boolean,
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(NewWindow: js.UndefOr[scala.Nothing], AddHistory: Boolean, ExtraInfo: js.Any): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: Boolean,
+    ExtraInfo: js.Any,
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: Boolean,
+    ExtraInfo: js.Any,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: Boolean,
+    ExtraInfo: js.Any,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
   def Follow(NewWindow: Boolean): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(NewWindow: Boolean, AddHistory: js.UndefOr[scala.Nothing], ExtraInfo: js.Any): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.Any,
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.Any,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.Any,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
   def Follow(NewWindow: Boolean, AddHistory: Boolean): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: Boolean,
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: Boolean,
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: Boolean,
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
   def Follow(NewWindow: Boolean, AddHistory: Boolean, ExtraInfo: js.Any): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: Boolean,
+    ExtraInfo: js.Any,
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
   def Follow(NewWindow: Boolean, AddHistory: Boolean, ExtraInfo: js.Any, Method: MsoExtraInfoMethod): Unit = js.native
   def Follow(
     NewWindow: Boolean,

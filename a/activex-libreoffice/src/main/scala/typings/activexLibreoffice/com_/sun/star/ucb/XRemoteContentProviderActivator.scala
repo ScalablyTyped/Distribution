@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * The way this works might change, therefore this interface is marked as deprecated.
   * @deprecated Deprecated
   */
+@js.native
 trait XRemoteContentProviderActivator extends XInterface {
   /**
     * Activate (i.e., register at the broker) the remote content providers that until now have only been remembered by {@link
@@ -23,7 +24,7 @@ trait XRemoteContentProviderActivator extends XInterface {
     * of {@link XRemoteContentProviderAcceptor} uses this lazy strategy (and thus also implements this interface).
     * @returns the broker at which the remote content providers have been registered.
     */
-  def activateRemoteContentProviders(): XContentProviderManager
+  def activateRemoteContentProviders(): XContentProviderManager = js.native
 }
 
 object XRemoteContentProviderActivator {
@@ -37,5 +38,20 @@ object XRemoteContentProviderActivator {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), activateRemoteContentProviders = js.Any.fromFunction0(activateRemoteContentProviders), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XRemoteContentProviderActivator]
   }
+  @scala.inline
+  implicit class XRemoteContentProviderActivatorOps[Self <: XRemoteContentProviderActivator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivateRemoteContentProviders(value: () => XContentProviderManager): Self = this.set("activateRemoteContentProviders", js.Any.fromFunction0(value))
+  }
+  
 }
 

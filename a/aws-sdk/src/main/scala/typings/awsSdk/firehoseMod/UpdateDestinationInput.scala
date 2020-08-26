@@ -27,6 +27,10 @@ trait UpdateDestinationInput extends js.Object {
     */
   var ExtendedS3DestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.ExtendedS3DestinationUpdate] = js.native
   /**
+    * Describes an update to the specified HTTP endpoint destination.
+    */
+  var HttpEndpointDestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.HttpEndpointDestinationUpdate] = js.native
+  /**
     * Describes an update for a destination in Amazon Redshift.
     */
   var RedshiftDestinationUpdate: js.UndefOr[typings.awsSdk.firehoseMod.RedshiftDestinationUpdate] = js.native
@@ -45,20 +49,53 @@ object UpdateDestinationInput {
   def apply(
     CurrentDeliveryStreamVersionId: DeliveryStreamVersionId,
     DeliveryStreamName: DeliveryStreamName,
-    DestinationId: DestinationId,
-    ElasticsearchDestinationUpdate: ElasticsearchDestinationUpdate = null,
-    ExtendedS3DestinationUpdate: ExtendedS3DestinationUpdate = null,
-    RedshiftDestinationUpdate: RedshiftDestinationUpdate = null,
-    S3DestinationUpdate: S3DestinationUpdate = null,
-    SplunkDestinationUpdate: SplunkDestinationUpdate = null
+    DestinationId: DestinationId
   ): UpdateDestinationInput = {
     val __obj = js.Dynamic.literal(CurrentDeliveryStreamVersionId = CurrentDeliveryStreamVersionId.asInstanceOf[js.Any], DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any], DestinationId = DestinationId.asInstanceOf[js.Any])
-    if (ElasticsearchDestinationUpdate != null) __obj.updateDynamic("ElasticsearchDestinationUpdate")(ElasticsearchDestinationUpdate.asInstanceOf[js.Any])
-    if (ExtendedS3DestinationUpdate != null) __obj.updateDynamic("ExtendedS3DestinationUpdate")(ExtendedS3DestinationUpdate.asInstanceOf[js.Any])
-    if (RedshiftDestinationUpdate != null) __obj.updateDynamic("RedshiftDestinationUpdate")(RedshiftDestinationUpdate.asInstanceOf[js.Any])
-    if (S3DestinationUpdate != null) __obj.updateDynamic("S3DestinationUpdate")(S3DestinationUpdate.asInstanceOf[js.Any])
-    if (SplunkDestinationUpdate != null) __obj.updateDynamic("SplunkDestinationUpdate")(SplunkDestinationUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDestinationInput]
   }
+  @scala.inline
+  implicit class UpdateDestinationInputOps[Self <: UpdateDestinationInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentDeliveryStreamVersionId(value: DeliveryStreamVersionId): Self = this.set("CurrentDeliveryStreamVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeliveryStreamName(value: DeliveryStreamName): Self = this.set("DeliveryStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationId(value: DestinationId): Self = this.set("DestinationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setElasticsearchDestinationUpdate(value: ElasticsearchDestinationUpdate): Self = this.set("ElasticsearchDestinationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticsearchDestinationUpdate: Self = this.set("ElasticsearchDestinationUpdate", js.undefined)
+    @scala.inline
+    def setExtendedS3DestinationUpdate(value: ExtendedS3DestinationUpdate): Self = this.set("ExtendedS3DestinationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedS3DestinationUpdate: Self = this.set("ExtendedS3DestinationUpdate", js.undefined)
+    @scala.inline
+    def setHttpEndpointDestinationUpdate(value: HttpEndpointDestinationUpdate): Self = this.set("HttpEndpointDestinationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpEndpointDestinationUpdate: Self = this.set("HttpEndpointDestinationUpdate", js.undefined)
+    @scala.inline
+    def setRedshiftDestinationUpdate(value: RedshiftDestinationUpdate): Self = this.set("RedshiftDestinationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedshiftDestinationUpdate: Self = this.set("RedshiftDestinationUpdate", js.undefined)
+    @scala.inline
+    def setS3DestinationUpdate(value: S3DestinationUpdate): Self = this.set("S3DestinationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3DestinationUpdate: Self = this.set("S3DestinationUpdate", js.undefined)
+    @scala.inline
+    def setSplunkDestinationUpdate(value: SplunkDestinationUpdate): Self = this.set("SplunkDestinationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplunkDestinationUpdate: Self = this.set("SplunkDestinationUpdate", js.undefined)
+  }
+  
 }
 

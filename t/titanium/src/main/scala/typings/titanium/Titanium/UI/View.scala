@@ -1189,6 +1189,7 @@ trait View extends Proxy {
     * Returns an image of the rendered view, as a Blob.
     */
   def toImage(): Blob = js.native
+  def toImage(callback: js.UndefOr[scala.Nothing], honorScaleFactor: Boolean): Blob = js.native
   def toImage(callback: js.Function1[/* param0 */ Blob, Unit]): Blob = js.native
   def toImage(callback: js.Function1[/* param0 */ Blob, Unit], honorScaleFactor: Boolean): Blob = js.native
 }

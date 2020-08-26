@@ -6,6 +6,7 @@ import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.pickerInterfaceMod.PickerButton
 import typings.ionicCore.pickerInterfaceMod.PickerColumn
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,11 +46,14 @@ object pickerMod extends js.Object {
     @JSName("el")
     var el_Picker: HTMLIonPickerElement = js.native
     var getSelected: js.Any = js.native
+    var lastFocus: js.UndefOr[HTMLElement] = js.native
     var onBackdropTap: js.Any = js.native
     /**
       * If `true`, a backdrop will be displayed behind the picker.
       */
     var showBackdrop: Boolean = js.native
+    @JSName("connectedCallback")
+    def connectedCallback_MPicker(): Unit = js.native
     /**
       * Get the column that matches the specified name.
       *

@@ -28,6 +28,7 @@ class ResourceTargetableremarketinglists protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTargetableRemarketingList] = js.native
   def get(callback: BodyResponseCallback[SchemaTargetableRemarketingList]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetableRemarketingList] = js.native
   def get(params: ParamsResourceTargetableremarketinglistsGet): GaxiosPromise[SchemaTargetableRemarketingList] = js.native
   def get(
     params: ParamsResourceTargetableremarketinglistsGet,
@@ -66,6 +67,7 @@ class ResourceTargetableremarketinglists protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTargetableRemarketingListsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaTargetableRemarketingListsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetableRemarketingListsListResponse] = js.native
   def list(params: ParamsResourceTargetableremarketinglistsList): GaxiosPromise[SchemaTargetableRemarketingListsListResponse] = js.native
   def list(
     params: ParamsResourceTargetableremarketinglistsList,

@@ -13,13 +13,7 @@ class Corridor protected () extends Feature {
   var _endsWithAWall: Boolean = js.native
   var _startX: Double = js.native
   var _startY: Double = js.native
-  /* CompleteClass */
-  override def create(digCallback: DigCallback): Unit = js.native
   def createPriorityWalls(priorityWallCallback: js.Function2[/* x */ Double, /* y */ Double, Unit]): Unit = js.native
-  /* CompleteClass */
-  override def debug(): Unit = js.native
-  /* CompleteClass */
-  override def isValid(isWallCallback: TestPositionCallback, canBeDugCallback: TestPositionCallback): Boolean = js.native
 }
 
 /* static members */

@@ -21,24 +21,12 @@ object runtimeMod extends js.Object {
     extends typings.handlebars.Handlebars.Exception {
     def this(message: String) = this()
     def this(message: String, node: Node) = this()
-    /* CompleteClass */
-    override var description: String = js.native
-    /* CompleteClass */
-    override var fileName: String = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    /* CompleteClass */
-    override var number: Double = js.native
   }
   
   @js.native
   class SafeString protected ()
     extends typings.handlebars.Handlebars.SafeString {
     def this(str: String) = this()
-    /* CompleteClass */
-    override def toHTML(): String = js.native
   }
   
   @js.native
@@ -91,11 +79,8 @@ object runtimeMod extends js.Object {
   
   @js.native
   object VM extends js.Object {
-    def resolvePartial[T](
-      partial: js.UndefOr[HandlebarsTemplateDelegate[T]],
-      context: js.Any,
-      options: ResolvePartialOptions
-    ): HandlebarsTemplateDelegate[T] = js.native
+    def resolvePartial[T](partial: js.UndefOr[scala.Nothing], context: js.Any, options: ResolvePartialOptions): HandlebarsTemplateDelegate[T] = js.native
+    def resolvePartial[T](partial: HandlebarsTemplateDelegate[T], context: js.Any, options: ResolvePartialOptions): HandlebarsTemplateDelegate[T] = js.native
   }
   
   @js.native

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetDetectorVersionResult extends js.Object {
   /**
+    * The detector version ARN.
+    */
+  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  /**
     * The timestamp when the detector version was created. 
     */
   var createdTime: js.UndefOr[time] = js.native
@@ -21,7 +25,7 @@ trait GetDetectorVersionResult extends js.Object {
   /**
     * The detector version ID.
     */
-  var detectorVersionId: js.UndefOr[nonEmptyString] = js.native
+  var detectorVersionId: js.UndefOr[wholeNumberVersionString] = js.native
   /**
     * The Amazon SageMaker model endpoints included in the detector version.
     */
@@ -50,30 +54,72 @@ trait GetDetectorVersionResult extends js.Object {
 
 object GetDetectorVersionResult {
   @scala.inline
-  def apply(
-    createdTime: time = null,
-    description: description = null,
-    detectorId: identifier = null,
-    detectorVersionId: nonEmptyString = null,
-    externalModelEndpoints: ListOfStrings = null,
-    lastUpdatedTime: time = null,
-    modelVersions: ListOfModelVersions = null,
-    ruleExecutionMode: RuleExecutionMode = null,
-    rules: RuleList = null,
-    status: DetectorVersionStatus = null
-  ): GetDetectorVersionResult = {
+  def apply(): GetDetectorVersionResult = {
     val __obj = js.Dynamic.literal()
-    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (detectorId != null) __obj.updateDynamic("detectorId")(detectorId.asInstanceOf[js.Any])
-    if (detectorVersionId != null) __obj.updateDynamic("detectorVersionId")(detectorVersionId.asInstanceOf[js.Any])
-    if (externalModelEndpoints != null) __obj.updateDynamic("externalModelEndpoints")(externalModelEndpoints.asInstanceOf[js.Any])
-    if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
-    if (modelVersions != null) __obj.updateDynamic("modelVersions")(modelVersions.asInstanceOf[js.Any])
-    if (ruleExecutionMode != null) __obj.updateDynamic("ruleExecutionMode")(ruleExecutionMode.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDetectorVersionResult]
   }
+  @scala.inline
+  implicit class GetDetectorVersionResultOps[Self <: GetDetectorVersionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: fraudDetectorArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: time): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    @scala.inline
+    def setDescription(value: description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDetectorId(value: identifier): Self = this.set("detectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorId: Self = this.set("detectorId", js.undefined)
+    @scala.inline
+    def setDetectorVersionId(value: wholeNumberVersionString): Self = this.set("detectorVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorVersionId: Self = this.set("detectorVersionId", js.undefined)
+    @scala.inline
+    def setExternalModelEndpointsVarargs(value: String*): Self = this.set("externalModelEndpoints", js.Array(value :_*))
+    @scala.inline
+    def setExternalModelEndpoints(value: ListOfStrings): Self = this.set("externalModelEndpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalModelEndpoints: Self = this.set("externalModelEndpoints", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: time): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    @scala.inline
+    def setModelVersionsVarargs(value: ModelVersion*): Self = this.set("modelVersions", js.Array(value :_*))
+    @scala.inline
+    def setModelVersions(value: ListOfModelVersions): Self = this.set("modelVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelVersions: Self = this.set("modelVersions", js.undefined)
+    @scala.inline
+    def setRuleExecutionMode(value: RuleExecutionMode): Self = this.set("ruleExecutionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleExecutionMode: Self = this.set("ruleExecutionMode", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: Rule*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: RuleList): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+    @scala.inline
+    def setStatus(value: DetectorVersionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

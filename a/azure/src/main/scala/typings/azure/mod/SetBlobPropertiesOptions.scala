@@ -4,43 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SetBlobPropertiesOptions extends LeaseAccessConditionsOptions {
-  var cacheControl: js.UndefOr[String] = js.undefined
-  var contentDisposition: js.UndefOr[String] = js.undefined
-  var contentEncoding: js.UndefOr[String] = js.undefined
-  var contentLanguage: js.UndefOr[String] = js.undefined
-  var contentMD5: js.UndefOr[String] = js.undefined
-  var contentType: js.UndefOr[String] = js.undefined
+  var cacheControl: js.UndefOr[String] = js.native
+  var contentDisposition: js.UndefOr[String] = js.native
+  var contentEncoding: js.UndefOr[String] = js.native
+  var contentLanguage: js.UndefOr[String] = js.native
+  var contentMD5: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.native
 }
 
 object SetBlobPropertiesOptions {
   @scala.inline
-  def apply(
-    accessConditions: StorageAccessCondition = null,
-    cacheControl: String = null,
-    contentDisposition: String = null,
-    contentEncoding: String = null,
-    contentLanguage: String = null,
-    contentMD5: String = null,
-    contentType: String = null,
-    leaseId: String = null,
-    locationMode: String = null,
-    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
-    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined
-  ): SetBlobPropertiesOptions = {
+  def apply(): SetBlobPropertiesOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessConditions != null) __obj.updateDynamic("accessConditions")(accessConditions.asInstanceOf[js.Any])
-    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
-    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
-    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
-    if (contentMD5 != null) __obj.updateDynamic("contentMD5")(contentMD5.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBlobPropertiesOptions]
   }
+  @scala.inline
+  implicit class SetBlobPropertiesOptionsOps[Self <: SetBlobPropertiesOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheControl(value: String): Self = this.set("cacheControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheControl: Self = this.set("cacheControl", js.undefined)
+    @scala.inline
+    def setContentDisposition(value: String): Self = this.set("contentDisposition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDisposition: Self = this.set("contentDisposition", js.undefined)
+    @scala.inline
+    def setContentEncoding(value: String): Self = this.set("contentEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEncoding: Self = this.set("contentEncoding", js.undefined)
+    @scala.inline
+    def setContentLanguage(value: String): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLanguage: Self = this.set("contentLanguage", js.undefined)
+    @scala.inline
+    def setContentMD5(value: String): Self = this.set("contentMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMD5: Self = this.set("contentMD5", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+  }
+  
 }
 

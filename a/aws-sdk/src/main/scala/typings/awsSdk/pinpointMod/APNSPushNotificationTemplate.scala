@@ -38,24 +38,50 @@ trait APNSPushNotificationTemplate extends js.Object {
 
 object APNSPushNotificationTemplate {
   @scala.inline
-  def apply(
-    Action: Action = null,
-    Body: string = null,
-    MediaUrl: string = null,
-    RawContent: string = null,
-    Sound: string = null,
-    Title: string = null,
-    Url: string = null
-  ): APNSPushNotificationTemplate = {
+  def apply(): APNSPushNotificationTemplate = {
     val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (MediaUrl != null) __obj.updateDynamic("MediaUrl")(MediaUrl.asInstanceOf[js.Any])
-    if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent.asInstanceOf[js.Any])
-    if (Sound != null) __obj.updateDynamic("Sound")(Sound.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[APNSPushNotificationTemplate]
   }
+  @scala.inline
+  implicit class APNSPushNotificationTemplateOps[Self <: APNSPushNotificationTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setMediaUrl(value: string): Self = this.set("MediaUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaUrl: Self = this.set("MediaUrl", js.undefined)
+    @scala.inline
+    def setRawContent(value: string): Self = this.set("RawContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawContent: Self = this.set("RawContent", js.undefined)
+    @scala.inline
+    def setSound(value: string): Self = this.set("Sound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSound: Self = this.set("Sound", js.undefined)
+    @scala.inline
+    def setTitle(value: string): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+    @scala.inline
+    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

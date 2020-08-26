@@ -12,7 +12,7 @@ Lodash mixins for (deep) object accessing / manipulation.
 | Keywords           | lodash, mixin, mixins, deep, object, walking |
 | # releases         | 0 |
 | # dependents       | 67 |
-| # downloads        | 649515 |
+| # downloads        | 648624 |
 | # stars            | 10 |
 
 ## Links

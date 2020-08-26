@@ -26,5 +26,26 @@ object UpdateObjectAttributesRequest {
     val __obj = js.Dynamic.literal(AttributeUpdates = AttributeUpdates.asInstanceOf[js.Any], DirectoryArn = DirectoryArn.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateObjectAttributesRequest]
   }
+  @scala.inline
+  implicit class UpdateObjectAttributesRequestOps[Self <: UpdateObjectAttributesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeUpdatesVarargs(value: ObjectAttributeUpdate*): Self = this.set("AttributeUpdates", js.Array(value :_*))
+    @scala.inline
+    def setAttributeUpdates(value: ObjectAttributeUpdateList): Self = this.set("AttributeUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDirectoryArn(value: Arn): Self = this.set("DirectoryArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectReference(value: ObjectReference): Self = this.set("ObjectReference", value.asInstanceOf[js.Any])
+  }
+  
 }
 

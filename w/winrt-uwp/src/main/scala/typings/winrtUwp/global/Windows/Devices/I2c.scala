@@ -1,8 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices
 
-import typings.winrtUwp.Windows.Devices.I2c.I2cBusSpeed
-import typings.winrtUwp.Windows.Devices.I2c.I2cSharingMode
-import typings.winrtUwp.Windows.Devices.I2c.I2cTransferResult
 import typings.winrtUwp.Windows.Devices.I2c.Provider.II2cProvider
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
@@ -23,85 +20,17 @@ object I2c extends js.Object {
       * @param slaveAddress The bus address of the inter-integrated circuit (I²C) device to which the settings of the I2cConnectionSettings should apply. Only 7-bit addressing is supported, so the range of values that are valid is from 8 to 119.
       */
     def this(slaveAddress: Double) = this()
-    /** Gets or sets the bus speed to use for connecting to an inter-integrated circuit (I²C) device. The bus speed is the frequency at which to clock the I²C bus when accessing the device. */
-    /* CompleteClass */
-    override var busSpeed: I2cBusSpeed = js.native
-    /** Gets or sets the sharing mode to use to connect to the inter-integrated circuit (I²C) bus address. This mode determines whether other connections to the I²C bus address can be opened while you are connect to the I²C bus address. */
-    /* CompleteClass */
-    override var sharingMode: I2cSharingMode = js.native
-    /** Gets or sets the bus address of the inter-integrated circuit (I²C) device. */
-    /* CompleteClass */
-    override var slaveAddress: Double = js.native
   }
   
   /** Represents the I²C controller for the system. */
   @js.native
   abstract class I2cController ()
-    extends typings.winrtUwp.Windows.Devices.I2c.I2cController {
-    /**
-      * Gets the I²C device with the specified settings.
-      * @param settings The desired connection settings.
-      * @return The I²C device.
-      */
-    /* CompleteClass */
-    override def getDevice(settings: typings.winrtUwp.Windows.Devices.I2c.I2cConnectionSettings): typings.winrtUwp.Windows.Devices.I2c.I2cDevice = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.I2c.I2cController
   
   /** Represents a communications channel to a device on an inter-integrated circuit (I²C) bus. */
   @js.native
   abstract class I2cDevice ()
-    extends typings.winrtUwp.Windows.Devices.I2c.I2cDevice {
-    /** Gets the connection settings used for communication with the inter-integrated circuit (I²C) device. */
-    /* CompleteClass */
-    override var connectionSettings: typings.winrtUwp.Windows.Devices.I2c.I2cConnectionSettings = js.native
-    /** Gets the plug and play device identifier of the inter-integrated circuit (I²C) bus controller for the device. */
-    /* CompleteClass */
-    override var deviceId: String = js.native
-    /** Closes the connection to the inter-integrated circuit (I²C) device. */
-    /* CompleteClass */
-    override def close(): Unit = js.native
-    /**
-      * Reads data from the inter-integrated circuit (I²C) bus on which the device is connected into the specified buffer.
-      * @param buffer The buffer to which you want to read the data from the I²C bus. The length of the buffer determines how much data to request from the device.
-      */
-    /* CompleteClass */
-    override def read(buffer: js.Array[Double]): Unit = js.native
-    /**
-      * Reads data from the inter-integrated circuit (I²C) bus on which the device is connected into the specified buffer, and returns information about the success of the operation that you can use for error handling.
-      * @param buffer The buffer to which you want to read the data from the I²C bus. The length of the buffer determines how much data to request from the device.
-      * @return A structure that contains information about the success of the read operation and the actual number of bytes that the operation read into the buffer.
-      */
-    /* CompleteClass */
-    override def readPartial(buffer: js.Array[Double]): I2cTransferResult = js.native
-    /**
-      * Writes data to the inter-integrated circuit (I²C) bus on which the device is connected, based on the bus address specified in the I2cConnectionSetting s object that you used to create the I2cDevice object.
-      * @param buffer A buffer that contains the data that you want to write to the I²C device. This data should not include the bus address.
-      */
-    /* CompleteClass */
-    override def write(buffer: js.Array[Double]): Unit = js.native
-    /**
-      * Writes data to the inter-integrated circuit (I²C) bus on which the device is connected, and returns information about the success of the operation that you can use for error handling.
-      * @param buffer A buffer that contains the data that you want to write to the I²C device. This data should not include the bus address.
-      * @return A structure that contains information about the success of the write operation and the actual number of bytes that the operation wrote into the buffer.
-      */
-    /* CompleteClass */
-    override def writePartial(buffer: js.Array[Double]): I2cTransferResult = js.native
-    /**
-      * Performs an atomic operation to write data to and then read data from the inter-integrated circuit (I²C) bus on which the device is connected, and sends a restart condition between the write and read operations.
-      * @param writeBuffer A buffer that contains the data that you want to write to the I²C device. This data should not include the bus address.
-      * @param readBuffer The buffer to which you want to read the data from the I²C bus. The length of the buffer determines how much data to request from the device.
-      */
-    /* CompleteClass */
-    override def writeRead(writeBuffer: js.Array[Double], readBuffer: js.Array[Double]): Unit = js.native
-    /**
-      * Performs an atomic operation to write data to and then read data from the inter-integrated circuit (I²C) bus on which the device is connected, and returns information about the success of the operation that you can use for error handling.
-      * @param writeBuffer A buffer that contains the data that you want to write to the I²C device. This data should not include the bus address.
-      * @param readBuffer The buffer to which you want to read the data from the I²C bus. The length of the buffer determines how much data to request from the device.
-      * @return A structure that contains information about whether both the read and write parts of the operation succeeded and the sum of the actual number of bytes that the operation wrote and the actual number of bytes that the operation read.
-      */
-    /* CompleteClass */
-    override def writeReadPartial(writeBuffer: js.Array[Double], readBuffer: js.Array[Double]): I2cTransferResult = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.I2c.I2cDevice
   
   /** Describes the bus speeds that are available for connecting to an inter-integrated circuit (I²C) device. The bus speed is the frequency at which to clock the I²C bus when accessing the device. */
   @js.native
@@ -175,14 +104,7 @@ object I2c extends js.Object {
   object Provider extends js.Object {
     @js.native
     abstract class ProviderI2cConnectionSettings ()
-      extends typings.winrtUwp.Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings {
-      /* CompleteClass */
-      override var busSpeed: js.Any = js.native
-       /* unmapped type */ /* CompleteClass */
-      override var sharingMode: js.Any = js.native
-       /* unmapped type */ /* CompleteClass */
-      override var slaveAddress: js.Any = js.native
-    }
+      extends typings.winrtUwp.Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings
     
     @js.native
     object ProviderI2cBusSpeed extends js.Object {

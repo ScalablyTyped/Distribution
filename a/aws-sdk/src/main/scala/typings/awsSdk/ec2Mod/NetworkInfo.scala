@@ -38,24 +38,50 @@ trait NetworkInfo extends js.Object {
 
 object NetworkInfo {
   @scala.inline
-  def apply(
-    EfaSupported: js.UndefOr[EfaSupportedFlag] = js.undefined,
-    EnaSupport: EnaSupport = null,
-    Ipv4AddressesPerInterface: js.UndefOr[MaxIpv4AddrPerInterface] = js.undefined,
-    Ipv6AddressesPerInterface: js.UndefOr[MaxIpv6AddrPerInterface] = js.undefined,
-    Ipv6Supported: js.UndefOr[Ipv6Flag] = js.undefined,
-    MaximumNetworkInterfaces: js.UndefOr[MaxNetworkInterfaces] = js.undefined,
-    NetworkPerformance: NetworkPerformance = null
-  ): NetworkInfo = {
+  def apply(): NetworkInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EfaSupported)) __obj.updateDynamic("EfaSupported")(EfaSupported.get.asInstanceOf[js.Any])
-    if (EnaSupport != null) __obj.updateDynamic("EnaSupport")(EnaSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(Ipv4AddressesPerInterface)) __obj.updateDynamic("Ipv4AddressesPerInterface")(Ipv4AddressesPerInterface.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Ipv6AddressesPerInterface)) __obj.updateDynamic("Ipv6AddressesPerInterface")(Ipv6AddressesPerInterface.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Ipv6Supported)) __obj.updateDynamic("Ipv6Supported")(Ipv6Supported.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumNetworkInterfaces)) __obj.updateDynamic("MaximumNetworkInterfaces")(MaximumNetworkInterfaces.get.asInstanceOf[js.Any])
-    if (NetworkPerformance != null) __obj.updateDynamic("NetworkPerformance")(NetworkPerformance.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInfo]
   }
+  @scala.inline
+  implicit class NetworkInfoOps[Self <: NetworkInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEfaSupported(value: EfaSupportedFlag): Self = this.set("EfaSupported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEfaSupported: Self = this.set("EfaSupported", js.undefined)
+    @scala.inline
+    def setEnaSupport(value: EnaSupport): Self = this.set("EnaSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnaSupport: Self = this.set("EnaSupport", js.undefined)
+    @scala.inline
+    def setIpv4AddressesPerInterface(value: MaxIpv4AddrPerInterface): Self = this.set("Ipv4AddressesPerInterface", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv4AddressesPerInterface: Self = this.set("Ipv4AddressesPerInterface", js.undefined)
+    @scala.inline
+    def setIpv6AddressesPerInterface(value: MaxIpv6AddrPerInterface): Self = this.set("Ipv6AddressesPerInterface", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6AddressesPerInterface: Self = this.set("Ipv6AddressesPerInterface", js.undefined)
+    @scala.inline
+    def setIpv6Supported(value: Ipv6Flag): Self = this.set("Ipv6Supported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Supported: Self = this.set("Ipv6Supported", js.undefined)
+    @scala.inline
+    def setMaximumNetworkInterfaces(value: MaxNetworkInterfaces): Self = this.set("MaximumNetworkInterfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumNetworkInterfaces: Self = this.set("MaximumNetworkInterfaces", js.undefined)
+    @scala.inline
+    def setNetworkPerformance(value: NetworkPerformance): Self = this.set("NetworkPerformance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkPerformance: Self = this.set("NetworkPerformance", js.undefined)
+  }
+  
 }
 

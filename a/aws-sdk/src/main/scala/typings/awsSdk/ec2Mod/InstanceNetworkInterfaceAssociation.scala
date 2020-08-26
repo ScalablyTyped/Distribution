@@ -22,12 +22,34 @@ trait InstanceNetworkInterfaceAssociation extends js.Object {
 
 object InstanceNetworkInterfaceAssociation {
   @scala.inline
-  def apply(IpOwnerId: String = null, PublicDnsName: String = null, PublicIp: String = null): InstanceNetworkInterfaceAssociation = {
+  def apply(): InstanceNetworkInterfaceAssociation = {
     val __obj = js.Dynamic.literal()
-    if (IpOwnerId != null) __obj.updateDynamic("IpOwnerId")(IpOwnerId.asInstanceOf[js.Any])
-    if (PublicDnsName != null) __obj.updateDynamic("PublicDnsName")(PublicDnsName.asInstanceOf[js.Any])
-    if (PublicIp != null) __obj.updateDynamic("PublicIp")(PublicIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceNetworkInterfaceAssociation]
   }
+  @scala.inline
+  implicit class InstanceNetworkInterfaceAssociationOps[Self <: InstanceNetworkInterfaceAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpOwnerId(value: String): Self = this.set("IpOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpOwnerId: Self = this.set("IpOwnerId", js.undefined)
+    @scala.inline
+    def setPublicDnsName(value: String): Self = this.set("PublicDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicDnsName: Self = this.set("PublicDnsName", js.undefined)
+    @scala.inline
+    def setPublicIp(value: String): Self = this.set("PublicIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIp: Self = this.set("PublicIp", js.undefined)
+  }
+  
 }
 

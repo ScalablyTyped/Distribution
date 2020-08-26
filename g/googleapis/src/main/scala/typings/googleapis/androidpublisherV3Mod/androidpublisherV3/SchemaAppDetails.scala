@@ -26,18 +26,38 @@ trait SchemaAppDetails extends js.Object {
 
 object SchemaAppDetails {
   @scala.inline
-  def apply(
-    contactEmail: String = null,
-    contactPhone: String = null,
-    contactWebsite: String = null,
-    defaultLanguage: String = null
-  ): SchemaAppDetails = {
+  def apply(): SchemaAppDetails = {
     val __obj = js.Dynamic.literal()
-    if (contactEmail != null) __obj.updateDynamic("contactEmail")(contactEmail.asInstanceOf[js.Any])
-    if (contactPhone != null) __obj.updateDynamic("contactPhone")(contactPhone.asInstanceOf[js.Any])
-    if (contactWebsite != null) __obj.updateDynamic("contactWebsite")(contactWebsite.asInstanceOf[js.Any])
-    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAppDetails]
   }
+  @scala.inline
+  implicit class SchemaAppDetailsOps[Self <: SchemaAppDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContactEmail(value: String): Self = this.set("contactEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactEmail: Self = this.set("contactEmail", js.undefined)
+    @scala.inline
+    def setContactPhone(value: String): Self = this.set("contactPhone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactPhone: Self = this.set("contactPhone", js.undefined)
+    @scala.inline
+    def setContactWebsite(value: String): Self = this.set("contactWebsite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactWebsite: Self = this.set("contactWebsite", js.undefined)
+    @scala.inline
+    def setDefaultLanguage(value: String): Self = this.set("defaultLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLanguage: Self = this.set("defaultLanguage", js.undefined)
+  }
+  
 }
 

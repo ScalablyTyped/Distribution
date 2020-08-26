@@ -7,6 +7,7 @@ import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.colorMod.Color
 import typings.three.eventDispatcherMod.EventDispatcher
 import typings.three.face3Mod.Face3
+import typings.three.materialMod.Material
 import typings.three.matrix3Mod.Matrix
 import typings.three.matrix4Mod.Matrix4
 import typings.three.meshMod.Mesh
@@ -29,11 +30,11 @@ class Geometry () extends EventDispatcher {
   /**
   	 * Bounding box.
   	 */
-  var boundingBox: Box3 = js.native
+  var boundingBox: Box3 | Null = js.native
   /**
   	 * Bounding sphere.
   	 */
-  var boundingSphere: Sphere = js.native
+  var boundingSphere: Sphere | Null = js.native
   /**
   	 * Array of vertex colors, matching number and order of vertices.
   	 * Used in ParticleSystem, Line and Ribbon.
@@ -164,9 +165,10 @@ class Geometry () extends EventDispatcher {
   def fromBufferGeometry(geometry: BufferGeometry): Geometry = js.native
   def lookAt(vector: Vector3): Unit = js.native
   def merge(geometry: Geometry): Unit = js.native
+  def merge(geometry: Geometry, matrix: js.UndefOr[scala.Nothing], materialIndexOffset: Double): Unit = js.native
   def merge(geometry: Geometry, matrix: Matrix): Unit = js.native
   def merge(geometry: Geometry, matrix: Matrix, materialIndexOffset: Double): Unit = js.native
-  def mergeMesh(mesh: Mesh): Unit = js.native
+  def mergeMesh(mesh: Mesh[Geometry | BufferGeometry, Material | js.Array[Material]]): Unit = js.native
   /**
   	 * Checks for duplicate vertices using hashmap.
   	 * Duplicated vertices are removed and faces' vertices are updated.

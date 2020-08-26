@@ -20,6 +20,12 @@ class TileSource protected () extends EventSource {
   def addHandler(eventName: String, handler: EventHandler[TileSourceEvent]): Unit = js.native
   def addHandler(eventName: String, handler: EventHandler[TileSourceEvent], userData: js.Object): Unit = js.native
   def addOnceHandler(eventName: String, handler: EventHandler[TileSourceEvent]): Unit = js.native
+  def addOnceHandler(
+    eventName: String,
+    handler: EventHandler[TileSourceEvent],
+    userData: js.UndefOr[scala.Nothing],
+    times: Double
+  ): Unit = js.native
   def addOnceHandler(eventName: String, handler: EventHandler[TileSourceEvent], userData: js.Object): Unit = js.native
   def addOnceHandler(eventName: String, handler: EventHandler[TileSourceEvent], userData: js.Object, times: Double): Unit = js.native
   def configure(data: String): js.Object = js.native

@@ -30,18 +30,38 @@ trait DiscoverInstancesRequest extends js.Object {
 
 object DiscoverInstancesRequest {
   @scala.inline
-  def apply(
-    NamespaceName: NamespaceName,
-    ServiceName: ServiceName,
-    HealthStatus: HealthStatusFilter = null,
-    MaxResults: js.UndefOr[DiscoverMaxResults] = js.undefined,
-    QueryParameters: Attributes = null
-  ): DiscoverInstancesRequest = {
+  def apply(NamespaceName: NamespaceName, ServiceName: ServiceName): DiscoverInstancesRequest = {
     val __obj = js.Dynamic.literal(NamespaceName = NamespaceName.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any])
-    if (HealthStatus != null) __obj.updateDynamic("HealthStatus")(HealthStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (QueryParameters != null) __obj.updateDynamic("QueryParameters")(QueryParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscoverInstancesRequest]
   }
+  @scala.inline
+  implicit class DiscoverInstancesRequestOps[Self <: DiscoverInstancesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamespaceName(value: NamespaceName): Self = this.set("NamespaceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceName(value: ServiceName): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHealthStatus(value: HealthStatusFilter): Self = this.set("HealthStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthStatus: Self = this.set("HealthStatus", js.undefined)
+    @scala.inline
+    def setMaxResults(value: DiscoverMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setQueryParameters(value: Attributes): Self = this.set("QueryParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryParameters: Self = this.set("QueryParameters", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait UnsuccessfulInstanceCreditSpecificationItem extends js.Object {
 
 object UnsuccessfulInstanceCreditSpecificationItem {
   @scala.inline
-  def apply(Error: UnsuccessfulInstanceCreditSpecificationItemError = null, InstanceId: String = null): UnsuccessfulInstanceCreditSpecificationItem = {
+  def apply(): UnsuccessfulInstanceCreditSpecificationItem = {
     val __obj = js.Dynamic.literal()
-    if (Error != null) __obj.updateDynamic("Error")(Error.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsuccessfulInstanceCreditSpecificationItem]
   }
+  @scala.inline
+  implicit class UnsuccessfulInstanceCreditSpecificationItemOps[Self <: UnsuccessfulInstanceCreditSpecificationItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: UnsuccessfulInstanceCreditSpecificationItemError): Self = this.set("Error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("Error", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+  }
+  
 }
 

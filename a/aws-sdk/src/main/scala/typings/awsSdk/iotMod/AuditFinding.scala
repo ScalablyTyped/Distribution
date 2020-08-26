@@ -50,30 +50,64 @@ trait AuditFinding extends js.Object {
 
 object AuditFinding {
   @scala.inline
-  def apply(
-    checkName: AuditCheckName = null,
-    findingId: FindingId = null,
-    findingTime: Timestamp = null,
-    nonCompliantResource: NonCompliantResource = null,
-    reasonForNonCompliance: ReasonForNonCompliance = null,
-    reasonForNonComplianceCode: ReasonForNonComplianceCode = null,
-    relatedResources: RelatedResources = null,
-    severity: AuditFindingSeverity = null,
-    taskId: AuditTaskId = null,
-    taskStartTime: Timestamp = null
-  ): AuditFinding = {
+  def apply(): AuditFinding = {
     val __obj = js.Dynamic.literal()
-    if (checkName != null) __obj.updateDynamic("checkName")(checkName.asInstanceOf[js.Any])
-    if (findingId != null) __obj.updateDynamic("findingId")(findingId.asInstanceOf[js.Any])
-    if (findingTime != null) __obj.updateDynamic("findingTime")(findingTime.asInstanceOf[js.Any])
-    if (nonCompliantResource != null) __obj.updateDynamic("nonCompliantResource")(nonCompliantResource.asInstanceOf[js.Any])
-    if (reasonForNonCompliance != null) __obj.updateDynamic("reasonForNonCompliance")(reasonForNonCompliance.asInstanceOf[js.Any])
-    if (reasonForNonComplianceCode != null) __obj.updateDynamic("reasonForNonComplianceCode")(reasonForNonComplianceCode.asInstanceOf[js.Any])
-    if (relatedResources != null) __obj.updateDynamic("relatedResources")(relatedResources.asInstanceOf[js.Any])
-    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
-    if (taskId != null) __obj.updateDynamic("taskId")(taskId.asInstanceOf[js.Any])
-    if (taskStartTime != null) __obj.updateDynamic("taskStartTime")(taskStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditFinding]
   }
+  @scala.inline
+  implicit class AuditFindingOps[Self <: AuditFinding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckName(value: AuditCheckName): Self = this.set("checkName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckName: Self = this.set("checkName", js.undefined)
+    @scala.inline
+    def setFindingId(value: FindingId): Self = this.set("findingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindingId: Self = this.set("findingId", js.undefined)
+    @scala.inline
+    def setFindingTime(value: Timestamp): Self = this.set("findingTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindingTime: Self = this.set("findingTime", js.undefined)
+    @scala.inline
+    def setNonCompliantResource(value: NonCompliantResource): Self = this.set("nonCompliantResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonCompliantResource: Self = this.set("nonCompliantResource", js.undefined)
+    @scala.inline
+    def setReasonForNonCompliance(value: ReasonForNonCompliance): Self = this.set("reasonForNonCompliance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonForNonCompliance: Self = this.set("reasonForNonCompliance", js.undefined)
+    @scala.inline
+    def setReasonForNonComplianceCode(value: ReasonForNonComplianceCode): Self = this.set("reasonForNonComplianceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonForNonComplianceCode: Self = this.set("reasonForNonComplianceCode", js.undefined)
+    @scala.inline
+    def setRelatedResourcesVarargs(value: RelatedResource*): Self = this.set("relatedResources", js.Array(value :_*))
+    @scala.inline
+    def setRelatedResources(value: RelatedResources): Self = this.set("relatedResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedResources: Self = this.set("relatedResources", js.undefined)
+    @scala.inline
+    def setSeverity(value: AuditFindingSeverity): Self = this.set("severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("severity", js.undefined)
+    @scala.inline
+    def setTaskId(value: AuditTaskId): Self = this.set("taskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskId: Self = this.set("taskId", js.undefined)
+    @scala.inline
+    def setTaskStartTime(value: Timestamp): Self = this.set("taskStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskStartTime: Self = this.set("taskStartTime", js.undefined)
+  }
+  
 }
 

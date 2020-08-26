@@ -20,6 +20,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputEvent extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/input-event
   /**
@@ -31,19 +32,39 @@ trait InputEvent extends js.Object {
     js.Array[
       shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object InputEvent {
   @scala.inline
-  def apply(
-    modifiers: js.Array[
-      shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right
-    ] = null
-  ): InputEvent = {
+  def apply(): InputEvent = {
     val __obj = js.Dynamic.literal()
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputEvent]
   }
+  @scala.inline
+  implicit class InputEventOps[Self <: InputEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setModifiersVarargs(
+      value: (shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right)*
+    ): Self = this.set("modifiers", js.Array(value :_*))
+    @scala.inline
+    def setModifiers(
+      value: js.Array[
+          shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right
+        ]
+    ): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+  }
+  
 }
 

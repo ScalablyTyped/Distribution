@@ -12,79 +12,73 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CheckIsStarred extends js.Object {
   @JSName("checkIsStarred")
-  var checkIsStarred_Original: `113` = js.native
+  var checkIsStarred_Original: `121` = js.native
   @JSName("createComment")
-  var createComment_Original: `115` = js.native
+  var createComment_Original: `123` = js.native
   /**
     * Allows you to add a new gist with one or more files.
     *
     * **Note:** Don't name your files "gistfile" with a numerical suffix. This is the format of the automatic naming scheme that Gist uses internally.
     */
   @JSName("create")
-  var create_Original: `114` = js.native
+  var create_Original: `122` = js.native
   @JSName("deleteComment")
-  var deleteComment_Original: `117` = js.native
+  var deleteComment_Original: `125` = js.native
   @JSName("delete")
-  var delete_Original: `116` = js.native
+  var delete_Original: `124` = js.native
   /**
     * **Note**: This was previously `/gists/:gist_id/fork`.
     */
   @JSName("fork")
-  var fork_Original: `118` = js.native
+  var fork_Original: `126` = js.native
   @JSName("getComment")
-  var getComment_Original: `120` = js.native
+  var getComment_Original: `128` = js.native
   @JSName("getRevision")
-  var getRevision_Original: `121` = js.native
+  var getRevision_Original: `129` = js.native
   @JSName("get")
-  var get_Original: `119` = js.native
+  var get_Original: `127` = js.native
   @JSName("listComments")
-  var listComments_Original: `123` = js.native
+  var listComments_Original: `131` = js.native
   @JSName("listCommits")
-  var listCommits_Original: `124` = js.native
+  var listCommits_Original: `132` = js.native
   /**
     * Lists public gists for the specified user:
     */
   @JSName("listForUser")
-  var listForUser_Original: `125` = js.native
+  var listForUser_Original: `133` = js.native
   @JSName("listForks")
-  var listForks_Original: `126` = js.native
-  /**
-    * Lists public gists for the specified user:
-    * @deprecated octokit.gists.listPublicForUser() has been renamed to octokit.gists.listForUser() (2020-03-04)
-    */
-  @JSName("listPublicForUser")
-  var listPublicForUser_Original: `125` = js.native
+  var listForks_Original: `134` = js.native
   /**
     * List public gists sorted by most recently updated to least recently updated.
     *
     * Note: With [pagination](https://developer.github.com/v3/#pagination), you can fetch up to 3000 gists. For example, you can fetch 100 pages with 30 gists per page or 30 pages with 100 gists per page.
     */
   @JSName("listPublic")
-  var listPublic_Original: `127` = js.native
+  var listPublic_Original: `135` = js.native
   /**
     * List the authenticated user's starred gists:
     */
   @JSName("listStarred")
-  var listStarred_Original: `128` = js.native
+  var listStarred_Original: `136` = js.native
   /**
     * Lists the authenticated user's gists or if called anonymously, this endpoint returns all public gists:
     */
   @JSName("list")
-  var list_Original: `122` = js.native
+  var list_Original: `130` = js.native
   /**
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   @JSName("star")
-  var star_Original: `129` = js.native
+  var star_Original: `137` = js.native
   @JSName("unstar")
-  var unstar_Original: `130` = js.native
+  var unstar_Original: `138` = js.native
   @JSName("updateComment")
-  var updateComment_Original: `132` = js.native
+  var updateComment_Original: `140` = js.native
   /**
     * Allows you to update or delete a gist file and rename gist files. Files from the previous version of the gist that aren't explicitly changed during an edit are unchanged.
     */
   @JSName("update")
-  var update_Original: `131` = js.native
+  var update_Original: `139` = js.native
   def checkIsStarred(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /gists/:gist_id/star']['response'] */ js.Any
   ] = js.native
@@ -268,21 +262,6 @@ trait CheckIsStarred extends js.Object {
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /gists/public']['response'] */ js.Any
-  ] = js.native
-  /**
-    * Lists public gists for the specified user:
-    * @deprecated octokit.gists.listPublicForUser() has been renamed to octokit.gists.listForUser() (2020-03-04)
-    */
-  def listPublicForUser(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/:username/gists']['response'] */ js.Any
-  ] = js.native
-  def listPublicForUser(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/:username/gists']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/:username/gists']['response'] */ js.Any
   ] = js.native
   /**
     * List the authenticated user's starred gists:

@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlacementBuilder[Placement] extends DisplayBuilder[PlacementBuilder[Placement]] {
-  def withUrl(url: String): PlacementBuilder[Placement]
+  def withUrl(url: String): PlacementBuilder[Placement] = js.native
 }
 
 object PlacementBuilder {
@@ -20,5 +21,20 @@ object PlacementBuilder {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), exclude = js.Any.fromFunction0(exclude), withCpc = js.Any.fromFunction1(withCpc), withCpm = js.Any.fromFunction1(withCpm), withUrl = js.Any.fromFunction1(withUrl))
     __obj.asInstanceOf[PlacementBuilder[Placement]]
   }
+  @scala.inline
+  implicit class PlacementBuilderOps[Self <: PlacementBuilder[_], Placement] (val x: Self with PlacementBuilder[Placement]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWithUrl(value: String => PlacementBuilder[Placement]): Self = this.set("withUrl", js.Any.fromFunction1(value))
+  }
+  
 }
 

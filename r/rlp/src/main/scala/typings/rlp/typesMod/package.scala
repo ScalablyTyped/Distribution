@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesMod {
-  type Input = typings.node.Buffer | java.lang.String | scala.Double | typings.std.Uint8Array | typings.bnJs.mod.^  | typings.rlp.typesMod.List | scala.Null
+  type Input = typings.node.Buffer | java.lang.String | scala.Double | typings.std.BigInt | typings.std.Uint8Array | typings.bnJs.mod.^  | typings.rlp.typesMod.List | scala.Null
 }

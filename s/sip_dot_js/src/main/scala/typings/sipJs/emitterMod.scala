@@ -1,6 +1,5 @@
 package typings.sipJs
 
-import typings.events.mod.EventEmitter
 import typings.sipJs.anon.Once
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,9 +44,19 @@ object emitterMod extends js.Object {
     def removeListener(listener: js.Function1[/* data */ T, Unit]): Unit = js.native
   }
   
-  @JSName("_makeEmitter")
-  def makeEmitter[T](eventEmitter: EventEmitter): Emitter[T] = js.native
-  @JSName("_makeEmitter")
-  def makeEmitter[T](eventEmitter: EventEmitter, eventName: String): Emitter[T] = js.native
+  @js.native
+  class EmitterImpl[T] () extends Emitter[T] {
+    var listeners: js.Any = js.native
+    /**
+      * Emit change.
+      * @param data - Data to emit.
+      */
+    def emit(data: T): Unit = js.native
+    /**
+      * Removes all listeners previously registered with addListener.
+      */
+    def removeAllListeners(): Unit = js.native
+  }
+  
 }
 

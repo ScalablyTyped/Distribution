@@ -19,11 +19,32 @@ trait JWTConfiguration extends js.Object {
 
 object JWTConfiguration {
   @scala.inline
-  def apply(Audience: listOfString = null, Issuer: UriWithLengthBetween1And2048 = null): JWTConfiguration = {
+  def apply(): JWTConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (Audience != null) __obj.updateDynamic("Audience")(Audience.asInstanceOf[js.Any])
-    if (Issuer != null) __obj.updateDynamic("Issuer")(Issuer.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWTConfiguration]
   }
+  @scala.inline
+  implicit class JWTConfigurationOps[Self <: JWTConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudienceVarargs(value: string*): Self = this.set("Audience", js.Array(value :_*))
+    @scala.inline
+    def setAudience(value: listOfString): Self = this.set("Audience", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudience: Self = this.set("Audience", js.undefined)
+    @scala.inline
+    def setIssuer(value: UriWithLengthBetween1And2048): Self = this.set("Issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuer: Self = this.set("Issuer", js.undefined)
+  }
+  
 }
 

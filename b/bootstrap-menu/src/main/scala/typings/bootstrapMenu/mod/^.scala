@@ -12,15 +12,5 @@ class ^ protected () extends BootstrapMenu {
     * @param options Options to configure the menu
     */
   def this(selector: String, options: BootstrapMenuOptions) = this()
-  /**
-    * Close the context menu
-    */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /**
-    * Close the menu and remove every event listeners
-    */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
 }
 

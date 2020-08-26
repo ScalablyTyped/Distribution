@@ -12,7 +12,7 @@ Manage the desktop wallpaper
 | Keywords           | macos, linux, windows, wallpaper, desktop, background, image, picture, photo |
 | # releases         | 8 |
 | # dependents       | 165 |
-| # downloads        | 10972 |
+| # downloads        | 10435 |
 | # stars            | 7 |
 
 ## Links

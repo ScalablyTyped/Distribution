@@ -18,11 +18,30 @@ trait CreateSecurityProfileResponse extends js.Object {
 
 object CreateSecurityProfileResponse {
   @scala.inline
-  def apply(securityProfileArn: SecurityProfileArn = null, securityProfileName: SecurityProfileName = null): CreateSecurityProfileResponse = {
+  def apply(): CreateSecurityProfileResponse = {
     val __obj = js.Dynamic.literal()
-    if (securityProfileArn != null) __obj.updateDynamic("securityProfileArn")(securityProfileArn.asInstanceOf[js.Any])
-    if (securityProfileName != null) __obj.updateDynamic("securityProfileName")(securityProfileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSecurityProfileResponse]
   }
+  @scala.inline
+  implicit class CreateSecurityProfileResponseOps[Self <: CreateSecurityProfileResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecurityProfileArn(value: SecurityProfileArn): Self = this.set("securityProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityProfileArn: Self = this.set("securityProfileArn", js.undefined)
+    @scala.inline
+    def setSecurityProfileName(value: SecurityProfileName): Self = this.set("securityProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityProfileName: Self = this.set("securityProfileName", js.undefined)
+  }
+  
 }
 

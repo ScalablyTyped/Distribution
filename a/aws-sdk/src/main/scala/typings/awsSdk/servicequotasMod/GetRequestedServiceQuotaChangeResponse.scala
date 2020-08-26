@@ -14,10 +14,26 @@ trait GetRequestedServiceQuotaChangeResponse extends js.Object {
 
 object GetRequestedServiceQuotaChangeResponse {
   @scala.inline
-  def apply(RequestedQuota: RequestedServiceQuotaChange = null): GetRequestedServiceQuotaChangeResponse = {
+  def apply(): GetRequestedServiceQuotaChangeResponse = {
     val __obj = js.Dynamic.literal()
-    if (RequestedQuota != null) __obj.updateDynamic("RequestedQuota")(RequestedQuota.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRequestedServiceQuotaChangeResponse]
   }
+  @scala.inline
+  implicit class GetRequestedServiceQuotaChangeResponseOps[Self <: GetRequestedServiceQuotaChangeResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequestedQuota(value: RequestedServiceQuotaChange): Self = this.set("RequestedQuota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedQuota: Self = this.set("RequestedQuota", js.undefined)
+  }
+  
 }
 

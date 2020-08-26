@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "xlsx"
-version := "0.15.6-e74305"
-scalaVersion := "2.13.2"
+version := "0.16.5-608846"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cfb" % "1.1.4-8d10d4",
-  "org.scalablytyped" %%% "ssf" % "0.10.3-d277eb",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "cfb" % "1.2.0-e1d903",
+  "org.scalablytyped" %%% "ssf" % "0.11.2-87f7fa",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

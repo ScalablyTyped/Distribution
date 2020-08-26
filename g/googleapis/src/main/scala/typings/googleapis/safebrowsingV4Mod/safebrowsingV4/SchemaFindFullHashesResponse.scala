@@ -25,16 +25,36 @@ trait SchemaFindFullHashesResponse extends js.Object {
 
 object SchemaFindFullHashesResponse {
   @scala.inline
-  def apply(
-    matches: js.Array[SchemaThreatMatch] = null,
-    minimumWaitDuration: String = null,
-    negativeCacheDuration: String = null
-  ): SchemaFindFullHashesResponse = {
+  def apply(): SchemaFindFullHashesResponse = {
     val __obj = js.Dynamic.literal()
-    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
-    if (minimumWaitDuration != null) __obj.updateDynamic("minimumWaitDuration")(minimumWaitDuration.asInstanceOf[js.Any])
-    if (negativeCacheDuration != null) __obj.updateDynamic("negativeCacheDuration")(negativeCacheDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFindFullHashesResponse]
   }
+  @scala.inline
+  implicit class SchemaFindFullHashesResponseOps[Self <: SchemaFindFullHashesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMatchesVarargs(value: SchemaThreatMatch*): Self = this.set("matches", js.Array(value :_*))
+    @scala.inline
+    def setMatches(value: js.Array[SchemaThreatMatch]): Self = this.set("matches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatches: Self = this.set("matches", js.undefined)
+    @scala.inline
+    def setMinimumWaitDuration(value: String): Self = this.set("minimumWaitDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumWaitDuration: Self = this.set("minimumWaitDuration", js.undefined)
+    @scala.inline
+    def setNegativeCacheDuration(value: String): Self = this.set("negativeCacheDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegativeCacheDuration: Self = this.set("negativeCacheDuration", js.undefined)
+  }
+  
 }
 

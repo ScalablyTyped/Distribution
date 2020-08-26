@@ -14,10 +14,26 @@ trait AutoSnapshotAddOnRequest extends js.Object {
 
 object AutoSnapshotAddOnRequest {
   @scala.inline
-  def apply(snapshotTimeOfDay: TimeOfDay = null): AutoSnapshotAddOnRequest = {
+  def apply(): AutoSnapshotAddOnRequest = {
     val __obj = js.Dynamic.literal()
-    if (snapshotTimeOfDay != null) __obj.updateDynamic("snapshotTimeOfDay")(snapshotTimeOfDay.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoSnapshotAddOnRequest]
   }
+  @scala.inline
+  implicit class AutoSnapshotAddOnRequestOps[Self <: AutoSnapshotAddOnRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnapshotTimeOfDay(value: TimeOfDay): Self = this.set("snapshotTimeOfDay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotTimeOfDay: Self = this.set("snapshotTimeOfDay", js.undefined)
+  }
+  
 }
 

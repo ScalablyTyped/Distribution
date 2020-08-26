@@ -46,28 +46,58 @@ trait ResourceShareAssociation extends js.Object {
 
 object ResourceShareAssociation {
   @scala.inline
-  def apply(
-    associatedEntity: String = null,
-    associationType: ResourceShareAssociationType = null,
-    creationTime: DateTime = null,
-    external: js.UndefOr[Boolean] = js.undefined,
-    lastUpdatedTime: DateTime = null,
-    resourceShareArn: String = null,
-    resourceShareName: String = null,
-    status: ResourceShareAssociationStatus = null,
-    statusMessage: String = null
-  ): ResourceShareAssociation = {
+  def apply(): ResourceShareAssociation = {
     val __obj = js.Dynamic.literal()
-    if (associatedEntity != null) __obj.updateDynamic("associatedEntity")(associatedEntity.asInstanceOf[js.Any])
-    if (associationType != null) __obj.updateDynamic("associationType")(associationType.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.get.asInstanceOf[js.Any])
-    if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
-    if (resourceShareArn != null) __obj.updateDynamic("resourceShareArn")(resourceShareArn.asInstanceOf[js.Any])
-    if (resourceShareName != null) __obj.updateDynamic("resourceShareName")(resourceShareName.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceShareAssociation]
   }
+  @scala.inline
+  implicit class ResourceShareAssociationOps[Self <: ResourceShareAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociatedEntity(value: String): Self = this.set("associatedEntity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedEntity: Self = this.set("associatedEntity", js.undefined)
+    @scala.inline
+    def setAssociationType(value: ResourceShareAssociationType): Self = this.set("associationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationType: Self = this.set("associationType", js.undefined)
+    @scala.inline
+    def setCreationTime(value: DateTime): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setExternal(value: Boolean): Self = this.set("external", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternal: Self = this.set("external", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: DateTime): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    @scala.inline
+    def setResourceShareArn(value: String): Self = this.set("resourceShareArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceShareArn: Self = this.set("resourceShareArn", js.undefined)
+    @scala.inline
+    def setResourceShareName(value: String): Self = this.set("resourceShareName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceShareName: Self = this.set("resourceShareName", js.undefined)
+    @scala.inline
+    def setStatus(value: ResourceShareAssociationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+  }
+  
 }
 

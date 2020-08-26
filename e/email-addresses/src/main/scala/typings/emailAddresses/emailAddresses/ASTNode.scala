@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ASTNode extends js.Object {
-  var children: js.Array[ASTNode]
-  var name: String
-  var semantic: String
-  var tokens: String
+  var children: js.Array[ASTNode] = js.native
+  var name: String = js.native
+  var semantic: String = js.native
+  var tokens: String = js.native
 }
 
 object ASTNode {
@@ -17,5 +18,28 @@ object ASTNode {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], semantic = semantic.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTNode]
   }
+  @scala.inline
+  implicit class ASTNodeOps[Self <: ASTNode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildrenVarargs(value: ASTNode*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[ASTNode]): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSemantic(value: String): Self = this.set("semantic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTokens(value: String): Self = this.set("tokens", value.asInstanceOf[js.Any])
+  }
+  
 }
 

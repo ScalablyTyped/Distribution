@@ -98,6 +98,7 @@ class ResourceAcceleratortypes protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaAcceleratorTypeAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaAcceleratorTypeAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAcceleratorTypeAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceAcceleratortypesAggregatedlist): GaxiosPromise[SchemaAcceleratorTypeAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceAcceleratortypesAggregatedlist,
@@ -190,6 +191,7 @@ class ResourceAcceleratortypes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAcceleratorType] = js.native
   def get(callback: BodyResponseCallback[SchemaAcceleratorType]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAcceleratorType] = js.native
   def get(params: ParamsResourceAcceleratortypesGet): GaxiosPromise[SchemaAcceleratorType] = js.native
   def get(params: ParamsResourceAcceleratortypesGet, callback: BodyResponseCallback[SchemaAcceleratorType]): Unit = js.native
   def get(
@@ -292,6 +294,7 @@ class ResourceAcceleratortypes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAcceleratorTypeList] = js.native
   def list(callback: BodyResponseCallback[SchemaAcceleratorTypeList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAcceleratorTypeList] = js.native
   def list(params: ParamsResourceAcceleratortypesList): GaxiosPromise[SchemaAcceleratorTypeList] = js.native
   def list(
     params: ParamsResourceAcceleratortypesList,

@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SearchSuggestionCollection extends ISearchSuggestionCollection
 
 object SearchSuggestionCollection {

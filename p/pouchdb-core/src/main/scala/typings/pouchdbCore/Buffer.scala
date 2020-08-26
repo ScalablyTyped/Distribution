@@ -12,8 +12,76 @@ trait Buffer
   extends Uint8Array
      with _AttachmentData {
   def compare(otherBuffer: Buffer): Double = js.native
+  def compare(
+    otherBuffer: Buffer,
+    targetStart: js.UndefOr[scala.Nothing],
+    targetEnd: js.UndefOr[scala.Nothing],
+    sourceStart: js.UndefOr[scala.Nothing],
+    sourceEnd: Double
+  ): Double = js.native
+  def compare(
+    otherBuffer: Buffer,
+    targetStart: js.UndefOr[scala.Nothing],
+    targetEnd: js.UndefOr[scala.Nothing],
+    sourceStart: Double
+  ): Double = js.native
+  def compare(
+    otherBuffer: Buffer,
+    targetStart: js.UndefOr[scala.Nothing],
+    targetEnd: js.UndefOr[scala.Nothing],
+    sourceStart: Double,
+    sourceEnd: Double
+  ): Double = js.native
+  def compare(otherBuffer: Buffer, targetStart: js.UndefOr[scala.Nothing], targetEnd: Double): Double = js.native
+  def compare(
+    otherBuffer: Buffer,
+    targetStart: js.UndefOr[scala.Nothing],
+    targetEnd: Double,
+    sourceStart: js.UndefOr[scala.Nothing],
+    sourceEnd: Double
+  ): Double = js.native
+  def compare(
+    otherBuffer: Buffer,
+    targetStart: js.UndefOr[scala.Nothing],
+    targetEnd: Double,
+    sourceStart: Double
+  ): Double = js.native
+  def compare(
+    otherBuffer: Buffer,
+    targetStart: js.UndefOr[scala.Nothing],
+    targetEnd: Double,
+    sourceStart: Double,
+    sourceEnd: Double
+  ): Double = js.native
   def compare(otherBuffer: Buffer, targetStart: Double): Double = js.native
+  def compare(
+    otherBuffer: Buffer,
+    targetStart: Double,
+    targetEnd: js.UndefOr[scala.Nothing],
+    sourceStart: js.UndefOr[scala.Nothing],
+    sourceEnd: Double
+  ): Double = js.native
+  def compare(
+    otherBuffer: Buffer,
+    targetStart: Double,
+    targetEnd: js.UndefOr[scala.Nothing],
+    sourceStart: Double
+  ): Double = js.native
+  def compare(
+    otherBuffer: Buffer,
+    targetStart: Double,
+    targetEnd: js.UndefOr[scala.Nothing],
+    sourceStart: Double,
+    sourceEnd: Double
+  ): Double = js.native
   def compare(otherBuffer: Buffer, targetStart: Double, targetEnd: Double): Double = js.native
+  def compare(
+    otherBuffer: Buffer,
+    targetStart: Double,
+    targetEnd: Double,
+    sourceStart: js.UndefOr[scala.Nothing],
+    sourceEnd: Double
+  ): Double = js.native
   def compare(otherBuffer: Buffer, targetStart: Double, targetEnd: Double, sourceStart: Double): Double = js.native
   def compare(
     otherBuffer: Buffer,
@@ -23,32 +91,61 @@ trait Buffer
     sourceEnd: Double
   ): Double = js.native
   def copy(targetBuffer: Buffer): Double = js.native
+  def copy(
+    targetBuffer: Buffer,
+    targetStart: js.UndefOr[scala.Nothing],
+    sourceStart: js.UndefOr[scala.Nothing],
+    sourceEnd: Double
+  ): Double = js.native
+  def copy(targetBuffer: Buffer, targetStart: js.UndefOr[scala.Nothing], sourceStart: Double): Double = js.native
+  def copy(
+    targetBuffer: Buffer,
+    targetStart: js.UndefOr[scala.Nothing],
+    sourceStart: Double,
+    sourceEnd: Double
+  ): Double = js.native
   def copy(targetBuffer: Buffer, targetStart: Double): Double = js.native
+  def copy(
+    targetBuffer: Buffer,
+    targetStart: Double,
+    sourceStart: js.UndefOr[scala.Nothing],
+    sourceEnd: Double
+  ): Double = js.native
   def copy(targetBuffer: Buffer, targetStart: Double, sourceStart: Double): Double = js.native
   def copy(targetBuffer: Buffer, targetStart: Double, sourceStart: Double, sourceEnd: Double): Double = js.native
   def equals(otherBuffer: Buffer): Boolean = js.native
   def fill(value: js.Any): this.type = js.native
+  def fill(value: js.Any, offset: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: js.Any, offset: Double): this.type = js.native
   def fill(value: js.Any, offset: Double, end: Double): this.type = js.native
   def includes(value: String): Boolean = js.native
+  def includes(value: String, byteOffset: js.UndefOr[scala.Nothing], encoding: String): Boolean = js.native
   def includes(value: String, byteOffset: Double): Boolean = js.native
   def includes(value: String, byteOffset: Double, encoding: String): Boolean = js.native
+  def includes(value: Double, byteOffset: js.UndefOr[scala.Nothing], encoding: String): Boolean = js.native
   def includes(value: Double, byteOffset: Double, encoding: String): Boolean = js.native
   def includes(value: Buffer): Boolean = js.native
+  def includes(value: Buffer, byteOffset: js.UndefOr[scala.Nothing], encoding: String): Boolean = js.native
   def includes(value: Buffer, byteOffset: Double): Boolean = js.native
   def includes(value: Buffer, byteOffset: Double, encoding: String): Boolean = js.native
   def indexOf(value: String): Double = js.native
+  def indexOf(value: String, byteOffset: js.UndefOr[scala.Nothing], encoding: String): Double = js.native
   def indexOf(value: String, byteOffset: Double): Double = js.native
   def indexOf(value: String, byteOffset: Double, encoding: String): Double = js.native
+  def indexOf(value: Double, byteOffset: js.UndefOr[scala.Nothing], encoding: String): Double = js.native
   def indexOf(value: Double, byteOffset: Double, encoding: String): Double = js.native
   def indexOf(value: Buffer): Double = js.native
+  def indexOf(value: Buffer, byteOffset: js.UndefOr[scala.Nothing], encoding: String): Double = js.native
   def indexOf(value: Buffer, byteOffset: Double): Double = js.native
   def indexOf(value: Buffer, byteOffset: Double, encoding: String): Double = js.native
   def lastIndexOf(value: String): Double = js.native
+  def lastIndexOf(value: String, byteOffset: js.UndefOr[scala.Nothing], encoding: String): Double = js.native
   def lastIndexOf(value: String, byteOffset: Double): Double = js.native
   def lastIndexOf(value: String, byteOffset: Double, encoding: String): Double = js.native
+  def lastIndexOf(value: Double, byteOffset: js.UndefOr[scala.Nothing], encoding: String): Double = js.native
   def lastIndexOf(value: Double, byteOffset: Double, encoding: String): Double = js.native
   def lastIndexOf(value: Buffer): Double = js.native
+  def lastIndexOf(value: Buffer, byteOffset: js.UndefOr[scala.Nothing], encoding: String): Double = js.native
   def lastIndexOf(value: Buffer, byteOffset: Double): Double = js.native
   def lastIndexOf(value: Buffer, byteOffset: Double, encoding: String): Double = js.native
   def readDoubleBE(offset: Double): Double = js.native
@@ -91,11 +188,24 @@ trait Buffer
   def swap32(): Buffer = js.native
   def swap64(): Buffer = js.native
   def toJSON(): Data = js.native
+  def toString(encoding: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], end: Double): String = js.native
+  def toString(encoding: js.UndefOr[scala.Nothing], start: Double): String = js.native
+  def toString(encoding: js.UndefOr[scala.Nothing], start: Double, end: Double): String = js.native
   def toString(encoding: String): String = js.native
+  def toString(encoding: String, start: js.UndefOr[scala.Nothing], end: Double): String = js.native
   def toString(encoding: String, start: Double): String = js.native
   def toString(encoding: String, start: Double, end: Double): String = js.native
   def write(string: String): Double = js.native
+  def write(
+    string: String,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    encoding: String
+  ): Double = js.native
+  def write(string: String, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
+  def write(string: String, offset: js.UndefOr[scala.Nothing], length: Double, encoding: String): Double = js.native
   def write(string: String, offset: Double): Double = js.native
+  def write(string: String, offset: Double, length: js.UndefOr[scala.Nothing], encoding: String): Double = js.native
   def write(string: String, offset: Double, length: Double): Double = js.native
   def write(string: String, offset: Double, length: Double, encoding: String): Double = js.native
   def writeDoubleBE(value: Double, offset: Double): Double = js.native

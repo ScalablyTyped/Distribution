@@ -34,22 +34,46 @@ trait DeploymentConfigInfo extends js.Object {
 
 object DeploymentConfigInfo {
   @scala.inline
-  def apply(
-    computePlatform: ComputePlatform = null,
-    createTime: Timestamp = null,
-    deploymentConfigId: DeploymentConfigId = null,
-    deploymentConfigName: DeploymentConfigName = null,
-    minimumHealthyHosts: MinimumHealthyHosts = null,
-    trafficRoutingConfig: TrafficRoutingConfig = null
-  ): DeploymentConfigInfo = {
+  def apply(): DeploymentConfigInfo = {
     val __obj = js.Dynamic.literal()
-    if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (deploymentConfigId != null) __obj.updateDynamic("deploymentConfigId")(deploymentConfigId.asInstanceOf[js.Any])
-    if (deploymentConfigName != null) __obj.updateDynamic("deploymentConfigName")(deploymentConfigName.asInstanceOf[js.Any])
-    if (minimumHealthyHosts != null) __obj.updateDynamic("minimumHealthyHosts")(minimumHealthyHosts.asInstanceOf[js.Any])
-    if (trafficRoutingConfig != null) __obj.updateDynamic("trafficRoutingConfig")(trafficRoutingConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentConfigInfo]
   }
+  @scala.inline
+  implicit class DeploymentConfigInfoOps[Self <: DeploymentConfigInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputePlatform(value: ComputePlatform): Self = this.set("computePlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputePlatform: Self = this.set("computePlatform", js.undefined)
+    @scala.inline
+    def setCreateTime(value: Timestamp): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDeploymentConfigId(value: DeploymentConfigId): Self = this.set("deploymentConfigId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentConfigId: Self = this.set("deploymentConfigId", js.undefined)
+    @scala.inline
+    def setDeploymentConfigName(value: DeploymentConfigName): Self = this.set("deploymentConfigName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentConfigName: Self = this.set("deploymentConfigName", js.undefined)
+    @scala.inline
+    def setMinimumHealthyHosts(value: MinimumHealthyHosts): Self = this.set("minimumHealthyHosts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumHealthyHosts: Self = this.set("minimumHealthyHosts", js.undefined)
+    @scala.inline
+    def setTrafficRoutingConfig(value: TrafficRoutingConfig): Self = this.set("trafficRoutingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrafficRoutingConfig: Self = this.set("trafficRoutingConfig", js.undefined)
+  }
+  
 }
 

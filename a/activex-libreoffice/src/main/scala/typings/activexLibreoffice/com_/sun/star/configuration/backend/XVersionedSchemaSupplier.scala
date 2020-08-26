@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * provides access to versioned configuration component schemas.
   * @since OOo 2.0
   */
+@js.native
 trait XVersionedSchemaSupplier extends XSchemaSupplier {
   /**
     * Returns the schema version for a particular component.
@@ -17,7 +18,7 @@ trait XVersionedSchemaSupplier extends XSchemaSupplier {
     * @throws com::sun::star::lang::IllegalArgumentException if the component identifier is invalid.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the version data.
     */
-  def getSchemaVersion(aComponent: String): String
+  def getSchemaVersion(aComponent: String): String = js.native
 }
 
 object XVersionedSchemaSupplier {
@@ -32,5 +33,20 @@ object XVersionedSchemaSupplier {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getComponentSchema = js.Any.fromFunction1(getComponentSchema), getSchemaVersion = js.Any.fromFunction1(getSchemaVersion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XVersionedSchemaSupplier]
   }
+  @scala.inline
+  implicit class XVersionedSchemaSupplierOps[Self <: XVersionedSchemaSupplier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetSchemaVersion(value: String => String): Self = this.set("getSchemaVersion", js.Any.fromFunction1(value))
+  }
+  
 }
 

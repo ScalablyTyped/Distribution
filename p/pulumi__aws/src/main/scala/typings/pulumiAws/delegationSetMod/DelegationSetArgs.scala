@@ -16,10 +16,26 @@ trait DelegationSetArgs extends js.Object {
 
 object DelegationSetArgs {
   @scala.inline
-  def apply(referenceName: Input[String] = null): DelegationSetArgs = {
+  def apply(): DelegationSetArgs = {
     val __obj = js.Dynamic.literal()
-    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DelegationSetArgs]
   }
+  @scala.inline
+  implicit class DelegationSetArgsOps[Self <: DelegationSetArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReferenceName(value: Input[String]): Self = this.set("referenceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceName: Self = this.set("referenceName", js.undefined)
+  }
+  
 }
 

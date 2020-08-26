@@ -96,40 +96,82 @@ trait SchemaAdvertiser extends js.Object {
 
 object SchemaAdvertiser {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    advertiserGroupId: String = null,
-    clickThroughUrlSuffix: String = null,
-    defaultClickThroughEventTagId: String = null,
-    defaultEmail: String = null,
-    floodlightConfigurationId: String = null,
-    floodlightConfigurationIdDimensionValue: SchemaDimensionValue = null,
-    id: String = null,
-    idDimensionValue: SchemaDimensionValue = null,
-    kind: String = null,
-    name: String = null,
-    originalFloodlightConfigurationId: String = null,
-    status: String = null,
-    subaccountId: String = null,
-    suspended: js.UndefOr[Boolean] = js.undefined
-  ): SchemaAdvertiser = {
+  def apply(): SchemaAdvertiser = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (advertiserGroupId != null) __obj.updateDynamic("advertiserGroupId")(advertiserGroupId.asInstanceOf[js.Any])
-    if (clickThroughUrlSuffix != null) __obj.updateDynamic("clickThroughUrlSuffix")(clickThroughUrlSuffix.asInstanceOf[js.Any])
-    if (defaultClickThroughEventTagId != null) __obj.updateDynamic("defaultClickThroughEventTagId")(defaultClickThroughEventTagId.asInstanceOf[js.Any])
-    if (defaultEmail != null) __obj.updateDynamic("defaultEmail")(defaultEmail.asInstanceOf[js.Any])
-    if (floodlightConfigurationId != null) __obj.updateDynamic("floodlightConfigurationId")(floodlightConfigurationId.asInstanceOf[js.Any])
-    if (floodlightConfigurationIdDimensionValue != null) __obj.updateDynamic("floodlightConfigurationIdDimensionValue")(floodlightConfigurationIdDimensionValue.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (originalFloodlightConfigurationId != null) __obj.updateDynamic("originalFloodlightConfigurationId")(originalFloodlightConfigurationId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(suspended)) __obj.updateDynamic("suspended")(suspended.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAdvertiser]
   }
+  @scala.inline
+  implicit class SchemaAdvertiserOps[Self <: SchemaAdvertiser] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdvertiserGroupId(value: String): Self = this.set("advertiserGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserGroupId: Self = this.set("advertiserGroupId", js.undefined)
+    @scala.inline
+    def setClickThroughUrlSuffix(value: String): Self = this.set("clickThroughUrlSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickThroughUrlSuffix: Self = this.set("clickThroughUrlSuffix", js.undefined)
+    @scala.inline
+    def setDefaultClickThroughEventTagId(value: String): Self = this.set("defaultClickThroughEventTagId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultClickThroughEventTagId: Self = this.set("defaultClickThroughEventTagId", js.undefined)
+    @scala.inline
+    def setDefaultEmail(value: String): Self = this.set("defaultEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEmail: Self = this.set("defaultEmail", js.undefined)
+    @scala.inline
+    def setFloodlightConfigurationId(value: String): Self = this.set("floodlightConfigurationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodlightConfigurationId: Self = this.set("floodlightConfigurationId", js.undefined)
+    @scala.inline
+    def setFloodlightConfigurationIdDimensionValue(value: SchemaDimensionValue): Self = this.set("floodlightConfigurationIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodlightConfigurationIdDimensionValue: Self = this.set("floodlightConfigurationIdDimensionValue", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdDimensionValue(value: SchemaDimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOriginalFloodlightConfigurationId(value: String): Self = this.set("originalFloodlightConfigurationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalFloodlightConfigurationId: Self = this.set("originalFloodlightConfigurationId", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    @scala.inline
+    def setSuspended(value: Boolean): Self = this.set("suspended", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspended: Self = this.set("suspended", js.undefined)
+  }
+  
 }
 

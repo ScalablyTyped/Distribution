@@ -30,17 +30,36 @@ trait GetUsageForecastRequest extends js.Object {
 
 object GetUsageForecastRequest {
   @scala.inline
-  def apply(
-    Granularity: Granularity,
-    Metric: Metric,
-    TimePeriod: DateInterval,
-    Filter: Expression = null,
-    PredictionIntervalLevel: js.UndefOr[PredictionIntervalLevel] = js.undefined
-  ): GetUsageForecastRequest = {
+  def apply(Granularity: Granularity, Metric: Metric, TimePeriod: DateInterval): GetUsageForecastRequest = {
     val __obj = js.Dynamic.literal(Granularity = Granularity.asInstanceOf[js.Any], Metric = Metric.asInstanceOf[js.Any], TimePeriod = TimePeriod.asInstanceOf[js.Any])
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(PredictionIntervalLevel)) __obj.updateDynamic("PredictionIntervalLevel")(PredictionIntervalLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsageForecastRequest]
   }
+  @scala.inline
+  implicit class GetUsageForecastRequestOps[Self <: GetUsageForecastRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGranularity(value: Granularity): Self = this.set("Granularity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetric(value: Metric): Self = this.set("Metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimePeriod(value: DateInterval): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: Expression): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+    @scala.inline
+    def setPredictionIntervalLevel(value: PredictionIntervalLevel): Self = this.set("PredictionIntervalLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictionIntervalLevel: Self = this.set("PredictionIntervalLevel", js.undefined)
+  }
+  
 }
 

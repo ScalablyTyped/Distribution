@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Serializer extends js.Object {
-  def serialize(data: js.Any): js.Any
+  def serialize(data: js.Any): js.Any = js.native
 }
 
 @JSImport("jsonapi-serializer", "Serializer")

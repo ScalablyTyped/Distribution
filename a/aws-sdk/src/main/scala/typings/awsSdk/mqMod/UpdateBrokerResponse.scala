@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateBrokerResponse extends js.Object {
   /**
+    * The authentication strategy used to secure the broker.
+    */
+  var AuthenticationStrategy: js.UndefOr[typings.awsSdk.mqMod.AuthenticationStrategy] = js.native
+  /**
     * The new value of automatic upgrades to new minor version for brokers.
     */
   var AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.native
@@ -27,6 +31,10 @@ trait UpdateBrokerResponse extends js.Object {
     */
   var HostInstanceType: js.UndefOr[string] = js.native
   /**
+    * The metadata of the LDAP server used to authenticate and authorize connections to the broker.
+    */
+  var LdapServerMetadata: js.UndefOr[LdapServerMetadataOutput] = js.native
+  /**
     * The list of information about logs to be enabled for the specified broker.
     */
   var Logs: js.UndefOr[typings.awsSdk.mqMod.Logs] = js.native
@@ -38,24 +46,60 @@ trait UpdateBrokerResponse extends js.Object {
 
 object UpdateBrokerResponse {
   @scala.inline
-  def apply(
-    AutoMinorVersionUpgrade: js.UndefOr[boolean] = js.undefined,
-    BrokerId: string = null,
-    Configuration: ConfigurationId = null,
-    EngineVersion: string = null,
-    HostInstanceType: string = null,
-    Logs: Logs = null,
-    SecurityGroups: listOfString = null
-  ): UpdateBrokerResponse = {
+  def apply(): UpdateBrokerResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
-    if (BrokerId != null) __obj.updateDynamic("BrokerId")(BrokerId.asInstanceOf[js.Any])
-    if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (HostInstanceType != null) __obj.updateDynamic("HostInstanceType")(HostInstanceType.asInstanceOf[js.Any])
-    if (Logs != null) __obj.updateDynamic("Logs")(Logs.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBrokerResponse]
   }
+  @scala.inline
+  implicit class UpdateBrokerResponseOps[Self <: UpdateBrokerResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticationStrategy(value: AuthenticationStrategy): Self = this.set("AuthenticationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationStrategy: Self = this.set("AuthenticationStrategy", js.undefined)
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: boolean): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerId: Self = this.set("BrokerId", js.undefined)
+    @scala.inline
+    def setConfiguration(value: ConfigurationId): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("Configuration", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: string): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setHostInstanceType(value: string): Self = this.set("HostInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostInstanceType: Self = this.set("HostInstanceType", js.undefined)
+    @scala.inline
+    def setLdapServerMetadata(value: LdapServerMetadataOutput): Self = this.set("LdapServerMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLdapServerMetadata: Self = this.set("LdapServerMetadata", js.undefined)
+    @scala.inline
+    def setLogs(value: Logs): Self = this.set("Logs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogs: Self = this.set("Logs", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: string*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: listOfString): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+  }
+  
 }
 

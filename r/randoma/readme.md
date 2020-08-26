@@ -12,7 +12,7 @@ User-friendly pseudorandom number generator (PRNG)
 | Keywords           | pseudorandom, number, generator, algorithm, random, integer, int, float, boolean, date, seed, seeded, prng, rng |
 | # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 21600 |
+| # downloads        | 22481 |
 | # stars            | 0 |
 
 ## Links

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 /* Inlined yog-log.yog-log.LEVELS[yog-log.yog-log.LevelInt] */
 /* Rewritten from type alias, can be one of: 
   - typings.yogLog.yogLogStrings.DEBUG
-  - typings.yogLog.yogLogStrings.WARNING
+  - typings.yogLog.yogLogStrings.ACCESS_ERROR
+  - typings.yogLog.yogLogStrings.FATAL
   - typings.yogLog.yogLogStrings.TRACE
   - typings.yogLog.yogLogStrings.ACCESS
-  - typings.yogLog.yogLogStrings.ACCESS_ERROR
+  - typings.yogLog.yogLogStrings.WARNING
   - typings.yogLog.yogLogStrings.NOTICE
-  - typings.yogLog.yogLogStrings.FATAL
 */
 trait LevelName extends js.Object
 

@@ -11,117 +11,170 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReactFocusLockProps[ChildrenType, LockProps] extends js.Object {
   /**
     * @deprecated Use persistentFocus=false instead
     * enables(or disables) text selection. This also allows not to have ANY focus.
     */
-  var allowTextSelection: js.UndefOr[Boolean] = js.undefined
+  var allowTextSelection: js.UndefOr[Boolean] = js.native
   /**
     * Component to use, defaults to 'div'
     */
-  var as: js.UndefOr[String | (ElementType[LockProps with ChildrenChildrenType[ChildrenType]])] = js.undefined
+  var as: js.UndefOr[String | (ElementType[LockProps with ChildrenChildrenType[ChildrenType]])] = js.native
   /**
     * enables or disables autoFocusing feature.
     * If enabled - will move focus inside Lock, selecting the first or autoFocusable element
     * If disable - will blur any focus on Lock activation.
     * @default true
     */
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var children: js.UndefOr[ChildrenType] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var children: js.UndefOr[ChildrenType] = js.native
+  var className: js.UndefOr[String] = js.native
   /**
     * enables aggressive focus capturing within iframes
     * - once disabled allows focus to move outside of iframe, if enabled inside iframe
     * - once enabled keep focus in the lock, no matter where lock is active (default)
     * @default true
     */
-  var crossFrame: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var crossFrame: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
   /**
     * named focus group for focus scattering aka combined lock targets
     */
-  var group: js.UndefOr[String] = js.undefined
-  var lockProps: js.UndefOr[LockProps] = js.undefined
+  var group: js.UndefOr[String] = js.native
+  var lockProps: js.UndefOr[LockProps] = js.native
   /**
     * disables hidden inputs before and after the lock.
     */
-  var noFocusGuards: js.UndefOr[Boolean | tail] = js.undefined
+  var noFocusGuards: js.UndefOr[Boolean | tail] = js.native
   /**
     * life-cycle hook, called on lock activation
     * @param node the observed node
     */
-  var onActivation: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
+  var onActivation: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
   /**
     * life-cycle hook, called on deactivation
     * @param node the observed node
     */
-  var onDeactivation: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
+  var onDeactivation: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
   /**
     * enables of disables "sticky" behavior, when any focusable element shall be focused.
     * This disallow any text selection on the page.
     * @default false
     */
-  var persistentFocus: js.UndefOr[Boolean] = js.undefined
-  var ref: js.UndefOr[Ref[HTMLElement]] = js.undefined
+  var persistentFocus: js.UndefOr[Boolean] = js.native
+  var ref: js.UndefOr[Ref[HTMLElement]] = js.native
   /**
     * if true, will return focus to the previous position on trap disable.
     * Optionally, can pass focus options instead of `true` to control the focus
     * more precisely (ie. `{ preventScroll: true }`)
     */
-  var returnFocus: js.UndefOr[Boolean | FocusOptions] = js.undefined
+  var returnFocus: js.UndefOr[Boolean | FocusOptions] = js.native
   /**
     * Shards forms a scattered lock, same as `group` does, but in more "low" and controlled way
     */
-  var shards: js.UndefOr[js.Array[RefObject[_] | HTMLElement]] = js.undefined
+  var shards: js.UndefOr[js.Array[RefObject[_] | HTMLElement]] = js.native
   /**
     * Controls focus lock working areas. Lock will silently ignore all the events from `not allowed` areas
     * @param activeElement
     * @returns {Boolean} true if focus lock should handle activeElement, false if not
     */
-  var whiteList: js.UndefOr[js.Function1[/* activeElement */ HTMLElement, Boolean]] = js.undefined
+  var whiteList: js.UndefOr[js.Function1[/* activeElement */ HTMLElement, Boolean]] = js.native
 }
 
 object ReactFocusLockProps {
   @scala.inline
-  def apply[ChildrenType, LockProps](
-    allowTextSelection: js.UndefOr[Boolean] = js.undefined,
-    as: String | (ElementType[LockProps with ChildrenChildrenType[ChildrenType]]) = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    children: ChildrenType = null,
-    className: String = null,
-    crossFrame: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    group: String = null,
-    lockProps: LockProps = null,
-    noFocusGuards: Boolean | tail = null,
-    onActivation: /* node */ HTMLElement => Unit = null,
-    onDeactivation: /* node */ HTMLElement => Unit = null,
-    persistentFocus: js.UndefOr[Boolean] = js.undefined,
-    ref: js.UndefOr[Null | Ref[HTMLElement]] = js.undefined,
-    returnFocus: Boolean | FocusOptions = null,
-    shards: js.Array[RefObject[_] | HTMLElement] = null,
-    whiteList: /* activeElement */ HTMLElement => Boolean = null
-  ): ReactFocusLockProps[ChildrenType, LockProps] = {
+  def apply[ChildrenType, LockProps](): ReactFocusLockProps[ChildrenType, LockProps] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowTextSelection)) __obj.updateDynamic("allowTextSelection")(allowTextSelection.get.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(crossFrame)) __obj.updateDynamic("crossFrame")(crossFrame.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (lockProps != null) __obj.updateDynamic("lockProps")(lockProps.asInstanceOf[js.Any])
-    if (noFocusGuards != null) __obj.updateDynamic("noFocusGuards")(noFocusGuards.asInstanceOf[js.Any])
-    if (onActivation != null) __obj.updateDynamic("onActivation")(js.Any.fromFunction1(onActivation))
-    if (onDeactivation != null) __obj.updateDynamic("onDeactivation")(js.Any.fromFunction1(onDeactivation))
-    if (!js.isUndefined(persistentFocus)) __obj.updateDynamic("persistentFocus")(persistentFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (returnFocus != null) __obj.updateDynamic("returnFocus")(returnFocus.asInstanceOf[js.Any])
-    if (shards != null) __obj.updateDynamic("shards")(shards.asInstanceOf[js.Any])
-    if (whiteList != null) __obj.updateDynamic("whiteList")(js.Any.fromFunction1(whiteList))
     __obj.asInstanceOf[ReactFocusLockProps[ChildrenType, LockProps]]
   }
+  @scala.inline
+  implicit class ReactFocusLockPropsOps[Self <: ReactFocusLockProps[_, _], ChildrenType, LockProps] (val x: Self with (ReactFocusLockProps[ChildrenType, LockProps])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowTextSelection(value: Boolean): Self = this.set("allowTextSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowTextSelection: Self = this.set("allowTextSelection", js.undefined)
+    @scala.inline
+    def setAs(value: String | (ElementType[LockProps with ChildrenChildrenType[ChildrenType]])): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setChildren(value: ChildrenType): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCrossFrame(value: Boolean): Self = this.set("crossFrame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossFrame: Self = this.set("crossFrame", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setLockProps(value: LockProps): Self = this.set("lockProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockProps: Self = this.set("lockProps", js.undefined)
+    @scala.inline
+    def setNoFocusGuards(value: Boolean | tail): Self = this.set("noFocusGuards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoFocusGuards: Self = this.set("noFocusGuards", js.undefined)
+    @scala.inline
+    def setOnActivation(value: /* node */ HTMLElement => Unit): Self = this.set("onActivation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnActivation: Self = this.set("onActivation", js.undefined)
+    @scala.inline
+    def setOnDeactivation(value: /* node */ HTMLElement => Unit): Self = this.set("onDeactivation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDeactivation: Self = this.set("onDeactivation", js.undefined)
+    @scala.inline
+    def setPersistentFocus(value: Boolean): Self = this.set("persistentFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersistentFocus: Self = this.set("persistentFocus", js.undefined)
+    @scala.inline
+    def setRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRef(value: Ref[HTMLElement]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setRefNull: Self = this.set("ref", null)
+    @scala.inline
+    def setReturnFocus(value: Boolean | FocusOptions): Self = this.set("returnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnFocus: Self = this.set("returnFocus", js.undefined)
+    @scala.inline
+    def setShardsVarargs(value: (RefObject[js.Any] | HTMLElement)*): Self = this.set("shards", js.Array(value :_*))
+    @scala.inline
+    def setShards(value: js.Array[RefObject[_] | HTMLElement]): Self = this.set("shards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShards: Self = this.set("shards", js.undefined)
+    @scala.inline
+    def setWhiteList(value: /* activeElement */ HTMLElement => Boolean): Self = this.set("whiteList", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteWhiteList: Self = this.set("whiteList", js.undefined)
+  }
+  
 }
 

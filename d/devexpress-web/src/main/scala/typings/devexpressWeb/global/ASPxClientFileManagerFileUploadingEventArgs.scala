@@ -17,20 +17,5 @@ class ASPxClientFileManagerFileUploadingEventArgs protected ()
     * @param fileName A string value that specifies the file name.
     */
   def this(folder: String, fileName: String) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets the name of a file selected for upload.
-    */
-  /* CompleteClass */
-  override var fileName: String = js.native
-  /**
-    * Gets the path to the folder where a file is being uploaded.
-    */
-  /* CompleteClass */
-  override var folder: String = js.native
 }
 

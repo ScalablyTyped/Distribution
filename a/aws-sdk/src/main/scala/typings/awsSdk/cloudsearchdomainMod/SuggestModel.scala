@@ -22,12 +22,36 @@ trait SuggestModel extends js.Object {
 
 object SuggestModel {
   @scala.inline
-  def apply(found: js.UndefOr[Long] = js.undefined, query: String = null, suggestions: Suggestions = null): SuggestModel = {
+  def apply(): SuggestModel = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(found)) __obj.updateDynamic("found")(found.get.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestModel]
   }
+  @scala.inline
+  implicit class SuggestModelOps[Self <: SuggestModel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFound(value: Long): Self = this.set("found", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFound: Self = this.set("found", js.undefined)
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setSuggestionsVarargs(value: SuggestionMatch*): Self = this.set("suggestions", js.Array(value :_*))
+    @scala.inline
+    def setSuggestions(value: Suggestions): Self = this.set("suggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestions: Self = this.set("suggestions", js.undefined)
+  }
+  
 }
 

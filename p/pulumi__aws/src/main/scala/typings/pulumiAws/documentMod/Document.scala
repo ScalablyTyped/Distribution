@@ -3,7 +3,6 @@ package typings.pulumiAws.documentMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.ssm.DocumentAttachmentsSource
 import typings.pulumiAws.outputMod.ssm.DocumentParameter
-import typings.pulumiAws.outputMod.ssm.DocumentPermissions
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -55,6 +54,10 @@ class Document protected () extends CustomResource {
     */
   val documentType: Output_[String] = js.native
   /**
+    * The document version.
+    */
+  val documentVersion: Output_[String] = js.native
+  /**
     * The sha1 or sha256 of the document content
     */
   val hash: Output_[String] = js.native
@@ -81,7 +84,7 @@ class Document protected () extends CustomResource {
   /**
     * Additional Permissions to attach to the document. See Permissions below for details.
     */
-  val permissions: Output_[js.UndefOr[DocumentPermissions]] = js.native
+  val permissions: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * A list of OS platforms compatible with this SSM document, either "Windows" or "Linux".
     */
@@ -95,9 +98,9 @@ class Document protected () extends CustomResource {
     */
   val status: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the object.
+    * A map of tags to assign to the object.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS Resource Types Reference (http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
     */
@@ -115,8 +118,10 @@ object Document extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Document = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Document = js.native
   def get(name: String, id: Input[ID], state: DocumentState): Document = js.native
   def get(name: String, id: Input[ID], state: DocumentState, opts: CustomResourceOptions): Document = js.native
   /**

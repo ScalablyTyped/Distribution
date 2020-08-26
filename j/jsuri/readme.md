@@ -12,7 +12,7 @@ Uri and query string manipulation
 | Keywords           | uri, url, query, path |
 | # releases         | 0 |
 | # dependents       | 39 |
-| # downloads        | 1465157 |
+| # downloads        | 1480225 |
 | # stars            | 2 |
 
 ## Links

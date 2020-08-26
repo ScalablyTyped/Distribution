@@ -30,20 +30,44 @@ trait DescribeEnvironmentMembershipsRequest extends js.Object {
 
 object DescribeEnvironmentMembershipsRequest {
   @scala.inline
-  def apply(
-    environmentId: EnvironmentId = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: String = null,
-    permissions: PermissionsList = null,
-    userArn: UserArn = null
-  ): DescribeEnvironmentMembershipsRequest = {
+  def apply(): DescribeEnvironmentMembershipsRequest = {
     val __obj = js.Dynamic.literal()
-    if (environmentId != null) __obj.updateDynamic("environmentId")(environmentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (userArn != null) __obj.updateDynamic("userArn")(userArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEnvironmentMembershipsRequest]
   }
+  @scala.inline
+  implicit class DescribeEnvironmentMembershipsRequestOps[Self <: DescribeEnvironmentMembershipsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnvironmentId(value: EnvironmentId): Self = this.set("environmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentId: Self = this.set("environmentId", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setPermissionsVarargs(value: Permissions*): Self = this.set("permissions", js.Array(value :_*))
+    @scala.inline
+    def setPermissions(value: PermissionsList): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setUserArn(value: UserArn): Self = this.set("userArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserArn: Self = this.set("userArn", js.undefined)
+  }
+  
 }
 

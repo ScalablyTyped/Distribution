@@ -1,149 +1,80 @@
 package typings.blessed.mod.Widgets
 
-import typings.blessed.anon.Ch
-import typings.blessed.blessedStrings.bg
 import typings.blessed.blessedStrings.block
-import typings.blessed.blessedStrings.bottom
-import typings.blessed.blessedStrings.center
-import typings.blessed.blessedStrings.left
 import typings.blessed.blessedStrings.line
-import typings.blessed.blessedStrings.middle
-import typings.blessed.blessedStrings.right
-import typings.blessed.blessedStrings.top
 import typings.blessed.blessedStrings.underline
-import typings.blessed.mod.Widgets.Types.TPosition
-import typings.blessed.mod.Widgets.Types.TTopLeft
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TerminalOptions extends BoxOptions {
   /**
     * args for shell.
     */
-  var args: js.UndefOr[js.Any] = js.undefined
+  var args: js.UndefOr[js.Any] = js.native
   /**
     * can be line, underline, and block.
     */
-  var cursor: js.UndefOr[line | underline | block] = js.undefined
+  var cursor: js.UndefOr[line | underline | block] = js.native
   /**
     * Object for process env.
     */
-  var env: js.UndefOr[js.Any] = js.undefined
+  var env: js.UndefOr[js.Any] = js.native
   /**
     * handler for input data.
     */
-  var handler: js.UndefOr[js.Function1[/* userInput */ Buffer, Unit]] = js.undefined
+  var handler: js.UndefOr[js.Function1[/* userInput */ Buffer, Unit]] = js.native
   /**
     * name of shell. $SHELL by default.
     */
-  var shell: js.UndefOr[String] = js.undefined
-  var terminal: js.UndefOr[String] = js.undefined
+  var shell: js.UndefOr[String] = js.native
+  var terminal: js.UndefOr[String] = js.native
 }
 
 object TerminalOptions {
   @scala.inline
-  def apply(
-    align: left | center | right = null,
-    alwaysScroll: js.UndefOr[Boolean] = js.undefined,
-    args: js.Any = null,
-    baseLimit: js.UndefOr[Double] = js.undefined,
-    bg: String = null,
-    bindings: js.Any = null,
-    bold: String = null,
-    border: Border | line | bg = null,
-    bottom: TPosition = null,
-    ch: String = null,
-    children: js.Array[Node] = null,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    content: String = null,
-    cursor: line | underline | block = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    env: js.Any = null,
-    fg: String = null,
-    focusable: js.UndefOr[Boolean] = js.undefined,
-    focused: BlessedElement = null,
-    handler: /* userInput */ Buffer => Unit = null,
-    height: Double | String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hoverText: String = null,
-    input: js.UndefOr[Boolean] = js.undefined,
-    keyable: js.UndefOr[Boolean] = js.undefined,
-    keys: String | js.Array[String] | Boolean = null,
-    label: String = null,
-    left: TTopLeft = null,
-    mouse: Boolean | js.Function0[Unit] = null,
-    name: String = null,
-    padding: Double | Padding = null,
-    parent: Node = null,
-    position: Position = null,
-    right: TPosition = null,
-    screen: Screen = null,
-    scrollable: js.UndefOr[Boolean] = js.undefined,
-    scrollbar: Ch = null,
-    shadow: js.UndefOr[Boolean] = js.undefined,
-    shell: String = null,
-    shrink: js.UndefOr[Boolean] = js.undefined,
-    style: js.Any = null,
-    tags: js.UndefOr[Boolean] = js.undefined,
-    terminal: String = null,
-    top: TTopLeft = null,
-    underline: String = null,
-    valign: top | middle | bottom = null,
-    vi: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String = null
-  ): TerminalOptions = {
+  def apply(): TerminalOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysScroll)) __obj.updateDynamic("alwaysScroll")(alwaysScroll.get.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(baseLimit)) __obj.updateDynamic("baseLimit")(baseLimit.get.asInstanceOf[js.Any])
-    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (bold != null) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (ch != null) __obj.updateDynamic("ch")(ch.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (fg != null) __obj.updateDynamic("fg")(fg.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
-    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (handler != null) __obj.updateDynamic("handler")(js.Any.fromFunction1(handler))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (hoverText != null) __obj.updateDynamic("hoverText")(hoverText.asInstanceOf[js.Any])
-    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyable)) __obj.updateDynamic("keyable")(keyable.get.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (mouse != null) __obj.updateDynamic("mouse")(mouse.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (screen != null) __obj.updateDynamic("screen")(screen.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.get.asInstanceOf[js.Any])
-    if (scrollbar != null) __obj.updateDynamic("scrollbar")(scrollbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.get.asInstanceOf[js.Any])
-    if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
-    if (!js.isUndefined(shrink)) __obj.updateDynamic("shrink")(shrink.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.get.asInstanceOf[js.Any])
-    if (terminal != null) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
-    if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
-    if (!js.isUndefined(vi)) __obj.updateDynamic("vi")(vi.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminalOptions]
   }
+  @scala.inline
+  implicit class TerminalOptionsOps[Self <: TerminalOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgs(value: js.Any): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setCursor(value: line | underline | block): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursor: Self = this.set("cursor", js.undefined)
+    @scala.inline
+    def setEnv(value: js.Any): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setHandler(value: /* userInput */ Buffer => Unit): Self = this.set("handler", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHandler: Self = this.set("handler", js.undefined)
+    @scala.inline
+    def setShell(value: String): Self = this.set("shell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShell: Self = this.set("shell", js.undefined)
+    @scala.inline
+    def setTerminal(value: String): Self = this.set("terminal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminal: Self = this.set("terminal", js.undefined)
+  }
+  
 }
 

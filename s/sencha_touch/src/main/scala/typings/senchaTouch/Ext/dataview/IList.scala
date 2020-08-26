@@ -5,91 +5,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IList extends IDataView {
   /** [Property] (Number) */
-  var bufferSize: js.UndefOr[Double] = js.undefined
+  var bufferSize: js.UndefOr[Double] = js.native
   /** [Config Option] (String) */
-  var disclosureProperty: js.UndefOr[String] = js.undefined
+  var disclosureProperty: js.UndefOr[String] = js.native
   /** [Method] Returns the value of disclosureProperty
     * @returns String
     */
-  var getDisclosureProperty: js.UndefOr[js.Function0[String]] = js.undefined
+  var getDisclosureProperty: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of grouped
     * @returns Boolean
     */
-  var getGrouped: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getGrouped: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of icon
     * @returns Object
     */
-  var getIcon: js.UndefOr[js.Function0[_]] = js.undefined
+  var getIcon: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of indexBar
     * @returns Boolean/Object
     */
-  var getIndexBar: js.UndefOr[js.Function0[_]] = js.undefined
+  var getIndexBar: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of infinite
     * @returns Boolean
     */
-  var getInfinite: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getInfinite: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of itemHeight
     * @returns Number
     */
-  var getItemHeight: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getItemHeight: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of minimumBufferDistance
     * @returns Number
     */
-  var getMinimumBufferDistance: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMinimumBufferDistance: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of onItemDisclosure
     * @returns Boolean/Function/Object
     */
-  var getOnItemDisclosure: js.UndefOr[js.Function0[_]] = js.undefined
+  var getOnItemDisclosure: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of pinHeaders
     * @returns Boolean
     */
-  var getPinHeaders: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getPinHeaders: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of preventSelectionOnDisclose
     * @returns Boolean
     */
-  var getPreventSelectionOnDisclose: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getPreventSelectionOnDisclose: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of refreshHeightOnUpdate
     * @returns Boolean
     */
-  var getRefreshHeightOnUpdate: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getRefreshHeightOnUpdate: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns all the items that are docked in the scroller in this list
     * @returns Array An array of the scrollDock items
     */
-  var getScrollDockedItems: js.UndefOr[js.Function0[Array]] = js.undefined
+  var getScrollDockedItems: js.UndefOr[js.Function0[Array]] = js.native
   /** [Method] Returns the value of striped
     * @returns Boolean
     */
-  var getStriped: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getStriped: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of useHeaders
     * @returns Boolean
     */
-  var getUseHeaders: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getUseHeaders: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of useSimpleItems
     * @returns Boolean
     */
-  var getUseSimpleItems: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getUseSimpleItems: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of variableHeights
     * @returns Boolean
     */
-  var getVariableHeights: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getVariableHeights: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Config Option] (Boolean) */
-  var grouped: js.UndefOr[Boolean] = js.undefined
+  var grouped: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean/Object) */
-  var indexBar: js.UndefOr[js.Any] = js.undefined
+  var indexBar: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean) */
-  var infinite: js.UndefOr[Boolean] = js.undefined
+  var infinite: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number) */
-  var itemHeight: js.UndefOr[Double] = js.undefined
+  var itemHeight: js.UndefOr[Double] = js.native
   /** [Config Option] (Boolean/Function/Object) */
-  var onItemDisclosure: js.UndefOr[js.Any] = js.undefined
+  var onItemDisclosure: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean) */
-  var pinHeaders: js.UndefOr[Boolean] = js.undefined
+  var pinHeaders: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var preventSelectionOnDisclose: js.UndefOr[Boolean] = js.undefined
+  var preventSelectionOnDisclose: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var refreshHeightOnUpdate: js.UndefOr[Boolean] = js.undefined
+  var refreshHeightOnUpdate: js.UndefOr[Boolean] = js.native
   /** [Method] Scrolls the list so that the specified record is at the top
     * @param record Object {Ext.data.Model} Record in the lists store to scroll to
     * @param animate Object {Boolean} Determines if scrolling is animated to a cut
@@ -102,173 +103,275 @@ trait IList extends IDataView {
       /* overscroll */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the value of disclosureProperty
     * @param disclosureProperty String The new value.
     */
-  var setDisclosureProperty: js.UndefOr[js.Function1[/* disclosureProperty */ js.UndefOr[String], Unit]] = js.undefined
+  var setDisclosureProperty: js.UndefOr[js.Function1[/* disclosureProperty */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of grouped
     * @param grouped Boolean The new value.
     */
-  var setGrouped: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setGrouped: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of icon
     * @param icon Object The new value.
     */
-  var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of indexBar
     * @param indexBar Boolean/Object The new value.
     */
-  var setIndexBar: js.UndefOr[js.Function1[/* indexBar */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setIndexBar: js.UndefOr[js.Function1[/* indexBar */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of infinite
     * @param infinite Boolean The new value.
     */
-  var setInfinite: js.UndefOr[js.Function1[/* infinite */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setInfinite: js.UndefOr[js.Function1[/* infinite */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of itemHeight
     * @param itemHeight Number The new value.
     */
-  var setItemHeight: js.UndefOr[js.Function1[/* itemHeight */ js.UndefOr[Double], Unit]] = js.undefined
+  var setItemHeight: js.UndefOr[js.Function1[/* itemHeight */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of minimumBufferDistance
     * @param minimumBufferDistance Number The new value.
     */
-  var setMinimumBufferDistance: js.UndefOr[js.Function1[/* minimumBufferDistance */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMinimumBufferDistance: js.UndefOr[js.Function1[/* minimumBufferDistance */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of onItemDisclosure
     * @param onItemDisclosure Boolean/Function/Object The new value.
     */
-  var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of pinHeaders
     * @param pinHeaders Boolean The new value.
     */
-  var setPinHeaders: js.UndefOr[js.Function1[/* pinHeaders */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setPinHeaders: js.UndefOr[js.Function1[/* pinHeaders */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of preventSelectionOnDisclose
     * @param preventSelectionOnDisclose Boolean The new value.
     */
-  var setPreventSelectionOnDisclose: js.UndefOr[js.Function1[/* preventSelectionOnDisclose */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setPreventSelectionOnDisclose: js.UndefOr[js.Function1[/* preventSelectionOnDisclose */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of refreshHeightOnUpdate
     * @param refreshHeightOnUpdate Boolean The new value.
     */
-  var setRefreshHeightOnUpdate: js.UndefOr[js.Function1[/* refreshHeightOnUpdate */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setRefreshHeightOnUpdate: js.UndefOr[js.Function1[/* refreshHeightOnUpdate */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of striped
     * @param striped Boolean The new value.
     */
-  var setStriped: js.UndefOr[js.Function1[/* striped */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setStriped: js.UndefOr[js.Function1[/* striped */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of useHeaders
     * @param useHeaders Boolean The new value.
     */
-  var setUseHeaders: js.UndefOr[js.Function1[/* useHeaders */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setUseHeaders: js.UndefOr[js.Function1[/* useHeaders */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of useSimpleItems
     * @param useSimpleItems Boolean The new value.
     */
-  var setUseSimpleItems: js.UndefOr[js.Function1[/* useSimpleItems */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setUseSimpleItems: js.UndefOr[js.Function1[/* useSimpleItems */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of variableHeights
     * @param variableHeights Boolean The new value.
     */
-  var setVariableHeights: js.UndefOr[js.Function1[/* variableHeights */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setVariableHeights: js.UndefOr[js.Function1[/* variableHeights */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Config Option] (Boolean) */
-  var striped: js.UndefOr[Boolean] = js.undefined
+  var striped: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var useSimpleItems: js.UndefOr[Boolean] = js.undefined
+  var useSimpleItems: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var variableHeights: js.UndefOr[Boolean] = js.undefined
+  var variableHeights: js.UndefOr[Boolean] = js.native
 }
 
 object IList {
   @scala.inline
-  def apply(
-    IDataView: IDataView = null,
-    bufferSize: js.UndefOr[Double] = js.undefined,
-    disclosureProperty: String = null,
-    getDisclosureProperty: () => String = null,
-    getGrouped: () => Boolean = null,
-    getIcon: () => _ = null,
-    getIndexBar: () => _ = null,
-    getInfinite: () => Boolean = null,
-    getItemHeight: () => Double = null,
-    getMinimumBufferDistance: () => Double = null,
-    getOnItemDisclosure: () => _ = null,
-    getPinHeaders: () => Boolean = null,
-    getPreventSelectionOnDisclose: () => Boolean = null,
-    getRefreshHeightOnUpdate: () => Boolean = null,
-    getScrollDockedItems: () => Array = null,
-    getStriped: () => Boolean = null,
-    getUseHeaders: () => Boolean = null,
-    getUseSimpleItems: () => Boolean = null,
-    getVariableHeights: () => Boolean = null,
-    grouped: js.UndefOr[Boolean] = js.undefined,
-    indexBar: js.Any = null,
-    infinite: js.UndefOr[Boolean] = js.undefined,
-    itemHeight: js.UndefOr[Double] = js.undefined,
-    onItemDisclosure: js.Any = null,
-    pinHeaders: js.UndefOr[Boolean] = js.undefined,
-    preventSelectionOnDisclose: js.UndefOr[Boolean] = js.undefined,
-    refreshHeightOnUpdate: js.UndefOr[Boolean] = js.undefined,
-    scrollToRecord: (/* record */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* overscroll */ js.UndefOr[js.Any]) => Unit = null,
-    setDisclosureProperty: /* disclosureProperty */ js.UndefOr[String] => Unit = null,
-    setGrouped: /* grouped */ js.UndefOr[Boolean] => Unit = null,
-    setIcon: /* icon */ js.UndefOr[js.Any] => Unit = null,
-    setIndexBar: /* indexBar */ js.UndefOr[js.Any] => Unit = null,
-    setInfinite: /* infinite */ js.UndefOr[Boolean] => Unit = null,
-    setItemHeight: /* itemHeight */ js.UndefOr[Double] => Unit = null,
-    setMinimumBufferDistance: /* minimumBufferDistance */ js.UndefOr[Double] => Unit = null,
-    setOnItemDisclosure: /* onItemDisclosure */ js.UndefOr[js.Any] => Unit = null,
-    setPinHeaders: /* pinHeaders */ js.UndefOr[Boolean] => Unit = null,
-    setPreventSelectionOnDisclose: /* preventSelectionOnDisclose */ js.UndefOr[Boolean] => Unit = null,
-    setRefreshHeightOnUpdate: /* refreshHeightOnUpdate */ js.UndefOr[Boolean] => Unit = null,
-    setStriped: /* striped */ js.UndefOr[Boolean] => Unit = null,
-    setUseHeaders: /* useHeaders */ js.UndefOr[Boolean] => Unit = null,
-    setUseSimpleItems: /* useSimpleItems */ js.UndefOr[Boolean] => Unit = null,
-    setVariableHeights: /* variableHeights */ js.UndefOr[Boolean] => Unit = null,
-    striped: js.UndefOr[Boolean] = js.undefined,
-    useSimpleItems: js.UndefOr[Boolean] = js.undefined,
-    variableHeights: js.UndefOr[Boolean] = js.undefined
-  ): IList = {
+  def apply(): IList = {
     val __obj = js.Dynamic.literal()
-    if (IDataView != null) js.Dynamic.global.Object.assign(__obj, IDataView)
-    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize.get.asInstanceOf[js.Any])
-    if (disclosureProperty != null) __obj.updateDynamic("disclosureProperty")(disclosureProperty.asInstanceOf[js.Any])
-    if (getDisclosureProperty != null) __obj.updateDynamic("getDisclosureProperty")(js.Any.fromFunction0(getDisclosureProperty))
-    if (getGrouped != null) __obj.updateDynamic("getGrouped")(js.Any.fromFunction0(getGrouped))
-    if (getIcon != null) __obj.updateDynamic("getIcon")(js.Any.fromFunction0(getIcon))
-    if (getIndexBar != null) __obj.updateDynamic("getIndexBar")(js.Any.fromFunction0(getIndexBar))
-    if (getInfinite != null) __obj.updateDynamic("getInfinite")(js.Any.fromFunction0(getInfinite))
-    if (getItemHeight != null) __obj.updateDynamic("getItemHeight")(js.Any.fromFunction0(getItemHeight))
-    if (getMinimumBufferDistance != null) __obj.updateDynamic("getMinimumBufferDistance")(js.Any.fromFunction0(getMinimumBufferDistance))
-    if (getOnItemDisclosure != null) __obj.updateDynamic("getOnItemDisclosure")(js.Any.fromFunction0(getOnItemDisclosure))
-    if (getPinHeaders != null) __obj.updateDynamic("getPinHeaders")(js.Any.fromFunction0(getPinHeaders))
-    if (getPreventSelectionOnDisclose != null) __obj.updateDynamic("getPreventSelectionOnDisclose")(js.Any.fromFunction0(getPreventSelectionOnDisclose))
-    if (getRefreshHeightOnUpdate != null) __obj.updateDynamic("getRefreshHeightOnUpdate")(js.Any.fromFunction0(getRefreshHeightOnUpdate))
-    if (getScrollDockedItems != null) __obj.updateDynamic("getScrollDockedItems")(js.Any.fromFunction0(getScrollDockedItems))
-    if (getStriped != null) __obj.updateDynamic("getStriped")(js.Any.fromFunction0(getStriped))
-    if (getUseHeaders != null) __obj.updateDynamic("getUseHeaders")(js.Any.fromFunction0(getUseHeaders))
-    if (getUseSimpleItems != null) __obj.updateDynamic("getUseSimpleItems")(js.Any.fromFunction0(getUseSimpleItems))
-    if (getVariableHeights != null) __obj.updateDynamic("getVariableHeights")(js.Any.fromFunction0(getVariableHeights))
-    if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped.get.asInstanceOf[js.Any])
-    if (indexBar != null) __obj.updateDynamic("indexBar")(indexBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemHeight)) __obj.updateDynamic("itemHeight")(itemHeight.get.asInstanceOf[js.Any])
-    if (onItemDisclosure != null) __obj.updateDynamic("onItemDisclosure")(onItemDisclosure.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinHeaders)) __obj.updateDynamic("pinHeaders")(pinHeaders.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventSelectionOnDisclose)) __obj.updateDynamic("preventSelectionOnDisclose")(preventSelectionOnDisclose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshHeightOnUpdate)) __obj.updateDynamic("refreshHeightOnUpdate")(refreshHeightOnUpdate.get.asInstanceOf[js.Any])
-    if (scrollToRecord != null) __obj.updateDynamic("scrollToRecord")(js.Any.fromFunction3(scrollToRecord))
-    if (setDisclosureProperty != null) __obj.updateDynamic("setDisclosureProperty")(js.Any.fromFunction1(setDisclosureProperty))
-    if (setGrouped != null) __obj.updateDynamic("setGrouped")(js.Any.fromFunction1(setGrouped))
-    if (setIcon != null) __obj.updateDynamic("setIcon")(js.Any.fromFunction1(setIcon))
-    if (setIndexBar != null) __obj.updateDynamic("setIndexBar")(js.Any.fromFunction1(setIndexBar))
-    if (setInfinite != null) __obj.updateDynamic("setInfinite")(js.Any.fromFunction1(setInfinite))
-    if (setItemHeight != null) __obj.updateDynamic("setItemHeight")(js.Any.fromFunction1(setItemHeight))
-    if (setMinimumBufferDistance != null) __obj.updateDynamic("setMinimumBufferDistance")(js.Any.fromFunction1(setMinimumBufferDistance))
-    if (setOnItemDisclosure != null) __obj.updateDynamic("setOnItemDisclosure")(js.Any.fromFunction1(setOnItemDisclosure))
-    if (setPinHeaders != null) __obj.updateDynamic("setPinHeaders")(js.Any.fromFunction1(setPinHeaders))
-    if (setPreventSelectionOnDisclose != null) __obj.updateDynamic("setPreventSelectionOnDisclose")(js.Any.fromFunction1(setPreventSelectionOnDisclose))
-    if (setRefreshHeightOnUpdate != null) __obj.updateDynamic("setRefreshHeightOnUpdate")(js.Any.fromFunction1(setRefreshHeightOnUpdate))
-    if (setStriped != null) __obj.updateDynamic("setStriped")(js.Any.fromFunction1(setStriped))
-    if (setUseHeaders != null) __obj.updateDynamic("setUseHeaders")(js.Any.fromFunction1(setUseHeaders))
-    if (setUseSimpleItems != null) __obj.updateDynamic("setUseSimpleItems")(js.Any.fromFunction1(setUseSimpleItems))
-    if (setVariableHeights != null) __obj.updateDynamic("setVariableHeights")(js.Any.fromFunction1(setVariableHeights))
-    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSimpleItems)) __obj.updateDynamic("useSimpleItems")(useSimpleItems.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(variableHeights)) __obj.updateDynamic("variableHeights")(variableHeights.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IList]
   }
+  @scala.inline
+  implicit class IListOps[Self <: IList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBufferSize(value: Double): Self = this.set("bufferSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferSize: Self = this.set("bufferSize", js.undefined)
+    @scala.inline
+    def setDisclosureProperty(value: String): Self = this.set("disclosureProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisclosureProperty: Self = this.set("disclosureProperty", js.undefined)
+    @scala.inline
+    def setGetDisclosureProperty(value: () => String): Self = this.set("getDisclosureProperty", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDisclosureProperty: Self = this.set("getDisclosureProperty", js.undefined)
+    @scala.inline
+    def setGetGrouped(value: () => Boolean): Self = this.set("getGrouped", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetGrouped: Self = this.set("getGrouped", js.undefined)
+    @scala.inline
+    def setGetIcon(value: () => _): Self = this.set("getIcon", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetIcon: Self = this.set("getIcon", js.undefined)
+    @scala.inline
+    def setGetIndexBar(value: () => _): Self = this.set("getIndexBar", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetIndexBar: Self = this.set("getIndexBar", js.undefined)
+    @scala.inline
+    def setGetInfinite(value: () => Boolean): Self = this.set("getInfinite", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetInfinite: Self = this.set("getInfinite", js.undefined)
+    @scala.inline
+    def setGetItemHeight(value: () => Double): Self = this.set("getItemHeight", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetItemHeight: Self = this.set("getItemHeight", js.undefined)
+    @scala.inline
+    def setGetMinimumBufferDistance(value: () => Double): Self = this.set("getMinimumBufferDistance", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMinimumBufferDistance: Self = this.set("getMinimumBufferDistance", js.undefined)
+    @scala.inline
+    def setGetOnItemDisclosure(value: () => _): Self = this.set("getOnItemDisclosure", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetOnItemDisclosure: Self = this.set("getOnItemDisclosure", js.undefined)
+    @scala.inline
+    def setGetPinHeaders(value: () => Boolean): Self = this.set("getPinHeaders", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPinHeaders: Self = this.set("getPinHeaders", js.undefined)
+    @scala.inline
+    def setGetPreventSelectionOnDisclose(value: () => Boolean): Self = this.set("getPreventSelectionOnDisclose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPreventSelectionOnDisclose: Self = this.set("getPreventSelectionOnDisclose", js.undefined)
+    @scala.inline
+    def setGetRefreshHeightOnUpdate(value: () => Boolean): Self = this.set("getRefreshHeightOnUpdate", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRefreshHeightOnUpdate: Self = this.set("getRefreshHeightOnUpdate", js.undefined)
+    @scala.inline
+    def setGetScrollDockedItems(value: () => Array): Self = this.set("getScrollDockedItems", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetScrollDockedItems: Self = this.set("getScrollDockedItems", js.undefined)
+    @scala.inline
+    def setGetStriped(value: () => Boolean): Self = this.set("getStriped", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetStriped: Self = this.set("getStriped", js.undefined)
+    @scala.inline
+    def setGetUseHeaders(value: () => Boolean): Self = this.set("getUseHeaders", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetUseHeaders: Self = this.set("getUseHeaders", js.undefined)
+    @scala.inline
+    def setGetUseSimpleItems(value: () => Boolean): Self = this.set("getUseSimpleItems", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetUseSimpleItems: Self = this.set("getUseSimpleItems", js.undefined)
+    @scala.inline
+    def setGetVariableHeights(value: () => Boolean): Self = this.set("getVariableHeights", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetVariableHeights: Self = this.set("getVariableHeights", js.undefined)
+    @scala.inline
+    def setGrouped(value: Boolean): Self = this.set("grouped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrouped: Self = this.set("grouped", js.undefined)
+    @scala.inline
+    def setIndexBar(value: js.Any): Self = this.set("indexBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexBar: Self = this.set("indexBar", js.undefined)
+    @scala.inline
+    def setInfinite(value: Boolean): Self = this.set("infinite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfinite: Self = this.set("infinite", js.undefined)
+    @scala.inline
+    def setItemHeight(value: Double): Self = this.set("itemHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemHeight: Self = this.set("itemHeight", js.undefined)
+    @scala.inline
+    def setOnItemDisclosure(value: js.Any): Self = this.set("onItemDisclosure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnItemDisclosure: Self = this.set("onItemDisclosure", js.undefined)
+    @scala.inline
+    def setPinHeaders(value: Boolean): Self = this.set("pinHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinHeaders: Self = this.set("pinHeaders", js.undefined)
+    @scala.inline
+    def setPreventSelectionOnDisclose(value: Boolean): Self = this.set("preventSelectionOnDisclose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreventSelectionOnDisclose: Self = this.set("preventSelectionOnDisclose", js.undefined)
+    @scala.inline
+    def setRefreshHeightOnUpdate(value: Boolean): Self = this.set("refreshHeightOnUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshHeightOnUpdate: Self = this.set("refreshHeightOnUpdate", js.undefined)
+    @scala.inline
+    def setScrollToRecord(
+      value: (/* record */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* overscroll */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("scrollToRecord", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteScrollToRecord: Self = this.set("scrollToRecord", js.undefined)
+    @scala.inline
+    def setSetDisclosureProperty(value: /* disclosureProperty */ js.UndefOr[String] => Unit): Self = this.set("setDisclosureProperty", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDisclosureProperty: Self = this.set("setDisclosureProperty", js.undefined)
+    @scala.inline
+    def setSetGrouped(value: /* grouped */ js.UndefOr[Boolean] => Unit): Self = this.set("setGrouped", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetGrouped: Self = this.set("setGrouped", js.undefined)
+    @scala.inline
+    def setSetIcon(value: /* icon */ js.UndefOr[js.Any] => Unit): Self = this.set("setIcon", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetIcon: Self = this.set("setIcon", js.undefined)
+    @scala.inline
+    def setSetIndexBar(value: /* indexBar */ js.UndefOr[js.Any] => Unit): Self = this.set("setIndexBar", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetIndexBar: Self = this.set("setIndexBar", js.undefined)
+    @scala.inline
+    def setSetInfinite(value: /* infinite */ js.UndefOr[Boolean] => Unit): Self = this.set("setInfinite", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetInfinite: Self = this.set("setInfinite", js.undefined)
+    @scala.inline
+    def setSetItemHeight(value: /* itemHeight */ js.UndefOr[Double] => Unit): Self = this.set("setItemHeight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetItemHeight: Self = this.set("setItemHeight", js.undefined)
+    @scala.inline
+    def setSetMinimumBufferDistance(value: /* minimumBufferDistance */ js.UndefOr[Double] => Unit): Self = this.set("setMinimumBufferDistance", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinimumBufferDistance: Self = this.set("setMinimumBufferDistance", js.undefined)
+    @scala.inline
+    def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[js.Any] => Unit): Self = this.set("setOnItemDisclosure", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetOnItemDisclosure: Self = this.set("setOnItemDisclosure", js.undefined)
+    @scala.inline
+    def setSetPinHeaders(value: /* pinHeaders */ js.UndefOr[Boolean] => Unit): Self = this.set("setPinHeaders", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetPinHeaders: Self = this.set("setPinHeaders", js.undefined)
+    @scala.inline
+    def setSetPreventSelectionOnDisclose(value: /* preventSelectionOnDisclose */ js.UndefOr[Boolean] => Unit): Self = this.set("setPreventSelectionOnDisclose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetPreventSelectionOnDisclose: Self = this.set("setPreventSelectionOnDisclose", js.undefined)
+    @scala.inline
+    def setSetRefreshHeightOnUpdate(value: /* refreshHeightOnUpdate */ js.UndefOr[Boolean] => Unit): Self = this.set("setRefreshHeightOnUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetRefreshHeightOnUpdate: Self = this.set("setRefreshHeightOnUpdate", js.undefined)
+    @scala.inline
+    def setSetStriped(value: /* striped */ js.UndefOr[Boolean] => Unit): Self = this.set("setStriped", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetStriped: Self = this.set("setStriped", js.undefined)
+    @scala.inline
+    def setSetUseHeaders(value: /* useHeaders */ js.UndefOr[Boolean] => Unit): Self = this.set("setUseHeaders", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetUseHeaders: Self = this.set("setUseHeaders", js.undefined)
+    @scala.inline
+    def setSetUseSimpleItems(value: /* useSimpleItems */ js.UndefOr[Boolean] => Unit): Self = this.set("setUseSimpleItems", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetUseSimpleItems: Self = this.set("setUseSimpleItems", js.undefined)
+    @scala.inline
+    def setSetVariableHeights(value: /* variableHeights */ js.UndefOr[Boolean] => Unit): Self = this.set("setVariableHeights", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetVariableHeights: Self = this.set("setVariableHeights", js.undefined)
+    @scala.inline
+    def setStriped(value: Boolean): Self = this.set("striped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStriped: Self = this.set("striped", js.undefined)
+    @scala.inline
+    def setUseSimpleItems(value: Boolean): Self = this.set("useSimpleItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseSimpleItems: Self = this.set("useSimpleItems", js.undefined)
+    @scala.inline
+    def setVariableHeights(value: Boolean): Self = this.set("variableHeights", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariableHeights: Self = this.set("variableHeights", js.undefined)
+  }
+  
 }
 

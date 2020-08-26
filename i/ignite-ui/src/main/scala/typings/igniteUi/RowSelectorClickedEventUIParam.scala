@@ -4,57 +4,84 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RowSelectorClickedEventUIParam extends js.Object {
   /**
     * Gets reference to the fixed row the clicked row selector resides in(if there are fixed columns).
     */
-  var fixedRow: js.UndefOr[String] = js.undefined
+  var fixedRow: js.UndefOr[String] = js.native
   /**
     * Gets a reference to the grid the RowSelectors are initialized for.
     */
-  var grid: js.UndefOr[js.Any] = js.undefined
+  var grid: js.UndefOr[js.Any] = js.native
   /**
     * Gets reference to RowSelectors.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[js.Any] = js.native
   /**
     * Gets reference to the row the clicked row selector resides in.
     */
-  var row: js.UndefOr[String] = js.undefined
+  var row: js.UndefOr[String] = js.native
   /**
     * Gets the index of the row the clicked row selector resides in.
     */
-  var rowIndex: js.UndefOr[Double] = js.undefined
+  var rowIndex: js.UndefOr[Double] = js.native
   /**
     * Gets the key of the row the clicked row selector resides in.
     */
-  var rowKey: js.UndefOr[String] = js.undefined
+  var rowKey: js.UndefOr[String] = js.native
   /**
     * Gets a reference to the row selector cell.
     */
-  var rowSelector: js.UndefOr[String] = js.undefined
+  var rowSelector: js.UndefOr[String] = js.native
 }
 
 object RowSelectorClickedEventUIParam {
   @scala.inline
-  def apply(
-    fixedRow: String = null,
-    grid: js.Any = null,
-    owner: js.Any = null,
-    row: String = null,
-    rowIndex: js.UndefOr[Double] = js.undefined,
-    rowKey: String = null,
-    rowSelector: String = null
-  ): RowSelectorClickedEventUIParam = {
+  def apply(): RowSelectorClickedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (fixedRow != null) __obj.updateDynamic("fixedRow")(fixedRow.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
-    if (rowSelector != null) __obj.updateDynamic("rowSelector")(rowSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowSelectorClickedEventUIParam]
   }
+  @scala.inline
+  implicit class RowSelectorClickedEventUIParamOps[Self <: RowSelectorClickedEventUIParam] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFixedRow(value: String): Self = this.set("fixedRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedRow: Self = this.set("fixedRow", js.undefined)
+    @scala.inline
+    def setGrid(value: js.Any): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setRow(value: String): Self = this.set("row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRow: Self = this.set("row", js.undefined)
+    @scala.inline
+    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    @scala.inline
+    def setRowKey(value: String): Self = this.set("rowKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowKey: Self = this.set("rowKey", js.undefined)
+    @scala.inline
+    def setRowSelector(value: String): Self = this.set("rowSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowSelector: Self = this.set("rowSelector", js.undefined)
+  }
+  
 }
 

@@ -34,22 +34,46 @@ trait MedicalTranscriptionSetting extends js.Object {
 
 object MedicalTranscriptionSetting {
   @scala.inline
-  def apply(
-    ChannelIdentification: js.UndefOr[Boolean] = js.undefined,
-    MaxAlternatives: js.UndefOr[MaxAlternatives] = js.undefined,
-    MaxSpeakerLabels: js.UndefOr[MaxSpeakers] = js.undefined,
-    ShowAlternatives: js.UndefOr[Boolean] = js.undefined,
-    ShowSpeakerLabels: js.UndefOr[Boolean] = js.undefined,
-    VocabularyName: VocabularyName = null
-  ): MedicalTranscriptionSetting = {
+  def apply(): MedicalTranscriptionSetting = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ChannelIdentification)) __obj.updateDynamic("ChannelIdentification")(ChannelIdentification.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxAlternatives)) __obj.updateDynamic("MaxAlternatives")(MaxAlternatives.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxSpeakerLabels)) __obj.updateDynamic("MaxSpeakerLabels")(MaxSpeakerLabels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowAlternatives)) __obj.updateDynamic("ShowAlternatives")(ShowAlternatives.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowSpeakerLabels)) __obj.updateDynamic("ShowSpeakerLabels")(ShowSpeakerLabels.get.asInstanceOf[js.Any])
-    if (VocabularyName != null) __obj.updateDynamic("VocabularyName")(VocabularyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MedicalTranscriptionSetting]
   }
+  @scala.inline
+  implicit class MedicalTranscriptionSettingOps[Self <: MedicalTranscriptionSetting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelIdentification(value: Boolean): Self = this.set("ChannelIdentification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelIdentification: Self = this.set("ChannelIdentification", js.undefined)
+    @scala.inline
+    def setMaxAlternatives(value: MaxAlternatives): Self = this.set("MaxAlternatives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAlternatives: Self = this.set("MaxAlternatives", js.undefined)
+    @scala.inline
+    def setMaxSpeakerLabels(value: MaxSpeakers): Self = this.set("MaxSpeakerLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSpeakerLabels: Self = this.set("MaxSpeakerLabels", js.undefined)
+    @scala.inline
+    def setShowAlternatives(value: Boolean): Self = this.set("ShowAlternatives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAlternatives: Self = this.set("ShowAlternatives", js.undefined)
+    @scala.inline
+    def setShowSpeakerLabels(value: Boolean): Self = this.set("ShowSpeakerLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSpeakerLabels: Self = this.set("ShowSpeakerLabels", js.undefined)
+    @scala.inline
+    def setVocabularyName(value: VocabularyName): Self = this.set("VocabularyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVocabularyName: Self = this.set("VocabularyName", js.undefined)
+  }
+  
 }
 

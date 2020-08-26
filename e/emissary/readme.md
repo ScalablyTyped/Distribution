@@ -11,7 +11,7 @@ Utility mixins for subscribing to and emitting events.
 | Keywords           | event-emitter, events, subscribe, subscriber |
 | # releases         | 0 |
 | # dependents       | 34 |
-| # downloads        | 2304199 |
+| # downloads        | 2255383 |
 | # stars            | 0 |
 
 ## Links

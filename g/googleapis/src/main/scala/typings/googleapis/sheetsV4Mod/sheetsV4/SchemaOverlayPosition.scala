@@ -35,20 +35,42 @@ trait SchemaOverlayPosition extends js.Object {
 
 object SchemaOverlayPosition {
   @scala.inline
-  def apply(
-    anchorCell: SchemaGridCoordinate = null,
-    heightPixels: js.UndefOr[Double] = js.undefined,
-    offsetXPixels: js.UndefOr[Double] = js.undefined,
-    offsetYPixels: js.UndefOr[Double] = js.undefined,
-    widthPixels: js.UndefOr[Double] = js.undefined
-  ): SchemaOverlayPosition = {
+  def apply(): SchemaOverlayPosition = {
     val __obj = js.Dynamic.literal()
-    if (anchorCell != null) __obj.updateDynamic("anchorCell")(anchorCell.asInstanceOf[js.Any])
-    if (!js.isUndefined(heightPixels)) __obj.updateDynamic("heightPixels")(heightPixels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetXPixels)) __obj.updateDynamic("offsetXPixels")(offsetXPixels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetYPixels)) __obj.updateDynamic("offsetYPixels")(offsetYPixels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(widthPixels)) __obj.updateDynamic("widthPixels")(widthPixels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOverlayPosition]
   }
+  @scala.inline
+  implicit class SchemaOverlayPositionOps[Self <: SchemaOverlayPosition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnchorCell(value: SchemaGridCoordinate): Self = this.set("anchorCell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorCell: Self = this.set("anchorCell", js.undefined)
+    @scala.inline
+    def setHeightPixels(value: Double): Self = this.set("heightPixels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeightPixels: Self = this.set("heightPixels", js.undefined)
+    @scala.inline
+    def setOffsetXPixels(value: Double): Self = this.set("offsetXPixels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetXPixels: Self = this.set("offsetXPixels", js.undefined)
+    @scala.inline
+    def setOffsetYPixels(value: Double): Self = this.set("offsetYPixels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetYPixels: Self = this.set("offsetYPixels", js.undefined)
+    @scala.inline
+    def setWidthPixels(value: Double): Self = this.set("widthPixels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidthPixels: Self = this.set("widthPixels", js.undefined)
+  }
+  
 }
 

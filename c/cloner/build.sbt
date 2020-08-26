@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cloner"
-version := "0.4-dt-20180501Z-dfb2a5"
-scalaVersion := "2.13.2"
+version := "0.4-dt-20180501Z-bf171b"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -12,6 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CollectionProps
   extends /**
   * PLEASE NOTE
@@ -21,16 +22,16 @@ trait CollectionProps
   * https://github.com/bvaughn/react-virtualized#pass-thru-props
   */
 /* key */ StringDictionary[js.Any] {
-  var `aria-label`: js.UndefOr[String] = js.undefined
+  var `aria-label`: js.UndefOr[String] = js.native
   /**
     * Outer height of Collection is set to "auto". This property should only be
     * used in conjunction with the WindowScroller HOC.
     */
-  var autoHeight: js.UndefOr[Boolean] = js.undefined
+  var autoHeight: js.UndefOr[Boolean] = js.native
   /**
     * Number of cells in Collection.
     */
-  var cellCount: Double
+  var cellCount: Double = js.native
   /**
     * Responsible for rendering a group of cells given their indices.
     * Should implement the following interface: ({
@@ -39,42 +40,42 @@ trait CollectionProps
     *   cellRenderer: Function
     * }): Array<PropTypes.node>
     */
-  var cellGroupRenderer: js.UndefOr[CollectionCellGroupRenderer] = js.undefined
+  var cellGroupRenderer: js.UndefOr[CollectionCellGroupRenderer] = js.native
   /**
     * Responsible for rendering a cell given an row and column index.
     * Should implement the following interface: ({ index: number, key: string, style: object }): PropTypes.element
     */
-  var cellRenderer: CollectionCellRenderer
+  var cellRenderer: CollectionCellRenderer = js.native
   /**
     * Callback responsible for returning size and offset/position information for a given cell (index).
     * ({ index: number }): { height: number, width: number, x: number, y: number }
     */
-  var cellSizeAndPositionGetter: CollectionCellSizeAndPositionGetter
+  var cellSizeAndPositionGetter: CollectionCellSizeAndPositionGetter = js.native
   /**
     * Optional custom CSS class name to attach to root Collection element.
     */
-  var className: js.UndefOr[String] = js.undefined
-  var height: Double
-  var horizontalOverscanSize: js.UndefOr[Double] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var height: Double = js.native
+  var horizontalOverscanSize: js.UndefOr[Double] = js.native
   /**
     * Optional custom id to attach to root Collection element.
     */
-  var id: js.UndefOr[String] = js.undefined
-  var noContentRenderer: js.UndefOr[js.Function0[Element]] = js.undefined
+  var id: js.UndefOr[String] = js.native
+  var noContentRenderer: js.UndefOr[js.Function0[Element]] = js.native
   /**
     * Callback invoked whenever the scroll offset changes within the inner
     * scrollable region: ({ clientHeight, clientWidth, scrollHeight, scrollLeft, scrollTop, scrollWidth }): void
     */
-  var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, _]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, _]] = js.native
   /**
     * Callback invoked with information about the section of the Collection
     * that was just rendered: ({ indices: Array<number> }): void
     */
-  var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, _]] = js.undefined
+  var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, _]] = js.native
   /**
     * Horizontal offset
     */
-  var scrollLeft: js.UndefOr[Double] = js.undefined
+  var scrollLeft: js.UndefOr[Double] = js.native
   /**
     * Controls the alignment of scrolled-to-cells. The default ("auto") scrolls
     * the least amount possible to ensure that the specified cell is fully
@@ -82,26 +83,26 @@ trait CollectionProps
     * Collection and "end" to align them bottom/right. Use "center" to align
     * specified cell in the middle of container.
     */
-  var scrollToAlignment: js.UndefOr[Alignment] = js.undefined
-  var scrollToCell: js.UndefOr[Double] = js.undefined
+  var scrollToAlignment: js.UndefOr[Alignment] = js.native
+  var scrollToCell: js.UndefOr[Double] = js.native
   /**
     * Vertical Offset
     */
-  var scrollTop: js.UndefOr[Double] = js.undefined
+  var scrollTop: js.UndefOr[Double] = js.native
   /**
     * Optionally override the size of the sections a Collection's cells are split into.
     */
-  var sectionSize: js.UndefOr[Double] = js.undefined
+  var sectionSize: js.UndefOr[Double] = js.native
   /**
     * Optional custom inline style to attach to root Collection element.
     */
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var verticalOverscanSize: js.UndefOr[Double] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.native
+  var verticalOverscanSize: js.UndefOr[Double] = js.native
   /**
     * Width of Collection; this property determines the number of visible
     * (vs virtualized) columns.
     */
-  var width: Double
+  var width: Double = js.native
 }
 
 object CollectionProps {
@@ -111,44 +112,97 @@ object CollectionProps {
     cellRenderer: /* params */ CollectionCellRendererParams => ReactNode,
     cellSizeAndPositionGetter: /* params */ Index => CollectionCellSizeAndPosition,
     height: Double,
-    width: Double,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    `aria-label`: String = null,
-    autoHeight: js.UndefOr[Boolean] = js.undefined,
-    cellGroupRenderer: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode] = null,
-    className: String = null,
-    horizontalOverscanSize: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    noContentRenderer: () => Element = null,
-    onScroll: /* params */ ScrollParams => _ = null,
-    onSectionRendered: /* params */ SectionRenderedParams => _ = null,
-    scrollLeft: js.UndefOr[Double] = js.undefined,
-    scrollToAlignment: Alignment = null,
-    scrollToCell: js.UndefOr[Double] = js.undefined,
-    scrollTop: js.UndefOr[Double] = js.undefined,
-    sectionSize: js.UndefOr[Double] = js.undefined,
-    style: CSSProperties = null,
-    verticalOverscanSize: js.UndefOr[Double] = js.undefined
+    width: Double
   ): CollectionProps = {
     val __obj = js.Dynamic.literal(cellCount = cellCount.asInstanceOf[js.Any], cellRenderer = js.Any.fromFunction1(cellRenderer), cellSizeAndPositionGetter = js.Any.fromFunction1(cellSizeAndPositionGetter), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
-    if (cellGroupRenderer != null) __obj.updateDynamic("cellGroupRenderer")(js.Any.fromFunction1(cellGroupRenderer))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalOverscanSize)) __obj.updateDynamic("horizontalOverscanSize")(horizontalOverscanSize.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (noContentRenderer != null) __obj.updateDynamic("noContentRenderer")(js.Any.fromFunction0(noContentRenderer))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onSectionRendered != null) __obj.updateDynamic("onSectionRendered")(js.Any.fromFunction1(onSectionRendered))
-    if (!js.isUndefined(scrollLeft)) __obj.updateDynamic("scrollLeft")(scrollLeft.get.asInstanceOf[js.Any])
-    if (scrollToAlignment != null) __obj.updateDynamic("scrollToAlignment")(scrollToAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollToCell)) __obj.updateDynamic("scrollToCell")(scrollToCell.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sectionSize)) __obj.updateDynamic("sectionSize")(sectionSize.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalOverscanSize)) __obj.updateDynamic("verticalOverscanSize")(verticalOverscanSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionProps]
   }
+  @scala.inline
+  implicit class CollectionPropsOps[Self <: CollectionProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCellCount(value: Double): Self = this.set("cellCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCellRenderer(value: /* params */ CollectionCellRendererParams => ReactNode): Self = this.set("cellRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCellSizeAndPositionGetter(value: /* params */ Index => CollectionCellSizeAndPosition): Self = this.set("cellSizeAndPositionGetter", js.Any.fromFunction1(value))
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setAria-label`(value: String): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    @scala.inline
+    def setAutoHeight(value: Boolean): Self = this.set("autoHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHeight: Self = this.set("autoHeight", js.undefined)
+    @scala.inline
+    def setCellGroupRenderer(value: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode]): Self = this.set("cellGroupRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCellGroupRenderer: Self = this.set("cellGroupRenderer", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setHorizontalOverscanSize(value: Double): Self = this.set("horizontalOverscanSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalOverscanSize: Self = this.set("horizontalOverscanSize", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setNoContentRenderer(value: () => Element): Self = this.set("noContentRenderer", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteNoContentRenderer: Self = this.set("noContentRenderer", js.undefined)
+    @scala.inline
+    def setOnScroll(value: /* params */ ScrollParams => _): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnSectionRendered(value: /* params */ SectionRenderedParams => _): Self = this.set("onSectionRendered", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSectionRendered: Self = this.set("onSectionRendered", js.undefined)
+    @scala.inline
+    def setScrollLeft(value: Double): Self = this.set("scrollLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollLeft: Self = this.set("scrollLeft", js.undefined)
+    @scala.inline
+    def setScrollToAlignment(value: Alignment): Self = this.set("scrollToAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollToAlignment: Self = this.set("scrollToAlignment", js.undefined)
+    @scala.inline
+    def setScrollToCell(value: Double): Self = this.set("scrollToCell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollToCell: Self = this.set("scrollToCell", js.undefined)
+    @scala.inline
+    def setScrollTop(value: Double): Self = this.set("scrollTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollTop: Self = this.set("scrollTop", js.undefined)
+    @scala.inline
+    def setSectionSize(value: Double): Self = this.set("sectionSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSectionSize: Self = this.set("sectionSize", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setVerticalOverscanSize(value: Double): Self = this.set("verticalOverscanSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalOverscanSize: Self = this.set("verticalOverscanSize", js.undefined)
+  }
+  
 }
 

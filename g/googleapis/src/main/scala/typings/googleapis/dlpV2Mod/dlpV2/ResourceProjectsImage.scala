@@ -34,6 +34,7 @@ class ResourceProjectsImage protected () extends js.Object {
     */
   def redact(): GaxiosPromise[SchemaGooglePrivacyDlpV2RedactImageResponse] = js.native
   def redact(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2RedactImageResponse]): Unit = js.native
+  def redact(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2RedactImageResponse] = js.native
   def redact(params: ParamsResourceProjectsImageRedact): GaxiosPromise[SchemaGooglePrivacyDlpV2RedactImageResponse] = js.native
   def redact(
     params: ParamsResourceProjectsImageRedact,

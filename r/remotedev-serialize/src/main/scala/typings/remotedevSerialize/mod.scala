@@ -11,7 +11,26 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def immutable(immutable: TypeofImmutable): Parse = js.native
+  def immutable(
+    immutable: TypeofImmutable,
+    refs: js.UndefOr[scala.Nothing],
+    customReplacer: js.UndefOr[scala.Nothing],
+    customReviver: Reviver
+  ): Parse = js.native
+  def immutable(immutable: TypeofImmutable, refs: js.UndefOr[scala.Nothing], customReplacer: Replacer): Parse = js.native
+  def immutable(
+    immutable: TypeofImmutable,
+    refs: js.UndefOr[scala.Nothing],
+    customReplacer: Replacer,
+    customReviver: Reviver
+  ): Parse = js.native
   def immutable(immutable: TypeofImmutable, refs: Refs): Parse = js.native
+  def immutable(
+    immutable: TypeofImmutable,
+    refs: Refs,
+    customReplacer: js.UndefOr[scala.Nothing],
+    customReviver: Reviver
+  ): Parse = js.native
   def immutable(immutable: TypeofImmutable, refs: Refs, customReplacer: Replacer): Parse = js.native
   def immutable(immutable: TypeofImmutable, refs: Refs, customReplacer: Replacer, customReviver: Reviver): Parse = js.native
   type DefaultReplacer = js.Function2[/* key */ String, /* value */ js.Any, js.Any]

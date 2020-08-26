@@ -14,10 +14,26 @@ trait OrganizationsDecisionDetail extends js.Object {
 
 object OrganizationsDecisionDetail {
   @scala.inline
-  def apply(AllowedByOrganizations: js.UndefOr[booleanType] = js.undefined): OrganizationsDecisionDetail = {
+  def apply(): OrganizationsDecisionDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowedByOrganizations)) __obj.updateDynamic("AllowedByOrganizations")(AllowedByOrganizations.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationsDecisionDetail]
   }
+  @scala.inline
+  implicit class OrganizationsDecisionDetailOps[Self <: OrganizationsDecisionDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedByOrganizations(value: booleanType): Self = this.set("AllowedByOrganizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedByOrganizations: Self = this.set("AllowedByOrganizations", js.undefined)
+  }
+  
 }
 

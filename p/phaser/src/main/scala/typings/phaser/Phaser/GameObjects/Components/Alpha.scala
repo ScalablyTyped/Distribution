@@ -54,8 +54,39 @@ trait Alpha extends js.Object {
     * @param bottomRight The alpha value used for the bottom-right of the Game Object. WebGL only.
     */
   def setAlpha(): this.type = js.native
+  def setAlpha(
+    topLeft: js.UndefOr[scala.Nothing],
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: Double
+  ): this.type = js.native
+  def setAlpha(topLeft: js.UndefOr[scala.Nothing], topRight: js.UndefOr[scala.Nothing], bottomLeft: Double): this.type = js.native
+  def setAlpha(
+    topLeft: js.UndefOr[scala.Nothing],
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: Double,
+    bottomRight: Double
+  ): this.type = js.native
+  def setAlpha(topLeft: js.UndefOr[scala.Nothing], topRight: Double): this.type = js.native
+  def setAlpha(
+    topLeft: js.UndefOr[scala.Nothing],
+    topRight: Double,
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: Double
+  ): this.type = js.native
+  def setAlpha(topLeft: js.UndefOr[scala.Nothing], topRight: Double, bottomLeft: Double): this.type = js.native
+  def setAlpha(topLeft: js.UndefOr[scala.Nothing], topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
   def setAlpha(topLeft: Double): this.type = js.native
+  def setAlpha(
+    topLeft: Double,
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: Double
+  ): this.type = js.native
+  def setAlpha(topLeft: Double, topRight: js.UndefOr[scala.Nothing], bottomLeft: Double): this.type = js.native
+  def setAlpha(topLeft: Double, topRight: js.UndefOr[scala.Nothing], bottomLeft: Double, bottomRight: Double): this.type = js.native
   def setAlpha(topLeft: Double, topRight: Double): this.type = js.native
+  def setAlpha(topLeft: Double, topRight: Double, bottomLeft: js.UndefOr[scala.Nothing], bottomRight: Double): this.type = js.native
   def setAlpha(topLeft: Double, topRight: Double, bottomLeft: Double): this.type = js.native
   def setAlpha(topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): this.type = js.native
 }

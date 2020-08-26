@@ -12,7 +12,7 @@ A simple js wrapper for the Openstack APIs
 | Keywords           | openstack, keystone, nova, neutron, glance |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 8494 |
+| # downloads        | 8509 |
 | # stars            | 2 |
 
 ## Links

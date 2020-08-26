@@ -14,8 +14,76 @@ trait ProtectedViewWindows extends js.Object {
   var WordDotProtectedViewWindows_typekey: ProtectedViewWindows = js.native
   def Item(Index: js.Any): ProtectedViewWindow = js.native
   def Open(FileName: js.Any): ProtectedViewWindow = js.native
+  def Open(
+    FileName: js.Any,
+    AddToRecentFiles: js.UndefOr[scala.Nothing],
+    PasswordDocument: js.UndefOr[scala.Nothing],
+    Visible: js.UndefOr[scala.Nothing],
+    OpenAndRepair: js.Any
+  ): ProtectedViewWindow = js.native
+  def Open(
+    FileName: js.Any,
+    AddToRecentFiles: js.UndefOr[scala.Nothing],
+    PasswordDocument: js.UndefOr[scala.Nothing],
+    Visible: js.Any
+  ): ProtectedViewWindow = js.native
+  def Open(
+    FileName: js.Any,
+    AddToRecentFiles: js.UndefOr[scala.Nothing],
+    PasswordDocument: js.UndefOr[scala.Nothing],
+    Visible: js.Any,
+    OpenAndRepair: js.Any
+  ): ProtectedViewWindow = js.native
+  def Open(FileName: js.Any, AddToRecentFiles: js.UndefOr[scala.Nothing], PasswordDocument: js.Any): ProtectedViewWindow = js.native
+  def Open(
+    FileName: js.Any,
+    AddToRecentFiles: js.UndefOr[scala.Nothing],
+    PasswordDocument: js.Any,
+    Visible: js.UndefOr[scala.Nothing],
+    OpenAndRepair: js.Any
+  ): ProtectedViewWindow = js.native
+  def Open(
+    FileName: js.Any,
+    AddToRecentFiles: js.UndefOr[scala.Nothing],
+    PasswordDocument: js.Any,
+    Visible: js.Any
+  ): ProtectedViewWindow = js.native
+  def Open(
+    FileName: js.Any,
+    AddToRecentFiles: js.UndefOr[scala.Nothing],
+    PasswordDocument: js.Any,
+    Visible: js.Any,
+    OpenAndRepair: js.Any
+  ): ProtectedViewWindow = js.native
   def Open(FileName: js.Any, AddToRecentFiles: js.Any): ProtectedViewWindow = js.native
+  def Open(
+    FileName: js.Any,
+    AddToRecentFiles: js.Any,
+    PasswordDocument: js.UndefOr[scala.Nothing],
+    Visible: js.UndefOr[scala.Nothing],
+    OpenAndRepair: js.Any
+  ): ProtectedViewWindow = js.native
+  def Open(
+    FileName: js.Any,
+    AddToRecentFiles: js.Any,
+    PasswordDocument: js.UndefOr[scala.Nothing],
+    Visible: js.Any
+  ): ProtectedViewWindow = js.native
+  def Open(
+    FileName: js.Any,
+    AddToRecentFiles: js.Any,
+    PasswordDocument: js.UndefOr[scala.Nothing],
+    Visible: js.Any,
+    OpenAndRepair: js.Any
+  ): ProtectedViewWindow = js.native
   def Open(FileName: js.Any, AddToRecentFiles: js.Any, PasswordDocument: js.Any): ProtectedViewWindow = js.native
+  def Open(
+    FileName: js.Any,
+    AddToRecentFiles: js.Any,
+    PasswordDocument: js.Any,
+    Visible: js.UndefOr[scala.Nothing],
+    OpenAndRepair: js.Any
+  ): ProtectedViewWindow = js.native
   def Open(FileName: js.Any, AddToRecentFiles: js.Any, PasswordDocument: js.Any, Visible: js.Any): ProtectedViewWindow = js.native
   def Open(
     FileName: js.Any,

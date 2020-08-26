@@ -66,6 +66,7 @@ trait AlloyController extends EventsMixin {
     * @param type Name of the event.
     */
   def getListener(): js.Array[_] = js.native
+  def getListener(proxy: js.UndefOr[scala.Nothing], `type`: String): js.Array[_] = js.native
   def getListener(proxy: Proxy): js.Array[_] = js.native
   def getListener(proxy: Proxy, `type`: String): js.Array[_] = js.native
   /**
@@ -108,6 +109,7 @@ trait AlloyController extends EventsMixin {
     * @param callback Callback to remove.
     */
   def removeListener(proxy: Proxy): AlloyController = js.native
+  def removeListener(proxy: Proxy, `type`: js.UndefOr[scala.Nothing], callback: js.Function1[/* e */ js.Any, Unit]): AlloyController = js.native
   def removeListener(proxy: Proxy, `type`: String): AlloyController = js.native
   def removeListener(proxy: Proxy, `type`: String, callback: js.Function1[/* e */ js.Any, Unit]): AlloyController = js.native
   /**

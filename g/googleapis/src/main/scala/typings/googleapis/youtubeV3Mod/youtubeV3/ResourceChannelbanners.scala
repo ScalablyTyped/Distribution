@@ -40,6 +40,7 @@ class ResourceChannelbanners protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaChannelBannerResource] = js.native
   def insert(callback: BodyResponseCallback[SchemaChannelBannerResource]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannelBannerResource] = js.native
   def insert(params: ParamsResourceChannelbannersInsert): GaxiosPromise[SchemaChannelBannerResource] = js.native
   def insert(
     params: ParamsResourceChannelbannersInsert,

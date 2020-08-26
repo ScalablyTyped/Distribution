@@ -18,6 +18,7 @@ object mod extends js.Object {
   @js.native
   class AsyncParser[T] () extends default[T] {
     def this(opts: Options[T]) = this()
+    def this(opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions) = this()
     def this(opts: Options[T], transformOpts: TransformOptions) = this()
   }
   
@@ -29,6 +30,7 @@ object mod extends js.Object {
   class Transform[T] ()
     extends typings.json2csv.json2csvtransformMod.default[T] {
     def this(opts: Options[T]) = this()
+    def this(opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions) = this()
     def this(opts: Options[T], transformOpts: TransformOptions) = this()
   }
   
@@ -37,12 +39,15 @@ object mod extends js.Object {
   def parse[T](data: js.Array[T]): String = js.native
   def parse[T](data: js.Array[T], opts: Options[T]): String = js.native
   def parseAsync[T](data: T): js.Promise[String] = js.native
+  def parseAsync[T](data: T, opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions): js.Promise[String] = js.native
   def parseAsync[T](data: T, opts: Options[T]): js.Promise[String] = js.native
   def parseAsync[T](data: T, opts: Options[T], transformOpts: TransformOptions): js.Promise[String] = js.native
   def parseAsync[T](data: js.Array[T]): js.Promise[String] = js.native
+  def parseAsync[T](data: js.Array[T], opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions): js.Promise[String] = js.native
   def parseAsync[T](data: js.Array[T], opts: Options[T]): js.Promise[String] = js.native
   def parseAsync[T](data: js.Array[T], opts: Options[T], transformOpts: TransformOptions): js.Promise[String] = js.native
   def parseAsync[T](data: Readable): js.Promise[String] = js.native
+  def parseAsync[T](data: Readable, opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions): js.Promise[String] = js.native
   def parseAsync[T](data: Readable, opts: Options[T]): js.Promise[String] = js.native
   def parseAsync[T](data: Readable, opts: Options[T], transformOpts: TransformOptions): js.Promise[String] = js.native
   @js.native

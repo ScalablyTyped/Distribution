@@ -20,6 +20,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface describing the data returned by calling `dataPivotHierarchy.toJSON()`. */
+@js.native
 trait DataPivotHierarchyData extends js.Object {
   /**
     *
@@ -27,42 +28,42 @@ trait DataPivotHierarchyData extends js.Object {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var field: js.UndefOr[PivotFieldData] = js.undefined
+  var field: js.UndefOr[PivotFieldData] = js.native
   /**
     *
     * Id of the DataPivotHierarchy.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     *
     * Name of the DataPivotHierarchy.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     *
     * Number format of the DataPivotHierarchy.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var numberFormat: js.UndefOr[String] = js.undefined
+  var numberFormat: js.UndefOr[String] = js.native
   /**
     *
     * Position of the DataPivotHierarchy.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var position: js.UndefOr[Double] = js.undefined
+  var position: js.UndefOr[Double] = js.native
   /**
     *
     * Specifies if the data should be shown as a specific summary calculation.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showAs: js.UndefOr[ShowAsRule] = js.undefined
+  var showAs: js.UndefOr[ShowAsRule] = js.native
   /**
     *
     * Specifies if all items of the DataPivotHierarchy are shown.
@@ -71,29 +72,57 @@ trait DataPivotHierarchyData extends js.Object {
     */
   var summarizeBy: js.UndefOr[
     AggregationFunction | Unknown_ | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP
-  ] = js.undefined
+  ] = js.native
 }
 
 object DataPivotHierarchyData {
   @scala.inline
-  def apply(
-    field: PivotFieldData = null,
-    id: String = null,
-    name: String = null,
-    numberFormat: String = null,
-    position: js.UndefOr[Double] = js.undefined,
-    showAs: ShowAsRule = null,
-    summarizeBy: AggregationFunction | Unknown_ | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP = null
-  ): DataPivotHierarchyData = {
+  def apply(): DataPivotHierarchyData = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
-    if (showAs != null) __obj.updateDynamic("showAs")(showAs.asInstanceOf[js.Any])
-    if (summarizeBy != null) __obj.updateDynamic("summarizeBy")(summarizeBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPivotHierarchyData]
   }
+  @scala.inline
+  implicit class DataPivotHierarchyDataOps[Self <: DataPivotHierarchyData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setField(value: PivotFieldData): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNumberFormat(value: String): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    @scala.inline
+    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setShowAs(value: ShowAsRule): Self = this.set("showAs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAs: Self = this.set("showAs", js.undefined)
+    @scala.inline
+    def setSummarizeBy(
+      value: AggregationFunction | Unknown_ | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP
+    ): Self = this.set("summarizeBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummarizeBy: Self = this.set("summarizeBy", js.undefined)
+  }
+  
 }
 

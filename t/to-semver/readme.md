@@ -1,7 +1,7 @@
 
 # Scala.js typings for to-semver
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Get an array of valid, sorted, and cleaned semver versions from an array of strings
@@ -12,7 +12,7 @@ Get an array of valid, sorted, and cleaned semver versions from an array of stri
 | Keywords           | semver, semantic, version, versions, versioning, list, array, clean, sort, cleaned, sorted, valid, validated, filter, filtered, git, tag, tags |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 54908 |
+| # downloads        | 55921 |
 | # stars            | 0 |
 
 ## Links

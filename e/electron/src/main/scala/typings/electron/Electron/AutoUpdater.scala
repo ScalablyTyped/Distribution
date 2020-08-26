@@ -6,7 +6,7 @@ import typings.electron.electronStrings.`update-available`
 import typings.electron.electronStrings.`update-downloaded`
 import typings.electron.electronStrings.`update-not-available`
 import typings.electron.electronStrings.error
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js

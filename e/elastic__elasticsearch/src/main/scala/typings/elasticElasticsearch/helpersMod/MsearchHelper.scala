@@ -6,13 +6,13 @@ import typings.elasticElasticsearch.transportMod.ApiResponse
 import typings.node.Buffer
 import typings.node.streamMod.Readable
 import typings.std.Error
-import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait MsearchHelper extends Promise[Unit] {
+trait MsearchHelper
+  extends js.Promise[Unit] {
   def search[TResponse, TContext](header: OmitSearchRequestBodyReco, body: String): js.Promise[ApiResponse[TResponse, TContext]] = js.native
   def search[TResponse, TContext](header: OmitSearchRequestBodyReco, body: String, callback: callbackFn[TResponse, TContext]): Unit = js.native
   def search[TResponse, TContext](header: OmitSearchRequestBodyReco, body: Buffer): js.Promise[ApiResponse[TResponse, TContext]] = js.native

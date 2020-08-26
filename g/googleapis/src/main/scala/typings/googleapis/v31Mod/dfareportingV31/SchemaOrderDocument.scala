@@ -84,44 +84,94 @@ trait SchemaOrderDocument extends js.Object {
 
 object SchemaOrderDocument {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    advertiserId: String = null,
-    amendedOrderDocumentId: String = null,
-    approvedByUserProfileIds: js.Array[String] = null,
-    cancelled: js.UndefOr[Boolean] = js.undefined,
-    createdInfo: SchemaLastModifiedInfo = null,
-    effectiveDate: String = null,
-    id: String = null,
-    kind: String = null,
-    lastSentRecipients: js.Array[String] = null,
-    lastSentTime: String = null,
-    orderId: String = null,
-    projectId: String = null,
-    signed: js.UndefOr[Boolean] = js.undefined,
-    subaccountId: String = null,
-    title: String = null,
-    `type`: String = null
-  ): SchemaOrderDocument = {
+  def apply(): SchemaOrderDocument = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (amendedOrderDocumentId != null) __obj.updateDynamic("amendedOrderDocumentId")(amendedOrderDocumentId.asInstanceOf[js.Any])
-    if (approvedByUserProfileIds != null) __obj.updateDynamic("approvedByUserProfileIds")(approvedByUserProfileIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelled)) __obj.updateDynamic("cancelled")(cancelled.get.asInstanceOf[js.Any])
-    if (createdInfo != null) __obj.updateDynamic("createdInfo")(createdInfo.asInstanceOf[js.Any])
-    if (effectiveDate != null) __obj.updateDynamic("effectiveDate")(effectiveDate.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastSentRecipients != null) __obj.updateDynamic("lastSentRecipients")(lastSentRecipients.asInstanceOf[js.Any])
-    if (lastSentTime != null) __obj.updateDynamic("lastSentTime")(lastSentTime.asInstanceOf[js.Any])
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed.get.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrderDocument]
   }
+  @scala.inline
+  implicit class SchemaOrderDocumentOps[Self <: SchemaOrderDocument] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setAmendedOrderDocumentId(value: String): Self = this.set("amendedOrderDocumentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmendedOrderDocumentId: Self = this.set("amendedOrderDocumentId", js.undefined)
+    @scala.inline
+    def setApprovedByUserProfileIdsVarargs(value: String*): Self = this.set("approvedByUserProfileIds", js.Array(value :_*))
+    @scala.inline
+    def setApprovedByUserProfileIds(value: js.Array[String]): Self = this.set("approvedByUserProfileIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovedByUserProfileIds: Self = this.set("approvedByUserProfileIds", js.undefined)
+    @scala.inline
+    def setCancelled(value: Boolean): Self = this.set("cancelled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelled: Self = this.set("cancelled", js.undefined)
+    @scala.inline
+    def setCreatedInfo(value: SchemaLastModifiedInfo): Self = this.set("createdInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedInfo: Self = this.set("createdInfo", js.undefined)
+    @scala.inline
+    def setEffectiveDate(value: String): Self = this.set("effectiveDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectiveDate: Self = this.set("effectiveDate", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastSentRecipientsVarargs(value: String*): Self = this.set("lastSentRecipients", js.Array(value :_*))
+    @scala.inline
+    def setLastSentRecipients(value: js.Array[String]): Self = this.set("lastSentRecipients", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSentRecipients: Self = this.set("lastSentRecipients", js.undefined)
+    @scala.inline
+    def setLastSentTime(value: String): Self = this.set("lastSentTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSentTime: Self = this.set("lastSentTime", js.undefined)
+    @scala.inline
+    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setSigned(value: Boolean): Self = this.set("signed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigned: Self = this.set("signed", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

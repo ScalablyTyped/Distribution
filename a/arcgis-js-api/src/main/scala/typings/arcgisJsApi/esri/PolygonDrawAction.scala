@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PolygonDrawAction extends DrawAction {
   /**
-    * The drawing mode. It is only relevant when the action is first created. Its value cannot be changed during the action lifecycle.  **Possible Values:**
+    * The drawing mode. It is only relevant when the action is first created. Its value cannot be changed during the action lifecycle.  **Possible Values**
     *
     * Value | Description |
     * ----- | ----------- |
@@ -53,14 +53,6 @@ trait PolygonDrawAction extends DrawAction {
     *
     */
   def getGeometryZValue(): Unit = js.native
-  /**
-    * Returns if snapToScene is allowed to be used.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#isSnapToSceneEnabled)
-    *
-    *
-    */
-  def isSnapToSceneEnabled(): Unit = js.native
   @JSName("on")
   def on_cursorupdate(name: `cursor-update`, eventHandler: PolygonDrawActionCursorUpdateEventHandler): IHandle = js.native
   @JSName("on")

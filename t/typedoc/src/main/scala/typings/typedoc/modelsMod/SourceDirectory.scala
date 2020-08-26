@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class SourceDirectory ()
   extends typings.typedoc.sourcesMod.SourceDirectory {
   def this(name: String) = this()
+  def this(name: js.UndefOr[scala.Nothing], parent: typings.typedoc.directoryMod.SourceDirectory) = this()
   def this(name: String, parent: typings.typedoc.directoryMod.SourceDirectory) = this()
 }
 

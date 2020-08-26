@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IGridPinningApi[TEntity] extends js.Object {
   // Events
   /**
@@ -13,14 +14,14 @@ trait IGridPinningApi[TEntity] extends js.Object {
     * @param {ng.IScope} scope The grid scope
     * @param {columnPinHandler} handler Callback
     */
-  def columnPin(scope: IScope, handler: columnPinHandler): Unit
+  def columnPin(scope: IScope, handler: columnPinHandler): Unit = js.native
   // Methods
   /**
     * Pin column left, right, or none
     * @param {IGridColumn} col The column being pinned
     * @param {string} container One of the recognized container types from uiGridPinningConstants
     */
-  def pinColumn(col: IGridColumnOf[TEntity], container: String): Unit
+  def pinColumn(col: IGridColumnOf[TEntity], container: String): Unit = js.native
 }
 
 object IGridPinningApi {
@@ -29,5 +30,22 @@ object IGridPinningApi {
     val __obj = js.Dynamic.literal(columnPin = js.Any.fromFunction2(columnPin), pinColumn = js.Any.fromFunction2(pinColumn))
     __obj.asInstanceOf[IGridPinningApi[TEntity]]
   }
+  @scala.inline
+  implicit class IGridPinningApiOps[Self <: IGridPinningApi[_], TEntity] (val x: Self with IGridPinningApi[TEntity]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnPin(value: (IScope, columnPinHandler) => Unit): Self = this.set("columnPin", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPinColumn(value: (IGridColumnOf[TEntity], String) => Unit): Self = this.set("pinColumn", js.Any.fromFunction2(value))
+  }
+  
 }
 

@@ -144,16 +144,21 @@ trait Container extends DisplayObject {
     * @return {number} The index position of the child display object to identify
     */
   def getChildIndex(child: DisplayObject): Double = js.native
+  def getLocalBounds(rect: js.UndefOr[scala.Nothing], skipChildrenUpdate: Boolean): Rectangle = js.native
   def getLocalBounds(rect: Rectangle, skipChildrenUpdate: Boolean): Rectangle = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_added(event: added): this.type = js.native
+  @JSName("off")
+  def off_added(event: added, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   @JSName("off")
   def off_added(event: added, fn: js.Function): this.type = js.native
   @JSName("off")
   def off_added(event: added, fn: js.Function, context: js.Any): this.type = js.native
   @JSName("off")
   def off_removed(event: removed): this.type = js.native
+  @JSName("off")
+  def off_removed(event: removed, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   @JSName("off")
   def off_removed(event: removed, fn: js.Function): this.type = js.native
   @JSName("off")
@@ -202,6 +207,7 @@ trait Container extends DisplayObject {
     * @returns {PIXI.DisplayObject[]} List of removed children
     */
   def removeChildren(): js.Array[DisplayObject] = js.native
+  def removeChildren(beginIndex: js.UndefOr[scala.Nothing], endIndex: Double): js.Array[DisplayObject] = js.native
   def removeChildren(beginIndex: Double): js.Array[DisplayObject] = js.native
   def removeChildren(beginIndex: Double, endIndex: Double): js.Array[DisplayObject] = js.native
   /**

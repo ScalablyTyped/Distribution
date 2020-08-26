@@ -14,8 +14,8 @@ trait PART_TYPE extends js.Object
 
 object PART_TYPE {
   @scala.inline
-  def argument: `1` = 1.asInstanceOf[`1`]
-  @scala.inline
   def literal: `0` = 0.asInstanceOf[`0`]
+  @scala.inline
+  def `object`: `1` = 1.asInstanceOf[`1`]
 }
 

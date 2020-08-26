@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 class DoublePoint protected ()
   extends typings.jsClipper.ClipperLib.DoublePoint {
   def this(x: Double, y: Double) = this()
-  /* CompleteClass */
-  override var X: Double = js.native
-  /* CompleteClass */
-  override var Y: Double = js.native
 }
 

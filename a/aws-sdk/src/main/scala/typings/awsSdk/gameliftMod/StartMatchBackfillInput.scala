@@ -29,12 +29,35 @@ object StartMatchBackfillInput {
   def apply(
     ConfigurationName: MatchmakingConfigurationName,
     GameSessionArn: ArnStringModel,
-    Players: PlayerList,
-    TicketId: MatchmakingIdStringModel = null
+    Players: PlayerList
   ): StartMatchBackfillInput = {
     val __obj = js.Dynamic.literal(ConfigurationName = ConfigurationName.asInstanceOf[js.Any], GameSessionArn = GameSessionArn.asInstanceOf[js.Any], Players = Players.asInstanceOf[js.Any])
-    if (TicketId != null) __obj.updateDynamic("TicketId")(TicketId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartMatchBackfillInput]
   }
+  @scala.inline
+  implicit class StartMatchBackfillInputOps[Self <: StartMatchBackfillInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationName(value: MatchmakingConfigurationName): Self = this.set("ConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGameSessionArn(value: ArnStringModel): Self = this.set("GameSessionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlayersVarargs(value: Player*): Self = this.set("Players", js.Array(value :_*))
+    @scala.inline
+    def setPlayers(value: PlayerList): Self = this.set("Players", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTicketId(value: MatchmakingIdStringModel): Self = this.set("TicketId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTicketId: Self = this.set("TicketId", js.undefined)
+  }
+  
 }
 

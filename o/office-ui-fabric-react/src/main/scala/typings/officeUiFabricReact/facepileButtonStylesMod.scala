@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object facepileButtonStylesMod extends js.Object {
   def getStyles(theme: ITheme): IButtonStyles = js.native
+  def getStyles(theme: ITheme, className: js.UndefOr[scala.Nothing], customStyles: IButtonStyles): IButtonStyles = js.native
   def getStyles(theme: ITheme, className: String): IButtonStyles = js.native
   def getStyles(theme: ITheme, className: String, customStyles: IButtonStyles): IButtonStyles = js.native
 }

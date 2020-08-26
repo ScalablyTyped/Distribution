@@ -39,6 +39,7 @@ class Interval () extends js.Object {
   def splitBy(duration: Duration): js.Array[Interval] = js.native
   def splitBy(duration: DurationObject): js.Array[Interval] = js.native
   def toDuration(): Duration = js.native
+  def toDuration(unit: js.UndefOr[scala.Nothing], options: DiffOptions): Duration = js.native
   def toDuration(unit: js.Array[DurationUnit]): Duration = js.native
   def toDuration(unit: js.Array[DurationUnit], options: DiffOptions): Duration = js.native
   def toDuration(unit: DurationUnit): Duration = js.native

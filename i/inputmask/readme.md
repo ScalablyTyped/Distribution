@@ -10,9 +10,9 @@ Inputmask is a javascript library which creates an input mask.  Inputmask can ru
 | ------------------ | :-------------: |
 | Full name          | inputmask |
 | Keywords           | form, input, inputmask, jquery, jquery-plugin, mask, plugins |
-| # releases         | 90 |
+| # releases         | 95 |
 | # dependents       | 86 |
-| # downloads        | 3161877 |
+| # downloads        | 3288289 |
 | # stars            | 3 |
 
 ## Links

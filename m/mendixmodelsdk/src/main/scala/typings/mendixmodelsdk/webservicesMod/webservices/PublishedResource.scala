@@ -27,7 +27,7 @@ abstract class PublishedResource protected () extends Element {
   def containerAsPublishedODataService: PublishedODataService = js.native
   def containerAsVersionedService: VersionedService = js.native
   def dataEntity: DataEntity = js.native
-  def dataEntity(newValue: DataEntity): js.Any = js.native
+  def dataEntity_=(newValue: DataEntity): Unit = js.native
 }
 
 /* static members */

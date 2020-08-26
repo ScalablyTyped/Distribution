@@ -26,16 +26,9 @@ object generateRandomCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GenerateRandomInput) = this()
-    /* CompleteClass */
-    override val input: GenerateRandomInput = js.native
     val middlewareStack: MiddlewareStack[GenerateRandomInput, GenerateRandomOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: KMSResolvedConfiguration
-    ): Handler[GenerateRandomInput, GenerateRandomOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: KMSResolvedConfiguration
     ): Handler[GenerateRandomInput, GenerateRandomOutput] = js.native
   }

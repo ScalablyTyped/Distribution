@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 class RendererMap_ () extends js.Object {
   def this(values: Values) = this()
+  def this(values: js.UndefOr[scala.Nothing], fallback: CellRenderer) = this()
   def this(values: Values, fallback: CellRenderer) = this()
   var _changed: js.Any = js.native
   var _fallback: js.Any = js.native
@@ -46,6 +47,7 @@ class RendererMap_ () extends js.Object {
     * This method always emits the `changed` signal.
     */
   def update(): Unit = js.native
+  def update(values: js.UndefOr[scala.Nothing], fallback: CellRenderer): Unit = js.native
   def update(values: Values): Unit = js.native
   def update(values: Values, fallback: CellRenderer): Unit = js.native
 }

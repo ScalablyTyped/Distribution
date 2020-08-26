@@ -1,11 +1,11 @@
 package typings.reactDnd
 
 import typings.dndCore.interfacesMod.BackendFactory
+import typings.dndCore.interfacesMod.DragDropManager
 import typings.dndCore.interfacesMod.SourceType
 import typings.dndCore.interfacesMod.TargetType
 import typings.react.mod.Context
 import typings.react.mod.FC
-import typings.reactDnd.anon.DragDropManager
 import typings.reactDnd.connectorsMod.ConnectDragPreview
 import typings.reactDnd.connectorsMod.ConnectDragSource
 import typings.reactDnd.connectorsMod.ConnectDropTarget
@@ -79,11 +79,31 @@ object mod extends js.Object {
     collect: DropTargetCollector[CollectedProps, RequiredProps],
     options: DndOptions[RequiredProps]
   ): DndComponentEnhancer[CollectedProps] = js.native
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory): DragDropManager = js.native
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext): DragDropManager = js.native
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: BackendOptions): DragDropManager = js.native
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: BackendOptions, debugMode: Boolean): DragDropManager = js.native
+  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory): DndContextType = js.native
+  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext): DndContextType = js.native
+  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: BackendOptions): DndContextType = js.native
+  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: BackendOptions, debugMode: Boolean): DndContextType = js.native
+  def createDndContext[BackendContext, BackendOptions](
+    backend: BackendFactory,
+    context: BackendContext,
+    options: js.UndefOr[scala.Nothing],
+    debugMode: Boolean
+  ): DndContextType = js.native
+  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: js.UndefOr[scala.Nothing], options: BackendOptions): DndContextType = js.native
+  def createDndContext[BackendContext, BackendOptions](
+    backend: BackendFactory,
+    context: js.UndefOr[scala.Nothing],
+    options: BackendOptions,
+    debugMode: Boolean
+  ): DndContextType = js.native
+  def createDndContext[BackendContext, BackendOptions](
+    backend: BackendFactory,
+    context: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    debugMode: Boolean
+  ): DndContextType = js.native
   def useDrag[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](spec: DragSourceHookSpec[DragObject, DropResult, CollectedProps]): js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview] = js.native
+  def useDragDropManager(): DragDropManager = js.native
   def useDragLayer[CollectedProps](collect: js.Function1[/* monitor */ DragLayerMonitor, CollectedProps]): CollectedProps = js.native
   def useDrop[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](spec: DropTargetHookSpec[DragObject, DropResult, CollectedProps]): js.Tuple2[CollectedProps, ConnectDropTarget] = js.native
 }

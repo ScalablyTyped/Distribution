@@ -57,7 +57,25 @@ trait Decrypt extends js.Object {
     * @param opt default: {name: 'PBKDF2', encode: 'base64'}
     */
   def work(data: js.Any): js.Promise[js.UndefOr[String]] = js.native
+  def work(
+    data: js.Any,
+    pair: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    opt: PartialnameSHA256PBKDF2en
+  ): js.Promise[js.UndefOr[String]] = js.native
+  def work(
+    data: js.Any,
+    pair: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* data */ js.UndefOr[String], Unit]
+  ): js.Promise[js.UndefOr[String]] = js.native
+  def work(
+    data: js.Any,
+    pair: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* data */ js.UndefOr[String], Unit],
+    opt: PartialnameSHA256PBKDF2en
+  ): js.Promise[js.UndefOr[String]] = js.native
   def work(data: js.Any, pair: js.Any): js.Promise[js.UndefOr[String]] = js.native
+  def work(data: js.Any, pair: js.Any, callback: js.UndefOr[scala.Nothing], opt: PartialnameSHA256PBKDF2en): js.Promise[js.UndefOr[String]] = js.native
   def work(data: js.Any, pair: js.Any, callback: js.Function1[/* data */ js.UndefOr[String], Unit]): js.Promise[js.UndefOr[String]] = js.native
   def work(
     data: js.Any,

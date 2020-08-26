@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/coreutils/lib/token", JSImport.Namespace)
+@JSImport("@lumino/coreutils/types/token", JSImport.Namespace)
 @js.native
 object tokenMod extends js.Object {
   @js.native

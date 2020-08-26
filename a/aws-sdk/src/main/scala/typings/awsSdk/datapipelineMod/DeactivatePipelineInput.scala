@@ -18,10 +18,28 @@ trait DeactivatePipelineInput extends js.Object {
 
 object DeactivatePipelineInput {
   @scala.inline
-  def apply(pipelineId: id, cancelActive: js.UndefOr[cancelActive] = js.undefined): DeactivatePipelineInput = {
+  def apply(pipelineId: id): DeactivatePipelineInput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelActive)) __obj.updateDynamic("cancelActive")(cancelActive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeactivatePipelineInput]
   }
+  @scala.inline
+  implicit class DeactivatePipelineInputOps[Self <: DeactivatePipelineInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPipelineId(value: id): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCancelActive(value: cancelActive): Self = this.set("cancelActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelActive: Self = this.set("cancelActive", js.undefined)
+  }
+  
 }
 

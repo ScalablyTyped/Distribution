@@ -65,12 +65,12 @@ trait LakeFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeResourceResponse, Unit]
   ): Request[DescribeResourceResponse, AWSError] = js.native
   /**
-    * The AWS Lake Formation principal.
+    * Retrieves the list of the data lake administrators of a Lake Formation-managed data lake. 
     */
   def getDataLakeSettings(): Request[GetDataLakeSettingsResponse, AWSError] = js.native
   def getDataLakeSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetDataLakeSettingsResponse, Unit]): Request[GetDataLakeSettingsResponse, AWSError] = js.native
   /**
-    * The AWS Lake Formation principal.
+    * Retrieves the list of the data lake administrators of a Lake Formation-managed data lake. 
     */
   def getDataLakeSettings(params: GetDataLakeSettingsRequest): Request[GetDataLakeSettingsResponse, AWSError] = js.native
   def getDataLakeSettings(
@@ -78,14 +78,14 @@ trait LakeFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDataLakeSettingsResponse, Unit]
   ): Request[GetDataLakeSettingsResponse, AWSError] = js.native
   /**
-    * Returns the permissions for a specified table or database resource located at a path in Amazon S3.
+    * Returns the Lake Formation permissions for a specified table or database resource located at a path in Amazon S3. GetEffectivePermissionsForPath will not return databases and tables if the catalog is encrypted.
     */
   def getEffectivePermissionsForPath(): Request[GetEffectivePermissionsForPathResponse, AWSError] = js.native
   def getEffectivePermissionsForPath(
     callback: js.Function2[/* err */ AWSError, /* data */ GetEffectivePermissionsForPathResponse, Unit]
   ): Request[GetEffectivePermissionsForPathResponse, AWSError] = js.native
   /**
-    * Returns the permissions for a specified table or database resource located at a path in Amazon S3.
+    * Returns the Lake Formation permissions for a specified table or database resource located at a path in Amazon S3. GetEffectivePermissionsForPath will not return databases and tables if the catalog is encrypted.
     */
   def getEffectivePermissionsForPath(params: GetEffectivePermissionsForPathRequest): Request[GetEffectivePermissionsForPathResponse, AWSError] = js.native
   def getEffectivePermissionsForPath(
@@ -132,12 +132,12 @@ trait LakeFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourcesResponse, Unit]
   ): Request[ListResourcesResponse, AWSError] = js.native
   /**
-    * The AWS Lake Formation principal.
+    * Sets the list of data lake administrators who have admin privileges on all resources managed by Lake Formation. For more information on admin privileges, see Granting Lake Formation Permissions. This API replaces the current list of data lake admins with the new list being passed. To add an admin, fetch the current list and add the new admin to that list and pass that list in this API.
     */
   def putDataLakeSettings(): Request[PutDataLakeSettingsResponse, AWSError] = js.native
   def putDataLakeSettings(callback: js.Function2[/* err */ AWSError, /* data */ PutDataLakeSettingsResponse, Unit]): Request[PutDataLakeSettingsResponse, AWSError] = js.native
   /**
-    * The AWS Lake Formation principal.
+    * Sets the list of data lake administrators who have admin privileges on all resources managed by Lake Formation. For more information on admin privileges, see Granting Lake Formation Permissions. This API replaces the current list of data lake admins with the new list being passed. To add an admin, fetch the current list and add the new admin to that list and pass that list in this API.
     */
   def putDataLakeSettings(params: PutDataLakeSettingsRequest): Request[PutDataLakeSettingsResponse, AWSError] = js.native
   def putDataLakeSettings(
@@ -145,12 +145,12 @@ trait LakeFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutDataLakeSettingsResponse, Unit]
   ): Request[PutDataLakeSettingsResponse, AWSError] = js.native
   /**
-    * Registers the resource as managed by the Data Catalog. To add or update data, Lake Formation needs read/write access to the chosen Amazon S3 path. Choose a role that you know has permission to do this, or choose the AWSServiceRoleForLakeFormationDataAccess service-linked role. When you register the first Amazon S3 path, the service-linked role and a new inline policy are created on your behalf. Lake Formation adds the first path to the inline policy and attaches it to the service-linked role. When you register subsequent paths, Lake Formation adds the path to the existing policy.
+    * Registers the resource as managed by the Data Catalog. To add or update data, Lake Formation needs read/write access to the chosen Amazon S3 path. Choose a role that you know has permission to do this, or choose the AWSServiceRoleForLakeFormationDataAccess service-linked role. When you register the first Amazon S3 path, the service-linked role and a new inline policy are created on your behalf. Lake Formation adds the first path to the inline policy and attaches it to the service-linked role. When you register subsequent paths, Lake Formation adds the path to the existing policy. The following request registers a new location and gives AWS Lake Formation permission to use the service-linked role to access that location.  ResourceArn = arn:aws:s3:::my-bucket UseServiceLinkedRole = true  If UseServiceLinkedRole is not set to true, you must provide or set the RoleArn:  arn:aws:iam::12345:role/my-data-access-role 
     */
   def registerResource(): Request[RegisterResourceResponse, AWSError] = js.native
   def registerResource(callback: js.Function2[/* err */ AWSError, /* data */ RegisterResourceResponse, Unit]): Request[RegisterResourceResponse, AWSError] = js.native
   /**
-    * Registers the resource as managed by the Data Catalog. To add or update data, Lake Formation needs read/write access to the chosen Amazon S3 path. Choose a role that you know has permission to do this, or choose the AWSServiceRoleForLakeFormationDataAccess service-linked role. When you register the first Amazon S3 path, the service-linked role and a new inline policy are created on your behalf. Lake Formation adds the first path to the inline policy and attaches it to the service-linked role. When you register subsequent paths, Lake Formation adds the path to the existing policy.
+    * Registers the resource as managed by the Data Catalog. To add or update data, Lake Formation needs read/write access to the chosen Amazon S3 path. Choose a role that you know has permission to do this, or choose the AWSServiceRoleForLakeFormationDataAccess service-linked role. When you register the first Amazon S3 path, the service-linked role and a new inline policy are created on your behalf. Lake Formation adds the first path to the inline policy and attaches it to the service-linked role. When you register subsequent paths, Lake Formation adds the path to the existing policy. The following request registers a new location and gives AWS Lake Formation permission to use the service-linked role to access that location.  ResourceArn = arn:aws:s3:::my-bucket UseServiceLinkedRole = true  If UseServiceLinkedRole is not set to true, you must provide or set the RoleArn:  arn:aws:iam::12345:role/my-data-access-role 
     */
   def registerResource(params: RegisterResourceRequest): Request[RegisterResourceResponse, AWSError] = js.native
   def registerResource(

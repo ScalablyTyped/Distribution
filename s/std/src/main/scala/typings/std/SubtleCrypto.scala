@@ -12,37 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SubtleCrypto extends js.Object {
   def decrypt(
-    algorithm: AesCbcParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def decrypt(
-    algorithm: AesCfbParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def decrypt(
-    algorithm: AesCmacParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def decrypt(
-    algorithm: AesCtrParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def decrypt(
-    algorithm: AesGcmParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def decrypt(
-    algorithm: AlgorithmIdentifier,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def decrypt(
-    algorithm: RsaOaepParams,
+    algorithm: AlgorithmIdentifier | RsaOaepParams | AesCtrParams | AesCbcParams | AesCmacParams | AesGcmParams | AesCfbParams,
     key: CryptoKey,
     data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
   ): js.Thenable[ArrayBuffer] = js.native
@@ -53,48 +23,270 @@ trait SubtleCrypto extends js.Object {
   def deriveBits(algorithm: HkdfCtrParams, baseKey: CryptoKey, length: Double): js.Thenable[ArrayBuffer] = js.native
   def deriveBits(algorithm: Pbkdf2Params, baseKey: CryptoKey, length: Double): js.Thenable[ArrayBuffer] = js.native
   def deriveKey(
-    algorithm: AlgorithmIdentifier | EcdhKeyDeriveParams | DhKeyDeriveParams | ConcatParams | HkdfCtrParams | Pbkdf2Params,
+    algorithm: AlgorithmIdentifier,
     baseKey: CryptoKey,
-    derivedKeyType: java.lang.String | AesDerivedKeyParams | HmacImportParams | ConcatParams | HkdfCtrParams | Pbkdf2Params,
+    derivedKeyType: java.lang.String,
     extractable: scala.Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Thenable[CryptoKey] = js.native
-  def digest(
+  def deriveKey(
     algorithm: AlgorithmIdentifier,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def encrypt(
-    algorithm: AesCbcParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def encrypt(
-    algorithm: AesCfbParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def encrypt(
-    algorithm: AesCmacParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def encrypt(
-    algorithm: AesCtrParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def encrypt(
-    algorithm: AesGcmParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def encrypt(
+    baseKey: CryptoKey,
+    derivedKeyType: AesDerivedKeyParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
     algorithm: AlgorithmIdentifier,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
+    baseKey: CryptoKey,
+    derivedKeyType: ConcatParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: AlgorithmIdentifier,
+    baseKey: CryptoKey,
+    derivedKeyType: HkdfCtrParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: AlgorithmIdentifier,
+    baseKey: CryptoKey,
+    derivedKeyType: HmacImportParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: AlgorithmIdentifier,
+    baseKey: CryptoKey,
+    derivedKeyType: Pbkdf2Params,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: ConcatParams,
+    baseKey: CryptoKey,
+    derivedKeyType: java.lang.String,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: ConcatParams,
+    baseKey: CryptoKey,
+    derivedKeyType: AesDerivedKeyParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: ConcatParams,
+    baseKey: CryptoKey,
+    derivedKeyType: ConcatParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: ConcatParams,
+    baseKey: CryptoKey,
+    derivedKeyType: HkdfCtrParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: ConcatParams,
+    baseKey: CryptoKey,
+    derivedKeyType: HmacImportParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: ConcatParams,
+    baseKey: CryptoKey,
+    derivedKeyType: Pbkdf2Params,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: DhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: java.lang.String,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: DhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: AesDerivedKeyParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: DhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: ConcatParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: DhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: HkdfCtrParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: DhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: HmacImportParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: DhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: Pbkdf2Params,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: EcdhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: java.lang.String,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: EcdhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: AesDerivedKeyParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: EcdhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: ConcatParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: EcdhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: HkdfCtrParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: EcdhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: HmacImportParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: EcdhKeyDeriveParams,
+    baseKey: CryptoKey,
+    derivedKeyType: Pbkdf2Params,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: HkdfCtrParams,
+    baseKey: CryptoKey,
+    derivedKeyType: java.lang.String,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: HkdfCtrParams,
+    baseKey: CryptoKey,
+    derivedKeyType: AesDerivedKeyParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: HkdfCtrParams,
+    baseKey: CryptoKey,
+    derivedKeyType: ConcatParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: HkdfCtrParams,
+    baseKey: CryptoKey,
+    derivedKeyType: HkdfCtrParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: HkdfCtrParams,
+    baseKey: CryptoKey,
+    derivedKeyType: HmacImportParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: HkdfCtrParams,
+    baseKey: CryptoKey,
+    derivedKeyType: Pbkdf2Params,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: Pbkdf2Params,
+    baseKey: CryptoKey,
+    derivedKeyType: java.lang.String,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: Pbkdf2Params,
+    baseKey: CryptoKey,
+    derivedKeyType: AesDerivedKeyParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: Pbkdf2Params,
+    baseKey: CryptoKey,
+    derivedKeyType: ConcatParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: Pbkdf2Params,
+    baseKey: CryptoKey,
+    derivedKeyType: HkdfCtrParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: Pbkdf2Params,
+    baseKey: CryptoKey,
+    derivedKeyType: HmacImportParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def deriveKey(
+    algorithm: Pbkdf2Params,
+    baseKey: CryptoKey,
+    derivedKeyType: Pbkdf2Params,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[KeyUsage]
+  ): js.Thenable[CryptoKey] = js.native
+  def digest(algorithm: AlgorithmIdentifier, data: ArrayBuffer): js.Thenable[ArrayBuffer] = js.native
+  def digest(algorithm: AlgorithmIdentifier, data: DataView): js.Thenable[ArrayBuffer] = js.native
+  def digest(algorithm: AlgorithmIdentifier, data: Float32Array): js.Thenable[ArrayBuffer] = js.native
+  def digest(algorithm: AlgorithmIdentifier, data: Float64Array): js.Thenable[ArrayBuffer] = js.native
+  def digest(algorithm: AlgorithmIdentifier, data: Int16Array): js.Thenable[ArrayBuffer] = js.native
+  def digest(algorithm: AlgorithmIdentifier, data: Int32Array): js.Thenable[ArrayBuffer] = js.native
+  def digest(algorithm: AlgorithmIdentifier, data: Int8Array): js.Thenable[ArrayBuffer] = js.native
+  def digest(algorithm: AlgorithmIdentifier, data: Uint16Array): js.Thenable[ArrayBuffer] = js.native
+  def digest(algorithm: AlgorithmIdentifier, data: Uint32Array): js.Thenable[ArrayBuffer] = js.native
+  def digest(algorithm: AlgorithmIdentifier, data: Uint8Array): js.Thenable[ArrayBuffer] = js.native
+  def digest(algorithm: AlgorithmIdentifier, data: Uint8ClampedArray): js.Thenable[ArrayBuffer] = js.native
   def encrypt(
-    algorithm: RsaOaepParams,
+    algorithm: AlgorithmIdentifier | RsaOaepParams | AesCtrParams | AesCbcParams | AesCmacParams | AesGcmParams | AesCfbParams,
     key: CryptoKey,
     data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
   ): js.Thenable[ArrayBuffer] = js.native
@@ -115,44 +307,16 @@ trait SubtleCrypto extends js.Object {
   def generateKey(algorithm: Pbkdf2Params, extractable: scala.Boolean, keyUsages: js.Array[KeyUsage]): js.Thenable[CryptoKey] = js.native
   def generateKey(algorithm: RsaHashedKeyGenParams, extractable: scala.Boolean, keyUsages: js.Array[KeyUsage]): js.Thenable[CryptoKeyPair] = js.native
   def importKey(
-    format: java.lang.String,
-    keyData: JsonWebKey | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: AesKeyAlgorithm,
+    format: raw | pkcs8 | spki,
+    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
+    algorithm: AlgorithmIdentifier | RsaHashedImportParams | EcKeyImportParams | HmacImportParams | DhImportKeyParams | AesKeyAlgorithm,
     extractable: scala.Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Thenable[CryptoKey] = js.native
   def importKey(
     format: java.lang.String,
     keyData: JsonWebKey | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: AlgorithmIdentifier,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  def importKey(
-    format: java.lang.String,
-    keyData: JsonWebKey | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: DhImportKeyParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  def importKey(
-    format: java.lang.String,
-    keyData: JsonWebKey | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: EcKeyImportParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  def importKey(
-    format: java.lang.String,
-    keyData: JsonWebKey | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: HmacImportParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  def importKey(
-    format: java.lang.String,
-    keyData: JsonWebKey | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: RsaHashedImportParams,
+    algorithm: AlgorithmIdentifier | RsaHashedImportParams | EcKeyImportParams | HmacImportParams | DhImportKeyParams | AesKeyAlgorithm,
     extractable: scala.Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Thenable[CryptoKey] = js.native
@@ -204,170 +368,50 @@ trait SubtleCrypto extends js.Object {
     extractable: scala.Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_pkcs8(
-    format: pkcs8,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: AesKeyAlgorithm,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_pkcs8(
-    format: pkcs8,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: AlgorithmIdentifier,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_pkcs8(
-    format: pkcs8,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: DhImportKeyParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_pkcs8(
-    format: pkcs8,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: EcKeyImportParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_pkcs8(
-    format: pkcs8,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: HmacImportParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_pkcs8(
-    format: pkcs8,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: RsaHashedImportParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_raw(
-    format: raw,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: AesKeyAlgorithm,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_raw(
-    format: raw,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: AlgorithmIdentifier,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_raw(
-    format: raw,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: DhImportKeyParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_raw(
-    format: raw,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: EcKeyImportParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_raw(
-    format: raw,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: HmacImportParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_raw(
-    format: raw,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: RsaHashedImportParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_spki(
-    format: spki,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: AesKeyAlgorithm,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_spki(
-    format: spki,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: AlgorithmIdentifier,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_spki(
-    format: spki,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: DhImportKeyParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_spki(
-    format: spki,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: EcKeyImportParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_spki(
-    format: spki,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: HmacImportParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  @JSName("importKey")
-  def importKey_spki(
-    format: spki,
-    keyData: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    algorithm: RsaHashedImportParams,
-    extractable: scala.Boolean,
-    keyUsages: js.Array[KeyUsage]
-  ): js.Thenable[CryptoKey] = js.native
-  def sign(
-    algorithm: AesCmacParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def sign(
-    algorithm: AlgorithmIdentifier,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def sign(
-    algorithm: EcdsaParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
-  def sign(
-    algorithm: RsaPssParams,
-    key: CryptoKey,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AesCmacParams, key: CryptoKey, data: ArrayBuffer): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AesCmacParams, key: CryptoKey, data: DataView): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AesCmacParams, key: CryptoKey, data: Float32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AesCmacParams, key: CryptoKey, data: Float64Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AesCmacParams, key: CryptoKey, data: Int16Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AesCmacParams, key: CryptoKey, data: Int32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AesCmacParams, key: CryptoKey, data: Int8Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AesCmacParams, key: CryptoKey, data: Uint16Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AesCmacParams, key: CryptoKey, data: Uint32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AesCmacParams, key: CryptoKey, data: Uint8Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AesCmacParams, key: CryptoKey, data: Uint8ClampedArray): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: ArrayBuffer): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: DataView): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: Float32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: Float64Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: Int16Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: Int32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: Int8Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: Uint16Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: Uint32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: Uint8Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: Uint8ClampedArray): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: EcdsaParams, key: CryptoKey, data: ArrayBuffer): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: EcdsaParams, key: CryptoKey, data: DataView): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: EcdsaParams, key: CryptoKey, data: Float32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: EcdsaParams, key: CryptoKey, data: Float64Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: EcdsaParams, key: CryptoKey, data: Int16Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: EcdsaParams, key: CryptoKey, data: Int32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: EcdsaParams, key: CryptoKey, data: Int8Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: EcdsaParams, key: CryptoKey, data: Uint16Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: EcdsaParams, key: CryptoKey, data: Uint32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: EcdsaParams, key: CryptoKey, data: Uint8Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: EcdsaParams, key: CryptoKey, data: Uint8ClampedArray): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: RsaPssParams, key: CryptoKey, data: ArrayBuffer): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: RsaPssParams, key: CryptoKey, data: DataView): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: RsaPssParams, key: CryptoKey, data: Float32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: RsaPssParams, key: CryptoKey, data: Float64Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: RsaPssParams, key: CryptoKey, data: Int16Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: RsaPssParams, key: CryptoKey, data: Int32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: RsaPssParams, key: CryptoKey, data: Int8Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: RsaPssParams, key: CryptoKey, data: Uint16Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: RsaPssParams, key: CryptoKey, data: Uint32Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: RsaPssParams, key: CryptoKey, data: Uint8Array): js.Thenable[ArrayBuffer] = js.native
+  def sign(algorithm: RsaPssParams, key: CryptoKey, data: Uint8ClampedArray): js.Thenable[ArrayBuffer] = js.native
   def unwrapKey(
     format: raw | pkcs8 | spki | jwk | java.lang.String,
     wrappedKey: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
@@ -378,34 +422,78 @@ trait SubtleCrypto extends js.Object {
     keyUsages: js.Array[KeyUsage]
   ): js.Thenable[CryptoKey] = js.native
   def verify(
-    algorithm: AesCmacParams,
+    algorithm: AlgorithmIdentifier | RsaPssParams | EcdsaParams | AesCmacParams,
     key: CryptoKey,
     signature: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
     data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
   ): js.Thenable[scala.Boolean] = js.native
-  def verify(
-    algorithm: AlgorithmIdentifier,
-    key: CryptoKey,
-    signature: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[scala.Boolean] = js.native
-  def verify(
-    algorithm: EcdsaParams,
-    key: CryptoKey,
-    signature: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[scala.Boolean] = js.native
-  def verify(
-    algorithm: RsaPssParams,
-    key: CryptoKey,
-    signature: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
-    data: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ): js.Thenable[scala.Boolean] = js.native
+  def wrapKey(format: java.lang.String, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCbcParams): js.Thenable[ArrayBuffer] = js.native
+  def wrapKey(format: java.lang.String, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCfbParams): js.Thenable[ArrayBuffer] = js.native
+  def wrapKey(format: java.lang.String, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCmacParams): js.Thenable[ArrayBuffer] = js.native
+  def wrapKey(format: java.lang.String, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCtrParams): js.Thenable[ArrayBuffer] = js.native
+  def wrapKey(format: java.lang.String, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesGcmParams): js.Thenable[ArrayBuffer] = js.native
   def wrapKey(
-    format: raw | pkcs8 | spki | jwk | java.lang.String,
+    format: java.lang.String,
     key: CryptoKey,
     wrappingKey: CryptoKey,
-    wrapAlgorithm: AlgorithmIdentifier | RsaOaepParams | AesCtrParams | AesCbcParams | AesCmacParams | AesGcmParams | AesCfbParams
+    wrapAlgorithm: AlgorithmIdentifier
   ): js.Thenable[ArrayBuffer] = js.native
+  def wrapKey(format: java.lang.String, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: RsaOaepParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_jwk(format: jwk, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCbcParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_jwk(format: jwk, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCfbParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_jwk(format: jwk, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCmacParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_jwk(format: jwk, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCtrParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_jwk(format: jwk, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesGcmParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_jwk(format: jwk, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AlgorithmIdentifier): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_jwk(format: jwk, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: RsaOaepParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_pkcs8(format: pkcs8, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCbcParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_pkcs8(format: pkcs8, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCfbParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_pkcs8(format: pkcs8, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCmacParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_pkcs8(format: pkcs8, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCtrParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_pkcs8(format: pkcs8, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesGcmParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_pkcs8(format: pkcs8, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AlgorithmIdentifier): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_pkcs8(format: pkcs8, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: RsaOaepParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_raw(format: raw, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCbcParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_raw(format: raw, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCfbParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_raw(format: raw, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCmacParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_raw(format: raw, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCtrParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_raw(format: raw, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesGcmParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_raw(format: raw, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AlgorithmIdentifier): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_raw(format: raw, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: RsaOaepParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_spki(format: spki, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCbcParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_spki(format: spki, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCfbParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_spki(format: spki, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCmacParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_spki(format: spki, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCtrParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_spki(format: spki, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesGcmParams): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_spki(format: spki, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AlgorithmIdentifier): js.Thenable[ArrayBuffer] = js.native
+  @JSName("wrapKey")
+  def wrapKey_spki(format: spki, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: RsaOaepParams): js.Thenable[ArrayBuffer] = js.native
 }
 

@@ -2,57 +2,79 @@ package typings.bizcharts.mod
 
 import typings.bizcharts.bizchartsStrings.x
 import typings.bizcharts.bizchartsStrings.y
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CoordProps
   extends Props[js.Any] {
-  var endAngle: js.UndefOr[Double] = js.undefined
-  var innerRadius: js.UndefOr[Double] = js.undefined
-  var radius: js.UndefOr[Double] = js.undefined
-  var reflect: js.UndefOr[x | y] = js.undefined
-  var rotate: js.UndefOr[Double] = js.undefined
-  var scale: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
-  var startAngle: js.UndefOr[Double] = js.undefined
-  var transpose: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.UndefOr[CoordType] = js.undefined
+  var endAngle: js.UndefOr[Double] = js.native
+  var innerRadius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.native
+  var reflect: js.UndefOr[x | y] = js.native
+  var rotate: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var startAngle: js.UndefOr[Double] = js.native
+  var transpose: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[CoordType] = js.native
 }
 
 object CoordProps {
   @scala.inline
-  def apply(
-    children: ReactNode = null,
-    endAngle: js.UndefOr[Double] = js.undefined,
-    innerRadius: js.UndefOr[Double] = js.undefined,
-    key: Key = null,
-    radius: js.UndefOr[Double] = js.undefined,
-    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined,
-    reflect: x | y = null,
-    rotate: js.UndefOr[Double] = js.undefined,
-    scale: js.Tuple2[Double, Double] = null,
-    startAngle: js.UndefOr[Double] = js.undefined,
-    transpose: js.UndefOr[Boolean] = js.undefined,
-    `type`: CoordType = null
-  ): CoordProps = {
+  def apply(): CoordProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(endAngle)) __obj.updateDynamic("endAngle")(endAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(innerRadius)) __obj.updateDynamic("innerRadius")(innerRadius.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (reflect != null) __obj.updateDynamic("reflect")(reflect.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transpose)) __obj.updateDynamic("transpose")(transpose.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoordProps]
   }
+  @scala.inline
+  implicit class CoordPropsOps[Self <: CoordProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndAngle(value: Double): Self = this.set("endAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndAngle: Self = this.set("endAngle", js.undefined)
+    @scala.inline
+    def setInnerRadius(value: Double): Self = this.set("innerRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerRadius: Self = this.set("innerRadius", js.undefined)
+    @scala.inline
+    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadius: Self = this.set("radius", js.undefined)
+    @scala.inline
+    def setReflect(value: typings.bizcharts.bizchartsStrings.x | y): Self = this.set("reflect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReflect: Self = this.set("reflect", js.undefined)
+    @scala.inline
+    def setRotate(value: Double): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotate: Self = this.set("rotate", js.undefined)
+    @scala.inline
+    def setScale(value: js.Tuple2[Double, Double]): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    @scala.inline
+    def setTranspose(value: Boolean): Self = this.set("transpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranspose: Self = this.set("transpose", js.undefined)
+    @scala.inline
+    def setType(value: CoordType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

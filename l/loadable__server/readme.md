@@ -10,15 +10,15 @@ Server utilities for loadable.
 | ------------------ | :-------------: |
 | Full name          | @loadable/server |
 | Keywords           | loadable |
-| # releases         | 26 |
+| # releases         | 25 |
 | # dependents       | 35 |
-| # downloads        | 1238781 |
+| # downloads        | 1264454 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/smooth-code/loadable-components#readme)
-- [Bugs](https://github.com/smooth-code/loadable-components/issues)
-- [Repository](https://github.com/smooth-code/loadable-components)
+- [Homepage](https://github.com/gregberge/loadable-components#readme)
+- [Bugs](https://github.com/gregberge/loadable-components/issues)
+- [Repository](https://github.com/gregberge/loadable-components)
 - [Npm](https://www.npmjs.com/package/%40loadable%2Fserver)
     
 

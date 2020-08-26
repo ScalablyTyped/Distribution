@@ -12,7 +12,7 @@ Incremental backoff flow-control for any : fn(function(err, data) { ... });
 | Keywords           | function, backoff, incremental, exponentail, linear, control flow, flow |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 21484 |
+| # downloads        | 19802 |
 | # stars            | 1 |
 
 ## Links

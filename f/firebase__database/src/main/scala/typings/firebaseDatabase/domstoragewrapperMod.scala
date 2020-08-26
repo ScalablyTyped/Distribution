@@ -31,11 +31,11 @@ object domstoragewrapperMod extends js.Object {
       * @param {string} key
       */
     def remove(key: String): Unit = js.native
-    def set(key: String): Unit = js.native
     /**
       * @param {string} key The key to save the value under
       * @param {?Object} value The value being stored, or null to remove the key.
       */
+    def set(key: String): Unit = js.native
     def set(key: String, value: js.Any): Unit = js.native
   }
   

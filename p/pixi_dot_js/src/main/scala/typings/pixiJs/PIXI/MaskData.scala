@@ -46,11 +46,11 @@ trait MaskData extends js.Object {
     * @member {PIXI.MASK_TYPES} PIXI.MaskData#type
     */
   var `type`: MASK_TYPES = js.native
-  def copyCountersOrReset(): Unit = js.native
   /**
     * copies counters from maskData above, called from pushMask()
     * @param {PIXI.MaskData|null} maskAbove
     */
+  def copyCountersOrReset(): Unit = js.native
   def copyCountersOrReset(maskAbove: MaskData): Unit = js.native
   /**
     * resets the mask data after popMask()

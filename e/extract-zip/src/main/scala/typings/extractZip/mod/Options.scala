@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var defaultDirMode: js.UndefOr[Double] = js.undefined
-  var defaultFileMode: js.UndefOr[Double] = js.undefined
-  var dir: js.UndefOr[String] = js.undefined
-  var onEntry: js.UndefOr[js.Function2[/* entry */ js.Any, /* zipfile */ js.Any, Unit]] = js.undefined
+  var defaultDirMode: js.UndefOr[Double] = js.native
+  var defaultFileMode: js.UndefOr[Double] = js.native
+  var dir: js.UndefOr[String] = js.native
+  var onEntry: js.UndefOr[js.Function2[/* entry */ js.Any, /* zipfile */ js.Any, Unit]] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    defaultDirMode: js.UndefOr[Double] = js.undefined,
-    defaultFileMode: js.UndefOr[Double] = js.undefined,
-    dir: String = null,
-    onEntry: (/* entry */ js.Any, /* zipfile */ js.Any) => Unit = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultDirMode)) __obj.updateDynamic("defaultDirMode")(defaultDirMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultFileMode)) __obj.updateDynamic("defaultFileMode")(defaultFileMode.get.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (onEntry != null) __obj.updateDynamic("onEntry")(js.Any.fromFunction2(onEntry))
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultDirMode(value: Double): Self = this.set("defaultDirMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultDirMode: Self = this.set("defaultDirMode", js.undefined)
+    @scala.inline
+    def setDefaultFileMode(value: Double): Self = this.set("defaultFileMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultFileMode: Self = this.set("defaultFileMode", js.undefined)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setOnEntry(value: (/* entry */ js.Any, /* zipfile */ js.Any) => Unit): Self = this.set("onEntry", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnEntry: Self = this.set("onEntry", js.undefined)
+  }
+  
 }
 

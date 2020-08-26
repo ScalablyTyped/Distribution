@@ -16,7 +16,7 @@ object toggleMod extends js.Object {
   @js.native
   class Toggle () extends ComponentInterface {
     var activated: Boolean = js.native
-    var buttonEl: js.UndefOr[js.Any] = js.native
+    var buttonEl: js.Any = js.native
     /**
       * If `true`, the toggle is selected.
       */
@@ -33,7 +33,7 @@ object toggleMod extends js.Object {
     var disabled: Boolean = js.native
     var el: HTMLElement = js.native
     var emitStyle: js.Any = js.native
-    var gesture: js.UndefOr[js.Any] = js.native
+    var gesture: js.Any = js.native
     var getValue: js.Any = js.native
     var inputId: js.Any = js.native
     /**

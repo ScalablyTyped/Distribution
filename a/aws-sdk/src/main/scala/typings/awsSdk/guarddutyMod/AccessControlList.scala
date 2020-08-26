@@ -18,14 +18,30 @@ trait AccessControlList extends js.Object {
 
 object AccessControlList {
   @scala.inline
-  def apply(
-    AllowsPublicReadAccess: js.UndefOr[Boolean] = js.undefined,
-    AllowsPublicWriteAccess: js.UndefOr[Boolean] = js.undefined
-  ): AccessControlList = {
+  def apply(): AccessControlList = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowsPublicReadAccess)) __obj.updateDynamic("AllowsPublicReadAccess")(AllowsPublicReadAccess.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowsPublicWriteAccess)) __obj.updateDynamic("AllowsPublicWriteAccess")(AllowsPublicWriteAccess.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessControlList]
   }
+  @scala.inline
+  implicit class AccessControlListOps[Self <: AccessControlList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowsPublicReadAccess(value: Boolean): Self = this.set("AllowsPublicReadAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowsPublicReadAccess: Self = this.set("AllowsPublicReadAccess", js.undefined)
+    @scala.inline
+    def setAllowsPublicWriteAccess(value: Boolean): Self = this.set("AllowsPublicWriteAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowsPublicWriteAccess: Self = this.set("AllowsPublicWriteAccess", js.undefined)
+  }
+  
 }
 

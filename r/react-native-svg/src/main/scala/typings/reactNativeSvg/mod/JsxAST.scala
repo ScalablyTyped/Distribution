@@ -3,14 +3,14 @@ package typings.reactNativeSvg.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JsxAST extends AST {
   @JSName("children")
-  var children_JsxAST: js.Array[Element | String]
+  var children_JsxAST: js.Array[Element | String] = js.native
 }
 
 object JsxAST {
@@ -19,17 +19,27 @@ object JsxAST {
     Tag: ComponentType[js.Object],
     children: js.Array[Element | String],
     props: StringDictionary[js.UndefOr[Styles | String]],
-    tag: String,
-    parent: AST = null,
-    priority: Map[String, js.UndefOr[Boolean]] = null,
-    style: Styles = null,
-    styles: String = null
+    tag: String
   ): JsxAST = {
-    val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsxAST]
   }
+  @scala.inline
+  implicit class JsxASTOps[Self <: JsxAST] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildrenVarargs(value: (Element | String)*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[Element | String]): Self = this.set("children", value.asInstanceOf[js.Any])
+  }
+  
 }
 

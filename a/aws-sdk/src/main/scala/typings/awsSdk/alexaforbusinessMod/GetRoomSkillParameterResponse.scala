@@ -14,10 +14,26 @@ trait GetRoomSkillParameterResponse extends js.Object {
 
 object GetRoomSkillParameterResponse {
   @scala.inline
-  def apply(RoomSkillParameter: RoomSkillParameter = null): GetRoomSkillParameterResponse = {
+  def apply(): GetRoomSkillParameterResponse = {
     val __obj = js.Dynamic.literal()
-    if (RoomSkillParameter != null) __obj.updateDynamic("RoomSkillParameter")(RoomSkillParameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRoomSkillParameterResponse]
   }
+  @scala.inline
+  implicit class GetRoomSkillParameterResponseOps[Self <: GetRoomSkillParameterResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoomSkillParameter(value: RoomSkillParameter): Self = this.set("RoomSkillParameter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoomSkillParameter: Self = this.set("RoomSkillParameter", js.undefined)
+  }
+  
 }
 

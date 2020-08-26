@@ -13,7 +13,7 @@ trait DataViewConstructor
      with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, DataView]
      with Instantiable3[
       /* buffer */ ArrayBufferLike, 
-      /* byteOffset */ Double, 
+      js.UndefOr[/* byteOffset */ Double], 
       /* byteLength */ Double, 
       DataView
     ]

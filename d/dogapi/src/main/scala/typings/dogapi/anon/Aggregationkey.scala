@@ -22,38 +22,69 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Aggregationkey extends js.Object {
-  var aggregation_key: js.UndefOr[String] = js.undefined
-  var alert_type: js.UndefOr[error | warning | info | success] = js.undefined
-  var date_happened: js.UndefOr[Double] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var priority: js.UndefOr[normal | low] = js.undefined
+  var aggregation_key: js.UndefOr[String] = js.native
+  var alert_type: js.UndefOr[error | warning | info | success] = js.native
+  var date_happened: js.UndefOr[Double] = js.native
+  var host: js.UndefOr[String] = js.native
+  var priority: js.UndefOr[normal | low] = js.native
   var source_type_name: js.UndefOr[
     nagios | hudson | jenkins | user | (`my apps`) | feed | chef | puppet | git | bitbucket | fabric | capistrano
-  ] = js.undefined
-  var tags: js.UndefOr[js.Array[String]] = js.undefined
+  ] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.native
 }
 
 object Aggregationkey {
   @scala.inline
-  def apply(
-    aggregation_key: String = null,
-    alert_type: error | warning | info | success = null,
-    date_happened: js.UndefOr[Double] = js.undefined,
-    host: String = null,
-    priority: normal | low = null,
-    source_type_name: nagios | hudson | jenkins | user | (`my apps`) | feed | chef | puppet | git | bitbucket | fabric | capistrano = null,
-    tags: js.Array[String] = null
-  ): Aggregationkey = {
+  def apply(): Aggregationkey = {
     val __obj = js.Dynamic.literal()
-    if (aggregation_key != null) __obj.updateDynamic("aggregation_key")(aggregation_key.asInstanceOf[js.Any])
-    if (alert_type != null) __obj.updateDynamic("alert_type")(alert_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(date_happened)) __obj.updateDynamic("date_happened")(date_happened.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (source_type_name != null) __obj.updateDynamic("source_type_name")(source_type_name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Aggregationkey]
   }
+  @scala.inline
+  implicit class AggregationkeyOps[Self <: Aggregationkey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregation_key(value: String): Self = this.set("aggregation_key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregation_key: Self = this.set("aggregation_key", js.undefined)
+    @scala.inline
+    def setAlert_type(value: error | warning | info | success): Self = this.set("alert_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlert_type: Self = this.set("alert_type", js.undefined)
+    @scala.inline
+    def setDate_happened(value: Double): Self = this.set("date_happened", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate_happened: Self = this.set("date_happened", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setPriority(value: normal | low): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setSource_type_name(
+      value: nagios | hudson | jenkins | user | (`my apps`) | feed | chef | puppet | git | bitbucket | fabric | capistrano
+    ): Self = this.set("source_type_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource_type_name: Self = this.set("source_type_name", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

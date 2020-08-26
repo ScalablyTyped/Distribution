@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IHandle extends IComponent
 
 object IHandle {
   @scala.inline
-  def apply(IComponent: IComponent = null): IHandle = {
+  def apply(): IHandle = {
     val __obj = js.Dynamic.literal()
-    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
     __obj.asInstanceOf[IHandle]
   }
 }

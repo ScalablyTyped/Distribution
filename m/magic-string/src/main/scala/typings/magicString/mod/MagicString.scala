@@ -19,6 +19,7 @@ trait MagicString extends js.Object {
   def generateMap(options: PartialSourceMapOptions): SourceMap = js.native
   def getIndentString(): String = js.native
   def indent(): MagicString = js.native
+  def indent(indentStr: js.UndefOr[scala.Nothing], options: IndentOptions): MagicString = js.native
   def indent(indentStr: String): MagicString = js.native
   def indent(indentStr: String, options: IndentOptions): MagicString = js.native
   def indent(options: IndentOptions): MagicString = js.native

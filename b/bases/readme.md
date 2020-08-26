@@ -12,7 +12,7 @@ Utility for converting numbers to/from different bases/alphabets.
 | Keywords           | alphabet, base, base-36, base-58, base-62 |
 | # releases         | 0 |
 | # dependents       | 28 |
-| # downloads        | 649500 |
+| # downloads        | 658750 |
 | # stars            | 4 |
 
 ## Links

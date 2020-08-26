@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "typed-undo" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "typed-undo" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

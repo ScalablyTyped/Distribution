@@ -13,6 +13,7 @@ object mod extends js.Object {
     var length: Double = js.native
     def append(path: String): Reader = js.native
     def bindToExpress(app: js.Object): Reader = js.native
+    def bindToExpress(app: js.Object, basePath: js.UndefOr[scala.Nothing], makePaths: Boolean): Reader = js.native
     def bindToExpress(app: js.Object, basePath: String): Reader = js.native
     def bindToExpress(app: js.Object, basePath: String, makePaths: Boolean): Reader = js.native
     def each(iterator: js.Function2[/* key */ String, /* value */ Value, Unit]): Reader = js.native

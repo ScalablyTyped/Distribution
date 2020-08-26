@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/domutils/lib/element", "ElementExt.scrollIntoViewIfNeeded")
+@JSImport("@lumino/domutils/types/element", "ElementExt.scrollIntoViewIfNeeded")
 @js.native
 object scrollIntoViewIfNeeded extends js.Object {
   /**

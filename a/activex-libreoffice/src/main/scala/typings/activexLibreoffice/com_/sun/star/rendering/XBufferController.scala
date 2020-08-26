@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * This interface provides methods to enable and control double/multi-buffering facilities on screen devices.
   * @since OOo 2.0
   */
+@js.native
 trait XBufferController extends XInterface {
   /**
     * Create the given number of background buffers.
@@ -21,9 +22,9 @@ trait XBufferController extends XInterface {
     * @returns the number of actually generated buffers, which might be between 0 (no double-buffering available) and nBuffers.
     * @throws com::sun::star::lang::IllegalArgumentException if nBuffers is smaller than one.
     */
-  def createBuffers(nBuffers: Double): Double
+  def createBuffers(nBuffers: Double): Double = js.native
   /** Destroy all buffers generated via this object. */
-  def destroyBuffers(): Unit
+  def destroyBuffers(): Unit = js.native
   /**
     * Switch the display to show the specified buffer.
     *
@@ -35,7 +36,7 @@ trait XBufferController extends XInterface {
     * @returns whether the switch was performed successfully.
     * @throws com::sun::star::lang::IllegalArgumentException if nBuffer is outside the permissible range.
     */
-  def showBuffer(bUpdateAll: Boolean): Boolean
+  def showBuffer(bUpdateAll: Boolean): Boolean = js.native
   /**
     * Schedule the display of the specified buffer.
     *
@@ -50,7 +51,7 @@ trait XBufferController extends XInterface {
     * @param bUpdateAll When `TRUE` , update the whole screen. When `FALSE` , implementation is permitted to restrict update to areas the canvas itself change
     * @returns whether the switch was performed successfully.
     */
-  def switchBuffer(bUpdateAll: Boolean): Boolean
+  def switchBuffer(bUpdateAll: Boolean): Boolean = js.native
 }
 
 object XBufferController {
@@ -67,5 +68,26 @@ object XBufferController {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createBuffers = js.Any.fromFunction1(createBuffers), destroyBuffers = js.Any.fromFunction0(destroyBuffers), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), showBuffer = js.Any.fromFunction1(showBuffer), switchBuffer = js.Any.fromFunction1(switchBuffer))
     __obj.asInstanceOf[XBufferController]
   }
+  @scala.inline
+  implicit class XBufferControllerOps[Self <: XBufferController] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateBuffers(value: Double => Double): Self = this.set("createBuffers", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDestroyBuffers(value: () => Unit): Self = this.set("destroyBuffers", js.Any.fromFunction0(value))
+    @scala.inline
+    def setShowBuffer(value: Boolean => Boolean): Self = this.set("showBuffer", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSwitchBuffer(value: Boolean => Boolean): Self = this.set("switchBuffer", js.Any.fromFunction1(value))
+  }
+  
 }
 

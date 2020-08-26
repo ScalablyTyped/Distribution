@@ -7,45 +7,56 @@ import scala.scalajs.js.annotation._
 /**
   * Insurance or medical plan
   */
+@js.native
 trait ExplanationOfBenefitInsurance extends BackboneElement {
   /**
     * Contains extended information for property 'preAuthRef'.
     */
-  var _preAuthRef: js.UndefOr[js.Array[Element]] = js.undefined
+  var _preAuthRef: js.UndefOr[js.Array[Element]] = js.native
   /**
     * Insurance information
     */
-  var coverage: js.UndefOr[Reference] = js.undefined
+  var coverage: js.UndefOr[Reference] = js.native
   /**
     * Pre-Authorization/Determination Reference
     */
-  var preAuthRef: js.UndefOr[js.Array[String]] = js.undefined
+  var preAuthRef: js.UndefOr[js.Array[String]] = js.native
 }
 
 object ExplanationOfBenefitInsurance {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _preAuthRef: js.Array[Element] = null,
-    coverage: Reference = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    preAuthRef: js.Array[String] = null
-  ): ExplanationOfBenefitInsurance = {
+  def apply(): ExplanationOfBenefitInsurance = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_preAuthRef != null) __obj.updateDynamic("_preAuthRef")(_preAuthRef.asInstanceOf[js.Any])
-    if (coverage != null) __obj.updateDynamic("coverage")(coverage.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (preAuthRef != null) __obj.updateDynamic("preAuthRef")(preAuthRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplanationOfBenefitInsurance]
   }
+  @scala.inline
+  implicit class ExplanationOfBenefitInsuranceOps[Self <: ExplanationOfBenefitInsurance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_preAuthRefVarargs(value: Element*): Self = this.set("_preAuthRef", js.Array(value :_*))
+    @scala.inline
+    def set_preAuthRef(value: js.Array[Element]): Self = this.set("_preAuthRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_preAuthRef: Self = this.set("_preAuthRef", js.undefined)
+    @scala.inline
+    def setCoverage(value: Reference): Self = this.set("coverage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverage: Self = this.set("coverage", js.undefined)
+    @scala.inline
+    def setPreAuthRefVarargs(value: String*): Self = this.set("preAuthRef", js.Array(value :_*))
+    @scala.inline
+    def setPreAuthRef(value: js.Array[String]): Self = this.set("preAuthRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreAuthRef: Self = this.set("preAuthRef", js.undefined)
+  }
+  
 }
 

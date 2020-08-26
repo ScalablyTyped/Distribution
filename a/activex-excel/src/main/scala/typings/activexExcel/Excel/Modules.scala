@@ -17,16 +17,22 @@ trait Modules extends js.Object {
   var Visible: js.Any = js.native
   def apply(Index: js.Any): js.Any = js.native
   def Add(): Module = js.native
+  def Add(Before: js.UndefOr[scala.Nothing], After: js.UndefOr[scala.Nothing], Count: js.Any): Module = js.native
+  def Add(Before: js.UndefOr[scala.Nothing], After: js.Any): Module = js.native
+  def Add(Before: js.UndefOr[scala.Nothing], After: js.Any, Count: js.Any): Module = js.native
   def Add(Before: js.Any): Module = js.native
+  def Add(Before: js.Any, After: js.UndefOr[scala.Nothing], Count: js.Any): Module = js.native
   def Add(Before: js.Any, After: js.Any): Module = js.native
   def Add(Before: js.Any, After: js.Any, Count: js.Any): Module = js.native
   def Copy(): Unit = js.native
+  def Copy(Before: js.UndefOr[scala.Nothing], After: js.Any): Unit = js.native
   def Copy(Before: js.Any): Unit = js.native
   def Copy(Before: js.Any, After: js.Any): Unit = js.native
   def Delete(): Unit = js.native
   def HPageBreaks(Index: Double): HPageBreak = js.native
   def Item(Index: js.Any): js.Any = js.native
   def Move(): Unit = js.native
+  def Move(Before: js.UndefOr[scala.Nothing], After: js.Any): Unit = js.native
   def Move(Before: js.Any): Unit = js.native
   def Move(Before: js.Any, After: js.Any): Unit = js.native
   def PrintOut(

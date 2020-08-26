@@ -4,59 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateUserData extends UserData[AppMetadata, UserMetadata] {
-  var client_id: js.UndefOr[String] = js.undefined
-  var connection: js.UndefOr[String] = js.undefined
-  var verify_password: js.UndefOr[Boolean] = js.undefined
-  var verify_phone_number: js.UndefOr[Boolean] = js.undefined
+  var client_id: js.UndefOr[String] = js.native
+  var connection: js.UndefOr[String] = js.native
+  var verify_password: js.UndefOr[Boolean] = js.native
+  var verify_phone_number: js.UndefOr[Boolean] = js.native
 }
 
 object UpdateUserData {
   @scala.inline
-  def apply(
-    app_metadata: AppMetadata = null,
-    blocked: js.UndefOr[Boolean] = js.undefined,
-    client_id: String = null,
-    connection: String = null,
-    email: String = null,
-    email_verified: js.UndefOr[Boolean] = js.undefined,
-    family_name: String = null,
-    given_name: String = null,
-    name: String = null,
-    nickname: String = null,
-    password: String = null,
-    phone_number: String = null,
-    phone_verified: js.UndefOr[Boolean] = js.undefined,
-    picture: String = null,
-    user_id: String = null,
-    user_metadata: UserMetadata = null,
-    username: String = null,
-    verify_email: js.UndefOr[Boolean] = js.undefined,
-    verify_password: js.UndefOr[Boolean] = js.undefined,
-    verify_phone_number: js.UndefOr[Boolean] = js.undefined
-  ): UpdateUserData = {
+  def apply(): UpdateUserData = {
     val __obj = js.Dynamic.literal()
-    if (app_metadata != null) __obj.updateDynamic("app_metadata")(app_metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(blocked)) __obj.updateDynamic("blocked")(blocked.get.asInstanceOf[js.Any])
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
-    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.get.asInstanceOf[js.Any])
-    if (family_name != null) __obj.updateDynamic("family_name")(family_name.asInstanceOf[js.Any])
-    if (given_name != null) __obj.updateDynamic("given_name")(given_name.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
-    if (!js.isUndefined(phone_verified)) __obj.updateDynamic("phone_verified")(phone_verified.get.asInstanceOf[js.Any])
-    if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
-    if (user_metadata != null) __obj.updateDynamic("user_metadata")(user_metadata.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (!js.isUndefined(verify_email)) __obj.updateDynamic("verify_email")(verify_email.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verify_password)) __obj.updateDynamic("verify_password")(verify_password.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verify_phone_number)) __obj.updateDynamic("verify_phone_number")(verify_phone_number.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserData]
   }
+  @scala.inline
+  implicit class UpdateUserDataOps[Self <: UpdateUserData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient_id: Self = this.set("client_id", js.undefined)
+    @scala.inline
+    def setConnection(value: String): Self = this.set("connection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnection: Self = this.set("connection", js.undefined)
+    @scala.inline
+    def setVerify_password(value: Boolean): Self = this.set("verify_password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerify_password: Self = this.set("verify_password", js.undefined)
+    @scala.inline
+    def setVerify_phone_number(value: Boolean): Self = this.set("verify_phone_number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerify_phone_number: Self = this.set("verify_phone_number", js.undefined)
+  }
+  
 }
 

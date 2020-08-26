@@ -30,6 +30,7 @@ class ResourcePlacements protected () extends js.Object {
     */
   def generatetags(): GaxiosPromise[SchemaPlacementsGenerateTagsResponse] = js.native
   def generatetags(callback: BodyResponseCallback[SchemaPlacementsGenerateTagsResponse]): Unit = js.native
+  def generatetags(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementsGenerateTagsResponse] = js.native
   def generatetags(params: ParamsResourcePlacementsGeneratetags): GaxiosPromise[SchemaPlacementsGenerateTagsResponse] = js.native
   def generatetags(
     params: ParamsResourcePlacementsGeneratetags,
@@ -61,6 +62,7 @@ class ResourcePlacements protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPlacement] = js.native
   def get(callback: BodyResponseCallback[SchemaPlacement]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacement] = js.native
   def get(params: ParamsResourcePlacementsGet): GaxiosPromise[SchemaPlacement] = js.native
   def get(params: ParamsResourcePlacementsGet, callback: BodyResponseCallback[SchemaPlacement]): Unit = js.native
   def get(
@@ -89,6 +91,7 @@ class ResourcePlacements protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaPlacement] = js.native
   def insert(callback: BodyResponseCallback[SchemaPlacement]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacement] = js.native
   def insert(params: ParamsResourcePlacementsInsert): GaxiosPromise[SchemaPlacement] = js.native
   def insert(params: ParamsResourcePlacementsInsert, callback: BodyResponseCallback[SchemaPlacement]): Unit = js.native
   def insert(
@@ -139,6 +142,7 @@ class ResourcePlacements protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPlacementsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPlacementsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementsListResponse] = js.native
   def list(params: ParamsResourcePlacementsList): GaxiosPromise[SchemaPlacementsListResponse] = js.native
   def list(params: ParamsResourcePlacementsList, callback: BodyResponseCallback[SchemaPlacementsListResponse]): Unit = js.native
   def list(
@@ -169,6 +173,7 @@ class ResourcePlacements protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaPlacement] = js.native
   def patch(callback: BodyResponseCallback[SchemaPlacement]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacement] = js.native
   def patch(params: ParamsResourcePlacementsPatch): GaxiosPromise[SchemaPlacement] = js.native
   def patch(params: ParamsResourcePlacementsPatch, callback: BodyResponseCallback[SchemaPlacement]): Unit = js.native
   def patch(
@@ -197,6 +202,7 @@ class ResourcePlacements protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaPlacement] = js.native
   def update(callback: BodyResponseCallback[SchemaPlacement]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacement] = js.native
   def update(params: ParamsResourcePlacementsUpdate): GaxiosPromise[SchemaPlacement] = js.native
   def update(params: ParamsResourcePlacementsUpdate, callback: BodyResponseCallback[SchemaPlacement]): Unit = js.native
   def update(

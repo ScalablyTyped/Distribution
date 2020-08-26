@@ -30,6 +30,7 @@ object scriptMod extends js.Object {
   @js.native
   object number extends js.Object {
     def decode(buffer: Buffer): Double = js.native
+    def decode(buffer: Buffer, maxLength: js.UndefOr[scala.Nothing], minimal: Boolean): Double = js.native
     def decode(buffer: Buffer, maxLength: Double): Double = js.native
     def decode(buffer: Buffer, maxLength: Double, minimal: Boolean): Double = js.native
     def encode(_number: Double): Buffer = js.native

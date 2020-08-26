@@ -18,11 +18,32 @@ trait ListFlowExecutionMessagesResponse extends js.Object {
 
 object ListFlowExecutionMessagesResponse {
   @scala.inline
-  def apply(messages: FlowExecutionMessages = null, nextToken: NextToken = null): ListFlowExecutionMessagesResponse = {
+  def apply(): ListFlowExecutionMessagesResponse = {
     val __obj = js.Dynamic.literal()
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFlowExecutionMessagesResponse]
   }
+  @scala.inline
+  implicit class ListFlowExecutionMessagesResponseOps[Self <: ListFlowExecutionMessagesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessagesVarargs(value: FlowExecutionMessage*): Self = this.set("messages", js.Array(value :_*))
+    @scala.inline
+    def setMessages(value: FlowExecutionMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

@@ -21,11 +21,32 @@ trait SchemaBatchUpdateDocumentRequest extends js.Object {
 
 object SchemaBatchUpdateDocumentRequest {
   @scala.inline
-  def apply(requests: js.Array[SchemaRequest] = null, writeControl: SchemaWriteControl = null): SchemaBatchUpdateDocumentRequest = {
+  def apply(): SchemaBatchUpdateDocumentRequest = {
     val __obj = js.Dynamic.literal()
-    if (requests != null) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
-    if (writeControl != null) __obj.updateDynamic("writeControl")(writeControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBatchUpdateDocumentRequest]
   }
+  @scala.inline
+  implicit class SchemaBatchUpdateDocumentRequestOps[Self <: SchemaBatchUpdateDocumentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequestsVarargs(value: SchemaRequest*): Self = this.set("requests", js.Array(value :_*))
+    @scala.inline
+    def setRequests(value: js.Array[SchemaRequest]): Self = this.set("requests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequests: Self = this.set("requests", js.undefined)
+    @scala.inline
+    def setWriteControl(value: SchemaWriteControl): Self = this.set("writeControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteControl: Self = this.set("writeControl", js.undefined)
+  }
+  
 }
 

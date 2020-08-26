@@ -1,13 +1,13 @@
 package typings.rcTrigger.popupMod
 
-import typings.rcTrigger.AnonLeavedClassName
-import typings.rcTrigger.PartialPopupState
+import typings.rcTrigger.anon.LeavedClassName
+import typings.rcTrigger.anon.PartialPopupState
 import typings.rcTrigger.interfaceMod.AlignType
 import typings.rcTrigger.interfaceMod.Point
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.RefObject
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -29,7 +29,7 @@ trait Popup
   @JSName("componentWillUnmount")
   def componentWillUnmount_MPopup(): Unit = js.native
   def getAlignTarget(): Point | js.Function0[HTMLElement] = js.native
-  def getMotion(): AnonLeavedClassName = js.native
+  def getMotion(): LeavedClassName = js.native
   def getZIndexStyle(): CSSProperties = js.native
   def onAlign(popupDomNode: HTMLElement, align: AlignType): Unit = js.native
   def onMotionEnd(): Unit = js.native

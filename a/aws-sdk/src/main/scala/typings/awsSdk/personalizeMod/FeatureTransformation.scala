@@ -34,22 +34,46 @@ trait FeatureTransformation extends js.Object {
 
 object FeatureTransformation {
   @scala.inline
-  def apply(
-    creationDateTime: Date = null,
-    defaultParameters: FeaturizationParameters = null,
-    featureTransformationArn: Arn = null,
-    lastUpdatedDateTime: Date = null,
-    name: Name = null,
-    status: Status = null
-  ): FeatureTransformation = {
+  def apply(): FeatureTransformation = {
     val __obj = js.Dynamic.literal()
-    if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime.asInstanceOf[js.Any])
-    if (defaultParameters != null) __obj.updateDynamic("defaultParameters")(defaultParameters.asInstanceOf[js.Any])
-    if (featureTransformationArn != null) __obj.updateDynamic("featureTransformationArn")(featureTransformationArn.asInstanceOf[js.Any])
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureTransformation]
   }
+  @scala.inline
+  implicit class FeatureTransformationOps[Self <: FeatureTransformation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDateTime(value: Date): Self = this.set("creationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDateTime: Self = this.set("creationDateTime", js.undefined)
+    @scala.inline
+    def setDefaultParameters(value: FeaturizationParameters): Self = this.set("defaultParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultParameters: Self = this.set("defaultParameters", js.undefined)
+    @scala.inline
+    def setFeatureTransformationArn(value: Arn): Self = this.set("featureTransformationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureTransformationArn: Self = this.set("featureTransformationArn", js.undefined)
+    @scala.inline
+    def setLastUpdatedDateTime(value: Date): Self = this.set("lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedDateTime: Self = this.set("lastUpdatedDateTime", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

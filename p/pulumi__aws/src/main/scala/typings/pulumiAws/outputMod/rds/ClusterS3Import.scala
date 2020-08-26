@@ -30,16 +30,34 @@ trait ClusterS3Import extends js.Object {
 
 object ClusterS3Import {
   @scala.inline
-  def apply(
-    bucketName: String,
-    ingestionRole: String,
-    sourceEngine: String,
-    sourceEngineVersion: String,
-    bucketPrefix: String = null
-  ): ClusterS3Import = {
+  def apply(bucketName: String, ingestionRole: String, sourceEngine: String, sourceEngineVersion: String): ClusterS3Import = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], ingestionRole = ingestionRole.asInstanceOf[js.Any], sourceEngine = sourceEngine.asInstanceOf[js.Any], sourceEngineVersion = sourceEngineVersion.asInstanceOf[js.Any])
-    if (bucketPrefix != null) __obj.updateDynamic("bucketPrefix")(bucketPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterS3Import]
   }
+  @scala.inline
+  implicit class ClusterS3ImportOps[Self <: ClusterS3Import] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIngestionRole(value: String): Self = this.set("ingestionRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceEngine(value: String): Self = this.set("sourceEngine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceEngineVersion(value: String): Self = this.set("sourceEngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBucketPrefix(value: String): Self = this.set("bucketPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketPrefix: Self = this.set("bucketPrefix", js.undefined)
+  }
+  
 }
 

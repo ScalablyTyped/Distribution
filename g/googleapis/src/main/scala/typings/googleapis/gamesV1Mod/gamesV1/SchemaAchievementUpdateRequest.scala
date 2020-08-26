@@ -40,20 +40,42 @@ trait SchemaAchievementUpdateRequest extends js.Object {
 
 object SchemaAchievementUpdateRequest {
   @scala.inline
-  def apply(
-    achievementId: String = null,
-    incrementPayload: SchemaGamesAchievementIncrement = null,
-    kind: String = null,
-    setStepsAtLeastPayload: SchemaGamesAchievementSetStepsAtLeast = null,
-    updateType: String = null
-  ): SchemaAchievementUpdateRequest = {
+  def apply(): SchemaAchievementUpdateRequest = {
     val __obj = js.Dynamic.literal()
-    if (achievementId != null) __obj.updateDynamic("achievementId")(achievementId.asInstanceOf[js.Any])
-    if (incrementPayload != null) __obj.updateDynamic("incrementPayload")(incrementPayload.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (setStepsAtLeastPayload != null) __obj.updateDynamic("setStepsAtLeastPayload")(setStepsAtLeastPayload.asInstanceOf[js.Any])
-    if (updateType != null) __obj.updateDynamic("updateType")(updateType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAchievementUpdateRequest]
   }
+  @scala.inline
+  implicit class SchemaAchievementUpdateRequestOps[Self <: SchemaAchievementUpdateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAchievementId(value: String): Self = this.set("achievementId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAchievementId: Self = this.set("achievementId", js.undefined)
+    @scala.inline
+    def setIncrementPayload(value: SchemaGamesAchievementIncrement): Self = this.set("incrementPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncrementPayload: Self = this.set("incrementPayload", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setSetStepsAtLeastPayload(value: SchemaGamesAchievementSetStepsAtLeast): Self = this.set("setStepsAtLeastPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetStepsAtLeastPayload: Self = this.set("setStepsAtLeastPayload", js.undefined)
+    @scala.inline
+    def setUpdateType(value: String): Self = this.set("updateType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateType: Self = this.set("updateType", js.undefined)
+  }
+  
 }
 

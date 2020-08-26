@@ -44,36 +44,11 @@ trait Store[Q /* <: BaseQuad */]
     * @param graph     The optional exact graph or graph regex to match.
     * @return The resulting event emitter.
     */
-  def removeMatches(): EventEmitter = js.native
-  def removeMatches(subject: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: Term, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: Term, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: RegExp, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: RegExp, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: Term, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: Term, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: RegExp, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: RegExp, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: Term, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: Term, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: RegExp, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: RegExp, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: RegExp, `object`: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: RegExp, `object`: Term, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: RegExp, `object`: Term, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: RegExp, `object`: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: RegExp, `object`: RegExp, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: RegExp, `object`: RegExp, graph: RegExp): EventEmitter = js.native
+  def removeMatches(
+    subject: js.UndefOr[Term | RegExp],
+    predicate: js.UndefOr[Term | RegExp],
+    `object`: js.UndefOr[Term | RegExp],
+    graph: js.UndefOr[Term | RegExp]
+  ): EventEmitter = js.native
 }
 

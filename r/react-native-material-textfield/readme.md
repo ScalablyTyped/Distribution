@@ -12,7 +12,7 @@ Material textfield
 | Keywords           | react, react-component, react-native, ios, android, material, input, textinput, field, textfield, floating, label |
 | # releases         | 8 |
 | # dependents       | 19 |
-| # downloads        | 882934 |
+| # downloads        | 914679 |
 | # stars            | 4 |
 
 ## Links

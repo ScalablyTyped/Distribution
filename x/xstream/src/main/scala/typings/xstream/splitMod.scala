@@ -1,6 +1,5 @@
 package typings.xstream
 
-import typings.xstream.mod.InternalListener
 import typings.xstream.mod.Operator
 import typings.xstream.mod.Stream
 import scala.scalajs.js
@@ -15,26 +14,8 @@ object splitMod extends js.Object {
     def this( // s = separator
     s: Stream[_], ins: Stream[T]) = this()
     var curr: Stream[T] = js.native
-    /* CompleteClass */
-    override var ins: Stream[T] = js.native
-    /* CompleteClass */
-    override var out: Stream[Stream[T]] = js.native
     var s: Stream[_] = js.native
     var sil: js.Any = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
-    /* CompleteClass */
-    override def _c(): Unit = js.native
-    /* CompleteClass */
-    override def _e(err: js.Any): Unit = js.native
-    /* CompleteClass */
-    override def _n(v: T): Unit = js.native
-    /* CompleteClass */
-    override def _start(listener: InternalListener[Stream[T]]): Unit = js.native
-    /* CompleteClass */
-    override def _start(out: Stream[Stream[T]]): Unit = js.native
-    /* CompleteClass */
-    override def _stop(): Unit = js.native
     def up(): Unit = js.native
   }
   

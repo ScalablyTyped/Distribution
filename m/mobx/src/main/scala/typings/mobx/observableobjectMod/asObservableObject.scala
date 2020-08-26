@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object asObservableObject extends js.Object {
   def apply(target: js.Any): ObservableObjectAdministration = js.native
+  def apply(target: js.Any, name: js.UndefOr[PropertyKey], defaultEnhancer: IEnhancer[_]): ObservableObjectAdministration = js.native
   def apply(target: js.Any, name: PropertyKey): ObservableObjectAdministration = js.native
-  def apply(target: js.Any, name: PropertyKey, defaultEnhancer: IEnhancer[_]): ObservableObjectAdministration = js.native
 }
 

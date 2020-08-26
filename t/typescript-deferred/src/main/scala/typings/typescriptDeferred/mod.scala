@@ -30,7 +30,7 @@ object mod extends js.Object {
     def `then`[TP](): ThenableInterface[TP] = js.native
     def `then`[TP](successCB: (DeferredSuccessCB[T, TP]) | (ImmediateSuccessCB[T, TP])): ThenableInterface[TP] = js.native
     def `then`[TP](
-      successCB: (DeferredSuccessCB[T, TP]) | (ImmediateSuccessCB[T, TP]),
+      successCB: js.UndefOr[(DeferredSuccessCB[T, TP]) | (ImmediateSuccessCB[T, TP])],
       errorCB: DeferredErrorCB[TP] | ImmediateErrorCB[TP]
     ): ThenableInterface[TP] = js.native
   }

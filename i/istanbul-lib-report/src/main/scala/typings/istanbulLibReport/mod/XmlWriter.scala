@@ -19,6 +19,7 @@ trait XmlWriter extends js.Object {
     * writes a tag and its value opening and closing it at the same time
     */
   def inlineTag(name: String): Unit = js.native
+  def inlineTag(name: String, attrs: js.UndefOr[scala.Nothing], content: String): Unit = js.native
   def inlineTag(name: String, attrs: js.Any): Unit = js.native
   def inlineTag(name: String, attrs: js.Any, content: String): Unit = js.native
   /**

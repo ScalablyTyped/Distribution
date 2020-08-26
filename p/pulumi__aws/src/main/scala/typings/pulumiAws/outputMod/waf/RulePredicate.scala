@@ -12,9 +12,9 @@ trait RulePredicate extends js.Object {
   var dataId: String = js.native
   /**
     * Set this to `false` if you want to allow, block, or count requests
-    * based on the settings in the specified [wafByteMatchSet](https://www.terraform.io/docs/providers/aws/r/waf_byte_match_set.html), [wafIpset](https://www.terraform.io/docs/providers/aws/r/waf_ipset.html), [aws.waf.SizeConstraintSet](https://www.terraform.io/docs/providers/aws/r/waf_size_constraint_set.html), [aws.waf.SqlInjectionMatchSet](https://www.terraform.io/docs/providers/aws/r/waf_sql_injection_match_set.html) or [aws.waf.XssMatchSet](https://www.terraform.io/docs/providers/aws/r/waf_xss_match_set.html).
+    * based on the settings in the specified `wafByteMatchSet`, `wafIpset`, `aws.waf.SizeConstraintSet`, `aws.waf.SqlInjectionMatchSet` or `aws.waf.XssMatchSet`.
     * For example, if an IPSet includes the IP address `192.0.2.44`, AWS WAF will allow or block requests based on that IP address.
-    * If set to `true`, AWS WAF will allow, block, or count requests based on all IP addresses _except_ `192.0.2.44`.
+    * If set to `true`, AWS WAF will allow, block, or count requests based on all IP addresses except `192.0.2.44`.
     */
   var negated: Boolean = js.native
   /**
@@ -30,5 +30,24 @@ object RulePredicate {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulePredicate]
   }
+  @scala.inline
+  implicit class RulePredicateOps[Self <: RulePredicate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataId(value: String): Self = this.set("dataId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNegated(value: Boolean): Self = this.set("negated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -42,24 +42,52 @@ trait ReEncryptRequest extends js.Object {
 
 object ReEncryptRequest {
   @scala.inline
-  def apply(
-    CiphertextBlob: CiphertextType,
-    DestinationKeyId: KeyIdType,
-    DestinationEncryptionAlgorithm: EncryptionAlgorithmSpec = null,
-    DestinationEncryptionContext: EncryptionContextType = null,
-    GrantTokens: GrantTokenList = null,
-    SourceEncryptionAlgorithm: EncryptionAlgorithmSpec = null,
-    SourceEncryptionContext: EncryptionContextType = null,
-    SourceKeyId: KeyIdType = null
-  ): ReEncryptRequest = {
+  def apply(CiphertextBlob: CiphertextType, DestinationKeyId: KeyIdType): ReEncryptRequest = {
     val __obj = js.Dynamic.literal(CiphertextBlob = CiphertextBlob.asInstanceOf[js.Any], DestinationKeyId = DestinationKeyId.asInstanceOf[js.Any])
-    if (DestinationEncryptionAlgorithm != null) __obj.updateDynamic("DestinationEncryptionAlgorithm")(DestinationEncryptionAlgorithm.asInstanceOf[js.Any])
-    if (DestinationEncryptionContext != null) __obj.updateDynamic("DestinationEncryptionContext")(DestinationEncryptionContext.asInstanceOf[js.Any])
-    if (GrantTokens != null) __obj.updateDynamic("GrantTokens")(GrantTokens.asInstanceOf[js.Any])
-    if (SourceEncryptionAlgorithm != null) __obj.updateDynamic("SourceEncryptionAlgorithm")(SourceEncryptionAlgorithm.asInstanceOf[js.Any])
-    if (SourceEncryptionContext != null) __obj.updateDynamic("SourceEncryptionContext")(SourceEncryptionContext.asInstanceOf[js.Any])
-    if (SourceKeyId != null) __obj.updateDynamic("SourceKeyId")(SourceKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReEncryptRequest]
   }
+  @scala.inline
+  implicit class ReEncryptRequestOps[Self <: ReEncryptRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCiphertextBlob(value: CiphertextType): Self = this.set("CiphertextBlob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationKeyId(value: KeyIdType): Self = this.set("DestinationKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = this.set("DestinationEncryptionAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationEncryptionAlgorithm: Self = this.set("DestinationEncryptionAlgorithm", js.undefined)
+    @scala.inline
+    def setDestinationEncryptionContext(value: EncryptionContextType): Self = this.set("DestinationEncryptionContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationEncryptionContext: Self = this.set("DestinationEncryptionContext", js.undefined)
+    @scala.inline
+    def setGrantTokensVarargs(value: GrantTokenType*): Self = this.set("GrantTokens", js.Array(value :_*))
+    @scala.inline
+    def setGrantTokens(value: GrantTokenList): Self = this.set("GrantTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantTokens: Self = this.set("GrantTokens", js.undefined)
+    @scala.inline
+    def setSourceEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = this.set("SourceEncryptionAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceEncryptionAlgorithm: Self = this.set("SourceEncryptionAlgorithm", js.undefined)
+    @scala.inline
+    def setSourceEncryptionContext(value: EncryptionContextType): Self = this.set("SourceEncryptionContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceEncryptionContext: Self = this.set("SourceEncryptionContext", js.undefined)
+    @scala.inline
+    def setSourceKeyId(value: KeyIdType): Self = this.set("SourceKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceKeyId: Self = this.set("SourceKeyId", js.undefined)
+  }
+  
 }
 

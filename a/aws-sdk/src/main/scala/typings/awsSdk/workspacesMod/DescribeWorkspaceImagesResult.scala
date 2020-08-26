@@ -18,11 +18,32 @@ trait DescribeWorkspaceImagesResult extends js.Object {
 
 object DescribeWorkspaceImagesResult {
   @scala.inline
-  def apply(Images: WorkspaceImageList = null, NextToken: PaginationToken = null): DescribeWorkspaceImagesResult = {
+  def apply(): DescribeWorkspaceImagesResult = {
     val __obj = js.Dynamic.literal()
-    if (Images != null) __obj.updateDynamic("Images")(Images.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorkspaceImagesResult]
   }
+  @scala.inline
+  implicit class DescribeWorkspaceImagesResultOps[Self <: DescribeWorkspaceImagesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImagesVarargs(value: WorkspaceImage*): Self = this.set("Images", js.Array(value :_*))
+    @scala.inline
+    def setImages(value: WorkspaceImageList): Self = this.set("Images", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImages: Self = this.set("Images", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

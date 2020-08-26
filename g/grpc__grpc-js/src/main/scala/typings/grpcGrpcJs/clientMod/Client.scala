@@ -21,7 +21,6 @@ class Client protected () extends js.Object {
   def this(address: String, credentials: ChannelCredentials, options: ClientOptions) = this()
   var checkMetadataAndOptions: js.Any = js.native
   var checkOptionalUnaryResponseArguments: js.Any = js.native
-  var handleUnaryResponse: js.Any = js.native
   def close(): Unit = js.native
   def getChannel(): Channel = js.native
   def makeBidiStreamRequest[RequestType, ResponseType](

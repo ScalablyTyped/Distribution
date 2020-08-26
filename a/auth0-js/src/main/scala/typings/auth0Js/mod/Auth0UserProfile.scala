@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Auth0UserProfile extends js.Object {
-  var app_metadata: js.UndefOr[js.Any] = js.undefined
-  var clientID: String
-  var created_at: String
-  var email: js.UndefOr[String] = js.undefined
-  var email_verified: js.UndefOr[Boolean] = js.undefined
-  var family_name: js.UndefOr[String] = js.undefined
-  var gender: js.UndefOr[String] = js.undefined
-  var given_name: js.UndefOr[String] = js.undefined
-  var identities: js.Array[Auth0Identity]
-  var locale: js.UndefOr[String] = js.undefined
-  var name: String
-  var nickname: String
-  var picture: String
-  var sub: String
-  var updated_at: String
-  var user_id: String
-  var user_metadata: js.UndefOr[js.Any] = js.undefined
-  var username: js.UndefOr[String] = js.undefined
+  var app_metadata: js.UndefOr[js.Any] = js.native
+  var clientID: String = js.native
+  var created_at: String = js.native
+  var email: js.UndefOr[String] = js.native
+  var email_verified: js.UndefOr[Boolean] = js.native
+  var family_name: js.UndefOr[String] = js.native
+  var gender: js.UndefOr[String] = js.native
+  var given_name: js.UndefOr[String] = js.native
+  var identities: js.Array[Auth0Identity] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var name: String = js.native
+  var nickname: String = js.native
+  var picture: String = js.native
+  var sub: String = js.native
+  var updated_at: String = js.native
+  var user_id: String = js.native
+  var user_metadata: js.UndefOr[js.Any] = js.native
+  var username: js.UndefOr[String] = js.native
 }
 
 object Auth0UserProfile {
@@ -36,28 +37,79 @@ object Auth0UserProfile {
     picture: String,
     sub: String,
     updated_at: String,
-    user_id: String,
-    app_metadata: js.Any = null,
-    email: String = null,
-    email_verified: js.UndefOr[Boolean] = js.undefined,
-    family_name: String = null,
-    gender: String = null,
-    given_name: String = null,
-    locale: String = null,
-    user_metadata: js.Any = null,
-    username: String = null
+    user_id: String
   ): Auth0UserProfile = {
     val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], identities = identities.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
-    if (app_metadata != null) __obj.updateDynamic("app_metadata")(app_metadata.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.get.asInstanceOf[js.Any])
-    if (family_name != null) __obj.updateDynamic("family_name")(family_name.asInstanceOf[js.Any])
-    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
-    if (given_name != null) __obj.updateDynamic("given_name")(given_name.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (user_metadata != null) __obj.updateDynamic("user_metadata")(user_metadata.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0UserProfile]
   }
+  @scala.inline
+  implicit class Auth0UserProfileOps[Self <: Auth0UserProfile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientID(value: String): Self = this.set("clientID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentitiesVarargs(value: Auth0Identity*): Self = this.set("identities", js.Array(value :_*))
+    @scala.inline
+    def setIdentities(value: js.Array[Auth0Identity]): Self = this.set("identities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPicture(value: String): Self = this.set("picture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSub(value: String): Self = this.set("sub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUser_id(value: String): Self = this.set("user_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApp_metadata(value: js.Any): Self = this.set("app_metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApp_metadata: Self = this.set("app_metadata", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setEmail_verified(value: Boolean): Self = this.set("email_verified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail_verified: Self = this.set("email_verified", js.undefined)
+    @scala.inline
+    def setFamily_name(value: String): Self = this.set("family_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamily_name: Self = this.set("family_name", js.undefined)
+    @scala.inline
+    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGender: Self = this.set("gender", js.undefined)
+    @scala.inline
+    def setGiven_name(value: String): Self = this.set("given_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGiven_name: Self = this.set("given_name", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setUser_metadata(value: js.Any): Self = this.set("user_metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser_metadata: Self = this.set("user_metadata", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

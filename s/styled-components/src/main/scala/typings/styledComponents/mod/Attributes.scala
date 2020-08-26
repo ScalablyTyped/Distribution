@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Attributes extends js.Object {
   // NOTE: unlike the plain javascript version, it is not possible to get access
   // to the element's own attributes inside function interpolations.
@@ -19,15 +20,31 @@ trait Attributes extends js.Object {
     * `babel-plugin-styled-components` into a styled component
     * with the given css as its styles.
     */
-  var css: js.UndefOr[CSSProp[AnyIfEmpty[DefaultTheme]]] = js.undefined
+  var css: js.UndefOr[CSSProp[AnyIfEmpty[DefaultTheme]]] = js.native
 }
 
 object Attributes {
   @scala.inline
-  def apply(css: CSSProp[AnyIfEmpty[DefaultTheme]] = null): Attributes = {
+  def apply(): Attributes = {
     val __obj = js.Dynamic.literal()
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
+  @scala.inline
+  implicit class AttributesOps[Self <: Attributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCss(value: CSSProp[AnyIfEmpty[DefaultTheme]]): Self = this.set("css", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCss: Self = this.set("css", js.undefined)
+  }
+  
 }
 

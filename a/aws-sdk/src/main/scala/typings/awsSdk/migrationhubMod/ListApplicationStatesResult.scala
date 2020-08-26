@@ -18,11 +18,32 @@ trait ListApplicationStatesResult extends js.Object {
 
 object ListApplicationStatesResult {
   @scala.inline
-  def apply(ApplicationStateList: ApplicationStateList = null, NextToken: Token = null): ListApplicationStatesResult = {
+  def apply(): ListApplicationStatesResult = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationStateList != null) __obj.updateDynamic("ApplicationStateList")(ApplicationStateList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListApplicationStatesResult]
   }
+  @scala.inline
+  implicit class ListApplicationStatesResultOps[Self <: ListApplicationStatesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationStateListVarargs(value: ApplicationState*): Self = this.set("ApplicationStateList", js.Array(value :_*))
+    @scala.inline
+    def setApplicationStateList(value: ApplicationStateList): Self = this.set("ApplicationStateList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationStateList: Self = this.set("ApplicationStateList", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

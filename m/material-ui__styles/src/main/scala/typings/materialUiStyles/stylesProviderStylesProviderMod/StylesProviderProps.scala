@@ -1,39 +1,37 @@
 package typings.materialUiStyles.stylesProviderStylesProviderMod
 
-import typings.jss.mod.Jss
-import typings.jss.mod.Rule
-import typings.jss.mod.StyleSheet
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StylesProviderProps extends StylesOptions {
-  var children: ReactNode
+  var children: ReactNode = js.native
 }
 
 object StylesProviderProps {
   @scala.inline
-  def apply(
-    children: ReactNode = null,
-    disableGeneration: js.UndefOr[Boolean] = js.undefined,
-    generateClassName: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String = null,
-    injectFirst: js.UndefOr[Boolean] = js.undefined,
-    jss: Jss = null,
-    sheetsCache: js.Object = null,
-    sheetsManager: js.Object = null,
-    sheetsRegistry: js.Object = null
-  ): StylesProviderProps = {
+  def apply(): StylesProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableGeneration)) __obj.updateDynamic("disableGeneration")(disableGeneration.get.asInstanceOf[js.Any])
-    if (generateClassName != null) __obj.updateDynamic("generateClassName")(js.Any.fromFunction2(generateClassName))
-    if (!js.isUndefined(injectFirst)) __obj.updateDynamic("injectFirst")(injectFirst.get.asInstanceOf[js.Any])
-    if (jss != null) __obj.updateDynamic("jss")(jss.asInstanceOf[js.Any])
-    if (sheetsCache != null) __obj.updateDynamic("sheetsCache")(sheetsCache.asInstanceOf[js.Any])
-    if (sheetsManager != null) __obj.updateDynamic("sheetsManager")(sheetsManager.asInstanceOf[js.Any])
-    if (sheetsRegistry != null) __obj.updateDynamic("sheetsRegistry")(sheetsRegistry.asInstanceOf[js.Any])
     __obj.asInstanceOf[StylesProviderProps]
   }
+  @scala.inline
+  implicit class StylesProviderPropsOps[Self <: StylesProviderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+  }
+  
 }
 

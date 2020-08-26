@@ -29,6 +29,7 @@ class ResourceBudget protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaBudget] = js.native
   def get(callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBudget] = js.native
   def get(params: ParamsResourceBudgetGet): GaxiosPromise[SchemaBudget] = js.native
   def get(params: ParamsResourceBudgetGet, callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
   def get(
@@ -60,6 +61,7 @@ class ResourceBudget protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaBudget] = js.native
   def patch(callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBudget] = js.native
   def patch(params: ParamsResourceBudgetPatch): GaxiosPromise[SchemaBudget] = js.native
   def patch(params: ParamsResourceBudgetPatch, callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
   def patch(
@@ -90,6 +92,7 @@ class ResourceBudget protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaBudget] = js.native
   def update(callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBudget] = js.native
   def update(params: ParamsResourceBudgetUpdate): GaxiosPromise[SchemaBudget] = js.native
   def update(params: ParamsResourceBudgetUpdate, callback: BodyResponseCallback[SchemaBudget]): Unit = js.native
   def update(

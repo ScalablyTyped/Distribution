@@ -46,24 +46,50 @@ trait SchemaReadinessCheck extends js.Object {
 
 object SchemaReadinessCheck {
   @scala.inline
-  def apply(
-    appStartTimeout: String = null,
-    checkInterval: String = null,
-    failureThreshold: js.UndefOr[Double] = js.undefined,
-    host: String = null,
-    path: String = null,
-    successThreshold: js.UndefOr[Double] = js.undefined,
-    timeout: String = null
-  ): SchemaReadinessCheck = {
+  def apply(): SchemaReadinessCheck = {
     val __obj = js.Dynamic.literal()
-    if (appStartTimeout != null) __obj.updateDynamic("appStartTimeout")(appStartTimeout.asInstanceOf[js.Any])
-    if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(failureThreshold)) __obj.updateDynamic("failureThreshold")(failureThreshold.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(successThreshold)) __obj.updateDynamic("successThreshold")(successThreshold.get.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReadinessCheck]
   }
+  @scala.inline
+  implicit class SchemaReadinessCheckOps[Self <: SchemaReadinessCheck] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppStartTimeout(value: String): Self = this.set("appStartTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppStartTimeout: Self = this.set("appStartTimeout", js.undefined)
+    @scala.inline
+    def setCheckInterval(value: String): Self = this.set("checkInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckInterval: Self = this.set("checkInterval", js.undefined)
+    @scala.inline
+    def setFailureThreshold(value: Double): Self = this.set("failureThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureThreshold: Self = this.set("failureThreshold", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setSuccessThreshold(value: Double): Self = this.set("successThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessThreshold: Self = this.set("successThreshold", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

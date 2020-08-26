@@ -52,7 +52,7 @@ object firestoreMod extends js.Object {
     @js.native
     object v1
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Firestore]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Firestore]
             ]
     
     @js.native
@@ -60,7 +60,7 @@ object firestoreMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1.Firestore
               ]
             ]
@@ -70,7 +70,7 @@ object firestoreMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2.Firestore
               ]
             ]

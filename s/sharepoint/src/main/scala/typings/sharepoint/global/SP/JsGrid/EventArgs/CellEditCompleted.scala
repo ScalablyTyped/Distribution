@@ -10,13 +10,5 @@ import scala.scalajs.js.annotation._
 class CellEditCompleted protected ()
   extends typings.sharepoint.SP.JsGrid.EventArgs.CellEditCompleted {
   def this(recordKey: Double, fieldKey: String, changeKey: IChangeKey, bCancelled: Boolean) = this()
-  /* CompleteClass */
-  override var bCancelled: Boolean = js.native
-  /* CompleteClass */
-  override var changeKey: IChangeKey = js.native
-  /* CompleteClass */
-  override var fieldKey: String = js.native
-  /* CompleteClass */
-  override var recordKey: Double = js.native
 }
 

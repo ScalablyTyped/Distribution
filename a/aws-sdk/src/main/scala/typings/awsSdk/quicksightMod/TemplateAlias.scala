@@ -22,16 +22,34 @@ trait TemplateAlias extends js.Object {
 
 object TemplateAlias {
   @scala.inline
-  def apply(
-    AliasName: AliasName = null,
-    Arn: Arn = null,
-    TemplateVersionNumber: js.UndefOr[VersionNumber] = js.undefined
-  ): TemplateAlias = {
+  def apply(): TemplateAlias = {
     val __obj = js.Dynamic.literal()
-    if (AliasName != null) __obj.updateDynamic("AliasName")(AliasName.asInstanceOf[js.Any])
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(TemplateVersionNumber)) __obj.updateDynamic("TemplateVersionNumber")(TemplateVersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateAlias]
   }
+  @scala.inline
+  implicit class TemplateAliasOps[Self <: TemplateAlias] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasName(value: AliasName): Self = this.set("AliasName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasName: Self = this.set("AliasName", js.undefined)
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setTemplateVersionNumber(value: VersionNumber): Self = this.set("TemplateVersionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateVersionNumber: Self = this.set("TemplateVersionNumber", js.undefined)
+  }
+  
 }
 

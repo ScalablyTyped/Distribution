@@ -12,7 +12,7 @@ Module for creating an accessible, progressively enhanced floating label
 | Keywords           | makeup, ebay, accessibility, a11y |
 | # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 4257 |
+| # downloads        | 4355 |
 | # stars            | 0 |
 
 ## Links

@@ -21,13 +21,47 @@ object linuxTargetHelperMod extends js.Object {
     val mimeTypeFilesPromise: js.Any = js.native
     var packager: js.Any = js.native
     def computeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions): js.Promise[String] = js.native
+    def computeDesktopEntry(
+      targetSpecificOptions: LinuxTargetSpecificOptions,
+      exec: js.UndefOr[scala.Nothing],
+      extra: StringDictionary[String]
+    ): js.Promise[String] = js.native
     def computeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions, exec: String): js.Promise[String] = js.native
     def computeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions, exec: String, extra: StringDictionary[String]): js.Promise[String] = js.native
     def getDescription(options: LinuxTargetSpecificOptions): String = js.native
     def icons: js.Promise[js.Array[IconInfo]] = js.native
     def mimeTypeFiles: js.Promise[String | Null] = js.native
     def writeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions): js.Promise[String] = js.native
+    def writeDesktopEntry(
+      targetSpecificOptions: LinuxTargetSpecificOptions,
+      exec: js.UndefOr[scala.Nothing],
+      destination: js.UndefOr[scala.Nothing],
+      extra: StringDictionary[String]
+    ): js.Promise[String] = js.native
+    def writeDesktopEntry(
+      targetSpecificOptions: LinuxTargetSpecificOptions,
+      exec: js.UndefOr[scala.Nothing],
+      destination: String
+    ): js.Promise[String] = js.native
+    def writeDesktopEntry(
+      targetSpecificOptions: LinuxTargetSpecificOptions,
+      exec: js.UndefOr[scala.Nothing],
+      destination: String,
+      extra: StringDictionary[String]
+    ): js.Promise[String] = js.native
+    def writeDesktopEntry(
+      targetSpecificOptions: LinuxTargetSpecificOptions,
+      exec: js.UndefOr[scala.Nothing],
+      destination: Null,
+      extra: StringDictionary[String]
+    ): js.Promise[String] = js.native
     def writeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions, exec: String): js.Promise[String] = js.native
+    def writeDesktopEntry(
+      targetSpecificOptions: LinuxTargetSpecificOptions,
+      exec: String,
+      destination: js.UndefOr[scala.Nothing],
+      extra: StringDictionary[String]
+    ): js.Promise[String] = js.native
     def writeDesktopEntry(targetSpecificOptions: LinuxTargetSpecificOptions, exec: String, destination: String): js.Promise[String] = js.native
     def writeDesktopEntry(
       targetSpecificOptions: LinuxTargetSpecificOptions,

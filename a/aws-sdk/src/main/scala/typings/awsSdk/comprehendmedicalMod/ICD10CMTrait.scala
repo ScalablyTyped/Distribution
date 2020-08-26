@@ -18,11 +18,30 @@ trait ICD10CMTrait extends js.Object {
 
 object ICD10CMTrait {
   @scala.inline
-  def apply(Name: ICD10CMTraitName = null, Score: js.UndefOr[Float] = js.undefined): ICD10CMTrait = {
+  def apply(): ICD10CMTrait = {
     val __obj = js.Dynamic.literal()
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICD10CMTrait]
   }
+  @scala.inline
+  implicit class ICD10CMTraitOps[Self <: ICD10CMTrait] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: ICD10CMTraitName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setScore(value: Float): Self = this.set("Score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("Score", js.undefined)
+  }
+  
 }
 

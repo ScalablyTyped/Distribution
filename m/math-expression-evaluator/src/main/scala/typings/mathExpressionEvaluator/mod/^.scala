@@ -14,6 +14,7 @@ object ^ extends js.Object {
   def addToken(tokens: js.Array[Token]): Unit = js.native
   def eval(exp: String): String = js.native
   def eval(exp: String, mexp: js.Object): String = js.native
+  def eval(exp: String, tokens: js.UndefOr[scala.Nothing], pair: js.Object): String = js.native
   def eval(exp: String, tokens: js.Array[Token]): String = js.native
   def eval(exp: String, tokens: js.Array[Token], pair: js.Object): String = js.native
   def lex(inp: String): Mexp = js.native

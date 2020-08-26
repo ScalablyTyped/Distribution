@@ -8,119 +8,142 @@ import scala.scalajs.js.annotation._
   * A generic person record
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait Person extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait Person extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */
-  var _active: js.UndefOr[Element] = js.undefined
+  var _active: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'birthDate'.
     */
-  var _birthDate: js.UndefOr[Element] = js.undefined
+  var _birthDate: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'gender'.
     */
-  var _gender: js.UndefOr[Element] = js.undefined
+  var _gender: js.UndefOr[Element] = js.native
   /**
     * This person's record is in active use
     */
-  var active: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
   /**
     * One or more addresses for the person
     */
-  var address: js.UndefOr[js.Array[Address]] = js.undefined
+  var address: js.UndefOr[js.Array[Address]] = js.native
   /**
     * The date on which the person was born
     */
-  var birthDate: js.UndefOr[date] = js.undefined
+  var birthDate: js.UndefOr[date] = js.native
   /**
     * male | female | other | unknown
     */
-  var gender: js.UndefOr[code] = js.undefined
+  var gender: js.UndefOr[code] = js.native
   /**
     * A human identifier for this person
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Link to a resource that concerns the same actual person
     */
-  var link: js.UndefOr[js.Array[PersonLink]] = js.undefined
+  var link: js.UndefOr[js.Array[PersonLink]] = js.native
   /**
     * The organization that is the custodian of the person record
     */
-  var managingOrganization: js.UndefOr[Reference] = js.undefined
+  var managingOrganization: js.UndefOr[Reference] = js.native
   /**
     * A name associated with the person
     */
-  var name: js.UndefOr[js.Array[HumanName]] = js.undefined
+  var name: js.UndefOr[js.Array[HumanName]] = js.native
   /**
     * Image of the person
     */
-  var photo: js.UndefOr[Attachment] = js.undefined
+  var photo: js.UndefOr[Attachment] = js.native
   /**
     * A contact detail for the person
     */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
+  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.native
 }
 
 object Person {
   @scala.inline
-  def apply(
-    _active: Element = null,
-    _birthDate: Element = null,
-    _gender: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    address: js.Array[Address] = null,
-    birthDate: date = null,
-    contained: js.Array[Resource] = null,
-    extension: js.Array[Extension] = null,
-    gender: code = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    link: js.Array[PersonLink] = null,
-    managingOrganization: Reference = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    name: js.Array[HumanName] = null,
-    photo: Attachment = null,
-    resourceType: code = null,
-    telecom: js.Array[ContactPoint] = null,
-    text: Narrative = null
-  ): Person = {
+  def apply(): Person = {
     val __obj = js.Dynamic.literal()
-    if (_active != null) __obj.updateDynamic("_active")(_active.asInstanceOf[js.Any])
-    if (_birthDate != null) __obj.updateDynamic("_birthDate")(_birthDate.asInstanceOf[js.Any])
-    if (_gender != null) __obj.updateDynamic("_gender")(_gender.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (birthDate != null) __obj.updateDynamic("birthDate")(birthDate.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (managingOrganization != null) __obj.updateDynamic("managingOrganization")(managingOrganization.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (telecom != null) __obj.updateDynamic("telecom")(telecom.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Person]
   }
+  @scala.inline
+  implicit class PersonOps[Self <: Person] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_active(value: Element): Self = this.set("_active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_active: Self = this.set("_active", js.undefined)
+    @scala.inline
+    def set_birthDate(value: Element): Self = this.set("_birthDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_birthDate: Self = this.set("_birthDate", js.undefined)
+    @scala.inline
+    def set_gender(value: Element): Self = this.set("_gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_gender: Self = this.set("_gender", js.undefined)
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setAddressVarargs(value: Address*): Self = this.set("address", js.Array(value :_*))
+    @scala.inline
+    def setAddress(value: js.Array[Address]): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setBirthDate(value: date): Self = this.set("birthDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBirthDate: Self = this.set("birthDate", js.undefined)
+    @scala.inline
+    def setGender(value: code): Self = this.set("gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGender: Self = this.set("gender", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setLinkVarargs(value: PersonLink*): Self = this.set("link", js.Array(value :_*))
+    @scala.inline
+    def setLink(value: js.Array[PersonLink]): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setManagingOrganization(value: Reference): Self = this.set("managingOrganization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagingOrganization: Self = this.set("managingOrganization", js.undefined)
+    @scala.inline
+    def setNameVarargs(value: HumanName*): Self = this.set("name", js.Array(value :_*))
+    @scala.inline
+    def setName(value: js.Array[HumanName]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPhoto(value: Attachment): Self = this.set("photo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoto: Self = this.set("photo", js.undefined)
+    @scala.inline
+    def setTelecomVarargs(value: ContactPoint*): Self = this.set("telecom", js.Array(value :_*))
+    @scala.inline
+    def setTelecom(value: js.Array[ContactPoint]): Self = this.set("telecom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTelecom: Self = this.set("telecom", js.undefined)
+  }
+  
 }
 

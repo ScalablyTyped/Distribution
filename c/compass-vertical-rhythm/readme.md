@@ -11,8 +11,8 @@ A port-in-progress of the Compass vertical rhythm library
 | Full name          | compass-vertical-rhythm |
 | Keywords           | sass, compass, vertical-rhythm, css, typography |
 | # releases         | 5 |
-| # dependents       | 18 |
-| # downloads        | 1972545 |
+| # dependents       | 19 |
+| # downloads        | 2007291 |
 | # stars            | 0 |
 
 ## Links

@@ -35,6 +35,7 @@ trait CollectionAnimation extends js.Object {
     * http://js.cytoscape.org/#eles.stop
     */
   def stop(): this.type = js.native
+  def stop(clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): this.type = js.native
   def stop(clearQueue: Boolean): this.type = js.native
   def stop(clearQueue: Boolean, jumpToEnd: Boolean): this.type = js.native
 }

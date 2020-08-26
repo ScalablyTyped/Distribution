@@ -30,20 +30,42 @@ trait Member extends js.Object {
 
 object Member {
   @scala.inline
-  def apply(
-    AccountId: NonEmptyString = null,
-    Email: SensitiveString = null,
-    FullName: SensitiveString = null,
-    MemberId: NonEmptyString = null,
-    MemberType: MemberType = null
-  ): Member = {
+  def apply(): Member = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
-    if (FullName != null) __obj.updateDynamic("FullName")(FullName.asInstanceOf[js.Any])
-    if (MemberId != null) __obj.updateDynamic("MemberId")(MemberId.asInstanceOf[js.Any])
-    if (MemberType != null) __obj.updateDynamic("MemberType")(MemberType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Member]
   }
+  @scala.inline
+  implicit class MemberOps[Self <: Member] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: NonEmptyString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setEmail(value: SensitiveString): Self = this.set("Email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("Email", js.undefined)
+    @scala.inline
+    def setFullName(value: SensitiveString): Self = this.set("FullName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullName: Self = this.set("FullName", js.undefined)
+    @scala.inline
+    def setMemberId(value: NonEmptyString): Self = this.set("MemberId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberId: Self = this.set("MemberId", js.undefined)
+    @scala.inline
+    def setMemberType(value: MemberType): Self = this.set("MemberType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberType: Self = this.set("MemberType", js.undefined)
+  }
+  
 }
 

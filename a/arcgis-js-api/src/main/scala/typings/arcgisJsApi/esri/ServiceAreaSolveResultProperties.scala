@@ -4,71 +4,112 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceAreaSolveResultProperties extends js.Object {
   /**
     * Array of points only returned if `ServiceAreaParameters.returnFacilities = true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#facilities)
     */
-  var facilities: js.UndefOr[js.Array[PointProperties]] = js.undefined
+  var facilities: js.UndefOr[js.Array[PointProperties]] = js.native
   /**
     * Message received when solve is completed. If a service area cannot be solved, the message returned by the server identifies the incident that could not be solved.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#messages)
     */
-  var messages: js.UndefOr[js.Array[NAMessageProperties]] = js.undefined
+  var messages: js.UndefOr[js.Array[NAMessageProperties]] = js.native
   /**
     * The point barriers are returned only if `ServiceAreaParameters.returnPointBarriers = true` (which is not the default). If you send in the point barriers as a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) (instead of using [DataLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html)), you already have the barriers and might not need to request them back from the server.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#pointBarriers)
     */
-  var pointBarriers: js.UndefOr[js.Array[PointProperties]] = js.undefined
+  var pointBarriers: js.UndefOr[js.Array[PointProperties]] = js.native
   /**
     * The polygon barriers are returned only if `ServiceAreaParameters.returnPolygonBarriers = true` (which is not the default). If you send in the polygon barriers as a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) (instead of using [DataLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html)), you already have the barriers and might not need to request them back from the server.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#polygonBarriers)
     */
-  var polygonBarriers: js.UndefOr[js.Array[PolygonProperties]] = js.undefined
+  var polygonBarriers: js.UndefOr[js.Array[PolygonProperties]] = js.native
   /**
     * The polyline barriers are returned only if `ServiceAreaParameters.returnPolylineBarriers = true` (which is not the default). If you send in the polyline barriers as a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) (instead of using [DataLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html)), you already have the barriers and might not need to request them back from the server.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#polylineBarriers)
     */
-  var polylineBarriers: js.UndefOr[js.Array[PolylineProperties]] = js.undefined
+  var polylineBarriers: js.UndefOr[js.Array[PolylineProperties]] = js.native
   /**
     * An array of service area polygon graphics.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#serviceAreaPolygons)
     */
-  var serviceAreaPolygons: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
+  var serviceAreaPolygons: js.UndefOr[js.Array[GraphicProperties]] = js.native
   /**
     * An array of service area polyline graphics.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#serviceAreaPolylines)
     */
-  var serviceAreaPolylines: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
+  var serviceAreaPolylines: js.UndefOr[js.Array[GraphicProperties]] = js.native
 }
 
 object ServiceAreaSolveResultProperties {
   @scala.inline
-  def apply(
-    facilities: js.Array[PointProperties] = null,
-    messages: js.Array[NAMessageProperties] = null,
-    pointBarriers: js.Array[PointProperties] = null,
-    polygonBarriers: js.Array[PolygonProperties] = null,
-    polylineBarriers: js.Array[PolylineProperties] = null,
-    serviceAreaPolygons: js.Array[GraphicProperties] = null,
-    serviceAreaPolylines: js.Array[GraphicProperties] = null
-  ): ServiceAreaSolveResultProperties = {
+  def apply(): ServiceAreaSolveResultProperties = {
     val __obj = js.Dynamic.literal()
-    if (facilities != null) __obj.updateDynamic("facilities")(facilities.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
-    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
-    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
-    if (serviceAreaPolygons != null) __obj.updateDynamic("serviceAreaPolygons")(serviceAreaPolygons.asInstanceOf[js.Any])
-    if (serviceAreaPolylines != null) __obj.updateDynamic("serviceAreaPolylines")(serviceAreaPolylines.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAreaSolveResultProperties]
   }
+  @scala.inline
+  implicit class ServiceAreaSolveResultPropertiesOps[Self <: ServiceAreaSolveResultProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFacilitiesVarargs(value: PointProperties*): Self = this.set("facilities", js.Array(value :_*))
+    @scala.inline
+    def setFacilities(value: js.Array[PointProperties]): Self = this.set("facilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFacilities: Self = this.set("facilities", js.undefined)
+    @scala.inline
+    def setMessagesVarargs(value: NAMessageProperties*): Self = this.set("messages", js.Array(value :_*))
+    @scala.inline
+    def setMessages(value: js.Array[NAMessageProperties]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setPointBarriersVarargs(value: PointProperties*): Self = this.set("pointBarriers", js.Array(value :_*))
+    @scala.inline
+    def setPointBarriers(value: js.Array[PointProperties]): Self = this.set("pointBarriers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointBarriers: Self = this.set("pointBarriers", js.undefined)
+    @scala.inline
+    def setPolygonBarriersVarargs(value: PolygonProperties*): Self = this.set("polygonBarriers", js.Array(value :_*))
+    @scala.inline
+    def setPolygonBarriers(value: js.Array[PolygonProperties]): Self = this.set("polygonBarriers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolygonBarriers: Self = this.set("polygonBarriers", js.undefined)
+    @scala.inline
+    def setPolylineBarriersVarargs(value: PolylineProperties*): Self = this.set("polylineBarriers", js.Array(value :_*))
+    @scala.inline
+    def setPolylineBarriers(value: js.Array[PolylineProperties]): Self = this.set("polylineBarriers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolylineBarriers: Self = this.set("polylineBarriers", js.undefined)
+    @scala.inline
+    def setServiceAreaPolygonsVarargs(value: GraphicProperties*): Self = this.set("serviceAreaPolygons", js.Array(value :_*))
+    @scala.inline
+    def setServiceAreaPolygons(value: js.Array[GraphicProperties]): Self = this.set("serviceAreaPolygons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAreaPolygons: Self = this.set("serviceAreaPolygons", js.undefined)
+    @scala.inline
+    def setServiceAreaPolylinesVarargs(value: GraphicProperties*): Self = this.set("serviceAreaPolylines", js.Array(value :_*))
+    @scala.inline
+    def setServiceAreaPolylines(value: js.Array[GraphicProperties]): Self = this.set("serviceAreaPolylines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAreaPolylines: Self = this.set("serviceAreaPolylines", js.undefined)
+  }
+  
 }
 

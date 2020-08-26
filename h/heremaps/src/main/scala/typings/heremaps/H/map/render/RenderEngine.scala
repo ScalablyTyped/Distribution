@@ -24,6 +24,12 @@ trait RenderEngine extends EventTarget {
     * @param opt_scope {Object=} - An object defining the scope for the handler function
     */
   def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit]): Unit = js.native
+  def addEventListener(
+    `type`: String,
+    handler: js.Function1[/* evt */ Event, Unit],
+    opt_capture: js.UndefOr[scala.Nothing],
+    opt_scope: js.Object
+  ): Unit = js.native
   def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit], opt_capture: Boolean): Unit = js.native
   def addEventListener(
     `type`: String,
@@ -40,6 +46,12 @@ trait RenderEngine extends EventTarget {
     * @param opt_scope {Object=} - An object defining the scope for the handler function
     */
   def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit]): Unit = js.native
+  def removeEventListener(
+    `type`: String,
+    handler: js.Function1[/* evt */ Event, Unit],
+    opt_capture: js.UndefOr[scala.Nothing],
+    opt_scope: js.Object
+  ): Unit = js.native
   def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit], opt_capture: Boolean): Unit = js.native
   def removeEventListener(
     `type`: String,

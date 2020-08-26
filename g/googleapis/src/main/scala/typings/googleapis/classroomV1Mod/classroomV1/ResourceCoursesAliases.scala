@@ -34,6 +34,7 @@ class ResourceCoursesAliases protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaCourseAlias] = js.native
   def create(callback: BodyResponseCallback[SchemaCourseAlias]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCourseAlias] = js.native
   def create(params: ParamsResourceCoursesAliasesCreate): GaxiosPromise[SchemaCourseAlias] = js.native
   def create(params: ParamsResourceCoursesAliasesCreate, callback: BodyResponseCallback[SchemaCourseAlias]): Unit = js.native
   def create(
@@ -67,6 +68,7 @@ class ResourceCoursesAliases protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesAliasesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesAliasesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -99,6 +101,7 @@ class ResourceCoursesAliases protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListCourseAliasesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCourseAliasesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCourseAliasesResponse] = js.native
   def list(params: ParamsResourceCoursesAliasesList): GaxiosPromise[SchemaListCourseAliasesResponse] = js.native
   def list(
     params: ParamsResourceCoursesAliasesList,

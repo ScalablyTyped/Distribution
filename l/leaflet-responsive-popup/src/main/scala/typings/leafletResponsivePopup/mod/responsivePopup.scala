@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("leaflet", "responsivePopup")
 @js.native
 object responsivePopup extends js.Object {
-  def apply(): ResponsivePopup_ = js.native
-  def apply(options: ResponsivePopupOptions): ResponsivePopup_ = js.native
-  def apply(options: ResponsivePopupOptions, source: Layer): ResponsivePopup_ = js.native
+  def apply(options: js.UndefOr[ResponsivePopupOptions], source: js.UndefOr[Layer]): ResponsivePopup_ = js.native
 }
 

@@ -123,6 +123,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var iotsecuretunneling: js.UndefOr[typings.awsSdk.iotsecuretunnelingMod.ClientConfiguration] = js.native
   var iotsitewise: js.UndefOr[typings.awsSdk.iotsitewiseMod.ClientConfiguration] = js.native
   var iotthingsgraph: js.UndefOr[typings.awsSdk.iotthingsgraphMod.ClientConfiguration] = js.native
+  var ivs: js.UndefOr[typings.awsSdk.ivsMod.ClientConfiguration] = js.native
   var kafka: js.UndefOr[typings.awsSdk.kafkaMod.ClientConfiguration] = js.native
   var kendra: js.UndefOr[typings.awsSdk.kendraMod.ClientConfiguration] = js.native
   var kinesis: js.UndefOr[typings.awsSdk.kinesisMod.ClientConfiguration] = js.native

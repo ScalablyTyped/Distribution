@@ -6,36 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.keystonejsKeystone.mod.AllFieldsOptions because Already inherited */ trait RelationshipOptions extends BaseFieldOptions {
-  var many: Boolean
+- typings.keystonejsKeystone.mod.AllFieldsOptions because Already inherited */ @js.native
+trait RelationshipOptions extends BaseFieldOptions {
+  var many: Boolean = js.native
   // TODO: add a more type safe solution if possible
-  var ref: String
+  var ref: String = js.native
 }
 
 object RelationshipOptions {
   @scala.inline
-  def apply(
-    many: Boolean,
-    ref: String,
-    `type`: FieldType,
-    access: Access = null,
-    defaultValue: Boolean | DefaultValueFunction = null,
-    hooks: Hooks = null,
-    isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    schemaDoc: String = null
-  ): RelationshipOptions = {
+  def apply(many: Boolean, ref: String, `type`: FieldType): RelationshipOptions = {
     val __obj = js.Dynamic.literal(many = many.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipOptions]
   }
+  @scala.inline
+  implicit class RelationshipOptionsOps[Self <: RelationshipOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMany(value: Boolean): Self = this.set("many", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
+  }
+  
 }
 

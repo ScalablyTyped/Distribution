@@ -22,15 +22,34 @@ trait GetReservationUtilizationResponse extends js.Object {
 
 object GetReservationUtilizationResponse {
   @scala.inline
-  def apply(
-    UtilizationsByTime: UtilizationsByTime,
-    NextPageToken: NextPageToken = null,
-    Total: ReservationAggregates = null
-  ): GetReservationUtilizationResponse = {
+  def apply(UtilizationsByTime: UtilizationsByTime): GetReservationUtilizationResponse = {
     val __obj = js.Dynamic.literal(UtilizationsByTime = UtilizationsByTime.asInstanceOf[js.Any])
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (Total != null) __obj.updateDynamic("Total")(Total.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReservationUtilizationResponse]
   }
+  @scala.inline
+  implicit class GetReservationUtilizationResponseOps[Self <: GetReservationUtilizationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUtilizationsByTimeVarargs(value: UtilizationByTime*): Self = this.set("UtilizationsByTime", js.Array(value :_*))
+    @scala.inline
+    def setUtilizationsByTime(value: UtilizationsByTime): Self = this.set("UtilizationsByTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    @scala.inline
+    def setTotal(value: ReservationAggregates): Self = this.set("Total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal: Self = this.set("Total", js.undefined)
+  }
+  
 }
 

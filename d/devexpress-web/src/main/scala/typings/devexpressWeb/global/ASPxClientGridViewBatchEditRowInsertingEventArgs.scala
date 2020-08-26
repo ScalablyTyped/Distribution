@@ -16,15 +16,5 @@ class ASPxClientGridViewBatchEditRowInsertingEventArgs protected ()
     * @param visibleIndex An integer value that specifies the processed row's visible index.
     */
   def this(visibleIndex: Double) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets the processed row's visible index.
-    */
-  /* CompleteClass */
-  override var visibleIndex: Double = js.native
 }
 

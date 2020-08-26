@@ -12,7 +12,7 @@ An AngularJS module that allows you to block user interaction on AJAX requests.
 | Keywords           | angularjs, angular, gulp |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 175183 |
+| # downloads        | 173827 |
 | # stars            | 0 |
 
 ## Links

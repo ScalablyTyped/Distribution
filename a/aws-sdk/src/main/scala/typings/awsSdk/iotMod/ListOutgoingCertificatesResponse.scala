@@ -18,11 +18,32 @@ trait ListOutgoingCertificatesResponse extends js.Object {
 
 object ListOutgoingCertificatesResponse {
   @scala.inline
-  def apply(nextMarker: Marker = null, outgoingCertificates: OutgoingCertificates = null): ListOutgoingCertificatesResponse = {
+  def apply(): ListOutgoingCertificatesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextMarker != null) __obj.updateDynamic("nextMarker")(nextMarker.asInstanceOf[js.Any])
-    if (outgoingCertificates != null) __obj.updateDynamic("outgoingCertificates")(outgoingCertificates.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOutgoingCertificatesResponse]
   }
+  @scala.inline
+  implicit class ListOutgoingCertificatesResponseOps[Self <: ListOutgoingCertificatesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextMarker(value: Marker): Self = this.set("nextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("nextMarker", js.undefined)
+    @scala.inline
+    def setOutgoingCertificatesVarargs(value: OutgoingCertificate*): Self = this.set("outgoingCertificates", js.Array(value :_*))
+    @scala.inline
+    def setOutgoingCertificates(value: OutgoingCertificates): Self = this.set("outgoingCertificates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutgoingCertificates: Self = this.set("outgoingCertificates", js.undefined)
+  }
+  
 }
 

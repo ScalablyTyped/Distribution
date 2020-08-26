@@ -6,17 +6,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait XDomainTuple extends _DomainPropType {
-  var x: js.UndefOr[DomainTuple] = js.undefined
-  var y: DomainTuple
+  var x: DomainTuple = js.native
+  var y: js.UndefOr[DomainTuple] = js.native
 }
 
 object XDomainTuple {
   @scala.inline
-  def apply(y: DomainTuple, x: DomainTuple = null): XDomainTuple = {
-    val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+  def apply(x: DomainTuple): XDomainTuple = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
     __obj.asInstanceOf[XDomainTuple]
   }
+  @scala.inline
+  implicit class XDomainTupleOps[Self <: XDomainTuple] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setX(value: DomainTuple): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setY(value: DomainTuple): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

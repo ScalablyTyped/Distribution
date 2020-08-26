@@ -26,18 +26,38 @@ trait DataTransfer extends js.Object {
 
 object DataTransfer {
   @scala.inline
-  def apply(
-    BytesTransferred: js.UndefOr[Long] = js.undefined,
-    ObjectsTransferred: js.UndefOr[Long] = js.undefined,
-    TotalBytes: js.UndefOr[Long] = js.undefined,
-    TotalObjects: js.UndefOr[Long] = js.undefined
-  ): DataTransfer = {
+  def apply(): DataTransfer = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BytesTransferred)) __obj.updateDynamic("BytesTransferred")(BytesTransferred.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ObjectsTransferred)) __obj.updateDynamic("ObjectsTransferred")(ObjectsTransferred.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalBytes)) __obj.updateDynamic("TotalBytes")(TotalBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalObjects)) __obj.updateDynamic("TotalObjects")(TotalObjects.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTransfer]
   }
+  @scala.inline
+  implicit class DataTransferOps[Self <: DataTransfer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytesTransferred(value: Long): Self = this.set("BytesTransferred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesTransferred: Self = this.set("BytesTransferred", js.undefined)
+    @scala.inline
+    def setObjectsTransferred(value: Long): Self = this.set("ObjectsTransferred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectsTransferred: Self = this.set("ObjectsTransferred", js.undefined)
+    @scala.inline
+    def setTotalBytes(value: Long): Self = this.set("TotalBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalBytes: Self = this.set("TotalBytes", js.undefined)
+    @scala.inline
+    def setTotalObjects(value: Long): Self = this.set("TotalObjects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalObjects: Self = this.set("TotalObjects", js.undefined)
+  }
+  
 }
 

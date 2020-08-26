@@ -11,8 +11,8 @@ React component for syntax highlighting
 | Full name          | react-highlight |
 | Keywords           | react, highlight.js, syntax, highlighting, react-component |
 | # releases         | 4 |
-| # dependents       | 90 |
-| # downloads        | 1113912 |
+| # dependents       | 89 |
+| # downloads        | 1124335 |
 | # stars            | 5 |
 
 ## Links

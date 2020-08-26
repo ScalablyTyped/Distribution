@@ -31,10 +31,28 @@ trait SchemaManualRule extends js.Object {
 
 object SchemaManualRule {
   @scala.inline
-  def apply(groups: js.Array[SchemaManualRuleGroup] = null): SchemaManualRule = {
+  def apply(): SchemaManualRule = {
     val __obj = js.Dynamic.literal()
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManualRule]
   }
+  @scala.inline
+  implicit class SchemaManualRuleOps[Self <: SchemaManualRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupsVarargs(value: SchemaManualRuleGroup*): Self = this.set("groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: js.Array[SchemaManualRuleGroup]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("groups", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ A node.js SSDP client and server library.
 | Keywords           | ssdp, multicast, media, device, upnp, chromecast, iot |
 | # releases         | 3 |
 | # dependents       | 101 |
-| # downloads        | 300896 |
+| # downloads        | 300149 |
 | # stars            | 8 |
 
 ## Links

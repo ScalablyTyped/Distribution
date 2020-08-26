@@ -40,20 +40,42 @@ trait SchemaCluster extends js.Object {
 
 object SchemaCluster {
   @scala.inline
-  def apply(
-    defaultStorageType: String = null,
-    location: String = null,
-    name: String = null,
-    serveNodes: js.UndefOr[Double] = js.undefined,
-    state: String = null
-  ): SchemaCluster = {
+  def apply(): SchemaCluster = {
     val __obj = js.Dynamic.literal()
-    if (defaultStorageType != null) __obj.updateDynamic("defaultStorageType")(defaultStorageType.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(serveNodes)) __obj.updateDynamic("serveNodes")(serveNodes.get.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCluster]
   }
+  @scala.inline
+  implicit class SchemaClusterOps[Self <: SchemaCluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultStorageType(value: String): Self = this.set("defaultStorageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultStorageType: Self = this.set("defaultStorageType", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setServeNodes(value: Double): Self = this.set("serveNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServeNodes: Self = this.set("serveNodes", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

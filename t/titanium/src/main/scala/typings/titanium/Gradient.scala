@@ -7,63 +7,94 @@ import scala.scalajs.js.annotation._
 /**
   * A simple object defining a color gradient.
   */
+@js.native
 trait Gradient extends js.Object {
   /**
     * Set to `true` to continue filling with the final color beyond the `endPoint`.
     */
-  var backfillEnd: js.UndefOr[Boolean] = js.undefined
+  var backfillEnd: js.UndefOr[Boolean] = js.native
   /**
     * Set to `true` to continue filling with the starting color beyond the `startPoint`.
     */
-  var backfillStart: js.UndefOr[Boolean] = js.undefined
+  var backfillStart: js.UndefOr[Boolean] = js.native
   /**
     * An array of colors, as a color name or hex triplet.
     */
-  var colors: js.UndefOr[js.Array[GradientColorRef | java.lang.String]] = js.undefined
+  var colors: js.UndefOr[js.Array[GradientColorRef | java.lang.String]] = js.native
   /**
     * End point for the gradient.
     */
-  var endPoint: js.UndefOr[Point] = js.undefined
+  var endPoint: js.UndefOr[Point] = js.native
   /**
     * For a radial gradient, the radius at the `endPoint`.
     */
-  var endRadius: js.UndefOr[Double] = js.undefined
+  var endRadius: js.UndefOr[Double] = js.native
   /**
     * Start point for the gradient.
     */
-  var startPoint: js.UndefOr[Point] = js.undefined
+  var startPoint: js.UndefOr[Point] = js.native
   /**
     * For a radial gradient, the radius at the `startPoint`.
     */
-  var startRadius: js.UndefOr[Double] = js.undefined
+  var startRadius: js.UndefOr[Double] = js.native
   /**
     * Type of gradient, either 'linear' or 'radial'.
     */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[java.lang.String] = js.native
 }
 
 object Gradient {
   @scala.inline
-  def apply(
-    backfillEnd: js.UndefOr[Boolean] = js.undefined,
-    backfillStart: js.UndefOr[Boolean] = js.undefined,
-    colors: js.Array[GradientColorRef | java.lang.String] = null,
-    endPoint: Point = null,
-    endRadius: js.UndefOr[Double] = js.undefined,
-    startPoint: Point = null,
-    startRadius: js.UndefOr[Double] = js.undefined,
-    `type`: java.lang.String = null
-  ): Gradient = {
+  def apply(): Gradient = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backfillEnd)) __obj.updateDynamic("backfillEnd")(backfillEnd.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backfillStart)) __obj.updateDynamic("backfillStart")(backfillStart.get.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (endPoint != null) __obj.updateDynamic("endPoint")(endPoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(endRadius)) __obj.updateDynamic("endRadius")(endRadius.get.asInstanceOf[js.Any])
-    if (startPoint != null) __obj.updateDynamic("startPoint")(startPoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(startRadius)) __obj.updateDynamic("startRadius")(startRadius.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gradient]
   }
+  @scala.inline
+  implicit class GradientOps[Self <: Gradient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackfillEnd(value: Boolean): Self = this.set("backfillEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackfillEnd: Self = this.set("backfillEnd", js.undefined)
+    @scala.inline
+    def setBackfillStart(value: Boolean): Self = this.set("backfillStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackfillStart: Self = this.set("backfillStart", js.undefined)
+    @scala.inline
+    def setColorsVarargs(value: (GradientColorRef | java.lang.String)*): Self = this.set("colors", js.Array(value :_*))
+    @scala.inline
+    def setColors(value: js.Array[GradientColorRef | java.lang.String]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setEndPoint(value: Point): Self = this.set("endPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndPoint: Self = this.set("endPoint", js.undefined)
+    @scala.inline
+    def setEndRadius(value: Double): Self = this.set("endRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndRadius: Self = this.set("endRadius", js.undefined)
+    @scala.inline
+    def setStartPoint(value: Point): Self = this.set("startPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartPoint: Self = this.set("startPoint", js.undefined)
+    @scala.inline
+    def setStartRadius(value: Double): Self = this.set("startRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartRadius: Self = this.set("startRadius", js.undefined)
+    @scala.inline
+    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

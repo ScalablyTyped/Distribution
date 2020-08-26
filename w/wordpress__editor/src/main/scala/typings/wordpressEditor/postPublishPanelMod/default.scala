@@ -1,0 +1,13 @@
+package typings.wordpressEditor.postPublishPanelMod
+
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ComponentType
+import typings.wordpressEditor.postPublishPanelMod.PostPublishPanel.Props
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@wordpress/editor/components/post-publish-panel", JSImport.Default)
+@js.native
+object default extends TopLevel[ComponentType[Props]]
+

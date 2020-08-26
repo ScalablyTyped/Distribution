@@ -56,30 +56,66 @@ trait SchemaDatafeedStatus extends js.Object {
 
 object SchemaDatafeedStatus {
   @scala.inline
-  def apply(
-    country: String = null,
-    datafeedId: String = null,
-    errors: js.Array[SchemaDatafeedStatusError] = null,
-    itemsTotal: String = null,
-    itemsValid: String = null,
-    kind: String = null,
-    language: String = null,
-    lastUploadDate: String = null,
-    processingStatus: String = null,
-    warnings: js.Array[SchemaDatafeedStatusError] = null
-  ): SchemaDatafeedStatus = {
+  def apply(): SchemaDatafeedStatus = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (datafeedId != null) __obj.updateDynamic("datafeedId")(datafeedId.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (itemsTotal != null) __obj.updateDynamic("itemsTotal")(itemsTotal.asInstanceOf[js.Any])
-    if (itemsValid != null) __obj.updateDynamic("itemsValid")(itemsValid.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (lastUploadDate != null) __obj.updateDynamic("lastUploadDate")(lastUploadDate.asInstanceOf[js.Any])
-    if (processingStatus != null) __obj.updateDynamic("processingStatus")(processingStatus.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDatafeedStatus]
   }
+  @scala.inline
+  implicit class SchemaDatafeedStatusOps[Self <: SchemaDatafeedStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setDatafeedId(value: String): Self = this.set("datafeedId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatafeedId: Self = this.set("datafeedId", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: SchemaDatafeedStatusError*): Self = this.set("errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: js.Array[SchemaDatafeedStatusError]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setItemsTotal(value: String): Self = this.set("itemsTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsTotal: Self = this.set("itemsTotal", js.undefined)
+    @scala.inline
+    def setItemsValid(value: String): Self = this.set("itemsValid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsValid: Self = this.set("itemsValid", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLastUploadDate(value: String): Self = this.set("lastUploadDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUploadDate: Self = this.set("lastUploadDate", js.undefined)
+    @scala.inline
+    def setProcessingStatus(value: String): Self = this.set("processingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingStatus: Self = this.set("processingStatus", js.undefined)
+    @scala.inline
+    def setWarningsVarargs(value: SchemaDatafeedStatusError*): Self = this.set("warnings", js.Array(value :_*))
+    @scala.inline
+    def setWarnings(value: js.Array[SchemaDatafeedStatusError]): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarnings: Self = this.set("warnings", js.undefined)
+  }
+  
 }
 

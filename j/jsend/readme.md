@@ -12,7 +12,7 @@ Utilities and middleware to assist with sending and handling jsend responses.
 | Keywords           | jsend, middleware, json, status |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 51291 |
+| # downloads        | 52289 |
 | # stars            | 2 |
 
 ## Links

@@ -37,6 +37,7 @@ class ResourceBeaconsDiagnostics protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListDiagnosticsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDiagnosticsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDiagnosticsResponse] = js.native
   def list(params: ParamsResourceBeaconsDiagnosticsList): GaxiosPromise[SchemaListDiagnosticsResponse] = js.native
   def list(
     params: ParamsResourceBeaconsDiagnosticsList,

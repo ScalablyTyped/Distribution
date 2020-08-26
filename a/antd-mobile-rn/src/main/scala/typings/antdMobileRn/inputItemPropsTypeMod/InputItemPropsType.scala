@@ -14,78 +14,133 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputItemPropsType extends js.Object {
-  var clear: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var editable: js.UndefOr[Boolean] = js.undefined
-  var error: js.UndefOr[Boolean] = js.undefined
-  var extra: js.UndefOr[ReactNode] = js.undefined
-  var labelNumber: js.UndefOr[Double] = js.undefined
-  var labelPosition: js.UndefOr[left | top] = js.undefined
-  var locale: js.UndefOr[js.Object] = js.undefined
-  var maxLength: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var onBlur: js.UndefOr[InputEventHandler] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
-  var onFocus: js.UndefOr[InputEventHandler] = js.undefined
-  var onVirtualKeyboardConfirm: js.UndefOr[InputEventHandler] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var styles: js.UndefOr[js.Any] = js.undefined
-  var textAlign: js.UndefOr[left | center] = js.undefined
-  var `type`: js.UndefOr[text | bankCard | phone | password | number | digit] = js.undefined
-  var updatePlaceholder: js.UndefOr[Boolean] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
+  var clear: js.UndefOr[Boolean] = js.native
+  var defaultValue: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.native
+  var extra: js.UndefOr[ReactNode] = js.native
+  var labelNumber: js.UndefOr[Double] = js.native
+  var labelPosition: js.UndefOr[left | top] = js.native
+  var locale: js.UndefOr[js.Object] = js.native
+  var maxLength: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var onBlur: js.UndefOr[InputEventHandler] = js.native
+  var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+  var onFocus: js.UndefOr[InputEventHandler] = js.native
+  var onVirtualKeyboardConfirm: js.UndefOr[InputEventHandler] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var styles: js.UndefOr[js.Any] = js.native
+  var textAlign: js.UndefOr[left | center] = js.native
+  var `type`: js.UndefOr[text | bankCard | phone | password | number | digit] = js.native
+  var updatePlaceholder: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[String] = js.native
 }
 
 object InputItemPropsType {
   @scala.inline
-  def apply(
-    clear: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    error: js.UndefOr[Boolean] = js.undefined,
-    extra: ReactNode = null,
-    labelNumber: js.UndefOr[Double] = js.undefined,
-    labelPosition: left | top = null,
-    locale: js.Object = null,
-    maxLength: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    onBlur: /* value */ js.UndefOr[String] => Unit = null,
-    onChange: /* value */ String => Unit = null,
-    onFocus: /* value */ js.UndefOr[String] => Unit = null,
-    onVirtualKeyboardConfirm: /* value */ js.UndefOr[String] => Unit = null,
-    placeholder: String = null,
-    styles: js.Any = null,
-    textAlign: left | center = null,
-    `type`: text | bankCard | phone | password | number | digit = null,
-    updatePlaceholder: js.UndefOr[Boolean] = js.undefined,
-    value: String = null
-  ): InputItemPropsType = {
+  def apply(): InputItemPropsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear.get.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelNumber)) __obj.updateDynamic("labelNumber")(labelNumber.get.asInstanceOf[js.Any])
-    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onVirtualKeyboardConfirm != null) __obj.updateDynamic("onVirtualKeyboardConfirm")(js.Any.fromFunction1(onVirtualKeyboardConfirm))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatePlaceholder)) __obj.updateDynamic("updatePlaceholder")(updatePlaceholder.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputItemPropsType]
   }
+  @scala.inline
+  implicit class InputItemPropsTypeOps[Self <: InputItemPropsType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClear(value: Boolean): Self = this.set("clear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClear: Self = this.set("clear", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setExtra(value: ReactNode): Self = this.set("extra", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtra: Self = this.set("extra", js.undefined)
+    @scala.inline
+    def setLabelNumber(value: Double): Self = this.set("labelNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelNumber: Self = this.set("labelNumber", js.undefined)
+    @scala.inline
+    def setLabelPosition(value: left | top): Self = this.set("labelPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelPosition: Self = this.set("labelPosition", js.undefined)
+    @scala.inline
+    def setLocale(value: js.Object): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnBlur(value: /* value */ js.UndefOr[String] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* value */ String => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnFocus(value: /* value */ js.UndefOr[String] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnVirtualKeyboardConfirm(value: /* value */ js.UndefOr[String] => Unit): Self = this.set("onVirtualKeyboardConfirm", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnVirtualKeyboardConfirm: Self = this.set("onVirtualKeyboardConfirm", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setStyles(value: js.Any): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setTextAlign(value: left | center): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    @scala.inline
+    def setType(value: text | bankCard | phone | password | number | digit): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUpdatePlaceholder(value: Boolean): Self = this.set("updatePlaceholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatePlaceholder: Self = this.set("updatePlaceholder", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

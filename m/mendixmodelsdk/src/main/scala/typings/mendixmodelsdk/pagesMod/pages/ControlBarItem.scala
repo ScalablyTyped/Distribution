@@ -26,7 +26,7 @@ abstract class ControlBarItem protected () extends Element {
   def containerAsControlBar: ControlBar = js.native
   def containerAsGridControlBar: GridControlBar = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
 }
 
 /* static members */

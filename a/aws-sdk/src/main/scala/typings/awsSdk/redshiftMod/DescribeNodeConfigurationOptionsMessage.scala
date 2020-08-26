@@ -38,23 +38,50 @@ trait DescribeNodeConfigurationOptionsMessage extends js.Object {
 
 object DescribeNodeConfigurationOptionsMessage {
   @scala.inline
-  def apply(
-    ActionType: ActionType,
-    ClusterIdentifier: String = null,
-    Filters: NodeConfigurationOptionsFilterList = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    OwnerAccount: String = null,
-    SnapshotIdentifier: String = null
-  ): DescribeNodeConfigurationOptionsMessage = {
+  def apply(ActionType: ActionType): DescribeNodeConfigurationOptionsMessage = {
     val __obj = js.Dynamic.literal(ActionType = ActionType.asInstanceOf[js.Any])
-    if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (OwnerAccount != null) __obj.updateDynamic("OwnerAccount")(OwnerAccount.asInstanceOf[js.Any])
-    if (SnapshotIdentifier != null) __obj.updateDynamic("SnapshotIdentifier")(SnapshotIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNodeConfigurationOptionsMessage]
   }
+  @scala.inline
+  implicit class DescribeNodeConfigurationOptionsMessageOps[Self <: DescribeNodeConfigurationOptionsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionType(value: ActionType): Self = this.set("ActionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterIdentifier: Self = this.set("ClusterIdentifier", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: NodeConfigurationOptionsFilter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: NodeConfigurationOptionsFilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setOwnerAccount(value: String): Self = this.set("OwnerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAccount: Self = this.set("OwnerAccount", js.undefined)
+    @scala.inline
+    def setSnapshotIdentifier(value: String): Self = this.set("SnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotIdentifier: Self = this.set("SnapshotIdentifier", js.undefined)
+  }
+  
 }
 

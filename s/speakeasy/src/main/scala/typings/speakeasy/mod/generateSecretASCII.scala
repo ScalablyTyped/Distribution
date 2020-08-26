@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object generateSecretASCII extends js.Object {
   def apply(): String = js.native
+  def apply(length: js.UndefOr[scala.Nothing], symbols: Boolean): String = js.native
   def apply(length: Double): String = js.native
   def apply(length: Double, symbols: Boolean): String = js.native
 }

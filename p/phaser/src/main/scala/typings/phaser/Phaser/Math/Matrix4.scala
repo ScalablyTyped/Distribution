@@ -168,6 +168,13 @@ trait Matrix4 extends js.Object {
     * @param projectionMatrix The projection matrix.
     */
   def setWorldMatrix(rotation: Vector3, position: Vector3, scale: Vector3): Matrix4 = js.native
+  def setWorldMatrix(
+    rotation: Vector3,
+    position: Vector3,
+    scale: Vector3,
+    viewMatrix: js.UndefOr[scala.Nothing],
+    projectionMatrix: Matrix4
+  ): Matrix4 = js.native
   def setWorldMatrix(rotation: Vector3, position: Vector3, scale: Vector3, viewMatrix: Matrix4): Matrix4 = js.native
   def setWorldMatrix(
     rotation: Vector3,

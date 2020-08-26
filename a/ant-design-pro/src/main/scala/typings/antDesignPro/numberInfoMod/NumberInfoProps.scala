@@ -8,42 +8,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NumberInfoProps extends js.Object {
-  var gap: js.UndefOr[Double] = js.undefined
-  var status: js.UndefOr[up | down] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var subTitle: js.UndefOr[ReactNode | String] = js.undefined
-  var subTotal: js.UndefOr[Double] = js.undefined
-  var suffix: js.UndefOr[String] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[ReactNode | String] = js.undefined
-  var total: js.UndefOr[ReactNode | String] = js.undefined
+  var gap: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[up | down] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var subTitle: js.UndefOr[ReactNode | String] = js.native
+  var subTotal: js.UndefOr[Double] = js.native
+  var suffix: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.native
+  var title: js.UndefOr[ReactNode | String] = js.native
+  var total: js.UndefOr[ReactNode | String] = js.native
 }
 
 object NumberInfoProps {
   @scala.inline
-  def apply(
-    gap: js.UndefOr[Double] = js.undefined,
-    status: up | down = null,
-    style: CSSProperties = null,
-    subTitle: ReactNode | String = null,
-    subTotal: js.UndefOr[Double] = js.undefined,
-    suffix: String = null,
-    theme: String = null,
-    title: ReactNode | String = null,
-    total: ReactNode | String = null
-  ): NumberInfoProps = {
+  def apply(): NumberInfoProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(subTotal)) __obj.updateDynamic("subTotal")(subTotal.get.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberInfoProps]
   }
+  @scala.inline
+  implicit class NumberInfoPropsOps[Self <: NumberInfoProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGap(value: Double): Self = this.set("gap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGap: Self = this.set("gap", js.undefined)
+    @scala.inline
+    def setStatus(value: up | down): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSubTitle(value: ReactNode | String): Self = this.set("subTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubTitle: Self = this.set("subTitle", js.undefined)
+    @scala.inline
+    def setSubTotal(value: Double): Self = this.set("subTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubTotal: Self = this.set("subTotal", js.undefined)
+    @scala.inline
+    def setSuffix(value: String): Self = this.set("suffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuffix: Self = this.set("suffix", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode | String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTotal(value: ReactNode | String): Self = this.set("total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal: Self = this.set("total", js.undefined)
+  }
+  
 }
 

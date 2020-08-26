@@ -26,17 +26,36 @@ trait GetIceServerConfigRequest extends js.Object {
 
 object GetIceServerConfigRequest {
   @scala.inline
-  def apply(
-    ChannelARN: ResourceARN,
-    ClientId: ClientId = null,
-    Service: Service = null,
-    Username: Username = null
-  ): GetIceServerConfigRequest = {
+  def apply(ChannelARN: ResourceARN): GetIceServerConfigRequest = {
     val __obj = js.Dynamic.literal(ChannelARN = ChannelARN.asInstanceOf[js.Any])
-    if (ClientId != null) __obj.updateDynamic("ClientId")(ClientId.asInstanceOf[js.Any])
-    if (Service != null) __obj.updateDynamic("Service")(Service.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIceServerConfigRequest]
   }
+  @scala.inline
+  implicit class GetIceServerConfigRequestOps[Self <: GetIceServerConfigRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelARN(value: ResourceARN): Self = this.set("ChannelARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientId(value: ClientId): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    @scala.inline
+    def setService(value: Service): Self = this.set("Service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("Service", js.undefined)
+    @scala.inline
+    def setUsername(value: Username): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

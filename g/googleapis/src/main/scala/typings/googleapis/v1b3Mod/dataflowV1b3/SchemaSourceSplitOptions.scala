@@ -23,11 +23,30 @@ trait SchemaSourceSplitOptions extends js.Object {
 
 object SchemaSourceSplitOptions {
   @scala.inline
-  def apply(desiredBundleSizeBytes: String = null, desiredShardSizeBytes: String = null): SchemaSourceSplitOptions = {
+  def apply(): SchemaSourceSplitOptions = {
     val __obj = js.Dynamic.literal()
-    if (desiredBundleSizeBytes != null) __obj.updateDynamic("desiredBundleSizeBytes")(desiredBundleSizeBytes.asInstanceOf[js.Any])
-    if (desiredShardSizeBytes != null) __obj.updateDynamic("desiredShardSizeBytes")(desiredShardSizeBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceSplitOptions]
   }
+  @scala.inline
+  implicit class SchemaSourceSplitOptionsOps[Self <: SchemaSourceSplitOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesiredBundleSizeBytes(value: String): Self = this.set("desiredBundleSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredBundleSizeBytes: Self = this.set("desiredBundleSizeBytes", js.undefined)
+    @scala.inline
+    def setDesiredShardSizeBytes(value: String): Self = this.set("desiredShardSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredShardSizeBytes: Self = this.set("desiredShardSizeBytes", js.undefined)
+  }
+  
 }
 

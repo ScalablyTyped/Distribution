@@ -12,7 +12,7 @@ Humanize a URL: `https://sindresorhus.com` → `sindresorhus.com`
 | Keywords           | url, uri, address, string, normalize, normalise, normalization, normalisation, querystring, unicode, humanize, humanization, simple, simplify, human, pretty, prettify |
 | # releases         | 3 |
 | # dependents       | 125 |
-| # downloads        | 4259943 |
+| # downloads        | 4420614 |
 | # stars            | 4 |
 
 ## Links

@@ -50,30 +50,70 @@ trait SkillDetails extends js.Object {
 
 object SkillDetails {
   @scala.inline
-  def apply(
-    BulletPoints: BulletPoints = null,
-    DeveloperInfo: DeveloperInfo = null,
-    EndUserLicenseAgreement: EndUserLicenseAgreement = null,
-    GenericKeywords: GenericKeywords = null,
-    InvocationPhrase: InvocationPhrase = null,
-    NewInThisVersionBulletPoints: NewInThisVersionBulletPoints = null,
-    ProductDescription: ProductDescription = null,
-    ReleaseDate: ReleaseDate = null,
-    Reviews: Reviews = null,
-    SkillTypes: SkillTypes = null
-  ): SkillDetails = {
+  def apply(): SkillDetails = {
     val __obj = js.Dynamic.literal()
-    if (BulletPoints != null) __obj.updateDynamic("BulletPoints")(BulletPoints.asInstanceOf[js.Any])
-    if (DeveloperInfo != null) __obj.updateDynamic("DeveloperInfo")(DeveloperInfo.asInstanceOf[js.Any])
-    if (EndUserLicenseAgreement != null) __obj.updateDynamic("EndUserLicenseAgreement")(EndUserLicenseAgreement.asInstanceOf[js.Any])
-    if (GenericKeywords != null) __obj.updateDynamic("GenericKeywords")(GenericKeywords.asInstanceOf[js.Any])
-    if (InvocationPhrase != null) __obj.updateDynamic("InvocationPhrase")(InvocationPhrase.asInstanceOf[js.Any])
-    if (NewInThisVersionBulletPoints != null) __obj.updateDynamic("NewInThisVersionBulletPoints")(NewInThisVersionBulletPoints.asInstanceOf[js.Any])
-    if (ProductDescription != null) __obj.updateDynamic("ProductDescription")(ProductDescription.asInstanceOf[js.Any])
-    if (ReleaseDate != null) __obj.updateDynamic("ReleaseDate")(ReleaseDate.asInstanceOf[js.Any])
-    if (Reviews != null) __obj.updateDynamic("Reviews")(Reviews.asInstanceOf[js.Any])
-    if (SkillTypes != null) __obj.updateDynamic("SkillTypes")(SkillTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkillDetails]
   }
+  @scala.inline
+  implicit class SkillDetailsOps[Self <: SkillDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBulletPointsVarargs(value: BulletPoint*): Self = this.set("BulletPoints", js.Array(value :_*))
+    @scala.inline
+    def setBulletPoints(value: BulletPoints): Self = this.set("BulletPoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBulletPoints: Self = this.set("BulletPoints", js.undefined)
+    @scala.inline
+    def setDeveloperInfo(value: DeveloperInfo): Self = this.set("DeveloperInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeveloperInfo: Self = this.set("DeveloperInfo", js.undefined)
+    @scala.inline
+    def setEndUserLicenseAgreement(value: EndUserLicenseAgreement): Self = this.set("EndUserLicenseAgreement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndUserLicenseAgreement: Self = this.set("EndUserLicenseAgreement", js.undefined)
+    @scala.inline
+    def setGenericKeywordsVarargs(value: GenericKeyword*): Self = this.set("GenericKeywords", js.Array(value :_*))
+    @scala.inline
+    def setGenericKeywords(value: GenericKeywords): Self = this.set("GenericKeywords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenericKeywords: Self = this.set("GenericKeywords", js.undefined)
+    @scala.inline
+    def setInvocationPhrase(value: InvocationPhrase): Self = this.set("InvocationPhrase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvocationPhrase: Self = this.set("InvocationPhrase", js.undefined)
+    @scala.inline
+    def setNewInThisVersionBulletPointsVarargs(value: BulletPoint*): Self = this.set("NewInThisVersionBulletPoints", js.Array(value :_*))
+    @scala.inline
+    def setNewInThisVersionBulletPoints(value: NewInThisVersionBulletPoints): Self = this.set("NewInThisVersionBulletPoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewInThisVersionBulletPoints: Self = this.set("NewInThisVersionBulletPoints", js.undefined)
+    @scala.inline
+    def setProductDescription(value: ProductDescription): Self = this.set("ProductDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductDescription: Self = this.set("ProductDescription", js.undefined)
+    @scala.inline
+    def setReleaseDate(value: ReleaseDate): Self = this.set("ReleaseDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseDate: Self = this.set("ReleaseDate", js.undefined)
+    @scala.inline
+    def setReviews(value: Reviews): Self = this.set("Reviews", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReviews: Self = this.set("Reviews", js.undefined)
+    @scala.inline
+    def setSkillTypesVarargs(value: SkillStoreType*): Self = this.set("SkillTypes", js.Array(value :_*))
+    @scala.inline
+    def setSkillTypes(value: SkillTypes): Self = this.set("SkillTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkillTypes: Self = this.set("SkillTypes", js.undefined)
+  }
+  
 }
 

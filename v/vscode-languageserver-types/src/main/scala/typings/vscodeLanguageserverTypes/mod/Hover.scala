@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Hover extends js.Object {
   /**
     * The hover's content
     */
-  var contents: MarkupContent | MarkedString | js.Array[MarkedString]
+  var contents: MarkupContent | MarkedString | js.Array[MarkedString] = js.native
   /**
     * An optional range
     */
-  var range: js.UndefOr[Range] = js.undefined
+  var range: js.UndefOr[Range] = js.native
 }
 
 @JSImport("vscode-languageserver-types", "Hover")

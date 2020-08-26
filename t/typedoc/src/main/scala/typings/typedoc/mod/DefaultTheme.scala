@@ -34,6 +34,11 @@ object DefaultTheme extends js.Object {
   def getUrl(reflection: typings.typedoc.reflectionsMod.Reflection): String = js.native
   def getUrl(
     reflection: typings.typedoc.reflectionsMod.Reflection,
+    relative: js.UndefOr[scala.Nothing],
+    separator: String
+  ): String = js.native
+  def getUrl(
+    reflection: typings.typedoc.reflectionsMod.Reflection,
     relative: typings.typedoc.reflectionsMod.Reflection
   ): String = js.native
   def getUrl(

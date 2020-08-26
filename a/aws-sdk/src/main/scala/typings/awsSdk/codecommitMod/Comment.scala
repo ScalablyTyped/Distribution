@@ -50,30 +50,64 @@ trait Comment extends js.Object {
 
 object Comment {
   @scala.inline
-  def apply(
-    authorArn: Arn = null,
-    callerReactions: CallerReactions = null,
-    clientRequestToken: ClientRequestToken = null,
-    commentId: CommentId = null,
-    content: Content = null,
-    creationDate: CreationDate = null,
-    deleted: js.UndefOr[IsCommentDeleted] = js.undefined,
-    inReplyTo: CommentId = null,
-    lastModifiedDate: LastModifiedDate = null,
-    reactionCounts: ReactionCountsMap = null
-  ): Comment = {
+  def apply(): Comment = {
     val __obj = js.Dynamic.literal()
-    if (authorArn != null) __obj.updateDynamic("authorArn")(authorArn.asInstanceOf[js.Any])
-    if (callerReactions != null) __obj.updateDynamic("callerReactions")(callerReactions.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (commentId != null) __obj.updateDynamic("commentId")(commentId.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
-    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (reactionCounts != null) __obj.updateDynamic("reactionCounts")(reactionCounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
+  @scala.inline
+  implicit class CommentOps[Self <: Comment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorArn(value: Arn): Self = this.set("authorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorArn: Self = this.set("authorArn", js.undefined)
+    @scala.inline
+    def setCallerReactionsVarargs(value: ReactionValue*): Self = this.set("callerReactions", js.Array(value :_*))
+    @scala.inline
+    def setCallerReactions(value: CallerReactions): Self = this.set("callerReactions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallerReactions: Self = this.set("callerReactions", js.undefined)
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setCommentId(value: CommentId): Self = this.set("commentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommentId: Self = this.set("commentId", js.undefined)
+    @scala.inline
+    def setContent(value: Content): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setCreationDate(value: CreationDate): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setDeleted(value: IsCommentDeleted): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    @scala.inline
+    def setInReplyTo(value: CommentId): Self = this.set("inReplyTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInReplyTo: Self = this.set("inReplyTo", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: LastModifiedDate): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    @scala.inline
+    def setReactionCounts(value: ReactionCountsMap): Self = this.set("reactionCounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReactionCounts: Self = this.set("reactionCounts", js.undefined)
+  }
+  
 }
 

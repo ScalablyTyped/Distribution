@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SurveyWindow () extends SurveyWindowModel {
   def this(jsonObj: js.Any) = this()
+  def this(jsonObj: js.UndefOr[scala.Nothing], initialModel: SurveyModel) = this()
   def this(jsonObj: js.Any, initialModel: SurveyModel) = this()
   val css: js.Any = js.native
   var doExpand: js.Any = js.native

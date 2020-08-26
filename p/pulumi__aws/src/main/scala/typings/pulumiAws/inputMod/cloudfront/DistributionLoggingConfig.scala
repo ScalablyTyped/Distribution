@@ -26,11 +26,32 @@ trait DistributionLoggingConfig extends js.Object {
 
 object DistributionLoggingConfig {
   @scala.inline
-  def apply(bucket: Input[String], includeCookies: Input[Boolean] = null, prefix: Input[String] = null): DistributionLoggingConfig = {
+  def apply(bucket: Input[String]): DistributionLoggingConfig = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
-    if (includeCookies != null) __obj.updateDynamic("includeCookies")(includeCookies.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionLoggingConfig]
   }
+  @scala.inline
+  implicit class DistributionLoggingConfigOps[Self <: DistributionLoggingConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: Input[String]): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIncludeCookies(value: Input[Boolean]): Self = this.set("includeCookies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeCookies: Self = this.set("includeCookies", js.undefined)
+    @scala.inline
+    def setPrefix(value: Input[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+  }
+  
 }
 

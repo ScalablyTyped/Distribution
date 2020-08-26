@@ -76,6 +76,7 @@ class Geometry () extends js.Object {
     * @return {Geometry} this
     */
   def rotate(angle: Double): Geometry = js.native
+  def rotate(angle: Double, x: js.UndefOr[scala.Nothing], y: Double): Geometry = js.native
   def rotate(angle: Double, x: Double): Geometry = js.native
   def rotate(angle: Double, x: Double, y: Double): Geometry = js.native
   /**

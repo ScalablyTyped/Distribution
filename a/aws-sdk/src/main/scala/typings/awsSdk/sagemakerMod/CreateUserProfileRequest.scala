@@ -34,20 +34,44 @@ trait CreateUserProfileRequest extends js.Object {
 
 object CreateUserProfileRequest {
   @scala.inline
-  def apply(
-    DomainId: DomainId,
-    UserProfileName: UserProfileName,
-    SingleSignOnUserIdentifier: SingleSignOnUserIdentifier = null,
-    SingleSignOnUserValue: String256 = null,
-    Tags: TagList = null,
-    UserSettings: UserSettings = null
-  ): CreateUserProfileRequest = {
+  def apply(DomainId: DomainId, UserProfileName: UserProfileName): CreateUserProfileRequest = {
     val __obj = js.Dynamic.literal(DomainId = DomainId.asInstanceOf[js.Any], UserProfileName = UserProfileName.asInstanceOf[js.Any])
-    if (SingleSignOnUserIdentifier != null) __obj.updateDynamic("SingleSignOnUserIdentifier")(SingleSignOnUserIdentifier.asInstanceOf[js.Any])
-    if (SingleSignOnUserValue != null) __obj.updateDynamic("SingleSignOnUserValue")(SingleSignOnUserValue.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (UserSettings != null) __obj.updateDynamic("UserSettings")(UserSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserProfileRequest]
   }
+  @scala.inline
+  implicit class CreateUserProfileRequestOps[Self <: CreateUserProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainId(value: DomainId): Self = this.set("DomainId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserProfileName(value: UserProfileName): Self = this.set("UserProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSingleSignOnUserIdentifier(value: SingleSignOnUserIdentifier): Self = this.set("SingleSignOnUserIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleSignOnUserIdentifier: Self = this.set("SingleSignOnUserIdentifier", js.undefined)
+    @scala.inline
+    def setSingleSignOnUserValue(value: String256): Self = this.set("SingleSignOnUserValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleSignOnUserValue: Self = this.set("SingleSignOnUserValue", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setUserSettings(value: UserSettings): Self = this.set("UserSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserSettings: Self = this.set("UserSettings", js.undefined)
+  }
+  
 }
 

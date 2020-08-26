@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "SafePropertyRead")
 @js.native
 class SafePropertyRead protected ()
-  extends typings.angularCompiler.publicApiMod.SafePropertyRead {
+  extends typings.angularCompiler.compilerMod.SafePropertyRead {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

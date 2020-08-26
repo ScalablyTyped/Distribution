@@ -31,6 +31,7 @@ class ResourceImageconfigurations protected () extends js.Object {
     */
   def upload(): GaxiosPromise[SchemaImageConfiguration] = js.native
   def upload(callback: BodyResponseCallback[SchemaImageConfiguration]): Unit = js.native
+  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaImageConfiguration] = js.native
   def upload(params: ParamsResourceImageconfigurationsUpload): GaxiosPromise[SchemaImageConfiguration] = js.native
   def upload(
     params: ParamsResourceImageconfigurationsUpload,

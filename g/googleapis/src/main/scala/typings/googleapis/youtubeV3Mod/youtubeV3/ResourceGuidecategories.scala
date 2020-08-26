@@ -31,6 +31,7 @@ class ResourceGuidecategories protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGuideCategoryListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGuideCategoryListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGuideCategoryListResponse] = js.native
   def list(params: ParamsResourceGuidecategoriesList): GaxiosPromise[SchemaGuideCategoryListResponse] = js.native
   def list(
     params: ParamsResourceGuidecategoriesList,

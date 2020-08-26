@@ -18,10 +18,30 @@ trait ListModelPackagesOutput extends js.Object {
 
 object ListModelPackagesOutput {
   @scala.inline
-  def apply(ModelPackageSummaryList: ModelPackageSummaryList, NextToken: NextToken = null): ListModelPackagesOutput = {
+  def apply(ModelPackageSummaryList: ModelPackageSummaryList): ListModelPackagesOutput = {
     val __obj = js.Dynamic.literal(ModelPackageSummaryList = ModelPackageSummaryList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListModelPackagesOutput]
   }
+  @scala.inline
+  implicit class ListModelPackagesOutputOps[Self <: ListModelPackagesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setModelPackageSummaryListVarargs(value: ModelPackageSummary*): Self = this.set("ModelPackageSummaryList", js.Array(value :_*))
+    @scala.inline
+    def setModelPackageSummaryList(value: ModelPackageSummaryList): Self = this.set("ModelPackageSummaryList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

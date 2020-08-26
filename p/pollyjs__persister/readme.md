@@ -10,9 +10,9 @@ Extendable base persister class used by @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/persister |
 | Keywords           | polly, pollyjs, persister |
-| # releases         | 20 |
+| # releases         | 21 |
 | # dependents       | 3 |
-| # downloads        | 335993 |
+| # downloads        | 360436 |
 | # stars            | 0 |
 
 ## Links

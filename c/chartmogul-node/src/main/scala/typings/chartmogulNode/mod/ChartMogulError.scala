@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChartMogulError () extends Error {
   var httpStatus: Double = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var response: js.Any = js.native
 }
 

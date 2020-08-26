@@ -22,16 +22,34 @@ trait UpdateConstraintOutput extends js.Object {
 
 object UpdateConstraintOutput {
   @scala.inline
-  def apply(
-    ConstraintDetail: ConstraintDetail = null,
-    ConstraintParameters: ConstraintParameters = null,
-    Status: Status = null
-  ): UpdateConstraintOutput = {
+  def apply(): UpdateConstraintOutput = {
     val __obj = js.Dynamic.literal()
-    if (ConstraintDetail != null) __obj.updateDynamic("ConstraintDetail")(ConstraintDetail.asInstanceOf[js.Any])
-    if (ConstraintParameters != null) __obj.updateDynamic("ConstraintParameters")(ConstraintParameters.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConstraintOutput]
   }
+  @scala.inline
+  implicit class UpdateConstraintOutputOps[Self <: UpdateConstraintOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConstraintDetail(value: ConstraintDetail): Self = this.set("ConstraintDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraintDetail: Self = this.set("ConstraintDetail", js.undefined)
+    @scala.inline
+    def setConstraintParameters(value: ConstraintParameters): Self = this.set("ConstraintParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraintParameters: Self = this.set("ConstraintParameters", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

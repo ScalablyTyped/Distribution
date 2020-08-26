@@ -31,6 +31,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     */
   def call(): GaxiosPromise[SchemaCallFunctionResponse] = js.native
   def call(callback: BodyResponseCallback[SchemaCallFunctionResponse]): Unit = js.native
+  def call(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCallFunctionResponse] = js.native
   def call(params: ParamsResourceProjectsLocationsFunctionsCall): GaxiosPromise[SchemaCallFunctionResponse] = js.native
   def call(
     params: ParamsResourceProjectsLocationsFunctionsCall,
@@ -64,6 +65,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceProjectsLocationsFunctionsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(
     params: ParamsResourceProjectsLocationsFunctionsCreate,
@@ -96,6 +98,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceProjectsLocationsFunctionsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsFunctionsDelete,
@@ -130,6 +133,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     */
   def generateDownloadUrl(): GaxiosPromise[SchemaGenerateDownloadUrlResponse] = js.native
   def generateDownloadUrl(callback: BodyResponseCallback[SchemaGenerateDownloadUrlResponse]): Unit = js.native
+  def generateDownloadUrl(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGenerateDownloadUrlResponse] = js.native
   def generateDownloadUrl(params: ParamsResourceProjectsLocationsFunctionsGeneratedownloadurl): GaxiosPromise[SchemaGenerateDownloadUrlResponse] = js.native
   def generateDownloadUrl(
     params: ParamsResourceProjectsLocationsFunctionsGeneratedownloadurl,
@@ -176,6 +180,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     */
   def generateUploadUrl(): GaxiosPromise[SchemaGenerateUploadUrlResponse] = js.native
   def generateUploadUrl(callback: BodyResponseCallback[SchemaGenerateUploadUrlResponse]): Unit = js.native
+  def generateUploadUrl(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGenerateUploadUrlResponse] = js.native
   def generateUploadUrl(params: ParamsResourceProjectsLocationsFunctionsGenerateuploadurl): GaxiosPromise[SchemaGenerateUploadUrlResponse] = js.native
   def generateUploadUrl(
     params: ParamsResourceProjectsLocationsFunctionsGenerateuploadurl,
@@ -206,6 +211,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCloudFunction] = js.native
   def get(callback: BodyResponseCallback[SchemaCloudFunction]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCloudFunction] = js.native
   def get(params: ParamsResourceProjectsLocationsFunctionsGet): GaxiosPromise[SchemaCloudFunction] = js.native
   def get(
     params: ParamsResourceProjectsLocationsFunctionsGet,
@@ -238,6 +244,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListFunctionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFunctionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFunctionsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsFunctionsList): GaxiosPromise[SchemaListFunctionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsFunctionsList,
@@ -269,6 +276,7 @@ class ResourceProjectsLocationsFunctions protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceProjectsLocationsFunctionsUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(
     params: ParamsResourceProjectsLocationsFunctionsUpdate,

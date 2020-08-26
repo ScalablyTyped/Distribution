@@ -29,18 +29,40 @@ trait SchemaScreenshotCluster extends js.Object {
 
 object SchemaScreenshotCluster {
   @scala.inline
-  def apply(
-    activity: String = null,
-    clusterId: String = null,
-    keyScreen: SchemaScreen = null,
-    screens: js.Array[SchemaScreen] = null
-  ): SchemaScreenshotCluster = {
+  def apply(): SchemaScreenshotCluster = {
     val __obj = js.Dynamic.literal()
-    if (activity != null) __obj.updateDynamic("activity")(activity.asInstanceOf[js.Any])
-    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
-    if (keyScreen != null) __obj.updateDynamic("keyScreen")(keyScreen.asInstanceOf[js.Any])
-    if (screens != null) __obj.updateDynamic("screens")(screens.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaScreenshotCluster]
   }
+  @scala.inline
+  implicit class SchemaScreenshotClusterOps[Self <: SchemaScreenshotCluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivity(value: String): Self = this.set("activity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivity: Self = this.set("activity", js.undefined)
+    @scala.inline
+    def setClusterId(value: String): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    @scala.inline
+    def setKeyScreen(value: SchemaScreen): Self = this.set("keyScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyScreen: Self = this.set("keyScreen", js.undefined)
+    @scala.inline
+    def setScreensVarargs(value: SchemaScreen*): Self = this.set("screens", js.Array(value :_*))
+    @scala.inline
+    def setScreens(value: js.Array[SchemaScreen]): Self = this.set("screens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreens: Self = this.set("screens", js.undefined)
+  }
+  
 }
 

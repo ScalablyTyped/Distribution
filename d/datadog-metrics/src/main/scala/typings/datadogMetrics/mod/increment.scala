@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object increment extends js.Object {
   def apply(key: String): Unit = js.native
+  def apply(key: String, value: js.UndefOr[scala.Nothing], tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
+  def apply(key: String, value: js.UndefOr[scala.Nothing], tags: js.Array[String]): Unit = js.native
+  def apply(key: String, value: js.UndefOr[scala.Nothing], tags: js.Array[String], timestamp: Double): Unit = js.native
   def apply(key: String, value: Double): Unit = js.native
+  def apply(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
   def apply(key: String, value: Double, tags: js.Array[String]): Unit = js.native
   def apply(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
 }

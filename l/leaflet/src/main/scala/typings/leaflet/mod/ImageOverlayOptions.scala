@@ -4,41 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ImageOverlayOptions extends InteractiveLayerOptions {
-  var alt: js.UndefOr[String] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
-  var errorOverlayUrl: js.UndefOr[String] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var alt: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[CrossOrigin] = js.native
+  var errorOverlayUrl: js.UndefOr[String] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object ImageOverlayOptions {
   @scala.inline
-  def apply(
-    alt: String = null,
-    attribution: String = null,
-    bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    crossOrigin: CrossOrigin = null,
-    errorOverlayUrl: String = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    pane: String = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): ImageOverlayOptions = {
+  def apply(): ImageOverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (errorOverlayUrl != null) __obj.updateDynamic("errorOverlayUrl")(errorOverlayUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageOverlayOptions]
   }
+  @scala.inline
+  implicit class ImageOverlayOptionsOps[Self <: ImageOverlayOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt: Self = this.set("alt", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCrossOrigin(value: CrossOrigin): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    @scala.inline
+    def setErrorOverlayUrl(value: String): Self = this.set("errorOverlayUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorOverlayUrl: Self = this.set("errorOverlayUrl", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

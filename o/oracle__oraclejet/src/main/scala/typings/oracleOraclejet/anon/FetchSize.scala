@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FetchSize extends js.Object {
-  var fetchSize: js.UndefOr[Double] = js.undefined
-  var maxCount: js.UndefOr[Double] = js.undefined
-  var scroller: js.UndefOr[typings.std.Element] = js.undefined
+  var fetchSize: js.UndefOr[Double] = js.native
+  var maxCount: js.UndefOr[Double] = js.native
+  var scroller: js.UndefOr[typings.std.Element] = js.native
 }
 
 object FetchSize {
   @scala.inline
-  def apply(
-    fetchSize: js.UndefOr[Double] = js.undefined,
-    maxCount: js.UndefOr[Double] = js.undefined,
-    scroller: typings.std.Element = null
-  ): FetchSize = {
+  def apply(): FetchSize = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fetchSize)) __obj.updateDynamic("fetchSize")(fetchSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxCount)) __obj.updateDynamic("maxCount")(maxCount.get.asInstanceOf[js.Any])
-    if (scroller != null) __obj.updateDynamic("scroller")(scroller.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchSize]
   }
+  @scala.inline
+  implicit class FetchSizeOps[Self <: FetchSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFetchSize(value: Double): Self = this.set("fetchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchSize: Self = this.set("fetchSize", js.undefined)
+    @scala.inline
+    def setMaxCount(value: Double): Self = this.set("maxCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCount: Self = this.set("maxCount", js.undefined)
+    @scala.inline
+    def setScroller(value: typings.std.Element): Self = this.set("scroller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScroller: Self = this.set("scroller", js.undefined)
+  }
+  
 }
 

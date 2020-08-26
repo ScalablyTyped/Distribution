@@ -22,16 +22,34 @@ trait DeploymentConfigTrafficRoutingConfig extends js.Object {
 
 object DeploymentConfigTrafficRoutingConfig {
   @scala.inline
-  def apply(
-    timeBasedCanary: DeploymentConfigTrafficRoutingConfigTimeBasedCanary = null,
-    timeBasedLinear: DeploymentConfigTrafficRoutingConfigTimeBasedLinear = null,
-    `type`: String = null
-  ): DeploymentConfigTrafficRoutingConfig = {
+  def apply(): DeploymentConfigTrafficRoutingConfig = {
     val __obj = js.Dynamic.literal()
-    if (timeBasedCanary != null) __obj.updateDynamic("timeBasedCanary")(timeBasedCanary.asInstanceOf[js.Any])
-    if (timeBasedLinear != null) __obj.updateDynamic("timeBasedLinear")(timeBasedLinear.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentConfigTrafficRoutingConfig]
   }
+  @scala.inline
+  implicit class DeploymentConfigTrafficRoutingConfigOps[Self <: DeploymentConfigTrafficRoutingConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimeBasedCanary(value: DeploymentConfigTrafficRoutingConfigTimeBasedCanary): Self = this.set("timeBasedCanary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeBasedCanary: Self = this.set("timeBasedCanary", js.undefined)
+    @scala.inline
+    def setTimeBasedLinear(value: DeploymentConfigTrafficRoutingConfigTimeBasedLinear): Self = this.set("timeBasedLinear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeBasedLinear: Self = this.set("timeBasedLinear", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

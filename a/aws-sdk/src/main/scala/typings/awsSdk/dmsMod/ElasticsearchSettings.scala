@@ -26,16 +26,34 @@ trait ElasticsearchSettings extends js.Object {
 
 object ElasticsearchSettings {
   @scala.inline
-  def apply(
-    EndpointUri: String,
-    ServiceAccessRoleArn: String,
-    ErrorRetryDuration: js.UndefOr[IntegerOptional] = js.undefined,
-    FullLoadErrorPercentage: js.UndefOr[IntegerOptional] = js.undefined
-  ): ElasticsearchSettings = {
+  def apply(EndpointUri: String, ServiceAccessRoleArn: String): ElasticsearchSettings = {
     val __obj = js.Dynamic.literal(EndpointUri = EndpointUri.asInstanceOf[js.Any], ServiceAccessRoleArn = ServiceAccessRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(ErrorRetryDuration)) __obj.updateDynamic("ErrorRetryDuration")(ErrorRetryDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FullLoadErrorPercentage)) __obj.updateDynamic("FullLoadErrorPercentage")(FullLoadErrorPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchSettings]
   }
+  @scala.inline
+  implicit class ElasticsearchSettingsOps[Self <: ElasticsearchSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointUri(value: String): Self = this.set("EndpointUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceAccessRoleArn(value: String): Self = this.set("ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setErrorRetryDuration(value: IntegerOptional): Self = this.set("ErrorRetryDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorRetryDuration: Self = this.set("ErrorRetryDuration", js.undefined)
+    @scala.inline
+    def setFullLoadErrorPercentage(value: IntegerOptional): Self = this.set("FullLoadErrorPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullLoadErrorPercentage: Self = this.set("FullLoadErrorPercentage", js.undefined)
+  }
+  
 }
 

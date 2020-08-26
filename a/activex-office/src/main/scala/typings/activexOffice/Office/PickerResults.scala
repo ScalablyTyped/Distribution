@@ -12,7 +12,32 @@ trait PickerResults extends js.Object {
   def apply(Index: Double): PickerResult = js.native
   /** @param SIPId [SIPId=''] */
   def Add(Id: String, DisplayName: String, Type: String): PickerResult = js.native
+  def Add(
+    Id: String,
+    DisplayName: String,
+    Type: String,
+    SIPId: js.UndefOr[scala.Nothing],
+    ItemData: js.UndefOr[scala.Nothing],
+    SubItems: js.Any
+  ): PickerResult = js.native
+  def Add(Id: String, DisplayName: String, Type: String, SIPId: js.UndefOr[scala.Nothing], ItemData: js.Any): PickerResult = js.native
+  def Add(
+    Id: String,
+    DisplayName: String,
+    Type: String,
+    SIPId: js.UndefOr[scala.Nothing],
+    ItemData: js.Any,
+    SubItems: js.Any
+  ): PickerResult = js.native
   def Add(Id: String, DisplayName: String, Type: String, SIPId: String): PickerResult = js.native
+  def Add(
+    Id: String,
+    DisplayName: String,
+    Type: String,
+    SIPId: String,
+    ItemData: js.UndefOr[scala.Nothing],
+    SubItems: js.Any
+  ): PickerResult = js.native
   def Add(Id: String, DisplayName: String, Type: String, SIPId: String, ItemData: js.Any): PickerResult = js.native
   def Add(Id: String, DisplayName: String, Type: String, SIPId: String, ItemData: js.Any, SubItems: js.Any): PickerResult = js.native
   def Item(Index: Double): PickerResult = js.native

@@ -11,8 +11,8 @@ Regular expression for matching npm organization names
 | Full name          | org-regex |
 | Keywords           | scoped, npm, package, organization, name, regex, regexp, regular, expression |
 | # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 757 |
+| # dependents       | 5 |
+| # downloads        | 24296 |
 | # stars            | 0 |
 
 ## Links

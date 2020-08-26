@@ -14,10 +14,28 @@ trait CreateTapesOutput extends js.Object {
 
 object CreateTapesOutput {
   @scala.inline
-  def apply(TapeARNs: TapeARNs = null): CreateTapesOutput = {
+  def apply(): CreateTapesOutput = {
     val __obj = js.Dynamic.literal()
-    if (TapeARNs != null) __obj.updateDynamic("TapeARNs")(TapeARNs.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTapesOutput]
   }
+  @scala.inline
+  implicit class CreateTapesOutputOps[Self <: CreateTapesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTapeARNsVarargs(value: TapeARN*): Self = this.set("TapeARNs", js.Array(value :_*))
+    @scala.inline
+    def setTapeARNs(value: TapeARNs): Self = this.set("TapeARNs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeARNs: Self = this.set("TapeARNs", js.undefined)
+  }
+  
 }
 

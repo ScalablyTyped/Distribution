@@ -35,23 +35,48 @@ trait ListObjectVersionsRequest extends js.Object {
 
 object ListObjectVersionsRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    Delimiter: Delimiter = null,
-    EncodingType: EncodingType = null,
-    KeyMarker: KeyMarker = null,
-    MaxKeys: js.UndefOr[MaxKeys] = js.undefined,
-    Prefix: Prefix = null,
-    VersionIdMarker: VersionIdMarker = null
-  ): ListObjectVersionsRequest = {
+  def apply(Bucket: BucketName): ListObjectVersionsRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
-    if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
-    if (KeyMarker != null) __obj.updateDynamic("KeyMarker")(KeyMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys.get.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
-    if (VersionIdMarker != null) __obj.updateDynamic("VersionIdMarker")(VersionIdMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectVersionsRequest]
   }
+  @scala.inline
+  implicit class ListObjectVersionsRequestOps[Self <: ListObjectVersionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelimiter(value: Delimiter): Self = this.set("Delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("Delimiter", js.undefined)
+    @scala.inline
+    def setEncodingType(value: EncodingType): Self = this.set("EncodingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodingType: Self = this.set("EncodingType", js.undefined)
+    @scala.inline
+    def setKeyMarker(value: KeyMarker): Self = this.set("KeyMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyMarker: Self = this.set("KeyMarker", js.undefined)
+    @scala.inline
+    def setMaxKeys(value: MaxKeys): Self = this.set("MaxKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxKeys: Self = this.set("MaxKeys", js.undefined)
+    @scala.inline
+    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    @scala.inline
+    def setVersionIdMarker(value: VersionIdMarker): Self = this.set("VersionIdMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionIdMarker: Self = this.set("VersionIdMarker", js.undefined)
+  }
+  
 }
 

@@ -27,6 +27,10 @@ trait CreateDeliveryStreamInput extends js.Object {
     */
   var ExtendedS3DestinationConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.ExtendedS3DestinationConfiguration] = js.native
   /**
+    * Enables configuring Kinesis Firehose to deliver data to any HTTP endpoint destination. You can specify only one destination.
+    */
+  var HttpEndpointDestinationConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.HttpEndpointDestinationConfiguration] = js.native
+  /**
     * When a Kinesis data stream is used as the source for the delivery stream, a KinesisStreamSourceConfiguration containing the Kinesis data stream Amazon Resource Name (ARN) and the role ARN for the source stream.
     */
   var KinesisStreamSourceConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.KinesisStreamSourceConfiguration] = js.native
@@ -50,29 +54,66 @@ trait CreateDeliveryStreamInput extends js.Object {
 
 object CreateDeliveryStreamInput {
   @scala.inline
-  def apply(
-    DeliveryStreamName: DeliveryStreamName,
-    DeliveryStreamEncryptionConfigurationInput: DeliveryStreamEncryptionConfigurationInput = null,
-    DeliveryStreamType: DeliveryStreamType = null,
-    ElasticsearchDestinationConfiguration: ElasticsearchDestinationConfiguration = null,
-    ExtendedS3DestinationConfiguration: ExtendedS3DestinationConfiguration = null,
-    KinesisStreamSourceConfiguration: KinesisStreamSourceConfiguration = null,
-    RedshiftDestinationConfiguration: RedshiftDestinationConfiguration = null,
-    S3DestinationConfiguration: S3DestinationConfiguration = null,
-    SplunkDestinationConfiguration: SplunkDestinationConfiguration = null,
-    Tags: TagDeliveryStreamInputTagList = null
-  ): CreateDeliveryStreamInput = {
+  def apply(DeliveryStreamName: DeliveryStreamName): CreateDeliveryStreamInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
-    if (DeliveryStreamEncryptionConfigurationInput != null) __obj.updateDynamic("DeliveryStreamEncryptionConfigurationInput")(DeliveryStreamEncryptionConfigurationInput.asInstanceOf[js.Any])
-    if (DeliveryStreamType != null) __obj.updateDynamic("DeliveryStreamType")(DeliveryStreamType.asInstanceOf[js.Any])
-    if (ElasticsearchDestinationConfiguration != null) __obj.updateDynamic("ElasticsearchDestinationConfiguration")(ElasticsearchDestinationConfiguration.asInstanceOf[js.Any])
-    if (ExtendedS3DestinationConfiguration != null) __obj.updateDynamic("ExtendedS3DestinationConfiguration")(ExtendedS3DestinationConfiguration.asInstanceOf[js.Any])
-    if (KinesisStreamSourceConfiguration != null) __obj.updateDynamic("KinesisStreamSourceConfiguration")(KinesisStreamSourceConfiguration.asInstanceOf[js.Any])
-    if (RedshiftDestinationConfiguration != null) __obj.updateDynamic("RedshiftDestinationConfiguration")(RedshiftDestinationConfiguration.asInstanceOf[js.Any])
-    if (S3DestinationConfiguration != null) __obj.updateDynamic("S3DestinationConfiguration")(S3DestinationConfiguration.asInstanceOf[js.Any])
-    if (SplunkDestinationConfiguration != null) __obj.updateDynamic("SplunkDestinationConfiguration")(SplunkDestinationConfiguration.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeliveryStreamInput]
   }
+  @scala.inline
+  implicit class CreateDeliveryStreamInputOps[Self <: CreateDeliveryStreamInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeliveryStreamName(value: DeliveryStreamName): Self = this.set("DeliveryStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeliveryStreamEncryptionConfigurationInput(value: DeliveryStreamEncryptionConfigurationInput): Self = this.set("DeliveryStreamEncryptionConfigurationInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryStreamEncryptionConfigurationInput: Self = this.set("DeliveryStreamEncryptionConfigurationInput", js.undefined)
+    @scala.inline
+    def setDeliveryStreamType(value: DeliveryStreamType): Self = this.set("DeliveryStreamType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryStreamType: Self = this.set("DeliveryStreamType", js.undefined)
+    @scala.inline
+    def setElasticsearchDestinationConfiguration(value: ElasticsearchDestinationConfiguration): Self = this.set("ElasticsearchDestinationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticsearchDestinationConfiguration: Self = this.set("ElasticsearchDestinationConfiguration", js.undefined)
+    @scala.inline
+    def setExtendedS3DestinationConfiguration(value: ExtendedS3DestinationConfiguration): Self = this.set("ExtendedS3DestinationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedS3DestinationConfiguration: Self = this.set("ExtendedS3DestinationConfiguration", js.undefined)
+    @scala.inline
+    def setHttpEndpointDestinationConfiguration(value: HttpEndpointDestinationConfiguration): Self = this.set("HttpEndpointDestinationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpEndpointDestinationConfiguration: Self = this.set("HttpEndpointDestinationConfiguration", js.undefined)
+    @scala.inline
+    def setKinesisStreamSourceConfiguration(value: KinesisStreamSourceConfiguration): Self = this.set("KinesisStreamSourceConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisStreamSourceConfiguration: Self = this.set("KinesisStreamSourceConfiguration", js.undefined)
+    @scala.inline
+    def setRedshiftDestinationConfiguration(value: RedshiftDestinationConfiguration): Self = this.set("RedshiftDestinationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedshiftDestinationConfiguration: Self = this.set("RedshiftDestinationConfiguration", js.undefined)
+    @scala.inline
+    def setS3DestinationConfiguration(value: S3DestinationConfiguration): Self = this.set("S3DestinationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3DestinationConfiguration: Self = this.set("S3DestinationConfiguration", js.undefined)
+    @scala.inline
+    def setSplunkDestinationConfiguration(value: SplunkDestinationConfiguration): Self = this.set("SplunkDestinationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplunkDestinationConfiguration: Self = this.set("SplunkDestinationConfiguration", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagDeliveryStreamInputTagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

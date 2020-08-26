@@ -25,11 +25,30 @@ trait SchemaNodeInitializationAction extends js.Object {
 
 object SchemaNodeInitializationAction {
   @scala.inline
-  def apply(executableFile: String = null, executionTimeout: String = null): SchemaNodeInitializationAction = {
+  def apply(): SchemaNodeInitializationAction = {
     val __obj = js.Dynamic.literal()
-    if (executableFile != null) __obj.updateDynamic("executableFile")(executableFile.asInstanceOf[js.Any])
-    if (executionTimeout != null) __obj.updateDynamic("executionTimeout")(executionTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNodeInitializationAction]
   }
+  @scala.inline
+  implicit class SchemaNodeInitializationActionOps[Self <: SchemaNodeInitializationAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecutableFile(value: String): Self = this.set("executableFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutableFile: Self = this.set("executableFile", js.undefined)
+    @scala.inline
+    def setExecutionTimeout(value: String): Self = this.set("executionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionTimeout: Self = this.set("executionTimeout", js.undefined)
+  }
+  
 }
 

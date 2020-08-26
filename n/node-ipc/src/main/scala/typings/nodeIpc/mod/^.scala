@@ -50,6 +50,7 @@ object ^ extends js.Object {
     */
   def connectTo(id: String): Unit = js.native
   def connectTo(id: String, callback: js.Function0[Unit]): Unit = js.native
+  def connectTo(id: String, path: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def connectTo(id: String, path: String): Unit = js.native
   def connectTo(id: String, path: String, callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -95,7 +96,16 @@ object ^ extends js.Object {
     */
   def connectToNet(id: String, hostOrPort: Double): Unit = js.native
   def connectToNet(id: String, hostOrPort: Double, callback: js.Function0[Unit]): Unit = js.native
+  def connectToNet(
+    id: String,
+    host: js.UndefOr[scala.Nothing],
+    port: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def connectToNet(id: String, host: js.UndefOr[scala.Nothing], port: Double): Unit = js.native
+  def connectToNet(id: String, host: js.UndefOr[scala.Nothing], port: Double, callback: js.Function0[Unit]): Unit = js.native
   def connectToNet(id: String, host: String): Unit = js.native
+  def connectToNet(id: String, host: String, port: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def connectToNet(id: String, host: String, port: Double): Unit = js.native
   def connectToNet(id: String, host: String, port: Double, callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -117,13 +127,14 @@ object ^ extends js.Object {
     * @param callback This is a function to be called after the Server has started.
     * This can also be done by binding an event to the start event like ipc.server.on('start',function(){});
     */
+  def serve(): Unit = js.native
+  def serve(callback: js.Function0[Unit]): Unit = js.native
   /**
     * https://www.npmjs.com/package/node-ipc#serve
     * Used to create local Unix Socket Server or Windows Socket Server to which Clients can bind.
     * The server can emit events to specific Client Sockets, or broadcast events to all known Client Sockets
     */
-  def serve(): Unit = js.native
-  def serve(callback: js.Function0[Unit]): Unit = js.native
+  def serve(callback: Null): Unit = js.native
   /**
     * https://www.npmjs.com/package/node-ipc#serve
     * Used to create local Unix Socket Server or Windows Socket Server to which Clients can bind.
@@ -153,7 +164,26 @@ object ^ extends js.Object {
     * @param port The port on which the TCP, UDP, or TLS Socket server will be bound, this defaults to 8000 if not specified
     */
   def serveNet(callbackOrPort: EmptyCallback): Unit = js.native
+  def serveNet(
+    host: js.UndefOr[scala.Nothing],
+    port: js.UndefOr[scala.Nothing],
+    UDPType: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def serveNet(host: js.UndefOr[scala.Nothing], port: Double): Unit = js.native
+  def serveNet(
+    host: js.UndefOr[scala.Nothing],
+    port: Double,
+    UDPType: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   def serveNet(host: String): Unit = js.native
+  def serveNet(
+    host: String,
+    port: js.UndefOr[scala.Nothing],
+    UDPType: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   /**
     * https://www.npmjs.com/package/node-ipc#servenet
     * @param host If not specified this defaults to the first address in os.networkInterfaces().
@@ -162,6 +192,7 @@ object ^ extends js.Object {
     * @param callback Function to be called when the server is created
     */
   def serveNet(host: String, port: Double): Unit = js.native
+  def serveNet(host: String, port: Double, UDPType: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def serveNet(host: String, port: Double, callback: js.Function0[Unit]): Unit = js.native
   /**
     * https://www.npmjs.com/package/node-ipc#servenet
@@ -174,6 +205,23 @@ object ^ extends js.Object {
   @JSName("serveNet")
   def serveNet_udp4(UDPType: udp4, callback: js.Function0[Unit]): Unit = js.native
   @JSName("serveNet")
+  def serveNet_udp4(host: js.UndefOr[scala.Nothing], port: js.UndefOr[scala.Nothing], UDPType: udp4): Unit = js.native
+  @JSName("serveNet")
+  def serveNet_udp4(
+    host: js.UndefOr[scala.Nothing],
+    port: js.UndefOr[scala.Nothing],
+    UDPType: udp4,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  @JSName("serveNet")
+  def serveNet_udp4(host: js.UndefOr[scala.Nothing], port: Double, UDPType: udp4): Unit = js.native
+  @JSName("serveNet")
+  def serveNet_udp4(host: js.UndefOr[scala.Nothing], port: Double, UDPType: udp4, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("serveNet")
+  def serveNet_udp4(host: String, port: js.UndefOr[scala.Nothing], UDPType: udp4): Unit = js.native
+  @JSName("serveNet")
+  def serveNet_udp4(host: String, port: js.UndefOr[scala.Nothing], UDPType: udp4, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("serveNet")
   def serveNet_udp4(host: String, port: Double, UDPType: udp4): Unit = js.native
   @JSName("serveNet")
   def serveNet_udp4(host: String, port: Double, UDPType: udp4, callback: js.Function0[Unit]): Unit = js.native
@@ -181,6 +229,23 @@ object ^ extends js.Object {
   def serveNet_udp6(UDPType: udp6): Unit = js.native
   @JSName("serveNet")
   def serveNet_udp6(UDPType: udp6, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("serveNet")
+  def serveNet_udp6(host: js.UndefOr[scala.Nothing], port: js.UndefOr[scala.Nothing], UDPType: udp6): Unit = js.native
+  @JSName("serveNet")
+  def serveNet_udp6(
+    host: js.UndefOr[scala.Nothing],
+    port: js.UndefOr[scala.Nothing],
+    UDPType: udp6,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  @JSName("serveNet")
+  def serveNet_udp6(host: js.UndefOr[scala.Nothing], port: Double, UDPType: udp6): Unit = js.native
+  @JSName("serveNet")
+  def serveNet_udp6(host: js.UndefOr[scala.Nothing], port: Double, UDPType: udp6, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("serveNet")
+  def serveNet_udp6(host: String, port: js.UndefOr[scala.Nothing], UDPType: udp6): Unit = js.native
+  @JSName("serveNet")
+  def serveNet_udp6(host: String, port: js.UndefOr[scala.Nothing], UDPType: udp6, callback: js.Function0[Unit]): Unit = js.native
   @JSName("serveNet")
   def serveNet_udp6(host: String, port: Double, UDPType: udp6): Unit = js.native
   @JSName("serveNet")

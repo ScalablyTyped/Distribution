@@ -31,6 +31,8 @@ class MaintenanceWindowTask protected () extends CustomResource {
   val description: Output_[js.UndefOr[String]] = js.native
   /**
     * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `taskInvocationParameters` configuration block `runCommandParameters` configuration block `output_s3_*` arguments instead. Conflicts with `taskInvocationParameters`. Documented below.
+    *
+    * @deprecated use 'task_invocation_parameters' argument instead
     */
   val loggingInfo: Output_[js.UndefOr[MaintenanceWindowTaskLoggingInfo]] = js.native
   /**
@@ -67,6 +69,8 @@ class MaintenanceWindowTask protected () extends CustomResource {
   val taskInvocationParameters: Output_[js.UndefOr[MaintenanceWindowTaskTaskInvocationParameters]] = js.native
   /**
     * A structure containing information about parameters required by the particular `taskArn`. Use `parameter` configuration blocks under the `taskInvocationParameters` configuration block instead. Conflicts with `taskInvocationParameters`. Documented below.
+    *
+    * @deprecated use 'task_invocation_parameters' argument instead
     */
   val taskParameters: Output_[js.UndefOr[js.Array[MaintenanceWindowTaskTaskParameter]]] = js.native
   /**
@@ -90,8 +94,10 @@ object MaintenanceWindowTask extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): MaintenanceWindowTask = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MaintenanceWindowTask = js.native
   def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState): MaintenanceWindowTask = js.native
   def get(name: String, id: Input[ID], state: MaintenanceWindowTaskState, opts: CustomResourceOptions): MaintenanceWindowTask = js.native
   /**

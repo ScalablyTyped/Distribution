@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  class ReadAfterDestroyedError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+  class ReadAfterDestroyedError () extends Error
   
   @js.native
   class ReadStream ()

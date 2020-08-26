@@ -30,16 +30,38 @@ trait SchemaManagedInstanceOverride extends js.Object {
 
 object SchemaManagedInstanceOverride {
   @scala.inline
-  def apply(
-    disks: js.Array[SchemaManagedInstanceOverrideDiskOverride] = null,
-    metadata: js.Array[Key] = null,
-    origin: String = null
-  ): SchemaManagedInstanceOverride = {
+  def apply(): SchemaManagedInstanceOverride = {
     val __obj = js.Dynamic.literal()
-    if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedInstanceOverride]
   }
+  @scala.inline
+  implicit class SchemaManagedInstanceOverrideOps[Self <: SchemaManagedInstanceOverride] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisksVarargs(value: SchemaManagedInstanceOverrideDiskOverride*): Self = this.set("disks", js.Array(value :_*))
+    @scala.inline
+    def setDisks(value: js.Array[SchemaManagedInstanceOverrideDiskOverride]): Self = this.set("disks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisks: Self = this.set("disks", js.undefined)
+    @scala.inline
+    def setMetadataVarargs(value: Key*): Self = this.set("metadata", js.Array(value :_*))
+    @scala.inline
+    def setMetadata(value: js.Array[Key]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+  }
+  
 }
 

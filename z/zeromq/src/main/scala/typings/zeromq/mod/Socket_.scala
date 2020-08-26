@@ -88,6 +88,7 @@ class Socket_ () extends EventEmitter {
     * @return for chaining
     */
   def monitor(): Socket_ = js.native
+  def monitor(interval: js.UndefOr[scala.Nothing], numOfEvents: Double): Socket_ = js.native
   def monitor(interval: Double): Socket_ = js.native
   def monitor(interval: Double, numOfEvents: Double): Socket_ = js.native
   def pause(): Unit = js.native

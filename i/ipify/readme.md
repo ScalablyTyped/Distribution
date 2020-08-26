@@ -11,8 +11,8 @@ Get your public IP address
 | Full name          | ipify |
 | Keywords           | ip, ipv6, ipv4, address, public, external, own |
 | # releases         | 3 |
-| # dependents       | 14 |
-| # downloads        | 343249 |
+| # dependents       | 15 |
+| # downloads        | 343605 |
 | # stars            | 9 |
 
 ## Links

@@ -26,5 +26,24 @@ object GetRoleCredentialsRequest {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], accountId = accountId.asInstanceOf[js.Any], roleName = roleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRoleCredentialsRequest]
   }
+  @scala.inline
+  implicit class GetRoleCredentialsRequestOps[Self <: GetRoleCredentialsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessToken(value: AccessTokenType): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccountId(value: AccountIdType): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleName(value: RoleNameType): Self = this.set("roleName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

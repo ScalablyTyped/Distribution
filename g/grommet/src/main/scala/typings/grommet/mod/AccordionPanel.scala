@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "AccordionPanel")
+@JSImport("grommet/es6", "AccordionPanel")
 @js.native
 class AccordionPanel protected ()
   extends Component[
@@ -27,7 +27,7 @@ class AccordionPanel protected ()
   ) = this()
 }
 
-@JSImport("grommet", "AccordionPanel")
+@JSImport("grommet/es6", "AccordionPanel")
 @js.native
 object AccordionPanel extends TopLevel[
       ComponentClass[

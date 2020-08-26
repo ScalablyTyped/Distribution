@@ -25,18 +25,16 @@ class ActionActivity protected () extends Activity {
   ) = this()
   @JSName("model")
   var model_FActionActivity: IModel = js.native
-  def action(): js.Any = js.native
-  def action(newValue: MicroflowAction): js.Any = js.native
-  @JSName("action")
-  def action_Union: MicroflowAction | Null = js.native
+  def action: MicroflowAction | Null = js.native
+  def action_=(newValue: MicroflowAction | Null): Unit = js.native
   def autoGenerateCaption: Boolean = js.native
-  def autoGenerateCaption(newValue: Boolean): js.Any = js.native
+  def autoGenerateCaption_=(newValue: Boolean): Unit = js.native
   def backgroundColor: ActionActivityColor = js.native
-  def backgroundColor(newValue: ActionActivityColor): js.Any = js.native
+  def backgroundColor_=(newValue: ActionActivityColor): Unit = js.native
   def caption: String = js.native
-  def caption(newValue: String): js.Any = js.native
+  def caption_=(newValue: String): Unit = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
 }
 
 /* static members */

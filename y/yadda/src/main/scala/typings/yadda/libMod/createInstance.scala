@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createInstance extends js.Object {
   def apply(): ^ = js.native
+  def apply(libraries: js.UndefOr[scala.Nothing], context: Properties): ^ = js.native
   def apply(libraries: js.Array[typings.yadda.languageMod.Library]): ^ = js.native
   def apply(libraries: js.Array[typings.yadda.languageMod.Library], context: Properties): ^ = js.native
   def apply(libraries: typings.yadda.languageMod.Library): ^ = js.native

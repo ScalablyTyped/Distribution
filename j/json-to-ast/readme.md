@@ -12,7 +12,7 @@ JSON AST parser
 | Keywords           | json-parser, parser, ast, json, tree |
 | # releases         | 8 |
 | # dependents       | 15 |
-| # downloads        | 3373833 |
+| # downloads        | 3665470 |
 | # stars            | 2 |
 
 ## Links

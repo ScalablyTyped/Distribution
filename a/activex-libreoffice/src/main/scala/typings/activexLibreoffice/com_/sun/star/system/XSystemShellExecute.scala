@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Specifies an interface for executing a system command. */
+@js.native
 trait XSystemShellExecute extends XInterface {
   /**
     * Executes an arbitrary system command.
@@ -17,7 +18,7 @@ trait XSystemShellExecute extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException when the specified flags are wrong or exclude each other; also thrown, with an ArgumentPosition of
     * @throws com::sun::star::system::SystemShellExecuteException in the case of errors when trying to executed the specified command.
     */
-  def execute(aCommand: String, aParameter: String, nFlags: Double): Unit
+  def execute(aCommand: String, aParameter: String, nFlags: Double): Unit = js.native
 }
 
 object XSystemShellExecute {
@@ -31,5 +32,20 @@ object XSystemShellExecute {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction3(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XSystemShellExecute]
   }
+  @scala.inline
+  implicit class XSystemShellExecuteOps[Self <: XSystemShellExecute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecute(value: (String, String, Double) => Unit): Self = this.set("execute", js.Any.fromFunction3(value))
+  }
+  
 }
 

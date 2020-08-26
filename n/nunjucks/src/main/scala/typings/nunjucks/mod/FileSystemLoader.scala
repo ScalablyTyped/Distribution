@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 class FileSystemLoader () extends Loader {
   def this(searchPaths: String) = this()
   def this(searchPaths: js.Array[String]) = this()
+  def this(searchPaths: js.UndefOr[scala.Nothing], opts: FileSystemLoaderOptions) = this()
   def this(searchPaths: String, opts: FileSystemLoaderOptions) = this()
   def this(searchPaths: js.Array[String], opts: FileSystemLoaderOptions) = this()
   var async: js.UndefOr[Boolean] = js.native

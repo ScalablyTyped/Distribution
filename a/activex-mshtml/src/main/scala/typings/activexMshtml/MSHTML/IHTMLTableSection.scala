@@ -20,6 +20,7 @@ trait IHTMLTableSection extends js.Object {
   def insertRow(): js.Any = js.native
   def insertRow(index: Double): js.Any = js.native
   def rows(): js.Any = js.native
+  def rows(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def rows(name: js.Any): js.Any = js.native
   def rows(name: js.Any, index: js.Any): js.Any = js.native
 }

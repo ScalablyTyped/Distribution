@@ -33,7 +33,15 @@ trait Cells extends js.Object {
   def SetHeight(RowHeight: js.Any, HeightRule: WdRowHeightRule): Unit = js.native
   def SetWidth(ColumnWidth: Double, RulerStyle: WdRulerStyle): Unit = js.native
   def Split(): Unit = js.native
+  def Split(
+    NumRows: js.UndefOr[scala.Nothing],
+    NumColumns: js.UndefOr[scala.Nothing],
+    MergeBeforeSplit: js.Any
+  ): Unit = js.native
+  def Split(NumRows: js.UndefOr[scala.Nothing], NumColumns: js.Any): Unit = js.native
+  def Split(NumRows: js.UndefOr[scala.Nothing], NumColumns: js.Any, MergeBeforeSplit: js.Any): Unit = js.native
   def Split(NumRows: js.Any): Unit = js.native
+  def Split(NumRows: js.Any, NumColumns: js.UndefOr[scala.Nothing], MergeBeforeSplit: js.Any): Unit = js.native
   def Split(NumRows: js.Any, NumColumns: js.Any): Unit = js.native
   def Split(NumRows: js.Any, NumColumns: js.Any, MergeBeforeSplit: js.Any): Unit = js.native
 }

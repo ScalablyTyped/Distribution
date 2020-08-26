@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSNonNullExpression
   extends Node
      with Expression {
-  var expression: Expression
+  var expression: Expression = js.native
   @JSName("type")
-  var type_TSNonNullExpression: typings.babelTypes.babelTypesStrings.TSNonNullExpression
+  var type_TSNonNullExpression: typings.babelTypes.babelTypesStrings.TSNonNullExpression = js.native
 }
 
 @JSImport("babel-types", "TSNonNullExpression")

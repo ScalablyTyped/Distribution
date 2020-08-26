@@ -11,7 +11,23 @@ import scala.scalajs.js.annotation._
 @js.native
 object computeCodePaths extends js.Object {
   def apply(): js.Promise[Map[String, Asset | Archive]] = js.native
+  def apply(
+    extraIncludePaths: js.UndefOr[scala.Nothing],
+    extraIncludePackages: js.UndefOr[scala.Nothing],
+    extraExcludePackages: js.Array[String]
+  ): js.Promise[Map[String, Asset | Archive]] = js.native
+  def apply(extraIncludePaths: js.UndefOr[scala.Nothing], extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = js.native
+  def apply(
+    extraIncludePaths: js.UndefOr[scala.Nothing],
+    extraIncludePackages: js.Array[String],
+    extraExcludePackages: js.Array[String]
+  ): js.Promise[Map[String, Asset | Archive]] = js.native
   def apply(extraIncludePaths: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = js.native
+  def apply(
+    extraIncludePaths: js.Array[String],
+    extraIncludePackages: js.UndefOr[scala.Nothing],
+    extraExcludePackages: js.Array[String]
+  ): js.Promise[Map[String, Asset | Archive]] = js.native
   def apply(extraIncludePaths: js.Array[String], extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = js.native
   def apply(
     extraIncludePaths: js.Array[String],

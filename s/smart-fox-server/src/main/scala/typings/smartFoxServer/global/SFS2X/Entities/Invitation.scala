@@ -30,21 +30,6 @@ object Invitation extends js.Object {
       secondsForAnswer: Double,
       params: js.Object
     ) = this()
-    /** @type {number} Indicates the id of the invitation. */
-    /* CompleteClass */
-    override var id: Double = js.native
-    /** @type {SFSUser} Returns the SFSUser object corresponding to the user who received the invitation. */
-    /* CompleteClass */
-    override var invitee: typings.smartFoxServer.SFS2X.Entities.SFSUser = js.native
-    /** @type {SFSUser} Returns the SFSUser object corresponding to the user who sent the invitation. */
-    /* CompleteClass */
-    override var inviter: typings.smartFoxServer.SFS2X.Entities.SFSUser = js.native
-    /** @type {Object} Returns an object containing a custom set of parameters. */
-    /* CompleteClass */
-    override var params: js.Object = js.native
-    /** @type {number} Returns the number of seconds available to the invitee to reply to the invitation, after which the invitation expires. */
-    /* CompleteClass */
-    override var secondsForAnswer: Double = js.native
   }
   
   /* static members */

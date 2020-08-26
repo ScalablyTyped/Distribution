@@ -27,10 +27,8 @@ class DataViewControlBar protected () extends ControlBar {
   ) = this()
   @JSName("model")
   var model_FDataViewControlBar: IModel = js.native
-  def closeButton(): js.Any = js.native
-  def closeButton(newValue: ControlBarItem): js.Any = js.native
-  @JSName("closeButton")
-  def closeButton_Union: ControlBarItem | Null = js.native
+  def closeButton: ControlBarItem | Null = js.native
+  def closeButton_=(newValue: ControlBarItem | Null): Unit = js.native
 }
 
 /* static members */

@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * The outer sequence represents the rows and the inner sequence the columns of the array.
   * @since OOo 1.1.2
   */
+@js.native
 trait XCellRangeFormula extends XInterface {
   /**
     * gets an array from the contents of the cell range.
@@ -21,14 +22,14 @@ trait XCellRangeFormula extends XInterface {
     * Each element of the result contains the same string that would be returned by {@link com.sun.star.table.XCell.getFormula()} for the corresponding
     * cell.
     */
-  var FormulaArray: SafeArray[SafeArray[String]]
+  var FormulaArray: SafeArray[SafeArray[String]] = js.native
   /**
     * gets an array from the contents of the cell range.
     *
     * Each element of the result contains the same string that would be returned by {@link com.sun.star.table.XCell.getFormula()} for the corresponding
     * cell.
     */
-  def getFormulaArray(): SafeArray[SafeArray[String]]
+  def getFormulaArray(): SafeArray[SafeArray[String]] = js.native
   /**
     * fills the cell range with values from an array.
     *
@@ -36,7 +37,7 @@ trait XCellRangeFormula extends XInterface {
     * {@link com.sun.star.table.XCell.setFormula()} call for the corresponding cell.
     * @throws com::sun::star::uno::RuntimeException If the size of the array is different from the current size.
     */
-  def setFormulaArray(aArray: SeqEquiv[SeqEquiv[String]]): Unit
+  def setFormulaArray(aArray: SeqEquiv[SeqEquiv[String]]): Unit = js.native
 }
 
 object XCellRangeFormula {
@@ -52,5 +53,24 @@ object XCellRangeFormula {
     val __obj = js.Dynamic.literal(FormulaArray = FormulaArray.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getFormulaArray = js.Any.fromFunction0(getFormulaArray), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFormulaArray = js.Any.fromFunction1(setFormulaArray))
     __obj.asInstanceOf[XCellRangeFormula]
   }
+  @scala.inline
+  implicit class XCellRangeFormulaOps[Self <: XCellRangeFormula] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormulaArray(value: SafeArray[SafeArray[String]]): Self = this.set("FormulaArray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetFormulaArray(value: () => SafeArray[SafeArray[String]]): Self = this.set("getFormulaArray", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetFormulaArray(value: SeqEquiv[SeqEquiv[String]] => Unit): Self = this.set("setFormulaArray", js.Any.fromFunction1(value))
+  }
+  
 }
 

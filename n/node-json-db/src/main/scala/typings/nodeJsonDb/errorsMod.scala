@@ -21,10 +21,6 @@ object errorsMod extends js.Object {
     def this(message: String, id: Number, inner: Error) = this()
     val id: Number = js.native
     val inner: js.UndefOr[Error] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
 }

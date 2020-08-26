@@ -78,6 +78,7 @@ class Builder () extends js.Object {
     */
   def endVector(): Offset = js.native
   def finish(root_table: Offset): Unit = js.native
+  def finish(root_table: Offset, file_identifier: js.UndefOr[scala.Nothing], size_prefix: Boolean): Unit = js.native
   def finish(root_table: Offset, file_identifier: String): Unit = js.native
   def finish(root_table: Offset, file_identifier: String, size_prefix: Boolean): Unit = js.native
   def finishSizePrefixed(root_table: Offset): Unit = js.native

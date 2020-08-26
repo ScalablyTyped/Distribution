@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object obj extends js.Object {
   def apply(): Cwd | Null = js.native
+  def apply(filename: js.UndefOr[scala.Nothing], options: Options): Cwd | Null = js.native
   def apply(filename: String): Cwd | Null = js.native
   def apply(filename: String, options: Options): Cwd | Null = js.native
 }

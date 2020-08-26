@@ -32,22 +32,48 @@ trait SchemaProductstatusesCustomBatchRequestEntry extends js.Object {
 
 object SchemaProductstatusesCustomBatchRequestEntry {
   @scala.inline
-  def apply(
-    batchId: js.UndefOr[Double] = js.undefined,
-    destinations: js.Array[String] = null,
-    includeAttributes: js.UndefOr[Boolean] = js.undefined,
-    merchantId: String = null,
-    method: String = null,
-    productId: String = null
-  ): SchemaProductstatusesCustomBatchRequestEntry = {
+  def apply(): SchemaProductstatusesCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
-    if (destinations != null) __obj.updateDynamic("destinations")(destinations.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAttributes)) __obj.updateDynamic("includeAttributes")(includeAttributes.get.asInstanceOf[js.Any])
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProductstatusesCustomBatchRequestEntry]
   }
+  @scala.inline
+  implicit class SchemaProductstatusesCustomBatchRequestEntryOps[Self <: SchemaProductstatusesCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    @scala.inline
+    def setDestinationsVarargs(value: String*): Self = this.set("destinations", js.Array(value :_*))
+    @scala.inline
+    def setDestinations(value: js.Array[String]): Self = this.set("destinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinations: Self = this.set("destinations", js.undefined)
+    @scala.inline
+    def setIncludeAttributes(value: Boolean): Self = this.set("includeAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeAttributes: Self = this.set("includeAttributes", js.undefined)
+    @scala.inline
+    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+  }
+  
 }
 

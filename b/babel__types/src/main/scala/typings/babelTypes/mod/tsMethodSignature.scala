@@ -9,12 +9,30 @@ import scala.scalajs.js.annotation._
 object tsMethodSignature extends js.Object {
   def apply(
     key: Expression,
-    typeParameters: js.UndefOr[Null | TSTypeParameterDeclaration_],
+    typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[Identifier_ | RestElement_]
   ): TSMethodSignature_ = js.native
   def apply(
     key: Expression,
-    typeParameters: js.UndefOr[Null | TSTypeParameterDeclaration_],
+    typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[Identifier_ | RestElement_],
+    typeAnnotation: TSTypeAnnotation_
+  ): TSMethodSignature_ = js.native
+  def apply(key: Expression, typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature_ = js.native
+  def apply(
+    key: Expression,
+    typeParameters: Null,
+    parameters: js.Array[Identifier_ | RestElement_],
+    typeAnnotation: TSTypeAnnotation_
+  ): TSMethodSignature_ = js.native
+  def apply(
+    key: Expression,
+    typeParameters: TSTypeParameterDeclaration_,
+    parameters: js.Array[Identifier_ | RestElement_]
+  ): TSMethodSignature_ = js.native
+  def apply(
+    key: Expression,
+    typeParameters: TSTypeParameterDeclaration_,
     parameters: js.Array[Identifier_ | RestElement_],
     typeAnnotation: TSTypeAnnotation_
   ): TSMethodSignature_ = js.native

@@ -75,7 +75,7 @@ class CertificateAuthority protected () extends CustomResource {
   /**
     * Specifies a key-value map of user-defined tags that are attached to the certificate authority.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The type of the certificate authority. Defaults to `SUBORDINATE`. Valid values: `ROOT` and `SUBORDINATE`.
     */
@@ -93,8 +93,10 @@ object CertificateAuthority extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): CertificateAuthority = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CertificateAuthority = js.native
   def get(name: String, id: Input[ID], state: CertificateAuthorityState): CertificateAuthority = js.native
   def get(name: String, id: Input[ID], state: CertificateAuthorityState, opts: CustomResourceOptions): CertificateAuthority = js.native
   /**

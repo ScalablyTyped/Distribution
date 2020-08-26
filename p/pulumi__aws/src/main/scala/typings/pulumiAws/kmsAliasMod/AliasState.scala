@@ -32,20 +32,42 @@ trait AliasState extends js.Object {
 
 object AliasState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    targetKeyArn: Input[String] = null,
-    targetKeyId: Input[String] = null
-  ): AliasState = {
+  def apply(): AliasState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (targetKeyArn != null) __obj.updateDynamic("targetKeyArn")(targetKeyArn.asInstanceOf[js.Any])
-    if (targetKeyId != null) __obj.updateDynamic("targetKeyId")(targetKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasState]
   }
+  @scala.inline
+  implicit class AliasStateOps[Self <: AliasState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setTargetKeyArn(value: Input[String]): Self = this.set("targetKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetKeyArn: Self = this.set("targetKeyArn", js.undefined)
+    @scala.inline
+    def setTargetKeyId(value: Input[String]): Self = this.set("targetKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetKeyId: Self = this.set("targetKeyId", js.undefined)
+  }
+  
 }
 

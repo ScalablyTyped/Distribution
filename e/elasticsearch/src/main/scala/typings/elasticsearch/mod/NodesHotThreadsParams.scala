@@ -7,47 +7,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NodesHotThreadsParams extends GenericParams {
-  var ignoreIdleThreads: js.UndefOr[Boolean] = js.undefined
-  var interval: js.UndefOr[TimeSpan] = js.undefined
-  var nodeId: NameList
-  var snapshots: js.UndefOr[Double] = js.undefined
-  var threads: js.UndefOr[Double] = js.undefined
-  var timeout: js.UndefOr[TimeSpan] = js.undefined
-  var `type`: js.UndefOr[cpu | wait | blocked] = js.undefined
+  var ignoreIdleThreads: js.UndefOr[Boolean] = js.native
+  var interval: js.UndefOr[TimeSpan] = js.native
+  var nodeId: NameList = js.native
+  var snapshots: js.UndefOr[Double] = js.native
+  var threads: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.native
+  var `type`: js.UndefOr[cpu | wait | blocked] = js.native
 }
 
 object NodesHotThreadsParams {
   @scala.inline
-  def apply(
-    nodeId: NameList,
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    ignoreIdleThreads: js.UndefOr[Boolean] = js.undefined,
-    interval: TimeSpan = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    snapshots: js.UndefOr[Double] = js.undefined,
-    threads: js.UndefOr[Double] = js.undefined,
-    timeout: TimeSpan = null,
-    `type`: cpu | wait | blocked = null
-  ): NodesHotThreadsParams = {
+  def apply(nodeId: NameList): NodesHotThreadsParams = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreIdleThreads)) __obj.updateDynamic("ignoreIdleThreads")(ignoreIdleThreads.get.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapshots)) __obj.updateDynamic("snapshots")(snapshots.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(threads)) __obj.updateDynamic("threads")(threads.get.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesHotThreadsParams]
   }
+  @scala.inline
+  implicit class NodesHotThreadsParamsOps[Self <: NodesHotThreadsParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNodeIdVarargs(value: String*): Self = this.set("nodeId", js.Array(value :_*))
+    @scala.inline
+    def setNodeId(value: NameList): Self = this.set("nodeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIgnoreIdleThreads(value: Boolean): Self = this.set("ignoreIdleThreads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreIdleThreads: Self = this.set("ignoreIdleThreads", js.undefined)
+    @scala.inline
+    def setInterval(value: TimeSpan): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setSnapshots(value: Double): Self = this.set("snapshots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshots: Self = this.set("snapshots", js.undefined)
+    @scala.inline
+    def setThreads(value: Double): Self = this.set("threads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreads: Self = this.set("threads", js.undefined)
+    @scala.inline
+    def setTimeout(value: TimeSpan): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setType(value: cpu | wait | blocked): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -42,24 +42,54 @@ trait EventDestinationState extends js.Object {
 
 object EventDestinationState {
   @scala.inline
-  def apply(
-    cloudwatchDestinations: Input[js.Array[Input[EventDestinationCloudwatchDestination]]] = null,
-    configurationSetName: Input[String] = null,
-    enabled: Input[Boolean] = null,
-    kinesisDestination: Input[EventDestinationKinesisDestination] = null,
-    matchingTypes: Input[js.Array[Input[String]]] = null,
-    name: Input[String] = null,
-    snsDestination: Input[EventDestinationSnsDestination] = null
-  ): EventDestinationState = {
+  def apply(): EventDestinationState = {
     val __obj = js.Dynamic.literal()
-    if (cloudwatchDestinations != null) __obj.updateDynamic("cloudwatchDestinations")(cloudwatchDestinations.asInstanceOf[js.Any])
-    if (configurationSetName != null) __obj.updateDynamic("configurationSetName")(configurationSetName.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (kinesisDestination != null) __obj.updateDynamic("kinesisDestination")(kinesisDestination.asInstanceOf[js.Any])
-    if (matchingTypes != null) __obj.updateDynamic("matchingTypes")(matchingTypes.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (snsDestination != null) __obj.updateDynamic("snsDestination")(snsDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventDestinationState]
   }
+  @scala.inline
+  implicit class EventDestinationStateOps[Self <: EventDestinationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudwatchDestinationsVarargs(value: Input[EventDestinationCloudwatchDestination]*): Self = this.set("cloudwatchDestinations", js.Array(value :_*))
+    @scala.inline
+    def setCloudwatchDestinations(value: Input[js.Array[Input[EventDestinationCloudwatchDestination]]]): Self = this.set("cloudwatchDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchDestinations: Self = this.set("cloudwatchDestinations", js.undefined)
+    @scala.inline
+    def setConfigurationSetName(value: Input[String]): Self = this.set("configurationSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationSetName: Self = this.set("configurationSetName", js.undefined)
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setKinesisDestination(value: Input[EventDestinationKinesisDestination]): Self = this.set("kinesisDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisDestination: Self = this.set("kinesisDestination", js.undefined)
+    @scala.inline
+    def setMatchingTypesVarargs(value: Input[String]*): Self = this.set("matchingTypes", js.Array(value :_*))
+    @scala.inline
+    def setMatchingTypes(value: Input[js.Array[Input[String]]]): Self = this.set("matchingTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchingTypes: Self = this.set("matchingTypes", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSnsDestination(value: Input[EventDestinationSnsDestination]): Self = this.set("snsDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnsDestination: Self = this.set("snsDestination", js.undefined)
+  }
+  
 }
 

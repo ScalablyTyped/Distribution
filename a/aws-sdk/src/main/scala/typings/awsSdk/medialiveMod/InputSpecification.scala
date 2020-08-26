@@ -22,16 +22,34 @@ trait InputSpecification extends js.Object {
 
 object InputSpecification {
   @scala.inline
-  def apply(
-    Codec: InputCodec = null,
-    MaximumBitrate: InputMaximumBitrate = null,
-    Resolution: InputResolution = null
-  ): InputSpecification = {
+  def apply(): InputSpecification = {
     val __obj = js.Dynamic.literal()
-    if (Codec != null) __obj.updateDynamic("Codec")(Codec.asInstanceOf[js.Any])
-    if (MaximumBitrate != null) __obj.updateDynamic("MaximumBitrate")(MaximumBitrate.asInstanceOf[js.Any])
-    if (Resolution != null) __obj.updateDynamic("Resolution")(Resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputSpecification]
   }
+  @scala.inline
+  implicit class InputSpecificationOps[Self <: InputSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodec(value: InputCodec): Self = this.set("Codec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodec: Self = this.set("Codec", js.undefined)
+    @scala.inline
+    def setMaximumBitrate(value: InputMaximumBitrate): Self = this.set("MaximumBitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumBitrate: Self = this.set("MaximumBitrate", js.undefined)
+    @scala.inline
+    def setResolution(value: InputResolution): Self = this.set("Resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("Resolution", js.undefined)
+  }
+  
 }
 

@@ -34,22 +34,52 @@ trait GetOpsSummaryRequest extends js.Object {
 
 object GetOpsSummaryRequest {
   @scala.inline
-  def apply(
-    Aggregators: OpsAggregatorList = null,
-    Filters: OpsFilterList = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    ResultAttributes: OpsResultAttributeList = null,
-    SyncName: ResourceDataSyncName = null
-  ): GetOpsSummaryRequest = {
+  def apply(): GetOpsSummaryRequest = {
     val __obj = js.Dynamic.literal()
-    if (Aggregators != null) __obj.updateDynamic("Aggregators")(Aggregators.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ResultAttributes != null) __obj.updateDynamic("ResultAttributes")(ResultAttributes.asInstanceOf[js.Any])
-    if (SyncName != null) __obj.updateDynamic("SyncName")(SyncName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOpsSummaryRequest]
   }
+  @scala.inline
+  implicit class GetOpsSummaryRequestOps[Self <: GetOpsSummaryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregatorsVarargs(value: OpsAggregator*): Self = this.set("Aggregators", js.Array(value :_*))
+    @scala.inline
+    def setAggregators(value: OpsAggregatorList): Self = this.set("Aggregators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregators: Self = this.set("Aggregators", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: OpsFilter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: OpsFilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setResultAttributesVarargs(value: OpsResultAttribute*): Self = this.set("ResultAttributes", js.Array(value :_*))
+    @scala.inline
+    def setResultAttributes(value: OpsResultAttributeList): Self = this.set("ResultAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultAttributes: Self = this.set("ResultAttributes", js.undefined)
+    @scala.inline
+    def setSyncName(value: ResourceDataSyncName): Self = this.set("SyncName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyncName: Self = this.set("SyncName", js.undefined)
+  }
+  
 }
 

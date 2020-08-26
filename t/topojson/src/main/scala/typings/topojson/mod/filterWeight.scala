@@ -13,6 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object filterWeight extends js.Object {
   def apply(topology: Topology[Objects[Properties]]): Filter_ = js.native
+  def apply(
+    topology: Topology[Objects[Properties]],
+    minWeight: js.UndefOr[scala.Nothing],
+    weight: RingWeighter
+  ): Filter_ = js.native
   def apply(topology: Topology[Objects[Properties]], minWeight: Double): Filter_ = js.native
   def apply(topology: Topology[Objects[Properties]], minWeight: Double, weight: RingWeighter): Filter_ = js.native
 }

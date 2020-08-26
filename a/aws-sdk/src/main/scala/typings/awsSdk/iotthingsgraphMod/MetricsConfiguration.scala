@@ -18,11 +18,30 @@ trait MetricsConfiguration extends js.Object {
 
 object MetricsConfiguration {
   @scala.inline
-  def apply(cloudMetricEnabled: js.UndefOr[Enabled] = js.undefined, metricRuleRoleArn: RoleArn = null): MetricsConfiguration = {
+  def apply(): MetricsConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cloudMetricEnabled)) __obj.updateDynamic("cloudMetricEnabled")(cloudMetricEnabled.get.asInstanceOf[js.Any])
-    if (metricRuleRoleArn != null) __obj.updateDynamic("metricRuleRoleArn")(metricRuleRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricsConfiguration]
   }
+  @scala.inline
+  implicit class MetricsConfigurationOps[Self <: MetricsConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudMetricEnabled(value: Enabled): Self = this.set("cloudMetricEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudMetricEnabled: Self = this.set("cloudMetricEnabled", js.undefined)
+    @scala.inline
+    def setMetricRuleRoleArn(value: RoleArn): Self = this.set("metricRuleRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricRuleRoleArn: Self = this.set("metricRuleRoleArn", js.undefined)
+  }
+  
 }
 

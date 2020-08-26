@@ -26,16 +26,38 @@ trait SchemaWafExpressionSet extends js.Object {
 
 object SchemaWafExpressionSet {
   @scala.inline
-  def apply(
-    aliases: js.Array[String] = null,
-    expressions: js.Array[SchemaWafExpressionSetExpression] = null,
-    id: String = null
-  ): SchemaWafExpressionSet = {
+  def apply(): SchemaWafExpressionSet = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (expressions != null) __obj.updateDynamic("expressions")(expressions.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWafExpressionSet]
   }
+  @scala.inline
+  implicit class SchemaWafExpressionSetOps[Self <: SchemaWafExpressionSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    @scala.inline
+    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("aliases", js.undefined)
+    @scala.inline
+    def setExpressionsVarargs(value: SchemaWafExpressionSetExpression*): Self = this.set("expressions", js.Array(value :_*))
+    @scala.inline
+    def setExpressions(value: js.Array[SchemaWafExpressionSetExpression]): Self = this.set("expressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressions: Self = this.set("expressions", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+  }
+  
 }
 

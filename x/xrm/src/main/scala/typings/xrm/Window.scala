@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Window extends js.Object {
-  var Xrm: XrmStatic
-  def GetGlobalContext(): GlobalContext
+  var Xrm: XrmStatic = js.native
+  def GetGlobalContext(): GlobalContext = js.native
 }
 
 object Window {
@@ -17,5 +18,22 @@ object Window {
     val __obj = js.Dynamic.literal(GetGlobalContext = js.Any.fromFunction0(GetGlobalContext), Xrm = Xrm.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
+  @scala.inline
+  implicit class WindowOps[Self <: Window] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetGlobalContext(value: () => GlobalContext): Self = this.set("GetGlobalContext", js.Any.fromFunction0(value))
+    @scala.inline
+    def setXrm(value: XrmStatic): Self = this.set("Xrm", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -32,11 +32,30 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2Digest extends js.Object {
 
 object SchemaGoogleDevtoolsRemoteworkersV1test2Digest {
   @scala.inline
-  def apply(hash: String = null, sizeBytes: String = null): SchemaGoogleDevtoolsRemoteworkersV1test2Digest = {
+  def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2Digest = {
     val __obj = js.Dynamic.literal()
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (sizeBytes != null) __obj.updateDynamic("sizeBytes")(sizeBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2Digest]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2DigestOps[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2Digest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash: Self = this.set("hash", js.undefined)
+    @scala.inline
+    def setSizeBytes(value: String): Self = this.set("sizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeBytes: Self = this.set("sizeBytes", js.undefined)
+  }
+  
 }
 

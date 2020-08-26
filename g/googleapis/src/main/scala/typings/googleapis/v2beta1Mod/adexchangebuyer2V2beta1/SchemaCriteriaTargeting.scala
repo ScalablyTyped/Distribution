@@ -22,11 +22,34 @@ trait SchemaCriteriaTargeting extends js.Object {
 
 object SchemaCriteriaTargeting {
   @scala.inline
-  def apply(excludedCriteriaIds: js.Array[String] = null, targetedCriteriaIds: js.Array[String] = null): SchemaCriteriaTargeting = {
+  def apply(): SchemaCriteriaTargeting = {
     val __obj = js.Dynamic.literal()
-    if (excludedCriteriaIds != null) __obj.updateDynamic("excludedCriteriaIds")(excludedCriteriaIds.asInstanceOf[js.Any])
-    if (targetedCriteriaIds != null) __obj.updateDynamic("targetedCriteriaIds")(targetedCriteriaIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCriteriaTargeting]
   }
+  @scala.inline
+  implicit class SchemaCriteriaTargetingOps[Self <: SchemaCriteriaTargeting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExcludedCriteriaIdsVarargs(value: String*): Self = this.set("excludedCriteriaIds", js.Array(value :_*))
+    @scala.inline
+    def setExcludedCriteriaIds(value: js.Array[String]): Self = this.set("excludedCriteriaIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedCriteriaIds: Self = this.set("excludedCriteriaIds", js.undefined)
+    @scala.inline
+    def setTargetedCriteriaIdsVarargs(value: String*): Self = this.set("targetedCriteriaIds", js.Array(value :_*))
+    @scala.inline
+    def setTargetedCriteriaIds(value: js.Array[String]): Self = this.set("targetedCriteriaIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetedCriteriaIds: Self = this.set("targetedCriteriaIds", js.undefined)
+  }
+  
 }
 

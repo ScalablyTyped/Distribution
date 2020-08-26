@@ -58,34 +58,72 @@ trait S3Object extends js.Object {
 
 object S3Object {
   @scala.inline
-  def apply(
-    bucketArn: string = null,
-    eTag: string = null,
-    extension: string = null,
-    key: string = null,
-    lastModified: timestampIso8601 = null,
-    path: string = null,
-    publicAccess: js.UndefOr[boolean] = js.undefined,
-    serverSideEncryption: ServerSideEncryption = null,
-    size: js.UndefOr[long] = js.undefined,
-    storageClass: StorageClass = null,
-    tags: KeyValuePairList = null,
-    versionId: string = null
-  ): S3Object = {
+  def apply(): S3Object = {
     val __obj = js.Dynamic.literal()
-    if (bucketArn != null) __obj.updateDynamic("bucketArn")(bucketArn.asInstanceOf[js.Any])
-    if (eTag != null) __obj.updateDynamic("eTag")(eTag.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(publicAccess)) __obj.updateDynamic("publicAccess")(publicAccess.get.asInstanceOf[js.Any])
-    if (serverSideEncryption != null) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Object]
   }
+  @scala.inline
+  implicit class S3ObjectOps[Self <: S3Object] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketArn(value: string): Self = this.set("bucketArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketArn: Self = this.set("bucketArn", js.undefined)
+    @scala.inline
+    def setETag(value: string): Self = this.set("eTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("eTag", js.undefined)
+    @scala.inline
+    def setExtension(value: string): Self = this.set("extension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtension: Self = this.set("extension", js.undefined)
+    @scala.inline
+    def setKey(value: string): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLastModified(value: timestampIso8601): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    @scala.inline
+    def setPath(value: string): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPublicAccess(value: boolean): Self = this.set("publicAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicAccess: Self = this.set("publicAccess", js.undefined)
+    @scala.inline
+    def setServerSideEncryption(value: ServerSideEncryption): Self = this.set("serverSideEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideEncryption: Self = this.set("serverSideEncryption", js.undefined)
+    @scala.inline
+    def setSize(value: long): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStorageClass(value: StorageClass): Self = this.set("storageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("storageClass", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: KeyValuePair*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: KeyValuePairList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersionId(value: string): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("versionId", js.undefined)
+  }
+  
 }
 

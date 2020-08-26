@@ -33,6 +33,7 @@ trait Distortion extends Effect {
     *   @param [oversample] 'none', '2x', or '4x'.
     */
   def process(): Unit = js.native
+  def process(amount: js.UndefOr[scala.Nothing], oversample: String): Unit = js.native
   def process(amount: Double): Unit = js.native
   def process(amount: Double, oversample: String): Unit = js.native
   /**
@@ -43,6 +44,7 @@ trait Distortion extends Effect {
     *   @param [oversample] 'none', '2x', or '4x'.
     */
   def set(): Unit = js.native
+  def set(amount: js.UndefOr[scala.Nothing], oversample: String): Unit = js.native
   def set(amount: Double): Unit = js.native
   def set(amount: Double, oversample: String): Unit = js.native
 }

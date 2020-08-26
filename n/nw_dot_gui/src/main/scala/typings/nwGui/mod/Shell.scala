@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Shell extends js.Object {
-  def openExternal(uri: String): Unit
-  def openItem(file_path: String): Unit
-  def showItemInFolder(file_path: String): Unit
+  def openExternal(uri: String): Unit = js.native
+  def openItem(file_path: String): Unit = js.native
+  def showItemInFolder(file_path: String): Unit = js.native
 }
 
 @JSImport("nw.gui", "Shell")

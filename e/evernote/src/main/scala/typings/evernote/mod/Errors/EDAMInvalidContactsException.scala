@@ -10,10 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class EDAMInvalidContactsException () extends Error {
   var contacts: js.Array[Contact] = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var parameter: String = js.native
   var reasons: js.Array[EDAMInvalidContactReason] = js.native
 }

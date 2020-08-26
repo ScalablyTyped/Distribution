@@ -12,7 +12,7 @@ jQuery grid plugin
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 10057 |
+| # downloads        | 12101 |
 | # stars            | 1 |
 
 ## Links

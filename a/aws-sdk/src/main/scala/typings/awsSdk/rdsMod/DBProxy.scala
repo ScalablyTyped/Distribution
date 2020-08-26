@@ -66,38 +66,84 @@ trait DBProxy extends js.Object {
 
 object DBProxy {
   @scala.inline
-  def apply(
-    Auth: UserAuthConfigInfoList = null,
-    CreatedDate: TStamp = null,
-    DBProxyArn: String = null,
-    DBProxyName: String = null,
-    DebugLogging: js.UndefOr[Boolean] = js.undefined,
-    Endpoint: String = null,
-    EngineFamily: String = null,
-    IdleClientTimeout: js.UndefOr[Integer] = js.undefined,
-    RequireTLS: js.UndefOr[Boolean] = js.undefined,
-    RoleArn: String = null,
-    Status: DBProxyStatus = null,
-    UpdatedDate: TStamp = null,
-    VpcSecurityGroupIds: StringList = null,
-    VpcSubnetIds: StringList = null
-  ): DBProxy = {
+  def apply(): DBProxy = {
     val __obj = js.Dynamic.literal()
-    if (Auth != null) __obj.updateDynamic("Auth")(Auth.asInstanceOf[js.Any])
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (DBProxyArn != null) __obj.updateDynamic("DBProxyArn")(DBProxyArn.asInstanceOf[js.Any])
-    if (DBProxyName != null) __obj.updateDynamic("DBProxyName")(DBProxyName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DebugLogging)) __obj.updateDynamic("DebugLogging")(DebugLogging.get.asInstanceOf[js.Any])
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (EngineFamily != null) __obj.updateDynamic("EngineFamily")(EngineFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(IdleClientTimeout)) __obj.updateDynamic("IdleClientTimeout")(IdleClientTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireTLS)) __obj.updateDynamic("RequireTLS")(RequireTLS.get.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (UpdatedDate != null) __obj.updateDynamic("UpdatedDate")(UpdatedDate.asInstanceOf[js.Any])
-    if (VpcSecurityGroupIds != null) __obj.updateDynamic("VpcSecurityGroupIds")(VpcSecurityGroupIds.asInstanceOf[js.Any])
-    if (VpcSubnetIds != null) __obj.updateDynamic("VpcSubnetIds")(VpcSubnetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBProxy]
   }
+  @scala.inline
+  implicit class DBProxyOps[Self <: DBProxy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthVarargs(value: UserAuthConfigInfo*): Self = this.set("Auth", js.Array(value :_*))
+    @scala.inline
+    def setAuth(value: UserAuthConfigInfoList): Self = this.set("Auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("Auth", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: TStamp): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setDBProxyArn(value: String): Self = this.set("DBProxyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBProxyArn: Self = this.set("DBProxyArn", js.undefined)
+    @scala.inline
+    def setDBProxyName(value: String): Self = this.set("DBProxyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBProxyName: Self = this.set("DBProxyName", js.undefined)
+    @scala.inline
+    def setDebugLogging(value: Boolean): Self = this.set("DebugLogging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugLogging: Self = this.set("DebugLogging", js.undefined)
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setEngineFamily(value: String): Self = this.set("EngineFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineFamily: Self = this.set("EngineFamily", js.undefined)
+    @scala.inline
+    def setIdleClientTimeout(value: Integer): Self = this.set("IdleClientTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdleClientTimeout: Self = this.set("IdleClientTimeout", js.undefined)
+    @scala.inline
+    def setRequireTLS(value: Boolean): Self = this.set("RequireTLS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireTLS: Self = this.set("RequireTLS", js.undefined)
+    @scala.inline
+    def setRoleArn(value: String): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setStatus(value: DBProxyStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setUpdatedDate(value: TStamp): Self = this.set("UpdatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedDate: Self = this.set("UpdatedDate", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupIdsVarargs(value: String*): Self = this.set("VpcSecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroupIds(value: StringList): Self = this.set("VpcSecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroupIds: Self = this.set("VpcSecurityGroupIds", js.undefined)
+    @scala.inline
+    def setVpcSubnetIdsVarargs(value: String*): Self = this.set("VpcSubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcSubnetIds(value: StringList): Self = this.set("VpcSubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSubnetIds: Self = this.set("VpcSubnetIds", js.undefined)
+  }
+  
 }
 

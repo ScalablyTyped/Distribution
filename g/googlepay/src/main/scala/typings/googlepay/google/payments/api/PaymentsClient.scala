@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * This reference describes the JavaScript client methods to use to
   * implement the Google Pay API in your web applications.
   */
+@js.native
 trait PaymentsClient extends js.Object {
   /**
     * The convenience method is used to generate a Google Pay payment
@@ -34,7 +35,7 @@ trait PaymentsClient extends js.Object {
     *
     * @throws `Error` A required property isn't set.
     */
-  def createButton(options: ButtonOptions): HTMLElement
+  def createButton(options: ButtonOptions): HTMLElement = js.native
   /**
     * This method determines a shopper's ability to return a form of
     * payment from the Google Pay API.
@@ -58,7 +59,7 @@ trait PaymentsClient extends js.Object {
     *     [insecure browser
     *     context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
     */
-  def isReadyToPay(request: IsReadyToPayRequest): js.Promise[IsReadyToPayResponse]
+  def isReadyToPay(request: IsReadyToPayRequest): js.Promise[IsReadyToPayResponse] = js.native
   /**
     * This method presents a Google Pay payment sheet that allows selection
     * of a payment method and optionally configured parameters.
@@ -98,7 +99,7 @@ trait PaymentsClient extends js.Object {
     *     improperly formatted, missing the minimum required parameters, or
     *     contains an invalid parameter and/or value.
     */
-  def loadPaymentData(request: PaymentDataRequest): js.Promise[PaymentData]
+  def loadPaymentData(request: PaymentDataRequest): js.Promise[PaymentData] = js.native
   /**
     * Use this method to prefetch a
     * [[PaymentDataRequest|`PaymentDataRequest`]] configuration to improve
@@ -112,7 +113,7 @@ trait PaymentsClient extends js.Object {
     *     Pay API configuration. A change in the `transactionInfo` property
     *     doesn't affect the cached prefetch value.
     */
-  def prefetchPaymentData(request: PaymentDataRequest): Unit
+  def prefetchPaymentData(request: PaymentDataRequest): Unit = js.native
 }
 
 object PaymentsClient {
@@ -126,5 +127,26 @@ object PaymentsClient {
     val __obj = js.Dynamic.literal(createButton = js.Any.fromFunction1(createButton), isReadyToPay = js.Any.fromFunction1(isReadyToPay), loadPaymentData = js.Any.fromFunction1(loadPaymentData), prefetchPaymentData = js.Any.fromFunction1(prefetchPaymentData))
     __obj.asInstanceOf[PaymentsClient]
   }
+  @scala.inline
+  implicit class PaymentsClientOps[Self <: PaymentsClient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateButton(value: ButtonOptions => HTMLElement): Self = this.set("createButton", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsReadyToPay(value: IsReadyToPayRequest => js.Promise[IsReadyToPayResponse]): Self = this.set("isReadyToPay", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLoadPaymentData(value: PaymentDataRequest => js.Promise[PaymentData]): Self = this.set("loadPaymentData", js.Any.fromFunction1(value))
+    @scala.inline
+    def setPrefetchPaymentData(value: PaymentDataRequest => Unit): Self = this.set("prefetchPaymentData", js.Any.fromFunction1(value))
+  }
+  
 }
 

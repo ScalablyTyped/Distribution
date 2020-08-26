@@ -22,10 +22,32 @@ trait ListVPCAssociationAuthorizationsResponse extends js.Object {
 
 object ListVPCAssociationAuthorizationsResponse {
   @scala.inline
-  def apply(HostedZoneId: ResourceId, VPCs: VPCs, NextToken: PaginationToken = null): ListVPCAssociationAuthorizationsResponse = {
+  def apply(HostedZoneId: ResourceId, VPCs: VPCs): ListVPCAssociationAuthorizationsResponse = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], VPCs = VPCs.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVPCAssociationAuthorizationsResponse]
   }
+  @scala.inline
+  implicit class ListVPCAssociationAuthorizationsResponseOps[Self <: ListVPCAssociationAuthorizationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVPCsVarargs(value: VPC*): Self = this.set("VPCs", js.Array(value :_*))
+    @scala.inline
+    def setVPCs(value: VPCs): Self = this.set("VPCs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

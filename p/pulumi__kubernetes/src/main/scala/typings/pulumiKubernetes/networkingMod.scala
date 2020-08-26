@@ -1,5 +1,11 @@
 package typings.pulumiKubernetes
 
+import typings.pulumiKubernetes.ingressClassListMod.IngressClassListArgs
+import typings.pulumiKubernetes.ingressClassMod.IngressClassArgs
+import typings.pulumiKubernetes.v1NetworkPolicyListMod.NetworkPolicyListArgs
+import typings.pulumiKubernetes.v1NetworkPolicyMod.NetworkPolicyArgs
+import typings.pulumiKubernetes.v1beta1IngressListMod.IngressListArgs
+import typings.pulumiKubernetes.v1beta1IngressMod.IngressArgs
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
@@ -16,53 +22,44 @@ object networkingMod extends js.Object {
     class NetworkPolicy protected ()
       extends typings.pulumiKubernetes.networkingV1Mod.NetworkPolicy {
       /**
-        * Create a networking.v1.NetworkPolicy resource with the given unique name, arguments, and options.
+        * Create a NetworkPolicy resource with the given unique name, arguments, and options.
         *
         * @param name The _unique_ name of the resource.
         * @param args The arguments to use to populate this resource's properties.
         * @param opts A bag of options that control this resource's behavior.
         */
       def this(name: String) = this()
-      def this(name: String, args: typings.pulumiKubernetes.inputMod.networking.v1.NetworkPolicy) = this()
-      def this(
-        name: String,
-        args: typings.pulumiKubernetes.inputMod.networking.v1.NetworkPolicy,
-        opts: CustomResourceOptions
-      ) = this()
+      def this(name: String, args: NetworkPolicyArgs) = this()
+      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: NetworkPolicyArgs, opts: CustomResourceOptions) = this()
     }
     
     @js.native
     class NetworkPolicyList protected ()
       extends typings.pulumiKubernetes.networkingV1Mod.NetworkPolicyList {
       /**
-        * Create a networking.v1.NetworkPolicyList resource with the given unique name, arguments, and options.
+        * Create a NetworkPolicyList resource with the given unique name, arguments, and options.
         *
         * @param name The _unique_ name of the resource.
         * @param args The arguments to use to populate this resource's properties.
         * @param opts A bag of options that control this resource's behavior.
         */
       def this(name: String) = this()
-      def this(name: String, args: typings.pulumiKubernetes.inputMod.networking.v1.NetworkPolicyList) = this()
-      def this(
-        name: String,
-        args: typings.pulumiKubernetes.inputMod.networking.v1.NetworkPolicyList,
-        opts: CustomResourceOptions
-      ) = this()
+      def this(name: String, args: NetworkPolicyListArgs) = this()
+      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: NetworkPolicyListArgs, opts: CustomResourceOptions) = this()
     }
     
     /* static members */
     @js.native
     object NetworkPolicy extends js.Object {
       /**
-        * Get the state of an existing `NetworkPolicy` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Get an existing NetworkPolicy resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1NetworkPolicyMod.NetworkPolicy = js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1NetworkPolicyMod.NetworkPolicy = js.native
@@ -70,22 +67,19 @@ object networkingMod extends js.Object {
         * Returns true if the given object is an instance of NetworkPolicy.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/NetworkPolicy.NetworkPolicy */ Boolean = js.native
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/networkPolicy.NetworkPolicy */ Boolean = js.native
     }
     
     /* static members */
     @js.native
     object NetworkPolicyList extends js.Object {
       /**
-        * Get the state of an existing `NetworkPolicyList` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Get an existing NetworkPolicyList resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1NetworkPolicyListMod.NetworkPolicyList = js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1NetworkPolicyListMod.NetworkPolicyList = js.native
@@ -93,7 +87,7 @@ object networkingMod extends js.Object {
         * Returns true if the given object is an instance of NetworkPolicyList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/NetworkPolicyList.NetworkPolicyList */ Boolean = js.native
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/networkPolicyList.NetworkPolicyList */ Boolean = js.native
     }
     
   }
@@ -104,91 +98,76 @@ object networkingMod extends js.Object {
     class Ingress protected ()
       extends typings.pulumiKubernetes.networkingV1beta1Mod.Ingress {
       /**
-        * Create a networking.v1beta1.Ingress resource with the given unique name, arguments, and options.
+        * Create a Ingress resource with the given unique name, arguments, and options.
         *
         * @param name The _unique_ name of the resource.
         * @param args The arguments to use to populate this resource's properties.
         * @param opts A bag of options that control this resource's behavior.
         */
       def this(name: String) = this()
-      def this(name: String, args: typings.pulumiKubernetes.inputMod.networking.v1beta1.Ingress) = this()
-      def this(
-        name: String,
-        args: typings.pulumiKubernetes.inputMod.networking.v1beta1.Ingress,
-        opts: CustomResourceOptions
-      ) = this()
+      def this(name: String, args: IngressArgs) = this()
+      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: IngressArgs, opts: CustomResourceOptions) = this()
     }
     
     @js.native
     class IngressClass protected ()
       extends typings.pulumiKubernetes.networkingV1beta1Mod.IngressClass {
       /**
-        * Create a networking.v1beta1.IngressClass resource with the given unique name, arguments, and options.
+        * Create a IngressClass resource with the given unique name, arguments, and options.
         *
         * @param name The _unique_ name of the resource.
         * @param args The arguments to use to populate this resource's properties.
         * @param opts A bag of options that control this resource's behavior.
         */
       def this(name: String) = this()
-      def this(name: String, args: typings.pulumiKubernetes.inputMod.networking.v1beta1.IngressClass) = this()
-      def this(
-        name: String,
-        args: typings.pulumiKubernetes.inputMod.networking.v1beta1.IngressClass,
-        opts: CustomResourceOptions
-      ) = this()
+      def this(name: String, args: IngressClassArgs) = this()
+      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: IngressClassArgs, opts: CustomResourceOptions) = this()
     }
     
     @js.native
     class IngressClassList protected ()
       extends typings.pulumiKubernetes.networkingV1beta1Mod.IngressClassList {
       /**
-        * Create a networking.v1beta1.IngressClassList resource with the given unique name, arguments, and options.
+        * Create a IngressClassList resource with the given unique name, arguments, and options.
         *
         * @param name The _unique_ name of the resource.
         * @param args The arguments to use to populate this resource's properties.
         * @param opts A bag of options that control this resource's behavior.
         */
       def this(name: String) = this()
-      def this(name: String, args: typings.pulumiKubernetes.inputMod.networking.v1beta1.IngressClassList) = this()
-      def this(
-        name: String,
-        args: typings.pulumiKubernetes.inputMod.networking.v1beta1.IngressClassList,
-        opts: CustomResourceOptions
-      ) = this()
+      def this(name: String, args: IngressClassListArgs) = this()
+      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: IngressClassListArgs, opts: CustomResourceOptions) = this()
     }
     
     @js.native
     class IngressList protected ()
       extends typings.pulumiKubernetes.networkingV1beta1Mod.IngressList {
       /**
-        * Create a networking.v1beta1.IngressList resource with the given unique name, arguments, and options.
+        * Create a IngressList resource with the given unique name, arguments, and options.
         *
         * @param name The _unique_ name of the resource.
         * @param args The arguments to use to populate this resource's properties.
         * @param opts A bag of options that control this resource's behavior.
         */
       def this(name: String) = this()
-      def this(name: String, args: typings.pulumiKubernetes.inputMod.networking.v1beta1.IngressList) = this()
-      def this(
-        name: String,
-        args: typings.pulumiKubernetes.inputMod.networking.v1beta1.IngressList,
-        opts: CustomResourceOptions
-      ) = this()
+      def this(name: String, args: IngressListArgs) = this()
+      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: IngressListArgs, opts: CustomResourceOptions) = this()
     }
     
     /* static members */
     @js.native
     object Ingress extends js.Object {
       /**
-        * Get the state of an existing `Ingress` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Get an existing Ingress resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1IngressMod.Ingress = js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1IngressMod.Ingress = js.native
@@ -196,22 +175,19 @@ object networkingMod extends js.Object {
         * Returns true if the given object is an instance of Ingress.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/Ingress.Ingress */ Boolean = js.native
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingress.Ingress */ Boolean = js.native
     }
     
     /* static members */
     @js.native
     object IngressClass extends js.Object {
       /**
-        * Get the state of an existing `IngressClass` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Get an existing IngressClass resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.ingressClassMod.IngressClass = js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.ingressClassMod.IngressClass = js.native
@@ -219,22 +195,19 @@ object networkingMod extends js.Object {
         * Returns true if the given object is an instance of IngressClass.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/IngressClass.IngressClass */ Boolean = js.native
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressClass.IngressClass */ Boolean = js.native
     }
     
     /* static members */
     @js.native
     object IngressClassList extends js.Object {
       /**
-        * Get the state of an existing `IngressClassList` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Get an existing IngressClassList resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.ingressClassListMod.IngressClassList = js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.ingressClassListMod.IngressClassList = js.native
@@ -242,22 +215,19 @@ object networkingMod extends js.Object {
         * Returns true if the given object is an instance of IngressClassList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/IngressClassList.IngressClassList */ Boolean = js.native
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressClassList.IngressClassList */ Boolean = js.native
     }
     
     /* static members */
     @js.native
     object IngressList extends js.Object {
       /**
-        * Get the state of an existing `IngressList` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Get an existing IngressList resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1IngressListMod.IngressList = js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1IngressListMod.IngressList = js.native
@@ -265,7 +235,7 @@ object networkingMod extends js.Object {
         * Returns true if the given object is an instance of IngressList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/IngressList.IngressList */ Boolean = js.native
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressList.IngressList */ Boolean = js.native
     }
     
   }

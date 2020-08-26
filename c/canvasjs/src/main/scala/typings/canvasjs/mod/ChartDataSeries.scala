@@ -14,6 +14,12 @@ trait ChartDataSeries extends ChartDataSeriesOptions {
     * @param updateChart When true, Updates the chart automatically after setting the value. Defaults to true.
     */
   def addTo(propertyName: String, options: ChartDataPoint): Unit = js.native
+  def addTo(
+    propertyName: String,
+    options: ChartDataPoint,
+    index: js.UndefOr[scala.Nothing],
+    updateChart: Boolean
+  ): Unit = js.native
   def addTo(propertyName: String, options: ChartDataPoint, index: Double): Unit = js.native
   def addTo(propertyName: String, options: ChartDataPoint, index: Double, updateChart: Boolean): Unit = js.native
   /**

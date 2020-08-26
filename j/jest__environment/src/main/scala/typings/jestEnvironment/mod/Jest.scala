@@ -1,6 +1,9 @@
 package typings.jestEnvironment.mod
 
 import typings.jestEnvironment.anon.Virtual
+import typings.jestEnvironment.jestEnvironmentStrings.legacy
+import typings.jestEnvironment.jestEnvironmentStrings.modern
+import typings.std.Date
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -58,6 +61,14 @@ trait Jest extends js.Object {
     */
   def clearAllTimers(): Unit = js.native
   /**
+    * Given the name of a module, use the automatic mocking system to generate a
+    * mocked version of the module for you.
+    *
+    * This is useful when you want to create a manual mock that extends the
+    * automatic mock's behavior.
+    */
+  def createMockFromModule(moduleName: String): js.Any = js.native
+  /**
     * Indicates that the module system should never return a mocked version
     * of the specified module, including all of the specified module's
     * dependencies.
@@ -93,8 +104,16 @@ trait Jest extends js.Object {
     *
     * This is useful when you want to create a manual mock that extends the
     * automatic mock's behavior.
+    *
+    * @deprecated Use `jest.createMockFromModule()` instead
     */
   def genMockFromModule(moduleName: String): js.Any = js.native
+  /**
+    * When mocking time, `Date.now()` will also be mocked. If you for some reason need access to the real current time, you can invoke this function.
+    *
+    * > Note: This function is only available when using Lolex as fake timers implementation
+    */
+  def getRealSystemTime(): Double = js.native
   /**
     * Returns the number of fake timers still left to run.
     */
@@ -114,6 +133,7 @@ trait Jest extends js.Object {
     * Mocks a module with an auto-mocked version when it is being required.
     */
   def mock(moduleName: String): Jest = js.native
+  def mock(moduleName: String, moduleFactory: js.UndefOr[scala.Nothing], options: Virtual): Jest = js.native
   def mock(moduleName: String, moduleFactory: js.Function0[_]): Jest = js.native
   def mock(moduleName: String, moduleFactory: js.Function0[_], options: Virtual): Jest = js.native
   /**
@@ -175,6 +195,8 @@ trait Jest extends js.Object {
   def retryTimes(numRetries: Double): Jest = js.native
   /**
     * Exhausts tasks queued by setImmediate().
+    *
+    * > Note: This function is not available when using Lolex as fake timers implementation
     */
   def runAllImmediates(): Unit = js.native
   /**
@@ -211,6 +233,14 @@ trait Jest extends js.Object {
     */
   def setMock(moduleName: String, moduleExports: js.Any): Jest = js.native
   /**
+    *  Set the current system time used by fake timers. Simulates a user changing the system clock while your program is running. It affects the current time but it does not in itself cause e.g. timers to fire; they will fire exactly as they would have done without the call to `jest.setSystemTime()`.
+    *
+    *  > Note: This function is only available when using Lolex as fake timers implementation
+    */
+  def setSystemTime(): Unit = js.native
+  def setSystemTime(now: Double): Unit = js.native
+  def setSystemTime(now: Date): Unit = js.native
+  /**
     * Set the default timeout interval for tests and before/after hooks in
     * milliseconds.
     *
@@ -228,6 +258,10 @@ trait Jest extends js.Object {
     * Instructs Jest to use fake versions of the standard timer functions.
     */
   def useFakeTimers(): Jest = js.native
+  @JSName("useFakeTimers")
+  def useFakeTimers_legacy(implementation: legacy): Jest = js.native
+  @JSName("useFakeTimers")
+  def useFakeTimers_modern(implementation: modern): Jest = js.native
   /**
     * Instructs Jest to use the real versions of the standard timer functions.
     */

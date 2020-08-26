@@ -24,15 +24,34 @@ trait WebhookArgs extends js.Object {
 
 object WebhookArgs {
   @scala.inline
-  def apply(
-    projectName: Input[String],
-    branchFilter: Input[String] = null,
-    filterGroups: Input[js.Array[Input[WebhookFilterGroup]]] = null
-  ): WebhookArgs = {
+  def apply(projectName: Input[String]): WebhookArgs = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
-    if (branchFilter != null) __obj.updateDynamic("branchFilter")(branchFilter.asInstanceOf[js.Any])
-    if (filterGroups != null) __obj.updateDynamic("filterGroups")(filterGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookArgs]
   }
+  @scala.inline
+  implicit class WebhookArgsOps[Self <: WebhookArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProjectName(value: Input[String]): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBranchFilter(value: Input[String]): Self = this.set("branchFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBranchFilter: Self = this.set("branchFilter", js.undefined)
+    @scala.inline
+    def setFilterGroupsVarargs(value: Input[WebhookFilterGroup]*): Self = this.set("filterGroups", js.Array(value :_*))
+    @scala.inline
+    def setFilterGroups(value: Input[js.Array[Input[WebhookFilterGroup]]]): Self = this.set("filterGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterGroups: Self = this.set("filterGroups", js.undefined)
+  }
+  
 }
 

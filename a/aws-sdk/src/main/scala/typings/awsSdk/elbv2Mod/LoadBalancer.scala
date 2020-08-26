@@ -58,34 +58,74 @@ trait LoadBalancer extends js.Object {
 
 object LoadBalancer {
   @scala.inline
-  def apply(
-    AvailabilityZones: AvailabilityZones = null,
-    CanonicalHostedZoneId: CanonicalHostedZoneId = null,
-    CreatedTime: CreatedTime = null,
-    DNSName: DNSName = null,
-    IpAddressType: IpAddressType = null,
-    LoadBalancerArn: LoadBalancerArn = null,
-    LoadBalancerName: LoadBalancerName = null,
-    Scheme: LoadBalancerSchemeEnum = null,
-    SecurityGroups: SecurityGroups = null,
-    State: LoadBalancerState = null,
-    Type: LoadBalancerTypeEnum = null,
-    VpcId: VpcId = null
-  ): LoadBalancer = {
+  def apply(): LoadBalancer = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
-    if (CanonicalHostedZoneId != null) __obj.updateDynamic("CanonicalHostedZoneId")(CanonicalHostedZoneId.asInstanceOf[js.Any])
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (DNSName != null) __obj.updateDynamic("DNSName")(DNSName.asInstanceOf[js.Any])
-    if (IpAddressType != null) __obj.updateDynamic("IpAddressType")(IpAddressType.asInstanceOf[js.Any])
-    if (LoadBalancerArn != null) __obj.updateDynamic("LoadBalancerArn")(LoadBalancerArn.asInstanceOf[js.Any])
-    if (LoadBalancerName != null) __obj.updateDynamic("LoadBalancerName")(LoadBalancerName.asInstanceOf[js.Any])
-    if (Scheme != null) __obj.updateDynamic("Scheme")(Scheme.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancer]
   }
+  @scala.inline
+  implicit class LoadBalancerOps[Self <: LoadBalancer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: AvailabilityZones): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    @scala.inline
+    def setCanonicalHostedZoneId(value: CanonicalHostedZoneId): Self = this.set("CanonicalHostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanonicalHostedZoneId: Self = this.set("CanonicalHostedZoneId", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: CreatedTime): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setDNSName(value: DNSName): Self = this.set("DNSName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDNSName: Self = this.set("DNSName", js.undefined)
+    @scala.inline
+    def setIpAddressType(value: IpAddressType): Self = this.set("IpAddressType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddressType: Self = this.set("IpAddressType", js.undefined)
+    @scala.inline
+    def setLoadBalancerArn(value: LoadBalancerArn): Self = this.set("LoadBalancerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerArn: Self = this.set("LoadBalancerArn", js.undefined)
+    @scala.inline
+    def setLoadBalancerName(value: LoadBalancerName): Self = this.set("LoadBalancerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerName: Self = this.set("LoadBalancerName", js.undefined)
+    @scala.inline
+    def setScheme(value: LoadBalancerSchemeEnum): Self = this.set("Scheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheme: Self = this.set("Scheme", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: SecurityGroups): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    @scala.inline
+    def setState(value: LoadBalancerState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setType(value: LoadBalancerTypeEnum): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

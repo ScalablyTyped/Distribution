@@ -5,127 +5,214 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined grommet.grommet/utils.DeepReadonly<grommet.grommet/themes/base.ThemeType> */
+/* Inlined grommet.grommet/es6/utils.DeepReadonly<grommet.grommet/es6/themes/base.ThemeType> */
+@js.native
 trait DeepReadonlyThemeType extends js.Object {
-  val accordion: js.UndefOr[Panel | DeepReadonly[js.UndefOr[Panel]]] = js.undefined
-  val anchor: js.UndefOr[ExtendFontWeight | DeepReadonly[js.UndefOr[ExtendFontWeight]]] = js.undefined
-  val avatar: js.UndefOr[Text | DeepReadonly[js.UndefOr[Text]]] = js.undefined
-  val box: js.UndefOr[ResponsiveBreakpoint | DeepReadonly[js.UndefOr[ResponsiveBreakpoint]]] = js.undefined
-  val button: js.UndefOr[Default | DeepReadonly[js.UndefOr[Default]]] = js.undefined
-  val calendar: js.UndefOr[Heading | DeepReadonly[js.UndefOr[Heading]]] = js.undefined
-  val carousel: js.UndefOr[Animation | DeepReadonly[js.UndefOr[Animation]]] = js.undefined
-  val chart: js.UndefOr[ColorExtend | DeepReadonly[js.UndefOr[ColorExtend]]] = js.undefined
-  val checkBox: js.UndefOr[Check | DeepReadonly[js.UndefOr[Check]]] = js.undefined
-  val clock: js.UndefOr[Analog | DeepReadonly[js.UndefOr[Analog]]] = js.undefined
-  val collapsible: js.UndefOr[Baseline | DeepReadonly[js.UndefOr[Baseline]]] = js.undefined
-  val dataTable: js.UndefOr[GroupEnd | DeepReadonly[js.UndefOr[GroupEnd]]] = js.undefined
-  val diagram: js.UndefOr[Line | DeepReadonly[js.UndefOr[Line]]] = js.undefined
-  val drop: js.UndefOr[MaxHeight | DeepReadonly[js.UndefOr[MaxHeight]]] = js.undefined
-  val formField: js.UndefOr[Content | DeepReadonly[js.UndefOr[Content]]] = js.undefined
-  val global: js.UndefOr[Active | DeepReadonly[js.UndefOr[Active]]] = js.undefined
-  val grommet: js.UndefOr[ExtendExtendType | DeepReadonly[js.UndefOr[ExtendExtendType]]] = js.undefined
-  val heading: js.UndefOr[ExtendFont | DeepReadonly[js.UndefOr[ExtendFont]]] = js.undefined
-  val icon: js.UndefOr[SizeDictxLarge | DeepReadonly[js.UndefOr[SizeDictxLarge]]] = js.undefined
-  val layer: js.UndefOr[Container | DeepReadonly[js.UndefOr[Container]]] = js.undefined
-  val list: js.UndefOr[Item | DeepReadonly[js.UndefOr[Item]]] = js.undefined
-  val maskedInput: js.UndefOr[Extend | DeepReadonly[js.UndefOr[Extend]]] = js.undefined
-  val menu: js.UndefOr[Icons | DeepReadonly[js.UndefOr[Icons]]] = js.undefined
-  val meter: js.UndefOr[ColorColors | DeepReadonly[js.UndefOr[ColorColors]]] = js.undefined
-  val paragraph: js.UndefOr[Xxlarge | DeepReadonly[js.UndefOr[Xxlarge]]] = js.undefined
-  val radioButton: js.UndefOr[Gap | DeepReadonly[js.UndefOr[Gap]]] = js.undefined
-  val rangeInput: js.UndefOr[Thumb | DeepReadonly[js.UndefOr[Thumb]]] = js.undefined
-  val rangeSelector: js.UndefOr[Edge | DeepReadonly[js.UndefOr[Edge]]] = js.undefined
-  val select: js.UndefOr[Control | DeepReadonly[js.UndefOr[Control]]] = js.undefined
-  val tab: js.UndefOr[Margin | DeepReadonly[js.UndefOr[Margin]]] = js.undefined
-  val table: js.UndefOr[Body | DeepReadonly[js.UndefOr[Body]]] = js.undefined
-  val tabs: js.UndefOr[Header | DeepReadonly[js.UndefOr[Header]]] = js.undefined
-  val text: js.UndefOr[Small | DeepReadonly[js.UndefOr[Small]]] = js.undefined
-  val textArea: js.UndefOr[DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]] = js.undefined
-  val textInput: js.UndefOr[DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]] = js.undefined
-  val video: js.UndefOr[Captions | DeepReadonly[js.UndefOr[Captions]]] = js.undefined
-  val worldMap: js.UndefOr[Continent | DeepReadonly[js.UndefOr[Continent]]] = js.undefined
+  val accordion: js.UndefOr[Panel | DeepReadonly[js.UndefOr[Panel]]] = js.native
+  val anchor: js.UndefOr[FontWeight | DeepReadonly[js.UndefOr[FontWeight]]] = js.native
+  val avatar: js.UndefOr[SizeText | DeepReadonly[js.UndefOr[SizeText]]] = js.native
+  val box: js.UndefOr[ResponsiveBreakpoint | DeepReadonly[js.UndefOr[ResponsiveBreakpoint]]] = js.native
+  val button: js.UndefOr[Default | DeepReadonly[js.UndefOr[Default]]] = js.native
+  val calendar: js.UndefOr[HeadingIcons | DeepReadonly[js.UndefOr[HeadingIcons]]] = js.native
+  val carousel: js.UndefOr[AnimationDisabled | DeepReadonly[js.UndefOr[AnimationDisabled]]] = js.native
+  val chart: js.UndefOr[ColorExtend | DeepReadonly[js.UndefOr[ColorExtend]]] = js.native
+  val checkBox: js.UndefOr[Icon | DeepReadonly[js.UndefOr[Icon]]] = js.native
+  val clock: js.UndefOr[Analog | DeepReadonly[js.UndefOr[Analog]]] = js.native
+  val collapsible: js.UndefOr[Baseline | DeepReadonly[js.UndefOr[Baseline]]] = js.native
+  val dataTable: js.UndefOr[GroupEnd | DeepReadonly[js.UndefOr[GroupEnd]]] = js.native
+  val diagram: js.UndefOr[Line | DeepReadonly[js.UndefOr[Line]]] = js.native
+  val drop: js.UndefOr[MaxHeight | DeepReadonly[js.UndefOr[MaxHeight]]] = js.native
+  val formField: js.UndefOr[Content | DeepReadonly[js.UndefOr[Content]]] = js.native
+  val global: js.UndefOr[Animation | DeepReadonly[js.UndefOr[Animation]]] = js.native
+  val grommet: js.UndefOr[`10` | DeepReadonly[js.UndefOr[`10`]]] = js.native
+  val heading: js.UndefOr[Extend | DeepReadonly[js.UndefOr[Extend]]] = js.native
+  val icon: js.UndefOr[`21` | DeepReadonly[js.UndefOr[`21`]]] = js.native
+  val layer: js.UndefOr[Overlay | DeepReadonly[js.UndefOr[Overlay]]] = js.native
+  val list: js.UndefOr[Item | DeepReadonly[js.UndefOr[Item]]] = js.native
+  val maskedInput: js.UndefOr[`18` | DeepReadonly[js.UndefOr[`18`]]] = js.native
+  val menu: js.UndefOr[Icons | DeepReadonly[js.UndefOr[Icons]]] = js.native
+  val meter: js.UndefOr[Colors | DeepReadonly[js.UndefOr[Colors]]] = js.native
+  val paragraph: js.UndefOr[Xlarge | DeepReadonly[js.UndefOr[Xlarge]]] = js.native
+  val radioButton: js.UndefOr[Check | DeepReadonly[js.UndefOr[Check]]] = js.native
+  val rangeInput: js.UndefOr[Thumb | DeepReadonly[js.UndefOr[Thumb]]] = js.native
+  val rangeSelector: js.UndefOr[Edge | DeepReadonly[js.UndefOr[Edge]]] = js.native
+  val select: js.UndefOr[Control | DeepReadonly[js.UndefOr[Control]]] = js.native
+  val tab: js.UndefOr[Hover | DeepReadonly[js.UndefOr[Hover]]] = js.native
+  val table: js.UndefOr[Body | DeepReadonly[js.UndefOr[Body]]] = js.native
+  val tabs: js.UndefOr[Gap | DeepReadonly[js.UndefOr[Gap]]] = js.native
+  val text: js.UndefOr[Xsmall | DeepReadonly[js.UndefOr[Xsmall]]] = js.native
+  val textArea: js.UndefOr[DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]] = js.native
+  val textInput: js.UndefOr[DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]] = js.native
+  val video: js.UndefOr[Captions | DeepReadonly[js.UndefOr[Captions]]] = js.native
+  val worldMap: js.UndefOr[Continent | DeepReadonly[js.UndefOr[Continent]]] = js.native
 }
 
 object DeepReadonlyThemeType {
   @scala.inline
-  def apply(
-    accordion: Panel | DeepReadonly[js.UndefOr[Panel]] = null,
-    anchor: ExtendFontWeight | DeepReadonly[js.UndefOr[ExtendFontWeight]] = null,
-    avatar: Text | DeepReadonly[js.UndefOr[Text]] = null,
-    box: ResponsiveBreakpoint | DeepReadonly[js.UndefOr[ResponsiveBreakpoint]] = null,
-    button: Default | DeepReadonly[js.UndefOr[Default]] = null,
-    calendar: Heading | DeepReadonly[js.UndefOr[Heading]] = null,
-    carousel: Animation | DeepReadonly[js.UndefOr[Animation]] = null,
-    chart: ColorExtend | DeepReadonly[js.UndefOr[ColorExtend]] = null,
-    checkBox: Check | DeepReadonly[js.UndefOr[Check]] = null,
-    clock: Analog | DeepReadonly[js.UndefOr[Analog]] = null,
-    collapsible: Baseline | DeepReadonly[js.UndefOr[Baseline]] = null,
-    dataTable: GroupEnd | DeepReadonly[js.UndefOr[GroupEnd]] = null,
-    diagram: Line | DeepReadonly[js.UndefOr[Line]] = null,
-    drop: MaxHeight | DeepReadonly[js.UndefOr[MaxHeight]] = null,
-    formField: Content | DeepReadonly[js.UndefOr[Content]] = null,
-    global: Active | DeepReadonly[js.UndefOr[Active]] = null,
-    grommet: ExtendExtendType | DeepReadonly[js.UndefOr[ExtendExtendType]] = null,
-    heading: ExtendFont | DeepReadonly[js.UndefOr[ExtendFont]] = null,
-    icon: SizeDictxLarge | DeepReadonly[js.UndefOr[SizeDictxLarge]] = null,
-    layer: Container | DeepReadonly[js.UndefOr[Container]] = null,
-    list: Item | DeepReadonly[js.UndefOr[Item]] = null,
-    maskedInput: Extend | DeepReadonly[js.UndefOr[Extend]] = null,
-    menu: Icons | DeepReadonly[js.UndefOr[Icons]] = null,
-    meter: ColorColors | DeepReadonly[js.UndefOr[ColorColors]] = null,
-    paragraph: Xxlarge | DeepReadonly[js.UndefOr[Xxlarge]] = null,
-    radioButton: Gap | DeepReadonly[js.UndefOr[Gap]] = null,
-    rangeInput: Thumb | DeepReadonly[js.UndefOr[Thumb]] = null,
-    rangeSelector: Edge | DeepReadonly[js.UndefOr[Edge]] = null,
-    select: Control | DeepReadonly[js.UndefOr[Control]] = null,
-    tab: Margin | DeepReadonly[js.UndefOr[Margin]] = null,
-    table: Body | DeepReadonly[js.UndefOr[Body]] = null,
-    tabs: Header | DeepReadonly[js.UndefOr[Header]] = null,
-    text: Small | DeepReadonly[js.UndefOr[Small]] = null,
-    textArea: DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]] = null,
-    textInput: DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]] = null,
-    video: Captions | DeepReadonly[js.UndefOr[Captions]] = null,
-    worldMap: Continent | DeepReadonly[js.UndefOr[Continent]] = null
-  ): DeepReadonlyThemeType = {
+  def apply(): DeepReadonlyThemeType = {
     val __obj = js.Dynamic.literal()
-    if (accordion != null) __obj.updateDynamic("accordion")(accordion.asInstanceOf[js.Any])
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (box != null) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])
-    if (carousel != null) __obj.updateDynamic("carousel")(carousel.asInstanceOf[js.Any])
-    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
-    if (checkBox != null) __obj.updateDynamic("checkBox")(checkBox.asInstanceOf[js.Any])
-    if (clock != null) __obj.updateDynamic("clock")(clock.asInstanceOf[js.Any])
-    if (collapsible != null) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
-    if (dataTable != null) __obj.updateDynamic("dataTable")(dataTable.asInstanceOf[js.Any])
-    if (diagram != null) __obj.updateDynamic("diagram")(diagram.asInstanceOf[js.Any])
-    if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
-    if (formField != null) __obj.updateDynamic("formField")(formField.asInstanceOf[js.Any])
-    if (global != null) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
-    if (grommet != null) __obj.updateDynamic("grommet")(grommet.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (maskedInput != null) __obj.updateDynamic("maskedInput")(maskedInput.asInstanceOf[js.Any])
-    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    if (meter != null) __obj.updateDynamic("meter")(meter.asInstanceOf[js.Any])
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
-    if (radioButton != null) __obj.updateDynamic("radioButton")(radioButton.asInstanceOf[js.Any])
-    if (rangeInput != null) __obj.updateDynamic("rangeInput")(rangeInput.asInstanceOf[js.Any])
-    if (rangeSelector != null) __obj.updateDynamic("rangeSelector")(rangeSelector.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (tabs != null) __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textArea != null) __obj.updateDynamic("textArea")(textArea.asInstanceOf[js.Any])
-    if (textInput != null) __obj.updateDynamic("textInput")(textInput.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
-    if (worldMap != null) __obj.updateDynamic("worldMap")(worldMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeepReadonlyThemeType]
   }
+  @scala.inline
+  implicit class DeepReadonlyThemeTypeOps[Self <: DeepReadonlyThemeType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccordion(value: Panel | DeepReadonly[js.UndefOr[Panel]]): Self = this.set("accordion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccordion: Self = this.set("accordion", js.undefined)
+    @scala.inline
+    def setAnchor(value: FontWeight | DeepReadonly[js.UndefOr[FontWeight]]): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    @scala.inline
+    def setAvatar(value: SizeText | DeepReadonly[js.UndefOr[SizeText]]): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvatar: Self = this.set("avatar", js.undefined)
+    @scala.inline
+    def setBox(value: ResponsiveBreakpoint | DeepReadonly[js.UndefOr[ResponsiveBreakpoint]]): Self = this.set("box", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBox: Self = this.set("box", js.undefined)
+    @scala.inline
+    def setButton(value: Default | DeepReadonly[js.UndefOr[Default]]): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("button", js.undefined)
+    @scala.inline
+    def setCalendar(value: HeadingIcons | DeepReadonly[js.UndefOr[HeadingIcons]]): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendar: Self = this.set("calendar", js.undefined)
+    @scala.inline
+    def setCarousel(value: AnimationDisabled | DeepReadonly[js.UndefOr[AnimationDisabled]]): Self = this.set("carousel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCarousel: Self = this.set("carousel", js.undefined)
+    @scala.inline
+    def setChart(value: ColorExtend | DeepReadonly[js.UndefOr[ColorExtend]]): Self = this.set("chart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChart: Self = this.set("chart", js.undefined)
+    @scala.inline
+    def setCheckBox(value: Icon | DeepReadonly[js.UndefOr[Icon]]): Self = this.set("checkBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckBox: Self = this.set("checkBox", js.undefined)
+    @scala.inline
+    def setClock(value: Analog | DeepReadonly[js.UndefOr[Analog]]): Self = this.set("clock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClock: Self = this.set("clock", js.undefined)
+    @scala.inline
+    def setCollapsible(value: Baseline | DeepReadonly[js.UndefOr[Baseline]]): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    @scala.inline
+    def setDataTable(value: GroupEnd | DeepReadonly[js.UndefOr[GroupEnd]]): Self = this.set("dataTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTable: Self = this.set("dataTable", js.undefined)
+    @scala.inline
+    def setDiagram(value: Line | DeepReadonly[js.UndefOr[Line]]): Self = this.set("diagram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiagram: Self = this.set("diagram", js.undefined)
+    @scala.inline
+    def setDrop(value: MaxHeight | DeepReadonly[js.UndefOr[MaxHeight]]): Self = this.set("drop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrop: Self = this.set("drop", js.undefined)
+    @scala.inline
+    def setFormField(value: Content | DeepReadonly[js.UndefOr[Content]]): Self = this.set("formField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormField: Self = this.set("formField", js.undefined)
+    @scala.inline
+    def setGlobal(value: Animation | DeepReadonly[js.UndefOr[Animation]]): Self = this.set("global", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobal: Self = this.set("global", js.undefined)
+    @scala.inline
+    def setGrommet(value: `10` | DeepReadonly[js.UndefOr[`10`]]): Self = this.set("grommet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrommet: Self = this.set("grommet", js.undefined)
+    @scala.inline
+    def setHeading(value: Extend | DeepReadonly[js.UndefOr[Extend]]): Self = this.set("heading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeading: Self = this.set("heading", js.undefined)
+    @scala.inline
+    def setIcon(value: `21` | DeepReadonly[js.UndefOr[`21`]]): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setLayer(value: Overlay | DeepReadonly[js.UndefOr[Overlay]]): Self = this.set("layer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayer: Self = this.set("layer", js.undefined)
+    @scala.inline
+    def setList(value: Item | DeepReadonly[js.UndefOr[Item]]): Self = this.set("list", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteList: Self = this.set("list", js.undefined)
+    @scala.inline
+    def setMaskedInput(value: `18` | DeepReadonly[js.UndefOr[`18`]]): Self = this.set("maskedInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskedInput: Self = this.set("maskedInput", js.undefined)
+    @scala.inline
+    def setMenu(value: Icons | DeepReadonly[js.UndefOr[Icons]]): Self = this.set("menu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenu: Self = this.set("menu", js.undefined)
+    @scala.inline
+    def setMeter(value: Colors | DeepReadonly[js.UndefOr[Colors]]): Self = this.set("meter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeter: Self = this.set("meter", js.undefined)
+    @scala.inline
+    def setParagraph(value: Xlarge | DeepReadonly[js.UndefOr[Xlarge]]): Self = this.set("paragraph", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParagraph: Self = this.set("paragraph", js.undefined)
+    @scala.inline
+    def setRadioButton(value: Check | DeepReadonly[js.UndefOr[Check]]): Self = this.set("radioButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadioButton: Self = this.set("radioButton", js.undefined)
+    @scala.inline
+    def setRangeInput(value: Thumb | DeepReadonly[js.UndefOr[Thumb]]): Self = this.set("rangeInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeInput: Self = this.set("rangeInput", js.undefined)
+    @scala.inline
+    def setRangeSelector(value: Edge | DeepReadonly[js.UndefOr[Edge]]): Self = this.set("rangeSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeSelector: Self = this.set("rangeSelector", js.undefined)
+    @scala.inline
+    def setSelect(value: Control | DeepReadonly[js.UndefOr[Control]]): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setTab(value: Hover | DeepReadonly[js.UndefOr[Hover]]): Self = this.set("tab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTab: Self = this.set("tab", js.undefined)
+    @scala.inline
+    def setTable(value: Body | DeepReadonly[js.UndefOr[Body]]): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setTabs(value: Gap | DeepReadonly[js.UndefOr[Gap]]): Self = this.set("tabs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabs: Self = this.set("tabs", js.undefined)
+    @scala.inline
+    def setText(value: Xsmall | DeepReadonly[js.UndefOr[Xsmall]]): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextArea(value: DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]): Self = this.set("textArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextArea: Self = this.set("textArea", js.undefined)
+    @scala.inline
+    def setTextInput(value: DisabledExtend | DeepReadonly[js.UndefOr[DisabledExtend]]): Self = this.set("textInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextInput: Self = this.set("textInput", js.undefined)
+    @scala.inline
+    def setVideo(value: Captions | DeepReadonly[js.UndefOr[Captions]]): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+    @scala.inline
+    def setWorldMap(value: Continent | DeepReadonly[js.UndefOr[Continent]]): Self = this.set("worldMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorldMap: Self = this.set("worldMap", js.undefined)
+  }
+  
 }
 

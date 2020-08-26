@@ -31,22 +31,46 @@ trait DescribeMaintenanceStartTimeOutput extends js.Object {
 
 object DescribeMaintenanceStartTimeOutput {
   @scala.inline
-  def apply(
-    DayOfMonth: js.UndefOr[DayOfMonth] = js.undefined,
-    DayOfWeek: js.UndefOr[DayOfWeek] = js.undefined,
-    GatewayARN: GatewayARN = null,
-    HourOfDay: js.UndefOr[HourOfDay] = js.undefined,
-    MinuteOfHour: js.UndefOr[MinuteOfHour] = js.undefined,
-    Timezone: GatewayTimezone = null
-  ): DescribeMaintenanceStartTimeOutput = {
+  def apply(): DescribeMaintenanceStartTimeOutput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DayOfMonth)) __obj.updateDynamic("DayOfMonth")(DayOfMonth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DayOfWeek)) __obj.updateDynamic("DayOfWeek")(DayOfWeek.get.asInstanceOf[js.Any])
-    if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(HourOfDay)) __obj.updateDynamic("HourOfDay")(HourOfDay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinuteOfHour)) __obj.updateDynamic("MinuteOfHour")(MinuteOfHour.get.asInstanceOf[js.Any])
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMaintenanceStartTimeOutput]
   }
+  @scala.inline
+  implicit class DescribeMaintenanceStartTimeOutputOps[Self <: DescribeMaintenanceStartTimeOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDayOfMonth(value: DayOfMonth): Self = this.set("DayOfMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDayOfMonth: Self = this.set("DayOfMonth", js.undefined)
+    @scala.inline
+    def setDayOfWeek(value: DayOfWeek): Self = this.set("DayOfWeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDayOfWeek: Self = this.set("DayOfWeek", js.undefined)
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    @scala.inline
+    def setHourOfDay(value: HourOfDay): Self = this.set("HourOfDay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHourOfDay: Self = this.set("HourOfDay", js.undefined)
+    @scala.inline
+    def setMinuteOfHour(value: MinuteOfHour): Self = this.set("MinuteOfHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinuteOfHour: Self = this.set("MinuteOfHour", js.undefined)
+    @scala.inline
+    def setTimezone(value: GatewayTimezone): Self = this.set("Timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+  }
+  
 }
 

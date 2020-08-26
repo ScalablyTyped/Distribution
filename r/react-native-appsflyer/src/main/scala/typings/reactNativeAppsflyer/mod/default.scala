@@ -8,10 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   def generateInviteLink(options: InviteLinkOptions): Unit = js.native
+  def generateInviteLink(options: InviteLinkOptions, success: js.UndefOr[scala.Nothing], error: ErrorCallback): Unit = js.native
   def generateInviteLink(options: InviteLinkOptions, success: SuccessCallback): Unit = js.native
   def generateInviteLink(options: InviteLinkOptions, success: SuccessCallback, error: ErrorCallback): Unit = js.native
   def getAppsFlyerUID(callback: js.Function2[/* error */ js.Any, /* appsFlyerUID */ String, Unit]): Unit = js.native
   def initSdk(options: InitSdkOptions): Unit | js.Promise[String] = js.native
+  def initSdk(options: InitSdkOptions, success: js.UndefOr[scala.Nothing], error: ErrorCallback): Unit | js.Promise[String] = js.native
   def initSdk(options: InitSdkOptions, success: SuccessCallback): Unit | js.Promise[String] = js.native
   def initSdk(options: InitSdkOptions, success: SuccessCallback, error: ErrorCallback): Unit | js.Promise[String] = js.native
   def onAppOpenAttribution(callback: js.Function1[/* response */ js.Any, Unit]): js.Function0[Unit] = js.native
@@ -32,6 +34,7 @@ object default extends js.Object {
   def setDeviceTrackingDisabled(isDeviceTrackingDisabled: Boolean): Unit = js.native
   def setDeviceTrackingDisabled(isDeviceTrackingDisabled: Boolean, success: SuccessCallback): Unit = js.native
   def setUserEmails(options: EmailOptions): Unit = js.native
+  def setUserEmails(options: EmailOptions, success: js.UndefOr[scala.Nothing], error: ErrorCallback): Unit = js.native
   def setUserEmails(options: EmailOptions, success: SuccessCallback): Unit = js.native
   def setUserEmails(options: EmailOptions, success: SuccessCallback, error: ErrorCallback): Unit = js.native
   def stopTracking(isStopTracking: Boolean): Unit = js.native
@@ -41,6 +44,12 @@ object default extends js.Object {
   def trackAppLaunch(): Unit = js.native
   def trackCrossPromotionImpression(appId: String, campaign: String): Unit = js.native
   def trackEvent(eventName: String, eventValues: EventValues): Unit | js.Promise[String] = js.native
+  def trackEvent(
+    eventName: String,
+    eventValues: EventValues,
+    success: js.UndefOr[scala.Nothing],
+    error: ErrorCallback
+  ): Unit | js.Promise[String] = js.native
   def trackEvent(eventName: String, eventValues: EventValues, success: SuccessCallback): Unit | js.Promise[String] = js.native
   def trackEvent(eventName: String, eventValues: EventValues, success: SuccessCallback, error: ErrorCallback): Unit | js.Promise[String] = js.native
   def trackLocation(longitude: Double, latitude: Double): Unit = js.native

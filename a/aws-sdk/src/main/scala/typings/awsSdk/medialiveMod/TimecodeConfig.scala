@@ -21,10 +21,28 @@ trait TimecodeConfig extends js.Object {
 
 object TimecodeConfig {
   @scala.inline
-  def apply(Source: TimecodeConfigSource, SyncThreshold: js.UndefOr[integerMin1Max1000000] = js.undefined): TimecodeConfig = {
+  def apply(Source: TimecodeConfigSource): TimecodeConfig = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any])
-    if (!js.isUndefined(SyncThreshold)) __obj.updateDynamic("SyncThreshold")(SyncThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimecodeConfig]
   }
+  @scala.inline
+  implicit class TimecodeConfigOps[Self <: TimecodeConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSource(value: TimecodeConfigSource): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSyncThreshold(value: integerMin1Max1000000): Self = this.set("SyncThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyncThreshold: Self = this.set("SyncThreshold", js.undefined)
+  }
+  
 }
 

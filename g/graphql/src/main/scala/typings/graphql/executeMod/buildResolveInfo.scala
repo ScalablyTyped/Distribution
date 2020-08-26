@@ -17,7 +17,7 @@ object buildResolveInfo extends js.Object {
     exeContext: ExecutionContext,
     fieldDef: GraphQLField[_, _, StringDictionary[_]],
     fieldNodes: js.Array[FieldNode],
-    parentType: GraphQLObjectType[_, _, StringDictionary[_]],
+    parentType: GraphQLObjectType[_, _],
     path: Path
   ): GraphQLResolveInfo = js.native
 }

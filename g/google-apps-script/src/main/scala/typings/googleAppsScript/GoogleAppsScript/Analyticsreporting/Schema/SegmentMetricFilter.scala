@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SegmentMetricFilter extends js.Object {
-  var comparisonValue: js.UndefOr[String] = js.undefined
-  var maxComparisonValue: js.UndefOr[String] = js.undefined
-  var metricName: js.UndefOr[String] = js.undefined
-  var operator: js.UndefOr[String] = js.undefined
-  var scope: js.UndefOr[String] = js.undefined
+  var comparisonValue: js.UndefOr[String] = js.native
+  var maxComparisonValue: js.UndefOr[String] = js.native
+  var metricName: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.native
 }
 
 object SegmentMetricFilter {
   @scala.inline
-  def apply(
-    comparisonValue: String = null,
-    maxComparisonValue: String = null,
-    metricName: String = null,
-    operator: String = null,
-    scope: String = null
-  ): SegmentMetricFilter = {
+  def apply(): SegmentMetricFilter = {
     val __obj = js.Dynamic.literal()
-    if (comparisonValue != null) __obj.updateDynamic("comparisonValue")(comparisonValue.asInstanceOf[js.Any])
-    if (maxComparisonValue != null) __obj.updateDynamic("maxComparisonValue")(maxComparisonValue.asInstanceOf[js.Any])
-    if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentMetricFilter]
   }
+  @scala.inline
+  implicit class SegmentMetricFilterOps[Self <: SegmentMetricFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparisonValue(value: String): Self = this.set("comparisonValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparisonValue: Self = this.set("comparisonValue", js.undefined)
+    @scala.inline
+    def setMaxComparisonValue(value: String): Self = this.set("maxComparisonValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxComparisonValue: Self = this.set("maxComparisonValue", js.undefined)
+    @scala.inline
+    def setMetricName(value: String): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("metricName", js.undefined)
+    @scala.inline
+    def setOperator(value: String): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+  }
+  
 }
 

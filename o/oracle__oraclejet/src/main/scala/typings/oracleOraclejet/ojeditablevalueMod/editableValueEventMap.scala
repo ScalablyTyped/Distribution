@@ -32,18 +32,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait editableValueEventMap[V, SP /* <: editableValueSettableProperties[V, SV, RV] */, SV, RV] extends baseComponentEventMap[SP] {
-  var describedByChanged: JetElementCustomEvent[String | Null]
-  var disabledChanged: JetElementCustomEvent[Boolean]
-  var displayOptionsChanged: JetElementCustomEvent[ConverterHint]
-  var helpChanged: JetElementCustomEvent[Instruction]
-  var helpHintsChanged: JetElementCustomEvent[Definition]
-  var labelHintChanged: JetElementCustomEvent[String]
-  var messagesCustomChanged: JetElementCustomEvent[js.Array[^]]
-  var ojAnimateEnd: typings.oracleOraclejet.ojeditablevalueMod.editableValue.ojAnimateEnd
-  var ojAnimateStart: typings.oracleOraclejet.ojeditablevalueMod.editableValue.ojAnimateStart
-  var validChanged: JetElementCustomEvent[valid | pending | invalidHidden | invalidShown]
-  var valueChanged: JetElementCustomEvent[V]
+  var describedByChanged: JetElementCustomEvent[String | Null] = js.native
+  var disabledChanged: JetElementCustomEvent[Boolean] = js.native
+  var displayOptionsChanged: JetElementCustomEvent[ConverterHint] = js.native
+  var helpChanged: JetElementCustomEvent[Instruction] = js.native
+  var helpHintsChanged: JetElementCustomEvent[Definition] = js.native
+  var labelHintChanged: JetElementCustomEvent[String] = js.native
+  var messagesCustomChanged: JetElementCustomEvent[js.Array[^]] = js.native
+  var ojAnimateEnd: typings.oracleOraclejet.ojeditablevalueMod.editableValue.ojAnimateEnd = js.native
+  var ojAnimateStart: typings.oracleOraclejet.ojeditablevalueMod.editableValue.ojAnimateStart = js.native
+  var validChanged: JetElementCustomEvent[valid | pending | invalidHidden | invalidShown] = js.native
+  var valueChanged: JetElementCustomEvent[V] = js.native
 }
 
 object editableValueEventMap {
@@ -157,5 +158,40 @@ object editableValueEventMap {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], describedByChanged = describedByChanged.asInstanceOf[js.Any], disabledChanged = disabledChanged.asInstanceOf[js.Any], displayOptionsChanged = displayOptionsChanged.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragexit = dragexit.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], helpChanged = helpChanged.asInstanceOf[js.Any], helpHintsChanged = helpHintsChanged.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], labelHintChanged = labelHintChanged.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], messagesCustomChanged = messagesCustomChanged.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], ojAnimateEnd = ojAnimateEnd.asInstanceOf[js.Any], ojAnimateStart = ojAnimateStart.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], translationsChanged = translationsChanged.asInstanceOf[js.Any], validChanged = validChanged.asInstanceOf[js.Any], valueChanged = valueChanged.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
     __obj.asInstanceOf[editableValueEventMap[V, SP, SV, RV]]
   }
+  @scala.inline
+  implicit class editableValueEventMapOps[Self <: editableValueEventMap[_, _, _, _], V, /* <: typings.oracleOraclejet.ojeditablevalueMod.editableValueSettableProperties[V, SV, RV] */ SP, SV, RV] (val x: Self with (editableValueEventMap[V, SP, SV, RV])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescribedByChanged(value: JetElementCustomEvent[String | Null]): Self = this.set("describedByChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = this.set("disabledChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisplayOptionsChanged(value: JetElementCustomEvent[ConverterHint]): Self = this.set("displayOptionsChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHelpChanged(value: JetElementCustomEvent[Instruction]): Self = this.set("helpChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHelpHintsChanged(value: JetElementCustomEvent[Definition]): Self = this.set("helpHintsChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabelHintChanged(value: JetElementCustomEvent[String]): Self = this.set("labelHintChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessagesCustomChanged(value: JetElementCustomEvent[js.Array[^]]): Self = this.set("messagesCustomChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOjAnimateEnd(value: ojAnimateEnd): Self = this.set("ojAnimateEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOjAnimateStart(value: ojAnimateStart): Self = this.set("ojAnimateStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValidChanged(value: JetElementCustomEvent[valid | pending | invalidHidden | invalidShown]): Self = this.set("validChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValueChanged(value: JetElementCustomEvent[V]): Self = this.set("valueChanged", value.asInstanceOf[js.Any])
+  }
+  
 }
 

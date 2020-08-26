@@ -8,8 +8,39 @@ import scala.scalajs.js.annotation._
 @js.native
 class Breakpoint protected () extends js.Object {
   protected def this(enabled: Boolean) = this()
+  protected def this(enabled: js.UndefOr[scala.Nothing], condition: String) = this()
   protected def this(enabled: Boolean, condition: String) = this()
+  protected def this(enabled: js.UndefOr[scala.Nothing], condition: js.UndefOr[scala.Nothing], hitCondition: String) = this()
+  protected def this(enabled: js.UndefOr[scala.Nothing], condition: String, hitCondition: String) = this()
+  protected def this(enabled: Boolean, condition: js.UndefOr[scala.Nothing], hitCondition: String) = this()
   protected def this(enabled: Boolean, condition: String, hitCondition: String) = this()
+  protected def this(
+    enabled: js.UndefOr[scala.Nothing],
+    condition: js.UndefOr[scala.Nothing],
+    hitCondition: js.UndefOr[scala.Nothing],
+    logMessage: String
+  ) = this()
+  protected def this(
+    enabled: js.UndefOr[scala.Nothing],
+    condition: js.UndefOr[scala.Nothing],
+    hitCondition: String,
+    logMessage: String
+  ) = this()
+  protected def this(
+    enabled: js.UndefOr[scala.Nothing],
+    condition: String,
+    hitCondition: js.UndefOr[scala.Nothing],
+    logMessage: String
+  ) = this()
+  protected def this(enabled: js.UndefOr[scala.Nothing], condition: String, hitCondition: String, logMessage: String) = this()
+  protected def this(
+    enabled: Boolean,
+    condition: js.UndefOr[scala.Nothing],
+    hitCondition: js.UndefOr[scala.Nothing],
+    logMessage: String
+  ) = this()
+  protected def this(enabled: Boolean, condition: js.UndefOr[scala.Nothing], hitCondition: String, logMessage: String) = this()
+  protected def this(enabled: Boolean, condition: String, hitCondition: js.UndefOr[scala.Nothing], logMessage: String) = this()
   protected def this(enabled: Boolean, condition: String, hitCondition: String, logMessage: String) = this()
   /**
     * An optional expression for conditional breakpoints.

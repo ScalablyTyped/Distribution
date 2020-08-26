@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ODataListBinding extends ListBinding {
+  def getContexts(iStartIndex: Double, iLength: js.UndefOr[scala.Nothing], iThreshold: Double): js.Array[Context] = js.native
   def getContexts(iStartIndex: Double, iLength: Double, iThreshold: Double): js.Array[Context] = js.native
   /**
     * Get a download URL with the specified format considering thesort/filter/custom parameters.

@@ -78,6 +78,7 @@ class ResourceDebuggerDebuggees protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListDebuggeesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDebuggeesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDebuggeesResponse] = js.native
   def list(params: ParamsResourceDebuggerDebuggeesList): GaxiosPromise[SchemaListDebuggeesResponse] = js.native
   def list(
     params: ParamsResourceDebuggerDebuggeesList,

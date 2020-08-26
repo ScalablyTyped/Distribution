@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object modularScaleMod extends js.Object {
   def default(steps: Double): String = js.native
+  def default(steps: Double, base: js.UndefOr[scala.Nothing], ratio: ModularScaleRatio): String = js.native
   def default(steps: Double, base: String): String = js.native
   def default(steps: Double, base: String, ratio: ModularScaleRatio): String = js.native
   def default(steps: Double, base: Double): String = js.native

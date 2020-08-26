@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Menu", "Menu")
+@JSImport("grommet/es6/components/Menu", "Menu")
 @js.native
 object Menu extends TopLevel[FC[MenuProps with (Omit[ButtonType, icon])]]
 

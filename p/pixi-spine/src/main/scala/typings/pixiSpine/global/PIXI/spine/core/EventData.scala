@@ -9,19 +9,5 @@ import scala.scalajs.js.annotation._
 class EventData protected ()
   extends typings.pixiSpine.PIXI.spine.core.EventData {
   def this(name: String) = this()
-  /* CompleteClass */
-  override var audioPath: String = js.native
-  /* CompleteClass */
-  override var balance: Double = js.native
-  /* CompleteClass */
-  override var floatValue: Double = js.native
-  /* CompleteClass */
-  override var intValue: Double = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var stringValue: String = js.native
-  /* CompleteClass */
-  override var volume: Double = js.native
 }
 

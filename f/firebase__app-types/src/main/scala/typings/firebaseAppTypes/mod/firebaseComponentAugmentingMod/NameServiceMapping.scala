@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NameServiceMapping extends js.Object {
-  var app: FirebaseApp
-  var `app-version`: VersionService
-  var `platform-identifier`: VersionService
+  var app: FirebaseApp = js.native
+  var `app-version`: VersionService = js.native
+  var `platform-identifier`: VersionService = js.native
 }
 
 object NameServiceMapping {
@@ -20,5 +21,24 @@ object NameServiceMapping {
     __obj.updateDynamic("platform-identifier")(`platform-identifier`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameServiceMapping]
   }
+  @scala.inline
+  implicit class NameServiceMappingOps[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApp(value: FirebaseApp): Self = this.set("app", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setApp-version`(value: VersionService): Self = this.set("app-version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setPlatform-identifier`(value: VersionService): Self = this.set("platform-identifier", value.asInstanceOf[js.Any])
+  }
+  
 }
 

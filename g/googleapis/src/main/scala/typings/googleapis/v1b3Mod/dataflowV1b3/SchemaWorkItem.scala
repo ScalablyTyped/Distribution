@@ -75,40 +75,84 @@ trait SchemaWorkItem extends js.Object {
 
 object SchemaWorkItem {
   @scala.inline
-  def apply(
-    configuration: String = null,
-    id: String = null,
-    initialReportIndex: String = null,
-    jobId: String = null,
-    leaseExpireTime: String = null,
-    mapTask: SchemaMapTask = null,
-    packages: js.Array[SchemaPackage] = null,
-    projectId: String = null,
-    reportStatusInterval: String = null,
-    seqMapTask: SchemaSeqMapTask = null,
-    shellTask: SchemaShellTask = null,
-    sourceOperationTask: SchemaSourceOperationRequest = null,
-    streamingComputationTask: SchemaStreamingComputationTask = null,
-    streamingConfigTask: SchemaStreamingConfigTask = null,
-    streamingSetupTask: SchemaStreamingSetupTask = null
-  ): SchemaWorkItem = {
+  def apply(): SchemaWorkItem = {
     val __obj = js.Dynamic.literal()
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (initialReportIndex != null) __obj.updateDynamic("initialReportIndex")(initialReportIndex.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (leaseExpireTime != null) __obj.updateDynamic("leaseExpireTime")(leaseExpireTime.asInstanceOf[js.Any])
-    if (mapTask != null) __obj.updateDynamic("mapTask")(mapTask.asInstanceOf[js.Any])
-    if (packages != null) __obj.updateDynamic("packages")(packages.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (reportStatusInterval != null) __obj.updateDynamic("reportStatusInterval")(reportStatusInterval.asInstanceOf[js.Any])
-    if (seqMapTask != null) __obj.updateDynamic("seqMapTask")(seqMapTask.asInstanceOf[js.Any])
-    if (shellTask != null) __obj.updateDynamic("shellTask")(shellTask.asInstanceOf[js.Any])
-    if (sourceOperationTask != null) __obj.updateDynamic("sourceOperationTask")(sourceOperationTask.asInstanceOf[js.Any])
-    if (streamingComputationTask != null) __obj.updateDynamic("streamingComputationTask")(streamingComputationTask.asInstanceOf[js.Any])
-    if (streamingConfigTask != null) __obj.updateDynamic("streamingConfigTask")(streamingConfigTask.asInstanceOf[js.Any])
-    if (streamingSetupTask != null) __obj.updateDynamic("streamingSetupTask")(streamingSetupTask.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWorkItem]
   }
+  @scala.inline
+  implicit class SchemaWorkItemOps[Self <: SchemaWorkItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfiguration(value: String): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInitialReportIndex(value: String): Self = this.set("initialReportIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialReportIndex: Self = this.set("initialReportIndex", js.undefined)
+    @scala.inline
+    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setLeaseExpireTime(value: String): Self = this.set("leaseExpireTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaseExpireTime: Self = this.set("leaseExpireTime", js.undefined)
+    @scala.inline
+    def setMapTask(value: SchemaMapTask): Self = this.set("mapTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapTask: Self = this.set("mapTask", js.undefined)
+    @scala.inline
+    def setPackagesVarargs(value: SchemaPackage*): Self = this.set("packages", js.Array(value :_*))
+    @scala.inline
+    def setPackages(value: js.Array[SchemaPackage]): Self = this.set("packages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackages: Self = this.set("packages", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setReportStatusInterval(value: String): Self = this.set("reportStatusInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportStatusInterval: Self = this.set("reportStatusInterval", js.undefined)
+    @scala.inline
+    def setSeqMapTask(value: SchemaSeqMapTask): Self = this.set("seqMapTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeqMapTask: Self = this.set("seqMapTask", js.undefined)
+    @scala.inline
+    def setShellTask(value: SchemaShellTask): Self = this.set("shellTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShellTask: Self = this.set("shellTask", js.undefined)
+    @scala.inline
+    def setSourceOperationTask(value: SchemaSourceOperationRequest): Self = this.set("sourceOperationTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceOperationTask: Self = this.set("sourceOperationTask", js.undefined)
+    @scala.inline
+    def setStreamingComputationTask(value: SchemaStreamingComputationTask): Self = this.set("streamingComputationTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingComputationTask: Self = this.set("streamingComputationTask", js.undefined)
+    @scala.inline
+    def setStreamingConfigTask(value: SchemaStreamingConfigTask): Self = this.set("streamingConfigTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingConfigTask: Self = this.set("streamingConfigTask", js.undefined)
+    @scala.inline
+    def setStreamingSetupTask(value: SchemaStreamingSetupTask): Self = this.set("streamingSetupTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingSetupTask: Self = this.set("streamingSetupTask", js.undefined)
+  }
+  
 }
 

@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait KeyPairState extends js.Object {
   /**
+    * The key pair ARN.
+    */
+  val arn: js.UndefOr[Input[String]] = js.native
+  /**
     * The MD5 public key fingerprint as specified in section 4 of RFC 4716.
     */
   val fingerprint: js.UndefOr[Input[String]] = js.native
@@ -29,29 +33,57 @@ trait KeyPairState extends js.Object {
     */
   val publicKey: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object KeyPairState {
   @scala.inline
-  def apply(
-    fingerprint: Input[String] = null,
-    keyName: Input[String] = null,
-    keyNamePrefix: Input[String] = null,
-    keyPairId: Input[String] = null,
-    publicKey: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): KeyPairState = {
+  def apply(): KeyPairState = {
     val __obj = js.Dynamic.literal()
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
-    if (keyNamePrefix != null) __obj.updateDynamic("keyNamePrefix")(keyNamePrefix.asInstanceOf[js.Any])
-    if (keyPairId != null) __obj.updateDynamic("keyPairId")(keyPairId.asInstanceOf[js.Any])
-    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPairState]
   }
+  @scala.inline
+  implicit class KeyPairStateOps[Self <: KeyPairState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setFingerprint(value: Input[String]): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setKeyName(value: Input[String]): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("keyName", js.undefined)
+    @scala.inline
+    def setKeyNamePrefix(value: Input[String]): Self = this.set("keyNamePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyNamePrefix: Self = this.set("keyNamePrefix", js.undefined)
+    @scala.inline
+    def setKeyPairId(value: Input[String]): Self = this.set("keyPairId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPairId: Self = this.set("keyPairId", js.undefined)
+    @scala.inline
+    def setPublicKey(value: Input[String]): Self = this.set("publicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKey: Self = this.set("publicKey", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

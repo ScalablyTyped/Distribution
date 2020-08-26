@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Listener () extends js.Object {
   def this(element: Element) = this()
+  def this(element: js.UndefOr[scala.Nothing], defaults: ListenerDefaults) = this()
   def this(element: Element, defaults: ListenerDefaults) = this()
   def counting_combo(
     keys: String,

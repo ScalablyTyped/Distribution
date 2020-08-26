@@ -120,34 +120,70 @@ trait SchemaTextStyle extends js.Object {
 
 object SchemaTextStyle {
   @scala.inline
-  def apply(
-    backgroundColor: SchemaOptionalColor = null,
-    baselineOffset: String = null,
-    bold: js.UndefOr[Boolean] = js.undefined,
-    fontFamily: String = null,
-    fontSize: SchemaDimension = null,
-    foregroundColor: SchemaOptionalColor = null,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    link: SchemaLink = null,
-    smallCaps: js.UndefOr[Boolean] = js.undefined,
-    strikethrough: js.UndefOr[Boolean] = js.undefined,
-    underline: js.UndefOr[Boolean] = js.undefined,
-    weightedFontFamily: SchemaWeightedFontFamily = null
-  ): SchemaTextStyle = {
+  def apply(): SchemaTextStyle = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (baselineOffset != null) __obj.updateDynamic("baselineOffset")(baselineOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (!js.isUndefined(smallCaps)) __obj.updateDynamic("smallCaps")(smallCaps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.get.asInstanceOf[js.Any])
-    if (weightedFontFamily != null) __obj.updateDynamic("weightedFontFamily")(weightedFontFamily.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTextStyle]
   }
+  @scala.inline
+  implicit class SchemaTextStyleOps[Self <: SchemaTextStyle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: SchemaOptionalColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBaselineOffset(value: String): Self = this.set("baselineOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaselineOffset: Self = this.set("baselineOffset", js.undefined)
+    @scala.inline
+    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBold: Self = this.set("bold", js.undefined)
+    @scala.inline
+    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: SchemaDimension): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setForegroundColor(value: SchemaOptionalColor): Self = this.set("foregroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForegroundColor: Self = this.set("foregroundColor", js.undefined)
+    @scala.inline
+    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItalic: Self = this.set("italic", js.undefined)
+    @scala.inline
+    def setLink(value: SchemaLink): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setSmallCaps(value: Boolean): Self = this.set("smallCaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmallCaps: Self = this.set("smallCaps", js.undefined)
+    @scala.inline
+    def setStrikethrough(value: Boolean): Self = this.set("strikethrough", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrikethrough: Self = this.set("strikethrough", js.undefined)
+    @scala.inline
+    def setUnderline(value: Boolean): Self = this.set("underline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnderline: Self = this.set("underline", js.undefined)
+    @scala.inline
+    def setWeightedFontFamily(value: SchemaWeightedFontFamily): Self = this.set("weightedFontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeightedFontFamily: Self = this.set("weightedFontFamily", js.undefined)
+  }
+  
 }
 

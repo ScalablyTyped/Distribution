@@ -109,8 +109,96 @@ object datetimeMod extends js.Object {
       */
     def this(year: Double, month: Double, day: Double) = this()
     def this(year: Double, month: Double, day: Double, hour: Double) = this()
+    def this(year: Double, month: Double, day: Double, hour: js.UndefOr[scala.Nothing], minute: Double) = this()
     def this(year: Double, month: Double, day: Double, hour: Double, minute: Double) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: js.UndefOr[scala.Nothing],
+      second: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: Double,
+      second: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: js.UndefOr[scala.Nothing],
+      second: Double
+    ) = this()
     def this(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: js.UndefOr[scala.Nothing],
+      second: js.UndefOr[scala.Nothing],
+      millisecond: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: js.UndefOr[scala.Nothing],
+      second: Double,
+      millisecond: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: Double,
+      second: js.UndefOr[scala.Nothing],
+      millisecond: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: Double,
+      second: Double,
+      millisecond: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: js.UndefOr[scala.Nothing],
+      second: js.UndefOr[scala.Nothing],
+      millisecond: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: js.UndefOr[scala.Nothing],
+      second: Double,
+      millisecond: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: Double,
+      second: js.UndefOr[scala.Nothing],
+      millisecond: Double
+    ) = this()
     def this(
       year: Double,
       month: Double,
@@ -119,6 +207,156 @@ object datetimeMod extends js.Object {
       minute: Double,
       second: Double,
       millisecond: Double
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: js.UndefOr[scala.Nothing],
+      second: js.UndefOr[scala.Nothing],
+      millisecond: js.UndefOr[scala.Nothing],
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: js.UndefOr[scala.Nothing],
+      second: js.UndefOr[scala.Nothing],
+      millisecond: Double,
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: js.UndefOr[scala.Nothing],
+      second: Double,
+      millisecond: js.UndefOr[scala.Nothing],
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: js.UndefOr[scala.Nothing],
+      second: Double,
+      millisecond: Double,
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: Double,
+      second: js.UndefOr[scala.Nothing],
+      millisecond: js.UndefOr[scala.Nothing],
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: Double,
+      second: js.UndefOr[scala.Nothing],
+      millisecond: Double,
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: Double,
+      second: Double,
+      millisecond: js.UndefOr[scala.Nothing],
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: js.UndefOr[scala.Nothing],
+      minute: Double,
+      second: Double,
+      millisecond: Double,
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: js.UndefOr[scala.Nothing],
+      second: js.UndefOr[scala.Nothing],
+      millisecond: js.UndefOr[scala.Nothing],
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: js.UndefOr[scala.Nothing],
+      second: js.UndefOr[scala.Nothing],
+      millisecond: Double,
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: js.UndefOr[scala.Nothing],
+      second: Double,
+      millisecond: js.UndefOr[scala.Nothing],
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: js.UndefOr[scala.Nothing],
+      second: Double,
+      millisecond: Double,
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: Double,
+      second: js.UndefOr[scala.Nothing],
+      millisecond: js.UndefOr[scala.Nothing],
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: Double,
+      second: js.UndefOr[scala.Nothing],
+      millisecond: Double,
+      timeZone: TimeZone
+    ) = this()
+    def this(
+      year: Double,
+      month: Double,
+      day: Double,
+      hour: Double,
+      minute: Double,
+      second: Double,
+      millisecond: js.UndefOr[scala.Nothing],
+      timeZone: TimeZone
     ) = this()
     def this(
       year: Double,
@@ -147,16 +385,16 @@ object datetimeMod extends js.Object {
     /**
       * UTC timestamp (lazily calculated, use getter for utcDate instead)
       */
-    var _utcDate: js.UndefOr[js.Any] = js.native
+    var _utcDate: js.Any = js.native
     /**
       * Original time zone this instance was created for.
       * Can be undefined for unaware timestamps
       */
-    var _zone: js.UndefOr[js.Any] = js.native
+    var _zone: js.Any = js.native
     /**
       * Local timestamp (lazily calculated)
       */
-    var _zoneDate: js.UndefOr[js.Any] = js.native
+    var _zoneDate: js.Any = js.native
     /**
       * Allow not using instanceof
       */
@@ -455,7 +693,7 @@ object datetimeMod extends js.Object {
       * @throws nothing
       */
     /* private */ def utcDate: js.Any = js.native
-    /* private */ def utcDate(value: js.Any): js.Any = js.native
+    /* private */ def utcDate_=(value: js.Any): Unit = js.native
     /**
       * @return The UTC day of the month 1-31
       * @throws nothing
@@ -590,7 +828,7 @@ object datetimeMod extends js.Object {
       * @throws nothing
       */
     /* private */ def zoneDate: js.Any = js.native
-    /* private */ def zoneDate(value: js.Any): js.Any = js.native
+    /* private */ def zoneDate_=(value: js.Any): Unit = js.native
   }
   
   def isDateTime(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean = js.native
@@ -631,7 +869,7 @@ object datetimeMod extends js.Object {
       minute: js.UndefOr[Double],
       second: js.UndefOr[Double],
       millisecond: js.UndefOr[Double],
-      zone: js.UndefOr[Null | TimeZone],
+      zone: js.UndefOr[TimeZone | Null],
       allowPre1970: js.UndefOr[Boolean]
     ): Boolean = js.native
     /**
@@ -674,7 +912,29 @@ object datetimeMod extends js.Object {
       * @throws timezonecomplete.Argument.FormatString if the given format string is invalid
       */
     def parse(s: String, format: String): DateTime = js.native
+    def parse(
+      s: String,
+      format: String,
+      zone: js.UndefOr[scala.Nothing],
+      locale: js.UndefOr[scala.Nothing],
+      allowTrailing: Boolean
+    ): DateTime = js.native
+    def parse(s: String, format: String, zone: js.UndefOr[scala.Nothing], locale: PartialLocale): DateTime = js.native
+    def parse(
+      s: String,
+      format: String,
+      zone: js.UndefOr[scala.Nothing],
+      locale: PartialLocale,
+      allowTrailing: Boolean
+    ): DateTime = js.native
     def parse(s: String, format: String, zone: TimeZone): DateTime = js.native
+    def parse(
+      s: String,
+      format: String,
+      zone: TimeZone,
+      locale: js.UndefOr[scala.Nothing],
+      allowTrailing: Boolean
+    ): DateTime = js.native
     def parse(s: String, format: String, zone: TimeZone, locale: PartialLocale): DateTime = js.native
     def parse(s: String, format: String, zone: TimeZone, locale: PartialLocale, allowTrailing: Boolean): DateTime = js.native
   }

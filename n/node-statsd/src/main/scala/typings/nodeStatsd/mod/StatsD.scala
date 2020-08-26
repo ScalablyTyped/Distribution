@@ -51,21 +51,189 @@ class StatsD protected () extends js.Object {
     * @param callback Callback when message is done being delivered. Optional.
     */
   def decrement(stat: String): Unit = js.native
+  def decrement(stat: String, value: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
+  def decrement(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(stat: String, value: js.UndefOr[scala.Nothing], sampleRateOrTags: js.Array[String]): Unit = js.native
+  def decrement(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRateOrTags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(stat: String, value: js.UndefOr[scala.Nothing], sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def decrement(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def decrement(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(stat: String, value: js.UndefOr[scala.Nothing], sampleRate: Double): Unit = js.native
+  def decrement(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(stat: String, value: js.UndefOr[scala.Nothing], sampleRate: Double, tags: js.Array[String]): Unit = js.native
+  def decrement(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: Double,
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def decrement(stat: String, value: Double): Unit = js.native
   def decrement(stat: String, value: Double, callback: Callback): Unit = js.native
+  def decrement(stat: String, value: Double, sampleRateOrTags: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
   def decrement(stat: String, value: Double, sampleRateOrTags: js.Array[String]): Unit = js.native
   def decrement(stat: String, value: Double, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def decrement(stat: String, value: Double, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def decrement(
+    stat: String,
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(stat: String, value: Double, sampleRate: js.UndefOr[scala.Nothing], tags: js.Array[String]): Unit = js.native
+  def decrement(
+    stat: String,
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def decrement(stat: String, value: Double, sampleRate: Double): Unit = js.native
+  def decrement(
+    stat: String,
+    value: Double,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def decrement(stat: String, value: Double, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def decrement(stat: String, value: Double, sampleRate: Double, tags: js.Array[String], callback: Callback): Unit = js.native
   def decrement(stat: js.Array[String]): Unit = js.native
+  def decrement(stat: js.Array[String], value: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(stat: js.Array[String], value: js.UndefOr[scala.Nothing], sampleRateOrTags: js.Array[String]): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRateOrTags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRateOrTags: Double,
+    callback: Callback
+  ): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(stat: js.Array[String], value: js.UndefOr[scala.Nothing], sampleRate: Double): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: Double,
+    tags: js.Array[String]
+  ): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: Double,
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def decrement(stat: js.Array[String], value: Double): Unit = js.native
   def decrement(stat: js.Array[String], value: Double, callback: Callback): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: Double,
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def decrement(stat: js.Array[String], value: Double, sampleRateOrTags: js.Array[String]): Unit = js.native
   def decrement(stat: js.Array[String], value: Double, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def decrement(stat: js.Array[String], value: Double, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def decrement(stat: js.Array[String], value: Double, sampleRate: Double): Unit = js.native
+  def decrement(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def decrement(stat: js.Array[String], value: Double, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def decrement(
     stat: js.Array[String],
@@ -84,18 +252,74 @@ class StatsD protected () extends js.Object {
     */
   def gauge(stat: String, value: Double): Unit = js.native
   def gauge(stat: String, value: Double, callback: Callback): Unit = js.native
+  def gauge(stat: String, value: Double, sampleRateOrTags: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
   def gauge(stat: String, value: Double, sampleRateOrTags: js.Array[String]): Unit = js.native
   def gauge(stat: String, value: Double, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def gauge(stat: String, value: Double, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def gauge(
+    stat: String,
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def gauge(stat: String, value: Double, sampleRate: js.UndefOr[scala.Nothing], tags: js.Array[String]): Unit = js.native
+  def gauge(
+    stat: String,
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def gauge(stat: String, value: Double, sampleRate: Double): Unit = js.native
+  def gauge(
+    stat: String,
+    value: Double,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def gauge(stat: String, value: Double, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def gauge(stat: String, value: Double, sampleRate: Double, tags: js.Array[String], callback: Callback): Unit = js.native
   def gauge(stat: js.Array[String], value: Double): Unit = js.native
   def gauge(stat: js.Array[String], value: Double, callback: Callback): Unit = js.native
+  def gauge(
+    stat: js.Array[String],
+    value: Double,
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def gauge(stat: js.Array[String], value: Double, sampleRateOrTags: js.Array[String]): Unit = js.native
   def gauge(stat: js.Array[String], value: Double, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def gauge(stat: js.Array[String], value: Double, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def gauge(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def gauge(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def gauge(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def gauge(stat: js.Array[String], value: Double, sampleRate: Double): Unit = js.native
+  def gauge(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def gauge(stat: js.Array[String], value: Double, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def gauge(
     stat: js.Array[String],
@@ -114,18 +338,74 @@ class StatsD protected () extends js.Object {
     */
   def histogram(stat: String, value: js.Any): Unit = js.native
   def histogram(stat: String, value: js.Any, callback: Callback): Unit = js.native
+  def histogram(stat: String, value: js.Any, sampleRateOrTags: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
   def histogram(stat: String, value: js.Any, sampleRateOrTags: js.Array[String]): Unit = js.native
   def histogram(stat: String, value: js.Any, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def histogram(stat: String, value: js.Any, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def histogram(
+    stat: String,
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def histogram(stat: String, value: js.Any, sampleRate: js.UndefOr[scala.Nothing], tags: js.Array[String]): Unit = js.native
+  def histogram(
+    stat: String,
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def histogram(stat: String, value: js.Any, sampleRate: Double): Unit = js.native
+  def histogram(
+    stat: String,
+    value: js.Any,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def histogram(stat: String, value: js.Any, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def histogram(stat: String, value: js.Any, sampleRate: Double, tags: js.Array[String], callback: Callback): Unit = js.native
   def histogram(stat: js.Array[String], value: js.Any): Unit = js.native
   def histogram(stat: js.Array[String], value: js.Any, callback: Callback): Unit = js.native
+  def histogram(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def histogram(stat: js.Array[String], value: js.Any, sampleRateOrTags: js.Array[String]): Unit = js.native
   def histogram(stat: js.Array[String], value: js.Any, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def histogram(stat: js.Array[String], value: js.Any, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def histogram(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def histogram(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def histogram(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def histogram(stat: js.Array[String], value: js.Any, sampleRate: Double): Unit = js.native
+  def histogram(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def histogram(stat: js.Array[String], value: js.Any, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def histogram(
     stat: js.Array[String],
@@ -143,25 +423,158 @@ class StatsD protected () extends js.Object {
     * @param callback Callback when message is done being delivered. Optional.
     */
   def increment(stat: String): Unit = js.native
+  def increment(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def increment(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def increment(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
+  def increment(stat: String, value: js.UndefOr[scala.Nothing], sampleRate: Double): Unit = js.native
+  def increment(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def increment(stat: String, value: js.UndefOr[scala.Nothing], sampleRate: Double, tags: js.Array[String]): Unit = js.native
+  def increment(
+    stat: String,
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: Double,
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def increment(stat: String, value: js.Any): Unit = js.native
   def increment(stat: String, value: js.Any, callback: Callback): Unit = js.native
+  def increment(stat: String, value: js.Any, sampleRateOrTags: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
   def increment(stat: String, value: js.Any, sampleRateOrTags: js.Array[String]): Unit = js.native
   def increment(stat: String, value: js.Any, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def increment(stat: String, value: js.Any, sampleRateOrTags: Double): Unit = js.native
   def increment(stat: String, value: js.Any, sampleRateOrTags: Double, callback: Callback): Unit = js.native
   def increment(stat: String, value: Double): Unit = js.native
+  def increment(
+    stat: String,
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def increment(stat: String, value: Double, sampleRate: js.UndefOr[scala.Nothing], tags: js.Array[String]): Unit = js.native
+  def increment(
+    stat: String,
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def increment(stat: String, value: Double, sampleRate: Double): Unit = js.native
+  def increment(
+    stat: String,
+    value: Double,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def increment(stat: String, value: Double, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def increment(stat: String, value: Double, sampleRate: Double, tags: js.Array[String], callback: Callback): Unit = js.native
   def increment(stat: js.Array[String]): Unit = js.native
+  def increment(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def increment(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def increment(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
+  def increment(stat: js.Array[String], value: js.UndefOr[scala.Nothing], sampleRate: Double): Unit = js.native
+  def increment(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def increment(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: Double,
+    tags: js.Array[String]
+  ): Unit = js.native
+  def increment(
+    stat: js.Array[String],
+    value: js.UndefOr[scala.Nothing],
+    sampleRate: Double,
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def increment(stat: js.Array[String], value: js.Any): Unit = js.native
   def increment(stat: js.Array[String], value: js.Any, callback: Callback): Unit = js.native
+  def increment(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def increment(stat: js.Array[String], value: js.Any, sampleRateOrTags: js.Array[String]): Unit = js.native
   def increment(stat: js.Array[String], value: js.Any, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def increment(stat: js.Array[String], value: js.Any, sampleRateOrTags: Double): Unit = js.native
   def increment(stat: js.Array[String], value: js.Any, sampleRateOrTags: Double, callback: Callback): Unit = js.native
   def increment(stat: js.Array[String], value: Double): Unit = js.native
+  def increment(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def increment(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def increment(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def increment(stat: js.Array[String], value: Double, sampleRate: Double): Unit = js.native
+  def increment(
+    stat: js.Array[String],
+    value: Double,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def increment(stat: js.Array[String], value: Double, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def increment(
     stat: js.Array[String],
@@ -181,6 +594,13 @@ class StatsD protected () extends js.Object {
     */
   def send(stat: String, value: js.Any, `type`: String): Unit = js.native
   def send(stat: String, value: js.Any, `type`: String, callback: Callback): Unit = js.native
+  def send(
+    stat: String,
+    value: js.Any,
+    `type`: String,
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def send(stat: String, value: js.Any, `type`: String, sampleRateOrTags: js.Array[String]): Unit = js.native
   def send(
     stat: String,
@@ -190,7 +610,38 @@ class StatsD protected () extends js.Object {
     callback: Callback
   ): Unit = js.native
   def send(stat: String, value: js.Any, `type`: String, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def send(
+    stat: String,
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def send(
+    stat: String,
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def send(
+    stat: String,
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def send(stat: String, value: js.Any, `type`: String, sampleRate: Double): Unit = js.native
+  def send(
+    stat: String,
+    value: js.Any,
+    `type`: String,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def send(stat: String, value: js.Any, `type`: String, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def send(
     stat: String,
@@ -202,6 +653,13 @@ class StatsD protected () extends js.Object {
   ): Unit = js.native
   def send(stat: js.Array[String], value: js.Any, `type`: String): Unit = js.native
   def send(stat: js.Array[String], value: js.Any, `type`: String, callback: Callback): Unit = js.native
+  def send(
+    stat: js.Array[String],
+    value: js.Any,
+    `type`: String,
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def send(stat: js.Array[String], value: js.Any, `type`: String, sampleRateOrTags: js.Array[String]): Unit = js.native
   def send(
     stat: js.Array[String],
@@ -217,7 +675,38 @@ class StatsD protected () extends js.Object {
     sampleRateOrTags: Double,
     callback: Callback
   ): Unit = js.native
+  def send(
+    stat: js.Array[String],
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def send(
+    stat: js.Array[String],
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def send(
+    stat: js.Array[String],
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def send(stat: js.Array[String], value: js.Any, `type`: String, sampleRate: Double): Unit = js.native
+  def send(
+    stat: js.Array[String],
+    value: js.Any,
+    `type`: String,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def send(stat: js.Array[String], value: js.Any, `type`: String, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def send(
     stat: js.Array[String],
@@ -238,6 +727,13 @@ class StatsD protected () extends js.Object {
     */
   def sendAll(stat: String, value: js.Any, `type`: String): Unit = js.native
   def sendAll(stat: String, value: js.Any, `type`: String, callback: Callback): Unit = js.native
+  def sendAll(
+    stat: String,
+    value: js.Any,
+    `type`: String,
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def sendAll(stat: String, value: js.Any, `type`: String, sampleRateOrTags: js.Array[String]): Unit = js.native
   def sendAll(
     stat: String,
@@ -247,7 +743,38 @@ class StatsD protected () extends js.Object {
     callback: Callback
   ): Unit = js.native
   def sendAll(stat: String, value: js.Any, `type`: String, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def sendAll(
+    stat: String,
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def sendAll(
+    stat: String,
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def sendAll(
+    stat: String,
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def sendAll(stat: String, value: js.Any, `type`: String, sampleRate: Double): Unit = js.native
+  def sendAll(
+    stat: String,
+    value: js.Any,
+    `type`: String,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def sendAll(stat: String, value: js.Any, `type`: String, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def sendAll(
     stat: String,
@@ -259,6 +786,13 @@ class StatsD protected () extends js.Object {
   ): Unit = js.native
   def sendAll(stat: js.Array[String], value: js.Any, `type`: String): Unit = js.native
   def sendAll(stat: js.Array[String], value: js.Any, `type`: String, callback: Callback): Unit = js.native
+  def sendAll(
+    stat: js.Array[String],
+    value: js.Any,
+    `type`: String,
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def sendAll(stat: js.Array[String], value: js.Any, `type`: String, sampleRateOrTags: js.Array[String]): Unit = js.native
   def sendAll(
     stat: js.Array[String],
@@ -274,7 +808,38 @@ class StatsD protected () extends js.Object {
     sampleRateOrTags: Double,
     callback: Callback
   ): Unit = js.native
+  def sendAll(
+    stat: js.Array[String],
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def sendAll(
+    stat: js.Array[String],
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def sendAll(
+    stat: js.Array[String],
+    value: js.Any,
+    `type`: String,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def sendAll(stat: js.Array[String], value: js.Any, `type`: String, sampleRate: Double): Unit = js.native
+  def sendAll(
+    stat: js.Array[String],
+    value: js.Any,
+    `type`: String,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def sendAll(stat: js.Array[String], value: js.Any, `type`: String, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def sendAll(
     stat: js.Array[String],
@@ -289,18 +854,74 @@ class StatsD protected () extends js.Object {
     */
   def set(stat: String, value: js.Any): Unit = js.native
   def set(stat: String, value: js.Any, callback: Callback): Unit = js.native
+  def set(stat: String, value: js.Any, sampleRateOrTags: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
   def set(stat: String, value: js.Any, sampleRateOrTags: js.Array[String]): Unit = js.native
   def set(stat: String, value: js.Any, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def set(stat: String, value: js.Any, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def set(
+    stat: String,
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def set(stat: String, value: js.Any, sampleRate: js.UndefOr[scala.Nothing], tags: js.Array[String]): Unit = js.native
+  def set(
+    stat: String,
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def set(stat: String, value: js.Any, sampleRate: Double): Unit = js.native
+  def set(
+    stat: String,
+    value: js.Any,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def set(stat: String, value: js.Any, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def set(stat: String, value: js.Any, sampleRate: Double, tags: js.Array[String], callback: Callback): Unit = js.native
   def set(stat: js.Array[String], value: js.Any): Unit = js.native
   def set(stat: js.Array[String], value: js.Any, callback: Callback): Unit = js.native
+  def set(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def set(stat: js.Array[String], value: js.Any, sampleRateOrTags: js.Array[String]): Unit = js.native
   def set(stat: js.Array[String], value: js.Any, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def set(stat: js.Array[String], value: js.Any, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def set(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def set(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def set(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def set(stat: js.Array[String], value: js.Any, sampleRate: Double): Unit = js.native
+  def set(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def set(stat: js.Array[String], value: js.Any, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def set(
     stat: js.Array[String],
@@ -319,18 +940,74 @@ class StatsD protected () extends js.Object {
     */
   def timing(stat: String, time: Double): Unit = js.native
   def timing(stat: String, time: Double, callback: Callback): Unit = js.native
+  def timing(stat: String, time: Double, sampleRateOrTags: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
   def timing(stat: String, time: Double, sampleRateOrTags: js.Array[String]): Unit = js.native
   def timing(stat: String, time: Double, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def timing(stat: String, time: Double, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def timing(
+    stat: String,
+    time: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def timing(stat: String, time: Double, sampleRate: js.UndefOr[scala.Nothing], tags: js.Array[String]): Unit = js.native
+  def timing(
+    stat: String,
+    time: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def timing(stat: String, time: Double, sampleRate: Double): Unit = js.native
+  def timing(
+    stat: String,
+    time: Double,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def timing(stat: String, time: Double, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def timing(stat: String, time: Double, sampleRate: Double, tags: js.Array[String], callback: Callback): Unit = js.native
   def timing(stat: js.Array[String], time: Double): Unit = js.native
   def timing(stat: js.Array[String], time: Double, callback: Callback): Unit = js.native
+  def timing(
+    stat: js.Array[String],
+    time: Double,
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def timing(stat: js.Array[String], time: Double, sampleRateOrTags: js.Array[String]): Unit = js.native
   def timing(stat: js.Array[String], time: Double, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def timing(stat: js.Array[String], time: Double, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def timing(
+    stat: js.Array[String],
+    time: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def timing(
+    stat: js.Array[String],
+    time: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def timing(
+    stat: js.Array[String],
+    time: Double,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def timing(stat: js.Array[String], time: Double, sampleRate: Double): Unit = js.native
+  def timing(
+    stat: js.Array[String],
+    time: Double,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def timing(stat: js.Array[String], time: Double, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def timing(
     stat: js.Array[String],
@@ -349,18 +1026,74 @@ class StatsD protected () extends js.Object {
     */
   def unique(stat: String, value: js.Any): Unit = js.native
   def unique(stat: String, value: js.Any, callback: Callback): Unit = js.native
+  def unique(stat: String, value: js.Any, sampleRateOrTags: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
   def unique(stat: String, value: js.Any, sampleRateOrTags: js.Array[String]): Unit = js.native
   def unique(stat: String, value: js.Any, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def unique(stat: String, value: js.Any, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def unique(
+    stat: String,
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def unique(stat: String, value: js.Any, sampleRate: js.UndefOr[scala.Nothing], tags: js.Array[String]): Unit = js.native
+  def unique(
+    stat: String,
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def unique(stat: String, value: js.Any, sampleRate: Double): Unit = js.native
+  def unique(
+    stat: String,
+    value: js.Any,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def unique(stat: String, value: js.Any, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def unique(stat: String, value: js.Any, sampleRate: Double, tags: js.Array[String], callback: Callback): Unit = js.native
   def unique(stat: js.Array[String], value: js.Any): Unit = js.native
   def unique(stat: js.Array[String], value: js.Any, callback: Callback): Unit = js.native
+  def unique(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRateOrTags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def unique(stat: js.Array[String], value: js.Any, sampleRateOrTags: js.Array[String]): Unit = js.native
   def unique(stat: js.Array[String], value: js.Any, sampleRateOrTags: js.Array[String], callback: Callback): Unit = js.native
   def unique(stat: js.Array[String], value: js.Any, sampleRateOrTags: Double, callback: Callback): Unit = js.native
+  def unique(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def unique(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String]
+  ): Unit = js.native
+  def unique(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: js.UndefOr[scala.Nothing],
+    tags: js.Array[String],
+    callback: Callback
+  ): Unit = js.native
   def unique(stat: js.Array[String], value: js.Any, sampleRate: Double): Unit = js.native
+  def unique(
+    stat: js.Array[String],
+    value: js.Any,
+    sampleRate: Double,
+    tags: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def unique(stat: js.Array[String], value: js.Any, sampleRate: Double, tags: js.Array[String]): Unit = js.native
   def unique(
     stat: js.Array[String],

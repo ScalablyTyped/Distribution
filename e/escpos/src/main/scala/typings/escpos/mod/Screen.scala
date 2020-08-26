@@ -38,6 +38,7 @@ class Screen protected () extends js.Object {
   def clearLine(): Screen = js.native
   def clearLine(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Screen = js.native
   def close(): Screen = js.native
+  def close(callback: js.UndefOr[scala.Nothing], options: js.Any): Screen = js.native
   def close(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Screen = js.native
   def close(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit], options: js.Any): Screen = js.native
   /**

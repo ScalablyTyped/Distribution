@@ -6,47 +6,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BandScale
   extends BaseBandScale
      with Scale {
-  var paddingInner: js.UndefOr[Double | SignalRef] = js.undefined
+  var paddingInner: js.UndefOr[Double | SignalRef] = js.native
   @JSName("type")
-  var type_BandScale: band
+  var type_BandScale: band = js.native
 }
 
 object BandScale {
   @scala.inline
-  def apply(
-    name: String,
-    `type`: band,
-    align: Double | SignalRef = null,
-    domain: (js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef = null,
-    domainMax: Double | SignalRef = null,
-    domainMid: Double | SignalRef = null,
-    domainMin: Double | SignalRef = null,
-    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
-    padding: Double | SignalRef = null,
-    paddingInner: Double | SignalRef = null,
-    paddingOuter: Double | SignalRef = null,
-    range: RangeBand = null,
-    reverse: Boolean | SignalRef = null,
-    round: Boolean | SignalRef = null
-  ): BandScale = {
+  def apply(name: String, `type`: band): BandScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
-    if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
-    if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingInner != null) __obj.updateDynamic("paddingInner")(paddingInner.asInstanceOf[js.Any])
-    if (paddingOuter != null) __obj.updateDynamic("paddingOuter")(paddingOuter.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (reverse != null) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     __obj.asInstanceOf[BandScale]
   }
+  @scala.inline
+  implicit class BandScaleOps[Self <: BandScale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: band): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaddingInner(value: Double | SignalRef): Self = this.set("paddingInner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingInner: Self = this.set("paddingInner", js.undefined)
+  }
+  
 }
 

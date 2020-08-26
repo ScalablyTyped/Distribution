@@ -12,7 +12,7 @@ Gulp plugin for Pug with i18n support
 | Keywords           | gulpplugin, gulp, pug, jade, i18n |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 1600 |
+| # downloads        | 1700 |
 | # stars            | 2 |
 
 ## Links

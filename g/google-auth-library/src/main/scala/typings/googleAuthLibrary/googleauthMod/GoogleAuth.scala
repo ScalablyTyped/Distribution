@@ -4,7 +4,6 @@ import typings.gaxios.commonMod.GaxiosOptions
 import typings.gaxios.commonMod.GaxiosResponse
 import typings.googleAuthLibrary.anon.Headers
 import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
-import typings.googleAuthLibrary.anon.Uri
 import typings.googleAuthLibrary.computeclientMod.Compute
 import typings.googleAuthLibrary.credentialsMod.CredentialBody
 import typings.googleAuthLibrary.credentialsMod.JWTInput
@@ -32,8 +31,8 @@ class GoogleAuth () extends js.Object {
     * @returns JWT or UserRefresh Client with data
     */
   var _cacheClientFromJSON: js.Any = js.native
-  var _cachedProjectId: js.UndefOr[js.Any] = js.native
-  var _getDefaultProjectIdPromise: js.UndefOr[js.Any] = js.native
+  var _cachedProjectId: js.Any = js.native
+  var _getDefaultProjectIdPromise: js.Any = js.native
   /**
     * Determines whether the current operating system is Windows.
     * @api private
@@ -45,8 +44,8 @@ class GoogleAuth () extends js.Object {
     * Compute Engine.
     * @private
     */
-  var checkIsGCE: js.UndefOr[js.Any] = js.native
-  var clientOptions: js.UndefOr[js.Any] = js.native
+  var checkIsGCE: js.Any = js.native
+  var clientOptions: js.Any = js.native
   var fromStreamAsync: js.Any = js.native
   var getApplicationDefaultAsync: js.Any = js.native
   var getCredentialsAsync: js.Any = js.native
@@ -69,10 +68,9 @@ class GoogleAuth () extends js.Object {
     */
   var getProductionProjectId: js.Any = js.native
   var getProjectIdAsync: js.Any = js.native
-  val isGCE: js.UndefOr[Boolean] = js.native
   var jsonContent: JWTInput | Null = js.native
-  var keyFilename: js.UndefOr[js.Any] = js.native
-  var scopes: js.UndefOr[js.Any] = js.native
+  var keyFilename: js.Any = js.native
+  var scopes: js.Any = js.native
   var transporter: js.UndefOr[Transporter] = js.native
   /**
     * Determines whether the auth layer is running on Google Compute Engine.
@@ -107,7 +105,7 @@ class GoogleAuth () extends js.Object {
     * the request options.
     * @param opts Axios or Request options on which to attach the headers
     */
-  def authorizeRequest(opts: Headers): js.Promise[Uri] = js.native
+  def authorizeRequest(opts: Headers): js.Promise[Headers] = js.native
   /**
     * Create a credentials instance using the given API key string.
     * @param apiKey The API key string
@@ -167,12 +165,6 @@ class GoogleAuth () extends js.Object {
   def getCredentials(): js.Promise[CredentialBody] = js.native
   def getCredentials(callback: js.Function2[/* err */ Error | Null, /* credentials */ js.UndefOr[CredentialBody], Unit]): Unit = js.native
   /**
-    * THIS METHOD HAS BEEN DEPRECATED.
-    * It will be removed in 3.0.  Please use getProjectId instead.
-    */
-  def getDefaultProjectId(): js.Promise[String] = js.native
-  def getDefaultProjectId(callback: ProjectIdCallback): Unit = js.native
-  /**
     * Determine the compute environment in which the code is running.
     */
   def getEnv(): js.Promise[GCPEnv] = js.native
@@ -195,6 +187,7 @@ class GoogleAuth () extends js.Object {
     */
   def getRequestHeaders(): js.Promise[typings.googleAuthLibrary.oauth2clientMod.Headers] = js.native
   def getRequestHeaders(url: String): js.Promise[typings.googleAuthLibrary.oauth2clientMod.Headers] = js.native
+  def isGCE: js.UndefOr[Boolean] = js.native
   /**
     * Automatically obtain application default credentials, and make an
     * HTTP request using the given options.
@@ -207,12 +200,6 @@ class GoogleAuth () extends js.Object {
     * @param data The data to be signed.
     */
   def sign(data: String): js.Promise[String] = js.native
-  /**
-    * Credentials from the Cloud SDK that are associated with Cloud SDK's project
-    * are problematic because they may not have APIs enabled and have limited
-    * quota. If this is the case, warn about it.
-    */
-  /* protected */ def warnOnProblematicCredentials(client: JWT): Unit = js.native
 }
 
 /* static members */

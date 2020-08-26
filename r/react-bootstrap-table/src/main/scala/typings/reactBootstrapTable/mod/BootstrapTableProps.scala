@@ -1,78 +1,76 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.CSSProperties
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
 import typings.react.mod.ReactElement
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BootstrapTableProps extends Props[BootstrapTable] {
   /**
     * Automatically collapses open rows when doing a sort/filter/search action if those options have been specified.
     * Is an object with three possible fields: sort, filter, search. Each field is a flag to specify whether that
     * action type should cause expanded rows to close. All three fields default to false.
     */
-  var autoCollapse: js.UndefOr[typings.reactBootstrapTable.anon.Filter] = js.undefined
+  var autoCollapse: js.UndefOr[typings.reactBootstrapTable.anon.Filter] = js.native
   /**
     * Add your own class names on the react-bs-container-body class
     */
-  var bodyContainerClass: js.UndefOr[String] = js.undefined
+  var bodyContainerClass: js.UndefOr[String] = js.native
   /**
     * Add css styles to the react-bs-container-body class.
     */
-  var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
+  var bodyStyle: js.UndefOr[CSSProperties] = js.native
   /**
     * Become a borderless table by setting bordered to false, default is true.
     */
-  var bordered: js.UndefOr[Boolean] = js.undefined
+  var bordered: js.UndefOr[Boolean] = js.native
   /**
     * Enable cell editing on table. cellEdit accept an object which have the following properties
     */
-  var cellEdit: js.UndefOr[CellEdit[_]] = js.undefined
+  var cellEdit: js.UndefOr[CellEdit[_]] = js.native
   /**
     * Enable column filter by setting columnFilter to true, default is false.
     * If enabled, there're input text field per column under the table, user can input your filter condition by each column.
     */
-  var columnFilter: js.UndefOr[Boolean] = js.undefined
+  var columnFilter: js.UndefOr[Boolean] = js.native
   /**
     * Enable condensed by setting condensed to true. Same as Bootstrap table class .table-condensed, default is false.
     */
-  var condensed: js.UndefOr[Boolean] = js.undefined
+  var condensed: js.UndefOr[Boolean] = js.native
   /**
     * Add your own class names on the react-bs-table-container class
     */
-  var containerClass: js.UndefOr[String] = js.undefined
+  var containerClass: js.UndefOr[String] = js.native
   /**
     * Add css styles to the react-bs-table-container class.
     * For example: containerStyle={ { background: '#00ff00' } }
     */
-  var containerStyle: js.UndefOr[CSSProperties] = js.undefined
+  var containerStyle: js.UndefOr[CSSProperties] = js.native
   /**
     * Set CSV filename (e.g. items.csv). Default is spreadsheet.csv
     */
-  var csvFileName: js.UndefOr[String | js.Function0[String]] = js.undefined
+  var csvFileName: js.UndefOr[String | js.Function0[String]] = js.native
   /**
     * Use data to specify the data that you want to display on table.
     */
-  var data: js.Array[js.Object]
+  var data: js.Array[js.Object] = js.native
   /**
     * Enable row deletion by setting deleteRow to true, default is false.
     * If you enable row deletion, there's a button on the upper left side of table.
     */
-  var deleteRow: js.UndefOr[Boolean] = js.undefined
+  var deleteRow: js.UndefOr[Boolean] = js.native
   /**
     * Disable writing the header row when exporting to a CSV file.
     */
-  var excludeCSVHeader: js.UndefOr[Boolean] = js.undefined
+  var excludeCSVHeader: js.UndefOr[Boolean] = js.native
   /**
     * Assign some alternative options for expand row feature, expandColumnOptions
     * only have four available property currently.
     */
-  var expandColumnOptions: js.UndefOr[ExpandColumnOptions] = js.undefined
+  var expandColumnOptions: js.UndefOr[ExpandColumnOptions] = js.native
   /**
     * Tell react-bootstrap-table what's content should be rendered in the expanding
     * content. This props accept a callback function and is suppose to be return JSX
@@ -80,57 +78,57 @@ trait BootstrapTableProps extends Props[BootstrapTable] {
     * expandComponent is always used with expandableRow, both of props are enable
     * the expand row functionality on table.
     */
-  var expandComponent: js.UndefOr[js.Function1[/* row */ js.Any, String | ReactElement]] = js.undefined
+  var expandComponent: js.UndefOr[js.Function1[/* row */ js.Any, String | ReactElement]] = js.native
   /**
     * Tell react-bootstrap-table which rows are able to expand. This prop accepts
     * a callback function and is suppose to be return an Array of row keys.
     * expandableRow is always used with expandComponent, both of props are enable
     * the expand row functionality on table.
     */
-  var expandableRow: js.UndefOr[js.Function1[/* row */ js.Any, Boolean]] = js.undefined
+  var expandableRow: js.UndefOr[js.Function1[/* row */ js.Any, Boolean]] = js.native
   /**
     * Enable export csv function, default is false.
     * If you enable, there's a button on the upper left side of table.
     */
-  var exportCSV: js.UndefOr[Boolean] = js.undefined
+  var exportCSV: js.UndefOr[Boolean] = js.native
   /**
     * Used to specify the total number of rows (matching current filter/sort/size per page) in a remote data source.
     * Documented in examples, but missing from the main docs. Essential for remote data pagination calculations.
     */
-  var fetchInfo: js.UndefOr[FetchInfo] = js.undefined
+  var fetchInfo: js.UndefOr[FetchInfo] = js.native
   /**
     * Add a footer to the table.
     */
-  var footer: js.UndefOr[Boolean] = js.undefined
+  var footer: js.UndefOr[Boolean] = js.native
   /**
     * Data for the table footer. Format is an array of footer rows, each containing an array of column footer data.
     */
-  var footerData: js.UndefOr[js.Array[js.Array[FooterData]]] = js.undefined
+  var footerData: js.UndefOr[js.Array[js.Array[FooterData]]] = js.native
   /**
     * Add your own class names on the react-bs-container-header class
     */
-  var headerContainerClass: js.UndefOr[String] = js.undefined
+  var headerContainerClass: js.UndefOr[String] = js.native
   /**
     * Add css styles to the react-bs-container-header class.
     */
-  var headerStyle: js.UndefOr[CSSProperties] = js.undefined
+  var headerStyle: js.UndefOr[CSSProperties] = js.native
   /**
     * Use height to set the height of table, default is 100%. The string needs to have a unit, e.g. 'px', '%'.
     */
-  var height: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[String] = js.native
   /**
     * Enable hover by setting hover to true. Same as Bootstrap table class .table-hover, default is false.
     */
-  var hover: js.UndefOr[Boolean] = js.undefined
+  var hover: js.UndefOr[Boolean] = js.native
   /**
     * If true, it will hide the pagination if there is only one page, default is false.
     */
-  var ignoreSinglePage: js.UndefOr[Boolean] = js.undefined
+  var ignoreSinglePage: js.UndefOr[Boolean] = js.native
   /**
     * Enable row insertion by setting insertRow to true, default is false.
     * If you enable row insertion, there's a button on the upper left side of table.
     */
-  var insertRow: js.UndefOr[Boolean] = js.undefined
+  var insertRow: js.UndefOr[Boolean] = js.native
   /**
     * This prop will enable/disable the keyboard navigation cell by cell on table. This is new
     * feature from 3.0.0. Default is false. You can have a basic and simple keyboard navigation
@@ -141,35 +139,35 @@ trait BootstrapTableProps extends Props[BootstrapTable] {
     * editing, expand row or selection row, you may get interested to see how they work well
     * together: In the advance cases, you need to configure keyBoardNav as an object.
     */
-  var keyBoardNav: js.UndefOr[Boolean | KeyboardNavigation] = js.undefined
+  var keyBoardNav: js.UndefOr[Boolean | KeyboardNavigation] = js.native
   /**
     * Use keyField to tell table which column is unique. This is same as isKey in <TableHeaderColumn>
     * Tips: react-bootstrap-table support data manipulation(CRUD) so that we need to fetch correct row by a unique column.
     *       You need choose one of configuration to set the key field: isKey or keyField in <BootstrapTable>.
     */
-  var keyField: js.UndefOr[String] = js.undefined
+  var keyField: js.UndefOr[String] = js.native
   /**
     * Set the maximum height of table. You need give a string with an unit(px) value like height.
     */
-  var maxHeight: js.UndefOr[String] = js.undefined
+  var maxHeight: js.UndefOr[String] = js.native
   /**
     * Enable multi search by multiColumnSearch, default is false.
     * If you want to use multi search, you must enable search at first.
     * Tips: Use space to delimited search text. EX: 3 4, which means match all 3 or 4 datas in table.
     */
-  var multiColumnSearch: js.UndefOr[Boolean] = js.undefined
+  var multiColumnSearch: js.UndefOr[Boolean] = js.native
   /**
     * Enable the multi sort on table and the number value is means max number of sorting column.
     */
-  var multiColumnSort: js.UndefOr[Double] = js.undefined
+  var multiColumnSort: js.UndefOr[Double] = js.native
   /**
     * For some options setting on this component, you can set the options attribute and give an object which contain following properties
     */
-  var options: js.UndefOr[Options[_]] = js.undefined
+  var options: js.UndefOr[Options[_]] = js.native
   /**
     * Enable pagination by setting pagination to true, default is false.
     */
-  var pagination: js.UndefOr[Boolean] = js.undefined
+  var pagination: js.UndefOr[Boolean] = js.native
   /**
     * Normally, react-bootstrap-table handles all the data sorting/filtering/pagination/etc itself internally.
     * If this is true, you need to handle all of those manually outside the table. By default it is false.
@@ -180,59 +178,59 @@ trait BootstrapTableProps extends Props[BootstrapTable] {
     * we have following functionality you can control: sort, pagination, cellEdit, insertRow, dropRow, filter, search,
     * exportCSV.
     */
-  var remote: js.UndefOr[Boolean | (js.Function1[/* remobeObj */ RemoteObjSpec, RemoteObjSpec])] = js.undefined
+  var remote: js.UndefOr[Boolean | (js.Function1[/* remobeObj */ RemoteObjSpec, RemoteObjSpec])] = js.native
   /**
     * Render react-s-alert notifications
     */
-  var renderAlert: js.UndefOr[Boolean] = js.undefined
+  var renderAlert: js.UndefOr[Boolean] = js.native
   /**
     * Specify a fix position for the vertical bar if it exist. Available is a number or Top and Bottom
     */
-  var scrollTop: js.UndefOr[Double | ScrollPosition] = js.undefined
+  var scrollTop: js.UndefOr[Double | ScrollPosition] = js.native
   /**
     * Enable search by setting search to true, default is false.
     * If enabled, there is a on the upper left side of the table. The default place holder is Search
     */
-  var search: js.UndefOr[Boolean] = js.undefined
+  var search: js.UndefOr[Boolean] = js.native
   /**
     * Set searchPlaceholder to change the placeholder in search field, default is Search.
     */
-  var searchPlaceholder: js.UndefOr[String] = js.undefined
+  var searchPlaceholder: js.UndefOr[String] = js.native
   /**
     * Enable row selection on table. SelectRow accept an object.
     */
-  var selectRow: js.UndefOr[SelectRow[_]] = js.undefined
+  var selectRow: js.UndefOr[SelectRow[_]] = js.native
   /**
     * Strict search. Set this flag to apply search terms so that only rows that contain ALL terms are included in the
     * search results.
     */
-  var strictSearch: js.UndefOr[Boolean] = js.undefined
+  var strictSearch: js.UndefOr[Boolean] = js.native
   /**
     * Enable striped by setting striped to true. Same as Bootstrap table class .table-striped, default is false.
     */
-  var striped: js.UndefOr[Boolean] = js.undefined
+  var striped: js.UndefOr[Boolean] = js.native
   /**
     * react-bootstrap-table separate two table element as header and body.
     * The tableBodyClass is for the table element in the body
     */
-  var tableBodyClass: js.UndefOr[String] = js.undefined
+  var tableBodyClass: js.UndefOr[String] = js.native
   /**
     * Add your own class names on the react-bs-table class
     */
-  var tableContainerClass: js.UndefOr[String] = js.undefined
+  var tableContainerClass: js.UndefOr[String] = js.native
   /**
     * Table footer custom class
     */
-  var tableFooterClass: js.UndefOr[String] = js.undefined
+  var tableFooterClass: js.UndefOr[String] = js.native
   /**
     * react-bootstrap-table separate two table element as header and body.
     * The tableHeaderClass is for the table element in the header
     */
-  var tableHeaderClass: js.UndefOr[String] = js.undefined
+  var tableHeaderClass: js.UndefOr[String] = js.native
   /**
     * Add css styles to the react-bs-table class.
     */
-  var tableStyle: js.UndefOr[CSSProperties] = js.undefined
+  var tableStyle: js.UndefOr[CSSProperties] = js.native
   /**
     * Assign the class name of row(tr). This attribute accept a string or function and function is a better way to do more customization.
     * If a string given, means the value will be presented as the row class.
@@ -242,135 +240,252 @@ trait BootstrapTableProps extends Props[BootstrapTable] {
     *      return rowIndex % 2 == 0 ? "tr-odd" : "tr-even"; // return a class name.
     *    }
     */
-  var trClassName: js.UndefOr[String | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, String])] = js.undefined
+  var trClassName: js.UndefOr[String | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, String])] = js.native
   /**
     * Set a style to be used for the table rows. Example: https://github.com/AllenFang/react-bootstrap-table/blob/master/examples/js/style/tr-style-table.js
     */
   var trStyle: js.UndefOr[
     CSSProperties | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, CSSProperties])
-  ] = js.undefined
+  ] = js.native
   /**
     * Bootstrap version to use, values include '3' or '4'. Defaults to '3'.
     */
-  var version: js.UndefOr[BootstrapVersion] = js.undefined
+  var version: js.UndefOr[BootstrapVersion] = js.native
   /**
     * Disable the automatic tabIndex for navigating between cells. This can be useful if you have a page with multiple
     * tables on the page, to stop the tab moving to another table. Default is false.
     */
-  var withoutTabIndex: js.UndefOr[Boolean] = js.undefined
+  var withoutTabIndex: js.UndefOr[Boolean] = js.native
 }
 
 object BootstrapTableProps {
   @scala.inline
-  def apply(
-    data: js.Array[js.Object],
-    autoCollapse: typings.reactBootstrapTable.anon.Filter = null,
-    bodyContainerClass: String = null,
-    bodyStyle: CSSProperties = null,
-    bordered: js.UndefOr[Boolean] = js.undefined,
-    cellEdit: CellEdit[_] = null,
-    children: ReactNode = null,
-    columnFilter: js.UndefOr[Boolean] = js.undefined,
-    condensed: js.UndefOr[Boolean] = js.undefined,
-    containerClass: String = null,
-    containerStyle: CSSProperties = null,
-    csvFileName: String | js.Function0[String] = null,
-    deleteRow: js.UndefOr[Boolean] = js.undefined,
-    excludeCSVHeader: js.UndefOr[Boolean] = js.undefined,
-    expandColumnOptions: ExpandColumnOptions = null,
-    expandComponent: /* row */ js.Any => String | ReactElement = null,
-    expandableRow: /* row */ js.Any => Boolean = null,
-    exportCSV: js.UndefOr[Boolean] = js.undefined,
-    fetchInfo: FetchInfo = null,
-    footer: js.UndefOr[Boolean] = js.undefined,
-    footerData: js.Array[js.Array[FooterData]] = null,
-    headerContainerClass: String = null,
-    headerStyle: CSSProperties = null,
-    height: String = null,
-    hover: js.UndefOr[Boolean] = js.undefined,
-    ignoreSinglePage: js.UndefOr[Boolean] = js.undefined,
-    insertRow: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
-    keyBoardNav: Boolean | KeyboardNavigation = null,
-    keyField: String = null,
-    maxHeight: String = null,
-    multiColumnSearch: js.UndefOr[Boolean] = js.undefined,
-    multiColumnSort: js.UndefOr[Double] = js.undefined,
-    options: Options[_] = null,
-    pagination: js.UndefOr[Boolean] = js.undefined,
-    ref: js.UndefOr[Null | LegacyRef[BootstrapTable]] = js.undefined,
-    remote: Boolean | (js.Function1[/* remobeObj */ RemoteObjSpec, RemoteObjSpec]) = null,
-    renderAlert: js.UndefOr[Boolean] = js.undefined,
-    scrollTop: Double | ScrollPosition = null,
-    search: js.UndefOr[Boolean] = js.undefined,
-    searchPlaceholder: String = null,
-    selectRow: SelectRow[_] = null,
-    strictSearch: js.UndefOr[Boolean] = js.undefined,
-    striped: js.UndefOr[Boolean] = js.undefined,
-    tableBodyClass: String = null,
-    tableContainerClass: String = null,
-    tableFooterClass: String = null,
-    tableHeaderClass: String = null,
-    tableStyle: CSSProperties = null,
-    trClassName: String | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, String]) = null,
-    trStyle: CSSProperties | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, CSSProperties]) = null,
-    version: BootstrapVersion = null,
-    withoutTabIndex: js.UndefOr[Boolean] = js.undefined
-  ): BootstrapTableProps = {
+  def apply(data: js.Array[js.Object]): BootstrapTableProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (autoCollapse != null) __obj.updateDynamic("autoCollapse")(autoCollapse.asInstanceOf[js.Any])
-    if (bodyContainerClass != null) __obj.updateDynamic("bodyContainerClass")(bodyContainerClass.asInstanceOf[js.Any])
-    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.get.asInstanceOf[js.Any])
-    if (cellEdit != null) __obj.updateDynamic("cellEdit")(cellEdit.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnFilter)) __obj.updateDynamic("columnFilter")(columnFilter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(condensed)) __obj.updateDynamic("condensed")(condensed.get.asInstanceOf[js.Any])
-    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (csvFileName != null) __obj.updateDynamic("csvFileName")(csvFileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteRow)) __obj.updateDynamic("deleteRow")(deleteRow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeCSVHeader)) __obj.updateDynamic("excludeCSVHeader")(excludeCSVHeader.get.asInstanceOf[js.Any])
-    if (expandColumnOptions != null) __obj.updateDynamic("expandColumnOptions")(expandColumnOptions.asInstanceOf[js.Any])
-    if (expandComponent != null) __obj.updateDynamic("expandComponent")(js.Any.fromFunction1(expandComponent))
-    if (expandableRow != null) __obj.updateDynamic("expandableRow")(js.Any.fromFunction1(expandableRow))
-    if (!js.isUndefined(exportCSV)) __obj.updateDynamic("exportCSV")(exportCSV.get.asInstanceOf[js.Any])
-    if (fetchInfo != null) __obj.updateDynamic("fetchInfo")(fetchInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.get.asInstanceOf[js.Any])
-    if (footerData != null) __obj.updateDynamic("footerData")(footerData.asInstanceOf[js.Any])
-    if (headerContainerClass != null) __obj.updateDynamic("headerContainerClass")(headerContainerClass.asInstanceOf[js.Any])
-    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hover)) __obj.updateDynamic("hover")(hover.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSinglePage)) __obj.updateDynamic("ignoreSinglePage")(ignoreSinglePage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertRow)) __obj.updateDynamic("insertRow")(insertRow.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (keyBoardNav != null) __obj.updateDynamic("keyBoardNav")(keyBoardNav.asInstanceOf[js.Any])
-    if (keyField != null) __obj.updateDynamic("keyField")(keyField.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiColumnSearch)) __obj.updateDynamic("multiColumnSearch")(multiColumnSearch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiColumnSort)) __obj.updateDynamic("multiColumnSort")(multiColumnSort.get.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAlert)) __obj.updateDynamic("renderAlert")(renderAlert.get.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.get.asInstanceOf[js.Any])
-    if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder.asInstanceOf[js.Any])
-    if (selectRow != null) __obj.updateDynamic("selectRow")(selectRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictSearch)) __obj.updateDynamic("strictSearch")(strictSearch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped.get.asInstanceOf[js.Any])
-    if (tableBodyClass != null) __obj.updateDynamic("tableBodyClass")(tableBodyClass.asInstanceOf[js.Any])
-    if (tableContainerClass != null) __obj.updateDynamic("tableContainerClass")(tableContainerClass.asInstanceOf[js.Any])
-    if (tableFooterClass != null) __obj.updateDynamic("tableFooterClass")(tableFooterClass.asInstanceOf[js.Any])
-    if (tableHeaderClass != null) __obj.updateDynamic("tableHeaderClass")(tableHeaderClass.asInstanceOf[js.Any])
-    if (tableStyle != null) __obj.updateDynamic("tableStyle")(tableStyle.asInstanceOf[js.Any])
-    if (trClassName != null) __obj.updateDynamic("trClassName")(trClassName.asInstanceOf[js.Any])
-    if (trStyle != null) __obj.updateDynamic("trStyle")(trStyle.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutTabIndex)) __obj.updateDynamic("withoutTabIndex")(withoutTabIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapTableProps]
   }
+  @scala.inline
+  implicit class BootstrapTablePropsOps[Self <: BootstrapTableProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataVarargs(value: js.Object*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[js.Object]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoCollapse(value: typings.reactBootstrapTable.anon.Filter): Self = this.set("autoCollapse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCollapse: Self = this.set("autoCollapse", js.undefined)
+    @scala.inline
+    def setBodyContainerClass(value: String): Self = this.set("bodyContainerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyContainerClass: Self = this.set("bodyContainerClass", js.undefined)
+    @scala.inline
+    def setBodyStyle(value: CSSProperties): Self = this.set("bodyStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyStyle: Self = this.set("bodyStyle", js.undefined)
+    @scala.inline
+    def setBordered(value: Boolean): Self = this.set("bordered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBordered: Self = this.set("bordered", js.undefined)
+    @scala.inline
+    def setCellEdit(value: CellEdit[_]): Self = this.set("cellEdit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellEdit: Self = this.set("cellEdit", js.undefined)
+    @scala.inline
+    def setColumnFilter(value: Boolean): Self = this.set("columnFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnFilter: Self = this.set("columnFilter", js.undefined)
+    @scala.inline
+    def setCondensed(value: Boolean): Self = this.set("condensed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondensed: Self = this.set("condensed", js.undefined)
+    @scala.inline
+    def setContainerClass(value: String): Self = this.set("containerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerClass: Self = this.set("containerClass", js.undefined)
+    @scala.inline
+    def setContainerStyle(value: CSSProperties): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    @scala.inline
+    def setCsvFileNameFunction0(value: () => String): Self = this.set("csvFileName", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCsvFileName(value: String | js.Function0[String]): Self = this.set("csvFileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvFileName: Self = this.set("csvFileName", js.undefined)
+    @scala.inline
+    def setDeleteRow(value: Boolean): Self = this.set("deleteRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteRow: Self = this.set("deleteRow", js.undefined)
+    @scala.inline
+    def setExcludeCSVHeader(value: Boolean): Self = this.set("excludeCSVHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeCSVHeader: Self = this.set("excludeCSVHeader", js.undefined)
+    @scala.inline
+    def setExpandColumnOptions(value: ExpandColumnOptions): Self = this.set("expandColumnOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandColumnOptions: Self = this.set("expandColumnOptions", js.undefined)
+    @scala.inline
+    def setExpandComponent(value: /* row */ js.Any => String | ReactElement): Self = this.set("expandComponent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteExpandComponent: Self = this.set("expandComponent", js.undefined)
+    @scala.inline
+    def setExpandableRow(value: /* row */ js.Any => Boolean): Self = this.set("expandableRow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteExpandableRow: Self = this.set("expandableRow", js.undefined)
+    @scala.inline
+    def setExportCSV(value: Boolean): Self = this.set("exportCSV", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportCSV: Self = this.set("exportCSV", js.undefined)
+    @scala.inline
+    def setFetchInfo(value: FetchInfo): Self = this.set("fetchInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchInfo: Self = this.set("fetchInfo", js.undefined)
+    @scala.inline
+    def setFooter(value: Boolean): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setFooterDataVarargs(value: js.Array[FooterData]*): Self = this.set("footerData", js.Array(value :_*))
+    @scala.inline
+    def setFooterData(value: js.Array[js.Array[FooterData]]): Self = this.set("footerData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterData: Self = this.set("footerData", js.undefined)
+    @scala.inline
+    def setHeaderContainerClass(value: String): Self = this.set("headerContainerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderContainerClass: Self = this.set("headerContainerClass", js.undefined)
+    @scala.inline
+    def setHeaderStyle(value: CSSProperties): Self = this.set("headerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderStyle: Self = this.set("headerStyle", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHover(value: Boolean): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+    @scala.inline
+    def setIgnoreSinglePage(value: Boolean): Self = this.set("ignoreSinglePage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreSinglePage: Self = this.set("ignoreSinglePage", js.undefined)
+    @scala.inline
+    def setInsertRow(value: Boolean): Self = this.set("insertRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertRow: Self = this.set("insertRow", js.undefined)
+    @scala.inline
+    def setKeyBoardNav(value: Boolean | KeyboardNavigation): Self = this.set("keyBoardNav", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyBoardNav: Self = this.set("keyBoardNav", js.undefined)
+    @scala.inline
+    def setKeyField(value: String): Self = this.set("keyField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyField: Self = this.set("keyField", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: String): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMultiColumnSearch(value: Boolean): Self = this.set("multiColumnSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiColumnSearch: Self = this.set("multiColumnSearch", js.undefined)
+    @scala.inline
+    def setMultiColumnSort(value: Double): Self = this.set("multiColumnSort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiColumnSort: Self = this.set("multiColumnSort", js.undefined)
+    @scala.inline
+    def setOptions(value: Options[_]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setPagination(value: Boolean): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagination: Self = this.set("pagination", js.undefined)
+    @scala.inline
+    def setRemoteFunction1(value: /* remobeObj */ RemoteObjSpec => RemoteObjSpec): Self = this.set("remote", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemote(value: Boolean | (js.Function1[/* remobeObj */ RemoteObjSpec, RemoteObjSpec])): Self = this.set("remote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemote: Self = this.set("remote", js.undefined)
+    @scala.inline
+    def setRenderAlert(value: Boolean): Self = this.set("renderAlert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderAlert: Self = this.set("renderAlert", js.undefined)
+    @scala.inline
+    def setScrollTop(value: Double | ScrollPosition): Self = this.set("scrollTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollTop: Self = this.set("scrollTop", js.undefined)
+    @scala.inline
+    def setSearch(value: Boolean): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch: Self = this.set("search", js.undefined)
+    @scala.inline
+    def setSearchPlaceholder(value: String): Self = this.set("searchPlaceholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchPlaceholder: Self = this.set("searchPlaceholder", js.undefined)
+    @scala.inline
+    def setSelectRow(value: SelectRow[_]): Self = this.set("selectRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectRow: Self = this.set("selectRow", js.undefined)
+    @scala.inline
+    def setStrictSearch(value: Boolean): Self = this.set("strictSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrictSearch: Self = this.set("strictSearch", js.undefined)
+    @scala.inline
+    def setStriped(value: Boolean): Self = this.set("striped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStriped: Self = this.set("striped", js.undefined)
+    @scala.inline
+    def setTableBodyClass(value: String): Self = this.set("tableBodyClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableBodyClass: Self = this.set("tableBodyClass", js.undefined)
+    @scala.inline
+    def setTableContainerClass(value: String): Self = this.set("tableContainerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableContainerClass: Self = this.set("tableContainerClass", js.undefined)
+    @scala.inline
+    def setTableFooterClass(value: String): Self = this.set("tableFooterClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableFooterClass: Self = this.set("tableFooterClass", js.undefined)
+    @scala.inline
+    def setTableHeaderClass(value: String): Self = this.set("tableHeaderClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableHeaderClass: Self = this.set("tableHeaderClass", js.undefined)
+    @scala.inline
+    def setTableStyle(value: CSSProperties): Self = this.set("tableStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableStyle: Self = this.set("tableStyle", js.undefined)
+    @scala.inline
+    def setTrClassNameFunction2(value: (/* rowData */ js.Any, /* rowIndex */ Double) => String): Self = this.set("trClassName", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTrClassName(value: String | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, String])): Self = this.set("trClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrClassName: Self = this.set("trClassName", js.undefined)
+    @scala.inline
+    def setTrStyleFunction2(value: (/* rowData */ js.Any, /* rowIndex */ Double) => CSSProperties): Self = this.set("trStyle", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTrStyle(value: CSSProperties | (js.Function2[/* rowData */ js.Any, /* rowIndex */ Double, CSSProperties])): Self = this.set("trStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrStyle: Self = this.set("trStyle", js.undefined)
+    @scala.inline
+    def setVersion(value: BootstrapVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setWithoutTabIndex(value: Boolean): Self = this.set("withoutTabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithoutTabIndex: Self = this.set("withoutTabIndex", js.undefined)
+  }
+  
 }
 

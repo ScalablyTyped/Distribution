@@ -12,9 +12,21 @@ import scala.scalajs.js.annotation._
 @js.native
 object execute extends js.Object {
   def apply(fetches: js.Array[SymbolicTensor], feedDict: FeedDict): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
+  def apply(
+    fetches: js.Array[SymbolicTensor],
+    feedDict: FeedDict,
+    kwargs: js.UndefOr[scala.Nothing],
+    probe: ExecutionProbe
+  ): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
   def apply(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Kwargs): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
   def apply(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Kwargs, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
   def apply(fetches: SymbolicTensor, feedDict: FeedDict): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
+  def apply(
+    fetches: SymbolicTensor,
+    feedDict: FeedDict,
+    kwargs: js.UndefOr[scala.Nothing],
+    probe: ExecutionProbe
+  ): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
   def apply(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Kwargs): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
   def apply(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Kwargs, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
 }

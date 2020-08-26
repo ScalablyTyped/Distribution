@@ -13,12 +13,34 @@ trait InputStyleProps extends js.Object {
 
 object InputStyleProps {
   @scala.inline
-  def apply(align: Alignments = null, size: Sizes = null, valid: ValidationStates = null): InputStyleProps = {
+  def apply(): InputStyleProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (valid != null) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputStyleProps]
   }
+  @scala.inline
+  implicit class InputStylePropsOps[Self <: InputStyleProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: Alignments): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setSize(value: Sizes): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setValid(value: ValidationStates): Self = this.set("valid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValid: Self = this.set("valid", js.undefined)
+  }
+  
 }
 

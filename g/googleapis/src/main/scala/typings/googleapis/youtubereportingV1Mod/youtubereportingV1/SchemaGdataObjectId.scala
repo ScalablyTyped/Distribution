@@ -25,12 +25,34 @@ trait SchemaGdataObjectId extends js.Object {
 
 object SchemaGdataObjectId {
   @scala.inline
-  def apply(bucketName: String = null, generation: String = null, objectName: String = null): SchemaGdataObjectId = {
+  def apply(): SchemaGdataObjectId = {
     val __obj = js.Dynamic.literal()
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
-    if (objectName != null) __obj.updateDynamic("objectName")(objectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGdataObjectId]
   }
+  @scala.inline
+  implicit class SchemaGdataObjectIdOps[Self <: SchemaGdataObjectId] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    @scala.inline
+    def setGeneration(value: String): Self = this.set("generation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeneration: Self = this.set("generation", js.undefined)
+    @scala.inline
+    def setObjectName(value: String): Self = this.set("objectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectName: Self = this.set("objectName", js.undefined)
+  }
+  
 }
 

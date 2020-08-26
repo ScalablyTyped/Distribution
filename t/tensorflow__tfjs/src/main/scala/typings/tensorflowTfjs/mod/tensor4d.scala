@@ -33,6 +33,7 @@ object tensor4d extends js.Object {
     */
   /** @doc {heading: 'Tensors', subheading: 'Creation'} */
   def apply(values: TensorLike4D): Tensor4D = js.native
+  def apply(values: TensorLike4D, shape: js.UndefOr[scala.Nothing], dtype: DataType): Tensor4D = js.native
   def apply(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double]): Tensor4D = js.native
   def apply(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double], dtype: DataType): Tensor4D = js.native
 }

@@ -48,26 +48,22 @@ class ODataRemoteEntitySource protected () extends QueryBasedRemoteEntitySource 
     * In version 8.11.0: introduced
     */
   def entitySet: String = js.native
-  def entitySet(newValue: String): js.Any = js.native
-  def key(): js.Any = js.native
-  def key(newValue: ODataKey): js.Any = js.native
+  def entitySet_=(newValue: String): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 8.11.0: introduced
     */
-  @JSName("key")
-  def key_Union: ODataKey | Null = js.native
+  def key: ODataKey | Null = js.native
+  def key_=(newValue: ODataKey | Null): Unit = js.native
   def remoteName: String = js.native
-  def remoteName(newValue: String): js.Any = js.native
-  def sourceDocument(): js.Any = js.native
-  def sourceDocument(newValue: IConsumedODataService): js.Any = js.native
-  def sourceDocumentQualifiedName: String | Null = js.native
+  def remoteName_=(newValue: String): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  @JSName("sourceDocument")
-  def sourceDocument_Union: IConsumedODataService | Null = js.native
+  def sourceDocument: IConsumedODataService | Null = js.native
+  def sourceDocumentQualifiedName: String | Null = js.native
+  def sourceDocument_=(newValue: IConsumedODataService | Null): Unit = js.native
 }
 
 /* static members */

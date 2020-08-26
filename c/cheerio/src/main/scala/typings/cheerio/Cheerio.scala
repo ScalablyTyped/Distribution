@@ -108,6 +108,7 @@ trait Cheerio
   def nextUntil(element: CheerioElement): Cheerio = js.native
   def nextUntil(element: CheerioElement, filter: String): Cheerio = js.native
   def nextUntil(element: Cheerio, filter: String): Cheerio = js.native
+  def nextUntil(selector: js.UndefOr[scala.Nothing], filter: String): Cheerio = js.native
   def nextUntil(selector: String): Cheerio = js.native
   def nextUntil(selector: String, filter: String): Cheerio = js.native
   def not(element: CheerioElement): Cheerio = js.native
@@ -123,6 +124,7 @@ trait Cheerio
   def parentsUntil(element: CheerioElement): Cheerio = js.native
   def parentsUntil(element: CheerioElement, filter: String): Cheerio = js.native
   def parentsUntil(element: Cheerio, filter: String): Cheerio = js.native
+  def parentsUntil(selector: js.UndefOr[scala.Nothing], filter: String): Cheerio = js.native
   def parentsUntil(selector: String): Cheerio = js.native
   def parentsUntil(selector: String, filter: String): Cheerio = js.native
   def prepend(content: String, contents: js.Any*): Cheerio = js.native
@@ -139,6 +141,7 @@ trait Cheerio
   def prevUntil(element: CheerioElement): Cheerio = js.native
   def prevUntil(element: CheerioElement, filter: String): Cheerio = js.native
   def prevUntil(element: Cheerio, filter: String): Cheerio = js.native
+  def prevUntil(selector: js.UndefOr[scala.Nothing], filter: String): Cheerio = js.native
   def prevUntil(selector: String): Cheerio = js.native
   def prevUntil(selector: String, filter: String): Cheerio = js.native
   def prop(name: String): js.Any = js.native

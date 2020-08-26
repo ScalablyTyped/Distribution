@@ -25,16 +25,34 @@ trait SchemaExportStats extends js.Object {
 
 object SchemaExportStats {
   @scala.inline
-  def apply(
-    exportedArtifactCount: String = null,
-    sizeInBytes: String = null,
-    totalArtifactCount: String = null
-  ): SchemaExportStats = {
+  def apply(): SchemaExportStats = {
     val __obj = js.Dynamic.literal()
-    if (exportedArtifactCount != null) __obj.updateDynamic("exportedArtifactCount")(exportedArtifactCount.asInstanceOf[js.Any])
-    if (sizeInBytes != null) __obj.updateDynamic("sizeInBytes")(sizeInBytes.asInstanceOf[js.Any])
-    if (totalArtifactCount != null) __obj.updateDynamic("totalArtifactCount")(totalArtifactCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExportStats]
   }
+  @scala.inline
+  implicit class SchemaExportStatsOps[Self <: SchemaExportStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExportedArtifactCount(value: String): Self = this.set("exportedArtifactCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportedArtifactCount: Self = this.set("exportedArtifactCount", js.undefined)
+    @scala.inline
+    def setSizeInBytes(value: String): Self = this.set("sizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeInBytes: Self = this.set("sizeInBytes", js.undefined)
+    @scala.inline
+    def setTotalArtifactCount(value: String): Self = this.set("totalArtifactCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalArtifactCount: Self = this.set("totalArtifactCount", js.undefined)
+  }
+  
 }
 

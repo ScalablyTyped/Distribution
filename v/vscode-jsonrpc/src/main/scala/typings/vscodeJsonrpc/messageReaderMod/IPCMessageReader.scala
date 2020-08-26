@@ -1,7 +1,7 @@
 package typings.vscodeJsonrpc.messageReaderMod
 
-import typings.node.NodeJS.Process
 import typings.node.childProcessMod.ChildProcess
+import typings.node.processMod.global.NodeJS.Process
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 class IPCMessageReader protected ()
   extends AbstractMessageReader
      with MessageReader {
-  def this(process: Process) = this()
   def this(process: ChildProcess) = this()
+  def this(process: Process) = this()
   var process: js.Any = js.native
   /* InferMemberOverrides */
   override def dispose(): Unit = js.native

@@ -46,26 +46,54 @@ trait Encryption extends js.Object {
 
 object Encryption {
   @scala.inline
-  def apply(
-    Algorithm: Algorithm,
-    RoleArn: string,
-    ConstantInitializationVector: string = null,
-    DeviceId: string = null,
-    KeyType: KeyType = null,
-    Region: string = null,
-    ResourceId: string = null,
-    SecretArn: string = null,
-    Url: string = null
-  ): Encryption = {
+  def apply(Algorithm: Algorithm, RoleArn: string): Encryption = {
     val __obj = js.Dynamic.literal(Algorithm = Algorithm.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-    if (ConstantInitializationVector != null) __obj.updateDynamic("ConstantInitializationVector")(ConstantInitializationVector.asInstanceOf[js.Any])
-    if (DeviceId != null) __obj.updateDynamic("DeviceId")(DeviceId.asInstanceOf[js.Any])
-    if (KeyType != null) __obj.updateDynamic("KeyType")(KeyType.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (SecretArn != null) __obj.updateDynamic("SecretArn")(SecretArn.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encryption]
   }
+  @scala.inline
+  implicit class EncryptionOps[Self <: Encryption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithm(value: Algorithm): Self = this.set("Algorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConstantInitializationVector(value: string): Self = this.set("ConstantInitializationVector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstantInitializationVector: Self = this.set("ConstantInitializationVector", js.undefined)
+    @scala.inline
+    def setDeviceId(value: string): Self = this.set("DeviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceId: Self = this.set("DeviceId", js.undefined)
+    @scala.inline
+    def setKeyType(value: KeyType): Self = this.set("KeyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyType: Self = this.set("KeyType", js.undefined)
+    @scala.inline
+    def setRegion(value: string): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setResourceId(value: string): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setSecretArn(value: string): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretArn: Self = this.set("SecretArn", js.undefined)
+    @scala.inline
+    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

@@ -18,10 +18,28 @@ trait StopDeploymentInput extends js.Object {
 
 object StopDeploymentInput {
   @scala.inline
-  def apply(deploymentId: DeploymentId, autoRollbackEnabled: js.UndefOr[NullableBoolean] = js.undefined): StopDeploymentInput = {
+  def apply(deploymentId: DeploymentId): StopDeploymentInput = {
     val __obj = js.Dynamic.literal(deploymentId = deploymentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRollbackEnabled)) __obj.updateDynamic("autoRollbackEnabled")(autoRollbackEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopDeploymentInput]
   }
+  @scala.inline
+  implicit class StopDeploymentInputOps[Self <: StopDeploymentInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeploymentId(value: DeploymentId): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoRollbackEnabled(value: NullableBoolean): Self = this.set("autoRollbackEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRollbackEnabled: Self = this.set("autoRollbackEnabled", js.undefined)
+  }
+  
 }
 

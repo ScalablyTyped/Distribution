@@ -75,13 +75,22 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
     * set of marks.
     */
   def create(): ProsemirrorNode[S] = js.native
+  def create(attrs: js.UndefOr[scala.Nothing], content: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def create(attrs: js.UndefOr[scala.Nothing], content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
+  def create(attrs: js.UndefOr[scala.Nothing], content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def create(attrs: js.UndefOr[scala.Nothing], content: Fragment[S]): ProsemirrorNode[S] = js.native
+  def create(attrs: js.UndefOr[scala.Nothing], content: Fragment[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def create(attrs: js.UndefOr[scala.Nothing], content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
+  def create(attrs: js.UndefOr[scala.Nothing], content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def create(attrs: StringDictionary[js.Any]): ProsemirrorNode[S] = js.native
+  def create(attrs: StringDictionary[js.Any], content: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def create(attrs: StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
   def create(attrs: StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def create(attrs: StringDictionary[js.Any], content: Fragment[S]): ProsemirrorNode[S] = js.native
   def create(attrs: StringDictionary[js.Any], content: Fragment[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def create(attrs: StringDictionary[js.Any], content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
   def create(attrs: StringDictionary[js.Any], content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def create(attrs: Null, content: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def create(attrs: Null, content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
   def create(attrs: Null, content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def create(attrs: Null, content: Fragment[S]): ProsemirrorNode[S] = js.native
@@ -97,13 +106,22 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
     * `Fragment.empty` as content.
     */
   def createAndFill(): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+  def createAndFill(attrs: js.UndefOr[scala.Nothing], content: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+  def createAndFill(attrs: js.UndefOr[scala.Nothing], content: js.Array[ProsemirrorNode[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+  def createAndFill(attrs: js.UndefOr[scala.Nothing], content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+  def createAndFill(attrs: js.UndefOr[scala.Nothing], content: Fragment[S]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+  def createAndFill(attrs: js.UndefOr[scala.Nothing], content: Fragment[S], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+  def createAndFill(attrs: js.UndefOr[scala.Nothing], content: ProsemirrorNode[S]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+  def createAndFill(attrs: js.UndefOr[scala.Nothing], content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: StringDictionary[js.Any]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+  def createAndFill(attrs: StringDictionary[js.Any], content: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: StringDictionary[js.Any], content: Fragment[S]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: StringDictionary[js.Any], content: Fragment[S], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: StringDictionary[js.Any], content: ProsemirrorNode[S]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: StringDictionary[js.Any], content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+  def createAndFill(attrs: Null, content: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: Null, content: js.Array[ProsemirrorNode[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: Null, content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
   def createAndFill(attrs: Null, content: Fragment[S]): js.UndefOr[ProsemirrorNode[S] | Null] = js.native
@@ -116,13 +134,22 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
     * if it doesn't match.
     */
   def createChecked(): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: js.UndefOr[scala.Nothing], content: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: js.UndefOr[scala.Nothing], content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: js.UndefOr[scala.Nothing], content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: js.UndefOr[scala.Nothing], content: Fragment[S]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: js.UndefOr[scala.Nothing], content: Fragment[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: js.UndefOr[scala.Nothing], content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: js.UndefOr[scala.Nothing], content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: StringDictionary[js.Any]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: StringDictionary[js.Any], content: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: StringDictionary[js.Any], content: Fragment[S]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: StringDictionary[js.Any], content: Fragment[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: StringDictionary[js.Any], content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: StringDictionary[js.Any], content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: Null, content: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: Null, content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: Null, content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   def createChecked(attrs: Null, content: Fragment[S]): ProsemirrorNode[S] = js.native

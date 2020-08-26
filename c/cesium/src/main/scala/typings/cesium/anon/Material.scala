@@ -6,48 +6,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Material extends js.Object {
-  var bottomRadius: js.UndefOr[Property] = js.undefined
-  var fill: js.UndefOr[Property] = js.undefined
-  var length: js.UndefOr[Property] = js.undefined
-  var material: js.UndefOr[MaterialProperty] = js.undefined
-  var numberOfVerticalLines: js.UndefOr[Property] = js.undefined
-  var outline: js.UndefOr[Property] = js.undefined
-  var outlineColor: js.UndefOr[Property] = js.undefined
-  var outlineWidth: js.UndefOr[Property] = js.undefined
-  var show: js.UndefOr[Property] = js.undefined
-  var slices: js.UndefOr[Property] = js.undefined
-  var topRadius: js.UndefOr[Property] = js.undefined
+  var bottomRadius: js.UndefOr[Property] = js.native
+  var fill: js.UndefOr[Property] = js.native
+  var length: js.UndefOr[Property] = js.native
+  var material: js.UndefOr[MaterialProperty] = js.native
+  var numberOfVerticalLines: js.UndefOr[Property] = js.native
+  var outline: js.UndefOr[Property] = js.native
+  var outlineColor: js.UndefOr[Property] = js.native
+  var outlineWidth: js.UndefOr[Property] = js.native
+  var show: js.UndefOr[Property] = js.native
+  var slices: js.UndefOr[Property] = js.native
+  var topRadius: js.UndefOr[Property] = js.native
 }
 
 object Material {
   @scala.inline
-  def apply(
-    bottomRadius: Property = null,
-    fill: Property = null,
-    length: Property = null,
-    material: MaterialProperty = null,
-    numberOfVerticalLines: Property = null,
-    outline: Property = null,
-    outlineColor: Property = null,
-    outlineWidth: Property = null,
-    show: Property = null,
-    slices: Property = null,
-    topRadius: Property = null
-  ): Material = {
+  def apply(): Material = {
     val __obj = js.Dynamic.literal()
-    if (bottomRadius != null) __obj.updateDynamic("bottomRadius")(bottomRadius.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (numberOfVerticalLines != null) __obj.updateDynamic("numberOfVerticalLines")(numberOfVerticalLines.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (slices != null) __obj.updateDynamic("slices")(slices.asInstanceOf[js.Any])
-    if (topRadius != null) __obj.updateDynamic("topRadius")(topRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[Material]
   }
+  @scala.inline
+  implicit class MaterialOps[Self <: Material] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBottomRadius(value: Property): Self = this.set("bottomRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomRadius: Self = this.set("bottomRadius", js.undefined)
+    @scala.inline
+    def setFill(value: Property): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setLength(value: Property): Self = this.set("length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLength: Self = this.set("length", js.undefined)
+    @scala.inline
+    def setMaterial(value: MaterialProperty): Self = this.set("material", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaterial: Self = this.set("material", js.undefined)
+    @scala.inline
+    def setNumberOfVerticalLines(value: Property): Self = this.set("numberOfVerticalLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfVerticalLines: Self = this.set("numberOfVerticalLines", js.undefined)
+    @scala.inline
+    def setOutline(value: Property): Self = this.set("outline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutline: Self = this.set("outline", js.undefined)
+    @scala.inline
+    def setOutlineColor(value: Property): Self = this.set("outlineColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlineColor: Self = this.set("outlineColor", js.undefined)
+    @scala.inline
+    def setOutlineWidth(value: Property): Self = this.set("outlineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlineWidth: Self = this.set("outlineWidth", js.undefined)
+    @scala.inline
+    def setShow(value: Property): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setSlices(value: Property): Self = this.set("slices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlices: Self = this.set("slices", js.undefined)
+    @scala.inline
+    def setTopRadius(value: Property): Self = this.set("topRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopRadius: Self = this.set("topRadius", js.undefined)
+  }
+  
 }
 

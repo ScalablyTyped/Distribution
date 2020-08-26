@@ -22,6 +22,7 @@ class User protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: UserArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: UserArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN assigned by AWS for this user.
@@ -29,8 +30,8 @@ class User protected () extends CustomResource {
   val arn: Output_[String] = js.native
   /**
     * When destroying this user, destroy even if it
-    * has non-this provider-managed IAM access keys, login profile or MFA devices. Without `forceDestroy`
-    * a user with non-this provider-managed access keys and login profile will fail to be destroyed.
+    * has non-provider-managed IAM access keys, login profile or MFA devices. Without `forceDestroy`
+    * a user with non-provider-managed access keys and login profile will fail to be destroyed.
     */
   val forceDestroy: Output_[js.UndefOr[Boolean]] = js.native
   /**
@@ -48,7 +49,7 @@ class User protected () extends CustomResource {
   /**
     * Key-value mapping of tags for the IAM user
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The [unique ID][1] assigned by AWS.
     */
@@ -66,8 +67,10 @@ object User extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): User = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): User = js.native
   def get(name: String, id: Input[ID], state: UserState): User = js.native
   def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): User = js.native
   /**

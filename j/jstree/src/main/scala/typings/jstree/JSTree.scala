@@ -81,7 +81,26 @@ trait JSTree extends JQuery {
     * @param  {Boolean} force_reload - if true force reloads node (AP - original comment missing in source code)
     */
   def _load_nodes(nodes: js.Array[_]): Unit = js.native
+  def _load_nodes(
+    nodes: js.Array[_],
+    callback: js.UndefOr[scala.Nothing],
+    is_callback: js.UndefOr[scala.Nothing],
+    force_reload: Boolean
+  ): Unit = js.native
+  def _load_nodes(nodes: js.Array[_], callback: js.UndefOr[scala.Nothing], is_callback: Boolean): Unit = js.native
+  def _load_nodes(
+    nodes: js.Array[_],
+    callback: js.UndefOr[scala.Nothing],
+    is_callback: Boolean,
+    force_reload: Boolean
+  ): Unit = js.native
   def _load_nodes(nodes: js.Array[_], callback: js.Function1[/* nodes */ js.Array[_], Unit]): Unit = js.native
+  def _load_nodes(
+    nodes: js.Array[_],
+    callback: js.Function1[/* nodes */ js.Array[_], Unit],
+    is_callback: js.UndefOr[scala.Nothing],
+    force_reload: Boolean
+  ): Unit = js.native
   def _load_nodes(nodes: js.Array[_], callback: js.Function1[/* nodes */ js.Array[_], Unit], is_callback: Boolean): Unit = js.native
   def _load_nodes(
     nodes: js.Array[_],
@@ -122,6 +141,7 @@ trait JSTree extends JQuery {
     * @return {String} the ID of the object added to the model
     */
   def _parse_model_from_flat_json(d: js.Any): String = js.native
+  def _parse_model_from_flat_json(d: js.Any, p: js.UndefOr[scala.Nothing], ps: js.Array[_]): String = js.native
   def _parse_model_from_flat_json(d: js.Any, p: String): String = js.native
   def _parse_model_from_flat_json(d: js.Any, p: String, ps: js.Array[_]): String = js.native
   /**
@@ -134,6 +154,7 @@ trait JSTree extends JQuery {
     * @return {String} the ID of the object added to the model
     */
   def _parse_model_from_html(d: JQuery): String = js.native
+  def _parse_model_from_html(d: JQuery, p: js.UndefOr[scala.Nothing], ps: js.Array[_]): String = js.native
   def _parse_model_from_html(d: JQuery, p: String): String = js.native
   def _parse_model_from_html(d: JQuery, p: String, ps: js.Array[_]): String = js.native
   /**
@@ -146,6 +167,7 @@ trait JSTree extends JQuery {
     * @return {String} the ID of the object added to the model
     */
   def _parse_model_from_json(d: js.Any): String = js.native
+  def _parse_model_from_json(d: js.Any, p: js.UndefOr[scala.Nothing], ps: js.Array[_]): String = js.native
   def _parse_model_from_json(d: js.Any, p: String): String = js.native
   def _parse_model_from_json(d: js.Any, p: String, ps: js.Array[_]): String = js.native
   /**
@@ -265,6 +287,7 @@ trait JSTree extends JQuery {
     * @trigger close_all.jstree
     */
   def close_all(): Unit = js.native
+  def close_all(obj: js.UndefOr[scala.Nothing], animation: Double): Unit = js.native
   def close_all(obj: js.Any): Unit = js.native
   def close_all(obj: js.Any, animation: Double): Unit = js.native
   /**
@@ -309,7 +332,184 @@ trait JSTree extends JQuery {
     * @trigger model.jstree copy_node.jstree
     */
   def copy_node(obj: js.Any, par: js.Any): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit]
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: Boolean,
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: Boolean,
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: Boolean,
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
   def copy_node(obj: js.Any, par: js.Any, pos: js.Any): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(obj: js.Any, par: js.Any, pos: js.Any, callback: js.UndefOr[scala.Nothing], is_loaded: Boolean): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
   def copy_node(
     obj: js.Any,
     par: js.Any,
@@ -321,7 +521,42 @@ trait JSTree extends JQuery {
     par: js.Any,
     pos: js.Any,
     callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
     is_loaded: Boolean
+  ): Unit = js.native
+  def copy_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: Boolean,
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
   ): Unit = js.native
   def copy_node(
     obj: js.Any,
@@ -352,9 +587,106 @@ trait JSTree extends JQuery {
     * @trigger model.jstree, create_node.jstree
     */
   def create_node(): String = js.native
+  def create_node(
+    par: js.UndefOr[scala.Nothing],
+    node: js.UndefOr[scala.Nothing],
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean
+  ): String = js.native
+  def create_node(
+    par: js.UndefOr[scala.Nothing],
+    node: js.UndefOr[scala.Nothing],
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Any
+  ): String = js.native
+  def create_node(
+    par: js.UndefOr[scala.Nothing],
+    node: js.UndefOr[scala.Nothing],
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Any,
+    is_loaded: Boolean
+  ): String = js.native
+  def create_node(par: js.UndefOr[scala.Nothing], node: js.UndefOr[scala.Nothing], pos: js.Any): String = js.native
+  def create_node(
+    par: js.UndefOr[scala.Nothing],
+    node: js.UndefOr[scala.Nothing],
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean
+  ): String = js.native
+  def create_node(par: js.UndefOr[scala.Nothing], node: js.UndefOr[scala.Nothing], pos: js.Any, callback: js.Any): String = js.native
+  def create_node(
+    par: js.UndefOr[scala.Nothing],
+    node: js.UndefOr[scala.Nothing],
+    pos: js.Any,
+    callback: js.Any,
+    is_loaded: Boolean
+  ): String = js.native
+  def create_node(par: js.UndefOr[scala.Nothing], node: js.Any): String = js.native
+  def create_node(
+    par: js.UndefOr[scala.Nothing],
+    node: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean
+  ): String = js.native
+  def create_node(par: js.UndefOr[scala.Nothing], node: js.Any, pos: js.UndefOr[scala.Nothing], callback: js.Any): String = js.native
+  def create_node(
+    par: js.UndefOr[scala.Nothing],
+    node: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Any,
+    is_loaded: Boolean
+  ): String = js.native
+  def create_node(par: js.UndefOr[scala.Nothing], node: js.Any, pos: js.Any): String = js.native
+  def create_node(
+    par: js.UndefOr[scala.Nothing],
+    node: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean
+  ): String = js.native
+  def create_node(par: js.UndefOr[scala.Nothing], node: js.Any, pos: js.Any, callback: js.Any): String = js.native
+  def create_node(par: js.UndefOr[scala.Nothing], node: js.Any, pos: js.Any, callback: js.Any, is_loaded: Boolean): String = js.native
   def create_node(par: js.Any): String = js.native
+  def create_node(
+    par: js.Any,
+    node: js.UndefOr[scala.Nothing],
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean
+  ): String = js.native
+  def create_node(par: js.Any, node: js.UndefOr[scala.Nothing], pos: js.UndefOr[scala.Nothing], callback: js.Any): String = js.native
+  def create_node(
+    par: js.Any,
+    node: js.UndefOr[scala.Nothing],
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Any,
+    is_loaded: Boolean
+  ): String = js.native
+  def create_node(par: js.Any, node: js.UndefOr[scala.Nothing], pos: js.Any): String = js.native
+  def create_node(
+    par: js.Any,
+    node: js.UndefOr[scala.Nothing],
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean
+  ): String = js.native
+  def create_node(par: js.Any, node: js.UndefOr[scala.Nothing], pos: js.Any, callback: js.Any): String = js.native
+  def create_node(par: js.Any, node: js.UndefOr[scala.Nothing], pos: js.Any, callback: js.Any, is_loaded: Boolean): String = js.native
   def create_node(par: js.Any, node: js.Any): String = js.native
+  def create_node(
+    par: js.Any,
+    node: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean
+  ): String = js.native
+  def create_node(par: js.Any, node: js.Any, pos: js.UndefOr[scala.Nothing], callback: js.Any): String = js.native
+  def create_node(par: js.Any, node: js.Any, pos: js.UndefOr[scala.Nothing], callback: js.Any, is_loaded: Boolean): String = js.native
   def create_node(par: js.Any, node: js.Any, pos: js.Any): String = js.native
+  def create_node(par: js.Any, node: js.Any, pos: js.Any, callback: js.UndefOr[scala.Nothing], is_loaded: Boolean): String = js.native
   def create_node(par: js.Any, node: js.Any, pos: js.Any, callback: js.Any): String = js.native
   def create_node(par: js.Any, node: js.Any, pos: js.Any, callback: js.Any, is_loaded: Boolean): String = js.native
   /**
@@ -396,6 +728,7 @@ trait JSTree extends JQuery {
     * @trigger deselect_node.jstree, changed.jstree
     */
   def deselect_node(obj: js.Any): Unit = js.native
+  def deselect_node(obj: js.Any, supress_event: js.UndefOr[scala.Nothing], e: js.Any): Unit = js.native
   def deselect_node(obj: js.Any, supress_event: Boolean): Unit = js.native
   def deselect_node(obj: js.Any, supress_event: Boolean, e: js.Any): Unit = js.native
   /**
@@ -437,6 +770,11 @@ trait JSTree extends JQuery {
     * and a boolean indicating if the user cancelled the edit. You can access the node's title using .text
     */
   def edit(obj: js.Any): Unit = js.native
+  def edit(
+    obj: js.Any,
+    default_text: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* status */ Boolean, /* canceled */ Boolean, Unit]
+  ): Unit = js.native
   def edit(obj: js.Any, default_text: String): Unit = js.native
   def edit(
     obj: js.Any,
@@ -549,7 +887,11 @@ trait JSTree extends JQuery {
     * @return {Object}
     */
   def get_json(): js.Any = js.native
+  def get_json(obj: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], flat: Boolean): js.Any = js.native
+  def get_json(obj: js.UndefOr[scala.Nothing], options: JSTreeGetJsonOptions): js.Any = js.native
+  def get_json(obj: js.UndefOr[scala.Nothing], options: JSTreeGetJsonOptions, flat: Boolean): js.Any = js.native
   def get_json(obj: js.Any): js.Any = js.native
+  def get_json(obj: js.Any, options: js.UndefOr[scala.Nothing], flat: Boolean): js.Any = js.native
   def get_json(obj: js.Any, options: JSTreeGetJsonOptions): js.Any = js.native
   def get_json(obj: js.Any, options: JSTreeGetJsonOptions, flat: Boolean): js.Any = js.native
   /**
@@ -586,6 +928,7 @@ trait JSTree extends JQuery {
     * @return {mixed}
     */
   def get_path(obj: js.Any): js.Any = js.native
+  def get_path(obj: js.Any, glue: js.UndefOr[scala.Nothing], ids: Boolean): js.Any = js.native
   def get_path(obj: js.Any, glue: String): js.Any = js.native
   def get_path(obj: js.Any, glue: String, ids: Boolean): js.Any = js.native
   /**
@@ -866,7 +1209,184 @@ trait JSTree extends JQuery {
     * @trigger move_node.jstree
     */
   def move_node(obj: js.Any, par: js.Any): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit]
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: Boolean,
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: Boolean,
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: Boolean,
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
   def move_node(obj: js.Any, par: js.Any, pos: js.Any): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(obj: js.Any, par: js.Any, pos: js.Any, callback: js.UndefOr[scala.Nothing], is_loaded: Boolean): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    is_loaded: Boolean,
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
   def move_node(
     obj: js.Any,
     par: js.Any,
@@ -878,7 +1398,42 @@ trait JSTree extends JQuery {
     par: js.Any,
     pos: js.Any,
     callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: js.UndefOr[scala.Nothing],
+    skip_redraw: Boolean,
+    origin: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
     is_loaded: Boolean
+  ): Unit = js.native
+  def move_node(
+    obj: js.Any,
+    par: js.Any,
+    pos: js.Any,
+    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    is_loaded: Boolean,
+    skip_redraw: js.UndefOr[scala.Nothing],
+    origin: Boolean
   ): Unit = js.native
   def move_node(
     obj: js.Any,
@@ -906,7 +1461,11 @@ trait JSTree extends JQuery {
     * @trigger open_all.jstree
     */
   def open_all(): Unit = js.native
+  def open_all(obj: js.UndefOr[scala.Nothing], animation: js.UndefOr[scala.Nothing], original_obj: js.Any): Unit = js.native
+  def open_all(obj: js.UndefOr[scala.Nothing], animation: Double): Unit = js.native
+  def open_all(obj: js.UndefOr[scala.Nothing], animation: Double, original_obj: js.Any): Unit = js.native
   def open_all(obj: js.Any): Unit = js.native
+  def open_all(obj: js.Any, animation: js.UndefOr[scala.Nothing], original_obj: js.Any): Unit = js.native
   def open_all(obj: js.Any, animation: Double): Unit = js.native
   def open_all(obj: js.Any, animation: Double, original_obj: js.Any): Unit = js.native
   /**
@@ -919,6 +1478,7 @@ trait JSTree extends JQuery {
     * @trigger open_node.jstree, after_open.jstree, before_open.jstree
     */
   def open_node(obj: js.Any): Unit = js.native
+  def open_node(obj: js.Any, callback: js.UndefOr[scala.Nothing], animation: js.Any): Unit = js.native
   def open_node(obj: js.Any, callback: js.Any): Unit = js.native
   def open_node(obj: js.Any, callback: js.Any, animation: js.Any): Unit = js.native
   /**
@@ -965,6 +1525,7 @@ trait JSTree extends JQuery {
     * @trigger refresh.jstree
     */
   def refresh(): Unit = js.native
+  def refresh(skip_loading: js.UndefOr[scala.Nothing], forget_state: js.Any): Unit = js.native
   def refresh(skip_loading: Boolean): Unit = js.native
   def refresh(skip_loading: Boolean, forget_state: js.Any): Unit = js.native
   /**
@@ -1014,9 +1575,187 @@ trait JSTree extends JQuery {
     * @trigger search.jstree
     */
   def search(str: String): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.UndefOr[scala.Nothing],
+    append: js.UndefOr[scala.Nothing],
+    show_only_matches_children: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.UndefOr[scala.Nothing],
+    append: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.UndefOr[scala.Nothing],
+    append: Boolean,
+    show_only_matches_children: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.Any
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.Any,
+    append: js.UndefOr[scala.Nothing],
+    show_only_matches_children: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.Any,
+    append: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.Any,
+    append: Boolean,
+    show_only_matches_children: Boolean
+  ): Unit = js.native
+  def search(str: String, skip_async: js.UndefOr[scala.Nothing], show_only_matches: Boolean): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: Boolean,
+    inside: js.UndefOr[scala.Nothing],
+    append: js.UndefOr[scala.Nothing],
+    show_only_matches_children: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: Boolean,
+    inside: js.UndefOr[scala.Nothing],
+    append: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: Boolean,
+    inside: js.UndefOr[scala.Nothing],
+    append: Boolean,
+    show_only_matches_children: Boolean
+  ): Unit = js.native
+  def search(str: String, skip_async: js.UndefOr[scala.Nothing], show_only_matches: Boolean, inside: js.Any): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: Boolean,
+    inside: js.Any,
+    append: js.UndefOr[scala.Nothing],
+    show_only_matches_children: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: Boolean,
+    inside: js.Any,
+    append: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: js.UndefOr[scala.Nothing],
+    show_only_matches: Boolean,
+    inside: js.Any,
+    append: Boolean,
+    show_only_matches_children: Boolean
+  ): Unit = js.native
   def search(str: String, skip_async: Boolean): Unit = js.native
+  def search(
+    str: String,
+    skip_async: Boolean,
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.UndefOr[scala.Nothing],
+    append: js.UndefOr[scala.Nothing],
+    show_only_matches_children: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: Boolean,
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.UndefOr[scala.Nothing],
+    append: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: Boolean,
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.UndefOr[scala.Nothing],
+    append: Boolean,
+    show_only_matches_children: Boolean
+  ): Unit = js.native
+  def search(str: String, skip_async: Boolean, show_only_matches: js.UndefOr[scala.Nothing], inside: js.Any): Unit = js.native
+  def search(
+    str: String,
+    skip_async: Boolean,
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.Any,
+    append: js.UndefOr[scala.Nothing],
+    show_only_matches_children: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: Boolean,
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.Any,
+    append: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: Boolean,
+    show_only_matches: js.UndefOr[scala.Nothing],
+    inside: js.Any,
+    append: Boolean,
+    show_only_matches_children: Boolean
+  ): Unit = js.native
   def search(str: String, skip_async: Boolean, show_only_matches: Boolean): Unit = js.native
+  def search(
+    str: String,
+    skip_async: Boolean,
+    show_only_matches: Boolean,
+    inside: js.UndefOr[scala.Nothing],
+    append: js.UndefOr[scala.Nothing],
+    show_only_matches_children: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: Boolean,
+    show_only_matches: Boolean,
+    inside: js.UndefOr[scala.Nothing],
+    append: Boolean
+  ): Unit = js.native
+  def search(
+    str: String,
+    skip_async: Boolean,
+    show_only_matches: Boolean,
+    inside: js.UndefOr[scala.Nothing],
+    append: Boolean,
+    show_only_matches_children: Boolean
+  ): Unit = js.native
   def search(str: String, skip_async: Boolean, show_only_matches: Boolean, inside: js.Any): Unit = js.native
+  def search(
+    str: String,
+    skip_async: Boolean,
+    show_only_matches: Boolean,
+    inside: js.Any,
+    append: js.UndefOr[scala.Nothing],
+    show_only_matches_children: Boolean
+  ): Unit = js.native
   def search(str: String, skip_async: Boolean, show_only_matches: Boolean, inside: js.Any, append: Boolean): Unit = js.native
   def search(
     str: String,
@@ -1043,7 +1782,16 @@ trait JSTree extends JQuery {
     * @trigger select_node.jstree, changed.jstree
     */
   def select_node(obj: js.Any): js.Any = js.native
+  def select_node(
+    obj: js.Any,
+    supress_event: js.UndefOr[scala.Nothing],
+    prevent_open: js.UndefOr[scala.Nothing],
+    e: js.Any
+  ): js.Any = js.native
+  def select_node(obj: js.Any, supress_event: js.UndefOr[scala.Nothing], prevent_open: Boolean): js.Any = js.native
+  def select_node(obj: js.Any, supress_event: js.UndefOr[scala.Nothing], prevent_open: Boolean, e: js.Any): js.Any = js.native
   def select_node(obj: js.Any, supress_event: Boolean): js.Any = js.native
+  def select_node(obj: js.Any, supress_event: Boolean, prevent_open: js.UndefOr[scala.Nothing], e: js.Any): js.Any = js.native
   def select_node(obj: js.Any, supress_event: Boolean, prevent_open: Boolean): js.Any = js.native
   def select_node(obj: js.Any, supress_event: Boolean, prevent_open: Boolean, e: js.Any): js.Any = js.native
   /**
@@ -1131,7 +1879,11 @@ trait JSTree extends JQuery {
     * @trigger show_contextmenu.jstree
     */
   def show_contextmenu(obj: js.Any): Unit = js.native
+  def show_contextmenu(obj: js.Any, x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], e: js.Any): Unit = js.native
+  def show_contextmenu(obj: js.Any, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def show_contextmenu(obj: js.Any, x: js.UndefOr[scala.Nothing], y: Double, e: js.Any): Unit = js.native
   def show_contextmenu(obj: js.Any, x: Double): Unit = js.native
+  def show_contextmenu(obj: js.Any, x: Double, y: js.UndefOr[scala.Nothing], e: js.Any): Unit = js.native
   def show_contextmenu(obj: js.Any, x: Double, y: Double): Unit = js.native
   def show_contextmenu(obj: js.Any, x: Double, y: Double, e: js.Any): Unit = js.native
   /**

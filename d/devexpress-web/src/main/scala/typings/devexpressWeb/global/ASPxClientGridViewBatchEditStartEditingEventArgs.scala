@@ -24,30 +24,5 @@ class ASPxClientGridViewBatchEditStartEditingEventArgs protected ()
     rowValues: js.Any,
     key: js.Any
   ) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets the grid column that owns a cell that is about to be edited.
-    */
-  /* CompleteClass */
-  override var focusedColumn: typings.devexpressWeb.ASPxClientGridViewColumn = js.native
-  /**
-    * Gets the row's key.
-    */
-  /* CompleteClass */
-  override var key: js.Any = js.native
-  /**
-    * Gets a hashtable that maintains information about editable cells.
-    */
-  /* CompleteClass */
-  override var rowValues: js.Any = js.native
-  /**
-    * Gets the visible index of the row whose cells are about to be edited.
-    */
-  /* CompleteClass */
-  override var visibleIndex: Double = js.native
 }
 

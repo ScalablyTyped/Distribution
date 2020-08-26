@@ -91,42 +91,86 @@ trait SchemaDocument extends js.Object {
 
 object SchemaDocument {
   @scala.inline
-  def apply(
-    body: SchemaBody = null,
-    documentId: String = null,
-    documentStyle: SchemaDocumentStyle = null,
-    footers: StringDictionary[SchemaFooter] = null,
-    footnotes: StringDictionary[SchemaFootnote] = null,
-    headers: StringDictionary[SchemaHeader] = null,
-    inlineObjects: StringDictionary[SchemaInlineObject] = null,
-    lists: StringDictionary[SchemaList] = null,
-    namedRanges: StringDictionary[SchemaNamedRanges] = null,
-    namedStyles: SchemaNamedStyles = null,
-    positionedObjects: StringDictionary[SchemaPositionedObject] = null,
-    revisionId: String = null,
-    suggestedDocumentStyleChanges: StringDictionary[SchemaSuggestedDocumentStyle] = null,
-    suggestedNamedStylesChanges: StringDictionary[SchemaSuggestedNamedStyles] = null,
-    suggestionsViewMode: String = null,
-    title: String = null
-  ): SchemaDocument = {
+  def apply(): SchemaDocument = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (documentId != null) __obj.updateDynamic("documentId")(documentId.asInstanceOf[js.Any])
-    if (documentStyle != null) __obj.updateDynamic("documentStyle")(documentStyle.asInstanceOf[js.Any])
-    if (footers != null) __obj.updateDynamic("footers")(footers.asInstanceOf[js.Any])
-    if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (inlineObjects != null) __obj.updateDynamic("inlineObjects")(inlineObjects.asInstanceOf[js.Any])
-    if (lists != null) __obj.updateDynamic("lists")(lists.asInstanceOf[js.Any])
-    if (namedRanges != null) __obj.updateDynamic("namedRanges")(namedRanges.asInstanceOf[js.Any])
-    if (namedStyles != null) __obj.updateDynamic("namedStyles")(namedStyles.asInstanceOf[js.Any])
-    if (positionedObjects != null) __obj.updateDynamic("positionedObjects")(positionedObjects.asInstanceOf[js.Any])
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
-    if (suggestedDocumentStyleChanges != null) __obj.updateDynamic("suggestedDocumentStyleChanges")(suggestedDocumentStyleChanges.asInstanceOf[js.Any])
-    if (suggestedNamedStylesChanges != null) __obj.updateDynamic("suggestedNamedStylesChanges")(suggestedNamedStylesChanges.asInstanceOf[js.Any])
-    if (suggestionsViewMode != null) __obj.updateDynamic("suggestionsViewMode")(suggestionsViewMode.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDocument]
   }
+  @scala.inline
+  implicit class SchemaDocumentOps[Self <: SchemaDocument] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: SchemaBody): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentId: Self = this.set("documentId", js.undefined)
+    @scala.inline
+    def setDocumentStyle(value: SchemaDocumentStyle): Self = this.set("documentStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentStyle: Self = this.set("documentStyle", js.undefined)
+    @scala.inline
+    def setFooters(value: StringDictionary[SchemaFooter]): Self = this.set("footers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooters: Self = this.set("footers", js.undefined)
+    @scala.inline
+    def setFootnotes(value: StringDictionary[SchemaFootnote]): Self = this.set("footnotes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFootnotes: Self = this.set("footnotes", js.undefined)
+    @scala.inline
+    def setHeaders(value: StringDictionary[SchemaHeader]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setInlineObjects(value: StringDictionary[SchemaInlineObject]): Self = this.set("inlineObjects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineObjects: Self = this.set("inlineObjects", js.undefined)
+    @scala.inline
+    def setLists(value: StringDictionary[SchemaList]): Self = this.set("lists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLists: Self = this.set("lists", js.undefined)
+    @scala.inline
+    def setNamedRanges(value: StringDictionary[SchemaNamedRanges]): Self = this.set("namedRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedRanges: Self = this.set("namedRanges", js.undefined)
+    @scala.inline
+    def setNamedStyles(value: SchemaNamedStyles): Self = this.set("namedStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedStyles: Self = this.set("namedStyles", js.undefined)
+    @scala.inline
+    def setPositionedObjects(value: StringDictionary[SchemaPositionedObject]): Self = this.set("positionedObjects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionedObjects: Self = this.set("positionedObjects", js.undefined)
+    @scala.inline
+    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    @scala.inline
+    def setSuggestedDocumentStyleChanges(value: StringDictionary[SchemaSuggestedDocumentStyle]): Self = this.set("suggestedDocumentStyleChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedDocumentStyleChanges: Self = this.set("suggestedDocumentStyleChanges", js.undefined)
+    @scala.inline
+    def setSuggestedNamedStylesChanges(value: StringDictionary[SchemaSuggestedNamedStyles]): Self = this.set("suggestedNamedStylesChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedNamedStylesChanges: Self = this.set("suggestedNamedStylesChanges", js.undefined)
+    @scala.inline
+    def setSuggestionsViewMode(value: String): Self = this.set("suggestionsViewMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionsViewMode: Self = this.set("suggestionsViewMode", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

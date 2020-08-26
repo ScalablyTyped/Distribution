@@ -34,10 +34,7 @@ class MeshToonMaterial () extends Material {
   var normalMap: Texture | Null = js.native
   var normalMapType: NormalMapTypes = js.native
   var normalScale: Vector2 = js.native
-  var shininess: Double = js.native
   var skinning: Boolean = js.native
-  var specular: Color = js.native
-  var specularMap: Texture | Null = js.native
   var wireframe: Boolean = js.native
   var wireframeLinecap: String = js.native
   var wireframeLinejoin: String = js.native

@@ -1,8 +1,6 @@
 package typings.carlo.mod
 
 import typings.node.Buffer
-import typings.puppeteer.mod.Browser
-import typings.puppeteer.mod.Serializable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,11 +12,21 @@ trait App extends js.Object {
   /**
     * Puppeteer browser object for testing.
     */
-  def browserForTest(): Browser = js.native
+  def browserForTest(): js.Any = js.native
   def createWindow(): js.Promise[Window] = js.native
   def createWindow(options: WindowOptions): js.Promise[Window] = js.native
-  def evaluate(pageFunction: String, args: Serializable*): js.Promise[Serializable] = js.native
-  def evaluate(pageFunction: js.Function1[/* repeated */ js.Any, _], args: Serializable*): js.Promise[Serializable] = js.native
+  def evaluate(
+    pageFunction: String,
+    args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+  ): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ _
+  ] = js.native
+  def evaluate(
+    pageFunction: js.Function1[/* repeated */ js.Any, _],
+    args: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ js.Any)*
+  ): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Serializable */ _
+  ] = js.native
   /**
     * Closes the browser window
     */

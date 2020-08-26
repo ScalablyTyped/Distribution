@@ -66,6 +66,8 @@ trait Constructor
   def isString(instance: js.Any): /* is string */ Boolean = js.native
   def keys[T](instance: js.Object): Array[T] = js.native
   def least[T, U](instance: js.Object): T = js.native
+  def least[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: String): T = js.native
+  def least[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
   def least[T, U](instance: js.Object, all: Boolean): T = js.native
   def least[T, U](instance: js.Object, all: Boolean, map: String): T = js.native
   def least[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
@@ -74,6 +76,8 @@ trait Constructor
   def map[T, U](instance: js.Object, map: String): js.Object = js.native
   def map[T, U](instance: js.Object, map: mapFn[T, U]): js.Object = js.native
   def max[T, U](instance: js.Object): T = js.native
+  def max[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: String): T = js.native
+  def max[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
   def max[T, U](instance: js.Object, all: Boolean): T = js.native
   def max[T, U](instance: js.Object, all: Boolean, map: String): T = js.native
   def max[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
@@ -87,12 +91,16 @@ trait Constructor
   def mergeAll[T](instance: js.Object, sources: Array[js.Object]): js.Object = js.native
   def mergeAll[T](instance: js.Object, sources: Array[js.Object], options: ObjectMergeOptions[T]): js.Object = js.native
   def min[T, U](instance: js.Object): T = js.native
+  def min[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: String): T = js.native
+  def min[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
   def min[T, U](instance: js.Object, all: Boolean): T = js.native
   def min[T, U](instance: js.Object, all: Boolean, map: String): T = js.native
   def min[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
   def min[T, U](instance: js.Object, map: String): T = js.native
   def min[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
   def most[T, U](instance: js.Object): T = js.native
+  def most[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: String): T = js.native
+  def most[T, U](instance: js.Object, all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
   def most[T, U](instance: js.Object, all: Boolean): T = js.native
   def most[T, U](instance: js.Object, all: Boolean, map: String): T = js.native
   def most[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native

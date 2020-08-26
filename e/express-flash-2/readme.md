@@ -12,7 +12,7 @@ Flash message middleware for express.
 | Keywords           | express, flash, messages |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 5502 |
+| # downloads        | 5283 |
 | # stars            | 1 |
 
 ## Links

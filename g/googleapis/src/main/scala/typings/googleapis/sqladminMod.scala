@@ -30,7 +30,7 @@ object sqladminMod extends js.Object {
     @js.native
     object v1beta4
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Sqladmin]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sqladmin]
             ]
     
   }

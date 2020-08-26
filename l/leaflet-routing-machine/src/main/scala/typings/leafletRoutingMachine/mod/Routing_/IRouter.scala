@@ -14,6 +14,12 @@ trait IRouter extends js.Object {
   def route(
     waypoints: js.Array[Waypoint_],
     callback: js.Function2[/* error */ js.UndefOr[IError], /* routes */ js.UndefOr[js.Array[IRoute]], _],
+    context: js.UndefOr[scala.Nothing],
+    options: RoutingOptions
+  ): Unit = js.native
+  def route(
+    waypoints: js.Array[Waypoint_],
+    callback: js.Function2[/* error */ js.UndefOr[IError], /* routes */ js.UndefOr[js.Array[IRoute]], _],
     context: js.Object
   ): Unit = js.native
   def route(

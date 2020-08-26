@@ -12,7 +12,7 @@ The lodash method `_.bindAll` exported as a module.
 | Keywords           | lodash-modularized, bindall |
 | # releases         | 0 |
 | # dependents       | 20 |
-| # downloads        | 156459 |
+| # downloads        | 154096 |
 | # stars            | 0 |
 
 ## Links

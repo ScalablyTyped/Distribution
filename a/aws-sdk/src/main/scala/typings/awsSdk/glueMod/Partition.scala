@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Partition extends js.Object {
   /**
+    * The ID of the Data Catalog in which the partition resides.
+    */
+  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  /**
     * The time at which the partition was created.
     */
   var CreationTime: js.UndefOr[Timestamp] = js.native
@@ -42,26 +46,60 @@ trait Partition extends js.Object {
 
 object Partition {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    DatabaseName: NameString = null,
-    LastAccessTime: Timestamp = null,
-    LastAnalyzedTime: Timestamp = null,
-    Parameters: ParametersMap = null,
-    StorageDescriptor: StorageDescriptor = null,
-    TableName: NameString = null,
-    Values: ValueStringList = null
-  ): Partition = {
+  def apply(): Partition = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
-    if (LastAccessTime != null) __obj.updateDynamic("LastAccessTime")(LastAccessTime.asInstanceOf[js.Any])
-    if (LastAnalyzedTime != null) __obj.updateDynamic("LastAnalyzedTime")(LastAnalyzedTime.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (StorageDescriptor != null) __obj.updateDynamic("StorageDescriptor")(StorageDescriptor.asInstanceOf[js.Any])
-    if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
-    if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Partition]
   }
+  @scala.inline
+  implicit class PartitionOps[Self <: Partition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDatabaseName(value: NameString): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    @scala.inline
+    def setLastAccessTime(value: Timestamp): Self = this.set("LastAccessTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAccessTime: Self = this.set("LastAccessTime", js.undefined)
+    @scala.inline
+    def setLastAnalyzedTime(value: Timestamp): Self = this.set("LastAnalyzedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAnalyzedTime: Self = this.set("LastAnalyzedTime", js.undefined)
+    @scala.inline
+    def setParameters(value: ParametersMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setStorageDescriptor(value: StorageDescriptor): Self = this.set("StorageDescriptor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageDescriptor: Self = this.set("StorageDescriptor", js.undefined)
+    @scala.inline
+    def setTableName(value: NameString): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableName: Self = this.set("TableName", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: ValueString*): Self = this.set("Values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: ValueStringList): Self = this.set("Values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("Values", js.undefined)
+  }
+  
 }
 

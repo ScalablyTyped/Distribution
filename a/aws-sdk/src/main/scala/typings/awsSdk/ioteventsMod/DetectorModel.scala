@@ -18,14 +18,30 @@ trait DetectorModel extends js.Object {
 
 object DetectorModel {
   @scala.inline
-  def apply(
-    detectorModelConfiguration: DetectorModelConfiguration = null,
-    detectorModelDefinition: DetectorModelDefinition = null
-  ): DetectorModel = {
+  def apply(): DetectorModel = {
     val __obj = js.Dynamic.literal()
-    if (detectorModelConfiguration != null) __obj.updateDynamic("detectorModelConfiguration")(detectorModelConfiguration.asInstanceOf[js.Any])
-    if (detectorModelDefinition != null) __obj.updateDynamic("detectorModelDefinition")(detectorModelDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectorModel]
   }
+  @scala.inline
+  implicit class DetectorModelOps[Self <: DetectorModel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetectorModelConfiguration(value: DetectorModelConfiguration): Self = this.set("detectorModelConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorModelConfiguration: Self = this.set("detectorModelConfiguration", js.undefined)
+    @scala.inline
+    def setDetectorModelDefinition(value: DetectorModelDefinition): Self = this.set("detectorModelDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorModelDefinition: Self = this.set("detectorModelDefinition", js.undefined)
+  }
+  
 }
 

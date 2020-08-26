@@ -56,22 +56,46 @@ trait SchemaHttpRedirectAction extends js.Object {
 
 object SchemaHttpRedirectAction {
   @scala.inline
-  def apply(
-    hostRedirect: String = null,
-    httpsRedirect: js.UndefOr[Boolean] = js.undefined,
-    pathRedirect: String = null,
-    prefixRedirect: String = null,
-    redirectResponseCode: String = null,
-    stripQuery: js.UndefOr[Boolean] = js.undefined
-  ): SchemaHttpRedirectAction = {
+  def apply(): SchemaHttpRedirectAction = {
     val __obj = js.Dynamic.literal()
-    if (hostRedirect != null) __obj.updateDynamic("hostRedirect")(hostRedirect.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpsRedirect)) __obj.updateDynamic("httpsRedirect")(httpsRedirect.get.asInstanceOf[js.Any])
-    if (pathRedirect != null) __obj.updateDynamic("pathRedirect")(pathRedirect.asInstanceOf[js.Any])
-    if (prefixRedirect != null) __obj.updateDynamic("prefixRedirect")(prefixRedirect.asInstanceOf[js.Any])
-    if (redirectResponseCode != null) __obj.updateDynamic("redirectResponseCode")(redirectResponseCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripQuery)) __obj.updateDynamic("stripQuery")(stripQuery.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpRedirectAction]
   }
+  @scala.inline
+  implicit class SchemaHttpRedirectActionOps[Self <: SchemaHttpRedirectAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostRedirect(value: String): Self = this.set("hostRedirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostRedirect: Self = this.set("hostRedirect", js.undefined)
+    @scala.inline
+    def setHttpsRedirect(value: Boolean): Self = this.set("httpsRedirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpsRedirect: Self = this.set("httpsRedirect", js.undefined)
+    @scala.inline
+    def setPathRedirect(value: String): Self = this.set("pathRedirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathRedirect: Self = this.set("pathRedirect", js.undefined)
+    @scala.inline
+    def setPrefixRedirect(value: String): Self = this.set("prefixRedirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixRedirect: Self = this.set("prefixRedirect", js.undefined)
+    @scala.inline
+    def setRedirectResponseCode(value: String): Self = this.set("redirectResponseCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirectResponseCode: Self = this.set("redirectResponseCode", js.undefined)
+    @scala.inline
+    def setStripQuery(value: Boolean): Self = this.set("stripQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripQuery: Self = this.set("stripQuery", js.undefined)
+  }
+  
 }
 

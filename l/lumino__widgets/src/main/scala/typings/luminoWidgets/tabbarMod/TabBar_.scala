@@ -19,7 +19,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/tabbar", "TabBar")
+@JSImport("@lumino/widgets/types/tabbar", "TabBar")
 @js.native
 /**
   * Construct a new tab bar.

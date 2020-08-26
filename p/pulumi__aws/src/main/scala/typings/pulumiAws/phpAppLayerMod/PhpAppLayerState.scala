@@ -75,9 +75,9 @@ trait PhpAppLayerState extends js.Object {
     */
   val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Whether to use EBS-optimized instances.
     */
@@ -86,54 +86,126 @@ trait PhpAppLayerState extends js.Object {
 
 object PhpAppLayerState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    autoAssignElasticIps: Input[Boolean] = null,
-    autoAssignPublicIps: Input[Boolean] = null,
-    autoHealing: Input[Boolean] = null,
-    customConfigureRecipes: Input[js.Array[Input[String]]] = null,
-    customDeployRecipes: Input[js.Array[Input[String]]] = null,
-    customInstanceProfileArn: Input[String] = null,
-    customJson: Input[String] = null,
-    customSecurityGroupIds: Input[js.Array[Input[String]]] = null,
-    customSetupRecipes: Input[js.Array[Input[String]]] = null,
-    customShutdownRecipes: Input[js.Array[Input[String]]] = null,
-    customUndeployRecipes: Input[js.Array[Input[String]]] = null,
-    drainElbOnShutdown: Input[Boolean] = null,
-    ebsVolumes: Input[js.Array[Input[PhpAppLayerEbsVolume]]] = null,
-    elasticLoadBalancer: Input[String] = null,
-    installUpdatesOnBoot: Input[Boolean] = null,
-    instanceShutdownTimeout: Input[Double] = null,
-    name: Input[String] = null,
-    stackId: Input[String] = null,
-    systemPackages: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null,
-    useEbsOptimizedInstances: Input[Boolean] = null
-  ): PhpAppLayerState = {
+  def apply(): PhpAppLayerState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (autoAssignElasticIps != null) __obj.updateDynamic("autoAssignElasticIps")(autoAssignElasticIps.asInstanceOf[js.Any])
-    if (autoAssignPublicIps != null) __obj.updateDynamic("autoAssignPublicIps")(autoAssignPublicIps.asInstanceOf[js.Any])
-    if (autoHealing != null) __obj.updateDynamic("autoHealing")(autoHealing.asInstanceOf[js.Any])
-    if (customConfigureRecipes != null) __obj.updateDynamic("customConfigureRecipes")(customConfigureRecipes.asInstanceOf[js.Any])
-    if (customDeployRecipes != null) __obj.updateDynamic("customDeployRecipes")(customDeployRecipes.asInstanceOf[js.Any])
-    if (customInstanceProfileArn != null) __obj.updateDynamic("customInstanceProfileArn")(customInstanceProfileArn.asInstanceOf[js.Any])
-    if (customJson != null) __obj.updateDynamic("customJson")(customJson.asInstanceOf[js.Any])
-    if (customSecurityGroupIds != null) __obj.updateDynamic("customSecurityGroupIds")(customSecurityGroupIds.asInstanceOf[js.Any])
-    if (customSetupRecipes != null) __obj.updateDynamic("customSetupRecipes")(customSetupRecipes.asInstanceOf[js.Any])
-    if (customShutdownRecipes != null) __obj.updateDynamic("customShutdownRecipes")(customShutdownRecipes.asInstanceOf[js.Any])
-    if (customUndeployRecipes != null) __obj.updateDynamic("customUndeployRecipes")(customUndeployRecipes.asInstanceOf[js.Any])
-    if (drainElbOnShutdown != null) __obj.updateDynamic("drainElbOnShutdown")(drainElbOnShutdown.asInstanceOf[js.Any])
-    if (ebsVolumes != null) __obj.updateDynamic("ebsVolumes")(ebsVolumes.asInstanceOf[js.Any])
-    if (elasticLoadBalancer != null) __obj.updateDynamic("elasticLoadBalancer")(elasticLoadBalancer.asInstanceOf[js.Any])
-    if (installUpdatesOnBoot != null) __obj.updateDynamic("installUpdatesOnBoot")(installUpdatesOnBoot.asInstanceOf[js.Any])
-    if (instanceShutdownTimeout != null) __obj.updateDynamic("instanceShutdownTimeout")(instanceShutdownTimeout.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (stackId != null) __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
-    if (systemPackages != null) __obj.updateDynamic("systemPackages")(systemPackages.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (useEbsOptimizedInstances != null) __obj.updateDynamic("useEbsOptimizedInstances")(useEbsOptimizedInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhpAppLayerState]
   }
+  @scala.inline
+  implicit class PhpAppLayerStateOps[Self <: PhpAppLayerState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAutoAssignElasticIps(value: Input[Boolean]): Self = this.set("autoAssignElasticIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAssignElasticIps: Self = this.set("autoAssignElasticIps", js.undefined)
+    @scala.inline
+    def setAutoAssignPublicIps(value: Input[Boolean]): Self = this.set("autoAssignPublicIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAssignPublicIps: Self = this.set("autoAssignPublicIps", js.undefined)
+    @scala.inline
+    def setAutoHealing(value: Input[Boolean]): Self = this.set("autoHealing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHealing: Self = this.set("autoHealing", js.undefined)
+    @scala.inline
+    def setCustomConfigureRecipesVarargs(value: Input[String]*): Self = this.set("customConfigureRecipes", js.Array(value :_*))
+    @scala.inline
+    def setCustomConfigureRecipes(value: Input[js.Array[Input[String]]]): Self = this.set("customConfigureRecipes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomConfigureRecipes: Self = this.set("customConfigureRecipes", js.undefined)
+    @scala.inline
+    def setCustomDeployRecipesVarargs(value: Input[String]*): Self = this.set("customDeployRecipes", js.Array(value :_*))
+    @scala.inline
+    def setCustomDeployRecipes(value: Input[js.Array[Input[String]]]): Self = this.set("customDeployRecipes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDeployRecipes: Self = this.set("customDeployRecipes", js.undefined)
+    @scala.inline
+    def setCustomInstanceProfileArn(value: Input[String]): Self = this.set("customInstanceProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomInstanceProfileArn: Self = this.set("customInstanceProfileArn", js.undefined)
+    @scala.inline
+    def setCustomJson(value: Input[String]): Self = this.set("customJson", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomJson: Self = this.set("customJson", js.undefined)
+    @scala.inline
+    def setCustomSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("customSecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setCustomSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("customSecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSecurityGroupIds: Self = this.set("customSecurityGroupIds", js.undefined)
+    @scala.inline
+    def setCustomSetupRecipesVarargs(value: Input[String]*): Self = this.set("customSetupRecipes", js.Array(value :_*))
+    @scala.inline
+    def setCustomSetupRecipes(value: Input[js.Array[Input[String]]]): Self = this.set("customSetupRecipes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSetupRecipes: Self = this.set("customSetupRecipes", js.undefined)
+    @scala.inline
+    def setCustomShutdownRecipesVarargs(value: Input[String]*): Self = this.set("customShutdownRecipes", js.Array(value :_*))
+    @scala.inline
+    def setCustomShutdownRecipes(value: Input[js.Array[Input[String]]]): Self = this.set("customShutdownRecipes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomShutdownRecipes: Self = this.set("customShutdownRecipes", js.undefined)
+    @scala.inline
+    def setCustomUndeployRecipesVarargs(value: Input[String]*): Self = this.set("customUndeployRecipes", js.Array(value :_*))
+    @scala.inline
+    def setCustomUndeployRecipes(value: Input[js.Array[Input[String]]]): Self = this.set("customUndeployRecipes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomUndeployRecipes: Self = this.set("customUndeployRecipes", js.undefined)
+    @scala.inline
+    def setDrainElbOnShutdown(value: Input[Boolean]): Self = this.set("drainElbOnShutdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrainElbOnShutdown: Self = this.set("drainElbOnShutdown", js.undefined)
+    @scala.inline
+    def setEbsVolumesVarargs(value: Input[PhpAppLayerEbsVolume]*): Self = this.set("ebsVolumes", js.Array(value :_*))
+    @scala.inline
+    def setEbsVolumes(value: Input[js.Array[Input[PhpAppLayerEbsVolume]]]): Self = this.set("ebsVolumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsVolumes: Self = this.set("ebsVolumes", js.undefined)
+    @scala.inline
+    def setElasticLoadBalancer(value: Input[String]): Self = this.set("elasticLoadBalancer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticLoadBalancer: Self = this.set("elasticLoadBalancer", js.undefined)
+    @scala.inline
+    def setInstallUpdatesOnBoot(value: Input[Boolean]): Self = this.set("installUpdatesOnBoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallUpdatesOnBoot: Self = this.set("installUpdatesOnBoot", js.undefined)
+    @scala.inline
+    def setInstanceShutdownTimeout(value: Input[Double]): Self = this.set("instanceShutdownTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceShutdownTimeout: Self = this.set("instanceShutdownTimeout", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStackId(value: Input[String]): Self = this.set("stackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("stackId", js.undefined)
+    @scala.inline
+    def setSystemPackagesVarargs(value: Input[String]*): Self = this.set("systemPackages", js.Array(value :_*))
+    @scala.inline
+    def setSystemPackages(value: Input[js.Array[Input[String]]]): Self = this.set("systemPackages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemPackages: Self = this.set("systemPackages", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUseEbsOptimizedInstances(value: Input[Boolean]): Self = this.set("useEbsOptimizedInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseEbsOptimizedInstances: Self = this.set("useEbsOptimizedInstances", js.undefined)
+  }
+  
 }
 

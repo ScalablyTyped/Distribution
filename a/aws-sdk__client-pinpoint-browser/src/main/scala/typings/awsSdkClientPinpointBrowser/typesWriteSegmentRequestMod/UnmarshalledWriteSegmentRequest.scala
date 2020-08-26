@@ -6,31 +6,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledWriteSegmentRequest extends WriteSegmentRequest {
   /**
     * The segment dimensions attributes.
     */
   @JSName("Dimensions")
-  var Dimensions_UnmarshalledWriteSegmentRequest: js.UndefOr[UnmarshalledSegmentDimensions] = js.undefined
+  var Dimensions_UnmarshalledWriteSegmentRequest: js.UndefOr[UnmarshalledSegmentDimensions] = js.native
   /**
     * A segment group, which consists of zero or more source segments, plus dimensions that are applied to those source segments. Your request can only include one segment group. Your request can include either a SegmentGroups object or a Dimensions object, but not both.
     */
   @JSName("SegmentGroups")
-  var SegmentGroups_UnmarshalledWriteSegmentRequest: js.UndefOr[UnmarshalledSegmentGroupList] = js.undefined
+  var SegmentGroups_UnmarshalledWriteSegmentRequest: js.UndefOr[UnmarshalledSegmentGroupList] = js.native
 }
 
 object UnmarshalledWriteSegmentRequest {
   @scala.inline
-  def apply(
-    Dimensions: UnmarshalledSegmentDimensions = null,
-    Name: String = null,
-    SegmentGroups: UnmarshalledSegmentGroupList = null
-  ): UnmarshalledWriteSegmentRequest = {
+  def apply(): UnmarshalledWriteSegmentRequest = {
     val __obj = js.Dynamic.literal()
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (SegmentGroups != null) __obj.updateDynamic("SegmentGroups")(SegmentGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledWriteSegmentRequest]
   }
+  @scala.inline
+  implicit class UnmarshalledWriteSegmentRequestOps[Self <: UnmarshalledWriteSegmentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensions(value: UnmarshalledSegmentDimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setSegmentGroups(value: UnmarshalledSegmentGroupList): Self = this.set("SegmentGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentGroups: Self = this.set("SegmentGroups", js.undefined)
+  }
+  
 }
 

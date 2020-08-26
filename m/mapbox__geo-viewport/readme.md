@@ -11,8 +11,8 @@ convert between viewports and extents
 | Full name          | @mapbox/geo-viewport |
 | Keywords           | geographic, viewport, zoom, scale |
 | # releases         | 3 |
-| # dependents       | 26 |
-| # downloads        | 544562 |
+| # dependents       | 28 |
+| # downloads        | 571629 |
 | # stars            | 0 |
 
 ## Links

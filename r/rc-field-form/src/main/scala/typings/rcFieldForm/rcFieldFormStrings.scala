@@ -139,6 +139,9 @@ object rcFieldFormStrings {
   sealed trait page extends js.Object
   
   @js.native
+  sealed trait parallel extends js.Object
+  
+  @js.native
   sealed trait polite extends js.Object
   
   @js.native
@@ -289,6 +292,8 @@ object rcFieldFormStrings {
   def other: other = "other".asInstanceOf[other]
   @scala.inline
   def page: page = "page".asInstanceOf[page]
+  @scala.inline
+  def parallel: parallel = "parallel".asInstanceOf[parallel]
   @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
   @scala.inline

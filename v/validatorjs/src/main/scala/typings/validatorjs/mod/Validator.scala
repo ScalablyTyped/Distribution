@@ -19,6 +19,7 @@ trait Validator[A] extends js.Object {
   def attributeFormatter(attribute: js.Any): js.Any = js.native
   def check(): Boolean = js.native
   def checkAsync(): Unit = js.native
+  def checkAsync(passes: js.UndefOr[scala.Nothing], fails: js.Function): Unit = js.native
   def checkAsync(passes: js.Function): Unit = js.native
   def checkAsync(passes: js.Function, fails: js.Function): Unit = js.native
   def fails(): Boolean | Unit = js.native

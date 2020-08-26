@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/iter", "each")
+@JSImport("@lumino/algorithm/types/iter", "each")
 @js.native
 object each extends js.Object {
   def apply[T](

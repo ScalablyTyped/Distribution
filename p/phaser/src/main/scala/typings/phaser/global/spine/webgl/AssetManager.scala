@@ -13,7 +13,5 @@ class AssetManager protected ()
   def this(context: WebGLRenderingContext) = this()
   def this(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext, pathPrefix: String) = this()
   def this(context: WebGLRenderingContext, pathPrefix: String) = this()
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
 

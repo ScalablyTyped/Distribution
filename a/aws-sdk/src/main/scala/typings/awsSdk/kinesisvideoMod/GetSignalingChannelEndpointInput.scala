@@ -18,13 +18,28 @@ trait GetSignalingChannelEndpointInput extends js.Object {
 
 object GetSignalingChannelEndpointInput {
   @scala.inline
-  def apply(
-    ChannelARN: ResourceARN,
-    SingleMasterChannelEndpointConfiguration: SingleMasterChannelEndpointConfiguration = null
-  ): GetSignalingChannelEndpointInput = {
+  def apply(ChannelARN: ResourceARN): GetSignalingChannelEndpointInput = {
     val __obj = js.Dynamic.literal(ChannelARN = ChannelARN.asInstanceOf[js.Any])
-    if (SingleMasterChannelEndpointConfiguration != null) __obj.updateDynamic("SingleMasterChannelEndpointConfiguration")(SingleMasterChannelEndpointConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSignalingChannelEndpointInput]
   }
+  @scala.inline
+  implicit class GetSignalingChannelEndpointInputOps[Self <: GetSignalingChannelEndpointInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelARN(value: ResourceARN): Self = this.set("ChannelARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSingleMasterChannelEndpointConfiguration(value: SingleMasterChannelEndpointConfiguration): Self = this.set("SingleMasterChannelEndpointConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleMasterChannelEndpointConfiguration: Self = this.set("SingleMasterChannelEndpointConfiguration", js.undefined)
+  }
+  
 }
 

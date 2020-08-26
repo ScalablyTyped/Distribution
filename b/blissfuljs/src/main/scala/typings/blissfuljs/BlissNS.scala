@@ -1310,6 +1310,7 @@ object BlissNS extends js.Object {
     def scrollIntoView(top: Boolean): T = js.native
     def setActive(): T = js.native
     def setAttribute(): T = js.native
+    def setAttribute(name: js.UndefOr[scala.Nothing], value: String): T = js.native
     def setAttribute(name: String): T = js.native
     def setAttribute(name: String, value: String): T = js.native
     def setAttributeNS(namespaceURI: String, qualifiedName: String, value: String): T = js.native

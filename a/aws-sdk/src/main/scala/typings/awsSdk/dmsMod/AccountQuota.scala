@@ -22,16 +22,34 @@ trait AccountQuota extends js.Object {
 
 object AccountQuota {
   @scala.inline
-  def apply(
-    AccountQuotaName: String = null,
-    Max: js.UndefOr[Long] = js.undefined,
-    Used: js.UndefOr[Long] = js.undefined
-  ): AccountQuota = {
+  def apply(): AccountQuota = {
     val __obj = js.Dynamic.literal()
-    if (AccountQuotaName != null) __obj.updateDynamic("AccountQuotaName")(AccountQuotaName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Max)) __obj.updateDynamic("Max")(Max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Used)) __obj.updateDynamic("Used")(Used.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountQuota]
   }
+  @scala.inline
+  implicit class AccountQuotaOps[Self <: AccountQuota] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountQuotaName(value: String): Self = this.set("AccountQuotaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountQuotaName: Self = this.set("AccountQuotaName", js.undefined)
+    @scala.inline
+    def setMax(value: Long): Self = this.set("Max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("Max", js.undefined)
+    @scala.inline
+    def setUsed(value: Long): Self = this.set("Used", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsed: Self = this.set("Used", js.undefined)
+  }
+  
 }
 

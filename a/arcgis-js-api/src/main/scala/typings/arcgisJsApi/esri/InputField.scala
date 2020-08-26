@@ -81,6 +81,12 @@ trait InputField extends Accessor {
     */
   val maxLength: Double = js.native
   /**
+    * Restricts the input length.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#minLength)
+    */
+  val minLength: Double = js.native
+  /**
     * The associated field name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#name)

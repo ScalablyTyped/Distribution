@@ -12,7 +12,7 @@ is that thing a function? Use this module to find out
 | Keywords           | polyfill, is-function, ie6 |
 | # releases         | 0 |
 | # dependents       | 91 |
-| # downloads        | 64901785 |
+| # downloads        | 67282965 |
 | # stars            | 3 |
 
 ## Links

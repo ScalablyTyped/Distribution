@@ -24,6 +24,7 @@ object helpersUtilMod extends js.Object {
   def getRandomNode(): Reference | js.Array[Reference] = js.native
   def getRandomNode(numNodes: js.Any): Reference | js.Array[Reference] = js.native
   def getRootNode(): js.Any = js.native
+  def getRootNode(i: js.UndefOr[scala.Nothing], ref: String): js.Any = js.native
   def getRootNode(i: Double): js.Any = js.native
   def getRootNode(i: Double, ref: String): js.Any = js.native
   def getSnap(path: js.Any): js.Any = js.native

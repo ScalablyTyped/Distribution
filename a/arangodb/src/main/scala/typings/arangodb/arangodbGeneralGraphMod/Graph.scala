@@ -21,6 +21,12 @@ trait Graph extends js.Object {
   def _closeness(vertexExample: Example): Closeness = js.native
   def _closeness(vertexExample: Example, options: ClosenessOptions): Closeness = js.native
   def _commonNeighbors(vertex1Example: Example, vertex2Example: Example): js.Array[CommonNeighbors] = js.native
+  def _commonNeighbors(
+    vertex1Example: Example,
+    vertex2Example: Example,
+    vertex1Options: js.UndefOr[scala.Nothing],
+    vertex2Options: NeighborsOptions
+  ): js.Array[CommonNeighbors] = js.native
   def _commonNeighbors(vertex1Example: Example, vertex2Example: Example, vertex1Options: NeighborsOptions): js.Array[CommonNeighbors] = js.native
   def _commonNeighbors(
     vertex1Example: Example,
@@ -31,6 +37,12 @@ trait Graph extends js.Object {
   def _commonProperties(vertexExample1: Example, vertex2Example: Example): js.Array[CommonProperties] = js.native
   def _commonProperties(vertexExample1: Example, vertex2Example: Example, options: CommonPropertiesOptions): js.Array[CommonProperties] = js.native
   def _countCommonNeighbors(vertex1Example: Example, vertex2Example: Example): js.Array[CountCommonNeighbors] = js.native
+  def _countCommonNeighbors(
+    vertex1Example: Example,
+    vertex2Example: Example,
+    vertex1Options: js.UndefOr[scala.Nothing],
+    vertex2Options: NeighborsOptions
+  ): js.Array[CountCommonNeighbors] = js.native
   def _countCommonNeighbors(vertex1Example: Example, vertex2Example: Example, vertex1Options: NeighborsOptions): js.Array[CountCommonNeighbors] = js.native
   def _countCommonNeighbors(
     vertex1Example: Example,

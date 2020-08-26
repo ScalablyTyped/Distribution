@@ -16,14 +16,14 @@ trait decorators extends js.Object {
     */
   def aliasOf(propertyName: String): js.Function = js.native
   /**
-    * This parameter decorator is used to define the function or class for a parameter of a method.
+    * This property decorator is used to define the function or class for a property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#cast)
     *
-    * @param classFunction The function or class to cast the parameter
+    * @param functionOrClass The function or class to cast the property
     *
     */
-  def cast(classFunction: js.Function): js.Function = js.native
+  def cast(functionOrClass: js.Function): js.Function = js.native
   /**
     * This method decorator is used to define the method that will cast a property from a class.
     *
@@ -60,14 +60,6 @@ trait decorators extends js.Object {
     */
   def property(): js.Function = js.native
   def property(propertyMetadata: decoratorsPropertyPropertyMetadata): js.Function = js.native
-  /**
-    * A class decorator that must be used together with the `declared` function to create a class compatible to [dojo.declare](https://dojotoolkit.org/reference-guide/1.10/dojo/declare.html). It supports both single and multiple inheritance and can be considered the underlying functionality needed when creating 4.x classes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#subclass)
-    *
-    * @param declaredClass The subclass name.
-    *
-    */
   def subclass(): js.Function = js.native
   def subclass(declaredClass: String): js.Function = js.native
 }

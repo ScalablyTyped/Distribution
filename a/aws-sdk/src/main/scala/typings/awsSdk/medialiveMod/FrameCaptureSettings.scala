@@ -18,10 +18,28 @@ trait FrameCaptureSettings extends js.Object {
 
 object FrameCaptureSettings {
   @scala.inline
-  def apply(CaptureInterval: integerMin1Max3600000, CaptureIntervalUnits: FrameCaptureIntervalUnit = null): FrameCaptureSettings = {
+  def apply(CaptureInterval: integerMin1Max3600000): FrameCaptureSettings = {
     val __obj = js.Dynamic.literal(CaptureInterval = CaptureInterval.asInstanceOf[js.Any])
-    if (CaptureIntervalUnits != null) __obj.updateDynamic("CaptureIntervalUnits")(CaptureIntervalUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameCaptureSettings]
   }
+  @scala.inline
+  implicit class FrameCaptureSettingsOps[Self <: FrameCaptureSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptureInterval(value: integerMin1Max3600000): Self = this.set("CaptureInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCaptureIntervalUnits(value: FrameCaptureIntervalUnit): Self = this.set("CaptureIntervalUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureIntervalUnits: Self = this.set("CaptureIntervalUnits", js.undefined)
+  }
+  
 }
 

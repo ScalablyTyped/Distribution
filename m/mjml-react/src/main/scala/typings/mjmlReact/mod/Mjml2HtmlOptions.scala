@@ -8,33 +8,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Mjml2HtmlOptions extends js.Object {
-  var beautify: js.UndefOr[Boolean] = js.undefined
-  var filePath: js.UndefOr[String] = js.undefined
-  var fonts: js.UndefOr[StringDictionary[String]] = js.undefined
-  var keepComments: js.UndefOr[Boolean] = js.undefined
-  var minify: js.UndefOr[Boolean] = js.undefined
-  var validationLevel: js.UndefOr[strict | soft | skip] = js.undefined
+  var beautify: js.UndefOr[Boolean] = js.native
+  var filePath: js.UndefOr[String] = js.native
+  var fonts: js.UndefOr[StringDictionary[String]] = js.native
+  var keepComments: js.UndefOr[Boolean] = js.native
+  var minify: js.UndefOr[Boolean] = js.native
+  var validationLevel: js.UndefOr[strict | soft | skip] = js.native
 }
 
 object Mjml2HtmlOptions {
   @scala.inline
-  def apply(
-    beautify: js.UndefOr[Boolean] = js.undefined,
-    filePath: String = null,
-    fonts: StringDictionary[String] = null,
-    keepComments: js.UndefOr[Boolean] = js.undefined,
-    minify: js.UndefOr[Boolean] = js.undefined,
-    validationLevel: strict | soft | skip = null
-  ): Mjml2HtmlOptions = {
+  def apply(): Mjml2HtmlOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(beautify)) __obj.updateDynamic("beautify")(beautify.get.asInstanceOf[js.Any])
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepComments)) __obj.updateDynamic("keepComments")(keepComments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.get.asInstanceOf[js.Any])
-    if (validationLevel != null) __obj.updateDynamic("validationLevel")(validationLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mjml2HtmlOptions]
   }
+  @scala.inline
+  implicit class Mjml2HtmlOptionsOps[Self <: Mjml2HtmlOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeautify(value: Boolean): Self = this.set("beautify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeautify: Self = this.set("beautify", js.undefined)
+    @scala.inline
+    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    @scala.inline
+    def setFonts(value: StringDictionary[String]): Self = this.set("fonts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFonts: Self = this.set("fonts", js.undefined)
+    @scala.inline
+    def setKeepComments(value: Boolean): Self = this.set("keepComments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepComments: Self = this.set("keepComments", js.undefined)
+    @scala.inline
+    def setMinify(value: Boolean): Self = this.set("minify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinify: Self = this.set("minify", js.undefined)
+    @scala.inline
+    def setValidationLevel(value: strict | soft | skip): Self = this.set("validationLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationLevel: Self = this.set("validationLevel", js.undefined)
+  }
+  
 }
 

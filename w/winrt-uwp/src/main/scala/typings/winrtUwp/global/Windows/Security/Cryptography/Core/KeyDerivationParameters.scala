@@ -9,17 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
 @js.native
 abstract class KeyDerivationParameters ()
-  extends typings.winrtUwp.Windows.Security.Cryptography.Core.KeyDerivationParameters {
-  /** Gets or sets the Capi1KdfTargetAlgorithm . */
-  /* CompleteClass */
-  override var capi1KdfTargetAlgorithm: typings.winrtUwp.Windows.Security.Cryptography.Core.Capi1KdfTargetAlgorithm = js.native
-  /** Retrieves the number of iterations used to derive the key. For more information, see BuildForPbkdf2 . */
-  /* CompleteClass */
-  override var iterationCount: Double = js.native
-  /** Gets or sets the parameters used by the key derivation algorithm. */
-  /* CompleteClass */
-  override var kdfGenericBinary: IBuffer = js.native
-}
+  extends typings.winrtUwp.Windows.Security.Cryptography.Core.KeyDerivationParameters
 
 /* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")

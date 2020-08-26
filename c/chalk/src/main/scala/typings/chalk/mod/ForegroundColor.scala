@@ -4,10 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-Basic foreground colors.
-[More colors here.](https://github.com/chalk/chalk/blob/master/readme.md#256-and-truecolor-color-support)
-*/
 /* Rewritten from type alias, can be one of: 
   - typings.chalk.chalkStrings.black
   - typings.chalk.chalkStrings.red

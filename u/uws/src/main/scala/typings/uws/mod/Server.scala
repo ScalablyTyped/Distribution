@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Server () extends EventEmitter {
   def this(options: IServerOptions) = this()
+  def this(options: js.UndefOr[scala.Nothing], callback: js.Function) = this()
   def this(options: IServerOptions, callback: js.Function) = this()
   var clients: js.Array[WebSocket] = js.native
   var options: IServerOptions = js.native

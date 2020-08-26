@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 trait DecoratedComponentClass[FormData, P]
   extends Instantiable0[FormInstance[FormData, P]]
      with Instantiable1[/* props */ P, FormInstance[FormData, P]]
-     with Instantiable2[/* props */ P, /* context */ js.Any, FormInstance[FormData, P]]
+     with Instantiable2[js.UndefOr[/* props */ P], /* context */ js.Any, FormInstance[FormData, P]]
 

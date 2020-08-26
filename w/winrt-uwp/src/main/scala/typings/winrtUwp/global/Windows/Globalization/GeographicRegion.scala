@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Globalization
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,27 +15,6 @@ class GeographicRegion ()
     * @param geographicRegionCode One of the ISO 3166-1 two-letter or three-letter codes that identify the country, or one of the three-digit UN-M49 codes that identify the geographical region.
     */
   def this(geographicRegionCode: String) = this()
-  /** Gets the string that contains the best available identifier that represents the region. */
-  /* CompleteClass */
-  override var code: String = js.native
-  /** Gets the three-digit identifier for this region, as a string. */
-  /* CompleteClass */
-  override var codeThreeDigit: String = js.native
-  /** Gets the three-letter identifier for this region. */
-  /* CompleteClass */
-  override var codeThreeLetter: String = js.native
-  /** Gets the two-letter identifier for this region. */
-  /* CompleteClass */
-  override var codeTwoLetter: String = js.native
-  /** Gets the set of currencies in use in this region. */
-  /* CompleteClass */
-  override var currenciesInUse: IVectorView[String] = js.native
-  /** Gets a localized string that is suitable for display to the user for identifying the region. */
-  /* CompleteClass */
-  override var displayName: String = js.native
-  /** Gets the name of the region in the primary language spoken in this region. */
-  /* CompleteClass */
-  override var nativeName: String = js.native
 }
 
 /* static members */

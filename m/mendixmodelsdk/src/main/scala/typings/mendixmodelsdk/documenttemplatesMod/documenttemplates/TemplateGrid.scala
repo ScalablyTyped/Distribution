@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/template-grid-(document-template) relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/template-grid-document-template relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TemplateGrid")
 @js.native
@@ -25,14 +25,12 @@ class TemplateGrid protected () extends Grid {
   ) = this()
   @JSName("model")
   var model_FTemplateGrid: IModel = js.native
-  def evenRowsContents(): js.Any = js.native
-  def evenRowsContents(newValue: TemplateGridContents): js.Any = js.native
-  @JSName("evenRowsContents")
-  def evenRowsContents_Union: TemplateGridContents | Null = js.native
+  def evenRowsContents: TemplateGridContents | Null = js.native
+  def evenRowsContents_=(newValue: TemplateGridContents | Null): Unit = js.native
   def numberOfColumns: Double = js.native
-  def numberOfColumns(newValue: Double): js.Any = js.native
+  def numberOfColumns_=(newValue: Double): Unit = js.native
   def oddRowsContents: TemplateGridContents = js.native
-  def oddRowsContents(newValue: TemplateGridContents): js.Any = js.native
+  def oddRowsContents_=(newValue: TemplateGridContents): Unit = js.native
 }
 
 /* static members */

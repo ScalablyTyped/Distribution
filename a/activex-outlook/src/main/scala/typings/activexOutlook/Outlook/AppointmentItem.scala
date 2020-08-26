@@ -105,6 +105,7 @@ trait AppointmentItem extends js.Object {
   def Move(DestFldr: Folder): js.Any = js.native
   def PrintOut(): Unit = js.native
   def Respond(Response: OlMeetingResponse): MeetingItem = js.native
+  def Respond(Response: OlMeetingResponse, fNoUI: js.UndefOr[scala.Nothing], fAdditionalTextDialog: js.Any): MeetingItem = js.native
   def Respond(Response: OlMeetingResponse, fNoUI: js.Any): MeetingItem = js.native
   def Respond(Response: OlMeetingResponse, fNoUI: js.Any, fAdditionalTextDialog: js.Any): MeetingItem = js.native
   def Save(): Unit = js.native

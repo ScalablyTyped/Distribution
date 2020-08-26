@@ -48,24 +48,50 @@ trait SchemaEnvironmentConfig extends js.Object {
 
 object SchemaEnvironmentConfig {
   @scala.inline
-  def apply(
-    airflowUri: String = null,
-    dagGcsPrefix: String = null,
-    gkeCluster: String = null,
-    nodeConfig: SchemaNodeConfig = null,
-    nodeCount: js.UndefOr[Double] = js.undefined,
-    privateEnvironmentConfig: SchemaPrivateEnvironmentConfig = null,
-    softwareConfig: SchemaSoftwareConfig = null
-  ): SchemaEnvironmentConfig = {
+  def apply(): SchemaEnvironmentConfig = {
     val __obj = js.Dynamic.literal()
-    if (airflowUri != null) __obj.updateDynamic("airflowUri")(airflowUri.asInstanceOf[js.Any])
-    if (dagGcsPrefix != null) __obj.updateDynamic("dagGcsPrefix")(dagGcsPrefix.asInstanceOf[js.Any])
-    if (gkeCluster != null) __obj.updateDynamic("gkeCluster")(gkeCluster.asInstanceOf[js.Any])
-    if (nodeConfig != null) __obj.updateDynamic("nodeConfig")(nodeConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeCount)) __obj.updateDynamic("nodeCount")(nodeCount.get.asInstanceOf[js.Any])
-    if (privateEnvironmentConfig != null) __obj.updateDynamic("privateEnvironmentConfig")(privateEnvironmentConfig.asInstanceOf[js.Any])
-    if (softwareConfig != null) __obj.updateDynamic("softwareConfig")(softwareConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnvironmentConfig]
   }
+  @scala.inline
+  implicit class SchemaEnvironmentConfigOps[Self <: SchemaEnvironmentConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAirflowUri(value: String): Self = this.set("airflowUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAirflowUri: Self = this.set("airflowUri", js.undefined)
+    @scala.inline
+    def setDagGcsPrefix(value: String): Self = this.set("dagGcsPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDagGcsPrefix: Self = this.set("dagGcsPrefix", js.undefined)
+    @scala.inline
+    def setGkeCluster(value: String): Self = this.set("gkeCluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGkeCluster: Self = this.set("gkeCluster", js.undefined)
+    @scala.inline
+    def setNodeConfig(value: SchemaNodeConfig): Self = this.set("nodeConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeConfig: Self = this.set("nodeConfig", js.undefined)
+    @scala.inline
+    def setNodeCount(value: Double): Self = this.set("nodeCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeCount: Self = this.set("nodeCount", js.undefined)
+    @scala.inline
+    def setPrivateEnvironmentConfig(value: SchemaPrivateEnvironmentConfig): Self = this.set("privateEnvironmentConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateEnvironmentConfig: Self = this.set("privateEnvironmentConfig", js.undefined)
+    @scala.inline
+    def setSoftwareConfig(value: SchemaSoftwareConfig): Self = this.set("softwareConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSoftwareConfig: Self = this.set("softwareConfig", js.undefined)
+  }
+  
 }
 

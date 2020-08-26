@@ -1,193 +1,220 @@
 package typings.senchaTouch.Ext.data
 
-import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
-import typings.senchaTouch.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IAssociation extends IBase {
   /** [Config Option] (String) */
-  var associatedModel: js.UndefOr[String] = js.undefined
+  var associatedModel: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var associatedName: js.UndefOr[String] = js.undefined
+  var associatedName: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var associationKey: js.UndefOr[String] = js.undefined
+  var associationKey: js.UndefOr[String] = js.native
   /** [Method] Returns the value of associatedModel
     * @returns String
     */
-  var getAssociatedModel: js.UndefOr[js.Function0[String]] = js.undefined
+  var getAssociatedModel: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of associatedName
     * @returns String
     */
-  var getAssociatedName: js.UndefOr[js.Function0[String]] = js.undefined
+  var getAssociatedName: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of associationKey
     * @returns String
     */
-  var getAssociationKey: js.UndefOr[js.Function0[String]] = js.undefined
+  var getAssociationKey: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of name
     * @returns Object
     */
-  var getName: js.UndefOr[js.Function0[_]] = js.undefined
+  var getName: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of ownerModel
     * @returns Ext.data.Model/String
     */
-  var getOwnerModel: js.UndefOr[js.Function0[_]] = js.undefined
+  var getOwnerModel: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of ownerName
     * @returns String
     */
-  var getOwnerName: js.UndefOr[js.Function0[String]] = js.undefined
+  var getOwnerName: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of primaryKey
     * @returns String
     */
-  var getPrimaryKey: js.UndefOr[js.Function0[String]] = js.undefined
+  var getPrimaryKey: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of reader
     * @returns Ext.data.reader.Reader
     */
-  var getReader: js.UndefOr[js.Function0[typings.senchaTouch.Ext.data.reader.IReader]] = js.undefined
+  var getReader: js.UndefOr[js.Function0[typings.senchaTouch.Ext.data.reader.IReader]] = js.native
   /** [Method] Returns the value of type
     * @returns String
     */
-  var getType: js.UndefOr[js.Function0[String]] = js.undefined
+  var getType: js.UndefOr[js.Function0[String]] = js.native
   /** [Config Option] (Ext.data.Model/String) */
-  var ownerModel: js.UndefOr[js.Any] = js.undefined
+  var ownerModel: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var primaryKey: js.UndefOr[String] = js.undefined
+  var primaryKey: js.UndefOr[String] = js.native
   /** [Config Option] (Ext.data.reader.Reader) */
-  var reader: js.UndefOr[typings.senchaTouch.Ext.data.reader.IReader] = js.undefined
+  var reader: js.UndefOr[typings.senchaTouch.Ext.data.reader.IReader] = js.native
   /** [Method] Sets the value of associatedModel
     * @param associatedModel String The new value.
     */
-  var setAssociatedModel: js.UndefOr[js.Function1[/* associatedModel */ js.UndefOr[String], Unit]] = js.undefined
+  var setAssociatedModel: js.UndefOr[js.Function1[/* associatedModel */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of associatedName
     * @param associatedName String The new value.
     */
-  var setAssociatedName: js.UndefOr[js.Function1[/* associatedName */ js.UndefOr[String], Unit]] = js.undefined
+  var setAssociatedName: js.UndefOr[js.Function1[/* associatedName */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of associationKey
     * @param associationKey String The new value.
     */
-  var setAssociationKey: js.UndefOr[js.Function1[/* associationKey */ js.UndefOr[String], Unit]] = js.undefined
+  var setAssociationKey: js.UndefOr[js.Function1[/* associationKey */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of name
     * @param name Object The new value.
     */
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of ownerModel
     * @param ownerModel Ext.data.Model/String The new value.
     */
-  var setOwnerModel: js.UndefOr[js.Function1[/* ownerModel */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setOwnerModel: js.UndefOr[js.Function1[/* ownerModel */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of ownerName
     * @param ownerName String The new value.
     */
-  var setOwnerName: js.UndefOr[js.Function1[/* ownerName */ js.UndefOr[String], Unit]] = js.undefined
+  var setOwnerName: js.UndefOr[js.Function1[/* ownerName */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of primaryKey
     * @param primaryKey String The new value.
     */
-  var setPrimaryKey: js.UndefOr[js.Function1[/* primaryKey */ js.UndefOr[String], Unit]] = js.undefined
+  var setPrimaryKey: js.UndefOr[js.Function1[/* primaryKey */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of reader
     * @param reader Ext.data.reader.Reader The new value.
     */
   var setReader: js.UndefOr[
     js.Function1[/* reader */ js.UndefOr[typings.senchaTouch.Ext.data.reader.IReader], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the value of type
     * @param type String The new value.
     */
-  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Unit]] = js.undefined
+  var setType: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Unit]] = js.native
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object IAssociation {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    associatedModel: String = null,
-    associatedName: String = null,
-    associationKey: String = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    extend: String = null,
-    getAssociatedModel: () => String = null,
-    getAssociatedName: () => String = null,
-    getAssociationKey: () => String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getName: () => _ = null,
-    getOwnerModel: () => _ = null,
-    getOwnerName: () => String = null,
-    getPrimaryKey: () => String = null,
-    getReader: () => typings.senchaTouch.Ext.data.reader.IReader = null,
-    getType: () => String = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    mixins: js.Any = null,
-    ownerModel: js.Any = null,
-    platformConfig: js.Any = null,
-    primaryKey: String = null,
-    reader: typings.senchaTouch.Ext.data.reader.IReader = null,
-    self: IClass = null,
-    setAssociatedModel: /* associatedModel */ js.UndefOr[String] => Unit = null,
-    setAssociatedName: /* associatedName */ js.UndefOr[String] => Unit = null,
-    setAssociationKey: /* associationKey */ js.UndefOr[String] => Unit = null,
-    setName: /* name */ js.UndefOr[js.Any] => Unit = null,
-    setOwnerModel: /* ownerModel */ js.UndefOr[js.Any] => Unit = null,
-    setOwnerName: /* ownerName */ js.UndefOr[String] => Unit = null,
-    setPrimaryKey: /* primaryKey */ js.UndefOr[String] => Unit = null,
-    setReader: /* reader */ js.UndefOr[typings.senchaTouch.Ext.data.reader.IReader] => Unit = null,
-    setType: /* type */ js.UndefOr[String] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    `type`: String = null,
-    uses: Array = null
-  ): IAssociation = {
+  def apply(): IAssociation = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (associatedModel != null) __obj.updateDynamic("associatedModel")(associatedModel.asInstanceOf[js.Any])
-    if (associatedName != null) __obj.updateDynamic("associatedName")(associatedName.asInstanceOf[js.Any])
-    if (associationKey != null) __obj.updateDynamic("associationKey")(associationKey.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getAssociatedModel != null) __obj.updateDynamic("getAssociatedModel")(js.Any.fromFunction0(getAssociatedModel))
-    if (getAssociatedName != null) __obj.updateDynamic("getAssociatedName")(js.Any.fromFunction0(getAssociatedName))
-    if (getAssociationKey != null) __obj.updateDynamic("getAssociationKey")(js.Any.fromFunction0(getAssociationKey))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
-    if (getOwnerModel != null) __obj.updateDynamic("getOwnerModel")(js.Any.fromFunction0(getOwnerModel))
-    if (getOwnerName != null) __obj.updateDynamic("getOwnerName")(js.Any.fromFunction0(getOwnerName))
-    if (getPrimaryKey != null) __obj.updateDynamic("getPrimaryKey")(js.Any.fromFunction0(getPrimaryKey))
-    if (getReader != null) __obj.updateDynamic("getReader")(js.Any.fromFunction0(getReader))
-    if (getType != null) __obj.updateDynamic("getType")(js.Any.fromFunction0(getType))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (ownerModel != null) __obj.updateDynamic("ownerModel")(ownerModel.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
-    if (reader != null) __obj.updateDynamic("reader")(reader.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setAssociatedModel != null) __obj.updateDynamic("setAssociatedModel")(js.Any.fromFunction1(setAssociatedModel))
-    if (setAssociatedName != null) __obj.updateDynamic("setAssociatedName")(js.Any.fromFunction1(setAssociatedName))
-    if (setAssociationKey != null) __obj.updateDynamic("setAssociationKey")(js.Any.fromFunction1(setAssociationKey))
-    if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
-    if (setOwnerModel != null) __obj.updateDynamic("setOwnerModel")(js.Any.fromFunction1(setOwnerModel))
-    if (setOwnerName != null) __obj.updateDynamic("setOwnerName")(js.Any.fromFunction1(setOwnerName))
-    if (setPrimaryKey != null) __obj.updateDynamic("setPrimaryKey")(js.Any.fromFunction1(setPrimaryKey))
-    if (setReader != null) __obj.updateDynamic("setReader")(js.Any.fromFunction1(setReader))
-    if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAssociation]
   }
+  @scala.inline
+  implicit class IAssociationOps[Self <: IAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociatedModel(value: String): Self = this.set("associatedModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedModel: Self = this.set("associatedModel", js.undefined)
+    @scala.inline
+    def setAssociatedName(value: String): Self = this.set("associatedName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedName: Self = this.set("associatedName", js.undefined)
+    @scala.inline
+    def setAssociationKey(value: String): Self = this.set("associationKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationKey: Self = this.set("associationKey", js.undefined)
+    @scala.inline
+    def setGetAssociatedModel(value: () => String): Self = this.set("getAssociatedModel", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetAssociatedModel: Self = this.set("getAssociatedModel", js.undefined)
+    @scala.inline
+    def setGetAssociatedName(value: () => String): Self = this.set("getAssociatedName", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetAssociatedName: Self = this.set("getAssociatedName", js.undefined)
+    @scala.inline
+    def setGetAssociationKey(value: () => String): Self = this.set("getAssociationKey", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetAssociationKey: Self = this.set("getAssociationKey", js.undefined)
+    @scala.inline
+    def setGetName(value: () => _): Self = this.set("getName", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetName: Self = this.set("getName", js.undefined)
+    @scala.inline
+    def setGetOwnerModel(value: () => _): Self = this.set("getOwnerModel", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetOwnerModel: Self = this.set("getOwnerModel", js.undefined)
+    @scala.inline
+    def setGetOwnerName(value: () => String): Self = this.set("getOwnerName", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetOwnerName: Self = this.set("getOwnerName", js.undefined)
+    @scala.inline
+    def setGetPrimaryKey(value: () => String): Self = this.set("getPrimaryKey", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPrimaryKey: Self = this.set("getPrimaryKey", js.undefined)
+    @scala.inline
+    def setGetReader(value: () => typings.senchaTouch.Ext.data.reader.IReader): Self = this.set("getReader", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetReader: Self = this.set("getReader", js.undefined)
+    @scala.inline
+    def setGetType(value: () => String): Self = this.set("getType", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetType: Self = this.set("getType", js.undefined)
+    @scala.inline
+    def setOwnerModel(value: js.Any): Self = this.set("ownerModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerModel: Self = this.set("ownerModel", js.undefined)
+    @scala.inline
+    def setPrimaryKey(value: String): Self = this.set("primaryKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryKey: Self = this.set("primaryKey", js.undefined)
+    @scala.inline
+    def setReader(value: typings.senchaTouch.Ext.data.reader.IReader): Self = this.set("reader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReader: Self = this.set("reader", js.undefined)
+    @scala.inline
+    def setSetAssociatedModel(value: /* associatedModel */ js.UndefOr[String] => Unit): Self = this.set("setAssociatedModel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetAssociatedModel: Self = this.set("setAssociatedModel", js.undefined)
+    @scala.inline
+    def setSetAssociatedName(value: /* associatedName */ js.UndefOr[String] => Unit): Self = this.set("setAssociatedName", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetAssociatedName: Self = this.set("setAssociatedName", js.undefined)
+    @scala.inline
+    def setSetAssociationKey(value: /* associationKey */ js.UndefOr[String] => Unit): Self = this.set("setAssociationKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetAssociationKey: Self = this.set("setAssociationKey", js.undefined)
+    @scala.inline
+    def setSetName(value: /* name */ js.UndefOr[js.Any] => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetName: Self = this.set("setName", js.undefined)
+    @scala.inline
+    def setSetOwnerModel(value: /* ownerModel */ js.UndefOr[js.Any] => Unit): Self = this.set("setOwnerModel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetOwnerModel: Self = this.set("setOwnerModel", js.undefined)
+    @scala.inline
+    def setSetOwnerName(value: /* ownerName */ js.UndefOr[String] => Unit): Self = this.set("setOwnerName", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetOwnerName: Self = this.set("setOwnerName", js.undefined)
+    @scala.inline
+    def setSetPrimaryKey(value: /* primaryKey */ js.UndefOr[String] => Unit): Self = this.set("setPrimaryKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetPrimaryKey: Self = this.set("setPrimaryKey", js.undefined)
+    @scala.inline
+    def setSetReader(value: /* reader */ js.UndefOr[typings.senchaTouch.Ext.data.reader.IReader] => Unit): Self = this.set("setReader", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetReader: Self = this.set("setReader", js.undefined)
+    @scala.inline
+    def setSetType(value: /* type */ js.UndefOr[String] => Unit): Self = this.set("setType", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetType: Self = this.set("setType", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

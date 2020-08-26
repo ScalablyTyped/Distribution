@@ -28,6 +28,7 @@ class ResourceAccountsPublisherprofiles protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPublisherProfile] = js.native
   def get(callback: BodyResponseCallback[SchemaPublisherProfile]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPublisherProfile] = js.native
   def get(params: ParamsResourceAccountsPublisherprofilesGet): GaxiosPromise[SchemaPublisherProfile] = js.native
   def get(
     params: ParamsResourceAccountsPublisherprofilesGet,
@@ -60,6 +61,7 @@ class ResourceAccountsPublisherprofiles protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListPublisherProfilesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListPublisherProfilesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListPublisherProfilesResponse] = js.native
   def list(params: ParamsResourceAccountsPublisherprofilesList): GaxiosPromise[SchemaListPublisherProfilesResponse] = js.native
   def list(
     params: ParamsResourceAccountsPublisherprofilesList,

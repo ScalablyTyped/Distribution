@@ -7,69 +7,94 @@ import scala.scalajs.js.annotation._
 /**
   * Oral diet components
   */
+@js.native
 trait NutritionOrderOralDiet extends BackboneElement {
   /**
     * Contains extended information for property 'instruction'.
     */
-  var _instruction: js.UndefOr[Element] = js.undefined
+  var _instruction: js.UndefOr[Element] = js.native
   /**
     * The required consistency of fluids and liquids provided to the patient
     */
-  var fluidConsistencyType: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var fluidConsistencyType: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Instructions or additional information about the oral diet
     */
-  var instruction: js.UndefOr[String] = js.undefined
+  var instruction: js.UndefOr[String] = js.native
   /**
     * Required  nutrient modifications
     */
-  var nutrient: js.UndefOr[js.Array[NutritionOrderOralDietNutrient]] = js.undefined
+  var nutrient: js.UndefOr[js.Array[NutritionOrderOralDietNutrient]] = js.native
   /**
     * Scheduled frequency of diet
     */
-  var schedule: js.UndefOr[js.Array[Timing]] = js.undefined
+  var schedule: js.UndefOr[js.Array[Timing]] = js.native
   /**
     * Required  texture modifications
     */
-  var texture: js.UndefOr[js.Array[NutritionOrderOralDietTexture]] = js.undefined
+  var texture: js.UndefOr[js.Array[NutritionOrderOralDietTexture]] = js.native
   /**
     * Type of oral diet or diet restrictions that describe what can be consumed orally
     */
-  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.native
 }
 
 object NutritionOrderOralDiet {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _instruction: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    fluidConsistencyType: js.Array[CodeableConcept] = null,
-    id: String = null,
-    instruction: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    nutrient: js.Array[NutritionOrderOralDietNutrient] = null,
-    schedule: js.Array[Timing] = null,
-    texture: js.Array[NutritionOrderOralDietTexture] = null,
-    `type`: js.Array[CodeableConcept] = null
-  ): NutritionOrderOralDiet = {
+  def apply(): NutritionOrderOralDiet = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_instruction != null) __obj.updateDynamic("_instruction")(_instruction.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (fluidConsistencyType != null) __obj.updateDynamic("fluidConsistencyType")(fluidConsistencyType.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (instruction != null) __obj.updateDynamic("instruction")(instruction.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (nutrient != null) __obj.updateDynamic("nutrient")(nutrient.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (texture != null) __obj.updateDynamic("texture")(texture.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NutritionOrderOralDiet]
   }
+  @scala.inline
+  implicit class NutritionOrderOralDietOps[Self <: NutritionOrderOralDiet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_instruction(value: Element): Self = this.set("_instruction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_instruction: Self = this.set("_instruction", js.undefined)
+    @scala.inline
+    def setFluidConsistencyTypeVarargs(value: CodeableConcept*): Self = this.set("fluidConsistencyType", js.Array(value :_*))
+    @scala.inline
+    def setFluidConsistencyType(value: js.Array[CodeableConcept]): Self = this.set("fluidConsistencyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFluidConsistencyType: Self = this.set("fluidConsistencyType", js.undefined)
+    @scala.inline
+    def setInstruction(value: String): Self = this.set("instruction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstruction: Self = this.set("instruction", js.undefined)
+    @scala.inline
+    def setNutrientVarargs(value: NutritionOrderOralDietNutrient*): Self = this.set("nutrient", js.Array(value :_*))
+    @scala.inline
+    def setNutrient(value: js.Array[NutritionOrderOralDietNutrient]): Self = this.set("nutrient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNutrient: Self = this.set("nutrient", js.undefined)
+    @scala.inline
+    def setScheduleVarargs(value: Timing*): Self = this.set("schedule", js.Array(value :_*))
+    @scala.inline
+    def setSchedule(value: js.Array[Timing]): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setTextureVarargs(value: NutritionOrderOralDietTexture*): Self = this.set("texture", js.Array(value :_*))
+    @scala.inline
+    def setTexture(value: js.Array[NutritionOrderOralDietTexture]): Self = this.set("texture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTexture: Self = this.set("texture", js.undefined)
+    @scala.inline
+    def setTypeVarargs(value: CodeableConcept*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: js.Array[CodeableConcept]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -13,13 +13,17 @@ trait PlanRule extends js.Object {
     */
   var completionWindow: js.UndefOr[Input[Double]] = js.native
   /**
-    * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires.  Fields documented below.
+    * Configuration block(s) with copy operation settings. Detailed below.
+    */
+  var copyActions: js.UndefOr[Input[js.Array[Input[PlanRuleCopyAction]]]] = js.native
+  /**
+    * The lifecycle defines when a protected resource is copied over to a backup vault and when it expires.  Fields documented above.
     */
   var lifecycle: js.UndefOr[Input[PlanRuleLifecycle]] = js.native
   /**
     * Metadata that you can assign to help organize the resources that you create.
     */
-  var recoveryPointTags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  var recoveryPointTags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * An display name for a backup rule.
     */
@@ -40,22 +44,52 @@ trait PlanRule extends js.Object {
 
 object PlanRule {
   @scala.inline
-  def apply(
-    ruleName: Input[String],
-    targetVaultName: Input[String],
-    completionWindow: Input[Double] = null,
-    lifecycle: Input[PlanRuleLifecycle] = null,
-    recoveryPointTags: Input[StringDictionary[_]] = null,
-    schedule: Input[String] = null,
-    startWindow: Input[Double] = null
-  ): PlanRule = {
+  def apply(ruleName: Input[String], targetVaultName: Input[String]): PlanRule = {
     val __obj = js.Dynamic.literal(ruleName = ruleName.asInstanceOf[js.Any], targetVaultName = targetVaultName.asInstanceOf[js.Any])
-    if (completionWindow != null) __obj.updateDynamic("completionWindow")(completionWindow.asInstanceOf[js.Any])
-    if (lifecycle != null) __obj.updateDynamic("lifecycle")(lifecycle.asInstanceOf[js.Any])
-    if (recoveryPointTags != null) __obj.updateDynamic("recoveryPointTags")(recoveryPointTags.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (startWindow != null) __obj.updateDynamic("startWindow")(startWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlanRule]
   }
+  @scala.inline
+  implicit class PlanRuleOps[Self <: PlanRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRuleName(value: Input[String]): Self = this.set("ruleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetVaultName(value: Input[String]): Self = this.set("targetVaultName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompletionWindow(value: Input[Double]): Self = this.set("completionWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionWindow: Self = this.set("completionWindow", js.undefined)
+    @scala.inline
+    def setCopyActionsVarargs(value: Input[PlanRuleCopyAction]*): Self = this.set("copyActions", js.Array(value :_*))
+    @scala.inline
+    def setCopyActions(value: Input[js.Array[Input[PlanRuleCopyAction]]]): Self = this.set("copyActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyActions: Self = this.set("copyActions", js.undefined)
+    @scala.inline
+    def setLifecycle(value: Input[PlanRuleLifecycle]): Self = this.set("lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycle: Self = this.set("lifecycle", js.undefined)
+    @scala.inline
+    def setRecoveryPointTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("recoveryPointTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecoveryPointTags: Self = this.set("recoveryPointTags", js.undefined)
+    @scala.inline
+    def setSchedule(value: Input[String]): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setStartWindow(value: Input[Double]): Self = this.set("startWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartWindow: Self = this.set("startWindow", js.undefined)
+  }
+  
 }
 

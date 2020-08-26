@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Globalization
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,25 +14,6 @@ class Language protected ()
     * @param languageTag A BCP-47 language tag. See Remarks.
     */
   def this(languageTag: String) = this()
-  /** Gets a localized string that is suitable for display to the user for identifying the language. */
-  /* CompleteClass */
-  override var displayName: String = js.native
-  /** Gets the normalized BCP-47 language tag for this language. */
-  /* CompleteClass */
-  override var languageTag: String = js.native
-  /** Gets the name of the language in the language itself. */
-  /* CompleteClass */
-  override var nativeName: String = js.native
-  /** Gets the four-letter ISO 15924 script code of the language. */
-  /* CompleteClass */
-  override var script: String = js.native
-  /**
-    * Retrieves a vector of extension subtags in the current language for the given extension identified by singleton.
-    * @param singleton A single-character subtag for the LanguageTag of the current language. See BCP-47 language tags, Extensions and the Extensions Registry.
-    * @return The list of extension subtags identified by singleton.
-    */
-  /* CompleteClass */
-  override def getExtensionSubtags(singleton: String): IVectorView[String] = js.native
 }
 
 /* static members */

@@ -14,10 +14,34 @@ object Transforms extends js.Object {
   def computeTemeToPseudoFixedMatrix(date: JulianDate): Matrix3 = js.native
   def computeTemeToPseudoFixedMatrix(date: JulianDate, result: Matrix3): Matrix3 = js.native
   def eastNorthUpToFixedFrame(origin: Cartesian3): Matrix4 = js.native
+  def eastNorthUpToFixedFrame(origin: Cartesian3, ellipsoid: js.UndefOr[scala.Nothing], result: Matrix4): Matrix4 = js.native
   def eastNorthUpToFixedFrame(origin: Cartesian3, ellipsoid: Ellipsoid): Matrix4 = js.native
   def eastNorthUpToFixedFrame(origin: Cartesian3, ellipsoid: Ellipsoid, result: Matrix4): Matrix4 = js.native
   def fixedFrameToHeadingPitchRoll(transform: Matrix4): HeadingPitchRoll = js.native
+  def fixedFrameToHeadingPitchRoll(
+    transform: Matrix4,
+    ellipsoid: js.UndefOr[scala.Nothing],
+    fixedFrameTransform: js.UndefOr[scala.Nothing],
+    result: HeadingPitchRoll
+  ): HeadingPitchRoll = js.native
+  def fixedFrameToHeadingPitchRoll(
+    transform: Matrix4,
+    ellipsoid: js.UndefOr[scala.Nothing],
+    fixedFrameTransform: LocalFrameToFixedFrame
+  ): HeadingPitchRoll = js.native
+  def fixedFrameToHeadingPitchRoll(
+    transform: Matrix4,
+    ellipsoid: js.UndefOr[scala.Nothing],
+    fixedFrameTransform: LocalFrameToFixedFrame,
+    result: HeadingPitchRoll
+  ): HeadingPitchRoll = js.native
   def fixedFrameToHeadingPitchRoll(transform: Matrix4, ellipsoid: Ellipsoid): HeadingPitchRoll = js.native
+  def fixedFrameToHeadingPitchRoll(
+    transform: Matrix4,
+    ellipsoid: Ellipsoid,
+    fixedFrameTransform: js.UndefOr[scala.Nothing],
+    result: HeadingPitchRoll
+  ): HeadingPitchRoll = js.native
   def fixedFrameToHeadingPitchRoll(transform: Matrix4, ellipsoid: Ellipsoid, fixedFrameTransform: LocalFrameToFixedFrame): HeadingPitchRoll = js.native
   def fixedFrameToHeadingPitchRoll(
     transform: Matrix4,
@@ -26,7 +50,34 @@ object Transforms extends js.Object {
     result: HeadingPitchRoll
   ): HeadingPitchRoll = js.native
   def headingPitchRollQuaternion(origin: Cartesian3, headingPitchRoll: HeadingPitchRoll): Quaternion = js.native
+  def headingPitchRollQuaternion(
+    origin: Cartesian3,
+    headingPitchRoll: HeadingPitchRoll,
+    ellipsoid: js.UndefOr[scala.Nothing],
+    fixedFrameTransform: js.UndefOr[scala.Nothing],
+    result: Quaternion
+  ): Quaternion = js.native
+  def headingPitchRollQuaternion(
+    origin: Cartesian3,
+    headingPitchRoll: HeadingPitchRoll,
+    ellipsoid: js.UndefOr[scala.Nothing],
+    fixedFrameTransform: LocalFrameToFixedFrame
+  ): Quaternion = js.native
+  def headingPitchRollQuaternion(
+    origin: Cartesian3,
+    headingPitchRoll: HeadingPitchRoll,
+    ellipsoid: js.UndefOr[scala.Nothing],
+    fixedFrameTransform: LocalFrameToFixedFrame,
+    result: Quaternion
+  ): Quaternion = js.native
   def headingPitchRollQuaternion(origin: Cartesian3, headingPitchRoll: HeadingPitchRoll, ellipsoid: Ellipsoid): Quaternion = js.native
+  def headingPitchRollQuaternion(
+    origin: Cartesian3,
+    headingPitchRoll: HeadingPitchRoll,
+    ellipsoid: Ellipsoid,
+    fixedFrameTransform: js.UndefOr[scala.Nothing],
+    result: Quaternion
+  ): Quaternion = js.native
   def headingPitchRollQuaternion(
     origin: Cartesian3,
     headingPitchRoll: HeadingPitchRoll,
@@ -41,7 +92,34 @@ object Transforms extends js.Object {
     result: Quaternion
   ): Quaternion = js.native
   def headingPitchRollToFixedFrame(origin: Cartesian3, headingPitchRoll: HeadingPitchRoll): Matrix4 = js.native
+  def headingPitchRollToFixedFrame(
+    origin: Cartesian3,
+    headingPitchRoll: HeadingPitchRoll,
+    ellipsoid: js.UndefOr[scala.Nothing],
+    fixedFrameTransform: js.UndefOr[scala.Nothing],
+    result: Matrix4
+  ): Matrix4 = js.native
+  def headingPitchRollToFixedFrame(
+    origin: Cartesian3,
+    headingPitchRoll: HeadingPitchRoll,
+    ellipsoid: js.UndefOr[scala.Nothing],
+    fixedFrameTransform: LocalFrameToFixedFrame
+  ): Matrix4 = js.native
+  def headingPitchRollToFixedFrame(
+    origin: Cartesian3,
+    headingPitchRoll: HeadingPitchRoll,
+    ellipsoid: js.UndefOr[scala.Nothing],
+    fixedFrameTransform: LocalFrameToFixedFrame,
+    result: Matrix4
+  ): Matrix4 = js.native
   def headingPitchRollToFixedFrame(origin: Cartesian3, headingPitchRoll: HeadingPitchRoll, ellipsoid: Ellipsoid): Matrix4 = js.native
+  def headingPitchRollToFixedFrame(
+    origin: Cartesian3,
+    headingPitchRoll: HeadingPitchRoll,
+    ellipsoid: Ellipsoid,
+    fixedFrameTransform: js.UndefOr[scala.Nothing],
+    result: Matrix4
+  ): Matrix4 = js.native
   def headingPitchRollToFixedFrame(
     origin: Cartesian3,
     headingPitchRoll: HeadingPitchRoll,
@@ -56,9 +134,11 @@ object Transforms extends js.Object {
     result: Matrix4
   ): Matrix4 = js.native
   def northEastDownToFixedFrame(origin: Cartesian3): Matrix4 = js.native
+  def northEastDownToFixedFrame(origin: Cartesian3, ellipsoid: js.UndefOr[scala.Nothing], result: Matrix4): Matrix4 = js.native
   def northEastDownToFixedFrame(origin: Cartesian3, ellipsoid: Ellipsoid): Matrix4 = js.native
   def northEastDownToFixedFrame(origin: Cartesian3, ellipsoid: Ellipsoid, result: Matrix4): Matrix4 = js.native
   def northUpEastToFixedFrame(origin: Cartesian3): Matrix4 = js.native
+  def northUpEastToFixedFrame(origin: Cartesian3, ellipsoid: js.UndefOr[scala.Nothing], result: Matrix4): Matrix4 = js.native
   def northUpEastToFixedFrame(origin: Cartesian3, ellipsoid: Ellipsoid): Matrix4 = js.native
   def northUpEastToFixedFrame(origin: Cartesian3, ellipsoid: Ellipsoid, result: Matrix4): Matrix4 = js.native
   def pointToWindowCoordinates(modelViewProjectionMatrix: Matrix4, viewportTransformation: Matrix4, point: Cartesian3): Cartesian2 = js.native

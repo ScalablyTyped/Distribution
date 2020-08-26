@@ -27,17 +27,10 @@ object abortMultipartUploadCommandMod extends js.Object {
           Blob
         ] {
     def this(input: AbortMultipartUploadInput) = this()
-    /* CompleteClass */
-    override val input: AbortMultipartUploadInput = js.native
     val middlewareStack: MiddlewareStack[AbortMultipartUploadInput, AbortMultipartUploadOutput, Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[AbortMultipartUploadInput, AbortMultipartUploadOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[AbortMultipartUploadInput, AbortMultipartUploadOutput] = js.native
   }

@@ -5,33 +5,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Merge
   extends /* key */ StringDictionary[js.Any] {
-  var add: js.UndefOr[Boolean] = js.undefined
-  var deferred: js.UndefOr[Boolean] = js.undefined
-  var merge: js.UndefOr[Boolean] = js.undefined
-  var remove: js.UndefOr[Boolean] = js.undefined
-  var silent: js.UndefOr[Boolean] = js.undefined
+  var add: js.UndefOr[Boolean] = js.native
+  var deferred: js.UndefOr[Boolean] = js.native
+  var merge: js.UndefOr[Boolean] = js.native
+  var remove: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.native
 }
 
 object Merge {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    add: js.UndefOr[Boolean] = js.undefined,
-    deferred: js.UndefOr[Boolean] = js.undefined,
-    merge: js.UndefOr[Boolean] = js.undefined,
-    remove: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined
-  ): Merge = {
+  def apply(): Merge = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Merge]
   }
+  @scala.inline
+  implicit class MergeOps[Self <: Merge] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: Boolean): Self = this.set("add", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdd: Self = this.set("add", js.undefined)
+    @scala.inline
+    def setDeferred(value: Boolean): Self = this.set("deferred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeferred: Self = this.set("deferred", js.undefined)
+    @scala.inline
+    def setMerge(value: Boolean): Self = this.set("merge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerge: Self = this.set("merge", js.undefined)
+    @scala.inline
+    def setRemove(value: Boolean): Self = this.set("remove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemove: Self = this.set("remove", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+  }
+  
 }
 

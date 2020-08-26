@@ -1,41 +1,39 @@
 package typings.mongodb.mod
 
-import typings.node.Buffer
-import typings.node.tlsMod.PeerCertificate
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServerOptions extends SSLOptions {
   /**
     * @default false
     */
-  var domainsEnabled: js.UndefOr[Boolean] = js.undefined
+  var domainsEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Specify a file sync write concern
     * @default false
     */
-  var fsync: js.UndefOr[Boolean] = js.undefined
+  var fsync: js.UndefOr[Boolean] = js.native
   /**
     * The High availability period for replicaset inquiry
     * @default 10000
     */
-  var haInterval: js.UndefOr[scala.Double] = js.undefined
+  var haInterval: js.UndefOr[scala.Double] = js.native
   /**
     * Enable command monitoring for this client
     * @default false
     */
-  var monitorCommands: js.UndefOr[Boolean] = js.undefined
+  var monitorCommands: js.UndefOr[Boolean] = js.native
   /**
     * @default true
     */
-  var monitoring: js.UndefOr[Boolean] = js.undefined
+  var monitoring: js.UndefOr[Boolean] = js.native
   /**
     * Will wait # milliseconds between retries
     * @default 1000
     */
-  var reconnectInterval: js.UndefOr[scala.Double] = js.undefined
+  var reconnectInterval: js.UndefOr[scala.Double] = js.native
   /**
     * If you're connected to a single server or mongos proxy (as opposed to a replica set),
     * the MongoDB driver will try to reconnect every reconnectInterval milliseconds for reconnectTries
@@ -43,61 +41,63 @@ trait ServerOptions extends SSLOptions {
     * reconnectFailed event.
     * @default 30
     */
-  var reconnectTries: js.UndefOr[scala.Double] = js.undefined
+  var reconnectTries: js.UndefOr[scala.Double] = js.native
   /**
     * Socket Options
     */
-  var socketOptions: js.UndefOr[SocketOptions] = js.undefined
+  var socketOptions: js.UndefOr[SocketOptions] = js.native
 }
 
 object ServerOptions {
   @scala.inline
-  def apply(
-    checkServerIdentity: Boolean | (js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]) = null,
-    ciphers: String = null,
-    domainsEnabled: js.UndefOr[Boolean] = js.undefined,
-    ecdhCurve: String = null,
-    fsync: js.UndefOr[Boolean] = js.undefined,
-    haInterval: js.UndefOr[scala.Double] = js.undefined,
-    minSize: js.UndefOr[scala.Double] = js.undefined,
-    monitorCommands: js.UndefOr[Boolean] = js.undefined,
-    monitoring: js.UndefOr[Boolean] = js.undefined,
-    poolSize: js.UndefOr[scala.Double] = js.undefined,
-    reconnectInterval: js.UndefOr[scala.Double] = js.undefined,
-    reconnectTries: js.UndefOr[scala.Double] = js.undefined,
-    servername: String = null,
-    socketOptions: SocketOptions = null,
-    ssl: js.UndefOr[Boolean] = js.undefined,
-    sslCA: js.Array[Buffer | String] = null,
-    sslCRL: js.Array[Buffer | String] = null,
-    sslCert: Buffer | String = null,
-    sslKey: Buffer | String = null,
-    sslPass: Buffer | String = null,
-    sslValidate: js.UndefOr[Boolean] = js.undefined
-  ): ServerOptions = {
+  def apply(): ServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(checkServerIdentity.asInstanceOf[js.Any])
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (!js.isUndefined(domainsEnabled)) __obj.updateDynamic("domainsEnabled")(domainsEnabled.get.asInstanceOf[js.Any])
-    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve.asInstanceOf[js.Any])
-    if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(haInterval)) __obj.updateDynamic("haInterval")(haInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitorCommands)) __obj.updateDynamic("monitorCommands")(monitorCommands.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(poolSize)) __obj.updateDynamic("poolSize")(poolSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectInterval)) __obj.updateDynamic("reconnectInterval")(reconnectInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectTries)) __obj.updateDynamic("reconnectTries")(reconnectTries.get.asInstanceOf[js.Any])
-    if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
-    if (socketOptions != null) __obj.updateDynamic("socketOptions")(socketOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
-    if (sslCA != null) __obj.updateDynamic("sslCA")(sslCA.asInstanceOf[js.Any])
-    if (sslCRL != null) __obj.updateDynamic("sslCRL")(sslCRL.asInstanceOf[js.Any])
-    if (sslCert != null) __obj.updateDynamic("sslCert")(sslCert.asInstanceOf[js.Any])
-    if (sslKey != null) __obj.updateDynamic("sslKey")(sslKey.asInstanceOf[js.Any])
-    if (sslPass != null) __obj.updateDynamic("sslPass")(sslPass.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslValidate)) __obj.updateDynamic("sslValidate")(sslValidate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
+  @scala.inline
+  implicit class ServerOptionsOps[Self <: ServerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainsEnabled(value: Boolean): Self = this.set("domainsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainsEnabled: Self = this.set("domainsEnabled", js.undefined)
+    @scala.inline
+    def setFsync(value: Boolean): Self = this.set("fsync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFsync: Self = this.set("fsync", js.undefined)
+    @scala.inline
+    def setHaInterval(value: scala.Double): Self = this.set("haInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHaInterval: Self = this.set("haInterval", js.undefined)
+    @scala.inline
+    def setMonitorCommands(value: Boolean): Self = this.set("monitorCommands", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitorCommands: Self = this.set("monitorCommands", js.undefined)
+    @scala.inline
+    def setMonitoring(value: Boolean): Self = this.set("monitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoring: Self = this.set("monitoring", js.undefined)
+    @scala.inline
+    def setReconnectInterval(value: scala.Double): Self = this.set("reconnectInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnectInterval: Self = this.set("reconnectInterval", js.undefined)
+    @scala.inline
+    def setReconnectTries(value: scala.Double): Self = this.set("reconnectTries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnectTries: Self = this.set("reconnectTries", js.undefined)
+    @scala.inline
+    def setSocketOptions(value: SocketOptions): Self = this.set("socketOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocketOptions: Self = this.set("socketOptions", js.undefined)
+  }
+  
 }
 

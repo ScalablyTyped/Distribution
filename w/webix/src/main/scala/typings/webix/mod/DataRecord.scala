@@ -13,6 +13,7 @@ trait DataRecord extends js.Object {
   def attachEvent(`type`: String, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: String, functor: WebixCallback, id: String): String | Double = js.native
   def bind(target: js.Any): Unit = js.native
+  def bind(target: js.Any, rule: js.UndefOr[scala.Nothing], format: String): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
   def blockEvent(): Unit = js.native
@@ -23,6 +24,7 @@ trait DataRecord extends js.Object {
   def hasEvent(name: String): Boolean = js.native
   def isVisible(): Boolean = js.native
   def load(url: String): js.Promise[_] = js.native
+  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
   def load(url: String, `type`: String): js.Promise[_] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
   def mapEvent(map: js.Any): Unit = js.native

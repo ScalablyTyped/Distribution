@@ -34,6 +34,7 @@ class ResourcePipelines protected () extends js.Object {
     */
   def run(): GaxiosPromise[SchemaOperation] = js.native
   def run(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def run(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourcePipelinesRun): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourcePipelinesRun, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def run(

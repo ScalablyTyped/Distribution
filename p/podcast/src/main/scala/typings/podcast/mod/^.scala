@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends Podcast {
   def this(options: FeedOptions) = this()
+  def this(options: js.UndefOr[scala.Nothing], items: js.Array[Item]) = this()
   def this(options: FeedOptions, items: js.Array[Item]) = this()
 }
 

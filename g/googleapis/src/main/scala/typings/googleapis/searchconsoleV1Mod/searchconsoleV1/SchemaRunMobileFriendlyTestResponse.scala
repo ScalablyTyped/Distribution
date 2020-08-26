@@ -34,20 +34,46 @@ trait SchemaRunMobileFriendlyTestResponse extends js.Object {
 
 object SchemaRunMobileFriendlyTestResponse {
   @scala.inline
-  def apply(
-    mobileFriendliness: String = null,
-    mobileFriendlyIssues: js.Array[SchemaMobileFriendlyIssue] = null,
-    resourceIssues: js.Array[SchemaResourceIssue] = null,
-    screenshot: SchemaImage = null,
-    testStatus: SchemaTestStatus = null
-  ): SchemaRunMobileFriendlyTestResponse = {
+  def apply(): SchemaRunMobileFriendlyTestResponse = {
     val __obj = js.Dynamic.literal()
-    if (mobileFriendliness != null) __obj.updateDynamic("mobileFriendliness")(mobileFriendliness.asInstanceOf[js.Any])
-    if (mobileFriendlyIssues != null) __obj.updateDynamic("mobileFriendlyIssues")(mobileFriendlyIssues.asInstanceOf[js.Any])
-    if (resourceIssues != null) __obj.updateDynamic("resourceIssues")(resourceIssues.asInstanceOf[js.Any])
-    if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot.asInstanceOf[js.Any])
-    if (testStatus != null) __obj.updateDynamic("testStatus")(testStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRunMobileFriendlyTestResponse]
   }
+  @scala.inline
+  implicit class SchemaRunMobileFriendlyTestResponseOps[Self <: SchemaRunMobileFriendlyTestResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMobileFriendliness(value: String): Self = this.set("mobileFriendliness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobileFriendliness: Self = this.set("mobileFriendliness", js.undefined)
+    @scala.inline
+    def setMobileFriendlyIssuesVarargs(value: SchemaMobileFriendlyIssue*): Self = this.set("mobileFriendlyIssues", js.Array(value :_*))
+    @scala.inline
+    def setMobileFriendlyIssues(value: js.Array[SchemaMobileFriendlyIssue]): Self = this.set("mobileFriendlyIssues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobileFriendlyIssues: Self = this.set("mobileFriendlyIssues", js.undefined)
+    @scala.inline
+    def setResourceIssuesVarargs(value: SchemaResourceIssue*): Self = this.set("resourceIssues", js.Array(value :_*))
+    @scala.inline
+    def setResourceIssues(value: js.Array[SchemaResourceIssue]): Self = this.set("resourceIssues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceIssues: Self = this.set("resourceIssues", js.undefined)
+    @scala.inline
+    def setScreenshot(value: SchemaImage): Self = this.set("screenshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenshot: Self = this.set("screenshot", js.undefined)
+    @scala.inline
+    def setTestStatus(value: SchemaTestStatus): Self = this.set("testStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestStatus: Self = this.set("testStatus", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait UpdateEventConfigurationsRequest extends js.Object {
 
 object UpdateEventConfigurationsRequest {
   @scala.inline
-  def apply(eventConfigurations: EventConfigurations = null): UpdateEventConfigurationsRequest = {
+  def apply(): UpdateEventConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (eventConfigurations != null) __obj.updateDynamic("eventConfigurations")(eventConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEventConfigurationsRequest]
   }
+  @scala.inline
+  implicit class UpdateEventConfigurationsRequestOps[Self <: UpdateEventConfigurationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventConfigurations(value: EventConfigurations): Self = this.set("eventConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventConfigurations: Self = this.set("eventConfigurations", js.undefined)
+  }
+  
 }
 

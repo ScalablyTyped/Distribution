@@ -19,6 +19,7 @@ class Literal protected () extends default {
     */
   def this(value: String) = this()
   def this(value: String, language: String) = this()
+  def this(value: String, language: js.UndefOr[scala.Nothing], datatype: js.Any) = this()
   def this(value: String, language: String, datatype: js.Any) = this()
   def this(value: String, language: Null, datatype: js.Any) = this()
 }

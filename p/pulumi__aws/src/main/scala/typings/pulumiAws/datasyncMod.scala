@@ -8,8 +8,8 @@ import typings.pulumiAws.locationSmbMod.LocationSmbArgs
 import typings.pulumiAws.locationSmbMod.LocationSmbState
 import typings.pulumiAws.nfsLocationMod.NfsLocationArgs
 import typings.pulumiAws.nfsLocationMod.NfsLocationState
-import typings.pulumiAws.s3LocationMod.S3LocationArgs
-import typings.pulumiAws.s3LocationMod.S3LocationState
+import typings.pulumiAws.s3locationMod.S3LocationArgs
+import typings.pulumiAws.s3locationMod.S3LocationState
 import typings.pulumiAws.taskMod.TaskArgs
 import typings.pulumiAws.taskMod.TaskState
 import typings.pulumiPulumi.outputMod.Input
@@ -34,6 +34,7 @@ object datasyncMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: AgentArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: AgentArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -81,7 +82,7 @@ object datasyncMod extends js.Object {
   
   @js.native
   class S3Location protected ()
-    extends typings.pulumiAws.s3LocationMod.S3Location {
+    extends typings.pulumiAws.s3locationMod.S3Location {
     /**
       * Create a S3Location resource with the given unique name, arguments, and options.
       *
@@ -117,8 +118,10 @@ object datasyncMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.agentMod.Agent = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.agentMod.Agent = js.native
     def get(name: String, id: Input[ID], state: AgentState): typings.pulumiAws.agentMod.Agent = js.native
     def get(name: String, id: Input[ID], state: AgentState, opts: CustomResourceOptions): typings.pulumiAws.agentMod.Agent = js.native
     /**
@@ -138,8 +141,10 @@ object datasyncMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.efsLocationMod.EfsLocation = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.efsLocationMod.EfsLocation = js.native
     def get(name: String, id: Input[ID], state: EfsLocationState): typings.pulumiAws.efsLocationMod.EfsLocation = js.native
     def get(name: String, id: Input[ID], state: EfsLocationState, opts: CustomResourceOptions): typings.pulumiAws.efsLocationMod.EfsLocation = js.native
     /**
@@ -159,8 +164,10 @@ object datasyncMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.locationSmbMod.LocationSmb = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.locationSmbMod.LocationSmb = js.native
     def get(name: String, id: Input[ID], state: LocationSmbState): typings.pulumiAws.locationSmbMod.LocationSmb = js.native
     def get(name: String, id: Input[ID], state: LocationSmbState, opts: CustomResourceOptions): typings.pulumiAws.locationSmbMod.LocationSmb = js.native
     /**
@@ -180,8 +187,10 @@ object datasyncMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.nfsLocationMod.NfsLocation = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.nfsLocationMod.NfsLocation = js.native
     def get(name: String, id: Input[ID], state: NfsLocationState): typings.pulumiAws.nfsLocationMod.NfsLocation = js.native
     def get(name: String, id: Input[ID], state: NfsLocationState, opts: CustomResourceOptions): typings.pulumiAws.nfsLocationMod.NfsLocation = js.native
     /**
@@ -201,15 +210,17 @@ object datasyncMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.s3LocationMod.S3Location = js.native
-    def get(name: String, id: Input[ID], state: S3LocationState): typings.pulumiAws.s3LocationMod.S3Location = js.native
-    def get(name: String, id: Input[ID], state: S3LocationState, opts: CustomResourceOptions): typings.pulumiAws.s3LocationMod.S3Location = js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.s3locationMod.S3Location = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.s3locationMod.S3Location = js.native
+    def get(name: String, id: Input[ID], state: S3LocationState): typings.pulumiAws.s3locationMod.S3Location = js.native
+    def get(name: String, id: Input[ID], state: S3LocationState, opts: CustomResourceOptions): typings.pulumiAws.s3locationMod.S3Location = js.native
     /**
       * Returns true if the given object is an instance of S3Location.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/s3Location.S3Location */ Boolean = js.native
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/s3location.S3Location */ Boolean = js.native
   }
   
   /* static members */
@@ -222,8 +233,10 @@ object datasyncMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.taskMod.Task = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.taskMod.Task = js.native
     def get(name: String, id: Input[ID], state: TaskState): typings.pulumiAws.taskMod.Task = js.native
     def get(name: String, id: Input[ID], state: TaskState, opts: CustomResourceOptions): typings.pulumiAws.taskMod.Task = js.native
     /**

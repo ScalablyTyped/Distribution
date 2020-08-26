@@ -18,11 +18,32 @@ trait S3BucketDefinitionForJob extends js.Object {
 
 object S3BucketDefinitionForJob {
   @scala.inline
-  def apply(accountId: string = null, buckets: listOfString = null): S3BucketDefinitionForJob = {
+  def apply(): S3BucketDefinitionForJob = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3BucketDefinitionForJob]
   }
+  @scala.inline
+  implicit class S3BucketDefinitionForJobOps[Self <: S3BucketDefinitionForJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: string): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setBucketsVarargs(value: string*): Self = this.set("buckets", js.Array(value :_*))
+    @scala.inline
+    def setBuckets(value: listOfString): Self = this.set("buckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuckets: Self = this.set("buckets", js.undefined)
+  }
+  
 }
 

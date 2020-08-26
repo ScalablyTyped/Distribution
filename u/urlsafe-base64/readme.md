@@ -11,8 +11,8 @@ URL Safe Base64 encoding
 | Full name          | urlsafe-base64 |
 | Keywords           | base64, encoding, url, util |
 | # releases         | 1 |
-| # dependents       | 110 |
-| # downloads        | 2771956 |
+| # dependents       | 109 |
+| # downloads        | 2879890 |
 | # stars            | 6 |
 
 ## Links

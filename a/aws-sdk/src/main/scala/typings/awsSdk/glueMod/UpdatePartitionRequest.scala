@@ -15,11 +15,11 @@ trait UpdatePartitionRequest extends js.Object {
     */
   var DatabaseName: NameString = js.native
   /**
-    * The new partition object to update the partition to.
+    * The new partition object to update the partition to. The Values property can't be changed. If you want to change the partition key values for a partition, delete and recreate the partition.
     */
   var PartitionInput: typings.awsSdk.glueMod.PartitionInput = js.native
   /**
-    * A list of the values defining the partition.
+    * List of partition key values that define the partition to update.
     */
   var PartitionValueList: BoundedPartitionValueList = js.native
   /**
@@ -34,12 +34,37 @@ object UpdatePartitionRequest {
     DatabaseName: NameString,
     PartitionInput: PartitionInput,
     PartitionValueList: BoundedPartitionValueList,
-    TableName: NameString,
-    CatalogId: CatalogIdString = null
+    TableName: NameString
   ): UpdatePartitionRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], PartitionInput = PartitionInput.asInstanceOf[js.Any], PartitionValueList = PartitionValueList.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePartitionRequest]
   }
+  @scala.inline
+  implicit class UpdatePartitionRequestOps[Self <: UpdatePartitionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabaseName(value: NameString): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPartitionInput(value: PartitionInput): Self = this.set("PartitionInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPartitionValueListVarargs(value: ValueString*): Self = this.set("PartitionValueList", js.Array(value :_*))
+    @scala.inline
+    def setPartitionValueList(value: BoundedPartitionValueList): Self = this.set("PartitionValueList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: NameString): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+  }
+  
 }
 

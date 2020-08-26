@@ -7,52 +7,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DateFilter_[T /* <: js.Object */]
   extends TableColumnFilterProps[TableColumnFilterProps[js.Any, js.Any], T] {
-  var comparator: js.UndefOr[js.Array[Comparator]] = js.undefined
-  var comparatorClassName: js.UndefOr[String] = js.undefined
-  var comparatorStyle: js.UndefOr[CSSProperties] = js.undefined
-  var dateClassName: js.UndefOr[String] = js.undefined
-  var dateStyle: js.UndefOr[CSSProperties] = js.undefined
+  var comparator: js.UndefOr[js.Array[Comparator]] = js.native
+  var comparatorClassName: js.UndefOr[String] = js.native
+  var comparatorStyle: js.UndefOr[CSSProperties] = js.native
+  var dateClassName: js.UndefOr[String] = js.native
+  var dateStyle: js.UndefOr[CSSProperties] = js.native
   @JSName("defaultValue")
-  var defaultValue_DateFilter_ : js.UndefOr[Date] = js.undefined
-  var withoutEmptyComparatorOption: js.UndefOr[Boolean] = js.undefined
+  var defaultValue_DateFilter_ : js.UndefOr[Date] = js.native
+  var withoutEmptyComparatorOption: js.UndefOr[Boolean] = js.native
 }
 
 object DateFilter_ {
   @scala.inline
-  def apply[/* <: js.Object */ T](
-    className: String = null,
-    comparator: js.Array[Comparator] = null,
-    comparatorClassName: String = null,
-    comparatorStyle: CSSProperties = null,
-    dateClassName: String = null,
-    dateStyle: CSSProperties = null,
-    defaultValue: Date = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    getFilter: TableColumnFilterProps[js.Any, js.Any] => Unit = null,
-    id: String = null,
-    onFilter: TableColumnFilterProps[js.Any, js.Any] => Unit | js.Array[T] = null,
-    placeholder: String = null,
-    style: CSSProperties = null,
-    withoutEmptyComparatorOption: js.UndefOr[Boolean] = js.undefined
-  ): DateFilter_[T] = {
+  def apply[/* <: js.Object */ T](): DateFilter_[T] = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
-    if (comparatorClassName != null) __obj.updateDynamic("comparatorClassName")(comparatorClassName.asInstanceOf[js.Any])
-    if (comparatorStyle != null) __obj.updateDynamic("comparatorStyle")(comparatorStyle.asInstanceOf[js.Any])
-    if (dateClassName != null) __obj.updateDynamic("dateClassName")(dateClassName.asInstanceOf[js.Any])
-    if (dateStyle != null) __obj.updateDynamic("dateStyle")(dateStyle.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (getFilter != null) __obj.updateDynamic("getFilter")(js.Any.fromFunction1(getFilter))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction1(onFilter))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutEmptyComparatorOption)) __obj.updateDynamic("withoutEmptyComparatorOption")(withoutEmptyComparatorOption.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateFilter_[T]]
   }
+  @scala.inline
+  implicit class DateFilter_Ops[Self <: DateFilter_[_], /* <: js.Object */ T] (val x: Self with DateFilter_[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparatorVarargs(value: Comparator*): Self = this.set("comparator", js.Array(value :_*))
+    @scala.inline
+    def setComparator(value: js.Array[Comparator]): Self = this.set("comparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparator: Self = this.set("comparator", js.undefined)
+    @scala.inline
+    def setComparatorClassName(value: String): Self = this.set("comparatorClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparatorClassName: Self = this.set("comparatorClassName", js.undefined)
+    @scala.inline
+    def setComparatorStyle(value: CSSProperties): Self = this.set("comparatorStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparatorStyle: Self = this.set("comparatorStyle", js.undefined)
+    @scala.inline
+    def setDateClassName(value: String): Self = this.set("dateClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateClassName: Self = this.set("dateClassName", js.undefined)
+    @scala.inline
+    def setDateStyle(value: CSSProperties): Self = this.set("dateStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateStyle: Self = this.set("dateStyle", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: Date): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setWithoutEmptyComparatorOption(value: Boolean): Self = this.set("withoutEmptyComparatorOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithoutEmptyComparatorOption: Self = this.set("withoutEmptyComparatorOption", js.undefined)
+  }
+  
 }
 

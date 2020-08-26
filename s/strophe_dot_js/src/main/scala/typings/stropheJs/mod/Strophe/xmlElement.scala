@@ -27,8 +27,10 @@ object xmlElement extends js.Object {
     *    A new XML DOM element.
     */
   def apply(name: String): Element = js.native
+  def apply(name: String, attrs: js.UndefOr[scala.Nothing], text: String): Element = js.native
   def apply(name: String, attrs: js.Any): Element = js.native
   def apply(name: String, attrs: js.Any, text: String): Element = js.native
+  def apply(name: String, text: js.UndefOr[scala.Nothing], attrs: js.Any): Element = js.native
   def apply(name: String, text: String): Element = js.native
   def apply(name: String, text: String, attrs: js.Any): Element = js.native
 }

@@ -1,7 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices.Bluetooth.GenericAttributeProfile
 
-import typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEDevice
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,62 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService")
 @js.native
 abstract class GattDeviceService ()
-  extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService {
-  /** Gets the handle used to uniquely identify GATT-based service attributes as declared on the Bluetooth LE device. */
-  /* CompleteClass */
-  override var attributeHandle: Double = js.native
-  /** Gets the BluetoothLEDevice object describing the device associated with the current GattDeviceService object. */
-  /* CompleteClass */
-  override var device: BluetoothLEDevice = js.native
-  /** Get the string that represents the GATT service instance path used to instantiate the GattDeviceService. */
-  /* CompleteClass */
-  override var deviceId: String = js.native
-  /** Gets the read-only list of parent services for this service. */
-  /* CompleteClass */
-  override var parentServices: IVectorView[
-    typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService
-  ] = js.native
-  /** The GATT Service UUID associated with this GattDeviceService. */
-  /* CompleteClass */
-  override var uuid: String = js.native
-  /** Releases the resources associated with the GattDeviceService class. This allows other apps to access the resources of the GattDeviceService in question. A GattDeviceService object should not be used after Close is invoked, instead a new GattDeviceService object should be instantiated using the FromIdAsync method. */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /**
-    * Gets the collection of all characteristics belonging to this GattDeviceService instance.
-    * @return The collection of all characteristics belonging to this GattDeviceService instance.
-    */
-  /* CompleteClass */
-  override def getAllCharacteristics(): IVectorView[
-    typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic
-  ] = js.native
-  /**
-    * Gets the collection of all included services belonging to this GattDeviceService instance.
-    * @return The collection of all included services belonging to this GattDeviceService instance.
-    */
-  /* CompleteClass */
-  override def getAllIncludedServices(): IVectorView[
-    typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService
-  ] = js.native
-  /**
-    * Returns a vector of characteristics, that are identified by the specified UUID and belong to this GattDeviceService instance.
-    * @param characteristicUuid The UUID for the characteristics to be retrieved.
-    * @return A vector of GattCharacteristic objects whose UUIDs match characteristicUuid.
-    */
-  /* CompleteClass */
-  override def getCharacteristics(characteristicUuid: String): IVectorView[
-    typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic
-  ] = js.native
-  /**
-    * Returns a vector of included services, that are identified by the specified UUID and belong to this GattDeviceService instance.
-    * @param serviceUuid The UUID for the included services to be retrieved.
-    * @return A vector of included services whose UUIDs match serviceUuid.
-    */
-  /* CompleteClass */
-  override def getIncludedServices(serviceUuid: String): IVectorView[
-    typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService
-  ] = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService
 
 /* static members */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService")

@@ -1,21 +1,18 @@
 package typings.tensorflowTfjsLayers.poolingMod
 
-import typings.tensorflowTfjsCore.distTypesMod.DataType
-import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormat
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Pooling2DLayerArgs extends LayerArgs {
   /** The data format to use for the pooling layer. */
-  var dataFormat: js.UndefOr[DataFormat] = js.undefined
+  var dataFormat: js.UndefOr[DataFormat] = js.native
   /** The padding type to use for the pooling layer. */
-  var padding: js.UndefOr[PaddingMode] = js.undefined
+  var padding: js.UndefOr[PaddingMode] = js.native
   /**
     * Factors by which to downscale in each dimension [vertical, horizontal].
     * Expects an integer or an array of 2 integers.
@@ -24,7 +21,7 @@ trait Pooling2DLayerArgs extends LayerArgs {
     * If only one integer is specified, the same window length
     * will be used for both dimensions.
     */
-  var poolSize: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
+  var poolSize: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
   /**
     * The size of the stride in each dimension of the pooling window. Expects
     * an integer or an array of 2 integers. Integer, tuple of 2 integers, or
@@ -32,39 +29,43 @@ trait Pooling2DLayerArgs extends LayerArgs {
     *
     * If `null`, defaults to `poolSize`.
     */
-  var strides: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
+  var strides: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
 }
 
 object Pooling2DLayerArgs {
   @scala.inline
-  def apply(
-    batchInputShape: Shape = null,
-    batchSize: js.UndefOr[Double] = js.undefined,
-    dataFormat: DataFormat = null,
-    dtype: DataType = null,
-    inputDType: DataType = null,
-    inputShape: Shape = null,
-    name: String = null,
-    padding: PaddingMode = null,
-    poolSize: Double | (js.Tuple2[Double, Double]) = null,
-    strides: Double | (js.Tuple2[Double, Double]) = null,
-    trainable: js.UndefOr[Boolean] = js.undefined,
-    weights: js.Array[Tensor[Rank]] = null
-  ): Pooling2DLayerArgs = {
+  def apply(): Pooling2DLayerArgs = {
     val __obj = js.Dynamic.literal()
-    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
-    if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType.asInstanceOf[js.Any])
-    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (poolSize != null) __obj.updateDynamic("poolSize")(poolSize.asInstanceOf[js.Any])
-    if (strides != null) __obj.updateDynamic("strides")(strides.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
-    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pooling2DLayerArgs]
   }
+  @scala.inline
+  implicit class Pooling2DLayerArgsOps[Self <: Pooling2DLayerArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataFormat(value: DataFormat): Self = this.set("dataFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataFormat: Self = this.set("dataFormat", js.undefined)
+    @scala.inline
+    def setPadding(value: PaddingMode): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPoolSize(value: Double | (js.Tuple2[Double, Double])): Self = this.set("poolSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoolSize: Self = this.set("poolSize", js.undefined)
+    @scala.inline
+    def setStrides(value: Double | (js.Tuple2[Double, Double])): Self = this.set("strides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrides: Self = this.set("strides", js.undefined)
+  }
+  
 }
 

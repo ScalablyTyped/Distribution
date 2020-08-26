@@ -7,68 +7,97 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OptionsTopBarTitle extends js.Object {
   /**
     * Title alignment
     * #### (Android specific)
     */
-  var alignment: js.UndefOr[center | fill] = js.undefined
+  var alignment: js.UndefOr[center | fill] = js.native
   /**
     * Text color
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[Color] = js.native
   /**
     * Custom component as the title view
     */
-  var component: js.UndefOr[Alignment] = js.undefined
+  var component: js.UndefOr[Alignment] = js.native
   /**
     * Title font family
     *
     * Make sure that the font is available
     */
-  var fontFamily: js.UndefOr[FontFamily] = js.undefined
+  var fontFamily: js.UndefOr[FontFamily] = js.native
   /**
     * Font size
     */
-  var fontSize: js.UndefOr[Double] = js.undefined
+  var fontSize: js.UndefOr[Double] = js.native
   /**
     * Set the font weight, ignore fontFamily and use the iOS system fonts instead
     * #### (iOS specific)
     */
-  var fontWeight: js.UndefOr[FontWeight] = js.undefined
+  var fontWeight: js.UndefOr[FontWeight] = js.native
   /**
     * Top Bar title height in densitiy pixels
     * #### (Android specific)
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     * Text to display in the title area
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
 }
 
 object OptionsTopBarTitle {
   @scala.inline
-  def apply(
-    alignment: center | fill = null,
-    color: Color = null,
-    component: Alignment = null,
-    fontFamily: FontFamily = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    fontWeight: FontWeight = null,
-    height: js.UndefOr[Double] = js.undefined,
-    text: String = null
-  ): OptionsTopBarTitle = {
+  def apply(): OptionsTopBarTitle = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsTopBarTitle]
   }
+  @scala.inline
+  implicit class OptionsTopBarTitleOps[Self <: OptionsTopBarTitle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignment(value: center | fill): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    @scala.inline
+    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setComponent(value: Alignment): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setFontFamily(value: FontFamily): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontWeight(value: FontWeight): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

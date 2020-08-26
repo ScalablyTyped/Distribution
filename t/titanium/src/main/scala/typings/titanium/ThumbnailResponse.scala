@@ -10,33 +10,44 @@ import scala.scalajs.js.annotation._
   * [requestThumbnailImagesAtTimes](Titanium.Media.VideoPlayer.requestThumbnailImagesAtTimes)
   * method.
   */
+@js.native
 trait ThumbnailResponse extends ErrorResponse {
   /**
     * Thumbnail image, as a `Blob`.
     */
-  var image: js.UndefOr[Blob] = js.undefined
+  var image: js.UndefOr[Blob] = js.native
   /**
     * Time offset for the thumbnail, in seconds.
     */
-  var time: js.UndefOr[Double] = js.undefined
+  var time: js.UndefOr[Double] = js.native
 }
 
 object ThumbnailResponse {
   @scala.inline
-  def apply(
-    code: js.UndefOr[Double] = js.undefined,
-    error: java.lang.String = null,
-    image: Blob = null,
-    success: js.UndefOr[Boolean] = js.undefined,
-    time: js.UndefOr[Double] = js.undefined
-  ): ThumbnailResponse = {
+  def apply(): ThumbnailResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbnailResponse]
   }
+  @scala.inline
+  implicit class ThumbnailResponseOps[Self <: ThumbnailResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImage(value: Blob): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("time", js.undefined)
+  }
+  
 }
 

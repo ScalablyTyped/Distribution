@@ -36,20 +36,42 @@ trait SchemaInstallFailureEvent extends js.Object {
 
 object SchemaInstallFailureEvent {
   @scala.inline
-  def apply(
-    deviceId: String = null,
-    failureDetails: String = null,
-    failureReason: String = null,
-    productId: String = null,
-    userId: String = null
-  ): SchemaInstallFailureEvent = {
+  def apply(): SchemaInstallFailureEvent = {
     val __obj = js.Dynamic.literal()
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (failureDetails != null) __obj.updateDynamic("failureDetails")(failureDetails.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstallFailureEvent]
   }
+  @scala.inline
+  implicit class SchemaInstallFailureEventOps[Self <: SchemaInstallFailureEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    @scala.inline
+    def setFailureDetails(value: String): Self = this.set("failureDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureDetails: Self = this.set("failureDetails", js.undefined)
+    @scala.inline
+    def setFailureReason(value: String): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

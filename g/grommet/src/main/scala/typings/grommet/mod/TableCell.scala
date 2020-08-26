@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "TableCell")
+@JSImport("grommet/es6", "TableCell")
 @js.native
 object TableCell extends TopLevel[
       FC[

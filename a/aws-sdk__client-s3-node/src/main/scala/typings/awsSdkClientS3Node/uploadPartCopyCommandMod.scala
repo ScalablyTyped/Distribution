@@ -27,17 +27,10 @@ object uploadPartCopyCommandMod extends js.Object {
           Readable
         ] {
     def this(input: UploadPartCopyInput) = this()
-    /* CompleteClass */
-    override val input: UploadPartCopyInput = js.native
     val middlewareStack: MiddlewareStack[UploadPartCopyInput, UploadPartCopyOutput, Readable] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[UploadPartCopyInput, UploadPartCopyOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[UploadPartCopyInput, UploadPartCopyOutput] = js.native
   }

@@ -14,10 +14,26 @@ trait UpdateJobTemplateResponse extends js.Object {
 
 object UpdateJobTemplateResponse {
   @scala.inline
-  def apply(JobTemplate: JobTemplate = null): UpdateJobTemplateResponse = {
+  def apply(): UpdateJobTemplateResponse = {
     val __obj = js.Dynamic.literal()
-    if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobTemplateResponse]
   }
+  @scala.inline
+  implicit class UpdateJobTemplateResponseOps[Self <: UpdateJobTemplateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobTemplate(value: JobTemplate): Self = this.set("JobTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobTemplate: Self = this.set("JobTemplate", js.undefined)
+  }
+  
 }
 

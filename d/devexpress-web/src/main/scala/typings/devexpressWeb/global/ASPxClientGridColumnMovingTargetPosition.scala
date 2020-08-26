@@ -10,26 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ASPxClientGridColumnMovingTargetPosition")
 @js.native
 class ASPxClientGridColumnMovingTargetPosition ()
-  extends typings.devexpressWeb.ASPxClientGridColumnMovingTargetPosition {
-  /**
-    * A moved column should be placed at the bottom of the target column.
-    */
-  /* CompleteClass */
-  override var Bottom: Double = js.native
-  /**
-    * A moved column should be placed to the left of the target column.
-    */
-  /* CompleteClass */
-  override var Left: Double = js.native
-  /**
-    * A moved column should be placed to the right of the target column.
-    */
-  /* CompleteClass */
-  override var Right: Double = js.native
-  /**
-    * A moved column should be placed at the top of the target column.
-    */
-  /* CompleteClass */
-  override var Top: Double = js.native
-}
+  extends typings.devexpressWeb.ASPxClientGridColumnMovingTargetPosition
 

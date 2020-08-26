@@ -12,7 +12,23 @@ trait NativeKeyboard extends js.Object {
     * either animated (a quick slide down animation) or not.
     */
   def hideMessenger(): Unit = js.native
+  def hideMessenger(
+    options: js.UndefOr[scala.Nothing],
+    onSuccess: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* err */ js.Any, Unit]
+  ): Unit = js.native
+  def hideMessenger(options: js.UndefOr[scala.Nothing], onSuccess: js.Function0[Unit]): Unit = js.native
+  def hideMessenger(
+    options: js.UndefOr[scala.Nothing],
+    onSuccess: js.Function0[Unit],
+    onError: js.Function1[/* err */ js.Any, Unit]
+  ): Unit = js.native
   def hideMessenger(options: NativeKeyboardHideOptions): Unit = js.native
+  def hideMessenger(
+    options: NativeKeyboardHideOptions,
+    onSuccess: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* err */ js.Any, Unit]
+  ): Unit = js.native
   def hideMessenger(options: NativeKeyboardHideOptions, onSuccess: js.Function0[Unit]): Unit = js.native
   def hideMessenger(
     options: NativeKeyboardHideOptions,
@@ -23,6 +39,7 @@ trait NativeKeyboard extends js.Object {
     * Hide the keyboard, but not the messenger bar
     */
   def hideMessengerKeyboard(): Unit = js.native
+  def hideMessengerKeyboard(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   def hideMessengerKeyboard(onSuccess: js.Function0[Unit]): Unit = js.native
   def hideMessengerKeyboard(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   /**
@@ -34,6 +51,7 @@ trait NativeKeyboard extends js.Object {
     * Show a previously hidden keyboard
     */
   def showMessengerKeyboard(): Unit = js.native
+  def showMessengerKeyboard(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   def showMessengerKeyboard(onSuccess: js.Function0[Unit]): Unit = js.native
   def showMessengerKeyboard(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   /**
@@ -42,6 +60,11 @@ trait NativeKeyboard extends js.Object {
     * onTextChanged events).
     */
   def updateMessenger(options: NativeKeyboardUpdateOptions): Unit = js.native
+  def updateMessenger(
+    options: NativeKeyboardUpdateOptions,
+    onSuccess: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* err */ js.Any, Unit]
+  ): Unit = js.native
   def updateMessenger(options: NativeKeyboardUpdateOptions, onSuccess: js.Function0[Unit]): Unit = js.native
   def updateMessenger(
     options: NativeKeyboardUpdateOptions,

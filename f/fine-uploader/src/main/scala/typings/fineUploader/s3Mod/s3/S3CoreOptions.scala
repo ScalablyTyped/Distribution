@@ -1,129 +1,99 @@
 package typings.fineUploader.s3Mod.s3
 
-import typings.fineUploader.coreMod.BlobsOptions
-import typings.fineUploader.coreMod.CameraOptions
-import typings.fineUploader.coreMod.CoreEvents
 import typings.fineUploader.coreMod.CoreOptions
-import typings.fineUploader.coreMod.DeleteFileOptions
-import typings.fineUploader.coreMod.ExtraButtonsOptions
-import typings.fineUploader.coreMod.FormOptions
-import typings.fineUploader.coreMod.Messages
-import typings.fineUploader.coreMod.PasteOptions
-import typings.fineUploader.coreMod.ResumeOptions
-import typings.fineUploader.coreMod.ScalingOptions
-import typings.fineUploader.coreMod.SessionOptions
-import typings.fineUploader.coreMod.TextOptions
-import typings.fineUploader.coreMod.ValidationOptions
-import typings.fineUploader.coreMod.WorkArounds
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait S3CoreOptions extends CoreOptions {
   /**
     * chunking options
     */
   @JSName("chunking")
-  var chunking_S3CoreOptions: js.UndefOr[S3ChunkingOptions] = js.undefined
+  var chunking_S3CoreOptions: js.UndefOr[S3ChunkingOptions] = js.native
   /**
     * cors options
     */
   @JSName("cors")
-  var cors_S3CoreOptions: js.UndefOr[S3CorsOptions] = js.undefined
+  var cors_S3CoreOptions: js.UndefOr[S3CorsOptions] = js.native
   /**
     * credentials
     */
-  var credentials: js.UndefOr[S3CredentialsOptions] = js.undefined
+  var credentials: js.UndefOr[S3CredentialsOptions] = js.native
   /**
     * iframeSupport options
     */
-  var iframeSupport: js.UndefOr[S3iFrameSupportOptions] = js.undefined
+  var iframeSupport: js.UndefOr[S3iFrameSupportOptions] = js.native
   /**
     * objectProperties
     */
-  var objectProperties: js.UndefOr[S3ObjectPropertyOptions] = js.undefined
+  var objectProperties: js.UndefOr[S3ObjectPropertyOptions] = js.native
   /**
     * request options
     */
   @JSName("request")
-  var request_S3CoreOptions: js.UndefOr[S3RequestOptions] = js.undefined
+  var request_S3CoreOptions: js.UndefOr[S3RequestOptions] = js.native
   /**
     * signature options
     */
-  var signature: js.UndefOr[S3SignatureOptions] = js.undefined
+  var signature: js.UndefOr[S3SignatureOptions] = js.native
   /**
     * upload success options
     */
-  var uploadSuccess: js.UndefOr[S3UploadSuccessOptions] = js.undefined
+  var uploadSuccess: js.UndefOr[S3UploadSuccessOptions] = js.native
 }
 
 object S3CoreOptions {
   @scala.inline
-  def apply(
-    autoUpload: js.UndefOr[Boolean] = js.undefined,
-    blobs: BlobsOptions = null,
-    button: HTMLElement = null,
-    callbacks: CoreEvents = null,
-    camera: CameraOptions = null,
-    chunking: S3ChunkingOptions = null,
-    cors: S3CorsOptions = null,
-    credentials: S3CredentialsOptions = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    deleteFile: DeleteFileOptions = null,
-    disableCancelForFormUploads: js.UndefOr[Boolean] = js.undefined,
-    extraButtons: js.Array[ExtraButtonsOptions] = null,
-    form: FormOptions = null,
-    formatFileName: /* fileOrBlobName */ String => String = null,
-    iframeSupport: S3iFrameSupportOptions = null,
-    maxConnections: js.UndefOr[Double] = js.undefined,
-    messages: Messages = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    objectProperties: S3ObjectPropertyOptions = null,
-    paste: PasteOptions = null,
-    request: S3RequestOptions = null,
-    resume: ResumeOptions = null,
-    scaling: ScalingOptions = null,
-    session: SessionOptions = null,
-    signature: S3SignatureOptions = null,
-    text: TextOptions = null,
-    uploadSuccess: S3UploadSuccessOptions = null,
-    validation: ValidationOptions = null,
-    warnBeforeUnload: js.UndefOr[Boolean] = js.undefined,
-    workarounds: WorkArounds = null
-  ): S3CoreOptions = {
+  def apply(): S3CoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload.get.asInstanceOf[js.Any])
-    if (blobs != null) __obj.updateDynamic("blobs")(blobs.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    if (chunking != null) __obj.updateDynamic("chunking")(chunking.asInstanceOf[js.Any])
-    if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (deleteFile != null) __obj.updateDynamic("deleteFile")(deleteFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCancelForFormUploads)) __obj.updateDynamic("disableCancelForFormUploads")(disableCancelForFormUploads.get.asInstanceOf[js.Any])
-    if (extraButtons != null) __obj.updateDynamic("extraButtons")(extraButtons.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (formatFileName != null) __obj.updateDynamic("formatFileName")(js.Any.fromFunction1(formatFileName))
-    if (iframeSupport != null) __obj.updateDynamic("iframeSupport")(iframeSupport.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections.get.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
-    if (objectProperties != null) __obj.updateDynamic("objectProperties")(objectProperties.asInstanceOf[js.Any])
-    if (paste != null) __obj.updateDynamic("paste")(paste.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (resume != null) __obj.updateDynamic("resume")(resume.asInstanceOf[js.Any])
-    if (scaling != null) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (uploadSuccess != null) __obj.updateDynamic("uploadSuccess")(uploadSuccess.asInstanceOf[js.Any])
-    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
-    if (!js.isUndefined(warnBeforeUnload)) __obj.updateDynamic("warnBeforeUnload")(warnBeforeUnload.get.asInstanceOf[js.Any])
-    if (workarounds != null) __obj.updateDynamic("workarounds")(workarounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3CoreOptions]
   }
+  @scala.inline
+  implicit class S3CoreOptionsOps[Self <: S3CoreOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChunking(value: S3ChunkingOptions): Self = this.set("chunking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChunking: Self = this.set("chunking", js.undefined)
+    @scala.inline
+    def setCors(value: S3CorsOptions): Self = this.set("cors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCors: Self = this.set("cors", js.undefined)
+    @scala.inline
+    def setCredentials(value: S3CredentialsOptions): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    @scala.inline
+    def setIframeSupport(value: S3iFrameSupportOptions): Self = this.set("iframeSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIframeSupport: Self = this.set("iframeSupport", js.undefined)
+    @scala.inline
+    def setObjectProperties(value: S3ObjectPropertyOptions): Self = this.set("objectProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectProperties: Self = this.set("objectProperties", js.undefined)
+    @scala.inline
+    def setRequest(value: S3RequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setSignature(value: S3SignatureOptions): Self = this.set("signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("signature", js.undefined)
+    @scala.inline
+    def setUploadSuccess(value: S3UploadSuccessOptions): Self = this.set("uploadSuccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadSuccess: Self = this.set("uploadSuccess", js.undefined)
+  }
+  
 }
 

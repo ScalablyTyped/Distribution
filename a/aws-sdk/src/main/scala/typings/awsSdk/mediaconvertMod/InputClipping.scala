@@ -18,14 +18,30 @@ trait InputClipping extends js.Object {
 
 object InputClipping {
   @scala.inline
-  def apply(
-    EndTimecode: stringPattern010920405090509092 = null,
-    StartTimecode: stringPattern010920405090509092 = null
-  ): InputClipping = {
+  def apply(): InputClipping = {
     val __obj = js.Dynamic.literal()
-    if (EndTimecode != null) __obj.updateDynamic("EndTimecode")(EndTimecode.asInstanceOf[js.Any])
-    if (StartTimecode != null) __obj.updateDynamic("StartTimecode")(StartTimecode.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputClipping]
   }
+  @scala.inline
+  implicit class InputClippingOps[Self <: InputClipping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTimecode(value: stringPattern010920405090509092): Self = this.set("EndTimecode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTimecode: Self = this.set("EndTimecode", js.undefined)
+    @scala.inline
+    def setStartTimecode(value: stringPattern010920405090509092): Self = this.set("StartTimecode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimecode: Self = this.set("StartTimecode", js.undefined)
+  }
+  
 }
 

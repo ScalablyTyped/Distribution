@@ -16,6 +16,11 @@ class default protected () extends js.Object {
     * @returns Promise
     */
   def validate(source: ValidateSource): js.Promise[Unit] = js.native
+  def validate(
+    source: ValidateSource,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* errors */ ErrorList, /* fields */ FieldErrorList, Unit]
+  ): js.Promise[Unit] = js.native
   def validate(source: ValidateSource, options: ValidateOption): js.Promise[Unit] = js.native
   def validate(
     source: ValidateSource,

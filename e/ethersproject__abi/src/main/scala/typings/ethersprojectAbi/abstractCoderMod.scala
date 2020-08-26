@@ -30,6 +30,7 @@ object abstractCoderMod extends js.Object {
   class Reader protected () extends js.Object {
     def this(data: BytesLike) = this()
     def this(data: BytesLike, wordSize: Double) = this()
+    def this(data: BytesLike, wordSize: js.UndefOr[scala.Nothing], coerceFunc: CoerceFunc) = this()
     def this(data: BytesLike, wordSize: Double, coerceFunc: CoerceFunc) = this()
     val _data: Uint8Array = js.native
     var _offset: Double = js.native

@@ -19,10 +19,26 @@ trait SchemaAutoscalingPolicyLoadBalancingUtilization extends js.Object {
 
 object SchemaAutoscalingPolicyLoadBalancingUtilization {
   @scala.inline
-  def apply(utilizationTarget: js.UndefOr[Double] = js.undefined): SchemaAutoscalingPolicyLoadBalancingUtilization = {
+  def apply(): SchemaAutoscalingPolicyLoadBalancingUtilization = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(utilizationTarget)) __obj.updateDynamic("utilizationTarget")(utilizationTarget.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoscalingPolicyLoadBalancingUtilization]
   }
+  @scala.inline
+  implicit class SchemaAutoscalingPolicyLoadBalancingUtilizationOps[Self <: SchemaAutoscalingPolicyLoadBalancingUtilization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUtilizationTarget(value: Double): Self = this.set("utilizationTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtilizationTarget: Self = this.set("utilizationTarget", js.undefined)
+  }
+  
 }
 

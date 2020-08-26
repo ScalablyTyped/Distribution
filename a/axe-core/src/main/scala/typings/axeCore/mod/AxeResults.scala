@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AxeResults extends js.Object {
-  var inapplicable: js.Array[Result]
-  var incomplete: js.Array[Result]
-  var passes: js.Array[Result]
-  var testEngine: TestEngine
-  var testEnvironment: TestEnvironment
-  var testRunner: TestRunner
-  var timestamp: String
-  var toolOptions: RunOptions
-  var url: String
-  var violations: js.Array[Result]
+  var inapplicable: js.Array[Result] = js.native
+  var incomplete: js.Array[Result] = js.native
+  var passes: js.Array[Result] = js.native
+  var testEngine: TestEngine = js.native
+  var testEnvironment: TestEnvironment = js.native
+  var testRunner: TestRunner = js.native
+  var timestamp: String = js.native
+  var toolOptions: RunOptions = js.native
+  var url: String = js.native
+  var violations: js.Array[Result] = js.native
 }
 
 /**

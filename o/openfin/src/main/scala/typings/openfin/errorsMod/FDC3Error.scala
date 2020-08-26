@@ -16,9 +16,5 @@ class FDC3Error protected () extends Error {
     * error codes that do not exist in the above enumerations.
     */
   var code: String = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

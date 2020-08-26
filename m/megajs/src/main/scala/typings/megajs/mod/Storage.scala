@@ -35,9 +35,11 @@ class Storage protected () extends js.Object {
   def reload(cb: js.Any): Readable = js.native
   def toJSON(): JSON = js.native
   def upload(options: String): Writable = js.native
+  def upload(options: String, buffer: js.UndefOr[scala.Nothing], cb: js.Any): Writable = js.native
   def upload(options: String, buffer: Buffer): Writable = js.native
   def upload(options: String, buffer: Buffer, cb: js.Any): Writable = js.native
   def upload(options: UploadOptions): Writable = js.native
+  def upload(options: UploadOptions, buffer: js.UndefOr[scala.Nothing], cb: js.Any): Writable = js.native
   def upload(options: UploadOptions, buffer: Buffer): Writable = js.native
   def upload(options: UploadOptions, buffer: Buffer, cb: js.Any): Writable = js.native
 }

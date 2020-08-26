@@ -70,40 +70,84 @@ trait ExportTask extends js.Object {
 
 object ExportTask {
   @scala.inline
-  def apply(
-    ExportOnly: StringList = null,
-    ExportTaskIdentifier: String = null,
-    FailureCause: String = null,
-    IamRoleArn: String = null,
-    KmsKeyId: String = null,
-    PercentProgress: js.UndefOr[Integer] = js.undefined,
-    S3Bucket: String = null,
-    S3Prefix: String = null,
-    SnapshotTime: TStamp = null,
-    SourceArn: String = null,
-    Status: String = null,
-    TaskEndTime: TStamp = null,
-    TaskStartTime: TStamp = null,
-    TotalExtractedDataInGB: js.UndefOr[Integer] = js.undefined,
-    WarningMessage: String = null
-  ): ExportTask = {
+  def apply(): ExportTask = {
     val __obj = js.Dynamic.literal()
-    if (ExportOnly != null) __obj.updateDynamic("ExportOnly")(ExportOnly.asInstanceOf[js.Any])
-    if (ExportTaskIdentifier != null) __obj.updateDynamic("ExportTaskIdentifier")(ExportTaskIdentifier.asInstanceOf[js.Any])
-    if (FailureCause != null) __obj.updateDynamic("FailureCause")(FailureCause.asInstanceOf[js.Any])
-    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(PercentProgress)) __obj.updateDynamic("PercentProgress")(PercentProgress.get.asInstanceOf[js.Any])
-    if (S3Bucket != null) __obj.updateDynamic("S3Bucket")(S3Bucket.asInstanceOf[js.Any])
-    if (S3Prefix != null) __obj.updateDynamic("S3Prefix")(S3Prefix.asInstanceOf[js.Any])
-    if (SnapshotTime != null) __obj.updateDynamic("SnapshotTime")(SnapshotTime.asInstanceOf[js.Any])
-    if (SourceArn != null) __obj.updateDynamic("SourceArn")(SourceArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TaskEndTime != null) __obj.updateDynamic("TaskEndTime")(TaskEndTime.asInstanceOf[js.Any])
-    if (TaskStartTime != null) __obj.updateDynamic("TaskStartTime")(TaskStartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalExtractedDataInGB)) __obj.updateDynamic("TotalExtractedDataInGB")(TotalExtractedDataInGB.get.asInstanceOf[js.Any])
-    if (WarningMessage != null) __obj.updateDynamic("WarningMessage")(WarningMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportTask]
   }
+  @scala.inline
+  implicit class ExportTaskOps[Self <: ExportTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExportOnlyVarargs(value: String*): Self = this.set("ExportOnly", js.Array(value :_*))
+    @scala.inline
+    def setExportOnly(value: StringList): Self = this.set("ExportOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportOnly: Self = this.set("ExportOnly", js.undefined)
+    @scala.inline
+    def setExportTaskIdentifier(value: String): Self = this.set("ExportTaskIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportTaskIdentifier: Self = this.set("ExportTaskIdentifier", js.undefined)
+    @scala.inline
+    def setFailureCause(value: String): Self = this.set("FailureCause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureCause: Self = this.set("FailureCause", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: String): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setPercentProgress(value: Integer): Self = this.set("PercentProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentProgress: Self = this.set("PercentProgress", js.undefined)
+    @scala.inline
+    def setS3Bucket(value: String): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Bucket: Self = this.set("S3Bucket", js.undefined)
+    @scala.inline
+    def setS3Prefix(value: String): Self = this.set("S3Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Prefix: Self = this.set("S3Prefix", js.undefined)
+    @scala.inline
+    def setSnapshotTime(value: TStamp): Self = this.set("SnapshotTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotTime: Self = this.set("SnapshotTime", js.undefined)
+    @scala.inline
+    def setSourceArn(value: String): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTaskEndTime(value: TStamp): Self = this.set("TaskEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskEndTime: Self = this.set("TaskEndTime", js.undefined)
+    @scala.inline
+    def setTaskStartTime(value: TStamp): Self = this.set("TaskStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskStartTime: Self = this.set("TaskStartTime", js.undefined)
+    @scala.inline
+    def setTotalExtractedDataInGB(value: Integer): Self = this.set("TotalExtractedDataInGB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalExtractedDataInGB: Self = this.set("TotalExtractedDataInGB", js.undefined)
+    @scala.inline
+    def setWarningMessage(value: String): Self = this.set("WarningMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarningMessage: Self = this.set("WarningMessage", js.undefined)
+  }
+  
 }
 

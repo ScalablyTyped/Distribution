@@ -22,6 +22,7 @@ class Intent protected () extends js.Object {
   def getEvent(roomId: String, eventId: String): js.Promise[_] = js.native
   def getEvent(roomId: String, eventId: String, useCache: Boolean): js.Promise[_] = js.native
   def getProfileInfo(userId: String): js.Promise[_] = js.native
+  def getProfileInfo(userId: String, info: js.UndefOr[scala.Nothing], useCache: Boolean): js.Promise[_] = js.native
   def getProfileInfo(userId: String, info: String): js.Promise[_] = js.native
   def getProfileInfo(userId: String, info: String, useCache: Boolean): js.Promise[_] = js.native
   def getStateEvent(roomId: String, eventType: EventType): js.Promise[_] = js.native

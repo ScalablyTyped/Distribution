@@ -74,6 +74,7 @@ trait Uint32Array extends /* index */ NumberDictionary[Double] {
     * length+end.
     */
   def fill(value: Double): this.type = js.native
+  def fill(value: Double, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: Double, start: Double): this.type = js.native
   def fill(value: Double, start: Double, end: Double): this.type = js.native
   /**
@@ -287,6 +288,7 @@ trait Uint32Array extends /* index */ NumberDictionary[Double] {
     * @param end The end of the specified portion of the array.
     */
   def slice(): Uint32Array = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): Uint32Array = js.native
   def slice(start: Double): Uint32Array = js.native
   def slice(start: Double, end: Double): Uint32Array = js.native
   /**

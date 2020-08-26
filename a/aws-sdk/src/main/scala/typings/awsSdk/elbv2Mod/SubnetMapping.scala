@@ -22,16 +22,34 @@ trait SubnetMapping extends js.Object {
 
 object SubnetMapping {
   @scala.inline
-  def apply(
-    AllocationId: AllocationId = null,
-    PrivateIPv4Address: PrivateIPv4Address = null,
-    SubnetId: SubnetId = null
-  ): SubnetMapping = {
+  def apply(): SubnetMapping = {
     val __obj = js.Dynamic.literal()
-    if (AllocationId != null) __obj.updateDynamic("AllocationId")(AllocationId.asInstanceOf[js.Any])
-    if (PrivateIPv4Address != null) __obj.updateDynamic("PrivateIPv4Address")(PrivateIPv4Address.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubnetMapping]
   }
+  @scala.inline
+  implicit class SubnetMappingOps[Self <: SubnetMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationId(value: AllocationId): Self = this.set("AllocationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationId: Self = this.set("AllocationId", js.undefined)
+    @scala.inline
+    def setPrivateIPv4Address(value: PrivateIPv4Address): Self = this.set("PrivateIPv4Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIPv4Address: Self = this.set("PrivateIPv4Address", js.undefined)
+    @scala.inline
+    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+  }
+  
 }
 

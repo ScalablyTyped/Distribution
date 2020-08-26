@@ -12,7 +12,7 @@ Treat a collection of Buffers as a single contiguous partially mutable Buffer.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 147 |
-| # downloads        | 32968535 |
+| # downloads        | 33106956 |
 | # stars            | 0 |
 
 ## Links

@@ -4,30 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IArcOptions extends ICircleOptions {
-  var endangle: js.UndefOr[Double] = js.undefined
-  var maketangent: js.UndefOr[Boolean] = js.undefined
-  var startangle: js.UndefOr[Double] = js.undefined
+  var endangle: js.UndefOr[Double] = js.native
+  var maketangent: js.UndefOr[Boolean] = js.native
+  var startangle: js.UndefOr[Double] = js.native
 }
 
 object IArcOptions {
   @scala.inline
-  def apply(
-    center: Vector2D | js.Array[Double] = null,
-    endangle: js.UndefOr[Double] = js.undefined,
-    maketangent: js.UndefOr[Boolean] = js.undefined,
-    radius: js.UndefOr[Double] = js.undefined,
-    resolution: js.UndefOr[Double] = js.undefined,
-    startangle: js.UndefOr[Double] = js.undefined
-  ): IArcOptions = {
+  def apply(): IArcOptions = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(endangle)) __obj.updateDynamic("endangle")(endangle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maketangent)) __obj.updateDynamic("maketangent")(maketangent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startangle)) __obj.updateDynamic("startangle")(startangle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IArcOptions]
   }
+  @scala.inline
+  implicit class IArcOptionsOps[Self <: IArcOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndangle(value: Double): Self = this.set("endangle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndangle: Self = this.set("endangle", js.undefined)
+    @scala.inline
+    def setMaketangent(value: Boolean): Self = this.set("maketangent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaketangent: Self = this.set("maketangent", js.undefined)
+    @scala.inline
+    def setStartangle(value: Double): Self = this.set("startangle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartangle: Self = this.set("startangle", js.undefined)
+  }
+  
 }
 

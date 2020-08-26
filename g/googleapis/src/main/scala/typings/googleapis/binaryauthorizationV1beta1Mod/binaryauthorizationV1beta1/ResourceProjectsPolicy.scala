@@ -28,6 +28,7 @@ class ResourceProjectsPolicy protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaIamPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaIamPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaIamPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsPolicyGetiampolicy): GaxiosPromise[SchemaIamPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsPolicyGetiampolicy, callback: BodyResponseCallback[SchemaIamPolicy]): Unit = js.native
   def getIamPolicy(
@@ -57,6 +58,7 @@ class ResourceProjectsPolicy protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaIamPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaIamPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaIamPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsPolicySetiampolicy): GaxiosPromise[SchemaIamPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsPolicySetiampolicy, callback: BodyResponseCallback[SchemaIamPolicy]): Unit = js.native
   def setIamPolicy(
@@ -89,6 +91,7 @@ class ResourceProjectsPolicy protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsPolicyTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsPolicyTestiampermissions,

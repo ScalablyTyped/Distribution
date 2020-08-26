@@ -4,20 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocumentLink extends js.Object {
   /**
     * A data entry field that is preserved on a document link between a
     * DocumentLinkRequest and a DocumentLinkResolveRequest.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
   /**
     * The range this link applies to.
     */
-  var range: Range
+  var range: Range = js.native
   /**
     * The uri this link points to.
     */
-  var target: js.UndefOr[String] = js.undefined
+  var target: js.UndefOr[String] = js.native
   /**
     * The tooltip text when you hover over this link.
     *
@@ -27,7 +28,7 @@ trait DocumentLink extends js.Object {
     *
     * @since 3.15.0
     */
-  var tooltip: js.UndefOr[String] = js.undefined
+  var tooltip: js.UndefOr[String] = js.native
 }
 
 @JSImport("vscode-languageserver-types", "DocumentLink")
@@ -37,6 +38,7 @@ object DocumentLink extends js.Object {
     * Creates a new DocumentLink literal.
     */
   def create(range: Range): DocumentLink = js.native
+  def create(range: Range, target: js.UndefOr[scala.Nothing], data: js.Any): DocumentLink = js.native
   def create(range: Range, target: String): DocumentLink = js.native
   def create(range: Range, target: String, data: js.Any): DocumentLink = js.native
   /**

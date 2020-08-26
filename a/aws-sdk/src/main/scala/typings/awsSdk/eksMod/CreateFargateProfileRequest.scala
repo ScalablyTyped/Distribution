@@ -38,21 +38,48 @@ trait CreateFargateProfileRequest extends js.Object {
 
 object CreateFargateProfileRequest {
   @scala.inline
-  def apply(
-    clusterName: String,
-    fargateProfileName: String,
-    podExecutionRoleArn: String,
-    clientRequestToken: String = null,
-    selectors: FargateProfileSelectors = null,
-    subnets: StringList = null,
-    tags: TagMap = null
-  ): CreateFargateProfileRequest = {
+  def apply(clusterName: String, fargateProfileName: String, podExecutionRoleArn: String): CreateFargateProfileRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], fargateProfileName = fargateProfileName.asInstanceOf[js.Any], podExecutionRoleArn = podExecutionRoleArn.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
-    if (subnets != null) __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFargateProfileRequest]
   }
+  @scala.inline
+  implicit class CreateFargateProfileRequestOps[Self <: CreateFargateProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFargateProfileName(value: String): Self = this.set("fargateProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPodExecutionRoleArn(value: String): Self = this.set("podExecutionRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: String): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setSelectorsVarargs(value: FargateProfileSelector*): Self = this.set("selectors", js.Array(value :_*))
+    @scala.inline
+    def setSelectors(value: FargateProfileSelectors): Self = this.set("selectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectors: Self = this.set("selectors", js.undefined)
+    @scala.inline
+    def setSubnetsVarargs(value: String*): Self = this.set("subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: StringList): Self = this.set("subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnets: Self = this.set("subnets", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

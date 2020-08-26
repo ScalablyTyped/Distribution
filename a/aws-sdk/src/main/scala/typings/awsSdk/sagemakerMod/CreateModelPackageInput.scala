@@ -34,21 +34,44 @@ trait CreateModelPackageInput extends js.Object {
 
 object CreateModelPackageInput {
   @scala.inline
-  def apply(
-    ModelPackageName: EntityName,
-    CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined,
-    InferenceSpecification: InferenceSpecification = null,
-    ModelPackageDescription: EntityDescription = null,
-    SourceAlgorithmSpecification: SourceAlgorithmSpecification = null,
-    ValidationSpecification: ModelPackageValidationSpecification = null
-  ): CreateModelPackageInput = {
+  def apply(ModelPackageName: EntityName): CreateModelPackageInput = {
     val __obj = js.Dynamic.literal(ModelPackageName = ModelPackageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace.get.asInstanceOf[js.Any])
-    if (InferenceSpecification != null) __obj.updateDynamic("InferenceSpecification")(InferenceSpecification.asInstanceOf[js.Any])
-    if (ModelPackageDescription != null) __obj.updateDynamic("ModelPackageDescription")(ModelPackageDescription.asInstanceOf[js.Any])
-    if (SourceAlgorithmSpecification != null) __obj.updateDynamic("SourceAlgorithmSpecification")(SourceAlgorithmSpecification.asInstanceOf[js.Any])
-    if (ValidationSpecification != null) __obj.updateDynamic("ValidationSpecification")(ValidationSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateModelPackageInput]
   }
+  @scala.inline
+  implicit class CreateModelPackageInputOps[Self <: CreateModelPackageInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setModelPackageName(value: EntityName): Self = this.set("ModelPackageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertifyForMarketplace(value: CertifyForMarketplace): Self = this.set("CertifyForMarketplace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertifyForMarketplace: Self = this.set("CertifyForMarketplace", js.undefined)
+    @scala.inline
+    def setInferenceSpecification(value: InferenceSpecification): Self = this.set("InferenceSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInferenceSpecification: Self = this.set("InferenceSpecification", js.undefined)
+    @scala.inline
+    def setModelPackageDescription(value: EntityDescription): Self = this.set("ModelPackageDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelPackageDescription: Self = this.set("ModelPackageDescription", js.undefined)
+    @scala.inline
+    def setSourceAlgorithmSpecification(value: SourceAlgorithmSpecification): Self = this.set("SourceAlgorithmSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceAlgorithmSpecification: Self = this.set("SourceAlgorithmSpecification", js.undefined)
+    @scala.inline
+    def setValidationSpecification(value: ModelPackageValidationSpecification): Self = this.set("ValidationSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationSpecification: Self = this.set("ValidationSpecification", js.undefined)
+  }
+  
 }
 

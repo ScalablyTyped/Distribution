@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object functionTypeParam extends js.Object {
   def apply(): FunctionTypeParam_ = js.native
+  def apply(name: js.UndefOr[scala.Nothing], typeAnnotation: FlowTypeAnnotation): FunctionTypeParam_ = js.native
   def apply(name: Identifier_): FunctionTypeParam_ = js.native
   def apply(name: Identifier_, typeAnnotation: FlowTypeAnnotation): FunctionTypeParam_ = js.native
 }

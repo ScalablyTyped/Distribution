@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Suite () extends js.Object {
   def this(name: String) = this()
+  def this(name: js.UndefOr[scala.Nothing], options: Options) = this()
   def this(name: String, options: Options) = this()
   var aborted: Boolean = js.native
   var length: Double = js.native
@@ -36,10 +37,12 @@ class Suite () extends js.Object {
   def listeners(`type`: String): js.Array[js.Function] = js.native
   def map(callback: js.Function): js.Array[_] = js.native
   def off(): Suite = js.native
+  def off(`type`: js.UndefOr[scala.Nothing], callback: js.Function): Suite = js.native
   def off(`type`: String): Suite = js.native
   def off(`type`: String, callback: js.Function): Suite = js.native
   def off(types: js.Array[String]): Suite = js.native
   def on(): Suite = js.native
+  def on(`type`: js.UndefOr[scala.Nothing], callback: js.Function): Suite = js.native
   def on(`type`: String): Suite = js.native
   def on(`type`: String, callback: js.Function): Suite = js.native
   def on(types: js.Array[String]): Suite = js.native

@@ -1,7 +1,5 @@
 package typings.winrtUwp.global.Windows.Storage.Pickers
 
-import typings.std.Date
-import typings.winrtUwp.Windows.Storage.IStorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,11 +16,7 @@ object Provider extends js.Object {
   /** Provides information about a fileremoved event. */
   @js.native
   abstract class FileRemovedEventArgs ()
-    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.FileRemovedEventArgs {
-    /** Gets the identifier of the file that the user removed from the list of chosen files in the file picker. This identifier was set by the providing app when it added the files to the list of chosen files. */
-    /* CompleteClass */
-    override var id: String = js.native
-  }
+    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.FileRemovedEventArgs
   
   /** Used to interact with the file picker when your app provides a save location with the File Save Picker contract. */
   @js.native
@@ -32,71 +26,32 @@ object Provider extends js.Object {
   /** Use by an app that provides files to indicate asynchronously that the app is finished responding to a closing event. */
   @js.native
   abstract class PickerClosingDeferral ()
-    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.PickerClosingDeferral {
-    /** Signals that the app providing files has finished responding to a closing event. */
-    /* CompleteClass */
-    override def complete(): Unit = js.native
-  }
+    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.PickerClosingDeferral
   
   /** Provides information about a closing event. */
   @js.native
   abstract class PickerClosingEventArgs ()
-    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.PickerClosingEventArgs {
-    /** Gets a pickerClosingOperation object that is used to respond to a closing event. */
-    /* CompleteClass */
-    override var closingOperation: typings.winrtUwp.Windows.Storage.Pickers.Provider.PickerClosingOperation = js.native
-    /** Gets a value that indicates whether the file picker is closing because the user cancelled it. */
-    /* CompleteClass */
-    override var isCanceled: Boolean = js.native
-  }
+    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.PickerClosingEventArgs
   
   /** Lets an app that provides files get the deadline for responding to a closing event and get a deferral so the app can respond to the event asynchronously. */
   @js.native
   abstract class PickerClosingOperation ()
-    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.PickerClosingOperation {
-    /** Gets a dateTime object that indicates when the system will shut down the app that is providing files through the file picker without further notice. */
-    /* CompleteClass */
-    override var deadline: Date = js.native
-    /**
-      * Gets a pickerClosingDeferral that the app providing files through the file picker can use to respond asynchronously to a closing event.
-      * @return The pickerClosingDeferral that the app providing files through the file picker can use to respond asynchronously to a closing event.
-      */
-    /* CompleteClass */
-    override def getDeferral(): typings.winrtUwp.Windows.Storage.Pickers.Provider.PickerClosingDeferral = js.native
-  }
+    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.PickerClosingOperation
   
   /** Lets an app that provides a save location specify the storageFile that represents the file to save and get a deferral so the app can respond asynchronously to a targetFileRequested event. */
   @js.native
   abstract class TargetFileRequest ()
-    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.TargetFileRequest {
-    /** Gets or sets the IStorageFile object that is provided to represent the file to save by the app that is providing the save location. */
-    /* CompleteClass */
-    override var targetFile: IStorageFile = js.native
-    /**
-      * Gets a targetFileRequestDeferral that the app providing the save location can use to respond asynchronously to a targetfilerequested event.
-      * @return The targetFileRequestDeferral that the providing app can use asynchronously to indicate that it is finished responding to a targetfilerequested event.
-      */
-    /* CompleteClass */
-    override def getDeferral(): typings.winrtUwp.Windows.Storage.Pickers.Provider.TargetFileRequestDeferral = js.native
-  }
+    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.TargetFileRequest
   
   /** Used by an app that provides a save location to indicate asynchronously that the app is finished responding to a targetfilerequested event. */
   @js.native
   abstract class TargetFileRequestDeferral ()
-    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.TargetFileRequestDeferral {
-    /** Signals that the app providing the save location finished responding to a targetfilerequested event. */
-    /* CompleteClass */
-    override def complete(): Unit = js.native
-  }
+    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.TargetFileRequestDeferral
   
   /** Provides information about a targetfilerequested event. */
   @js.native
   abstract class TargetFileRequestedEventArgs ()
-    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.TargetFileRequestedEventArgs {
-    /** Gets a targetFileRequest object that is used to respond to a targetfilerequested event. */
-    /* CompleteClass */
-    override var request: typings.winrtUwp.Windows.Storage.Pickers.Provider.TargetFileRequest = js.native
-  }
+    extends typings.winrtUwp.Windows.Storage.Pickers.Provider.TargetFileRequestedEventArgs
   
   /** Indicates the result of a call to the fileOpenPickerUI.addFile method. */
   @js.native

@@ -17,15 +17,10 @@ object conv2dTranspose extends js.Object {
     filter: Tensor4D | TensorLike,
     outputShape: (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple3[Double, Double, Double]),
     strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid | same | Double
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    x: T | TensorLike,
-    filter: Tensor4D | TensorLike,
-    outputShape: (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple3[Double, Double, Double]),
-    strides: (js.Tuple2[Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.floor | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.round | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.ceil
+    dimRoundingMode: js.UndefOr[
+      typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.floor | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.round | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.ceil
+    ]
   ): T = js.native
 }
 

@@ -12,7 +12,7 @@ Functional async flow control library
 | Keywords           | flow, async, ocaml, functional, haskell, waterfall, try, catch, promises, thennable, bluebird, q |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 6348 |
+| # downloads        | 6279 |
 | # stars            | 1 |
 
 ## Links

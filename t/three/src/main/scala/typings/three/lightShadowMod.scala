@@ -16,12 +16,15 @@ object lightShadowMod extends js.Object {
   @js.native
   class LightShadow protected () extends js.Object {
     def this(camera: Camera) = this()
+    var autoUpdate: Boolean = js.native
     var bias: Double = js.native
     var camera: Camera = js.native
     var map: RenderTarget = js.native
     var mapPass: RenderTarget = js.native
     var mapSize: Vector2 = js.native
     var matrix: Matrix4 = js.native
+    var needsUpdate: Boolean = js.native
+    var normalBias: Double = js.native
     var radius: Double = js.native
     def clone(recursive: Boolean): this.type = js.native
     def copy(source: LightShadow): this.type = js.native

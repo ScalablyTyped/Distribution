@@ -11,8 +11,86 @@ import scala.scalajs.js.annotation._
 @js.native
 object conv1d extends js.Object {
   def apply(x: Tensor[Rank], kernel: Tensor[Rank]): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.UndefOr[scala.Nothing],
+    padding: js.UndefOr[scala.Nothing],
+    dataFormat: js.UndefOr[scala.Nothing],
+    dilationRate: Double
+  ): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.UndefOr[scala.Nothing],
+    padding: js.UndefOr[scala.Nothing],
+    dataFormat: DataFormat
+  ): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.UndefOr[scala.Nothing],
+    padding: js.UndefOr[scala.Nothing],
+    dataFormat: DataFormat,
+    dilationRate: Double
+  ): Tensor[Rank] = js.native
+  def apply(x: Tensor[Rank], kernel: Tensor[Rank], strides: js.UndefOr[scala.Nothing], padding: String): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.UndefOr[scala.Nothing],
+    padding: String,
+    dataFormat: js.UndefOr[scala.Nothing],
+    dilationRate: Double
+  ): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.UndefOr[scala.Nothing],
+    padding: String,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: js.UndefOr[scala.Nothing],
+    padding: String,
+    dataFormat: DataFormat,
+    dilationRate: Double
+  ): Tensor[Rank] = js.native
   def apply(x: Tensor[Rank], kernel: Tensor[Rank], strides: Double): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Double,
+    padding: js.UndefOr[scala.Nothing],
+    dataFormat: js.UndefOr[scala.Nothing],
+    dilationRate: Double
+  ): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Double,
+    padding: js.UndefOr[scala.Nothing],
+    dataFormat: DataFormat
+  ): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Double,
+    padding: js.UndefOr[scala.Nothing],
+    dataFormat: DataFormat,
+    dilationRate: Double
+  ): Tensor[Rank] = js.native
   def apply(x: Tensor[Rank], kernel: Tensor[Rank], strides: Double, padding: String): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    kernel: Tensor[Rank],
+    strides: Double,
+    padding: String,
+    dataFormat: js.UndefOr[scala.Nothing],
+    dilationRate: Double
+  ): Tensor[Rank] = js.native
   def apply(x: Tensor[Rank], kernel: Tensor[Rank], strides: Double, padding: String, dataFormat: DataFormat): Tensor[Rank] = js.native
   def apply(
     x: Tensor[Rank],

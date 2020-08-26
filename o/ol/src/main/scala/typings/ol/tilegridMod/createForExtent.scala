@@ -12,7 +12,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object createForExtent extends js.Object {
   def apply(extent: Extent): default = js.native
+  def apply(
+    extent: Extent,
+    opt_maxZoom: js.UndefOr[scala.Nothing],
+    opt_tileSize: js.UndefOr[scala.Nothing],
+    opt_corner: Corner
+  ): default = js.native
+  def apply(extent: Extent, opt_maxZoom: js.UndefOr[scala.Nothing], opt_tileSize: Double): default = js.native
+  def apply(extent: Extent, opt_maxZoom: js.UndefOr[scala.Nothing], opt_tileSize: Double, opt_corner: Corner): default = js.native
+  def apply(extent: Extent, opt_maxZoom: js.UndefOr[scala.Nothing], opt_tileSize: Size): default = js.native
+  def apply(extent: Extent, opt_maxZoom: js.UndefOr[scala.Nothing], opt_tileSize: Size, opt_corner: Corner): default = js.native
   def apply(extent: Extent, opt_maxZoom: Double): default = js.native
+  def apply(extent: Extent, opt_maxZoom: Double, opt_tileSize: js.UndefOr[scala.Nothing], opt_corner: Corner): default = js.native
   def apply(extent: Extent, opt_maxZoom: Double, opt_tileSize: Double): default = js.native
   def apply(extent: Extent, opt_maxZoom: Double, opt_tileSize: Double, opt_corner: Corner): default = js.native
   def apply(extent: Extent, opt_maxZoom: Double, opt_tileSize: Size): default = js.native

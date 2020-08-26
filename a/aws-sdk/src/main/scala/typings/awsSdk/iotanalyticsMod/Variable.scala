@@ -30,19 +30,40 @@ trait Variable extends js.Object {
 
 object Variable {
   @scala.inline
-  def apply(
-    name: VariableName,
-    datasetContentVersionValue: DatasetContentVersionValue = null,
-    doubleValue: js.UndefOr[DoubleValue] = js.undefined,
-    outputFileUriValue: OutputFileUriValue = null,
-    stringValue: StringValue = null
-  ): Variable = {
+  def apply(name: VariableName): Variable = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (datasetContentVersionValue != null) __obj.updateDynamic("datasetContentVersionValue")(datasetContentVersionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
-    if (outputFileUriValue != null) __obj.updateDynamic("outputFileUriValue")(outputFileUriValue.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Variable]
   }
+  @scala.inline
+  implicit class VariableOps[Self <: Variable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: VariableName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDatasetContentVersionValue(value: DatasetContentVersionValue): Self = this.set("datasetContentVersionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetContentVersionValue: Self = this.set("datasetContentVersionValue", js.undefined)
+    @scala.inline
+    def setDoubleValue(value: DoubleValue): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    @scala.inline
+    def setOutputFileUriValue(value: OutputFileUriValue): Self = this.set("outputFileUriValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFileUriValue: Self = this.set("outputFileUriValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: StringValue): Self = this.set("stringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+  }
+  
 }
 

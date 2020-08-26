@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @ckeditor/ckeditor5-utils.@ckeditor/ckeditor5-utils.Observable & {  message  :string} */
+/* Inlined @ckeditor/ckeditor5-utils.@ckeditor/ckeditor5-utils.Observable & {  message :string} */
 @js.native
 trait Observablemessagestring extends js.Object {
   var message: String = js.native
@@ -34,10 +34,15 @@ trait Observablemessagestring extends js.Object {
   def set(name: String, value: js.Any): Unit = js.native
   def set(name: js.Object): Unit = js.native
   def stopDelegating(): Unit = js.native
+  def stopDelegating(event: js.UndefOr[scala.Nothing], emitter: Emitter): Unit = js.native
   def stopDelegating(event: String): Unit = js.native
   def stopDelegating(event: String, emitter: Emitter): Unit = js.native
   def stopListening(): Unit = js.native
+  def stopListening(emitter: js.UndefOr[scala.Nothing], event: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
+  def stopListening(emitter: js.UndefOr[scala.Nothing], event: String): Unit = js.native
+  def stopListening(emitter: js.UndefOr[scala.Nothing], event: String, callback: js.Function): Unit = js.native
   def stopListening(emitter: Emitter): Unit = js.native
+  def stopListening(emitter: Emitter, event: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def stopListening(emitter: Emitter, event: String): Unit = js.native
   def stopListening(emitter: Emitter, event: String, callback: js.Function): Unit = js.native
   def unbind(unbindProperties: String*): Unit = js.native

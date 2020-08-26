@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * The FCP is able to restrict access to the local file system to a number of directories shown to the client under configurable alias names.
   * @see com.sun.star.ucb.Content
   */
+@js.native
 trait FileContentProvider
   extends XContentProvider
      with XContentIdentifierFactory

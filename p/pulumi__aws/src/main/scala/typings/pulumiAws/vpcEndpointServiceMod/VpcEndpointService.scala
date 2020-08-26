@@ -31,6 +31,10 @@ class VpcEndpointService protected () extends CustomResource {
     */
   val allowedPrincipals: Output_[js.Array[String]] = js.native
   /**
+    * The Amazon Resource Name (ARN) of the VPC endpoint service.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * The Availability Zones in which the service is available.
     */
   val availabilityZones: Output_[js.Array[String]] = js.native
@@ -63,9 +67,9 @@ class VpcEndpointService protected () extends CustomResource {
     */
   val state: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -79,8 +83,10 @@ object VpcEndpointService extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): VpcEndpointService = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcEndpointService = js.native
   def get(name: String, id: Input[ID], state: VpcEndpointServiceState): VpcEndpointService = js.native
   def get(name: String, id: Input[ID], state: VpcEndpointServiceState, opts: CustomResourceOptions): VpcEndpointService = js.native
   /**

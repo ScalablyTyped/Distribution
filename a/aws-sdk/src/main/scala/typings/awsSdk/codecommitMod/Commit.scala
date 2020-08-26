@@ -38,24 +38,52 @@ trait Commit extends js.Object {
 
 object Commit {
   @scala.inline
-  def apply(
-    additionalData: AdditionalData = null,
-    author: UserInfo = null,
-    commitId: ObjectId = null,
-    committer: UserInfo = null,
-    message: Message = null,
-    parents: ParentList = null,
-    treeId: ObjectId = null
-  ): Commit = {
+  def apply(): Commit = {
     val __obj = js.Dynamic.literal()
-    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (commitId != null) __obj.updateDynamic("commitId")(commitId.asInstanceOf[js.Any])
-    if (committer != null) __obj.updateDynamic("committer")(committer.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (parents != null) __obj.updateDynamic("parents")(parents.asInstanceOf[js.Any])
-    if (treeId != null) __obj.updateDynamic("treeId")(treeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Commit]
   }
+  @scala.inline
+  implicit class CommitOps[Self <: Commit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalData(value: AdditionalData): Self = this.set("additionalData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalData: Self = this.set("additionalData", js.undefined)
+    @scala.inline
+    def setAuthor(value: UserInfo): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setCommitId(value: ObjectId): Self = this.set("commitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitId: Self = this.set("commitId", js.undefined)
+    @scala.inline
+    def setCommitter(value: UserInfo): Self = this.set("committer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitter: Self = this.set("committer", js.undefined)
+    @scala.inline
+    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setParentsVarargs(value: ObjectId*): Self = this.set("parents", js.Array(value :_*))
+    @scala.inline
+    def setParents(value: ParentList): Self = this.set("parents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParents: Self = this.set("parents", js.undefined)
+    @scala.inline
+    def setTreeId(value: ObjectId): Self = this.set("treeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreeId: Self = this.set("treeId", js.undefined)
+  }
+  
 }
 

@@ -18,15 +18,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PagerConfiguration[TElement] extends js.Object {
   /**
     * Handles errors caused by an ajax-request.
     */
-  var ajaxError: js.UndefOr[AjaxErrorHandler[TElement]] = js.undefined
+  var ajaxError: js.UndefOr[AjaxErrorHandler[TElement]] = js.native
   /**
     * The settings for the api-interaction of the pager.
     */
-  var ajaxObject: js.UndefOr[JQueryAjaxSettings] = js.undefined
+  var ajaxObject: js.UndefOr[JQueryAjaxSettings] = js.native
   /**
     * Processes the ajax-result for the `pager`-widget.
     *
@@ -42,7 +43,7 @@ trait PagerConfiguration[TElement] extends js.Object {
     * @return
     * The data for the pager to show.
     */
-  var ajaxProcessing: js.UndefOr[AjaxDataProcessor[TElement]] = js.undefined
+  var ajaxProcessing: js.UndefOr[AjaxDataProcessor[TElement]] = js.native
   /**
     * The url to query data from.
     *
@@ -56,63 +57,63 @@ trait PagerConfiguration[TElement] extends js.Object {
     * | `{sortList:name}` or `{sort:name}`     | A GET-variable called `name` containing the current sorting.           |
     * | `{filterList:name}` or `{filter:name}` | A GET-variable called `name` containing all currently applied filters. |
     */
-  var ajaxUrl: js.UndefOr[String] = js.undefined
+  var ajaxUrl: js.UndefOr[String] = js.native
   /**
     * The selector for querying the pager-container.
     */
-  var container: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var container: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * A value indicating whether to split child-rows on page-breaks.
     */
-  var countChildRows: js.UndefOr[Boolean] = js.undefined
+  var countChildRows: js.UndefOr[Boolean] = js.native
   /**
     * The css-class to apply to disabled pager-controls.
     */
-  var cssDisabled: js.UndefOr[String] = js.undefined
+  var cssDisabled: js.UndefOr[String] = js.native
   /**
     * The css-class to apply to the table-row which displays the error-message in case of an ajax-error.
     */
-  var cssErrorRow: js.UndefOr[String] = js.undefined
+  var cssErrorRow: js.UndefOr[String] = js.native
   /**
     * The selector for querying the control to jump to the first page.
     */
-  var cssFirst: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var cssFirst: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the dropdown-control to jump to a specific page.
     */
-  var cssGoto: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var cssGoto: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the control to jump to the last page.
     */
-  var cssLast: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var cssLast: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the control to jump to the next page.
     */
-  var cssNext: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var cssNext: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the container to print the output to.
     */
-  var cssPageDisplay: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var cssPageDisplay: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the control to set the page-size.
     */
-  var cssPageSize: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var cssPageSize: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the control to jump to the previous page.
     */
-  var cssPrev: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var cssPrev: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * Pre-processes the url for `ajax`.
     */
-  var customAjaxUrl: js.UndefOr[AjaxUrlProcessor[TElement]] = js.undefined
+  var customAjaxUrl: js.UndefOr[AjaxUrlProcessor[TElement]] = js.native
   /**
     * A value indicating whether the table should always have the same number of rows even if there is a lesser number of records to show.
     */
-  var fixedHeight: js.UndefOr[Boolean] = js.undefined
+  var fixedHeight: js.UndefOr[Boolean] = js.native
   /**
     * The initial amount of rows to show.
     */
-  var initialRows: js.UndefOr[PagerInitialRows] = js.undefined
+  var initialRows: js.UndefOr[PagerInitialRows] = js.native
   /**
     * The output to display in the output-area.
     *
@@ -131,105 +132,177 @@ trait PagerConfiguration[TElement] extends js.Object {
     * | `{filteredRows}`   | The amount of filtered rows.                 |
     * | `{totalRows}`      | The total amount of rows.                    |
     */
-  var output: js.UndefOr[String | PagerOutputProcessor[TElement]] = js.undefined
+  var output: js.UndefOr[String | PagerOutputProcessor[TElement]] = js.native
   /**
     * The number of the first page to show.
     */
-  var page: js.UndefOr[Double] = js.undefined
+  var page: js.UndefOr[Double] = js.native
   /**
     * The number of the first page to show after applying a filter.
     */
-  var pageReset: js.UndefOr[Double | Boolean] = js.undefined
+  var pageReset: js.UndefOr[Double | Boolean] = js.native
   /**
     * A value indicating whether an ajax-request should be executed after the initialization of the table.
     */
-  var processAjaxOnInit: js.UndefOr[Boolean] = js.undefined
+  var processAjaxOnInit: js.UndefOr[Boolean] = js.native
   /**
     * A value indicating whether to remove the rows while performing sortings for speed up.
     */
-  var removeRows: js.UndefOr[Boolean] = js.undefined
+  var removeRows: js.UndefOr[Boolean] = js.native
   /**
     * A value indicating whether to save the current page locally.
     */
-  var savePages: js.UndefOr[Boolean] = js.undefined
+  var savePages: js.UndefOr[Boolean] = js.native
   /**
     * The initial page-size.
     */
-  var size: js.UndefOr[PageSize] = js.undefined
+  var size: js.UndefOr[PageSize] = js.native
   /**
     * The key to of the local storage to save data to.
     */
-  var storageKey: js.UndefOr[String] = js.undefined
+  var storageKey: js.UndefOr[String] = js.native
   /**
     * A value indicating whether the `cssDisabled` class should be applied to non-applicable buttons.
     */
-  var updateArrows: js.UndefOr[Boolean] = js.undefined
+  var updateArrows: js.UndefOr[Boolean] = js.native
 }
 
 object PagerConfiguration {
   @scala.inline
-  def apply[TElement](
-    ajaxError: (/* config */ TablesorterConfigurationStore[TElement], /* request */ jqXHR[js.Any], /* ajaxSettings */ AjaxSettings[js.Any], /* thrownError */ String) => String = null,
-    ajaxObject: JQueryAjaxSettings = null,
-    ajaxProcessing: (/* data */ js.Any, TElement, /* request */ jqXHR[js.Any]) => PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[
-      Double, 
-      JQuery[HTMLElement] | js.Array[js.Array[js.Any]], 
-      js.UndefOr[js.Array[String]]
-    ]) = null,
-    ajaxUrl: String = null,
-    container: Selector | JQuery[HTMLElement] = null,
-    countChildRows: js.UndefOr[Boolean] = js.undefined,
-    cssDisabled: String = null,
-    cssErrorRow: String = null,
-    cssFirst: Selector | JQuery[HTMLElement] = null,
-    cssGoto: Selector | JQuery[HTMLElement] = null,
-    cssLast: Selector | JQuery[HTMLElement] = null,
-    cssNext: Selector | JQuery[HTMLElement] = null,
-    cssPageDisplay: Selector | JQuery[HTMLElement] = null,
-    cssPageSize: Selector | JQuery[HTMLElement] = null,
-    cssPrev: Selector | JQuery[HTMLElement] = null,
-    customAjaxUrl: (TElement, /* url */ String) => String = null,
-    fixedHeight: js.UndefOr[Boolean] = js.undefined,
-    initialRows: PagerInitialRows = null,
-    output: String | PagerOutputProcessor[TElement] = null,
-    page: js.UndefOr[Double] = js.undefined,
-    pageReset: Double | Boolean = null,
-    processAjaxOnInit: js.UndefOr[Boolean] = js.undefined,
-    removeRows: js.UndefOr[Boolean] = js.undefined,
-    savePages: js.UndefOr[Boolean] = js.undefined,
-    size: PageSize = null,
-    storageKey: String = null,
-    updateArrows: js.UndefOr[Boolean] = js.undefined
-  ): PagerConfiguration[TElement] = {
+  def apply[TElement](): PagerConfiguration[TElement] = {
     val __obj = js.Dynamic.literal()
-    if (ajaxError != null) __obj.updateDynamic("ajaxError")(js.Any.fromFunction4(ajaxError))
-    if (ajaxObject != null) __obj.updateDynamic("ajaxObject")(ajaxObject.asInstanceOf[js.Any])
-    if (ajaxProcessing != null) __obj.updateDynamic("ajaxProcessing")(js.Any.fromFunction3(ajaxProcessing))
-    if (ajaxUrl != null) __obj.updateDynamic("ajaxUrl")(ajaxUrl.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(countChildRows)) __obj.updateDynamic("countChildRows")(countChildRows.get.asInstanceOf[js.Any])
-    if (cssDisabled != null) __obj.updateDynamic("cssDisabled")(cssDisabled.asInstanceOf[js.Any])
-    if (cssErrorRow != null) __obj.updateDynamic("cssErrorRow")(cssErrorRow.asInstanceOf[js.Any])
-    if (cssFirst != null) __obj.updateDynamic("cssFirst")(cssFirst.asInstanceOf[js.Any])
-    if (cssGoto != null) __obj.updateDynamic("cssGoto")(cssGoto.asInstanceOf[js.Any])
-    if (cssLast != null) __obj.updateDynamic("cssLast")(cssLast.asInstanceOf[js.Any])
-    if (cssNext != null) __obj.updateDynamic("cssNext")(cssNext.asInstanceOf[js.Any])
-    if (cssPageDisplay != null) __obj.updateDynamic("cssPageDisplay")(cssPageDisplay.asInstanceOf[js.Any])
-    if (cssPageSize != null) __obj.updateDynamic("cssPageSize")(cssPageSize.asInstanceOf[js.Any])
-    if (cssPrev != null) __obj.updateDynamic("cssPrev")(cssPrev.asInstanceOf[js.Any])
-    if (customAjaxUrl != null) __obj.updateDynamic("customAjaxUrl")(js.Any.fromFunction2(customAjaxUrl))
-    if (!js.isUndefined(fixedHeight)) __obj.updateDynamic("fixedHeight")(fixedHeight.get.asInstanceOf[js.Any])
-    if (initialRows != null) __obj.updateDynamic("initialRows")(initialRows.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
-    if (pageReset != null) __obj.updateDynamic("pageReset")(pageReset.asInstanceOf[js.Any])
-    if (!js.isUndefined(processAjaxOnInit)) __obj.updateDynamic("processAjaxOnInit")(processAjaxOnInit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeRows)) __obj.updateDynamic("removeRows")(removeRows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(savePages)) __obj.updateDynamic("savePages")(savePages.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateArrows)) __obj.updateDynamic("updateArrows")(updateArrows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagerConfiguration[TElement]]
   }
+  @scala.inline
+  implicit class PagerConfigurationOps[Self <: PagerConfiguration[_], TElement] (val x: Self with PagerConfiguration[TElement]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAjaxError(
+      value: (/* config */ TablesorterConfigurationStore[TElement], /* request */ jqXHR[js.Any], /* ajaxSettings */ AjaxSettings[js.Any], /* thrownError */ String) => String
+    ): Self = this.set("ajaxError", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteAjaxError: Self = this.set("ajaxError", js.undefined)
+    @scala.inline
+    def setAjaxObject(value: JQueryAjaxSettings): Self = this.set("ajaxObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAjaxObject: Self = this.set("ajaxObject", js.undefined)
+    @scala.inline
+    def setAjaxProcessing(
+      value: (/* data */ js.Any, TElement, /* request */ jqXHR[js.Any]) => PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[
+          Double, 
+          JQuery[HTMLElement] | js.Array[js.Array[js.Any]], 
+          js.UndefOr[js.Array[String]]
+        ])
+    ): Self = this.set("ajaxProcessing", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteAjaxProcessing: Self = this.set("ajaxProcessing", js.undefined)
+    @scala.inline
+    def setAjaxUrl(value: String): Self = this.set("ajaxUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAjaxUrl: Self = this.set("ajaxUrl", js.undefined)
+    @scala.inline
+    def setContainer(value: Selector | JQuery[HTMLElement]): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setCountChildRows(value: Boolean): Self = this.set("countChildRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountChildRows: Self = this.set("countChildRows", js.undefined)
+    @scala.inline
+    def setCssDisabled(value: String): Self = this.set("cssDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssDisabled: Self = this.set("cssDisabled", js.undefined)
+    @scala.inline
+    def setCssErrorRow(value: String): Self = this.set("cssErrorRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssErrorRow: Self = this.set("cssErrorRow", js.undefined)
+    @scala.inline
+    def setCssFirst(value: Selector | JQuery[HTMLElement]): Self = this.set("cssFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssFirst: Self = this.set("cssFirst", js.undefined)
+    @scala.inline
+    def setCssGoto(value: Selector | JQuery[HTMLElement]): Self = this.set("cssGoto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssGoto: Self = this.set("cssGoto", js.undefined)
+    @scala.inline
+    def setCssLast(value: Selector | JQuery[HTMLElement]): Self = this.set("cssLast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssLast: Self = this.set("cssLast", js.undefined)
+    @scala.inline
+    def setCssNext(value: Selector | JQuery[HTMLElement]): Self = this.set("cssNext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssNext: Self = this.set("cssNext", js.undefined)
+    @scala.inline
+    def setCssPageDisplay(value: Selector | JQuery[HTMLElement]): Self = this.set("cssPageDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssPageDisplay: Self = this.set("cssPageDisplay", js.undefined)
+    @scala.inline
+    def setCssPageSize(value: Selector | JQuery[HTMLElement]): Self = this.set("cssPageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssPageSize: Self = this.set("cssPageSize", js.undefined)
+    @scala.inline
+    def setCssPrev(value: Selector | JQuery[HTMLElement]): Self = this.set("cssPrev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssPrev: Self = this.set("cssPrev", js.undefined)
+    @scala.inline
+    def setCustomAjaxUrl(value: (TElement, /* url */ String) => String): Self = this.set("customAjaxUrl", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCustomAjaxUrl: Self = this.set("customAjaxUrl", js.undefined)
+    @scala.inline
+    def setFixedHeight(value: Boolean): Self = this.set("fixedHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedHeight: Self = this.set("fixedHeight", js.undefined)
+    @scala.inline
+    def setInitialRows(value: PagerInitialRows): Self = this.set("initialRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialRows: Self = this.set("initialRows", js.undefined)
+    @scala.inline
+    def setOutputFunction2(value: (TElement, /* pager */ js.Any) => String): Self = this.set("output", js.Any.fromFunction2(value))
+    @scala.inline
+    def setOutput(value: String | PagerOutputProcessor[TElement]): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutput: Self = this.set("output", js.undefined)
+    @scala.inline
+    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setPageReset(value: Double | Boolean): Self = this.set("pageReset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageReset: Self = this.set("pageReset", js.undefined)
+    @scala.inline
+    def setProcessAjaxOnInit(value: Boolean): Self = this.set("processAjaxOnInit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessAjaxOnInit: Self = this.set("processAjaxOnInit", js.undefined)
+    @scala.inline
+    def setRemoveRows(value: Boolean): Self = this.set("removeRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveRows: Self = this.set("removeRows", js.undefined)
+    @scala.inline
+    def setSavePages(value: Boolean): Self = this.set("savePages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavePages: Self = this.set("savePages", js.undefined)
+    @scala.inline
+    def setSize(value: PageSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStorageKey(value: String): Self = this.set("storageKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageKey: Self = this.set("storageKey", js.undefined)
+    @scala.inline
+    def setUpdateArrows(value: Boolean): Self = this.set("updateArrows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateArrows: Self = this.set("updateArrows", js.undefined)
+  }
+  
 }
 

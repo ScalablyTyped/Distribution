@@ -26,10 +26,32 @@ trait DeleteTaskSetRequest extends js.Object {
 
 object DeleteTaskSetRequest {
   @scala.inline
-  def apply(cluster: String, service: String, taskSet: String, force: js.UndefOr[BoxedBoolean] = js.undefined): DeleteTaskSetRequest = {
+  def apply(cluster: String, service: String, taskSet: String): DeleteTaskSetRequest = {
     val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], taskSet = taskSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTaskSetRequest]
   }
+  @scala.inline
+  implicit class DeleteTaskSetRequestOps[Self <: DeleteTaskSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskSet(value: String): Self = this.set("taskSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForce(value: BoxedBoolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+  }
+  
 }
 

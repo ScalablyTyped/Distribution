@@ -47,16 +47,47 @@ object UpdateDataSetRequest {
     DataSetId: ResourceId,
     ImportMode: DataSetImportMode,
     Name: ResourceName,
-    PhysicalTableMap: PhysicalTableMap,
-    ColumnGroups: ColumnGroupList = null,
-    LogicalTableMap: LogicalTableMap = null,
-    RowLevelPermissionDataSet: RowLevelPermissionDataSet = null
+    PhysicalTableMap: PhysicalTableMap
   ): UpdateDataSetRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], ImportMode = ImportMode.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PhysicalTableMap = PhysicalTableMap.asInstanceOf[js.Any])
-    if (ColumnGroups != null) __obj.updateDynamic("ColumnGroups")(ColumnGroups.asInstanceOf[js.Any])
-    if (LogicalTableMap != null) __obj.updateDynamic("LogicalTableMap")(LogicalTableMap.asInstanceOf[js.Any])
-    if (RowLevelPermissionDataSet != null) __obj.updateDynamic("RowLevelPermissionDataSet")(RowLevelPermissionDataSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDataSetRequest]
   }
+  @scala.inline
+  implicit class UpdateDataSetRequestOps[Self <: UpdateDataSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataSetId(value: ResourceId): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImportMode(value: DataSetImportMode): Self = this.set("ImportMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPhysicalTableMap(value: PhysicalTableMap): Self = this.set("PhysicalTableMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColumnGroupsVarargs(value: ColumnGroup*): Self = this.set("ColumnGroups", js.Array(value :_*))
+    @scala.inline
+    def setColumnGroups(value: ColumnGroupList): Self = this.set("ColumnGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnGroups: Self = this.set("ColumnGroups", js.undefined)
+    @scala.inline
+    def setLogicalTableMap(value: LogicalTableMap): Self = this.set("LogicalTableMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogicalTableMap: Self = this.set("LogicalTableMap", js.undefined)
+    @scala.inline
+    def setRowLevelPermissionDataSet(value: RowLevelPermissionDataSet): Self = this.set("RowLevelPermissionDataSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowLevelPermissionDataSet: Self = this.set("RowLevelPermissionDataSet", js.undefined)
+  }
+  
 }
 

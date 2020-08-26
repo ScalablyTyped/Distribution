@@ -42,26 +42,54 @@ trait S3DestinationUpdate extends js.Object {
 
 object S3DestinationUpdate {
   @scala.inline
-  def apply(
-    BucketARN: BucketARN = null,
-    BufferingHints: BufferingHints = null,
-    CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
-    CompressionFormat: CompressionFormat = null,
-    EncryptionConfiguration: EncryptionConfiguration = null,
-    ErrorOutputPrefix: ErrorOutputPrefix = null,
-    Prefix: Prefix = null,
-    RoleARN: RoleARN = null
-  ): S3DestinationUpdate = {
+  def apply(): S3DestinationUpdate = {
     val __obj = js.Dynamic.literal()
-    if (BucketARN != null) __obj.updateDynamic("BucketARN")(BucketARN.asInstanceOf[js.Any])
-    if (BufferingHints != null) __obj.updateDynamic("BufferingHints")(BufferingHints.asInstanceOf[js.Any])
-    if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions.asInstanceOf[js.Any])
-    if (CompressionFormat != null) __obj.updateDynamic("CompressionFormat")(CompressionFormat.asInstanceOf[js.Any])
-    if (EncryptionConfiguration != null) __obj.updateDynamic("EncryptionConfiguration")(EncryptionConfiguration.asInstanceOf[js.Any])
-    if (ErrorOutputPrefix != null) __obj.updateDynamic("ErrorOutputPrefix")(ErrorOutputPrefix.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3DestinationUpdate]
   }
+  @scala.inline
+  implicit class S3DestinationUpdateOps[Self <: S3DestinationUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketARN(value: BucketARN): Self = this.set("BucketARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketARN: Self = this.set("BucketARN", js.undefined)
+    @scala.inline
+    def setBufferingHints(value: BufferingHints): Self = this.set("BufferingHints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferingHints: Self = this.set("BufferingHints", js.undefined)
+    @scala.inline
+    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = this.set("CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLoggingOptions: Self = this.set("CloudWatchLoggingOptions", js.undefined)
+    @scala.inline
+    def setCompressionFormat(value: CompressionFormat): Self = this.set("CompressionFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompressionFormat: Self = this.set("CompressionFormat", js.undefined)
+    @scala.inline
+    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("EncryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionConfiguration: Self = this.set("EncryptionConfiguration", js.undefined)
+    @scala.inline
+    def setErrorOutputPrefix(value: ErrorOutputPrefix): Self = this.set("ErrorOutputPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorOutputPrefix: Self = this.set("ErrorOutputPrefix", js.undefined)
+    @scala.inline
+    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    @scala.inline
+    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+  }
+  
 }
 

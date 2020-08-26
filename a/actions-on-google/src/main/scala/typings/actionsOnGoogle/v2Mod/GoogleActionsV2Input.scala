@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoogleActionsV2Input extends js.Object {
   /**
     * A list of provided argument values for the input requested by the Action.
     */
-  var arguments: js.UndefOr[js.Array[GoogleActionsV2Argument]] = js.undefined
+  var arguments: js.UndefOr[js.Array[GoogleActionsV2Argument]] = js.native
   /**
     * Indicates the user's intent. For the first conversation turn, the intent
     * will refer to the triggering intent for the Action. For
@@ -20,27 +21,49 @@ trait GoogleActionsV2Input extends js.Object {
     * `actions.intent.TEXT` if the user provided other information.
     * See https://developers.google.com/actions/reference/rest/intents.
     */
-  var intent: js.UndefOr[String] = js.undefined
+  var intent: js.UndefOr[String] = js.native
   /**
     * Raw input transcription from each turn of conversation.
     * Multiple conversation turns may be required for Actions on Google to
     * provide some types of input to the Action.
     */
-  var rawInputs: js.UndefOr[js.Array[GoogleActionsV2RawInput]] = js.undefined
+  var rawInputs: js.UndefOr[js.Array[GoogleActionsV2RawInput]] = js.native
 }
 
 object GoogleActionsV2Input {
   @scala.inline
-  def apply(
-    arguments: js.Array[GoogleActionsV2Argument] = null,
-    intent: String = null,
-    rawInputs: js.Array[GoogleActionsV2RawInput] = null
-  ): GoogleActionsV2Input = {
+  def apply(): GoogleActionsV2Input = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (rawInputs != null) __obj.updateDynamic("rawInputs")(rawInputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2Input]
   }
+  @scala.inline
+  implicit class GoogleActionsV2InputOps[Self <: GoogleActionsV2Input] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = this.set("arguments", js.Array(value :_*))
+    @scala.inline
+    def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArguments: Self = this.set("arguments", js.undefined)
+    @scala.inline
+    def setIntent(value: String): Self = this.set("intent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntent: Self = this.set("intent", js.undefined)
+    @scala.inline
+    def setRawInputsVarargs(value: GoogleActionsV2RawInput*): Self = this.set("rawInputs", js.Array(value :_*))
+    @scala.inline
+    def setRawInputs(value: js.Array[GoogleActionsV2RawInput]): Self = this.set("rawInputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawInputs: Self = this.set("rawInputs", js.undefined)
+  }
+  
 }
 

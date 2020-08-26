@@ -5,50 +5,77 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WiFiPropertiesBase[M /* <: ManagedObject */, S] extends js.Object {
   /** The BSSID of the associated access point.. */
-  var BSSID: js.UndefOr[String] = js.undefined
+  var BSSID: js.UndefOr[String] = js.native
   /**
     * The WiFi service operating frequency in MHz.
     * For connected networks, the current frequency on which the network is connected.
     * Otherwise, the frequency of the best available BSS.
     */
-  var Frequency: js.UndefOr[integer] = js.undefined
+  var Frequency: js.UndefOr[integer] = js.native
   /** HEX-encoded copy of the network SSID. */
-  var HexSSID: js.UndefOr[S] = js.undefined
+  var HexSSID: js.UndefOr[S] = js.native
   /** The network SSID. */
-  var SSID: js.UndefOr[S] = js.undefined
+  var SSID: js.UndefOr[S] = js.native
   /** The network security type. */
-  var Security: js.UndefOr[S] = js.undefined
+  var Security: js.UndefOr[S] = js.native
   /** The network signal strength. */
-  var SignalStrength: js.UndefOr[integer] = js.undefined
+  var SignalStrength: js.UndefOr[integer] = js.native
   /**
     * @since Chrome 70
     * @description The tethering state associated with the connection.
     */
-  var TetheringState: js.UndefOr[String] = js.undefined
+  var TetheringState: js.UndefOr[String] = js.native
 }
 
 object WiFiPropertiesBase {
   @scala.inline
-  def apply[M /* <: ManagedObject */, S](
-    BSSID: String = null,
-    Frequency: Int | Double = null,
-    HexSSID: S = null,
-    SSID: S = null,
-    Security: S = null,
-    SignalStrength: Int | Double = null,
-    TetheringState: String = null
-  ): WiFiPropertiesBase[M, S] = {
+  def apply[/* <: typings.chromeApps.chrome.networking.onc.ManagedObject */ M, S](): WiFiPropertiesBase[M, S] = {
     val __obj = js.Dynamic.literal()
-    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID.asInstanceOf[js.Any])
-    if (Frequency != null) __obj.updateDynamic("Frequency")(Frequency.asInstanceOf[js.Any])
-    if (HexSSID != null) __obj.updateDynamic("HexSSID")(HexSSID.asInstanceOf[js.Any])
-    if (SSID != null) __obj.updateDynamic("SSID")(SSID.asInstanceOf[js.Any])
-    if (Security != null) __obj.updateDynamic("Security")(Security.asInstanceOf[js.Any])
-    if (SignalStrength != null) __obj.updateDynamic("SignalStrength")(SignalStrength.asInstanceOf[js.Any])
-    if (TetheringState != null) __obj.updateDynamic("TetheringState")(TetheringState.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiPropertiesBase[M, S]]
   }
+  @scala.inline
+  implicit class WiFiPropertiesBaseOps[Self <: WiFiPropertiesBase[_, _], /* <: typings.chromeApps.chrome.networking.onc.ManagedObject */ M, S] (val x: Self with (WiFiPropertiesBase[M, S])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBSSID(value: String): Self = this.set("BSSID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBSSID: Self = this.set("BSSID", js.undefined)
+    @scala.inline
+    def setFrequency(value: integer): Self = this.set("Frequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrequency: Self = this.set("Frequency", js.undefined)
+    @scala.inline
+    def setHexSSID(value: S): Self = this.set("HexSSID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHexSSID: Self = this.set("HexSSID", js.undefined)
+    @scala.inline
+    def setSSID(value: S): Self = this.set("SSID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSID: Self = this.set("SSID", js.undefined)
+    @scala.inline
+    def setSecurity(value: S): Self = this.set("Security", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurity: Self = this.set("Security", js.undefined)
+    @scala.inline
+    def setSignalStrength(value: integer): Self = this.set("SignalStrength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignalStrength: Self = this.set("SignalStrength", js.undefined)
+    @scala.inline
+    def setTetheringState(value: String): Self = this.set("TetheringState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTetheringState: Self = this.set("TetheringState", js.undefined)
+  }
+  
 }
 

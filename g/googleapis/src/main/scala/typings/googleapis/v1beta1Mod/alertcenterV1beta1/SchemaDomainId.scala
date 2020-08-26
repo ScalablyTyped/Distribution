@@ -17,10 +17,26 @@ trait SchemaDomainId extends js.Object {
 
 object SchemaDomainId {
   @scala.inline
-  def apply(customerPrimaryDomain: String = null): SchemaDomainId = {
+  def apply(): SchemaDomainId = {
     val __obj = js.Dynamic.literal()
-    if (customerPrimaryDomain != null) __obj.updateDynamic("customerPrimaryDomain")(customerPrimaryDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDomainId]
   }
+  @scala.inline
+  implicit class SchemaDomainIdOps[Self <: SchemaDomainId] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomerPrimaryDomain(value: String): Self = this.set("customerPrimaryDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerPrimaryDomain: Self = this.set("customerPrimaryDomain", js.undefined)
+  }
+  
 }
 

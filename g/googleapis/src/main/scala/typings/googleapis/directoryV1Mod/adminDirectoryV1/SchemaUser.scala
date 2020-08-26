@@ -142,98 +142,202 @@ trait SchemaUser extends js.Object {
 
 object SchemaUser {
   @scala.inline
-  def apply(
-    addresses: js.Any = null,
-    agreedToTerms: js.UndefOr[Boolean] = js.undefined,
-    aliases: js.Array[String] = null,
-    archived: js.UndefOr[Boolean] = js.undefined,
-    changePasswordAtNextLogin: js.UndefOr[Boolean] = js.undefined,
-    creationTime: String = null,
-    customSchemas: StringDictionary[SchemaUserCustomProperties] = null,
-    customerId: String = null,
-    deletionTime: String = null,
-    emails: js.Any = null,
-    etag: String = null,
-    externalIds: js.Any = null,
-    gender: js.Any = null,
-    hashFunction: String = null,
-    id: String = null,
-    ims: js.Any = null,
-    includeInGlobalAddressList: js.UndefOr[Boolean] = js.undefined,
-    ipWhitelisted: js.UndefOr[Boolean] = js.undefined,
-    isAdmin: js.UndefOr[Boolean] = js.undefined,
-    isDelegatedAdmin: js.UndefOr[Boolean] = js.undefined,
-    isEnforcedIn2Sv: js.UndefOr[Boolean] = js.undefined,
-    isEnrolledIn2Sv: js.UndefOr[Boolean] = js.undefined,
-    isMailboxSetup: js.UndefOr[Boolean] = js.undefined,
-    keywords: js.Any = null,
-    kind: String = null,
-    languages: js.Any = null,
-    lastLoginTime: String = null,
-    locations: js.Any = null,
-    name: SchemaUserName = null,
-    nonEditableAliases: js.Array[String] = null,
-    notes: js.Any = null,
-    orgUnitPath: String = null,
-    organizations: js.Any = null,
-    password: String = null,
-    phones: js.Any = null,
-    posixAccounts: js.Any = null,
-    primaryEmail: String = null,
-    relations: js.Any = null,
-    sshPublicKeys: js.Any = null,
-    suspended: js.UndefOr[Boolean] = js.undefined,
-    suspensionReason: String = null,
-    thumbnailPhotoEtag: String = null,
-    thumbnailPhotoUrl: String = null,
-    websites: js.Any = null
-  ): SchemaUser = {
+  def apply(): SchemaUser = {
     val __obj = js.Dynamic.literal()
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
-    if (!js.isUndefined(agreedToTerms)) __obj.updateDynamic("agreedToTerms")(agreedToTerms.get.asInstanceOf[js.Any])
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(changePasswordAtNextLogin)) __obj.updateDynamic("changePasswordAtNextLogin")(changePasswordAtNextLogin.get.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (customSchemas != null) __obj.updateDynamic("customSchemas")(customSchemas.asInstanceOf[js.Any])
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (deletionTime != null) __obj.updateDynamic("deletionTime")(deletionTime.asInstanceOf[js.Any])
-    if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (externalIds != null) __obj.updateDynamic("externalIds")(externalIds.asInstanceOf[js.Any])
-    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
-    if (hashFunction != null) __obj.updateDynamic("hashFunction")(hashFunction.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ims != null) __obj.updateDynamic("ims")(ims.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeInGlobalAddressList)) __obj.updateDynamic("includeInGlobalAddressList")(includeInGlobalAddressList.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ipWhitelisted)) __obj.updateDynamic("ipWhitelisted")(ipWhitelisted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAdmin)) __obj.updateDynamic("isAdmin")(isAdmin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDelegatedAdmin)) __obj.updateDynamic("isDelegatedAdmin")(isDelegatedAdmin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEnforcedIn2Sv)) __obj.updateDynamic("isEnforcedIn2Sv")(isEnforcedIn2Sv.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEnrolledIn2Sv)) __obj.updateDynamic("isEnrolledIn2Sv")(isEnrolledIn2Sv.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMailboxSetup)) __obj.updateDynamic("isMailboxSetup")(isMailboxSetup.get.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
-    if (lastLoginTime != null) __obj.updateDynamic("lastLoginTime")(lastLoginTime.asInstanceOf[js.Any])
-    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nonEditableAliases != null) __obj.updateDynamic("nonEditableAliases")(nonEditableAliases.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (orgUnitPath != null) __obj.updateDynamic("orgUnitPath")(orgUnitPath.asInstanceOf[js.Any])
-    if (organizations != null) __obj.updateDynamic("organizations")(organizations.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (phones != null) __obj.updateDynamic("phones")(phones.asInstanceOf[js.Any])
-    if (posixAccounts != null) __obj.updateDynamic("posixAccounts")(posixAccounts.asInstanceOf[js.Any])
-    if (primaryEmail != null) __obj.updateDynamic("primaryEmail")(primaryEmail.asInstanceOf[js.Any])
-    if (relations != null) __obj.updateDynamic("relations")(relations.asInstanceOf[js.Any])
-    if (sshPublicKeys != null) __obj.updateDynamic("sshPublicKeys")(sshPublicKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(suspended)) __obj.updateDynamic("suspended")(suspended.get.asInstanceOf[js.Any])
-    if (suspensionReason != null) __obj.updateDynamic("suspensionReason")(suspensionReason.asInstanceOf[js.Any])
-    if (thumbnailPhotoEtag != null) __obj.updateDynamic("thumbnailPhotoEtag")(thumbnailPhotoEtag.asInstanceOf[js.Any])
-    if (thumbnailPhotoUrl != null) __obj.updateDynamic("thumbnailPhotoUrl")(thumbnailPhotoUrl.asInstanceOf[js.Any])
-    if (websites != null) __obj.updateDynamic("websites")(websites.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUser]
   }
+  @scala.inline
+  implicit class SchemaUserOps[Self <: SchemaUser] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddresses(value: js.Any): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddresses: Self = this.set("addresses", js.undefined)
+    @scala.inline
+    def setAgreedToTerms(value: Boolean): Self = this.set("agreedToTerms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgreedToTerms: Self = this.set("agreedToTerms", js.undefined)
+    @scala.inline
+    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    @scala.inline
+    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("aliases", js.undefined)
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchived: Self = this.set("archived", js.undefined)
+    @scala.inline
+    def setChangePasswordAtNextLogin(value: Boolean): Self = this.set("changePasswordAtNextLogin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangePasswordAtNextLogin: Self = this.set("changePasswordAtNextLogin", js.undefined)
+    @scala.inline
+    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setCustomSchemas(value: StringDictionary[SchemaUserCustomProperties]): Self = this.set("customSchemas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSchemas: Self = this.set("customSchemas", js.undefined)
+    @scala.inline
+    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    @scala.inline
+    def setDeletionTime(value: String): Self = this.set("deletionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionTime: Self = this.set("deletionTime", js.undefined)
+    @scala.inline
+    def setEmails(value: js.Any): Self = this.set("emails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmails: Self = this.set("emails", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setExternalIds(value: js.Any): Self = this.set("externalIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalIds: Self = this.set("externalIds", js.undefined)
+    @scala.inline
+    def setGender(value: js.Any): Self = this.set("gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGender: Self = this.set("gender", js.undefined)
+    @scala.inline
+    def setHashFunction(value: String): Self = this.set("hashFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashFunction: Self = this.set("hashFunction", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIms(value: js.Any): Self = this.set("ims", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIms: Self = this.set("ims", js.undefined)
+    @scala.inline
+    def setIncludeInGlobalAddressList(value: Boolean): Self = this.set("includeInGlobalAddressList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeInGlobalAddressList: Self = this.set("includeInGlobalAddressList", js.undefined)
+    @scala.inline
+    def setIpWhitelisted(value: Boolean): Self = this.set("ipWhitelisted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpWhitelisted: Self = this.set("ipWhitelisted", js.undefined)
+    @scala.inline
+    def setIsAdmin(value: Boolean): Self = this.set("isAdmin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsAdmin: Self = this.set("isAdmin", js.undefined)
+    @scala.inline
+    def setIsDelegatedAdmin(value: Boolean): Self = this.set("isDelegatedAdmin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDelegatedAdmin: Self = this.set("isDelegatedAdmin", js.undefined)
+    @scala.inline
+    def setIsEnforcedIn2Sv(value: Boolean): Self = this.set("isEnforcedIn2Sv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsEnforcedIn2Sv: Self = this.set("isEnforcedIn2Sv", js.undefined)
+    @scala.inline
+    def setIsEnrolledIn2Sv(value: Boolean): Self = this.set("isEnrolledIn2Sv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsEnrolledIn2Sv: Self = this.set("isEnrolledIn2Sv", js.undefined)
+    @scala.inline
+    def setIsMailboxSetup(value: Boolean): Self = this.set("isMailboxSetup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMailboxSetup: Self = this.set("isMailboxSetup", js.undefined)
+    @scala.inline
+    def setKeywords(value: js.Any): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLanguages(value: js.Any): Self = this.set("languages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguages: Self = this.set("languages", js.undefined)
+    @scala.inline
+    def setLastLoginTime(value: String): Self = this.set("lastLoginTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastLoginTime: Self = this.set("lastLoginTime", js.undefined)
+    @scala.inline
+    def setLocations(value: js.Any): Self = this.set("locations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocations: Self = this.set("locations", js.undefined)
+    @scala.inline
+    def setName(value: SchemaUserName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNonEditableAliasesVarargs(value: String*): Self = this.set("nonEditableAliases", js.Array(value :_*))
+    @scala.inline
+    def setNonEditableAliases(value: js.Array[String]): Self = this.set("nonEditableAliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonEditableAliases: Self = this.set("nonEditableAliases", js.undefined)
+    @scala.inline
+    def setNotes(value: js.Any): Self = this.set("notes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotes: Self = this.set("notes", js.undefined)
+    @scala.inline
+    def setOrgUnitPath(value: String): Self = this.set("orgUnitPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrgUnitPath: Self = this.set("orgUnitPath", js.undefined)
+    @scala.inline
+    def setOrganizations(value: js.Any): Self = this.set("organizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizations: Self = this.set("organizations", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPhones(value: js.Any): Self = this.set("phones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhones: Self = this.set("phones", js.undefined)
+    @scala.inline
+    def setPosixAccounts(value: js.Any): Self = this.set("posixAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosixAccounts: Self = this.set("posixAccounts", js.undefined)
+    @scala.inline
+    def setPrimaryEmail(value: String): Self = this.set("primaryEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryEmail: Self = this.set("primaryEmail", js.undefined)
+    @scala.inline
+    def setRelations(value: js.Any): Self = this.set("relations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelations: Self = this.set("relations", js.undefined)
+    @scala.inline
+    def setSshPublicKeys(value: js.Any): Self = this.set("sshPublicKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshPublicKeys: Self = this.set("sshPublicKeys", js.undefined)
+    @scala.inline
+    def setSuspended(value: Boolean): Self = this.set("suspended", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspended: Self = this.set("suspended", js.undefined)
+    @scala.inline
+    def setSuspensionReason(value: String): Self = this.set("suspensionReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspensionReason: Self = this.set("suspensionReason", js.undefined)
+    @scala.inline
+    def setThumbnailPhotoEtag(value: String): Self = this.set("thumbnailPhotoEtag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailPhotoEtag: Self = this.set("thumbnailPhotoEtag", js.undefined)
+    @scala.inline
+    def setThumbnailPhotoUrl(value: String): Self = this.set("thumbnailPhotoUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailPhotoUrl: Self = this.set("thumbnailPhotoUrl", js.undefined)
+    @scala.inline
+    def setWebsites(value: js.Any): Self = this.set("websites", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsites: Self = this.set("websites", js.undefined)
+  }
+  
 }
 

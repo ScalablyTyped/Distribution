@@ -11,24 +11,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @name dxChartSeriesTypes.StackedBarSeries.aggregation */
+@js.native
 trait dxChartSeriesTypesStackedBarSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
   /** @name dxChartSeriesTypes.StackedBarSeries.aggregation.method */
   @JSName("method")
-  var method_dxChartSeriesTypesStackedBarSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
+  var method_dxChartSeriesTypesStackedBarSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
 }
 
 object dxChartSeriesTypesStackedBarSeriesAggregation {
   @scala.inline
-  def apply(
-    calculate: (/* aggregationInfo */ chartPointAggregationInfoObject, /* series */ chartSeriesObject) => _ | js.Array[_] = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    method: avg | count | max | min | sum | custom = null
-  ): dxChartSeriesTypesStackedBarSeriesAggregation = {
+  def apply(): dxChartSeriesTypesStackedBarSeriesAggregation = {
     val __obj = js.Dynamic.literal()
-    if (calculate != null) __obj.updateDynamic("calculate")(js.Any.fromFunction2(calculate))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesStackedBarSeriesAggregation]
   }
+  @scala.inline
+  implicit class dxChartSeriesTypesStackedBarSeriesAggregationOps[Self <: dxChartSeriesTypesStackedBarSeriesAggregation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMethod(value: avg | count | max | min | sum | custom): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+  }
+  
 }
 

@@ -3,12 +3,11 @@ package typings.officeUiFabricReact.sliderTypesMod
 import typings.officeUiFabricReact.sliderBaseMod.SliderBase
 import typings.react.mod.ClassAttributes
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.std.HTMLButtonElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.TouchEvent
+import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.createRefMod.IRefObject
@@ -16,158 +15,213 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ISliderProps extends ClassAttributes[SliderBase] {
   /**
     * A description of the Slider for the benefit of screen readers.
     */
-  var ariaLabel: js.UndefOr[String] = js.undefined
+  var ariaLabel: js.UndefOr[String] = js.native
   /**
     * A text description of the Slider number value for the benefit of screen readers.
     * This should be used when the Slider number value is not accurately represented by a number.
     */
-  var ariaValueText: js.UndefOr[js.Function1[/* value */ Double, String]] = js.undefined
+  var ariaValueText: js.UndefOr[js.Function1[/* value */ Double, String]] = js.native
   /**
     * Optional mixin for additional props on the thumb button within the slider.
     */
-  var buttonProps: js.UndefOr[HTMLAttributes[HTMLButtonElement]] = js.undefined
+  var buttonProps: js.UndefOr[HTMLAttributes[HTMLButtonElement]] = js.native
   /**
     * Optional className to attach to the slider root element.
     */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /**
     * Optional callback to access the ISlider interface. Use this instead of ref for accessing
     * the public methods and properties of the component.
     */
-  var componentRef: js.UndefOr[IRefObject[ISlider]] = js.undefined
+  var componentRef: js.UndefOr[IRefObject[ISlider]] = js.native
   /**
     * The initial value of the Slider. Use this if you intend for the Slider to be an uncontrolled component.
     * This value is mutually exclusive to value. Use one or the other.
     */
-  var defaultValue: js.UndefOr[Double] = js.undefined
+  var defaultValue: js.UndefOr[Double] = js.native
   /**
     * Optional flag to render the Slider as disabled.
     * @defaultvalue false
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /**
     * Description label of the Slider
     */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.native
   /**
     * The max value of the Slider
     * @defaultvalue 10
     */
-  var max: js.UndefOr[Double] = js.undefined
+  var max: js.UndefOr[Double] = js.native
   /**
     * The min value of the Slider
     * @defaultvalue 0
     */
-  var min: js.UndefOr[Double] = js.undefined
+  var min: js.UndefOr[Double] = js.native
   /**
     * Callback when the value has been changed
     */
-  var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
   /**
     * Callback on mouse up or touch end
     */
   var onChanged: js.UndefOr[
     js.Function2[/* event */ MouseEvent | TouchEvent | KeyboardEvent, /* value */ Double, Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * Optional flag to attach the origin of slider to zero. Helpful when the range include negatives.
     * @defaultvalue false
     */
-  var originFromZero: js.UndefOr[Boolean] = js.undefined
+  var originFromZero: js.UndefOr[Boolean] = js.native
   /**
     * Whether to show the value on the right of the Slider.
     * @defaultvalue true
     */
-  var showValue: js.UndefOr[Boolean] = js.undefined
+  var showValue: js.UndefOr[Boolean] = js.native
   /**
     * Optional flag to decide that thumb will snap to closest value while moving the slider
     * @defaultvalue false
     */
-  var snapToStep: js.UndefOr[Boolean] = js.undefined
+  var snapToStep: js.UndefOr[Boolean] = js.native
   /**
     * The difference between the two adjacent values of the Slider
     * @defaultvalue 1
     */
-  var step: js.UndefOr[Double] = js.undefined
+  var step: js.UndefOr[Double] = js.native
   /**
     * Call to provide customized styling that will layer on top of the variant rules.
     */
-  var styles: js.UndefOr[IStyleFunctionOrObject[ISliderStyleProps, ISliderStyles]] = js.undefined
+  var styles: js.UndefOr[IStyleFunctionOrObject[ISliderStyleProps, ISliderStyles]] = js.native
   /**
     * Theme provided by High-Order Component.
     */
-  var theme: js.UndefOr[ITheme] = js.undefined
+  var theme: js.UndefOr[ITheme] = js.native
   /**
     * The initial value of the Slider. Use this if you intend to pass in a new value as a result of onChange events.
     * This value is mutually exclusive to defaultValue. Use one or the other.
     */
-  var value: js.UndefOr[Double] = js.undefined
+  var value: js.UndefOr[Double] = js.native
   /**
     * Optional function to format the slider value.
     */
-  var valueFormat: js.UndefOr[js.Function1[/* value */ Double, String]] = js.undefined
+  var valueFormat: js.UndefOr[js.Function1[/* value */ Double, String]] = js.native
   /**
     * Optional flag to render the slider vertically. Defaults to rendering horizontal.
     */
-  var vertical: js.UndefOr[Boolean] = js.undefined
+  var vertical: js.UndefOr[Boolean] = js.native
 }
 
 object ISliderProps {
   @scala.inline
-  def apply(
-    ariaLabel: String = null,
-    ariaValueText: /* value */ Double => String = null,
-    buttonProps: HTMLAttributes[HTMLButtonElement] = null,
-    className: String = null,
-    componentRef: IRefObject[ISlider] = null,
-    defaultValue: js.UndefOr[Double] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
-    label: String = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    onChange: /* value */ Double => Unit = null,
-    onChanged: (/* event */ MouseEvent | TouchEvent | KeyboardEvent, /* value */ Double) => Unit = null,
-    originFromZero: js.UndefOr[Boolean] = js.undefined,
-    ref: js.UndefOr[Null | LegacyRef[SliderBase]] = js.undefined,
-    showValue: js.UndefOr[Boolean] = js.undefined,
-    snapToStep: js.UndefOr[Boolean] = js.undefined,
-    step: js.UndefOr[Double] = js.undefined,
-    styles: IStyleFunctionOrObject[ISliderStyleProps, ISliderStyles] = null,
-    theme: ITheme = null,
-    value: js.UndefOr[Double] = js.undefined,
-    valueFormat: /* value */ Double => String = null,
-    vertical: js.UndefOr[Boolean] = js.undefined
-  ): ISliderProps = {
+  def apply(): ISliderProps = {
     val __obj = js.Dynamic.literal()
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (ariaValueText != null) __obj.updateDynamic("ariaValueText")(js.Any.fromFunction1(ariaValueText))
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onChanged != null) __obj.updateDynamic("onChanged")(js.Any.fromFunction2(onChanged))
-    if (!js.isUndefined(originFromZero)) __obj.updateDynamic("originFromZero")(originFromZero.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapToStep)) __obj.updateDynamic("snapToStep")(snapToStep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
-    if (valueFormat != null) __obj.updateDynamic("valueFormat")(js.Any.fromFunction1(valueFormat))
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISliderProps]
   }
+  @scala.inline
+  implicit class ISliderPropsOps[Self <: ISliderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAriaLabel(value: String): Self = this.set("ariaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaLabel: Self = this.set("ariaLabel", js.undefined)
+    @scala.inline
+    def setAriaValueText(value: /* value */ Double => String): Self = this.set("ariaValueText", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAriaValueText: Self = this.set("ariaValueText", js.undefined)
+    @scala.inline
+    def setButtonProps(value: HTMLAttributes[HTMLButtonElement]): Self = this.set("buttonProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonProps: Self = this.set("buttonProps", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setComponentRefFunction1(value: /* ref */ ISlider | Null => Unit): Self = this.set("componentRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def setComponentRef(value: IRefObject[ISlider]): Self = this.set("componentRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentRef: Self = this.set("componentRef", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: Double): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* value */ Double => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnChanged(value: (/* event */ MouseEvent | TouchEvent | KeyboardEvent, /* value */ Double) => Unit): Self = this.set("onChanged", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnChanged: Self = this.set("onChanged", js.undefined)
+    @scala.inline
+    def setOriginFromZero(value: Boolean): Self = this.set("originFromZero", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginFromZero: Self = this.set("originFromZero", js.undefined)
+    @scala.inline
+    def setShowValue(value: Boolean): Self = this.set("showValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowValue: Self = this.set("showValue", js.undefined)
+    @scala.inline
+    def setSnapToStep(value: Boolean): Self = this.set("snapToStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapToStep: Self = this.set("snapToStep", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setStylesFunction1(value: ISliderStyleProps => DeepPartial[ISliderStyles]): Self = this.set("styles", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStyles(value: IStyleFunctionOrObject[ISliderStyleProps, ISliderStyles]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValueFormat(value: /* value */ Double => String): Self = this.set("valueFormat", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteValueFormat: Self = this.set("valueFormat", js.undefined)
+    @scala.inline
+    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical: Self = this.set("vertical", js.undefined)
+  }
+  
 }
 

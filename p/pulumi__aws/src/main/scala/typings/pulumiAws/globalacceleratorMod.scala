@@ -28,6 +28,7 @@ object globalacceleratorMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: AcceleratorArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: AcceleratorArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -69,8 +70,10 @@ object globalacceleratorMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.acceleratorMod.Accelerator = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.acceleratorMod.Accelerator = js.native
     def get(name: String, id: Input[ID], state: AcceleratorState): typings.pulumiAws.acceleratorMod.Accelerator = js.native
     def get(name: String, id: Input[ID], state: AcceleratorState, opts: CustomResourceOptions): typings.pulumiAws.acceleratorMod.Accelerator = js.native
     /**
@@ -90,8 +93,10 @@ object globalacceleratorMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.endpointGroupMod.EndpointGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.endpointGroupMod.EndpointGroup = js.native
     def get(name: String, id: Input[ID], state: EndpointGroupState): typings.pulumiAws.endpointGroupMod.EndpointGroup = js.native
     def get(name: String, id: Input[ID], state: EndpointGroupState, opts: CustomResourceOptions): typings.pulumiAws.endpointGroupMod.EndpointGroup = js.native
     /**
@@ -111,8 +116,10 @@ object globalacceleratorMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.globalacceleratorListenerMod.Listener = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.globalacceleratorListenerMod.Listener = js.native
     def get(name: String, id: Input[ID], state: ListenerState): typings.pulumiAws.globalacceleratorListenerMod.Listener = js.native
     def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): typings.pulumiAws.globalacceleratorListenerMod.Listener = js.native
     /**

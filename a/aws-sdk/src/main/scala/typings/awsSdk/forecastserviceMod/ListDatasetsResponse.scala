@@ -18,11 +18,32 @@ trait ListDatasetsResponse extends js.Object {
 
 object ListDatasetsResponse {
   @scala.inline
-  def apply(Datasets: Datasets = null, NextToken: NextToken = null): ListDatasetsResponse = {
+  def apply(): ListDatasetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Datasets != null) __obj.updateDynamic("Datasets")(Datasets.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDatasetsResponse]
   }
+  @scala.inline
+  implicit class ListDatasetsResponseOps[Self <: ListDatasetsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatasetsVarargs(value: DatasetSummary*): Self = this.set("Datasets", js.Array(value :_*))
+    @scala.inline
+    def setDatasets(value: Datasets): Self = this.set("Datasets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasets: Self = this.set("Datasets", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

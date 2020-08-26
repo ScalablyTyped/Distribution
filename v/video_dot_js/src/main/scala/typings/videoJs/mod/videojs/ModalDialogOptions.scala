@@ -30,35 +30,58 @@ import scala.scalajs.js.annotation._
   *        through the UI in the normal ways. Programmatic closing is
   *        still possible.
   */
+@js.native
 trait ModalDialogOptions extends ComponentOptions {
-  var content: js.UndefOr[js.Any] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var fillAlways: js.UndefOr[Boolean] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var temporary: js.UndefOr[Boolean] = js.undefined
-  var uncloseable: js.UndefOr[Boolean] = js.undefined
+  var content: js.UndefOr[js.Any] = js.native
+  var description: js.UndefOr[String] = js.native
+  var fillAlways: js.UndefOr[Boolean] = js.native
+  var label: js.UndefOr[String] = js.native
+  var temporary: js.UndefOr[Boolean] = js.native
+  var uncloseable: js.UndefOr[Boolean] = js.native
 }
 
 object ModalDialogOptions {
   @scala.inline
-  def apply(
-    children: js.Array[Child] = null,
-    content: js.Any = null,
-    description: String = null,
-    fillAlways: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    temporary: js.UndefOr[Boolean] = js.undefined,
-    uncloseable: js.UndefOr[Boolean] = js.undefined
-  ): ModalDialogOptions = {
+  def apply(): ModalDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillAlways)) __obj.updateDynamic("fillAlways")(fillAlways.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uncloseable)) __obj.updateDynamic("uncloseable")(uncloseable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogOptions]
   }
+  @scala.inline
+  implicit class ModalDialogOptionsOps[Self <: ModalDialogOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: js.Any): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFillAlways(value: Boolean): Self = this.set("fillAlways", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillAlways: Self = this.set("fillAlways", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setTemporary(value: Boolean): Self = this.set("temporary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemporary: Self = this.set("temporary", js.undefined)
+    @scala.inline
+    def setUncloseable(value: Boolean): Self = this.set("uncloseable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUncloseable: Self = this.set("uncloseable", js.undefined)
+  }
+  
 }
 

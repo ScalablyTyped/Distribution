@@ -53,26 +53,26 @@ object inviteClientTransactionMod extends js.Object {
       * transaction is in the "Calling" state.
       * https://tools.ietf.org/html/rfc3261#section-17.1.1.2
       */
-    var timer_A: js.Any = js.native
+    var timerA: js.Any = js.native
     /**
       * If the client transaction is still in the "Calling" state when timer
       * B fires, the client transaction SHOULD inform the TU that a timeout
       * has occurred.  The client transaction MUST NOT generate an ACK.
       * https://tools.ietf.org/html/rfc3261#section-17.1.1.2
       */
-    var timer_B: js.Any = js.native
+    var timerB: js.Any = js.native
     /**
       * If Timer D fires while the client transaction is in the "Completed" state,
       * the client transaction MUST move to the "Terminated" state.
       * https://tools.ietf.org/html/rfc6026#section-8.4
       */
-    var timer_D: js.Any = js.native
+    var timerD: js.Any = js.native
     /**
       * If Timer M fires while the client transaction is in the "Accepted"
       * state, the client transaction MUST move to the "Terminated" state.
       * https://tools.ietf.org/html/rfc6026#section-8.4
       */
-    var timer_M: js.Any = js.native
+    var timerM: js.Any = js.native
     /**
       * ACK a 2xx final response.
       *

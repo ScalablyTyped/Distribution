@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "pouchdb"
-version := "6.4-dt-20200304Z-e764bb"
-scalaVersion := "2.13.2"
+version := "6.4-dt-20200304Z-84f002"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20200226Z-70bc6c",
-  "org.scalablytyped" %%% "pouchdb-adapter-fruitdown" % "6.1-dt-20200515Z-dd1e5c",
-  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20200519Z-0fb72a",
-  "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20200515Z-624f36",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20200226Z-1db63e",
+  "org.scalablytyped" %%% "pouchdb-adapter-fruitdown" % "6.1-dt-20200515Z-2e0d09",
+  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20200519Z-6ca18c",
+  "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20200515Z-450df9",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

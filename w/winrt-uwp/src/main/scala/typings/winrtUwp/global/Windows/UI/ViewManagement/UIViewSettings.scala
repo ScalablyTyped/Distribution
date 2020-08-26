@@ -8,11 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.ViewManagement.UIViewSettings")
 @js.native
 abstract class UIViewSettings ()
-  extends typings.winrtUwp.Windows.UI.ViewManagement.UIViewSettings {
-  /** Gets a value that indicates whether the device UI is optimized for touch input or mouse input. */
-  /* CompleteClass */
-  override var userInteractionMode: typings.winrtUwp.Windows.UI.ViewManagement.UserInteractionMode = js.native
-}
+  extends typings.winrtUwp.Windows.UI.ViewManagement.UIViewSettings
 
 /* static members */
 @JSGlobal("Windows.UI.ViewManagement.UIViewSettings")

@@ -31,6 +31,7 @@ class ResourceTargetinstances protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaTargetInstanceAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaTargetInstanceAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetInstanceAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceTargetinstancesAggregatedlist): GaxiosPromise[SchemaTargetInstanceAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceTargetinstancesAggregatedlist,
@@ -64,6 +65,7 @@ class ResourceTargetinstances protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargetinstancesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargetinstancesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -94,6 +96,7 @@ class ResourceTargetinstances protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTargetInstance] = js.native
   def get(callback: BodyResponseCallback[SchemaTargetInstance]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetInstance] = js.native
   def get(params: ParamsResourceTargetinstancesGet): GaxiosPromise[SchemaTargetInstance] = js.native
   def get(params: ParamsResourceTargetinstancesGet, callback: BodyResponseCallback[SchemaTargetInstance]): Unit = js.native
   def get(
@@ -125,6 +128,7 @@ class ResourceTargetinstances protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargetinstancesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargetinstancesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -158,6 +162,7 @@ class ResourceTargetinstances protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTargetInstanceList] = js.native
   def list(callback: BodyResponseCallback[SchemaTargetInstanceList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetInstanceList] = js.native
   def list(params: ParamsResourceTargetinstancesList): GaxiosPromise[SchemaTargetInstanceList] = js.native
   def list(
     params: ParamsResourceTargetinstancesList,
@@ -191,6 +196,7 @@ class ResourceTargetinstances protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceTargetinstancesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceTargetinstancesTestiampermissions,

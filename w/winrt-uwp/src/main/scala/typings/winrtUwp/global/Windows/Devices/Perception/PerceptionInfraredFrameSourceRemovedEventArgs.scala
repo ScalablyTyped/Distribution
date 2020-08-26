@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Perception.PerceptionInfraredFrameSourceRemovedEventArgs")
 @js.native
 abstract class PerceptionInfraredFrameSourceRemovedEventArgs ()
-  extends typings.winrtUwp.Windows.Devices.Perception.PerceptionInfraredFrameSourceRemovedEventArgs {
-  /** Gets the infrared frame source that was removed. */
-  /* CompleteClass */
-  override var frameSource: typings.winrtUwp.Windows.Devices.Perception.PerceptionInfraredFrameSource = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Perception.PerceptionInfraredFrameSourceRemovedEventArgs
 

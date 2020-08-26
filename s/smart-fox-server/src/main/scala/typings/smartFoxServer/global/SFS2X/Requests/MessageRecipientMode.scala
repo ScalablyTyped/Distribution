@@ -14,12 +14,6 @@ class MessageRecipientMode protected ()
     * @param {any}    target The moderator/administrator message recipient/s, according to the selected recipient mode.
     */
   def this(mode: Double, target: js.Any) = this()
-  /** @type {number} Returns the selected recipient mode. */
-  /* CompleteClass */
-  override var mode: Double = js.native
-  /** @type {any} Returns the moderator/administrator message target, according to the selected recipient mode. */
-  /* CompleteClass */
-  override var target: js.Any = js.native
 }
 
 /* static members */

@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.Playback.CurrentMediaPlaybackItemChangedEventArgs")
 @js.native
 abstract class CurrentMediaPlaybackItemChangedEventArgs ()
-  extends typings.winrtUwp.Windows.Media.Playback.CurrentMediaPlaybackItemChangedEventArgs {
-  /** Gets the new current MediaPlaybackItem . */
-  /* CompleteClass */
-  override var newItem: typings.winrtUwp.Windows.Media.Playback.MediaPlaybackItem = js.native
-  /** Gets the previous current MediaPlaybackItem . */
-  /* CompleteClass */
-  override var oldItem: typings.winrtUwp.Windows.Media.Playback.MediaPlaybackItem = js.native
-}
+  extends typings.winrtUwp.Windows.Media.Playback.CurrentMediaPlaybackItemChangedEventArgs
 

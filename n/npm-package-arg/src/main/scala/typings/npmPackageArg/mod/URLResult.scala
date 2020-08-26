@@ -10,10 +10,6 @@ import scala.scalajs.js.annotation._
 trait URLResult extends Result {
   @JSName("fetchSpec")
   var fetchSpec_URLResult: String = js.native
-  @JSName("gitCommittish")
-  var gitCommittish_URLResult: js.UndefOr[String] = js.native
-  @JSName("gitRange")
-  var gitRange_URLResult: js.UndefOr[String] = js.native
   @JSName("saveSpec")
   var saveSpec_URLResult: String = js.native
   @JSName("type")

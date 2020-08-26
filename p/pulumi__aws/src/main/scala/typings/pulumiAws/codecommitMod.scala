@@ -45,8 +45,8 @@ object codecommitMod extends js.Object {
     def this(name: String, args: TriggerArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] with GetRepositoryResult = js.native
-  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] with GetRepositoryResult = js.native
+  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = js.native
+  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = js.native
   /* static members */
   @js.native
   object Repository extends js.Object {
@@ -57,8 +57,10 @@ object codecommitMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.repositoryMod.Repository = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.repositoryMod.Repository = js.native
     def get(name: String, id: Input[ID], state: RepositoryState): typings.pulumiAws.repositoryMod.Repository = js.native
     def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): typings.pulumiAws.repositoryMod.Repository = js.native
     /**
@@ -78,8 +80,10 @@ object codecommitMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.triggerMod.Trigger = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.triggerMod.Trigger = js.native
     def get(name: String, id: Input[ID], state: TriggerState): typings.pulumiAws.triggerMod.Trigger = js.native
     def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): typings.pulumiAws.triggerMod.Trigger = js.native
     /**

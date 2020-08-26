@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("move-file", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof moveFile */ js.Any = js.native
   /**
   	Move a file.
   	@param source - File you want to move.

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-md/transition" : "2.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-md/transition" : "2.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

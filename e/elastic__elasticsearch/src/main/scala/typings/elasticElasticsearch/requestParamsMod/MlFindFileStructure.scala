@@ -8,73 +8,103 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MlFindFileStructure[T] extends Generic {
-  var body: T
-  var charset: js.UndefOr[String] = js.undefined
-  var column_names: js.UndefOr[String | js.Array[String]] = js.undefined
-  var delimiter: js.UndefOr[String] = js.undefined
-  var explain: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[ndjson | xml | delimited | semi_structured_text] = js.undefined
-  var grok_pattern: js.UndefOr[String] = js.undefined
-  var has_header_row: js.UndefOr[Boolean] = js.undefined
-  var line_merge_size_limit: js.UndefOr[Double] = js.undefined
-  var lines_to_sample: js.UndefOr[Double] = js.undefined
-  var quote: js.UndefOr[String] = js.undefined
-  var should_trim_fields: js.UndefOr[Boolean] = js.undefined
-  var timeout: js.UndefOr[String] = js.undefined
-  var timestamp_field: js.UndefOr[String] = js.undefined
-  var timestamp_format: js.UndefOr[String] = js.undefined
+  var body: T = js.native
+  var charset: js.UndefOr[String] = js.native
+  var column_names: js.UndefOr[String | js.Array[String]] = js.native
+  var delimiter: js.UndefOr[String] = js.native
+  var explain: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[ndjson | xml | delimited | semi_structured_text] = js.native
+  var grok_pattern: js.UndefOr[String] = js.native
+  var has_header_row: js.UndefOr[Boolean] = js.native
+  var line_merge_size_limit: js.UndefOr[Double] = js.native
+  var lines_to_sample: js.UndefOr[Double] = js.native
+  var quote: js.UndefOr[String] = js.native
+  var should_trim_fields: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[String] = js.native
+  var timestamp_field: js.UndefOr[String] = js.native
+  var timestamp_format: js.UndefOr[String] = js.native
 }
 
 object MlFindFileStructure {
   @scala.inline
-  def apply[T](
-    body: T,
-    charset: String = null,
-    column_names: String | js.Array[String] = null,
-    delimiter: String = null,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    explain: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    format: ndjson | xml | delimited | semi_structured_text = null,
-    grok_pattern: String = null,
-    has_header_row: js.UndefOr[Boolean] = js.undefined,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    line_merge_size_limit: js.UndefOr[Double] = js.undefined,
-    lines_to_sample: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    quote: String = null,
-    should_trim_fields: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    timeout: String = null,
-    timestamp_field: String = null,
-    timestamp_format: String = null
-  ): MlFindFileStructure[T] = {
+  def apply[T](body: T): MlFindFileStructure[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (column_names != null) __obj.updateDynamic("column_names")(column_names.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (grok_pattern != null) __obj.updateDynamic("grok_pattern")(grok_pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_header_row)) __obj.updateDynamic("has_header_row")(has_header_row.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(line_merge_size_limit)) __obj.updateDynamic("line_merge_size_limit")(line_merge_size_limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lines_to_sample)) __obj.updateDynamic("lines_to_sample")(lines_to_sample.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (!js.isUndefined(should_trim_fields)) __obj.updateDynamic("should_trim_fields")(should_trim_fields.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timestamp_field != null) __obj.updateDynamic("timestamp_field")(timestamp_field.asInstanceOf[js.Any])
-    if (timestamp_format != null) __obj.updateDynamic("timestamp_format")(timestamp_format.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlFindFileStructure[T]]
   }
+  @scala.inline
+  implicit class MlFindFileStructureOps[Self <: MlFindFileStructure[_], T] (val x: Self with MlFindFileStructure[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCharset(value: String): Self = this.set("charset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharset: Self = this.set("charset", js.undefined)
+    @scala.inline
+    def setColumn_namesVarargs(value: String*): Self = this.set("column_names", js.Array(value :_*))
+    @scala.inline
+    def setColumn_names(value: String | js.Array[String]): Self = this.set("column_names", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumn_names: Self = this.set("column_names", js.undefined)
+    @scala.inline
+    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    @scala.inline
+    def setExplain(value: Boolean): Self = this.set("explain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplain: Self = this.set("explain", js.undefined)
+    @scala.inline
+    def setFormat(value: ndjson | xml | delimited | semi_structured_text): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setGrok_pattern(value: String): Self = this.set("grok_pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrok_pattern: Self = this.set("grok_pattern", js.undefined)
+    @scala.inline
+    def setHas_header_row(value: Boolean): Self = this.set("has_header_row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHas_header_row: Self = this.set("has_header_row", js.undefined)
+    @scala.inline
+    def setLine_merge_size_limit(value: Double): Self = this.set("line_merge_size_limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine_merge_size_limit: Self = this.set("line_merge_size_limit", js.undefined)
+    @scala.inline
+    def setLines_to_sample(value: Double): Self = this.set("lines_to_sample", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLines_to_sample: Self = this.set("lines_to_sample", js.undefined)
+    @scala.inline
+    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuote: Self = this.set("quote", js.undefined)
+    @scala.inline
+    def setShould_trim_fields(value: Boolean): Self = this.set("should_trim_fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShould_trim_fields: Self = this.set("should_trim_fields", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTimestamp_field(value: String): Self = this.set("timestamp_field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp_field: Self = this.set("timestamp_field", js.undefined)
+    @scala.inline
+    def setTimestamp_format(value: String): Self = this.set("timestamp_format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp_format: Self = this.set("timestamp_format", js.undefined)
+  }
+  
 }
 

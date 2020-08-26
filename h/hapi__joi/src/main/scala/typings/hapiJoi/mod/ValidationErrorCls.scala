@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class ValidationErrorCls protected () extends ValidationError {
   def this(message: String, details: js.Any, original: js.Any) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

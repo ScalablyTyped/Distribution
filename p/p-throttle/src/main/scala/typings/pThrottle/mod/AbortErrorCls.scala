@@ -9,13 +9,5 @@ import scala.scalajs.js.annotation._
 /**
 	Abort pending execution. All unresolved promised are rejected with a `AbortError` error.
 	*/
-class AbortErrorCls () extends AbortErrorClass {
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  @JSName("name")
-  override val name_AbortErrorClass: typings.pThrottle.pThrottleStrings.AbortError = js.native
-}
+class AbortErrorCls () extends AbortErrorClass
 

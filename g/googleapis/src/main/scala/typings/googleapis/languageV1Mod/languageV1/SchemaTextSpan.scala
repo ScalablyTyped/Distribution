@@ -22,11 +22,30 @@ trait SchemaTextSpan extends js.Object {
 
 object SchemaTextSpan {
   @scala.inline
-  def apply(beginOffset: js.UndefOr[Double] = js.undefined, content: String = null): SchemaTextSpan = {
+  def apply(): SchemaTextSpan = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(beginOffset)) __obj.updateDynamic("beginOffset")(beginOffset.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTextSpan]
   }
+  @scala.inline
+  implicit class SchemaTextSpanOps[Self <: SchemaTextSpan] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeginOffset(value: Double): Self = this.set("beginOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeginOffset: Self = this.set("beginOffset", js.undefined)
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+  }
+  
 }
 

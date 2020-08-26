@@ -7,59 +7,68 @@ import scala.scalajs.js.annotation._
 /**
   * A resource with narrative, extensions, and contained resources
   */
+@js.native
 trait DomainResource
   extends ResourceBase
      with Resource {
   /**
     * Contained, inline Resources
     */
-  var contained: js.UndefOr[js.Array[Resource]] = js.undefined
+  var contained: js.UndefOr[js.Array[Resource]] = js.native
   /**
     * Additional Content defined by implementations
     */
-  var extension: js.UndefOr[js.Array[Extension]] = js.undefined
+  var extension: js.UndefOr[js.Array[Extension]] = js.native
   /**
     * Extensions that cannot be ignored
     */
-  var modifierExtension: js.UndefOr[js.Array[Extension]] = js.undefined
+  var modifierExtension: js.UndefOr[js.Array[Extension]] = js.native
   /**
     * Text summary of the resource, for human interpretation
     */
-  var text: js.UndefOr[Narrative] = js.undefined
+  var text: js.UndefOr[Narrative] = js.native
 }
 
 object DomainResource {
   @scala.inline
-  def apply(
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    contained: js.Array[Resource] = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    resourceType: code = null,
-    text: Narrative = null
-  ): DomainResource = {
+  def apply(): DomainResource = {
     val __obj = js.Dynamic.literal()
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainResource]
   }
+  @scala.inline
+  implicit class DomainResourceOps[Self <: DomainResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainedVarargs(value: Resource*): Self = this.set("contained", js.Array(value :_*))
+    @scala.inline
+    def setContained(value: js.Array[Resource]): Self = this.set("contained", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContained: Self = this.set("contained", js.undefined)
+    @scala.inline
+    def setExtensionVarargs(value: Extension*): Self = this.set("extension", js.Array(value :_*))
+    @scala.inline
+    def setExtension(value: js.Array[Extension]): Self = this.set("extension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtension: Self = this.set("extension", js.undefined)
+    @scala.inline
+    def setModifierExtensionVarargs(value: Extension*): Self = this.set("modifierExtension", js.Array(value :_*))
+    @scala.inline
+    def setModifierExtension(value: js.Array[Extension]): Self = this.set("modifierExtension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifierExtension: Self = this.set("modifierExtension", js.undefined)
+    @scala.inline
+    def setText(value: Narrative): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

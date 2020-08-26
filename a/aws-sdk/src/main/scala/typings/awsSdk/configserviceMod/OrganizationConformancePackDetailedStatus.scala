@@ -37,16 +37,41 @@ object OrganizationConformancePackDetailedStatus {
   def apply(
     AccountId: AccountId,
     ConformancePackName: StringWithCharLimit256,
-    Status: OrganizationResourceDetailedStatus,
-    ErrorCode: String = null,
-    ErrorMessage: String = null,
-    LastUpdateTime: Date = null
+    Status: OrganizationResourceDetailedStatus
   ): OrganizationConformancePackDetailedStatus = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], ConformancePackName = ConformancePackName.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (LastUpdateTime != null) __obj.updateDynamic("LastUpdateTime")(LastUpdateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationConformancePackDetailedStatus]
   }
+  @scala.inline
+  implicit class OrganizationConformancePackDetailedStatusOps[Self <: OrganizationConformancePackDetailedStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConformancePackName(value: StringWithCharLimit256): Self = this.set("ConformancePackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: OrganizationResourceDetailedStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setErrorCode(value: String): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setLastUpdateTime(value: Date): Self = this.set("LastUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTime: Self = this.set("LastUpdateTime", js.undefined)
+  }
+  
 }
 

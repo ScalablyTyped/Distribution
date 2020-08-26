@@ -6,49 +6,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait XamlBuildDefinition extends DefinitionReference {
-  var _links: js.Any
+  var _links: js.Any = js.native
   /**
     * Batch size of the definition
     */
-  var batchSize: Double
-  var buildArgs: String
+  var batchSize: Double = js.native
+  var buildArgs: String = js.native
   /**
     * The continuous integration quiet period
     */
-  var continuousIntegrationQuietPeriod: Double
+  var continuousIntegrationQuietPeriod: Double = js.native
   /**
     * The build controller
     */
-  var controller: BuildController
+  var controller: BuildController = js.native
   /**
     * The date this definition was created
     */
-  var createdOn: Date
+  var createdOn: Date = js.native
   /**
     * Default drop location for builds from this definition
     */
-  var defaultDropLocation: String
+  var defaultDropLocation: String = js.native
   /**
     * Description of the definition
     */
-  var description: String
+  var description: String = js.native
   /**
     * The last build on this definition
     */
-  var lastBuild: XamlBuildReference
+  var lastBuild: XamlBuildReference = js.native
   /**
     * The repository
     */
-  var repository: BuildRepository
+  var repository: BuildRepository = js.native
   /**
     * The reasons supported by the template
     */
-  var supportedReasons: BuildReason
+  var supportedReasons: BuildReason = js.native
   /**
     * How builds are triggered from this definition
     */
-  var triggerType: DefinitionTriggerType
+  var triggerType: DefinitionTriggerType = js.native
 }
 
 object XamlBuildDefinition {
@@ -81,5 +82,42 @@ object XamlBuildDefinition {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[XamlBuildDefinition]
   }
+  @scala.inline
+  implicit class XamlBuildDefinitionOps[Self <: XamlBuildDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_links(value: js.Any): Self = this.set("_links", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBuildArgs(value: String): Self = this.set("buildArgs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContinuousIntegrationQuietPeriod(value: Double): Self = this.set("continuousIntegrationQuietPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setController(value: BuildController): Self = this.set("controller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreatedOn(value: Date): Self = this.set("createdOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultDropLocation(value: String): Self = this.set("defaultDropLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastBuild(value: XamlBuildReference): Self = this.set("lastBuild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepository(value: BuildRepository): Self = this.set("repository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSupportedReasons(value: BuildReason): Self = this.set("supportedReasons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTriggerType(value: DefinitionTriggerType): Self = this.set("triggerType", value.asInstanceOf[js.Any])
+  }
+  
 }
 

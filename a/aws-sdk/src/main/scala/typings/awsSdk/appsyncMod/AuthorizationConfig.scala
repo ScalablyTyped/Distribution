@@ -18,10 +18,28 @@ trait AuthorizationConfig extends js.Object {
 
 object AuthorizationConfig {
   @scala.inline
-  def apply(authorizationType: AuthorizationType, awsIamConfig: AwsIamConfig = null): AuthorizationConfig = {
+  def apply(authorizationType: AuthorizationType): AuthorizationConfig = {
     val __obj = js.Dynamic.literal(authorizationType = authorizationType.asInstanceOf[js.Any])
-    if (awsIamConfig != null) __obj.updateDynamic("awsIamConfig")(awsIamConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationConfig]
   }
+  @scala.inline
+  implicit class AuthorizationConfigOps[Self <: AuthorizationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizationType(value: AuthorizationType): Self = this.set("authorizationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAwsIamConfig(value: AwsIamConfig): Self = this.set("awsIamConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsIamConfig: Self = this.set("awsIamConfig", js.undefined)
+  }
+  
 }
 

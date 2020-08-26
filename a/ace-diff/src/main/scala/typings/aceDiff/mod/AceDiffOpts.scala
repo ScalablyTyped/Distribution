@@ -7,42 +7,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AceDiffOpts extends js.Object {
-  var classes: js.UndefOr[Connector] = js.undefined
-  var diffGranularity: js.UndefOr[specific | broad] = js.undefined
-  var left: js.UndefOr[AceDiffLROpts] = js.undefined
-  var maxDiffs: js.UndefOr[Double] = js.undefined
-  var mode: js.UndefOr[String] = js.undefined
-  var right: js.UndefOr[AceDiffLROpts] = js.undefined
-  var showConnectors: js.UndefOr[Boolean] = js.undefined
-  var showDiffs: js.UndefOr[Boolean] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
+  var classes: js.UndefOr[Connector] = js.native
+  var diffGranularity: js.UndefOr[specific | broad] = js.native
+  var left: js.UndefOr[AceDiffLROpts] = js.native
+  var maxDiffs: js.UndefOr[Double] = js.native
+  var mode: js.UndefOr[String] = js.native
+  var right: js.UndefOr[AceDiffLROpts] = js.native
+  var showConnectors: js.UndefOr[Boolean] = js.native
+  var showDiffs: js.UndefOr[Boolean] = js.native
+  var theme: js.UndefOr[String] = js.native
 }
 
 object AceDiffOpts {
   @scala.inline
-  def apply(
-    classes: Connector = null,
-    diffGranularity: specific | broad = null,
-    left: AceDiffLROpts = null,
-    maxDiffs: js.UndefOr[Double] = js.undefined,
-    mode: String = null,
-    right: AceDiffLROpts = null,
-    showConnectors: js.UndefOr[Boolean] = js.undefined,
-    showDiffs: js.UndefOr[Boolean] = js.undefined,
-    theme: String = null
-  ): AceDiffOpts = {
+  def apply(): AceDiffOpts = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (diffGranularity != null) __obj.updateDynamic("diffGranularity")(diffGranularity.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDiffs)) __obj.updateDynamic("maxDiffs")(maxDiffs.get.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(showConnectors)) __obj.updateDynamic("showConnectors")(showConnectors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDiffs)) __obj.updateDynamic("showDiffs")(showDiffs.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AceDiffOpts]
   }
+  @scala.inline
+  implicit class AceDiffOptsOps[Self <: AceDiffOpts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClasses(value: Connector): Self = this.set("classes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClasses: Self = this.set("classes", js.undefined)
+    @scala.inline
+    def setDiffGranularity(value: specific | broad): Self = this.set("diffGranularity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiffGranularity: Self = this.set("diffGranularity", js.undefined)
+    @scala.inline
+    def setLeft(value: AceDiffLROpts): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setMaxDiffs(value: Double): Self = this.set("maxDiffs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDiffs: Self = this.set("maxDiffs", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setRight(value: AceDiffLROpts): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setShowConnectors(value: Boolean): Self = this.set("showConnectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowConnectors: Self = this.set("showConnectors", js.undefined)
+    @scala.inline
+    def setShowDiffs(value: Boolean): Self = this.set("showDiffs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDiffs: Self = this.set("showDiffs", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+  }
+  
 }
 

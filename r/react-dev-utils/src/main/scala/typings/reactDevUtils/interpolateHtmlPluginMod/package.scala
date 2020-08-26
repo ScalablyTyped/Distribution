@@ -8,5 +8,5 @@ package object interpolateHtmlPluginMod {
   /**
     * This Webpack plugin lets us interpolate custom variables into `index.html`.
     */
-  type InterpolateHtmlPlugin = typings.webpack.mod.Plugin
+  type InterpolateHtmlPlugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
 }

@@ -18,11 +18,30 @@ trait Transcript extends js.Object {
 
 object Transcript {
   @scala.inline
-  def apply(RedactedTranscriptFileUri: Uri = null, TranscriptFileUri: Uri = null): Transcript = {
+  def apply(): Transcript = {
     val __obj = js.Dynamic.literal()
-    if (RedactedTranscriptFileUri != null) __obj.updateDynamic("RedactedTranscriptFileUri")(RedactedTranscriptFileUri.asInstanceOf[js.Any])
-    if (TranscriptFileUri != null) __obj.updateDynamic("TranscriptFileUri")(TranscriptFileUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transcript]
   }
+  @scala.inline
+  implicit class TranscriptOps[Self <: Transcript] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRedactedTranscriptFileUri(value: Uri): Self = this.set("RedactedTranscriptFileUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedactedTranscriptFileUri: Self = this.set("RedactedTranscriptFileUri", js.undefined)
+    @scala.inline
+    def setTranscriptFileUri(value: Uri): Self = this.set("TranscriptFileUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranscriptFileUri: Self = this.set("TranscriptFileUri", js.undefined)
+  }
+  
 }
 

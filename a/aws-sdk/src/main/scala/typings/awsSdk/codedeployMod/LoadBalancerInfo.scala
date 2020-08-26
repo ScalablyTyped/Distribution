@@ -22,16 +22,40 @@ trait LoadBalancerInfo extends js.Object {
 
 object LoadBalancerInfo {
   @scala.inline
-  def apply(
-    elbInfoList: ELBInfoList = null,
-    targetGroupInfoList: TargetGroupInfoList = null,
-    targetGroupPairInfoList: TargetGroupPairInfoList = null
-  ): LoadBalancerInfo = {
+  def apply(): LoadBalancerInfo = {
     val __obj = js.Dynamic.literal()
-    if (elbInfoList != null) __obj.updateDynamic("elbInfoList")(elbInfoList.asInstanceOf[js.Any])
-    if (targetGroupInfoList != null) __obj.updateDynamic("targetGroupInfoList")(targetGroupInfoList.asInstanceOf[js.Any])
-    if (targetGroupPairInfoList != null) __obj.updateDynamic("targetGroupPairInfoList")(targetGroupPairInfoList.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerInfo]
   }
+  @scala.inline
+  implicit class LoadBalancerInfoOps[Self <: LoadBalancerInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElbInfoListVarargs(value: ELBInfo*): Self = this.set("elbInfoList", js.Array(value :_*))
+    @scala.inline
+    def setElbInfoList(value: ELBInfoList): Self = this.set("elbInfoList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElbInfoList: Self = this.set("elbInfoList", js.undefined)
+    @scala.inline
+    def setTargetGroupInfoListVarargs(value: TargetGroupInfo*): Self = this.set("targetGroupInfoList", js.Array(value :_*))
+    @scala.inline
+    def setTargetGroupInfoList(value: TargetGroupInfoList): Self = this.set("targetGroupInfoList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupInfoList: Self = this.set("targetGroupInfoList", js.undefined)
+    @scala.inline
+    def setTargetGroupPairInfoListVarargs(value: TargetGroupPairInfo*): Self = this.set("targetGroupPairInfoList", js.Array(value :_*))
+    @scala.inline
+    def setTargetGroupPairInfoList(value: TargetGroupPairInfoList): Self = this.set("targetGroupPairInfoList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupPairInfoList: Self = this.set("targetGroupPairInfoList", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,28 @@ trait BatchUpdatePhoneNumberResponse extends js.Object {
 
 object BatchUpdatePhoneNumberResponse {
   @scala.inline
-  def apply(PhoneNumberErrors: PhoneNumberErrorList = null): BatchUpdatePhoneNumberResponse = {
+  def apply(): BatchUpdatePhoneNumberResponse = {
     val __obj = js.Dynamic.literal()
-    if (PhoneNumberErrors != null) __obj.updateDynamic("PhoneNumberErrors")(PhoneNumberErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdatePhoneNumberResponse]
   }
+  @scala.inline
+  implicit class BatchUpdatePhoneNumberResponseOps[Self <: BatchUpdatePhoneNumberResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPhoneNumberErrorsVarargs(value: PhoneNumberError*): Self = this.set("PhoneNumberErrors", js.Array(value :_*))
+    @scala.inline
+    def setPhoneNumberErrors(value: PhoneNumberErrorList): Self = this.set("PhoneNumberErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumberErrors: Self = this.set("PhoneNumberErrors", js.undefined)
+  }
+  
 }
 

@@ -52,6 +52,7 @@ trait Body extends EventTarget {
   var wlambda: Vec3 = js.native
   var world: World = js.native
   def addShape(shape: Shape): Unit = js.native
+  def addShape(shape: Shape, offset: js.UndefOr[scala.Nothing], orientation: Quaternion): Unit = js.native
   def addShape(shape: Shape, offset: Vec3): Unit = js.native
   def addShape(shape: Shape, offset: Vec3, orientation: Quaternion): Unit = js.native
   def applyForce(force: Vec3, worldPoint: Vec3): Unit = js.native

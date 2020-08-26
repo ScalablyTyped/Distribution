@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/constants" : "5.0.1"
+      "@ethersproject/constants" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/constants" : "5.0.1"
+      "@ethersproject/constants" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

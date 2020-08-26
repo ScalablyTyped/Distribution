@@ -26,18 +26,38 @@ trait ClientVpnAuthenticationRequest extends js.Object {
 
 object ClientVpnAuthenticationRequest {
   @scala.inline
-  def apply(
-    ActiveDirectory: DirectoryServiceAuthenticationRequest = null,
-    FederatedAuthentication: FederatedAuthenticationRequest = null,
-    MutualAuthentication: CertificateAuthenticationRequest = null,
-    Type: ClientVpnAuthenticationType = null
-  ): ClientVpnAuthenticationRequest = {
+  def apply(): ClientVpnAuthenticationRequest = {
     val __obj = js.Dynamic.literal()
-    if (ActiveDirectory != null) __obj.updateDynamic("ActiveDirectory")(ActiveDirectory.asInstanceOf[js.Any])
-    if (FederatedAuthentication != null) __obj.updateDynamic("FederatedAuthentication")(FederatedAuthentication.asInstanceOf[js.Any])
-    if (MutualAuthentication != null) __obj.updateDynamic("MutualAuthentication")(MutualAuthentication.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientVpnAuthenticationRequest]
   }
+  @scala.inline
+  implicit class ClientVpnAuthenticationRequestOps[Self <: ClientVpnAuthenticationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveDirectory(value: DirectoryServiceAuthenticationRequest): Self = this.set("ActiveDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveDirectory: Self = this.set("ActiveDirectory", js.undefined)
+    @scala.inline
+    def setFederatedAuthentication(value: FederatedAuthenticationRequest): Self = this.set("FederatedAuthentication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFederatedAuthentication: Self = this.set("FederatedAuthentication", js.undefined)
+    @scala.inline
+    def setMutualAuthentication(value: CertificateAuthenticationRequest): Self = this.set("MutualAuthentication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMutualAuthentication: Self = this.set("MutualAuthentication", js.undefined)
+    @scala.inline
+    def setType(value: ClientVpnAuthenticationType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

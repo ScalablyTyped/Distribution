@@ -11,8 +11,8 @@ HTML Prettify Plugin for Gulp
 | Full name          | gulp-html-prettify |
 | Keywords           | gulpplugin |
 | # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 85133 |
+| # dependents       | 31 |
+| # downloads        | 87564 |
 | # stars            | 8 |
 
 ## Links

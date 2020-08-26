@@ -26,10 +26,32 @@ trait DisassociateAssetsRequest extends js.Object {
 
 object DisassociateAssetsRequest {
   @scala.inline
-  def apply(assetId: ID, childAssetId: ID, hierarchyId: ID, clientToken: ClientToken = null): DisassociateAssetsRequest = {
+  def apply(assetId: ID, childAssetId: ID, hierarchyId: ID): DisassociateAssetsRequest = {
     val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any], childAssetId = childAssetId.asInstanceOf[js.Any], hierarchyId = hierarchyId.asInstanceOf[js.Any])
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateAssetsRequest]
   }
+  @scala.inline
+  implicit class DisassociateAssetsRequestOps[Self <: DisassociateAssetsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetId(value: ID): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChildAssetId(value: ID): Self = this.set("childAssetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHierarchyId(value: ID): Self = this.set("hierarchyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+  }
+  
 }
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "graphql-type-json" : "0.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "graphql-type-json" : "0.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

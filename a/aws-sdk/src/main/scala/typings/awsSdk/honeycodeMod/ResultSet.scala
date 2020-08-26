@@ -22,5 +22,26 @@ object ResultSet {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultSet]
   }
+  @scala.inline
+  implicit class ResultSetOps[Self <: ResultSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeadersVarargs(value: ColumnMetadata*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: ResultHeader): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRowsVarargs(value: ResultRow*): Self = this.set("rows", js.Array(value :_*))
+    @scala.inline
+    def setRows(value: ResultRows): Self = this.set("rows", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait CreateThingTypeResponse extends js.Object {
 
 object CreateThingTypeResponse {
   @scala.inline
-  def apply(
-    thingTypeArn: ThingTypeArn = null,
-    thingTypeId: ThingTypeId = null,
-    thingTypeName: ThingTypeName = null
-  ): CreateThingTypeResponse = {
+  def apply(): CreateThingTypeResponse = {
     val __obj = js.Dynamic.literal()
-    if (thingTypeArn != null) __obj.updateDynamic("thingTypeArn")(thingTypeArn.asInstanceOf[js.Any])
-    if (thingTypeId != null) __obj.updateDynamic("thingTypeId")(thingTypeId.asInstanceOf[js.Any])
-    if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateThingTypeResponse]
   }
+  @scala.inline
+  implicit class CreateThingTypeResponseOps[Self <: CreateThingTypeResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingTypeArn(value: ThingTypeArn): Self = this.set("thingTypeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeArn: Self = this.set("thingTypeArn", js.undefined)
+    @scala.inline
+    def setThingTypeId(value: ThingTypeId): Self = this.set("thingTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeId: Self = this.set("thingTypeId", js.undefined)
+    @scala.inline
+    def setThingTypeName(value: ThingTypeName): Self = this.set("thingTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeName: Self = this.set("thingTypeName", js.undefined)
+  }
+  
 }
 

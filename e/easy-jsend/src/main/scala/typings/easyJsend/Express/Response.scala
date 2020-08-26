@@ -13,6 +13,7 @@ trait Response extends js.Object {
   def fail(data: js.Any): Unit = js.native
   def fail(data: js.Any, status: Double): Unit = js.native
   def success(): Unit = js.native
+  def success(data: js.UndefOr[scala.Nothing], status: Double): Unit = js.native
   def success(data: js.Any): Unit = js.native
   def success(data: js.Any, status: Double): Unit = js.native
 }

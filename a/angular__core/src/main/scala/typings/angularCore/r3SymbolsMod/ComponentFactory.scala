@@ -24,7 +24,33 @@ trait ComponentFactory[C] extends js.Object {
     * Creates a new component.
     */
   def create(injector: Injector): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: js.UndefOr[scala.Nothing],
+    rootSelectorOrNode: js.UndefOr[scala.Nothing],
+    ngModule: NgModuleRef[_]
+  ): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: js.UndefOr[scala.Nothing], rootSelectorOrNode: String): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: js.UndefOr[scala.Nothing],
+    rootSelectorOrNode: String,
+    ngModule: NgModuleRef[_]
+  ): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: js.UndefOr[scala.Nothing], rootSelectorOrNode: js.Any): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: js.UndefOr[scala.Nothing],
+    rootSelectorOrNode: js.Any,
+    ngModule: NgModuleRef[_]
+  ): ComponentRef[C] = js.native
   def create(injector: Injector, projectableNodes: js.Array[js.Array[_]]): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: js.Array[js.Array[_]],
+    rootSelectorOrNode: js.UndefOr[scala.Nothing],
+    ngModule: NgModuleRef[_]
+  ): ComponentRef[C] = js.native
   def create(injector: Injector, projectableNodes: js.Array[js.Array[_]], rootSelectorOrNode: String): ComponentRef[C] = js.native
   def create(
     injector: Injector,

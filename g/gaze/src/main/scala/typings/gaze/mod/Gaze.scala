@@ -14,12 +14,22 @@ class Gaze protected () extends js.Object {
   def this(patterns: js.Array[String], options: Options) = this()
   def this(
     patterns: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+  ) = this()
+  def this(
+    patterns: String,
     options: Null,
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
   ) = this()
   def this(
     patterns: String,
     options: Options,
+    callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
+  ) = this()
+  def this(
+    patterns: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* error */ Error | Null, /* watcher */ Gaze, Unit]
   ) = this()
   def this(

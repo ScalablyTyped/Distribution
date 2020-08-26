@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   def apply(element: HTMLElement): HTMLElement = js.native
+  def apply(element: HTMLElement, options: js.UndefOr[scala.Nothing], doc: HTMLDocument): HTMLElement = js.native
   def apply(element: HTMLElement, options: Options): HTMLElement = js.native
   def apply(element: HTMLElement, options: Options, doc: HTMLDocument): HTMLElement = js.native
 }

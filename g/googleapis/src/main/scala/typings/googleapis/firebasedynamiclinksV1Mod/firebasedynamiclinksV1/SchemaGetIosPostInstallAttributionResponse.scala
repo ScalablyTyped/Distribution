@@ -89,38 +89,78 @@ trait SchemaGetIosPostInstallAttributionResponse extends js.Object {
 
 object SchemaGetIosPostInstallAttributionResponse {
   @scala.inline
-  def apply(
-    appMinimumVersion: String = null,
-    attributionConfidence: String = null,
-    deepLink: String = null,
-    externalBrowserDestinationLink: String = null,
-    fallbackLink: String = null,
-    invitationId: String = null,
-    isStrongMatchExecutable: js.UndefOr[Boolean] = js.undefined,
-    matchMessage: String = null,
-    requestIpVersion: String = null,
-    requestedLink: String = null,
-    resolvedLink: String = null,
-    utmCampaign: String = null,
-    utmMedium: String = null,
-    utmSource: String = null
-  ): SchemaGetIosPostInstallAttributionResponse = {
+  def apply(): SchemaGetIosPostInstallAttributionResponse = {
     val __obj = js.Dynamic.literal()
-    if (appMinimumVersion != null) __obj.updateDynamic("appMinimumVersion")(appMinimumVersion.asInstanceOf[js.Any])
-    if (attributionConfidence != null) __obj.updateDynamic("attributionConfidence")(attributionConfidence.asInstanceOf[js.Any])
-    if (deepLink != null) __obj.updateDynamic("deepLink")(deepLink.asInstanceOf[js.Any])
-    if (externalBrowserDestinationLink != null) __obj.updateDynamic("externalBrowserDestinationLink")(externalBrowserDestinationLink.asInstanceOf[js.Any])
-    if (fallbackLink != null) __obj.updateDynamic("fallbackLink")(fallbackLink.asInstanceOf[js.Any])
-    if (invitationId != null) __obj.updateDynamic("invitationId")(invitationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStrongMatchExecutable)) __obj.updateDynamic("isStrongMatchExecutable")(isStrongMatchExecutable.get.asInstanceOf[js.Any])
-    if (matchMessage != null) __obj.updateDynamic("matchMessage")(matchMessage.asInstanceOf[js.Any])
-    if (requestIpVersion != null) __obj.updateDynamic("requestIpVersion")(requestIpVersion.asInstanceOf[js.Any])
-    if (requestedLink != null) __obj.updateDynamic("requestedLink")(requestedLink.asInstanceOf[js.Any])
-    if (resolvedLink != null) __obj.updateDynamic("resolvedLink")(resolvedLink.asInstanceOf[js.Any])
-    if (utmCampaign != null) __obj.updateDynamic("utmCampaign")(utmCampaign.asInstanceOf[js.Any])
-    if (utmMedium != null) __obj.updateDynamic("utmMedium")(utmMedium.asInstanceOf[js.Any])
-    if (utmSource != null) __obj.updateDynamic("utmSource")(utmSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetIosPostInstallAttributionResponse]
   }
+  @scala.inline
+  implicit class SchemaGetIosPostInstallAttributionResponseOps[Self <: SchemaGetIosPostInstallAttributionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppMinimumVersion(value: String): Self = this.set("appMinimumVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppMinimumVersion: Self = this.set("appMinimumVersion", js.undefined)
+    @scala.inline
+    def setAttributionConfidence(value: String): Self = this.set("attributionConfidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributionConfidence: Self = this.set("attributionConfidence", js.undefined)
+    @scala.inline
+    def setDeepLink(value: String): Self = this.set("deepLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeepLink: Self = this.set("deepLink", js.undefined)
+    @scala.inline
+    def setExternalBrowserDestinationLink(value: String): Self = this.set("externalBrowserDestinationLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalBrowserDestinationLink: Self = this.set("externalBrowserDestinationLink", js.undefined)
+    @scala.inline
+    def setFallbackLink(value: String): Self = this.set("fallbackLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackLink: Self = this.set("fallbackLink", js.undefined)
+    @scala.inline
+    def setInvitationId(value: String): Self = this.set("invitationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitationId: Self = this.set("invitationId", js.undefined)
+    @scala.inline
+    def setIsStrongMatchExecutable(value: Boolean): Self = this.set("isStrongMatchExecutable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsStrongMatchExecutable: Self = this.set("isStrongMatchExecutable", js.undefined)
+    @scala.inline
+    def setMatchMessage(value: String): Self = this.set("matchMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchMessage: Self = this.set("matchMessage", js.undefined)
+    @scala.inline
+    def setRequestIpVersion(value: String): Self = this.set("requestIpVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestIpVersion: Self = this.set("requestIpVersion", js.undefined)
+    @scala.inline
+    def setRequestedLink(value: String): Self = this.set("requestedLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedLink: Self = this.set("requestedLink", js.undefined)
+    @scala.inline
+    def setResolvedLink(value: String): Self = this.set("resolvedLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolvedLink: Self = this.set("resolvedLink", js.undefined)
+    @scala.inline
+    def setUtmCampaign(value: String): Self = this.set("utmCampaign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtmCampaign: Self = this.set("utmCampaign", js.undefined)
+    @scala.inline
+    def setUtmMedium(value: String): Self = this.set("utmMedium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtmMedium: Self = this.set("utmMedium", js.undefined)
+    @scala.inline
+    def setUtmSource(value: String): Self = this.set("utmSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtmSource: Self = this.set("utmSource", js.undefined)
+  }
+  
 }
 

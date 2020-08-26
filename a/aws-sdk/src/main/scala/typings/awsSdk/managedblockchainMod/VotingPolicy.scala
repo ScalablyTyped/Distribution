@@ -14,10 +14,26 @@ trait VotingPolicy extends js.Object {
 
 object VotingPolicy {
   @scala.inline
-  def apply(ApprovalThresholdPolicy: ApprovalThresholdPolicy = null): VotingPolicy = {
+  def apply(): VotingPolicy = {
     val __obj = js.Dynamic.literal()
-    if (ApprovalThresholdPolicy != null) __obj.updateDynamic("ApprovalThresholdPolicy")(ApprovalThresholdPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[VotingPolicy]
   }
+  @scala.inline
+  implicit class VotingPolicyOps[Self <: VotingPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApprovalThresholdPolicy(value: ApprovalThresholdPolicy): Self = this.set("ApprovalThresholdPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalThresholdPolicy: Self = this.set("ApprovalThresholdPolicy", js.undefined)
+  }
+  
 }
 

@@ -24,6 +24,7 @@ class Upstream protected () extends js.Object {
     * @returns {Promise<Result>} Result from remote side
     */
   def send(method: String, url: String): js.Promise[Result] = js.native
+  def send(method: String, url: String, headers: js.UndefOr[scala.Nothing], body: js.Any): js.Promise[Result] = js.native
   def send(method: String, url: String, headers: Headers): js.Promise[Result] = js.native
   def send(method: String, url: String, headers: Headers, body: js.Any): js.Promise[Result] = js.native
   def sendPendingMessages(): Unit = js.native

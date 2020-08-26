@@ -30,6 +30,7 @@ class ResourceAlertsFeedback protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaAlertFeedback] = js.native
   def create(callback: BodyResponseCallback[SchemaAlertFeedback]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAlertFeedback] = js.native
   def create(params: ParamsResourceAlertsFeedbackCreate): GaxiosPromise[SchemaAlertFeedback] = js.native
   def create(params: ParamsResourceAlertsFeedbackCreate, callback: BodyResponseCallback[SchemaAlertFeedback]): Unit = js.native
   def create(
@@ -60,6 +61,7 @@ class ResourceAlertsFeedback protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListAlertFeedbackResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAlertFeedbackResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAlertFeedbackResponse] = js.native
   def list(params: ParamsResourceAlertsFeedbackList): GaxiosPromise[SchemaListAlertFeedbackResponse] = js.native
   def list(
     params: ParamsResourceAlertsFeedbackList,

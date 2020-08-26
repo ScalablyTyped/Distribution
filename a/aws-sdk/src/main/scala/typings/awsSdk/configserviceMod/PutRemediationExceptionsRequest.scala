@@ -26,16 +26,36 @@ trait PutRemediationExceptionsRequest extends js.Object {
 
 object PutRemediationExceptionsRequest {
   @scala.inline
-  def apply(
-    ConfigRuleName: ConfigRuleName,
-    ResourceKeys: RemediationExceptionResourceKeys,
-    ExpirationTime: Date = null,
-    Message: StringWithCharLimit1024 = null
-  ): PutRemediationExceptionsRequest = {
+  def apply(ConfigRuleName: ConfigRuleName, ResourceKeys: RemediationExceptionResourceKeys): PutRemediationExceptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any], ResourceKeys = ResourceKeys.asInstanceOf[js.Any])
-    if (ExpirationTime != null) __obj.updateDynamic("ExpirationTime")(ExpirationTime.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRemediationExceptionsRequest]
   }
+  @scala.inline
+  implicit class PutRemediationExceptionsRequestOps[Self <: PutRemediationExceptionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceKeysVarargs(value: RemediationExceptionResourceKey*): Self = this.set("ResourceKeys", js.Array(value :_*))
+    @scala.inline
+    def setResourceKeys(value: RemediationExceptionResourceKeys): Self = this.set("ResourceKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpirationTime(value: Date): Self = this.set("ExpirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationTime: Self = this.set("ExpirationTime", js.undefined)
+    @scala.inline
+    def setMessage(value: StringWithCharLimit1024): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+  }
+  
 }
 

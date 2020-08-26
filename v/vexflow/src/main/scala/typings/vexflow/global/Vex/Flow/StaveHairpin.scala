@@ -4,9 +4,7 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.Flow.StaveHairpin.`type`
 import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Firstnote
-import typings.vexflow.anon.Firstx
 import typings.vexflow.anon.Height
-import typings.vexflow.anon.Leftshiftpx
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,18 +14,6 @@ import scala.scalajs.js.annotation._
 class StaveHairpin protected ()
   extends typings.vexflow.Vex.Flow.StaveHairpin {
   def this(notes: Firstnote, `type`: typings.vexflow.Vex.Flow.StaveHairpin.`type`) = this()
-  /* CompleteClass */
-  override def draw(): Boolean = js.native
-  /* CompleteClass */
-  override def renderHairpin(params: Firstx): Unit = js.native
-  /* CompleteClass */
-  override def setContext(context: IRenderContext): typings.vexflow.Vex.Flow.StaveHairpin = js.native
-  /* CompleteClass */
-  override def setNotes(notes: Firstnote): typings.vexflow.Vex.Flow.StaveHairpin = js.native
-  /* CompleteClass */
-  override def setPosition(position: Position): typings.vexflow.Vex.Flow.StaveHairpin = js.native
-  /* CompleteClass */
-  override def setRenderOptions(options: Leftshiftpx): typings.vexflow.Vex.Flow.StaveHairpin = js.native
 }
 
 /* static members */

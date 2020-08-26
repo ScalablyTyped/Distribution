@@ -1,7 +1,7 @@
 
 # Scala.js typings for rfc6902
 
-Typings are for version 3.0.4
+Typings are for version 3.1.1
 
 ## Library description:
 Complete implementation of RFC6902 (patch and diff)
@@ -11,8 +11,8 @@ Complete implementation of RFC6902 (patch and diff)
 | Full name          | rfc6902 |
 | Keywords           | json, patch, diff, rfc6902 |
 | # releases         | 9 |
-| # dependents       | 27 |
-| # downloads        | 5726386 |
+| # dependents       | 29 |
+| # downloads        | 5893616 |
 | # stars            | 5 |
 
 ## Links

@@ -29,11 +29,32 @@ trait SchemaFieldMetadata extends js.Object {
 
 object SchemaFieldMetadata {
   @scala.inline
-  def apply(action: String = null, paths: js.Array[String] = null): SchemaFieldMetadata = {
+  def apply(): SchemaFieldMetadata = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFieldMetadata]
   }
+  @scala.inline
+  implicit class SchemaFieldMetadataOps[Self <: SchemaFieldMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setPathsVarargs(value: String*): Self = this.set("paths", js.Array(value :_*))
+    @scala.inline
+    def setPaths(value: js.Array[String]): Self = this.set("paths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaths: Self = this.set("paths", js.undefined)
+  }
+  
 }
 

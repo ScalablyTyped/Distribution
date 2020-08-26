@@ -12,65 +12,102 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IndicesStats extends Generic {
-  var completion_fields: js.UndefOr[String | js.Array[String]] = js.undefined
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
-  var fielddata_fields: js.UndefOr[String | js.Array[String]] = js.undefined
-  var fields: js.UndefOr[String | js.Array[String]] = js.undefined
-  var forbid_closed_indices: js.UndefOr[Boolean] = js.undefined
-  var groups: js.UndefOr[String | js.Array[String]] = js.undefined
-  var include_segment_file_sizes: js.UndefOr[Boolean] = js.undefined
-  var include_unloaded_segments: js.UndefOr[Boolean] = js.undefined
-  var index: js.UndefOr[String | js.Array[String]] = js.undefined
-  var level: js.UndefOr[cluster | indices | shards] = js.undefined
-  var metric: js.UndefOr[String | js.Array[String]] = js.undefined
-  var types: js.UndefOr[String | js.Array[String]] = js.undefined
+  var completion_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var fielddata_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var fields: js.UndefOr[String | js.Array[String]] = js.native
+  var forbid_closed_indices: js.UndefOr[Boolean] = js.native
+  var groups: js.UndefOr[String | js.Array[String]] = js.native
+  var include_segment_file_sizes: js.UndefOr[Boolean] = js.native
+  var include_unloaded_segments: js.UndefOr[Boolean] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var level: js.UndefOr[cluster | indices | shards] = js.native
+  var metric: js.UndefOr[String | js.Array[String]] = js.native
+  var types: js.UndefOr[String | js.Array[String]] = js.native
 }
 
 object IndicesStats {
   @scala.inline
-  def apply(
-    completion_fields: String | js.Array[String] = null,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    expand_wildcards: open | closed | hidden | none | all = null,
-    fielddata_fields: String | js.Array[String] = null,
-    fields: String | js.Array[String] = null,
-    filter_path: String | js.Array[String] = null,
-    forbid_closed_indices: js.UndefOr[Boolean] = js.undefined,
-    groups: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    include_segment_file_sizes: js.UndefOr[Boolean] = js.undefined,
-    include_unloaded_segments: js.UndefOr[Boolean] = js.undefined,
-    index: String | js.Array[String] = null,
-    level: cluster | indices | shards = null,
-    method: String = null,
-    metric: String | js.Array[String] = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    types: String | js.Array[String] = null
-  ): IndicesStats = {
+  def apply(): IndicesStats = {
     val __obj = js.Dynamic.literal()
-    if (completion_fields != null) __obj.updateDynamic("completion_fields")(completion_fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (expand_wildcards != null) __obj.updateDynamic("expand_wildcards")(expand_wildcards.asInstanceOf[js.Any])
-    if (fielddata_fields != null) __obj.updateDynamic("fielddata_fields")(fielddata_fields.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(forbid_closed_indices)) __obj.updateDynamic("forbid_closed_indices")(forbid_closed_indices.get.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_segment_file_sizes)) __obj.updateDynamic("include_segment_file_sizes")(include_segment_file_sizes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_unloaded_segments)) __obj.updateDynamic("include_unloaded_segments")(include_unloaded_segments.get.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesStats]
   }
+  @scala.inline
+  implicit class IndicesStatsOps[Self <: IndicesStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletion_fieldsVarargs(value: String*): Self = this.set("completion_fields", js.Array(value :_*))
+    @scala.inline
+    def setCompletion_fields(value: String | js.Array[String]): Self = this.set("completion_fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletion_fields: Self = this.set("completion_fields", js.undefined)
+    @scala.inline
+    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = this.set("expand_wildcards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpand_wildcards: Self = this.set("expand_wildcards", js.undefined)
+    @scala.inline
+    def setFielddata_fieldsVarargs(value: String*): Self = this.set("fielddata_fields", js.Array(value :_*))
+    @scala.inline
+    def setFielddata_fields(value: String | js.Array[String]): Self = this.set("fielddata_fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFielddata_fields: Self = this.set("fielddata_fields", js.undefined)
+    @scala.inline
+    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    @scala.inline
+    def setFields(value: String | js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setForbid_closed_indices(value: Boolean): Self = this.set("forbid_closed_indices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForbid_closed_indices: Self = this.set("forbid_closed_indices", js.undefined)
+    @scala.inline
+    def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: String | js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("groups", js.undefined)
+    @scala.inline
+    def setInclude_segment_file_sizes(value: Boolean): Self = this.set("include_segment_file_sizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude_segment_file_sizes: Self = this.set("include_segment_file_sizes", js.undefined)
+    @scala.inline
+    def setInclude_unloaded_segments(value: Boolean): Self = this.set("include_unloaded_segments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude_unloaded_segments: Self = this.set("include_unloaded_segments", js.undefined)
+    @scala.inline
+    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    @scala.inline
+    def setIndex(value: String | js.Array[String]): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setLevel(value: cluster | indices | shards): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setMetricVarargs(value: String*): Self = this.set("metric", js.Array(value :_*))
+    @scala.inline
+    def setMetric(value: String | js.Array[String]): Self = this.set("metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric: Self = this.set("metric", js.undefined)
+    @scala.inline
+    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: String | js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("types", js.undefined)
+  }
+  
 }
 

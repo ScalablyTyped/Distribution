@@ -1,5 +1,8 @@
 package typings.wouter.preactMod
 
+import typings.wouter.preactMatcherMod.DefaultParams
+import typings.wouter.preactMatcherMod.Match
+import typings.wouter.useLocationMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

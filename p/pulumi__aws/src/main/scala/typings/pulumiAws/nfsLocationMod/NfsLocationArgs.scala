@@ -24,7 +24,7 @@ trait NfsLocationArgs extends js.Object {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object NfsLocationArgs {
@@ -32,12 +32,33 @@ object NfsLocationArgs {
   def apply(
     onPremConfig: Input[NfsLocationOnPremConfig],
     serverHostname: Input[String],
-    subdirectory: Input[String],
-    tags: Input[StringDictionary[_]] = null
+    subdirectory: Input[String]
   ): NfsLocationArgs = {
     val __obj = js.Dynamic.literal(onPremConfig = onPremConfig.asInstanceOf[js.Any], serverHostname = serverHostname.asInstanceOf[js.Any], subdirectory = subdirectory.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[NfsLocationArgs]
   }
+  @scala.inline
+  implicit class NfsLocationArgsOps[Self <: NfsLocationArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnPremConfig(value: Input[NfsLocationOnPremConfig]): Self = this.set("onPremConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerHostname(value: Input[String]): Self = this.set("serverHostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubdirectory(value: Input[String]): Self = this.set("subdirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

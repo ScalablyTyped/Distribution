@@ -35,18 +35,38 @@ trait SchemaRiceDeltaEncoding extends js.Object {
 
 object SchemaRiceDeltaEncoding {
   @scala.inline
-  def apply(
-    encodedData: String = null,
-    firstValue: String = null,
-    numEntries: js.UndefOr[Double] = js.undefined,
-    riceParameter: js.UndefOr[Double] = js.undefined
-  ): SchemaRiceDeltaEncoding = {
+  def apply(): SchemaRiceDeltaEncoding = {
     val __obj = js.Dynamic.literal()
-    if (encodedData != null) __obj.updateDynamic("encodedData")(encodedData.asInstanceOf[js.Any])
-    if (firstValue != null) __obj.updateDynamic("firstValue")(firstValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(numEntries)) __obj.updateDynamic("numEntries")(numEntries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(riceParameter)) __obj.updateDynamic("riceParameter")(riceParameter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRiceDeltaEncoding]
   }
+  @scala.inline
+  implicit class SchemaRiceDeltaEncodingOps[Self <: SchemaRiceDeltaEncoding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncodedData(value: String): Self = this.set("encodedData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodedData: Self = this.set("encodedData", js.undefined)
+    @scala.inline
+    def setFirstValue(value: String): Self = this.set("firstValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstValue: Self = this.set("firstValue", js.undefined)
+    @scala.inline
+    def setNumEntries(value: Double): Self = this.set("numEntries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumEntries: Self = this.set("numEntries", js.undefined)
+    @scala.inline
+    def setRiceParameter(value: Double): Self = this.set("riceParameter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiceParameter: Self = this.set("riceParameter", js.undefined)
+  }
+  
 }
 

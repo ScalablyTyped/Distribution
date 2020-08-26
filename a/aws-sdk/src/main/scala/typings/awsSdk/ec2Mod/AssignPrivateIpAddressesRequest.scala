@@ -26,17 +26,38 @@ trait AssignPrivateIpAddressesRequest extends js.Object {
 
 object AssignPrivateIpAddressesRequest {
   @scala.inline
-  def apply(
-    NetworkInterfaceId: NetworkInterfaceId,
-    AllowReassignment: js.UndefOr[Boolean] = js.undefined,
-    PrivateIpAddresses: PrivateIpAddressStringList = null,
-    SecondaryPrivateIpAddressCount: js.UndefOr[Integer] = js.undefined
-  ): AssignPrivateIpAddressesRequest = {
+  def apply(NetworkInterfaceId: NetworkInterfaceId): AssignPrivateIpAddressesRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowReassignment)) __obj.updateDynamic("AllowReassignment")(AllowReassignment.get.asInstanceOf[js.Any])
-    if (PrivateIpAddresses != null) __obj.updateDynamic("PrivateIpAddresses")(PrivateIpAddresses.asInstanceOf[js.Any])
-    if (!js.isUndefined(SecondaryPrivateIpAddressCount)) __obj.updateDynamic("SecondaryPrivateIpAddressCount")(SecondaryPrivateIpAddressCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignPrivateIpAddressesRequest]
   }
+  @scala.inline
+  implicit class AssignPrivateIpAddressesRequestOps[Self <: AssignPrivateIpAddressesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowReassignment(value: Boolean): Self = this.set("AllowReassignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowReassignment: Self = this.set("AllowReassignment", js.undefined)
+    @scala.inline
+    def setPrivateIpAddressesVarargs(value: String*): Self = this.set("PrivateIpAddresses", js.Array(value :_*))
+    @scala.inline
+    def setPrivateIpAddresses(value: PrivateIpAddressStringList): Self = this.set("PrivateIpAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddresses: Self = this.set("PrivateIpAddresses", js.undefined)
+    @scala.inline
+    def setSecondaryPrivateIpAddressCount(value: Integer): Self = this.set("SecondaryPrivateIpAddressCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondaryPrivateIpAddressCount: Self = this.set("SecondaryPrivateIpAddressCount", js.undefined)
+  }
+  
 }
 

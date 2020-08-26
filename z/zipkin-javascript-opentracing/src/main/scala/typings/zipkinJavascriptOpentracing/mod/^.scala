@@ -8,12 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends zipkinJavascriptOpentracing {
   def this(args: js.Any*) = this()
-  /* CompleteClass */
-  override def extract(format: js.Any, carrier: js.Any): js.Any = js.native
-  /* CompleteClass */
-  override def inject(span: js.Any, format: js.Any, carrier: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def startSpan(name: js.Any, args: js.Any*): js.Any = js.native
 }
 
 @JSImport("zipkin-javascript-opentracing", JSImport.Namespace)

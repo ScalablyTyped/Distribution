@@ -26,9 +26,9 @@ class SequenceFlow protected () extends Flow {
   @JSName("model")
   var model_FSequenceFlow: IModel = js.native
   def caseValue: CaseValue = js.native
-  def caseValue(newValue: CaseValue): js.Any = js.native
+  def caseValue_=(newValue: CaseValue): Unit = js.native
   def isErrorHandler: Boolean = js.native
-  def isErrorHandler(newValue: Boolean): js.Any = js.native
+  def isErrorHandler_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

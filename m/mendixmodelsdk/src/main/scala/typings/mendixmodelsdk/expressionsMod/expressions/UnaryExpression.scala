@@ -60,9 +60,9 @@ class UnaryExpression protected () extends Expression {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def expression: Expression = js.native
-  def expression(newValue: Expression): js.Any = js.native
+  def expression_=(newValue: Expression): Unit = js.native
   def operator: UnaryOperator = js.native
-  def operator(newValue: UnaryOperator): js.Any = js.native
+  def operator_=(newValue: UnaryOperator): Unit = js.native
 }
 
 /* static members */

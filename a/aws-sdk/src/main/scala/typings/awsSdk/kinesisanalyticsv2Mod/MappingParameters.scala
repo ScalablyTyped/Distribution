@@ -18,14 +18,30 @@ trait MappingParameters extends js.Object {
 
 object MappingParameters {
   @scala.inline
-  def apply(
-    CSVMappingParameters: CSVMappingParameters = null,
-    JSONMappingParameters: JSONMappingParameters = null
-  ): MappingParameters = {
+  def apply(): MappingParameters = {
     val __obj = js.Dynamic.literal()
-    if (CSVMappingParameters != null) __obj.updateDynamic("CSVMappingParameters")(CSVMappingParameters.asInstanceOf[js.Any])
-    if (JSONMappingParameters != null) __obj.updateDynamic("JSONMappingParameters")(JSONMappingParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappingParameters]
   }
+  @scala.inline
+  implicit class MappingParametersOps[Self <: MappingParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCSVMappingParameters(value: CSVMappingParameters): Self = this.set("CSVMappingParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCSVMappingParameters: Self = this.set("CSVMappingParameters", js.undefined)
+    @scala.inline
+    def setJSONMappingParameters(value: JSONMappingParameters): Self = this.set("JSONMappingParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSONMappingParameters: Self = this.set("JSONMappingParameters", js.undefined)
+  }
+  
 }
 

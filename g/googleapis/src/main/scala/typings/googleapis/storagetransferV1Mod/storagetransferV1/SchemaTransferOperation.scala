@@ -50,28 +50,60 @@ trait SchemaTransferOperation extends js.Object {
 
 object SchemaTransferOperation {
   @scala.inline
-  def apply(
-    counters: SchemaTransferCounters = null,
-    endTime: String = null,
-    errorBreakdowns: js.Array[SchemaErrorSummary] = null,
-    name: String = null,
-    projectId: String = null,
-    startTime: String = null,
-    status: String = null,
-    transferJobName: String = null,
-    transferSpec: SchemaTransferSpec = null
-  ): SchemaTransferOperation = {
+  def apply(): SchemaTransferOperation = {
     val __obj = js.Dynamic.literal()
-    if (counters != null) __obj.updateDynamic("counters")(counters.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (errorBreakdowns != null) __obj.updateDynamic("errorBreakdowns")(errorBreakdowns.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (transferJobName != null) __obj.updateDynamic("transferJobName")(transferJobName.asInstanceOf[js.Any])
-    if (transferSpec != null) __obj.updateDynamic("transferSpec")(transferSpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTransferOperation]
   }
+  @scala.inline
+  implicit class SchemaTransferOperationOps[Self <: SchemaTransferOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCounters(value: SchemaTransferCounters): Self = this.set("counters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCounters: Self = this.set("counters", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setErrorBreakdownsVarargs(value: SchemaErrorSummary*): Self = this.set("errorBreakdowns", js.Array(value :_*))
+    @scala.inline
+    def setErrorBreakdowns(value: js.Array[SchemaErrorSummary]): Self = this.set("errorBreakdowns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorBreakdowns: Self = this.set("errorBreakdowns", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTransferJobName(value: String): Self = this.set("transferJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferJobName: Self = this.set("transferJobName", js.undefined)
+    @scala.inline
+    def setTransferSpec(value: SchemaTransferSpec): Self = this.set("transferSpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferSpec: Self = this.set("transferSpec", js.undefined)
+  }
+  
 }
 

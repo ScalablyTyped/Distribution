@@ -39,20 +39,42 @@ trait SchemaRewrite extends js.Object {
 
 object SchemaRewrite {
   @scala.inline
-  def apply(
-    dynamicLinks: js.UndefOr[Boolean] = js.undefined,
-    function: String = null,
-    glob: String = null,
-    path: String = null,
-    run: SchemaCloudRunRewrite = null
-  ): SchemaRewrite = {
+  def apply(): SchemaRewrite = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynamicLinks)) __obj.updateDynamic("dynamicLinks")(dynamicLinks.get.asInstanceOf[js.Any])
-    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (glob != null) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (run != null) __obj.updateDynamic("run")(run.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRewrite]
   }
+  @scala.inline
+  implicit class SchemaRewriteOps[Self <: SchemaRewrite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDynamicLinks(value: Boolean): Self = this.set("dynamicLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamicLinks: Self = this.set("dynamicLinks", js.undefined)
+    @scala.inline
+    def setFunction(value: String): Self = this.set("function", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunction: Self = this.set("function", js.undefined)
+    @scala.inline
+    def setGlob(value: String): Self = this.set("glob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlob: Self = this.set("glob", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setRun(value: SchemaCloudRunRewrite): Self = this.set("run", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRun: Self = this.set("run", js.undefined)
+  }
+  
 }
 

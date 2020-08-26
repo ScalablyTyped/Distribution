@@ -15,7 +15,7 @@ trait ListSecretVersionIdsResponse extends js.Object {
     */
   var Name: js.UndefOr[SecretNameType] = js.native
   /**
-    * If present in the response, this value indicates that there's more output available than what's included in the current response. This can occur even when the response includes no values at all, such as when you ask for a filtered view of a very long list. Use this value in the NextToken request parameter in a subsequent call to the operation to continue processing and get the next part of the output. You should repeat this until the NextToken response element comes back empty (as null).
+    * If present in the response, this value indicates that there's more output available than included in the current response. This can occur even when the response includes no values at all, such as when you ask for a filtered view of a very long list. Use this value in the NextToken request parameter in a subsequent call to the operation to continue processing and get the next part of the output. You should repeat this until the NextToken response element comes back empty (as null).
     */
   var NextToken: js.UndefOr[NextTokenType] = js.native
   /**
@@ -26,18 +26,40 @@ trait ListSecretVersionIdsResponse extends js.Object {
 
 object ListSecretVersionIdsResponse {
   @scala.inline
-  def apply(
-    ARN: SecretARNType = null,
-    Name: SecretNameType = null,
-    NextToken: NextTokenType = null,
-    Versions: SecretVersionsListType = null
-  ): ListSecretVersionIdsResponse = {
+  def apply(): ListSecretVersionIdsResponse = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Versions != null) __obj.updateDynamic("Versions")(Versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSecretVersionIdsResponse]
   }
+  @scala.inline
+  implicit class ListSecretVersionIdsResponseOps[Self <: ListSecretVersionIdsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: SecretARNType): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setName(value: SecretNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextTokenType): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setVersionsVarargs(value: SecretVersionsListEntry*): Self = this.set("Versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: SecretVersionsListType): Self = this.set("Versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersions: Self = this.set("Versions", js.undefined)
+  }
+  
 }
 

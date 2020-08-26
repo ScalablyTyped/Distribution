@@ -7,18 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Perception.Spatial.SpatialAnchor")
 @js.native
 abstract class SpatialAnchor ()
-  extends typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchor {
-   /* unmapped type */ /* CompleteClass */
-  override var addEventListener: js.Any = js.native
-   /* unmapped type */ /* CompleteClass */
-  override var coordinateSystem: js.Any = js.native
-   /* unmapped type */ /* CompleteClass */
-  override var onrawcoordinatesystemadjusted: js.Any = js.native
-   /* unmapped type */ /* CompleteClass */
-  override var rawCoordinateSystem: js.Any = js.native
-   /* unmapped type */ /* CompleteClass */
-  override var removeEventListener: js.Any = js.native
-}
+  extends typings.winrtUwp.Windows.Perception.Spatial.SpatialAnchor
 
 /* static members */
 @JSGlobal("Windows.Perception.Spatial.SpatialAnchor")

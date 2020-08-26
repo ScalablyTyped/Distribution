@@ -17,7 +17,42 @@ object convertActionBinding extends js.Object {
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
+    interpolationFunction: js.UndefOr[scala.Nothing],
+    baseSourceSpan: js.UndefOr[scala.Nothing],
+    implicitReceiverAccesses: Set[String]
+  ): ConvertActionBindingResult = js.native
+  def apply(
+    localResolver: Null,
+    implicitReceiver: Expression,
+    action: AST,
+    bindingId: String,
+    interpolationFunction: js.UndefOr[scala.Nothing],
+    baseSourceSpan: ParseSourceSpan
+  ): ConvertActionBindingResult = js.native
+  def apply(
+    localResolver: Null,
+    implicitReceiver: Expression,
+    action: AST,
+    bindingId: String,
+    interpolationFunction: js.UndefOr[scala.Nothing],
+    baseSourceSpan: ParseSourceSpan,
+    implicitReceiverAccesses: Set[String]
+  ): ConvertActionBindingResult = js.native
+  def apply(
+    localResolver: Null,
+    implicitReceiver: Expression,
+    action: AST,
+    bindingId: String,
     interpolationFunction: InterpolationFunction
+  ): ConvertActionBindingResult = js.native
+  def apply(
+    localResolver: Null,
+    implicitReceiver: Expression,
+    action: AST,
+    bindingId: String,
+    interpolationFunction: InterpolationFunction,
+    baseSourceSpan: js.UndefOr[scala.Nothing],
+    implicitReceiverAccesses: Set[String]
   ): ConvertActionBindingResult = js.native
   def apply(
     localResolver: Null,
@@ -42,7 +77,42 @@ object convertActionBinding extends js.Object {
     implicitReceiver: Expression,
     action: AST,
     bindingId: String,
+    interpolationFunction: js.UndefOr[scala.Nothing],
+    baseSourceSpan: js.UndefOr[scala.Nothing],
+    implicitReceiverAccesses: Set[String]
+  ): ConvertActionBindingResult = js.native
+  def apply(
+    localResolver: LocalResolver,
+    implicitReceiver: Expression,
+    action: AST,
+    bindingId: String,
+    interpolationFunction: js.UndefOr[scala.Nothing],
+    baseSourceSpan: ParseSourceSpan
+  ): ConvertActionBindingResult = js.native
+  def apply(
+    localResolver: LocalResolver,
+    implicitReceiver: Expression,
+    action: AST,
+    bindingId: String,
+    interpolationFunction: js.UndefOr[scala.Nothing],
+    baseSourceSpan: ParseSourceSpan,
+    implicitReceiverAccesses: Set[String]
+  ): ConvertActionBindingResult = js.native
+  def apply(
+    localResolver: LocalResolver,
+    implicitReceiver: Expression,
+    action: AST,
+    bindingId: String,
     interpolationFunction: InterpolationFunction
+  ): ConvertActionBindingResult = js.native
+  def apply(
+    localResolver: LocalResolver,
+    implicitReceiver: Expression,
+    action: AST,
+    bindingId: String,
+    interpolationFunction: InterpolationFunction,
+    baseSourceSpan: js.UndefOr[scala.Nothing],
+    implicitReceiverAccesses: Set[String]
   ): ConvertActionBindingResult = js.native
   def apply(
     localResolver: LocalResolver,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for knockout
 
-Typings are for version v3.4.0
+Typings are for version 3.5.1
 
 ## Library description:
 Knockout makes it easier to create rich, responsive UIs with JavaScript
@@ -24,7 +24,7 @@ Knockout makes it easier to create rich, responsive UIs with JavaScript
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

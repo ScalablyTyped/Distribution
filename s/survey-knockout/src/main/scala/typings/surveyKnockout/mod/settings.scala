@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object settings extends js.Object {
   /**
-    * Set to false to hide empty page title in design mode
+    * Set to false to hide empty page description in design mode
+    */
+  var allowShowEmptyDescriptionInDesignMode: Boolean = js.native
+  /**
+    * Set to false to hide empty page title and description in design mode
     */
   var allowShowEmptyTitleInDesignMode: Boolean = js.native
   /**
@@ -49,6 +53,14 @@ object settings extends js.Object {
     */
   var matrixTotalValuePostFix: String = js.native
   /**
+    * Set this property to change the default value of the minWidth constraint
+    */
+  var maxWidth: String = js.native
+  /**
+    * Set this property to change the default value of the minWidth constraint
+    */
+  var minWidth: String = js.native
+  /**
     * Maximum panel count in dynamic panel
     */
   var panelMaximumPanelCount: Double = js.native
@@ -72,5 +84,10 @@ object settings extends js.Object {
     * Encode parameter on calling restfull web API
     */
   var webserviceEncodeParameters: Boolean = js.native
+  /**
+    * Override this function, set your function, if you want to show your own dialog confirm window instead of standard browser window.
+    * @param message
+    */
+  def confirmActionFunc(message: String): Boolean = js.native
 }
 

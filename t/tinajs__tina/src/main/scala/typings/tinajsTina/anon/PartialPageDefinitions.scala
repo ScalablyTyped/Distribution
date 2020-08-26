@@ -11,77 +11,132 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@tinajs/tina.@tinajs/tina.PageDefinitions> */
+@js.native
 trait PartialPageDefinitions extends js.Object {
-  var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var beforeLoad: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
-  var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[_]]] = js.undefined
-  var created: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var attached: js.UndefOr[js.Function0[Unit]] = js.native
+  var beforeLoad: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+  var compute: js.UndefOr[js.Function1[/* data */ StringDictionary[js.Any], StringDictionary[_]]] = js.native
+  var created: js.UndefOr[js.Function0[Unit]] = js.native
+  var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var detached: js.UndefOr[js.Function0[Unit]] = js.native
   var methods: js.UndefOr[
     StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]
-  ] = js.undefined
-  var mixins: js.UndefOr[js.Array[Partial[PageDefinitions]]] = js.undefined
-  var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onHide: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
-  var onLoad: js.UndefOr[js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var onPageScroll: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
-  var onPullDownRefresh: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
-  var onReachBottom: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
-  var onReady: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
-  var onShareAppMessage: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.undefined
-  var onShow: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
-  var onUnload: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.undefined
-  var properties: js.UndefOr[ComponentProperties] = js.undefined
-  var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
+  ] = js.native
+  var mixins: js.UndefOr[js.Array[Partial[PageDefinitions]]] = js.native
+  var moved: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHide: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+  var onLoad: js.UndefOr[js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[js.Any], Unit]] = js.native
+  var onPageScroll: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.native
+  var onPullDownRefresh: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.native
+  var onReachBottom: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.native
+  var onReady: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+  var onShareAppMessage: js.UndefOr[js.Function1[/* event */ Page, Unit]] = js.native
+  var onShow: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+  var onUnload: js.UndefOr[js.ThisFunction0[/* this */ Page, Unit]] = js.native
+  var properties: js.UndefOr[ComponentProperties] = js.native
+  var ready: js.UndefOr[js.Function0[Unit]] = js.native
 }
 
 object PartialPageDefinitions {
   @scala.inline
-  def apply(
-    attached: () => Unit = null,
-    beforeLoad: js.ThisFunction0[/* this */ Page, Unit] = null,
-    compute: /* data */ StringDictionary[js.Any] => StringDictionary[_] = null,
-    created: () => Unit = null,
-    data: StringDictionary[js.Any] = null,
-    detached: () => Unit = null,
-    methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]] = null,
-    mixins: js.Array[Partial[PageDefinitions]] = null,
-    moved: () => Unit = null,
-    onHide: js.ThisFunction0[/* this */ Page, Unit] = null,
-    onLoad: js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[js.Any], Unit] = null,
-    onPageScroll: /* event */ Page => Unit = null,
-    onPullDownRefresh: /* event */ Page => Unit = null,
-    onReachBottom: /* event */ Page => Unit = null,
-    onReady: js.ThisFunction0[/* this */ Page, Unit] = null,
-    onShareAppMessage: /* event */ Page => Unit = null,
-    onShow: js.ThisFunction0[/* this */ Page, Unit] = null,
-    onUnload: js.ThisFunction0[/* this */ Page, Unit] = null,
-    properties: ComponentProperties = null,
-    ready: () => Unit = null
-  ): PartialPageDefinitions = {
+  def apply(): PartialPageDefinitions = {
     val __obj = js.Dynamic.literal()
-    if (attached != null) __obj.updateDynamic("attached")(js.Any.fromFunction0(attached))
-    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(beforeLoad.asInstanceOf[js.Any])
-    if (compute != null) __obj.updateDynamic("compute")(js.Any.fromFunction1(compute))
-    if (created != null) __obj.updateDynamic("created")(js.Any.fromFunction0(created))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (detached != null) __obj.updateDynamic("detached")(js.Any.fromFunction0(detached))
-    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (moved != null) __obj.updateDynamic("moved")(js.Any.fromFunction0(moved))
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide.asInstanceOf[js.Any])
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
-    if (onPageScroll != null) __obj.updateDynamic("onPageScroll")(js.Any.fromFunction1(onPageScroll))
-    if (onPullDownRefresh != null) __obj.updateDynamic("onPullDownRefresh")(js.Any.fromFunction1(onPullDownRefresh))
-    if (onReachBottom != null) __obj.updateDynamic("onReachBottom")(js.Any.fromFunction1(onReachBottom))
-    if (onReady != null) __obj.updateDynamic("onReady")(onReady.asInstanceOf[js.Any])
-    if (onShareAppMessage != null) __obj.updateDynamic("onShareAppMessage")(js.Any.fromFunction1(onShareAppMessage))
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow.asInstanceOf[js.Any])
-    if (onUnload != null) __obj.updateDynamic("onUnload")(onUnload.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
     __obj.asInstanceOf[PartialPageDefinitions]
   }
+  @scala.inline
+  implicit class PartialPageDefinitionsOps[Self <: PartialPageDefinitions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttached(value: () => Unit): Self = this.set("attached", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteAttached: Self = this.set("attached", js.undefined)
+    @scala.inline
+    def setBeforeLoad(value: js.ThisFunction0[/* this */ Page, Unit]): Self = this.set("beforeLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeLoad: Self = this.set("beforeLoad", js.undefined)
+    @scala.inline
+    def setCompute(value: /* data */ StringDictionary[js.Any] => StringDictionary[_]): Self = this.set("compute", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCompute: Self = this.set("compute", js.undefined)
+    @scala.inline
+    def setCreated(value: () => Unit): Self = this.set("created", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDetached(value: () => Unit): Self = this.set("detached", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDetached: Self = this.set("detached", js.undefined)
+    @scala.inline
+    def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]): Self = this.set("methods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethods: Self = this.set("methods", js.undefined)
+    @scala.inline
+    def setMixinsVarargs(value: Partial[PageDefinitions]*): Self = this.set("mixins", js.Array(value :_*))
+    @scala.inline
+    def setMixins(value: js.Array[Partial[PageDefinitions]]): Self = this.set("mixins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMixins: Self = this.set("mixins", js.undefined)
+    @scala.inline
+    def setMoved(value: () => Unit): Self = this.set("moved", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteMoved: Self = this.set("moved", js.undefined)
+    @scala.inline
+    def setOnHide(value: js.ThisFunction0[/* this */ Page, Unit]): Self = this.set("onHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    @scala.inline
+    def setOnLoad(value: js.ThisFunction1[/* this */ Page, /* options */ js.UndefOr[js.Any], Unit]): Self = this.set("onLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnPageScroll(value: /* event */ Page => Unit): Self = this.set("onPageScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPageScroll: Self = this.set("onPageScroll", js.undefined)
+    @scala.inline
+    def setOnPullDownRefresh(value: /* event */ Page => Unit): Self = this.set("onPullDownRefresh", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPullDownRefresh: Self = this.set("onPullDownRefresh", js.undefined)
+    @scala.inline
+    def setOnReachBottom(value: /* event */ Page => Unit): Self = this.set("onReachBottom", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnReachBottom: Self = this.set("onReachBottom", js.undefined)
+    @scala.inline
+    def setOnReady(value: js.ThisFunction0[/* this */ Page, Unit]): Self = this.set("onReady", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnReady: Self = this.set("onReady", js.undefined)
+    @scala.inline
+    def setOnShareAppMessage(value: /* event */ Page => Unit): Self = this.set("onShareAppMessage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnShareAppMessage: Self = this.set("onShareAppMessage", js.undefined)
+    @scala.inline
+    def setOnShow(value: js.ThisFunction0[/* this */ Page, Unit]): Self = this.set("onShow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    @scala.inline
+    def setOnUnload(value: js.ThisFunction0[/* this */ Page, Unit]): Self = this.set("onUnload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnUnload: Self = this.set("onUnload", js.undefined)
+    @scala.inline
+    def setProperties(value: ComponentProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setReady(value: () => Unit): Self = this.set("ready", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteReady: Self = this.set("ready", js.undefined)
+  }
+  
 }
 

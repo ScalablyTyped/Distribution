@@ -41,18 +41,38 @@ trait SchemaProjectBillingInfo extends js.Object {
 
 object SchemaProjectBillingInfo {
   @scala.inline
-  def apply(
-    billingAccountName: String = null,
-    billingEnabled: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    projectId: String = null
-  ): SchemaProjectBillingInfo = {
+  def apply(): SchemaProjectBillingInfo = {
     val __obj = js.Dynamic.literal()
-    if (billingAccountName != null) __obj.updateDynamic("billingAccountName")(billingAccountName.asInstanceOf[js.Any])
-    if (!js.isUndefined(billingEnabled)) __obj.updateDynamic("billingEnabled")(billingEnabled.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProjectBillingInfo]
   }
+  @scala.inline
+  implicit class SchemaProjectBillingInfoOps[Self <: SchemaProjectBillingInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillingAccountName(value: String): Self = this.set("billingAccountName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingAccountName: Self = this.set("billingAccountName", js.undefined)
+    @scala.inline
+    def setBillingEnabled(value: Boolean): Self = this.set("billingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingEnabled: Self = this.set("billingEnabled", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+  }
+  
 }
 

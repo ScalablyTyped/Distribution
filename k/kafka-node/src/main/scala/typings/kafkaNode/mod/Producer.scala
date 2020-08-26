@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class Producer protected () extends EventEmitter {
   def this(client: KafkaClient) = this()
   def this(client: KafkaClient, options: ProducerOptions) = this()
+  def this(client: KafkaClient, options: js.UndefOr[scala.Nothing], customPartitioner: CustomPartitioner) = this()
   def this(client: KafkaClient, options: ProducerOptions, customPartitioner: CustomPartitioner) = this()
   def close(): Unit = js.native
   def close(cb: js.Function0[_]): Unit = js.native

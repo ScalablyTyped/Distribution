@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected () extends Warning {
   def this(msg: String, name: WARNING_TYPES, code: String) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/bmp" : "0.9.8"
+      "@jimp/bmp" : "0.14.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/bmp" : "0.9.8"
+      "@jimp/bmp" : "0.14.0"
     }
   ],
   "compile-devDependencies" : [

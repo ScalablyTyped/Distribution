@@ -1,20 +1,13 @@
 package typings.androiduix.android.widget
 
-import typings.androiduix.android.content.Context
 import typings.androiduix.android.graphics.Rect
 import typings.androiduix.android.view.KeyEvent
-import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.widget.ScrollView")
 @js.native
-class ScrollView protected () extends FrameLayout {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
+trait ScrollView extends FrameLayout {
   var mActivePointerId: js.Any = js.native
   var mChildToScrollTo: js.Any = js.native
   var mFillViewport: js.Any = js.native
@@ -59,17 +52,5 @@ class ScrollView protected () extends FrameLayout {
   def setSmoothScrollingEnabled(smoothScrollingEnabled: Boolean): Unit = js.native
   def smoothScrollBy(dx: Double, dy: Double): Unit = js.native
   def smoothScrollTo(x: Double, y: Double): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("android.widget.ScrollView")
-@js.native
-object ScrollView extends js.Object {
-  var ANIMATED_SCROLL_GAP: Double = js.native
-  var INVALID_POINTER: js.Any = js.native
-  var MAX_SCROLL_FACTOR: Double = js.native
-  var TAG: js.Any = js.native
-  /* private */ def clamp(n: js.Any, my: js.Any, child: js.Any): js.Any = js.native
-  /* private */ def isViewDescendantOf(child: js.Any, parent: js.Any): js.Any = js.native
 }
 

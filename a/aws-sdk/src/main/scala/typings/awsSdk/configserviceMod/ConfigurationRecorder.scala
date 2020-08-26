@@ -22,12 +22,34 @@ trait ConfigurationRecorder extends js.Object {
 
 object ConfigurationRecorder {
   @scala.inline
-  def apply(name: RecorderName = null, recordingGroup: RecordingGroup = null, roleARN: String = null): ConfigurationRecorder = {
+  def apply(): ConfigurationRecorder = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (recordingGroup != null) __obj.updateDynamic("recordingGroup")(recordingGroup.asInstanceOf[js.Any])
-    if (roleARN != null) __obj.updateDynamic("roleARN")(roleARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationRecorder]
   }
+  @scala.inline
+  implicit class ConfigurationRecorderOps[Self <: ConfigurationRecorder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: RecorderName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRecordingGroup(value: RecordingGroup): Self = this.set("recordingGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordingGroup: Self = this.set("recordingGroup", js.undefined)
+    @scala.inline
+    def setRoleARN(value: String): Self = this.set("roleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("roleARN", js.undefined)
+  }
+  
 }
 

@@ -13,6 +13,10 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-resolve-dependencies", JSImport.Namespace)
 @js.native
 class ^ protected () extends DependencyResolver {
-  def this(resolver: typings.jestResolve.mod.^, hasteFS: FS, snapshotResolver: SnapshotResolver) = this()
+  def this(
+    resolver: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolverType */ js.Any,
+    hasteFS: FS,
+    snapshotResolver: SnapshotResolver
+  ) = this()
 }
 

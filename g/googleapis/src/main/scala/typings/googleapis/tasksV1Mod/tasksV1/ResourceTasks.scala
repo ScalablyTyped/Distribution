@@ -29,6 +29,7 @@ class ResourceTasks protected () extends js.Object {
     */
   def clear(): GaxiosPromise[Unit] = js.native
   def clear(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def clear(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def clear(params: ParamsResourceTasksClear): GaxiosPromise[Unit] = js.native
   def clear(params: ParamsResourceTasksClear, callback: BodyResponseCallback[Unit]): Unit = js.native
   def clear(
@@ -53,6 +54,7 @@ class ResourceTasks protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTasksDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTasksDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -77,6 +79,7 @@ class ResourceTasks protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTask] = js.native
   def get(callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def get(params: ParamsResourceTasksGet): GaxiosPromise[SchemaTask] = js.native
   def get(params: ParamsResourceTasksGet, callback: BodyResponseCallback[SchemaTask]): Unit = js.native
   def get(
@@ -103,6 +106,7 @@ class ResourceTasks protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaTask] = js.native
   def insert(callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def insert(params: ParamsResourceTasksInsert): GaxiosPromise[SchemaTask] = js.native
   def insert(params: ParamsResourceTasksInsert, callback: BodyResponseCallback[SchemaTask]): Unit = js.native
   def insert(
@@ -140,6 +144,7 @@ class ResourceTasks protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTasks] = js.native
   def list(callback: BodyResponseCallback[SchemaTasks]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTasks] = js.native
   def list(params: ParamsResourceTasksList): GaxiosPromise[SchemaTasks] = js.native
   def list(params: ParamsResourceTasksList, callback: BodyResponseCallback[SchemaTasks]): Unit = js.native
   def list(
@@ -172,6 +177,7 @@ class ResourceTasks protected () extends js.Object {
     */
   def move(): GaxiosPromise[SchemaTask] = js.native
   def move(callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  def move(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def move(params: ParamsResourceTasksMove): GaxiosPromise[SchemaTask] = js.native
   def move(params: ParamsResourceTasksMove, callback: BodyResponseCallback[SchemaTask]): Unit = js.native
   def move(
@@ -201,6 +207,7 @@ class ResourceTasks protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaTask] = js.native
   def patch(callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def patch(params: ParamsResourceTasksPatch): GaxiosPromise[SchemaTask] = js.native
   def patch(params: ParamsResourceTasksPatch, callback: BodyResponseCallback[SchemaTask]): Unit = js.native
   def patch(
@@ -230,6 +237,7 @@ class ResourceTasks protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaTask] = js.native
   def update(callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def update(params: ParamsResourceTasksUpdate): GaxiosPromise[SchemaTask] = js.native
   def update(params: ParamsResourceTasksUpdate, callback: BodyResponseCallback[SchemaTask]): Unit = js.native
   def update(

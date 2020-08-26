@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * methods for adding data to the record. To create ILabelSetRecord instance,
   * use dymo.label.framework.LabelSetBuilder.prototype.addRecord method.
   */
+@js.native
 trait ILabelSetRecord extends js.Object {
   /**
     * Adds image data to the record.
@@ -18,7 +19,7 @@ trait ILabelSetRecord extends js.Object {
     *
     * @returns self
     */
-  def setBase64Image(objectName: String, base64Image: String): ILabelSetRecord
+  def setBase64Image(objectName: String, base64Image: String): ILabelSetRecord = js.native
   /** Adds data to the record specified as plain text.
     *
     * @param objectName The name of the object that the markup is set for.
@@ -26,7 +27,7 @@ trait ILabelSetRecord extends js.Object {
     *
     * @returns self
     */
-  def setText(objectName: String, text: String): ILabelSetRecord
+  def setText(objectName: String, text: String): ILabelSetRecord = js.native
   /**
     * Adds data to the record specified as text markup.
     *
@@ -35,7 +36,7 @@ trait ILabelSetRecord extends js.Object {
     *
     * @returns self
     */
-  def setTextMarkup(objectName: String, textMarkup: String): ILabelSetRecord
+  def setTextMarkup(objectName: String, textMarkup: String): ILabelSetRecord = js.native
 }
 
 object ILabelSetRecord {
@@ -48,5 +49,24 @@ object ILabelSetRecord {
     val __obj = js.Dynamic.literal(setBase64Image = js.Any.fromFunction2(setBase64Image), setText = js.Any.fromFunction2(setText), setTextMarkup = js.Any.fromFunction2(setTextMarkup))
     __obj.asInstanceOf[ILabelSetRecord]
   }
+  @scala.inline
+  implicit class ILabelSetRecordOps[Self <: ILabelSetRecord] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSetBase64Image(value: (String, String) => ILabelSetRecord): Self = this.set("setBase64Image", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetText(value: (String, String) => ILabelSetRecord): Self = this.set("setText", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetTextMarkup(value: (String, String) => ILabelSetRecord): Self = this.set("setTextMarkup", js.Any.fromFunction2(value))
+  }
+  
 }
 

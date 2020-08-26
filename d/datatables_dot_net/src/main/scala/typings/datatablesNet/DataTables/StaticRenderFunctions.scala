@@ -16,6 +16,13 @@ trait StaticRenderFunctions extends js.Object {
     * @param postfix Postfix (/suffix) (optional).
     */
   def number(thousands: String, decimal: String, precision: Double): ObjectColumnRender = js.native
+  def number(
+    thousands: String,
+    decimal: String,
+    precision: Double,
+    prefix: js.UndefOr[scala.Nothing],
+    postfix: String
+  ): ObjectColumnRender = js.native
   def number(thousands: String, decimal: String, precision: Double, prefix: String): ObjectColumnRender = js.native
   def number(thousands: String, decimal: String, precision: Double, prefix: String, postfix: String): ObjectColumnRender = js.native
   /**

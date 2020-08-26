@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/coreutils/lib/promise", JSImport.Namespace)
+@JSImport("@lumino/coreutils/types/promise", JSImport.Namespace)
 @js.native
 object promiseMod extends js.Object {
   @js.native

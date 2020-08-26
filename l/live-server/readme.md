@@ -11,8 +11,8 @@ simple development http server with live reload capability
 | Full name          | live-server |
 | Keywords           | front-end, development, tool, server, http, cli |
 | # releases         | 2 |
-| # dependents       | 142 |
-| # downloads        | 6126299 |
+| # dependents       | 155 |
+| # downloads        | 7125243 |
 | # stars            | 144 |
 
 ## Links

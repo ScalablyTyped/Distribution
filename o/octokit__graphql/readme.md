@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__graphql
 
-Typings are for version 4.5.1
+Typings are for version 4.5.3
 
 ## Library description:
 GitHub GraphQL API client for browsers and Node
@@ -10,9 +10,9 @@ GitHub GraphQL API client for browsers and Node
 | ------------------ | :-------------: |
 | Full name          | @octokit/graphql |
 | Keywords           | octokit, github, api, graphql |
-| # releases         | 20 |
-| # dependents       | 39 |
-| # downloads        | 1314979 |
+| # releases         | 26 |
+| # dependents       | 48 |
+| # downloads        | 12591400 |
 | # stars            | 0 |
 
 ## Links

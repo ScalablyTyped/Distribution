@@ -207,72 +207,158 @@ trait SchemaDisk extends js.Object {
 
 object SchemaDisk {
   @scala.inline
-  def apply(
-    creationTimestamp: String = null,
-    description: String = null,
-    diskEncryptionKey: SchemaCustomerEncryptionKey = null,
-    guestOsFeatures: js.Array[SchemaGuestOsFeature] = null,
-    id: String = null,
-    kind: String = null,
-    labelFingerprint: String = null,
-    labels: StringDictionary[String] = null,
-    lastAttachTimestamp: String = null,
-    lastDetachTimestamp: String = null,
-    licenseCodes: js.Array[String] = null,
-    licenses: js.Array[String] = null,
-    name: String = null,
-    options: String = null,
-    physicalBlockSizeBytes: String = null,
-    region: String = null,
-    replicaZones: js.Array[String] = null,
-    resourcePolicies: js.Array[String] = null,
-    selfLink: String = null,
-    sizeGb: String = null,
-    sourceImage: String = null,
-    sourceImageEncryptionKey: SchemaCustomerEncryptionKey = null,
-    sourceImageId: String = null,
-    sourceSnapshot: String = null,
-    sourceSnapshotEncryptionKey: SchemaCustomerEncryptionKey = null,
-    sourceSnapshotId: String = null,
-    status: String = null,
-    storageType: String = null,
-    `type`: String = null,
-    users: js.Array[String] = null,
-    zone: String = null
-  ): SchemaDisk = {
+  def apply(): SchemaDisk = {
     val __obj = js.Dynamic.literal()
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (diskEncryptionKey != null) __obj.updateDynamic("diskEncryptionKey")(diskEncryptionKey.asInstanceOf[js.Any])
-    if (guestOsFeatures != null) __obj.updateDynamic("guestOsFeatures")(guestOsFeatures.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (lastAttachTimestamp != null) __obj.updateDynamic("lastAttachTimestamp")(lastAttachTimestamp.asInstanceOf[js.Any])
-    if (lastDetachTimestamp != null) __obj.updateDynamic("lastDetachTimestamp")(lastDetachTimestamp.asInstanceOf[js.Any])
-    if (licenseCodes != null) __obj.updateDynamic("licenseCodes")(licenseCodes.asInstanceOf[js.Any])
-    if (licenses != null) __obj.updateDynamic("licenses")(licenses.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (physicalBlockSizeBytes != null) __obj.updateDynamic("physicalBlockSizeBytes")(physicalBlockSizeBytes.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (replicaZones != null) __obj.updateDynamic("replicaZones")(replicaZones.asInstanceOf[js.Any])
-    if (resourcePolicies != null) __obj.updateDynamic("resourcePolicies")(resourcePolicies.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (sizeGb != null) __obj.updateDynamic("sizeGb")(sizeGb.asInstanceOf[js.Any])
-    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage.asInstanceOf[js.Any])
-    if (sourceImageEncryptionKey != null) __obj.updateDynamic("sourceImageEncryptionKey")(sourceImageEncryptionKey.asInstanceOf[js.Any])
-    if (sourceImageId != null) __obj.updateDynamic("sourceImageId")(sourceImageId.asInstanceOf[js.Any])
-    if (sourceSnapshot != null) __obj.updateDynamic("sourceSnapshot")(sourceSnapshot.asInstanceOf[js.Any])
-    if (sourceSnapshotEncryptionKey != null) __obj.updateDynamic("sourceSnapshotEncryptionKey")(sourceSnapshotEncryptionKey.asInstanceOf[js.Any])
-    if (sourceSnapshotId != null) __obj.updateDynamic("sourceSnapshotId")(sourceSnapshotId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (storageType != null) __obj.updateDynamic("storageType")(storageType.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDisk]
   }
+  @scala.inline
+  implicit class SchemaDiskOps[Self <: SchemaDisk] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDiskEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("diskEncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskEncryptionKey: Self = this.set("diskEncryptionKey", js.undefined)
+    @scala.inline
+    def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = this.set("guestOsFeatures", js.Array(value :_*))
+    @scala.inline
+    def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = this.set("guestOsFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuestOsFeatures: Self = this.set("guestOsFeatures", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLastAttachTimestamp(value: String): Self = this.set("lastAttachTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAttachTimestamp: Self = this.set("lastAttachTimestamp", js.undefined)
+    @scala.inline
+    def setLastDetachTimestamp(value: String): Self = this.set("lastDetachTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastDetachTimestamp: Self = this.set("lastDetachTimestamp", js.undefined)
+    @scala.inline
+    def setLicenseCodesVarargs(value: String*): Self = this.set("licenseCodes", js.Array(value :_*))
+    @scala.inline
+    def setLicenseCodes(value: js.Array[String]): Self = this.set("licenseCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseCodes: Self = this.set("licenseCodes", js.undefined)
+    @scala.inline
+    def setLicensesVarargs(value: String*): Self = this.set("licenses", js.Array(value :_*))
+    @scala.inline
+    def setLicenses(value: js.Array[String]): Self = this.set("licenses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenses: Self = this.set("licenses", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOptions(value: String): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setPhysicalBlockSizeBytes(value: String): Self = this.set("physicalBlockSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhysicalBlockSizeBytes: Self = this.set("physicalBlockSizeBytes", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setReplicaZonesVarargs(value: String*): Self = this.set("replicaZones", js.Array(value :_*))
+    @scala.inline
+    def setReplicaZones(value: js.Array[String]): Self = this.set("replicaZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaZones: Self = this.set("replicaZones", js.undefined)
+    @scala.inline
+    def setResourcePoliciesVarargs(value: String*): Self = this.set("resourcePolicies", js.Array(value :_*))
+    @scala.inline
+    def setResourcePolicies(value: js.Array[String]): Self = this.set("resourcePolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcePolicies: Self = this.set("resourcePolicies", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSizeGb(value: String): Self = this.set("sizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeGb: Self = this.set("sizeGb", js.undefined)
+    @scala.inline
+    def setSourceImage(value: String): Self = this.set("sourceImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImage: Self = this.set("sourceImage", js.undefined)
+    @scala.inline
+    def setSourceImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceImageEncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImageEncryptionKey: Self = this.set("sourceImageEncryptionKey", js.undefined)
+    @scala.inline
+    def setSourceImageId(value: String): Self = this.set("sourceImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImageId: Self = this.set("sourceImageId", js.undefined)
+    @scala.inline
+    def setSourceSnapshot(value: String): Self = this.set("sourceSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSnapshot: Self = this.set("sourceSnapshot", js.undefined)
+    @scala.inline
+    def setSourceSnapshotEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSnapshotEncryptionKey: Self = this.set("sourceSnapshotEncryptionKey", js.undefined)
+    @scala.inline
+    def setSourceSnapshotId(value: String): Self = this.set("sourceSnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSnapshotId: Self = this.set("sourceSnapshotId", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStorageType(value: String): Self = this.set("storageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageType: Self = this.set("storageType", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUsersVarargs(value: String*): Self = this.set("users", js.Array(value :_*))
+    @scala.inline
+    def setUsers(value: js.Array[String]): Self = this.set("users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsers: Self = this.set("users", js.undefined)
+    @scala.inline
+    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

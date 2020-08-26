@@ -23,11 +23,32 @@ trait SchemaContent extends js.Object {
 
 object SchemaContent {
   @scala.inline
-  def apply(files: js.Array[SchemaFile] = null, scriptId: String = null): SchemaContent = {
+  def apply(): SchemaContent = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContent]
   }
+  @scala.inline
+  implicit class SchemaContentOps[Self <: SchemaContent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilesVarargs(value: SchemaFile*): Self = this.set("files", js.Array(value :_*))
+    @scala.inline
+    def setFiles(value: js.Array[SchemaFile]): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setScriptId(value: String): Self = this.set("scriptId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScriptId: Self = this.set("scriptId", js.undefined)
+  }
+  
 }
 

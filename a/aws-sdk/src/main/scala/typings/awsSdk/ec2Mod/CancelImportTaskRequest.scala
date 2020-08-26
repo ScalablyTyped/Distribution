@@ -22,16 +22,34 @@ trait CancelImportTaskRequest extends js.Object {
 
 object CancelImportTaskRequest {
   @scala.inline
-  def apply(
-    CancelReason: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    ImportTaskId: ImportTaskId = null
-  ): CancelImportTaskRequest = {
+  def apply(): CancelImportTaskRequest = {
     val __obj = js.Dynamic.literal()
-    if (CancelReason != null) __obj.updateDynamic("CancelReason")(CancelReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (ImportTaskId != null) __obj.updateDynamic("ImportTaskId")(ImportTaskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelImportTaskRequest]
   }
+  @scala.inline
+  implicit class CancelImportTaskRequestOps[Self <: CancelImportTaskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancelReason(value: String): Self = this.set("CancelReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelReason: Self = this.set("CancelReason", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setImportTaskId(value: ImportTaskId): Self = this.set("ImportTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportTaskId: Self = this.set("ImportTaskId", js.undefined)
+  }
+  
 }
 

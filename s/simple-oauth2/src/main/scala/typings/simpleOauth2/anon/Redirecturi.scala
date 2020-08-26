@@ -4,23 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Redirecturi extends js.Object {
-  /** A string that represents the registered application URI where the user is redirected after authentication */
-  var redirect_uri: js.UndefOr[String] = js.undefined
-  /** A string or array of strings that represents the application privileges */
-  var scope: js.UndefOr[String | js.Array[String]] = js.undefined
-  /** A string that represents an option opaque value used by the client to main the state between the request and the callback */
-  var state: js.UndefOr[String] = js.undefined
+  var redirect_uri: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String | js.Array[String]] = js.native
+  var state: js.UndefOr[String] = js.native
 }
 
 object Redirecturi {
   @scala.inline
-  def apply(redirect_uri: String = null, scope: String | js.Array[String] = null, state: String = null): Redirecturi = {
+  def apply(): Redirecturi = {
     val __obj = js.Dynamic.literal()
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Redirecturi]
   }
+  @scala.inline
+  implicit class RedirecturiOps[Self <: Redirecturi] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRedirect_uri(value: String): Self = this.set("redirect_uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirect_uri: Self = this.set("redirect_uri", js.undefined)
+    @scala.inline
+    def setScopeVarargs(value: String*): Self = this.set("scope", js.Array(value :_*))
+    @scala.inline
+    def setScope(value: String | js.Array[String]): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ sql builder
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 26455 |
+| # downloads        | 29100 |
 | # stars            | 0 |
 
 ## Links

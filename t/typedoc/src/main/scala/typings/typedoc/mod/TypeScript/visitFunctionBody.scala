@@ -20,6 +20,6 @@ object visitFunctionBody extends js.Object {
     * Resumes a suspended lexical environment and visits a function body, ending the lexical
     * environment and merging hoisted declarations upon completion.
     */
-  def apply(node: FunctionBody, visitor: Visitor, context: TransformationContext): FunctionBody = js.native
+  def apply(node: FunctionBody, visitor: Visitor, context: TransformationContext): js.UndefOr[FunctionBody] = js.native
 }
 

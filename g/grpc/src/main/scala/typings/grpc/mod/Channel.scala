@@ -31,10 +31,6 @@ class Channel protected () extends js.Object {
   def createCall(method: String, deadline: Double, host: Null, parentCall: Null, propagateFlags: Double): Call = js.native
   def createCall(method: String, deadline: Double, host: Null, parentCall: Call): Call = js.native
   def createCall(method: String, deadline: Double, host: Null, parentCall: Call, propagateFlags: Double): Call = js.native
-  def createCall(method: String, deadline: Date): Call = js.native
-  def createCall(method: String, deadline: Date, host: String): Call = js.native
-  def createCall(method: String, deadline: Date, host: String, parentCall: Null, propagateFlags: Double): Call = js.native
-  def createCall(method: String, deadline: Date, host: String, parentCall: Call): Call = js.native
   /**
     * Create a call object. Call is an opaque type that is used by the Client
     * and Server classes. This function is called by the gRPC library when
@@ -48,6 +44,10 @@ class Channel protected () extends js.Object {
     * @param propagateFlags A bitwise combination of elements of grpc.propagate
     *     that indicates what information to propagate from parentCall.
     */
+  def createCall(method: String, deadline: Date): Call = js.native
+  def createCall(method: String, deadline: Date, host: String): Call = js.native
+  def createCall(method: String, deadline: Date, host: String, parentCall: Null, propagateFlags: Double): Call = js.native
+  def createCall(method: String, deadline: Date, host: String, parentCall: Call): Call = js.native
   def createCall(method: String, deadline: Date, host: String, parentCall: Call, propagateFlags: Double): Call = js.native
   def createCall(method: String, deadline: Date, host: Null, parentCall: Null, propagateFlags: Double): Call = js.native
   def createCall(method: String, deadline: Date, host: Null, parentCall: Call): Call = js.native

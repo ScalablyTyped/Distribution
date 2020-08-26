@@ -34,12 +34,35 @@ object CreateBatchPredictionInput {
     BatchPredictionDataSourceId: EntityId,
     BatchPredictionId: EntityId,
     MLModelId: EntityId,
-    OutputUri: S3Url,
-    BatchPredictionName: EntityName = null
+    OutputUri: S3Url
   ): CreateBatchPredictionInput = {
     val __obj = js.Dynamic.literal(BatchPredictionDataSourceId = BatchPredictionDataSourceId.asInstanceOf[js.Any], BatchPredictionId = BatchPredictionId.asInstanceOf[js.Any], MLModelId = MLModelId.asInstanceOf[js.Any], OutputUri = OutputUri.asInstanceOf[js.Any])
-    if (BatchPredictionName != null) __obj.updateDynamic("BatchPredictionName")(BatchPredictionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBatchPredictionInput]
   }
+  @scala.inline
+  implicit class CreateBatchPredictionInputOps[Self <: CreateBatchPredictionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchPredictionDataSourceId(value: EntityId): Self = this.set("BatchPredictionDataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBatchPredictionId(value: EntityId): Self = this.set("BatchPredictionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputUri(value: S3Url): Self = this.set("OutputUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBatchPredictionName(value: EntityName): Self = this.set("BatchPredictionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchPredictionName: Self = this.set("BatchPredictionName", js.undefined)
+  }
+  
 }
 

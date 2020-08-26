@@ -26,16 +26,34 @@ trait SchemaDynamicSegment extends js.Object {
 
 object SchemaDynamicSegment {
   @scala.inline
-  def apply(
-    name: String = null,
-    sessionSegment: SchemaSegmentDefinition = null,
-    userSegment: SchemaSegmentDefinition = null
-  ): SchemaDynamicSegment = {
+  def apply(): SchemaDynamicSegment = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sessionSegment != null) __obj.updateDynamic("sessionSegment")(sessionSegment.asInstanceOf[js.Any])
-    if (userSegment != null) __obj.updateDynamic("userSegment")(userSegment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDynamicSegment]
   }
+  @scala.inline
+  implicit class SchemaDynamicSegmentOps[Self <: SchemaDynamicSegment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSessionSegment(value: SchemaSegmentDefinition): Self = this.set("sessionSegment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionSegment: Self = this.set("sessionSegment", js.undefined)
+    @scala.inline
+    def setUserSegment(value: SchemaSegmentDefinition): Self = this.set("userSegment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserSegment: Self = this.set("userSegment", js.undefined)
+  }
+  
 }
 

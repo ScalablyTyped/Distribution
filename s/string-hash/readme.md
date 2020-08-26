@@ -10,9 +10,9 @@ fast string hashing function
 | ------------------ | :-------------: |
 | Full name          | string-hash |
 | Keywords           | string, hashing |
-| # releases         | 1 |
-| # dependents       | 269 |
-| # downloads        | 27015778 |
+| # releases         | 0 |
+| # dependents       | 275 |
+| # downloads        | 28003202 |
 | # stars            | 5 |
 
 ## Links

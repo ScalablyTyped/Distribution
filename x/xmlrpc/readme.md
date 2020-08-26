@@ -12,7 +12,7 @@ A pure JavaScript XML-RPC client and server.
 | Keywords           | xml-rpc, xmlrpc, xml, rpc |
 | # releases         | 0 |
 | # dependents       | 139 |
-| # downloads        | 409797 |
+| # downloads        | 417698 |
 | # stars            | 4 |
 
 ## Links

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("expo/build/removed.web", JSImport.Namespace)
 @js.native
 object removedWebMod extends js.Object {
+  val AR: Null = js.native
   val Accelerometer: Null = js.native
   val AdMobBanner: Null = js.native
   val AdMobInterstitial: Null = js.native
@@ -16,6 +17,7 @@ object removedWebMod extends js.Object {
   val AppAuth: Null = js.native
   val Asset: Null = js.native
   val Audio: Null = js.native
+  val AuthSession: Null = js.native
   val BackgroundFetch: Null = js.native
   val BarCodeScanner: Null = js.native
   val Barometer: Null = js.native
@@ -28,6 +30,7 @@ object removedWebMod extends js.Object {
   val Crypto: Null = js.native
   val DocumentPicker: Null = js.native
   val Easing: Null = js.native
+  val ErrorRecovery: Null = js.native
   val FaceDetector: Null = js.native
   val Facebook: Null = js.native
   val FacebookAds: Null = js.native
@@ -63,11 +66,13 @@ object removedWebMod extends js.Object {
   val Random: Null = js.native
   val SMS: Null = js.native
   val SQLite: Null = js.native
+  val ScreenOrientation: Null = js.native
   val SecureStore: Null = js.native
   val Segment: Null = js.native
   val Sensors: Null = js.native
   val Sharing: Null = js.native
   val Speech: Null = js.native
+  val StoreReview: Null = js.native
   val Svg: Null = js.native
   val TaskManager: Null = js.native
   val Transition: Null = js.native

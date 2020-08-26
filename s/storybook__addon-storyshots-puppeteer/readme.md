@@ -10,9 +10,9 @@ Image snapshots addition to StoryShots based on puppeteer
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-storyshots-puppeteer |
 | Keywords           | addon, storybook |
-| # releases         | 381 |
-| # dependents       | 2 |
-| # downloads        | 637521 |
+| # releases         | 393 |
+| # dependents       | 3 |
+| # downloads        | 676224 |
 | # stars            | 0 |
 
 ## Links

@@ -8,103 +8,174 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Props extends js.Object {
-  var bodyClassName: js.UndefOr[String] = js.undefined
-  var burgerBarClassName: js.UndefOr[String] = js.undefined
-  var burgerButtonClassName: js.UndefOr[String] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var crossButtonClassName: js.UndefOr[String] = js.undefined
-  var crossClassName: js.UndefOr[String] = js.undefined
-  var customBurgerIcon: js.UndefOr[Element | `false`] = js.undefined
-  var customCrossIcon: js.UndefOr[Element | `false`] = js.undefined
-  var customOnKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[typings.std.Element], Unit]] = js.undefined
-  var disableAutoFocus: js.UndefOr[Boolean] = js.undefined
-  var disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined
-  var disableOverlayClick: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
-  var htmlClassName: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var isOpen: js.UndefOr[Boolean] = js.undefined
-  var itemClassName: js.UndefOr[String] = js.undefined
-  var itemListClassName: js.UndefOr[String] = js.undefined
-  var menuClassName: js.UndefOr[String] = js.undefined
-  var morphShapeClassName: js.UndefOr[String] = js.undefined
-  var noOverlay: js.UndefOr[Boolean] = js.undefined
-  var noTransition: js.UndefOr[Boolean] = js.undefined
-  var onStateChange: js.UndefOr[js.Function1[/* state */ State, Unit]] = js.undefined
+  var bodyClassName: js.UndefOr[String] = js.native
+  var burgerBarClassName: js.UndefOr[String] = js.native
+  var burgerButtonClassName: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.native
+  var crossButtonClassName: js.UndefOr[String] = js.native
+  var crossClassName: js.UndefOr[String] = js.native
+  var customBurgerIcon: js.UndefOr[Element | `false`] = js.native
+  var customCrossIcon: js.UndefOr[Element | `false`] = js.native
+  var customOnKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[typings.std.Element], Unit]] = js.native
+  var disableAutoFocus: js.UndefOr[Boolean] = js.native
+  var disableCloseOnEsc: js.UndefOr[Boolean] = js.native
+  var disableOverlayClick: js.UndefOr[Boolean | js.Function0[Boolean]] = js.native
+  var htmlClassName: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.native
+  var itemClassName: js.UndefOr[String] = js.native
+  var itemListClassName: js.UndefOr[String] = js.native
+  var menuClassName: js.UndefOr[String] = js.native
+  var morphShapeClassName: js.UndefOr[String] = js.native
+  var noOverlay: js.UndefOr[Boolean] = js.native
+  var noTransition: js.UndefOr[Boolean] = js.native
+  var onStateChange: js.UndefOr[js.Function1[/* state */ State, Unit]] = js.native
   // TODO (Rajab) This can be improved, though I do not know how. From PropTypes:
   // styles && styles.outerContainer ? PropTypes.string.isRequired : PropTypes.string
-  var outerContainerId: js.UndefOr[String] = js.undefined
-  var overlayClassName: js.UndefOr[String] = js.undefined
+  var outerContainerId: js.UndefOr[String] = js.native
+  var overlayClassName: js.UndefOr[String] = js.native
   // TODO (Rajab) This can be improved, though I do not know how. From PropTypes:
   // styles && styles.pageWrap ? PropTypes.string.isRequired : PropTypes.string,
-  var pageWrapId: js.UndefOr[String] = js.undefined
-  var right: js.UndefOr[Boolean] = js.undefined
-  var styles: js.UndefOr[PartialStyles] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
+  var pageWrapId: js.UndefOr[String] = js.native
+  var right: js.UndefOr[Boolean] = js.native
+  var styles: js.UndefOr[PartialStyles] = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 
 object Props {
   @scala.inline
-  def apply(
-    bodyClassName: String = null,
-    burgerBarClassName: String = null,
-    burgerButtonClassName: String = null,
-    className: String = null,
-    crossButtonClassName: String = null,
-    crossClassName: String = null,
-    customBurgerIcon: Element | `false` = null,
-    customCrossIcon: Element | `false` = null,
-    customOnKeyDown: /* event */ KeyboardEvent[typings.std.Element] => Unit = null,
-    disableAutoFocus: js.UndefOr[Boolean] = js.undefined,
-    disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined,
-    disableOverlayClick: Boolean | js.Function0[Boolean] = null,
-    htmlClassName: String = null,
-    id: String = null,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    itemClassName: String = null,
-    itemListClassName: String = null,
-    menuClassName: String = null,
-    morphShapeClassName: String = null,
-    noOverlay: js.UndefOr[Boolean] = js.undefined,
-    noTransition: js.UndefOr[Boolean] = js.undefined,
-    onStateChange: /* state */ State => Unit = null,
-    outerContainerId: String = null,
-    overlayClassName: String = null,
-    pageWrapId: String = null,
-    right: js.UndefOr[Boolean] = js.undefined,
-    styles: PartialStyles = null,
-    width: Double | String = null
-  ): Props = {
+  def apply(): Props = {
     val __obj = js.Dynamic.literal()
-    if (bodyClassName != null) __obj.updateDynamic("bodyClassName")(bodyClassName.asInstanceOf[js.Any])
-    if (burgerBarClassName != null) __obj.updateDynamic("burgerBarClassName")(burgerBarClassName.asInstanceOf[js.Any])
-    if (burgerButtonClassName != null) __obj.updateDynamic("burgerButtonClassName")(burgerButtonClassName.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (crossButtonClassName != null) __obj.updateDynamic("crossButtonClassName")(crossButtonClassName.asInstanceOf[js.Any])
-    if (crossClassName != null) __obj.updateDynamic("crossClassName")(crossClassName.asInstanceOf[js.Any])
-    if (customBurgerIcon != null) __obj.updateDynamic("customBurgerIcon")(customBurgerIcon.asInstanceOf[js.Any])
-    if (customCrossIcon != null) __obj.updateDynamic("customCrossIcon")(customCrossIcon.asInstanceOf[js.Any])
-    if (customOnKeyDown != null) __obj.updateDynamic("customOnKeyDown")(js.Any.fromFunction1(customOnKeyDown))
-    if (!js.isUndefined(disableAutoFocus)) __obj.updateDynamic("disableAutoFocus")(disableAutoFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc.get.asInstanceOf[js.Any])
-    if (disableOverlayClick != null) __obj.updateDynamic("disableOverlayClick")(disableOverlayClick.asInstanceOf[js.Any])
-    if (htmlClassName != null) __obj.updateDynamic("htmlClassName")(htmlClassName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
-    if (itemClassName != null) __obj.updateDynamic("itemClassName")(itemClassName.asInstanceOf[js.Any])
-    if (itemListClassName != null) __obj.updateDynamic("itemListClassName")(itemListClassName.asInstanceOf[js.Any])
-    if (menuClassName != null) __obj.updateDynamic("menuClassName")(menuClassName.asInstanceOf[js.Any])
-    if (morphShapeClassName != null) __obj.updateDynamic("morphShapeClassName")(morphShapeClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(noOverlay)) __obj.updateDynamic("noOverlay")(noOverlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noTransition)) __obj.updateDynamic("noTransition")(noTransition.get.asInstanceOf[js.Any])
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
-    if (outerContainerId != null) __obj.updateDynamic("outerContainerId")(outerContainerId.asInstanceOf[js.Any])
-    if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName.asInstanceOf[js.Any])
-    if (pageWrapId != null) __obj.updateDynamic("pageWrapId")(pageWrapId.asInstanceOf[js.Any])
-    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.get.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
+  @scala.inline
+  implicit class PropsOps[Self <: Props] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBodyClassName(value: String): Self = this.set("bodyClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyClassName: Self = this.set("bodyClassName", js.undefined)
+    @scala.inline
+    def setBurgerBarClassName(value: String): Self = this.set("burgerBarClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBurgerBarClassName: Self = this.set("burgerBarClassName", js.undefined)
+    @scala.inline
+    def setBurgerButtonClassName(value: String): Self = this.set("burgerButtonClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBurgerButtonClassName: Self = this.set("burgerButtonClassName", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCrossButtonClassName(value: String): Self = this.set("crossButtonClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossButtonClassName: Self = this.set("crossButtonClassName", js.undefined)
+    @scala.inline
+    def setCrossClassName(value: String): Self = this.set("crossClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossClassName: Self = this.set("crossClassName", js.undefined)
+    @scala.inline
+    def setCustomBurgerIcon(value: Element | `false`): Self = this.set("customBurgerIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomBurgerIcon: Self = this.set("customBurgerIcon", js.undefined)
+    @scala.inline
+    def setCustomCrossIcon(value: Element | `false`): Self = this.set("customCrossIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomCrossIcon: Self = this.set("customCrossIcon", js.undefined)
+    @scala.inline
+    def setCustomOnKeyDown(value: /* event */ KeyboardEvent[typings.std.Element] => Unit): Self = this.set("customOnKeyDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomOnKeyDown: Self = this.set("customOnKeyDown", js.undefined)
+    @scala.inline
+    def setDisableAutoFocus(value: Boolean): Self = this.set("disableAutoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableAutoFocus: Self = this.set("disableAutoFocus", js.undefined)
+    @scala.inline
+    def setDisableCloseOnEsc(value: Boolean): Self = this.set("disableCloseOnEsc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableCloseOnEsc: Self = this.set("disableCloseOnEsc", js.undefined)
+    @scala.inline
+    def setDisableOverlayClickFunction0(value: () => Boolean): Self = this.set("disableOverlayClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDisableOverlayClick(value: Boolean | js.Function0[Boolean]): Self = this.set("disableOverlayClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableOverlayClick: Self = this.set("disableOverlayClick", js.undefined)
+    @scala.inline
+    def setHtmlClassName(value: String): Self = this.set("htmlClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlClassName: Self = this.set("htmlClassName", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    @scala.inline
+    def setItemClassName(value: String): Self = this.set("itemClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemClassName: Self = this.set("itemClassName", js.undefined)
+    @scala.inline
+    def setItemListClassName(value: String): Self = this.set("itemListClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemListClassName: Self = this.set("itemListClassName", js.undefined)
+    @scala.inline
+    def setMenuClassName(value: String): Self = this.set("menuClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuClassName: Self = this.set("menuClassName", js.undefined)
+    @scala.inline
+    def setMorphShapeClassName(value: String): Self = this.set("morphShapeClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMorphShapeClassName: Self = this.set("morphShapeClassName", js.undefined)
+    @scala.inline
+    def setNoOverlay(value: Boolean): Self = this.set("noOverlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoOverlay: Self = this.set("noOverlay", js.undefined)
+    @scala.inline
+    def setNoTransition(value: Boolean): Self = this.set("noTransition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoTransition: Self = this.set("noTransition", js.undefined)
+    @scala.inline
+    def setOnStateChange(value: /* state */ State => Unit): Self = this.set("onStateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStateChange: Self = this.set("onStateChange", js.undefined)
+    @scala.inline
+    def setOuterContainerId(value: String): Self = this.set("outerContainerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOuterContainerId: Self = this.set("outerContainerId", js.undefined)
+    @scala.inline
+    def setOverlayClassName(value: String): Self = this.set("overlayClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayClassName: Self = this.set("overlayClassName", js.undefined)
+    @scala.inline
+    def setPageWrapId(value: String): Self = this.set("pageWrapId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageWrapId: Self = this.set("pageWrapId", js.undefined)
+    @scala.inline
+    def setRight(value: Boolean): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setStyles(value: PartialStyles): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

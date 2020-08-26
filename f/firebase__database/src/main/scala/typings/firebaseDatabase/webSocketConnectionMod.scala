@@ -23,7 +23,34 @@ object webSocketConnectionMod extends js.Object {
       */
     def this(connId: String, repoInfo: RepoInfo) = this()
     def this(connId: String, repoInfo: RepoInfo, applicationId: String) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: js.UndefOr[scala.Nothing],
+      transportSessionId: String
+    ) = this()
     def this(connId: String, repoInfo: RepoInfo, applicationId: String, transportSessionId: String) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: js.UndefOr[scala.Nothing],
+      transportSessionId: js.UndefOr[scala.Nothing],
+      lastSessionId: String
+    ) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: js.UndefOr[scala.Nothing],
+      transportSessionId: String,
+      lastSessionId: String
+    ) = this()
+    def this(
+      connId: String,
+      repoInfo: RepoInfo,
+      applicationId: String,
+      transportSessionId: js.UndefOr[scala.Nothing],
+      lastSessionId: String
+    ) = this()
     def this(
       connId: String,
       repoInfo: RepoInfo,
@@ -32,7 +59,7 @@ object webSocketConnectionMod extends js.Object {
       lastSessionId: String
     ) = this()
     var appendFrame_ : js.Any = js.native
-    var applicationId: js.UndefOr[js.Any] = js.native
+    var applicationId: js.Any = js.native
     var connURL: String = js.native
     var everConnected_ : js.Any = js.native
     /**

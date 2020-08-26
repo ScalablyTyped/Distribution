@@ -27,6 +27,7 @@ trait DurandalViewLocatorModule extends js.Object {
     * @returns {Promise} A promise of the view.
     */
   def locateView(viewUrlOrId: String): DurandalPromise[HTMLElement] = js.native
+  def locateView(viewUrlOrId: String, area: js.UndefOr[scala.Nothing], elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
   def locateView(viewUrlOrId: String, area: String): DurandalPromise[HTMLElement] = js.native
   def locateView(viewUrlOrId: String, area: String, elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
   /**
@@ -37,6 +38,7 @@ trait DurandalViewLocatorModule extends js.Object {
     * @returns {Promise} A promise of the view.
     */
   def locateView(view: HTMLElement): DurandalPromise[HTMLElement] = js.native
+  def locateView(view: HTMLElement, area: js.UndefOr[scala.Nothing], elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
   def locateView(view: HTMLElement, area: String): DurandalPromise[HTMLElement] = js.native
   def locateView(view: HTMLElement, area: String, elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
   /**
@@ -62,7 +64,11 @@ trait DurandalViewLocatorModule extends js.Object {
     * @param {string} [areasPath] Partial views are mapped to the "views" folder if not specified. Use this parameter to change their location.
     */
   def useConvention(): Unit = js.native
+  def useConvention(modulesPath: js.UndefOr[scala.Nothing], viewsPath: js.UndefOr[scala.Nothing], areasPath: String): Unit = js.native
+  def useConvention(modulesPath: js.UndefOr[scala.Nothing], viewsPath: String): Unit = js.native
+  def useConvention(modulesPath: js.UndefOr[scala.Nothing], viewsPath: String, areasPath: String): Unit = js.native
   def useConvention(modulesPath: String): Unit = js.native
+  def useConvention(modulesPath: String, viewsPath: js.UndefOr[scala.Nothing], areasPath: String): Unit = js.native
   def useConvention(modulesPath: String, viewsPath: String): Unit = js.native
   def useConvention(modulesPath: String, viewsPath: String, areasPath: String): Unit = js.native
 }

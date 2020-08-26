@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-select.react-select/src/types.CommonProps<OptionType> & {  children  :react.react.ReactNode,   innerProps  :{  className  :string, onTouchEnd (event : any): void, onClick (event : any): void, onMouseDown (event : any): void},   selectProps  :any} */
+/* Inlined react-select.react-select/src/types.CommonProps<OptionType> & {  children :react.react.ReactNode,   innerProps :{  className :string, onTouchEnd (event : any): void, onClick (event : any): void, onMouseDown (event : any): void},   selectProps :any} */
 @js.native
 trait MultiValueRemoveProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   var children: ReactNode = js.native
@@ -23,12 +23,9 @@ trait MultiValueRemoveProps[OptionType /* <: OptionTypeBase */] extends js.Objec
   var options: OptionsType[OptionType] = js.native
   var selectProps: Props[OptionType] with js.Any = js.native
   def clearValue(): Unit = js.native
-  def cx(): String | Unit = js.native
-  def cx(a: String): String | Unit = js.native
-  def cx(a: String, b: ClassNamesState): String | Unit = js.native
-  def cx(a: String, b: ClassNamesState, c: String): String | Unit = js.native
-  def cx(a: Null, b: ClassNamesState): String | Unit = js.native
-  def cx(a: Null, b: ClassNamesState, c: String): String | Unit = js.native
+  def cx(): String = js.native
+  def cx(state: js.UndefOr[ClassNamesState], className: String): String = js.native
+  def cx(state: ClassNamesState): String = js.native
   /*
     Get the styles of a particular part of the select. Pass in the name of the
     property as the first argument, and the current props as the second argument.

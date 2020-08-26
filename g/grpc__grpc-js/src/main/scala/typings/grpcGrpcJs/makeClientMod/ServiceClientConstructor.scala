@@ -16,7 +16,5 @@ trait ServiceClientConstructor
       /* credentials */ ChannelCredentials, 
       /* options */ PartialChannelOptions, 
       ServiceClient
-    ] {
-  var service: ServiceDefinition = js.native
-}
+    ]
 

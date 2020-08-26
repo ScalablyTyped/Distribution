@@ -22,16 +22,40 @@ trait EventTypeFilter extends js.Object {
 
 object EventTypeFilter {
   @scala.inline
-  def apply(
-    eventTypeCategories: EventTypeCategoryList_ = null,
-    eventTypeCodes: EventTypeCodeList = null,
-    services: serviceList = null
-  ): EventTypeFilter = {
+  def apply(): EventTypeFilter = {
     val __obj = js.Dynamic.literal()
-    if (eventTypeCategories != null) __obj.updateDynamic("eventTypeCategories")(eventTypeCategories.asInstanceOf[js.Any])
-    if (eventTypeCodes != null) __obj.updateDynamic("eventTypeCodes")(eventTypeCodes.asInstanceOf[js.Any])
-    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTypeFilter]
   }
+  @scala.inline
+  implicit class EventTypeFilterOps[Self <: EventTypeFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventTypeCategoriesVarargs(value: eventTypeCategory*): Self = this.set("eventTypeCategories", js.Array(value :_*))
+    @scala.inline
+    def setEventTypeCategories(value: EventTypeCategoryList_): Self = this.set("eventTypeCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypeCategories: Self = this.set("eventTypeCategories", js.undefined)
+    @scala.inline
+    def setEventTypeCodesVarargs(value: eventTypeCode*): Self = this.set("eventTypeCodes", js.Array(value :_*))
+    @scala.inline
+    def setEventTypeCodes(value: EventTypeCodeList): Self = this.set("eventTypeCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypeCodes: Self = this.set("eventTypeCodes", js.undefined)
+    @scala.inline
+    def setServicesVarargs(value: service*): Self = this.set("services", js.Array(value :_*))
+    @scala.inline
+    def setServices(value: serviceList): Self = this.set("services", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServices: Self = this.set("services", js.undefined)
+  }
+  
 }
 

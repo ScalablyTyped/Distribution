@@ -42,26 +42,54 @@ trait Build extends js.Object {
 
 object Build {
   @scala.inline
-  def apply(
-    BuildArn: BuildArn = null,
-    BuildId: BuildId = null,
-    CreationTime: Timestamp = null,
-    Name: FreeText = null,
-    OperatingSystem: OperatingSystem = null,
-    SizeOnDisk: js.UndefOr[PositiveLong] = js.undefined,
-    Status: BuildStatus = null,
-    Version: FreeText = null
-  ): Build = {
+  def apply(): Build = {
     val __obj = js.Dynamic.literal()
-    if (BuildArn != null) __obj.updateDynamic("BuildArn")(BuildArn.asInstanceOf[js.Any])
-    if (BuildId != null) __obj.updateDynamic("BuildId")(BuildId.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OperatingSystem != null) __obj.updateDynamic("OperatingSystem")(OperatingSystem.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizeOnDisk)) __obj.updateDynamic("SizeOnDisk")(SizeOnDisk.get.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Build]
   }
+  @scala.inline
+  implicit class BuildOps[Self <: Build] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuildArn(value: BuildArn): Self = this.set("BuildArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildArn: Self = this.set("BuildArn", js.undefined)
+    @scala.inline
+    def setBuildId(value: BuildId): Self = this.set("BuildId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildId: Self = this.set("BuildId", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setName(value: FreeText): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOperatingSystem(value: OperatingSystem): Self = this.set("OperatingSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystem: Self = this.set("OperatingSystem", js.undefined)
+    @scala.inline
+    def setSizeOnDisk(value: PositiveLong): Self = this.set("SizeOnDisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeOnDisk: Self = this.set("SizeOnDisk", js.undefined)
+    @scala.inline
+    def setStatus(value: BuildStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setVersion(value: FreeText): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

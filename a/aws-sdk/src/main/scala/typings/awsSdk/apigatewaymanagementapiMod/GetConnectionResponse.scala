@@ -19,16 +19,34 @@ trait GetConnectionResponse extends js.Object {
 
 object GetConnectionResponse {
   @scala.inline
-  def apply(
-    ConnectedAt: timestampIso8601 = null,
-    Identity: Identity = null,
-    LastActiveAt: timestampIso8601 = null
-  ): GetConnectionResponse = {
+  def apply(): GetConnectionResponse = {
     val __obj = js.Dynamic.literal()
-    if (ConnectedAt != null) __obj.updateDynamic("ConnectedAt")(ConnectedAt.asInstanceOf[js.Any])
-    if (Identity != null) __obj.updateDynamic("Identity")(Identity.asInstanceOf[js.Any])
-    if (LastActiveAt != null) __obj.updateDynamic("LastActiveAt")(LastActiveAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectionResponse]
   }
+  @scala.inline
+  implicit class GetConnectionResponseOps[Self <: GetConnectionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectedAt(value: timestampIso8601): Self = this.set("ConnectedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectedAt: Self = this.set("ConnectedAt", js.undefined)
+    @scala.inline
+    def setIdentity(value: Identity): Self = this.set("Identity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentity: Self = this.set("Identity", js.undefined)
+    @scala.inline
+    def setLastActiveAt(value: timestampIso8601): Self = this.set("LastActiveAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastActiveAt: Self = this.set("LastActiveAt", js.undefined)
+  }
+  
 }
 

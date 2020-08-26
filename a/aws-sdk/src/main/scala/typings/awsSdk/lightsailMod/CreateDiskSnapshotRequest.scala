@@ -19,24 +19,45 @@ trait CreateDiskSnapshotRequest extends js.Object {
     */
   var instanceName: js.UndefOr[ResourceName] = js.native
   /**
-    * The tag keys and optional values to add to the resource during create. To tag a resource after it has been created, see the tag resource operation.
+    * The tag keys and optional values to add to the resource during create. Use the TagResource action to tag a resource after it's created.
     */
   var tags: js.UndefOr[TagList] = js.native
 }
 
 object CreateDiskSnapshotRequest {
   @scala.inline
-  def apply(
-    diskSnapshotName: ResourceName,
-    diskName: ResourceName = null,
-    instanceName: ResourceName = null,
-    tags: TagList = null
-  ): CreateDiskSnapshotRequest = {
+  def apply(diskSnapshotName: ResourceName): CreateDiskSnapshotRequest = {
     val __obj = js.Dynamic.literal(diskSnapshotName = diskSnapshotName.asInstanceOf[js.Any])
-    if (diskName != null) __obj.updateDynamic("diskName")(diskName.asInstanceOf[js.Any])
-    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDiskSnapshotRequest]
   }
+  @scala.inline
+  implicit class CreateDiskSnapshotRequestOps[Self <: CreateDiskSnapshotRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiskSnapshotName(value: ResourceName): Self = this.set("diskSnapshotName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiskName(value: ResourceName): Self = this.set("diskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskName: Self = this.set("diskName", js.undefined)
+    @scala.inline
+    def setInstanceName(value: ResourceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

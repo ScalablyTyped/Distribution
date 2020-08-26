@@ -11,7 +11,7 @@ Provides UI of snap and slide
 | Keywords           | mobile, ui, browser |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 50387 |
+| # downloads        | 51063 |
 | # stars            | 0 |
 
 ## Links

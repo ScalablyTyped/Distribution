@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MessagingChannel extends js.Object {
   def bind(method: String): MessagingChannel = js.native
+  def bind(method: String, callback: js.UndefOr[scala.Nothing], doNotPublish: Boolean): MessagingChannel = js.native
   def bind(
     method: String,
     callback: js.Function2[/* transaction */ MessageTransaction, /* params */ js.Any, Unit]

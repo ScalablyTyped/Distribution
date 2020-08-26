@@ -17,14 +17,6 @@ object containerMod extends js.Object {
     var _metadataReader: js.Any = js.native
     var _middleware: js.Any = js.native
     var _snapshots: js.Any = js.native
-    /* private */ def _get[T](avoidConstraints: js.Any, isMultiInject: js.Any, targetType: js.Any, serviceIdentifier: js.Any): js.Any = js.native
-    /* private */ def _get[T](
-      avoidConstraints: js.Any,
-      isMultiInject: js.Any,
-      targetType: js.Any,
-      serviceIdentifier: js.Any,
-      key: js.Any
-    ): js.Any = js.native
     /* private */ def _get[T](
       avoidConstraints: js.Any,
       isMultiInject: js.Any,

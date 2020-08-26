@@ -10,7 +10,29 @@ import scala.scalajs.js.annotation._
 trait Delegate extends js.Object {
   def destroy(): Unit = js.native
   def off(): Unit = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function2[/* event */ Event, /* targetElement */ Element, Unit]
+  ): Unit = js.native
+  def off(eventType: js.UndefOr[scala.Nothing], selector: String): Unit = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    selector: String,
+    handler: js.Function2[/* event */ Event, /* targetElement */ Element, Unit]
+  ): Unit = js.native
+  def off(eventType: js.UndefOr[scala.Nothing], selector: js.Function1[/* element */ Element, Boolean]): Unit = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    selector: js.Function1[/* element */ Element, Boolean],
+    handler: js.Function2[/* event */ Event, /* targetElement */ Element, Unit]
+  ): Unit = js.native
   def off(eventType: String): Unit = js.native
+  def off(
+    eventType: String,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function2[/* event */ Event, /* targetElement */ Element, Unit]
+  ): Unit = js.native
   def off(eventType: String, selector: String): Unit = js.native
   def off(
     eventType: String,

@@ -118,7 +118,11 @@ class View () extends Object {
     * @api
     */
   def constrainResolution(): Double = js.native
+  def constrainResolution(resolution: js.UndefOr[scala.Nothing], opt_delta: js.UndefOr[scala.Nothing], opt_direction: Double): Double = js.native
+  def constrainResolution(resolution: js.UndefOr[scala.Nothing], opt_delta: Double): Double = js.native
+  def constrainResolution(resolution: js.UndefOr[scala.Nothing], opt_delta: Double, opt_direction: Double): Double = js.native
   def constrainResolution(resolution: Double): Double = js.native
+  def constrainResolution(resolution: Double, opt_delta: js.UndefOr[scala.Nothing], opt_direction: Double): Double = js.native
   def constrainResolution(resolution: Double, opt_delta: Double): Double = js.native
   def constrainResolution(resolution: Double, opt_delta: Double, opt_direction: Double): Double = js.native
   /**
@@ -129,6 +133,7 @@ class View () extends Object {
     * @api
     */
   def constrainRotation(): Double = js.native
+  def constrainRotation(rotation: js.UndefOr[scala.Nothing], opt_delta: Double): Double = js.native
   def constrainRotation(rotation: Double): Double = js.native
   def constrainRotation(rotation: Double, opt_delta: Double): Double = js.native
   def fit(geometryOrExtent: Extent_): Unit = js.native

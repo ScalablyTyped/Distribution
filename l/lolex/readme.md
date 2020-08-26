@@ -10,9 +10,9 @@ Fake JavaScript timers
 | ------------------ | :-------------: |
 | Full name          | lolex |
 | Keywords           | - |
-| # releases         | 21 |
+| # releases         | 23 |
 | # dependents       | 57 |
-| # downloads        | 127182332 |
+| # downloads        | 130228166 |
 | # stars            | 6 |
 
 ## Links

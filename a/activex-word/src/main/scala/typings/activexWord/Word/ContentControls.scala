@@ -14,6 +14,7 @@ trait ContentControls extends js.Object {
   var WordDotContentControls_typekey: ContentControls = js.native
   /** @param Word.WdContentControlType [Type=0] */
   def Add(): ContentControl = js.native
+  def Add(Type: js.UndefOr[scala.Nothing], Range: js.Any): ContentControl = js.native
   def Add(Type: WdContentControlType): ContentControl = js.native
   def Add(Type: WdContentControlType, Range: js.Any): ContentControl = js.native
   def Item(Index: js.Any): ContentControl = js.native

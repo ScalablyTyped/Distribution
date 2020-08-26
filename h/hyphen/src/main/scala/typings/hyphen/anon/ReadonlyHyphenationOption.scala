@@ -5,24 +5,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Readonly<hyphen.hyphen.HyphenationOptions> */
+@js.native
 trait ReadonlyHyphenationOption extends js.Object {
-  val debug: js.UndefOr[Boolean] = js.undefined
-  val hyphenChar: js.UndefOr[String] = js.undefined
-  val minWordLength: js.UndefOr[Double] = js.undefined
+  val debug: js.UndefOr[Boolean] = js.native
+  val hyphenChar: js.UndefOr[String] = js.native
+  val minWordLength: js.UndefOr[Double] = js.native
 }
 
 object ReadonlyHyphenationOption {
   @scala.inline
-  def apply(
-    debug: js.UndefOr[Boolean] = js.undefined,
-    hyphenChar: String = null,
-    minWordLength: js.UndefOr[Double] = js.undefined
-  ): ReadonlyHyphenationOption = {
+  def apply(): ReadonlyHyphenationOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (hyphenChar != null) __obj.updateDynamic("hyphenChar")(hyphenChar.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWordLength)) __obj.updateDynamic("minWordLength")(minWordLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyHyphenationOption]
   }
+  @scala.inline
+  implicit class ReadonlyHyphenationOptionOps[Self <: ReadonlyHyphenationOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setHyphenChar(value: String): Self = this.set("hyphenChar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHyphenChar: Self = this.set("hyphenChar", js.undefined)
+    @scala.inline
+    def setMinWordLength(value: Double): Self = this.set("minWordLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWordLength: Self = this.set("minWordLength", js.undefined)
+  }
+  
 }
 

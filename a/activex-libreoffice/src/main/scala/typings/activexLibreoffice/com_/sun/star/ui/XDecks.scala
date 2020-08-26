@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * provides access to Decks of a Sidebar.
   * @since LibreOffice 5.1
   */
+@js.native
 trait XDecks
   extends XIndexAccess
      with XNameAccess

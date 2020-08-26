@@ -1,5 +1,6 @@
 package typings.mongodbMemoryServerCore.mongoBinaryMod
 
+import typings.mongodbMemoryServerCore.anon.RequiredMongoBinaryOpts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ class default () extends MongoBinary
 object default extends js.Object {
   var cache: MongoBinaryCache = js.native
   def getCachePath(version: String): js.Promise[String] = js.native
-  def getDownloadPath(options: js.Any): js.Promise[String] = js.native
+  def getDownloadPath(options: RequiredMongoBinaryOpts): js.Promise[String] = js.native
   def getPath(): js.Promise[String] = js.native
   def getPath(opts: MongoBinaryOpts): js.Promise[String] = js.native
   def getSystemPath(systemBinary: String): js.Promise[String] = js.native

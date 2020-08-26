@@ -27,12 +27,34 @@ trait SchemaUploadLineItemsRequest extends js.Object {
 
 object SchemaUploadLineItemsRequest {
   @scala.inline
-  def apply(dryRun: js.UndefOr[Boolean] = js.undefined, format: String = null, lineItems: String = null): SchemaUploadLineItemsRequest = {
+  def apply(): SchemaUploadLineItemsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUploadLineItemsRequest]
   }
+  @scala.inline
+  implicit class SchemaUploadLineItemsRequestOps[Self <: SchemaUploadLineItemsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setLineItems(value: String): Self = this.set("lineItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineItems: Self = this.set("lineItems", js.undefined)
+  }
+  
 }
 

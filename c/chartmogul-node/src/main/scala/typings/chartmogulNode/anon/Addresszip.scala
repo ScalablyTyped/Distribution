@@ -4,22 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Addresszip extends js.Object {
-  var address_zip: js.UndefOr[String] = js.undefined
-  var city: js.UndefOr[String] = js.undefined
-  var country: js.UndefOr[String] = js.undefined
-  var state: js.UndefOr[String] = js.undefined
+  var address_zip: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.native
 }
 
 object Addresszip {
   @scala.inline
-  def apply(address_zip: String = null, city: String = null, country: String = null, state: String = null): Addresszip = {
+  def apply(): Addresszip = {
     val __obj = js.Dynamic.literal()
-    if (address_zip != null) __obj.updateDynamic("address_zip")(address_zip.asInstanceOf[js.Any])
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Addresszip]
   }
+  @scala.inline
+  implicit class AddresszipOps[Self <: Addresszip] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress_zip(value: String): Self = this.set("address_zip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress_zip: Self = this.set("address_zip", js.undefined)
+    @scala.inline
+    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("city", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

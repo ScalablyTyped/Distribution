@@ -12,7 +12,7 @@ JavaScript implementation of bit arrays
 | Keywords           | bit array, bit-array, bit vector, bitset, bitmap, bitstring |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 8381 |
+| # downloads        | 8506 |
 | # stars            | 1 |
 
 ## Links

@@ -1,99 +1,151 @@
 package typings.pdfViewerReactjs.mod
 
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PDFViewerProps extends Props[PDFViewer] {
-  var alert: js.UndefOr[AlertHandler] = js.undefined
-  var canvasCss: js.UndefOr[String] = js.undefined
-  var css: js.UndefOr[String] = js.undefined
-  var defaultScale: js.UndefOr[Double] = js.undefined
-  var document: Document
-  var hideNavbar: js.UndefOr[Boolean] = js.undefined
-  var hideRotation: js.UndefOr[Boolean] = js.undefined
-  var hideZoom: js.UndefOr[Boolean] = js.undefined
-  var loader: js.UndefOr[ReactNode] = js.undefined
-  var maxScale: js.UndefOr[Double] = js.undefined
-  var minScale: js.UndefOr[Double] = js.undefined
-  var navbarOnTop: js.UndefOr[Boolean] = js.undefined
-  var navigation: js.UndefOr[js.Any] = js.undefined
-  var onDocumentClick: js.UndefOr[DocClickHandler] = js.undefined
-  var onNextBtnClick: js.UndefOr[BtnClickHandler] = js.undefined
-  var onPrevBtnClick: js.UndefOr[BtnClickHandler] = js.undefined
-  var onRotation: js.UndefOr[RotationClickHandler] = js.undefined
-  var onZoom: js.UndefOr[ZoomClickHandler] = js.undefined
-  var page: js.UndefOr[Double] = js.undefined
-  var protectContent: js.UndefOr[Boolean] = js.undefined
-  var rotationAngle: js.UndefOr[Double] = js.undefined
-  var scale: js.UndefOr[Double] = js.undefined
-  var scaleStep: js.UndefOr[Double] = js.undefined
-  var watermark: js.UndefOr[Watermark] = js.undefined
+  var alert: js.UndefOr[AlertHandler] = js.native
+  var canvasCss: js.UndefOr[String] = js.native
+  var css: js.UndefOr[String] = js.native
+  var defaultScale: js.UndefOr[Double] = js.native
+  var document: Document = js.native
+  var hideNavbar: js.UndefOr[Boolean] = js.native
+  var hideRotation: js.UndefOr[Boolean] = js.native
+  var hideZoom: js.UndefOr[Boolean] = js.native
+  var loader: js.UndefOr[ReactNode] = js.native
+  var maxScale: js.UndefOr[Double] = js.native
+  var minScale: js.UndefOr[Double] = js.native
+  var navbarOnTop: js.UndefOr[Boolean] = js.native
+  var navigation: js.UndefOr[js.Any] = js.native
+  var onDocumentClick: js.UndefOr[DocClickHandler] = js.native
+  var onNextBtnClick: js.UndefOr[BtnClickHandler] = js.native
+  var onPrevBtnClick: js.UndefOr[BtnClickHandler] = js.native
+  var onRotation: js.UndefOr[RotationClickHandler] = js.native
+  var onZoom: js.UndefOr[ZoomClickHandler] = js.native
+  var page: js.UndefOr[Double] = js.native
+  var protectContent: js.UndefOr[Boolean] = js.native
+  var rotationAngle: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.native
+  var scaleStep: js.UndefOr[Double] = js.native
+  var watermark: js.UndefOr[Watermark] = js.native
 }
 
 object PDFViewerProps {
   @scala.inline
-  def apply(
-    document: Document,
-    alert: /* err */ Err => ReactNode = null,
-    canvasCss: String = null,
-    children: ReactNode = null,
-    css: String = null,
-    defaultScale: js.UndefOr[Double] = js.undefined,
-    hideNavbar: js.UndefOr[Boolean] = js.undefined,
-    hideRotation: js.UndefOr[Boolean] = js.undefined,
-    hideZoom: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
-    loader: ReactNode = null,
-    maxScale: js.UndefOr[Double] = js.undefined,
-    minScale: js.UndefOr[Double] = js.undefined,
-    navbarOnTop: js.UndefOr[Boolean] = js.undefined,
-    navigation: js.Any = null,
-    onDocumentClick: () => Unit = null,
-    onNextBtnClick: /* page */ Double => Unit = null,
-    onPrevBtnClick: /* page */ Double => Unit = null,
-    onRotation: /* angle */ Double => Unit = null,
-    onZoom: /* scale */ Double => Unit = null,
-    page: js.UndefOr[Double] = js.undefined,
-    protectContent: js.UndefOr[Boolean] = js.undefined,
-    ref: js.UndefOr[Null | LegacyRef[PDFViewer]] = js.undefined,
-    rotationAngle: js.UndefOr[Double] = js.undefined,
-    scale: js.UndefOr[Double] = js.undefined,
-    scaleStep: js.UndefOr[Double] = js.undefined,
-    watermark: Watermark = null
-  ): PDFViewerProps = {
+  def apply(document: Document): PDFViewerProps = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
-    if (alert != null) __obj.updateDynamic("alert")(js.Any.fromFunction1(alert))
-    if (canvasCss != null) __obj.updateDynamic("canvasCss")(canvasCss.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultScale)) __obj.updateDynamic("defaultScale")(defaultScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideNavbar)) __obj.updateDynamic("hideNavbar")(hideNavbar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideRotation)) __obj.updateDynamic("hideRotation")(hideRotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideZoom)) __obj.updateDynamic("hideZoom")(hideZoom.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxScale)) __obj.updateDynamic("maxScale")(maxScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minScale)) __obj.updateDynamic("minScale")(minScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(navbarOnTop)) __obj.updateDynamic("navbarOnTop")(navbarOnTop.get.asInstanceOf[js.Any])
-    if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
-    if (onDocumentClick != null) __obj.updateDynamic("onDocumentClick")(js.Any.fromFunction0(onDocumentClick))
-    if (onNextBtnClick != null) __obj.updateDynamic("onNextBtnClick")(js.Any.fromFunction1(onNextBtnClick))
-    if (onPrevBtnClick != null) __obj.updateDynamic("onPrevBtnClick")(js.Any.fromFunction1(onPrevBtnClick))
-    if (onRotation != null) __obj.updateDynamic("onRotation")(js.Any.fromFunction1(onRotation))
-    if (onZoom != null) __obj.updateDynamic("onZoom")(js.Any.fromFunction1(onZoom))
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(protectContent)) __obj.updateDynamic("protectContent")(protectContent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotationAngle)) __obj.updateDynamic("rotationAngle")(rotationAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleStep)) __obj.updateDynamic("scaleStep")(scaleStep.get.asInstanceOf[js.Any])
-    if (watermark != null) __obj.updateDynamic("watermark")(watermark.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerProps]
   }
+  @scala.inline
+  implicit class PDFViewerPropsOps[Self <: PDFViewerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocument(value: Document): Self = this.set("document", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlert(value: /* err */ Err => ReactNode): Self = this.set("alert", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAlert: Self = this.set("alert", js.undefined)
+    @scala.inline
+    def setCanvasCss(value: String): Self = this.set("canvasCss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanvasCss: Self = this.set("canvasCss", js.undefined)
+    @scala.inline
+    def setCss(value: String): Self = this.set("css", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCss: Self = this.set("css", js.undefined)
+    @scala.inline
+    def setDefaultScale(value: Double): Self = this.set("defaultScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultScale: Self = this.set("defaultScale", js.undefined)
+    @scala.inline
+    def setHideNavbar(value: Boolean): Self = this.set("hideNavbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideNavbar: Self = this.set("hideNavbar", js.undefined)
+    @scala.inline
+    def setHideRotation(value: Boolean): Self = this.set("hideRotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideRotation: Self = this.set("hideRotation", js.undefined)
+    @scala.inline
+    def setHideZoom(value: Boolean): Self = this.set("hideZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideZoom: Self = this.set("hideZoom", js.undefined)
+    @scala.inline
+    def setLoader(value: ReactNode): Self = this.set("loader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoader: Self = this.set("loader", js.undefined)
+    @scala.inline
+    def setMaxScale(value: Double): Self = this.set("maxScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxScale: Self = this.set("maxScale", js.undefined)
+    @scala.inline
+    def setMinScale(value: Double): Self = this.set("minScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinScale: Self = this.set("minScale", js.undefined)
+    @scala.inline
+    def setNavbarOnTop(value: Boolean): Self = this.set("navbarOnTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavbarOnTop: Self = this.set("navbarOnTop", js.undefined)
+    @scala.inline
+    def setNavigation(value: js.Any): Self = this.set("navigation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigation: Self = this.set("navigation", js.undefined)
+    @scala.inline
+    def setOnDocumentClick(value: () => Unit): Self = this.set("onDocumentClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDocumentClick: Self = this.set("onDocumentClick", js.undefined)
+    @scala.inline
+    def setOnNextBtnClick(value: /* page */ Double => Unit): Self = this.set("onNextBtnClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnNextBtnClick: Self = this.set("onNextBtnClick", js.undefined)
+    @scala.inline
+    def setOnPrevBtnClick(value: /* page */ Double => Unit): Self = this.set("onPrevBtnClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPrevBtnClick: Self = this.set("onPrevBtnClick", js.undefined)
+    @scala.inline
+    def setOnRotation(value: /* angle */ Double => Unit): Self = this.set("onRotation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRotation: Self = this.set("onRotation", js.undefined)
+    @scala.inline
+    def setOnZoom(value: /* scale */ Double => Unit): Self = this.set("onZoom", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnZoom: Self = this.set("onZoom", js.undefined)
+    @scala.inline
+    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setProtectContent(value: Boolean): Self = this.set("protectContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtectContent: Self = this.set("protectContent", js.undefined)
+    @scala.inline
+    def setRotationAngle(value: Double): Self = this.set("rotationAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationAngle: Self = this.set("rotationAngle", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setScaleStep(value: Double): Self = this.set("scaleStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleStep: Self = this.set("scaleStep", js.undefined)
+    @scala.inline
+    def setWatermark(value: Watermark): Self = this.set("watermark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatermark: Self = this.set("watermark", js.undefined)
+  }
+  
 }
 

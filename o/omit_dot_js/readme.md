@@ -1,7 +1,7 @@
 
 # Scala.js typings for omit_dot_js
 
-Typings are for version 1.0.2
+Typings are for version 2.0.2
 
 ## Library description:
 Utility function to create a shallow copy of an object which had dropped some fields.

@@ -43,14 +43,41 @@ object CreateBatchInferenceJobRequest {
     jobName: Name,
     jobOutput: BatchInferenceJobOutput,
     roleArn: RoleArn,
-    solutionVersionArn: Arn,
-    filterArn: Arn = null,
-    numResults: js.UndefOr[NumBatchResults] = js.undefined
+    solutionVersionArn: Arn
   ): CreateBatchInferenceJobRequest = {
     val __obj = js.Dynamic.literal(jobInput = jobInput.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any], jobOutput = jobOutput.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], solutionVersionArn = solutionVersionArn.asInstanceOf[js.Any])
-    if (filterArn != null) __obj.updateDynamic("filterArn")(filterArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(numResults)) __obj.updateDynamic("numResults")(numResults.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBatchInferenceJobRequest]
   }
+  @scala.inline
+  implicit class CreateBatchInferenceJobRequestOps[Self <: CreateBatchInferenceJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobInput(value: BatchInferenceJobInput): Self = this.set("jobInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobName(value: Name): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobOutput(value: BatchInferenceJobOutput): Self = this.set("jobOutput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSolutionVersionArn(value: Arn): Self = this.set("solutionVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilterArn(value: Arn): Self = this.set("filterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterArn: Self = this.set("filterArn", js.undefined)
+    @scala.inline
+    def setNumResults(value: NumBatchResults): Self = this.set("numResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumResults: Self = this.set("numResults", js.undefined)
+  }
+  
 }
 

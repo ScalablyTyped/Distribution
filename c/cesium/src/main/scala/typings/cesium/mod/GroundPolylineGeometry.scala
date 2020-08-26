@@ -20,6 +20,7 @@ class GroundPolylineGeometry protected () extends Packable {
 @js.native
 object GroundPolylineGeometry extends js.Object {
   def unpack(array: js.Array[Double]): GroundPolylineGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: GroundPolylineGeometry): GroundPolylineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): GroundPolylineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: GroundPolylineGeometry): GroundPolylineGeometry = js.native
 }

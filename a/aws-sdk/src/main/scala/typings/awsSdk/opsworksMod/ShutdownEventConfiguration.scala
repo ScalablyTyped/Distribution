@@ -18,14 +18,30 @@ trait ShutdownEventConfiguration extends js.Object {
 
 object ShutdownEventConfiguration {
   @scala.inline
-  def apply(
-    DelayUntilElbConnectionsDrained: js.UndefOr[Boolean] = js.undefined,
-    ExecutionTimeout: js.UndefOr[Integer] = js.undefined
-  ): ShutdownEventConfiguration = {
+  def apply(): ShutdownEventConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DelayUntilElbConnectionsDrained)) __obj.updateDynamic("DelayUntilElbConnectionsDrained")(DelayUntilElbConnectionsDrained.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExecutionTimeout)) __obj.updateDynamic("ExecutionTimeout")(ExecutionTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShutdownEventConfiguration]
   }
+  @scala.inline
+  implicit class ShutdownEventConfigurationOps[Self <: ShutdownEventConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelayUntilElbConnectionsDrained(value: Boolean): Self = this.set("DelayUntilElbConnectionsDrained", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelayUntilElbConnectionsDrained: Self = this.set("DelayUntilElbConnectionsDrained", js.undefined)
+    @scala.inline
+    def setExecutionTimeout(value: Integer): Self = this.set("ExecutionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionTimeout: Self = this.set("ExecutionTimeout", js.undefined)
+  }
+  
 }
 

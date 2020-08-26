@@ -16,7 +16,6 @@ import scala.scalajs.js.annotation._
 @JSImport("preact", "createElement")
 @js.native
 object ^ extends js.Object {
-  def apply(`type`: String, children: ComponentChildren*): VNode[_] = js.native
   //
   // Preact createElement
   // -----------------------------------
@@ -25,7 +24,8 @@ object ^ extends js.Object {
     props: HTMLAttributes[EventTarget] with SVGAttributes[SVGElement] with (Record[String, _]),
     children: ComponentChildren*
   ): VNode[_] = js.native
-  def apply[P](`type`: ComponentType[P], children: ComponentChildren*): VNode[_] = js.native
+  def apply(`type`: String, props: Null, children: ComponentChildren*): VNode[_] = js.native
   def apply[P](`type`: ComponentType[P], props: Attributes with P, children: ComponentChildren*): VNode[_] = js.native
+  def apply[P](`type`: ComponentType[P], props: Null, children: ComponentChildren*): VNode[_] = js.native
 }
 

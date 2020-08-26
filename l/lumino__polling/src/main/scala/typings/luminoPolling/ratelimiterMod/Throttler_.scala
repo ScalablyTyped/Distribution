@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/polling/lib/ratelimiter", "Throttler")
+@JSImport("@lumino/polling/types/ratelimiter", "Throttler")
 @js.native
 class Throttler_[T, U] protected () extends RateLimiter[T, U] {
   /**

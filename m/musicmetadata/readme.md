@@ -10,9 +10,9 @@ Streaming music metadata parser for node and the browser.
 | ------------------ | :-------------: |
 | Full name          | musicmetadata |
 | Keywords           | id3, id3v1, id3v2, m4a, mp4, vorbis, ogg, flac, asf, wma, wmv, tags, tag |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 47 |
-| # downloads        | 22646 |
+| # downloads        | 21457 |
 | # stars            | 22 |
 
 ## Links

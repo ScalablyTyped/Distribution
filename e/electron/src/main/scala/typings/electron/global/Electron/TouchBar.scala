@@ -24,8 +24,6 @@ class TouchBar protected ()
     * TouchBar
     */
   def this(options: TouchBarConstructorOptions) = this()
-  /* CompleteClass */
-  override var escapeItem: typings.electron.Electron.TouchBarButton | typings.electron.Electron.TouchBarColorPicker | typings.electron.Electron.TouchBarGroup | typings.electron.Electron.TouchBarLabel | typings.electron.Electron.TouchBarPopover | typings.electron.Electron.TouchBarScrubber | typings.electron.Electron.TouchBarSegmentedControl | typings.electron.Electron.TouchBarSlider | typings.electron.Electron.TouchBarSpacer | Null = js.native
 }
 
 /* static members */

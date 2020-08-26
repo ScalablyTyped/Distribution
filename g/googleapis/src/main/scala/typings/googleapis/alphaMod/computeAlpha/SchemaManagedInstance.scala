@@ -87,34 +87,72 @@ trait SchemaManagedInstance extends js.Object {
 
 object SchemaManagedInstance {
   @scala.inline
-  def apply(
-    currentAction: String = null,
-    id: String = null,
-    instance: String = null,
-    instanceHealth: js.Array[SchemaManagedInstanceInstanceHealth] = null,
-    instanceStatus: String = null,
-    instanceTemplate: String = null,
-    lastAttempt: SchemaManagedInstanceLastAttempt = null,
-    `override`: SchemaManagedInstanceOverride = null,
-    preservedStateFromConfig: SchemaPreservedState = null,
-    preservedStateFromPolicy: SchemaPreservedState = null,
-    tag: String = null,
-    version: SchemaManagedInstanceVersion = null
-  ): SchemaManagedInstance = {
+  def apply(): SchemaManagedInstance = {
     val __obj = js.Dynamic.literal()
-    if (currentAction != null) __obj.updateDynamic("currentAction")(currentAction.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (instanceHealth != null) __obj.updateDynamic("instanceHealth")(instanceHealth.asInstanceOf[js.Any])
-    if (instanceStatus != null) __obj.updateDynamic("instanceStatus")(instanceStatus.asInstanceOf[js.Any])
-    if (instanceTemplate != null) __obj.updateDynamic("instanceTemplate")(instanceTemplate.asInstanceOf[js.Any])
-    if (lastAttempt != null) __obj.updateDynamic("lastAttempt")(lastAttempt.asInstanceOf[js.Any])
-    if (`override` != null) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
-    if (preservedStateFromConfig != null) __obj.updateDynamic("preservedStateFromConfig")(preservedStateFromConfig.asInstanceOf[js.Any])
-    if (preservedStateFromPolicy != null) __obj.updateDynamic("preservedStateFromPolicy")(preservedStateFromPolicy.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedInstance]
   }
+  @scala.inline
+  implicit class SchemaManagedInstanceOps[Self <: SchemaManagedInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentAction(value: String): Self = this.set("currentAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentAction: Self = this.set("currentAction", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    @scala.inline
+    def setInstanceHealthVarargs(value: SchemaManagedInstanceInstanceHealth*): Self = this.set("instanceHealth", js.Array(value :_*))
+    @scala.inline
+    def setInstanceHealth(value: js.Array[SchemaManagedInstanceInstanceHealth]): Self = this.set("instanceHealth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceHealth: Self = this.set("instanceHealth", js.undefined)
+    @scala.inline
+    def setInstanceStatus(value: String): Self = this.set("instanceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceStatus: Self = this.set("instanceStatus", js.undefined)
+    @scala.inline
+    def setInstanceTemplate(value: String): Self = this.set("instanceTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTemplate: Self = this.set("instanceTemplate", js.undefined)
+    @scala.inline
+    def setLastAttempt(value: SchemaManagedInstanceLastAttempt): Self = this.set("lastAttempt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAttempt: Self = this.set("lastAttempt", js.undefined)
+    @scala.inline
+    def setOverride(value: SchemaManagedInstanceOverride): Self = this.set("override", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverride: Self = this.set("override", js.undefined)
+    @scala.inline
+    def setPreservedStateFromConfig(value: SchemaPreservedState): Self = this.set("preservedStateFromConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreservedStateFromConfig: Self = this.set("preservedStateFromConfig", js.undefined)
+    @scala.inline
+    def setPreservedStateFromPolicy(value: SchemaPreservedState): Self = this.set("preservedStateFromPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreservedStateFromPolicy: Self = this.set("preservedStateFromPolicy", js.undefined)
+    @scala.inline
+    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+    @scala.inline
+    def setVersion(value: SchemaManagedInstanceVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

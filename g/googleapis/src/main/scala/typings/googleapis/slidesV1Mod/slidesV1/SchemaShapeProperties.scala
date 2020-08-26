@@ -49,20 +49,42 @@ trait SchemaShapeProperties extends js.Object {
 
 object SchemaShapeProperties {
   @scala.inline
-  def apply(
-    contentAlignment: String = null,
-    link: SchemaLink = null,
-    outline: SchemaOutline = null,
-    shadow: SchemaShadow = null,
-    shapeBackgroundFill: SchemaShapeBackgroundFill = null
-  ): SchemaShapeProperties = {
+  def apply(): SchemaShapeProperties = {
     val __obj = js.Dynamic.literal()
-    if (contentAlignment != null) __obj.updateDynamic("contentAlignment")(contentAlignment.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (shapeBackgroundFill != null) __obj.updateDynamic("shapeBackgroundFill")(shapeBackgroundFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaShapeProperties]
   }
+  @scala.inline
+  implicit class SchemaShapePropertiesOps[Self <: SchemaShapeProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentAlignment(value: String): Self = this.set("contentAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentAlignment: Self = this.set("contentAlignment", js.undefined)
+    @scala.inline
+    def setLink(value: SchemaLink): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setOutline(value: SchemaOutline): Self = this.set("outline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutline: Self = this.set("outline", js.undefined)
+    @scala.inline
+    def setShadow(value: SchemaShadow): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadow: Self = this.set("shadow", js.undefined)
+    @scala.inline
+    def setShapeBackgroundFill(value: SchemaShapeBackgroundFill): Self = this.set("shapeBackgroundFill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapeBackgroundFill: Self = this.set("shapeBackgroundFill", js.undefined)
+  }
+  
 }
 

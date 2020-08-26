@@ -26,16 +26,9 @@ object describeTimeToLiveCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DescribeTimeToLiveInput) = this()
-    /* CompleteClass */
-    override val input: DescribeTimeToLiveInput = js.native
     val middlewareStack: MiddlewareStack[DescribeTimeToLiveInput, DescribeTimeToLiveOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: DynamoDBResolvedConfiguration
-    ): Handler[DescribeTimeToLiveInput, DescribeTimeToLiveOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: DynamoDBResolvedConfiguration
     ): Handler[DescribeTimeToLiveInput, DescribeTimeToLiveOutput] = js.native
   }

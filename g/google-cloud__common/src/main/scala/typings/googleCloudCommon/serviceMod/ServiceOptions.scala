@@ -1,52 +1,60 @@
 package typings.googleCloudCommon.serviceMod
 
-import typings.googleAuthLibrary.credentialsMod.CredentialBody
 import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
-import typings.googleAuthLibrary.jwtclientMod.JWTOptions
-import typings.googleAuthLibrary.oauth2clientMod.OAuth2ClientOptions
-import typings.googleAuthLibrary.refreshclientMod.UserRefreshClientOptions
 import typings.googleCloudCommon.serviceObjectMod.Interceptor
-import typings.std.PromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceOptions extends GoogleAuthOptions {
-  var email: js.UndefOr[String] = js.undefined
-  var interceptors_ : js.UndefOr[js.Array[Interceptor]] = js.undefined
-  var promise: js.UndefOr[PromiseConstructor] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
-  var token: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String] = js.native
+  var interceptors_ : js.UndefOr[js.Array[Interceptor]] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var token: js.UndefOr[String] = js.native
+  var userAgent: js.UndefOr[String] = js.native
 }
 
 object ServiceOptions {
   @scala.inline
-  def apply(
-    clientOptions: JWTOptions | OAuth2ClientOptions | UserRefreshClientOptions = null,
-    credentials: CredentialBody = null,
-    email: String = null,
-    interceptors_ : js.Array[Interceptor] = null,
-    keyFile: String = null,
-    keyFilename: String = null,
-    projectId: String = null,
-    promise: PromiseConstructor = null,
-    scopes: String | js.Array[String] = null,
-    timeout: js.UndefOr[Double] = js.undefined,
-    token: String = null
-  ): ServiceOptions = {
+  def apply(): ServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (clientOptions != null) __obj.updateDynamic("clientOptions")(clientOptions.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (interceptors_ != null) __obj.updateDynamic("interceptors_")(interceptors_.asInstanceOf[js.Any])
-    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile.asInstanceOf[js.Any])
-    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceOptions]
   }
+  @scala.inline
+  implicit class ServiceOptionsOps[Self <: ServiceOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setInterceptors_Varargs(value: Interceptor*): Self = this.set("interceptors_", js.Array(value :_*))
+    @scala.inline
+    def setInterceptors_(value: js.Array[Interceptor]): Self = this.set("interceptors_", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterceptors_ : Self = this.set("interceptors_", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken: Self = this.set("token", js.undefined)
+    @scala.inline
+    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+  }
+  
 }
 

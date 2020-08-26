@@ -24,11 +24,62 @@ trait DialogFrame extends js.Object {
   var Top: Double = js.native
   var Width: Double = js.native
   def Characters(): typings.activexExcel.Excel.Characters = js.native
+  def Characters(Start: js.UndefOr[scala.Nothing], Length: js.Any): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: js.Any): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: js.Any, Length: js.Any): typings.activexExcel.Excel.Characters = js.native
   def CheckSpelling(): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: js.Any
+  ): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.Any
+  ): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.Any,
+    SpellLang: js.Any
+  ): js.Any = js.native
+  def CheckSpelling(CustomDictionary: js.UndefOr[scala.Nothing], IgnoreUppercase: js.Any): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.Any,
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: js.Any
+  ): js.Any = js.native
+  def CheckSpelling(CustomDictionary: js.UndefOr[scala.Nothing], IgnoreUppercase: js.Any, AlwaysSuggest: js.Any): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.Any,
+    AlwaysSuggest: js.Any,
+    SpellLang: js.Any
+  ): js.Any = js.native
   def CheckSpelling(CustomDictionary: js.Any): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.Any,
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: js.Any
+  ): js.Any = js.native
+  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.UndefOr[scala.Nothing], AlwaysSuggest: js.Any): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.Any,
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.Any,
+    SpellLang: js.Any
+  ): js.Any = js.native
   def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.Any,
+    IgnoreUppercase: js.Any,
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: js.Any
+  ): js.Any = js.native
   def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any): js.Any = js.native
   def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any, SpellLang: js.Any): js.Any = js.native
   /**
@@ -36,6 +87,7 @@ trait DialogFrame extends js.Object {
     * @param Format [Format=-4147]
     */
   def CopyPicture(): js.Any = js.native
+  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
   def Select(): js.Any = js.native

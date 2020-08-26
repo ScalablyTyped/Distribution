@@ -78,6 +78,14 @@ object taskApiMod extends js.Object {
       `type`: String
     ): js.Promise[js.Array[TaskAttachment]] = js.native
     def getLog(scopeIdentifier: String, hubName: String, planId: String, logId: Double): js.Promise[js.Array[String]] = js.native
+    def getLog(
+      scopeIdentifier: String,
+      hubName: String,
+      planId: String,
+      logId: Double,
+      startLine: js.UndefOr[scala.Nothing],
+      endLine: Double
+    ): js.Promise[js.Array[String]] = js.native
     def getLog(scopeIdentifier: String, hubName: String, planId: String, logId: Double, startLine: Double): js.Promise[js.Array[String]] = js.native
     def getLog(
       scopeIdentifier: String,
@@ -91,11 +99,20 @@ object taskApiMod extends js.Object {
     def getPlan(scopeIdentifier: String, hubName: String, planId: String): js.Promise[TaskOrchestrationPlan] = js.native
     def getPlanAttachments(scopeIdentifier: String, hubName: String, planId: String, `type`: String): js.Promise[js.Array[TaskAttachment]] = js.native
     def getQueuedPlanGroups(scopeIdentifier: String, hubName: String): js.Promise[js.Array[TaskOrchestrationQueuedPlanGroup]] = js.native
+    def getQueuedPlanGroups(scopeIdentifier: String, hubName: String, statusFilter: js.UndefOr[scala.Nothing], count: Double): js.Promise[js.Array[TaskOrchestrationQueuedPlanGroup]] = js.native
     def getQueuedPlanGroups(scopeIdentifier: String, hubName: String, statusFilter: PlanGroupStatusFilter): js.Promise[js.Array[TaskOrchestrationQueuedPlanGroup]] = js.native
     def getQueuedPlanGroups(scopeIdentifier: String, hubName: String, statusFilter: PlanGroupStatusFilter, count: Double): js.Promise[js.Array[TaskOrchestrationQueuedPlanGroup]] = js.native
     def getRecords(scopeIdentifier: String, hubName: String, planId: String, timelineId: String): js.Promise[js.Array[TimelineRecord]] = js.native
     def getRecords(scopeIdentifier: String, hubName: String, planId: String, timelineId: String, changeId: Double): js.Promise[js.Array[TimelineRecord]] = js.native
     def getTimeline(scopeIdentifier: String, hubName: String, planId: String, timelineId: String): js.Promise[Timeline] = js.native
+    def getTimeline(
+      scopeIdentifier: String,
+      hubName: String,
+      planId: String,
+      timelineId: String,
+      changeId: js.UndefOr[scala.Nothing],
+      includeRecords: Boolean
+    ): js.Promise[Timeline] = js.native
     def getTimeline(scopeIdentifier: String, hubName: String, planId: String, timelineId: String, changeId: Double): js.Promise[Timeline] = js.native
     def getTimeline(
       scopeIdentifier: String,

@@ -4,60 +4,91 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExportImageSettings extends js.Object {
   /** to export any custom region of diagram.
     */
-  var bounds: js.UndefOr[js.Any] = js.undefined
+  var bounds: js.UndefOr[js.Any] = js.native
   /** name of the file to be downloaded.
     */
-  var fileName: js.UndefOr[String] = js.undefined
+  var fileName: js.UndefOr[String] = js.native
   /** format of the exported file/data.
     */
-  var format: js.UndefOr[FileFormats] = js.undefined
+  var format: js.UndefOr[FileFormats] = js.native
   /** to set margin to the exported data.
     */
-  var margin: js.UndefOr[js.Any] = js.undefined
+  var margin: js.UndefOr[js.Any] = js.native
   /** to export the diagram into multiple pages
     */
-  var multiplePage: js.UndefOr[Boolean] = js.undefined
+  var multiplePage: js.UndefOr[Boolean] = js.native
   /** to set the page height of the diagram while exporting the diagram into multiple pages.
     */
-  var pageHeight: js.UndefOr[Double] = js.undefined
+  var pageHeight: js.UndefOr[Double] = js.native
   /** to sets the orientation of the page.
     */
-  var pageOrientation: js.UndefOr[PageOrientations] = js.undefined
+  var pageOrientation: js.UndefOr[PageOrientations] = js.native
   /** to set the page width of the diagram while exporting the diagram into multiple pages.
     */
-  var pageWidth: js.UndefOr[Double] = js.undefined
+  var pageWidth: js.UndefOr[Double] = js.native
   /** to set the region of the diagram to be exported.
     */
-  var region: js.UndefOr[Region] = js.undefined
+  var region: js.UndefOr[Region] = js.native
 }
 
 object ExportImageSettings {
   @scala.inline
-  def apply(
-    bounds: js.Any = null,
-    fileName: String = null,
-    format: FileFormats = null,
-    margin: js.Any = null,
-    multiplePage: js.UndefOr[Boolean] = js.undefined,
-    pageHeight: js.UndefOr[Double] = js.undefined,
-    pageOrientation: PageOrientations = null,
-    pageWidth: js.UndefOr[Double] = js.undefined,
-    region: Region = null
-  ): ExportImageSettings = {
+  def apply(): ExportImageSettings = {
     val __obj = js.Dynamic.literal()
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiplePage)) __obj.updateDynamic("multiplePage")(multiplePage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageHeight)) __obj.updateDynamic("pageHeight")(pageHeight.get.asInstanceOf[js.Any])
-    if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageWidth)) __obj.updateDynamic("pageWidth")(pageWidth.get.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportImageSettings]
   }
+  @scala.inline
+  implicit class ExportImageSettingsOps[Self <: ExportImageSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBounds(value: js.Any): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounds: Self = this.set("bounds", js.undefined)
+    @scala.inline
+    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileName: Self = this.set("fileName", js.undefined)
+    @scala.inline
+    def setFormat(value: FileFormats): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setMargin(value: js.Any): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMultiplePage(value: Boolean): Self = this.set("multiplePage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiplePage: Self = this.set("multiplePage", js.undefined)
+    @scala.inline
+    def setPageHeight(value: Double): Self = this.set("pageHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageHeight: Self = this.set("pageHeight", js.undefined)
+    @scala.inline
+    def setPageOrientation(value: PageOrientations): Self = this.set("pageOrientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageOrientation: Self = this.set("pageOrientation", js.undefined)
+    @scala.inline
+    def setPageWidth(value: Double): Self = this.set("pageWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageWidth: Self = this.set("pageWidth", js.undefined)
+    @scala.inline
+    def setRegion(value: Region): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+  }
+  
 }
 

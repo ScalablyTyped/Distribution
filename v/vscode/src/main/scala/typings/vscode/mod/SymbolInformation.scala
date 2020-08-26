@@ -29,6 +29,13 @@ class SymbolInformation protected () extends js.Object {
     */
   def this(name: String, kind: SymbolKind, containerName: String, location: Location) = this()
   def this(name: String, kind: SymbolKind, range: Range, uri: Uri) = this()
+  def this(
+    name: String,
+    kind: SymbolKind,
+    range: Range,
+    uri: js.UndefOr[scala.Nothing],
+    containerName: String
+  ) = this()
   def this(name: String, kind: SymbolKind, range: Range, uri: Uri, containerName: String) = this()
   /**
     * The name of the symbol containing this symbol.

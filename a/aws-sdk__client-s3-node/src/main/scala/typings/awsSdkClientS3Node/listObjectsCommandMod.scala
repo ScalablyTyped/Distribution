@@ -27,17 +27,10 @@ object listObjectsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: ListObjectsInput) = this()
-    /* CompleteClass */
-    override val input: ListObjectsInput = js.native
     val middlewareStack: MiddlewareStack[ListObjectsInput, ListObjectsOutput, Readable] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[ListObjectsInput, ListObjectsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[ListObjectsInput, ListObjectsOutput] = js.native
   }

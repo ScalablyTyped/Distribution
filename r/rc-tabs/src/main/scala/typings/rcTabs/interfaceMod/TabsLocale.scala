@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabsLocale extends js.Object {
-  var addAriaLabel: js.UndefOr[String] = js.undefined
-  var dropdownAriaLabel: js.UndefOr[String] = js.undefined
-  var removeAriaLabel: js.UndefOr[String] = js.undefined
+  var addAriaLabel: js.UndefOr[String] = js.native
+  var dropdownAriaLabel: js.UndefOr[String] = js.native
+  var removeAriaLabel: js.UndefOr[String] = js.native
 }
 
 object TabsLocale {
   @scala.inline
-  def apply(addAriaLabel: String = null, dropdownAriaLabel: String = null, removeAriaLabel: String = null): TabsLocale = {
+  def apply(): TabsLocale = {
     val __obj = js.Dynamic.literal()
-    if (addAriaLabel != null) __obj.updateDynamic("addAriaLabel")(addAriaLabel.asInstanceOf[js.Any])
-    if (dropdownAriaLabel != null) __obj.updateDynamic("dropdownAriaLabel")(dropdownAriaLabel.asInstanceOf[js.Any])
-    if (removeAriaLabel != null) __obj.updateDynamic("removeAriaLabel")(removeAriaLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsLocale]
   }
+  @scala.inline
+  implicit class TabsLocaleOps[Self <: TabsLocale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddAriaLabel(value: String): Self = this.set("addAriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddAriaLabel: Self = this.set("addAriaLabel", js.undefined)
+    @scala.inline
+    def setDropdownAriaLabel(value: String): Self = this.set("dropdownAriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropdownAriaLabel: Self = this.set("dropdownAriaLabel", js.undefined)
+    @scala.inline
+    def setRemoveAriaLabel(value: String): Self = this.set("removeAriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveAriaLabel: Self = this.set("removeAriaLabel", js.undefined)
+  }
+  
 }
 

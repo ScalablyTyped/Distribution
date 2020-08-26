@@ -19,19 +19,17 @@ class NgIf[T] protected () extends js.Object {
   var _updateView: js.Any = js.native
   var _viewContainer: js.Any = js.native
   /**
-    * The Boolean expression to evaluate as the condition for showing a template.
-    */
-  def ngIf(condition: T): js.Any = js.native
-  def ngIfElse(): js.Any = js.native
-  /**
     * A template to show if the condition expression evaluates to false.
     */
-  def ngIfElse(templateRef: TemplateRef[NgIfContext[T]]): js.Any = js.native
-  def ngIfThen(): js.Any = js.native
+  def ngIfElse_=(templateRef: TemplateRef[NgIfContext[T]] | Null): Unit = js.native
   /**
     * A template to show if the condition expression evaluates to true.
     */
-  def ngIfThen(templateRef: TemplateRef[NgIfContext[T]]): js.Any = js.native
+  def ngIfThen_=(templateRef: TemplateRef[NgIfContext[T]] | Null): Unit = js.native
+  /**
+    * The Boolean expression to evaluate as the condition for showing a template.
+    */
+  def ngIf_=(condition: T): Unit = js.native
 }
 
 /* static members */

@@ -54,12 +54,43 @@ object JobSummary {
     jobId: JobId,
     jobType: JobType,
     startTime: StartTime,
-    status: JobStatus,
-    endTime: EndTime = null
+    status: JobStatus
   ): JobSummary = {
     val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], commitMessage = commitMessage.asInstanceOf[js.Any], commitTime = commitTime.asInstanceOf[js.Any], jobArn = jobArn.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], jobType = jobType.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobSummary]
   }
+  @scala.inline
+  implicit class JobSummaryOps[Self <: JobSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommitId(value: CommitId): Self = this.set("commitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommitMessage(value: CommitMessage): Self = this.set("commitMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommitTime(value: CommitTime): Self = this.set("commitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobArn(value: JobArn): Self = this.set("jobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobType(value: JobType): Self = this.set("jobType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: StartTime): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: EndTime): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+  }
+  
 }
 

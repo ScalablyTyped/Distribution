@@ -23,11 +23,13 @@ object anon extends js.Object {
     def createPoolCluster(): PoolCluster = js.native
     def createPoolCluster(config: PoolClusterConfig): PoolCluster = js.native
     def escape(value: js.Any): String = js.native
+    def escape(value: js.Any, stringifyObjects: js.UndefOr[scala.Nothing], timeZone: String): String = js.native
     def escape(value: js.Any, stringifyObjects: Boolean): String = js.native
     def escape(value: js.Any, stringifyObjects: Boolean, timeZone: String): String = js.native
     def escapeId(value: String): String = js.native
     def escapeId(value: String, forbidQualified: Boolean): String = js.native
     def format(sql: String, values: js.Array[_]): String = js.native
+    def format(sql: String, values: js.Array[_], stringifyObjects: js.UndefOr[scala.Nothing], timeZone: String): String = js.native
     def format(sql: String, values: js.Array[_], stringifyObjects: Boolean): String = js.native
     def format(sql: String, values: js.Array[_], stringifyObjects: Boolean, timeZone: String): String = js.native
     def raw(sql: String): ToSqlString = js.native

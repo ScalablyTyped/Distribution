@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DebugNode extends js.Object {
-  val componentInstance: js.Any
-  val context: js.Any
-  val injector: Injector
-  val listeners: js.Array[DebugEventListener]
-  val nativeNode: js.Any
-  val parent: DebugElement | Null
-  val providerTokens: js.Array[_]
-  val references: StringDictionary[js.Any]
+  val componentInstance: js.Any = js.native
+  val context: js.Any = js.native
+  val injector: Injector = js.native
+  val listeners: js.Array[DebugEventListener] = js.native
+  val nativeNode: js.Any = js.native
+  val parent: DebugElement | Null = js.native
+  val providerTokens: js.Array[_] = js.native
+  val references: StringDictionary[js.Any] = js.native
 }
 
 @JSImport("@angular/core", "DebugNode")

@@ -11,8 +11,8 @@ Emits a json file with assets paths
 | Full name          | assets-webpack-plugin |
 | Keywords           | webpack, plugin, generate, assets, hashes |
 | # releases         | 29 |
-| # dependents       | 221 |
-| # downloads        | 7510016 |
+| # dependents       | 223 |
+| # downloads        | 7738978 |
 | # stars            | 31 |
 
 ## Links

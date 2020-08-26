@@ -7,33 +7,66 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<stylelint.stylelint.Configuration> */
+@js.native
 trait PartialConfiguration extends js.Object {
-  var defaultSeverity: js.UndefOr[Severity] = js.undefined
-  var `extends`: js.UndefOr[String | js.Array[String]] = js.undefined
-  var ignoreFiles: js.UndefOr[String | js.Array[String]] = js.undefined
-  var plugins: js.UndefOr[js.Array[String]] = js.undefined
-  var processors: js.UndefOr[js.Array[String]] = js.undefined
-  var rules: js.UndefOr[Record[String, _]] = js.undefined
+  var defaultSeverity: js.UndefOr[Severity] = js.native
+  var `extends`: js.UndefOr[String | js.Array[String]] = js.native
+  var ignoreFiles: js.UndefOr[String | js.Array[String]] = js.native
+  var plugins: js.UndefOr[js.Array[String]] = js.native
+  var processors: js.UndefOr[js.Array[String]] = js.native
+  var rules: js.UndefOr[Record[String, _]] = js.native
 }
 
 object PartialConfiguration {
   @scala.inline
-  def apply(
-    defaultSeverity: Severity = null,
-    `extends`: String | js.Array[String] = null,
-    ignoreFiles: String | js.Array[String] = null,
-    plugins: js.Array[String] = null,
-    processors: js.Array[String] = null,
-    rules: Record[String, _] = null
-  ): PartialConfiguration = {
+  def apply(): PartialConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (defaultSeverity != null) __obj.updateDynamic("defaultSeverity")(defaultSeverity.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (ignoreFiles != null) __obj.updateDynamic("ignoreFiles")(ignoreFiles.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (processors != null) __obj.updateDynamic("processors")(processors.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialConfiguration]
   }
+  @scala.inline
+  implicit class PartialConfigurationOps[Self <: PartialConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultSeverity(value: Severity): Self = this.set("defaultSeverity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSeverity: Self = this.set("defaultSeverity", js.undefined)
+    @scala.inline
+    def setExtendsVarargs(value: String*): Self = this.set("extends", js.Array(value :_*))
+    @scala.inline
+    def setExtends(value: String | js.Array[String]): Self = this.set("extends", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtends: Self = this.set("extends", js.undefined)
+    @scala.inline
+    def setIgnoreFilesVarargs(value: String*): Self = this.set("ignoreFiles", js.Array(value :_*))
+    @scala.inline
+    def setIgnoreFiles(value: String | js.Array[String]): Self = this.set("ignoreFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreFiles: Self = this.set("ignoreFiles", js.undefined)
+    @scala.inline
+    def setPluginsVarargs(value: String*): Self = this.set("plugins", js.Array(value :_*))
+    @scala.inline
+    def setPlugins(value: js.Array[String]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+    @scala.inline
+    def setProcessorsVarargs(value: String*): Self = this.set("processors", js.Array(value :_*))
+    @scala.inline
+    def setProcessors(value: js.Array[String]): Self = this.set("processors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessors: Self = this.set("processors", js.undefined)
+    @scala.inline
+    def setRules(value: Record[String, _]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+  }
+  
 }
 

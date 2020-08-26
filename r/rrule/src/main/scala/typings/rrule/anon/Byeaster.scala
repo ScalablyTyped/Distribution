@@ -15,72 +15,179 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Byeaster extends js.Object {
-  var byeaster: js.UndefOr[Double | Null] = js.undefined
-  var byhour: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
-  var byminute: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
-  var bymonth: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
-  var bymonthday: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
-  var bynmonthday: js.UndefOr[js.Array[Double] | Null] = js.undefined
-  var bynweekday: js.UndefOr[js.Array[js.Array[Double]] | Null] = js.undefined
-  var bysecond: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
-  var bysetpos: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
-  var byweekday: js.UndefOr[Double | Weekday | MO | TU | WE | TH | FR | SA | SU | js.Array[ByWeekday] | Null] = js.undefined
-  var byweekno: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
-  var byyearday: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
-  var count: js.UndefOr[Double | Null] = js.undefined
-  var dtstart: js.UndefOr[Date | Null] = js.undefined
-  var freq: js.UndefOr[Frequency] = js.undefined
-  var interval: js.UndefOr[Double] = js.undefined
-  var tzid: js.UndefOr[String | Null] = js.undefined
-  var until: js.UndefOr[Date | Null] = js.undefined
-  var wkst: js.UndefOr[Double | Weekday | Null] = js.undefined
+  var byeaster: js.UndefOr[Double | Null] = js.native
+  var byhour: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+  var byminute: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+  var bymonth: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+  var bymonthday: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+  var bynmonthday: js.UndefOr[js.Array[Double] | Null] = js.native
+  var bynweekday: js.UndefOr[js.Array[js.Array[Double]] | Null] = js.native
+  var bysecond: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+  var bysetpos: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+  var byweekday: js.UndefOr[Double | Weekday | MO | TU | WE | TH | FR | SA | SU | js.Array[ByWeekday] | Null] = js.native
+  var byweekno: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+  var byyearday: js.UndefOr[Double | js.Array[Double] | Null] = js.native
+  var count: js.UndefOr[Double | Null] = js.native
+  var dtstart: js.UndefOr[Date | Null] = js.native
+  var freq: js.UndefOr[Frequency] = js.native
+  var interval: js.UndefOr[Double] = js.native
+  var tzid: js.UndefOr[String | Null] = js.native
+  var until: js.UndefOr[Date | Null] = js.native
+  var wkst: js.UndefOr[Double | Weekday | Null] = js.native
 }
 
 object Byeaster {
   @scala.inline
-  def apply(
-    byeaster: js.UndefOr[Null | Double] = js.undefined,
-    byhour: js.UndefOr[Null | Double | js.Array[Double]] = js.undefined,
-    byminute: js.UndefOr[Null | Double | js.Array[Double]] = js.undefined,
-    bymonth: js.UndefOr[Null | Double | js.Array[Double]] = js.undefined,
-    bymonthday: js.UndefOr[Null | Double | js.Array[Double]] = js.undefined,
-    bynmonthday: js.UndefOr[Null | js.Array[Double]] = js.undefined,
-    bynweekday: js.UndefOr[Null | js.Array[js.Array[Double]]] = js.undefined,
-    bysecond: js.UndefOr[Null | Double | js.Array[Double]] = js.undefined,
-    bysetpos: js.UndefOr[Null | Double | js.Array[Double]] = js.undefined,
-    byweekday: js.UndefOr[Null | Double | Weekday | MO | TU | WE | TH | FR | SA | SU | js.Array[ByWeekday]] = js.undefined,
-    byweekno: js.UndefOr[Null | Double | js.Array[Double]] = js.undefined,
-    byyearday: js.UndefOr[Null | Double | js.Array[Double]] = js.undefined,
-    count: js.UndefOr[Null | Double] = js.undefined,
-    dtstart: js.UndefOr[Null | Date] = js.undefined,
-    freq: Frequency = null,
-    interval: js.UndefOr[Double] = js.undefined,
-    tzid: js.UndefOr[Null | String] = js.undefined,
-    until: js.UndefOr[Null | Date] = js.undefined,
-    wkst: js.UndefOr[Null | Double | Weekday] = js.undefined
-  ): Byeaster = {
+  def apply(): Byeaster = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(byeaster)) __obj.updateDynamic("byeaster")(byeaster.asInstanceOf[js.Any])
-    if (!js.isUndefined(byhour)) __obj.updateDynamic("byhour")(byhour.asInstanceOf[js.Any])
-    if (!js.isUndefined(byminute)) __obj.updateDynamic("byminute")(byminute.asInstanceOf[js.Any])
-    if (!js.isUndefined(bymonth)) __obj.updateDynamic("bymonth")(bymonth.asInstanceOf[js.Any])
-    if (!js.isUndefined(bymonthday)) __obj.updateDynamic("bymonthday")(bymonthday.asInstanceOf[js.Any])
-    if (!js.isUndefined(bynmonthday)) __obj.updateDynamic("bynmonthday")(bynmonthday.asInstanceOf[js.Any])
-    if (!js.isUndefined(bynweekday)) __obj.updateDynamic("bynweekday")(bynweekday.asInstanceOf[js.Any])
-    if (!js.isUndefined(bysecond)) __obj.updateDynamic("bysecond")(bysecond.asInstanceOf[js.Any])
-    if (!js.isUndefined(bysetpos)) __obj.updateDynamic("bysetpos")(bysetpos.asInstanceOf[js.Any])
-    if (!js.isUndefined(byweekday)) __obj.updateDynamic("byweekday")(byweekday.asInstanceOf[js.Any])
-    if (!js.isUndefined(byweekno)) __obj.updateDynamic("byweekno")(byweekno.asInstanceOf[js.Any])
-    if (!js.isUndefined(byyearday)) __obj.updateDynamic("byyearday")(byyearday.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(dtstart)) __obj.updateDynamic("dtstart")(dtstart.asInstanceOf[js.Any])
-    if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tzid)) __obj.updateDynamic("tzid")(tzid.asInstanceOf[js.Any])
-    if (!js.isUndefined(until)) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
-    if (!js.isUndefined(wkst)) __obj.updateDynamic("wkst")(wkst.asInstanceOf[js.Any])
     __obj.asInstanceOf[Byeaster]
   }
+  @scala.inline
+  implicit class ByeasterOps[Self <: Byeaster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setByeaster(value: Double): Self = this.set("byeaster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByeaster: Self = this.set("byeaster", js.undefined)
+    @scala.inline
+    def setByeasterNull: Self = this.set("byeaster", null)
+    @scala.inline
+    def setByhourVarargs(value: Double*): Self = this.set("byhour", js.Array(value :_*))
+    @scala.inline
+    def setByhour(value: Double | js.Array[Double]): Self = this.set("byhour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByhour: Self = this.set("byhour", js.undefined)
+    @scala.inline
+    def setByhourNull: Self = this.set("byhour", null)
+    @scala.inline
+    def setByminuteVarargs(value: Double*): Self = this.set("byminute", js.Array(value :_*))
+    @scala.inline
+    def setByminute(value: Double | js.Array[Double]): Self = this.set("byminute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByminute: Self = this.set("byminute", js.undefined)
+    @scala.inline
+    def setByminuteNull: Self = this.set("byminute", null)
+    @scala.inline
+    def setBymonthVarargs(value: Double*): Self = this.set("bymonth", js.Array(value :_*))
+    @scala.inline
+    def setBymonth(value: Double | js.Array[Double]): Self = this.set("bymonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBymonth: Self = this.set("bymonth", js.undefined)
+    @scala.inline
+    def setBymonthNull: Self = this.set("bymonth", null)
+    @scala.inline
+    def setBymonthdayVarargs(value: Double*): Self = this.set("bymonthday", js.Array(value :_*))
+    @scala.inline
+    def setBymonthday(value: Double | js.Array[Double]): Self = this.set("bymonthday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBymonthday: Self = this.set("bymonthday", js.undefined)
+    @scala.inline
+    def setBymonthdayNull: Self = this.set("bymonthday", null)
+    @scala.inline
+    def setBynmonthdayVarargs(value: Double*): Self = this.set("bynmonthday", js.Array(value :_*))
+    @scala.inline
+    def setBynmonthday(value: js.Array[Double]): Self = this.set("bynmonthday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBynmonthday: Self = this.set("bynmonthday", js.undefined)
+    @scala.inline
+    def setBynmonthdayNull: Self = this.set("bynmonthday", null)
+    @scala.inline
+    def setBynweekdayVarargs(value: js.Array[Double]*): Self = this.set("bynweekday", js.Array(value :_*))
+    @scala.inline
+    def setBynweekday(value: js.Array[js.Array[Double]]): Self = this.set("bynweekday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBynweekday: Self = this.set("bynweekday", js.undefined)
+    @scala.inline
+    def setBynweekdayNull: Self = this.set("bynweekday", null)
+    @scala.inline
+    def setBysecondVarargs(value: Double*): Self = this.set("bysecond", js.Array(value :_*))
+    @scala.inline
+    def setBysecond(value: Double | js.Array[Double]): Self = this.set("bysecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBysecond: Self = this.set("bysecond", js.undefined)
+    @scala.inline
+    def setBysecondNull: Self = this.set("bysecond", null)
+    @scala.inline
+    def setBysetposVarargs(value: Double*): Self = this.set("bysetpos", js.Array(value :_*))
+    @scala.inline
+    def setBysetpos(value: Double | js.Array[Double]): Self = this.set("bysetpos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBysetpos: Self = this.set("bysetpos", js.undefined)
+    @scala.inline
+    def setBysetposNull: Self = this.set("bysetpos", null)
+    @scala.inline
+    def setByweekdayVarargs(value: ByWeekday*): Self = this.set("byweekday", js.Array(value :_*))
+    @scala.inline
+    def setByweekday(value: Double | Weekday | MO | TU | WE | TH | FR | SA | SU | js.Array[ByWeekday]): Self = this.set("byweekday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByweekday: Self = this.set("byweekday", js.undefined)
+    @scala.inline
+    def setByweekdayNull: Self = this.set("byweekday", null)
+    @scala.inline
+    def setByweeknoVarargs(value: Double*): Self = this.set("byweekno", js.Array(value :_*))
+    @scala.inline
+    def setByweekno(value: Double | js.Array[Double]): Self = this.set("byweekno", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByweekno: Self = this.set("byweekno", js.undefined)
+    @scala.inline
+    def setByweeknoNull: Self = this.set("byweekno", null)
+    @scala.inline
+    def setByyeardayVarargs(value: Double*): Self = this.set("byyearday", js.Array(value :_*))
+    @scala.inline
+    def setByyearday(value: Double | js.Array[Double]): Self = this.set("byyearday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByyearday: Self = this.set("byyearday", js.undefined)
+    @scala.inline
+    def setByyeardayNull: Self = this.set("byyearday", null)
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setCountNull: Self = this.set("count", null)
+    @scala.inline
+    def setDtstart(value: Date): Self = this.set("dtstart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDtstart: Self = this.set("dtstart", js.undefined)
+    @scala.inline
+    def setDtstartNull: Self = this.set("dtstart", null)
+    @scala.inline
+    def setFreq(value: Frequency): Self = this.set("freq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFreq: Self = this.set("freq", js.undefined)
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setTzid(value: String): Self = this.set("tzid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTzid: Self = this.set("tzid", js.undefined)
+    @scala.inline
+    def setTzidNull: Self = this.set("tzid", null)
+    @scala.inline
+    def setUntil(value: Date): Self = this.set("until", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUntil: Self = this.set("until", js.undefined)
+    @scala.inline
+    def setUntilNull: Self = this.set("until", null)
+    @scala.inline
+    def setWkst(value: Double | Weekday): Self = this.set("wkst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWkst: Self = this.set("wkst", js.undefined)
+    @scala.inline
+    def setWkstNull: Self = this.set("wkst", null)
+  }
+  
 }
 

@@ -27,6 +27,7 @@ class ResourceBrowsers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaBrowsersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaBrowsersListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBrowsersListResponse] = js.native
   def list(params: ParamsResourceBrowsersList): GaxiosPromise[SchemaBrowsersListResponse] = js.native
   def list(params: ParamsResourceBrowsersList, callback: BodyResponseCallback[SchemaBrowsersListResponse]): Unit = js.native
   def list(

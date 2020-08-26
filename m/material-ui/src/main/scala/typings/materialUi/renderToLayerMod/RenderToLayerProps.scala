@@ -1,38 +1,48 @@
 package typings.materialUi.renderToLayerMod
 
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RenderToLayerProps extends Props[RenderToLayer] {
-  var componentClickAway: js.UndefOr[js.Function] = js.undefined
-  var open: Boolean
-  var render: js.Function
-  var useLayerForClickAway: js.UndefOr[Boolean] = js.undefined
+  var componentClickAway: js.UndefOr[js.Function] = js.native
+  var open: Boolean = js.native
+  var render: js.Function = js.native
+  var useLayerForClickAway: js.UndefOr[Boolean] = js.native
 }
 
 object RenderToLayerProps {
   @scala.inline
-  def apply(
-    open: Boolean,
-    render: js.Function,
-    children: ReactNode = null,
-    componentClickAway: js.Function = null,
-    key: Key = null,
-    ref: js.UndefOr[Null | LegacyRef[RenderToLayer]] = js.undefined,
-    useLayerForClickAway: js.UndefOr[Boolean] = js.undefined
-  ): RenderToLayerProps = {
+  def apply(open: Boolean, render: js.Function): RenderToLayerProps = {
     val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (componentClickAway != null) __obj.updateDynamic("componentClickAway")(componentClickAway.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLayerForClickAway)) __obj.updateDynamic("useLayerForClickAway")(useLayerForClickAway.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderToLayerProps]
   }
+  @scala.inline
+  implicit class RenderToLayerPropsOps[Self <: RenderToLayerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRender(value: js.Function): Self = this.set("render", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComponentClickAway(value: js.Function): Self = this.set("componentClickAway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentClickAway: Self = this.set("componentClickAway", js.undefined)
+    @scala.inline
+    def setUseLayerForClickAway(value: Boolean): Self = this.set("useLayerForClickAway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseLayerForClickAway: Self = this.set("useLayerForClickAway", js.undefined)
+  }
+  
 }
 

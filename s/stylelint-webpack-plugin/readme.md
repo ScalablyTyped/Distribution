@@ -4,15 +4,15 @@
 Typings are for version 2.1.0
 
 ## Library description:
-A stylelint plugin for webpack
+A Stylelint plugin for webpack
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | stylelint-webpack-plugin |
 | Keywords           | stylelint, lint, linter, plugin, webpack |
-| # releases         | 15 |
-| # dependents       | 169 |
-| # downloads        | 4564682 |
+| # releases         | 13 |
+| # dependents       | 175 |
+| # downloads        | 4650735 |
 | # stars            | 6 |
 
 ## Links

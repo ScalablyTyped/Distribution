@@ -10,9 +10,9 @@ Concatenate a readable stream's data into a single array
 | ------------------ | :-------------: |
 | Full name          | stream-to-array |
 | Keywords           | stream, streams, buffer, array, concat |
-| # releases         | 1 |
-| # dependents       | 152 |
-| # downloads        | 7107476 |
+| # releases         | 0 |
+| # dependents       | 154 |
+| # downloads        | 7207229 |
 | # stars            | 5 |
 
 ## Links

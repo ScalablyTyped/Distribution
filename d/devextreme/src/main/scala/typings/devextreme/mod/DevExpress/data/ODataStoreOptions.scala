@@ -11,82 +11,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ODataStoreOptions extends StoreOptions[ODataStore] {
   /** @name ODataStore.Options.beforeSend */
-  var beforeSend: js.UndefOr[js.Function1[/* options */ Async, _]] = js.undefined
+  var beforeSend: js.UndefOr[js.Function1[/* options */ Async, _]] = js.native
   /** @name ODataStore.Options.deserializeDates */
-  var deserializeDates: js.UndefOr[Boolean] = js.undefined
+  var deserializeDates: js.UndefOr[Boolean] = js.native
   /** @name ODataStore.Options.errorHandler */
   @JSName("errorHandler")
-  var errorHandler_ODataStoreOptions: js.UndefOr[js.Function1[/* e */ ErrorDetails, _]] = js.undefined
+  var errorHandler_ODataStoreOptions: js.UndefOr[js.Function1[/* e */ ErrorDetails, _]] = js.native
   /** @name ODataStore.Options.fieldTypes */
-  var fieldTypes: js.UndefOr[js.Any] = js.undefined
+  var fieldTypes: js.UndefOr[js.Any] = js.native
   /** @name ODataStore.Options.filterToLower */
-  var filterToLower: js.UndefOr[Boolean] = js.undefined
+  var filterToLower: js.UndefOr[Boolean] = js.native
   /** @name ODataStore.Options.jsonp */
-  var jsonp: js.UndefOr[Boolean] = js.undefined
+  var jsonp: js.UndefOr[Boolean] = js.native
   /** @name ODataStore.Options.keyType */
   var keyType: js.UndefOr[
     String | Int32 | Int64 | typings.devextreme.devextremeStrings.Guid | typings.devextreme.devextremeStrings.Boolean | Single | Decimal | js.Any
-  ] = js.undefined
+  ] = js.native
   /** @name ODataStore.Options.url */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[java.lang.String] = js.native
   /** @name ODataStore.Options.version */
-  var version: js.UndefOr[Double] = js.undefined
+  var version: js.UndefOr[Double] = js.native
   /** @name ODataStore.Options.withCredentials */
-  var withCredentials: js.UndefOr[Boolean] = js.undefined
+  var withCredentials: js.UndefOr[Boolean] = js.native
 }
 
 object ODataStoreOptions {
   @scala.inline
-  def apply(
-    beforeSend: /* options */ Async => _ = null,
-    deserializeDates: js.UndefOr[Boolean] = js.undefined,
-    errorHandler: /* e */ ErrorDetails => _ = null,
-    fieldTypes: js.Any = null,
-    filterToLower: js.UndefOr[Boolean] = js.undefined,
-    jsonp: js.UndefOr[Boolean] = js.undefined,
-    key: java.lang.String | js.Array[java.lang.String] = null,
-    keyType: String | Int32 | Int64 | typings.devextreme.devextremeStrings.Guid | typings.devextreme.devextremeStrings.Boolean | Single | Decimal | js.Any = null,
-    onInserted: (/* values */ js.Any, /* key */ js.Any | java.lang.String | Double) => _ = null,
-    onInserting: /* values */ js.Any => _ = null,
-    onLoaded: /* result */ js.Array[_] => _ = null,
-    onLoading: /* loadOptions */ LoadOptions => _ = null,
-    onModified: js.Function = null,
-    onModifying: js.Function = null,
-    onPush: /* changes */ js.Array[_] => _ = null,
-    onRemoved: /* key */ js.Any | java.lang.String | Double => _ = null,
-    onRemoving: /* key */ js.Any | java.lang.String | Double => _ = null,
-    onUpdated: (/* key */ js.Any | java.lang.String | Double, /* values */ js.Any) => _ = null,
-    onUpdating: (/* key */ js.Any | java.lang.String | Double, /* values */ js.Any) => _ = null,
-    url: java.lang.String = null,
-    version: js.UndefOr[Double] = js.undefined,
-    withCredentials: js.UndefOr[Boolean] = js.undefined
-  ): ODataStoreOptions = {
+  def apply(): ODataStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
-    if (!js.isUndefined(deserializeDates)) __obj.updateDynamic("deserializeDates")(deserializeDates.get.asInstanceOf[js.Any])
-    if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction1(errorHandler))
-    if (fieldTypes != null) __obj.updateDynamic("fieldTypes")(fieldTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterToLower)) __obj.updateDynamic("filterToLower")(filterToLower.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsonp)) __obj.updateDynamic("jsonp")(jsonp.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
-    if (onInserted != null) __obj.updateDynamic("onInserted")(js.Any.fromFunction2(onInserted))
-    if (onInserting != null) __obj.updateDynamic("onInserting")(js.Any.fromFunction1(onInserting))
-    if (onLoaded != null) __obj.updateDynamic("onLoaded")(js.Any.fromFunction1(onLoaded))
-    if (onLoading != null) __obj.updateDynamic("onLoading")(js.Any.fromFunction1(onLoading))
-    if (onModified != null) __obj.updateDynamic("onModified")(onModified.asInstanceOf[js.Any])
-    if (onModifying != null) __obj.updateDynamic("onModifying")(onModifying.asInstanceOf[js.Any])
-    if (onPush != null) __obj.updateDynamic("onPush")(js.Any.fromFunction1(onPush))
-    if (onRemoved != null) __obj.updateDynamic("onRemoved")(js.Any.fromFunction1(onRemoved))
-    if (onRemoving != null) __obj.updateDynamic("onRemoving")(js.Any.fromFunction1(onRemoving))
-    if (onUpdated != null) __obj.updateDynamic("onUpdated")(js.Any.fromFunction2(onUpdated))
-    if (onUpdating != null) __obj.updateDynamic("onUpdating")(js.Any.fromFunction2(onUpdating))
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ODataStoreOptions]
   }
+  @scala.inline
+  implicit class ODataStoreOptionsOps[Self <: ODataStoreOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeforeSend(value: /* options */ Async => _): Self = this.set("beforeSend", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeSend: Self = this.set("beforeSend", js.undefined)
+    @scala.inline
+    def setDeserializeDates(value: Boolean): Self = this.set("deserializeDates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeserializeDates: Self = this.set("deserializeDates", js.undefined)
+    @scala.inline
+    def setErrorHandler(value: /* e */ ErrorDetails => _): Self = this.set("errorHandler", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteErrorHandler: Self = this.set("errorHandler", js.undefined)
+    @scala.inline
+    def setFieldTypes(value: js.Any): Self = this.set("fieldTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldTypes: Self = this.set("fieldTypes", js.undefined)
+    @scala.inline
+    def setFilterToLower(value: Boolean): Self = this.set("filterToLower", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterToLower: Self = this.set("filterToLower", js.undefined)
+    @scala.inline
+    def setJsonp(value: Boolean): Self = this.set("jsonp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonp: Self = this.set("jsonp", js.undefined)
+    @scala.inline
+    def setKeyType(
+      value: String | Int32 | Int64 | typings.devextreme.devextremeStrings.Guid | typings.devextreme.devextremeStrings.Boolean | Single | Decimal | js.Any
+    ): Self = this.set("keyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyType: Self = this.set("keyType", js.undefined)
+    @scala.inline
+    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+  }
+  
 }
 

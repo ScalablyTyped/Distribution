@@ -64,28 +64,60 @@ trait SchemaDistribution extends js.Object {
 
 object SchemaDistribution {
   @scala.inline
-  def apply(
-    bucketCounts: js.Array[String] = null,
-    count: String = null,
-    explicitBuckets: SchemaExplicitBuckets = null,
-    exponentialBuckets: SchemaExponentialBuckets = null,
-    linearBuckets: SchemaLinearBuckets = null,
-    maximum: js.UndefOr[Double] = js.undefined,
-    mean: js.UndefOr[Double] = js.undefined,
-    minimum: js.UndefOr[Double] = js.undefined,
-    sumOfSquaredDeviation: js.UndefOr[Double] = js.undefined
-  ): SchemaDistribution = {
+  def apply(): SchemaDistribution = {
     val __obj = js.Dynamic.literal()
-    if (bucketCounts != null) __obj.updateDynamic("bucketCounts")(bucketCounts.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (explicitBuckets != null) __obj.updateDynamic("explicitBuckets")(explicitBuckets.asInstanceOf[js.Any])
-    if (exponentialBuckets != null) __obj.updateDynamic("exponentialBuckets")(exponentialBuckets.asInstanceOf[js.Any])
-    if (linearBuckets != null) __obj.updateDynamic("linearBuckets")(linearBuckets.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mean)) __obj.updateDynamic("mean")(mean.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sumOfSquaredDeviation)) __obj.updateDynamic("sumOfSquaredDeviation")(sumOfSquaredDeviation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDistribution]
   }
+  @scala.inline
+  implicit class SchemaDistributionOps[Self <: SchemaDistribution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketCountsVarargs(value: String*): Self = this.set("bucketCounts", js.Array(value :_*))
+    @scala.inline
+    def setBucketCounts(value: js.Array[String]): Self = this.set("bucketCounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketCounts: Self = this.set("bucketCounts", js.undefined)
+    @scala.inline
+    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setExplicitBuckets(value: SchemaExplicitBuckets): Self = this.set("explicitBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplicitBuckets: Self = this.set("explicitBuckets", js.undefined)
+    @scala.inline
+    def setExponentialBuckets(value: SchemaExponentialBuckets): Self = this.set("exponentialBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExponentialBuckets: Self = this.set("exponentialBuckets", js.undefined)
+    @scala.inline
+    def setLinearBuckets(value: SchemaLinearBuckets): Self = this.set("linearBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinearBuckets: Self = this.set("linearBuckets", js.undefined)
+    @scala.inline
+    def setMaximum(value: Double): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    @scala.inline
+    def setMean(value: Double): Self = this.set("mean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMean: Self = this.set("mean", js.undefined)
+    @scala.inline
+    def setMinimum(value: Double): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    @scala.inline
+    def setSumOfSquaredDeviation(value: Double): Self = this.set("sumOfSquaredDeviation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSumOfSquaredDeviation: Self = this.set("sumOfSquaredDeviation", js.undefined)
+  }
+  
 }
 

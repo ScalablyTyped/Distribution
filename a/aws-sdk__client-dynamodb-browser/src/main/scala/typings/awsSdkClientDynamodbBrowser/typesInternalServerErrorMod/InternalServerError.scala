@@ -35,6 +35,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InternalServerError
   extends ServiceException[InternalServerErrorDetails]
      with BatchGetItemExceptionsUnion
@@ -67,7 +68,7 @@ trait InternalServerError
      with UpdateTableExceptionsUnion
      with UpdateTimeToLiveExceptionsUnion {
   @JSName("name")
-  var name_InternalServerError: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.InternalServerError
+  var name_InternalServerError: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.InternalServerError = js.native
 }
 
 object InternalServerError {
@@ -76,12 +77,25 @@ object InternalServerError {
     $metadata: ResponseMetadata,
     details: InternalServerErrorDetails,
     message: String,
-    name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.InternalServerError,
-    stack: String = null
+    name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.InternalServerError
   ): InternalServerError = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalServerError]
   }
+  @scala.inline
+  implicit class InternalServerErrorOps[Self <: InternalServerError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.InternalServerError): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

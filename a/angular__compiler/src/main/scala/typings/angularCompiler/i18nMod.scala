@@ -30,12 +30,80 @@ object i18nMod extends js.Object {
     extends typings.angularCompiler.i18nHtmlParserMod.I18NHtmlParser {
     def this(_htmlParser: HtmlParser) = this()
     def this(_htmlParser: HtmlParser, translations: String) = this()
+    def this(_htmlParser: HtmlParser, translations: js.UndefOr[scala.Nothing], translationsFormat: String) = this()
     def this(_htmlParser: HtmlParser, translations: String, translationsFormat: String) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: js.UndefOr[scala.Nothing],
+      translationsFormat: js.UndefOr[scala.Nothing],
+      missingTranslation: MissingTranslationStrategy
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: js.UndefOr[scala.Nothing],
+      translationsFormat: String,
+      missingTranslation: MissingTranslationStrategy
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: String,
+      translationsFormat: js.UndefOr[scala.Nothing],
+      missingTranslation: MissingTranslationStrategy
+    ) = this()
     def this(
       _htmlParser: HtmlParser,
       translations: String,
       translationsFormat: String,
       missingTranslation: MissingTranslationStrategy
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: js.UndefOr[scala.Nothing],
+      translationsFormat: js.UndefOr[scala.Nothing],
+      missingTranslation: js.UndefOr[scala.Nothing],
+      console: Console
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: js.UndefOr[scala.Nothing],
+      translationsFormat: js.UndefOr[scala.Nothing],
+      missingTranslation: MissingTranslationStrategy,
+      console: Console
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: js.UndefOr[scala.Nothing],
+      translationsFormat: String,
+      missingTranslation: js.UndefOr[scala.Nothing],
+      console: Console
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: js.UndefOr[scala.Nothing],
+      translationsFormat: String,
+      missingTranslation: MissingTranslationStrategy,
+      console: Console
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: String,
+      translationsFormat: js.UndefOr[scala.Nothing],
+      missingTranslation: js.UndefOr[scala.Nothing],
+      console: Console
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: String,
+      translationsFormat: js.UndefOr[scala.Nothing],
+      missingTranslation: MissingTranslationStrategy,
+      console: Console
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: String,
+      translationsFormat: String,
+      missingTranslation: js.UndefOr[scala.Nothing],
+      console: Console
     ) = this()
     def this(
       _htmlParser: HtmlParser,

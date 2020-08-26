@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Body () extends js.Object {
   def this(body: js.Any) = this()
+  def this(body: js.UndefOr[scala.Nothing], opts: Size) = this()
   def this(body: js.Any, opts: Size) = this()
   var body: ReadableStream = js.native
   var bodyUsed: Boolean = js.native

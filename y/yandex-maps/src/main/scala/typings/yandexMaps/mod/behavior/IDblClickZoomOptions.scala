@@ -5,23 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IDblClickZoomOptions extends IMapMarginOptions {
-  var centering: js.UndefOr[Boolean] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
+  var centering: js.UndefOr[Boolean] = js.native
+  var duration: js.UndefOr[Double] = js.native
 }
 
 object IDblClickZoomOptions {
   @scala.inline
-  def apply(
-    centering: js.UndefOr[Boolean] = js.undefined,
-    duration: js.UndefOr[Double] = js.undefined,
-    useMapMargin: js.UndefOr[Boolean] = js.undefined
-  ): IDblClickZoomOptions = {
+  def apply(): IDblClickZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(centering)) __obj.updateDynamic("centering")(centering.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDblClickZoomOptions]
   }
+  @scala.inline
+  implicit class IDblClickZoomOptionsOps[Self <: IDblClickZoomOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCentering(value: Boolean): Self = this.set("centering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCentering: Self = this.set("centering", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+  }
+  
 }
 

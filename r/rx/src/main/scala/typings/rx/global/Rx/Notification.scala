@@ -1,0 +1,12 @@
+package typings.rx.global.Rx
+
+import org.scalablytyped.runtime.TopLevel
+import typings.rx.Rx.NotificationStatic
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("Rx.Notification")
+@js.native
+object Notification extends TopLevel[NotificationStatic]
+

@@ -29,6 +29,8 @@ object ^ extends js.Object {
   /** The ghost element.*/
   var ghost: HTMLElement | Null = js.native
   var utils: Utils = js.native
+  /** Get the Sortable version */
+  val version: String = js.native
   /**
     * Creation of new instances.
     * @param element Any variety of HTMLElement.

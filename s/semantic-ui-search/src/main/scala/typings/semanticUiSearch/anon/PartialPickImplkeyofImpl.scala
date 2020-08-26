@@ -15,119 +15,204 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<std.Pick<semantic-ui-search.SemanticUI.SearchSettings._Impl, keyof semantic-ui-search.SemanticUI.SearchSettings._Impl>> */
+@js.native
 trait PartialPickImplkeyofImpl extends js.Object {
-  var apiSettings: js.UndefOr[ApiSettings] = js.undefined
-  var cache: js.UndefOr[Boolean] = js.undefined
-  var className: js.UndefOr[ClassNameSettings] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var easing: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[ErrorSettings] = js.undefined
-  var fields: js.UndefOr[FieldsSettings] = js.undefined
-  var hideDelay: js.UndefOr[Double] = js.undefined
-  var maxResults: js.UndefOr[Double] = js.undefined
-  var metadata: js.UndefOr[MetadataSettings] = js.undefined
-  var minCharacters: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var namespace: js.UndefOr[String] = js.undefined
-  var onResults: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit]] = js.undefined
-  var onResultsAdd: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]] = js.undefined
-  var onResultsClose: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
-  var onResultsOpen: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
-  var onSearchQuery: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]] = js.undefined
+  var apiSettings: js.UndefOr[ApiSettings] = js.native
+  var cache: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var easing: js.UndefOr[String] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.native
+  var fields: js.UndefOr[FieldsSettings] = js.native
+  var hideDelay: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.native
+  var metadata: js.UndefOr[MetadataSettings] = js.native
+  var minCharacters: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.native
+  var onResults: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit]] = js.native
+  var onResultsAdd: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]] = js.native
+  var onResultsClose: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onResultsOpen: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onSearchQuery: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]] = js.native
   var onSelect: js.UndefOr[
     js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit]
-  ] = js.undefined
-  var performance: js.UndefOr[Boolean] = js.undefined
-  var regExp: js.UndefOr[RegExpSettings] = js.undefined
-  var searchDelay: js.UndefOr[Double] = js.undefined
-  var searchFields: js.UndefOr[js.Array[String]] = js.undefined
-  var searchFullText: js.UndefOr[Boolean] = js.undefined
-  var selectFirstResult: js.UndefOr[Boolean] = js.undefined
-  var selector: js.UndefOr[SelectorSettings] = js.undefined
-  var showNoResults: js.UndefOr[Boolean] = js.undefined
-  var silent: js.UndefOr[Boolean] = js.undefined
-  var source: js.UndefOr[`false` | js.Any] = js.undefined
-  var templates: js.UndefOr[TemplatesSettings] = js.undefined
-  var transition: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var verbose: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var performance: js.UndefOr[Boolean] = js.native
+  var regExp: js.UndefOr[RegExpSettings] = js.native
+  var searchDelay: js.UndefOr[Double] = js.native
+  var searchFields: js.UndefOr[js.Array[String]] = js.native
+  var searchFullText: js.UndefOr[Boolean] = js.native
+  var selectFirstResult: js.UndefOr[Boolean] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.native
+  var showNoResults: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.native
+  var source: js.UndefOr[`false` | js.Any] = js.native
+  var templates: js.UndefOr[TemplatesSettings] = js.native
+  var transition: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var verbose: js.UndefOr[Boolean] = js.native
 }
 
 object PartialPickImplkeyofImpl {
   @scala.inline
-  def apply(
-    apiSettings: ApiSettings = null,
-    cache: js.UndefOr[Boolean] = js.undefined,
-    className: ClassNameSettings = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    duration: js.UndefOr[Double] = js.undefined,
-    easing: String = null,
-    error: ErrorSettings = null,
-    fields: FieldsSettings = null,
-    hideDelay: js.UndefOr[Double] = js.undefined,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    metadata: MetadataSettings = null,
-    minCharacters: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    namespace: String = null,
-    onResults: js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit] = null,
-    onResultsAdd: js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit] = null,
-    onResultsClose: js.ThisFunction0[/* this */ JQuery, Unit] = null,
-    onResultsOpen: js.ThisFunction0[/* this */ JQuery, Unit] = null,
-    onSearchQuery: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit] = null,
-    onSelect: js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit] = null,
-    performance: js.UndefOr[Boolean] = js.undefined,
-    regExp: RegExpSettings = null,
-    searchDelay: js.UndefOr[Double] = js.undefined,
-    searchFields: js.Array[String] = null,
-    searchFullText: js.UndefOr[Boolean] = js.undefined,
-    selectFirstResult: js.UndefOr[Boolean] = js.undefined,
-    selector: SelectorSettings = null,
-    showNoResults: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    source: `false` | js.Any = null,
-    templates: TemplatesSettings = null,
-    transition: String = null,
-    `type`: String = null,
-    verbose: js.UndefOr[Boolean] = js.undefined
-  ): PartialPickImplkeyofImpl = {
+  def apply(): PartialPickImplkeyofImpl = {
     val __obj = js.Dynamic.literal()
-    if (apiSettings != null) __obj.updateDynamic("apiSettings")(apiSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDelay)) __obj.updateDynamic("hideDelay")(hideDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(minCharacters)) __obj.updateDynamic("minCharacters")(minCharacters.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (onResults != null) __obj.updateDynamic("onResults")(onResults.asInstanceOf[js.Any])
-    if (onResultsAdd != null) __obj.updateDynamic("onResultsAdd")(onResultsAdd.asInstanceOf[js.Any])
-    if (onResultsClose != null) __obj.updateDynamic("onResultsClose")(onResultsClose.asInstanceOf[js.Any])
-    if (onResultsOpen != null) __obj.updateDynamic("onResultsOpen")(onResultsOpen.asInstanceOf[js.Any])
-    if (onSearchQuery != null) __obj.updateDynamic("onSearchQuery")(onSearchQuery.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(performance)) __obj.updateDynamic("performance")(performance.get.asInstanceOf[js.Any])
-    if (regExp != null) __obj.updateDynamic("regExp")(regExp.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchDelay)) __obj.updateDynamic("searchDelay")(searchDelay.get.asInstanceOf[js.Any])
-    if (searchFields != null) __obj.updateDynamic("searchFields")(searchFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchFullText)) __obj.updateDynamic("searchFullText")(searchFullText.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectFirstResult)) __obj.updateDynamic("selectFirstResult")(selectFirstResult.get.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNoResults)) __obj.updateDynamic("showNoResults")(showNoResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialPickImplkeyofImpl]
   }
+  @scala.inline
+  implicit class PartialPickImplkeyofImplOps[Self <: PartialPickImplkeyofImpl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiSettings(value: ApiSettings): Self = this.set("apiSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiSettings: Self = this.set("apiSettings", js.undefined)
+    @scala.inline
+    def setCache(value: Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setClassName(value: ClassNameSettings): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setError(value: ErrorSettings): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFields(value: FieldsSettings): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setHideDelay(value: Double): Self = this.set("hideDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideDelay: Self = this.set("hideDelay", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setMetadata(value: MetadataSettings): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setMinCharacters(value: Double): Self = this.set("minCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCharacters: Self = this.set("minCharacters", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setOnResults(value: js.ThisFunction1[/* this */ JQuery, /* response */ js.Any, Unit]): Self = this.set("onResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnResults: Self = this.set("onResults", js.undefined)
+    @scala.inline
+    def setOnResultsAdd(value: js.ThisFunction1[/* this */ JQuery, /* html */ String, `false` | Unit]): Self = this.set("onResultsAdd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnResultsAdd: Self = this.set("onResultsAdd", js.undefined)
+    @scala.inline
+    def setOnResultsClose(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onResultsClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnResultsClose: Self = this.set("onResultsClose", js.undefined)
+    @scala.inline
+    def setOnResultsOpen(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = this.set("onResultsOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnResultsOpen: Self = this.set("onResultsOpen", js.undefined)
+    @scala.inline
+    def setOnSearchQuery(value: js.ThisFunction1[/* this */ JQuery, /* query */ String, Unit]): Self = this.set("onSearchQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSearchQuery: Self = this.set("onSearchQuery", js.undefined)
+    @scala.inline
+    def setOnSelect(
+      value: js.ThisFunction2[/* this */ JQuery, /* result */ js.Any, /* response */ js.Any, `false` | Unit]
+    ): Self = this.set("onSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setPerformance(value: Boolean): Self = this.set("performance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformance: Self = this.set("performance", js.undefined)
+    @scala.inline
+    def setRegExp(value: RegExpSettings): Self = this.set("regExp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegExp: Self = this.set("regExp", js.undefined)
+    @scala.inline
+    def setSearchDelay(value: Double): Self = this.set("searchDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchDelay: Self = this.set("searchDelay", js.undefined)
+    @scala.inline
+    def setSearchFieldsVarargs(value: String*): Self = this.set("searchFields", js.Array(value :_*))
+    @scala.inline
+    def setSearchFields(value: js.Array[String]): Self = this.set("searchFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchFields: Self = this.set("searchFields", js.undefined)
+    @scala.inline
+    def setSearchFullText(value: Boolean): Self = this.set("searchFullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchFullText: Self = this.set("searchFullText", js.undefined)
+    @scala.inline
+    def setSelectFirstResult(value: Boolean): Self = this.set("selectFirstResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectFirstResult: Self = this.set("selectFirstResult", js.undefined)
+    @scala.inline
+    def setSelector(value: SelectorSettings): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+    @scala.inline
+    def setShowNoResults(value: Boolean): Self = this.set("showNoResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowNoResults: Self = this.set("showNoResults", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setSource(value: `false` | js.Any): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setTemplates(value: TemplatesSettings): Self = this.set("templates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplates: Self = this.set("templates", js.undefined)
+    @scala.inline
+    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransition: Self = this.set("transition", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+  }
+  
 }
 

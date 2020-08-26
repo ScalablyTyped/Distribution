@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * This action node returns `SUCCESS` always.
   *
   */
+@js.native
 trait Succeeder extends BaseNode
 
 object Succeeder {

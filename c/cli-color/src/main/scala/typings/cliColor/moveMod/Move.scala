@@ -29,6 +29,7 @@ trait Move extends js.Object {
     * Move cursor x columns and y rows away. Values can be positive or negative
     */
   def apply(): String = js.native
+  def apply(x: js.UndefOr[scala.Nothing], y: Double): String = js.native
   def apply(x: Double): String = js.native
   def apply(x: Double, y: Double): String = js.native
   /**
@@ -55,6 +56,7 @@ trait Move extends js.Object {
     * Absolute move. Sets cursor position at x column and y row
     */
   def to(): String = js.native
+  def to(x: js.UndefOr[scala.Nothing], y: Double): String = js.native
   def to(x: Double): String = js.native
   def to(x: Double, y: Double): String = js.native
   /**

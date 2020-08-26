@@ -37,16 +37,34 @@ trait SchemaLayoutPlaceholderIdMapping extends js.Object {
 
 object SchemaLayoutPlaceholderIdMapping {
   @scala.inline
-  def apply(
-    layoutPlaceholder: SchemaPlaceholder = null,
-    layoutPlaceholderObjectId: String = null,
-    objectId: String = null
-  ): SchemaLayoutPlaceholderIdMapping = {
+  def apply(): SchemaLayoutPlaceholderIdMapping = {
     val __obj = js.Dynamic.literal()
-    if (layoutPlaceholder != null) __obj.updateDynamic("layoutPlaceholder")(layoutPlaceholder.asInstanceOf[js.Any])
-    if (layoutPlaceholderObjectId != null) __obj.updateDynamic("layoutPlaceholderObjectId")(layoutPlaceholderObjectId.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLayoutPlaceholderIdMapping]
   }
+  @scala.inline
+  implicit class SchemaLayoutPlaceholderIdMappingOps[Self <: SchemaLayoutPlaceholderIdMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayoutPlaceholder(value: SchemaPlaceholder): Self = this.set("layoutPlaceholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayoutPlaceholder: Self = this.set("layoutPlaceholder", js.undefined)
+    @scala.inline
+    def setLayoutPlaceholderObjectId(value: String): Self = this.set("layoutPlaceholderObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayoutPlaceholderObjectId: Self = this.set("layoutPlaceholderObjectId", js.undefined)
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+  }
+  
 }
 

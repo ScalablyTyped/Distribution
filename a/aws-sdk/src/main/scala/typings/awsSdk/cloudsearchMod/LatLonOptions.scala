@@ -31,22 +31,46 @@ trait LatLonOptions extends js.Object {
 
 object LatLonOptions {
   @scala.inline
-  def apply(
-    DefaultValue: FieldValue = null,
-    FacetEnabled: js.UndefOr[Boolean] = js.undefined,
-    ReturnEnabled: js.UndefOr[Boolean] = js.undefined,
-    SearchEnabled: js.UndefOr[Boolean] = js.undefined,
-    SortEnabled: js.UndefOr[Boolean] = js.undefined,
-    SourceField: FieldName = null
-  ): LatLonOptions = {
+  def apply(): LatLonOptions = {
     val __obj = js.Dynamic.literal()
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(FacetEnabled)) __obj.updateDynamic("FacetEnabled")(FacetEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReturnEnabled)) __obj.updateDynamic("ReturnEnabled")(ReturnEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SearchEnabled)) __obj.updateDynamic("SearchEnabled")(SearchEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SortEnabled)) __obj.updateDynamic("SortEnabled")(SortEnabled.get.asInstanceOf[js.Any])
-    if (SourceField != null) __obj.updateDynamic("SourceField")(SourceField.asInstanceOf[js.Any])
     __obj.asInstanceOf[LatLonOptions]
   }
+  @scala.inline
+  implicit class LatLonOptionsOps[Self <: LatLonOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultValue(value: FieldValue): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    @scala.inline
+    def setFacetEnabled(value: Boolean): Self = this.set("FacetEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFacetEnabled: Self = this.set("FacetEnabled", js.undefined)
+    @scala.inline
+    def setReturnEnabled(value: Boolean): Self = this.set("ReturnEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnEnabled: Self = this.set("ReturnEnabled", js.undefined)
+    @scala.inline
+    def setSearchEnabled(value: Boolean): Self = this.set("SearchEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchEnabled: Self = this.set("SearchEnabled", js.undefined)
+    @scala.inline
+    def setSortEnabled(value: Boolean): Self = this.set("SortEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortEnabled: Self = this.set("SortEnabled", js.undefined)
+    @scala.inline
+    def setSourceField(value: FieldName): Self = this.set("SourceField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceField: Self = this.set("SourceField", js.undefined)
+  }
+  
 }
 

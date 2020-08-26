@@ -15,6 +15,7 @@ trait InverseAsymmetricMatchers extends js.Object {
     *
     * Optionally, you can provide a type for the elements via a generic.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def arrayContaining[E](arr: js.Array[E]): js.Any = js.native
   /**
     * `expect.not.objectContaining(object)` matches any received object
@@ -26,6 +27,7 @@ trait InverseAsymmetricMatchers extends js.Object {
     * Optionally, you can provide a type for the object via a generic.
     * This ensures that the object contains the desired structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def objectContaining[E](obj: E): js.Any = js.native
   /**
     * `expect.not.stringContaining(string)` matches the received string

@@ -70,40 +70,86 @@ trait FaceDetail extends js.Object {
 
 object FaceDetail {
   @scala.inline
-  def apply(
-    AgeRange: AgeRange = null,
-    Beard: Beard = null,
-    BoundingBox: BoundingBox = null,
-    Confidence: js.UndefOr[Percent] = js.undefined,
-    Emotions: Emotions = null,
-    Eyeglasses: Eyeglasses = null,
-    EyesOpen: EyeOpen = null,
-    Gender: Gender = null,
-    Landmarks: Landmarks = null,
-    MouthOpen: MouthOpen = null,
-    Mustache: Mustache = null,
-    Pose: Pose = null,
-    Quality: ImageQuality = null,
-    Smile: Smile = null,
-    Sunglasses: Sunglasses = null
-  ): FaceDetail = {
+  def apply(): FaceDetail = {
     val __obj = js.Dynamic.literal()
-    if (AgeRange != null) __obj.updateDynamic("AgeRange")(AgeRange.asInstanceOf[js.Any])
-    if (Beard != null) __obj.updateDynamic("Beard")(Beard.asInstanceOf[js.Any])
-    if (BoundingBox != null) __obj.updateDynamic("BoundingBox")(BoundingBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
-    if (Emotions != null) __obj.updateDynamic("Emotions")(Emotions.asInstanceOf[js.Any])
-    if (Eyeglasses != null) __obj.updateDynamic("Eyeglasses")(Eyeglasses.asInstanceOf[js.Any])
-    if (EyesOpen != null) __obj.updateDynamic("EyesOpen")(EyesOpen.asInstanceOf[js.Any])
-    if (Gender != null) __obj.updateDynamic("Gender")(Gender.asInstanceOf[js.Any])
-    if (Landmarks != null) __obj.updateDynamic("Landmarks")(Landmarks.asInstanceOf[js.Any])
-    if (MouthOpen != null) __obj.updateDynamic("MouthOpen")(MouthOpen.asInstanceOf[js.Any])
-    if (Mustache != null) __obj.updateDynamic("Mustache")(Mustache.asInstanceOf[js.Any])
-    if (Pose != null) __obj.updateDynamic("Pose")(Pose.asInstanceOf[js.Any])
-    if (Quality != null) __obj.updateDynamic("Quality")(Quality.asInstanceOf[js.Any])
-    if (Smile != null) __obj.updateDynamic("Smile")(Smile.asInstanceOf[js.Any])
-    if (Sunglasses != null) __obj.updateDynamic("Sunglasses")(Sunglasses.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaceDetail]
   }
+  @scala.inline
+  implicit class FaceDetailOps[Self <: FaceDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgeRange(value: AgeRange): Self = this.set("AgeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgeRange: Self = this.set("AgeRange", js.undefined)
+    @scala.inline
+    def setBeard(value: Beard): Self = this.set("Beard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeard: Self = this.set("Beard", js.undefined)
+    @scala.inline
+    def setBoundingBox(value: BoundingBox): Self = this.set("BoundingBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingBox: Self = this.set("BoundingBox", js.undefined)
+    @scala.inline
+    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    @scala.inline
+    def setEmotionsVarargs(value: Emotion*): Self = this.set("Emotions", js.Array(value :_*))
+    @scala.inline
+    def setEmotions(value: Emotions): Self = this.set("Emotions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmotions: Self = this.set("Emotions", js.undefined)
+    @scala.inline
+    def setEyeglasses(value: Eyeglasses): Self = this.set("Eyeglasses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEyeglasses: Self = this.set("Eyeglasses", js.undefined)
+    @scala.inline
+    def setEyesOpen(value: EyeOpen): Self = this.set("EyesOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEyesOpen: Self = this.set("EyesOpen", js.undefined)
+    @scala.inline
+    def setGender(value: Gender): Self = this.set("Gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGender: Self = this.set("Gender", js.undefined)
+    @scala.inline
+    def setLandmarksVarargs(value: Landmark*): Self = this.set("Landmarks", js.Array(value :_*))
+    @scala.inline
+    def setLandmarks(value: Landmarks): Self = this.set("Landmarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLandmarks: Self = this.set("Landmarks", js.undefined)
+    @scala.inline
+    def setMouthOpen(value: MouthOpen): Self = this.set("MouthOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouthOpen: Self = this.set("MouthOpen", js.undefined)
+    @scala.inline
+    def setMustache(value: Mustache): Self = this.set("Mustache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMustache: Self = this.set("Mustache", js.undefined)
+    @scala.inline
+    def setPose(value: Pose): Self = this.set("Pose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePose: Self = this.set("Pose", js.undefined)
+    @scala.inline
+    def setQuality(value: ImageQuality): Self = this.set("Quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuality: Self = this.set("Quality", js.undefined)
+    @scala.inline
+    def setSmile(value: Smile): Self = this.set("Smile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmile: Self = this.set("Smile", js.undefined)
+    @scala.inline
+    def setSunglasses(value: Sunglasses): Self = this.set("Sunglasses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSunglasses: Self = this.set("Sunglasses", js.undefined)
+  }
+  
 }
 

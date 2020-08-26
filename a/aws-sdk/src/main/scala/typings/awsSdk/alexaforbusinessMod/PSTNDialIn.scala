@@ -35,5 +35,26 @@ object PSTNDialIn {
     val __obj = js.Dynamic.literal(CountryCode = CountryCode.asInstanceOf[js.Any], OneClickIdDelay = OneClickIdDelay.asInstanceOf[js.Any], OneClickPinDelay = OneClickPinDelay.asInstanceOf[js.Any], PhoneNumber = PhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[PSTNDialIn]
   }
+  @scala.inline
+  implicit class PSTNDialInOps[Self <: PSTNDialIn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountryCode(value: CountryCode): Self = this.set("CountryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOneClickIdDelay(value: OneClickIdDelay): Self = this.set("OneClickIdDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOneClickPinDelay(value: OneClickPinDelay): Self = this.set("OneClickPinDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPhoneNumber(value: OutboundPhoneNumber): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
+  }
+  
 }
 

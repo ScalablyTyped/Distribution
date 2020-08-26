@@ -5,49 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnimeTimelineAnimParams extends AnimeAnimParams {
-  var timelineOffset: Double | String | FunctionBasedParameter
+  var timelineOffset: Double | String | FunctionBasedParameter = js.native
 }
 
 object AnimeTimelineAnimParams {
   @scala.inline
-  def apply(
-    timelineOffset: Double | String | FunctionBasedParameter,
-    begin: /* anim */ AnimeInstance => Unit = null,
-    change: /* anim */ AnimeInstance => Unit = null,
-    changeBegin: /* anim */ AnimeInstance => Unit = null,
-    changeComplete: /* anim */ AnimeInstance => Unit = null,
-    complete: /* anim */ AnimeInstance => Unit = null,
-    delay: Double | FunctionBasedParameter = null,
-    duration: Double | FunctionBasedParameter = null,
-    easing: EasingOptions | String | CustomEasingFunction | (js.Function1[/* el */ HTMLElement, String]) = null,
-    elasticity: Double | FunctionBasedParameter = null,
-    endDelay: Double | FunctionBasedParameter = null,
-    keyframes: js.Array[AnimeAnimParams] = null,
-    loopBegin: /* anim */ AnimeInstance => Unit = null,
-    loopComplete: /* anim */ AnimeInstance => Unit = null,
-    round: Double | Boolean | FunctionBasedParameter = null,
-    targets: js.UndefOr[Null | AnimeTarget | js.Array[AnimeTarget]] = js.undefined,
-    update: /* anim */ AnimeInstance => Unit = null
-  ): AnimeTimelineAnimParams = {
+  def apply(timelineOffset: Double | String | FunctionBasedParameter): AnimeTimelineAnimParams = {
     val __obj = js.Dynamic.literal(timelineOffset = timelineOffset.asInstanceOf[js.Any])
-    if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (changeBegin != null) __obj.updateDynamic("changeBegin")(js.Any.fromFunction1(changeBegin))
-    if (changeComplete != null) __obj.updateDynamic("changeComplete")(js.Any.fromFunction1(changeComplete))
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (elasticity != null) __obj.updateDynamic("elasticity")(elasticity.asInstanceOf[js.Any])
-    if (endDelay != null) __obj.updateDynamic("endDelay")(endDelay.asInstanceOf[js.Any])
-    if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes.asInstanceOf[js.Any])
-    if (loopBegin != null) __obj.updateDynamic("loopBegin")(js.Any.fromFunction1(loopBegin))
-    if (loopComplete != null) __obj.updateDynamic("loopComplete")(js.Any.fromFunction1(loopComplete))
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (!js.isUndefined(targets)) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
     __obj.asInstanceOf[AnimeTimelineAnimParams]
   }
+  @scala.inline
+  implicit class AnimeTimelineAnimParamsOps[Self <: AnimeTimelineAnimParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimelineOffsetFunction3(value: (/* element */ HTMLElement, /* index */ Double, /* length */ Double) => Double): Self = this.set("timelineOffset", js.Any.fromFunction3(value))
+    @scala.inline
+    def setTimelineOffset(value: Double | String | FunctionBasedParameter): Self = this.set("timelineOffset", value.asInstanceOf[js.Any])
+  }
+  
 }
 

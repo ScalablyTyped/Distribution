@@ -18,14 +18,7 @@ object Profile extends js.Object {
   /** Provides version information about the device family. */
   @js.native
   abstract class AnalyticsVersionInfo ()
-    extends typings.winrtUwp.Windows.System.Profile.AnalyticsVersionInfo {
-    /** Gets the device family. */
-    /* CompleteClass */
-    override var deviceFamily: String = js.native
-    /** Gets the version within the device family. */
-    /* CompleteClass */
-    override var deviceFamilyVersion: String = js.native
-  }
+    extends typings.winrtUwp.Windows.System.Profile.AnalyticsVersionInfo
   
   /** Provides the ability to obtain a hardware identifier that represents the current hardware. */
   @js.native
@@ -35,17 +28,7 @@ object Profile extends js.Object {
   /** Represents a token that contains a hardware based identification that is sufficiently unique. */
   @js.native
   abstract class HardwareToken ()
-    extends typings.winrtUwp.Windows.System.Profile.HardwareToken {
-    /** Gets the certificate that is used to sign the Id and is used to help verify the authenticity of the Id. */
-    /* CompleteClass */
-    override var certificate: IBuffer = js.native
-    /** Gets the hardware identifier that identifies the device. */
-    /* CompleteClass */
-    override var id: IBuffer = js.native
-    /** Gets the digital signature of hardware Id that helps verify the authenticity of returned Id. */
-    /* CompleteClass */
-    override var signature: IBuffer = js.native
-  }
+    extends typings.winrtUwp.Windows.System.Profile.HardwareToken
   
   /** Identifies the string keys that might exist within the RetailInfo.Properties map of retail-demo relevant property values. */
   @js.native

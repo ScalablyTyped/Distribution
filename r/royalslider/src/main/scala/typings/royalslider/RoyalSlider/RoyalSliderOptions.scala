@@ -5,274 +5,373 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RoyalSliderOptions extends js.Object {
   /**
     * Adds rsActiveSlide class to current slide before transition. (default: false)
     */
-  var addActiveClass: js.UndefOr[Boolean] = js.undefined
+  var addActiveClass: js.UndefOr[Boolean] = js.native
   /**
     * Allows usage of CSS3 transitions. Might be useful if you're experiencing font-rendering problems, or other CSS3-related bugs. (default: true)
     */
-  var allowCSS3: js.UndefOr[Boolean] = js.undefined
+  var allowCSS3: js.UndefOr[Boolean] = js.native
   /**
     * Direction arrows navigation. (default: true)
     */
-  var arrowsNav: js.UndefOr[Boolean] = js.undefined
+  var arrowsNav: js.UndefOr[Boolean] = js.native
   /**
     * Auto hide arrows. (default: true)
     */
-  var arrowsNavAutoHide: js.UndefOr[Boolean] = js.undefined
+  var arrowsNavAutoHide: js.UndefOr[Boolean] = js.native
   /**
     * Hides arrows completely on touch devices. (default: false)
     */
-  var arrowsNavHideOnTouch: js.UndefOr[Boolean] = js.undefined
+  var arrowsNavHideOnTouch: js.UndefOr[Boolean] = js.native
   /**
     * Scales and animates height based on current slide. Please note: if you have images in slide that don't have rsImg class) or don't have fixed size, use $(window).load() instead of $(document).ready() before initializing slider. Also, autoHeight doesn't work with properties like autoScaleSlider, imageScaleMode and imageAlignCenter.  (default: false)
     */
-  var autoHeight: js.UndefOr[Boolean] = js.undefined
+  var autoHeight: js.UndefOr[Boolean] = js.native
   /**
     * Automatically updates slider height based on base width. (default: false)
     */
-  var autoScaleSlider: js.UndefOr[Boolean] = js.undefined
+  var autoScaleSlider: js.UndefOr[Boolean] = js.native
   /**
     * 400 Base slider height
     */
-  var autoScaleSliderHeight: js.UndefOr[Double] = js.undefined
+  var autoScaleSliderHeight: js.UndefOr[Double] = js.native
   /**
     * Base slider width.Slider will autocalculate the ratio based on these values. (default: 800)
     */
-  var autoScaleSliderWidth: js.UndefOr[Double] = js.undefined
+  var autoScaleSliderWidth: js.UndefOr[Double] = js.native
   /**
     * Autoplay slideshow can be enabled via slider options. Delay between items can be set globally via delay option, or specifically for each item by adding data-rsDelay="1000" to root element of the slide (1000 = 1sec).
     */
-  var autoplay: js.UndefOr[RoyalSliderAutoplayOptions] = js.undefined
+  var autoplay: js.UndefOr[RoyalSliderAutoplayOptions] = js.native
   /**
     * All elements inside slide that have class rsABlock will be treated by slider as animated blocks (tag name doesn't matter). Blocks can not be nested, but you can put multiple instances of them into one slide, or make slide itself animated block.
     */
-  var block: js.UndefOr[RoyalSliderBlockOptions] = js.undefined
+  var block: js.UndefOr[RoyalSliderBlockOptions] = js.native
   /**
     * Navigation type, can be 'bullets', 'thumbnails', 'tabs' or 'none' (default: 'bullets')
     */
-  var controlNavigation: js.UndefOr[String] = js.undefined
+  var controlNavigation: js.UndefOr[String] = js.native
   /**
     *  If set to true adds arrows and fullscreen button inside rsOverflow container, otherwise inside root slider container. (default: true)
     */
-  var controlsInside: js.UndefOr[Boolean] = js.undefined
+  var controlsInside: js.UndefOr[Boolean] = js.native
   /**
     * Deep linking module makes URL automatically change when you switch slides and you can easily link to specific slide (aka permalink).
     */
-  var deeplinking: js.UndefOr[RoyalSliderDeeplinkingOptions] = js.undefined
+  var deeplinking: js.UndefOr[RoyalSliderDeeplinkingOptions] = js.native
   /**
     * Easing function for simple transition.Read more in the easing section of the documentation. (default: 'easeInOutSine')
     */
-  var easeInOut: js.UndefOr[String] = js.undefined
+  var easeInOut: js.UndefOr[String] = js.native
   /**
     * Easing function of animation after ending of the swipe gesture. Read more in the easing section of the documentation. (default: 'easeOutSine')
     */
-  var easeOut: js.UndefOr[String] = js.undefined
+  var easeOut: js.UndefOr[String] = js.native
   /**
     * Fades in slide after it's loaded. (default: true)
     */
-  var fadeinLoadedSlide: js.UndefOr[Boolean] = js.undefined
+  var fadeinLoadedSlide: js.UndefOr[Boolean] = js.native
   /**
     * You may specify larger images when slider is in fullscreen mode by adding data-rsBigImg attribute to rsImg element. A few examples:
     */
-  var fullscreen: js.UndefOr[RoyalSliderFullscreenOptions] = js.undefined
+  var fullscreen: js.UndefOr[RoyalSliderFullscreenOptions] = js.native
   /**
     * Adds global caption element to slider, read more in the global caption section of documentation. (default: false)
     */
-  var globalCaption: js.UndefOr[Boolean] = js.undefined
+  var globalCaption: js.UndefOr[Boolean] = js.native
   /**
     * Aligns image to center of slide. (default: true)
     */
-  var imageAlignCenter: js.UndefOr[Boolean] = js.undefined
+  var imageAlignCenter: js.UndefOr[Boolean] = js.native
   /**
     * Scale mode for images."fill", "fit", "fit-if-smaller" or "none". (default: 'fit-if-smaller')
     */
-  var imageScaleMode: js.UndefOr[String] = js.undefined
+  var imageScaleMode: js.UndefOr[String] = js.native
   /**
     * Distance between image and edge of slide (doesn't work with 'fill' scale mode). (default: 4)
     */
-  var imageScalePadding: js.UndefOr[Double] = js.undefined
+  var imageScalePadding: js.UndefOr[Double] = js.native
   /**
     * Adds base height to all images for better-looking loading. Can be specified separately for each image. (default: null)
     */
-  var imgHeight: js.UndefOr[Double] = js.undefined
+  var imgHeight: js.UndefOr[Double] = js.native
   /**
     * Adds base width to all images for better-looking loading. Can be specified separately for each image. (default: null)
     */
-  var imgWidth: js.UndefOr[Double] = js.undefined
+  var imgWidth: js.UndefOr[Double] = js.native
   /**
     * Navigate slider with keyboard left and right arrows. (default: false)
     */
-  var keyboardNavEnabled: js.UndefOr[Boolean] = js.undefined
+  var keyboardNavEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Makes slider to go from last slide to first. (default: false)
     */
-  var loop: js.UndefOr[Boolean] = js.undefined
+  var loop: js.UndefOr[Boolean] = js.native
   /**
     * Makes slider to go from last slide to first with rewind. Overrides prev option. (default: false)
     */
-  var loopRewind: js.UndefOr[Boolean] = js.undefined
+  var loopRewind: js.UndefOr[Boolean] = js.native
   /**
     * Minimum distance in pixels to show next slide while dragging. (default: 10)
     */
-  var minSlideOffset: js.UndefOr[Double] = js.undefined
+  var minSlideOffset: js.UndefOr[Double] = js.native
   /**
     * Navigates forward by clicking on slide. (default: true)
     */
-  var navigateByClick: js.UndefOr[Boolean] = js.undefined
+  var navigateByClick: js.UndefOr[Boolean] = js.native
   /**
     * Number of slides to preload on sides.If you set it to 0, only one slide will be kept in the display list at once. (default: 4)
     */
-  var numImagesToPreload: js.UndefOr[Double] = js.undefined
+  var numImagesToPreload: js.UndefOr[Double] = js.native
   /**
     * Randomizes all slides at start. (default: false)
     */
-  var randomizeSlides: js.UndefOr[Boolean] = js.undefined
+  var randomizeSlides: js.UndefOr[Boolean] = js.native
   /**
     * Mouse drag navigation over slider. (default: true)
     */
-  var sliderDrag: js.UndefOr[Boolean] = js.undefined
+  var sliderDrag: js.UndefOr[Boolean] = js.native
   /**
     * Touch navigation of slider. (default: true)
     */
-  var sliderTouch: js.UndefOr[Boolean] = js.undefined
+  var sliderTouch: js.UndefOr[Boolean] = js.native
   // false
   /**
     * Overrides HTML of slides, used for creating of slides from HTML that is not attached to DOM. More info in knowledge base.  (default: null)
     */
-  var slides: js.UndefOr[Element] = js.undefined
+  var slides: js.UndefOr[Element] = js.native
   /**
     * Can be 'vertical' or 'horizontal'. (default: 'horizontal')
     */
-  var slidesOrientation: js.UndefOr[String] = js.undefined
+  var slidesOrientation: js.UndefOr[String] = js.native
   /**
     * Spacing between slides in pixels. (default: 8)
     */
-  var slidesSpacing: js.UndefOr[Double] = js.undefined
+  var slidesSpacing: js.UndefOr[Double] = js.native
   /**
     * Start slide index. (default: 0)
     */
-  var startSlideId: js.UndefOr[Double] = js.undefined
+  var startSlideId: js.UndefOr[Double] = js.native
   /**
     * Thumbnail options
     */
-  var thumbs: js.UndefOr[RoyalSliderThumbsOptions] = js.undefined
+  var thumbs: js.UndefOr[RoyalSliderThumbsOptions] = js.native
   /**
     * Slider transition speed, in ms. (default: 600)
     */
-  var transitionSpeed: js.UndefOr[Double] = js.undefined
+  var transitionSpeed: js.UndefOr[Double] = js.native
   /**
     * 'move' or 'fade'. Important note about fade transition, slides must have background as only one image is animating. (default: 'move')
     */
-  var transitionType: js.UndefOr[String] = js.undefined
+  var transitionType: js.UndefOr[String] = js.native
   /**
     * Enables spinning preloader, you may style it via CSS (class rsPreloader). (default: true)
     */
-  var usePreloader: js.UndefOr[Boolean] = js.undefined
+  var usePreloader: js.UndefOr[Boolean] = js.native
   /**
     * To add video to slide, you need to add data-rsVideo="" attribute to image. It can contain link to YouTube or Vimeo video.
     */
-  var video: js.UndefOr[RoyalSliderVideoOptions] = js.undefined
+  var video: js.UndefOr[RoyalSliderVideoOptions] = js.native
   /**
     * Module "reveals" next and previous slides, like in this template.
     */
-  var visibleNearby: js.UndefOr[RoyalSliderVisibleOptions] = js.undefined
+  var visibleNearby: js.UndefOr[RoyalSliderVisibleOptions] = js.native
 }
 
 object RoyalSliderOptions {
   @scala.inline
-  def apply(
-    addActiveClass: js.UndefOr[Boolean] = js.undefined,
-    allowCSS3: js.UndefOr[Boolean] = js.undefined,
-    arrowsNav: js.UndefOr[Boolean] = js.undefined,
-    arrowsNavAutoHide: js.UndefOr[Boolean] = js.undefined,
-    arrowsNavHideOnTouch: js.UndefOr[Boolean] = js.undefined,
-    autoHeight: js.UndefOr[Boolean] = js.undefined,
-    autoScaleSlider: js.UndefOr[Boolean] = js.undefined,
-    autoScaleSliderHeight: js.UndefOr[Double] = js.undefined,
-    autoScaleSliderWidth: js.UndefOr[Double] = js.undefined,
-    autoplay: RoyalSliderAutoplayOptions = null,
-    block: RoyalSliderBlockOptions = null,
-    controlNavigation: String = null,
-    controlsInside: js.UndefOr[Boolean] = js.undefined,
-    deeplinking: RoyalSliderDeeplinkingOptions = null,
-    easeInOut: String = null,
-    easeOut: String = null,
-    fadeinLoadedSlide: js.UndefOr[Boolean] = js.undefined,
-    fullscreen: RoyalSliderFullscreenOptions = null,
-    globalCaption: js.UndefOr[Boolean] = js.undefined,
-    imageAlignCenter: js.UndefOr[Boolean] = js.undefined,
-    imageScaleMode: String = null,
-    imageScalePadding: js.UndefOr[Double] = js.undefined,
-    imgHeight: js.UndefOr[Double] = js.undefined,
-    imgWidth: js.UndefOr[Double] = js.undefined,
-    keyboardNavEnabled: js.UndefOr[Boolean] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    loopRewind: js.UndefOr[Boolean] = js.undefined,
-    minSlideOffset: js.UndefOr[Double] = js.undefined,
-    navigateByClick: js.UndefOr[Boolean] = js.undefined,
-    numImagesToPreload: js.UndefOr[Double] = js.undefined,
-    randomizeSlides: js.UndefOr[Boolean] = js.undefined,
-    sliderDrag: js.UndefOr[Boolean] = js.undefined,
-    sliderTouch: js.UndefOr[Boolean] = js.undefined,
-    slides: Element = null,
-    slidesOrientation: String = null,
-    slidesSpacing: js.UndefOr[Double] = js.undefined,
-    startSlideId: js.UndefOr[Double] = js.undefined,
-    thumbs: RoyalSliderThumbsOptions = null,
-    transitionSpeed: js.UndefOr[Double] = js.undefined,
-    transitionType: String = null,
-    usePreloader: js.UndefOr[Boolean] = js.undefined,
-    video: RoyalSliderVideoOptions = null,
-    visibleNearby: RoyalSliderVisibleOptions = null
-  ): RoyalSliderOptions = {
+  def apply(): RoyalSliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addActiveClass)) __obj.updateDynamic("addActiveClass")(addActiveClass.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCSS3)) __obj.updateDynamic("allowCSS3")(allowCSS3.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowsNav)) __obj.updateDynamic("arrowsNav")(arrowsNav.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowsNavAutoHide)) __obj.updateDynamic("arrowsNavAutoHide")(arrowsNavAutoHide.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowsNavHideOnTouch)) __obj.updateDynamic("arrowsNavHideOnTouch")(arrowsNavHideOnTouch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScaleSlider)) __obj.updateDynamic("autoScaleSlider")(autoScaleSlider.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScaleSliderHeight)) __obj.updateDynamic("autoScaleSliderHeight")(autoScaleSliderHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScaleSliderWidth)) __obj.updateDynamic("autoScaleSliderWidth")(autoScaleSliderWidth.get.asInstanceOf[js.Any])
-    if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (controlNavigation != null) __obj.updateDynamic("controlNavigation")(controlNavigation.asInstanceOf[js.Any])
-    if (!js.isUndefined(controlsInside)) __obj.updateDynamic("controlsInside")(controlsInside.get.asInstanceOf[js.Any])
-    if (deeplinking != null) __obj.updateDynamic("deeplinking")(deeplinking.asInstanceOf[js.Any])
-    if (easeInOut != null) __obj.updateDynamic("easeInOut")(easeInOut.asInstanceOf[js.Any])
-    if (easeOut != null) __obj.updateDynamic("easeOut")(easeOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeinLoadedSlide)) __obj.updateDynamic("fadeinLoadedSlide")(fadeinLoadedSlide.get.asInstanceOf[js.Any])
-    if (fullscreen != null) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(globalCaption)) __obj.updateDynamic("globalCaption")(globalCaption.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageAlignCenter)) __obj.updateDynamic("imageAlignCenter")(imageAlignCenter.get.asInstanceOf[js.Any])
-    if (imageScaleMode != null) __obj.updateDynamic("imageScaleMode")(imageScaleMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageScalePadding)) __obj.updateDynamic("imageScalePadding")(imageScalePadding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(imgHeight)) __obj.updateDynamic("imgHeight")(imgHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(imgWidth)) __obj.updateDynamic("imgWidth")(imgWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardNavEnabled)) __obj.updateDynamic("keyboardNavEnabled")(keyboardNavEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loopRewind)) __obj.updateDynamic("loopRewind")(loopRewind.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSlideOffset)) __obj.updateDynamic("minSlideOffset")(minSlideOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigateByClick)) __obj.updateDynamic("navigateByClick")(navigateByClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numImagesToPreload)) __obj.updateDynamic("numImagesToPreload")(numImagesToPreload.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomizeSlides)) __obj.updateDynamic("randomizeSlides")(randomizeSlides.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sliderDrag)) __obj.updateDynamic("sliderDrag")(sliderDrag.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sliderTouch)) __obj.updateDynamic("sliderTouch")(sliderTouch.get.asInstanceOf[js.Any])
-    if (slides != null) __obj.updateDynamic("slides")(slides.asInstanceOf[js.Any])
-    if (slidesOrientation != null) __obj.updateDynamic("slidesOrientation")(slidesOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(slidesSpacing)) __obj.updateDynamic("slidesSpacing")(slidesSpacing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startSlideId)) __obj.updateDynamic("startSlideId")(startSlideId.get.asInstanceOf[js.Any])
-    if (thumbs != null) __obj.updateDynamic("thumbs")(thumbs.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionSpeed)) __obj.updateDynamic("transitionSpeed")(transitionSpeed.get.asInstanceOf[js.Any])
-    if (transitionType != null) __obj.updateDynamic("transitionType")(transitionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePreloader)) __obj.updateDynamic("usePreloader")(usePreloader.get.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
-    if (visibleNearby != null) __obj.updateDynamic("visibleNearby")(visibleNearby.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoyalSliderOptions]
   }
+  @scala.inline
+  implicit class RoyalSliderOptionsOps[Self <: RoyalSliderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddActiveClass(value: Boolean): Self = this.set("addActiveClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddActiveClass: Self = this.set("addActiveClass", js.undefined)
+    @scala.inline
+    def setAllowCSS3(value: Boolean): Self = this.set("allowCSS3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCSS3: Self = this.set("allowCSS3", js.undefined)
+    @scala.inline
+    def setArrowsNav(value: Boolean): Self = this.set("arrowsNav", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowsNav: Self = this.set("arrowsNav", js.undefined)
+    @scala.inline
+    def setArrowsNavAutoHide(value: Boolean): Self = this.set("arrowsNavAutoHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowsNavAutoHide: Self = this.set("arrowsNavAutoHide", js.undefined)
+    @scala.inline
+    def setArrowsNavHideOnTouch(value: Boolean): Self = this.set("arrowsNavHideOnTouch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowsNavHideOnTouch: Self = this.set("arrowsNavHideOnTouch", js.undefined)
+    @scala.inline
+    def setAutoHeight(value: Boolean): Self = this.set("autoHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHeight: Self = this.set("autoHeight", js.undefined)
+    @scala.inline
+    def setAutoScaleSlider(value: Boolean): Self = this.set("autoScaleSlider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScaleSlider: Self = this.set("autoScaleSlider", js.undefined)
+    @scala.inline
+    def setAutoScaleSliderHeight(value: Double): Self = this.set("autoScaleSliderHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScaleSliderHeight: Self = this.set("autoScaleSliderHeight", js.undefined)
+    @scala.inline
+    def setAutoScaleSliderWidth(value: Double): Self = this.set("autoScaleSliderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScaleSliderWidth: Self = this.set("autoScaleSliderWidth", js.undefined)
+    @scala.inline
+    def setAutoplay(value: RoyalSliderAutoplayOptions): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    @scala.inline
+    def setBlock(value: RoyalSliderBlockOptions): Self = this.set("block", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlock: Self = this.set("block", js.undefined)
+    @scala.inline
+    def setControlNavigation(value: String): Self = this.set("controlNavigation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControlNavigation: Self = this.set("controlNavigation", js.undefined)
+    @scala.inline
+    def setControlsInside(value: Boolean): Self = this.set("controlsInside", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControlsInside: Self = this.set("controlsInside", js.undefined)
+    @scala.inline
+    def setDeeplinking(value: RoyalSliderDeeplinkingOptions): Self = this.set("deeplinking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeeplinking: Self = this.set("deeplinking", js.undefined)
+    @scala.inline
+    def setEaseInOut(value: String): Self = this.set("easeInOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEaseInOut: Self = this.set("easeInOut", js.undefined)
+    @scala.inline
+    def setEaseOut(value: String): Self = this.set("easeOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEaseOut: Self = this.set("easeOut", js.undefined)
+    @scala.inline
+    def setFadeinLoadedSlide(value: Boolean): Self = this.set("fadeinLoadedSlide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFadeinLoadedSlide: Self = this.set("fadeinLoadedSlide", js.undefined)
+    @scala.inline
+    def setFullscreen(value: RoyalSliderFullscreenOptions): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    @scala.inline
+    def setGlobalCaption(value: Boolean): Self = this.set("globalCaption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalCaption: Self = this.set("globalCaption", js.undefined)
+    @scala.inline
+    def setImageAlignCenter(value: Boolean): Self = this.set("imageAlignCenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageAlignCenter: Self = this.set("imageAlignCenter", js.undefined)
+    @scala.inline
+    def setImageScaleMode(value: String): Self = this.set("imageScaleMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageScaleMode: Self = this.set("imageScaleMode", js.undefined)
+    @scala.inline
+    def setImageScalePadding(value: Double): Self = this.set("imageScalePadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageScalePadding: Self = this.set("imageScalePadding", js.undefined)
+    @scala.inline
+    def setImgHeight(value: Double): Self = this.set("imgHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImgHeight: Self = this.set("imgHeight", js.undefined)
+    @scala.inline
+    def setImgWidth(value: Double): Self = this.set("imgWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImgWidth: Self = this.set("imgWidth", js.undefined)
+    @scala.inline
+    def setKeyboardNavEnabled(value: Boolean): Self = this.set("keyboardNavEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardNavEnabled: Self = this.set("keyboardNavEnabled", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setLoopRewind(value: Boolean): Self = this.set("loopRewind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoopRewind: Self = this.set("loopRewind", js.undefined)
+    @scala.inline
+    def setMinSlideOffset(value: Double): Self = this.set("minSlideOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSlideOffset: Self = this.set("minSlideOffset", js.undefined)
+    @scala.inline
+    def setNavigateByClick(value: Boolean): Self = this.set("navigateByClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigateByClick: Self = this.set("navigateByClick", js.undefined)
+    @scala.inline
+    def setNumImagesToPreload(value: Double): Self = this.set("numImagesToPreload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumImagesToPreload: Self = this.set("numImagesToPreload", js.undefined)
+    @scala.inline
+    def setRandomizeSlides(value: Boolean): Self = this.set("randomizeSlides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRandomizeSlides: Self = this.set("randomizeSlides", js.undefined)
+    @scala.inline
+    def setSliderDrag(value: Boolean): Self = this.set("sliderDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSliderDrag: Self = this.set("sliderDrag", js.undefined)
+    @scala.inline
+    def setSliderTouch(value: Boolean): Self = this.set("sliderTouch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSliderTouch: Self = this.set("sliderTouch", js.undefined)
+    @scala.inline
+    def setSlides(value: Element): Self = this.set("slides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlides: Self = this.set("slides", js.undefined)
+    @scala.inline
+    def setSlidesOrientation(value: String): Self = this.set("slidesOrientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlidesOrientation: Self = this.set("slidesOrientation", js.undefined)
+    @scala.inline
+    def setSlidesSpacing(value: Double): Self = this.set("slidesSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlidesSpacing: Self = this.set("slidesSpacing", js.undefined)
+    @scala.inline
+    def setStartSlideId(value: Double): Self = this.set("startSlideId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartSlideId: Self = this.set("startSlideId", js.undefined)
+    @scala.inline
+    def setThumbs(value: RoyalSliderThumbsOptions): Self = this.set("thumbs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbs: Self = this.set("thumbs", js.undefined)
+    @scala.inline
+    def setTransitionSpeed(value: Double): Self = this.set("transitionSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionSpeed: Self = this.set("transitionSpeed", js.undefined)
+    @scala.inline
+    def setTransitionType(value: String): Self = this.set("transitionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionType: Self = this.set("transitionType", js.undefined)
+    @scala.inline
+    def setUsePreloader(value: Boolean): Self = this.set("usePreloader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsePreloader: Self = this.set("usePreloader", js.undefined)
+    @scala.inline
+    def setVideo(value: RoyalSliderVideoOptions): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+    @scala.inline
+    def setVisibleNearby(value: RoyalSliderVisibleOptions): Self = this.set("visibleNearby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleNearby: Self = this.set("visibleNearby", js.undefined)
+  }
+  
 }
 

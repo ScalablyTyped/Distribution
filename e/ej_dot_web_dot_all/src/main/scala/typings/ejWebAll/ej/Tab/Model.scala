@@ -4,212 +4,301 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Model extends js.Object {
   /** Triggered before AJAX content has been loaded.
     */
-  var ajaxBeforeLoad: js.UndefOr[js.Function1[/* e */ AjaxBeforeLoadEventArgs, Unit]] = js.undefined
+  var ajaxBeforeLoad: js.UndefOr[js.Function1[/* e */ AjaxBeforeLoadEventArgs, Unit]] = js.native
   /** Triggered if error occurs in AJAX request.
     */
-  var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.undefined
+  var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.native
   /** Triggered after AJAX content load action.
     */
-  var ajaxLoad: js.UndefOr[js.Function1[/* e */ AjaxLoadEventArgs, Unit]] = js.undefined
+  var ajaxLoad: js.UndefOr[js.Function1[/* e */ AjaxLoadEventArgs, Unit]] = js.native
   /** Specifies the ajaxSettings option to load the content to the Tab control.
     */
-  var ajaxSettings: js.UndefOr[AjaxSettings] = js.undefined
+  var ajaxSettings: js.UndefOr[AjaxSettings] = js.native
   /** Triggered after a tab item activated.
     */
-  var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
+  var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.native
   /** Tab items interaction with keyboard keys, like headers active navigation.
     * @Default {true}
     */
-  var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
+  var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
   /** Triggered before a tab item activated.
     */
-  var beforeActive: js.UndefOr[js.Function1[/* e */ BeforeActiveEventArgs, Unit]] = js.undefined
+  var beforeActive: js.UndefOr[js.Function1[/* e */ BeforeActiveEventArgs, Unit]] = js.native
   /** Triggered before a tab item remove.
     */
-  var beforeItemRemove: js.UndefOr[js.Function1[/* e */ BeforeItemRemoveEventArgs, Unit]] = js.undefined
+  var beforeItemRemove: js.UndefOr[js.Function1[/* e */ BeforeItemRemoveEventArgs, Unit]] = js.native
   /** Allow to collapsing the active item, while click on the active header.
     * @Default {false}
     */
-  var collapsible: js.UndefOr[Boolean] = js.undefined
+  var collapsible: js.UndefOr[Boolean] = js.native
   /** Triggered before a tab item Create.
     */
-  var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
+  var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
   /** Set the root class for Tab theme. This cssClass API helps to use custom skinning option for Tab control.
     */
-  var cssClass: js.UndefOr[String] = js.undefined
+  var cssClass: js.UndefOr[String] = js.native
   /** Triggered before a tab item destroy.
     */
-  var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
+  var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
   /** Disables the given tab headers and content panels.
     * @Default {[]}
     */
-  var disabledItemIndex: js.UndefOr[js.Array[Double]] = js.undefined
+  var disabledItemIndex: js.UndefOr[js.Array[Double]] = js.native
   /** Specifies the animation behavior of the tab.
     * @Default {true}
     */
-  var enableAnimation: js.UndefOr[Boolean] = js.undefined
+  var enableAnimation: js.UndefOr[Boolean] = js.native
   /** Save current model value to browser cookies for state maintains. While refresh the Tab control page the model value apply from browser cookies.
     * @Default {false}
     */
-  var enablePersistence: js.UndefOr[Boolean] = js.undefined
+  var enablePersistence: js.UndefOr[Boolean] = js.native
   /** Display Right to Left direction for headers and panels text of tab.
     * @Default {false}
     */
-  var enableRTL: js.UndefOr[Boolean] = js.undefined
+  var enableRTL: js.UndefOr[Boolean] = js.native
   /** Specify to enable scrolling for Tab header.
     * @Default {false}
     */
-  var enableTabScroll: js.UndefOr[Boolean] = js.undefined
+  var enableTabScroll: js.UndefOr[Boolean] = js.native
   /** When this property is set to false, it disables the tab control.
     * @Default {true}
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /** Enables the given tab headers and content panels.
     * @Default {[]}
     */
-  var enabledItemIndex: js.UndefOr[js.Array[Double]] = js.undefined
+  var enabledItemIndex: js.UndefOr[js.Array[Double]] = js.native
   /** The event API to bind the action for active the tab items.
     * @Default {click}
     */
-  var events: js.UndefOr[String] = js.undefined
+  var events: js.UndefOr[String] = js.native
   /** Specifies the position of Tab header as top, bottom, left or right. See below to get available Position
     * @Default {top}
     */
-  var headerPosition: js.UndefOr[String | Position] = js.undefined
+  var headerPosition: js.UndefOr[String | Position] = js.native
   /** Set the height of the tab header element. Default this property value is null, so height take content height.
     * @Default {null}
     */
-  var headerSize: js.UndefOr[String | Double] = js.undefined
+  var headerSize: js.UndefOr[String | Double] = js.native
   /** Height set the outer panel element. Default this property value is null, so height take content height.
     * @Default {null}
     */
-  var height: js.UndefOr[String | Double] = js.undefined
+  var height: js.UndefOr[String | Double] = js.native
   /** Adjust the content panel height for given option (content, auto and fill), by default panels height adjust based on the content.See below to get available HeightAdjustMode
     * @Default {content}
     */
-  var heightAdjustMode: js.UndefOr[String | HeightAdjustMode] = js.undefined
+  var heightAdjustMode: js.UndefOr[String | HeightAdjustMode] = js.native
   /** Specifies to hide a pane of Tab control.
     * @Default {[]}
     */
-  var hiddenItemIndex: js.UndefOr[js.Array[_]] = js.undefined
+  var hiddenItemIndex: js.UndefOr[js.Array[_]] = js.native
   /** Specifies the HTML Attributes of the Tab.
     * @Default {{}}
     */
-  var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+  var htmlAttributes: js.UndefOr[js.Any] = js.native
   /** The idPrefix property appends the given string on the added tab item idâ€™s in runtime.
     * @Default {ej-tab-}
     */
-  var idPrefix: js.UndefOr[String] = js.undefined
+  var idPrefix: js.UndefOr[String] = js.native
   /** Triggered after a tab item activated.
     */
-  var itemActive: js.UndefOr[js.Function1[/* e */ ItemActiveEventArgs, Unit]] = js.undefined
+  var itemActive: js.UndefOr[js.Function1[/* e */ ItemActiveEventArgs, Unit]] = js.native
   /** Triggered after new tab item add
     */
-  var itemAdd: js.UndefOr[js.Function1[/* e */ ItemAddEventArgs, Unit]] = js.undefined
+  var itemAdd: js.UndefOr[js.Function1[/* e */ ItemAddEventArgs, Unit]] = js.native
   /** Triggered after tab item removed.
     */
-  var itemRemove: js.UndefOr[js.Function1[/* e */ ItemRemoveEventArgs, Unit]] = js.undefined
+  var itemRemove: js.UndefOr[js.Function1[/* e */ ItemRemoveEventArgs, Unit]] = js.native
   /** Specifies the Tab header in active for given index value.
     * @Default {0}
     */
-  var selectedItemIndex: js.UndefOr[Double] = js.undefined
+  var selectedItemIndex: js.UndefOr[Double] = js.native
   /** Display the close button for each tab items. While clicking on the close icon, particular tab item will be removed.
     * @Default {false}
     */
-  var showCloseButton: js.UndefOr[Boolean] = js.undefined
+  var showCloseButton: js.UndefOr[Boolean] = js.native
   /** Display the Reload button for each tab items.
     * @Default {false}
     */
-  var showReloadIcon: js.UndefOr[Boolean] = js.undefined
+  var showReloadIcon: js.UndefOr[Boolean] = js.native
   /** Tab panels and headers to be displayed in rounded corner style.
     * @Default {false}
     */
-  var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
+  var showRoundedCorner: js.UndefOr[Boolean] = js.native
   /** Set the width for outer panel element, if not itâ€™s take parent width.
     * @Default {null}
     */
-  var width: js.UndefOr[String | Double] = js.undefined
+  var width: js.UndefOr[String | Double] = js.native
 }
 
 object Model {
   @scala.inline
-  def apply(
-    ajaxBeforeLoad: /* e */ AjaxBeforeLoadEventArgs => Unit = null,
-    ajaxError: /* e */ AjaxErrorEventArgs => Unit = null,
-    ajaxLoad: /* e */ AjaxLoadEventArgs => Unit = null,
-    ajaxSettings: AjaxSettings = null,
-    ajaxSuccess: /* e */ AjaxSuccessEventArgs => Unit = null,
-    allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    beforeActive: /* e */ BeforeActiveEventArgs => Unit = null,
-    beforeItemRemove: /* e */ BeforeItemRemoveEventArgs => Unit = null,
-    collapsible: js.UndefOr[Boolean] = js.undefined,
-    create: /* e */ CreateEventArgs => Unit = null,
-    cssClass: String = null,
-    destroy: /* e */ DestroyEventArgs => Unit = null,
-    disabledItemIndex: js.Array[Double] = null,
-    enableAnimation: js.UndefOr[Boolean] = js.undefined,
-    enablePersistence: js.UndefOr[Boolean] = js.undefined,
-    enableRTL: js.UndefOr[Boolean] = js.undefined,
-    enableTabScroll: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    enabledItemIndex: js.Array[Double] = null,
-    events: String = null,
-    headerPosition: String | Position = null,
-    headerSize: String | Double = null,
-    height: String | Double = null,
-    heightAdjustMode: String | HeightAdjustMode = null,
-    hiddenItemIndex: js.Array[_] = null,
-    htmlAttributes: js.Any = null,
-    idPrefix: String = null,
-    itemActive: /* e */ ItemActiveEventArgs => Unit = null,
-    itemAdd: /* e */ ItemAddEventArgs => Unit = null,
-    itemRemove: /* e */ ItemRemoveEventArgs => Unit = null,
-    selectedItemIndex: js.UndefOr[Double] = js.undefined,
-    showCloseButton: js.UndefOr[Boolean] = js.undefined,
-    showReloadIcon: js.UndefOr[Boolean] = js.undefined,
-    showRoundedCorner: js.UndefOr[Boolean] = js.undefined,
-    width: String | Double = null
-  ): Model = {
+  def apply(): Model = {
     val __obj = js.Dynamic.literal()
-    if (ajaxBeforeLoad != null) __obj.updateDynamic("ajaxBeforeLoad")(js.Any.fromFunction1(ajaxBeforeLoad))
-    if (ajaxError != null) __obj.updateDynamic("ajaxError")(js.Any.fromFunction1(ajaxError))
-    if (ajaxLoad != null) __obj.updateDynamic("ajaxLoad")(js.Any.fromFunction1(ajaxLoad))
-    if (ajaxSettings != null) __obj.updateDynamic("ajaxSettings")(ajaxSettings.asInstanceOf[js.Any])
-    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(js.Any.fromFunction1(ajaxSuccess))
-    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation.get.asInstanceOf[js.Any])
-    if (beforeActive != null) __obj.updateDynamic("beforeActive")(js.Any.fromFunction1(beforeActive))
-    if (beforeItemRemove != null) __obj.updateDynamic("beforeItemRemove")(js.Any.fromFunction1(beforeItemRemove))
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.get.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (disabledItemIndex != null) __obj.updateDynamic("disabledItemIndex")(disabledItemIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTabScroll)) __obj.updateDynamic("enableTabScroll")(enableTabScroll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (enabledItemIndex != null) __obj.updateDynamic("enabledItemIndex")(enabledItemIndex.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (headerPosition != null) __obj.updateDynamic("headerPosition")(headerPosition.asInstanceOf[js.Any])
-    if (headerSize != null) __obj.updateDynamic("headerSize")(headerSize.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (heightAdjustMode != null) __obj.updateDynamic("heightAdjustMode")(heightAdjustMode.asInstanceOf[js.Any])
-    if (hiddenItemIndex != null) __obj.updateDynamic("hiddenItemIndex")(hiddenItemIndex.asInstanceOf[js.Any])
-    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
-    if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix.asInstanceOf[js.Any])
-    if (itemActive != null) __obj.updateDynamic("itemActive")(js.Any.fromFunction1(itemActive))
-    if (itemAdd != null) __obj.updateDynamic("itemAdd")(js.Any.fromFunction1(itemAdd))
-    if (itemRemove != null) __obj.updateDynamic("itemRemove")(js.Any.fromFunction1(itemRemove))
-    if (!js.isUndefined(selectedItemIndex)) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showReloadIcon)) __obj.updateDynamic("showReloadIcon")(showReloadIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
+  @scala.inline
+  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAjaxBeforeLoad(value: /* e */ AjaxBeforeLoadEventArgs => Unit): Self = this.set("ajaxBeforeLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAjaxBeforeLoad: Self = this.set("ajaxBeforeLoad", js.undefined)
+    @scala.inline
+    def setAjaxError(value: /* e */ AjaxErrorEventArgs => Unit): Self = this.set("ajaxError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAjaxError: Self = this.set("ajaxError", js.undefined)
+    @scala.inline
+    def setAjaxLoad(value: /* e */ AjaxLoadEventArgs => Unit): Self = this.set("ajaxLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAjaxLoad: Self = this.set("ajaxLoad", js.undefined)
+    @scala.inline
+    def setAjaxSettings(value: AjaxSettings): Self = this.set("ajaxSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAjaxSettings: Self = this.set("ajaxSettings", js.undefined)
+    @scala.inline
+    def setAjaxSuccess(value: /* e */ AjaxSuccessEventArgs => Unit): Self = this.set("ajaxSuccess", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAjaxSuccess: Self = this.set("ajaxSuccess", js.undefined)
+    @scala.inline
+    def setAllowKeyboardNavigation(value: Boolean): Self = this.set("allowKeyboardNavigation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowKeyboardNavigation: Self = this.set("allowKeyboardNavigation", js.undefined)
+    @scala.inline
+    def setBeforeActive(value: /* e */ BeforeActiveEventArgs => Unit): Self = this.set("beforeActive", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeActive: Self = this.set("beforeActive", js.undefined)
+    @scala.inline
+    def setBeforeItemRemove(value: /* e */ BeforeItemRemoveEventArgs => Unit): Self = this.set("beforeItemRemove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeItemRemove: Self = this.set("beforeItemRemove", js.undefined)
+    @scala.inline
+    def setCollapsible(value: Boolean): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    @scala.inline
+    def setCreate(value: /* e */ CreateEventArgs => Unit): Self = this.set("create", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = this.set("destroy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    @scala.inline
+    def setDisabledItemIndexVarargs(value: Double*): Self = this.set("disabledItemIndex", js.Array(value :_*))
+    @scala.inline
+    def setDisabledItemIndex(value: js.Array[Double]): Self = this.set("disabledItemIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledItemIndex: Self = this.set("disabledItemIndex", js.undefined)
+    @scala.inline
+    def setEnableAnimation(value: Boolean): Self = this.set("enableAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAnimation: Self = this.set("enableAnimation", js.undefined)
+    @scala.inline
+    def setEnablePersistence(value: Boolean): Self = this.set("enablePersistence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePersistence: Self = this.set("enablePersistence", js.undefined)
+    @scala.inline
+    def setEnableRTL(value: Boolean): Self = this.set("enableRTL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableRTL: Self = this.set("enableRTL", js.undefined)
+    @scala.inline
+    def setEnableTabScroll(value: Boolean): Self = this.set("enableTabScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableTabScroll: Self = this.set("enableTabScroll", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setEnabledItemIndexVarargs(value: Double*): Self = this.set("enabledItemIndex", js.Array(value :_*))
+    @scala.inline
+    def setEnabledItemIndex(value: js.Array[Double]): Self = this.set("enabledItemIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledItemIndex: Self = this.set("enabledItemIndex", js.undefined)
+    @scala.inline
+    def setEvents(value: String): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setHeaderPosition(value: String | Position): Self = this.set("headerPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderPosition: Self = this.set("headerPosition", js.undefined)
+    @scala.inline
+    def setHeaderSize(value: String | Double): Self = this.set("headerSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderSize: Self = this.set("headerSize", js.undefined)
+    @scala.inline
+    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHeightAdjustMode(value: String | HeightAdjustMode): Self = this.set("heightAdjustMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeightAdjustMode: Self = this.set("heightAdjustMode", js.undefined)
+    @scala.inline
+    def setHiddenItemIndexVarargs(value: js.Any*): Self = this.set("hiddenItemIndex", js.Array(value :_*))
+    @scala.inline
+    def setHiddenItemIndex(value: js.Array[_]): Self = this.set("hiddenItemIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiddenItemIndex: Self = this.set("hiddenItemIndex", js.undefined)
+    @scala.inline
+    def setHtmlAttributes(value: js.Any): Self = this.set("htmlAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlAttributes: Self = this.set("htmlAttributes", js.undefined)
+    @scala.inline
+    def setIdPrefix(value: String): Self = this.set("idPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdPrefix: Self = this.set("idPrefix", js.undefined)
+    @scala.inline
+    def setItemActive(value: /* e */ ItemActiveEventArgs => Unit): Self = this.set("itemActive", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteItemActive: Self = this.set("itemActive", js.undefined)
+    @scala.inline
+    def setItemAdd(value: /* e */ ItemAddEventArgs => Unit): Self = this.set("itemAdd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteItemAdd: Self = this.set("itemAdd", js.undefined)
+    @scala.inline
+    def setItemRemove(value: /* e */ ItemRemoveEventArgs => Unit): Self = this.set("itemRemove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteItemRemove: Self = this.set("itemRemove", js.undefined)
+    @scala.inline
+    def setSelectedItemIndex(value: Double): Self = this.set("selectedItemIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedItemIndex: Self = this.set("selectedItemIndex", js.undefined)
+    @scala.inline
+    def setShowCloseButton(value: Boolean): Self = this.set("showCloseButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCloseButton: Self = this.set("showCloseButton", js.undefined)
+    @scala.inline
+    def setShowReloadIcon(value: Boolean): Self = this.set("showReloadIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowReloadIcon: Self = this.set("showReloadIcon", js.undefined)
+    @scala.inline
+    def setShowRoundedCorner(value: Boolean): Self = this.set("showRoundedCorner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowRoundedCorner: Self = this.set("showRoundedCorner", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

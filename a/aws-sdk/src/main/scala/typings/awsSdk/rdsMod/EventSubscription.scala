@@ -50,30 +50,66 @@ trait EventSubscription extends js.Object {
 
 object EventSubscription {
   @scala.inline
-  def apply(
-    CustSubscriptionId: String = null,
-    CustomerAwsId: String = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
-    EventCategoriesList: EventCategoriesList = null,
-    EventSubscriptionArn: String = null,
-    SnsTopicArn: String = null,
-    SourceIdsList: SourceIdsList = null,
-    SourceType: String = null,
-    Status: String = null,
-    SubscriptionCreationTime: String = null
-  ): EventSubscription = {
+  def apply(): EventSubscription = {
     val __obj = js.Dynamic.literal()
-    if (CustSubscriptionId != null) __obj.updateDynamic("CustSubscriptionId")(CustSubscriptionId.asInstanceOf[js.Any])
-    if (CustomerAwsId != null) __obj.updateDynamic("CustomerAwsId")(CustomerAwsId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (EventCategoriesList != null) __obj.updateDynamic("EventCategoriesList")(EventCategoriesList.asInstanceOf[js.Any])
-    if (EventSubscriptionArn != null) __obj.updateDynamic("EventSubscriptionArn")(EventSubscriptionArn.asInstanceOf[js.Any])
-    if (SnsTopicArn != null) __obj.updateDynamic("SnsTopicArn")(SnsTopicArn.asInstanceOf[js.Any])
-    if (SourceIdsList != null) __obj.updateDynamic("SourceIdsList")(SourceIdsList.asInstanceOf[js.Any])
-    if (SourceType != null) __obj.updateDynamic("SourceType")(SourceType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (SubscriptionCreationTime != null) __obj.updateDynamic("SubscriptionCreationTime")(SubscriptionCreationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSubscription]
   }
+  @scala.inline
+  implicit class EventSubscriptionOps[Self <: EventSubscription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustSubscriptionId(value: String): Self = this.set("CustSubscriptionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustSubscriptionId: Self = this.set("CustSubscriptionId", js.undefined)
+    @scala.inline
+    def setCustomerAwsId(value: String): Self = this.set("CustomerAwsId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerAwsId: Self = this.set("CustomerAwsId", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setEventCategoriesListVarargs(value: String*): Self = this.set("EventCategoriesList", js.Array(value :_*))
+    @scala.inline
+    def setEventCategoriesList(value: EventCategoriesList): Self = this.set("EventCategoriesList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventCategoriesList: Self = this.set("EventCategoriesList", js.undefined)
+    @scala.inline
+    def setEventSubscriptionArn(value: String): Self = this.set("EventSubscriptionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventSubscriptionArn: Self = this.set("EventSubscriptionArn", js.undefined)
+    @scala.inline
+    def setSnsTopicArn(value: String): Self = this.set("SnsTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnsTopicArn: Self = this.set("SnsTopicArn", js.undefined)
+    @scala.inline
+    def setSourceIdsListVarargs(value: String*): Self = this.set("SourceIdsList", js.Array(value :_*))
+    @scala.inline
+    def setSourceIdsList(value: SourceIdsList): Self = this.set("SourceIdsList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceIdsList: Self = this.set("SourceIdsList", js.undefined)
+    @scala.inline
+    def setSourceType(value: String): Self = this.set("SourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceType: Self = this.set("SourceType", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSubscriptionCreationTime(value: String): Self = this.set("SubscriptionCreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriptionCreationTime: Self = this.set("SubscriptionCreationTime", js.undefined)
+  }
+  
 }
 

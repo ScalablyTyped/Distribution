@@ -26,18 +26,38 @@ trait WriteApplicationSettingsRequest extends js.Object {
 
 object WriteApplicationSettingsRequest {
   @scala.inline
-  def apply(
-    CampaignHook: CampaignHook = null,
-    CloudWatchMetricsEnabled: js.UndefOr[boolean] = js.undefined,
-    Limits: CampaignLimits = null,
-    QuietTime: QuietTime = null
-  ): WriteApplicationSettingsRequest = {
+  def apply(): WriteApplicationSettingsRequest = {
     val __obj = js.Dynamic.literal()
-    if (CampaignHook != null) __obj.updateDynamic("CampaignHook")(CampaignHook.asInstanceOf[js.Any])
-    if (!js.isUndefined(CloudWatchMetricsEnabled)) __obj.updateDynamic("CloudWatchMetricsEnabled")(CloudWatchMetricsEnabled.get.asInstanceOf[js.Any])
-    if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
-    if (QuietTime != null) __obj.updateDynamic("QuietTime")(QuietTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteApplicationSettingsRequest]
   }
+  @scala.inline
+  implicit class WriteApplicationSettingsRequestOps[Self <: WriteApplicationSettingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCampaignHook(value: CampaignHook): Self = this.set("CampaignHook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignHook: Self = this.set("CampaignHook", js.undefined)
+    @scala.inline
+    def setCloudWatchMetricsEnabled(value: boolean): Self = this.set("CloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchMetricsEnabled: Self = this.set("CloudWatchMetricsEnabled", js.undefined)
+    @scala.inline
+    def setLimits(value: CampaignLimits): Self = this.set("Limits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimits: Self = this.set("Limits", js.undefined)
+    @scala.inline
+    def setQuietTime(value: QuietTime): Self = this.set("QuietTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuietTime: Self = this.set("QuietTime", js.undefined)
+  }
+  
 }
 

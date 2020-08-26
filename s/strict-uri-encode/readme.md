@@ -12,7 +12,7 @@ A stricter URI encode adhering to RFC 3986
 | Keywords           | component, encode, RFC3986, uri |
 | # releases         | 0 |
 | # dependents       | 57 |
-| # downloads        | 234980345 |
+| # downloads        | 242971167 |
 | # stars            | 0 |
 
 ## Links

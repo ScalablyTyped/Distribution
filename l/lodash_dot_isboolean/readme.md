@@ -11,8 +11,8 @@ The lodash method `_.isBoolean` exported as a module.
 | Full name          | lodash.isboolean |
 | Keywords           | lodash-modularized, isboolean |
 | # releases         | 0 |
-| # dependents       | 78 |
-| # downloads        | 88262965 |
+| # dependents       | 77 |
+| # downloads        | 92225356 |
 | # stars            | 0 |
 
 ## Links

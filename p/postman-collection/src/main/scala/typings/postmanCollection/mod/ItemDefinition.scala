@@ -4,32 +4,47 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ItemDefinition extends PropertyDefinition {
-  var events: js.UndefOr[js.Array[EventDefinition]] = js.undefined
-  var request: js.UndefOr[RequestDefinition] = js.undefined
-  var response: js.UndefOr[js.Array[ResponseDefinition]] = js.undefined
+  var events: js.UndefOr[js.Array[EventDefinition]] = js.native
+  var request: js.UndefOr[RequestDefinition] = js.native
+  var response: js.UndefOr[js.Array[ResponseDefinition]] = js.native
 }
 
 object ItemDefinition {
   @scala.inline
-  def apply(
-    description: String | DescriptionDefinition = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    events: js.Array[EventDefinition] = null,
-    id: String = null,
-    name: String = null,
-    request: RequestDefinition = null,
-    response: js.Array[ResponseDefinition] = null
-  ): ItemDefinition = {
+  def apply(): ItemDefinition = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemDefinition]
   }
+  @scala.inline
+  implicit class ItemDefinitionOps[Self <: ItemDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventsVarargs(value: EventDefinition*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: js.Array[EventDefinition]): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setRequest(value: RequestDefinition): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setResponseVarargs(value: ResponseDefinition*): Self = this.set("response", js.Array(value :_*))
+    @scala.inline
+    def setResponse(value: js.Array[ResponseDefinition]): Self = this.set("response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("response", js.undefined)
+  }
+  
 }
 

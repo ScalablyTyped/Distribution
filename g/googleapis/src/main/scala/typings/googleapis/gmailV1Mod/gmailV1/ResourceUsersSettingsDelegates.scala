@@ -38,6 +38,7 @@ class ResourceUsersSettingsDelegates protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaDelegate] = js.native
   def create(callback: BodyResponseCallback[SchemaDelegate]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDelegate] = js.native
   def create(params: ParamsResourceUsersSettingsDelegatesCreate): GaxiosPromise[SchemaDelegate] = js.native
   def create(params: ParamsResourceUsersSettingsDelegatesCreate, callback: BodyResponseCallback[SchemaDelegate]): Unit = js.native
   def create(
@@ -70,6 +71,7 @@ class ResourceUsersSettingsDelegates protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsDelegatesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsDelegatesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -101,6 +103,7 @@ class ResourceUsersSettingsDelegates protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDelegate] = js.native
   def get(callback: BodyResponseCallback[SchemaDelegate]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDelegate] = js.native
   def get(params: ParamsResourceUsersSettingsDelegatesGet): GaxiosPromise[SchemaDelegate] = js.native
   def get(params: ParamsResourceUsersSettingsDelegatesGet, callback: BodyResponseCallback[SchemaDelegate]): Unit = js.native
   def get(
@@ -130,6 +133,7 @@ class ResourceUsersSettingsDelegates protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListDelegatesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDelegatesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDelegatesResponse] = js.native
   def list(params: ParamsResourceUsersSettingsDelegatesList): GaxiosPromise[SchemaListDelegatesResponse] = js.native
   def list(
     params: ParamsResourceUsersSettingsDelegatesList,

@@ -30,20 +30,42 @@ trait MovSettings extends js.Object {
 
 object MovSettings {
   @scala.inline
-  def apply(
-    ClapAtom: MovClapAtom = null,
-    CslgAtom: MovCslgAtom = null,
-    Mpeg2FourCCControl: MovMpeg2FourCCControl = null,
-    PaddingControl: MovPaddingControl = null,
-    Reference: MovReference = null
-  ): MovSettings = {
+  def apply(): MovSettings = {
     val __obj = js.Dynamic.literal()
-    if (ClapAtom != null) __obj.updateDynamic("ClapAtom")(ClapAtom.asInstanceOf[js.Any])
-    if (CslgAtom != null) __obj.updateDynamic("CslgAtom")(CslgAtom.asInstanceOf[js.Any])
-    if (Mpeg2FourCCControl != null) __obj.updateDynamic("Mpeg2FourCCControl")(Mpeg2FourCCControl.asInstanceOf[js.Any])
-    if (PaddingControl != null) __obj.updateDynamic("PaddingControl")(PaddingControl.asInstanceOf[js.Any])
-    if (Reference != null) __obj.updateDynamic("Reference")(Reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[MovSettings]
   }
+  @scala.inline
+  implicit class MovSettingsOps[Self <: MovSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClapAtom(value: MovClapAtom): Self = this.set("ClapAtom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClapAtom: Self = this.set("ClapAtom", js.undefined)
+    @scala.inline
+    def setCslgAtom(value: MovCslgAtom): Self = this.set("CslgAtom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCslgAtom: Self = this.set("CslgAtom", js.undefined)
+    @scala.inline
+    def setMpeg2FourCCControl(value: MovMpeg2FourCCControl): Self = this.set("Mpeg2FourCCControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMpeg2FourCCControl: Self = this.set("Mpeg2FourCCControl", js.undefined)
+    @scala.inline
+    def setPaddingControl(value: MovPaddingControl): Self = this.set("PaddingControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingControl: Self = this.set("PaddingControl", js.undefined)
+    @scala.inline
+    def setReference(value: MovReference): Self = this.set("Reference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReference: Self = this.set("Reference", js.undefined)
+  }
+  
 }
 

@@ -25,7 +25,29 @@ trait WshNetwork extends js.Object {
     * If you are mapping a remote printer using the profile of someone other than current user, you can specify _UserName_ and _Password_.
     */
   def AddPrinterConnection(LocalName: String, RemoteName: String): Unit = js.native
+  def AddPrinterConnection(
+    LocalName: String,
+    RemoteName: String,
+    UpdateProfile: js.UndefOr[scala.Nothing],
+    UserName: js.UndefOr[scala.Nothing],
+    Password: String
+  ): Unit = js.native
+  def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: js.UndefOr[scala.Nothing], UserName: String): Unit = js.native
+  def AddPrinterConnection(
+    LocalName: String,
+    RemoteName: String,
+    UpdateProfile: js.UndefOr[scala.Nothing],
+    UserName: String,
+    Password: String
+  ): Unit = js.native
   def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Boolean): Unit = js.native
+  def AddPrinterConnection(
+    LocalName: String,
+    RemoteName: String,
+    UpdateProfile: Boolean,
+    UserName: js.UndefOr[scala.Nothing],
+    Password: String
+  ): Unit = js.native
   def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String): Unit = js.native
   def AddPrinterConnection(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String, Password: String): Unit = js.native
   /**
@@ -36,6 +58,7 @@ trait WshNetwork extends js.Object {
     * Unlike the **AddPrinterConnection** method, this method allows you to create a printer connection without directing it to a specific port, such as LPT1.
     */
   def AddWindowsPrinterConnection(PrinterName: String): Unit = js.native
+  def AddWindowsPrinterConnection(PrinterName: String, DriverName: js.UndefOr[scala.Nothing], Port: String): Unit = js.native
   def AddWindowsPrinterConnection(PrinterName: String, DriverName: String): Unit = js.native
   def AddWindowsPrinterConnection(PrinterName: String, DriverName: String, Port: String): Unit = js.native
   def EnumNetworkDrives(): WshCollection = js.native
@@ -49,7 +72,29 @@ trait WshNetwork extends js.Object {
     * If you are mapping a network drive using the profile of someone other than current user, you can specify _UserName_ and _Password_.
     */
   def MapNetworkDrive(LocalName: String, RemoteName: String): Unit = js.native
+  def MapNetworkDrive(
+    LocalName: String,
+    RemoteName: String,
+    UpdateProfile: js.UndefOr[scala.Nothing],
+    UserName: js.UndefOr[scala.Nothing],
+    Password: String
+  ): Unit = js.native
+  def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: js.UndefOr[scala.Nothing], UserName: String): Unit = js.native
+  def MapNetworkDrive(
+    LocalName: String,
+    RemoteName: String,
+    UpdateProfile: js.UndefOr[scala.Nothing],
+    UserName: String,
+    Password: String
+  ): Unit = js.native
   def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Boolean): Unit = js.native
+  def MapNetworkDrive(
+    LocalName: String,
+    RemoteName: String,
+    UpdateProfile: Boolean,
+    UserName: js.UndefOr[scala.Nothing],
+    Password: String
+  ): Unit = js.native
   def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String): Unit = js.native
   def MapNetworkDrive(LocalName: String, RemoteName: String, UpdateProfile: Boolean, UserName: String, Password: String): Unit = js.native
   /**
@@ -60,6 +105,7 @@ trait WshNetwork extends js.Object {
     * @param UpdateProfile [false] Remove the mapping from the user's profile
     */
   def RemoveNetworkDrive(Name: String): Unit = js.native
+  def RemoveNetworkDrive(Name: String, Force: js.UndefOr[scala.Nothing], UpdateProfile: Boolean): Unit = js.native
   def RemoveNetworkDrive(Name: String, Force: Boolean): Unit = js.native
   def RemoveNetworkDrive(Name: String, Force: Boolean, UpdateProfile: Boolean): Unit = js.native
   /**
@@ -73,6 +119,8 @@ trait WshNetwork extends js.Object {
     * then _Name_ must be the printer's UNC name.
     */
   def RemovePrinterConnection(Name: String): Unit = js.native
+  @JSName("RemovePrinterConnection")
+  def RemovePrinterConnection_true(Name: String, Force: js.UndefOr[scala.Nothing], UpdateProfile: `true`): Unit = js.native
   @JSName("RemovePrinterConnection")
   def RemovePrinterConnection_true(Name: String, Force: `true`): Unit = js.native
   @JSName("RemovePrinterConnection")

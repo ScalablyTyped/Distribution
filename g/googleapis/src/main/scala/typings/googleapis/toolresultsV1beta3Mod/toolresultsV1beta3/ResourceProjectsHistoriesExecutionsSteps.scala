@@ -39,6 +39,7 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaStep] = js.native
   def create(callback: BodyResponseCallback[SchemaStep]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStep] = js.native
   def create(params: ParamsResourceProjectsHistoriesExecutionsStepsCreate): GaxiosPromise[SchemaStep] = js.native
   def create(
     params: ParamsResourceProjectsHistoriesExecutionsStepsCreate,
@@ -75,6 +76,7 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaStep] = js.native
   def get(callback: BodyResponseCallback[SchemaStep]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStep] = js.native
   def get(params: ParamsResourceProjectsHistoriesExecutionsStepsGet): GaxiosPromise[SchemaStep] = js.native
   def get(
     params: ParamsResourceProjectsHistoriesExecutionsStepsGet,
@@ -111,6 +113,7 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     */
   def getPerfMetricsSummary(): GaxiosPromise[SchemaPerfMetricsSummary] = js.native
   def getPerfMetricsSummary(callback: BodyResponseCallback[SchemaPerfMetricsSummary]): Unit = js.native
+  def getPerfMetricsSummary(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPerfMetricsSummary] = js.native
   def getPerfMetricsSummary(params: ParamsResourceProjectsHistoriesExecutionsStepsGetperfmetricssummary): GaxiosPromise[SchemaPerfMetricsSummary] = js.native
   def getPerfMetricsSummary(
     params: ParamsResourceProjectsHistoriesExecutionsStepsGetperfmetricssummary,
@@ -155,6 +158,7 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListStepsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListStepsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListStepsResponse] = js.native
   def list(params: ParamsResourceProjectsHistoriesExecutionsStepsList): GaxiosPromise[SchemaListStepsResponse] = js.native
   def list(
     params: ParamsResourceProjectsHistoriesExecutionsStepsList,
@@ -196,6 +200,7 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaStep] = js.native
   def patch(callback: BodyResponseCallback[SchemaStep]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStep] = js.native
   def patch(params: ParamsResourceProjectsHistoriesExecutionsStepsPatch): GaxiosPromise[SchemaStep] = js.native
   def patch(
     params: ParamsResourceProjectsHistoriesExecutionsStepsPatch,
@@ -236,6 +241,7 @@ class ResourceProjectsHistoriesExecutionsSteps protected () extends js.Object {
     */
   def publishXunitXmlFiles(): GaxiosPromise[SchemaStep] = js.native
   def publishXunitXmlFiles(callback: BodyResponseCallback[SchemaStep]): Unit = js.native
+  def publishXunitXmlFiles(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStep] = js.native
   def publishXunitXmlFiles(params: ParamsResourceProjectsHistoriesExecutionsStepsPublishxunitxmlfiles): GaxiosPromise[SchemaStep] = js.native
   def publishXunitXmlFiles(
     params: ParamsResourceProjectsHistoriesExecutionsStepsPublishxunitxmlfiles,

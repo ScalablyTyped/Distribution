@@ -2,35 +2,13 @@ package typings.reactNativeElements.mod
 
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.reactNative.mod.AccessibilityActionEvent
-import typings.reactNative.mod.AccessibilityActionInfo
-import typings.reactNative.mod.AccessibilityRole
-import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
-import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.ActivityIndicatorProperties
 import typings.reactNative.mod.BackgroundPropType
-import typings.reactNative.mod.GestureResponderEvent
-import typings.reactNative.mod.Insets
-import typings.reactNative.mod.LayoutChangeEvent
-import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TVParallaxProperties
-import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextProperties
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.TouchableOpacityProps
 import typings.reactNative.mod.ViewStyle
-import typings.reactNative.reactNativeStrings.`no-hide-descendants`
-import typings.reactNative.reactNativeStrings.assertive
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.button
-import typings.reactNative.reactNativeStrings.no
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.polite
-import typings.reactNative.reactNativeStrings.radiobutton_checked
-import typings.reactNative.reactNativeStrings.radiobutton_unchecked
-import typings.reactNative.reactNativeStrings.yes
 import typings.reactNativeElements.reactNativeElementsStrings.clear
 import typings.reactNativeElements.reactNativeElementsStrings.outline
 import typings.reactNativeElements.reactNativeElementsStrings.solid
@@ -41,23 +19,25 @@ import scala.scalajs.js.annotation._
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactNative.mod.AccessibilityPropsIOS because Already inherited
 - typings.reactNative.mod.AccessibilityPropsAndroid because Already inherited
+- typings.reactNative.mod.TouchableWithoutFeedbackPropsAndroid because Already inherited
 - typings.reactNative.mod.TouchableWithoutFeedbackPropsIOS because Already inherited
 - typings.reactNative.mod.AccessibilityProps because Already inherited
 - typings.reactNative.mod.TouchableWithoutFeedbackProps because Already inherited
-- typings.reactNative.mod.TouchableNativeFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, delayLongPress, delayPressIn, delayPressOut, disabled, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onBlur, onFocus, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, pressRetentionOffset, style, testID, tvParallaxProperties. Inlined background, useForeground */ trait ButtonProps extends TouchableOpacityProps {
+- typings.reactNative.mod.TouchableNativeFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, delayLongPress, delayPressIn, delayPressOut, disabled, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onBlur, onFocus, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, pressRetentionOffset, style, testID, touchSoundDisabled, tvParallaxProperties. Inlined background, useForeground */ @js.native
+trait ButtonProps extends TouchableOpacityProps {
   /**
     * Specify other touchable such as TouchableOpacity/TouchableNativeFeedback
     *
     * Default is TouchableOpacity on IOS and TouchableNativeFeedback on Android
     */
-  var TouchableComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
+  var TouchableComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
   /**
     * Specify a different component as the background for the button.
     * Useful for if you want to make a button with a gradient background.
     *
     * @default View
     */
-  var ViewComponent: js.UndefOr[ComponentClass[_, ComponentState]] = js.undefined
+  var ViewComponent: js.UndefOr[ComponentClass[_, ComponentState]] = js.native
   /**
     * Determines the type of background drawable that's going to be used to display feedback.
     * It takes an object with type property and extra data depending on the type.
@@ -72,204 +52,209 @@ import scala.scalajs.js.annotation._
     *         outside of the view bounds (see native actionbar buttons as an example of that behavior). This background
     *         type is available on Android API level 21+
     */
-  var background: js.UndefOr[BackgroundPropType] = js.undefined
+  var background: js.UndefOr[BackgroundPropType] = js.native
   /**
     * Additional styling for button (background) view component
     *
     * @default null
     */
-  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * Styling for Component container
     *
     * @default null
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * Style of the button when disabled
     */
-  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * Style of the title when the button is disabled
     */
-  var disabledTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var disabledTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  /**
+    * If the user is allowed to interact with the button
+    *
+    * @default false
+    */
+  @JSName("disabled")
+  var disabled_ButtonProps: js.UndefOr[Boolean] = js.native
   /**
     * Icon to show in the button
     */
-  var icon: js.UndefOr[IconNode] = js.undefined
+  var icon: js.UndefOr[IconNode] = js.native
   /**
     * Style for the container around the icon
     */
-  var iconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var iconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * If to show the icon on the right
     *
     * @default false
     */
-  var iconRight: js.UndefOr[Boolean] = js.undefined
+  var iconRight: js.UndefOr[Boolean] = js.native
   /**
     * Object of props to be applied to the linearGradient view(ViewComponent)
     */
-  var linearGradientProps: js.UndefOr[js.Object] = js.undefined
+  var linearGradientProps: js.UndefOr[js.Object] = js.native
   /**
     * Display a loading spinner
     *
     * @default false
     */
-  var loading: js.UndefOr[Boolean] = js.undefined
+  var loading: js.UndefOr[Boolean] = js.native
   /**
     * Additional props to applied to the ActivityIndicator
     */
-  var loadingProps: js.UndefOr[ActivityIndicatorProperties] = js.undefined
+  var loadingProps: js.UndefOr[ActivityIndicatorProperties] = js.native
   /**
     * Additional style to applied to the ActivityIndicator
     */
-  var loadingStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var loadingStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * If the button has raised styling
     *
     * @default false
     */
-  var raised: js.UndefOr[Boolean] = js.undefined
+  var raised: js.UndefOr[Boolean] = js.native
   /**
     * Button title
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * Optional props for the title inside the button
     */
-  var titleProps: js.UndefOr[TextProperties] = js.undefined
+  var titleProps: js.UndefOr[TextProperties] = js.native
   /**
     * Title styling
     */
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
   /**
     * Type of button
     *
     * @default solid
     */
-  var `type`: js.UndefOr[solid | clear | outline] = js.undefined
-  var useForeground: js.UndefOr[Boolean] = js.undefined
+  var `type`: js.UndefOr[solid | clear | outline] = js.native
+  var useForeground: js.UndefOr[Boolean] = js.native
 }
 
 object ButtonProps {
   @scala.inline
-  def apply(
-    TouchableComponent: ComponentClass[js.Object, ComponentState] = null,
-    ViewComponent: ComponentClass[_, ComponentState] = null,
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityValue: AccessibilityValue = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    activeOpacity: js.UndefOr[Double] = js.undefined,
-    background: BackgroundPropType = null,
-    buttonStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    delayLongPress: js.UndefOr[Double] = js.undefined,
-    delayPressIn: js.UndefOr[Double] = js.undefined,
-    delayPressOut: js.UndefOr[Double] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    disabledTitleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
-    hitSlop: Insets = null,
-    icon: IconNode = null,
-    iconContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    iconRight: js.UndefOr[Boolean] = js.undefined,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    linearGradientProps: js.Object = null,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    loadingProps: ActivityIndicatorProperties = null,
-    loadingStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
-    onAccessibilityEscape: () => Unit = null,
-    onAccessibilityTap: () => Unit = null,
-    onBlur: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit = null,
-    onFocus: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit = null,
-    onLayout: /* event */ LayoutChangeEvent => Unit = null,
-    onLongPress: /* event */ GestureResponderEvent => Unit = null,
-    onMagicTap: () => Unit = null,
-    onPress: /* event */ GestureResponderEvent => Unit = null,
-    onPressIn: /* event */ GestureResponderEvent => Unit = null,
-    onPressOut: /* event */ GestureResponderEvent => Unit = null,
-    pressRetentionOffset: Insets = null,
-    raised: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    testID: String = null,
-    title: String = null,
-    titleProps: TextProperties = null,
-    titleStyle: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    tvParallaxProperties: TVParallaxProperties = null,
-    `type`: solid | clear | outline = null,
-    useForeground: js.UndefOr[Boolean] = js.undefined
-  ): ButtonProps = {
+  def apply(): ButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (TouchableComponent != null) __obj.updateDynamic("TouchableComponent")(TouchableComponent.asInstanceOf[js.Any])
-    if (ViewComponent != null) __obj.updateDynamic("ViewComponent")(ViewComponent.asInstanceOf[js.Any])
-    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.get.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.get.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeOpacity)) __obj.updateDynamic("activeOpacity")(activeOpacity.get.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonStyle)) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayLongPress)) __obj.updateDynamic("delayLongPress")(delayLongPress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayPressIn)) __obj.updateDynamic("delayPressIn")(delayPressIn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayPressOut)) __obj.updateDynamic("delayPressOut")(delayPressOut.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabledStyle)) __obj.updateDynamic("disabledStyle")(disabledStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabledTitleStyle)) __obj.updateDynamic("disabledTitleStyle")(disabledTitleStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
-    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconContainerStyle)) __obj.updateDynamic("iconContainerStyle")(iconContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconRight)) __obj.updateDynamic("iconRight")(iconRight.get.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (linearGradientProps != null) __obj.updateDynamic("linearGradientProps")(linearGradientProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.get.asInstanceOf[js.Any])
-    if (loadingProps != null) __obj.updateDynamic("loadingProps")(loadingProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadingStyle)) __obj.updateDynamic("loadingStyle")(loadingStyle.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
-    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
-    if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleStyle)) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
-    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useForeground)) __obj.updateDynamic("useForeground")(useForeground.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
+  @scala.inline
+  implicit class ButtonPropsOps[Self <: ButtonProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTouchableComponent(value: ComponentClass[js.Object, ComponentState]): Self = this.set("TouchableComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchableComponent: Self = this.set("TouchableComponent", js.undefined)
+    @scala.inline
+    def setViewComponent(value: ComponentClass[_, ComponentState]): Self = this.set("ViewComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewComponent: Self = this.set("ViewComponent", js.undefined)
+    @scala.inline
+    def setBackground(value: BackgroundPropType): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setButtonStyle(value: StyleProp[ViewStyle]): Self = this.set("buttonStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonStyle: Self = this.set("buttonStyle", js.undefined)
+    @scala.inline
+    def setButtonStyleNull: Self = this.set("buttonStyle", null)
+    @scala.inline
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    @scala.inline
+    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisabledStyle(value: StyleProp[ViewStyle]): Self = this.set("disabledStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledStyle: Self = this.set("disabledStyle", js.undefined)
+    @scala.inline
+    def setDisabledStyleNull: Self = this.set("disabledStyle", null)
+    @scala.inline
+    def setDisabledTitleStyle(value: StyleProp[TextStyle]): Self = this.set("disabledTitleStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledTitleStyle: Self = this.set("disabledTitleStyle", js.undefined)
+    @scala.inline
+    def setDisabledTitleStyleNull: Self = this.set("disabledTitleStyle", null)
+    @scala.inline
+    def setIcon(value: IconNode): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("iconContainerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconContainerStyle: Self = this.set("iconContainerStyle", js.undefined)
+    @scala.inline
+    def setIconContainerStyleNull: Self = this.set("iconContainerStyle", null)
+    @scala.inline
+    def setIconRight(value: Boolean): Self = this.set("iconRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconRight: Self = this.set("iconRight", js.undefined)
+    @scala.inline
+    def setLinearGradientProps(value: js.Object): Self = this.set("linearGradientProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinearGradientProps: Self = this.set("linearGradientProps", js.undefined)
+    @scala.inline
+    def setLoading(value: Boolean): Self = this.set("loading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoading: Self = this.set("loading", js.undefined)
+    @scala.inline
+    def setLoadingProps(value: ActivityIndicatorProperties): Self = this.set("loadingProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadingProps: Self = this.set("loadingProps", js.undefined)
+    @scala.inline
+    def setLoadingStyle(value: StyleProp[ViewStyle]): Self = this.set("loadingStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadingStyle: Self = this.set("loadingStyle", js.undefined)
+    @scala.inline
+    def setLoadingStyleNull: Self = this.set("loadingStyle", null)
+    @scala.inline
+    def setRaised(value: Boolean): Self = this.set("raised", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaised: Self = this.set("raised", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleProps(value: TextProperties): Self = this.set("titleProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleProps: Self = this.set("titleProps", js.undefined)
+    @scala.inline
+    def setTitleStyle(value: StyleProp[TextStyle]): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
+    @scala.inline
+    def setTitleStyleNull: Self = this.set("titleStyle", null)
+    @scala.inline
+    def setType(value: solid | clear | outline): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUseForeground(value: Boolean): Self = this.set("useForeground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseForeground: Self = this.set("useForeground", js.undefined)
+  }
+  
 }
 

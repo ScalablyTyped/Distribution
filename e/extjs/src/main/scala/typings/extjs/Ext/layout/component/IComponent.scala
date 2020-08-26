@@ -1,15 +1,12 @@
 package typings.extjs.Ext.layout.component
 
-import typings.extjs.Ext.Array
-import typings.extjs.Ext.IClass
 import typings.extjs.Ext.IElement
-import typings.extjs.Ext.layout.IContextItem
 import typings.extjs.Ext.layout.ILayout
-import typings.extjs.Ext.layout.ISizePolicy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IComponent extends ILayout {
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation
     * @param ownerContext Object
@@ -18,105 +15,65 @@ trait IComponent extends ILayout {
   @JSName("beginLayoutCycle")
   var beginLayoutCycle_IComponent: js.UndefOr[
     js.Function2[/* ownerContext */ js.UndefOr[js.Any], /* firstCycle */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] This method is called after all layouts are complete and their calculations flushed to the DOM
     * @param ownerContext Object
     */
   @JSName("finishedLayout")
-  var finishedLayout_IComponent: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var finishedLayout_IComponent: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Returns the element into which rendering must take place
     * @returns Ext.Element
     */
-  var getRenderTarget: js.UndefOr[js.Function0[IElement]] = js.undefined
+  var getRenderTarget: js.UndefOr[js.Function0[IElement]] = js.native
   /** [Method] Returns the owner component s resize element
     * @returns Ext.Element
     */
-  var getTarget: js.UndefOr[js.Function0[IElement]] = js.undefined
+  var getTarget: js.UndefOr[js.Function0[IElement]] = js.native
   /** [Method] This method if implemented is called after all layouts are finished and all have a lastComponentSize cached
     * @param ownerContext Object
     */
   @JSName("notifyOwner")
-  var notifyOwner_IComponent: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var notifyOwner_IComponent: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
 }
 
 object IComponent {
   @scala.inline
-  def apply(
-    afterRemove: /* item */ js.UndefOr[js.Any] => Unit = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    beginLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
-    beginLayoutCycle: (/* ownerContext */ js.UndefOr[js.Any], /* firstCycle */ js.UndefOr[js.Any]) => Unit = null,
-    calculate: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    completeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
-    config: js.Any = null,
-    configureItem: /* item */ js.UndefOr[typings.extjs.Ext.IComponent] => Unit = null,
-    destroy: () => Unit = null,
-    done: js.UndefOr[Boolean] = js.undefined,
-    extend: String = null,
-    finalizeLayout: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
-    finishedLayout: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getItemSizePolicy: /* item */ js.UndefOr[typings.extjs.Ext.IComponent] => ISizePolicy = null,
-    getLayoutItems: () => Unit = null,
-    getRenderTarget: () => IElement = null,
-    getTarget: () => IElement = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => IComponent = null,
-    initLayout: () => Unit = null,
-    isLayout: js.UndefOr[Boolean] = js.undefined,
-    isValidParent: (/* item */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Unit = null,
-    mixins: js.Any = null,
-    notifyOwner: /* ownerContext */ js.UndefOr[js.Any] => Unit = null,
-    onContentChange: /* child */ js.UndefOr[typings.extjs.Ext.IComponent] => Boolean = null,
-    renderItems: (/* items */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => Unit = null,
-    requires: Array = null,
-    self: IClass = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    uses: Array = null
-  ): IComponent = {
+  def apply(): IComponent = {
     val __obj = js.Dynamic.literal()
-    if (afterRemove != null) __obj.updateDynamic("afterRemove")(js.Any.fromFunction1(afterRemove))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (beginLayout != null) __obj.updateDynamic("beginLayout")(js.Any.fromFunction1(beginLayout))
-    if (beginLayoutCycle != null) __obj.updateDynamic("beginLayoutCycle")(js.Any.fromFunction2(beginLayoutCycle))
-    if (calculate != null) __obj.updateDynamic("calculate")(js.Any.fromFunction1(calculate))
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (completeLayout != null) __obj.updateDynamic("completeLayout")(js.Any.fromFunction1(completeLayout))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (configureItem != null) __obj.updateDynamic("configureItem")(js.Any.fromFunction1(configureItem))
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.get.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (finalizeLayout != null) __obj.updateDynamic("finalizeLayout")(js.Any.fromFunction1(finalizeLayout))
-    if (finishedLayout != null) __obj.updateDynamic("finishedLayout")(js.Any.fromFunction1(finishedLayout))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getItemSizePolicy != null) __obj.updateDynamic("getItemSizePolicy")(js.Any.fromFunction1(getItemSizePolicy))
-    if (getLayoutItems != null) __obj.updateDynamic("getLayoutItems")(js.Any.fromFunction0(getLayoutItems))
-    if (getRenderTarget != null) __obj.updateDynamic("getRenderTarget")(js.Any.fromFunction0(getRenderTarget))
-    if (getTarget != null) __obj.updateDynamic("getTarget")(js.Any.fromFunction0(getTarget))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (initLayout != null) __obj.updateDynamic("initLayout")(js.Any.fromFunction0(initLayout))
-    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.get.asInstanceOf[js.Any])
-    if (isValidParent != null) __obj.updateDynamic("isValidParent")(js.Any.fromFunction3(isValidParent))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (notifyOwner != null) __obj.updateDynamic("notifyOwner")(js.Any.fromFunction1(notifyOwner))
-    if (onContentChange != null) __obj.updateDynamic("onContentChange")(js.Any.fromFunction1(onContentChange))
-    if (renderItems != null) __obj.updateDynamic("renderItems")(js.Any.fromFunction2(renderItems))
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComponent]
   }
+  @scala.inline
+  implicit class IComponentOps[Self <: IComponent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeginLayoutCycle(value: (/* ownerContext */ js.UndefOr[js.Any], /* firstCycle */ js.UndefOr[js.Any]) => Unit): Self = this.set("beginLayoutCycle", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBeginLayoutCycle: Self = this.set("beginLayoutCycle", js.undefined)
+    @scala.inline
+    def setFinishedLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("finishedLayout", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFinishedLayout: Self = this.set("finishedLayout", js.undefined)
+    @scala.inline
+    def setGetRenderTarget(value: () => IElement): Self = this.set("getRenderTarget", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRenderTarget: Self = this.set("getRenderTarget", js.undefined)
+    @scala.inline
+    def setGetTarget(value: () => IElement): Self = this.set("getTarget", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTarget: Self = this.set("getTarget", js.undefined)
+    @scala.inline
+    def setNotifyOwner(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = this.set("notifyOwner", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNotifyOwner: Self = this.set("notifyOwner", js.undefined)
+  }
+  
 }
 

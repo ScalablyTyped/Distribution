@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait Instantiable
   extends Instantiable0[ComponentDidMount]
      with Instantiable1[/* props */ IMultiPickerProps, ComponentDidMount]
-     with Instantiable2[/* props */ IMultiPickerProps, /* context */ js.Any, ComponentDidMount] {
+     with Instantiable2[js.UndefOr[/* props */ IMultiPickerProps], /* context */ js.Any, ComponentDidMount] {
   var defaultProps: OnValueChange = js.native
 }
 

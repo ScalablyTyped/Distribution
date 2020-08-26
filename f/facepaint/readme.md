@@ -10,9 +10,9 @@ Responsive style values for css-in-js.
 | ------------------ | :-------------: |
 | Full name          | facepaint |
 | Keywords           | styles, emotion, react, css, css-in-js |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 48 |
-| # downloads        | 1717738 |
+| # downloads        | 1736835 |
 | # stars            | 1 |
 
 ## Links

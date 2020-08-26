@@ -14,10 +14,28 @@ trait SchemaInstancesRemoveResourcePoliciesRequest extends js.Object {
 
 object SchemaInstancesRemoveResourcePoliciesRequest {
   @scala.inline
-  def apply(resourcePolicies: js.Array[String] = null): SchemaInstancesRemoveResourcePoliciesRequest = {
+  def apply(): SchemaInstancesRemoveResourcePoliciesRequest = {
     val __obj = js.Dynamic.literal()
-    if (resourcePolicies != null) __obj.updateDynamic("resourcePolicies")(resourcePolicies.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstancesRemoveResourcePoliciesRequest]
   }
+  @scala.inline
+  implicit class SchemaInstancesRemoveResourcePoliciesRequestOps[Self <: SchemaInstancesRemoveResourcePoliciesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourcePoliciesVarargs(value: String*): Self = this.set("resourcePolicies", js.Array(value :_*))
+    @scala.inline
+    def setResourcePolicies(value: js.Array[String]): Self = this.set("resourcePolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcePolicies: Self = this.set("resourcePolicies", js.undefined)
+  }
+  
 }
 

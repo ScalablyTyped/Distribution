@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object bootstrap extends js.Object {
   def apply(): Unit = js.native
+  def apply(fontOpts: js.UndefOr[scala.Nothing], colorOpts: ColorOpts): Unit = js.native
   def apply(fontOpts: FontOpts): Unit = js.native
   def apply(fontOpts: FontOpts, colorOpts: ColorOpts): Unit = js.native
 }

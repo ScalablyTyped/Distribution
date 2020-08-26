@@ -1,7 +1,7 @@
 package typings.socketIo.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.socketIo.anon.Except
 import scala.scalajs.js
 import scala.scalajs.js.`|`

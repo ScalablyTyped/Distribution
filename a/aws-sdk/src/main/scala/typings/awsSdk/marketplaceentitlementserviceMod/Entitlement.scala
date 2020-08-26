@@ -30,20 +30,42 @@ trait Entitlement extends js.Object {
 
 object Entitlement {
   @scala.inline
-  def apply(
-    CustomerIdentifier: NonEmptyString = null,
-    Dimension: NonEmptyString = null,
-    ExpirationDate: Timestamp = null,
-    ProductCode: ProductCode = null,
-    Value: EntitlementValue = null
-  ): Entitlement = {
+  def apply(): Entitlement = {
     val __obj = js.Dynamic.literal()
-    if (CustomerIdentifier != null) __obj.updateDynamic("CustomerIdentifier")(CustomerIdentifier.asInstanceOf[js.Any])
-    if (Dimension != null) __obj.updateDynamic("Dimension")(Dimension.asInstanceOf[js.Any])
-    if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
-    if (ProductCode != null) __obj.updateDynamic("ProductCode")(ProductCode.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entitlement]
   }
+  @scala.inline
+  implicit class EntitlementOps[Self <: Entitlement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomerIdentifier(value: NonEmptyString): Self = this.set("CustomerIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerIdentifier: Self = this.set("CustomerIdentifier", js.undefined)
+    @scala.inline
+    def setDimension(value: NonEmptyString): Self = this.set("Dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension: Self = this.set("Dimension", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: Timestamp): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
+    @scala.inline
+    def setProductCode(value: ProductCode): Self = this.set("ProductCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductCode: Self = this.set("ProductCode", js.undefined)
+    @scala.inline
+    def setValue(value: EntitlementValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+  }
+  
 }
 

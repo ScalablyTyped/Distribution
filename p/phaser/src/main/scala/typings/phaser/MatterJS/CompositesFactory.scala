@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CompositesFactory extends js.Object {
   /**
     * Creates a composite with simple car setup of bodies and constraints.
@@ -15,7 +16,7 @@ trait CompositesFactory extends js.Object {
     * @param {number} wheelSize
     * @return {composite} A new composite car body
     */
-  def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType
+  def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType = js.native
   /**
     * Chains all bodies in the given composite together using constraints.
     * @method chain
@@ -34,7 +35,7 @@ trait CompositesFactory extends js.Object {
     xOffsetB: Double,
     yOffsetB: Double,
     options: js.Any
-  ): CompositeType
+  ): CompositeType = js.native
   /**
     * Connects bodies in the composite with constraints in a grid pattern, with optional cross braces.
     * @method mesh
@@ -45,7 +46,7 @@ trait CompositesFactory extends js.Object {
     * @param {object} options
     * @return {composite} The composite containing objects meshed together with constraints
     */
-  def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType
+  def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType = js.native
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
     * @method newtonsCradle
@@ -56,7 +57,7 @@ trait CompositesFactory extends js.Object {
     * @param {number} length
     * @return {composite} A new composite newtonsCradle body
     */
-  def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType
+  def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType = js.native
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
     * This function uses the body's bounds to prevent overlaps.
@@ -78,7 +79,7 @@ trait CompositesFactory extends js.Object {
     columnGap: Double,
     rowGap: Double,
     callback: js.Function
-  ): CompositeType
+  ): CompositeType = js.native
   /**
     * Creates a simple soft body like object.
     * @method softBody
@@ -105,7 +106,7 @@ trait CompositesFactory extends js.Object {
     particleRadius: Double,
     particleOptions: js.Any,
     constraintOptions: js.Any
-  ): CompositeType
+  ): CompositeType = js.native
   /**
     * Create a new composite containing bodies created in the callback in a grid arrangement.
     * This function uses the body's bounds to prevent overlaps.
@@ -127,7 +128,7 @@ trait CompositesFactory extends js.Object {
     columnGap: Double,
     rowGap: Double,
     callback: js.Function
-  ): CompositeType
+  ): CompositeType = js.native
 }
 
 object CompositesFactory {
@@ -144,5 +145,34 @@ object CompositesFactory {
     val __obj = js.Dynamic.literal(car = js.Any.fromFunction5(car), chain = js.Any.fromFunction6(chain), mesh = js.Any.fromFunction5(mesh), newtonsCradle = js.Any.fromFunction5(newtonsCradle), pyramid = js.Any.fromFunction7(pyramid), softBody = js.Any.fromFunction10(softBody), stack = js.Any.fromFunction7(stack))
     __obj.asInstanceOf[CompositesFactory]
   }
+  @scala.inline
+  implicit class CompositesFactoryOps[Self <: CompositesFactory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCar(value: (Double, Double, Double, Double, Double) => CompositeType): Self = this.set("car", js.Any.fromFunction5(value))
+    @scala.inline
+    def setChain(value: (CompositeType, Double, Double, Double, Double, js.Any) => CompositeType): Self = this.set("chain", js.Any.fromFunction6(value))
+    @scala.inline
+    def setMesh(value: (CompositeType, Double, Double, Boolean, js.Any) => CompositeType): Self = this.set("mesh", js.Any.fromFunction5(value))
+    @scala.inline
+    def setNewtonsCradle(value: (Double, Double, Double, Double, Double) => CompositeType): Self = this.set("newtonsCradle", js.Any.fromFunction5(value))
+    @scala.inline
+    def setPyramid(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = this.set("pyramid", js.Any.fromFunction7(value))
+    @scala.inline
+    def setSoftBody(
+      value: (Double, Double, Double, Double, Double, Double, Boolean, Double, js.Any, js.Any) => CompositeType
+    ): Self = this.set("softBody", js.Any.fromFunction10(value))
+    @scala.inline
+    def setStack(value: (Double, Double, Double, Double, Double, Double, js.Function) => CompositeType): Self = this.set("stack", js.Any.fromFunction7(value))
+  }
+  
 }
 

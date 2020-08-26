@@ -42,10 +42,34 @@ object childProcessMod extends js.Object {
     callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
   def execFile(file: String): ChildProcess = js.native
+  def execFile(
+    file: String,
+    args: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): ChildProcess = js.native
+  def execFile(
+    file: String,
+    args: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): ChildProcess = js.native
+  def execFile(file: String, args: js.UndefOr[scala.Nothing], options: Cwd): ChildProcess = js.native
+  def execFile(
+    file: String,
+    args: js.UndefOr[scala.Nothing],
+    options: Cwd,
+    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): ChildProcess = js.native
   def execFile(file: String, args: js.Array[String]): ChildProcess = js.native
   def execFile(
     file: String,
     args: js.Array[String],
+    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): ChildProcess = js.native
+  def execFile(
+    file: String,
+    args: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
   def execFile(file: String, args: js.Array[String], options: Cwd): ChildProcess = js.native
@@ -60,14 +84,17 @@ object childProcessMod extends js.Object {
     callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
   def execFileSync(command: String): ChildProcess = js.native
+  def execFileSync(command: String, args: js.UndefOr[scala.Nothing], options: Env): ChildProcess = js.native
   def execFileSync(command: String, args: js.Array[String]): ChildProcess = js.native
   def execFileSync(command: String, args: js.Array[String], options: Env): ChildProcess = js.native
   def execSync(command: String): ChildProcess = js.native
   def execSync(command: String, options: Env): ChildProcess = js.native
   def fork(modulePath: String): ChildProcess = js.native
+  def fork(modulePath: String, args: js.UndefOr[scala.Nothing], options: Encoding): ChildProcess = js.native
   def fork(modulePath: String, args: js.Array[String]): ChildProcess = js.native
   def fork(modulePath: String, args: js.Array[String], options: Encoding): ChildProcess = js.native
   def spawn(command: String): ChildProcess = js.native
+  def spawn(command: String, args: js.UndefOr[scala.Nothing], options: Custom): ChildProcess = js.native
   def spawn(command: String, args: js.Array[String]): ChildProcess = js.native
   def spawn(command: String, args: js.Array[String], options: Custom): ChildProcess = js.native
 }

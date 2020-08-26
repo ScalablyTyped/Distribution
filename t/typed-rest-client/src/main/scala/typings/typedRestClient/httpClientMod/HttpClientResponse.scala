@@ -10,9 +10,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class HttpClientResponse protected () extends IHttpClientResponse {
   def this(message: IncomingMessage) = this()
-  /* CompleteClass */
-  override var message: IncomingMessage = js.native
-  /* CompleteClass */
-  override def readBody(): js.Promise[String] = js.native
 }
 

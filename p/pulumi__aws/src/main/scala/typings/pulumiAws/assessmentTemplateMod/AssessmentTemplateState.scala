@@ -25,9 +25,9 @@ trait AssessmentTemplateState extends js.Object {
     */
   val rulesPackageArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * Key-value mapping of tags for the Inspector assessment template.
+    * Key-value map of tags for the Inspector assessment template.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The assessment target ARN to attach the template to.
     */
@@ -36,22 +36,48 @@ trait AssessmentTemplateState extends js.Object {
 
 object AssessmentTemplateState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    duration: Input[Double] = null,
-    name: Input[String] = null,
-    rulesPackageArns: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null,
-    targetArn: Input[String] = null
-  ): AssessmentTemplateState = {
+  def apply(): AssessmentTemplateState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rulesPackageArns != null) __obj.updateDynamic("rulesPackageArns")(rulesPackageArns.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (targetArn != null) __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentTemplateState]
   }
+  @scala.inline
+  implicit class AssessmentTemplateStateOps[Self <: AssessmentTemplateState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDuration(value: Input[Double]): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRulesPackageArnsVarargs(value: Input[String]*): Self = this.set("rulesPackageArns", js.Array(value :_*))
+    @scala.inline
+    def setRulesPackageArns(value: Input[js.Array[Input[String]]]): Self = this.set("rulesPackageArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRulesPackageArns: Self = this.set("rulesPackageArns", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTargetArn(value: Input[String]): Self = this.set("targetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetArn: Self = this.set("targetArn", js.undefined)
+  }
+  
 }
 

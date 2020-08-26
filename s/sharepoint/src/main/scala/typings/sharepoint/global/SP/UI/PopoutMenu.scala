@@ -21,17 +21,6 @@ class PopoutMenu protected ()
     closeIconHeight: Double,
     closeIconWidth: Double
   ) = this()
-  /* CompleteClass */
-  override def closeMenu(): Unit = js.native
-  //#region Methods
-  /**
-    * Releases resources held by an object that implements the Sys.IDisposable interface.
-    * Implement the dispose method to close or release resources held by an object, or to prepare an object for reuse.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  /* CompleteClass */
-  override def launchMenu(): Unit = js.native
 }
 
 /* static members */

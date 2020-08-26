@@ -10,12 +10,7 @@ class Size protected ()
   extends typings.googlemaps.google.maps.Size {
   def this(width: Double, height: Double) = this()
   def this(width: Double, height: Double, widthUnit: String) = this()
+  def this(width: Double, height: Double, widthUnit: js.UndefOr[scala.Nothing], heightUnit: String) = this()
   def this(width: Double, height: Double, widthUnit: String, heightUnit: String) = this()
-  /* CompleteClass */
-  override var height: Double = js.native
-  /* CompleteClass */
-  override var width: Double = js.native
-  /* CompleteClass */
-  override def equals(other: typings.googlemaps.google.maps.Size): Boolean = js.native
 }
 

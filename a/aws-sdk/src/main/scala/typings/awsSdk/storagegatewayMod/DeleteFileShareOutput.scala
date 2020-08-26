@@ -14,10 +14,26 @@ trait DeleteFileShareOutput extends js.Object {
 
 object DeleteFileShareOutput {
   @scala.inline
-  def apply(FileShareARN: FileShareARN = null): DeleteFileShareOutput = {
+  def apply(): DeleteFileShareOutput = {
     val __obj = js.Dynamic.literal()
-    if (FileShareARN != null) __obj.updateDynamic("FileShareARN")(FileShareARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFileShareOutput]
   }
+  @scala.inline
+  implicit class DeleteFileShareOutputOps[Self <: DeleteFileShareOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileShareARN(value: FileShareARN): Self = this.set("FileShareARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileShareARN: Self = this.set("FileShareARN", js.undefined)
+  }
+  
 }
 

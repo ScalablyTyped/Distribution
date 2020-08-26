@@ -12,7 +12,7 @@ Dht22 control using node.js and pigpio.
 | Keywords           | DHT, DHT11, DHT22, AM2302, pigpio, raspberry, pi |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 386 |
+| # downloads        | 384 |
 | # stars            | 0 |
 
 ## Links

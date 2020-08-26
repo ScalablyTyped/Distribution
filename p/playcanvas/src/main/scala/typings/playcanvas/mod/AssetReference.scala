@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 /**
   * An object that manages the case where an object holds a reference to an asset and needs to be notified when
-  changes occur in the asset. e.g. notifications include load, add and remove events.
+  * changes occur in the asset. e.g. notifications include load, add and remove events.
   * @example
   * var reference = new pc.AssetReference('textureAsset', this, this.app.assets, {
-  load: this.onTextureAssetLoad,
-  add: this.onTextureAssetAdd,
-  remove: this.onTextureAssetRemove
-  }, this);
-  reference.id = this.textureAsset.id;
+  *     load: this.onTextureAssetLoad,
+  *     add: this.onTextureAssetAdd,
+  *     remove: this.onTextureAssetRemove
+  * }, this);
+  * reference.id = this.textureAsset.id;
   * @property id - Get or set the asset id which this references. One of either id or url must be set to initialize an asset reference.
   * @property url - Get or set the asset url which this references. One of either id or url must be called to initialize an asset reference.
   * @param propertyName - The name of the property that the asset is stored under, passed into callbacks to enable updating.
@@ -56,15 +56,5 @@ class AssetReference protected ()
     callbacks: Add,
     scope: js.Any
   ) = this()
-  /**
-    * Get or set the asset id which this references. One of either id or url must be set to initialize an asset reference.
-    */
-  /* CompleteClass */
-  override var id: Double = js.native
-  /**
-    * Get or set the asset url which this references. One of either id or url must be called to initialize an asset reference.
-    */
-  /* CompleteClass */
-  override var url: String = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.pulumiAws.detectorMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -21,11 +22,16 @@ class Detector protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: DetectorArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: DetectorArgs, opts: CustomResourceOptions) = this()
   /**
     * The AWS account ID of the GuardDuty detector
     */
   val accountId: Output_[String] = js.native
+  /**
+    * Amazon Resource Name (ARN) of the GuardDuty detector
+    */
+  val arn: Output_[String] = js.native
   /**
     * Enable monitoring and feedback reporting. Setting to `false` is equivalent to "suspending" GuardDuty. Defaults to `true`.
     */
@@ -34,6 +40,10 @@ class Detector protected () extends CustomResource {
     * Specifies the frequency of notifications sent for subsequent finding occurrences. If the detector is a GuardDuty member account, the value is determined by the GuardDuty master account and cannot be modified, otherwise defaults to `SIX_HOURS`. For standalone and GuardDuty master accounts, it must be configured in this provider to enable drift detection. Valid values for standalone and master accounts: `FIFTEEN_MINUTES`, `ONE_HOUR`, `SIX_HOURS`. See [AWS Documentation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html#guardduty_findings_cloudwatch_notification_frequency) for more information.
     */
   val findingPublishingFrequency: Output_[String] = js.native
+  /**
+    * Key-value map of resource tags.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -47,8 +57,10 @@ object Detector extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Detector = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Detector = js.native
   def get(name: String, id: Input[ID], state: DetectorState): Detector = js.native
   def get(name: String, id: Input[ID], state: DetectorState, opts: CustomResourceOptions): Detector = js.native
   /**

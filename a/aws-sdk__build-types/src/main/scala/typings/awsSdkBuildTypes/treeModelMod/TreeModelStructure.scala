@@ -9,14 +9,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeModelStructure
   extends Structure
      with Documented
      with Named {
-  var exception: js.UndefOr[Boolean] = js.undefined
+  var exception: js.UndefOr[Boolean] = js.native
   @JSName("members")
-  var members_TreeModelStructure: StringDictionary[TreeModelMember]
-  var topLevel: js.UndefOr[input | output] = js.undefined
+  var members_TreeModelStructure: StringDictionary[TreeModelMember] = js.native
+  var topLevel: js.UndefOr[input | output] = js.native
 }
 
 object TreeModelStructure {
@@ -26,23 +27,34 @@ object TreeModelStructure {
     members: StringDictionary[TreeModelMember],
     name: String,
     required: js.Array[String],
-    `type`: structure,
-    exception: js.UndefOr[Boolean] = js.undefined,
-    exceptionCode: String = null,
-    exceptionType: String = null,
-    payload: String = null,
-    sensitive: js.UndefOr[Boolean] = js.undefined,
-    topLevel: input | output = null
+    `type`: structure
   ): TreeModelStructure = {
     val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(exception)) __obj.updateDynamic("exception")(exception.get.asInstanceOf[js.Any])
-    if (exceptionCode != null) __obj.updateDynamic("exceptionCode")(exceptionCode.asInstanceOf[js.Any])
-    if (exceptionType != null) __obj.updateDynamic("exceptionType")(exceptionType.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.get.asInstanceOf[js.Any])
-    if (topLevel != null) __obj.updateDynamic("topLevel")(topLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeModelStructure]
   }
+  @scala.inline
+  implicit class TreeModelStructureOps[Self <: TreeModelStructure] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMembers(value: StringDictionary[TreeModelMember]): Self = this.set("members", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setException(value: Boolean): Self = this.set("exception", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteException: Self = this.set("exception", js.undefined)
+    @scala.inline
+    def setTopLevel(value: input | output): Self = this.set("topLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopLevel: Self = this.set("topLevel", js.undefined)
+  }
+  
 }
 

@@ -28,7 +28,11 @@ object Geom extends js.Object {
   class Circle ()
     extends typings.phaser.Phaser.Geom.Circle {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], radius: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, radius: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], radius: Double) = this()
     def this(x: Double, y: Double, radius: Double) = this()
   }
   
@@ -50,8 +54,24 @@ object Geom extends js.Object {
   class Ellipse ()
     extends typings.phaser.Phaser.Geom.Ellipse {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double) = this()
     def this(x: Double, y: Double, width: Double) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: Double
+    ) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
+    def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(x: Double, y: Double, width: Double, height: Double) = this()
   }
   
@@ -69,8 +89,24 @@ object Geom extends js.Object {
   class Line ()
     extends typings.phaser.Phaser.Geom.Line {
     def this(x1: Double) = this()
+    def this(x1: js.UndefOr[scala.Nothing], y1: Double) = this()
     def this(x1: Double, y1: Double) = this()
+    def this(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double) = this()
+    def this(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double) = this()
+    def this(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double) = this()
     def this(x1: Double, y1: Double, x2: Double) = this()
+    def this(
+      x1: js.UndefOr[scala.Nothing],
+      y1: js.UndefOr[scala.Nothing],
+      x2: js.UndefOr[scala.Nothing],
+      y2: Double
+    ) = this()
+    def this(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double) = this()
+    def this(x1: js.UndefOr[scala.Nothing], y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double) = this()
+    def this(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double, y2: Double) = this()
+    def this(x1: Double, y1: js.UndefOr[scala.Nothing], x2: js.UndefOr[scala.Nothing], y2: Double) = this()
+    def this(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double) = this()
+    def this(x1: Double, y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double) = this()
     def this(x1: Double, y1: Double, x2: Double, y2: Double) = this()
   }
   
@@ -86,6 +122,7 @@ object Geom extends js.Object {
   class Point ()
     extends typings.phaser.Phaser.Geom.Point {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
   }
   
@@ -127,8 +164,24 @@ object Geom extends js.Object {
   class Rectangle ()
     extends typings.phaser.Phaser.Geom.Rectangle {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double) = this()
     def this(x: Double, y: Double, width: Double) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: Double
+    ) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
+    def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(x: Double, y: Double, width: Double, height: Double) = this()
   }
   
@@ -282,6 +335,12 @@ object Geom extends js.Object {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     def GetPoints(circle: typings.phaser.Phaser.Geom.Circle, quantity: integer): js.Array[typings.phaser.Phaser.Geom.Point] = js.native
+    def GetPoints(
+      circle: typings.phaser.Phaser.Geom.Circle,
+      quantity: integer,
+      stepRate: js.UndefOr[scala.Nothing],
+      output: js.Array[_]
+    ): js.Array[typings.phaser.Phaser.Geom.Point] = js.native
     def GetPoints(circle: typings.phaser.Phaser.Geom.Circle, quantity: integer, stepRate: Double): js.Array[typings.phaser.Phaser.Geom.Point] = js.native
     def GetPoints(
       circle: typings.phaser.Phaser.Geom.Circle,
@@ -399,6 +458,12 @@ object Geom extends js.Object {
       * @param out An array to insert the points in to. If not provided a new array will be created.
       */
     def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer): O = js.native
+    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+      ellipse: typings.phaser.Phaser.Geom.Ellipse,
+      quantity: integer,
+      stepRate: js.UndefOr[scala.Nothing],
+      out: O
+    ): O = js.native
     def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer, stepRate: Double): O = js.native
     def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer, stepRate: Double, out: O): O = js.native
     /**
@@ -719,6 +784,11 @@ object Geom extends js.Object {
       * @param results An optional array to push the resulting coordinates into.
       */
     def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line): js.Array[Vector2Like] = js.native
+    def BresenhamPoints(
+      line: typings.phaser.Phaser.Geom.Line,
+      stepRate: js.UndefOr[scala.Nothing],
+      results: js.Array[Vector2Like]
+    ): js.Array[Vector2Like] = js.native
     def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer): js.Array[Vector2Like] = js.native
     def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer, results: js.Array[Vector2Like]): js.Array[Vector2Like] = js.native
     /**
@@ -788,6 +858,13 @@ object Geom extends js.Object {
       * @param easeParams An optional array of ease parameters to go with the ease.
       */
     def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: integer): O = js.native
+    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+      line: typings.phaser.Phaser.Geom.Line,
+      ease: String,
+      quantity: integer,
+      collinearThreshold: js.UndefOr[scala.Nothing],
+      easeParams: js.Array[Double]
+    ): O = js.native
     def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: integer, collinearThreshold: Double): O = js.native
     def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
@@ -797,6 +874,13 @@ object Geom extends js.Object {
       easeParams: js.Array[Double]
     ): O = js.native
     def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: js.Function, quantity: integer): O = js.native
+    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+      line: typings.phaser.Phaser.Geom.Line,
+      ease: js.Function,
+      quantity: integer,
+      collinearThreshold: js.UndefOr[scala.Nothing],
+      easeParams: js.Array[Double]
+    ): O = js.native
     def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
       ease: js.Function,
@@ -857,6 +941,12 @@ object Geom extends js.Object {
       * @param out An optional array of Points, or point-like objects, to store the coordinates of the points on the line.
       */
     def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer): O = js.native
+    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+      line: typings.phaser.Phaser.Geom.Line,
+      quantity: integer,
+      stepRate: js.UndefOr[scala.Nothing],
+      out: O
+    ): O = js.native
     def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer, stepRate: Double): O = js.native
     def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer, stepRate: Double, out: O): O = js.native
     def GetShortestDistance[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: js.Object): O = js.native
@@ -1025,6 +1115,12 @@ object Geom extends js.Object {
       * @param out An optional `Point` object whose `x` and `y` values will be set to the result of the interpolation (can also be any object with `x` and `y` properties). If omitted, a new `Point` created and returned.
       */
     def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point): O = js.native
+    def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](
+      pointA: typings.phaser.Phaser.Geom.Point,
+      pointB: typings.phaser.Phaser.Geom.Point,
+      t: js.UndefOr[scala.Nothing],
+      out: O
+    ): O = js.native
     def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point, t: Double): O = js.native
     def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](
       pointA: typings.phaser.Phaser.Geom.Point,
@@ -1116,6 +1212,12 @@ object Geom extends js.Object {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     def GetPoints(polygon: typings.phaser.Phaser.Geom.Polygon, quantity: integer): js.Array[typings.phaser.Phaser.Geom.Point] = js.native
+    def GetPoints(
+      polygon: typings.phaser.Phaser.Geom.Polygon,
+      quantity: integer,
+      stepRate: js.UndefOr[scala.Nothing],
+      output: js.Array[_]
+    ): js.Array[typings.phaser.Phaser.Geom.Point] = js.native
     def GetPoints(polygon: typings.phaser.Phaser.Geom.Polygon, quantity: integer, stepRate: Double): js.Array[typings.phaser.Phaser.Geom.Point] = js.native
     def GetPoints(
       polygon: typings.phaser.Phaser.Geom.Polygon,
@@ -1329,7 +1431,26 @@ object Geom extends js.Object {
       * @param out An array in which the perimeter points will be stored. If not given, a new array instance is created.
       */
     def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle): O = js.native
+    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+      rect: typings.phaser.Phaser.Geom.Rectangle,
+      step: js.UndefOr[scala.Nothing],
+      quantity: js.UndefOr[scala.Nothing],
+      out: O
+    ): O = js.native
+    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: js.UndefOr[scala.Nothing], quantity: integer): O = js.native
+    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+      rect: typings.phaser.Phaser.Geom.Rectangle,
+      step: js.UndefOr[scala.Nothing],
+      quantity: integer,
+      out: O
+    ): O = js.native
     def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double): O = js.native
+    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+      rect: typings.phaser.Phaser.Geom.Rectangle,
+      step: Double,
+      quantity: js.UndefOr[scala.Nothing],
+      out: O
+    ): O = js.native
     def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer): O = js.native
     def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer, out: O): O = js.native
     /**
@@ -1449,8 +1570,48 @@ object Geom extends js.Object {
       * @param out An array to store the resulting Triangle instances in. If not provided, a new array is created.
       */
     def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_]): O = js.native
+    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](
+      data: js.Array[_],
+      holes: js.UndefOr[scala.Nothing],
+      scaleX: js.UndefOr[scala.Nothing],
+      scaleY: js.UndefOr[scala.Nothing],
+      out: O
+    ): O = js.native
+    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](
+      data: js.Array[_],
+      holes: js.UndefOr[scala.Nothing],
+      scaleX: js.UndefOr[scala.Nothing],
+      scaleY: Double
+    ): O = js.native
+    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](
+      data: js.Array[_],
+      holes: js.UndefOr[scala.Nothing],
+      scaleX: js.UndefOr[scala.Nothing],
+      scaleY: Double,
+      out: O
+    ): O = js.native
+    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_], holes: js.UndefOr[scala.Nothing], scaleX: Double): O = js.native
+    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](
+      data: js.Array[_],
+      holes: js.UndefOr[scala.Nothing],
+      scaleX: Double,
+      scaleY: js.UndefOr[scala.Nothing],
+      out: O
+    ): O = js.native
+    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_], holes: js.UndefOr[scala.Nothing], scaleX: Double, scaleY: Double): O = js.native
+    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_], holes: js.UndefOr[scala.Nothing], scaleX: Double, scaleY: Double, out: O): O = js.native
     def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_], holes: js.Array[_]): O = js.native
+    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](
+      data: js.Array[_],
+      holes: js.Array[_],
+      scaleX: js.UndefOr[scala.Nothing],
+      scaleY: js.UndefOr[scala.Nothing],
+      out: O
+    ): O = js.native
+    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_], holes: js.Array[_], scaleX: js.UndefOr[scala.Nothing], scaleY: Double): O = js.native
+    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_], holes: js.Array[_], scaleX: js.UndefOr[scala.Nothing], scaleY: Double, out: O): O = js.native
     def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_], holes: js.Array[_], scaleX: Double): O = js.native
+    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_], holes: js.Array[_], scaleX: Double, scaleY: js.UndefOr[scala.Nothing], out: O): O = js.native
     def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_], holes: js.Array[_], scaleX: Double, scaleY: Double): O = js.native
     def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[_], holes: js.Array[_], scaleX: Double, scaleY: Double, out: O): O = js.native
     /**
@@ -1518,6 +1679,12 @@ object Geom extends js.Object {
       * @param out If provided, the points that are within the triangle will be appended to this array instead of being added to a new array. If `returnFirst` is true, only the first point found within the triangle will be appended. This array will also be returned by this function.
       */
     def ContainsArray(triangle: typings.phaser.Phaser.Geom.Triangle, points: js.Array[typings.phaser.Phaser.Geom.Point]): js.Array[typings.phaser.Phaser.Geom.Point] = js.native
+    def ContainsArray(
+      triangle: typings.phaser.Phaser.Geom.Triangle,
+      points: js.Array[typings.phaser.Phaser.Geom.Point],
+      returnFirst: js.UndefOr[scala.Nothing],
+      out: js.Array[_]
+    ): js.Array[typings.phaser.Phaser.Geom.Point] = js.native
     def ContainsArray(
       triangle: typings.phaser.Phaser.Geom.Triangle,
       points: js.Array[typings.phaser.Phaser.Geom.Point],

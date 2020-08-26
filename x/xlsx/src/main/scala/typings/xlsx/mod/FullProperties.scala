@@ -5,83 +5,110 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FullProperties extends Properties {
-  var AppVersion: js.UndefOr[String] = js.undefined
-  var Application: js.UndefOr[String] = js.undefined
-  var ContentStatus: js.UndefOr[String] = js.undefined
-  var DocSecurity: js.UndefOr[String] = js.undefined
-  var HyperlinksChanged: js.UndefOr[Boolean] = js.undefined
-  var Identifier: js.UndefOr[String] = js.undefined
-  var Language: js.UndefOr[String] = js.undefined
-  var LastPrinted: js.UndefOr[String] = js.undefined
-  var LinksUpToDate: js.UndefOr[Boolean] = js.undefined
-  var ModifiedDate: js.UndefOr[Date] = js.undefined
-  var Revision: js.UndefOr[String | Double] = js.undefined
-  var ScaleCrop: js.UndefOr[Boolean] = js.undefined
-  var SharedDoc: js.UndefOr[Boolean] = js.undefined
-  var SheetNames: js.UndefOr[js.Array[String]] = js.undefined
-  var Version: js.UndefOr[String] = js.undefined
-  var Worksheets: js.UndefOr[Double] = js.undefined
+  var AppVersion: js.UndefOr[String] = js.native
+  var Application: js.UndefOr[String] = js.native
+  var ContentStatus: js.UndefOr[String] = js.native
+  var DocSecurity: js.UndefOr[String] = js.native
+  var HyperlinksChanged: js.UndefOr[Boolean] = js.native
+  var Identifier: js.UndefOr[String] = js.native
+  var Language: js.UndefOr[String] = js.native
+  var LastPrinted: js.UndefOr[String] = js.native
+  var LinksUpToDate: js.UndefOr[Boolean] = js.native
+  var ModifiedDate: js.UndefOr[Date] = js.native
+  var Revision: js.UndefOr[String | Double] = js.native
+  var ScaleCrop: js.UndefOr[Boolean] = js.native
+  var SharedDoc: js.UndefOr[Boolean] = js.native
+  var SheetNames: js.UndefOr[js.Array[String]] = js.native
+  var Version: js.UndefOr[String] = js.native
+  var Worksheets: js.UndefOr[Double] = js.native
 }
 
 object FullProperties {
   @scala.inline
-  def apply(
-    AppVersion: String = null,
-    Application: String = null,
-    Author: String = null,
-    Category: String = null,
-    Comments: String = null,
-    Company: String = null,
-    ContentStatus: String = null,
-    CreatedDate: Date = null,
-    DocSecurity: String = null,
-    HyperlinksChanged: js.UndefOr[Boolean] = js.undefined,
-    Identifier: String = null,
-    Keywords: String = null,
-    Language: String = null,
-    LastAuthor: String = null,
-    LastPrinted: String = null,
-    LinksUpToDate: js.UndefOr[Boolean] = js.undefined,
-    Manager: String = null,
-    ModifiedDate: Date = null,
-    Revision: String | Double = null,
-    ScaleCrop: js.UndefOr[Boolean] = js.undefined,
-    SharedDoc: js.UndefOr[Boolean] = js.undefined,
-    SheetNames: js.Array[String] = null,
-    Subject: String = null,
-    Title: String = null,
-    Version: String = null,
-    Worksheets: js.UndefOr[Double] = js.undefined
-  ): FullProperties = {
+  def apply(): FullProperties = {
     val __obj = js.Dynamic.literal()
-    if (AppVersion != null) __obj.updateDynamic("AppVersion")(AppVersion.asInstanceOf[js.Any])
-    if (Application != null) __obj.updateDynamic("Application")(Application.asInstanceOf[js.Any])
-    if (Author != null) __obj.updateDynamic("Author")(Author.asInstanceOf[js.Any])
-    if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
-    if (Comments != null) __obj.updateDynamic("Comments")(Comments.asInstanceOf[js.Any])
-    if (Company != null) __obj.updateDynamic("Company")(Company.asInstanceOf[js.Any])
-    if (ContentStatus != null) __obj.updateDynamic("ContentStatus")(ContentStatus.asInstanceOf[js.Any])
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (DocSecurity != null) __obj.updateDynamic("DocSecurity")(DocSecurity.asInstanceOf[js.Any])
-    if (!js.isUndefined(HyperlinksChanged)) __obj.updateDynamic("HyperlinksChanged")(HyperlinksChanged.get.asInstanceOf[js.Any])
-    if (Identifier != null) __obj.updateDynamic("Identifier")(Identifier.asInstanceOf[js.Any])
-    if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords.asInstanceOf[js.Any])
-    if (Language != null) __obj.updateDynamic("Language")(Language.asInstanceOf[js.Any])
-    if (LastAuthor != null) __obj.updateDynamic("LastAuthor")(LastAuthor.asInstanceOf[js.Any])
-    if (LastPrinted != null) __obj.updateDynamic("LastPrinted")(LastPrinted.asInstanceOf[js.Any])
-    if (!js.isUndefined(LinksUpToDate)) __obj.updateDynamic("LinksUpToDate")(LinksUpToDate.get.asInstanceOf[js.Any])
-    if (Manager != null) __obj.updateDynamic("Manager")(Manager.asInstanceOf[js.Any])
-    if (ModifiedDate != null) __obj.updateDynamic("ModifiedDate")(ModifiedDate.asInstanceOf[js.Any])
-    if (Revision != null) __obj.updateDynamic("Revision")(Revision.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScaleCrop)) __obj.updateDynamic("ScaleCrop")(ScaleCrop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SharedDoc)) __obj.updateDynamic("SharedDoc")(SharedDoc.get.asInstanceOf[js.Any])
-    if (SheetNames != null) __obj.updateDynamic("SheetNames")(SheetNames.asInstanceOf[js.Any])
-    if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
-    if (!js.isUndefined(Worksheets)) __obj.updateDynamic("Worksheets")(Worksheets.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullProperties]
   }
+  @scala.inline
+  implicit class FullPropertiesOps[Self <: FullProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppVersion(value: String): Self = this.set("AppVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppVersion: Self = this.set("AppVersion", js.undefined)
+    @scala.inline
+    def setApplication(value: String): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplication: Self = this.set("Application", js.undefined)
+    @scala.inline
+    def setContentStatus(value: String): Self = this.set("ContentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentStatus: Self = this.set("ContentStatus", js.undefined)
+    @scala.inline
+    def setDocSecurity(value: String): Self = this.set("DocSecurity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocSecurity: Self = this.set("DocSecurity", js.undefined)
+    @scala.inline
+    def setHyperlinksChanged(value: Boolean): Self = this.set("HyperlinksChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHyperlinksChanged: Self = this.set("HyperlinksChanged", js.undefined)
+    @scala.inline
+    def setIdentifier(value: String): Self = this.set("Identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("Identifier", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("Language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("Language", js.undefined)
+    @scala.inline
+    def setLastPrinted(value: String): Self = this.set("LastPrinted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastPrinted: Self = this.set("LastPrinted", js.undefined)
+    @scala.inline
+    def setLinksUpToDate(value: Boolean): Self = this.set("LinksUpToDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinksUpToDate: Self = this.set("LinksUpToDate", js.undefined)
+    @scala.inline
+    def setModifiedDate(value: Date): Self = this.set("ModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedDate: Self = this.set("ModifiedDate", js.undefined)
+    @scala.inline
+    def setRevision(value: String | Double): Self = this.set("Revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevision: Self = this.set("Revision", js.undefined)
+    @scala.inline
+    def setScaleCrop(value: Boolean): Self = this.set("ScaleCrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleCrop: Self = this.set("ScaleCrop", js.undefined)
+    @scala.inline
+    def setSharedDoc(value: Boolean): Self = this.set("SharedDoc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedDoc: Self = this.set("SharedDoc", js.undefined)
+    @scala.inline
+    def setSheetNamesVarargs(value: String*): Self = this.set("SheetNames", js.Array(value :_*))
+    @scala.inline
+    def setSheetNames(value: js.Array[String]): Self = this.set("SheetNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetNames: Self = this.set("SheetNames", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+    @scala.inline
+    def setWorksheets(value: Double): Self = this.set("Worksheets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorksheets: Self = this.set("Worksheets", js.undefined)
+  }
+  
 }
 

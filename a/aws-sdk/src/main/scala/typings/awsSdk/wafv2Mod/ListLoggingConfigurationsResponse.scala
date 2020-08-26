@@ -18,11 +18,32 @@ trait ListLoggingConfigurationsResponse extends js.Object {
 
 object ListLoggingConfigurationsResponse {
   @scala.inline
-  def apply(LoggingConfigurations: LoggingConfigurations = null, NextMarker: NextMarker = null): ListLoggingConfigurationsResponse = {
+  def apply(): ListLoggingConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (LoggingConfigurations != null) __obj.updateDynamic("LoggingConfigurations")(LoggingConfigurations.asInstanceOf[js.Any])
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLoggingConfigurationsResponse]
   }
+  @scala.inline
+  implicit class ListLoggingConfigurationsResponseOps[Self <: ListLoggingConfigurationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoggingConfigurationsVarargs(value: LoggingConfiguration*): Self = this.set("LoggingConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setLoggingConfigurations(value: LoggingConfigurations): Self = this.set("LoggingConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfigurations: Self = this.set("LoggingConfigurations", js.undefined)
+    @scala.inline
+    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait GetDocumentResponse extends js.Object {
 
 object GetDocumentResponse {
   @scala.inline
-  def apply(CustomMetadata: CustomMetadataMap = null, Metadata: DocumentMetadata = null): GetDocumentResponse = {
+  def apply(): GetDocumentResponse = {
     val __obj = js.Dynamic.literal()
-    if (CustomMetadata != null) __obj.updateDynamic("CustomMetadata")(CustomMetadata.asInstanceOf[js.Any])
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDocumentResponse]
   }
+  @scala.inline
+  implicit class GetDocumentResponseOps[Self <: GetDocumentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomMetadata(value: CustomMetadataMap): Self = this.set("CustomMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMetadata: Self = this.set("CustomMetadata", js.undefined)
+    @scala.inline
+    def setMetadata(value: DocumentMetadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+  }
+  
 }
 

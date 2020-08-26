@@ -15,7 +15,7 @@ trait EventEmitter[CallbackType, ResultType, EventType, StateType] extends js.Ob
   def listeners(eventName: EventType): js.Array[CallbackType] | Null = js.native
   def off(): Unit = js.native
   def off(eventOrCallback: CallbackType | EventType): Unit = js.native
-  def off(eventOrCallback: CallbackType | EventType, callback: CallbackType): Unit = js.native
+  def off(eventOrCallback: js.UndefOr[CallbackType | EventType], callback: CallbackType): Unit = js.native
   def on(eventOrCallback: CallbackType | EventType): Unit = js.native
   def on(eventOrCallback: CallbackType | EventType, callback: CallbackType): Unit = js.native
   def on(eventOrCallback: js.Array[EventType]): Unit = js.native

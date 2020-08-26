@@ -7,6 +7,7 @@ import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.overlaysInterfaceMod.OverlayInterface
 import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +19,7 @@ object alertMod extends js.Object {
   class Alert ()
     extends ComponentInterface
        with OverlayInterface {
-    var activeId: js.UndefOr[js.Any] = js.native
+    var activeId: js.Any = js.native
     /**
       * If `true`, the alert will be dismissed when the backdrop is clicked.
       */
@@ -38,17 +39,18 @@ object alertMod extends js.Object {
     var dispatchCancelHandler: js.Any = js.native
     @JSName("el")
     var el_Alert: HTMLIonAlertElement = js.native
-    var gesture: js.UndefOr[js.Any] = js.native
+    var gesture: js.Any = js.native
     var getValues: js.Any = js.native
     /**
       * The main title in the heading of the alert.
       */
     var header: js.UndefOr[String] = js.native
-    var inputType: js.UndefOr[js.Any] = js.native
+    var inputType: js.Any = js.native
     /**
       * Array of input to show in the alert.
       */
     var inputs: js.Array[AlertInput] = js.native
+    var lastFocus: js.UndefOr[HTMLElement] = js.native
     /**
       * The main message to be displayed in the alert.
       * `message` can accept either plaintext or HTML as a string.
@@ -78,13 +80,15 @@ object alertMod extends js.Object {
       * [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
       */
     var translucent: Boolean = js.native
-    var wrapperEl: js.UndefOr[js.Any] = js.native
+    var wrapperEl: js.Any = js.native
     def buttonsChanged(): Unit = js.native
     @JSName("componentDidLoad")
     def componentDidLoad_MAlert(): Unit = js.native
     def componentDidUnload(): Unit = js.native
     @JSName("componentWillLoad")
     def componentWillLoad_MAlert(): Unit = js.native
+    @JSName("connectedCallback")
+    def connectedCallback_MAlert(): Unit = js.native
     def inputsChanged(): Unit = js.native
     /**
       * Returns a promise that resolves when the alert did dismiss.

@@ -18,11 +18,30 @@ trait CreateBGPPeerRequest extends js.Object {
 
 object CreateBGPPeerRequest {
   @scala.inline
-  def apply(newBGPPeer: NewBGPPeer = null, virtualInterfaceId: VirtualInterfaceId = null): CreateBGPPeerRequest = {
+  def apply(): CreateBGPPeerRequest = {
     val __obj = js.Dynamic.literal()
-    if (newBGPPeer != null) __obj.updateDynamic("newBGPPeer")(newBGPPeer.asInstanceOf[js.Any])
-    if (virtualInterfaceId != null) __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBGPPeerRequest]
   }
+  @scala.inline
+  implicit class CreateBGPPeerRequestOps[Self <: CreateBGPPeerRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewBGPPeer(value: NewBGPPeer): Self = this.set("newBGPPeer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewBGPPeer: Self = this.set("newBGPPeer", js.undefined)
+    @scala.inline
+    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = this.set("virtualInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualInterfaceId: Self = this.set("virtualInterfaceId", js.undefined)
+  }
+  
 }
 

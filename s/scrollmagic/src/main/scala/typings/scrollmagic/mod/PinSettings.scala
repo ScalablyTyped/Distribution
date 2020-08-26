@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PinSettings extends js.Object {
-  var pushFollowers: js.UndefOr[Boolean] = js.undefined
-  var spacerClass: js.UndefOr[String] = js.undefined
+  var pushFollowers: js.UndefOr[Boolean] = js.native
+  var spacerClass: js.UndefOr[String] = js.native
 }
 
 object PinSettings {
   @scala.inline
-  def apply(pushFollowers: js.UndefOr[Boolean] = js.undefined, spacerClass: String = null): PinSettings = {
+  def apply(): PinSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(pushFollowers)) __obj.updateDynamic("pushFollowers")(pushFollowers.get.asInstanceOf[js.Any])
-    if (spacerClass != null) __obj.updateDynamic("spacerClass")(spacerClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[PinSettings]
   }
+  @scala.inline
+  implicit class PinSettingsOps[Self <: PinSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPushFollowers(value: Boolean): Self = this.set("pushFollowers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePushFollowers: Self = this.set("pushFollowers", js.undefined)
+    @scala.inline
+    def setSpacerClass(value: String): Self = this.set("spacerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacerClass: Self = this.set("spacerClass", js.undefined)
+  }
+  
 }
 

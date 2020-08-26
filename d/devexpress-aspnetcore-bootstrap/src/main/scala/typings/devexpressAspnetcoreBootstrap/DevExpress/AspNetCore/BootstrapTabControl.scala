@@ -18,6 +18,16 @@ trait BootstrapTabControl extends Control {
   def getTab(index: Double): BootstrapTab | Null = js.native
   def getTabByName(name: String): BootstrapTab | Null = js.native
   def getTabCount(): Double = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        BeginCallbackEventArgs | CallbackErrorEventArgs | EndCallbackEventArgs | EventArgs | TabControlTabCancelEventArgs | TabControlTabClickEventArgs | TabControlTabEventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_activeTabChanged(eventName: activeTabChanged): this.type = js.native
   @JSName("off")

@@ -12,6 +12,7 @@ object global extends js.Object {
   @js.native
   trait Assert extends js.Object {
     def dom(): default = js.native
+    def dom(target: js.UndefOr[scala.Nothing], rootElement: Element): default = js.native
     def dom(target: String): default = js.native
     def dom(target: String, rootElement: Element): default = js.native
     def dom(target: Null, rootElement: Element): default = js.native

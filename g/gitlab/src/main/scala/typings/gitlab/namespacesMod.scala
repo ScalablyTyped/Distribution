@@ -1,6 +1,6 @@
 package typings.gitlab
 
-import typings.gitlab.anon.searchstringSudo
+import typings.gitlab.anon.searchstringundefinedSudo
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
@@ -16,9 +16,9 @@ object namespacesMod extends js.Object {
     def all(): js.Promise[GetResponse] = js.native
     def all(options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native
     def show(namespaceId: String): js.Promise[GetResponse] = js.native
-    def show(namespaceId: String, options: searchstringSudo): js.Promise[GetResponse] = js.native
+    def show(namespaceId: String, options: searchstringundefinedSudo): js.Promise[GetResponse] = js.native
     def show(namespaceId: Double): js.Promise[GetResponse] = js.native
-    def show(namespaceId: Double, options: searchstringSudo): js.Promise[GetResponse] = js.native
+    def show(namespaceId: Double, options: searchstringundefinedSudo): js.Promise[GetResponse] = js.native
   }
   
 }

@@ -41,18 +41,38 @@ trait SchemaDeviceConfig extends js.Object {
 
 object SchemaDeviceConfig {
   @scala.inline
-  def apply(
-    binaryData: String = null,
-    cloudUpdateTime: String = null,
-    deviceAckTime: String = null,
-    version: String = null
-  ): SchemaDeviceConfig = {
+  def apply(): SchemaDeviceConfig = {
     val __obj = js.Dynamic.literal()
-    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData.asInstanceOf[js.Any])
-    if (cloudUpdateTime != null) __obj.updateDynamic("cloudUpdateTime")(cloudUpdateTime.asInstanceOf[js.Any])
-    if (deviceAckTime != null) __obj.updateDynamic("deviceAckTime")(deviceAckTime.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeviceConfig]
   }
+  @scala.inline
+  implicit class SchemaDeviceConfigOps[Self <: SchemaDeviceConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBinaryData(value: String): Self = this.set("binaryData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinaryData: Self = this.set("binaryData", js.undefined)
+    @scala.inline
+    def setCloudUpdateTime(value: String): Self = this.set("cloudUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudUpdateTime: Self = this.set("cloudUpdateTime", js.undefined)
+    @scala.inline
+    def setDeviceAckTime(value: String): Self = this.set("deviceAckTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceAckTime: Self = this.set("deviceAckTime", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

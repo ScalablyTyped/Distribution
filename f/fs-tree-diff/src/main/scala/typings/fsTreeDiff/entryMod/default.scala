@@ -11,14 +11,21 @@ import scala.scalajs.js.annotation._
 class default protected () extends Entry {
   def this(relativePath: String) = this()
   def this(relativePath: String, size: Double) = this()
+  def this(relativePath: String, size: js.UndefOr[scala.Nothing], mtime: Double) = this()
+  def this(relativePath: String, size: js.UndefOr[scala.Nothing], mtime: Date) = this()
   def this(relativePath: String, size: Double, mtime: Double) = this()
   def this(relativePath: String, size: Double, mtime: Date) = this()
+  def this(
+    relativePath: String,
+    size: js.UndefOr[scala.Nothing],
+    mtime: js.UndefOr[scala.Nothing],
+    mode: Double
+  ) = this()
+  def this(relativePath: String, size: js.UndefOr[scala.Nothing], mtime: Double, mode: Double) = this()
+  def this(relativePath: String, size: js.UndefOr[scala.Nothing], mtime: Date, mode: Double) = this()
+  def this(relativePath: String, size: Double, mtime: js.UndefOr[scala.Nothing], mode: Double) = this()
   def this(relativePath: String, size: Double, mtime: Double, mode: Double) = this()
   def this(relativePath: String, size: Double, mtime: Date, mode: Double) = this()
-  /* CompleteClass */
-  override var relativePath: String = js.native
-  /* CompleteClass */
-  override def isDirectory(): Boolean = js.native
 }
 
 /* static members */

@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Search.SearchPaneResultSuggestionChosenEventArgs")
 @js.native
 abstract class SearchPaneResultSuggestionChosenEventArgs ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneResultSuggestionChosenEventArgs {
-  /** The tag for the suggested result that the user selected. */
-  /* CompleteClass */
-  override var tag: String = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneResultSuggestionChosenEventArgs
 

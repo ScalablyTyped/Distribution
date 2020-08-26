@@ -27,6 +27,13 @@ object messagerMod extends js.Object {
       userAgent: UserAgent,
       targetURI: URI,
       content: String,
+      contentType: js.UndefOr[scala.Nothing],
+      options: MessagerOptions
+    ) = this()
+    def this(
+      userAgent: UserAgent,
+      targetURI: URI,
+      content: String,
       contentType: String,
       options: MessagerOptions
     ) = this()

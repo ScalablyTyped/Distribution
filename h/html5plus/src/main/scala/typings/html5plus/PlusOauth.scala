@@ -55,6 +55,7 @@ trait PlusOauth extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def getServices(): Unit = js.native
+  def getServices(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getServices(successCB: js.Function1[/* result */ js.Array[this.type], Unit]): Unit = js.native
   def getServices(
     successCB: js.Function1[/* result */ js.Array[this.type], Unit],

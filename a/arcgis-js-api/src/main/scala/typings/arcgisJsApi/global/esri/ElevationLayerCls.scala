@@ -15,33 +15,5 @@ import scala.scalajs.js.annotation._
 class ElevationLayerCls ()
   extends typings.arcgisJsApi.esri.ElevationLayer {
   def this(properties: ElevationLayerProperties) = this()
-  /**
-    * The copyright text as defined by the service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#copyright)
-    */
-  /* CompleteClass */
-  override var copyright: String = js.native
-  /**
-    * The portal item from which the layer is loaded. If the portal item references a Feature Service or Scene Service, then you can specify a single layer to load with the [layerId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#layerId) property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
-    */
-  /* CompleteClass */
-  override var portalItem: typings.arcgisJsApi.esri.PortalItem = js.native
-  /**
-    * The spatial reference of the layer as defined by the service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#spatialReference)
-    */
-  /* CompleteClass */
-  override val spatialReference: typings.arcgisJsApi.esri.SpatialReference = js.native
-  /**
-    * Contains information about the tiling scheme for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#tileInfo)
-    */
-  /* CompleteClass */
-  override var tileInfo: typings.arcgisJsApi.esri.TileInfo = js.native
 }
 

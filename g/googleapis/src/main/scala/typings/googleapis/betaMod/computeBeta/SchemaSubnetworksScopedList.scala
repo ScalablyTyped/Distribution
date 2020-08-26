@@ -20,11 +20,32 @@ trait SchemaSubnetworksScopedList extends js.Object {
 
 object SchemaSubnetworksScopedList {
   @scala.inline
-  def apply(subnetworks: js.Array[SchemaSubnetwork] = null, warning: Code = null): SchemaSubnetworksScopedList = {
+  def apply(): SchemaSubnetworksScopedList = {
     val __obj = js.Dynamic.literal()
-    if (subnetworks != null) __obj.updateDynamic("subnetworks")(subnetworks.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubnetworksScopedList]
   }
+  @scala.inline
+  implicit class SchemaSubnetworksScopedListOps[Self <: SchemaSubnetworksScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubnetworksVarargs(value: SchemaSubnetwork*): Self = this.set("subnetworks", js.Array(value :_*))
+    @scala.inline
+    def setSubnetworks(value: js.Array[SchemaSubnetwork]): Self = this.set("subnetworks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetworks: Self = this.set("subnetworks", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

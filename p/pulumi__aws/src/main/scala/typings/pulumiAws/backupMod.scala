@@ -1,11 +1,18 @@
 package typings.pulumiAws
 
+import typings.pulumiAws.getPlanMod.GetPlanArgs
+import typings.pulumiAws.getPlanMod.GetPlanResult
+import typings.pulumiAws.getSelectionMod.GetSelectionArgs
+import typings.pulumiAws.getSelectionMod.GetSelectionResult
+import typings.pulumiAws.getVaultMod.GetVaultArgs
+import typings.pulumiAws.getVaultMod.GetVaultResult
 import typings.pulumiAws.planMod.PlanArgs
 import typings.pulumiAws.planMod.PlanState
 import typings.pulumiAws.selectionMod.SelectionArgs
 import typings.pulumiAws.selectionMod.SelectionState
 import typings.pulumiAws.vaultMod.VaultArgs
 import typings.pulumiAws.vaultMod.VaultState
+import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
@@ -56,9 +63,16 @@ object backupMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: VaultArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: VaultArgs, opts: CustomResourceOptions) = this()
   }
   
+  def getPlan(args: GetPlanArgs): js.Promise[GetPlanResult] = js.native
+  def getPlan(args: GetPlanArgs, opts: InvokeOptions): js.Promise[GetPlanResult] = js.native
+  def getSelection(args: GetSelectionArgs): js.Promise[GetSelectionResult] = js.native
+  def getSelection(args: GetSelectionArgs, opts: InvokeOptions): js.Promise[GetSelectionResult] = js.native
+  def getVault(args: GetVaultArgs): js.Promise[GetVaultResult] = js.native
+  def getVault(args: GetVaultArgs, opts: InvokeOptions): js.Promise[GetVaultResult] = js.native
   /* static members */
   @js.native
   object Plan extends js.Object {
@@ -69,8 +83,10 @@ object backupMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.planMod.Plan = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.planMod.Plan = js.native
     def get(name: String, id: Input[ID], state: PlanState): typings.pulumiAws.planMod.Plan = js.native
     def get(name: String, id: Input[ID], state: PlanState, opts: CustomResourceOptions): typings.pulumiAws.planMod.Plan = js.native
     /**
@@ -90,8 +106,10 @@ object backupMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.selectionMod.Selection = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.selectionMod.Selection = js.native
     def get(name: String, id: Input[ID], state: SelectionState): typings.pulumiAws.selectionMod.Selection = js.native
     def get(name: String, id: Input[ID], state: SelectionState, opts: CustomResourceOptions): typings.pulumiAws.selectionMod.Selection = js.native
     /**
@@ -111,8 +129,10 @@ object backupMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.vaultMod.Vault = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vaultMod.Vault = js.native
     def get(name: String, id: Input[ID], state: VaultState): typings.pulumiAws.vaultMod.Vault = js.native
     def get(name: String, id: Input[ID], state: VaultState, opts: CustomResourceOptions): typings.pulumiAws.vaultMod.Vault = js.native
     /**

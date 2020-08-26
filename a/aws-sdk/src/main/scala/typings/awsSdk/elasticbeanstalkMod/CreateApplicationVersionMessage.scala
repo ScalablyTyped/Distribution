@@ -46,26 +46,56 @@ trait CreateApplicationVersionMessage extends js.Object {
 
 object CreateApplicationVersionMessage {
   @scala.inline
-  def apply(
-    ApplicationName: ApplicationName,
-    VersionLabel: VersionLabel,
-    AutoCreateApplication: js.UndefOr[AutoCreateApplication] = js.undefined,
-    BuildConfiguration: BuildConfiguration = null,
-    Description: Description = null,
-    Process: js.UndefOr[ApplicationVersionProccess] = js.undefined,
-    SourceBuildInformation: SourceBuildInformation = null,
-    SourceBundle: S3Location = null,
-    Tags: Tags = null
-  ): CreateApplicationVersionMessage = {
+  def apply(ApplicationName: ApplicationName, VersionLabel: VersionLabel): CreateApplicationVersionMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], VersionLabel = VersionLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoCreateApplication)) __obj.updateDynamic("AutoCreateApplication")(AutoCreateApplication.get.asInstanceOf[js.Any])
-    if (BuildConfiguration != null) __obj.updateDynamic("BuildConfiguration")(BuildConfiguration.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(Process)) __obj.updateDynamic("Process")(Process.get.asInstanceOf[js.Any])
-    if (SourceBuildInformation != null) __obj.updateDynamic("SourceBuildInformation")(SourceBuildInformation.asInstanceOf[js.Any])
-    if (SourceBundle != null) __obj.updateDynamic("SourceBundle")(SourceBundle.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationVersionMessage]
   }
+  @scala.inline
+  implicit class CreateApplicationVersionMessageOps[Self <: CreateApplicationVersionMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersionLabel(value: VersionLabel): Self = this.set("VersionLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoCreateApplication(value: AutoCreateApplication): Self = this.set("AutoCreateApplication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCreateApplication: Self = this.set("AutoCreateApplication", js.undefined)
+    @scala.inline
+    def setBuildConfiguration(value: BuildConfiguration): Self = this.set("BuildConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildConfiguration: Self = this.set("BuildConfiguration", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setProcess(value: ApplicationVersionProccess): Self = this.set("Process", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcess: Self = this.set("Process", js.undefined)
+    @scala.inline
+    def setSourceBuildInformation(value: SourceBuildInformation): Self = this.set("SourceBuildInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceBuildInformation: Self = this.set("SourceBuildInformation", js.undefined)
+    @scala.inline
+    def setSourceBundle(value: S3Location): Self = this.set("SourceBundle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceBundle: Self = this.set("SourceBundle", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

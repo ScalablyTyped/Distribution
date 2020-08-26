@@ -27,5 +27,26 @@ object Metric {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metric]
   }
+  @scala.inline
+  implicit class MetricOps[Self <: Metric] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrameName(value: String): Self = this.set("frameName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThreadStatesVarargs(value: String*): Self = this.set("threadStates", js.Array(value :_*))
+    @scala.inline
+    def setThreadStates(value: Strings): Self = this.set("threadStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: MetricType): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

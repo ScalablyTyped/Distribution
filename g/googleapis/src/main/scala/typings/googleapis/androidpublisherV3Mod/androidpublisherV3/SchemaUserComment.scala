@@ -67,34 +67,70 @@ trait SchemaUserComment extends js.Object {
 
 object SchemaUserComment {
   @scala.inline
-  def apply(
-    androidOsVersion: js.UndefOr[Double] = js.undefined,
-    appVersionCode: js.UndefOr[Double] = js.undefined,
-    appVersionName: String = null,
-    device: String = null,
-    deviceMetadata: SchemaDeviceMetadata = null,
-    lastModified: SchemaTimestamp = null,
-    originalText: String = null,
-    reviewerLanguage: String = null,
-    starRating: js.UndefOr[Double] = js.undefined,
-    text: String = null,
-    thumbsDownCount: js.UndefOr[Double] = js.undefined,
-    thumbsUpCount: js.UndefOr[Double] = js.undefined
-  ): SchemaUserComment = {
+  def apply(): SchemaUserComment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(androidOsVersion)) __obj.updateDynamic("androidOsVersion")(androidOsVersion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(appVersionCode)) __obj.updateDynamic("appVersionCode")(appVersionCode.get.asInstanceOf[js.Any])
-    if (appVersionName != null) __obj.updateDynamic("appVersionName")(appVersionName.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata.asInstanceOf[js.Any])
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
-    if (originalText != null) __obj.updateDynamic("originalText")(originalText.asInstanceOf[js.Any])
-    if (reviewerLanguage != null) __obj.updateDynamic("reviewerLanguage")(reviewerLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(starRating)) __obj.updateDynamic("starRating")(starRating.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumbsDownCount)) __obj.updateDynamic("thumbsDownCount")(thumbsDownCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumbsUpCount)) __obj.updateDynamic("thumbsUpCount")(thumbsUpCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserComment]
   }
+  @scala.inline
+  implicit class SchemaUserCommentOps[Self <: SchemaUserComment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidOsVersion(value: Double): Self = this.set("androidOsVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidOsVersion: Self = this.set("androidOsVersion", js.undefined)
+    @scala.inline
+    def setAppVersionCode(value: Double): Self = this.set("appVersionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppVersionCode: Self = this.set("appVersionCode", js.undefined)
+    @scala.inline
+    def setAppVersionName(value: String): Self = this.set("appVersionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppVersionName: Self = this.set("appVersionName", js.undefined)
+    @scala.inline
+    def setDevice(value: String): Self = this.set("device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevice: Self = this.set("device", js.undefined)
+    @scala.inline
+    def setDeviceMetadata(value: SchemaDeviceMetadata): Self = this.set("deviceMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceMetadata: Self = this.set("deviceMetadata", js.undefined)
+    @scala.inline
+    def setLastModified(value: SchemaTimestamp): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    @scala.inline
+    def setOriginalText(value: String): Self = this.set("originalText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalText: Self = this.set("originalText", js.undefined)
+    @scala.inline
+    def setReviewerLanguage(value: String): Self = this.set("reviewerLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReviewerLanguage: Self = this.set("reviewerLanguage", js.undefined)
+    @scala.inline
+    def setStarRating(value: Double): Self = this.set("starRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStarRating: Self = this.set("starRating", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setThumbsDownCount(value: Double): Self = this.set("thumbsDownCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbsDownCount: Self = this.set("thumbsDownCount", js.undefined)
+    @scala.inline
+    def setThumbsUpCount(value: Double): Self = this.set("thumbsUpCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbsUpCount: Self = this.set("thumbsUpCount", js.undefined)
+  }
+  
 }
 

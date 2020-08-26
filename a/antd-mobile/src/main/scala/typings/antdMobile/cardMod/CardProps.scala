@@ -8,27 +8,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CardProps
   extends AllHTMLAttributes[HTMLDivElement]
      with CardPropsType
      with ClassAttributes[HTMLDivElement] {
-  var prefixCls: js.UndefOr[String] = js.undefined
+  var prefixCls: js.UndefOr[String] = js.native
 }
 
 object CardProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLDivElement] = null,
-    CardPropsType: CardPropsType = null,
-    ClassAttributes: ClassAttributes[HTMLDivElement] = null,
-    prefixCls: String = null
-  ): CardProps = {
+  def apply(): CardProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (CardPropsType != null) js.Dynamic.global.Object.assign(__obj, CardPropsType)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardProps]
   }
+  @scala.inline
+  implicit class CardPropsOps[Self <: CardProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+  }
+  
 }
 

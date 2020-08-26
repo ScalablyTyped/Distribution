@@ -12,5 +12,5 @@ trait TooltippedComponentClass[P]
   extends TooltipProps
      with Instantiable0[TooltipComponent[P, js.Any]]
      with Instantiable1[/* props */ P, TooltipComponent[P, js.Any]]
-     with Instantiable2[/* props */ P, /* context */ js.Any, TooltipComponent[P, js.Any]]
+     with Instantiable2[js.UndefOr[/* props */ P], /* context */ js.Any, TooltipComponent[P, js.Any]]
 

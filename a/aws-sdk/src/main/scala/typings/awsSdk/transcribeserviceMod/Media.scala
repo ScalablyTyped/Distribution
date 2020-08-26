@@ -14,10 +14,26 @@ trait Media extends js.Object {
 
 object Media {
   @scala.inline
-  def apply(MediaFileUri: Uri = null): Media = {
+  def apply(): Media = {
     val __obj = js.Dynamic.literal()
-    if (MediaFileUri != null) __obj.updateDynamic("MediaFileUri")(MediaFileUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Media]
   }
+  @scala.inline
+  implicit class MediaOps[Self <: Media] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMediaFileUri(value: Uri): Self = this.set("MediaFileUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaFileUri: Self = this.set("MediaFileUri", js.undefined)
+  }
+  
 }
 

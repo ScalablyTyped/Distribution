@@ -43,6 +43,7 @@ object glue extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: CatalogDatabaseArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: CatalogDatabaseArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -72,6 +73,7 @@ object glue extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: ClassifierArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ClassifierArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -157,11 +159,12 @@ object glue extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: WorkflowArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: WorkflowArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getScript(args: GetScriptArgs): js.Promise[GetScriptResult] with GetScriptResult = js.native
-  def getScript(args: GetScriptArgs, opts: InvokeOptions): js.Promise[GetScriptResult] with GetScriptResult = js.native
+  def getScript(args: GetScriptArgs): js.Promise[GetScriptResult] = js.native
+  def getScript(args: GetScriptArgs, opts: InvokeOptions): js.Promise[GetScriptResult] = js.native
   /* static members */
   @js.native
   object CatalogDatabase extends js.Object {
@@ -172,8 +175,10 @@ object glue extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.catalogDatabaseMod.CatalogDatabase = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.catalogDatabaseMod.CatalogDatabase = js.native
     def get(name: String, id: Input[ID], state: CatalogDatabaseState): typings.pulumiAws.catalogDatabaseMod.CatalogDatabase = js.native
     def get(name: String, id: Input[ID], state: CatalogDatabaseState, opts: CustomResourceOptions): typings.pulumiAws.catalogDatabaseMod.CatalogDatabase = js.native
     /**
@@ -193,8 +198,10 @@ object glue extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.catalogTableMod.CatalogTable = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.catalogTableMod.CatalogTable = js.native
     def get(name: String, id: Input[ID], state: CatalogTableState): typings.pulumiAws.catalogTableMod.CatalogTable = js.native
     def get(name: String, id: Input[ID], state: CatalogTableState, opts: CustomResourceOptions): typings.pulumiAws.catalogTableMod.CatalogTable = js.native
     /**
@@ -214,8 +221,10 @@ object glue extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.classifierMod.Classifier = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.classifierMod.Classifier = js.native
     def get(name: String, id: Input[ID], state: ClassifierState): typings.pulumiAws.classifierMod.Classifier = js.native
     def get(name: String, id: Input[ID], state: ClassifierState, opts: CustomResourceOptions): typings.pulumiAws.classifierMod.Classifier = js.native
     /**
@@ -235,8 +244,10 @@ object glue extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.glueConnectionMod.Connection = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.glueConnectionMod.Connection = js.native
     def get(name: String, id: Input[ID], state: ConnectionState): typings.pulumiAws.glueConnectionMod.Connection = js.native
     def get(name: String, id: Input[ID], state: ConnectionState, opts: CustomResourceOptions): typings.pulumiAws.glueConnectionMod.Connection = js.native
     /**
@@ -256,8 +267,10 @@ object glue extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.crawlerMod.Crawler = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.crawlerMod.Crawler = js.native
     def get(name: String, id: Input[ID], state: CrawlerState): typings.pulumiAws.crawlerMod.Crawler = js.native
     def get(name: String, id: Input[ID], state: CrawlerState, opts: CustomResourceOptions): typings.pulumiAws.crawlerMod.Crawler = js.native
     /**
@@ -277,8 +290,10 @@ object glue extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.jobMod.Job = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.jobMod.Job = js.native
     def get(name: String, id: Input[ID], state: JobState): typings.pulumiAws.jobMod.Job = js.native
     def get(name: String, id: Input[ID], state: JobState, opts: CustomResourceOptions): typings.pulumiAws.jobMod.Job = js.native
     /**
@@ -298,8 +313,10 @@ object glue extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.glueSecurityConfigurationMod.SecurityConfiguration = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.glueSecurityConfigurationMod.SecurityConfiguration = js.native
     def get(name: String, id: Input[ID], state: SecurityConfigurationState): typings.pulumiAws.glueSecurityConfigurationMod.SecurityConfiguration = js.native
     def get(name: String, id: Input[ID], state: SecurityConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.glueSecurityConfigurationMod.SecurityConfiguration = js.native
     /**
@@ -319,8 +336,10 @@ object glue extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.glueTriggerMod.Trigger = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.glueTriggerMod.Trigger = js.native
     def get(name: String, id: Input[ID], state: TriggerState): typings.pulumiAws.glueTriggerMod.Trigger = js.native
     def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): typings.pulumiAws.glueTriggerMod.Trigger = js.native
     /**
@@ -340,8 +359,10 @@ object glue extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.workflowMod.Workflow = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.workflowMod.Workflow = js.native
     def get(name: String, id: Input[ID], state: WorkflowState): typings.pulumiAws.workflowMod.Workflow = js.native
     def get(name: String, id: Input[ID], state: WorkflowState, opts: CustomResourceOptions): typings.pulumiAws.workflowMod.Workflow = js.native
     /**

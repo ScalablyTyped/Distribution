@@ -18,11 +18,32 @@ trait ListAttacksResponse extends js.Object {
 
 object ListAttacksResponse {
   @scala.inline
-  def apply(AttackSummaries: AttackSummaries = null, NextToken: Token = null): ListAttacksResponse = {
+  def apply(): ListAttacksResponse = {
     val __obj = js.Dynamic.literal()
-    if (AttackSummaries != null) __obj.updateDynamic("AttackSummaries")(AttackSummaries.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAttacksResponse]
   }
+  @scala.inline
+  implicit class ListAttacksResponseOps[Self <: ListAttacksResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttackSummariesVarargs(value: AttackSummary*): Self = this.set("AttackSummaries", js.Array(value :_*))
+    @scala.inline
+    def setAttackSummaries(value: AttackSummaries): Self = this.set("AttackSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttackSummaries: Self = this.set("AttackSummaries", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

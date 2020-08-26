@@ -39,22 +39,46 @@ trait SchemaUrlMapTest extends js.Object {
 
 object SchemaUrlMapTest {
   @scala.inline
-  def apply(
-    backendServiceWeight: js.UndefOr[Double] = js.undefined,
-    description: String = null,
-    expectedUrlRedirect: String = null,
-    host: String = null,
-    path: String = null,
-    service: String = null
-  ): SchemaUrlMapTest = {
+  def apply(): SchemaUrlMapTest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backendServiceWeight)) __obj.updateDynamic("backendServiceWeight")(backendServiceWeight.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (expectedUrlRedirect != null) __obj.updateDynamic("expectedUrlRedirect")(expectedUrlRedirect.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUrlMapTest]
   }
+  @scala.inline
+  implicit class SchemaUrlMapTestOps[Self <: SchemaUrlMapTest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackendServiceWeight(value: Double): Self = this.set("backendServiceWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackendServiceWeight: Self = this.set("backendServiceWeight", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExpectedUrlRedirect(value: String): Self = this.set("expectedUrlRedirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedUrlRedirect: Self = this.set("expectedUrlRedirect", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+  }
+  
 }
 

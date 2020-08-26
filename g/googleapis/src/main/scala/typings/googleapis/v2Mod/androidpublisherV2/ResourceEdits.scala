@@ -38,6 +38,7 @@ class ResourceEdits protected () extends js.Object {
     */
   def commit(): GaxiosPromise[SchemaAppEdit] = js.native
   def commit(callback: BodyResponseCallback[SchemaAppEdit]): Unit = js.native
+  def commit(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppEdit] = js.native
   def commit(params: ParamsResourceEditsCommit): GaxiosPromise[SchemaAppEdit] = js.native
   def commit(params: ParamsResourceEditsCommit, callback: BodyResponseCallback[SchemaAppEdit]): Unit = js.native
   def commit(
@@ -68,6 +69,7 @@ class ResourceEdits protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEditsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEditsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -94,6 +96,7 @@ class ResourceEdits protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAppEdit] = js.native
   def get(callback: BodyResponseCallback[SchemaAppEdit]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppEdit] = js.native
   def get(params: ParamsResourceEditsGet): GaxiosPromise[SchemaAppEdit] = js.native
   def get(params: ParamsResourceEditsGet, callback: BodyResponseCallback[SchemaAppEdit]): Unit = js.native
   def get(
@@ -123,6 +126,7 @@ class ResourceEdits protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaAppEdit] = js.native
   def insert(callback: BodyResponseCallback[SchemaAppEdit]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppEdit] = js.native
   def insert(params: ParamsResourceEditsInsert): GaxiosPromise[SchemaAppEdit] = js.native
   def insert(params: ParamsResourceEditsInsert, callback: BodyResponseCallback[SchemaAppEdit]): Unit = js.native
   def insert(
@@ -152,6 +156,7 @@ class ResourceEdits protected () extends js.Object {
     */
   def validate(): GaxiosPromise[SchemaAppEdit] = js.native
   def validate(callback: BodyResponseCallback[SchemaAppEdit]): Unit = js.native
+  def validate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppEdit] = js.native
   def validate(params: ParamsResourceEditsValidate): GaxiosPromise[SchemaAppEdit] = js.native
   def validate(params: ParamsResourceEditsValidate, callback: BodyResponseCallback[SchemaAppEdit]): Unit = js.native
   def validate(

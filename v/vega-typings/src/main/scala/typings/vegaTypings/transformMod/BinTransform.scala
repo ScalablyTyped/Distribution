@@ -7,56 +7,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BinTransform
   extends BaseBin
      with _Transforms {
-  var anchor: js.UndefOr[Double | SignalRef] = js.undefined
-  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
-  var extent: (Vector2[Double | SignalRef]) | SignalRef
-  var field: FieldRef
-  var interval: js.UndefOr[Boolean | SignalRef] = js.undefined
-  var name: js.UndefOr[String | SignalRef] = js.undefined
-  var signal: js.UndefOr[SignalName] = js.undefined
-  var span: js.UndefOr[Double | SignalRef] = js.undefined
-  var `type`: bin
+  var anchor: js.UndefOr[Double | SignalRef] = js.native
+  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.native
+  var extent: (Vector2[Double | SignalRef]) | SignalRef = js.native
+  var field: FieldRef = js.native
+  var interval: js.UndefOr[Boolean | SignalRef] = js.native
+  var name: js.UndefOr[String | SignalRef] = js.native
+  var signal: js.UndefOr[SignalName] = js.native
+  var span: js.UndefOr[Double | SignalRef] = js.native
+  var `type`: bin = js.native
 }
 
 object BinTransform {
   @scala.inline
-  def apply(
-    extent: (Vector2[Double | SignalRef]) | SignalRef,
-    field: FieldRef,
-    `type`: bin,
-    anchor: Double | SignalRef = null,
-    as: (Vector2[String | SignalRef]) | SignalRef = null,
-    base: Double | SignalRef = null,
-    divide: (Vector2[Double | SignalRef]) | SignalRef = null,
-    interval: Boolean | SignalRef = null,
-    maxbins: Double | SignalRef = null,
-    minstep: Double | SignalRef = null,
-    name: String | SignalRef = null,
-    nice: Boolean | SignalRef = null,
-    signal: SignalName = null,
-    span: Double | SignalRef = null,
-    step: Double | SignalRef = null,
-    steps: (js.Array[Double | SignalRef]) | SignalRef = null
-  ): BinTransform = {
+  def apply(extent: (Vector2[Double | SignalRef]) | SignalRef, field: FieldRef, `type`: bin): BinTransform = {
     val __obj = js.Dynamic.literal(extent = extent.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (divide != null) __obj.updateDynamic("divide")(divide.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (maxbins != null) __obj.updateDynamic("maxbins")(maxbins.asInstanceOf[js.Any])
-    if (minstep != null) __obj.updateDynamic("minstep")(minstep.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinTransform]
   }
+  @scala.inline
+  implicit class BinTransformOps[Self <: BinTransform] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExtent(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("extent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setField(value: FieldRef): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: bin): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnchor(value: Double | SignalRef): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    @scala.inline
+    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setInterval(value: Boolean | SignalRef): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setName(value: String | SignalRef): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSignal(value: SignalName): Self = this.set("signal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignal: Self = this.set("signal", js.undefined)
+    @scala.inline
+    def setSpan(value: Double | SignalRef): Self = this.set("span", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpan: Self = this.set("span", js.undefined)
+  }
+  
 }
 

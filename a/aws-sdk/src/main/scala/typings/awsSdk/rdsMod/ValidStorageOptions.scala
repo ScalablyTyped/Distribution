@@ -30,20 +30,48 @@ trait ValidStorageOptions extends js.Object {
 
 object ValidStorageOptions {
   @scala.inline
-  def apply(
-    IopsToStorageRatio: DoubleRangeList = null,
-    ProvisionedIops: RangeList = null,
-    StorageSize: RangeList = null,
-    StorageType: String = null,
-    SupportsStorageAutoscaling: js.UndefOr[Boolean] = js.undefined
-  ): ValidStorageOptions = {
+  def apply(): ValidStorageOptions = {
     val __obj = js.Dynamic.literal()
-    if (IopsToStorageRatio != null) __obj.updateDynamic("IopsToStorageRatio")(IopsToStorageRatio.asInstanceOf[js.Any])
-    if (ProvisionedIops != null) __obj.updateDynamic("ProvisionedIops")(ProvisionedIops.asInstanceOf[js.Any])
-    if (StorageSize != null) __obj.updateDynamic("StorageSize")(StorageSize.asInstanceOf[js.Any])
-    if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsStorageAutoscaling)) __obj.updateDynamic("SupportsStorageAutoscaling")(SupportsStorageAutoscaling.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidStorageOptions]
   }
+  @scala.inline
+  implicit class ValidStorageOptionsOps[Self <: ValidStorageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIopsToStorageRatioVarargs(value: DoubleRange*): Self = this.set("IopsToStorageRatio", js.Array(value :_*))
+    @scala.inline
+    def setIopsToStorageRatio(value: DoubleRangeList): Self = this.set("IopsToStorageRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIopsToStorageRatio: Self = this.set("IopsToStorageRatio", js.undefined)
+    @scala.inline
+    def setProvisionedIopsVarargs(value: Range*): Self = this.set("ProvisionedIops", js.Array(value :_*))
+    @scala.inline
+    def setProvisionedIops(value: RangeList): Self = this.set("ProvisionedIops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedIops: Self = this.set("ProvisionedIops", js.undefined)
+    @scala.inline
+    def setStorageSizeVarargs(value: Range*): Self = this.set("StorageSize", js.Array(value :_*))
+    @scala.inline
+    def setStorageSize(value: RangeList): Self = this.set("StorageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageSize: Self = this.set("StorageSize", js.undefined)
+    @scala.inline
+    def setStorageType(value: String): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+    @scala.inline
+    def setSupportsStorageAutoscaling(value: Boolean): Self = this.set("SupportsStorageAutoscaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsStorageAutoscaling: Self = this.set("SupportsStorageAutoscaling", js.undefined)
+  }
+  
 }
 

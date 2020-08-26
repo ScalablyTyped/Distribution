@@ -42,26 +42,54 @@ trait InputDeviceHdSettings extends js.Object {
 
 object InputDeviceHdSettings {
   @scala.inline
-  def apply(
-    ActiveInput: InputDeviceActiveInput = null,
-    ConfiguredInput: InputDeviceConfiguredInput = null,
-    DeviceState: InputDeviceState = null,
-    Framerate: js.UndefOr[double] = js.undefined,
-    Height: js.UndefOr[integer] = js.undefined,
-    MaxBitrate: js.UndefOr[integer] = js.undefined,
-    ScanType: InputDeviceScanType = null,
-    Width: js.UndefOr[integer] = js.undefined
-  ): InputDeviceHdSettings = {
+  def apply(): InputDeviceHdSettings = {
     val __obj = js.Dynamic.literal()
-    if (ActiveInput != null) __obj.updateDynamic("ActiveInput")(ActiveInput.asInstanceOf[js.Any])
-    if (ConfiguredInput != null) __obj.updateDynamic("ConfiguredInput")(ConfiguredInput.asInstanceOf[js.Any])
-    if (DeviceState != null) __obj.updateDynamic("DeviceState")(DeviceState.asInstanceOf[js.Any])
-    if (!js.isUndefined(Framerate)) __obj.updateDynamic("Framerate")(Framerate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate.get.asInstanceOf[js.Any])
-    if (ScanType != null) __obj.updateDynamic("ScanType")(ScanType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputDeviceHdSettings]
   }
+  @scala.inline
+  implicit class InputDeviceHdSettingsOps[Self <: InputDeviceHdSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveInput(value: InputDeviceActiveInput): Self = this.set("ActiveInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveInput: Self = this.set("ActiveInput", js.undefined)
+    @scala.inline
+    def setConfiguredInput(value: InputDeviceConfiguredInput): Self = this.set("ConfiguredInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguredInput: Self = this.set("ConfiguredInput", js.undefined)
+    @scala.inline
+    def setDeviceState(value: InputDeviceState): Self = this.set("DeviceState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceState: Self = this.set("DeviceState", js.undefined)
+    @scala.inline
+    def setFramerate(value: double): Self = this.set("Framerate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerate: Self = this.set("Framerate", js.undefined)
+    @scala.inline
+    def setHeight(value: integer): Self = this.set("Height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("Height", js.undefined)
+    @scala.inline
+    def setMaxBitrate(value: integer): Self = this.set("MaxBitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBitrate: Self = this.set("MaxBitrate", js.undefined)
+    @scala.inline
+    def setScanType(value: InputDeviceScanType): Self = this.set("ScanType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanType: Self = this.set("ScanType", js.undefined)
+    @scala.inline
+    def setWidth(value: integer): Self = this.set("Width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("Width", js.undefined)
+  }
+  
 }
 

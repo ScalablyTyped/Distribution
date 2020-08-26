@@ -94,6 +94,7 @@ trait Type extends js.Object {
     * @return The registered type.
     */
   def registerClass(typeName: java.lang.String): js.Any = js.native
+  def registerClass(typeName: java.lang.String, baseType: js.UndefOr[scala.Nothing], interfaceTypes: js.Array[_]): js.Any = js.native
   def registerClass(typeName: java.lang.String, baseType: js.Any): js.Any = js.native
   def registerClass(typeName: java.lang.String, baseType: js.Any, interfaceTypes: js.Array[_]): js.Any = js.native
   /**

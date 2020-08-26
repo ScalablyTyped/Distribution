@@ -1,5 +1,6 @@
 package typings.pSettle.mod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,44 +8,44 @@ import scala.scalajs.js.annotation._
 @JSImport("p-settle", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function pSettle<ValueType>(
-  // 	promises: ReadonlyArray<ValueType | PromiseLike<ValueType>>,
-  // 	options?: pSettle.Options
-  // ): Promise<pSettle.PromiseResult<ValueType>[]>;
-  // export = pSettle;
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pSettle */ js.Any = js.native
   /**
-  	Settle promises concurrently and get their fulfillment value or rejection reason.
-  	@returns A promise that is fulfilled when all promises in `promises` are settled.
-  	@example
-  	```
-  	import {promisify} from 'util';
-  	import * as fs from 'fs';
-  	import pSettle = require('p-settle');
-  	const pReadFile = promisify(fs.readFile);
-  	(async () => {
-  		const files = [
-  			'a.txt',
-  			'b.txt' // Doesn't exist
-  		].map(fileName => pReadFile(fileName, 'utf8'));
-  		console.log(await pSettle(files));
-  		// [
-  		// 	{
-  		// 		isFulfilled: true,
-  		// 		isRejected: false,
-  		// 		value: '🦄'
-  		// 	},
-  		// 	{
-  		// 		isFulfilled: false,
-  		// 		isRejected: true,
-  		// 		reason: [Error: ENOENT: no such file or directory, open 'b.txt']
-  		// 	}
-  		// ]
-  	})();
-  	```
-  	*/
-  def apply[ValueType](promises: js.Array[ValueType | js.Thenable[ValueType]]): js.Promise[js.Array[PromiseResult[ValueType]]] = js.native
-  def apply[ValueType](promises: js.Array[ValueType | js.Thenable[ValueType]], options: Options): js.Promise[js.Array[PromiseResult[ValueType]]] = js.native
+  Settle promises concurrently and get their fulfillment value or rejection reason.
+  @param array - Can contain a mix of any value, promise, and async function. Promises are awaited. Async functions are executed and awaited. The `concurrency` option only works for elements that are async functions.
+  @returns A promise that is fulfilled when all promises from the `array` argument are settled.
+  @example
+  ```
+  import {promises as fs} from 'fs';
+  import pSettle = require('p-settle');
+  (async () => {
+  	const files = [
+  		'a.txt',
+  		'b.txt' // Doesn't exist
+  	].map(fileName => fs.readFile(fileName, 'utf8'));
+  	console.log(await pSettle(files));
+  	// [
+  	// 	{
+  	// 		isFulfilled: true,
+  	// 		isRejected: false,
+  	// 		value: '🦄'
+  	// 	},
+  	// 	{
+  	// 		isFulfilled: false,
+  	// 		isRejected: true,
+  	// 		reason: [Error: ENOENT: no such file or directory, open 'b.txt']
+  	// 	}
+  	// ]
+  })();
+  ```
+  */
+  def apply[ValueType /* <: js.Array[_] */](array: ValueType): js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {-readonly [ P in keyof ValueType ]: p-settle.p-settle.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
+    */ typings.pSettle.pSettleStrings.^  with TopLevel[ValueType]
+  ] = js.native
+  def apply[ValueType /* <: js.Array[_] */](array: ValueType, options: Options): js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {-readonly [ P in keyof ValueType ]: p-settle.p-settle.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
+    */ typings.pSettle.pSettleStrings.^  with TopLevel[ValueType]
+  ] = js.native
 }
 

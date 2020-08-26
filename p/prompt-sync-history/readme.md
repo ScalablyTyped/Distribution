@@ -12,7 +12,7 @@ History manager for `prompt-sync`
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 36176 |
+| # downloads        | 42773 |
 | # stars            | 0 |
 
 ## Links

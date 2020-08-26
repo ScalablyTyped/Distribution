@@ -9,6 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectListProps
   extends ReactWidgetsCommonProps
      with AutoFocus {
@@ -17,73 +18,73 @@ trait SelectListProps
     * spinner gif, useful when loading data via an ajax call.
     * @default false
     */
-  var busy: js.UndefOr[Boolean] = js.undefined
+  var busy: js.UndefOr[Boolean] = js.native
   /**
     * Provide an array of possible values for the SelectList. If an array of objects is
     * provided you should use the valueField and textField props, to specify which object
     * properties comprise the value field (such as an id) and the field used to label the item.
     */
-  var data: js.UndefOr[js.Array[_]] = js.undefined
+  var data: js.UndefOr[js.Array[_]] = js.native
   /**
     * Default Value.
     */
-  var defaultValue: js.UndefOr[js.Any | js.Array[_]] = js.undefined
+  var defaultValue: js.UndefOr[js.Any | js.Array[_]] = js.native
   /**
     * Delay
     * @default 250
     */
-  var delay: js.UndefOr[Double] = js.undefined
+  var delay: js.UndefOr[Double] = js.native
   /**
     * Determines how to group the SelectList dropdown list. Providing a string will group the
     * data array by that property. You can also provide a 'function' which should return the
     * group value.
     */
-  var groupBy: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, _])] = js.undefined
+  var groupBy: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, _])] = js.native
   /**
     * This component is used to render each option group, when groupBy is specified. By default
     * the groupBy value will be used.
     */
-  var groupComponent: js.UndefOr[ReactType[_]] = js.undefined
+  var groupComponent: js.UndefOr[ReactType[_]] = js.native
   /**
     * This component is used to render each item in the SelectList. The default component
     * renders the text of the selected item (specified by textfield)
     */
-  var itemComponent: js.UndefOr[ReactType[_]] = js.undefined
+  var itemComponent: js.UndefOr[ReactType[_]] = js.native
   /**
     * @default List
     */
-  var listComponent: js.UndefOr[ReactType[_] | String] = js.undefined
+  var listComponent: js.UndefOr[ReactType[_] | String] = js.native
   /**
     * An object of props that is passed directly to the underlying List component.
     */
-  var listProps: js.UndefOr[js.Object] = js.undefined
+  var listProps: js.UndefOr[js.Object] = js.native
   /**
     * Object hash containing display text and/or text for screen readers. Use the messages
     * object to localize widget text and increase accessibility.
     */
-  var messages: js.UndefOr[SelectListMessages] = js.undefined
+  var messages: js.UndefOr[SelectListMessages] = js.native
   /**
     * Whether or not the SelectList allows multiple selection or not. when false the SelectList
     * will render as a list of radio buttons, and checkboxes when true.
     */
-  var multiple: js.UndefOr[Boolean] = js.undefined
+  var multiple: js.UndefOr[Boolean] = js.native
   /**
     * The HTML name attribute used to group checkboxes and radio buttons together.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Change event handler that is called when the value is changed. values will be an array
     * when multiple prop is set.
     */
-  var onChange: js.UndefOr[js.Function1[/* values */ js.Any | js.Array[_], Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* values */ js.Any | js.Array[_], Unit]] = js.native
   /**
     * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
   /**
     * The native onKeyPress event, called preventDefault will stop any custom behavior.
     */
-  var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
+  var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
   /**
     * A handler called when focus shifts on the SelectList. Internally this is used to ensure
     * the focused item is in view. If you want to define your own "scrollTo" behavior or just
@@ -93,23 +94,23 @@ trait SelectListProps
     */
   var onMove: js.UndefOr[
     js.Function3[/* list */ HTMLElement, /* focusedNode */ HTMLElement, /* focusedItem */ js.Any, Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * The HTML tabindex attribute, controls the order in which focus moves via the TAB key
     */
-  var tabIndex: js.UndefOr[Double] = js.undefined
+  var tabIndex: js.UndefOr[Double] = js.native
   /**
     * Specify which data item field to display in the SelectList and selected item. The
     * textField prop may also also used as to find an item in the list as you type. Providing
     * an accessor function allows for computed text values.
     */
-  var textField: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, String])] = js.undefined
+  var textField: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, String])] = js.native
   /**
     * The current value or values of the SelectList. This can be an object (such as a member of
     * the data array) or a primitive value, hinted to by the valueField. The widget value does
     * not need to be in the data array; widgets can have values that are not in their list.
     */
-  var value: js.UndefOr[js.Any | js.Array[_]] = js.undefined
+  var value: js.UndefOr[js.Any | js.Array[_]] = js.native
   /**
     * A dataItem field name for uniquely identifying items in the data list. A valueField is
     * required when the value prop is not itself a dataItem. A valueField is useful when
@@ -117,65 +118,117 @@ trait SelectListProps
     * When a valueField is not provided, the SelectList will use strict equality checks (===)
     * to locate the value in the data list.
     */
-  var valueField: js.UndefOr[String] = js.undefined
+  var valueField: js.UndefOr[String] = js.native
 }
 
 object SelectListProps {
   @scala.inline
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    busy: js.UndefOr[Boolean] = js.undefined,
-    data: js.Array[_] = null,
-    defaultValue: js.Any | js.Array[_] = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    disabled: Boolean | js.Array[_] = null,
-    groupBy: String | (js.Function1[/* dataItem */ js.Any, _]) = null,
-    groupComponent: ReactType[_] = null,
-    id: String = null,
-    isRtl: js.UndefOr[Boolean] = js.undefined,
-    itemComponent: ReactType[_] = null,
-    listComponent: ReactType[_] | String = null,
-    listProps: js.Object = null,
-    messages: SelectListMessages = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onChange: /* values */ js.Any | js.Array[_] => Unit = null,
-    onKeyDown: /* event */ KeyboardEvent => Unit = null,
-    onKeyPress: /* event */ KeyboardEvent => Unit = null,
-    onMove: (/* list */ HTMLElement, /* focusedNode */ HTMLElement, /* focusedItem */ js.Any) => Unit = null,
-    readOnly: Boolean | js.Array[_] = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    textField: String | (js.Function1[/* dataItem */ js.Any, String]) = null,
-    value: js.Any | js.Array[_] = null,
-    valueField: String = null
-  ): SelectListProps = {
+  def apply(): SelectListProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(busy)) __obj.updateDynamic("busy")(busy.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
-    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl.get.asInstanceOf[js.Any])
-    if (itemComponent != null) __obj.updateDynamic("itemComponent")(itemComponent.asInstanceOf[js.Any])
-    if (listComponent != null) __obj.updateDynamic("listComponent")(listComponent.asInstanceOf[js.Any])
-    if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onMove != null) __obj.updateDynamic("onMove")(js.Any.fromFunction3(onMove))
-    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (textField != null) __obj.updateDynamic("textField")(textField.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectListProps]
   }
+  @scala.inline
+  implicit class SelectListPropsOps[Self <: SelectListProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBusy(value: Boolean): Self = this.set("busy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBusy: Self = this.set("busy", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDefaultValueVarargs(value: js.Any*): Self = this.set("defaultValue", js.Array(value :_*))
+    @scala.inline
+    def setDefaultValue(value: js.Any | js.Array[_]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setGroupByFunction1(value: /* dataItem */ js.Any => _): Self = this.set("groupBy", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGroupBy(value: String | (js.Function1[/* dataItem */ js.Any, _])): Self = this.set("groupBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupBy: Self = this.set("groupBy", js.undefined)
+    @scala.inline
+    def setGroupComponent(value: ReactType[_]): Self = this.set("groupComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupComponent: Self = this.set("groupComponent", js.undefined)
+    @scala.inline
+    def setItemComponent(value: ReactType[_]): Self = this.set("itemComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemComponent: Self = this.set("itemComponent", js.undefined)
+    @scala.inline
+    def setListComponent(value: ReactType[_] | String): Self = this.set("listComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListComponent: Self = this.set("listComponent", js.undefined)
+    @scala.inline
+    def setListProps(value: js.Object): Self = this.set("listProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListProps: Self = this.set("listProps", js.undefined)
+    @scala.inline
+    def setMessages(value: SelectListMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* values */ js.Any | js.Array[_] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: /* event */ KeyboardEvent => Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setOnKeyPress(value: /* event */ KeyboardEvent => Unit): Self = this.set("onKeyPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    @scala.inline
+    def setOnMove(value: (/* list */ HTMLElement, /* focusedNode */ HTMLElement, /* focusedItem */ js.Any) => Unit): Self = this.set("onMove", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnMove: Self = this.set("onMove", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTextFieldFunction1(value: /* dataItem */ js.Any => String): Self = this.set("textField", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTextField(value: String | (js.Function1[/* dataItem */ js.Any, String])): Self = this.set("textField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextField: Self = this.set("textField", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: js.Any*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: js.Any | js.Array[_]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValueField(value: String): Self = this.set("valueField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueField: Self = this.set("valueField", js.undefined)
+  }
+  
 }
 

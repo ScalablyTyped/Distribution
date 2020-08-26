@@ -12,7 +12,7 @@ Provides access to 1-Wire on the Raspberry Pi from Node.js
 | Keywords           | nodebots, robotics, raspberry pi |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 258 |
+| # downloads        | 263 |
 | # stars            | 0 |
 
 ## Links

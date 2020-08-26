@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Based on definitions of lib.dom and  lib.dom.iteralbe
+  * Based on definitions of lib.dom and lib.dom.iterable
   */
 @js.native
 trait URLSearchParams extends js.Object {

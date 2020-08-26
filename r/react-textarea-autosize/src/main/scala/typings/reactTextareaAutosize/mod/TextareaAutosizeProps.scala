@@ -9,6 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextareaAutosizeProps
   extends AllHTMLAttributes[HTMLTextAreaElement]
      with ClassAttributes[HTMLTextAreaElement] {
@@ -17,26 +18,26 @@ trait TextareaAutosizeProps
     */
   var inputRef: js.UndefOr[
     (js.Function1[/* node */ HTMLTextAreaElement, Unit]) | RefObject[HTMLTextAreaElement]
-  ] = js.undefined
+  ] = js.native
   /**
     * Maximum number of rows to show.
     */
-  var maxRows: js.UndefOr[Double] = js.undefined
+  var maxRows: js.UndefOr[Double] = js.native
   /**
     * Alias for `rows`.
     */
-  var minRows: js.UndefOr[Double] = js.undefined
+  var minRows: js.UndefOr[Double] = js.native
   /**
     * Callback on value change
     * @param event
     */
   @JSName("onChange")
-  var onChange_TextareaAutosizeProps: js.UndefOr[js.Function1[/* event */ ChangeEvent[HTMLTextAreaElement], Unit]] = js.undefined
+  var onChange_TextareaAutosizeProps: js.UndefOr[js.Function1[/* event */ ChangeEvent[HTMLTextAreaElement], Unit]] = js.native
   /**
     * Callback on height change
     * @param height
     */
-  var onHeightChange: js.UndefOr[js.Function1[/* height */ Double, Unit]] = js.undefined
+  var onHeightChange: js.UndefOr[js.Function1[/* height */ Double, Unit]] = js.native
   /**
     * Try to cache DOM measurements performed by component so that we don't
     * touch DOM when it's not needed.
@@ -45,38 +46,62 @@ trait TextareaAutosizeProps
     * component.
     * @default false
     */
-  var useCacheForDOMMeasurements: js.UndefOr[Boolean] = js.undefined
+  var useCacheForDOMMeasurements: js.UndefOr[Boolean] = js.native
   /**
     * Current textarea value
     */
   @JSName("value")
-  var value_TextareaAutosizeProps: js.UndefOr[String] = js.undefined
+  var value_TextareaAutosizeProps: js.UndefOr[String] = js.native
 }
 
 object TextareaAutosizeProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLTextAreaElement] = null,
-    ClassAttributes: ClassAttributes[HTMLTextAreaElement] = null,
-    inputRef: (js.Function1[/* node */ HTMLTextAreaElement, Unit]) | RefObject[HTMLTextAreaElement] = null,
-    maxRows: js.UndefOr[Double] = js.undefined,
-    minRows: js.UndefOr[Double] = js.undefined,
-    onChange: /* event */ ChangeEvent[HTMLTextAreaElement] => Unit = null,
-    onHeightChange: /* height */ Double => Unit = null,
-    useCacheForDOMMeasurements: js.UndefOr[Boolean] = js.undefined,
-    value: String = null
-  ): TextareaAutosizeProps = {
+  def apply(): TextareaAutosizeProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRows)) __obj.updateDynamic("maxRows")(maxRows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minRows)) __obj.updateDynamic("minRows")(minRows.get.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onHeightChange != null) __obj.updateDynamic("onHeightChange")(js.Any.fromFunction1(onHeightChange))
-    if (!js.isUndefined(useCacheForDOMMeasurements)) __obj.updateDynamic("useCacheForDOMMeasurements")(useCacheForDOMMeasurements.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextareaAutosizeProps]
   }
+  @scala.inline
+  implicit class TextareaAutosizePropsOps[Self <: TextareaAutosizeProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputRefFunction1(value: /* node */ HTMLTextAreaElement => Unit): Self = this.set("inputRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInputRef(value: (js.Function1[/* node */ HTMLTextAreaElement, Unit]) | RefObject[HTMLTextAreaElement]): Self = this.set("inputRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputRef: Self = this.set("inputRef", js.undefined)
+    @scala.inline
+    def setMaxRows(value: Double): Self = this.set("maxRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRows: Self = this.set("maxRows", js.undefined)
+    @scala.inline
+    def setMinRows(value: Double): Self = this.set("minRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinRows: Self = this.set("minRows", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* event */ ChangeEvent[HTMLTextAreaElement] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnHeightChange(value: /* height */ Double => Unit): Self = this.set("onHeightChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnHeightChange: Self = this.set("onHeightChange", js.undefined)
+    @scala.inline
+    def setUseCacheForDOMMeasurements(value: Boolean): Self = this.set("useCacheForDOMMeasurements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseCacheForDOMMeasurements: Self = this.set("useCacheForDOMMeasurements", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

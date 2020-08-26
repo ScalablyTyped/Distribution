@@ -25,6 +25,12 @@ object _Doc {
     __obj.asInstanceOf[_Doc]
   }
   @scala.inline
+  def Trim_(`type`: typings.prettier.prettierStrings.trim): _Doc = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_Doc]
+  }
+  @scala.inline
   def Indent_(contents: Doc, `type`: typings.prettier.prettierStrings.indent): _Doc = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -45,6 +51,12 @@ object _Doc {
   @scala.inline
   def Concat_(parts: js.Array[Doc], `type`: typings.prettier.prettierStrings.concat): _Doc = {
     val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_Doc]
+  }
+  @scala.inline
+  def Cursor_(placeholder: js.Symbol, `type`: typings.prettier.prettierStrings.cursor): _Doc = {
+    val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Doc]
   }
@@ -72,17 +84,9 @@ object _Doc {
     __obj.asInstanceOf[_Doc]
   }
   @scala.inline
-  def Line_(
-    `type`: typings.prettier.prettierStrings.line,
-    hard: js.UndefOr[Boolean] = js.undefined,
-    literal: js.UndefOr[Boolean] = js.undefined,
-    soft: js.UndefOr[Boolean] = js.undefined
-  ): _Doc = {
+  def Line_(`type`: typings.prettier.prettierStrings.line): _Doc = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(hard)) __obj.updateDynamic("hard")(hard.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(literal)) __obj.updateDynamic("literal")(literal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(soft)) __obj.updateDynamic("soft")(soft.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Doc]
   }
 }

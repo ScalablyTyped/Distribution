@@ -39,6 +39,7 @@ class ResourceUserprofilesGuardians protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceUserprofilesGuardiansDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceUserprofilesGuardiansDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -77,6 +78,7 @@ class ResourceUserprofilesGuardians protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGuardian] = js.native
   def get(callback: BodyResponseCallback[SchemaGuardian]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGuardian] = js.native
   def get(params: ParamsResourceUserprofilesGuardiansGet): GaxiosPromise[SchemaGuardian] = js.native
   def get(params: ParamsResourceUserprofilesGuardiansGet, callback: BodyResponseCallback[SchemaGuardian]): Unit = js.native
   def get(
@@ -122,6 +124,7 @@ class ResourceUserprofilesGuardians protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListGuardiansResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListGuardiansResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListGuardiansResponse] = js.native
   def list(params: ParamsResourceUserprofilesGuardiansList): GaxiosPromise[SchemaListGuardiansResponse] = js.native
   def list(
     params: ParamsResourceUserprofilesGuardiansList,

@@ -14,10 +14,26 @@ trait StartImageBuilderResult extends js.Object {
 
 object StartImageBuilderResult {
   @scala.inline
-  def apply(ImageBuilder: ImageBuilder = null): StartImageBuilderResult = {
+  def apply(): StartImageBuilderResult = {
     val __obj = js.Dynamic.literal()
-    if (ImageBuilder != null) __obj.updateDynamic("ImageBuilder")(ImageBuilder.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartImageBuilderResult]
   }
+  @scala.inline
+  implicit class StartImageBuilderResultOps[Self <: StartImageBuilderResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageBuilder(value: ImageBuilder): Self = this.set("ImageBuilder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageBuilder: Self = this.set("ImageBuilder", js.undefined)
+  }
+  
 }
 

@@ -8,135 +8,162 @@ import scala.scalajs.js.annotation._
   * A list that defines a set of documents
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait DocumentManifest extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait DocumentManifest extends DomainResource {
   /**
     * Contains extended information for property 'created'.
     */
-  var _created: js.UndefOr[Element] = js.undefined
+  var _created: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.undefined
+  var _description: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'source'.
     */
-  var _source: js.UndefOr[Element] = js.undefined
+  var _source: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Who and/or what authored the manifest
     */
-  var author: js.UndefOr[js.Array[Reference]] = js.undefined
+  var author: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * The items included
     */
-  var content: js.Array[DocumentManifestContent]
+  var content: js.Array[DocumentManifestContent] = js.native
   /**
     * When this document manifest created
     */
-  var created: js.UndefOr[dateTime] = js.undefined
+  var created: js.UndefOr[dateTime] = js.native
   /**
     * Human-readable description (title)
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * Other identifiers for the manifest
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Unique Identifier for the set of documents
     */
-  var masterIdentifier: js.UndefOr[Identifier] = js.undefined
+  var masterIdentifier: js.UndefOr[Identifier] = js.native
   /**
     * Intended to get notified about this set of documents
     */
-  var recipient: js.UndefOr[js.Array[Reference]] = js.undefined
+  var recipient: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Related things
     */
-  var related: js.UndefOr[js.Array[DocumentManifestRelated]] = js.undefined
+  var related: js.UndefOr[js.Array[DocumentManifestRelated]] = js.native
   /**
     * The source system/application/software
     */
-  var source: js.UndefOr[uri] = js.undefined
+  var source: js.UndefOr[uri] = js.native
   /**
     * current | superseded | entered-in-error
     */
-  var status: code
+  var status: code = js.native
   /**
     * The subject of the set of documents
     */
-  var subject: js.UndefOr[Reference] = js.undefined
+  var subject: js.UndefOr[Reference] = js.native
   /**
     * Kind of document set
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.undefined
+  var `type`: js.UndefOr[CodeableConcept] = js.native
 }
 
 object DocumentManifest {
   @scala.inline
-  def apply(
-    content: js.Array[DocumentManifestContent],
-    status: code,
-    _created: Element = null,
-    _description: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    _source: Element = null,
-    _status: Element = null,
-    author: js.Array[Reference] = null,
-    contained: js.Array[Resource] = null,
-    created: dateTime = null,
-    description: String = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    masterIdentifier: Identifier = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    recipient: js.Array[Reference] = null,
-    related: js.Array[DocumentManifestRelated] = null,
-    resourceType: code = null,
-    source: uri = null,
-    subject: Reference = null,
-    text: Narrative = null,
-    `type`: CodeableConcept = null
-  ): DocumentManifest = {
+  def apply(content: js.Array[DocumentManifestContent], status: code): DocumentManifest = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (_created != null) __obj.updateDynamic("_created")(_created.asInstanceOf[js.Any])
-    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_source != null) __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (masterIdentifier != null) __obj.updateDynamic("masterIdentifier")(masterIdentifier.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
-    if (related != null) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentManifest]
   }
+  @scala.inline
+  implicit class DocumentManifestOps[Self <: DocumentManifest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentVarargs(value: DocumentManifestContent*): Self = this.set("content", js.Array(value :_*))
+    @scala.inline
+    def setContent(value: js.Array[DocumentManifestContent]): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_created(value: Element): Self = this.set("_created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_created: Self = this.set("_created", js.undefined)
+    @scala.inline
+    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_description: Self = this.set("_description", js.undefined)
+    @scala.inline
+    def set_source(value: Element): Self = this.set("_source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_source: Self = this.set("_source", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setAuthorVarargs(value: Reference*): Self = this.set("author", js.Array(value :_*))
+    @scala.inline
+    def setAuthor(value: js.Array[Reference]): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setCreated(value: dateTime): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setMasterIdentifier(value: Identifier): Self = this.set("masterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterIdentifier: Self = this.set("masterIdentifier", js.undefined)
+    @scala.inline
+    def setRecipientVarargs(value: Reference*): Self = this.set("recipient", js.Array(value :_*))
+    @scala.inline
+    def setRecipient(value: js.Array[Reference]): Self = this.set("recipient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipient: Self = this.set("recipient", js.undefined)
+    @scala.inline
+    def setRelatedVarargs(value: DocumentManifestRelated*): Self = this.set("related", js.Array(value :_*))
+    @scala.inline
+    def setRelated(value: js.Array[DocumentManifestRelated]): Self = this.set("related", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelated: Self = this.set("related", js.undefined)
+    @scala.inline
+    def setSource(value: uri): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+    @scala.inline
+    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

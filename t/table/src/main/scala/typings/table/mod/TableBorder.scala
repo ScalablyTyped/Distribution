@@ -4,60 +4,103 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableBorder extends js.Object {
-  var bodyJoin: js.UndefOr[String] = js.undefined
-  var bodyLeft: js.UndefOr[String] = js.undefined
-  var bodyRight: js.UndefOr[String] = js.undefined
-  var bottomBody: js.UndefOr[String] = js.undefined
-  var bottomJoin: js.UndefOr[String] = js.undefined
-  var bottomLeft: js.UndefOr[String] = js.undefined
-  var bottomRight: js.UndefOr[String] = js.undefined
-  var joinBody: js.UndefOr[String] = js.undefined
-  var joinJoin: js.UndefOr[String] = js.undefined
-  var joinLeft: js.UndefOr[String] = js.undefined
-  var joinRight: js.UndefOr[String] = js.undefined
-  var topBody: js.UndefOr[String] = js.undefined
-  var topJoin: js.UndefOr[String] = js.undefined
-  var topLeft: js.UndefOr[String] = js.undefined
-  var topRight: js.UndefOr[String] = js.undefined
+  var bodyJoin: js.UndefOr[String] = js.native
+  var bodyLeft: js.UndefOr[String] = js.native
+  var bodyRight: js.UndefOr[String] = js.native
+  var bottomBody: js.UndefOr[String] = js.native
+  var bottomJoin: js.UndefOr[String] = js.native
+  var bottomLeft: js.UndefOr[String] = js.native
+  var bottomRight: js.UndefOr[String] = js.native
+  var joinBody: js.UndefOr[String] = js.native
+  var joinJoin: js.UndefOr[String] = js.native
+  var joinLeft: js.UndefOr[String] = js.native
+  var joinRight: js.UndefOr[String] = js.native
+  var topBody: js.UndefOr[String] = js.native
+  var topJoin: js.UndefOr[String] = js.native
+  var topLeft: js.UndefOr[String] = js.native
+  var topRight: js.UndefOr[String] = js.native
 }
 
 object TableBorder {
   @scala.inline
-  def apply(
-    bodyJoin: String = null,
-    bodyLeft: String = null,
-    bodyRight: String = null,
-    bottomBody: String = null,
-    bottomJoin: String = null,
-    bottomLeft: String = null,
-    bottomRight: String = null,
-    joinBody: String = null,
-    joinJoin: String = null,
-    joinLeft: String = null,
-    joinRight: String = null,
-    topBody: String = null,
-    topJoin: String = null,
-    topLeft: String = null,
-    topRight: String = null
-  ): TableBorder = {
+  def apply(): TableBorder = {
     val __obj = js.Dynamic.literal()
-    if (bodyJoin != null) __obj.updateDynamic("bodyJoin")(bodyJoin.asInstanceOf[js.Any])
-    if (bodyLeft != null) __obj.updateDynamic("bodyLeft")(bodyLeft.asInstanceOf[js.Any])
-    if (bodyRight != null) __obj.updateDynamic("bodyRight")(bodyRight.asInstanceOf[js.Any])
-    if (bottomBody != null) __obj.updateDynamic("bottomBody")(bottomBody.asInstanceOf[js.Any])
-    if (bottomJoin != null) __obj.updateDynamic("bottomJoin")(bottomJoin.asInstanceOf[js.Any])
-    if (bottomLeft != null) __obj.updateDynamic("bottomLeft")(bottomLeft.asInstanceOf[js.Any])
-    if (bottomRight != null) __obj.updateDynamic("bottomRight")(bottomRight.asInstanceOf[js.Any])
-    if (joinBody != null) __obj.updateDynamic("joinBody")(joinBody.asInstanceOf[js.Any])
-    if (joinJoin != null) __obj.updateDynamic("joinJoin")(joinJoin.asInstanceOf[js.Any])
-    if (joinLeft != null) __obj.updateDynamic("joinLeft")(joinLeft.asInstanceOf[js.Any])
-    if (joinRight != null) __obj.updateDynamic("joinRight")(joinRight.asInstanceOf[js.Any])
-    if (topBody != null) __obj.updateDynamic("topBody")(topBody.asInstanceOf[js.Any])
-    if (topJoin != null) __obj.updateDynamic("topJoin")(topJoin.asInstanceOf[js.Any])
-    if (topLeft != null) __obj.updateDynamic("topLeft")(topLeft.asInstanceOf[js.Any])
-    if (topRight != null) __obj.updateDynamic("topRight")(topRight.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableBorder]
   }
+  @scala.inline
+  implicit class TableBorderOps[Self <: TableBorder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBodyJoin(value: String): Self = this.set("bodyJoin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyJoin: Self = this.set("bodyJoin", js.undefined)
+    @scala.inline
+    def setBodyLeft(value: String): Self = this.set("bodyLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyLeft: Self = this.set("bodyLeft", js.undefined)
+    @scala.inline
+    def setBodyRight(value: String): Self = this.set("bodyRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyRight: Self = this.set("bodyRight", js.undefined)
+    @scala.inline
+    def setBottomBody(value: String): Self = this.set("bottomBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomBody: Self = this.set("bottomBody", js.undefined)
+    @scala.inline
+    def setBottomJoin(value: String): Self = this.set("bottomJoin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomJoin: Self = this.set("bottomJoin", js.undefined)
+    @scala.inline
+    def setBottomLeft(value: String): Self = this.set("bottomLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomLeft: Self = this.set("bottomLeft", js.undefined)
+    @scala.inline
+    def setBottomRight(value: String): Self = this.set("bottomRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomRight: Self = this.set("bottomRight", js.undefined)
+    @scala.inline
+    def setJoinBody(value: String): Self = this.set("joinBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoinBody: Self = this.set("joinBody", js.undefined)
+    @scala.inline
+    def setJoinJoin(value: String): Self = this.set("joinJoin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoinJoin: Self = this.set("joinJoin", js.undefined)
+    @scala.inline
+    def setJoinLeft(value: String): Self = this.set("joinLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoinLeft: Self = this.set("joinLeft", js.undefined)
+    @scala.inline
+    def setJoinRight(value: String): Self = this.set("joinRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoinRight: Self = this.set("joinRight", js.undefined)
+    @scala.inline
+    def setTopBody(value: String): Self = this.set("topBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopBody: Self = this.set("topBody", js.undefined)
+    @scala.inline
+    def setTopJoin(value: String): Self = this.set("topJoin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopJoin: Self = this.set("topJoin", js.undefined)
+    @scala.inline
+    def setTopLeft(value: String): Self = this.set("topLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopLeft: Self = this.set("topLeft", js.undefined)
+    @scala.inline
+    def setTopRight(value: String): Self = this.set("topRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopRight: Self = this.set("topRight", js.undefined)
+  }
+  
 }
 

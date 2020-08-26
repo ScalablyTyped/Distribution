@@ -29,11 +29,30 @@ trait SchemaGrafeasV1beta1BuildDetails extends js.Object {
 
 object SchemaGrafeasV1beta1BuildDetails {
   @scala.inline
-  def apply(provenance: SchemaBuildProvenance = null, provenanceBytes: String = null): SchemaGrafeasV1beta1BuildDetails = {
+  def apply(): SchemaGrafeasV1beta1BuildDetails = {
     val __obj = js.Dynamic.literal()
-    if (provenance != null) __obj.updateDynamic("provenance")(provenance.asInstanceOf[js.Any])
-    if (provenanceBytes != null) __obj.updateDynamic("provenanceBytes")(provenanceBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGrafeasV1beta1BuildDetails]
   }
+  @scala.inline
+  implicit class SchemaGrafeasV1beta1BuildDetailsOps[Self <: SchemaGrafeasV1beta1BuildDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvenance(value: SchemaBuildProvenance): Self = this.set("provenance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvenance: Self = this.set("provenance", js.undefined)
+    @scala.inline
+    def setProvenanceBytes(value: String): Self = this.set("provenanceBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvenanceBytes: Self = this.set("provenanceBytes", js.undefined)
+  }
+  
 }
 

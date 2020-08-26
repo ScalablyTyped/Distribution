@@ -23,12 +23,34 @@ trait ChannelHlsIngestIngestEndpoint extends js.Object {
 
 object ChannelHlsIngestIngestEndpoint {
   @scala.inline
-  def apply(password: Input[String] = null, url: Input[String] = null, username: Input[String] = null): ChannelHlsIngestIngestEndpoint = {
+  def apply(): ChannelHlsIngestIngestEndpoint = {
     val __obj = js.Dynamic.literal()
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelHlsIngestIngestEndpoint]
   }
+  @scala.inline
+  implicit class ChannelHlsIngestIngestEndpointOps[Self <: ChannelHlsIngestIngestEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPassword(value: Input[String]): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setUrl(value: Input[String]): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUsername(value: Input[String]): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

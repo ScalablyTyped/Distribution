@@ -16,6 +16,7 @@ trait VNDB_ extends js.Object {
     * @param port VNDB port
     */
   def start(): js.Promise[vndb] = js.native
+  def start(host: js.UndefOr[scala.Nothing], port: Double): js.Promise[vndb] = js.native
   def start(host: String): js.Promise[vndb] = js.native
   def start(host: String, port: Double): js.Promise[vndb] = js.native
 }

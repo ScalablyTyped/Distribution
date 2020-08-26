@@ -9,13 +9,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TestScheduler extends VirtualTimeScheduler[Double, Double] {
-  def createColdObservable[T](records: Recorded*): Observable[T]
-  def createHotObservable[T](records: Recorded*): Observable[T]
-  def createObserver[T](): MockObserver[T]
-  def startWithCreate[T](create: js.Function0[Observable[T]]): MockObserver[T]
-  def startWithDispose[T](create: js.Function0[Observable[T]], disposedAt: Double): MockObserver[T]
-  def startWithTiming[T](create: js.Function0[Observable[T]], createdAt: Double, subscribedAt: Double, disposedAt: Double): MockObserver[T]
+  def createColdObservable[T](records: Recorded*): Observable[T] = js.native
+  def createHotObservable[T](records: Recorded*): Observable[T] = js.native
+  def createObserver[T](): MockObserver[T] = js.native
+  def startWithCreate[T](create: js.Function0[Observable[T]]): MockObserver[T] = js.native
+  def startWithDispose[T](create: js.Function0[Observable[T]], disposedAt: Double): MockObserver[T] = js.native
+  def startWithTiming[T](create: js.Function0[Observable[T]], createdAt: Double, subscribedAt: Double, disposedAt: Double): MockObserver[T] = js.native
 }
 
 object TestScheduler {
@@ -61,5 +62,30 @@ object TestScheduler {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), advanceBy = js.Any.fromFunction1(advanceBy), advanceTo = js.Any.fromFunction1(advanceTo), createColdObservable = js.Any.fromFunction1(createColdObservable), createHotObservable = js.Any.fromFunction1(createHotObservable), createObserver = js.Any.fromFunction0(createObserver), getNext = js.Any.fromFunction0(getNext), isEnabled = isEnabled.asInstanceOf[js.Any], isScheduler = js.Any.fromFunction1(isScheduler), now = js.Any.fromFunction0(now), schedule = js.Any.fromFunction1(schedule), scheduleAbsolute = js.Any.fromFunction2(scheduleAbsolute), scheduleAbsoluteWithState = js.Any.fromFunction3(scheduleAbsoluteWithState), schedulePeriodic = js.Any.fromFunction2(schedulePeriodic), schedulePeriodicWithState = js.Any.fromFunction3(schedulePeriodicWithState), scheduleRecursive = js.Any.fromFunction1(scheduleRecursive), scheduleRecursiveWithAbsolute = js.Any.fromFunction2(scheduleRecursiveWithAbsolute), scheduleRecursiveWithAbsoluteAndState = js.Any.fromFunction3(scheduleRecursiveWithAbsoluteAndState), scheduleRecursiveWithRelative = js.Any.fromFunction2(scheduleRecursiveWithRelative), scheduleRecursiveWithRelativeAndState = js.Any.fromFunction3(scheduleRecursiveWithRelativeAndState), scheduleRecursiveWithState = js.Any.fromFunction2(scheduleRecursiveWithState), scheduleRelative = js.Any.fromFunction2(scheduleRelative), scheduleRelativeWithState = js.Any.fromFunction3(scheduleRelativeWithState), scheduleWithAbsolute = js.Any.fromFunction2(scheduleWithAbsolute), scheduleWithAbsoluteAndState = js.Any.fromFunction3(scheduleWithAbsoluteAndState), scheduleWithRelative = js.Any.fromFunction2(scheduleWithRelative), scheduleWithRelativeAndState = js.Any.fromFunction3(scheduleWithRelativeAndState), scheduleWithState = js.Any.fromFunction2(scheduleWithState), sleep = js.Any.fromFunction1(sleep), start = js.Any.fromFunction0(start), startWithCreate = js.Any.fromFunction1(startWithCreate), startWithDispose = js.Any.fromFunction2(startWithDispose), startWithTiming = js.Any.fromFunction4(startWithTiming), stop = js.Any.fromFunction0(stop), toDateTimeOffset = js.Any.fromFunction1(toDateTimeOffset), toRelative = js.Any.fromFunction1(toRelative))
     __obj.asInstanceOf[TestScheduler]
   }
+  @scala.inline
+  implicit class TestSchedulerOps[Self <: TestScheduler] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateColdObservable(value: /* repeated */ Recorded => Observable[js.Any]): Self = this.set("createColdObservable", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCreateHotObservable(value: /* repeated */ Recorded => Observable[js.Any]): Self = this.set("createHotObservable", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCreateObserver(value: () => MockObserver[js.Any]): Self = this.set("createObserver", js.Any.fromFunction0(value))
+    @scala.inline
+    def setStartWithCreate(value: js.Function0[Observable[js.Any]] => MockObserver[js.Any]): Self = this.set("startWithCreate", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStartWithDispose(value: (js.Function0[Observable[js.Any]], Double) => MockObserver[js.Any]): Self = this.set("startWithDispose", js.Any.fromFunction2(value))
+    @scala.inline
+    def setStartWithTiming(value: (js.Function0[Observable[js.Any]], Double, Double, Double) => MockObserver[js.Any]): Self = this.set("startWithTiming", js.Any.fromFunction4(value))
+  }
+  
 }
 

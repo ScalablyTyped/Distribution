@@ -6,59 +6,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReactourStep extends js.Object {
   /**
     * Action that can be executed on target element of the step
     */
-  var action: js.UndefOr[js.Function1[/* domNode */ js.Any, Unit]] = js.undefined
+  var action: js.UndefOr[js.Function1[/* domNode */ js.Any, Unit]] = js.native
   /**
     * Content of the step
     */
-  var content: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode])
+  var content: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode]) = js.native
   /**
     * Text read to screen reader software for this step's navigation dot
     */
-  var navDotAriaLabel: js.UndefOr[String] = js.undefined
+  var navDotAriaLabel: js.UndefOr[String] = js.native
   /**
     * Position of step content
     */
-  var position: js.UndefOr[ReactourStepPosition | (js.Tuple2[Double, Double])] = js.undefined
+  var position: js.UndefOr[ReactourStepPosition | (js.Tuple2[Double, Double])] = js.native
   /**
     * DOM selector to find the target element
     */
-  var selector: js.UndefOr[String] = js.undefined
+  var selector: js.UndefOr[String] = js.native
   /**
     * Disable interaction for this specific step.
     * Could be enabled passing `true`
     * when `disableInteraction` prop is present in Tour
     */
-  var stepInteraction: js.UndefOr[Boolean] = js.undefined
+  var stepInteraction: js.UndefOr[Boolean] = js.native
   /**
     * Additional styles
     */
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object ReactourStep {
   @scala.inline
-  def apply(
-    action: /* domNode */ js.Any => Unit = null,
-    content: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode]) = null,
-    navDotAriaLabel: String = null,
-    position: ReactourStepPosition | (js.Tuple2[Double, Double]) = null,
-    selector: String = null,
-    stepInteraction: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null
-  ): ReactourStep = {
+  def apply(): ReactourStep = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (navDotAriaLabel != null) __obj.updateDynamic("navDotAriaLabel")(navDotAriaLabel.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepInteraction)) __obj.updateDynamic("stepInteraction")(stepInteraction.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactourStep]
   }
+  @scala.inline
+  implicit class ReactourStepOps[Self <: ReactourStep] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: /* domNode */ js.Any => Unit): Self = this.set("action", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setContentFunction1(value: /* args */ ReactourStepContentArgs => ReactNode): Self = this.set("content", js.Any.fromFunction1(value))
+    @scala.inline
+    def setContent(value: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode])): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setNavDotAriaLabel(value: String): Self = this.set("navDotAriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavDotAriaLabel: Self = this.set("navDotAriaLabel", js.undefined)
+    @scala.inline
+    def setPosition(value: ReactourStepPosition | (js.Tuple2[Double, Double])): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+    @scala.inline
+    def setStepInteraction(value: Boolean): Self = this.set("stepInteraction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepInteraction: Self = this.set("stepInteraction", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

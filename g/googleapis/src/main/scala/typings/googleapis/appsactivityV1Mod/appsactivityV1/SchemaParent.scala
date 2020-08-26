@@ -26,12 +26,34 @@ trait SchemaParent extends js.Object {
 
 object SchemaParent {
   @scala.inline
-  def apply(id: String = null, isRoot: js.UndefOr[Boolean] = js.undefined, title: String = null): SchemaParent = {
+  def apply(): SchemaParent = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRoot)) __obj.updateDynamic("isRoot")(isRoot.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaParent]
   }
+  @scala.inline
+  implicit class SchemaParentOps[Self <: SchemaParent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsRoot(value: Boolean): Self = this.set("isRoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRoot: Self = this.set("isRoot", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ React component implementations of Mike Bostok's D3 visualisation library.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 109894 |
+| # downloads        | 108518 |
 | # stars            | 4 |
 
 ## Links

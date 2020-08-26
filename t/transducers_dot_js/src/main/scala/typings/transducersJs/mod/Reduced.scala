@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Reduced[T] extends js.Object {
   @JSName("@@transducer/reduced")
-  var `@@transducerSlashreduced`: `true`
+  var `@@transducerSlashreduced`: `true` = js.native
   @JSName("@@transducer/value")
-  var `@@transducerSlashvalue`: T
+  var `@@transducerSlashvalue`: T = js.native
 }
 
 @JSImport("transducers.js", "Reduced")

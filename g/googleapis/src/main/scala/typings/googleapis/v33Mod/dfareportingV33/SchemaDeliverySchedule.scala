@@ -37,18 +37,38 @@ trait SchemaDeliverySchedule extends js.Object {
 
 object SchemaDeliverySchedule {
   @scala.inline
-  def apply(
-    frequencyCap: SchemaFrequencyCap = null,
-    hardCutoff: js.UndefOr[Boolean] = js.undefined,
-    impressionRatio: String = null,
-    priority: String = null
-  ): SchemaDeliverySchedule = {
+  def apply(): SchemaDeliverySchedule = {
     val __obj = js.Dynamic.literal()
-    if (frequencyCap != null) __obj.updateDynamic("frequencyCap")(frequencyCap.asInstanceOf[js.Any])
-    if (!js.isUndefined(hardCutoff)) __obj.updateDynamic("hardCutoff")(hardCutoff.get.asInstanceOf[js.Any])
-    if (impressionRatio != null) __obj.updateDynamic("impressionRatio")(impressionRatio.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeliverySchedule]
   }
+  @scala.inline
+  implicit class SchemaDeliveryScheduleOps[Self <: SchemaDeliverySchedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrequencyCap(value: SchemaFrequencyCap): Self = this.set("frequencyCap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrequencyCap: Self = this.set("frequencyCap", js.undefined)
+    @scala.inline
+    def setHardCutoff(value: Boolean): Self = this.set("hardCutoff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHardCutoff: Self = this.set("hardCutoff", js.undefined)
+    @scala.inline
+    def setImpressionRatio(value: String): Self = this.set("impressionRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImpressionRatio: Self = this.set("impressionRatio", js.undefined)
+    @scala.inline
+    def setPriority(value: String): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+  }
+  
 }
 

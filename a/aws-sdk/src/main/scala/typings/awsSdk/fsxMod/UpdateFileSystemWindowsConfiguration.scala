@@ -30,20 +30,42 @@ trait UpdateFileSystemWindowsConfiguration extends js.Object {
 
 object UpdateFileSystemWindowsConfiguration {
   @scala.inline
-  def apply(
-    AutomaticBackupRetentionDays: js.UndefOr[AutomaticBackupRetentionDays] = js.undefined,
-    DailyAutomaticBackupStartTime: DailyTime = null,
-    SelfManagedActiveDirectoryConfiguration: SelfManagedActiveDirectoryConfigurationUpdates = null,
-    ThroughputCapacity: js.UndefOr[MegabytesPerSecond] = js.undefined,
-    WeeklyMaintenanceStartTime: WeeklyTime = null
-  ): UpdateFileSystemWindowsConfiguration = {
+  def apply(): UpdateFileSystemWindowsConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutomaticBackupRetentionDays)) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays.get.asInstanceOf[js.Any])
-    if (DailyAutomaticBackupStartTime != null) __obj.updateDynamic("DailyAutomaticBackupStartTime")(DailyAutomaticBackupStartTime.asInstanceOf[js.Any])
-    if (SelfManagedActiveDirectoryConfiguration != null) __obj.updateDynamic("SelfManagedActiveDirectoryConfiguration")(SelfManagedActiveDirectoryConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(ThroughputCapacity)) __obj.updateDynamic("ThroughputCapacity")(ThroughputCapacity.get.asInstanceOf[js.Any])
-    if (WeeklyMaintenanceStartTime != null) __obj.updateDynamic("WeeklyMaintenanceStartTime")(WeeklyMaintenanceStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFileSystemWindowsConfiguration]
   }
+  @scala.inline
+  implicit class UpdateFileSystemWindowsConfigurationOps[Self <: UpdateFileSystemWindowsConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = this.set("AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticBackupRetentionDays: Self = this.set("AutomaticBackupRetentionDays", js.undefined)
+    @scala.inline
+    def setDailyAutomaticBackupStartTime(value: DailyTime): Self = this.set("DailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDailyAutomaticBackupStartTime: Self = this.set("DailyAutomaticBackupStartTime", js.undefined)
+    @scala.inline
+    def setSelfManagedActiveDirectoryConfiguration(value: SelfManagedActiveDirectoryConfigurationUpdates): Self = this.set("SelfManagedActiveDirectoryConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfManagedActiveDirectoryConfiguration: Self = this.set("SelfManagedActiveDirectoryConfiguration", js.undefined)
+    @scala.inline
+    def setThroughputCapacity(value: MegabytesPerSecond): Self = this.set("ThroughputCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThroughputCapacity: Self = this.set("ThroughputCapacity", js.undefined)
+    @scala.inline
+    def setWeeklyMaintenanceStartTime(value: WeeklyTime): Self = this.set("WeeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeeklyMaintenanceStartTime: Self = this.set("WeeklyMaintenanceStartTime", js.undefined)
+  }
+  
 }
 

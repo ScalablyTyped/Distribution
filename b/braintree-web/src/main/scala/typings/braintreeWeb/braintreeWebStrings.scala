@@ -1,7 +1,9 @@
 package typings.braintreeWeb
 
-import typings.braintreeWeb.mod.BraintreeError.Types
-import typings.braintreeWeb.mod.HostedFieldsHostedFieldsFieldName
+import typings.braintreeWeb.coreMod.BraintreeErrorTypes
+import typings.braintreeWeb.googlePaymentMod.GooglePaymentTokenizeValues
+import typings.braintreeWeb.hostedFieldsMod.HostedFieldEventType
+import typings.braintreeWeb.hostedFieldsMod.HostedFieldsHostedFieldsFieldName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,22 +22,40 @@ object braintreeWebStrings {
   sealed trait `2-inline-iframe` extends js.Object
   
   @js.native
-  sealed trait CUSTOMER extends Types
+  sealed trait CUSTOMER extends BraintreeErrorTypes
   
   @js.native
-  sealed trait INTERNAL extends Types
+  sealed trait INTERNAL extends BraintreeErrorTypes
   
   @js.native
-  sealed trait MERCHANT extends Types
+  sealed trait MERCHANT extends BraintreeErrorTypes
   
   @js.native
-  sealed trait NETWORK extends Types
+  sealed trait NETWORK extends BraintreeErrorTypes
   
   @js.native
-  sealed trait UNKNOWN extends Types
+  sealed trait No extends GooglePaymentTokenizeValues
+  
+  @js.native
+  sealed trait UNKNOWN extends BraintreeErrorTypes
+  
+  @js.native
+  sealed trait Unknown_ extends GooglePaymentTokenizeValues
+  
+  @js.native
+  sealed trait Yes extends GooglePaymentTokenizeValues
+  
+  @js.native
+  sealed trait blur extends HostedFieldEventType
+  
+  @js.native
+  sealed trait cardTypeChange extends HostedFieldEventType
   
   @js.native
   sealed trait cvv extends HostedFieldsHostedFieldsFieldName
+  
+  @js.native
+  sealed trait empty extends HostedFieldEventType
   
   @js.native
   sealed trait expirationDate extends HostedFieldsHostedFieldsFieldName
@@ -47,10 +67,19 @@ object braintreeWebStrings {
   sealed trait expirationYear extends HostedFieldsHostedFieldsFieldName
   
   @js.native
+  sealed trait focus extends HostedFieldEventType
+  
+  @js.native
+  sealed trait notEmpty extends HostedFieldEventType
+  
+  @js.native
   sealed trait number extends HostedFieldsHostedFieldsFieldName
   
   @js.native
   sealed trait postalCode extends HostedFieldsHostedFieldsFieldName
+  
+  @js.native
+  sealed trait validityChange extends HostedFieldEventType
   
   @scala.inline
   def `1`: `1` = "1".asInstanceOf[`1`]
@@ -69,9 +98,21 @@ object braintreeWebStrings {
   @scala.inline
   def NETWORK: NETWORK = "NETWORK".asInstanceOf[NETWORK]
   @scala.inline
+  def No: No = "No".asInstanceOf[No]
+  @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   @scala.inline
+  def Unknown_ : Unknown_ = "Unknown".asInstanceOf[Unknown_]
+  @scala.inline
+  def Yes: Yes = "Yes".asInstanceOf[Yes]
+  @scala.inline
+  def blur: blur = "blur".asInstanceOf[blur]
+  @scala.inline
+  def cardTypeChange: cardTypeChange = "cardTypeChange".asInstanceOf[cardTypeChange]
+  @scala.inline
   def cvv: cvv = "cvv".asInstanceOf[cvv]
+  @scala.inline
+  def empty: empty = "empty".asInstanceOf[empty]
   @scala.inline
   def expirationDate: expirationDate = "expirationDate".asInstanceOf[expirationDate]
   @scala.inline
@@ -79,8 +120,14 @@ object braintreeWebStrings {
   @scala.inline
   def expirationYear: expirationYear = "expirationYear".asInstanceOf[expirationYear]
   @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
+  @scala.inline
+  def notEmpty: notEmpty = "notEmpty".asInstanceOf[notEmpty]
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
   def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
+  @scala.inline
+  def validityChange: validityChange = "validityChange".asInstanceOf[validityChange]
 }
 

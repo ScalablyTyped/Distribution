@@ -14,10 +14,26 @@ trait SignedObject extends js.Object {
 
 object SignedObject {
   @scala.inline
-  def apply(s3: S3SignedObject = null): SignedObject = {
+  def apply(): SignedObject = {
     val __obj = js.Dynamic.literal()
-    if (s3 != null) __obj.updateDynamic("s3")(s3.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedObject]
   }
+  @scala.inline
+  implicit class SignedObjectOps[Self <: SignedObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3(value: S3SignedObject): Self = this.set("s3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3: Self = this.set("s3", js.undefined)
+  }
+  
 }
 

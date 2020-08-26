@@ -18,11 +18,30 @@ trait CreateLaunchTemplateVersionResult extends js.Object {
 
 object CreateLaunchTemplateVersionResult {
   @scala.inline
-  def apply(LaunchTemplateVersion: LaunchTemplateVersion = null, Warning: ValidationWarning = null): CreateLaunchTemplateVersionResult = {
+  def apply(): CreateLaunchTemplateVersionResult = {
     val __obj = js.Dynamic.literal()
-    if (LaunchTemplateVersion != null) __obj.updateDynamic("LaunchTemplateVersion")(LaunchTemplateVersion.asInstanceOf[js.Any])
-    if (Warning != null) __obj.updateDynamic("Warning")(Warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLaunchTemplateVersionResult]
   }
+  @scala.inline
+  implicit class CreateLaunchTemplateVersionResultOps[Self <: CreateLaunchTemplateVersionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLaunchTemplateVersion(value: LaunchTemplateVersion): Self = this.set("LaunchTemplateVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateVersion: Self = this.set("LaunchTemplateVersion", js.undefined)
+    @scala.inline
+    def setWarning(value: ValidationWarning): Self = this.set("Warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("Warning", js.undefined)
+  }
+  
 }
 

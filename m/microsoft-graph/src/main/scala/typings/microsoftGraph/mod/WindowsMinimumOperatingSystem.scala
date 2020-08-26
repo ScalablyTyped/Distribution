@@ -4,27 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WindowsMinimumOperatingSystem extends js.Object {
   // Windows version 10.0 or later.
-  var v10_0: js.UndefOr[Boolean] = js.undefined
+  var v10_0: js.UndefOr[Boolean] = js.native
   // Windows version 8.0 or later.
-  var v8_0: js.UndefOr[Boolean] = js.undefined
+  var v8_0: js.UndefOr[Boolean] = js.native
   // Windows version 8.1 or later.
-  var v8_1: js.UndefOr[Boolean] = js.undefined
+  var v8_1: js.UndefOr[Boolean] = js.native
 }
 
 object WindowsMinimumOperatingSystem {
   @scala.inline
-  def apply(
-    v10_0: js.UndefOr[Boolean] = js.undefined,
-    v8_0: js.UndefOr[Boolean] = js.undefined,
-    v8_1: js.UndefOr[Boolean] = js.undefined
-  ): WindowsMinimumOperatingSystem = {
+  def apply(): WindowsMinimumOperatingSystem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(v10_0)) __obj.updateDynamic("v10_0")(v10_0.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(v8_0)) __obj.updateDynamic("v8_0")(v8_0.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(v8_1)) __obj.updateDynamic("v8_1")(v8_1.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsMinimumOperatingSystem]
   }
+  @scala.inline
+  implicit class WindowsMinimumOperatingSystemOps[Self <: WindowsMinimumOperatingSystem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setV10_0(value: Boolean): Self = this.set("v10_0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteV10_0: Self = this.set("v10_0", js.undefined)
+    @scala.inline
+    def setV8_0(value: Boolean): Self = this.set("v8_0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteV8_0: Self = this.set("v8_0", js.undefined)
+    @scala.inline
+    def setV8_1(value: Boolean): Self = this.set("v8_1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteV8_1: Self = this.set("v8_1", js.undefined)
+  }
+  
 }
 

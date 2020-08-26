@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation._
 // These methods are banned by seamless-immutable
 /* Inlined std.Extract<keyof std.Date, 'setDate' | 'setFullYear' | 'setHours' | 'setMilliseconds' | 'setMinutes' | 'setMonth' | 'setSeconds' | 'setTime' | 'setUTCDate' | 'setUTCFullYear' | 'setUTCHours' | 'setUTCMilliseconds' | 'setUTCMinutes' | 'setUTCMonth' | 'setUTCSeconds' | 'setYear'> */
 /* Rewritten from type alias, can be one of: 
-  - typings.seamlessImmutable.seamlessImmutableStrings.setMinutes
-  - typings.seamlessImmutable.seamlessImmutableStrings.setHours
-  - typings.seamlessImmutable.seamlessImmutableStrings.setMonth
-  - typings.seamlessImmutable.seamlessImmutableStrings.setUTCDate
   - typings.seamlessImmutable.seamlessImmutableStrings.setMilliseconds
-  - typings.seamlessImmutable.seamlessImmutableStrings.setDate
-  - typings.seamlessImmutable.seamlessImmutableStrings.setUTCFullYear
-  - typings.seamlessImmutable.seamlessImmutableStrings.setUTCMonth
-  - typings.seamlessImmutable.seamlessImmutableStrings.setFullYear
   - typings.seamlessImmutable.seamlessImmutableStrings.setUTCSeconds
-  - typings.seamlessImmutable.seamlessImmutableStrings.setUTCHours
+  - typings.seamlessImmutable.seamlessImmutableStrings.setUTCDate
   - typings.seamlessImmutable.seamlessImmutableStrings.setTime
-  - typings.seamlessImmutable.seamlessImmutableStrings.setSeconds
+  - typings.seamlessImmutable.seamlessImmutableStrings.setDate
   - typings.seamlessImmutable.seamlessImmutableStrings.setUTCMinutes
+  - typings.seamlessImmutable.seamlessImmutableStrings.setUTCHours
+  - typings.seamlessImmutable.seamlessImmutableStrings.setMinutes
   - typings.seamlessImmutable.seamlessImmutableStrings.setUTCMilliseconds
+  - typings.seamlessImmutable.seamlessImmutableStrings.setFullYear
+  - typings.seamlessImmutable.seamlessImmutableStrings.setMonth
+  - typings.seamlessImmutable.seamlessImmutableStrings.setSeconds
+  - typings.seamlessImmutable.seamlessImmutableStrings.setUTCFullYear
+  - typings.seamlessImmutable.seamlessImmutableStrings.setHours
+  - typings.seamlessImmutable.seamlessImmutableStrings.setUTCMonth
 */
 trait MutatingDateMethods extends js.Object
 

@@ -7,10 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@oracle/oraclejet/ojcontext", JSImport.Namespace)
 @js.native
-class ^ () extends Context {
-  /* CompleteClass */
-  override def getBusyContext(): BusyContext = js.native
-}
+class ^ () extends Context
 
 @JSImport("@oracle/oraclejet/ojcontext", JSImport.Namespace)
 @js.native

@@ -4,63 +4,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Chart3dFrameOptions extends js.Object {
   /**
     * (Highcharts) The back side of the frame around a 3D chart.
     */
-  var back: js.UndefOr[Chart3dFrameBackOptions] = js.undefined
+  var back: js.UndefOr[Chart3dFrameBackOptions] = js.native
   /**
     * (Highcharts) The bottom of the frame around a 3D chart.
     */
-  var bottom: js.UndefOr[Chart3dFrameBottomOptions] = js.undefined
+  var bottom: js.UndefOr[Chart3dFrameBottomOptions] = js.native
   /**
     * (Highcharts) The front of the frame around a 3D chart.
     */
-  var front: js.UndefOr[Chart3dFrameFrontOptions] = js.undefined
+  var front: js.UndefOr[Chart3dFrameFrontOptions] = js.native
   /**
     * (Highcharts) The left side of the frame around a 3D chart.
     */
-  var left: js.UndefOr[Chart3dFrameLeftOptions] = js.undefined
+  var left: js.UndefOr[Chart3dFrameLeftOptions] = js.native
   /**
     * (Highcharts) The right of the frame around a 3D chart.
     */
-  var right: js.UndefOr[Chart3dFrameRightOptions] = js.undefined
+  var right: js.UndefOr[Chart3dFrameRightOptions] = js.native
   /**
     * (Highcharts) General pixel thickness for the frame faces.
     */
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
   /**
     * (Highcharts) The top of the frame around a 3D chart.
     */
-  var top: js.UndefOr[Chart3dFrameTopOptions] = js.undefined
+  var top: js.UndefOr[Chart3dFrameTopOptions] = js.native
   /**
     * (Highcharts) Whether the frames are visible.
     */
-  var visible: js.UndefOr[String] = js.undefined
+  var visible: js.UndefOr[String] = js.native
 }
 
 object Chart3dFrameOptions {
   @scala.inline
-  def apply(
-    back: Chart3dFrameBackOptions = null,
-    bottom: Chart3dFrameBottomOptions = null,
-    front: Chart3dFrameFrontOptions = null,
-    left: Chart3dFrameLeftOptions = null,
-    right: Chart3dFrameRightOptions = null,
-    size: js.UndefOr[Double] = js.undefined,
-    top: Chart3dFrameTopOptions = null,
-    visible: String = null
-  ): Chart3dFrameOptions = {
+  def apply(): Chart3dFrameOptions = {
     val __obj = js.Dynamic.literal()
-    if (back != null) __obj.updateDynamic("back")(back.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (front != null) __obj.updateDynamic("front")(front.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chart3dFrameOptions]
   }
+  @scala.inline
+  implicit class Chart3dFrameOptionsOps[Self <: Chart3dFrameOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBack(value: Chart3dFrameBackOptions): Self = this.set("back", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBack: Self = this.set("back", js.undefined)
+    @scala.inline
+    def setBottom(value: Chart3dFrameBottomOptions): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setFront(value: Chart3dFrameFrontOptions): Self = this.set("front", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFront: Self = this.set("front", js.undefined)
+    @scala.inline
+    def setLeft(value: Chart3dFrameLeftOptions): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setRight(value: Chart3dFrameRightOptions): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTop(value: Chart3dFrameTopOptions): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setVisible(value: String): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

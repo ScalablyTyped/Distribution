@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CleanupObject extends js.Object {
-  var continueOnError: js.UndefOr[Boolean] = js.undefined
-  var onDestroy: js.UndefOr[js.Function] = js.undefined
+  var continueOnError: js.UndefOr[Boolean] = js.native
+  var onDestroy: js.UndefOr[js.Function] = js.native
 }
 
 object CleanupObject {
   @scala.inline
-  def apply(continueOnError: js.UndefOr[Boolean] = js.undefined, onDestroy: js.Function = null): CleanupObject = {
+  def apply(): CleanupObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(continueOnError)) __obj.updateDynamic("continueOnError")(continueOnError.get.asInstanceOf[js.Any])
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CleanupObject]
   }
+  @scala.inline
+  implicit class CleanupObjectOps[Self <: CleanupObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContinueOnError(value: Boolean): Self = this.set("continueOnError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinueOnError: Self = this.set("continueOnError", js.undefined)
+    @scala.inline
+    def setOnDestroy(value: js.Function): Self = this.set("onDestroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDestroy: Self = this.set("onDestroy", js.undefined)
+  }
+  
 }
 

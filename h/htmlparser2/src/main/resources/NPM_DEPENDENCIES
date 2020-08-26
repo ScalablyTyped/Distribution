@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "htmlparser2" : "4.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "htmlparser2" : "4.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

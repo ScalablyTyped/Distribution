@@ -12,7 +12,7 @@ you give emoji name, we give you an emoji
 | Keywords           | emoji |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 1096 |
+| # downloads        | 1648 |
 | # stars            | 0 |
 
 ## Links

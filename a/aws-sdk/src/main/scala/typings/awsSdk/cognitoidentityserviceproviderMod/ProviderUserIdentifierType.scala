@@ -22,16 +22,34 @@ trait ProviderUserIdentifierType extends js.Object {
 
 object ProviderUserIdentifierType {
   @scala.inline
-  def apply(
-    ProviderAttributeName: StringType = null,
-    ProviderAttributeValue: StringType = null,
-    ProviderName: ProviderNameType = null
-  ): ProviderUserIdentifierType = {
+  def apply(): ProviderUserIdentifierType = {
     val __obj = js.Dynamic.literal()
-    if (ProviderAttributeName != null) __obj.updateDynamic("ProviderAttributeName")(ProviderAttributeName.asInstanceOf[js.Any])
-    if (ProviderAttributeValue != null) __obj.updateDynamic("ProviderAttributeValue")(ProviderAttributeValue.asInstanceOf[js.Any])
-    if (ProviderName != null) __obj.updateDynamic("ProviderName")(ProviderName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderUserIdentifierType]
   }
+  @scala.inline
+  implicit class ProviderUserIdentifierTypeOps[Self <: ProviderUserIdentifierType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProviderAttributeName(value: StringType): Self = this.set("ProviderAttributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderAttributeName: Self = this.set("ProviderAttributeName", js.undefined)
+    @scala.inline
+    def setProviderAttributeValue(value: StringType): Self = this.set("ProviderAttributeValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderAttributeValue: Self = this.set("ProviderAttributeValue", js.undefined)
+    @scala.inline
+    def setProviderName(value: ProviderNameType): Self = this.set("ProviderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderName: Self = this.set("ProviderName", js.undefined)
+  }
+  
 }
 

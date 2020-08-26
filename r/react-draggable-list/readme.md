@@ -11,8 +11,8 @@ Make a list of draggable collapsible items.
 | Full name          | react-draggable-list |
 | Keywords           | react, react-component, animation, reorder, move, drag-and-drop, draggable |
 | # releases         | 10 |
-| # dependents       | 5 |
-| # downloads        | 70720 |
+| # dependents       | 6 |
+| # downloads        | 70563 |
 | # stars            | 2 |
 
 ## Links

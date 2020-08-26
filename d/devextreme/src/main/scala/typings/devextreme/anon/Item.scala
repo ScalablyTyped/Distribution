@@ -1,33 +1,37 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod.DevExpress.ui.dxDiagram
-import typings.devextreme.mod.DevExpress.ui.dxDiagramItem
+import typings.devextreme.mod.DevExpress.ui.dxDiagramShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Item extends js.Object {
-  var component: js.UndefOr[dxDiagram] = js.undefined
-  var element: js.UndefOr[dxElement] = js.undefined
-  var item: js.UndefOr[dxDiagramItem] = js.undefined
-  var model: js.UndefOr[js.Any] = js.undefined
+  var item: js.UndefOr[dxDiagramShape] = js.native
 }
 
 object Item {
   @scala.inline
-  def apply(
-    component: dxDiagram = null,
-    element: dxElement = null,
-    item: dxDiagramItem = null,
-    model: js.Any = null
-  ): Item = {
+  def apply(): Item = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
+  @scala.inline
+  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItem(value: dxDiagramShape): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+  }
+  
 }
 

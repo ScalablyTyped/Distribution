@@ -11,8 +11,8 @@ Run the supplied function exactly one time (once)
 | Full name          | one-time |
 | Keywords           | once, function, single, one, one-time, execution, nope |
 | # releases         | 2 |
-| # dependents       | 43 |
-| # downloads        | 48137372 |
+| # dependents       | 42 |
+| # downloads        | 50966102 |
 | # stars            | 0 |
 
 ## Links

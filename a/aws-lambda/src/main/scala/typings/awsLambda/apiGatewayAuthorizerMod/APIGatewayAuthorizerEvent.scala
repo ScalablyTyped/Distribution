@@ -1,6 +1,5 @@
 package typings.awsLambda.apiGatewayAuthorizerMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.awsLambda.apiGatewayMod.APIGatewayEventRequestContextWithAuthorizer
 import typings.awsLambda.awsLambdaStrings.REQUEST
 import typings.awsLambda.awsLambdaStrings.TOKEN
@@ -28,15 +27,9 @@ object APIGatewayAuthorizerEvent {
     path: String,
     requestContext: APIGatewayEventRequestContextWithAuthorizer[js.UndefOr[scala.Nothing]],
     resource: String,
-    `type`: REQUEST,
-    headers: StringDictionary[String] = null,
-    multiValueHeaders: StringDictionary[js.Array[String]] = null,
-    multiValueQueryStringParameters: StringDictionary[js.Array[String]] = null,
-    pathParameters: StringDictionary[String] = null,
-    queryStringParameters: StringDictionary[String] = null,
-    stageVariables: StringDictionary[String] = null
+    `type`: REQUEST
   ): APIGatewayAuthorizerEvent = {
-    val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], multiValueHeaders = multiValueHeaders.asInstanceOf[js.Any], multiValueQueryStringParameters = multiValueQueryStringParameters.asInstanceOf[js.Any], pathParameters = pathParameters.asInstanceOf[js.Any], queryStringParameters = queryStringParameters.asInstanceOf[js.Any], stageVariables = stageVariables.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], methodArn = methodArn.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIGatewayAuthorizerEvent]
   }

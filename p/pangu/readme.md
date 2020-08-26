@@ -12,7 +12,7 @@ Paranoid text spacing for good readability, to automatically insert whitespace b
 | Keywords           | pangu, text-spacing, spacing, text, html, typesetting, readability, cli, chinese, japanese, korean, obsessive-compulsive-disorder, ocd, paranoia |
 | # releases         | 9 |
 | # dependents       | 17 |
-| # downloads        | 13107 |
+| # downloads        | 13444 |
 | # stars            | 2 |
 
 ## Links

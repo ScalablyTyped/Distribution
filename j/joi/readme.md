@@ -11,8 +11,8 @@ Object schema validation
 | Full name          | joi |
 | Keywords           | hapi, schema, validation |
 | # releases         | 24 |
-| # dependents       | 3261 |
-| # downloads        | 131040400 |
+| # dependents       | 3263 |
+| # downloads        | 129171876 |
 | # stars            | 281 |
 
 ## Links

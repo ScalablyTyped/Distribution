@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vue-class-component" : "7.2.3"
+      "vue-class-component" : "7.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "vue-class-component" : "7.2.3"
+      "vue-class-component" : "7.2.5"
     }
   ],
   "compile-devDependencies" : [

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/panels/QuarterPanel/QuarterBody", "QUARTER_COL_COUNT")
+@JSImport("rc-picker/es/panels/QuarterPanel/QuarterBody", "QUARTER_COL_COUNT")
 @js.native
 object QUARTER_COL_COUNT extends TopLevel[/* 3 */ Double]
 

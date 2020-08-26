@@ -27,17 +27,10 @@ object putBucketReplicationCommandMod extends js.Object {
           Blob
         ] {
     def this(input: PutBucketReplicationInput) = this()
-    /* CompleteClass */
-    override val input: PutBucketReplicationInput = js.native
     val middlewareStack: MiddlewareStack[PutBucketReplicationInput, PutBucketReplicationOutput, Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[PutBucketReplicationInput, PutBucketReplicationOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[PutBucketReplicationInput, PutBucketReplicationOutput] = js.native
   }

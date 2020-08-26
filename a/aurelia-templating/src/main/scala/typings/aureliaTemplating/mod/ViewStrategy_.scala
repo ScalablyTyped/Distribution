@@ -18,6 +18,12 @@ trait ViewStrategy_ extends js.Object {
   def loadViewFactory(
     viewEngine: ViewEngine,
     compileInstruction: ViewCompileInstruction,
+    loadContext: js.UndefOr[scala.Nothing],
+    target: js.Any
+  ): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(
+    viewEngine: ViewEngine,
+    compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext
   ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(

@@ -35,33 +35,61 @@ trait LinkAggregationGroupState extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object LinkAggregationGroupState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    connectionsBandwidth: Input[String] = null,
-    forceDestroy: Input[Boolean] = null,
-    hasLogicalRedundancy: Input[String] = null,
-    jumboFrameCapable: Input[Boolean] = null,
-    location: Input[String] = null,
-    name: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): LinkAggregationGroupState = {
+  def apply(): LinkAggregationGroupState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (connectionsBandwidth != null) __obj.updateDynamic("connectionsBandwidth")(connectionsBandwidth.asInstanceOf[js.Any])
-    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
-    if (hasLogicalRedundancy != null) __obj.updateDynamic("hasLogicalRedundancy")(hasLogicalRedundancy.asInstanceOf[js.Any])
-    if (jumboFrameCapable != null) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkAggregationGroupState]
   }
+  @scala.inline
+  implicit class LinkAggregationGroupStateOps[Self <: LinkAggregationGroupState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setConnectionsBandwidth(value: Input[String]): Self = this.set("connectionsBandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionsBandwidth: Self = this.set("connectionsBandwidth", js.undefined)
+    @scala.inline
+    def setForceDestroy(value: Input[Boolean]): Self = this.set("forceDestroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceDestroy: Self = this.set("forceDestroy", js.undefined)
+    @scala.inline
+    def setHasLogicalRedundancy(value: Input[String]): Self = this.set("hasLogicalRedundancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasLogicalRedundancy: Self = this.set("hasLogicalRedundancy", js.undefined)
+    @scala.inline
+    def setJumboFrameCapable(value: Input[Boolean]): Self = this.set("jumboFrameCapable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJumboFrameCapable: Self = this.set("jumboFrameCapable", js.undefined)
+    @scala.inline
+    def setLocation(value: Input[String]): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -32,12 +32,9 @@ object errorsMod extends js.Object {
   class PostmarkError protected () extends Error {
     def this(message: String) = this()
     def this(message: String, code: Double) = this()
+    def this(message: String, code: js.UndefOr[scala.Nothing], statusCode: Double) = this()
     def this(message: String, code: Double, statusCode: Double) = this()
     var code: Double = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var statusCode: Double = js.native
     /* protected */ def setUpStackTrace(): Unit = js.native
   }

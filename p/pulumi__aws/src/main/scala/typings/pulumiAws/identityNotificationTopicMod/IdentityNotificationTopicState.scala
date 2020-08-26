@@ -27,18 +27,38 @@ trait IdentityNotificationTopicState extends js.Object {
 
 object IdentityNotificationTopicState {
   @scala.inline
-  def apply(
-    identity: Input[String] = null,
-    includeOriginalHeaders: Input[Boolean] = null,
-    notificationType: Input[String] = null,
-    topicArn: Input[String] = null
-  ): IdentityNotificationTopicState = {
+  def apply(): IdentityNotificationTopicState = {
     val __obj = js.Dynamic.literal()
-    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
-    if (includeOriginalHeaders != null) __obj.updateDynamic("includeOriginalHeaders")(includeOriginalHeaders.asInstanceOf[js.Any])
-    if (notificationType != null) __obj.updateDynamic("notificationType")(notificationType.asInstanceOf[js.Any])
-    if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityNotificationTopicState]
   }
+  @scala.inline
+  implicit class IdentityNotificationTopicStateOps[Self <: IdentityNotificationTopicState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentity(value: Input[String]): Self = this.set("identity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentity: Self = this.set("identity", js.undefined)
+    @scala.inline
+    def setIncludeOriginalHeaders(value: Input[Boolean]): Self = this.set("includeOriginalHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeOriginalHeaders: Self = this.set("includeOriginalHeaders", js.undefined)
+    @scala.inline
+    def setNotificationType(value: Input[String]): Self = this.set("notificationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationType: Self = this.set("notificationType", js.undefined)
+    @scala.inline
+    def setTopicArn(value: Input[String]): Self = this.set("topicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicArn: Self = this.set("topicArn", js.undefined)
+  }
+  
 }
 

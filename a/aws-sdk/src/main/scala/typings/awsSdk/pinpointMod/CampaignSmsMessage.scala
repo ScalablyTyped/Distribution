@@ -22,12 +22,34 @@ trait CampaignSmsMessage extends js.Object {
 
 object CampaignSmsMessage {
   @scala.inline
-  def apply(Body: string = null, MessageType: MessageType = null, SenderId: string = null): CampaignSmsMessage = {
+  def apply(): CampaignSmsMessage = {
     val __obj = js.Dynamic.literal()
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (MessageType != null) __obj.updateDynamic("MessageType")(MessageType.asInstanceOf[js.Any])
-    if (SenderId != null) __obj.updateDynamic("SenderId")(SenderId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CampaignSmsMessage]
   }
+  @scala.inline
+  implicit class CampaignSmsMessageOps[Self <: CampaignSmsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setMessageType(value: MessageType): Self = this.set("MessageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageType: Self = this.set("MessageType", js.undefined)
+    @scala.inline
+    def setSenderId(value: string): Self = this.set("SenderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSenderId: Self = this.set("SenderId", js.undefined)
+  }
+  
 }
 

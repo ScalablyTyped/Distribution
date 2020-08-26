@@ -10,9 +10,9 @@ validate form asynchronous
 | ------------------ | :-------------: |
 | Full name          | async-validator |
 | Keywords           | validator, validate, async |
-| # releases         | 26 |
-| # dependents       | 1285 |
-| # downloads        | 16911485 |
+| # releases         | 25 |
+| # dependents       | 1312 |
+| # downloads        | 17459767 |
 | # stars            | 10 |
 
 ## Links

@@ -34,16 +34,34 @@ trait SchemaDimensionGroup extends js.Object {
 
 object SchemaDimensionGroup {
   @scala.inline
-  def apply(
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    depth: js.UndefOr[Double] = js.undefined,
-    range: SchemaDimensionRange = null
-  ): SchemaDimensionGroup = {
+  def apply(): SchemaDimensionGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDimensionGroup]
   }
+  @scala.inline
+  implicit class SchemaDimensionGroupOps[Self <: SchemaDimensionGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    @scala.inline
+    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepth: Self = this.set("depth", js.undefined)
+    @scala.inline
+    def setRange(value: SchemaDimensionRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+  }
+  
 }
 

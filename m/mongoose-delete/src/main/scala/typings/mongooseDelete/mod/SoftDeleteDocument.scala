@@ -12,6 +12,7 @@ trait SoftDeleteDocument
      with SoftDeleteInterface {
   /** Soft delete this document */
   def delete(): js.Promise[this.type] = js.native
+  def delete(deleteBy: js.UndefOr[scala.Nothing], fn: Callback[this.type, this.type]): js.Promise[this.type] = js.native
   def delete(deleteBy: String): js.Promise[this.type] = js.native
   def delete(deleteBy: String, fn: Callback[this.type, this.type]): js.Promise[this.type] = js.native
   def delete(deleteBy: ObjectId): js.Promise[this.type] = js.native

@@ -16,14 +16,14 @@ class Asset protected () extends js.Object {
   def getCode(): String = js.native
   def getIssuer(): String = js.native
   def isNative(): Boolean = js.native
-  def toXDRObject(): typings.stellarBase.mod.xdr.Asset = js.native
+  def toXDRObject(): typings.stellarBase.xdrMod.default.Asset = js.native
 }
 
 /* static members */
 @JSImport("stellar-base", "Asset")
 @js.native
 object Asset extends js.Object {
-  def fromOperation(xdr: typings.stellarBase.mod.xdr.Asset): Asset = js.native
+  def fromOperation(xdr: typings.stellarBase.xdrMod.default.Asset): Asset = js.native
   def native(): Asset = js.native
 }
 

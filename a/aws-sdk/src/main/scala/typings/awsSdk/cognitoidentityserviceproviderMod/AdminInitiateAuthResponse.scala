@@ -26,18 +26,38 @@ trait AdminInitiateAuthResponse extends js.Object {
 
 object AdminInitiateAuthResponse {
   @scala.inline
-  def apply(
-    AuthenticationResult: AuthenticationResultType = null,
-    ChallengeName: ChallengeNameType = null,
-    ChallengeParameters: ChallengeParametersType = null,
-    Session: SessionType = null
-  ): AdminInitiateAuthResponse = {
+  def apply(): AdminInitiateAuthResponse = {
     val __obj = js.Dynamic.literal()
-    if (AuthenticationResult != null) __obj.updateDynamic("AuthenticationResult")(AuthenticationResult.asInstanceOf[js.Any])
-    if (ChallengeName != null) __obj.updateDynamic("ChallengeName")(ChallengeName.asInstanceOf[js.Any])
-    if (ChallengeParameters != null) __obj.updateDynamic("ChallengeParameters")(ChallengeParameters.asInstanceOf[js.Any])
-    if (Session != null) __obj.updateDynamic("Session")(Session.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminInitiateAuthResponse]
   }
+  @scala.inline
+  implicit class AdminInitiateAuthResponseOps[Self <: AdminInitiateAuthResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticationResult(value: AuthenticationResultType): Self = this.set("AuthenticationResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationResult: Self = this.set("AuthenticationResult", js.undefined)
+    @scala.inline
+    def setChallengeName(value: ChallengeNameType): Self = this.set("ChallengeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChallengeName: Self = this.set("ChallengeName", js.undefined)
+    @scala.inline
+    def setChallengeParameters(value: ChallengeParametersType): Self = this.set("ChallengeParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChallengeParameters: Self = this.set("ChallengeParameters", js.undefined)
+    @scala.inline
+    def setSession(value: SessionType): Self = this.set("Session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession: Self = this.set("Session", js.undefined)
+  }
+  
 }
 

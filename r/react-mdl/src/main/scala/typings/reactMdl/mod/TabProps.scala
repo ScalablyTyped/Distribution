@@ -6,36 +6,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabProps
   extends AllHTMLAttributes[js.Any]
      with ClassAttributes[js.Any]
      with CustomRenderedComponent {
-  var active: js.UndefOr[Boolean] = js.undefined
-  var cssPrefix: js.UndefOr[String] = js.undefined
-  var onTabClick: js.UndefOr[js.Function1[/* tabId */ Double, _]] = js.undefined
-  var tabId: js.UndefOr[Double] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
+  var cssPrefix: js.UndefOr[String] = js.native
+  var onTabClick: js.UndefOr[js.Function1[/* tabId */ Double, _]] = js.native
+  var tabId: js.UndefOr[Double] = js.native
 }
 
 object TabProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    CustomRenderedComponent: CustomRenderedComponent = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    cssPrefix: String = null,
-    onTabClick: /* tabId */ Double => _ = null,
-    tabId: js.UndefOr[Double] = js.undefined
-  ): TabProps = {
+  def apply(): TabProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (CustomRenderedComponent != null) js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (cssPrefix != null) __obj.updateDynamic("cssPrefix")(cssPrefix.asInstanceOf[js.Any])
-    if (onTabClick != null) __obj.updateDynamic("onTabClick")(js.Any.fromFunction1(onTabClick))
-    if (!js.isUndefined(tabId)) __obj.updateDynamic("tabId")(tabId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabProps]
   }
+  @scala.inline
+  implicit class TabPropsOps[Self <: TabProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setCssPrefix(value: String): Self = this.set("cssPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssPrefix: Self = this.set("cssPrefix", js.undefined)
+    @scala.inline
+    def setOnTabClick(value: /* tabId */ Double => _): Self = this.set("onTabClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTabClick: Self = this.set("onTabClick", js.undefined)
+    @scala.inline
+    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabId: Self = this.set("tabId", js.undefined)
+  }
+  
 }
 

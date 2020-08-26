@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * long    ObjectLength    // 0 if it is a reference or no object, otherwise the len of the object data; Object  ObjectData      // the data of the
   * object; `
   */
+@js.native
 trait ObjectOutputStream
   extends XObjectOutputStream
      with XActiveDataSource

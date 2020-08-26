@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModuleOptions extends js.Object {
-  var preserveState: js.UndefOr[Boolean] = js.undefined
+  var preserveState: js.UndefOr[Boolean] = js.native
 }
 
 object ModuleOptions {
   @scala.inline
-  def apply(preserveState: js.UndefOr[Boolean] = js.undefined): ModuleOptions = {
+  def apply(): ModuleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preserveState)) __obj.updateDynamic("preserveState")(preserveState.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleOptions]
   }
+  @scala.inline
+  implicit class ModuleOptionsOps[Self <: ModuleOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPreserveState(value: Boolean): Self = this.set("preserveState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveState: Self = this.set("preserveState", js.undefined)
+  }
+  
 }
 

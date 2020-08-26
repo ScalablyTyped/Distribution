@@ -33,6 +33,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def addResourcePolicies(): GaxiosPromise[SchemaOperation] = js.native
   def addResourcePolicies(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def addResourcePolicies(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addResourcePolicies(params: ParamsResourceDisksAddresourcepolicies): GaxiosPromise[SchemaOperation] = js.native
   def addResourcePolicies(params: ParamsResourceDisksAddresourcepolicies, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addResourcePolicies(
@@ -131,6 +132,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaDiskAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaDiskAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDiskAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceDisksAggregatedlist): GaxiosPromise[SchemaDiskAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceDisksAggregatedlist,
@@ -229,6 +231,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def createSnapshot(): GaxiosPromise[SchemaOperation] = js.native
   def createSnapshot(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def createSnapshot(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def createSnapshot(params: ParamsResourceDisksCreatesnapshot): GaxiosPromise[SchemaOperation] = js.native
   def createSnapshot(params: ParamsResourceDisksCreatesnapshot, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def createSnapshot(
@@ -321,6 +324,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceDisksDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceDisksDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -410,6 +414,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDisk] = js.native
   def get(callback: BodyResponseCallback[SchemaDisk]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDisk] = js.native
   def get(params: ParamsResourceDisksGet): GaxiosPromise[SchemaDisk] = js.native
   def get(params: ParamsResourceDisksGet, callback: BodyResponseCallback[SchemaDisk]): Unit = js.native
   def get(
@@ -436,6 +441,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceDisksGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceDisksGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -531,6 +537,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceDisksInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceDisksInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -633,6 +640,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaDiskList] = js.native
   def list(callback: BodyResponseCallback[SchemaDiskList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDiskList] = js.native
   def list(params: ParamsResourceDisksList): GaxiosPromise[SchemaDiskList] = js.native
   def list(params: ParamsResourceDisksList, callback: BodyResponseCallback[SchemaDiskList]): Unit = js.native
   def list(
@@ -664,6 +672,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def removeResourcePolicies(): GaxiosPromise[SchemaOperation] = js.native
   def removeResourcePolicies(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def removeResourcePolicies(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def removeResourcePolicies(params: ParamsResourceDisksRemoveresourcepolicies): GaxiosPromise[SchemaOperation] = js.native
   def removeResourcePolicies(params: ParamsResourceDisksRemoveresourcepolicies, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def removeResourcePolicies(
@@ -759,6 +768,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def resize(): GaxiosPromise[SchemaOperation] = js.native
   def resize(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def resize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def resize(params: ParamsResourceDisksResize): GaxiosPromise[SchemaOperation] = js.native
   def resize(params: ParamsResourceDisksResize, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def resize(
@@ -790,6 +800,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceDisksSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceDisksSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -885,6 +896,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceDisksSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceDisksSetlabels, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setLabels(
@@ -978,6 +990,7 @@ class ResourceDisks protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceDisksTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceDisksTestiampermissions,

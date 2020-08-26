@@ -22,12 +22,34 @@ trait DescribeProtectedResourceOutput extends js.Object {
 
 object DescribeProtectedResourceOutput {
   @scala.inline
-  def apply(LastBackupTime: timestamp = null, ResourceArn: ARN = null, ResourceType: ResourceType = null): DescribeProtectedResourceOutput = {
+  def apply(): DescribeProtectedResourceOutput = {
     val __obj = js.Dynamic.literal()
-    if (LastBackupTime != null) __obj.updateDynamic("LastBackupTime")(LastBackupTime.asInstanceOf[js.Any])
-    if (ResourceArn != null) __obj.updateDynamic("ResourceArn")(ResourceArn.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProtectedResourceOutput]
   }
+  @scala.inline
+  implicit class DescribeProtectedResourceOutputOps[Self <: DescribeProtectedResourceOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastBackupTime(value: timestamp): Self = this.set("LastBackupTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastBackupTime: Self = this.set("LastBackupTime", js.undefined)
+    @scala.inline
+    def setResourceArn(value: ARN): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+  }
+  
 }
 

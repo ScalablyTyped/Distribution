@@ -18,11 +18,32 @@ trait ListTestGridProjectsResult extends js.Object {
 
 object ListTestGridProjectsResult {
   @scala.inline
-  def apply(nextToken: PaginationToken = null, testGridProjects: TestGridProjects = null): ListTestGridProjectsResult = {
+  def apply(): ListTestGridProjectsResult = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (testGridProjects != null) __obj.updateDynamic("testGridProjects")(testGridProjects.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTestGridProjectsResult]
   }
+  @scala.inline
+  implicit class ListTestGridProjectsResultOps[Self <: ListTestGridProjectsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setTestGridProjectsVarargs(value: TestGridProject*): Self = this.set("testGridProjects", js.Array(value :_*))
+    @scala.inline
+    def setTestGridProjects(value: TestGridProjects): Self = this.set("testGridProjects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestGridProjects: Self = this.set("testGridProjects", js.undefined)
+  }
+  
 }
 

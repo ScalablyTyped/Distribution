@@ -72,7 +72,7 @@ object security extends js.Object {
   }
   
   /**
-    * See: {@link https://docs.mendix.com/refguide7/module-role relevant section in reference guide}
+    * See: {@link https://docs.mendix.com/refguide7/module-security relevant section in reference guide}
     */
   @js.native
   class ModuleRole protected ()
@@ -138,7 +138,7 @@ object security extends js.Object {
     extends typings.mendixmodelsdk.securityMod.security.SecurityLevel
   
   /**
-    * See: {@link https://docs.mendix.com/refguide7/user-role relevant section in reference guide}
+    * See: {@link https://docs.mendix.com/refguide7/user-roles relevant section in reference guide}
     */
   @js.native
   class UserRole protected ()

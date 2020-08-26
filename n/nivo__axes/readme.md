@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__axes
 
-Typings are for version 0.61.0
+Typings are for version 0.62.0
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 0.61.0
 | ------------------ | :-------------: |
 | Full name          | @nivo/axes |
 | Keywords           | nivo, dataviz, react, axes |
-| # releases         | 17 |
+| # releases         | 19 |
 | # dependents       | 17 |
-| # downloads        | 870411 |
+| # downloads        | 952483 |
 | # stars            | 0 |
 
 ## Links

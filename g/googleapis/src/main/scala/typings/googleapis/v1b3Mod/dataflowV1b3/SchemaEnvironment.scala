@@ -81,34 +81,74 @@ trait SchemaEnvironment extends js.Object {
 
 object SchemaEnvironment {
   @scala.inline
-  def apply(
-    clusterManagerApiService: String = null,
-    dataset: String = null,
-    experiments: js.Array[String] = null,
-    flexResourceSchedulingGoal: String = null,
-    internalExperiments: StringDictionary[js.Any] = null,
-    sdkPipelineOptions: StringDictionary[js.Any] = null,
-    serviceAccountEmail: String = null,
-    serviceKmsKeyName: String = null,
-    tempStoragePrefix: String = null,
-    userAgent: StringDictionary[js.Any] = null,
-    version: StringDictionary[js.Any] = null,
-    workerPools: js.Array[SchemaWorkerPool] = null
-  ): SchemaEnvironment = {
+  def apply(): SchemaEnvironment = {
     val __obj = js.Dynamic.literal()
-    if (clusterManagerApiService != null) __obj.updateDynamic("clusterManagerApiService")(clusterManagerApiService.asInstanceOf[js.Any])
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
-    if (experiments != null) __obj.updateDynamic("experiments")(experiments.asInstanceOf[js.Any])
-    if (flexResourceSchedulingGoal != null) __obj.updateDynamic("flexResourceSchedulingGoal")(flexResourceSchedulingGoal.asInstanceOf[js.Any])
-    if (internalExperiments != null) __obj.updateDynamic("internalExperiments")(internalExperiments.asInstanceOf[js.Any])
-    if (sdkPipelineOptions != null) __obj.updateDynamic("sdkPipelineOptions")(sdkPipelineOptions.asInstanceOf[js.Any])
-    if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail.asInstanceOf[js.Any])
-    if (serviceKmsKeyName != null) __obj.updateDynamic("serviceKmsKeyName")(serviceKmsKeyName.asInstanceOf[js.Any])
-    if (tempStoragePrefix != null) __obj.updateDynamic("tempStoragePrefix")(tempStoragePrefix.asInstanceOf[js.Any])
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (workerPools != null) __obj.updateDynamic("workerPools")(workerPools.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnvironment]
   }
+  @scala.inline
+  implicit class SchemaEnvironmentOps[Self <: SchemaEnvironment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterManagerApiService(value: String): Self = this.set("clusterManagerApiService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterManagerApiService: Self = this.set("clusterManagerApiService", js.undefined)
+    @scala.inline
+    def setDataset(value: String): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataset: Self = this.set("dataset", js.undefined)
+    @scala.inline
+    def setExperimentsVarargs(value: String*): Self = this.set("experiments", js.Array(value :_*))
+    @scala.inline
+    def setExperiments(value: js.Array[String]): Self = this.set("experiments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperiments: Self = this.set("experiments", js.undefined)
+    @scala.inline
+    def setFlexResourceSchedulingGoal(value: String): Self = this.set("flexResourceSchedulingGoal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexResourceSchedulingGoal: Self = this.set("flexResourceSchedulingGoal", js.undefined)
+    @scala.inline
+    def setInternalExperiments(value: StringDictionary[js.Any]): Self = this.set("internalExperiments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternalExperiments: Self = this.set("internalExperiments", js.undefined)
+    @scala.inline
+    def setSdkPipelineOptions(value: StringDictionary[js.Any]): Self = this.set("sdkPipelineOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSdkPipelineOptions: Self = this.set("sdkPipelineOptions", js.undefined)
+    @scala.inline
+    def setServiceAccountEmail(value: String): Self = this.set("serviceAccountEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccountEmail: Self = this.set("serviceAccountEmail", js.undefined)
+    @scala.inline
+    def setServiceKmsKeyName(value: String): Self = this.set("serviceKmsKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceKmsKeyName: Self = this.set("serviceKmsKeyName", js.undefined)
+    @scala.inline
+    def setTempStoragePrefix(value: String): Self = this.set("tempStoragePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTempStoragePrefix: Self = this.set("tempStoragePrefix", js.undefined)
+    @scala.inline
+    def setUserAgent(value: StringDictionary[js.Any]): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+    @scala.inline
+    def setVersion(value: StringDictionary[js.Any]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setWorkerPoolsVarargs(value: SchemaWorkerPool*): Self = this.set("workerPools", js.Array(value :_*))
+    @scala.inline
+    def setWorkerPools(value: js.Array[SchemaWorkerPool]): Self = this.set("workerPools", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerPools: Self = this.set("workerPools", js.undefined)
+  }
+  
 }
 

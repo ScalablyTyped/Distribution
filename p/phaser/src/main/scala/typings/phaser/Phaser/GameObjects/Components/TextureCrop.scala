@@ -55,12 +55,32 @@ trait TextureCrop extends js.Object {
     * @param height The height of the crop rectangle in pixels.
     */
   def setCrop(): this.type = js.native
+  def setCrop(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: Double): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): this.type = js.native
   def setCrop(x: Double): this.type = js.native
+  def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
+  def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
+  def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
   def setCrop(x: Double, y: Double): this.type = js.native
+  def setCrop(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setCrop(x: Double, y: Double, width: Double): this.type = js.native
   def setCrop(x: Double, y: Double, width: Double, height: Double): this.type = js.native
   def setCrop(x: Rectangle): this.type = js.native
+  def setCrop(x: Rectangle, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
+  def setCrop(x: Rectangle, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
+  def setCrop(x: Rectangle, y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
   def setCrop(x: Rectangle, y: Double): this.type = js.native
+  def setCrop(x: Rectangle, y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setCrop(x: Rectangle, y: Double, width: Double): this.type = js.native
   def setCrop(x: Rectangle, y: Double, width: Double, height: Double): this.type = js.native
   /**
@@ -77,9 +97,11 @@ trait TextureCrop extends js.Object {
     * @param updateOrigin Should this call adjust the origin of the Game Object? Default true.
     */
   def setFrame(frame: String): this.type = js.native
+  def setFrame(frame: String, updateSize: js.UndefOr[scala.Nothing], updateOrigin: Boolean): this.type = js.native
   def setFrame(frame: String, updateSize: Boolean): this.type = js.native
   def setFrame(frame: String, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
   def setFrame(frame: integer): this.type = js.native
+  def setFrame(frame: integer, updateSize: js.UndefOr[scala.Nothing], updateOrigin: Boolean): this.type = js.native
   def setFrame(frame: integer, updateSize: Boolean): this.type = js.native
   def setFrame(frame: integer, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
   /**

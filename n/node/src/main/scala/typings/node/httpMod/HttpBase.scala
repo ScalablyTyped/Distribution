@@ -22,6 +22,7 @@ trait HttpBase extends js.Object {
   var timeout: Double = js.native
   def setTimeout(): this.type = js.native
   def setTimeout(callback: js.Function0[Unit]): this.type = js.native
+  def setTimeout(msecs: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def setTimeout(msecs: Double): this.type = js.native
   def setTimeout(msecs: Double, callback: js.Function0[Unit]): this.type = js.native
 }

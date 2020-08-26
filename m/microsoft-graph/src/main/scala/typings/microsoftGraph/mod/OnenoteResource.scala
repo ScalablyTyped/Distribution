@@ -4,22 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OnenoteResource extends OnenoteEntityBaseModel {
   // The content stream
-  var content: js.UndefOr[js.Any] = js.undefined
+  var content: js.UndefOr[js.Any] = js.native
   // The URL for downloading the content
-  var contentUrl: js.UndefOr[String] = js.undefined
+  var contentUrl: js.UndefOr[String] = js.native
 }
 
 object OnenoteResource {
   @scala.inline
-  def apply(content: js.Any = null, contentUrl: String = null, id: String = null, self: String = null): OnenoteResource = {
+  def apply(): OnenoteResource = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenoteResource]
   }
+  @scala.inline
+  implicit class OnenoteResourceOps[Self <: OnenoteResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: js.Any): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setContentUrl(value: String): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
+  }
+  
 }
 

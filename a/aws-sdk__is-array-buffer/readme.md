@@ -11,8 +11,8 @@ Provides a function for detecting if an argument is an ArrayBuffer
 | Full name          | @aws-sdk/is-array-buffer |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 908008 |
+| # dependents       | 12 |
+| # downloads        | 951863 |
 | # stars            | 0 |
 
 ## Links

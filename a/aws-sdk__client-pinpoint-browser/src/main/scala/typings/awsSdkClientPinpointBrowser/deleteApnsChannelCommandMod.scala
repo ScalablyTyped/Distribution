@@ -26,16 +26,9 @@ object deleteApnsChannelCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DeleteApnsChannelInput) = this()
-    /* CompleteClass */
-    override val input: DeleteApnsChannelInput = js.native
     val middlewareStack: MiddlewareStack[DeleteApnsChannelInput, DeleteApnsChannelOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[DeleteApnsChannelInput, DeleteApnsChannelOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[DeleteApnsChannelInput, DeleteApnsChannelOutput] = js.native
   }

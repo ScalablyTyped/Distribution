@@ -12,13 +12,5 @@ class Layer_ protected ()
   extends typings.kendoUi.kendo.dataviz.map.Layer_ {
   def this(map: Map) = this()
   def this(map: Map, options: LayerOptions) = this()
-  /* CompleteClass */
-  override var map: Map = js.native
-  /* CompleteClass */
-  override var options: LayerOptions = js.native
-  /* CompleteClass */
-  override def hide(): Unit = js.native
-  /* CompleteClass */
-  override def show(): Unit = js.native
 }
 

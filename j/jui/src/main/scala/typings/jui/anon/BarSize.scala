@@ -6,40 +6,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BarSize extends js.Object {
   /**
     * @cfg {Number} [barSize=4]
     * set splitter's bar size
     */
-  var barSize: js.UndefOr[Double] = js.undefined
+  var barSize: js.UndefOr[Double] = js.native
   /**
     * @cfg {Object} [barStyle={}]
     * set custom splitter bar style
     */
-  var barStyle: js.UndefOr[js.Object] = js.undefined
+  var barStyle: js.UndefOr[js.Object] = js.native
   /**
     * @cfg {"vertical"/"horizontal"} [direction='vertical']
     * set bar's direction
     */
-  var direction: js.UndefOr[vertical | horizontal] = js.undefined
-  var event: js.UndefOr[js.Any] = js.undefined
+  var direction: js.UndefOr[vertical | horizontal] = js.native
+  var event: js.UndefOr[js.Any] = js.native
   /**
     * @cfg {Boolean} [fixed=false]
     *
     * if fixed is true, panels can not resize.
     *
     */
-  var fixed: js.UndefOr[Boolean] = js.undefined
+  var fixed: js.UndefOr[Boolean] = js.native
   /**
     * @cfg {String} [hideClass='hide']
     * set splitter's hide class for design
     */
-  var hideClass: js.UndefOr[String] = js.undefined
+  var hideClass: js.UndefOr[String] = js.native
   /**
     * @cfg {String/Number} [initSize='50%']
     * set first panel's default width or height
     */
-  var initSize: js.UndefOr[String | Double] = js.undefined
+  var initSize: js.UndefOr[String | Double] = js.native
   /**
     * @cfg {String} [items=[]]
     *
@@ -48,7 +49,7 @@ trait BarSize extends js.Object {
     * support max two times
     *
     */
-  var items: js.UndefOr[js.Array[_]] = js.undefined
+  var items: js.UndefOr[js.Array[_]] = js.native
   /**
     * @cfg {Number/Array} [minSize=30]
     * set panel's minimum width or height
@@ -59,43 +60,81 @@ trait BarSize extends js.Object {
     * minSize[1] is second panel's minimum size
     *
     */
-  var minSize: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var minSize: js.UndefOr[Double | js.Array[Double]] = js.native
   /**
     * @cfg {String} [splitterClass='ui-splitter']
     * set splitter's class for design
     */
-  var splitterClass: js.UndefOr[String] = js.undefined
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var splitterClass: js.UndefOr[String] = js.native
+  var tpl: js.UndefOr[js.Any] = js.native
 }
 
 object BarSize {
   @scala.inline
-  def apply(
-    barSize: js.UndefOr[Double] = js.undefined,
-    barStyle: js.Object = null,
-    direction: vertical | horizontal = null,
-    event: js.Any = null,
-    fixed: js.UndefOr[Boolean] = js.undefined,
-    hideClass: String = null,
-    initSize: String | Double = null,
-    items: js.Array[_] = null,
-    minSize: Double | js.Array[Double] = null,
-    splitterClass: String = null,
-    tpl: js.Any = null
-  ): BarSize = {
+  def apply(): BarSize = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(barSize)) __obj.updateDynamic("barSize")(barSize.get.asInstanceOf[js.Any])
-    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
-    if (hideClass != null) __obj.updateDynamic("hideClass")(hideClass.asInstanceOf[js.Any])
-    if (initSize != null) __obj.updateDynamic("initSize")(initSize.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (splitterClass != null) __obj.updateDynamic("splitterClass")(splitterClass.asInstanceOf[js.Any])
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarSize]
   }
+  @scala.inline
+  implicit class BarSizeOps[Self <: BarSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBarSize(value: Double): Self = this.set("barSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarSize: Self = this.set("barSize", js.undefined)
+    @scala.inline
+    def setBarStyle(value: js.Object): Self = this.set("barStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarStyle: Self = this.set("barStyle", js.undefined)
+    @scala.inline
+    def setDirection(value: vertical | horizontal): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setEvent(value: js.Any): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvent: Self = this.set("event", js.undefined)
+    @scala.inline
+    def setFixed(value: Boolean): Self = this.set("fixed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixed: Self = this.set("fixed", js.undefined)
+    @scala.inline
+    def setHideClass(value: String): Self = this.set("hideClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideClass: Self = this.set("hideClass", js.undefined)
+    @scala.inline
+    def setInitSize(value: String | Double): Self = this.set("initSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitSize: Self = this.set("initSize", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setMinSizeVarargs(value: Double*): Self = this.set("minSize", js.Array(value :_*))
+    @scala.inline
+    def setMinSize(value: Double | js.Array[Double]): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    @scala.inline
+    def setSplitterClass(value: String): Self = this.set("splitterClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitterClass: Self = this.set("splitterClass", js.undefined)
+    @scala.inline
+    def setTpl(value: js.Any): Self = this.set("tpl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTpl: Self = this.set("tpl", js.undefined)
+  }
+  
 }
 

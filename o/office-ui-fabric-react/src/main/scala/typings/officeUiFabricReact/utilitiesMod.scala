@@ -168,6 +168,7 @@ object utilitiesMod extends js.Object {
   class Async ()
     extends typings.uifabricUtilities.mod.Async {
     def this(parent: js.Object) = this()
+    def this(parent: js.UndefOr[scala.Nothing], onError: js.Function1[/* e */ js.Any, Unit]) = this()
     def this(parent: js.Object, onError: js.Function1[/* e */ js.Any, Unit]) = this()
   }
   
@@ -222,8 +223,24 @@ object utilitiesMod extends js.Object {
   class Rectangle ()
     extends typings.uifabricUtilities.mod.Rectangle {
     def this(left: Double) = this()
+    def this(left: js.UndefOr[scala.Nothing], right: Double) = this()
     def this(left: Double, right: Double) = this()
+    def this(left: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], top: Double) = this()
+    def this(left: js.UndefOr[scala.Nothing], right: Double, top: Double) = this()
+    def this(left: Double, right: js.UndefOr[scala.Nothing], top: Double) = this()
     def this(left: Double, right: Double, top: Double) = this()
+    def this(
+      left: js.UndefOr[scala.Nothing],
+      right: js.UndefOr[scala.Nothing],
+      top: js.UndefOr[scala.Nothing],
+      bottom: Double
+    ) = this()
+    def this(left: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], top: Double, bottom: Double) = this()
+    def this(left: js.UndefOr[scala.Nothing], right: Double, top: js.UndefOr[scala.Nothing], bottom: Double) = this()
+    def this(left: js.UndefOr[scala.Nothing], right: Double, top: Double, bottom: Double) = this()
+    def this(left: Double, right: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], bottom: Double) = this()
+    def this(left: Double, right: js.UndefOr[scala.Nothing], top: Double, bottom: Double) = this()
+    def this(left: Double, right: Double, top: js.UndefOr[scala.Nothing], bottom: Double) = this()
     def this(left: Double, right: Double, top: Double, bottom: Double) = this()
   }
   
@@ -325,8 +342,8 @@ object utilitiesMod extends js.Object {
   def findElementRecursive(element: HTMLElement, matchFunction: js.Function1[/* element */ HTMLElement, Boolean]): HTMLElement | Null = js.native
   def findIndex[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean]): Double = js.native
   def findIndex[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean], fromIndex: Double): Double = js.native
-  def findScrollableParent(): HTMLElement | Null = js.native
-  def findScrollableParent(startingElement: HTMLElement): HTMLElement | Null = js.native
+  def findScrollableParent(): js.UndefOr[HTMLElement | Window | Null] = js.native
+  def findScrollableParent(startingElement: HTMLElement): js.UndefOr[HTMLElement | Window | Null] = js.native
   def fitContentToBounds(options: IFitContentToBoundsOptions): ISize = js.native
   def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = js.native
   def focusAsync(): Unit = js.native
@@ -343,6 +360,12 @@ object utilitiesMod extends js.Object {
   def getFirstFocusable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = js.native
   def getFirstFocusable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = js.native
   def getFirstTabbable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = js.native
+  def getFirstTabbable(
+    rootElement: HTMLElement,
+    currentElement: HTMLElement,
+    includeElementsInFocusZones: js.UndefOr[scala.Nothing],
+    checkNode: Boolean
+  ): HTMLElement | Null = js.native
   def getFirstTabbable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = js.native
   def getFirstTabbable(
     rootElement: HTMLElement,
@@ -353,12 +376,22 @@ object utilitiesMod extends js.Object {
   def getFocusableByIndexPath(parent: HTMLElement, path: js.Array[Double]): js.UndefOr[HTMLElement] = js.native
   def getId(): String = js.native
   def getId(prefix: String): String = js.native
-  def getInitials(displayName: js.UndefOr[Null | String], isRtl: Boolean): String = js.native
-  def getInitials(displayName: js.UndefOr[Null | String], isRtl: Boolean, allowPhoneInitials: Boolean): String = js.native
+  def getInitials(displayName: js.UndefOr[scala.Nothing], isRtl: Boolean): String = js.native
+  def getInitials(displayName: js.UndefOr[scala.Nothing], isRtl: Boolean, allowPhoneInitials: Boolean): String = js.native
+  def getInitials(displayName: String, isRtl: Boolean): String = js.native
+  def getInitials(displayName: String, isRtl: Boolean, allowPhoneInitials: Boolean): String = js.native
+  def getInitials(displayName: Null, isRtl: Boolean): String = js.native
+  def getInitials(displayName: Null, isRtl: Boolean, allowPhoneInitials: Boolean): String = js.native
   def getLanguage(): String | Null = js.native
   def getLastFocusable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = js.native
   def getLastFocusable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = js.native
   def getLastTabbable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = js.native
+  def getLastTabbable(
+    rootElement: HTMLElement,
+    currentElement: HTMLElement,
+    includeElementsInFocusZones: js.UndefOr[scala.Nothing],
+    checkNode: Boolean
+  ): HTMLElement | Null = js.native
   def getLastTabbable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = js.native
   def getLastTabbable(
     rootElement: HTMLElement,
@@ -385,17 +418,7 @@ object utilitiesMod extends js.Object {
   ): T = js.native
   def getNextElement(
     rootElement: HTMLElement,
-    currentElement: Null,
-    checkNode: js.UndefOr[Boolean],
-    suppressParentTraversal: js.UndefOr[Boolean],
-    suppressChildTraversal: js.UndefOr[Boolean],
-    includeElementsInFocusZones: js.UndefOr[Boolean],
-    allowFocusRoot: js.UndefOr[Boolean],
-    tabbable: js.UndefOr[Boolean]
-  ): HTMLElement | Null = js.native
-  def getNextElement(
-    rootElement: HTMLElement,
-    currentElement: HTMLElement,
+    currentElement: HTMLElement | Null,
     checkNode: js.UndefOr[Boolean],
     suppressParentTraversal: js.UndefOr[Boolean],
     suppressChildTraversal: js.UndefOr[Boolean],
@@ -407,17 +430,7 @@ object utilitiesMod extends js.Object {
   def getParent(child: HTMLElement, allowVirtualParents: Boolean): HTMLElement | Null = js.native
   def getPreviousElement(
     rootElement: HTMLElement,
-    currentElement: Null,
-    checkNode: js.UndefOr[Boolean],
-    suppressParentTraversal: js.UndefOr[Boolean],
-    traverseChildren: js.UndefOr[Boolean],
-    includeElementsInFocusZones: js.UndefOr[Boolean],
-    allowFocusRoot: js.UndefOr[Boolean],
-    tabbable: js.UndefOr[Boolean]
-  ): HTMLElement | Null = js.native
-  def getPreviousElement(
-    rootElement: HTMLElement,
-    currentElement: HTMLElement,
+    currentElement: HTMLElement | Null,
     checkNode: js.UndefOr[Boolean],
     suppressParentTraversal: js.UndefOr[Boolean],
     traverseChildren: js.UndefOr[Boolean],
@@ -472,17 +485,22 @@ object utilitiesMod extends js.Object {
     ]
   ): js.UndefOr[js.Array[js.UndefOr[T]]] = js.native
   def memoize[T /* <: js.Function */](target: js.Any, key: String, descriptor: TypedPropertyDescriptor[T]): Configurable[T] = js.native
-  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T): T = js.native
-  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T, maxCacheSize: Double): T = js.native
-  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T, maxCacheSize: Double, ignoreNullOrUndefinedResult: Boolean): T = js.native
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T): T = js.native
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: js.UndefOr[scala.Nothing], ignoreNullOrUndefinedResult: Boolean): T = js.native
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: Double): T = js.native
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: Double, ignoreNullOrUndefinedResult: Boolean): T = js.native
   @JSName("mergeAriaAttributeValues")
   def mergeAriaAttributeValues_false(ariaAttributes: (js.UndefOr[String | `false`])*): js.UndefOr[String] = js.native
   def mergeCustomizations(props: ICustomizerProps, parentContext: ICustomizerContext): ICustomizerContext = js.native
   def mergeScopedSettings(): ISettings = js.native
+  def mergeScopedSettings(oldSettings: js.UndefOr[scala.Nothing], newSettings: ISettings): ISettings = js.native
+  def mergeScopedSettings(oldSettings: js.UndefOr[scala.Nothing], newSettings: ISettingsFunction): ISettings = js.native
   def mergeScopedSettings(oldSettings: ISettings): ISettings = js.native
   def mergeScopedSettings(oldSettings: ISettings, newSettings: ISettings): ISettings = js.native
   def mergeScopedSettings(oldSettings: ISettings, newSettings: ISettingsFunction): ISettings = js.native
   def mergeSettings(): ISettings = js.native
+  def mergeSettings(oldSettings: js.UndefOr[scala.Nothing], newSettings: ISettings): ISettings = js.native
+  def mergeSettings(oldSettings: js.UndefOr[scala.Nothing], newSettings: ISettingsFunction): ISettings = js.native
   def mergeSettings(oldSettings: ISettings): ISettings = js.native
   def mergeSettings(oldSettings: ISettings, newSettings: ISettings): ISettings = js.native
   def mergeSettings(oldSettings: ISettings, newSettings: ISettingsFunction): ISettings = js.native
@@ -537,7 +555,34 @@ object utilitiesMod extends js.Object {
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps
+  ): FunctionComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): FunctionComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
   ): FunctionComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: ComponentClass[TComponentProps, ComponentState],
@@ -559,7 +604,34 @@ object utilitiesMod extends js.Object {
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps
+  ): FunctionComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): FunctionComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
   ): FunctionComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: FunctionComponent[TComponentProps],
@@ -574,11 +646,124 @@ object utilitiesMod extends js.Object {
     customizable: ICustomizableProps,
     pure: Boolean
   ): FunctionComponent[TComponentProps] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("styled")
+  def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
   def toMatrix[T](items: js.Array[T], columnCount: Double): js.Array[js.Array[T]] = js.native
   def unhoistMethods(source: js.Any, methodNames: js.Array[String]): Unit = js.native
   def useCustomizationSettings(properties: js.Array[String]): ISettings = js.native
   def useCustomizationSettings(properties: js.Array[String], scopeName: String): ISettings = js.native
-  def useCustomizationSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): ISettings = js.native
   def useFocusRects(): Unit = js.native
   def useFocusRects(rootRef: RefObject[HTMLElement]): Unit = js.native
   def values[T](obj: js.Any): js.Array[T] = js.native
@@ -600,6 +785,7 @@ object utilitiesMod extends js.Object {
       * @deprecated Use React's error boundaries instead.
       */
     def onError(): Unit = js.native
+    def onError(errorMessage: js.UndefOr[scala.Nothing], ex: js.Any): Unit = js.native
     def onError(errorMessage: String): Unit = js.native
     def onError(errorMessage: String, ex: js.Any): Unit = js.native
   }
@@ -625,6 +811,7 @@ object utilitiesMod extends js.Object {
       */
     def applySettings(settings: ISettings): Unit = js.native
     def getSettings(properties: js.Array[String]): js.Any = js.native
+    def getSettings(properties: js.Array[String], scopeName: js.UndefOr[scala.Nothing], localSettings: ICustomizations): js.Any = js.native
     def getSettings(properties: js.Array[String], scopeName: String): js.Any = js.native
     def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): js.Any = js.native
     def observe(onChange: js.Function0[Unit]): Unit = js.native
@@ -653,6 +840,7 @@ object utilitiesMod extends js.Object {
       *
       */
     def raise(target: js.Any, eventName: String): js.UndefOr[Boolean] = js.native
+    def raise(target: js.Any, eventName: String, eventArgs: js.UndefOr[scala.Nothing], bubbleEvent: Boolean): js.UndefOr[Boolean] = js.native
     def raise(target: js.Any, eventName: String, eventArgs: js.Any): js.UndefOr[Boolean] = js.native
     def raise(target: js.Any, eventName: String, eventArgs: js.Any, bubbleEvent: Boolean): js.UndefOr[Boolean] = js.native
     def stopPropagation(event: js.Any): Unit = js.native

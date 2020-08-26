@@ -11,8 +11,8 @@ Implement your [BPMN Service Task](https://docs.camunda.org/manual/latest/user-g
 | Full name          | camunda-external-task-client-js |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 2 |
-| # downloads        | 36147 |
+| # dependents       | 3 |
+| # downloads        | 37478 |
 | # stars            | 0 |
 
 ## Links

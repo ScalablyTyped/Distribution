@@ -9,9 +9,145 @@ import scala.scalajs.js.annotation._
 @js.native
 object Shapes extends js.Object {
   def arrow(): Shape = js.native
+  def arrow(
+    thickness: js.UndefOr[scala.Nothing],
+    tailLength: js.UndefOr[scala.Nothing],
+    tailWidth: js.UndefOr[scala.Nothing],
+    headLength: js.UndefOr[scala.Nothing],
+    headPointiness: Double
+  ): Shape = js.native
+  def arrow(
+    thickness: js.UndefOr[scala.Nothing],
+    tailLength: js.UndefOr[scala.Nothing],
+    tailWidth: js.UndefOr[scala.Nothing],
+    headLength: Double
+  ): Shape = js.native
+  def arrow(
+    thickness: js.UndefOr[scala.Nothing],
+    tailLength: js.UndefOr[scala.Nothing],
+    tailWidth: js.UndefOr[scala.Nothing],
+    headLength: Double,
+    headPointiness: Double
+  ): Shape = js.native
+  def arrow(thickness: js.UndefOr[scala.Nothing], tailLength: js.UndefOr[scala.Nothing], tailWidth: Double): Shape = js.native
+  def arrow(
+    thickness: js.UndefOr[scala.Nothing],
+    tailLength: js.UndefOr[scala.Nothing],
+    tailWidth: Double,
+    headLength: js.UndefOr[scala.Nothing],
+    headPointiness: Double
+  ): Shape = js.native
+  def arrow(
+    thickness: js.UndefOr[scala.Nothing],
+    tailLength: js.UndefOr[scala.Nothing],
+    tailWidth: Double,
+    headLength: Double
+  ): Shape = js.native
+  def arrow(
+    thickness: js.UndefOr[scala.Nothing],
+    tailLength: js.UndefOr[scala.Nothing],
+    tailWidth: Double,
+    headLength: Double,
+    headPointiness: Double
+  ): Shape = js.native
+  def arrow(thickness: js.UndefOr[scala.Nothing], tailLength: Double): Shape = js.native
+  def arrow(
+    thickness: js.UndefOr[scala.Nothing],
+    tailLength: Double,
+    tailWidth: js.UndefOr[scala.Nothing],
+    headLength: js.UndefOr[scala.Nothing],
+    headPointiness: Double
+  ): Shape = js.native
+  def arrow(
+    thickness: js.UndefOr[scala.Nothing],
+    tailLength: Double,
+    tailWidth: js.UndefOr[scala.Nothing],
+    headLength: Double
+  ): Shape = js.native
+  def arrow(
+    thickness: js.UndefOr[scala.Nothing],
+    tailLength: Double,
+    tailWidth: js.UndefOr[scala.Nothing],
+    headLength: Double,
+    headPointiness: Double
+  ): Shape = js.native
+  def arrow(thickness: js.UndefOr[scala.Nothing], tailLength: Double, tailWidth: Double): Shape = js.native
+  def arrow(
+    thickness: js.UndefOr[scala.Nothing],
+    tailLength: Double,
+    tailWidth: Double,
+    headLength: js.UndefOr[scala.Nothing],
+    headPointiness: Double
+  ): Shape = js.native
+  def arrow(thickness: js.UndefOr[scala.Nothing], tailLength: Double, tailWidth: Double, headLength: Double): Shape = js.native
+  def arrow(
+    thickness: js.UndefOr[scala.Nothing],
+    tailLength: Double,
+    tailWidth: Double,
+    headLength: Double,
+    headPointiness: Double
+  ): Shape = js.native
   def arrow(thickness: Double): Shape = js.native
+  def arrow(
+    thickness: Double,
+    tailLength: js.UndefOr[scala.Nothing],
+    tailWidth: js.UndefOr[scala.Nothing],
+    headLength: js.UndefOr[scala.Nothing],
+    headPointiness: Double
+  ): Shape = js.native
+  def arrow(
+    thickness: Double,
+    tailLength: js.UndefOr[scala.Nothing],
+    tailWidth: js.UndefOr[scala.Nothing],
+    headLength: Double
+  ): Shape = js.native
+  def arrow(
+    thickness: Double,
+    tailLength: js.UndefOr[scala.Nothing],
+    tailWidth: js.UndefOr[scala.Nothing],
+    headLength: Double,
+    headPointiness: Double
+  ): Shape = js.native
+  def arrow(thickness: Double, tailLength: js.UndefOr[scala.Nothing], tailWidth: Double): Shape = js.native
+  def arrow(
+    thickness: Double,
+    tailLength: js.UndefOr[scala.Nothing],
+    tailWidth: Double,
+    headLength: js.UndefOr[scala.Nothing],
+    headPointiness: Double
+  ): Shape = js.native
+  def arrow(thickness: Double, tailLength: js.UndefOr[scala.Nothing], tailWidth: Double, headLength: Double): Shape = js.native
+  def arrow(
+    thickness: Double,
+    tailLength: js.UndefOr[scala.Nothing],
+    tailWidth: Double,
+    headLength: Double,
+    headPointiness: Double
+  ): Shape = js.native
   def arrow(thickness: Double, tailLength: Double): Shape = js.native
+  def arrow(
+    thickness: Double,
+    tailLength: Double,
+    tailWidth: js.UndefOr[scala.Nothing],
+    headLength: js.UndefOr[scala.Nothing],
+    headPointiness: Double
+  ): Shape = js.native
+  def arrow(thickness: Double, tailLength: Double, tailWidth: js.UndefOr[scala.Nothing], headLength: Double): Shape = js.native
+  def arrow(
+    thickness: Double,
+    tailLength: Double,
+    tailWidth: js.UndefOr[scala.Nothing],
+    headLength: Double,
+    headPointiness: Double
+  ): Shape = js.native
   def arrow(thickness: Double, tailLength: Double, tailWidth: Double): Shape = js.native
+  def arrow(
+    thickness: Double,
+    tailLength: Double,
+    tailWidth: Double,
+    headLength: js.UndefOr[scala.Nothing],
+    headPointiness: Double
+  ): Shape = js.native
   def arrow(thickness: Double, tailLength: Double, tailWidth: Double, headLength: Double): Shape = js.native
   def arrow(
     thickness: Double,
@@ -28,10 +164,12 @@ object Shapes extends js.Object {
   def obj(objContents: String): Shape = js.native
   def obj(objContents: String, cullBackfaces: Boolean): Shape = js.native
   def patch(): Shape = js.native
+  def patch(nx: js.UndefOr[scala.Nothing], ny: Double): Shape = js.native
   def patch(nx: Double): Shape = js.native
   def patch(nx: Double, ny: Double): Shape = js.native
   def path(points: js.Array[Point]): Shape = js.native
   def pipe(point1: Point, point2: Point): Shape = js.native
+  def pipe(point1: Point, point2: Point, radius: js.UndefOr[scala.Nothing], segments: Double): Shape = js.native
   def pipe(point1: Point, point2: Point, radius: Double): Shape = js.native
   def pipe(point1: Point, point2: Point, radius: Double, segments: Double): Shape = js.native
   def pyramid(): Shape = js.native

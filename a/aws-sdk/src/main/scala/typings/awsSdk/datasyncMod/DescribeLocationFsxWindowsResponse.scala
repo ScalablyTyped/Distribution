@@ -15,7 +15,7 @@ trait DescribeLocationFsxWindowsResponse extends js.Object {
     */
   var Domain: js.UndefOr[SmbDomain] = js.native
   /**
-    * The Amazon resource Name (ARN) of the FSx for Windows location that was described.
+    * The Amazon Resource Name (ARN) of the FSx for Windows location that was described.
     */
   var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.native
   /**
@@ -23,7 +23,7 @@ trait DescribeLocationFsxWindowsResponse extends js.Object {
     */
   var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.native
   /**
-    * The Amazon Resource Names (ARNs) of the security groups that are configured for the for the FSx for Windows file system.
+    * The Amazon Resource Names (ARNs) of the security groups that are configured for the FSx for Windows file system.
     */
   var SecurityGroupArns: js.UndefOr[Ec2SecurityGroupArnList] = js.native
   /**
@@ -34,22 +34,48 @@ trait DescribeLocationFsxWindowsResponse extends js.Object {
 
 object DescribeLocationFsxWindowsResponse {
   @scala.inline
-  def apply(
-    CreationTime: Time = null,
-    Domain: SmbDomain = null,
-    LocationArn: LocationArn = null,
-    LocationUri: LocationUri = null,
-    SecurityGroupArns: Ec2SecurityGroupArnList = null,
-    User: SmbUser = null
-  ): DescribeLocationFsxWindowsResponse = {
+  def apply(): DescribeLocationFsxWindowsResponse = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
-    if (LocationArn != null) __obj.updateDynamic("LocationArn")(LocationArn.asInstanceOf[js.Any])
-    if (LocationUri != null) __obj.updateDynamic("LocationUri")(LocationUri.asInstanceOf[js.Any])
-    if (SecurityGroupArns != null) __obj.updateDynamic("SecurityGroupArns")(SecurityGroupArns.asInstanceOf[js.Any])
-    if (User != null) __obj.updateDynamic("User")(User.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLocationFsxWindowsResponse]
   }
+  @scala.inline
+  implicit class DescribeLocationFsxWindowsResponseOps[Self <: DescribeLocationFsxWindowsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Time): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDomain(value: SmbDomain): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("Domain", js.undefined)
+    @scala.inline
+    def setLocationArn(value: LocationArn): Self = this.set("LocationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationArn: Self = this.set("LocationArn", js.undefined)
+    @scala.inline
+    def setLocationUri(value: LocationUri): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    @scala.inline
+    def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = this.set("SecurityGroupArns", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupArns(value: Ec2SecurityGroupArnList): Self = this.set("SecurityGroupArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupArns: Self = this.set("SecurityGroupArns", js.undefined)
+    @scala.inline
+    def setUser(value: SmbUser): Self = this.set("User", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("User", js.undefined)
+  }
+  
 }
 

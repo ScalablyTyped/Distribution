@@ -31,29 +31,61 @@ trait GetSnapshotArgs extends js.Object {
     */
   val snapshotIds: js.UndefOr[js.Array[String]] = js.native
   /**
-    * A mapping of tags for the resource.
+    * A map of tags for the resource.
     */
-  val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val tags: js.UndefOr[StringDictionary[String]] = js.native
 }
 
 object GetSnapshotArgs {
   @scala.inline
-  def apply(
-    filters: js.Array[GetSnapshotFilter] = null,
-    mostRecent: js.UndefOr[Boolean] = js.undefined,
-    owners: js.Array[String] = null,
-    restorableByUserIds: js.Array[String] = null,
-    snapshotIds: js.Array[String] = null,
-    tags: StringDictionary[js.Any] = null
-  ): GetSnapshotArgs = {
+  def apply(): GetSnapshotArgs = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent.get.asInstanceOf[js.Any])
-    if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
-    if (restorableByUserIds != null) __obj.updateDynamic("restorableByUserIds")(restorableByUserIds.asInstanceOf[js.Any])
-    if (snapshotIds != null) __obj.updateDynamic("snapshotIds")(snapshotIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSnapshotArgs]
   }
+  @scala.inline
+  implicit class GetSnapshotArgsOps[Self <: GetSnapshotArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: GetSnapshotFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[GetSnapshotFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setMostRecent(value: Boolean): Self = this.set("mostRecent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMostRecent: Self = this.set("mostRecent", js.undefined)
+    @scala.inline
+    def setOwnersVarargs(value: String*): Self = this.set("owners", js.Array(value :_*))
+    @scala.inline
+    def setOwners(value: js.Array[String]): Self = this.set("owners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwners: Self = this.set("owners", js.undefined)
+    @scala.inline
+    def setRestorableByUserIdsVarargs(value: String*): Self = this.set("restorableByUserIds", js.Array(value :_*))
+    @scala.inline
+    def setRestorableByUserIds(value: js.Array[String]): Self = this.set("restorableByUserIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestorableByUserIds: Self = this.set("restorableByUserIds", js.undefined)
+    @scala.inline
+    def setSnapshotIdsVarargs(value: String*): Self = this.set("snapshotIds", js.Array(value :_*))
+    @scala.inline
+    def setSnapshotIds(value: js.Array[String]): Self = this.set("snapshotIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotIds: Self = this.set("snapshotIds", js.undefined)
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

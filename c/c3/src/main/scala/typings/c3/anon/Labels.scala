@@ -35,6 +35,6 @@ trait Labels extends js.Object {
     * @returns If `range` is *not* given, returns the current min and max values for each axis.
     */
   def range(): MaxMin = js.native
-  def range(range: `2`): Unit = js.native
+  def range(range: `4`): Unit = js.native
 }
 

@@ -32,16 +32,34 @@ trait SchemaAutoscalingPolicyQueueBasedScaling extends js.Object {
 
 object SchemaAutoscalingPolicyQueueBasedScaling {
   @scala.inline
-  def apply(
-    acceptableBacklogPerInstance: js.UndefOr[Double] = js.undefined,
-    cloudPubSub: SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub = null,
-    singleWorkerThroughputPerSec: js.UndefOr[Double] = js.undefined
-  ): SchemaAutoscalingPolicyQueueBasedScaling = {
+  def apply(): SchemaAutoscalingPolicyQueueBasedScaling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptableBacklogPerInstance)) __obj.updateDynamic("acceptableBacklogPerInstance")(acceptableBacklogPerInstance.get.asInstanceOf[js.Any])
-    if (cloudPubSub != null) __obj.updateDynamic("cloudPubSub")(cloudPubSub.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleWorkerThroughputPerSec)) __obj.updateDynamic("singleWorkerThroughputPerSec")(singleWorkerThroughputPerSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoscalingPolicyQueueBasedScaling]
   }
+  @scala.inline
+  implicit class SchemaAutoscalingPolicyQueueBasedScalingOps[Self <: SchemaAutoscalingPolicyQueueBasedScaling] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptableBacklogPerInstance(value: Double): Self = this.set("acceptableBacklogPerInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptableBacklogPerInstance: Self = this.set("acceptableBacklogPerInstance", js.undefined)
+    @scala.inline
+    def setCloudPubSub(value: SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub): Self = this.set("cloudPubSub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudPubSub: Self = this.set("cloudPubSub", js.undefined)
+    @scala.inline
+    def setSingleWorkerThroughputPerSec(value: Double): Self = this.set("singleWorkerThroughputPerSec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleWorkerThroughputPerSec: Self = this.set("singleWorkerThroughputPerSec", js.undefined)
+  }
+  
 }
 

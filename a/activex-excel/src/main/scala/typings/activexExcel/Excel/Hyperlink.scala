@@ -27,8 +27,97 @@ trait Hyperlink extends js.Object {
   def CreateNewDocument(Filename: String, EditNow: Boolean, Overwrite: Boolean): Unit = js.native
   def Delete(): Unit = js.native
   def Follow(): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(NewWindow: js.UndefOr[scala.Nothing], AddHistory: js.UndefOr[scala.Nothing], ExtraInfo: String): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: String,
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: String,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: String,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(NewWindow: js.UndefOr[scala.Nothing], AddHistory: js.UndefOr[scala.Nothing], ExtraInfo: ByteArray): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: ByteArray,
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: ByteArray,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def Follow(
+    NewWindow: js.UndefOr[scala.Nothing],
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: ByteArray,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
   def Follow(NewWindow: Boolean): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: js.UndefOr[scala.Nothing],
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
   def Follow(NewWindow: Boolean, AddHistory: js.UndefOr[scala.Nothing], ExtraInfo: String): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: String,
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
   def Follow(
     NewWindow: Boolean,
     AddHistory: js.UndefOr[scala.Nothing],
@@ -43,6 +132,13 @@ trait Hyperlink extends js.Object {
     HeaderInfo: String
   ): Unit = js.native
   def Follow(NewWindow: Boolean, AddHistory: js.UndefOr[scala.Nothing], ExtraInfo: ByteArray): Unit = js.native
+  def Follow(
+    NewWindow: Boolean,
+    AddHistory: js.UndefOr[scala.Nothing],
+    ExtraInfo: ByteArray,
+    Method: js.UndefOr[scala.Nothing],
+    HeaderInfo: String
+  ): Unit = js.native
   def Follow(
     NewWindow: Boolean,
     AddHistory: js.UndefOr[scala.Nothing],

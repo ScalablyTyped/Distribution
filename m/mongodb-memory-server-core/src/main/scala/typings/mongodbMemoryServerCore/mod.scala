@@ -1,5 +1,6 @@
 package typings.mongodbMemoryServerCore
 
+import typings.mongodbMemoryServerCore.anon.RequiredMongoBinaryOpts
 import typings.mongodbMemoryServerCore.mongoBinaryMod.MongoBinaryCache
 import typings.mongodbMemoryServerCore.mongoBinaryMod.MongoBinaryOpts
 import typings.mongodbMemoryServerCore.mongoInstanceMod.MongodOps
@@ -58,7 +59,7 @@ object mod extends js.Object {
   object MongoBinary extends js.Object {
     var cache: MongoBinaryCache = js.native
     def getCachePath(version: String): js.Promise[String] = js.native
-    def getDownloadPath(options: js.Any): js.Promise[String] = js.native
+    def getDownloadPath(options: RequiredMongoBinaryOpts): js.Promise[String] = js.native
     def getPath(): js.Promise[String] = js.native
     def getPath(opts: MongoBinaryOpts): js.Promise[String] = js.native
     def getSystemPath(systemBinary: String): js.Promise[String] = js.native

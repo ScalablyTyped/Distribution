@@ -17,10 +17,28 @@ trait SchemaDominantColorsAnnotation extends js.Object {
 
 object SchemaDominantColorsAnnotation {
   @scala.inline
-  def apply(colors: js.Array[SchemaColorInfo] = null): SchemaDominantColorsAnnotation = {
+  def apply(): SchemaDominantColorsAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDominantColorsAnnotation]
   }
+  @scala.inline
+  implicit class SchemaDominantColorsAnnotationOps[Self <: SchemaDominantColorsAnnotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorsVarargs(value: SchemaColorInfo*): Self = this.set("colors", js.Array(value :_*))
+    @scala.inline
+    def setColors(value: js.Array[SchemaColorInfo]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+  }
+  
 }
 

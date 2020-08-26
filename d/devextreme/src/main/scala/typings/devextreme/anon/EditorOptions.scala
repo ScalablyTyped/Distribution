@@ -5,30 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EditorOptions extends js.Object {
-  var component: js.UndefOr[dxForm] = js.undefined
-  var dataField: js.UndefOr[String] = js.undefined
-  var editorOptions: js.UndefOr[js.Any] = js.undefined
-  var editorType: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
+  var component: js.UndefOr[dxForm] = js.native
+  var dataField: js.UndefOr[String] = js.native
+  var editorOptions: js.UndefOr[js.Any] = js.native
+  var editorType: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
 }
 
 object EditorOptions {
   @scala.inline
-  def apply(
-    component: dxForm = null,
-    dataField: String = null,
-    editorOptions: js.Any = null,
-    editorType: String = null,
-    name: String = null
-  ): EditorOptions = {
+  def apply(): EditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (dataField != null) __obj.updateDynamic("dataField")(dataField.asInstanceOf[js.Any])
-    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions.asInstanceOf[js.Any])
-    if (editorType != null) __obj.updateDynamic("editorType")(editorType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorOptions]
   }
+  @scala.inline
+  implicit class EditorOptionsOps[Self <: EditorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponent(value: dxForm): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setDataField(value: String): Self = this.set("dataField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataField: Self = this.set("dataField", js.undefined)
+    @scala.inline
+    def setEditorOptions(value: js.Any): Self = this.set("editorOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorOptions: Self = this.set("editorOptions", js.undefined)
+    @scala.inline
+    def setEditorType(value: String): Self = this.set("editorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorType: Self = this.set("editorType", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

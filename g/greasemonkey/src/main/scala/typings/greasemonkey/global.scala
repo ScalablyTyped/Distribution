@@ -85,6 +85,7 @@ object global extends js.Object {
       * clicked.
       */
     def notification(text: String, title: String): Unit = js.native
+    def notification(text: String, title: String, image: js.UndefOr[scala.Nothing], onClick: js.Function0[Unit]): Unit = js.native
     def notification(text: String, title: String, image: String): Unit = js.native
     def notification(text: String, title: String, image: String, onClick: js.Function0[Unit]): Unit = js.native
     /**

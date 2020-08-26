@@ -71,34 +71,72 @@ trait SchemaSite extends js.Object {
 
 object SchemaSite {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    approved: js.UndefOr[Boolean] = js.undefined,
-    directorySiteId: String = null,
-    directorySiteIdDimensionValue: SchemaDimensionValue = null,
-    id: String = null,
-    idDimensionValue: SchemaDimensionValue = null,
-    keyName: String = null,
-    kind: String = null,
-    name: String = null,
-    siteContacts: js.Array[SchemaSiteContact] = null,
-    siteSettings: SchemaSiteSettings = null,
-    subaccountId: String = null
-  ): SchemaSite = {
+  def apply(): SchemaSite = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(approved)) __obj.updateDynamic("approved")(approved.get.asInstanceOf[js.Any])
-    if (directorySiteId != null) __obj.updateDynamic("directorySiteId")(directorySiteId.asInstanceOf[js.Any])
-    if (directorySiteIdDimensionValue != null) __obj.updateDynamic("directorySiteIdDimensionValue")(directorySiteIdDimensionValue.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (siteContacts != null) __obj.updateDynamic("siteContacts")(siteContacts.asInstanceOf[js.Any])
-    if (siteSettings != null) __obj.updateDynamic("siteSettings")(siteSettings.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSite]
   }
+  @scala.inline
+  implicit class SchemaSiteOps[Self <: SchemaSite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setApproved(value: Boolean): Self = this.set("approved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApproved: Self = this.set("approved", js.undefined)
+    @scala.inline
+    def setDirectorySiteId(value: String): Self = this.set("directorySiteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectorySiteId: Self = this.set("directorySiteId", js.undefined)
+    @scala.inline
+    def setDirectorySiteIdDimensionValue(value: SchemaDimensionValue): Self = this.set("directorySiteIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectorySiteIdDimensionValue: Self = this.set("directorySiteIdDimensionValue", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdDimensionValue(value: SchemaDimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    @scala.inline
+    def setKeyName(value: String): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("keyName", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSiteContactsVarargs(value: SchemaSiteContact*): Self = this.set("siteContacts", js.Array(value :_*))
+    @scala.inline
+    def setSiteContacts(value: js.Array[SchemaSiteContact]): Self = this.set("siteContacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteContacts: Self = this.set("siteContacts", js.undefined)
+    @scala.inline
+    def setSiteSettings(value: SchemaSiteSettings): Self = this.set("siteSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteSettings: Self = this.set("siteSettings", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait GetUserDefinedFunctionResponse extends js.Object {
 
 object GetUserDefinedFunctionResponse {
   @scala.inline
-  def apply(UserDefinedFunction: UserDefinedFunction = null): GetUserDefinedFunctionResponse = {
+  def apply(): GetUserDefinedFunctionResponse = {
     val __obj = js.Dynamic.literal()
-    if (UserDefinedFunction != null) __obj.updateDynamic("UserDefinedFunction")(UserDefinedFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserDefinedFunctionResponse]
   }
+  @scala.inline
+  implicit class GetUserDefinedFunctionResponseOps[Self <: GetUserDefinedFunctionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserDefinedFunction(value: UserDefinedFunction): Self = this.set("UserDefinedFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserDefinedFunction: Self = this.set("UserDefinedFunction", js.undefined)
+  }
+  
 }
 

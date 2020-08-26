@@ -19,6 +19,7 @@ object default extends js.Object {
     Date | Null
   ] = js.native
   def format(dateObj: Date): String = js.native
+  def format(dateObj: Date, mask: js.UndefOr[scala.Nothing], i18n: PartialI18nSettings): String = js.native
   def format(dateObj: Date, mask: String): String = js.native
   def format(dateObj: Date, mask: String, i18n: PartialI18nSettings): String = js.native
   def parse(dateStr: String, format: String): Date | Null = js.native

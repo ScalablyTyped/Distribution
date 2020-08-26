@@ -23,7 +23,7 @@ trait OutputDecorator
     *
     * See `Input` decorator for an example of providing a binding name.
     *
-    * @see [Input and Output properties](guide/template-syntax#input-and-output-properties)
+    * @see [Input and Output properties](guide/inputs-outputs)
     *
     */
   def apply(): js.Any = js.native

@@ -1,7 +1,5 @@
 package typings.winrt.global.Windows.ApplicationModel
 
-import typings.std.Date
-import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.Uri
@@ -23,57 +21,19 @@ object Store extends js.Object {
   
   @js.native
   class LicenseInformation ()
-    extends typings.winrt.Windows.ApplicationModel.Store.LicenseInformation {
-    /* CompleteClass */
-    override var expirationDate: Date = js.native
-    /* CompleteClass */
-    override var isActive: Boolean = js.native
-    /* CompleteClass */
-    override var isTrial: Boolean = js.native
-    /* CompleteClass */
-    override var onlicensechanged: js.Any = js.native
-    /* CompleteClass */
-    override var productLicenses: IMapView[String, typings.winrt.Windows.ApplicationModel.Store.ProductLicense] = js.native
-  }
+    extends typings.winrt.Windows.ApplicationModel.Store.LicenseInformation
   
   @js.native
   class ListingInformation ()
-    extends typings.winrt.Windows.ApplicationModel.Store.ListingInformation {
-    /* CompleteClass */
-    override var ageRating: Double = js.native
-    /* CompleteClass */
-    override var currentMarket: String = js.native
-    /* CompleteClass */
-    override var description: String = js.native
-    /* CompleteClass */
-    override var formattedPrice: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    /* CompleteClass */
-    override var productListings: IMapView[String, typings.winrt.Windows.ApplicationModel.Store.ProductListing] = js.native
-  }
+    extends typings.winrt.Windows.ApplicationModel.Store.ListingInformation
   
   @js.native
   class ProductLicense ()
-    extends typings.winrt.Windows.ApplicationModel.Store.ProductLicense {
-    /* CompleteClass */
-    override var expirationDate: Date = js.native
-    /* CompleteClass */
-    override var isActive: Boolean = js.native
-    /* CompleteClass */
-    override var productId: String = js.native
-  }
+    extends typings.winrt.Windows.ApplicationModel.Store.ProductLicense
   
   @js.native
   class ProductListing ()
-    extends typings.winrt.Windows.ApplicationModel.Store.ProductListing {
-    /* CompleteClass */
-    override var formattedPrice: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    /* CompleteClass */
-    override var productId: String = js.native
-  }
+    extends typings.winrt.Windows.ApplicationModel.Store.ProductListing
   
   /* static members */
   @js.native

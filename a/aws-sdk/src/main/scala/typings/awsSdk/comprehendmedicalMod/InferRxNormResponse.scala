@@ -22,11 +22,34 @@ trait InferRxNormResponse extends js.Object {
 
 object InferRxNormResponse {
   @scala.inline
-  def apply(Entities: RxNormEntityList, ModelVersion: String = null, PaginationToken: String = null): InferRxNormResponse = {
+  def apply(Entities: RxNormEntityList): InferRxNormResponse = {
     val __obj = js.Dynamic.literal(Entities = Entities.asInstanceOf[js.Any])
-    if (ModelVersion != null) __obj.updateDynamic("ModelVersion")(ModelVersion.asInstanceOf[js.Any])
-    if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[InferRxNormResponse]
   }
+  @scala.inline
+  implicit class InferRxNormResponseOps[Self <: InferRxNormResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntitiesVarargs(value: RxNormEntity*): Self = this.set("Entities", js.Array(value :_*))
+    @scala.inline
+    def setEntities(value: RxNormEntityList): Self = this.set("Entities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setModelVersion(value: String): Self = this.set("ModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelVersion: Self = this.set("ModelVersion", js.undefined)
+    @scala.inline
+    def setPaginationToken(value: String): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+  }
+  
 }
 

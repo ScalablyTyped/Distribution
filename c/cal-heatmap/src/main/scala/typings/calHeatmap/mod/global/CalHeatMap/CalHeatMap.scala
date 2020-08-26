@@ -83,6 +83,8 @@ trait CalHeatMap extends js.Object {
     * @param {} legendColor Same as legendColors : an object with the heatmap's colors, or an array of 2 colors
     */
   def setLegend(): Unit = js.native
+  def setLegend(legend: js.UndefOr[scala.Nothing], legendColors: js.Array[String]): Unit = js.native
+  def setLegend(legend: js.UndefOr[scala.Nothing], legendColors: LegendColor): Unit = js.native
   def setLegend(legend: js.Array[Double]): Unit = js.native
   def setLegend(legend: js.Array[Double], legendColors: js.Array[String]): Unit = js.native
   def setLegend(legend: js.Array[Double], legendColors: LegendColor): Unit = js.native
@@ -105,11 +107,13 @@ trait CalHeatMap extends js.Object {
     *                                                   populating the calendar in realtime!
     */
   def update(data: String): Unit = js.native
+  def update(data: String, afterLoad: js.UndefOr[scala.Nothing], updateMode: Double): Unit = js.native
   def update(data: String, afterLoad: js.Function): Unit = js.native
   def update(data: String, afterLoad: js.Function, updateMode: Double): Unit = js.native
   def update(data: String, afterLoad: Boolean): Unit = js.native
   def update(data: String, afterLoad: Boolean, updateMode: Double): Unit = js.native
   def update(data: js.Object): Unit = js.native
+  def update(data: js.Object, afterLoad: js.UndefOr[scala.Nothing], updateMode: Double): Unit = js.native
   def update(data: js.Object, afterLoad: js.Function): Unit = js.native
   def update(data: js.Object, afterLoad: js.Function, updateMode: Double): Unit = js.native
   def update(data: js.Object, afterLoad: Boolean): Unit = js.native

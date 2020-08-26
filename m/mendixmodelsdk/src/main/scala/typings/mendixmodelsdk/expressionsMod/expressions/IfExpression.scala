@@ -60,17 +60,17 @@ class IfExpression protected () extends Expression {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def condition: Expression = js.native
-  def condition(newValue: Expression): js.Any = js.native
+  def condition_=(newValue: Expression): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def ifFalse: Expression = js.native
-  def ifFalse(newValue: Expression): js.Any = js.native
+  def ifFalse_=(newValue: Expression): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def ifTrue: Expression = js.native
-  def ifTrue(newValue: Expression): js.Any = js.native
+  def ifTrue_=(newValue: Expression): Unit = js.native
 }
 
 /* static members */

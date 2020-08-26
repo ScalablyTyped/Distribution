@@ -29,6 +29,7 @@ trait AuthContextBase extends EventEmitter {
     * Rejects the authentication request.
     */
   def reject(): Unit = js.native
+  def reject(authMethodsLeft: js.UndefOr[scala.Nothing], isPartialSuccess: Boolean): Unit = js.native
   def reject(authMethodsLeft: js.Array[String]): Unit = js.native
   def reject(authMethodsLeft: js.Array[String], isPartialSuccess: Boolean): Unit = js.native
   /**

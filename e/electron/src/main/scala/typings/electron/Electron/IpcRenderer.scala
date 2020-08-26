@@ -1,6 +1,7 @@
 package typings.electron.Electron
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
+import typings.std.MessagePort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,17 +14,22 @@ trait IpcRenderer extends EventEmitter {
     *
     * Send a message to the main process via `channel` and expect a result
     * asynchronously. Arguments will be serialized with the Structured Clone
-    * Algorithm, just like `postMessage`, so prototype chains will not be included.
-    * Sending Functions, Promises, Symbols, WeakMaps, or WeakSets will throw an
-    * exception.
+    * Algorithm, just like `window.postMessage`, so prototype chains will not be
+    * included. Sending Functions, Promises, Symbols, WeakMaps, or WeakSets will throw
+    * an exception.
     *
     * > **NOTE**: Sending non-standard JavaScript types such as DOM objects or special
     * Electron objects is deprecated, and will begin throwing an exception starting
     * with Electron 9.
     *
     * The main process should listen for `channel` with `ipcMain.handle()`.
+    *
+    * For example:
+    *
+    * If you need to transfer a `MessagePort` to the main process, use
+    * `ipcRenderer.postMessage`.
     * 
-  For example:
+  If you do not need a respons to the message, consider using `ipcRenderer.send`.
     */
   def invoke(channel: String, args: js.Any*): js.Promise[_] = js.native
   /**
@@ -37,10 +43,26 @@ trait IpcRenderer extends EventEmitter {
     */
   def once(channel: String, listener: js.Function2[/* event */ IpcRendererEvent, /* repeated */ js.Any, Unit]): this.type = js.native
   /**
+    * Send a message to the main process, optionally transferring ownership of zero or
+    * more `MessagePort` objects.
+    *
+    * The transferred `MessagePort` objects will be available in the main process as
+    * `MessagePortMain` objects by accessing the `ports` property of the emitted
+    * event.
+    *
+    * For example:
+    *
+    * For more information on using `MessagePort` and `MessageChannel`, see the MDN
+    * documentation.
+    */
+  def postMessage(channel: String, message: js.Any): Unit = js.native
+  def postMessage(channel: String, message: js.Any, transfer: js.Array[MessagePort]): Unit = js.native
+  /**
     * Send an asynchronous message to the main process via `channel`, along with
     * arguments. Arguments will be serialized with the Structured Clone Algorithm,
-    * just like `postMessage`, so prototype chains will not be included. Sending
-    * Functions, Promises, Symbols, WeakMaps, or WeakSets will throw an exception.
+    * just like `window.postMessage`, so prototype chains will not be included.
+    * Sending Functions, Promises, Symbols, WeakMaps, or WeakSets will throw an
+    * exception.
     *
     * > **NOTE**: Sending non-standard JavaScript types such as DOM objects or special
     * Electron objects is deprecated, and will begin throwing an exception starting
@@ -48,6 +70,12 @@ trait IpcRenderer extends EventEmitter {
     *
     * The main process handles it by listening for `channel` with the `ipcMain`
     * module.
+    *
+    * If you need to transfer a `MessagePort` to the main process, use
+    * `ipcRenderer.postMessage`.
+    *
+    * If you want to receive a single response from the main process, like the result
+    * of a method call, consider using `ipcRenderer.invoke`.
     */
   def send(channel: String, args: js.Any*): Unit = js.native
   /**
@@ -55,8 +83,9 @@ trait IpcRenderer extends EventEmitter {
     *
     * Send a message to the main process via `channel` and expect a result
     * synchronously. Arguments will be serialized with the Structured Clone Algorithm,
-    * just like `postMessage`, so prototype chains will not be included. Sending
-    * Functions, Promises, Symbols, WeakMaps, or WeakSets will throw an exception.
+    * just like `window.postMessage`, so prototype chains will not be included.
+    * Sending Functions, Promises, Symbols, WeakMaps, or WeakSets will throw an
+    * exception.
     *
     * > **NOTE**: Sending non-standard JavaScript types such as DOM objects or special
     * Electron objects is deprecated, and will begin throwing an exception starting

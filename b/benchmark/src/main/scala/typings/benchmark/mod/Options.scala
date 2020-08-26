@@ -4,72 +4,123 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var async: js.UndefOr[Boolean] = js.undefined
-  var defer: js.UndefOr[Boolean] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var fn: js.UndefOr[js.Function | String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var initCount: js.UndefOr[Double] = js.undefined
-  var maxTime: js.UndefOr[Double] = js.undefined
-  var minSamples: js.UndefOr[Double] = js.undefined
-  var minTime: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var onAbort: js.UndefOr[js.Function] = js.undefined
-  var onComplete: js.UndefOr[js.Function] = js.undefined
-  var onCycle: js.UndefOr[js.Function] = js.undefined
-  var onError: js.UndefOr[js.Function] = js.undefined
-  var onReset: js.UndefOr[js.Function] = js.undefined
-  var onStart: js.UndefOr[js.Function] = js.undefined
-  var queued: js.UndefOr[Boolean] = js.undefined
-  var setup: js.UndefOr[js.Function | String] = js.undefined
-  var teardown: js.UndefOr[js.Function | String] = js.undefined
+  var async: js.UndefOr[Boolean] = js.native
+  var defer: js.UndefOr[Boolean] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var fn: js.UndefOr[js.Function | String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var initCount: js.UndefOr[Double] = js.native
+  var maxTime: js.UndefOr[Double] = js.native
+  var minSamples: js.UndefOr[Double] = js.native
+  var minTime: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var onAbort: js.UndefOr[js.Function] = js.native
+  var onComplete: js.UndefOr[js.Function] = js.native
+  var onCycle: js.UndefOr[js.Function] = js.native
+  var onError: js.UndefOr[js.Function] = js.native
+  var onReset: js.UndefOr[js.Function] = js.native
+  var onStart: js.UndefOr[js.Function] = js.native
+  var queued: js.UndefOr[Boolean] = js.native
+  var setup: js.UndefOr[js.Function | String] = js.native
+  var teardown: js.UndefOr[js.Function | String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    async: js.UndefOr[Boolean] = js.undefined,
-    defer: js.UndefOr[Boolean] = js.undefined,
-    delay: js.UndefOr[Double] = js.undefined,
-    fn: js.Function | String = null,
-    id: String = null,
-    initCount: js.UndefOr[Double] = js.undefined,
-    maxTime: js.UndefOr[Double] = js.undefined,
-    minSamples: js.UndefOr[Double] = js.undefined,
-    minTime: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    onAbort: js.Function = null,
-    onComplete: js.Function = null,
-    onCycle: js.Function = null,
-    onError: js.Function = null,
-    onReset: js.Function = null,
-    onStart: js.Function = null,
-    queued: js.UndefOr[Boolean] = js.undefined,
-    setup: js.Function | String = null,
-    teardown: js.Function | String = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (fn != null) __obj.updateDynamic("fn")(fn.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(initCount)) __obj.updateDynamic("initCount")(initCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxTime)) __obj.updateDynamic("maxTime")(maxTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSamples)) __obj.updateDynamic("minSamples")(minSamples.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minTime)) __obj.updateDynamic("minTime")(minTime.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
-    if (onCycle != null) __obj.updateDynamic("onCycle")(onCycle.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
-    if (onReset != null) __obj.updateDynamic("onReset")(onReset.asInstanceOf[js.Any])
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(queued)) __obj.updateDynamic("queued")(queued.get.asInstanceOf[js.Any])
-    if (setup != null) __obj.updateDynamic("setup")(setup.asInstanceOf[js.Any])
-    if (teardown != null) __obj.updateDynamic("teardown")(teardown.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsync: Self = this.set("async", js.undefined)
+    @scala.inline
+    def setDefer(value: Boolean): Self = this.set("defer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefer: Self = this.set("defer", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setFn(value: js.Function | String): Self = this.set("fn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFn: Self = this.set("fn", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInitCount(value: Double): Self = this.set("initCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitCount: Self = this.set("initCount", js.undefined)
+    @scala.inline
+    def setMaxTime(value: Double): Self = this.set("maxTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxTime: Self = this.set("maxTime", js.undefined)
+    @scala.inline
+    def setMinSamples(value: Double): Self = this.set("minSamples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSamples: Self = this.set("minSamples", js.undefined)
+    @scala.inline
+    def setMinTime(value: Double): Self = this.set("minTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinTime: Self = this.set("minTime", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnAbort(value: js.Function): Self = this.set("onAbort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAbort: Self = this.set("onAbort", js.undefined)
+    @scala.inline
+    def setOnComplete(value: js.Function): Self = this.set("onComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    @scala.inline
+    def setOnCycle(value: js.Function): Self = this.set("onCycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCycle: Self = this.set("onCycle", js.undefined)
+    @scala.inline
+    def setOnError(value: js.Function): Self = this.set("onError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnReset(value: js.Function): Self = this.set("onReset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnReset: Self = this.set("onReset", js.undefined)
+    @scala.inline
+    def setOnStart(value: js.Function): Self = this.set("onStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnStart: Self = this.set("onStart", js.undefined)
+    @scala.inline
+    def setQueued(value: Boolean): Self = this.set("queued", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueued: Self = this.set("queued", js.undefined)
+    @scala.inline
+    def setSetup(value: js.Function | String): Self = this.set("setup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetup: Self = this.set("setup", js.undefined)
+    @scala.inline
+    def setTeardown(value: js.Function | String): Self = this.set("teardown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeardown: Self = this.set("teardown", js.undefined)
+  }
+  
 }
 

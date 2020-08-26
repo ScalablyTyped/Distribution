@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵvid extends js.Object {
   def apply(flags: ɵViewFlags, nodes: js.Array[NodeDef]): ɵViewDefinition = js.native
+  def apply(
+    flags: ɵViewFlags,
+    nodes: js.Array[NodeDef],
+    updateDirectives: js.UndefOr[scala.Nothing],
+    updateRenderer: ViewUpdateFn
+  ): ɵViewDefinition = js.native
   def apply(flags: ɵViewFlags, nodes: js.Array[NodeDef], updateDirectives: Null, updateRenderer: ViewUpdateFn): ɵViewDefinition = js.native
   def apply(flags: ɵViewFlags, nodes: js.Array[NodeDef], updateDirectives: ViewUpdateFn): ɵViewDefinition = js.native
   def apply(

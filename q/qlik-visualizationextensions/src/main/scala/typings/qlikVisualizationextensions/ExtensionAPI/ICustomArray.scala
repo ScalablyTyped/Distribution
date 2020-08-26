@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICustomArray extends ICustomControl {
-  var addTranslation: String
-  var allowAdd: Boolean
-  var allowMove: Boolean
-  var allowRemove: Boolean
-  var itemTitleRef: String
+  var addTranslation: String = js.native
+  var allowAdd: Boolean = js.native
+  var allowMove: Boolean = js.native
+  var allowRemove: Boolean = js.native
+  var itemTitleRef: String = js.native
 }
 
 object ICustomArray {
@@ -28,5 +29,28 @@ object ICustomArray {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomArray]
   }
+  @scala.inline
+  implicit class ICustomArrayOps[Self <: ICustomArray] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddTranslation(value: String): Self = this.set("addTranslation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowAdd(value: Boolean): Self = this.set("allowAdd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowMove(value: Boolean): Self = this.set("allowMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowRemove(value: Boolean): Self = this.set("allowRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItemTitleRef(value: String): Self = this.set("itemTitleRef", value.asInstanceOf[js.Any])
+  }
+  
 }
 

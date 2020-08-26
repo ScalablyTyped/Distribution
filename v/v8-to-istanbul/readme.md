@@ -10,9 +10,9 @@ convert from v8 coverage format to istanbul's format
 | ------------------ | :-------------: |
 | Full name          | v8-to-istanbul |
 | Keywords           | istanbul, v8, coverage |
-| # releases         | 25 |
-| # dependents       | 7 |
-| # downloads        | 2468246 |
+| # releases         | 28 |
+| # dependents       | 19 |
+| # downloads        | 59015901 |
 | # stars            | 0 |
 
 ## Links

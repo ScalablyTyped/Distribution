@@ -14,10 +14,28 @@ trait TrafficRoute extends js.Object {
 
 object TrafficRoute {
   @scala.inline
-  def apply(listenerArns: ListenerArnList = null): TrafficRoute = {
+  def apply(): TrafficRoute = {
     val __obj = js.Dynamic.literal()
-    if (listenerArns != null) __obj.updateDynamic("listenerArns")(listenerArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficRoute]
   }
+  @scala.inline
+  implicit class TrafficRouteOps[Self <: TrafficRoute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setListenerArnsVarargs(value: ListenerArn*): Self = this.set("listenerArns", js.Array(value :_*))
+    @scala.inline
+    def setListenerArns(value: ListenerArnList): Self = this.set("listenerArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListenerArns: Self = this.set("listenerArns", js.undefined)
+  }
+  
 }
 

@@ -62,6 +62,7 @@ trait JQuery extends js.Object {
     * @since 1.0.0
     */
   def modal(): JQuery = js.native
+  def modal(method: js.UndefOr[scala.Nothing], options: js.Any): JQuery = js.native
   def modal(method: String): JQuery = js.native
   def modal(method: String, options: js.Any): JQuery = js.native
   def modal(options: js.Any): JQuery = js.native

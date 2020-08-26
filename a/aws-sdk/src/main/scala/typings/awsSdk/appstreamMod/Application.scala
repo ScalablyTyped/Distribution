@@ -38,24 +38,50 @@ trait Application extends js.Object {
 
 object Application {
   @scala.inline
-  def apply(
-    DisplayName: String = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
-    IconURL: String = null,
-    LaunchParameters: String = null,
-    LaunchPath: String = null,
-    Metadata: Metadata = null,
-    Name: String = null
-  ): Application = {
+  def apply(): Application = {
     val __obj = js.Dynamic.literal()
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (IconURL != null) __obj.updateDynamic("IconURL")(IconURL.asInstanceOf[js.Any])
-    if (LaunchParameters != null) __obj.updateDynamic("LaunchParameters")(LaunchParameters.asInstanceOf[js.Any])
-    if (LaunchPath != null) __obj.updateDynamic("LaunchPath")(LaunchPath.asInstanceOf[js.Any])
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Application]
   }
+  @scala.inline
+  implicit class ApplicationOps[Self <: Application] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setIconURL(value: String): Self = this.set("IconURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconURL: Self = this.set("IconURL", js.undefined)
+    @scala.inline
+    def setLaunchParameters(value: String): Self = this.set("LaunchParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchParameters: Self = this.set("LaunchParameters", js.undefined)
+    @scala.inline
+    def setLaunchPath(value: String): Self = this.set("LaunchPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchPath: Self = this.set("LaunchPath", js.undefined)
+    @scala.inline
+    def setMetadata(value: Metadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

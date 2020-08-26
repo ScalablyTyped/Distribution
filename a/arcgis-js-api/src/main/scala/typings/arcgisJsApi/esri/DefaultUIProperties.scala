@@ -1,10 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultUIProperties extends UIProperties {
   /**
     * An array of strings representing the default widgets visible when a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) is created. The default widgets differ between MapView and SceneView.  The following are the default components in each view:  **MapView:** `["attribution", "zoom"]`  **SceneView:** `["attribution", "navigation-toggle", "compass", "zoom"]`
@@ -12,23 +12,33 @@ trait DefaultUIProperties extends UIProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-DefaultUI.html#components)
     */
-  var components: js.UndefOr[js.Array[String]] = js.undefined
+  var components: js.UndefOr[js.Array[String]] = js.native
 }
 
 object DefaultUIProperties {
   @scala.inline
-  def apply(
-    components: js.Array[String] = null,
-    container: HTMLElement = null,
-    padding: js.Any | Double = null,
-    view: MapViewProperties | SceneViewProperties = null
-  ): DefaultUIProperties = {
+  def apply(): DefaultUIProperties = {
     val __obj = js.Dynamic.literal()
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultUIProperties]
   }
+  @scala.inline
+  implicit class DefaultUIPropertiesOps[Self <: DefaultUIProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentsVarargs(value: String*): Self = this.set("components", js.Array(value :_*))
+    @scala.inline
+    def setComponents(value: js.Array[String]): Self = this.set("components", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponents: Self = this.set("components", js.undefined)
+  }
+  
 }
 

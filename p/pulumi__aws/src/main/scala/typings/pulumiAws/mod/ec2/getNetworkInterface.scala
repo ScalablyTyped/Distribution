@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws", "ec2.getNetworkInterface")
 @js.native
 object getNetworkInterface extends js.Object {
-  def apply(): js.Promise[GetNetworkInterfaceResult] with GetNetworkInterfaceResult = js.native
-  def apply(args: GetNetworkInterfaceArgs): js.Promise[GetNetworkInterfaceResult] with GetNetworkInterfaceResult = js.native
-  def apply(args: GetNetworkInterfaceArgs, opts: InvokeOptions): js.Promise[GetNetworkInterfaceResult] with GetNetworkInterfaceResult = js.native
+  def apply(): js.Promise[GetNetworkInterfaceResult] = js.native
+  def apply(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetNetworkInterfaceResult] = js.native
+  def apply(args: GetNetworkInterfaceArgs): js.Promise[GetNetworkInterfaceResult] = js.native
+  def apply(args: GetNetworkInterfaceArgs, opts: InvokeOptions): js.Promise[GetNetworkInterfaceResult] = js.native
 }
 

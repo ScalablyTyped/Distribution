@@ -10,9 +10,9 @@ Module for serializing and deserializing object into memory and disk. By default
 | ------------------ | :-------------: |
 | Full name          | jest-serializer |
 | Keywords           | - |
-| # releases         | 37 |
+| # releases         | 36 |
 | # dependents       | 16 |
-| # downloads        | 198930116 |
+| # downloads        | 201909525 |
 | # stars            | 0 |
 
 ## Links

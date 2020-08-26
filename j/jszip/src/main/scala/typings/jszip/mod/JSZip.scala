@@ -39,7 +39,7 @@ trait JSZip
   */
 Instantiable0[JSZip]
      with Instantiable1[/* data */ InputFileFormat, JSZip]
-     with Instantiable2[/* data */ InputFileFormat, /* options */ JSZipLoadOptions, JSZip] {
+     with Instantiable2[js.UndefOr[/* data */ InputFileFormat], /* options */ JSZipLoadOptions, JSZip] {
   var external: Promise = js.native
   var files: StringDictionary[JSZipObject] = js.native
   var support: JSZipSupport = js.native
@@ -126,6 +126,7 @@ Instantiable0[JSZip]
     * @return The serialized archive
     */
   def generateAsync(): js.Promise[String] = js.native
+  def generateAsync(options: js.UndefOr[scala.Nothing], onUpdate: OnUpdateCallback): js.Promise[String] = js.native
   @JSName("generateAsync")
   def generateAsync_array(options: JSZipGeneratorOptions[array]): js.Promise[js.Array[Double]] = js.native
   @JSName("generateAsync")
@@ -170,6 +171,7 @@ Instantiable0[JSZip]
     * @return A Node.js `ReadableStream`
     */
   def generateNodeStream(): ReadableStream = js.native
+  def generateNodeStream(options: js.UndefOr[scala.Nothing], onUpdate: OnUpdateCallback): ReadableStream = js.native
   @JSName("generateNodeStream")
   def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[nodebuffer]): ReadableStream = js.native
   @JSName("generateNodeStream")

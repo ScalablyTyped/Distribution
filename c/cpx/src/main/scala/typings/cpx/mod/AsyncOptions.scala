@@ -5,29 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AsyncOptions extends SyncOptions {
   /** Function that creates a `stream.Transform` object to transform each copying file. */
-  var transform: js.UndefOr[js.Function1[/* filepath */ String, js.Array[Transform]]] = js.undefined
+  var transform: js.UndefOr[js.Function1[/* filepath */ String, js.Array[Transform]]] = js.native
 }
 
 object AsyncOptions {
   @scala.inline
-  def apply(
-    clean: js.UndefOr[Boolean] = js.undefined,
-    dereference: js.UndefOr[Boolean] = js.undefined,
-    includeEmptyDirs: js.UndefOr[Boolean] = js.undefined,
-    preserve: js.UndefOr[Boolean] = js.undefined,
-    transform: /* filepath */ String => js.Array[Transform] = null,
-    update: js.UndefOr[Boolean] = js.undefined
-  ): AsyncOptions = {
+  def apply(): AsyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dereference)) __obj.updateDynamic("dereference")(dereference.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeEmptyDirs)) __obj.updateDynamic("includeEmptyDirs")(includeEmptyDirs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.get.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncOptions]
   }
+  @scala.inline
+  implicit class AsyncOptionsOps[Self <: AsyncOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTransform(value: /* filepath */ String => js.Array[Transform]): Self = this.set("transform", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+  }
+  
 }
 

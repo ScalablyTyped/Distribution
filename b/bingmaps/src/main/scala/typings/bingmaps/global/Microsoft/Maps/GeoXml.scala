@@ -36,6 +36,11 @@ object GeoXml extends js.Object {
   def writeCompressed(shapes: js.Array[typings.bingmaps.Microsoft.Maps.GroundOverlay | IPrimitive]): String | ArrayBuffer | Blob = js.native
   def writeCompressed(
     shapes: js.Array[typings.bingmaps.Microsoft.Maps.GroundOverlay | IPrimitive],
+    compressFormat: js.UndefOr[scala.Nothing],
+    options: IGeoXmlWriteOptions
+  ): String | ArrayBuffer | Blob = js.native
+  def writeCompressed(
+    shapes: js.Array[typings.bingmaps.Microsoft.Maps.GroundOverlay | IPrimitive],
     compressFormat: typings.bingmaps.Microsoft.Maps.GeoXmlCompressedFormat
   ): String | ArrayBuffer | Blob = js.native
   def writeCompressed(
@@ -44,6 +49,7 @@ object GeoXml extends js.Object {
     options: IGeoXmlWriteOptions
   ): String | ArrayBuffer | Blob = js.native
   def writeCompressed(shapes: IGeoXmlDataSet): String | ArrayBuffer | Blob = js.native
+  def writeCompressed(shapes: IGeoXmlDataSet, compressFormat: js.UndefOr[scala.Nothing], options: IGeoXmlWriteOptions): String | ArrayBuffer | Blob = js.native
   def writeCompressed(shapes: IGeoXmlDataSet, compressFormat: typings.bingmaps.Microsoft.Maps.GeoXmlCompressedFormat): String | ArrayBuffer | Blob = js.native
   def writeCompressed(
     shapes: IGeoXmlDataSet,
@@ -51,6 +57,7 @@ object GeoXml extends js.Object {
     options: IGeoXmlWriteOptions
   ): String | ArrayBuffer | Blob = js.native
   def writeCompressed(shapes: IPrimitive): String | ArrayBuffer | Blob = js.native
+  def writeCompressed(shapes: IPrimitive, compressFormat: js.UndefOr[scala.Nothing], options: IGeoXmlWriteOptions): String | ArrayBuffer | Blob = js.native
   def writeCompressed(shapes: IPrimitive, compressFormat: typings.bingmaps.Microsoft.Maps.GeoXmlCompressedFormat): String | ArrayBuffer | Blob = js.native
   def writeCompressed(
     shapes: IPrimitive,
@@ -58,6 +65,11 @@ object GeoXml extends js.Object {
     options: IGeoXmlWriteOptions
   ): String | ArrayBuffer | Blob = js.native
   def writeCompressed(shapes: typings.bingmaps.Microsoft.Maps.Layer): String | ArrayBuffer | Blob = js.native
+  def writeCompressed(
+    shapes: typings.bingmaps.Microsoft.Maps.Layer,
+    compressFormat: js.UndefOr[scala.Nothing],
+    options: IGeoXmlWriteOptions
+  ): String | ArrayBuffer | Blob = js.native
   def writeCompressed(
     shapes: typings.bingmaps.Microsoft.Maps.Layer,
     compressFormat: typings.bingmaps.Microsoft.Maps.GeoXmlCompressedFormat
@@ -68,6 +80,11 @@ object GeoXml extends js.Object {
     options: IGeoXmlWriteOptions
   ): String | ArrayBuffer | Blob = js.native
   def writeCompressed(shapes: typings.bingmaps.Microsoft.Maps.Map): String | ArrayBuffer | Blob = js.native
+  def writeCompressed(
+    shapes: typings.bingmaps.Microsoft.Maps.Map,
+    compressFormat: js.UndefOr[scala.Nothing],
+    options: IGeoXmlWriteOptions
+  ): String | ArrayBuffer | Blob = js.native
   def writeCompressed(
     shapes: typings.bingmaps.Microsoft.Maps.Map,
     compressFormat: typings.bingmaps.Microsoft.Maps.GeoXmlCompressedFormat

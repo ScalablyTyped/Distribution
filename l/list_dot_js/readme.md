@@ -12,7 +12,7 @@ The perfect library for lists. Supports search, sort, filters and flexibility. B
 | Keywords           | list, search, sort, table, dom, html, ui |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 331181 |
+| # downloads        | 342798 |
 | # stars            | 3 |
 
 ## Links

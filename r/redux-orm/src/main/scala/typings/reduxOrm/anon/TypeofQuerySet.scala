@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeofQuerySet extends js.Object {
   /**
     * Register custom method on a `QuerySet` class specification.
@@ -29,7 +30,7 @@ trait TypeofQuerySet extends js.Object {
     * // use shared method
     * const unreleased = customQs.unreleased();
     */
-  def addSharedMethod(methodName: String): Unit
+  def addSharedMethod(methodName: String): Unit = js.native
 }
 
 object TypeofQuerySet {
@@ -38,5 +39,20 @@ object TypeofQuerySet {
     val __obj = js.Dynamic.literal(addSharedMethod = js.Any.fromFunction1(addSharedMethod))
     __obj.asInstanceOf[TypeofQuerySet]
   }
+  @scala.inline
+  implicit class TypeofQuerySetOps[Self <: TypeofQuerySet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddSharedMethod(value: String => Unit): Self = this.set("addSharedMethod", js.Any.fromFunction1(value))
+  }
+  
 }
 

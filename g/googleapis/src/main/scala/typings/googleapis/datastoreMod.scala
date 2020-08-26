@@ -52,7 +52,7 @@ object datastoreMod extends js.Object {
     @js.native
     object v1
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Datastore]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Datastore]
             ]
     
     @js.native
@@ -60,7 +60,7 @@ object datastoreMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Datastore
               ]
             ]
@@ -70,7 +70,7 @@ object datastoreMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.v1beta3Mod.datastoreV1beta3.Datastore
               ]
             ]

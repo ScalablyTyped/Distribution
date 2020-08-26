@@ -18,7 +18,26 @@ object create extends js.Object {
     * @param options - create options
     */
   def apply(nameOrObject: String): XMLElement = js.native
+  def apply(
+    nameOrObject: String,
+    xmldecOrOptions: js.UndefOr[scala.Nothing],
+    doctypeOrOptions: js.UndefOr[scala.Nothing],
+    options: CreateOptions
+  ): XMLElement = js.native
+  def apply(nameOrObject: String, xmldecOrOptions: js.UndefOr[scala.Nothing], doctypeOrOptions: CreateOptions): XMLElement = js.native
+  def apply(
+    nameOrObject: String,
+    xmldecOrOptions: js.UndefOr[scala.Nothing],
+    doctypeOrOptions: CreateOptions,
+    options: CreateOptions
+  ): XMLElement = js.native
   def apply(nameOrObject: String, xmldecOrOptions: CreateOptions): XMLElement = js.native
+  def apply(
+    nameOrObject: String,
+    xmldecOrOptions: CreateOptions,
+    doctypeOrOptions: js.UndefOr[scala.Nothing],
+    options: CreateOptions
+  ): XMLElement = js.native
   def apply(nameOrObject: String, xmldecOrOptions: CreateOptions, doctypeOrOptions: CreateOptions): XMLElement = js.native
   def apply(
     nameOrObject: String,
@@ -27,7 +46,30 @@ object create extends js.Object {
     options: CreateOptions
   ): XMLElement = js.native
   def apply(nameOrObject: StringDictionary[js.Object]): XMLElement = js.native
+  def apply(
+    nameOrObject: StringDictionary[js.Object],
+    xmldecOrOptions: js.UndefOr[scala.Nothing],
+    doctypeOrOptions: js.UndefOr[scala.Nothing],
+    options: CreateOptions
+  ): XMLElement = js.native
+  def apply(
+    nameOrObject: StringDictionary[js.Object],
+    xmldecOrOptions: js.UndefOr[scala.Nothing],
+    doctypeOrOptions: CreateOptions
+  ): XMLElement = js.native
+  def apply(
+    nameOrObject: StringDictionary[js.Object],
+    xmldecOrOptions: js.UndefOr[scala.Nothing],
+    doctypeOrOptions: CreateOptions,
+    options: CreateOptions
+  ): XMLElement = js.native
   def apply(nameOrObject: StringDictionary[js.Object], xmldecOrOptions: CreateOptions): XMLElement = js.native
+  def apply(
+    nameOrObject: StringDictionary[js.Object],
+    xmldecOrOptions: CreateOptions,
+    doctypeOrOptions: js.UndefOr[scala.Nothing],
+    options: CreateOptions
+  ): XMLElement = js.native
   def apply(
     nameOrObject: StringDictionary[js.Object],
     xmldecOrOptions: CreateOptions,

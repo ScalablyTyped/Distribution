@@ -22,8 +22,8 @@ trait FetchMockStatic extends js.Object {
     * filter the list of calls further.
     */
   def called(): Boolean = js.native
+  def called(filter: js.UndefOr[InspectionFilter], options: InspectionOptions): Boolean = js.native
   def called(filter: InspectionFilter): Boolean = js.native
-  def called(filter: InspectionFilter, options: InspectionOptions): Boolean = js.native
   /**
     * Returns an array of all calls to fetch matching the given filters.
     * Each call is returned as a [url, options] array. If fetch was called
@@ -36,8 +36,8 @@ trait FetchMockStatic extends js.Object {
     * filter the list of calls further.
     */
   def calls(): js.Array[MockCall] = js.native
+  def calls(filter: js.UndefOr[InspectionFilter], options: InspectionOptions): js.Array[MockCall] = js.native
   def calls(filter: InspectionFilter): js.Array[MockCall] = js.native
-  def calls(filter: InspectionFilter, options: InspectionOptions): js.Array[MockCall] = js.native
   /**
     * Chainable method that defines how to respond to calls to fetch that
     * don't match any of the defined mocks. It accepts the same types of
@@ -157,8 +157,8 @@ trait FetchMockStatic extends js.Object {
     * filter the list of calls further.
     */
   def lastCall(): js.UndefOr[MockCall] = js.native
+  def lastCall(filter: js.UndefOr[InspectionFilter], options: InspectionOptions): js.UndefOr[MockCall] = js.native
   def lastCall(filter: InspectionFilter): js.UndefOr[MockCall] = js.native
-  def lastCall(filter: InspectionFilter, options: InspectionOptions): js.UndefOr[MockCall] = js.native
   /**
     * Returns the options for the call to fetch matching the given filter.
     * If fetch was last called using a Request instance, a set of options
@@ -170,8 +170,8 @@ trait FetchMockStatic extends js.Object {
     * filter the list of calls further.
     */
   def lastOptions(): js.UndefOr[MockOptions] = js.native
+  def lastOptions(filter: js.UndefOr[InspectionFilter], options: InspectionOptions): js.UndefOr[MockOptions] = js.native
   def lastOptions(filter: InspectionFilter): js.UndefOr[MockOptions] = js.native
-  def lastOptions(filter: InspectionFilter, options: InspectionOptions): js.UndefOr[MockOptions] = js.native
   /**
     * Returns the url for the last call to fetch matching the given
     * filter. If fetch was last called using a Request instance, the url
@@ -183,8 +183,8 @@ trait FetchMockStatic extends js.Object {
     * filter the list of calls further.
     */
   def lastUrl(): js.UndefOr[String] = js.native
+  def lastUrl(filter: js.UndefOr[InspectionFilter], options: InspectionOptions): js.UndefOr[String] = js.native
   def lastUrl(filter: InspectionFilter): js.UndefOr[String] = js.native
-  def lastUrl(filter: InspectionFilter, options: InspectionOptions): js.UndefOr[String] = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the

@@ -15,6 +15,7 @@ trait JQueryStatic extends js.Object {
     * @param options Not implemented.
     */
   def totalStorage(key: String): js.Any = js.native
+  def totalStorage(key: String, value: js.UndefOr[scala.Nothing], options: JQueryTotalStorageOptions): js.Any = js.native
   def totalStorage(key: String, value: js.Any): js.Any = js.native
   def totalStorage(key: String, value: js.Any, options: JQueryTotalStorageOptions): js.Any = js.native
 }

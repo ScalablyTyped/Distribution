@@ -14,18 +14,38 @@ trait Limit extends js.Object {
 
 object Limit {
   @scala.inline
-  def apply(
-    limit: String = null,
-    usage: String = null,
-    usageInDrive: String = null,
-    usageInDriveTrash: String = null
-  ): Limit = {
+  def apply(): Limit = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
-    if (usageInDrive != null) __obj.updateDynamic("usageInDrive")(usageInDrive.asInstanceOf[js.Any])
-    if (usageInDriveTrash != null) __obj.updateDynamic("usageInDriveTrash")(usageInDriveTrash.asInstanceOf[js.Any])
     __obj.asInstanceOf[Limit]
   }
+  @scala.inline
+  implicit class LimitOps[Self <: Limit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setUsage(value: String): Self = this.set("usage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsage: Self = this.set("usage", js.undefined)
+    @scala.inline
+    def setUsageInDrive(value: String): Self = this.set("usageInDrive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsageInDrive: Self = this.set("usageInDrive", js.undefined)
+    @scala.inline
+    def setUsageInDriveTrash(value: String): Self = this.set("usageInDriveTrash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsageInDriveTrash: Self = this.set("usageInDriveTrash", js.undefined)
+  }
+  
 }
 

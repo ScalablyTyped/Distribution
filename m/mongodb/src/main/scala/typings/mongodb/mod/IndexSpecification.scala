@@ -4,68 +4,116 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IndexSpecification extends js.Object {
-  var `2dsphereIndexVersion`: js.UndefOr[scala.Double] = js.undefined
-  var background: js.UndefOr[Boolean] = js.undefined
-  var bits: js.UndefOr[scala.Double] = js.undefined
-  var bucketSize: js.UndefOr[scala.Double] = js.undefined
-  var collation: js.UndefOr[CollationDocument] = js.undefined
-  var default_language: js.UndefOr[String] = js.undefined
-  var expireAfterSeconds: js.UndefOr[scala.Double] = js.undefined
-  var key: js.Object
-  var language_override: js.UndefOr[String] = js.undefined
-  var max: js.UndefOr[scala.Double] = js.undefined
-  var min: js.UndefOr[scala.Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var partialFilterExpression: js.UndefOr[js.Object] = js.undefined
-  var sparse: js.UndefOr[Boolean] = js.undefined
-  var storageEngine: js.UndefOr[js.Object] = js.undefined
-  var textIndexVersion: js.UndefOr[scala.Double] = js.undefined
-  var unique: js.UndefOr[Boolean] = js.undefined
-  var weights: js.UndefOr[js.Object] = js.undefined
+  var `2dsphereIndexVersion`: js.UndefOr[scala.Double] = js.native
+  var background: js.UndefOr[Boolean] = js.native
+  var bits: js.UndefOr[scala.Double] = js.native
+  var bucketSize: js.UndefOr[scala.Double] = js.native
+  var collation: js.UndefOr[CollationDocument] = js.native
+  var default_language: js.UndefOr[String] = js.native
+  var expireAfterSeconds: js.UndefOr[scala.Double] = js.native
+  var key: js.Object = js.native
+  var language_override: js.UndefOr[String] = js.native
+  var max: js.UndefOr[scala.Double] = js.native
+  var min: js.UndefOr[scala.Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var partialFilterExpression: js.UndefOr[js.Object] = js.native
+  var sparse: js.UndefOr[Boolean] = js.native
+  var storageEngine: js.UndefOr[js.Object] = js.native
+  var textIndexVersion: js.UndefOr[scala.Double] = js.native
+  var unique: js.UndefOr[Boolean] = js.native
+  var weights: js.UndefOr[js.Object] = js.native
 }
 
 object IndexSpecification {
   @scala.inline
-  def apply(
-    key: js.Object,
-    `2dsphereIndexVersion`: js.UndefOr[scala.Double] = js.undefined,
-    background: js.UndefOr[Boolean] = js.undefined,
-    bits: js.UndefOr[scala.Double] = js.undefined,
-    bucketSize: js.UndefOr[scala.Double] = js.undefined,
-    collation: CollationDocument = null,
-    default_language: String = null,
-    expireAfterSeconds: js.UndefOr[scala.Double] = js.undefined,
-    language_override: String = null,
-    max: js.UndefOr[scala.Double] = js.undefined,
-    min: js.UndefOr[scala.Double] = js.undefined,
-    name: String = null,
-    partialFilterExpression: js.Object = null,
-    sparse: js.UndefOr[Boolean] = js.undefined,
-    storageEngine: js.Object = null,
-    textIndexVersion: js.UndefOr[scala.Double] = js.undefined,
-    unique: js.UndefOr[Boolean] = js.undefined,
-    weights: js.Object = null
-  ): IndexSpecification = {
+  def apply(key: js.Object): IndexSpecification = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (!js.isUndefined(`2dsphereIndexVersion`)) __obj.updateDynamic("2dsphereIndexVersion")(`2dsphereIndexVersion`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bits)) __obj.updateDynamic("bits")(bits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bucketSize)) __obj.updateDynamic("bucketSize")(bucketSize.get.asInstanceOf[js.Any])
-    if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
-    if (default_language != null) __obj.updateDynamic("default_language")(default_language.asInstanceOf[js.Any])
-    if (!js.isUndefined(expireAfterSeconds)) __obj.updateDynamic("expireAfterSeconds")(expireAfterSeconds.get.asInstanceOf[js.Any])
-    if (language_override != null) __obj.updateDynamic("language_override")(language_override.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (partialFilterExpression != null) __obj.updateDynamic("partialFilterExpression")(partialFilterExpression.asInstanceOf[js.Any])
-    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.get.asInstanceOf[js.Any])
-    if (storageEngine != null) __obj.updateDynamic("storageEngine")(storageEngine.asInstanceOf[js.Any])
-    if (!js.isUndefined(textIndexVersion)) __obj.updateDynamic("textIndexVersion")(textIndexVersion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.get.asInstanceOf[js.Any])
-    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexSpecification]
   }
+  @scala.inline
+  implicit class IndexSpecificationOps[Self <: IndexSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: js.Object): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2dsphereIndexVersion(value: scala.Double): Self = this.set("2dsphereIndexVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete2dsphereIndexVersion: Self = this.set("2dsphereIndexVersion", js.undefined)
+    @scala.inline
+    def setBackground(value: Boolean): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBits(value: scala.Double): Self = this.set("bits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBits: Self = this.set("bits", js.undefined)
+    @scala.inline
+    def setBucketSize(value: scala.Double): Self = this.set("bucketSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketSize: Self = this.set("bucketSize", js.undefined)
+    @scala.inline
+    def setCollation(value: CollationDocument): Self = this.set("collation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollation: Self = this.set("collation", js.undefined)
+    @scala.inline
+    def setDefault_language(value: String): Self = this.set("default_language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_language: Self = this.set("default_language", js.undefined)
+    @scala.inline
+    def setExpireAfterSeconds(value: scala.Double): Self = this.set("expireAfterSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpireAfterSeconds: Self = this.set("expireAfterSeconds", js.undefined)
+    @scala.inline
+    def setLanguage_override(value: String): Self = this.set("language_override", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage_override: Self = this.set("language_override", js.undefined)
+    @scala.inline
+    def setMax(value: scala.Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: scala.Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPartialFilterExpression(value: js.Object): Self = this.set("partialFilterExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartialFilterExpression: Self = this.set("partialFilterExpression", js.undefined)
+    @scala.inline
+    def setSparse(value: Boolean): Self = this.set("sparse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSparse: Self = this.set("sparse", js.undefined)
+    @scala.inline
+    def setStorageEngine(value: js.Object): Self = this.set("storageEngine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageEngine: Self = this.set("storageEngine", js.undefined)
+    @scala.inline
+    def setTextIndexVersion(value: scala.Double): Self = this.set("textIndexVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextIndexVersion: Self = this.set("textIndexVersion", js.undefined)
+    @scala.inline
+    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnique: Self = this.set("unique", js.undefined)
+    @scala.inline
+    def setWeights(value: js.Object): Self = this.set("weights", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeights: Self = this.set("weights", js.undefined)
+  }
+  
 }
 

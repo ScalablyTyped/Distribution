@@ -29,9 +29,10 @@ class WebAuth protected () extends js.Object {
     * Renews an existing session on Auth0's servers using `response_mode=web_message` (i.e. Auth0's hosted login page)
     *
     * @param options options used in {@link authorize} call
-    * @param callback: any(err, token_payload)
+    * @param cb
+    * @see {@link https://auth0.com/docs/libraries/auth0js/v9#using-checksession-to-acquire-new-tokens}
     */
-  def checkSession(options: CheckSessionOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def checkSession(options: CheckSessionOptions, cb: Auth0Callback[_, Auth0Error]): Unit = js.native
   /**
     * Runs the callback code for the cross origin authentication call.
     * This method is meant to be called by the cross origin authentication callback url.

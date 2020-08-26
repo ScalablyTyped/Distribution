@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/dynamic-label-(document-template) relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/dynamic-label-document-template relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DynamicLabel")
 @js.native
@@ -27,11 +27,11 @@ class DynamicLabel protected () extends AttributeWidget {
   @JSName("model")
   var model_FDynamicLabel: IModel = js.native
   def formattingInfo: FormattingInfo = js.native
-  def formattingInfo(newValue: FormattingInfo): js.Any = js.native
+  def formattingInfo_=(newValue: FormattingInfo): Unit = js.native
   def renderXHTML: Boolean = js.native
-  def renderXHTML(newValue: Boolean): js.Any = js.native
+  def renderXHTML_=(newValue: Boolean): Unit = js.native
   def style: Style = js.native
-  def style(newValue: Style): js.Any = js.native
+  def style_=(newValue: Style): Unit = js.native
 }
 
 /* static members */

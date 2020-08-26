@@ -50,8 +50,58 @@ trait GroupObject extends js.Object {
   def BottomRightCell(RowIndex: Double, ColumnIndex: Double): Range = js.native
   def BringToFront(): js.Any = js.native
   def CheckSpelling(): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: js.Any
+  ): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.Any
+  ): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.Any,
+    SpellLang: js.Any
+  ): js.Any = js.native
+  def CheckSpelling(CustomDictionary: js.UndefOr[scala.Nothing], IgnoreUppercase: js.Any): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.Any,
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: js.Any
+  ): js.Any = js.native
+  def CheckSpelling(CustomDictionary: js.UndefOr[scala.Nothing], IgnoreUppercase: js.Any, AlwaysSuggest: js.Any): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.UndefOr[scala.Nothing],
+    IgnoreUppercase: js.Any,
+    AlwaysSuggest: js.Any,
+    SpellLang: js.Any
+  ): js.Any = js.native
   def CheckSpelling(CustomDictionary: js.Any): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.Any,
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: js.Any
+  ): js.Any = js.native
+  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.UndefOr[scala.Nothing], AlwaysSuggest: js.Any): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.Any,
+    IgnoreUppercase: js.UndefOr[scala.Nothing],
+    AlwaysSuggest: js.Any,
+    SpellLang: js.Any
+  ): js.Any = js.native
   def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any): js.Any = js.native
+  def CheckSpelling(
+    CustomDictionary: js.Any,
+    IgnoreUppercase: js.Any,
+    AlwaysSuggest: js.UndefOr[scala.Nothing],
+    SpellLang: js.Any
+  ): js.Any = js.native
   def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any): js.Any = js.native
   def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any, SpellLang: js.Any): js.Any = js.native
   def Copy(): js.Any = js.native
@@ -60,6 +110,7 @@ trait GroupObject extends js.Object {
     * @param Format [Format=-4147]
     */
   def CopyPicture(): js.Any = js.native
+  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
   def Cut(): js.Any = js.native

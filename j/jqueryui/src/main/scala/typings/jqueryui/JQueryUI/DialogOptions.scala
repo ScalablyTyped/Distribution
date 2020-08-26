@@ -1,117 +1,157 @@
 package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jquery.JQueryEventObject
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Dialog //////////////////////////////////////////////////
+@js.native
 trait DialogOptions extends DialogEvents {
-  var appendTo: js.UndefOr[String] = js.undefined
-  var autoOpen: js.UndefOr[Boolean] = js.undefined
+  var appendTo: js.UndefOr[String] = js.native
+  var autoOpen: js.UndefOr[Boolean] = js.native
   var buttons: js.UndefOr[
     (StringDictionary[js.Function1[/* event */ js.UndefOr[Event], Unit]]) | js.Array[DialogButtonOptions]
-  ] = js.undefined
-  var classes: js.UndefOr[DialogClasses] = js.undefined
-  var closeOnEscape: js.UndefOr[Boolean] = js.undefined
-  var closeText: js.UndefOr[String] = js.undefined
-  var dialogClass: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var hide: js.UndefOr[Boolean | Double | String | DialogShowHideOptions] = js.undefined
-  var maxHeight: js.UndefOr[Double] = js.undefined
-  var maxWidth: js.UndefOr[Double] = js.undefined
-  var minHeight: js.UndefOr[Double] = js.undefined
-  var minWidth: js.UndefOr[Double] = js.undefined
-  var modal: js.UndefOr[Boolean] = js.undefined
-  var position: js.UndefOr[js.Any] = js.undefined
+  ] = js.native
+  var classes: js.UndefOr[DialogClasses] = js.native
+  var closeOnEscape: js.UndefOr[Boolean] = js.native
+  var closeText: js.UndefOr[String] = js.native
+  var dialogClass: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double | String] = js.native
+  var hide: js.UndefOr[Boolean | Double | String | DialogShowHideOptions] = js.native
+  var maxHeight: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.native
+  var modal: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[js.Any] = js.native
    // object, string or []
-  var resizable: js.UndefOr[Boolean] = js.undefined
-  var show: js.UndefOr[Boolean | Double | String | DialogShowHideOptions] = js.undefined
-  var stack: js.UndefOr[Boolean] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[js.Any] = js.undefined
+  var resizable: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean | Double | String | DialogShowHideOptions] = js.native
+  var stack: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[String] = js.native
+  var width: js.UndefOr[js.Any] = js.native
    // number or string
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object DialogOptions {
   @scala.inline
-  def apply(
-    appendTo: String = null,
-    autoOpen: js.UndefOr[Boolean] = js.undefined,
-    beforeClose: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
-    buttons: (StringDictionary[js.Function1[/* event */ js.UndefOr[Event], Unit]]) | js.Array[DialogButtonOptions] = null,
-    classes: DialogClasses = null,
-    close: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
-    closeOnEscape: js.UndefOr[Boolean] = js.undefined,
-    closeText: String = null,
-    create: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
-    dialogClass: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    drag: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
-    dragStart: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
-    dragStop: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    focus: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
-    height: Double | String = null,
-    hide: Boolean | Double | String | DialogShowHideOptions = null,
-    maxHeight: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    minHeight: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    modal: js.UndefOr[Boolean] = js.undefined,
-    open: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
-    position: js.Any = null,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    resize: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
-    resizeStart: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
-    resizeStop: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
-    show: Boolean | Double | String | DialogShowHideOptions = null,
-    stack: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    width: js.Any = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): DialogOptions = {
+  def apply(): DialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.get.asInstanceOf[js.Any])
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction2(beforeClose))
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2(close))
-    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape.get.asInstanceOf[js.Any])
-    if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (dialogClass != null) __obj.updateDynamic("dialogClass")(dialogClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2(drag))
-    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction2(dragStart))
-    if (dragStop != null) __obj.updateDynamic("dragStop")(js.Any.fromFunction2(dragStop))
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2(open))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction2(resize))
-    if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction2(resizeStart))
-    if (resizeStop != null) __obj.updateDynamic("resizeStop")(js.Any.fromFunction2(resizeStop))
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogOptions]
   }
+  @scala.inline
+  implicit class DialogOptionsOps[Self <: DialogOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppendTo(value: String): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    @scala.inline
+    def setAutoOpen(value: Boolean): Self = this.set("autoOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoOpen: Self = this.set("autoOpen", js.undefined)
+    @scala.inline
+    def setButtonsVarargs(value: DialogButtonOptions*): Self = this.set("buttons", js.Array(value :_*))
+    @scala.inline
+    def setButtons(
+      value: (StringDictionary[js.Function1[/* event */ js.UndefOr[Event], Unit]]) | js.Array[DialogButtonOptions]
+    ): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtons: Self = this.set("buttons", js.undefined)
+    @scala.inline
+    def setClasses(value: DialogClasses): Self = this.set("classes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClasses: Self = this.set("classes", js.undefined)
+    @scala.inline
+    def setCloseOnEscape(value: Boolean): Self = this.set("closeOnEscape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnEscape: Self = this.set("closeOnEscape", js.undefined)
+    @scala.inline
+    def setCloseText(value: String): Self = this.set("closeText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseText: Self = this.set("closeText", js.undefined)
+    @scala.inline
+    def setDialogClass(value: String): Self = this.set("dialogClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialogClass: Self = this.set("dialogClass", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHide(value: Boolean | Double | String | DialogShowHideOptions): Self = this.set("hide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHide: Self = this.set("hide", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModal: Self = this.set("modal", js.undefined)
+    @scala.inline
+    def setPosition(value: js.Any): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizable: Self = this.set("resizable", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean | Double | String | DialogShowHideOptions): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setStack(value: Boolean): Self = this.set("stack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStack: Self = this.set("stack", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWidth(value: js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

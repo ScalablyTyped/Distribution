@@ -11,8 +11,8 @@ The fastest Node.js library for formatting terminal text with ANSI colors~!
 | Full name          | kleur |
 | Keywords           | ansi, cli, color, colors, console, terminal |
 | # releases         | 13 |
-| # dependents       | 212 |
-| # downloads        | 173082391 |
+| # dependents       | 228 |
+| # downloads        | 181029322 |
 | # stars            | 0 |
 
 ## Links

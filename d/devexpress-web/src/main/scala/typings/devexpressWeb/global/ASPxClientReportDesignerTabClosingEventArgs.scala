@@ -18,20 +18,5 @@ class ASPxClientReportDesignerTabClosingEventArgs protected ()
     * @param readyToClose A JQuery Deferred object, which when resolved, forces the report tab to be closed. This value is assigned to the ASPxClientReportDesignerTabClosingEventArgs.ReadyToClose property.
     */
   def this(tab: typings.devexpressWeb.ASPxDesignerNavigateTab, readyToClose: JQueryDeferred[_]) = this()
-  /**
-    * Specifies whether or not the event was handled.
-    */
-  /* CompleteClass */
-  override var Handled: Boolean = js.native
-  /**
-    * Specifies the JQuery Deferred object, which when resolved, forces the report tab to be closed.
-    */
-  /* CompleteClass */
-  override var ReadyToClose: JQueryDeferred[_] = js.native
-  /**
-    * Specifies the report tab currently being processed.
-    */
-  /* CompleteClass */
-  override var Tab: typings.devexpressWeb.ASPxDesignerNavigateTab = js.native
 }
 

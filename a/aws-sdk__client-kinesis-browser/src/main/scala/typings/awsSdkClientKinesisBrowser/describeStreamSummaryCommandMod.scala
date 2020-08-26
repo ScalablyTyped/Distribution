@@ -26,16 +26,9 @@ object describeStreamSummaryCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DescribeStreamSummaryInput) = this()
-    /* CompleteClass */
-    override val input: DescribeStreamSummaryInput = js.native
     val middlewareStack: MiddlewareStack[DescribeStreamSummaryInput, DescribeStreamSummaryOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KinesisResolvedConfiguration
-    ): Handler[DescribeStreamSummaryInput, DescribeStreamSummaryOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KinesisResolvedConfiguration
     ): Handler[DescribeStreamSummaryInput, DescribeStreamSummaryOutput] = js.native
   }

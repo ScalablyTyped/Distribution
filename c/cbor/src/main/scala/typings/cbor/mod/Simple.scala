@@ -16,6 +16,7 @@ class Simple protected () extends js.Object {
 @js.native
 object Simple extends js.Object {
   def decode(`val`: Double): js.UndefOr[Null | Boolean | js.Symbol | Simple] = js.native
+  def decode(`val`: Double, has_parent: js.UndefOr[scala.Nothing], parent_indefinite: Boolean): js.UndefOr[Null | Boolean | js.Symbol | Simple] = js.native
   def decode(`val`: Double, has_parent: Boolean): js.UndefOr[Null | Boolean | js.Symbol | Simple] = js.native
   def decode(`val`: Double, has_parent: Boolean, parent_indefinite: Boolean): js.UndefOr[Null | Boolean | js.Symbol | Simple] = js.native
   def isSimple(obj: js.Any): Boolean = js.native

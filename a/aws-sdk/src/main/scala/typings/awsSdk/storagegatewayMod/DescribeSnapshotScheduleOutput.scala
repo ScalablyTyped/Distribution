@@ -34,22 +34,48 @@ trait DescribeSnapshotScheduleOutput extends js.Object {
 
 object DescribeSnapshotScheduleOutput {
   @scala.inline
-  def apply(
-    Description: Description = null,
-    RecurrenceInHours: js.UndefOr[RecurrenceInHours] = js.undefined,
-    StartAt: js.UndefOr[HourOfDay] = js.undefined,
-    Tags: Tags = null,
-    Timezone: GatewayTimezone = null,
-    VolumeARN: VolumeARN = null
-  ): DescribeSnapshotScheduleOutput = {
+  def apply(): DescribeSnapshotScheduleOutput = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(RecurrenceInHours)) __obj.updateDynamic("RecurrenceInHours")(RecurrenceInHours.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(StartAt)) __obj.updateDynamic("StartAt")(StartAt.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
-    if (VolumeARN != null) __obj.updateDynamic("VolumeARN")(VolumeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSnapshotScheduleOutput]
   }
+  @scala.inline
+  implicit class DescribeSnapshotScheduleOutputOps[Self <: DescribeSnapshotScheduleOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setRecurrenceInHours(value: RecurrenceInHours): Self = this.set("RecurrenceInHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurrenceInHours: Self = this.set("RecurrenceInHours", js.undefined)
+    @scala.inline
+    def setStartAt(value: HourOfDay): Self = this.set("StartAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartAt: Self = this.set("StartAt", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTimezone(value: GatewayTimezone): Self = this.set("Timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+    @scala.inline
+    def setVolumeARN(value: VolumeARN): Self = this.set("VolumeARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeARN: Self = this.set("VolumeARN", js.undefined)
+  }
+  
 }
 

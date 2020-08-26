@@ -10,9 +10,9 @@ BackstopJS: Catch CSS curveballs.
 | ------------------ | :-------------: |
 | Full name          | backstopjs |
 | Keywords           | - |
-| # releases         | 105 |
-| # dependents       | 19 |
-| # downloads        | 1069931 |
+| # releases         | 106 |
+| # dependents       | 20 |
+| # downloads        | 1116784 |
 | # stars            | 6 |
 
 ## Links

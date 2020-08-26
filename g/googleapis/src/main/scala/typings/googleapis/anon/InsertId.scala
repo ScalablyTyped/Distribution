@@ -13,11 +13,30 @@ trait InsertId extends js.Object {
 
 object InsertId {
   @scala.inline
-  def apply(insertId: String = null, json: SchemaJsonObject = null): InsertId = {
+  def apply(): InsertId = {
     val __obj = js.Dynamic.literal()
-    if (insertId != null) __obj.updateDynamic("insertId")(insertId.asInstanceOf[js.Any])
-    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertId]
   }
+  @scala.inline
+  implicit class InsertIdOps[Self <: InsertId] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInsertId(value: String): Self = this.set("insertId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertId: Self = this.set("insertId", js.undefined)
+    @scala.inline
+    def setJson(value: SchemaJsonObject): Self = this.set("json", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJson: Self = this.set("json", js.undefined)
+  }
+  
 }
 

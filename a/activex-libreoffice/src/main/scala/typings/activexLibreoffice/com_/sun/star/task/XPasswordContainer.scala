@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Allows to save passwords with URL-pattern, to use them later. */
+@js.native
 trait XPasswordContainer extends XInterface {
   /**
     * Save passwords in to the container.
@@ -17,7 +18,7 @@ trait XPasswordContainer extends XInterface {
     * @param Passwords The password-list.
     * @param Handler The handler to get super password to en/decrypt passwords
     */
-  def add(Url: String, UserName: String, Passwords: SeqEquiv[String], Handler: XInteractionHandler): Unit
+  def add(Url: String, UserName: String, Passwords: SeqEquiv[String], Handler: XInteractionHandler): Unit = js.native
   /**
     * Save passwords in to the container, and store them in the file.
     * @param Url URL-pattern, that will be used later to retrieve passwords.
@@ -25,14 +26,14 @@ trait XPasswordContainer extends XInterface {
     * @param Passwords The password-list.
     * @param Handler The handler to get super password to en/decrypt passwords
     */
-  def addPersistent(Url: String, UserName: String, Passwords: SeqEquiv[String], Handler: XInteractionHandler): Unit
+  def addPersistent(Url: String, UserName: String, Passwords: SeqEquiv[String], Handler: XInteractionHandler): Unit = js.native
   /**
     * Find users with passwords for the url pattern.
     * @param Url URL-pattern to retrieve password for.
     * @param Handler The handler to get super password to en/decrypt passwords
     * @returns Best matched url-pattern with user-records list.
     */
-  def find(Url: String, Handler: XInteractionHandler): UrlRecord
+  def find(Url: String, Handler: XInteractionHandler): UrlRecord = js.native
   /**
     * Find passwords for the url pattern and username.
     * @param Url URL-pattern to retrieve passwords for.
@@ -40,26 +41,26 @@ trait XPasswordContainer extends XInterface {
     * @param Handler The handler to get super password to en/decrypt passwords
     * @returns Best matched url-pattern for the username.
     */
-  def findForName(Url: String, UserName: String, Handler: XInteractionHandler): UrlRecord
+  def findForName(Url: String, UserName: String, Handler: XInteractionHandler): UrlRecord = js.native
   /**
     * Get all records from the file.
     * @returns List of url-records.
     */
-  def getAllPersistent(Handler: XInteractionHandler): SafeArray[UrlRecord]
+  def getAllPersistent(Handler: XInteractionHandler): SafeArray[UrlRecord] = js.native
   /**
     * Remove passwords for the url pattern and username.
     * @param Url URL-pattern to remove passwords for.
     * @param UserName Username to remove passwords for.
     */
-  def remove(Url: String, UserName: String): Unit
+  def remove(Url: String, UserName: String): Unit = js.native
   /** Clean the file. */
-  def removeAllPersistent(): Unit
+  def removeAllPersistent(): Unit = js.native
   /**
     * Remove passwords for the url pattern and username from the file.
     * @param Url URL-pattern to remove passwords for.
     * @param UserName Username to remove passwords for.
     */
-  def removePersistent(Url: String, UserName: String): Unit
+  def removePersistent(Url: String, UserName: String): Unit = js.native
 }
 
 object XPasswordContainer {
@@ -80,5 +81,34 @@ object XPasswordContainer {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), add = js.Any.fromFunction4(add), addPersistent = js.Any.fromFunction4(addPersistent), find = js.Any.fromFunction2(find), findForName = js.Any.fromFunction3(findForName), getAllPersistent = js.Any.fromFunction1(getAllPersistent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction2(remove), removeAllPersistent = js.Any.fromFunction0(removeAllPersistent), removePersistent = js.Any.fromFunction2(removePersistent))
     __obj.asInstanceOf[XPasswordContainer]
   }
+  @scala.inline
+  implicit class XPasswordContainerOps[Self <: XPasswordContainer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: (String, String, SeqEquiv[String], XInteractionHandler) => Unit): Self = this.set("add", js.Any.fromFunction4(value))
+    @scala.inline
+    def setAddPersistent(value: (String, String, SeqEquiv[String], XInteractionHandler) => Unit): Self = this.set("addPersistent", js.Any.fromFunction4(value))
+    @scala.inline
+    def setFind(value: (String, XInteractionHandler) => UrlRecord): Self = this.set("find", js.Any.fromFunction2(value))
+    @scala.inline
+    def setFindForName(value: (String, String, XInteractionHandler) => UrlRecord): Self = this.set("findForName", js.Any.fromFunction3(value))
+    @scala.inline
+    def setGetAllPersistent(value: XInteractionHandler => SafeArray[UrlRecord]): Self = this.set("getAllPersistent", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemove(value: (String, String) => Unit): Self = this.set("remove", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRemoveAllPersistent(value: () => Unit): Self = this.set("removeAllPersistent", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRemovePersistent(value: (String, String) => Unit): Self = this.set("removePersistent", js.Any.fromFunction2(value))
+  }
+  
 }
 

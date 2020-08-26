@@ -27,6 +27,7 @@ class AnalyticsApplication protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: AnalyticsApplicationArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: AnalyticsApplicationArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN of the Kinesis Analytics Appliation.
@@ -75,9 +76,9 @@ class AnalyticsApplication protected () extends CustomResource {
     */
   val status: Output_[String] = js.native
   /**
-    * Key-value mapping of tags for the Kinesis Analytics Application.
+    * Key-value map of tags for the Kinesis Analytics Application.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The Version of the application.
     */
@@ -95,8 +96,10 @@ object AnalyticsApplication extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): AnalyticsApplication = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AnalyticsApplication = js.native
   def get(name: String, id: Input[ID], state: AnalyticsApplicationState): AnalyticsApplication = js.native
   def get(name: String, id: Input[ID], state: AnalyticsApplicationState, opts: CustomResourceOptions): AnalyticsApplication = js.native
   /**

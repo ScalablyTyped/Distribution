@@ -1,7 +1,5 @@
 package typings.pkijs.otherPrimeInfoMod
 
-import typings.asn1js.mod.Integer
-import typings.pkijs.JsonOtherPrimeInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,24 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends OtherPrimeInfo {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var coefficient: Integer = js.native
-  /* CompleteClass */
-  override var exponent: Integer = js.native
-  /* CompleteClass */
-  override var prime: Integer = js.native
-  /**
-    * Convert JSON value into current object
-    * @param {JsonOtherPrimeInfo} json
-    */
-  /* CompleteClass */
-  override def fromJSON(json: JsonOtherPrimeInfo): Unit = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

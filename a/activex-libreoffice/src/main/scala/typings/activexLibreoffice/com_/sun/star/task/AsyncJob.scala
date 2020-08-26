@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * @see Job
   * @since OOo 1.1.2
   */
+@js.native
 trait AsyncJob
   extends XCloseable
      with XAsyncJob

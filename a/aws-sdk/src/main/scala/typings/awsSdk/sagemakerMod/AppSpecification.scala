@@ -22,15 +22,36 @@ trait AppSpecification extends js.Object {
 
 object AppSpecification {
   @scala.inline
-  def apply(
-    ImageUri: ImageUri,
-    ContainerArguments: ContainerArguments = null,
-    ContainerEntrypoint: ContainerEntrypoint = null
-  ): AppSpecification = {
+  def apply(ImageUri: ImageUri): AppSpecification = {
     val __obj = js.Dynamic.literal(ImageUri = ImageUri.asInstanceOf[js.Any])
-    if (ContainerArguments != null) __obj.updateDynamic("ContainerArguments")(ContainerArguments.asInstanceOf[js.Any])
-    if (ContainerEntrypoint != null) __obj.updateDynamic("ContainerEntrypoint")(ContainerEntrypoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppSpecification]
   }
+  @scala.inline
+  implicit class AppSpecificationOps[Self <: AppSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageUri(value: ImageUri): Self = this.set("ImageUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContainerArgumentsVarargs(value: ContainerArgument*): Self = this.set("ContainerArguments", js.Array(value :_*))
+    @scala.inline
+    def setContainerArguments(value: ContainerArguments): Self = this.set("ContainerArguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerArguments: Self = this.set("ContainerArguments", js.undefined)
+    @scala.inline
+    def setContainerEntrypointVarargs(value: ContainerEntrypointString*): Self = this.set("ContainerEntrypoint", js.Array(value :_*))
+    @scala.inline
+    def setContainerEntrypoint(value: ContainerEntrypoint): Self = this.set("ContainerEntrypoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerEntrypoint: Self = this.set("ContainerEntrypoint", js.undefined)
+  }
+  
 }
 

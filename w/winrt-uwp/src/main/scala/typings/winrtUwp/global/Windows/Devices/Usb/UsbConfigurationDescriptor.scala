@@ -9,20 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Usb.UsbConfigurationDescriptor")
 @js.native
 abstract class UsbConfigurationDescriptor ()
-  extends typings.winrtUwp.Windows.Devices.Usb.UsbConfigurationDescriptor {
-  /** Gets the bConfigurationValue field of a USB configuration descriptor. The value is the number that identifies the configuration. */
-  /* CompleteClass */
-  override var configurationValue: Double = js.native
-  /** Gets the bMaxPower field of a USB configuration descriptor. The value indicates the maximum power (in milliamp units) that the device can draw from the bus, when the device is bus-powered. */
-  /* CompleteClass */
-  override var maxPowerMilliamps: Double = js.native
-  /** Gets the D5 bit value of the bmAttributes field in the USB configuration descriptor. The value indicates whether the device can send a resume signal to wake up itself or the host system from a low power state. */
-  /* CompleteClass */
-  override var remoteWakeup: Boolean = js.native
-  /** Gets the D6 bit of the bmAttributes field in the USB configuration. This value indicates whether the device is drawing power from a local source or the bus. */
-  /* CompleteClass */
-  override var selfPowered: Boolean = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Usb.UsbConfigurationDescriptor
 
 /* static members */
 @JSGlobal("Windows.Devices.Usb.UsbConfigurationDescriptor")

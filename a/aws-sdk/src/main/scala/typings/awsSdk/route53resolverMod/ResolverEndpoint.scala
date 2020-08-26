@@ -58,34 +58,72 @@ trait ResolverEndpoint extends js.Object {
 
 object ResolverEndpoint {
   @scala.inline
-  def apply(
-    Arn: Arn = null,
-    CreationTime: Rfc3339TimeString = null,
-    CreatorRequestId: CreatorRequestId = null,
-    Direction: ResolverEndpointDirection = null,
-    HostVPCId: ResourceId = null,
-    Id: ResourceId = null,
-    IpAddressCount: js.UndefOr[IpAddressCount] = js.undefined,
-    ModificationTime: Rfc3339TimeString = null,
-    Name: Name = null,
-    SecurityGroupIds: SecurityGroupIds = null,
-    Status: ResolverEndpointStatus = null,
-    StatusMessage: StatusMessage = null
-  ): ResolverEndpoint = {
+  def apply(): ResolverEndpoint = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId.asInstanceOf[js.Any])
-    if (Direction != null) __obj.updateDynamic("Direction")(Direction.asInstanceOf[js.Any])
-    if (HostVPCId != null) __obj.updateDynamic("HostVPCId")(HostVPCId.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(IpAddressCount)) __obj.updateDynamic("IpAddressCount")(IpAddressCount.get.asInstanceOf[js.Any])
-    if (ModificationTime != null) __obj.updateDynamic("ModificationTime")(ModificationTime.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverEndpoint]
   }
+  @scala.inline
+  implicit class ResolverEndpointOps[Self <: ResolverEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Rfc3339TimeString): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setCreatorRequestId(value: CreatorRequestId): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorRequestId: Self = this.set("CreatorRequestId", js.undefined)
+    @scala.inline
+    def setDirection(value: ResolverEndpointDirection): Self = this.set("Direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("Direction", js.undefined)
+    @scala.inline
+    def setHostVPCId(value: ResourceId): Self = this.set("HostVPCId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostVPCId: Self = this.set("HostVPCId", js.undefined)
+    @scala.inline
+    def setId(value: ResourceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setIpAddressCount(value: IpAddressCount): Self = this.set("IpAddressCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddressCount: Self = this.set("IpAddressCount", js.undefined)
+    @scala.inline
+    def setModificationTime(value: Rfc3339TimeString): Self = this.set("ModificationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModificationTime: Self = this.set("ModificationTime", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: ResourceId*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: SecurityGroupIds): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setStatus(value: ResolverEndpointStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+  }
+  
 }
 

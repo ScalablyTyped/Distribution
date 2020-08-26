@@ -27,6 +27,7 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaScanConfig] = js.native
   def get(callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
   def get(params: ParamsResourceProjectsScanconfigsGet): GaxiosPromise[SchemaScanConfig] = js.native
   def get(params: ParamsResourceProjectsScanconfigsGet, callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
   def get(
@@ -57,6 +58,7 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListScanConfigsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListScanConfigsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListScanConfigsResponse] = js.native
   def list(params: ParamsResourceProjectsScanconfigsList): GaxiosPromise[SchemaListScanConfigsResponse] = js.native
   def list(
     params: ParamsResourceProjectsScanconfigsList,
@@ -89,6 +91,7 @@ class ResourceProjectsScanconfigs protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaScanConfig] = js.native
   def patch(callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanConfig] = js.native
   def patch(params: ParamsResourceProjectsScanconfigsPatch): GaxiosPromise[SchemaScanConfig] = js.native
   def patch(params: ParamsResourceProjectsScanconfigsPatch, callback: BodyResponseCallback[SchemaScanConfig]): Unit = js.native
   def patch(

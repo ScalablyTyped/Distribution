@@ -46,6 +46,7 @@ class Workbook () extends js.Object {
   	 * Add a new worksheet and return a reference to it
   	 */
   def addWorksheet(): Worksheet = js.native
+  def addWorksheet(name: js.UndefOr[scala.Nothing], options: PartialAddWorksheetOption): Worksheet = js.native
   def addWorksheet(name: String): Worksheet = js.native
   def addWorksheet(name: String, options: PartialAddWorksheetOption): Worksheet = js.native
   def clearThemes(): Unit = js.native

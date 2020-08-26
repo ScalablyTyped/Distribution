@@ -34,5 +34,28 @@ object FirewallManagerRuleGroup {
     val __obj = js.Dynamic.literal(FirewallManagerStatement = FirewallManagerStatement.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], OverrideAction = OverrideAction.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], VisibilityConfig = VisibilityConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallManagerRuleGroup]
   }
+  @scala.inline
+  implicit class FirewallManagerRuleGroupOps[Self <: FirewallManagerRuleGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFirewallManagerStatement(value: FirewallManagerStatement): Self = this.set("FirewallManagerStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOverrideAction(value: OverrideAction): Self = this.set("OverrideAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPriority(value: RulePriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVisibilityConfig(value: VisibilityConfig): Self = this.set("VisibilityConfig", value.asInstanceOf[js.Any])
+  }
+  
 }
 

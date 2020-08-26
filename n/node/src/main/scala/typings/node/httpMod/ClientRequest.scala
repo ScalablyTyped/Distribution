@@ -143,6 +143,7 @@ class ClientRequest protected () extends OutgoingMessage {
   def setNoDelay(): Unit = js.native
   def setNoDelay(noDelay: Boolean): Unit = js.native
   def setSocketKeepAlive(): Unit = js.native
+  def setSocketKeepAlive(enable: js.UndefOr[scala.Nothing], initialDelay: Double): Unit = js.native
   def setSocketKeepAlive(enable: Boolean): Unit = js.native
   def setSocketKeepAlive(enable: Boolean, initialDelay: Double): Unit = js.native
 }

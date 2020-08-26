@@ -7,43 +7,65 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AssumedRole extends js.Object {
   /**
-    * Reserved for future use.
+    * The AWS access key ID that identifies the credentials.
     */
   var accessKeyId: js.UndefOr[string] = js.native
   /**
-    * Reserved for future use.
+    * The unique identifier for the AWS account that owns the entity that was used to get the credentials.
     */
   var accountId: js.UndefOr[string] = js.native
   /**
-    * Reserved for future use.
+    * The Amazon Resource Name (ARN) of the entity that was used to get the credentials.
     */
   var arn: js.UndefOr[string] = js.native
   /**
-    * Reserved for future use.
+    * The unique identifier for the entity that was used to get the credentials.
     */
   var principalId: js.UndefOr[string] = js.native
   /**
-    * Reserved for future use.
+    * The details of the session that was created for the credentials, including the entity that issued the session.
     */
   var sessionContext: js.UndefOr[SessionContext] = js.native
 }
 
 object AssumedRole {
   @scala.inline
-  def apply(
-    accessKeyId: string = null,
-    accountId: string = null,
-    arn: string = null,
-    principalId: string = null,
-    sessionContext: SessionContext = null
-  ): AssumedRole = {
+  def apply(): AssumedRole = {
     val __obj = js.Dynamic.literal()
-    if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId.asInstanceOf[js.Any])
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (principalId != null) __obj.updateDynamic("principalId")(principalId.asInstanceOf[js.Any])
-    if (sessionContext != null) __obj.updateDynamic("sessionContext")(sessionContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumedRole]
   }
+  @scala.inline
+  implicit class AssumedRoleOps[Self <: AssumedRole] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessKeyId(value: string): Self = this.set("accessKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKeyId: Self = this.set("accessKeyId", js.undefined)
+    @scala.inline
+    def setAccountId(value: string): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setArn(value: string): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setPrincipalId(value: string): Self = this.set("principalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalId: Self = this.set("principalId", js.undefined)
+    @scala.inline
+    def setSessionContext(value: SessionContext): Self = this.set("sessionContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionContext: Self = this.set("sessionContext", js.undefined)
+  }
+  
 }
 

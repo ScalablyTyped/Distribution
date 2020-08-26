@@ -153,6 +153,7 @@ trait API extends js.Object {
     *   which contains the user's sign-in status and the session object.
     */
   def getLoginStatus(): IPromise[ILoginStatus] = js.native
+  def getLoginStatus(callback: js.UndefOr[scala.Nothing], force: Boolean): IPromise[ILoginStatus] = js.native
   def getLoginStatus(callback: js.Function1[/* status */ ILoginStatus, Unit]): IPromise[ILoginStatus] = js.native
   def getLoginStatus(callback: js.Function1[/* status */ ILoginStatus, Unit], force: Boolean): IPromise[ILoginStatus] = js.native
   /**

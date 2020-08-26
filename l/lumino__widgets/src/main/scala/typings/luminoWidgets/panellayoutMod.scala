@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/panellayout", JSImport.Namespace)
+@JSImport("@lumino/widgets/types/panellayout", JSImport.Namespace)
 @js.native
 object panellayoutMod extends js.Object {
   @js.native

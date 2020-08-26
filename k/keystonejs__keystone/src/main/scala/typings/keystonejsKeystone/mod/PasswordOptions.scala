@@ -6,37 +6,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.keystonejsKeystone.mod.AllFieldsOptions because Already inherited */ trait PasswordOptions extends BaseFieldOptions {
-  var minLength: Double
-  var rejectCommon: Boolean
-  var workFactor: Double
+- typings.keystonejsKeystone.mod.AllFieldsOptions because Already inherited */ @js.native
+trait PasswordOptions extends BaseFieldOptions {
+  var minLength: Double = js.native
+  var rejectCommon: Boolean = js.native
+  var workFactor: Double = js.native
 }
 
 object PasswordOptions {
   @scala.inline
-  def apply(
-    minLength: Double,
-    rejectCommon: Boolean,
-    `type`: FieldType,
-    workFactor: Double,
-    access: Access = null,
-    defaultValue: Boolean | DefaultValueFunction = null,
-    hooks: Hooks = null,
-    isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    schemaDoc: String = null
-  ): PasswordOptions = {
+  def apply(minLength: Double, rejectCommon: Boolean, `type`: FieldType, workFactor: Double): PasswordOptions = {
     val __obj = js.Dynamic.literal(minLength = minLength.asInstanceOf[js.Any], rejectCommon = rejectCommon.asInstanceOf[js.Any], workFactor = workFactor.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordOptions]
   }
+  @scala.inline
+  implicit class PasswordOptionsOps[Self <: PasswordOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRejectCommon(value: Boolean): Self = this.set("rejectCommon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkFactor(value: Double): Self = this.set("workFactor", value.asInstanceOf[js.Any])
+  }
+  
 }
 

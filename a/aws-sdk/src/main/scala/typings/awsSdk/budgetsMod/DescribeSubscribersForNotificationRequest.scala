@@ -30,17 +30,36 @@ trait DescribeSubscribersForNotificationRequest extends js.Object {
 
 object DescribeSubscribersForNotificationRequest {
   @scala.inline
-  def apply(
-    AccountId: AccountId,
-    BudgetName: BudgetName,
-    Notification: Notification,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: GenericString = null
-  ): DescribeSubscribersForNotificationRequest = {
+  def apply(AccountId: AccountId, BudgetName: BudgetName, Notification: Notification): DescribeSubscribersForNotificationRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BudgetName = BudgetName.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSubscribersForNotificationRequest]
   }
+  @scala.inline
+  implicit class DescribeSubscribersForNotificationRequestOps[Self <: DescribeSubscribersForNotificationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBudgetName(value: BudgetName): Self = this.set("BudgetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotification(value: Notification): Self = this.set("Notification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: GenericString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

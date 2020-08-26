@@ -4,19 +4,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TargetPoolInstanceHealth extends js.Object {
-  var healthStatus: js.UndefOr[js.Array[HealthStatus]] = js.undefined
+  var healthStatus: js.UndefOr[js.Array[HealthStatus]] = js.native
   /** [Output Only] Type of resource. Always compute#targetPoolInstanceHealth when checking the health of an instance. */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
 }
 
 object TargetPoolInstanceHealth {
   @scala.inline
-  def apply(healthStatus: js.Array[HealthStatus] = null, kind: String = null): TargetPoolInstanceHealth = {
+  def apply(): TargetPoolInstanceHealth = {
     val __obj = js.Dynamic.literal()
-    if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetPoolInstanceHealth]
   }
+  @scala.inline
+  implicit class TargetPoolInstanceHealthOps[Self <: TargetPoolInstanceHealth] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHealthStatusVarargs(value: HealthStatus*): Self = this.set("healthStatus", js.Array(value :_*))
+    @scala.inline
+    def setHealthStatus(value: js.Array[HealthStatus]): Self = this.set("healthStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthStatus: Self = this.set("healthStatus", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

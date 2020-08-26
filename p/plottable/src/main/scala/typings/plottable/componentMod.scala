@@ -120,7 +120,15 @@ object componentMod extends js.Object {
       * @returns {Component} The calling Component.
       */
     def computeLayout(): this.type = js.native
+    def computeLayout(
+      origin: js.UndefOr[scala.Nothing],
+      availableWidth: js.UndefOr[scala.Nothing],
+      availableHeight: Double
+    ): this.type = js.native
+    def computeLayout(origin: js.UndefOr[scala.Nothing], availableWidth: Double): this.type = js.native
+    def computeLayout(origin: js.UndefOr[scala.Nothing], availableWidth: Double, availableHeight: Double): this.type = js.native
     def computeLayout(origin: Point): this.type = js.native
+    def computeLayout(origin: Point, availableWidth: js.UndefOr[scala.Nothing], availableHeight: Double): this.type = js.native
     def computeLayout(origin: Point, availableWidth: Double): this.type = js.native
     def computeLayout(origin: Point, availableWidth: Double, availableHeight: Double): this.type = js.native
     /**
@@ -314,6 +322,7 @@ object componentMod extends js.Object {
       * @param {number} [originY] top offset in pixels
       */
     def setBounds(width: Double, height: Double): this.type = js.native
+    def setBounds(width: Double, height: Double, originX: js.UndefOr[scala.Nothing], originY: Double): this.type = js.native
     def setBounds(width: Double, height: Double, originX: Double): this.type = js.native
     def setBounds(width: Double, height: Double, originX: Double, originY: Double): this.type = js.native
     /**

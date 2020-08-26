@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-mentions/lib/util", "omit")
+@JSImport("rc-mentions/es/util", "omit")
 @js.native
 object omit extends TopLevel[OmitFunc]
 

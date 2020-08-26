@@ -53,6 +53,8 @@ trait Matchers
   def toThrow(): Boolean = js.native
   def toThrow(expected: js.Any): Boolean = js.native
   def toThrowError(): Boolean = js.native
+  def toThrowError(expected: js.UndefOr[scala.Nothing], message: String): Boolean = js.native
+  def toThrowError(expected: js.UndefOr[scala.Nothing], message: RegExp): Boolean = js.native
   def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error]): Boolean = js.native
   def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error], message: String): Boolean = js.native
   def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error], message: RegExp): Boolean = js.native

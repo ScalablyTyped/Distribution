@@ -29,16 +29,34 @@ trait SchemaProjectCreationStatus extends js.Object {
 
 object SchemaProjectCreationStatus {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    gettable: js.UndefOr[Boolean] = js.undefined,
-    ready: js.UndefOr[Boolean] = js.undefined
-  ): SchemaProjectCreationStatus = {
+  def apply(): SchemaProjectCreationStatus = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(gettable)) __obj.updateDynamic("gettable")(gettable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProjectCreationStatus]
   }
+  @scala.inline
+  implicit class SchemaProjectCreationStatusOps[Self <: SchemaProjectCreationStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setGettable(value: Boolean): Self = this.set("gettable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGettable: Self = this.set("gettable", js.undefined)
+    @scala.inline
+    def setReady(value: Boolean): Self = this.set("ready", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReady: Self = this.set("ready", js.undefined)
+  }
+  
 }
 

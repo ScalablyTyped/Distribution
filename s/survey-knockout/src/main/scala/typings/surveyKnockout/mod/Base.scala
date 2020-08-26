@@ -41,6 +41,7 @@ class Base () extends js.Object {
   /* protected */ def createLocalizableString(name: String, owner: ILocalizableOwner): LocalizableString = js.native
   /* protected */ def createLocalizableString(name: String, owner: ILocalizableOwner, useMarkDown: Boolean): LocalizableString = js.native
   /* protected */ def createNewArray(name: String): js.Array[_] = js.native
+  /* protected */ def createNewArray(name: String, onPush: js.UndefOr[scala.Nothing], onRemove: js.Any): js.Array[_] = js.native
   /* protected */ def createNewArray(name: String, onPush: js.Any): js.Array[_] = js.native
   /* protected */ def createNewArray(name: String, onPush: js.Any, onRemove: js.Any): js.Array[_] = js.native
   /* protected */ def createNewArrayCore(name: String): js.Array[_] = js.native
@@ -88,6 +89,13 @@ class Base () extends js.Object {
   /* protected */ def onPropertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any): Unit = js.native
   def onPropertyValueChangedCallback(name: String, oldValue: js.Any, newValue: js.Any, sender: Base, arrayChanges: ArrayChanges): Unit = js.native
   /* protected */ def propertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any): Unit = js.native
+  /* protected */ def propertyValueChanged(
+    name: String,
+    oldValue: js.Any,
+    newValue: js.Any,
+    arrayChanges: js.UndefOr[scala.Nothing],
+    target: Base
+  ): Unit = js.native
   /* protected */ def propertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any, arrayChanges: ArrayChanges): Unit = js.native
   /* protected */ def propertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any, arrayChanges: ArrayChanges, target: Base): Unit = js.native
   /**

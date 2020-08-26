@@ -14,6 +14,7 @@ object mediumMod extends js.Object {
   def createMedium[T](): SideMedium[T] = js.native
   def createMedium[T](defaults: T): SideMedium[T] = js.native
   def createMedium[T](defaults: T, middleware: MiddlewareCallback[T]): SideMedium[T] = js.native
+  def createMedium[T](defaults: js.UndefOr[scala.Nothing], middleware: MiddlewareCallback[T]): SideMedium[T] = js.native
   def createSidecarMedium(): ReadonlySideCarMedium = js.native
   def createSidecarMedium(options: SideCarMediumOptions): ReadonlySideCarMedium = js.native
 }

@@ -63,6 +63,7 @@ trait Envelope extends js.Object {
     *   releasing the envelope
     */
   def play(unit: js.Object): Unit = js.native
+  def play(unit: js.Object, startTime: js.UndefOr[scala.Nothing], sustainTime: Double): Unit = js.native
   def play(unit: js.Object, startTime: Double): Unit = js.native
   def play(unit: js.Object, startTime: Double, sustainTime: Double): Unit = js.native
   /**
@@ -132,7 +133,16 @@ trait Envelope extends js.Object {
     *   (defaults to 0)
     */
   def setADSR(attackTime: Double): Unit = js.native
+  def setADSR(
+    attackTime: Double,
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: js.UndefOr[scala.Nothing], susRatio: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: js.UndefOr[scala.Nothing], susRatio: Double, releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Double, susRatio: js.UndefOr[scala.Nothing], releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
   /**

@@ -56,24 +56,50 @@ trait SchemaOrgPolicy extends js.Object {
 
 object SchemaOrgPolicy {
   @scala.inline
-  def apply(
-    booleanPolicy: SchemaBooleanPolicy = null,
-    constraint: String = null,
-    etag: String = null,
-    listPolicy: SchemaListPolicy = null,
-    restoreDefault: SchemaRestoreDefault = null,
-    updateTime: String = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): SchemaOrgPolicy = {
+  def apply(): SchemaOrgPolicy = {
     val __obj = js.Dynamic.literal()
-    if (booleanPolicy != null) __obj.updateDynamic("booleanPolicy")(booleanPolicy.asInstanceOf[js.Any])
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (listPolicy != null) __obj.updateDynamic("listPolicy")(listPolicy.asInstanceOf[js.Any])
-    if (restoreDefault != null) __obj.updateDynamic("restoreDefault")(restoreDefault.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrgPolicy]
   }
+  @scala.inline
+  implicit class SchemaOrgPolicyOps[Self <: SchemaOrgPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBooleanPolicy(value: SchemaBooleanPolicy): Self = this.set("booleanPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBooleanPolicy: Self = this.set("booleanPolicy", js.undefined)
+    @scala.inline
+    def setConstraint(value: String): Self = this.set("constraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraint: Self = this.set("constraint", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setListPolicy(value: SchemaListPolicy): Self = this.set("listPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListPolicy: Self = this.set("listPolicy", js.undefined)
+    @scala.inline
+    def setRestoreDefault(value: SchemaRestoreDefault): Self = this.set("restoreDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestoreDefault: Self = this.set("restoreDefault", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

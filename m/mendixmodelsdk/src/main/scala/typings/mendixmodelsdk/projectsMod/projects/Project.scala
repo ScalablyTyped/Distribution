@@ -42,10 +42,10 @@ class Project protected () extends StructuralUnit {
   @JSName("projectDocuments")
   var projectDocuments_FProject: IList[IProjectDocument] = js.native
   def isSystemProject: Boolean = js.native
-  def isSystemProject(newValue: Boolean): js.Any = js.native
+  def isSystemProject_=(newValue: Boolean): Unit = js.native
   def modules: IList[IModule] = js.native
   def projectConversion: IProjectConversion = js.native
-  def projectConversion(newValue: IProjectConversion): js.Any = js.native
+  def projectConversion_=(newValue: IProjectConversion): Unit = js.native
   def projectDocuments: IList[IProjectDocument] = js.native
 }
 

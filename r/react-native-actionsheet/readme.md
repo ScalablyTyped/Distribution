@@ -11,8 +11,8 @@ Cross platform ActionSheet. This component implements a custom ActionSheet  and 
 | Full name          | react-native-actionsheet |
 | Keywords           | actionsheet, action sheet, react-native, react-native-action-sheet, react-native-actionsheet, custom-action-sheet |
 | # releases         | 4 |
-| # dependents       | 21 |
-| # downloads        | 920355 |
+| # dependents       | 22 |
+| # downloads        | 942046 |
 | # stars            | 5 |
 
 ## Links

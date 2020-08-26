@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugins
 
-Typings are for version 0.9.8
+Typings are for version 0.14.0
 
 ## Library description:
 Default Jimp plugin.
@@ -10,9 +10,9 @@ Default Jimp plugin.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugins |
 | Keywords           | - |
-| # releases         | 73 |
+| # releases         | 72 |
 | # dependents       | 1 |
-| # downloads        | 14117913 |
+| # downloads        | 14490405 |
 | # stars            | 0 |
 
 ## Links

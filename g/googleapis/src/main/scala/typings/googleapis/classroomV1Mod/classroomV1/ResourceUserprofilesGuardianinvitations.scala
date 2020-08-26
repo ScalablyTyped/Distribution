@@ -51,6 +51,7 @@ class ResourceUserprofilesGuardianinvitations protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaGuardianInvitation] = js.native
   def create(callback: BodyResponseCallback[SchemaGuardianInvitation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGuardianInvitation] = js.native
   def create(params: ParamsResourceUserprofilesGuardianinvitationsCreate): GaxiosPromise[SchemaGuardianInvitation] = js.native
   def create(
     params: ParamsResourceUserprofilesGuardianinvitationsCreate,
@@ -92,6 +93,7 @@ class ResourceUserprofilesGuardianinvitations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGuardianInvitation] = js.native
   def get(callback: BodyResponseCallback[SchemaGuardianInvitation]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGuardianInvitation] = js.native
   def get(params: ParamsResourceUserprofilesGuardianinvitationsGet): GaxiosPromise[SchemaGuardianInvitation] = js.native
   def get(
     params: ParamsResourceUserprofilesGuardianinvitationsGet,
@@ -138,6 +140,7 @@ class ResourceUserprofilesGuardianinvitations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListGuardianInvitationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListGuardianInvitationsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListGuardianInvitationsResponse] = js.native
   def list(params: ParamsResourceUserprofilesGuardianinvitationsList): GaxiosPromise[SchemaListGuardianInvitationsResponse] = js.native
   def list(
     params: ParamsResourceUserprofilesGuardianinvitationsList,
@@ -184,6 +187,7 @@ class ResourceUserprofilesGuardianinvitations protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaGuardianInvitation] = js.native
   def patch(callback: BodyResponseCallback[SchemaGuardianInvitation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGuardianInvitation] = js.native
   def patch(params: ParamsResourceUserprofilesGuardianinvitationsPatch): GaxiosPromise[SchemaGuardianInvitation] = js.native
   def patch(
     params: ParamsResourceUserprofilesGuardianinvitationsPatch,

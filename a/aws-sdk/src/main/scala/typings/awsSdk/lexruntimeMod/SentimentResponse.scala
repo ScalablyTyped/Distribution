@@ -18,11 +18,30 @@ trait SentimentResponse extends js.Object {
 
 object SentimentResponse {
   @scala.inline
-  def apply(sentimentLabel: SentimentLabel = null, sentimentScore: SentimentScore = null): SentimentResponse = {
+  def apply(): SentimentResponse = {
     val __obj = js.Dynamic.literal()
-    if (sentimentLabel != null) __obj.updateDynamic("sentimentLabel")(sentimentLabel.asInstanceOf[js.Any])
-    if (sentimentScore != null) __obj.updateDynamic("sentimentScore")(sentimentScore.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentimentResponse]
   }
+  @scala.inline
+  implicit class SentimentResponseOps[Self <: SentimentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSentimentLabel(value: SentimentLabel): Self = this.set("sentimentLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSentimentLabel: Self = this.set("sentimentLabel", js.undefined)
+    @scala.inline
+    def setSentimentScore(value: SentimentScore): Self = this.set("sentimentScore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSentimentScore: Self = this.set("sentimentScore", js.undefined)
+  }
+  
 }
 

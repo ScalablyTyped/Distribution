@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RotateOptions extends js.Object {
-  var quality: js.UndefOr[Double] = js.undefined
+  var quality: js.UndefOr[Double] = js.native
 }
 
 object RotateOptions {
   @scala.inline
-  def apply(quality: js.UndefOr[Double] = js.undefined): RotateOptions = {
+  def apply(): RotateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotateOptions]
   }
+  @scala.inline
+  implicit class RotateOptionsOps[Self <: RotateOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuality: Self = this.set("quality", js.undefined)
+  }
+  
 }
 

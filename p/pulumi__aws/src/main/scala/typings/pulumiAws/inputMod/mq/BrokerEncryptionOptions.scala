@@ -19,11 +19,30 @@ trait BrokerEncryptionOptions extends js.Object {
 
 object BrokerEncryptionOptions {
   @scala.inline
-  def apply(kmsKeyId: Input[String] = null, useAwsOwnedKey: Input[Boolean] = null): BrokerEncryptionOptions = {
+  def apply(): BrokerEncryptionOptions = {
     val __obj = js.Dynamic.literal()
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (useAwsOwnedKey != null) __obj.updateDynamic("useAwsOwnedKey")(useAwsOwnedKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerEncryptionOptions]
   }
+  @scala.inline
+  implicit class BrokerEncryptionOptionsOps[Self <: BrokerEncryptionOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setUseAwsOwnedKey(value: Input[Boolean]): Self = this.set("useAwsOwnedKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseAwsOwnedKey: Self = this.set("useAwsOwnedKey", js.undefined)
+  }
+  
 }
 

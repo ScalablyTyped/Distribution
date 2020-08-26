@@ -1,5 +1,13 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`awaiting-feature-creation-info`
+import typings.arcgisJsApi.arcgisJsApiStrings.`awaiting-feature-to-create`
+import typings.arcgisJsApi.arcgisJsApiStrings.`awaiting-feature-to-update`
+import typings.arcgisJsApi.arcgisJsApiStrings.`awaiting-update-feature-candidate`
+import typings.arcgisJsApi.arcgisJsApiStrings.`editing-existing-feature`
+import typings.arcgisJsApi.arcgisJsApiStrings.`editing-new-feature`
+import typings.arcgisJsApi.arcgisJsApiStrings.disabled
+import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -92,7 +100,7 @@ trait EditorViewModel extends Accessor {
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: ready | disabled | `editing-new-feature` | `editing-existing-feature` | `awaiting-update-feature-candidate` | `awaiting-feature-creation-info` | `awaiting-feature-to-update` | `awaiting-feature-to-create` = js.native
   /**
     * When `true`, there is at least one edit request being processed.
     *

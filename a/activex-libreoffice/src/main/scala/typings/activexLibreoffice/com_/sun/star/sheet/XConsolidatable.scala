@@ -12,19 +12,20 @@ import scala.scalajs.js.annotation._
   * Consolidation combines the cells of multiple cell ranges, using a specific function.
   * @deprecated Deprecated
   */
+@js.native
 trait XConsolidatable extends XInterface {
   /**
     * consolidates data from several cell ranges, using the settings in the passed descriptor.
     * @param xDescriptor the descriptor used to perform the consolidation.
     * @see com.sun.star.sheet.ConsolidationDescriptor
     */
-  def consolidate(xDescriptor: XConsolidationDescriptor): Unit
+  def consolidate(xDescriptor: XConsolidationDescriptor): Unit = js.native
   /**
     * creates a consolidation descriptor.
     * @param bEmpty `TRUE` leaves the descriptor empty, `FALSE` fills it with the settings from the last consolidation action.
     * @see com.sun.star.sheet.ConsolidationDescriptor
     */
-  def createConsolidationDescriptor(bEmpty: Boolean): XConsolidationDescriptor
+  def createConsolidationDescriptor(bEmpty: Boolean): XConsolidationDescriptor = js.native
 }
 
 object XConsolidatable {
@@ -39,5 +40,22 @@ object XConsolidatable {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), consolidate = js.Any.fromFunction1(consolidate), createConsolidationDescriptor = js.Any.fromFunction1(createConsolidationDescriptor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XConsolidatable]
   }
+  @scala.inline
+  implicit class XConsolidatableOps[Self <: XConsolidatable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsolidate(value: XConsolidationDescriptor => Unit): Self = this.set("consolidate", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCreateConsolidationDescriptor(value: Boolean => XConsolidationDescriptor): Self = this.set("createConsolidationDescriptor", js.Any.fromFunction1(value))
+  }
+  
 }
 

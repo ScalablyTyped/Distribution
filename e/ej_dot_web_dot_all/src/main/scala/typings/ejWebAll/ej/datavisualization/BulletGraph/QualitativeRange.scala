@@ -4,33 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QualitativeRange extends js.Object {
   /** Specifies the ending range to which the qualitative ranges will render.
     * @Default {3}
     */
-  var rangeEnd: js.UndefOr[Double] = js.undefined
+  var rangeEnd: js.UndefOr[Double] = js.native
   /** Specifies the opacity for the qualitative ranges.
     * @Default {1}
     */
-  var rangeOpacity: js.UndefOr[Double] = js.undefined
+  var rangeOpacity: js.UndefOr[Double] = js.native
   /** Specifies the stroke for the qualitative ranges.
     * @Default {null}
     */
-  var rangeStroke: js.UndefOr[String] = js.undefined
+  var rangeStroke: js.UndefOr[String] = js.native
 }
 
 object QualitativeRange {
   @scala.inline
-  def apply(
-    rangeEnd: js.UndefOr[Double] = js.undefined,
-    rangeOpacity: js.UndefOr[Double] = js.undefined,
-    rangeStroke: String = null
-  ): QualitativeRange = {
+  def apply(): QualitativeRange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(rangeEnd)) __obj.updateDynamic("rangeEnd")(rangeEnd.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rangeOpacity)) __obj.updateDynamic("rangeOpacity")(rangeOpacity.get.asInstanceOf[js.Any])
-    if (rangeStroke != null) __obj.updateDynamic("rangeStroke")(rangeStroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[QualitativeRange]
   }
+  @scala.inline
+  implicit class QualitativeRangeOps[Self <: QualitativeRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRangeEnd(value: Double): Self = this.set("rangeEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeEnd: Self = this.set("rangeEnd", js.undefined)
+    @scala.inline
+    def setRangeOpacity(value: Double): Self = this.set("rangeOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeOpacity: Self = this.set("rangeOpacity", js.undefined)
+    @scala.inline
+    def setRangeStroke(value: String): Self = this.set("rangeStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeStroke: Self = this.set("rangeStroke", js.undefined)
+  }
+  
 }
 

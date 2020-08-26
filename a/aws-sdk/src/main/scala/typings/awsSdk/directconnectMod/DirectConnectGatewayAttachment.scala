@@ -38,24 +38,50 @@ trait DirectConnectGatewayAttachment extends js.Object {
 
 object DirectConnectGatewayAttachment {
   @scala.inline
-  def apply(
-    attachmentState: DirectConnectGatewayAttachmentState = null,
-    attachmentType: DirectConnectGatewayAttachmentType = null,
-    directConnectGatewayId: DirectConnectGatewayId = null,
-    stateChangeError: StateChangeError = null,
-    virtualInterfaceId: VirtualInterfaceId = null,
-    virtualInterfaceOwnerAccount: OwnerAccount = null,
-    virtualInterfaceRegion: VirtualInterfaceRegion = null
-  ): DirectConnectGatewayAttachment = {
+  def apply(): DirectConnectGatewayAttachment = {
     val __obj = js.Dynamic.literal()
-    if (attachmentState != null) __obj.updateDynamic("attachmentState")(attachmentState.asInstanceOf[js.Any])
-    if (attachmentType != null) __obj.updateDynamic("attachmentType")(attachmentType.asInstanceOf[js.Any])
-    if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId.asInstanceOf[js.Any])
-    if (stateChangeError != null) __obj.updateDynamic("stateChangeError")(stateChangeError.asInstanceOf[js.Any])
-    if (virtualInterfaceId != null) __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId.asInstanceOf[js.Any])
-    if (virtualInterfaceOwnerAccount != null) __obj.updateDynamic("virtualInterfaceOwnerAccount")(virtualInterfaceOwnerAccount.asInstanceOf[js.Any])
-    if (virtualInterfaceRegion != null) __obj.updateDynamic("virtualInterfaceRegion")(virtualInterfaceRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectConnectGatewayAttachment]
   }
+  @scala.inline
+  implicit class DirectConnectGatewayAttachmentOps[Self <: DirectConnectGatewayAttachment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentState(value: DirectConnectGatewayAttachmentState): Self = this.set("attachmentState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentState: Self = this.set("attachmentState", js.undefined)
+    @scala.inline
+    def setAttachmentType(value: DirectConnectGatewayAttachmentType): Self = this.set("attachmentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentType: Self = this.set("attachmentType", js.undefined)
+    @scala.inline
+    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = this.set("directConnectGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectConnectGatewayId: Self = this.set("directConnectGatewayId", js.undefined)
+    @scala.inline
+    def setStateChangeError(value: StateChangeError): Self = this.set("stateChangeError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateChangeError: Self = this.set("stateChangeError", js.undefined)
+    @scala.inline
+    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = this.set("virtualInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualInterfaceId: Self = this.set("virtualInterfaceId", js.undefined)
+    @scala.inline
+    def setVirtualInterfaceOwnerAccount(value: OwnerAccount): Self = this.set("virtualInterfaceOwnerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualInterfaceOwnerAccount: Self = this.set("virtualInterfaceOwnerAccount", js.undefined)
+    @scala.inline
+    def setVirtualInterfaceRegion(value: VirtualInterfaceRegion): Self = this.set("virtualInterfaceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualInterfaceRegion: Self = this.set("virtualInterfaceRegion", js.undefined)
+  }
+  
 }
 

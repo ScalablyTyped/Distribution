@@ -14,10 +14,26 @@ trait InstanceAssociationOutputLocation extends js.Object {
 
 object InstanceAssociationOutputLocation {
   @scala.inline
-  def apply(S3Location: S3OutputLocation = null): InstanceAssociationOutputLocation = {
+  def apply(): InstanceAssociationOutputLocation = {
     val __obj = js.Dynamic.literal()
-    if (S3Location != null) __obj.updateDynamic("S3Location")(S3Location.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceAssociationOutputLocation]
   }
+  @scala.inline
+  implicit class InstanceAssociationOutputLocationOps[Self <: InstanceAssociationOutputLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3Location(value: S3OutputLocation): Self = this.set("S3Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Location: Self = this.set("S3Location", js.undefined)
+  }
+  
 }
 

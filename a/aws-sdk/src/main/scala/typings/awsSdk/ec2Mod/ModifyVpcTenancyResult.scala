@@ -14,10 +14,26 @@ trait ModifyVpcTenancyResult extends js.Object {
 
 object ModifyVpcTenancyResult {
   @scala.inline
-  def apply(ReturnValue: js.UndefOr[Boolean] = js.undefined): ModifyVpcTenancyResult = {
+  def apply(): ModifyVpcTenancyResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ReturnValue)) __obj.updateDynamic("ReturnValue")(ReturnValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcTenancyResult]
   }
+  @scala.inline
+  implicit class ModifyVpcTenancyResultOps[Self <: ModifyVpcTenancyResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReturnValue(value: Boolean): Self = this.set("ReturnValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnValue: Self = this.set("ReturnValue", js.undefined)
+  }
+  
 }
 

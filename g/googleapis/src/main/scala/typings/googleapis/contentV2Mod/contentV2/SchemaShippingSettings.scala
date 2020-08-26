@@ -28,16 +28,38 @@ trait SchemaShippingSettings extends js.Object {
 
 object SchemaShippingSettings {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    postalCodeGroups: js.Array[SchemaPostalCodeGroup] = null,
-    services: js.Array[SchemaService] = null
-  ): SchemaShippingSettings = {
+  def apply(): SchemaShippingSettings = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (postalCodeGroups != null) __obj.updateDynamic("postalCodeGroups")(postalCodeGroups.asInstanceOf[js.Any])
-    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaShippingSettings]
   }
+  @scala.inline
+  implicit class SchemaShippingSettingsOps[Self <: SchemaShippingSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setPostalCodeGroupsVarargs(value: SchemaPostalCodeGroup*): Self = this.set("postalCodeGroups", js.Array(value :_*))
+    @scala.inline
+    def setPostalCodeGroups(value: js.Array[SchemaPostalCodeGroup]): Self = this.set("postalCodeGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostalCodeGroups: Self = this.set("postalCodeGroups", js.undefined)
+    @scala.inline
+    def setServicesVarargs(value: SchemaService*): Self = this.set("services", js.Array(value :_*))
+    @scala.inline
+    def setServices(value: js.Array[SchemaService]): Self = this.set("services", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServices: Self = this.set("services", js.undefined)
+  }
+  
 }
 

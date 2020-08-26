@@ -23,6 +23,7 @@ object arrayMod extends js.Object {
   def findIndex(arr: js.Array[_], func: js.Function0[Unit]): Double = js.native
   def includes(arr: js.Array[_], obj: js.Any): Boolean = js.native
   def isSorted(arr: js.Array[_]): Boolean = js.native
+  def isSorted(arr: js.Array[_], opt_func: js.UndefOr[scala.Nothing], opt_strict: Boolean): Boolean = js.native
   def isSorted(arr: js.Array[_], opt_func: js.Function0[Unit]): Boolean = js.native
   def isSorted(arr: js.Array[_], opt_func: js.Function0[Unit], opt_strict: Boolean): Boolean = js.native
   def linearFindNearest(arr: js.Array[Double], target: Double, direction: Double): Double = js.native

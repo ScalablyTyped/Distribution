@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "acme-client" : "3.3.1"
+      "acme-client" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "acme-client" : "3.3.1"
+      "acme-client" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

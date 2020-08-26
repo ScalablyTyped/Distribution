@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class TransactionProcessorError protected () extends js.Object {
   protected def this(message: String) = this()
+  protected def this(message: js.UndefOr[scala.Nothing], extendedData: Buffer) = this()
+  protected def this(message: js.UndefOr[scala.Nothing], extendedData: Uint8Array) = this()
   protected def this(message: String, extendedData: Buffer) = this()
   protected def this(message: String, extendedData: Uint8Array) = this()
 }

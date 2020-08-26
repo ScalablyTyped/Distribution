@@ -13,6 +13,12 @@ class IfStmt_ protected () extends Statement {
   def this(
     condition: Expression,
     trueCase: js.Array[Statement],
+    falseCase: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    condition: Expression,
+    trueCase: js.Array[Statement],
     falseCase: js.Array[Statement],
     sourceSpan: ParseSourceSpan
   ) = this()

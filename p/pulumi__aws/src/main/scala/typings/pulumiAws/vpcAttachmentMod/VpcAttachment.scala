@@ -37,7 +37,7 @@ class VpcAttachment protected () extends CustomResource {
   /**
     * Key-value tags for the EC2 Transit Gateway VPC Attachment.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association default route table. This cannot be configured or perform drift detection with Resource Access Manager shared EC2 Transit Gateways. Default value: `true`.
     */
@@ -71,8 +71,10 @@ object VpcAttachment extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): VpcAttachment = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcAttachment = js.native
   def get(name: String, id: Input[ID], state: VpcAttachmentState): VpcAttachment = js.native
   def get(name: String, id: Input[ID], state: VpcAttachmentState, opts: CustomResourceOptions): VpcAttachment = js.native
   /**

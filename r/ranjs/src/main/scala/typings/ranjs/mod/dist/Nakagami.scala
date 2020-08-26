@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Nakagami ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Nakagami] {
   def this(m: Double) = this()
+  def this(m: js.UndefOr[scala.Nothing], omega: Double) = this()
   def this(m: Double, omega: Double) = this()
 }
 

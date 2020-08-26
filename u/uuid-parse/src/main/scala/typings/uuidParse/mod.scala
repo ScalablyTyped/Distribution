@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def parse(id: String): Buffer = js.native
+  def parse(id: String, buffer: js.UndefOr[scala.Nothing], offset: Double): Buffer = js.native
   def parse(id: String, buffer: js.Array[_]): Buffer = js.native
   def parse(id: String, buffer: js.Array[_], offset: Double): Buffer = js.native
   def parse(id: String, buffer: Buffer): Buffer = js.native

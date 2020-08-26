@@ -18,11 +18,30 @@ trait CreatePlatformVersionResult extends js.Object {
 
 object CreatePlatformVersionResult {
   @scala.inline
-  def apply(Builder: Builder = null, PlatformSummary: PlatformSummary = null): CreatePlatformVersionResult = {
+  def apply(): CreatePlatformVersionResult = {
     val __obj = js.Dynamic.literal()
-    if (Builder != null) __obj.updateDynamic("Builder")(Builder.asInstanceOf[js.Any])
-    if (PlatformSummary != null) __obj.updateDynamic("PlatformSummary")(PlatformSummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlatformVersionResult]
   }
+  @scala.inline
+  implicit class CreatePlatformVersionResultOps[Self <: CreatePlatformVersionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuilder(value: Builder): Self = this.set("Builder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuilder: Self = this.set("Builder", js.undefined)
+    @scala.inline
+    def setPlatformSummary(value: PlatformSummary): Self = this.set("PlatformSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformSummary: Self = this.set("PlatformSummary", js.undefined)
+  }
+  
 }
 

@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JsonpSettings extends js.Object {
-  var async: js.UndefOr[Boolean] = js.undefined
-  var jsonp: js.UndefOr[String] = js.undefined
-  var jsonpCallback: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  var async: js.UndefOr[Boolean] = js.native
+  var jsonp: js.UndefOr[String] = js.native
+  var jsonpCallback: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.native
 }
 
 object JsonpSettings {
   @scala.inline
-  def apply(
-    async: js.UndefOr[Boolean] = js.undefined,
-    jsonp: String = null,
-    jsonpCallback: String = null,
-    url: String = null
-  ): JsonpSettings = {
+  def apply(): JsonpSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
-    if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
-    if (jsonpCallback != null) __obj.updateDynamic("jsonpCallback")(jsonpCallback.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonpSettings]
   }
+  @scala.inline
+  implicit class JsonpSettingsOps[Self <: JsonpSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsync: Self = this.set("async", js.undefined)
+    @scala.inline
+    def setJsonp(value: String): Self = this.set("jsonp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonp: Self = this.set("jsonp", js.undefined)
+    @scala.inline
+    def setJsonpCallback(value: String): Self = this.set("jsonpCallback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonpCallback: Self = this.set("jsonpCallback", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

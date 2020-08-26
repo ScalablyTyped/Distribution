@@ -12,15 +12,15 @@ trait HostDecorator extends Instantiable0[Host] {
     * that tells the DI framework to resolve the view by checking injectors of child
     * elements, and stop when reaching the host element of the current component.
     *
-    * For an extended example, see
-    * ["Dependency Injection Guide"](guide/dependency-injection-in-action#optional).
-    *
     * @usageNotes
     *
     * The following shows use with the `@Optional` decorator, and allows for a null result.
     *
     * <code-example path="core/di/ts/metadata_spec.ts" region="Host">
     * </code-example>
+    *
+    * For an extended example, see ["Dependency Injection
+    * Guide"](guide/dependency-injection-in-action#optional).
     */
   def apply(): js.Any = js.native
 }

@@ -10,9 +10,9 @@ The_Cloudmersive_Virus_Scan_API_lets_you_scan_files_and_content_for_viruses_and_
 | ------------------ | :-------------: |
 | Full name          | cloudmersive-virus-api-client |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 599 |
+| # downloads        | 1098 |
 | # stars            | 0 |
 
 ## Links

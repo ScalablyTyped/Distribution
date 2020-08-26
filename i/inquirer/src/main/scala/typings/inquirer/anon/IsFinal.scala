@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IsFinal extends js.Object {
-  var isFinal: js.UndefOr[Boolean] = js.undefined
+  var isFinal: js.UndefOr[Boolean] = js.native
 }
 
 object IsFinal {
   @scala.inline
-  def apply(isFinal: js.UndefOr[Boolean] = js.undefined): IsFinal = {
+  def apply(): IsFinal = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isFinal)) __obj.updateDynamic("isFinal")(isFinal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsFinal]
   }
+  @scala.inline
+  implicit class IsFinalOps[Self <: IsFinal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsFinal(value: Boolean): Self = this.set("isFinal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFinal: Self = this.set("isFinal", js.undefined)
+  }
+  
 }
 

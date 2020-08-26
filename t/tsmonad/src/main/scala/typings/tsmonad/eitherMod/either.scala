@@ -10,5 +10,6 @@ object either extends js.Object {
   def apply[L, R](): Either_[L, R] = js.native
   def apply[L, R](l: L): Either_[L, R] = js.native
   def apply[L, R](l: L, r: R): Either_[L, R] = js.native
+  def apply[L, R](l: js.UndefOr[scala.Nothing], r: R): Either_[L, R] = js.native
 }
 

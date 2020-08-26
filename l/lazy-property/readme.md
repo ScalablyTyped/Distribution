@@ -11,8 +11,8 @@ Lazily initialized properties for objects
 | Full name          | lazy-property |
 | Keywords           | lazy, property, object, initialize, array, dictionary |
 | # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 9525841 |
+| # dependents       | 31 |
+| # downloads        | 9704841 |
 | # stars            | 1 |
 
 ## Links

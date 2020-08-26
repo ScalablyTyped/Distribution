@@ -28,6 +28,7 @@ class ResourceDirectorysites protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDirectorySite] = js.native
   def get(callback: BodyResponseCallback[SchemaDirectorySite]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDirectorySite] = js.native
   def get(params: ParamsResourceDirectorysitesGet): GaxiosPromise[SchemaDirectorySite] = js.native
   def get(params: ParamsResourceDirectorysitesGet, callback: BodyResponseCallback[SchemaDirectorySite]): Unit = js.native
   def get(
@@ -56,6 +57,7 @@ class ResourceDirectorysites protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaDirectorySite] = js.native
   def insert(callback: BodyResponseCallback[SchemaDirectorySite]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDirectorySite] = js.native
   def insert(params: ParamsResourceDirectorysitesInsert): GaxiosPromise[SchemaDirectorySite] = js.native
   def insert(params: ParamsResourceDirectorysitesInsert, callback: BodyResponseCallback[SchemaDirectorySite]): Unit = js.native
   def insert(
@@ -95,6 +97,7 @@ class ResourceDirectorysites protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaDirectorySitesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDirectorySitesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDirectorySitesListResponse] = js.native
   def list(params: ParamsResourceDirectorysitesList): GaxiosPromise[SchemaDirectorySitesListResponse] = js.native
   def list(
     params: ParamsResourceDirectorysitesList,

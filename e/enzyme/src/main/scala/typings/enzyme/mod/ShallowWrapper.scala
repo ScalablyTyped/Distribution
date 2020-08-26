@@ -13,11 +13,13 @@ class ShallowWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
   def this(nodes: Element) = this()
   def this(nodes: js.Array[Element], root: ShallowWrapper[_, _, Component[js.Object, js.Object, _]]) = this()
   def this(nodes: Element, root: ShallowWrapper[_, _, Component[js.Object, js.Object, _]]) = this()
+  def this(nodes: js.Array[Element], root: js.UndefOr[scala.Nothing], options: ShallowRendererProps) = this()
   def this(
     nodes: js.Array[Element],
     root: ShallowWrapper[_, _, Component[js.Object, js.Object, _]],
     options: ShallowRendererProps
   ) = this()
+  def this(nodes: Element, root: js.UndefOr[scala.Nothing], options: ShallowRendererProps) = this()
   def this(
     nodes: Element,
     root: ShallowWrapper[_, _, Component[js.Object, js.Object, _]],

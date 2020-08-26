@@ -30,10 +30,6 @@ class MongoError protected () extends Error {
     * https://github.com/mongodb/node-mongodb-native/blob/a12aa15ac3eaae3ad5c4166ea1423aec4560f155/test/functional/find_tests.js#L1111
     */
   var errmsg: js.UndefOr[String] = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   /**
     * Checks the error to see if it has an error label
     */

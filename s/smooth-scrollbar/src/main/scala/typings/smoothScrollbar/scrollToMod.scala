@@ -10,6 +10,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object scrollToMod extends js.Object {
   def scrollTo(scrollbar: Scrollbar, x: Double, y: Double): Unit = js.native
+  def scrollTo(
+    scrollbar: Scrollbar,
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    hasEasingCallback: PartialScrollToOptionsCallback
+  ): Unit = js.native
   def scrollTo(scrollbar: Scrollbar, x: Double, y: Double, duration: Double): Unit = js.native
   def scrollTo(
     scrollbar: Scrollbar,

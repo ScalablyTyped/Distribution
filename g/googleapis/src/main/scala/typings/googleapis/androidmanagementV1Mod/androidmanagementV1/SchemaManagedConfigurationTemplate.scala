@@ -24,11 +24,30 @@ trait SchemaManagedConfigurationTemplate extends js.Object {
 
 object SchemaManagedConfigurationTemplate {
   @scala.inline
-  def apply(configurationVariables: StringDictionary[String] = null, templateId: String = null): SchemaManagedConfigurationTemplate = {
+  def apply(): SchemaManagedConfigurationTemplate = {
     val __obj = js.Dynamic.literal()
-    if (configurationVariables != null) __obj.updateDynamic("configurationVariables")(configurationVariables.asInstanceOf[js.Any])
-    if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedConfigurationTemplate]
   }
+  @scala.inline
+  implicit class SchemaManagedConfigurationTemplateOps[Self <: SchemaManagedConfigurationTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationVariables(value: StringDictionary[String]): Self = this.set("configurationVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationVariables: Self = this.set("configurationVariables", js.undefined)
+    @scala.inline
+    def setTemplateId(value: String): Self = this.set("templateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateId: Self = this.set("templateId", js.undefined)
+  }
+  
 }
 

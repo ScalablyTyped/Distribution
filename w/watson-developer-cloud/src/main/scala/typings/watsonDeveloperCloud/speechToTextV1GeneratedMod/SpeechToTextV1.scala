@@ -449,6 +449,7 @@ trait SpeechToTextV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def checkJobs(): js.Promise[_] | Unit = js.native
+  def checkJobs(params: js.UndefOr[scala.Nothing], callback: Callback[RecognitionJobs]): js.Promise[_] | Unit = js.native
   def checkJobs(params: CheckJobsParams): js.Promise[_] | Unit = js.native
   def checkJobs(params: CheckJobsParams, callback: Callback[RecognitionJobs]): js.Promise[_] | Unit = js.native
   /*************************
@@ -1095,6 +1096,7 @@ trait SpeechToTextV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listAcousticModels(): js.Promise[_] | Unit = js.native
+  def listAcousticModels(params: js.UndefOr[scala.Nothing], callback: Callback[AcousticModels]): js.Promise[_] | Unit = js.native
   def listAcousticModels(params: ListAcousticModelsParams): js.Promise[_] | Unit = js.native
   def listAcousticModels(params: ListAcousticModelsParams, callback: Callback[AcousticModels]): js.Promise[_] | Unit = js.native
   /**
@@ -1178,6 +1180,7 @@ trait SpeechToTextV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listLanguageModels(): js.Promise[_] | Unit = js.native
+  def listLanguageModels(params: js.UndefOr[scala.Nothing], callback: Callback[LanguageModels]): js.Promise[_] | Unit = js.native
   def listLanguageModels(params: ListLanguageModelsParams): js.Promise[_] | Unit = js.native
   def listLanguageModels(params: ListLanguageModelsParams, callback: Callback[LanguageModels]): js.Promise[_] | Unit = js.native
   /**
@@ -1194,6 +1197,7 @@ trait SpeechToTextV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listModels(): js.Promise[_] | Unit = js.native
+  def listModels(params: js.UndefOr[scala.Nothing], callback: Callback[SpeechModels]): js.Promise[_] | Unit = js.native
   def listModels(params: ListModelsParams): js.Promise[_] | Unit = js.native
   def listModels(params: ListModelsParams, callback: Callback[SpeechModels]): js.Promise[_] | Unit = js.native
   /**

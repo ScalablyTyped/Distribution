@@ -12,7 +12,7 @@ The lodash method `_.keys` exported as a module.
 | Keywords           | lodash-modularized, keys |
 | # releases         | 0 |
 | # dependents       | 205 |
-| # downloads        | 190194272 |
+| # downloads        | 189556145 |
 | # stars            | 0 |
 
 ## Links

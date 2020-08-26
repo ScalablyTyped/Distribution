@@ -12,6 +12,8 @@ trait JSON5 extends js.Object {
   def parse(text: String, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, _]): js.Any = js.native
   def stringify(value: js.Any): String = js.native
   def stringify(value: js.Any, options: Quote): String = js.native
+  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
+  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
   def stringify(value: js.Any, replacer: js.Array[Double | String]): String = js.native
   def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String = js.native
   def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String = js.native

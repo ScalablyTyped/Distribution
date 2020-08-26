@@ -12,7 +12,7 @@ Provides a marshaller and unmarshaller for the AWS query & ec2 protocol
 | Keywords           | - |
 | # releases         | 11 |
 | # dependents       | 39 |
-| # downloads        | 8308 |
+| # downloads        | 9916 |
 | # stars            | 0 |
 
 ## Links

@@ -39,7 +39,7 @@ trait JobUpdate extends js.Object {
     */
   var LogUri: js.UndefOr[UriString] = js.native
   /**
-    * The number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page. Do not set Max Capacity if using WorkerType and NumberOfWorkers. The value that can be allocated for MaxCapacity depends on whether you are running a Python shell job or an Apache Spark ETL job:   When you specify a Python shell job (JobCommand.Name="pythonshell"), you can allocate either 0.0625 or 1 DPU. The default is 0.0625 DPU.   When you specify an Apache Spark ETL job (JobCommand.Name="glueetl"), you can allocate from 2 to 100 DPUs. The default is 10 DPUs. This job type cannot have a fractional DPU allocation.  
+    * The number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page. Do not set Max Capacity if using WorkerType and NumberOfWorkers. The value that can be allocated for MaxCapacity depends on whether you are running a Python shell job or an Apache Spark ETL job:   When you specify a Python shell job (JobCommand.Name="pythonshell"), you can allocate either 0.0625 or 1 DPU. The default is 0.0625 DPU.   When you specify an Apache Spark ETL job (JobCommand.Name="glueetl") or Apache Spark streaming ETL job (JobCommand.Name="gluestreaming"), you can allocate from 2 to 100 DPUs. The default is 10 DPUs. This job type cannot have a fractional DPU allocation.  
     */
   var MaxCapacity: js.UndefOr[NullableDouble] = js.native
   /**
@@ -78,44 +78,90 @@ trait JobUpdate extends js.Object {
 
 object JobUpdate {
   @scala.inline
-  def apply(
-    AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined,
-    Command: JobCommand = null,
-    Connections: ConnectionsList = null,
-    DefaultArguments: GenericMap = null,
-    Description: DescriptionString = null,
-    ExecutionProperty: ExecutionProperty = null,
-    GlueVersion: GlueVersionString = null,
-    LogUri: UriString = null,
-    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
-    MaxRetries: js.UndefOr[MaxRetries] = js.undefined,
-    NonOverridableArguments: GenericMap = null,
-    NotificationProperty: NotificationProperty = null,
-    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
-    Role: RoleString = null,
-    SecurityConfiguration: NameString = null,
-    Timeout: js.UndefOr[Timeout] = js.undefined,
-    WorkerType: WorkerType = null
-  ): JobUpdate = {
+  def apply(): JobUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedCapacity)) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity.get.asInstanceOf[js.Any])
-    if (Command != null) __obj.updateDynamic("Command")(Command.asInstanceOf[js.Any])
-    if (Connections != null) __obj.updateDynamic("Connections")(Connections.asInstanceOf[js.Any])
-    if (DefaultArguments != null) __obj.updateDynamic("DefaultArguments")(DefaultArguments.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ExecutionProperty != null) __obj.updateDynamic("ExecutionProperty")(ExecutionProperty.asInstanceOf[js.Any])
-    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion.asInstanceOf[js.Any])
-    if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRetries)) __obj.updateDynamic("MaxRetries")(MaxRetries.get.asInstanceOf[js.Any])
-    if (NonOverridableArguments != null) __obj.updateDynamic("NonOverridableArguments")(NonOverridableArguments.asInstanceOf[js.Any])
-    if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
-    if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
-    if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
-    if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobUpdate]
   }
+  @scala.inline
+  implicit class JobUpdateOps[Self <: JobUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocatedCapacity(value: IntegerValue): Self = this.set("AllocatedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocatedCapacity: Self = this.set("AllocatedCapacity", js.undefined)
+    @scala.inline
+    def setCommand(value: JobCommand): Self = this.set("Command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommand: Self = this.set("Command", js.undefined)
+    @scala.inline
+    def setConnections(value: ConnectionsList): Self = this.set("Connections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnections: Self = this.set("Connections", js.undefined)
+    @scala.inline
+    def setDefaultArguments(value: GenericMap): Self = this.set("DefaultArguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultArguments: Self = this.set("DefaultArguments", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setExecutionProperty(value: ExecutionProperty): Self = this.set("ExecutionProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionProperty: Self = this.set("ExecutionProperty", js.undefined)
+    @scala.inline
+    def setGlueVersion(value: GlueVersionString): Self = this.set("GlueVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlueVersion: Self = this.set("GlueVersion", js.undefined)
+    @scala.inline
+    def setLogUri(value: UriString): Self = this.set("LogUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUri: Self = this.set("LogUri", js.undefined)
+    @scala.inline
+    def setMaxCapacity(value: NullableDouble): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    @scala.inline
+    def setMaxRetries(value: MaxRetries): Self = this.set("MaxRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRetries: Self = this.set("MaxRetries", js.undefined)
+    @scala.inline
+    def setNonOverridableArguments(value: GenericMap): Self = this.set("NonOverridableArguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonOverridableArguments: Self = this.set("NonOverridableArguments", js.undefined)
+    @scala.inline
+    def setNotificationProperty(value: NotificationProperty): Self = this.set("NotificationProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationProperty: Self = this.set("NotificationProperty", js.undefined)
+    @scala.inline
+    def setNumberOfWorkers(value: NullableInteger): Self = this.set("NumberOfWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfWorkers: Self = this.set("NumberOfWorkers", js.undefined)
+    @scala.inline
+    def setRole(value: RoleString): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("Role", js.undefined)
+    @scala.inline
+    def setSecurityConfiguration(value: NameString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    @scala.inline
+    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    @scala.inline
+    def setWorkerType(value: WorkerType): Self = this.set("WorkerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerType: Self = this.set("WorkerType", js.undefined)
+  }
+  
 }
 

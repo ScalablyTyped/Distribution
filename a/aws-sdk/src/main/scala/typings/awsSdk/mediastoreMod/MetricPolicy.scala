@@ -18,10 +18,30 @@ trait MetricPolicy extends js.Object {
 
 object MetricPolicy {
   @scala.inline
-  def apply(ContainerLevelMetrics: ContainerLevelMetrics, MetricPolicyRules: MetricPolicyRules = null): MetricPolicy = {
+  def apply(ContainerLevelMetrics: ContainerLevelMetrics): MetricPolicy = {
     val __obj = js.Dynamic.literal(ContainerLevelMetrics = ContainerLevelMetrics.asInstanceOf[js.Any])
-    if (MetricPolicyRules != null) __obj.updateDynamic("MetricPolicyRules")(MetricPolicyRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricPolicy]
   }
+  @scala.inline
+  implicit class MetricPolicyOps[Self <: MetricPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerLevelMetrics(value: ContainerLevelMetrics): Self = this.set("ContainerLevelMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetricPolicyRulesVarargs(value: MetricPolicyRule*): Self = this.set("MetricPolicyRules", js.Array(value :_*))
+    @scala.inline
+    def setMetricPolicyRules(value: MetricPolicyRules): Self = this.set("MetricPolicyRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricPolicyRules: Self = this.set("MetricPolicyRules", js.undefined)
+  }
+  
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object dateI18n extends js.Object {
   def apply(dateFormat: String): String = js.native
+  def apply(dateFormat: String, dateValue: js.UndefOr[MomentInput], gmt: Boolean): String = js.native
   def apply(dateFormat: String, dateValue: MomentInput): String = js.native
-  def apply(dateFormat: String, dateValue: MomentInput, gmt: Boolean): String = js.native
 }
 

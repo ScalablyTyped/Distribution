@@ -18,6 +18,7 @@ object createTimeRanges extends js.Object {
     *        The end of a single range.
     */
   def apply(): TimeRange = js.native
+  def apply(start: js.UndefOr[scala.Nothing], end: Double): TimeRange = js.native
   def apply(start: js.Array[TimeRange]): TimeRange = js.native
   def apply(start: js.Array[TimeRange], end: Double): TimeRange = js.native
   def apply(start: Double): TimeRange = js.native

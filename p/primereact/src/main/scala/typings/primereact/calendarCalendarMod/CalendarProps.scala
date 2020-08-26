@@ -10,222 +10,379 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CalendarProps extends js.Object {
-  var appendTo: js.UndefOr[js.Any] = js.undefined
-  var ariaLabelledBy: js.UndefOr[String] = js.undefined
-  var autoZIndex: js.UndefOr[Boolean] = js.undefined
-  var baseZIndex: js.UndefOr[Double] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var clearButtonClassName: js.UndefOr[String] = js.undefined
-  var dateFormat: js.UndefOr[String] = js.undefined
-  var dateTemplate: js.UndefOr[js.Function1[/* dateMeta */ DateMetaData, ReactNode]] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var disabledDates: js.UndefOr[js.Array[Date]] = js.undefined
-  var disabledDays: js.UndefOr[js.Array[Double]] = js.undefined
-  var footerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.undefined
-  var headerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.undefined
-  var hideOnDateTimeSelect: js.UndefOr[Boolean] = js.undefined
-  var hourFormat: js.UndefOr[String] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var `inline`: js.UndefOr[Boolean] = js.undefined
-  var inputClassName: js.UndefOr[String] = js.undefined
-  var inputId: js.UndefOr[String] = js.undefined
-  var inputStyle: js.UndefOr[js.Object] = js.undefined
-  var keepInvalid: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[LocaleSettings] = js.undefined
-  var maxDate: js.UndefOr[Date] = js.undefined
-  var maxDateCount: js.UndefOr[Double] = js.undefined
-  var minDate: js.UndefOr[Date] = js.undefined
-  var monthNavigator: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var numberOfMonths: js.UndefOr[Double] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ OriginalEventTarget, Unit]] = js.undefined
-  var onClearButtonClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onInput: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* e */ OriginalEventValue, Unit]] = js.undefined
-  var onTodayButtonClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onViewDateChange: js.UndefOr[js.Function1[/* e */ OriginalEventValue, Unit]] = js.undefined
-  var panelClassName: js.UndefOr[String] = js.undefined
-  var panelStyle: js.UndefOr[js.Object] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var readOnlyInput: js.UndefOr[Boolean] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var selectOtherMonths: js.UndefOr[Boolean] = js.undefined
-  var selectionMode: js.UndefOr[String] = js.undefined
-  var shortYearCutoff: js.UndefOr[String] = js.undefined
-  var showButtonBar: js.UndefOr[Boolean] = js.undefined
-  var showIcon: js.UndefOr[Boolean] = js.undefined
-  var showMillisec: js.UndefOr[Boolean] = js.undefined
-  var showOnFocus: js.UndefOr[Boolean] = js.undefined
-  var showOtherMonths: js.UndefOr[Boolean] = js.undefined
-  var showSeconds: js.UndefOr[Boolean] = js.undefined
-  var showTime: js.UndefOr[Boolean] = js.undefined
-  var showWeek: js.UndefOr[Boolean] = js.undefined
-  var stepHour: js.UndefOr[Double] = js.undefined
-  var stepMillisec: js.UndefOr[Double] = js.undefined
-  var stepMinute: js.UndefOr[Double] = js.undefined
-  var stepSecond: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
-  var tabIndex: js.UndefOr[String] = js.undefined
-  var timeOnly: js.UndefOr[Boolean] = js.undefined
-  var todayButtonClassName: js.UndefOr[String] = js.undefined
-  var tooltip: js.UndefOr[js.Any] = js.undefined
-  var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
-  var touchUI: js.UndefOr[Boolean] = js.undefined
-  var value: js.UndefOr[Date | js.Array[Date]] = js.undefined
-  var view: js.UndefOr[String] = js.undefined
-  var viewDate: js.UndefOr[Date] = js.undefined
-  var yearNavigator: js.UndefOr[Boolean] = js.undefined
-  var yearRange: js.UndefOr[String] = js.undefined
+  var appendTo: js.UndefOr[js.Any] = js.native
+  var ariaLabelledBy: js.UndefOr[String] = js.native
+  var autoZIndex: js.UndefOr[Boolean] = js.native
+  var baseZIndex: js.UndefOr[Double] = js.native
+  var className: js.UndefOr[String] = js.native
+  var clearButtonClassName: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.native
+  var dateTemplate: js.UndefOr[js.Function1[/* dateMeta */ DateMetaData, ReactNode]] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var disabledDates: js.UndefOr[js.Array[Date]] = js.native
+  var disabledDays: js.UndefOr[js.Array[Double]] = js.native
+  var footerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.native
+  var headerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.native
+  var hideOnDateTimeSelect: js.UndefOr[Boolean] = js.native
+  var hourFormat: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.native
+  var inputClassName: js.UndefOr[String] = js.native
+  var inputId: js.UndefOr[String] = js.native
+  var inputStyle: js.UndefOr[js.Object] = js.native
+  var keepInvalid: js.UndefOr[Boolean] = js.native
+  var locale: js.UndefOr[LocaleSettings] = js.native
+  var maxDate: js.UndefOr[Date] = js.native
+  var maxDateCount: js.UndefOr[Double] = js.native
+  var minDate: js.UndefOr[Date] = js.native
+  var monthNavigator: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
+  var numberOfMonths: js.UndefOr[Double] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* e */ OriginalEventTarget, Unit]] = js.native
+  var onClearButtonClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onInput: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onSelect: js.UndefOr[js.Function1[/* e */ OriginalEventValue, Unit]] = js.native
+  var onTodayButtonClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onViewDateChange: js.UndefOr[js.Function1[/* e */ OriginalEventValue, Unit]] = js.native
+  var panelClassName: js.UndefOr[String] = js.native
+  var panelStyle: js.UndefOr[js.Object] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var readOnlyInput: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.native
+  var selectOtherMonths: js.UndefOr[Boolean] = js.native
+  var selectionMode: js.UndefOr[String] = js.native
+  var shortYearCutoff: js.UndefOr[String] = js.native
+  var showButtonBar: js.UndefOr[Boolean] = js.native
+  var showIcon: js.UndefOr[Boolean] = js.native
+  var showMillisec: js.UndefOr[Boolean] = js.native
+  var showOnFocus: js.UndefOr[Boolean] = js.native
+  var showOtherMonths: js.UndefOr[Boolean] = js.native
+  var showSeconds: js.UndefOr[Boolean] = js.native
+  var showTime: js.UndefOr[Boolean] = js.native
+  var showWeek: js.UndefOr[Boolean] = js.native
+  var stepHour: js.UndefOr[Double] = js.native
+  var stepMillisec: js.UndefOr[Double] = js.native
+  var stepMinute: js.UndefOr[Double] = js.native
+  var stepSecond: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[js.Object] = js.native
+  var tabIndex: js.UndefOr[String] = js.native
+  var timeOnly: js.UndefOr[Boolean] = js.native
+  var todayButtonClassName: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[js.Any] = js.native
+  var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+  var touchUI: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Date | js.Array[Date]] = js.native
+  var view: js.UndefOr[String] = js.native
+  var viewDate: js.UndefOr[Date] = js.native
+  var yearNavigator: js.UndefOr[Boolean] = js.native
+  var yearRange: js.UndefOr[String] = js.native
 }
 
 object CalendarProps {
   @scala.inline
-  def apply(
-    appendTo: js.Any = null,
-    ariaLabelledBy: String = null,
-    autoZIndex: js.UndefOr[Boolean] = js.undefined,
-    baseZIndex: js.UndefOr[Double] = js.undefined,
-    className: String = null,
-    clearButtonClassName: String = null,
-    dateFormat: String = null,
-    dateTemplate: /* dateMeta */ DateMetaData => ReactNode = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledDates: js.Array[Date] = null,
-    disabledDays: js.Array[Double] = null,
-    footerTemplate: () => ReactNode = null,
-    headerTemplate: () => ReactNode = null,
-    hideOnDateTimeSelect: js.UndefOr[Boolean] = js.undefined,
-    hourFormat: String = null,
-    icon: String = null,
-    id: String = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    inputClassName: String = null,
-    inputId: String = null,
-    inputStyle: js.Object = null,
-    keepInvalid: js.UndefOr[Boolean] = js.undefined,
-    locale: LocaleSettings = null,
-    maxDate: Date = null,
-    maxDateCount: js.UndefOr[Double] = js.undefined,
-    minDate: Date = null,
-    monthNavigator: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    numberOfMonths: js.UndefOr[Double] = js.undefined,
-    onBlur: /* event */ Event => Unit = null,
-    onChange: /* e */ OriginalEventTarget => Unit = null,
-    onClearButtonClick: /* event */ Event => Unit = null,
-    onFocus: /* event */ Event => Unit = null,
-    onInput: /* event */ Event => Unit = null,
-    onSelect: /* e */ OriginalEventValue => Unit = null,
-    onTodayButtonClick: /* event */ Event => Unit = null,
-    onViewDateChange: /* e */ OriginalEventValue => Unit = null,
-    panelClassName: String = null,
-    panelStyle: js.Object = null,
-    placeholder: String = null,
-    readOnlyInput: js.UndefOr[Boolean] = js.undefined,
-    required: js.UndefOr[Boolean] = js.undefined,
-    selectOtherMonths: js.UndefOr[Boolean] = js.undefined,
-    selectionMode: String = null,
-    shortYearCutoff: String = null,
-    showButtonBar: js.UndefOr[Boolean] = js.undefined,
-    showIcon: js.UndefOr[Boolean] = js.undefined,
-    showMillisec: js.UndefOr[Boolean] = js.undefined,
-    showOnFocus: js.UndefOr[Boolean] = js.undefined,
-    showOtherMonths: js.UndefOr[Boolean] = js.undefined,
-    showSeconds: js.UndefOr[Boolean] = js.undefined,
-    showTime: js.UndefOr[Boolean] = js.undefined,
-    showWeek: js.UndefOr[Boolean] = js.undefined,
-    stepHour: js.UndefOr[Double] = js.undefined,
-    stepMillisec: js.UndefOr[Double] = js.undefined,
-    stepMinute: js.UndefOr[Double] = js.undefined,
-    stepSecond: js.UndefOr[Double] = js.undefined,
-    style: js.Object = null,
-    tabIndex: String = null,
-    timeOnly: js.UndefOr[Boolean] = js.undefined,
-    todayButtonClassName: String = null,
-    tooltip: js.Any = null,
-    tooltipOptions: TooltipOptions = null,
-    touchUI: js.UndefOr[Boolean] = js.undefined,
-    value: Date | js.Array[Date] = null,
-    view: String = null,
-    viewDate: Date = null,
-    yearNavigator: js.UndefOr[Boolean] = js.undefined,
-    yearRange: String = null
-  ): CalendarProps = {
+  def apply(): CalendarProps = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoZIndex)) __obj.updateDynamic("autoZIndex")(autoZIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(baseZIndex)) __obj.updateDynamic("baseZIndex")(baseZIndex.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearButtonClassName != null) __obj.updateDynamic("clearButtonClassName")(clearButtonClassName.asInstanceOf[js.Any])
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (dateTemplate != null) __obj.updateDynamic("dateTemplate")(js.Any.fromFunction1(dateTemplate))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
-    if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays.asInstanceOf[js.Any])
-    if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(js.Any.fromFunction0(footerTemplate))
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(js.Any.fromFunction0(headerTemplate))
-    if (!js.isUndefined(hideOnDateTimeSelect)) __obj.updateDynamic("hideOnDateTimeSelect")(hideOnDateTimeSelect.get.asInstanceOf[js.Any])
-    if (hourFormat != null) __obj.updateDynamic("hourFormat")(hourFormat.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName.asInstanceOf[js.Any])
-    if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
-    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepInvalid)) __obj.updateDynamic("keepInvalid")(keepInvalid.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDateCount)) __obj.updateDynamic("maxDateCount")(maxDateCount.get.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(monthNavigator)) __obj.updateDynamic("monthNavigator")(monthNavigator.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfMonths)) __obj.updateDynamic("numberOfMonths")(numberOfMonths.get.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClearButtonClick != null) __obj.updateDynamic("onClearButtonClick")(js.Any.fromFunction1(onClearButtonClick))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (onTodayButtonClick != null) __obj.updateDynamic("onTodayButtonClick")(js.Any.fromFunction1(onTodayButtonClick))
-    if (onViewDateChange != null) __obj.updateDynamic("onViewDateChange")(js.Any.fromFunction1(onViewDateChange))
-    if (panelClassName != null) __obj.updateDynamic("panelClassName")(panelClassName.asInstanceOf[js.Any])
-    if (panelStyle != null) __obj.updateDynamic("panelStyle")(panelStyle.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnlyInput)) __obj.updateDynamic("readOnlyInput")(readOnlyInput.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOtherMonths)) __obj.updateDynamic("selectOtherMonths")(selectOtherMonths.get.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (shortYearCutoff != null) __obj.updateDynamic("shortYearCutoff")(shortYearCutoff.asInstanceOf[js.Any])
-    if (!js.isUndefined(showButtonBar)) __obj.updateDynamic("showButtonBar")(showButtonBar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMillisec)) __obj.updateDynamic("showMillisec")(showMillisec.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnFocus)) __obj.updateDynamic("showOnFocus")(showOnFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOtherMonths)) __obj.updateDynamic("showOtherMonths")(showOtherMonths.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTime)) __obj.updateDynamic("showTime")(showTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeek)) __obj.updateDynamic("showWeek")(showWeek.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepHour)) __obj.updateDynamic("stepHour")(stepHour.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepMillisec)) __obj.updateDynamic("stepMillisec")(stepMillisec.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepMinute)) __obj.updateDynamic("stepMinute")(stepMinute.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepSecond)) __obj.updateDynamic("stepSecond")(stepSecond.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeOnly)) __obj.updateDynamic("timeOnly")(timeOnly.get.asInstanceOf[js.Any])
-    if (todayButtonClassName != null) __obj.updateDynamic("todayButtonClassName")(todayButtonClassName.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchUI)) __obj.updateDynamic("touchUI")(touchUI.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewDate != null) __obj.updateDynamic("viewDate")(viewDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(yearNavigator)) __obj.updateDynamic("yearNavigator")(yearNavigator.get.asInstanceOf[js.Any])
-    if (yearRange != null) __obj.updateDynamic("yearRange")(yearRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarProps]
   }
+  @scala.inline
+  implicit class CalendarPropsOps[Self <: CalendarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppendTo(value: js.Any): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    @scala.inline
+    def setAriaLabelledBy(value: String): Self = this.set("ariaLabelledBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaLabelledBy: Self = this.set("ariaLabelledBy", js.undefined)
+    @scala.inline
+    def setAutoZIndex(value: Boolean): Self = this.set("autoZIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoZIndex: Self = this.set("autoZIndex", js.undefined)
+    @scala.inline
+    def setBaseZIndex(value: Double): Self = this.set("baseZIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseZIndex: Self = this.set("baseZIndex", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClearButtonClassName(value: String): Self = this.set("clearButtonClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearButtonClassName: Self = this.set("clearButtonClassName", js.undefined)
+    @scala.inline
+    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    @scala.inline
+    def setDateTemplate(value: /* dateMeta */ DateMetaData => ReactNode): Self = this.set("dateTemplate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDateTemplate: Self = this.set("dateTemplate", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisabledDatesVarargs(value: Date*): Self = this.set("disabledDates", js.Array(value :_*))
+    @scala.inline
+    def setDisabledDates(value: js.Array[Date]): Self = this.set("disabledDates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledDates: Self = this.set("disabledDates", js.undefined)
+    @scala.inline
+    def setDisabledDaysVarargs(value: Double*): Self = this.set("disabledDays", js.Array(value :_*))
+    @scala.inline
+    def setDisabledDays(value: js.Array[Double]): Self = this.set("disabledDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledDays: Self = this.set("disabledDays", js.undefined)
+    @scala.inline
+    def setFooterTemplate(value: () => ReactNode): Self = this.set("footerTemplate", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteFooterTemplate: Self = this.set("footerTemplate", js.undefined)
+    @scala.inline
+    def setHeaderTemplate(value: () => ReactNode): Self = this.set("headerTemplate", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteHeaderTemplate: Self = this.set("headerTemplate", js.undefined)
+    @scala.inline
+    def setHideOnDateTimeSelect(value: Boolean): Self = this.set("hideOnDateTimeSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideOnDateTimeSelect: Self = this.set("hideOnDateTimeSelect", js.undefined)
+    @scala.inline
+    def setHourFormat(value: String): Self = this.set("hourFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHourFormat: Self = this.set("hourFormat", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setInputClassName(value: String): Self = this.set("inputClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputClassName: Self = this.set("inputClassName", js.undefined)
+    @scala.inline
+    def setInputId(value: String): Self = this.set("inputId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputId: Self = this.set("inputId", js.undefined)
+    @scala.inline
+    def setInputStyle(value: js.Object): Self = this.set("inputStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputStyle: Self = this.set("inputStyle", js.undefined)
+    @scala.inline
+    def setKeepInvalid(value: Boolean): Self = this.set("keepInvalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepInvalid: Self = this.set("keepInvalid", js.undefined)
+    @scala.inline
+    def setLocale(value: LocaleSettings): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMaxDate(value: Date): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDate: Self = this.set("maxDate", js.undefined)
+    @scala.inline
+    def setMaxDateCount(value: Double): Self = this.set("maxDateCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDateCount: Self = this.set("maxDateCount", js.undefined)
+    @scala.inline
+    def setMinDate(value: Date): Self = this.set("minDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinDate: Self = this.set("minDate", js.undefined)
+    @scala.inline
+    def setMonthNavigator(value: Boolean): Self = this.set("monthNavigator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonthNavigator: Self = this.set("monthNavigator", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNumberOfMonths(value: Double): Self = this.set("numberOfMonths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfMonths: Self = this.set("numberOfMonths", js.undefined)
+    @scala.inline
+    def setOnBlur(value: /* event */ Event => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* e */ OriginalEventTarget => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClearButtonClick(value: /* event */ Event => Unit): Self = this.set("onClearButtonClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClearButtonClick: Self = this.set("onClearButtonClick", js.undefined)
+    @scala.inline
+    def setOnFocus(value: /* event */ Event => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnInput(value: /* event */ Event => Unit): Self = this.set("onInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setOnSelect(value: /* e */ OriginalEventValue => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setOnTodayButtonClick(value: /* event */ Event => Unit): Self = this.set("onTodayButtonClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTodayButtonClick: Self = this.set("onTodayButtonClick", js.undefined)
+    @scala.inline
+    def setOnViewDateChange(value: /* e */ OriginalEventValue => Unit): Self = this.set("onViewDateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnViewDateChange: Self = this.set("onViewDateChange", js.undefined)
+    @scala.inline
+    def setPanelClassName(value: String): Self = this.set("panelClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanelClassName: Self = this.set("panelClassName", js.undefined)
+    @scala.inline
+    def setPanelStyle(value: js.Object): Self = this.set("panelStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanelStyle: Self = this.set("panelStyle", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setReadOnlyInput(value: Boolean): Self = this.set("readOnlyInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnlyInput: Self = this.set("readOnlyInput", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setSelectOtherMonths(value: Boolean): Self = this.set("selectOtherMonths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectOtherMonths: Self = this.set("selectOtherMonths", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: String): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    @scala.inline
+    def setShortYearCutoff(value: String): Self = this.set("shortYearCutoff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortYearCutoff: Self = this.set("shortYearCutoff", js.undefined)
+    @scala.inline
+    def setShowButtonBar(value: Boolean): Self = this.set("showButtonBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowButtonBar: Self = this.set("showButtonBar", js.undefined)
+    @scala.inline
+    def setShowIcon(value: Boolean): Self = this.set("showIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowIcon: Self = this.set("showIcon", js.undefined)
+    @scala.inline
+    def setShowMillisec(value: Boolean): Self = this.set("showMillisec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMillisec: Self = this.set("showMillisec", js.undefined)
+    @scala.inline
+    def setShowOnFocus(value: Boolean): Self = this.set("showOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOnFocus: Self = this.set("showOnFocus", js.undefined)
+    @scala.inline
+    def setShowOtherMonths(value: Boolean): Self = this.set("showOtherMonths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOtherMonths: Self = this.set("showOtherMonths", js.undefined)
+    @scala.inline
+    def setShowSeconds(value: Boolean): Self = this.set("showSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSeconds: Self = this.set("showSeconds", js.undefined)
+    @scala.inline
+    def setShowTime(value: Boolean): Self = this.set("showTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTime: Self = this.set("showTime", js.undefined)
+    @scala.inline
+    def setShowWeek(value: Boolean): Self = this.set("showWeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowWeek: Self = this.set("showWeek", js.undefined)
+    @scala.inline
+    def setStepHour(value: Double): Self = this.set("stepHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepHour: Self = this.set("stepHour", js.undefined)
+    @scala.inline
+    def setStepMillisec(value: Double): Self = this.set("stepMillisec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepMillisec: Self = this.set("stepMillisec", js.undefined)
+    @scala.inline
+    def setStepMinute(value: Double): Self = this.set("stepMinute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepMinute: Self = this.set("stepMinute", js.undefined)
+    @scala.inline
+    def setStepSecond(value: Double): Self = this.set("stepSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepSecond: Self = this.set("stepSecond", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTabIndex(value: String): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTimeOnly(value: Boolean): Self = this.set("timeOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeOnly: Self = this.set("timeOnly", js.undefined)
+    @scala.inline
+    def setTodayButtonClassName(value: String): Self = this.set("todayButtonClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTodayButtonClassName: Self = this.set("todayButtonClassName", js.undefined)
+    @scala.inline
+    def setTooltip(value: js.Any): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTooltipOptions(value: TooltipOptions): Self = this.set("tooltipOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipOptions: Self = this.set("tooltipOptions", js.undefined)
+    @scala.inline
+    def setTouchUI(value: Boolean): Self = this.set("touchUI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchUI: Self = this.set("touchUI", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: Date*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: Date | js.Array[Date]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setViewDate(value: Date): Self = this.set("viewDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewDate: Self = this.set("viewDate", js.undefined)
+    @scala.inline
+    def setYearNavigator(value: Boolean): Self = this.set("yearNavigator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYearNavigator: Self = this.set("yearNavigator", js.undefined)
+    @scala.inline
+    def setYearRange(value: String): Self = this.set("yearRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYearRange: Self = this.set("yearRange", js.undefined)
+  }
+  
 }
 

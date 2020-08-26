@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object core {
-  type dxElement = typings.std.Element with typings.devextreme.mod.global.JQuery
+  type dxElement = typings.std.HTMLElement with typings.devextreme.mod.global.JQuery
+  type dxSVGElement = typings.std.SVGElement with typings.devextreme.mod.global.JQuery
   type template = java.lang.String | js.Function | typings.std.Element | typings.devextreme.mod.global.JQuery
 }

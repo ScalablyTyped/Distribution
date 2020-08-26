@@ -11,8 +11,8 @@ Parse package name with semver, path, scoped name support
 | Full name          | parse-package-name |
 | Keywords           | parse, package, name |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 718345 |
+| # dependents       | 24 |
+| # downloads        | 840123 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Recursively read a directory
 | Full name          | fs-readdir-recursive |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 223 |
-| # downloads        | 79099977 |
+| # dependents       | 227 |
+| # downloads        | 80064980 |
 | # stars            | 6 |
 
 ## Links

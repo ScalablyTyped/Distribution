@@ -25,16 +25,36 @@ trait ResourceServerArgs extends js.Object {
 
 object ResourceServerArgs {
   @scala.inline
-  def apply(
-    identifier: Input[String],
-    userPoolId: Input[String],
-    name: Input[String] = null,
-    scopes: Input[js.Array[Input[ResourceServerScope]]] = null
-  ): ResourceServerArgs = {
+  def apply(identifier: Input[String], userPoolId: Input[String]): ResourceServerArgs = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceServerArgs]
   }
+  @scala.inline
+  implicit class ResourceServerArgsOps[Self <: ResourceServerArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentifier(value: Input[String]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserPoolId(value: Input[String]): Self = this.set("userPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setScopesVarargs(value: Input[ResourceServerScope]*): Self = this.set("scopes", js.Array(value :_*))
+    @scala.inline
+    def setScopes(value: Input[js.Array[Input[ResourceServerScope]]]): Self = this.set("scopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScopes: Self = this.set("scopes", js.undefined)
+  }
+  
 }
 

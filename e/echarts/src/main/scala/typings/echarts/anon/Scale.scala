@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Scale extends js.Object {
   /**
     * id is used to specifying element when willing to update
@@ -14,7 +15,7 @@ trait Scale extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.id
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Whether the element is totally ignored (neither render
     * nor listen events).
@@ -22,7 +23,7 @@ trait Scale extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.ignore
     */
-  var ignore: js.UndefOr[Boolean] = js.undefined
+  var ignore: js.UndefOr[Boolean] = js.native
   /**
     * User defined data, can be visited in event listeners.
     *
@@ -31,14 +32,14 @@ trait Scale extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.info
     */
-  var info: js.UndefOr[js.Any] = js.undefined
+  var info: js.UndefOr[js.Any] = js.native
   /**
     * Whether the element is visible.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.invisible
     */
-  var invisible: js.UndefOr[Boolean] = js.undefined
+  var invisible: js.UndefOr[Boolean] = js.native
   /**
     * See
     * [diffChildrenByName](https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.diffChildrenByName)
@@ -49,7 +50,7 @@ trait Scale extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * `2D transform` can be applied to graphic elements, including:
     *
@@ -88,7 +89,7 @@ trait Scale extends js.Object {
     * [0, 0]
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.origin
     */
-  var origin: js.UndefOr[Double] = js.undefined
+  var origin: js.UndefOr[Double] = js.native
   /**
     * `2D transform` can be applied to graphic elements, including:
     *
@@ -127,7 +128,7 @@ trait Scale extends js.Object {
     * [0, 0]
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.position
     */
-  var position: js.UndefOr[js.Array[_]] = js.undefined
+  var position: js.UndefOr[js.Array[_]] = js.native
   /**
     * `2D transform` can be applied to graphic elements, including:
     *
@@ -164,7 +165,7 @@ trait Scale extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.rotation
     */
-  var rotation: js.UndefOr[Double] = js.undefined
+  var rotation: js.UndefOr[Double] = js.native
   /**
     * `2D transform` can be applied to graphic elements, including:
     *
@@ -203,18 +204,18 @@ trait Scale extends js.Object {
     * [1, 1]
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.scale
     */
-  var scale: js.UndefOr[js.Array[_]] = js.undefined
+  var scale: js.UndefOr[js.Array[_]] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.shape
     */
-  var shape: js.UndefOr[Clockwise] = js.undefined
+  var shape: js.UndefOr[Clockwise] = js.native
   /**
     * Whether response to mouse events / touch events.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.silent
     */
-  var silent: js.UndefOr[Boolean] = js.undefined
+  var silent: js.UndefOr[Boolean] = js.native
   /**
     * More attributes in `style` (for example,
     * [rich text](https://echarts.apache.org/en/tutorial.html#Rich%20Text)
@@ -241,7 +242,7 @@ trait Scale extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.style
     */
-  var style: js.UndefOr[Fill] = js.undefined
+  var style: js.UndefOr[Fill] = js.native
   /**
     * Empahsis style of the graphic element, whose structure
     * is the same as
@@ -251,7 +252,7 @@ trait Scale extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.styleEmphasis
     */
-  var styleEmphasis: js.UndefOr[js.Object] = js.undefined
+  var styleEmphasis: js.UndefOr[js.Object] = js.native
   /**
     * Must be specified when define a graphic element at the
     * first time.
@@ -288,7 +289,7 @@ trait Scale extends js.Object {
     * "arc"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.type
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * Define the overlap relationship between graphic elements.
     *
@@ -297,45 +298,91 @@ trait Scale extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.z2
     */
-  var z2: js.UndefOr[Double] = js.undefined
+  var z2: js.UndefOr[Double] = js.native
 }
 
 object Scale {
   @scala.inline
-  def apply(
-    id: String = null,
-    ignore: js.UndefOr[Boolean] = js.undefined,
-    info: js.Any = null,
-    invisible: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    origin: js.UndefOr[Double] = js.undefined,
-    position: js.Array[_] = null,
-    rotation: js.UndefOr[Double] = js.undefined,
-    scale: js.Array[_] = null,
-    shape: Clockwise = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    style: Fill = null,
-    styleEmphasis: js.Object = null,
-    `type`: String = null,
-    z2: js.UndefOr[Double] = js.undefined
-  ): Scale = {
+  def apply(): Scale = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.get.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (!js.isUndefined(invisible)) __obj.updateDynamic("invisible")(invisible.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(origin)) __obj.updateDynamic("origin")(origin.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styleEmphasis != null) __obj.updateDynamic("styleEmphasis")(styleEmphasis.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(z2)) __obj.updateDynamic("z2")(z2.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scale]
   }
+  @scala.inline
+  implicit class ScaleOps[Self <: Scale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIgnore(value: Boolean): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    @scala.inline
+    def setInfo(value: js.Any): Self = this.set("info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfo: Self = this.set("info", js.undefined)
+    @scala.inline
+    def setInvisible(value: Boolean): Self = this.set("invisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvisible: Self = this.set("invisible", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrigin(value: Double): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+    @scala.inline
+    def setPositionVarargs(value: js.Any*): Self = this.set("position", js.Array(value :_*))
+    @scala.inline
+    def setPosition(value: js.Array[_]): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    @scala.inline
+    def setScaleVarargs(value: js.Any*): Self = this.set("scale", js.Array(value :_*))
+    @scala.inline
+    def setScale(value: js.Array[_]): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setShape(value: Clockwise): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setStyle(value: Fill): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleEmphasis(value: js.Object): Self = this.set("styleEmphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleEmphasis: Self = this.set("styleEmphasis", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setZ2(value: Double): Self = this.set("z2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ2: Self = this.set("z2", js.undefined)
+  }
+  
 }
 

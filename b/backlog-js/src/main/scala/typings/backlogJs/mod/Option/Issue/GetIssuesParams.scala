@@ -6,101 +6,191 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetIssuesParams
   extends /* customField_ */ StringDictionary[js.Any] {
-  var assigneeId: js.UndefOr[js.Array[Double]] = js.undefined
-  var attachment: js.UndefOr[Boolean] = js.undefined
-  var categoryId: js.UndefOr[js.Array[Double]] = js.undefined
-  var count: js.UndefOr[Double] = js.undefined
-  var createdSince: js.UndefOr[String] = js.undefined
-  var createdUntil: js.UndefOr[String] = js.undefined
-  var createdUserId: js.UndefOr[js.Array[Double]] = js.undefined
-  var dueDateSince: js.UndefOr[String] = js.undefined
-  var dueDateUntil: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[js.Array[Double]] = js.undefined
-  var issueTypeId: js.UndefOr[js.Array[Double]] = js.undefined
-  var keyword: String
-  var milestoneId: js.UndefOr[js.Array[Double]] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var order: js.UndefOr[Order] = js.undefined
-  var parentChild: js.UndefOr[ParentChildType] = js.undefined
-  var parentIssueId: js.UndefOr[js.Array[Double]] = js.undefined
-  var priorityId: js.UndefOr[js.Array[Double]] = js.undefined
-  var projectId: js.UndefOr[js.Array[Double]] = js.undefined
-  var resolutionId: js.UndefOr[js.Array[Double]] = js.undefined
-  var sharedFile: js.UndefOr[Boolean] = js.undefined
-  var sort: js.UndefOr[SortKey] = js.undefined
-  var startDateSince: js.UndefOr[String] = js.undefined
-  var startDateUntil: js.UndefOr[String] = js.undefined
-  var statusId: js.UndefOr[js.Array[Double]] = js.undefined
-  var updatedSince: js.UndefOr[String] = js.undefined
-  var updatedUntil: js.UndefOr[String] = js.undefined
-  var versionId: js.UndefOr[js.Array[Double]] = js.undefined
+  var assigneeId: js.UndefOr[js.Array[Double]] = js.native
+  var attachment: js.UndefOr[Boolean] = js.native
+  var categoryId: js.UndefOr[js.Array[Double]] = js.native
+  var count: js.UndefOr[Double] = js.native
+  var createdSince: js.UndefOr[String] = js.native
+  var createdUntil: js.UndefOr[String] = js.native
+  var createdUserId: js.UndefOr[js.Array[Double]] = js.native
+  var dueDateSince: js.UndefOr[String] = js.native
+  var dueDateUntil: js.UndefOr[String] = js.native
+  var id: js.UndefOr[js.Array[Double]] = js.native
+  var issueTypeId: js.UndefOr[js.Array[Double]] = js.native
+  var keyword: String = js.native
+  var milestoneId: js.UndefOr[js.Array[Double]] = js.native
+  var offset: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[Order] = js.native
+  var parentChild: js.UndefOr[ParentChildType] = js.native
+  var parentIssueId: js.UndefOr[js.Array[Double]] = js.native
+  var priorityId: js.UndefOr[js.Array[Double]] = js.native
+  var projectId: js.UndefOr[js.Array[Double]] = js.native
+  var resolutionId: js.UndefOr[js.Array[Double]] = js.native
+  var sharedFile: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[SortKey] = js.native
+  var startDateSince: js.UndefOr[String] = js.native
+  var startDateUntil: js.UndefOr[String] = js.native
+  var statusId: js.UndefOr[js.Array[Double]] = js.native
+  var updatedSince: js.UndefOr[String] = js.native
+  var updatedUntil: js.UndefOr[String] = js.native
+  var versionId: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object GetIssuesParams {
   @scala.inline
-  def apply(
-    keyword: String,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    assigneeId: js.Array[Double] = null,
-    attachment: js.UndefOr[Boolean] = js.undefined,
-    categoryId: js.Array[Double] = null,
-    count: js.UndefOr[Double] = js.undefined,
-    createdSince: String = null,
-    createdUntil: String = null,
-    createdUserId: js.Array[Double] = null,
-    dueDateSince: String = null,
-    dueDateUntil: String = null,
-    id: js.Array[Double] = null,
-    issueTypeId: js.Array[Double] = null,
-    milestoneId: js.Array[Double] = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    order: Order = null,
-    parentChild: ParentChildType = null,
-    parentIssueId: js.Array[Double] = null,
-    priorityId: js.Array[Double] = null,
-    projectId: js.Array[Double] = null,
-    resolutionId: js.Array[Double] = null,
-    sharedFile: js.UndefOr[Boolean] = js.undefined,
-    sort: SortKey = null,
-    startDateSince: String = null,
-    startDateUntil: String = null,
-    statusId: js.Array[Double] = null,
-    updatedSince: String = null,
-    updatedUntil: String = null,
-    versionId: js.Array[Double] = null
-  ): GetIssuesParams = {
+  def apply(keyword: String): GetIssuesParams = {
     val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (assigneeId != null) __obj.updateDynamic("assigneeId")(assigneeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(attachment)) __obj.updateDynamic("attachment")(attachment.get.asInstanceOf[js.Any])
-    if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (createdSince != null) __obj.updateDynamic("createdSince")(createdSince.asInstanceOf[js.Any])
-    if (createdUntil != null) __obj.updateDynamic("createdUntil")(createdUntil.asInstanceOf[js.Any])
-    if (createdUserId != null) __obj.updateDynamic("createdUserId")(createdUserId.asInstanceOf[js.Any])
-    if (dueDateSince != null) __obj.updateDynamic("dueDateSince")(dueDateSince.asInstanceOf[js.Any])
-    if (dueDateUntil != null) __obj.updateDynamic("dueDateUntil")(dueDateUntil.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (issueTypeId != null) __obj.updateDynamic("issueTypeId")(issueTypeId.asInstanceOf[js.Any])
-    if (milestoneId != null) __obj.updateDynamic("milestoneId")(milestoneId.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (parentChild != null) __obj.updateDynamic("parentChild")(parentChild.asInstanceOf[js.Any])
-    if (parentIssueId != null) __obj.updateDynamic("parentIssueId")(parentIssueId.asInstanceOf[js.Any])
-    if (priorityId != null) __obj.updateDynamic("priorityId")(priorityId.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (resolutionId != null) __obj.updateDynamic("resolutionId")(resolutionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharedFile)) __obj.updateDynamic("sharedFile")(sharedFile.get.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (startDateSince != null) __obj.updateDynamic("startDateSince")(startDateSince.asInstanceOf[js.Any])
-    if (startDateUntil != null) __obj.updateDynamic("startDateUntil")(startDateUntil.asInstanceOf[js.Any])
-    if (statusId != null) __obj.updateDynamic("statusId")(statusId.asInstanceOf[js.Any])
-    if (updatedSince != null) __obj.updateDynamic("updatedSince")(updatedSince.asInstanceOf[js.Any])
-    if (updatedUntil != null) __obj.updateDynamic("updatedUntil")(updatedUntil.asInstanceOf[js.Any])
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIssuesParams]
   }
+  @scala.inline
+  implicit class GetIssuesParamsOps[Self <: GetIssuesParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyword(value: String): Self = this.set("keyword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssigneeIdVarargs(value: Double*): Self = this.set("assigneeId", js.Array(value :_*))
+    @scala.inline
+    def setAssigneeId(value: js.Array[Double]): Self = this.set("assigneeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssigneeId: Self = this.set("assigneeId", js.undefined)
+    @scala.inline
+    def setAttachment(value: Boolean): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachment: Self = this.set("attachment", js.undefined)
+    @scala.inline
+    def setCategoryIdVarargs(value: Double*): Self = this.set("categoryId", js.Array(value :_*))
+    @scala.inline
+    def setCategoryId(value: js.Array[Double]): Self = this.set("categoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryId: Self = this.set("categoryId", js.undefined)
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setCreatedSince(value: String): Self = this.set("createdSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedSince: Self = this.set("createdSince", js.undefined)
+    @scala.inline
+    def setCreatedUntil(value: String): Self = this.set("createdUntil", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedUntil: Self = this.set("createdUntil", js.undefined)
+    @scala.inline
+    def setCreatedUserIdVarargs(value: Double*): Self = this.set("createdUserId", js.Array(value :_*))
+    @scala.inline
+    def setCreatedUserId(value: js.Array[Double]): Self = this.set("createdUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedUserId: Self = this.set("createdUserId", js.undefined)
+    @scala.inline
+    def setDueDateSince(value: String): Self = this.set("dueDateSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDueDateSince: Self = this.set("dueDateSince", js.undefined)
+    @scala.inline
+    def setDueDateUntil(value: String): Self = this.set("dueDateUntil", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDueDateUntil: Self = this.set("dueDateUntil", js.undefined)
+    @scala.inline
+    def setIdVarargs(value: Double*): Self = this.set("id", js.Array(value :_*))
+    @scala.inline
+    def setId(value: js.Array[Double]): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIssueTypeIdVarargs(value: Double*): Self = this.set("issueTypeId", js.Array(value :_*))
+    @scala.inline
+    def setIssueTypeId(value: js.Array[Double]): Self = this.set("issueTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssueTypeId: Self = this.set("issueTypeId", js.undefined)
+    @scala.inline
+    def setMilestoneIdVarargs(value: Double*): Self = this.set("milestoneId", js.Array(value :_*))
+    @scala.inline
+    def setMilestoneId(value: js.Array[Double]): Self = this.set("milestoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMilestoneId: Self = this.set("milestoneId", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOrder(value: Order): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+    @scala.inline
+    def setParentChild(value: ParentChildType): Self = this.set("parentChild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentChild: Self = this.set("parentChild", js.undefined)
+    @scala.inline
+    def setParentIssueIdVarargs(value: Double*): Self = this.set("parentIssueId", js.Array(value :_*))
+    @scala.inline
+    def setParentIssueId(value: js.Array[Double]): Self = this.set("parentIssueId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentIssueId: Self = this.set("parentIssueId", js.undefined)
+    @scala.inline
+    def setPriorityIdVarargs(value: Double*): Self = this.set("priorityId", js.Array(value :_*))
+    @scala.inline
+    def setPriorityId(value: js.Array[Double]): Self = this.set("priorityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriorityId: Self = this.set("priorityId", js.undefined)
+    @scala.inline
+    def setProjectIdVarargs(value: Double*): Self = this.set("projectId", js.Array(value :_*))
+    @scala.inline
+    def setProjectId(value: js.Array[Double]): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setResolutionIdVarargs(value: Double*): Self = this.set("resolutionId", js.Array(value :_*))
+    @scala.inline
+    def setResolutionId(value: js.Array[Double]): Self = this.set("resolutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolutionId: Self = this.set("resolutionId", js.undefined)
+    @scala.inline
+    def setSharedFile(value: Boolean): Self = this.set("sharedFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedFile: Self = this.set("sharedFile", js.undefined)
+    @scala.inline
+    def setSort(value: SortKey): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setStartDateSince(value: String): Self = this.set("startDateSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDateSince: Self = this.set("startDateSince", js.undefined)
+    @scala.inline
+    def setStartDateUntil(value: String): Self = this.set("startDateUntil", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDateUntil: Self = this.set("startDateUntil", js.undefined)
+    @scala.inline
+    def setStatusIdVarargs(value: Double*): Self = this.set("statusId", js.Array(value :_*))
+    @scala.inline
+    def setStatusId(value: js.Array[Double]): Self = this.set("statusId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusId: Self = this.set("statusId", js.undefined)
+    @scala.inline
+    def setUpdatedSince(value: String): Self = this.set("updatedSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedSince: Self = this.set("updatedSince", js.undefined)
+    @scala.inline
+    def setUpdatedUntil(value: String): Self = this.set("updatedUntil", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedUntil: Self = this.set("updatedUntil", js.undefined)
+    @scala.inline
+    def setVersionIdVarargs(value: Double*): Self = this.set("versionId", js.Array(value :_*))
+    @scala.inline
+    def setVersionId(value: js.Array[Double]): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("versionId", js.undefined)
+  }
+  
 }
 

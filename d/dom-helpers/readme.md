@@ -10,9 +10,9 @@ tiny modular DOM lib for ie9+
 | ------------------ | :-------------: |
 | Full name          | dom-helpers |
 | Keywords           | dom-helpers, react-component, dom, api, cross-browser, style, event, height, width, dom-helpers, class, classlist, css |
-| # releases         | 10 |
-| # dependents       | 455 |
-| # downloads        | 147891633 |
+| # releases         | 8 |
+| # dependents       | 460 |
+| # downloads        | 153312623 |
 | # stars            | 10 |
 
 ## Links

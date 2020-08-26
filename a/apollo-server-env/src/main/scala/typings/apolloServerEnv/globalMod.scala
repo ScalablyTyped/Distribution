@@ -14,8 +14,8 @@ object globalMod extends js.Object {
   }
   
   def fetch(): js.Promise[Response] = js.native
+  def fetch(input: js.UndefOr[RequestInfo], init: RequestInit): js.Promise[Response] = js.native
   def fetch(input: RequestInfo): js.Promise[Response] = js.native
-  def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
   type Body = typings.apolloServerEnv.fetchMod.Body
   type BodyInit = typings.apolloServerEnv.fetchMod.BodyInit
   type Headers = typings.apolloServerEnv.fetchMod.Headers

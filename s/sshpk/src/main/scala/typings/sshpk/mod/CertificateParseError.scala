@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class CertificateParseError protected () extends Error {
   def this(name: String, format: String, innerErr: js.Any) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

@@ -38,24 +38,50 @@ trait VoiceConnector extends js.Object {
 
 object VoiceConnector {
   @scala.inline
-  def apply(
-    AwsRegion: VoiceConnectorAwsRegion = null,
-    CreatedTimestamp: Iso8601Timestamp = null,
-    Name: VoiceConnectorName = null,
-    OutboundHostName: String = null,
-    RequireEncryption: js.UndefOr[Boolean] = js.undefined,
-    UpdatedTimestamp: Iso8601Timestamp = null,
-    VoiceConnectorId: NonEmptyString = null
-  ): VoiceConnector = {
+  def apply(): VoiceConnector = {
     val __obj = js.Dynamic.literal()
-    if (AwsRegion != null) __obj.updateDynamic("AwsRegion")(AwsRegion.asInstanceOf[js.Any])
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OutboundHostName != null) __obj.updateDynamic("OutboundHostName")(OutboundHostName.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequireEncryption)) __obj.updateDynamic("RequireEncryption")(RequireEncryption.get.asInstanceOf[js.Any])
-    if (UpdatedTimestamp != null) __obj.updateDynamic("UpdatedTimestamp")(UpdatedTimestamp.asInstanceOf[js.Any])
-    if (VoiceConnectorId != null) __obj.updateDynamic("VoiceConnectorId")(VoiceConnectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceConnector]
   }
+  @scala.inline
+  implicit class VoiceConnectorOps[Self <: VoiceConnector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsRegion(value: VoiceConnectorAwsRegion): Self = this.set("AwsRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsRegion: Self = this.set("AwsRegion", js.undefined)
+    @scala.inline
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    @scala.inline
+    def setName(value: VoiceConnectorName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOutboundHostName(value: String): Self = this.set("OutboundHostName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutboundHostName: Self = this.set("OutboundHostName", js.undefined)
+    @scala.inline
+    def setRequireEncryption(value: Boolean): Self = this.set("RequireEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireEncryption: Self = this.set("RequireEncryption", js.undefined)
+    @scala.inline
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
+    @scala.inline
+    def setVoiceConnectorId(value: NonEmptyString): Self = this.set("VoiceConnectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoiceConnectorId: Self = this.set("VoiceConnectorId", js.undefined)
+  }
+  
 }
 

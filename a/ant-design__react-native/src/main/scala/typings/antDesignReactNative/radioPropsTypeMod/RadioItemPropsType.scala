@@ -1,37 +1,41 @@
 package typings.antDesignReactNative.radioPropsTypeMod
 
-import typings.antDesignReactNative.anon.Target
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RadioItemPropsType extends RadioPropsType {
-  var onPress: js.UndefOr[js.Function0[_]] = js.undefined
-  var radioProps: js.UndefOr[js.Object] = js.undefined
+  var onPress: js.UndefOr[js.Function0[_]] = js.native
+  var radioProps: js.UndefOr[js.Object] = js.native
 }
 
 object RadioItemPropsType {
   @scala.inline
-  def apply(
-    checked: js.UndefOr[Boolean] = js.undefined,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onChange: /* e */ Target => Unit = null,
-    onPress: () => _ = null,
-    radioProps: js.Object = null,
-    wrapLabel: js.UndefOr[Boolean] = js.undefined
-  ): RadioItemPropsType = {
+  def apply(): RadioItemPropsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
-    if (radioProps != null) __obj.updateDynamic("radioProps")(radioProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapLabel)) __obj.updateDynamic("wrapLabel")(wrapLabel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioItemPropsType]
   }
+  @scala.inline
+  implicit class RadioItemPropsTypeOps[Self <: RadioItemPropsType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnPress(value: () => _): Self = this.set("onPress", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    @scala.inline
+    def setRadioProps(value: js.Object): Self = this.set("radioProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadioProps: Self = this.set("radioProps", js.undefined)
+  }
+  
 }
 

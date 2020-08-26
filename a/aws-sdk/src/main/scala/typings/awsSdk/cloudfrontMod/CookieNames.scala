@@ -7,21 +7,41 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CookieNames extends js.Object {
   /**
-    * A complex type that contains one Name element for each cookie that you want CloudFront to forward to the origin for this cache behavior. It must contain the same number of items that is specified in the Quantity field. When you set Forward = whitelist (in the CookiePreferences object), this field must contain at least one item.
+    * A list of cookie names.
     */
   var Items: js.UndefOr[CookieNameList] = js.native
   /**
-    * The number of different cookies that you want CloudFront to forward to the origin for this cache behavior. The value must equal the number of items that are in the Items field. When you set Forward = whitelist (in the CookiePreferences object), this value must be 1 or higher.
+    * The number of cookie names in the Items list.
     */
   var Quantity: integer = js.native
 }
 
 object CookieNames {
   @scala.inline
-  def apply(Quantity: integer, Items: CookieNameList = null): CookieNames = {
+  def apply(Quantity: integer): CookieNames = {
     val __obj = js.Dynamic.literal(Quantity = Quantity.asInstanceOf[js.Any])
-    if (Items != null) __obj.updateDynamic("Items")(Items.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieNames]
   }
+  @scala.inline
+  implicit class CookieNamesOps[Self <: CookieNames] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQuantity(value: integer): Self = this.set("Quantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItemsVarargs(value: String*): Self = this.set("Items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: CookieNameList): Self = this.set("Items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("Items", js.undefined)
+  }
+  
 }
 

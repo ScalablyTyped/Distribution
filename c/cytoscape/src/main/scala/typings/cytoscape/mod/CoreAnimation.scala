@@ -52,6 +52,7 @@ trait CoreAnimation extends js.Object {
     * @param jumpToEnd A boolean, indicating whether the currently-running animations should jump to their ends rather than just stopping midway.
     */
   def stop(): Core = js.native
+  def stop(clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): Core = js.native
   def stop(clearQueue: Boolean): Core = js.native
   def stop(clearQueue: Boolean, jumpToEnd: Boolean): Core = js.native
 }

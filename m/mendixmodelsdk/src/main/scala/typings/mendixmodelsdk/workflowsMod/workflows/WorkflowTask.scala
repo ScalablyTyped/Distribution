@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowActivity because Already inherited
-- typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowTask because var conflicts: containerAsWorkflow, id, isLoaded, model, structureTypeName, unit. Inlined name, possibleOutcomes */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.WorkflowTask")
+- typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowTask because var conflicts: caption, containerAsWorkflow, id, isLoaded, model, structureTypeName, unit. Inlined name, possibleOutcomes */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.WorkflowTask")
 @js.native
 abstract class WorkflowTask protected ()
   extends WorkflowActivity
@@ -44,18 +44,10 @@ abstract class WorkflowTask protected ()
     */
   @JSName("possibleOutcomes")
   val possibleOutcomes_FWorkflowTask: IList[IWorkflowTaskOutcome] = js.native
-  /**
-    * Returns the qualified name of this element, or
-    * null if this element is not a part of the model,
-    * or if it or one of its namespace containers does not have a
-    * valid name.
-    */
-  /* CompleteClass */
-  override val qualifiedName: String | Null = js.native
   @JSName("containerAsWorkflow")
   def containerAsWorkflow_MWorkflowTask: Workflow = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */

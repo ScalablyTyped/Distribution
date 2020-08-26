@@ -21,11 +21,30 @@ trait SchemaOnClick extends js.Object {
 
 object SchemaOnClick {
   @scala.inline
-  def apply(action: SchemaFormAction = null, openLink: SchemaOpenLink = null): SchemaOnClick = {
+  def apply(): SchemaOnClick = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (openLink != null) __obj.updateDynamic("openLink")(openLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOnClick]
   }
+  @scala.inline
+  implicit class SchemaOnClickOps[Self <: SchemaOnClick] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: SchemaFormAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setOpenLink(value: SchemaOpenLink): Self = this.set("openLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenLink: Self = this.set("openLink", js.undefined)
+  }
+  
 }
 

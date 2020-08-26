@@ -8,13 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("TextEncoder")
 @js.native
 class TextEncoder ()
-  extends typings.std.TextEncoder {
-  /**
-    * Returns "utf-8".
-    */
-  /* CompleteClass */
-  override val encoding: java.lang.String = js.native
-}
+  extends typings.std.TextEncoder
 
 @JSGlobal("TextEncoder")
 @js.native

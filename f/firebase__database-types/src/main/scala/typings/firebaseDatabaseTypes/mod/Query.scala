@@ -29,7 +29,18 @@ trait Query extends js.Object {
   def limitToFirst(limit: Double): Query = js.native
   def limitToLast(limit: Double): Query = js.native
   def off(): Unit = js.native
+  def off(eventType: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
+  ): Unit = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+    context: js.Object
+  ): Unit = js.native
   def off(eventType: EventType): Unit = js.native
+  def off(eventType: EventType, callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
   def off(
     eventType: EventType,
     callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
@@ -42,6 +53,12 @@ trait Query extends js.Object {
   def on(
     eventType: EventType,
     callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
+  ): js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _] = js.native
+  def on(
+    eventType: EventType,
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+    cancelCallbackOrContext: js.UndefOr[scala.Nothing],
+    context: js.Object
   ): js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _] = js.native
   def on(
     eventType: EventType,
@@ -74,7 +91,47 @@ trait Query extends js.Object {
   def once(eventType: EventType): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: js.UndefOr[scala.Nothing],
+    context: js.Object
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
+    context: js.Object
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: js.Object
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: js.Object,
+    context: js.Object
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: Null,
+    context: js.Object
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
     successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+    failureCallbackOrContext: js.UndefOr[scala.Nothing],
+    context: js.Object
   ): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,

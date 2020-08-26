@@ -72,7 +72,7 @@ object metadataResolverMod extends js.Object {
     var _directiveCache: js.Any = js.native
     var _directiveNormalizer: js.Any = js.native
     var _directiveResolver: js.Any = js.native
-    var _errorCollector: js.UndefOr[js.Any] = js.native
+    var _errorCollector: js.Any = js.native
     var _getDependenciesMetadata: js.Any = js.native
     var _getEntryComponentMetadata: js.Any = js.native
     var _getEntryComponentsFromProvider: js.Any = js.native
@@ -123,11 +123,13 @@ object metadataResolverMod extends js.Object {
     def getHostComponentType(dirType: js.Any): StaticSymbol | ProxyClass = js.native
     def getHostComponentViewClass(dirType: js.Any): StaticSymbol | ProxyClass = js.native
     def getInjectableMetadata(`type`: js.Any): CompileInjectableMetadata | Null = js.native
+    def getInjectableMetadata(`type`: js.Any, dependencies: js.UndefOr[scala.Nothing], throwOnUnknownDeps: Boolean): CompileInjectableMetadata | Null = js.native
     def getInjectableMetadata(`type`: js.Any, dependencies: js.Array[_]): CompileInjectableMetadata | Null = js.native
     def getInjectableMetadata(`type`: js.Any, dependencies: js.Array[_], throwOnUnknownDeps: Boolean): CompileInjectableMetadata | Null = js.native
     def getInjectableMetadata(`type`: js.Any, dependencies: Null, throwOnUnknownDeps: Boolean): CompileInjectableMetadata | Null = js.native
     def getInjectableSummary(`type`: js.Any): CompileTypeSummary = js.native
     def getNgModuleMetadata(moduleType: js.Any): CompileNgModuleMetadata | Null = js.native
+    def getNgModuleMetadata(moduleType: js.Any, throwIfNotFound: js.UndefOr[scala.Nothing], alreadyCollecting: Set[_]): CompileNgModuleMetadata | Null = js.native
     def getNgModuleMetadata(moduleType: js.Any, throwIfNotFound: Boolean): CompileNgModuleMetadata | Null = js.native
     def getNgModuleMetadata(moduleType: js.Any, throwIfNotFound: Boolean, alreadyCollecting: Set[_]): CompileNgModuleMetadata | Null = js.native
     def getNgModuleSummary(moduleType: js.Any): CompileNgModuleSummary | Null = js.native

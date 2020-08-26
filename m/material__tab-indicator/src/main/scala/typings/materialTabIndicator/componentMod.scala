@@ -1,7 +1,6 @@
 package typings.materialTabIndicator
 
 import typings.materialBase.componentMod.MDCComponent
-import typings.materialBase.foundationMod.default
 import typings.materialTabIndicator.foundationMod.MDCTabIndicatorFoundation
 import typings.std.ClientRect
 import typings.std.Element
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object componentMod extends js.Object {
   @js.native
-  class MDCTabIndicator () extends MDCComponent[MDCTabIndicatorFoundation, default[MDCTabIndicatorFoundation]] {
+  class MDCTabIndicator () extends MDCComponent[MDCTabIndicatorFoundation] {
     def activate(): Unit = js.native
     def activate(previousIndicatorClientRect: ClientRect): Unit = js.native
     def computeContentClientRect(): ClientRect = js.native

@@ -18,11 +18,32 @@ trait DescribeWorkspaceDirectoriesResult extends js.Object {
 
 object DescribeWorkspaceDirectoriesResult {
   @scala.inline
-  def apply(Directories: DirectoryList = null, NextToken: PaginationToken = null): DescribeWorkspaceDirectoriesResult = {
+  def apply(): DescribeWorkspaceDirectoriesResult = {
     val __obj = js.Dynamic.literal()
-    if (Directories != null) __obj.updateDynamic("Directories")(Directories.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorkspaceDirectoriesResult]
   }
+  @scala.inline
+  implicit class DescribeWorkspaceDirectoriesResultOps[Self <: DescribeWorkspaceDirectoriesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoriesVarargs(value: WorkspaceDirectory*): Self = this.set("Directories", js.Array(value :_*))
+    @scala.inline
+    def setDirectories(value: DirectoryList): Self = this.set("Directories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectories: Self = this.set("Directories", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

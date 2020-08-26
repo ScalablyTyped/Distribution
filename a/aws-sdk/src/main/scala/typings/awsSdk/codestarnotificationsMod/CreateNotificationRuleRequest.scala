@@ -47,16 +47,49 @@ object CreateNotificationRuleRequest {
     EventTypeIds: EventTypeIds,
     Name: NotificationRuleName,
     Resource: NotificationRuleResource,
-    Targets: Targets,
-    ClientRequestToken: ClientRequestToken = null,
-    Status: NotificationRuleStatus = null,
-    Tags: Tags = null
+    Targets: Targets
   ): CreateNotificationRuleRequest = {
     val __obj = js.Dynamic.literal(DetailType = DetailType.asInstanceOf[js.Any], EventTypeIds = EventTypeIds.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Resource = Resource.asInstanceOf[js.Any], Targets = Targets.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNotificationRuleRequest]
   }
+  @scala.inline
+  implicit class CreateNotificationRuleRequestOps[Self <: CreateNotificationRuleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetailType(value: DetailType): Self = this.set("DetailType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventTypeIdsVarargs(value: EventTypeId*): Self = this.set("EventTypeIds", js.Array(value :_*))
+    @scala.inline
+    def setEventTypeIds(value: EventTypeIds): Self = this.set("EventTypeIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: NotificationRuleName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResource(value: NotificationRuleResource): Self = this.set("Resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetsVarargs(value: Target*): Self = this.set("Targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: Targets): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setStatus(value: NotificationRuleStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

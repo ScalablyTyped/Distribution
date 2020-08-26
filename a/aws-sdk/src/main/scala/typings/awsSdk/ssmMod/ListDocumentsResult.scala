@@ -18,11 +18,32 @@ trait ListDocumentsResult extends js.Object {
 
 object ListDocumentsResult {
   @scala.inline
-  def apply(DocumentIdentifiers: DocumentIdentifierList = null, NextToken: NextToken = null): ListDocumentsResult = {
+  def apply(): ListDocumentsResult = {
     val __obj = js.Dynamic.literal()
-    if (DocumentIdentifiers != null) __obj.updateDynamic("DocumentIdentifiers")(DocumentIdentifiers.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDocumentsResult]
   }
+  @scala.inline
+  implicit class ListDocumentsResultOps[Self <: ListDocumentsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentIdentifiersVarargs(value: DocumentIdentifier*): Self = this.set("DocumentIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setDocumentIdentifiers(value: DocumentIdentifierList): Self = this.set("DocumentIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentIdentifiers: Self = this.set("DocumentIdentifiers", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

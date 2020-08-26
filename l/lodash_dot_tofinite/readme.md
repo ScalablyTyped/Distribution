@@ -12,7 +12,7 @@ The lodash method `_.toFinite` exported as a module.
 | Keywords           | lodash-modularized, tofinite |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 14262 |
+| # downloads        | 15045 |
 | # stars            | 0 |
 
 ## Links

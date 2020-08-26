@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "inversify-restify-utils"
-version := "3.4.0-229d3e"
-scalaVersion := "2.13.2"
+version := "3.4.1-94e3f0"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20200515Z-22b1fb",
-  "org.scalablytyped" %%% "formidable" % "1.0.16-dt-20200522Z-b7dfd4",
-  "org.scalablytyped" %%% "inversify" % "5.0.1-4d94a2",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "restify" % "8.4-dt-20200515Z-92a9c7",
-  "org.scalablytyped" %%% "spdy" % "3.4-dt-20200227Z-690ebc",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20200515Z-1ef598",
+  "org.scalablytyped" %%% "formidable" % "1.0.16-dt-20200522Z-4f85cd",
+  "org.scalablytyped" %%% "inversify" % "5.0.1-c2c26d",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "restify" % "8.4-dt-20200515Z-4a35e7",
+  "org.scalablytyped" %%% "spdy" % "3.4-dt-20200227Z-6a7dd5",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

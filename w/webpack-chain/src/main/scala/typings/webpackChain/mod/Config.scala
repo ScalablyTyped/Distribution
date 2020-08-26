@@ -1,10 +1,6 @@
 package typings.webpackChain.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.webpack.mod.Configuration
-import typings.webpack.mod.ExternalsElement
-import typings.webpack.mod.Options.Stats
-import typings.webpack.mod.Options.WatchOptions
 import typings.webpackChain.webpackChainStrings.development
 import typings.webpackChain.webpackChainStrings.none
 import typings.webpackChain.webpackChainStrings.production
@@ -22,8 +18,11 @@ trait Config
   var optimization: Optimization = js.native
   var output: Output = js.native
   var performance: Performance = js.native
-  var plugins: Plugins[this.type, typings.webpack.mod.Plugin] = js.native
-  var resolve: Resolve = js.native
+  var plugins: Plugins[
+    this.type, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ _
+  ] = js.native
+  var resolve: Resolve[Config] = js.native
   var resolveLoader: ResolveLoader = js.native
   def amd(value: StringDictionary[Boolean]): this.type = js.native
   def bail(value: Boolean): this.type = js.native
@@ -32,8 +31,14 @@ trait Config
   def context(value: String): this.type = js.native
   def devtool(value: DevTool): this.type = js.native
   def entry(name: String): EntryPoint = js.native
-  def externals(value: js.Array[ExternalsElement]): this.type = js.native
-  def externals(value: ExternalsElement): this.type = js.native
+  def externals(
+    value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ExternalsElement */ js.Any
+  ): this.type = js.native
+  def externals(
+    value: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ExternalsElement */ _
+    ]
+  ): this.type = js.native
   def loader(value: js.Any): this.type = js.native
   @JSName("mode")
   def mode_development(value: development): this.type = js.native
@@ -43,15 +48,22 @@ trait Config
   def mode_production(value: production): this.type = js.native
   def name(value: String): this.type = js.native
   def parallelism(value: Double): this.type = js.native
-  def plugin(name: String): Plugin[this.type, typings.webpack.mod.Plugin] = js.native
+  def plugin(name: String): Plugin[
+    this.type, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ _
+  ] = js.native
   def profile(value: Boolean): this.type = js.native
   def recordsInputPath(value: String): this.type = js.native
   def recordsOutputPath(value: String): this.type = js.native
   def recordsPath(value: String): this.type = js.native
-  def stats(value: Stats): this.type = js.native
+  def stats(
+    value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
+  ): this.type = js.native
   def target(value: String): this.type = js.native
-  def toConfig(): Configuration = js.native
+  def toConfig(): js.Any = js.native
   def watch(value: Boolean): this.type = js.native
-  def watchOptions(value: WatchOptions): this.type = js.native
+  def watchOptions(
+    value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.WatchOptions */ js.Any
+  ): this.type = js.native
 }
 

@@ -34,22 +34,50 @@ trait DescribeTagsMessage extends js.Object {
 
 object DescribeTagsMessage {
   @scala.inline
-  def apply(
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    ResourceName: String = null,
-    ResourceType: String = null,
-    TagKeys: TagKeyList = null,
-    TagValues: TagValueList = null
-  ): DescribeTagsMessage = {
+  def apply(): DescribeTagsMessage = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (ResourceName != null) __obj.updateDynamic("ResourceName")(ResourceName.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (TagKeys != null) __obj.updateDynamic("TagKeys")(TagKeys.asInstanceOf[js.Any])
-    if (TagValues != null) __obj.updateDynamic("TagValues")(TagValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTagsMessage]
   }
+  @scala.inline
+  implicit class DescribeTagsMessageOps[Self <: DescribeTagsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setResourceName(value: String): Self = this.set("ResourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("ResourceName", js.undefined)
+    @scala.inline
+    def setResourceType(value: String): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setTagKeysVarargs(value: String*): Self = this.set("TagKeys", js.Array(value :_*))
+    @scala.inline
+    def setTagKeys(value: TagKeyList): Self = this.set("TagKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagKeys: Self = this.set("TagKeys", js.undefined)
+    @scala.inline
+    def setTagValuesVarargs(value: String*): Self = this.set("TagValues", js.Array(value :_*))
+    @scala.inline
+    def setTagValues(value: TagValueList): Self = this.set("TagValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagValues: Self = this.set("TagValues", js.undefined)
+  }
+  
 }
 

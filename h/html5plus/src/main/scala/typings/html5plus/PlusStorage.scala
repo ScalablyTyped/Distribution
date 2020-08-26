@@ -52,6 +52,7 @@ trait PlusStorage extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/storage.html](http://www.html5plus.org/doc/zh_cn/storage.html)
     */
   def setItem(): Unit = js.native
+  def setItem(key: js.UndefOr[scala.Nothing], value: String): Unit = js.native
   def setItem(key: String): Unit = js.native
   def setItem(key: String, value: String): Unit = js.native
 }

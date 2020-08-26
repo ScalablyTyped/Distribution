@@ -18,10 +18,28 @@ trait DeprecateThingTypeRequest extends js.Object {
 
 object DeprecateThingTypeRequest {
   @scala.inline
-  def apply(thingTypeName: ThingTypeName, undoDeprecate: js.UndefOr[UndoDeprecate] = js.undefined): DeprecateThingTypeRequest = {
+  def apply(thingTypeName: ThingTypeName): DeprecateThingTypeRequest = {
     val __obj = js.Dynamic.literal(thingTypeName = thingTypeName.asInstanceOf[js.Any])
-    if (!js.isUndefined(undoDeprecate)) __obj.updateDynamic("undoDeprecate")(undoDeprecate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprecateThingTypeRequest]
   }
+  @scala.inline
+  implicit class DeprecateThingTypeRequestOps[Self <: DeprecateThingTypeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingTypeName(value: ThingTypeName): Self = this.set("thingTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUndoDeprecate(value: UndoDeprecate): Self = this.set("undoDeprecate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUndoDeprecate: Self = this.set("undoDeprecate", js.undefined)
+  }
+  
 }
 

@@ -1,8 +1,8 @@
 package typings.openfin
 
 import typings.node.eventsMod.EventEmitter
-import typings.openfin.entityTypeMod.EntityTypeHelpers
 import typings.openfin.identityMod.Identity
+import typings.openfin.utilEntityTypeMod.EntityTypeHelpers
 import typings.openfin.v2MainMod.Frame
 import typings.openfin.viewViewMod.View
 import typings.std.Window

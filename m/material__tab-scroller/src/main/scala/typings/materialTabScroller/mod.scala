@@ -32,9 +32,9 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object MDCTabScrollerFoundation extends js.Object {
-    val cssClasses: ANIMATING = js.native
-    val defaultAdapter: MDCTabScrollerAdapter = js.native
-    val strings: AREASELECTOR = js.native
+    def cssClasses: ANIMATING = js.native
+    def defaultAdapter: MDCTabScrollerAdapter = js.native
+    def strings: AREASELECTOR = js.native
   }
   
   /**

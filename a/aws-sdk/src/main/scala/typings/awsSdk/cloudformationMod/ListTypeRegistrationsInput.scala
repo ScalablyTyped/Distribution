@@ -34,22 +34,46 @@ trait ListTypeRegistrationsInput extends js.Object {
 
 object ListTypeRegistrationsInput {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    RegistrationStatusFilter: RegistrationStatus = null,
-    Type: RegistryType = null,
-    TypeArn: TypeArn = null,
-    TypeName: TypeName = null
-  ): ListTypeRegistrationsInput = {
+  def apply(): ListTypeRegistrationsInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (RegistrationStatusFilter != null) __obj.updateDynamic("RegistrationStatusFilter")(RegistrationStatusFilter.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (TypeArn != null) __obj.updateDynamic("TypeArn")(TypeArn.asInstanceOf[js.Any])
-    if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTypeRegistrationsInput]
   }
+  @scala.inline
+  implicit class ListTypeRegistrationsInputOps[Self <: ListTypeRegistrationsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRegistrationStatusFilter(value: RegistrationStatus): Self = this.set("RegistrationStatusFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrationStatusFilter: Self = this.set("RegistrationStatusFilter", js.undefined)
+    @scala.inline
+    def setType(value: RegistryType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setTypeArn(value: TypeArn): Self = this.set("TypeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeArn: Self = this.set("TypeArn", js.undefined)
+    @scala.inline
+    def setTypeName(value: TypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeName: Self = this.set("TypeName", js.undefined)
+  }
+  
 }
 

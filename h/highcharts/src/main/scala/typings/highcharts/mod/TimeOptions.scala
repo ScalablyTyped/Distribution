@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimeOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Gantt) A custom `Date` class for advanced date
     * handling. For example, JDate can be hooked in to handle Jalali dates.
     */
-  var Date: js.UndefOr[js.Any] = js.undefined
+  var Date: js.UndefOr[js.Any] = js.native
   /**
     * (Highcharts, Highstock, Gantt) A callback to return the time zone offset
     * for a given datetime. It takes the timestamp in terms of milliseconds
@@ -18,7 +19,7 @@ trait TimeOptions extends js.Object {
     * using their local DST crossover dates, with the help of external
     * libraries.
     */
-  var getTimezoneOffset: js.UndefOr[TimezoneOffsetCallbackFunction] = js.undefined
+  var getTimezoneOffset: js.UndefOr[TimezoneOffsetCallbackFunction] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Requires moment.js. If the timezone option
     * is specified, it creates a default getTimezoneOffset function that looks
@@ -26,14 +27,14 @@ trait TimeOptions extends js.Object {
     * this throws a Highcharts error in the console, but does not crash the
     * chart.
     */
-  var timezone: js.UndefOr[String] = js.undefined
+  var timezone: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Gantt) The timezone offset in minutes. Positive
     * values are west, negative values are east of UTC, as in the ECMAScript
     * getTimezoneOffset method. Use this to display UTC based data in a
     * predefined time zone.
     */
-  var timezoneOffset: js.UndefOr[Double] = js.undefined
+  var timezoneOffset: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to use UTC time for axis
     * scaling, tickmark placement and time display in `Highcharts.dateFormat`.
@@ -42,25 +43,47 @@ trait TimeOptions extends js.Object {
     * is loaded in real time or when correct Daylight Saving Time transitions
     * are required.
     */
-  var useUTC: js.UndefOr[Boolean] = js.undefined
+  var useUTC: js.UndefOr[Boolean] = js.native
 }
 
 object TimeOptions {
   @scala.inline
-  def apply(
-    Date: js.Any = null,
-    getTimezoneOffset: /* timestamp */ Double => Double = null,
-    timezone: String = null,
-    timezoneOffset: js.UndefOr[Double] = js.undefined,
-    useUTC: js.UndefOr[Boolean] = js.undefined
-  ): TimeOptions = {
+  def apply(): TimeOptions = {
     val __obj = js.Dynamic.literal()
-    if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
-    if (getTimezoneOffset != null) __obj.updateDynamic("getTimezoneOffset")(js.Any.fromFunction1(getTimezoneOffset))
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (!js.isUndefined(timezoneOffset)) __obj.updateDynamic("timezoneOffset")(timezoneOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeOptions]
   }
+  @scala.inline
+  implicit class TimeOptionsOps[Self <: TimeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: js.Any): Self = this.set("Date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("Date", js.undefined)
+    @scala.inline
+    def setGetTimezoneOffset(value: /* timestamp */ Double => Double): Self = this.set("getTimezoneOffset", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetTimezoneOffset: Self = this.set("getTimezoneOffset", js.undefined)
+    @scala.inline
+    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    @scala.inline
+    def setTimezoneOffset(value: Double): Self = this.set("timezoneOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezoneOffset: Self = this.set("timezoneOffset", js.undefined)
+    @scala.inline
+    def setUseUTC(value: Boolean): Self = this.set("useUTC", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseUTC: Self = this.set("useUTC", js.undefined)
+  }
+  
 }
 

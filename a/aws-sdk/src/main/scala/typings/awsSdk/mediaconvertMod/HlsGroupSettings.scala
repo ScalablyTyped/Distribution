@@ -110,60 +110,128 @@ trait HlsGroupSettings extends js.Object {
 
 object HlsGroupSettings {
   @scala.inline
-  def apply(
-    AdMarkers: listOfHlsAdMarkers = null,
-    AdditionalManifests: listOfHlsAdditionalManifest = null,
-    BaseUrl: string = null,
-    CaptionLanguageMappings: listOfHlsCaptionLanguageMapping = null,
-    CaptionLanguageSetting: HlsCaptionLanguageSetting = null,
-    ClientCache: HlsClientCache = null,
-    CodecSpecification: HlsCodecSpecification = null,
-    Destination: stringPatternS3 = null,
-    DestinationSettings: DestinationSettings = null,
-    DirectoryStructure: HlsDirectoryStructure = null,
-    Encryption: HlsEncryptionSettings = null,
-    ManifestCompression: HlsManifestCompression = null,
-    ManifestDurationFormat: HlsManifestDurationFormat = null,
-    MinFinalSegmentLength: js.UndefOr[doubleMin0Max2147483647] = js.undefined,
-    MinSegmentLength: js.UndefOr[integerMin0Max2147483647] = js.undefined,
-    OutputSelection: HlsOutputSelection = null,
-    ProgramDateTime: HlsProgramDateTime = null,
-    ProgramDateTimePeriod: js.UndefOr[integerMin0Max3600] = js.undefined,
-    SegmentControl: HlsSegmentControl = null,
-    SegmentLength: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    SegmentsPerSubdirectory: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    StreamInfResolution: HlsStreamInfResolution = null,
-    TimedMetadataId3Frame: HlsTimedMetadataId3Frame = null,
-    TimedMetadataId3Period: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined,
-    TimestampDeltaMilliseconds: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined
-  ): HlsGroupSettings = {
+  def apply(): HlsGroupSettings = {
     val __obj = js.Dynamic.literal()
-    if (AdMarkers != null) __obj.updateDynamic("AdMarkers")(AdMarkers.asInstanceOf[js.Any])
-    if (AdditionalManifests != null) __obj.updateDynamic("AdditionalManifests")(AdditionalManifests.asInstanceOf[js.Any])
-    if (BaseUrl != null) __obj.updateDynamic("BaseUrl")(BaseUrl.asInstanceOf[js.Any])
-    if (CaptionLanguageMappings != null) __obj.updateDynamic("CaptionLanguageMappings")(CaptionLanguageMappings.asInstanceOf[js.Any])
-    if (CaptionLanguageSetting != null) __obj.updateDynamic("CaptionLanguageSetting")(CaptionLanguageSetting.asInstanceOf[js.Any])
-    if (ClientCache != null) __obj.updateDynamic("ClientCache")(ClientCache.asInstanceOf[js.Any])
-    if (CodecSpecification != null) __obj.updateDynamic("CodecSpecification")(CodecSpecification.asInstanceOf[js.Any])
-    if (Destination != null) __obj.updateDynamic("Destination")(Destination.asInstanceOf[js.Any])
-    if (DestinationSettings != null) __obj.updateDynamic("DestinationSettings")(DestinationSettings.asInstanceOf[js.Any])
-    if (DirectoryStructure != null) __obj.updateDynamic("DirectoryStructure")(DirectoryStructure.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (ManifestCompression != null) __obj.updateDynamic("ManifestCompression")(ManifestCompression.asInstanceOf[js.Any])
-    if (ManifestDurationFormat != null) __obj.updateDynamic("ManifestDurationFormat")(ManifestDurationFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinFinalSegmentLength)) __obj.updateDynamic("MinFinalSegmentLength")(MinFinalSegmentLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinSegmentLength)) __obj.updateDynamic("MinSegmentLength")(MinSegmentLength.get.asInstanceOf[js.Any])
-    if (OutputSelection != null) __obj.updateDynamic("OutputSelection")(OutputSelection.asInstanceOf[js.Any])
-    if (ProgramDateTime != null) __obj.updateDynamic("ProgramDateTime")(ProgramDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgramDateTimePeriod)) __obj.updateDynamic("ProgramDateTimePeriod")(ProgramDateTimePeriod.get.asInstanceOf[js.Any])
-    if (SegmentControl != null) __obj.updateDynamic("SegmentControl")(SegmentControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentLength)) __obj.updateDynamic("SegmentLength")(SegmentLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentsPerSubdirectory)) __obj.updateDynamic("SegmentsPerSubdirectory")(SegmentsPerSubdirectory.get.asInstanceOf[js.Any])
-    if (StreamInfResolution != null) __obj.updateDynamic("StreamInfResolution")(StreamInfResolution.asInstanceOf[js.Any])
-    if (TimedMetadataId3Frame != null) __obj.updateDynamic("TimedMetadataId3Frame")(TimedMetadataId3Frame.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimedMetadataId3Period)) __obj.updateDynamic("TimedMetadataId3Period")(TimedMetadataId3Period.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimestampDeltaMilliseconds)) __obj.updateDynamic("TimestampDeltaMilliseconds")(TimestampDeltaMilliseconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsGroupSettings]
   }
+  @scala.inline
+  implicit class HlsGroupSettingsOps[Self <: HlsGroupSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdMarkersVarargs(value: HlsAdMarkers*): Self = this.set("AdMarkers", js.Array(value :_*))
+    @scala.inline
+    def setAdMarkers(value: listOfHlsAdMarkers): Self = this.set("AdMarkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdMarkers: Self = this.set("AdMarkers", js.undefined)
+    @scala.inline
+    def setAdditionalManifestsVarargs(value: HlsAdditionalManifest*): Self = this.set("AdditionalManifests", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalManifests(value: listOfHlsAdditionalManifest): Self = this.set("AdditionalManifests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalManifests: Self = this.set("AdditionalManifests", js.undefined)
+    @scala.inline
+    def setBaseUrl(value: string): Self = this.set("BaseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseUrl: Self = this.set("BaseUrl", js.undefined)
+    @scala.inline
+    def setCaptionLanguageMappingsVarargs(value: HlsCaptionLanguageMapping*): Self = this.set("CaptionLanguageMappings", js.Array(value :_*))
+    @scala.inline
+    def setCaptionLanguageMappings(value: listOfHlsCaptionLanguageMapping): Self = this.set("CaptionLanguageMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionLanguageMappings: Self = this.set("CaptionLanguageMappings", js.undefined)
+    @scala.inline
+    def setCaptionLanguageSetting(value: HlsCaptionLanguageSetting): Self = this.set("CaptionLanguageSetting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionLanguageSetting: Self = this.set("CaptionLanguageSetting", js.undefined)
+    @scala.inline
+    def setClientCache(value: HlsClientCache): Self = this.set("ClientCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientCache: Self = this.set("ClientCache", js.undefined)
+    @scala.inline
+    def setCodecSpecification(value: HlsCodecSpecification): Self = this.set("CodecSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodecSpecification: Self = this.set("CodecSpecification", js.undefined)
+    @scala.inline
+    def setDestination(value: stringPatternS3): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("Destination", js.undefined)
+    @scala.inline
+    def setDestinationSettings(value: DestinationSettings): Self = this.set("DestinationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationSettings: Self = this.set("DestinationSettings", js.undefined)
+    @scala.inline
+    def setDirectoryStructure(value: HlsDirectoryStructure): Self = this.set("DirectoryStructure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryStructure: Self = this.set("DirectoryStructure", js.undefined)
+    @scala.inline
+    def setEncryption(value: HlsEncryptionSettings): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setManifestCompression(value: HlsManifestCompression): Self = this.set("ManifestCompression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestCompression: Self = this.set("ManifestCompression", js.undefined)
+    @scala.inline
+    def setManifestDurationFormat(value: HlsManifestDurationFormat): Self = this.set("ManifestDurationFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestDurationFormat: Self = this.set("ManifestDurationFormat", js.undefined)
+    @scala.inline
+    def setMinFinalSegmentLength(value: doubleMin0Max2147483647): Self = this.set("MinFinalSegmentLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinFinalSegmentLength: Self = this.set("MinFinalSegmentLength", js.undefined)
+    @scala.inline
+    def setMinSegmentLength(value: integerMin0Max2147483647): Self = this.set("MinSegmentLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSegmentLength: Self = this.set("MinSegmentLength", js.undefined)
+    @scala.inline
+    def setOutputSelection(value: HlsOutputSelection): Self = this.set("OutputSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputSelection: Self = this.set("OutputSelection", js.undefined)
+    @scala.inline
+    def setProgramDateTime(value: HlsProgramDateTime): Self = this.set("ProgramDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgramDateTime: Self = this.set("ProgramDateTime", js.undefined)
+    @scala.inline
+    def setProgramDateTimePeriod(value: integerMin0Max3600): Self = this.set("ProgramDateTimePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgramDateTimePeriod: Self = this.set("ProgramDateTimePeriod", js.undefined)
+    @scala.inline
+    def setSegmentControl(value: HlsSegmentControl): Self = this.set("SegmentControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentControl: Self = this.set("SegmentControl", js.undefined)
+    @scala.inline
+    def setSegmentLength(value: integerMin1Max2147483647): Self = this.set("SegmentLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentLength: Self = this.set("SegmentLength", js.undefined)
+    @scala.inline
+    def setSegmentsPerSubdirectory(value: integerMin1Max2147483647): Self = this.set("SegmentsPerSubdirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentsPerSubdirectory: Self = this.set("SegmentsPerSubdirectory", js.undefined)
+    @scala.inline
+    def setStreamInfResolution(value: HlsStreamInfResolution): Self = this.set("StreamInfResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamInfResolution: Self = this.set("StreamInfResolution", js.undefined)
+    @scala.inline
+    def setTimedMetadataId3Frame(value: HlsTimedMetadataId3Frame): Self = this.set("TimedMetadataId3Frame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimedMetadataId3Frame: Self = this.set("TimedMetadataId3Frame", js.undefined)
+    @scala.inline
+    def setTimedMetadataId3Period(value: integerMinNegative2147483648Max2147483647): Self = this.set("TimedMetadataId3Period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimedMetadataId3Period: Self = this.set("TimedMetadataId3Period", js.undefined)
+    @scala.inline
+    def setTimestampDeltaMilliseconds(value: integerMinNegative2147483648Max2147483647): Self = this.set("TimestampDeltaMilliseconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampDeltaMilliseconds: Self = this.set("TimestampDeltaMilliseconds", js.undefined)
+  }
+  
 }
 

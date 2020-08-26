@@ -28,6 +28,7 @@ class ResourceSites protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSite] = js.native
   def get(callback: BodyResponseCallback[SchemaSite]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSite] = js.native
   def get(params: ParamsResourceSitesGet): GaxiosPromise[SchemaSite] = js.native
   def get(params: ParamsResourceSitesGet, callback: BodyResponseCallback[SchemaSite]): Unit = js.native
   def get(
@@ -52,6 +53,7 @@ class ResourceSites protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaSite] = js.native
   def insert(callback: BodyResponseCallback[SchemaSite]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSite] = js.native
   def insert(params: ParamsResourceSitesInsert): GaxiosPromise[SchemaSite] = js.native
   def insert(params: ParamsResourceSitesInsert, callback: BodyResponseCallback[SchemaSite]): Unit = js.native
   def insert(
@@ -95,6 +97,7 @@ class ResourceSites protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSitesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSitesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSitesListResponse] = js.native
   def list(params: ParamsResourceSitesList): GaxiosPromise[SchemaSitesListResponse] = js.native
   def list(params: ParamsResourceSitesList, callback: BodyResponseCallback[SchemaSitesListResponse]): Unit = js.native
   def list(
@@ -124,6 +127,7 @@ class ResourceSites protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaSite] = js.native
   def patch(callback: BodyResponseCallback[SchemaSite]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSite] = js.native
   def patch(params: ParamsResourceSitesPatch): GaxiosPromise[SchemaSite] = js.native
   def patch(params: ParamsResourceSitesPatch, callback: BodyResponseCallback[SchemaSite]): Unit = js.native
   def patch(
@@ -152,6 +156,7 @@ class ResourceSites protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaSite] = js.native
   def update(callback: BodyResponseCallback[SchemaSite]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSite] = js.native
   def update(params: ParamsResourceSitesUpdate): GaxiosPromise[SchemaSite] = js.native
   def update(params: ParamsResourceSitesUpdate, callback: BodyResponseCallback[SchemaSite]): Unit = js.native
   def update(

@@ -11,45 +11,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AdjustMapMargin extends js.Object {
-  var adjustMapMargin: js.UndefOr[Boolean] = js.undefined
-  var collapseOnBlur: js.UndefOr[Boolean] = js.undefined
-  var float: js.UndefOr[none | left | right] = js.undefined
-  var floatIndex: js.UndefOr[Double] = js.undefined
-  var popupAnimate: js.UndefOr[Boolean] = js.undefined
-  var popupFloat: js.UndefOr[auto | left | right] = js.undefined
-  var popupWidth: js.UndefOr[String] = js.undefined
-  var position: js.UndefOr[Bottom] = js.undefined
-  var size: js.UndefOr[auto | small | medium | large] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var adjustMapMargin: js.UndefOr[Boolean] = js.native
+  var collapseOnBlur: js.UndefOr[Boolean] = js.native
+  var float: js.UndefOr[none | left | right] = js.native
+  var floatIndex: js.UndefOr[Double] = js.native
+  var popupAnimate: js.UndefOr[Boolean] = js.native
+  var popupFloat: js.UndefOr[auto | left | right] = js.native
+  var popupWidth: js.UndefOr[String] = js.native
+  var position: js.UndefOr[Bottom] = js.native
+  var size: js.UndefOr[auto | small | medium | large] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object AdjustMapMargin {
   @scala.inline
-  def apply(
-    adjustMapMargin: js.UndefOr[Boolean] = js.undefined,
-    collapseOnBlur: js.UndefOr[Boolean] = js.undefined,
-    float: none | left | right = null,
-    floatIndex: js.UndefOr[Double] = js.undefined,
-    popupAnimate: js.UndefOr[Boolean] = js.undefined,
-    popupFloat: auto | left | right = null,
-    popupWidth: String = null,
-    position: Bottom = null,
-    size: auto | small | medium | large = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): AdjustMapMargin = {
+  def apply(): AdjustMapMargin = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adjustMapMargin)) __obj.updateDynamic("adjustMapMargin")(adjustMapMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapseOnBlur)) __obj.updateDynamic("collapseOnBlur")(collapseOnBlur.get.asInstanceOf[js.Any])
-    if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (!js.isUndefined(floatIndex)) __obj.updateDynamic("floatIndex")(floatIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(popupAnimate)) __obj.updateDynamic("popupAnimate")(popupAnimate.get.asInstanceOf[js.Any])
-    if (popupFloat != null) __obj.updateDynamic("popupFloat")(popupFloat.asInstanceOf[js.Any])
-    if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdjustMapMargin]
   }
+  @scala.inline
+  implicit class AdjustMapMarginOps[Self <: AdjustMapMargin] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdjustMapMargin(value: Boolean): Self = this.set("adjustMapMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustMapMargin: Self = this.set("adjustMapMargin", js.undefined)
+    @scala.inline
+    def setCollapseOnBlur(value: Boolean): Self = this.set("collapseOnBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapseOnBlur: Self = this.set("collapseOnBlur", js.undefined)
+    @scala.inline
+    def setFloat(value: none | left | right): Self = this.set("float", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloat: Self = this.set("float", js.undefined)
+    @scala.inline
+    def setFloatIndex(value: Double): Self = this.set("floatIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloatIndex: Self = this.set("floatIndex", js.undefined)
+    @scala.inline
+    def setPopupAnimate(value: Boolean): Self = this.set("popupAnimate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupAnimate: Self = this.set("popupAnimate", js.undefined)
+    @scala.inline
+    def setPopupFloat(value: auto | left | right): Self = this.set("popupFloat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupFloat: Self = this.set("popupFloat", js.undefined)
+    @scala.inline
+    def setPopupWidth(value: String): Self = this.set("popupWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupWidth: Self = this.set("popupWidth", js.undefined)
+    @scala.inline
+    def setPosition(value: Bottom): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSize(value: auto | small | medium | large): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

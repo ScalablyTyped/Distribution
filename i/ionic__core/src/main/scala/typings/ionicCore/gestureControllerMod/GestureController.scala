@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GestureController extends js.Object {
-  var capturedId: js.UndefOr[js.Any] = js.native
+  var capturedId: js.Any = js.native
   var disabledGestures: js.Any = js.native
   var disabledScroll: js.Any = js.native
   var gestureId: js.Any = js.native

@@ -1,14 +1,6 @@
 package typings.winrt.global.Windows.Security
 
-import typings.winrt.Windows.Foundation.Collections.IIterator
-import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
-import typings.winrt.Windows.Foundation.Collections.IMapView
-import typings.winrt.Windows.Foundation.Collections.IPropertySet
-import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
-import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol
-import typings.winrt.Windows.Security.Credentials.UI.CredentialSaveOption
-import typings.winrt.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,57 +12,15 @@ object Credentials extends js.Object {
   class PasswordCredential ()
     extends typings.winrt.Windows.Security.Credentials.PasswordCredential {
     def this(resource: String, userName: String, password: String) = this()
-    /* CompleteClass */
-    override var password: String = js.native
-    /* CompleteClass */
-    override var properties: IPropertySet = js.native
-    /* CompleteClass */
-    override var resource: String = js.native
-    /* CompleteClass */
-    override var userName: String = js.native
-    /* CompleteClass */
-    override def retrievePassword(): Unit = js.native
   }
   
   @js.native
   class PasswordCredentialPropertyStore ()
-    extends typings.winrt.Windows.Security.Credentials.PasswordCredentialPropertyStore {
-    /* CompleteClass */
-    override var onmapchanged: js.Any = js.native
-    /* CompleteClass */
-    override var size: Double = js.native
-    /* CompleteClass */
-    override def clear(): Unit = js.native
-    /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[String, js.Any]] = js.native
-    /* CompleteClass */
-    override def getView(): IMapView[String, js.Any] = js.native
-    /* CompleteClass */
-    override def hasKey(key: String): Boolean = js.native
-    /* CompleteClass */
-    override def insert(key: String, value: js.Any): Boolean = js.native
-    /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
-    /* CompleteClass */
-    override def remove(key: String): Unit = js.native
-  }
+    extends typings.winrt.Windows.Security.Credentials.PasswordCredentialPropertyStore
   
   @js.native
   class PasswordVault ()
-    extends typings.winrt.Windows.Security.Credentials.PasswordVault {
-    /* CompleteClass */
-    override def add(credential: typings.winrt.Windows.Security.Credentials.PasswordCredential): Unit = js.native
-    /* CompleteClass */
-    override def findAllByResource(resource: String): IVectorView[typings.winrt.Windows.Security.Credentials.PasswordCredential] = js.native
-    /* CompleteClass */
-    override def findAllByUserName(userName: String): IVectorView[typings.winrt.Windows.Security.Credentials.PasswordCredential] = js.native
-    /* CompleteClass */
-    override def remove(credential: typings.winrt.Windows.Security.Credentials.PasswordCredential): Unit = js.native
-    /* CompleteClass */
-    override def retrieve(resource: String, userName: String): typings.winrt.Windows.Security.Credentials.PasswordCredential = js.native
-    /* CompleteClass */
-    override def retrieveAll(): IVectorView[typings.winrt.Windows.Security.Credentials.PasswordCredential] = js.native
-  }
+    extends typings.winrt.Windows.Security.Credentials.PasswordVault
   
   @js.native
   object UI extends js.Object {
@@ -80,47 +30,11 @@ object Credentials extends js.Object {
     
     @js.native
     class CredentialPickerOptions ()
-      extends typings.winrt.Windows.Security.Credentials.UI.CredentialPickerOptions {
-      /* CompleteClass */
-      override var alwaysDisplayDialog: Boolean = js.native
-      /* CompleteClass */
-      override var authenticationProtocol: AuthenticationProtocol = js.native
-      /* CompleteClass */
-      override var callerSavesCredential: Boolean = js.native
-      /* CompleteClass */
-      override var caption: String = js.native
-      /* CompleteClass */
-      override var credentialSaveOption: CredentialSaveOption = js.native
-      /* CompleteClass */
-      override var customAuthenticationProtocol: String = js.native
-      /* CompleteClass */
-      override var errorCode: Double = js.native
-      /* CompleteClass */
-      override var message: String = js.native
-      /* CompleteClass */
-      override var previousCredential: IBuffer = js.native
-      /* CompleteClass */
-      override var targetName: String = js.native
-    }
+      extends typings.winrt.Windows.Security.Credentials.UI.CredentialPickerOptions
     
     @js.native
     class CredentialPickerResults ()
-      extends typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults {
-      /* CompleteClass */
-      override var credential: IBuffer = js.native
-      /* CompleteClass */
-      override var credentialDomainName: String = js.native
-      /* CompleteClass */
-      override var credentialPassword: String = js.native
-      /* CompleteClass */
-      override var credentialSaveOption: CredentialSaveOption = js.native
-      /* CompleteClass */
-      override var credentialSaved: Boolean = js.native
-      /* CompleteClass */
-      override var credentialUserName: String = js.native
-      /* CompleteClass */
-      override var errorCode: Double = js.native
-    }
+      extends typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults
     
     @js.native
     object AuthenticationProtocol extends js.Object {

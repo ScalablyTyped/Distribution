@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * @see XGraphicTransformer
   * @see GraphicDescriptor
   */
+@js.native
 trait Graphic
   extends GraphicDescriptor
      with XGraphic

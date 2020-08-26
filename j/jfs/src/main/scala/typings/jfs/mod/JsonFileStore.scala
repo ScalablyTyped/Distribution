@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 trait JsonFileStore
   extends Instantiable0[Instance[Storable]]
      with Instantiable1[/* name */ String, Instance[Storable]]
-     with Instantiable2[/* name */ String, /* opts */ Options, Instance[Storable]]
+     with Instantiable2[js.UndefOr[/* name */ String], /* opts */ Options, Instance[Storable]]
 

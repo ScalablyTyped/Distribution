@@ -13,17 +13,26 @@ import scala.scalajs.js.annotation._
 @js.native
 object serializeMod extends js.Object {
   def default(element: ReactNode): String = js.native
+  def default(element: ReactNode, context: js.UndefOr[scala.Nothing], legacyContext: js.Any): String = js.native
   def default(element: ReactNode, context: js.Any): String = js.native
   def default(element: ReactNode, context: js.Any, legacyContext: js.Any): String = js.native
   def hasPrefix(string: String, prefixes: js.Array[String]): Boolean = js.native
   def renderAttributes(props: js.Any): String = js.native
   def renderComponent(Component: ComponentType[js.Object], props: js.Any): String = js.native
+  def renderComponent(
+    Component: ComponentType[js.Object],
+    props: js.Any,
+    context: js.UndefOr[scala.Nothing],
+    legacyContext: js.Any
+  ): String = js.native
   def renderComponent(Component: ComponentType[js.Object], props: js.Any, context: js.Any): String = js.native
   def renderComponent(Component: ComponentType[js.Object], props: js.Any, context: js.Any, legacyContext: js.Any): String = js.native
   def renderElement(element: ReactNode): String = js.native
+  def renderElement(element: ReactNode, context: js.UndefOr[scala.Nothing], legacyContext: js.Any): String = js.native
   def renderElement(element: ReactNode, context: js.Any): String = js.native
   def renderElement(element: ReactNode, context: js.Any, legacyContext: js.Any): String = js.native
   def renderNativeComponent(`type`: String, props: js.Any): String = js.native
+  def renderNativeComponent(`type`: String, props: js.Any, context: js.UndefOr[scala.Nothing], legacyContext: js.Any): String = js.native
   def renderNativeComponent(`type`: String, props: js.Any, context: js.Any): String = js.native
   def renderNativeComponent(`type`: String, props: js.Any, context: js.Any, legacyContext: js.Any): String = js.native
   def renderStyle(style: js.Any): String = js.native

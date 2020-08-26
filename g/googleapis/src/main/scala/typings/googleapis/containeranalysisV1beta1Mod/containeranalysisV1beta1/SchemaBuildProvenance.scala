@@ -71,36 +71,78 @@ trait SchemaBuildProvenance extends js.Object {
 
 object SchemaBuildProvenance {
   @scala.inline
-  def apply(
-    buildOptions: StringDictionary[String] = null,
-    builderVersion: String = null,
-    builtArtifacts: js.Array[SchemaArtifact] = null,
-    commands: js.Array[SchemaCommand] = null,
-    createTime: String = null,
-    creator: String = null,
-    endTime: String = null,
-    id: String = null,
-    logsUri: String = null,
-    projectId: String = null,
-    sourceProvenance: SchemaSource = null,
-    startTime: String = null,
-    triggerId: String = null
-  ): SchemaBuildProvenance = {
+  def apply(): SchemaBuildProvenance = {
     val __obj = js.Dynamic.literal()
-    if (buildOptions != null) __obj.updateDynamic("buildOptions")(buildOptions.asInstanceOf[js.Any])
-    if (builderVersion != null) __obj.updateDynamic("builderVersion")(builderVersion.asInstanceOf[js.Any])
-    if (builtArtifacts != null) __obj.updateDynamic("builtArtifacts")(builtArtifacts.asInstanceOf[js.Any])
-    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (logsUri != null) __obj.updateDynamic("logsUri")(logsUri.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (sourceProvenance != null) __obj.updateDynamic("sourceProvenance")(sourceProvenance.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (triggerId != null) __obj.updateDynamic("triggerId")(triggerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildProvenance]
   }
+  @scala.inline
+  implicit class SchemaBuildProvenanceOps[Self <: SchemaBuildProvenance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuildOptions(value: StringDictionary[String]): Self = this.set("buildOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildOptions: Self = this.set("buildOptions", js.undefined)
+    @scala.inline
+    def setBuilderVersion(value: String): Self = this.set("builderVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuilderVersion: Self = this.set("builderVersion", js.undefined)
+    @scala.inline
+    def setBuiltArtifactsVarargs(value: SchemaArtifact*): Self = this.set("builtArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setBuiltArtifacts(value: js.Array[SchemaArtifact]): Self = this.set("builtArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuiltArtifacts: Self = this.set("builtArtifacts", js.undefined)
+    @scala.inline
+    def setCommandsVarargs(value: SchemaCommand*): Self = this.set("commands", js.Array(value :_*))
+    @scala.inline
+    def setCommands(value: js.Array[SchemaCommand]): Self = this.set("commands", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommands: Self = this.set("commands", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setCreator(value: String): Self = this.set("creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreator: Self = this.set("creator", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLogsUri(value: String): Self = this.set("logsUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogsUri: Self = this.set("logsUri", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setSourceProvenance(value: SchemaSource): Self = this.set("sourceProvenance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceProvenance: Self = this.set("sourceProvenance", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setTriggerId(value: String): Self = this.set("triggerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerId: Self = this.set("triggerId", js.undefined)
+  }
+  
 }
 

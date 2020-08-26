@@ -21,7 +21,6 @@ object cryptoConfigMod extends js.Object {
   /* static members */
   @js.native
   object CryptoConfig extends js.Object {
-    def CreateFromName(): Transform = js.native
     /**
       * Creates Transform from given name
       * if name is not exist then throws error
@@ -32,6 +31,7 @@ object cryptoConfigMod extends js.Object {
       *
       * @memberOf CryptoConfig
       */
+    def CreateFromName(): Transform = js.native
     def CreateFromName(name: String): Transform = js.native
     def CreateHashAlgorithm(namespace: String): HashAlgorithm = js.native
     def CreateSignatureAlgorithm(method: SignatureMethod): SignatureAlgorithm = js.native

@@ -27,12 +27,34 @@ trait SchemaCustomAccount extends js.Object {
 
 object SchemaCustomAccount {
   @scala.inline
-  def apply(loginUrl: String = null, password: String = null, username: String = null): SchemaCustomAccount = {
+  def apply(): SchemaCustomAccount = {
     val __obj = js.Dynamic.literal()
-    if (loginUrl != null) __obj.updateDynamic("loginUrl")(loginUrl.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomAccount]
   }
+  @scala.inline
+  implicit class SchemaCustomAccountOps[Self <: SchemaCustomAccount] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoginUrl(value: String): Self = this.set("loginUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoginUrl: Self = this.set("loginUrl", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

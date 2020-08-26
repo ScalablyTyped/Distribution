@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 class ^ () extends MoveTo {
   def this(options: MoveToOptions) = this()
+  def this(options: js.UndefOr[scala.Nothing], easeFunctions: MoveToEaseFunctionsObject) = this()
   def this(options: MoveToOptions, easeFunctions: MoveToEaseFunctionsObject) = this()
 }
 

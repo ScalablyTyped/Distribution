@@ -10,9 +10,9 @@ SQL Anywhere JavaScript Driver.
 | ------------------ | :-------------: |
 | Full name          | sqlanywhere |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 7551 |
+| # downloads        | 7691 |
 | # stars            | 1 |
 
 ## Links

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "define-lazy-prop"
-version := "2.0.0-95d594"
-scalaVersion := "2.13.2"
+version := "2.0.0-27a9f4"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

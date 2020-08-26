@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DistrictSearch extends js.Object {
   def search(keywords: String): Unit = js.native
+  def search(keywords: String, callback: js.UndefOr[scala.Nothing], opts: DistrictSearchOptions): Unit = js.native
   def search(
     keywords: String,
     callback: js.Function2[/* status */ String, /* result */ String | DistrictSearchResult, Unit]

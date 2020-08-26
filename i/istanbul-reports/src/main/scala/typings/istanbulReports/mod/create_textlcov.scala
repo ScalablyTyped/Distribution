@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object create_textlcov extends js.Object {
   def apply(name: `text-lcov`): Visitor[Node] = js.native
-  def apply(name: `text-lcov`, options: Partial[Options]): Visitor[Node] = js.native
+  def apply(name: `text-lcov`, options: Partial[TextLcovOptions]): Visitor[Node] = js.native
 }
 

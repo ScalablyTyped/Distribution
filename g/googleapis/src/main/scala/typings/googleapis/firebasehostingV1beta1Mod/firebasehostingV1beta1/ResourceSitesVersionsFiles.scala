@@ -30,6 +30,7 @@ class ResourceSitesVersionsFiles protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListVersionFilesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListVersionFilesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListVersionFilesResponse] = js.native
   def list(params: ParamsResourceSitesVersionsFilesList): GaxiosPromise[SchemaListVersionFilesResponse] = js.native
   def list(
     params: ParamsResourceSitesVersionsFilesList,

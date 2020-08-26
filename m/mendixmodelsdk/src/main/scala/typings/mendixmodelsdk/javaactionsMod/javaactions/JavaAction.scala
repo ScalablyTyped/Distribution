@@ -80,15 +80,13 @@ class JavaAction protected () extends CodeAction {
     * In version 6.6.0: introduced
     */
   def javaReturnType: Type = js.native
-  def javaReturnType(newValue: Type): js.Any = js.native
-  def microflowActionInfo(): js.Any = js.native
-  def microflowActionInfo(newValue: MicroflowActionInfo): js.Any = js.native
+  def javaReturnType_=(newValue: Type): Unit = js.native
   /**
     * In version 7.21.0: deleted
     * In version 6.6.0: introduced
     */
-  @JSName("microflowActionInfo")
-  def microflowActionInfo_Union: MicroflowActionInfo | Null = js.native
+  def microflowActionInfo: MicroflowActionInfo | Null = js.native
+  def microflowActionInfo_=(newValue: MicroflowActionInfo | Null): Unit = js.native
   /**
     * In version 7.21.0: deleted
     */
@@ -99,7 +97,7 @@ class JavaAction protected () extends CodeAction {
     * In version 6.6.0: deleted
     */
   def returnType: String = js.native
-  def returnType(newValue: String): js.Any = js.native
+  def returnType_=(newValue: String): Unit = js.native
   /**
     * In version 7.21.0: deleted
     * In version 6.6.0: introduced
@@ -109,7 +107,7 @@ class JavaAction protected () extends CodeAction {
     * In version 8.0.0: introduced
     */
   def useLegacyCodeGeneration: Boolean = js.native
-  def useLegacyCodeGeneration(newValue: Boolean): js.Any = js.native
+  def useLegacyCodeGeneration_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

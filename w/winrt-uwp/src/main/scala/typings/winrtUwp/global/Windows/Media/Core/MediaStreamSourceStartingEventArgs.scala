@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.Core.MediaStreamSourceStartingEventArgs")
 @js.native
 abstract class MediaStreamSourceStartingEventArgs ()
-  extends typings.winrtUwp.Windows.Media.Core.MediaStreamSourceStartingEventArgs {
-  /** Gets the object that represents the request to start accumulating MediaStreamSample data. */
-  /* CompleteClass */
-  override var request: typings.winrtUwp.Windows.Media.Core.MediaStreamSourceStartingRequest = js.native
-}
+  extends typings.winrtUwp.Windows.Media.Core.MediaStreamSourceStartingEventArgs
 

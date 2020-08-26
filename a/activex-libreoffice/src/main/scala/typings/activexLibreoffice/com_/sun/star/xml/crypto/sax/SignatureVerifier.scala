@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Service of {@link SignatureVerifier} */
+@js.native
 trait SignatureVerifier
   extends XReferenceResolvedListener
      with XReferenceCollector

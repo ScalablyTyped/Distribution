@@ -16,17 +16,40 @@ trait PortalProps extends js.Object {
 
 object PortalProps {
   @scala.inline
-  def apply(
-    children: ReactElement,
-    container: js.UndefOr[Null | ReactInstance | js.Function0[ReactInstance]] = js.undefined,
-    disablePortal: js.UndefOr[Boolean] = js.undefined,
-    onRendered: () => Unit = null
-  ): PortalProps = {
+  def apply(children: ReactElement): PortalProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePortal)) __obj.updateDynamic("disablePortal")(disablePortal.get.asInstanceOf[js.Any])
-    if (onRendered != null) __obj.updateDynamic("onRendered")(js.Any.fromFunction0(onRendered))
     __obj.asInstanceOf[PortalProps]
   }
+  @scala.inline
+  implicit class PortalPropsOps[Self <: PortalProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactElement): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContainerFunction0(value: () => ReactInstance): Self = this.set("container", js.Any.fromFunction0(value))
+    @scala.inline
+    def setContainer(value: ReactInstance | js.Function0[ReactInstance]): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setContainerNull: Self = this.set("container", null)
+    @scala.inline
+    def setDisablePortal(value: Boolean): Self = this.set("disablePortal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisablePortal: Self = this.set("disablePortal", js.undefined)
+    @scala.inline
+    def setOnRendered(value: () => Unit): Self = this.set("onRendered", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnRendered: Self = this.set("onRendered", js.undefined)
+  }
+  
 }
 

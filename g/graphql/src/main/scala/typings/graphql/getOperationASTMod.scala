@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/utilities/getOperationAST", JSImport.Namespace)
 @js.native
 object getOperationASTMod extends js.Object {
+  def getOperationAST(documentAST: DocumentNode): Maybe[OperationDefinitionNode] = js.native
   def getOperationAST(documentAST: DocumentNode, operationName: Maybe[String]): Maybe[OperationDefinitionNode] = js.native
 }
 

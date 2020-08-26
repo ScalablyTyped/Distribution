@@ -10,6 +10,7 @@ object queueMod extends js.Object {
   @js.native
   class Queue[T] () extends js.Object {
     def this(_items: js.Array[T]) = this()
+    def this(_items: js.UndefOr[scala.Nothing], _limit: Double) = this()
     def this(_items: js.Array[T], _limit: Double) = this()
     var _evictListeners: js.Any = js.native
     var _items: js.Any = js.native

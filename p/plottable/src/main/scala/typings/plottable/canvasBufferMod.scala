@@ -22,9 +22,11 @@ object canvasBufferMod extends js.Object {
     var screenHeight: Double = js.native
     var screenWidth: Double = js.native
     def blit(ctx: CanvasRenderingContext2D): Unit = js.native
+    def blit(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
     def blit(ctx: CanvasRenderingContext2D, x: Double): Unit = js.native
     def blit(ctx: CanvasRenderingContext2D, x: Double, y: Double): Unit = js.native
     def blitCenter(ctx: CanvasRenderingContext2D): Unit = js.native
+    def blitCenter(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
     def blitCenter(ctx: CanvasRenderingContext2D, x: Double): Unit = js.native
     def blitCenter(ctx: CanvasRenderingContext2D, x: Double, y: Double): Unit = js.native
     /**

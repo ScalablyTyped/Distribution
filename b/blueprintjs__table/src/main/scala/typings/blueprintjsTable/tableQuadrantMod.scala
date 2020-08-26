@@ -82,7 +82,23 @@ object tableQuadrantMod extends js.Object {
       * A callback that renders either all of or just frozen sections of the table body.
       */
     def bodyRenderer(): Element = js.native
+    def bodyRenderer(
+      quadrantType: js.UndefOr[scala.Nothing],
+      showFrozenRowsOnly: js.UndefOr[scala.Nothing],
+      showFrozenColumnsOnly: Boolean
+    ): Element = js.native
+    def bodyRenderer(quadrantType: js.UndefOr[scala.Nothing], showFrozenRowsOnly: Boolean): Element = js.native
+    def bodyRenderer(
+      quadrantType: js.UndefOr[scala.Nothing],
+      showFrozenRowsOnly: Boolean,
+      showFrozenColumnsOnly: Boolean
+    ): Element = js.native
     def bodyRenderer(quadrantType: QuadrantType): Element = js.native
+    def bodyRenderer(
+      quadrantType: QuadrantType,
+      showFrozenRowsOnly: js.UndefOr[scala.Nothing],
+      showFrozenColumnsOnly: Boolean
+    ): Element = js.native
     def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Boolean): Element = js.native
     def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Boolean, showFrozenColumnsOnly: Boolean): Element = js.native
   }

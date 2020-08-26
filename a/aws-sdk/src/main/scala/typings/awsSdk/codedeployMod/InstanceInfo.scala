@@ -38,24 +38,52 @@ trait InstanceInfo extends js.Object {
 
 object InstanceInfo {
   @scala.inline
-  def apply(
-    deregisterTime: Timestamp = null,
-    iamSessionArn: IamSessionArn = null,
-    iamUserArn: IamUserArn = null,
-    instanceArn: InstanceArn = null,
-    instanceName: InstanceName = null,
-    registerTime: Timestamp = null,
-    tags: TagList = null
-  ): InstanceInfo = {
+  def apply(): InstanceInfo = {
     val __obj = js.Dynamic.literal()
-    if (deregisterTime != null) __obj.updateDynamic("deregisterTime")(deregisterTime.asInstanceOf[js.Any])
-    if (iamSessionArn != null) __obj.updateDynamic("iamSessionArn")(iamSessionArn.asInstanceOf[js.Any])
-    if (iamUserArn != null) __obj.updateDynamic("iamUserArn")(iamUserArn.asInstanceOf[js.Any])
-    if (instanceArn != null) __obj.updateDynamic("instanceArn")(instanceArn.asInstanceOf[js.Any])
-    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
-    if (registerTime != null) __obj.updateDynamic("registerTime")(registerTime.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceInfo]
   }
+  @scala.inline
+  implicit class InstanceInfoOps[Self <: InstanceInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeregisterTime(value: Timestamp): Self = this.set("deregisterTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeregisterTime: Self = this.set("deregisterTime", js.undefined)
+    @scala.inline
+    def setIamSessionArn(value: IamSessionArn): Self = this.set("iamSessionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamSessionArn: Self = this.set("iamSessionArn", js.undefined)
+    @scala.inline
+    def setIamUserArn(value: IamUserArn): Self = this.set("iamUserArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamUserArn: Self = this.set("iamUserArn", js.undefined)
+    @scala.inline
+    def setInstanceArn(value: InstanceArn): Self = this.set("instanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceArn: Self = this.set("instanceArn", js.undefined)
+    @scala.inline
+    def setInstanceName(value: InstanceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
+    @scala.inline
+    def setRegisterTime(value: Timestamp): Self = this.set("registerTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisterTime: Self = this.set("registerTime", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

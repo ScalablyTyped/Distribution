@@ -26,6 +26,7 @@ trait Historyjs extends js.Object {
   def getHash(): String = js.native
   def getRootUrl(): String = js.native
   def getState(): HistoryState = js.native
+  def getState(friendly: js.UndefOr[scala.Nothing], create: Boolean): HistoryState = js.native
   def getState(friendly: Boolean): HistoryState = js.native
   def getState(friendly: Boolean, create: Boolean): HistoryState = js.native
   def getStateById(id: String): HistoryState = js.native

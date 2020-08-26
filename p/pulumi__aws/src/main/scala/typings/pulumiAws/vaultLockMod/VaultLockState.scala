@@ -27,18 +27,38 @@ trait VaultLockState extends js.Object {
 
 object VaultLockState {
   @scala.inline
-  def apply(
-    completeLock: Input[Boolean] = null,
-    ignoreDeletionError: Input[Boolean] = null,
-    policy: Input[String] = null,
-    vaultName: Input[String] = null
-  ): VaultLockState = {
+  def apply(): VaultLockState = {
     val __obj = js.Dynamic.literal()
-    if (completeLock != null) __obj.updateDynamic("completeLock")(completeLock.asInstanceOf[js.Any])
-    if (ignoreDeletionError != null) __obj.updateDynamic("ignoreDeletionError")(ignoreDeletionError.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (vaultName != null) __obj.updateDynamic("vaultName")(vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[VaultLockState]
   }
+  @scala.inline
+  implicit class VaultLockStateOps[Self <: VaultLockState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompleteLock(value: Input[Boolean]): Self = this.set("completeLock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompleteLock: Self = this.set("completeLock", js.undefined)
+    @scala.inline
+    def setIgnoreDeletionError(value: Input[Boolean]): Self = this.set("ignoreDeletionError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreDeletionError: Self = this.set("ignoreDeletionError", js.undefined)
+    @scala.inline
+    def setPolicy(value: Input[String]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+    @scala.inline
+    def setVaultName(value: Input[String]): Self = this.set("vaultName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVaultName: Self = this.set("vaultName", js.undefined)
+  }
+  
 }
 

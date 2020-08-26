@@ -28,11 +28,30 @@ trait SchemaResultSetMetadata extends js.Object {
 
 object SchemaResultSetMetadata {
   @scala.inline
-  def apply(rowType: SchemaStructType = null, transaction: SchemaTransaction = null): SchemaResultSetMetadata = {
+  def apply(): SchemaResultSetMetadata = {
     val __obj = js.Dynamic.literal()
-    if (rowType != null) __obj.updateDynamic("rowType")(rowType.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResultSetMetadata]
   }
+  @scala.inline
+  implicit class SchemaResultSetMetadataOps[Self <: SchemaResultSetMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRowType(value: SchemaStructType): Self = this.set("rowType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowType: Self = this.set("rowType", js.undefined)
+    @scala.inline
+    def setTransaction(value: SchemaTransaction): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransaction: Self = this.set("transaction", js.undefined)
+  }
+  
 }
 

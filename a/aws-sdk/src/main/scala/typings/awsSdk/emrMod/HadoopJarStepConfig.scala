@@ -26,17 +26,40 @@ trait HadoopJarStepConfig extends js.Object {
 
 object HadoopJarStepConfig {
   @scala.inline
-  def apply(
-    Jar: XmlString,
-    Args: XmlStringList = null,
-    MainClass: XmlString = null,
-    Properties: KeyValueList = null
-  ): HadoopJarStepConfig = {
+  def apply(Jar: XmlString): HadoopJarStepConfig = {
     val __obj = js.Dynamic.literal(Jar = Jar.asInstanceOf[js.Any])
-    if (Args != null) __obj.updateDynamic("Args")(Args.asInstanceOf[js.Any])
-    if (MainClass != null) __obj.updateDynamic("MainClass")(MainClass.asInstanceOf[js.Any])
-    if (Properties != null) __obj.updateDynamic("Properties")(Properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[HadoopJarStepConfig]
   }
+  @scala.inline
+  implicit class HadoopJarStepConfigOps[Self <: HadoopJarStepConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJar(value: XmlString): Self = this.set("Jar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArgsVarargs(value: XmlString*): Self = this.set("Args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: XmlStringList): Self = this.set("Args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("Args", js.undefined)
+    @scala.inline
+    def setMainClass(value: XmlString): Self = this.set("MainClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainClass: Self = this.set("MainClass", js.undefined)
+    @scala.inline
+    def setPropertiesVarargs(value: KeyValue*): Self = this.set("Properties", js.Array(value :_*))
+    @scala.inline
+    def setProperties(value: KeyValueList): Self = this.set("Properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("Properties", js.undefined)
+  }
+  
 }
 

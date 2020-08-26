@@ -1,8 +1,11 @@
 package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.cameraMod.Camera
+import typings.three.geometryMod.Geometry
 import typings.three.lineSegmentsMod.LineSegments
+import typings.three.materialMod.Material
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +14,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object cameraHelperMod extends js.Object {
   @js.native
-  class CameraHelper protected () extends LineSegments {
+  class CameraHelper protected ()
+    extends LineSegments[Geometry | BufferGeometry, Material | js.Array[Material]] {
     def this(camera: Camera) = this()
     var camera: Camera = js.native
     var pointMap: StringDictionary[js.Array[Double]] = js.native

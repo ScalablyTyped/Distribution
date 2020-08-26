@@ -17,15 +17,5 @@ class ASPxClientHtmlEditorBeforePasteEventArgs protected ()
     * @param html A string value that specifies the HTML content to paste.
     */
   def this(commandName: String, html: String) = this()
-  /**
-    * Gets the name of the processed command.
-    */
-  /* CompleteClass */
-  override var commandName: String = js.native
-  /**
-    * Gets or sets the HTML markup that is about to be pasted to the ASPxHtmlEditor's content.
-    */
-  /* CompleteClass */
-  override var html: String = js.native
 }
 

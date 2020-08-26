@@ -55,32 +55,66 @@ trait BudgetCostTypes extends js.Object {
 
 object BudgetCostTypes {
   @scala.inline
-  def apply(
-    includeCredit: Input[Boolean] = null,
-    includeDiscount: Input[Boolean] = null,
-    includeOtherSubscription: Input[Boolean] = null,
-    includeRecurring: Input[Boolean] = null,
-    includeRefund: Input[Boolean] = null,
-    includeSubscription: Input[Boolean] = null,
-    includeSupport: Input[Boolean] = null,
-    includeTax: Input[Boolean] = null,
-    includeUpfront: Input[Boolean] = null,
-    useAmortized: Input[Boolean] = null,
-    useBlended: Input[Boolean] = null
-  ): BudgetCostTypes = {
+  def apply(): BudgetCostTypes = {
     val __obj = js.Dynamic.literal()
-    if (includeCredit != null) __obj.updateDynamic("includeCredit")(includeCredit.asInstanceOf[js.Any])
-    if (includeDiscount != null) __obj.updateDynamic("includeDiscount")(includeDiscount.asInstanceOf[js.Any])
-    if (includeOtherSubscription != null) __obj.updateDynamic("includeOtherSubscription")(includeOtherSubscription.asInstanceOf[js.Any])
-    if (includeRecurring != null) __obj.updateDynamic("includeRecurring")(includeRecurring.asInstanceOf[js.Any])
-    if (includeRefund != null) __obj.updateDynamic("includeRefund")(includeRefund.asInstanceOf[js.Any])
-    if (includeSubscription != null) __obj.updateDynamic("includeSubscription")(includeSubscription.asInstanceOf[js.Any])
-    if (includeSupport != null) __obj.updateDynamic("includeSupport")(includeSupport.asInstanceOf[js.Any])
-    if (includeTax != null) __obj.updateDynamic("includeTax")(includeTax.asInstanceOf[js.Any])
-    if (includeUpfront != null) __obj.updateDynamic("includeUpfront")(includeUpfront.asInstanceOf[js.Any])
-    if (useAmortized != null) __obj.updateDynamic("useAmortized")(useAmortized.asInstanceOf[js.Any])
-    if (useBlended != null) __obj.updateDynamic("useBlended")(useBlended.asInstanceOf[js.Any])
     __obj.asInstanceOf[BudgetCostTypes]
   }
+  @scala.inline
+  implicit class BudgetCostTypesOps[Self <: BudgetCostTypes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIncludeCredit(value: Input[Boolean]): Self = this.set("includeCredit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeCredit: Self = this.set("includeCredit", js.undefined)
+    @scala.inline
+    def setIncludeDiscount(value: Input[Boolean]): Self = this.set("includeDiscount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDiscount: Self = this.set("includeDiscount", js.undefined)
+    @scala.inline
+    def setIncludeOtherSubscription(value: Input[Boolean]): Self = this.set("includeOtherSubscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeOtherSubscription: Self = this.set("includeOtherSubscription", js.undefined)
+    @scala.inline
+    def setIncludeRecurring(value: Input[Boolean]): Self = this.set("includeRecurring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeRecurring: Self = this.set("includeRecurring", js.undefined)
+    @scala.inline
+    def setIncludeRefund(value: Input[Boolean]): Self = this.set("includeRefund", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeRefund: Self = this.set("includeRefund", js.undefined)
+    @scala.inline
+    def setIncludeSubscription(value: Input[Boolean]): Self = this.set("includeSubscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeSubscription: Self = this.set("includeSubscription", js.undefined)
+    @scala.inline
+    def setIncludeSupport(value: Input[Boolean]): Self = this.set("includeSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeSupport: Self = this.set("includeSupport", js.undefined)
+    @scala.inline
+    def setIncludeTax(value: Input[Boolean]): Self = this.set("includeTax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeTax: Self = this.set("includeTax", js.undefined)
+    @scala.inline
+    def setIncludeUpfront(value: Input[Boolean]): Self = this.set("includeUpfront", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeUpfront: Self = this.set("includeUpfront", js.undefined)
+    @scala.inline
+    def setUseAmortized(value: Input[Boolean]): Self = this.set("useAmortized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseAmortized: Self = this.set("useAmortized", js.undefined)
+    @scala.inline
+    def setUseBlended(value: Input[Boolean]): Self = this.set("useBlended", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseBlended: Self = this.set("useBlended", js.undefined)
+  }
+  
 }
 

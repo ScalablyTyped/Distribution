@@ -22,16 +22,36 @@ trait DescribeInstancesHealthResult extends js.Object {
 
 object DescribeInstancesHealthResult {
   @scala.inline
-  def apply(
-    InstanceHealthList: InstanceHealthList = null,
-    NextToken: NextToken = null,
-    RefreshedAt: RefreshedAt = null
-  ): DescribeInstancesHealthResult = {
+  def apply(): DescribeInstancesHealthResult = {
     val __obj = js.Dynamic.literal()
-    if (InstanceHealthList != null) __obj.updateDynamic("InstanceHealthList")(InstanceHealthList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (RefreshedAt != null) __obj.updateDynamic("RefreshedAt")(RefreshedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstancesHealthResult]
   }
+  @scala.inline
+  implicit class DescribeInstancesHealthResultOps[Self <: DescribeInstancesHealthResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceHealthListVarargs(value: SingleInstanceHealth*): Self = this.set("InstanceHealthList", js.Array(value :_*))
+    @scala.inline
+    def setInstanceHealthList(value: InstanceHealthList): Self = this.set("InstanceHealthList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceHealthList: Self = this.set("InstanceHealthList", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRefreshedAt(value: RefreshedAt): Self = this.set("RefreshedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshedAt: Self = this.set("RefreshedAt", js.undefined)
+  }
+  
 }
 

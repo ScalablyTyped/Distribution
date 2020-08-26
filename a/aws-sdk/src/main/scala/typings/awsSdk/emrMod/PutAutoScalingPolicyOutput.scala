@@ -26,18 +26,38 @@ trait PutAutoScalingPolicyOutput extends js.Object {
 
 object PutAutoScalingPolicyOutput {
   @scala.inline
-  def apply(
-    AutoScalingPolicy: AutoScalingPolicyDescription = null,
-    ClusterArn: ArnType = null,
-    ClusterId: ClusterId = null,
-    InstanceGroupId: InstanceGroupId = null
-  ): PutAutoScalingPolicyOutput = {
+  def apply(): PutAutoScalingPolicyOutput = {
     val __obj = js.Dynamic.literal()
-    if (AutoScalingPolicy != null) __obj.updateDynamic("AutoScalingPolicy")(AutoScalingPolicy.asInstanceOf[js.Any])
-    if (ClusterArn != null) __obj.updateDynamic("ClusterArn")(ClusterArn.asInstanceOf[js.Any])
-    if (ClusterId != null) __obj.updateDynamic("ClusterId")(ClusterId.asInstanceOf[js.Any])
-    if (InstanceGroupId != null) __obj.updateDynamic("InstanceGroupId")(InstanceGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutAutoScalingPolicyOutput]
   }
+  @scala.inline
+  implicit class PutAutoScalingPolicyOutputOps[Self <: PutAutoScalingPolicyOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingPolicy(value: AutoScalingPolicyDescription): Self = this.set("AutoScalingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingPolicy: Self = this.set("AutoScalingPolicy", js.undefined)
+    @scala.inline
+    def setClusterArn(value: ArnType): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterArn: Self = this.set("ClusterArn", js.undefined)
+    @scala.inline
+    def setClusterId(value: ClusterId): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("ClusterId", js.undefined)
+    @scala.inline
+    def setInstanceGroupId(value: InstanceGroupId): Self = this.set("InstanceGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceGroupId: Self = this.set("InstanceGroupId", js.undefined)
+  }
+  
 }
 

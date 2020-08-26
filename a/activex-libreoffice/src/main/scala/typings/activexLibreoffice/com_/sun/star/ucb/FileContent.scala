@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   * Whether a content represents a folder or a file can be determined by inspecting its property **IsFolder** or **IsDocument** .
   * @see com.sun.star.ucb.FileContentProvider
   */
+@js.native
 trait FileContent
   extends XCommandProcessor2
      with XComponent

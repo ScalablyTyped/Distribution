@@ -345,7 +345,47 @@ trait IRouterContext extends js.Object {
     *
     * See: https://github.com/jshttp/http-assert
     */
+  def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
+  /**
+    * Similar to .throw(), adds assertion.
+    *
+    *    this.assert(this.user, 401, 'Please login!');
+    *
+    * See: https://github.com/jshttp/http-assert
+    */
+  def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
+  /**
+    * Similar to .throw(), adds assertion.
+    *
+    *    this.assert(this.user, 401, 'Please login!');
+    *
+    * See: https://github.com/jshttp/http-assert
+    */
+  def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: String, opts: js.Object): Unit = js.native
+  /**
+    * Similar to .throw(), adds assertion.
+    *
+    *    this.assert(this.user, 401, 'Please login!');
+    *
+    * See: https://github.com/jshttp/http-assert
+    */
+  def assert(value: js.Any, status: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
+  /**
+    * Similar to .throw(), adds assertion.
+    *
+    *    this.assert(this.user, 401, 'Please login!');
+    *
+    * See: https://github.com/jshttp/http-assert
+    */
   def assert(value: js.Any, status: Double): Unit = js.native
+  /**
+    * Similar to .throw(), adds assertion.
+    *
+    *    this.assert(this.user, 401, 'Please login!');
+    *
+    * See: https://github.com/jshttp/http-assert
+    */
+  def assert(value: js.Any, status: Double, msg: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
   /**
     * Similar to .throw(), adds assertion.
     *
@@ -375,6 +415,7 @@ trait IRouterContext extends js.Object {
     * Optionally specify the filename of the download and some options.
     */
   def attachment(): Unit = js.native
+  def attachment(filename: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def attachment(filename: String): Unit = js.native
   def attachment(filename: String, options: Options): Unit = js.native
   /**
@@ -481,6 +522,7 @@ trait IRouterContext extends js.Object {
     * See: https://github.com/jshttp/http-errors
     */
   def `throw`(message: String): scala.Nothing = js.native
+  def `throw`(message: String, code: js.UndefOr[scala.Nothing], properties: js.Object): scala.Nothing = js.native
   def `throw`(message: String, code: Double): scala.Nothing = js.native
   def `throw`(message: String, code: Double, properties: js.Object): scala.Nothing = js.native
   def `throw`(properties: (Double | String | js.Object)*): scala.Nothing = js.native

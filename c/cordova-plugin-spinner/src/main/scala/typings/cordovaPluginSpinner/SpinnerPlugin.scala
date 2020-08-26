@@ -19,7 +19,23 @@ object SpinnerPlugin extends js.Object {
       * @param failureCallback The failure callback for this asynchronous function; receives an error string.
       */
     def activityStart(): Unit = js.native
+    def activityStart(
+      labelText: js.UndefOr[scala.Nothing],
+      successCallback: js.UndefOr[scala.Nothing],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
+    def activityStart(labelText: js.UndefOr[scala.Nothing], successCallback: js.Function0[Unit]): Unit = js.native
+    def activityStart(
+      labelText: js.UndefOr[scala.Nothing],
+      successCallback: js.Function0[Unit],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
     def activityStart(labelText: String): Unit = js.native
+    def activityStart(
+      labelText: String,
+      successCallback: js.UndefOr[scala.Nothing],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
     def activityStart(labelText: String, successCallback: js.Function0[Unit]): Unit = js.native
     def activityStart(
       labelText: String,
@@ -33,6 +49,10 @@ object SpinnerPlugin extends js.Object {
       * @param failureCallback The failure callback for this asynchronous function; receives an error string.
       */
     def activityStop(): Unit = js.native
+    def activityStop(
+      successCallback: js.UndefOr[scala.Nothing],
+      failureCallback: js.Function1[/* error */ String, Unit]
+    ): Unit = js.native
     def activityStop(successCallback: js.Function0[Unit]): Unit = js.native
     def activityStop(successCallback: js.Function0[Unit], failureCallback: js.Function1[/* error */ String, Unit]): Unit = js.native
   }

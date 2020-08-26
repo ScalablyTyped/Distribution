@@ -1,7 +1,7 @@
 package typings.reactNavigationDrawer.typesMod
 
 import typings.reactNavigation.anon.Key
-import typings.reactNavigation.anon.ParamsP
+import typings.reactNavigation.anon.`2`
 import typings.reactNavigation.mod.NavigationAction
 import typings.reactNavigation.mod.NavigationDispatch
 import typings.reactNavigation.mod.NavigationEventCallback
@@ -17,12 +17,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-navigation.react-navigation.NavigationScreenProp<State, Params> & {openDrawer (): void, closeDrawer (): void, toggleDrawer (): void, jumpTo (routeName : string, key ? : string): void} */
+/* Inlined react-navigation.react-navigation.NavigationScreenProp<State, Params> & {openDrawer (): void, closeDrawer (): void, toggleDrawer (): void, jumpTo (routeName : string, key : string | undefined): void} */
 @js.native
 trait NavigationDrawerProp[State, Params] extends js.Object {
   var dispatch: NavigationDispatch = js.native
   var router: js.UndefOr[NavigationRouter[NavigationState, js.Object]] = js.native
-  var state: State with ParamsP[Params] = js.native
+  var state: State with `2`[Params] = js.native
   def addListener(eventName: String, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   def closeDrawer(): Unit = js.native
   def dangerouslyGetParent(): js.UndefOr[NavigationScreenProp[State, NavigationParams]] = js.native
@@ -48,6 +48,7 @@ trait NavigationDrawerProp[State, Params] extends js.Object {
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T, action: NavigationAction): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: js.UndefOr[scala.Nothing], action: NavigationAction): Boolean = js.native
   def openDrawer(): Unit = js.native
   def setParams(newParams: Partial[Params]): Boolean = js.native
   def toggleDrawer(): Unit = js.native

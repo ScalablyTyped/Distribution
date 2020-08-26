@@ -15,28 +15,28 @@ trait Calendar_ extends Control {
     * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def addAriaLabelledBy(vAriaLabelledBy: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
-  def addAriaLabelledBy(vAriaLabelledBy: Control): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def addAriaLabelledBy(vAriaLabelledBy: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
+  def addAriaLabelledBy(vAriaLabelledBy: Control): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Adds some disabledDate to the aggregation <code>disabledDates</code>.
     * @since 1.38.0
     * @param oDisabledDate the disabledDate to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def addDisabledDate(oDisabledDate: DateRange): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def addDisabledDate(oDisabledDate: DateRange): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Adds some selectedDate to the aggregation <code>selectedDates</code>.
     * @param oSelectedDate the selectedDate to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def addSelectedDate(oSelectedDate: DateRange): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def addSelectedDate(oSelectedDate: DateRange): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Adds some specialDate to the aggregation <code>specialDates</code>.
     * @since 1.24.0
     * @param oSpecialDate the specialDate to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def addSpecialDate(oSpecialDate: DateTypeRange): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def addSpecialDate(oSpecialDate: DateTypeRange): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>cancel</code> event of this
     * <code>sap.ui.unified.Calendar</code>.When called, the context of the event handler (its
@@ -49,8 +49,8 @@ trait Calendar_ extends Control {
     * <code>sap.ui.unified.Calendar</code> itself
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def attachCancel(oData: js.Any, fnFunction: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
-  def attachCancel(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def attachCancel(oData: js.Any, fnFunction: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
+  def attachCancel(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this
     * <code>sap.ui.unified.Calendar</code>.When called, the context of the event handler (its
@@ -63,8 +63,8 @@ trait Calendar_ extends Control {
     * <code>sap.ui.unified.Calendar</code> itself
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def attachSelect(oData: js.Any, fnFunction: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
-  def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def attachSelect(oData: js.Any, fnFunction: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
+  def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>startDateChange</code> event of this
     * <code>sap.ui.unified.Calendar</code>.When called, the context of the event handler (its
@@ -80,25 +80,25 @@ trait Calendar_ extends Control {
     * <code>sap.ui.unified.Calendar</code> itself
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def attachStartDateChange(oData: js.Any, fnFunction: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
-  def attachStartDateChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def attachStartDateChange(oData: js.Any, fnFunction: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
+  def attachStartDateChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Destroys all the disabledDates in the aggregation <code>disabledDates</code>.
     * @since 1.38.0
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def destroyDisabledDates(): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def destroyDisabledDates(): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Destroys all the selectedDates in the aggregation <code>selectedDates</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def destroySelectedDates(): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def destroySelectedDates(): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Destroys all the specialDates in the aggregation <code>specialDates</code>.
     * @since 1.24.0
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def destroySpecialDates(): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def destroySpecialDates(): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>cancel</code> event of this
     * <code>sap.ui.unified.Calendar</code>.The passed function and listener object must match the ones
@@ -107,7 +107,7 @@ trait Calendar_ extends Control {
     * @param oListener Context object on which the given function had to be called
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def detachCancel(fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def detachCancel(fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>select</code> event of this
     * <code>sap.ui.unified.Calendar</code>.The passed function and listener object must match the ones
@@ -116,7 +116,7 @@ trait Calendar_ extends Control {
     * @param oListener Context object on which the given function had to be called
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def detachSelect(fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def detachSelect(fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>startDateChange</code> event of this
     * <code>sap.ui.unified.Calendar</code>.The passed function and listener object must match the ones
@@ -126,39 +126,39 @@ trait Calendar_ extends Control {
     * @param oListener Context object on which the given function had to be called
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def detachStartDateChange(fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def detachStartDateChange(fnFunction: js.Any, oListener: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Displays a date in the calendar but don't set the focus.
     * @since 1.28.0
     * @param oDate JavaScript date object for focused date.
     * @returns <code>this</code> to allow method chaining
     */
-  def displayDate(oDate: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def displayDate(oDate: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Fires event <code>cancel</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def fireCancel(mArguments: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def fireCancel(mArguments: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Fires event <code>select</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def fireSelect(mArguments: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def fireSelect(mArguments: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Fires event <code>startDateChange</code> to attached listeners.
     * @since 1.34.0
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def fireStartDateChange(mArguments: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def fireStartDateChange(mArguments: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Sets the focused date of the calendar.
     * @param oDate JavaScript date object for focused date.
     * @returns <code>this</code> to allow method chaining
     */
-  def focusDate(oDate: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def focusDate(oDate: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
@@ -303,7 +303,7 @@ trait Calendar_ extends Control {
     *  the last position
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def insertDisabledDate(oDisabledDate: DateRange, iIndex: Double): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def insertDisabledDate(oDisabledDate: DateRange, iIndex: Double): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Inserts a selectedDate into the aggregation <code>selectedDates</code>.
     * @param oSelectedDate the selectedDate to insert; if empty, nothing is inserted
@@ -313,7 +313,7 @@ trait Calendar_ extends Control {
     *  the last position
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def insertSelectedDate(oSelectedDate: DateRange, iIndex: Double): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def insertSelectedDate(oSelectedDate: DateRange, iIndex: Double): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Inserts a specialDate into the aggregation <code>specialDates</code>.
     * @since 1.24.0
@@ -324,7 +324,7 @@ trait Calendar_ extends Control {
     * the last position
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def insertSpecialDate(oSpecialDate: DateTypeRange, iIndex: Double): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def insertSpecialDate(oSpecialDate: DateTypeRange, iIndex: Double): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @since 1.28.0
@@ -403,7 +403,7 @@ trait Calendar_ extends Control {
     * @param bIntervalSelection New value for property <code>intervalSelection</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setIntervalSelection(bIntervalSelection: Boolean): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def setIntervalSelection(bIntervalSelection: Boolean): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Sets the associated <code>legend</code>.
     * @since 1.38.5
@@ -411,8 +411,8 @@ trait Calendar_ extends Control {
     * alternatively, an element instance may be given
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setLegend(oLegend: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
-  def setLegend(oLegend: CalendarLegend): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def setLegend(oLegend: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
+  def setLegend(oLegend: CalendarLegend): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Sets a new value for property <code>maxDate</code>.Maximum date that can be shown and selected in
     * the Calendar. This must be a JavaScript date object.<b>Note:</b> if the date is inside of a month
@@ -424,7 +424,7 @@ trait Calendar_ extends Control {
     * @param oMaxDate New value for property <code>maxDate</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setMaxDate(oMaxDate: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def setMaxDate(oMaxDate: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Sets a new value for property <code>minDate</code>.Minimum date that can be shown and selected in
     * the Calendar. This must be a JavaScript date object.<b>Note:</b> if the date is inside of a month
@@ -436,7 +436,7 @@ trait Calendar_ extends Control {
     * @param oMinDate New value for property <code>minDate</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setMinDate(oMinDate: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def setMinDate(oMinDate: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Sets a new value for property <code>months</code>.number of months displayedon phones always only
     * one month is displayedWhen called with a value of <code>null</code> or <code>undefined</code>, the
@@ -455,7 +455,7 @@ trait Calendar_ extends Control {
     * @param sNonWorkingDays New value for property <code>nonWorkingDays</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setNonWorkingDays(sNonWorkingDays: Double): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def setNonWorkingDays(sNonWorkingDays: Double): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Sets a new value for property <code>primaryCalendarType</code>.If set, the calendar type is used for
     * display.If not set, the calendar type of the global configuration is used.When called with a value
@@ -464,7 +464,7 @@ trait Calendar_ extends Control {
     * @param sPrimaryCalendarType New value for property <code>primaryCalendarType</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setPrimaryCalendarType(sPrimaryCalendarType: CalendarType): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def setPrimaryCalendarType(sPrimaryCalendarType: CalendarType): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Sets a new value for property <code>secondaryCalendarType</code>.If set, the days are also displayed
     * in this calendar typeIf not set, the dates are only displayed in the primary calendar typeWhen
@@ -474,7 +474,7 @@ trait Calendar_ extends Control {
     * @param sSecondaryCalendarType New value for property <code>secondaryCalendarType</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setSecondaryCalendarType(sSecondaryCalendarType: CalendarType): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def setSecondaryCalendarType(sSecondaryCalendarType: CalendarType): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Sets a new value for property <code>singleSelection</code>.If set, only a single date or interval,
     * if intervalSelection is enabled, can be selectedWhen called with a value of <code>null</code> or
@@ -483,7 +483,7 @@ trait Calendar_ extends Control {
     * @param bSingleSelection New value for property <code>singleSelection</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setSingleSelection(bSingleSelection: Boolean): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def setSingleSelection(bSingleSelection: Boolean): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Sets a new value for property <code>width</code>.Width of Calendar<b>Note:</b> There is a theme
     * depending minimum width, so the calendar can not be set smaller.When called with a value of
@@ -492,6 +492,6 @@ trait Calendar_ extends Control {
     * @param sWidth New value for property <code>width</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setWidth(sWidth: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def setWidth(sWidth: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
 }
 

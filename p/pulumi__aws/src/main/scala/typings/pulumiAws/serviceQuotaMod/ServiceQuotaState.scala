@@ -45,30 +45,62 @@ trait ServiceQuotaState extends js.Object {
 
 object ServiceQuotaState {
   @scala.inline
-  def apply(
-    adjustable: Input[Boolean] = null,
-    arn: Input[String] = null,
-    defaultValue: Input[Double] = null,
-    quotaCode: Input[String] = null,
-    quotaName: Input[String] = null,
-    requestId: Input[String] = null,
-    requestStatus: Input[String] = null,
-    serviceCode: Input[String] = null,
-    serviceName: Input[String] = null,
-    value: Input[Double] = null
-  ): ServiceQuotaState = {
+  def apply(): ServiceQuotaState = {
     val __obj = js.Dynamic.literal()
-    if (adjustable != null) __obj.updateDynamic("adjustable")(adjustable.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (quotaCode != null) __obj.updateDynamic("quotaCode")(quotaCode.asInstanceOf[js.Any])
-    if (quotaName != null) __obj.updateDynamic("quotaName")(quotaName.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (requestStatus != null) __obj.updateDynamic("requestStatus")(requestStatus.asInstanceOf[js.Any])
-    if (serviceCode != null) __obj.updateDynamic("serviceCode")(serviceCode.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceQuotaState]
   }
+  @scala.inline
+  implicit class ServiceQuotaStateOps[Self <: ServiceQuotaState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdjustable(value: Input[Boolean]): Self = this.set("adjustable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustable: Self = this.set("adjustable", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: Input[Double]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setQuotaCode(value: Input[String]): Self = this.set("quotaCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaCode: Self = this.set("quotaCode", js.undefined)
+    @scala.inline
+    def setQuotaName(value: Input[String]): Self = this.set("quotaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaName: Self = this.set("quotaName", js.undefined)
+    @scala.inline
+    def setRequestId(value: Input[String]): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    @scala.inline
+    def setRequestStatus(value: Input[String]): Self = this.set("requestStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestStatus: Self = this.set("requestStatus", js.undefined)
+    @scala.inline
+    def setServiceCode(value: Input[String]): Self = this.set("serviceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCode: Self = this.set("serviceCode", js.undefined)
+    @scala.inline
+    def setServiceName(value: Input[String]): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    @scala.inline
+    def setValue(value: Input[Double]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

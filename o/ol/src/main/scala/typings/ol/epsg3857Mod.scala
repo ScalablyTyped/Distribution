@@ -15,9 +15,11 @@ object epsg3857Mod extends js.Object {
   val RADIUS: Double = js.native
   val WORLD_EXTENT: Extent = js.native
   def fromEPSG4326(input: js.Array[Double]): js.Array[Double] = js.native
+  def fromEPSG4326(input: js.Array[Double], opt_output: js.UndefOr[scala.Nothing], opt_dimension: Double): js.Array[Double] = js.native
   def fromEPSG4326(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = js.native
   def fromEPSG4326(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = js.native
   def toEPSG4326(input: js.Array[Double]): js.Array[Double] = js.native
+  def toEPSG4326(input: js.Array[Double], opt_output: js.UndefOr[scala.Nothing], opt_dimension: Double): js.Array[Double] = js.native
   def toEPSG4326(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = js.native
   def toEPSG4326(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = js.native
 }

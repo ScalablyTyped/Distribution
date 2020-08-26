@@ -1,8 +1,6 @@
 package typings.nulogyComponents
 
-import org.scalablytyped.runtime.TopLevel
-import typings.react.mod.Component
-import typings.react.mod.ComponentState
+import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,13 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@nulogy/components", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  @js.native
-  class Link protected ()
-    extends Component[js.Object, ComponentState, js.Any] {
-    def this(props: js.Object) = this()
-    def this(props: js.Object, context: js.Any) = this()
-  }
-  
   val ALL_NDS_LOCALES: js.Array[js.Object] = js.native
   val Alert: js.Any = js.native
   val Box: js.Any = js.native
@@ -51,6 +42,7 @@ object mod extends js.Object {
   val InlineIcon: js.Any = js.native
   val InlineValidation: js.Any = js.native
   val Input: js.Any = js.native
+  val Link: ComponentType[StringDictionary[js.Any]] = js.native
   val List: js.Any = js.native
   val ListItem: js.Any = js.native
   val LoadingAnimation: js.Any = js.native
@@ -87,10 +79,7 @@ object mod extends js.Object {
   val Toggle: js.Any = js.native
   val Tooltip: js.Any = js.native
   val TruncatedText: js.Any = js.native
+  val render: js.Any = js.native
   val theme: js.Any = js.native
-  @js.native
-  object Link
-    extends TopLevel[ComponentType[js.Object]]
-  
 }
 

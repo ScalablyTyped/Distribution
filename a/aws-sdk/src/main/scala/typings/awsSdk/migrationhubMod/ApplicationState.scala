@@ -22,16 +22,34 @@ trait ApplicationState extends js.Object {
 
 object ApplicationState {
   @scala.inline
-  def apply(
-    ApplicationId: ApplicationId = null,
-    ApplicationStatus: ApplicationStatus = null,
-    LastUpdatedTime: UpdateDateTime = null
-  ): ApplicationState = {
+  def apply(): ApplicationState = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
-    if (ApplicationStatus != null) __obj.updateDynamic("ApplicationStatus")(ApplicationStatus.asInstanceOf[js.Any])
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationState]
   }
+  @scala.inline
+  implicit class ApplicationStateOps[Self <: ApplicationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: ApplicationId): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    @scala.inline
+    def setApplicationStatus(value: ApplicationStatus): Self = this.set("ApplicationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationStatus: Self = this.set("ApplicationStatus", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: UpdateDateTime): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+  }
+  
 }
 

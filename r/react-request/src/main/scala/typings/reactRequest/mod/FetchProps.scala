@@ -1,68 +1,52 @@
 package typings.reactRequest.mod
 
 import typings.react.mod.ReactNode
-import typings.std.AbortSignal
-import typings.std.BodyInit
-import typings.std.HeadersInit
-import typings.std.ReferrerPolicy
-import typings.std.RequestCache
-import typings.std.RequestCredentials
-import typings.std.RequestMode
-import typings.std.RequestRedirect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FetchProps[T] extends FetchRequestProps {
-  var afterFetch: js.UndefOr[js.Function1[/* args */ FetchResponse[T], Unit]] = js.undefined
-  var children: js.UndefOr[js.Function1[/* renderProps */ RenderProps[T], ReactNode]] = js.undefined
-  var responseType: js.UndefOr[ResponseType] = js.undefined
-  var transformData: js.UndefOr[js.Function1[/* data */ js.Any, T]] = js.undefined
+  var afterFetch: js.UndefOr[js.Function1[/* args */ FetchResponse[T], Unit]] = js.native
+  var children: js.UndefOr[js.Function1[/* renderProps */ RenderProps[T], ReactNode]] = js.native
+  var responseType: js.UndefOr[ResponseType] = js.native
+  var transformData: js.UndefOr[js.Function1[/* data */ js.Any, T]] = js.native
 }
 
 object FetchProps {
   @scala.inline
-  def apply[T](
-    url: String,
-    afterFetch: /* args */ FetchResponse[T] => Unit = null,
-    body: js.UndefOr[Null | BodyInit] = js.undefined,
-    cache: RequestCache = null,
-    children: /* renderProps */ RenderProps[T] => ReactNode = null,
-    credentials: RequestCredentials = null,
-    headers: HeadersInit = null,
-    integrity: String = null,
-    keepalive: js.UndefOr[Boolean] = js.undefined,
-    `lazy`: js.UndefOr[Boolean] = js.undefined,
-    method: String = null,
-    mode: RequestMode = null,
-    redirect: RequestRedirect = null,
-    referrer: String = null,
-    referrerPolicy: ReferrerPolicy = null,
-    responseType: ResponseType = null,
-    signal: js.UndefOr[Null | AbortSignal] = js.undefined,
-    transformData: /* data */ js.Any => T = null,
-    window: js.Any = null
-  ): FetchProps[T] = {
+  def apply[T](url: String): FetchProps[T] = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (afterFetch != null) __obj.updateDynamic("afterFetch")(js.Any.fromFunction1(afterFetch))
-    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (!js.isUndefined(signal)) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (transformData != null) __obj.updateDynamic("transformData")(js.Any.fromFunction1(transformData))
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchProps[T]]
   }
+  @scala.inline
+  implicit class FetchPropsOps[Self <: FetchProps[_], T] (val x: Self with FetchProps[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterFetch(value: /* args */ FetchResponse[T] => Unit): Self = this.set("afterFetch", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterFetch: Self = this.set("afterFetch", js.undefined)
+    @scala.inline
+    def setChildren(value: /* renderProps */ RenderProps[T] => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setResponseType(value: ResponseType): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    @scala.inline
+    def setTransformData(value: /* data */ js.Any => T): Self = this.set("transformData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTransformData: Self = this.set("transformData", js.undefined)
+  }
+  
 }
 

@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBitmapCodecInformation extends js.Object {
-  var codecId: String
-  var fileExtensions: IVectorView[String]
-  var friendlyName: String
-  var mimeTypes: IVectorView[String]
+  var codecId: String = js.native
+  var fileExtensions: IVectorView[String] = js.native
+  var friendlyName: String = js.native
+  var mimeTypes: IVectorView[String] = js.native
 }
 
 object IBitmapCodecInformation {
@@ -23,5 +24,26 @@ object IBitmapCodecInformation {
     val __obj = js.Dynamic.literal(codecId = codecId.asInstanceOf[js.Any], fileExtensions = fileExtensions.asInstanceOf[js.Any], friendlyName = friendlyName.asInstanceOf[js.Any], mimeTypes = mimeTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBitmapCodecInformation]
   }
+  @scala.inline
+  implicit class IBitmapCodecInformationOps[Self <: IBitmapCodecInformation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodecId(value: String): Self = this.set("codecId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFileExtensions(value: IVectorView[String]): Self = this.set("fileExtensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMimeTypes(value: IVectorView[String]): Self = this.set("mimeTypes", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -26,18 +26,40 @@ trait DescribeSnapshotsRequest extends js.Object {
 
 object DescribeSnapshotsRequest {
   @scala.inline
-  def apply(
-    DirectoryId: DirectoryId = null,
-    Limit: js.UndefOr[Limit] = js.undefined,
-    NextToken: NextToken = null,
-    SnapshotIds: SnapshotIds = null
-  ): DescribeSnapshotsRequest = {
+  def apply(): DescribeSnapshotsRequest = {
     val __obj = js.Dynamic.literal()
-    if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SnapshotIds != null) __obj.updateDynamic("SnapshotIds")(SnapshotIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSnapshotsRequest]
   }
+  @scala.inline
+  implicit class DescribeSnapshotsRequestOps[Self <: DescribeSnapshotsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    @scala.inline
+    def setLimit(value: Limit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSnapshotIdsVarargs(value: SnapshotId*): Self = this.set("SnapshotIds", js.Array(value :_*))
+    @scala.inline
+    def setSnapshotIds(value: SnapshotIds): Self = this.set("SnapshotIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotIds: Self = this.set("SnapshotIds", js.undefined)
+  }
+  
 }
 

@@ -35,6 +35,16 @@ object global extends js.Object {
       def this(p1: Point, p2: Point, p3: Point, p4: Point) = this()
       def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double) = this()
       def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double) = this()
+      def this(
+        x1: Double,
+        y1: Double,
+        x2: Double,
+        y2: Double,
+        x3: Double,
+        y3: Double,
+        x4: js.UndefOr[scala.Nothing],
+        y4: Double
+      ) = this()
       def this(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double) = this()
     }
     
@@ -50,28 +60,13 @@ object global extends js.Object {
     class PolyBezier protected ()
       extends typings.bezierJs.BezierJs.PolyBezier {
       def this(curves: js.Array[typings.bezierJs.BezierJs.Bezier]) = this()
-      /* CompleteClass */
-      override var _3d: js.Any = js.native
-      /* CompleteClass */
-      override var curves: js.Array[typings.bezierJs.BezierJs.Bezier] = js.native
-      /* CompleteClass */
-      override var points: js.Array[Point] = js.native
-      /* CompleteClass */
-      override def addCurve(curve: typings.bezierJs.BezierJs.Bezier): Unit = js.native
-      /* CompleteClass */
-      override def bbox(): BBox = js.native
-      /* CompleteClass */
-      override def curve(idx: Double): typings.bezierJs.BezierJs.Bezier = js.native
-      /* CompleteClass */
-      override def length(): Double = js.native
-      /* CompleteClass */
-      override def offset(d: Double): typings.bezierJs.BezierJs.PolyBezier = js.native
     }
     
     /* static members */
     @js.native
     object Bezier extends js.Object {
       def cubicFromPoints(S: Point, B: Point, E: Point): typings.bezierJs.BezierJs.Bezier = js.native
+      def cubicFromPoints(S: Point, B: Point, E: Point, t: js.UndefOr[scala.Nothing], d1: Double): typings.bezierJs.BezierJs.Bezier = js.native
       def cubicFromPoints(S: Point, B: Point, E: Point, t: Double): typings.bezierJs.BezierJs.Bezier = js.native
       def cubicFromPoints(S: Point, B: Point, E: Point, t: Double, d1: Double): typings.bezierJs.BezierJs.Bezier = js.native
       def fromSVG(svgString: String): typings.bezierJs.BezierJs.Bezier = js.native

@@ -11,8 +11,8 @@ Provides access to I2C on the Raspberry Pi from Node.js
 | Full name          | raspi-i2c |
 | Keywords           | nodebots, robotics, raspberry pi |
 | # releases         | 7 |
-| # dependents       | 7 |
-| # downloads        | 9373 |
+| # dependents       | 8 |
+| # downloads        | 9238 |
 | # stars            | 2 |
 
 ## Links

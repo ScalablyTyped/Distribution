@@ -32,6 +32,7 @@ class ResourceServiceaccountkeys protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceServiceaccountkeysDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceServiceaccountkeysDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -64,6 +65,7 @@ class ResourceServiceaccountkeys protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaServiceAccountKey] = js.native
   def insert(callback: BodyResponseCallback[SchemaServiceAccountKey]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServiceAccountKey] = js.native
   def insert(params: ParamsResourceServiceaccountkeysInsert): GaxiosPromise[SchemaServiceAccountKey] = js.native
   def insert(
     params: ParamsResourceServiceaccountkeysInsert,
@@ -98,6 +100,7 @@ class ResourceServiceaccountkeys protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaServiceAccountKeysListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaServiceAccountKeysListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServiceAccountKeysListResponse] = js.native
   def list(params: ParamsResourceServiceaccountkeysList): GaxiosPromise[SchemaServiceAccountKeysListResponse] = js.native
   def list(
     params: ParamsResourceServiceaccountkeysList,

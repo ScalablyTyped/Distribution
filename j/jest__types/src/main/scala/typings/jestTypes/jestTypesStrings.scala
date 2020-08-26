@@ -224,9 +224,6 @@ object jestTypesStrings {
   sealed trait cobertura extends js.Object
   
   @js.native
-  sealed trait console extends js.Object
-  
-  @js.native
   sealed trait cyan extends DisplayNameColor
   
   @js.native
@@ -293,6 +290,9 @@ object jestTypesStrings {
   sealed trait html extends js.Object
   
   @js.native
+  sealed trait `html-spa` extends js.Object
+  
+  @js.native
   sealed trait include_test_location_in_result extends js.Object
   
   @js.native
@@ -306,6 +306,9 @@ object jestTypesStrings {
   
   @js.native
   sealed trait json_ extends js.Object
+  
+  @js.native
+  sealed trait lcov extends js.Object
   
   @js.native
   sealed trait lcovonly extends js.Object
@@ -330,9 +333,6 @@ object jestTypesStrings {
   
   @js.native
   sealed trait parseInt extends js.Object
-  
-  @js.native
-  sealed trait process extends js.Object
   
   @js.native
   sealed trait queueMicrotask extends js.Object
@@ -576,8 +576,6 @@ object jestTypesStrings {
   @scala.inline
   def cobertura: cobertura = "cobertura".asInstanceOf[cobertura]
   @scala.inline
-  def console: console = "console".asInstanceOf[console]
-  @scala.inline
   def cyan: cyan = "cyan".asInstanceOf[cyan]
   @scala.inline
   def cyanBright: cyanBright = "cyanBright".asInstanceOf[cyanBright]
@@ -622,6 +620,8 @@ object jestTypesStrings {
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   @scala.inline
+  def `html-spa`: `html-spa` = "html-spa".asInstanceOf[`html-spa`]
+  @scala.inline
   def include_test_location_in_result: include_test_location_in_result = "include_test_location_in_result".asInstanceOf[include_test_location_in_result]
   @scala.inline
   def isFinite: isFinite = "isFinite".asInstanceOf[isFinite]
@@ -631,6 +631,8 @@ object jestTypesStrings {
   def `json-summary`: `json-summary` = "json-summary".asInstanceOf[`json-summary`]
   @scala.inline
   def json_ : json_ = "json".asInstanceOf[json_]
+  @scala.inline
+  def lcov: lcov = "lcov".asInstanceOf[lcov]
   @scala.inline
   def lcovonly: lcovonly = "lcovonly".asInstanceOf[lcovonly]
   @scala.inline
@@ -647,8 +649,6 @@ object jestTypesStrings {
   def parseFloat: parseFloat = "parseFloat".asInstanceOf[parseFloat]
   @scala.inline
   def parseInt: parseInt = "parseInt".asInstanceOf[parseInt]
-  @scala.inline
-  def process: process = "process".asInstanceOf[process]
   @scala.inline
   def queueMicrotask: queueMicrotask = "queueMicrotask".asInstanceOf[queueMicrotask]
   @scala.inline

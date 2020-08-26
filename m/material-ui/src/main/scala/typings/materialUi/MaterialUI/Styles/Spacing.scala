@@ -4,48 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Spacing extends js.Object {
-  var desktopDropDownMenuFontSize: js.UndefOr[Double] = js.undefined
-  var desktopDropDownMenuItemHeight: js.UndefOr[Double] = js.undefined
-  var desktopGutter: js.UndefOr[Double] = js.undefined
-  var desktopGutterLess: js.UndefOr[Double] = js.undefined
-  var desktopGutterMini: js.UndefOr[Double] = js.undefined
-  var desktopGutterMore: js.UndefOr[Double] = js.undefined
-  var desktopKeylineIncrement: js.UndefOr[Double] = js.undefined
-  var desktopLeftNavMenuItemHeight: js.UndefOr[Double] = js.undefined
-  var desktopSubheaderHeight: js.UndefOr[Double] = js.undefined
-  var desktopToolbarHeight: js.UndefOr[Double] = js.undefined
-  var iconSize: js.UndefOr[Double] = js.undefined
+  var desktopDropDownMenuFontSize: js.UndefOr[Double] = js.native
+  var desktopDropDownMenuItemHeight: js.UndefOr[Double] = js.native
+  var desktopGutter: js.UndefOr[Double] = js.native
+  var desktopGutterLess: js.UndefOr[Double] = js.native
+  var desktopGutterMini: js.UndefOr[Double] = js.native
+  var desktopGutterMore: js.UndefOr[Double] = js.native
+  var desktopKeylineIncrement: js.UndefOr[Double] = js.native
+  var desktopLeftNavMenuItemHeight: js.UndefOr[Double] = js.native
+  var desktopSubheaderHeight: js.UndefOr[Double] = js.native
+  var desktopToolbarHeight: js.UndefOr[Double] = js.native
+  var iconSize: js.UndefOr[Double] = js.native
 }
 
 object Spacing {
   @scala.inline
-  def apply(
-    desktopDropDownMenuFontSize: js.UndefOr[Double] = js.undefined,
-    desktopDropDownMenuItemHeight: js.UndefOr[Double] = js.undefined,
-    desktopGutter: js.UndefOr[Double] = js.undefined,
-    desktopGutterLess: js.UndefOr[Double] = js.undefined,
-    desktopGutterMini: js.UndefOr[Double] = js.undefined,
-    desktopGutterMore: js.UndefOr[Double] = js.undefined,
-    desktopKeylineIncrement: js.UndefOr[Double] = js.undefined,
-    desktopLeftNavMenuItemHeight: js.UndefOr[Double] = js.undefined,
-    desktopSubheaderHeight: js.UndefOr[Double] = js.undefined,
-    desktopToolbarHeight: js.UndefOr[Double] = js.undefined,
-    iconSize: js.UndefOr[Double] = js.undefined
-  ): Spacing = {
+  def apply(): Spacing = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(desktopDropDownMenuFontSize)) __obj.updateDynamic("desktopDropDownMenuFontSize")(desktopDropDownMenuFontSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(desktopDropDownMenuItemHeight)) __obj.updateDynamic("desktopDropDownMenuItemHeight")(desktopDropDownMenuItemHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(desktopGutter)) __obj.updateDynamic("desktopGutter")(desktopGutter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(desktopGutterLess)) __obj.updateDynamic("desktopGutterLess")(desktopGutterLess.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(desktopGutterMini)) __obj.updateDynamic("desktopGutterMini")(desktopGutterMini.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(desktopGutterMore)) __obj.updateDynamic("desktopGutterMore")(desktopGutterMore.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(desktopKeylineIncrement)) __obj.updateDynamic("desktopKeylineIncrement")(desktopKeylineIncrement.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(desktopLeftNavMenuItemHeight)) __obj.updateDynamic("desktopLeftNavMenuItemHeight")(desktopLeftNavMenuItemHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(desktopSubheaderHeight)) __obj.updateDynamic("desktopSubheaderHeight")(desktopSubheaderHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(desktopToolbarHeight)) __obj.updateDynamic("desktopToolbarHeight")(desktopToolbarHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconSize)) __obj.updateDynamic("iconSize")(iconSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spacing]
   }
+  @scala.inline
+  implicit class SpacingOps[Self <: Spacing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesktopDropDownMenuFontSize(value: Double): Self = this.set("desktopDropDownMenuFontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopDropDownMenuFontSize: Self = this.set("desktopDropDownMenuFontSize", js.undefined)
+    @scala.inline
+    def setDesktopDropDownMenuItemHeight(value: Double): Self = this.set("desktopDropDownMenuItemHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopDropDownMenuItemHeight: Self = this.set("desktopDropDownMenuItemHeight", js.undefined)
+    @scala.inline
+    def setDesktopGutter(value: Double): Self = this.set("desktopGutter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopGutter: Self = this.set("desktopGutter", js.undefined)
+    @scala.inline
+    def setDesktopGutterLess(value: Double): Self = this.set("desktopGutterLess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopGutterLess: Self = this.set("desktopGutterLess", js.undefined)
+    @scala.inline
+    def setDesktopGutterMini(value: Double): Self = this.set("desktopGutterMini", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopGutterMini: Self = this.set("desktopGutterMini", js.undefined)
+    @scala.inline
+    def setDesktopGutterMore(value: Double): Self = this.set("desktopGutterMore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopGutterMore: Self = this.set("desktopGutterMore", js.undefined)
+    @scala.inline
+    def setDesktopKeylineIncrement(value: Double): Self = this.set("desktopKeylineIncrement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopKeylineIncrement: Self = this.set("desktopKeylineIncrement", js.undefined)
+    @scala.inline
+    def setDesktopLeftNavMenuItemHeight(value: Double): Self = this.set("desktopLeftNavMenuItemHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopLeftNavMenuItemHeight: Self = this.set("desktopLeftNavMenuItemHeight", js.undefined)
+    @scala.inline
+    def setDesktopSubheaderHeight(value: Double): Self = this.set("desktopSubheaderHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopSubheaderHeight: Self = this.set("desktopSubheaderHeight", js.undefined)
+    @scala.inline
+    def setDesktopToolbarHeight(value: Double): Self = this.set("desktopToolbarHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopToolbarHeight: Self = this.set("desktopToolbarHeight", js.undefined)
+    @scala.inline
+    def setIconSize(value: Double): Self = this.set("iconSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconSize: Self = this.set("iconSize", js.undefined)
+  }
+  
 }
 

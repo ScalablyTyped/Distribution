@@ -14,11 +14,6 @@ class IonChip protected ()
   extends typings.ionicCore.componentsMod.Components.IonChip {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
-  /**
-    * Display an outline style button.
-    */
-  /* CompleteClass */
-  override var outline: Boolean = js.native
   var z: NgZone = js.native
 }
 

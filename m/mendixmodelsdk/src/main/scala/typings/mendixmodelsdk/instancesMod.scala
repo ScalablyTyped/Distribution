@@ -41,6 +41,11 @@ object instancesMod extends js.Object {
     def clear(): js.Array[T] = js.native
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
+      thisArg: js.UndefOr[scala.Nothing],
+      fromIndex: Double
+    ): js.UndefOr[T] = js.native
+    def find(
+      predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
       thisArg: js.Any,
       fromIndex: Double
     ): js.UndefOr[T] = js.native
@@ -70,6 +75,12 @@ object instancesMod extends js.Object {
       * Creates a new element for a SDK user.
       */
     def createElement[T /* <: Element */](owner: IAbstractModel, constructor: IStructureConstructor[T]): T = js.native
+    def createElement[T /* <: Element */](
+      owner: IAbstractModel,
+      constructor: IStructureConstructor[T],
+      parentPropName: js.UndefOr[scala.Nothing],
+      parentPropIsList: Boolean
+    ): T = js.native
     def createElement[T /* <: Element */](owner: IAbstractModel, constructor: IStructureConstructor[T], parentPropName: String): T = js.native
     def createElement[T /* <: Element */](
       owner: IAbstractModel,
@@ -78,6 +89,12 @@ object instancesMod extends js.Object {
       parentPropIsList: Boolean
     ): T = js.native
     def createElement[T /* <: Element */](owner: AbstractElement, constructor: IStructureConstructor[T]): T = js.native
+    def createElement[T /* <: Element */](
+      owner: AbstractElement,
+      constructor: IStructureConstructor[T],
+      parentPropName: js.UndefOr[scala.Nothing],
+      parentPropIsList: Boolean
+    ): T = js.native
     def createElement[T /* <: Element */](owner: AbstractElement, constructor: IStructureConstructor[T], parentPropName: String): T = js.native
     def createElement[T /* <: Element */](
       owner: AbstractElement,

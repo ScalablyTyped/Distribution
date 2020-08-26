@@ -12,7 +12,7 @@ Delay a promise a minimum amount of time
 | Keywords           | promise, delay, minimum, min, resolve, stall, defer, wait, timeout, settimeout, event, loop, next, tick, delay, async, await, promises, bluebird |
 | # releases         | 3 |
 | # dependents       | 9 |
-| # downloads        | 102825 |
+| # downloads        | 108426 |
 | # stars            | 1 |
 
 ## Links

@@ -26,16 +26,9 @@ object batchGetRepositoriesCommandMod extends js.Object {
           Readable
         ] {
     def this(input: BatchGetRepositoriesInput) = this()
-    /* CompleteClass */
-    override val input: BatchGetRepositoriesInput = js.native
     val middlewareStack: MiddlewareStack[BatchGetRepositoriesInput, BatchGetRepositoriesOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[BatchGetRepositoriesInput, BatchGetRepositoriesOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[BatchGetRepositoriesInput, BatchGetRepositoriesOutput] = js.native
   }

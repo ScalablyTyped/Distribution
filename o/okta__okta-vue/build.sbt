@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "okta__okta-vue"
-version := "1.2-dt-20200106Z-471a86"
-scalaVersion := "2.13.2"
+version := "1.2-dt-20200106Z-beddf5"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8",
-  "org.scalablytyped" %%% "vue" % "2.6.11-cf582f",
-  "org.scalablytyped" %%% "vue-router" % "3.3.4-8a52d7")
+  "org.scalablytyped" %%% "std" % "3.9-bafc13",
+  "org.scalablytyped" %%% "vue" % "2.6.11-238d86",
+  "org.scalablytyped" %%% "vue-router" % "3.3.4-faf8cd")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

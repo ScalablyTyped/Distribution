@@ -32,11 +32,11 @@ object focusTrapZoneFocusTrapZoneMod extends js.Object {
     var _onLastBumperFocus: js.Any = js.native
     var _onRootBlur: js.Any = js.native
     var _onRootFocus: js.Any = js.native
-    var _previouslyFocusedElementInTrapZone: js.UndefOr[js.Any] = js.native
+    var _previouslyFocusedElementInTrapZone: js.Any = js.native
     var _previouslyFocusedElementOutsideTrapZone: js.Any = js.native
     var _returnFocusToInitiator: js.Any = js.native
     var _root: js.Any = js.native
-    var _unmodalize: js.UndefOr[js.Any] = js.native
+    var _unmodalize: js.Any = js.native
     var _updateEventHandlers: js.Any = js.native
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MFocusTrapZone(nextProps: IFocusTrapZoneProps): Unit = js.native
@@ -46,12 +46,6 @@ object focusTrapZoneFocusTrapZoneMod extends js.Object {
     def componentDidUpdate_MFocusTrapZone(prevProps: IFocusTrapZoneProps): Unit = js.native
     @JSName("componentWillUnmount")
     def componentWillUnmount_MFocusTrapZone(): Unit = js.native
-    /**
-      * Sets focus to a descendant in the Trap Zone.
-      * See firstFocusableSelector and focusPreviouslyFocusedInnerElement for details.
-      */
-    /* CompleteClass */
-    override def focus(): Unit = js.native
   }
   
   /* static members */

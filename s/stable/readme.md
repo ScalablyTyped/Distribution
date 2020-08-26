@@ -11,8 +11,8 @@ A stable array sort for JavaScript
 | Full name          | stable |
 | Keywords           | stable, array, sort |
 | # releases         | 3 |
-| # dependents       | 103 |
-| # downloads        | 150623451 |
+| # dependents       | 102 |
+| # downloads        | 157214671 |
 | # stars            | 3 |
 
 ## Links

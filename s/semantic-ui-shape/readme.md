@@ -12,7 +12,7 @@ Single component release of shape
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 1889 |
+| # downloads        | 1996 |
 | # stars            | 0 |
 
 ## Links

@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object create_lcovonly extends js.Object {
   def apply(name: lcovonly): Visitor[Node] = js.native
-  def apply(name: lcovonly, options: Partial[Options]): Visitor[Node] = js.native
+  def apply(name: lcovonly, options: Partial[LcovOnlyOptions]): Visitor[Node] = js.native
 }
 

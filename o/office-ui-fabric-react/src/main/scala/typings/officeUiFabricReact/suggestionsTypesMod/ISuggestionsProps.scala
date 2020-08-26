@@ -174,7 +174,11 @@ trait ISuggestionsProps[T]
     * What should occur when a suggestion is clicked
     */
   def onSuggestionClick(): Unit = js.native
+  def onSuggestionClick(ev: js.UndefOr[scala.Nothing], item: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
+  def onSuggestionClick(ev: js.UndefOr[scala.Nothing], item: js.Any): Unit = js.native
+  def onSuggestionClick(ev: js.UndefOr[scala.Nothing], item: js.Any, index: Double): Unit = js.native
   def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
+  def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.Any): Unit = js.native
   def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.Any, index: Double): Unit = js.native
 }

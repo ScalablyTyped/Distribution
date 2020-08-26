@@ -68,32 +68,66 @@ trait SchemaVolume extends js.Object {
 
 object SchemaVolume {
   @scala.inline
-  def apply(
-    accessInfo: AccessViewStatus = null,
-    etag: String = null,
-    id: String = null,
-    kind: String = null,
-    layerInfo: Layers = null,
-    recommendedInfo: Explanation = null,
-    saleInfo: BuyLink = null,
-    searchInfo: TextSnippet = null,
-    selfLink: String = null,
-    userInfo: AcquiredTime = null,
-    volumeInfo: AllowAnonLogging = null
-  ): SchemaVolume = {
+  def apply(): SchemaVolume = {
     val __obj = js.Dynamic.literal()
-    if (accessInfo != null) __obj.updateDynamic("accessInfo")(accessInfo.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (layerInfo != null) __obj.updateDynamic("layerInfo")(layerInfo.asInstanceOf[js.Any])
-    if (recommendedInfo != null) __obj.updateDynamic("recommendedInfo")(recommendedInfo.asInstanceOf[js.Any])
-    if (saleInfo != null) __obj.updateDynamic("saleInfo")(saleInfo.asInstanceOf[js.Any])
-    if (searchInfo != null) __obj.updateDynamic("searchInfo")(searchInfo.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo.asInstanceOf[js.Any])
-    if (volumeInfo != null) __obj.updateDynamic("volumeInfo")(volumeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVolume]
   }
+  @scala.inline
+  implicit class SchemaVolumeOps[Self <: SchemaVolume] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessInfo(value: AccessViewStatus): Self = this.set("accessInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessInfo: Self = this.set("accessInfo", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLayerInfo(value: Layers): Self = this.set("layerInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerInfo: Self = this.set("layerInfo", js.undefined)
+    @scala.inline
+    def setRecommendedInfo(value: Explanation): Self = this.set("recommendedInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendedInfo: Self = this.set("recommendedInfo", js.undefined)
+    @scala.inline
+    def setSaleInfo(value: BuyLink): Self = this.set("saleInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaleInfo: Self = this.set("saleInfo", js.undefined)
+    @scala.inline
+    def setSearchInfo(value: TextSnippet): Self = this.set("searchInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchInfo: Self = this.set("searchInfo", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setUserInfo(value: AcquiredTime): Self = this.set("userInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserInfo: Self = this.set("userInfo", js.undefined)
+    @scala.inline
+    def setVolumeInfo(value: AllowAnonLogging): Self = this.set("volumeInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeInfo: Self = this.set("volumeInfo", js.undefined)
+  }
+  
 }
 

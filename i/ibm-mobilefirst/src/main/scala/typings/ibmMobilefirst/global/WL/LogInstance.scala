@@ -11,18 +11,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WL.LogInstance")
 @js.native
 class LogInstance ()
-  extends typings.ibmMobilefirst.WL.LogInstance {
-  /* CompleteClass */
-  override def debug(message: String): Unit = js.native
-  /* CompleteClass */
-  override def error(message: String): Unit = js.native
-  /* CompleteClass */
-  override def fatal(message: String): Unit = js.native
-  /* CompleteClass */
-  override def info(message: String): Unit = js.native
-  /* CompleteClass */
-  override def trace(message: String): Unit = js.native
-  /* CompleteClass */
-  override def warn(message: String): Unit = js.native
-}
+  extends typings.ibmMobilefirst.WL.LogInstance
 

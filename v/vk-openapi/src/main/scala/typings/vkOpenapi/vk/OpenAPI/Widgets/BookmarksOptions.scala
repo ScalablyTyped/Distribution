@@ -9,18 +9,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BookmarksOptions extends js.Object {
-  var height: js.UndefOr[`18` | `20` | `22` | `24` | `30`] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[`18` | `20` | `22` | `24` | `30`] = js.native
+  var url: js.UndefOr[String] = js.native
 }
 
 object BookmarksOptions {
   @scala.inline
-  def apply(height: `18` | `20` | `22` | `24` | `30` = null, url: String = null): BookmarksOptions = {
+  def apply(): BookmarksOptions = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookmarksOptions]
   }
+  @scala.inline
+  implicit class BookmarksOptionsOps[Self <: BookmarksOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

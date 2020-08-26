@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * This class represents an area that objects, like a marker, occupies in the screen space, meaning that object can be probed and returned by H.Map@getObjectsAt method.
   */
+@js.native
 trait HitArea extends js.Object
 
 @JSGlobal("H.map.HitArea")

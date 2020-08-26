@@ -13,6 +13,7 @@ object anon extends js.Object {
   @js.native
   trait FnCall extends js.Object {
     def apply(): Unit = js.native
+    def apply(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
     def apply(code: Double): Unit = js.native
     def apply(code: Double, reason: String): Unit = js.native
   }

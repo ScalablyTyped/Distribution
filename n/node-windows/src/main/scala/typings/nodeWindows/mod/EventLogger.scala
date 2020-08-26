@@ -32,6 +32,11 @@ class EventLogger () extends js.Object {
     * An optional callback to run when the message is logged.
     */
   def auditFailure(message: String): Unit = js.native
+  def auditFailure(
+    message: String,
+    code: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): Unit = js.native
   def auditFailure(message: String, code: Double): Unit = js.native
   def auditFailure(
     message: String,
@@ -49,6 +54,11 @@ class EventLogger () extends js.Object {
     * An optional callback to run when the message is logged.
     */
   def auditSuccess(message: String): Unit = js.native
+  def auditSuccess(
+    message: String,
+    code: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): Unit = js.native
   def auditSuccess(message: String, code: Double): Unit = js.native
   def auditSuccess(
     message: String,
@@ -66,6 +76,11 @@ class EventLogger () extends js.Object {
     * An optional callback to run when the message is logged.
     */
   def error(message: String): Unit = js.native
+  def error(
+    message: String,
+    code: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): Unit = js.native
   def error(message: String, code: Double): Unit = js.native
   def error(
     message: String,
@@ -83,6 +98,11 @@ class EventLogger () extends js.Object {
     * An optional callback to run when the message is logged.
     */
   def info(message: String): Unit = js.native
+  def info(
+    message: String,
+    code: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): Unit = js.native
   def info(message: String, code: Double): Unit = js.native
   def info(
     message: String,
@@ -100,6 +120,11 @@ class EventLogger () extends js.Object {
     * An optional callback to run when the message is logged.
     */
   def information(message: String): Unit = js.native
+  def information(
+    message: String,
+    code: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): Unit = js.native
   def information(message: String, code: Double): Unit = js.native
   def information(
     message: String,
@@ -117,6 +142,11 @@ class EventLogger () extends js.Object {
     * An optional callback to run when the message is logged.
     */
   def warn(message: String): Unit = js.native
+  def warn(
+    message: String,
+    code: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): Unit = js.native
   def warn(message: String, code: Double): Unit = js.native
   def warn(
     message: String,
@@ -134,6 +164,11 @@ class EventLogger () extends js.Object {
     * An optional callback to run when the message is logged.
     */
   def warning(message: String): Unit = js.native
+  def warning(
+    message: String,
+    code: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* error */ ExecException, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): Unit = js.native
   def warning(message: String, code: Double): Unit = js.native
   def warning(
     message: String,

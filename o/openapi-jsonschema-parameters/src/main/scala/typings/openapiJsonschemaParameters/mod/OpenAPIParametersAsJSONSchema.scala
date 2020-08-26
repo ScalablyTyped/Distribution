@@ -5,30 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OpenAPIParametersAsJSONSchema extends js.Object {
-  var body: js.UndefOr[IJsonSchema] = js.undefined
-  var formData: js.UndefOr[IJsonSchema] = js.undefined
-  var headers: js.UndefOr[IJsonSchema] = js.undefined
-  var path: js.UndefOr[IJsonSchema] = js.undefined
-  var query: js.UndefOr[IJsonSchema] = js.undefined
+  var body: js.UndefOr[IJsonSchema] = js.native
+  var formData: js.UndefOr[IJsonSchema] = js.native
+  var headers: js.UndefOr[IJsonSchema] = js.native
+  var path: js.UndefOr[IJsonSchema] = js.native
+  var query: js.UndefOr[IJsonSchema] = js.native
 }
 
 object OpenAPIParametersAsJSONSchema {
   @scala.inline
-  def apply(
-    body: IJsonSchema = null,
-    formData: IJsonSchema = null,
-    headers: IJsonSchema = null,
-    path: IJsonSchema = null,
-    query: IJsonSchema = null
-  ): OpenAPIParametersAsJSONSchema = {
+  def apply(): OpenAPIParametersAsJSONSchema = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenAPIParametersAsJSONSchema]
   }
+  @scala.inline
+  implicit class OpenAPIParametersAsJSONSchemaOps[Self <: OpenAPIParametersAsJSONSchema] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: IJsonSchema): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setFormData(value: IJsonSchema): Self = this.set("formData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormData: Self = this.set("formData", js.undefined)
+    @scala.inline
+    def setHeaders(value: IJsonSchema): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setPath(value: IJsonSchema): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setQuery(value: IJsonSchema): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+  }
+  
 }
 

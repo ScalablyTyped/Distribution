@@ -4,34 +4,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LiveStreamSnippet extends js.Object {
   /** The ID that YouTube uses to uniquely identify the channel that is transmitting the stream. */
-  var channelId: js.UndefOr[String] = js.undefined
+  var channelId: js.UndefOr[String] = js.native
   /** The stream's description. The value cannot be longer than 10000 characters. */
-  var description: js.UndefOr[String] = js.undefined
-  var isDefaultStream: js.UndefOr[Boolean] = js.undefined
+  var description: js.UndefOr[String] = js.native
+  var isDefaultStream: js.UndefOr[Boolean] = js.native
   /** The date and time that the stream was created. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format. */
-  var publishedAt: js.UndefOr[String] = js.undefined
+  var publishedAt: js.UndefOr[String] = js.native
   /** The stream's title. The value must be between 1 and 128 characters long. */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
 }
 
 object LiveStreamSnippet {
   @scala.inline
-  def apply(
-    channelId: String = null,
-    description: String = null,
-    isDefaultStream: js.UndefOr[Boolean] = js.undefined,
-    publishedAt: String = null,
-    title: String = null
-  ): LiveStreamSnippet = {
+  def apply(): LiveStreamSnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefaultStream)) __obj.updateDynamic("isDefaultStream")(isDefaultStream.get.asInstanceOf[js.Any])
-    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveStreamSnippet]
   }
+  @scala.inline
+  implicit class LiveStreamSnippetOps[Self <: LiveStreamSnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setIsDefaultStream(value: Boolean): Self = this.set("isDefaultStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefaultStream: Self = this.set("isDefaultStream", js.undefined)
+    @scala.inline
+    def setPublishedAt(value: String): Self = this.set("publishedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishedAt: Self = this.set("publishedAt", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

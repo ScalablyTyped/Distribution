@@ -29,22 +29,22 @@ trait Typeofcast extends js.Object {
     /* sessionRequest */ SessionRequest, 
     /* sessionListener */ js.Function1[/* session */ Session, Unit], 
     /* receiverListener */ js.Function1[/* receiverAvailability */ ReceiverAvailability, Unit], 
-    js.UndefOr[/* autoJoinPolicy */ AutoJoinPolicy], 
-    js.UndefOr[/* defaultActionPolicy */ DefaultActionPolicy], 
+    /* autoJoinPolicy */ js.UndefOr[AutoJoinPolicy], 
+    /* defaultActionPolicy */ js.UndefOr[DefaultActionPolicy], 
     typings.chrome.chrome.cast.ApiConfig
   ] = js.native
   var Error: Instantiable3[
     /* code */ ErrorCode, 
-    js.UndefOr[/* description */ String], 
-    js.UndefOr[/* details */ js.Object], 
+    /* description */ js.UndefOr[String], 
+    /* details */ js.UndefOr[js.Object], 
     typings.chrome.chrome.cast.Error
   ] = js.native
   var Image: Instantiable1[/* url */ String, typings.chrome.chrome.cast.Image] = js.native
   var Receiver: Instantiable4[
     /* label */ String, 
     /* friendlyName */ String, 
-    js.UndefOr[/* capabilities */ js.Array[Capability]], 
-    js.UndefOr[/* volume */ Volume], 
+    /* capabilities */ js.UndefOr[js.Array[Capability]], 
+    /* volume */ js.UndefOr[Volume], 
     typings.chrome.chrome.cast.Receiver
   ] = js.native
   var ReceiverDisplayStatus: Instantiable2[
@@ -63,14 +63,14 @@ trait Typeofcast extends js.Object {
   ] = js.native
   var SessionRequest: Instantiable3[
     /* appId */ String, 
-    js.UndefOr[/* capabilities */ js.Array[Capability]], 
-    js.UndefOr[/* timeout */ Double], 
+    /* capabilities */ js.UndefOr[js.Array[Capability]], 
+    /* timeout */ js.UndefOr[Double], 
     typings.chrome.chrome.cast.SessionRequest
   ] = js.native
   var VERSION: js.Array[Double] = js.native
   var Volume: Instantiable2[
-    js.UndefOr[/* level */ Double], 
-    js.UndefOr[/* muted */ Boolean], 
+    /* level */ js.UndefOr[Double], 
+    /* muted */ js.UndefOr[Boolean], 
     typings.chrome.chrome.cast.Volume
   ] = js.native
   var isAvailable: Boolean = js.native
@@ -86,6 +86,12 @@ trait Typeofcast extends js.Object {
   def requestSession(
     successCallback: js.Function1[/* session */ Session, Unit],
     errorCallback: js.Function1[/* error */ Error, Unit]
+  ): Unit = js.native
+  def requestSession(
+    successCallback: js.Function1[/* session */ Session, Unit],
+    errorCallback: js.Function1[/* error */ Error, Unit],
+    sessionRequest: js.UndefOr[scala.Nothing],
+    label: String
   ): Unit = js.native
   def requestSession(
     successCallback: js.Function1[/* session */ Session, Unit],

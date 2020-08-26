@@ -15,12 +15,12 @@ import scala.scalajs.js.annotation._
 @JSImport("mz/crypto", "createCipher")
 @js.native
 object createCipher extends js.Object {
-  /** @deprecated since v10.0.0 use createCipheriv() */
+  /** @deprecated since v10.0.0 use `createCipheriv()` */
   def apply(algorithm: String, password: BinaryLike): typings.node.cryptoMod.Cipher = js.native
   def apply(algorithm: String, password: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Cipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
+  /** @deprecated since v10.0.0 use `createCipheriv()` */
   def apply(algorithm: CipherCCMTypes, password: BinaryLike, options: CipherCCMOptions): CipherCCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
+  /** @deprecated since v10.0.0 use `createCipheriv()` */
   def apply(algorithm: CipherGCMTypes, password: BinaryLike): CipherGCM = js.native
   def apply(algorithm: CipherGCMTypes, password: BinaryLike, options: CipherGCMOptions): CipherGCM = js.native
 }

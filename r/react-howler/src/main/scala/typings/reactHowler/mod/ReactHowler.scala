@@ -13,6 +13,7 @@ trait ReactHowler
   def duration(): Double = js.native
   def duration(id: Double): Double = js.native
   def howlerState(): HOWLER_STATE = js.native
+  def seek(): Double = js.native
   def seek(time: Double): Double = js.native
   def stop(): Unit = js.native
   def stop(id: Double): Unit = js.native

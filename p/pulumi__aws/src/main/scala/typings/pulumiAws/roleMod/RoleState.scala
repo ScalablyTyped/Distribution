@@ -51,9 +51,9 @@ trait RoleState extends js.Object {
     */
   val permissionsBoundary: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of tags for the IAM role
+    * Key-value map of tags for the IAM role
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The stable and unique string identifying the role.
     */
@@ -62,34 +62,70 @@ trait RoleState extends js.Object {
 
 object RoleState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    assumeRolePolicy: Input[String | PolicyDocument] = null,
-    createDate: Input[String] = null,
-    description: Input[String] = null,
-    forceDetachPolicies: Input[Boolean] = null,
-    maxSessionDuration: Input[Double] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    path: Input[String] = null,
-    permissionsBoundary: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    uniqueId: Input[String] = null
-  ): RoleState = {
+  def apply(): RoleState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (assumeRolePolicy != null) __obj.updateDynamic("assumeRolePolicy")(assumeRolePolicy.asInstanceOf[js.Any])
-    if (createDate != null) __obj.updateDynamic("createDate")(createDate.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (forceDetachPolicies != null) __obj.updateDynamic("forceDetachPolicies")(forceDetachPolicies.asInstanceOf[js.Any])
-    if (maxSessionDuration != null) __obj.updateDynamic("maxSessionDuration")(maxSessionDuration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (permissionsBoundary != null) __obj.updateDynamic("permissionsBoundary")(permissionsBoundary.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (uniqueId != null) __obj.updateDynamic("uniqueId")(uniqueId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleState]
   }
+  @scala.inline
+  implicit class RoleStateOps[Self <: RoleState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAssumeRolePolicy(value: Input[String | PolicyDocument]): Self = this.set("assumeRolePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssumeRolePolicy: Self = this.set("assumeRolePolicy", js.undefined)
+    @scala.inline
+    def setCreateDate(value: Input[String]): Self = this.set("createDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDate: Self = this.set("createDate", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setForceDetachPolicies(value: Input[Boolean]): Self = this.set("forceDetachPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceDetachPolicies: Self = this.set("forceDetachPolicies", js.undefined)
+    @scala.inline
+    def setMaxSessionDuration(value: Input[Double]): Self = this.set("maxSessionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSessionDuration: Self = this.set("maxSessionDuration", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPermissionsBoundary(value: Input[String]): Self = this.set("permissionsBoundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionsBoundary: Self = this.set("permissionsBoundary", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUniqueId(value: Input[String]): Self = this.set("uniqueId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniqueId: Self = this.set("uniqueId", js.undefined)
+  }
+  
 }
 

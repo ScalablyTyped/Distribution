@@ -22,16 +22,34 @@ trait AncillarySourceSettings extends js.Object {
 
 object AncillarySourceSettings {
   @scala.inline
-  def apply(
-    Convert608To708: AncillaryConvert608To708 = null,
-    SourceAncillaryChannelNumber: js.UndefOr[integerMin1Max4] = js.undefined,
-    TerminateCaptions: AncillaryTerminateCaptions = null
-  ): AncillarySourceSettings = {
+  def apply(): AncillarySourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (Convert608To708 != null) __obj.updateDynamic("Convert608To708")(Convert608To708.asInstanceOf[js.Any])
-    if (!js.isUndefined(SourceAncillaryChannelNumber)) __obj.updateDynamic("SourceAncillaryChannelNumber")(SourceAncillaryChannelNumber.get.asInstanceOf[js.Any])
-    if (TerminateCaptions != null) __obj.updateDynamic("TerminateCaptions")(TerminateCaptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AncillarySourceSettings]
   }
+  @scala.inline
+  implicit class AncillarySourceSettingsOps[Self <: AncillarySourceSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConvert608To708(value: AncillaryConvert608To708): Self = this.set("Convert608To708", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvert608To708: Self = this.set("Convert608To708", js.undefined)
+    @scala.inline
+    def setSourceAncillaryChannelNumber(value: integerMin1Max4): Self = this.set("SourceAncillaryChannelNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceAncillaryChannelNumber: Self = this.set("SourceAncillaryChannelNumber", js.undefined)
+    @scala.inline
+    def setTerminateCaptions(value: AncillaryTerminateCaptions): Self = this.set("TerminateCaptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminateCaptions: Self = this.set("TerminateCaptions", js.undefined)
+  }
+  
 }
 

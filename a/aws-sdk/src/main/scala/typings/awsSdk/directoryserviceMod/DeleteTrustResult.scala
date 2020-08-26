@@ -14,10 +14,26 @@ trait DeleteTrustResult extends js.Object {
 
 object DeleteTrustResult {
   @scala.inline
-  def apply(TrustId: TrustId = null): DeleteTrustResult = {
+  def apply(): DeleteTrustResult = {
     val __obj = js.Dynamic.literal()
-    if (TrustId != null) __obj.updateDynamic("TrustId")(TrustId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTrustResult]
   }
+  @scala.inline
+  implicit class DeleteTrustResultOps[Self <: DeleteTrustResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrustId(value: TrustId): Self = this.set("TrustId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrustId: Self = this.set("TrustId", js.undefined)
+  }
+  
 }
 

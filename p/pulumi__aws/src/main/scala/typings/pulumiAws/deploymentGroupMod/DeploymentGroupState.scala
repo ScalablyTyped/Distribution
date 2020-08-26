@@ -81,40 +81,92 @@ trait DeploymentGroupState extends js.Object {
 
 object DeploymentGroupState {
   @scala.inline
-  def apply(
-    alarmConfiguration: Input[DeploymentGroupAlarmConfiguration] = null,
-    appName: Input[String] = null,
-    autoRollbackConfiguration: Input[DeploymentGroupAutoRollbackConfiguration] = null,
-    autoscalingGroups: Input[js.Array[Input[String]]] = null,
-    blueGreenDeploymentConfig: Input[DeploymentGroupBlueGreenDeploymentConfig] = null,
-    deploymentConfigName: Input[String] = null,
-    deploymentGroupName: Input[String] = null,
-    deploymentStyle: Input[DeploymentGroupDeploymentStyle] = null,
-    ec2TagFilters: Input[js.Array[Input[DeploymentGroupEc2TagFilter]]] = null,
-    ec2TagSets: Input[js.Array[Input[DeploymentGroupEc2TagSet]]] = null,
-    ecsService: Input[DeploymentGroupEcsService] = null,
-    loadBalancerInfo: Input[DeploymentGroupLoadBalancerInfo] = null,
-    onPremisesInstanceTagFilters: Input[js.Array[Input[DeploymentGroupOnPremisesInstanceTagFilter]]] = null,
-    serviceRoleArn: Input[String] = null,
-    triggerConfigurations: Input[js.Array[Input[DeploymentGroupTriggerConfiguration]]] = null
-  ): DeploymentGroupState = {
+  def apply(): DeploymentGroupState = {
     val __obj = js.Dynamic.literal()
-    if (alarmConfiguration != null) __obj.updateDynamic("alarmConfiguration")(alarmConfiguration.asInstanceOf[js.Any])
-    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
-    if (autoRollbackConfiguration != null) __obj.updateDynamic("autoRollbackConfiguration")(autoRollbackConfiguration.asInstanceOf[js.Any])
-    if (autoscalingGroups != null) __obj.updateDynamic("autoscalingGroups")(autoscalingGroups.asInstanceOf[js.Any])
-    if (blueGreenDeploymentConfig != null) __obj.updateDynamic("blueGreenDeploymentConfig")(blueGreenDeploymentConfig.asInstanceOf[js.Any])
-    if (deploymentConfigName != null) __obj.updateDynamic("deploymentConfigName")(deploymentConfigName.asInstanceOf[js.Any])
-    if (deploymentGroupName != null) __obj.updateDynamic("deploymentGroupName")(deploymentGroupName.asInstanceOf[js.Any])
-    if (deploymentStyle != null) __obj.updateDynamic("deploymentStyle")(deploymentStyle.asInstanceOf[js.Any])
-    if (ec2TagFilters != null) __obj.updateDynamic("ec2TagFilters")(ec2TagFilters.asInstanceOf[js.Any])
-    if (ec2TagSets != null) __obj.updateDynamic("ec2TagSets")(ec2TagSets.asInstanceOf[js.Any])
-    if (ecsService != null) __obj.updateDynamic("ecsService")(ecsService.asInstanceOf[js.Any])
-    if (loadBalancerInfo != null) __obj.updateDynamic("loadBalancerInfo")(loadBalancerInfo.asInstanceOf[js.Any])
-    if (onPremisesInstanceTagFilters != null) __obj.updateDynamic("onPremisesInstanceTagFilters")(onPremisesInstanceTagFilters.asInstanceOf[js.Any])
-    if (serviceRoleArn != null) __obj.updateDynamic("serviceRoleArn")(serviceRoleArn.asInstanceOf[js.Any])
-    if (triggerConfigurations != null) __obj.updateDynamic("triggerConfigurations")(triggerConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentGroupState]
   }
+  @scala.inline
+  implicit class DeploymentGroupStateOps[Self <: DeploymentGroupState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlarmConfiguration(value: Input[DeploymentGroupAlarmConfiguration]): Self = this.set("alarmConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmConfiguration: Self = this.set("alarmConfiguration", js.undefined)
+    @scala.inline
+    def setAppName(value: Input[String]): Self = this.set("appName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppName: Self = this.set("appName", js.undefined)
+    @scala.inline
+    def setAutoRollbackConfiguration(value: Input[DeploymentGroupAutoRollbackConfiguration]): Self = this.set("autoRollbackConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRollbackConfiguration: Self = this.set("autoRollbackConfiguration", js.undefined)
+    @scala.inline
+    def setAutoscalingGroupsVarargs(value: Input[String]*): Self = this.set("autoscalingGroups", js.Array(value :_*))
+    @scala.inline
+    def setAutoscalingGroups(value: Input[js.Array[Input[String]]]): Self = this.set("autoscalingGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscalingGroups: Self = this.set("autoscalingGroups", js.undefined)
+    @scala.inline
+    def setBlueGreenDeploymentConfig(value: Input[DeploymentGroupBlueGreenDeploymentConfig]): Self = this.set("blueGreenDeploymentConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlueGreenDeploymentConfig: Self = this.set("blueGreenDeploymentConfig", js.undefined)
+    @scala.inline
+    def setDeploymentConfigName(value: Input[String]): Self = this.set("deploymentConfigName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentConfigName: Self = this.set("deploymentConfigName", js.undefined)
+    @scala.inline
+    def setDeploymentGroupName(value: Input[String]): Self = this.set("deploymentGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentGroupName: Self = this.set("deploymentGroupName", js.undefined)
+    @scala.inline
+    def setDeploymentStyle(value: Input[DeploymentGroupDeploymentStyle]): Self = this.set("deploymentStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentStyle: Self = this.set("deploymentStyle", js.undefined)
+    @scala.inline
+    def setEc2TagFiltersVarargs(value: Input[DeploymentGroupEc2TagFilter]*): Self = this.set("ec2TagFilters", js.Array(value :_*))
+    @scala.inline
+    def setEc2TagFilters(value: Input[js.Array[Input[DeploymentGroupEc2TagFilter]]]): Self = this.set("ec2TagFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2TagFilters: Self = this.set("ec2TagFilters", js.undefined)
+    @scala.inline
+    def setEc2TagSetsVarargs(value: Input[DeploymentGroupEc2TagSet]*): Self = this.set("ec2TagSets", js.Array(value :_*))
+    @scala.inline
+    def setEc2TagSets(value: Input[js.Array[Input[DeploymentGroupEc2TagSet]]]): Self = this.set("ec2TagSets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2TagSets: Self = this.set("ec2TagSets", js.undefined)
+    @scala.inline
+    def setEcsService(value: Input[DeploymentGroupEcsService]): Self = this.set("ecsService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcsService: Self = this.set("ecsService", js.undefined)
+    @scala.inline
+    def setLoadBalancerInfo(value: Input[DeploymentGroupLoadBalancerInfo]): Self = this.set("loadBalancerInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerInfo: Self = this.set("loadBalancerInfo", js.undefined)
+    @scala.inline
+    def setOnPremisesInstanceTagFiltersVarargs(value: Input[DeploymentGroupOnPremisesInstanceTagFilter]*): Self = this.set("onPremisesInstanceTagFilters", js.Array(value :_*))
+    @scala.inline
+    def setOnPremisesInstanceTagFilters(value: Input[js.Array[Input[DeploymentGroupOnPremisesInstanceTagFilter]]]): Self = this.set("onPremisesInstanceTagFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPremisesInstanceTagFilters: Self = this.set("onPremisesInstanceTagFilters", js.undefined)
+    @scala.inline
+    def setServiceRoleArn(value: Input[String]): Self = this.set("serviceRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRoleArn: Self = this.set("serviceRoleArn", js.undefined)
+    @scala.inline
+    def setTriggerConfigurationsVarargs(value: Input[DeploymentGroupTriggerConfiguration]*): Self = this.set("triggerConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setTriggerConfigurations(value: Input[js.Array[Input[DeploymentGroupTriggerConfiguration]]]): Self = this.set("triggerConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerConfigurations: Self = this.set("triggerConfigurations", js.undefined)
+  }
+  
 }
 

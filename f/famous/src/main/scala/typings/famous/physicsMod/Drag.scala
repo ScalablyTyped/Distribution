@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Drag () extends Force {
   def this(targets: js.Any) = this()
   def this(targets: js.Array[_]) = this()
+  def this(targets: js.UndefOr[scala.Nothing], options: IDragOptions) = this()
   def this(targets: js.Any, options: IDragOptions) = this()
   def this(targets: js.Array[_], options: IDragOptions) = this()
   var max: Double = js.native

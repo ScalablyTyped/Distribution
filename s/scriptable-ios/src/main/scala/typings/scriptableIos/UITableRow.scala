@@ -88,6 +88,7 @@ trait UITableRow extends js.Object {
     * @see https://docs.scriptable.app/uitablerow/#-addtext
     */
   def addText(): UITableCell = js.native
+  def addText(title: js.UndefOr[scala.Nothing], subtitle: String): UITableCell = js.native
   def addText(title: String): UITableCell = js.native
   def addText(title: String, subtitle: String): UITableCell = js.native
   /**

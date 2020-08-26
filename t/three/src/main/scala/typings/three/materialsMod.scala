@@ -100,12 +100,6 @@ object materialsMod extends js.Object {
   }
   
   @js.native
-  class MultiMaterial ()
-    extends typings.three.pointsMaterialMod.MultiMaterial {
-    def this(materials: js.Array[typings.three.materialMod.Material]) = this()
-  }
-  
-  @js.native
   class PointsMaterial ()
     extends typings.three.pointsMaterialMod.PointsMaterial {
     def this(parameters: PointsMaterialParameters) = this()

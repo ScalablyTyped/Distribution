@@ -4,40 +4,69 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridFilterableOperatorsNumber extends js.Object {
   @JSName("eq")
-  var eq_FGridFilterableOperatorsNumber: js.UndefOr[String] = js.undefined
-  var gt: js.UndefOr[String] = js.undefined
-  var gte: js.UndefOr[String] = js.undefined
-  var isnotnull: js.UndefOr[String] = js.undefined
-  var isnull: js.UndefOr[String] = js.undefined
-  var lt: js.UndefOr[String] = js.undefined
-  var lte: js.UndefOr[String] = js.undefined
-  var neq: js.UndefOr[String] = js.undefined
+  var eq_FGridFilterableOperatorsNumber: js.UndefOr[String] = js.native
+  var gt: js.UndefOr[String] = js.native
+  var gte: js.UndefOr[String] = js.native
+  var isnotnull: js.UndefOr[String] = js.native
+  var isnull: js.UndefOr[String] = js.native
+  var lt: js.UndefOr[String] = js.native
+  var lte: js.UndefOr[String] = js.native
+  var neq: js.UndefOr[String] = js.native
 }
 
 object GridFilterableOperatorsNumber {
   @scala.inline
-  def apply(
-    eq: String = null,
-    gt: String = null,
-    gte: String = null,
-    isnotnull: String = null,
-    isnull: String = null,
-    lt: String = null,
-    lte: String = null,
-    neq: String = null
-  ): GridFilterableOperatorsNumber = {
+  def apply(): GridFilterableOperatorsNumber = {
     val __obj = js.Dynamic.literal()
-    if (eq != null) __obj.updateDynamic("eq")(eq.asInstanceOf[js.Any])
-    if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
-    if (gte != null) __obj.updateDynamic("gte")(gte.asInstanceOf[js.Any])
-    if (isnotnull != null) __obj.updateDynamic("isnotnull")(isnotnull.asInstanceOf[js.Any])
-    if (isnull != null) __obj.updateDynamic("isnull")(isnull.asInstanceOf[js.Any])
-    if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
-    if (lte != null) __obj.updateDynamic("lte")(lte.asInstanceOf[js.Any])
-    if (neq != null) __obj.updateDynamic("neq")(neq.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFilterableOperatorsNumber]
   }
+  @scala.inline
+  implicit class GridFilterableOperatorsNumberOps[Self <: GridFilterableOperatorsNumber] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEq(value: String): Self = this.set("eq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEq: Self = this.set("eq", js.undefined)
+    @scala.inline
+    def setGt(value: String): Self = this.set("gt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGt: Self = this.set("gt", js.undefined)
+    @scala.inline
+    def setGte(value: String): Self = this.set("gte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGte: Self = this.set("gte", js.undefined)
+    @scala.inline
+    def setIsnotnull(value: String): Self = this.set("isnotnull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsnotnull: Self = this.set("isnotnull", js.undefined)
+    @scala.inline
+    def setIsnull(value: String): Self = this.set("isnull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsnull: Self = this.set("isnull", js.undefined)
+    @scala.inline
+    def setLt(value: String): Self = this.set("lt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLt: Self = this.set("lt", js.undefined)
+    @scala.inline
+    def setLte(value: String): Self = this.set("lte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLte: Self = this.set("lte", js.undefined)
+    @scala.inline
+    def setNeq(value: String): Self = this.set("neq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeq: Self = this.set("neq", js.undefined)
+  }
+  
 }
 

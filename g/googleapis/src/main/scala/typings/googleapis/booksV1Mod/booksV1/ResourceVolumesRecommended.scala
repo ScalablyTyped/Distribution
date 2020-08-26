@@ -29,6 +29,7 @@ class ResourceVolumesRecommended protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaVolumes] = js.native
   def list(callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVolumes] = js.native
   def list(params: ParamsResourceVolumesRecommendedList): GaxiosPromise[SchemaVolumes] = js.native
   def list(params: ParamsResourceVolumesRecommendedList, callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
   def list(
@@ -59,6 +60,7 @@ class ResourceVolumesRecommended protected () extends js.Object {
     */
   def rate(): GaxiosPromise[SchemaBooksVolumesRecommendedRateResponse] = js.native
   def rate(callback: BodyResponseCallback[SchemaBooksVolumesRecommendedRateResponse]): Unit = js.native
+  def rate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBooksVolumesRecommendedRateResponse] = js.native
   def rate(params: ParamsResourceVolumesRecommendedRate): GaxiosPromise[SchemaBooksVolumesRecommendedRateResponse] = js.native
   def rate(
     params: ParamsResourceVolumesRecommendedRate,

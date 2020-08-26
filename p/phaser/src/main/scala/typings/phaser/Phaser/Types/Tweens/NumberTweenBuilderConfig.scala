@@ -5,225 +5,356 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NumberTweenBuilderConfig extends js.Object {
   /**
     * Scope (this) for the callbacks. The default scope is the tween.
     */
-  var callbackScope: js.UndefOr[js.Any] = js.undefined
+  var callbackScope: js.UndefOr[js.Any] = js.native
   /**
     * The time the tween will wait before the onComplete event is dispatched once it has completed, in ms.
     */
-  var completeDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.undefined
+  var completeDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.native
   /**
     * The number of milliseconds to delay before the tween will start.
     */
-  var delay: js.UndefOr[Double] = js.undefined
+  var delay: js.UndefOr[Double] = js.native
   /**
     * The duration of the tween in milliseconds.
     */
-  var duration: js.UndefOr[Double] = js.undefined
+  var duration: js.UndefOr[Double] = js.native
   /**
     * The easing equation to use for the tween.
     */
-  var ease: js.UndefOr[String | js.Function] = js.undefined
+  var ease: js.UndefOr[String | js.Function] = js.native
   /**
     * Optional easing parameters.
     */
-  var easeParams: js.UndefOr[js.Array[_]] = js.undefined
+  var easeParams: js.UndefOr[js.Array[_]] = js.native
   /**
     * The start number.
     */
-  var from: js.UndefOr[Double] = js.undefined
+  var from: js.UndefOr[Double] = js.native
   /**
     * The number of milliseconds to hold the tween for before yoyo'ing.
     */
-  var hold: js.UndefOr[Double] = js.undefined
+  var hold: js.UndefOr[Double] = js.native
   /**
     * The number of times the tween will repeat. (A value of 1 means the tween will play twice, as it repeated once.) The first loop starts after every property tween has completed once.
     */
-  var loop: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.undefined
+  var loop: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.native
   /**
     * The time the tween will pause before starting either a yoyo or returning to the start for a repeat.
     */
-  var loopDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.undefined
+  var loopDelay: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.native
   /**
     * Used when the Tween is part of a Timeline.
     */
-  var offset: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.undefined
+  var offset: js.UndefOr[String | Double | js.Function | js.Object | js.Array[_]] = js.native
   /**
     * A function to call when the tween completes.
     */
-  var onComplete: js.UndefOr[TweenOnCompleteCallback] = js.undefined
+  var onComplete: js.UndefOr[TweenOnCompleteCallback] = js.native
   /**
     * Additional parameters to pass to `onComplete`.
     */
-  var onCompleteParams: js.UndefOr[js.Array[_]] = js.undefined
+  var onCompleteParams: js.UndefOr[js.Array[_]] = js.native
   /**
     * Scope (this) for `onComplete`.
     */
-  var onCompleteScope: js.UndefOr[js.Any] = js.undefined
+  var onCompleteScope: js.UndefOr[js.Any] = js.native
   /**
     * A function to call each time the tween loops.
     */
-  var onLoop: js.UndefOr[TweenOnLoopCallback] = js.undefined
+  var onLoop: js.UndefOr[TweenOnLoopCallback] = js.native
   /**
     * Additional parameters to pass to `onLoop`.
     */
-  var onLoopParams: js.UndefOr[js.Array[_]] = js.undefined
+  var onLoopParams: js.UndefOr[js.Array[_]] = js.native
   /**
     * Scope (this) for `onLoop`.
     */
-  var onLoopScope: js.UndefOr[js.Any] = js.undefined
+  var onLoopScope: js.UndefOr[js.Any] = js.native
   /**
     * A function to call each time the tween repeats. Called once per property per target.
     */
-  var onRepeat: js.UndefOr[TweenOnRepeatCallback] = js.undefined
+  var onRepeat: js.UndefOr[TweenOnRepeatCallback] = js.native
   /**
     * Additional parameters to pass to `onRepeat`.
     */
-  var onRepeatParams: js.UndefOr[js.Array[_]] = js.undefined
+  var onRepeatParams: js.UndefOr[js.Array[_]] = js.native
   /**
     * Scope (this) for `onRepeat`.
     */
-  var onRepeatScope: js.UndefOr[js.Any] = js.undefined
+  var onRepeatScope: js.UndefOr[js.Any] = js.native
   /**
     * A function to call when the tween starts.
     */
-  var onStart: js.UndefOr[TweenOnStartCallback] = js.undefined
+  var onStart: js.UndefOr[TweenOnStartCallback] = js.native
   /**
     * Additional parameters to pass to `onStart`.
     */
-  var onStartParams: js.UndefOr[js.Array[_]] = js.undefined
+  var onStartParams: js.UndefOr[js.Array[_]] = js.native
   /**
     * Scope (this) for `onStart`.
     */
-  var onStartScope: js.UndefOr[js.Any] = js.undefined
+  var onStartScope: js.UndefOr[js.Any] = js.native
+  /**
+    * A function to call when the tween is stopped.
+    */
+  var onStop: js.UndefOr[TweenOnStopCallback] = js.native
+  /**
+    * Additional parameters to pass to `onStop`.
+    */
+  var onStopParams: js.UndefOr[js.Array[_]] = js.native
+  /**
+    * Scope (this) for `onStop`.
+    */
+  var onStopScope: js.UndefOr[js.Any] = js.native
   /**
     * A function to call each time the tween steps. Called once per property per target.
     */
-  var onUpdate: js.UndefOr[TweenOnUpdateCallback] = js.undefined
+  var onUpdate: js.UndefOr[TweenOnUpdateCallback] = js.native
   /**
     * Additional parameters to pass to `onUpdate`.
     */
-  var onUpdateParams: js.UndefOr[js.Array[_]] = js.undefined
+  var onUpdateParams: js.UndefOr[js.Array[_]] = js.native
   /**
     * Scope (this) for `onUpdate`.
     */
-  var onUpdateScope: js.UndefOr[js.Any] = js.undefined
+  var onUpdateScope: js.UndefOr[js.Any] = js.native
   /**
     * A function to call each time the tween yoyos. Called once per property per target.
     */
-  var onYoyo: js.UndefOr[TweenOnYoyoCallback] = js.undefined
+  var onYoyo: js.UndefOr[TweenOnYoyoCallback] = js.native
   /**
     * Additional parameters to pass to `onYoyo`.
     */
-  var onYoyoParams: js.UndefOr[js.Array[_]] = js.undefined
+  var onYoyoParams: js.UndefOr[js.Array[_]] = js.native
   /**
     * Scope (this) for `onYoyo`.
     */
-  var onYoyoScope: js.UndefOr[js.Any] = js.undefined
+  var onYoyoScope: js.UndefOr[js.Any] = js.native
   /**
     * Does the tween start in a paused state (true) or playing (false)?
     */
-  var paused: js.UndefOr[Boolean] = js.undefined
+  var paused: js.UndefOr[Boolean] = js.native
   /**
     * The number of times to repeat the tween.
     */
-  var repeat: js.UndefOr[Double] = js.undefined
+  var repeat: js.UndefOr[Double] = js.native
   /**
     * The number of milliseconds to pause before a tween will repeat.
     */
-  var repeatDelay: js.UndefOr[Double] = js.undefined
+  var repeatDelay: js.UndefOr[Double] = js.native
   /**
     * The end number.
     */
-  var to: js.UndefOr[Double] = js.undefined
+  var to: js.UndefOr[Double] = js.native
   /**
     * Use frames or milliseconds?
     */
-  var useFrames: js.UndefOr[Boolean] = js.undefined
+  var useFrames: js.UndefOr[Boolean] = js.native
   /**
     * Should the tween complete, then reverse the values incrementally to get back to the starting tween values? The reverse tweening will also take `duration` milliseconds to complete.
     */
-  var yoyo: js.UndefOr[Boolean] = js.undefined
+  var yoyo: js.UndefOr[Boolean] = js.native
 }
 
 object NumberTweenBuilderConfig {
   @scala.inline
-  def apply(
-    callbackScope: js.Any = null,
-    completeDelay: String | Double | js.Function | js.Object | js.Array[_] = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    duration: js.UndefOr[Double] = js.undefined,
-    ease: String | js.Function = null,
-    easeParams: js.Array[_] = null,
-    from: js.UndefOr[Double] = js.undefined,
-    hold: js.UndefOr[Double] = js.undefined,
-    loop: String | Double | js.Function | js.Object | js.Array[_] = null,
-    loopDelay: String | Double | js.Function | js.Object | js.Array[_] = null,
-    offset: String | Double | js.Function | js.Object | js.Array[_] = null,
-    onComplete: (/* tween */ Tween, /* targets */ js.Array[js.Any], /* repeated */ js.Any) => Unit = null,
-    onCompleteParams: js.Array[_] = null,
-    onCompleteScope: js.Any = null,
-    onLoop: (/* tween */ Tween, /* targets */ js.Array[js.Any], /* repeated */ js.Any) => Unit = null,
-    onLoopParams: js.Array[_] = null,
-    onLoopScope: js.Any = null,
-    onRepeat: (/* tween */ Tween, /* target */ js.Any, /* repeated */ js.Any) => Unit = null,
-    onRepeatParams: js.Array[_] = null,
-    onRepeatScope: js.Any = null,
-    onStart: (/* tween */ Tween, /* targets */ js.Array[js.Any], /* repeated */ js.Any) => Unit = null,
-    onStartParams: js.Array[_] = null,
-    onStartScope: js.Any = null,
-    onUpdate: (/* tween */ Tween, /* target */ js.Any, /* repeated */ js.Any) => Unit = null,
-    onUpdateParams: js.Array[_] = null,
-    onUpdateScope: js.Any = null,
-    onYoyo: (/* tween */ Tween, /* target */ js.Any, /* repeated */ js.Any) => Unit = null,
-    onYoyoParams: js.Array[_] = null,
-    onYoyoScope: js.Any = null,
-    paused: js.UndefOr[Boolean] = js.undefined,
-    repeat: js.UndefOr[Double] = js.undefined,
-    repeatDelay: js.UndefOr[Double] = js.undefined,
-    to: js.UndefOr[Double] = js.undefined,
-    useFrames: js.UndefOr[Boolean] = js.undefined,
-    yoyo: js.UndefOr[Boolean] = js.undefined
-  ): NumberTweenBuilderConfig = {
+  def apply(): NumberTweenBuilderConfig = {
     val __obj = js.Dynamic.literal()
-    if (callbackScope != null) __obj.updateDynamic("callbackScope")(callbackScope.asInstanceOf[js.Any])
-    if (completeDelay != null) __obj.updateDynamic("completeDelay")(completeDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
-    if (easeParams != null) __obj.updateDynamic("easeParams")(easeParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hold)) __obj.updateDynamic("hold")(hold.get.asInstanceOf[js.Any])
-    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (loopDelay != null) __obj.updateDynamic("loopDelay")(loopDelay.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction3(onComplete))
-    if (onCompleteParams != null) __obj.updateDynamic("onCompleteParams")(onCompleteParams.asInstanceOf[js.Any])
-    if (onCompleteScope != null) __obj.updateDynamic("onCompleteScope")(onCompleteScope.asInstanceOf[js.Any])
-    if (onLoop != null) __obj.updateDynamic("onLoop")(js.Any.fromFunction3(onLoop))
-    if (onLoopParams != null) __obj.updateDynamic("onLoopParams")(onLoopParams.asInstanceOf[js.Any])
-    if (onLoopScope != null) __obj.updateDynamic("onLoopScope")(onLoopScope.asInstanceOf[js.Any])
-    if (onRepeat != null) __obj.updateDynamic("onRepeat")(js.Any.fromFunction3(onRepeat))
-    if (onRepeatParams != null) __obj.updateDynamic("onRepeatParams")(onRepeatParams.asInstanceOf[js.Any])
-    if (onRepeatScope != null) __obj.updateDynamic("onRepeatScope")(onRepeatScope.asInstanceOf[js.Any])
-    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction3(onStart))
-    if (onStartParams != null) __obj.updateDynamic("onStartParams")(onStartParams.asInstanceOf[js.Any])
-    if (onStartScope != null) __obj.updateDynamic("onStartScope")(onStartScope.asInstanceOf[js.Any])
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction3(onUpdate))
-    if (onUpdateParams != null) __obj.updateDynamic("onUpdateParams")(onUpdateParams.asInstanceOf[js.Any])
-    if (onUpdateScope != null) __obj.updateDynamic("onUpdateScope")(onUpdateScope.asInstanceOf[js.Any])
-    if (onYoyo != null) __obj.updateDynamic("onYoyo")(js.Any.fromFunction3(onYoyo))
-    if (onYoyoParams != null) __obj.updateDynamic("onYoyoParams")(onYoyoParams.asInstanceOf[js.Any])
-    if (onYoyoScope != null) __obj.updateDynamic("onYoyoScope")(onYoyoScope.asInstanceOf[js.Any])
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatDelay)) __obj.updateDynamic("repeatDelay")(repeatDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFrames)) __obj.updateDynamic("useFrames")(useFrames.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberTweenBuilderConfig]
   }
+  @scala.inline
+  implicit class NumberTweenBuilderConfigOps[Self <: NumberTweenBuilderConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallbackScope(value: js.Any): Self = this.set("callbackScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallbackScope: Self = this.set("callbackScope", js.undefined)
+    @scala.inline
+    def setCompleteDelayVarargs(value: js.Any*): Self = this.set("completeDelay", js.Array(value :_*))
+    @scala.inline
+    def setCompleteDelay(value: String | Double | js.Function | js.Object | js.Array[_]): Self = this.set("completeDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompleteDelay: Self = this.set("completeDelay", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEase(value: String | js.Function): Self = this.set("ease", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEase: Self = this.set("ease", js.undefined)
+    @scala.inline
+    def setEaseParamsVarargs(value: js.Any*): Self = this.set("easeParams", js.Array(value :_*))
+    @scala.inline
+    def setEaseParams(value: js.Array[_]): Self = this.set("easeParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEaseParams: Self = this.set("easeParams", js.undefined)
+    @scala.inline
+    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setHold(value: Double): Self = this.set("hold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHold: Self = this.set("hold", js.undefined)
+    @scala.inline
+    def setLoopVarargs(value: js.Any*): Self = this.set("loop", js.Array(value :_*))
+    @scala.inline
+    def setLoop(value: String | Double | js.Function | js.Object | js.Array[_]): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setLoopDelayVarargs(value: js.Any*): Self = this.set("loopDelay", js.Array(value :_*))
+    @scala.inline
+    def setLoopDelay(value: String | Double | js.Function | js.Object | js.Array[_]): Self = this.set("loopDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoopDelay: Self = this.set("loopDelay", js.undefined)
+    @scala.inline
+    def setOffsetVarargs(value: js.Any*): Self = this.set("offset", js.Array(value :_*))
+    @scala.inline
+    def setOffset(value: String | Double | js.Function | js.Object | js.Array[_]): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOnComplete(value: (/* tween */ Tween, /* targets */ js.Array[js.Any], /* repeated */ js.Any) => Unit): Self = this.set("onComplete", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    @scala.inline
+    def setOnCompleteParamsVarargs(value: js.Any*): Self = this.set("onCompleteParams", js.Array(value :_*))
+    @scala.inline
+    def setOnCompleteParams(value: js.Array[_]): Self = this.set("onCompleteParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompleteParams: Self = this.set("onCompleteParams", js.undefined)
+    @scala.inline
+    def setOnCompleteScope(value: js.Any): Self = this.set("onCompleteScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCompleteScope: Self = this.set("onCompleteScope", js.undefined)
+    @scala.inline
+    def setOnLoop(value: (/* tween */ Tween, /* targets */ js.Array[js.Any], /* repeated */ js.Any) => Unit): Self = this.set("onLoop", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnLoop: Self = this.set("onLoop", js.undefined)
+    @scala.inline
+    def setOnLoopParamsVarargs(value: js.Any*): Self = this.set("onLoopParams", js.Array(value :_*))
+    @scala.inline
+    def setOnLoopParams(value: js.Array[_]): Self = this.set("onLoopParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoopParams: Self = this.set("onLoopParams", js.undefined)
+    @scala.inline
+    def setOnLoopScope(value: js.Any): Self = this.set("onLoopScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLoopScope: Self = this.set("onLoopScope", js.undefined)
+    @scala.inline
+    def setOnRepeat(value: (/* tween */ Tween, /* target */ js.Any, /* repeated */ js.Any) => Unit): Self = this.set("onRepeat", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnRepeat: Self = this.set("onRepeat", js.undefined)
+    @scala.inline
+    def setOnRepeatParamsVarargs(value: js.Any*): Self = this.set("onRepeatParams", js.Array(value :_*))
+    @scala.inline
+    def setOnRepeatParams(value: js.Array[_]): Self = this.set("onRepeatParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnRepeatParams: Self = this.set("onRepeatParams", js.undefined)
+    @scala.inline
+    def setOnRepeatScope(value: js.Any): Self = this.set("onRepeatScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnRepeatScope: Self = this.set("onRepeatScope", js.undefined)
+    @scala.inline
+    def setOnStart(value: (/* tween */ Tween, /* targets */ js.Array[js.Any], /* repeated */ js.Any) => Unit): Self = this.set("onStart", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnStart: Self = this.set("onStart", js.undefined)
+    @scala.inline
+    def setOnStartParamsVarargs(value: js.Any*): Self = this.set("onStartParams", js.Array(value :_*))
+    @scala.inline
+    def setOnStartParams(value: js.Array[_]): Self = this.set("onStartParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnStartParams: Self = this.set("onStartParams", js.undefined)
+    @scala.inline
+    def setOnStartScope(value: js.Any): Self = this.set("onStartScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnStartScope: Self = this.set("onStartScope", js.undefined)
+    @scala.inline
+    def setOnStop(value: (/* tween */ Tween, /* targets */ js.Array[js.Any], /* repeated */ js.Any) => Unit): Self = this.set("onStop", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnStop: Self = this.set("onStop", js.undefined)
+    @scala.inline
+    def setOnStopParamsVarargs(value: js.Any*): Self = this.set("onStopParams", js.Array(value :_*))
+    @scala.inline
+    def setOnStopParams(value: js.Array[_]): Self = this.set("onStopParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnStopParams: Self = this.set("onStopParams", js.undefined)
+    @scala.inline
+    def setOnStopScope(value: js.Any): Self = this.set("onStopScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnStopScope: Self = this.set("onStopScope", js.undefined)
+    @scala.inline
+    def setOnUpdate(value: (/* tween */ Tween, /* target */ js.Any, /* repeated */ js.Any) => Unit): Self = this.set("onUpdate", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnUpdate: Self = this.set("onUpdate", js.undefined)
+    @scala.inline
+    def setOnUpdateParamsVarargs(value: js.Any*): Self = this.set("onUpdateParams", js.Array(value :_*))
+    @scala.inline
+    def setOnUpdateParams(value: js.Array[_]): Self = this.set("onUpdateParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnUpdateParams: Self = this.set("onUpdateParams", js.undefined)
+    @scala.inline
+    def setOnUpdateScope(value: js.Any): Self = this.set("onUpdateScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnUpdateScope: Self = this.set("onUpdateScope", js.undefined)
+    @scala.inline
+    def setOnYoyo(value: (/* tween */ Tween, /* target */ js.Any, /* repeated */ js.Any) => Unit): Self = this.set("onYoyo", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnYoyo: Self = this.set("onYoyo", js.undefined)
+    @scala.inline
+    def setOnYoyoParamsVarargs(value: js.Any*): Self = this.set("onYoyoParams", js.Array(value :_*))
+    @scala.inline
+    def setOnYoyoParams(value: js.Array[_]): Self = this.set("onYoyoParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnYoyoParams: Self = this.set("onYoyoParams", js.undefined)
+    @scala.inline
+    def setOnYoyoScope(value: js.Any): Self = this.set("onYoyoScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnYoyoScope: Self = this.set("onYoyoScope", js.undefined)
+    @scala.inline
+    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaused: Self = this.set("paused", js.undefined)
+    @scala.inline
+    def setRepeat(value: Double): Self = this.set("repeat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeat: Self = this.set("repeat", js.undefined)
+    @scala.inline
+    def setRepeatDelay(value: Double): Self = this.set("repeatDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeatDelay: Self = this.set("repeatDelay", js.undefined)
+    @scala.inline
+    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+    @scala.inline
+    def setUseFrames(value: Boolean): Self = this.set("useFrames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseFrames: Self = this.set("useFrames", js.undefined)
+    @scala.inline
+    def setYoyo(value: Boolean): Self = this.set("yoyo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYoyo: Self = this.set("yoyo", js.undefined)
+  }
+  
 }
 

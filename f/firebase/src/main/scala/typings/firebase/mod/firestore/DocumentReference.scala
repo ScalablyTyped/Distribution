@@ -2,6 +2,7 @@ package typings.firebase.mod.firestore
 
 import typings.firebase.anon.Error
 import typings.firebase.anon.Next
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -95,6 +96,11 @@ class DocumentReference[T] protected () extends js.Object {
   def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
+    onError: js.UndefOr[scala.Nothing],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
+  def onSnapshot(
+    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ typings.std.Error, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
@@ -136,6 +142,12 @@ class DocumentReference[T] protected () extends js.Object {
   def onSnapshot(
     options: SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
+    onError: js.UndefOr[scala.Nothing],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
+  def onSnapshot(
+    options: SnapshotListenOptions,
+    onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
     onError: js.Function1[/* error */ typings.std.Error, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
@@ -150,12 +162,21 @@ class DocumentReference[T] protected () extends js.Object {
     * `SetOptions`, the provided data can be merged into an existing document.
     *
     * @param data A map of the fields and values for the document.
-    * @param options An object to configure the set behavior.
     * @return A Promise resolved once the data has been successfully written
     * to the backend (Note that it won't resolve while you're offline).
     */
   def set(data: T): js.Promise[Unit] = js.native
-  def set(data: T, options: SetOptions): js.Promise[Unit] = js.native
+  /**
+    * Writes to the document referred to by this `DocumentReference`. If the
+    * document does not yet exist, it will be created. If you pass
+    * `SetOptions`, the provided data can be merged into an existing document.
+    *
+    * @param data A map of the fields and values for the document.
+    * @param options An object to configure the set behavior.
+    * @return A Promise resolved once the data has been successfully written
+    * to the backend (Note that it won't resolve while you're offline).
+    */
+  def set(data: Partial[T], options: SetOptions): js.Promise[Unit] = js.native
   /**
     * Updates fields in the document referred to by this `DocumentReference`.
     * The update will fail if applied to a document that does not exist.

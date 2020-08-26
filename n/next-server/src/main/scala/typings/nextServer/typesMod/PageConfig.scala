@@ -6,24 +6,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PageConfig extends js.Object {
-  var amp: js.UndefOr[Boolean | hybrid] = js.undefined
-  var api: js.UndefOr[BodyParser] = js.undefined
-  var experimentalPrerender: js.UndefOr[Boolean] = js.undefined
+  var amp: js.UndefOr[Boolean | hybrid] = js.native
+  var api: js.UndefOr[BodyParser] = js.native
+  var experimentalPrerender: js.UndefOr[Boolean] = js.native
 }
 
 object PageConfig {
   @scala.inline
-  def apply(
-    amp: Boolean | hybrid = null,
-    api: BodyParser = null,
-    experimentalPrerender: js.UndefOr[Boolean] = js.undefined
-  ): PageConfig = {
+  def apply(): PageConfig = {
     val __obj = js.Dynamic.literal()
-    if (amp != null) __obj.updateDynamic("amp")(amp.asInstanceOf[js.Any])
-    if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimentalPrerender)) __obj.updateDynamic("experimentalPrerender")(experimentalPrerender.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageConfig]
   }
+  @scala.inline
+  implicit class PageConfigOps[Self <: PageConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmp(value: Boolean | hybrid): Self = this.set("amp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmp: Self = this.set("amp", js.undefined)
+    @scala.inline
+    def setApi(value: BodyParser): Self = this.set("api", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApi: Self = this.set("api", js.undefined)
+    @scala.inline
+    def setExperimentalPrerender(value: Boolean): Self = this.set("experimentalPrerender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimentalPrerender: Self = this.set("experimentalPrerender", js.undefined)
+  }
+  
 }
 

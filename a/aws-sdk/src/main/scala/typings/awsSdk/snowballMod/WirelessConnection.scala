@@ -14,10 +14,26 @@ trait WirelessConnection extends js.Object {
 
 object WirelessConnection {
   @scala.inline
-  def apply(IsWifiEnabled: js.UndefOr[Boolean] = js.undefined): WirelessConnection = {
+  def apply(): WirelessConnection = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IsWifiEnabled)) __obj.updateDynamic("IsWifiEnabled")(IsWifiEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WirelessConnection]
   }
+  @scala.inline
+  implicit class WirelessConnectionOps[Self <: WirelessConnection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsWifiEnabled(value: Boolean): Self = this.set("IsWifiEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsWifiEnabled: Self = this.set("IsWifiEnabled", js.undefined)
+  }
+  
 }
 

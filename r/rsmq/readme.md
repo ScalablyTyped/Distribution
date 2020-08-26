@@ -12,7 +12,7 @@ A really simple message queue based on Redis
 | Keywords           | queue, messagequeue, jobs, message-queue, redis |
 | # releases         | 9 |
 | # dependents       | 39 |
-| # downloads        | 630120 |
+| # downloads        | 654661 |
 | # stars            | 20 |
 
 ## Links

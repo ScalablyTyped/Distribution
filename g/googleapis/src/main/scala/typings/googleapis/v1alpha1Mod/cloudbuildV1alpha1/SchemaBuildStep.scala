@@ -108,36 +108,84 @@ trait SchemaBuildStep extends js.Object {
 
 object SchemaBuildStep {
   @scala.inline
-  def apply(
-    args: js.Array[String] = null,
-    dir: String = null,
-    entrypoint: String = null,
-    env: js.Array[String] = null,
-    id: String = null,
-    name: String = null,
-    pullTiming: SchemaTimeSpan = null,
-    secretEnv: js.Array[String] = null,
-    status: String = null,
-    timeout: String = null,
-    timing: SchemaTimeSpan = null,
-    volumes: js.Array[SchemaVolume] = null,
-    waitFor: js.Array[String] = null
-  ): SchemaBuildStep = {
+  def apply(): SchemaBuildStep = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (entrypoint != null) __obj.updateDynamic("entrypoint")(entrypoint.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pullTiming != null) __obj.updateDynamic("pullTiming")(pullTiming.asInstanceOf[js.Any])
-    if (secretEnv != null) __obj.updateDynamic("secretEnv")(secretEnv.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
-    if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
-    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildStep]
   }
+  @scala.inline
+  implicit class SchemaBuildStepOps[Self <: SchemaBuildStep] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setEntrypoint(value: String): Self = this.set("entrypoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntrypoint: Self = this.set("entrypoint", js.undefined)
+    @scala.inline
+    def setEnvVarargs(value: String*): Self = this.set("env", js.Array(value :_*))
+    @scala.inline
+    def setEnv(value: js.Array[String]): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPullTiming(value: SchemaTimeSpan): Self = this.set("pullTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullTiming: Self = this.set("pullTiming", js.undefined)
+    @scala.inline
+    def setSecretEnvVarargs(value: String*): Self = this.set("secretEnv", js.Array(value :_*))
+    @scala.inline
+    def setSecretEnv(value: js.Array[String]): Self = this.set("secretEnv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretEnv: Self = this.set("secretEnv", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTiming(value: SchemaTimeSpan): Self = this.set("timing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTiming: Self = this.set("timing", js.undefined)
+    @scala.inline
+    def setVolumesVarargs(value: SchemaVolume*): Self = this.set("volumes", js.Array(value :_*))
+    @scala.inline
+    def setVolumes(value: js.Array[SchemaVolume]): Self = this.set("volumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumes: Self = this.set("volumes", js.undefined)
+    @scala.inline
+    def setWaitForVarargs(value: String*): Self = this.set("waitFor", js.Array(value :_*))
+    @scala.inline
+    def setWaitFor(value: js.Array[String]): Self = this.set("waitFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitFor: Self = this.set("waitFor", js.undefined)
+  }
+  
 }
 

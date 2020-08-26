@@ -42,26 +42,54 @@ trait EndpointProperties extends js.Object {
 
 object EndpointProperties {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    CurrentInferenceUnits: js.UndefOr[InferenceUnitsInteger] = js.undefined,
-    DesiredInferenceUnits: js.UndefOr[InferenceUnitsInteger] = js.undefined,
-    EndpointArn: ComprehendEndpointArn = null,
-    LastModifiedTime: Timestamp = null,
-    Message: AnyLengthString = null,
-    ModelArn: ComprehendModelArn = null,
-    Status: EndpointStatus = null
-  ): EndpointProperties = {
+  def apply(): EndpointProperties = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(CurrentInferenceUnits)) __obj.updateDynamic("CurrentInferenceUnits")(CurrentInferenceUnits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DesiredInferenceUnits)) __obj.updateDynamic("DesiredInferenceUnits")(DesiredInferenceUnits.get.asInstanceOf[js.Any])
-    if (EndpointArn != null) __obj.updateDynamic("EndpointArn")(EndpointArn.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (ModelArn != null) __obj.updateDynamic("ModelArn")(ModelArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointProperties]
   }
+  @scala.inline
+  implicit class EndpointPropertiesOps[Self <: EndpointProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setCurrentInferenceUnits(value: InferenceUnitsInteger): Self = this.set("CurrentInferenceUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentInferenceUnits: Self = this.set("CurrentInferenceUnits", js.undefined)
+    @scala.inline
+    def setDesiredInferenceUnits(value: InferenceUnitsInteger): Self = this.set("DesiredInferenceUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredInferenceUnits: Self = this.set("DesiredInferenceUnits", js.undefined)
+    @scala.inline
+    def setEndpointArn(value: ComprehendEndpointArn): Self = this.set("EndpointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointArn: Self = this.set("EndpointArn", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setMessage(value: AnyLengthString): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setModelArn(value: ComprehendModelArn): Self = this.set("ModelArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelArn: Self = this.set("ModelArn", js.undefined)
+    @scala.inline
+    def setStatus(value: EndpointStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

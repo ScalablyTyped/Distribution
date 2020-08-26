@@ -9,311 +9,584 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InitialOptions extends js.Object {
-  var automock: js.UndefOr[Boolean] = js.undefined
-  var bail: js.UndefOr[Boolean | Double] = js.undefined
-  var browser: js.UndefOr[Boolean] = js.undefined
-  var cache: js.UndefOr[Boolean] = js.undefined
-  var cacheDirectory: js.UndefOr[Path] = js.undefined
-  var changedFilesWithAncestor: js.UndefOr[Boolean] = js.undefined
-  var changedSince: js.UndefOr[String] = js.undefined
-  var clearMocks: js.UndefOr[Boolean] = js.undefined
-  var collectCoverage: js.UndefOr[Boolean] = js.undefined
-  var collectCoverageFrom: js.UndefOr[js.Array[Glob]] = js.undefined
-  var collectCoverageOnlyFrom: js.UndefOr[StringDictionary[Boolean]] = js.undefined
-  var coverageDirectory: js.UndefOr[String] = js.undefined
-  var coveragePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
-  var coverageReporters: js.UndefOr[js.Array[String]] = js.undefined
-  var coverageThreshold: js.UndefOr[Global] = js.undefined
-  var dependencyExtractor: js.UndefOr[String] = js.undefined
-  var detectLeaks: js.UndefOr[Boolean] = js.undefined
-  var detectOpenHandles: js.UndefOr[Boolean] = js.undefined
-  var displayName: js.UndefOr[DisplayName] = js.undefined
-  var errorOnDeprecated: js.UndefOr[Boolean] = js.undefined
-  var expand: js.UndefOr[Boolean] = js.undefined
-  var extraGlobals: js.UndefOr[js.Array[String]] = js.undefined
-  var filter: js.UndefOr[Path] = js.undefined
-  var findRelatedTests: js.UndefOr[Boolean] = js.undefined
-  var forceCoverageMatch: js.UndefOr[js.Array[Glob]] = js.undefined
-  var forceExit: js.UndefOr[Boolean] = js.undefined
-  var globalSetup: js.UndefOr[String | Null] = js.undefined
-  var globalTeardown: js.UndefOr[String | Null] = js.undefined
-  var globals: js.UndefOr[ConfigGlobals] = js.undefined
-  var haste: js.UndefOr[HasteConfig] = js.undefined
-  var json: js.UndefOr[Boolean] = js.undefined
-  var lastCommit: js.UndefOr[Boolean] = js.undefined
-  var listTests: js.UndefOr[Boolean] = js.undefined
-  var logHeapUsage: js.UndefOr[Boolean] = js.undefined
-  var mapCoverage: js.UndefOr[Boolean] = js.undefined
-  var maxConcurrency: js.UndefOr[Double] = js.undefined
-  var maxWorkers: Double | String
-  var moduleDirectories: js.UndefOr[js.Array[String]] = js.undefined
-  var moduleFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
-  var moduleLoader: js.UndefOr[Path] = js.undefined
-  var moduleNameMapper: js.UndefOr[StringDictionary[String]] = js.undefined
-  var modulePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
-  var modulePaths: js.UndefOr[js.Array[String]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var noStackTrace: js.UndefOr[Boolean] = js.undefined
-  var notifyMode: js.UndefOr[String] = js.undefined
+  var automock: js.UndefOr[Boolean] = js.native
+  var bail: js.UndefOr[Boolean | Double] = js.native
+  var browser: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.native
+  var cacheDirectory: js.UndefOr[Path] = js.native
+  var changedFilesWithAncestor: js.UndefOr[Boolean] = js.native
+  var changedSince: js.UndefOr[String] = js.native
+  var clearMocks: js.UndefOr[Boolean] = js.native
+  var collectCoverage: js.UndefOr[Boolean] = js.native
+  var collectCoverageFrom: js.UndefOr[js.Array[Glob]] = js.native
+  var collectCoverageOnlyFrom: js.UndefOr[StringDictionary[Boolean]] = js.native
+  var coverageDirectory: js.UndefOr[String] = js.native
+  var coveragePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+  var coverageReporters: js.UndefOr[js.Array[String]] = js.native
+  var coverageThreshold: js.UndefOr[Global] = js.native
+  var dependencyExtractor: js.UndefOr[String] = js.native
+  var detectLeaks: js.UndefOr[Boolean] = js.native
+  var detectOpenHandles: js.UndefOr[Boolean] = js.native
+  var displayName: js.UndefOr[DisplayName] = js.native
+  var errorOnDeprecated: js.UndefOr[Boolean] = js.native
+  var expand: js.UndefOr[Boolean] = js.native
+  var extraGlobals: js.UndefOr[js.Array[String]] = js.native
+  var filter: js.UndefOr[Path] = js.native
+  var findRelatedTests: js.UndefOr[Boolean] = js.native
+  var forceCoverageMatch: js.UndefOr[js.Array[Glob]] = js.native
+  var forceExit: js.UndefOr[Boolean] = js.native
+  var globalSetup: js.UndefOr[String | Null] = js.native
+  var globalTeardown: js.UndefOr[String | Null] = js.native
+  var globals: js.UndefOr[ConfigGlobals] = js.native
+  var haste: js.UndefOr[HasteConfig] = js.native
+  var json: js.UndefOr[Boolean] = js.native
+  var lastCommit: js.UndefOr[Boolean] = js.native
+  var listTests: js.UndefOr[Boolean] = js.native
+  var logHeapUsage: js.UndefOr[Boolean] = js.native
+  var mapCoverage: js.UndefOr[Boolean] = js.native
+  var maxConcurrency: js.UndefOr[Double] = js.native
+  var maxWorkers: Double | String = js.native
+  var moduleDirectories: js.UndefOr[js.Array[String]] = js.native
+  var moduleFileExtensions: js.UndefOr[js.Array[String]] = js.native
+  var moduleLoader: js.UndefOr[Path] = js.native
+  var moduleNameMapper: js.UndefOr[StringDictionary[String]] = js.native
+  var modulePathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+  var modulePaths: js.UndefOr[js.Array[String]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var noStackTrace: js.UndefOr[Boolean] = js.native
+  var notifyMode: js.UndefOr[String] = js.native
   @JSName("notify")
-  var notify_FInitialOptions: js.UndefOr[Boolean] = js.undefined
-  var onlyChanged: js.UndefOr[Boolean] = js.undefined
-  var outputFile: js.UndefOr[Path] = js.undefined
-  var passWithNoTests: js.UndefOr[Boolean] = js.undefined
-  var preprocessorIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.undefined
-  var preset: js.UndefOr[String | Null] = js.undefined
-  var prettierPath: js.UndefOr[String | Null] = js.undefined
-  var projects: js.UndefOr[js.Array[Glob]] = js.undefined
-  var replname: js.UndefOr[String | Null] = js.undefined
-  var reporters: js.UndefOr[js.Array[String | ReporterConfig]] = js.undefined
-  var resetMocks: js.UndefOr[Boolean] = js.undefined
-  var resetModules: js.UndefOr[Boolean] = js.undefined
-  var resolver: js.UndefOr[Path | Null] = js.undefined
-  var restoreMocks: js.UndefOr[Boolean] = js.undefined
-  var rootDir: Path
-  var roots: js.UndefOr[js.Array[Path]] = js.undefined
-  var runTestsByPath: js.UndefOr[Boolean] = js.undefined
-  var runner: js.UndefOr[String] = js.undefined
-  var scriptPreprocessor: js.UndefOr[String] = js.undefined
-  var setupFiles: js.UndefOr[js.Array[Path]] = js.undefined
-  var setupFilesAfterEnv: js.UndefOr[js.Array[Path]] = js.undefined
-  var setupTestFrameworkScriptFile: js.UndefOr[Path] = js.undefined
-  var silent: js.UndefOr[Boolean] = js.undefined
-  var skipFilter: js.UndefOr[Boolean] = js.undefined
-  var skipNodeResolution: js.UndefOr[Boolean] = js.undefined
-  var snapshotResolver: js.UndefOr[Path] = js.undefined
-  var snapshotSerializers: js.UndefOr[js.Array[Path]] = js.undefined
-  var testEnvironment: js.UndefOr[String] = js.undefined
-  var testEnvironmentOptions: js.UndefOr[Record[String, _]] = js.undefined
-  var testFailureExitCode: js.UndefOr[String | Double] = js.undefined
-  var testLocationInResults: js.UndefOr[Boolean] = js.undefined
-  var testMatch: js.UndefOr[js.Array[Glob]] = js.undefined
-  var testNamePattern: js.UndefOr[String] = js.undefined
-  var testPathDirs: js.UndefOr[js.Array[Path]] = js.undefined
-  var testPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
-  var testRegex: js.UndefOr[String | js.Array[String]] = js.undefined
-  var testResultsProcessor: js.UndefOr[String | Null] = js.undefined
-  var testRunner: js.UndefOr[String] = js.undefined
-  var testSequencer: js.UndefOr[String] = js.undefined
-  var testTimeout: js.UndefOr[Double] = js.undefined
-  var testURL: js.UndefOr[String] = js.undefined
-  var timers: js.UndefOr[real | fake] = js.undefined
-  var transform: js.UndefOr[StringDictionary[Path | TransformerConfig]] = js.undefined
-  var transformIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.undefined
-  var unmockedModulePathPatterns: js.UndefOr[js.Array[String]] = js.undefined
-  var updateSnapshot: js.UndefOr[Boolean] = js.undefined
-  var useStderr: js.UndefOr[Boolean] = js.undefined
-  var verbose: js.UndefOr[Boolean | Null] = js.undefined
-  var watch: js.UndefOr[Boolean] = js.undefined
-  var watchAll: js.UndefOr[Boolean] = js.undefined
-  var watchPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
-  var watchPlugins: js.UndefOr[js.Array[String | (js.Tuple2[String, Record[String, _]])]] = js.undefined
-  var watchman: js.UndefOr[Boolean] = js.undefined
+  var notify_FInitialOptions: js.UndefOr[Boolean] = js.native
+  var onlyChanged: js.UndefOr[Boolean] = js.native
+  var outputFile: js.UndefOr[Path] = js.native
+  var passWithNoTests: js.UndefOr[Boolean] = js.native
+  var preprocessorIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.native
+  var preset: js.UndefOr[String | Null] = js.native
+  var prettierPath: js.UndefOr[String | Null] = js.native
+  var projects: js.UndefOr[js.Array[Glob]] = js.native
+  var replname: js.UndefOr[String | Null] = js.native
+  var reporters: js.UndefOr[js.Array[String | ReporterConfig]] = js.native
+  var resetMocks: js.UndefOr[Boolean] = js.native
+  var resetModules: js.UndefOr[Boolean] = js.native
+  var resolver: js.UndefOr[Path | Null] = js.native
+  var restoreMocks: js.UndefOr[Boolean] = js.native
+  var rootDir: Path = js.native
+  var roots: js.UndefOr[js.Array[Path]] = js.native
+  var runTestsByPath: js.UndefOr[Boolean] = js.native
+  var runner: js.UndefOr[String] = js.native
+  var scriptPreprocessor: js.UndefOr[String] = js.native
+  var setupFiles: js.UndefOr[js.Array[Path]] = js.native
+  var setupFilesAfterEnv: js.UndefOr[js.Array[Path]] = js.native
+  var setupTestFrameworkScriptFile: js.UndefOr[Path] = js.native
+  var silent: js.UndefOr[Boolean] = js.native
+  var skipFilter: js.UndefOr[Boolean] = js.native
+  var skipNodeResolution: js.UndefOr[Boolean] = js.native
+  var snapshotResolver: js.UndefOr[Path] = js.native
+  var snapshotSerializers: js.UndefOr[js.Array[Path]] = js.native
+  var testEnvironment: js.UndefOr[String] = js.native
+  var testEnvironmentOptions: js.UndefOr[Record[String, _]] = js.native
+  var testFailureExitCode: js.UndefOr[String | Double] = js.native
+  var testLocationInResults: js.UndefOr[Boolean] = js.native
+  var testMatch: js.UndefOr[js.Array[Glob]] = js.native
+  var testNamePattern: js.UndefOr[String] = js.native
+  var testPathDirs: js.UndefOr[js.Array[Path]] = js.native
+  var testPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+  var testRegex: js.UndefOr[String | js.Array[String]] = js.native
+  var testResultsProcessor: js.UndefOr[String | Null] = js.native
+  var testRunner: js.UndefOr[String] = js.native
+  var testSequencer: js.UndefOr[String] = js.native
+  var testTimeout: js.UndefOr[Double] = js.native
+  var testURL: js.UndefOr[String] = js.native
+  var timers: js.UndefOr[real | fake] = js.native
+  var transform: js.UndefOr[StringDictionary[Path | TransformerConfig]] = js.native
+  var transformIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.native
+  var unmockedModulePathPatterns: js.UndefOr[js.Array[String]] = js.native
+  var updateSnapshot: js.UndefOr[Boolean] = js.native
+  var useStderr: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean | Null] = js.native
+  var watch: js.UndefOr[Boolean] = js.native
+  var watchAll: js.UndefOr[Boolean] = js.native
+  var watchPathIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+  var watchPlugins: js.UndefOr[js.Array[String | (js.Tuple2[String, Record[String, _]])]] = js.native
+  var watchman: js.UndefOr[Boolean] = js.native
 }
 
 object InitialOptions {
   @scala.inline
-  def apply(
-    maxWorkers: Double | String,
-    rootDir: Path,
-    automock: js.UndefOr[Boolean] = js.undefined,
-    bail: Boolean | Double = null,
-    browser: js.UndefOr[Boolean] = js.undefined,
-    cache: js.UndefOr[Boolean] = js.undefined,
-    cacheDirectory: Path = null,
-    changedFilesWithAncestor: js.UndefOr[Boolean] = js.undefined,
-    changedSince: String = null,
-    clearMocks: js.UndefOr[Boolean] = js.undefined,
-    collectCoverage: js.UndefOr[Boolean] = js.undefined,
-    collectCoverageFrom: js.Array[Glob] = null,
-    collectCoverageOnlyFrom: StringDictionary[Boolean] = null,
-    coverageDirectory: String = null,
-    coveragePathIgnorePatterns: js.Array[String] = null,
-    coverageReporters: js.Array[String] = null,
-    coverageThreshold: Global = null,
-    dependencyExtractor: String = null,
-    detectLeaks: js.UndefOr[Boolean] = js.undefined,
-    detectOpenHandles: js.UndefOr[Boolean] = js.undefined,
-    displayName: DisplayName = null,
-    errorOnDeprecated: js.UndefOr[Boolean] = js.undefined,
-    expand: js.UndefOr[Boolean] = js.undefined,
-    extraGlobals: js.Array[String] = null,
-    filter: Path = null,
-    findRelatedTests: js.UndefOr[Boolean] = js.undefined,
-    forceCoverageMatch: js.Array[Glob] = null,
-    forceExit: js.UndefOr[Boolean] = js.undefined,
-    globalSetup: js.UndefOr[Null | String] = js.undefined,
-    globalTeardown: js.UndefOr[Null | String] = js.undefined,
-    globals: ConfigGlobals = null,
-    haste: HasteConfig = null,
-    json: js.UndefOr[Boolean] = js.undefined,
-    lastCommit: js.UndefOr[Boolean] = js.undefined,
-    listTests: js.UndefOr[Boolean] = js.undefined,
-    logHeapUsage: js.UndefOr[Boolean] = js.undefined,
-    mapCoverage: js.UndefOr[Boolean] = js.undefined,
-    maxConcurrency: js.UndefOr[Double] = js.undefined,
-    moduleDirectories: js.Array[String] = null,
-    moduleFileExtensions: js.Array[String] = null,
-    moduleLoader: Path = null,
-    moduleNameMapper: StringDictionary[String] = null,
-    modulePathIgnorePatterns: js.Array[String] = null,
-    modulePaths: js.Array[String] = null,
-    name: String = null,
-    noStackTrace: js.UndefOr[Boolean] = js.undefined,
-    notify: js.UndefOr[Boolean] = js.undefined,
-    notifyMode: String = null,
-    onlyChanged: js.UndefOr[Boolean] = js.undefined,
-    outputFile: Path = null,
-    passWithNoTests: js.UndefOr[Boolean] = js.undefined,
-    preprocessorIgnorePatterns: js.Array[Glob] = null,
-    preset: js.UndefOr[Null | String] = js.undefined,
-    prettierPath: js.UndefOr[Null | String] = js.undefined,
-    projects: js.Array[Glob] = null,
-    replname: js.UndefOr[Null | String] = js.undefined,
-    reporters: js.Array[String | ReporterConfig] = null,
-    resetMocks: js.UndefOr[Boolean] = js.undefined,
-    resetModules: js.UndefOr[Boolean] = js.undefined,
-    resolver: js.UndefOr[Null | Path] = js.undefined,
-    restoreMocks: js.UndefOr[Boolean] = js.undefined,
-    roots: js.Array[Path] = null,
-    runTestsByPath: js.UndefOr[Boolean] = js.undefined,
-    runner: String = null,
-    scriptPreprocessor: String = null,
-    setupFiles: js.Array[Path] = null,
-    setupFilesAfterEnv: js.Array[Path] = null,
-    setupTestFrameworkScriptFile: Path = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    skipFilter: js.UndefOr[Boolean] = js.undefined,
-    skipNodeResolution: js.UndefOr[Boolean] = js.undefined,
-    snapshotResolver: Path = null,
-    snapshotSerializers: js.Array[Path] = null,
-    testEnvironment: String = null,
-    testEnvironmentOptions: Record[String, _] = null,
-    testFailureExitCode: String | Double = null,
-    testLocationInResults: js.UndefOr[Boolean] = js.undefined,
-    testMatch: js.Array[Glob] = null,
-    testNamePattern: String = null,
-    testPathDirs: js.Array[Path] = null,
-    testPathIgnorePatterns: js.Array[String] = null,
-    testRegex: String | js.Array[String] = null,
-    testResultsProcessor: js.UndefOr[Null | String] = js.undefined,
-    testRunner: String = null,
-    testSequencer: String = null,
-    testTimeout: js.UndefOr[Double] = js.undefined,
-    testURL: String = null,
-    timers: real | fake = null,
-    transform: StringDictionary[Path | TransformerConfig] = null,
-    transformIgnorePatterns: js.Array[Glob] = null,
-    unmockedModulePathPatterns: js.Array[String] = null,
-    updateSnapshot: js.UndefOr[Boolean] = js.undefined,
-    useStderr: js.UndefOr[Boolean] = js.undefined,
-    verbose: js.UndefOr[Null | Boolean] = js.undefined,
-    watch: js.UndefOr[Boolean] = js.undefined,
-    watchAll: js.UndefOr[Boolean] = js.undefined,
-    watchPathIgnorePatterns: js.Array[String] = null,
-    watchPlugins: js.Array[String | (js.Tuple2[String, Record[String, _]])] = null,
-    watchman: js.UndefOr[Boolean] = js.undefined
-  ): InitialOptions = {
+  def apply(maxWorkers: Double | String, rootDir: Path): InitialOptions = {
     val __obj = js.Dynamic.literal(maxWorkers = maxWorkers.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(automock)) __obj.updateDynamic("automock")(automock.get.asInstanceOf[js.Any])
-    if (bail != null) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
-    if (!js.isUndefined(browser)) __obj.updateDynamic("browser")(browser.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
-    if (cacheDirectory != null) __obj.updateDynamic("cacheDirectory")(cacheDirectory.asInstanceOf[js.Any])
-    if (!js.isUndefined(changedFilesWithAncestor)) __obj.updateDynamic("changedFilesWithAncestor")(changedFilesWithAncestor.get.asInstanceOf[js.Any])
-    if (changedSince != null) __obj.updateDynamic("changedSince")(changedSince.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearMocks)) __obj.updateDynamic("clearMocks")(clearMocks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collectCoverage)) __obj.updateDynamic("collectCoverage")(collectCoverage.get.asInstanceOf[js.Any])
-    if (collectCoverageFrom != null) __obj.updateDynamic("collectCoverageFrom")(collectCoverageFrom.asInstanceOf[js.Any])
-    if (collectCoverageOnlyFrom != null) __obj.updateDynamic("collectCoverageOnlyFrom")(collectCoverageOnlyFrom.asInstanceOf[js.Any])
-    if (coverageDirectory != null) __obj.updateDynamic("coverageDirectory")(coverageDirectory.asInstanceOf[js.Any])
-    if (coveragePathIgnorePatterns != null) __obj.updateDynamic("coveragePathIgnorePatterns")(coveragePathIgnorePatterns.asInstanceOf[js.Any])
-    if (coverageReporters != null) __obj.updateDynamic("coverageReporters")(coverageReporters.asInstanceOf[js.Any])
-    if (coverageThreshold != null) __obj.updateDynamic("coverageThreshold")(coverageThreshold.asInstanceOf[js.Any])
-    if (dependencyExtractor != null) __obj.updateDynamic("dependencyExtractor")(dependencyExtractor.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectLeaks)) __obj.updateDynamic("detectLeaks")(detectLeaks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectOpenHandles)) __obj.updateDynamic("detectOpenHandles")(detectOpenHandles.get.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorOnDeprecated)) __obj.updateDynamic("errorOnDeprecated")(errorOnDeprecated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.get.asInstanceOf[js.Any])
-    if (extraGlobals != null) __obj.updateDynamic("extraGlobals")(extraGlobals.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(findRelatedTests)) __obj.updateDynamic("findRelatedTests")(findRelatedTests.get.asInstanceOf[js.Any])
-    if (forceCoverageMatch != null) __obj.updateDynamic("forceCoverageMatch")(forceCoverageMatch.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceExit)) __obj.updateDynamic("forceExit")(forceExit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(globalSetup)) __obj.updateDynamic("globalSetup")(globalSetup.asInstanceOf[js.Any])
-    if (!js.isUndefined(globalTeardown)) __obj.updateDynamic("globalTeardown")(globalTeardown.asInstanceOf[js.Any])
-    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
-    if (haste != null) __obj.updateDynamic("haste")(haste.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastCommit)) __obj.updateDynamic("lastCommit")(lastCommit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(listTests)) __obj.updateDynamic("listTests")(listTests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(logHeapUsage)) __obj.updateDynamic("logHeapUsage")(logHeapUsage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapCoverage)) __obj.updateDynamic("mapCoverage")(mapCoverage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxConcurrency)) __obj.updateDynamic("maxConcurrency")(maxConcurrency.get.asInstanceOf[js.Any])
-    if (moduleDirectories != null) __obj.updateDynamic("moduleDirectories")(moduleDirectories.asInstanceOf[js.Any])
-    if (moduleFileExtensions != null) __obj.updateDynamic("moduleFileExtensions")(moduleFileExtensions.asInstanceOf[js.Any])
-    if (moduleLoader != null) __obj.updateDynamic("moduleLoader")(moduleLoader.asInstanceOf[js.Any])
-    if (moduleNameMapper != null) __obj.updateDynamic("moduleNameMapper")(moduleNameMapper.asInstanceOf[js.Any])
-    if (modulePathIgnorePatterns != null) __obj.updateDynamic("modulePathIgnorePatterns")(modulePathIgnorePatterns.asInstanceOf[js.Any])
-    if (modulePaths != null) __obj.updateDynamic("modulePaths")(modulePaths.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noStackTrace)) __obj.updateDynamic("noStackTrace")(noStackTrace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.get.asInstanceOf[js.Any])
-    if (notifyMode != null) __obj.updateDynamic("notifyMode")(notifyMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyChanged)) __obj.updateDynamic("onlyChanged")(onlyChanged.get.asInstanceOf[js.Any])
-    if (outputFile != null) __obj.updateDynamic("outputFile")(outputFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(passWithNoTests)) __obj.updateDynamic("passWithNoTests")(passWithNoTests.get.asInstanceOf[js.Any])
-    if (preprocessorIgnorePatterns != null) __obj.updateDynamic("preprocessorIgnorePatterns")(preprocessorIgnorePatterns.asInstanceOf[js.Any])
-    if (!js.isUndefined(preset)) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettierPath)) __obj.updateDynamic("prettierPath")(prettierPath.asInstanceOf[js.Any])
-    if (projects != null) __obj.updateDynamic("projects")(projects.asInstanceOf[js.Any])
-    if (!js.isUndefined(replname)) __obj.updateDynamic("replname")(replname.asInstanceOf[js.Any])
-    if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetMocks)) __obj.updateDynamic("resetMocks")(resetMocks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetModules)) __obj.updateDynamic("resetModules")(resetModules.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolver)) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
-    if (!js.isUndefined(restoreMocks)) __obj.updateDynamic("restoreMocks")(restoreMocks.get.asInstanceOf[js.Any])
-    if (roots != null) __obj.updateDynamic("roots")(roots.asInstanceOf[js.Any])
-    if (!js.isUndefined(runTestsByPath)) __obj.updateDynamic("runTestsByPath")(runTestsByPath.get.asInstanceOf[js.Any])
-    if (runner != null) __obj.updateDynamic("runner")(runner.asInstanceOf[js.Any])
-    if (scriptPreprocessor != null) __obj.updateDynamic("scriptPreprocessor")(scriptPreprocessor.asInstanceOf[js.Any])
-    if (setupFiles != null) __obj.updateDynamic("setupFiles")(setupFiles.asInstanceOf[js.Any])
-    if (setupFilesAfterEnv != null) __obj.updateDynamic("setupFilesAfterEnv")(setupFilesAfterEnv.asInstanceOf[js.Any])
-    if (setupTestFrameworkScriptFile != null) __obj.updateDynamic("setupTestFrameworkScriptFile")(setupTestFrameworkScriptFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipFilter)) __obj.updateDynamic("skipFilter")(skipFilter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipNodeResolution)) __obj.updateDynamic("skipNodeResolution")(skipNodeResolution.get.asInstanceOf[js.Any])
-    if (snapshotResolver != null) __obj.updateDynamic("snapshotResolver")(snapshotResolver.asInstanceOf[js.Any])
-    if (snapshotSerializers != null) __obj.updateDynamic("snapshotSerializers")(snapshotSerializers.asInstanceOf[js.Any])
-    if (testEnvironment != null) __obj.updateDynamic("testEnvironment")(testEnvironment.asInstanceOf[js.Any])
-    if (testEnvironmentOptions != null) __obj.updateDynamic("testEnvironmentOptions")(testEnvironmentOptions.asInstanceOf[js.Any])
-    if (testFailureExitCode != null) __obj.updateDynamic("testFailureExitCode")(testFailureExitCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(testLocationInResults)) __obj.updateDynamic("testLocationInResults")(testLocationInResults.get.asInstanceOf[js.Any])
-    if (testMatch != null) __obj.updateDynamic("testMatch")(testMatch.asInstanceOf[js.Any])
-    if (testNamePattern != null) __obj.updateDynamic("testNamePattern")(testNamePattern.asInstanceOf[js.Any])
-    if (testPathDirs != null) __obj.updateDynamic("testPathDirs")(testPathDirs.asInstanceOf[js.Any])
-    if (testPathIgnorePatterns != null) __obj.updateDynamic("testPathIgnorePatterns")(testPathIgnorePatterns.asInstanceOf[js.Any])
-    if (testRegex != null) __obj.updateDynamic("testRegex")(testRegex.asInstanceOf[js.Any])
-    if (!js.isUndefined(testResultsProcessor)) __obj.updateDynamic("testResultsProcessor")(testResultsProcessor.asInstanceOf[js.Any])
-    if (testRunner != null) __obj.updateDynamic("testRunner")(testRunner.asInstanceOf[js.Any])
-    if (testSequencer != null) __obj.updateDynamic("testSequencer")(testSequencer.asInstanceOf[js.Any])
-    if (!js.isUndefined(testTimeout)) __obj.updateDynamic("testTimeout")(testTimeout.get.asInstanceOf[js.Any])
-    if (testURL != null) __obj.updateDynamic("testURL")(testURL.asInstanceOf[js.Any])
-    if (timers != null) __obj.updateDynamic("timers")(timers.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (transformIgnorePatterns != null) __obj.updateDynamic("transformIgnorePatterns")(transformIgnorePatterns.asInstanceOf[js.Any])
-    if (unmockedModulePathPatterns != null) __obj.updateDynamic("unmockedModulePathPatterns")(unmockedModulePathPatterns.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateSnapshot)) __obj.updateDynamic("updateSnapshot")(updateSnapshot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStderr)) __obj.updateDynamic("useStderr")(useStderr.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(watchAll)) __obj.updateDynamic("watchAll")(watchAll.get.asInstanceOf[js.Any])
-    if (watchPathIgnorePatterns != null) __obj.updateDynamic("watchPathIgnorePatterns")(watchPathIgnorePatterns.asInstanceOf[js.Any])
-    if (watchPlugins != null) __obj.updateDynamic("watchPlugins")(watchPlugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(watchman)) __obj.updateDynamic("watchman")(watchman.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitialOptions]
   }
+  @scala.inline
+  implicit class InitialOptionsOps[Self <: InitialOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxWorkers(value: Double | String): Self = this.set("maxWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRootDir(value: Path): Self = this.set("rootDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutomock(value: Boolean): Self = this.set("automock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomock: Self = this.set("automock", js.undefined)
+    @scala.inline
+    def setBail(value: Boolean | Double): Self = this.set("bail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBail: Self = this.set("bail", js.undefined)
+    @scala.inline
+    def setBrowser(value: Boolean): Self = this.set("browser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser: Self = this.set("browser", js.undefined)
+    @scala.inline
+    def setCache(value: Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setCacheDirectory(value: Path): Self = this.set("cacheDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheDirectory: Self = this.set("cacheDirectory", js.undefined)
+    @scala.inline
+    def setChangedFilesWithAncestor(value: Boolean): Self = this.set("changedFilesWithAncestor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangedFilesWithAncestor: Self = this.set("changedFilesWithAncestor", js.undefined)
+    @scala.inline
+    def setChangedSince(value: String): Self = this.set("changedSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangedSince: Self = this.set("changedSince", js.undefined)
+    @scala.inline
+    def setClearMocks(value: Boolean): Self = this.set("clearMocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearMocks: Self = this.set("clearMocks", js.undefined)
+    @scala.inline
+    def setCollectCoverage(value: Boolean): Self = this.set("collectCoverage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectCoverage: Self = this.set("collectCoverage", js.undefined)
+    @scala.inline
+    def setCollectCoverageFromVarargs(value: Glob*): Self = this.set("collectCoverageFrom", js.Array(value :_*))
+    @scala.inline
+    def setCollectCoverageFrom(value: js.Array[Glob]): Self = this.set("collectCoverageFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectCoverageFrom: Self = this.set("collectCoverageFrom", js.undefined)
+    @scala.inline
+    def setCollectCoverageOnlyFrom(value: StringDictionary[Boolean]): Self = this.set("collectCoverageOnlyFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectCoverageOnlyFrom: Self = this.set("collectCoverageOnlyFrom", js.undefined)
+    @scala.inline
+    def setCoverageDirectory(value: String): Self = this.set("coverageDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverageDirectory: Self = this.set("coverageDirectory", js.undefined)
+    @scala.inline
+    def setCoveragePathIgnorePatternsVarargs(value: String*): Self = this.set("coveragePathIgnorePatterns", js.Array(value :_*))
+    @scala.inline
+    def setCoveragePathIgnorePatterns(value: js.Array[String]): Self = this.set("coveragePathIgnorePatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoveragePathIgnorePatterns: Self = this.set("coveragePathIgnorePatterns", js.undefined)
+    @scala.inline
+    def setCoverageReportersVarargs(value: String*): Self = this.set("coverageReporters", js.Array(value :_*))
+    @scala.inline
+    def setCoverageReporters(value: js.Array[String]): Self = this.set("coverageReporters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverageReporters: Self = this.set("coverageReporters", js.undefined)
+    @scala.inline
+    def setCoverageThreshold(value: Global): Self = this.set("coverageThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverageThreshold: Self = this.set("coverageThreshold", js.undefined)
+    @scala.inline
+    def setDependencyExtractor(value: String): Self = this.set("dependencyExtractor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependencyExtractor: Self = this.set("dependencyExtractor", js.undefined)
+    @scala.inline
+    def setDetectLeaks(value: Boolean): Self = this.set("detectLeaks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectLeaks: Self = this.set("detectLeaks", js.undefined)
+    @scala.inline
+    def setDetectOpenHandles(value: Boolean): Self = this.set("detectOpenHandles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectOpenHandles: Self = this.set("detectOpenHandles", js.undefined)
+    @scala.inline
+    def setDisplayName(value: DisplayName): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setErrorOnDeprecated(value: Boolean): Self = this.set("errorOnDeprecated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorOnDeprecated: Self = this.set("errorOnDeprecated", js.undefined)
+    @scala.inline
+    def setExpand(value: Boolean): Self = this.set("expand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpand: Self = this.set("expand", js.undefined)
+    @scala.inline
+    def setExtraGlobalsVarargs(value: String*): Self = this.set("extraGlobals", js.Array(value :_*))
+    @scala.inline
+    def setExtraGlobals(value: js.Array[String]): Self = this.set("extraGlobals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraGlobals: Self = this.set("extraGlobals", js.undefined)
+    @scala.inline
+    def setFilter(value: Path): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setFindRelatedTests(value: Boolean): Self = this.set("findRelatedTests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindRelatedTests: Self = this.set("findRelatedTests", js.undefined)
+    @scala.inline
+    def setForceCoverageMatchVarargs(value: Glob*): Self = this.set("forceCoverageMatch", js.Array(value :_*))
+    @scala.inline
+    def setForceCoverageMatch(value: js.Array[Glob]): Self = this.set("forceCoverageMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceCoverageMatch: Self = this.set("forceCoverageMatch", js.undefined)
+    @scala.inline
+    def setForceExit(value: Boolean): Self = this.set("forceExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceExit: Self = this.set("forceExit", js.undefined)
+    @scala.inline
+    def setGlobalSetup(value: String): Self = this.set("globalSetup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalSetup: Self = this.set("globalSetup", js.undefined)
+    @scala.inline
+    def setGlobalSetupNull: Self = this.set("globalSetup", null)
+    @scala.inline
+    def setGlobalTeardown(value: String): Self = this.set("globalTeardown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalTeardown: Self = this.set("globalTeardown", js.undefined)
+    @scala.inline
+    def setGlobalTeardownNull: Self = this.set("globalTeardown", null)
+    @scala.inline
+    def setGlobals(value: ConfigGlobals): Self = this.set("globals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobals: Self = this.set("globals", js.undefined)
+    @scala.inline
+    def setHaste(value: HasteConfig): Self = this.set("haste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHaste: Self = this.set("haste", js.undefined)
+    @scala.inline
+    def setJson(value: Boolean): Self = this.set("json", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJson: Self = this.set("json", js.undefined)
+    @scala.inline
+    def setLastCommit(value: Boolean): Self = this.set("lastCommit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastCommit: Self = this.set("lastCommit", js.undefined)
+    @scala.inline
+    def setListTests(value: Boolean): Self = this.set("listTests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListTests: Self = this.set("listTests", js.undefined)
+    @scala.inline
+    def setLogHeapUsage(value: Boolean): Self = this.set("logHeapUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogHeapUsage: Self = this.set("logHeapUsage", js.undefined)
+    @scala.inline
+    def setMapCoverage(value: Boolean): Self = this.set("mapCoverage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapCoverage: Self = this.set("mapCoverage", js.undefined)
+    @scala.inline
+    def setMaxConcurrency(value: Double): Self = this.set("maxConcurrency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConcurrency: Self = this.set("maxConcurrency", js.undefined)
+    @scala.inline
+    def setModuleDirectoriesVarargs(value: String*): Self = this.set("moduleDirectories", js.Array(value :_*))
+    @scala.inline
+    def setModuleDirectories(value: js.Array[String]): Self = this.set("moduleDirectories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModuleDirectories: Self = this.set("moduleDirectories", js.undefined)
+    @scala.inline
+    def setModuleFileExtensionsVarargs(value: String*): Self = this.set("moduleFileExtensions", js.Array(value :_*))
+    @scala.inline
+    def setModuleFileExtensions(value: js.Array[String]): Self = this.set("moduleFileExtensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModuleFileExtensions: Self = this.set("moduleFileExtensions", js.undefined)
+    @scala.inline
+    def setModuleLoader(value: Path): Self = this.set("moduleLoader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModuleLoader: Self = this.set("moduleLoader", js.undefined)
+    @scala.inline
+    def setModuleNameMapper(value: StringDictionary[String]): Self = this.set("moduleNameMapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModuleNameMapper: Self = this.set("moduleNameMapper", js.undefined)
+    @scala.inline
+    def setModulePathIgnorePatternsVarargs(value: String*): Self = this.set("modulePathIgnorePatterns", js.Array(value :_*))
+    @scala.inline
+    def setModulePathIgnorePatterns(value: js.Array[String]): Self = this.set("modulePathIgnorePatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModulePathIgnorePatterns: Self = this.set("modulePathIgnorePatterns", js.undefined)
+    @scala.inline
+    def setModulePathsVarargs(value: String*): Self = this.set("modulePaths", js.Array(value :_*))
+    @scala.inline
+    def setModulePaths(value: js.Array[String]): Self = this.set("modulePaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModulePaths: Self = this.set("modulePaths", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNoStackTrace(value: Boolean): Self = this.set("noStackTrace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoStackTrace: Self = this.set("noStackTrace", js.undefined)
+    @scala.inline
+    def setNotify(value: Boolean): Self = this.set("notify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotify: Self = this.set("notify", js.undefined)
+    @scala.inline
+    def setNotifyMode(value: String): Self = this.set("notifyMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotifyMode: Self = this.set("notifyMode", js.undefined)
+    @scala.inline
+    def setOnlyChanged(value: Boolean): Self = this.set("onlyChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyChanged: Self = this.set("onlyChanged", js.undefined)
+    @scala.inline
+    def setOutputFile(value: Path): Self = this.set("outputFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFile: Self = this.set("outputFile", js.undefined)
+    @scala.inline
+    def setPassWithNoTests(value: Boolean): Self = this.set("passWithNoTests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassWithNoTests: Self = this.set("passWithNoTests", js.undefined)
+    @scala.inline
+    def setPreprocessorIgnorePatternsVarargs(value: Glob*): Self = this.set("preprocessorIgnorePatterns", js.Array(value :_*))
+    @scala.inline
+    def setPreprocessorIgnorePatterns(value: js.Array[Glob]): Self = this.set("preprocessorIgnorePatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreprocessorIgnorePatterns: Self = this.set("preprocessorIgnorePatterns", js.undefined)
+    @scala.inline
+    def setPreset(value: String): Self = this.set("preset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreset: Self = this.set("preset", js.undefined)
+    @scala.inline
+    def setPresetNull: Self = this.set("preset", null)
+    @scala.inline
+    def setPrettierPath(value: String): Self = this.set("prettierPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrettierPath: Self = this.set("prettierPath", js.undefined)
+    @scala.inline
+    def setPrettierPathNull: Self = this.set("prettierPath", null)
+    @scala.inline
+    def setProjectsVarargs(value: Glob*): Self = this.set("projects", js.Array(value :_*))
+    @scala.inline
+    def setProjects(value: js.Array[Glob]): Self = this.set("projects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjects: Self = this.set("projects", js.undefined)
+    @scala.inline
+    def setReplname(value: String): Self = this.set("replname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplname: Self = this.set("replname", js.undefined)
+    @scala.inline
+    def setReplnameNull: Self = this.set("replname", null)
+    @scala.inline
+    def setReportersVarargs(value: (String | ReporterConfig)*): Self = this.set("reporters", js.Array(value :_*))
+    @scala.inline
+    def setReporters(value: js.Array[String | ReporterConfig]): Self = this.set("reporters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReporters: Self = this.set("reporters", js.undefined)
+    @scala.inline
+    def setResetMocks(value: Boolean): Self = this.set("resetMocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetMocks: Self = this.set("resetMocks", js.undefined)
+    @scala.inline
+    def setResetModules(value: Boolean): Self = this.set("resetModules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetModules: Self = this.set("resetModules", js.undefined)
+    @scala.inline
+    def setResolver(value: Path): Self = this.set("resolver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolver: Self = this.set("resolver", js.undefined)
+    @scala.inline
+    def setResolverNull: Self = this.set("resolver", null)
+    @scala.inline
+    def setRestoreMocks(value: Boolean): Self = this.set("restoreMocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestoreMocks: Self = this.set("restoreMocks", js.undefined)
+    @scala.inline
+    def setRootsVarargs(value: Path*): Self = this.set("roots", js.Array(value :_*))
+    @scala.inline
+    def setRoots(value: js.Array[Path]): Self = this.set("roots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoots: Self = this.set("roots", js.undefined)
+    @scala.inline
+    def setRunTestsByPath(value: Boolean): Self = this.set("runTestsByPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunTestsByPath: Self = this.set("runTestsByPath", js.undefined)
+    @scala.inline
+    def setRunner(value: String): Self = this.set("runner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunner: Self = this.set("runner", js.undefined)
+    @scala.inline
+    def setScriptPreprocessor(value: String): Self = this.set("scriptPreprocessor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScriptPreprocessor: Self = this.set("scriptPreprocessor", js.undefined)
+    @scala.inline
+    def setSetupFilesVarargs(value: Path*): Self = this.set("setupFiles", js.Array(value :_*))
+    @scala.inline
+    def setSetupFiles(value: js.Array[Path]): Self = this.set("setupFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetupFiles: Self = this.set("setupFiles", js.undefined)
+    @scala.inline
+    def setSetupFilesAfterEnvVarargs(value: Path*): Self = this.set("setupFilesAfterEnv", js.Array(value :_*))
+    @scala.inline
+    def setSetupFilesAfterEnv(value: js.Array[Path]): Self = this.set("setupFilesAfterEnv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetupFilesAfterEnv: Self = this.set("setupFilesAfterEnv", js.undefined)
+    @scala.inline
+    def setSetupTestFrameworkScriptFile(value: Path): Self = this.set("setupTestFrameworkScriptFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetupTestFrameworkScriptFile: Self = this.set("setupTestFrameworkScriptFile", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setSkipFilter(value: Boolean): Self = this.set("skipFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipFilter: Self = this.set("skipFilter", js.undefined)
+    @scala.inline
+    def setSkipNodeResolution(value: Boolean): Self = this.set("skipNodeResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipNodeResolution: Self = this.set("skipNodeResolution", js.undefined)
+    @scala.inline
+    def setSnapshotResolver(value: Path): Self = this.set("snapshotResolver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotResolver: Self = this.set("snapshotResolver", js.undefined)
+    @scala.inline
+    def setSnapshotSerializersVarargs(value: Path*): Self = this.set("snapshotSerializers", js.Array(value :_*))
+    @scala.inline
+    def setSnapshotSerializers(value: js.Array[Path]): Self = this.set("snapshotSerializers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotSerializers: Self = this.set("snapshotSerializers", js.undefined)
+    @scala.inline
+    def setTestEnvironment(value: String): Self = this.set("testEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestEnvironment: Self = this.set("testEnvironment", js.undefined)
+    @scala.inline
+    def setTestEnvironmentOptions(value: Record[String, _]): Self = this.set("testEnvironmentOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestEnvironmentOptions: Self = this.set("testEnvironmentOptions", js.undefined)
+    @scala.inline
+    def setTestFailureExitCode(value: String | Double): Self = this.set("testFailureExitCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestFailureExitCode: Self = this.set("testFailureExitCode", js.undefined)
+    @scala.inline
+    def setTestLocationInResults(value: Boolean): Self = this.set("testLocationInResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestLocationInResults: Self = this.set("testLocationInResults", js.undefined)
+    @scala.inline
+    def setTestMatchVarargs(value: Glob*): Self = this.set("testMatch", js.Array(value :_*))
+    @scala.inline
+    def setTestMatch(value: js.Array[Glob]): Self = this.set("testMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestMatch: Self = this.set("testMatch", js.undefined)
+    @scala.inline
+    def setTestNamePattern(value: String): Self = this.set("testNamePattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestNamePattern: Self = this.set("testNamePattern", js.undefined)
+    @scala.inline
+    def setTestPathDirsVarargs(value: Path*): Self = this.set("testPathDirs", js.Array(value :_*))
+    @scala.inline
+    def setTestPathDirs(value: js.Array[Path]): Self = this.set("testPathDirs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestPathDirs: Self = this.set("testPathDirs", js.undefined)
+    @scala.inline
+    def setTestPathIgnorePatternsVarargs(value: String*): Self = this.set("testPathIgnorePatterns", js.Array(value :_*))
+    @scala.inline
+    def setTestPathIgnorePatterns(value: js.Array[String]): Self = this.set("testPathIgnorePatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestPathIgnorePatterns: Self = this.set("testPathIgnorePatterns", js.undefined)
+    @scala.inline
+    def setTestRegexVarargs(value: String*): Self = this.set("testRegex", js.Array(value :_*))
+    @scala.inline
+    def setTestRegex(value: String | js.Array[String]): Self = this.set("testRegex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestRegex: Self = this.set("testRegex", js.undefined)
+    @scala.inline
+    def setTestResultsProcessor(value: String): Self = this.set("testResultsProcessor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestResultsProcessor: Self = this.set("testResultsProcessor", js.undefined)
+    @scala.inline
+    def setTestResultsProcessorNull: Self = this.set("testResultsProcessor", null)
+    @scala.inline
+    def setTestRunner(value: String): Self = this.set("testRunner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestRunner: Self = this.set("testRunner", js.undefined)
+    @scala.inline
+    def setTestSequencer(value: String): Self = this.set("testSequencer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestSequencer: Self = this.set("testSequencer", js.undefined)
+    @scala.inline
+    def setTestTimeout(value: Double): Self = this.set("testTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestTimeout: Self = this.set("testTimeout", js.undefined)
+    @scala.inline
+    def setTestURL(value: String): Self = this.set("testURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestURL: Self = this.set("testURL", js.undefined)
+    @scala.inline
+    def setTimers(value: real | fake): Self = this.set("timers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimers: Self = this.set("timers", js.undefined)
+    @scala.inline
+    def setTransform(value: StringDictionary[Path | TransformerConfig]): Self = this.set("transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+    @scala.inline
+    def setTransformIgnorePatternsVarargs(value: Glob*): Self = this.set("transformIgnorePatterns", js.Array(value :_*))
+    @scala.inline
+    def setTransformIgnorePatterns(value: js.Array[Glob]): Self = this.set("transformIgnorePatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformIgnorePatterns: Self = this.set("transformIgnorePatterns", js.undefined)
+    @scala.inline
+    def setUnmockedModulePathPatternsVarargs(value: String*): Self = this.set("unmockedModulePathPatterns", js.Array(value :_*))
+    @scala.inline
+    def setUnmockedModulePathPatterns(value: js.Array[String]): Self = this.set("unmockedModulePathPatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnmockedModulePathPatterns: Self = this.set("unmockedModulePathPatterns", js.undefined)
+    @scala.inline
+    def setUpdateSnapshot(value: Boolean): Self = this.set("updateSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateSnapshot: Self = this.set("updateSnapshot", js.undefined)
+    @scala.inline
+    def setUseStderr(value: Boolean): Self = this.set("useStderr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseStderr: Self = this.set("useStderr", js.undefined)
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+    @scala.inline
+    def setVerboseNull: Self = this.set("verbose", null)
+    @scala.inline
+    def setWatch(value: Boolean): Self = this.set("watch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatch: Self = this.set("watch", js.undefined)
+    @scala.inline
+    def setWatchAll(value: Boolean): Self = this.set("watchAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatchAll: Self = this.set("watchAll", js.undefined)
+    @scala.inline
+    def setWatchPathIgnorePatternsVarargs(value: String*): Self = this.set("watchPathIgnorePatterns", js.Array(value :_*))
+    @scala.inline
+    def setWatchPathIgnorePatterns(value: js.Array[String]): Self = this.set("watchPathIgnorePatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatchPathIgnorePatterns: Self = this.set("watchPathIgnorePatterns", js.undefined)
+    @scala.inline
+    def setWatchPluginsVarargs(value: (String | (js.Tuple2[String, Record[String, js.Any]]))*): Self = this.set("watchPlugins", js.Array(value :_*))
+    @scala.inline
+    def setWatchPlugins(value: js.Array[String | (js.Tuple2[String, Record[String, _]])]): Self = this.set("watchPlugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatchPlugins: Self = this.set("watchPlugins", js.undefined)
+    @scala.inline
+    def setWatchman(value: Boolean): Self = this.set("watchman", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatchman: Self = this.set("watchman", js.undefined)
+  }
+  
 }
 

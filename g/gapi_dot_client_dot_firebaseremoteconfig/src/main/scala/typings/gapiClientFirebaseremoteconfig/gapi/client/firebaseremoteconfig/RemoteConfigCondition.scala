@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RemoteConfigCondition extends js.Object {
   /** Required. */
-  var expression: js.UndefOr[String] = js.undefined
+  var expression: js.UndefOr[String] = js.native
   /**
     * Required.
     * A non empty and unique name of this condition.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Optional.
     * The display (tag) color of this condition. This serves as part of a tag
@@ -24,17 +25,39 @@ trait RemoteConfigCondition extends js.Object {
     * value (0) have the same meaning:  Let the UI choose any valid color when
     * displaying the condition.
     */
-  var tagColor: js.UndefOr[String] = js.undefined
+  var tagColor: js.UndefOr[String] = js.native
 }
 
 object RemoteConfigCondition {
   @scala.inline
-  def apply(expression: String = null, name: String = null, tagColor: String = null): RemoteConfigCondition = {
+  def apply(): RemoteConfigCondition = {
     val __obj = js.Dynamic.literal()
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tagColor != null) __obj.updateDynamic("tagColor")(tagColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteConfigCondition]
   }
+  @scala.inline
+  implicit class RemoteConfigConditionOps[Self <: RemoteConfigCondition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpression: Self = this.set("expression", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTagColor(value: String): Self = this.set("tagColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagColor: Self = this.set("tagColor", js.undefined)
+  }
+  
 }
 

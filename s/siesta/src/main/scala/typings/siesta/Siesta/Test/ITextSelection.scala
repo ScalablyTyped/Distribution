@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 trait ITextSelection extends js.Object {
   def getSelectedText(el: js.Any): String = js.native
   def selectText(el: js.Any): Unit = js.native
+  def selectText(el: js.Any, start: js.UndefOr[scala.Nothing], end: Double): Unit = js.native
   def selectText(el: js.Any, start: Double): Unit = js.native
   def selectText(el: js.Any, start: Double, end: Double): Unit = js.native
 }

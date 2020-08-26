@@ -7,16 +7,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StaveLine extends js.Object {
   //inconsistent API: this should be set via an options object in the constructor
-  var render_options: Arrowheadangle
-  def applyFontStyle(): Unit
-  def applyLineStyle(): Unit
-  def draw(): StaveLine
-  def setContext(context: js.Object): StaveLine
-  def setFont(font: Family): StaveLine
-  def setNotes(notes: Lastnote): StaveLine
-  def setText(text: String): StaveLine
+  var render_options: Arrowheadangle = js.native
+  def applyFontStyle(): Unit = js.native
+  def applyLineStyle(): Unit = js.native
+  def draw(): StaveLine = js.native
+  def setContext(context: js.Object): StaveLine = js.native
+  def setFont(font: Family): StaveLine = js.native
+  def setNotes(notes: Lastnote): StaveLine = js.native
+  def setText(text: String): StaveLine = js.native
 }
 
 @JSGlobal("Vex.Flow.StaveLine")

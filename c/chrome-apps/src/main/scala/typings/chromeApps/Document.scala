@@ -25,8 +25,39 @@ trait Document extends js.Object {
     * ❗ document.open is not available in packaged apps. ❗
     */
   def open(): Document = js.native
+  def open(
+    url: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    features: js.UndefOr[scala.Nothing],
+    replace: Boolean
+  ): Document = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], features: String): Document = js.native
+  def open(
+    url: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    features: String,
+    replace: Boolean
+  ): Document = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: String): Document = js.native
+  def open(
+    url: js.UndefOr[scala.Nothing],
+    name: String,
+    features: js.UndefOr[scala.Nothing],
+    replace: Boolean
+  ): Document = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: String, features: String): Document = js.native
+  def open(url: js.UndefOr[scala.Nothing], name: String, features: String, replace: Boolean): Document = js.native
   def open(url: String): Document = js.native
+  def open(
+    url: String,
+    name: js.UndefOr[scala.Nothing],
+    features: js.UndefOr[scala.Nothing],
+    replace: Boolean
+  ): Document = js.native
+  def open(url: String, name: js.UndefOr[scala.Nothing], features: String): Document = js.native
+  def open(url: String, name: js.UndefOr[scala.Nothing], features: String, replace: Boolean): Document = js.native
   def open(url: String, name: String): Document = js.native
+  def open(url: String, name: String, features: js.UndefOr[scala.Nothing], replace: Boolean): Document = js.native
   def open(url: String, name: String, features: String): Document = js.native
   def open(url: String, name: String, features: String, replace: Boolean): Document = js.native
   /**

@@ -27,20 +27,42 @@ trait Invitation extends js.Object {
 
 object Invitation {
   @scala.inline
-  def apply(
-    CreationDate: Timestamp = null,
-    ExpirationDate: Timestamp = null,
-    InvitationId: ResourceIdString = null,
-    NetworkSummary: NetworkSummary = null,
-    Status: InvitationStatus = null
-  ): Invitation = {
+  def apply(): Invitation = {
     val __obj = js.Dynamic.literal()
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
-    if (InvitationId != null) __obj.updateDynamic("InvitationId")(InvitationId.asInstanceOf[js.Any])
-    if (NetworkSummary != null) __obj.updateDynamic("NetworkSummary")(NetworkSummary.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Invitation]
   }
+  @scala.inline
+  implicit class InvitationOps[Self <: Invitation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: Timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: Timestamp): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
+    @scala.inline
+    def setInvitationId(value: ResourceIdString): Self = this.set("InvitationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitationId: Self = this.set("InvitationId", js.undefined)
+    @scala.inline
+    def setNetworkSummary(value: NetworkSummary): Self = this.set("NetworkSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkSummary: Self = this.set("NetworkSummary", js.undefined)
+    @scala.inline
+    def setStatus(value: InvitationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

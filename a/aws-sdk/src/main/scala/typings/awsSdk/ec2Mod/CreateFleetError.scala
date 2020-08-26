@@ -26,18 +26,38 @@ trait CreateFleetError extends js.Object {
 
 object CreateFleetError {
   @scala.inline
-  def apply(
-    ErrorCode: String = null,
-    ErrorMessage: String = null,
-    LaunchTemplateAndOverrides: LaunchTemplateAndOverridesResponse = null,
-    Lifecycle: InstanceLifecycle = null
-  ): CreateFleetError = {
+  def apply(): CreateFleetError = {
     val __obj = js.Dynamic.literal()
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (LaunchTemplateAndOverrides != null) __obj.updateDynamic("LaunchTemplateAndOverrides")(LaunchTemplateAndOverrides.asInstanceOf[js.Any])
-    if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFleetError]
   }
+  @scala.inline
+  implicit class CreateFleetErrorOps[Self <: CreateFleetError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCode(value: String): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setLaunchTemplateAndOverrides(value: LaunchTemplateAndOverridesResponse): Self = this.set("LaunchTemplateAndOverrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateAndOverrides: Self = this.set("LaunchTemplateAndOverrides", js.undefined)
+    @scala.inline
+    def setLifecycle(value: InstanceLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+  }
+  
 }
 

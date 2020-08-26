@@ -13,6 +13,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object findWrapping extends js.Object {
   def apply[S /* <: Schema[_, _] */](range: NodeRange[S], nodeType: NodeType[S]): js.UndefOr[js.Array[Attrs[S]] | Null] = js.native
+  def apply[S /* <: Schema[_, _] */](
+    range: NodeRange[S],
+    nodeType: NodeType[S],
+    attrs: js.UndefOr[scala.Nothing],
+    innerRange: NodeRange[S]
+  ): js.UndefOr[js.Array[Attrs[S]] | Null] = js.native
   def apply[S /* <: Schema[_, _] */](range: NodeRange[S], nodeType: NodeType[S], attrs: StringDictionary[js.Any]): js.UndefOr[js.Array[Attrs[S]] | Null] = js.native
   def apply[S /* <: Schema[_, _] */](
     range: NodeRange[S],

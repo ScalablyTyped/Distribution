@@ -12,7 +12,7 @@ Get the iTerm2 version
 | Keywords           | iterm2, iterm, terminal, app, version |
 | # releases         | 5 |
 | # dependents       | 10 |
-| # downloads        | 1126955 |
+| # downloads        | 1187447 |
 | # stars            | 0 |
 
 ## Links

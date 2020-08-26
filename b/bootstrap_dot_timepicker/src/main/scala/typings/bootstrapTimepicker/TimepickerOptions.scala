@@ -5,63 +5,108 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimepickerOptions extends js.Object {
-  var appendWidgetTo: js.UndefOr[String] = js.undefined
-  var defaultTime: js.UndefOr[String | Boolean | Date] = js.undefined
-  var disableFocus: js.UndefOr[Boolean] = js.undefined
-  var disableMousewheel: js.UndefOr[Boolean] = js.undefined
-  var explicitMode: js.UndefOr[Boolean] = js.undefined
-  var icons: js.UndefOr[TimepickerIconOptions] = js.undefined
-  var isOpen: js.UndefOr[Boolean] = js.undefined
-  var maxHours: js.UndefOr[Double] = js.undefined
-  var minuteStep: js.UndefOr[Double] = js.undefined
-  var modalBackdrop: js.UndefOr[Boolean] = js.undefined
-  var secondStep: js.UndefOr[Double] = js.undefined
-  var showInputs: js.UndefOr[Boolean] = js.undefined
-  var showMeridian: js.UndefOr[Boolean] = js.undefined
-  var showSeconds: js.UndefOr[Boolean] = js.undefined
-  var snapToStep: js.UndefOr[Boolean] = js.undefined
-  var template: js.UndefOr[String | Boolean] = js.undefined
+  var appendWidgetTo: js.UndefOr[String] = js.native
+  var defaultTime: js.UndefOr[String | Boolean | Date] = js.native
+  var disableFocus: js.UndefOr[Boolean] = js.native
+  var disableMousewheel: js.UndefOr[Boolean] = js.native
+  var explicitMode: js.UndefOr[Boolean] = js.native
+  var icons: js.UndefOr[TimepickerIconOptions] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.native
+  var maxHours: js.UndefOr[Double] = js.native
+  var minuteStep: js.UndefOr[Double] = js.native
+  var modalBackdrop: js.UndefOr[Boolean] = js.native
+  var secondStep: js.UndefOr[Double] = js.native
+  var showInputs: js.UndefOr[Boolean] = js.native
+  var showMeridian: js.UndefOr[Boolean] = js.native
+  var showSeconds: js.UndefOr[Boolean] = js.native
+  var snapToStep: js.UndefOr[Boolean] = js.native
+  var template: js.UndefOr[String | Boolean] = js.native
 }
 
 object TimepickerOptions {
   @scala.inline
-  def apply(
-    appendWidgetTo: String = null,
-    defaultTime: String | Boolean | Date = null,
-    disableFocus: js.UndefOr[Boolean] = js.undefined,
-    disableMousewheel: js.UndefOr[Boolean] = js.undefined,
-    explicitMode: js.UndefOr[Boolean] = js.undefined,
-    icons: TimepickerIconOptions = null,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    maxHours: js.UndefOr[Double] = js.undefined,
-    minuteStep: js.UndefOr[Double] = js.undefined,
-    modalBackdrop: js.UndefOr[Boolean] = js.undefined,
-    secondStep: js.UndefOr[Double] = js.undefined,
-    showInputs: js.UndefOr[Boolean] = js.undefined,
-    showMeridian: js.UndefOr[Boolean] = js.undefined,
-    showSeconds: js.UndefOr[Boolean] = js.undefined,
-    snapToStep: js.UndefOr[Boolean] = js.undefined,
-    template: String | Boolean = null
-  ): TimepickerOptions = {
+  def apply(): TimepickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (appendWidgetTo != null) __obj.updateDynamic("appendWidgetTo")(appendWidgetTo.asInstanceOf[js.Any])
-    if (defaultTime != null) __obj.updateDynamic("defaultTime")(defaultTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFocus)) __obj.updateDynamic("disableFocus")(disableFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMousewheel)) __obj.updateDynamic("disableMousewheel")(disableMousewheel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicitMode)) __obj.updateDynamic("explicitMode")(explicitMode.get.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHours)) __obj.updateDynamic("maxHours")(maxHours.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minuteStep)) __obj.updateDynamic("minuteStep")(minuteStep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(modalBackdrop)) __obj.updateDynamic("modalBackdrop")(modalBackdrop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secondStep)) __obj.updateDynamic("secondStep")(secondStep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInputs)) __obj.updateDynamic("showInputs")(showInputs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMeridian)) __obj.updateDynamic("showMeridian")(showMeridian.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapToStep)) __obj.updateDynamic("snapToStep")(snapToStep.get.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimepickerOptions]
   }
+  @scala.inline
+  implicit class TimepickerOptionsOps[Self <: TimepickerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppendWidgetTo(value: String): Self = this.set("appendWidgetTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendWidgetTo: Self = this.set("appendWidgetTo", js.undefined)
+    @scala.inline
+    def setDefaultTime(value: String | Boolean | Date): Self = this.set("defaultTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTime: Self = this.set("defaultTime", js.undefined)
+    @scala.inline
+    def setDisableFocus(value: Boolean): Self = this.set("disableFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableFocus: Self = this.set("disableFocus", js.undefined)
+    @scala.inline
+    def setDisableMousewheel(value: Boolean): Self = this.set("disableMousewheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableMousewheel: Self = this.set("disableMousewheel", js.undefined)
+    @scala.inline
+    def setExplicitMode(value: Boolean): Self = this.set("explicitMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplicitMode: Self = this.set("explicitMode", js.undefined)
+    @scala.inline
+    def setIcons(value: TimepickerIconOptions): Self = this.set("icons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcons: Self = this.set("icons", js.undefined)
+    @scala.inline
+    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    @scala.inline
+    def setMaxHours(value: Double): Self = this.set("maxHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHours: Self = this.set("maxHours", js.undefined)
+    @scala.inline
+    def setMinuteStep(value: Double): Self = this.set("minuteStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinuteStep: Self = this.set("minuteStep", js.undefined)
+    @scala.inline
+    def setModalBackdrop(value: Boolean): Self = this.set("modalBackdrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModalBackdrop: Self = this.set("modalBackdrop", js.undefined)
+    @scala.inline
+    def setSecondStep(value: Double): Self = this.set("secondStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondStep: Self = this.set("secondStep", js.undefined)
+    @scala.inline
+    def setShowInputs(value: Boolean): Self = this.set("showInputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowInputs: Self = this.set("showInputs", js.undefined)
+    @scala.inline
+    def setShowMeridian(value: Boolean): Self = this.set("showMeridian", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMeridian: Self = this.set("showMeridian", js.undefined)
+    @scala.inline
+    def setShowSeconds(value: Boolean): Self = this.set("showSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSeconds: Self = this.set("showSeconds", js.undefined)
+    @scala.inline
+    def setSnapToStep(value: Boolean): Self = this.set("snapToStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapToStep: Self = this.set("snapToStep", js.undefined)
+    @scala.inline
+    def setTemplate(value: String | Boolean): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+  }
+  
 }
 

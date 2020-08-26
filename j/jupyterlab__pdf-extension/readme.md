@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__pdf-extension
 
-Typings are for version 2.1.0
+Typings are for version 2.2.0
 
 ## Library description:
 JupyterLab - PDF Viewer
@@ -12,7 +12,7 @@ JupyterLab - PDF Viewer
 | Keywords           | - |
 | # releases         | 56 |
 | # dependents       | 1 |
-| # downloads        | 733675 |
+| # downloads        | 742580 |
 | # stars            | 0 |
 
 ## Links

@@ -17,10 +17,26 @@ trait SchemaGooglePrivacyDlpV2TableLocation extends js.Object {
 
 object SchemaGooglePrivacyDlpV2TableLocation {
   @scala.inline
-  def apply(rowIndex: String = null): SchemaGooglePrivacyDlpV2TableLocation = {
+  def apply(): SchemaGooglePrivacyDlpV2TableLocation = {
     val __obj = js.Dynamic.literal()
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TableLocation]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2TableLocationOps[Self <: SchemaGooglePrivacyDlpV2TableLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRowIndex(value: String): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+  }
+  
 }
 

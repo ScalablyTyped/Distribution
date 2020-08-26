@@ -26,18 +26,38 @@ trait StreamSummary extends js.Object {
 
 object StreamSummary {
   @scala.inline
-  def apply(
-    description: StreamDescription = null,
-    streamArn: StreamArn = null,
-    streamId: StreamId = null,
-    streamVersion: js.UndefOr[StreamVersion] = js.undefined
-  ): StreamSummary = {
+  def apply(): StreamSummary = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (streamArn != null) __obj.updateDynamic("streamArn")(streamArn.asInstanceOf[js.Any])
-    if (streamId != null) __obj.updateDynamic("streamId")(streamId.asInstanceOf[js.Any])
-    if (!js.isUndefined(streamVersion)) __obj.updateDynamic("streamVersion")(streamVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamSummary]
   }
+  @scala.inline
+  implicit class StreamSummaryOps[Self <: StreamSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: StreamDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setStreamArn(value: StreamArn): Self = this.set("streamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamArn: Self = this.set("streamArn", js.undefined)
+    @scala.inline
+    def setStreamId(value: StreamId): Self = this.set("streamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamId: Self = this.set("streamId", js.undefined)
+    @scala.inline
+    def setStreamVersion(value: StreamVersion): Self = this.set("streamVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamVersion: Self = this.set("streamVersion", js.undefined)
+  }
+  
 }
 

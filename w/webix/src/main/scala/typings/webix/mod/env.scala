@@ -5,21 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait env extends js.Object {
-  var cssPrefix: String
-  var isFF: Boolean
-  var isIE: Boolean
-  var isSafari: Boolean
-  var isWebKit: Boolean
-  var jsPrefix: String
-  var mouse: js.Any
-  var strict: Boolean
-  var svg: Boolean
-  var transform: Boolean
-  var transition: Boolean
-  var transitionDuration: String
-  var transitionEnd: String
-  var translate: String
+  var cssPrefix: String = js.native
+  var isFF: Boolean = js.native
+  var isIE: Boolean = js.native
+  var isSafari: Boolean = js.native
+  var isWebKit: Boolean = js.native
+  var jsPrefix: String = js.native
+  var mouse: js.Any = js.native
+  var strict: Boolean = js.native
+  var svg: Boolean = js.native
+  var transform: Boolean = js.native
+  var transition: Boolean = js.native
+  var transitionDuration: String = js.native
+  var transitionEnd: String = js.native
+  var translate: String = js.native
 }
 
 @JSImport("webix", "env")

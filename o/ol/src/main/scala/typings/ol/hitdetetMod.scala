@@ -18,7 +18,16 @@ object hitdetetMod extends js.Object {
     size: Size,
     transforms: js.Array[Transform],
     features: js.Array[FeatureLike],
-    styleFunction: js.UndefOr[StyleFunction],
+    styleFunction: js.UndefOr[scala.Nothing],
+    extent: Extent,
+    resolution: Double,
+    rotation: Double
+  ): ImageData = js.native
+  def createHitDetectionImageData(
+    size: Size,
+    transforms: js.Array[Transform],
+    features: js.Array[FeatureLike],
+    styleFunction: StyleFunction,
     extent: Extent,
     resolution: Double,
     rotation: Double

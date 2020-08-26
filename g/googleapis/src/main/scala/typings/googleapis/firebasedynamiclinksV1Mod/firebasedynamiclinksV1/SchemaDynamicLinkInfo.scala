@@ -64,28 +64,58 @@ trait SchemaDynamicLinkInfo extends js.Object {
 
 object SchemaDynamicLinkInfo {
   @scala.inline
-  def apply(
-    analyticsInfo: SchemaAnalyticsInfo = null,
-    androidInfo: SchemaAndroidInfo = null,
-    desktopInfo: SchemaDesktopInfo = null,
-    domainUriPrefix: String = null,
-    dynamicLinkDomain: String = null,
-    iosInfo: SchemaIosInfo = null,
-    link: String = null,
-    navigationInfo: SchemaNavigationInfo = null,
-    socialMetaTagInfo: SchemaSocialMetaTagInfo = null
-  ): SchemaDynamicLinkInfo = {
+  def apply(): SchemaDynamicLinkInfo = {
     val __obj = js.Dynamic.literal()
-    if (analyticsInfo != null) __obj.updateDynamic("analyticsInfo")(analyticsInfo.asInstanceOf[js.Any])
-    if (androidInfo != null) __obj.updateDynamic("androidInfo")(androidInfo.asInstanceOf[js.Any])
-    if (desktopInfo != null) __obj.updateDynamic("desktopInfo")(desktopInfo.asInstanceOf[js.Any])
-    if (domainUriPrefix != null) __obj.updateDynamic("domainUriPrefix")(domainUriPrefix.asInstanceOf[js.Any])
-    if (dynamicLinkDomain != null) __obj.updateDynamic("dynamicLinkDomain")(dynamicLinkDomain.asInstanceOf[js.Any])
-    if (iosInfo != null) __obj.updateDynamic("iosInfo")(iosInfo.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (navigationInfo != null) __obj.updateDynamic("navigationInfo")(navigationInfo.asInstanceOf[js.Any])
-    if (socialMetaTagInfo != null) __obj.updateDynamic("socialMetaTagInfo")(socialMetaTagInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDynamicLinkInfo]
   }
+  @scala.inline
+  implicit class SchemaDynamicLinkInfoOps[Self <: SchemaDynamicLinkInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnalyticsInfo(value: SchemaAnalyticsInfo): Self = this.set("analyticsInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnalyticsInfo: Self = this.set("analyticsInfo", js.undefined)
+    @scala.inline
+    def setAndroidInfo(value: SchemaAndroidInfo): Self = this.set("androidInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidInfo: Self = this.set("androidInfo", js.undefined)
+    @scala.inline
+    def setDesktopInfo(value: SchemaDesktopInfo): Self = this.set("desktopInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktopInfo: Self = this.set("desktopInfo", js.undefined)
+    @scala.inline
+    def setDomainUriPrefix(value: String): Self = this.set("domainUriPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainUriPrefix: Self = this.set("domainUriPrefix", js.undefined)
+    @scala.inline
+    def setDynamicLinkDomain(value: String): Self = this.set("dynamicLinkDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamicLinkDomain: Self = this.set("dynamicLinkDomain", js.undefined)
+    @scala.inline
+    def setIosInfo(value: SchemaIosInfo): Self = this.set("iosInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosInfo: Self = this.set("iosInfo", js.undefined)
+    @scala.inline
+    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setNavigationInfo(value: SchemaNavigationInfo): Self = this.set("navigationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigationInfo: Self = this.set("navigationInfo", js.undefined)
+    @scala.inline
+    def setSocialMetaTagInfo(value: SchemaSocialMetaTagInfo): Self = this.set("socialMetaTagInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocialMetaTagInfo: Self = this.set("socialMetaTagInfo", js.undefined)
+  }
+  
 }
 

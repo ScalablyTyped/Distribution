@@ -12,7 +12,7 @@ Combines a list of arrays, returning a single array with unique values, using st
 | Keywords           | add, append, array, arrays, combine, concat, extend, union, uniq, unique, util, utility, utils |
 | # releases         | 0 |
 | # dependents       | 70 |
-| # downloads        | 431434153 |
+| # downloads        | 442739724 |
 | # stars            | 2 |
 
 ## Links

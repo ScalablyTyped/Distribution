@@ -43,8 +43,24 @@ trait Line extends Shape {
     * @param y2 The vertical position of the end of the line. Default 0.
     */
   def setTo(): this.type = js.native
+  def setTo(
+    x1: js.UndefOr[scala.Nothing],
+    y1: js.UndefOr[scala.Nothing],
+    x2: js.UndefOr[scala.Nothing],
+    y2: Double
+  ): this.type = js.native
+  def setTo(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double): this.type = js.native
+  def setTo(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double): this.type = js.native
+  def setTo(x1: js.UndefOr[scala.Nothing], y1: Double): this.type = js.native
+  def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
+  def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double): this.type = js.native
+  def setTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double, y2: Double): this.type = js.native
   def setTo(x1: Double): this.type = js.native
+  def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
+  def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double): this.type = js.native
+  def setTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double): this.type = js.native
   def setTo(x1: Double, y1: Double): this.type = js.native
+  def setTo(x1: Double, y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double): this.type = js.native
   def setTo(x1: Double, y1: Double, x2: Double): this.type = js.native
   def setTo(x1: Double, y1: Double, x2: Double, y2: Double): this.type = js.native
 }

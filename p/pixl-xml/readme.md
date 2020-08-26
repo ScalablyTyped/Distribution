@@ -12,7 +12,7 @@ A simple module for parsing and composing XML.
 | Keywords           | xml |
 | # releases         | 0 |
 | # dependents       | 38 |
-| # downloads        | 325850 |
+| # downloads        | 319928 |
 | # stars            | 9 |
 
 ## Links

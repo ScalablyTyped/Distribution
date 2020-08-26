@@ -1,43 +1,18 @@
 package typings.hedron.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.hedron.hedronStrings.`inline-block`
-import typings.hedron.hedronStrings.`inline-flex`
-import typings.hedron.hedronStrings.`inline-grid`
-import typings.hedron.hedronStrings.`inline-table`
-import typings.hedron.hedronStrings.`inline`
-import typings.hedron.hedronStrings.`list-item`
-import typings.hedron.hedronStrings.`run-in`
-import typings.hedron.hedronStrings.`table-caption`
-import typings.hedron.hedronStrings.`table-cell`
-import typings.hedron.hedronStrings.`table-column-group`
-import typings.hedron.hedronStrings.`table-column`
-import typings.hedron.hedronStrings.`table-footer-group`
-import typings.hedron.hedronStrings.`table-header-group`
-import typings.hedron.hedronStrings.`table-row-group`
-import typings.hedron.hedronStrings.`table-row`
-import typings.hedron.hedronStrings.block
 import typings.hedron.hedronStrings.bottom
 import typings.hedron.hedronStrings.center
-import typings.hedron.hedronStrings.collapse
-import typings.hedron.hedronStrings.contents
-import typings.hedron.hedronStrings.flex
-import typings.hedron.hedronStrings.grid
-import typings.hedron.hedronStrings.hidden
 import typings.hedron.hedronStrings.horizontal
-import typings.hedron.hedronStrings.inherit
-import typings.hedron.hedronStrings.initial
 import typings.hedron.hedronStrings.left
-import typings.hedron.hedronStrings.none
 import typings.hedron.hedronStrings.right
-import typings.hedron.hedronStrings.table
 import typings.hedron.hedronStrings.top
 import typings.hedron.hedronStrings.vertical
-import typings.hedron.hedronStrings.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BoundsProps
   extends Styleable
      with /**
@@ -51,73 +26,71 @@ trait BoundsProps
     * children of this component
     * @default false
     */
-  var debug: js.UndefOr[Boolean] = js.undefined
+  var debug: js.UndefOr[Boolean] = js.native
   /**
     * Direction of content
     */
-  var direction: js.UndefOr[horizontal | vertical] = js.undefined
+  var direction: js.UndefOr[horizontal | vertical] = js.native
   /**
     * Controls the CSS flex property
     */
-  var flex: js.UndefOr[String] = js.undefined
+  var flex: js.UndefOr[String] = js.native
   /**
     * Alignment of children along the horizontal axis
     */
-  var halign: js.UndefOr[left | center | right] = js.undefined
+  var halign: js.UndefOr[left | center | right] = js.native
   /**
     * Alignment of children along the vertical axis
     */
-  var valign: js.UndefOr[top | center | bottom] = js.undefined
+  var valign: js.UndefOr[top | center | bottom] = js.native
   /**
     * Sets whether the children should wrap when there's no more room on the primary axis
     */
-  var wrap: js.UndefOr[Boolean] = js.undefined
+  var wrap: js.UndefOr[Boolean] = js.native
 }
 
 object BoundsProps {
   @scala.inline
-  def apply(
-    StringDictionary: /**
-    *  Allow for customer props due to ability to add
-    * custom breakpoints
-    */
-  /* x */ StringDictionary[js.Any] = null,
-    background: String = null,
-    border: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    direction: horizontal | vertical = null,
-    display: `inline` | block | contents | flex | grid | `inline-block` | none | initial | inherit | `inline-flex` | `inline-grid` | `inline-table` | `list-item` | `run-in` | table | `table-caption` | `table-column-group` | `table-header-group` | `table-footer-group` | `table-row-group` | `table-cell` | `table-column` | `table-row` = null,
-    flex: String = null,
-    halign: left | center | right = null,
-    height: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    margin: String = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    padding: String = null,
-    valign: top | center | bottom = null,
-    visibility: visible | hidden | collapse | initial | inherit = null,
-    width: String = null,
-    wrap: js.UndefOr[Boolean] = js.undefined
-  ): BoundsProps = {
+  def apply(): BoundsProps = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (halign != null) __obj.updateDynamic("halign")(halign.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoundsProps]
   }
+  @scala.inline
+  implicit class BoundsPropsOps[Self <: BoundsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setDirection(value: horizontal | vertical): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setFlex(value: String): Self = this.set("flex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlex: Self = this.set("flex", js.undefined)
+    @scala.inline
+    def setHalign(value: left | center | right): Self = this.set("halign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHalign: Self = this.set("halign", js.undefined)
+    @scala.inline
+    def setValign(value: top | center | bottom): Self = this.set("valign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValign: Self = this.set("valign", js.undefined)
+    @scala.inline
+    def setWrap(value: Boolean): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap: Self = this.set("wrap", js.undefined)
+  }
+  
 }
 

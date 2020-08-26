@@ -5,16 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CryptoKey extends js.Object {
   /** Output only. The time at which this CryptoKey was created. */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String] = js.native
   /** Labels with user defined metadata. */
-  var labels: js.UndefOr[Record[String, String]] = js.undefined
+  var labels: js.UndefOr[Record[String, String]] = js.native
   /**
     * Output only. The resource name for this CryptoKey in the format
     * `projects/&#42;/locations/&#42;/keyRings/&#42;/cryptoKeys/&#42;`.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * At next_rotation_time, the Key Management Service will automatically:
     *
@@ -26,7 +27,7 @@ trait CryptoKey extends js.Object {
     * UpdateCryptoKeyPrimaryVersion
     * do not affect next_rotation_time.
     */
-  var nextRotationTime: js.UndefOr[String] = js.undefined
+  var nextRotationTime: js.UndefOr[String] = js.native
   /**
     * Output only. A copy of the "primary" CryptoKeyVersion that will be used
     * by Encrypt when this CryptoKey is given
@@ -35,41 +36,67 @@ trait CryptoKey extends js.Object {
     * The CryptoKey's primary version can be updated via
     * UpdateCryptoKeyPrimaryVersion.
     */
-  var primary: js.UndefOr[CryptoKeyVersion] = js.undefined
+  var primary: js.UndefOr[CryptoKeyVersion] = js.native
   /**
     * The immutable purpose of this CryptoKey. Currently, the only acceptable
     * purpose is ENCRYPT_DECRYPT.
     */
-  var purpose: js.UndefOr[String] = js.undefined
+  var purpose: js.UndefOr[String] = js.native
   /**
     * next_rotation_time will be advanced by this period when the service
     * automatically rotates a key. Must be at least one day.
     *
     * If rotation_period is set, next_rotation_time must also be set.
     */
-  var rotationPeriod: js.UndefOr[String] = js.undefined
+  var rotationPeriod: js.UndefOr[String] = js.native
 }
 
 object CryptoKey {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    labels: Record[String, String] = null,
-    name: String = null,
-    nextRotationTime: String = null,
-    primary: CryptoKeyVersion = null,
-    purpose: String = null,
-    rotationPeriod: String = null
-  ): CryptoKey = {
+  def apply(): CryptoKey = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nextRotationTime != null) __obj.updateDynamic("nextRotationTime")(nextRotationTime.asInstanceOf[js.Any])
-    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
-    if (rotationPeriod != null) __obj.updateDynamic("rotationPeriod")(rotationPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoKey]
   }
+  @scala.inline
+  implicit class CryptoKeyOps[Self <: CryptoKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setLabels(value: Record[String, String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNextRotationTime(value: String): Self = this.set("nextRotationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextRotationTime: Self = this.set("nextRotationTime", js.undefined)
+    @scala.inline
+    def setPrimary(value: CryptoKeyVersion): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setPurpose(value: String): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurpose: Self = this.set("purpose", js.undefined)
+    @scala.inline
+    def setRotationPeriod(value: String): Self = this.set("rotationPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationPeriod: Self = this.set("rotationPeriod", js.undefined)
+  }
+  
 }
 

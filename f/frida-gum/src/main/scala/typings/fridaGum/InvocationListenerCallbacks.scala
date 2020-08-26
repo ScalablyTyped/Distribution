@@ -15,20 +15,13 @@ trait InvocationListenerCallbacks extends js.Object
 
 object InvocationListenerCallbacks {
   @scala.inline
-  def ScriptInvocationListenerCallbacks(
-    onEnter: js.ThisFunction1[/* this */ InvocationContext, /* args */ InvocationArguments, Unit] = null,
-    onLeave: js.ThisFunction1[/* this */ InvocationContext, /* retval */ InvocationReturnValue, Unit] = null
-  ): InvocationListenerCallbacks = {
+  def ScriptInvocationListenerCallbacks(): InvocationListenerCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvocationListenerCallbacks]
   }
   @scala.inline
-  def NativeInvocationListenerCallbacks(onEnter: NativePointer = null, onLeave: NativePointer = null): InvocationListenerCallbacks = {
+  def NativeInvocationListenerCallbacks(): InvocationListenerCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvocationListenerCallbacks]
   }
 }

@@ -4,24 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Fields_ extends js.Object {
-  var cksum: Double
-  var devmaj: Double
-  var devmin: Double
-  var fill: Double
-  var gid: Double
-  var gname: Double
-  var linkpath: Double
-  var mode: Double
-  var mtime: Double
-  var path: Double
-  var prefix: Double
-  var size: Double
-  var `type`: Double
-  var uid: Double
-  var uname: Double
-  var ustar: Double
-  var ustarvar: Double
+  var cksum: Double = js.native
+  var devmaj: Double = js.native
+  var devmin: Double = js.native
+  var fill: Double = js.native
+  var gid: Double = js.native
+  var gname: Double = js.native
+  var linkpath: Double = js.native
+  var mode: Double = js.native
+  var mtime: Double = js.native
+  var path: Double = js.native
+  var prefix: Double = js.native
+  var size: Double = js.native
+  var `type`: Double = js.native
+  var uid: Double = js.native
+  var uname: Double = js.native
+  var ustar: Double = js.native
+  var ustarvar: Double = js.native
 }
 
 object Fields_ {
@@ -49,5 +50,52 @@ object Fields_ {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields_]
   }
+  @scala.inline
+  implicit class Fields_Ops[Self <: Fields_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCksum(value: Double): Self = this.set("cksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDevmaj(value: Double): Self = this.set("devmaj", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDevmin(value: Double): Self = this.set("devmin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFill(value: Double): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGid(value: Double): Self = this.set("gid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGname(value: Double): Self = this.set("gname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLinkpath(value: Double): Self = this.set("linkpath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMode(value: Double): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMtime(value: Double): Self = this.set("mtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: Double): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrefix(value: Double): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUid(value: Double): Self = this.set("uid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUname(value: Double): Self = this.set("uname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUstar(value: Double): Self = this.set("ustar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUstarvar(value: Double): Self = this.set("ustarvar", value.asInstanceOf[js.Any])
+  }
+  
 }
 

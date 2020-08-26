@@ -35,12 +35,80 @@ object render extends js.Object {
       */
     def this(`type`: EventType) = this()
     def this(`type`: EventType, opt_vectorContext: VectorContext) = this()
+    def this(`type`: EventType, opt_vectorContext: js.UndefOr[scala.Nothing], opt_frameState: FrameState) = this()
     def this(`type`: EventType, opt_vectorContext: VectorContext, opt_frameState: FrameState) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: js.UndefOr[scala.Nothing],
+      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_context: CanvasRenderingContext2D
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: js.UndefOr[scala.Nothing],
+      opt_frameState: FrameState,
+      opt_context: CanvasRenderingContext2D
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: VectorContext,
+      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_context: CanvasRenderingContext2D
+    ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: VectorContext,
       opt_frameState: FrameState,
       opt_context: CanvasRenderingContext2D
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: js.UndefOr[scala.Nothing],
+      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_context: js.UndefOr[scala.Nothing],
+      opt_glContext: js.Any
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: js.UndefOr[scala.Nothing],
+      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_context: CanvasRenderingContext2D,
+      opt_glContext: js.Any
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: js.UndefOr[scala.Nothing],
+      opt_frameState: FrameState,
+      opt_context: js.UndefOr[scala.Nothing],
+      opt_glContext: js.Any
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: js.UndefOr[scala.Nothing],
+      opt_frameState: FrameState,
+      opt_context: CanvasRenderingContext2D,
+      opt_glContext: js.Any
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: VectorContext,
+      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_context: js.UndefOr[scala.Nothing],
+      opt_glContext: js.Any
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: VectorContext,
+      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_context: CanvasRenderingContext2D,
+      opt_glContext: js.Any
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: VectorContext,
+      opt_frameState: FrameState,
+      opt_context: js.UndefOr[scala.Nothing],
+      opt_glContext: js.Any
     ) = this()
     def this(
       `type`: EventType,

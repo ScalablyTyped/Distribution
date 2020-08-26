@@ -50,30 +50,64 @@ trait OrcSerDe extends js.Object {
 
 object OrcSerDe {
   @scala.inline
-  def apply(
-    BlockSizeBytes: js.UndefOr[BlockSizeBytes] = js.undefined,
-    BloomFilterColumns: ListOfNonEmptyStringsWithoutWhitespace = null,
-    BloomFilterFalsePositiveProbability: js.UndefOr[Proportion] = js.undefined,
-    Compression: OrcCompression = null,
-    DictionaryKeyThreshold: js.UndefOr[Proportion] = js.undefined,
-    EnablePadding: js.UndefOr[BooleanObject] = js.undefined,
-    FormatVersion: OrcFormatVersion = null,
-    PaddingTolerance: js.UndefOr[Proportion] = js.undefined,
-    RowIndexStride: js.UndefOr[OrcRowIndexStride] = js.undefined,
-    StripeSizeBytes: js.UndefOr[OrcStripeSizeBytes] = js.undefined
-  ): OrcSerDe = {
+  def apply(): OrcSerDe = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BlockSizeBytes)) __obj.updateDynamic("BlockSizeBytes")(BlockSizeBytes.get.asInstanceOf[js.Any])
-    if (BloomFilterColumns != null) __obj.updateDynamic("BloomFilterColumns")(BloomFilterColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(BloomFilterFalsePositiveProbability)) __obj.updateDynamic("BloomFilterFalsePositiveProbability")(BloomFilterFalsePositiveProbability.get.asInstanceOf[js.Any])
-    if (Compression != null) __obj.updateDynamic("Compression")(Compression.asInstanceOf[js.Any])
-    if (!js.isUndefined(DictionaryKeyThreshold)) __obj.updateDynamic("DictionaryKeyThreshold")(DictionaryKeyThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnablePadding)) __obj.updateDynamic("EnablePadding")(EnablePadding.get.asInstanceOf[js.Any])
-    if (FormatVersion != null) __obj.updateDynamic("FormatVersion")(FormatVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(PaddingTolerance)) __obj.updateDynamic("PaddingTolerance")(PaddingTolerance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RowIndexStride)) __obj.updateDynamic("RowIndexStride")(RowIndexStride.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(StripeSizeBytes)) __obj.updateDynamic("StripeSizeBytes")(StripeSizeBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrcSerDe]
   }
+  @scala.inline
+  implicit class OrcSerDeOps[Self <: OrcSerDe] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockSizeBytes(value: BlockSizeBytes): Self = this.set("BlockSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockSizeBytes: Self = this.set("BlockSizeBytes", js.undefined)
+    @scala.inline
+    def setBloomFilterColumnsVarargs(value: NonEmptyStringWithoutWhitespace*): Self = this.set("BloomFilterColumns", js.Array(value :_*))
+    @scala.inline
+    def setBloomFilterColumns(value: ListOfNonEmptyStringsWithoutWhitespace): Self = this.set("BloomFilterColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBloomFilterColumns: Self = this.set("BloomFilterColumns", js.undefined)
+    @scala.inline
+    def setBloomFilterFalsePositiveProbability(value: Proportion): Self = this.set("BloomFilterFalsePositiveProbability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBloomFilterFalsePositiveProbability: Self = this.set("BloomFilterFalsePositiveProbability", js.undefined)
+    @scala.inline
+    def setCompression(value: OrcCompression): Self = this.set("Compression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompression: Self = this.set("Compression", js.undefined)
+    @scala.inline
+    def setDictionaryKeyThreshold(value: Proportion): Self = this.set("DictionaryKeyThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDictionaryKeyThreshold: Self = this.set("DictionaryKeyThreshold", js.undefined)
+    @scala.inline
+    def setEnablePadding(value: BooleanObject): Self = this.set("EnablePadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePadding: Self = this.set("EnablePadding", js.undefined)
+    @scala.inline
+    def setFormatVersion(value: OrcFormatVersion): Self = this.set("FormatVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatVersion: Self = this.set("FormatVersion", js.undefined)
+    @scala.inline
+    def setPaddingTolerance(value: Proportion): Self = this.set("PaddingTolerance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingTolerance: Self = this.set("PaddingTolerance", js.undefined)
+    @scala.inline
+    def setRowIndexStride(value: OrcRowIndexStride): Self = this.set("RowIndexStride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndexStride: Self = this.set("RowIndexStride", js.undefined)
+    @scala.inline
+    def setStripeSizeBytes(value: OrcStripeSizeBytes): Self = this.set("StripeSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripeSizeBytes: Self = this.set("StripeSizeBytes", js.undefined)
+  }
+  
 }
 

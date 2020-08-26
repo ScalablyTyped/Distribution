@@ -35,6 +35,7 @@ trait GlideScopedEvaluator extends js.Object {
     * }
     */
   def evaluateScript(grObj: ScopedGlideRecord): js.Any = js.native
+  def evaluateScript(grObj: ScopedGlideRecord, scriptField: js.UndefOr[scala.Nothing], variables: js.Object): js.Any = js.native
   def evaluateScript(grObj: ScopedGlideRecord, scriptField: String): js.Any = js.native
   def evaluateScript(grObj: ScopedGlideRecord, scriptField: String, variables: js.Object): js.Any = js.native
   /**

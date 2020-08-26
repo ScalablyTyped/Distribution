@@ -17,40 +17,11 @@ trait Names extends js.Object {
   def apply(Index: js.UndefOr[scala.Nothing], IndexLocal: String): Name = js.native
   def apply(Index: String): Name = js.native
   def apply(Index: Double): Name = js.native
-  @JSName("Add")
-  def Add_1(
+  def Add(
     Name: js.UndefOr[String],
     RefersTo: js.UndefOr[String],
     Visible: js.UndefOr[Boolean],
-    MacroType: js.UndefOr[`1`],
-    ShortcutKey: js.UndefOr[String],
-    Category: js.UndefOr[FunctionCategory | String],
-    NameLocal: js.UndefOr[String],
-    RefersToLocal: js.UndefOr[String],
-    CategoryLocal: js.UndefOr[String],
-    RefersToR1C1: js.UndefOr[String],
-    RefersToR1C1Local: js.UndefOr[String]
-  ): Name = js.native
-  @JSName("Add")
-  def Add_2(
-    Name: js.UndefOr[String],
-    RefersTo: js.UndefOr[String],
-    Visible: js.UndefOr[Boolean],
-    MacroType: js.UndefOr[`2`],
-    ShortcutKey: js.UndefOr[String],
-    Category: js.UndefOr[FunctionCategory | String],
-    NameLocal: js.UndefOr[String],
-    RefersToLocal: js.UndefOr[String],
-    CategoryLocal: js.UndefOr[String],
-    RefersToR1C1: js.UndefOr[String],
-    RefersToR1C1Local: js.UndefOr[String]
-  ): Name = js.native
-  @JSName("Add")
-  def Add_3(
-    Name: js.UndefOr[String],
-    RefersTo: js.UndefOr[String],
-    Visible: js.UndefOr[Boolean],
-    MacroType: js.UndefOr[`3`],
+    MacroType: js.UndefOr[`1` | `2` | `3`],
     ShortcutKey: js.UndefOr[String],
     Category: js.UndefOr[FunctionCategory | String],
     NameLocal: js.UndefOr[String],
@@ -64,7 +35,11 @@ trait Names extends js.Object {
   def Item(Index: String): Name = js.native
   def Item(Index: Double): Name = js.native
   def _Default(): Name = js.native
+  def _Default(Index: js.UndefOr[scala.Nothing], IndexLocal: js.UndefOr[scala.Nothing], RefersTo: js.Any): Name = js.native
+  def _Default(Index: js.UndefOr[scala.Nothing], IndexLocal: js.Any): Name = js.native
+  def _Default(Index: js.UndefOr[scala.Nothing], IndexLocal: js.Any, RefersTo: js.Any): Name = js.native
   def _Default(Index: js.Any): Name = js.native
+  def _Default(Index: js.Any, IndexLocal: js.UndefOr[scala.Nothing], RefersTo: js.Any): Name = js.native
   def _Default(Index: js.Any, IndexLocal: js.Any): Name = js.native
   def _Default(Index: js.Any, IndexLocal: js.Any, RefersTo: js.Any): Name = js.native
 }

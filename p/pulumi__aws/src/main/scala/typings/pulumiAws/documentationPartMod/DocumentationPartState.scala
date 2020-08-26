@@ -24,16 +24,34 @@ trait DocumentationPartState extends js.Object {
 
 object DocumentationPartState {
   @scala.inline
-  def apply(
-    location: Input[DocumentationPartLocation] = null,
-    properties: Input[String] = null,
-    restApiId: Input[String] = null
-  ): DocumentationPartState = {
+  def apply(): DocumentationPartState = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (restApiId != null) __obj.updateDynamic("restApiId")(restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentationPartState]
   }
+  @scala.inline
+  implicit class DocumentationPartStateOps[Self <: DocumentationPartState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocation(value: Input[DocumentationPartLocation]): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setProperties(value: Input[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setRestApiId(value: Input[String]): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestApiId: Self = this.set("restApiId", js.undefined)
+  }
+  
 }
 

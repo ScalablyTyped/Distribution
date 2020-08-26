@@ -14,8 +14,5 @@ class NetworkOperatorNotificationTrigger protected ()
     * @param networkAccountId Specifies the unique identifier of the mobile broadband account.
     */
   def this(networkAccountId: String) = this()
-  /** Gets the account identifier for the mobile network operator notification trigger. */
-  /* CompleteClass */
-  override var networkAccountId: String = js.native
 }
 

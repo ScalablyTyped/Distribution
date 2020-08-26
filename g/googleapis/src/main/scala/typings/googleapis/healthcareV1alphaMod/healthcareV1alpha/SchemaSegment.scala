@@ -39,12 +39,34 @@ trait SchemaSegment extends js.Object {
 
 object SchemaSegment {
   @scala.inline
-  def apply(fields: StringDictionary[String] = null, segmentId: String = null, setId: String = null): SchemaSegment = {
+  def apply(): SchemaSegment = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId.asInstanceOf[js.Any])
-    if (setId != null) __obj.updateDynamic("setId")(setId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSegment]
   }
+  @scala.inline
+  implicit class SchemaSegmentOps[Self <: SchemaSegment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFields(value: StringDictionary[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setSegmentId(value: String): Self = this.set("segmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentId: Self = this.set("segmentId", js.undefined)
+    @scala.inline
+    def setSetId(value: String): Self = this.set("setId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetId: Self = this.set("setId", js.undefined)
+  }
+  
 }
 

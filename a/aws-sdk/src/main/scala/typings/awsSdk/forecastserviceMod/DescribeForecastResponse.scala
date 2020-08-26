@@ -23,7 +23,7 @@ trait DescribeForecastResponse extends js.Object {
     */
   var ForecastName: js.UndefOr[Name] = js.native
   /**
-    * The quantiles at which proababilistic forecasts were generated.
+    * The quantiles at which probabilistic forecasts were generated.
     */
   var ForecastTypes: js.UndefOr[typings.awsSdk.forecastserviceMod.ForecastTypes] = js.native
   /**
@@ -46,28 +46,60 @@ trait DescribeForecastResponse extends js.Object {
 
 object DescribeForecastResponse {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    DatasetGroupArn: Arn = null,
-    ForecastArn: Arn = null,
-    ForecastName: Name = null,
-    ForecastTypes: ForecastTypes = null,
-    LastModificationTime: Timestamp = null,
-    Message: ErrorMessage = null,
-    PredictorArn: Arn = null,
-    Status: String = null
-  ): DescribeForecastResponse = {
+  def apply(): DescribeForecastResponse = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DatasetGroupArn != null) __obj.updateDynamic("DatasetGroupArn")(DatasetGroupArn.asInstanceOf[js.Any])
-    if (ForecastArn != null) __obj.updateDynamic("ForecastArn")(ForecastArn.asInstanceOf[js.Any])
-    if (ForecastName != null) __obj.updateDynamic("ForecastName")(ForecastName.asInstanceOf[js.Any])
-    if (ForecastTypes != null) __obj.updateDynamic("ForecastTypes")(ForecastTypes.asInstanceOf[js.Any])
-    if (LastModificationTime != null) __obj.updateDynamic("LastModificationTime")(LastModificationTime.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (PredictorArn != null) __obj.updateDynamic("PredictorArn")(PredictorArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeForecastResponse]
   }
+  @scala.inline
+  implicit class DescribeForecastResponseOps[Self <: DescribeForecastResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDatasetGroupArn(value: Arn): Self = this.set("DatasetGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetGroupArn: Self = this.set("DatasetGroupArn", js.undefined)
+    @scala.inline
+    def setForecastArn(value: Arn): Self = this.set("ForecastArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForecastArn: Self = this.set("ForecastArn", js.undefined)
+    @scala.inline
+    def setForecastName(value: Name): Self = this.set("ForecastName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForecastName: Self = this.set("ForecastName", js.undefined)
+    @scala.inline
+    def setForecastTypesVarargs(value: ForecastType*): Self = this.set("ForecastTypes", js.Array(value :_*))
+    @scala.inline
+    def setForecastTypes(value: ForecastTypes): Self = this.set("ForecastTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForecastTypes: Self = this.set("ForecastTypes", js.undefined)
+    @scala.inline
+    def setLastModificationTime(value: Timestamp): Self = this.set("LastModificationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModificationTime: Self = this.set("LastModificationTime", js.undefined)
+    @scala.inline
+    def setMessage(value: ErrorMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setPredictorArn(value: Arn): Self = this.set("PredictorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictorArn: Self = this.set("PredictorArn", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

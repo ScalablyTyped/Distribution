@@ -13,7 +13,6 @@ object testsSmartCollectionsMod extends js.Object {
     var service: js.Any = js.native
     def Test1(): js.Promise[Unit] = js.native
     def Test2(): js.Promise[Unit] = js.native
-    /* private */ def create(): js.Any = js.native
     /* private */ def create(scheduleForDeletion: js.Any): js.Any = js.native
     /* private */ def teardownAsync(): js.Any = js.native
   }

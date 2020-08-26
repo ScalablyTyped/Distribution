@@ -81,34 +81,74 @@ trait SchemaRouterBgpPeer extends js.Object {
 
 object SchemaRouterBgpPeer {
   @scala.inline
-  def apply(
-    advertiseMode: String = null,
-    advertisedGroups: js.Array[String] = null,
-    advertisedIpRanges: js.Array[SchemaRouterAdvertisedIpRange] = null,
-    advertisedRoutePriority: js.UndefOr[Double] = js.undefined,
-    bfd: SchemaRouterBgpPeerBfd = null,
-    enable: String = null,
-    interfaceName: String = null,
-    ipAddress: String = null,
-    managementType: String = null,
-    name: String = null,
-    peerAsn: js.UndefOr[Double] = js.undefined,
-    peerIpAddress: String = null
-  ): SchemaRouterBgpPeer = {
+  def apply(): SchemaRouterBgpPeer = {
     val __obj = js.Dynamic.literal()
-    if (advertiseMode != null) __obj.updateDynamic("advertiseMode")(advertiseMode.asInstanceOf[js.Any])
-    if (advertisedGroups != null) __obj.updateDynamic("advertisedGroups")(advertisedGroups.asInstanceOf[js.Any])
-    if (advertisedIpRanges != null) __obj.updateDynamic("advertisedIpRanges")(advertisedIpRanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(advertisedRoutePriority)) __obj.updateDynamic("advertisedRoutePriority")(advertisedRoutePriority.get.asInstanceOf[js.Any])
-    if (bfd != null) __obj.updateDynamic("bfd")(bfd.asInstanceOf[js.Any])
-    if (enable != null) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (interfaceName != null) __obj.updateDynamic("interfaceName")(interfaceName.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (managementType != null) __obj.updateDynamic("managementType")(managementType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(peerAsn)) __obj.updateDynamic("peerAsn")(peerAsn.get.asInstanceOf[js.Any])
-    if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouterBgpPeer]
   }
+  @scala.inline
+  implicit class SchemaRouterBgpPeerOps[Self <: SchemaRouterBgpPeer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertiseMode(value: String): Self = this.set("advertiseMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiseMode: Self = this.set("advertiseMode", js.undefined)
+    @scala.inline
+    def setAdvertisedGroupsVarargs(value: String*): Self = this.set("advertisedGroups", js.Array(value :_*))
+    @scala.inline
+    def setAdvertisedGroups(value: js.Array[String]): Self = this.set("advertisedGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertisedGroups: Self = this.set("advertisedGroups", js.undefined)
+    @scala.inline
+    def setAdvertisedIpRangesVarargs(value: SchemaRouterAdvertisedIpRange*): Self = this.set("advertisedIpRanges", js.Array(value :_*))
+    @scala.inline
+    def setAdvertisedIpRanges(value: js.Array[SchemaRouterAdvertisedIpRange]): Self = this.set("advertisedIpRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertisedIpRanges: Self = this.set("advertisedIpRanges", js.undefined)
+    @scala.inline
+    def setAdvertisedRoutePriority(value: Double): Self = this.set("advertisedRoutePriority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertisedRoutePriority: Self = this.set("advertisedRoutePriority", js.undefined)
+    @scala.inline
+    def setBfd(value: SchemaRouterBgpPeerBfd): Self = this.set("bfd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBfd: Self = this.set("bfd", js.undefined)
+    @scala.inline
+    def setEnable(value: String): Self = this.set("enable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setInterfaceName(value: String): Self = this.set("interfaceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterfaceName: Self = this.set("interfaceName", js.undefined)
+    @scala.inline
+    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    @scala.inline
+    def setManagementType(value: String): Self = this.set("managementType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagementType: Self = this.set("managementType", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPeerAsn(value: Double): Self = this.set("peerAsn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerAsn: Self = this.set("peerAsn", js.undefined)
+    @scala.inline
+    def setPeerIpAddress(value: String): Self = this.set("peerIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerIpAddress: Self = this.set("peerIpAddress", js.undefined)
+  }
+  
 }
 

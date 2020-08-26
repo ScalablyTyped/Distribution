@@ -27,6 +27,12 @@ object mod extends js.Object {
   def substract(p1: js.Array[Double], p2: js.Array[Double]): js.Any = js.native
   def substract(p1: js.Array[Double], p2: js.Array[Double], opt: js.Object): js.Any = js.native
   def train(trainFile: String, modelFile: String): Unit = js.native
+  def train(
+    trainFile: String,
+    modelFile: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   def train(trainFile: String, modelFile: String, options: js.Object): Unit = js.native
   def train(trainFile: String, modelFile: String, options: js.Object, callback: js.Function0[Unit]): Unit = js.native
   def w2v(): js.Any = js.native

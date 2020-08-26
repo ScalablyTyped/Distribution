@@ -19,6 +19,10 @@ trait TopicRuleDynamodb extends js.Object {
     */
   var hashKeyValue: String = js.native
   /**
+    * The operation. Valid values are "INSERT", "UPDATE", or "DELETE".
+    */
+  var operation: js.UndefOr[String] = js.native
+  /**
     * The action payload.
     */
   var payloadField: js.UndefOr[String] = js.native
@@ -46,24 +50,54 @@ trait TopicRuleDynamodb extends js.Object {
 
 object TopicRuleDynamodb {
   @scala.inline
-  def apply(
-    hashKeyField: String,
-    hashKeyValue: String,
-    roleArn: String,
-    tableName: String,
-    hashKeyType: String = null,
-    payloadField: String = null,
-    rangeKeyField: String = null,
-    rangeKeyType: String = null,
-    rangeKeyValue: String = null
-  ): TopicRuleDynamodb = {
+  def apply(hashKeyField: String, hashKeyValue: String, roleArn: String, tableName: String): TopicRuleDynamodb = {
     val __obj = js.Dynamic.literal(hashKeyField = hashKeyField.asInstanceOf[js.Any], hashKeyValue = hashKeyValue.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
-    if (hashKeyType != null) __obj.updateDynamic("hashKeyType")(hashKeyType.asInstanceOf[js.Any])
-    if (payloadField != null) __obj.updateDynamic("payloadField")(payloadField.asInstanceOf[js.Any])
-    if (rangeKeyField != null) __obj.updateDynamic("rangeKeyField")(rangeKeyField.asInstanceOf[js.Any])
-    if (rangeKeyType != null) __obj.updateDynamic("rangeKeyType")(rangeKeyType.asInstanceOf[js.Any])
-    if (rangeKeyValue != null) __obj.updateDynamic("rangeKeyValue")(rangeKeyValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleDynamodb]
   }
+  @scala.inline
+  implicit class TopicRuleDynamodbOps[Self <: TopicRuleDynamodb] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHashKeyField(value: String): Self = this.set("hashKeyField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHashKeyValue(value: String): Self = this.set("hashKeyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: String): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: String): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHashKeyType(value: String): Self = this.set("hashKeyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashKeyType: Self = this.set("hashKeyType", js.undefined)
+    @scala.inline
+    def setOperation(value: String): Self = this.set("operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperation: Self = this.set("operation", js.undefined)
+    @scala.inline
+    def setPayloadField(value: String): Self = this.set("payloadField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayloadField: Self = this.set("payloadField", js.undefined)
+    @scala.inline
+    def setRangeKeyField(value: String): Self = this.set("rangeKeyField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeKeyField: Self = this.set("rangeKeyField", js.undefined)
+    @scala.inline
+    def setRangeKeyType(value: String): Self = this.set("rangeKeyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeKeyType: Self = this.set("rangeKeyType", js.undefined)
+    @scala.inline
+    def setRangeKeyValue(value: String): Self = this.set("rangeKeyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeKeyValue: Self = this.set("rangeKeyValue", js.undefined)
+  }
+  
 }
 

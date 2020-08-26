@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "serialize-javascript"
-version := "1.5-dt-20200515Z-f3dd8f"
-scalaVersion := "2.13.2"
+version := "4.0-dt-20200716Z-ebdb6b"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

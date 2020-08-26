@@ -16,15 +16,5 @@ import scala.scalajs.js.annotation._
 class ContactResult protected ()
   extends typings.playcanvas.pc.ContactResult {
   def this(other: typings.playcanvas.pc.Entity, contacts: js.Array[typings.playcanvas.pc.ContactPoint]) = this()
-  /**
-    * An array of ContactPoints with the other entity.
-    */
-  /* CompleteClass */
-  override var contacts: js.Array[typings.playcanvas.pc.ContactPoint] = js.native
-  /**
-    * The entity that was involved in the contact with this entity.
-    */
-  /* CompleteClass */
-  override var other: typings.playcanvas.pc.Entity = js.native
 }
 

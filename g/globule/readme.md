@@ -10,9 +10,9 @@ An easy-to-use wildcard globbing library.
 | ------------------ | :-------------: |
 | Full name          | globule |
 | Keywords           | glob, file, match, mapping, expand, wildcard, pattern, sync, awesome |
-| # releases         | 1 |
-| # dependents       | 204 |
-| # downloads        | 223778824 |
+| # releases         | 3 |
+| # dependents       | 206 |
+| # downloads        | 227315320 |
 | # stars            | 3 |
 
 ## Links

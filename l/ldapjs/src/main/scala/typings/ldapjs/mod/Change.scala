@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Change extends js.Object {
-  var modification: StringDictionary[js.Any]
-  var operation: String
+  var modification: StringDictionary[js.Any] = js.native
+  var operation: String = js.native
 }
 
 @JSImport("ldapjs", "Change")

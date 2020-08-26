@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
 class Geometry ()
   extends typings.pixiJs.PIXI.Geometry {
   def this(buffers: js.Array[typings.pixiJs.PIXI.Buffer]) = this()
+  def this(buffers: js.UndefOr[scala.Nothing], attributes: js.Any) = this()
   def this(buffers: js.Array[typings.pixiJs.PIXI.Buffer], attributes: js.Any) = this()
 }
 

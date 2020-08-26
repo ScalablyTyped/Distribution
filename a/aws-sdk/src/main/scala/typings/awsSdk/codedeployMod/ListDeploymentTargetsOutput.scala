@@ -18,11 +18,32 @@ trait ListDeploymentTargetsOutput extends js.Object {
 
 object ListDeploymentTargetsOutput {
   @scala.inline
-  def apply(nextToken: NextToken = null, targetIds: TargetIdList = null): ListDeploymentTargetsOutput = {
+  def apply(): ListDeploymentTargetsOutput = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (targetIds != null) __obj.updateDynamic("targetIds")(targetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeploymentTargetsOutput]
   }
+  @scala.inline
+  implicit class ListDeploymentTargetsOutputOps[Self <: ListDeploymentTargetsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setTargetIdsVarargs(value: TargetId*): Self = this.set("targetIds", js.Array(value :_*))
+    @scala.inline
+    def setTargetIds(value: TargetIdList): Self = this.set("targetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetIds: Self = this.set("targetIds", js.undefined)
+  }
+  
 }
 

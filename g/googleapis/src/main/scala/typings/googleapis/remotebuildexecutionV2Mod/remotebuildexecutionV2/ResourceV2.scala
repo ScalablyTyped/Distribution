@@ -27,6 +27,7 @@ class ResourceV2 protected () extends js.Object {
     */
   def getCapabilities(): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ServerCapabilities] = js.native
   def getCapabilities(callback: BodyResponseCallback[SchemaBuildBazelRemoteExecutionV2ServerCapabilities]): Unit = js.native
+  def getCapabilities(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ServerCapabilities] = js.native
   def getCapabilities(params: ParamsResourceV2Getcapabilities): GaxiosPromise[SchemaBuildBazelRemoteExecutionV2ServerCapabilities] = js.native
   def getCapabilities(
     params: ParamsResourceV2Getcapabilities,

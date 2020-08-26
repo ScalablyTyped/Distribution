@@ -28,6 +28,7 @@ class ResourceEnterprisesWebapps protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaWebApp] = js.native
   def create(callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWebApp] = js.native
   def create(params: ParamsResourceEnterprisesWebappsCreate): GaxiosPromise[SchemaWebApp] = js.native
   def create(params: ParamsResourceEnterprisesWebappsCreate, callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
   def create(
@@ -55,6 +56,7 @@ class ResourceEnterprisesWebapps protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceEnterprisesWebappsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceEnterprisesWebappsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -82,6 +84,7 @@ class ResourceEnterprisesWebapps protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaWebApp] = js.native
   def get(callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWebApp] = js.native
   def get(params: ParamsResourceEnterprisesWebappsGet): GaxiosPromise[SchemaWebApp] = js.native
   def get(params: ParamsResourceEnterprisesWebappsGet, callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
   def get(
@@ -111,6 +114,7 @@ class ResourceEnterprisesWebapps protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListWebAppsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListWebAppsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListWebAppsResponse] = js.native
   def list(params: ParamsResourceEnterprisesWebappsList): GaxiosPromise[SchemaListWebAppsResponse] = js.native
   def list(
     params: ParamsResourceEnterprisesWebappsList,
@@ -143,6 +147,7 @@ class ResourceEnterprisesWebapps protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaWebApp] = js.native
   def patch(callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWebApp] = js.native
   def patch(params: ParamsResourceEnterprisesWebappsPatch): GaxiosPromise[SchemaWebApp] = js.native
   def patch(params: ParamsResourceEnterprisesWebappsPatch, callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
   def patch(

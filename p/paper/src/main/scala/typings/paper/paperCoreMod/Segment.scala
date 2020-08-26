@@ -21,7 +21,11 @@ import scala.scalajs.js.annotation._
 class Segment ()
   extends typings.paper.paper.Segment {
   def this(point: Point) = this()
+  def this(point: js.UndefOr[scala.Nothing], handleIn: Point) = this()
   def this(point: Point, handleIn: Point) = this()
+  def this(point: js.UndefOr[scala.Nothing], handleIn: js.UndefOr[scala.Nothing], handleOut: Point) = this()
+  def this(point: js.UndefOr[scala.Nothing], handleIn: Point, handleOut: Point) = this()
+  def this(point: Point, handleIn: js.UndefOr[scala.Nothing], handleOut: Point) = this()
   def this(point: Point, handleIn: Point, handleOut: Point) = this()
 }
 

@@ -20,14 +20,32 @@ trait FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration extends
 
 object FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration {
   @scala.inline
-  def apply(
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    processors: js.Array[FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessor] = null
-  ): FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration = {
+  def apply(): FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (processors != null) __obj.updateDynamic("processors")(processors.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration]
   }
+  @scala.inline
+  implicit class FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationOps[Self <: FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setProcessorsVarargs(value: FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessor*): Self = this.set("processors", js.Array(value :_*))
+    @scala.inline
+    def setProcessors(value: js.Array[FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessor]): Self = this.set("processors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessors: Self = this.set("processors", js.undefined)
+  }
+  
 }
 

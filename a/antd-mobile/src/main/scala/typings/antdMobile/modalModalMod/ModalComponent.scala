@@ -22,12 +22,73 @@ abstract class ModalComponent[P, S] ()
 @js.native
 object ModalComponent extends js.Object {
   def alert(title: ReactNode, message: ReactNode): Close = js.native
+  def alert(title: ReactNode, message: ReactNode, actions: js.UndefOr[scala.Nothing], platform: String): Close = js.native
   def alert(title: ReactNode, message: ReactNode, actions: js.Array[Action[CSSProperties]]): Close = js.native
   def alert(title: ReactNode, message: ReactNode, actions: js.Array[Action[CSSProperties]], platform: String): Close = js.native
   def operation(): Close = js.native
+  def operation(actions: js.UndefOr[scala.Nothing], platform: String): Close = js.native
   def operation(actions: js.Array[Action[CSSProperties]]): Close = js.native
   def operation(actions: js.Array[Action[CSSProperties]], platform: String): Close = js.native
   def prompt(title: ReactNode, message: ReactNode, callbackOrActions: CallbackOrActions[CSSProperties]): Close = js.native
+  def prompt(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: js.UndefOr[scala.Nothing],
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.UndefOr[scala.Nothing],
+    platform: String
+  ): Close = js.native
+  def prompt(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: js.UndefOr[scala.Nothing],
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.Array[String]
+  ): Close = js.native
+  def prompt(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: js.UndefOr[scala.Nothing],
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.Array[String],
+    platform: String
+  ): Close = js.native
+  def prompt(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: js.UndefOr[scala.Nothing],
+    defaultValue: String
+  ): Close = js.native
+  def prompt(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: js.UndefOr[scala.Nothing],
+    defaultValue: String,
+    placeholders: js.UndefOr[scala.Nothing],
+    platform: String
+  ): Close = js.native
+  def prompt(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: js.UndefOr[scala.Nothing],
+    defaultValue: String,
+    placeholders: js.Array[String]
+  ): Close = js.native
+  def prompt(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: js.UndefOr[scala.Nothing],
+    defaultValue: String,
+    placeholders: js.Array[String],
+    platform: String
+  ): Close = js.native
   @JSName("prompt")
   def prompt_default(
     title: ReactNode,
@@ -41,7 +102,46 @@ object ModalComponent extends js.Object {
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
     `type`: typings.antdMobile.antdMobileStrings.default,
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.UndefOr[scala.Nothing],
+    platform: String
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_default(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: typings.antdMobile.antdMobileStrings.default,
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.Array[String]
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_default(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: typings.antdMobile.antdMobileStrings.default,
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.Array[String],
+    platform: String
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_default(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: typings.antdMobile.antdMobileStrings.default,
     defaultValue: String
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_default(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: typings.antdMobile.antdMobileStrings.default,
+    defaultValue: String,
+    placeholders: js.UndefOr[scala.Nothing],
+    platform: String
   ): Close = js.native
   @JSName("prompt")
   def prompt_default(
@@ -75,7 +175,46 @@ object ModalComponent extends js.Object {
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
     `type`: `login-password`,
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.UndefOr[scala.Nothing],
+    platform: String
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_loginpassword(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: `login-password`,
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.Array[String]
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_loginpassword(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: `login-password`,
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.Array[String],
+    platform: String
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_loginpassword(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: `login-password`,
     defaultValue: String
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_loginpassword(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: `login-password`,
+    defaultValue: String,
+    placeholders: js.UndefOr[scala.Nothing],
+    platform: String
   ): Close = js.native
   @JSName("prompt")
   def prompt_loginpassword(
@@ -109,7 +248,46 @@ object ModalComponent extends js.Object {
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
     `type`: `secure-text`,
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.UndefOr[scala.Nothing],
+    platform: String
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_securetext(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: `secure-text`,
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.Array[String]
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_securetext(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: `secure-text`,
+    defaultValue: js.UndefOr[scala.Nothing],
+    placeholders: js.Array[String],
+    platform: String
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_securetext(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: `secure-text`,
     defaultValue: String
+  ): Close = js.native
+  @JSName("prompt")
+  def prompt_securetext(
+    title: ReactNode,
+    message: ReactNode,
+    callbackOrActions: CallbackOrActions[CSSProperties],
+    `type`: `secure-text`,
+    defaultValue: String,
+    placeholders: js.UndefOr[scala.Nothing],
+    platform: String
   ): Close = js.native
   @JSName("prompt")
   def prompt_securetext(

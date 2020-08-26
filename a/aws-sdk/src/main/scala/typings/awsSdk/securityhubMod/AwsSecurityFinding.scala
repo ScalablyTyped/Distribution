@@ -55,6 +55,10 @@ trait AwsSecurityFinding extends js.Object {
     */
   var Network: js.UndefOr[typings.awsSdk.securityhubMod.Network] = js.native
   /**
+    * Provides information about a network path that is relevant to a finding. Each entry under NetworkPath represents a component of that path.
+    */
+  var NetworkPath: js.UndefOr[NetworkPathList] = js.native
+  /**
     * A user-defined note added to a finding.
     */
   var Note: js.UndefOr[typings.awsSdk.securityhubMod.Note] = js.native
@@ -123,6 +127,10 @@ trait AwsSecurityFinding extends js.Object {
     */
   var VerificationState: js.UndefOr[typings.awsSdk.securityhubMod.VerificationState] = js.native
   /**
+    * Provides a list of vulnerabilities associated with the findings.
+    */
+  var Vulnerabilities: js.UndefOr[VulnerabilityList] = js.native
+  /**
     * Provides information about the status of the investigation into a finding.
     */
   var Workflow: js.UndefOr[typings.awsSdk.securityhubMod.Workflow] = js.native
@@ -146,48 +154,145 @@ object AwsSecurityFinding {
     Severity: Severity,
     Title: NonEmptyString,
     Types: TypeList,
-    UpdatedAt: NonEmptyString,
-    Compliance: Compliance = null,
-    Confidence: js.UndefOr[Integer] = js.undefined,
-    Criticality: js.UndefOr[Integer] = js.undefined,
-    FirstObservedAt: NonEmptyString = null,
-    LastObservedAt: NonEmptyString = null,
-    Malware: MalwareList = null,
-    Network: Network = null,
-    Note: Note = null,
-    Process: ProcessDetails = null,
-    ProductFields: FieldMap = null,
-    RecordState: RecordState = null,
-    RelatedFindings: RelatedFindingList = null,
-    Remediation: Remediation = null,
-    SourceUrl: NonEmptyString = null,
-    ThreatIntelIndicators: ThreatIntelIndicatorList = null,
-    UserDefinedFields: FieldMap = null,
-    VerificationState: VerificationState = null,
-    Workflow: Workflow = null,
-    WorkflowState: WorkflowState = null
+    UpdatedAt: NonEmptyString
   ): AwsSecurityFinding = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], GeneratorId = GeneratorId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], ProductArn = ProductArn.asInstanceOf[js.Any], Resources = Resources.asInstanceOf[js.Any], SchemaVersion = SchemaVersion.asInstanceOf[js.Any], Severity = Severity.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
-    if (Compliance != null) __obj.updateDynamic("Compliance")(Compliance.asInstanceOf[js.Any])
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Criticality)) __obj.updateDynamic("Criticality")(Criticality.get.asInstanceOf[js.Any])
-    if (FirstObservedAt != null) __obj.updateDynamic("FirstObservedAt")(FirstObservedAt.asInstanceOf[js.Any])
-    if (LastObservedAt != null) __obj.updateDynamic("LastObservedAt")(LastObservedAt.asInstanceOf[js.Any])
-    if (Malware != null) __obj.updateDynamic("Malware")(Malware.asInstanceOf[js.Any])
-    if (Network != null) __obj.updateDynamic("Network")(Network.asInstanceOf[js.Any])
-    if (Note != null) __obj.updateDynamic("Note")(Note.asInstanceOf[js.Any])
-    if (Process != null) __obj.updateDynamic("Process")(Process.asInstanceOf[js.Any])
-    if (ProductFields != null) __obj.updateDynamic("ProductFields")(ProductFields.asInstanceOf[js.Any])
-    if (RecordState != null) __obj.updateDynamic("RecordState")(RecordState.asInstanceOf[js.Any])
-    if (RelatedFindings != null) __obj.updateDynamic("RelatedFindings")(RelatedFindings.asInstanceOf[js.Any])
-    if (Remediation != null) __obj.updateDynamic("Remediation")(Remediation.asInstanceOf[js.Any])
-    if (SourceUrl != null) __obj.updateDynamic("SourceUrl")(SourceUrl.asInstanceOf[js.Any])
-    if (ThreatIntelIndicators != null) __obj.updateDynamic("ThreatIntelIndicators")(ThreatIntelIndicators.asInstanceOf[js.Any])
-    if (UserDefinedFields != null) __obj.updateDynamic("UserDefinedFields")(UserDefinedFields.asInstanceOf[js.Any])
-    if (VerificationState != null) __obj.updateDynamic("VerificationState")(VerificationState.asInstanceOf[js.Any])
-    if (Workflow != null) __obj.updateDynamic("Workflow")(Workflow.asInstanceOf[js.Any])
-    if (WorkflowState != null) __obj.updateDynamic("WorkflowState")(WorkflowState.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsSecurityFinding]
   }
+  @scala.inline
+  implicit class AwsSecurityFindingOps[Self <: AwsSecurityFinding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccountId(value: NonEmptyString): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreatedAt(value: NonEmptyString): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: NonEmptyString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGeneratorId(value: NonEmptyString): Self = this.set("GeneratorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: NonEmptyString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProductArn(value: NonEmptyString): Self = this.set("ProductArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourcesVarargs(value: Resource*): Self = this.set("Resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: ResourceList): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchemaVersion(value: NonEmptyString): Self = this.set("SchemaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSeverity(value: Severity): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: NonEmptyString): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypesVarargs(value: NonEmptyString*): Self = this.set("Types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: TypeList): Self = this.set("Types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatedAt(value: NonEmptyString): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompliance(value: Compliance): Self = this.set("Compliance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompliance: Self = this.set("Compliance", js.undefined)
+    @scala.inline
+    def setConfidence(value: Integer): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    @scala.inline
+    def setCriticality(value: Integer): Self = this.set("Criticality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriticality: Self = this.set("Criticality", js.undefined)
+    @scala.inline
+    def setFirstObservedAt(value: NonEmptyString): Self = this.set("FirstObservedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstObservedAt: Self = this.set("FirstObservedAt", js.undefined)
+    @scala.inline
+    def setLastObservedAt(value: NonEmptyString): Self = this.set("LastObservedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastObservedAt: Self = this.set("LastObservedAt", js.undefined)
+    @scala.inline
+    def setMalwareVarargs(value: Malware*): Self = this.set("Malware", js.Array(value :_*))
+    @scala.inline
+    def setMalware(value: MalwareList): Self = this.set("Malware", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMalware: Self = this.set("Malware", js.undefined)
+    @scala.inline
+    def setNetwork(value: Network): Self = this.set("Network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("Network", js.undefined)
+    @scala.inline
+    def setNetworkPathVarargs(value: NetworkPathComponent*): Self = this.set("NetworkPath", js.Array(value :_*))
+    @scala.inline
+    def setNetworkPath(value: NetworkPathList): Self = this.set("NetworkPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkPath: Self = this.set("NetworkPath", js.undefined)
+    @scala.inline
+    def setNote(value: Note): Self = this.set("Note", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNote: Self = this.set("Note", js.undefined)
+    @scala.inline
+    def setProcess(value: ProcessDetails): Self = this.set("Process", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcess: Self = this.set("Process", js.undefined)
+    @scala.inline
+    def setProductFields(value: FieldMap): Self = this.set("ProductFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductFields: Self = this.set("ProductFields", js.undefined)
+    @scala.inline
+    def setRecordState(value: RecordState): Self = this.set("RecordState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordState: Self = this.set("RecordState", js.undefined)
+    @scala.inline
+    def setRelatedFindingsVarargs(value: RelatedFinding*): Self = this.set("RelatedFindings", js.Array(value :_*))
+    @scala.inline
+    def setRelatedFindings(value: RelatedFindingList): Self = this.set("RelatedFindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedFindings: Self = this.set("RelatedFindings", js.undefined)
+    @scala.inline
+    def setRemediation(value: Remediation): Self = this.set("Remediation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemediation: Self = this.set("Remediation", js.undefined)
+    @scala.inline
+    def setSourceUrl(value: NonEmptyString): Self = this.set("SourceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceUrl: Self = this.set("SourceUrl", js.undefined)
+    @scala.inline
+    def setThreatIntelIndicatorsVarargs(value: ThreatIntelIndicator*): Self = this.set("ThreatIntelIndicators", js.Array(value :_*))
+    @scala.inline
+    def setThreatIntelIndicators(value: ThreatIntelIndicatorList): Self = this.set("ThreatIntelIndicators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatIntelIndicators: Self = this.set("ThreatIntelIndicators", js.undefined)
+    @scala.inline
+    def setUserDefinedFields(value: FieldMap): Self = this.set("UserDefinedFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserDefinedFields: Self = this.set("UserDefinedFields", js.undefined)
+    @scala.inline
+    def setVerificationState(value: VerificationState): Self = this.set("VerificationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerificationState: Self = this.set("VerificationState", js.undefined)
+    @scala.inline
+    def setVulnerabilitiesVarargs(value: Vulnerability*): Self = this.set("Vulnerabilities", js.Array(value :_*))
+    @scala.inline
+    def setVulnerabilities(value: VulnerabilityList): Self = this.set("Vulnerabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVulnerabilities: Self = this.set("Vulnerabilities", js.undefined)
+    @scala.inline
+    def setWorkflow(value: Workflow): Self = this.set("Workflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflow: Self = this.set("Workflow", js.undefined)
+    @scala.inline
+    def setWorkflowState(value: WorkflowState): Self = this.set("WorkflowState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowState: Self = this.set("WorkflowState", js.undefined)
+  }
+  
 }
 

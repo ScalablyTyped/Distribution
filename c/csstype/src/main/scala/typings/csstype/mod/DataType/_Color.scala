@@ -1,0 +1,119 @@
+package typings.csstype.mod.DataType
+
+import typings.csstype.mod.Property._BackgroundColor
+import typings.csstype.mod.Property._Border
+import typings.csstype.mod.Property._BorderBlock
+import typings.csstype.mod.Property._BorderBlockColor
+import typings.csstype.mod.Property._BorderBlockEnd
+import typings.csstype.mod.Property._BorderBlockEndColor
+import typings.csstype.mod.Property._BorderBlockStart
+import typings.csstype.mod.Property._BorderBlockStartColor
+import typings.csstype.mod.Property._BorderBottom
+import typings.csstype.mod.Property._BorderBottomColor
+import typings.csstype.mod.Property._BorderColor
+import typings.csstype.mod.Property._BorderInline
+import typings.csstype.mod.Property._BorderInlineColor
+import typings.csstype.mod.Property._BorderInlineEnd
+import typings.csstype.mod.Property._BorderInlineEndColor
+import typings.csstype.mod.Property._BorderInlineStart
+import typings.csstype.mod.Property._BorderInlineStartColor
+import typings.csstype.mod.Property._BorderLeft
+import typings.csstype.mod.Property._BorderLeftColor
+import typings.csstype.mod.Property._BorderRight
+import typings.csstype.mod.Property._BorderRightColor
+import typings.csstype.mod.Property._BorderTop
+import typings.csstype.mod.Property._BorderTopColor
+import typings.csstype.mod.Property._CaretColor
+import typings.csstype.mod.Property._ColumnRule
+import typings.csstype.mod.Property._ColumnRuleColor
+import typings.csstype.mod.Property._FloodColor
+import typings.csstype.mod.Property._LightingColor
+import typings.csstype.mod.Property._MozBorderBottomColors
+import typings.csstype.mod.Property._MozBorderLeftColors
+import typings.csstype.mod.Property._MozBorderRightColors
+import typings.csstype.mod.Property._MozBorderTopColors
+import typings.csstype.mod.Property._MsScrollbar3dlightColor
+import typings.csstype.mod.Property._MsScrollbarArrowColor
+import typings.csstype.mod.Property._MsScrollbarBaseColor
+import typings.csstype.mod.Property._MsScrollbarDarkshadowColor
+import typings.csstype.mod.Property._MsScrollbarFaceColor
+import typings.csstype.mod.Property._MsScrollbarHighlightColor
+import typings.csstype.mod.Property._MsScrollbarShadowColor
+import typings.csstype.mod.Property._MsScrollbarTrackColor
+import typings.csstype.mod.Property._Outline
+import typings.csstype.mod.Property._OutlineColor
+import typings.csstype.mod.Property._ScrollbarColor
+import typings.csstype.mod.Property._StopColor
+import typings.csstype.mod.Property._TextDecoration
+import typings.csstype.mod.Property._TextDecorationColor
+import typings.csstype.mod.Property._TextEmphasis
+import typings.csstype.mod.Property._TextEmphasisColor
+import typings.csstype.mod.Property._WebkitBorderBefore
+import typings.csstype.mod.Property._WebkitBorderBeforeColor
+import typings.csstype.mod.Property._WebkitTapHighlightColor
+import typings.csstype.mod.Property._WebkitTextFillColor
+import typings.csstype.mod.Property._WebkitTextStroke
+import typings.csstype.mod.Property._WebkitTextStrokeColor
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait _Color
+  extends _Paint
+     with _BackgroundColor
+     with _Border[js.Any]
+     with _BorderBlock[js.Any]
+     with _BorderBlockColor
+     with _BorderBlockEnd[js.Any]
+     with _BorderBlockEndColor
+     with _BorderBlockStart[js.Any]
+     with _BorderBlockStartColor
+     with _BorderBottom[js.Any]
+     with _BorderBottomColor
+     with _BorderColor
+     with _BorderInline[js.Any]
+     with _BorderInlineColor
+     with _BorderInlineEnd[js.Any]
+     with _BorderInlineEndColor
+     with _BorderInlineStart[js.Any]
+     with _BorderInlineStartColor
+     with _BorderLeft[js.Any]
+     with _BorderLeftColor
+     with _BorderRight[js.Any]
+     with _BorderRightColor
+     with _BorderTop[js.Any]
+     with _BorderTopColor
+     with _CaretColor
+     with typings.csstype.mod.Property._Color
+     with _ColumnRule[js.Any]
+     with _ColumnRuleColor
+     with _FinalBgLayer[js.Any]
+     with _FloodColor
+     with _LightingColor
+     with _MozBorderBottomColors
+     with _MozBorderLeftColors
+     with _MozBorderRightColors
+     with _MozBorderTopColors
+     with _MsScrollbar3dlightColor
+     with _MsScrollbarArrowColor
+     with _MsScrollbarBaseColor
+     with _MsScrollbarDarkshadowColor
+     with _MsScrollbarFaceColor
+     with _MsScrollbarHighlightColor
+     with _MsScrollbarShadowColor
+     with _MsScrollbarTrackColor
+     with _Outline[js.Any]
+     with _OutlineColor
+     with _ScrollbarColor
+     with _StopColor
+     with _TextDecoration[js.Any]
+     with _TextDecorationColor
+     with _TextEmphasis
+     with _TextEmphasisColor
+     with _WebkitBorderBefore[js.Any]
+     with _WebkitBorderBeforeColor
+     with _WebkitTapHighlightColor
+     with _WebkitTextFillColor
+     with _WebkitTextStroke[js.Any]
+     with _WebkitTextStrokeColor
+

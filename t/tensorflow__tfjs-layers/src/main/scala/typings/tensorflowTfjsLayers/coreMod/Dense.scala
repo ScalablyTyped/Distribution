@@ -14,13 +14,13 @@ class Dense protected () extends Layer {
   val DEFAULT_KERNEL_INITIALIZER: InitializerIdentifier = js.native
   var activation: js.Any = js.native
   var bias: js.Any = js.native
-  val biasConstraint: js.UndefOr[js.Any] = js.native
+  val biasConstraint: js.Any = js.native
   var biasInitializer: js.Any = js.native
-  val biasRegularizer: js.UndefOr[js.Any] = js.native
+  val biasRegularizer: js.Any = js.native
   var kernel: js.Any = js.native
-  val kernelConstraint: js.UndefOr[js.Any] = js.native
+  val kernelConstraint: js.Any = js.native
   var kernelInitializer: js.Any = js.native
-  val kernelRegularizer: js.UndefOr[js.Any] = js.native
+  val kernelRegularizer: js.Any = js.native
   var units: js.Any = js.native
   var useBias: js.Any = js.native
 }

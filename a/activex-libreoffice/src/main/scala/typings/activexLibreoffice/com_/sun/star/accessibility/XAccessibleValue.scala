@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * scroll bars and spin boxes. This interface lets you access the value and its upper and lower bounds.
   * @since OOo 1.1.2
   */
+@js.native
 trait XAccessibleValue extends XInterface {
   /**
     * Returns the value of this object as a number.
@@ -20,42 +21,42 @@ trait XAccessibleValue extends XInterface {
     * The exact return type is implementation dependent. Typical types are long and double.
     * @returns Returns the current value represented by this object.
     */
-  var CurrentValue: js.Any
+  var CurrentValue: js.Any = js.native
   /**
     * Returns the maximal value that can be represented by this object.
     *
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the maximal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  val MaximumValue: js.Any
+  val MaximumValue: js.Any = js.native
   /**
     * Returns the minimal value that can be represented by this object.
     *
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the minimal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  val MinimumValue: js.Any
+  val MinimumValue: js.Any = js.native
   /**
     * Returns the value of this object as a number.
     *
     * The exact return type is implementation dependent. Typical types are long and double.
     * @returns Returns the current value represented by this object.
     */
-  def getCurrentValue(): js.Any
+  def getCurrentValue(): js.Any = js.native
   /**
     * Returns the maximal value that can be represented by this object.
     *
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the maximal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  def getMaximumValue(): js.Any
+  def getMaximumValue(): js.Any = js.native
   /**
     * Returns the minimal value that can be represented by this object.
     *
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the minimal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  def getMinimumValue(): js.Any
+  def getMinimumValue(): js.Any = js.native
   /**
     * Sets the value of this object to the given number.
     *
@@ -65,7 +66,7 @@ trait XAccessibleValue extends XInterface {
     * @param aNumber The new value represented by this object. The set of admissible types for this argument is implementation dependent.
     * @returns Returns `TRUE` if the new value could successfully be set and `FALSE` otherwise.
     */
-  def setCurrentValue(aNumber: js.Any): Boolean
+  def setCurrentValue(aNumber: js.Any): Boolean = js.native
 }
 
 object XAccessibleValue {
@@ -85,5 +86,32 @@ object XAccessibleValue {
     val __obj = js.Dynamic.literal(CurrentValue = CurrentValue.asInstanceOf[js.Any], MaximumValue = MaximumValue.asInstanceOf[js.Any], MinimumValue = MinimumValue.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getCurrentValue = js.Any.fromFunction0(getCurrentValue), getMaximumValue = js.Any.fromFunction0(getMaximumValue), getMinimumValue = js.Any.fromFunction0(getMinimumValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCurrentValue = js.Any.fromFunction1(setCurrentValue))
     __obj.asInstanceOf[XAccessibleValue]
   }
+  @scala.inline
+  implicit class XAccessibleValueOps[Self <: XAccessibleValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentValue(value: js.Any): Self = this.set("CurrentValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaximumValue(value: js.Any): Self = this.set("MaximumValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinimumValue(value: js.Any): Self = this.set("MinimumValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetCurrentValue(value: () => js.Any): Self = this.set("getCurrentValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetMaximumValue(value: () => js.Any): Self = this.set("getMaximumValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetMinimumValue(value: () => js.Any): Self = this.set("getMinimumValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetCurrentValue(value: js.Any => Boolean): Self = this.set("setCurrentValue", js.Any.fromFunction1(value))
+  }
+  
 }
 

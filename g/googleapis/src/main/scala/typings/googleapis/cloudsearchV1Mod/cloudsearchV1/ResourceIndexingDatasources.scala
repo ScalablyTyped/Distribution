@@ -29,6 +29,7 @@ class ResourceIndexingDatasources protected () extends js.Object {
     */
   def deleteSchema(): GaxiosPromise[SchemaOperation] = js.native
   def deleteSchema(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def deleteSchema(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deleteSchema(params: ParamsResourceIndexingDatasourcesDeleteschema): GaxiosPromise[SchemaOperation] = js.native
   def deleteSchema(
     params: ParamsResourceIndexingDatasourcesDeleteschema,
@@ -60,6 +61,7 @@ class ResourceIndexingDatasources protected () extends js.Object {
     */
   def getSchema(): GaxiosPromise[SchemaSchema] = js.native
   def getSchema(callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
+  def getSchema(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSchema] = js.native
   def getSchema(params: ParamsResourceIndexingDatasourcesGetschema): GaxiosPromise[SchemaSchema] = js.native
   def getSchema(params: ParamsResourceIndexingDatasourcesGetschema, callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
   def getSchema(
@@ -88,6 +90,7 @@ class ResourceIndexingDatasources protected () extends js.Object {
     */
   def updateSchema(): GaxiosPromise[SchemaOperation] = js.native
   def updateSchema(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def updateSchema(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateSchema(params: ParamsResourceIndexingDatasourcesUpdateschema): GaxiosPromise[SchemaOperation] = js.native
   def updateSchema(
     params: ParamsResourceIndexingDatasourcesUpdateschema,

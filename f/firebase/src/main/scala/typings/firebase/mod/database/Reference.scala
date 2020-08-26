@@ -157,6 +157,7 @@ trait Reference extends Query {
     *   used immediately as the `Reference` to the child location.
     */
   def push(): ThenableReference = js.native
+  def push(value: js.UndefOr[scala.Nothing], onComplete: js.Function1[/* a */ Error | Null, _]): ThenableReference = js.native
   def push(value: js.Any): ThenableReference = js.native
   def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): ThenableReference = js.native
   /**
@@ -261,7 +262,6 @@ trait Reference extends Query {
   def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
   def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
   def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-  def setWithPriority(newVal: js.Any): js.Promise[_] = js.native
   /**
     * Writes data the Database location. Like `set()` but also specifies the
     * priority for that data.
@@ -272,6 +272,7 @@ trait Reference extends Query {
     *  https://firebase.google.com/docs/database/web/lists-of-data#sorting_and_filtering_data
     *  Sorting and filtering data}).
     */
+  def setWithPriority(newVal: js.Any): js.Promise[_] = js.native
   def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[_] = js.native
   def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
   def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[_] = js.native
@@ -363,6 +364,11 @@ trait Reference extends Query {
     *   callback to handle success and failure.
     */
   def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[_] = js.native
+  def transaction(
+    transactionUpdate: js.Function1[/* a */ js.Any, _],
+    onComplete: js.UndefOr[scala.Nothing],
+    applyLocally: Boolean
+  ): js.Promise[_] = js.native
   def transaction(
     transactionUpdate: js.Function1[/* a */ js.Any, _],
     onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, _]

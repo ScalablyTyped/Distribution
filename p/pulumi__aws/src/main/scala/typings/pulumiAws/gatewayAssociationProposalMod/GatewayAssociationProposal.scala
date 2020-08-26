@@ -47,6 +47,8 @@ class GatewayAssociationProposal protected () extends CustomResource {
   val dxGatewayOwnerAccountId: Output_[String] = js.native
   /**
     * *Deprecated:* Use `associatedGatewayId` instead. Virtual Gateway identifier to associate with the Direct Connect Gateway.
+    *
+    * @deprecated use 'associated_gateway_id' argument instead
     */
   val vpnGatewayId: Output_[js.UndefOr[String]] = js.native
 }
@@ -62,8 +64,10 @@ object GatewayAssociationProposal extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): GatewayAssociationProposal = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GatewayAssociationProposal = js.native
   def get(name: String, id: Input[ID], state: GatewayAssociationProposalState): GatewayAssociationProposal = js.native
   def get(name: String, id: Input[ID], state: GatewayAssociationProposalState, opts: CustomResourceOptions): GatewayAssociationProposal = js.native
   /**

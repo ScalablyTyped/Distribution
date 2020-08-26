@@ -11,8 +11,8 @@ A node.js module for parsing form data, especially file uploads.
 | Full name          | formidable |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 857 |
-| # downloads        | 119392809 |
+| # dependents       | 861 |
+| # downloads        | 121106375 |
 | # stars            | 244 |
 
 ## Links

@@ -34,21 +34,48 @@ trait CreateAssetModelRequest extends js.Object {
 
 object CreateAssetModelRequest {
   @scala.inline
-  def apply(
-    assetModelName: Name,
-    assetModelDescription: Description = null,
-    assetModelHierarchies: AssetModelHierarchyDefinitions = null,
-    assetModelProperties: AssetModelPropertyDefinitions = null,
-    clientToken: ClientToken = null,
-    tags: TagMap = null
-  ): CreateAssetModelRequest = {
+  def apply(assetModelName: Name): CreateAssetModelRequest = {
     val __obj = js.Dynamic.literal(assetModelName = assetModelName.asInstanceOf[js.Any])
-    if (assetModelDescription != null) __obj.updateDynamic("assetModelDescription")(assetModelDescription.asInstanceOf[js.Any])
-    if (assetModelHierarchies != null) __obj.updateDynamic("assetModelHierarchies")(assetModelHierarchies.asInstanceOf[js.Any])
-    if (assetModelProperties != null) __obj.updateDynamic("assetModelProperties")(assetModelProperties.asInstanceOf[js.Any])
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAssetModelRequest]
   }
+  @scala.inline
+  implicit class CreateAssetModelRequestOps[Self <: CreateAssetModelRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetModelName(value: Name): Self = this.set("assetModelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssetModelDescription(value: Description): Self = this.set("assetModelDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetModelDescription: Self = this.set("assetModelDescription", js.undefined)
+    @scala.inline
+    def setAssetModelHierarchiesVarargs(value: AssetModelHierarchyDefinition*): Self = this.set("assetModelHierarchies", js.Array(value :_*))
+    @scala.inline
+    def setAssetModelHierarchies(value: AssetModelHierarchyDefinitions): Self = this.set("assetModelHierarchies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetModelHierarchies: Self = this.set("assetModelHierarchies", js.undefined)
+    @scala.inline
+    def setAssetModelPropertiesVarargs(value: AssetModelPropertyDefinition*): Self = this.set("assetModelProperties", js.Array(value :_*))
+    @scala.inline
+    def setAssetModelProperties(value: AssetModelPropertyDefinitions): Self = this.set("assetModelProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetModelProperties: Self = this.set("assetModelProperties", js.undefined)
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

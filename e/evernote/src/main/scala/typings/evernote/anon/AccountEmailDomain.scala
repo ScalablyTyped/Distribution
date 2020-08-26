@@ -4,57 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountEmailDomain extends js.Object {
-  var accountEmailDomain: js.UndefOr[String] = js.undefined
-  var enableFacebookSharing: js.UndefOr[Boolean] = js.undefined
-  var enableGiftSubscriptions: js.UndefOr[Boolean] = js.undefined
-  var enableGoogle: js.UndefOr[Boolean] = js.undefined
-  var enableLinkedInSharing: js.UndefOr[Boolean] = js.undefined
-  var enablePublicNotebooks: js.UndefOr[Boolean] = js.undefined
-  var enableSharedNotebooks: js.UndefOr[Boolean] = js.undefined
-  var enableSingleNoteSharing: js.UndefOr[Boolean] = js.undefined
-  var enableSponsoredAccounts: js.UndefOr[Boolean] = js.undefined
-  var enableSupportTickets: js.UndefOr[Boolean] = js.undefined
-  var enableTwitterSharing: js.UndefOr[Boolean] = js.undefined
-  var marketingUrl: js.UndefOr[String] = js.undefined
-  var serviceHost: js.UndefOr[String] = js.undefined
-  var supportUrl: js.UndefOr[String] = js.undefined
+  var accountEmailDomain: js.UndefOr[String] = js.native
+  var enableFacebookSharing: js.UndefOr[Boolean] = js.native
+  var enableGiftSubscriptions: js.UndefOr[Boolean] = js.native
+  var enableGoogle: js.UndefOr[Boolean] = js.native
+  var enableLinkedInSharing: js.UndefOr[Boolean] = js.native
+  var enablePublicNotebooks: js.UndefOr[Boolean] = js.native
+  var enableSharedNotebooks: js.UndefOr[Boolean] = js.native
+  var enableSingleNoteSharing: js.UndefOr[Boolean] = js.native
+  var enableSponsoredAccounts: js.UndefOr[Boolean] = js.native
+  var enableSupportTickets: js.UndefOr[Boolean] = js.native
+  var enableTwitterSharing: js.UndefOr[Boolean] = js.native
+  var marketingUrl: js.UndefOr[String] = js.native
+  var serviceHost: js.UndefOr[String] = js.native
+  var supportUrl: js.UndefOr[String] = js.native
 }
 
 object AccountEmailDomain {
   @scala.inline
-  def apply(
-    accountEmailDomain: String = null,
-    enableFacebookSharing: js.UndefOr[Boolean] = js.undefined,
-    enableGiftSubscriptions: js.UndefOr[Boolean] = js.undefined,
-    enableGoogle: js.UndefOr[Boolean] = js.undefined,
-    enableLinkedInSharing: js.UndefOr[Boolean] = js.undefined,
-    enablePublicNotebooks: js.UndefOr[Boolean] = js.undefined,
-    enableSharedNotebooks: js.UndefOr[Boolean] = js.undefined,
-    enableSingleNoteSharing: js.UndefOr[Boolean] = js.undefined,
-    enableSponsoredAccounts: js.UndefOr[Boolean] = js.undefined,
-    enableSupportTickets: js.UndefOr[Boolean] = js.undefined,
-    enableTwitterSharing: js.UndefOr[Boolean] = js.undefined,
-    marketingUrl: String = null,
-    serviceHost: String = null,
-    supportUrl: String = null
-  ): AccountEmailDomain = {
+  def apply(): AccountEmailDomain = {
     val __obj = js.Dynamic.literal()
-    if (accountEmailDomain != null) __obj.updateDynamic("accountEmailDomain")(accountEmailDomain.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFacebookSharing)) __obj.updateDynamic("enableFacebookSharing")(enableFacebookSharing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGiftSubscriptions)) __obj.updateDynamic("enableGiftSubscriptions")(enableGiftSubscriptions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGoogle)) __obj.updateDynamic("enableGoogle")(enableGoogle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLinkedInSharing)) __obj.updateDynamic("enableLinkedInSharing")(enableLinkedInSharing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePublicNotebooks)) __obj.updateDynamic("enablePublicNotebooks")(enablePublicNotebooks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSharedNotebooks)) __obj.updateDynamic("enableSharedNotebooks")(enableSharedNotebooks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSingleNoteSharing)) __obj.updateDynamic("enableSingleNoteSharing")(enableSingleNoteSharing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSponsoredAccounts)) __obj.updateDynamic("enableSponsoredAccounts")(enableSponsoredAccounts.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSupportTickets)) __obj.updateDynamic("enableSupportTickets")(enableSupportTickets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTwitterSharing)) __obj.updateDynamic("enableTwitterSharing")(enableTwitterSharing.get.asInstanceOf[js.Any])
-    if (marketingUrl != null) __obj.updateDynamic("marketingUrl")(marketingUrl.asInstanceOf[js.Any])
-    if (serviceHost != null) __obj.updateDynamic("serviceHost")(serviceHost.asInstanceOf[js.Any])
-    if (supportUrl != null) __obj.updateDynamic("supportUrl")(supportUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountEmailDomain]
   }
+  @scala.inline
+  implicit class AccountEmailDomainOps[Self <: AccountEmailDomain] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountEmailDomain(value: String): Self = this.set("accountEmailDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountEmailDomain: Self = this.set("accountEmailDomain", js.undefined)
+    @scala.inline
+    def setEnableFacebookSharing(value: Boolean): Self = this.set("enableFacebookSharing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableFacebookSharing: Self = this.set("enableFacebookSharing", js.undefined)
+    @scala.inline
+    def setEnableGiftSubscriptions(value: Boolean): Self = this.set("enableGiftSubscriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableGiftSubscriptions: Self = this.set("enableGiftSubscriptions", js.undefined)
+    @scala.inline
+    def setEnableGoogle(value: Boolean): Self = this.set("enableGoogle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableGoogle: Self = this.set("enableGoogle", js.undefined)
+    @scala.inline
+    def setEnableLinkedInSharing(value: Boolean): Self = this.set("enableLinkedInSharing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLinkedInSharing: Self = this.set("enableLinkedInSharing", js.undefined)
+    @scala.inline
+    def setEnablePublicNotebooks(value: Boolean): Self = this.set("enablePublicNotebooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePublicNotebooks: Self = this.set("enablePublicNotebooks", js.undefined)
+    @scala.inline
+    def setEnableSharedNotebooks(value: Boolean): Self = this.set("enableSharedNotebooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSharedNotebooks: Self = this.set("enableSharedNotebooks", js.undefined)
+    @scala.inline
+    def setEnableSingleNoteSharing(value: Boolean): Self = this.set("enableSingleNoteSharing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSingleNoteSharing: Self = this.set("enableSingleNoteSharing", js.undefined)
+    @scala.inline
+    def setEnableSponsoredAccounts(value: Boolean): Self = this.set("enableSponsoredAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSponsoredAccounts: Self = this.set("enableSponsoredAccounts", js.undefined)
+    @scala.inline
+    def setEnableSupportTickets(value: Boolean): Self = this.set("enableSupportTickets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSupportTickets: Self = this.set("enableSupportTickets", js.undefined)
+    @scala.inline
+    def setEnableTwitterSharing(value: Boolean): Self = this.set("enableTwitterSharing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableTwitterSharing: Self = this.set("enableTwitterSharing", js.undefined)
+    @scala.inline
+    def setMarketingUrl(value: String): Self = this.set("marketingUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarketingUrl: Self = this.set("marketingUrl", js.undefined)
+    @scala.inline
+    def setServiceHost(value: String): Self = this.set("serviceHost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceHost: Self = this.set("serviceHost", js.undefined)
+    @scala.inline
+    def setSupportUrl(value: String): Self = this.set("supportUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportUrl: Self = this.set("supportUrl", js.undefined)
+  }
+  
 }
 

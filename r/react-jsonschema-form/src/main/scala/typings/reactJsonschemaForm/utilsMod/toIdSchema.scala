@@ -19,5 +19,12 @@ object toIdSchema extends js.Object {
     formData: T,
     idPredix: String
   ): IdSchema[_] | js.Array[IdSchema[_]] = js.native
+  def apply[T](
+    schema: JSONSchema6Definition,
+    id: String,
+    definitions: StringDictionary[js.Any],
+    formData: js.UndefOr[scala.Nothing],
+    idPredix: String
+  ): IdSchema[_] | js.Array[IdSchema[_]] = js.native
 }
 

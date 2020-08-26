@@ -4,69 +4,118 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NumericTextBoxOptions extends js.Object {
-  var change: js.UndefOr[js.Function1[/* e */ NumericTextBoxChangeEvent, Unit]] = js.undefined
-  var culture: js.UndefOr[String] = js.undefined
-  var decimals: js.UndefOr[Double] = js.undefined
-  var downArrowText: js.UndefOr[String] = js.undefined
-  var factor: js.UndefOr[Double] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[String | js.Function | NumericTextBoxLabel] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var restrictDecimals: js.UndefOr[Boolean] = js.undefined
-  var round: js.UndefOr[Boolean] = js.undefined
-  var spin: js.UndefOr[js.Function1[/* e */ NumericTextBoxSpinEvent, Unit]] = js.undefined
-  var spinners: js.UndefOr[Boolean] = js.undefined
-  var step: js.UndefOr[Double] = js.undefined
-  var upArrowText: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  var change: js.UndefOr[js.Function1[/* e */ NumericTextBoxChangeEvent, Unit]] = js.native
+  var culture: js.UndefOr[String] = js.native
+  var decimals: js.UndefOr[Double] = js.native
+  var downArrowText: js.UndefOr[String] = js.native
+  var factor: js.UndefOr[Double] = js.native
+  var format: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String | js.Function | NumericTextBoxLabel] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var restrictDecimals: js.UndefOr[Boolean] = js.native
+  var round: js.UndefOr[Boolean] = js.native
+  var spin: js.UndefOr[js.Function1[/* e */ NumericTextBoxSpinEvent, Unit]] = js.native
+  var spinners: js.UndefOr[Boolean] = js.native
+  var step: js.UndefOr[Double] = js.native
+  var upArrowText: js.UndefOr[String] = js.native
+  var value: js.UndefOr[Double] = js.native
 }
 
 object NumericTextBoxOptions {
   @scala.inline
-  def apply(
-    change: /* e */ NumericTextBoxChangeEvent => Unit = null,
-    culture: String = null,
-    decimals: js.UndefOr[Double] = js.undefined,
-    downArrowText: String = null,
-    factor: js.UndefOr[Double] = js.undefined,
-    format: String = null,
-    label: String | js.Function | NumericTextBoxLabel = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    placeholder: String = null,
-    restrictDecimals: js.UndefOr[Boolean] = js.undefined,
-    round: js.UndefOr[Boolean] = js.undefined,
-    spin: /* e */ NumericTextBoxSpinEvent => Unit = null,
-    spinners: js.UndefOr[Boolean] = js.undefined,
-    step: js.UndefOr[Double] = js.undefined,
-    upArrowText: String = null,
-    value: js.UndefOr[Double] = js.undefined
-  ): NumericTextBoxOptions = {
+  def apply(): NumericTextBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (!js.isUndefined(decimals)) __obj.updateDynamic("decimals")(decimals.get.asInstanceOf[js.Any])
-    if (downArrowText != null) __obj.updateDynamic("downArrowText")(downArrowText.asInstanceOf[js.Any])
-    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictDecimals)) __obj.updateDynamic("restrictDecimals")(restrictDecimals.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
-    if (spin != null) __obj.updateDynamic("spin")(js.Any.fromFunction1(spin))
-    if (!js.isUndefined(spinners)) __obj.updateDynamic("spinners")(spinners.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (upArrowText != null) __obj.updateDynamic("upArrowText")(upArrowText.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumericTextBoxOptions]
   }
+  @scala.inline
+  implicit class NumericTextBoxOptionsOps[Self <: NumericTextBoxOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChange(value: /* e */ NumericTextBoxChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setCulture(value: String): Self = this.set("culture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCulture: Self = this.set("culture", js.undefined)
+    @scala.inline
+    def setDecimals(value: Double): Self = this.set("decimals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecimals: Self = this.set("decimals", js.undefined)
+    @scala.inline
+    def setDownArrowText(value: String): Self = this.set("downArrowText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownArrowText: Self = this.set("downArrowText", js.undefined)
+    @scala.inline
+    def setFactor(value: Double): Self = this.set("factor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFactor: Self = this.set("factor", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setLabel(value: String | js.Function | NumericTextBoxLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setRestrictDecimals(value: Boolean): Self = this.set("restrictDecimals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictDecimals: Self = this.set("restrictDecimals", js.undefined)
+    @scala.inline
+    def setRound(value: Boolean): Self = this.set("round", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRound: Self = this.set("round", js.undefined)
+    @scala.inline
+    def setSpin(value: /* e */ NumericTextBoxSpinEvent => Unit): Self = this.set("spin", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSpin: Self = this.set("spin", js.undefined)
+    @scala.inline
+    def setSpinners(value: Boolean): Self = this.set("spinners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpinners: Self = this.set("spinners", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setUpArrowText(value: String): Self = this.set("upArrowText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpArrowText: Self = this.set("upArrowText", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

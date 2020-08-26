@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "cassanknex"
-version := "1.19-dt-20200515Z-b2d05e"
-scalaVersion := "2.13.2"
+version := "1.19-dt-20200515Z-be9b3c"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cassandra-driver" % "4.5.2-dcb672",
-  "org.scalablytyped" %%% "long" % "4.0.0-dt-20200515Z-104b3d",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "cassandra-driver" % "4.5.2-389103",
+  "org.scalablytyped" %%% "long" % "4.0.0-dt-20200515Z-c59689",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

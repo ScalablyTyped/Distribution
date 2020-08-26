@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object useTranslation extends js.Object {
   def apply(): UseTranslationResponse = js.native
+  def apply(ns: js.UndefOr[Namespace], options: UseTranslationOptions): UseTranslationResponse = js.native
   def apply(ns: Namespace): UseTranslationResponse = js.native
-  def apply(ns: Namespace, options: UseTranslationOptions): UseTranslationResponse = js.native
 }
 

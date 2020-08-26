@@ -17,7 +17,30 @@ object fontLoaderMod extends js.Object {
   class FontLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     def load(url: String): Unit = js.native
+    def load(
+      url: String,
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.UndefOr[scala.Nothing],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): Unit = js.native
+    def load(
+      url: String,
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
+    ): Unit = js.native
+    def load(
+      url: String,
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): Unit = js.native
     def load(url: String, onLoad: js.Function1[/* responseFont */ Font, Unit]): Unit = js.native
+    def load(
+      url: String,
+      onLoad: js.Function1[/* responseFont */ Font, Unit],
+      onProgress: js.UndefOr[scala.Nothing],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): Unit = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* responseFont */ Font, Unit],

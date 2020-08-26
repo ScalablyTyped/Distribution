@@ -4,37 +4,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DepositOpts extends js.Object {
   /**
     * Deposit amount
     */
-  var amount: String
+  var amount: String = js.native
   /**
     * If set to false, this deposit will not be immediately completed. Use the commit call to complete it. Default value: true
     */
-  var commit: js.UndefOr[Boolean] = js.undefined
+  var commit: js.UndefOr[Boolean] = js.native
   /**
     * Currency for the amount (see Client#getCurrencies() for available strings)
     */
-  var currency: String
+  var currency: String = js.native
   /**
     * The ID of the payment method that should be used for the buy. (todo get payment methods)
     */
-  var payment_method: js.UndefOr[String] = js.undefined
+  var payment_method: js.UndefOr[String] = js.native
 }
 
 object DepositOpts {
   @scala.inline
-  def apply(
-    amount: String,
-    currency: String,
-    commit: js.UndefOr[Boolean] = js.undefined,
-    payment_method: String = null
-  ): DepositOpts = {
+  def apply(amount: String, currency: String): DepositOpts = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
-    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.get.asInstanceOf[js.Any])
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     __obj.asInstanceOf[DepositOpts]
   }
+  @scala.inline
+  implicit class DepositOptsOps[Self <: DepositOpts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommit(value: Boolean): Self = this.set("commit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommit: Self = this.set("commit", js.undefined)
+    @scala.inline
+    def setPayment_method(value: String): Self = this.set("payment_method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayment_method: Self = this.set("payment_method", js.undefined)
+  }
+  
 }
 

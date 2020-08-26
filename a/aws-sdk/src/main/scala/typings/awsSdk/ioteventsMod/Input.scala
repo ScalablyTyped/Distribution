@@ -18,11 +18,30 @@ trait Input extends js.Object {
 
 object Input {
   @scala.inline
-  def apply(inputConfiguration: InputConfiguration = null, inputDefinition: InputDefinition = null): Input = {
+  def apply(): Input = {
     val __obj = js.Dynamic.literal()
-    if (inputConfiguration != null) __obj.updateDynamic("inputConfiguration")(inputConfiguration.asInstanceOf[js.Any])
-    if (inputDefinition != null) __obj.updateDynamic("inputDefinition")(inputDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Input]
   }
+  @scala.inline
+  implicit class InputOps[Self <: Input] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputConfiguration(value: InputConfiguration): Self = this.set("inputConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputConfiguration: Self = this.set("inputConfiguration", js.undefined)
+    @scala.inline
+    def setInputDefinition(value: InputDefinition): Self = this.set("inputDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDefinition: Self = this.set("inputDefinition", js.undefined)
+  }
+  
 }
 

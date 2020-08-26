@@ -32,9 +32,7 @@ object tableMod extends js.Object {
     var _rowPadding: js.Any = js.native
     var _rowWeights: js.Any = js.native
     var _rows: js.Any = js.native
-    /* private */ def _determineGuarantees(offeredWidths: js.Any, offeredHeights: js.Any): js.Any = js.native
     /* private */ def _determineGuarantees(offeredWidths: js.Any, offeredHeights: js.Any, isFinalOffer: js.Any): js.Any = js.native
-    /* private */ def _iterateLayout(availableWidth: js.Any, availableHeight: js.Any): js.Any = js.native
     /* private */ def _iterateLayout(availableWidth: js.Any, availableHeight: js.Any, isFinalOffer: js.Any): js.Any = js.native
     /* private */ def _padTableToSize(nRows: js.Any, nCols: js.Any): js.Any = js.native
     /**

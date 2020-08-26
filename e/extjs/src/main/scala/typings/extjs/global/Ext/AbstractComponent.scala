@@ -40,6 +40,7 @@ object AbstractComponent extends js.Object {
     * @param origin String/Object The original method name
     */
   def createAlias(): Unit = js.native
+  def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
   def createAlias(alias: js.Any): Unit = js.native
   def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
   /** [Method] Performs all pending layouts that were scheduled while suspendLayouts was in effect  */
@@ -68,6 +69,7 @@ object AbstractComponent extends js.Object {
     * @param defer Boolean true to just queue the layout if this component.
     */
   def updateLayout(): Unit = js.native
+  def updateLayout(comp: js.UndefOr[scala.Nothing], defer: Boolean): Unit = js.native
   def updateLayout(comp: IComponent): Unit = js.native
   def updateLayout(comp: IComponent, defer: Boolean): Unit = js.native
 }

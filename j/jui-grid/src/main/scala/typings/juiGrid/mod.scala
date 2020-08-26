@@ -170,6 +170,7 @@ object mod extends js.Object {
       * Add a row or a child row to at a specified index.
       */
     def append(): Unit = js.native
+    def append(rowOrIndex: js.UndefOr[scala.Nothing], row: js.Any): Unit = js.native
     def append(rowOrIndex: js.Any): Unit = js.native
     def append(rowOrIndex: js.Any, row: js.Any): Unit = js.native
     def append(rowOrIndex: Double): Unit = js.native
@@ -343,6 +344,7 @@ object mod extends js.Object {
       * Shows the extended row area of a specified index.
       */
     def showExpand(index: Double): Unit = js.native
+    def showExpand(index: Double, obj: js.UndefOr[scala.Nothing], e: js.Any): Unit = js.native
     def showExpand(index: Double, obj: js.Any): Unit = js.native
     def showExpand(index: Double, obj: js.Any, e: js.Any): Unit = js.native
     /**
@@ -377,6 +379,7 @@ object mod extends js.Object {
       * Updates the list of rows or modifies the row at a specified index.
       */
     def update(): Unit = js.native
+    def update(indexOrRows: js.UndefOr[scala.Nothing], rows: js.Any): Unit = js.native
     def update(indexOrRows: js.Any): Unit = js.native
     def update(indexOrRows: js.Any, rows: js.Any): Unit = js.native
     /**
@@ -588,11 +591,15 @@ object mod extends js.Object {
     @JSName("sort")
     def sort_asc(index: Double, order: asc): Unit = js.native
     @JSName("sort")
+    def sort_asc(index: Double, order: asc, e: js.UndefOr[scala.Nothing], isNotLoading: js.Any): Unit = js.native
+    @JSName("sort")
     def sort_asc(index: Double, order: asc, e: js.Any): Unit = js.native
     @JSName("sort")
     def sort_asc(index: Double, order: asc, e: js.Any, isNotLoading: js.Any): Unit = js.native
     @JSName("sort")
     def sort_desc(index: Double, order: desc): Unit = js.native
+    @JSName("sort")
+    def sort_desc(index: Double, order: desc, e: js.UndefOr[scala.Nothing], isNotLoading: js.Any): Unit = js.native
     @JSName("sort")
     def sort_desc(index: Double, order: desc, e: js.Any): Unit = js.native
     @JSName("sort")

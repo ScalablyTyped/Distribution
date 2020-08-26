@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rax", "useRef")
 @js.native
 object useRef extends js.Object {
-  def apply[T](): RefObject[T] = js.native
   // convenience overload for refs given as a ref prop as they typically start with a null value
   /**
     * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
@@ -20,6 +19,7 @@ object useRef extends js.Object {
     * of the generic argument.
     */
   // TODO (TypeScript 3.0): <T extends unknown>
+  def apply[T](): RefObject[T] = js.native
   def apply[T](initialValue: T): RefObject[T] = js.native
 }
 

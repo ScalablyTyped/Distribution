@@ -11,6 +11,10 @@ trait DataflowEndpoint extends js.Object {
     */
   var address: js.UndefOr[SocketAddress] = js.native
   /**
+    * Maximum transmission unit (MTU) size in bytes of a dataflow endpoint.
+    */
+  var mtu: js.UndefOr[DataflowEndpointmtuInteger] = js.native
+  /**
     * Name of a dataflow endpoint.
     */
   var name: js.UndefOr[SafeName] = js.native
@@ -22,12 +26,38 @@ trait DataflowEndpoint extends js.Object {
 
 object DataflowEndpoint {
   @scala.inline
-  def apply(address: SocketAddress = null, name: SafeName = null, status: EndpointStatus = null): DataflowEndpoint = {
+  def apply(): DataflowEndpoint = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataflowEndpoint]
   }
+  @scala.inline
+  implicit class DataflowEndpointOps[Self <: DataflowEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: SocketAddress): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setMtu(value: DataflowEndpointmtuInteger): Self = this.set("mtu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMtu: Self = this.set("mtu", js.undefined)
+    @scala.inline
+    def setName(value: SafeName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStatus(value: EndpointStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

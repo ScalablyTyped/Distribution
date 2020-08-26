@@ -26,16 +26,9 @@ object updateRepositoryNameCommandMod extends js.Object {
           Readable
         ] {
     def this(input: UpdateRepositoryNameInput) = this()
-    /* CompleteClass */
-    override val input: UpdateRepositoryNameInput = js.native
     val middlewareStack: MiddlewareStack[UpdateRepositoryNameInput, UpdateRepositoryNameOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[UpdateRepositoryNameInput, UpdateRepositoryNameOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[UpdateRepositoryNameInput, UpdateRepositoryNameOutput] = js.native
   }

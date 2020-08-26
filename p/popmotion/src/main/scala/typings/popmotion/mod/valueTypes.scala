@@ -26,9 +26,9 @@ object valueTypes extends js.Object {
   val vw: ValueType = js.native
   @js.native
   object complex extends js.Object {
-    def createTransformer(prop: String): js.Function1[/* v */ js.Array[Double | HSLA | RGBA], String] = js.native
+    def createTransformer(prop: String): js.Function1[/* v */ js.Array[Double | RGBA | HSLA], String] = js.native
     def getAnimatableNone(target: String): String = js.native
-    def parse(v: js.Any): js.Array[Double | HSLA | RGBA] = js.native
+    def parse(v: js.Any): js.Array[Double | RGBA | HSLA] = js.native
     def test(v: js.Any): Boolean = js.native
   }
   

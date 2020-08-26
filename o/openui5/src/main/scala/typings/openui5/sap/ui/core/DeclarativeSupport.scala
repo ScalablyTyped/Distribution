@@ -15,6 +15,7 @@ trait DeclarativeSupport extends js.Object {
     * @param isRecursive Whether the call of the function is recursive.
     */
   def compile(oElement: Element): Unit = js.native
+  def compile(oElement: Element, oView: js.UndefOr[scala.Nothing], isRecursive: Boolean): Unit = js.native
   def compile(oElement: Element, oView: HTMLView): Unit = js.native
   def compile(oElement: Element, oView: HTMLView, isRecursive: Boolean): Unit = js.native
 }

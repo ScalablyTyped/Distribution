@@ -28,14 +28,39 @@ trait TableDef extends js.Object {
   var ValidationRule: String = js.native
   var ValidationText: String = js.native
   def CreateField(): Field = js.native
+  def CreateField(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Size: Double): Field = js.native
+  def CreateField(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum): Field = js.native
+  def CreateField(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Size: Double): Field = js.native
   def CreateField(Name: String): Field = js.native
+  def CreateField(Name: String, Type: js.UndefOr[scala.Nothing], Size: Double): Field = js.native
   def CreateField(Name: String, Type: DataTypeEnum): Field = js.native
   def CreateField(Name: String, Type: DataTypeEnum, Size: Double): Field = js.native
   def CreateIndex(): Index = js.native
   def CreateIndex(Name: String): Index = js.native
   def CreateProperty(): Property = js.native
+  def CreateProperty(
+    Name: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Value: js.UndefOr[scala.Nothing],
+    DDL: Boolean
+  ): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum): Property = js.native
+  def CreateProperty(
+    Name: js.UndefOr[scala.Nothing],
+    Type: DataTypeEnum,
+    Value: js.UndefOr[scala.Nothing],
+    DDL: Boolean
+  ): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum): Property = js.native
+  def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def Fields(Item: String): Field = js.native
@@ -43,6 +68,7 @@ trait TableDef extends js.Object {
   def Indexes(Item: String): Index = js.native
   def Indexes(Item: Double): Index = js.native
   def OpenRecordset(): Recordset = js.native
+  def OpenRecordset(Type: js.UndefOr[scala.Nothing], Options: RecordsetOptionEnum): Recordset = js.native
   def OpenRecordset(Type: RecordsetTypeEnum): Recordset = js.native
   def OpenRecordset(Type: RecordsetTypeEnum, Options: RecordsetOptionEnum): Recordset = js.native
   def Properties(Item: String): Property = js.native

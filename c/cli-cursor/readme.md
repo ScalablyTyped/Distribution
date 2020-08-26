@@ -12,7 +12,7 @@ Toggle the CLI cursor
 | Keywords           | cli, cursor, ansi, toggle, display, show, hide, term, terminal, console, tty, shell, command-line |
 | # releases         | 3 |
 | # dependents       | 169 |
-| # downloads        | 477790373 |
+| # downloads        | 495555992 |
 | # stars            | 3 |
 
 ## Links

@@ -1,6 +1,7 @@
 package typings.reactDndTouchBackend
 
 import typings.dndCore.interfacesMod.XYCoord
+import typings.std.Element
 import typings.std.MouseEvent
 import typings.std.Touch
 import typings.std.TouchEvent
@@ -19,6 +20,6 @@ object offsetsMod extends js.Object {
   def getEventClientOffset(e: Touch, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = js.native
   def getEventClientTouchOffset(e: TouchEvent): js.UndefOr[XYCoord] = js.native
   def getEventClientTouchOffset(e: TouchEvent, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = js.native
-  def getNodeClientOffset(node: js.Any): js.UndefOr[XYCoord] = js.native
+  def getNodeClientOffset(node: Element): js.UndefOr[XYCoord] = js.native
 }
 

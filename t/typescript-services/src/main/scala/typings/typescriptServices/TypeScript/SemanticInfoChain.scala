@@ -41,6 +41,12 @@ trait SemanticInfoChain extends js.Object {
   var voidTypeSymbol: PullPrimitiveTypeSymbol = js.native
   def addDiagnostic(diagnostic: Diagnostic): Unit = js.native
   def addDiagnosticFromAST(ast: AST, diagnosticKey: String): Unit = js.native
+  def addDiagnosticFromAST(
+    ast: AST,
+    diagnosticKey: String,
+    _arguments: js.UndefOr[scala.Nothing],
+    additionalLocations: js.Array[Location]
+  ): Unit = js.native
   def addDiagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[_]): Unit = js.native
   def addDiagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[_], additionalLocations: js.Array[Location]): Unit = js.native
   def addDocument(document: Document): Unit = js.native
@@ -58,6 +64,12 @@ trait SemanticInfoChain extends js.Object {
   /* private */ def bindPrimitiveSymbol[TSymbol /* <: PullSymbol */](decl: js.Any, newSymbol: js.Any): js.Any = js.native
   def cacheGlobalSymbol(symbol: PullSymbol, kind: PullElementKind): Unit = js.native
   def diagnosticFromAST(ast: AST, diagnosticKey: String): Diagnostic = js.native
+  def diagnosticFromAST(
+    ast: AST,
+    diagnosticKey: String,
+    _arguments: js.UndefOr[scala.Nothing],
+    additionalLocations: js.Array[Location]
+  ): Diagnostic = js.native
   def diagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[_]): Diagnostic = js.native
   def diagnosticFromAST(ast: AST, diagnosticKey: String, _arguments: js.Array[_], additionalLocations: js.Array[Location]): Diagnostic = js.native
   def duplicateIdentifierDiagnosticFromAST(ast: AST, identifier: String, additionalLocationAST: AST): Diagnostic = js.native
@@ -83,6 +95,7 @@ trait SemanticInfoChain extends js.Object {
   def getSymbolForAST(ast: AST): PullSymbol = js.native
   def getSymbolForDecl(decl: PullDecl): PullSymbol = js.native
   def invalidate(): Unit = js.native
+  def invalidate(oldSettings: js.UndefOr[scala.Nothing], newSettings: ImmutableCompilationSettings): Unit = js.native
   def invalidate(oldSettings: ImmutableCompilationSettings): Unit = js.native
   def invalidate(oldSettings: ImmutableCompilationSettings, newSettings: ImmutableCompilationSettings): Unit = js.native
   def lineMap(fileName: String): LineMap = js.native

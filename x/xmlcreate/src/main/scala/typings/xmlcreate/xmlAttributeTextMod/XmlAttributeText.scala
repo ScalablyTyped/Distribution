@@ -17,7 +17,7 @@ trait XmlAttributeText[Parent] extends js.Object {
   /**
     * Sets this attribute text.
     */
-  def charData(charData: String): js.Any = js.native
+  def charData_=(charData: String): Unit = js.native
   /**
     * Returns the parent of this attribute text.
     */

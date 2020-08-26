@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "BinaryOperatorExpr")
 @js.native
 class BinaryOperatorExpr protected ()
-  extends typings.angularCompiler.publicApiMod.BinaryOperatorExpr {
+  extends typings.angularCompiler.compilerMod.BinaryOperatorExpr {
   def this(
     operator: typings.angularCompiler.outputAstMod.BinaryOperator,
     lhs: typings.angularCompiler.outputAstMod.Expression,
@@ -18,6 +18,13 @@ class BinaryOperatorExpr protected ()
     lhs: typings.angularCompiler.outputAstMod.Expression,
     rhs: typings.angularCompiler.outputAstMod.Expression,
     `type`: typings.angularCompiler.outputAstMod.Type
+  ) = this()
+  def this(
+    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
+    lhs: typings.angularCompiler.outputAstMod.Expression,
+    rhs: typings.angularCompiler.outputAstMod.Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
     operator: typings.angularCompiler.outputAstMod.BinaryOperator,
@@ -37,6 +44,38 @@ class BinaryOperatorExpr protected ()
     operator: typings.angularCompiler.outputAstMod.BinaryOperator,
     lhs: typings.angularCompiler.outputAstMod.Expression,
     rhs: typings.angularCompiler.outputAstMod.Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: js.UndefOr[scala.Nothing],
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
+    lhs: typings.angularCompiler.outputAstMod.Expression,
+    rhs: typings.angularCompiler.outputAstMod.Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: Null,
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
+    lhs: typings.angularCompiler.outputAstMod.Expression,
+    rhs: typings.angularCompiler.outputAstMod.Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
+    lhs: typings.angularCompiler.outputAstMod.Expression,
+    rhs: typings.angularCompiler.outputAstMod.Expression,
+    `type`: Null,
+    sourceSpan: js.UndefOr[scala.Nothing],
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
+    lhs: typings.angularCompiler.outputAstMod.Expression,
+    rhs: typings.angularCompiler.outputAstMod.Expression,
     `type`: Null,
     sourceSpan: Null,
     parens: Boolean
@@ -47,6 +86,14 @@ class BinaryOperatorExpr protected ()
     rhs: typings.angularCompiler.outputAstMod.Expression,
     `type`: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
+    lhs: typings.angularCompiler.outputAstMod.Expression,
+    rhs: typings.angularCompiler.outputAstMod.Expression,
+    `type`: typings.angularCompiler.outputAstMod.Type,
+    sourceSpan: js.UndefOr[scala.Nothing],
     parens: Boolean
   ) = this()
   def this(

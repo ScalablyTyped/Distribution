@@ -4,29 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Operation extends Entity {
   // The start time of the operation.
-  var createdDateTime: js.UndefOr[String] = js.undefined
+  var createdDateTime: js.UndefOr[String] = js.native
   // The time of the last action of the operation.
-  var lastActionDateTime: js.UndefOr[String] = js.undefined
+  var lastActionDateTime: js.UndefOr[String] = js.native
   // The current status of the operation: notStarted, running, completed, failed
-  var status: js.UndefOr[OperationStatus] = js.undefined
+  var status: js.UndefOr[OperationStatus] = js.native
 }
 
 object Operation {
   @scala.inline
-  def apply(
-    createdDateTime: String = null,
-    id: String = null,
-    lastActionDateTime: String = null,
-    status: OperationStatus = null
-  ): Operation = {
+  def apply(): Operation = {
     val __obj = js.Dynamic.literal()
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastActionDateTime != null) __obj.updateDynamic("lastActionDateTime")(lastActionDateTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Operation]
   }
+  @scala.inline
+  implicit class OperationOps[Self <: Operation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    @scala.inline
+    def setLastActionDateTime(value: String): Self = this.set("lastActionDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastActionDateTime: Self = this.set("lastActionDateTime", js.undefined)
+    @scala.inline
+    def setStatus(value: OperationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

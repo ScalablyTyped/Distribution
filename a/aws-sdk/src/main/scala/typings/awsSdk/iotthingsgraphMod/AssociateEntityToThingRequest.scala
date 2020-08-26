@@ -22,10 +22,30 @@ trait AssociateEntityToThingRequest extends js.Object {
 
 object AssociateEntityToThingRequest {
   @scala.inline
-  def apply(entityId: Urn, thingName: ThingName, namespaceVersion: js.UndefOr[Version] = js.undefined): AssociateEntityToThingRequest = {
+  def apply(entityId: Urn, thingName: ThingName): AssociateEntityToThingRequest = {
     val __obj = js.Dynamic.literal(entityId = entityId.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
-    if (!js.isUndefined(namespaceVersion)) __obj.updateDynamic("namespaceVersion")(namespaceVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateEntityToThingRequest]
   }
+  @scala.inline
+  implicit class AssociateEntityToThingRequestOps[Self <: AssociateEntityToThingRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityId(value: Urn): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNamespaceVersion(value: Version): Self = this.set("namespaceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceVersion: Self = this.set("namespaceVersion", js.undefined)
+  }
+  
 }
 

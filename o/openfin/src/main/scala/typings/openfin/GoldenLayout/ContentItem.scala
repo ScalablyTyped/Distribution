@@ -96,7 +96,26 @@ trait ContentItem extends EventEmitter {
     * @param skipSelf If true, the method will only be invoked on the item's children, but not on the item itself. Default: false
     */
   def callDownwards(functionName: String): Unit = js.native
+  def callDownwards(
+    functionName: String,
+    functionArguments: js.UndefOr[scala.Nothing],
+    bottomUp: js.UndefOr[scala.Nothing],
+    skipSelf: Boolean
+  ): Unit = js.native
+  def callDownwards(functionName: String, functionArguments: js.UndefOr[scala.Nothing], bottomUp: Boolean): Unit = js.native
+  def callDownwards(
+    functionName: String,
+    functionArguments: js.UndefOr[scala.Nothing],
+    bottomUp: Boolean,
+    skipSelf: Boolean
+  ): Unit = js.native
   def callDownwards(functionName: String, functionArguments: js.Array[_]): Unit = js.native
+  def callDownwards(
+    functionName: String,
+    functionArguments: js.Array[_],
+    bottomUp: js.UndefOr[scala.Nothing],
+    skipSelf: Boolean
+  ): Unit = js.native
   def callDownwards(functionName: String, functionArguments: js.Array[_], bottomUp: Boolean): Unit = js.native
   def callDownwards(functionName: String, functionArguments: js.Array[_], bottomUp: Boolean, skipSelf: Boolean): Unit = js.native
   /**

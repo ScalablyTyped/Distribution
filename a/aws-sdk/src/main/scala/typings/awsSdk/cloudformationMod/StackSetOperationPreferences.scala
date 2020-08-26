@@ -30,20 +30,44 @@ trait StackSetOperationPreferences extends js.Object {
 
 object StackSetOperationPreferences {
   @scala.inline
-  def apply(
-    FailureToleranceCount: js.UndefOr[FailureToleranceCount] = js.undefined,
-    FailureTolerancePercentage: js.UndefOr[FailureTolerancePercentage] = js.undefined,
-    MaxConcurrentCount: js.UndefOr[MaxConcurrentCount] = js.undefined,
-    MaxConcurrentPercentage: js.UndefOr[MaxConcurrentPercentage] = js.undefined,
-    RegionOrder: RegionList = null
-  ): StackSetOperationPreferences = {
+  def apply(): StackSetOperationPreferences = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FailureToleranceCount)) __obj.updateDynamic("FailureToleranceCount")(FailureToleranceCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailureTolerancePercentage)) __obj.updateDynamic("FailureTolerancePercentage")(FailureTolerancePercentage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxConcurrentCount)) __obj.updateDynamic("MaxConcurrentCount")(MaxConcurrentCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxConcurrentPercentage)) __obj.updateDynamic("MaxConcurrentPercentage")(MaxConcurrentPercentage.get.asInstanceOf[js.Any])
-    if (RegionOrder != null) __obj.updateDynamic("RegionOrder")(RegionOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSetOperationPreferences]
   }
+  @scala.inline
+  implicit class StackSetOperationPreferencesOps[Self <: StackSetOperationPreferences] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailureToleranceCount(value: FailureToleranceCount): Self = this.set("FailureToleranceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureToleranceCount: Self = this.set("FailureToleranceCount", js.undefined)
+    @scala.inline
+    def setFailureTolerancePercentage(value: FailureTolerancePercentage): Self = this.set("FailureTolerancePercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureTolerancePercentage: Self = this.set("FailureTolerancePercentage", js.undefined)
+    @scala.inline
+    def setMaxConcurrentCount(value: MaxConcurrentCount): Self = this.set("MaxConcurrentCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConcurrentCount: Self = this.set("MaxConcurrentCount", js.undefined)
+    @scala.inline
+    def setMaxConcurrentPercentage(value: MaxConcurrentPercentage): Self = this.set("MaxConcurrentPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConcurrentPercentage: Self = this.set("MaxConcurrentPercentage", js.undefined)
+    @scala.inline
+    def setRegionOrderVarargs(value: Region*): Self = this.set("RegionOrder", js.Array(value :_*))
+    @scala.inline
+    def setRegionOrder(value: RegionList): Self = this.set("RegionOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionOrder: Self = this.set("RegionOrder", js.undefined)
+  }
+  
 }
 

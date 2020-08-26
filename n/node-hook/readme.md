@@ -12,7 +12,7 @@ Run source transform function on Node require
 | Keywords           | require, node, load, hook, transform |
 | # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 321090 |
+| # downloads        | 427346 |
 | # stars            | 1 |
 
 ## Links

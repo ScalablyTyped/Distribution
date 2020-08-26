@@ -10,12 +10,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined node.stream.TransformOptions & {  mode  :pg-protocol.pg-protocol/dist/messages.Mode} */
+/* Inlined node.stream.TransformOptions & {  mode :pg-protocol.pg-protocol/dist/messages.Mode} */
+@js.native
 trait StreamOptions extends js.Object {
-  var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
-  var autoDestroy: js.UndefOr[Boolean] = js.undefined
-  var decodeStrings: js.UndefOr[Boolean] = js.undefined
-  var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
+  var allowHalfOpen: js.UndefOr[Boolean] = js.native
+  var autoDestroy: js.UndefOr[Boolean] = js.native
+  var decodeStrings: js.UndefOr[Boolean] = js.native
+  var defaultEncoding: js.UndefOr[BufferEncoding] = js.native
   var destroy: js.UndefOr[
     js.ThisFunction2[
       /* this */ Transform, 
@@ -23,23 +24,23 @@ trait StreamOptions extends js.Object {
       /* callback */ js.Function1[/* error */ Error | Null, Unit], 
       Unit
     ]
-  ] = js.undefined
-  var emitClose: js.UndefOr[Boolean] = js.undefined
-  var encoding: js.UndefOr[BufferEncoding] = js.undefined
+  ] = js.native
+  var emitClose: js.UndefOr[Boolean] = js.native
+  var encoding: js.UndefOr[BufferEncoding] = js.native
   var `final`: js.UndefOr[
     js.ThisFunction1[
       /* this */ Transform, 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ] = js.undefined
-  var flush: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit]] = js.undefined
-  var highWaterMark: js.UndefOr[Double] = js.undefined
-  var mode: Mode
-  var objectMode: js.UndefOr[Boolean] = js.undefined
-  var read: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]] = js.undefined
-  var readableHighWaterMark: js.UndefOr[Double] = js.undefined
-  var readableObjectMode: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var flush: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit]] = js.native
+  var highWaterMark: js.UndefOr[Double] = js.native
+  var mode: Mode = js.native
+  var objectMode: js.UndefOr[Boolean] = js.native
+  var read: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]] = js.native
+  var readableHighWaterMark: js.UndefOr[Double] = js.native
+  var readableObjectMode: js.UndefOr[Boolean] = js.native
   var transform: js.UndefOr[
     js.ThisFunction3[
       /* this */ Transform, 
@@ -48,10 +49,10 @@ trait StreamOptions extends js.Object {
       /* callback */ TransformCallback, 
       Unit
     ]
-  ] = js.undefined
-  var writableCorked: js.UndefOr[Double] = js.undefined
-  var writableHighWaterMark: js.UndefOr[Double] = js.undefined
-  var writableObjectMode: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var writableCorked: js.UndefOr[Double] = js.native
+  var writableHighWaterMark: js.UndefOr[Double] = js.native
+  var writableObjectMode: js.UndefOr[Boolean] = js.native
   var write: js.UndefOr[
     js.ThisFunction3[
       /* this */ Transform, 
@@ -60,7 +61,7 @@ trait StreamOptions extends js.Object {
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var writev: js.UndefOr[
     js.ThisFunction2[
       /* this */ Transform, 
@@ -68,82 +69,145 @@ trait StreamOptions extends js.Object {
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object StreamOptions {
   @scala.inline
-  def apply(
-    mode: Mode,
-    allowHalfOpen: js.UndefOr[Boolean] = js.undefined,
-    autoDestroy: js.UndefOr[Boolean] = js.undefined,
-    decodeStrings: js.UndefOr[Boolean] = js.undefined,
-    defaultEncoding: BufferEncoding = null,
-    destroy: js.ThisFunction2[
-      /* this */ Transform, 
-      /* error */ Error | Null, 
-      /* callback */ js.Function1[/* error */ Error | Null, Unit], 
-      Unit
-    ] = null,
-    emitClose: js.UndefOr[Boolean] = js.undefined,
-    encoding: BufferEncoding = null,
-    `final`: js.ThisFunction1[
-      /* this */ Transform, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
-      Unit
-    ] = null,
-    flush: js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit] = null,
-    highWaterMark: js.UndefOr[Double] = js.undefined,
-    objectMode: js.UndefOr[Boolean] = js.undefined,
-    read: js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit] = null,
-    readableHighWaterMark: js.UndefOr[Double] = js.undefined,
-    readableObjectMode: js.UndefOr[Boolean] = js.undefined,
-    transform: js.ThisFunction3[
-      /* this */ Transform, 
-      /* chunk */ js.Any, 
-      /* encoding */ BufferEncoding, 
-      /* callback */ TransformCallback, 
-      Unit
-    ] = null,
-    writableCorked: js.UndefOr[Double] = js.undefined,
-    writableHighWaterMark: js.UndefOr[Double] = js.undefined,
-    writableObjectMode: js.UndefOr[Boolean] = js.undefined,
-    write: js.ThisFunction3[
-      /* this */ Transform, 
-      /* chunk */ js.Any, 
-      /* encoding */ BufferEncoding, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
-      Unit
-    ] = null,
-    writev: js.ThisFunction2[
-      /* this */ Transform, 
-      /* chunks */ js.Array[Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
-      Unit
-    ] = null
-  ): StreamOptions = {
+  def apply(mode: Mode): StreamOptions = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.get.asInstanceOf[js.Any])
-    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
-    if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose.get.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (`final` != null) __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
-    if (flush != null) __obj.updateDynamic("flush")(flush.asInstanceOf[js.Any])
-    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
-    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
-    if (!js.isUndefined(readableHighWaterMark)) __obj.updateDynamic("readableHighWaterMark")(readableHighWaterMark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode.get.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (!js.isUndefined(writableCorked)) __obj.updateDynamic("writableCorked")(writableCorked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(writableHighWaterMark)) __obj.updateDynamic("writableHighWaterMark")(writableHighWaterMark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(writableObjectMode)) __obj.updateDynamic("writableObjectMode")(writableObjectMode.get.asInstanceOf[js.Any])
-    if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
-    if (writev != null) __obj.updateDynamic("writev")(writev.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamOptions]
   }
+  @scala.inline
+  implicit class StreamOptionsOps[Self <: StreamOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMode(value: Mode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowHalfOpen(value: Boolean): Self = this.set("allowHalfOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowHalfOpen: Self = this.set("allowHalfOpen", js.undefined)
+    @scala.inline
+    def setAutoDestroy(value: Boolean): Self = this.set("autoDestroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDestroy: Self = this.set("autoDestroy", js.undefined)
+    @scala.inline
+    def setDecodeStrings(value: Boolean): Self = this.set("decodeStrings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecodeStrings: Self = this.set("decodeStrings", js.undefined)
+    @scala.inline
+    def setDefaultEncoding(value: BufferEncoding): Self = this.set("defaultEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEncoding: Self = this.set("defaultEncoding", js.undefined)
+    @scala.inline
+    def setDestroy(
+      value: js.ThisFunction2[
+          /* this */ Transform, 
+          /* error */ Error | Null, 
+          /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+          Unit
+        ]
+    ): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    @scala.inline
+    def setEmitClose(value: Boolean): Self = this.set("emitClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmitClose: Self = this.set("emitClose", js.undefined)
+    @scala.inline
+    def setEncoding(value: BufferEncoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setFinal(
+      value: js.ThisFunction1[
+          /* this */ Transform, 
+          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          Unit
+        ]
+    ): Self = this.set("final", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinal: Self = this.set("final", js.undefined)
+    @scala.inline
+    def setFlush(value: js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit]): Self = this.set("flush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlush: Self = this.set("flush", js.undefined)
+    @scala.inline
+    def setHighWaterMark(value: Double): Self = this.set("highWaterMark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighWaterMark: Self = this.set("highWaterMark", js.undefined)
+    @scala.inline
+    def setObjectMode(value: Boolean): Self = this.set("objectMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectMode: Self = this.set("objectMode", js.undefined)
+    @scala.inline
+    def setRead(value: js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]): Self = this.set("read", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRead: Self = this.set("read", js.undefined)
+    @scala.inline
+    def setReadableHighWaterMark(value: Double): Self = this.set("readableHighWaterMark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadableHighWaterMark: Self = this.set("readableHighWaterMark", js.undefined)
+    @scala.inline
+    def setReadableObjectMode(value: Boolean): Self = this.set("readableObjectMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadableObjectMode: Self = this.set("readableObjectMode", js.undefined)
+    @scala.inline
+    def setTransform(
+      value: js.ThisFunction3[
+          /* this */ Transform, 
+          /* chunk */ js.Any, 
+          /* encoding */ BufferEncoding, 
+          /* callback */ TransformCallback, 
+          Unit
+        ]
+    ): Self = this.set("transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+    @scala.inline
+    def setWritableCorked(value: Double): Self = this.set("writableCorked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWritableCorked: Self = this.set("writableCorked", js.undefined)
+    @scala.inline
+    def setWritableHighWaterMark(value: Double): Self = this.set("writableHighWaterMark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWritableHighWaterMark: Self = this.set("writableHighWaterMark", js.undefined)
+    @scala.inline
+    def setWritableObjectMode(value: Boolean): Self = this.set("writableObjectMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWritableObjectMode: Self = this.set("writableObjectMode", js.undefined)
+    @scala.inline
+    def setWrite(
+      value: js.ThisFunction3[
+          /* this */ Transform, 
+          /* chunk */ js.Any, 
+          /* encoding */ BufferEncoding, 
+          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          Unit
+        ]
+    ): Self = this.set("write", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrite: Self = this.set("write", js.undefined)
+    @scala.inline
+    def setWritev(
+      value: js.ThisFunction2[
+          /* this */ Transform, 
+          /* chunks */ js.Array[Chunk], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          Unit
+        ]
+    ): Self = this.set("writev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWritev: Self = this.set("writev", js.undefined)
+  }
+  
 }
 

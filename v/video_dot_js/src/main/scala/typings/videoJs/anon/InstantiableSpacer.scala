@@ -27,5 +27,10 @@ trait InstantiableSpacer
   */
 Instantiable1[/* player */ Player, Spacer]
      with Instantiable2[/* player */ Player, /* options */ ComponentOptions, Spacer]
-     with Instantiable3[/* player */ Player, /* options */ ComponentOptions, /* ready */ ReadyCallback, Spacer]
+     with Instantiable3[
+      /* player */ Player, 
+      js.UndefOr[/* options */ ComponentOptions], 
+      /* ready */ ReadyCallback, 
+      Spacer
+    ]
 

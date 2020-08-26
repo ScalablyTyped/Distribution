@@ -10,6 +10,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object reinitializeEditor extends js.Object {
   def apply(postType: String, postId: String, target: Element): Unit = js.native
+  def apply(
+    postType: String,
+    postId: String,
+    target: Element,
+    settings: js.UndefOr[scala.Nothing],
+    // FIXME: it is unclear what this is
+  initialEdits: js.Object
+  ): Unit = js.native
   def apply(postType: String, postId: String, target: Element, settings: PartialEditorSettings): Unit = js.native
   def apply(
     postType: String,
@@ -20,6 +28,14 @@ object reinitializeEditor extends js.Object {
   initialEdits: js.Object
   ): Unit = js.native
   def apply(postType: String, postId: Double, target: Element): Unit = js.native
+  def apply(
+    postType: String,
+    postId: Double,
+    target: Element,
+    settings: js.UndefOr[scala.Nothing],
+    // FIXME: it is unclear what this is
+  initialEdits: js.Object
+  ): Unit = js.native
   def apply(postType: String, postId: Double, target: Element, settings: PartialEditorSettings): Unit = js.native
   def apply(
     postType: String,

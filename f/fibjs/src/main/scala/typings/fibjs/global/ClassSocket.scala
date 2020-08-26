@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
 class ClassSocket ()
   extends typings.fibjs.ClassSocket {
   def this(family: Double) = this()
+  def this(family: js.UndefOr[scala.Nothing], `type`: Double) = this()
   def this(family: Double, `type`: Double) = this()
 }
 

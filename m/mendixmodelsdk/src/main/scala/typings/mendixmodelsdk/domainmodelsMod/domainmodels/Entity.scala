@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, generalization, attributes, isRemote, remoteSourceDocument, remoteSourceDocumentQualifiedName, source */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Entity")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, generalization, attributes, isRemote, remoteSourceDocument, remoteSourceDocumentQualifiedName, source, capabilities */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Entity")
 @js.native
 class Entity protected ()
   extends Element
@@ -37,6 +37,13 @@ class Entity protected ()
   ) = this()
   @JSName("attributes")
   val attributes_FEntity: IList[IAttribute] = js.native
+  /**
+    * This property is required and cannot be set to null.
+    *
+    * In version 8.12.0: introduced
+    */
+  @JSName("capabilities")
+  val capabilities_FEntity: IEntityCapabilities = js.native
   @JSName("containerAsDomainModel")
   val containerAsDomainModel_FEntity: IDomainModel = js.native
   /**
@@ -55,14 +62,6 @@ class Entity protected ()
   var model_FEntity: IModel = js.native
   @JSName("name")
   val name_FEntity: String = js.native
-  /**
-    * Returns the qualified name of this element, or
-    * null if this element is not a part of the model,
-    * or if it or one of its namespace containers does not have a
-    * valid name.
-    */
-  /* CompleteClass */
-  override val qualifiedName: String | Null = js.native
   @JSName("remoteSourceDocumentQualifiedName")
   val remoteSourceDocumentQualifiedName_FEntity: String | Null = js.native
   /**
@@ -80,19 +79,22 @@ class Entity protected ()
   val source_FEntity: IEntitySource | Null = js.native
   def accessRules: IList[AccessRule] = js.native
   def attributes: IList[Attribute] = js.native
+  /**
+    * In version 8.12.0: introduced
+    */
+  def capabilities: EntityCapabilities = js.native
+  def capabilities_=(newValue: EntityCapabilities): Unit = js.native
   def containerAsDomainModel: DomainModel = js.native
   def dataStorageGuid: String = js.native
-  def dataStorageGuid(newValue: String): js.Any = js.native
+  def dataStorageGuid_=(newValue: String): Unit = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def eventHandlers: IList[EventHandler] = js.native
   def generalization: GeneralizationBase = js.native
-  def generalization(newValue: GeneralizationBase): js.Any = js.native
-  def image(): js.Any = js.native
-  def image(newValue: IImage): js.Any = js.native
+  def generalization_=(newValue: GeneralizationBase): Unit = js.native
+  def image: IImage | Null = js.native
   def imageQualifiedName: String | Null = js.native
-  @JSName("image")
-  def image_Union: IImage | Null = js.native
+  def image_=(newValue: IImage | Null): Unit = js.native
   def indexes: IList[Index] = js.native
   /**
     * In version 8.10.0: deleted
@@ -100,11 +102,11 @@ class Entity protected ()
     * In version 7.17.0: introduced
     */
   def isRemote: Boolean = js.native
-  def isRemote(newValue: Boolean): js.Any = js.native
+  def isRemote_=(newValue: Boolean): Unit = js.native
   def location: IPoint = js.native
-  def location(newValue: IPoint): js.Any = js.native
+  def location_=(newValue: IPoint): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   @JSName("qualifiedName")
   def qualifiedName_MEntity: String | Null = js.native
   /**
@@ -112,25 +114,21 @@ class Entity protected ()
     * In version 7.17.0: introduced
     */
   def remoteSource: String = js.native
-  def remoteSource(newValue: String): js.Any = js.native
-  def remoteSourceDocument(): js.Any = js.native
-  def remoteSourceDocument(newValue: IRemoteEntitySourceDocument): js.Any = js.native
-  def remoteSourceDocumentQualifiedName: String | Null = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 8.10.0: deleted
     * In version 8.2.0: introduced
     */
-  @JSName("remoteSourceDocument")
-  def remoteSourceDocument_Union: IRemoteEntitySourceDocument | Null = js.native
-  def source(): js.Any = js.native
-  def source(newValue: EntitySource): js.Any = js.native
+  def remoteSourceDocument: IRemoteEntitySourceDocument | Null = js.native
+  def remoteSourceDocumentQualifiedName: String | Null = js.native
+  def remoteSourceDocument_=(newValue: IRemoteEntitySourceDocument | Null): Unit = js.native
+  def remoteSource_=(newValue: String): Unit = js.native
   /**
     * In version 8.10.0: introduced
     */
-  @JSName("source")
-  def source_Union: EntitySource | Null = js.native
+  def source: EntitySource | Null = js.native
+  def source_=(newValue: EntitySource | Null): Unit = js.native
   def validationRules: IList[ValidationRule] = js.native
 }
 

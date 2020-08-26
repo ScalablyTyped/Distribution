@@ -10,9 +10,9 @@ A cache proxy plugin for Gulp
 | ------------------ | :-------------: |
 | Full name          | gulp-cache |
 | Keywords           | gulpplugin, gulp, cache |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 105 |
-| # downloads        | 1242829 |
+| # downloads        | 1222114 |
 | # stars            | 36 |
 
 ## Links

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "LiteralMap")
 @js.native
 class LiteralMap_ protected ()
-  extends typings.angularCompiler.publicApiMod.LiteralMap_ {
+  extends typings.angularCompiler.compilerMod.LiteralMap_ {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

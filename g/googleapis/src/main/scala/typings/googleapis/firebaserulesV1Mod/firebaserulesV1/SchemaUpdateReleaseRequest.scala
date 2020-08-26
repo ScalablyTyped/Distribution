@@ -21,11 +21,30 @@ trait SchemaUpdateReleaseRequest extends js.Object {
 
 object SchemaUpdateReleaseRequest {
   @scala.inline
-  def apply(release: SchemaRelease = null, updateMask: String = null): SchemaUpdateReleaseRequest = {
+  def apply(): SchemaUpdateReleaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (release != null) __obj.updateDynamic("release")(release.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateReleaseRequest]
   }
+  @scala.inline
+  implicit class SchemaUpdateReleaseRequestOps[Self <: SchemaUpdateReleaseRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRelease(value: SchemaRelease): Self = this.set("release", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelease: Self = this.set("release", js.undefined)
+    @scala.inline
+    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+  }
+  
 }
 

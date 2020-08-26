@@ -30,6 +30,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     */
   def checkConsistency(): GaxiosPromise[SchemaCheckConsistencyResponse] = js.native
   def checkConsistency(callback: BodyResponseCallback[SchemaCheckConsistencyResponse]): Unit = js.native
+  def checkConsistency(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCheckConsistencyResponse] = js.native
   def checkConsistency(params: ParamsResourceProjectsInstancesTablesCheckconsistency): GaxiosPromise[SchemaCheckConsistencyResponse] = js.native
   def checkConsistency(
     params: ParamsResourceProjectsInstancesTablesCheckconsistency,
@@ -63,6 +64,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaTable] = js.native
   def create(callback: BodyResponseCallback[SchemaTable]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTable] = js.native
   def create(params: ParamsResourceProjectsInstancesTablesCreate): GaxiosPromise[SchemaTable] = js.native
   def create(params: ParamsResourceProjectsInstancesTablesCreate, callback: BodyResponseCallback[SchemaTable]): Unit = js.native
   def create(
@@ -90,6 +92,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsInstancesTablesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsInstancesTablesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -120,6 +123,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     */
   def dropRowRange(): GaxiosPromise[SchemaEmpty] = js.native
   def dropRowRange(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def dropRowRange(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def dropRowRange(params: ParamsResourceProjectsInstancesTablesDroprowrange): GaxiosPromise[SchemaEmpty] = js.native
   def dropRowRange(
     params: ParamsResourceProjectsInstancesTablesDroprowrange,
@@ -154,6 +158,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     */
   def generateConsistencyToken(): GaxiosPromise[SchemaGenerateConsistencyTokenResponse] = js.native
   def generateConsistencyToken(callback: BodyResponseCallback[SchemaGenerateConsistencyTokenResponse]): Unit = js.native
+  def generateConsistencyToken(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGenerateConsistencyTokenResponse] = js.native
   def generateConsistencyToken(params: ParamsResourceProjectsInstancesTablesGenerateconsistencytoken): GaxiosPromise[SchemaGenerateConsistencyTokenResponse] = js.native
   def generateConsistencyToken(
     params: ParamsResourceProjectsInstancesTablesGenerateconsistencytoken,
@@ -185,6 +190,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTable] = js.native
   def get(callback: BodyResponseCallback[SchemaTable]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTable] = js.native
   def get(params: ParamsResourceProjectsInstancesTablesGet): GaxiosPromise[SchemaTable] = js.native
   def get(params: ParamsResourceProjectsInstancesTablesGet, callback: BodyResponseCallback[SchemaTable]): Unit = js.native
   def get(
@@ -214,6 +220,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsInstancesTablesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsInstancesTablesGetiampolicy,
@@ -247,6 +254,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListTablesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTablesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTablesResponse] = js.native
   def list(params: ParamsResourceProjectsInstancesTablesList): GaxiosPromise[SchemaListTablesResponse] = js.native
   def list(
     params: ParamsResourceProjectsInstancesTablesList,
@@ -281,6 +289,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     */
   def modifyColumnFamilies(): GaxiosPromise[SchemaTable] = js.native
   def modifyColumnFamilies(callback: BodyResponseCallback[SchemaTable]): Unit = js.native
+  def modifyColumnFamilies(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTable] = js.native
   def modifyColumnFamilies(params: ParamsResourceProjectsInstancesTablesModifycolumnfamilies): GaxiosPromise[SchemaTable] = js.native
   def modifyColumnFamilies(
     params: ParamsResourceProjectsInstancesTablesModifycolumnfamilies,
@@ -313,6 +322,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsInstancesTablesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsInstancesTablesSetiampolicy,
@@ -345,6 +355,7 @@ class ResourceProjectsInstancesTables protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsInstancesTablesTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsInstancesTablesTestiampermissions,

@@ -1,5 +1,6 @@
 package typings.pulumiAws.privateDnsNamespaceMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -38,6 +39,10 @@ class PrivateDnsNamespace protected () extends CustomResource {
     */
   val name: Output_[String] = js.native
   /**
+    * A map of tags to assign to the namespace.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  /**
     * The ID of VPC that you want to associate the namespace with.
     */
   val vpc: Output_[String] = js.native
@@ -54,8 +59,10 @@ object PrivateDnsNamespace extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): PrivateDnsNamespace = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PrivateDnsNamespace = js.native
   def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState): PrivateDnsNamespace = js.native
   def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState, opts: CustomResourceOptions): PrivateDnsNamespace = js.native
   /**

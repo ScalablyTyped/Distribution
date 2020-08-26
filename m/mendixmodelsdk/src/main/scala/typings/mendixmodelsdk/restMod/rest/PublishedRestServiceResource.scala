@@ -32,9 +32,9 @@ class PublishedRestServiceResource protected () extends Element {
   var model_FPublishedRestServiceResource: IModel = js.native
   def containerAsPublishedRestService: PublishedRestService = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def operations: IList[PublishedRestServiceOperation] = js.native
 }
 

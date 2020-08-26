@@ -1,8 +1,8 @@
 package typings.openfin.viewViewMod
 
 import typings.openfin.anon.PartialViewOptions
-import typings.openfin.anon.PickBoundsheightwidthtopl
 import typings.openfin.identityMod.Identity
+import typings.openfin.shapesMod.ViewBounds
 import typings.openfin.viewMod.ViewEvents
 import typings.openfin.webcontentsWebcontentsMod.WebContents
 import typings.openfin.windowOptionMod.WindowOption
@@ -15,26 +15,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class View protected () extends WebContents[ViewEvents] {
   def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
-  /**
-    * Executes Javascript on the view, restricted to contents you own or contents owned by
-    * applications you have created.
-    * @param { string } code JavaScript code to be executed on the view.
-    * @function executeJavaScript
-    * @memberOf View
-    * @instance
-    * @return {Promise.<void>}
-    * @tutorial View.executeJavaScript
-    */
-  /**
-    * Focuses the view
-    * @return {Promise.<void>}
-    * @function focus
-    * @memberof View
-    * @emits focused
-    * @instance
-    * @tutorial View.focus
-    * @experimental
-    */
   /**
     * Returns the zoom level of the view.
     * @function getZoomLevel
@@ -200,7 +180,7 @@ class View protected () extends WebContents[ViewEvents] {
     * @tutorial View.setBounds
     * @experimental
     */
-  def setBounds(bounds: PickBoundsheightwidthtopl): js.Promise[Unit] = js.native
+  def setBounds(bounds: ViewBounds): js.Promise[Unit] = js.native
   /**
     * Sets a custom window handler. Only works if experimental child windows are enabled for the view.
     * Takes a match pattern or array of match patterns for which to call the handler.

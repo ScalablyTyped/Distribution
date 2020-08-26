@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/collections/lib/linkedlist", "LinkedList")
+@JSImport("@lumino/collections/types/linkedlist", "LinkedList")
 @js.native
 /**
   * Construct a new linked list.
@@ -123,7 +123,6 @@ class LinkedList_[T] ()
     * Linear.
     */
   def clear(): Unit = js.native
-  def insertAfter(value: T): INode[T] = js.native
   /**
     * Insert a value after a specific node in the list.
     *
@@ -140,8 +139,8 @@ class LinkedList_[T] ()
     * #### Complexity
     * Constant.
     */
+  def insertAfter(value: T): INode[T] = js.native
   def insertAfter(value: T, ref: INode[T]): INode[T] = js.native
-  def insertBefore(value: T): INode[T] = js.native
   /**
     * Insert a value before a specific node in the list.
     *
@@ -158,20 +157,8 @@ class LinkedList_[T] ()
     * #### Complexity
     * Constant.
     */
+  def insertBefore(value: T): INode[T] = js.native
   def insertBefore(value: T, ref: INode[T]): INode[T] = js.native
-  /**
-    * Get an iterator over the object's values.
-    *
-    * @returns An iterator which yields the object's values.
-    *
-    * #### Notes
-    * Depending on the iterable, the returned iterator may or may not be
-    * a new object. A collection or other container-like object should
-    * typically return a new iterator, while an iterator itself should
-    * normally return `this`.
-    */
-  /* CompleteClass */
-  override def iter(): IIterator[T] = js.native
   /**
     * Create an iterator over the nodes in the list.
     *
@@ -235,13 +222,6 @@ class LinkedList_[T] ()
     * The node must be owned by the list.
     */
   def removeNode(node: INode[T]): Unit = js.native
-  /**
-    * Get a reverse iterator over the object's values.
-    *
-    * @returns An iterator which yields the object's values in reverse.
-    */
-  /* CompleteClass */
-  override def retro(): IIterator[T] = js.native
   /**
     * Create a reverse iterator over the nodes in the list.
     *

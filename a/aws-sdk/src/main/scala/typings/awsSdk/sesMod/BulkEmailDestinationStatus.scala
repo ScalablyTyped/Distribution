@@ -22,12 +22,34 @@ trait BulkEmailDestinationStatus extends js.Object {
 
 object BulkEmailDestinationStatus {
   @scala.inline
-  def apply(Error: Error = null, MessageId: MessageId = null, Status: BulkEmailStatus = null): BulkEmailDestinationStatus = {
+  def apply(): BulkEmailDestinationStatus = {
     val __obj = js.Dynamic.literal()
-    if (Error != null) __obj.updateDynamic("Error")(Error.asInstanceOf[js.Any])
-    if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkEmailDestinationStatus]
   }
+  @scala.inline
+  implicit class BulkEmailDestinationStatusOps[Self <: BulkEmailDestinationStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: Error): Self = this.set("Error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("Error", js.undefined)
+    @scala.inline
+    def setMessageId(value: MessageId): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageId: Self = this.set("MessageId", js.undefined)
+    @scala.inline
+    def setStatus(value: BulkEmailStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

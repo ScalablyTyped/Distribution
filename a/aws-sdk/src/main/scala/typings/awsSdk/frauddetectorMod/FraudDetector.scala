@@ -52,12 +52,25 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDetectorVersionResult, Unit]
   ): Request[CreateDetectorVersionResult, AWSError] = js.native
   /**
-    * Creates a version of the model using the specified model type. 
+    * Creates a model using the specified model type.
+    */
+  def createModel(): Request[CreateModelResult, AWSError] = js.native
+  def createModel(callback: js.Function2[/* err */ AWSError, /* data */ CreateModelResult, Unit]): Request[CreateModelResult, AWSError] = js.native
+  /**
+    * Creates a model using the specified model type.
+    */
+  def createModel(params: CreateModelRequest): Request[CreateModelResult, AWSError] = js.native
+  def createModel(
+    params: CreateModelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateModelResult, Unit]
+  ): Request[CreateModelResult, AWSError] = js.native
+  /**
+    * Creates a version of the model using the specified model type and model id. 
     */
   def createModelVersion(): Request[CreateModelVersionResult, AWSError] = js.native
   def createModelVersion(callback: js.Function2[/* err */ AWSError, /* data */ CreateModelVersionResult, Unit]): Request[CreateModelVersionResult, AWSError] = js.native
   /**
-    * Creates a version of the model using the specified model type. 
+    * Creates a version of the model using the specified model type and model id. 
     */
   def createModelVersion(params: CreateModelVersionRequest): Request[CreateModelVersionResult, AWSError] = js.native
   def createModelVersion(
@@ -130,18 +143,18 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventResult, Unit]
   ): Request[DeleteEventResult, AWSError] = js.native
   /**
-    * Deletes the rule version. You cannot delete a rule version if it is used by an ACTIVE or INACTIVE detector version.
+    * Deletes the rule. You cannot delete a rule if it is used by an ACTIVE or INACTIVE detector version.
     */
-  def deleteRuleVersion(): Request[DeleteRuleVersionResult, AWSError] = js.native
-  def deleteRuleVersion(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRuleVersionResult, Unit]): Request[DeleteRuleVersionResult, AWSError] = js.native
+  def deleteRule(): Request[DeleteRuleResult, AWSError] = js.native
+  def deleteRule(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRuleResult, Unit]): Request[DeleteRuleResult, AWSError] = js.native
   /**
-    * Deletes the rule version. You cannot delete a rule version if it is used by an ACTIVE or INACTIVE detector version.
+    * Deletes the rule. You cannot delete a rule if it is used by an ACTIVE or INACTIVE detector version.
     */
-  def deleteRuleVersion(params: DeleteRuleVersionRequest): Request[DeleteRuleVersionResult, AWSError] = js.native
-  def deleteRuleVersion(
-    params: DeleteRuleVersionRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRuleVersionResult, Unit]
-  ): Request[DeleteRuleVersionResult, AWSError] = js.native
+  def deleteRule(params: DeleteRuleRequest): Request[DeleteRuleResult, AWSError] = js.native
+  def deleteRule(
+    params: DeleteRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRuleResult, Unit]
+  ): Request[DeleteRuleResult, AWSError] = js.native
   /**
     * Gets all versions for a specified detector.
     */
@@ -182,12 +195,12 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDetectorVersionResult, Unit]
   ): Request[GetDetectorVersionResult, AWSError] = js.native
   /**
-    * Gets all of detectors. This is a paginated API. If you provide a null maxSizePerPage, this actions retrieves a maximum of 10 records per page. If you provide a maxSizePerPage, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetEventTypesResponse as part of your request. A null pagination token fetches the records from the beginning. 
+    * Gets all detectors or a single detector if a detectorId is specified. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetDetectorsResponse as part of your request. A null pagination token fetches the records from the beginning. 
     */
   def getDetectors(): Request[GetDetectorsResult, AWSError] = js.native
   def getDetectors(callback: js.Function2[/* err */ AWSError, /* data */ GetDetectorsResult, Unit]): Request[GetDetectorsResult, AWSError] = js.native
   /**
-    * Gets all of detectors. This is a paginated API. If you provide a null maxSizePerPage, this actions retrieves a maximum of 10 records per page. If you provide a maxSizePerPage, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetEventTypesResponse as part of your request. A null pagination token fetches the records from the beginning. 
+    * Gets all detectors or a single detector if a detectorId is specified. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetDetectorsResponse as part of your request. A null pagination token fetches the records from the beginning. 
     */
   def getDetectors(params: GetDetectorsRequest): Request[GetDetectorsResult, AWSError] = js.native
   def getDetectors(
@@ -195,12 +208,51 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDetectorsResult, Unit]
   ): Request[GetDetectorsResult, AWSError] = js.native
   /**
-    * Gets the details for one or more Amazon SageMaker models that have been imported into the service. This is a paginated API. If you provide a null maxSizePerPage, this actions retrieves a maximum of 10 records per page. If you provide a maxSizePerPage, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetExternalModelsResult as part of your request. A null pagination token fetches the records from the beginning. 
+    * Gets all entity types or a specific entity type if a name is specified. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetEntityTypesResponse as part of your request. A null pagination token fetches the records from the beginning. 
+    */
+  def getEntityTypes(): Request[GetEntityTypesResult, AWSError] = js.native
+  def getEntityTypes(callback: js.Function2[/* err */ AWSError, /* data */ GetEntityTypesResult, Unit]): Request[GetEntityTypesResult, AWSError] = js.native
+  /**
+    * Gets all entity types or a specific entity type if a name is specified. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetEntityTypesResponse as part of your request. A null pagination token fetches the records from the beginning. 
+    */
+  def getEntityTypes(params: GetEntityTypesRequest): Request[GetEntityTypesResult, AWSError] = js.native
+  def getEntityTypes(
+    params: GetEntityTypesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEntityTypesResult, Unit]
+  ): Request[GetEntityTypesResult, AWSError] = js.native
+  /**
+    * Evaluates an event against a detector version. If a version ID is not provided, the detector’s (ACTIVE) version is used.
+    */
+  def getEventPrediction(): Request[GetEventPredictionResult, AWSError] = js.native
+  def getEventPrediction(callback: js.Function2[/* err */ AWSError, /* data */ GetEventPredictionResult, Unit]): Request[GetEventPredictionResult, AWSError] = js.native
+  /**
+    * Evaluates an event against a detector version. If a version ID is not provided, the detector’s (ACTIVE) version is used.
+    */
+  def getEventPrediction(params: GetEventPredictionRequest): Request[GetEventPredictionResult, AWSError] = js.native
+  def getEventPrediction(
+    params: GetEventPredictionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEventPredictionResult, Unit]
+  ): Request[GetEventPredictionResult, AWSError] = js.native
+  /**
+    * Gets all event types or a specific event type if name is provided. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetEventTypesResponse as part of your request. A null pagination token fetches the records from the beginning. 
+    */
+  def getEventTypes(): Request[GetEventTypesResult, AWSError] = js.native
+  def getEventTypes(callback: js.Function2[/* err */ AWSError, /* data */ GetEventTypesResult, Unit]): Request[GetEventTypesResult, AWSError] = js.native
+  /**
+    * Gets all event types or a specific event type if name is provided. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetEventTypesResponse as part of your request. A null pagination token fetches the records from the beginning. 
+    */
+  def getEventTypes(params: GetEventTypesRequest): Request[GetEventTypesResult, AWSError] = js.native
+  def getEventTypes(
+    params: GetEventTypesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEventTypesResult, Unit]
+  ): Request[GetEventTypesResult, AWSError] = js.native
+  /**
+    * Gets the details for one or more Amazon SageMaker models that have been imported into the service. This is a paginated API. If you provide a null maxResults, this actions retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetExternalModelsResult as part of your request. A null pagination token fetches the records from the beginning. 
     */
   def getExternalModels(): Request[GetExternalModelsResult, AWSError] = js.native
   def getExternalModels(callback: js.Function2[/* err */ AWSError, /* data */ GetExternalModelsResult, Unit]): Request[GetExternalModelsResult, AWSError] = js.native
   /**
-    * Gets the details for one or more Amazon SageMaker models that have been imported into the service. This is a paginated API. If you provide a null maxSizePerPage, this actions retrieves a maximum of 10 records per page. If you provide a maxSizePerPage, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetExternalModelsResult as part of your request. A null pagination token fetches the records from the beginning. 
+    * Gets the details for one or more Amazon SageMaker models that have been imported into the service. This is a paginated API. If you provide a null maxResults, this actions retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetExternalModelsResult as part of your request. A null pagination token fetches the records from the beginning. 
     */
   def getExternalModels(params: GetExternalModelsRequest): Request[GetExternalModelsResult, AWSError] = js.native
   def getExternalModels(
@@ -208,12 +260,30 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetExternalModelsResult, Unit]
   ): Request[GetExternalModelsResult, AWSError] = js.native
   /**
-    * Gets a model version. 
+    * Gets the encryption key if a Key Management Service (KMS) customer master key (CMK) has been specified to be used to encrypt content in Amazon Fraud Detector.
+    */
+  def getKMSEncryptionKey(): Request[GetKMSEncryptionKeyResult, AWSError] = js.native
+  def getKMSEncryptionKey(callback: js.Function2[/* err */ AWSError, /* data */ GetKMSEncryptionKeyResult, Unit]): Request[GetKMSEncryptionKeyResult, AWSError] = js.native
+  /**
+    * Gets all labels or a specific label if name is provided. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 50 records per page. If you provide a maxResults, the value must be between 10 and 50. To get the next page results, provide the pagination token from the GetGetLabelsResponse as part of your request. A null pagination token fetches the records from the beginning. 
+    */
+  def getLabels(): Request[GetLabelsResult, AWSError] = js.native
+  def getLabels(callback: js.Function2[/* err */ AWSError, /* data */ GetLabelsResult, Unit]): Request[GetLabelsResult, AWSError] = js.native
+  /**
+    * Gets all labels or a specific label if name is provided. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 50 records per page. If you provide a maxResults, the value must be between 10 and 50. To get the next page results, provide the pagination token from the GetGetLabelsResponse as part of your request. A null pagination token fetches the records from the beginning. 
+    */
+  def getLabels(params: GetLabelsRequest): Request[GetLabelsResult, AWSError] = js.native
+  def getLabels(
+    params: GetLabelsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLabelsResult, Unit]
+  ): Request[GetLabelsResult, AWSError] = js.native
+  /**
+    * Gets the details of the specified model version.
     */
   def getModelVersion(): Request[GetModelVersionResult, AWSError] = js.native
   def getModelVersion(callback: js.Function2[/* err */ AWSError, /* data */ GetModelVersionResult, Unit]): Request[GetModelVersionResult, AWSError] = js.native
   /**
-    * Gets a model version. 
+    * Gets the details of the specified model version.
     */
   def getModelVersion(params: GetModelVersionRequest): Request[GetModelVersionResult, AWSError] = js.native
   def getModelVersion(
@@ -221,12 +291,12 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetModelVersionResult, Unit]
   ): Request[GetModelVersionResult, AWSError] = js.native
   /**
-    * Gets all of the models for the AWS account, or the specified model type, or gets a single model for the specified model type, model ID combination. 
+    * Gets one or more models. Gets all models for the AWS account if no model type and no model id provided. Gets all models for the AWS account and model type, if the model type is specified but model id is not provided. Gets a specific model if (model type, model id) tuple is specified.  This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 1 and 10. To get the next page results, provide the pagination token from the response as part of your request. A null pagination token fetches the records from the beginning.
     */
   def getModels(): Request[GetModelsResult, AWSError] = js.native
   def getModels(callback: js.Function2[/* err */ AWSError, /* data */ GetModelsResult, Unit]): Request[GetModelsResult, AWSError] = js.native
   /**
-    * Gets all of the models for the AWS account, or the specified model type, or gets a single model for the specified model type, model ID combination. 
+    * Gets one or more models. Gets all models for the AWS account if no model type and no model id provided. Gets all models for the AWS account and model type, if the model type is specified but model id is not provided. Gets a specific model if (model type, model id) tuple is specified.  This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 1 and 10. To get the next page results, provide the pagination token from the response as part of your request. A null pagination token fetches the records from the beginning.
     */
   def getModels(params: GetModelsRequest): Request[GetModelsResult, AWSError] = js.native
   def getModels(
@@ -234,12 +304,12 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetModelsResult, Unit]
   ): Request[GetModelsResult, AWSError] = js.native
   /**
-    * Gets one or more outcomes. This is a paginated API. If you provide a null maxSizePerPage, this actions retrieves a maximum of 10 records per page. If you provide a maxSizePerPage, the value must be between 50 and 100. To get the next page results, provide the pagination token from the GetOutcomesResult as part of your request. A null pagination token fetches the records from the beginning. 
+    * Gets one or more outcomes. This is a paginated API. If you provide a null maxResults, this actions retrieves a maximum of 100 records per page. If you provide a maxResults, the value must be between 50 and 100. To get the next page results, provide the pagination token from the GetOutcomesResult as part of your request. A null pagination token fetches the records from the beginning. 
     */
   def getOutcomes(): Request[GetOutcomesResult, AWSError] = js.native
   def getOutcomes(callback: js.Function2[/* err */ AWSError, /* data */ GetOutcomesResult, Unit]): Request[GetOutcomesResult, AWSError] = js.native
   /**
-    * Gets one or more outcomes. This is a paginated API. If you provide a null maxSizePerPage, this actions retrieves a maximum of 10 records per page. If you provide a maxSizePerPage, the value must be between 50 and 100. To get the next page results, provide the pagination token from the GetOutcomesResult as part of your request. A null pagination token fetches the records from the beginning. 
+    * Gets one or more outcomes. This is a paginated API. If you provide a null maxResults, this actions retrieves a maximum of 100 records per page. If you provide a maxResults, the value must be between 50 and 100. To get the next page results, provide the pagination token from the GetOutcomesResult as part of your request. A null pagination token fetches the records from the beginning. 
     */
   def getOutcomes(params: GetOutcomesRequest): Request[GetOutcomesResult, AWSError] = js.native
   def getOutcomes(
@@ -247,25 +317,12 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetOutcomesResult, Unit]
   ): Request[GetOutcomesResult, AWSError] = js.native
   /**
-    * Evaluates an event against a detector version. If a version ID is not provided, the detector’s (ACTIVE) version is used. 
-    */
-  def getPrediction(): Request[GetPredictionResult, AWSError] = js.native
-  def getPrediction(callback: js.Function2[/* err */ AWSError, /* data */ GetPredictionResult, Unit]): Request[GetPredictionResult, AWSError] = js.native
-  /**
-    * Evaluates an event against a detector version. If a version ID is not provided, the detector’s (ACTIVE) version is used. 
-    */
-  def getPrediction(params: GetPredictionRequest): Request[GetPredictionResult, AWSError] = js.native
-  def getPrediction(
-    params: GetPredictionRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ GetPredictionResult, Unit]
-  ): Request[GetPredictionResult, AWSError] = js.native
-  /**
-    * Gets all rules available for the specified detector.
+    * Get all rules for a detector (paginated) if ruleId and ruleVersion are not specified. Gets all rules for the detector and the ruleId if present (paginated). Gets a specific rule if both the ruleId and the ruleVersion are specified. This is a paginated API. Providing null maxResults results in retrieving maximum of 100 records per page. If you provide maxResults the value must be between 50 and 100. To get the next page result, a provide a pagination token from GetRulesResult as part of your request. Null pagination token fetches the records from the beginning.
     */
   def getRules(): Request[GetRulesResult, AWSError] = js.native
   def getRules(callback: js.Function2[/* err */ AWSError, /* data */ GetRulesResult, Unit]): Request[GetRulesResult, AWSError] = js.native
   /**
-    * Gets all rules available for the specified detector.
+    * Get all rules for a detector (paginated) if ruleId and ruleVersion are not specified. Gets all rules for the detector and the ruleId if present (paginated). Gets a specific rule if both the ruleId and the ruleVersion are specified. This is a paginated API. Providing null maxResults results in retrieving maximum of 100 records per page. If you provide maxResults the value must be between 50 and 100. To get the next page result, a provide a pagination token from GetRulesResult as part of your request. Null pagination token fetches the records from the beginning.
     */
   def getRules(params: GetRulesRequest): Request[GetRulesResult, AWSError] = js.native
   def getRules(
@@ -286,6 +343,19 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetVariablesResult, Unit]
   ): Request[GetVariablesResult, AWSError] = js.native
   /**
+    * Lists all tags associated with the resource. This is a paginated API. To get the next page results, provide the pagination token from the response as part of your request. A null pagination token fetches the records from the beginning. 
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResult, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResult, Unit]): Request[ListTagsForResourceResult, AWSError] = js.native
+  /**
+    * Lists all tags associated with the resource. This is a paginated API. To get the next page results, provide the pagination token from the response as part of your request. A null pagination token fetches the records from the beginning. 
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResult, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResult, Unit]
+  ): Request[ListTagsForResourceResult, AWSError] = js.native
+  /**
     * Creates or updates a detector. 
     */
   def putDetector(): Request[PutDetectorResult, AWSError] = js.native
@@ -298,6 +368,32 @@ trait FraudDetector extends Service {
     params: PutDetectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutDetectorResult, Unit]
   ): Request[PutDetectorResult, AWSError] = js.native
+  /**
+    * Creates or updates an entity type. An entity represents who is performing the event. As part of a fraud prediction, you pass the entity ID to indicate the specific entity who performed the event. An entity type classifies the entity. Example classifications include customer, merchant, or account.
+    */
+  def putEntityType(): Request[PutEntityTypeResult, AWSError] = js.native
+  def putEntityType(callback: js.Function2[/* err */ AWSError, /* data */ PutEntityTypeResult, Unit]): Request[PutEntityTypeResult, AWSError] = js.native
+  /**
+    * Creates or updates an entity type. An entity represents who is performing the event. As part of a fraud prediction, you pass the entity ID to indicate the specific entity who performed the event. An entity type classifies the entity. Example classifications include customer, merchant, or account.
+    */
+  def putEntityType(params: PutEntityTypeRequest): Request[PutEntityTypeResult, AWSError] = js.native
+  def putEntityType(
+    params: PutEntityTypeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutEntityTypeResult, Unit]
+  ): Request[PutEntityTypeResult, AWSError] = js.native
+  /**
+    * Creates or updates an event type. An event is a business activity that is evaluated for fraud risk. With Amazon Fraud Detector, you generate fraud predictions for events. An event type defines the structure for an event sent to Amazon Fraud Detector. This includes the variables sent as part of the event, the entity performing the event (such as a customer), and the labels that classify the event. Example event types include online payment transactions, account registrations, and authentications.
+    */
+  def putEventType(): Request[PutEventTypeResult, AWSError] = js.native
+  def putEventType(callback: js.Function2[/* err */ AWSError, /* data */ PutEventTypeResult, Unit]): Request[PutEventTypeResult, AWSError] = js.native
+  /**
+    * Creates or updates an event type. An event is a business activity that is evaluated for fraud risk. With Amazon Fraud Detector, you generate fraud predictions for events. An event type defines the structure for an event sent to Amazon Fraud Detector. This includes the variables sent as part of the event, the entity performing the event (such as a customer), and the labels that classify the event. Example event types include online payment transactions, account registrations, and authentications.
+    */
+  def putEventType(params: PutEventTypeRequest): Request[PutEventTypeResult, AWSError] = js.native
+  def putEventType(
+    params: PutEventTypeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutEventTypeResult, Unit]
+  ): Request[PutEventTypeResult, AWSError] = js.native
   /**
     * Creates or updates an Amazon SageMaker model endpoint. You can also use this action to update the configuration of the model endpoint, including the IAM role and/or the mapped variables. 
     */
@@ -312,18 +408,31 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutExternalModelResult, Unit]
   ): Request[PutExternalModelResult, AWSError] = js.native
   /**
-    * Creates or updates a model. 
+    * Specifies the Key Management Service (KMS) customer master key (CMK) to be used to encrypt content in Amazon Fraud Detector.
     */
-  def putModel(): Request[PutModelResult, AWSError] = js.native
-  def putModel(callback: js.Function2[/* err */ AWSError, /* data */ PutModelResult, Unit]): Request[PutModelResult, AWSError] = js.native
+  def putKMSEncryptionKey(): Request[PutKMSEncryptionKeyResult, AWSError] = js.native
+  def putKMSEncryptionKey(callback: js.Function2[/* err */ AWSError, /* data */ PutKMSEncryptionKeyResult, Unit]): Request[PutKMSEncryptionKeyResult, AWSError] = js.native
   /**
-    * Creates or updates a model. 
+    * Specifies the Key Management Service (KMS) customer master key (CMK) to be used to encrypt content in Amazon Fraud Detector.
     */
-  def putModel(params: PutModelRequest): Request[PutModelResult, AWSError] = js.native
-  def putModel(
-    params: PutModelRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ PutModelResult, Unit]
-  ): Request[PutModelResult, AWSError] = js.native
+  def putKMSEncryptionKey(params: PutKMSEncryptionKeyRequest): Request[PutKMSEncryptionKeyResult, AWSError] = js.native
+  def putKMSEncryptionKey(
+    params: PutKMSEncryptionKeyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutKMSEncryptionKeyResult, Unit]
+  ): Request[PutKMSEncryptionKeyResult, AWSError] = js.native
+  /**
+    * Creates or updates label. A label classifies an event as fraudulent or legitimate. Labels are associated with event types and used to train supervised machine learning models in Amazon Fraud Detector. 
+    */
+  def putLabel(): Request[PutLabelResult, AWSError] = js.native
+  def putLabel(callback: js.Function2[/* err */ AWSError, /* data */ PutLabelResult, Unit]): Request[PutLabelResult, AWSError] = js.native
+  /**
+    * Creates or updates label. A label classifies an event as fraudulent or legitimate. Labels are associated with event types and used to train supervised machine learning models in Amazon Fraud Detector. 
+    */
+  def putLabel(params: PutLabelRequest): Request[PutLabelResult, AWSError] = js.native
+  def putLabel(
+    params: PutLabelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutLabelResult, Unit]
+  ): Request[PutLabelResult, AWSError] = js.native
   /**
     * Creates or updates an outcome. 
     */
@@ -338,12 +447,38 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutOutcomeResult, Unit]
   ): Request[PutOutcomeResult, AWSError] = js.native
   /**
-    *  Updates a detector version. The detector version attributes that you can update include models, external model endpoints, rules, and description. You can only update a DRAFT detector version.
+    * Assigns tags to a resource.
+    */
+  def tagResource(): Request[TagResourceResult, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResult, Unit]): Request[TagResourceResult, AWSError] = js.native
+  /**
+    * Assigns tags to a resource.
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResult, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResult, Unit]
+  ): Request[TagResourceResult, AWSError] = js.native
+  /**
+    * Removes tags from a resource.
+    */
+  def untagResource(): Request[UntagResourceResult, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResult, Unit]): Request[UntagResourceResult, AWSError] = js.native
+  /**
+    * Removes tags from a resource.
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResult, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResult, Unit]
+  ): Request[UntagResourceResult, AWSError] = js.native
+  /**
+    *  Updates a detector version. The detector version attributes that you can update include models, external model endpoints, rules, rule execution mode, and description. You can only update a DRAFT detector version.
     */
   def updateDetectorVersion(): Request[UpdateDetectorVersionResult, AWSError] = js.native
   def updateDetectorVersion(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDetectorVersionResult, Unit]): Request[UpdateDetectorVersionResult, AWSError] = js.native
   /**
-    *  Updates a detector version. The detector version attributes that you can update include models, external model endpoints, rules, and description. You can only update a DRAFT detector version.
+    *  Updates a detector version. The detector version attributes that you can update include models, external model endpoints, rules, rule execution mode, and description. You can only update a DRAFT detector version.
     */
   def updateDetectorVersion(params: UpdateDetectorVersionRequest): Request[UpdateDetectorVersionResult, AWSError] = js.native
   def updateDetectorVersion(
@@ -377,12 +512,25 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDetectorVersionStatusResult, Unit]
   ): Request[UpdateDetectorVersionStatusResult, AWSError] = js.native
   /**
-    * Updates a model version. You can update the description and status attributes using this action. You can perform the following status updates:    Change the TRAINING_COMPLETE status to ACTIVE    Change ACTIVE back to TRAINING_COMPLETE   
+    * Updates a model. You can update the description attribute using this action.
+    */
+  def updateModel(): Request[UpdateModelResult, AWSError] = js.native
+  def updateModel(callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelResult, Unit]): Request[UpdateModelResult, AWSError] = js.native
+  /**
+    * Updates a model. You can update the description attribute using this action.
+    */
+  def updateModel(params: UpdateModelRequest): Request[UpdateModelResult, AWSError] = js.native
+  def updateModel(
+    params: UpdateModelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelResult, Unit]
+  ): Request[UpdateModelResult, AWSError] = js.native
+  /**
+    * Updates a model version. Updating a model version retrains an existing model version using updated training data and produces a new minor version of the model. You can update the training data set location and data access role attributes using this action. This action creates and trains a new minor version of the model, for example version 1.01, 1.02, 1.03.
     */
   def updateModelVersion(): Request[UpdateModelVersionResult, AWSError] = js.native
   def updateModelVersion(callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelVersionResult, Unit]): Request[UpdateModelVersionResult, AWSError] = js.native
   /**
-    * Updates a model version. You can update the description and status attributes using this action. You can perform the following status updates:    Change the TRAINING_COMPLETE status to ACTIVE    Change ACTIVE back to TRAINING_COMPLETE   
+    * Updates a model version. Updating a model version retrains an existing model version using updated training data and produces a new minor version of the model. You can update the training data set location and data access role attributes using this action. This action creates and trains a new minor version of the model, for example version 1.01, 1.02, 1.03.
     */
   def updateModelVersion(params: UpdateModelVersionRequest): Request[UpdateModelVersionResult, AWSError] = js.native
   def updateModelVersion(
@@ -390,12 +538,25 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelVersionResult, Unit]
   ): Request[UpdateModelVersionResult, AWSError] = js.native
   /**
-    * Updates a rule's metadata. 
+    * Updates the status of a model version. You can perform the following status updates:   Change the TRAINING_COMPLETE status to ACTIVE.   Change ACTIVEto INACTIVE.  
+    */
+  def updateModelVersionStatus(): Request[UpdateModelVersionStatusResult, AWSError] = js.native
+  def updateModelVersionStatus(callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelVersionStatusResult, Unit]): Request[UpdateModelVersionStatusResult, AWSError] = js.native
+  /**
+    * Updates the status of a model version. You can perform the following status updates:   Change the TRAINING_COMPLETE status to ACTIVE.   Change ACTIVEto INACTIVE.  
+    */
+  def updateModelVersionStatus(params: UpdateModelVersionStatusRequest): Request[UpdateModelVersionStatusResult, AWSError] = js.native
+  def updateModelVersionStatus(
+    params: UpdateModelVersionStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelVersionStatusResult, Unit]
+  ): Request[UpdateModelVersionStatusResult, AWSError] = js.native
+  /**
+    * Updates a rule's metadata. The description attribute can be updated.
     */
   def updateRuleMetadata(): Request[UpdateRuleMetadataResult, AWSError] = js.native
   def updateRuleMetadata(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRuleMetadataResult, Unit]): Request[UpdateRuleMetadataResult, AWSError] = js.native
   /**
-    * Updates a rule's metadata. 
+    * Updates a rule's metadata. The description attribute can be updated.
     */
   def updateRuleMetadata(params: UpdateRuleMetadataRequest): Request[UpdateRuleMetadataResult, AWSError] = js.native
   def updateRuleMetadata(
@@ -403,12 +564,12 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRuleMetadataResult, Unit]
   ): Request[UpdateRuleMetadataResult, AWSError] = js.native
   /**
-    * Updates a rule version resulting in a new rule version. 
+    * Updates a rule version resulting in a new rule version. Updates a rule version resulting in a new rule version (version 1, 2, 3 ...). 
     */
   def updateRuleVersion(): Request[UpdateRuleVersionResult, AWSError] = js.native
   def updateRuleVersion(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRuleVersionResult, Unit]): Request[UpdateRuleVersionResult, AWSError] = js.native
   /**
-    * Updates a rule version resulting in a new rule version. 
+    * Updates a rule version resulting in a new rule version. Updates a rule version resulting in a new rule version (version 1, 2, 3 ...). 
     */
   def updateRuleVersion(params: UpdateRuleVersionRequest): Request[UpdateRuleVersionResult, AWSError] = js.native
   def updateRuleVersion(

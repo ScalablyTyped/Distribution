@@ -5,81 +5,122 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataSourceColumn extends js.Object {
   /** Allows you to filter the report by using advanced filtering (e.g., Microsoft Excel) option for the OLAP data source in client-mode.
     * @Default {[]}
     */
-  var advancedFilter: js.UndefOr[js.Array[DataSourceColumnsAdvancedFilter]] = js.undefined
+  var advancedFilter: js.UndefOr[js.Array[DataSourceColumnsAdvancedFilter]] = js.native
   /** Allows you to set the custom theme for column headers.
     */
-  var cssClass: js.UndefOr[String] = js.undefined
+  var cssClass: js.UndefOr[String] = js.native
   /** Allows you to set the delimiter for date type format in the formatString. This is applicable for the groupByDate of row/column headers.
     */
-  var delimiter: js.UndefOr[String] = js.undefined
+  var delimiter: js.UndefOr[String] = js.native
   /** Contains the list of members need to be drilled down by default in the field.
     * @Default {[]}
     */
-  var drilledItems: js.UndefOr[js.Array[_]] = js.undefined
+  var drilledItems: js.UndefOr[js.Array[_]] = js.native
   /** Allows you to set the display caption for an item.
     */
-  var fieldCaption: js.UndefOr[String] = js.undefined
+  var fieldCaption: js.UndefOr[String] = js.native
   /** Allows you to bind the item by using its unique name as field name.
     */
-  var fieldName: js.UndefOr[String] = js.undefined
+  var fieldName: js.UndefOr[String] = js.native
   /** Applies the filter to field members.
     * @Default {null}
     */
-  var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.undefined
+  var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.native
   /** Allows you to set the format for column headers.
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
   /** This property is set to display the formatted values with format types in the PivotGrid.
     */
-  var formatString: js.UndefOr[String] = js.undefined
+  var formatString: js.UndefOr[String] = js.native
   /** Allows you to indicate whether the added item is a named set or not.
     * @Default {false}
     */
-  var isNamedSets: js.UndefOr[Boolean] = js.undefined
+  var isNamedSets: js.UndefOr[Boolean] = js.native
   /** Shows/hides the sub-total of the field in PivotGrid.
     * @Default {true}
     */
-  var showSubTotal: js.UndefOr[Boolean] = js.undefined
+  var showSubTotal: js.UndefOr[Boolean] = js.native
   /** Allows you to set the sorting order of members of the field.
     * @Default {ej.PivotAnalysis.SortOrder.Ascending}
     */
-  var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
+  var sortOrder: js.UndefOr[SortOrder | String] = js.native
 }
 
 object DataSourceColumn {
   @scala.inline
-  def apply(
-    advancedFilter: js.Array[DataSourceColumnsAdvancedFilter] = null,
-    cssClass: String = null,
-    delimiter: String = null,
-    drilledItems: js.Array[_] = null,
-    fieldCaption: String = null,
-    fieldName: String = null,
-    filterItems: DataSourceColumnsFilterItems = null,
-    format: String = null,
-    formatString: String = null,
-    isNamedSets: js.UndefOr[Boolean] = js.undefined,
-    showSubTotal: js.UndefOr[Boolean] = js.undefined,
-    sortOrder: SortOrder | String = null
-  ): DataSourceColumn = {
+  def apply(): DataSourceColumn = {
     val __obj = js.Dynamic.literal()
-    if (advancedFilter != null) __obj.updateDynamic("advancedFilter")(advancedFilter.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (drilledItems != null) __obj.updateDynamic("drilledItems")(drilledItems.asInstanceOf[js.Any])
-    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption.asInstanceOf[js.Any])
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
-    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formatString != null) __obj.updateDynamic("formatString")(formatString.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNamedSets)) __obj.updateDynamic("isNamedSets")(isNamedSets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSubTotal)) __obj.updateDynamic("showSubTotal")(showSubTotal.get.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceColumn]
   }
+  @scala.inline
+  implicit class DataSourceColumnOps[Self <: DataSourceColumn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvancedFilterVarargs(value: DataSourceColumnsAdvancedFilter*): Self = this.set("advancedFilter", js.Array(value :_*))
+    @scala.inline
+    def setAdvancedFilter(value: js.Array[DataSourceColumnsAdvancedFilter]): Self = this.set("advancedFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvancedFilter: Self = this.set("advancedFilter", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    @scala.inline
+    def setDrilledItemsVarargs(value: js.Any*): Self = this.set("drilledItems", js.Array(value :_*))
+    @scala.inline
+    def setDrilledItems(value: js.Array[_]): Self = this.set("drilledItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrilledItems: Self = this.set("drilledItems", js.undefined)
+    @scala.inline
+    def setFieldCaption(value: String): Self = this.set("fieldCaption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldCaption: Self = this.set("fieldCaption", js.undefined)
+    @scala.inline
+    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldName: Self = this.set("fieldName", js.undefined)
+    @scala.inline
+    def setFilterItems(value: DataSourceColumnsFilterItems): Self = this.set("filterItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterItems: Self = this.set("filterItems", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setFormatString(value: String): Self = this.set("formatString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatString: Self = this.set("formatString", js.undefined)
+    @scala.inline
+    def setIsNamedSets(value: Boolean): Self = this.set("isNamedSets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsNamedSets: Self = this.set("isNamedSets", js.undefined)
+    @scala.inline
+    def setShowSubTotal(value: Boolean): Self = this.set("showSubTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSubTotal: Self = this.set("showSubTotal", js.undefined)
+    @scala.inline
+    def setSortOrder(value: SortOrder | String): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+  }
+  
 }
 

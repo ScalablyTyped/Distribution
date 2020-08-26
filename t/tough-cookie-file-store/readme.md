@@ -12,7 +12,7 @@ Another file store for tough-cookie module
 | Keywords           | cookie, cookies, cookiejar, file, store |
 | # releases         | 0 |
 | # dependents       | 25 |
-| # downloads        | 73558 |
+| # downloads        | 71954 |
 | # stars            | 0 |
 
 ## Links

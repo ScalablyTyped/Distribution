@@ -18,11 +18,30 @@ trait Bumper extends js.Object {
 
 object Bumper {
   @scala.inline
-  def apply(EndUrl: string = null, StartUrl: string = null): Bumper = {
+  def apply(): Bumper = {
     val __obj = js.Dynamic.literal()
-    if (EndUrl != null) __obj.updateDynamic("EndUrl")(EndUrl.asInstanceOf[js.Any])
-    if (StartUrl != null) __obj.updateDynamic("StartUrl")(StartUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bumper]
   }
+  @scala.inline
+  implicit class BumperOps[Self <: Bumper] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndUrl(value: string): Self = this.set("EndUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndUrl: Self = this.set("EndUrl", js.undefined)
+    @scala.inline
+    def setStartUrl(value: string): Self = this.set("StartUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartUrl: Self = this.set("StartUrl", js.undefined)
+  }
+  
 }
 

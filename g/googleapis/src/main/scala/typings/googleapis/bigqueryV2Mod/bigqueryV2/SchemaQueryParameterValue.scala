@@ -24,16 +24,36 @@ trait SchemaQueryParameterValue extends js.Object {
 
 object SchemaQueryParameterValue {
   @scala.inline
-  def apply(
-    arrayValues: js.Array[SchemaQueryParameterValue] = null,
-    structValues: StringDictionary[SchemaQueryParameterValue] = null,
-    value: String = null
-  ): SchemaQueryParameterValue = {
+  def apply(): SchemaQueryParameterValue = {
     val __obj = js.Dynamic.literal()
-    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues.asInstanceOf[js.Any])
-    if (structValues != null) __obj.updateDynamic("structValues")(structValues.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQueryParameterValue]
   }
+  @scala.inline
+  implicit class SchemaQueryParameterValueOps[Self <: SchemaQueryParameterValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrayValuesVarargs(value: SchemaQueryParameterValue*): Self = this.set("arrayValues", js.Array(value :_*))
+    @scala.inline
+    def setArrayValues(value: js.Array[SchemaQueryParameterValue]): Self = this.set("arrayValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrayValues: Self = this.set("arrayValues", js.undefined)
+    @scala.inline
+    def setStructValues(value: StringDictionary[SchemaQueryParameterValue]): Self = this.set("structValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStructValues: Self = this.set("structValues", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

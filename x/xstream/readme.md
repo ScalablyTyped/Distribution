@@ -11,8 +11,8 @@ An extremely intuitive, small, and fast functional reactive stream library for J
 | Full name          | xstream |
 | Keywords           | - |
 | # releases         | 11 |
-| # dependents       | 189 |
-| # downloads        | 319430 |
+| # dependents       | 192 |
+| # downloads        | 318388 |
 | # stars            | 9 |
 
 ## Links

@@ -4,32 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OMath extends js.Object {
-  var AlignPoint: Double
-  val Application: typings.activexWord.Word.Application
-  val ArgIndex: Double
-  var ArgSize: Double
-  val Breaks: OMathBreaks
-  val Creator: Double
-  val Functions: OMathFunctions
-  var Justification: WdOMathJc
-  val NestingLevel: Double
-  val Parent: js.Any
-  val ParentArg: OMath
-  val ParentCol: OMathMatCol
-  val ParentFunction: OMathFunction
-  val ParentOMath: OMath
-  val ParentRow: OMathMatRow
-  val Range: typings.activexWord.Word.Range
-  var Type: WdOMathType
+  var AlignPoint: Double = js.native
+  val Application: typings.activexWord.Word.Application = js.native
+  val ArgIndex: Double = js.native
+  var ArgSize: Double = js.native
+  val Breaks: OMathBreaks = js.native
+  val Creator: Double = js.native
+  val Functions: OMathFunctions = js.native
+  var Justification: WdOMathJc = js.native
+  val NestingLevel: Double = js.native
+  val Parent: js.Any = js.native
+  val ParentArg: OMath = js.native
+  val ParentCol: OMathMatCol = js.native
+  val ParentFunction: OMathFunction = js.native
+  val ParentOMath: OMath = js.native
+  val ParentRow: OMathMatRow = js.native
+  val Range: typings.activexWord.Word.Range = js.native
+  var Type: WdOMathType = js.native
   @JSName("Word.OMath_typekey")
-  var WordDotOMath_typekey: OMath
-  def BuildUp(): Unit
-  def ConvertToLiteralText(): Unit
-  def ConvertToMathText(): Unit
-  def ConvertToNormalText(): Unit
-  def Linearize(): Unit
-  def Remove(): Unit
+  var WordDotOMath_typekey: OMath = js.native
+  def BuildUp(): Unit = js.native
+  def ConvertToLiteralText(): Unit = js.native
+  def ConvertToMathText(): Unit = js.native
+  def ConvertToNormalText(): Unit = js.native
+  def Linearize(): Unit = js.native
+  def Remove(): Unit = js.native
 }
 
 object OMath {
@@ -64,5 +65,66 @@ object OMath {
     __obj.updateDynamic("Word.OMath_typekey")(WordDotOMath_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OMath]
   }
+  @scala.inline
+  implicit class OMathOps[Self <: OMath] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignPoint(value: Double): Self = this.set("AlignPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArgIndex(value: Double): Self = this.set("ArgIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArgSize(value: Double): Self = this.set("ArgSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBreaks(value: OMathBreaks): Self = this.set("Breaks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBuildUp(value: () => Unit): Self = this.set("BuildUp", js.Any.fromFunction0(value))
+    @scala.inline
+    def setConvertToLiteralText(value: () => Unit): Self = this.set("ConvertToLiteralText", js.Any.fromFunction0(value))
+    @scala.inline
+    def setConvertToMathText(value: () => Unit): Self = this.set("ConvertToMathText", js.Any.fromFunction0(value))
+    @scala.inline
+    def setConvertToNormalText(value: () => Unit): Self = this.set("ConvertToNormalText", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFunctions(value: OMathFunctions): Self = this.set("Functions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJustification(value: WdOMathJc): Self = this.set("Justification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLinearize(value: () => Unit): Self = this.set("Linearize", js.Any.fromFunction0(value))
+    @scala.inline
+    def setNestingLevel(value: Double): Self = this.set("NestingLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParentArg(value: OMath): Self = this.set("ParentArg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParentCol(value: OMathMatCol): Self = this.set("ParentCol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParentFunction(value: OMathFunction): Self = this.set("ParentFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParentOMath(value: OMath): Self = this.set("ParentOMath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParentRow(value: OMathMatRow): Self = this.set("ParentRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRemove(value: () => Unit): Self = this.set("Remove", js.Any.fromFunction0(value))
+    @scala.inline
+    def setType(value: WdOMathType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordDotOMath_typekey(value: OMath): Self = this.set("Word.OMath_typekey", value.asInstanceOf[js.Any])
+  }
+  
 }
 

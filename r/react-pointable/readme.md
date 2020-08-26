@@ -11,8 +11,8 @@ Declarative pointer event binding. Works well alongside PEP.
 | Full name          | react-pointable |
 | Keywords           | pointer, events, pep, react |
 | # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 76134 |
+| # dependents       | 5 |
+| # downloads        | 63762 |
 | # stars            | 0 |
 
 ## Links

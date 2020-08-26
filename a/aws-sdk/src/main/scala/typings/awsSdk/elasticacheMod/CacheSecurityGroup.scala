@@ -30,20 +30,44 @@ trait CacheSecurityGroup extends js.Object {
 
 object CacheSecurityGroup {
   @scala.inline
-  def apply(
-    ARN: String = null,
-    CacheSecurityGroupName: String = null,
-    Description: String = null,
-    EC2SecurityGroups: EC2SecurityGroupList = null,
-    OwnerId: String = null
-  ): CacheSecurityGroup = {
+  def apply(): CacheSecurityGroup = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (CacheSecurityGroupName != null) __obj.updateDynamic("CacheSecurityGroupName")(CacheSecurityGroupName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EC2SecurityGroups != null) __obj.updateDynamic("EC2SecurityGroups")(EC2SecurityGroups.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheSecurityGroup]
   }
+  @scala.inline
+  implicit class CacheSecurityGroupOps[Self <: CacheSecurityGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setCacheSecurityGroupName(value: String): Self = this.set("CacheSecurityGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSecurityGroupName: Self = this.set("CacheSecurityGroupName", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEC2SecurityGroupsVarargs(value: EC2SecurityGroup*): Self = this.set("EC2SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setEC2SecurityGroups(value: EC2SecurityGroupList): Self = this.set("EC2SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEC2SecurityGroups: Self = this.set("EC2SecurityGroups", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+  }
+  
 }
 

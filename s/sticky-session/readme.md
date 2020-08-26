@@ -12,7 +12,7 @@ Sticky session balancer based on a `cluster` module
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 52 |
-| # downloads        | 128268 |
+| # downloads        | 129108 |
 | # stars            | 16 |
 
 ## Links

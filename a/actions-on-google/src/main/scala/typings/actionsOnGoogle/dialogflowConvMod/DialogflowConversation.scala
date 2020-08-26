@@ -154,6 +154,7 @@ class DialogflowConversation[TConvData, TUserStorage, TContexts /* <: Contexts *
     * @public
     */
   def followup(event: String): this.type = js.native
+  def followup(event: String, parameters: js.UndefOr[scala.Nothing], lang: String): this.type = js.native
   def followup(event: String, parameters: Parameters): this.type = js.native
   def followup(event: String, parameters: Parameters, lang: String): this.type = js.native
   /** @public */

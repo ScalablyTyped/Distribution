@@ -34,22 +34,46 @@ trait AuditCheckDetails extends js.Object {
 
 object AuditCheckDetails {
   @scala.inline
-  def apply(
-    checkCompliant: js.UndefOr[CheckCompliant] = js.undefined,
-    checkRunStatus: AuditCheckRunStatus = null,
-    errorCode: ErrorCode = null,
-    message: ErrorMessage = null,
-    nonCompliantResourcesCount: js.UndefOr[NonCompliantResourcesCount] = js.undefined,
-    totalResourcesCount: js.UndefOr[TotalResourcesCount] = js.undefined
-  ): AuditCheckDetails = {
+  def apply(): AuditCheckDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkCompliant)) __obj.updateDynamic("checkCompliant")(checkCompliant.get.asInstanceOf[js.Any])
-    if (checkRunStatus != null) __obj.updateDynamic("checkRunStatus")(checkRunStatus.asInstanceOf[js.Any])
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonCompliantResourcesCount)) __obj.updateDynamic("nonCompliantResourcesCount")(nonCompliantResourcesCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalResourcesCount)) __obj.updateDynamic("totalResourcesCount")(totalResourcesCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditCheckDetails]
   }
+  @scala.inline
+  implicit class AuditCheckDetailsOps[Self <: AuditCheckDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckCompliant(value: CheckCompliant): Self = this.set("checkCompliant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckCompliant: Self = this.set("checkCompliant", js.undefined)
+    @scala.inline
+    def setCheckRunStatus(value: AuditCheckRunStatus): Self = this.set("checkRunStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckRunStatus: Self = this.set("checkRunStatus", js.undefined)
+    @scala.inline
+    def setErrorCode(value: ErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    @scala.inline
+    def setMessage(value: ErrorMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setNonCompliantResourcesCount(value: NonCompliantResourcesCount): Self = this.set("nonCompliantResourcesCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonCompliantResourcesCount: Self = this.set("nonCompliantResourcesCount", js.undefined)
+    @scala.inline
+    def setTotalResourcesCount(value: TotalResourcesCount): Self = this.set("totalResourcesCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalResourcesCount: Self = this.set("totalResourcesCount", js.undefined)
+  }
+  
 }
 

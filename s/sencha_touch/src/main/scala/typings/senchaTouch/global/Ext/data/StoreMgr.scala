@@ -48,6 +48,7 @@ object StoreMgr extends js.Object {
     * @returns Object The item added.
     */
   def add(): js.Any = js.native
+  def add(key: js.UndefOr[scala.Nothing], item: js.Any): js.Any = js.native
   def add(key: String): js.Any = js.native
   def add(key: String, item: js.Any): js.Any = js.native
   /** [Method] Adds all elements of an Array or an Object to the collection
@@ -71,6 +72,7 @@ object StoreMgr extends js.Object {
     * @param defaultDirection String The default direction for each sorter in the array. Defaults to the value of defaultSortDirection. Can be either 'ASC' or 'DESC'.
     */
   def addSorter(): Unit = js.native
+  def addSorter(sorter: js.UndefOr[scala.Nothing], defaultDirection: String): Unit = js.native
   def addSorter(sorter: js.Any): Unit = js.native
   def addSorter(sorter: js.Any, defaultDirection: String): Unit = js.native
   /** [Method] This method adds all the sorters in a passed array
@@ -78,6 +80,7 @@ object StoreMgr extends js.Object {
     * @param defaultDirection String The default direction for each sorter in the array. Defaults to the value of defaultSortDirection. Can be either 'ASC' or 'DESC'.
     */
   def addSorters(): Unit = js.native
+  def addSorters(sorters: js.UndefOr[scala.Nothing], defaultDirection: String): Unit = js.native
   def addSorters(sorters: Array): Unit = js.native
   def addSorters(sorters: Array, defaultDirection: String): Unit = js.native
   /** [Method] Call the original method that was previously overridden with override  This method is deprecated as callParent does
@@ -119,6 +122,7 @@ object StoreMgr extends js.Object {
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
     */
   def each(): Unit = js.native
+  def each(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def each(fn: js.Any): Unit = js.native
   def each(fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Executes the specified function once for every key in the collection passing each key and its associated item as th
@@ -126,6 +130,7 @@ object StoreMgr extends js.Object {
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     */
   def eachKey(): Unit = js.native
+  def eachKey(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def eachKey(fn: js.Any): Unit = js.native
   def eachKey(fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] This method will sort a collection based on the currently configured sorters
@@ -136,8 +141,39 @@ object StoreMgr extends js.Object {
     * @returns Array
     */
   def filter(): Array = js.native
+  def filter(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: js.Any
+  ): Array = js.native
+  def filter(property: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], anyMatch: js.Any): Array = js.native
+  def filter(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    anyMatch: js.Any,
+    caseSensitive: js.Any
+  ): Array = js.native
+  def filter(property: js.UndefOr[scala.Nothing], value: js.Any): Array = js.native
+  def filter(
+    property: js.UndefOr[scala.Nothing],
+    value: js.Any,
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: js.Any
+  ): Array = js.native
+  def filter(property: js.UndefOr[scala.Nothing], value: js.Any, anyMatch: js.Any): Array = js.native
+  def filter(property: js.UndefOr[scala.Nothing], value: js.Any, anyMatch: js.Any, caseSensitive: js.Any): Array = js.native
   def filter(property: js.Any): Array = js.native
+  def filter(
+    property: js.Any,
+    value: js.UndefOr[scala.Nothing],
+    anyMatch: js.UndefOr[scala.Nothing],
+    caseSensitive: js.Any
+  ): Array = js.native
+  def filter(property: js.Any, value: js.UndefOr[scala.Nothing], anyMatch: js.Any): Array = js.native
+  def filter(property: js.Any, value: js.UndefOr[scala.Nothing], anyMatch: js.Any, caseSensitive: js.Any): Array = js.native
   def filter(property: js.Any, value: js.Any): Array = js.native
+  def filter(property: js.Any, value: js.Any, anyMatch: js.UndefOr[scala.Nothing], caseSensitive: js.Any): Array = js.native
   def filter(property: js.Any, value: js.Any, anyMatch: js.Any): Array = js.native
   def filter(property: js.Any, value: js.Any, anyMatch: js.Any, caseSensitive: js.Any): Array = js.native
   /** [Method] Filter by a function
@@ -146,6 +182,7 @@ object StoreMgr extends js.Object {
     * @returns Ext.util.MixedCollection The new filtered collection
     */
   def filterBy(): IMixedCollection = js.native
+  def filterBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): IMixedCollection = js.native
   def filterBy(fn: js.Any): IMixedCollection = js.native
   def filterBy(fn: js.Any, scope: js.Any): IMixedCollection = js.native
   /** [Method] Returns the first item in the collection which elicits a true return value from the passed selection function
@@ -154,6 +191,7 @@ object StoreMgr extends js.Object {
     * @returns Object The first item in the collection which returned true from the selection function.
     */
   def findBy(): js.Any = js.native
+  def findBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
   def findBy(fn: js.Any): js.Any = js.native
   def findBy(fn: js.Any, scope: js.Any): js.Any = js.native
   /** [Method] Find the index of the first matching object in this collection by a function
@@ -163,7 +201,11 @@ object StoreMgr extends js.Object {
     * @returns Number The matched index, or -1 if the item was not found.
     */
   def findIndexBy(): Double = js.native
+  def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], start: Double): Double = js.native
+  def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): Double = js.native
+  def findIndexBy(fn: js.UndefOr[scala.Nothing], scope: js.Any, start: Double): Double = js.native
   def findIndexBy(fn: js.Any): Double = js.native
+  def findIndexBy(fn: js.Any, scope: js.UndefOr[scala.Nothing], start: Double): Double = js.native
   def findIndexBy(fn: js.Any, scope: js.Any): Double = js.native
   def findIndexBy(fn: js.Any, scope: js.Any, start: Double): Double = js.native
   /** [Method] This method returns the index that a given item would be inserted into a given array based on the current sorters
@@ -172,6 +214,7 @@ object StoreMgr extends js.Object {
     * @returns Number The index for the given item in the given array based on the current sorters.
     */
   def findInsertionIndex(): Double = js.native
+  def findInsertionIndex(items: js.UndefOr[scala.Nothing], item: js.Any): Double = js.native
   def findInsertionIndex(items: Array): Double = js.native
   def findInsertionIndex(items: Array, item: js.Any): Double = js.native
   /** [Method] Returns the first item in the collection
@@ -242,6 +285,7 @@ object StoreMgr extends js.Object {
     * @returns Array An array of items.
     */
   def getRange(): Array = js.native
+  def getRange(start: js.UndefOr[scala.Nothing], end: Double): Array = js.native
   def getRange(start: Double): Array = js.native
   def getRange(start: Double, end: Double): Array = js.native
   /** [Method] Returns an up to date sort function
@@ -281,7 +325,11 @@ object StoreMgr extends js.Object {
     * @returns Object The item inserted.
     */
   def insert(): js.Any = js.native
+  def insert(index: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], item: js.Any): js.Any = js.native
+  def insert(index: js.UndefOr[scala.Nothing], key: String): js.Any = js.native
+  def insert(index: js.UndefOr[scala.Nothing], key: String, item: js.Any): js.Any = js.native
   def insert(index: Double): js.Any = js.native
+  def insert(index: Double, key: js.UndefOr[scala.Nothing], item: js.Any): js.Any = js.native
   def insert(index: Double, key: String): js.Any = js.native
   def insert(index: Double, key: String, item: js.Any): js.Any = js.native
   /** [Method] This method adds a filter at a given index
@@ -290,6 +338,7 @@ object StoreMgr extends js.Object {
     * @returns Object
     */
   def insertFilter(): js.Any = js.native
+  def insertFilter(index: js.UndefOr[scala.Nothing], filter: js.Any): js.Any = js.native
   def insertFilter(index: Double): js.Any = js.native
   def insertFilter(index: Double, filter: js.Any): js.Any = js.native
   /** [Method] This method inserts all the filters in the passed array at the given index
@@ -298,6 +347,7 @@ object StoreMgr extends js.Object {
     * @returns Array
     */
   def insertFilters(): Array = js.native
+  def insertFilters(index: js.UndefOr[scala.Nothing], filters: Array): Array = js.native
   def insertFilters(index: Double): Array = js.native
   def insertFilters(index: Double, filters: Array): Array = js.native
   /** [Method] This method adds a sorter at a given index
@@ -306,7 +356,11 @@ object StoreMgr extends js.Object {
     * @param defaultDirection String The default direction for each sorter in the array. Defaults to the value of defaultSortDirection. Can be either 'ASC' or 'DESC'.
     */
   def insertSorter(): Unit = js.native
+  def insertSorter(index: js.UndefOr[scala.Nothing], sorter: js.UndefOr[scala.Nothing], defaultDirection: String): Unit = js.native
+  def insertSorter(index: js.UndefOr[scala.Nothing], sorter: js.Any): Unit = js.native
+  def insertSorter(index: js.UndefOr[scala.Nothing], sorter: js.Any, defaultDirection: String): Unit = js.native
   def insertSorter(index: Double): Unit = js.native
+  def insertSorter(index: Double, sorter: js.UndefOr[scala.Nothing], defaultDirection: String): Unit = js.native
   def insertSorter(index: Double, sorter: js.Any): Unit = js.native
   def insertSorter(index: Double, sorter: js.Any, defaultDirection: String): Unit = js.native
   /** [Method] This method inserts all the sorters in the passed array at the given index
@@ -374,6 +428,7 @@ object StoreMgr extends js.Object {
     * @returns Object The new item.
     */
   def replace(): js.Any = js.native
+  def replace(oldKey: js.UndefOr[scala.Nothing], item: js.Any): js.Any = js.native
   def replace(oldKey: String): js.Any = js.native
   def replace(oldKey: String, item: js.Any): js.Any = js.native
   /** [Method] Sets the value of autoFilter
@@ -417,6 +472,7 @@ object StoreMgr extends js.Object {
     * @returns Array The array you passed after it is sorted.
     */
   def sort(): Array = js.native
+  def sort(sorters: js.UndefOr[scala.Nothing], defaultDirection: js.Any): Array = js.native
   def sort(sorters: js.Any): Array = js.native
   def sort(sorters: js.Any, defaultDirection: js.Any): Array = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

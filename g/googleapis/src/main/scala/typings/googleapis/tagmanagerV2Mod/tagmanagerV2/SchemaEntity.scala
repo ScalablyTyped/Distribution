@@ -34,20 +34,42 @@ trait SchemaEntity extends js.Object {
 
 object SchemaEntity {
   @scala.inline
-  def apply(
-    changeStatus: String = null,
-    folder: SchemaFolder = null,
-    tag: SchemaTag = null,
-    trigger: SchemaTrigger = null,
-    variable: SchemaVariable = null
-  ): SchemaEntity = {
+  def apply(): SchemaEntity = {
     val __obj = js.Dynamic.literal()
-    if (changeStatus != null) __obj.updateDynamic("changeStatus")(changeStatus.asInstanceOf[js.Any])
-    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEntity]
   }
+  @scala.inline
+  implicit class SchemaEntityOps[Self <: SchemaEntity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeStatus(value: String): Self = this.set("changeStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeStatus: Self = this.set("changeStatus", js.undefined)
+    @scala.inline
+    def setFolder(value: SchemaFolder): Self = this.set("folder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolder: Self = this.set("folder", js.undefined)
+    @scala.inline
+    def setTag(value: SchemaTag): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+    @scala.inline
+    def setTrigger(value: SchemaTrigger): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    @scala.inline
+    def setVariable(value: SchemaVariable): Self = this.set("variable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariable: Self = this.set("variable", js.undefined)
+  }
+  
 }
 

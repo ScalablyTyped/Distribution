@@ -12,7 +12,7 @@ Find multiple RegExp matches in a string
 | Keywords           | regex, regexp, regular, expression, exec, match, matches, execall, all, find, findall, immutable, string, multiple, many, global |
 | # releases         | 2 |
 | # dependents       | 32 |
-| # downloads        | 47314083 |
+| # downloads        | 49063429 |
 | # stars            | 1 |
 
 ## Links

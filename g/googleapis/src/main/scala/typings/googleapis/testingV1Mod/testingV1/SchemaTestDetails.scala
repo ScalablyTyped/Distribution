@@ -25,11 +25,32 @@ trait SchemaTestDetails extends js.Object {
 
 object SchemaTestDetails {
   @scala.inline
-  def apply(errorMessage: String = null, progressMessages: js.Array[String] = null): SchemaTestDetails = {
+  def apply(): SchemaTestDetails = {
     val __obj = js.Dynamic.literal()
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (progressMessages != null) __obj.updateDynamic("progressMessages")(progressMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestDetails]
   }
+  @scala.inline
+  implicit class SchemaTestDetailsOps[Self <: SchemaTestDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setProgressMessagesVarargs(value: String*): Self = this.set("progressMessages", js.Array(value :_*))
+    @scala.inline
+    def setProgressMessages(value: js.Array[String]): Self = this.set("progressMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressMessages: Self = this.set("progressMessages", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait AcceptVpcPeeringConnectionResult extends js.Object {
 
 object AcceptVpcPeeringConnectionResult {
   @scala.inline
-  def apply(VpcPeeringConnection: VpcPeeringConnection = null): AcceptVpcPeeringConnectionResult = {
+  def apply(): AcceptVpcPeeringConnectionResult = {
     val __obj = js.Dynamic.literal()
-    if (VpcPeeringConnection != null) __obj.updateDynamic("VpcPeeringConnection")(VpcPeeringConnection.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptVpcPeeringConnectionResult]
   }
+  @scala.inline
+  implicit class AcceptVpcPeeringConnectionResultOps[Self <: AcceptVpcPeeringConnectionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpcPeeringConnection(value: VpcPeeringConnection): Self = this.set("VpcPeeringConnection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcPeeringConnection: Self = this.set("VpcPeeringConnection", js.undefined)
+  }
+  
 }
 

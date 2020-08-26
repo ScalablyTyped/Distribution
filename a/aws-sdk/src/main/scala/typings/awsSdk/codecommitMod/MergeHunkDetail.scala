@@ -22,16 +22,34 @@ trait MergeHunkDetail extends js.Object {
 
 object MergeHunkDetail {
   @scala.inline
-  def apply(
-    endLine: js.UndefOr[LineNumber] = js.undefined,
-    hunkContent: HunkContent = null,
-    startLine: js.UndefOr[LineNumber] = js.undefined
-  ): MergeHunkDetail = {
+  def apply(): MergeHunkDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(endLine)) __obj.updateDynamic("endLine")(endLine.get.asInstanceOf[js.Any])
-    if (hunkContent != null) __obj.updateDynamic("hunkContent")(hunkContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(startLine)) __obj.updateDynamic("startLine")(startLine.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeHunkDetail]
   }
+  @scala.inline
+  implicit class MergeHunkDetailOps[Self <: MergeHunkDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndLine(value: LineNumber): Self = this.set("endLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndLine: Self = this.set("endLine", js.undefined)
+    @scala.inline
+    def setHunkContent(value: HunkContent): Self = this.set("hunkContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHunkContent: Self = this.set("hunkContent", js.undefined)
+    @scala.inline
+    def setStartLine(value: LineNumber): Self = this.set("startLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartLine: Self = this.set("startLine", js.undefined)
+  }
+  
 }
 

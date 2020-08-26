@@ -7,63 +7,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PagerSelectors extends js.Object {
   /**
     * The selector for querying the pager-container.
     */
-  var container: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var container: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the control to jump to the first page.
     */
-  var first: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var first: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the dropdown-control to jump to a specific page.
     */
-  var gotoPage: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var gotoPage: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the control to jump to the last page.
     */
-  var last: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var last: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the control to jump to the next page.
     */
-  var next: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var next: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the container to print the output to.
     */
-  var pageDisplay: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var pageDisplay: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the control to set the page-size.
     */
-  var pageSize: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var pageSize: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
   /**
     * The selector for querying the control to jump to the previous page.
     */
-  var prev: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
+  var prev: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
 }
 
 object PagerSelectors {
   @scala.inline
-  def apply(
-    container: Selector | JQuery[HTMLElement] = null,
-    first: Selector | JQuery[HTMLElement] = null,
-    gotoPage: Selector | JQuery[HTMLElement] = null,
-    last: Selector | JQuery[HTMLElement] = null,
-    next: Selector | JQuery[HTMLElement] = null,
-    pageDisplay: Selector | JQuery[HTMLElement] = null,
-    pageSize: Selector | JQuery[HTMLElement] = null,
-    prev: Selector | JQuery[HTMLElement] = null
-  ): PagerSelectors = {
+  def apply(): PagerSelectors = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
-    if (gotoPage != null) __obj.updateDynamic("gotoPage")(gotoPage.asInstanceOf[js.Any])
-    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (pageDisplay != null) __obj.updateDynamic("pageDisplay")(pageDisplay.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagerSelectors]
   }
+  @scala.inline
+  implicit class PagerSelectorsOps[Self <: PagerSelectors] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: Selector | JQuery[HTMLElement]): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setFirst(value: Selector | JQuery[HTMLElement]): Self = this.set("first", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirst: Self = this.set("first", js.undefined)
+    @scala.inline
+    def setGotoPage(value: Selector | JQuery[HTMLElement]): Self = this.set("gotoPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGotoPage: Self = this.set("gotoPage", js.undefined)
+    @scala.inline
+    def setLast(value: Selector | JQuery[HTMLElement]): Self = this.set("last", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLast: Self = this.set("last", js.undefined)
+    @scala.inline
+    def setNext(value: Selector | JQuery[HTMLElement]): Self = this.set("next", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNext: Self = this.set("next", js.undefined)
+    @scala.inline
+    def setPageDisplay(value: Selector | JQuery[HTMLElement]): Self = this.set("pageDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageDisplay: Self = this.set("pageDisplay", js.undefined)
+    @scala.inline
+    def setPageSize(value: Selector | JQuery[HTMLElement]): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPrev(value: Selector | JQuery[HTMLElement]): Self = this.set("prev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrev: Self = this.set("prev", js.undefined)
+  }
+  
 }
 

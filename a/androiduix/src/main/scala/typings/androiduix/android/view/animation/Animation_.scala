@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.animation.Animation")
 @js.native
-abstract class Animation_ () extends js.Object {
+trait Animation_ extends js.Object {
   var mBackgroundColor: js.Any = js.native
   var mCycleFlip: Boolean = js.native
   var mDetachWallpaper: js.Any = js.native

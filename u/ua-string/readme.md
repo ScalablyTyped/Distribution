@@ -12,7 +12,7 @@ Get the user agent of a recent Chrome version to pretend to be a browser in netw
 | Keywords           | user-agent, user, agent, navigator, browser, chrome, network, request, fetch, got, http, header, string, recent, pretend, imitate, mimic |
 | # releases         | 5 |
 | # dependents       | 6 |
-| # downloads        | 26094 |
+| # downloads        | 26168 |
 | # stars            | 0 |
 
 ## Links

@@ -22,6 +22,13 @@ class LogGroupEventSubscription protected ()
     name: String,
     logGroup: typings.pulumiAws.logGroupMod.LogGroup,
     handler: LogGroupEventHandler,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions
+  ) = this()
+  def this(
+    name: String,
+    logGroup: typings.pulumiAws.logGroupMod.LogGroup,
+    handler: LogGroupEventHandler,
     args: LogGroupEventSubscriptionArgs,
     opts: ComponentResourceOptions
   ) = this()

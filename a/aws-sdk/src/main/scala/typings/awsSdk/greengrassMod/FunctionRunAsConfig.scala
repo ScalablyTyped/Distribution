@@ -18,11 +18,30 @@ trait FunctionRunAsConfig extends js.Object {
 
 object FunctionRunAsConfig {
   @scala.inline
-  def apply(Gid: js.UndefOr[integer] = js.undefined, Uid: js.UndefOr[integer] = js.undefined): FunctionRunAsConfig = {
+  def apply(): FunctionRunAsConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Gid)) __obj.updateDynamic("Gid")(Gid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Uid)) __obj.updateDynamic("Uid")(Uid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionRunAsConfig]
   }
+  @scala.inline
+  implicit class FunctionRunAsConfigOps[Self <: FunctionRunAsConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGid(value: integer): Self = this.set("Gid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGid: Self = this.set("Gid", js.undefined)
+    @scala.inline
+    def setUid(value: integer): Self = this.set("Uid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUid: Self = this.set("Uid", js.undefined)
+  }
+  
 }
 

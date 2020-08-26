@@ -34,20 +34,44 @@ trait UpdateConfigurationProfileRequest extends js.Object {
 
 object UpdateConfigurationProfileRequest {
   @scala.inline
-  def apply(
-    ApplicationId: Id,
-    ConfigurationProfileId: Id,
-    Description: Description = null,
-    Name: Name = null,
-    RetrievalRoleArn: RoleArn = null,
-    Validators: ValidatorList = null
-  ): UpdateConfigurationProfileRequest = {
+  def apply(ApplicationId: Id, ConfigurationProfileId: Id): UpdateConfigurationProfileRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ConfigurationProfileId = ConfigurationProfileId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RetrievalRoleArn != null) __obj.updateDynamic("RetrievalRoleArn")(RetrievalRoleArn.asInstanceOf[js.Any])
-    if (Validators != null) __obj.updateDynamic("Validators")(Validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationProfileRequest]
   }
+  @scala.inline
+  implicit class UpdateConfigurationProfileRequestOps[Self <: UpdateConfigurationProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: Id): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigurationProfileId(value: Id): Self = this.set("ConfigurationProfileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRetrievalRoleArn(value: RoleArn): Self = this.set("RetrievalRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetrievalRoleArn: Self = this.set("RetrievalRoleArn", js.undefined)
+    @scala.inline
+    def setValidatorsVarargs(value: Validator*): Self = this.set("Validators", js.Array(value :_*))
+    @scala.inline
+    def setValidators(value: ValidatorList): Self = this.set("Validators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidators: Self = this.set("Validators", js.undefined)
+  }
+  
 }
 

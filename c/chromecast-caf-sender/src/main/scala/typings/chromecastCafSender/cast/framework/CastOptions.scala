@@ -5,26 +5,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CastOptions extends js.Object {
-  var autoJoinPolicy: AutoJoinPolicy
-  var language: js.UndefOr[String] = js.undefined
-  var receiverApplicationId: js.UndefOr[String] = js.undefined
-  var resumeSavedSession: js.UndefOr[Boolean] = js.undefined
+  var autoJoinPolicy: AutoJoinPolicy = js.native
+  var language: js.UndefOr[String] = js.native
+  var receiverApplicationId: js.UndefOr[String] = js.native
+  var resumeSavedSession: js.UndefOr[Boolean] = js.native
 }
 
 object CastOptions {
   @scala.inline
-  def apply(
-    autoJoinPolicy: AutoJoinPolicy,
-    language: String = null,
-    receiverApplicationId: String = null,
-    resumeSavedSession: js.UndefOr[Boolean] = js.undefined
-  ): CastOptions = {
+  def apply(autoJoinPolicy: AutoJoinPolicy): CastOptions = {
     val __obj = js.Dynamic.literal(autoJoinPolicy = autoJoinPolicy.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (receiverApplicationId != null) __obj.updateDynamic("receiverApplicationId")(receiverApplicationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(resumeSavedSession)) __obj.updateDynamic("resumeSavedSession")(resumeSavedSession.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CastOptions]
   }
+  @scala.inline
+  implicit class CastOptionsOps[Self <: CastOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoJoinPolicy(value: AutoJoinPolicy): Self = this.set("autoJoinPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setReceiverApplicationId(value: String): Self = this.set("receiverApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReceiverApplicationId: Self = this.set("receiverApplicationId", js.undefined)
+    @scala.inline
+    def setResumeSavedSession(value: Boolean): Self = this.set("resumeSavedSession", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResumeSavedSession: Self = this.set("resumeSavedSession", js.undefined)
+  }
+  
 }
 

@@ -20,6 +20,15 @@ trait WebAuthenticationChallengeEvent
       /* callback */ js.UndefOr[js.Function1[/* response */ BlockingResponse, Unit]], 
       Unit
     ],
+    filter: js.UndefOr[scala.Nothing],
+    opt_extraInfoSpec: js.Array[String]
+  ): Unit = js.native
+  def addListener(
+    callback: js.Function2[
+      /* details */ WebAuthenticationChallengeDetails, 
+      /* callback */ js.UndefOr[js.Function1[/* response */ BlockingResponse, Unit]], 
+      Unit
+    ],
     filter: RequestFilter
   ): Unit = js.native
   def addListener(

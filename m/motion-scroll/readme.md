@@ -12,7 +12,7 @@ scroll to an element or a position with easing
 | Keywords           | scroll, element, easing, window |
 | # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 1042 |
+| # downloads        | 1101 |
 | # stars            | 0 |
 
 ## Links

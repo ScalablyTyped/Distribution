@@ -25,16 +25,36 @@ trait SchemaSeason extends js.Object {
 
 object SchemaSeason {
   @scala.inline
-  def apply(
-    end: SchemaMonthDay = null,
-    prorations: js.Array[SchemaProrate] = null,
-    start: SchemaMonthDay = null
-  ): SchemaSeason = {
+  def apply(): SchemaSeason = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (prorations != null) __obj.updateDynamic("prorations")(prorations.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSeason]
   }
+  @scala.inline
+  implicit class SchemaSeasonOps[Self <: SchemaSeason] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnd(value: SchemaMonthDay): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setProrationsVarargs(value: SchemaProrate*): Self = this.set("prorations", js.Array(value :_*))
+    @scala.inline
+    def setProrations(value: js.Array[SchemaProrate]): Self = this.set("prorations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProrations: Self = this.set("prorations", js.undefined)
+    @scala.inline
+    def setStart(value: SchemaMonthDay): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

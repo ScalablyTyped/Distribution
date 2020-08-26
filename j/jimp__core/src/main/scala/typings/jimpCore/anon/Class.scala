@@ -4,16 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Class extends js.Object {
-  var `class`: js.Any
-}
-
-object Class {
-  @scala.inline
-  def apply(`class`: js.Any): Class = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Class]
-  }
+  var `class`: js.UndefOr[scala.Nothing] = js.native
+  var constants: js.UndefOr[scala.Nothing] = js.native
 }
 

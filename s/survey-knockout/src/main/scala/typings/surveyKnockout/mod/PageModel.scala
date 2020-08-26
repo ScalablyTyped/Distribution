@@ -60,6 +60,7 @@ class PageModel () extends PanelModelBase {
   def dragDropFinish(): IElement = js.native
   def dragDropFinish(isCancel: Boolean): IElement = js.native
   def dragDropMoveTo(destination: ISurveyElement): Boolean = js.native
+  def dragDropMoveTo(destination: ISurveyElement, isBottom: js.UndefOr[scala.Nothing], isEdge: Boolean): Boolean = js.native
   def dragDropMoveTo(destination: ISurveyElement, isBottom: Boolean): Boolean = js.native
   def dragDropMoveTo(destination: ISurveyElement, isBottom: Boolean, isEdge: Boolean): Boolean = js.native
   def dragDropStart(src: IElement, target: IElement): Unit = js.native
@@ -68,6 +69,7 @@ class PageModel () extends PanelModelBase {
     * Returns the list of all panels in the page
     */
   def getPanels(): js.Array[IPanel] = js.native
+  def getPanels(visibleOnly: js.UndefOr[scala.Nothing], includingDesignTime: Boolean): js.Array[IPanel] = js.native
   def getPanels(visibleOnly: Boolean): js.Array[IPanel] = js.native
   def getPanels(visibleOnly: Boolean, includingDesignTime: Boolean): js.Array[IPanel] = js.native
   /* protected */ def onNumChanged(value: Double): Unit = js.native

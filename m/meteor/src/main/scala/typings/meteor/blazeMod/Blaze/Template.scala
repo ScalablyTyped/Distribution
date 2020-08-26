@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Template extends js.Object {
   @JSName("$")
-  var $: js.Any
-  var created: js.Function
-  var destroyed: js.Function
-  var head: Template
-  var renderFunction: js.Function
-  var rendered: js.Function
-  var viewName: String
-  def constructView(): View
-  def events(eventsMap: EventsMap): Unit
-  def find(selector: String): HTMLElement
-  def findAll(selector: String): js.Array[HTMLElement]
-  def helpers(helpersMap: HelpersMap): Unit
-  def onCreated(cb: js.Function): Unit
-  def onDestroyed(cb: js.Function): Unit
-  def onRendered(cb: js.Function): Unit
+  var $: js.Any = js.native
+  var created: js.Function = js.native
+  var destroyed: js.Function = js.native
+  var head: Template = js.native
+  var renderFunction: js.Function = js.native
+  var rendered: js.Function = js.native
+  var viewName: String = js.native
+  def constructView(): View = js.native
+  def events(eventsMap: EventsMap): Unit = js.native
+  def find(selector: String): HTMLElement = js.native
+  def findAll(selector: String): js.Array[HTMLElement] = js.native
+  def helpers(helpersMap: HelpersMap): Unit = js.native
+  def onCreated(cb: js.Function): Unit = js.native
+  def onDestroyed(cb: js.Function): Unit = js.native
+  def onRendered(cb: js.Function): Unit = js.native
 }
 
 @JSImport("meteor/blaze", "Blaze.Template")

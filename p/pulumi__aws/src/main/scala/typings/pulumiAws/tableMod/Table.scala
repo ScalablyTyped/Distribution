@@ -8,6 +8,7 @@ import typings.pulumiAws.outputMod.dynamodb.TableAttribute
 import typings.pulumiAws.outputMod.dynamodb.TableGlobalSecondaryIndex
 import typings.pulumiAws.outputMod.dynamodb.TableLocalSecondaryIndex
 import typings.pulumiAws.outputMod.dynamodb.TablePointInTimeRecovery
+import typings.pulumiAws.outputMod.dynamodb.TableReplica
 import typings.pulumiAws.outputMod.dynamodb.TableServerSideEncryption
 import typings.pulumiAws.outputMod.dynamodb.TableTtl
 import typings.pulumiPulumi.mod.CustomResource
@@ -78,6 +79,10 @@ class Table protected () extends CustomResource {
     */
   val readCapacity: Output_[js.UndefOr[Double]] = js.native
   /**
+    * Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
+    */
+  val replicas: Output_[js.UndefOr[js.Array[TableReplica]]] = js.native
+  /**
     * Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
     */
   val serverSideEncryption: Output_[TableServerSideEncryption] = js.native
@@ -103,7 +108,7 @@ class Table protected () extends CustomResource {
   /**
     * A map of tags to populate on the created table.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Defines ttl, has two properties, and can only be specified once:
     */
@@ -139,8 +144,10 @@ object Table extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Table = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Table = js.native
   def get(name: String, id: Input[ID], state: TableState): Table = js.native
   def get(name: String, id: Input[ID], state: TableState, opts: CustomResourceOptions): Table = js.native
   /**

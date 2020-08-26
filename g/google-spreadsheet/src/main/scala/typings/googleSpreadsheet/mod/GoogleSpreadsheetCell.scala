@@ -25,18 +25,6 @@ class GoogleSpreadsheetCell protected () extends CellFormat {
   var a1Row: Double = js.native
   /**
     * @description
-    * background color of the cell
-    */
-  /* CompleteClass */
-  override var backgroundColor: Color = js.native
-  /**
-    * @description
-    * border settings of the cell
-    */
-  /* CompleteClass */
-  override var borders: Borders = js.native
-  /**
-    * @description
     * cell column in the worksheet
     */
   var columnIndex: Double = js.native
@@ -66,40 +54,15 @@ class GoogleSpreadsheetCell protected () extends CellFormat {
   val formulaError: CellError = js.native
   /**
     * @description
-    * horizontal alignment of the cell's value
-    */
-  /* CompleteClass */
-  override var horizontalAlignment: HorizontalAlign = js.native
-  /**
-    * @description
     * url of the cell's link
     * - when using =HYPERLINK() formula
     */
   val hyperlink: String = js.native
   /**
     * @description
-    * how a hyperlink (if any) should be displayed
-    */
-  /* CompleteClass */
-  override var hyperlinkDisplayType: HyperlinkDisplayType = js.native
-  /**
-    * @description
     * note attached to the cell
     */
   var note: String = js.native
-  /**
-    * @description
-    * format describing how number values should be represented to the user
-    */
-  /* CompleteClass */
-  override var numberFormat: NumberFormat = js.native
-  /**
-    * @description
-    * padding in the cell
-    * - spacing between inner text and cell boundaries
-    */
-  /* CompleteClass */
-  override var padding: Padding = js.native
   // #endregion
   // #region OWN PROPERTIES
   /**
@@ -107,25 +70,6 @@ class GoogleSpreadsheetCell protected () extends CellFormat {
     * cell row in the worksheet
     */
   var rowIndex: Double = js.native
-  /**
-    * @description
-    * display direction of cell value text
-    */
-  /* CompleteClass */
-  override var textDirection: TextDirection = js.native
-  /**
-    * @description
-    * format of the text in the cell
-    * - font, size etc.
-    */
-  /* CompleteClass */
-  override var textFormat: TextFormat = js.native
-  /**
-    * @description
-    * rotation applied to text in a cell
-    */
-  /* CompleteClass */
-  override var textRotation: TextRotation = js.native
   /**
     * @description
     * format the user entered in the cell
@@ -143,18 +87,6 @@ class GoogleSpreadsheetCell protected () extends CellFormat {
     * the type of the value, using google's terminology
     */
   val valueType: CellValueType = js.native
-  /**
-    * @description
-    * vertical alignment of the cell's value
-    */
-  /* CompleteClass */
-  override var verticalAlignment: VerticalAlign = js.native
-  /**
-    * @description
-    * text-wrapping strategy of the cell's value
-    */
-  /* CompleteClass */
-  override var wrapStrategy: WrapStrategy = js.native
   // #endregion
   // #region SYNCHRONOUS METHODS
   /**

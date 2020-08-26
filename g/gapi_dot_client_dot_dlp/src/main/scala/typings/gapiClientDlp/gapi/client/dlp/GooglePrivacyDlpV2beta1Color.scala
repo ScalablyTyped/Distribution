@@ -4,27 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GooglePrivacyDlpV2beta1Color extends js.Object {
   /** The amount of blue in the color as a value in the interval [0, 1]. */
-  var blue: js.UndefOr[Double] = js.undefined
+  var blue: js.UndefOr[Double] = js.native
   /** The amount of green in the color as a value in the interval [0, 1]. */
-  var green: js.UndefOr[Double] = js.undefined
+  var green: js.UndefOr[Double] = js.native
   /** The amount of red in the color as a value in the interval [0, 1]. */
-  var red: js.UndefOr[Double] = js.undefined
+  var red: js.UndefOr[Double] = js.native
 }
 
 object GooglePrivacyDlpV2beta1Color {
   @scala.inline
-  def apply(
-    blue: js.UndefOr[Double] = js.undefined,
-    green: js.UndefOr[Double] = js.undefined,
-    red: js.UndefOr[Double] = js.undefined
-  ): GooglePrivacyDlpV2beta1Color = {
+  def apply(): GooglePrivacyDlpV2beta1Color = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blue)) __obj.updateDynamic("blue")(blue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(green)) __obj.updateDynamic("green")(green.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(red)) __obj.updateDynamic("red")(red.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1Color]
   }
+  @scala.inline
+  implicit class GooglePrivacyDlpV2beta1ColorOps[Self <: GooglePrivacyDlpV2beta1Color] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlue(value: Double): Self = this.set("blue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlue: Self = this.set("blue", js.undefined)
+    @scala.inline
+    def setGreen(value: Double): Self = this.set("green", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreen: Self = this.set("green", js.undefined)
+    @scala.inline
+    def setRed(value: Double): Self = this.set("red", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRed: Self = this.set("red", js.undefined)
+  }
+  
 }
 

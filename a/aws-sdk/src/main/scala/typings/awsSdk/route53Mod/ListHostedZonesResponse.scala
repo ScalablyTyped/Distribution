@@ -30,16 +30,36 @@ trait ListHostedZonesResponse extends js.Object {
 
 object ListHostedZonesResponse {
   @scala.inline
-  def apply(
-    HostedZones: HostedZones,
-    IsTruncated: PageTruncated,
-    Marker: PageMarker,
-    MaxItems: PageMaxItems,
-    NextMarker: PageMarker = null
-  ): ListHostedZonesResponse = {
+  def apply(HostedZones: HostedZones, IsTruncated: PageTruncated, Marker: PageMarker, MaxItems: PageMaxItems): ListHostedZonesResponse = {
     val __obj = js.Dynamic.literal(HostedZones = HostedZones.asInstanceOf[js.Any], IsTruncated = IsTruncated.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], MaxItems = MaxItems.asInstanceOf[js.Any])
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHostedZonesResponse]
   }
+  @scala.inline
+  implicit class ListHostedZonesResponseOps[Self <: ListHostedZonesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostedZonesVarargs(value: HostedZone*): Self = this.set("HostedZones", js.Array(value :_*))
+    @scala.inline
+    def setHostedZones(value: HostedZones): Self = this.set("HostedZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsTruncated(value: PageTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMarker(value: PageMarker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextMarker(value: PageMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+  }
+  
 }
 

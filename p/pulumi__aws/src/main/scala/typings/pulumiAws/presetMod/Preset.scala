@@ -57,10 +57,12 @@ class Preset protected () extends CustomResource {
     * Video parameters object (documented below)
     */
   val video: Output_[js.UndefOr[PresetVideo]] = js.native
-  val videoCodecOptions: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  /**
+    * Codec options for the video parameters
+    */
+  val videoCodecOptions: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Watermark parameters for the video parameters (documented below)
-    * * `videoCodecOptions` (Optional, Forces new resource) Codec options for the video parameters
     */
   val videoWatermarks: Output_[js.UndefOr[js.Array[PresetVideoWatermark]]] = js.native
 }
@@ -76,8 +78,10 @@ object Preset extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Preset = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Preset = js.native
   def get(name: String, id: Input[ID], state: PresetState): Preset = js.native
   def get(name: String, id: Input[ID], state: PresetState, opts: CustomResourceOptions): Preset = js.native
   /**

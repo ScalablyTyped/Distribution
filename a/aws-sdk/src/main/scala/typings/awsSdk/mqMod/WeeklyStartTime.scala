@@ -22,12 +22,34 @@ trait WeeklyStartTime extends js.Object {
 
 object WeeklyStartTime {
   @scala.inline
-  def apply(DayOfWeek: DayOfWeek = null, TimeOfDay: string = null, TimeZone: string = null): WeeklyStartTime = {
+  def apply(): WeeklyStartTime = {
     val __obj = js.Dynamic.literal()
-    if (DayOfWeek != null) __obj.updateDynamic("DayOfWeek")(DayOfWeek.asInstanceOf[js.Any])
-    if (TimeOfDay != null) __obj.updateDynamic("TimeOfDay")(TimeOfDay.asInstanceOf[js.Any])
-    if (TimeZone != null) __obj.updateDynamic("TimeZone")(TimeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeeklyStartTime]
   }
+  @scala.inline
+  implicit class WeeklyStartTimeOps[Self <: WeeklyStartTime] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDayOfWeek(value: DayOfWeek): Self = this.set("DayOfWeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDayOfWeek: Self = this.set("DayOfWeek", js.undefined)
+    @scala.inline
+    def setTimeOfDay(value: string): Self = this.set("TimeOfDay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeOfDay: Self = this.set("TimeOfDay", js.undefined)
+    @scala.inline
+    def setTimeZone(value: string): Self = this.set("TimeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZone: Self = this.set("TimeZone", js.undefined)
+  }
+  
 }
 

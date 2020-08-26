@@ -27,6 +27,7 @@ class ResourceProducts protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaProduct] = js.native
   def get(callback: BodyResponseCallback[SchemaProduct]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProduct] = js.native
   def get(params: ParamsResourceProductsGet): GaxiosPromise[SchemaProduct] = js.native
   def get(params: ParamsResourceProductsGet, callback: BodyResponseCallback[SchemaProduct]): Unit = js.native
   def get(
@@ -54,6 +55,7 @@ class ResourceProducts protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaGetOffersResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaGetOffersResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetOffersResponse] = js.native
   def search(params: ParamsResourceProductsSearch): GaxiosPromise[SchemaGetOffersResponse] = js.native
   def search(params: ParamsResourceProductsSearch, callback: BodyResponseCallback[SchemaGetOffersResponse]): Unit = js.native
   def search(

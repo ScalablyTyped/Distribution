@@ -176,12 +176,23 @@ trait ChaiJQuery
     * @param complete A function to call once the animation is complete.
     */
   def animate(properties: js.Object): ChaiJQuery = js.native
+  def animate(properties: js.Object, duration: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def animate(
+    properties: js.Object,
+    duration: js.UndefOr[scala.Nothing],
+    easing: js.UndefOr[scala.Nothing],
+    complete: js.Function
+  ): ChaiJQuery = js.native
+  def animate(properties: js.Object, duration: js.UndefOr[scala.Nothing], easing: String): ChaiJQuery = js.native
+  def animate(properties: js.Object, duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): ChaiJQuery = js.native
   def animate(properties: js.Object, duration: String): ChaiJQuery = js.native
   def animate(properties: js.Object, duration: String, complete: js.Function): ChaiJQuery = js.native
+  def animate(properties: js.Object, duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def animate(properties: js.Object, duration: String, easing: String): ChaiJQuery = js.native
   def animate(properties: js.Object, duration: String, easing: String, complete: js.Function): ChaiJQuery = js.native
   def animate(properties: js.Object, duration: Double): ChaiJQuery = js.native
   def animate(properties: js.Object, duration: Double, complete: js.Function): ChaiJQuery = js.native
+  def animate(properties: js.Object, duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def animate(properties: js.Object, duration: Double, easing: String): ChaiJQuery = js.native
   def animate(properties: js.Object, duration: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   /**
@@ -305,6 +316,10 @@ trait ChaiJQuery
     * Trigger the "blur" event on an element
     */
   def blur(): ChaiJQuery = js.native
+  def blur(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): ChaiJQuery = js.native
   def blur(eventData: js.Any): ChaiJQuery = js.native
   def blur(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): ChaiJQuery = js.native
   /**
@@ -317,6 +332,10 @@ trait ChaiJQuery
     * Trigger the "change" event on an element.
     */
   def change(): ChaiJQuery = js.native
+  def change(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): ChaiJQuery = js.native
   def change(eventData: js.Any): ChaiJQuery = js.native
   def change(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): ChaiJQuery = js.native
   /**
@@ -343,6 +362,10 @@ trait ChaiJQuery
     * Trigger the "click" event on an element.
     */
   def click(): ChaiJQuery = js.native
+  def click(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): ChaiJQuery = js.native
   def click(eventData: js.Any): ChaiJQuery = js.native
   def click(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): ChaiJQuery = js.native
   /**
@@ -351,6 +374,7 @@ trait ChaiJQuery
     * @param eventData An object containing data that will be passed to the event handler.
     */
   def click(handler: js.Function1[/* eventObject */ JQueryEventObject, _]): ChaiJQuery = js.native
+  def clone(withDataAndEvents: js.UndefOr[scala.Nothing], deepWithDataAndEvents: Boolean): ChaiJQuery = js.native
   def clone(withDataAndEvents: Boolean): ChaiJQuery = js.native
   def clone(withDataAndEvents: Boolean, deepWithDataAndEvents: Boolean): ChaiJQuery = js.native
   /**
@@ -438,6 +462,10 @@ trait ChaiJQuery
     * Trigger the "dblclick" event on an element.
     */
   def dblclick(): ChaiJQuery = js.native
+  def dblclick(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): ChaiJQuery = js.native
   def dblclick(eventData: js.Any): ChaiJQuery = js.native
   def dblclick(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): ChaiJQuery = js.native
   /**
@@ -516,12 +544,18 @@ trait ChaiJQuery
     * @param complete A function to call once the animation is complete.
     */
   def fadeIn(): ChaiJQuery = js.native
+  def fadeIn(duration: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def fadeIn(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def fadeIn(duration: js.UndefOr[scala.Nothing], easing: String): ChaiJQuery = js.native
+  def fadeIn(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): ChaiJQuery = js.native
   def fadeIn(duration: String): ChaiJQuery = js.native
   def fadeIn(duration: String, complete: js.Function): ChaiJQuery = js.native
+  def fadeIn(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def fadeIn(duration: String, easing: String): ChaiJQuery = js.native
   def fadeIn(duration: String, easing: String, complete: js.Function): ChaiJQuery = js.native
   def fadeIn(duration: Double): ChaiJQuery = js.native
   def fadeIn(duration: Double, complete: js.Function): ChaiJQuery = js.native
+  def fadeIn(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def fadeIn(duration: Double, easing: String): ChaiJQuery = js.native
   def fadeIn(duration: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   /**
@@ -537,12 +571,18 @@ trait ChaiJQuery
     * @param complete A function to call once the animation is complete.
     */
   def fadeOut(): ChaiJQuery = js.native
+  def fadeOut(duration: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def fadeOut(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def fadeOut(duration: js.UndefOr[scala.Nothing], easing: String): ChaiJQuery = js.native
+  def fadeOut(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): ChaiJQuery = js.native
   def fadeOut(duration: String): ChaiJQuery = js.native
   def fadeOut(duration: String, complete: js.Function): ChaiJQuery = js.native
+  def fadeOut(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def fadeOut(duration: String, easing: String): ChaiJQuery = js.native
   def fadeOut(duration: String, easing: String, complete: js.Function): ChaiJQuery = js.native
   def fadeOut(duration: Double): ChaiJQuery = js.native
   def fadeOut(duration: Double, complete: js.Function): ChaiJQuery = js.native
+  def fadeOut(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def fadeOut(duration: Double, easing: String): ChaiJQuery = js.native
   def fadeOut(duration: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   /**
@@ -560,10 +600,12 @@ trait ChaiJQuery
     */
   def fadeTo(duration: String, opacity: Double): ChaiJQuery = js.native
   def fadeTo(duration: String, opacity: Double, complete: js.Function): ChaiJQuery = js.native
+  def fadeTo(duration: String, opacity: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def fadeTo(duration: String, opacity: Double, easing: String): ChaiJQuery = js.native
   def fadeTo(duration: String, opacity: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   def fadeTo(duration: Double, opacity: Double): ChaiJQuery = js.native
   def fadeTo(duration: Double, opacity: Double, complete: js.Function): ChaiJQuery = js.native
+  def fadeTo(duration: Double, opacity: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def fadeTo(duration: Double, opacity: Double, easing: String): ChaiJQuery = js.native
   def fadeTo(duration: Double, opacity: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   /**
@@ -573,12 +615,18 @@ trait ChaiJQuery
     * @param complete A function to call once the animation is complete.
     */
   def fadeToggle(): ChaiJQuery = js.native
+  def fadeToggle(duration: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def fadeToggle(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def fadeToggle(duration: js.UndefOr[scala.Nothing], easing: String): ChaiJQuery = js.native
+  def fadeToggle(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): ChaiJQuery = js.native
   def fadeToggle(duration: String): ChaiJQuery = js.native
   def fadeToggle(duration: String, complete: js.Function): ChaiJQuery = js.native
+  def fadeToggle(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def fadeToggle(duration: String, easing: String): ChaiJQuery = js.native
   def fadeToggle(duration: String, easing: String, complete: js.Function): ChaiJQuery = js.native
   def fadeToggle(duration: Double): ChaiJQuery = js.native
   def fadeToggle(duration: Double, complete: js.Function): ChaiJQuery = js.native
+  def fadeToggle(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def fadeToggle(duration: Double, easing: String): ChaiJQuery = js.native
   def fadeToggle(duration: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   /**
@@ -644,6 +692,10 @@ trait ChaiJQuery
     * Trigger the "focus" event on an element.
     */
   def focus(): ChaiJQuery = js.native
+  def focus(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): ChaiJQuery = js.native
   def focus(eventData: js.Any): ChaiJQuery = js.native
   def focus(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): ChaiJQuery = js.native
   /**
@@ -730,12 +782,18 @@ trait ChaiJQuery
     * @param complete A function to call once the animation is complete.
     */
   def hide(): ChaiJQuery = js.native
+  def hide(duration: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def hide(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def hide(duration: js.UndefOr[scala.Nothing], easing: String): ChaiJQuery = js.native
+  def hide(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): ChaiJQuery = js.native
   def hide(duration: String): ChaiJQuery = js.native
   def hide(duration: String, complete: js.Function): ChaiJQuery = js.native
+  def hide(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def hide(duration: String, easing: String): ChaiJQuery = js.native
   def hide(duration: String, easing: String, complete: js.Function): ChaiJQuery = js.native
   def hide(duration: Double): ChaiJQuery = js.native
   def hide(duration: Double, complete: js.Function): ChaiJQuery = js.native
+  def hide(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def hide(duration: Double, easing: String): ChaiJQuery = js.native
   def hide(duration: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   /**
@@ -858,6 +916,10 @@ trait ChaiJQuery
     * Trigger the "keydown" event on an element.
     */
   def keydown(): ChaiJQuery = js.native
+  def keydown(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]
+  ): ChaiJQuery = js.native
   def keydown(eventData: js.Any): ChaiJQuery = js.native
   def keydown(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]): ChaiJQuery = js.native
   /**
@@ -870,6 +932,10 @@ trait ChaiJQuery
     * Trigger the "keypress" event on an element.
     */
   def keypress(): ChaiJQuery = js.native
+  def keypress(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]
+  ): ChaiJQuery = js.native
   def keypress(eventData: js.Any): ChaiJQuery = js.native
   def keypress(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]): ChaiJQuery = js.native
   /**
@@ -882,6 +948,10 @@ trait ChaiJQuery
     * Trigger the "keyup" event on an element.
     */
   def keyup(): ChaiJQuery = js.native
+  def keyup(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]
+  ): ChaiJQuery = js.native
   def keyup(eventData: js.Any): ChaiJQuery = js.native
   def keyup(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]): ChaiJQuery = js.native
   /**
@@ -901,6 +971,10 @@ trait ChaiJQuery
     * @param handler A function to execute when the event is triggered.
     */
   def load(): ChaiJQuery = js.native
+  def load(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): ChaiJQuery = js.native
   def load(eventData: js.Any): ChaiJQuery = js.native
   def load(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): ChaiJQuery = js.native
   /**
@@ -917,6 +991,16 @@ trait ChaiJQuery
     * @param complete A callback function that is executed when the request completes.
     */
   def load(url: String): ChaiJQuery = js.native
+  def load(
+    url: String,
+    data: js.UndefOr[scala.Nothing],
+    complete: js.Function3[
+      /* responseText */ String, 
+      /* textStatus */ String, 
+      /* XMLHttpRequest */ XMLHttpRequest, 
+      _
+    ]
+  ): ChaiJQuery = js.native
   def load(url: String, data: String): ChaiJQuery = js.native
   def load(
     url: String,
@@ -1089,6 +1173,7 @@ trait ChaiJQuery
   def nextUntil(element: Element, filter: String): ChaiJQuery = js.native
   def nextUntil(obj: JQuery[HTMLElement]): ChaiJQuery = js.native
   def nextUntil(obj: JQuery[HTMLElement], filter: String): ChaiJQuery = js.native
+  def nextUntil(selector: js.UndefOr[scala.Nothing], filter: String): ChaiJQuery = js.native
   def nextUntil(selector: String): ChaiJQuery = js.native
   def nextUntil(selector: String, filter: String): ChaiJQuery = js.native
   /**
@@ -1134,6 +1219,11 @@ trait ChaiJQuery
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   def off(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): ChaiJQuery = js.native
+  def off(
+    events: String,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): ChaiJQuery = js.native
   def off(events: String, selector: String): ChaiJQuery = js.native
   def off(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): ChaiJQuery = js.native
   /**
@@ -1221,6 +1311,7 @@ trait ChaiJQuery
     */
   def on(events: StringDictionary[js.Any]): ChaiJQuery = js.native
   def on(events: StringDictionary[js.Any], data: js.Any): ChaiJQuery = js.native
+  def on(events: StringDictionary[js.Any], selector: js.UndefOr[scala.Nothing], data: js.Any): ChaiJQuery = js.native
   def on(events: StringDictionary[js.Any], selector: String): ChaiJQuery = js.native
   def on(events: StringDictionary[js.Any], selector: String, data: js.Any): ChaiJQuery = js.native
   /**
@@ -1269,6 +1360,7 @@ trait ChaiJQuery
     */
   def one(events: StringDictionary[js.Any]): ChaiJQuery = js.native
   def one(events: StringDictionary[js.Any], data: js.Any): ChaiJQuery = js.native
+  def one(events: StringDictionary[js.Any], selector: js.UndefOr[scala.Nothing], data: js.Any): ChaiJQuery = js.native
   def one(events: StringDictionary[js.Any], selector: String): ChaiJQuery = js.native
   def one(events: StringDictionary[js.Any], selector: String, data: js.Any): ChaiJQuery = js.native
   /**
@@ -1324,6 +1416,7 @@ trait ChaiJQuery
   def parentsUntil(element: Element, filter: String): ChaiJQuery = js.native
   def parentsUntil(obj: JQuery[HTMLElement]): ChaiJQuery = js.native
   def parentsUntil(obj: JQuery[HTMLElement], filter: String): ChaiJQuery = js.native
+  def parentsUntil(selector: js.UndefOr[scala.Nothing], filter: String): ChaiJQuery = js.native
   def parentsUntil(selector: String): ChaiJQuery = js.native
   def parentsUntil(selector: String, filter: String): ChaiJQuery = js.native
   /**
@@ -1381,6 +1474,7 @@ trait ChaiJQuery
   def prevUntil(element: Element, filter: String): ChaiJQuery = js.native
   def prevUntil(obj: JQuery[HTMLElement]): ChaiJQuery = js.native
   def prevUntil(obj: JQuery[HTMLElement], filter: String): ChaiJQuery = js.native
+  def prevUntil(selector: js.UndefOr[scala.Nothing], filter: String): ChaiJQuery = js.native
   def prevUntil(selector: String): ChaiJQuery = js.native
   def prevUntil(selector: String, filter: String): ChaiJQuery = js.native
   /**
@@ -1390,6 +1484,7 @@ trait ChaiJQuery
     * @param target Object onto which the promise methods have to be attached
     */
   def promise(): JQueryPromise[_] = js.native
+  def promise(`type`: js.UndefOr[scala.Nothing], target: js.Object): JQueryPromise[_] = js.native
   def promise(`type`: String): JQueryPromise[_] = js.native
   def promise(`type`: String, target: js.Object): JQueryPromise[_] = js.native
   /**
@@ -1634,12 +1729,18 @@ trait ChaiJQuery
     * @param complete A function to call once the animation is complete.
     */
   def show(): ChaiJQuery = js.native
+  def show(duration: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def show(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def show(duration: js.UndefOr[scala.Nothing], easing: String): ChaiJQuery = js.native
+  def show(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): ChaiJQuery = js.native
   def show(duration: String): ChaiJQuery = js.native
   def show(duration: String, complete: js.Function): ChaiJQuery = js.native
+  def show(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def show(duration: String, easing: String): ChaiJQuery = js.native
   def show(duration: String, easing: String, complete: js.Function): ChaiJQuery = js.native
   def show(duration: Double): ChaiJQuery = js.native
   def show(duration: Double, complete: js.Function): ChaiJQuery = js.native
+  def show(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def show(duration: Double, easing: String): ChaiJQuery = js.native
   def show(duration: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   /**
@@ -1670,12 +1771,18 @@ trait ChaiJQuery
     * @param complete A function to call once the animation is complete.
     */
   def slideDown(): ChaiJQuery = js.native
+  def slideDown(duration: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def slideDown(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def slideDown(duration: js.UndefOr[scala.Nothing], easing: String): ChaiJQuery = js.native
+  def slideDown(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): ChaiJQuery = js.native
   def slideDown(duration: String): ChaiJQuery = js.native
   def slideDown(duration: String, complete: js.Function): ChaiJQuery = js.native
+  def slideDown(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def slideDown(duration: String, easing: String): ChaiJQuery = js.native
   def slideDown(duration: String, easing: String, complete: js.Function): ChaiJQuery = js.native
   def slideDown(duration: Double): ChaiJQuery = js.native
   def slideDown(duration: Double, complete: js.Function): ChaiJQuery = js.native
+  def slideDown(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def slideDown(duration: Double, easing: String): ChaiJQuery = js.native
   def slideDown(duration: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   /**
@@ -1691,12 +1798,18 @@ trait ChaiJQuery
     * @param complete A function to call once the animation is complete.
     */
   def slideToggle(): ChaiJQuery = js.native
+  def slideToggle(duration: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def slideToggle(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def slideToggle(duration: js.UndefOr[scala.Nothing], easing: String): ChaiJQuery = js.native
+  def slideToggle(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): ChaiJQuery = js.native
   def slideToggle(duration: String): ChaiJQuery = js.native
   def slideToggle(duration: String, complete: js.Function): ChaiJQuery = js.native
+  def slideToggle(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def slideToggle(duration: String, easing: String): ChaiJQuery = js.native
   def slideToggle(duration: String, easing: String, complete: js.Function): ChaiJQuery = js.native
   def slideToggle(duration: Double): ChaiJQuery = js.native
   def slideToggle(duration: Double, complete: js.Function): ChaiJQuery = js.native
+  def slideToggle(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def slideToggle(duration: Double, easing: String): ChaiJQuery = js.native
   def slideToggle(duration: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   /**
@@ -1712,12 +1825,18 @@ trait ChaiJQuery
     * @param complete A function to call once the animation is complete.
     */
   def slideUp(): ChaiJQuery = js.native
+  def slideUp(duration: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def slideUp(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def slideUp(duration: js.UndefOr[scala.Nothing], easing: String): ChaiJQuery = js.native
+  def slideUp(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): ChaiJQuery = js.native
   def slideUp(duration: String): ChaiJQuery = js.native
   def slideUp(duration: String, complete: js.Function): ChaiJQuery = js.native
+  def slideUp(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def slideUp(duration: String, easing: String): ChaiJQuery = js.native
   def slideUp(duration: String, easing: String, complete: js.Function): ChaiJQuery = js.native
   def slideUp(duration: Double): ChaiJQuery = js.native
   def slideUp(duration: Double, complete: js.Function): ChaiJQuery = js.native
+  def slideUp(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def slideUp(duration: Double, easing: String): ChaiJQuery = js.native
   def slideUp(duration: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   /**
@@ -1733,15 +1852,23 @@ trait ChaiJQuery
     * @param jumpToEnd A Boolean indicating whether to complete the current animation immediately. Defaults to false.
     */
   def stop(): ChaiJQuery = js.native
+  def stop(clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): ChaiJQuery = js.native
   def stop(clearQueue: Boolean): ChaiJQuery = js.native
   def stop(clearQueue: Boolean, jumpToEnd: Boolean): ChaiJQuery = js.native
+  def stop(queue: js.UndefOr[scala.Nothing], clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): ChaiJQuery = js.native
+  def stop(queue: js.UndefOr[scala.Nothing], clearQueue: Boolean, jumpToEnd: Boolean): ChaiJQuery = js.native
   def stop(queue: String): ChaiJQuery = js.native
+  def stop(queue: String, clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): ChaiJQuery = js.native
   def stop(queue: String, clearQueue: Boolean): ChaiJQuery = js.native
   def stop(queue: String, clearQueue: Boolean, jumpToEnd: Boolean): ChaiJQuery = js.native
   /**
     * Trigger the "submit" event on an element.
     */
   def submit(): ChaiJQuery = js.native
+  def submit(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): ChaiJQuery = js.native
   def submit(eventData: js.Any): ChaiJQuery = js.native
   def submit(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): ChaiJQuery = js.native
   /**
@@ -1779,12 +1906,18 @@ trait ChaiJQuery
     * @param complete A function to call once the animation is complete.
     */
   def toggle(): ChaiJQuery = js.native
+  def toggle(duration: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def toggle(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
+  def toggle(duration: js.UndefOr[scala.Nothing], easing: String): ChaiJQuery = js.native
+  def toggle(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): ChaiJQuery = js.native
   def toggle(duration: String): ChaiJQuery = js.native
   def toggle(duration: String, complete: js.Function): ChaiJQuery = js.native
+  def toggle(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def toggle(duration: String, easing: String): ChaiJQuery = js.native
   def toggle(duration: String, easing: String, complete: js.Function): ChaiJQuery = js.native
   def toggle(duration: Double): ChaiJQuery = js.native
   def toggle(duration: Double, complete: js.Function): ChaiJQuery = js.native
+  def toggle(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): ChaiJQuery = js.native
   def toggle(duration: Double, easing: String): ChaiJQuery = js.native
   def toggle(duration: Double, easing: String, complete: js.Function): ChaiJQuery = js.native
   /**
@@ -1857,6 +1990,10 @@ trait ChaiJQuery
     * @param handler The function that is to be no longer executed.
     */
   def unbind(): ChaiJQuery = js.native
+  def unbind(
+    eventType: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): ChaiJQuery = js.native
   def unbind(eventType: String): ChaiJQuery = js.native
   /**
     * Remove a previously-attached event handler from the elements.
@@ -1905,6 +2042,10 @@ trait ChaiJQuery
     * @param handler A function to execute when the event is triggered.
     */
   def unload(): ChaiJQuery = js.native
+  def unload(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): ChaiJQuery = js.native
   def unload(eventData: js.Any): ChaiJQuery = js.native
   def unload(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): ChaiJQuery = js.native
   /**

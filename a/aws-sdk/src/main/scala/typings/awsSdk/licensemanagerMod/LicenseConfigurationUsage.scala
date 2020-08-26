@@ -34,22 +34,46 @@ trait LicenseConfigurationUsage extends js.Object {
 
 object LicenseConfigurationUsage {
   @scala.inline
-  def apply(
-    AssociationTime: DateTime = null,
-    ConsumedLicenses: js.UndefOr[BoxLong] = js.undefined,
-    ResourceArn: String = null,
-    ResourceOwnerId: String = null,
-    ResourceStatus: String = null,
-    ResourceType: ResourceType = null
-  ): LicenseConfigurationUsage = {
+  def apply(): LicenseConfigurationUsage = {
     val __obj = js.Dynamic.literal()
-    if (AssociationTime != null) __obj.updateDynamic("AssociationTime")(AssociationTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsumedLicenses)) __obj.updateDynamic("ConsumedLicenses")(ConsumedLicenses.get.asInstanceOf[js.Any])
-    if (ResourceArn != null) __obj.updateDynamic("ResourceArn")(ResourceArn.asInstanceOf[js.Any])
-    if (ResourceOwnerId != null) __obj.updateDynamic("ResourceOwnerId")(ResourceOwnerId.asInstanceOf[js.Any])
-    if (ResourceStatus != null) __obj.updateDynamic("ResourceStatus")(ResourceStatus.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LicenseConfigurationUsage]
   }
+  @scala.inline
+  implicit class LicenseConfigurationUsageOps[Self <: LicenseConfigurationUsage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationTime(value: DateTime): Self = this.set("AssociationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationTime: Self = this.set("AssociationTime", js.undefined)
+    @scala.inline
+    def setConsumedLicenses(value: BoxLong): Self = this.set("ConsumedLicenses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumedLicenses: Self = this.set("ConsumedLicenses", js.undefined)
+    @scala.inline
+    def setResourceArn(value: String): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+    @scala.inline
+    def setResourceOwnerId(value: String): Self = this.set("ResourceOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceOwnerId: Self = this.set("ResourceOwnerId", js.undefined)
+    @scala.inline
+    def setResourceStatus(value: String): Self = this.set("ResourceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceStatus: Self = this.set("ResourceStatus", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+  }
+  
 }
 

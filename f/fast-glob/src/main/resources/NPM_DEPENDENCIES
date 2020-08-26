@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fast-glob" : "3.2.2"
+      "fast-glob" : "3.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "fast-glob" : "3.2.2"
+      "fast-glob" : "3.2.4"
     }
   ],
   "compile-devDependencies" : [

@@ -12,7 +12,7 @@ An immutable library to create, calculate and format monetary values.
 | Keywords           | money, monetary, amount, immutable |
 | # releases         | 28 |
 | # dependents       | 13 |
-| # downloads        | 552463 |
+| # downloads        | 605221 |
 | # stars            | 1 |
 
 ## Links

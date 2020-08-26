@@ -30,19 +30,42 @@ trait GenerateDataKeyRequest extends js.Object {
 
 object GenerateDataKeyRequest {
   @scala.inline
-  def apply(
-    KeyId: KeyIdType,
-    EncryptionContext: EncryptionContextType = null,
-    GrantTokens: GrantTokenList = null,
-    KeySpec: DataKeySpec = null,
-    NumberOfBytes: js.UndefOr[NumberOfBytesType] = js.undefined
-  ): GenerateDataKeyRequest = {
+  def apply(KeyId: KeyIdType): GenerateDataKeyRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
-    if (EncryptionContext != null) __obj.updateDynamic("EncryptionContext")(EncryptionContext.asInstanceOf[js.Any])
-    if (GrantTokens != null) __obj.updateDynamic("GrantTokens")(GrantTokens.asInstanceOf[js.Any])
-    if (KeySpec != null) __obj.updateDynamic("KeySpec")(KeySpec.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfBytes)) __obj.updateDynamic("NumberOfBytes")(NumberOfBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateDataKeyRequest]
   }
+  @scala.inline
+  implicit class GenerateDataKeyRequestOps[Self <: GenerateDataKeyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncryptionContext(value: EncryptionContextType): Self = this.set("EncryptionContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionContext: Self = this.set("EncryptionContext", js.undefined)
+    @scala.inline
+    def setGrantTokensVarargs(value: GrantTokenType*): Self = this.set("GrantTokens", js.Array(value :_*))
+    @scala.inline
+    def setGrantTokens(value: GrantTokenList): Self = this.set("GrantTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantTokens: Self = this.set("GrantTokens", js.undefined)
+    @scala.inline
+    def setKeySpec(value: DataKeySpec): Self = this.set("KeySpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeySpec: Self = this.set("KeySpec", js.undefined)
+    @scala.inline
+    def setNumberOfBytes(value: NumberOfBytesType): Self = this.set("NumberOfBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfBytes: Self = this.set("NumberOfBytes", js.undefined)
+  }
+  
 }
 

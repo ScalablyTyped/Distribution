@@ -22,13 +22,14 @@ import scala.scalajs.js.annotation._
   * with the same customer. The API allows you to create, delete, and update your customers. You can
   * retrieve individual customers as well as a list of all your customers.
   */
+@js.native
 trait ICustomer extends IResourceObject {
   /**
     * This field has been renamed to balance and will be removed in a future API version.
     * @deprecated
     */
-  var account_balance: js.UndefOr[Double] = js.undefined
-  var address: IAddress | Null
+  var account_balance: js.UndefOr[Double] = js.native
+  var address: IAddress | Null = js.native
   /**
     * Current balance, if any, being stored on the customer. If negative, the customer has credit
     * to apply to their next invoice. If positive, the customer has an amount owed that will be
@@ -36,83 +37,83 @@ trait ICustomer extends IResourceObject {
     * takes into account amounts that have yet to be successfully applied to any invoice. This
     * balance is only taken into account as invoices are finalized.
     */
-  var balance: js.UndefOr[Double] = js.undefined
-  var cards: js.UndefOr[CustomerCards] = js.undefined
-  var created: Double
+  var balance: js.UndefOr[Double] = js.native
+  var cards: js.UndefOr[CustomerCards] = js.native
+  var created: Double = js.native
   /**
     * The currency the customer can be charged in for recurring billing purposes (subscriptions, invoices, invoice items).
     */
-  var currency: String | Null
+  var currency: String | Null = js.native
   /**
     * ID of the default source attached to this customer. [Expandable]
     */
-  var default_source: String | IStripeSource | Null
+  var default_source: String | IStripeSource | Null = js.native
   /**
     * Whether or not the latest charge for the customer's latest invoice has failed
     */
-  var delinquent: Boolean
-  var description: js.UndefOr[String] = js.undefined
+  var delinquent: Boolean = js.native
+  var description: js.UndefOr[String] = js.native
   /**
     * Describes the current discount active on the customer, if there is one.
     */
-  var discount: js.UndefOr[IDiscount] = js.undefined
-  var email: js.UndefOr[String] = js.undefined
+  var discount: js.UndefOr[IDiscount] = js.native
+  var email: js.UndefOr[String] = js.native
   /**
     * The prefix for the customer used to generate unique invoice numbers.
     */
-  var invoice_prefix: js.UndefOr[String] = js.undefined
+  var invoice_prefix: js.UndefOr[String] = js.native
   /**
     * Default invoice settings for this customer.
     */
-  var invoice_settings: js.UndefOr[ICustomerInvoiceSettings | Null] = js.undefined
-  var livemode: Boolean
-  var metadata: IMetadata
+  var invoice_settings: js.UndefOr[ICustomerInvoiceSettings | Null] = js.native
+  var livemode: Boolean = js.native
+  var metadata: IMetadata = js.native
   /**
     * The customer’s full name or business name.
     */
-  var name: js.UndefOr[String | Null] = js.undefined
+  var name: js.UndefOr[String | Null] = js.native
   /**
     * Value is 'customer'
     */
   @JSName("object")
-  var object_ICustomer: customer
+  var object_ICustomer: customer = js.native
   /**
     * The customer’s phone number.
     */
-  var phone: js.UndefOr[String] = js.undefined
+  var phone: js.UndefOr[String] = js.native
   /**
     * The customer’s preferred locales (languages), ordered by preference.
     */
-  var preferred_locales: js.UndefOr[js.Array[String]] = js.undefined
+  var preferred_locales: js.UndefOr[js.Array[String]] = js.native
   /**
     * Shipping information associated with the customer.
     */
-  var shipping: IShippingInformation | Null
+  var shipping: IShippingInformation | Null = js.native
   /**
     * The customer’s payment sources, if any
     */
-  var sources: js.UndefOr[IList[IStripeSource]] = js.undefined
+  var sources: js.UndefOr[IList[IStripeSource]] = js.native
   /**
     * The customer's current subscriptions, if any
     */
-  var subscriptions: ICustomerSubscriptions
+  var subscriptions: ICustomerSubscriptions = js.native
   /**
     * Describes the customer’s tax exemption status. One of none, exempt, or reverse.
     * When set to reverse, invoice and receipt PDFs include the text “Reverse charge”.
     */
-  var tax_exempt: js.UndefOr[none | exempt | reverse] = js.undefined
+  var tax_exempt: js.UndefOr[none | exempt | reverse] = js.native
   /**
     * The customer’s tax IDs.
     */
-  var tax_ids: js.UndefOr[IList[ITaxId]] = js.undefined
+  var tax_ids: js.UndefOr[IList[ITaxId]] = js.native
   /**
     * @deprecated
     */
-  var tax_info: js.UndefOr[js.Any] = js.undefined
+  var tax_info: js.UndefOr[js.Any] = js.native
   /**
     * @deprecated
     */
-  var tax_info_verification: js.UndefOr[js.Any] = js.undefined
+  var tax_info_verification: js.UndefOr[js.Any] = js.native
 }
 
 object ICustomer {
@@ -124,47 +125,122 @@ object ICustomer {
     livemode: Boolean,
     metadata: IMetadata,
     `object`: customer,
-    subscriptions: ICustomerSubscriptions,
-    account_balance: js.UndefOr[Double] = js.undefined,
-    address: IAddress = null,
-    balance: js.UndefOr[Double] = js.undefined,
-    cards: CustomerCards = null,
-    currency: String = null,
-    default_source: String | IStripeSource = null,
-    description: String = null,
-    discount: IDiscount = null,
-    email: String = null,
-    invoice_prefix: String = null,
-    invoice_settings: js.UndefOr[Null | ICustomerInvoiceSettings] = js.undefined,
-    name: js.UndefOr[Null | String] = js.undefined,
-    phone: String = null,
-    preferred_locales: js.Array[String] = null,
-    shipping: IShippingInformation = null,
-    sources: IList[IStripeSource] = null,
-    tax_exempt: none | exempt | reverse = null,
-    tax_ids: IList[ITaxId] = null,
-    tax_info: js.Any = null,
-    tax_info_verification: js.Any = null
+    subscriptions: ICustomerSubscriptions
   ): ICustomer = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], delinquent = delinquent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], default_source = default_source.asInstanceOf[js.Any], shipping = shipping.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], delinquent = delinquent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (!js.isUndefined(account_balance)) __obj.updateDynamic("account_balance")(account_balance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(balance)) __obj.updateDynamic("balance")(balance.get.asInstanceOf[js.Any])
-    if (cards != null) __obj.updateDynamic("cards")(cards.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (discount != null) __obj.updateDynamic("discount")(discount.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (invoice_prefix != null) __obj.updateDynamic("invoice_prefix")(invoice_prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(invoice_settings)) __obj.updateDynamic("invoice_settings")(invoice_settings.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (preferred_locales != null) __obj.updateDynamic("preferred_locales")(preferred_locales.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
-    if (tax_exempt != null) __obj.updateDynamic("tax_exempt")(tax_exempt.asInstanceOf[js.Any])
-    if (tax_ids != null) __obj.updateDynamic("tax_ids")(tax_ids.asInstanceOf[js.Any])
-    if (tax_info != null) __obj.updateDynamic("tax_info")(tax_info.asInstanceOf[js.Any])
-    if (tax_info_verification != null) __obj.updateDynamic("tax_info_verification")(tax_info_verification.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomer]
   }
+  @scala.inline
+  implicit class ICustomerOps[Self <: ICustomer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelinquent(value: Boolean): Self = this.set("delinquent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLivemode(value: Boolean): Self = this.set("livemode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetadata(value: IMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObject(value: customer): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubscriptions(value: ICustomerSubscriptions): Self = this.set("subscriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccount_balance(value: Double): Self = this.set("account_balance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccount_balance: Self = this.set("account_balance", js.undefined)
+    @scala.inline
+    def setAddress(value: IAddress): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddressNull: Self = this.set("address", null)
+    @scala.inline
+    def setBalance(value: Double): Self = this.set("balance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBalance: Self = this.set("balance", js.undefined)
+    @scala.inline
+    def setCards(value: CustomerCards): Self = this.set("cards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCards: Self = this.set("cards", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrencyNull: Self = this.set("currency", null)
+    @scala.inline
+    def setDefault_source(value: String | IStripeSource): Self = this.set("default_source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefault_sourceNull: Self = this.set("default_source", null)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDiscount(value: IDiscount): Self = this.set("discount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscount: Self = this.set("discount", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setInvoice_prefix(value: String): Self = this.set("invoice_prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvoice_prefix: Self = this.set("invoice_prefix", js.undefined)
+    @scala.inline
+    def setInvoice_settings(value: ICustomerInvoiceSettings): Self = this.set("invoice_settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvoice_settings: Self = this.set("invoice_settings", js.undefined)
+    @scala.inline
+    def setInvoice_settingsNull: Self = this.set("invoice_settings", null)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNameNull: Self = this.set("name", null)
+    @scala.inline
+    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhone: Self = this.set("phone", js.undefined)
+    @scala.inline
+    def setPreferred_localesVarargs(value: String*): Self = this.set("preferred_locales", js.Array(value :_*))
+    @scala.inline
+    def setPreferred_locales(value: js.Array[String]): Self = this.set("preferred_locales", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferred_locales: Self = this.set("preferred_locales", js.undefined)
+    @scala.inline
+    def setShipping(value: IShippingInformation): Self = this.set("shipping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShippingNull: Self = this.set("shipping", null)
+    @scala.inline
+    def setSources(value: IList[IStripeSource]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("sources", js.undefined)
+    @scala.inline
+    def setTax_exempt(value: none | exempt | reverse): Self = this.set("tax_exempt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax_exempt: Self = this.set("tax_exempt", js.undefined)
+    @scala.inline
+    def setTax_ids(value: IList[ITaxId]): Self = this.set("tax_ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax_ids: Self = this.set("tax_ids", js.undefined)
+    @scala.inline
+    def setTax_info(value: js.Any): Self = this.set("tax_info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax_info: Self = this.set("tax_info", js.undefined)
+    @scala.inline
+    def setTax_info_verification(value: js.Any): Self = this.set("tax_info_verification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax_info_verification: Self = this.set("tax_info_verification", js.undefined)
+  }
+  
 }
 

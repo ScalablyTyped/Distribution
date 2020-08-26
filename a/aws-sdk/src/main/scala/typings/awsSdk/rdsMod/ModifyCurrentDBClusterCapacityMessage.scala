@@ -26,17 +26,36 @@ trait ModifyCurrentDBClusterCapacityMessage extends js.Object {
 
 object ModifyCurrentDBClusterCapacityMessage {
   @scala.inline
-  def apply(
-    DBClusterIdentifier: String,
-    Capacity: js.UndefOr[IntegerOptional] = js.undefined,
-    SecondsBeforeTimeout: js.UndefOr[IntegerOptional] = js.undefined,
-    TimeoutAction: String = null
-  ): ModifyCurrentDBClusterCapacityMessage = {
+  def apply(DBClusterIdentifier: String): ModifyCurrentDBClusterCapacityMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(Capacity)) __obj.updateDynamic("Capacity")(Capacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SecondsBeforeTimeout)) __obj.updateDynamic("SecondsBeforeTimeout")(SecondsBeforeTimeout.get.asInstanceOf[js.Any])
-    if (TimeoutAction != null) __obj.updateDynamic("TimeoutAction")(TimeoutAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyCurrentDBClusterCapacityMessage]
   }
+  @scala.inline
+  implicit class ModifyCurrentDBClusterCapacityMessageOps[Self <: ModifyCurrentDBClusterCapacityMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCapacity(value: IntegerOptional): Self = this.set("Capacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacity: Self = this.set("Capacity", js.undefined)
+    @scala.inline
+    def setSecondsBeforeTimeout(value: IntegerOptional): Self = this.set("SecondsBeforeTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondsBeforeTimeout: Self = this.set("SecondsBeforeTimeout", js.undefined)
+    @scala.inline
+    def setTimeoutAction(value: String): Self = this.set("TimeoutAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutAction: Self = this.set("TimeoutAction", js.undefined)
+  }
+  
 }
 

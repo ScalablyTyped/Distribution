@@ -22,10 +22,30 @@ trait EventFeedbackType extends js.Object {
 
 object EventFeedbackType {
   @scala.inline
-  def apply(FeedbackValue: FeedbackValueType, Provider: StringType, FeedbackDate: DateType = null): EventFeedbackType = {
+  def apply(FeedbackValue: FeedbackValueType, Provider: StringType): EventFeedbackType = {
     val __obj = js.Dynamic.literal(FeedbackValue = FeedbackValue.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any])
-    if (FeedbackDate != null) __obj.updateDynamic("FeedbackDate")(FeedbackDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventFeedbackType]
   }
+  @scala.inline
+  implicit class EventFeedbackTypeOps[Self <: EventFeedbackType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFeedbackValue(value: FeedbackValueType): Self = this.set("FeedbackValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvider(value: StringType): Self = this.set("Provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeedbackDate(value: DateType): Self = this.set("FeedbackDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeedbackDate: Self = this.set("FeedbackDate", js.undefined)
+  }
+  
 }
 

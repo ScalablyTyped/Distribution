@@ -12,7 +12,7 @@ LaunchDarkly SDK for JavaScript - common code
 | Keywords           | launchdarkly, analytics, client |
 | # releases         | 16 |
 | # dependents       | 1 |
-| # downloads        | 1330026 |
+| # downloads        | 1425990 |
 | # stars            | 0 |
 
 ## Links

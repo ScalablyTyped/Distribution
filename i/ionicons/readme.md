@@ -12,7 +12,7 @@ Premium icons for Ionic.
 | Keywords           | ionicons, ionic, icon, svg, font, mobile, web component, component, custom element |
 | # releases         | 74 |
 | # dependents       | 273 |
-| # downloads        | 10976361 |
+| # downloads        | 11194023 |
 | # stars            | 17 |
 
 ## Links

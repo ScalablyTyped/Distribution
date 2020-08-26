@@ -28,6 +28,16 @@ class FormGroup protected () extends AbstractControl {
   def this(controls: StringDictionary[AbstractControl], validatorOrOpts: ValidatorFn) = this()
   def this(
     controls: StringDictionary[AbstractControl],
+    validatorOrOpts: js.UndefOr[scala.Nothing],
+    asyncValidator: js.Array[AsyncValidatorFn]
+  ) = this()
+  def this(
+    controls: StringDictionary[AbstractControl],
+    validatorOrOpts: js.UndefOr[scala.Nothing],
+    asyncValidator: AsyncValidatorFn
+  ) = this()
+  def this(
+    controls: StringDictionary[AbstractControl],
     validatorOrOpts: js.Array[ValidatorFn],
     asyncValidator: js.Array[AsyncValidatorFn]
   ) = this()
@@ -146,6 +156,7 @@ class FormGroup protected () extends AbstractControl {
     * @param name The control name to remove from the collection
     */
   def removeControl(name: String): Unit = js.native
+  def reset(value: js.UndefOr[scala.Nothing], options: EmitEvent): Unit = js.native
   def reset(value: js.Any, options: EmitEvent): Unit = js.native
   /**
     * Replace an existing control.

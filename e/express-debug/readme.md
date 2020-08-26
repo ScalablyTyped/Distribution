@@ -12,7 +12,7 @@ debug toolbar middleware for developing applications in expressjs
 | Keywords           | express, debug, tool, development, toolbar |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 14900 |
+| # downloads        | 14472 |
 | # stars            | 10 |
 
 ## Links

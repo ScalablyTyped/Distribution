@@ -2,7 +2,6 @@ package typings.yandexMaps.mod.control
 
 import typings.yandexMaps.mod.IChild
 import typings.yandexMaps.mod.IControlParent
-import typings.yandexMaps.mod.IEventManager
 import typings.yandexMaps.mod.IOptionManager
 import typings.yandexMaps.mod.Map_
 import scala.scalajs.js
@@ -15,8 +14,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class SearchControl () extends IChild[IControlParent] {
   def this(parameters: ISearchControlParameters) = this()
-  /* CompleteClass */
-  override var events: IEventManager = js.native
   var options: IOptionManager = js.native
   var state: typings.yandexMaps.mod.data.Manager = js.native
   def clear(): Unit = js.native

@@ -18,11 +18,32 @@ trait ListTrailsResponse extends js.Object {
 
 object ListTrailsResponse {
   @scala.inline
-  def apply(NextToken: String = null, Trails: Trails = null): ListTrailsResponse = {
+  def apply(): ListTrailsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Trails != null) __obj.updateDynamic("Trails")(Trails.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTrailsResponse]
   }
+  @scala.inline
+  implicit class ListTrailsResponseOps[Self <: ListTrailsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTrailsVarargs(value: TrailInfo*): Self = this.set("Trails", js.Array(value :_*))
+    @scala.inline
+    def setTrails(value: Trails): Self = this.set("Trails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrails: Self = this.set("Trails", js.undefined)
+  }
+  
 }
 

@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   * is a factory to establish database connections. It should be registered at a {@link com.sun.star.uno.NamingService} .
   * @see com.sun.star.sdb.DatabaseContext
   */
+@js.native
 trait DataSource
   extends XPropertySet
      with XCompletedConnection
@@ -42,11 +43,11 @@ trait DataSource
     * method. If not, the setting is ignored.External components may use the settings to carry arbitrary information with the data source. Usually, this is
     * used to control the behavior of components working with the data source.
     */
-  var Info: SafeArray[PropertyValue]
+  var Info: SafeArray[PropertyValue] = js.native
   /** indicates that a password is always necessary. */
-  var IsPasswordRequired: Boolean
+  var IsPasswordRequired: Boolean = js.native
   /** determines whether modifications on the data source are allowed or not. */
-  var IsReadOnly: Boolean
+  var IsReadOnly: Boolean = js.native
   /**
     * is the name of the data source.
     *
@@ -55,11 +56,11 @@ trait DataSource
     *
     * If the same data source is registered under different names, the value of the `Name` property is not defined.
     */
-  var Name: String
+  var Name: String = js.native
   /** provides an object for formatting numbers. */
-  var NumberFormatsSupplier: XNumberFormatsSupplier
+  var NumberFormatsSupplier: XNumberFormatsSupplier = js.native
   /** determines a users password. The password is not persistent. */
-  var Password: String
+  var Password: String = js.native
   /**
     * is a convenience wrapper around the {@link Info} property.
     *
@@ -95,17 +96,17 @@ trait DataSource
     * Similar, when you obtain the {@link Info} property of a `DataSource` , the `Settings` bag is asked for all its property values, and the ones which are
     * removable and in state default are stripped, and **not** returned in the `Info` sequence.
     */
-  var Settings: XPropertySet
+  var Settings: XPropertySet = js.native
   /** indicates that components displaying data obtained from this data source should suppress columns used for versioning. */
-  var SuppressVersionColumns: Boolean
+  var SuppressVersionColumns: Boolean = js.native
   /** defines a list of tables, on which the {@link DataSource} should have it's focus. If empty, all tables are rejected. */
-  var TableFilter: SafeArray[String]
+  var TableFilter: SafeArray[String] = js.native
   /** defines a list of table types, on which the {@link DataSource} should have it's focus. If empty, all table types are rejected. */
-  var TableTypeFilter: SafeArray[String]
+  var TableTypeFilter: SafeArray[String] = js.native
   /** indicates a database url of the form ; ` jdbc:subprotocol:subname` or `sdbc:subprotocol:subname` */
-  var URL: String
+  var URL: String = js.native
   /** determines a users login name. */
-  var User: String
+  var User: String = js.native
 }
 
 object DataSource {
@@ -152,5 +153,42 @@ object DataSource {
     val __obj = js.Dynamic.literal(Bookmarks = Bookmarks.asInstanceOf[js.Any], Info = Info.asInstanceOf[js.Any], IsPasswordRequired = IsPasswordRequired.asInstanceOf[js.Any], IsReadOnly = IsReadOnly.asInstanceOf[js.Any], LoginTimeout = LoginTimeout.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NumberFormatsSupplier = NumberFormatsSupplier.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], QueryDefinitions = QueryDefinitions.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any], SuppressVersionColumns = SuppressVersionColumns.asInstanceOf[js.Any], TableFilter = TableFilter.asInstanceOf[js.Any], TableTypeFilter = TableTypeFilter.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], User = User.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addFlushListener = js.Any.fromFunction1(addFlushListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), connectWithCompletion = js.Any.fromFunction1(connectWithCompletion), flush = js.Any.fromFunction0(flush), getBookmarks = js.Any.fromFunction0(getBookmarks), getConnection = js.Any.fromFunction2(getConnection), getIsolatedConnection = js.Any.fromFunction2(getIsolatedConnection), getIsolatedConnectionWithCompletion = js.Any.fromFunction1(getIsolatedConnectionWithCompletion), getLoginTimeout = js.Any.fromFunction0(getLoginTimeout), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getQueryDefinitions = js.Any.fromFunction0(getQueryDefinitions), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeFlushListener = js.Any.fromFunction1(removeFlushListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setLoginTimeout = js.Any.fromFunction1(setLoginTimeout), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[DataSource]
   }
+  @scala.inline
+  implicit class DataSourceOps[Self <: DataSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInfo(value: SafeArray[PropertyValue]): Self = this.set("Info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsPasswordRequired(value: Boolean): Self = this.set("IsPasswordRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsReadOnly(value: Boolean): Self = this.set("IsReadOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberFormatsSupplier(value: XNumberFormatsSupplier): Self = this.set("NumberFormatsSupplier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSettings(value: XPropertySet): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuppressVersionColumns(value: Boolean): Self = this.set("SuppressVersionColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableFilter(value: SafeArray[String]): Self = this.set("TableFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableTypeFilter(value: SafeArray[String]): Self = this.set("TableTypeFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUser(value: String): Self = this.set("User", value.asInstanceOf[js.Any])
+  }
+  
 }
 

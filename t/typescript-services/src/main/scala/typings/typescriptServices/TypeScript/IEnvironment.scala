@@ -17,6 +17,7 @@ trait IEnvironment extends js.Object {
   def directoryExists(path: String): Boolean = js.native
   def fileExists(path: String): Boolean = js.native
   def listFiles(path: String): js.Array[String] = js.native
+  def listFiles(path: String, re: js.UndefOr[scala.Nothing], options: Recursive): js.Array[String] = js.native
   def listFiles(path: String, re: RegExp): js.Array[String] = js.native
   def listFiles(path: String, re: RegExp, options: Recursive): js.Array[String] = js.native
   def readFile(path: String, codepage: Double): FileInformation = js.native

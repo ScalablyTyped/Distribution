@@ -17,6 +17,7 @@ object errorsMod extends js.Object {
   @js.native
   class FatalException () extends BaseException {
     def this(message: String) = this()
+    def this(message: js.UndefOr[scala.Nothing], exitCode: Double) = this()
     def this(message: String, exitCode: Double) = this()
     @JSName("exitCode")
     var exitCode_FatalException: Double = js.native

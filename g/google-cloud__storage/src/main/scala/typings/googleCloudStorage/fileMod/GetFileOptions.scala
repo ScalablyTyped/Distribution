@@ -5,17 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetFileOptions extends GetConfig {
-  var userProject: js.UndefOr[String] = js.undefined
+  var userProject: js.UndefOr[String] = js.native
 }
 
 object GetFileOptions {
   @scala.inline
-  def apply(autoCreate: js.UndefOr[Boolean] = js.undefined, userProject: String = null): GetFileOptions = {
+  def apply(): GetFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate.get.asInstanceOf[js.Any])
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileOptions]
   }
+  @scala.inline
+  implicit class GetFileOptionsOps[Self <: GetFileOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserProject(value: String): Self = this.set("userProject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProject: Self = this.set("userProject", js.undefined)
+  }
+  
 }
 

@@ -306,6 +306,7 @@ trait HTMLTableSection extends js.Object {
     * @param indexTo [indexTo=-1]
     */
   def moveRow(): js.Any = js.native
+  def moveRow(indexFrom: js.UndefOr[scala.Nothing], indexTo: Double): js.Any = js.native
   def moveRow(indexFrom: Double): js.Any = js.native
   def moveRow(indexFrom: Double, indexTo: Double): js.Any = js.native
   def msMatchesSelector(v: String): Boolean = js.native
@@ -329,6 +330,7 @@ trait HTMLTableSection extends js.Object {
   def replaceChild(newChild: IHTMLDOMNode, oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   def replaceNode(replacement: IHTMLDOMNode): IHTMLDOMNode = js.native
   def rows(): js.Any = js.native
+  def rows(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def rows(name: js.Any): js.Any = js.native
   def rows(name: js.Any, index: js.Any): js.Any = js.native
   def scrollIntoView(): Unit = js.native

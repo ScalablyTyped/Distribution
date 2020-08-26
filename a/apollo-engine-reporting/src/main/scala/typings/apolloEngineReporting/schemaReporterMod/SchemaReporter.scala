@@ -13,7 +13,14 @@ class SchemaReporter protected () extends js.Object {
     serverInfo: EdgeServerInfo,
     schemaSdl: String,
     apiKey: String,
-    schemaReportingEndpoint: js.UndefOr[String],
+    schemaReportingEndpoint: js.UndefOr[scala.Nothing],
+    logger: Logger
+  ) = this()
+  def this(
+    serverInfo: EdgeServerInfo,
+    schemaSdl: String,
+    apiKey: String,
+    schemaReportingEndpoint: String,
     logger: Logger
   ) = this()
   val executableSchemaDocument: js.Any = js.native

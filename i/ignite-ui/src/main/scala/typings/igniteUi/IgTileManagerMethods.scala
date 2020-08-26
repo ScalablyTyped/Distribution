@@ -41,6 +41,7 @@ trait IgTileManagerMethods extends js.Object {
     * @param event Indicates the browser even which triggered this action (not API).
     */
   def maximize($tileToMaximize: js.Object): Unit = js.native
+  def maximize($tileToMaximize: js.Object, animDuration: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
   def maximize($tileToMaximize: js.Object, animDuration: Double): Unit = js.native
   def maximize($tileToMaximize: js.Object, animDuration: Double, event: js.Object): Unit = js.native
   /**
@@ -55,6 +56,7 @@ trait IgTileManagerMethods extends js.Object {
     * @param event Indicates the browser even which triggered this action (not API).
     */
   def minimize(): Unit = js.native
+  def minimize(animDuration: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
   def minimize(animDuration: Double): Unit = js.native
   def minimize(animDuration: Double, event: js.Object): Unit = js.native
   /**
@@ -70,7 +72,15 @@ trait IgTileManagerMethods extends js.Object {
     * @param event Indicates the browser even which triggered this action (not API).
     */
   def reflow(): Unit = js.native
+  def reflow(
+    forceReflow: js.UndefOr[scala.Nothing],
+    animationDuration: js.UndefOr[scala.Nothing],
+    event: js.Object
+  ): Unit = js.native
+  def reflow(forceReflow: js.UndefOr[scala.Nothing], animationDuration: Double): Unit = js.native
+  def reflow(forceReflow: js.UndefOr[scala.Nothing], animationDuration: Double, event: js.Object): Unit = js.native
   def reflow(forceReflow: js.Object): Unit = js.native
+  def reflow(forceReflow: js.Object, animationDuration: js.UndefOr[scala.Nothing], event: js.Object): Unit = js.native
   def reflow(forceReflow: js.Object, animationDuration: Double): Unit = js.native
   def reflow(forceReflow: js.Object, animationDuration: Double, event: js.Object): Unit = js.native
   /**

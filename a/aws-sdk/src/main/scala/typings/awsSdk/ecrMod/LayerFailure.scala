@@ -22,16 +22,34 @@ trait LayerFailure extends js.Object {
 
 object LayerFailure {
   @scala.inline
-  def apply(
-    failureCode: LayerFailureCode = null,
-    failureReason: LayerFailureReason = null,
-    layerDigest: BatchedOperationLayerDigest = null
-  ): LayerFailure = {
+  def apply(): LayerFailure = {
     val __obj = js.Dynamic.literal()
-    if (failureCode != null) __obj.updateDynamic("failureCode")(failureCode.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (layerDigest != null) __obj.updateDynamic("layerDigest")(layerDigest.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerFailure]
   }
+  @scala.inline
+  implicit class LayerFailureOps[Self <: LayerFailure] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailureCode(value: LayerFailureCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    @scala.inline
+    def setFailureReason(value: LayerFailureReason): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setLayerDigest(value: BatchedOperationLayerDigest): Self = this.set("layerDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerDigest: Self = this.set("layerDigest", js.undefined)
+  }
+  
 }
 

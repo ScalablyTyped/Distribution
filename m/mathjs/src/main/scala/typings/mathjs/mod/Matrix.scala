@@ -38,6 +38,7 @@ trait Matrix extends _MathType {
   def size(): js.Array[Double] = js.native
   def storage(): String = js.native
   def subset(index: Index): Matrix = js.native
+  def subset(index: Index, replacement: js.UndefOr[scala.Nothing], defaultValue: js.Any): Matrix = js.native
   def subset(index: Index, replacement: js.Any): Matrix = js.native
   def subset(index: Index, replacement: js.Any, defaultValue: js.Any): Matrix = js.native
   def swapRows(i: Double, j: Double): Matrix = js.native

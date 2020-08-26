@@ -30,6 +30,7 @@ class ResourceDebugDatasourcesItems protected () extends js.Object {
     */
   def checkAccess(): GaxiosPromise[SchemaCheckAccessResponse] = js.native
   def checkAccess(callback: BodyResponseCallback[SchemaCheckAccessResponse]): Unit = js.native
+  def checkAccess(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCheckAccessResponse] = js.native
   def checkAccess(params: ParamsResourceDebugDatasourcesItemsCheckaccess): GaxiosPromise[SchemaCheckAccessResponse] = js.native
   def checkAccess(
     params: ParamsResourceDebugDatasourcesItemsCheckaccess,
@@ -62,6 +63,7 @@ class ResourceDebugDatasourcesItems protected () extends js.Object {
     */
   def searchByViewUrl(): GaxiosPromise[SchemaSearchItemsByViewUrlResponse] = js.native
   def searchByViewUrl(callback: BodyResponseCallback[SchemaSearchItemsByViewUrlResponse]): Unit = js.native
+  def searchByViewUrl(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchItemsByViewUrlResponse] = js.native
   def searchByViewUrl(params: ParamsResourceDebugDatasourcesItemsSearchbyviewurl): GaxiosPromise[SchemaSearchItemsByViewUrlResponse] = js.native
   def searchByViewUrl(
     params: ParamsResourceDebugDatasourcesItemsSearchbyviewurl,

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NativeInvocationListenerCallbacks extends InvocationListenerCallbacks {
   /**
     * Called synchronously when a thread is about to enter the target function.
@@ -12,7 +13,7 @@ trait NativeInvocationListenerCallbacks extends InvocationListenerCallbacks {
     *
     * Signature: `void onEnter (GumInvocationContext * ic)`
     */
-  var onEnter: js.UndefOr[NativePointer] = js.undefined
+  var onEnter: js.UndefOr[NativePointer] = js.native
   /**
     * Called synchronously when a thread is about to leave the target function.
     *
@@ -20,16 +21,35 @@ trait NativeInvocationListenerCallbacks extends InvocationListenerCallbacks {
     *
     * Signature: `void onLeave (GumInvocationContext * ic)`
     */
-  var onLeave: js.UndefOr[NativePointer] = js.undefined
+  var onLeave: js.UndefOr[NativePointer] = js.native
 }
 
 object NativeInvocationListenerCallbacks {
   @scala.inline
-  def apply(onEnter: NativePointer = null, onLeave: NativePointer = null): NativeInvocationListenerCallbacks = {
+  def apply(): NativeInvocationListenerCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeInvocationListenerCallbacks]
   }
+  @scala.inline
+  implicit class NativeInvocationListenerCallbacksOps[Self <: NativeInvocationListenerCallbacks] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnEnter(value: NativePointer): Self = this.set("onEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    @scala.inline
+    def setOnLeave(value: NativePointer): Self = this.set("onLeave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLeave: Self = this.set("onLeave", js.undefined)
+  }
+  
 }
 

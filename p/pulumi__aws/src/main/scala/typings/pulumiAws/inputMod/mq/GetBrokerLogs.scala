@@ -12,11 +12,30 @@ trait GetBrokerLogs extends js.Object {
 
 object GetBrokerLogs {
   @scala.inline
-  def apply(audit: js.UndefOr[Boolean] = js.undefined, general: js.UndefOr[Boolean] = js.undefined): GetBrokerLogs = {
+  def apply(): GetBrokerLogs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(audit)) __obj.updateDynamic("audit")(audit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(general)) __obj.updateDynamic("general")(general.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBrokerLogs]
   }
+  @scala.inline
+  implicit class GetBrokerLogsOps[Self <: GetBrokerLogs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudit(value: Boolean): Self = this.set("audit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudit: Self = this.set("audit", js.undefined)
+    @scala.inline
+    def setGeneral(value: Boolean): Self = this.set("general", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeneral: Self = this.set("general", js.undefined)
+  }
+  
 }
 

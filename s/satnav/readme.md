@@ -11,7 +11,7 @@ A micro front-end router
 | Keywords           | routing, front-end |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 133 |
+| # downloads        | 121 |
 | # stars            | 0 |
 
 ## Links

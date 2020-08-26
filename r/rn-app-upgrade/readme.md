@@ -12,7 +12,7 @@ react native app upgrade
 | Keywords           | react-native, app, upgrade, android, ios |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 249 |
+| # downloads        | 309 |
 | # stars            | 0 |
 
 ## Links

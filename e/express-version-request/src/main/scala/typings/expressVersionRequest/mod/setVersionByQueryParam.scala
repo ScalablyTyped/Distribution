@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object setVersionByQueryParam extends js.Object {
   def apply(): Handler = js.native
+  def apply(queryParam: js.UndefOr[scala.Nothing], options: SetVersionByQueryParamOptions): Handler = js.native
   def apply(queryParam: String): Handler = js.native
   def apply(queryParam: String, options: SetVersionByQueryParamOptions): Handler = js.native
 }

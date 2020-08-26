@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.Core.VideoStabilizationEffectEnabledChangedEventArgs")
 @js.native
 abstract class VideoStabilizationEffectEnabledChangedEventArgs ()
-  extends typings.winrtUwp.Windows.Media.Core.VideoStabilizationEffectEnabledChangedEventArgs {
-  /** Gets a value indicating the reason why the VideoStabilizationEffect::Enabled property changed. */
-  /* CompleteClass */
-  override var reason: typings.winrtUwp.Windows.Media.Core.VideoStabilizationEffectEnabledChangedReason = js.native
-}
+  extends typings.winrtUwp.Windows.Media.Core.VideoStabilizationEffectEnabledChangedEventArgs
 

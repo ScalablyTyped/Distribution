@@ -12,7 +12,7 @@ Adhan is a well tested and well documented library for calculating Islamic praye
 | Keywords           | adhan, islam, muslim, prayer |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 1246 |
+| # downloads        | 1250 |
 | # stars            | 1 |
 
 ## Links

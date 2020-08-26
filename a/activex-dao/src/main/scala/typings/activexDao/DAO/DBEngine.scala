@@ -38,10 +38,39 @@ trait DBEngine extends js.Object {
     * @param password Deprecated, and unsupported for ACCDB
     */
   def CompactDatabase(SrcName: String, DstName: String): Unit = js.native
+  def CompactDatabase(
+    SrcName: String,
+    DstName: String,
+    DstLocale: js.UndefOr[scala.Nothing],
+    Options: js.UndefOr[scala.Nothing],
+    password: String
+  ): Unit = js.native
+  def CompactDatabase(SrcName: String, DstName: String, DstLocale: js.UndefOr[scala.Nothing], Options: DatabaseTypeEnum): Unit = js.native
+  def CompactDatabase(
+    SrcName: String,
+    DstName: String,
+    DstLocale: js.UndefOr[scala.Nothing],
+    Options: DatabaseTypeEnum,
+    password: String
+  ): Unit = js.native
   def CompactDatabase(SrcName: String, DstName: String, DstLocale: String): Unit = js.native
+  def CompactDatabase(
+    SrcName: String,
+    DstName: String,
+    DstLocale: String,
+    Options: js.UndefOr[scala.Nothing],
+    password: String
+  ): Unit = js.native
   def CompactDatabase(SrcName: String, DstName: String, DstLocale: String, Options: DatabaseTypeEnum): Unit = js.native
   def CompactDatabase(SrcName: String, DstName: String, DstLocale: String, Options: DatabaseTypeEnum, password: String): Unit = js.native
   def CompactDatabase(SrcName: String, DstName: String, DstLocale: LanguageConstants): Unit = js.native
+  def CompactDatabase(
+    SrcName: String,
+    DstName: String,
+    DstLocale: LanguageConstants,
+    Options: js.UndefOr[scala.Nothing],
+    password: String
+  ): Unit = js.native
   def CompactDatabase(SrcName: String, DstName: String, DstLocale: LanguageConstants, Options: DatabaseTypeEnum): Unit = js.native
   def CompactDatabase(
     SrcName: String,
@@ -72,17 +101,37 @@ trait DBEngine extends js.Object {
     * @param Connect ODBC connection string; prepend with `ODBC;`
     */
   def OpenConnection(Name: String): Connection = js.native
+  def OpenConnection(
+    Name: String,
+    Options: js.UndefOr[scala.Nothing],
+    ReadOnly: js.UndefOr[scala.Nothing],
+    Connect: String
+  ): Connection = js.native
+  def OpenConnection(Name: String, Options: js.UndefOr[scala.Nothing], ReadOnly: Boolean): Connection = js.native
+  def OpenConnection(Name: String, Options: js.UndefOr[scala.Nothing], ReadOnly: Boolean, Connect: String): Connection = js.native
   def OpenConnection(Name: String, Options: DriverPromptEnum): Connection = js.native
+  def OpenConnection(Name: String, Options: DriverPromptEnum, ReadOnly: js.UndefOr[scala.Nothing], Connect: String): Connection = js.native
   def OpenConnection(Name: String, Options: DriverPromptEnum, ReadOnly: Boolean): Connection = js.native
   def OpenConnection(Name: String, Options: DriverPromptEnum, ReadOnly: Boolean, Connect: String): Connection = js.native
   @JSName("OpenConnection")
   def OpenConnection_1024(Name: String, Options: `1024`): Connection = js.native
   @JSName("OpenConnection")
+  def OpenConnection_1024(Name: String, Options: `1024`, ReadOnly: js.UndefOr[scala.Nothing], Connect: String): Connection = js.native
+  @JSName("OpenConnection")
   def OpenConnection_1024(Name: String, Options: `1024`, ReadOnly: Boolean): Connection = js.native
   @JSName("OpenConnection")
   def OpenConnection_1024(Name: String, Options: `1024`, ReadOnly: Boolean, Connect: String): Connection = js.native
   def OpenDatabase(Name: String): Database = js.native
+  def OpenDatabase(
+    Name: String,
+    Exclusive: js.UndefOr[scala.Nothing],
+    ReadOnly: js.UndefOr[scala.Nothing],
+    Connect: String
+  ): Database = js.native
+  def OpenDatabase(Name: String, Exclusive: js.UndefOr[scala.Nothing], ReadOnly: Boolean): Database = js.native
+  def OpenDatabase(Name: String, Exclusive: js.UndefOr[scala.Nothing], ReadOnly: Boolean, Connect: String): Database = js.native
   def OpenDatabase(Name: String, Exclusive: Boolean): Database = js.native
+  def OpenDatabase(Name: String, Exclusive: Boolean, ReadOnly: js.UndefOr[scala.Nothing], Connect: String): Database = js.native
   def OpenDatabase(Name: String, Exclusive: Boolean, ReadOnly: Boolean): Database = js.native
   def OpenDatabase(Name: String, Exclusive: Boolean, ReadOnly: Boolean, Connect: String): Database = js.native
   def Properties(Item: String): Property = js.native

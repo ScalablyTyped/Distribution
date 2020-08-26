@@ -18,11 +18,30 @@ trait BatchUpdateScheduleResponse extends js.Object {
 
 object BatchUpdateScheduleResponse {
   @scala.inline
-  def apply(Creates: BatchScheduleActionCreateResult = null, Deletes: BatchScheduleActionDeleteResult = null): BatchUpdateScheduleResponse = {
+  def apply(): BatchUpdateScheduleResponse = {
     val __obj = js.Dynamic.literal()
-    if (Creates != null) __obj.updateDynamic("Creates")(Creates.asInstanceOf[js.Any])
-    if (Deletes != null) __obj.updateDynamic("Deletes")(Deletes.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdateScheduleResponse]
   }
+  @scala.inline
+  implicit class BatchUpdateScheduleResponseOps[Self <: BatchUpdateScheduleResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreates(value: BatchScheduleActionCreateResult): Self = this.set("Creates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreates: Self = this.set("Creates", js.undefined)
+    @scala.inline
+    def setDeletes(value: BatchScheduleActionDeleteResult): Self = this.set("Deletes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletes: Self = this.set("Deletes", js.undefined)
+  }
+  
 }
 

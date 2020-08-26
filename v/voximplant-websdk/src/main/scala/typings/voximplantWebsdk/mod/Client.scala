@@ -46,6 +46,7 @@ trait Client extends js.Object {
     *    @param failedCallback A function called in case of problems while changing audio recording device
     */
   def attachRecordingDevice(): Unit = js.native
+  def attachRecordingDevice(successCallback: js.UndefOr[scala.Nothing], failedCallback: js.Function0[_]): Unit = js.native
   def attachRecordingDevice(successCallback: js.Function0[_]): Unit = js.native
   def attachRecordingDevice(successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
   /**
@@ -74,7 +75,16 @@ trait Client extends js.Object {
     *    @param extraHeaders Optional custom parameters (SIP headers) that should be passed with call (INVITE) message. Parameter names must start with "X-" to be processed by application. IMPORTANT: Headers size limit is 200 bytes
     */
   def call(number: String): Call = js.native
+  def call(
+    number: String,
+    useVideo: js.UndefOr[scala.Nothing],
+    customData: js.UndefOr[scala.Nothing],
+    extraHeaders: js.Object
+  ): Call = js.native
+  def call(number: String, useVideo: js.UndefOr[scala.Nothing], customData: String): Call = js.native
+  def call(number: String, useVideo: js.UndefOr[scala.Nothing], customData: String, extraHeaders: js.Object): Call = js.native
   def call(number: String, useVideo: Boolean): Call = js.native
+  def call(number: String, useVideo: Boolean, customData: js.UndefOr[scala.Nothing], extraHeaders: js.Object): Call = js.native
   def call(number: String, useVideo: Boolean, customData: String): Call = js.native
   def call(number: String, useVideo: Boolean, customData: String, extraHeaders: js.Object): Call = js.native
   /**
@@ -96,6 +106,7 @@ trait Client extends js.Object {
     *    @param users User ids of the invited users to the chat room
     */
   def createChatRoom(): String = js.native
+  def createChatRoom(pass: js.UndefOr[scala.Nothing], users: js.Array[String]): String = js.native
   def createChatRoom(pass: String): String = js.native
   def createChatRoom(pass: String, users: js.Array[String]): String = js.native
   /**
@@ -140,7 +151,16 @@ trait Client extends js.Object {
     *    @param count Number of messages
     */
   def getChatRoomHistory(room: String): Unit = js.native
+  def getChatRoomHistory(
+    room: String,
+    message_id: js.UndefOr[scala.Nothing],
+    direction: js.UndefOr[scala.Nothing],
+    count: Double
+  ): Unit = js.native
+  def getChatRoomHistory(room: String, message_id: js.UndefOr[scala.Nothing], direction: Boolean): Unit = js.native
+  def getChatRoomHistory(room: String, message_id: js.UndefOr[scala.Nothing], direction: Boolean, count: Double): Unit = js.native
   def getChatRoomHistory(room: String, message_id: String): Unit = js.native
+  def getChatRoomHistory(room: String, message_id: String, direction: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
   def getChatRoomHistory(room: String, message_id: String, direction: Boolean): Unit = js.native
   def getChatRoomHistory(room: String, message_id: String, direction: Boolean, count: Double): Unit = js.native
   /**
@@ -152,7 +172,16 @@ trait Client extends js.Object {
     *    @param count Number of messages
     */
   def getInstantMessagingHistory(user_id: String): Unit = js.native
+  def getInstantMessagingHistory(
+    user_id: String,
+    message_id: js.UndefOr[scala.Nothing],
+    direction: js.UndefOr[scala.Nothing],
+    count: Double
+  ): Unit = js.native
+  def getInstantMessagingHistory(user_id: String, message_id: js.UndefOr[scala.Nothing], direction: Boolean): Unit = js.native
+  def getInstantMessagingHistory(user_id: String, message_id: js.UndefOr[scala.Nothing], direction: Boolean, count: Double): Unit = js.native
   def getInstantMessagingHistory(user_id: String, message_id: String): Unit = js.native
+  def getInstantMessagingHistory(user_id: String, message_id: String, direction: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
   def getInstantMessagingHistory(user_id: String, message_id: String, direction: Boolean): Unit = js.native
   def getInstantMessagingHistory(user_id: String, message_id: String, direction: Boolean, count: Double): Unit = js.native
   /**
@@ -387,6 +416,11 @@ trait Client extends js.Object {
     */
   def setVideoBandwidth(bandwidth: Double): Unit = js.native
   def setVideoSettings(settings: FlashVideoSettings): Unit = js.native
+  def setVideoSettings(
+    settings: FlashVideoSettings,
+    successCallback: js.UndefOr[scala.Nothing],
+    failedCallback: js.Function0[_]
+  ): Unit = js.native
   def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[_]): Unit = js.native
   def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
   /**
@@ -397,6 +431,11 @@ trait Client extends js.Object {
     *    @param failedCallback Failed callback function
     */
   def setVideoSettings(settings: VideoSettings): Unit = js.native
+  def setVideoSettings(
+    settings: VideoSettings,
+    successCallback: js.UndefOr[scala.Nothing],
+    failedCallback: js.Function0[_]
+  ): Unit = js.native
   def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[_]): Unit = js.native
   def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
   /**
@@ -433,6 +472,7 @@ trait Client extends js.Object {
   def unbanChatRoomUser(room: String, user_id: String): Unit = js.native
   def unbanChatRoomUser(room: String, user_id: String, reason: String): Unit = js.native
   def useAudioSource(id: String): Unit = js.native
+  def useAudioSource(id: String, successCallback: js.UndefOr[scala.Nothing], failedCallback: js.Function0[_]): Unit = js.native
   def useAudioSource(id: String, successCallback: js.Function0[_]): Unit = js.native
   def useAudioSource(id: String, successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
   /**
@@ -443,9 +483,11 @@ trait Client extends js.Object {
     *    @param failedCallback Called in WebRTC mode if audio source couldn't be changed successfully
     */
   def useAudioSource(id: Double): Unit = js.native
+  def useAudioSource(id: Double, successCallback: js.UndefOr[scala.Nothing], failedCallback: js.Function0[_]): Unit = js.native
   def useAudioSource(id: Double, successCallback: js.Function0[_]): Unit = js.native
   def useAudioSource(id: Double, successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
   def useVideoSource(id: String): Unit = js.native
+  def useVideoSource(id: String, successCallback: js.UndefOr[scala.Nothing], failedCallback: js.Function0[_]): Unit = js.native
   def useVideoSource(id: String, successCallback: js.Function0[_]): Unit = js.native
   def useVideoSource(id: String, successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
   /**
@@ -456,6 +498,7 @@ trait Client extends js.Object {
     *    @param failedCallback Called in WebRTC mode if video source couldn't be changed successfully
     */
   def useVideoSource(id: Double): Unit = js.native
+  def useVideoSource(id: Double, successCallback: js.UndefOr[scala.Nothing], failedCallback: js.Function0[_]): Unit = js.native
   def useVideoSource(id: Double, successCallback: js.Function0[_]): Unit = js.native
   def useVideoSource(id: Double, successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
   /**

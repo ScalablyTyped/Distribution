@@ -10,138 +10,239 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Auth0LockConstructorOptions extends js.Object {
-  var _enableIdPInitiatedLogin: js.UndefOr[Boolean] = js.undefined
-  var _enableImpersonation: js.UndefOr[Boolean] = js.undefined
-  var additionalSignUpFields: js.UndefOr[js.Array[Auth0LockAdditionalSignUpField]] = js.undefined
-  var allowAutocomplete: js.UndefOr[Boolean] = js.undefined
-  var allowForgotPassword: js.UndefOr[Boolean] = js.undefined
-  var allowLogin: js.UndefOr[Boolean] = js.undefined
-  var allowPasswordAutocomplete: js.UndefOr[Boolean] = js.undefined
-  var allowShowPassword: js.UndefOr[Boolean] = js.undefined
-  var allowSignUp: js.UndefOr[Boolean] = js.undefined
-  var allowedConnections: js.UndefOr[js.Array[String]] = js.undefined
-  var assetsUrl: js.UndefOr[String] = js.undefined
-  var auth: js.UndefOr[Auth0LockAuthOptions] = js.undefined
-  var autoclose: js.UndefOr[Boolean] = js.undefined
-  var autofocus: js.UndefOr[Boolean] = js.undefined
-  var avatar: js.UndefOr[Auth0LockAvatarOptions | Null] = js.undefined
-  var clientBaseUrl: js.UndefOr[String] = js.undefined
-  var closable: js.UndefOr[Boolean] = js.undefined
-  var configurationBaseUrl: js.UndefOr[String] = js.undefined
-  var container: js.UndefOr[String] = js.undefined
-  var defaultADUsernameFromEmailPrefix: js.UndefOr[Boolean] = js.undefined
-  var defaultDatabaseConnection: js.UndefOr[String] = js.undefined
-  var defaultEnterpriseConnection: js.UndefOr[String] = js.undefined
-  var flashMessage: js.UndefOr[Auth0LockFlashMessageOptions] = js.undefined
-  var forgotPasswordLink: js.UndefOr[String] = js.undefined
-  var hashCleanup: js.UndefOr[Boolean] = js.undefined
-  var initialScreen: js.UndefOr[login | signUp | forgotPassword] = js.undefined
-  var language: js.UndefOr[String] = js.undefined
-  var languageBaseUrl: js.UndefOr[String] = js.undefined
-  var languageDictionary: js.UndefOr[js.Any] = js.undefined
-  var leeway: js.UndefOr[Double] = js.undefined
-  var loginAfterSignUp: js.UndefOr[Boolean] = js.undefined
-  var mustAcceptTerms: js.UndefOr[Boolean] = js.undefined
-  var oidcConformant: js.UndefOr[Boolean] = js.undefined
-  var popupOptions: js.UndefOr[Auth0LockPopupOptions] = js.undefined
-  var prefill: js.UndefOr[Email] = js.undefined
-  var rememberLastLogin: js.UndefOr[Boolean] = js.undefined
-  var scrollGlobalMessagesIntoView: js.UndefOr[Boolean] = js.undefined
-  var signupLink: js.UndefOr[String] = js.undefined
-  var socialButtonStyle: js.UndefOr[big | small] = js.undefined
-  var theme: js.UndefOr[Auth0LockThemeOptions] = js.undefined
-  var usernameStyle: js.UndefOr[String] = js.undefined
+  var _enableIdPInitiatedLogin: js.UndefOr[Boolean] = js.native
+  var _enableImpersonation: js.UndefOr[Boolean] = js.native
+  var additionalSignUpFields: js.UndefOr[js.Array[Auth0LockAdditionalSignUpField]] = js.native
+  var allowAutocomplete: js.UndefOr[Boolean] = js.native
+  var allowForgotPassword: js.UndefOr[Boolean] = js.native
+  var allowLogin: js.UndefOr[Boolean] = js.native
+  var allowPasswordAutocomplete: js.UndefOr[Boolean] = js.native
+  var allowShowPassword: js.UndefOr[Boolean] = js.native
+  var allowSignUp: js.UndefOr[Boolean] = js.native
+  var allowedConnections: js.UndefOr[js.Array[String]] = js.native
+  var assetsUrl: js.UndefOr[String] = js.native
+  var auth: js.UndefOr[Auth0LockAuthOptions] = js.native
+  var autoclose: js.UndefOr[Boolean] = js.native
+  var autofocus: js.UndefOr[Boolean] = js.native
+  var avatar: js.UndefOr[Auth0LockAvatarOptions | Null] = js.native
+  var clientBaseUrl: js.UndefOr[String] = js.native
+  var closable: js.UndefOr[Boolean] = js.native
+  var configurationBaseUrl: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.native
+  var defaultADUsernameFromEmailPrefix: js.UndefOr[Boolean] = js.native
+  var defaultDatabaseConnection: js.UndefOr[String] = js.native
+  var defaultEnterpriseConnection: js.UndefOr[String] = js.native
+  var flashMessage: js.UndefOr[Auth0LockFlashMessageOptions] = js.native
+  var forgotPasswordLink: js.UndefOr[String] = js.native
+  var hashCleanup: js.UndefOr[Boolean] = js.native
+  var initialScreen: js.UndefOr[login | signUp | forgotPassword] = js.native
+  var language: js.UndefOr[String] = js.native
+  var languageBaseUrl: js.UndefOr[String] = js.native
+  var languageDictionary: js.UndefOr[js.Any] = js.native
+  var leeway: js.UndefOr[Double] = js.native
+  var loginAfterSignUp: js.UndefOr[Boolean] = js.native
+  var mustAcceptTerms: js.UndefOr[Boolean] = js.native
+  var oidcConformant: js.UndefOr[Boolean] = js.native
+  var popupOptions: js.UndefOr[Auth0LockPopupOptions] = js.native
+  var prefill: js.UndefOr[Email] = js.native
+  var rememberLastLogin: js.UndefOr[Boolean] = js.native
+  var scrollGlobalMessagesIntoView: js.UndefOr[Boolean] = js.native
+  var signupLink: js.UndefOr[String] = js.native
+  var socialButtonStyle: js.UndefOr[big | small] = js.native
+  var theme: js.UndefOr[Auth0LockThemeOptions] = js.native
+  var usernameStyle: js.UndefOr[String] = js.native
 }
 
 object Auth0LockConstructorOptions {
   @scala.inline
-  def apply(
-    _enableIdPInitiatedLogin: js.UndefOr[Boolean] = js.undefined,
-    _enableImpersonation: js.UndefOr[Boolean] = js.undefined,
-    additionalSignUpFields: js.Array[Auth0LockAdditionalSignUpField] = null,
-    allowAutocomplete: js.UndefOr[Boolean] = js.undefined,
-    allowForgotPassword: js.UndefOr[Boolean] = js.undefined,
-    allowLogin: js.UndefOr[Boolean] = js.undefined,
-    allowPasswordAutocomplete: js.UndefOr[Boolean] = js.undefined,
-    allowShowPassword: js.UndefOr[Boolean] = js.undefined,
-    allowSignUp: js.UndefOr[Boolean] = js.undefined,
-    allowedConnections: js.Array[String] = null,
-    assetsUrl: String = null,
-    auth: Auth0LockAuthOptions = null,
-    autoclose: js.UndefOr[Boolean] = js.undefined,
-    autofocus: js.UndefOr[Boolean] = js.undefined,
-    avatar: js.UndefOr[Null | Auth0LockAvatarOptions] = js.undefined,
-    clientBaseUrl: String = null,
-    closable: js.UndefOr[Boolean] = js.undefined,
-    configurationBaseUrl: String = null,
-    container: String = null,
-    defaultADUsernameFromEmailPrefix: js.UndefOr[Boolean] = js.undefined,
-    defaultDatabaseConnection: String = null,
-    defaultEnterpriseConnection: String = null,
-    flashMessage: Auth0LockFlashMessageOptions = null,
-    forgotPasswordLink: String = null,
-    hashCleanup: js.UndefOr[Boolean] = js.undefined,
-    initialScreen: login | signUp | forgotPassword = null,
-    language: String = null,
-    languageBaseUrl: String = null,
-    languageDictionary: js.Any = null,
-    leeway: js.UndefOr[Double] = js.undefined,
-    loginAfterSignUp: js.UndefOr[Boolean] = js.undefined,
-    mustAcceptTerms: js.UndefOr[Boolean] = js.undefined,
-    oidcConformant: js.UndefOr[Boolean] = js.undefined,
-    popupOptions: Auth0LockPopupOptions = null,
-    prefill: Email = null,
-    rememberLastLogin: js.UndefOr[Boolean] = js.undefined,
-    scrollGlobalMessagesIntoView: js.UndefOr[Boolean] = js.undefined,
-    signupLink: String = null,
-    socialButtonStyle: big | small = null,
-    theme: Auth0LockThemeOptions = null,
-    usernameStyle: String = null
-  ): Auth0LockConstructorOptions = {
+  def apply(): Auth0LockConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_enableIdPInitiatedLogin)) __obj.updateDynamic("_enableIdPInitiatedLogin")(_enableIdPInitiatedLogin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(_enableImpersonation)) __obj.updateDynamic("_enableImpersonation")(_enableImpersonation.get.asInstanceOf[js.Any])
-    if (additionalSignUpFields != null) __obj.updateDynamic("additionalSignUpFields")(additionalSignUpFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAutocomplete)) __obj.updateDynamic("allowAutocomplete")(allowAutocomplete.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowForgotPassword)) __obj.updateDynamic("allowForgotPassword")(allowForgotPassword.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowLogin)) __obj.updateDynamic("allowLogin")(allowLogin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPasswordAutocomplete)) __obj.updateDynamic("allowPasswordAutocomplete")(allowPasswordAutocomplete.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowShowPassword)) __obj.updateDynamic("allowShowPassword")(allowShowPassword.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSignUp)) __obj.updateDynamic("allowSignUp")(allowSignUp.get.asInstanceOf[js.Any])
-    if (allowedConnections != null) __obj.updateDynamic("allowedConnections")(allowedConnections.asInstanceOf[js.Any])
-    if (assetsUrl != null) __obj.updateDynamic("assetsUrl")(assetsUrl.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(avatar)) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (clientBaseUrl != null) __obj.updateDynamic("clientBaseUrl")(clientBaseUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
-    if (configurationBaseUrl != null) __obj.updateDynamic("configurationBaseUrl")(configurationBaseUrl.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultADUsernameFromEmailPrefix)) __obj.updateDynamic("defaultADUsernameFromEmailPrefix")(defaultADUsernameFromEmailPrefix.get.asInstanceOf[js.Any])
-    if (defaultDatabaseConnection != null) __obj.updateDynamic("defaultDatabaseConnection")(defaultDatabaseConnection.asInstanceOf[js.Any])
-    if (defaultEnterpriseConnection != null) __obj.updateDynamic("defaultEnterpriseConnection")(defaultEnterpriseConnection.asInstanceOf[js.Any])
-    if (flashMessage != null) __obj.updateDynamic("flashMessage")(flashMessage.asInstanceOf[js.Any])
-    if (forgotPasswordLink != null) __obj.updateDynamic("forgotPasswordLink")(forgotPasswordLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(hashCleanup)) __obj.updateDynamic("hashCleanup")(hashCleanup.get.asInstanceOf[js.Any])
-    if (initialScreen != null) __obj.updateDynamic("initialScreen")(initialScreen.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (languageBaseUrl != null) __obj.updateDynamic("languageBaseUrl")(languageBaseUrl.asInstanceOf[js.Any])
-    if (languageDictionary != null) __obj.updateDynamic("languageDictionary")(languageDictionary.asInstanceOf[js.Any])
-    if (!js.isUndefined(leeway)) __obj.updateDynamic("leeway")(leeway.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loginAfterSignUp)) __obj.updateDynamic("loginAfterSignUp")(loginAfterSignUp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mustAcceptTerms)) __obj.updateDynamic("mustAcceptTerms")(mustAcceptTerms.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(oidcConformant)) __obj.updateDynamic("oidcConformant")(oidcConformant.get.asInstanceOf[js.Any])
-    if (popupOptions != null) __obj.updateDynamic("popupOptions")(popupOptions.asInstanceOf[js.Any])
-    if (prefill != null) __obj.updateDynamic("prefill")(prefill.asInstanceOf[js.Any])
-    if (!js.isUndefined(rememberLastLogin)) __obj.updateDynamic("rememberLastLogin")(rememberLastLogin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollGlobalMessagesIntoView)) __obj.updateDynamic("scrollGlobalMessagesIntoView")(scrollGlobalMessagesIntoView.get.asInstanceOf[js.Any])
-    if (signupLink != null) __obj.updateDynamic("signupLink")(signupLink.asInstanceOf[js.Any])
-    if (socialButtonStyle != null) __obj.updateDynamic("socialButtonStyle")(socialButtonStyle.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (usernameStyle != null) __obj.updateDynamic("usernameStyle")(usernameStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockConstructorOptions]
   }
+  @scala.inline
+  implicit class Auth0LockConstructorOptionsOps[Self <: Auth0LockConstructorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_enableIdPInitiatedLogin(value: Boolean): Self = this.set("_enableIdPInitiatedLogin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_enableIdPInitiatedLogin: Self = this.set("_enableIdPInitiatedLogin", js.undefined)
+    @scala.inline
+    def set_enableImpersonation(value: Boolean): Self = this.set("_enableImpersonation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_enableImpersonation: Self = this.set("_enableImpersonation", js.undefined)
+    @scala.inline
+    def setAdditionalSignUpFieldsVarargs(value: Auth0LockAdditionalSignUpField*): Self = this.set("additionalSignUpFields", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalSignUpFields(value: js.Array[Auth0LockAdditionalSignUpField]): Self = this.set("additionalSignUpFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalSignUpFields: Self = this.set("additionalSignUpFields", js.undefined)
+    @scala.inline
+    def setAllowAutocomplete(value: Boolean): Self = this.set("allowAutocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowAutocomplete: Self = this.set("allowAutocomplete", js.undefined)
+    @scala.inline
+    def setAllowForgotPassword(value: Boolean): Self = this.set("allowForgotPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowForgotPassword: Self = this.set("allowForgotPassword", js.undefined)
+    @scala.inline
+    def setAllowLogin(value: Boolean): Self = this.set("allowLogin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowLogin: Self = this.set("allowLogin", js.undefined)
+    @scala.inline
+    def setAllowPasswordAutocomplete(value: Boolean): Self = this.set("allowPasswordAutocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowPasswordAutocomplete: Self = this.set("allowPasswordAutocomplete", js.undefined)
+    @scala.inline
+    def setAllowShowPassword(value: Boolean): Self = this.set("allowShowPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowShowPassword: Self = this.set("allowShowPassword", js.undefined)
+    @scala.inline
+    def setAllowSignUp(value: Boolean): Self = this.set("allowSignUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSignUp: Self = this.set("allowSignUp", js.undefined)
+    @scala.inline
+    def setAllowedConnectionsVarargs(value: String*): Self = this.set("allowedConnections", js.Array(value :_*))
+    @scala.inline
+    def setAllowedConnections(value: js.Array[String]): Self = this.set("allowedConnections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedConnections: Self = this.set("allowedConnections", js.undefined)
+    @scala.inline
+    def setAssetsUrl(value: String): Self = this.set("assetsUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetsUrl: Self = this.set("assetsUrl", js.undefined)
+    @scala.inline
+    def setAuth(value: Auth0LockAuthOptions): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setAutoclose(value: Boolean): Self = this.set("autoclose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoclose: Self = this.set("autoclose", js.undefined)
+    @scala.inline
+    def setAutofocus(value: Boolean): Self = this.set("autofocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutofocus: Self = this.set("autofocus", js.undefined)
+    @scala.inline
+    def setAvatar(value: Auth0LockAvatarOptions): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvatar: Self = this.set("avatar", js.undefined)
+    @scala.inline
+    def setAvatarNull: Self = this.set("avatar", null)
+    @scala.inline
+    def setClientBaseUrl(value: String): Self = this.set("clientBaseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientBaseUrl: Self = this.set("clientBaseUrl", js.undefined)
+    @scala.inline
+    def setClosable(value: Boolean): Self = this.set("closable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClosable: Self = this.set("closable", js.undefined)
+    @scala.inline
+    def setConfigurationBaseUrl(value: String): Self = this.set("configurationBaseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationBaseUrl: Self = this.set("configurationBaseUrl", js.undefined)
+    @scala.inline
+    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setDefaultADUsernameFromEmailPrefix(value: Boolean): Self = this.set("defaultADUsernameFromEmailPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultADUsernameFromEmailPrefix: Self = this.set("defaultADUsernameFromEmailPrefix", js.undefined)
+    @scala.inline
+    def setDefaultDatabaseConnection(value: String): Self = this.set("defaultDatabaseConnection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultDatabaseConnection: Self = this.set("defaultDatabaseConnection", js.undefined)
+    @scala.inline
+    def setDefaultEnterpriseConnection(value: String): Self = this.set("defaultEnterpriseConnection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEnterpriseConnection: Self = this.set("defaultEnterpriseConnection", js.undefined)
+    @scala.inline
+    def setFlashMessage(value: Auth0LockFlashMessageOptions): Self = this.set("flashMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlashMessage: Self = this.set("flashMessage", js.undefined)
+    @scala.inline
+    def setForgotPasswordLink(value: String): Self = this.set("forgotPasswordLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForgotPasswordLink: Self = this.set("forgotPasswordLink", js.undefined)
+    @scala.inline
+    def setHashCleanup(value: Boolean): Self = this.set("hashCleanup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashCleanup: Self = this.set("hashCleanup", js.undefined)
+    @scala.inline
+    def setInitialScreen(value: login | signUp | forgotPassword): Self = this.set("initialScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialScreen: Self = this.set("initialScreen", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLanguageBaseUrl(value: String): Self = this.set("languageBaseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageBaseUrl: Self = this.set("languageBaseUrl", js.undefined)
+    @scala.inline
+    def setLanguageDictionary(value: js.Any): Self = this.set("languageDictionary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageDictionary: Self = this.set("languageDictionary", js.undefined)
+    @scala.inline
+    def setLeeway(value: Double): Self = this.set("leeway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeeway: Self = this.set("leeway", js.undefined)
+    @scala.inline
+    def setLoginAfterSignUp(value: Boolean): Self = this.set("loginAfterSignUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoginAfterSignUp: Self = this.set("loginAfterSignUp", js.undefined)
+    @scala.inline
+    def setMustAcceptTerms(value: Boolean): Self = this.set("mustAcceptTerms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMustAcceptTerms: Self = this.set("mustAcceptTerms", js.undefined)
+    @scala.inline
+    def setOidcConformant(value: Boolean): Self = this.set("oidcConformant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOidcConformant: Self = this.set("oidcConformant", js.undefined)
+    @scala.inline
+    def setPopupOptions(value: Auth0LockPopupOptions): Self = this.set("popupOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupOptions: Self = this.set("popupOptions", js.undefined)
+    @scala.inline
+    def setPrefill(value: Email): Self = this.set("prefill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefill: Self = this.set("prefill", js.undefined)
+    @scala.inline
+    def setRememberLastLogin(value: Boolean): Self = this.set("rememberLastLogin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRememberLastLogin: Self = this.set("rememberLastLogin", js.undefined)
+    @scala.inline
+    def setScrollGlobalMessagesIntoView(value: Boolean): Self = this.set("scrollGlobalMessagesIntoView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollGlobalMessagesIntoView: Self = this.set("scrollGlobalMessagesIntoView", js.undefined)
+    @scala.inline
+    def setSignupLink(value: String): Self = this.set("signupLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignupLink: Self = this.set("signupLink", js.undefined)
+    @scala.inline
+    def setSocialButtonStyle(value: big | small): Self = this.set("socialButtonStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocialButtonStyle: Self = this.set("socialButtonStyle", js.undefined)
+    @scala.inline
+    def setTheme(value: Auth0LockThemeOptions): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setUsernameStyle(value: String): Self = this.set("usernameStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsernameStyle: Self = this.set("usernameStyle", js.undefined)
+  }
+  
 }
 

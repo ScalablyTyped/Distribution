@@ -15,11 +15,32 @@ trait CompatibleVersionsMap extends js.Object {
 
 object CompatibleVersionsMap {
   @scala.inline
-  def apply(SourceVersion: ElasticsearchVersionString = null, TargetVersions: ElasticsearchVersionList = null): CompatibleVersionsMap = {
+  def apply(): CompatibleVersionsMap = {
     val __obj = js.Dynamic.literal()
-    if (SourceVersion != null) __obj.updateDynamic("SourceVersion")(SourceVersion.asInstanceOf[js.Any])
-    if (TargetVersions != null) __obj.updateDynamic("TargetVersions")(TargetVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompatibleVersionsMap]
   }
+  @scala.inline
+  implicit class CompatibleVersionsMapOps[Self <: CompatibleVersionsMap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceVersion(value: ElasticsearchVersionString): Self = this.set("SourceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceVersion: Self = this.set("SourceVersion", js.undefined)
+    @scala.inline
+    def setTargetVersionsVarargs(value: ElasticsearchVersionString*): Self = this.set("TargetVersions", js.Array(value :_*))
+    @scala.inline
+    def setTargetVersions(value: ElasticsearchVersionList): Self = this.set("TargetVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetVersions: Self = this.set("TargetVersions", js.undefined)
+  }
+  
 }
 

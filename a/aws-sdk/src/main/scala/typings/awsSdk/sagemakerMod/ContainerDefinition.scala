@@ -17,7 +17,7 @@ trait ContainerDefinition extends js.Object {
   /**
     * The Amazon EC2 Container Registry (Amazon ECR) path where inference code is stored. If you are using your own custom algorithm instead of an algorithm provided by Amazon SageMaker, the inference code must meet Amazon SageMaker requirements. Amazon SageMaker supports both registry/repository[:tag] and registry/repository[@digest] image path formats. For more information, see Using Your Own Algorithms with Amazon SageMaker 
     */
-  var Image: js.UndefOr[typings.awsSdk.sagemakerMod.Image] = js.native
+  var Image: js.UndefOr[ContainerImage] = js.native
   /**
     * Whether the container hosts a single model or multiple models.
     */
@@ -34,22 +34,46 @@ trait ContainerDefinition extends js.Object {
 
 object ContainerDefinition {
   @scala.inline
-  def apply(
-    ContainerHostname: ContainerHostname = null,
-    Environment: EnvironmentMap = null,
-    Image: Image = null,
-    Mode: ContainerMode = null,
-    ModelDataUrl: Url = null,
-    ModelPackageName: ArnOrName = null
-  ): ContainerDefinition = {
+  def apply(): ContainerDefinition = {
     val __obj = js.Dynamic.literal()
-    if (ContainerHostname != null) __obj.updateDynamic("ContainerHostname")(ContainerHostname.asInstanceOf[js.Any])
-    if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
-    if (Image != null) __obj.updateDynamic("Image")(Image.asInstanceOf[js.Any])
-    if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
-    if (ModelDataUrl != null) __obj.updateDynamic("ModelDataUrl")(ModelDataUrl.asInstanceOf[js.Any])
-    if (ModelPackageName != null) __obj.updateDynamic("ModelPackageName")(ModelPackageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerDefinition]
   }
+  @scala.inline
+  implicit class ContainerDefinitionOps[Self <: ContainerDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerHostname(value: ContainerHostname): Self = this.set("ContainerHostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerHostname: Self = this.set("ContainerHostname", js.undefined)
+    @scala.inline
+    def setEnvironment(value: EnvironmentMap): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    @scala.inline
+    def setImage(value: ContainerImage): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("Image", js.undefined)
+    @scala.inline
+    def setMode(value: ContainerMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("Mode", js.undefined)
+    @scala.inline
+    def setModelDataUrl(value: Url): Self = this.set("ModelDataUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelDataUrl: Self = this.set("ModelDataUrl", js.undefined)
+    @scala.inline
+    def setModelPackageName(value: ArnOrName): Self = this.set("ModelPackageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelPackageName: Self = this.set("ModelPackageName", js.undefined)
+  }
+  
 }
 

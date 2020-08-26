@@ -11,8 +11,8 @@ The lodash method `_.reverse` exported as a module.
 | Full name          | lodash.reverse |
 | Keywords           | lodash-modularized, reverse |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 164780 |
+| # dependents       | 19 |
+| # downloads        | 171242 |
 | # stars            | 0 |
 
 ## Links

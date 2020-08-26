@@ -79,14 +79,14 @@ trait BoundingBox extends js.Object {
   def intersectsRay(ray: Ray, point: Vec3): Boolean = js.native
   /**
     * Set an AABB to enclose the specified AABB if it were to be
-    transformed by the specified 4x4 matrix.
+    * transformed by the specified 4x4 matrix.
     * @param aabb - Box to transform and enclose.
     * @param m - Transformation matrix to apply to source AABB.
     */
   def setFromTransformedAabb(aabb: BoundingBox, m: Mat4): Unit = js.native
   /**
     * Sets the minimum and maximum corner of the AABB.
-    Using this function is faster than assigning min and max separately.
+    * Using this function is faster than assigning min and max separately.
     * @param min - The minimum corner of the AABB.
     * @param max - The maximum corner of the AABB.
     */

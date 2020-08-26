@@ -38,24 +38,50 @@ trait ProvisionedConcurrencyConfigListItem extends js.Object {
 
 object ProvisionedConcurrencyConfigListItem {
   @scala.inline
-  def apply(
-    AllocatedProvisionedConcurrentExecutions: js.UndefOr[NonNegativeInteger] = js.undefined,
-    AvailableProvisionedConcurrentExecutions: js.UndefOr[NonNegativeInteger] = js.undefined,
-    FunctionArn: FunctionArn = null,
-    LastModified: Timestamp = null,
-    RequestedProvisionedConcurrentExecutions: js.UndefOr[PositiveInteger] = js.undefined,
-    Status: ProvisionedConcurrencyStatusEnum = null,
-    StatusReason: String = null
-  ): ProvisionedConcurrencyConfigListItem = {
+  def apply(): ProvisionedConcurrencyConfigListItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedProvisionedConcurrentExecutions)) __obj.updateDynamic("AllocatedProvisionedConcurrentExecutions")(AllocatedProvisionedConcurrentExecutions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AvailableProvisionedConcurrentExecutions)) __obj.updateDynamic("AvailableProvisionedConcurrentExecutions")(AvailableProvisionedConcurrentExecutions.get.asInstanceOf[js.Any])
-    if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequestedProvisionedConcurrentExecutions)) __obj.updateDynamic("RequestedProvisionedConcurrentExecutions")(RequestedProvisionedConcurrentExecutions.get.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionedConcurrencyConfigListItem]
   }
+  @scala.inline
+  implicit class ProvisionedConcurrencyConfigListItemOps[Self <: ProvisionedConcurrencyConfigListItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocatedProvisionedConcurrentExecutions(value: NonNegativeInteger): Self = this.set("AllocatedProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocatedProvisionedConcurrentExecutions: Self = this.set("AllocatedProvisionedConcurrentExecutions", js.undefined)
+    @scala.inline
+    def setAvailableProvisionedConcurrentExecutions(value: NonNegativeInteger): Self = this.set("AvailableProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableProvisionedConcurrentExecutions: Self = this.set("AvailableProvisionedConcurrentExecutions", js.undefined)
+    @scala.inline
+    def setFunctionArn(value: FunctionArn): Self = this.set("FunctionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionArn: Self = this.set("FunctionArn", js.undefined)
+    @scala.inline
+    def setLastModified(value: Timestamp): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setRequestedProvisionedConcurrentExecutions(value: PositiveInteger): Self = this.set("RequestedProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedProvisionedConcurrentExecutions: Self = this.set("RequestedProvisionedConcurrentExecutions", js.undefined)
+    @scala.inline
+    def setStatus(value: ProvisionedConcurrencyStatusEnum): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: String): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+  }
+  
 }
 

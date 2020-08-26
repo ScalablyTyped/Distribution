@@ -1,45 +1,35 @@
 package typings.mangopay2NodejsSdk.mod.user
 
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.address.AddressData
-import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateUserNaturalData extends BaseUserNaturalData {
-  var Id: String
+  var Id: String = js.native
 }
 
 object UpdateUserNaturalData {
   @scala.inline
-  def apply(
-    Id: String,
-    PersonType: NATURAL,
-    Address: String | AddressData = null,
-    Birthday: js.UndefOr[Timestamp] = js.undefined,
-    CountryOfResidence: CountryISO = null,
-    Email: String = null,
-    FirstName: String = null,
-    IncomeRange: IncomeRange = null,
-    LastName: String = null,
-    Nationality: CountryISO = null,
-    Occupation: String = null,
-    Tag: String = null
-  ): UpdateUserNaturalData = {
+  def apply(Id: String, PersonType: NATURAL): UpdateUserNaturalData = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], PersonType = PersonType.asInstanceOf[js.Any])
-    if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
-    if (!js.isUndefined(Birthday)) __obj.updateDynamic("Birthday")(Birthday.get.asInstanceOf[js.Any])
-    if (CountryOfResidence != null) __obj.updateDynamic("CountryOfResidence")(CountryOfResidence.asInstanceOf[js.Any])
-    if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
-    if (FirstName != null) __obj.updateDynamic("FirstName")(FirstName.asInstanceOf[js.Any])
-    if (IncomeRange != null) __obj.updateDynamic("IncomeRange")(IncomeRange.asInstanceOf[js.Any])
-    if (LastName != null) __obj.updateDynamic("LastName")(LastName.asInstanceOf[js.Any])
-    if (Nationality != null) __obj.updateDynamic("Nationality")(Nationality.asInstanceOf[js.Any])
-    if (Occupation != null) __obj.updateDynamic("Occupation")(Occupation.asInstanceOf[js.Any])
-    if (Tag != null) __obj.updateDynamic("Tag")(Tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserNaturalData]
   }
+  @scala.inline
+  implicit class UpdateUserNaturalDataOps[Self <: UpdateUserNaturalData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+  }
+  
 }
 

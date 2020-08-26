@@ -6,18 +6,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Params[RT /* <: js.UndefOr[ResponseType] */] extends js.Object {
-  var params: js.UndefOr[RefinedParams[RT] | Null] = js.undefined
-  var selector: js.UndefOr[String] = js.undefined
+  var params: js.UndefOr[RefinedParams[RT] | Null] = js.native
+  var selector: js.UndefOr[String] = js.native
 }
 
 object Params {
   @scala.inline
-  def apply[/* <: js.UndefOr[typings.k6.httpMod.ResponseType] */ RT](params: js.UndefOr[Null | RefinedParams[RT]] = js.undefined, selector: String = null): Params[RT] = {
+  def apply[/* <: js.UndefOr[typings.k6.httpMod.ResponseType] */ RT](): Params[RT] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(params)) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params[RT]]
   }
+  @scala.inline
+  implicit class ParamsOps[Self <: Params[_], /* <: js.UndefOr[typings.k6.httpMod.ResponseType] */ RT] (val x: Self with Params[RT]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParams(value: RefinedParams[RT]): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setParamsNull: Self = this.set("params", null)
+    @scala.inline
+    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+  }
+  
 }
 

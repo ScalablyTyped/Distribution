@@ -12,7 +12,7 @@ simple tile utilities
 | Keywords           | tile, map, geojson |
 | # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 45809 |
+| # downloads        | 46660 |
 | # stars            | 2 |
 
 ## Links

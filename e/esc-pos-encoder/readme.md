@@ -12,7 +12,7 @@ Create a set of commands that can be send to any receipt printer that supports E
 | Keywords           | pos, escpos, receipt, printer |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 4699 |
+| # downloads        | 4920 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ A user interface for JSON.
 | Full name          | hjson |
 | Keywords           | json, comments, config, hjson, parser, serializer, human |
 | # releases         | 5 |
-| # dependents       | 137 |
-| # downloads        | 1249253 |
+| # dependents       | 140 |
+| # downloads        | 1236632 |
 | # stars            | 8 |
 
 ## Links

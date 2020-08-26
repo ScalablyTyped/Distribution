@@ -12,7 +12,7 @@ OAuth 2.0 authorization server toolkit for Node.js.
 | Keywords           | oauth, oauth2, auth, authz, authorization, connect, express, passport, middleware |
 | # releases         | 1 |
 | # dependents       | 103 |
-| # downloads        | 1919044 |
+| # downloads        | 1921195 |
 | # stars            | 28 |
 
 ## Links

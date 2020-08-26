@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object saveAs extends js.Object {
   def apply(data: String): Unit = js.native
+  def apply(data: String, filename: js.UndefOr[scala.Nothing], disableAutoBOM: Boolean): Unit = js.native
+  def apply(data: String, filename: js.UndefOr[scala.Nothing], options: FileSaverOptions): Unit = js.native
   def apply(data: String, filename: String): Unit = js.native
   def apply(data: String, filename: String, disableAutoBOM: Boolean): Unit = js.native
   def apply(data: String, filename: String, options: FileSaverOptions): Unit = js.native
@@ -19,6 +21,8 @@ object saveAs extends js.Object {
     * @param options - Optional FileSaver.js config
     */
   def apply(data: Blob): Unit = js.native
+  def apply(data: Blob, filename: js.UndefOr[scala.Nothing], disableAutoBOM: Boolean): Unit = js.native
+  def apply(data: Blob, filename: js.UndefOr[scala.Nothing], options: FileSaverOptions): Unit = js.native
   def apply(data: Blob, filename: String): Unit = js.native
   def apply(data: Blob, filename: String, disableAutoBOM: Boolean): Unit = js.native
   def apply(data: Blob, filename: String, options: FileSaverOptions): Unit = js.native

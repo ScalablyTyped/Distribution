@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "SelectorContext")
 @js.native
 class SelectorContext[T] protected ()
-  extends typings.angularCompiler.publicApiMod.SelectorContext[T] {
+  extends typings.angularCompiler.compilerMod.SelectorContext[T] {
   def this(
     selector: typings.angularCompiler.selectorMod.CssSelector,
     cbContext: T,

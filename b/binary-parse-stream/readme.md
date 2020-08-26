@@ -12,7 +12,7 @@ Painless streaming binary protocol parsers using generators.
 | Keywords           | generator, binary, stream, parse, parser |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 991 |
+| # downloads        | 890 |
 | # stars            | 0 |
 
 ## Links

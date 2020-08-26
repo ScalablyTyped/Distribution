@@ -31,13 +31,38 @@ trait SchemaCloudStorageFile extends js.Object {
 
 object SchemaCloudStorageFile {
   @scala.inline
-  def apply(bucketName: String = null, md5Hash: String = null, objectName: String = null, size: String = null): SchemaCloudStorageFile = {
+  def apply(): SchemaCloudStorageFile = {
     val __obj = js.Dynamic.literal()
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
-    if (md5Hash != null) __obj.updateDynamic("md5Hash")(md5Hash.asInstanceOf[js.Any])
-    if (objectName != null) __obj.updateDynamic("objectName")(objectName.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCloudStorageFile]
   }
+  @scala.inline
+  implicit class SchemaCloudStorageFileOps[Self <: SchemaCloudStorageFile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    @scala.inline
+    def setMd5Hash(value: String): Self = this.set("md5Hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMd5Hash: Self = this.set("md5Hash", js.undefined)
+    @scala.inline
+    def setObjectName(value: String): Self = this.set("objectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectName: Self = this.set("objectName", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

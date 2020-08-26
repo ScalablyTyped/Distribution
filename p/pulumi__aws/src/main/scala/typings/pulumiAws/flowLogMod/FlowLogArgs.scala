@@ -46,9 +46,9 @@ trait FlowLogArgs extends js.Object {
     */
   val subnetId: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The type of traffic to capture. Valid values: `ACCEPT`,`REJECT`, `ALL`.
     */
@@ -61,31 +61,64 @@ trait FlowLogArgs extends js.Object {
 
 object FlowLogArgs {
   @scala.inline
-  def apply(
-    trafficType: Input[String],
-    eniId: Input[String] = null,
-    iamRoleArn: Input[String] = null,
-    logDestination: Input[String] = null,
-    logDestinationType: Input[String] = null,
-    logFormat: Input[String] = null,
-    logGroupName: Input[String] = null,
-    maxAggregationInterval: Input[Double] = null,
-    subnetId: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpcId: Input[String] = null
-  ): FlowLogArgs = {
+  def apply(trafficType: Input[String]): FlowLogArgs = {
     val __obj = js.Dynamic.literal(trafficType = trafficType.asInstanceOf[js.Any])
-    if (eniId != null) __obj.updateDynamic("eniId")(eniId.asInstanceOf[js.Any])
-    if (iamRoleArn != null) __obj.updateDynamic("iamRoleArn")(iamRoleArn.asInstanceOf[js.Any])
-    if (logDestination != null) __obj.updateDynamic("logDestination")(logDestination.asInstanceOf[js.Any])
-    if (logDestinationType != null) __obj.updateDynamic("logDestinationType")(logDestinationType.asInstanceOf[js.Any])
-    if (logFormat != null) __obj.updateDynamic("logFormat")(logFormat.asInstanceOf[js.Any])
-    if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
-    if (maxAggregationInterval != null) __obj.updateDynamic("maxAggregationInterval")(maxAggregationInterval.asInstanceOf[js.Any])
-    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowLogArgs]
   }
+  @scala.inline
+  implicit class FlowLogArgsOps[Self <: FlowLogArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrafficType(value: Input[String]): Self = this.set("trafficType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEniId(value: Input[String]): Self = this.set("eniId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEniId: Self = this.set("eniId", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: Input[String]): Self = this.set("iamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("iamRoleArn", js.undefined)
+    @scala.inline
+    def setLogDestination(value: Input[String]): Self = this.set("logDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogDestination: Self = this.set("logDestination", js.undefined)
+    @scala.inline
+    def setLogDestinationType(value: Input[String]): Self = this.set("logDestinationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogDestinationType: Self = this.set("logDestinationType", js.undefined)
+    @scala.inline
+    def setLogFormat(value: Input[String]): Self = this.set("logFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogFormat: Self = this.set("logFormat", js.undefined)
+    @scala.inline
+    def setLogGroupName(value: Input[String]): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupName: Self = this.set("logGroupName", js.undefined)
+    @scala.inline
+    def setMaxAggregationInterval(value: Input[Double]): Self = this.set("maxAggregationInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAggregationInterval: Self = this.set("maxAggregationInterval", js.undefined)
+    @scala.inline
+    def setSubnetId(value: Input[String]): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("subnetId", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ Node Geocoder, node geocoding library, supports google maps, mapquest, open stre
 | Full name          | node-geocoder |
 | Keywords           | geocoder, geocoding, geo, google, maps, mapquest, agol, arcgis, tomtom |
 | # releases         | 5 |
-| # dependents       | 57 |
-| # downloads        | 1860361 |
+| # dependents       | 59 |
+| # downloads        | 1849561 |
 | # stars            | 46 |
 
 ## Links

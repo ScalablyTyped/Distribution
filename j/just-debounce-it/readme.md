@@ -12,7 +12,7 @@ return a debounced function
 | Keywords           | function, debounce, no-dependencies, just |
 | # releases         | 2 |
 | # dependents       | 13 |
-| # downloads        | 630403 |
+| # downloads        | 660961 |
 | # stars            | 0 |
 
 ## Links

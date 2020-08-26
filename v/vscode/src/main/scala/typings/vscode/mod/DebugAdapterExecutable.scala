@@ -16,6 +16,7 @@ class DebugAdapterExecutable protected () extends DebugAdapterDescriptor {
     */
   def this(command: String) = this()
   def this(command: String, args: js.Array[String]) = this()
+  def this(command: String, args: js.UndefOr[scala.Nothing], options: DebugAdapterExecutableOptions) = this()
   def this(command: String, args: js.Array[String], options: DebugAdapterExecutableOptions) = this()
   /**
     * The arguments passed to the debug adapter executable. Defaults to an empty array.

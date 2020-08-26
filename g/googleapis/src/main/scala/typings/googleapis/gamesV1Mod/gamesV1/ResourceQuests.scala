@@ -29,6 +29,7 @@ class ResourceQuests protected () extends js.Object {
     */
   def accept(): GaxiosPromise[SchemaQuest] = js.native
   def accept(callback: BodyResponseCallback[SchemaQuest]): Unit = js.native
+  def accept(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQuest] = js.native
   def accept(params: ParamsResourceQuestsAccept): GaxiosPromise[SchemaQuest] = js.native
   def accept(params: ParamsResourceQuestsAccept, callback: BodyResponseCallback[SchemaQuest]): Unit = js.native
   def accept(
@@ -60,6 +61,7 @@ class ResourceQuests protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaQuestListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaQuestListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQuestListResponse] = js.native
   def list(params: ParamsResourceQuestsList): GaxiosPromise[SchemaQuestListResponse] = js.native
   def list(params: ParamsResourceQuestsList, callback: BodyResponseCallback[SchemaQuestListResponse]): Unit = js.native
   def list(

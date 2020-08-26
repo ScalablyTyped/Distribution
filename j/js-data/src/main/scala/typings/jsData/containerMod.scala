@@ -16,7 +16,7 @@ object containerMod extends js.Object {
     def this(opts: js.Object) = this()
     var _adapters: js.Any = js.native
     var _mappers: StringDictionary[typings.jsData.mapperMod.default] = js.native
-    var mapperClass: Instantiable1[js.UndefOr[/* opts */ MapperOpts], typings.jsData.mapperMod.default] = js.native
+    var mapperClass: Instantiable1[/* opts */ js.UndefOr[MapperOpts], typings.jsData.mapperMod.default] = js.native
     var mapperDefaults: js.Any = js.native
     /**
       * Register a new event listener on this Container.
@@ -290,6 +290,7 @@ object containerMod extends js.Object {
       * @since 3.0.0
       */
     def createRecord(name: js.Any): js.Any = js.native
+    def createRecord(name: js.Any, props: js.UndefOr[scala.Nothing], opts: js.Any): js.Any = js.native
     def createRecord(name: js.Any, props: js.Any): js.Any = js.native
     def createRecord(name: js.Any, props: js.Any, opts: js.Any): js.Any = js.native
     /**
@@ -321,6 +322,7 @@ object containerMod extends js.Object {
       * @since 3.0.0
       */
     def defineMapper(): typings.jsData.mapperMod.default = js.native
+    def defineMapper(name: js.UndefOr[scala.Nothing], opts: MapperOpts): typings.jsData.mapperMod.default = js.native
     def defineMapper(name: String): typings.jsData.mapperMod.default = js.native
     def defineMapper(name: String, opts: MapperOpts): typings.jsData.mapperMod.default = js.native
     def defineMapper(name: js.Any): typings.jsData.mapperMod.default = js.native

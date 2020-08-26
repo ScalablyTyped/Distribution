@@ -12,7 +12,7 @@ Plugin for visionmedia/superagent that adds headers to all requests that prevent
 | Keywords           | superagent, cache, request, AJAX |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 269983 |
+| # downloads        | 270651 |
 | # stars            | 0 |
 
 ## Links

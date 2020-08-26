@@ -18,10 +18,28 @@ trait MonitoringScheduleConfig extends js.Object {
 
 object MonitoringScheduleConfig {
   @scala.inline
-  def apply(MonitoringJobDefinition: MonitoringJobDefinition, ScheduleConfig: ScheduleConfig = null): MonitoringScheduleConfig = {
+  def apply(MonitoringJobDefinition: MonitoringJobDefinition): MonitoringScheduleConfig = {
     val __obj = js.Dynamic.literal(MonitoringJobDefinition = MonitoringJobDefinition.asInstanceOf[js.Any])
-    if (ScheduleConfig != null) __obj.updateDynamic("ScheduleConfig")(ScheduleConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringScheduleConfig]
   }
+  @scala.inline
+  implicit class MonitoringScheduleConfigOps[Self <: MonitoringScheduleConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMonitoringJobDefinition(value: MonitoringJobDefinition): Self = this.set("MonitoringJobDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScheduleConfig(value: ScheduleConfig): Self = this.set("ScheduleConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleConfig: Self = this.set("ScheduleConfig", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ListDiscoveredResourcesResponse extends js.Object {
 
 object ListDiscoveredResourcesResponse {
   @scala.inline
-  def apply(nextToken: NextToken = null, resourceIdentifiers: ResourceIdentifierList = null): ListDiscoveredResourcesResponse = {
+  def apply(): ListDiscoveredResourcesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (resourceIdentifiers != null) __obj.updateDynamic("resourceIdentifiers")(resourceIdentifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDiscoveredResourcesResponse]
   }
+  @scala.inline
+  implicit class ListDiscoveredResourcesResponseOps[Self <: ListDiscoveredResourcesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setResourceIdentifiersVarargs(value: ResourceIdentifier*): Self = this.set("resourceIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setResourceIdentifiers(value: ResourceIdentifierList): Self = this.set("resourceIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceIdentifiers: Self = this.set("resourceIdentifiers", js.undefined)
+  }
+  
 }
 

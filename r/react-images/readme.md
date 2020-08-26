@@ -10,9 +10,9 @@ A mobile-friendly, highly customizable, carousel component for displaying media 
 | ------------------ | :-------------: |
 | Full name          | react-images |
 | Keywords           | react, images, carousel, lightbox, gallery, modal |
-| # releases         | 13 |
-| # dependents       | 82 |
-| # downloads        | 1781374 |
+| # releases         | 14 |
+| # dependents       | 84 |
+| # downloads        | 1825992 |
 | # stars            | 9 |
 
 ## Links

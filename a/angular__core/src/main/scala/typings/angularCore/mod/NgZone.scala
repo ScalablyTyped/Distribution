@@ -48,6 +48,11 @@ class NgZone protected () extends js.Object {
     * If a synchronous error happens it will be rethrown and not reported via `onError`.
     */
   def run[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
+  def run[T](
+    fn: js.Function1[/* repeated */ js.Any, T],
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.Array[_]
+  ): T = js.native
   def run[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any): T = js.native
   def run[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
   /**
@@ -55,6 +60,11 @@ class NgZone protected () extends js.Object {
     * rethrown.
     */
   def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
+  def runGuarded[T](
+    fn: js.Function1[/* repeated */ js.Any, T],
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.Array[_]
+  ): T = js.native
   def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any): T = js.native
   def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
   /**
@@ -84,7 +94,30 @@ class NgZone protected () extends js.Object {
     * If a synchronous error happens it will be rethrown and not reported via `onError`.
     */
   def runTask[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
+  def runTask[T](
+    fn: js.Function1[/* repeated */ js.Any, T],
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.UndefOr[scala.Nothing],
+    name: String
+  ): T = js.native
+  def runTask[T](
+    fn: js.Function1[/* repeated */ js.Any, T],
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.Array[_]
+  ): T = js.native
+  def runTask[T](
+    fn: js.Function1[/* repeated */ js.Any, T],
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.Array[_],
+    name: String
+  ): T = js.native
   def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any): T = js.native
+  def runTask[T](
+    fn: js.Function1[/* repeated */ js.Any, T],
+    applyThis: js.Any,
+    applyArgs: js.UndefOr[scala.Nothing],
+    name: String
+  ): T = js.native
   def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
   def runTask[T](
     fn: js.Function1[/* repeated */ js.Any, T],

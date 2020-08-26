@@ -11,8 +11,8 @@ Make a directory and its parents if needed - Think `mkdir -p`
 | Full name          | make-dir |
 | Keywords           | mkdir, mkdirp, make, directories, dir, dirs, folders, directory, folder, path, parent, parents, intermediate, recursively, recursive, create, fs, filesystem, file-system |
 | # releases         | 6 |
-| # dependents       | 573 |
-| # downloads        | 569744618 |
+| # dependents       | 588 |
+| # downloads        | 605627200 |
 | # stars            | 8 |
 
 ## Links

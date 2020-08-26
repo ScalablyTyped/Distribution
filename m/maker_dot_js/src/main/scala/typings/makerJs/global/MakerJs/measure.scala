@@ -1,7 +1,6 @@
 package typings.makerJs.global.MakerJs
 
 import typings.makerJs.MakerJs.IMeasure
-import typings.makerJs.MakerJs.IMeasureMap
 import typings.makerJs.MakerJs.IMeasureWithCenter
 import typings.makerJs.MakerJs.IModel
 import typings.makerJs.MakerJs.IPath
@@ -33,25 +32,6 @@ object measure extends js.Object {
       * @param modelContext The model to measure.
       */
     def this(modelContext: IModel) = this()
-    /* CompleteClass */
-    override var modelContext: IModel = js.native
-    /**
-      * Map of model measurements, mapped by routeKey.
-      */
-    /* CompleteClass */
-    override var modelMap: IMeasureMap = js.native
-    /**
-      * Flag that models have been measured.
-      */
-    /* CompleteClass */
-    override var modelsMeasured: Boolean = js.native
-    /**
-      * Map of path measurements, mapped by routeKey.
-      */
-    /* CompleteClass */
-    override var pathMap: IMeasureMap = js.native
-    /* CompleteClass */
-    override def measureModels(): Unit = js.native
   }
   
   /**
@@ -156,7 +136,29 @@ object measure extends js.Object {
     * @returns true if paths are the same, false if they are not
     */
   def isPathEqual(pathA: IPath, pathB: IPath): Boolean = js.native
+  def isPathEqual(
+    pathA: IPath,
+    pathB: IPath,
+    withinPointDistance: js.UndefOr[scala.Nothing],
+    pathAOffset: js.UndefOr[scala.Nothing],
+    pathBOffset: IPoint
+  ): Boolean = js.native
+  def isPathEqual(pathA: IPath, pathB: IPath, withinPointDistance: js.UndefOr[scala.Nothing], pathAOffset: IPoint): Boolean = js.native
+  def isPathEqual(
+    pathA: IPath,
+    pathB: IPath,
+    withinPointDistance: js.UndefOr[scala.Nothing],
+    pathAOffset: IPoint,
+    pathBOffset: IPoint
+  ): Boolean = js.native
   def isPathEqual(pathA: IPath, pathB: IPath, withinPointDistance: Double): Boolean = js.native
+  def isPathEqual(
+    pathA: IPath,
+    pathB: IPath,
+    withinPointDistance: Double,
+    pathAOffset: js.UndefOr[scala.Nothing],
+    pathBOffset: IPoint
+  ): Boolean = js.native
   def isPathEqual(pathA: IPath, pathB: IPath, withinPointDistance: Double, pathAOffset: IPoint): Boolean = js.native
   def isPathEqual(pathA: IPath, pathB: IPath, withinPointDistance: Double, pathAOffset: IPoint, pathBOffset: IPoint): Boolean = js.native
   /**

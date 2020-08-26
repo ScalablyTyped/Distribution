@@ -1,12 +1,19 @@
 package typings.arcgisJsApi
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisJsApi.esri.predominantCategories
+import typings.arcgisJsApi.esri.PredominantCategoriesResult
+import typings.arcgisJsApi.esri.predominantCategoriesPredominantCategoriesParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("esri/renderers/smartMapping/statistics/predominantCategories", JSImport.Namespace)
+@JSImport("esri/smartMapping/statistics/predominantCategories", JSImport.Namespace)
 @js.native
-object predominantCategoriesMod extends TopLevel[predominantCategories]
+object predominantCategoriesMod
+  extends TopLevel[
+      js.Function1[
+        /* params */ predominantCategoriesPredominantCategoriesParams, 
+        js.Promise[PredominantCategoriesResult]
+      ]
+    ]
 

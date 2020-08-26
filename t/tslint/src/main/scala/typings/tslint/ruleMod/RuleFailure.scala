@@ -29,7 +29,7 @@ class RuleFailure protected () extends js.Object {
   val endPosition: js.Any = js.native
   val failure: js.Any = js.native
   val fileName: js.Any = js.native
-  val fix: js.UndefOr[js.Any] = js.native
+  val fix: js.Any = js.native
   val rawLines: js.Any = js.native
   val ruleName: js.Any = js.native
   var ruleSeverity: js.Any = js.native

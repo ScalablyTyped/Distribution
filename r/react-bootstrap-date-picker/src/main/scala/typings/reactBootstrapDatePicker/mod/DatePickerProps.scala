@@ -10,93 +10,162 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DatePickerProps extends js.Object {
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var calendarContainer: js.UndefOr[js.Any] = js.undefined
-  var calendarPlacement: js.UndefOr[String] = js.undefined
-  var cellPadding: js.UndefOr[String] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var clearButtonElement: js.UndefOr[ReactNode] = js.undefined
-  var customControl: js.UndefOr[StatelessComponent[_] | (ComponentClass[_, ComponentState])] = js.undefined
-  var dateFormat: js.UndefOr[String] = js.undefined
-  var dayLabels: js.UndefOr[js.Array[String]] = js.undefined
-  var defaultValue: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var maxDate: js.UndefOr[String] = js.undefined
-  var minDate: js.UndefOr[String] = js.undefined
-  var monthLabels: js.UndefOr[js.Array[String]] = js.undefined
-  var nextButtonElement: js.UndefOr[ReactNode] = js.undefined
-  var onBlur: js.UndefOr[FocusEventHandler[_]] = js.undefined
-  var onChange: js.UndefOr[ChangeCallback] = js.undefined
-  var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onFocus: js.UndefOr[FocusEventHandler[_]] = js.undefined
-  var previousButtonElement: js.UndefOr[ReactNode] = js.undefined
-  var showClearButton: js.UndefOr[Boolean] = js.undefined
-  var showTodayButton: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[js.Any] = js.undefined
-  var todayButtonLabel: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
-  var weekStartsOnMonday: js.UndefOr[Boolean] = js.undefined
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var calendarContainer: js.UndefOr[js.Any] = js.native
+  var calendarPlacement: js.UndefOr[String] = js.native
+  var cellPadding: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.native
+  var clearButtonElement: js.UndefOr[ReactNode] = js.native
+  var customControl: js.UndefOr[StatelessComponent[_] | (ComponentClass[_, ComponentState])] = js.native
+  var dateFormat: js.UndefOr[String] = js.native
+  var dayLabels: js.UndefOr[js.Array[String]] = js.native
+  var defaultValue: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var maxDate: js.UndefOr[String] = js.native
+  var minDate: js.UndefOr[String] = js.native
+  var monthLabels: js.UndefOr[js.Array[String]] = js.native
+  var nextButtonElement: js.UndefOr[ReactNode] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[_]] = js.native
+  var onChange: js.UndefOr[ChangeCallback] = js.native
+  var onClear: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[_]] = js.native
+  var previousButtonElement: js.UndefOr[ReactNode] = js.native
+  var showClearButton: js.UndefOr[Boolean] = js.native
+  var showTodayButton: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[js.Any] = js.native
+  var todayButtonLabel: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.native
+  var weekStartsOnMonday: js.UndefOr[Boolean] = js.native
 }
 
 object DatePickerProps {
   @scala.inline
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    calendarContainer: js.Any = null,
-    calendarPlacement: String = null,
-    cellPadding: String = null,
-    className: String = null,
-    clearButtonElement: ReactNode = null,
-    customControl: StatelessComponent[_] | (ComponentClass[_, ComponentState]) = null,
-    dateFormat: String = null,
-    dayLabels: js.Array[String] = null,
-    defaultValue: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    maxDate: String = null,
-    minDate: String = null,
-    monthLabels: js.Array[String] = null,
-    nextButtonElement: ReactNode = null,
-    onBlur: FocusEvent[_] => Unit = null,
-    onChange: (/* value */ String, /* formattedValue */ String) => Unit = null,
-    onClear: () => Unit = null,
-    onFocus: FocusEvent[_] => Unit = null,
-    previousButtonElement: ReactNode = null,
-    showClearButton: js.UndefOr[Boolean] = js.undefined,
-    showTodayButton: js.UndefOr[Boolean] = js.undefined,
-    style: js.Any = null,
-    todayButtonLabel: String = null,
-    value: String = null,
-    weekStartsOnMonday: js.UndefOr[Boolean] = js.undefined
-  ): DatePickerProps = {
+  def apply(): DatePickerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (calendarContainer != null) __obj.updateDynamic("calendarContainer")(calendarContainer.asInstanceOf[js.Any])
-    if (calendarPlacement != null) __obj.updateDynamic("calendarPlacement")(calendarPlacement.asInstanceOf[js.Any])
-    if (cellPadding != null) __obj.updateDynamic("cellPadding")(cellPadding.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearButtonElement != null) __obj.updateDynamic("clearButtonElement")(clearButtonElement.asInstanceOf[js.Any])
-    if (customControl != null) __obj.updateDynamic("customControl")(customControl.asInstanceOf[js.Any])
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (dayLabels != null) __obj.updateDynamic("dayLabels")(dayLabels.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (monthLabels != null) __obj.updateDynamic("monthLabels")(monthLabels.asInstanceOf[js.Any])
-    if (nextButtonElement != null) __obj.updateDynamic("nextButtonElement")(nextButtonElement.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (previousButtonElement != null) __obj.updateDynamic("previousButtonElement")(previousButtonElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTodayButton)) __obj.updateDynamic("showTodayButton")(showTodayButton.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (todayButtonLabel != null) __obj.updateDynamic("todayButtonLabel")(todayButtonLabel.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekStartsOnMonday)) __obj.updateDynamic("weekStartsOnMonday")(weekStartsOnMonday.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerProps]
   }
+  @scala.inline
+  implicit class DatePickerPropsOps[Self <: DatePickerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setCalendarContainer(value: js.Any): Self = this.set("calendarContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendarContainer: Self = this.set("calendarContainer", js.undefined)
+    @scala.inline
+    def setCalendarPlacement(value: String): Self = this.set("calendarPlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendarPlacement: Self = this.set("calendarPlacement", js.undefined)
+    @scala.inline
+    def setCellPadding(value: String): Self = this.set("cellPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellPadding: Self = this.set("cellPadding", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClearButtonElement(value: ReactNode): Self = this.set("clearButtonElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearButtonElement: Self = this.set("clearButtonElement", js.undefined)
+    @scala.inline
+    def setCustomControl(value: StatelessComponent[_] | (ComponentClass[_, ComponentState])): Self = this.set("customControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomControl: Self = this.set("customControl", js.undefined)
+    @scala.inline
+    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    @scala.inline
+    def setDayLabelsVarargs(value: String*): Self = this.set("dayLabels", js.Array(value :_*))
+    @scala.inline
+    def setDayLabels(value: js.Array[String]): Self = this.set("dayLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDayLabels: Self = this.set("dayLabels", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setMaxDate(value: String): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDate: Self = this.set("maxDate", js.undefined)
+    @scala.inline
+    def setMinDate(value: String): Self = this.set("minDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinDate: Self = this.set("minDate", js.undefined)
+    @scala.inline
+    def setMonthLabelsVarargs(value: String*): Self = this.set("monthLabels", js.Array(value :_*))
+    @scala.inline
+    def setMonthLabels(value: js.Array[String]): Self = this.set("monthLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonthLabels: Self = this.set("monthLabels", js.undefined)
+    @scala.inline
+    def setNextButtonElement(value: ReactNode): Self = this.set("nextButtonElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextButtonElement: Self = this.set("nextButtonElement", js.undefined)
+    @scala.inline
+    def setOnBlur(value: FocusEvent[_] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: (/* value */ String, /* formattedValue */ String) => Unit): Self = this.set("onChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClear(value: () => Unit): Self = this.set("onClear", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClear: Self = this.set("onClear", js.undefined)
+    @scala.inline
+    def setOnFocus(value: FocusEvent[_] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setPreviousButtonElement(value: ReactNode): Self = this.set("previousButtonElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousButtonElement: Self = this.set("previousButtonElement", js.undefined)
+    @scala.inline
+    def setShowClearButton(value: Boolean): Self = this.set("showClearButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowClearButton: Self = this.set("showClearButton", js.undefined)
+    @scala.inline
+    def setShowTodayButton(value: Boolean): Self = this.set("showTodayButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTodayButton: Self = this.set("showTodayButton", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTodayButtonLabel(value: String): Self = this.set("todayButtonLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTodayButtonLabel: Self = this.set("todayButtonLabel", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setWeekStartsOnMonday(value: Boolean): Self = this.set("weekStartsOnMonday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeekStartsOnMonday: Self = this.set("weekStartsOnMonday", js.undefined)
+  }
+  
 }
 

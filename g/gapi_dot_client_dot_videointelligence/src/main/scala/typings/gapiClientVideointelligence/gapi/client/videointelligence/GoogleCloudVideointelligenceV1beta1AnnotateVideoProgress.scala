@@ -4,17 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoogleCloudVideointelligenceV1beta1AnnotateVideoProgress extends js.Object {
   /** Progress metadata for all videos specified in `AnnotateVideoRequest`. */
-  var annotationProgress: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta1VideoAnnotationProgress]] = js.undefined
+  var annotationProgress: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta1VideoAnnotationProgress]] = js.native
 }
 
 object GoogleCloudVideointelligenceV1beta1AnnotateVideoProgress {
   @scala.inline
-  def apply(annotationProgress: js.Array[GoogleCloudVideointelligenceV1beta1VideoAnnotationProgress] = null): GoogleCloudVideointelligenceV1beta1AnnotateVideoProgress = {
+  def apply(): GoogleCloudVideointelligenceV1beta1AnnotateVideoProgress = {
     val __obj = js.Dynamic.literal()
-    if (annotationProgress != null) __obj.updateDynamic("annotationProgress")(annotationProgress.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1AnnotateVideoProgress]
   }
+  @scala.inline
+  implicit class GoogleCloudVideointelligenceV1beta1AnnotateVideoProgressOps[Self <: GoogleCloudVideointelligenceV1beta1AnnotateVideoProgress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotationProgressVarargs(value: GoogleCloudVideointelligenceV1beta1VideoAnnotationProgress*): Self = this.set("annotationProgress", js.Array(value :_*))
+    @scala.inline
+    def setAnnotationProgress(value: js.Array[GoogleCloudVideointelligenceV1beta1VideoAnnotationProgress]): Self = this.set("annotationProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotationProgress: Self = this.set("annotationProgress", js.undefined)
+  }
+  
 }
 

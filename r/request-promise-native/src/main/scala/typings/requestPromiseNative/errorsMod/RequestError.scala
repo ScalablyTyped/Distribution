@@ -8,11 +8,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RequestError extends Error {
-  var cause: js.Any
-  var error: js.Any
-  var options: Options
-  var response: FullResponse
+  var cause: js.Any = js.native
+  var error: js.Any = js.native
+  var options: Options = js.native
+  var response: FullResponse = js.native
 }
 
 @JSImport("request-promise-native/errors", "RequestError")

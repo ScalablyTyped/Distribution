@@ -15,20 +15,42 @@ trait LayerId extends js.Object {
 
 object LayerId {
   @scala.inline
-  def apply(
-    allowedCharacterCount: js.UndefOr[Double] = js.undefined,
-    layerId: String = null,
-    limitType: String = null,
-    remainingCharacterCount: js.UndefOr[Double] = js.undefined,
-    updated: String = null
-  ): LayerId = {
+  def apply(): LayerId = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowedCharacterCount)) __obj.updateDynamic("allowedCharacterCount")(allowedCharacterCount.get.asInstanceOf[js.Any])
-    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
-    if (limitType != null) __obj.updateDynamic("limitType")(limitType.asInstanceOf[js.Any])
-    if (!js.isUndefined(remainingCharacterCount)) __obj.updateDynamic("remainingCharacterCount")(remainingCharacterCount.get.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerId]
   }
+  @scala.inline
+  implicit class LayerIdOps[Self <: LayerId] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedCharacterCount(value: Double): Self = this.set("allowedCharacterCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedCharacterCount: Self = this.set("allowedCharacterCount", js.undefined)
+    @scala.inline
+    def setLayerId(value: String): Self = this.set("layerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerId: Self = this.set("layerId", js.undefined)
+    @scala.inline
+    def setLimitType(value: String): Self = this.set("limitType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimitType: Self = this.set("limitType", js.undefined)
+    @scala.inline
+    def setRemainingCharacterCount(value: Double): Self = this.set("remainingCharacterCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemainingCharacterCount: Self = this.set("remainingCharacterCount", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+  }
+  
 }
 

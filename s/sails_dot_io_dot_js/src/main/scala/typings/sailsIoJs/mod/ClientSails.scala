@@ -28,6 +28,7 @@ trait ClientSails extends js.Object {
   var url: js.UndefOr[String] = js.native
   var useCORSRouteToGetCookie: js.UndefOr[Boolean] = js.native
   def connect(): Socket = js.native
+  def connect(url: js.UndefOr[scala.Nothing], config: ConnectConfig): Socket = js.native
   def connect(url: String): Socket = js.native
   def connect(url: String, config: ConnectConfig): Socket = js.native
 }

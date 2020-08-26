@@ -35,7 +35,7 @@ import typings.pouchdbCore.PouchDB.Core.Revision
 import typings.pouchdbCore.PouchDB.Core.RevisionDiffOptions
 import typings.pouchdbCore.PouchDB.Core.RevisionDiffResponse
 import typings.pouchdbCore.PouchDB.Core.RevisionId
-import typings.pouchdbCore.anon.RevRevisionId
+import typings.pouchdbCore.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -137,14 +137,9 @@ trait Database[Content /* <: js.Object */] extends EventEmitter {
   def getAttachment(docId: DocumentId, attachmentId: AttachmentId): js.Promise[Blob | Buffer] = js.native
   /** Get attachment data */
   def getAttachment(docId: DocumentId, attachmentId: AttachmentId, callback: Callback[Blob | Buffer]): Unit = js.native
-  def getAttachment(docId: DocumentId, attachmentId: AttachmentId, options: RevRevisionId): js.Promise[Blob | Buffer] = js.native
+  def getAttachment(docId: DocumentId, attachmentId: AttachmentId, options: `0`): js.Promise[Blob | Buffer] = js.native
   /** Get attachment data */
-  def getAttachment(
-    docId: DocumentId,
-    attachmentId: AttachmentId,
-    options: RevRevisionId,
-    callback: Callback[Blob | Buffer]
-  ): Unit = js.native
+  def getAttachment(docId: DocumentId, attachmentId: AttachmentId, options: `0`, callback: Callback[Blob | Buffer]): Unit = js.native
   /** Get database information */
   def info(): js.Promise[DatabaseInfo] = js.native
   /** Get database information */

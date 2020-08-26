@@ -23,6 +23,7 @@ class RestApi protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: RestApiArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: RestApiArgs, opts: CustomResourceOptions) = this()
   /**
     * The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
@@ -53,7 +54,7 @@ class RestApi protected () extends CustomResource {
     */
   val endpointConfiguration: Output_[RestApiEndpointConfiguration] = js.native
   /**
-    * The execution ARN part to be used in [`lambdaPermission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `sourceArn`
+    * The execution ARN part to be used in `lambdaPermission`'s `sourceArn`
     * when allowing API Gateway to invoke a Lambda function,
     * e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j`, which can be concatenated with allowed stage, method and resource path.
     */
@@ -75,9 +76,9 @@ class RestApi protected () extends CustomResource {
     */
   val rootResourceId: Output_[String] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -91,8 +92,10 @@ object RestApi extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): RestApi = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RestApi = js.native
   def get(name: String, id: Input[ID], state: RestApiState): RestApi = js.native
   def get(name: String, id: Input[ID], state: RestApiState, opts: CustomResourceOptions): RestApi = js.native
   /**

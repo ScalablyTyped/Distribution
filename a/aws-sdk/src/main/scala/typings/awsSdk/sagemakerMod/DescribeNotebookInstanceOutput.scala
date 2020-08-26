@@ -90,50 +90,108 @@ trait DescribeNotebookInstanceOutput extends js.Object {
 
 object DescribeNotebookInstanceOutput {
   @scala.inline
-  def apply(
-    AcceleratorTypes: NotebookInstanceAcceleratorTypes = null,
-    AdditionalCodeRepositories: AdditionalCodeRepositoryNamesOrUrls = null,
-    CreationTime: CreationTime = null,
-    DefaultCodeRepository: CodeRepositoryNameOrUrl = null,
-    DirectInternetAccess: DirectInternetAccess = null,
-    FailureReason: FailureReason = null,
-    InstanceType: InstanceType = null,
-    KmsKeyId: KmsKeyId = null,
-    LastModifiedTime: LastModifiedTime = null,
-    NetworkInterfaceId: NetworkInterfaceId = null,
-    NotebookInstanceArn: NotebookInstanceArn = null,
-    NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName = null,
-    NotebookInstanceName: NotebookInstanceName = null,
-    NotebookInstanceStatus: NotebookInstanceStatus = null,
-    RoleArn: RoleArn = null,
-    RootAccess: RootAccess = null,
-    SecurityGroups: SecurityGroupIds = null,
-    SubnetId: SubnetId = null,
-    Url: NotebookInstanceUrl = null,
-    VolumeSizeInGB: js.UndefOr[NotebookInstanceVolumeSizeInGB] = js.undefined
-  ): DescribeNotebookInstanceOutput = {
+  def apply(): DescribeNotebookInstanceOutput = {
     val __obj = js.Dynamic.literal()
-    if (AcceleratorTypes != null) __obj.updateDynamic("AcceleratorTypes")(AcceleratorTypes.asInstanceOf[js.Any])
-    if (AdditionalCodeRepositories != null) __obj.updateDynamic("AdditionalCodeRepositories")(AdditionalCodeRepositories.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DefaultCodeRepository != null) __obj.updateDynamic("DefaultCodeRepository")(DefaultCodeRepository.asInstanceOf[js.Any])
-    if (DirectInternetAccess != null) __obj.updateDynamic("DirectInternetAccess")(DirectInternetAccess.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
-    if (NotebookInstanceArn != null) __obj.updateDynamic("NotebookInstanceArn")(NotebookInstanceArn.asInstanceOf[js.Any])
-    if (NotebookInstanceLifecycleConfigName != null) __obj.updateDynamic("NotebookInstanceLifecycleConfigName")(NotebookInstanceLifecycleConfigName.asInstanceOf[js.Any])
-    if (NotebookInstanceName != null) __obj.updateDynamic("NotebookInstanceName")(NotebookInstanceName.asInstanceOf[js.Any])
-    if (NotebookInstanceStatus != null) __obj.updateDynamic("NotebookInstanceStatus")(NotebookInstanceStatus.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (RootAccess != null) __obj.updateDynamic("RootAccess")(RootAccess.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeSizeInGB)) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNotebookInstanceOutput]
   }
+  @scala.inline
+  implicit class DescribeNotebookInstanceOutputOps[Self <: DescribeNotebookInstanceOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorTypesVarargs(value: NotebookInstanceAcceleratorType*): Self = this.set("AcceleratorTypes", js.Array(value :_*))
+    @scala.inline
+    def setAcceleratorTypes(value: NotebookInstanceAcceleratorTypes): Self = this.set("AcceleratorTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorTypes: Self = this.set("AcceleratorTypes", js.undefined)
+    @scala.inline
+    def setAdditionalCodeRepositoriesVarargs(value: CodeRepositoryNameOrUrl*): Self = this.set("AdditionalCodeRepositories", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalCodeRepositories(value: AdditionalCodeRepositoryNamesOrUrls): Self = this.set("AdditionalCodeRepositories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalCodeRepositories: Self = this.set("AdditionalCodeRepositories", js.undefined)
+    @scala.inline
+    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDefaultCodeRepository(value: CodeRepositoryNameOrUrl): Self = this.set("DefaultCodeRepository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCodeRepository: Self = this.set("DefaultCodeRepository", js.undefined)
+    @scala.inline
+    def setDirectInternetAccess(value: DirectInternetAccess): Self = this.set("DirectInternetAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectInternetAccess: Self = this.set("DirectInternetAccess", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: LastModifiedTime): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("NetworkInterfaceId", js.undefined)
+    @scala.inline
+    def setNotebookInstanceArn(value: NotebookInstanceArn): Self = this.set("NotebookInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotebookInstanceArn: Self = this.set("NotebookInstanceArn", js.undefined)
+    @scala.inline
+    def setNotebookInstanceLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = this.set("NotebookInstanceLifecycleConfigName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotebookInstanceLifecycleConfigName: Self = this.set("NotebookInstanceLifecycleConfigName", js.undefined)
+    @scala.inline
+    def setNotebookInstanceName(value: NotebookInstanceName): Self = this.set("NotebookInstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotebookInstanceName: Self = this.set("NotebookInstanceName", js.undefined)
+    @scala.inline
+    def setNotebookInstanceStatus(value: NotebookInstanceStatus): Self = this.set("NotebookInstanceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotebookInstanceStatus: Self = this.set("NotebookInstanceStatus", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setRootAccess(value: RootAccess): Self = this.set("RootAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootAccess: Self = this.set("RootAccess", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: SecurityGroupIds): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    @scala.inline
+    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setUrl(value: NotebookInstanceUrl): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+    @scala.inline
+    def setVolumeSizeInGB(value: NotebookInstanceVolumeSizeInGB): Self = this.set("VolumeSizeInGB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSizeInGB: Self = this.set("VolumeSizeInGB", js.undefined)
+  }
+  
 }
 

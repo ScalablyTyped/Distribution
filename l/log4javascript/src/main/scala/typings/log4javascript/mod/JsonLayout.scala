@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 	 */
 class JsonLayout () extends Layout {
   def this(readable: Boolean) = this()
+  def this(readable: js.UndefOr[scala.Nothing], combineMessages: Boolean) = this()
   def this(readable: Boolean, combineMessages: Boolean) = this()
   /**
   	 * Returns whether or not to each log message is formatted with line breaks and tabs.

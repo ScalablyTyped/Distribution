@@ -57,6 +57,7 @@ trait UserForm extends js.Object {
   def RedoAction(): Unit = js.native
   def Repaint(): Unit = js.native
   def Scroll(): Unit = js.native
+  def Scroll(xAction: js.UndefOr[scala.Nothing], yAction: js.Any): Unit = js.native
   def Scroll(xAction: js.Any): Unit = js.native
   def Scroll(xAction: js.Any, yAction: js.Any): Unit = js.native
   def Selected(varg: js.Any): js.Any = js.native

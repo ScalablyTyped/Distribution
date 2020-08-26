@@ -47,16 +47,45 @@ object StreamingDistributionConfig {
     Comment: String,
     Enabled: Boolean,
     S3Origin: S3Origin,
-    TrustedSigners: TrustedSigners,
-    Aliases: Aliases = null,
-    Logging: StreamingLoggingConfig = null,
-    PriceClass: PriceClass = null
+    TrustedSigners: TrustedSigners
   ): StreamingDistributionConfig = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], Comment = Comment.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], S3Origin = S3Origin.asInstanceOf[js.Any], TrustedSigners = TrustedSigners.asInstanceOf[js.Any])
-    if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases.asInstanceOf[js.Any])
-    if (Logging != null) __obj.updateDynamic("Logging")(Logging.asInstanceOf[js.Any])
-    if (PriceClass != null) __obj.updateDynamic("PriceClass")(PriceClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingDistributionConfig]
   }
+  @scala.inline
+  implicit class StreamingDistributionConfigOps[Self <: StreamingDistributionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallerReference(value: String): Self = this.set("CallerReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComment(value: String): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3Origin(value: S3Origin): Self = this.set("S3Origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrustedSigners(value: TrustedSigners): Self = this.set("TrustedSigners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAliases(value: Aliases): Self = this.set("Aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("Aliases", js.undefined)
+    @scala.inline
+    def setLogging(value: StreamingLoggingConfig): Self = this.set("Logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("Logging", js.undefined)
+    @scala.inline
+    def setPriceClass(value: PriceClass): Self = this.set("PriceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriceClass: Self = this.set("PriceClass", js.undefined)
+  }
+  
 }
 

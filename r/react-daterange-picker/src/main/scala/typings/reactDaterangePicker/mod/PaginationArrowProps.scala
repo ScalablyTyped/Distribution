@@ -1,39 +1,49 @@
 package typings.reactDaterangePicker.mod
 
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
-import typings.react.mod.ReactNode
 import typings.reactDaterangePicker.reactDaterangePickerStrings.next
 import typings.reactDaterangePicker.reactDaterangePickerStrings.previous
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PaginationArrowProps[T]
   extends typings.react.mod.Props[T] {
-  var direction: js.UndefOr[next | previous] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var onTrigger: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var direction: js.UndefOr[next | previous] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var onTrigger: js.UndefOr[js.Function0[Unit]] = js.native
 }
 
 object PaginationArrowProps {
   @scala.inline
-  def apply[T](
-    children: ReactNode = null,
-    direction: next | previous = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
-    onTrigger: () => Unit = null,
-    ref: js.UndefOr[Null | LegacyRef[T]] = js.undefined
-  ): PaginationArrowProps[T] = {
+  def apply[T](): PaginationArrowProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onTrigger != null) __obj.updateDynamic("onTrigger")(js.Any.fromFunction0(onTrigger))
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationArrowProps[T]]
   }
+  @scala.inline
+  implicit class PaginationArrowPropsOps[Self <: PaginationArrowProps[_], T] (val x: Self with PaginationArrowProps[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirection(value: next | previous): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setOnTrigger(value: () => Unit): Self = this.set("onTrigger", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnTrigger: Self = this.set("onTrigger", js.undefined)
+  }
+  
 }
 

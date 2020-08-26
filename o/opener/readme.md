@@ -11,8 +11,8 @@ Opens stuff, like webpages and files and executables, cross-platform
 | Full name          | opener |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 475 |
-| # downloads        | 108730920 |
+| # dependents       | 481 |
+| # downloads        | 111478116 |
 | # stars            | 30 |
 
 ## Links

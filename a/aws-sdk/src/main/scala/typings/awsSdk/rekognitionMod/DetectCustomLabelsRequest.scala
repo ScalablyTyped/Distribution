@@ -23,16 +23,34 @@ trait DetectCustomLabelsRequest extends js.Object {
 
 object DetectCustomLabelsRequest {
   @scala.inline
-  def apply(
-    Image: Image,
-    ProjectVersionArn: ProjectVersionArn,
-    MaxResults: js.UndefOr[UInteger] = js.undefined,
-    MinConfidence: js.UndefOr[Percent] = js.undefined
-  ): DetectCustomLabelsRequest = {
+  def apply(Image: Image, ProjectVersionArn: ProjectVersionArn): DetectCustomLabelsRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any], ProjectVersionArn = ProjectVersionArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinConfidence)) __obj.updateDynamic("MinConfidence")(MinConfidence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectCustomLabelsRequest]
   }
+  @scala.inline
+  implicit class DetectCustomLabelsRequestOps[Self <: DetectCustomLabelsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImage(value: Image): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProjectVersionArn(value: ProjectVersionArn): Self = this.set("ProjectVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: UInteger): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setMinConfidence(value: Percent): Self = this.set("MinConfidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinConfidence: Self = this.set("MinConfidence", js.undefined)
+  }
+  
 }
 

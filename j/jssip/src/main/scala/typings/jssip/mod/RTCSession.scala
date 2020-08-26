@@ -44,6 +44,7 @@ class RTCSession () extends js.Object {
   def answer(): Unit = js.native
   def answer(options: SessionAnswerOptions): Unit = js.native
   def hold(): Unit = js.native
+  def hold(options: js.UndefOr[scala.Nothing], done: js.Function0[Unit]): Unit = js.native
   def hold(options: SessionHoldOptions): Unit = js.native
   def hold(options: SessionHoldOptions, done: js.Function0[Unit]): Unit = js.native
   def isEnded(): Boolean = js.native
@@ -121,6 +122,7 @@ class RTCSession () extends js.Object {
   def refer(target: URI): Unit = js.native
   def refer(target: URI, options: SessionReferOptions): Unit = js.native
   def renegotiate(): Unit = js.native
+  def renegotiate(options: js.UndefOr[scala.Nothing], done: js.Function0[Unit]): Unit = js.native
   def renegotiate(options: SessionRenegotiateOptions): Unit = js.native
   def renegotiate(options: SessionRenegotiateOptions, done: js.Function0[Unit]): Unit = js.native
   def resetLocalMedia(): Unit = js.native
@@ -129,11 +131,13 @@ class RTCSession () extends js.Object {
   def sendDTMF(tone: Double): Unit = js.native
   def sendDTMF(tone: Double, options: SessionSendDtmfOptions): Unit = js.native
   def sendInfo(contentType: String): Unit = js.native
+  def sendInfo(contentType: String, body: js.UndefOr[scala.Nothing], options: SessionSendInfoOptions): Unit = js.native
   def sendInfo(contentType: String, body: String): Unit = js.native
   def sendInfo(contentType: String, body: String, options: SessionSendInfoOptions): Unit = js.native
   def terminate(): Unit = js.native
   def terminate(options: SessionTerminateOptions): Unit = js.native
   def unhold(): Unit = js.native
+  def unhold(options: js.UndefOr[scala.Nothing], done: js.Function0[Unit]): Unit = js.native
   def unhold(options: SessionHoldOptions): Unit = js.native
   def unhold(options: SessionHoldOptions, done: js.Function0[Unit]): Unit = js.native
   def unmute(): Unit = js.native

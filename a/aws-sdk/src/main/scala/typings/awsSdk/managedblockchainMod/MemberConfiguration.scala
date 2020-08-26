@@ -26,16 +26,34 @@ trait MemberConfiguration extends js.Object {
 
 object MemberConfiguration {
   @scala.inline
-  def apply(
-    FrameworkConfiguration: MemberFrameworkConfiguration,
-    Name: NetworkMemberNameString,
-    Description: DescriptionString = null,
-    LogPublishingConfiguration: MemberLogPublishingConfiguration = null
-  ): MemberConfiguration = {
+  def apply(FrameworkConfiguration: MemberFrameworkConfiguration, Name: NetworkMemberNameString): MemberConfiguration = {
     val __obj = js.Dynamic.literal(FrameworkConfiguration = FrameworkConfiguration.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (LogPublishingConfiguration != null) __obj.updateDynamic("LogPublishingConfiguration")(LogPublishingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemberConfiguration]
   }
+  @scala.inline
+  implicit class MemberConfigurationOps[Self <: MemberConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrameworkConfiguration(value: MemberFrameworkConfiguration): Self = this.set("FrameworkConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: NetworkMemberNameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLogPublishingConfiguration(value: MemberLogPublishingConfiguration): Self = this.set("LogPublishingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogPublishingConfiguration: Self = this.set("LogPublishingConfiguration", js.undefined)
+  }
+  
 }
 

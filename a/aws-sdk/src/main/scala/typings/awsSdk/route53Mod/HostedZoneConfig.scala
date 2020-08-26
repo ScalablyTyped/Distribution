@@ -18,11 +18,30 @@ trait HostedZoneConfig extends js.Object {
 
 object HostedZoneConfig {
   @scala.inline
-  def apply(Comment: ResourceDescription = null, PrivateZone: js.UndefOr[IsPrivateZone] = js.undefined): HostedZoneConfig = {
+  def apply(): HostedZoneConfig = {
     val __obj = js.Dynamic.literal()
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(PrivateZone)) __obj.updateDynamic("PrivateZone")(PrivateZone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedZoneConfig]
   }
+  @scala.inline
+  implicit class HostedZoneConfigOps[Self <: HostedZoneConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComment(value: ResourceDescription): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("Comment", js.undefined)
+    @scala.inline
+    def setPrivateZone(value: IsPrivateZone): Self = this.set("PrivateZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateZone: Self = this.set("PrivateZone", js.undefined)
+  }
+  
 }
 

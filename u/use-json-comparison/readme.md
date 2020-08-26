@@ -10,9 +10,9 @@ use json for deep comparison
 | ------------------ | :-------------: |
 | Full name          | use-json-comparison |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
+| # releases         | 6 |
+| # dependents       | 1 |
+| # downloads        | 2686 |
 | # stars            | 0 |
 
 ## Links

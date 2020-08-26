@@ -1,6 +1,6 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.anon.Data
+import typings.antDesignReactNative.anon.ColsData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object cascaderMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: Data = js.native
+    var defaultProps: ColsData = js.native
   }
   
 }

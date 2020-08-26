@@ -40,9 +40,9 @@ class Rule protected () extends CustomResource {
     */
   val predicates: Output_[js.UndefOr[js.Array[RulePredicate]]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -56,8 +56,10 @@ object Rule extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Rule = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Rule = js.native
   def get(name: String, id: Input[ID], state: RuleState): Rule = js.native
   def get(name: String, id: Input[ID], state: RuleState, opts: CustomResourceOptions): Rule = js.native
   /**

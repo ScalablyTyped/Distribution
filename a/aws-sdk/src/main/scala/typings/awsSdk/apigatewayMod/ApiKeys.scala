@@ -19,12 +19,38 @@ trait ApiKeys extends js.Object {
 
 object ApiKeys {
   @scala.inline
-  def apply(items: ListOfApiKey = null, position: String = null, warnings: ListOfString = null): ApiKeys = {
+  def apply(): ApiKeys = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKeys]
   }
+  @scala.inline
+  implicit class ApiKeysOps[Self <: ApiKeys] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: ApiKey*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: ListOfApiKey): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setWarningsVarargs(value: String*): Self = this.set("warnings", js.Array(value :_*))
+    @scala.inline
+    def setWarnings(value: ListOfString): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarnings: Self = this.set("warnings", js.undefined)
+  }
+  
 }
 

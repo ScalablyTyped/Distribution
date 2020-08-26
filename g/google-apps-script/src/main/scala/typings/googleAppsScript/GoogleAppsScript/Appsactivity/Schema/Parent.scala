@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Parent extends js.Object {
-  var id: js.UndefOr[String] = js.undefined
-  var isRoot: js.UndefOr[Boolean] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
+  var isRoot: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[String] = js.native
 }
 
 object Parent {
   @scala.inline
-  def apply(id: String = null, isRoot: js.UndefOr[Boolean] = js.undefined, title: String = null): Parent = {
+  def apply(): Parent = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRoot)) __obj.updateDynamic("isRoot")(isRoot.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parent]
   }
+  @scala.inline
+  implicit class ParentOps[Self <: Parent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsRoot(value: Boolean): Self = this.set("isRoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRoot: Self = this.set("isRoot", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

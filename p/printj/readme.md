@@ -12,7 +12,7 @@ Pure-JS printf
 | Keywords           | printf, sprintf, format, string |
 | # releases         | 6 |
 | # dependents       | 16 |
-| # downloads        | 18366109 |
+| # downloads        | 18891461 |
 | # stars            | 1 |
 
 ## Links

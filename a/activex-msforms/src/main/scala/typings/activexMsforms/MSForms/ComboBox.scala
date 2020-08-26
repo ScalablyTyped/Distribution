@@ -72,6 +72,7 @@ trait ComboBox extends js.Object {
   var Value: js.Any = js.native
   val _Font_Reserved: NewFont = js.native
   def AddItem(): Unit = js.native
+  def AddItem(pvargItem: js.UndefOr[scala.Nothing], pvargIndex: Double): Unit = js.native
   def AddItem(pvargItem: Double): Unit = js.native
   def AddItem(pvargItem: Double, pvargIndex: Double): Unit = js.native
   def Clear(): Unit = js.native

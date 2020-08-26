@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SearchSourceProperties extends js.Object {
   /**
     * Indicates whether to automatically navigate to the selected result once selected.
@@ -12,13 +13,13 @@ trait SearchSourceProperties extends js.Object {
     *
     * @default true
     */
-  var autoNavigate: js.UndefOr[Boolean] = js.undefined
+  var autoNavigate: js.UndefOr[Boolean] = js.native
   /**
-    * This property replaces the now deprecated `searchQueryParams`, `suggestQueryParams`, and `searchExtent` properties. Please see the object specification table below for details.
+    * For filtering suggests or search results. Please see the object specification table below for details.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#filter)
     */
-  var filter: js.UndefOr[SearchSourceFilter] = js.undefined
+  var filter: js.UndefOr[SearchSourceFilter] = js.native
   /**
     * Function used to get search results. See [GetResultsHandler](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#GetResultsHandler) for the function definition. When resolved, returns an object containing an array of [search results](esri-widgets-Search.html#SearchResult).
     *
@@ -26,7 +27,7 @@ trait SearchSourceProperties extends js.Object {
     *
     * @default null
     */
-  var getResults: js.UndefOr[GetResultsHandler] = js.undefined
+  var getResults: js.UndefOr[GetResultsHandler] = js.native
   /**
     * Function used to get search suggestions. See [GetSuggestionsParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#GetSuggestionsParameters) for the function definition. When resolved, returns an object containing an array of [suggest results](esri-widgets-Search.html#SuggestResult).
     *
@@ -34,7 +35,7 @@ trait SearchSourceProperties extends js.Object {
     *
     * @default null
     */
-  var getSuggestions: js.UndefOr[GetSuggestionsParameters] = js.undefined
+  var getSuggestions: js.UndefOr[GetSuggestionsParameters] = js.native
   /**
     * Indicates the maximum number of search results to return.
     *
@@ -42,7 +43,7 @@ trait SearchSourceProperties extends js.Object {
     *
     * @default 6
     */
-  var maxResults: js.UndefOr[Double] = js.undefined
+  var maxResults: js.UndefOr[Double] = js.native
   /**
     * Indicates the maximum number of suggestions to return for the widget's input.
     *
@@ -50,7 +51,7 @@ trait SearchSourceProperties extends js.Object {
     *
     * @default 6
     */
-  var maxSuggestions: js.UndefOr[Double] = js.undefined
+  var maxSuggestions: js.UndefOr[Double] = js.native
   /**
     * Indicates the minimum number of characters required before querying for a suggestion.
     *
@@ -58,57 +59,57 @@ trait SearchSourceProperties extends js.Object {
     *
     * @default 1
     */
-  var minSuggestCharacters: js.UndefOr[Double] = js.undefined
+  var minSuggestCharacters: js.UndefOr[Double] = js.native
   /**
     * Specifies the fields returned with the search results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#outFields)
     */
-  var outFields: js.UndefOr[js.Array[String]] = js.undefined
+  var outFields: js.UndefOr[js.Array[String]] = js.native
   /**
     * Used as a hint for the source input text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#placeholder)
     */
-  var placeholder: js.UndefOr[String] = js.undefined
+  var placeholder: js.UndefOr[String] = js.native
   /**
     * Indicates whether to display a [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) when a selected result is clicked.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#popupEnabled)
     */
-  var popupEnabled: js.UndefOr[Boolean] = js.undefined
+  var popupEnabled: js.UndefOr[Boolean] = js.native
   /**
     * The popup template used to display search results. If no popup is needed, set the source's popupTemplate to `null`.
     * > This property should be set in instances where there is no existing [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) configured. For example, [feature sources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html) will default to any existing [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate) configured on the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#popupTemplate)
     */
-  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
+  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.native
   /**
     * Specify this to prefix the user's input of the search text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#prefix)
     */
-  var prefix: js.UndefOr[String] = js.undefined
+  var prefix: js.UndefOr[String] = js.native
   /**
     * Indicates whether to show a graphic on the map for the selected source using the [resultSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#resultSymbol).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#resultGraphicEnabled)
     */
-  var resultGraphicEnabled: js.UndefOr[Boolean] = js.undefined
+  var resultGraphicEnabled: js.UndefOr[Boolean] = js.native
   /**
     * The symbol used to display the result.
     * > **Known Limitations**  This property only applies when the layer/locator/source is not part of the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#resultSymbol)
     */
-  var resultSymbol: js.UndefOr[SymbolProperties] = js.undefined
+  var resultSymbol: js.UndefOr[SymbolProperties] = js.native
   /**
     * Specify this to add a suffix to the user's input for the search value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#suffix)
     */
-  var suffix: js.UndefOr[String] = js.undefined
+  var suffix: js.UndefOr[String] = js.native
   /**
     * Indicates whether to display suggestions as the user enters input text in the widget.
     *
@@ -116,7 +117,7 @@ trait SearchSourceProperties extends js.Object {
     *
     * @default true
     */
-  var suggestionsEnabled: js.UndefOr[Boolean] = js.undefined
+  var suggestionsEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Indicates whether to constrain the search results to the view's extent.
     *
@@ -124,57 +125,109 @@ trait SearchSourceProperties extends js.Object {
     *
     * @default false
     */
-  var withinViewEnabled: js.UndefOr[Boolean] = js.undefined
+  var withinViewEnabled: js.UndefOr[Boolean] = js.native
   /**
     * The set zoom scale for the resulting search result. This scale is automatically honored.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#zoomScale)
+    *
+    * @default null
     */
-  var zoomScale: js.UndefOr[Double] = js.undefined
+  var zoomScale: js.UndefOr[Double] = js.native
 }
 
 object SearchSourceProperties {
   @scala.inline
-  def apply(
-    autoNavigate: js.UndefOr[Boolean] = js.undefined,
-    filter: SearchSourceFilter = null,
-    getResults: /* params */ js.Any => js.Promise[js.Array[SearchResult]] = null,
-    getSuggestions: /* params */ js.Any => js.Promise[js.Array[SuggestResult]] = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    maxSuggestions: js.UndefOr[Double] = js.undefined,
-    minSuggestCharacters: js.UndefOr[Double] = js.undefined,
-    outFields: js.Array[String] = null,
-    placeholder: String = null,
-    popupEnabled: js.UndefOr[Boolean] = js.undefined,
-    popupTemplate: PopupTemplateProperties = null,
-    prefix: String = null,
-    resultGraphicEnabled: js.UndefOr[Boolean] = js.undefined,
-    resultSymbol: SymbolProperties = null,
-    suffix: String = null,
-    suggestionsEnabled: js.UndefOr[Boolean] = js.undefined,
-    withinViewEnabled: js.UndefOr[Boolean] = js.undefined,
-    zoomScale: js.UndefOr[Double] = js.undefined
-  ): SearchSourceProperties = {
+  def apply(): SearchSourceProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoNavigate)) __obj.updateDynamic("autoNavigate")(autoNavigate.get.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (getResults != null) __obj.updateDynamic("getResults")(js.Any.fromFunction1(getResults))
-    if (getSuggestions != null) __obj.updateDynamic("getSuggestions")(js.Any.fromFunction1(getSuggestions))
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSuggestions)) __obj.updateDynamic("maxSuggestions")(maxSuggestions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSuggestCharacters)) __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters.get.asInstanceOf[js.Any])
-    if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.get.asInstanceOf[js.Any])
-    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(resultGraphicEnabled)) __obj.updateDynamic("resultGraphicEnabled")(resultGraphicEnabled.get.asInstanceOf[js.Any])
-    if (resultSymbol != null) __obj.updateDynamic("resultSymbol")(resultSymbol.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(suggestionsEnabled)) __obj.updateDynamic("suggestionsEnabled")(suggestionsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(withinViewEnabled)) __obj.updateDynamic("withinViewEnabled")(withinViewEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomScale)) __obj.updateDynamic("zoomScale")(zoomScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchSourceProperties]
   }
+  @scala.inline
+  implicit class SearchSourcePropertiesOps[Self <: SearchSourceProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoNavigate(value: Boolean): Self = this.set("autoNavigate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoNavigate: Self = this.set("autoNavigate", js.undefined)
+    @scala.inline
+    def setFilter(value: SearchSourceFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setGetResults(value: /* params */ js.Any => js.Promise[js.Array[SearchResult]]): Self = this.set("getResults", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetResults: Self = this.set("getResults", js.undefined)
+    @scala.inline
+    def setGetSuggestions(value: /* params */ js.Any => js.Promise[js.Array[SuggestResult]]): Self = this.set("getSuggestions", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetSuggestions: Self = this.set("getSuggestions", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setMaxSuggestions(value: Double): Self = this.set("maxSuggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSuggestions: Self = this.set("maxSuggestions", js.undefined)
+    @scala.inline
+    def setMinSuggestCharacters(value: Double): Self = this.set("minSuggestCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSuggestCharacters: Self = this.set("minSuggestCharacters", js.undefined)
+    @scala.inline
+    def setOutFieldsVarargs(value: String*): Self = this.set("outFields", js.Array(value :_*))
+    @scala.inline
+    def setOutFields(value: js.Array[String]): Self = this.set("outFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutFields: Self = this.set("outFields", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPopupEnabled(value: Boolean): Self = this.set("popupEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupEnabled: Self = this.set("popupEnabled", js.undefined)
+    @scala.inline
+    def setPopupTemplate(value: PopupTemplateProperties): Self = this.set("popupTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupTemplate: Self = this.set("popupTemplate", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setResultGraphicEnabled(value: Boolean): Self = this.set("resultGraphicEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultGraphicEnabled: Self = this.set("resultGraphicEnabled", js.undefined)
+    @scala.inline
+    def setResultSymbol(value: SymbolProperties): Self = this.set("resultSymbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultSymbol: Self = this.set("resultSymbol", js.undefined)
+    @scala.inline
+    def setSuffix(value: String): Self = this.set("suffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuffix: Self = this.set("suffix", js.undefined)
+    @scala.inline
+    def setSuggestionsEnabled(value: Boolean): Self = this.set("suggestionsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionsEnabled: Self = this.set("suggestionsEnabled", js.undefined)
+    @scala.inline
+    def setWithinViewEnabled(value: Boolean): Self = this.set("withinViewEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithinViewEnabled: Self = this.set("withinViewEnabled", js.undefined)
+    @scala.inline
+    def setZoomScale(value: Double): Self = this.set("zoomScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomScale: Self = this.set("zoomScale", js.undefined)
+  }
+  
 }
 

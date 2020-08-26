@@ -4,24 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Index extends js.Object {
-  var AccentedLetters: Boolean
-  val Application: typings.activexWord.Word.Application
-  val Creator: Double
-  var Filter: WdIndexFilter
-  var HeadingSeparator: WdHeadingSeparator
-  var IndexLanguage: WdLanguageID
-  var NumberOfColumns: Double
-  val Parent: js.Any
-  val Range: typings.activexWord.Word.Range
-  var RightAlignPageNumbers: Boolean
-  var SortBy: WdIndexSortBy
-  var TabLeader: WdTabLeader
-  var Type: WdIndexType
+  var AccentedLetters: Boolean = js.native
+  val Application: typings.activexWord.Word.Application = js.native
+  val Creator: Double = js.native
+  var Filter: WdIndexFilter = js.native
+  var HeadingSeparator: WdHeadingSeparator = js.native
+  var IndexLanguage: WdLanguageID = js.native
+  var NumberOfColumns: Double = js.native
+  val Parent: js.Any = js.native
+  val Range: typings.activexWord.Word.Range = js.native
+  var RightAlignPageNumbers: Boolean = js.native
+  var SortBy: WdIndexSortBy = js.native
+  var TabLeader: WdTabLeader = js.native
+  var Type: WdIndexType = js.native
   @JSName("Word.Index_typekey")
-  var WordDotIndex_typekey: Index
-  def Delete(): Unit
-  def Update(): Unit
+  var WordDotIndex_typekey: Index = js.native
+  def Delete(): Unit = js.native
+  def Update(): Unit = js.native
 }
 
 object Index {
@@ -48,5 +49,50 @@ object Index {
     __obj.updateDynamic("Word.Index_typekey")(WordDotIndex_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index]
   }
+  @scala.inline
+  implicit class IndexOps[Self <: Index] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccentedLetters(value: Boolean): Self = this.set("AccentedLetters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFilter(value: WdIndexFilter): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeadingSeparator(value: WdHeadingSeparator): Self = this.set("HeadingSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndexLanguage(value: WdLanguageID): Self = this.set("IndexLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberOfColumns(value: Double): Self = this.set("NumberOfColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRightAlignPageNumbers(value: Boolean): Self = this.set("RightAlignPageNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSortBy(value: WdIndexSortBy): Self = this.set("SortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTabLeader(value: WdTabLeader): Self = this.set("TabLeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: WdIndexType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdate(value: () => Unit): Self = this.set("Update", js.Any.fromFunction0(value))
+    @scala.inline
+    def setWordDotIndex_typekey(value: Index): Self = this.set("Word.Index_typekey", value.asInstanceOf[js.Any])
+  }
+  
 }
 

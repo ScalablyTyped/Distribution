@@ -43,6 +43,7 @@ object elasticloadbalancingMod extends js.Object {
       * @param args The arguments to use to populate this resource's properties.
       * @param opts A bag of options that control this resource's behavior.
       */
+    /** @deprecated aws.elasticloadbalancing.AppCookieStickinessPolicy has been deprecated in favor of aws.elb.AppCookieStickinessPolicy */
     def this(name: String, args: AppCookieStickinessPolicyArgs) = this()
     def this(name: String, args: AppCookieStickinessPolicyArgs, opts: CustomResourceOptions) = this()
   }
@@ -57,6 +58,7 @@ object elasticloadbalancingMod extends js.Object {
       * @param args The arguments to use to populate this resource's properties.
       * @param opts A bag of options that control this resource's behavior.
       */
+    /** @deprecated aws.elasticloadbalancing.Attachment has been deprecated in favor of aws.elb.Attachment */
     def this(name: String, args: AttachmentArgs) = this()
     def this(name: String, args: AttachmentArgs, opts: CustomResourceOptions) = this()
   }
@@ -71,6 +73,7 @@ object elasticloadbalancingMod extends js.Object {
       * @param args The arguments to use to populate this resource's properties.
       * @param opts A bag of options that control this resource's behavior.
       */
+    /** @deprecated aws.elasticloadbalancing.ListenerPolicy has been deprecated in favor of aws.elb.ListenerPolicy */
     def this(name: String, args: ListenerPolicyArgs) = this()
     def this(name: String, args: ListenerPolicyArgs, opts: CustomResourceOptions) = this()
   }
@@ -85,6 +88,7 @@ object elasticloadbalancingMod extends js.Object {
       * @param args The arguments to use to populate this resource's properties.
       * @param opts A bag of options that control this resource's behavior.
       */
+    /** @deprecated aws.elasticloadbalancing.LoadBalancer has been deprecated in favor of aws.elb.LoadBalancer */
     def this(name: String, args: LoadBalancerArgs) = this()
     def this(name: String, args: LoadBalancerArgs, opts: CustomResourceOptions) = this()
   }
@@ -99,6 +103,7 @@ object elasticloadbalancingMod extends js.Object {
       * @param args The arguments to use to populate this resource's properties.
       * @param opts A bag of options that control this resource's behavior.
       */
+    /** @deprecated aws.elasticloadbalancing.LoadBalancerBackendServerPolicy has been deprecated in favor of aws.elb.LoadBalancerBackendServerPolicy */
     def this(name: String, args: LoadBalancerBackendServerPolicyArgs) = this()
     def this(name: String, args: LoadBalancerBackendServerPolicyArgs, opts: CustomResourceOptions) = this()
   }
@@ -113,6 +118,7 @@ object elasticloadbalancingMod extends js.Object {
       * @param args The arguments to use to populate this resource's properties.
       * @param opts A bag of options that control this resource's behavior.
       */
+    /** @deprecated aws.elasticloadbalancing.LoadBalancerCookieStickinessPolicy has been deprecated in favor of aws.elb.LoadBalancerCookieStickinessPolicy */
     def this(name: String, args: LoadBalancerCookieStickinessPolicyArgs) = this()
     def this(name: String, args: LoadBalancerCookieStickinessPolicyArgs, opts: CustomResourceOptions) = this()
   }
@@ -127,6 +133,7 @@ object elasticloadbalancingMod extends js.Object {
       * @param args The arguments to use to populate this resource's properties.
       * @param opts A bag of options that control this resource's behavior.
       */
+    /** @deprecated aws.elasticloadbalancing.LoadBalancerPolicy has been deprecated in favor of aws.elb.LoadBalancerPolicy */
     def this(name: String, args: LoadBalancerPolicyArgs) = this()
     def this(name: String, args: LoadBalancerPolicyArgs, opts: CustomResourceOptions) = this()
   }
@@ -141,18 +148,21 @@ object elasticloadbalancingMod extends js.Object {
       * @param args The arguments to use to populate this resource's properties.
       * @param opts A bag of options that control this resource's behavior.
       */
+    /** @deprecated aws.elasticloadbalancing.SslNegotiationPolicy has been deprecated in favor of aws.elb.SslNegotiationPolicy */
     def this(name: String, args: SslNegotiationPolicyArgs) = this()
     def this(name: String, args: SslNegotiationPolicyArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getHostedZoneId(): js.Promise[GetHostedZoneIdResult] with GetHostedZoneIdResult = js.native
-  def getHostedZoneId(args: GetHostedZoneIdArgs): js.Promise[GetHostedZoneIdResult] with GetHostedZoneIdResult = js.native
-  def getHostedZoneId(args: GetHostedZoneIdArgs, opts: InvokeOptions): js.Promise[GetHostedZoneIdResult] with GetHostedZoneIdResult = js.native
-  def getLoadBalancer(args: GetLoadBalancerArgs): js.Promise[GetLoadBalancerResult] with GetLoadBalancerResult = js.native
-  def getLoadBalancer(args: GetLoadBalancerArgs, opts: InvokeOptions): js.Promise[GetLoadBalancerResult] with GetLoadBalancerResult = js.native
-  def getServiceAccount(): js.Promise[GetServiceAccountResult] with GetServiceAccountResult = js.native
-  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] with GetServiceAccountResult = js.native
-  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] with GetServiceAccountResult = js.native
+  def getHostedZoneId(): js.Promise[GetHostedZoneIdResult] = js.native
+  def getHostedZoneId(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetHostedZoneIdResult] = js.native
+  def getHostedZoneId(args: GetHostedZoneIdArgs): js.Promise[GetHostedZoneIdResult] = js.native
+  def getHostedZoneId(args: GetHostedZoneIdArgs, opts: InvokeOptions): js.Promise[GetHostedZoneIdResult] = js.native
+  def getLoadBalancer(args: GetLoadBalancerArgs): js.Promise[GetLoadBalancerResult] = js.native
+  def getLoadBalancer(args: GetLoadBalancerArgs, opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = js.native
+  def getServiceAccount(): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
   /* static members */
   @js.native
   object AppCookieStickinessPolicy extends js.Object {
@@ -163,8 +173,10 @@ object elasticloadbalancingMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.appCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.appCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
     def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState): typings.pulumiAws.appCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
     def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState, opts: CustomResourceOptions): typings.pulumiAws.appCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
     /**
@@ -184,8 +196,10 @@ object elasticloadbalancingMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticloadbalancingAttachmentMod.Attachment = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticloadbalancingAttachmentMod.Attachment = js.native
     def get(name: String, id: Input[ID], state: AttachmentState): typings.pulumiAws.elasticloadbalancingAttachmentMod.Attachment = js.native
     def get(name: String, id: Input[ID], state: AttachmentState, opts: CustomResourceOptions): typings.pulumiAws.elasticloadbalancingAttachmentMod.Attachment = js.native
     /**
@@ -205,8 +219,10 @@ object elasticloadbalancingMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.listenerPolicyMod.ListenerPolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.listenerPolicyMod.ListenerPolicy = js.native
     def get(name: String, id: Input[ID], state: ListenerPolicyState): typings.pulumiAws.listenerPolicyMod.ListenerPolicy = js.native
     def get(name: String, id: Input[ID], state: ListenerPolicyState, opts: CustomResourceOptions): typings.pulumiAws.listenerPolicyMod.ListenerPolicy = js.native
     /**
@@ -226,8 +242,10 @@ object elasticloadbalancingMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticloadbalancingLoadBalancerMod.LoadBalancer = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticloadbalancingLoadBalancerMod.LoadBalancer = js.native
     def get(name: String, id: Input[ID], state: LoadBalancerState): typings.pulumiAws.elasticloadbalancingLoadBalancerMod.LoadBalancer = js.native
     def get(name: String, id: Input[ID], state: LoadBalancerState, opts: CustomResourceOptions): typings.pulumiAws.elasticloadbalancingLoadBalancerMod.LoadBalancer = js.native
     /**
@@ -247,8 +265,10 @@ object elasticloadbalancingMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.loadBalancerBackendServerPolicyMod.LoadBalancerBackendServerPolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.loadBalancerBackendServerPolicyMod.LoadBalancerBackendServerPolicy = js.native
     def get(name: String, id: Input[ID], state: LoadBalancerBackendServerPolicyState): typings.pulumiAws.loadBalancerBackendServerPolicyMod.LoadBalancerBackendServerPolicy = js.native
     def get(
       name: String,
@@ -273,8 +293,10 @@ object elasticloadbalancingMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.loadBalancerCookieStickinessPolicyMod.LoadBalancerCookieStickinessPolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.loadBalancerCookieStickinessPolicyMod.LoadBalancerCookieStickinessPolicy = js.native
     def get(name: String, id: Input[ID], state: LoadBalancerCookieStickinessPolicyState): typings.pulumiAws.loadBalancerCookieStickinessPolicyMod.LoadBalancerCookieStickinessPolicy = js.native
     def get(
       name: String,
@@ -299,8 +321,10 @@ object elasticloadbalancingMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.loadBalancerPolicyMod.LoadBalancerPolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.loadBalancerPolicyMod.LoadBalancerPolicy = js.native
     def get(name: String, id: Input[ID], state: LoadBalancerPolicyState): typings.pulumiAws.loadBalancerPolicyMod.LoadBalancerPolicy = js.native
     def get(name: String, id: Input[ID], state: LoadBalancerPolicyState, opts: CustomResourceOptions): typings.pulumiAws.loadBalancerPolicyMod.LoadBalancerPolicy = js.native
     /**
@@ -320,8 +344,10 @@ object elasticloadbalancingMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.sslNegotiationPolicyMod.SslNegotiationPolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.sslNegotiationPolicyMod.SslNegotiationPolicy = js.native
     def get(name: String, id: Input[ID], state: SslNegotiationPolicyState): typings.pulumiAws.sslNegotiationPolicyMod.SslNegotiationPolicy = js.native
     def get(name: String, id: Input[ID], state: SslNegotiationPolicyState, opts: CustomResourceOptions): typings.pulumiAws.sslNegotiationPolicyMod.SslNegotiationPolicy = js.native
     /**

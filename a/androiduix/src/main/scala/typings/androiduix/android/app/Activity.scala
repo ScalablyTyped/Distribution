@@ -3,7 +3,6 @@ package typings.androiduix.android.app
 import typings.androiduix.android.content.Context
 import typings.androiduix.android.content.Intent
 import typings.androiduix.android.os.Bundle
-import typings.androiduix.android.view.KeyEvent
 import typings.androiduix.android.view.MenuItem
 import typings.androiduix.android.view.Menu_
 import typings.androiduix.android.view.MotionEvent
@@ -14,20 +13,17 @@ import typings.androiduix.android.view.Window.Callback
 import typings.androiduix.android.view.WindowManager
 import typings.androiduix.android.view.animation.Animation
 import typings.androiduix.android.view.menu.MenuPopupHelper
-import typings.androiduix.androidui.AndroidUI
-import typings.androiduix.java.lang.Runnable
+import typings.androiduix.java_.lang.Runnable
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.app.Activity")
 @js.native
-class Activity protected ()
+trait Activity
   extends Context
      with Callback
      with typings.androiduix.android.view.KeyEvent.Callback {
-  def this(androidUI: AndroidUI) = this()
   var mCallActivity: js.Any = js.native
   var mCalled: js.Any = js.native
   var mDestroyed: js.Any = js.native
@@ -46,12 +42,6 @@ class Activity protected ()
   def addContentView(view: View, params: LayoutParams): Unit = js.native
   def closeOptionsMenu(): Unit = js.native
   def dispatchActivityResult(who: String, requestCode: Double, resultCode: Double, data: Intent): Unit = js.native
-  /* CompleteClass */
-  override def dispatchGenericMotionEvent(event: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def dispatchKeyEvent(event: KeyEvent): Boolean = js.native
-  /* CompleteClass */
-  override def dispatchTouchEvent(event: MotionEvent): Boolean = js.native
   def findViewById(id: String): View = js.native
   def finish(): Unit = js.native
   def finishActivity(requestCode: Double): Unit = js.native
@@ -72,24 +62,12 @@ class Activity protected ()
   def navigateUpTo(upIntent: Intent): Boolean = js.native
   def navigateUpTo(upIntent: Intent, upToRootIfNotFound: Boolean): Boolean = js.native
   /* protected */ def onActivityResult(requestCode: Double, resultCode: Double, data: Intent): Unit = js.native
-  /* CompleteClass */
-  override def onAttachedToWindow(): Unit = js.native
   def onBackPressed(): Unit = js.native
-  /* CompleteClass */
-  override def onContentChanged(): Unit = js.native
   /* protected */ def onCreate(): Unit = js.native
   /* protected */ def onCreate(savedInstanceState: Bundle): Unit = js.native
   def onCreateOptionsMenu(menu: Menu_): Boolean = js.native
   /* protected */ def onDestroy(): Unit = js.native
-  /* CompleteClass */
-  override def onDetachedFromWindow(): Unit = js.native
   def onGenericMotionEvent(event: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onKeyDown(keyCode: Double, event: KeyEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onKeyLongPress(keyCode: Double, event: KeyEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onKeyUp(keyCode: Double, event: KeyEvent): Boolean = js.native
   /* protected */ def onNewIntent(intent: Intent): Unit = js.native
   def onOptionsItemSelected(item: MenuItem): Boolean = js.native
   def onOptionsMenuClosed(menu: Menu_): Unit = js.native
@@ -108,10 +86,6 @@ class Activity protected ()
   def onTouchEvent(event: MotionEvent): Boolean = js.native
   def onUserInteraction(): Unit = js.native
   /* protected */ def onUserLeaveHint(): Unit = js.native
-  /* CompleteClass */
-  override def onWindowAttributesChanged(attrs: typings.androiduix.android.view.WindowManager.LayoutParams): Unit = js.native
-  /* CompleteClass */
-  override def onWindowFocusChanged(hasFocus: Boolean): Unit = js.native
   def openOptionsMenu(): Unit = js.native
   def overrideNextTransition(
     enterAnimation: Animation,
@@ -155,16 +129,5 @@ class Activity protected ()
   def startActivityIfNeeded(intent: Intent, requestCode: Double): Boolean = js.native
   def startActivityIfNeeded(intent: Intent, requestCode: Double, options: Bundle): Boolean = js.native
   def takeKeyEvents(_get: Boolean): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("android.app.Activity")
-@js.native
-object Activity extends js.Object {
-  var DEBUG_LIFECYCLE: js.Any = js.native
-  var RESULT_CANCELED: Double = js.native
-  var RESULT_FIRST_USER: Double = js.native
-  var RESULT_OK: Double = js.native
-  var TAG: js.Any = js.native
 }
 

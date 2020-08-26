@@ -12,7 +12,7 @@ Enables rotation of marker icons in Leaflet.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 282215 |
+| # downloads        | 298195 |
 | # stars            | 1 |
 
 ## Links

@@ -4,29 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait YTickConfiguration extends TickConfiguration {
   /**
     * A function to format y-axis tick values.
     */
-  var format: js.UndefOr[js.Function1[/* x */ Double, String | Double]] = js.undefined
+  var format: js.UndefOr[js.Function1[/* x */ Double, String | Double]] = js.native
 }
 
 object YTickConfiguration {
   @scala.inline
-  def apply(
-    count: js.UndefOr[Double] = js.undefined,
-    format: /* x */ Double => String | Double = null,
-    outer: js.UndefOr[Boolean] = js.undefined,
-    rotate: js.UndefOr[Double] = js.undefined,
-    values: js.Array[Double | String] = null
-  ): YTickConfiguration = {
+  def apply(): YTickConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
-    if (!js.isUndefined(outer)) __obj.updateDynamic("outer")(outer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate.get.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[YTickConfiguration]
   }
+  @scala.inline
+  implicit class YTickConfigurationOps[Self <: YTickConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: /* x */ Double => String | Double): Self = this.set("format", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+  }
+  
 }
 

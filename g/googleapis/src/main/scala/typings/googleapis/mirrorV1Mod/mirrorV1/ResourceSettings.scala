@@ -27,6 +27,7 @@ class ResourceSettings protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSetting] = js.native
   def get(callback: BodyResponseCallback[SchemaSetting]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSetting] = js.native
   def get(params: ParamsResourceSettingsGet): GaxiosPromise[SchemaSetting] = js.native
   def get(params: ParamsResourceSettingsGet, callback: BodyResponseCallback[SchemaSetting]): Unit = js.native
   def get(

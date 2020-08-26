@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mount extends js.Object {
   def apply(parent: RedomElement, child: RedomElement): RedomElement = js.native
+  def apply(parent: RedomElement, child: RedomElement, before: js.UndefOr[RedomElement], replace: Boolean): RedomElement = js.native
   def apply(parent: RedomElement, child: RedomElement, before: RedomElement): RedomElement = js.native
-  def apply(parent: RedomElement, child: RedomElement, before: RedomElement, replace: Boolean): RedomElement = js.native
 }
 

@@ -12,7 +12,7 @@ A full-featured user interface for managing tags with Bulma supporting autocompl
 | Keywords           | tags, input, tagsinput, autocomplete, autocompletion, typehead, ui, component, extension, html, html5, css3, sass, bulma, bulmaio, bulma.io |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 2197 |
+| # downloads        | 7419 |
 | # stars            | 0 |
 
 ## Links

@@ -4,27 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WaveShaperOptions extends AudioNodeOptions {
-  var curve: js.UndefOr[js.Array[Double] | Float32Array] = js.undefined
-  var oversample: js.UndefOr[OverSampleType] = js.undefined
+  var curve: js.UndefOr[js.Array[Double] | Float32Array] = js.native
+  var oversample: js.UndefOr[OverSampleType] = js.native
 }
 
 object WaveShaperOptions {
   @scala.inline
-  def apply(
-    channelCount: js.UndefOr[Double] = js.undefined,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    curve: js.Array[Double] | Float32Array = null,
-    oversample: OverSampleType = null
-  ): WaveShaperOptions = {
+  def apply(): WaveShaperOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
-    if (oversample != null) __obj.updateDynamic("oversample")(oversample.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaveShaperOptions]
   }
+  @scala.inline
+  implicit class WaveShaperOptionsOps[Self <: WaveShaperOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurveVarargs(value: Double*): Self = this.set("curve", js.Array(value :_*))
+    @scala.inline
+    def setCurve(value: js.Array[Double] | Float32Array): Self = this.set("curve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurve: Self = this.set("curve", js.undefined)
+    @scala.inline
+    def setOversample(value: OverSampleType): Self = this.set("oversample", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOversample: Self = this.set("oversample", js.undefined)
+  }
+  
 }
 

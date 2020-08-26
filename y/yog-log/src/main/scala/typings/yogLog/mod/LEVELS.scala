@@ -11,16 +11,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LEVELS extends js.Object {
   // 访问日志
-  var `0`: ACCESS
+  var `0`: ACCESS = js.native
   // 应用日志等级 ODP格式
-  var `1`: FATAL
-  var `16`: DEBUG
-  var `2`: WARNING
-  var `3`: ACCESS_ERROR
-  var `4`: NOTICE
-  var `8`: TRACE
+  var `1`: FATAL = js.native
+  var `16`: DEBUG = js.native
+  var `2`: WARNING = js.native
+  var `3`: ACCESS_ERROR = js.native
+  var `4`: NOTICE = js.native
+  var `8`: TRACE = js.native
 }
 
 object LEVELS {
@@ -36,5 +37,32 @@ object LEVELS {
     __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LEVELS]
   }
+  @scala.inline
+  implicit class LEVELSOps[Self <: LEVELS] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set0(value: ACCESS): Self = this.set("0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set1(value: FATAL): Self = this.set("1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set16(value: DEBUG): Self = this.set("16", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2(value: WARNING): Self = this.set("2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set3(value: ACCESS_ERROR): Self = this.set("3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set4(value: NOTICE): Self = this.set("4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set8(value: TRACE): Self = this.set("8", value.asInstanceOf[js.Any])
+  }
+  
 }
 

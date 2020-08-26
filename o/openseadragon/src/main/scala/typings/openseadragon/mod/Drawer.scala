@@ -35,6 +35,14 @@ class Drawer protected () extends js.Object {
      // TODO: determine handler parameter types
   drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
     useSketch: Boolean,
+    scale: js.UndefOr[scala.Nothing],
+    translate: Point
+  ): Unit = js.native
+  def drawTile(
+    tile: Tile,
+     // TODO: determine handler parameter types
+  drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
+    useSketch: Boolean,
     scale: Double
   ): Unit = js.native
   def drawTile(

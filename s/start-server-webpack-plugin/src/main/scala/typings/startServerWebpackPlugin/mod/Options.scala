@@ -7,50 +7,77 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * Arguments for the script.
     * Default: `[]`.
     */
-  var args: js.UndefOr[js.Array[String]] = js.undefined
+  var args: js.UndefOr[js.Array[String]] = js.native
   /**
     * Allow typing 'rs' to restart the server.
     * Default: 'true' if in 'development' mode, 'false' otherwise.
     */
-  var keyboard: js.UndefOr[Boolean] = js.undefined
+  var keyboard: js.UndefOr[Boolean] = js.native
   /**
     * Name of the server to start (built asset from webpack).
     * If not provided, the plugin will tell you the available names.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Arguments for node.
     * Default: `[]`.
     */
-  var nodeArgs: js.UndefOr[js.Array[String]] = js.undefined
+  var nodeArgs: js.UndefOr[js.Array[String]] = js.native
   /**
     * Signal to send for HMR.
     * Default: 'false'.
     */
-  var signal: js.UndefOr[`false` | `true` | SIGUSR2] = js.undefined
+  var signal: js.UndefOr[`false` | `true` | SIGUSR2] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    args: js.Array[String] = null,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    nodeArgs: js.Array[String] = null,
-    signal: `false` | `true` | SIGUSR2 = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nodeArgs != null) __obj.updateDynamic("nodeArgs")(nodeArgs.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNodeArgsVarargs(value: String*): Self = this.set("nodeArgs", js.Array(value :_*))
+    @scala.inline
+    def setNodeArgs(value: js.Array[String]): Self = this.set("nodeArgs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeArgs: Self = this.set("nodeArgs", js.undefined)
+    @scala.inline
+    def setSignal(value: `false` | `true` | SIGUSR2): Self = this.set("signal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignal: Self = this.set("signal", js.undefined)
+  }
+  
 }
 

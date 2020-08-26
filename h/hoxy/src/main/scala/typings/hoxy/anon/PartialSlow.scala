@@ -5,27 +5,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<hoxy.hoxy.Slow> */
+@js.native
 trait PartialSlow extends js.Object {
-  var down: js.UndefOr[Double] = js.undefined
-  var latency: js.UndefOr[Double] = js.undefined
-  var rate: js.UndefOr[Double] = js.undefined
-  var up: js.UndefOr[Double] = js.undefined
+  var down: js.UndefOr[Double] = js.native
+  var latency: js.UndefOr[Double] = js.native
+  var rate: js.UndefOr[Double] = js.native
+  var up: js.UndefOr[Double] = js.native
 }
 
 object PartialSlow {
   @scala.inline
-  def apply(
-    down: js.UndefOr[Double] = js.undefined,
-    latency: js.UndefOr[Double] = js.undefined,
-    rate: js.UndefOr[Double] = js.undefined,
-    up: js.UndefOr[Double] = js.undefined
-  ): PartialSlow = {
+  def apply(): PartialSlow = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(down)) __obj.updateDynamic("down")(down.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(latency)) __obj.updateDynamic("latency")(latency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(up)) __obj.updateDynamic("up")(up.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialSlow]
   }
+  @scala.inline
+  implicit class PartialSlowOps[Self <: PartialSlow] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDown(value: Double): Self = this.set("down", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDown: Self = this.set("down", js.undefined)
+    @scala.inline
+    def setLatency(value: Double): Self = this.set("latency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatency: Self = this.set("latency", js.undefined)
+    @scala.inline
+    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRate: Self = this.set("rate", js.undefined)
+    @scala.inline
+    def setUp(value: Double): Self = this.set("up", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUp: Self = this.set("up", js.undefined)
+  }
+  
 }
 

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.csstype.csstypeStrings.`Colon-moz-dir`
   - typings.csstype.csstypeStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis`
   - typings.csstype.csstypeStrings.ColonColoncue
+  - typings.csstype.csstypeStrings.`ColonColoncue-region`
   - typings.csstype.csstypeStrings.ColonColonpart
   - typings.csstype.csstypeStrings.ColonColonslotted
   - typings.csstype.csstypeStrings.Colondir
@@ -211,6 +212,8 @@ object Pseudos {
   def ColonColonbefore: typings.csstype.csstypeStrings.ColonColonbefore = "::before".asInstanceOf[typings.csstype.csstypeStrings.ColonColonbefore]
   @scala.inline
   def ColonColoncue: typings.csstype.csstypeStrings.ColonColoncue = "::cue".asInstanceOf[typings.csstype.csstypeStrings.ColonColoncue]
+  @scala.inline
+  def `ColonColoncue-region`: typings.csstype.csstypeStrings.`ColonColoncue-region` = "::cue-region".asInstanceOf[typings.csstype.csstypeStrings.`ColonColoncue-region`]
   @scala.inline
   def `ColonColonfirst-letter`: typings.csstype.csstypeStrings.`ColonColonfirst-letter` = "::first-letter".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonfirst-letter`]
   @scala.inline

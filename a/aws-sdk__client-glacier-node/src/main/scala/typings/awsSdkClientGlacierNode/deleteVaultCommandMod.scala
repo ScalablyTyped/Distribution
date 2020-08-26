@@ -26,16 +26,9 @@ object deleteVaultCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DeleteVaultInput) = this()
-    /* CompleteClass */
-    override val input: DeleteVaultInput = js.native
     val middlewareStack: MiddlewareStack[DeleteVaultInput, DeleteVaultOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: GlacierResolvedConfiguration
-    ): Handler[DeleteVaultInput, DeleteVaultOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: GlacierResolvedConfiguration
     ): Handler[DeleteVaultInput, DeleteVaultOutput] = js.native
   }

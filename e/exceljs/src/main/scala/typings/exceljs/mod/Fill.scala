@@ -19,10 +19,9 @@ trait Fill extends js.Object
 
 object Fill {
   @scala.inline
-  def FillPattern(fgColor: PartialColor, pattern: FillPatterns, `type`: pattern, bgColor: PartialColor = null): Fill = {
+  def FillPattern(fgColor: PartialColor, pattern: FillPatterns, `type`: pattern): Fill = {
     val __obj = js.Dynamic.literal(fgColor = fgColor.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fill]
   }
   @scala.inline

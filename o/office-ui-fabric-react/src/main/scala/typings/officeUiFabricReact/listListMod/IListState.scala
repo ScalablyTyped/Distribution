@@ -5,25 +5,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IListState[T] extends js.Object {
-  var isScrolling: js.UndefOr[Boolean] = js.undefined
+  var isScrolling: js.UndefOr[Boolean] = js.native
   /** The last versionstamp for  */
-  var measureVersion: js.UndefOr[Double] = js.undefined
-  var pages: js.UndefOr[js.Array[IPage[T]]] = js.undefined
+  var measureVersion: js.UndefOr[Double] = js.native
+  var pages: js.UndefOr[js.Array[IPage[T]]] = js.native
 }
 
 object IListState {
   @scala.inline
-  def apply[T](
-    isScrolling: js.UndefOr[Boolean] = js.undefined,
-    measureVersion: js.UndefOr[Double] = js.undefined,
-    pages: js.Array[IPage[T]] = null
-  ): IListState[T] = {
+  def apply[T](): IListState[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(measureVersion)) __obj.updateDynamic("measureVersion")(measureVersion.get.asInstanceOf[js.Any])
-    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListState[T]]
   }
+  @scala.inline
+  implicit class IListStateOps[Self <: IListState[_], T] (val x: Self with IListState[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsScrolling(value: Boolean): Self = this.set("isScrolling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsScrolling: Self = this.set("isScrolling", js.undefined)
+    @scala.inline
+    def setMeasureVersion(value: Double): Self = this.set("measureVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeasureVersion: Self = this.set("measureVersion", js.undefined)
+    @scala.inline
+    def setPagesVarargs(value: IPage[T]*): Self = this.set("pages", js.Array(value :_*))
+    @scala.inline
+    def setPages(value: js.Array[IPage[T]]): Self = this.set("pages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePages: Self = this.set("pages", js.undefined)
+  }
+  
 }
 

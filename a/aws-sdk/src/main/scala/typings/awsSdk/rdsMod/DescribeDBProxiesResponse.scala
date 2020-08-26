@@ -18,11 +18,32 @@ trait DescribeDBProxiesResponse extends js.Object {
 
 object DescribeDBProxiesResponse {
   @scala.inline
-  def apply(DBProxies: DBProxyList = null, Marker: String = null): DescribeDBProxiesResponse = {
+  def apply(): DescribeDBProxiesResponse = {
     val __obj = js.Dynamic.literal()
-    if (DBProxies != null) __obj.updateDynamic("DBProxies")(DBProxies.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBProxiesResponse]
   }
+  @scala.inline
+  implicit class DescribeDBProxiesResponseOps[Self <: DescribeDBProxiesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBProxiesVarargs(value: DBProxy*): Self = this.set("DBProxies", js.Array(value :_*))
+    @scala.inline
+    def setDBProxies(value: DBProxyList): Self = this.set("DBProxies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBProxies: Self = this.set("DBProxies", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

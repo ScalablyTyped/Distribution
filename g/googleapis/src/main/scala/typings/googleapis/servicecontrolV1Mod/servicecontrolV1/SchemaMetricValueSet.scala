@@ -23,11 +23,32 @@ trait SchemaMetricValueSet extends js.Object {
 
 object SchemaMetricValueSet {
   @scala.inline
-  def apply(metricName: String = null, metricValues: js.Array[SchemaMetricValue] = null): SchemaMetricValueSet = {
+  def apply(): SchemaMetricValueSet = {
     val __obj = js.Dynamic.literal()
-    if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
-    if (metricValues != null) __obj.updateDynamic("metricValues")(metricValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMetricValueSet]
   }
+  @scala.inline
+  implicit class SchemaMetricValueSetOps[Self <: SchemaMetricValueSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetricName(value: String): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("metricName", js.undefined)
+    @scala.inline
+    def setMetricValuesVarargs(value: SchemaMetricValue*): Self = this.set("metricValues", js.Array(value :_*))
+    @scala.inline
+    def setMetricValues(value: js.Array[SchemaMetricValue]): Self = this.set("metricValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricValues: Self = this.set("metricValues", js.undefined)
+  }
+  
 }
 

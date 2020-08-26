@@ -30,20 +30,46 @@ trait SpekeKeyProviderCmaf extends js.Object {
 
 object SpekeKeyProviderCmaf {
   @scala.inline
-  def apply(
-    CertificateArn: stringPatternArnAwsUsGovAcm = null,
-    DashSignaledSystemIds: listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = null,
-    HlsSignaledSystemIds: listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = null,
-    ResourceId: stringPatternW = null,
-    Url: stringPatternHttps = null
-  ): SpekeKeyProviderCmaf = {
+  def apply(): SpekeKeyProviderCmaf = {
     val __obj = js.Dynamic.literal()
-    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
-    if (DashSignaledSystemIds != null) __obj.updateDynamic("DashSignaledSystemIds")(DashSignaledSystemIds.asInstanceOf[js.Any])
-    if (HlsSignaledSystemIds != null) __obj.updateDynamic("HlsSignaledSystemIds")(HlsSignaledSystemIds.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpekeKeyProviderCmaf]
   }
+  @scala.inline
+  implicit class SpekeKeyProviderCmafOps[Self <: SpekeKeyProviderCmaf] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateArn(value: stringPatternArnAwsUsGovAcm): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    @scala.inline
+    def setDashSignaledSystemIdsVarargs(value: stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = this.set("DashSignaledSystemIds", js.Array(value :_*))
+    @scala.inline
+    def setDashSignaledSystemIds(value: listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12): Self = this.set("DashSignaledSystemIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashSignaledSystemIds: Self = this.set("DashSignaledSystemIds", js.undefined)
+    @scala.inline
+    def setHlsSignaledSystemIdsVarargs(value: stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = this.set("HlsSignaledSystemIds", js.Array(value :_*))
+    @scala.inline
+    def setHlsSignaledSystemIds(value: listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12): Self = this.set("HlsSignaledSystemIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsSignaledSystemIds: Self = this.set("HlsSignaledSystemIds", js.undefined)
+    @scala.inline
+    def setResourceId(value: stringPatternW): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setUrl(value: stringPatternHttps): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

@@ -40,8 +40,9 @@ trait Image
      with Size
      with Velocity {
   /**
-    * Sets the size of this physics body. Setting the size does not adjust the dimensions
-    * of the parent Game Object.
+    * **DEPRECATED**: Please use `setBodySize` instead.
+    * 
+    * Sets the size of this physics body. Setting the size does not adjust the dimensions of the parent Game Object.
     * @param width The new width of the physics body, in pixels.
     * @param height The new height of the physics body, in pixels.
     * @param center Should the body be re-positioned so its center aligns with the parent Game Object? Default true.

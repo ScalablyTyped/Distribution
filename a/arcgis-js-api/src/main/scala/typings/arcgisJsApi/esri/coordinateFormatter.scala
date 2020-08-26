@@ -200,11 +200,20 @@ trait coordinateFormatter extends js.Object {
   @JSName("toMgrs")
   def toMgrs_automatic(point: Point, conversionMode: automatic): String = js.native
   @JSName("toMgrs")
+  def toMgrs_automatic(point: Point, conversionMode: automatic, precision: js.UndefOr[scala.Nothing], addSpaces: Boolean): String = js.native
+  @JSName("toMgrs")
   def toMgrs_automatic(point: Point, conversionMode: automatic, precision: Double): String = js.native
   @JSName("toMgrs")
   def toMgrs_automatic(point: Point, conversionMode: automatic, precision: Double, addSpaces: Boolean): String = js.native
   @JSName("toMgrs")
   def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_new180inzone01(
+    point: Point,
+    conversionMode: `new-180-in-zone-01`,
+    precision: js.UndefOr[scala.Nothing],
+    addSpaces: Boolean
+  ): String = js.native
   @JSName("toMgrs")
   def toMgrs_new180inzone01(point: Point, conversionMode: `new-180-in-zone-01`, precision: Double): String = js.native
   @JSName("toMgrs")
@@ -212,17 +221,38 @@ trait coordinateFormatter extends js.Object {
   @JSName("toMgrs")
   def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`): String = js.native
   @JSName("toMgrs")
+  def toMgrs_new180inzone60(
+    point: Point,
+    conversionMode: `new-180-in-zone-60`,
+    precision: js.UndefOr[scala.Nothing],
+    addSpaces: Boolean
+  ): String = js.native
+  @JSName("toMgrs")
   def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`, precision: Double): String = js.native
   @JSName("toMgrs")
   def toMgrs_new180inzone60(point: Point, conversionMode: `new-180-in-zone-60`, precision: Double, addSpaces: Boolean): String = js.native
   @JSName("toMgrs")
   def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`): String = js.native
   @JSName("toMgrs")
+  def toMgrs_old180inzone01(
+    point: Point,
+    conversionMode: `old-180-in-zone-01`,
+    precision: js.UndefOr[scala.Nothing],
+    addSpaces: Boolean
+  ): String = js.native
+  @JSName("toMgrs")
   def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`, precision: Double): String = js.native
   @JSName("toMgrs")
   def toMgrs_old180inzone01(point: Point, conversionMode: `old-180-in-zone-01`, precision: Double, addSpaces: Boolean): String = js.native
   @JSName("toMgrs")
   def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`): String = js.native
+  @JSName("toMgrs")
+  def toMgrs_old180inzone60(
+    point: Point,
+    conversionMode: `old-180-in-zone-60`,
+    precision: js.UndefOr[scala.Nothing],
+    addSpaces: Boolean
+  ): String = js.native
   @JSName("toMgrs")
   def toMgrs_old180inzone60(point: Point, conversionMode: `old-180-in-zone-60`, precision: Double): String = js.native
   @JSName("toMgrs")
@@ -257,6 +287,7 @@ trait coordinateFormatter extends js.Object {
     *
     */
   def toUsng(point: Point): String = js.native
+  def toUsng(point: Point, precision: js.UndefOr[scala.Nothing], addSpaces: Boolean): String = js.native
   def toUsng(point: Point, precision: Double): String = js.native
   def toUsng(point: Point, precision: Double, addSpaces: Boolean): String = js.native
   /**

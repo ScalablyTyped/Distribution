@@ -3,6 +3,7 @@ package typings.ionic.shellMod
 import typings.ionic.definitionsMod.IShell
 import typings.ionic.definitionsMod.IShellSpawnOptions
 import typings.ionicUtilsSubprocess.mod.Subprocess
+import typings.ionicUtilsSubprocess.mod.SubprocessOptions
 import typings.node.childProcessMod.SpawnOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +16,7 @@ class Shell protected () extends IShell {
   def this(e: ShellDeps, options: ShellOptions) = this()
   val e: ShellDeps = js.native
   def createSubprocess(command: String): js.Promise[Subprocess] = js.native
+  def createSubprocess(command: String, args: js.UndefOr[scala.Nothing], options: SubprocessOptions): js.Promise[Subprocess] = js.native
   /* protected */ def prepareSpawnOptions(options: IShellSpawnOptions): Unit = js.native
   /**
     * When `child_process.spawn` isn't provided a full path to the command

@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.DataTransfer.TargetApplicationChosenEventArgs")
 @js.native
 abstract class TargetApplicationChosenEventArgs ()
-  extends typings.winrtUwp.Windows.ApplicationModel.DataTransfer.TargetApplicationChosenEventArgs {
-  /** Contains the name of the app that the user chose to share content with. */
-  /* CompleteClass */
-  override var applicationName: String = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.DataTransfer.TargetApplicationChosenEventArgs
 

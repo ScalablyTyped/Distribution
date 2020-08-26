@@ -1,8 +1,8 @@
 package typings.seen.mod
 
 import typings.seen.anon.Inertia
-import typings.seen.anon.InertiaBoolean
 import typings.seen.anon.Offset
+import typings.seen.anon.`0`
 import typings.seen.mod.Events.Dispatcher
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 class Drag protected () extends js.Object {
   def this(elementOrId: String) = this()
   def this(elementOrId: HTMLElement) = this()
-  def this(elementOrId: String, options: InertiaBoolean) = this()
-  def this(elementOrId: HTMLElement, options: InertiaBoolean) = this()
+  def this(elementOrId: String, options: `0`) = this()
+  def this(elementOrId: HTMLElement, options: `0`) = this()
   var defaults: Inertia = js.native
   var dispatch: Dispatcher = js.native
   var el: HTMLElement = js.native

@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a KiiClause expression object
   */
+@js.native
 trait KiiClause extends js.Object
 

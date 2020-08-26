@@ -46,28 +46,62 @@ trait SubmitTaskStateChangeRequest extends js.Object {
 
 object SubmitTaskStateChangeRequest {
   @scala.inline
-  def apply(
-    attachments: AttachmentStateChanges = null,
-    cluster: String = null,
-    containers: ContainerStateChanges = null,
-    executionStoppedAt: Timestamp = null,
-    pullStartedAt: Timestamp = null,
-    pullStoppedAt: Timestamp = null,
-    reason: String = null,
-    status: String = null,
-    task: String = null
-  ): SubmitTaskStateChangeRequest = {
+  def apply(): SubmitTaskStateChangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (containers != null) __obj.updateDynamic("containers")(containers.asInstanceOf[js.Any])
-    if (executionStoppedAt != null) __obj.updateDynamic("executionStoppedAt")(executionStoppedAt.asInstanceOf[js.Any])
-    if (pullStartedAt != null) __obj.updateDynamic("pullStartedAt")(pullStartedAt.asInstanceOf[js.Any])
-    if (pullStoppedAt != null) __obj.updateDynamic("pullStoppedAt")(pullStoppedAt.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (task != null) __obj.updateDynamic("task")(task.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitTaskStateChangeRequest]
   }
+  @scala.inline
+  implicit class SubmitTaskStateChangeRequestOps[Self <: SubmitTaskStateChangeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentsVarargs(value: AttachmentStateChange*): Self = this.set("attachments", js.Array(value :_*))
+    @scala.inline
+    def setAttachments(value: AttachmentStateChanges): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    @scala.inline
+    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCluster: Self = this.set("cluster", js.undefined)
+    @scala.inline
+    def setContainersVarargs(value: ContainerStateChange*): Self = this.set("containers", js.Array(value :_*))
+    @scala.inline
+    def setContainers(value: ContainerStateChanges): Self = this.set("containers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainers: Self = this.set("containers", js.undefined)
+    @scala.inline
+    def setExecutionStoppedAt(value: Timestamp): Self = this.set("executionStoppedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionStoppedAt: Self = this.set("executionStoppedAt", js.undefined)
+    @scala.inline
+    def setPullStartedAt(value: Timestamp): Self = this.set("pullStartedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullStartedAt: Self = this.set("pullStartedAt", js.undefined)
+    @scala.inline
+    def setPullStoppedAt(value: Timestamp): Self = this.set("pullStoppedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullStoppedAt: Self = this.set("pullStoppedAt", js.undefined)
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTask(value: String): Self = this.set("task", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTask: Self = this.set("task", js.undefined)
+  }
+  
 }
 

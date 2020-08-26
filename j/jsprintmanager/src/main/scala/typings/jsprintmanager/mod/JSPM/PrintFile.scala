@@ -16,6 +16,7 @@ class PrintFile protected () extends js.Object {
   var fileContentType: FileSourceType = js.native
   var fileName: String = js.native
   /* protected */ def bool2str(value: js.Any): String = js.native
+  /* protected */ def bool2str(value: js.Any, true_val: js.UndefOr[scala.Nothing], false_val: String): String = js.native
   /* protected */ def bool2str(value: js.Any, true_val: String): String = js.native
   /* protected */ def bool2str(value: js.Any, true_val: String, false_val: String): String = js.native
   /* private */ def escapeInvalidFileNameChars(): js.Any = js.native

@@ -18,11 +18,32 @@ trait GetUsageStatisticsResponse extends js.Object {
 
 object GetUsageStatisticsResponse {
   @scala.inline
-  def apply(nextToken: string = null, records: listOfUsageRecord = null): GetUsageStatisticsResponse = {
+  def apply(): GetUsageStatisticsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (records != null) __obj.updateDynamic("records")(records.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsageStatisticsResponse]
   }
+  @scala.inline
+  implicit class GetUsageStatisticsResponseOps[Self <: GetUsageStatisticsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setRecordsVarargs(value: UsageRecord*): Self = this.set("records", js.Array(value :_*))
+    @scala.inline
+    def setRecords(value: listOfUsageRecord): Self = this.set("records", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecords: Self = this.set("records", js.undefined)
+  }
+  
 }
 

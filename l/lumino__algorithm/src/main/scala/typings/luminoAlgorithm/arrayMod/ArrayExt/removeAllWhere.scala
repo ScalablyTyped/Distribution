@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.removeAllWhere")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.removeAllWhere")
 @js.native
 object removeAllWhere extends js.Object {
   /**
@@ -49,6 +49,12 @@ object removeAllWhere extends js.Object {
     * ```
     */
   def apply[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): Double = js.native
+  def apply[T](
+    array: js.Array[T],
+    fn: js.Function2[/* value */ T, /* index */ Double, Boolean],
+    start: js.UndefOr[scala.Nothing],
+    stop: Double
+  ): Double = js.native
   def apply[T](array: js.Array[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean], start: Double): Double = js.native
   def apply[T](
     array: js.Array[T],

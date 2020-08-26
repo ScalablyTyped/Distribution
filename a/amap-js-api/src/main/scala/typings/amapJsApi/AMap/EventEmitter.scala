@@ -40,12 +40,39 @@ trait EventEmitter extends js.Object {
     eventName: String,
     handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
     context: C,
+    once: js.UndefOr[scala.Nothing],
+    unshift: Boolean
+  ): this.type = js.native
+  def on[C](
+    eventName: String,
+    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    context: C,
     once: Boolean
   ): this.type = js.native
   def on[C](
     eventName: String,
     handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
     context: C,
+    once: Boolean,
+    unshift: Boolean
+  ): this.type = js.native
+  def on[C](
+    eventName: String,
+    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    context: js.UndefOr[scala.Nothing],
+    once: js.UndefOr[scala.Nothing],
+    unshift: Boolean
+  ): this.type = js.native
+  def on[C](
+    eventName: String,
+    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    context: js.UndefOr[scala.Nothing],
+    once: Boolean
+  ): this.type = js.native
+  def on[C](
+    eventName: String,
+    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    context: js.UndefOr[scala.Nothing],
     once: Boolean,
     unshift: Boolean
   ): this.type = js.native

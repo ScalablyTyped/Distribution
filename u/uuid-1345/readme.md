@@ -12,7 +12,7 @@ Generate UUIDs of versions 1, 3, 4, and 5.
 | Keywords           | uuid, guid, rfc4122, uuid-v1, uuid-v3, uuid-v4, uuid-v5 |
 | # releases         | 2 |
 | # dependents       | 27 |
-| # downloads        | 362681 |
+| # downloads        | 379732 |
 | # stars            | 0 |
 
 ## Links

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait model extends js.Object {
-  var effects: js.UndefOr[js.Any] = js.undefined
-  var initialState: js.UndefOr[js.Any] = js.undefined
-  var name: String
-  var reducers: js.UndefOr[js.Any] = js.undefined
+  var effects: js.UndefOr[js.Any] = js.native
+  var initialState: js.UndefOr[js.Any] = js.native
+  var name: String = js.native
+  var reducers: js.UndefOr[js.Any] = js.native
 }
 
 @JSImport("mirrorx", "model")

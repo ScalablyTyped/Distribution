@@ -25,6 +25,7 @@ trait IButton extends js.Object {
     * defaults to `true`.
     */
   def openMenu(): Unit = js.native
+  def openMenu(shouldFocusOnContainer: js.UndefOr[scala.Nothing], shouldFocusOnMount: Boolean): Unit = js.native
   def openMenu(shouldFocusOnContainer: Boolean): Unit = js.native
   def openMenu(shouldFocusOnContainer: Boolean, shouldFocusOnMount: Boolean): Unit = js.native
 }

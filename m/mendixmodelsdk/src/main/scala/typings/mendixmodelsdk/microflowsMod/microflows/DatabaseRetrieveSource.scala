@@ -23,20 +23,18 @@ class DatabaseRetrieveSource protected () extends RetrieveSource {
   ) = this()
   @JSName("model")
   var model_FDatabaseRetrieveSource: IModel = js.native
-  def entity(): js.Any = js.native
-  def entity(newValue: IEntity): js.Any = js.native
+  def entity: IEntity | Null = js.native
   def entityQualifiedName: String | Null = js.native
-  @JSName("entity")
-  def entity_Union: IEntity | Null = js.native
+  def entity_=(newValue: IEntity | Null): Unit = js.native
   def range: Range = js.native
-  def range(newValue: Range): js.Any = js.native
+  def range_=(newValue: Range): Unit = js.native
   def sortItemList: SortItemList = js.native
-  def sortItemList(newValue: SortItemList): js.Any = js.native
+  def sortItemList_=(newValue: SortItemList): Unit = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
   def xPathConstraint: String = js.native
-  def xPathConstraint(newValue: String): js.Any = js.native
+  def xPathConstraint_=(newValue: String): Unit = js.native
 }
 
 /* static members */

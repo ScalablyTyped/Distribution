@@ -10,11 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SetFullscreenCommand")
 @js.native
 class SetFullscreenCommand ()
-  extends typings.devexpressWeb.SetFullscreenCommand {
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.CommandState[Boolean] = js.native
-}
+  extends typings.devexpressWeb.SetFullscreenCommand
 

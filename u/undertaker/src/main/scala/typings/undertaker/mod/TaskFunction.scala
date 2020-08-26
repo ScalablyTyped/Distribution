@@ -1,6 +1,6 @@
 package typings.undertaker.mod
 
-import typings.node.NodeJS.Process
+import typings.node.processMod.global.NodeJS.Process
 import typings.node.streamMod.Duplex
 import scala.scalajs.js
 import scala.scalajs.js.`|`

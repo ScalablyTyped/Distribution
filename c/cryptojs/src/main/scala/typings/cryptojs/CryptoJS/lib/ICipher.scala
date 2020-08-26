@@ -12,7 +12,11 @@ trait ICipher[C] extends BufferedBlockAlgorithm {
   var keySize: Double = js.native
   def _createHelper(cipher: Cipher): ICipherHelper[C] = js.native
   def create(): ICipher[C] = js.native
+  def create(xformMode: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], cfg: C): ICipher[C] = js.native
+  def create(xformMode: js.UndefOr[scala.Nothing], key: WordArray): ICipher[C] = js.native
+  def create(xformMode: js.UndefOr[scala.Nothing], key: WordArray, cfg: C): ICipher[C] = js.native
   def create(xformMode: Double): ICipher[C] = js.native
+  def create(xformMode: Double, key: js.UndefOr[scala.Nothing], cfg: C): ICipher[C] = js.native
   def create(xformMode: Double, key: WordArray): ICipher[C] = js.native
   def create(xformMode: Double, key: WordArray, cfg: C): ICipher[C] = js.native
   def createDecryptor(key: WordArray): ICipher[C] = js.native
@@ -22,7 +26,11 @@ trait ICipher[C] extends BufferedBlockAlgorithm {
   def finalize(dataUpdate: String): WordArray = js.native
   def finalize(dataUpdate: WordArray): WordArray = js.native
   def init(): Unit = js.native
+  def init(xformMode: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], cfg: C): Unit = js.native
+  def init(xformMode: js.UndefOr[scala.Nothing], key: WordArray): Unit = js.native
+  def init(xformMode: js.UndefOr[scala.Nothing], key: WordArray, cfg: C): Unit = js.native
   def init(xformMode: Double): Unit = js.native
+  def init(xformMode: Double, key: js.UndefOr[scala.Nothing], cfg: C): Unit = js.native
   def init(xformMode: Double, key: WordArray): Unit = js.native
   def init(xformMode: Double, key: WordArray, cfg: C): Unit = js.native
   def process(dataUpdate: String): WordArray = js.native

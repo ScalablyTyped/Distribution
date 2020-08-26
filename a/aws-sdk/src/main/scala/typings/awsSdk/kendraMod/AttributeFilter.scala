@@ -50,30 +50,66 @@ trait AttributeFilter extends js.Object {
 
 object AttributeFilter {
   @scala.inline
-  def apply(
-    AndAllFilters: AttributeFilterList = null,
-    ContainsAll: DocumentAttribute = null,
-    ContainsAny: DocumentAttribute = null,
-    EqualsTo: DocumentAttribute = null,
-    GreaterThan: DocumentAttribute = null,
-    GreaterThanOrEquals: DocumentAttribute = null,
-    LessThan: DocumentAttribute = null,
-    LessThanOrEquals: DocumentAttribute = null,
-    NotFilter: AttributeFilter = null,
-    OrAllFilters: AttributeFilterList = null
-  ): AttributeFilter = {
+  def apply(): AttributeFilter = {
     val __obj = js.Dynamic.literal()
-    if (AndAllFilters != null) __obj.updateDynamic("AndAllFilters")(AndAllFilters.asInstanceOf[js.Any])
-    if (ContainsAll != null) __obj.updateDynamic("ContainsAll")(ContainsAll.asInstanceOf[js.Any])
-    if (ContainsAny != null) __obj.updateDynamic("ContainsAny")(ContainsAny.asInstanceOf[js.Any])
-    if (EqualsTo != null) __obj.updateDynamic("EqualsTo")(EqualsTo.asInstanceOf[js.Any])
-    if (GreaterThan != null) __obj.updateDynamic("GreaterThan")(GreaterThan.asInstanceOf[js.Any])
-    if (GreaterThanOrEquals != null) __obj.updateDynamic("GreaterThanOrEquals")(GreaterThanOrEquals.asInstanceOf[js.Any])
-    if (LessThan != null) __obj.updateDynamic("LessThan")(LessThan.asInstanceOf[js.Any])
-    if (LessThanOrEquals != null) __obj.updateDynamic("LessThanOrEquals")(LessThanOrEquals.asInstanceOf[js.Any])
-    if (NotFilter != null) __obj.updateDynamic("NotFilter")(NotFilter.asInstanceOf[js.Any])
-    if (OrAllFilters != null) __obj.updateDynamic("OrAllFilters")(OrAllFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeFilter]
   }
+  @scala.inline
+  implicit class AttributeFilterOps[Self <: AttributeFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndAllFiltersVarargs(value: AttributeFilter*): Self = this.set("AndAllFilters", js.Array(value :_*))
+    @scala.inline
+    def setAndAllFilters(value: AttributeFilterList): Self = this.set("AndAllFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndAllFilters: Self = this.set("AndAllFilters", js.undefined)
+    @scala.inline
+    def setContainsAll(value: DocumentAttribute): Self = this.set("ContainsAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsAll: Self = this.set("ContainsAll", js.undefined)
+    @scala.inline
+    def setContainsAny(value: DocumentAttribute): Self = this.set("ContainsAny", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsAny: Self = this.set("ContainsAny", js.undefined)
+    @scala.inline
+    def setEqualsTo(value: DocumentAttribute): Self = this.set("EqualsTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEqualsTo: Self = this.set("EqualsTo", js.undefined)
+    @scala.inline
+    def setGreaterThan(value: DocumentAttribute): Self = this.set("GreaterThan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreaterThan: Self = this.set("GreaterThan", js.undefined)
+    @scala.inline
+    def setGreaterThanOrEquals(value: DocumentAttribute): Self = this.set("GreaterThanOrEquals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreaterThanOrEquals: Self = this.set("GreaterThanOrEquals", js.undefined)
+    @scala.inline
+    def setLessThan(value: DocumentAttribute): Self = this.set("LessThan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLessThan: Self = this.set("LessThan", js.undefined)
+    @scala.inline
+    def setLessThanOrEquals(value: DocumentAttribute): Self = this.set("LessThanOrEquals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLessThanOrEquals: Self = this.set("LessThanOrEquals", js.undefined)
+    @scala.inline
+    def setNotFilter(value: AttributeFilter): Self = this.set("NotFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotFilter: Self = this.set("NotFilter", js.undefined)
+    @scala.inline
+    def setOrAllFiltersVarargs(value: AttributeFilter*): Self = this.set("OrAllFilters", js.Array(value :_*))
+    @scala.inline
+    def setOrAllFilters(value: AttributeFilterList): Self = this.set("OrAllFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrAllFilters: Self = this.set("OrAllFilters", js.undefined)
+  }
+  
 }
 

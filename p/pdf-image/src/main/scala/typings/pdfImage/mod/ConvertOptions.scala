@@ -5,741 +5,1238 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ key in pdf-image.pdf-image.ConvertOptionKey ]:? string} */
+@js.native
 trait ConvertOptions extends js.Object {
-  var `-adaptive-blur`: js.UndefOr[String] = js.undefined
-  var `-adaptive-resize`: js.UndefOr[String] = js.undefined
-  var `-adaptive-sharpen`: js.UndefOr[String] = js.undefined
-  var `-adjoin`: js.UndefOr[String] = js.undefined
-  var `-affine`: js.UndefOr[String] = js.undefined
-  var `-alpha`: js.UndefOr[String] = js.undefined
-  var `-annotate`: js.UndefOr[String] = js.undefined
-  var `-antialias`: js.UndefOr[String] = js.undefined
-  var `-append`: js.UndefOr[String] = js.undefined
-  var `-authenticate`: js.UndefOr[String] = js.undefined
-  var `-auto-gamma`: js.UndefOr[String] = js.undefined
-  var `-auto-level`: js.UndefOr[String] = js.undefined
-  var `-auto-orient`: js.UndefOr[String] = js.undefined
-  var `-auto-threshold`: js.UndefOr[String] = js.undefined
-  var `-background`: js.UndefOr[String] = js.undefined
-  var `-bench`: js.UndefOr[String] = js.undefined
-  var `-bias`: js.UndefOr[String] = js.undefined
-  var `-black-threshold`: js.UndefOr[String] = js.undefined
-  var `-blue-primary`: js.UndefOr[String] = js.undefined
-  var `-blue-shift`: js.UndefOr[String] = js.undefined
-  var `-blur`: js.UndefOr[String] = js.undefined
-  var `-border`: js.UndefOr[String] = js.undefined
-  var `-bordercolor`: js.UndefOr[String] = js.undefined
-  var `-brightness-contrast`: js.UndefOr[String] = js.undefined
-  var `-canny`: js.UndefOr[String] = js.undefined
-  var `-caption`: js.UndefOr[String] = js.undefined
-  var `-cdl`: js.UndefOr[String] = js.undefined
-  var `-channel`: js.UndefOr[String] = js.undefined
-  var `-charcoal`: js.UndefOr[String] = js.undefined
-  var `-chop`: js.UndefOr[String] = js.undefined
-  var `-clahe`: js.UndefOr[String] = js.undefined
-  var `-clamp`: js.UndefOr[String] = js.undefined
-  var `-clip`: js.UndefOr[String] = js.undefined
-  var `-clip-mask`: js.UndefOr[String] = js.undefined
-  var `-clip-path`: js.UndefOr[String] = js.undefined
-  var `-clone`: js.UndefOr[String] = js.undefined
-  var `-clut`: js.UndefOr[String] = js.undefined
-  var `-coalesce`: js.UndefOr[String] = js.undefined
-  var `-color-matrix`: js.UndefOr[String] = js.undefined
-  var `-colorize`: js.UndefOr[String] = js.undefined
-  var `-colors`: js.UndefOr[String] = js.undefined
-  var `-colorspace`: js.UndefOr[String] = js.undefined
-  var `-combine`: js.UndefOr[String] = js.undefined
-  var `-comment`: js.UndefOr[String] = js.undefined
-  var `-compare`: js.UndefOr[String] = js.undefined
-  var `-complexoperator`: js.UndefOr[String] = js.undefined
-  var `-compose`: js.UndefOr[String] = js.undefined
-  var `-composite`: js.UndefOr[String] = js.undefined
-  var `-compress`: js.UndefOr[String] = js.undefined
-  var `-connected-components`: js.UndefOr[String] = js.undefined
-  var `-contrast`: js.UndefOr[String] = js.undefined
-  var `-contrast-stretch`: js.UndefOr[String] = js.undefined
-  var `-convolve`: js.UndefOr[String] = js.undefined
-  var `-copy`: js.UndefOr[String] = js.undefined
-  var `-crop`: js.UndefOr[String] = js.undefined
-  var `-cycle`: js.UndefOr[String] = js.undefined
-  var `-debug`: js.UndefOr[String] = js.undefined
-  var `-decipher`: js.UndefOr[String] = js.undefined
-  var `-deconstruct`: js.UndefOr[String] = js.undefined
-  var `-define`: js.UndefOr[String] = js.undefined
-  var `-delay`: js.UndefOr[String] = js.undefined
-  var `-delete`: js.UndefOr[String] = js.undefined
-  var `-density`: js.UndefOr[String] = js.undefined
-  var `-depth`: js.UndefOr[String] = js.undefined
-  var `-despeckle`: js.UndefOr[String] = js.undefined
-  var `-direction`: js.UndefOr[String] = js.undefined
-  var `-display`: js.UndefOr[String] = js.undefined
-  var `-dispose`: js.UndefOr[String] = js.undefined
-  var `-distort`: js.UndefOr[String] = js.undefined
-  var `-distribute-cache`: js.UndefOr[String] = js.undefined
-  var `-dither`: js.UndefOr[String] = js.undefined
-  var `-draw`: js.UndefOr[String] = js.undefined
-  var `-duplicate`: js.UndefOr[String] = js.undefined
-  var `-edge`: js.UndefOr[String] = js.undefined
-  var `-emboss`: js.UndefOr[String] = js.undefined
-  var `-encipher`: js.UndefOr[String] = js.undefined
-  var `-encoding`: js.UndefOr[String] = js.undefined
-  var `-endian`: js.UndefOr[String] = js.undefined
-  var `-enhance`: js.UndefOr[String] = js.undefined
-  var `-equalize`: js.UndefOr[String] = js.undefined
-  var `-evaluate`: js.UndefOr[String] = js.undefined
-  var `-evaluate-sequence`: js.UndefOr[String] = js.undefined
-  var `-extent`: js.UndefOr[String] = js.undefined
-  var `-extract`: js.UndefOr[String] = js.undefined
-  var `-family`: js.UndefOr[String] = js.undefined
-  var `-features`: js.UndefOr[String] = js.undefined
-  var `-fft`: js.UndefOr[String] = js.undefined
-  var `-fill`: js.UndefOr[String] = js.undefined
-  var `-filter`: js.UndefOr[String] = js.undefined
-  var `-flatten`: js.UndefOr[String] = js.undefined
-  var `-flip`: js.UndefOr[String] = js.undefined
-  var `-floodfill`: js.UndefOr[String] = js.undefined
-  var `-flop`: js.UndefOr[String] = js.undefined
-  var `-font`: js.UndefOr[String] = js.undefined
-  var `-format`: js.UndefOr[String] = js.undefined
-  var `-frame`: js.UndefOr[String] = js.undefined
-  var `-function`: js.UndefOr[String] = js.undefined
-  var `-fuzz`: js.UndefOr[String] = js.undefined
-  var `-fx`: js.UndefOr[String] = js.undefined
-  var `-gamma`: js.UndefOr[String] = js.undefined
-  var `-gaussian-blur`: js.UndefOr[String] = js.undefined
-  var `-geometry`: js.UndefOr[String] = js.undefined
-  var `-gravity`: js.UndefOr[String] = js.undefined
-  var `-grayscale`: js.UndefOr[String] = js.undefined
-  var `-green-primary`: js.UndefOr[String] = js.undefined
-  var `-help`: js.UndefOr[String] = js.undefined
-  var `-hough-lines`: js.UndefOr[String] = js.undefined
-  var `-identify`: js.UndefOr[String] = js.undefined
-  var `-ift`: js.UndefOr[String] = js.undefined
-  var `-implode`: js.UndefOr[String] = js.undefined
-  var `-insert`: js.UndefOr[String] = js.undefined
-  var `-intensity`: js.UndefOr[String] = js.undefined
-  var `-intent`: js.UndefOr[String] = js.undefined
-  var `-interlace`: js.UndefOr[String] = js.undefined
-  var `-interline-spacing`: js.UndefOr[String] = js.undefined
-  var `-interpolate`: js.UndefOr[String] = js.undefined
-  var `-interword-spacing`: js.UndefOr[String] = js.undefined
-  var `-kerning`: js.UndefOr[String] = js.undefined
-  var `-kmeans`: js.UndefOr[String] = js.undefined
-  var `-kuwahara`: js.UndefOr[String] = js.undefined
-  var `-label`: js.UndefOr[String] = js.undefined
-  var `-lat`: js.UndefOr[String] = js.undefined
-  var `-layers`: js.UndefOr[String] = js.undefined
-  var `-level`: js.UndefOr[String] = js.undefined
-  var `-limit`: js.UndefOr[String] = js.undefined
-  var `-linear-stretch`: js.UndefOr[String] = js.undefined
-  var `-liquid-rescale`: js.UndefOr[String] = js.undefined
-  var `-list`: js.UndefOr[String] = js.undefined
-  var `-log`: js.UndefOr[String] = js.undefined
-  var `-loop`: js.UndefOr[String] = js.undefined
-  var `-mattecolor`: js.UndefOr[String] = js.undefined
-  var `-mean-shift`: js.UndefOr[String] = js.undefined
-  var `-median`: js.UndefOr[String] = js.undefined
-  var `-metric`: js.UndefOr[String] = js.undefined
-  var `-mode`: js.UndefOr[String] = js.undefined
-  var `-modulate`: js.UndefOr[String] = js.undefined
-  var `-moments`: js.UndefOr[String] = js.undefined
-  var `-monitor`: js.UndefOr[String] = js.undefined
-  var `-monochrome`: js.UndefOr[String] = js.undefined
-  var `-morph`: js.UndefOr[String] = js.undefined
-  var `-morphology`: js.UndefOr[String] = js.undefined
-  var `-motion-blur`: js.UndefOr[String] = js.undefined
-  var `-negate`: js.UndefOr[String] = js.undefined
-  var `-noise`: js.UndefOr[String] = js.undefined
-  var `-normalize`: js.UndefOr[String] = js.undefined
-  var `-opaque`: js.UndefOr[String] = js.undefined
-  var `-ordered-dither`: js.UndefOr[String] = js.undefined
-  var `-orient`: js.UndefOr[String] = js.undefined
-  var `-page`: js.UndefOr[String] = js.undefined
-  var `-paint`: js.UndefOr[String] = js.undefined
-  var `-perceptible`: js.UndefOr[String] = js.undefined
-  var `-ping`: js.UndefOr[String] = js.undefined
-  var `-pointsize`: js.UndefOr[String] = js.undefined
-  var `-polaroid`: js.UndefOr[String] = js.undefined
-  var `-poly`: js.UndefOr[String] = js.undefined
-  var `-posterize`: js.UndefOr[String] = js.undefined
-  var `-precision`: js.UndefOr[String] = js.undefined
-  var `-preview`: js.UndefOr[String] = js.undefined
-  var `-print`: js.UndefOr[String] = js.undefined
-  var `-process`: js.UndefOr[String] = js.undefined
-  var `-profile`: js.UndefOr[String] = js.undefined
-  var `-quality`: js.UndefOr[String] = js.undefined
-  var `-quantize`: js.UndefOr[String] = js.undefined
-  var `-quiet`: js.UndefOr[String] = js.undefined
-  var `-radial-blur`: js.UndefOr[String] = js.undefined
-  var `-raise`: js.UndefOr[String] = js.undefined
-  var `-random-threshold`: js.UndefOr[String] = js.undefined
-  var `-range-threshold`: js.UndefOr[String] = js.undefined
-  var `-read-mask`: js.UndefOr[String] = js.undefined
-  var `-red-primary`: js.UndefOr[String] = js.undefined
-  var `-regard-warnings`: js.UndefOr[String] = js.undefined
-  var `-region`: js.UndefOr[String] = js.undefined
-  var `-remap`: js.UndefOr[String] = js.undefined
-  var `-render`: js.UndefOr[String] = js.undefined
-  var `-repage`: js.UndefOr[String] = js.undefined
-  var `-resample`: js.UndefOr[String] = js.undefined
-  var `-resize`: js.UndefOr[String] = js.undefined
-  var `-respect-parentheses`: js.UndefOr[String] = js.undefined
-  var `-roll`: js.UndefOr[String] = js.undefined
-  var `-rotate`: js.UndefOr[String] = js.undefined
-  var `-sample`: js.UndefOr[String] = js.undefined
-  var `-sampling-factor`: js.UndefOr[String] = js.undefined
-  var `-scale`: js.UndefOr[String] = js.undefined
-  var `-scene`: js.UndefOr[String] = js.undefined
-  var `-seed`: js.UndefOr[String] = js.undefined
-  var `-segment`: js.UndefOr[String] = js.undefined
-  var `-selective-blur`: js.UndefOr[String] = js.undefined
-  var `-separate`: js.UndefOr[String] = js.undefined
-  var `-sepia-tone`: js.UndefOr[String] = js.undefined
-  var `-set`: js.UndefOr[String] = js.undefined
-  var `-shade`: js.UndefOr[String] = js.undefined
-  var `-shadow`: js.UndefOr[String] = js.undefined
-  var `-sharpen`: js.UndefOr[String] = js.undefined
-  var `-shave`: js.UndefOr[String] = js.undefined
-  var `-shear`: js.UndefOr[String] = js.undefined
-  var `-sigmoidal-contrast`: js.UndefOr[String] = js.undefined
-  var `-size`: js.UndefOr[String] = js.undefined
-  var `-sketch`: js.UndefOr[String] = js.undefined
-  var `-smush`: js.UndefOr[String] = js.undefined
-  var `-solarize`: js.UndefOr[String] = js.undefined
-  var `-splice`: js.UndefOr[String] = js.undefined
-  var `-spread`: js.UndefOr[String] = js.undefined
-  var `-statistic`: js.UndefOr[String] = js.undefined
-  var `-stretch`: js.UndefOr[String] = js.undefined
-  var `-strip`: js.UndefOr[String] = js.undefined
-  var `-stroke`: js.UndefOr[String] = js.undefined
-  var `-strokewidth`: js.UndefOr[String] = js.undefined
-  var `-style`: js.UndefOr[String] = js.undefined
-  var `-swap`: js.UndefOr[String] = js.undefined
-  var `-swirl`: js.UndefOr[String] = js.undefined
-  var `-synchronize`: js.UndefOr[String] = js.undefined
-  var `-taint`: js.UndefOr[String] = js.undefined
-  var `-texture`: js.UndefOr[String] = js.undefined
-  var `-threshold`: js.UndefOr[String] = js.undefined
-  var `-thumbnail`: js.UndefOr[String] = js.undefined
-  var `-tile`: js.UndefOr[String] = js.undefined
-  var `-tile-offset`: js.UndefOr[String] = js.undefined
-  var `-tint`: js.UndefOr[String] = js.undefined
-  var `-transform`: js.UndefOr[String] = js.undefined
-  var `-transparent`: js.UndefOr[String] = js.undefined
-  var `-transparent-color`: js.UndefOr[String] = js.undefined
-  var `-transpose`: js.UndefOr[String] = js.undefined
-  var `-transverse`: js.UndefOr[String] = js.undefined
-  var `-treedepth`: js.UndefOr[String] = js.undefined
-  var `-trim`: js.UndefOr[String] = js.undefined
-  var `-type`: js.UndefOr[String] = js.undefined
-  var `-undercolor`: js.UndefOr[String] = js.undefined
-  var `-unique-colors`: js.UndefOr[String] = js.undefined
-  var `-units`: js.UndefOr[String] = js.undefined
-  var `-unsharp`: js.UndefOr[String] = js.undefined
-  var `-verbose`: js.UndefOr[String] = js.undefined
-  var `-version`: js.UndefOr[String] = js.undefined
-  var `-view`: js.UndefOr[String] = js.undefined
-  var `-vignette`: js.UndefOr[String] = js.undefined
-  var `-virtual-pixel`: js.UndefOr[String] = js.undefined
-  var `-wave`: js.UndefOr[String] = js.undefined
-  var `-wavelet-denoise`: js.UndefOr[String] = js.undefined
-  var `-weight`: js.UndefOr[String] = js.undefined
-  var `-white-point`: js.UndefOr[String] = js.undefined
-  var `-white-threshold`: js.UndefOr[String] = js.undefined
-  var `-write`: js.UndefOr[String] = js.undefined
-  var `-write-mask`: js.UndefOr[String] = js.undefined
+  var `-adaptive-blur`: js.UndefOr[String] = js.native
+  var `-adaptive-resize`: js.UndefOr[String] = js.native
+  var `-adaptive-sharpen`: js.UndefOr[String] = js.native
+  var `-adjoin`: js.UndefOr[String] = js.native
+  var `-affine`: js.UndefOr[String] = js.native
+  var `-alpha`: js.UndefOr[String] = js.native
+  var `-annotate`: js.UndefOr[String] = js.native
+  var `-antialias`: js.UndefOr[String] = js.native
+  var `-append`: js.UndefOr[String] = js.native
+  var `-authenticate`: js.UndefOr[String] = js.native
+  var `-auto-gamma`: js.UndefOr[String] = js.native
+  var `-auto-level`: js.UndefOr[String] = js.native
+  var `-auto-orient`: js.UndefOr[String] = js.native
+  var `-auto-threshold`: js.UndefOr[String] = js.native
+  var `-background`: js.UndefOr[String] = js.native
+  var `-bench`: js.UndefOr[String] = js.native
+  var `-bias`: js.UndefOr[String] = js.native
+  var `-black-threshold`: js.UndefOr[String] = js.native
+  var `-blue-primary`: js.UndefOr[String] = js.native
+  var `-blue-shift`: js.UndefOr[String] = js.native
+  var `-blur`: js.UndefOr[String] = js.native
+  var `-border`: js.UndefOr[String] = js.native
+  var `-bordercolor`: js.UndefOr[String] = js.native
+  var `-brightness-contrast`: js.UndefOr[String] = js.native
+  var `-canny`: js.UndefOr[String] = js.native
+  var `-caption`: js.UndefOr[String] = js.native
+  var `-cdl`: js.UndefOr[String] = js.native
+  var `-channel`: js.UndefOr[String] = js.native
+  var `-charcoal`: js.UndefOr[String] = js.native
+  var `-chop`: js.UndefOr[String] = js.native
+  var `-clahe`: js.UndefOr[String] = js.native
+  var `-clamp`: js.UndefOr[String] = js.native
+  var `-clip`: js.UndefOr[String] = js.native
+  var `-clip-mask`: js.UndefOr[String] = js.native
+  var `-clip-path`: js.UndefOr[String] = js.native
+  var `-clone`: js.UndefOr[String] = js.native
+  var `-clut`: js.UndefOr[String] = js.native
+  var `-coalesce`: js.UndefOr[String] = js.native
+  var `-color-matrix`: js.UndefOr[String] = js.native
+  var `-colorize`: js.UndefOr[String] = js.native
+  var `-colors`: js.UndefOr[String] = js.native
+  var `-colorspace`: js.UndefOr[String] = js.native
+  var `-combine`: js.UndefOr[String] = js.native
+  var `-comment`: js.UndefOr[String] = js.native
+  var `-compare`: js.UndefOr[String] = js.native
+  var `-complexoperator`: js.UndefOr[String] = js.native
+  var `-compose`: js.UndefOr[String] = js.native
+  var `-composite`: js.UndefOr[String] = js.native
+  var `-compress`: js.UndefOr[String] = js.native
+  var `-connected-components`: js.UndefOr[String] = js.native
+  var `-contrast`: js.UndefOr[String] = js.native
+  var `-contrast-stretch`: js.UndefOr[String] = js.native
+  var `-convolve`: js.UndefOr[String] = js.native
+  var `-copy`: js.UndefOr[String] = js.native
+  var `-crop`: js.UndefOr[String] = js.native
+  var `-cycle`: js.UndefOr[String] = js.native
+  var `-debug`: js.UndefOr[String] = js.native
+  var `-decipher`: js.UndefOr[String] = js.native
+  var `-deconstruct`: js.UndefOr[String] = js.native
+  var `-define`: js.UndefOr[String] = js.native
+  var `-delay`: js.UndefOr[String] = js.native
+  var `-delete`: js.UndefOr[String] = js.native
+  var `-density`: js.UndefOr[String] = js.native
+  var `-depth`: js.UndefOr[String] = js.native
+  var `-despeckle`: js.UndefOr[String] = js.native
+  var `-direction`: js.UndefOr[String] = js.native
+  var `-display`: js.UndefOr[String] = js.native
+  var `-dispose`: js.UndefOr[String] = js.native
+  var `-distort`: js.UndefOr[String] = js.native
+  var `-distribute-cache`: js.UndefOr[String] = js.native
+  var `-dither`: js.UndefOr[String] = js.native
+  var `-draw`: js.UndefOr[String] = js.native
+  var `-duplicate`: js.UndefOr[String] = js.native
+  var `-edge`: js.UndefOr[String] = js.native
+  var `-emboss`: js.UndefOr[String] = js.native
+  var `-encipher`: js.UndefOr[String] = js.native
+  var `-encoding`: js.UndefOr[String] = js.native
+  var `-endian`: js.UndefOr[String] = js.native
+  var `-enhance`: js.UndefOr[String] = js.native
+  var `-equalize`: js.UndefOr[String] = js.native
+  var `-evaluate`: js.UndefOr[String] = js.native
+  var `-evaluate-sequence`: js.UndefOr[String] = js.native
+  var `-extent`: js.UndefOr[String] = js.native
+  var `-extract`: js.UndefOr[String] = js.native
+  var `-family`: js.UndefOr[String] = js.native
+  var `-features`: js.UndefOr[String] = js.native
+  var `-fft`: js.UndefOr[String] = js.native
+  var `-fill`: js.UndefOr[String] = js.native
+  var `-filter`: js.UndefOr[String] = js.native
+  var `-flatten`: js.UndefOr[String] = js.native
+  var `-flip`: js.UndefOr[String] = js.native
+  var `-floodfill`: js.UndefOr[String] = js.native
+  var `-flop`: js.UndefOr[String] = js.native
+  var `-font`: js.UndefOr[String] = js.native
+  var `-format`: js.UndefOr[String] = js.native
+  var `-frame`: js.UndefOr[String] = js.native
+  var `-function`: js.UndefOr[String] = js.native
+  var `-fuzz`: js.UndefOr[String] = js.native
+  var `-fx`: js.UndefOr[String] = js.native
+  var `-gamma`: js.UndefOr[String] = js.native
+  var `-gaussian-blur`: js.UndefOr[String] = js.native
+  var `-geometry`: js.UndefOr[String] = js.native
+  var `-gravity`: js.UndefOr[String] = js.native
+  var `-grayscale`: js.UndefOr[String] = js.native
+  var `-green-primary`: js.UndefOr[String] = js.native
+  var `-help`: js.UndefOr[String] = js.native
+  var `-hough-lines`: js.UndefOr[String] = js.native
+  var `-identify`: js.UndefOr[String] = js.native
+  var `-ift`: js.UndefOr[String] = js.native
+  var `-implode`: js.UndefOr[String] = js.native
+  var `-insert`: js.UndefOr[String] = js.native
+  var `-intensity`: js.UndefOr[String] = js.native
+  var `-intent`: js.UndefOr[String] = js.native
+  var `-interlace`: js.UndefOr[String] = js.native
+  var `-interline-spacing`: js.UndefOr[String] = js.native
+  var `-interpolate`: js.UndefOr[String] = js.native
+  var `-interword-spacing`: js.UndefOr[String] = js.native
+  var `-kerning`: js.UndefOr[String] = js.native
+  var `-kmeans`: js.UndefOr[String] = js.native
+  var `-kuwahara`: js.UndefOr[String] = js.native
+  var `-label`: js.UndefOr[String] = js.native
+  var `-lat`: js.UndefOr[String] = js.native
+  var `-layers`: js.UndefOr[String] = js.native
+  var `-level`: js.UndefOr[String] = js.native
+  var `-limit`: js.UndefOr[String] = js.native
+  var `-linear-stretch`: js.UndefOr[String] = js.native
+  var `-liquid-rescale`: js.UndefOr[String] = js.native
+  var `-list`: js.UndefOr[String] = js.native
+  var `-log`: js.UndefOr[String] = js.native
+  var `-loop`: js.UndefOr[String] = js.native
+  var `-mattecolor`: js.UndefOr[String] = js.native
+  var `-mean-shift`: js.UndefOr[String] = js.native
+  var `-median`: js.UndefOr[String] = js.native
+  var `-metric`: js.UndefOr[String] = js.native
+  var `-mode`: js.UndefOr[String] = js.native
+  var `-modulate`: js.UndefOr[String] = js.native
+  var `-moments`: js.UndefOr[String] = js.native
+  var `-monitor`: js.UndefOr[String] = js.native
+  var `-monochrome`: js.UndefOr[String] = js.native
+  var `-morph`: js.UndefOr[String] = js.native
+  var `-morphology`: js.UndefOr[String] = js.native
+  var `-motion-blur`: js.UndefOr[String] = js.native
+  var `-negate`: js.UndefOr[String] = js.native
+  var `-noise`: js.UndefOr[String] = js.native
+  var `-normalize`: js.UndefOr[String] = js.native
+  var `-opaque`: js.UndefOr[String] = js.native
+  var `-ordered-dither`: js.UndefOr[String] = js.native
+  var `-orient`: js.UndefOr[String] = js.native
+  var `-page`: js.UndefOr[String] = js.native
+  var `-paint`: js.UndefOr[String] = js.native
+  var `-perceptible`: js.UndefOr[String] = js.native
+  var `-ping`: js.UndefOr[String] = js.native
+  var `-pointsize`: js.UndefOr[String] = js.native
+  var `-polaroid`: js.UndefOr[String] = js.native
+  var `-poly`: js.UndefOr[String] = js.native
+  var `-posterize`: js.UndefOr[String] = js.native
+  var `-precision`: js.UndefOr[String] = js.native
+  var `-preview`: js.UndefOr[String] = js.native
+  var `-print`: js.UndefOr[String] = js.native
+  var `-process`: js.UndefOr[String] = js.native
+  var `-profile`: js.UndefOr[String] = js.native
+  var `-quality`: js.UndefOr[String] = js.native
+  var `-quantize`: js.UndefOr[String] = js.native
+  var `-quiet`: js.UndefOr[String] = js.native
+  var `-radial-blur`: js.UndefOr[String] = js.native
+  var `-raise`: js.UndefOr[String] = js.native
+  var `-random-threshold`: js.UndefOr[String] = js.native
+  var `-range-threshold`: js.UndefOr[String] = js.native
+  var `-read-mask`: js.UndefOr[String] = js.native
+  var `-red-primary`: js.UndefOr[String] = js.native
+  var `-regard-warnings`: js.UndefOr[String] = js.native
+  var `-region`: js.UndefOr[String] = js.native
+  var `-remap`: js.UndefOr[String] = js.native
+  var `-render`: js.UndefOr[String] = js.native
+  var `-repage`: js.UndefOr[String] = js.native
+  var `-resample`: js.UndefOr[String] = js.native
+  var `-resize`: js.UndefOr[String] = js.native
+  var `-respect-parentheses`: js.UndefOr[String] = js.native
+  var `-roll`: js.UndefOr[String] = js.native
+  var `-rotate`: js.UndefOr[String] = js.native
+  var `-sample`: js.UndefOr[String] = js.native
+  var `-sampling-factor`: js.UndefOr[String] = js.native
+  var `-scale`: js.UndefOr[String] = js.native
+  var `-scene`: js.UndefOr[String] = js.native
+  var `-seed`: js.UndefOr[String] = js.native
+  var `-segment`: js.UndefOr[String] = js.native
+  var `-selective-blur`: js.UndefOr[String] = js.native
+  var `-separate`: js.UndefOr[String] = js.native
+  var `-sepia-tone`: js.UndefOr[String] = js.native
+  var `-set`: js.UndefOr[String] = js.native
+  var `-shade`: js.UndefOr[String] = js.native
+  var `-shadow`: js.UndefOr[String] = js.native
+  var `-sharpen`: js.UndefOr[String] = js.native
+  var `-shave`: js.UndefOr[String] = js.native
+  var `-shear`: js.UndefOr[String] = js.native
+  var `-sigmoidal-contrast`: js.UndefOr[String] = js.native
+  var `-size`: js.UndefOr[String] = js.native
+  var `-sketch`: js.UndefOr[String] = js.native
+  var `-smush`: js.UndefOr[String] = js.native
+  var `-solarize`: js.UndefOr[String] = js.native
+  var `-splice`: js.UndefOr[String] = js.native
+  var `-spread`: js.UndefOr[String] = js.native
+  var `-statistic`: js.UndefOr[String] = js.native
+  var `-stretch`: js.UndefOr[String] = js.native
+  var `-strip`: js.UndefOr[String] = js.native
+  var `-stroke`: js.UndefOr[String] = js.native
+  var `-strokewidth`: js.UndefOr[String] = js.native
+  var `-style`: js.UndefOr[String] = js.native
+  var `-swap`: js.UndefOr[String] = js.native
+  var `-swirl`: js.UndefOr[String] = js.native
+  var `-synchronize`: js.UndefOr[String] = js.native
+  var `-taint`: js.UndefOr[String] = js.native
+  var `-texture`: js.UndefOr[String] = js.native
+  var `-threshold`: js.UndefOr[String] = js.native
+  var `-thumbnail`: js.UndefOr[String] = js.native
+  var `-tile`: js.UndefOr[String] = js.native
+  var `-tile-offset`: js.UndefOr[String] = js.native
+  var `-tint`: js.UndefOr[String] = js.native
+  var `-transform`: js.UndefOr[String] = js.native
+  var `-transparent`: js.UndefOr[String] = js.native
+  var `-transparent-color`: js.UndefOr[String] = js.native
+  var `-transpose`: js.UndefOr[String] = js.native
+  var `-transverse`: js.UndefOr[String] = js.native
+  var `-treedepth`: js.UndefOr[String] = js.native
+  var `-trim`: js.UndefOr[String] = js.native
+  var `-type`: js.UndefOr[String] = js.native
+  var `-undercolor`: js.UndefOr[String] = js.native
+  var `-unique-colors`: js.UndefOr[String] = js.native
+  var `-units`: js.UndefOr[String] = js.native
+  var `-unsharp`: js.UndefOr[String] = js.native
+  var `-verbose`: js.UndefOr[String] = js.native
+  var `-version`: js.UndefOr[String] = js.native
+  var `-view`: js.UndefOr[String] = js.native
+  var `-vignette`: js.UndefOr[String] = js.native
+  var `-virtual-pixel`: js.UndefOr[String] = js.native
+  var `-wave`: js.UndefOr[String] = js.native
+  var `-wavelet-denoise`: js.UndefOr[String] = js.native
+  var `-weight`: js.UndefOr[String] = js.native
+  var `-white-point`: js.UndefOr[String] = js.native
+  var `-white-threshold`: js.UndefOr[String] = js.native
+  var `-write`: js.UndefOr[String] = js.native
+  var `-write-mask`: js.UndefOr[String] = js.native
 }
 
 object ConvertOptions {
   @scala.inline
-  def apply(
-    `-adaptive-blur`: String = null,
-    `-adaptive-resize`: String = null,
-    `-adaptive-sharpen`: String = null,
-    `-adjoin`: String = null,
-    `-affine`: String = null,
-    `-alpha`: String = null,
-    `-annotate`: String = null,
-    `-antialias`: String = null,
-    `-append`: String = null,
-    `-authenticate`: String = null,
-    `-auto-gamma`: String = null,
-    `-auto-level`: String = null,
-    `-auto-orient`: String = null,
-    `-auto-threshold`: String = null,
-    `-background`: String = null,
-    `-bench`: String = null,
-    `-bias`: String = null,
-    `-black-threshold`: String = null,
-    `-blue-primary`: String = null,
-    `-blue-shift`: String = null,
-    `-blur`: String = null,
-    `-border`: String = null,
-    `-bordercolor`: String = null,
-    `-brightness-contrast`: String = null,
-    `-canny`: String = null,
-    `-caption`: String = null,
-    `-cdl`: String = null,
-    `-channel`: String = null,
-    `-charcoal`: String = null,
-    `-chop`: String = null,
-    `-clahe`: String = null,
-    `-clamp`: String = null,
-    `-clip`: String = null,
-    `-clip-mask`: String = null,
-    `-clip-path`: String = null,
-    `-clone`: String = null,
-    `-clut`: String = null,
-    `-coalesce`: String = null,
-    `-color-matrix`: String = null,
-    `-colorize`: String = null,
-    `-colors`: String = null,
-    `-colorspace`: String = null,
-    `-combine`: String = null,
-    `-comment`: String = null,
-    `-compare`: String = null,
-    `-complexoperator`: String = null,
-    `-compose`: String = null,
-    `-composite`: String = null,
-    `-compress`: String = null,
-    `-connected-components`: String = null,
-    `-contrast`: String = null,
-    `-contrast-stretch`: String = null,
-    `-convolve`: String = null,
-    `-copy`: String = null,
-    `-crop`: String = null,
-    `-cycle`: String = null,
-    `-debug`: String = null,
-    `-decipher`: String = null,
-    `-deconstruct`: String = null,
-    `-define`: String = null,
-    `-delay`: String = null,
-    `-delete`: String = null,
-    `-density`: String = null,
-    `-depth`: String = null,
-    `-despeckle`: String = null,
-    `-direction`: String = null,
-    `-display`: String = null,
-    `-dispose`: String = null,
-    `-distort`: String = null,
-    `-distribute-cache`: String = null,
-    `-dither`: String = null,
-    `-draw`: String = null,
-    `-duplicate`: String = null,
-    `-edge`: String = null,
-    `-emboss`: String = null,
-    `-encipher`: String = null,
-    `-encoding`: String = null,
-    `-endian`: String = null,
-    `-enhance`: String = null,
-    `-equalize`: String = null,
-    `-evaluate`: String = null,
-    `-evaluate-sequence`: String = null,
-    `-extent`: String = null,
-    `-extract`: String = null,
-    `-family`: String = null,
-    `-features`: String = null,
-    `-fft`: String = null,
-    `-fill`: String = null,
-    `-filter`: String = null,
-    `-flatten`: String = null,
-    `-flip`: String = null,
-    `-floodfill`: String = null,
-    `-flop`: String = null,
-    `-font`: String = null,
-    `-format`: String = null,
-    `-frame`: String = null,
-    `-function`: String = null,
-    `-fuzz`: String = null,
-    `-fx`: String = null,
-    `-gamma`: String = null,
-    `-gaussian-blur`: String = null,
-    `-geometry`: String = null,
-    `-gravity`: String = null,
-    `-grayscale`: String = null,
-    `-green-primary`: String = null,
-    `-help`: String = null,
-    `-hough-lines`: String = null,
-    `-identify`: String = null,
-    `-ift`: String = null,
-    `-implode`: String = null,
-    `-insert`: String = null,
-    `-intensity`: String = null,
-    `-intent`: String = null,
-    `-interlace`: String = null,
-    `-interline-spacing`: String = null,
-    `-interpolate`: String = null,
-    `-interword-spacing`: String = null,
-    `-kerning`: String = null,
-    `-kmeans`: String = null,
-    `-kuwahara`: String = null,
-    `-label`: String = null,
-    `-lat`: String = null,
-    `-layers`: String = null,
-    `-level`: String = null,
-    `-limit`: String = null,
-    `-linear-stretch`: String = null,
-    `-liquid-rescale`: String = null,
-    `-list`: String = null,
-    `-log`: String = null,
-    `-loop`: String = null,
-    `-mattecolor`: String = null,
-    `-mean-shift`: String = null,
-    `-median`: String = null,
-    `-metric`: String = null,
-    `-mode`: String = null,
-    `-modulate`: String = null,
-    `-moments`: String = null,
-    `-monitor`: String = null,
-    `-monochrome`: String = null,
-    `-morph`: String = null,
-    `-morphology`: String = null,
-    `-motion-blur`: String = null,
-    `-negate`: String = null,
-    `-noise`: String = null,
-    `-normalize`: String = null,
-    `-opaque`: String = null,
-    `-ordered-dither`: String = null,
-    `-orient`: String = null,
-    `-page`: String = null,
-    `-paint`: String = null,
-    `-perceptible`: String = null,
-    `-ping`: String = null,
-    `-pointsize`: String = null,
-    `-polaroid`: String = null,
-    `-poly`: String = null,
-    `-posterize`: String = null,
-    `-precision`: String = null,
-    `-preview`: String = null,
-    `-print`: String = null,
-    `-process`: String = null,
-    `-profile`: String = null,
-    `-quality`: String = null,
-    `-quantize`: String = null,
-    `-quiet`: String = null,
-    `-radial-blur`: String = null,
-    `-raise`: String = null,
-    `-random-threshold`: String = null,
-    `-range-threshold`: String = null,
-    `-read-mask`: String = null,
-    `-red-primary`: String = null,
-    `-regard-warnings`: String = null,
-    `-region`: String = null,
-    `-remap`: String = null,
-    `-render`: String = null,
-    `-repage`: String = null,
-    `-resample`: String = null,
-    `-resize`: String = null,
-    `-respect-parentheses`: String = null,
-    `-roll`: String = null,
-    `-rotate`: String = null,
-    `-sample`: String = null,
-    `-sampling-factor`: String = null,
-    `-scale`: String = null,
-    `-scene`: String = null,
-    `-seed`: String = null,
-    `-segment`: String = null,
-    `-selective-blur`: String = null,
-    `-separate`: String = null,
-    `-sepia-tone`: String = null,
-    `-set`: String = null,
-    `-shade`: String = null,
-    `-shadow`: String = null,
-    `-sharpen`: String = null,
-    `-shave`: String = null,
-    `-shear`: String = null,
-    `-sigmoidal-contrast`: String = null,
-    `-size`: String = null,
-    `-sketch`: String = null,
-    `-smush`: String = null,
-    `-solarize`: String = null,
-    `-splice`: String = null,
-    `-spread`: String = null,
-    `-statistic`: String = null,
-    `-stretch`: String = null,
-    `-strip`: String = null,
-    `-stroke`: String = null,
-    `-strokewidth`: String = null,
-    `-style`: String = null,
-    `-swap`: String = null,
-    `-swirl`: String = null,
-    `-synchronize`: String = null,
-    `-taint`: String = null,
-    `-texture`: String = null,
-    `-threshold`: String = null,
-    `-thumbnail`: String = null,
-    `-tile`: String = null,
-    `-tile-offset`: String = null,
-    `-tint`: String = null,
-    `-transform`: String = null,
-    `-transparent`: String = null,
-    `-transparent-color`: String = null,
-    `-transpose`: String = null,
-    `-transverse`: String = null,
-    `-treedepth`: String = null,
-    `-trim`: String = null,
-    `-type`: String = null,
-    `-undercolor`: String = null,
-    `-unique-colors`: String = null,
-    `-units`: String = null,
-    `-unsharp`: String = null,
-    `-verbose`: String = null,
-    `-version`: String = null,
-    `-view`: String = null,
-    `-vignette`: String = null,
-    `-virtual-pixel`: String = null,
-    `-wave`: String = null,
-    `-wavelet-denoise`: String = null,
-    `-weight`: String = null,
-    `-white-point`: String = null,
-    `-white-threshold`: String = null,
-    `-write`: String = null,
-    `-write-mask`: String = null
-  ): ConvertOptions = {
+  def apply(): ConvertOptions = {
     val __obj = js.Dynamic.literal()
-    if (`-adaptive-blur` != null) __obj.updateDynamic("-adaptive-blur")(`-adaptive-blur`.asInstanceOf[js.Any])
-    if (`-adaptive-resize` != null) __obj.updateDynamic("-adaptive-resize")(`-adaptive-resize`.asInstanceOf[js.Any])
-    if (`-adaptive-sharpen` != null) __obj.updateDynamic("-adaptive-sharpen")(`-adaptive-sharpen`.asInstanceOf[js.Any])
-    if (`-adjoin` != null) __obj.updateDynamic("-adjoin")(`-adjoin`.asInstanceOf[js.Any])
-    if (`-affine` != null) __obj.updateDynamic("-affine")(`-affine`.asInstanceOf[js.Any])
-    if (`-alpha` != null) __obj.updateDynamic("-alpha")(`-alpha`.asInstanceOf[js.Any])
-    if (`-annotate` != null) __obj.updateDynamic("-annotate")(`-annotate`.asInstanceOf[js.Any])
-    if (`-antialias` != null) __obj.updateDynamic("-antialias")(`-antialias`.asInstanceOf[js.Any])
-    if (`-append` != null) __obj.updateDynamic("-append")(`-append`.asInstanceOf[js.Any])
-    if (`-authenticate` != null) __obj.updateDynamic("-authenticate")(`-authenticate`.asInstanceOf[js.Any])
-    if (`-auto-gamma` != null) __obj.updateDynamic("-auto-gamma")(`-auto-gamma`.asInstanceOf[js.Any])
-    if (`-auto-level` != null) __obj.updateDynamic("-auto-level")(`-auto-level`.asInstanceOf[js.Any])
-    if (`-auto-orient` != null) __obj.updateDynamic("-auto-orient")(`-auto-orient`.asInstanceOf[js.Any])
-    if (`-auto-threshold` != null) __obj.updateDynamic("-auto-threshold")(`-auto-threshold`.asInstanceOf[js.Any])
-    if (`-background` != null) __obj.updateDynamic("-background")(`-background`.asInstanceOf[js.Any])
-    if (`-bench` != null) __obj.updateDynamic("-bench")(`-bench`.asInstanceOf[js.Any])
-    if (`-bias` != null) __obj.updateDynamic("-bias")(`-bias`.asInstanceOf[js.Any])
-    if (`-black-threshold` != null) __obj.updateDynamic("-black-threshold")(`-black-threshold`.asInstanceOf[js.Any])
-    if (`-blue-primary` != null) __obj.updateDynamic("-blue-primary")(`-blue-primary`.asInstanceOf[js.Any])
-    if (`-blue-shift` != null) __obj.updateDynamic("-blue-shift")(`-blue-shift`.asInstanceOf[js.Any])
-    if (`-blur` != null) __obj.updateDynamic("-blur")(`-blur`.asInstanceOf[js.Any])
-    if (`-border` != null) __obj.updateDynamic("-border")(`-border`.asInstanceOf[js.Any])
-    if (`-bordercolor` != null) __obj.updateDynamic("-bordercolor")(`-bordercolor`.asInstanceOf[js.Any])
-    if (`-brightness-contrast` != null) __obj.updateDynamic("-brightness-contrast")(`-brightness-contrast`.asInstanceOf[js.Any])
-    if (`-canny` != null) __obj.updateDynamic("-canny")(`-canny`.asInstanceOf[js.Any])
-    if (`-caption` != null) __obj.updateDynamic("-caption")(`-caption`.asInstanceOf[js.Any])
-    if (`-cdl` != null) __obj.updateDynamic("-cdl")(`-cdl`.asInstanceOf[js.Any])
-    if (`-channel` != null) __obj.updateDynamic("-channel")(`-channel`.asInstanceOf[js.Any])
-    if (`-charcoal` != null) __obj.updateDynamic("-charcoal")(`-charcoal`.asInstanceOf[js.Any])
-    if (`-chop` != null) __obj.updateDynamic("-chop")(`-chop`.asInstanceOf[js.Any])
-    if (`-clahe` != null) __obj.updateDynamic("-clahe")(`-clahe`.asInstanceOf[js.Any])
-    if (`-clamp` != null) __obj.updateDynamic("-clamp")(`-clamp`.asInstanceOf[js.Any])
-    if (`-clip` != null) __obj.updateDynamic("-clip")(`-clip`.asInstanceOf[js.Any])
-    if (`-clip-mask` != null) __obj.updateDynamic("-clip-mask")(`-clip-mask`.asInstanceOf[js.Any])
-    if (`-clip-path` != null) __obj.updateDynamic("-clip-path")(`-clip-path`.asInstanceOf[js.Any])
-    if (`-clone` != null) __obj.updateDynamic("-clone")(`-clone`.asInstanceOf[js.Any])
-    if (`-clut` != null) __obj.updateDynamic("-clut")(`-clut`.asInstanceOf[js.Any])
-    if (`-coalesce` != null) __obj.updateDynamic("-coalesce")(`-coalesce`.asInstanceOf[js.Any])
-    if (`-color-matrix` != null) __obj.updateDynamic("-color-matrix")(`-color-matrix`.asInstanceOf[js.Any])
-    if (`-colorize` != null) __obj.updateDynamic("-colorize")(`-colorize`.asInstanceOf[js.Any])
-    if (`-colors` != null) __obj.updateDynamic("-colors")(`-colors`.asInstanceOf[js.Any])
-    if (`-colorspace` != null) __obj.updateDynamic("-colorspace")(`-colorspace`.asInstanceOf[js.Any])
-    if (`-combine` != null) __obj.updateDynamic("-combine")(`-combine`.asInstanceOf[js.Any])
-    if (`-comment` != null) __obj.updateDynamic("-comment")(`-comment`.asInstanceOf[js.Any])
-    if (`-compare` != null) __obj.updateDynamic("-compare")(`-compare`.asInstanceOf[js.Any])
-    if (`-complexoperator` != null) __obj.updateDynamic("-complexoperator")(`-complexoperator`.asInstanceOf[js.Any])
-    if (`-compose` != null) __obj.updateDynamic("-compose")(`-compose`.asInstanceOf[js.Any])
-    if (`-composite` != null) __obj.updateDynamic("-composite")(`-composite`.asInstanceOf[js.Any])
-    if (`-compress` != null) __obj.updateDynamic("-compress")(`-compress`.asInstanceOf[js.Any])
-    if (`-connected-components` != null) __obj.updateDynamic("-connected-components")(`-connected-components`.asInstanceOf[js.Any])
-    if (`-contrast` != null) __obj.updateDynamic("-contrast")(`-contrast`.asInstanceOf[js.Any])
-    if (`-contrast-stretch` != null) __obj.updateDynamic("-contrast-stretch")(`-contrast-stretch`.asInstanceOf[js.Any])
-    if (`-convolve` != null) __obj.updateDynamic("-convolve")(`-convolve`.asInstanceOf[js.Any])
-    if (`-copy` != null) __obj.updateDynamic("-copy")(`-copy`.asInstanceOf[js.Any])
-    if (`-crop` != null) __obj.updateDynamic("-crop")(`-crop`.asInstanceOf[js.Any])
-    if (`-cycle` != null) __obj.updateDynamic("-cycle")(`-cycle`.asInstanceOf[js.Any])
-    if (`-debug` != null) __obj.updateDynamic("-debug")(`-debug`.asInstanceOf[js.Any])
-    if (`-decipher` != null) __obj.updateDynamic("-decipher")(`-decipher`.asInstanceOf[js.Any])
-    if (`-deconstruct` != null) __obj.updateDynamic("-deconstruct")(`-deconstruct`.asInstanceOf[js.Any])
-    if (`-define` != null) __obj.updateDynamic("-define")(`-define`.asInstanceOf[js.Any])
-    if (`-delay` != null) __obj.updateDynamic("-delay")(`-delay`.asInstanceOf[js.Any])
-    if (`-delete` != null) __obj.updateDynamic("-delete")(`-delete`.asInstanceOf[js.Any])
-    if (`-density` != null) __obj.updateDynamic("-density")(`-density`.asInstanceOf[js.Any])
-    if (`-depth` != null) __obj.updateDynamic("-depth")(`-depth`.asInstanceOf[js.Any])
-    if (`-despeckle` != null) __obj.updateDynamic("-despeckle")(`-despeckle`.asInstanceOf[js.Any])
-    if (`-direction` != null) __obj.updateDynamic("-direction")(`-direction`.asInstanceOf[js.Any])
-    if (`-display` != null) __obj.updateDynamic("-display")(`-display`.asInstanceOf[js.Any])
-    if (`-dispose` != null) __obj.updateDynamic("-dispose")(`-dispose`.asInstanceOf[js.Any])
-    if (`-distort` != null) __obj.updateDynamic("-distort")(`-distort`.asInstanceOf[js.Any])
-    if (`-distribute-cache` != null) __obj.updateDynamic("-distribute-cache")(`-distribute-cache`.asInstanceOf[js.Any])
-    if (`-dither` != null) __obj.updateDynamic("-dither")(`-dither`.asInstanceOf[js.Any])
-    if (`-draw` != null) __obj.updateDynamic("-draw")(`-draw`.asInstanceOf[js.Any])
-    if (`-duplicate` != null) __obj.updateDynamic("-duplicate")(`-duplicate`.asInstanceOf[js.Any])
-    if (`-edge` != null) __obj.updateDynamic("-edge")(`-edge`.asInstanceOf[js.Any])
-    if (`-emboss` != null) __obj.updateDynamic("-emboss")(`-emboss`.asInstanceOf[js.Any])
-    if (`-encipher` != null) __obj.updateDynamic("-encipher")(`-encipher`.asInstanceOf[js.Any])
-    if (`-encoding` != null) __obj.updateDynamic("-encoding")(`-encoding`.asInstanceOf[js.Any])
-    if (`-endian` != null) __obj.updateDynamic("-endian")(`-endian`.asInstanceOf[js.Any])
-    if (`-enhance` != null) __obj.updateDynamic("-enhance")(`-enhance`.asInstanceOf[js.Any])
-    if (`-equalize` != null) __obj.updateDynamic("-equalize")(`-equalize`.asInstanceOf[js.Any])
-    if (`-evaluate` != null) __obj.updateDynamic("-evaluate")(`-evaluate`.asInstanceOf[js.Any])
-    if (`-evaluate-sequence` != null) __obj.updateDynamic("-evaluate-sequence")(`-evaluate-sequence`.asInstanceOf[js.Any])
-    if (`-extent` != null) __obj.updateDynamic("-extent")(`-extent`.asInstanceOf[js.Any])
-    if (`-extract` != null) __obj.updateDynamic("-extract")(`-extract`.asInstanceOf[js.Any])
-    if (`-family` != null) __obj.updateDynamic("-family")(`-family`.asInstanceOf[js.Any])
-    if (`-features` != null) __obj.updateDynamic("-features")(`-features`.asInstanceOf[js.Any])
-    if (`-fft` != null) __obj.updateDynamic("-fft")(`-fft`.asInstanceOf[js.Any])
-    if (`-fill` != null) __obj.updateDynamic("-fill")(`-fill`.asInstanceOf[js.Any])
-    if (`-filter` != null) __obj.updateDynamic("-filter")(`-filter`.asInstanceOf[js.Any])
-    if (`-flatten` != null) __obj.updateDynamic("-flatten")(`-flatten`.asInstanceOf[js.Any])
-    if (`-flip` != null) __obj.updateDynamic("-flip")(`-flip`.asInstanceOf[js.Any])
-    if (`-floodfill` != null) __obj.updateDynamic("-floodfill")(`-floodfill`.asInstanceOf[js.Any])
-    if (`-flop` != null) __obj.updateDynamic("-flop")(`-flop`.asInstanceOf[js.Any])
-    if (`-font` != null) __obj.updateDynamic("-font")(`-font`.asInstanceOf[js.Any])
-    if (`-format` != null) __obj.updateDynamic("-format")(`-format`.asInstanceOf[js.Any])
-    if (`-frame` != null) __obj.updateDynamic("-frame")(`-frame`.asInstanceOf[js.Any])
-    if (`-function` != null) __obj.updateDynamic("-function")(`-function`.asInstanceOf[js.Any])
-    if (`-fuzz` != null) __obj.updateDynamic("-fuzz")(`-fuzz`.asInstanceOf[js.Any])
-    if (`-fx` != null) __obj.updateDynamic("-fx")(`-fx`.asInstanceOf[js.Any])
-    if (`-gamma` != null) __obj.updateDynamic("-gamma")(`-gamma`.asInstanceOf[js.Any])
-    if (`-gaussian-blur` != null) __obj.updateDynamic("-gaussian-blur")(`-gaussian-blur`.asInstanceOf[js.Any])
-    if (`-geometry` != null) __obj.updateDynamic("-geometry")(`-geometry`.asInstanceOf[js.Any])
-    if (`-gravity` != null) __obj.updateDynamic("-gravity")(`-gravity`.asInstanceOf[js.Any])
-    if (`-grayscale` != null) __obj.updateDynamic("-grayscale")(`-grayscale`.asInstanceOf[js.Any])
-    if (`-green-primary` != null) __obj.updateDynamic("-green-primary")(`-green-primary`.asInstanceOf[js.Any])
-    if (`-help` != null) __obj.updateDynamic("-help")(`-help`.asInstanceOf[js.Any])
-    if (`-hough-lines` != null) __obj.updateDynamic("-hough-lines")(`-hough-lines`.asInstanceOf[js.Any])
-    if (`-identify` != null) __obj.updateDynamic("-identify")(`-identify`.asInstanceOf[js.Any])
-    if (`-ift` != null) __obj.updateDynamic("-ift")(`-ift`.asInstanceOf[js.Any])
-    if (`-implode` != null) __obj.updateDynamic("-implode")(`-implode`.asInstanceOf[js.Any])
-    if (`-insert` != null) __obj.updateDynamic("-insert")(`-insert`.asInstanceOf[js.Any])
-    if (`-intensity` != null) __obj.updateDynamic("-intensity")(`-intensity`.asInstanceOf[js.Any])
-    if (`-intent` != null) __obj.updateDynamic("-intent")(`-intent`.asInstanceOf[js.Any])
-    if (`-interlace` != null) __obj.updateDynamic("-interlace")(`-interlace`.asInstanceOf[js.Any])
-    if (`-interline-spacing` != null) __obj.updateDynamic("-interline-spacing")(`-interline-spacing`.asInstanceOf[js.Any])
-    if (`-interpolate` != null) __obj.updateDynamic("-interpolate")(`-interpolate`.asInstanceOf[js.Any])
-    if (`-interword-spacing` != null) __obj.updateDynamic("-interword-spacing")(`-interword-spacing`.asInstanceOf[js.Any])
-    if (`-kerning` != null) __obj.updateDynamic("-kerning")(`-kerning`.asInstanceOf[js.Any])
-    if (`-kmeans` != null) __obj.updateDynamic("-kmeans")(`-kmeans`.asInstanceOf[js.Any])
-    if (`-kuwahara` != null) __obj.updateDynamic("-kuwahara")(`-kuwahara`.asInstanceOf[js.Any])
-    if (`-label` != null) __obj.updateDynamic("-label")(`-label`.asInstanceOf[js.Any])
-    if (`-lat` != null) __obj.updateDynamic("-lat")(`-lat`.asInstanceOf[js.Any])
-    if (`-layers` != null) __obj.updateDynamic("-layers")(`-layers`.asInstanceOf[js.Any])
-    if (`-level` != null) __obj.updateDynamic("-level")(`-level`.asInstanceOf[js.Any])
-    if (`-limit` != null) __obj.updateDynamic("-limit")(`-limit`.asInstanceOf[js.Any])
-    if (`-linear-stretch` != null) __obj.updateDynamic("-linear-stretch")(`-linear-stretch`.asInstanceOf[js.Any])
-    if (`-liquid-rescale` != null) __obj.updateDynamic("-liquid-rescale")(`-liquid-rescale`.asInstanceOf[js.Any])
-    if (`-list` != null) __obj.updateDynamic("-list")(`-list`.asInstanceOf[js.Any])
-    if (`-log` != null) __obj.updateDynamic("-log")(`-log`.asInstanceOf[js.Any])
-    if (`-loop` != null) __obj.updateDynamic("-loop")(`-loop`.asInstanceOf[js.Any])
-    if (`-mattecolor` != null) __obj.updateDynamic("-mattecolor")(`-mattecolor`.asInstanceOf[js.Any])
-    if (`-mean-shift` != null) __obj.updateDynamic("-mean-shift")(`-mean-shift`.asInstanceOf[js.Any])
-    if (`-median` != null) __obj.updateDynamic("-median")(`-median`.asInstanceOf[js.Any])
-    if (`-metric` != null) __obj.updateDynamic("-metric")(`-metric`.asInstanceOf[js.Any])
-    if (`-mode` != null) __obj.updateDynamic("-mode")(`-mode`.asInstanceOf[js.Any])
-    if (`-modulate` != null) __obj.updateDynamic("-modulate")(`-modulate`.asInstanceOf[js.Any])
-    if (`-moments` != null) __obj.updateDynamic("-moments")(`-moments`.asInstanceOf[js.Any])
-    if (`-monitor` != null) __obj.updateDynamic("-monitor")(`-monitor`.asInstanceOf[js.Any])
-    if (`-monochrome` != null) __obj.updateDynamic("-monochrome")(`-monochrome`.asInstanceOf[js.Any])
-    if (`-morph` != null) __obj.updateDynamic("-morph")(`-morph`.asInstanceOf[js.Any])
-    if (`-morphology` != null) __obj.updateDynamic("-morphology")(`-morphology`.asInstanceOf[js.Any])
-    if (`-motion-blur` != null) __obj.updateDynamic("-motion-blur")(`-motion-blur`.asInstanceOf[js.Any])
-    if (`-negate` != null) __obj.updateDynamic("-negate")(`-negate`.asInstanceOf[js.Any])
-    if (`-noise` != null) __obj.updateDynamic("-noise")(`-noise`.asInstanceOf[js.Any])
-    if (`-normalize` != null) __obj.updateDynamic("-normalize")(`-normalize`.asInstanceOf[js.Any])
-    if (`-opaque` != null) __obj.updateDynamic("-opaque")(`-opaque`.asInstanceOf[js.Any])
-    if (`-ordered-dither` != null) __obj.updateDynamic("-ordered-dither")(`-ordered-dither`.asInstanceOf[js.Any])
-    if (`-orient` != null) __obj.updateDynamic("-orient")(`-orient`.asInstanceOf[js.Any])
-    if (`-page` != null) __obj.updateDynamic("-page")(`-page`.asInstanceOf[js.Any])
-    if (`-paint` != null) __obj.updateDynamic("-paint")(`-paint`.asInstanceOf[js.Any])
-    if (`-perceptible` != null) __obj.updateDynamic("-perceptible")(`-perceptible`.asInstanceOf[js.Any])
-    if (`-ping` != null) __obj.updateDynamic("-ping")(`-ping`.asInstanceOf[js.Any])
-    if (`-pointsize` != null) __obj.updateDynamic("-pointsize")(`-pointsize`.asInstanceOf[js.Any])
-    if (`-polaroid` != null) __obj.updateDynamic("-polaroid")(`-polaroid`.asInstanceOf[js.Any])
-    if (`-poly` != null) __obj.updateDynamic("-poly")(`-poly`.asInstanceOf[js.Any])
-    if (`-posterize` != null) __obj.updateDynamic("-posterize")(`-posterize`.asInstanceOf[js.Any])
-    if (`-precision` != null) __obj.updateDynamic("-precision")(`-precision`.asInstanceOf[js.Any])
-    if (`-preview` != null) __obj.updateDynamic("-preview")(`-preview`.asInstanceOf[js.Any])
-    if (`-print` != null) __obj.updateDynamic("-print")(`-print`.asInstanceOf[js.Any])
-    if (`-process` != null) __obj.updateDynamic("-process")(`-process`.asInstanceOf[js.Any])
-    if (`-profile` != null) __obj.updateDynamic("-profile")(`-profile`.asInstanceOf[js.Any])
-    if (`-quality` != null) __obj.updateDynamic("-quality")(`-quality`.asInstanceOf[js.Any])
-    if (`-quantize` != null) __obj.updateDynamic("-quantize")(`-quantize`.asInstanceOf[js.Any])
-    if (`-quiet` != null) __obj.updateDynamic("-quiet")(`-quiet`.asInstanceOf[js.Any])
-    if (`-radial-blur` != null) __obj.updateDynamic("-radial-blur")(`-radial-blur`.asInstanceOf[js.Any])
-    if (`-raise` != null) __obj.updateDynamic("-raise")(`-raise`.asInstanceOf[js.Any])
-    if (`-random-threshold` != null) __obj.updateDynamic("-random-threshold")(`-random-threshold`.asInstanceOf[js.Any])
-    if (`-range-threshold` != null) __obj.updateDynamic("-range-threshold")(`-range-threshold`.asInstanceOf[js.Any])
-    if (`-read-mask` != null) __obj.updateDynamic("-read-mask")(`-read-mask`.asInstanceOf[js.Any])
-    if (`-red-primary` != null) __obj.updateDynamic("-red-primary")(`-red-primary`.asInstanceOf[js.Any])
-    if (`-regard-warnings` != null) __obj.updateDynamic("-regard-warnings")(`-regard-warnings`.asInstanceOf[js.Any])
-    if (`-region` != null) __obj.updateDynamic("-region")(`-region`.asInstanceOf[js.Any])
-    if (`-remap` != null) __obj.updateDynamic("-remap")(`-remap`.asInstanceOf[js.Any])
-    if (`-render` != null) __obj.updateDynamic("-render")(`-render`.asInstanceOf[js.Any])
-    if (`-repage` != null) __obj.updateDynamic("-repage")(`-repage`.asInstanceOf[js.Any])
-    if (`-resample` != null) __obj.updateDynamic("-resample")(`-resample`.asInstanceOf[js.Any])
-    if (`-resize` != null) __obj.updateDynamic("-resize")(`-resize`.asInstanceOf[js.Any])
-    if (`-respect-parentheses` != null) __obj.updateDynamic("-respect-parentheses")(`-respect-parentheses`.asInstanceOf[js.Any])
-    if (`-roll` != null) __obj.updateDynamic("-roll")(`-roll`.asInstanceOf[js.Any])
-    if (`-rotate` != null) __obj.updateDynamic("-rotate")(`-rotate`.asInstanceOf[js.Any])
-    if (`-sample` != null) __obj.updateDynamic("-sample")(`-sample`.asInstanceOf[js.Any])
-    if (`-sampling-factor` != null) __obj.updateDynamic("-sampling-factor")(`-sampling-factor`.asInstanceOf[js.Any])
-    if (`-scale` != null) __obj.updateDynamic("-scale")(`-scale`.asInstanceOf[js.Any])
-    if (`-scene` != null) __obj.updateDynamic("-scene")(`-scene`.asInstanceOf[js.Any])
-    if (`-seed` != null) __obj.updateDynamic("-seed")(`-seed`.asInstanceOf[js.Any])
-    if (`-segment` != null) __obj.updateDynamic("-segment")(`-segment`.asInstanceOf[js.Any])
-    if (`-selective-blur` != null) __obj.updateDynamic("-selective-blur")(`-selective-blur`.asInstanceOf[js.Any])
-    if (`-separate` != null) __obj.updateDynamic("-separate")(`-separate`.asInstanceOf[js.Any])
-    if (`-sepia-tone` != null) __obj.updateDynamic("-sepia-tone")(`-sepia-tone`.asInstanceOf[js.Any])
-    if (`-set` != null) __obj.updateDynamic("-set")(`-set`.asInstanceOf[js.Any])
-    if (`-shade` != null) __obj.updateDynamic("-shade")(`-shade`.asInstanceOf[js.Any])
-    if (`-shadow` != null) __obj.updateDynamic("-shadow")(`-shadow`.asInstanceOf[js.Any])
-    if (`-sharpen` != null) __obj.updateDynamic("-sharpen")(`-sharpen`.asInstanceOf[js.Any])
-    if (`-shave` != null) __obj.updateDynamic("-shave")(`-shave`.asInstanceOf[js.Any])
-    if (`-shear` != null) __obj.updateDynamic("-shear")(`-shear`.asInstanceOf[js.Any])
-    if (`-sigmoidal-contrast` != null) __obj.updateDynamic("-sigmoidal-contrast")(`-sigmoidal-contrast`.asInstanceOf[js.Any])
-    if (`-size` != null) __obj.updateDynamic("-size")(`-size`.asInstanceOf[js.Any])
-    if (`-sketch` != null) __obj.updateDynamic("-sketch")(`-sketch`.asInstanceOf[js.Any])
-    if (`-smush` != null) __obj.updateDynamic("-smush")(`-smush`.asInstanceOf[js.Any])
-    if (`-solarize` != null) __obj.updateDynamic("-solarize")(`-solarize`.asInstanceOf[js.Any])
-    if (`-splice` != null) __obj.updateDynamic("-splice")(`-splice`.asInstanceOf[js.Any])
-    if (`-spread` != null) __obj.updateDynamic("-spread")(`-spread`.asInstanceOf[js.Any])
-    if (`-statistic` != null) __obj.updateDynamic("-statistic")(`-statistic`.asInstanceOf[js.Any])
-    if (`-stretch` != null) __obj.updateDynamic("-stretch")(`-stretch`.asInstanceOf[js.Any])
-    if (`-strip` != null) __obj.updateDynamic("-strip")(`-strip`.asInstanceOf[js.Any])
-    if (`-stroke` != null) __obj.updateDynamic("-stroke")(`-stroke`.asInstanceOf[js.Any])
-    if (`-strokewidth` != null) __obj.updateDynamic("-strokewidth")(`-strokewidth`.asInstanceOf[js.Any])
-    if (`-style` != null) __obj.updateDynamic("-style")(`-style`.asInstanceOf[js.Any])
-    if (`-swap` != null) __obj.updateDynamic("-swap")(`-swap`.asInstanceOf[js.Any])
-    if (`-swirl` != null) __obj.updateDynamic("-swirl")(`-swirl`.asInstanceOf[js.Any])
-    if (`-synchronize` != null) __obj.updateDynamic("-synchronize")(`-synchronize`.asInstanceOf[js.Any])
-    if (`-taint` != null) __obj.updateDynamic("-taint")(`-taint`.asInstanceOf[js.Any])
-    if (`-texture` != null) __obj.updateDynamic("-texture")(`-texture`.asInstanceOf[js.Any])
-    if (`-threshold` != null) __obj.updateDynamic("-threshold")(`-threshold`.asInstanceOf[js.Any])
-    if (`-thumbnail` != null) __obj.updateDynamic("-thumbnail")(`-thumbnail`.asInstanceOf[js.Any])
-    if (`-tile` != null) __obj.updateDynamic("-tile")(`-tile`.asInstanceOf[js.Any])
-    if (`-tile-offset` != null) __obj.updateDynamic("-tile-offset")(`-tile-offset`.asInstanceOf[js.Any])
-    if (`-tint` != null) __obj.updateDynamic("-tint")(`-tint`.asInstanceOf[js.Any])
-    if (`-transform` != null) __obj.updateDynamic("-transform")(`-transform`.asInstanceOf[js.Any])
-    if (`-transparent` != null) __obj.updateDynamic("-transparent")(`-transparent`.asInstanceOf[js.Any])
-    if (`-transparent-color` != null) __obj.updateDynamic("-transparent-color")(`-transparent-color`.asInstanceOf[js.Any])
-    if (`-transpose` != null) __obj.updateDynamic("-transpose")(`-transpose`.asInstanceOf[js.Any])
-    if (`-transverse` != null) __obj.updateDynamic("-transverse")(`-transverse`.asInstanceOf[js.Any])
-    if (`-treedepth` != null) __obj.updateDynamic("-treedepth")(`-treedepth`.asInstanceOf[js.Any])
-    if (`-trim` != null) __obj.updateDynamic("-trim")(`-trim`.asInstanceOf[js.Any])
-    if (`-type` != null) __obj.updateDynamic("-type")(`-type`.asInstanceOf[js.Any])
-    if (`-undercolor` != null) __obj.updateDynamic("-undercolor")(`-undercolor`.asInstanceOf[js.Any])
-    if (`-unique-colors` != null) __obj.updateDynamic("-unique-colors")(`-unique-colors`.asInstanceOf[js.Any])
-    if (`-units` != null) __obj.updateDynamic("-units")(`-units`.asInstanceOf[js.Any])
-    if (`-unsharp` != null) __obj.updateDynamic("-unsharp")(`-unsharp`.asInstanceOf[js.Any])
-    if (`-verbose` != null) __obj.updateDynamic("-verbose")(`-verbose`.asInstanceOf[js.Any])
-    if (`-version` != null) __obj.updateDynamic("-version")(`-version`.asInstanceOf[js.Any])
-    if (`-view` != null) __obj.updateDynamic("-view")(`-view`.asInstanceOf[js.Any])
-    if (`-vignette` != null) __obj.updateDynamic("-vignette")(`-vignette`.asInstanceOf[js.Any])
-    if (`-virtual-pixel` != null) __obj.updateDynamic("-virtual-pixel")(`-virtual-pixel`.asInstanceOf[js.Any])
-    if (`-wave` != null) __obj.updateDynamic("-wave")(`-wave`.asInstanceOf[js.Any])
-    if (`-wavelet-denoise` != null) __obj.updateDynamic("-wavelet-denoise")(`-wavelet-denoise`.asInstanceOf[js.Any])
-    if (`-weight` != null) __obj.updateDynamic("-weight")(`-weight`.asInstanceOf[js.Any])
-    if (`-white-point` != null) __obj.updateDynamic("-white-point")(`-white-point`.asInstanceOf[js.Any])
-    if (`-white-threshold` != null) __obj.updateDynamic("-white-threshold")(`-white-threshold`.asInstanceOf[js.Any])
-    if (`-write` != null) __obj.updateDynamic("-write")(`-write`.asInstanceOf[js.Any])
-    if (`-write-mask` != null) __obj.updateDynamic("-write-mask")(`-write-mask`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvertOptions]
   }
+  @scala.inline
+  implicit class ConvertOptionsOps[Self <: ConvertOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `set-adaptive-blur`(value: String): Self = this.set("-adaptive-blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-adaptive-blur`: Self = this.set("-adaptive-blur", js.undefined)
+    @scala.inline
+    def `set-adaptive-resize`(value: String): Self = this.set("-adaptive-resize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-adaptive-resize`: Self = this.set("-adaptive-resize", js.undefined)
+    @scala.inline
+    def `set-adaptive-sharpen`(value: String): Self = this.set("-adaptive-sharpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-adaptive-sharpen`: Self = this.set("-adaptive-sharpen", js.undefined)
+    @scala.inline
+    def `set-adjoin`(value: String): Self = this.set("-adjoin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-adjoin`: Self = this.set("-adjoin", js.undefined)
+    @scala.inline
+    def `set-affine`(value: String): Self = this.set("-affine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-affine`: Self = this.set("-affine", js.undefined)
+    @scala.inline
+    def `set-alpha`(value: String): Self = this.set("-alpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-alpha`: Self = this.set("-alpha", js.undefined)
+    @scala.inline
+    def `set-annotate`(value: String): Self = this.set("-annotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-annotate`: Self = this.set("-annotate", js.undefined)
+    @scala.inline
+    def `set-antialias`(value: String): Self = this.set("-antialias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-antialias`: Self = this.set("-antialias", js.undefined)
+    @scala.inline
+    def `set-append`(value: String): Self = this.set("-append", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-append`: Self = this.set("-append", js.undefined)
+    @scala.inline
+    def `set-authenticate`(value: String): Self = this.set("-authenticate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-authenticate`: Self = this.set("-authenticate", js.undefined)
+    @scala.inline
+    def `set-auto-gamma`(value: String): Self = this.set("-auto-gamma", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-auto-gamma`: Self = this.set("-auto-gamma", js.undefined)
+    @scala.inline
+    def `set-auto-level`(value: String): Self = this.set("-auto-level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-auto-level`: Self = this.set("-auto-level", js.undefined)
+    @scala.inline
+    def `set-auto-orient`(value: String): Self = this.set("-auto-orient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-auto-orient`: Self = this.set("-auto-orient", js.undefined)
+    @scala.inline
+    def `set-auto-threshold`(value: String): Self = this.set("-auto-threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-auto-threshold`: Self = this.set("-auto-threshold", js.undefined)
+    @scala.inline
+    def `set-background`(value: String): Self = this.set("-background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-background`: Self = this.set("-background", js.undefined)
+    @scala.inline
+    def `set-bench`(value: String): Self = this.set("-bench", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-bench`: Self = this.set("-bench", js.undefined)
+    @scala.inline
+    def `set-bias`(value: String): Self = this.set("-bias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-bias`: Self = this.set("-bias", js.undefined)
+    @scala.inline
+    def `set-black-threshold`(value: String): Self = this.set("-black-threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-black-threshold`: Self = this.set("-black-threshold", js.undefined)
+    @scala.inline
+    def `set-blue-primary`(value: String): Self = this.set("-blue-primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-blue-primary`: Self = this.set("-blue-primary", js.undefined)
+    @scala.inline
+    def `set-blue-shift`(value: String): Self = this.set("-blue-shift", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-blue-shift`: Self = this.set("-blue-shift", js.undefined)
+    @scala.inline
+    def `set-blur`(value: String): Self = this.set("-blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-blur`: Self = this.set("-blur", js.undefined)
+    @scala.inline
+    def `set-border`(value: String): Self = this.set("-border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-border`: Self = this.set("-border", js.undefined)
+    @scala.inline
+    def `set-bordercolor`(value: String): Self = this.set("-bordercolor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-bordercolor`: Self = this.set("-bordercolor", js.undefined)
+    @scala.inline
+    def `set-brightness-contrast`(value: String): Self = this.set("-brightness-contrast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-brightness-contrast`: Self = this.set("-brightness-contrast", js.undefined)
+    @scala.inline
+    def `set-canny`(value: String): Self = this.set("-canny", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-canny`: Self = this.set("-canny", js.undefined)
+    @scala.inline
+    def `set-caption`(value: String): Self = this.set("-caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-caption`: Self = this.set("-caption", js.undefined)
+    @scala.inline
+    def `set-cdl`(value: String): Self = this.set("-cdl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-cdl`: Self = this.set("-cdl", js.undefined)
+    @scala.inline
+    def `set-channel`(value: String): Self = this.set("-channel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-channel`: Self = this.set("-channel", js.undefined)
+    @scala.inline
+    def `set-charcoal`(value: String): Self = this.set("-charcoal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-charcoal`: Self = this.set("-charcoal", js.undefined)
+    @scala.inline
+    def `set-chop`(value: String): Self = this.set("-chop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-chop`: Self = this.set("-chop", js.undefined)
+    @scala.inline
+    def `set-clahe`(value: String): Self = this.set("-clahe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-clahe`: Self = this.set("-clahe", js.undefined)
+    @scala.inline
+    def `set-clamp`(value: String): Self = this.set("-clamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-clamp`: Self = this.set("-clamp", js.undefined)
+    @scala.inline
+    def `set-clip`(value: String): Self = this.set("-clip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-clip`: Self = this.set("-clip", js.undefined)
+    @scala.inline
+    def `set-clip-mask`(value: String): Self = this.set("-clip-mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-clip-mask`: Self = this.set("-clip-mask", js.undefined)
+    @scala.inline
+    def `set-clip-path`(value: String): Self = this.set("-clip-path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-clip-path`: Self = this.set("-clip-path", js.undefined)
+    @scala.inline
+    def `set-clone`(value: String): Self = this.set("-clone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-clone`: Self = this.set("-clone", js.undefined)
+    @scala.inline
+    def `set-clut`(value: String): Self = this.set("-clut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-clut`: Self = this.set("-clut", js.undefined)
+    @scala.inline
+    def `set-coalesce`(value: String): Self = this.set("-coalesce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-coalesce`: Self = this.set("-coalesce", js.undefined)
+    @scala.inline
+    def `set-color-matrix`(value: String): Self = this.set("-color-matrix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-color-matrix`: Self = this.set("-color-matrix", js.undefined)
+    @scala.inline
+    def `set-colorize`(value: String): Self = this.set("-colorize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-colorize`: Self = this.set("-colorize", js.undefined)
+    @scala.inline
+    def `set-colors`(value: String): Self = this.set("-colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-colors`: Self = this.set("-colors", js.undefined)
+    @scala.inline
+    def `set-colorspace`(value: String): Self = this.set("-colorspace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-colorspace`: Self = this.set("-colorspace", js.undefined)
+    @scala.inline
+    def `set-combine`(value: String): Self = this.set("-combine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-combine`: Self = this.set("-combine", js.undefined)
+    @scala.inline
+    def `set-comment`(value: String): Self = this.set("-comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-comment`: Self = this.set("-comment", js.undefined)
+    @scala.inline
+    def `set-compare`(value: String): Self = this.set("-compare", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-compare`: Self = this.set("-compare", js.undefined)
+    @scala.inline
+    def `set-complexoperator`(value: String): Self = this.set("-complexoperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-complexoperator`: Self = this.set("-complexoperator", js.undefined)
+    @scala.inline
+    def `set-compose`(value: String): Self = this.set("-compose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-compose`: Self = this.set("-compose", js.undefined)
+    @scala.inline
+    def `set-composite`(value: String): Self = this.set("-composite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-composite`: Self = this.set("-composite", js.undefined)
+    @scala.inline
+    def `set-compress`(value: String): Self = this.set("-compress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-compress`: Self = this.set("-compress", js.undefined)
+    @scala.inline
+    def `set-connected-components`(value: String): Self = this.set("-connected-components", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-connected-components`: Self = this.set("-connected-components", js.undefined)
+    @scala.inline
+    def `set-contrast`(value: String): Self = this.set("-contrast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-contrast`: Self = this.set("-contrast", js.undefined)
+    @scala.inline
+    def `set-contrast-stretch`(value: String): Self = this.set("-contrast-stretch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-contrast-stretch`: Self = this.set("-contrast-stretch", js.undefined)
+    @scala.inline
+    def `set-convolve`(value: String): Self = this.set("-convolve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-convolve`: Self = this.set("-convolve", js.undefined)
+    @scala.inline
+    def `set-copy`(value: String): Self = this.set("-copy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-copy`: Self = this.set("-copy", js.undefined)
+    @scala.inline
+    def `set-crop`(value: String): Self = this.set("-crop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-crop`: Self = this.set("-crop", js.undefined)
+    @scala.inline
+    def `set-cycle`(value: String): Self = this.set("-cycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-cycle`: Self = this.set("-cycle", js.undefined)
+    @scala.inline
+    def `set-debug`(value: String): Self = this.set("-debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-debug`: Self = this.set("-debug", js.undefined)
+    @scala.inline
+    def `set-decipher`(value: String): Self = this.set("-decipher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-decipher`: Self = this.set("-decipher", js.undefined)
+    @scala.inline
+    def `set-deconstruct`(value: String): Self = this.set("-deconstruct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-deconstruct`: Self = this.set("-deconstruct", js.undefined)
+    @scala.inline
+    def `set-define`(value: String): Self = this.set("-define", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-define`: Self = this.set("-define", js.undefined)
+    @scala.inline
+    def `set-delay`(value: String): Self = this.set("-delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-delay`: Self = this.set("-delay", js.undefined)
+    @scala.inline
+    def `set-delete`(value: String): Self = this.set("-delete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-delete`: Self = this.set("-delete", js.undefined)
+    @scala.inline
+    def `set-density`(value: String): Self = this.set("-density", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-density`: Self = this.set("-density", js.undefined)
+    @scala.inline
+    def `set-depth`(value: String): Self = this.set("-depth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-depth`: Self = this.set("-depth", js.undefined)
+    @scala.inline
+    def `set-despeckle`(value: String): Self = this.set("-despeckle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-despeckle`: Self = this.set("-despeckle", js.undefined)
+    @scala.inline
+    def `set-direction`(value: String): Self = this.set("-direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-direction`: Self = this.set("-direction", js.undefined)
+    @scala.inline
+    def `set-display`(value: String): Self = this.set("-display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-display`: Self = this.set("-display", js.undefined)
+    @scala.inline
+    def `set-dispose`(value: String): Self = this.set("-dispose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-dispose`: Self = this.set("-dispose", js.undefined)
+    @scala.inline
+    def `set-distort`(value: String): Self = this.set("-distort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-distort`: Self = this.set("-distort", js.undefined)
+    @scala.inline
+    def `set-distribute-cache`(value: String): Self = this.set("-distribute-cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-distribute-cache`: Self = this.set("-distribute-cache", js.undefined)
+    @scala.inline
+    def `set-dither`(value: String): Self = this.set("-dither", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-dither`: Self = this.set("-dither", js.undefined)
+    @scala.inline
+    def `set-draw`(value: String): Self = this.set("-draw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-draw`: Self = this.set("-draw", js.undefined)
+    @scala.inline
+    def `set-duplicate`(value: String): Self = this.set("-duplicate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-duplicate`: Self = this.set("-duplicate", js.undefined)
+    @scala.inline
+    def `set-edge`(value: String): Self = this.set("-edge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-edge`: Self = this.set("-edge", js.undefined)
+    @scala.inline
+    def `set-emboss`(value: String): Self = this.set("-emboss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-emboss`: Self = this.set("-emboss", js.undefined)
+    @scala.inline
+    def `set-encipher`(value: String): Self = this.set("-encipher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-encipher`: Self = this.set("-encipher", js.undefined)
+    @scala.inline
+    def `set-encoding`(value: String): Self = this.set("-encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-encoding`: Self = this.set("-encoding", js.undefined)
+    @scala.inline
+    def `set-endian`(value: String): Self = this.set("-endian", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-endian`: Self = this.set("-endian", js.undefined)
+    @scala.inline
+    def `set-enhance`(value: String): Self = this.set("-enhance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-enhance`: Self = this.set("-enhance", js.undefined)
+    @scala.inline
+    def `set-equalize`(value: String): Self = this.set("-equalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-equalize`: Self = this.set("-equalize", js.undefined)
+    @scala.inline
+    def `set-evaluate`(value: String): Self = this.set("-evaluate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-evaluate`: Self = this.set("-evaluate", js.undefined)
+    @scala.inline
+    def `set-evaluate-sequence`(value: String): Self = this.set("-evaluate-sequence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-evaluate-sequence`: Self = this.set("-evaluate-sequence", js.undefined)
+    @scala.inline
+    def `set-extent`(value: String): Self = this.set("-extent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-extent`: Self = this.set("-extent", js.undefined)
+    @scala.inline
+    def `set-extract`(value: String): Self = this.set("-extract", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-extract`: Self = this.set("-extract", js.undefined)
+    @scala.inline
+    def `set-family`(value: String): Self = this.set("-family", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-family`: Self = this.set("-family", js.undefined)
+    @scala.inline
+    def `set-features`(value: String): Self = this.set("-features", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-features`: Self = this.set("-features", js.undefined)
+    @scala.inline
+    def `set-fft`(value: String): Self = this.set("-fft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-fft`: Self = this.set("-fft", js.undefined)
+    @scala.inline
+    def `set-fill`(value: String): Self = this.set("-fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-fill`: Self = this.set("-fill", js.undefined)
+    @scala.inline
+    def `set-filter`(value: String): Self = this.set("-filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-filter`: Self = this.set("-filter", js.undefined)
+    @scala.inline
+    def `set-flatten`(value: String): Self = this.set("-flatten", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-flatten`: Self = this.set("-flatten", js.undefined)
+    @scala.inline
+    def `set-flip`(value: String): Self = this.set("-flip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-flip`: Self = this.set("-flip", js.undefined)
+    @scala.inline
+    def `set-floodfill`(value: String): Self = this.set("-floodfill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-floodfill`: Self = this.set("-floodfill", js.undefined)
+    @scala.inline
+    def `set-flop`(value: String): Self = this.set("-flop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-flop`: Self = this.set("-flop", js.undefined)
+    @scala.inline
+    def `set-font`(value: String): Self = this.set("-font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-font`: Self = this.set("-font", js.undefined)
+    @scala.inline
+    def `set-format`(value: String): Self = this.set("-format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-format`: Self = this.set("-format", js.undefined)
+    @scala.inline
+    def `set-frame`(value: String): Self = this.set("-frame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-frame`: Self = this.set("-frame", js.undefined)
+    @scala.inline
+    def `set-function`(value: String): Self = this.set("-function", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-function`: Self = this.set("-function", js.undefined)
+    @scala.inline
+    def `set-fuzz`(value: String): Self = this.set("-fuzz", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-fuzz`: Self = this.set("-fuzz", js.undefined)
+    @scala.inline
+    def `set-fx`(value: String): Self = this.set("-fx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-fx`: Self = this.set("-fx", js.undefined)
+    @scala.inline
+    def `set-gamma`(value: String): Self = this.set("-gamma", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-gamma`: Self = this.set("-gamma", js.undefined)
+    @scala.inline
+    def `set-gaussian-blur`(value: String): Self = this.set("-gaussian-blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-gaussian-blur`: Self = this.set("-gaussian-blur", js.undefined)
+    @scala.inline
+    def `set-geometry`(value: String): Self = this.set("-geometry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-geometry`: Self = this.set("-geometry", js.undefined)
+    @scala.inline
+    def `set-gravity`(value: String): Self = this.set("-gravity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-gravity`: Self = this.set("-gravity", js.undefined)
+    @scala.inline
+    def `set-grayscale`(value: String): Self = this.set("-grayscale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-grayscale`: Self = this.set("-grayscale", js.undefined)
+    @scala.inline
+    def `set-green-primary`(value: String): Self = this.set("-green-primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-green-primary`: Self = this.set("-green-primary", js.undefined)
+    @scala.inline
+    def `set-help`(value: String): Self = this.set("-help", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-help`: Self = this.set("-help", js.undefined)
+    @scala.inline
+    def `set-hough-lines`(value: String): Self = this.set("-hough-lines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-hough-lines`: Self = this.set("-hough-lines", js.undefined)
+    @scala.inline
+    def `set-identify`(value: String): Self = this.set("-identify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-identify`: Self = this.set("-identify", js.undefined)
+    @scala.inline
+    def `set-ift`(value: String): Self = this.set("-ift", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-ift`: Self = this.set("-ift", js.undefined)
+    @scala.inline
+    def `set-implode`(value: String): Self = this.set("-implode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-implode`: Self = this.set("-implode", js.undefined)
+    @scala.inline
+    def `set-insert`(value: String): Self = this.set("-insert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-insert`: Self = this.set("-insert", js.undefined)
+    @scala.inline
+    def `set-intensity`(value: String): Self = this.set("-intensity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-intensity`: Self = this.set("-intensity", js.undefined)
+    @scala.inline
+    def `set-intent`(value: String): Self = this.set("-intent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-intent`: Self = this.set("-intent", js.undefined)
+    @scala.inline
+    def `set-interlace`(value: String): Self = this.set("-interlace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-interlace`: Self = this.set("-interlace", js.undefined)
+    @scala.inline
+    def `set-interline-spacing`(value: String): Self = this.set("-interline-spacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-interline-spacing`: Self = this.set("-interline-spacing", js.undefined)
+    @scala.inline
+    def `set-interpolate`(value: String): Self = this.set("-interpolate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-interpolate`: Self = this.set("-interpolate", js.undefined)
+    @scala.inline
+    def `set-interword-spacing`(value: String): Self = this.set("-interword-spacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-interword-spacing`: Self = this.set("-interword-spacing", js.undefined)
+    @scala.inline
+    def `set-kerning`(value: String): Self = this.set("-kerning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-kerning`: Self = this.set("-kerning", js.undefined)
+    @scala.inline
+    def `set-kmeans`(value: String): Self = this.set("-kmeans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-kmeans`: Self = this.set("-kmeans", js.undefined)
+    @scala.inline
+    def `set-kuwahara`(value: String): Self = this.set("-kuwahara", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-kuwahara`: Self = this.set("-kuwahara", js.undefined)
+    @scala.inline
+    def `set-label`(value: String): Self = this.set("-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-label`: Self = this.set("-label", js.undefined)
+    @scala.inline
+    def `set-lat`(value: String): Self = this.set("-lat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-lat`: Self = this.set("-lat", js.undefined)
+    @scala.inline
+    def `set-layers`(value: String): Self = this.set("-layers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-layers`: Self = this.set("-layers", js.undefined)
+    @scala.inline
+    def `set-level`(value: String): Self = this.set("-level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-level`: Self = this.set("-level", js.undefined)
+    @scala.inline
+    def `set-limit`(value: String): Self = this.set("-limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-limit`: Self = this.set("-limit", js.undefined)
+    @scala.inline
+    def `set-linear-stretch`(value: String): Self = this.set("-linear-stretch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-linear-stretch`: Self = this.set("-linear-stretch", js.undefined)
+    @scala.inline
+    def `set-liquid-rescale`(value: String): Self = this.set("-liquid-rescale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-liquid-rescale`: Self = this.set("-liquid-rescale", js.undefined)
+    @scala.inline
+    def `set-list`(value: String): Self = this.set("-list", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-list`: Self = this.set("-list", js.undefined)
+    @scala.inline
+    def `set-log`(value: String): Self = this.set("-log", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-log`: Self = this.set("-log", js.undefined)
+    @scala.inline
+    def `set-loop`(value: String): Self = this.set("-loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-loop`: Self = this.set("-loop", js.undefined)
+    @scala.inline
+    def `set-mattecolor`(value: String): Self = this.set("-mattecolor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-mattecolor`: Self = this.set("-mattecolor", js.undefined)
+    @scala.inline
+    def `set-mean-shift`(value: String): Self = this.set("-mean-shift", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-mean-shift`: Self = this.set("-mean-shift", js.undefined)
+    @scala.inline
+    def `set-median`(value: String): Self = this.set("-median", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-median`: Self = this.set("-median", js.undefined)
+    @scala.inline
+    def `set-metric`(value: String): Self = this.set("-metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-metric`: Self = this.set("-metric", js.undefined)
+    @scala.inline
+    def `set-mode`(value: String): Self = this.set("-mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-mode`: Self = this.set("-mode", js.undefined)
+    @scala.inline
+    def `set-modulate`(value: String): Self = this.set("-modulate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-modulate`: Self = this.set("-modulate", js.undefined)
+    @scala.inline
+    def `set-moments`(value: String): Self = this.set("-moments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moments`: Self = this.set("-moments", js.undefined)
+    @scala.inline
+    def `set-monitor`(value: String): Self = this.set("-monitor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-monitor`: Self = this.set("-monitor", js.undefined)
+    @scala.inline
+    def `set-monochrome`(value: String): Self = this.set("-monochrome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-monochrome`: Self = this.set("-monochrome", js.undefined)
+    @scala.inline
+    def `set-morph`(value: String): Self = this.set("-morph", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-morph`: Self = this.set("-morph", js.undefined)
+    @scala.inline
+    def `set-morphology`(value: String): Self = this.set("-morphology", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-morphology`: Self = this.set("-morphology", js.undefined)
+    @scala.inline
+    def `set-motion-blur`(value: String): Self = this.set("-motion-blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-motion-blur`: Self = this.set("-motion-blur", js.undefined)
+    @scala.inline
+    def `set-negate`(value: String): Self = this.set("-negate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-negate`: Self = this.set("-negate", js.undefined)
+    @scala.inline
+    def `set-noise`(value: String): Self = this.set("-noise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-noise`: Self = this.set("-noise", js.undefined)
+    @scala.inline
+    def `set-normalize`(value: String): Self = this.set("-normalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-normalize`: Self = this.set("-normalize", js.undefined)
+    @scala.inline
+    def `set-opaque`(value: String): Self = this.set("-opaque", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-opaque`: Self = this.set("-opaque", js.undefined)
+    @scala.inline
+    def `set-ordered-dither`(value: String): Self = this.set("-ordered-dither", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-ordered-dither`: Self = this.set("-ordered-dither", js.undefined)
+    @scala.inline
+    def `set-orient`(value: String): Self = this.set("-orient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-orient`: Self = this.set("-orient", js.undefined)
+    @scala.inline
+    def `set-page`(value: String): Self = this.set("-page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-page`: Self = this.set("-page", js.undefined)
+    @scala.inline
+    def `set-paint`(value: String): Self = this.set("-paint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-paint`: Self = this.set("-paint", js.undefined)
+    @scala.inline
+    def `set-perceptible`(value: String): Self = this.set("-perceptible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-perceptible`: Self = this.set("-perceptible", js.undefined)
+    @scala.inline
+    def `set-ping`(value: String): Self = this.set("-ping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-ping`: Self = this.set("-ping", js.undefined)
+    @scala.inline
+    def `set-pointsize`(value: String): Self = this.set("-pointsize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-pointsize`: Self = this.set("-pointsize", js.undefined)
+    @scala.inline
+    def `set-polaroid`(value: String): Self = this.set("-polaroid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-polaroid`: Self = this.set("-polaroid", js.undefined)
+    @scala.inline
+    def `set-poly`(value: String): Self = this.set("-poly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-poly`: Self = this.set("-poly", js.undefined)
+    @scala.inline
+    def `set-posterize`(value: String): Self = this.set("-posterize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-posterize`: Self = this.set("-posterize", js.undefined)
+    @scala.inline
+    def `set-precision`(value: String): Self = this.set("-precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-precision`: Self = this.set("-precision", js.undefined)
+    @scala.inline
+    def `set-preview`(value: String): Self = this.set("-preview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-preview`: Self = this.set("-preview", js.undefined)
+    @scala.inline
+    def `set-print`(value: String): Self = this.set("-print", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-print`: Self = this.set("-print", js.undefined)
+    @scala.inline
+    def `set-process`(value: String): Self = this.set("-process", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-process`: Self = this.set("-process", js.undefined)
+    @scala.inline
+    def `set-profile`(value: String): Self = this.set("-profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-profile`: Self = this.set("-profile", js.undefined)
+    @scala.inline
+    def `set-quality`(value: String): Self = this.set("-quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-quality`: Self = this.set("-quality", js.undefined)
+    @scala.inline
+    def `set-quantize`(value: String): Self = this.set("-quantize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-quantize`: Self = this.set("-quantize", js.undefined)
+    @scala.inline
+    def `set-quiet`(value: String): Self = this.set("-quiet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-quiet`: Self = this.set("-quiet", js.undefined)
+    @scala.inline
+    def `set-radial-blur`(value: String): Self = this.set("-radial-blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-radial-blur`: Self = this.set("-radial-blur", js.undefined)
+    @scala.inline
+    def `set-raise`(value: String): Self = this.set("-raise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-raise`: Self = this.set("-raise", js.undefined)
+    @scala.inline
+    def `set-random-threshold`(value: String): Self = this.set("-random-threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-random-threshold`: Self = this.set("-random-threshold", js.undefined)
+    @scala.inline
+    def `set-range-threshold`(value: String): Self = this.set("-range-threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-range-threshold`: Self = this.set("-range-threshold", js.undefined)
+    @scala.inline
+    def `set-read-mask`(value: String): Self = this.set("-read-mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-read-mask`: Self = this.set("-read-mask", js.undefined)
+    @scala.inline
+    def `set-red-primary`(value: String): Self = this.set("-red-primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-red-primary`: Self = this.set("-red-primary", js.undefined)
+    @scala.inline
+    def `set-regard-warnings`(value: String): Self = this.set("-regard-warnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-regard-warnings`: Self = this.set("-regard-warnings", js.undefined)
+    @scala.inline
+    def `set-region`(value: String): Self = this.set("-region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-region`: Self = this.set("-region", js.undefined)
+    @scala.inline
+    def `set-remap`(value: String): Self = this.set("-remap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-remap`: Self = this.set("-remap", js.undefined)
+    @scala.inline
+    def `set-render`(value: String): Self = this.set("-render", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-render`: Self = this.set("-render", js.undefined)
+    @scala.inline
+    def `set-repage`(value: String): Self = this.set("-repage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-repage`: Self = this.set("-repage", js.undefined)
+    @scala.inline
+    def `set-resample`(value: String): Self = this.set("-resample", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-resample`: Self = this.set("-resample", js.undefined)
+    @scala.inline
+    def `set-resize`(value: String): Self = this.set("-resize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-resize`: Self = this.set("-resize", js.undefined)
+    @scala.inline
+    def `set-respect-parentheses`(value: String): Self = this.set("-respect-parentheses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-respect-parentheses`: Self = this.set("-respect-parentheses", js.undefined)
+    @scala.inline
+    def `set-roll`(value: String): Self = this.set("-roll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-roll`: Self = this.set("-roll", js.undefined)
+    @scala.inline
+    def `set-rotate`(value: String): Self = this.set("-rotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-rotate`: Self = this.set("-rotate", js.undefined)
+    @scala.inline
+    def `set-sample`(value: String): Self = this.set("-sample", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-sample`: Self = this.set("-sample", js.undefined)
+    @scala.inline
+    def `set-sampling-factor`(value: String): Self = this.set("-sampling-factor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-sampling-factor`: Self = this.set("-sampling-factor", js.undefined)
+    @scala.inline
+    def `set-scale`(value: String): Self = this.set("-scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-scale`: Self = this.set("-scale", js.undefined)
+    @scala.inline
+    def `set-scene`(value: String): Self = this.set("-scene", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-scene`: Self = this.set("-scene", js.undefined)
+    @scala.inline
+    def `set-seed`(value: String): Self = this.set("-seed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-seed`: Self = this.set("-seed", js.undefined)
+    @scala.inline
+    def `set-segment`(value: String): Self = this.set("-segment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-segment`: Self = this.set("-segment", js.undefined)
+    @scala.inline
+    def `set-selective-blur`(value: String): Self = this.set("-selective-blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-selective-blur`: Self = this.set("-selective-blur", js.undefined)
+    @scala.inline
+    def `set-separate`(value: String): Self = this.set("-separate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-separate`: Self = this.set("-separate", js.undefined)
+    @scala.inline
+    def `set-sepia-tone`(value: String): Self = this.set("-sepia-tone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-sepia-tone`: Self = this.set("-sepia-tone", js.undefined)
+    @scala.inline
+    def `set-set`(value: String): Self = this.set("-set", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-set`: Self = this.set("-set", js.undefined)
+    @scala.inline
+    def `set-shade`(value: String): Self = this.set("-shade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-shade`: Self = this.set("-shade", js.undefined)
+    @scala.inline
+    def `set-shadow`(value: String): Self = this.set("-shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-shadow`: Self = this.set("-shadow", js.undefined)
+    @scala.inline
+    def `set-sharpen`(value: String): Self = this.set("-sharpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-sharpen`: Self = this.set("-sharpen", js.undefined)
+    @scala.inline
+    def `set-shave`(value: String): Self = this.set("-shave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-shave`: Self = this.set("-shave", js.undefined)
+    @scala.inline
+    def `set-shear`(value: String): Self = this.set("-shear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-shear`: Self = this.set("-shear", js.undefined)
+    @scala.inline
+    def `set-sigmoidal-contrast`(value: String): Self = this.set("-sigmoidal-contrast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-sigmoidal-contrast`: Self = this.set("-sigmoidal-contrast", js.undefined)
+    @scala.inline
+    def `set-size`(value: String): Self = this.set("-size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-size`: Self = this.set("-size", js.undefined)
+    @scala.inline
+    def `set-sketch`(value: String): Self = this.set("-sketch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-sketch`: Self = this.set("-sketch", js.undefined)
+    @scala.inline
+    def `set-smush`(value: String): Self = this.set("-smush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-smush`: Self = this.set("-smush", js.undefined)
+    @scala.inline
+    def `set-solarize`(value: String): Self = this.set("-solarize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-solarize`: Self = this.set("-solarize", js.undefined)
+    @scala.inline
+    def `set-splice`(value: String): Self = this.set("-splice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-splice`: Self = this.set("-splice", js.undefined)
+    @scala.inline
+    def `set-spread`(value: String): Self = this.set("-spread", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-spread`: Self = this.set("-spread", js.undefined)
+    @scala.inline
+    def `set-statistic`(value: String): Self = this.set("-statistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-statistic`: Self = this.set("-statistic", js.undefined)
+    @scala.inline
+    def `set-stretch`(value: String): Self = this.set("-stretch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-stretch`: Self = this.set("-stretch", js.undefined)
+    @scala.inline
+    def `set-strip`(value: String): Self = this.set("-strip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-strip`: Self = this.set("-strip", js.undefined)
+    @scala.inline
+    def `set-stroke`(value: String): Self = this.set("-stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-stroke`: Self = this.set("-stroke", js.undefined)
+    @scala.inline
+    def `set-strokewidth`(value: String): Self = this.set("-strokewidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-strokewidth`: Self = this.set("-strokewidth", js.undefined)
+    @scala.inline
+    def `set-style`(value: String): Self = this.set("-style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-style`: Self = this.set("-style", js.undefined)
+    @scala.inline
+    def `set-swap`(value: String): Self = this.set("-swap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-swap`: Self = this.set("-swap", js.undefined)
+    @scala.inline
+    def `set-swirl`(value: String): Self = this.set("-swirl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-swirl`: Self = this.set("-swirl", js.undefined)
+    @scala.inline
+    def `set-synchronize`(value: String): Self = this.set("-synchronize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-synchronize`: Self = this.set("-synchronize", js.undefined)
+    @scala.inline
+    def `set-taint`(value: String): Self = this.set("-taint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-taint`: Self = this.set("-taint", js.undefined)
+    @scala.inline
+    def `set-texture`(value: String): Self = this.set("-texture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-texture`: Self = this.set("-texture", js.undefined)
+    @scala.inline
+    def `set-threshold`(value: String): Self = this.set("-threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-threshold`: Self = this.set("-threshold", js.undefined)
+    @scala.inline
+    def `set-thumbnail`(value: String): Self = this.set("-thumbnail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-thumbnail`: Self = this.set("-thumbnail", js.undefined)
+    @scala.inline
+    def `set-tile`(value: String): Self = this.set("-tile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-tile`: Self = this.set("-tile", js.undefined)
+    @scala.inline
+    def `set-tile-offset`(value: String): Self = this.set("-tile-offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-tile-offset`: Self = this.set("-tile-offset", js.undefined)
+    @scala.inline
+    def `set-tint`(value: String): Self = this.set("-tint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-tint`: Self = this.set("-tint", js.undefined)
+    @scala.inline
+    def `set-transform`(value: String): Self = this.set("-transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-transform`: Self = this.set("-transform", js.undefined)
+    @scala.inline
+    def `set-transparent`(value: String): Self = this.set("-transparent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-transparent`: Self = this.set("-transparent", js.undefined)
+    @scala.inline
+    def `set-transparent-color`(value: String): Self = this.set("-transparent-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-transparent-color`: Self = this.set("-transparent-color", js.undefined)
+    @scala.inline
+    def `set-transpose`(value: String): Self = this.set("-transpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-transpose`: Self = this.set("-transpose", js.undefined)
+    @scala.inline
+    def `set-transverse`(value: String): Self = this.set("-transverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-transverse`: Self = this.set("-transverse", js.undefined)
+    @scala.inline
+    def `set-treedepth`(value: String): Self = this.set("-treedepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-treedepth`: Self = this.set("-treedepth", js.undefined)
+    @scala.inline
+    def `set-trim`(value: String): Self = this.set("-trim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-trim`: Self = this.set("-trim", js.undefined)
+    @scala.inline
+    def `set-type`(value: String): Self = this.set("-type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-type`: Self = this.set("-type", js.undefined)
+    @scala.inline
+    def `set-undercolor`(value: String): Self = this.set("-undercolor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-undercolor`: Self = this.set("-undercolor", js.undefined)
+    @scala.inline
+    def `set-unique-colors`(value: String): Self = this.set("-unique-colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-unique-colors`: Self = this.set("-unique-colors", js.undefined)
+    @scala.inline
+    def `set-units`(value: String): Self = this.set("-units", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-units`: Self = this.set("-units", js.undefined)
+    @scala.inline
+    def `set-unsharp`(value: String): Self = this.set("-unsharp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-unsharp`: Self = this.set("-unsharp", js.undefined)
+    @scala.inline
+    def `set-verbose`(value: String): Self = this.set("-verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-verbose`: Self = this.set("-verbose", js.undefined)
+    @scala.inline
+    def `set-version`(value: String): Self = this.set("-version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-version`: Self = this.set("-version", js.undefined)
+    @scala.inline
+    def `set-view`(value: String): Self = this.set("-view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-view`: Self = this.set("-view", js.undefined)
+    @scala.inline
+    def `set-vignette`(value: String): Self = this.set("-vignette", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-vignette`: Self = this.set("-vignette", js.undefined)
+    @scala.inline
+    def `set-virtual-pixel`(value: String): Self = this.set("-virtual-pixel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-virtual-pixel`: Self = this.set("-virtual-pixel", js.undefined)
+    @scala.inline
+    def `set-wave`(value: String): Self = this.set("-wave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-wave`: Self = this.set("-wave", js.undefined)
+    @scala.inline
+    def `set-wavelet-denoise`(value: String): Self = this.set("-wavelet-denoise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-wavelet-denoise`: Self = this.set("-wavelet-denoise", js.undefined)
+    @scala.inline
+    def `set-weight`(value: String): Self = this.set("-weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-weight`: Self = this.set("-weight", js.undefined)
+    @scala.inline
+    def `set-white-point`(value: String): Self = this.set("-white-point", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-white-point`: Self = this.set("-white-point", js.undefined)
+    @scala.inline
+    def `set-white-threshold`(value: String): Self = this.set("-white-threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-white-threshold`: Self = this.set("-white-threshold", js.undefined)
+    @scala.inline
+    def `set-write`(value: String): Self = this.set("-write", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-write`: Self = this.set("-write", js.undefined)
+    @scala.inline
+    def `set-write-mask`(value: String): Self = this.set("-write-mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-write-mask`: Self = this.set("-write-mask", js.undefined)
+  }
+  
 }
 

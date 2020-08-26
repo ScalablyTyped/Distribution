@@ -26,18 +26,38 @@ trait Standard extends js.Object {
 
 object Standard {
   @scala.inline
-  def apply(
-    Description: NonEmptyString = null,
-    EnabledByDefault: js.UndefOr[Boolean] = js.undefined,
-    Name: NonEmptyString = null,
-    StandardsArn: NonEmptyString = null
-  ): Standard = {
+  def apply(): Standard = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnabledByDefault)) __obj.updateDynamic("EnabledByDefault")(EnabledByDefault.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (StandardsArn != null) __obj.updateDynamic("StandardsArn")(StandardsArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Standard]
   }
+  @scala.inline
+  implicit class StandardOps[Self <: Standard] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: NonEmptyString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEnabledByDefault(value: Boolean): Self = this.set("EnabledByDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledByDefault: Self = this.set("EnabledByDefault", js.undefined)
+    @scala.inline
+    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStandardsArn(value: NonEmptyString): Self = this.set("StandardsArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandardsArn: Self = this.set("StandardsArn", js.undefined)
+  }
+  
 }
 

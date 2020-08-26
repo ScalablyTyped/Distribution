@@ -19,6 +19,7 @@ class ^ protected () extends bulmaCalendar {
 @js.native
 object ^ extends js.Object {
   def attach(): js.Array[bulmaCalendar] = js.native
+  def attach(selector: js.UndefOr[scala.Nothing], options: Options): js.Array[bulmaCalendar] = js.native
   def attach(selector: String): js.Array[bulmaCalendar] = js.native
   def attach(selector: String, options: Options): js.Array[bulmaCalendar] = js.native
   def attach(selector: HTMLElement): js.Array[bulmaCalendar] = js.native

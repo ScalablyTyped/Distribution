@@ -1,7 +1,7 @@
 
 # Scala.js typings for webdriverio
 
-Typings are for version 5.23.0
+Typings are for version 6.3.6
 
 ## Library description:
 Next-gen WebDriver test automation framework for Node.js
@@ -12,7 +12,7 @@ Next-gen WebDriver test automation framework for Node.js
 | Keywords           | webdriverio, webdriver, selenium, appium, saucelabs, sauce, labs, mocha, nodeUnit, buster, devtools, puppeteer, chai, vows, jasmine, assert, cucumber, testingbot |
 | # releases         | 169 |
 | # dependents       | 221 |
-| # downloads        | 16750325 |
+| # downloads        | 17021450 |
 | # stars            | 41 |
 
 ## Links

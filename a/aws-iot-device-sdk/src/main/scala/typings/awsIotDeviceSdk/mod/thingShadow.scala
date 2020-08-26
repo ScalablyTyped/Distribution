@@ -56,6 +56,7 @@ class thingShadow () extends EventEmitter {
     * @param callback
     */
   def end(): Client = js.native
+  def end(force: js.UndefOr[scala.Nothing], callback: js.Function): Client = js.native
   def end(force: Boolean): Client = js.native
   def end(force: Boolean, callback: js.Function): Client = js.native
   /**
@@ -128,6 +129,7 @@ class thingShadow () extends EventEmitter {
   @JSName("on")
   def on_timeout(event: timeout, listener: js.Function2[/* thingName */ String, /* clientToken */ String, Unit]): this.type = js.native
   def publish(topic: String, message: String): Client = js.native
+  def publish(topic: String, message: String, options: js.UndefOr[scala.Nothing], callback: js.Function): Client = js.native
   def publish(topic: String, message: String, options: IClientPublishOptions): Client = js.native
   def publish(topic: String, message: String, options: IClientPublishOptions, callback: js.Function): Client = js.native
   // The following publish, subscribe, unsubscribe and end Definitions
@@ -143,6 +145,7 @@ class thingShadow () extends EventEmitter {
     * @param callback
     */
   def publish(topic: String, message: Buffer): Client = js.native
+  def publish(topic: String, message: Buffer, options: js.UndefOr[scala.Nothing], callback: js.Function): Client = js.native
   def publish(topic: String, message: Buffer, options: IClientPublishOptions): Client = js.native
   def publish(topic: String, message: Buffer, options: IClientPublishOptions, callback: js.Function): Client = js.native
   /**
@@ -158,6 +161,11 @@ class thingShadow () extends EventEmitter {
     * registration is complete before performing update/get/delete operations.
     */
   def register(thingName: String): Unit = js.native
+  def register(
+    thingName: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Error, /* failedTopics */ js.Array[ISubscriptionGrant], Unit]
+  ): Unit = js.native
   def register(thingName: String, options: RegisterOptions): Unit = js.native
   def register(
     thingName: String,
@@ -171,9 +179,11 @@ class thingShadow () extends EventEmitter {
     * @param callback fired on suback
     */
   def subscribe(topic: String): Client = js.native
+  def subscribe(topic: String, options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
   def subscribe(topic: String, options: Qos): Client = js.native
   def subscribe(topic: String, options: Qos, callback: ClientSubscribeCallback): Client = js.native
   def subscribe(topic: js.Array[String]): Client = js.native
+  def subscribe(topic: js.Array[String], options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
   def subscribe(topic: js.Array[String], options: Qos): Client = js.native
   def subscribe(topic: js.Array[String], options: Qos, callback: ClientSubscribeCallback): Client = js.native
   /**
@@ -191,9 +201,11 @@ class thingShadow () extends EventEmitter {
     * @param callback  fired on unsuback
     */
   def unsubscribe(topic: String): Client = js.native
+  def unsubscribe(topic: String, options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
   def unsubscribe(topic: String, options: IClientSubscribeOptions): Client = js.native
   def unsubscribe(topic: String, options: IClientSubscribeOptions, callback: ClientSubscribeCallback): Client = js.native
   def unsubscribe(topic: js.Array[String]): Client = js.native
+  def unsubscribe(topic: js.Array[String], options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
   def unsubscribe(topic: js.Array[String], options: IClientSubscribeOptions): Client = js.native
   def unsubscribe(topic: js.Array[String], options: IClientSubscribeOptions, callback: ClientSubscribeCallback): Client = js.native
   /**

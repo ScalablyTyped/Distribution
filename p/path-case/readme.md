@@ -10,9 +10,9 @@ Transform into a lower case string with slashes between words
 | ------------------ | :-------------: |
 | Full name          | path-case |
 | Keywords           | path, case, slash, lower, convert, transform |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 41574364 |
+| # downloads        | 42757840 |
 | # stars            | 0 |
 
 ## Links

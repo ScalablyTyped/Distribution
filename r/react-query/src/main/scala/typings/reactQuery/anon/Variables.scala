@@ -8,30 +8,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Variables[TSingleKey /* <: String */, TVariables /* <: AnyVariables */, TResult, TMoreVariable] extends js.Object {
-  var config: js.UndefOr[InfiniteQueryOptions[TResult, TMoreVariable]] = js.undefined
-  var queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TSingleKey], TVariables, TMoreVariable]
+  var config: js.UndefOr[InfiniteQueryOptions[TResult, TMoreVariable]] = js.native
+  var queryFn: InfiniteQueryFunctionWithVariables[TResult, js.Array[TSingleKey], TVariables, TMoreVariable] = js.native
   var queryKey: js.UndefOr[
     TSingleKey | `false` | Null | (js.Function0[js.UndefOr[TSingleKey | `false` | Null]])
-  ] = js.undefined
-  var variables: js.UndefOr[TVariables] = js.undefined
+  ] = js.native
+  var variables: js.UndefOr[TVariables] = js.native
 }
 
 object Variables {
   @scala.inline
   def apply[/* <: java.lang.String */ TSingleKey, /* <: typings.reactQuery.mod.AnyVariables */ TVariables, TResult, TMoreVariable](
-    queryFn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _.List.Append<_.List.Concat<TKey, TVariables>, TMoreVariable> */ /* keysAndVariablesAndMore */ js.Any => js.Promise[TResult],
-    config: InfiniteQueryOptions[TResult, TMoreVariable] = null,
-    queryKey: js.UndefOr[
-      Null | TSingleKey | `false` | (js.Function0[js.UndefOr[TSingleKey | `false` | Null]])
-    ] = js.undefined,
-    variables: TVariables = null
+    queryFn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _.List.Append<_.List.Concat<TKey, TVariables>, TMoreVariable> */ /* keysAndVariablesAndMore */ js.Any => js.Promise[TResult]
   ): Variables[TSingleKey, TVariables, TResult, TMoreVariable] = {
     val __obj = js.Dynamic.literal(queryFn = js.Any.fromFunction1(queryFn))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(queryKey)) __obj.updateDynamic("queryKey")(queryKey.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Variables[TSingleKey, TVariables, TResult, TMoreVariable]]
   }
+  @scala.inline
+  implicit class VariablesOps[Self <: Variables[_, _, _, _], /* <: java.lang.String */ TSingleKey, /* <: typings.reactQuery.mod.AnyVariables */ TVariables, TResult, TMoreVariable] (val x: Self with (Variables[TSingleKey, TVariables, TResult, TMoreVariable])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryFn(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _.List.Append<_.List.Concat<TKey, TVariables>, TMoreVariable> */ /* keysAndVariablesAndMore */ js.Any => js.Promise[TResult]
+    ): Self = this.set("queryFn", js.Any.fromFunction1(value))
+    @scala.inline
+    def setConfig(value: InfiniteQueryOptions[TResult, TMoreVariable]): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setQueryKeyFunction0(value: () => js.UndefOr[TSingleKey | `false` | Null]): Self = this.set("queryKey", js.Any.fromFunction0(value))
+    @scala.inline
+    def setQueryKey(value: TSingleKey | `false` | (js.Function0[js.UndefOr[TSingleKey | `false` | Null]])): Self = this.set("queryKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryKey: Self = this.set("queryKey", js.undefined)
+    @scala.inline
+    def setQueryKeyNull: Self = this.set("queryKey", null)
+    @scala.inline
+    def setVariables(value: TVariables): Self = this.set("variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariables: Self = this.set("variables", js.undefined)
+  }
+  
 }
 

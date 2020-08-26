@@ -18,11 +18,30 @@ trait DeviceTemplate extends js.Object {
 
 object DeviceTemplate {
   @scala.inline
-  def apply(callbackOverrides: DeviceCallbackOverrideMap = null, deviceType: DeviceType = null): DeviceTemplate = {
+  def apply(): DeviceTemplate = {
     val __obj = js.Dynamic.literal()
-    if (callbackOverrides != null) __obj.updateDynamic("callbackOverrides")(callbackOverrides.asInstanceOf[js.Any])
-    if (deviceType != null) __obj.updateDynamic("deviceType")(deviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceTemplate]
   }
+  @scala.inline
+  implicit class DeviceTemplateOps[Self <: DeviceTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallbackOverrides(value: DeviceCallbackOverrideMap): Self = this.set("callbackOverrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallbackOverrides: Self = this.set("callbackOverrides", js.undefined)
+    @scala.inline
+    def setDeviceType(value: DeviceType): Self = this.set("deviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceType: Self = this.set("deviceType", js.undefined)
+  }
+  
 }
 

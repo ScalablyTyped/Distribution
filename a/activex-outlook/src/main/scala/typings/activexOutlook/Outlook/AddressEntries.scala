@@ -15,6 +15,7 @@ trait AddressEntries extends js.Object {
   val RawTable: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Type: String): AddressEntry = js.native
+  def Add(Type: String, Name: js.UndefOr[scala.Nothing], Address: js.Any): AddressEntry = js.native
   def Add(Type: String, Name: js.Any): AddressEntry = js.native
   def Add(Type: String, Name: js.Any, Address: js.Any): AddressEntry = js.native
   def GetFirst(): AddressEntry = js.native
@@ -23,6 +24,7 @@ trait AddressEntries extends js.Object {
   def GetPrevious(): AddressEntry = js.native
   def Item(Index: js.Any): AddressEntry = js.native
   def Sort(): Unit = js.native
+  def Sort(Property: js.UndefOr[scala.Nothing], Order: js.Any): Unit = js.native
   def Sort(Property: js.Any): Unit = js.native
   def Sort(Property: js.Any, Order: js.Any): Unit = js.native
 }

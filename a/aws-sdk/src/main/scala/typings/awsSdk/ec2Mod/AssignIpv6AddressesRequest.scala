@@ -22,15 +22,34 @@ trait AssignIpv6AddressesRequest extends js.Object {
 
 object AssignIpv6AddressesRequest {
   @scala.inline
-  def apply(
-    NetworkInterfaceId: NetworkInterfaceId,
-    Ipv6AddressCount: js.UndefOr[Integer] = js.undefined,
-    Ipv6Addresses: Ipv6AddressList = null
-  ): AssignIpv6AddressesRequest = {
+  def apply(NetworkInterfaceId: NetworkInterfaceId): AssignIpv6AddressesRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Ipv6AddressCount)) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount.get.asInstanceOf[js.Any])
-    if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignIpv6AddressesRequest]
   }
+  @scala.inline
+  implicit class AssignIpv6AddressesRequestOps[Self <: AssignIpv6AddressesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIpv6AddressCount(value: Integer): Self = this.set("Ipv6AddressCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6AddressCount: Self = this.set("Ipv6AddressCount", js.undefined)
+    @scala.inline
+    def setIpv6AddressesVarargs(value: String*): Self = this.set("Ipv6Addresses", js.Array(value :_*))
+    @scala.inline
+    def setIpv6Addresses(value: Ipv6AddressList): Self = this.set("Ipv6Addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Addresses: Self = this.set("Ipv6Addresses", js.undefined)
+  }
+  
 }
 

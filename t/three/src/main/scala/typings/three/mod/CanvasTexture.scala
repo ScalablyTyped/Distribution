@@ -12,29 +12,7 @@ import scala.scalajs.js.annotation._
 class CanvasTexture protected ()
   extends typings.three.canvasTextureMod.CanvasTexture {
   def this(
-    canvas: HTMLCanvasElement,
-    mapping: js.UndefOr[typings.three.constantsMod.Mapping],
-    wrapS: js.UndefOr[typings.three.constantsMod.Wrapping],
-    wrapT: js.UndefOr[typings.three.constantsMod.Wrapping],
-    magFilter: js.UndefOr[typings.three.constantsMod.TextureFilter],
-    minFilter: js.UndefOr[typings.three.constantsMod.TextureFilter],
-    format: js.UndefOr[typings.three.constantsMod.PixelFormat],
-    `type`: js.UndefOr[typings.three.constantsMod.TextureDataType],
-    anisotropy: js.UndefOr[Double]
-  ) = this()
-  def this(
-    canvas: HTMLImageElement,
-    mapping: js.UndefOr[typings.three.constantsMod.Mapping],
-    wrapS: js.UndefOr[typings.three.constantsMod.Wrapping],
-    wrapT: js.UndefOr[typings.three.constantsMod.Wrapping],
-    magFilter: js.UndefOr[typings.three.constantsMod.TextureFilter],
-    minFilter: js.UndefOr[typings.three.constantsMod.TextureFilter],
-    format: js.UndefOr[typings.three.constantsMod.PixelFormat],
-    `type`: js.UndefOr[typings.three.constantsMod.TextureDataType],
-    anisotropy: js.UndefOr[Double]
-  ) = this()
-  def this(
-    canvas: HTMLVideoElement,
+    canvas: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement,
     mapping: js.UndefOr[typings.three.constantsMod.Mapping],
     wrapS: js.UndefOr[typings.three.constantsMod.Wrapping],
     wrapT: js.UndefOr[typings.three.constantsMod.Wrapping],

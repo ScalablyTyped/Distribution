@@ -12,7 +12,7 @@ Control the AnyBar app
 | Keywords           | anybar, app, macos, mac, udp, status, color, dot, indicator |
 | # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 12243 |
+| # downloads        | 11650 |
 | # stars            | 0 |
 
 ## Links

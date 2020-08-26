@@ -89,6 +89,7 @@ trait FancytreeNode extends js.Object {
     * @returns new node.
     */
   def copyTo(node: FancytreeNode): FancytreeNode = js.native
+  def copyTo(node: FancytreeNode, mode: js.UndefOr[scala.Nothing], map: js.Function1[/* node */ NodeData, Unit]): FancytreeNode = js.native
   def copyTo(node: FancytreeNode, mode: String): FancytreeNode = js.native
   def copyTo(node: FancytreeNode, mode: String, map: js.Function1[/* node */ NodeData, Unit]): FancytreeNode = js.native
   /** Count direct and indirect children.
@@ -105,6 +106,7 @@ trait FancytreeNode extends js.Object {
     * @param init NodeData (or simple title string)
     */
   def editCreateNode(): Unit = js.native
+  def editCreateNode(mode: js.UndefOr[scala.Nothing], init: js.Object): Unit = js.native
   def editCreateNode(mode: String): Unit = js.native
   def editCreateNode(mode: String, init: js.Object): Unit = js.native
   /** [ext-edit] Stop inline editing.
@@ -262,6 +264,7 @@ trait FancytreeNode extends js.Object {
     * @param deep  also render all descendants, even if parent is collapsed
     */
   def render(): Unit = js.native
+  def render(force: js.UndefOr[scala.Nothing], deep: Boolean): Unit = js.native
   def render(force: Boolean): Unit = js.native
   def render(force: Boolean, deep: Boolean): Unit = js.native
   /** Update element's CSS classes according to node state. */
@@ -277,6 +280,7 @@ trait FancytreeNode extends js.Object {
     * @param options {topNode: null, effects: ..., parent: ...} this node will remain visible in any case, even if `this` is outside the scroll pane.
     */
   def scrollIntoView(): JQueryPromise[_] = js.native
+  def scrollIntoView(effects: js.UndefOr[scala.Nothing], options: js.Object): JQueryPromise[_] = js.native
   def scrollIntoView(effects: js.Object): JQueryPromise[_] = js.native
   def scrollIntoView(effects: js.Object, options: js.Object): JQueryPromise[_] = js.native
   def scrollIntoView(effects: Boolean): JQueryPromise[_] = js.native
@@ -286,6 +290,7 @@ trait FancytreeNode extends js.Object {
     * @param opts additional options. Defaults to {noEvents: false}
     */
   def setActive(): JQueryPromise[_] = js.native
+  def setActive(flag: js.UndefOr[scala.Nothing], opts: js.Object): JQueryPromise[_] = js.native
   def setActive(flag: Boolean): JQueryPromise[_] = js.native
   def setActive(flag: Boolean, opts: js.Object): JQueryPromise[_] = js.native
   /**
@@ -293,6 +298,7 @@ trait FancytreeNode extends js.Object {
     * @param opts additional options. Defaults to {noAnimation:false, noEvents:false}
     */
   def setExpanded(): JQueryPromise[_] = js.native
+  def setExpanded(flag: js.UndefOr[scala.Nothing], opts: js.Object): JQueryPromise[_] = js.native
   def setExpanded(flag: Boolean): JQueryPromise[_] = js.native
   def setExpanded(flag: Boolean, opts: js.Object): JQueryPromise[_] = js.native
   /**
@@ -315,6 +321,7 @@ trait FancytreeNode extends js.Object {
     * @param status 'error', 'ok'
     */
   def setStatus(status: String): Unit = js.native
+  def setStatus(status: String, message: js.UndefOr[scala.Nothing], details: String): Unit = js.native
   def setStatus(status: String, message: String): Unit = js.native
   def setStatus(status: String, message: String, details: String): Unit = js.native
   /** Rename this node. */
@@ -326,6 +333,7 @@ trait FancytreeNode extends js.Object {
     * @param deep pass true to sort all descendant nodes
     */
   def sortChildren(): Unit = js.native
+  def sortChildren(cmp: js.UndefOr[scala.Nothing], deep: Boolean): Unit = js.native
   def sortChildren(cmp: js.Function2[/* a */ this.type, /* b */ this.type, Double]): Unit = js.native
   def sortChildren(cmp: js.Function2[/* a */ this.type, /* b */ this.type, Double], deep: Boolean): Unit = js.native
   /**
@@ -335,6 +343,7 @@ trait FancytreeNode extends js.Object {
     * @param callback callback(dict) is called for every node, in order to allow modifications
     */
   def toDict(): NodeData = js.native
+  def toDict(recursive: js.UndefOr[scala.Nothing], callback: js.Function1[/* dict */ NodeData, Unit]): NodeData = js.native
   def toDict(recursive: Boolean): NodeData = js.native
   def toDict(recursive: Boolean, callback: js.Function1[/* dict */ NodeData, Unit]): NodeData = js.native
   /** Set, clear, or toggle class of node's span tag and .extraClasses.

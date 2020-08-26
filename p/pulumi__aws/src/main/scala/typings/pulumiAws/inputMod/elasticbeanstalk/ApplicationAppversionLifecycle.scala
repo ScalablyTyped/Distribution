@@ -27,17 +27,36 @@ trait ApplicationAppversionLifecycle extends js.Object {
 
 object ApplicationAppversionLifecycle {
   @scala.inline
-  def apply(
-    serviceRole: Input[String],
-    deleteSourceFromS3: Input[Boolean] = null,
-    maxAgeInDays: Input[Double] = null,
-    maxCount: Input[Double] = null
-  ): ApplicationAppversionLifecycle = {
+  def apply(serviceRole: Input[String]): ApplicationAppversionLifecycle = {
     val __obj = js.Dynamic.literal(serviceRole = serviceRole.asInstanceOf[js.Any])
-    if (deleteSourceFromS3 != null) __obj.updateDynamic("deleteSourceFromS3")(deleteSourceFromS3.asInstanceOf[js.Any])
-    if (maxAgeInDays != null) __obj.updateDynamic("maxAgeInDays")(maxAgeInDays.asInstanceOf[js.Any])
-    if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationAppversionLifecycle]
   }
+  @scala.inline
+  implicit class ApplicationAppversionLifecycleOps[Self <: ApplicationAppversionLifecycle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceRole(value: Input[String]): Self = this.set("serviceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeleteSourceFromS3(value: Input[Boolean]): Self = this.set("deleteSourceFromS3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteSourceFromS3: Self = this.set("deleteSourceFromS3", js.undefined)
+    @scala.inline
+    def setMaxAgeInDays(value: Input[Double]): Self = this.set("maxAgeInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAgeInDays: Self = this.set("maxAgeInDays", js.undefined)
+    @scala.inline
+    def setMaxCount(value: Input[Double]): Self = this.set("maxCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCount: Self = this.set("maxCount", js.undefined)
+  }
+  
 }
 

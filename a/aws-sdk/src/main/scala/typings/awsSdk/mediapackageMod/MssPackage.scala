@@ -20,18 +20,38 @@ trait MssPackage extends js.Object {
 
 object MssPackage {
   @scala.inline
-  def apply(
-    Encryption: MssEncryption = null,
-    ManifestWindowSeconds: js.UndefOr[integer] = js.undefined,
-    SegmentDurationSeconds: js.UndefOr[integer] = js.undefined,
-    StreamSelection: StreamSelection = null
-  ): MssPackage = {
+  def apply(): MssPackage = {
     val __obj = js.Dynamic.literal()
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManifestWindowSeconds)) __obj.updateDynamic("ManifestWindowSeconds")(ManifestWindowSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.get.asInstanceOf[js.Any])
-    if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[MssPackage]
   }
+  @scala.inline
+  implicit class MssPackageOps[Self <: MssPackage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryption(value: MssEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setManifestWindowSeconds(value: integer): Self = this.set("ManifestWindowSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestWindowSeconds: Self = this.set("ManifestWindowSeconds", js.undefined)
+    @scala.inline
+    def setSegmentDurationSeconds(value: integer): Self = this.set("SegmentDurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentDurationSeconds: Self = this.set("SegmentDurationSeconds", js.undefined)
+    @scala.inline
+    def setStreamSelection(value: StreamSelection): Self = this.set("StreamSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamSelection: Self = this.set("StreamSelection", js.undefined)
+  }
+  
 }
 

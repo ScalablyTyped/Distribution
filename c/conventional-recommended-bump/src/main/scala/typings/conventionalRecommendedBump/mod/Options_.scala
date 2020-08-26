@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * * `config`
   * * `whatBump`
   */
+@js.native
 trait Options_ extends js.Object {
   /**
     * This should serve as default values for other arguments of
@@ -26,14 +27,14 @@ trait Options_ extends js.Object {
     */
   var config: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ js.Any
-  ] = js.undefined
+  ] = js.native
   /**
     * If `true`, reverted commits will be ignored.
     *
     * @default
     * true
     */
-  var ignoreReverted: js.UndefOr[Boolean] = js.undefined
+  var ignoreReverted: js.UndefOr[Boolean] = js.native
   /**
     * Specify the name of a package in a [Lerna](https://lernajs.io/)-managed
     * repository. The package name will be used when fetching all changes to a
@@ -45,14 +46,14 @@ trait Options_ extends js.Object {
     * specifying `--lernaPackage=conventional-changelog` using the CLI, or
     * `conventional-changelog` as the value of the `lernaPackage` option.
     */
-  var lernaPackage: js.UndefOr[String] = js.undefined
+  var lernaPackage: js.UndefOr[String] = js.native
   /**
     * It's recommended to use a preset so you don't have to define everything
     * yourself.
     *
     * The value is passed to [`conventional-changelog-preset-loader`](https://www.npmjs.com/package/conventional-changelog-preset-loader).
     */
-  var preset: js.UndefOr[String] = js.undefined
+  var preset: js.UndefOr[String] = js.native
   /**
     * Specify a prefix for the git tag that will be taken into account during the
     * comparison.
@@ -61,7 +62,7 @@ trait Options_ extends js.Object {
     * would specifying `--tagPrefix=version/` using the CLI, or `version/` as the
     * value of the `tagPrefix` option.
     */
-  var tagPrefix: js.UndefOr[String] = js.undefined
+  var tagPrefix: js.UndefOr[String] = js.native
   /**
     * A function that takes parsed commits as an argument.
     *
@@ -76,27 +77,53 @@ trait Options_ extends js.Object {
     * `level` is a `number` indicating what bump it should be and `reason` is the
     * reason of such release.
     */
-  var whatBump: js.UndefOr[WhatBump] = js.undefined
+  var whatBump: js.UndefOr[WhatBump] = js.native
 }
 
 object Options_ {
   @scala.inline
-  def apply(
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ js.Any = null,
-    ignoreReverted: js.UndefOr[Boolean] = js.undefined,
-    lernaPackage: String = null,
-    preset: String = null,
-    tagPrefix: String = null,
-    whatBump: /* commits */ js.Array[Commit[String | Double | js.Symbol]] => Result = null
-  ): Options_ = {
+  def apply(): Options_ = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreReverted)) __obj.updateDynamic("ignoreReverted")(ignoreReverted.get.asInstanceOf[js.Any])
-    if (lernaPackage != null) __obj.updateDynamic("lernaPackage")(lernaPackage.asInstanceOf[js.Any])
-    if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
-    if (tagPrefix != null) __obj.updateDynamic("tagPrefix")(tagPrefix.asInstanceOf[js.Any])
-    if (whatBump != null) __obj.updateDynamic("whatBump")(js.Any.fromFunction1(whatBump))
     __obj.asInstanceOf[Options_]
   }
+  @scala.inline
+  implicit class Options_Ops[Self <: Options_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfig(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ js.Any
+    ): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setIgnoreReverted(value: Boolean): Self = this.set("ignoreReverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreReverted: Self = this.set("ignoreReverted", js.undefined)
+    @scala.inline
+    def setLernaPackage(value: String): Self = this.set("lernaPackage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLernaPackage: Self = this.set("lernaPackage", js.undefined)
+    @scala.inline
+    def setPreset(value: String): Self = this.set("preset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreset: Self = this.set("preset", js.undefined)
+    @scala.inline
+    def setTagPrefix(value: String): Self = this.set("tagPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagPrefix: Self = this.set("tagPrefix", js.undefined)
+    @scala.inline
+    def setWhatBump(value: /* commits */ js.Array[Commit[String | Double | js.Symbol]] => Result): Self = this.set("whatBump", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteWhatBump: Self = this.set("whatBump", js.undefined)
+  }
+  
 }
 

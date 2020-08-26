@@ -29,6 +29,7 @@ class ResourceUsersThreads protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersThreadsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersThreadsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -59,6 +60,7 @@ class ResourceUsersThreads protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaThread] = js.native
   def get(callback: BodyResponseCallback[SchemaThread]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaThread] = js.native
   def get(params: ParamsResourceUsersThreadsGet): GaxiosPromise[SchemaThread] = js.native
   def get(params: ParamsResourceUsersThreadsGet, callback: BodyResponseCallback[SchemaThread]): Unit = js.native
   def get(
@@ -91,6 +93,7 @@ class ResourceUsersThreads protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListThreadsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListThreadsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListThreadsResponse] = js.native
   def list(params: ParamsResourceUsersThreadsList): GaxiosPromise[SchemaListThreadsResponse] = js.native
   def list(params: ParamsResourceUsersThreadsList, callback: BodyResponseCallback[SchemaListThreadsResponse]): Unit = js.native
   def list(
@@ -121,6 +124,7 @@ class ResourceUsersThreads protected () extends js.Object {
     */
   def modify(): GaxiosPromise[SchemaThread] = js.native
   def modify(callback: BodyResponseCallback[SchemaThread]): Unit = js.native
+  def modify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaThread] = js.native
   def modify(params: ParamsResourceUsersThreadsModify): GaxiosPromise[SchemaThread] = js.native
   def modify(params: ParamsResourceUsersThreadsModify, callback: BodyResponseCallback[SchemaThread]): Unit = js.native
   def modify(
@@ -149,6 +153,7 @@ class ResourceUsersThreads protected () extends js.Object {
     */
   def trash(): GaxiosPromise[SchemaThread] = js.native
   def trash(callback: BodyResponseCallback[SchemaThread]): Unit = js.native
+  def trash(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaThread] = js.native
   def trash(params: ParamsResourceUsersThreadsTrash): GaxiosPromise[SchemaThread] = js.native
   def trash(params: ParamsResourceUsersThreadsTrash, callback: BodyResponseCallback[SchemaThread]): Unit = js.native
   def trash(
@@ -177,6 +182,7 @@ class ResourceUsersThreads protected () extends js.Object {
     */
   def untrash(): GaxiosPromise[SchemaThread] = js.native
   def untrash(callback: BodyResponseCallback[SchemaThread]): Unit = js.native
+  def untrash(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaThread] = js.native
   def untrash(params: ParamsResourceUsersThreadsUntrash): GaxiosPromise[SchemaThread] = js.native
   def untrash(params: ParamsResourceUsersThreadsUntrash, callback: BodyResponseCallback[SchemaThread]): Unit = js.native
   def untrash(

@@ -11,8 +11,8 @@ Xml digital signature and encryption library for Node.js
 | Full name          | xml-crypto |
 | Keywords           | xml, digital signature, xml encryption, x.509 certificate |
 | # releases         | 12 |
-| # dependents       | 135 |
-| # downloads        | 10855321 |
+| # dependents       | 137 |
+| # downloads        | 10796865 |
 | # stars            | 3 |
 
 ## Links

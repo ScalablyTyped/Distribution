@@ -30,5 +30,26 @@ object Subscription {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscription]
   }
+  @scala.inline
+  implicit class SubscriptionOps[Self <: Subscription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: string): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubject(value: string): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTarget(value: string): Self = this.set("Target", value.asInstanceOf[js.Any])
+  }
+  
 }
 

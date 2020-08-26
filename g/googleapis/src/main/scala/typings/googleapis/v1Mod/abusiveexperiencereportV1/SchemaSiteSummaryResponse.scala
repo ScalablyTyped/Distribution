@@ -41,24 +41,50 @@ trait SchemaSiteSummaryResponse extends js.Object {
 
 object SchemaSiteSummaryResponse {
   @scala.inline
-  def apply(
-    abusiveStatus: String = null,
-    enforcementTime: String = null,
-    filterStatus: String = null,
-    lastChangeTime: String = null,
-    reportUrl: String = null,
-    reviewedSite: String = null,
-    underReview: js.UndefOr[Boolean] = js.undefined
-  ): SchemaSiteSummaryResponse = {
+  def apply(): SchemaSiteSummaryResponse = {
     val __obj = js.Dynamic.literal()
-    if (abusiveStatus != null) __obj.updateDynamic("abusiveStatus")(abusiveStatus.asInstanceOf[js.Any])
-    if (enforcementTime != null) __obj.updateDynamic("enforcementTime")(enforcementTime.asInstanceOf[js.Any])
-    if (filterStatus != null) __obj.updateDynamic("filterStatus")(filterStatus.asInstanceOf[js.Any])
-    if (lastChangeTime != null) __obj.updateDynamic("lastChangeTime")(lastChangeTime.asInstanceOf[js.Any])
-    if (reportUrl != null) __obj.updateDynamic("reportUrl")(reportUrl.asInstanceOf[js.Any])
-    if (reviewedSite != null) __obj.updateDynamic("reviewedSite")(reviewedSite.asInstanceOf[js.Any])
-    if (!js.isUndefined(underReview)) __obj.updateDynamic("underReview")(underReview.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSiteSummaryResponse]
   }
+  @scala.inline
+  implicit class SchemaSiteSummaryResponseOps[Self <: SchemaSiteSummaryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbusiveStatus(value: String): Self = this.set("abusiveStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbusiveStatus: Self = this.set("abusiveStatus", js.undefined)
+    @scala.inline
+    def setEnforcementTime(value: String): Self = this.set("enforcementTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforcementTime: Self = this.set("enforcementTime", js.undefined)
+    @scala.inline
+    def setFilterStatus(value: String): Self = this.set("filterStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterStatus: Self = this.set("filterStatus", js.undefined)
+    @scala.inline
+    def setLastChangeTime(value: String): Self = this.set("lastChangeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastChangeTime: Self = this.set("lastChangeTime", js.undefined)
+    @scala.inline
+    def setReportUrl(value: String): Self = this.set("reportUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportUrl: Self = this.set("reportUrl", js.undefined)
+    @scala.inline
+    def setReviewedSite(value: String): Self = this.set("reviewedSite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReviewedSite: Self = this.set("reviewedSite", js.undefined)
+    @scala.inline
+    def setUnderReview(value: Boolean): Self = this.set("underReview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnderReview: Self = this.set("underReview", js.undefined)
+  }
+  
 }
 

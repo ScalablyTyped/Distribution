@@ -1,7 +1,7 @@
 package typings.formsyReact.interfacesMod
 
-import typings.formsyReact.wrapperMod.WrapperProps
-import typings.formsyReact.wrapperMod.WrapperState
+import typings.formsyReact.withFormsyMod.WrapperProps
+import typings.formsyReact.withFormsyMod.WrapperState
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

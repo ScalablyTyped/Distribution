@@ -71,6 +71,14 @@ trait Graphviz_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     * @param options object containing the options used when drawing the edge
     */
   def drawEdge(x1: Double, y1: Double, x2: Double, y2: Double): this.type = js.native
+  def drawEdge(
+    x1: Double,
+    y1: Double,
+    x2: Double,
+    y2: Double,
+    attributes: js.UndefOr[scala.Nothing],
+    options: EdgeOptions
+  ): this.type = js.native
   def drawEdge(x1: Double, y1: Double, x2: Double, y2: Double, attributes: DotAttributes): this.type = js.native
   def drawEdge(x1: Double, y1: Double, x2: Double, y2: Double, attributes: DotAttributes, options: EdgeOptions): this.type = js.native
   // Nodes
@@ -84,6 +92,7 @@ trait Graphviz_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     * @param options object containing the options used when drawing the node, currently unused
     */
   def drawNode(x: Double, y: Double, nodeId: String): this.type = js.native
+  def drawNode(x: Double, y: Double, nodeId: String, attributes: js.UndefOr[scala.Nothing], options: js.Any): this.type = js.native
   def drawNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes): this.type = js.native
   def drawNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes, options: js.Any): this.type = js.native
   /**
@@ -295,6 +304,14 @@ trait Graphviz_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     * @param options object containing the options used when drawing the edge
     */
   def updateDrawnEdge(x1: Double, y1: Double, x2: Double, y2: Double): this.type = js.native
+  def updateDrawnEdge(
+    x1: Double,
+    y1: Double,
+    x2: Double,
+    y2: Double,
+    attributes: js.UndefOr[scala.Nothing],
+    options: EdgeOptions
+  ): this.type = js.native
   def updateDrawnEdge(x1: Double, y1: Double, x2: Double, y2: Double, attributes: DotAttributes): this.type = js.native
   def updateDrawnEdge(x1: Double, y1: Double, x2: Double, y2: Double, attributes: DotAttributes, options: EdgeOptions): this.type = js.native
   /**
@@ -308,6 +325,7 @@ trait Graphviz_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     * @param options object containing the options used when drawing the node, currently unused
     */
   def updateDrawnNode(x: Double, y: Double, nodeId: String): this.type = js.native
+  def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: js.UndefOr[scala.Nothing], options: js.Any): this.type = js.native
   def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes): this.type = js.native
   def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes, options: js.Any): this.type = js.native
   // Controlling SVG and Graph Size

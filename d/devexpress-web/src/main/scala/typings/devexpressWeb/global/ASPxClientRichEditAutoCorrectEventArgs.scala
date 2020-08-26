@@ -18,20 +18,5 @@ class ASPxClientRichEditAutoCorrectEventArgs protected ()
     * @param handled true if the event is handled and no default processing is required; otherwise false.
     */
   def this(text: js.Any, interval: js.Any, handled: js.Any) = this()
-  /**
-    * Specifies whether the event is handled.
-    */
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /**
-    * Gets the input string's interval.
-    */
-  /* CompleteClass */
-  override var interval: typings.devexpressWeb.Interval = js.native
-  /**
-    * Gets the input string to check whether it should be replaced.
-    */
-  /* CompleteClass */
-  override var text: String = js.native
 }
 

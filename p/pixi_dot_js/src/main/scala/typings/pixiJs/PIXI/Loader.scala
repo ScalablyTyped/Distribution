@@ -98,16 +98,20 @@ trait Loader extends js.Object {
   var resources: IResourceDictionary = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   def add(name: String, url: String): this.type = js.native
+  def add(name: String, url: String, options: js.UndefOr[scala.Nothing], cb: js.Function): this.type = js.native
   def add(name: String, url: String, options: ILoaderOptions): this.type = js.native
   def add(name: String, url: String, options: ILoaderOptions, cb: js.Function): this.type = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   def add(obj: String): this.type = js.native
+  def add(obj: String, options: js.UndefOr[scala.Nothing], cb: js.Function): this.type = js.native
   def add(obj: String, options: ILoaderOptions): this.type = js.native
   def add(obj: String, options: ILoaderOptions, cb: js.Function): this.type = js.native
   def add(obj: js.Any): this.type = js.native
+  def add(obj: js.Any, options: js.UndefOr[scala.Nothing], cb: js.Function): this.type = js.native
   def add(obj: js.Any, options: ILoaderOptions): this.type = js.native
   def add(obj: js.Any, options: ILoaderOptions, cb: js.Function): this.type = js.native
   def add(obj: js.Array[_]): this.type = js.native
+  def add(obj: js.Array[_], options: js.UndefOr[scala.Nothing], cb: js.Function): this.type = js.native
   def add(obj: js.Array[_], options: ILoaderOptions): this.type = js.native
   def add(obj: js.Array[_], options: ILoaderOptions, cb: js.Function): this.type = js.native
   def add(params: js.Any*): this.type = js.native

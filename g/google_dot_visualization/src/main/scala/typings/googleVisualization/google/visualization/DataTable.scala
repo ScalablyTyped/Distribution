@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait DataTable extends js.Object {
   def addColumn(descriptionObject: DataTableColumnDescription): Double = js.native
   def addColumn(`type`: String): Double = js.native
+  def addColumn(`type`: String, label: js.UndefOr[scala.Nothing], id: String): Double = js.native
   def addColumn(`type`: String, label: String): Double = js.native
   def addColumn(`type`: String, label: String, id: String): Double = js.native
   def addRow(): Double = js.native
@@ -40,6 +41,7 @@ trait DataTable extends js.Object {
   def getTableProperty(name: String): js.Any = js.native
   def getValue(rowIndex: Double, columnIndex: Double): js.Any = js.native
   def insertColumn(columnIndex: Double, `type`: String): Unit = js.native
+  def insertColumn(columnIndex: Double, `type`: String, label: js.UndefOr[scala.Nothing], id: String): Unit = js.native
   def insertColumn(columnIndex: Double, `type`: String, label: String): Unit = js.native
   def insertColumn(columnIndex: Double, `type`: String, label: String, id: String): Unit = js.native
   def insertRows(rowIndex: Double, numberOfEmptyRows: Double): Unit = js.native
@@ -49,7 +51,29 @@ trait DataTable extends js.Object {
   def removeRow(rowIndex: Double): Unit = js.native
   def removeRows(rowIndex: Double, numberOfRows: Double): Unit = js.native
   def setCell(rowIndex: Double, columnIndex: Double): Unit = js.native
+  def setCell(
+    rowIndex: Double,
+    columnIndex: Double,
+    value: js.UndefOr[scala.Nothing],
+    formattedValue: js.UndefOr[scala.Nothing],
+    properties: Properties
+  ): Unit = js.native
+  def setCell(rowIndex: Double, columnIndex: Double, value: js.UndefOr[scala.Nothing], formattedValue: String): Unit = js.native
+  def setCell(
+    rowIndex: Double,
+    columnIndex: Double,
+    value: js.UndefOr[scala.Nothing],
+    formattedValue: String,
+    properties: Properties
+  ): Unit = js.native
   def setCell(rowIndex: Double, columnIndex: Double, value: js.Any): Unit = js.native
+  def setCell(
+    rowIndex: Double,
+    columnIndex: Double,
+    value: js.Any,
+    formattedValue: js.UndefOr[scala.Nothing],
+    properties: Properties
+  ): Unit = js.native
   def setCell(rowIndex: Double, columnIndex: Double, value: js.Any, formattedValue: String): Unit = js.native
   def setCell(
     rowIndex: Double,

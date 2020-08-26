@@ -11,8 +11,8 @@ Asynchronous A* Pathfinding API
 | Full name          | easystarjs |
 | Keywords           | A*, pathfinding, grid, easystar |
 | # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 21998 |
+| # dependents       | 7 |
+| # downloads        | 21784 |
 | # stars            | 2 |
 
 ## Links

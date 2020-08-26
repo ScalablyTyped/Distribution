@@ -24,7 +24,6 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.PropsWithoutRef
 import typings.react.mod.RefAttributes
 import typings.std.DOMTokenList
-import typings.std.Document
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.Omit
@@ -47,8 +46,13 @@ object utilsMod extends js.Object {
   def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native
+  def ionRenderToString(html: String, userAgent: String): js.Promise[String] = js.native
+  def ionRenderToString(
+    html: String,
+    userAgent: String,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SerializeDocumentOptions */ js.Any
+  ): js.Promise[String] = js.native
   def isCoveredByReact(eventNameSuffix: String): Boolean = js.native
-  def isCoveredByReact(eventNameSuffix: String, doc: Document): Boolean = js.native
   def isPlatform(platform: Platforms): Boolean = js.native
   def syncEvent(node: ElementeventskeystringeEv, eventName: String): Unit = js.native
   def syncEvent(

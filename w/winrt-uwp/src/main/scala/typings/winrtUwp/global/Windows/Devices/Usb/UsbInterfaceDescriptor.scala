@@ -9,23 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Usb.UsbInterfaceDescriptor")
 @js.native
 abstract class UsbInterfaceDescriptor ()
-  extends typings.winrtUwp.Windows.Devices.Usb.UsbInterfaceDescriptor {
-  /** Gets the bAlternateSetting field of the USB interface descriptor. The value is a number that identifies the alternate setting defined by the interface. */
-  /* CompleteClass */
-  override var alternateSettingNumber: Double = js.native
-  /** Gets the bInterfaceClass field of the USB interface descriptor. The value indicates the USB-defined class to which the interface conforms. */
-  /* CompleteClass */
-  override var classCode: Double = js.native
-  /** Gets the bInterfaceNumber field of the USB interface descriptor. The value is the index that identifies the interface. */
-  /* CompleteClass */
-  override var interfaceNumber: Double = js.native
-  /** Gets the bInterfaceProtocol field of the interface descriptor. The value is a USB-assigned identifier that specifies a USB-defined protocol to which the interface conforms. */
-  /* CompleteClass */
-  override var protocolCode: Double = js.native
-  /** Gets the bInterfaceSubClass field of the USB interface descriptor. The value is a USB-assigned identifier that specifies a USB-defined subclass to which the interface. */
-  /* CompleteClass */
-  override var subclassCode: Double = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Usb.UsbInterfaceDescriptor
 
 /* static members */
 @JSGlobal("Windows.Devices.Usb.UsbInterfaceDescriptor")

@@ -11,15 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WorkerPool extends js.Object {
   /**
-    * Clear all workers from the pool.
-    * If parameter force is false (default), workers will finish the tasks they are working on before terminating themselves.
-    * When force is true, all workers are terminated immediately without finishing running tasks.
-    * @deprecated
-    */
-  def clear(): Promise[js.Array[_], Error] = js.native
-  def clear(force: Boolean): Promise[js.Array[_], Error] = js.native
-  def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: T): Promise[ReturnType[T], Error] = js.native
-  /**
     * Execute a function on a worker with given arguments.
     * @param method When method is a string, a method with this name must exist at the worker
     * and must be registered to make it accessible via the pool.
@@ -28,6 +19,7 @@ trait WorkerPool extends js.Object {
     * and executed there with the provided parameters. The provided function must be static,
     * it must not depend on variables in a surrounding scope.
     */
+  def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: T): Promise[ReturnType[T], Error] = js.native
   def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: T, params: Parameters[T]): Promise[ReturnType[T], Error] = js.native
   def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: String): Promise[ReturnType[T], Error] = js.native
   def exec[T /* <: js.Function1[/* repeated */ js.Any, _] */](method: String, params: Parameters[T]): Promise[ReturnType[T], Error] = js.native
@@ -46,6 +38,7 @@ trait WorkerPool extends js.Object {
     * If timeout is provided, worker will be forced to terminal when the timeout expires and the worker has not finished.
     */
   def terminate(): Promise[js.Array[_], Error] = js.native
+  def terminate(force: js.UndefOr[scala.Nothing], timeout: Double): Promise[js.Array[_], Error] = js.native
   def terminate(force: Boolean): Promise[js.Array[_], Error] = js.native
   def terminate(force: Boolean, timeout: Double): Promise[js.Array[_], Error] = js.native
 }

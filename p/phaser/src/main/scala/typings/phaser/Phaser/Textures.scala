@@ -95,8 +95,24 @@ object Textures extends js.Object {
       * @param height The height of the region.
       */
     def clear(): CanvasTexture = js.native
+    def clear(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: integer
+    ): CanvasTexture = js.native
+    def clear(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: integer): CanvasTexture = js.native
+    def clear(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: integer, height: integer): CanvasTexture = js.native
+    def clear(x: js.UndefOr[scala.Nothing], y: integer): CanvasTexture = js.native
+    def clear(x: js.UndefOr[scala.Nothing], y: integer, width: js.UndefOr[scala.Nothing], height: integer): CanvasTexture = js.native
+    def clear(x: js.UndefOr[scala.Nothing], y: integer, width: integer): CanvasTexture = js.native
+    def clear(x: js.UndefOr[scala.Nothing], y: integer, width: integer, height: integer): CanvasTexture = js.native
     def clear(x: integer): CanvasTexture = js.native
+    def clear(x: integer, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: integer): CanvasTexture = js.native
+    def clear(x: integer, y: js.UndefOr[scala.Nothing], width: integer): CanvasTexture = js.native
+    def clear(x: integer, y: js.UndefOr[scala.Nothing], width: integer, height: integer): CanvasTexture = js.native
     def clear(x: integer, y: integer): CanvasTexture = js.native
+    def clear(x: integer, y: integer, width: js.UndefOr[scala.Nothing], height: integer): CanvasTexture = js.native
     def clear(x: integer, y: integer, width: integer): CanvasTexture = js.native
     def clear(x: integer, y: integer, width: integer, height: integer): CanvasTexture = js.native
     def draw(x: integer, y: integer, source: HTMLCanvasElement): CanvasTexture = js.native
@@ -117,10 +133,15 @@ object Textures extends js.Object {
       * @param y The y coordinate to draw the source at. Default 0.
       */
     def drawFrame(key: String): CanvasTexture = js.native
+    def drawFrame(key: String, frame: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: integer): CanvasTexture = js.native
+    def drawFrame(key: String, frame: js.UndefOr[scala.Nothing], x: integer): CanvasTexture = js.native
+    def drawFrame(key: String, frame: js.UndefOr[scala.Nothing], x: integer, y: integer): CanvasTexture = js.native
     def drawFrame(key: String, frame: String): CanvasTexture = js.native
+    def drawFrame(key: String, frame: String, x: js.UndefOr[scala.Nothing], y: integer): CanvasTexture = js.native
     def drawFrame(key: String, frame: String, x: integer): CanvasTexture = js.native
     def drawFrame(key: String, frame: String, x: integer, y: integer): CanvasTexture = js.native
     def drawFrame(key: String, frame: integer): CanvasTexture = js.native
+    def drawFrame(key: String, frame: integer, x: js.UndefOr[scala.Nothing], y: integer): CanvasTexture = js.native
     def drawFrame(key: String, frame: integer, x: integer): CanvasTexture = js.native
     def drawFrame(key: String, frame: integer, x: integer, y: integer): CanvasTexture = js.native
     /**
@@ -176,8 +197,24 @@ object Textures extends js.Object {
       * @param height The height of the region to get. Must be an integer. If not given will be set to the `width`.
       */
     def getPixels(): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      width: js.UndefOr[scala.Nothing],
+      height: integer
+    ): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: integer, height: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: js.UndefOr[scala.Nothing], y: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: js.UndefOr[scala.Nothing], y: integer, width: js.UndefOr[scala.Nothing], height: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: js.UndefOr[scala.Nothing], y: integer, width: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: js.UndefOr[scala.Nothing], y: integer, width: integer, height: integer): js.Array[js.Array[PixelConfig]] = js.native
     def getPixels(x: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: integer, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: integer, y: js.UndefOr[scala.Nothing], width: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: integer, y: js.UndefOr[scala.Nothing], width: integer, height: integer): js.Array[js.Array[PixelConfig]] = js.native
     def getPixels(x: integer, y: integer): js.Array[js.Array[PixelConfig]] = js.native
+    def getPixels(x: integer, y: integer, width: js.UndefOr[scala.Nothing], height: integer): js.Array[js.Array[PixelConfig]] = js.native
     def getPixels(x: integer, y: integer, width: integer): js.Array[js.Array[PixelConfig]] = js.native
     def getPixels(x: integer, y: integer, width: integer, height: integer): js.Array[js.Array[PixelConfig]] = js.native
     /**
@@ -191,8 +228,96 @@ object Textures extends js.Object {
       * @param dirtyHeight Height of the rectangle to be painted. Defaults to the height of the image data.
       */
     def putData(imageData: ImageData, x: integer, y: integer): this.type = js.native
+    def putData(
+      imageData: ImageData,
+      x: integer,
+      y: integer,
+      dirtyX: js.UndefOr[scala.Nothing],
+      dirtyY: js.UndefOr[scala.Nothing],
+      dirtyWidth: js.UndefOr[scala.Nothing],
+      dirtyHeight: integer
+    ): this.type = js.native
+    def putData(
+      imageData: ImageData,
+      x: integer,
+      y: integer,
+      dirtyX: js.UndefOr[scala.Nothing],
+      dirtyY: js.UndefOr[scala.Nothing],
+      dirtyWidth: integer
+    ): this.type = js.native
+    def putData(
+      imageData: ImageData,
+      x: integer,
+      y: integer,
+      dirtyX: js.UndefOr[scala.Nothing],
+      dirtyY: js.UndefOr[scala.Nothing],
+      dirtyWidth: integer,
+      dirtyHeight: integer
+    ): this.type = js.native
+    def putData(imageData: ImageData, x: integer, y: integer, dirtyX: js.UndefOr[scala.Nothing], dirtyY: integer): this.type = js.native
+    def putData(
+      imageData: ImageData,
+      x: integer,
+      y: integer,
+      dirtyX: js.UndefOr[scala.Nothing],
+      dirtyY: integer,
+      dirtyWidth: js.UndefOr[scala.Nothing],
+      dirtyHeight: integer
+    ): this.type = js.native
+    def putData(
+      imageData: ImageData,
+      x: integer,
+      y: integer,
+      dirtyX: js.UndefOr[scala.Nothing],
+      dirtyY: integer,
+      dirtyWidth: integer
+    ): this.type = js.native
+    def putData(
+      imageData: ImageData,
+      x: integer,
+      y: integer,
+      dirtyX: js.UndefOr[scala.Nothing],
+      dirtyY: integer,
+      dirtyWidth: integer,
+      dirtyHeight: integer
+    ): this.type = js.native
     def putData(imageData: ImageData, x: integer, y: integer, dirtyX: integer): this.type = js.native
+    def putData(
+      imageData: ImageData,
+      x: integer,
+      y: integer,
+      dirtyX: integer,
+      dirtyY: js.UndefOr[scala.Nothing],
+      dirtyWidth: js.UndefOr[scala.Nothing],
+      dirtyHeight: integer
+    ): this.type = js.native
+    def putData(
+      imageData: ImageData,
+      x: integer,
+      y: integer,
+      dirtyX: integer,
+      dirtyY: js.UndefOr[scala.Nothing],
+      dirtyWidth: integer
+    ): this.type = js.native
+    def putData(
+      imageData: ImageData,
+      x: integer,
+      y: integer,
+      dirtyX: integer,
+      dirtyY: js.UndefOr[scala.Nothing],
+      dirtyWidth: integer,
+      dirtyHeight: integer
+    ): this.type = js.native
     def putData(imageData: ImageData, x: integer, y: integer, dirtyX: integer, dirtyY: integer): this.type = js.native
+    def putData(
+      imageData: ImageData,
+      x: integer,
+      y: integer,
+      dirtyX: integer,
+      dirtyY: integer,
+      dirtyWidth: js.UndefOr[scala.Nothing],
+      dirtyHeight: integer
+    ): this.type = js.native
     def putData(
       imageData: ImageData,
       x: integer,
@@ -431,6 +556,7 @@ object Textures extends js.Object {
       * @param y The y coordinate of the top-left of this Frame. Default 0.
       */
     def setSize(width: integer, height: integer): Frame = js.native
+    def setSize(width: integer, height: integer, x: js.UndefOr[scala.Nothing], y: integer): Frame = js.native
     def setSize(width: integer, height: integer, x: integer): Frame = js.native
     def setSize(width: integer, height: integer, x: integer, y: integer): Frame = js.native
     /**
@@ -871,6 +997,7 @@ object Textures extends js.Object {
       * @param height The height of the Canvas element. Default 256.
       */
     def createCanvas(key: String): CanvasTexture = js.native
+    def createCanvas(key: String, width: js.UndefOr[scala.Nothing], height: integer): CanvasTexture = js.native
     def createCanvas(key: String, width: integer): CanvasTexture = js.native
     def createCanvas(key: String, width: integer, height: integer): CanvasTexture = js.native
     /**
@@ -949,10 +1076,20 @@ object Textures extends js.Object {
       * @param encoderOptions A Number between 0 and 1 indicating the image quality to use for image formats that use lossy compression such as image/jpeg and image/webp. If this argument is anything else, the default value for image quality is used. The default value is 0.92. Other arguments are ignored. Default 0.92.
       */
     def getBase64(key: String): String = js.native
+    def getBase64(
+      key: String,
+      frame: js.UndefOr[scala.Nothing],
+      `type`: js.UndefOr[scala.Nothing],
+      encoderOptions: Double
+    ): String = js.native
+    def getBase64(key: String, frame: js.UndefOr[scala.Nothing], `type`: String): String = js.native
+    def getBase64(key: String, frame: js.UndefOr[scala.Nothing], `type`: String, encoderOptions: Double): String = js.native
     def getBase64(key: String, frame: String): String = js.native
+    def getBase64(key: String, frame: String, `type`: js.UndefOr[scala.Nothing], encoderOptions: Double): String = js.native
     def getBase64(key: String, frame: String, `type`: String): String = js.native
     def getBase64(key: String, frame: String, `type`: String, encoderOptions: Double): String = js.native
     def getBase64(key: String, frame: integer): String = js.native
+    def getBase64(key: String, frame: integer, `type`: js.UndefOr[scala.Nothing], encoderOptions: Double): String = js.native
     def getBase64(key: String, frame: integer, `type`: String): String = js.native
     def getBase64(key: String, frame: integer, `type`: String, encoderOptions: Double): String = js.native
     /**

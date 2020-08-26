@@ -18,11 +18,32 @@ trait ListVocabularyFiltersResponse extends js.Object {
 
 object ListVocabularyFiltersResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, VocabularyFilters: VocabularyFilters = null): ListVocabularyFiltersResponse = {
+  def apply(): ListVocabularyFiltersResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (VocabularyFilters != null) __obj.updateDynamic("VocabularyFilters")(VocabularyFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVocabularyFiltersResponse]
   }
+  @scala.inline
+  implicit class ListVocabularyFiltersResponseOps[Self <: ListVocabularyFiltersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setVocabularyFiltersVarargs(value: VocabularyFilterInfo*): Self = this.set("VocabularyFilters", js.Array(value :_*))
+    @scala.inline
+    def setVocabularyFilters(value: VocabularyFilters): Self = this.set("VocabularyFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVocabularyFilters: Self = this.set("VocabularyFilters", js.undefined)
+  }
+  
 }
 

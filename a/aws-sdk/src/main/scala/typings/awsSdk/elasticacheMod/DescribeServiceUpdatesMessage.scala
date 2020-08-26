@@ -26,18 +26,40 @@ trait DescribeServiceUpdatesMessage extends js.Object {
 
 object DescribeServiceUpdatesMessage {
   @scala.inline
-  def apply(
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    ServiceUpdateName: String = null,
-    ServiceUpdateStatus: ServiceUpdateStatusList = null
-  ): DescribeServiceUpdatesMessage = {
+  def apply(): DescribeServiceUpdatesMessage = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (ServiceUpdateName != null) __obj.updateDynamic("ServiceUpdateName")(ServiceUpdateName.asInstanceOf[js.Any])
-    if (ServiceUpdateStatus != null) __obj.updateDynamic("ServiceUpdateStatus")(ServiceUpdateStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeServiceUpdatesMessage]
   }
+  @scala.inline
+  implicit class DescribeServiceUpdatesMessageOps[Self <: DescribeServiceUpdatesMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setServiceUpdateName(value: String): Self = this.set("ServiceUpdateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceUpdateName: Self = this.set("ServiceUpdateName", js.undefined)
+    @scala.inline
+    def setServiceUpdateStatusVarargs(value: ServiceUpdateStatus*): Self = this.set("ServiceUpdateStatus", js.Array(value :_*))
+    @scala.inline
+    def setServiceUpdateStatus(value: ServiceUpdateStatusList): Self = this.set("ServiceUpdateStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceUpdateStatus: Self = this.set("ServiceUpdateStatus", js.undefined)
+  }
+  
 }
 

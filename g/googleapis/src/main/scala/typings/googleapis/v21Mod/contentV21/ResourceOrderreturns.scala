@@ -28,6 +28,7 @@ class ResourceOrderreturns protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaMerchantOrderReturn] = js.native
   def get(callback: BodyResponseCallback[SchemaMerchantOrderReturn]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMerchantOrderReturn] = js.native
   def get(params: ParamsResourceOrderreturnsGet): GaxiosPromise[SchemaMerchantOrderReturn] = js.native
   def get(params: ParamsResourceOrderreturnsGet, callback: BodyResponseCallback[SchemaMerchantOrderReturn]): Unit = js.native
   def get(
@@ -60,6 +61,7 @@ class ResourceOrderreturns protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaOrderreturnsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaOrderreturnsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderreturnsListResponse] = js.native
   def list(params: ParamsResourceOrderreturnsList): GaxiosPromise[SchemaOrderreturnsListResponse] = js.native
   def list(
     params: ParamsResourceOrderreturnsList,

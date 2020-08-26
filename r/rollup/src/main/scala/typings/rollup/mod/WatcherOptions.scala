@@ -4,27 +4,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WatcherOptions extends js.Object {
-  var chokidar: js.UndefOr[Boolean | WatchOptions] = js.undefined
-  var clearScreen: js.UndefOr[Boolean] = js.undefined
-  var exclude: js.UndefOr[js.Array[String]] = js.undefined
-  var include: js.UndefOr[js.Array[String]] = js.undefined
+  var buildDelay: js.UndefOr[Double] = js.native
+  var chokidar: js.UndefOr[ChokidarOptions] = js.native
+  var clearScreen: js.UndefOr[Boolean] = js.native
+  var exclude: js.UndefOr[js.Array[String]] = js.native
+  var include: js.UndefOr[js.Array[String]] = js.native
+  var skipWrite: js.UndefOr[Boolean] = js.native
 }
 
 object WatcherOptions {
   @scala.inline
-  def apply(
-    chokidar: Boolean | WatchOptions = null,
-    clearScreen: js.UndefOr[Boolean] = js.undefined,
-    exclude: js.Array[String] = null,
-    include: js.Array[String] = null
-  ): WatcherOptions = {
+  def apply(): WatcherOptions = {
     val __obj = js.Dynamic.literal()
-    if (chokidar != null) __obj.updateDynamic("chokidar")(chokidar.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearScreen)) __obj.updateDynamic("clearScreen")(clearScreen.get.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatcherOptions]
   }
+  @scala.inline
+  implicit class WatcherOptionsOps[Self <: WatcherOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuildDelay(value: Double): Self = this.set("buildDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildDelay: Self = this.set("buildDelay", js.undefined)
+    @scala.inline
+    def setChokidar(value: ChokidarOptions): Self = this.set("chokidar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChokidar: Self = this.set("chokidar", js.undefined)
+    @scala.inline
+    def setClearScreen(value: Boolean): Self = this.set("clearScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearScreen: Self = this.set("clearScreen", js.undefined)
+    @scala.inline
+    def setExcludeVarargs(value: String*): Self = this.set("exclude", js.Array(value :_*))
+    @scala.inline
+    def setExclude(value: js.Array[String]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclude: Self = this.set("exclude", js.undefined)
+    @scala.inline
+    def setIncludeVarargs(value: String*): Self = this.set("include", js.Array(value :_*))
+    @scala.inline
+    def setInclude(value: js.Array[String]): Self = this.set("include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude: Self = this.set("include", js.undefined)
+    @scala.inline
+    def setSkipWrite(value: Boolean): Self = this.set("skipWrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipWrite: Self = this.set("skipWrite", js.undefined)
+  }
+  
 }
 

@@ -17,17 +17,37 @@ trait GetEndpointResult extends js.Object {
   val endpointAddress: String = js.native
   val endpointType: js.UndefOr[String] = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
 }
 
 object GetEndpointResult {
   @scala.inline
-  def apply(endpointAddress: String, id: String, endpointType: String = null): GetEndpointResult = {
+  def apply(endpointAddress: String, id: String): GetEndpointResult = {
     val __obj = js.Dynamic.literal(endpointAddress = endpointAddress.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (endpointType != null) __obj.updateDynamic("endpointType")(endpointType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEndpointResult]
   }
+  @scala.inline
+  implicit class GetEndpointResultOps[Self <: GetEndpointResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointAddress(value: String): Self = this.set("endpointAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpointType(value: String): Self = this.set("endpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointType: Self = this.set("endpointType", js.undefined)
+  }
+  
 }
 

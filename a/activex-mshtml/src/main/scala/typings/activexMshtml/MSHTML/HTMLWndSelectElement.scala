@@ -237,6 +237,7 @@ trait HTMLWndSelectElement extends js.Object {
   var value: String = js.native
   var xmsAcceleratorKey: String = js.native
   def apply(): js.Any = js.native
+  def apply(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def apply(name: js.Any): js.Any = js.native
   def apply(name: js.Any, index: js.Any): js.Any = js.native
   def FireEvent(bstrEventName: String): Boolean = js.native
@@ -264,6 +265,7 @@ trait HTMLWndSelectElement extends js.Object {
   def filters(pvarIndex: js.Any): js.Any = js.native
   def focus(): Unit = js.native
   def form(): js.Any = js.native
+  def form(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def form(name: js.Any): js.Any = js.native
   def form(name: js.Any, index: js.Any): js.Any = js.native
   def getAdjacentText(where: String): String = js.native
@@ -312,6 +314,7 @@ trait HTMLWndSelectElement extends js.Object {
   def isSameNode(otherNode: IHTMLDOMNode3): Boolean = js.native
   def isSupported(feature: String, version: js.Any): Boolean = js.native
   def item(): js.Any = js.native
+  def item(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def item(name: js.Any): js.Any = js.native
   def item(name: js.Any, index: js.Any): js.Any = js.native
   def lookupNamespaceURI(pvarPrefix: js.Any): js.Any = js.native

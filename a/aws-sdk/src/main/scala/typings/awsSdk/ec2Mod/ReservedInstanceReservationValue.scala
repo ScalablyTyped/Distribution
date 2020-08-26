@@ -18,11 +18,30 @@ trait ReservedInstanceReservationValue extends js.Object {
 
 object ReservedInstanceReservationValue {
   @scala.inline
-  def apply(ReservationValue: ReservationValue = null, ReservedInstanceId: String = null): ReservedInstanceReservationValue = {
+  def apply(): ReservedInstanceReservationValue = {
     val __obj = js.Dynamic.literal()
-    if (ReservationValue != null) __obj.updateDynamic("ReservationValue")(ReservationValue.asInstanceOf[js.Any])
-    if (ReservedInstanceId != null) __obj.updateDynamic("ReservedInstanceId")(ReservedInstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedInstanceReservationValue]
   }
+  @scala.inline
+  implicit class ReservedInstanceReservationValueOps[Self <: ReservedInstanceReservationValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReservationValue(value: ReservationValue): Self = this.set("ReservationValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservationValue: Self = this.set("ReservationValue", js.undefined)
+    @scala.inline
+    def setReservedInstanceId(value: String): Self = this.set("ReservedInstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedInstanceId: Self = this.set("ReservedInstanceId", js.undefined)
+  }
+  
 }
 

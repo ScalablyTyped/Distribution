@@ -18,13 +18,28 @@ trait GameServerGroupAutoScalingPolicy extends js.Object {
 
 object GameServerGroupAutoScalingPolicy {
   @scala.inline
-  def apply(
-    TargetTrackingConfiguration: TargetTrackingConfiguration,
-    EstimatedInstanceWarmup: js.UndefOr[PositiveInteger] = js.undefined
-  ): GameServerGroupAutoScalingPolicy = {
+  def apply(TargetTrackingConfiguration: TargetTrackingConfiguration): GameServerGroupAutoScalingPolicy = {
     val __obj = js.Dynamic.literal(TargetTrackingConfiguration = TargetTrackingConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(EstimatedInstanceWarmup)) __obj.updateDynamic("EstimatedInstanceWarmup")(EstimatedInstanceWarmup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameServerGroupAutoScalingPolicy]
   }
+  @scala.inline
+  implicit class GameServerGroupAutoScalingPolicyOps[Self <: GameServerGroupAutoScalingPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetTrackingConfiguration(value: TargetTrackingConfiguration): Self = this.set("TargetTrackingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEstimatedInstanceWarmup(value: PositiveInteger): Self = this.set("EstimatedInstanceWarmup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedInstanceWarmup: Self = this.set("EstimatedInstanceWarmup", js.undefined)
+  }
+  
 }
 

@@ -22,15 +22,32 @@ trait CloudWatchLoggingOptionUpdate extends js.Object {
 
 object CloudWatchLoggingOptionUpdate {
   @scala.inline
-  def apply(
-    CloudWatchLoggingOptionId: Id,
-    LogStreamARNUpdate: LogStreamARN = null,
-    RoleARNUpdate: RoleARN = null
-  ): CloudWatchLoggingOptionUpdate = {
+  def apply(CloudWatchLoggingOptionId: Id): CloudWatchLoggingOptionUpdate = {
     val __obj = js.Dynamic.literal(CloudWatchLoggingOptionId = CloudWatchLoggingOptionId.asInstanceOf[js.Any])
-    if (LogStreamARNUpdate != null) __obj.updateDynamic("LogStreamARNUpdate")(LogStreamARNUpdate.asInstanceOf[js.Any])
-    if (RoleARNUpdate != null) __obj.updateDynamic("RoleARNUpdate")(RoleARNUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchLoggingOptionUpdate]
   }
+  @scala.inline
+  implicit class CloudWatchLoggingOptionUpdateOps[Self <: CloudWatchLoggingOptionUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchLoggingOptionId(value: Id): Self = this.set("CloudWatchLoggingOptionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLogStreamARNUpdate(value: LogStreamARN): Self = this.set("LogStreamARNUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogStreamARNUpdate: Self = this.set("LogStreamARNUpdate", js.undefined)
+    @scala.inline
+    def setRoleARNUpdate(value: RoleARN): Self = this.set("RoleARNUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARNUpdate: Self = this.set("RoleARNUpdate", js.undefined)
+  }
+  
 }
 

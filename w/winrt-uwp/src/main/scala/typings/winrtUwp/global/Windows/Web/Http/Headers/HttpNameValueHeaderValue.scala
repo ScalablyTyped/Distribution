@@ -21,12 +21,6 @@ class HttpNameValueHeaderValue protected ()
     * @param value The value to associate with the name.
     */
   def this(name: String, value: String) = this()
-  /** Gets the name used in the HttpNameValueHeaderValue object. */
-  /* CompleteClass */
-  override var name: String = js.native
-  /** Gets or sets the value associated with a name used in the HttpNameValueHeaderValue object. */
-  /* CompleteClass */
-  override var value: String = js.native
 }
 
 /* static members */

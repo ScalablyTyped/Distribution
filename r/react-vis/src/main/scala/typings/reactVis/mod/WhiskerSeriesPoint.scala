@@ -1,44 +1,68 @@
 package typings.reactVis.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WhiskerSeriesPoint extends AbstractSeriesPoint {
-  var color: js.UndefOr[String | Double] = js.undefined
-  var opacity: js.UndefOr[String | Double] = js.undefined
-  var size: js.UndefOr[String | Double] = js.undefined
-  var stroke: js.UndefOr[String | Double] = js.undefined
-  var x: String | Double | Date
-  var xVariance: js.UndefOr[String | Double] = js.undefined
-  var y: String | Double | Date
-  var yVariance: js.UndefOr[String | Double] = js.undefined
+  var color: js.UndefOr[String | Double] = js.native
+  var opacity: js.UndefOr[String | Double] = js.native
+  var size: js.UndefOr[String | Double] = js.native
+  var stroke: js.UndefOr[String | Double] = js.native
+  var x: String | Double | Date = js.native
+  var xVariance: js.UndefOr[String | Double] = js.native
+  var y: String | Double | Date = js.native
+  var yVariance: js.UndefOr[String | Double] = js.native
 }
 
 object WhiskerSeriesPoint {
   @scala.inline
-  def apply(
-    x: String | Double | Date,
-    y: String | Double | Date,
-    StringDictionary: StringDictionary[js.Any] = null,
-    color: String | Double = null,
-    opacity: String | Double = null,
-    size: String | Double = null,
-    stroke: String | Double = null,
-    xVariance: String | Double = null,
-    yVariance: String | Double = null
-  ): WhiskerSeriesPoint = {
+  def apply(x: String | Double | Date, y: String | Double | Date): WhiskerSeriesPoint = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (xVariance != null) __obj.updateDynamic("xVariance")(xVariance.asInstanceOf[js.Any])
-    if (yVariance != null) __obj.updateDynamic("yVariance")(yVariance.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhiskerSeriesPoint]
   }
+  @scala.inline
+  implicit class WhiskerSeriesPointOps[Self <: WhiskerSeriesPoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setX(value: String | Double | Date): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setY(value: String | Double | Date): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColor(value: String | Double): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setOpacity(value: String | Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setSize(value: String | Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStroke(value: String | Double): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+    @scala.inline
+    def setXVariance(value: String | Double): Self = this.set("xVariance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXVariance: Self = this.set("xVariance", js.undefined)
+    @scala.inline
+    def setYVariance(value: String | Double): Self = this.set("yVariance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYVariance: Self = this.set("yVariance", js.undefined)
+  }
+  
 }
 

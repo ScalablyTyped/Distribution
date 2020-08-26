@@ -7,12 +7,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Props extends js.Object {
-  var allowedBlocks: js.UndefOr[js.Array[String]] = js.undefined
+  var allowedBlocks: js.UndefOr[js.Array[String]] = js.native
   /**
     * A 'render prop' function that can be used to customize the block's appender.
     */
-  var renderAppender: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  var renderAppender: js.UndefOr[ComponentType[js.Object]] = js.native
   /**
     * The template is defined as a list of block items. Such blocks can have predefined
     * attributes, placeholder, content, etc. Block templates allow specifying a default initial
@@ -20,13 +21,13 @@ trait Props extends js.Object {
     *
     * See {@link https://github.com/WordPress/gutenberg/blob/master/docs/designers-developers/developers/block-api/block-templates.md }
     */
-  var template: js.UndefOr[TemplateArray] = js.undefined
+  var template: js.UndefOr[TemplateArray] = js.native
   /**
     * If `true` when child blocks in the template are inserted the selection is updated.
     * If `false` the selection should not be updated when child blocks specified in the template are inserted.
     * @defaultValue true
     */
-  var templateInsertUpdatesSelection: js.UndefOr[Boolean] = js.undefined
+  var templateInsertUpdatesSelection: js.UndefOr[Boolean] = js.native
   /**
     * Template locking allows locking the `InnerBlocks` area for the current template.
     *
@@ -38,25 +39,49 @@ trait Props extends js.Object {
     *
     * If the block is a top level block: the locking of the Custom Post Type is used.
     */
-  var templateLock: js.UndefOr[EditorTemplateLock] = js.undefined
+  var templateLock: js.UndefOr[EditorTemplateLock] = js.native
 }
 
 object Props {
   @scala.inline
-  def apply(
-    allowedBlocks: js.Array[String] = null,
-    renderAppender: ComponentType[js.Object] = null,
-    template: TemplateArray = null,
-    templateInsertUpdatesSelection: js.UndefOr[Boolean] = js.undefined,
-    templateLock: EditorTemplateLock = null
-  ): Props = {
+  def apply(): Props = {
     val __obj = js.Dynamic.literal()
-    if (allowedBlocks != null) __obj.updateDynamic("allowedBlocks")(allowedBlocks.asInstanceOf[js.Any])
-    if (renderAppender != null) __obj.updateDynamic("renderAppender")(renderAppender.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(templateInsertUpdatesSelection)) __obj.updateDynamic("templateInsertUpdatesSelection")(templateInsertUpdatesSelection.get.asInstanceOf[js.Any])
-    if (templateLock != null) __obj.updateDynamic("templateLock")(templateLock.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
+  @scala.inline
+  implicit class PropsOps[Self <: Props] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedBlocksVarargs(value: String*): Self = this.set("allowedBlocks", js.Array(value :_*))
+    @scala.inline
+    def setAllowedBlocks(value: js.Array[String]): Self = this.set("allowedBlocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedBlocks: Self = this.set("allowedBlocks", js.undefined)
+    @scala.inline
+    def setRenderAppender(value: ComponentType[js.Object]): Self = this.set("renderAppender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderAppender: Self = this.set("renderAppender", js.undefined)
+    @scala.inline
+    def setTemplate(value: TemplateArray): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTemplateInsertUpdatesSelection(value: Boolean): Self = this.set("templateInsertUpdatesSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateInsertUpdatesSelection: Self = this.set("templateInsertUpdatesSelection", js.undefined)
+    @scala.inline
+    def setTemplateLock(value: EditorTemplateLock): Self = this.set("templateLock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateLock: Self = this.set("templateLock", js.undefined)
+  }
+  
 }
 

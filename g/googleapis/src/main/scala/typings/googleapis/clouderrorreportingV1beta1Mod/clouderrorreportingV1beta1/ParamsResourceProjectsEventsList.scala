@@ -60,50 +60,58 @@ trait ParamsResourceProjectsEventsList extends StandardParameters {
 
 object ParamsResourceProjectsEventsList {
   @scala.inline
-  def apply(
-    $Dotxgafv: String = null,
-    access_token: String = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    callback: String = null,
-    fields: String = null,
-    groupId: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    pageToken: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    projectName: String = null,
-    quotaUser: String = null,
-    serviceFilterDotresourceType: String = null,
-    serviceFilterDotservice: String = null,
-    serviceFilterDotversion: String = null,
-    timeRangeDotperiod: String = null,
-    uploadType: String = null,
-    upload_protocol: String = null
-  ): ParamsResourceProjectsEventsList = {
+  def apply(): ParamsResourceProjectsEventsList = {
     val __obj = js.Dynamic.literal()
-    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (projectName != null) __obj.updateDynamic("projectName")(projectName.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (serviceFilterDotresourceType != null) __obj.updateDynamic("serviceFilter.resourceType")(serviceFilterDotresourceType.asInstanceOf[js.Any])
-    if (serviceFilterDotservice != null) __obj.updateDynamic("serviceFilter.service")(serviceFilterDotservice.asInstanceOf[js.Any])
-    if (serviceFilterDotversion != null) __obj.updateDynamic("serviceFilter.version")(serviceFilterDotversion.asInstanceOf[js.Any])
-    if (timeRangeDotperiod != null) __obj.updateDynamic("timeRange.period")(timeRangeDotperiod.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceProjectsEventsList]
   }
+  @scala.inline
+  implicit class ParamsResourceProjectsEventsListOps[Self <: ParamsResourceProjectsEventsList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setProjectName(value: String): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectName: Self = this.set("projectName", js.undefined)
+    @scala.inline
+    def setServiceFilterDotresourceType(value: String): Self = this.set("serviceFilter.resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceFilterDotresourceType: Self = this.set("serviceFilter.resourceType", js.undefined)
+    @scala.inline
+    def setServiceFilterDotservice(value: String): Self = this.set("serviceFilter.service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceFilterDotservice: Self = this.set("serviceFilter.service", js.undefined)
+    @scala.inline
+    def setServiceFilterDotversion(value: String): Self = this.set("serviceFilter.version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceFilterDotversion: Self = this.set("serviceFilter.version", js.undefined)
+    @scala.inline
+    def setTimeRangeDotperiod(value: String): Self = this.set("timeRange.period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeRangeDotperiod: Self = this.set("timeRange.period", js.undefined)
+  }
+  
 }
 

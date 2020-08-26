@@ -150,66 +150,142 @@ trait SchemaPerson extends js.Object {
 
 object SchemaPerson {
   @scala.inline
-  def apply(
-    aboutMe: String = null,
-    birthday: String = null,
-    braggingRights: String = null,
-    circledByCount: js.UndefOr[Double] = js.undefined,
-    cover: CoverInfo = null,
-    currentLocation: String = null,
-    displayName: String = null,
-    domain: String = null,
-    emails: js.Array[Value] = null,
-    etag: String = null,
-    gender: String = null,
-    id: String = null,
-    image: IsDefault = null,
-    isPlusUser: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    name: Formatted = null,
-    nickname: String = null,
-    objectType: String = null,
-    occupation: String = null,
-    organizations: js.Array[Department] = null,
-    placesLived: js.Array[Primary] = null,
-    plusOneCount: js.UndefOr[Double] = js.undefined,
-    relationshipStatus: String = null,
-    skills: String = null,
-    tagline: String = null,
-    url: String = null,
-    urls: js.Array[LabelType] = null,
-    verified: js.UndefOr[Boolean] = js.undefined
-  ): SchemaPerson = {
+  def apply(): SchemaPerson = {
     val __obj = js.Dynamic.literal()
-    if (aboutMe != null) __obj.updateDynamic("aboutMe")(aboutMe.asInstanceOf[js.Any])
-    if (birthday != null) __obj.updateDynamic("birthday")(birthday.asInstanceOf[js.Any])
-    if (braggingRights != null) __obj.updateDynamic("braggingRights")(braggingRights.asInstanceOf[js.Any])
-    if (!js.isUndefined(circledByCount)) __obj.updateDynamic("circledByCount")(circledByCount.get.asInstanceOf[js.Any])
-    if (cover != null) __obj.updateDynamic("cover")(cover.asInstanceOf[js.Any])
-    if (currentLocation != null) __obj.updateDynamic("currentLocation")(currentLocation.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPlusUser)) __obj.updateDynamic("isPlusUser")(isPlusUser.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
-    if (occupation != null) __obj.updateDynamic("occupation")(occupation.asInstanceOf[js.Any])
-    if (organizations != null) __obj.updateDynamic("organizations")(organizations.asInstanceOf[js.Any])
-    if (placesLived != null) __obj.updateDynamic("placesLived")(placesLived.asInstanceOf[js.Any])
-    if (!js.isUndefined(plusOneCount)) __obj.updateDynamic("plusOneCount")(plusOneCount.get.asInstanceOf[js.Any])
-    if (relationshipStatus != null) __obj.updateDynamic("relationshipStatus")(relationshipStatus.asInstanceOf[js.Any])
-    if (skills != null) __obj.updateDynamic("skills")(skills.asInstanceOf[js.Any])
-    if (tagline != null) __obj.updateDynamic("tagline")(tagline.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPerson]
   }
+  @scala.inline
+  implicit class SchemaPersonOps[Self <: SchemaPerson] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAboutMe(value: String): Self = this.set("aboutMe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAboutMe: Self = this.set("aboutMe", js.undefined)
+    @scala.inline
+    def setBirthday(value: String): Self = this.set("birthday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBirthday: Self = this.set("birthday", js.undefined)
+    @scala.inline
+    def setBraggingRights(value: String): Self = this.set("braggingRights", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBraggingRights: Self = this.set("braggingRights", js.undefined)
+    @scala.inline
+    def setCircledByCount(value: Double): Self = this.set("circledByCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCircledByCount: Self = this.set("circledByCount", js.undefined)
+    @scala.inline
+    def setCover(value: CoverInfo): Self = this.set("cover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCover: Self = this.set("cover", js.undefined)
+    @scala.inline
+    def setCurrentLocation(value: String): Self = this.set("currentLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentLocation: Self = this.set("currentLocation", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setEmailsVarargs(value: Value*): Self = this.set("emails", js.Array(value :_*))
+    @scala.inline
+    def setEmails(value: js.Array[Value]): Self = this.set("emails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmails: Self = this.set("emails", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGender: Self = this.set("gender", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImage(value: IsDefault): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setIsPlusUser(value: Boolean): Self = this.set("isPlusUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPlusUser: Self = this.set("isPlusUser", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: Formatted): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNickname: Self = this.set("nickname", js.undefined)
+    @scala.inline
+    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectType: Self = this.set("objectType", js.undefined)
+    @scala.inline
+    def setOccupation(value: String): Self = this.set("occupation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOccupation: Self = this.set("occupation", js.undefined)
+    @scala.inline
+    def setOrganizationsVarargs(value: Department*): Self = this.set("organizations", js.Array(value :_*))
+    @scala.inline
+    def setOrganizations(value: js.Array[Department]): Self = this.set("organizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizations: Self = this.set("organizations", js.undefined)
+    @scala.inline
+    def setPlacesLivedVarargs(value: Primary*): Self = this.set("placesLived", js.Array(value :_*))
+    @scala.inline
+    def setPlacesLived(value: js.Array[Primary]): Self = this.set("placesLived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacesLived: Self = this.set("placesLived", js.undefined)
+    @scala.inline
+    def setPlusOneCount(value: Double): Self = this.set("plusOneCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlusOneCount: Self = this.set("plusOneCount", js.undefined)
+    @scala.inline
+    def setRelationshipStatus(value: String): Self = this.set("relationshipStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationshipStatus: Self = this.set("relationshipStatus", js.undefined)
+    @scala.inline
+    def setSkills(value: String): Self = this.set("skills", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkills: Self = this.set("skills", js.undefined)
+    @scala.inline
+    def setTagline(value: String): Self = this.set("tagline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagline: Self = this.set("tagline", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUrlsVarargs(value: LabelType*): Self = this.set("urls", js.Array(value :_*))
+    @scala.inline
+    def setUrls(value: js.Array[LabelType]): Self = this.set("urls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrls: Self = this.set("urls", js.undefined)
+    @scala.inline
+    def setVerified(value: Boolean): Self = this.set("verified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerified: Self = this.set("verified", js.undefined)
+  }
+  
 }
 

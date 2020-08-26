@@ -12,7 +12,7 @@ An easy way to create, parse, and validate forms
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 19 |
-| # downloads        | 70168 |
+| # downloads        | 68953 |
 | # stars            | 19 |
 
 ## Links

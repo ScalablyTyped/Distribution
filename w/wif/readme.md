@@ -11,8 +11,8 @@ Bitcoin Wallet Import Format (WIF) decoding/encoding module
 | Full name          | wif |
 | Keywords           | bitcoin, base58, base58check, decode, decoding, encoding, encode, key, private, wif |
 | # releases         | 1 |
-| # dependents       | 186 |
-| # downloads        | 1354376 |
+| # dependents       | 192 |
+| # downloads        | 1387670 |
 | # stars            | 2 |
 
 ## Links

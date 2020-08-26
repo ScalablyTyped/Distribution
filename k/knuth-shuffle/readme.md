@@ -12,7 +12,7 @@ The Fisher-Yates (aka Knuth) shuffle for Browser and Node.js
 | Keywords           | ronald, fisher, frank, yates, fisher-yates, donald, knuth, shuffle, random, randomize, unbiased, algorithm |
 | # releases         | 1 |
 | # dependents       | 58 |
-| # downloads        | 259422 |
+| # downloads        | 269732 |
 | # stars            | 2 |
 
 ## Links

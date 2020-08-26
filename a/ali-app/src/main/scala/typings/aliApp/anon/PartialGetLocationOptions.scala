@@ -10,30 +10,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<ali-app.my.GetLocationOptions> */
+@js.native
 trait PartialGetLocationOptions extends js.Object {
-  var cacheTimeout: js.UndefOr[Double] = js.undefined
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
-  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
-  var success: js.UndefOr[js.Function1[/* res */ LocationData, Unit]] = js.undefined
-  var `type`: js.UndefOr[`0` | `1` | `2` | `3`] = js.undefined
+  var cacheTimeout: js.UndefOr[Double] = js.native
+  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ LocationData, Unit]] = js.native
+  var `type`: js.UndefOr[`0` | `1` | `2` | `3`] = js.native
 }
 
 object PartialGetLocationOptions {
   @scala.inline
-  def apply(
-    cacheTimeout: js.UndefOr[Double] = js.undefined,
-    complete: /* res */ js.Any => Unit = null,
-    fail: /* res */ js.Any => Unit = null,
-    success: /* res */ LocationData => Unit = null,
-    `type`: `0` | `1` | `2` | `3` = null
-  ): PartialGetLocationOptions = {
+  def apply(): PartialGetLocationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheTimeout)) __obj.updateDynamic("cacheTimeout")(cacheTimeout.get.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialGetLocationOptions]
   }
+  @scala.inline
+  implicit class PartialGetLocationOptionsOps[Self <: PartialGetLocationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheTimeout(value: Double): Self = this.set("cacheTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheTimeout: Self = this.set("cacheTimeout", js.undefined)
+    @scala.inline
+    def setComplete(value: /* res */ js.Any => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteComplete: Self = this.set("complete", js.undefined)
+    @scala.inline
+    def setFail(value: /* res */ js.Any => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFail: Self = this.set("fail", js.undefined)
+    @scala.inline
+    def setSuccess(value: /* res */ LocationData => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+    @scala.inline
+    def setType(value: `0` | `1` | `2` | `3`): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

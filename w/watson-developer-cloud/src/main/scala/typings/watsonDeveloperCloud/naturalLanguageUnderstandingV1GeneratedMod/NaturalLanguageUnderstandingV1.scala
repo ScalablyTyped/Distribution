@@ -86,6 +86,7 @@ trait NaturalLanguageUnderstandingV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listModels(): js.Promise[_] | Unit = js.native
+  def listModels(params: js.UndefOr[scala.Nothing], callback: Callback[ListModelsResults]): js.Promise[_] | Unit = js.native
   def listModels(params: ListModelsParams): js.Promise[_] | Unit = js.native
   def listModels(params: ListModelsParams, callback: Callback[ListModelsResults]): js.Promise[_] | Unit = js.native
 }

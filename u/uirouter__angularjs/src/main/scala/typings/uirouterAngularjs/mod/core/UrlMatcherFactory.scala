@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class UrlMatcherFactory protected ()
   extends typings.uirouterCore.mod.UrlMatcherFactory {
-  def this(/** @hidden */ router: typings.uirouterCore.routerMod.UIRouter) = this()
+  def this(/** @internal */ router: typings.uirouterCore.routerMod.UIRouter) = this()
 }
 

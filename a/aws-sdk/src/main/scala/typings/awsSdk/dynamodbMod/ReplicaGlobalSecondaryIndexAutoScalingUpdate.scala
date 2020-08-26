@@ -15,14 +15,30 @@ trait ReplicaGlobalSecondaryIndexAutoScalingUpdate extends js.Object {
 
 object ReplicaGlobalSecondaryIndexAutoScalingUpdate {
   @scala.inline
-  def apply(
-    IndexName: IndexName = null,
-    ProvisionedReadCapacityAutoScalingUpdate: AutoScalingSettingsUpdate = null
-  ): ReplicaGlobalSecondaryIndexAutoScalingUpdate = {
+  def apply(): ReplicaGlobalSecondaryIndexAutoScalingUpdate = {
     val __obj = js.Dynamic.literal()
-    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName.asInstanceOf[js.Any])
-    if (ProvisionedReadCapacityAutoScalingUpdate != null) __obj.updateDynamic("ProvisionedReadCapacityAutoScalingUpdate")(ProvisionedReadCapacityAutoScalingUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicaGlobalSecondaryIndexAutoScalingUpdate]
   }
+  @scala.inline
+  implicit class ReplicaGlobalSecondaryIndexAutoScalingUpdateOps[Self <: ReplicaGlobalSecondaryIndexAutoScalingUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+    @scala.inline
+    def setProvisionedReadCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = this.set("ProvisionedReadCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedReadCapacityAutoScalingUpdate: Self = this.set("ProvisionedReadCapacityAutoScalingUpdate", js.undefined)
+  }
+  
 }
 

@@ -2,7 +2,6 @@ package typings.pmmmwhReactRefreshWebpackPlugin.mod
 
 import typings.pmmmwhReactRefreshWebpackPlugin.typesMod.NormalizedPluginOptions
 import typings.pmmmwhReactRefreshWebpackPlugin.typesMod.ReactRefreshPluginOptions
-import typings.webpack.mod.Compiler_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,6 +24,8 @@ class ReactRefreshPlugin () extends js.Object {
     * @returns {void}
     */
   @JSName("apply")
-  def apply(compiler: Compiler_): Unit = js.native
+  def apply(
+    compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any
+  ): Unit = js.native
 }
 

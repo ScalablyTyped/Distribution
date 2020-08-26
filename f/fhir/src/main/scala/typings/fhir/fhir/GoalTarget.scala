@@ -7,69 +7,84 @@ import scala.scalajs.js.annotation._
 /**
   * Target outcome for the goal
   */
+@js.native
 trait GoalTarget extends BackboneElement {
   /**
     * Contains extended information for property 'dueDate'.
     */
-  var _dueDate: js.UndefOr[Element] = js.undefined
+  var _dueDate: js.UndefOr[Element] = js.native
   /**
     * The target value to be achieved
     */
-  var detailCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
+  var detailCodeableConcept: js.UndefOr[CodeableConcept] = js.native
   /**
     * The target value to be achieved
     */
-  var detailQuantity: js.UndefOr[Quantity] = js.undefined
+  var detailQuantity: js.UndefOr[Quantity] = js.native
   /**
     * The target value to be achieved
     */
-  var detailRange: js.UndefOr[Range] = js.undefined
+  var detailRange: js.UndefOr[Range] = js.native
   /**
     * Reach goal on or before
     */
-  var dueDate: js.UndefOr[date] = js.undefined
+  var dueDate: js.UndefOr[date] = js.native
   /**
     * Reach goal on or before
     */
-  var dueDuration: js.UndefOr[Duration] = js.undefined
+  var dueDuration: js.UndefOr[Duration] = js.native
   /**
     * The parameter whose value is being tracked
     */
-  var measure: js.UndefOr[CodeableConcept] = js.undefined
+  var measure: js.UndefOr[CodeableConcept] = js.native
 }
 
 object GoalTarget {
   @scala.inline
-  def apply(
-    _dueDate: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    detailCodeableConcept: CodeableConcept = null,
-    detailQuantity: Quantity = null,
-    detailRange: Range = null,
-    dueDate: date = null,
-    dueDuration: Duration = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    measure: CodeableConcept = null,
-    modifierExtension: js.Array[Extension] = null
-  ): GoalTarget = {
+  def apply(): GoalTarget = {
     val __obj = js.Dynamic.literal()
-    if (_dueDate != null) __obj.updateDynamic("_dueDate")(_dueDate.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (detailCodeableConcept != null) __obj.updateDynamic("detailCodeableConcept")(detailCodeableConcept.asInstanceOf[js.Any])
-    if (detailQuantity != null) __obj.updateDynamic("detailQuantity")(detailQuantity.asInstanceOf[js.Any])
-    if (detailRange != null) __obj.updateDynamic("detailRange")(detailRange.asInstanceOf[js.Any])
-    if (dueDate != null) __obj.updateDynamic("dueDate")(dueDate.asInstanceOf[js.Any])
-    if (dueDuration != null) __obj.updateDynamic("dueDuration")(dueDuration.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoalTarget]
   }
+  @scala.inline
+  implicit class GoalTargetOps[Self <: GoalTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_dueDate(value: Element): Self = this.set("_dueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_dueDate: Self = this.set("_dueDate", js.undefined)
+    @scala.inline
+    def setDetailCodeableConcept(value: CodeableConcept): Self = this.set("detailCodeableConcept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailCodeableConcept: Self = this.set("detailCodeableConcept", js.undefined)
+    @scala.inline
+    def setDetailQuantity(value: Quantity): Self = this.set("detailQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailQuantity: Self = this.set("detailQuantity", js.undefined)
+    @scala.inline
+    def setDetailRange(value: Range): Self = this.set("detailRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailRange: Self = this.set("detailRange", js.undefined)
+    @scala.inline
+    def setDueDate(value: date): Self = this.set("dueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDueDate: Self = this.set("dueDate", js.undefined)
+    @scala.inline
+    def setDueDuration(value: Duration): Self = this.set("dueDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDueDuration: Self = this.set("dueDuration", js.undefined)
+    @scala.inline
+    def setMeasure(value: CodeableConcept): Self = this.set("measure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeasure: Self = this.set("measure", js.undefined)
+  }
+  
 }
 

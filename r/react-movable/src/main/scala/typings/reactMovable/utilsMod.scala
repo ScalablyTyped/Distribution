@@ -21,6 +21,7 @@ object utilsMod extends js.Object {
   def setItemTransition(element: Element, duration: Double): Unit = js.native
   def setItemTransition(element: Element, duration: Double, timing: String): Unit = js.native
   def transformItem(element: Element): Unit = js.native
+  def transformItem(element: Element, offsetY: js.UndefOr[scala.Nothing], offsetX: Double): Unit = js.native
   def transformItem(element: Element, offsetY: Double): Unit = js.native
   def transformItem(element: Element, offsetY: Double, offsetX: Double): Unit = js.native
   def transformItem(element: Element, offsetY: Null, offsetX: Double): Unit = js.native

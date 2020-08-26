@@ -21,11 +21,30 @@ trait SchemaSpellingCorrection extends js.Object {
 
 object SchemaSpellingCorrection {
   @scala.inline
-  def apply(corrected: js.UndefOr[Boolean] = js.undefined, correctedText: String = null): SchemaSpellingCorrection = {
+  def apply(): SchemaSpellingCorrection = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(corrected)) __obj.updateDynamic("corrected")(corrected.get.asInstanceOf[js.Any])
-    if (correctedText != null) __obj.updateDynamic("correctedText")(correctedText.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpellingCorrection]
   }
+  @scala.inline
+  implicit class SchemaSpellingCorrectionOps[Self <: SchemaSpellingCorrection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCorrected(value: Boolean): Self = this.set("corrected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorrected: Self = this.set("corrected", js.undefined)
+    @scala.inline
+    def setCorrectedText(value: String): Self = this.set("correctedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorrectedText: Self = this.set("correctedText", js.undefined)
+  }
+  
 }
 

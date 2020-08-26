@@ -27,16 +27,36 @@ trait SchemaGetReportsResponse extends js.Object {
 
 object SchemaGetReportsResponse {
   @scala.inline
-  def apply(
-    queryCost: js.UndefOr[Double] = js.undefined,
-    reports: js.Array[SchemaReport] = null,
-    resourceQuotasRemaining: SchemaResourceQuotasRemaining = null
-  ): SchemaGetReportsResponse = {
+  def apply(): SchemaGetReportsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(queryCost)) __obj.updateDynamic("queryCost")(queryCost.get.asInstanceOf[js.Any])
-    if (reports != null) __obj.updateDynamic("reports")(reports.asInstanceOf[js.Any])
-    if (resourceQuotasRemaining != null) __obj.updateDynamic("resourceQuotasRemaining")(resourceQuotasRemaining.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetReportsResponse]
   }
+  @scala.inline
+  implicit class SchemaGetReportsResponseOps[Self <: SchemaGetReportsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryCost(value: Double): Self = this.set("queryCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryCost: Self = this.set("queryCost", js.undefined)
+    @scala.inline
+    def setReportsVarargs(value: SchemaReport*): Self = this.set("reports", js.Array(value :_*))
+    @scala.inline
+    def setReports(value: js.Array[SchemaReport]): Self = this.set("reports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReports: Self = this.set("reports", js.undefined)
+    @scala.inline
+    def setResourceQuotasRemaining(value: SchemaResourceQuotasRemaining): Self = this.set("resourceQuotasRemaining", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceQuotasRemaining: Self = this.set("resourceQuotasRemaining", js.undefined)
+  }
+  
 }
 

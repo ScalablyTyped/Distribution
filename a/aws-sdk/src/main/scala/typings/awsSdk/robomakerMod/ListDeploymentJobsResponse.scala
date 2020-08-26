@@ -18,11 +18,32 @@ trait ListDeploymentJobsResponse extends js.Object {
 
 object ListDeploymentJobsResponse {
   @scala.inline
-  def apply(deploymentJobs: DeploymentJobs = null, nextToken: PaginationToken = null): ListDeploymentJobsResponse = {
+  def apply(): ListDeploymentJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (deploymentJobs != null) __obj.updateDynamic("deploymentJobs")(deploymentJobs.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeploymentJobsResponse]
   }
+  @scala.inline
+  implicit class ListDeploymentJobsResponseOps[Self <: ListDeploymentJobsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeploymentJobsVarargs(value: DeploymentJob*): Self = this.set("deploymentJobs", js.Array(value :_*))
+    @scala.inline
+    def setDeploymentJobs(value: DeploymentJobs): Self = this.set("deploymentJobs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentJobs: Self = this.set("deploymentJobs", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

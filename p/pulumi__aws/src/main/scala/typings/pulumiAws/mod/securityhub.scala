@@ -30,6 +30,7 @@ object securityhub extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: AccountArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: AccountArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -85,8 +86,10 @@ object securityhub extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.securityhubAccountMod.Account = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.securityhubAccountMod.Account = js.native
     def get(name: String, id: Input[ID], state: AccountState): typings.pulumiAws.securityhubAccountMod.Account = js.native
     def get(name: String, id: Input[ID], state: AccountState, opts: CustomResourceOptions): typings.pulumiAws.securityhubAccountMod.Account = js.native
     /**
@@ -106,8 +109,10 @@ object securityhub extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.securityhubMemberMod.Member = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.securityhubMemberMod.Member = js.native
     def get(name: String, id: Input[ID], state: MemberState): typings.pulumiAws.securityhubMemberMod.Member = js.native
     def get(name: String, id: Input[ID], state: MemberState, opts: CustomResourceOptions): typings.pulumiAws.securityhubMemberMod.Member = js.native
     /**
@@ -127,8 +132,10 @@ object securityhub extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.productSubscriptionMod.ProductSubscription = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.productSubscriptionMod.ProductSubscription = js.native
     def get(name: String, id: Input[ID], state: ProductSubscriptionState): typings.pulumiAws.productSubscriptionMod.ProductSubscription = js.native
     def get(name: String, id: Input[ID], state: ProductSubscriptionState, opts: CustomResourceOptions): typings.pulumiAws.productSubscriptionMod.ProductSubscription = js.native
     /**
@@ -148,8 +155,10 @@ object securityhub extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.standardsSubscriptionMod.StandardsSubscription = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.standardsSubscriptionMod.StandardsSubscription = js.native
     def get(name: String, id: Input[ID], state: StandardsSubscriptionState): typings.pulumiAws.standardsSubscriptionMod.StandardsSubscription = js.native
     def get(name: String, id: Input[ID], state: StandardsSubscriptionState, opts: CustomResourceOptions): typings.pulumiAws.standardsSubscriptionMod.StandardsSubscription = js.native
     /**

@@ -42,6 +42,7 @@ object iconNamesMod extends js.Object {
   val ARROW_UP: /* "arrow-up" */ String = js.native
   val ASTERISK: /* "asterisk" */ String = js.native
   val AUTOMATIC_UPDATES: /* "automatic-updates" */ String = js.native
+  val BACKLINK: /* "backlink" */ String = js.native
   val BADGE: /* "badge" */ String = js.native
   val BANK_ACCOUNT: /* "bank-account" */ String = js.native
   val BAN_CIRCLE: /* "ban-circle" */ String = js.native
@@ -189,6 +190,7 @@ object iconNamesMod extends js.Object {
   val FULL_STACKED_CHART: /* "full-stacked-chart" */ String = js.native
   val FUNCTION: /* "function" */ String = js.native
   val GANTT_CHART: /* "gantt-chart" */ String = js.native
+  val GEOFENCE: /* "geofence" */ String = js.native
   val GEOLOCATION: /* "geolocation" */ String = js.native
   val GEOSEARCH: /* "geosearch" */ String = js.native
   val GIT_BRANCH: /* "git-branch" */ String = js.native

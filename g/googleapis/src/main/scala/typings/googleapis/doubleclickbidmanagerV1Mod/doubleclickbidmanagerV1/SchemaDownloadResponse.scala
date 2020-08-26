@@ -34,22 +34,46 @@ trait SchemaDownloadResponse extends js.Object {
 
 object SchemaDownloadResponse {
   @scala.inline
-  def apply(
-    adGroups: String = null,
-    ads: String = null,
-    campaigns: String = null,
-    insertionOrders: String = null,
-    inventorySources: String = null,
-    lineItems: String = null
-  ): SchemaDownloadResponse = {
+  def apply(): SchemaDownloadResponse = {
     val __obj = js.Dynamic.literal()
-    if (adGroups != null) __obj.updateDynamic("adGroups")(adGroups.asInstanceOf[js.Any])
-    if (ads != null) __obj.updateDynamic("ads")(ads.asInstanceOf[js.Any])
-    if (campaigns != null) __obj.updateDynamic("campaigns")(campaigns.asInstanceOf[js.Any])
-    if (insertionOrders != null) __obj.updateDynamic("insertionOrders")(insertionOrders.asInstanceOf[js.Any])
-    if (inventorySources != null) __obj.updateDynamic("inventorySources")(inventorySources.asInstanceOf[js.Any])
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDownloadResponse]
   }
+  @scala.inline
+  implicit class SchemaDownloadResponseOps[Self <: SchemaDownloadResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdGroups(value: String): Self = this.set("adGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdGroups: Self = this.set("adGroups", js.undefined)
+    @scala.inline
+    def setAds(value: String): Self = this.set("ads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAds: Self = this.set("ads", js.undefined)
+    @scala.inline
+    def setCampaigns(value: String): Self = this.set("campaigns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaigns: Self = this.set("campaigns", js.undefined)
+    @scala.inline
+    def setInsertionOrders(value: String): Self = this.set("insertionOrders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertionOrders: Self = this.set("insertionOrders", js.undefined)
+    @scala.inline
+    def setInventorySources(value: String): Self = this.set("inventorySources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventorySources: Self = this.set("inventorySources", js.undefined)
+    @scala.inline
+    def setLineItems(value: String): Self = this.set("lineItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineItems: Self = this.set("lineItems", js.undefined)
+  }
+  
 }
 

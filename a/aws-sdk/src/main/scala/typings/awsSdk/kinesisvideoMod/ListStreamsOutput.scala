@@ -18,11 +18,32 @@ trait ListStreamsOutput extends js.Object {
 
 object ListStreamsOutput {
   @scala.inline
-  def apply(NextToken: NextToken = null, StreamInfoList: StreamInfoList = null): ListStreamsOutput = {
+  def apply(): ListStreamsOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StreamInfoList != null) __obj.updateDynamic("StreamInfoList")(StreamInfoList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStreamsOutput]
   }
+  @scala.inline
+  implicit class ListStreamsOutputOps[Self <: ListStreamsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStreamInfoListVarargs(value: StreamInfo*): Self = this.set("StreamInfoList", js.Array(value :_*))
+    @scala.inline
+    def setStreamInfoList(value: StreamInfoList): Self = this.set("StreamInfoList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamInfoList: Self = this.set("StreamInfoList", js.undefined)
+  }
+  
 }
 

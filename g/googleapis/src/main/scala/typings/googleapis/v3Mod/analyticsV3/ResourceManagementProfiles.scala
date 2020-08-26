@@ -29,6 +29,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementProfilesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementProfilesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -58,6 +59,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaProfile] = js.native
   def get(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
   def get(params: ParamsResourceManagementProfilesGet): GaxiosPromise[SchemaProfile] = js.native
   def get(params: ParamsResourceManagementProfilesGet, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
   def get(
@@ -87,6 +89,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaProfile] = js.native
   def insert(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
   def insert(params: ParamsResourceManagementProfilesInsert): GaxiosPromise[SchemaProfile] = js.native
   def insert(params: ParamsResourceManagementProfilesInsert, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
   def insert(
@@ -117,6 +120,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaProfiles] = js.native
   def list(callback: BodyResponseCallback[SchemaProfiles]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfiles] = js.native
   def list(params: ParamsResourceManagementProfilesList): GaxiosPromise[SchemaProfiles] = js.native
   def list(params: ParamsResourceManagementProfilesList, callback: BodyResponseCallback[SchemaProfiles]): Unit = js.native
   def list(
@@ -148,6 +152,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaProfile] = js.native
   def patch(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
   def patch(params: ParamsResourceManagementProfilesPatch): GaxiosPromise[SchemaProfile] = js.native
   def patch(params: ParamsResourceManagementProfilesPatch, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
   def patch(
@@ -178,6 +183,7 @@ class ResourceManagementProfiles protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaProfile] = js.native
   def update(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
   def update(params: ParamsResourceManagementProfilesUpdate): GaxiosPromise[SchemaProfile] = js.native
   def update(params: ParamsResourceManagementProfilesUpdate, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
   def update(

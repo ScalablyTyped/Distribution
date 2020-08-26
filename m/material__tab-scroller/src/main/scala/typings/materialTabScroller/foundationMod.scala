@@ -17,9 +17,6 @@ object foundationMod extends js.Object {
   @js.native
   class MDCTabScrollerFoundation () extends MDCFoundation[MDCTabScrollerAdapter] {
     def this(adapter: PartialMDCTabScrollerAdap) = this()
-    // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
-    /* CompleteClass */
-    override def destroy(): Unit = js.native
     /**
       * @return Browser-specific {@link MDCTabScrollerRTL} instance.
       */
@@ -46,9 +43,6 @@ object foundationMod extends js.Object {
       * @param scrollXIncrement The value by which to increment the scroll position
       */
     def incrementScrollImmediate(scrollXIncrement: Double): Unit = js.native
-    // Subclasses should override this method to perform initialization routines (registering events, etc.)
-    /* CompleteClass */
-    override def init(): Unit = js.native
     /**
       * Scrolls to the given scrollX value
       */
@@ -63,17 +57,17 @@ object foundationMod extends js.Object {
   /* static members */
   @js.native
   object MDCTabScrollerFoundation extends js.Object {
-    val cssClasses: ANIMATING = js.native
-    val defaultAdapter: MDCTabScrollerAdapter = js.native
-    val strings: AREASELECTOR = js.native
+    def cssClasses: ANIMATING = js.native
+    def defaultAdapter: MDCTabScrollerAdapter = js.native
+    def strings: AREASELECTOR = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    val cssClasses: ANIMATING = js.native
-    val defaultAdapter: MDCTabScrollerAdapter = js.native
-    val strings: AREASELECTOR = js.native
+    def cssClasses: ANIMATING = js.native
+    def defaultAdapter: MDCTabScrollerAdapter = js.native
+    def strings: AREASELECTOR = js.native
   }
   
 }

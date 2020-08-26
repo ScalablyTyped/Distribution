@@ -32,6 +32,191 @@ trait OLEObjects extends js.Object {
   var Visible: Boolean = js.native
   var Width: Double = js.native
   val ZOrder: Double = js.native
+  def Add(ClassType: String): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double,
+    Height: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double,
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double,
+    Width: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double,
+    Width: Double,
+    Height: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double,
+    Height: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: Double,
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: Double,
+    Width: Double
+  ): OLEObject = js.native
+  def Add(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: Double,
+    Width: Double,
+    Height: Double
+  ): OLEObject = js.native
   @JSName("Add")
   def Add_false(
     ClassType: js.UndefOr[scala.Nothing],
@@ -51,14 +236,206 @@ trait OLEObjects extends js.Object {
     ClassType: String,
     Filename: js.UndefOr[scala.Nothing],
     Link: js.UndefOr[scala.Nothing],
-    DisplayAsIcon: js.UndefOr[`false`],
+    DisplayAsIcon: `false`
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
     IconFileName: js.UndefOr[scala.Nothing],
     IconIndex: js.UndefOr[scala.Nothing],
     IconLabel: js.UndefOr[scala.Nothing],
-    Left: js.UndefOr[Double],
-    Top: js.UndefOr[Double],
-    Width: js.UndefOr[Double],
-    Height: js.UndefOr[Double]
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double,
+    Height: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double,
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double,
+    Width: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Nothing],
+    Top: Double,
+    Width: Double,
+    Height: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: js.UndefOr[scala.Nothing],
+    Width: Double,
+    Height: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: Double,
+    Width: js.UndefOr[scala.Nothing],
+    Height: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: Double,
+    Width: Double
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_false(
+    ClassType: String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: `false`,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: Double,
+    Top: Double,
+    Width: Double,
+    Height: Double
   ): OLEObject = js.native
   @JSName("Add")
   def Add_true(
@@ -95,6 +472,7 @@ trait OLEObjects extends js.Object {
     * @param Format [Format=-4147]
     */
   def CopyPicture(): js.Any = js.native
+  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
   def Cut(): js.Any = js.native

@@ -22,16 +22,34 @@ trait ConnectionLogResponseOptions extends js.Object {
 
 object ConnectionLogResponseOptions {
   @scala.inline
-  def apply(
-    CloudwatchLogGroup: String = null,
-    CloudwatchLogStream: String = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined
-  ): ConnectionLogResponseOptions = {
+  def apply(): ConnectionLogResponseOptions = {
     val __obj = js.Dynamic.literal()
-    if (CloudwatchLogGroup != null) __obj.updateDynamic("CloudwatchLogGroup")(CloudwatchLogGroup.asInstanceOf[js.Any])
-    if (CloudwatchLogStream != null) __obj.updateDynamic("CloudwatchLogStream")(CloudwatchLogStream.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionLogResponseOptions]
   }
+  @scala.inline
+  implicit class ConnectionLogResponseOptionsOps[Self <: ConnectionLogResponseOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudwatchLogGroup(value: String): Self = this.set("CloudwatchLogGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchLogGroup: Self = this.set("CloudwatchLogGroup", js.undefined)
+    @scala.inline
+    def setCloudwatchLogStream(value: String): Self = this.set("CloudwatchLogStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchLogStream: Self = this.set("CloudwatchLogStream", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+  }
+  
 }
 

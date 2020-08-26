@@ -64,6 +64,7 @@ trait Recordset extends js.Object {
   def Fields(Item: String): Field = js.native
   def Fields(Item: Double): Field = js.native
   def FillCache(): Unit = js.native
+  def FillCache(Rows: js.UndefOr[scala.Nothing], StartBookmark: String): Unit = js.native
   def FillCache(Rows: Double): Unit = js.native
   def FillCache(Rows: Double, StartBookmark: String): Unit = js.native
   def FindFirst(Criteria: String): Unit = js.native
@@ -82,6 +83,7 @@ trait Recordset extends js.Object {
   def MovePrevious(): Unit = js.native
   def NextRecordset(): Boolean = js.native
   def OpenRecordset(): Recordset = js.native
+  def OpenRecordset(Type: js.UndefOr[scala.Nothing], Options: RecordsetOptionEnum): Recordset = js.native
   def OpenRecordset(Type: RecordsetTypeEnum): Recordset = js.native
   def OpenRecordset(Type: RecordsetTypeEnum, Options: RecordsetOptionEnum): Recordset = js.native
   def Properties(Item: String): Property = js.native
@@ -109,6 +111,7 @@ trait Recordset extends js.Object {
     * @param Force [Force=false]
     */
   def Update(): Unit = js.native
+  def Update(UpdateType: js.UndefOr[scala.Nothing], Force: Boolean): Unit = js.native
   def Update(UpdateType: UpdateTypeEnum): Unit = js.native
   def Update(UpdateType: UpdateTypeEnum, Force: Boolean): Unit = js.native
 }

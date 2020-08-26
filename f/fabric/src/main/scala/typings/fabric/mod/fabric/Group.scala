@@ -15,7 +15,15 @@ import scala.scalajs.js.annotation._
 class Group ()
   extends typings.fabric.fabricImplMod.Group {
   def this(objects: js.Array[typings.fabric.fabricImplMod.Object]) = this()
+  def this(objects: js.UndefOr[scala.Nothing], options: IGroupOptions) = this()
   def this(objects: js.Array[typings.fabric.fabricImplMod.Object], options: IGroupOptions) = this()
+  def this(objects: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], isAlreadyGrouped: Boolean) = this()
+  def this(objects: js.UndefOr[scala.Nothing], options: IGroupOptions, isAlreadyGrouped: Boolean) = this()
+  def this(
+    objects: js.Array[typings.fabric.fabricImplMod.Object],
+    options: js.UndefOr[scala.Nothing],
+    isAlreadyGrouped: Boolean
+  ) = this()
   def this(
     objects: js.Array[typings.fabric.fabricImplMod.Object],
     options: IGroupOptions,

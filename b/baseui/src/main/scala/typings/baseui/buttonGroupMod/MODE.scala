@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MODE extends js.Object {
-  var checkbox: typings.baseui.baseuiStrings.checkbox
-  var radio: typings.baseui.baseuiStrings.radio
+  var checkbox: typings.baseui.baseuiStrings.checkbox = js.native
+  var radio: typings.baseui.baseuiStrings.radio = js.native
 }
 
 @JSImport("baseui/button-group", "MODE")

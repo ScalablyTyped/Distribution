@@ -21,28 +21,58 @@ trait PartialStyleRulesTabsClas extends js.Object {
 
 object PartialStyleRulesTabsClas {
   @scala.inline
-  def apply(
-    centered: CSSProperties = null,
-    fixed: CSSProperties = null,
-    flexContainer: CSSProperties = null,
-    indicator: CSSProperties = null,
-    root: CSSProperties = null,
-    scrollButtons: CSSProperties = null,
-    scrollButtonsAuto: CSSProperties = null,
-    scrollable: CSSProperties = null,
-    scroller: CSSProperties = null
-  ): PartialStyleRulesTabsClas = {
+  def apply(): PartialStyleRulesTabsClas = {
     val __obj = js.Dynamic.literal()
-    if (centered != null) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
-    if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
-    if (flexContainer != null) __obj.updateDynamic("flexContainer")(flexContainer.asInstanceOf[js.Any])
-    if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (scrollButtons != null) __obj.updateDynamic("scrollButtons")(scrollButtons.asInstanceOf[js.Any])
-    if (scrollButtonsAuto != null) __obj.updateDynamic("scrollButtonsAuto")(scrollButtonsAuto.asInstanceOf[js.Any])
-    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
-    if (scroller != null) __obj.updateDynamic("scroller")(scroller.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesTabsClas]
   }
+  @scala.inline
+  implicit class PartialStyleRulesTabsClasOps[Self <: PartialStyleRulesTabsClas] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCentered(value: CSSProperties): Self = this.set("centered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCentered: Self = this.set("centered", js.undefined)
+    @scala.inline
+    def setFixed(value: CSSProperties): Self = this.set("fixed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixed: Self = this.set("fixed", js.undefined)
+    @scala.inline
+    def setFlexContainer(value: CSSProperties): Self = this.set("flexContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexContainer: Self = this.set("flexContainer", js.undefined)
+    @scala.inline
+    def setIndicator(value: CSSProperties): Self = this.set("indicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndicator: Self = this.set("indicator", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setScrollButtons(value: CSSProperties): Self = this.set("scrollButtons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollButtons: Self = this.set("scrollButtons", js.undefined)
+    @scala.inline
+    def setScrollButtonsAuto(value: CSSProperties): Self = this.set("scrollButtonsAuto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollButtonsAuto: Self = this.set("scrollButtonsAuto", js.undefined)
+    @scala.inline
+    def setScrollable(value: CSSProperties): Self = this.set("scrollable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollable: Self = this.set("scrollable", js.undefined)
+    @scala.inline
+    def setScroller(value: CSSProperties): Self = this.set("scroller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScroller: Self = this.set("scroller", js.undefined)
+  }
+  
 }
 

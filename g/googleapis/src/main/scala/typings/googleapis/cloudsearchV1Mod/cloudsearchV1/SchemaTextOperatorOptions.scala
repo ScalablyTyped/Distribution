@@ -40,11 +40,30 @@ trait SchemaTextOperatorOptions extends js.Object {
 
 object SchemaTextOperatorOptions {
   @scala.inline
-  def apply(exactMatchWithOperator: js.UndefOr[Boolean] = js.undefined, operatorName: String = null): SchemaTextOperatorOptions = {
+  def apply(): SchemaTextOperatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exactMatchWithOperator)) __obj.updateDynamic("exactMatchWithOperator")(exactMatchWithOperator.get.asInstanceOf[js.Any])
-    if (operatorName != null) __obj.updateDynamic("operatorName")(operatorName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTextOperatorOptions]
   }
+  @scala.inline
+  implicit class SchemaTextOperatorOptionsOps[Self <: SchemaTextOperatorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExactMatchWithOperator(value: Boolean): Self = this.set("exactMatchWithOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExactMatchWithOperator: Self = this.set("exactMatchWithOperator", js.undefined)
+    @scala.inline
+    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,13 @@
 package typings.spectacle.mod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.FC
+import typings.spectacle.anon.AnimationsWhenGoingBack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("spectacle", "Deck")
 @js.native
-class Deck ()
-  extends Component[DeckProps, js.Object, js.Any]
+object Deck extends TopLevel[FC[AnimationsWhenGoingBack]]
 

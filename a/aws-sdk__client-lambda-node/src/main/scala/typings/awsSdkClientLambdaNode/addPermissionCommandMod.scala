@@ -26,16 +26,9 @@ object addPermissionCommandMod extends js.Object {
           Readable
         ] {
     def this(input: AddPermissionInput) = this()
-    /* CompleteClass */
-    override val input: AddPermissionInput = js.native
     val middlewareStack: MiddlewareStack[AddPermissionInput, AddPermissionOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: LambdaResolvedConfiguration
-    ): Handler[AddPermissionInput, AddPermissionOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: LambdaResolvedConfiguration
     ): Handler[AddPermissionInput, AddPermissionOutput] = js.native
   }

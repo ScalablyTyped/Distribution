@@ -8,12 +8,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnsupportedOperation
   extends ServiceException[UnsupportedOperationDetails]
      with SendMessageBatchExceptionsUnion
      with SendMessageExceptionsUnion {
   @JSName("name")
-  var name_UnsupportedOperation: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.UnsupportedOperation
+  var name_UnsupportedOperation: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.UnsupportedOperation = js.native
 }
 
 object UnsupportedOperation {
@@ -22,12 +23,25 @@ object UnsupportedOperation {
     $metadata: ResponseMetadata,
     details: UnsupportedOperationDetails,
     message: String,
-    name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.UnsupportedOperation,
-    stack: String = null
+    name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.UnsupportedOperation
   ): UnsupportedOperation = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsupportedOperation]
   }
+  @scala.inline
+  implicit class UnsupportedOperationOps[Self <: UnsupportedOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.UnsupportedOperation): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

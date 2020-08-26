@@ -14,14 +14,6 @@ object callThroughMethodStubMod extends js.Object {
     var instance: js.Any = js.native
     var method: js.Any = js.native
     var result: js.Any = js.native
-    /* CompleteClass */
-    override def execute(args: js.Array[_]): Unit = js.native
-    /* CompleteClass */
-    override def getGroupIndex(): Double = js.native
-    /* CompleteClass */
-    override def getValue(): js.Any = js.native
-    /* CompleteClass */
-    override def isApplicable(args: js.Array[_]): Boolean = js.native
   }
   
 }

@@ -22,8 +22,35 @@ class StaticReflector protected ()
   def this(
     summaryResolver: typings.angularCompiler.srcSummaryResolverMod.SummaryResolver[typings.angularCompiler.staticSymbolMod.StaticSymbol],
     symbolResolver: typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver,
+    knownMetadataClasses: js.UndefOr[scala.Nothing],
+    knownMetadataFunctions: js.Array[FilePath]
+  ) = this()
+  def this(
+    summaryResolver: typings.angularCompiler.srcSummaryResolverMod.SummaryResolver[typings.angularCompiler.staticSymbolMod.StaticSymbol],
+    symbolResolver: typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver,
     knownMetadataClasses: js.Array[Ctor],
     knownMetadataFunctions: js.Array[FilePath]
+  ) = this()
+  def this(
+    summaryResolver: typings.angularCompiler.srcSummaryResolverMod.SummaryResolver[typings.angularCompiler.staticSymbolMod.StaticSymbol],
+    symbolResolver: typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver,
+    knownMetadataClasses: js.UndefOr[scala.Nothing],
+    knownMetadataFunctions: js.UndefOr[scala.Nothing],
+    errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
+  ) = this()
+  def this(
+    summaryResolver: typings.angularCompiler.srcSummaryResolverMod.SummaryResolver[typings.angularCompiler.staticSymbolMod.StaticSymbol],
+    symbolResolver: typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver,
+    knownMetadataClasses: js.UndefOr[scala.Nothing],
+    knownMetadataFunctions: js.Array[FilePath],
+    errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
+  ) = this()
+  def this(
+    summaryResolver: typings.angularCompiler.srcSummaryResolverMod.SummaryResolver[typings.angularCompiler.staticSymbolMod.StaticSymbol],
+    symbolResolver: typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver,
+    knownMetadataClasses: js.Array[Ctor],
+    knownMetadataFunctions: js.UndefOr[scala.Nothing],
+    errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
   ) = this()
   def this(
     summaryResolver: typings.angularCompiler.srcSummaryResolverMod.SummaryResolver[typings.angularCompiler.staticSymbolMod.StaticSymbol],

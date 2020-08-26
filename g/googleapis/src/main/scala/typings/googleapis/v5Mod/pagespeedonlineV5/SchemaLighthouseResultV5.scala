@@ -75,38 +75,80 @@ trait SchemaLighthouseResultV5 extends js.Object {
 
 object SchemaLighthouseResultV5 {
   @scala.inline
-  def apply(
-    audits: StringDictionary[SchemaLighthouseAuditResultV5] = null,
-    categories: Accessibility = null,
-    categoryGroups: StringDictionary[DescriptionTitle] = null,
-    configSettings: EmulatedFormFactor = null,
-    environment: BenchmarkIndex = null,
-    fetchTime: String = null,
-    finalUrl: String = null,
-    i18n: RendererFormattedStrings = null,
-    lighthouseVersion: String = null,
-    requestedUrl: String = null,
-    runWarnings: js.Array[_] = null,
-    runtimeError: CodeMessage = null,
-    timing: Total = null,
-    userAgent: String = null
-  ): SchemaLighthouseResultV5 = {
+  def apply(): SchemaLighthouseResultV5 = {
     val __obj = js.Dynamic.literal()
-    if (audits != null) __obj.updateDynamic("audits")(audits.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (categoryGroups != null) __obj.updateDynamic("categoryGroups")(categoryGroups.asInstanceOf[js.Any])
-    if (configSettings != null) __obj.updateDynamic("configSettings")(configSettings.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (fetchTime != null) __obj.updateDynamic("fetchTime")(fetchTime.asInstanceOf[js.Any])
-    if (finalUrl != null) __obj.updateDynamic("finalUrl")(finalUrl.asInstanceOf[js.Any])
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (lighthouseVersion != null) __obj.updateDynamic("lighthouseVersion")(lighthouseVersion.asInstanceOf[js.Any])
-    if (requestedUrl != null) __obj.updateDynamic("requestedUrl")(requestedUrl.asInstanceOf[js.Any])
-    if (runWarnings != null) __obj.updateDynamic("runWarnings")(runWarnings.asInstanceOf[js.Any])
-    if (runtimeError != null) __obj.updateDynamic("runtimeError")(runtimeError.asInstanceOf[js.Any])
-    if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLighthouseResultV5]
   }
+  @scala.inline
+  implicit class SchemaLighthouseResultV5Ops[Self <: SchemaLighthouseResultV5] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudits(value: StringDictionary[SchemaLighthouseAuditResultV5]): Self = this.set("audits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudits: Self = this.set("audits", js.undefined)
+    @scala.inline
+    def setCategories(value: Accessibility): Self = this.set("categories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategories: Self = this.set("categories", js.undefined)
+    @scala.inline
+    def setCategoryGroups(value: StringDictionary[DescriptionTitle]): Self = this.set("categoryGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryGroups: Self = this.set("categoryGroups", js.undefined)
+    @scala.inline
+    def setConfigSettings(value: EmulatedFormFactor): Self = this.set("configSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigSettings: Self = this.set("configSettings", js.undefined)
+    @scala.inline
+    def setEnvironment(value: BenchmarkIndex): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setFetchTime(value: String): Self = this.set("fetchTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchTime: Self = this.set("fetchTime", js.undefined)
+    @scala.inline
+    def setFinalUrl(value: String): Self = this.set("finalUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalUrl: Self = this.set("finalUrl", js.undefined)
+    @scala.inline
+    def setI18n(value: RendererFormattedStrings): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteI18n: Self = this.set("i18n", js.undefined)
+    @scala.inline
+    def setLighthouseVersion(value: String): Self = this.set("lighthouseVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLighthouseVersion: Self = this.set("lighthouseVersion", js.undefined)
+    @scala.inline
+    def setRequestedUrl(value: String): Self = this.set("requestedUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedUrl: Self = this.set("requestedUrl", js.undefined)
+    @scala.inline
+    def setRunWarningsVarargs(value: js.Any*): Self = this.set("runWarnings", js.Array(value :_*))
+    @scala.inline
+    def setRunWarnings(value: js.Array[_]): Self = this.set("runWarnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunWarnings: Self = this.set("runWarnings", js.undefined)
+    @scala.inline
+    def setRuntimeError(value: CodeMessage): Self = this.set("runtimeError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeError: Self = this.set("runtimeError", js.undefined)
+    @scala.inline
+    def setTiming(value: Total): Self = this.set("timing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTiming: Self = this.set("timing", js.undefined)
+    @scala.inline
+    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+  }
+  
 }
 

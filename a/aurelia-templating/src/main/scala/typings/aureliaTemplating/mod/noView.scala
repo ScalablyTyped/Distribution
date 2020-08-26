@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object noView extends js.Object {
   def apply(): js.Any = js.native
+  def apply(targetOrDependencies: js.UndefOr[scala.Nothing], dependencyBaseUrl: String): js.Any = js.native
   def apply(targetOrDependencies: js.Array[_]): js.Any = js.native
   def apply(targetOrDependencies: js.Array[_], dependencyBaseUrl: String): js.Any = js.native
   def apply(targetOrDependencies: js.Function): js.Any = js.native

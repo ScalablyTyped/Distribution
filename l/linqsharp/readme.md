@@ -12,7 +12,7 @@ Linq methods based on .NET
 | Keywords           | linq |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 452 |
+| # downloads        | 392 |
 | # stars            | 1 |
 
 ## Links

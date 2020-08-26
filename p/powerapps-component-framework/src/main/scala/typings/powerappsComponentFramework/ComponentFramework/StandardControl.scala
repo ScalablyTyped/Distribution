@@ -31,7 +31,26 @@ trait StandardControl[TInputs, TOutputs] extends js.Object {
     * @param container If a control is marked control-type='standard', it will receive an empty div element within which it can render its content.
     */
   def init(context: Context[TInputs]): Unit = js.native
+  def init(
+    context: Context[TInputs],
+    notifyOutputChanged: js.UndefOr[scala.Nothing],
+    state: js.UndefOr[scala.Nothing],
+    container: HTMLDivElement
+  ): Unit = js.native
+  def init(context: Context[TInputs], notifyOutputChanged: js.UndefOr[scala.Nothing], state: Dictionary): Unit = js.native
+  def init(
+    context: Context[TInputs],
+    notifyOutputChanged: js.UndefOr[scala.Nothing],
+    state: Dictionary,
+    container: HTMLDivElement
+  ): Unit = js.native
   def init(context: Context[TInputs], notifyOutputChanged: js.Function0[Unit]): Unit = js.native
+  def init(
+    context: Context[TInputs],
+    notifyOutputChanged: js.Function0[Unit],
+    state: js.UndefOr[scala.Nothing],
+    container: HTMLDivElement
+  ): Unit = js.native
   def init(context: Context[TInputs], notifyOutputChanged: js.Function0[Unit], state: Dictionary): Unit = js.native
   def init(
     context: Context[TInputs],

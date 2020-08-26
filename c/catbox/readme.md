@@ -12,7 +12,7 @@ Multi-strategy object caching service
 | Keywords           | cache, generic, adapter |
 | # releases         | 6 |
 | # dependents       | 29 |
-| # downloads        | 10301480 |
+| # downloads        | 10167801 |
 | # stars            | 9 |
 
 ## Links

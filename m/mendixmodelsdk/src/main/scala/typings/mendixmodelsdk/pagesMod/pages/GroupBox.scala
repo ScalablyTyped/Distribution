@@ -30,24 +30,20 @@ class GroupBox protected () extends ConditionallyVisibleWidget {
   ) = this()
   @JSName("model")
   var model_FGroupBox: IModel = js.native
-  def caption(): js.Any = js.native
-  def caption(newValue: ClientTemplate): js.Any = js.native
-  @JSName("caption")
-  def caption_Union: ClientTemplate | Null = js.native
+  def caption: ClientTemplate | Null = js.native
+  def caption_=(newValue: ClientTemplate | Null): Unit = js.native
   def collapsible: GroupBoxCollapsible = js.native
-  def collapsible(newValue: GroupBoxCollapsible): js.Any = js.native
+  def collapsible_=(newValue: GroupBoxCollapsible): Unit = js.native
   /**
     * In version 8.10.0: introduced
     */
   def headerMode: GroupBoxRenderMode = js.native
-  def headerMode(newValue: GroupBoxRenderMode): js.Any = js.native
-  def widget(): js.Any = js.native
-  def widget(newValue: Widget): js.Any = js.native
+  def headerMode_=(newValue: GroupBoxRenderMode): Unit = js.native
   /**
     * In version 7.15.0: deleted
     */
-  @JSName("widget")
-  def widget_Union: Widget | Null = js.native
+  def widget: Widget | Null = js.native
+  def widget_=(newValue: Widget | Null): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */

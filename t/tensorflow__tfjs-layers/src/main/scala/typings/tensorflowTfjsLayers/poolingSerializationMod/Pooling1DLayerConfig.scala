@@ -1,45 +1,52 @@
 package typings.tensorflowTfjsLayers.poolingSerializationMod
 
-import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Pooling1DLayerConfig extends LayerConfig {
-  var padding: js.UndefOr[PaddingMode] = js.undefined
-  var pool_size: js.UndefOr[js.Array[Double]] = js.undefined
-  var strides: js.UndefOr[js.Array[Double]] = js.undefined
+  var padding: js.UndefOr[PaddingMode] = js.native
+  var pool_size: js.UndefOr[js.Array[Double]] = js.native
+  var strides: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object Pooling1DLayerConfig {
   @scala.inline
-  def apply(
-    batch_input_shape: Shape = null,
-    batch_size: js.UndefOr[Double] = js.undefined,
-    dtype: DataType = null,
-    input_dtype: DataType = null,
-    input_shape: Shape = null,
-    name: String = null,
-    padding: PaddingMode = null,
-    pool_size: js.Array[Double] = null,
-    strides: js.Array[Double] = null,
-    trainable: js.UndefOr[Boolean] = js.undefined
-  ): Pooling1DLayerConfig = {
+  def apply(): Pooling1DLayerConfig = {
     val __obj = js.Dynamic.literal()
-    if (batch_input_shape != null) __obj.updateDynamic("batch_input_shape")(batch_input_shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(batch_size)) __obj.updateDynamic("batch_size")(batch_size.get.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (input_dtype != null) __obj.updateDynamic("input_dtype")(input_dtype.asInstanceOf[js.Any])
-    if (input_shape != null) __obj.updateDynamic("input_shape")(input_shape.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pool_size != null) __obj.updateDynamic("pool_size")(pool_size.asInstanceOf[js.Any])
-    if (strides != null) __obj.updateDynamic("strides")(strides.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pooling1DLayerConfig]
   }
+  @scala.inline
+  implicit class Pooling1DLayerConfigOps[Self <: Pooling1DLayerConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPadding(value: PaddingMode): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPool_sizeVarargs(value: Double*): Self = this.set("pool_size", js.Array(value :_*))
+    @scala.inline
+    def setPool_size(value: js.Array[Double]): Self = this.set("pool_size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePool_size: Self = this.set("pool_size", js.undefined)
+    @scala.inline
+    def setStridesVarargs(value: Double*): Self = this.set("strides", js.Array(value :_*))
+    @scala.inline
+    def setStrides(value: js.Array[Double]): Self = this.set("strides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrides: Self = this.set("strides", js.undefined)
+  }
+  
 }
 

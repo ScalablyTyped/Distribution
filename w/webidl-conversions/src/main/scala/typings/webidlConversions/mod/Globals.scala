@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Globals
   extends /* key */ StringDictionary[js.Any] {
-  var TypeError: Instantiable1[js.UndefOr[/* message */ String], typings.std.TypeError] = js.native
+  var TypeError: Instantiable1[/* message */ js.UndefOr[String], typings.std.TypeError] = js.native
   def Number(): Double = js.native
   def Number(value: js.Any): Double = js.native
   def String(): java.lang.String = js.native

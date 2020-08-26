@@ -61,8 +61,8 @@ object directoryserviceMod extends js.Object {
     def this(name: String, args: LogServiceArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getDirectory(args: GetDirectoryArgs): js.Promise[GetDirectoryResult] with GetDirectoryResult = js.native
-  def getDirectory(args: GetDirectoryArgs, opts: InvokeOptions): js.Promise[GetDirectoryResult] with GetDirectoryResult = js.native
+  def getDirectory(args: GetDirectoryArgs): js.Promise[GetDirectoryResult] = js.native
+  def getDirectory(args: GetDirectoryArgs, opts: InvokeOptions): js.Promise[GetDirectoryResult] = js.native
   /* static members */
   @js.native
   object ConditionalForwader extends js.Object {
@@ -73,8 +73,10 @@ object directoryserviceMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.conditionalForwaderMod.ConditionalForwader = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.conditionalForwaderMod.ConditionalForwader = js.native
     def get(name: String, id: Input[ID], state: ConditionalForwaderState): typings.pulumiAws.conditionalForwaderMod.ConditionalForwader = js.native
     def get(name: String, id: Input[ID], state: ConditionalForwaderState, opts: CustomResourceOptions): typings.pulumiAws.conditionalForwaderMod.ConditionalForwader = js.native
     /**
@@ -94,8 +96,10 @@ object directoryserviceMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.directoryMod.Directory = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.directoryMod.Directory = js.native
     def get(name: String, id: Input[ID], state: DirectoryState): typings.pulumiAws.directoryMod.Directory = js.native
     def get(name: String, id: Input[ID], state: DirectoryState, opts: CustomResourceOptions): typings.pulumiAws.directoryMod.Directory = js.native
     /**
@@ -115,8 +119,10 @@ object directoryserviceMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.logServiceMod.LogService = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.logServiceMod.LogService = js.native
     def get(name: String, id: Input[ID], state: LogServiceState): typings.pulumiAws.logServiceMod.LogService = js.native
     def get(name: String, id: Input[ID], state: LogServiceState, opts: CustomResourceOptions): typings.pulumiAws.logServiceMod.LogService = js.native
     /**

@@ -25,12 +25,34 @@ trait SchemaLabelDescriptor extends js.Object {
 
 object SchemaLabelDescriptor {
   @scala.inline
-  def apply(description: String = null, key: String = null, valueType: String = null): SchemaLabelDescriptor = {
+  def apply(): SchemaLabelDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLabelDescriptor]
   }
+  @scala.inline
+  implicit class SchemaLabelDescriptorOps[Self <: SchemaLabelDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setValueType(value: String): Self = this.set("valueType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueType: Self = this.set("valueType", js.undefined)
+  }
+  
 }
 

@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stat-mode", JSImport.Namespace)
 @js.native
-class ^ protected () extends Mode {
-  def this(stat: typings.statMode.anon.Mode) = this()
+object ^ extends js.Object {
+  def apply(): Mode = js.native
+  def apply(stat: Double): Mode = js.native
+  def apply(stat: StatsMode): Mode = js.native
 }
 

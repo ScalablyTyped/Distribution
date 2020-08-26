@@ -51,39 +51,73 @@ trait ExtendedS3DestinationConfiguration extends js.Object {
     */
   var S3BackupConfiguration: js.UndefOr[S3DestinationConfiguration] = js.native
   /**
-    * The Amazon S3 backup mode.
+    * The Amazon S3 backup mode. After you create a delivery stream, you can update it to enable Amazon S3 backup if it is disabled. If backup is enabled, you can't update the delivery stream to disable it. 
     */
   var S3BackupMode: js.UndefOr[typings.awsSdk.firehoseMod.S3BackupMode] = js.native
 }
 
 object ExtendedS3DestinationConfiguration {
   @scala.inline
-  def apply(
-    BucketARN: BucketARN,
-    RoleARN: RoleARN,
-    BufferingHints: BufferingHints = null,
-    CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
-    CompressionFormat: CompressionFormat = null,
-    DataFormatConversionConfiguration: DataFormatConversionConfiguration = null,
-    EncryptionConfiguration: EncryptionConfiguration = null,
-    ErrorOutputPrefix: ErrorOutputPrefix = null,
-    Prefix: Prefix = null,
-    ProcessingConfiguration: ProcessingConfiguration = null,
-    S3BackupConfiguration: S3DestinationConfiguration = null,
-    S3BackupMode: S3BackupMode = null
-  ): ExtendedS3DestinationConfiguration = {
+  def apply(BucketARN: BucketARN, RoleARN: RoleARN): ExtendedS3DestinationConfiguration = {
     val __obj = js.Dynamic.literal(BucketARN = BucketARN.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any])
-    if (BufferingHints != null) __obj.updateDynamic("BufferingHints")(BufferingHints.asInstanceOf[js.Any])
-    if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions.asInstanceOf[js.Any])
-    if (CompressionFormat != null) __obj.updateDynamic("CompressionFormat")(CompressionFormat.asInstanceOf[js.Any])
-    if (DataFormatConversionConfiguration != null) __obj.updateDynamic("DataFormatConversionConfiguration")(DataFormatConversionConfiguration.asInstanceOf[js.Any])
-    if (EncryptionConfiguration != null) __obj.updateDynamic("EncryptionConfiguration")(EncryptionConfiguration.asInstanceOf[js.Any])
-    if (ErrorOutputPrefix != null) __obj.updateDynamic("ErrorOutputPrefix")(ErrorOutputPrefix.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
-    if (ProcessingConfiguration != null) __obj.updateDynamic("ProcessingConfiguration")(ProcessingConfiguration.asInstanceOf[js.Any])
-    if (S3BackupConfiguration != null) __obj.updateDynamic("S3BackupConfiguration")(S3BackupConfiguration.asInstanceOf[js.Any])
-    if (S3BackupMode != null) __obj.updateDynamic("S3BackupMode")(S3BackupMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedS3DestinationConfiguration]
   }
+  @scala.inline
+  implicit class ExtendedS3DestinationConfigurationOps[Self <: ExtendedS3DestinationConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketARN(value: BucketARN): Self = this.set("BucketARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBufferingHints(value: BufferingHints): Self = this.set("BufferingHints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferingHints: Self = this.set("BufferingHints", js.undefined)
+    @scala.inline
+    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = this.set("CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLoggingOptions: Self = this.set("CloudWatchLoggingOptions", js.undefined)
+    @scala.inline
+    def setCompressionFormat(value: CompressionFormat): Self = this.set("CompressionFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompressionFormat: Self = this.set("CompressionFormat", js.undefined)
+    @scala.inline
+    def setDataFormatConversionConfiguration(value: DataFormatConversionConfiguration): Self = this.set("DataFormatConversionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataFormatConversionConfiguration: Self = this.set("DataFormatConversionConfiguration", js.undefined)
+    @scala.inline
+    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("EncryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionConfiguration: Self = this.set("EncryptionConfiguration", js.undefined)
+    @scala.inline
+    def setErrorOutputPrefix(value: ErrorOutputPrefix): Self = this.set("ErrorOutputPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorOutputPrefix: Self = this.set("ErrorOutputPrefix", js.undefined)
+    @scala.inline
+    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    @scala.inline
+    def setProcessingConfiguration(value: ProcessingConfiguration): Self = this.set("ProcessingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingConfiguration: Self = this.set("ProcessingConfiguration", js.undefined)
+    @scala.inline
+    def setS3BackupConfiguration(value: S3DestinationConfiguration): Self = this.set("S3BackupConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BackupConfiguration: Self = this.set("S3BackupConfiguration", js.undefined)
+    @scala.inline
+    def setS3BackupMode(value: S3BackupMode): Self = this.set("S3BackupMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BackupMode: Self = this.set("S3BackupMode", js.undefined)
+  }
+  
 }
 

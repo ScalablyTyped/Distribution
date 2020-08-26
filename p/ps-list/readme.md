@@ -11,8 +11,8 @@ Get running processes
 | Full name          | ps-list |
 | Keywords           | ps, proc, process, processes, list, running, tasklist |
 | # releases         | 8 |
-| # dependents       | 37 |
-| # downloads        | 6420468 |
+| # dependents       | 35 |
+| # downloads        | 7210187 |
 | # stars            | 6 |
 
 ## Links

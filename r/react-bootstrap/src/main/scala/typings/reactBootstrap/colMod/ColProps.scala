@@ -7,84 +7,135 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColProps
   extends AllHTMLAttributes[Col]
      with ClassAttributes[Col] {
-  var componentClass: js.UndefOr[ReactType[_]] = js.undefined
-  var lg: js.UndefOr[Double] = js.undefined
-  var lgHidden: js.UndefOr[Boolean] = js.undefined
-  var lgOffset: js.UndefOr[Double] = js.undefined
-  var lgPull: js.UndefOr[Double] = js.undefined
-  var lgPush: js.UndefOr[Double] = js.undefined
-  var md: js.UndefOr[Double] = js.undefined
-  var mdHidden: js.UndefOr[Boolean] = js.undefined
-  var mdOffset: js.UndefOr[Double] = js.undefined
-  var mdPull: js.UndefOr[Double] = js.undefined
-  var mdPush: js.UndefOr[Double] = js.undefined
-  var sm: js.UndefOr[Double] = js.undefined
-  var smHidden: js.UndefOr[Boolean] = js.undefined
-  var smOffset: js.UndefOr[Double] = js.undefined
-  var smPull: js.UndefOr[Double] = js.undefined
-  var smPush: js.UndefOr[Double] = js.undefined
-  var xs: js.UndefOr[Double] = js.undefined
-  var xsHidden: js.UndefOr[Boolean] = js.undefined
-  var xsOffset: js.UndefOr[Double] = js.undefined
-  var xsPull: js.UndefOr[Double] = js.undefined
-  var xsPush: js.UndefOr[Double] = js.undefined
+  var componentClass: js.UndefOr[ReactType[_]] = js.native
+  var lg: js.UndefOr[Double] = js.native
+  var lgHidden: js.UndefOr[Boolean] = js.native
+  var lgOffset: js.UndefOr[Double] = js.native
+  var lgPull: js.UndefOr[Double] = js.native
+  var lgPush: js.UndefOr[Double] = js.native
+  var md: js.UndefOr[Double] = js.native
+  var mdHidden: js.UndefOr[Boolean] = js.native
+  var mdOffset: js.UndefOr[Double] = js.native
+  var mdPull: js.UndefOr[Double] = js.native
+  var mdPush: js.UndefOr[Double] = js.native
+  var sm: js.UndefOr[Double] = js.native
+  var smHidden: js.UndefOr[Boolean] = js.native
+  var smOffset: js.UndefOr[Double] = js.native
+  var smPull: js.UndefOr[Double] = js.native
+  var smPush: js.UndefOr[Double] = js.native
+  var xs: js.UndefOr[Double] = js.native
+  var xsHidden: js.UndefOr[Boolean] = js.native
+  var xsOffset: js.UndefOr[Double] = js.native
+  var xsPull: js.UndefOr[Double] = js.native
+  var xsPush: js.UndefOr[Double] = js.native
 }
 
 object ColProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[Col] = null,
-    ClassAttributes: ClassAttributes[Col] = null,
-    componentClass: ReactType[_] = null,
-    lg: js.UndefOr[Double] = js.undefined,
-    lgHidden: js.UndefOr[Boolean] = js.undefined,
-    lgOffset: js.UndefOr[Double] = js.undefined,
-    lgPull: js.UndefOr[Double] = js.undefined,
-    lgPush: js.UndefOr[Double] = js.undefined,
-    md: js.UndefOr[Double] = js.undefined,
-    mdHidden: js.UndefOr[Boolean] = js.undefined,
-    mdOffset: js.UndefOr[Double] = js.undefined,
-    mdPull: js.UndefOr[Double] = js.undefined,
-    mdPush: js.UndefOr[Double] = js.undefined,
-    sm: js.UndefOr[Double] = js.undefined,
-    smHidden: js.UndefOr[Boolean] = js.undefined,
-    smOffset: js.UndefOr[Double] = js.undefined,
-    smPull: js.UndefOr[Double] = js.undefined,
-    smPush: js.UndefOr[Double] = js.undefined,
-    xs: js.UndefOr[Double] = js.undefined,
-    xsHidden: js.UndefOr[Boolean] = js.undefined,
-    xsOffset: js.UndefOr[Double] = js.undefined,
-    xsPull: js.UndefOr[Double] = js.undefined,
-    xsPush: js.UndefOr[Double] = js.undefined
-  ): ColProps = {
+  def apply(): ColProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(lg)) __obj.updateDynamic("lg")(lg.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgHidden)) __obj.updateDynamic("lgHidden")(lgHidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgOffset)) __obj.updateDynamic("lgOffset")(lgOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgPull)) __obj.updateDynamic("lgPull")(lgPull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgPush)) __obj.updateDynamic("lgPush")(lgPush.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(md)) __obj.updateDynamic("md")(md.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdHidden)) __obj.updateDynamic("mdHidden")(mdHidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdOffset)) __obj.updateDynamic("mdOffset")(mdOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdPull)) __obj.updateDynamic("mdPull")(mdPull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdPush)) __obj.updateDynamic("mdPush")(mdPush.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sm)) __obj.updateDynamic("sm")(sm.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(smHidden)) __obj.updateDynamic("smHidden")(smHidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(smOffset)) __obj.updateDynamic("smOffset")(smOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(smPull)) __obj.updateDynamic("smPull")(smPull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(smPush)) __obj.updateDynamic("smPush")(smPush.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xs)) __obj.updateDynamic("xs")(xs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsHidden)) __obj.updateDynamic("xsHidden")(xsHidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsOffset)) __obj.updateDynamic("xsOffset")(xsOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsPull)) __obj.updateDynamic("xsPull")(xsPull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsPush)) __obj.updateDynamic("xsPush")(xsPush.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColProps]
   }
+  @scala.inline
+  implicit class ColPropsOps[Self <: ColProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentClass(value: ReactType[_]): Self = this.set("componentClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentClass: Self = this.set("componentClass", js.undefined)
+    @scala.inline
+    def setLg(value: Double): Self = this.set("lg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLg: Self = this.set("lg", js.undefined)
+    @scala.inline
+    def setLgHidden(value: Boolean): Self = this.set("lgHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLgHidden: Self = this.set("lgHidden", js.undefined)
+    @scala.inline
+    def setLgOffset(value: Double): Self = this.set("lgOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLgOffset: Self = this.set("lgOffset", js.undefined)
+    @scala.inline
+    def setLgPull(value: Double): Self = this.set("lgPull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLgPull: Self = this.set("lgPull", js.undefined)
+    @scala.inline
+    def setLgPush(value: Double): Self = this.set("lgPush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLgPush: Self = this.set("lgPush", js.undefined)
+    @scala.inline
+    def setMd(value: Double): Self = this.set("md", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMd: Self = this.set("md", js.undefined)
+    @scala.inline
+    def setMdHidden(value: Boolean): Self = this.set("mdHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMdHidden: Self = this.set("mdHidden", js.undefined)
+    @scala.inline
+    def setMdOffset(value: Double): Self = this.set("mdOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMdOffset: Self = this.set("mdOffset", js.undefined)
+    @scala.inline
+    def setMdPull(value: Double): Self = this.set("mdPull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMdPull: Self = this.set("mdPull", js.undefined)
+    @scala.inline
+    def setMdPush(value: Double): Self = this.set("mdPush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMdPush: Self = this.set("mdPush", js.undefined)
+    @scala.inline
+    def setSm(value: Double): Self = this.set("sm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSm: Self = this.set("sm", js.undefined)
+    @scala.inline
+    def setSmHidden(value: Boolean): Self = this.set("smHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmHidden: Self = this.set("smHidden", js.undefined)
+    @scala.inline
+    def setSmOffset(value: Double): Self = this.set("smOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmOffset: Self = this.set("smOffset", js.undefined)
+    @scala.inline
+    def setSmPull(value: Double): Self = this.set("smPull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmPull: Self = this.set("smPull", js.undefined)
+    @scala.inline
+    def setSmPush(value: Double): Self = this.set("smPush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmPush: Self = this.set("smPush", js.undefined)
+    @scala.inline
+    def setXs(value: Double): Self = this.set("xs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXs: Self = this.set("xs", js.undefined)
+    @scala.inline
+    def setXsHidden(value: Boolean): Self = this.set("xsHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXsHidden: Self = this.set("xsHidden", js.undefined)
+    @scala.inline
+    def setXsOffset(value: Double): Self = this.set("xsOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXsOffset: Self = this.set("xsOffset", js.undefined)
+    @scala.inline
+    def setXsPull(value: Double): Self = this.set("xsPull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXsPull: Self = this.set("xsPull", js.undefined)
+    @scala.inline
+    def setXsPush(value: Double): Self = this.set("xsPush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXsPush: Self = this.set("xsPush", js.undefined)
+  }
+  
 }
 

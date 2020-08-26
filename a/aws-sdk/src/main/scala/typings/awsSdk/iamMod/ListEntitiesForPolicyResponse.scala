@@ -30,20 +30,48 @@ trait ListEntitiesForPolicyResponse extends js.Object {
 
 object ListEntitiesForPolicyResponse {
   @scala.inline
-  def apply(
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: responseMarkerType = null,
-    PolicyGroups: PolicyGroupListType = null,
-    PolicyRoles: PolicyRoleListType = null,
-    PolicyUsers: PolicyUserListType = null
-  ): ListEntitiesForPolicyResponse = {
+  def apply(): ListEntitiesForPolicyResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (PolicyGroups != null) __obj.updateDynamic("PolicyGroups")(PolicyGroups.asInstanceOf[js.Any])
-    if (PolicyRoles != null) __obj.updateDynamic("PolicyRoles")(PolicyRoles.asInstanceOf[js.Any])
-    if (PolicyUsers != null) __obj.updateDynamic("PolicyUsers")(PolicyUsers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEntitiesForPolicyResponse]
   }
+  @scala.inline
+  implicit class ListEntitiesForPolicyResponseOps[Self <: ListEntitiesForPolicyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setMarker(value: responseMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setPolicyGroupsVarargs(value: PolicyGroup*): Self = this.set("PolicyGroups", js.Array(value :_*))
+    @scala.inline
+    def setPolicyGroups(value: PolicyGroupListType): Self = this.set("PolicyGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyGroups: Self = this.set("PolicyGroups", js.undefined)
+    @scala.inline
+    def setPolicyRolesVarargs(value: PolicyRole*): Self = this.set("PolicyRoles", js.Array(value :_*))
+    @scala.inline
+    def setPolicyRoles(value: PolicyRoleListType): Self = this.set("PolicyRoles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyRoles: Self = this.set("PolicyRoles", js.undefined)
+    @scala.inline
+    def setPolicyUsersVarargs(value: PolicyUser*): Self = this.set("PolicyUsers", js.Array(value :_*))
+    @scala.inline
+    def setPolicyUsers(value: PolicyUserListType): Self = this.set("PolicyUsers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyUsers: Self = this.set("PolicyUsers", js.undefined)
+  }
+  
 }
 

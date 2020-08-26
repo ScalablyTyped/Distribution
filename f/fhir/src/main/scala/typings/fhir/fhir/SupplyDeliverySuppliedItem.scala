@@ -7,45 +7,52 @@ import scala.scalajs.js.annotation._
 /**
   * The item that is delivered or supplied
   */
+@js.native
 trait SupplyDeliverySuppliedItem extends BackboneElement {
   /**
     * Medication, Substance, or Device supplied
     */
-  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
+  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.native
   /**
     * Medication, Substance, or Device supplied
     */
-  var itemReference: js.UndefOr[Reference] = js.undefined
+  var itemReference: js.UndefOr[Reference] = js.native
   /**
     * Amount dispensed
     */
-  var quantity: js.UndefOr[Quantity] = js.undefined
+  var quantity: js.UndefOr[Quantity] = js.native
 }
 
 object SupplyDeliverySuppliedItem {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    itemCodeableConcept: CodeableConcept = null,
-    itemReference: Reference = null,
-    modifierExtension: js.Array[Extension] = null,
-    quantity: Quantity = null
-  ): SupplyDeliverySuppliedItem = {
+  def apply(): SupplyDeliverySuppliedItem = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemCodeableConcept != null) __obj.updateDynamic("itemCodeableConcept")(itemCodeableConcept.asInstanceOf[js.Any])
-    if (itemReference != null) __obj.updateDynamic("itemReference")(itemReference.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupplyDeliverySuppliedItem]
   }
+  @scala.inline
+  implicit class SupplyDeliverySuppliedItemOps[Self <: SupplyDeliverySuppliedItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemCodeableConcept(value: CodeableConcept): Self = this.set("itemCodeableConcept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemCodeableConcept: Self = this.set("itemCodeableConcept", js.undefined)
+    @scala.inline
+    def setItemReference(value: Reference): Self = this.set("itemReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemReference: Self = this.set("itemReference", js.undefined)
+    @scala.inline
+    def setQuantity(value: Quantity): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantity: Self = this.set("quantity", js.undefined)
+  }
+  
 }
 

@@ -6,71 +6,123 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DPlayerOptions
   extends /* key */ StringDictionary[js.Any] {
-  var apiBackend: js.UndefOr[DPlayerAPIBackend] = js.undefined
-  var autoplay: js.UndefOr[Boolean] = js.undefined
-  var container: HTMLElement | Null
-  var contextmenu: js.UndefOr[js.Array[DPlayerContextMenuItem]] = js.undefined
-  var danmaku: js.UndefOr[DPlayerDanmaku] = js.undefined
-  var highlight: js.UndefOr[js.Array[DPlayerHighLightItem]] = js.undefined
-  var hotkey: js.UndefOr[Boolean] = js.undefined
-  var lang: js.UndefOr[Lang | String] = js.undefined
-  var live: js.UndefOr[Boolean] = js.undefined
-  var logo: js.UndefOr[String] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var mutex: js.UndefOr[Boolean] = js.undefined
-  var preload: js.UndefOr[Preload] = js.undefined
-  var screenshot: js.UndefOr[Boolean] = js.undefined
-  var subtitle: js.UndefOr[DPlayerSubTitle] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
-  var video: js.UndefOr[DPlayerVideo] = js.undefined
-  var volume: js.UndefOr[Double] = js.undefined
+  var apiBackend: js.UndefOr[DPlayerAPIBackend] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.native
+  var container: HTMLElement | Null = js.native
+  var contextmenu: js.UndefOr[js.Array[DPlayerContextMenuItem]] = js.native
+  var danmaku: js.UndefOr[DPlayerDanmaku] = js.native
+  var highlight: js.UndefOr[js.Array[DPlayerHighLightItem]] = js.native
+  var hotkey: js.UndefOr[Boolean] = js.native
+  var lang: js.UndefOr[Lang | String] = js.native
+  var live: js.UndefOr[Boolean] = js.native
+  var logo: js.UndefOr[String] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var mutex: js.UndefOr[Boolean] = js.native
+  var preload: js.UndefOr[Preload] = js.native
+  var screenshot: js.UndefOr[Boolean] = js.native
+  var subtitle: js.UndefOr[DPlayerSubTitle] = js.native
+  var theme: js.UndefOr[String] = js.native
+  var video: js.UndefOr[DPlayerVideo] = js.native
+  var volume: js.UndefOr[Double] = js.native
 }
 
 object DPlayerOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    apiBackend: DPlayerAPIBackend = null,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    container: HTMLElement = null,
-    contextmenu: js.Array[DPlayerContextMenuItem] = null,
-    danmaku: DPlayerDanmaku = null,
-    highlight: js.Array[DPlayerHighLightItem] = null,
-    hotkey: js.UndefOr[Boolean] = js.undefined,
-    lang: Lang | String = null,
-    live: js.UndefOr[Boolean] = js.undefined,
-    logo: String = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    mutex: js.UndefOr[Boolean] = js.undefined,
-    preload: Preload = null,
-    screenshot: js.UndefOr[Boolean] = js.undefined,
-    subtitle: DPlayerSubTitle = null,
-    theme: String = null,
-    video: DPlayerVideo = null,
-    volume: js.UndefOr[Double] = js.undefined
-  ): DPlayerOptions = {
-    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (apiBackend != null) __obj.updateDynamic("apiBackend")(apiBackend.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
-    if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu.asInstanceOf[js.Any])
-    if (danmaku != null) __obj.updateDynamic("danmaku")(danmaku.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(hotkey)) __obj.updateDynamic("hotkey")(hotkey.get.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.get.asInstanceOf[js.Any])
-    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mutex)) __obj.updateDynamic("mutex")(mutex.get.asInstanceOf[js.Any])
-    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenshot)) __obj.updateDynamic("screenshot")(screenshot.get.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
-    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
+  def apply(): DPlayerOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DPlayerOptions]
   }
+  @scala.inline
+  implicit class DPlayerOptionsOps[Self <: DPlayerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiBackend(value: DPlayerAPIBackend): Self = this.set("apiBackend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiBackend: Self = this.set("apiBackend", js.undefined)
+    @scala.inline
+    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    @scala.inline
+    def setContainer(value: HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContainerNull: Self = this.set("container", null)
+    @scala.inline
+    def setContextmenuVarargs(value: DPlayerContextMenuItem*): Self = this.set("contextmenu", js.Array(value :_*))
+    @scala.inline
+    def setContextmenu(value: js.Array[DPlayerContextMenuItem]): Self = this.set("contextmenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextmenu: Self = this.set("contextmenu", js.undefined)
+    @scala.inline
+    def setDanmaku(value: DPlayerDanmaku): Self = this.set("danmaku", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDanmaku: Self = this.set("danmaku", js.undefined)
+    @scala.inline
+    def setHighlightVarargs(value: DPlayerHighLightItem*): Self = this.set("highlight", js.Array(value :_*))
+    @scala.inline
+    def setHighlight(value: js.Array[DPlayerHighLightItem]): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    @scala.inline
+    def setHotkey(value: Boolean): Self = this.set("hotkey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHotkey: Self = this.set("hotkey", js.undefined)
+    @scala.inline
+    def setLang(value: Lang | String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setLive(value: Boolean): Self = this.set("live", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLive: Self = this.set("live", js.undefined)
+    @scala.inline
+    def setLogo(value: String): Self = this.set("logo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogo: Self = this.set("logo", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setMutex(value: Boolean): Self = this.set("mutex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMutex: Self = this.set("mutex", js.undefined)
+    @scala.inline
+    def setPreload(value: Preload): Self = this.set("preload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreload: Self = this.set("preload", js.undefined)
+    @scala.inline
+    def setScreenshot(value: Boolean): Self = this.set("screenshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenshot: Self = this.set("screenshot", js.undefined)
+    @scala.inline
+    def setSubtitle(value: DPlayerSubTitle): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setVideo(value: DPlayerVideo): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+    @scala.inline
+    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolume: Self = this.set("volume", js.undefined)
+  }
+  
 }
 

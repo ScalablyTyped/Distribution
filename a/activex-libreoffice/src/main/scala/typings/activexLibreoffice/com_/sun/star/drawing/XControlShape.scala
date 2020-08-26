@@ -13,22 +13,23 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.drawing.ControlShape
   * @see com.sun.star.awt.UnoControlModel
   */
+@js.native
 trait XControlShape extends XShape {
   /**
     * returns the control model of this {@link Shape} .
     * @returns if there is already a control model assigned to this {@link ControlShape} , than its returned. Otherwise you get an empty reference.
     */
-  var Control: XControlModel
+  var Control: XControlModel = js.native
   /**
     * returns the control model of this {@link Shape} .
     * @returns if there is already a control model assigned to this {@link ControlShape} , than its returned. Otherwise you get an empty reference.
     */
-  def getControl(): XControlModel
+  def getControl(): XControlModel = js.native
   /**
     * sets the control model for this {@link Shape} .
     * @param xControl this will be the new control model that is displayed with this shape. You may change the model more than once during the lifetime of a {
     */
-  def setControl(xControl: XControlModel): Unit
+  def setControl(xControl: XControlModel): Unit = js.native
 }
 
 object XControlShape {
@@ -52,5 +53,24 @@ object XControlShape {
     val __obj = js.Dynamic.literal(Control = Control.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], ShapeType = ShapeType.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getControl = js.Any.fromFunction0(getControl), getPosition = js.Any.fromFunction0(getPosition), getShapeType = js.Any.fromFunction0(getShapeType), getSize = js.Any.fromFunction0(getSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setControl = js.Any.fromFunction1(setControl), setPosition = js.Any.fromFunction1(setPosition), setSize = js.Any.fromFunction1(setSize))
     __obj.asInstanceOf[XControlShape]
   }
+  @scala.inline
+  implicit class XControlShapeOps[Self <: XControlShape] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setControl(value: XControlModel): Self = this.set("Control", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetControl(value: () => XControlModel): Self = this.set("getControl", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetControl(value: XControlModel => Unit): Self = this.set("setControl", js.Any.fromFunction1(value))
+  }
+  
 }
 

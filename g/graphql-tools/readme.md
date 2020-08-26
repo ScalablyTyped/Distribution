@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-tools
 
-Typings are for version 4.0.8
+Typings are for version 6.0.15
 
 ## Library description:
 Useful tools to create and manipulate GraphQL schemas.
@@ -10,9 +10,9 @@ Useful tools to create and manipulate GraphQL schemas.
 | ------------------ | :-------------: |
 | Full name          | graphql-tools |
 | Keywords           | GraphQL, Apollo, JavaScript, TypeScript, Mock, Schema, Schema Language, Tools |
-| # releases         | 53 |
-| # dependents       | 855 |
-| # downloads        | 39319409 |
+| # releases         | 45 |
+| # dependents       | 867 |
+| # downloads        | 40633461 |
 | # stars            | 21 |
 
 ## Links

@@ -10,9 +10,9 @@ Light weight job scheduler for Node.js
 | ------------------ | :-------------: |
 | Full name          | agenda |
 | Keywords           | job, jobs, cron, delayed, scheduler, runner |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 74 |
-| # downloads        | 1451229 |
+| # downloads        | 1487296 |
 | # stars            | 107 |
 
 ## Links

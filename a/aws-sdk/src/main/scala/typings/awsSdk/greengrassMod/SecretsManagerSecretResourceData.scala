@@ -18,11 +18,32 @@ trait SecretsManagerSecretResourceData extends js.Object {
 
 object SecretsManagerSecretResourceData {
   @scala.inline
-  def apply(ARN: string = null, AdditionalStagingLabelsToDownload: listOfString = null): SecretsManagerSecretResourceData = {
+  def apply(): SecretsManagerSecretResourceData = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (AdditionalStagingLabelsToDownload != null) __obj.updateDynamic("AdditionalStagingLabelsToDownload")(AdditionalStagingLabelsToDownload.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecretsManagerSecretResourceData]
   }
+  @scala.inline
+  implicit class SecretsManagerSecretResourceDataOps[Self <: SecretsManagerSecretResourceData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: string): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setAdditionalStagingLabelsToDownloadVarargs(value: string*): Self = this.set("AdditionalStagingLabelsToDownload", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalStagingLabelsToDownload(value: listOfString): Self = this.set("AdditionalStagingLabelsToDownload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalStagingLabelsToDownload: Self = this.set("AdditionalStagingLabelsToDownload", js.undefined)
+  }
+  
 }
 

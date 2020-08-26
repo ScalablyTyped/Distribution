@@ -18,11 +18,32 @@ trait SchemaPosDataProviders extends js.Object {
 
 object SchemaPosDataProviders {
   @scala.inline
-  def apply(country: String = null, posDataProviders: js.Array[SchemaPosDataProvidersPosDataProvider] = null): SchemaPosDataProviders = {
+  def apply(): SchemaPosDataProviders = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (posDataProviders != null) __obj.updateDynamic("posDataProviders")(posDataProviders.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPosDataProviders]
   }
+  @scala.inline
+  implicit class SchemaPosDataProvidersOps[Self <: SchemaPosDataProviders] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setPosDataProvidersVarargs(value: SchemaPosDataProvidersPosDataProvider*): Self = this.set("posDataProviders", js.Array(value :_*))
+    @scala.inline
+    def setPosDataProviders(value: js.Array[SchemaPosDataProvidersPosDataProvider]): Self = this.set("posDataProviders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosDataProviders: Self = this.set("posDataProviders", js.undefined)
+  }
+  
 }
 

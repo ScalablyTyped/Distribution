@@ -10,9 +10,9 @@ Library to embed Typeforms in your website
 | ------------------ | :-------------: |
 | Full name          | @typeform/embed |
 | Keywords           | - |
-| # releases         | 31 |
+| # releases         | 30 |
 | # dependents       | 7 |
-| # downloads        | 822839 |
+| # downloads        | 814991 |
 | # stars            | 2 |
 
 ## Links

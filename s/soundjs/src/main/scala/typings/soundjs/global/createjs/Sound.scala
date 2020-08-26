@@ -75,12 +75,95 @@ object Sound extends js.Object {
   def off(`type`: String, listener: `0`, useCapture: Boolean): Unit = js.native
    // It is necessary for "arguments.callee"
   def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.UndefOr[scala.Nothing],
+    once: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.UndefOr[scala.Nothing],
+    once: js.UndefOr[scala.Nothing],
+    data: js.Any
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.UndefOr[scala.Nothing],
+    once: js.UndefOr[scala.Nothing],
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.UndefOr[scala.Nothing],
+    once: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.UndefOr[scala.Nothing],
+    once: Boolean,
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.UndefOr[scala.Nothing],
+    once: Boolean,
+    data: js.Any
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.UndefOr[scala.Nothing],
+    once: Boolean,
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Function = js.native
   def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object): js.Function = js.native
   def on(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: js.Object,
+    once: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
+    once: js.UndefOr[scala.Nothing],
+    data: js.Any
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
+    once: js.UndefOr[scala.Nothing],
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
     once: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
+    once: Boolean,
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
   ): js.Function = js.native
   def on(
     `type`: String,
@@ -98,8 +181,86 @@ object Sound extends js.Object {
     useCapture: Boolean
   ): js.Function = js.native
   def on(`type`: String, listener: HandleEvent): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.UndefOr[scala.Nothing],
+    once: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.UndefOr[scala.Nothing],
+    once: js.UndefOr[scala.Nothing],
+    data: js.Any
+  ): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.UndefOr[scala.Nothing],
+    once: js.UndefOr[scala.Nothing],
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: js.UndefOr[scala.Nothing], once: Boolean): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.UndefOr[scala.Nothing],
+    once: Boolean,
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.UndefOr[scala.Nothing],
+    once: Boolean,
+    data: js.Any
+  ): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.UndefOr[scala.Nothing],
+    once: Boolean,
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Object = js.native
   def on(`type`: String, listener: HandleEvent, scope: js.Object): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.Object,
+    once: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.Object,
+    once: js.UndefOr[scala.Nothing],
+    data: js.Any
+  ): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.Object,
+    once: js.UndefOr[scala.Nothing],
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Object = js.native
   def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.Object,
+    once: Boolean,
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): js.Object = js.native
   def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
   def on(
     `type`: String,
@@ -110,8 +271,74 @@ object Sound extends js.Object {
     useCapture: Boolean
   ): js.Object = js.native
   def on(`type`: String, listener: `0`): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: `0`,
+    scope: js.UndefOr[scala.Nothing],
+    once: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: `0`,
+    scope: js.UndefOr[scala.Nothing],
+    once: js.UndefOr[scala.Nothing],
+    data: js.Any
+  ): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: `0`,
+    scope: js.UndefOr[scala.Nothing],
+    once: js.UndefOr[scala.Nothing],
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: js.UndefOr[scala.Nothing], once: Boolean): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: `0`,
+    scope: js.UndefOr[scala.Nothing],
+    once: Boolean,
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: js.UndefOr[scala.Nothing], once: Boolean, data: js.Any): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: `0`,
+    scope: js.UndefOr[scala.Nothing],
+    once: Boolean,
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: `0`,
+    scope: js.Object,
+    once: js.UndefOr[scala.Nothing],
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: js.Object, once: js.UndefOr[scala.Nothing], data: js.Any): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: `0`,
+    scope: js.Object,
+    once: js.UndefOr[scala.Nothing],
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: `0`,
+    scope: js.Object,
+    once: Boolean,
+    data: js.UndefOr[scala.Nothing],
+    useCapture: Boolean
+  ): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = js.native
   def play(
@@ -126,13 +353,25 @@ object Sound extends js.Object {
   def registerManifest(manifest: js.Array[js.Object], basePath: String): js.Object = js.native
   def registerPlugins(plugins: js.Array[_]): Boolean = js.native
   def registerSound(src: String): js.Object = js.native
+  def registerSound(src: String, id: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], basePath: String): js.Object = js.native
+  def registerSound(src: String, id: js.UndefOr[scala.Nothing], data: js.Object): js.Object = js.native
+  def registerSound(src: String, id: js.UndefOr[scala.Nothing], data: js.Object, basePath: String): js.Object = js.native
+  def registerSound(src: String, id: js.UndefOr[scala.Nothing], data: Double): js.Object = js.native
+  def registerSound(src: String, id: js.UndefOr[scala.Nothing], data: Double, basePath: String): js.Object = js.native
   def registerSound(src: String, id: String): js.Object = js.native
+  def registerSound(src: String, id: String, data: js.UndefOr[scala.Nothing], basePath: String): js.Object = js.native
   def registerSound(src: String, id: String, data: js.Object): js.Object = js.native
   def registerSound(src: String, id: String, data: js.Object, basePath: String): js.Object = js.native
   def registerSound(src: String, id: String, data: Double): js.Object = js.native
   def registerSound(src: String, id: String, data: Double, basePath: String): js.Object = js.native
   def registerSound(src: js.Object): js.Object = js.native
+  def registerSound(src: js.Object, id: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], basePath: String): js.Object = js.native
+  def registerSound(src: js.Object, id: js.UndefOr[scala.Nothing], data: js.Object): js.Object = js.native
+  def registerSound(src: js.Object, id: js.UndefOr[scala.Nothing], data: js.Object, basePath: String): js.Object = js.native
+  def registerSound(src: js.Object, id: js.UndefOr[scala.Nothing], data: Double): js.Object = js.native
+  def registerSound(src: js.Object, id: js.UndefOr[scala.Nothing], data: Double, basePath: String): js.Object = js.native
   def registerSound(src: js.Object, id: String): js.Object = js.native
+  def registerSound(src: js.Object, id: String, data: js.UndefOr[scala.Nothing], basePath: String): js.Object = js.native
   def registerSound(src: js.Object, id: String, data: js.Object): js.Object = js.native
   def registerSound(src: js.Object, id: String, data: js.Object, basePath: String): js.Object = js.native
   def registerSound(src: js.Object, id: String, data: Double): js.Object = js.native

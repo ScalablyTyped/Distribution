@@ -42,6 +42,7 @@ class Base[TConnection /* <: Connection */] () extends js.Object {
     */
   def send[ParamType, ParamCallbackType](eventName: String): Unit = js.native
   def send[ParamType, ParamCallbackType](eventName: String, params: ParamType, callback: ReplyCallback[ParamCallbackType]): Unit = js.native
+  def send[ParamType, ParamCallbackType](eventName: String, params: js.UndefOr[scala.Nothing], callback: ReplyCallback[ParamCallbackType]): Unit = js.native
   @JSName("send")
   def send_ParamTypeParamCallbackType[ParamType, ParamCallbackType](eventName: String, params: ParamType): Unit = js.native
 }

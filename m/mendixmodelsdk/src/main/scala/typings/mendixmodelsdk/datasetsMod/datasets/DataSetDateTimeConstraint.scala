@@ -23,9 +23,9 @@ class DataSetDateTimeConstraint protected () extends DataSetParameterConstraint 
   @JSName("model")
   var model_FDataSetDateTimeConstraint: IModel = js.native
   def length: DateTimeIntervalLength = js.native
-  def length(newValue: DateTimeIntervalLength): js.Any = js.native
+  def length_=(newValue: DateTimeIntervalLength): Unit = js.native
   def modifier: DateTimeIntervalModifier = js.native
-  def modifier(newValue: DateTimeIntervalModifier): js.Any = js.native
+  def modifier_=(newValue: DateTimeIntervalModifier): Unit = js.native
 }
 
 /* static members */

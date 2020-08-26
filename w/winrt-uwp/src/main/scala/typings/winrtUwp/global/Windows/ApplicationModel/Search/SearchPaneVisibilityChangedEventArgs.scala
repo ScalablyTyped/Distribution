@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Search.SearchPaneVisibilityChangedEventArgs")
 @js.native
 abstract class SearchPaneVisibilityChangedEventArgs ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneVisibilityChangedEventArgs {
-  /** Indicates whether the search pane is open. */
-  /* CompleteClass */
-  override var visible: Boolean = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneVisibilityChangedEventArgs
 

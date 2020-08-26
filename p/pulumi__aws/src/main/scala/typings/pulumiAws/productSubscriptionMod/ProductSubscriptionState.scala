@@ -19,11 +19,30 @@ trait ProductSubscriptionState extends js.Object {
 
 object ProductSubscriptionState {
   @scala.inline
-  def apply(arn: Input[String] = null, productArn: Input[String] = null): ProductSubscriptionState = {
+  def apply(): ProductSubscriptionState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (productArn != null) __obj.updateDynamic("productArn")(productArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductSubscriptionState]
   }
+  @scala.inline
+  implicit class ProductSubscriptionStateOps[Self <: ProductSubscriptionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setProductArn(value: Input[String]): Self = this.set("productArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductArn: Self = this.set("productArn", js.undefined)
+  }
+  
 }
 

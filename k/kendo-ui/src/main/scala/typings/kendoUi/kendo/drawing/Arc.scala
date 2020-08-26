@@ -13,6 +13,7 @@ trait Arc extends Element {
   def geometry(): typings.kendoUi.kendo.geometry.Arc = js.native
   def geometry(value: typings.kendoUi.kendo.geometry.Arc): Unit = js.native
   def stroke(color: String): Arc = js.native
+  def stroke(color: String, width: js.UndefOr[scala.Nothing], opacity: Double): Arc = js.native
   def stroke(color: String, width: Double): Arc = js.native
   def stroke(color: String, width: Double, opacity: Double): Arc = js.native
 }

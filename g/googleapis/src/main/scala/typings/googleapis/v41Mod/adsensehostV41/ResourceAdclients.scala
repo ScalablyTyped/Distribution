@@ -28,6 +28,7 @@ class ResourceAdclients protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAdClient] = js.native
   def get(callback: BodyResponseCallback[SchemaAdClient]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdClient] = js.native
   def get(params: ParamsResourceAdclientsGet): GaxiosPromise[SchemaAdClient] = js.native
   def get(params: ParamsResourceAdclientsGet, callback: BodyResponseCallback[SchemaAdClient]): Unit = js.native
   def get(
@@ -56,6 +57,7 @@ class ResourceAdclients protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAdClients] = js.native
   def list(callback: BodyResponseCallback[SchemaAdClients]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdClients] = js.native
   def list(params: ParamsResourceAdclientsList): GaxiosPromise[SchemaAdClients] = js.native
   def list(params: ParamsResourceAdclientsList, callback: BodyResponseCallback[SchemaAdClients]): Unit = js.native
   def list(

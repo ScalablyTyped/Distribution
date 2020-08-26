@@ -22,16 +22,34 @@ trait ReservationPurchaseRecommendationSummary extends js.Object {
 
 object ReservationPurchaseRecommendationSummary {
   @scala.inline
-  def apply(
-    CurrencyCode: GenericString = null,
-    TotalEstimatedMonthlySavingsAmount: GenericString = null,
-    TotalEstimatedMonthlySavingsPercentage: GenericString = null
-  ): ReservationPurchaseRecommendationSummary = {
+  def apply(): ReservationPurchaseRecommendationSummary = {
     val __obj = js.Dynamic.literal()
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (TotalEstimatedMonthlySavingsAmount != null) __obj.updateDynamic("TotalEstimatedMonthlySavingsAmount")(TotalEstimatedMonthlySavingsAmount.asInstanceOf[js.Any])
-    if (TotalEstimatedMonthlySavingsPercentage != null) __obj.updateDynamic("TotalEstimatedMonthlySavingsPercentage")(TotalEstimatedMonthlySavingsPercentage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservationPurchaseRecommendationSummary]
   }
+  @scala.inline
+  implicit class ReservationPurchaseRecommendationSummaryOps[Self <: ReservationPurchaseRecommendationSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrencyCode(value: GenericString): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    @scala.inline
+    def setTotalEstimatedMonthlySavingsAmount(value: GenericString): Self = this.set("TotalEstimatedMonthlySavingsAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalEstimatedMonthlySavingsAmount: Self = this.set("TotalEstimatedMonthlySavingsAmount", js.undefined)
+    @scala.inline
+    def setTotalEstimatedMonthlySavingsPercentage(value: GenericString): Self = this.set("TotalEstimatedMonthlySavingsPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalEstimatedMonthlySavingsPercentage: Self = this.set("TotalEstimatedMonthlySavingsPercentage", js.undefined)
+  }
+  
 }
 

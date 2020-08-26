@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tarn/lib/PromiseInspection", JSImport.Namespace)
+@JSImport("tarn/dist/PromiseInspection", JSImport.Namespace)
 @js.native
 object promiseInspectionMod extends js.Object {
   @js.native

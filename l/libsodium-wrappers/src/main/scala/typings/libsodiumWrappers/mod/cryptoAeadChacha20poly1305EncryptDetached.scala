@@ -13,15 +13,8 @@ object cryptoAeadChacha20poly1305EncryptDetached extends js.Object {
     additional_data: String | Uint8Array | Null,
     secret_nonce: String | Uint8Array | Null,
     public_nonce: Uint8Array,
-    key: Uint8Array
-  ): CryptoBox = js.native
-  def apply(
-    message: String | Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    secret_nonce: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
     key: Uint8Array,
-    outputFormat: Uint8ArrayOutputFormat
+    outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
   ): CryptoBox = js.native
   def apply(
     message: String,

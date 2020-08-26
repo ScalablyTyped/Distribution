@@ -147,64 +147,106 @@ trait ParamsResourceEventsWatch extends StandardParameters {
 
 object ParamsResourceEventsWatch {
   @scala.inline
-  def apply(
-    alt: String = null,
-    alwaysIncludeEmail: js.UndefOr[Boolean] = js.undefined,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    calendarId: String = null,
-    fields: String = null,
-    iCalUID: String = null,
-    key: String = null,
-    maxAttendees: js.UndefOr[Double] = js.undefined,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    oauth_token: String = null,
-    orderBy: String = null,
-    pageToken: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    privateExtendedProperty: js.Array[String] = null,
-    q: String = null,
-    quotaUser: String = null,
-    requestBody: SchemaChannel = null,
-    sharedExtendedProperty: js.Array[String] = null,
-    showDeleted: js.UndefOr[Boolean] = js.undefined,
-    showHiddenInvitations: js.UndefOr[Boolean] = js.undefined,
-    singleEvents: js.UndefOr[Boolean] = js.undefined,
-    syncToken: String = null,
-    timeMax: String = null,
-    timeMin: String = null,
-    timeZone: String = null,
-    updatedMin: String = null,
-    userIp: String = null
-  ): ParamsResourceEventsWatch = {
+  def apply(): ParamsResourceEventsWatch = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysIncludeEmail)) __obj.updateDynamic("alwaysIncludeEmail")(alwaysIncludeEmail.get.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (calendarId != null) __obj.updateDynamic("calendarId")(calendarId.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (iCalUID != null) __obj.updateDynamic("iCalUID")(iCalUID.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAttendees)) __obj.updateDynamic("maxAttendees")(maxAttendees.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (privateExtendedProperty != null) __obj.updateDynamic("privateExtendedProperty")(privateExtendedProperty.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (sharedExtendedProperty != null) __obj.updateDynamic("sharedExtendedProperty")(sharedExtendedProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDeleted)) __obj.updateDynamic("showDeleted")(showDeleted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHiddenInvitations)) __obj.updateDynamic("showHiddenInvitations")(showHiddenInvitations.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleEvents)) __obj.updateDynamic("singleEvents")(singleEvents.get.asInstanceOf[js.Any])
-    if (syncToken != null) __obj.updateDynamic("syncToken")(syncToken.asInstanceOf[js.Any])
-    if (timeMax != null) __obj.updateDynamic("timeMax")(timeMax.asInstanceOf[js.Any])
-    if (timeMin != null) __obj.updateDynamic("timeMin")(timeMin.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
-    if (updatedMin != null) __obj.updateDynamic("updatedMin")(updatedMin.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceEventsWatch]
   }
+  @scala.inline
+  implicit class ParamsResourceEventsWatchOps[Self <: ParamsResourceEventsWatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlwaysIncludeEmail(value: Boolean): Self = this.set("alwaysIncludeEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysIncludeEmail: Self = this.set("alwaysIncludeEmail", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setCalendarId(value: String): Self = this.set("calendarId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendarId: Self = this.set("calendarId", js.undefined)
+    @scala.inline
+    def setICalUID(value: String): Self = this.set("iCalUID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteICalUID: Self = this.set("iCalUID", js.undefined)
+    @scala.inline
+    def setMaxAttendees(value: Double): Self = this.set("maxAttendees", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAttendees: Self = this.set("maxAttendees", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setPrivateExtendedPropertyVarargs(value: String*): Self = this.set("privateExtendedProperty", js.Array(value :_*))
+    @scala.inline
+    def setPrivateExtendedProperty(value: js.Array[String]): Self = this.set("privateExtendedProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateExtendedProperty: Self = this.set("privateExtendedProperty", js.undefined)
+    @scala.inline
+    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ: Self = this.set("q", js.undefined)
+    @scala.inline
+    def setRequestBody(value: SchemaChannel): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    @scala.inline
+    def setSharedExtendedPropertyVarargs(value: String*): Self = this.set("sharedExtendedProperty", js.Array(value :_*))
+    @scala.inline
+    def setSharedExtendedProperty(value: js.Array[String]): Self = this.set("sharedExtendedProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedExtendedProperty: Self = this.set("sharedExtendedProperty", js.undefined)
+    @scala.inline
+    def setShowDeleted(value: Boolean): Self = this.set("showDeleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDeleted: Self = this.set("showDeleted", js.undefined)
+    @scala.inline
+    def setShowHiddenInvitations(value: Boolean): Self = this.set("showHiddenInvitations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowHiddenInvitations: Self = this.set("showHiddenInvitations", js.undefined)
+    @scala.inline
+    def setSingleEvents(value: Boolean): Self = this.set("singleEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleEvents: Self = this.set("singleEvents", js.undefined)
+    @scala.inline
+    def setSyncToken(value: String): Self = this.set("syncToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyncToken: Self = this.set("syncToken", js.undefined)
+    @scala.inline
+    def setTimeMax(value: String): Self = this.set("timeMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeMax: Self = this.set("timeMax", js.undefined)
+    @scala.inline
+    def setTimeMin(value: String): Self = this.set("timeMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeMin: Self = this.set("timeMin", js.undefined)
+    @scala.inline
+    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    @scala.inline
+    def setUpdatedMin(value: String): Self = this.set("updatedMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedMin: Self = this.set("updatedMin", js.undefined)
+  }
+  
 }
 

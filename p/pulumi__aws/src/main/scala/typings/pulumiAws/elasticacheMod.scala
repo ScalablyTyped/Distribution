@@ -37,6 +37,7 @@ object elasticacheMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: ClusterArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -96,10 +97,10 @@ object elasticacheMod extends js.Object {
     def this(name: String, args: SubnetGroupArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] with GetClusterResult = js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] with GetClusterResult = js.native
-  def getReplicationGroup(args: GetReplicationGroupArgs): js.Promise[GetReplicationGroupResult] with GetReplicationGroupResult = js.native
-  def getReplicationGroup(args: GetReplicationGroupArgs, opts: InvokeOptions): js.Promise[GetReplicationGroupResult] with GetReplicationGroupResult = js.native
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  def getReplicationGroup(args: GetReplicationGroupArgs): js.Promise[GetReplicationGroupResult] = js.native
+  def getReplicationGroup(args: GetReplicationGroupArgs, opts: InvokeOptions): js.Promise[GetReplicationGroupResult] = js.native
   /* static members */
   @js.native
   object Cluster extends js.Object {
@@ -110,8 +111,10 @@ object elasticacheMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticacheClusterMod.Cluster = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticacheClusterMod.Cluster = js.native
     def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.elasticacheClusterMod.Cluster = js.native
     def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.elasticacheClusterMod.Cluster = js.native
     /**
@@ -131,8 +134,10 @@ object elasticacheMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticacheParameterGroupMod.ParameterGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticacheParameterGroupMod.ParameterGroup = js.native
     def get(name: String, id: Input[ID], state: ParameterGroupState): typings.pulumiAws.elasticacheParameterGroupMod.ParameterGroup = js.native
     def get(name: String, id: Input[ID], state: ParameterGroupState, opts: CustomResourceOptions): typings.pulumiAws.elasticacheParameterGroupMod.ParameterGroup = js.native
     /**
@@ -152,8 +157,10 @@ object elasticacheMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.replicationGroupMod.ReplicationGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.replicationGroupMod.ReplicationGroup = js.native
     def get(name: String, id: Input[ID], state: ReplicationGroupState): typings.pulumiAws.replicationGroupMod.ReplicationGroup = js.native
     def get(name: String, id: Input[ID], state: ReplicationGroupState, opts: CustomResourceOptions): typings.pulumiAws.replicationGroupMod.ReplicationGroup = js.native
     /**
@@ -173,8 +180,10 @@ object elasticacheMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticacheSecurityGroupMod.SecurityGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticacheSecurityGroupMod.SecurityGroup = js.native
     def get(name: String, id: Input[ID], state: SecurityGroupState): typings.pulumiAws.elasticacheSecurityGroupMod.SecurityGroup = js.native
     def get(name: String, id: Input[ID], state: SecurityGroupState, opts: CustomResourceOptions): typings.pulumiAws.elasticacheSecurityGroupMod.SecurityGroup = js.native
     /**
@@ -194,8 +203,10 @@ object elasticacheMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.elasticacheSubnetGroupMod.SubnetGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.elasticacheSubnetGroupMod.SubnetGroup = js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState): typings.pulumiAws.elasticacheSubnetGroupMod.SubnetGroup = js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState, opts: CustomResourceOptions): typings.pulumiAws.elasticacheSubnetGroupMod.SubnetGroup = js.native
     /**

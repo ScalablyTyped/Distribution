@@ -16,11 +16,13 @@ object MKRadioButton extends js.Object {
   class Group () extends MKRadioButtonGroup {
     def this(onAdd: js.Function1[/* btn */ typings.reactNativeMaterialKit.mod.MKRadioButton.MKRadioButton, Unit]) = this()
     def this(
+      onAdd: js.UndefOr[scala.Nothing],
+      onRemove: js.Function1[/* btn */ typings.reactNativeMaterialKit.mod.MKRadioButton.MKRadioButton, Unit]
+    ) = this()
+    def this(
       onAdd: js.Function1[/* btn */ typings.reactNativeMaterialKit.mod.MKRadioButton.MKRadioButton, Unit],
       onRemove: js.Function1[/* btn */ typings.reactNativeMaterialKit.mod.MKRadioButton.MKRadioButton, Unit]
     ) = this()
-    /* CompleteClass */
-    override var buttons: js.Array[_] = js.native
     def add(btn: typings.reactNativeMaterialKit.mod.MKRadioButton.MKRadioButton): Unit = js.native
     def onChecked(btn: typings.reactNativeMaterialKit.mod.MKRadioButton.MKRadioButton, checked: Boolean): Unit = js.native
     def onRemoved(btn: typings.reactNativeMaterialKit.mod.MKRadioButton.MKRadioButton): Unit = js.native

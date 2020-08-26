@@ -1,34 +1,41 @@
 package typings.antDesignReactNative.anon
 
-import typings.reactNative.mod.ImageStyle
-import typings.reactNative.mod.RegisteredStyle
-import typings.reactNative.mod.TextStyle
-import typings.reactNative.mod.ViewStyle
+import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Icon extends js.Object {
-  var icon: RegisteredStyle[ImageStyle]
-  var radioItem: RegisteredStyle[ViewStyle]
-  var radioItemContent: RegisteredStyle[TextStyle]
-  var radioItemContentDisable: RegisteredStyle[TextStyle]
-  var radioItemRadio: RegisteredStyle[ViewStyle]
-  var wrapper: RegisteredStyle[ViewStyle]
+  var icon: Element = js.native
+  var text: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 420 */ js.Any = js.native
 }
 
 object Icon {
   @scala.inline
   def apply(
-    icon: RegisteredStyle[ImageStyle],
-    radioItem: RegisteredStyle[ViewStyle],
-    radioItemContent: RegisteredStyle[TextStyle],
-    radioItemContentDisable: RegisteredStyle[TextStyle],
-    radioItemRadio: RegisteredStyle[ViewStyle],
-    wrapper: RegisteredStyle[ViewStyle]
+    icon: Element,
+    text: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 420 */ js.Any
   ): Icon = {
-    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], radioItem = radioItem.asInstanceOf[js.Any], radioItemContent = radioItemContent.asInstanceOf[js.Any], radioItemContentDisable = radioItemContentDisable.asInstanceOf[js.Any], radioItemRadio = radioItemRadio.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Icon]
   }
+  @scala.inline
+  implicit class IconOps[Self <: Icon] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIcon(value: Element): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 420 */ js.Any): Self = this.set("text", value.asInstanceOf[js.Any])
+  }
+  
 }
 

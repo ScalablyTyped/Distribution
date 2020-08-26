@@ -23,7 +23,7 @@ object noiseMod extends js.Object {
     @js.native
     object Simplex
       extends TopLevel[
-              Instantiable1[js.UndefOr[/* gradients */ Double], typings.rotJs.simplexMod.default]
+              Instantiable1[/* gradients */ js.UndefOr[Double], typings.rotJs.simplexMod.default]
             ]
     
   }

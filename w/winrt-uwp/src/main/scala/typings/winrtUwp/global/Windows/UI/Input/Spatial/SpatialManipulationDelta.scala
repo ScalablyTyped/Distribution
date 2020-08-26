@@ -7,8 +7,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationDelta")
 @js.native
 abstract class SpatialManipulationDelta ()
-  extends typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationDelta {
-  /* CompleteClass */
-  override var translation: js.Any = js.native
-}
+  extends typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationDelta
 

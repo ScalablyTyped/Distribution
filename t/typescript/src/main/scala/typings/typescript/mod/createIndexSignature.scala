@@ -8,8 +8,26 @@ import scala.scalajs.js.annotation._
 @js.native
 object createIndexSignature extends js.Object {
   def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode
+  ): IndexSignatureDeclaration = js.native
+  def apply(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode
+  ): IndexSignatureDeclaration = js.native
+  def apply(
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode
+  ): IndexSignatureDeclaration = js.native
+  def apply(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): IndexSignatureDeclaration = js.native

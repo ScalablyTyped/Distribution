@@ -73,8 +73,10 @@ class Socket ()
   def end(buffer: String, cb: js.Function0[Unit]): Unit = js.native
   def end(buffer: Uint8Array): Unit = js.native
   def end(buffer: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: Uint8Array, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: Uint8Array, encoding: BufferEncoding): Unit = js.native
   def end(str: Uint8Array, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
@@ -152,6 +154,7 @@ class Socket ()
   def ref(): this.type = js.native
   def setEncoding(): this.type = js.native
   def setKeepAlive(): this.type = js.native
+  def setKeepAlive(enable: js.UndefOr[scala.Nothing], initialDelay: Double): this.type = js.native
   def setKeepAlive(enable: Boolean): this.type = js.native
   def setKeepAlive(enable: Boolean, initialDelay: Double): this.type = js.native
   def setNoDelay(): this.type = js.native
@@ -164,8 +167,18 @@ class Socket ()
   // Extended base methods
   def write(buffer: Uint8Array): Boolean = js.native
   def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  def write(
+    str: String,
+    encoding: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
+  ): Boolean = js.native
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
+  def write(
+    str: Uint8Array,
+    encoding: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
+  ): Boolean = js.native
   def write(str: Uint8Array, encoding: BufferEncoding): Boolean = js.native
   def write(str: Uint8Array, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
 }

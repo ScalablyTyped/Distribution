@@ -104,6 +104,7 @@ trait Chart extends js.Object {
   def ColumnGroups(): js.Any = js.native
   def ColumnGroups(Index: js.Any): js.Any = js.native
   def Copy(): Unit = js.native
+  def Copy(Before: js.UndefOr[scala.Nothing], After: js.Any): Unit = js.native
   def Copy(Before: js.Any): Unit = js.native
   def Copy(Before: js.Any, After: js.Any): Unit = js.native
   /**
@@ -112,17 +113,27 @@ trait Chart extends js.Object {
     * @param Word.XlPictureAppearance [Size=2]
     */
   def CopyPicture(): Unit = js.native
+  def CopyPicture(
+    Appearance: js.UndefOr[scala.Nothing],
+    Format: js.UndefOr[scala.Nothing],
+    Size: XlPictureAppearance
+  ): Unit = js.native
+  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): Unit = js.native
+  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat, Size: XlPictureAppearance): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance): Unit = js.native
+  def CopyPicture(Appearance: XlPictureAppearance, Format: js.UndefOr[scala.Nothing], Size: XlPictureAppearance): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat, Size: XlPictureAppearance): Unit = js.native
   def Delete(): js.Any = js.native
   def DoughnutGroups(): js.Any = js.native
   def DoughnutGroups(Index: js.Any): js.Any = js.native
   def Export(FileName: String): Boolean = js.native
+  def Export(FileName: String, FilterName: js.UndefOr[scala.Nothing], Interactive: js.Any): Boolean = js.native
   def Export(FileName: String, FilterName: js.Any): Boolean = js.native
   def Export(FileName: String, FilterName: js.Any, Interactive: js.Any): Boolean = js.native
   def GetChartElement(x: Double, y: Double, ElementID: Double, Arg1: Double, Arg2: Double): Unit = js.native
   def HasAxis(): js.Any = js.native
+  def HasAxis(Index1: js.UndefOr[scala.Nothing], Index2: js.Any): js.Any = js.native
   def HasAxis(Index1: js.Any): js.Any = js.native
   def HasAxis(Index1: js.Any, Index2: js.Any): js.Any = js.native
   def LineGroups(): js.Any = js.native

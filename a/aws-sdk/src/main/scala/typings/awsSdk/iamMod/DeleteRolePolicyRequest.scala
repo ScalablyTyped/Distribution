@@ -22,5 +22,22 @@ object DeleteRolePolicyRequest {
     val __obj = js.Dynamic.literal(PolicyName = PolicyName.asInstanceOf[js.Any], RoleName = RoleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRolePolicyRequest]
   }
+  @scala.inline
+  implicit class DeleteRolePolicyRequestOps[Self <: DeleteRolePolicyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyName(value: policyNameType): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleName(value: roleNameType): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

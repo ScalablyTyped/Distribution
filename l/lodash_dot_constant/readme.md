@@ -12,7 +12,7 @@ The modern build of lodash’s `_.constant` as a module.
 | Keywords           | lodash, lodash-modularized, stdlib, util |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 243634 |
+| # downloads        | 250109 |
 | # stars            | 0 |
 
 ## Links

@@ -18,11 +18,32 @@ trait ListSchemasResponse extends js.Object {
 
 object ListSchemasResponse {
   @scala.inline
-  def apply(nextToken: NextToken = null, schemas: Schemas = null): ListSchemasResponse = {
+  def apply(): ListSchemasResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSchemasResponse]
   }
+  @scala.inline
+  implicit class ListSchemasResponseOps[Self <: ListSchemasResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setSchemasVarargs(value: DatasetSchemaSummary*): Self = this.set("schemas", js.Array(value :_*))
+    @scala.inline
+    def setSchemas(value: Schemas): Self = this.set("schemas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemas: Self = this.set("schemas", js.undefined)
+  }
+  
 }
 

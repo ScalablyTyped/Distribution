@@ -1,6 +1,6 @@
 package typings.pulumiAws.instanceProfileMod
 
-import typings.pulumiAws.roleMod.Role
+import typings.pulumiAws.iamMod.Role
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,6 @@ trait InstanceProfileArgs extends js.Object {
     */
   val role: js.UndefOr[Input[String | Role]] = js.native
   /**
-    *
     * A list of role names to include in the profile.  The current default is 1.  If you see an error message similar to `Cannot exceed quota for InstanceSessionsPerInstanceProfile: 1`, then you must contact AWS support and ask for a limit increase.
     *
     * @deprecated Use `role` instead. Only a single role can be passed to an IAM Instance Profile
@@ -35,20 +34,44 @@ trait InstanceProfileArgs extends js.Object {
 
 object InstanceProfileArgs {
   @scala.inline
-  def apply(
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    path: Input[String] = null,
-    role: Input[String | Role] = null,
-    roles: Input[js.Array[Input[String | Role]]] = null
-  ): InstanceProfileArgs = {
+  def apply(): InstanceProfileArgs = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceProfileArgs]
   }
+  @scala.inline
+  implicit class InstanceProfileArgsOps[Self <: InstanceProfileArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setRole(value: Input[String | Role]): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setRolesVarargs(value: (Input[String | Role])*): Self = this.set("roles", js.Array(value :_*))
+    @scala.inline
+    def setRoles(value: Input[js.Array[Input[String | Role]]]): Self = this.set("roles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoles: Self = this.set("roles", js.undefined)
+  }
+  
 }
 

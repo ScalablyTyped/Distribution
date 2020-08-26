@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@grpc/grpc-js", "ListenerBuilder")
 @js.native
-object ListenerBuilder extends js.Object {
-  def apply(): scala.Nothing = js.native
-}
+class ListenerBuilder ()
+  extends typings.grpcGrpcJs.clientInterceptorsMod.ListenerBuilder
 

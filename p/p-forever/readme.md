@@ -11,8 +11,8 @@ Run promise-returning & async functions repeatedly until you end it
 | Full name          | p-forever |
 | Keywords           | promise, forever, infinitely, infinite, while, whilst, repeat, repeatedly, recursive, recursion, times, number, count, loop, iterate, serial, serially, async, await, promises, bluebird |
 | # releases         | 3 |
-| # dependents       | 18 |
-| # downloads        | 65571 |
+| # dependents       | 19 |
+| # downloads        | 74470 |
 | # stars            | 0 |
 
 ## Links

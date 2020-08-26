@@ -26,6 +26,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def authinfo(): GaxiosPromise[SchemaAccountsAuthInfoResponse] = js.native
   def authinfo(callback: BodyResponseCallback[SchemaAccountsAuthInfoResponse]): Unit = js.native
+  def authinfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountsAuthInfoResponse] = js.native
   def authinfo(params: ParamsResourceAccountsAuthinfo): GaxiosPromise[SchemaAccountsAuthInfoResponse] = js.native
   def authinfo(
     params: ParamsResourceAccountsAuthinfo,
@@ -58,6 +59,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def claimwebsite(): GaxiosPromise[SchemaAccountsClaimWebsiteResponse] = js.native
   def claimwebsite(callback: BodyResponseCallback[SchemaAccountsClaimWebsiteResponse]): Unit = js.native
+  def claimwebsite(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountsClaimWebsiteResponse] = js.native
   def claimwebsite(params: ParamsResourceAccountsClaimwebsite): GaxiosPromise[SchemaAccountsClaimWebsiteResponse] = js.native
   def claimwebsite(
     params: ParamsResourceAccountsClaimwebsite,
@@ -90,6 +92,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def custombatch(): GaxiosPromise[SchemaAccountsCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaAccountsCustomBatchResponse]): Unit = js.native
+  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountsCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceAccountsCustombatch): GaxiosPromise[SchemaAccountsCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceAccountsCustombatch,
@@ -123,6 +126,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -147,6 +151,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAccount] = js.native
   def get(callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
   def get(params: ParamsResourceAccountsGet): GaxiosPromise[SchemaAccount] = js.native
   def get(params: ParamsResourceAccountsGet, callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
   def get(
@@ -176,6 +181,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaAccount] = js.native
   def insert(callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
   def insert(params: ParamsResourceAccountsInsert): GaxiosPromise[SchemaAccount] = js.native
   def insert(params: ParamsResourceAccountsInsert, callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
   def insert(
@@ -206,6 +212,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def link(): GaxiosPromise[SchemaAccountsLinkResponse] = js.native
   def link(callback: BodyResponseCallback[SchemaAccountsLinkResponse]): Unit = js.native
+  def link(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountsLinkResponse] = js.native
   def link(params: ParamsResourceAccountsLink): GaxiosPromise[SchemaAccountsLinkResponse] = js.native
   def link(params: ParamsResourceAccountsLink, callback: BodyResponseCallback[SchemaAccountsLinkResponse]): Unit = js.native
   def link(
@@ -235,6 +242,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAccountsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAccountsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountsListResponse] = js.native
   def list(params: ParamsResourceAccountsList): GaxiosPromise[SchemaAccountsListResponse] = js.native
   def list(params: ParamsResourceAccountsList, callback: BodyResponseCallback[SchemaAccountsListResponse]): Unit = js.native
   def list(
@@ -266,6 +274,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaAccount] = js.native
   def patch(callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
   def patch(params: ParamsResourceAccountsPatch): GaxiosPromise[SchemaAccount] = js.native
   def patch(params: ParamsResourceAccountsPatch, callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
   def patch(
@@ -296,6 +305,7 @@ class ResourceAccounts protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaAccount] = js.native
   def update(callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccount] = js.native
   def update(params: ParamsResourceAccountsUpdate): GaxiosPromise[SchemaAccount] = js.native
   def update(params: ParamsResourceAccountsUpdate, callback: BodyResponseCallback[SchemaAccount]): Unit = js.native
   def update(

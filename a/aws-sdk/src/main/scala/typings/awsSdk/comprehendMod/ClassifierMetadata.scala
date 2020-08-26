@@ -15,7 +15,7 @@ trait ClassifierMetadata extends js.Object {
     */
   var NumberOfLabels: js.UndefOr[Integer] = js.native
   /**
-    * The number of documents in the input data that were used to test the classifier. Typically this is 10 to 20 percent of the input documents.
+    * The number of documents in the input data that were used to test the classifier. Typically this is 10 to 20 percent of the input documents, up to 10,000 documents.
     */
   var NumberOfTestDocuments: js.UndefOr[Integer] = js.native
   /**
@@ -26,18 +26,38 @@ trait ClassifierMetadata extends js.Object {
 
 object ClassifierMetadata {
   @scala.inline
-  def apply(
-    EvaluationMetrics: ClassifierEvaluationMetrics = null,
-    NumberOfLabels: js.UndefOr[Integer] = js.undefined,
-    NumberOfTestDocuments: js.UndefOr[Integer] = js.undefined,
-    NumberOfTrainedDocuments: js.UndefOr[Integer] = js.undefined
-  ): ClassifierMetadata = {
+  def apply(): ClassifierMetadata = {
     val __obj = js.Dynamic.literal()
-    if (EvaluationMetrics != null) __obj.updateDynamic("EvaluationMetrics")(EvaluationMetrics.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfLabels)) __obj.updateDynamic("NumberOfLabels")(NumberOfLabels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfTestDocuments)) __obj.updateDynamic("NumberOfTestDocuments")(NumberOfTestDocuments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfTrainedDocuments)) __obj.updateDynamic("NumberOfTrainedDocuments")(NumberOfTrainedDocuments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifierMetadata]
   }
+  @scala.inline
+  implicit class ClassifierMetadataOps[Self <: ClassifierMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvaluationMetrics(value: ClassifierEvaluationMetrics): Self = this.set("EvaluationMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationMetrics: Self = this.set("EvaluationMetrics", js.undefined)
+    @scala.inline
+    def setNumberOfLabels(value: Integer): Self = this.set("NumberOfLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfLabels: Self = this.set("NumberOfLabels", js.undefined)
+    @scala.inline
+    def setNumberOfTestDocuments(value: Integer): Self = this.set("NumberOfTestDocuments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfTestDocuments: Self = this.set("NumberOfTestDocuments", js.undefined)
+    @scala.inline
+    def setNumberOfTrainedDocuments(value: Integer): Self = this.set("NumberOfTrainedDocuments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfTrainedDocuments: Self = this.set("NumberOfTrainedDocuments", js.undefined)
+  }
+  
 }
 

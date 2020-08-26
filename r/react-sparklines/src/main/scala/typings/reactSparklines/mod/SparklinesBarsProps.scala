@@ -8,35 +8,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SparklinesBarsProps extends js.Object {
-  var barWidth: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var margin: js.UndefOr[Double] = js.undefined
+  var barWidth: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.native
   var onMouseMove: js.UndefOr[
     js.Function2[/* p */ Point, /* event */ MouseEvent[ReactSVGElement, NativeMouseEvent], Unit]
-  ] = js.undefined
-  var points: js.UndefOr[js.Array[Point]] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  ] = js.native
+  var points: js.UndefOr[js.Array[Point]] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object SparklinesBarsProps {
   @scala.inline
-  def apply(
-    barWidth: js.UndefOr[Double] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    margin: js.UndefOr[Double] = js.undefined,
-    onMouseMove: (/* p */ Point, /* event */ MouseEvent[ReactSVGElement, NativeMouseEvent]) => Unit = null,
-    points: js.Array[Point] = null,
-    style: CSSProperties = null
-  ): SparklinesBarsProps = {
+  def apply(): SparklinesBarsProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(barWidth)) __obj.updateDynamic("barWidth")(barWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2(onMouseMove))
-    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklinesBarsProps]
   }
+  @scala.inline
+  implicit class SparklinesBarsPropsOps[Self <: SparklinesBarsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBarWidth(value: Double): Self = this.set("barWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarWidth: Self = this.set("barWidth", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: (/* p */ Point, /* event */ MouseEvent[ReactSVGElement, NativeMouseEvent]) => Unit): Self = this.set("onMouseMove", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setPointsVarargs(value: Point*): Self = this.set("points", js.Array(value :_*))
+    @scala.inline
+    def setPoints(value: js.Array[Point]): Self = this.set("points", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoints: Self = this.set("points", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

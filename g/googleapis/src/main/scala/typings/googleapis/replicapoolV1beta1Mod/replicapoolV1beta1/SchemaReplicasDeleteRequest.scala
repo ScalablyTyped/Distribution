@@ -17,10 +17,26 @@ trait SchemaReplicasDeleteRequest extends js.Object {
 
 object SchemaReplicasDeleteRequest {
   @scala.inline
-  def apply(abandonInstance: js.UndefOr[Boolean] = js.undefined): SchemaReplicasDeleteRequest = {
+  def apply(): SchemaReplicasDeleteRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abandonInstance)) __obj.updateDynamic("abandonInstance")(abandonInstance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReplicasDeleteRequest]
   }
+  @scala.inline
+  implicit class SchemaReplicasDeleteRequestOps[Self <: SchemaReplicasDeleteRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbandonInstance(value: Boolean): Self = this.set("abandonInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbandonInstance: Self = this.set("abandonInstance", js.undefined)
+  }
+  
 }
 

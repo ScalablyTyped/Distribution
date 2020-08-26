@@ -54,26 +54,56 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentParameter extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2beta1IntentParameter {
   @scala.inline
-  def apply(
-    defaultValue: String = null,
-    displayName: String = null,
-    entityTypeDisplayName: String = null,
-    isList: js.UndefOr[Boolean] = js.undefined,
-    mandatory: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    prompts: js.Array[String] = null,
-    value: String = null
-  ): SchemaGoogleCloudDialogflowV2beta1IntentParameter = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1IntentParameter = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (entityTypeDisplayName != null) __obj.updateDynamic("entityTypeDisplayName")(entityTypeDisplayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isList)) __obj.updateDynamic("isList")(isList.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (prompts != null) __obj.updateDynamic("prompts")(prompts.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1IntentParameter]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1IntentParameterOps[Self <: SchemaGoogleCloudDialogflowV2beta1IntentParameter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEntityTypeDisplayName(value: String): Self = this.set("entityTypeDisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityTypeDisplayName: Self = this.set("entityTypeDisplayName", js.undefined)
+    @scala.inline
+    def setIsList(value: Boolean): Self = this.set("isList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsList: Self = this.set("isList", js.undefined)
+    @scala.inline
+    def setMandatory(value: Boolean): Self = this.set("mandatory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMandatory: Self = this.set("mandatory", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPromptsVarargs(value: String*): Self = this.set("prompts", js.Array(value :_*))
+    @scala.inline
+    def setPrompts(value: js.Array[String]): Self = this.set("prompts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrompts: Self = this.set("prompts", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

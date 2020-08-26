@@ -18,11 +18,30 @@ trait PrefixListAssociation extends js.Object {
 
 object PrefixListAssociation {
   @scala.inline
-  def apply(ResourceId: String = null, ResourceOwner: String = null): PrefixListAssociation = {
+  def apply(): PrefixListAssociation = {
     val __obj = js.Dynamic.literal()
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (ResourceOwner != null) __obj.updateDynamic("ResourceOwner")(ResourceOwner.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrefixListAssociation]
   }
+  @scala.inline
+  implicit class PrefixListAssociationOps[Self <: PrefixListAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setResourceOwner(value: String): Self = this.set("ResourceOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceOwner: Self = this.set("ResourceOwner", js.undefined)
+  }
+  
 }
 

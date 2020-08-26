@@ -22,10 +22,30 @@ trait DecisionTaskCompletedEventAttributes extends js.Object {
 
 object DecisionTaskCompletedEventAttributes {
   @scala.inline
-  def apply(scheduledEventId: EventId, startedEventId: EventId, executionContext: Data = null): DecisionTaskCompletedEventAttributes = {
+  def apply(scheduledEventId: EventId, startedEventId: EventId): DecisionTaskCompletedEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any])
-    if (executionContext != null) __obj.updateDynamic("executionContext")(executionContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecisionTaskCompletedEventAttributes]
   }
+  @scala.inline
+  implicit class DecisionTaskCompletedEventAttributesOps[Self <: DecisionTaskCompletedEventAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScheduledEventId(value: EventId): Self = this.set("scheduledEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartedEventId(value: EventId): Self = this.set("startedEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExecutionContext(value: Data): Self = this.set("executionContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionContext: Self = this.set("executionContext", js.undefined)
+  }
+  
 }
 

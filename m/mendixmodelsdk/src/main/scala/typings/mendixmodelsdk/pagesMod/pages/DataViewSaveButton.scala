@@ -31,7 +31,7 @@ class DataViewSaveButton protected () extends DataViewControlBarButton {
     * In version 6.6.0: introduced
     */
   def syncAutomatically: Boolean = js.native
-  def syncAutomatically(newValue: Boolean): js.Any = js.native
+  def syncAutomatically_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

@@ -27,10 +27,8 @@ abstract class DropZone protected () extends Element {
   def containerAsDocumentTemplate: DocumentTemplate = js.native
   def containerAsTableRow: TableRow = js.native
   def containerAsTemplateGrid: TemplateGrid = js.native
-  def widget(): js.Any = js.native
-  def widget(newValue: Widget): js.Any = js.native
-  @JSName("widget")
-  def widget_Union: Widget | Null = js.native
+  def widget: Widget | Null = js.native
+  def widget_=(newValue: Widget | Null): Unit = js.native
 }
 
 /* static members */

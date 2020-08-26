@@ -25,6 +25,79 @@ trait ShapeNodes extends js.Object {
     EditingType: MsoEditingType,
     X1: Double,
     Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: js.UndefOr[scala.Nothing],
+    X3: js.UndefOr[scala.Nothing],
+    Y3: Double
+  ): Unit = js.native
+  def Insert(
+    Index: Double,
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: js.UndefOr[scala.Nothing],
+    X3: Double
+  ): Unit = js.native
+  def Insert(
+    Index: Double,
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: js.UndefOr[scala.Nothing],
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def Insert(
+    Index: Double,
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: Double
+  ): Unit = js.native
+  def Insert(
+    Index: Double,
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: Double,
+    X3: js.UndefOr[scala.Nothing],
+    Y3: Double
+  ): Unit = js.native
+  def Insert(
+    Index: Double,
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: Double,
+    X3: Double
+  ): Unit = js.native
+  def Insert(
+    Index: Double,
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: Double,
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def Insert(
+    Index: Double,
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
     X2: Double
   ): Unit = js.native
   def Insert(
@@ -34,7 +107,50 @@ trait ShapeNodes extends js.Object {
     X1: Double,
     Y1: Double,
     X2: Double,
+    Y2: js.UndefOr[scala.Nothing],
+    X3: js.UndefOr[scala.Nothing],
+    Y3: Double
+  ): Unit = js.native
+  def Insert(
+    Index: Double,
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: js.UndefOr[scala.Nothing],
+    X3: Double
+  ): Unit = js.native
+  def Insert(
+    Index: Double,
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: js.UndefOr[scala.Nothing],
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def Insert(
+    Index: Double,
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
     Y2: Double
+  ): Unit = js.native
+  def Insert(
+    Index: Double,
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: Double,
+    X3: js.UndefOr[scala.Nothing],
+    Y3: Double
   ): Unit = js.native
   def Insert(
     Index: Double,

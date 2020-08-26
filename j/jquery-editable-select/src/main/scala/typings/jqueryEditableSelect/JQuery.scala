@@ -35,7 +35,21 @@ trait JQuery extends js.Object {
   @JSName("editableSelect")
   def editableSelect_add(action: add, text: String): Unit = js.native
   @JSName("editableSelect")
+  def editableSelect_add(
+    action: add,
+    text: String,
+    index: js.UndefOr[scala.Nothing],
+    attrs: js.UndefOr[scala.Nothing],
+    data: String
+  ): Unit = js.native
+  @JSName("editableSelect")
+  def editableSelect_add(action: add, text: String, index: js.UndefOr[scala.Nothing], attrs: js.Array[Name]): Unit = js.native
+  @JSName("editableSelect")
+  def editableSelect_add(action: add, text: String, index: js.UndefOr[scala.Nothing], attrs: js.Array[Name], data: String): Unit = js.native
+  @JSName("editableSelect")
   def editableSelect_add(action: add, text: String, index: Double): Unit = js.native
+  @JSName("editableSelect")
+  def editableSelect_add(action: add, text: String, index: Double, attrs: js.UndefOr[scala.Nothing], data: String): Unit = js.native
   @JSName("editableSelect")
   def editableSelect_add(action: add, text: String, index: Double, attrs: js.Array[Name]): Unit = js.native
   @JSName("editableSelect")

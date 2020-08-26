@@ -15,10 +15,28 @@ trait VirtualRouterSpec extends js.Object {
 
 object VirtualRouterSpec {
   @scala.inline
-  def apply(listeners: VirtualRouterListeners = null): VirtualRouterSpec = {
+  def apply(): VirtualRouterSpec = {
     val __obj = js.Dynamic.literal()
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualRouterSpec]
   }
+  @scala.inline
+  implicit class VirtualRouterSpecOps[Self <: VirtualRouterSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setListenersVarargs(value: VirtualRouterListener*): Self = this.set("listeners", js.Array(value :_*))
+    @scala.inline
+    def setListeners(value: VirtualRouterListeners): Self = this.set("listeners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListeners: Self = this.set("listeners", js.undefined)
+  }
+  
 }
 

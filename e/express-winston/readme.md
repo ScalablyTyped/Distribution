@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-winston
 
-Typings are for version 4.0.3
+Typings are for version 4.0.5
 
 ## Library description:
 express.js middleware for flatiron/winston
@@ -10,9 +10,9 @@ express.js middleware for flatiron/winston
 | ------------------ | :-------------: |
 | Full name          | express-winston |
 | Keywords           | winston, flatiron, logging, express, log, error, handler, middleware, colors |
-| # releases         | 12 |
-| # dependents       | 172 |
-| # downloads        | 5217817 |
+| # releases         | 14 |
+| # dependents       | 175 |
+| # downloads        | 5357364 |
 | # stars            | 20 |
 
 ## Links

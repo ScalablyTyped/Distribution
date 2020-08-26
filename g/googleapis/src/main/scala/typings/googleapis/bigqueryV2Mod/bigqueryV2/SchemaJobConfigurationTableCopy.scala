@@ -47,22 +47,48 @@ trait SchemaJobConfigurationTableCopy extends js.Object {
 
 object SchemaJobConfigurationTableCopy {
   @scala.inline
-  def apply(
-    createDisposition: String = null,
-    destinationEncryptionConfiguration: SchemaEncryptionConfiguration = null,
-    destinationTable: SchemaTableReference = null,
-    sourceTable: SchemaTableReference = null,
-    sourceTables: js.Array[SchemaTableReference] = null,
-    writeDisposition: String = null
-  ): SchemaJobConfigurationTableCopy = {
+  def apply(): SchemaJobConfigurationTableCopy = {
     val __obj = js.Dynamic.literal()
-    if (createDisposition != null) __obj.updateDynamic("createDisposition")(createDisposition.asInstanceOf[js.Any])
-    if (destinationEncryptionConfiguration != null) __obj.updateDynamic("destinationEncryptionConfiguration")(destinationEncryptionConfiguration.asInstanceOf[js.Any])
-    if (destinationTable != null) __obj.updateDynamic("destinationTable")(destinationTable.asInstanceOf[js.Any])
-    if (sourceTable != null) __obj.updateDynamic("sourceTable")(sourceTable.asInstanceOf[js.Any])
-    if (sourceTables != null) __obj.updateDynamic("sourceTables")(sourceTables.asInstanceOf[js.Any])
-    if (writeDisposition != null) __obj.updateDynamic("writeDisposition")(writeDisposition.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobConfigurationTableCopy]
   }
+  @scala.inline
+  implicit class SchemaJobConfigurationTableCopyOps[Self <: SchemaJobConfigurationTableCopy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateDisposition(value: String): Self = this.set("createDisposition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDisposition: Self = this.set("createDisposition", js.undefined)
+    @scala.inline
+    def setDestinationEncryptionConfiguration(value: SchemaEncryptionConfiguration): Self = this.set("destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationEncryptionConfiguration: Self = this.set("destinationEncryptionConfiguration", js.undefined)
+    @scala.inline
+    def setDestinationTable(value: SchemaTableReference): Self = this.set("destinationTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationTable: Self = this.set("destinationTable", js.undefined)
+    @scala.inline
+    def setSourceTable(value: SchemaTableReference): Self = this.set("sourceTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceTable: Self = this.set("sourceTable", js.undefined)
+    @scala.inline
+    def setSourceTablesVarargs(value: SchemaTableReference*): Self = this.set("sourceTables", js.Array(value :_*))
+    @scala.inline
+    def setSourceTables(value: js.Array[SchemaTableReference]): Self = this.set("sourceTables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceTables: Self = this.set("sourceTables", js.undefined)
+    @scala.inline
+    def setWriteDisposition(value: String): Self = this.set("writeDisposition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteDisposition: Self = this.set("writeDisposition", js.undefined)
+  }
+  
 }
 

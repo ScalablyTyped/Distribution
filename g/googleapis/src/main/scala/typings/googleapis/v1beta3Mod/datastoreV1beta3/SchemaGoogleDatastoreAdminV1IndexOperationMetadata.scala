@@ -25,16 +25,34 @@ trait SchemaGoogleDatastoreAdminV1IndexOperationMetadata extends js.Object {
 
 object SchemaGoogleDatastoreAdminV1IndexOperationMetadata {
   @scala.inline
-  def apply(
-    common: SchemaGoogleDatastoreAdminV1CommonMetadata = null,
-    indexId: String = null,
-    progressEntities: SchemaGoogleDatastoreAdminV1Progress = null
-  ): SchemaGoogleDatastoreAdminV1IndexOperationMetadata = {
+  def apply(): SchemaGoogleDatastoreAdminV1IndexOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
-    if (indexId != null) __obj.updateDynamic("indexId")(indexId.asInstanceOf[js.Any])
-    if (progressEntities != null) __obj.updateDynamic("progressEntities")(progressEntities.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1IndexOperationMetadata]
   }
+  @scala.inline
+  implicit class SchemaGoogleDatastoreAdminV1IndexOperationMetadataOps[Self <: SchemaGoogleDatastoreAdminV1IndexOperationMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommon(value: SchemaGoogleDatastoreAdminV1CommonMetadata): Self = this.set("common", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommon: Self = this.set("common", js.undefined)
+    @scala.inline
+    def setIndexId(value: String): Self = this.set("indexId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexId: Self = this.set("indexId", js.undefined)
+    @scala.inline
+    def setProgressEntities(value: SchemaGoogleDatastoreAdminV1Progress): Self = this.set("progressEntities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressEntities: Self = this.set("progressEntities", js.undefined)
+  }
+  
 }
 

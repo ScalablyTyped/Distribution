@@ -37,18 +37,46 @@ trait SchemaAndroidMatrix extends js.Object {
 
 object SchemaAndroidMatrix {
   @scala.inline
-  def apply(
-    androidModelIds: js.Array[String] = null,
-    androidVersionIds: js.Array[String] = null,
-    locales: js.Array[String] = null,
-    orientations: js.Array[String] = null
-  ): SchemaAndroidMatrix = {
+  def apply(): SchemaAndroidMatrix = {
     val __obj = js.Dynamic.literal()
-    if (androidModelIds != null) __obj.updateDynamic("androidModelIds")(androidModelIds.asInstanceOf[js.Any])
-    if (androidVersionIds != null) __obj.updateDynamic("androidVersionIds")(androidVersionIds.asInstanceOf[js.Any])
-    if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
-    if (orientations != null) __obj.updateDynamic("orientations")(orientations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAndroidMatrix]
   }
+  @scala.inline
+  implicit class SchemaAndroidMatrixOps[Self <: SchemaAndroidMatrix] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidModelIdsVarargs(value: String*): Self = this.set("androidModelIds", js.Array(value :_*))
+    @scala.inline
+    def setAndroidModelIds(value: js.Array[String]): Self = this.set("androidModelIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidModelIds: Self = this.set("androidModelIds", js.undefined)
+    @scala.inline
+    def setAndroidVersionIdsVarargs(value: String*): Self = this.set("androidVersionIds", js.Array(value :_*))
+    @scala.inline
+    def setAndroidVersionIds(value: js.Array[String]): Self = this.set("androidVersionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidVersionIds: Self = this.set("androidVersionIds", js.undefined)
+    @scala.inline
+    def setLocalesVarargs(value: String*): Self = this.set("locales", js.Array(value :_*))
+    @scala.inline
+    def setLocales(value: js.Array[String]): Self = this.set("locales", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocales: Self = this.set("locales", js.undefined)
+    @scala.inline
+    def setOrientationsVarargs(value: String*): Self = this.set("orientations", js.Array(value :_*))
+    @scala.inline
+    def setOrientations(value: js.Array[String]): Self = this.set("orientations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientations: Self = this.set("orientations", js.undefined)
+  }
+  
 }
 

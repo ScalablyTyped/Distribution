@@ -50,30 +50,64 @@ trait AccessPointDescription extends js.Object {
 
 object AccessPointDescription {
   @scala.inline
-  def apply(
-    AccessPointArn: AccessPointArn = null,
-    AccessPointId: AccessPointId = null,
-    ClientToken: ClientToken = null,
-    FileSystemId: FileSystemId = null,
-    LifeCycleState: LifeCycleState = null,
-    Name: Name = null,
-    OwnerId: AwsAccountId = null,
-    PosixUser: PosixUser = null,
-    RootDirectory: RootDirectory = null,
-    Tags: Tags = null
-  ): AccessPointDescription = {
+  def apply(): AccessPointDescription = {
     val __obj = js.Dynamic.literal()
-    if (AccessPointArn != null) __obj.updateDynamic("AccessPointArn")(AccessPointArn.asInstanceOf[js.Any])
-    if (AccessPointId != null) __obj.updateDynamic("AccessPointId")(AccessPointId.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (FileSystemId != null) __obj.updateDynamic("FileSystemId")(FileSystemId.asInstanceOf[js.Any])
-    if (LifeCycleState != null) __obj.updateDynamic("LifeCycleState")(LifeCycleState.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (PosixUser != null) __obj.updateDynamic("PosixUser")(PosixUser.asInstanceOf[js.Any])
-    if (RootDirectory != null) __obj.updateDynamic("RootDirectory")(RootDirectory.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessPointDescription]
   }
+  @scala.inline
+  implicit class AccessPointDescriptionOps[Self <: AccessPointDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessPointArn(value: AccessPointArn): Self = this.set("AccessPointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessPointArn: Self = this.set("AccessPointArn", js.undefined)
+    @scala.inline
+    def setAccessPointId(value: AccessPointId): Self = this.set("AccessPointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessPointId: Self = this.set("AccessPointId", js.undefined)
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemId: Self = this.set("FileSystemId", js.undefined)
+    @scala.inline
+    def setLifeCycleState(value: LifeCycleState): Self = this.set("LifeCycleState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifeCycleState: Self = this.set("LifeCycleState", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOwnerId(value: AwsAccountId): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setPosixUser(value: PosixUser): Self = this.set("PosixUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosixUser: Self = this.set("PosixUser", js.undefined)
+    @scala.inline
+    def setRootDirectory(value: RootDirectory): Self = this.set("RootDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootDirectory: Self = this.set("RootDirectory", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -57,6 +57,7 @@ class DraggingTool () extends Tool {
     * @param {Point=} result  an optional Point that is modified and returned
     */
   def computeMove(n: Part, newloc: Point): Point = js.native
+  def computeMove(n: Part, newloc: Point, draggedparts: js.UndefOr[scala.Nothing], result: Point): Point = js.native
   def computeMove(n: Part, newloc: Point, draggedparts: Map[Part, DraggingInfo]): Point = js.native
   def computeMove(n: Part, newloc: Point, draggedparts: Map[Part, DraggingInfo], result: Point): Point = js.native
   /**

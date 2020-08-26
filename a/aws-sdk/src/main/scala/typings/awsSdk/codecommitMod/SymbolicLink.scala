@@ -26,18 +26,38 @@ trait SymbolicLink extends js.Object {
 
 object SymbolicLink {
   @scala.inline
-  def apply(
-    absolutePath: Path = null,
-    blobId: ObjectId = null,
-    fileMode: FileModeTypeEnum = null,
-    relativePath: Path = null
-  ): SymbolicLink = {
+  def apply(): SymbolicLink = {
     val __obj = js.Dynamic.literal()
-    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath.asInstanceOf[js.Any])
-    if (blobId != null) __obj.updateDynamic("blobId")(blobId.asInstanceOf[js.Any])
-    if (fileMode != null) __obj.updateDynamic("fileMode")(fileMode.asInstanceOf[js.Any])
-    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolicLink]
   }
+  @scala.inline
+  implicit class SymbolicLinkOps[Self <: SymbolicLink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbsolutePath(value: Path): Self = this.set("absolutePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbsolutePath: Self = this.set("absolutePath", js.undefined)
+    @scala.inline
+    def setBlobId(value: ObjectId): Self = this.set("blobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlobId: Self = this.set("blobId", js.undefined)
+    @scala.inline
+    def setFileMode(value: FileModeTypeEnum): Self = this.set("fileMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileMode: Self = this.set("fileMode", js.undefined)
+    @scala.inline
+    def setRelativePath(value: Path): Self = this.set("relativePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativePath: Self = this.set("relativePath", js.undefined)
+  }
+  
 }
 

@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VerificationResult extends BaseResult {
   /**
     * the verified signature
     */
-  var signature: Buffer | String
+  var signature: Buffer | String = js.native
 }
 
 object VerificationResult {
@@ -26,5 +27,20 @@ object VerificationResult {
     __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerificationResult]
   }
+  @scala.inline
+  implicit class VerificationResultOps[Self <: VerificationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSignature(value: Buffer | String): Self = this.set("signature", value.asInstanceOf[js.Any])
+  }
+  
 }
 

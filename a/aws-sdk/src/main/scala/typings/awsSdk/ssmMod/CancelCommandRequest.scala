@@ -18,10 +18,30 @@ trait CancelCommandRequest extends js.Object {
 
 object CancelCommandRequest {
   @scala.inline
-  def apply(CommandId: CommandId, InstanceIds: InstanceIdList = null): CancelCommandRequest = {
+  def apply(CommandId: CommandId): CancelCommandRequest = {
     val __obj = js.Dynamic.literal(CommandId = CommandId.asInstanceOf[js.Any])
-    if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelCommandRequest]
   }
+  @scala.inline
+  implicit class CancelCommandRequestOps[Self <: CancelCommandRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommandId(value: CommandId): Self = this.set("CommandId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceIdsVarargs(value: InstanceId*): Self = this.set("InstanceIds", js.Array(value :_*))
+    @scala.inline
+    def setInstanceIds(value: InstanceIdList): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceIds: Self = this.set("InstanceIds", js.undefined)
+  }
+  
 }
 

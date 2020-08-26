@@ -1,29 +1,18 @@
 package typings.androiduix.android.widget
 
-import typings.androiduix.android.content.Context
 import typings.androiduix.android.graphics.drawable.Drawable
-import typings.androiduix.android.view.KeyEvent
 import typings.androiduix.android.view.MotionEvent
 import typings.androiduix.android.view.View
 import typings.androiduix.android.view.View.OnTouchListener
 import typings.androiduix.android.view.Window.Callback
-import typings.androiduix.android.view.WindowManager.LayoutParams
 import typings.androiduix.android.view.animation.Animation
 import typings.androiduix.android.widget.PopupWindow.OnDismissListener
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.widget.PopupWindow")
 @js.native
-class PopupWindow_ protected () extends Callback {
-  def this(contentView: View) = this()
-  def this(context: Context) = this()
-  def this(contentView: View, width: Double) = this()
-  def this(context: Context, styleAttr: Map[String, String]) = this()
-  def this(contentView: View, width: Double, height: Double) = this()
-  def this(contentView: View, width: Double, height: Double, focusable: Boolean) = this()
+trait PopupWindow_ extends Callback {
   var mAboveAnchor: js.Any = js.native
   var mAboveAnchorBackgroundDrawable: js.Any = js.native
   var mAllowScrollingAnchorParent: js.Any = js.native
@@ -83,19 +72,12 @@ class PopupWindow_ protected () extends Callback {
     gravity: js.Any
   ): js.Any = js.native
   /* private */ def _update_w_h(width: js.Any, height: js.Any): js.Any = js.native
-  /* private */ def _update_x_y_w_h_f(x: js.Any, y: js.Any, width: js.Any, height: js.Any): js.Any = js.native
   /* private */ def _update_x_y_w_h_f(x: js.Any, y: js.Any, width: js.Any, height: js.Any, force: js.Any): js.Any = js.native
   /* private */ def computeFlags(curFlags: js.Any): js.Any = js.native
   /* private */ def computeWindowEnterAnimation(): js.Any = js.native
   /* private */ def computeWindowExitAnimation(): js.Any = js.native
   /* private */ def createPopupLayout(): js.Any = js.native
   def dismiss(): Unit = js.native
-  /* CompleteClass */
-  override def dispatchGenericMotionEvent(event: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def dispatchKeyEvent(event: KeyEvent): Boolean = js.native
-  /* CompleteClass */
-  override def dispatchTouchEvent(event: MotionEvent): Boolean = js.native
   /* private */ def findDropDownPosition(anchor: js.Any, p: js.Any, xoff: js.Any, yoff: js.Any, gravity: js.Any): js.Any = js.native
   def getBackground(): Drawable = js.native
   def getContentView(): View = js.native
@@ -104,6 +86,7 @@ class PopupWindow_ protected () extends Callback {
   def getHeight(): Double = js.native
   def getInputMethodMode(): Double = js.native
   def getMaxAvailableHeight(anchor: View): Double = js.native
+  def getMaxAvailableHeight(anchor: View, yOffset: js.UndefOr[scala.Nothing], ignoreBottomDecorations: Boolean): Double = js.native
   def getMaxAvailableHeight(anchor: View, yOffset: Double): Double = js.native
   def getMaxAvailableHeight(anchor: View, yOffset: Double, ignoreBottomDecorations: Boolean): Double = js.native
   def getWidth(): Double = js.native
@@ -115,18 +98,8 @@ class PopupWindow_ protected () extends Callback {
   def isShowing(): Boolean = js.native
   def isSplitTouchEnabled(): Boolean = js.native
   def isTouchable(): Boolean = js.native
-  /* CompleteClass */
-  override def onAttachedToWindow(): Unit = js.native
-  /* CompleteClass */
-  override def onContentChanged(): Unit = js.native
-  /* CompleteClass */
-  override def onDetachedFromWindow(): Unit = js.native
   def onGenericMotionEvent(event: MotionEvent): Boolean = js.native
   def onTouchEvent(event: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onWindowAttributesChanged(attrs: LayoutParams): Unit = js.native
-  /* CompleteClass */
-  override def onWindowFocusChanged(hasFocus: Boolean): Unit = js.native
   /* private */ def preparePopup(p: js.Any): js.Any = js.native
   /* private */ def registerForScrollChanged(anchor: js.Any, xoff: js.Any, yoff: js.Any, gravity: js.Any): js.Any = js.native
   /* private */ def setAllowScrollingAnchorParent(enabled: js.Any): js.Any = js.native
@@ -148,7 +121,11 @@ class PopupWindow_ protected () extends Callback {
   def setWindowLayoutMode(widthSpec: Double, heightSpec: Double): Unit = js.native
   def setWindowLayoutType(layoutType: Double): Unit = js.native
   def showAsDropDown(anchor: View): Unit = js.native
+  def showAsDropDown(anchor: View, xoff: js.UndefOr[scala.Nothing], yoff: js.UndefOr[scala.Nothing], gravity: Double): Unit = js.native
+  def showAsDropDown(anchor: View, xoff: js.UndefOr[scala.Nothing], yoff: Double): Unit = js.native
+  def showAsDropDown(anchor: View, xoff: js.UndefOr[scala.Nothing], yoff: Double, gravity: Double): Unit = js.native
   def showAsDropDown(anchor: View, xoff: Double): Unit = js.native
+  def showAsDropDown(anchor: View, xoff: Double, yoff: js.UndefOr[scala.Nothing], gravity: Double): Unit = js.native
   def showAsDropDown(anchor: View, xoff: Double, yoff: Double): Unit = js.native
   def showAsDropDown(anchor: View, xoff: Double, yoff: Double, gravity: Double): Unit = js.native
   def showAtLocation(parent: View, gravity: Double, x: Double, y: Double): Unit = js.native

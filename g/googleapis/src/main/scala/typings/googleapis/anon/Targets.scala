@@ -12,11 +12,32 @@ trait Targets extends js.Object {
 
 object Targets {
   @scala.inline
-  def apply(source: String = null, targets: js.Array[String] = null): Targets = {
+  def apply(): Targets = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Targets]
   }
+  @scala.inline
+  implicit class TargetsOps[Self <: Targets] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: String*): Self = this.set("targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: js.Array[String]): Self = this.set("targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("targets", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait CreateCaseResponse extends js.Object {
 
 object CreateCaseResponse {
   @scala.inline
-  def apply(caseId: CaseId = null): CreateCaseResponse = {
+  def apply(): CreateCaseResponse = {
     val __obj = js.Dynamic.literal()
-    if (caseId != null) __obj.updateDynamic("caseId")(caseId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCaseResponse]
   }
+  @scala.inline
+  implicit class CreateCaseResponseOps[Self <: CreateCaseResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaseId(value: CaseId): Self = this.set("caseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseId: Self = this.set("caseId", js.undefined)
+  }
+  
 }
 

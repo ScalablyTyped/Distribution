@@ -34,12 +34,39 @@ object CreateAssessmentTemplateRequest {
     assessmentTargetArn: Arn,
     assessmentTemplateName: AssessmentTemplateName,
     durationInSeconds: AssessmentRunDuration,
-    rulesPackageArns: AssessmentTemplateRulesPackageArnList,
-    userAttributesForFindings: UserAttributeList = null
+    rulesPackageArns: AssessmentTemplateRulesPackageArnList
   ): CreateAssessmentTemplateRequest = {
     val __obj = js.Dynamic.literal(assessmentTargetArn = assessmentTargetArn.asInstanceOf[js.Any], assessmentTemplateName = assessmentTemplateName.asInstanceOf[js.Any], durationInSeconds = durationInSeconds.asInstanceOf[js.Any], rulesPackageArns = rulesPackageArns.asInstanceOf[js.Any])
-    if (userAttributesForFindings != null) __obj.updateDynamic("userAttributesForFindings")(userAttributesForFindings.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAssessmentTemplateRequest]
   }
+  @scala.inline
+  implicit class CreateAssessmentTemplateRequestOps[Self <: CreateAssessmentTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssessmentTargetArn(value: Arn): Self = this.set("assessmentTargetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssessmentTemplateName(value: AssessmentTemplateName): Self = this.set("assessmentTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDurationInSeconds(value: AssessmentRunDuration): Self = this.set("durationInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRulesPackageArnsVarargs(value: Arn*): Self = this.set("rulesPackageArns", js.Array(value :_*))
+    @scala.inline
+    def setRulesPackageArns(value: AssessmentTemplateRulesPackageArnList): Self = this.set("rulesPackageArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserAttributesForFindingsVarargs(value: Attribute*): Self = this.set("userAttributesForFindings", js.Array(value :_*))
+    @scala.inline
+    def setUserAttributesForFindings(value: UserAttributeList): Self = this.set("userAttributesForFindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAttributesForFindings: Self = this.set("userAttributesForFindings", js.undefined)
+  }
+  
 }
 

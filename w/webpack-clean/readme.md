@@ -10,9 +10,9 @@ A webpack plugin to clean specified files after build
 | ------------------ | :-------------: |
 | Full name          | webpack-clean |
 | Keywords           | webpack, clean, build |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 135187 |
+| # downloads        | 133366 |
 | # stars            | 1 |
 
 ## Links

@@ -19,24 +19,9 @@ object separableConv2d extends js.Object {
     depthwiseFilter: Tensor4D | TensorLike,
     pointwiseFilter: Tensor4D | TensorLike,
     strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid | same
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    x: T | TensorLike,
-    depthwiseFilter: Tensor4D | TensorLike,
-    pointwiseFilter: Tensor4D | TensorLike,
-    strides: (js.Tuple2[Double, Double]) | Double,
     pad: valid | same,
-    dilation: (js.Tuple2[Double, Double]) | Double
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    x: T | TensorLike,
-    depthwiseFilter: Tensor4D | TensorLike,
-    pointwiseFilter: Tensor4D | TensorLike,
-    strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid | same,
-    dilation: (js.Tuple2[Double, Double]) | Double,
-    dataFormat: NHWC | NCHW
+    dilation: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
+    dataFormat: js.UndefOr[NHWC | NCHW]
   ): T = js.native
 }
 

@@ -43,12 +43,15 @@ trait Helper extends js.Object {
   def columnFactory(GridSettings: GridSettings, conflictList: js.Array[_]): js.Object = js.native
   def createEmptySpreadsheetData(rows: Double, columns: Double): js.Array[_] = js.native
   def createObjectPropListener(): js.Object = js.native
+  def createObjectPropListener(defaultValue: js.UndefOr[scala.Nothing], propertyToListen: String): js.Object = js.native
   def createObjectPropListener(defaultValue: js.Any): js.Object = js.native
   def createObjectPropListener(defaultValue: js.Any, propertyToListen: String): js.Object = js.native
   def createSpreadsheetData(): js.Array[_] = js.native
+  def createSpreadsheetData(rows: js.UndefOr[scala.Nothing], columns: Double): js.Array[_] = js.native
   def createSpreadsheetData(rows: Double): js.Array[_] = js.native
   def createSpreadsheetData(rows: Double, columns: Double): js.Array[_] = js.native
   def createSpreadsheetObjectData(): js.Array[_] = js.native
+  def createSpreadsheetObjectData(rows: js.UndefOr[scala.Nothing], colCount: Double): js.Array[_] = js.native
   def createSpreadsheetObjectData(rows: Double): js.Array[_] = js.native
   def createSpreadsheetObjectData(rows: Double, colCount: Double): js.Array[_] = js.native
   def curry(func: js.Function0[Unit]): js.Function0[Unit] = js.native
@@ -130,6 +133,7 @@ trait Helper extends js.Object {
   def throttle(func: js.Function0[Unit]): js.Function0[Unit] = js.native
   def throttle(func: js.Function0[Unit], wait: Double): js.Function0[Unit] = js.native
   def throttleAfterHits(func: js.Function0[Unit]): js.Function0[Unit] = js.native
+  def throttleAfterHits(func: js.Function0[Unit], wait: js.UndefOr[scala.Nothing], hits: Double): js.Function0[Unit] = js.native
   def throttleAfterHits(func: js.Function0[Unit], wait: Double): js.Function0[Unit] = js.native
   def throttleAfterHits(func: js.Function0[Unit], wait: Double, hits: Double): js.Function0[Unit] = js.native
   def to2dArray(arr: js.Array[_]): Unit = js.native

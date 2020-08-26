@@ -1,7 +1,7 @@
 package typings.chromeApps.WebView.Events
 
 import typings.chromeApps.chrome.integer
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   * loadabort will be fired and then the webview will be navigated to 'about:blank'.
   */
 @js.native
-trait LoadAbortEvent extends Event_ {
+trait LoadAbortEvent extends Event {
   /**
     * Unique chrome.integer ID for the type of abort.
     * Note that this ID is `not` guaranteed to

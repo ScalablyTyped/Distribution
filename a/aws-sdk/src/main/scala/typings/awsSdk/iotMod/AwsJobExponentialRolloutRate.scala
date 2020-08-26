@@ -30,5 +30,24 @@ object AwsJobExponentialRolloutRate {
     val __obj = js.Dynamic.literal(baseRatePerMinute = baseRatePerMinute.asInstanceOf[js.Any], incrementFactor = incrementFactor.asInstanceOf[js.Any], rateIncreaseCriteria = rateIncreaseCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsJobExponentialRolloutRate]
   }
+  @scala.inline
+  implicit class AwsJobExponentialRolloutRateOps[Self <: AwsJobExponentialRolloutRate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseRatePerMinute(value: AwsJobRolloutRatePerMinute): Self = this.set("baseRatePerMinute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIncrementFactor(value: AwsJobRolloutIncrementFactor): Self = this.set("incrementFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRateIncreaseCriteria(value: AwsJobRateIncreaseCriteria): Self = this.set("rateIncreaseCriteria", value.asInstanceOf[js.Any])
+  }
+  
 }
 

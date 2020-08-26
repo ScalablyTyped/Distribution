@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ZonePrivate extends js.Object {
   def ArraySlice(): js.Array[_] = js.native
+  def ArraySlice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[_] = js.native
   def ArraySlice(start: Double): js.Array[_] = js.native
   def ArraySlice(start: Double, end: Double): js.Array[_] = js.native
   def ObjectCreate(): js.Any = js.native

@@ -18,6 +18,16 @@ trait BootstrapSparkline extends Control {
   def exportTo(fileName: String, format: String): Unit = js.native
   def getDataSource(): js.Any = js.native
   def getInstance(): js.Any = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        BootstrapChartErrorEventArgs | BootstrapChartEventArgsBase | BootstrapChartExportEventArgs | BootstrapChartOptionChangedEventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_disposing(eventName: disposing): this.type = js.native
   @JSName("off")

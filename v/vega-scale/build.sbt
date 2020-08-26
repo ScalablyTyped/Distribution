@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "vega-scale"
-version := "7.0.0-626264"
-scalaVersion := "2.13.2"
+version := "7.0.0-168f91"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

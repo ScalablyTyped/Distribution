@@ -44,9 +44,10 @@ import scala.scalajs.js.annotation._
   *
   * StaticMapAllows for the creation and decoration of static map images.
   */
+@js.native
 trait BlobSource extends js.Object {
-  def getAs(contentType: String): Blob
-  def getBlob(): Blob
+  def getAs(contentType: String): Blob = js.native
+  def getBlob(): Blob = js.native
 }
 
 object BlobSource {
@@ -55,5 +56,22 @@ object BlobSource {
     val __obj = js.Dynamic.literal(getAs = js.Any.fromFunction1(getAs), getBlob = js.Any.fromFunction0(getBlob))
     __obj.asInstanceOf[BlobSource]
   }
+  @scala.inline
+  implicit class BlobSourceOps[Self <: BlobSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetAs(value: String => Blob): Self = this.set("getAs", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetBlob(value: () => Blob): Self = this.set("getBlob", js.Any.fromFunction0(value))
+  }
+  
 }
 

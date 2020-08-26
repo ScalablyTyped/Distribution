@@ -20,10 +20,28 @@ trait CreateCloudFormationTemplateRequest extends js.Object {
 
 object CreateCloudFormationTemplateRequest {
   @scala.inline
-  def apply(ApplicationId: string, SemanticVersion: string = null): CreateCloudFormationTemplateRequest = {
+  def apply(ApplicationId: string): CreateCloudFormationTemplateRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
-    if (SemanticVersion != null) __obj.updateDynamic("SemanticVersion")(SemanticVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCloudFormationTemplateRequest]
   }
+  @scala.inline
+  implicit class CreateCloudFormationTemplateRequestOps[Self <: CreateCloudFormationTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSemanticVersion(value: string): Self = this.set("SemanticVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSemanticVersion: Self = this.set("SemanticVersion", js.undefined)
+  }
+  
 }
 

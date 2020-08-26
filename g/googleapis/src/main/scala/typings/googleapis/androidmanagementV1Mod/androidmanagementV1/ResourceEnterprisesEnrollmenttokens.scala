@@ -28,6 +28,7 @@ class ResourceEnterprisesEnrollmenttokens protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaEnrollmentToken] = js.native
   def create(callback: BodyResponseCallback[SchemaEnrollmentToken]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnrollmentToken] = js.native
   def create(params: ParamsResourceEnterprisesEnrollmenttokensCreate): GaxiosPromise[SchemaEnrollmentToken] = js.native
   def create(
     params: ParamsResourceEnterprisesEnrollmenttokensCreate,
@@ -59,6 +60,7 @@ class ResourceEnterprisesEnrollmenttokens protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceEnterprisesEnrollmenttokensDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceEnterprisesEnrollmenttokensDelete,

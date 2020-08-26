@@ -5,6 +5,7 @@ import typings.reactNativeNavigation.componentEventsObserverMod.ComponentEventsO
 import typings.reactNativeNavigation.constantsMod.NavigationConstants
 import typings.reactNativeNavigation.nativeEventsReceiverMod.NativeEventsReceiver
 import typings.reactNativeNavigation.navigationMod.NavigationRoot
+import typings.reactNativeNavigation.optionsMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,10 +32,43 @@ object reactNativeNavigationMod extends js.Object {
     extends typings.reactNativeNavigation.navigationComponentMod.NavigationComponent[Props, State, Snapshot]
   
   val Navigation: NavigationRoot = js.native
+  @js.native
+  object CommandName extends js.Object {
+    /* "dismissAllModals" */ val DismissAllModals: typings.reactNativeNavigation.commandNameMod.CommandName.DismissAllModals with String = js.native
+    /* "dismissModal" */ val DismissModal: typings.reactNativeNavigation.commandNameMod.CommandName.DismissModal with String = js.native
+    /* "dismissOverlay" */ val DismissOverlay: typings.reactNativeNavigation.commandNameMod.CommandName.DismissOverlay with String = js.native
+    /* "getLaunchArgs" */ val GetLaunchArgs: typings.reactNativeNavigation.commandNameMod.CommandName.GetLaunchArgs with String = js.native
+    /* "mergeOptions" */ val MergeOptions: typings.reactNativeNavigation.commandNameMod.CommandName.MergeOptions with String = js.native
+    /* "pop" */ val Pop: typings.reactNativeNavigation.commandNameMod.CommandName.Pop with String = js.native
+    /* "popTo" */ val PopTo: typings.reactNativeNavigation.commandNameMod.CommandName.PopTo with String = js.native
+    /* "popToRoot" */ val PopToRoot: typings.reactNativeNavigation.commandNameMod.CommandName.PopToRoot with String = js.native
+    /* "push" */ val Push: typings.reactNativeNavigation.commandNameMod.CommandName.Push with String = js.native
+    /* "setDefaultOptions" */ val SetDefaultOptions: typings.reactNativeNavigation.commandNameMod.CommandName.SetDefaultOptions with String = js.native
+    /* "setRoot" */ val SetRoot: typings.reactNativeNavigation.commandNameMod.CommandName.SetRoot with String = js.native
+    /* "setStackRoot" */ val SetStackRoot: typings.reactNativeNavigation.commandNameMod.CommandName.SetStackRoot with String = js.native
+    /* "showModal" */ val ShowModal: typings.reactNativeNavigation.commandNameMod.CommandName.ShowModal with String = js.native
+    /* "showOverlay" */ val ShowOverlay: typings.reactNativeNavigation.commandNameMod.CommandName.ShowOverlay with String = js.native
+    /* "updateProps" */ val UpdateProps: typings.reactNativeNavigation.commandNameMod.CommandName.UpdateProps with String = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.reactNativeNavigation.commandNameMod.CommandName with String] = js.native
+  }
+  
   /* static members */
   @js.native
   object Constants extends js.Object {
     def get(): js.Promise[NavigationConstants] = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object NavigationComponent extends js.Object {
+    /**
+      * Options used to apply a style configuration when the screen appears.
+      *
+      * This field can either contain the concrete options to be applied, or a generator function
+      * which accepts props and returns an Options object.
+      */
+    var options: (js.Function1[/* props */ js.UndefOr[js.Any], Options]) | Options = js.native
   }
   
   @js.native

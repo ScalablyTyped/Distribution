@@ -32,6 +32,7 @@ trait IBaseProtocol[Ext] extends js.Object {
   ): XPromise[js.Array[T]] = js.native
   // API: http://vitaly-t.github.io/pg-promise/Database.html#func
   def func[T](funcName: String): XPromise[T] = js.native
+  def func[T](funcName: String, values: js.UndefOr[scala.Nothing], qrm: queryResult): XPromise[T] = js.native
   def func[T](funcName: String, values: js.Any): XPromise[T] = js.native
   def func[T](funcName: String, values: js.Any, qrm: queryResult): XPromise[T] = js.native
   // API: http://vitaly-t.github.io/pg-promise/Database.html#many
@@ -64,26 +65,83 @@ trait IBaseProtocol[Ext] extends js.Object {
   def none(query: QueryParam, values: js.Any): XPromise[Null] = js.native
   // API: http://vitaly-t.github.io/pg-promise/Database.html#one
   def one[T](query: QueryParam): XPromise[T] = js.native
+  def one[T](
+    query: QueryParam,
+    values: js.UndefOr[scala.Nothing],
+    cb: js.UndefOr[scala.Nothing],
+    thisArg: js.Any
+  ): XPromise[T] = js.native
+  def one[T](query: QueryParam, values: js.UndefOr[scala.Nothing], cb: js.Function1[/* value */ js.Any, T]): XPromise[T] = js.native
+  def one[T](
+    query: QueryParam,
+    values: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* value */ js.Any, T],
+    thisArg: js.Any
+  ): XPromise[T] = js.native
   def one[T](query: QueryParam, values: js.Any): XPromise[T] = js.native
+  def one[T](query: QueryParam, values: js.Any, cb: js.UndefOr[scala.Nothing], thisArg: js.Any): XPromise[T] = js.native
   def one[T](query: QueryParam, values: js.Any, cb: js.Function1[/* value */ js.Any, T]): XPromise[T] = js.native
   def one[T](query: QueryParam, values: js.Any, cb: js.Function1[/* value */ js.Any, T], thisArg: js.Any): XPromise[T] = js.native
   // API: http://vitaly-t.github.io/pg-promise/Database.html#oneOrNone
   def oneOrNone[T](query: QueryParam): XPromise[T | Null] = js.native
+  def oneOrNone[T](
+    query: QueryParam,
+    values: js.UndefOr[scala.Nothing],
+    cb: js.UndefOr[scala.Nothing],
+    thisArg: js.Any
+  ): XPromise[T | Null] = js.native
+  def oneOrNone[T](query: QueryParam, values: js.UndefOr[scala.Nothing], cb: js.Function1[/* value */ js.Any, T]): XPromise[T | Null] = js.native
+  def oneOrNone[T](
+    query: QueryParam,
+    values: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* value */ js.Any, T],
+    thisArg: js.Any
+  ): XPromise[T | Null] = js.native
   def oneOrNone[T](query: QueryParam, values: js.Any): XPromise[T | Null] = js.native
+  def oneOrNone[T](query: QueryParam, values: js.Any, cb: js.UndefOr[scala.Nothing], thisArg: js.Any): XPromise[T | Null] = js.native
   def oneOrNone[T](query: QueryParam, values: js.Any, cb: js.Function1[/* value */ js.Any, T]): XPromise[T | Null] = js.native
   def oneOrNone[T](query: QueryParam, values: js.Any, cb: js.Function1[/* value */ js.Any, T], thisArg: js.Any): XPromise[T | Null] = js.native
   // API: http://vitaly-t.github.io/pg-promise/Database.html#proc
   def proc[T](procName: String): XPromise[T | Null] = js.native
+  def proc[T](
+    procName: String,
+    values: js.UndefOr[scala.Nothing],
+    cb: js.UndefOr[scala.Nothing],
+    thisArg: js.Any
+  ): XPromise[T | Null] = js.native
+  def proc[T](procName: String, values: js.UndefOr[scala.Nothing], cb: js.Function1[/* value */ js.Any, T]): XPromise[T | Null] = js.native
+  def proc[T](
+    procName: String,
+    values: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* value */ js.Any, T],
+    thisArg: js.Any
+  ): XPromise[T | Null] = js.native
   def proc[T](procName: String, values: js.Any): XPromise[T | Null] = js.native
+  def proc[T](procName: String, values: js.Any, cb: js.UndefOr[scala.Nothing], thisArg: js.Any): XPromise[T | Null] = js.native
   def proc[T](procName: String, values: js.Any, cb: js.Function1[/* value */ js.Any, T]): XPromise[T | Null] = js.native
   def proc[T](procName: String, values: js.Any, cb: js.Function1[/* value */ js.Any, T], thisArg: js.Any): XPromise[T | Null] = js.native
   // API: http://vitaly-t.github.io/pg-promise/Database.html#query
   def query[T](query: QueryParam): XPromise[T] = js.native
+  def query[T](query: QueryParam, values: js.UndefOr[scala.Nothing], qrm: queryResult): XPromise[T] = js.native
   def query[T](query: QueryParam, values: js.Any): XPromise[T] = js.native
   def query[T](query: QueryParam, values: js.Any, qrm: queryResult): XPromise[T] = js.native
   // API: http://vitaly-t.github.io/pg-promise/Database.html#result
   def result[T](query: QueryParam): XPromise[T] = js.native
+  def result[T](
+    query: QueryParam,
+    values: js.UndefOr[scala.Nothing],
+    cb: js.UndefOr[scala.Nothing],
+    thisArg: js.Any
+  ): XPromise[T] = js.native
+  def result[T](query: QueryParam, values: js.UndefOr[scala.Nothing], cb: js.Function1[/* value */ IResultExt, T]): XPromise[T] = js.native
+  def result[T](
+    query: QueryParam,
+    values: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* value */ IResultExt, T],
+    thisArg: js.Any
+  ): XPromise[T] = js.native
   def result[T](query: QueryParam, values: js.Any): XPromise[T] = js.native
+  def result[T](query: QueryParam, values: js.Any, cb: js.UndefOr[scala.Nothing], thisArg: js.Any): XPromise[T] = js.native
   def result[T](query: QueryParam, values: js.Any, cb: js.Function1[/* value */ IResultExt, T]): XPromise[T] = js.native
   def result[T](query: QueryParam, values: js.Any, cb: js.Function1[/* value */ IResultExt, T], thisArg: js.Any): XPromise[T] = js.native
   // API: http://vitaly-t.github.io/pg-promise/Database.html#stream

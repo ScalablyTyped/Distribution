@@ -16,7 +16,16 @@ trait TensorTracker extends js.Object {
   def makeTensor(values: DataValues, shape: js.Array[Double], dtype: DataType): Tensor[Rank] = js.native
   def makeTensor(values: DataValues, shape: js.Array[Double], dtype: DataType, backend: Backend): Tensor[Rank] = js.native
   def makeVariable(initialValue: Tensor[Rank]): Variable[Rank] = js.native
+  def makeVariable(
+    initialValue: Tensor[Rank],
+    trainable: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    dtype: DataType
+  ): Variable[Rank] = js.native
+  def makeVariable(initialValue: Tensor[Rank], trainable: js.UndefOr[scala.Nothing], name: String): Variable[Rank] = js.native
+  def makeVariable(initialValue: Tensor[Rank], trainable: js.UndefOr[scala.Nothing], name: String, dtype: DataType): Variable[Rank] = js.native
   def makeVariable(initialValue: Tensor[Rank], trainable: Boolean): Variable[Rank] = js.native
+  def makeVariable(initialValue: Tensor[Rank], trainable: Boolean, name: js.UndefOr[scala.Nothing], dtype: DataType): Variable[Rank] = js.native
   def makeVariable(initialValue: Tensor[Rank], trainable: Boolean, name: String): Variable[Rank] = js.native
   def makeVariable(initialValue: Tensor[Rank], trainable: Boolean, name: String, dtype: DataType): Variable[Rank] = js.native
   def read(dataId: DataId): js.Promise[BackendValues] = js.native

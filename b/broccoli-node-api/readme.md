@@ -12,7 +12,7 @@ Broccoli Plugin API Types
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 3 |
-| # downloads        | 513437 |
+| # downloads        | 689322 |
 | # stars            | 0 |
 
 ## Links

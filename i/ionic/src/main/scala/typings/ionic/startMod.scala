@@ -19,7 +19,7 @@ object startMod extends js.Object {
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @js.native
   class StartCommand () extends Command {
     var canRemoveExisting: js.Any = js.native
-    var schema: js.UndefOr[js.Any] = js.native
+    var schema: js.Any = js.native
     def checkForExisting(projectDir: String): js.Promise[Unit] = js.native
     def downloadStarterTemplate(projectDir: String, starterTemplate: ResolvedStarterTemplate): js.Promise[Unit] = js.native
     def findStarterTemplate(template: String, `type`: String, tag: String): js.Promise[ResolvedStarterTemplate] = js.native

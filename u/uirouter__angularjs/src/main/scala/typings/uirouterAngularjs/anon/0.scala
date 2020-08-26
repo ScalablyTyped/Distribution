@@ -45,6 +45,11 @@ trait `0` extends js.Object {
     * @param parent a promise for a "parent resolve"
     */
   def resolve(invocables: StringDictionary[js.Function]): js.Promise[Obj] = js.native
+  def resolve(
+    invocables: StringDictionary[js.Function],
+    locals: js.UndefOr[scala.Nothing],
+    parent: js.Promise[_]
+  ): js.Promise[Obj] = js.native
   def resolve(invocables: StringDictionary[js.Function], locals: js.Object): js.Promise[Obj] = js.native
   def resolve(invocables: StringDictionary[js.Function], locals: js.Object, parent: js.Promise[_]): js.Promise[Obj] = js.native
 }

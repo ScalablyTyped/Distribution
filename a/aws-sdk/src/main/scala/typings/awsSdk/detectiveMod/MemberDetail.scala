@@ -50,30 +50,62 @@ trait MemberDetail extends js.Object {
 
 object MemberDetail {
   @scala.inline
-  def apply(
-    AccountId: AccountId = null,
-    DisabledReason: MemberDisabledReason = null,
-    EmailAddress: EmailAddress = null,
-    GraphArn: GraphArn = null,
-    InvitedTime: Timestamp = null,
-    MasterId: AccountId = null,
-    PercentOfGraphUtilization: js.UndefOr[Percentage] = js.undefined,
-    PercentOfGraphUtilizationUpdatedTime: Timestamp = null,
-    Status: MemberStatus = null,
-    UpdatedTime: Timestamp = null
-  ): MemberDetail = {
+  def apply(): MemberDetail = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (DisabledReason != null) __obj.updateDynamic("DisabledReason")(DisabledReason.asInstanceOf[js.Any])
-    if (EmailAddress != null) __obj.updateDynamic("EmailAddress")(EmailAddress.asInstanceOf[js.Any])
-    if (GraphArn != null) __obj.updateDynamic("GraphArn")(GraphArn.asInstanceOf[js.Any])
-    if (InvitedTime != null) __obj.updateDynamic("InvitedTime")(InvitedTime.asInstanceOf[js.Any])
-    if (MasterId != null) __obj.updateDynamic("MasterId")(MasterId.asInstanceOf[js.Any])
-    if (!js.isUndefined(PercentOfGraphUtilization)) __obj.updateDynamic("PercentOfGraphUtilization")(PercentOfGraphUtilization.get.asInstanceOf[js.Any])
-    if (PercentOfGraphUtilizationUpdatedTime != null) __obj.updateDynamic("PercentOfGraphUtilizationUpdatedTime")(PercentOfGraphUtilizationUpdatedTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (UpdatedTime != null) __obj.updateDynamic("UpdatedTime")(UpdatedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemberDetail]
   }
+  @scala.inline
+  implicit class MemberDetailOps[Self <: MemberDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setDisabledReason(value: MemberDisabledReason): Self = this.set("DisabledReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledReason: Self = this.set("DisabledReason", js.undefined)
+    @scala.inline
+    def setEmailAddress(value: EmailAddress): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailAddress: Self = this.set("EmailAddress", js.undefined)
+    @scala.inline
+    def setGraphArn(value: GraphArn): Self = this.set("GraphArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGraphArn: Self = this.set("GraphArn", js.undefined)
+    @scala.inline
+    def setInvitedTime(value: Timestamp): Self = this.set("InvitedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitedTime: Self = this.set("InvitedTime", js.undefined)
+    @scala.inline
+    def setMasterId(value: AccountId): Self = this.set("MasterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterId: Self = this.set("MasterId", js.undefined)
+    @scala.inline
+    def setPercentOfGraphUtilization(value: Percentage): Self = this.set("PercentOfGraphUtilization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentOfGraphUtilization: Self = this.set("PercentOfGraphUtilization", js.undefined)
+    @scala.inline
+    def setPercentOfGraphUtilizationUpdatedTime(value: Timestamp): Self = this.set("PercentOfGraphUtilizationUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentOfGraphUtilizationUpdatedTime: Self = this.set("PercentOfGraphUtilizationUpdatedTime", js.undefined)
+    @scala.inline
+    def setStatus(value: MemberStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setUpdatedTime(value: Timestamp): Self = this.set("UpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedTime: Self = this.set("UpdatedTime", js.undefined)
+  }
+  
 }
 

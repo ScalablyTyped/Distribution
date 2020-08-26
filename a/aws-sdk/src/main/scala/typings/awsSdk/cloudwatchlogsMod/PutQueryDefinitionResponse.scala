@@ -11,10 +11,26 @@ trait PutQueryDefinitionResponse extends js.Object {
 
 object PutQueryDefinitionResponse {
   @scala.inline
-  def apply(queryDefinitionId: QueryId = null): PutQueryDefinitionResponse = {
+  def apply(): PutQueryDefinitionResponse = {
     val __obj = js.Dynamic.literal()
-    if (queryDefinitionId != null) __obj.updateDynamic("queryDefinitionId")(queryDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutQueryDefinitionResponse]
   }
+  @scala.inline
+  implicit class PutQueryDefinitionResponseOps[Self <: PutQueryDefinitionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryDefinitionId(value: QueryId): Self = this.set("queryDefinitionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryDefinitionId: Self = this.set("queryDefinitionId", js.undefined)
+  }
+  
 }
 

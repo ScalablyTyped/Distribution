@@ -28,6 +28,7 @@ class ResourceTable protected () extends js.Object {
     */
   def copy(): GaxiosPromise[SchemaTable] = js.native
   def copy(callback: BodyResponseCallback[SchemaTable]): Unit = js.native
+  def copy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTable] = js.native
   def copy(params: ParamsResourceTableCopy): GaxiosPromise[SchemaTable] = js.native
   def copy(params: ParamsResourceTableCopy, callback: BodyResponseCallback[SchemaTable]): Unit = js.native
   def copy(
@@ -55,6 +56,7 @@ class ResourceTable protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTableDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTableDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -78,6 +80,7 @@ class ResourceTable protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTable] = js.native
   def get(callback: BodyResponseCallback[SchemaTable]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTable] = js.native
   def get(params: ParamsResourceTableGet): GaxiosPromise[SchemaTable] = js.native
   def get(params: ParamsResourceTableGet, callback: BodyResponseCallback[SchemaTable]): Unit = js.native
   def get(
@@ -113,6 +116,7 @@ class ResourceTable protected () extends js.Object {
     */
   def importRows(): GaxiosPromise[SchemaImport] = js.native
   def importRows(callback: BodyResponseCallback[SchemaImport]): Unit = js.native
+  def importRows(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaImport] = js.native
   def importRows(params: ParamsResourceTableImportrows): GaxiosPromise[SchemaImport] = js.native
   def importRows(params: ParamsResourceTableImportrows, callback: BodyResponseCallback[SchemaImport]): Unit = js.native
   def importRows(
@@ -145,6 +149,7 @@ class ResourceTable protected () extends js.Object {
     */
   def importTable(): GaxiosPromise[SchemaTable] = js.native
   def importTable(callback: BodyResponseCallback[SchemaTable]): Unit = js.native
+  def importTable(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTable] = js.native
   def importTable(params: ParamsResourceTableImporttable): GaxiosPromise[SchemaTable] = js.native
   def importTable(params: ParamsResourceTableImporttable, callback: BodyResponseCallback[SchemaTable]): Unit = js.native
   def importTable(
@@ -172,6 +177,7 @@ class ResourceTable protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaTable] = js.native
   def insert(callback: BodyResponseCallback[SchemaTable]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTable] = js.native
   def insert(params: ParamsResourceTableInsert): GaxiosPromise[SchemaTable] = js.native
   def insert(params: ParamsResourceTableInsert, callback: BodyResponseCallback[SchemaTable]): Unit = js.native
   def insert(
@@ -200,6 +206,7 @@ class ResourceTable protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTableList] = js.native
   def list(callback: BodyResponseCallback[SchemaTableList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTableList] = js.native
   def list(params: ParamsResourceTableList): GaxiosPromise[SchemaTableList] = js.native
   def list(params: ParamsResourceTableList, callback: BodyResponseCallback[SchemaTableList]): Unit = js.native
   def list(
@@ -231,6 +238,7 @@ class ResourceTable protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaTable] = js.native
   def patch(callback: BodyResponseCallback[SchemaTable]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTable] = js.native
   def patch(params: ParamsResourceTablePatch): GaxiosPromise[SchemaTable] = js.native
   def patch(params: ParamsResourceTablePatch, callback: BodyResponseCallback[SchemaTable]): Unit = js.native
   def patch(
@@ -261,6 +269,7 @@ class ResourceTable protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaTable] = js.native
   def update(callback: BodyResponseCallback[SchemaTable]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTable] = js.native
   def update(params: ParamsResourceTableUpdate): GaxiosPromise[SchemaTable] = js.native
   def update(params: ParamsResourceTableUpdate, callback: BodyResponseCallback[SchemaTable]): Unit = js.native
   def update(

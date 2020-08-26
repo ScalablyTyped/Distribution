@@ -5,18 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BatchSize extends js.Object {
-  var batchSize: js.UndefOr[Double] = js.undefined
-  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
+  var batchSize: js.UndefOr[Double] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.native
 }
 
 object BatchSize {
   @scala.inline
-  def apply(batchSize: js.UndefOr[Double] = js.undefined, readPreference: ReadPreference | String = null): BatchSize = {
+  def apply(): BatchSize = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchSize]
   }
+  @scala.inline
+  implicit class BatchSizeOps[Self <: BatchSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    @scala.inline
+    def setReadPreference(value: ReadPreference | String): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+  }
+  
 }
 

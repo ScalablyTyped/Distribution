@@ -1,0 +1,18 @@
+package typings.superstruct.indexCjsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("superstruct/lib/index.cjs", "assert")
+@js.native
+object assert extends js.Object {
+  /**
+    * Assert that a value passes a `Struct`, throwing if it doesn't.
+    */
+  /**
+    * Assert that a value passes a `Struct`, throwing if it doesn't.
+    */
+  def apply[T](value: js.Any, struct: Struct_[T, _]): /* is T */ Boolean = js.native
+}
+

@@ -22,10 +22,30 @@ trait KendraConfiguration extends js.Object {
 
 object KendraConfiguration {
   @scala.inline
-  def apply(kendraIndex: KendraIndexArn, role: roleArn, queryFilterString: QueryFilterString = null): KendraConfiguration = {
+  def apply(kendraIndex: KendraIndexArn, role: roleArn): KendraConfiguration = {
     val __obj = js.Dynamic.literal(kendraIndex = kendraIndex.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
-    if (queryFilterString != null) __obj.updateDynamic("queryFilterString")(queryFilterString.asInstanceOf[js.Any])
     __obj.asInstanceOf[KendraConfiguration]
   }
+  @scala.inline
+  implicit class KendraConfigurationOps[Self <: KendraConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKendraIndex(value: KendraIndexArn): Self = this.set("kendraIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRole(value: roleArn): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQueryFilterString(value: QueryFilterString): Self = this.set("queryFilterString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryFilterString: Self = this.set("queryFilterString", js.undefined)
+  }
+  
 }
 

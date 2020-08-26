@@ -22,16 +22,34 @@ trait MpdSettings extends js.Object {
 
 object MpdSettings {
   @scala.inline
-  def apply(
-    CaptionContainerType: MpdCaptionContainerType = null,
-    Scte35Esam: MpdScte35Esam = null,
-    Scte35Source: MpdScte35Source = null
-  ): MpdSettings = {
+  def apply(): MpdSettings = {
     val __obj = js.Dynamic.literal()
-    if (CaptionContainerType != null) __obj.updateDynamic("CaptionContainerType")(CaptionContainerType.asInstanceOf[js.Any])
-    if (Scte35Esam != null) __obj.updateDynamic("Scte35Esam")(Scte35Esam.asInstanceOf[js.Any])
-    if (Scte35Source != null) __obj.updateDynamic("Scte35Source")(Scte35Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[MpdSettings]
   }
+  @scala.inline
+  implicit class MpdSettingsOps[Self <: MpdSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptionContainerType(value: MpdCaptionContainerType): Self = this.set("CaptionContainerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionContainerType: Self = this.set("CaptionContainerType", js.undefined)
+    @scala.inline
+    def setScte35Esam(value: MpdScte35Esam): Self = this.set("Scte35Esam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScte35Esam: Self = this.set("Scte35Esam", js.undefined)
+    @scala.inline
+    def setScte35Source(value: MpdScte35Source): Self = this.set("Scte35Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScte35Source: Self = this.set("Scte35Source", js.undefined)
+  }
+  
 }
 

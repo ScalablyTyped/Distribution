@@ -11,5 +11,6 @@ trait KnockoutSubscribableFunctions[T] extends // Ko specific
   def notifySubscribers(): Unit = js.native
   def notifySubscribers(valueToWrite: T): Unit = js.native
   def notifySubscribers(valueToWrite: T, event: String): Unit = js.native
+  def notifySubscribers(valueToWrite: js.UndefOr[scala.Nothing], event: String): Unit = js.native
 }
 

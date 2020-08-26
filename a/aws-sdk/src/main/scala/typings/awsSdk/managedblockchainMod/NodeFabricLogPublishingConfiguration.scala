@@ -18,11 +18,30 @@ trait NodeFabricLogPublishingConfiguration extends js.Object {
 
 object NodeFabricLogPublishingConfiguration {
   @scala.inline
-  def apply(ChaincodeLogs: LogConfigurations = null, PeerLogs: LogConfigurations = null): NodeFabricLogPublishingConfiguration = {
+  def apply(): NodeFabricLogPublishingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (ChaincodeLogs != null) __obj.updateDynamic("ChaincodeLogs")(ChaincodeLogs.asInstanceOf[js.Any])
-    if (PeerLogs != null) __obj.updateDynamic("PeerLogs")(PeerLogs.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeFabricLogPublishingConfiguration]
   }
+  @scala.inline
+  implicit class NodeFabricLogPublishingConfigurationOps[Self <: NodeFabricLogPublishingConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChaincodeLogs(value: LogConfigurations): Self = this.set("ChaincodeLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChaincodeLogs: Self = this.set("ChaincodeLogs", js.undefined)
+    @scala.inline
+    def setPeerLogs(value: LogConfigurations): Self = this.set("PeerLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerLogs: Self = this.set("PeerLogs", js.undefined)
+  }
+  
 }
 

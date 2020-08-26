@@ -13,16 +13,34 @@ trait GenerateClassNameOptions extends js.Object {
 
 object GenerateClassNameOptions {
   @scala.inline
-  def apply(
-    dangerouslyUseGlobalCSS: js.UndefOr[Boolean] = js.undefined,
-    productionPrefix: String = null,
-    seed: String = null
-  ): GenerateClassNameOptions = {
+  def apply(): GenerateClassNameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dangerouslyUseGlobalCSS)) __obj.updateDynamic("dangerouslyUseGlobalCSS")(dangerouslyUseGlobalCSS.get.asInstanceOf[js.Any])
-    if (productionPrefix != null) __obj.updateDynamic("productionPrefix")(productionPrefix.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateClassNameOptions]
   }
+  @scala.inline
+  implicit class GenerateClassNameOptionsOps[Self <: GenerateClassNameOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDangerouslyUseGlobalCSS(value: Boolean): Self = this.set("dangerouslyUseGlobalCSS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDangerouslyUseGlobalCSS: Self = this.set("dangerouslyUseGlobalCSS", js.undefined)
+    @scala.inline
+    def setProductionPrefix(value: String): Self = this.set("productionPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductionPrefix: Self = this.set("productionPrefix", js.undefined)
+    @scala.inline
+    def setSeed(value: String): Self = this.set("seed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeed: Self = this.set("seed", js.undefined)
+  }
+  
 }
 

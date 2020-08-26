@@ -1,6 +1,6 @@
 package typings.graphql.mod
 
-import typings.graphql.introspectionQueryMod.IntrospectionOptions
+import typings.graphql.getIntrospectionQueryMod.IntrospectionOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

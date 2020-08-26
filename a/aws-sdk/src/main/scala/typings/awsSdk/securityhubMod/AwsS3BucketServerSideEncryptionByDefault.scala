@@ -18,11 +18,30 @@ trait AwsS3BucketServerSideEncryptionByDefault extends js.Object {
 
 object AwsS3BucketServerSideEncryptionByDefault {
   @scala.inline
-  def apply(KMSMasterKeyID: NonEmptyString = null, SSEAlgorithm: NonEmptyString = null): AwsS3BucketServerSideEncryptionByDefault = {
+  def apply(): AwsS3BucketServerSideEncryptionByDefault = {
     val __obj = js.Dynamic.literal()
-    if (KMSMasterKeyID != null) __obj.updateDynamic("KMSMasterKeyID")(KMSMasterKeyID.asInstanceOf[js.Any])
-    if (SSEAlgorithm != null) __obj.updateDynamic("SSEAlgorithm")(SSEAlgorithm.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsS3BucketServerSideEncryptionByDefault]
   }
+  @scala.inline
+  implicit class AwsS3BucketServerSideEncryptionByDefaultOps[Self <: AwsS3BucketServerSideEncryptionByDefault] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKMSMasterKeyID(value: NonEmptyString): Self = this.set("KMSMasterKeyID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSMasterKeyID: Self = this.set("KMSMasterKeyID", js.undefined)
+    @scala.inline
+    def setSSEAlgorithm(value: NonEmptyString): Self = this.set("SSEAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSEAlgorithm: Self = this.set("SSEAlgorithm", js.undefined)
+  }
+  
 }
 

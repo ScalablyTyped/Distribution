@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
+@js.native
 trait PlusNativeUIPreviewImageOptions extends js.Object {
   /**
     * 图片预览的背景颜色
@@ -17,14 +18,14 @@ trait PlusNativeUIPreviewImageOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var background: js.UndefOr[String] = js.undefined
+  var background: js.UndefOr[String] = js.native
   /**
     * 默认显示图片的索引值
     * 索引值从0开始，默认值为0。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var current: js.UndefOr[Double] = js.undefined
+  var current: js.UndefOr[Double] = js.native
   /**
     * 图片指示器样式
     * 可取值：
@@ -35,7 +36,7 @@ trait PlusNativeUIPreviewImageOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var indicator: js.UndefOr[String] = js.undefined
+  var indicator: js.UndefOr[String] = js.native
   /**
     * 是否可循环预览
     * 可取值：
@@ -45,23 +46,43 @@ trait PlusNativeUIPreviewImageOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var loop: js.UndefOr[Boolean] = js.undefined
+  var loop: js.UndefOr[Boolean] = js.native
 }
 
 object PlusNativeUIPreviewImageOptions {
   @scala.inline
-  def apply(
-    background: String = null,
-    current: js.UndefOr[Double] = js.undefined,
-    indicator: String = null,
-    loop: js.UndefOr[Boolean] = js.undefined
-  ): PlusNativeUIPreviewImageOptions = {
+  def apply(): PlusNativeUIPreviewImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
-    if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIPreviewImageOptions]
   }
+  @scala.inline
+  implicit class PlusNativeUIPreviewImageOptionsOps[Self <: PlusNativeUIPreviewImageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setCurrent(value: Double): Self = this.set("current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrent: Self = this.set("current", js.undefined)
+    @scala.inline
+    def setIndicator(value: String): Self = this.set("indicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndicator: Self = this.set("indicator", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+  }
+  
 }
 

@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Devices.Enumeration
 
 import typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectType
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
-import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,23 +14,7 @@ object Pnp extends js.Object {
   /** Represents a PnP object. This class allows access to well-known properties of a PnP object as well as a property store of additional properties that are specified to be retrieved from the the PnP object. */
   @js.native
   abstract class PnpObject ()
-    extends typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObject {
-    /** A string representing the identity of the PnpObject . */
-    /* CompleteClass */
-    override var id: String = js.native
-    /** A property store containing well-known values as well as additional specified properties. */
-    /* CompleteClass */
-    override var properties: IMapView[String, _] = js.native
-    /** The type of the PnpObject . */
-    /* CompleteClass */
-    override var `type`: PnpObjectType = js.native
-    /**
-      * Updates the properties of an existing PnpObject by applying the changes described in a PnpObjectUpdate object.
-      * @param updateInfo Indicates the properties to update.
-      */
-    /* CompleteClass */
-    override def update(updateInfo: typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectUpdate): Unit = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObject
   
   /** Represents an iterable collection of Pnp device objects. */
   @js.native
@@ -41,17 +24,7 @@ object Pnp extends js.Object {
   /** Contains the updated properties of a PnpObject . */
   @js.native
   abstract class PnpObjectUpdate ()
-    extends typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectUpdate {
-    /** The identifier of the PnpObject . */
-    /* CompleteClass */
-    override var id: String = js.native
-    /** The changed properties in an update to a PnpObject . */
-    /* CompleteClass */
-    override var properties: IMapView[String, _] = js.native
-    /** The type of the PnpObject . One of the values of the PnpObjectType enumeration. */
-    /* CompleteClass */
-    override var `type`: PnpObjectType = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectUpdate
   
   /** Raises events to notify the client that a PnpObject has been added, updated, or removed from an enumerated collection of Pnp device objects in an incremental and asynchronous way. */
   @js.native

@@ -51,6 +51,7 @@ trait Alert extends js.Object {
     * @see https://docs.scriptable.app/alert/#-addsecuretextfield
     */
   def addSecureTextField(): Unit = js.native
+  def addSecureTextField(placeholder: js.UndefOr[scala.Nothing], text: String): Unit = js.native
   def addSecureTextField(placeholder: String): Unit = js.native
   def addSecureTextField(placeholder: String, text: String): Unit = js.native
   /**
@@ -65,6 +66,7 @@ trait Alert extends js.Object {
     * @see https://docs.scriptable.app/alert/#-addtextfield
     */
   def addTextField(): Unit = js.native
+  def addTextField(placeholder: js.UndefOr[scala.Nothing], text: String): Unit = js.native
   def addTextField(placeholder: String): Unit = js.native
   def addTextField(placeholder: String, text: String): Unit = js.native
   /**

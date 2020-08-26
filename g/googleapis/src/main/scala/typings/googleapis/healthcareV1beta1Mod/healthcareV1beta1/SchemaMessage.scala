@@ -62,28 +62,60 @@ trait SchemaMessage extends js.Object {
 
 object SchemaMessage {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    data: String = null,
-    labels: StringDictionary[String] = null,
-    messageType: String = null,
-    name: String = null,
-    parsedData: SchemaParsedData = null,
-    patientIds: js.Array[SchemaPatientId] = null,
-    sendFacility: String = null,
-    sendTime: String = null
-  ): SchemaMessage = {
+  def apply(): SchemaMessage = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parsedData != null) __obj.updateDynamic("parsedData")(parsedData.asInstanceOf[js.Any])
-    if (patientIds != null) __obj.updateDynamic("patientIds")(patientIds.asInstanceOf[js.Any])
-    if (sendFacility != null) __obj.updateDynamic("sendFacility")(sendFacility.asInstanceOf[js.Any])
-    if (sendTime != null) __obj.updateDynamic("sendTime")(sendTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMessage]
   }
+  @scala.inline
+  implicit class SchemaMessageOps[Self <: SchemaMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMessageType(value: String): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageType: Self = this.set("messageType", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParsedData(value: SchemaParsedData): Self = this.set("parsedData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParsedData: Self = this.set("parsedData", js.undefined)
+    @scala.inline
+    def setPatientIdsVarargs(value: SchemaPatientId*): Self = this.set("patientIds", js.Array(value :_*))
+    @scala.inline
+    def setPatientIds(value: js.Array[SchemaPatientId]): Self = this.set("patientIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatientIds: Self = this.set("patientIds", js.undefined)
+    @scala.inline
+    def setSendFacility(value: String): Self = this.set("sendFacility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendFacility: Self = this.set("sendFacility", js.undefined)
+    @scala.inline
+    def setSendTime(value: String): Self = this.set("sendTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendTime: Self = this.set("sendTime", js.undefined)
+  }
+  
 }
 

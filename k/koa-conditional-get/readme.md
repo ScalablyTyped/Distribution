@@ -11,8 +11,8 @@ Conditional GET support for koa
 | Full name          | koa-conditional-get |
 | Keywords           | koa, middleware, cache, caching, etag |
 | # releases         | 0 |
-| # dependents       | 106 |
-| # downloads        | 915164 |
+| # dependents       | 110 |
+| # downloads        | 1006138 |
 | # stars            | 1 |
 
 ## Links

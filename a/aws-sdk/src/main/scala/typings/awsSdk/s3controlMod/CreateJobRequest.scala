@@ -57,16 +57,51 @@ object CreateJobRequest {
     Operation: JobOperation,
     Priority: JobPriority,
     Report: JobReport,
-    RoleArn: IAMRoleArn,
-    ConfirmationRequired: js.UndefOr[ConfirmationRequired] = js.undefined,
-    Description: NonEmptyMaxLength256String = null,
-    Tags: S3TagSet = null
+    RoleArn: IAMRoleArn
   ): CreateJobRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], ClientRequestToken = ClientRequestToken.asInstanceOf[js.Any], Manifest = Manifest.asInstanceOf[js.Any], Operation = Operation.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], Report = Report.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConfirmationRequired)) __obj.updateDynamic("ConfirmationRequired")(ConfirmationRequired.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobRequest]
   }
+  @scala.inline
+  implicit class CreateJobRequestOps[Self <: CreateJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: NonEmptyMaxLength64String): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setManifest(value: JobManifest): Self = this.set("Manifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOperation(value: JobOperation): Self = this.set("Operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPriority(value: JobPriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReport(value: JobReport): Self = this.set("Report", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: IAMRoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfirmationRequired(value: ConfirmationRequired): Self = this.set("ConfirmationRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmationRequired: Self = this.set("ConfirmationRequired", js.undefined)
+    @scala.inline
+    def setDescription(value: NonEmptyMaxLength256String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: S3Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: S3TagSet): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

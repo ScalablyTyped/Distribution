@@ -1,58 +1,71 @@
 package typings.vegaTypings.configMod
 
-import typings.vegaTypings.encodeMod.Orientation
-import typings.vegaTypings.layoutMod.LayoutBounds
-import typings.vegaTypings.signalMod.SignalRef
-import typings.vegaTypings.titleMod.TitleAnchor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LegendLayout extends BaseLegendLayout {
-  var bottom: js.UndefOr[BaseLegendLayout] = js.undefined
-  var `bottom-left`: js.UndefOr[BaseLegendLayout] = js.undefined
-  var `bottom-right`: js.UndefOr[BaseLegendLayout] = js.undefined
-  var left: js.UndefOr[BaseLegendLayout] = js.undefined
-  var right: js.UndefOr[BaseLegendLayout] = js.undefined
-  var top: js.UndefOr[BaseLegendLayout] = js.undefined
-  var `top-left`: js.UndefOr[BaseLegendLayout] = js.undefined
-  var `top-right`: js.UndefOr[BaseLegendLayout] = js.undefined
+  var bottom: js.UndefOr[BaseLegendLayout] = js.native
+  var `bottom-left`: js.UndefOr[BaseLegendLayout] = js.native
+  var `bottom-right`: js.UndefOr[BaseLegendLayout] = js.native
+  var left: js.UndefOr[BaseLegendLayout] = js.native
+  var right: js.UndefOr[BaseLegendLayout] = js.native
+  var top: js.UndefOr[BaseLegendLayout] = js.native
+  var `top-left`: js.UndefOr[BaseLegendLayout] = js.native
+  var `top-right`: js.UndefOr[BaseLegendLayout] = js.native
 }
 
 object LegendLayout {
   @scala.inline
-  def apply(
-    anchor: js.UndefOr[Null | TitleAnchor | SignalRef] = js.undefined,
-    bottom: BaseLegendLayout = null,
-    `bottom-left`: BaseLegendLayout = null,
-    `bottom-right`: BaseLegendLayout = null,
-    bounds: LayoutBounds = null,
-    center: Boolean | SignalRef = null,
-    direction: Orientation | SignalRef = null,
-    left: BaseLegendLayout = null,
-    margin: Double | SignalRef = null,
-    offset: Double | SignalRef = null,
-    right: BaseLegendLayout = null,
-    top: BaseLegendLayout = null,
-    `top-left`: BaseLegendLayout = null,
-    `top-right`: BaseLegendLayout = null
-  ): LegendLayout = {
+  def apply(): LegendLayout = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anchor)) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (`bottom-left` != null) __obj.updateDynamic("bottom-left")(`bottom-left`.asInstanceOf[js.Any])
-    if (`bottom-right` != null) __obj.updateDynamic("bottom-right")(`bottom-right`.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (`top-left` != null) __obj.updateDynamic("top-left")(`top-left`.asInstanceOf[js.Any])
-    if (`top-right` != null) __obj.updateDynamic("top-right")(`top-right`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendLayout]
   }
+  @scala.inline
+  implicit class LegendLayoutOps[Self <: LegendLayout] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBottom(value: BaseLegendLayout): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def `setBottom-left`(value: BaseLegendLayout): Self = this.set("bottom-left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBottom-left`: Self = this.set("bottom-left", js.undefined)
+    @scala.inline
+    def `setBottom-right`(value: BaseLegendLayout): Self = this.set("bottom-right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBottom-right`: Self = this.set("bottom-right", js.undefined)
+    @scala.inline
+    def setLeft(value: BaseLegendLayout): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setRight(value: BaseLegendLayout): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setTop(value: BaseLegendLayout): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def `setTop-left`(value: BaseLegendLayout): Self = this.set("top-left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteTop-left`: Self = this.set("top-left", js.undefined)
+    @scala.inline
+    def `setTop-right`(value: BaseLegendLayout): Self = this.set("top-right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteTop-right`: Self = this.set("top-right", js.undefined)
+  }
+  
 }
 

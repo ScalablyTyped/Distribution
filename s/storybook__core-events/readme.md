@@ -10,9 +10,9 @@ Event names used in storybook core
 | ------------------ | :-------------: |
 | Full name          | @storybook/core-events |
 | Keywords           | storybook |
-| # releases         | 387 |
-| # dependents       | 78 |
-| # downloads        | 44345585 |
+| # releases         | 399 |
+| # dependents       | 80 |
+| # downloads        | 46359876 |
 | # stars            | 0 |
 
 ## Links

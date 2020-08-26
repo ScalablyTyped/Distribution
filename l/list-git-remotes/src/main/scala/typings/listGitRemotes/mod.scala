@@ -13,6 +13,7 @@ object mod extends js.Object {
   def apply(callback: Callback): Unit = js.native
   def apply(cwd: String, callback: Callback): Unit = js.native
   def sync(): Remotes = js.native
+  def sync(cwd: js.UndefOr[scala.Nothing], options: ExecSyncOptions): Remotes = js.native
   def sync(cwd: String): Remotes = js.native
   def sync(cwd: String, options: ExecSyncOptions): Remotes = js.native
   def sync(options: ExecSyncOptions): Remotes = js.native

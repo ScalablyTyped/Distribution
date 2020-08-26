@@ -11,8 +11,8 @@ a package manager for JavaScript
 | Full name          | npm |
 | Keywords           | install, modules, package manager, package.json |
 | # releases         | 64 |
-| # dependents       | 3085 |
-| # downloads        | 84559323 |
+| # dependents       | 3089 |
+| # downloads        | 84705441 |
 | # stars            | 375 |
 
 ## Links

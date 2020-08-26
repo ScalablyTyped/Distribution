@@ -12,7 +12,7 @@ Connect/Express middleware that auto provides mysql connections.
 | Keywords           | express, mysql, connect, pool, middleware |
 | # releases         | 1 |
 | # dependents       | 11 |
-| # downloads        | 38919 |
+| # downloads        | 38713 |
 | # stars            | 7 |
 
 ## Links

@@ -45,32 +45,82 @@ trait OrganizationEventFilter extends js.Object {
 
 object OrganizationEventFilter {
   @scala.inline
-  def apply(
-    awsAccountIds: awsAccountIdsList = null,
-    endTime: DateTimeRange = null,
-    entityArns: entityArnList = null,
-    entityValues: entityValueList = null,
-    eventStatusCodes: eventStatusCodeList = null,
-    eventTypeCategories: eventTypeCategoryList = null,
-    eventTypeCodes: eventTypeList = null,
-    lastUpdatedTime: DateTimeRange = null,
-    regions: regionList = null,
-    services: serviceList = null,
-    startTime: DateTimeRange = null
-  ): OrganizationEventFilter = {
+  def apply(): OrganizationEventFilter = {
     val __obj = js.Dynamic.literal()
-    if (awsAccountIds != null) __obj.updateDynamic("awsAccountIds")(awsAccountIds.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (entityArns != null) __obj.updateDynamic("entityArns")(entityArns.asInstanceOf[js.Any])
-    if (entityValues != null) __obj.updateDynamic("entityValues")(entityValues.asInstanceOf[js.Any])
-    if (eventStatusCodes != null) __obj.updateDynamic("eventStatusCodes")(eventStatusCodes.asInstanceOf[js.Any])
-    if (eventTypeCategories != null) __obj.updateDynamic("eventTypeCategories")(eventTypeCategories.asInstanceOf[js.Any])
-    if (eventTypeCodes != null) __obj.updateDynamic("eventTypeCodes")(eventTypeCodes.asInstanceOf[js.Any])
-    if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
-    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
-    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationEventFilter]
   }
+  @scala.inline
+  implicit class OrganizationEventFilterOps[Self <: OrganizationEventFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccountIdsVarargs(value: accountId*): Self = this.set("awsAccountIds", js.Array(value :_*))
+    @scala.inline
+    def setAwsAccountIds(value: awsAccountIdsList): Self = this.set("awsAccountIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsAccountIds: Self = this.set("awsAccountIds", js.undefined)
+    @scala.inline
+    def setEndTime(value: DateTimeRange): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setEntityArnsVarargs(value: entityArn*): Self = this.set("entityArns", js.Array(value :_*))
+    @scala.inline
+    def setEntityArns(value: entityArnList): Self = this.set("entityArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityArns: Self = this.set("entityArns", js.undefined)
+    @scala.inline
+    def setEntityValuesVarargs(value: entityValue*): Self = this.set("entityValues", js.Array(value :_*))
+    @scala.inline
+    def setEntityValues(value: entityValueList): Self = this.set("entityValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityValues: Self = this.set("entityValues", js.undefined)
+    @scala.inline
+    def setEventStatusCodesVarargs(value: eventStatusCode*): Self = this.set("eventStatusCodes", js.Array(value :_*))
+    @scala.inline
+    def setEventStatusCodes(value: eventStatusCodeList): Self = this.set("eventStatusCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventStatusCodes: Self = this.set("eventStatusCodes", js.undefined)
+    @scala.inline
+    def setEventTypeCategoriesVarargs(value: eventTypeCategory*): Self = this.set("eventTypeCategories", js.Array(value :_*))
+    @scala.inline
+    def setEventTypeCategories(value: eventTypeCategoryList): Self = this.set("eventTypeCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypeCategories: Self = this.set("eventTypeCategories", js.undefined)
+    @scala.inline
+    def setEventTypeCodesVarargs(value: eventType*): Self = this.set("eventTypeCodes", js.Array(value :_*))
+    @scala.inline
+    def setEventTypeCodes(value: eventTypeList): Self = this.set("eventTypeCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypeCodes: Self = this.set("eventTypeCodes", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: DateTimeRange): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    @scala.inline
+    def setRegionsVarargs(value: region*): Self = this.set("regions", js.Array(value :_*))
+    @scala.inline
+    def setRegions(value: regionList): Self = this.set("regions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegions: Self = this.set("regions", js.undefined)
+    @scala.inline
+    def setServicesVarargs(value: service*): Self = this.set("services", js.Array(value :_*))
+    @scala.inline
+    def setServices(value: serviceList): Self = this.set("services", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServices: Self = this.set("services", js.undefined)
+    @scala.inline
+    def setStartTime(value: DateTimeRange): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

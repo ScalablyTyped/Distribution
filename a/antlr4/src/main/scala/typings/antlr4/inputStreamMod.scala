@@ -13,8 +13,8 @@ object inputStreamMod extends js.Object {
     def this(data: String, decodeToUnicodeCodePoints: Boolean) = this()
     val index: Double = js.native
     val size: Double = js.native
-    def LA(offset: Double): String = js.native
-    def LT(offset: Double): String = js.native
+    def LA(offset: Double): Double = js.native
+    def LT(offset: Double): Double = js.native
     def consume(): Unit = js.native
     def getText(start: Double, stop: Double): String = js.native
     def mark(): Double = js.native

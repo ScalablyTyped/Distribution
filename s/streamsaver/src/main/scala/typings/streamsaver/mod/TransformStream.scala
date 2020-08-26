@@ -2,7 +2,6 @@ package typings.streamsaver.mod
 
 import org.scalablytyped.runtime.Instantiable3
 import typings.std.QueuingStrategy
-import typings.std.ReadableStream
 import typings.std.Transformer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,10 +16,6 @@ class TransformStream[I, O] protected ()
     writableStrategy: QueuingStrategy[I],
     readableStrategy: QueuingStrategy[O]
   ) = this()
-  /* CompleteClass */
-  override val readable: ReadableStream[O] = js.native
-  /* CompleteClass */
-  override val writable: typings.std.WritableStream[I] = js.native
 }
 
 @JSImport("streamsaver", "TransformStream")

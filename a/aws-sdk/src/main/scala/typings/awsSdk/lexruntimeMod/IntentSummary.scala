@@ -38,23 +38,48 @@ trait IntentSummary extends js.Object {
 
 object IntentSummary {
   @scala.inline
-  def apply(
-    dialogActionType: DialogActionType,
-    checkpointLabel: IntentSummaryCheckpointLabel = null,
-    confirmationStatus: ConfirmationStatus = null,
-    fulfillmentState: FulfillmentState = null,
-    intentName: IntentName = null,
-    slotToElicit: String = null,
-    slots: StringMap = null
-  ): IntentSummary = {
+  def apply(dialogActionType: DialogActionType): IntentSummary = {
     val __obj = js.Dynamic.literal(dialogActionType = dialogActionType.asInstanceOf[js.Any])
-    if (checkpointLabel != null) __obj.updateDynamic("checkpointLabel")(checkpointLabel.asInstanceOf[js.Any])
-    if (confirmationStatus != null) __obj.updateDynamic("confirmationStatus")(confirmationStatus.asInstanceOf[js.Any])
-    if (fulfillmentState != null) __obj.updateDynamic("fulfillmentState")(fulfillmentState.asInstanceOf[js.Any])
-    if (intentName != null) __obj.updateDynamic("intentName")(intentName.asInstanceOf[js.Any])
-    if (slotToElicit != null) __obj.updateDynamic("slotToElicit")(slotToElicit.asInstanceOf[js.Any])
-    if (slots != null) __obj.updateDynamic("slots")(slots.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentSummary]
   }
+  @scala.inline
+  implicit class IntentSummaryOps[Self <: IntentSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDialogActionType(value: DialogActionType): Self = this.set("dialogActionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCheckpointLabel(value: IntentSummaryCheckpointLabel): Self = this.set("checkpointLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckpointLabel: Self = this.set("checkpointLabel", js.undefined)
+    @scala.inline
+    def setConfirmationStatus(value: ConfirmationStatus): Self = this.set("confirmationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmationStatus: Self = this.set("confirmationStatus", js.undefined)
+    @scala.inline
+    def setFulfillmentState(value: FulfillmentState): Self = this.set("fulfillmentState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFulfillmentState: Self = this.set("fulfillmentState", js.undefined)
+    @scala.inline
+    def setIntentName(value: IntentName): Self = this.set("intentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntentName: Self = this.set("intentName", js.undefined)
+    @scala.inline
+    def setSlotToElicit(value: String): Self = this.set("slotToElicit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlotToElicit: Self = this.set("slotToElicit", js.undefined)
+    @scala.inline
+    def setSlots(value: StringMap): Self = this.set("slots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlots: Self = this.set("slots", js.undefined)
+  }
+  
 }
 

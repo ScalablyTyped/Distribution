@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "swagger-sails-hook"
-version := "0.7-dt-20200515Z-a69ae6"
-scalaVersion := "2.13.2"
+version := "0.7-dt-20200515Z-38ed88"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

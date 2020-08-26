@@ -20,8 +20,24 @@ trait Sheets[TSheet] extends js.Object {
   def apply(Index: String): TSheet = js.native
   def apply(Index: Double): TSheet = js.native
   def Add[T](): AddSheetResult[T] = js.native
+  def Add[T](
+    Before: js.UndefOr[scala.Nothing],
+    After: js.UndefOr[scala.Nothing],
+    Count: js.UndefOr[scala.Nothing],
+    Type: T
+  ): AddSheetResult[T] = js.native
+  def Add[T](Before: js.UndefOr[scala.Nothing], After: js.UndefOr[scala.Nothing], Count: Double): AddSheetResult[T] = js.native
+  def Add[T](Before: js.UndefOr[scala.Nothing], After: js.UndefOr[scala.Nothing], Count: Double, Type: T): AddSheetResult[T] = js.native
+  def Add[T](Before: js.UndefOr[scala.Nothing], After: Sheet): AddSheetResult[T] = js.native
+  def Add[T](Before: js.UndefOr[scala.Nothing], After: Sheet, Count: js.UndefOr[scala.Nothing], Type: T): AddSheetResult[T] = js.native
+  def Add[T](Before: js.UndefOr[scala.Nothing], After: Sheet, Count: Double): AddSheetResult[T] = js.native
+  def Add[T](Before: js.UndefOr[scala.Nothing], After: Sheet, Count: Double, Type: T): AddSheetResult[T] = js.native
   def Add[T](Before: Sheet): AddSheetResult[T] = js.native
+  def Add[T](Before: Sheet, After: js.UndefOr[scala.Nothing], Count: js.UndefOr[scala.Nothing], Type: T): AddSheetResult[T] = js.native
+  def Add[T](Before: Sheet, After: js.UndefOr[scala.Nothing], Count: Double): AddSheetResult[T] = js.native
+  def Add[T](Before: Sheet, After: js.UndefOr[scala.Nothing], Count: Double, Type: T): AddSheetResult[T] = js.native
   def Add[T](Before: Sheet, After: Sheet): AddSheetResult[T] = js.native
+  def Add[T](Before: Sheet, After: Sheet, Count: js.UndefOr[scala.Nothing], Type: T): AddSheetResult[T] = js.native
   def Add[T](Before: Sheet, After: Sheet, Count: Double): AddSheetResult[T] = js.native
   def Add[T](Before: Sheet, After: Sheet, Count: Double, Type: T): AddSheetResult[T] = js.native
   def Copy(): Unit = js.native

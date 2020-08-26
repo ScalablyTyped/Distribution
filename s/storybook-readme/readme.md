@@ -10,9 +10,9 @@ Storybook addon to show components README (for React and Vue)
 | ------------------ | :-------------: |
 | Full name          | storybook-readme |
 | Keywords           | storybook, react-storybook, docs, readme |
-| # releases         | 29 |
+| # releases         | 28 |
 | # dependents       | 25 |
-| # downloads        | 2039994 |
+| # downloads        | 2127198 |
 | # stars            | 0 |
 
 ## Links

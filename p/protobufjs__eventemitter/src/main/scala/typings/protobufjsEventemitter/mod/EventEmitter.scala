@@ -26,6 +26,7 @@ trait EventEmitter extends js.Object {
     * @returns {util.EventEmitter} `this`
     */
   def off(): EventEmitter = js.native
+  def off(evt: js.UndefOr[scala.Nothing], fn: js.Function0[_]): EventEmitter = js.native
   def off(evt: String): EventEmitter = js.native
   def off(evt: String, fn: js.Function0[_]): EventEmitter = js.native
   /**

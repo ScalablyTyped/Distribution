@@ -246,6 +246,7 @@ trait HTMLTableRow extends js.Object {
   def attachEvent(event: String, pdisp: js.Any): Boolean = js.native
   def blur(): Unit = js.native
   def cells(): js.Any = js.native
+  def cells(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def cells(name: js.Any): js.Any = js.native
   def cells(name: js.Any, index: js.Any): js.Any = js.native
   def clearAttributes(): Unit = js.native

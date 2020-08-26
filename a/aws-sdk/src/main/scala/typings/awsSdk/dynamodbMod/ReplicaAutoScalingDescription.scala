@@ -24,20 +24,44 @@ trait ReplicaAutoScalingDescription extends js.Object {
 
 object ReplicaAutoScalingDescription {
   @scala.inline
-  def apply(
-    GlobalSecondaryIndexes: ReplicaGlobalSecondaryIndexAutoScalingDescriptionList = null,
-    RegionName: RegionName = null,
-    ReplicaProvisionedReadCapacityAutoScalingSettings: AutoScalingSettingsDescription = null,
-    ReplicaProvisionedWriteCapacityAutoScalingSettings: AutoScalingSettingsDescription = null,
-    ReplicaStatus: ReplicaStatus = null
-  ): ReplicaAutoScalingDescription = {
+  def apply(): ReplicaAutoScalingDescription = {
     val __obj = js.Dynamic.literal()
-    if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes.asInstanceOf[js.Any])
-    if (RegionName != null) __obj.updateDynamic("RegionName")(RegionName.asInstanceOf[js.Any])
-    if (ReplicaProvisionedReadCapacityAutoScalingSettings != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityAutoScalingSettings")(ReplicaProvisionedReadCapacityAutoScalingSettings.asInstanceOf[js.Any])
-    if (ReplicaProvisionedWriteCapacityAutoScalingSettings != null) __obj.updateDynamic("ReplicaProvisionedWriteCapacityAutoScalingSettings")(ReplicaProvisionedWriteCapacityAutoScalingSettings.asInstanceOf[js.Any])
-    if (ReplicaStatus != null) __obj.updateDynamic("ReplicaStatus")(ReplicaStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicaAutoScalingDescription]
   }
+  @scala.inline
+  implicit class ReplicaAutoScalingDescriptionOps[Self <: ReplicaAutoScalingDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexAutoScalingDescription*): Self = this.set("GlobalSecondaryIndexes", js.Array(value :_*))
+    @scala.inline
+    def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexAutoScalingDescriptionList): Self = this.set("GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalSecondaryIndexes: Self = this.set("GlobalSecondaryIndexes", js.undefined)
+    @scala.inline
+    def setRegionName(value: RegionName): Self = this.set("RegionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionName: Self = this.set("RegionName", js.undefined)
+    @scala.inline
+    def setReplicaProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = this.set("ReplicaProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaProvisionedReadCapacityAutoScalingSettings: Self = this.set("ReplicaProvisionedReadCapacityAutoScalingSettings", js.undefined)
+    @scala.inline
+    def setReplicaProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = this.set("ReplicaProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaProvisionedWriteCapacityAutoScalingSettings: Self = this.set("ReplicaProvisionedWriteCapacityAutoScalingSettings", js.undefined)
+    @scala.inline
+    def setReplicaStatus(value: ReplicaStatus): Self = this.set("ReplicaStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaStatus: Self = this.set("ReplicaStatus", js.undefined)
+  }
+  
 }
 

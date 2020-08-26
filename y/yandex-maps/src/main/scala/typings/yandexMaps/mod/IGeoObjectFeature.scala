@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IGeoObjectFeature extends js.Object {
-  var geometry: js.UndefOr[IGeometry | IGeometryJson] = js.undefined
-  var properties: js.UndefOr[IDataManager | js.Object] = js.undefined
+  var geometry: js.UndefOr[IGeometry | IGeometryJson] = js.native
+  var properties: js.UndefOr[IDataManager | js.Object] = js.native
 }
 
 object IGeoObjectFeature {
   @scala.inline
-  def apply(geometry: IGeometry | IGeometryJson = null, properties: IDataManager | js.Object = null): IGeoObjectFeature = {
+  def apply(): IGeoObjectFeature = {
     val __obj = js.Dynamic.literal()
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoObjectFeature]
   }
+  @scala.inline
+  implicit class IGeoObjectFeatureOps[Self <: IGeoObjectFeature] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGeometry(value: IGeometry | IGeometryJson): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeometry: Self = this.set("geometry", js.undefined)
+    @scala.inline
+    def setProperties(value: IDataManager | js.Object): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+  }
+  
 }
 

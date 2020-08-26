@@ -1,6 +1,5 @@
 package typings.speedMeasureWebpackPlugin.mod
 
-import typings.webpack.mod.Configuration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends SpeedMeasurePlugin {
   def this(options: Options) = this()
-  /* CompleteClass */
-  override def wrap(config: Configuration): Configuration = js.native
 }
 

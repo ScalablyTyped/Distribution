@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * The implementation reads the original data from the input stream, that has been set previously at the {@link XActiveDataSink} interface. In general
   * the implementation must buffer the data.
   */
+@js.native
 trait MarkableInputStream
   extends XInputStream
      with XMarkableStream

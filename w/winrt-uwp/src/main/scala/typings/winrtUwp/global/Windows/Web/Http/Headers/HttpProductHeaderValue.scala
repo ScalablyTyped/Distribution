@@ -21,12 +21,6 @@ class HttpProductHeaderValue protected ()
     * @param productVersion The version of the product token used in the User-Agent HTTP header.
     */
   def this(productName: String, productVersion: String) = this()
-  /** Gets a token that represents the name of the product to be used in the User-Agent HTTP header. */
-  /* CompleteClass */
-  override var name: String = js.native
-  /** Gets a token that represents the version of the product to be used in the User-Agent HTTP header. */
-  /* CompleteClass */
-  override var version: String = js.native
 }
 
 /* static members */

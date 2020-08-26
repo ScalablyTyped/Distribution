@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * The options passed to looksSame function
   */
+@js.native
 trait LooksSameOptions extends js.Object {
   /**
     * Sometimes the antialiasing algorithm can work incorrectly due to some features of the browser rendering engine.
@@ -16,72 +17,102 @@ trait LooksSameOptions extends js.Object {
     *
     * We recommend that you don't increase this value above 10. If you need to increase more than 10 then this is definitely not antialiasing.
     */
-  var antialiasingTolerance: js.UndefOr[Double] = js.undefined
+  var antialiasingTolerance: js.UndefOr[Double] = js.native
   /**
     * Radius for every diff cluster
     */
-  var clustersSize: js.UndefOr[Double] = js.undefined
+  var clustersSize: js.UndefOr[Double] = js.native
   /**
     * Some images has difference while comparing because of antialiasing.
     * These diffs will be ignored by default. You can use ignoreAntialiasing option with false value to disable ignoring such diffs.
     * In that way antialiased pixels will be marked as diffs.
     */
-  var ignoreAntialiasing: js.UndefOr[Boolean] = js.undefined
+  var ignoreAntialiasing: js.UndefOr[Boolean] = js.native
   /**
     * Text caret in text input elements it is a pain for visual regression tasks, because it is always blinks.
     * These diffs will be ignored by default. You can use `ignoreCaret` option with `false` value to disable ignoring such diffs.
     * In that way text caret will be marked as diffs.
     */
-  var ignoreCaret: js.UndefOr[Boolean] = js.undefined
+  var ignoreCaret: js.UndefOr[Boolean] = js.native
   /**
     * Some devices can have different proportion between physical and logical screen resolutions also known as pixel ratio.
     * Default value for this proportion is 1.
     * This param also affects the comparison result, so it can be set manually with pixelRatio option.
     */
-  var pixelRatio: js.UndefOr[Double] = js.undefined
+  var pixelRatio: js.UndefOr[Double] = js.native
   /**
     * Responsible for diff bounds clustering
     */
-  var shouldCluster: js.UndefOr[Boolean] = js.undefined
+  var shouldCluster: js.UndefOr[Boolean] = js.native
   /**
     * Responsible for diff area which will be returned  when comparing images.
     * Diff bounds will contain the whole diff if stopOnFirstFail is false and only first diff pixel - otherwise.
     */
-  var stopOnFirstFail: js.UndefOr[Boolean] = js.undefined
+  var stopOnFirstFail: js.UndefOr[Boolean] = js.native
   /**
     * By default, it will detect only noticeable differences. If you wish to detect any difference, use strict options.
     */
-  var strict: js.UndefOr[Boolean] = js.undefined
+  var strict: js.UndefOr[Boolean] = js.native
   /**
     * You can also adjust the ΔE value that will be treated as error in non-strict mode.
     */
-  var tolerance: js.UndefOr[Double] = js.undefined
+  var tolerance: js.UndefOr[Double] = js.native
 }
 
 object LooksSameOptions {
   @scala.inline
-  def apply(
-    antialiasingTolerance: js.UndefOr[Double] = js.undefined,
-    clustersSize: js.UndefOr[Double] = js.undefined,
-    ignoreAntialiasing: js.UndefOr[Boolean] = js.undefined,
-    ignoreCaret: js.UndefOr[Boolean] = js.undefined,
-    pixelRatio: js.UndefOr[Double] = js.undefined,
-    shouldCluster: js.UndefOr[Boolean] = js.undefined,
-    stopOnFirstFail: js.UndefOr[Boolean] = js.undefined,
-    strict: js.UndefOr[Boolean] = js.undefined,
-    tolerance: js.UndefOr[Double] = js.undefined
-  ): LooksSameOptions = {
+  def apply(): LooksSameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(antialiasingTolerance)) __obj.updateDynamic("antialiasingTolerance")(antialiasingTolerance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clustersSize)) __obj.updateDynamic("clustersSize")(clustersSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreAntialiasing)) __obj.updateDynamic("ignoreAntialiasing")(ignoreAntialiasing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCaret)) __obj.updateDynamic("ignoreCaret")(ignoreCaret.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldCluster)) __obj.updateDynamic("shouldCluster")(shouldCluster.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopOnFirstFail)) __obj.updateDynamic("stopOnFirstFail")(stopOnFirstFail.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tolerance)) __obj.updateDynamic("tolerance")(tolerance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LooksSameOptions]
   }
+  @scala.inline
+  implicit class LooksSameOptionsOps[Self <: LooksSameOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAntialiasingTolerance(value: Double): Self = this.set("antialiasingTolerance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAntialiasingTolerance: Self = this.set("antialiasingTolerance", js.undefined)
+    @scala.inline
+    def setClustersSize(value: Double): Self = this.set("clustersSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClustersSize: Self = this.set("clustersSize", js.undefined)
+    @scala.inline
+    def setIgnoreAntialiasing(value: Boolean): Self = this.set("ignoreAntialiasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreAntialiasing: Self = this.set("ignoreAntialiasing", js.undefined)
+    @scala.inline
+    def setIgnoreCaret(value: Boolean): Self = this.set("ignoreCaret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreCaret: Self = this.set("ignoreCaret", js.undefined)
+    @scala.inline
+    def setPixelRatio(value: Double): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelRatio: Self = this.set("pixelRatio", js.undefined)
+    @scala.inline
+    def setShouldCluster(value: Boolean): Self = this.set("shouldCluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShouldCluster: Self = this.set("shouldCluster", js.undefined)
+    @scala.inline
+    def setStopOnFirstFail(value: Boolean): Self = this.set("stopOnFirstFail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopOnFirstFail: Self = this.set("stopOnFirstFail", js.undefined)
+    @scala.inline
+    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrict: Self = this.set("strict", js.undefined)
+    @scala.inline
+    def setTolerance(value: Double): Self = this.set("tolerance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTolerance: Self = this.set("tolerance", js.undefined)
+  }
+  
 }
 

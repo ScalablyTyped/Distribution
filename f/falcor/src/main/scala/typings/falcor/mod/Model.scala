@@ -36,17 +36,78 @@ class Model () extends js.Object {
   // However, model implementation returns an error with setting refPaths as PathSet[] and it works with refPaths as PathSet.
   // So refPaths is defined as a PathSet in this .d.ts.
   def call(functionPath: String): ModelResponse[JSONEnvelope[_]] = js.native
+  def call(
+    functionPath: String,
+    args: js.UndefOr[scala.Nothing],
+    refPaths: js.UndefOr[scala.Nothing],
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[_]] = js.native
+  def call(functionPath: String, args: js.UndefOr[scala.Nothing], refPaths: PathSet): ModelResponse[JSONEnvelope[_]] = js.native
+  def call(
+    functionPath: String,
+    args: js.UndefOr[scala.Nothing],
+    refPaths: PathSet,
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[_]] = js.native
   def call(functionPath: String, args: js.Array[_]): ModelResponse[JSONEnvelope[_]] = js.native
+  def call(
+    functionPath: String,
+    args: js.Array[_],
+    refPaths: js.UndefOr[scala.Nothing],
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[_]] = js.native
   def call(functionPath: String, args: js.Array[_], refPaths: PathSet): ModelResponse[JSONEnvelope[_]] = js.native
   def call(functionPath: String, args: js.Array[_], refPaths: PathSet, thisPaths: js.Array[PathSet]): ModelResponse[JSONEnvelope[_]] = js.native
   def call(functionPath: Path): ModelResponse[JSONEnvelope[_]] = js.native
+  def call(
+    functionPath: Path,
+    args: js.UndefOr[scala.Nothing],
+    refPaths: js.UndefOr[scala.Nothing],
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[_]] = js.native
+  def call(functionPath: Path, args: js.UndefOr[scala.Nothing], refPaths: PathSet): ModelResponse[JSONEnvelope[_]] = js.native
+  def call(
+    functionPath: Path,
+    args: js.UndefOr[scala.Nothing],
+    refPaths: PathSet,
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[_]] = js.native
   def call(functionPath: Path, args: js.Array[_]): ModelResponse[JSONEnvelope[_]] = js.native
+  def call(
+    functionPath: Path,
+    args: js.Array[_],
+    refPaths: js.UndefOr[scala.Nothing],
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[_]] = js.native
   def call(functionPath: Path, args: js.Array[_], refPaths: PathSet): ModelResponse[JSONEnvelope[_]] = js.native
   def call(functionPath: Path, args: js.Array[_], refPaths: PathSet, thisPaths: js.Array[PathSet]): ModelResponse[JSONEnvelope[_]] = js.native
   @JSName("call")
   def call_T[T](functionPath: String): ModelResponse[JSONEnvelope[T]] = js.native
   @JSName("call")
+  def call_T[T](
+    functionPath: String,
+    args: js.UndefOr[scala.Nothing],
+    refPaths: js.UndefOr[scala.Nothing],
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[T]] = js.native
+  @JSName("call")
+  def call_T[T](functionPath: String, args: js.UndefOr[scala.Nothing], refPaths: PathSet): ModelResponse[JSONEnvelope[T]] = js.native
+  @JSName("call")
+  def call_T[T](
+    functionPath: String,
+    args: js.UndefOr[scala.Nothing],
+    refPaths: PathSet,
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[T]] = js.native
+  @JSName("call")
   def call_T[T](functionPath: String, args: js.Array[_]): ModelResponse[JSONEnvelope[T]] = js.native
+  @JSName("call")
+  def call_T[T](
+    functionPath: String,
+    args: js.Array[_],
+    refPaths: js.UndefOr[scala.Nothing],
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[T]] = js.native
   @JSName("call")
   def call_T[T](functionPath: String, args: js.Array[_], refPaths: PathSet): ModelResponse[JSONEnvelope[T]] = js.native
   @JSName("call")
@@ -54,7 +115,30 @@ class Model () extends js.Object {
   @JSName("call")
   def call_T[T](functionPath: Path): ModelResponse[JSONEnvelope[T]] = js.native
   @JSName("call")
+  def call_T[T](
+    functionPath: Path,
+    args: js.UndefOr[scala.Nothing],
+    refPaths: js.UndefOr[scala.Nothing],
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[T]] = js.native
+  @JSName("call")
+  def call_T[T](functionPath: Path, args: js.UndefOr[scala.Nothing], refPaths: PathSet): ModelResponse[JSONEnvelope[T]] = js.native
+  @JSName("call")
+  def call_T[T](
+    functionPath: Path,
+    args: js.UndefOr[scala.Nothing],
+    refPaths: PathSet,
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[T]] = js.native
+  @JSName("call")
   def call_T[T](functionPath: Path, args: js.Array[_]): ModelResponse[JSONEnvelope[T]] = js.native
+  @JSName("call")
+  def call_T[T](
+    functionPath: Path,
+    args: js.Array[_],
+    refPaths: js.UndefOr[scala.Nothing],
+    thisPaths: js.Array[PathSet]
+  ): ModelResponse[JSONEnvelope[T]] = js.native
   @JSName("call")
   def call_T[T](functionPath: Path, args: js.Array[_], refPaths: PathSet): ModelResponse[JSONEnvelope[T]] = js.native
   @JSName("call")

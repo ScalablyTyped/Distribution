@@ -10,6 +10,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.min
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.arcgisJsApiStrings.tick
 import typings.arcgisJsApi.arcgisJsApiStrings.value
+import typings.arcgisJsApi.arcgisJsApiStrings.values
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -152,19 +153,35 @@ trait SliderViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#getLabelForValue)
     *
     * @param value The value from which to retrieve a formatted label.
-    * @param type The label type.  **Possible Values:** min | max | tick | values
+    * @param type The label type.
     * @param index The index of the label.
     *
     */
   def getLabelForValue(value: Double): String = js.native
-  def getLabelForValue(value: Double, `type`: String): String = js.native
-  def getLabelForValue(value: Double, `type`: String, index: Double): String = js.native
+  def getLabelForValue(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
+  @JSName("getLabelForValue")
+  def getLabelForValue_max(value: Double, `type`: max): String = js.native
+  @JSName("getLabelForValue")
+  def getLabelForValue_max(value: Double, `type`: max, index: Double): String = js.native
+  @JSName("getLabelForValue")
+  def getLabelForValue_min(value: Double, `type`: min): String = js.native
+  @JSName("getLabelForValue")
+  def getLabelForValue_min(value: Double, `type`: min, index: Double): String = js.native
+  @JSName("getLabelForValue")
+  def getLabelForValue_tick(value: Double, `type`: tick): String = js.native
+  @JSName("getLabelForValue")
+  def getLabelForValue_tick(value: Double, `type`: tick, index: Double): String = js.native
+  @JSName("getLabelForValue")
+  def getLabelForValue_values(value: Double, `type`: values): String = js.native
+  @JSName("getLabelForValue")
+  def getLabelForValue_values(value: Double, `type`: values, index: Double): String = js.native
   /**
     * A function used to format user inputs. As opposed to [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction), which formats thumb labels, the `inputFormatFunction` formats thumb values in the input element when the user begins to edit them.  The image below demonstrates how slider input values resemble corresponding slider values by default and won't match the formatting set in `labelFormatFunction`.  ![Slider without input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-no-input-formatter.png%20%22Slider%20without%20input%20formatter%22)  If you want to format slider input values so they match thumb labels, you can pass the same function set in `labelFormatFunction` to `inputFormatFunction` for consistent formatting.  ![Slider with input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-input-formatter.png%20%22Slider%20with%20input%20formatter%22)  However, if an `inputFormatFunction` is specified, you must also write a corresponding [inputParseFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction) to parse user inputs to understandable slider values. In most cases, if you specify an `inputFormatFunction`, you should set the [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction) to the same value for consistency between labels and inputs.  This property overrides the default input formatter, which formats by calling `toString()` on the input value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction)
     */
   def inputFormatFunction(value: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
   @JSName("inputFormatFunction")
   def inputFormatFunction_average(value: Double, `type`: average): String = js.native
   @JSName("inputFormatFunction")
@@ -191,6 +208,7 @@ trait SliderViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction)
     */
   def inputParseFunction(value: String): Double = js.native
+  def inputParseFunction(value: String, `type`: js.UndefOr[scala.Nothing], index: Double): Double = js.native
   @JSName("inputParseFunction")
   def inputParseFunction_average(value: String, `type`: average): Double = js.native
   @JSName("inputParseFunction")
@@ -222,6 +240,7 @@ trait SliderViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
   @JSName("labelFormatFunction")
   def labelFormatFunction_average(value: Double, `type`: average): String = js.native
   @JSName("labelFormatFunction")

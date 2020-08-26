@@ -12,7 +12,7 @@ Parity's native market reporting protocol
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 279 |
+| # downloads        | 282 |
 | # stars            | 0 |
 
 ## Links

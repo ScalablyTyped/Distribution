@@ -15,7 +15,25 @@ class FileTask protected () extends Task {
     */
   def this(name: String) = this()
   def this(name: String, prereqs: js.Array[String]) = this()
+  def this(
+    name: String,
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.ThisFunction0[/* this */ FileTask, Unit]
+  ) = this()
   def this(name: String, prereqs: js.Array[String], action: js.ThisFunction0[/* this */ FileTask, Unit]) = this()
+  def this(
+    name: String,
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.UndefOr[scala.Nothing],
+    opts: FileTaskOptions
+  ) = this()
+  def this(
+    name: String,
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.ThisFunction0[/* this */ FileTask, Unit],
+    opts: FileTaskOptions
+  ) = this()
+  def this(name: String, prereqs: js.Array[String], action: js.UndefOr[scala.Nothing], opts: FileTaskOptions) = this()
   def this(
     name: String,
     prereqs: js.Array[String],

@@ -42,18 +42,40 @@ trait SchemaGooglePrivacyDlpV2StoredInfoTypeVersion extends js.Object {
 
 object SchemaGooglePrivacyDlpV2StoredInfoTypeVersion {
   @scala.inline
-  def apply(
-    config: SchemaGooglePrivacyDlpV2StoredInfoTypeConfig = null,
-    createTime: String = null,
-    errors: js.Array[SchemaGooglePrivacyDlpV2Error] = null,
-    state: String = null
-  ): SchemaGooglePrivacyDlpV2StoredInfoTypeVersion = {
+  def apply(): SchemaGooglePrivacyDlpV2StoredInfoTypeVersion = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2StoredInfoTypeVersion]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2StoredInfoTypeVersionOps[Self <: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfig(value: SchemaGooglePrivacyDlpV2StoredInfoTypeConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: SchemaGooglePrivacyDlpV2Error*): Self = this.set("errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: js.Array[SchemaGooglePrivacyDlpV2Error]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

@@ -16,6 +16,12 @@ trait FnCall extends js.Object {
     additionalFields: Record[String, _],
     timestamp: Double
   ): Unit = js.native
+  def apply(
+    message: String,
+    additionalFields: js.UndefOr[scala.Nothing],
+    _underscore: js.UndefOr[scala.Nothing],
+    timestamp: Double
+  ): Unit = js.native
   def apply(message: String, additionalFields: Record[String, _]): Unit = js.native
   def apply(
     message: String,
@@ -24,6 +30,12 @@ trait FnCall extends js.Object {
     timestamp: Double
   ): Unit = js.native
   def apply(message: String, fullMessage: String): Unit = js.native
+  def apply(
+    message: String,
+    fullMessage: String,
+    additionalFields: js.UndefOr[scala.Nothing],
+    timestamp: Double
+  ): Unit = js.native
   def apply(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
   def apply(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
   def apply(message: Error): Unit = js.native
@@ -34,6 +46,12 @@ trait FnCall extends js.Object {
     additionalFields: Record[String, _],
     timestamp: Double
   ): Unit = js.native
+  def apply(
+    message: Error,
+    additionalFields: js.UndefOr[scala.Nothing],
+    _underscore: js.UndefOr[scala.Nothing],
+    timestamp: Double
+  ): Unit = js.native
   def apply(message: Error, additionalFields: Record[String, _]): Unit = js.native
   def apply(
     message: Error,
@@ -42,6 +60,12 @@ trait FnCall extends js.Object {
     timestamp: Double
   ): Unit = js.native
   def apply(message: Record[String, _]): Unit = js.native
+  def apply(
+    message: Record[String, _],
+    _underscore: js.UndefOr[scala.Nothing],
+    additionalFields: js.UndefOr[scala.Nothing],
+    timestamp: Double
+  ): Unit = js.native
   def apply(
     message: Record[String, _],
     _underscore: js.UndefOr[scala.Nothing],

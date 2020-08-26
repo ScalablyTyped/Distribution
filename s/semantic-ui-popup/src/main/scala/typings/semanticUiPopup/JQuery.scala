@@ -87,143 +87,151 @@ trait JQuery extends js.Object {
   @JSName("popup")
   var popup_Original: Popup = js.native
   def popup(): JQuery = js.native
-  def popup(behavior: setting, name: `inline`): Boolean = js.native
+  def popup(behavior: setting, name: `inline`, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: `inline`, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: addTouchEvents): Boolean = js.native
+  def popup(behavior: setting, name: addTouchEvents, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: addTouchEvents, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: boundary): String | JQuery = js.native
+  def popup(behavior: setting, name: boundary, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
   def popup(behavior: setting, name: boundary, value: String): JQuery = js.native
   def popup(behavior: setting, name: boundary, value: JQuery): JQuery = js.native
-  def popup(behavior: setting, name: className): ClassNameSettings = js.native
   def popup(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def popup(behavior: setting, name: closable): Boolean = js.native
+  def popup(behavior: setting, name: closable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: closable, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: content): String = js.native
+  def popup(behavior: setting, name: content, value: js.UndefOr[scala.Nothing]): String = js.native
   def popup(behavior: setting, name: content, value: String): JQuery = js.native
-  def popup(behavior: setting, name: context): String | JQuery = js.native
+  def popup(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
   def popup(behavior: setting, name: context, value: String): JQuery = js.native
   def popup(behavior: setting, name: context, value: JQuery): JQuery = js.native
-  def popup(behavior: setting, name: debug): Boolean = js.native
+  def popup(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: delay): DelaySettings = js.native
   def popup(behavior: setting, name: delay, value: DelaySettings): JQuery = js.native
-  def popup(behavior: setting, name: distanceAway): Double = js.native
+  def popup(behavior: setting, name: distanceAway, value: js.UndefOr[scala.Nothing]): Double = js.native
   def popup(behavior: setting, name: distanceAway, value: Double): JQuery = js.native
-  def popup(behavior: setting, name: duration): Double = js.native
+  def popup(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
   def popup(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def popup(behavior: setting, name: error): ErrorSettings = js.native
   def popup(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def popup(behavior: setting, name: exclusive): Boolean = js.native
+  def popup(behavior: setting, name: exclusive, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: exclusive, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: hideOnScroll): auto | `false` = js.native
+  def popup(behavior: setting, name: hideOnScroll, value: js.UndefOr[scala.Nothing]): auto | `false` = js.native
   def popup(behavior: setting, name: hideOnScroll, value: `false`): JQuery = js.native
   def popup(behavior: setting, name: hideOnScroll, value: auto): JQuery = js.native
-  def popup(behavior: setting, name: hoverable): Boolean = js.native
+  def popup(behavior: setting, name: hoverable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: hoverable, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: html): String | JQuery = js.native
+  def popup(behavior: setting, name: html, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
   def popup(behavior: setting, name: html, value: String): JQuery = js.native
   def popup(behavior: setting, name: html, value: JQuery): JQuery = js.native
-  def popup(behavior: setting, name: jitter): Double = js.native
+  def popup(behavior: setting, name: jitter, value: js.UndefOr[scala.Nothing]): Double = js.native
   def popup(behavior: setting, name: jitter, value: Double): JQuery = js.native
-  def popup(behavior: setting, name: lastResort): Boolean | String = js.native
+  def popup(behavior: setting, name: lastResort, value: js.UndefOr[scala.Nothing]): Boolean | String = js.native
   def popup(behavior: setting, name: lastResort, value: String): JQuery = js.native
   def popup(behavior: setting, name: lastResort, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: maxSearchDepth): Double = js.native
+  def popup(behavior: setting, name: maxSearchDepth, value: js.UndefOr[scala.Nothing]): Double = js.native
   def popup(behavior: setting, name: maxSearchDepth, value: Double): JQuery = js.native
-  def popup(behavior: setting, name: metadata): MetadataSettings = js.native
   def popup(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-  def popup(behavior: setting, name: movePopup): Boolean = js.native
+  def popup(behavior: setting, name: movePopup, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: movePopup, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: name): String = js.native
-  def popup(behavior: setting, name: namespace): String = js.native
+  def popup(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
   def popup(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def popup(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
   def popup(behavior: setting, name: name, value: String): JQuery = js.native
-  def popup(behavior: setting, name: observeChanges): Boolean = js.native
+  def popup(behavior: setting, name: observeChanges, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: offset): Double = js.native
+  def popup(behavior: setting, name: offset, value: js.UndefOr[scala.Nothing]): Double = js.native
   def popup(behavior: setting, name: offset, value: Double): JQuery = js.native
-  def popup(behavior: setting, name: on): focus | click | hover | manual = js.native
-  def popup(behavior: setting, name: onCreate): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
+  def popup(behavior: setting, name: onCreate, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
   def popup(
     behavior: setting,
     name: onCreate,
     value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
   ): JQuery = js.native
-  def popup(behavior: setting, name: onHidden): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
+  def popup(behavior: setting, name: onHidden, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
   def popup(
     behavior: setting,
     name: onHidden,
     value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
   ): JQuery = js.native
-  def popup(behavior: setting, name: onHide): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit] = js.native
+  def popup(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit] = js.native
   def popup(
     behavior: setting,
     name: onHide,
     value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]
   ): JQuery = js.native
-  def popup(behavior: setting, name: onRemove): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
+  def popup(behavior: setting, name: onRemove, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
   def popup(
     behavior: setting,
     name: onRemove,
     value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
   ): JQuery = js.native
-  def popup(behavior: setting, name: onShow): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit] = js.native
+  def popup(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit] = js.native
   def popup(
     behavior: setting,
     name: onShow,
     value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]
   ): JQuery = js.native
-  def popup(behavior: setting, name: onUnplaceable): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
+  def popup(behavior: setting, name: onUnplaceable, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
   def popup(
     behavior: setting,
     name: onUnplaceable,
     value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
   ): JQuery = js.native
-  def popup(behavior: setting, name: onVisible): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
+  def popup(behavior: setting, name: onVisible, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = js.native
   def popup(
     behavior: setting,
     name: onVisible,
     value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]
   ): JQuery = js.native
+  def popup(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): focus | click | hover | manual = js.native
   def popup(behavior: setting, name: on, value: click): JQuery = js.native
   def popup(behavior: setting, name: on, value: focus): JQuery = js.native
   def popup(behavior: setting, name: on, value: hover): JQuery = js.native
   def popup(behavior: setting, name: on, value: manual): JQuery = js.native
-  def popup(behavior: setting, name: performance): Boolean = js.native
+  def popup(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: typings.semanticUiPopup.semanticUiPopupStrings.popup): `false` | String | JQuery = js.native
+  def popup(
+    behavior: setting,
+    name: typings.semanticUiPopup.semanticUiPopupStrings.popup,
+    value: js.UndefOr[scala.Nothing]
+  ): `false` | String | JQuery = js.native
   def popup(behavior: setting, name: typings.semanticUiPopup.semanticUiPopupStrings.popup, value: String): JQuery = js.native
   def popup(behavior: setting, name: typings.semanticUiPopup.semanticUiPopupStrings.popup, value: JQuery): JQuery = js.native
   def popup(behavior: setting, name: typings.semanticUiPopup.semanticUiPopupStrings.popup, value: `false`): JQuery = js.native
-  def popup(behavior: setting, name: position): String = js.native
+  def popup(behavior: setting, name: position, value: js.UndefOr[scala.Nothing]): String = js.native
   def popup(behavior: setting, name: position, value: String): JQuery = js.native
-  def popup(behavior: setting, name: prefer): adjacent | opposite = js.native
+  def popup(behavior: setting, name: prefer, value: js.UndefOr[scala.Nothing]): adjacent | opposite = js.native
   def popup(behavior: setting, name: prefer, value: adjacent): JQuery = js.native
   def popup(behavior: setting, name: prefer, value: opposite): JQuery = js.native
-  def popup(behavior: setting, name: preserve): Boolean = js.native
+  def popup(behavior: setting, name: preserve, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: preserve, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: scrollContext): String | JQuery = js.native
+  def popup(behavior: setting, name: scrollContext, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
   def popup(behavior: setting, name: scrollContext, value: String): JQuery = js.native
   def popup(behavior: setting, name: scrollContext, value: JQuery): JQuery = js.native
-  def popup(behavior: setting, name: selector): SelectorSettings = js.native
+  def popup(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
   def popup(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def popup(behavior: setting, name: setFluidWidth): Boolean = js.native
+  def popup(behavior: setting, name: setFluidWidth, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: setFluidWidth, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: silent): Boolean = js.native
+  def popup(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def popup(behavior: setting, name: target): `false` | String | JQuery = js.native
+  def popup(behavior: setting, name: target, value: js.UndefOr[scala.Nothing]): `false` | String | JQuery = js.native
   def popup(behavior: setting, name: target, value: String): JQuery = js.native
   def popup(behavior: setting, name: target, value: JQuery): JQuery = js.native
   def popup(behavior: setting, name: target, value: `false`): JQuery = js.native
-  def popup(behavior: setting, name: title): String = js.native
+  def popup(behavior: setting, name: title, value: js.UndefOr[scala.Nothing]): String = js.native
   def popup(behavior: setting, name: title, value: String): JQuery = js.native
-  def popup(behavior: setting, name: transition): String = js.native
+  def popup(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
   def popup(behavior: setting, name: transition, value: String): JQuery = js.native
-  def popup(behavior: setting, name: variation): String = js.native
+  def popup(behavior: setting, name: variation, value: js.UndefOr[scala.Nothing]): String = js.native
   def popup(behavior: setting, name: variation, value: String): JQuery = js.native
-  def popup(behavior: setting, name: verbose): Boolean = js.native
+  def popup(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def popup(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def popup(settings: PopupSettings): JQuery = js.native
+  @JSName("popup")
+  def popup_ClassNameSettings(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+  @JSName("popup")
+  def popup_DelaySettings(behavior: setting, name: delay, value: js.UndefOr[scala.Nothing]): DelaySettings = js.native
+  @JSName("popup")
+  def popup_ErrorSettings(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+  @JSName("popup")
+  def popup_MetadataSettings(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
   /**
     * @since 2.2.11
     */

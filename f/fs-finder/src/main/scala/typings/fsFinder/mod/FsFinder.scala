@@ -21,17 +21,32 @@ object FsFinder extends js.Object {
     def findFirst(): Finder = js.native
     def findFirst(findFirst: Boolean): Finder = js.native
     def getPathsAsync(fn: AsyncFunction): Unit = js.native
+    def getPathsAsync(
+      fn: AsyncFunction,
+      `type`: js.UndefOr[scala.Nothing],
+      mask: js.UndefOr[scala.Nothing],
+      dir: Directory
+    ): Unit = js.native
+    def getPathsAsync(fn: AsyncFunction, `type`: js.UndefOr[scala.Nothing], mask: Mask): Unit = js.native
+    def getPathsAsync(fn: AsyncFunction, `type`: js.UndefOr[scala.Nothing], mask: Mask, dir: Directory): Unit = js.native
     def getPathsAsync(fn: AsyncFunction, `type`: Type): Unit = js.native
+    def getPathsAsync(fn: AsyncFunction, `type`: Type, mask: js.UndefOr[scala.Nothing], dir: Directory): Unit = js.native
     def getPathsAsync(fn: AsyncFunction, `type`: Type, mask: Mask): Unit = js.native
     def getPathsAsync(fn: AsyncFunction, `type`: Type, mask: Mask, dir: Directory): Unit = js.native
     def getPathsFromParentsAsync(fn: AsyncFunction): Unit = js.native
+    def getPathsFromParentsAsync(fn: AsyncFunction, mask: js.UndefOr[scala.Nothing], `type`: Type): Unit = js.native
     def getPathsFromParentsAsync(fn: AsyncFunction, mask: Mask): Unit = js.native
     def getPathsFromParentsAsync(fn: AsyncFunction, mask: Mask, `type`: Type): Unit = js.native
     def getPathsFromParentsSync(): js.Array[String] = js.native
+    def getPathsFromParentsSync(mask: js.UndefOr[scala.Nothing], `type`: Type): js.Array[String] = js.native
     def getPathsFromParentsSync(mask: Mask): js.Array[String] = js.native
     def getPathsFromParentsSync(mask: Mask, `type`: Type): js.Array[String] = js.native
     def getPathsSync(): js.Array[String] = js.native
+    def getPathsSync(`type`: js.UndefOr[scala.Nothing], mask: js.UndefOr[scala.Nothing], dir: Directory): js.Array[String] = js.native
+    def getPathsSync(`type`: js.UndefOr[scala.Nothing], mask: Mask): js.Array[String] = js.native
+    def getPathsSync(`type`: js.UndefOr[scala.Nothing], mask: Mask, dir: Directory): js.Array[String] = js.native
     def getPathsSync(`type`: Type): js.Array[String] = js.native
+    def getPathsSync(`type`: Type, mask: js.UndefOr[scala.Nothing], dir: Directory): js.Array[String] = js.native
     def getPathsSync(`type`: Type, mask: Mask): js.Array[String] = js.native
     def getPathsSync(`type`: Type, mask: Mask, dir: Directory): js.Array[String] = js.native
     def lookUp(): Finder = js.native
@@ -45,25 +60,35 @@ object FsFinder extends js.Object {
   @js.native
   trait Finder extends Base {
     def date(): Finder = js.native
+    def date(operation: js.UndefOr[scala.Nothing], value: js.Any): Finder = js.native
     def date(operation: js.Any): Finder = js.native
     def date(operation: js.Any, value: js.Any): Finder = js.native
     def find(): js.Array[String] = js.native
+    def find(mask: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], `type`: Type): js.Array[String] = js.native
+    def find(mask: js.UndefOr[scala.Nothing], fn: AsyncFunction): js.Array[String] = js.native
+    def find(mask: js.UndefOr[scala.Nothing], fn: AsyncFunction, `type`: Type): js.Array[String] = js.native
     def find(mask: Mask): js.Array[String] = js.native
+    def find(mask: Mask, fn: js.UndefOr[scala.Nothing], `type`: Type): js.Array[String] = js.native
     def find(mask: Mask, fn: AsyncFunction): js.Array[String] = js.native
     def find(mask: Mask, fn: AsyncFunction, `type`: Type): js.Array[String] = js.native
     def findDirectories(): js.Array[String] = js.native
+    def findDirectories(mask: js.UndefOr[scala.Nothing], fn: AsyncFunction): js.Array[String] = js.native
     def findDirectories(mask: Mask): js.Array[String] = js.native
     def findDirectories(mask: Mask, fn: AsyncFunction): js.Array[String] = js.native
     def findDirectory(): js.Array[String] = js.native
+    def findDirectory(mask: js.UndefOr[scala.Nothing], fn: AsyncFunction): js.Array[String] = js.native
     def findDirectory(mask: Mask): js.Array[String] = js.native
     def findDirectory(mask: Mask, fn: AsyncFunction): js.Array[String] = js.native
     def findFile(): js.Array[String] = js.native
+    def findFile(mask: js.UndefOr[scala.Nothing], fn: AsyncFunction): js.Array[String] = js.native
     def findFile(mask: Mask): js.Array[String] = js.native
     def findFile(mask: Mask, fn: AsyncFunction): js.Array[String] = js.native
     def findFiles(): js.Array[String] = js.native
+    def findFiles(mask: js.UndefOr[scala.Nothing], fn: AsyncFunction): js.Array[String] = js.native
     def findFiles(mask: Mask): js.Array[String] = js.native
     def findFiles(mask: Mask, fn: AsyncFunction): js.Array[String] = js.native
     def size(): Finder = js.native
+    def size(operation: js.UndefOr[scala.Nothing], value: js.Any): Finder = js.native
     def size(operation: js.Any): Finder = js.native
     def size(operation: js.Any, value: js.Any): Finder = js.native
   }

@@ -38,23 +38,52 @@ trait ListPrincipalsRequest extends js.Object {
 
 object ListPrincipalsRequest {
   @scala.inline
-  def apply(
-    resourceOwner: ResourceOwner,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: String = null,
-    principals: PrincipalArnOrIdList = null,
-    resourceArn: String = null,
-    resourceShareArns: ResourceShareArnList = null,
-    resourceType: String = null
-  ): ListPrincipalsRequest = {
+  def apply(resourceOwner: ResourceOwner): ListPrincipalsRequest = {
     val __obj = js.Dynamic.literal(resourceOwner = resourceOwner.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (principals != null) __obj.updateDynamic("principals")(principals.asInstanceOf[js.Any])
-    if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
-    if (resourceShareArns != null) __obj.updateDynamic("resourceShareArns")(resourceShareArns.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPrincipalsRequest]
   }
+  @scala.inline
+  implicit class ListPrincipalsRequestOps[Self <: ListPrincipalsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceOwner(value: ResourceOwner): Self = this.set("resourceOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setPrincipalsVarargs(value: String*): Self = this.set("principals", js.Array(value :_*))
+    @scala.inline
+    def setPrincipals(value: PrincipalArnOrIdList): Self = this.set("principals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipals: Self = this.set("principals", js.undefined)
+    @scala.inline
+    def setResourceArn(value: String): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("resourceArn", js.undefined)
+    @scala.inline
+    def setResourceShareArnsVarargs(value: String*): Self = this.set("resourceShareArns", js.Array(value :_*))
+    @scala.inline
+    def setResourceShareArns(value: ResourceShareArnList): Self = this.set("resourceShareArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceShareArns: Self = this.set("resourceShareArns", js.undefined)
+    @scala.inline
+    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+  }
+  
 }
 

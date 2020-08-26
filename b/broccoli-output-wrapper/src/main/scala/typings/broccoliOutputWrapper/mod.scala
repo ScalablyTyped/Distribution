@@ -1,13 +1,13 @@
 package typings.broccoliOutputWrapper
 
 import typings.broccoliOutputWrapper.anon.Fn0
-import typings.broccoliOutputWrapper.anon.Fn1
 import typings.broccoliOutputWrapper.anon.FnCall
 import typings.broccoliOutputWrapper.anon.FnCallFileDataOptions
 import typings.broccoliOutputWrapper.anon.FnCallPathAtimeMtime
 import typings.broccoliOutputWrapper.anon.FnCallPathDataOptions
 import typings.broccoliOutputWrapper.anon.FnCallPathOptions
 import typings.broccoliOutputWrapper.anon.FnCallTargetPathType
+import typings.broccoliOutputWrapper.anon.Recursive
 import typings.broccoliOutputWrapper.broccoliOutputWrapperStrings.buffer
 import typings.node.Buffer
 import typings.node.BufferEncoding
@@ -17,15 +17,14 @@ import typings.node.anon.BaseEncodingOptionswithFi
 import typings.node.anon.BaseEncodingOptionswithFiEncoding
 import typings.node.anon.Encoding
 import typings.node.anon.EncodingBufferEncoding
-import typings.node.anon.EncodingNull
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
 import typings.node.anon.WithFileTypes
+import typings.node.anon.`3`
 import typings.node.fsMod.Dirent
 import typings.node.fsMod.MakeDirectoryOptions
 import typings.node.fsMod.Mode
 import typings.node.fsMod.PathLike
-import typings.node.fsMod.RmDirOptions
 import typings.node.fsMod.Stats
 import typings.node.fsMod.WriteFileOptions
 import typings.node.fsMod.symlink.Type
@@ -47,13 +46,11 @@ object mod extends js.Object {
     @JSName("lstatSync")
     var lstatSync_Original: js.Function1[/* path */ PathLike, Stats] = js.native
     @JSName("mkdirSync")
-    var mkdirSync_Original: Fn1 = js.native
+    var mkdirSync_Original: Fn0 = js.native
     @JSName("readFileSync")
     var readFileSync_Original: FnCall = js.native
     @JSName("readdirSync")
     var readdirSync_Original: FnCallPathOptions = js.native
-    @JSName("rmdirSync")
-    var rmdirSync_Original: Fn0 = js.native
     @JSName("statSync")
     var statSync_Original: js.Function1[/* path */ PathLike, Stats] = js.native
     @JSName("symlinkSync")
@@ -87,12 +84,12 @@ object mod extends js.Object {
     def readFileSync(path: Double, options: BufferEncoding): String = js.native
     def readFileSync(path: Double, options: BaseEncodingOptionsflagst): String | Buffer = js.native
     def readFileSync(path: Double, options: EncodingBufferEncoding): String = js.native
-    def readFileSync(path: Double, options: EncodingNull): Buffer = js.native
+    def readFileSync(path: Double, options: `3`): Buffer = js.native
     def readFileSync(path: PathLike): String | Buffer = js.native
     def readFileSync(path: PathLike, options: BufferEncoding): String = js.native
     def readFileSync(path: PathLike, options: BaseEncodingOptionsflagst): String | Buffer = js.native
     def readFileSync(path: PathLike, options: EncodingBufferEncoding): String = js.native
-    def readFileSync(path: PathLike, options: EncodingNull): Buffer = js.native
+    def readFileSync(path: PathLike, options: `3`): Buffer = js.native
     @JSName("readFileSync")
     def readFileSync_Buffer(path: Double): Buffer = js.native
     @JSName("readFileSync")
@@ -109,8 +106,8 @@ object mod extends js.Object {
     def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
     @JSName("readdirSync")
     def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = js.native
-    def rmdirSync(path: PathLike): Unit = js.native
-    def rmdirSync(path: PathLike, options: RmDirOptions): Unit = js.native
+    def rmdirSync(path: String): Unit = js.native
+    def rmdirSync(path: String, options: Recursive): Unit = js.native
     def statSync(path: PathLike): Stats = js.native
     def symlinkOrCopySync(srcPath: String, destPath: String): Unit = js.native
     def symlinkSync(target: PathLike, path: PathLike): Unit = js.native

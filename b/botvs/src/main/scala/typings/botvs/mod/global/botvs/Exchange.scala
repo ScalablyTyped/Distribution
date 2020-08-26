@@ -225,6 +225,7 @@ trait Exchange extends js.Object {
     Args: js.Any*
   ): AsyncJob[T] = js.native
   def IO[T](Api: String): T = js.native
+  def IO[T](Api: String, ApiName: js.UndefOr[scala.Nothing], Args: String): T = js.native
   def IO[T](Api: String, ApiName: String): T = js.native
   def IO[T](Api: String, ApiName: String, Args: String): T = js.native
   /**
@@ -281,11 +282,15 @@ trait Exchange extends js.Object {
   @JSName("IO")
   def IO_api[T](Api: api): T = js.native
   @JSName("IO")
+  def IO_api[T](Api: api, ApiName: js.UndefOr[scala.Nothing], Args: String): T = js.native
+  @JSName("IO")
   def IO_api[T](Api: api, ApiName: String): T = js.native
   @JSName("IO")
   def IO_api[T](Api: api, ApiName: String, Args: String): T = js.native
   @JSName("IO")
   def IO_cny[T](Api: cny): T = js.native
+  @JSName("IO")
+  def IO_cny[T](Api: cny, ApiName: js.UndefOr[scala.Nothing], Args: String): T = js.native
   @JSName("IO")
   def IO_cny[T](Api: cny, ApiName: String): T = js.native
   @JSName("IO")
@@ -293,11 +298,15 @@ trait Exchange extends js.Object {
   @JSName("IO")
   def IO_currency[T](Api: currency): T = js.native
   @JSName("IO")
+  def IO_currency[T](Api: currency, ApiName: js.UndefOr[scala.Nothing], Args: String): T = js.native
+  @JSName("IO")
   def IO_currency[T](Api: currency, ApiName: String): T = js.native
   @JSName("IO")
   def IO_currency[T](Api: currency, ApiName: String, Args: String): T = js.native
   @JSName("IO")
   def IO_usd[T](Api: usd): T = js.native
+  @JSName("IO")
+  def IO_usd[T](Api: usd, ApiName: js.UndefOr[scala.Nothing], Args: String): T = js.native
   @JSName("IO")
   def IO_usd[T](Api: usd, ApiName: String): T = js.native
   @JSName("IO")

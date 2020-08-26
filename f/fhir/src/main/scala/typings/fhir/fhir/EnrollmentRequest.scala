@@ -8,101 +8,110 @@ import scala.scalajs.js.annotation._
   * Enrollment request
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait EnrollmentRequest extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait EnrollmentRequest extends DomainResource {
   /**
     * Contains extended information for property 'created'.
     */
-  var _created: js.UndefOr[Element] = js.undefined
+  var _created: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Insurance information
     */
-  var coverage: js.UndefOr[Reference] = js.undefined
+  var coverage: js.UndefOr[Reference] = js.native
   /**
     * Creation date
     */
-  var created: js.UndefOr[dateTime] = js.undefined
+  var created: js.UndefOr[dateTime] = js.native
   /**
     * Business Identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Target
     */
-  var insurer: js.UndefOr[Reference] = js.undefined
+  var insurer: js.UndefOr[Reference] = js.native
   /**
     * Responsible organization
     */
-  var organization: js.UndefOr[Reference] = js.undefined
+  var organization: js.UndefOr[Reference] = js.native
   /**
     * Responsible practitioner
     */
-  var provider: js.UndefOr[Reference] = js.undefined
+  var provider: js.UndefOr[Reference] = js.native
   /**
     * active | cancelled | draft | entered-in-error
     */
-  var status: js.UndefOr[code] = js.undefined
+  var status: js.UndefOr[code] = js.native
   /**
     * The subject of the Products and Services
     */
-  var subject: js.UndefOr[Reference] = js.undefined
+  var subject: js.UndefOr[Reference] = js.native
 }
 
 object EnrollmentRequest {
   @scala.inline
-  def apply(
-    _created: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    contained: js.Array[Resource] = null,
-    coverage: Reference = null,
-    created: dateTime = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    insurer: Reference = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    organization: Reference = null,
-    provider: Reference = null,
-    resourceType: code = null,
-    status: code = null,
-    subject: Reference = null,
-    text: Narrative = null
-  ): EnrollmentRequest = {
+  def apply(): EnrollmentRequest = {
     val __obj = js.Dynamic.literal()
-    if (_created != null) __obj.updateDynamic("_created")(_created.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (coverage != null) __obj.updateDynamic("coverage")(coverage.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (insurer != null) __obj.updateDynamic("insurer")(insurer.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnrollmentRequest]
   }
+  @scala.inline
+  implicit class EnrollmentRequestOps[Self <: EnrollmentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_created(value: Element): Self = this.set("_created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_created: Self = this.set("_created", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setCoverage(value: Reference): Self = this.set("coverage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverage: Self = this.set("coverage", js.undefined)
+    @scala.inline
+    def setCreated(value: dateTime): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setInsurer(value: Reference): Self = this.set("insurer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsurer: Self = this.set("insurer", js.undefined)
+    @scala.inline
+    def setOrganization(value: Reference): Self = this.set("organization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganization: Self = this.set("organization", js.undefined)
+    @scala.inline
+    def setProvider(value: Reference): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubject(value: Reference): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+  }
+  
 }
 

@@ -22,11 +22,32 @@ trait CloudWatchLogsConfig extends js.Object {
 
 object CloudWatchLogsConfig {
   @scala.inline
-  def apply(status: LogsConfigStatusType, groupName: String = null, streamName: String = null): CloudWatchLogsConfig = {
+  def apply(status: LogsConfigStatusType): CloudWatchLogsConfig = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
-    if (streamName != null) __obj.updateDynamic("streamName")(streamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchLogsConfig]
   }
+  @scala.inline
+  implicit class CloudWatchLogsConfigOps[Self <: CloudWatchLogsConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: LogsConfigStatusType): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    @scala.inline
+    def setStreamName(value: String): Self = this.set("streamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamName: Self = this.set("streamName", js.undefined)
+  }
+  
 }
 

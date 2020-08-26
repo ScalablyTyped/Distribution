@@ -4,7 +4,7 @@ import typings.firefoxWebextBrowser.anon.ImageDataPath
 import typings.firefoxWebextBrowser.anon.Panel
 import typings.firefoxWebextBrowser.anon.TabId
 import typings.firefoxWebextBrowser.anon.WindowId
-import typings.firefoxWebextBrowser.anon.WindowIdNumber
+import typings.firefoxWebextBrowser.anon.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ object sidebarAction extends js.Object {
   /** Gets the title of the sidebar action. */
   def getTitle(details: WindowId): js.Promise[String] = js.native
   /** Checks whether the sidebar action is open. */
-  def isOpen(details: WindowIdNumber): js.Promise[Boolean] = js.native
+  def isOpen(details: `2`): js.Promise[Boolean] = js.native
   /** Opens the extension sidebar in the active window. */
   def open(): js.Promise[Unit] = js.native
   /**

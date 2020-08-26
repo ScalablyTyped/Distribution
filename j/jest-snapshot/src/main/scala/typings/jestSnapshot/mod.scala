@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-snapshot", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  /* Inlined expect.expect.MatcherState & {  snapshotState  :jest-snapshot.jest-snapshot/build/State.default} */
+  /* Inlined expect.expect.MatcherState & {  snapshotState :jest-snapshot.jest-snapshot/build/State.default} */
   @js.native
   trait Context extends js.Object {
     var assertionCalls: Double = js.native
@@ -40,6 +40,7 @@ object mod extends js.Object {
     var testPath: js.UndefOr[Path] = js.native
     var utils: readonlyprintExpectedvalu = js.native
     def equals(a: js.Any, b: js.Any): Boolean = js.native
+    def equals(a: js.Any, b: js.Any, customTesters: js.UndefOr[scala.Nothing], strictCheck: Boolean): Boolean = js.native
     def equals(a: js.Any, b: js.Any, customTesters: js.Array[Tester]): Boolean = js.native
     def equals(a: js.Any, b: js.Any, customTesters: js.Array[Tester], strictCheck: Boolean): Boolean = js.native
   }
@@ -67,15 +68,23 @@ object mod extends js.Object {
   def getSerializers(): js.Array[Plugin] = js.native
   def isSnapshotPath(path: String): Boolean = js.native
   def toMatchInlineSnapshot(received: js.Any): Expected | Message | Name = js.native
+  def toMatchInlineSnapshot(
+    received: js.Any,
+    propertyMatchersOrInlineSnapshot: js.UndefOr[scala.Nothing],
+    inlineSnapshot: String
+  ): Expected | Message | Name = js.native
   def toMatchInlineSnapshot(received: js.Any, propertyMatchersOrInlineSnapshot: js.Any): Expected | Message | Name = js.native
   def toMatchInlineSnapshot(received: js.Any, propertyMatchersOrInlineSnapshot: js.Any, inlineSnapshot: String): Expected | Message | Name = js.native
   def toMatchSnapshot(received: js.Any): Expected | Message | Name = js.native
+  def toMatchSnapshot(received: js.Any, propertyMatchers: js.UndefOr[scala.Nothing], hint: String): Expected | Message | Name = js.native
   def toMatchSnapshot(received: js.Any, propertyMatchers: js.Any): Expected | Message | Name = js.native
   def toMatchSnapshot(received: js.Any, propertyMatchers: js.Any, hint: String): Expected | Message | Name = js.native
   def toThrowErrorMatchingInlineSnapshot(received: js.Any): Expected | Message | Name = js.native
+  def toThrowErrorMatchingInlineSnapshot(received: js.Any, inlineSnapshot: js.UndefOr[scala.Nothing], fromPromise: Boolean): Expected | Message | Name = js.native
   def toThrowErrorMatchingInlineSnapshot(received: js.Any, inlineSnapshot: String): Expected | Message | Name = js.native
   def toThrowErrorMatchingInlineSnapshot(received: js.Any, inlineSnapshot: String, fromPromise: Boolean): Expected | Message | Name = js.native
-  def toThrowErrorMatchingSnapshot(received: js.Any, hint: js.UndefOr[String], fromPromise: Boolean): Expected | Message | Name = js.native
+  def toThrowErrorMatchingSnapshot(received: js.Any, hint: js.UndefOr[scala.Nothing], fromPromise: Boolean): Expected | Message | Name = js.native
+  def toThrowErrorMatchingSnapshot(received: js.Any, hint: String, fromPromise: Boolean): Expected | Message | Name = js.native
   @js.native
   object SnapshotState extends TopLevel[
           Instantiable2[/* snapshotPath */ Path, /* options */ SnapshotStateOptions, default]

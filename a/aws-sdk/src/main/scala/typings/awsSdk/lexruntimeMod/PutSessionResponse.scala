@@ -50,30 +50,62 @@ trait PutSessionResponse extends js.Object {
 
 object PutSessionResponse {
   @scala.inline
-  def apply(
-    audioStream: BlobStream = null,
-    contentType: HttpContentType = null,
-    dialogState: DialogState = null,
-    intentName: IntentName = null,
-    message: Text = null,
-    messageFormat: MessageFormatType = null,
-    sessionAttributes: String = null,
-    sessionId: String = null,
-    slotToElicit: String = null,
-    slots: String = null
-  ): PutSessionResponse = {
+  def apply(): PutSessionResponse = {
     val __obj = js.Dynamic.literal()
-    if (audioStream != null) __obj.updateDynamic("audioStream")(audioStream.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (dialogState != null) __obj.updateDynamic("dialogState")(dialogState.asInstanceOf[js.Any])
-    if (intentName != null) __obj.updateDynamic("intentName")(intentName.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (messageFormat != null) __obj.updateDynamic("messageFormat")(messageFormat.asInstanceOf[js.Any])
-    if (sessionAttributes != null) __obj.updateDynamic("sessionAttributes")(sessionAttributes.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
-    if (slotToElicit != null) __obj.updateDynamic("slotToElicit")(slotToElicit.asInstanceOf[js.Any])
-    if (slots != null) __obj.updateDynamic("slots")(slots.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSessionResponse]
   }
+  @scala.inline
+  implicit class PutSessionResponseOps[Self <: PutSessionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioStream(value: BlobStream): Self = this.set("audioStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioStream: Self = this.set("audioStream", js.undefined)
+    @scala.inline
+    def setContentType(value: HttpContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setDialogState(value: DialogState): Self = this.set("dialogState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialogState: Self = this.set("dialogState", js.undefined)
+    @scala.inline
+    def setIntentName(value: IntentName): Self = this.set("intentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntentName: Self = this.set("intentName", js.undefined)
+    @scala.inline
+    def setMessage(value: Text): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setMessageFormat(value: MessageFormatType): Self = this.set("messageFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageFormat: Self = this.set("messageFormat", js.undefined)
+    @scala.inline
+    def setSessionAttributes(value: String): Self = this.set("sessionAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionAttributes: Self = this.set("sessionAttributes", js.undefined)
+    @scala.inline
+    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    @scala.inline
+    def setSlotToElicit(value: String): Self = this.set("slotToElicit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlotToElicit: Self = this.set("slotToElicit", js.undefined)
+    @scala.inline
+    def setSlots(value: String): Self = this.set("slots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlots: Self = this.set("slots", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait MigrateWorkspaceResult extends js.Object {
 
 object MigrateWorkspaceResult {
   @scala.inline
-  def apply(SourceWorkspaceId: WorkspaceId = null, TargetWorkspaceId: WorkspaceId = null): MigrateWorkspaceResult = {
+  def apply(): MigrateWorkspaceResult = {
     val __obj = js.Dynamic.literal()
-    if (SourceWorkspaceId != null) __obj.updateDynamic("SourceWorkspaceId")(SourceWorkspaceId.asInstanceOf[js.Any])
-    if (TargetWorkspaceId != null) __obj.updateDynamic("TargetWorkspaceId")(TargetWorkspaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrateWorkspaceResult]
   }
+  @scala.inline
+  implicit class MigrateWorkspaceResultOps[Self <: MigrateWorkspaceResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceWorkspaceId(value: WorkspaceId): Self = this.set("SourceWorkspaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceWorkspaceId: Self = this.set("SourceWorkspaceId", js.undefined)
+    @scala.inline
+    def setTargetWorkspaceId(value: WorkspaceId): Self = this.set("TargetWorkspaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetWorkspaceId: Self = this.set("TargetWorkspaceId", js.undefined)
+  }
+  
 }
 

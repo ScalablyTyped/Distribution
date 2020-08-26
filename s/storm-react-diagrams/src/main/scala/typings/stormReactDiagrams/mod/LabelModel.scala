@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class LabelModel ()
   extends typings.stormReactDiagrams.labelModelMod.LabelModel {
   def this(`type`: String) = this()
+  def this(`type`: js.UndefOr[scala.Nothing], id: String) = this()
   def this(`type`: String, id: String) = this()
 }
 

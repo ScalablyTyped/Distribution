@@ -10,9 +10,9 @@ Storybook for Preact: Develop Preact Component in isolation.
 | ------------------ | :-------------: |
 | Full name          | @storybook/preact |
 | Keywords           | storybook |
-| # releases         | 301 |
+| # releases         | 313 |
 | # dependents       | 0 |
-| # downloads        | 60923 |
+| # downloads        | 71140 |
 | # stars            | 0 |
 
 ## Links

@@ -14,10 +14,26 @@ trait UpdatePipelineStatusResponse extends js.Object {
 
 object UpdatePipelineStatusResponse {
   @scala.inline
-  def apply(Pipeline: Pipeline = null): UpdatePipelineStatusResponse = {
+  def apply(): UpdatePipelineStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (Pipeline != null) __obj.updateDynamic("Pipeline")(Pipeline.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePipelineStatusResponse]
   }
+  @scala.inline
+  implicit class UpdatePipelineStatusResponseOps[Self <: UpdatePipelineStatusResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPipeline(value: Pipeline): Self = this.set("Pipeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipeline: Self = this.set("Pipeline", js.undefined)
+  }
+  
 }
 

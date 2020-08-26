@@ -76,7 +76,18 @@ trait PlusDownloaderDownload extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   def addEventListener(): Unit = js.native
+  def addEventListener(`type`: js.UndefOr[scala.Nothing], listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
+  def addEventListener(
+    `type`: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* result0 */ this.type, /* result1 */ Double, Unit]
+  ): Unit = js.native
+  def addEventListener(
+    `type`: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* result0 */ this.type, /* result1 */ Double, Unit],
+    capture: Boolean
+  ): Unit = js.native
   def addEventListener(`type`: String): Unit = js.native
+  def addEventListener(`type`: String, listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
   def addEventListener(`type`: String, listener: js.Function2[/* result0 */ this.type, /* result1 */ Double, Unit]): Unit = js.native
   def addEventListener(
     `type`: String,
@@ -122,6 +133,7 @@ trait PlusDownloaderDownload extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   def setRequestHeader(): Unit = js.native
+  def setRequestHeader(headerName: js.UndefOr[scala.Nothing], headerValue: String): Unit = js.native
   def setRequestHeader(headerName: String): Unit = js.native
   def setRequestHeader(headerName: String, headerValue: String): Unit = js.native
   /**

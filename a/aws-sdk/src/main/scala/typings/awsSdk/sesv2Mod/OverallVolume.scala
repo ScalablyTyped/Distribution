@@ -22,16 +22,36 @@ trait OverallVolume extends js.Object {
 
 object OverallVolume {
   @scala.inline
-  def apply(
-    DomainIspPlacements: DomainIspPlacements = null,
-    ReadRatePercent: js.UndefOr[Percentage] = js.undefined,
-    VolumeStatistics: VolumeStatistics = null
-  ): OverallVolume = {
+  def apply(): OverallVolume = {
     val __obj = js.Dynamic.literal()
-    if (DomainIspPlacements != null) __obj.updateDynamic("DomainIspPlacements")(DomainIspPlacements.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReadRatePercent)) __obj.updateDynamic("ReadRatePercent")(ReadRatePercent.get.asInstanceOf[js.Any])
-    if (VolumeStatistics != null) __obj.updateDynamic("VolumeStatistics")(VolumeStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverallVolume]
   }
+  @scala.inline
+  implicit class OverallVolumeOps[Self <: OverallVolume] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = this.set("DomainIspPlacements", js.Array(value :_*))
+    @scala.inline
+    def setDomainIspPlacements(value: DomainIspPlacements): Self = this.set("DomainIspPlacements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainIspPlacements: Self = this.set("DomainIspPlacements", js.undefined)
+    @scala.inline
+    def setReadRatePercent(value: Percentage): Self = this.set("ReadRatePercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadRatePercent: Self = this.set("ReadRatePercent", js.undefined)
+    @scala.inline
+    def setVolumeStatistics(value: VolumeStatistics): Self = this.set("VolumeStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeStatistics: Self = this.set("VolumeStatistics", js.undefined)
+  }
+  
 }
 

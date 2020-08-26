@@ -12,7 +12,7 @@ The lodash method `_.shuffle` exported as a module.
 | Keywords           | lodash-modularized, shuffle |
 | # releases         | 0 |
 | # dependents       | 63 |
-| # downloads        | 7056005 |
+| # downloads        | 6983299 |
 | # stars            | 1 |
 
 ## Links

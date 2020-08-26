@@ -31,6 +31,7 @@ object sfnMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: ActivityArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ActivityArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -48,11 +49,12 @@ object sfnMod extends js.Object {
     def this(name: String, args: StateMachineArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getActivity(): js.Promise[GetActivityResult] with GetActivityResult = js.native
-  def getActivity(args: GetActivityArgs): js.Promise[GetActivityResult] with GetActivityResult = js.native
-  def getActivity(args: GetActivityArgs, opts: InvokeOptions): js.Promise[GetActivityResult] with GetActivityResult = js.native
-  def getStateMachine(args: GetStateMachineArgs): js.Promise[GetStateMachineResult] with GetStateMachineResult = js.native
-  def getStateMachine(args: GetStateMachineArgs, opts: InvokeOptions): js.Promise[GetStateMachineResult] with GetStateMachineResult = js.native
+  def getActivity(): js.Promise[GetActivityResult] = js.native
+  def getActivity(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetActivityResult] = js.native
+  def getActivity(args: GetActivityArgs): js.Promise[GetActivityResult] = js.native
+  def getActivity(args: GetActivityArgs, opts: InvokeOptions): js.Promise[GetActivityResult] = js.native
+  def getStateMachine(args: GetStateMachineArgs): js.Promise[GetStateMachineResult] = js.native
+  def getStateMachine(args: GetStateMachineArgs, opts: InvokeOptions): js.Promise[GetStateMachineResult] = js.native
   /* static members */
   @js.native
   object Activity extends js.Object {
@@ -63,8 +65,10 @@ object sfnMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.activityMod.Activity = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.activityMod.Activity = js.native
     def get(name: String, id: Input[ID], state: ActivityState): typings.pulumiAws.activityMod.Activity = js.native
     def get(name: String, id: Input[ID], state: ActivityState, opts: CustomResourceOptions): typings.pulumiAws.activityMod.Activity = js.native
     /**
@@ -84,8 +88,10 @@ object sfnMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.stateMachineMod.StateMachine = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.stateMachineMod.StateMachine = js.native
     def get(name: String, id: Input[ID], state: StateMachineState): typings.pulumiAws.stateMachineMod.StateMachine = js.native
     def get(name: String, id: Input[ID], state: StateMachineState, opts: CustomResourceOptions): typings.pulumiAws.stateMachineMod.StateMachine = js.native
     /**

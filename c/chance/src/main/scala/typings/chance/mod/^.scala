@@ -12,8 +12,6 @@ import scala.scalajs.js.annotation._
 class ^ () extends Chance {
   def this(generator: js.Function0[_]) = this()
   def this(seed: Seed) = this()
-  /* CompleteClass */
-  override var seed: Seed = js.native
 }
 
 @JSImport("chance", JSImport.Namespace)

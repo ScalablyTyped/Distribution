@@ -10,9 +10,5 @@ import scala.scalajs.js.annotation._
 class InvalidConfigurationError protected () extends Error {
   def this(message: String) = this()
   def this(message: String, code: String) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

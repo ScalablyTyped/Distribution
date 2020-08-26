@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Similar to pc.BLEND_NORMAL expect the source fragment is assumed to have
-  already been multiplied by the source alpha value.
+  * already been multiplied by the source alpha value.
   */
 @JSGlobal("pc.BLEND_PREMULTIPLIED")
 @js.native

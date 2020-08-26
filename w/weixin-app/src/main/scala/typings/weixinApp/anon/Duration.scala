@@ -8,9 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Duration extends js.Object {
   // 动画变化时间，默认0，单位：毫秒
-  var duration: js.UndefOr[Double] = js.undefined
+  var duration: js.UndefOr[Double] = js.native
   /**
     * 动画变化方式，默认 linear
     * 值    说明
@@ -20,19 +21,35 @@ trait Duration extends js.Object {
     * easeOut    动画以低速结束。
     * easeInOut    动画以低速开始和结束。
     */
-  var timingFunc: js.UndefOr[linear | easeIn | easeOut | easeInOut] = js.undefined
+  var timingFunc: js.UndefOr[linear | easeIn | easeOut | easeInOut] = js.native
 }
 
 object Duration {
   @scala.inline
-  def apply(
-    duration: js.UndefOr[Double] = js.undefined,
-    timingFunc: linear | easeIn | easeOut | easeInOut = null
-  ): Duration = {
+  def apply(): Duration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (timingFunc != null) __obj.updateDynamic("timingFunc")(timingFunc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }
+  @scala.inline
+  implicit class DurationOps[Self <: Duration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setTimingFunc(value: linear | easeIn | easeOut | easeInOut): Self = this.set("timingFunc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimingFunc: Self = this.set("timingFunc", js.undefined)
+  }
+  
 }
 

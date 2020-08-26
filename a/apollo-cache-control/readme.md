@@ -10,9 +10,9 @@ A GraphQL extension for cache control
 | ------------------ | :-------------: |
 | Full name          | apollo-cache-control |
 | Keywords           | - |
-| # releases         | 74 |
+| # releases         | 73 |
 | # dependents       | 10 |
-| # downloads        | 22195380 |
+| # downloads        | 22628901 |
 | # stars            | 1 |
 
 ## Links

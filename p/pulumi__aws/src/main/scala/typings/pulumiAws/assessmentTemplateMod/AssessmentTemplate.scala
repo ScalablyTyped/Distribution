@@ -39,9 +39,9 @@ class AssessmentTemplate protected () extends CustomResource {
     */
   val rulesPackageArns: Output_[js.Array[String]] = js.native
   /**
-    * Key-value mapping of tags for the Inspector assessment template.
+    * Key-value map of tags for the Inspector assessment template.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The assessment target ARN to attach the template to.
     */
@@ -59,8 +59,10 @@ object AssessmentTemplate extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): AssessmentTemplate = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AssessmentTemplate = js.native
   def get(name: String, id: Input[ID], state: AssessmentTemplateState): AssessmentTemplate = js.native
   def get(name: String, id: Input[ID], state: AssessmentTemplateState, opts: CustomResourceOptions): AssessmentTemplate = js.native
   /**

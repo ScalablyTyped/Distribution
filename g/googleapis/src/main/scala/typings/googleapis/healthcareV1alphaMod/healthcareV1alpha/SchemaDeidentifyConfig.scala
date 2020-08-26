@@ -29,12 +29,34 @@ trait SchemaDeidentifyConfig extends js.Object {
 
 object SchemaDeidentifyConfig {
   @scala.inline
-  def apply(dicom: SchemaDicomConfig = null, fhir: SchemaFhirConfig = null, image: SchemaImageConfig = null): SchemaDeidentifyConfig = {
+  def apply(): SchemaDeidentifyConfig = {
     val __obj = js.Dynamic.literal()
-    if (dicom != null) __obj.updateDynamic("dicom")(dicom.asInstanceOf[js.Any])
-    if (fhir != null) __obj.updateDynamic("fhir")(fhir.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeidentifyConfig]
   }
+  @scala.inline
+  implicit class SchemaDeidentifyConfigOps[Self <: SchemaDeidentifyConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDicom(value: SchemaDicomConfig): Self = this.set("dicom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDicom: Self = this.set("dicom", js.undefined)
+    @scala.inline
+    def setFhir(value: SchemaFhirConfig): Self = this.set("fhir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFhir: Self = this.set("fhir", js.undefined)
+    @scala.inline
+    def setImage(value: SchemaImageConfig): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+  }
+  
 }
 

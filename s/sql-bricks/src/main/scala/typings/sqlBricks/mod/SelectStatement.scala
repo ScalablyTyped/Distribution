@@ -155,6 +155,7 @@ trait SelectStatement extends Statement {
   def using(columnList: String*): SelectStatement = js.native
   def using(columnList: js.Array[String]): SelectStatement = js.native
   def where(): SelectStatement = js.native
+  def where(column: js.UndefOr[scala.Nothing], value: js.Any): SelectStatement = js.native
   def where(column: String): SelectStatement = js.native
   def where(column: String, value: js.Any): SelectStatement = js.native
   def where(column: Null, value: js.Any): SelectStatement = js.native

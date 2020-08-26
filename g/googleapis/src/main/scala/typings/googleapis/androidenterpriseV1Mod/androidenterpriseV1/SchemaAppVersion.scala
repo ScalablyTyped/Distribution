@@ -37,20 +37,44 @@ trait SchemaAppVersion extends js.Object {
 
 object SchemaAppVersion {
   @scala.inline
-  def apply(
-    isProduction: js.UndefOr[Boolean] = js.undefined,
-    track: String = null,
-    trackId: js.Array[String] = null,
-    versionCode: js.UndefOr[Double] = js.undefined,
-    versionString: String = null
-  ): SchemaAppVersion = {
+  def apply(): SchemaAppVersion = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isProduction)) __obj.updateDynamic("isProduction")(isProduction.get.asInstanceOf[js.Any])
-    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
-    if (trackId != null) __obj.updateDynamic("trackId")(trackId.asInstanceOf[js.Any])
-    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
-    if (versionString != null) __obj.updateDynamic("versionString")(versionString.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAppVersion]
   }
+  @scala.inline
+  implicit class SchemaAppVersionOps[Self <: SchemaAppVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsProduction(value: Boolean): Self = this.set("isProduction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsProduction: Self = this.set("isProduction", js.undefined)
+    @scala.inline
+    def setTrack(value: String): Self = this.set("track", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrack: Self = this.set("track", js.undefined)
+    @scala.inline
+    def setTrackIdVarargs(value: String*): Self = this.set("trackId", js.Array(value :_*))
+    @scala.inline
+    def setTrackId(value: js.Array[String]): Self = this.set("trackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackId: Self = this.set("trackId", js.undefined)
+    @scala.inline
+    def setVersionCode(value: Double): Self = this.set("versionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
+    @scala.inline
+    def setVersionString(value: String): Self = this.set("versionString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionString: Self = this.set("versionString", js.undefined)
+  }
+  
 }
 

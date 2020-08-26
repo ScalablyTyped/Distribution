@@ -74,28 +74,58 @@ trait SchemaRunPipelineArgs extends js.Object {
 
 object SchemaRunPipelineArgs {
   @scala.inline
-  def apply(
-    clientId: String = null,
-    inputs: StringDictionary[String] = null,
-    keepVmAliveOnFailureDuration: String = null,
-    labels: StringDictionary[String] = null,
-    logging: SchemaLoggingOptions = null,
-    outputs: StringDictionary[String] = null,
-    projectId: String = null,
-    resources: SchemaPipelineResources = null,
-    serviceAccount: SchemaServiceAccount = null
-  ): SchemaRunPipelineArgs = {
+  def apply(): SchemaRunPipelineArgs = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (keepVmAliveOnFailureDuration != null) __obj.updateDynamic("keepVmAliveOnFailureDuration")(keepVmAliveOnFailureDuration.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRunPipelineArgs]
   }
+  @scala.inline
+  implicit class SchemaRunPipelineArgsOps[Self <: SchemaRunPipelineArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setInputs(value: StringDictionary[String]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputs: Self = this.set("inputs", js.undefined)
+    @scala.inline
+    def setKeepVmAliveOnFailureDuration(value: String): Self = this.set("keepVmAliveOnFailureDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepVmAliveOnFailureDuration: Self = this.set("keepVmAliveOnFailureDuration", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLogging(value: SchemaLoggingOptions): Self = this.set("logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("logging", js.undefined)
+    @scala.inline
+    def setOutputs(value: StringDictionary[String]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setResources(value: SchemaPipelineResources): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+    @scala.inline
+    def setServiceAccount(value: SchemaServiceAccount): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+  }
+  
 }
 

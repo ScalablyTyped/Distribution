@@ -17,7 +17,17 @@ trait Server extends EventEmitter {
   def listen(path: String): Server = js.native
   def listen(path: String, callback: js.Function): Server = js.native
   def listen(port: Double): Server = js.native
+  def listen(
+    port: Double,
+    hostname: js.UndefOr[scala.Nothing],
+    backlog: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Server = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): Server = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double, callback: js.Function): Server = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], callback: js.Function): Server = js.native
   def listen(port: Double, hostname: String): Server = js.native
+  def listen(port: Double, hostname: String, backlog: js.UndefOr[scala.Nothing], callback: js.Function): Server = js.native
   def listen(port: Double, hostname: String, backlog: Double): Server = js.native
   def listen(port: Double, hostname: String, backlog: Double, callback: js.Function): Server = js.native
   def listen(port: Double, hostname: String, callback: js.Function): Server = js.native

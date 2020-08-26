@@ -31,6 +31,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def addNodes(): GaxiosPromise[SchemaOperation] = js.native
   def addNodes(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def addNodes(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addNodes(params: ParamsResourceNodegroupsAddnodes): GaxiosPromise[SchemaOperation] = js.native
   def addNodes(params: ParamsResourceNodegroupsAddnodes, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addNodes(
@@ -63,6 +64,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaNodeGroupAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaNodeGroupAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNodeGroupAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceNodegroupsAggregatedlist): GaxiosPromise[SchemaNodeGroupAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceNodegroupsAggregatedlist,
@@ -96,6 +98,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceNodegroupsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceNodegroupsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -127,6 +130,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def deleteNodes(): GaxiosPromise[SchemaOperation] = js.native
   def deleteNodes(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def deleteNodes(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deleteNodes(params: ParamsResourceNodegroupsDeletenodes): GaxiosPromise[SchemaOperation] = js.native
   def deleteNodes(params: ParamsResourceNodegroupsDeletenodes, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def deleteNodes(
@@ -158,6 +162,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaNodeGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaNodeGroup]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNodeGroup] = js.native
   def get(params: ParamsResourceNodegroupsGet): GaxiosPromise[SchemaNodeGroup] = js.native
   def get(params: ParamsResourceNodegroupsGet, callback: BodyResponseCallback[SchemaNodeGroup]): Unit = js.native
   def get(
@@ -188,6 +193,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceNodegroupsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceNodegroupsGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -220,6 +226,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceNodegroupsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceNodegroupsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -253,6 +260,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaNodeGroupList] = js.native
   def list(callback: BodyResponseCallback[SchemaNodeGroupList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNodeGroupList] = js.native
   def list(params: ParamsResourceNodegroupsList): GaxiosPromise[SchemaNodeGroupList] = js.native
   def list(params: ParamsResourceNodegroupsList, callback: BodyResponseCallback[SchemaNodeGroupList]): Unit = js.native
   def list(
@@ -286,6 +294,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def listNodes(): GaxiosPromise[SchemaNodeGroupsListNodes] = js.native
   def listNodes(callback: BodyResponseCallback[SchemaNodeGroupsListNodes]): Unit = js.native
+  def listNodes(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNodeGroupsListNodes] = js.native
   def listNodes(params: ParamsResourceNodegroupsListnodes): GaxiosPromise[SchemaNodeGroupsListNodes] = js.native
   def listNodes(
     params: ParamsResourceNodegroupsListnodes,
@@ -320,6 +329,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def setAutoscalingPolicy(): GaxiosPromise[SchemaOperation] = js.native
   def setAutoscalingPolicy(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setAutoscalingPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setAutoscalingPolicy(params: ParamsResourceNodegroupsSetautoscalingpolicy): GaxiosPromise[SchemaOperation] = js.native
   def setAutoscalingPolicy(
     params: ParamsResourceNodegroupsSetautoscalingpolicy,
@@ -354,6 +364,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceNodegroupsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceNodegroupsSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -385,6 +396,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def setNodeTemplate(): GaxiosPromise[SchemaOperation] = js.native
   def setNodeTemplate(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setNodeTemplate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setNodeTemplate(params: ParamsResourceNodegroupsSetnodetemplate): GaxiosPromise[SchemaOperation] = js.native
   def setNodeTemplate(params: ParamsResourceNodegroupsSetnodetemplate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setNodeTemplate(
@@ -415,6 +427,7 @@ class ResourceNodegroups protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceNodegroupsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceNodegroupsTestiampermissions,

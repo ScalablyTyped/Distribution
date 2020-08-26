@@ -11,8 +11,8 @@ Node.js 4 `os.homedir()` ponyfill
 | Full name          | os-homedir |
 | Keywords           | builtin, core, ponyfill, polyfill, shim, os, homedir, home, dir, directory, folder, user, path |
 | # releases         | 2 |
-| # dependents       | 225 |
-| # downloads        | 394757281 |
+| # dependents       | 224 |
+| # downloads        | 414102556 |
 | # stars            | 7 |
 
 ## Links

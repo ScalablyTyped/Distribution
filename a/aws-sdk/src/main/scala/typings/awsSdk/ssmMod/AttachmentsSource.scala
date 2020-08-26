@@ -22,16 +22,36 @@ trait AttachmentsSource extends js.Object {
 
 object AttachmentsSource {
   @scala.inline
-  def apply(
-    Key: AttachmentsSourceKey = null,
-    Name: AttachmentIdentifier = null,
-    Values: AttachmentsSourceValues = null
-  ): AttachmentsSource = {
+  def apply(): AttachmentsSource = {
     val __obj = js.Dynamic.literal()
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentsSource]
   }
+  @scala.inline
+  implicit class AttachmentsSourceOps[Self <: AttachmentsSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: AttachmentsSourceKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setName(value: AttachmentIdentifier): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: AttachmentsSourceValue*): Self = this.set("Values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: AttachmentsSourceValues): Self = this.set("Values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("Values", js.undefined)
+  }
+  
 }
 

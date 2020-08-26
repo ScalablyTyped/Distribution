@@ -30,16 +30,36 @@ trait ContextDataType extends js.Object {
 
 object ContextDataType {
   @scala.inline
-  def apply(
-    HttpHeaders: HttpHeaderList,
-    IpAddress: StringType,
-    ServerName: StringType,
-    ServerPath: StringType,
-    EncodedData: StringType = null
-  ): ContextDataType = {
+  def apply(HttpHeaders: HttpHeaderList, IpAddress: StringType, ServerName: StringType, ServerPath: StringType): ContextDataType = {
     val __obj = js.Dynamic.literal(HttpHeaders = HttpHeaders.asInstanceOf[js.Any], IpAddress = IpAddress.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any], ServerPath = ServerPath.asInstanceOf[js.Any])
-    if (EncodedData != null) __obj.updateDynamic("EncodedData")(EncodedData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextDataType]
   }
+  @scala.inline
+  implicit class ContextDataTypeOps[Self <: ContextDataType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpHeadersVarargs(value: HttpHeader*): Self = this.set("HttpHeaders", js.Array(value :_*))
+    @scala.inline
+    def setHttpHeaders(value: HttpHeaderList): Self = this.set("HttpHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIpAddress(value: StringType): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerName(value: StringType): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerPath(value: StringType): Self = this.set("ServerPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncodedData(value: StringType): Self = this.set("EncodedData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodedData: Self = this.set("EncodedData", js.undefined)
+  }
+  
 }
 

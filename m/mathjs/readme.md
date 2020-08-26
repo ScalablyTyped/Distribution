@@ -10,9 +10,9 @@ Math.js is an extensive math library for JavaScript and Node.js. It features a f
 | ------------------ | :-------------: |
 | Full name          | mathjs |
 | Keywords           | math, mathematics, functions, numeric, algebra, parser, expression, number, bignumber, complex, fraction, matrix, unit |
-| # releases         | 62 |
-| # dependents       | 575 |
-| # downloads        | 7767565 |
+| # releases         | 61 |
+| # dependents       | 581 |
+| # downloads        | 7820589 |
 | # stars            | 72 |
 
 ## Links

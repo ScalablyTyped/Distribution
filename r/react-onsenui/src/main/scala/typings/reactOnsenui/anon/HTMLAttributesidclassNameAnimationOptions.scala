@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {renderPage (route : any, navigator ? : react-onsenui.react-onsenui.Navigator): react.react.<global>.JSX.Element,   initialRouteStack ? :std.Array<string>,   initialRoute ? :any,   onPrePush ? :(): void,   onPostPush ? :(): void,   onPrePop ? :(): void,   onPostPop ? :(): void,   animation ? :react-onsenui.react-onsenui.NavigatorAnimationTypes,   animationOptions ? :react-onsenui.react-onsenui.AnimationOptions} */
+/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {renderPage (route : any, navigator : react-onsenui.react-onsenui.Navigator | undefined): react.react.<global>.JSX.Element,   initialRouteStack :std.Array<string> | undefined,   initialRoute :any | undefined,   onPrePush :(): void | undefined,   onPostPush :(): void | undefined,   onPrePop :(): void | undefined,   onPostPop :(): void | undefined,   animation :react-onsenui.react-onsenui.NavigatorAnimationTypes | undefined,   animationOptions :react-onsenui.react-onsenui.AnimationOptions | undefined} */
 @js.native
 trait HTMLAttributesidclassNameAnimationOptions extends js.Object {
   var animation: js.UndefOr[NavigatorAnimationTypes] = js.native

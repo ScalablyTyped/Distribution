@@ -24,10 +24,10 @@ class DataSetConstraintAccess protected () extends Element {
   @JSName("model")
   var model_FDataSetConstraintAccess: IModel = js.native
   def constraintText: String = js.native
-  def constraintText(newValue: String): js.Any = js.native
+  def constraintText_=(newValue: String): Unit = js.native
   def containerAsDataSetParameterAccess: DataSetParameterAccess = js.native
   def enabled: Boolean = js.native
-  def enabled(newValue: Boolean): js.Any = js.native
+  def enabled_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

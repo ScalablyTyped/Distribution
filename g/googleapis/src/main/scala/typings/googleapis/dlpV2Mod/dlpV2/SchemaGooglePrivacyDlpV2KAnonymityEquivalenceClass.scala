@@ -24,14 +24,32 @@ trait SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass extends js.Object {
 
 object SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass {
   @scala.inline
-  def apply(
-    equivalenceClassSize: String = null,
-    quasiIdsValues: js.Array[SchemaGooglePrivacyDlpV2Value] = null
-  ): SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass = {
+  def apply(): SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass = {
     val __obj = js.Dynamic.literal()
-    if (equivalenceClassSize != null) __obj.updateDynamic("equivalenceClassSize")(equivalenceClassSize.asInstanceOf[js.Any])
-    if (quasiIdsValues != null) __obj.updateDynamic("quasiIdsValues")(quasiIdsValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClassOps[Self <: SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEquivalenceClassSize(value: String): Self = this.set("equivalenceClassSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEquivalenceClassSize: Self = this.set("equivalenceClassSize", js.undefined)
+    @scala.inline
+    def setQuasiIdsValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = this.set("quasiIdsValues", js.Array(value :_*))
+    @scala.inline
+    def setQuasiIdsValues(value: js.Array[SchemaGooglePrivacyDlpV2Value]): Self = this.set("quasiIdsValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuasiIdsValues: Self = this.set("quasiIdsValues", js.undefined)
+  }
+  
 }
 

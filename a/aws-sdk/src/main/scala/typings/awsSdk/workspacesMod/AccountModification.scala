@@ -34,22 +34,46 @@ trait AccountModification extends js.Object {
 
 object AccountModification {
   @scala.inline
-  def apply(
-    DedicatedTenancyManagementCidrRange: DedicatedTenancyManagementCidrRange = null,
-    DedicatedTenancySupport: DedicatedTenancySupportResultEnum = null,
-    ErrorCode: WorkspaceErrorCode = null,
-    ErrorMessage: Description = null,
-    ModificationState: DedicatedTenancyModificationStateEnum = null,
-    StartTime: Timestamp = null
-  ): AccountModification = {
+  def apply(): AccountModification = {
     val __obj = js.Dynamic.literal()
-    if (DedicatedTenancyManagementCidrRange != null) __obj.updateDynamic("DedicatedTenancyManagementCidrRange")(DedicatedTenancyManagementCidrRange.asInstanceOf[js.Any])
-    if (DedicatedTenancySupport != null) __obj.updateDynamic("DedicatedTenancySupport")(DedicatedTenancySupport.asInstanceOf[js.Any])
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (ModificationState != null) __obj.updateDynamic("ModificationState")(ModificationState.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountModification]
   }
+  @scala.inline
+  implicit class AccountModificationOps[Self <: AccountModification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDedicatedTenancyManagementCidrRange(value: DedicatedTenancyManagementCidrRange): Self = this.set("DedicatedTenancyManagementCidrRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedTenancyManagementCidrRange: Self = this.set("DedicatedTenancyManagementCidrRange", js.undefined)
+    @scala.inline
+    def setDedicatedTenancySupport(value: DedicatedTenancySupportResultEnum): Self = this.set("DedicatedTenancySupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedTenancySupport: Self = this.set("DedicatedTenancySupport", js.undefined)
+    @scala.inline
+    def setErrorCode(value: WorkspaceErrorCode): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: Description): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setModificationState(value: DedicatedTenancyModificationStateEnum): Self = this.set("ModificationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModificationState: Self = this.set("ModificationState", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+  }
+  
 }
 

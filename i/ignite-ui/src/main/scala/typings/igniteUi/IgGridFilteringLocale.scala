@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgGridFilteringLocale
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,481 +15,625 @@ trait IgGridFilteringLocale
     * 'Advance Button' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var advancedButtonLabel: js.UndefOr[String] = js.undefined
+  var advancedButtonLabel: js.UndefOr[String] = js.native
   /**
     * 'After' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var afterLabel: js.UndefOr[String] = js.undefined
+  var afterLabel: js.UndefOr[String] = js.native
   /**
     * After null text that will be used for the filter editors.
     *
     */
-  var afterNullText: js.UndefOr[String] = js.undefined
+  var afterNullText: js.UndefOr[String] = js.native
   /**
     * 'At or after' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var atAfterLabel: js.UndefOr[String] = js.undefined
+  var atAfterLabel: js.UndefOr[String] = js.native
   /**
     * 'At or before' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var atBeforeLabel: js.UndefOr[String] = js.undefined
+  var atBeforeLabel: js.UndefOr[String] = js.native
   /**
     * 'At' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var atLabel: js.UndefOr[String] = js.undefined
+  var atLabel: js.UndefOr[String] = js.native
   /**
     * 'Before' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var beforeLabel: js.UndefOr[String] = js.undefined
+  var beforeLabel: js.UndefOr[String] = js.native
   /**
     * Before null text that will be used for the filter editors.
     *
     */
-  var beforeNullText: js.UndefOr[String] = js.undefined
+  var beforeNullText: js.UndefOr[String] = js.native
   /**
     * 'Clear' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var clearLabel: js.UndefOr[String] = js.undefined
+  var clearLabel: js.UndefOr[String] = js.native
   /**
     * 'Contains' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var containsLabel: js.UndefOr[String] = js.undefined
+  var containsLabel: js.UndefOr[String] = js.native
   /**
     * Contains null text that will be used for the filter editors.
     *
     */
-  var containsNullText: js.UndefOr[String] = js.undefined
+  var containsNullText: js.UndefOr[String] = js.native
   /**
     * 'Does not contain' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var doesNotContainLabel: js.UndefOr[String] = js.undefined
+  var doesNotContainLabel: js.UndefOr[String] = js.native
   /**
     * Does not contain null text that will be used for the filter editors.
     *
     */
-  var doesNotContainNullText: js.UndefOr[String] = js.undefined
+  var doesNotContainNullText: js.UndefOr[String] = js.native
   /**
     * 'Does not Equal' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var doesNotEqualLabel: js.UndefOr[String] = js.undefined
+  var doesNotEqualLabel: js.UndefOr[String] = js.native
   /**
     * Does not equal null text that will be used for the filter editors.
     *
     */
-  var doesNotEqualNullText: js.UndefOr[String] = js.undefined
+  var doesNotEqualNullText: js.UndefOr[String] = js.native
   /**
     * Empty null text that will be used for the filter editors.
     *
     */
-  var emptyNullText: js.UndefOr[String] = js.undefined
+  var emptyNullText: js.UndefOr[String] = js.native
   /**
     * 'Starts with' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var endsWithLabel: js.UndefOr[String] = js.undefined
+  var endsWithLabel: js.UndefOr[String] = js.native
   /**
     * EndsWith null text that will be used for the filter editors.
     *
     */
-  var endsWithNullText: js.UndefOr[String] = js.undefined
+  var endsWithNullText: js.UndefOr[String] = js.native
   /**
     * 'Equals' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var equalsLabel: js.UndefOr[String] = js.undefined
+  var equalsLabel: js.UndefOr[String] = js.native
   /**
     * Equals null text that will be used for the filter editors.
     *
     */
-  var equalsNullText: js.UndefOr[String] = js.undefined
+  var equalsNullText: js.UndefOr[String] = js.native
   /**
     * 'False' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var falseLabel: js.UndefOr[String] = js.undefined
+  var falseLabel: js.UndefOr[String] = js.native
   /**
     * Feature chooser text when filter is shown and filter [mode](ui.iggridfiltering#options:mode) is simple.
     *
     */
-  var featureChooserText: js.UndefOr[String] = js.undefined
+  var featureChooserText: js.UndefOr[String] = js.native
   /**
     * Feature chooser text when filter [mode](ui.iggridfiltering#options:mode) is advanced.
     *
     */
-  var featureChooserTextAdvancedFilter: js.UndefOr[String] = js.undefined
+  var featureChooserTextAdvancedFilter: js.UndefOr[String] = js.native
   /**
     * Feature chooser text when filter is hidden and filter [mode](ui.iggridfiltering#options:mode) is simple.
     *
     */
-  var featureChooserTextHide: js.UndefOr[String] = js.undefined
+  var featureChooserTextHide: js.UndefOr[String] = js.native
   /**
     * Specifies the Add button label for the filtering dialog.
     *
     */
-  var filterDialogAddLabel: js.UndefOr[String] = js.undefined
+  var filterDialogAddLabel: js.UndefOr[String] = js.native
   /**
     * Specifies the All label for the filtering dialog.
     *
     */
-  var filterDialogAllLabel: js.UndefOr[String] = js.undefined
+  var filterDialogAllLabel: js.UndefOr[String] = js.native
   /**
     * Specifies the Any label for the filtering dialog.
     *
     */
-  var filterDialogAnyLabel: js.UndefOr[String] = js.undefined
+  var filterDialogAnyLabel: js.UndefOr[String] = js.native
   /**
     * Specifies the dialog's Cancel button label.
     *
     */
-  var filterDialogCancelLabel: js.UndefOr[String] = js.undefined
+  var filterDialogCancelLabel: js.UndefOr[String] = js.native
   /**
     * Specifies the filter dialog caption label.
     *
     */
-  var filterDialogCaptionLabel: js.UndefOr[String] = js.undefined
+  var filterDialogCaptionLabel: js.UndefOr[String] = js.native
   /**
     * Specifies clear all label in the filter dialog.
     *
     */
-  var filterDialogClearAllLabel: js.UndefOr[String] = js.undefined
+  var filterDialogClearAllLabel: js.UndefOr[String] = js.native
   /**
     * Specifies the Close label for the filtering dialog.
     *
     */
-  var filterDialogCloseLabel: js.UndefOr[String] = js.undefined
+  var filterDialogCloseLabel: js.UndefOr[String] = js.native
   /**
     * Specifies the filter condition drop-down label.
     *
     */
-  var filterDialogConditionDropDownLabel: js.UndefOr[String] = js.undefined
+  var filterDialogConditionDropDownLabel: js.UndefOr[String] = js.native
   /**
     * Specifies the filter condition label.
     *
     */
-  var filterDialogConditionLabel1: js.UndefOr[String] = js.undefined
+  var filterDialogConditionLabel1: js.UndefOr[String] = js.native
   /**
     * Specifies the filter condition label.
     *
     */
-  var filterDialogConditionLabel2: js.UndefOr[String] = js.undefined
+  var filterDialogConditionLabel2: js.UndefOr[String] = js.native
   /**
     * Specifies the Error label for the filtering dialog.
     *
     */
-  var filterDialogErrorLabel: js.UndefOr[String] = js.undefined
+  var filterDialogErrorLabel: js.UndefOr[String] = js.native
   /**
     * Specifies the dialog's Ok button label.
     *
     */
-  var filterDialogOkLabel: js.UndefOr[String] = js.undefined
+  var filterDialogOkLabel: js.UndefOr[String] = js.native
   /**
     * Specifies the summary template for the matching records.
     *
     */
-  var filterSummaryTemplate: js.UndefOr[String] = js.undefined
+  var filterSummaryTemplate: js.UndefOr[String] = js.native
   /**
     * Specifies the Filtering summary title.
     *
     */
-  var filterSummaryTitleLabel: js.UndefOr[String] = js.undefined
+  var filterSummaryTitleLabel: js.UndefOr[String] = js.native
   /**
     * 'Greater Than' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var greaterThanLabel: js.UndefOr[String] = js.undefined
+  var greaterThanLabel: js.UndefOr[String] = js.native
   /**
     * Greater than null text that will be used for the filter editors.
     *
     */
-  var greaterThanNullText: js.UndefOr[String] = js.undefined
+  var greaterThanNullText: js.UndefOr[String] = js.native
   /**
     * 'Greater Than or Equal' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var greaterThanOrEqualToLabel: js.UndefOr[String] = js.undefined
+  var greaterThanOrEqualToLabel: js.UndefOr[String] = js.native
   /**
     * Greater than or equal to null text that will be used for the filter editors.
     *
     */
-  var greaterThanOrEqualToNullText: js.UndefOr[String] = js.undefined
+  var greaterThanOrEqualToNullText: js.UndefOr[String] = js.native
   /**
     * 'Last Month' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var lastMonthLabel: js.UndefOr[String] = js.undefined
+  var lastMonthLabel: js.UndefOr[String] = js.native
   /**
     * 'Last Year' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var lastYearLabel: js.UndefOr[String] = js.undefined
+  var lastYearLabel: js.UndefOr[String] = js.native
   /**
     * 'Less Than' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var lessThanLabel: js.UndefOr[String] = js.undefined
+  var lessThanLabel: js.UndefOr[String] = js.native
   /**
     * Less than null text that will be used for the filter editors.
     *
     */
-  var lessThanNullText: js.UndefOr[String] = js.undefined
+  var lessThanNullText: js.UndefOr[String] = js.native
   /**
     * 'Less Than or Equal' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var lessThanOrEqualToLabel: js.UndefOr[String] = js.undefined
+  var lessThanOrEqualToLabel: js.UndefOr[String] = js.native
   /**
     * Less than or equal to null text that will be used for the filter editors.
     *
     */
-  var lessThanOrEqualToNullText: js.UndefOr[String] = js.undefined
+  var lessThanOrEqualToNullText: js.UndefOr[String] = js.native
   /**
     * 'Next Month' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var nextMonthLabel: js.UndefOr[String] = js.undefined
+  var nextMonthLabel: js.UndefOr[String] = js.native
   /**
     * 'Next Year' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var nextYearLabel: js.UndefOr[String] = js.undefined
+  var nextYearLabel: js.UndefOr[String] = js.native
   /**
     * 'No Filter' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var noFilterLabel: js.UndefOr[String] = js.undefined
+  var noFilterLabel: js.UndefOr[String] = js.native
   /**
     * 'Not at' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var notAtLabel: js.UndefOr[String] = js.undefined
+  var notAtLabel: js.UndefOr[String] = js.native
   /**
     * Not empty null text that will be used for the filter editors.
     *
     */
-  var notEmptyNullText: js.UndefOr[String] = js.undefined
+  var notEmptyNullText: js.UndefOr[String] = js.native
   /**
     * Not empty null text that will be used for the filter editors.
     *
     */
-  var notNullNullText: js.UndefOr[String] = js.undefined
+  var notNullNullText: js.UndefOr[String] = js.native
   /**
     * 'Not On' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var notOnLabel: js.UndefOr[String] = js.undefined
+  var notOnLabel: js.UndefOr[String] = js.native
   /**
     * Not on null text that will be used for the filter editors.
     *
     */
-  var notOnNullText: js.UndefOr[String] = js.undefined
+  var notOnNullText: js.UndefOr[String] = js.native
   /**
     * Not empty null text that will be used for the filter editors.
     *
     */
-  var nullNullText: js.UndefOr[String] = js.undefined
+  var nullNullText: js.UndefOr[String] = js.native
   /**
     * 'On' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var onLabel: js.UndefOr[String] = js.undefined
+  var onLabel: js.UndefOr[String] = js.native
   /**
     * On null text that will be used for the filter editors.
     *
     */
-  var onNullText: js.UndefOr[String] = js.undefined
+  var onNullText: js.UndefOr[String] = js.native
   /**
     * 'Starts with' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var startsWithLabel: js.UndefOr[String] = js.undefined
+  var startsWithLabel: js.UndefOr[String] = js.native
   /**
     * StartsWith null text that will be used for the filter editors.
     *
     */
-  var startsWithNullText: js.UndefOr[String] = js.undefined
+  var startsWithNullText: js.UndefOr[String] = js.native
   /**
     * 'This Month' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var thisMonthLabel: js.UndefOr[String] = js.undefined
+  var thisMonthLabel: js.UndefOr[String] = js.native
   /**
     * 'This Year' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var thisYearLabel: js.UndefOr[String] = js.undefined
+  var thisYearLabel: js.UndefOr[String] = js.native
   /**
     * 'Today' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var todayLabel: js.UndefOr[String] = js.undefined
+  var todayLabel: js.UndefOr[String] = js.native
   /**
     * Custom tooltip template for the filter button, when a filter is applied.
     *
     */
-  var tooltipTemplate: js.UndefOr[String] = js.undefined
+  var tooltipTemplate: js.UndefOr[String] = js.native
   /**
     * 'True' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var trueLabel: js.UndefOr[String] = js.undefined
+  var trueLabel: js.UndefOr[String] = js.native
   /**
     * 'Yesterday' label that is used for the predefined filtering conditions in the filter dropdowns.
     *
     */
-  var yesterdayLabel: js.UndefOr[String] = js.undefined
+  var yesterdayLabel: js.UndefOr[String] = js.native
 }
 
 object IgGridFilteringLocale {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    advancedButtonLabel: String = null,
-    afterLabel: String = null,
-    afterNullText: String = null,
-    atAfterLabel: String = null,
-    atBeforeLabel: String = null,
-    atLabel: String = null,
-    beforeLabel: String = null,
-    beforeNullText: String = null,
-    clearLabel: String = null,
-    containsLabel: String = null,
-    containsNullText: String = null,
-    doesNotContainLabel: String = null,
-    doesNotContainNullText: String = null,
-    doesNotEqualLabel: String = null,
-    doesNotEqualNullText: String = null,
-    emptyNullText: String = null,
-    endsWithLabel: String = null,
-    endsWithNullText: String = null,
-    equalsLabel: String = null,
-    equalsNullText: String = null,
-    falseLabel: String = null,
-    featureChooserText: String = null,
-    featureChooserTextAdvancedFilter: String = null,
-    featureChooserTextHide: String = null,
-    filterDialogAddLabel: String = null,
-    filterDialogAllLabel: String = null,
-    filterDialogAnyLabel: String = null,
-    filterDialogCancelLabel: String = null,
-    filterDialogCaptionLabel: String = null,
-    filterDialogClearAllLabel: String = null,
-    filterDialogCloseLabel: String = null,
-    filterDialogConditionDropDownLabel: String = null,
-    filterDialogConditionLabel1: String = null,
-    filterDialogConditionLabel2: String = null,
-    filterDialogErrorLabel: String = null,
-    filterDialogOkLabel: String = null,
-    filterSummaryTemplate: String = null,
-    filterSummaryTitleLabel: String = null,
-    greaterThanLabel: String = null,
-    greaterThanNullText: String = null,
-    greaterThanOrEqualToLabel: String = null,
-    greaterThanOrEqualToNullText: String = null,
-    lastMonthLabel: String = null,
-    lastYearLabel: String = null,
-    lessThanLabel: String = null,
-    lessThanNullText: String = null,
-    lessThanOrEqualToLabel: String = null,
-    lessThanOrEqualToNullText: String = null,
-    nextMonthLabel: String = null,
-    nextYearLabel: String = null,
-    noFilterLabel: String = null,
-    notAtLabel: String = null,
-    notEmptyNullText: String = null,
-    notNullNullText: String = null,
-    notOnLabel: String = null,
-    notOnNullText: String = null,
-    nullNullText: String = null,
-    onLabel: String = null,
-    onNullText: String = null,
-    startsWithLabel: String = null,
-    startsWithNullText: String = null,
-    thisMonthLabel: String = null,
-    thisYearLabel: String = null,
-    todayLabel: String = null,
-    tooltipTemplate: String = null,
-    trueLabel: String = null,
-    yesterdayLabel: String = null
-  ): IgGridFilteringLocale = {
+  def apply(): IgGridFilteringLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (advancedButtonLabel != null) __obj.updateDynamic("advancedButtonLabel")(advancedButtonLabel.asInstanceOf[js.Any])
-    if (afterLabel != null) __obj.updateDynamic("afterLabel")(afterLabel.asInstanceOf[js.Any])
-    if (afterNullText != null) __obj.updateDynamic("afterNullText")(afterNullText.asInstanceOf[js.Any])
-    if (atAfterLabel != null) __obj.updateDynamic("atAfterLabel")(atAfterLabel.asInstanceOf[js.Any])
-    if (atBeforeLabel != null) __obj.updateDynamic("atBeforeLabel")(atBeforeLabel.asInstanceOf[js.Any])
-    if (atLabel != null) __obj.updateDynamic("atLabel")(atLabel.asInstanceOf[js.Any])
-    if (beforeLabel != null) __obj.updateDynamic("beforeLabel")(beforeLabel.asInstanceOf[js.Any])
-    if (beforeNullText != null) __obj.updateDynamic("beforeNullText")(beforeNullText.asInstanceOf[js.Any])
-    if (clearLabel != null) __obj.updateDynamic("clearLabel")(clearLabel.asInstanceOf[js.Any])
-    if (containsLabel != null) __obj.updateDynamic("containsLabel")(containsLabel.asInstanceOf[js.Any])
-    if (containsNullText != null) __obj.updateDynamic("containsNullText")(containsNullText.asInstanceOf[js.Any])
-    if (doesNotContainLabel != null) __obj.updateDynamic("doesNotContainLabel")(doesNotContainLabel.asInstanceOf[js.Any])
-    if (doesNotContainNullText != null) __obj.updateDynamic("doesNotContainNullText")(doesNotContainNullText.asInstanceOf[js.Any])
-    if (doesNotEqualLabel != null) __obj.updateDynamic("doesNotEqualLabel")(doesNotEqualLabel.asInstanceOf[js.Any])
-    if (doesNotEqualNullText != null) __obj.updateDynamic("doesNotEqualNullText")(doesNotEqualNullText.asInstanceOf[js.Any])
-    if (emptyNullText != null) __obj.updateDynamic("emptyNullText")(emptyNullText.asInstanceOf[js.Any])
-    if (endsWithLabel != null) __obj.updateDynamic("endsWithLabel")(endsWithLabel.asInstanceOf[js.Any])
-    if (endsWithNullText != null) __obj.updateDynamic("endsWithNullText")(endsWithNullText.asInstanceOf[js.Any])
-    if (equalsLabel != null) __obj.updateDynamic("equalsLabel")(equalsLabel.asInstanceOf[js.Any])
-    if (equalsNullText != null) __obj.updateDynamic("equalsNullText")(equalsNullText.asInstanceOf[js.Any])
-    if (falseLabel != null) __obj.updateDynamic("falseLabel")(falseLabel.asInstanceOf[js.Any])
-    if (featureChooserText != null) __obj.updateDynamic("featureChooserText")(featureChooserText.asInstanceOf[js.Any])
-    if (featureChooserTextAdvancedFilter != null) __obj.updateDynamic("featureChooserTextAdvancedFilter")(featureChooserTextAdvancedFilter.asInstanceOf[js.Any])
-    if (featureChooserTextHide != null) __obj.updateDynamic("featureChooserTextHide")(featureChooserTextHide.asInstanceOf[js.Any])
-    if (filterDialogAddLabel != null) __obj.updateDynamic("filterDialogAddLabel")(filterDialogAddLabel.asInstanceOf[js.Any])
-    if (filterDialogAllLabel != null) __obj.updateDynamic("filterDialogAllLabel")(filterDialogAllLabel.asInstanceOf[js.Any])
-    if (filterDialogAnyLabel != null) __obj.updateDynamic("filterDialogAnyLabel")(filterDialogAnyLabel.asInstanceOf[js.Any])
-    if (filterDialogCancelLabel != null) __obj.updateDynamic("filterDialogCancelLabel")(filterDialogCancelLabel.asInstanceOf[js.Any])
-    if (filterDialogCaptionLabel != null) __obj.updateDynamic("filterDialogCaptionLabel")(filterDialogCaptionLabel.asInstanceOf[js.Any])
-    if (filterDialogClearAllLabel != null) __obj.updateDynamic("filterDialogClearAllLabel")(filterDialogClearAllLabel.asInstanceOf[js.Any])
-    if (filterDialogCloseLabel != null) __obj.updateDynamic("filterDialogCloseLabel")(filterDialogCloseLabel.asInstanceOf[js.Any])
-    if (filterDialogConditionDropDownLabel != null) __obj.updateDynamic("filterDialogConditionDropDownLabel")(filterDialogConditionDropDownLabel.asInstanceOf[js.Any])
-    if (filterDialogConditionLabel1 != null) __obj.updateDynamic("filterDialogConditionLabel1")(filterDialogConditionLabel1.asInstanceOf[js.Any])
-    if (filterDialogConditionLabel2 != null) __obj.updateDynamic("filterDialogConditionLabel2")(filterDialogConditionLabel2.asInstanceOf[js.Any])
-    if (filterDialogErrorLabel != null) __obj.updateDynamic("filterDialogErrorLabel")(filterDialogErrorLabel.asInstanceOf[js.Any])
-    if (filterDialogOkLabel != null) __obj.updateDynamic("filterDialogOkLabel")(filterDialogOkLabel.asInstanceOf[js.Any])
-    if (filterSummaryTemplate != null) __obj.updateDynamic("filterSummaryTemplate")(filterSummaryTemplate.asInstanceOf[js.Any])
-    if (filterSummaryTitleLabel != null) __obj.updateDynamic("filterSummaryTitleLabel")(filterSummaryTitleLabel.asInstanceOf[js.Any])
-    if (greaterThanLabel != null) __obj.updateDynamic("greaterThanLabel")(greaterThanLabel.asInstanceOf[js.Any])
-    if (greaterThanNullText != null) __obj.updateDynamic("greaterThanNullText")(greaterThanNullText.asInstanceOf[js.Any])
-    if (greaterThanOrEqualToLabel != null) __obj.updateDynamic("greaterThanOrEqualToLabel")(greaterThanOrEqualToLabel.asInstanceOf[js.Any])
-    if (greaterThanOrEqualToNullText != null) __obj.updateDynamic("greaterThanOrEqualToNullText")(greaterThanOrEqualToNullText.asInstanceOf[js.Any])
-    if (lastMonthLabel != null) __obj.updateDynamic("lastMonthLabel")(lastMonthLabel.asInstanceOf[js.Any])
-    if (lastYearLabel != null) __obj.updateDynamic("lastYearLabel")(lastYearLabel.asInstanceOf[js.Any])
-    if (lessThanLabel != null) __obj.updateDynamic("lessThanLabel")(lessThanLabel.asInstanceOf[js.Any])
-    if (lessThanNullText != null) __obj.updateDynamic("lessThanNullText")(lessThanNullText.asInstanceOf[js.Any])
-    if (lessThanOrEqualToLabel != null) __obj.updateDynamic("lessThanOrEqualToLabel")(lessThanOrEqualToLabel.asInstanceOf[js.Any])
-    if (lessThanOrEqualToNullText != null) __obj.updateDynamic("lessThanOrEqualToNullText")(lessThanOrEqualToNullText.asInstanceOf[js.Any])
-    if (nextMonthLabel != null) __obj.updateDynamic("nextMonthLabel")(nextMonthLabel.asInstanceOf[js.Any])
-    if (nextYearLabel != null) __obj.updateDynamic("nextYearLabel")(nextYearLabel.asInstanceOf[js.Any])
-    if (noFilterLabel != null) __obj.updateDynamic("noFilterLabel")(noFilterLabel.asInstanceOf[js.Any])
-    if (notAtLabel != null) __obj.updateDynamic("notAtLabel")(notAtLabel.asInstanceOf[js.Any])
-    if (notEmptyNullText != null) __obj.updateDynamic("notEmptyNullText")(notEmptyNullText.asInstanceOf[js.Any])
-    if (notNullNullText != null) __obj.updateDynamic("notNullNullText")(notNullNullText.asInstanceOf[js.Any])
-    if (notOnLabel != null) __obj.updateDynamic("notOnLabel")(notOnLabel.asInstanceOf[js.Any])
-    if (notOnNullText != null) __obj.updateDynamic("notOnNullText")(notOnNullText.asInstanceOf[js.Any])
-    if (nullNullText != null) __obj.updateDynamic("nullNullText")(nullNullText.asInstanceOf[js.Any])
-    if (onLabel != null) __obj.updateDynamic("onLabel")(onLabel.asInstanceOf[js.Any])
-    if (onNullText != null) __obj.updateDynamic("onNullText")(onNullText.asInstanceOf[js.Any])
-    if (startsWithLabel != null) __obj.updateDynamic("startsWithLabel")(startsWithLabel.asInstanceOf[js.Any])
-    if (startsWithNullText != null) __obj.updateDynamic("startsWithNullText")(startsWithNullText.asInstanceOf[js.Any])
-    if (thisMonthLabel != null) __obj.updateDynamic("thisMonthLabel")(thisMonthLabel.asInstanceOf[js.Any])
-    if (thisYearLabel != null) __obj.updateDynamic("thisYearLabel")(thisYearLabel.asInstanceOf[js.Any])
-    if (todayLabel != null) __obj.updateDynamic("todayLabel")(todayLabel.asInstanceOf[js.Any])
-    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate.asInstanceOf[js.Any])
-    if (trueLabel != null) __obj.updateDynamic("trueLabel")(trueLabel.asInstanceOf[js.Any])
-    if (yesterdayLabel != null) __obj.updateDynamic("yesterdayLabel")(yesterdayLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridFilteringLocale]
   }
+  @scala.inline
+  implicit class IgGridFilteringLocaleOps[Self <: IgGridFilteringLocale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvancedButtonLabel(value: String): Self = this.set("advancedButtonLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvancedButtonLabel: Self = this.set("advancedButtonLabel", js.undefined)
+    @scala.inline
+    def setAfterLabel(value: String): Self = this.set("afterLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterLabel: Self = this.set("afterLabel", js.undefined)
+    @scala.inline
+    def setAfterNullText(value: String): Self = this.set("afterNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterNullText: Self = this.set("afterNullText", js.undefined)
+    @scala.inline
+    def setAtAfterLabel(value: String): Self = this.set("atAfterLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtAfterLabel: Self = this.set("atAfterLabel", js.undefined)
+    @scala.inline
+    def setAtBeforeLabel(value: String): Self = this.set("atBeforeLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtBeforeLabel: Self = this.set("atBeforeLabel", js.undefined)
+    @scala.inline
+    def setAtLabel(value: String): Self = this.set("atLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtLabel: Self = this.set("atLabel", js.undefined)
+    @scala.inline
+    def setBeforeLabel(value: String): Self = this.set("beforeLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeLabel: Self = this.set("beforeLabel", js.undefined)
+    @scala.inline
+    def setBeforeNullText(value: String): Self = this.set("beforeNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeNullText: Self = this.set("beforeNullText", js.undefined)
+    @scala.inline
+    def setClearLabel(value: String): Self = this.set("clearLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearLabel: Self = this.set("clearLabel", js.undefined)
+    @scala.inline
+    def setContainsLabel(value: String): Self = this.set("containsLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsLabel: Self = this.set("containsLabel", js.undefined)
+    @scala.inline
+    def setContainsNullText(value: String): Self = this.set("containsNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsNullText: Self = this.set("containsNullText", js.undefined)
+    @scala.inline
+    def setDoesNotContainLabel(value: String): Self = this.set("doesNotContainLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoesNotContainLabel: Self = this.set("doesNotContainLabel", js.undefined)
+    @scala.inline
+    def setDoesNotContainNullText(value: String): Self = this.set("doesNotContainNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoesNotContainNullText: Self = this.set("doesNotContainNullText", js.undefined)
+    @scala.inline
+    def setDoesNotEqualLabel(value: String): Self = this.set("doesNotEqualLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoesNotEqualLabel: Self = this.set("doesNotEqualLabel", js.undefined)
+    @scala.inline
+    def setDoesNotEqualNullText(value: String): Self = this.set("doesNotEqualNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoesNotEqualNullText: Self = this.set("doesNotEqualNullText", js.undefined)
+    @scala.inline
+    def setEmptyNullText(value: String): Self = this.set("emptyNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptyNullText: Self = this.set("emptyNullText", js.undefined)
+    @scala.inline
+    def setEndsWithLabel(value: String): Self = this.set("endsWithLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndsWithLabel: Self = this.set("endsWithLabel", js.undefined)
+    @scala.inline
+    def setEndsWithNullText(value: String): Self = this.set("endsWithNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndsWithNullText: Self = this.set("endsWithNullText", js.undefined)
+    @scala.inline
+    def setEqualsLabel(value: String): Self = this.set("equalsLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEqualsLabel: Self = this.set("equalsLabel", js.undefined)
+    @scala.inline
+    def setEqualsNullText(value: String): Self = this.set("equalsNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEqualsNullText: Self = this.set("equalsNullText", js.undefined)
+    @scala.inline
+    def setFalseLabel(value: String): Self = this.set("falseLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFalseLabel: Self = this.set("falseLabel", js.undefined)
+    @scala.inline
+    def setFeatureChooserText(value: String): Self = this.set("featureChooserText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureChooserText: Self = this.set("featureChooserText", js.undefined)
+    @scala.inline
+    def setFeatureChooserTextAdvancedFilter(value: String): Self = this.set("featureChooserTextAdvancedFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureChooserTextAdvancedFilter: Self = this.set("featureChooserTextAdvancedFilter", js.undefined)
+    @scala.inline
+    def setFeatureChooserTextHide(value: String): Self = this.set("featureChooserTextHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureChooserTextHide: Self = this.set("featureChooserTextHide", js.undefined)
+    @scala.inline
+    def setFilterDialogAddLabel(value: String): Self = this.set("filterDialogAddLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogAddLabel: Self = this.set("filterDialogAddLabel", js.undefined)
+    @scala.inline
+    def setFilterDialogAllLabel(value: String): Self = this.set("filterDialogAllLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogAllLabel: Self = this.set("filterDialogAllLabel", js.undefined)
+    @scala.inline
+    def setFilterDialogAnyLabel(value: String): Self = this.set("filterDialogAnyLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogAnyLabel: Self = this.set("filterDialogAnyLabel", js.undefined)
+    @scala.inline
+    def setFilterDialogCancelLabel(value: String): Self = this.set("filterDialogCancelLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogCancelLabel: Self = this.set("filterDialogCancelLabel", js.undefined)
+    @scala.inline
+    def setFilterDialogCaptionLabel(value: String): Self = this.set("filterDialogCaptionLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogCaptionLabel: Self = this.set("filterDialogCaptionLabel", js.undefined)
+    @scala.inline
+    def setFilterDialogClearAllLabel(value: String): Self = this.set("filterDialogClearAllLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogClearAllLabel: Self = this.set("filterDialogClearAllLabel", js.undefined)
+    @scala.inline
+    def setFilterDialogCloseLabel(value: String): Self = this.set("filterDialogCloseLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogCloseLabel: Self = this.set("filterDialogCloseLabel", js.undefined)
+    @scala.inline
+    def setFilterDialogConditionDropDownLabel(value: String): Self = this.set("filterDialogConditionDropDownLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogConditionDropDownLabel: Self = this.set("filterDialogConditionDropDownLabel", js.undefined)
+    @scala.inline
+    def setFilterDialogConditionLabel1(value: String): Self = this.set("filterDialogConditionLabel1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogConditionLabel1: Self = this.set("filterDialogConditionLabel1", js.undefined)
+    @scala.inline
+    def setFilterDialogConditionLabel2(value: String): Self = this.set("filterDialogConditionLabel2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogConditionLabel2: Self = this.set("filterDialogConditionLabel2", js.undefined)
+    @scala.inline
+    def setFilterDialogErrorLabel(value: String): Self = this.set("filterDialogErrorLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogErrorLabel: Self = this.set("filterDialogErrorLabel", js.undefined)
+    @scala.inline
+    def setFilterDialogOkLabel(value: String): Self = this.set("filterDialogOkLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterDialogOkLabel: Self = this.set("filterDialogOkLabel", js.undefined)
+    @scala.inline
+    def setFilterSummaryTemplate(value: String): Self = this.set("filterSummaryTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterSummaryTemplate: Self = this.set("filterSummaryTemplate", js.undefined)
+    @scala.inline
+    def setFilterSummaryTitleLabel(value: String): Self = this.set("filterSummaryTitleLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterSummaryTitleLabel: Self = this.set("filterSummaryTitleLabel", js.undefined)
+    @scala.inline
+    def setGreaterThanLabel(value: String): Self = this.set("greaterThanLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreaterThanLabel: Self = this.set("greaterThanLabel", js.undefined)
+    @scala.inline
+    def setGreaterThanNullText(value: String): Self = this.set("greaterThanNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreaterThanNullText: Self = this.set("greaterThanNullText", js.undefined)
+    @scala.inline
+    def setGreaterThanOrEqualToLabel(value: String): Self = this.set("greaterThanOrEqualToLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreaterThanOrEqualToLabel: Self = this.set("greaterThanOrEqualToLabel", js.undefined)
+    @scala.inline
+    def setGreaterThanOrEqualToNullText(value: String): Self = this.set("greaterThanOrEqualToNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreaterThanOrEqualToNullText: Self = this.set("greaterThanOrEqualToNullText", js.undefined)
+    @scala.inline
+    def setLastMonthLabel(value: String): Self = this.set("lastMonthLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastMonthLabel: Self = this.set("lastMonthLabel", js.undefined)
+    @scala.inline
+    def setLastYearLabel(value: String): Self = this.set("lastYearLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastYearLabel: Self = this.set("lastYearLabel", js.undefined)
+    @scala.inline
+    def setLessThanLabel(value: String): Self = this.set("lessThanLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLessThanLabel: Self = this.set("lessThanLabel", js.undefined)
+    @scala.inline
+    def setLessThanNullText(value: String): Self = this.set("lessThanNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLessThanNullText: Self = this.set("lessThanNullText", js.undefined)
+    @scala.inline
+    def setLessThanOrEqualToLabel(value: String): Self = this.set("lessThanOrEqualToLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLessThanOrEqualToLabel: Self = this.set("lessThanOrEqualToLabel", js.undefined)
+    @scala.inline
+    def setLessThanOrEqualToNullText(value: String): Self = this.set("lessThanOrEqualToNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLessThanOrEqualToNullText: Self = this.set("lessThanOrEqualToNullText", js.undefined)
+    @scala.inline
+    def setNextMonthLabel(value: String): Self = this.set("nextMonthLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMonthLabel: Self = this.set("nextMonthLabel", js.undefined)
+    @scala.inline
+    def setNextYearLabel(value: String): Self = this.set("nextYearLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextYearLabel: Self = this.set("nextYearLabel", js.undefined)
+    @scala.inline
+    def setNoFilterLabel(value: String): Self = this.set("noFilterLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoFilterLabel: Self = this.set("noFilterLabel", js.undefined)
+    @scala.inline
+    def setNotAtLabel(value: String): Self = this.set("notAtLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotAtLabel: Self = this.set("notAtLabel", js.undefined)
+    @scala.inline
+    def setNotEmptyNullText(value: String): Self = this.set("notEmptyNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotEmptyNullText: Self = this.set("notEmptyNullText", js.undefined)
+    @scala.inline
+    def setNotNullNullText(value: String): Self = this.set("notNullNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotNullNullText: Self = this.set("notNullNullText", js.undefined)
+    @scala.inline
+    def setNotOnLabel(value: String): Self = this.set("notOnLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotOnLabel: Self = this.set("notOnLabel", js.undefined)
+    @scala.inline
+    def setNotOnNullText(value: String): Self = this.set("notOnNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotOnNullText: Self = this.set("notOnNullText", js.undefined)
+    @scala.inline
+    def setNullNullText(value: String): Self = this.set("nullNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNullNullText: Self = this.set("nullNullText", js.undefined)
+    @scala.inline
+    def setOnLabel(value: String): Self = this.set("onLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLabel: Self = this.set("onLabel", js.undefined)
+    @scala.inline
+    def setOnNullText(value: String): Self = this.set("onNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnNullText: Self = this.set("onNullText", js.undefined)
+    @scala.inline
+    def setStartsWithLabel(value: String): Self = this.set("startsWithLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartsWithLabel: Self = this.set("startsWithLabel", js.undefined)
+    @scala.inline
+    def setStartsWithNullText(value: String): Self = this.set("startsWithNullText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartsWithNullText: Self = this.set("startsWithNullText", js.undefined)
+    @scala.inline
+    def setThisMonthLabel(value: String): Self = this.set("thisMonthLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThisMonthLabel: Self = this.set("thisMonthLabel", js.undefined)
+    @scala.inline
+    def setThisYearLabel(value: String): Self = this.set("thisYearLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThisYearLabel: Self = this.set("thisYearLabel", js.undefined)
+    @scala.inline
+    def setTodayLabel(value: String): Self = this.set("todayLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTodayLabel: Self = this.set("todayLabel", js.undefined)
+    @scala.inline
+    def setTooltipTemplate(value: String): Self = this.set("tooltipTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipTemplate: Self = this.set("tooltipTemplate", js.undefined)
+    @scala.inline
+    def setTrueLabel(value: String): Self = this.set("trueLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrueLabel: Self = this.set("trueLabel", js.undefined)
+    @scala.inline
+    def setYesterdayLabel(value: String): Self = this.set("yesterdayLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYesterdayLabel: Self = this.set("yesterdayLabel", js.undefined)
+  }
+  
 }
 

@@ -10,8 +10,8 @@ Hasher is a set of JavaScript functions to control browser history for rich-medi
 | Full name          | hasher |
 | Keywords           | history, hash, hasher, navigation, browser |
 | # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 227912 |
+| # dependents       | 27 |
+| # downloads        | 234075 |
 | # stars            | 2 |
 
 ## Links

@@ -1,7 +1,7 @@
 package typings.wordpressCustomTemplatedPathWebpackPlugin.mod
 
+import typings.std.Plugin
 import typings.std.Record
-import typings.webpack.mod.Plugin
 import typings.wordpressCustomTemplatedPathWebpackPlugin.anon.Basename
 import scala.scalajs.js
 import scala.scalajs.js.`|`

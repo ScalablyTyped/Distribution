@@ -18,10 +18,28 @@ trait SchemaMetaline extends js.Object {
 
 object SchemaMetaline {
   @scala.inline
-  def apply(properties: js.Array[SchemaDisplayedProperty] = null): SchemaMetaline = {
+  def apply(): SchemaMetaline = {
     val __obj = js.Dynamic.literal()
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMetaline]
   }
+  @scala.inline
+  implicit class SchemaMetalineOps[Self <: SchemaMetaline] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPropertiesVarargs(value: SchemaDisplayedProperty*): Self = this.set("properties", js.Array(value :_*))
+    @scala.inline
+    def setProperties(value: js.Array[SchemaDisplayedProperty]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+  }
+  
 }
 

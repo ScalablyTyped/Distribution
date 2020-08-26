@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/gridlayout", "GridLayout.setCellConfig")
+@JSImport("@lumino/widgets/types/gridlayout", "GridLayout.setCellConfig")
 @js.native
 object setCellConfig extends js.Object {
   /**

@@ -26,16 +26,9 @@ object listPullRequestsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: ListPullRequestsInput) = this()
-    /* CompleteClass */
-    override val input: ListPullRequestsInput = js.native
     val middlewareStack: MiddlewareStack[ListPullRequestsInput, ListPullRequestsOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[ListPullRequestsInput, ListPullRequestsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[ListPullRequestsInput, ListPullRequestsOutput] = js.native
   }

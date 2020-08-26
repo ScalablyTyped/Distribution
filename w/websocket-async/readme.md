@@ -12,7 +12,7 @@ An async/await WebSocket client for browsers
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1220 |
+| # downloads        | 1033 |
 | # stars            | 0 |
 
 ## Links

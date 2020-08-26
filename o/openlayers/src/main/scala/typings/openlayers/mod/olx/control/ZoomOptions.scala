@@ -6,39 +6,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZoomOptions extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var delta: js.UndefOr[Double] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var target: js.UndefOr[Element] = js.undefined
-  var zoomInLabel: js.UndefOr[String | Node] = js.undefined
-  var zoomInTipLabel: js.UndefOr[String] = js.undefined
-  var zoomOutLabel: js.UndefOr[String | Node] = js.undefined
-  var zoomOutTipLabel: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var delta: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var target: js.UndefOr[Element] = js.native
+  var zoomInLabel: js.UndefOr[String | Node] = js.native
+  var zoomInTipLabel: js.UndefOr[String] = js.native
+  var zoomOutLabel: js.UndefOr[String | Node] = js.native
+  var zoomOutTipLabel: js.UndefOr[String] = js.native
 }
 
 object ZoomOptions {
   @scala.inline
-  def apply(
-    className: String = null,
-    delta: js.UndefOr[Double] = js.undefined,
-    duration: js.UndefOr[Double] = js.undefined,
-    target: Element = null,
-    zoomInLabel: String | Node = null,
-    zoomInTipLabel: String = null,
-    zoomOutLabel: String | Node = null,
-    zoomOutTipLabel: String = null
-  ): ZoomOptions = {
+  def apply(): ZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (zoomInLabel != null) __obj.updateDynamic("zoomInLabel")(zoomInLabel.asInstanceOf[js.Any])
-    if (zoomInTipLabel != null) __obj.updateDynamic("zoomInTipLabel")(zoomInTipLabel.asInstanceOf[js.Any])
-    if (zoomOutLabel != null) __obj.updateDynamic("zoomOutLabel")(zoomOutLabel.asInstanceOf[js.Any])
-    if (zoomOutTipLabel != null) __obj.updateDynamic("zoomOutTipLabel")(zoomOutTipLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomOptions]
   }
+  @scala.inline
+  implicit class ZoomOptionsOps[Self <: ZoomOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelta: Self = this.set("delta", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setTarget(value: Element): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setZoomInLabel(value: String | Node): Self = this.set("zoomInLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomInLabel: Self = this.set("zoomInLabel", js.undefined)
+    @scala.inline
+    def setZoomInTipLabel(value: String): Self = this.set("zoomInTipLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomInTipLabel: Self = this.set("zoomInTipLabel", js.undefined)
+    @scala.inline
+    def setZoomOutLabel(value: String | Node): Self = this.set("zoomOutLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomOutLabel: Self = this.set("zoomOutLabel", js.undefined)
+    @scala.inline
+    def setZoomOutTipLabel(value: String): Self = this.set("zoomOutTipLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomOutTipLabel: Self = this.set("zoomOutTipLabel", js.undefined)
+  }
+  
 }
 

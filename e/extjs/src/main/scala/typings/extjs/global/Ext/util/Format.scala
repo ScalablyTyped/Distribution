@@ -42,8 +42,24 @@ object Format extends js.Object {
     * @returns String The formatted currency string
     */
   def currency(): String = js.native
+  def currency(
+    value: js.UndefOr[scala.Nothing],
+    sign: js.UndefOr[scala.Nothing],
+    decimals: js.UndefOr[scala.Nothing],
+    end: Boolean
+  ): String = js.native
+  def currency(value: js.UndefOr[scala.Nothing], sign: js.UndefOr[scala.Nothing], decimals: Double): String = js.native
+  def currency(value: js.UndefOr[scala.Nothing], sign: js.UndefOr[scala.Nothing], decimals: Double, end: Boolean): String = js.native
+  def currency(value: js.UndefOr[scala.Nothing], sign: String): String = js.native
+  def currency(value: js.UndefOr[scala.Nothing], sign: String, decimals: js.UndefOr[scala.Nothing], end: Boolean): String = js.native
+  def currency(value: js.UndefOr[scala.Nothing], sign: String, decimals: Double): String = js.native
+  def currency(value: js.UndefOr[scala.Nothing], sign: String, decimals: Double, end: Boolean): String = js.native
   def currency(value: js.Any): String = js.native
+  def currency(value: js.Any, sign: js.UndefOr[scala.Nothing], decimals: js.UndefOr[scala.Nothing], end: Boolean): String = js.native
+  def currency(value: js.Any, sign: js.UndefOr[scala.Nothing], decimals: Double): String = js.native
+  def currency(value: js.Any, sign: js.UndefOr[scala.Nothing], decimals: Double, end: Boolean): String = js.native
   def currency(value: js.Any, sign: String): String = js.native
+  def currency(value: js.Any, sign: String, decimals: js.UndefOr[scala.Nothing], end: Boolean): String = js.native
   def currency(value: js.Any, sign: String, decimals: Double): String = js.native
   def currency(value: js.Any, sign: String, decimals: Double, end: Boolean): String = js.native
   /** [Method] Formats the passed date using the specified format pattern
@@ -52,6 +68,7 @@ object Format extends js.Object {
     * @returns String The formatted date string.
     */
   def date(): String = js.native
+  def date(value: js.UndefOr[scala.Nothing], format: String): String = js.native
   def date(value: js.Any): String = js.native
   def date(value: js.Any, format: String): String = js.native
   /** [Method] Returns a date rendering function that can be reused to apply a date format multiple times efficiently
@@ -66,6 +83,7 @@ object Format extends js.Object {
     * @returns String
     */
   def defaultValue(): String = js.native
+  def defaultValue(value: js.UndefOr[scala.Nothing], defaultValue: String): String = js.native
   def defaultValue(value: js.Any): String = js.native
   def defaultValue(value: js.Any, defaultValue: String): String = js.native
   /** [Method] Alias for Ext String ellipsis
@@ -75,7 +93,11 @@ object Format extends js.Object {
     * @returns String The converted text.
     */
   def ellipsis(): String = js.native
+  def ellipsis(value: js.UndefOr[scala.Nothing], length: js.UndefOr[scala.Nothing], word: Boolean): String = js.native
+  def ellipsis(value: js.UndefOr[scala.Nothing], length: Double): String = js.native
+  def ellipsis(value: js.UndefOr[scala.Nothing], length: Double, word: Boolean): String = js.native
   def ellipsis(value: String): String = js.native
+  def ellipsis(value: String, length: js.UndefOr[scala.Nothing], word: Boolean): String = js.native
   def ellipsis(value: String, length: Double): String = js.native
   def ellipsis(value: String, length: Double, word: Boolean): String = js.native
   /** [Method] Escapes the passed string for use in a regular expression
@@ -115,7 +137,11 @@ object Format extends js.Object {
     * @returns String The padded string.
     */
   def leftPad(): String = js.native
+  def leftPad(string: js.UndefOr[scala.Nothing], size: js.UndefOr[scala.Nothing], character: String): String = js.native
+  def leftPad(string: js.UndefOr[scala.Nothing], size: Double): String = js.native
+  def leftPad(string: js.UndefOr[scala.Nothing], size: Double, character: String): String = js.native
   def leftPad(string: String): String = js.native
+  def leftPad(string: String, size: js.UndefOr[scala.Nothing], character: String): String = js.native
   def leftPad(string: String, size: Double): String = js.native
   def leftPad(string: String, size: Double, character: String): String = js.native
   /** [Method] Converts a string to all lower case letters
@@ -140,6 +166,7 @@ object Format extends js.Object {
     * @returns String The formatted number.
     */
   def number(): String = js.native
+  def number(v: js.UndefOr[scala.Nothing], format: String): String = js.native
   def number(v: Double): String = js.native
   def number(v: Double, format: String): String = js.native
   /** [Method] Returns a number rendering function that can be reused to apply a number format multiple times efficiently
@@ -160,7 +187,11 @@ object Format extends js.Object {
     * @param plural String The plural form of the word (defaults to the singular with an "s")
     */
   def plural(): Unit = js.native
+  def plural(value: js.UndefOr[scala.Nothing], singular: js.UndefOr[scala.Nothing], plural: String): Unit = js.native
+  def plural(value: js.UndefOr[scala.Nothing], singular: String): Unit = js.native
+  def plural(value: js.UndefOr[scala.Nothing], singular: String, plural: String): Unit = js.native
   def plural(value: Double): Unit = js.native
+  def plural(value: Double, singular: js.UndefOr[scala.Nothing], plural: String): Unit = js.native
   def plural(value: Double, singular: String): Unit = js.native
   def plural(value: Double, singular: String, plural: String): Unit = js.native
   /** [Method] Rounds the passed number to the required decimal precision
@@ -169,6 +200,7 @@ object Format extends js.Object {
     * @returns Number The rounded value.
     */
   def round(): Double = js.native
+  def round(value: js.UndefOr[scala.Nothing], precision: Double): Double = js.native
   def round(value: js.Any): Double = js.native
   def round(value: js.Any, precision: Double): Double = js.native
   /** [Method] Strips all script tags
@@ -190,7 +222,11 @@ object Format extends js.Object {
     * @returns String The substring
     */
   def substr(): String = js.native
+  def substr(value: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], length: Double): String = js.native
+  def substr(value: js.UndefOr[scala.Nothing], start: Double): String = js.native
+  def substr(value: js.UndefOr[scala.Nothing], start: Double, length: Double): String = js.native
   def substr(value: String): String = js.native
+  def substr(value: String, start: js.UndefOr[scala.Nothing], length: Double): String = js.native
   def substr(value: String, start: Double): String = js.native
   def substr(value: String, start: Double, length: Double): String = js.native
   /** [Method] Alias for Ext String trim

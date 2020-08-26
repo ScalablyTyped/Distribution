@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object sendSMS extends js.Object {
   def apply(phone: String, link_data: DeepLinkData): Unit = js.native
+  def apply(
+    phone: String,
+    link_data: DeepLinkData,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ BranchError, Unit]
+  ): Unit = js.native
   def apply(phone: String, link_data: DeepLinkData, options: Makenewlink): Unit = js.native
   def apply(
     phone: String,

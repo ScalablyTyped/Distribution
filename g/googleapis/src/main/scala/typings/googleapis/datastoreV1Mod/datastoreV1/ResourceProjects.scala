@@ -31,6 +31,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def allocateIds(): GaxiosPromise[SchemaAllocateIdsResponse] = js.native
   def allocateIds(callback: BodyResponseCallback[SchemaAllocateIdsResponse]): Unit = js.native
+  def allocateIds(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAllocateIdsResponse] = js.native
   def allocateIds(params: ParamsResourceProjectsAllocateids): GaxiosPromise[SchemaAllocateIdsResponse] = js.native
   def allocateIds(
     params: ParamsResourceProjectsAllocateids,
@@ -62,6 +63,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def beginTransaction(): GaxiosPromise[SchemaBeginTransactionResponse] = js.native
   def beginTransaction(callback: BodyResponseCallback[SchemaBeginTransactionResponse]): Unit = js.native
+  def beginTransaction(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBeginTransactionResponse] = js.native
   def beginTransaction(params: ParamsResourceProjectsBegintransaction): GaxiosPromise[SchemaBeginTransactionResponse] = js.native
   def beginTransaction(
     params: ParamsResourceProjectsBegintransaction,
@@ -94,6 +96,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def commit(): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(callback: BodyResponseCallback[SchemaCommitResponse]): Unit = js.native
+  def commit(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(params: ParamsResourceProjectsCommit): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(params: ParamsResourceProjectsCommit, callback: BodyResponseCallback[SchemaCommitResponse]): Unit = js.native
   def commit(
@@ -129,6 +132,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def export(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def export(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def export(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def export(params: ParamsResourceProjectsExport): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def export(
     params: ParamsResourceProjectsExport,
@@ -164,6 +168,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def `import`(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def `import`(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(params: ParamsResourceProjectsImport): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(
     params: ParamsResourceProjectsImport,
@@ -195,6 +200,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def lookup(): GaxiosPromise[SchemaLookupResponse] = js.native
   def lookup(callback: BodyResponseCallback[SchemaLookupResponse]): Unit = js.native
+  def lookup(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLookupResponse] = js.native
   def lookup(params: ParamsResourceProjectsLookup): GaxiosPromise[SchemaLookupResponse] = js.native
   def lookup(params: ParamsResourceProjectsLookup, callback: BodyResponseCallback[SchemaLookupResponse]): Unit = js.native
   def lookup(
@@ -224,6 +230,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def reserveIds(): GaxiosPromise[SchemaReserveIdsResponse] = js.native
   def reserveIds(callback: BodyResponseCallback[SchemaReserveIdsResponse]): Unit = js.native
+  def reserveIds(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReserveIdsResponse] = js.native
   def reserveIds(params: ParamsResourceProjectsReserveids): GaxiosPromise[SchemaReserveIdsResponse] = js.native
   def reserveIds(params: ParamsResourceProjectsReserveids, callback: BodyResponseCallback[SchemaReserveIdsResponse]): Unit = js.native
   def reserveIds(
@@ -252,6 +259,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def rollback(): GaxiosPromise[SchemaRollbackResponse] = js.native
   def rollback(callback: BodyResponseCallback[SchemaRollbackResponse]): Unit = js.native
+  def rollback(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRollbackResponse] = js.native
   def rollback(params: ParamsResourceProjectsRollback): GaxiosPromise[SchemaRollbackResponse] = js.native
   def rollback(params: ParamsResourceProjectsRollback, callback: BodyResponseCallback[SchemaRollbackResponse]): Unit = js.native
   def rollback(
@@ -280,6 +288,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def runQuery(): GaxiosPromise[SchemaRunQueryResponse] = js.native
   def runQuery(callback: BodyResponseCallback[SchemaRunQueryResponse]): Unit = js.native
+  def runQuery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRunQueryResponse] = js.native
   def runQuery(params: ParamsResourceProjectsRunquery): GaxiosPromise[SchemaRunQueryResponse] = js.native
   def runQuery(params: ParamsResourceProjectsRunquery, callback: BodyResponseCallback[SchemaRunQueryResponse]): Unit = js.native
   def runQuery(

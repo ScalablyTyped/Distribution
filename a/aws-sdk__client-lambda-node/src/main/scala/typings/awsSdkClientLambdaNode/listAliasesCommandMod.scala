@@ -26,16 +26,9 @@ object listAliasesCommandMod extends js.Object {
           Readable
         ] {
     def this(input: ListAliasesInput) = this()
-    /* CompleteClass */
-    override val input: ListAliasesInput = js.native
     val middlewareStack: MiddlewareStack[ListAliasesInput, ListAliasesOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: LambdaResolvedConfiguration
-    ): Handler[ListAliasesInput, ListAliasesOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: LambdaResolvedConfiguration
     ): Handler[ListAliasesInput, ListAliasesOutput] = js.native
   }

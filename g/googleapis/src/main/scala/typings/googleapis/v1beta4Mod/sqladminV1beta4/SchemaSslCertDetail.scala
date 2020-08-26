@@ -22,11 +22,30 @@ trait SchemaSslCertDetail extends js.Object {
 
 object SchemaSslCertDetail {
   @scala.inline
-  def apply(certInfo: SchemaSslCert = null, certPrivateKey: String = null): SchemaSslCertDetail = {
+  def apply(): SchemaSslCertDetail = {
     val __obj = js.Dynamic.literal()
-    if (certInfo != null) __obj.updateDynamic("certInfo")(certInfo.asInstanceOf[js.Any])
-    if (certPrivateKey != null) __obj.updateDynamic("certPrivateKey")(certPrivateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSslCertDetail]
   }
+  @scala.inline
+  implicit class SchemaSslCertDetailOps[Self <: SchemaSslCertDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertInfo(value: SchemaSslCert): Self = this.set("certInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertInfo: Self = this.set("certInfo", js.undefined)
+    @scala.inline
+    def setCertPrivateKey(value: String): Self = this.set("certPrivateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertPrivateKey: Self = this.set("certPrivateKey", js.undefined)
+  }
+  
 }
 

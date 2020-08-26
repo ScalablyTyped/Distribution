@@ -22,16 +22,34 @@ trait GetTemplateInput extends js.Object {
 
 object GetTemplateInput {
   @scala.inline
-  def apply(
-    ChangeSetName: ChangeSetNameOrId = null,
-    StackName: StackName = null,
-    TemplateStage: TemplateStage = null
-  ): GetTemplateInput = {
+  def apply(): GetTemplateInput = {
     val __obj = js.Dynamic.literal()
-    if (ChangeSetName != null) __obj.updateDynamic("ChangeSetName")(ChangeSetName.asInstanceOf[js.Any])
-    if (StackName != null) __obj.updateDynamic("StackName")(StackName.asInstanceOf[js.Any])
-    if (TemplateStage != null) __obj.updateDynamic("TemplateStage")(TemplateStage.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTemplateInput]
   }
+  @scala.inline
+  implicit class GetTemplateInputOps[Self <: GetTemplateInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeSetName(value: ChangeSetNameOrId): Self = this.set("ChangeSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetName: Self = this.set("ChangeSetName", js.undefined)
+    @scala.inline
+    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackName: Self = this.set("StackName", js.undefined)
+    @scala.inline
+    def setTemplateStage(value: TemplateStage): Self = this.set("TemplateStage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateStage: Self = this.set("TemplateStage", js.undefined)
+  }
+  
 }
 

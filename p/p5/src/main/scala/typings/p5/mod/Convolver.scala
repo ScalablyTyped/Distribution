@@ -46,6 +46,11 @@ trait Convolver extends Effect {
     *   in as the argument to the callback function.
     */
   def createConvolver(path: String): Convolver = js.native
+  def createConvolver(
+    path: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* repeated */ js.Any, _]
+  ): Convolver = js.native
   def createConvolver(path: String, callback: js.Function1[/* repeated */ js.Any, _]): Convolver = js.native
   def createConvolver(
     path: String,

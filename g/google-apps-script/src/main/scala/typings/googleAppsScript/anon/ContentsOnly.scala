@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContentsOnly extends js.Object {
-  var contentsOnly: js.UndefOr[Boolean] = js.undefined
-  var formatOnly: js.UndefOr[Boolean] = js.undefined
+  var contentsOnly: js.UndefOr[Boolean] = js.native
+  var formatOnly: js.UndefOr[Boolean] = js.native
 }
 
 object ContentsOnly {
   @scala.inline
-  def apply(contentsOnly: js.UndefOr[Boolean] = js.undefined, formatOnly: js.UndefOr[Boolean] = js.undefined): ContentsOnly = {
+  def apply(): ContentsOnly = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contentsOnly)) __obj.updateDynamic("contentsOnly")(contentsOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(formatOnly)) __obj.updateDynamic("formatOnly")(formatOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentsOnly]
   }
+  @scala.inline
+  implicit class ContentsOnlyOps[Self <: ContentsOnly] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentsOnly(value: Boolean): Self = this.set("contentsOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentsOnly: Self = this.set("contentsOnly", js.undefined)
+    @scala.inline
+    def setFormatOnly(value: Boolean): Self = this.set("formatOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatOnly: Self = this.set("formatOnly", js.undefined)
+  }
+  
 }
 

@@ -9,7 +9,11 @@ trait Tabs extends js.Object {
   val Count: Double = js.native
   def apply(varg: js.Any): js.Any = js.native
   def Add(): Tab = js.native
+  def Add(bstrName: js.UndefOr[scala.Nothing], bstrCaption: js.UndefOr[scala.Nothing], lIndex: js.Any): Tab = js.native
+  def Add(bstrName: js.UndefOr[scala.Nothing], bstrCaption: js.Any): Tab = js.native
+  def Add(bstrName: js.UndefOr[scala.Nothing], bstrCaption: js.Any, lIndex: js.Any): Tab = js.native
   def Add(bstrName: js.Any): Tab = js.native
+  def Add(bstrName: js.Any, bstrCaption: js.UndefOr[scala.Nothing], lIndex: js.Any): Tab = js.native
   def Add(bstrName: js.Any, bstrCaption: js.Any): Tab = js.native
   def Add(bstrName: js.Any, bstrCaption: js.Any, lIndex: js.Any): Tab = js.native
   def Clear(): Unit = js.native

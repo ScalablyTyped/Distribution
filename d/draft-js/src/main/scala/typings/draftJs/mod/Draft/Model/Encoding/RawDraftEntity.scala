@@ -9,10 +9,11 @@ import scala.scalajs.js.annotation._
 /**
   * A plain object representation of an EntityInstance.
   */
+@js.native
 trait RawDraftEntity[T] extends js.Object {
-  var data: T
-  var mutability: DraftEntityMutability
-  var `type`: DraftEntityType
+  var data: T = js.native
+  var mutability: DraftEntityMutability = js.native
+  var `type`: DraftEntityType = js.native
 }
 
 object RawDraftEntity {
@@ -22,5 +23,24 @@ object RawDraftEntity {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawDraftEntity[T]]
   }
+  @scala.inline
+  implicit class RawDraftEntityOps[Self <: RawDraftEntity[_], T] (val x: Self with RawDraftEntity[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMutability(value: DraftEntityMutability): Self = this.set("mutability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: DraftEntityType): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

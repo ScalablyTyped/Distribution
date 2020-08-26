@@ -26,18 +26,38 @@ trait DataFormatConversionConfiguration extends js.Object {
 
 object DataFormatConversionConfiguration {
   @scala.inline
-  def apply(
-    Enabled: js.UndefOr[BooleanObject] = js.undefined,
-    InputFormatConfiguration: InputFormatConfiguration = null,
-    OutputFormatConfiguration: OutputFormatConfiguration = null,
-    SchemaConfiguration: SchemaConfiguration = null
-  ): DataFormatConversionConfiguration = {
+  def apply(): DataFormatConversionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (InputFormatConfiguration != null) __obj.updateDynamic("InputFormatConfiguration")(InputFormatConfiguration.asInstanceOf[js.Any])
-    if (OutputFormatConfiguration != null) __obj.updateDynamic("OutputFormatConfiguration")(OutputFormatConfiguration.asInstanceOf[js.Any])
-    if (SchemaConfiguration != null) __obj.updateDynamic("SchemaConfiguration")(SchemaConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataFormatConversionConfiguration]
   }
+  @scala.inline
+  implicit class DataFormatConversionConfigurationOps[Self <: DataFormatConversionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: BooleanObject): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setInputFormatConfiguration(value: InputFormatConfiguration): Self = this.set("InputFormatConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputFormatConfiguration: Self = this.set("InputFormatConfiguration", js.undefined)
+    @scala.inline
+    def setOutputFormatConfiguration(value: OutputFormatConfiguration): Self = this.set("OutputFormatConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFormatConfiguration: Self = this.set("OutputFormatConfiguration", js.undefined)
+    @scala.inline
+    def setSchemaConfiguration(value: SchemaConfiguration): Self = this.set("SchemaConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaConfiguration: Self = this.set("SchemaConfiguration", js.undefined)
+  }
+  
 }
 

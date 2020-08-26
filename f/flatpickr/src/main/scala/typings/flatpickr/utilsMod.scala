@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("flatpickr/dist/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
-  /* Inlined std.MouseEvent & {  delta  :number,   type  :'increment'} */
+  /* Inlined std.MouseEvent & {  delta :number,   type :'increment'} */
   @js.native
   trait IncrementEvent extends js.Object {
     val AT_TARGET: Double = js.native
@@ -93,6 +93,7 @@ object utilsMod extends js.Object {
     def composedPath(): js.Array[EventTarget] = js.native
     def getModifierState(keyArg: String): Boolean = js.native
     def initEvent(`type`: String): Unit = js.native
+    def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
     def initMouseEvent(

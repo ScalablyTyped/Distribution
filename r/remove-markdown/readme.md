@@ -11,8 +11,8 @@ Remove Markdown formatting from text
 | Full name          | remove-markdown |
 | Keywords           | markdown |
 | # releases         | 2 |
-| # dependents       | 92 |
-| # downloads        | 2894246 |
+| # dependents       | 96 |
+| # downloads        | 2985415 |
 | # stars            | 1 |
 
 ## Links

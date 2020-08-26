@@ -11,8 +11,8 @@ a fast newline (or any delimiter) splitter stream - like require('split') but fa
 | Full name          | binary-split |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 50 |
-| # downloads        | 1344008 |
+| # dependents       | 52 |
+| # downloads        | 1372871 |
 | # stars            | 2 |
 
 ## Links

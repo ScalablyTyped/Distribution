@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "TmplAstTemplate")
 @js.native
 class TmplAstTemplate protected ()
-  extends typings.angularCompiler.publicApiMod.TmplAstTemplate {
+  extends typings.angularCompiler.compilerMod.TmplAstTemplate {
   def this(
     tagName: String,
     attributes: js.Array[TextAttribute],

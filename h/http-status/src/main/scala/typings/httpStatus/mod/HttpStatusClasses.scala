@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HttpStatusClasses extends js.Object {
-  val `1xx`: String
-  val `1xx_MESSAGE`: String
-  val `1xx_NAME`: String
-  val `2xx`: String
-  val `2xx_MESSAGE`: String
-  val `2xx_NAME`: String
-  val `3xx`: String
-  val `3xx_MESSAGE`: String
-  val `3xx_NAME`: String
-  val `4xx`: String
-  val `4xx_MESSAGE`: String
-  val `4xx_NAME`: String
-  val `5xx`: String
-  val `5xx_MESSAGE`: String
-  val `5xx_NAME`: String
-  val CLIENT_ERROR: String
-  val INFORMATIONAL: String
-  val REDIRECTION: String
-  val SERVER_ERROR: String
-  val SUCCESSFUL: String
+  val `1xx`: String = js.native
+  val `1xx_MESSAGE`: String = js.native
+  val `1xx_NAME`: String = js.native
+  val `2xx`: String = js.native
+  val `2xx_MESSAGE`: String = js.native
+  val `2xx_NAME`: String = js.native
+  val `3xx`: String = js.native
+  val `3xx_MESSAGE`: String = js.native
+  val `3xx_NAME`: String = js.native
+  val `4xx`: String = js.native
+  val `4xx_MESSAGE`: String = js.native
+  val `4xx_NAME`: String = js.native
+  val `5xx`: String = js.native
+  val `5xx_MESSAGE`: String = js.native
+  val `5xx_NAME`: String = js.native
+  val CLIENT_ERROR: String = js.native
+  val INFORMATIONAL: String = js.native
+  val REDIRECTION: String = js.native
+  val SERVER_ERROR: String = js.native
+  val SUCCESSFUL: String = js.native
 }
 
 object HttpStatusClasses {
@@ -69,5 +70,58 @@ object HttpStatusClasses {
     __obj.updateDynamic("5xx_NAME")(`5xx_NAME`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpStatusClasses]
   }
+  @scala.inline
+  implicit class HttpStatusClassesOps[Self <: HttpStatusClasses] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set1xx(value: String): Self = this.set("1xx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set1xx_MESSAGE(value: String): Self = this.set("1xx_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set1xx_NAME(value: String): Self = this.set("1xx_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2xx(value: String): Self = this.set("2xx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2xx_MESSAGE(value: String): Self = this.set("2xx_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2xx_NAME(value: String): Self = this.set("2xx_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set3xx(value: String): Self = this.set("3xx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set3xx_MESSAGE(value: String): Self = this.set("3xx_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set3xx_NAME(value: String): Self = this.set("3xx_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set4xx(value: String): Self = this.set("4xx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set4xx_MESSAGE(value: String): Self = this.set("4xx_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set4xx_NAME(value: String): Self = this.set("4xx_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set5xx(value: String): Self = this.set("5xx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set5xx_MESSAGE(value: String): Self = this.set("5xx_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set5xx_NAME(value: String): Self = this.set("5xx_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCLIENT_ERROR(value: String): Self = this.set("CLIENT_ERROR", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setINFORMATIONAL(value: String): Self = this.set("INFORMATIONAL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setREDIRECTION(value: String): Self = this.set("REDIRECTION", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSERVER_ERROR(value: String): Self = this.set("SERVER_ERROR", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSUCCESSFUL(value: String): Self = this.set("SUCCESSFUL", value.asInstanceOf[js.Any])
+  }
+  
 }
 

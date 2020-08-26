@@ -23,11 +23,32 @@ trait SchemaAnalyzeEntitiesResponse extends js.Object {
 
 object SchemaAnalyzeEntitiesResponse {
   @scala.inline
-  def apply(entities: js.Array[SchemaEntity] = null, language: String = null): SchemaAnalyzeEntitiesResponse = {
+  def apply(): SchemaAnalyzeEntitiesResponse = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAnalyzeEntitiesResponse]
   }
+  @scala.inline
+  implicit class SchemaAnalyzeEntitiesResponseOps[Self <: SchemaAnalyzeEntitiesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntitiesVarargs(value: SchemaEntity*): Self = this.set("entities", js.Array(value :_*))
+    @scala.inline
+    def setEntities(value: js.Array[SchemaEntity]): Self = this.set("entities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntities: Self = this.set("entities", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+  }
+  
 }
 

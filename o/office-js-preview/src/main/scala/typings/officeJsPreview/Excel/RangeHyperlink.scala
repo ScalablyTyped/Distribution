@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.7]
   */
+@js.native
 trait RangeHyperlink extends js.Object {
   /**
     *
@@ -17,44 +18,64 @@ trait RangeHyperlink extends js.Object {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var address: js.UndefOr[String] = js.undefined
+  var address: js.UndefOr[String] = js.native
   /**
     *
     * Represents the document reference target for the hyperlink.
     *
     * [Api set: ExcelApi 1.7]
     */
-  var documentReference: js.UndefOr[String] = js.undefined
+  var documentReference: js.UndefOr[String] = js.native
   /**
     *
     * Represents the string displayed when hovering over the hyperlink.
     *
     * [Api set: ExcelApi 1.7]
     */
-  var screenTip: js.UndefOr[String] = js.undefined
+  var screenTip: js.UndefOr[String] = js.native
   /**
     *
     * Represents the string that is displayed in the top left most cell in the range.
     *
     * [Api set: ExcelApi 1.7]
     */
-  var textToDisplay: js.UndefOr[String] = js.undefined
+  var textToDisplay: js.UndefOr[String] = js.native
 }
 
 object RangeHyperlink {
   @scala.inline
-  def apply(
-    address: String = null,
-    documentReference: String = null,
-    screenTip: String = null,
-    textToDisplay: String = null
-  ): RangeHyperlink = {
+  def apply(): RangeHyperlink = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (documentReference != null) __obj.updateDynamic("documentReference")(documentReference.asInstanceOf[js.Any])
-    if (screenTip != null) __obj.updateDynamic("screenTip")(screenTip.asInstanceOf[js.Any])
-    if (textToDisplay != null) __obj.updateDynamic("textToDisplay")(textToDisplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeHyperlink]
   }
+  @scala.inline
+  implicit class RangeHyperlinkOps[Self <: RangeHyperlink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setDocumentReference(value: String): Self = this.set("documentReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentReference: Self = this.set("documentReference", js.undefined)
+    @scala.inline
+    def setScreenTip(value: String): Self = this.set("screenTip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenTip: Self = this.set("screenTip", js.undefined)
+    @scala.inline
+    def setTextToDisplay(value: String): Self = this.set("textToDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextToDisplay: Self = this.set("textToDisplay", js.undefined)
+  }
+  
 }
 

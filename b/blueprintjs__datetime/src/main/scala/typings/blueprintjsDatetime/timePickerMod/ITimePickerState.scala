@@ -5,33 +5,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITimePickerState extends js.Object {
-  var hourText: js.UndefOr[String] = js.undefined
-  var isPm: js.UndefOr[Boolean] = js.undefined
-  var millisecondText: js.UndefOr[String] = js.undefined
-  var minuteText: js.UndefOr[String] = js.undefined
-  var secondText: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[Date] = js.undefined
+  var hourText: js.UndefOr[String] = js.native
+  var isPm: js.UndefOr[Boolean] = js.native
+  var millisecondText: js.UndefOr[String] = js.native
+  var minuteText: js.UndefOr[String] = js.native
+  var secondText: js.UndefOr[String] = js.native
+  var value: js.UndefOr[Date] = js.native
 }
 
 object ITimePickerState {
   @scala.inline
-  def apply(
-    hourText: String = null,
-    isPm: js.UndefOr[Boolean] = js.undefined,
-    millisecondText: String = null,
-    minuteText: String = null,
-    secondText: String = null,
-    value: Date = null
-  ): ITimePickerState = {
+  def apply(): ITimePickerState = {
     val __obj = js.Dynamic.literal()
-    if (hourText != null) __obj.updateDynamic("hourText")(hourText.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPm)) __obj.updateDynamic("isPm")(isPm.get.asInstanceOf[js.Any])
-    if (millisecondText != null) __obj.updateDynamic("millisecondText")(millisecondText.asInstanceOf[js.Any])
-    if (minuteText != null) __obj.updateDynamic("minuteText")(minuteText.asInstanceOf[js.Any])
-    if (secondText != null) __obj.updateDynamic("secondText")(secondText.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimePickerState]
   }
+  @scala.inline
+  implicit class ITimePickerStateOps[Self <: ITimePickerState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHourText(value: String): Self = this.set("hourText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHourText: Self = this.set("hourText", js.undefined)
+    @scala.inline
+    def setIsPm(value: Boolean): Self = this.set("isPm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPm: Self = this.set("isPm", js.undefined)
+    @scala.inline
+    def setMillisecondText(value: String): Self = this.set("millisecondText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMillisecondText: Self = this.set("millisecondText", js.undefined)
+    @scala.inline
+    def setMinuteText(value: String): Self = this.set("minuteText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinuteText: Self = this.set("minuteText", js.undefined)
+    @scala.inline
+    def setSecondText(value: String): Self = this.set("secondText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondText: Self = this.set("secondText", js.undefined)
+    @scala.inline
+    def setValue(value: Date): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

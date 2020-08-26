@@ -8,62 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/principals", JSImport.Namespace)
 @js.native
 object principalsMod extends js.Object {
-  val AcmServicePrincipal: Principal = js.native
-  val ApiGatewayPrincipal: Principal = js.native
-  val AthenaPrincipal: Principal = js.native
-  val AutoscalingPrincipal: Principal = js.native
-  val CloudDirectoryPrincipal: Principal = js.native
-  val CloudSearchPrincipal: Principal = js.native
-  val CloudformationPrincipal: Principal = js.native
-  val CloudfrontPrincipal: Principal = js.native
-  val CloudtrailPrincipal: Principal = js.native
-  val CodeCommitPrincipal: Principal = js.native
-  val CodeDeployPrincipal: Principal = js.native
-  val CodePipelinePrincipal: Principal = js.native
-  val ConfigPrincipal: Principal = js.native
-  val DataPipelinePrincipal: Principal = js.native
-  val DirectConnectPrincipal: Principal = js.native
-  val DirectoryServicesPrincipal: Principal = js.native
-  val DynamoDbPrincipal: Principal = js.native
-  val Ec2Principal: Principal = js.native
-  val EcrPrincipal: Principal = js.native
-  val EcsPrincipal: Principal = js.native
-  val EdgeLambdaPrincipal: Principal = js.native
-  val ElasticBeanstalkPrincipal: Principal = js.native
-  val ElasticFileSystemPrincipal: Principal = js.native
-  val ElasticLoadBalancingPrincipal: Principal = js.native
-  val ElasticMapReducePrincipal: Principal = js.native
-  val ElasticachePrincipal: Principal = js.native
-  val EventsPrincipal: Principal = js.native
-  val HealthPrincipal: Principal = js.native
-  val IamPrincipal: Principal = js.native
-  val InspectorPrincipal: Principal = js.native
-  val KinesisPrincipal: Principal = js.native
-  val KmsPrincipal: Principal = js.native
-  val LambdaPrincipal: Principal = js.native
-  val LightsailPrincipal: Principal = js.native
-  val LogsPrincipal: Principal = js.native
-  val MonitoringPrincipal: Principal = js.native
-  val OpsworksPrincipal: Principal = js.native
-  val OrganizationsPrincipal: Principal = js.native
-  val RdsPrincipal: Principal = js.native
-  val RedshiftPrincipal: Principal = js.native
-  val Route53Principal: Principal = js.native
-  val S3Principal: Principal = js.native
-  val ServiceCatalogPrincipal: Principal = js.native
-  val SesPrincipal: Principal = js.native
-  val SigninPrincipal: Principal = js.native
-  val SnsPrincipal: Principal = js.native
-  val SqsPrincipal: Principal = js.native
-  val SsmPrincipal: Principal = js.native
-  val StorageGatewayPrincipal: Principal = js.native
-  val StsPrincipal: Principal = js.native
-  val SupportPrincipal: Principal = js.native
-  val VmiePrincipal: Principal = js.native
-  val VpcFlowLogsPrincipal: Principal = js.native
-  val WafPrincipal: Principal = js.native
-  val WorkDocsPrincipal: Principal = js.native
-  val WorkspacesPrincipal: Principal = js.native
   @js.native
   object Principals extends js.Object {
     /**
@@ -82,6 +26,10 @@ object principalsMod extends js.Object {
       * Service Principal for Autoscaling
       */
     val AutoscalingPrincipal: Principal = js.native
+    /**
+      * Service Principal for Batch
+      */
+    val BatchPrincipal: Principal = js.native
     /**
       * Service Principal for Cloud Directory
       */
@@ -259,6 +207,10 @@ object principalsMod extends js.Object {
       * Service Principal for Simple Notification Service
       */
     val SnsPrincipal: Principal = js.native
+    /**
+      * Service Principal for Spot Fleet
+      */
+    val SpotFleetPrincipal: Principal = js.native
     /**
       * Service Principal for Simple Queue Service
       */

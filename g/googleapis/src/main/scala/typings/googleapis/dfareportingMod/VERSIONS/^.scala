@@ -14,19 +14,19 @@ object ^ extends js.Object {
   @JSName("v3.1")
   var v3Dot1: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     Dfareporting
   ] = js.native
   @JSName("v3.2")
   var v3Dot2: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     typings.googleapis.v32Mod.dfareportingV32.Dfareporting
   ] = js.native
   @JSName("v3.3")
   var v3Dot3: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     typings.googleapis.v33Mod.dfareportingV33.Dfareporting
   ] = js.native
 }

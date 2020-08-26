@@ -31,15 +31,5 @@ class default protected () extends TdClient {
     * Create TdClient.
     */
   def this(options: TdOptions) = this()
-  /**
-    * Send a query to TDLib.
-    * If the query contains the field '@extra', the same field will be added into the result.
-    * @link https://github.com/tdlib/td/blob/master/td/generate/scheme/td_api.tl - td_api.tl scheme
-    * @link https://core.telegram.org/tdlib/docs/td__api_8h.html - HTML documentation
-    * @link https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1_function.html - a list of all available TDLib methods
-    * @link https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1_object.html - a list of all available TDLib classes
-    */
-  /* CompleteClass */
-  override def send(query: TdObject): js.Promise[TdError | TdObject] = js.native
 }
 

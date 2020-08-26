@@ -164,7 +164,6 @@ object fileMod extends js.Object {
       position: Null,
       cb: BFSThreeArgCallback[Double, Buffer]
     ): Unit = js.native
-    def writeSync(buffer: Buffer, offset: Double, length: Double): Double = js.native
     /**
       * **Core**: Write buffer to the file.
       * Note that it is unsafe to use fs.writeSync multiple times on the same file
@@ -177,6 +176,7 @@ object fileMod extends js.Object {
       *   data should be written. If position is null, the data will be written at
       *   the current position.
       */
+    def writeSync(buffer: Buffer, offset: Double, length: Double): Double = js.native
     def writeSync(buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
   }
   

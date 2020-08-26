@@ -12,7 +12,7 @@ A lightweight implementation of OOP Class in JavaScript
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 114 |
-| # downloads        | 17267624 |
+| # downloads        | 17264710 |
 | # stars            | 0 |
 
 ## Links

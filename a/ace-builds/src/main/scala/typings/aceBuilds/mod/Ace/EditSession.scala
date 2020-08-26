@@ -7,6 +7,7 @@ import typings.aceBuilds.aceBuildsStrings.changeScrollTop
 import typings.aceBuilds.aceBuildsStrings.code
 import typings.aceBuilds.aceBuildsStrings.firstLineNumber
 import typings.aceBuilds.aceBuildsStrings.foldStyle
+import typings.aceBuilds.aceBuildsStrings.free
 import typings.aceBuilds.aceBuildsStrings.fullLine
 import typings.aceBuilds.aceBuildsStrings.indentedSoftWrap
 import typings.aceBuilds.aceBuildsStrings.manual
@@ -15,7 +16,9 @@ import typings.aceBuilds.aceBuildsStrings.markbeginend
 import typings.aceBuilds.aceBuildsStrings.mode
 import typings.aceBuilds.aceBuildsStrings.navigateWithinSoftTabs
 import typings.aceBuilds.aceBuildsStrings.newLineMode
+import typings.aceBuilds.aceBuildsStrings.off
 import typings.aceBuilds.aceBuildsStrings.overwrite
+import typings.aceBuilds.aceBuildsStrings.printmargin_
 import typings.aceBuilds.aceBuildsStrings.screenLine
 import typings.aceBuilds.aceBuildsStrings.tabSize
 import typings.aceBuilds.aceBuildsStrings.text
@@ -99,7 +102,7 @@ trait EditSession
   @JSName("getOption")
   def getOption_useWorker(name: useWorker): Boolean = js.native
   @JSName("getOption")
-  def getOption_wrap(name: wrap): String | Double = js.native
+  def getOption_wrap(name: wrap): off | free | printmargin_ | Boolean | Double = js.native
   @JSName("getOption")
   def getOption_wrapMethod(name: wrapMethod): code | text | auto = js.native
   def getOverwrite(): Boolean = js.native
@@ -176,6 +179,9 @@ trait EditSession
   def setOption(name: wrapMethod, value: auto): Unit = js.native
   def setOption(name: wrapMethod, value: code): Unit = js.native
   def setOption(name: wrapMethod, value: text): Unit = js.native
+  def setOption(name: wrap, value: free): Unit = js.native
+  def setOption(name: wrap, value: off): Unit = js.native
+  def setOption(name: wrap, value: printmargin_): Unit = js.native
   @JSName("setOption")
   def setOption_firstLineNumber(name: firstLineNumber, value: Double): Unit = js.native
   @JSName("setOption")
@@ -195,7 +201,7 @@ trait EditSession
   @JSName("setOption")
   def setOption_useWorker(name: useWorker, value: Boolean): Unit = js.native
   @JSName("setOption")
-  def setOption_wrap(name: wrap, value: String): Unit = js.native
+  def setOption_wrap(name: wrap, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_wrap(name: wrap, value: Double): Unit = js.native
   def setOverwrite(overwrite: Boolean): Unit = js.native

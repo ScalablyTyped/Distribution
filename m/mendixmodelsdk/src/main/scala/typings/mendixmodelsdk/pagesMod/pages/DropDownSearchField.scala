@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/drop-down-search-field relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/search-bar relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownSearchField")
 @js.native
@@ -26,14 +26,14 @@ class DropDownSearchField protected () extends SingleSearchField {
   @JSName("model")
   var model_FDropDownSearchField: IModel = js.native
   def allowMultipleSelect: Boolean = js.native
-  def allowMultipleSelect(newValue: Boolean): js.Any = js.native
+  def allowMultipleSelect_=(newValue: Boolean): Unit = js.native
   def sortBar: GridSortBar = js.native
-  def sortBar(newValue: GridSortBar): js.Any = js.native
+  def sortBar_=(newValue: GridSortBar): Unit = js.native
   /**
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
   def xPathConstraint: String = js.native
-  def xPathConstraint(newValue: String): js.Any = js.native
+  def xPathConstraint_=(newValue: String): Unit = js.native
 }
 
 /* static members */

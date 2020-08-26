@@ -1,33 +1,41 @@
 package typings.awsSdkClientS3Node.typesTransitionMod
 
-import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.GLACIER
-import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.ONEZONE_IA
-import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.STANDARD_IA
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledTransition extends Transition {
   /**
     * <p>Indicates at what date the object is to be moved or deleted. Should be in GMT ISO 8601 Format.</p>
     */
   @JSName("Date")
-  var Date_UnmarshalledTransition: js.UndefOr[Date] = js.undefined
+  var Date_UnmarshalledTransition: js.UndefOr[Date] = js.native
 }
 
 object UnmarshalledTransition {
   @scala.inline
-  def apply(
-    Date: Date = null,
-    Days: js.UndefOr[Double] = js.undefined,
-    StorageClass: GLACIER | STANDARD_IA | ONEZONE_IA | String = null
-  ): UnmarshalledTransition = {
+  def apply(): UnmarshalledTransition = {
     val __obj = js.Dynamic.literal()
-    if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
-    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days.get.asInstanceOf[js.Any])
-    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledTransition]
   }
+  @scala.inline
+  implicit class UnmarshalledTransitionOps[Self <: UnmarshalledTransition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: Date): Self = this.set("Date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("Date", js.undefined)
+  }
+  
 }
 

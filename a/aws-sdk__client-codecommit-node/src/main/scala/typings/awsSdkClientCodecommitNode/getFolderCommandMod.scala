@@ -26,16 +26,9 @@ object getFolderCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetFolderInput) = this()
-    /* CompleteClass */
-    override val input: GetFolderInput = js.native
     val middlewareStack: MiddlewareStack[GetFolderInput, GetFolderOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[GetFolderInput, GetFolderOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[GetFolderInput, GetFolderOutput] = js.native
   }

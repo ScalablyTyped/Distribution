@@ -18,6 +18,14 @@ object ɵand extends js.Object {
     matchedQueriesDsl: js.Array[js.Tuple2[String | Double, ɵQueryValueType]],
     ngContentIndex: Double,
     childCount: Double,
+    handleEvent: js.UndefOr[scala.Nothing],
+    templateFactory: ViewDefinitionFactory
+  ): NodeDef = js.native
+  def apply(
+    flags: ɵNodeFlags,
+    matchedQueriesDsl: js.Array[js.Tuple2[String | Double, ɵQueryValueType]],
+    ngContentIndex: Double,
+    childCount: Double,
     handleEvent: Null,
     templateFactory: ViewDefinitionFactory
   ): NodeDef = js.native
@@ -41,6 +49,14 @@ object ɵand extends js.Object {
     matchedQueriesDsl: js.Array[js.Tuple2[String | Double, ɵQueryValueType]],
     ngContentIndex: Null,
     childCount: Double
+  ): NodeDef = js.native
+  def apply(
+    flags: ɵNodeFlags,
+    matchedQueriesDsl: js.Array[js.Tuple2[String | Double, ɵQueryValueType]],
+    ngContentIndex: Null,
+    childCount: Double,
+    handleEvent: js.UndefOr[scala.Nothing],
+    templateFactory: ViewDefinitionFactory
   ): NodeDef = js.native
   def apply(
     flags: ɵNodeFlags,
@@ -71,6 +87,14 @@ object ɵand extends js.Object {
     matchedQueriesDsl: Null,
     ngContentIndex: Double,
     childCount: Double,
+    handleEvent: js.UndefOr[scala.Nothing],
+    templateFactory: ViewDefinitionFactory
+  ): NodeDef = js.native
+  def apply(
+    flags: ɵNodeFlags,
+    matchedQueriesDsl: Null,
+    ngContentIndex: Double,
+    childCount: Double,
     handleEvent: Null,
     templateFactory: ViewDefinitionFactory
   ): NodeDef = js.native
@@ -90,6 +114,14 @@ object ɵand extends js.Object {
     templateFactory: ViewDefinitionFactory
   ): NodeDef = js.native
   def apply(flags: ɵNodeFlags, matchedQueriesDsl: Null, ngContentIndex: Null, childCount: Double): NodeDef = js.native
+  def apply(
+    flags: ɵNodeFlags,
+    matchedQueriesDsl: Null,
+    ngContentIndex: Null,
+    childCount: Double,
+    handleEvent: js.UndefOr[scala.Nothing],
+    templateFactory: ViewDefinitionFactory
+  ): NodeDef = js.native
   def apply(
     flags: ɵNodeFlags,
     matchedQueriesDsl: Null,

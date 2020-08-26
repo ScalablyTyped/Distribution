@@ -5,22 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std-mocks.std-mocks.Options & {  stdout  :false} */
+/* Inlined std-mocks.std-mocks.Options & {  stdout :false} */
+@js.native
 trait Optionsstdoutfalse extends js.Object {
-  var stderr: js.UndefOr[Boolean] = js.undefined
-  var stdout: js.UndefOr[Boolean with `false`] = js.undefined
+  var stderr: js.UndefOr[Boolean] = js.native
+  var stdout: js.UndefOr[Boolean] with `false` = js.native
 }
 
 object Optionsstdoutfalse {
   @scala.inline
-  def apply(
-    stderr: js.UndefOr[Boolean] = js.undefined,
-    stdout: js.UndefOr[Boolean with `false`] = js.undefined
-  ): Optionsstdoutfalse = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout.get.asInstanceOf[js.Any])
+  def apply(stdout: js.UndefOr[Boolean] with `false`): Optionsstdoutfalse = {
+    val __obj = js.Dynamic.literal(stdout = stdout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Optionsstdoutfalse]
   }
+  @scala.inline
+  implicit class OptionsstdoutfalseOps[Self <: Optionsstdoutfalse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStdout(value: js.UndefOr[Boolean] with `false`): Self = this.set("stdout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStderr(value: Boolean): Self = this.set("stderr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStderr: Self = this.set("stderr", js.undefined)
+  }
+  
 }
 

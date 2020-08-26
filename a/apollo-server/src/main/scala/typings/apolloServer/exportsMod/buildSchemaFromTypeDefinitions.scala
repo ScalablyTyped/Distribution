@@ -1,8 +1,8 @@
 package typings.apolloServer.exportsMod
 
 import typings.graphql.mod.GraphQLSchema
-import typings.graphqlTools.interfacesMod.GraphQLParseOptions
-import typings.graphqlTools.interfacesMod.ITypeDefinitions
+import typings.graphqlToolsUtils.interfacesMod.GraphQLParseOptions
+import typings.graphqlToolsUtils.interfacesMod.ITypeDefinitions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

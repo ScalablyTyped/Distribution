@@ -252,6 +252,9 @@ object ionicCoreStrings {
   sealed trait date extends TextFieldTypes
   
   @js.native
+  sealed trait `datetime-local` extends TextFieldTypes
+  
+  @js.native
   sealed trait decimal extends js.Object
   
   @js.native
@@ -522,6 +525,9 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait mode extends js.Object
+  
+  @js.native
+  sealed trait month extends TextFieldTypes
   
   @js.native
   sealed trait name extends AutocompleteTypes
@@ -803,6 +809,9 @@ object ionicCoreStrings {
   sealed trait warning extends PredefinedColors
   
   @js.native
+  sealed trait week extends TextFieldTypes
+  
+  @js.native
   sealed trait window extends ListenTargetOptions
   
   @js.native
@@ -964,6 +973,8 @@ object ionicCoreStrings {
   def dark: dark = "dark".asInstanceOf[dark]
   @scala.inline
   def date: date = "date".asInstanceOf[date]
+  @scala.inline
+  def `datetime-local`: `datetime-local` = "datetime-local".asInstanceOf[`datetime-local`]
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
@@ -1128,6 +1139,8 @@ object ionicCoreStrings {
   def modalLeave: modalLeave = "modalLeave".asInstanceOf[modalLeave]
   @scala.inline
   def mode: mode = "mode".asInstanceOf[mode]
+  @scala.inline
+  def month: month = "month".asInstanceOf[month]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -1310,6 +1323,8 @@ object ionicCoreStrings {
   def username: username = "username".asInstanceOf[username]
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
+  @scala.inline
+  def week: week = "week".asInstanceOf[week]
   @scala.inline
   def window: window = "window".asInstanceOf[window]
   @scala.inline

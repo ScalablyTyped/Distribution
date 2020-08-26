@@ -17,9 +17,8 @@ object Identity {
     __obj.asInstanceOf[Identity]
   }
   @scala.inline
-  def AnonymousId(anonymousId: String | Double, userId: String | Double = null): Identity = {
+  def AnonymousId(anonymousId: String | Double): Identity = {
     val __obj = js.Dynamic.literal(anonymousId = anonymousId.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identity]
   }
 }

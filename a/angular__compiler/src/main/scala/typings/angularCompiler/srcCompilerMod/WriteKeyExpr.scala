@@ -23,6 +23,13 @@ class WriteKeyExpr protected ()
     receiver: typings.angularCompiler.outputAstMod.Expression,
     index: typings.angularCompiler.outputAstMod.Expression,
     value: typings.angularCompiler.outputAstMod.Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    receiver: typings.angularCompiler.outputAstMod.Expression,
+    index: typings.angularCompiler.outputAstMod.Expression,
+    value: typings.angularCompiler.outputAstMod.Expression,
     `type`: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()

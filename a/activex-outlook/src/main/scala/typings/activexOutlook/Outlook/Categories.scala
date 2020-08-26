@@ -14,6 +14,7 @@ trait Categories extends js.Object {
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Name: String): Category = js.native
+  def Add(Name: String, Color: js.UndefOr[scala.Nothing], ShortcutKey: js.Any): Category = js.native
   def Add(Name: String, Color: js.Any): Category = js.native
   def Add(Name: String, Color: js.Any, ShortcutKey: js.Any): Category = js.native
   def Item(Index: js.Any): Category = js.native

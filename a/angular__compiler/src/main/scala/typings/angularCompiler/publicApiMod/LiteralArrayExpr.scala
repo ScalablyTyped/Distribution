@@ -15,6 +15,11 @@ class LiteralArrayExpr protected ()
   ) = this()
   def this(
     entries: js.Array[typings.angularCompiler.outputAstMod.Expression],
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    entries: js.Array[typings.angularCompiler.outputAstMod.Expression],
     `type`: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()

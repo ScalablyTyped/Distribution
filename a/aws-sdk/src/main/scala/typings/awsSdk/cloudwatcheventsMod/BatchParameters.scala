@@ -26,16 +26,34 @@ trait BatchParameters extends js.Object {
 
 object BatchParameters {
   @scala.inline
-  def apply(
-    JobDefinition: String,
-    JobName: String,
-    ArrayProperties: BatchArrayProperties = null,
-    RetryStrategy: BatchRetryStrategy = null
-  ): BatchParameters = {
+  def apply(JobDefinition: String, JobName: String): BatchParameters = {
     val __obj = js.Dynamic.literal(JobDefinition = JobDefinition.asInstanceOf[js.Any], JobName = JobName.asInstanceOf[js.Any])
-    if (ArrayProperties != null) __obj.updateDynamic("ArrayProperties")(ArrayProperties.asInstanceOf[js.Any])
-    if (RetryStrategy != null) __obj.updateDynamic("RetryStrategy")(RetryStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchParameters]
   }
+  @scala.inline
+  implicit class BatchParametersOps[Self <: BatchParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobDefinition(value: String): Self = this.set("JobDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobName(value: String): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrayProperties(value: BatchArrayProperties): Self = this.set("ArrayProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrayProperties: Self = this.set("ArrayProperties", js.undefined)
+    @scala.inline
+    def setRetryStrategy(value: BatchRetryStrategy): Self = this.set("RetryStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryStrategy: Self = this.set("RetryStrategy", js.undefined)
+  }
+  
 }
 

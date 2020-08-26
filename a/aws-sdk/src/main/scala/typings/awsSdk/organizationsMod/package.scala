@@ -65,6 +65,7 @@ package object organizationsMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TAG_POLICY
     - typings.awsSdk.awsSdkStrings.BACKUP_POLICY
+    - typings.awsSdk.awsSdkStrings.AISERVICES_OPT_OUT_POLICY
     - java.lang.String
   */
   type EffectivePolicyType = typings.awsSdk.organizationsMod._EffectivePolicyType | java.lang.String
@@ -148,6 +149,7 @@ package object organizationsMod {
     - typings.awsSdk.awsSdkStrings.SERVICE_CONTROL_POLICY
     - typings.awsSdk.awsSdkStrings.TAG_POLICY
     - typings.awsSdk.awsSdkStrings.BACKUP_POLICY
+    - typings.awsSdk.awsSdkStrings.AISERVICES_OPT_OUT_POLICY
     - java.lang.String
   */
   type PolicyType = typings.awsSdk.organizationsMod._PolicyType | java.lang.String

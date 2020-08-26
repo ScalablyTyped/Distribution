@@ -14,18 +14,18 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fabric/fabric-impl", "StaticCanvas")
 @js.native
+/**
+  * Constructor
+  * @param {HTMLElement | String} el <canvas> element to initialize instance on
+  * @param {Object} [options] Options object
+  * @return {Object} thisArg
+  */
 class StaticCanvas ()
   extends IObservable[StaticCanvas]
      with IStaticCanvasOptions
      with ICollection[StaticCanvas]
      with ICanvasAnimation[StaticCanvas] {
   def this(element: String) = this()
-  /**
-    * Constructor
-    * @param {HTMLElement | String} el <canvas> element to initialize instance on
-    * @param {Object} [options] Options object
-    * @return {Object} thisArg
-    */
   def this(element: HTMLCanvasElement) = this()
   def this(element: String, options: ICanvasOptions) = this()
   def this(element: Null, options: ICanvasOptions) = this()
@@ -107,6 +107,7 @@ class StaticCanvas ()
     * @chainable
     */
   def clearContext(ctx: CanvasRenderingContext2D): Canvas = js.native
+  def clone(callback: js.UndefOr[scala.Nothing], properties: js.Array[String]): Unit = js.native
   def clone(callback: js.Any): Unit = js.native
   def clone(callback: js.Any, properties: js.Array[String]): Unit = js.native
   /**
@@ -407,6 +408,7 @@ class StaticCanvas ()
     * @return {String} SVG string
     */
   def toSVG(): String = js.native
+  def toSVG(options: js.UndefOr[scala.Nothing], reviver: js.Function): String = js.native
   def toSVG(options: IToSVGOptions): String = js.native
   def toSVG(options: IToSVGOptions, reviver: js.Function): String = js.native
   /**

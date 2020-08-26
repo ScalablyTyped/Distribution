@@ -8,40 +8,41 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Reflection */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.SignatureReflection, 'type' | 'overwrites' | 'inheritedFrom' | 'implementationOf'> */
+@js.native
 trait SignatureReflection
   extends __ModelToObject[js.Any] {
-  var children: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
+  var children: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
   var comment: js.UndefOr[
     ModelToObject[js.UndefOr[typings.typedoc.commentsCommentMod.Comment]] | typings.typedoc.commentsCommentMod.Comment
-  ] = js.undefined
+  ] = js.native
   var decorates: js.UndefOr[
     ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-  ] = js.undefined
-  var decorators: js.UndefOr[ModelToObject[js.Array[DecoratorWrapper]]] = js.undefined
-  var flags: ReflectionFlags
-  var getSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
-  var id: ModelToObject[Double] | Double
+  ] = js.native
+  var decorators: js.UndefOr[ModelToObject[js.Array[DecoratorWrapper]]] = js.native
+  var flags: ReflectionFlags = js.native
+  var getSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
+  var id: ModelToObject[Double] | Double = js.native
   var implementationOf: js.UndefOr[
     ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-  ] = js.undefined
-  var indexSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
+  ] = js.native
+  var indexSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
   var inheritedFrom: js.UndefOr[
     ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-  ] = js.undefined
-  var kind: ModelToObject[ReflectionKind] | ReflectionKind
-  var kindString: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.undefined
-  var name: ModelToObject[String] | String
-  var originalName: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var kind: ModelToObject[ReflectionKind] | ReflectionKind = js.native
+  var kindString: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.native
+  var name: ModelToObject[String] | String = js.native
+  var originalName: js.UndefOr[String] = js.native
   var overwrites: js.UndefOr[
     ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-  ] = js.undefined
-  var parameters: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
-  var setSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
-  var signatures: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
+  ] = js.native
+  var parameters: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
+  var setSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
+  var signatures: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
   var `type`: js.UndefOr[
     ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-  ] = js.undefined
-  var typeParameter: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
+  ] = js.native
+  var typeParameter: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
 }
 
 object SignatureReflection {
@@ -50,42 +51,143 @@ object SignatureReflection {
     flags: ReflectionFlags,
     id: ModelToObject[Double] | Double,
     kind: ModelToObject[ReflectionKind] | ReflectionKind,
-    name: ModelToObject[String] | String,
-    children: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]] = null,
-    comment: ModelToObject[js.UndefOr[typings.typedoc.commentsCommentMod.Comment]] | typings.typedoc.commentsCommentMod.Comment = null,
-    decorates: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type] = null,
-    decorators: ModelToObject[js.Array[DecoratorWrapper]] = null,
-    getSignature: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]] = null,
-    implementationOf: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type = null,
-    indexSignature: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]] = null,
-    inheritedFrom: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type = null,
-    kindString: ModelToObject[js.UndefOr[String]] | String = null,
-    originalName: String = null,
-    overwrites: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type = null,
-    parameters: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]] = null,
-    setSignature: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]] = null,
-    signatures: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]] = null,
-    `type`: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type = null,
-    typeParameter: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]] = null
+    name: ModelToObject[String] | String
   ): SignatureReflection = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (decorates != null) __obj.updateDynamic("decorates")(decorates.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (getSignature != null) __obj.updateDynamic("getSignature")(getSignature.asInstanceOf[js.Any])
-    if (implementationOf != null) __obj.updateDynamic("implementationOf")(implementationOf.asInstanceOf[js.Any])
-    if (indexSignature != null) __obj.updateDynamic("indexSignature")(indexSignature.asInstanceOf[js.Any])
-    if (inheritedFrom != null) __obj.updateDynamic("inheritedFrom")(inheritedFrom.asInstanceOf[js.Any])
-    if (kindString != null) __obj.updateDynamic("kindString")(kindString.asInstanceOf[js.Any])
-    if (originalName != null) __obj.updateDynamic("originalName")(originalName.asInstanceOf[js.Any])
-    if (overwrites != null) __obj.updateDynamic("overwrites")(overwrites.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (setSignature != null) __obj.updateDynamic("setSignature")(setSignature.asInstanceOf[js.Any])
-    if (signatures != null) __obj.updateDynamic("signatures")(signatures.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (typeParameter != null) __obj.updateDynamic("typeParameter")(typeParameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureReflection]
   }
+  @scala.inline
+  implicit class SignatureReflectionOps[Self <: SignatureReflection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFlags(value: ReflectionFlags): Self = this.set("flags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdVarargs(value: _ModelToObject[js.Any]*): Self = this.set("id", js.Array(value :_*))
+    @scala.inline
+    def setId(value: ModelToObject[Double] | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKindVarargs(value: _ModelToObject[js.Any]*): Self = this.set("kind", js.Array(value :_*))
+    @scala.inline
+    def setKind(value: ModelToObject[ReflectionKind] | ReflectionKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = this.set("name", js.Array(value :_*))
+    @scala.inline
+    def setName(value: ModelToObject[String] | String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChildrenVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setCommentVarargs(value: _ModelToObject[js.Any]*): Self = this.set("comment", js.Array(value :_*))
+    @scala.inline
+    def setComment(
+      value: ModelToObject[js.UndefOr[typings.typedoc.commentsCommentMod.Comment]] | typings.typedoc.commentsCommentMod.Comment
+    ): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setDecoratesVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = this.set("decorates", js.Array(value :_*))
+    @scala.inline
+    def setDecorates(
+      value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
+    ): Self = this.set("decorates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecorates: Self = this.set("decorates", js.undefined)
+    @scala.inline
+    def setDecoratorsVarargs(value: _ModelToObject[js.Any]*): Self = this.set("decorators", js.Array(value :_*))
+    @scala.inline
+    def setDecorators(value: ModelToObject[js.Array[DecoratorWrapper]]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecorators: Self = this.set("decorators", js.undefined)
+    @scala.inline
+    def setGetSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("getSignature", js.Array(value :_*))
+    @scala.inline
+    def setGetSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("getSignature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetSignature: Self = this.set("getSignature", js.undefined)
+    @scala.inline
+    def setImplementationOfVarargs(value: _ModelToObject[js.Any]*): Self = this.set("implementationOf", js.Array(value :_*))
+    @scala.inline
+    def setImplementationOf(
+      value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
+    ): Self = this.set("implementationOf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImplementationOf: Self = this.set("implementationOf", js.undefined)
+    @scala.inline
+    def setIndexSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("indexSignature", js.Array(value :_*))
+    @scala.inline
+    def setIndexSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("indexSignature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexSignature: Self = this.set("indexSignature", js.undefined)
+    @scala.inline
+    def setInheritedFromVarargs(value: _ModelToObject[js.Any]*): Self = this.set("inheritedFrom", js.Array(value :_*))
+    @scala.inline
+    def setInheritedFrom(
+      value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
+    ): Self = this.set("inheritedFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInheritedFrom: Self = this.set("inheritedFrom", js.undefined)
+    @scala.inline
+    def setKindStringVarargs(value: _ModelToObject[js.Any]*): Self = this.set("kindString", js.Array(value :_*))
+    @scala.inline
+    def setKindString(value: ModelToObject[js.UndefOr[String]] | String): Self = this.set("kindString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKindString: Self = this.set("kindString", js.undefined)
+    @scala.inline
+    def setOriginalName(value: String): Self = this.set("originalName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalName: Self = this.set("originalName", js.undefined)
+    @scala.inline
+    def setOverwritesVarargs(value: _ModelToObject[js.Any]*): Self = this.set("overwrites", js.Array(value :_*))
+    @scala.inline
+    def setOverwrites(
+      value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
+    ): Self = this.set("overwrites", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverwrites: Self = this.set("overwrites", js.undefined)
+    @scala.inline
+    def setParametersVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setSetSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("setSignature", js.Array(value :_*))
+    @scala.inline
+    def setSetSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("setSignature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetSignature: Self = this.set("setSignature", js.undefined)
+    @scala.inline
+    def setSignaturesVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("signatures", js.Array(value :_*))
+    @scala.inline
+    def setSignatures(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("signatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignatures: Self = this.set("signatures", js.undefined)
+    @scala.inline
+    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(
+      value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
+    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setTypeParameterVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = this.set("typeParameter", js.Array(value :_*))
+    @scala.inline
+    def setTypeParameter(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = this.set("typeParameter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeParameter: Self = this.set("typeParameter", js.undefined)
+  }
+  
 }
 

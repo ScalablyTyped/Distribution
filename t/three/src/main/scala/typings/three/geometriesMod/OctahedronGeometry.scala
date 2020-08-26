@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class OctahedronGeometry ()
   extends typings.three.octahedronGeometryMod.OctahedronGeometry {
   def this(radius: Double) = this()
+  def this(radius: js.UndefOr[scala.Nothing], detail: Double) = this()
   def this(radius: Double, detail: Double) = this()
 }
 

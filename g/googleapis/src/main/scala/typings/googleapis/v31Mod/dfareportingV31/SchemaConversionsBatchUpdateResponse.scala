@@ -27,16 +27,36 @@ trait SchemaConversionsBatchUpdateResponse extends js.Object {
 
 object SchemaConversionsBatchUpdateResponse {
   @scala.inline
-  def apply(
-    hasFailures: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    status: js.Array[SchemaConversionStatus] = null
-  ): SchemaConversionsBatchUpdateResponse = {
+  def apply(): SchemaConversionsBatchUpdateResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasFailures)) __obj.updateDynamic("hasFailures")(hasFailures.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConversionsBatchUpdateResponse]
   }
+  @scala.inline
+  implicit class SchemaConversionsBatchUpdateResponseOps[Self <: SchemaConversionsBatchUpdateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHasFailures(value: Boolean): Self = this.set("hasFailures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasFailures: Self = this.set("hasFailures", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setStatusVarargs(value: SchemaConversionStatus*): Self = this.set("status", js.Array(value :_*))
+    @scala.inline
+    def setStatus(value: js.Array[SchemaConversionStatus]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

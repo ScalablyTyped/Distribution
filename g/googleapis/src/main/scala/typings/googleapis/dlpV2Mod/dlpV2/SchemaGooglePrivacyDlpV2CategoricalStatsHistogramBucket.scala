@@ -31,20 +31,44 @@ trait SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket extends js.Object 
 
 object SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket {
   @scala.inline
-  def apply(
-    bucketSize: String = null,
-    bucketValueCount: String = null,
-    bucketValues: js.Array[SchemaGooglePrivacyDlpV2ValueFrequency] = null,
-    valueFrequencyLowerBound: String = null,
-    valueFrequencyUpperBound: String = null
-  ): SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket = {
+  def apply(): SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket = {
     val __obj = js.Dynamic.literal()
-    if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
-    if (bucketValueCount != null) __obj.updateDynamic("bucketValueCount")(bucketValueCount.asInstanceOf[js.Any])
-    if (bucketValues != null) __obj.updateDynamic("bucketValues")(bucketValues.asInstanceOf[js.Any])
-    if (valueFrequencyLowerBound != null) __obj.updateDynamic("valueFrequencyLowerBound")(valueFrequencyLowerBound.asInstanceOf[js.Any])
-    if (valueFrequencyUpperBound != null) __obj.updateDynamic("valueFrequencyUpperBound")(valueFrequencyUpperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucketOps[Self <: SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketSize(value: String): Self = this.set("bucketSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketSize: Self = this.set("bucketSize", js.undefined)
+    @scala.inline
+    def setBucketValueCount(value: String): Self = this.set("bucketValueCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketValueCount: Self = this.set("bucketValueCount", js.undefined)
+    @scala.inline
+    def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2ValueFrequency*): Self = this.set("bucketValues", js.Array(value :_*))
+    @scala.inline
+    def setBucketValues(value: js.Array[SchemaGooglePrivacyDlpV2ValueFrequency]): Self = this.set("bucketValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketValues: Self = this.set("bucketValues", js.undefined)
+    @scala.inline
+    def setValueFrequencyLowerBound(value: String): Self = this.set("valueFrequencyLowerBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueFrequencyLowerBound: Self = this.set("valueFrequencyLowerBound", js.undefined)
+    @scala.inline
+    def setValueFrequencyUpperBound(value: String): Self = this.set("valueFrequencyUpperBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueFrequencyUpperBound: Self = this.set("valueFrequencyUpperBound", js.undefined)
+  }
+  
 }
 

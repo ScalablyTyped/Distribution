@@ -30,20 +30,42 @@ trait DeliveryChannel extends js.Object {
 
 object DeliveryChannel {
   @scala.inline
-  def apply(
-    configSnapshotDeliveryProperties: ConfigSnapshotDeliveryProperties = null,
-    name: ChannelName = null,
-    s3BucketName: String = null,
-    s3KeyPrefix: String = null,
-    snsTopicARN: String = null
-  ): DeliveryChannel = {
+  def apply(): DeliveryChannel = {
     val __obj = js.Dynamic.literal()
-    if (configSnapshotDeliveryProperties != null) __obj.updateDynamic("configSnapshotDeliveryProperties")(configSnapshotDeliveryProperties.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (s3BucketName != null) __obj.updateDynamic("s3BucketName")(s3BucketName.asInstanceOf[js.Any])
-    if (s3KeyPrefix != null) __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix.asInstanceOf[js.Any])
-    if (snsTopicARN != null) __obj.updateDynamic("snsTopicARN")(snsTopicARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryChannel]
   }
+  @scala.inline
+  implicit class DeliveryChannelOps[Self <: DeliveryChannel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigSnapshotDeliveryProperties(value: ConfigSnapshotDeliveryProperties): Self = this.set("configSnapshotDeliveryProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigSnapshotDeliveryProperties: Self = this.set("configSnapshotDeliveryProperties", js.undefined)
+    @scala.inline
+    def setName(value: ChannelName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setS3BucketName(value: String): Self = this.set("s3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BucketName: Self = this.set("s3BucketName", js.undefined)
+    @scala.inline
+    def setS3KeyPrefix(value: String): Self = this.set("s3KeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3KeyPrefix: Self = this.set("s3KeyPrefix", js.undefined)
+    @scala.inline
+    def setSnsTopicARN(value: String): Self = this.set("snsTopicARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnsTopicARN: Self = this.set("snsTopicARN", js.undefined)
+  }
+  
 }
 

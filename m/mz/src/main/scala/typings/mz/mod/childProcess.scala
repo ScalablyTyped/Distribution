@@ -1,8 +1,8 @@
 package typings.mz.mod
 
-import typings.mz.anon.encodingBufferEncodingExe
+import typings.mz.anon.encodingBufferEncodingund
 import typings.mz.anon.encodingbuffernullundefin
-import typings.mz.anon.encodingstringnullExecOpt
+import typings.mz.anon.encodingstringnullundefin
 import typings.mz.childProcessMod.ExecFileOptionsWithBufferEncoding
 import typings.mz.childProcessMod.ExecFileOptionsWithOtherEncoding
 import typings.node.Buffer
@@ -45,7 +45,7 @@ object childProcess extends js.Object {
   ): ChildProcess = js.native
   def exec(
     command: String,
-    options: js.UndefOr[Null | encodingBufferEncodingExe | encodingstringnullExecOpt],
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       ExecException | Null, 
       Buffer | (/* stdout */ String), 
@@ -53,56 +53,221 @@ object childProcess extends js.Object {
       Unit
     ]
   ): ChildProcess = js.native
-  def exec(command: String, options: encodingBufferEncodingExe): js.Promise[js.Tuple2[String, String]] = js.native
+  def exec(
+    command: String,
+    options: Null,
+    callback: js.Function3[
+      ExecException | Null, 
+      Buffer | (/* stdout */ String), 
+      Buffer | (/* stderr */ String), 
+      Unit
+    ]
+  ): ChildProcess = js.native
+  def exec(command: String, options: encodingBufferEncodingund): js.Promise[js.Tuple2[String, String]] = js.native
+  def exec(
+    command: String,
+    options: encodingBufferEncodingund,
+    callback: js.Function3[/* error */ ExecException | Null, /* stdout */ String, /* stderr */ String, Unit]
+  ): ChildProcess = js.native
   def exec(command: String, options: encodingbuffernullundefin): js.Promise[js.Tuple2[Buffer, Buffer]] = js.native
   def exec(
     command: String,
     options: encodingbuffernullundefin,
     callback: js.Function3[/* error */ ExecException | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
-  def exec(command: String, options: encodingstringnullExecOpt): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = js.native
+  def exec(command: String, options: encodingstringnullundefin): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = js.native
+  def exec(
+    command: String,
+    options: encodingstringnullundefin,
+    callback: js.Function3[
+      /* error */ ExecException | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
   def execFile(file: String): js.Promise[js.Tuple2[String, String]] = js.native
   def execFile(
     file: String,
-    args: js.UndefOr[js.Array[String] | ExecFileOptionsWithOtherEncoding | Null],
+    args: js.UndefOr[scala.Nothing],
     callback: js.Function3[Error | Null, Buffer | (/* stdout */ String), Buffer | (/* stderr */ String), Unit]
   ): ChildProcess = js.native
   def execFile(
     file: String,
-    args: js.UndefOr[js.Array[String] | Null],
-    options: js.UndefOr[ExecFileOptionsWithOtherEncoding | Null],
-    callback: js.Function3[Error | Null, Buffer | String, Buffer | String, Unit]
+    args: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ Error | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
   ): ChildProcess = js.native
   def execFile(
     file: String,
-    args: js.UndefOr[js.Array[String] | Null],
-    options: ExecFileOptionsWithBufferEncoding
-  ): js.Promise[js.Tuple2[Buffer, Buffer]] = js.native
+    args: js.UndefOr[scala.Nothing],
+    options: Null,
+    callback: js.Function3[
+      /* error */ Error | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
+  def execFile(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptionsWithBufferEncoding): js.Promise[js.Tuple2[Buffer, Buffer]] = js.native
   def execFile(
     file: String,
-    args: js.UndefOr[js.Array[String] | Null],
+    args: js.UndefOr[scala.Nothing],
     options: ExecFileOptionsWithBufferEncoding,
-    callback: js.Function3[Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    callback: js.Function3[/* error */ Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
+  def execFile(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptionsWithOtherEncoding): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = js.native
   def execFile(
     file: String,
-    args: js.UndefOr[js.Array[String] | Null],
+    args: js.UndefOr[scala.Nothing],
+    options: ExecFileOptionsWithOtherEncoding,
+    callback: js.Function3[
+      /* error */ Error | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
+  def execFile(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = js.native
+  def execFile(file: String, args: js.UndefOr[scala.Nothing], options: ExecFileOptionsWithStringEncoding): js.Promise[js.Tuple2[String, String]] = js.native
+  def execFile(
+    file: String,
+    args: js.UndefOr[scala.Nothing],
     options: ExecFileOptionsWithStringEncoding,
-    callback: js.Function3[Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+    callback: js.Function3[/* error */ Error | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): ChildProcess = js.native
   def execFile(
     file: String,
-    args: js.UndefOr[js.Array[String] | Null],
+    args: js.UndefOr[scala.Nothing],
     options: ExecFileOptions,
-    callback: js.Function3[Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+    callback: js.Function3[/* error */ Error | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): ChildProcess = js.native
   def execFile(file: String, args: js.Array[String]): js.Promise[js.Tuple2[String, String]] = js.native
+  def execFile(
+    file: String,
+    args: js.Array[String],
+    callback: js.Function3[/* error */ Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+  ): ChildProcess = js.native
+  def execFile(
+    file: String,
+    args: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ Error | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
+  def execFile(
+    file: String,
+    args: js.Array[String],
+    options: Null,
+    callback: js.Function3[
+      /* error */ Error | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
+  def execFile(file: String, args: js.Array[String], options: ExecFileOptionsWithBufferEncoding): js.Promise[js.Tuple2[Buffer, Buffer]] = js.native
+  def execFile(
+    file: String,
+    args: js.Array[String],
+    options: ExecFileOptionsWithBufferEncoding,
+    callback: js.Function3[/* error */ Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): ChildProcess = js.native
   def execFile(file: String, args: js.Array[String], options: ExecFileOptionsWithOtherEncoding): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = js.native
+  def execFile(
+    file: String,
+    args: js.Array[String],
+    options: ExecFileOptionsWithOtherEncoding,
+    callback: js.Function3[
+      /* error */ Error | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
   def execFile(file: String, args: js.Array[String], options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = js.native
   def execFile(file: String, args: js.Array[String], options: ExecFileOptionsWithStringEncoding): js.Promise[js.Tuple2[String, String]] = js.native
+  def execFile(
+    file: String,
+    args: js.Array[String],
+    options: ExecFileOptionsWithStringEncoding,
+    callback: js.Function3[/* error */ Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+  ): ChildProcess = js.native
+  def execFile(
+    file: String,
+    args: js.Array[String],
+    options: ExecFileOptions,
+    callback: js.Function3[/* error */ Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+  ): ChildProcess = js.native
+  def execFile(
+    file: String,
+    args: Null,
+    callback: js.Function3[Error | Null, Buffer | (/* stdout */ String), Buffer | (/* stderr */ String), Unit]
+  ): ChildProcess = js.native
+  def execFile(
+    file: String,
+    args: Null,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ Error | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
+  def execFile(
+    file: String,
+    args: Null,
+    options: Null,
+    callback: js.Function3[
+      /* error */ Error | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
+  def execFile(file: String, args: Null, options: ExecFileOptionsWithBufferEncoding): js.Promise[js.Tuple2[Buffer, Buffer]] = js.native
+  def execFile(
+    file: String,
+    args: Null,
+    options: ExecFileOptionsWithBufferEncoding,
+    callback: js.Function3[/* error */ Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+  ): ChildProcess = js.native
   def execFile(file: String, args: Null, options: ExecFileOptionsWithOtherEncoding): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = js.native
+  def execFile(
+    file: String,
+    args: Null,
+    options: ExecFileOptionsWithOtherEncoding,
+    callback: js.Function3[
+      /* error */ Error | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
   def execFile(file: String, args: Null, options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = js.native
   def execFile(file: String, args: Null, options: ExecFileOptionsWithStringEncoding): js.Promise[js.Tuple2[String, String]] = js.native
+  def execFile(
+    file: String,
+    args: Null,
+    options: ExecFileOptionsWithStringEncoding,
+    callback: js.Function3[/* error */ Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+  ): ChildProcess = js.native
+  def execFile(
+    file: String,
+    args: Null,
+    options: ExecFileOptions,
+    callback: js.Function3[/* error */ Error | Null, /* stdout */ String, /* stderr */ String, Unit]
+  ): ChildProcess = js.native
   def execFile(
     file: String,
     callback: js.Function3[/* error */ Error | Null, /* stdout */ String, /* stderr */ String, Unit]
@@ -114,6 +279,16 @@ object childProcess extends js.Object {
     callback: js.Function3[/* error */ Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
   def execFile(file: String, options: ExecFileOptionsWithOtherEncoding): js.Promise[js.Tuple2[String | Buffer, String | Buffer]] = js.native
+  def execFile(
+    file: String,
+    options: ExecFileOptionsWithOtherEncoding,
+    callback: js.Function3[
+      /* error */ Error | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
   def execFile(file: String, options: ExecFileOptions): js.Promise[js.Tuple2[String, String]] = js.native
   def execFile(file: String, options: ExecFileOptionsWithStringEncoding): js.Promise[js.Tuple2[String, String]] = js.native
   def execFile(
@@ -131,6 +306,9 @@ object childProcess extends js.Object {
     callback: js.Function3[/* error */ Error | Null, /* stdout */ String, /* stderr */ String, Unit]
   ): ChildProcess = js.native
   def execFileSync(command: String): String = js.native
+  def execFileSync(command: String, args: js.UndefOr[scala.Nothing], options: ExecFileSyncOptions): Buffer = js.native
+  def execFileSync(command: String, args: js.UndefOr[scala.Nothing], options: ExecFileSyncOptionsWithBufferEncoding): Buffer = js.native
+  def execFileSync(command: String, args: js.UndefOr[scala.Nothing], options: ExecFileSyncOptionsWithStringEncoding): String = js.native
   def execFileSync(command: String, args: js.Array[String]): String = js.native
   def execFileSync(command: String, args: js.Array[String], options: ExecFileSyncOptions): Buffer = js.native
   def execFileSync(command: String, args: js.Array[String], options: ExecFileSyncOptionsWithBufferEncoding): Buffer = js.native
@@ -149,10 +327,13 @@ object childProcess extends js.Object {
   @JSName("execSync")
   def execSync_Buffer(command: String): Buffer = js.native
   def fork(modulePath: String): ChildProcess = js.native
+  def fork(modulePath: String, args: js.UndefOr[scala.Nothing], options: ForkOptions): ChildProcess = js.native
   def fork(modulePath: String, args: js.Array[String]): ChildProcess = js.native
   def fork(modulePath: String, args: js.Array[String], options: ForkOptions): ChildProcess = js.native
+  def fork(modulePath: String, options: ForkOptions): ChildProcess = js.native
   // overloads of spawn without 'args'
   def spawn(command: String): ChildProcessWithoutNullStreams = js.native
+  def spawn(command: String, args: js.UndefOr[scala.Nothing], options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def spawn(command: String, args: js.Array[String]): ChildProcessWithoutNullStreams = js.native
   def spawn(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = js.native
   def spawn(
@@ -168,6 +349,9 @@ object childProcess extends js.Object {
   ): ChildProcessByStdio[Writable, Readable, Readable] = js.native
   def spawn(command: String, options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def spawnSync(command: String): SpawnSyncReturns[Buffer] = js.native
+  def spawnSync(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
+  def spawnSync(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
+  def spawnSync(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = js.native
   def spawnSync(command: String, args: js.Array[String]): SpawnSyncReturns[String] = js.native
   def spawnSync(command: String, args: js.Array[String], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
   def spawnSync(command: String, args: js.Array[String], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native

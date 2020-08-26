@@ -12,7 +12,7 @@ Pure JS popover component for react-native
 | Keywords           | react, react-native, popover, modal |
 | # releases         | 10 |
 | # dependents       | 5 |
-| # downloads        | 158628 |
+| # downloads        | 165227 |
 | # stars            | 0 |
 
 ## Links

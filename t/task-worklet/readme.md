@@ -12,7 +12,7 @@ Streamlined processing of tasks in a shared threadpool.
 | Keywords           | tasks, task worklet, TaskWorklet, threads, multithreading |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 232 |
+| # downloads        | 220 |
 | # stars            | 0 |
 
 ## Links

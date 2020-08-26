@@ -1,7 +1,7 @@
 
 # Scala.js typings for mqtt-packet
 
-Typings are for version 6.3.1
+Typings are for version 6.3.2
 
 ## Library description:
 Parse and generate MQTT packets like a breeze

@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 trait ResponseConstructor
   extends Instantiable1[/* body */ String, Response]
      with Instantiable2[/* body */ String, /* status */ Double, Response]
-     with Instantiable3[/* body */ String, /* status */ Double, /* headers */ js.Object, Response]
+     with Instantiable3[/* body */ String, js.UndefOr[/* status */ Double], /* headers */ js.Object, Response]
 

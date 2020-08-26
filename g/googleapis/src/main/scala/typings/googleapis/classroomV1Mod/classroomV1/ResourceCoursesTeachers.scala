@@ -36,6 +36,7 @@ class ResourceCoursesTeachers protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaTeacher] = js.native
   def create(callback: BodyResponseCallback[SchemaTeacher]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTeacher] = js.native
   def create(params: ParamsResourceCoursesTeachersCreate): GaxiosPromise[SchemaTeacher] = js.native
   def create(params: ParamsResourceCoursesTeachersCreate, callback: BodyResponseCallback[SchemaTeacher]): Unit = js.native
   def create(
@@ -69,6 +70,7 @@ class ResourceCoursesTeachers protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesTeachersDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesTeachersDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -101,6 +103,7 @@ class ResourceCoursesTeachers protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTeacher] = js.native
   def get(callback: BodyResponseCallback[SchemaTeacher]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTeacher] = js.native
   def get(params: ParamsResourceCoursesTeachersGet): GaxiosPromise[SchemaTeacher] = js.native
   def get(params: ParamsResourceCoursesTeachersGet, callback: BodyResponseCallback[SchemaTeacher]): Unit = js.native
   def get(
@@ -133,6 +136,7 @@ class ResourceCoursesTeachers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListTeachersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTeachersResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTeachersResponse] = js.native
   def list(params: ParamsResourceCoursesTeachersList): GaxiosPromise[SchemaListTeachersResponse] = js.native
   def list(
     params: ParamsResourceCoursesTeachersList,

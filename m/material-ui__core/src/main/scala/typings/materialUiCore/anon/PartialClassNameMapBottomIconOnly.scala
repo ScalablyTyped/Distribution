@@ -16,20 +16,42 @@ trait PartialClassNameMapBottomIconOnly extends js.Object {
 
 object PartialClassNameMapBottomIconOnly {
   @scala.inline
-  def apply(
-    iconOnly: String = null,
-    label: String = null,
-    root: String = null,
-    selected: String = null,
-    wrapper: String = null
-  ): PartialClassNameMapBottomIconOnly = {
+  def apply(): PartialClassNameMapBottomIconOnly = {
     val __obj = js.Dynamic.literal()
-    if (iconOnly != null) __obj.updateDynamic("iconOnly")(iconOnly.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapBottomIconOnly]
   }
+  @scala.inline
+  implicit class PartialClassNameMapBottomIconOnlyOps[Self <: PartialClassNameMapBottomIconOnly] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIconOnly(value: String): Self = this.set("iconOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconOnly: Self = this.set("iconOnly", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setWrapper(value: String): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+  }
+  
 }
 

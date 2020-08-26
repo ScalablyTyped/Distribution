@@ -25,7 +25,7 @@ trait NetworkAclArgs extends js.Object {
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The ID of the associated VPC.
     */
@@ -34,19 +34,46 @@ trait NetworkAclArgs extends js.Object {
 
 object NetworkAclArgs {
   @scala.inline
-  def apply(
-    vpcId: Input[String],
-    egress: Input[js.Array[Input[NetworkAclEgress]]] = null,
-    ingress: Input[js.Array[Input[NetworkAclIngress]]] = null,
-    subnetIds: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): NetworkAclArgs = {
+  def apply(vpcId: Input[String]): NetworkAclArgs = {
     val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any])
-    if (egress != null) __obj.updateDynamic("egress")(egress.asInstanceOf[js.Any])
-    if (ingress != null) __obj.updateDynamic("ingress")(ingress.asInstanceOf[js.Any])
-    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkAclArgs]
   }
+  @scala.inline
+  implicit class NetworkAclArgsOps[Self <: NetworkAclArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEgressVarargs(value: Input[NetworkAclEgress]*): Self = this.set("egress", js.Array(value :_*))
+    @scala.inline
+    def setEgress(value: Input[js.Array[Input[NetworkAclEgress]]]): Self = this.set("egress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEgress: Self = this.set("egress", js.undefined)
+    @scala.inline
+    def setIngressVarargs(value: Input[NetworkAclIngress]*): Self = this.set("ingress", js.Array(value :_*))
+    @scala.inline
+    def setIngress(value: Input[js.Array[Input[NetworkAclIngress]]]): Self = this.set("ingress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngress: Self = this.set("ingress", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: Input[String]*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("subnetIds", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

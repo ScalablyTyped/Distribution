@@ -22,11 +22,32 @@ trait SchemaAccountsAuthInfoResponse extends js.Object {
 
 object SchemaAccountsAuthInfoResponse {
   @scala.inline
-  def apply(accountIdentifiers: js.Array[SchemaAccountIdentifier] = null, kind: String = null): SchemaAccountsAuthInfoResponse = {
+  def apply(): SchemaAccountsAuthInfoResponse = {
     val __obj = js.Dynamic.literal()
-    if (accountIdentifiers != null) __obj.updateDynamic("accountIdentifiers")(accountIdentifiers.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountsAuthInfoResponse]
   }
+  @scala.inline
+  implicit class SchemaAccountsAuthInfoResponseOps[Self <: SchemaAccountsAuthInfoResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountIdentifiersVarargs(value: SchemaAccountIdentifier*): Self = this.set("accountIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setAccountIdentifiers(value: js.Array[SchemaAccountIdentifier]): Self = this.set("accountIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountIdentifiers: Self = this.set("accountIdentifiers", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

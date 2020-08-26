@@ -6,43 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sandboxed-module", JSImport.Namespace)
 @js.native
-class ^ () extends SandboxedModule {
-  /**
-    * A getter returning the sandboxedModule.module.exports object.
-    */
-  /* CompleteClass */
-  override var exports: js.Any = js.native
-  /**
-    * The full path to the module.
-    */
-  /* CompleteClass */
-  override var filename: String = js.native
-  /**
-    * See {@link SandboxOptions.globals}
-    */
-  /* CompleteClass */
-  override var globals: js.Object = js.native
-  /**
-    * See {@link SandboxOptions.locals}
-    */
-  /* CompleteClass */
-  override var locals: js.Object = js.native
-  /**
-    * The underlaying node.js Module instance.
-    */
-  /* CompleteClass */
-  override var module: String = js.native
-  /**
-    * See {@link SandboxOptions.requires}
-    */
-  /* CompleteClass */
-  override var required: js.Object = js.native
-  /**
-    * See {@link SandboxOptions.sourceTransformers}.
-    */
-  /* CompleteClass */
-  override var sourceTransformers: js.Object = js.native
-}
+class ^ () extends SandboxedModule
 
 @JSImport("sandboxed-module", JSImport.Namespace)
 @js.native

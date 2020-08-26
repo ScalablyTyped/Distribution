@@ -32,6 +32,7 @@ class ResourceFiles protected () extends js.Object {
     */
   def asyncBatchAnnotate(): GaxiosPromise[SchemaOperation] = js.native
   def asyncBatchAnnotate(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def asyncBatchAnnotate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def asyncBatchAnnotate(params: ParamsResourceFilesAsyncbatchannotate): GaxiosPromise[SchemaOperation] = js.native
   def asyncBatchAnnotate(params: ParamsResourceFilesAsyncbatchannotate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def asyncBatchAnnotate(

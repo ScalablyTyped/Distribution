@@ -11,8 +11,8 @@ Utility for easy setup and access of SAP HANA XS Advanced environment variables
 | Full name          | @sap/xsenv |
 | Keywords           | - |
 | # releases         | 10 |
-| # dependents       | 30 |
-| # downloads        | 15233 |
+| # dependents       | 33 |
+| # downloads        | 74072 |
 | # stars            | 0 |
 
 ## Links

@@ -4,20 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BatchUpdatePhotosRequest extends js.Object {
   /**
     * Required. List of
     * UpdatePhotoRequests.
     */
-  var updatePhotoRequests: js.UndefOr[js.Array[UpdatePhotoRequest]] = js.undefined
+  var updatePhotoRequests: js.UndefOr[js.Array[UpdatePhotoRequest]] = js.native
 }
 
 object BatchUpdatePhotosRequest {
   @scala.inline
-  def apply(updatePhotoRequests: js.Array[UpdatePhotoRequest] = null): BatchUpdatePhotosRequest = {
+  def apply(): BatchUpdatePhotosRequest = {
     val __obj = js.Dynamic.literal()
-    if (updatePhotoRequests != null) __obj.updateDynamic("updatePhotoRequests")(updatePhotoRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdatePhotosRequest]
   }
+  @scala.inline
+  implicit class BatchUpdatePhotosRequestOps[Self <: BatchUpdatePhotosRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUpdatePhotoRequestsVarargs(value: UpdatePhotoRequest*): Self = this.set("updatePhotoRequests", js.Array(value :_*))
+    @scala.inline
+    def setUpdatePhotoRequests(value: js.Array[UpdatePhotoRequest]): Self = this.set("updatePhotoRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatePhotoRequests: Self = this.set("updatePhotoRequests", js.undefined)
+  }
+  
 }
 

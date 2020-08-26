@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZoomOptions extends js.Object {
-  var containerClass: js.UndefOr[String] = js.undefined
-  var maxRatio: js.UndefOr[Double] = js.undefined
-  var minRatio: js.UndefOr[Double] = js.undefined
-  var toggle: js.UndefOr[Boolean] = js.undefined
-  var zoomedSlideClass: js.UndefOr[String] = js.undefined
+  var containerClass: js.UndefOr[String] = js.native
+  var maxRatio: js.UndefOr[Double] = js.native
+  var minRatio: js.UndefOr[Double] = js.native
+  var toggle: js.UndefOr[Boolean] = js.native
+  var zoomedSlideClass: js.UndefOr[String] = js.native
 }
 
 object ZoomOptions {
   @scala.inline
-  def apply(
-    containerClass: String = null,
-    maxRatio: js.UndefOr[Double] = js.undefined,
-    minRatio: js.UndefOr[Double] = js.undefined,
-    toggle: js.UndefOr[Boolean] = js.undefined,
-    zoomedSlideClass: String = null
-  ): ZoomOptions = {
+  def apply(): ZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRatio)) __obj.updateDynamic("maxRatio")(maxRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minRatio)) __obj.updateDynamic("minRatio")(minRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle.get.asInstanceOf[js.Any])
-    if (zoomedSlideClass != null) __obj.updateDynamic("zoomedSlideClass")(zoomedSlideClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomOptions]
   }
+  @scala.inline
+  implicit class ZoomOptionsOps[Self <: ZoomOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerClass(value: String): Self = this.set("containerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerClass: Self = this.set("containerClass", js.undefined)
+    @scala.inline
+    def setMaxRatio(value: Double): Self = this.set("maxRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRatio: Self = this.set("maxRatio", js.undefined)
+    @scala.inline
+    def setMinRatio(value: Double): Self = this.set("minRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinRatio: Self = this.set("minRatio", js.undefined)
+    @scala.inline
+    def setToggle(value: Boolean): Self = this.set("toggle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggle: Self = this.set("toggle", js.undefined)
+    @scala.inline
+    def setZoomedSlideClass(value: String): Self = this.set("zoomedSlideClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomedSlideClass: Self = this.set("zoomedSlideClass", js.undefined)
+  }
+  
 }
 

@@ -26,10 +26,8 @@ class CsvSerializingSession protected () extends BaseGridSerializingSession[Stri
   var lineOpened: js.Any = js.native
   var result: js.Any = js.native
   var suppressQuotes: js.Any = js.native
-  /* private */ def onNewBodyRowColumn(column: js.Any, index: js.Any): js.Any = js.native
   /* private */ def onNewBodyRowColumn(column: js.Any, index: js.Any, node: js.Any): js.Any = js.native
   /* private */ def onNewHeaderGroupingRowColumn(header: js.Any, index: js.Any, span: js.Any): js.Any = js.native
-  /* private */ def onNewHeaderRowColumn(column: js.Any, index: js.Any): js.Any = js.native
   /* private */ def onNewHeaderRowColumn(column: js.Any, index: js.Any, node: js.Any): js.Any = js.native
   /* private */ def putInQuotes(value: js.Any, suppressQuotes: js.Any): js.Any = js.native
 }

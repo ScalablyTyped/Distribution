@@ -22,16 +22,36 @@ trait SearchProvisionedProductsOutput extends js.Object {
 
 object SearchProvisionedProductsOutput {
   @scala.inline
-  def apply(
-    NextPageToken: PageToken = null,
-    ProvisionedProducts: ProvisionedProductAttributes = null,
-    TotalResultsCount: js.UndefOr[TotalResultsCount] = js.undefined
-  ): SearchProvisionedProductsOutput = {
+  def apply(): SearchProvisionedProductsOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (ProvisionedProducts != null) __obj.updateDynamic("ProvisionedProducts")(ProvisionedProducts.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalResultsCount)) __obj.updateDynamic("TotalResultsCount")(TotalResultsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchProvisionedProductsOutput]
   }
+  @scala.inline
+  implicit class SearchProvisionedProductsOutputOps[Self <: SearchProvisionedProductsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    @scala.inline
+    def setProvisionedProductsVarargs(value: ProvisionedProductAttribute*): Self = this.set("ProvisionedProducts", js.Array(value :_*))
+    @scala.inline
+    def setProvisionedProducts(value: ProvisionedProductAttributes): Self = this.set("ProvisionedProducts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedProducts: Self = this.set("ProvisionedProducts", js.undefined)
+    @scala.inline
+    def setTotalResultsCount(value: TotalResultsCount): Self = this.set("TotalResultsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalResultsCount: Self = this.set("TotalResultsCount", js.undefined)
+  }
+  
 }
 

@@ -13,13 +13,14 @@ import scala.scalajs.js.annotation._
   *
   * Note: This interface is currently only for web only.
   */
+@js.native
 trait PaymentDataRequestUpdate extends js.Object {
   /**
     * Error for the last PaymentData, will be displayed to the user.
     *
     * Note: This field is currently only for web only.
     */
-  var error: js.UndefOr[PaymentDataError] = js.undefined
+  var error: js.UndefOr[PaymentDataError] = js.native
   /**
     * Contains updated shipping option parameters. All fields in
     * ShippingOptionParameters are allowed in the update.
@@ -28,28 +29,46 @@ trait PaymentDataRequestUpdate extends js.Object {
     * options instead of a delta of any earlier version. Note: This field
     * is currently only for web only.
     */
-  var newShippingOptionParameters: js.UndefOr[ShippingOptionParameters] = js.undefined
+  var newShippingOptionParameters: js.UndefOr[ShippingOptionParameters] = js.native
   /**
     * Contains updated totals and line items. Only changes in totalPrice,
     * totalPriceStatus, transactionNote, displayItems will be allowed.
     *
     * Note: This field is currently only for web only.
     */
-  var newTransactionInfo: js.UndefOr[TransactionInfo] = js.undefined
+  var newTransactionInfo: js.UndefOr[TransactionInfo] = js.native
 }
 
 object PaymentDataRequestUpdate {
   @scala.inline
-  def apply(
-    error: PaymentDataError = null,
-    newShippingOptionParameters: ShippingOptionParameters = null,
-    newTransactionInfo: TransactionInfo = null
-  ): PaymentDataRequestUpdate = {
+  def apply(): PaymentDataRequestUpdate = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (newShippingOptionParameters != null) __obj.updateDynamic("newShippingOptionParameters")(newShippingOptionParameters.asInstanceOf[js.Any])
-    if (newTransactionInfo != null) __obj.updateDynamic("newTransactionInfo")(newTransactionInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDataRequestUpdate]
   }
+  @scala.inline
+  implicit class PaymentDataRequestUpdateOps[Self <: PaymentDataRequestUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: PaymentDataError): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setNewShippingOptionParameters(value: ShippingOptionParameters): Self = this.set("newShippingOptionParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewShippingOptionParameters: Self = this.set("newShippingOptionParameters", js.undefined)
+    @scala.inline
+    def setNewTransactionInfo(value: TransactionInfo): Self = this.set("newTransactionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewTransactionInfo: Self = this.set("newTransactionInfo", js.undefined)
+  }
+  
 }
 

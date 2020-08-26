@@ -12,7 +12,7 @@ A JS library for finding optimal label position inside a polygon
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 21 |
-| # downloads        | 725592 |
+| # downloads        | 789459 |
 | # stars            | 3 |
 
 ## Links

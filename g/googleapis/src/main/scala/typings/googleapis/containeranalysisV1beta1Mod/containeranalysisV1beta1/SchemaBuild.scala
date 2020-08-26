@@ -23,11 +23,30 @@ trait SchemaBuild extends js.Object {
 
 object SchemaBuild {
   @scala.inline
-  def apply(builderVersion: String = null, signature: SchemaBuildSignature = null): SchemaBuild = {
+  def apply(): SchemaBuild = {
     val __obj = js.Dynamic.literal()
-    if (builderVersion != null) __obj.updateDynamic("builderVersion")(builderVersion.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuild]
   }
+  @scala.inline
+  implicit class SchemaBuildOps[Self <: SchemaBuild] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuilderVersion(value: String): Self = this.set("builderVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuilderVersion: Self = this.set("builderVersion", js.undefined)
+    @scala.inline
+    def setSignature(value: SchemaBuildSignature): Self = this.set("signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("signature", js.undefined)
+  }
+  
 }
 

@@ -15,6 +15,13 @@ object onSchedule extends js.Object {
     name: String,
     schedule: String,
     handler: EventRuleEventHandler,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions
+  ): typings.pulumiAws.eventRuleMixinsMod.EventRuleEventSubscription = js.native
+  def apply(
+    name: String,
+    schedule: String,
+    handler: EventRuleEventHandler,
     args: EventRuleEventSubscriptionArgs
   ): typings.pulumiAws.eventRuleMixinsMod.EventRuleEventSubscription = js.native
   def apply(

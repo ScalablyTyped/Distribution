@@ -21,9 +21,19 @@ object anon extends js.Object {
       * This method returns an object with the method cancel(), which you call if you want to cancel live replication.
       */
     def from[Content](source: String): Replication[Content] = js.native
+    def from[Content](
+      source: String,
+      options: js.UndefOr[scala.Nothing],
+      callback: Callback[ReplicationResultComplete[Content]]
+    ): Replication[Content] = js.native
     def from[Content](source: String, options: ReplicateOptions): Replication[Content] = js.native
     def from[Content](source: String, options: ReplicateOptions, callback: Callback[ReplicationResultComplete[Content]]): Replication[Content] = js.native
     def from[Content](source: Database[Content]): Replication[Content] = js.native
+    def from[Content](
+      source: Database[Content],
+      options: js.UndefOr[scala.Nothing],
+      callback: Callback[ReplicationResultComplete[Content]]
+    ): Replication[Content] = js.native
     def from[Content](source: Database[Content], options: ReplicateOptions): Replication[Content] = js.native
     def from[Content](
       source: Database[Content],
@@ -37,9 +47,19 @@ object anon extends js.Object {
       * This method returns an object with the method cancel(), which you call if you want to cancel live replication.
       */
     def to[Content](target: String): Replication[Content] = js.native
+    def to[Content](
+      target: String,
+      options: js.UndefOr[scala.Nothing],
+      callback: Callback[ReplicationResultComplete[Content]]
+    ): Replication[Content] = js.native
     def to[Content](target: String, options: ReplicateOptions): Replication[Content] = js.native
     def to[Content](target: String, options: ReplicateOptions, callback: Callback[ReplicationResultComplete[Content]]): Replication[Content] = js.native
     def to[Content](target: Database[Content]): Replication[Content] = js.native
+    def to[Content](
+      target: Database[Content],
+      options: js.UndefOr[scala.Nothing],
+      callback: Callback[ReplicationResultComplete[Content]]
+    ): Replication[Content] = js.native
     def to[Content](target: Database[Content], options: ReplicateOptions): Replication[Content] = js.native
     def to[Content](
       target: Database[Content],

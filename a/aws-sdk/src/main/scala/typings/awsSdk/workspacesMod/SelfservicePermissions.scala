@@ -30,20 +30,42 @@ trait SelfservicePermissions extends js.Object {
 
 object SelfservicePermissions {
   @scala.inline
-  def apply(
-    ChangeComputeType: ReconnectEnum = null,
-    IncreaseVolumeSize: ReconnectEnum = null,
-    RebuildWorkspace: ReconnectEnum = null,
-    RestartWorkspace: ReconnectEnum = null,
-    SwitchRunningMode: ReconnectEnum = null
-  ): SelfservicePermissions = {
+  def apply(): SelfservicePermissions = {
     val __obj = js.Dynamic.literal()
-    if (ChangeComputeType != null) __obj.updateDynamic("ChangeComputeType")(ChangeComputeType.asInstanceOf[js.Any])
-    if (IncreaseVolumeSize != null) __obj.updateDynamic("IncreaseVolumeSize")(IncreaseVolumeSize.asInstanceOf[js.Any])
-    if (RebuildWorkspace != null) __obj.updateDynamic("RebuildWorkspace")(RebuildWorkspace.asInstanceOf[js.Any])
-    if (RestartWorkspace != null) __obj.updateDynamic("RestartWorkspace")(RestartWorkspace.asInstanceOf[js.Any])
-    if (SwitchRunningMode != null) __obj.updateDynamic("SwitchRunningMode")(SwitchRunningMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelfservicePermissions]
   }
+  @scala.inline
+  implicit class SelfservicePermissionsOps[Self <: SelfservicePermissions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeComputeType(value: ReconnectEnum): Self = this.set("ChangeComputeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeComputeType: Self = this.set("ChangeComputeType", js.undefined)
+    @scala.inline
+    def setIncreaseVolumeSize(value: ReconnectEnum): Self = this.set("IncreaseVolumeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncreaseVolumeSize: Self = this.set("IncreaseVolumeSize", js.undefined)
+    @scala.inline
+    def setRebuildWorkspace(value: ReconnectEnum): Self = this.set("RebuildWorkspace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRebuildWorkspace: Self = this.set("RebuildWorkspace", js.undefined)
+    @scala.inline
+    def setRestartWorkspace(value: ReconnectEnum): Self = this.set("RestartWorkspace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestartWorkspace: Self = this.set("RestartWorkspace", js.undefined)
+    @scala.inline
+    def setSwitchRunningMode(value: ReconnectEnum): Self = this.set("SwitchRunningMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwitchRunningMode: Self = this.set("SwitchRunningMode", js.undefined)
+  }
+  
 }
 

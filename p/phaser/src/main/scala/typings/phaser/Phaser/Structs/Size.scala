@@ -93,7 +93,11 @@ trait Size extends js.Object {
     * @param fit Perform a `fit` (true) constraint, or an `envelop` (false) constraint. Default true.
     */
   def constrain(): this.type = js.native
+  def constrain(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], fit: Boolean): this.type = js.native
+  def constrain(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
+  def constrain(width: js.UndefOr[scala.Nothing], height: Double, fit: Boolean): this.type = js.native
   def constrain(width: Double): this.type = js.native
+  def constrain(width: Double, height: js.UndefOr[scala.Nothing], fit: Boolean): this.type = js.native
   def constrain(width: Double, height: Double): this.type = js.native
   def constrain(width: Double, height: Double, fit: Boolean): this.type = js.native
   /**
@@ -121,6 +125,7 @@ trait Size extends js.Object {
     * @param height The new height of the Size component. If not given, it will use the width value.
     */
   def envelop(): this.type = js.native
+  def envelop(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def envelop(width: Double): this.type = js.native
   def envelop(width: Double, height: Double): this.type = js.native
   /**
@@ -134,6 +139,7 @@ trait Size extends js.Object {
     * @param height The new height of the Size component. If not given, it will use the width value.
     */
   def fitTo(): this.type = js.native
+  def fitTo(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def fitTo(width: Double): this.type = js.native
   def fitTo(width: Double, height: Double): this.type = js.native
   /**
@@ -208,6 +214,7 @@ trait Size extends js.Object {
     * @param height The maximum allowed height of the Size component. If not given, it will use the `width`. Default width.
     */
   def setMax(): this.type = js.native
+  def setMax(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setMax(width: Double): this.type = js.native
   def setMax(width: Double, height: Double): this.type = js.native
   /**
@@ -223,6 +230,7 @@ trait Size extends js.Object {
     * @param height The minimum allowed height of the Size component. If not given, it will use the `width`. Default width.
     */
   def setMin(): this.type = js.native
+  def setMin(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setMin(width: Double): this.type = js.native
   def setMin(width: Double, height: Double): this.type = js.native
   /**
@@ -262,6 +270,7 @@ trait Size extends js.Object {
     * @param height The new height of the Size component. If not given, it will use the `width`. Default width.
     */
   def setSize(): this.type = js.native
+  def setSize(width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setSize(width: Double): this.type = js.native
   def setSize(width: Double, height: Double): this.type = js.native
   /**
@@ -279,6 +288,7 @@ trait Size extends js.Object {
     * @param snapHeight The amount to snap the height to. If not provided it will use the `snapWidth` value. If you don't want to snap the height, pass a value of zero. Default snapWidth.
     */
   def setSnap(): this.type = js.native
+  def setSnap(snapWidth: js.UndefOr[scala.Nothing], snapHeight: Double): this.type = js.native
   def setSnap(snapWidth: Double): this.type = js.native
   def setSnap(snapWidth: Double, snapHeight: Double): this.type = js.native
   /**

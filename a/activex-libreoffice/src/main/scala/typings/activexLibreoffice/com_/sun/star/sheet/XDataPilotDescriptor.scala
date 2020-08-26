@@ -16,77 +16,78 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sheet.DataPilotDescriptor
   * @see com.sun.star.sheet.DataPilotTable
   */
+@js.native
 trait XDataPilotDescriptor extends XNamed {
   /**
     * returns the collection of the data pilot fields used as column fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  val ColumnFields: XIndexAccess
+  val ColumnFields: XIndexAccess = js.native
   /**
     * returns the collection of the data pilot fields used as data fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  val DataFields: XIndexAccess
+  val DataFields: XIndexAccess = js.native
   /** returns the collection of all the data pilot fields. */
-  val DataPilotFields: XIndexAccess
+  val DataPilotFields: XIndexAccess = js.native
   /** returns the filter descriptor specifying which data from the source cell range are used for the data pilot table. */
-  val FilterDescriptor: XSheetFilterDescriptor
+  val FilterDescriptor: XSheetFilterDescriptor = js.native
   /**
     * returns the collection of the data pilot fields not used as column, row, page, or data fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  val HiddenFields: XIndexAccess
+  val HiddenFields: XIndexAccess = js.native
   /**
     * returns the collection of the data pilot fields used as page fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  val PageFields: XIndexAccess
+  val PageFields: XIndexAccess = js.native
   /**
     * returns the collection of the data pilot fields used as row fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  val RowFields: XIndexAccess
+  val RowFields: XIndexAccess = js.native
   /** returns the cell range containing the data for the data pilot table. */
-  var SourceRange: CellRangeAddress
+  var SourceRange: CellRangeAddress = js.native
   /** returns an additional string stored in the data pilot table. */
-  var Tag: String
+  var Tag: String = js.native
   /**
     * returns the collection of the data pilot fields used as column fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  def getColumnFields(): XIndexAccess
+  def getColumnFields(): XIndexAccess = js.native
   /**
     * returns the collection of the data pilot fields used as data fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  def getDataFields(): XIndexAccess
+  def getDataFields(): XIndexAccess = js.native
   /** returns the collection of all the data pilot fields. */
-  def getDataPilotFields(): XIndexAccess
+  def getDataPilotFields(): XIndexAccess = js.native
   /** returns the filter descriptor specifying which data from the source cell range are used for the data pilot table. */
-  def getFilterDescriptor(): XSheetFilterDescriptor
+  def getFilterDescriptor(): XSheetFilterDescriptor = js.native
   /**
     * returns the collection of the data pilot fields not used as column, row, page, or data fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  def getHiddenFields(): XIndexAccess
+  def getHiddenFields(): XIndexAccess = js.native
   /**
     * returns the collection of the data pilot fields used as page fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  def getPageFields(): XIndexAccess
+  def getPageFields(): XIndexAccess = js.native
   /**
     * returns the collection of the data pilot fields used as row fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  def getRowFields(): XIndexAccess
+  def getRowFields(): XIndexAccess = js.native
   /** returns the cell range containing the data for the data pilot table. */
-  def getSourceRange(): CellRangeAddress
+  def getSourceRange(): CellRangeAddress = js.native
   /** returns an additional string stored in the data pilot table. */
-  def getTag(): String
+  def getTag(): String = js.native
   /** sets the cell range containing the data for the data pilot table. */
-  def setSourceRange(aSourceRange: CellRangeAddress): Unit
+  def setSourceRange(aSourceRange: CellRangeAddress): Unit = js.native
   /** sets an additional string stored in the data pilot table. */
-  def setTag(aTag: String): Unit
+  def setTag(aTag: String): Unit = js.native
 }
 
 object XDataPilotDescriptor {
@@ -122,5 +123,58 @@ object XDataPilotDescriptor {
     val __obj = js.Dynamic.literal(ColumnFields = ColumnFields.asInstanceOf[js.Any], DataFields = DataFields.asInstanceOf[js.Any], DataPilotFields = DataPilotFields.asInstanceOf[js.Any], FilterDescriptor = FilterDescriptor.asInstanceOf[js.Any], HiddenFields = HiddenFields.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PageFields = PageFields.asInstanceOf[js.Any], RowFields = RowFields.asInstanceOf[js.Any], SourceRange = SourceRange.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getColumnFields = js.Any.fromFunction0(getColumnFields), getDataFields = js.Any.fromFunction0(getDataFields), getDataPilotFields = js.Any.fromFunction0(getDataPilotFields), getFilterDescriptor = js.Any.fromFunction0(getFilterDescriptor), getHiddenFields = js.Any.fromFunction0(getHiddenFields), getName = js.Any.fromFunction0(getName), getPageFields = js.Any.fromFunction0(getPageFields), getRowFields = js.Any.fromFunction0(getRowFields), getSourceRange = js.Any.fromFunction0(getSourceRange), getTag = js.Any.fromFunction0(getTag), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setName = js.Any.fromFunction1(setName), setSourceRange = js.Any.fromFunction1(setSourceRange), setTag = js.Any.fromFunction1(setTag))
     __obj.asInstanceOf[XDataPilotDescriptor]
   }
+  @scala.inline
+  implicit class XDataPilotDescriptorOps[Self <: XDataPilotDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnFields(value: XIndexAccess): Self = this.set("ColumnFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataFields(value: XIndexAccess): Self = this.set("DataFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataPilotFields(value: XIndexAccess): Self = this.set("DataPilotFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilterDescriptor(value: XSheetFilterDescriptor): Self = this.set("FilterDescriptor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHiddenFields(value: XIndexAccess): Self = this.set("HiddenFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPageFields(value: XIndexAccess): Self = this.set("PageFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRowFields(value: XIndexAccess): Self = this.set("RowFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceRange(value: CellRangeAddress): Self = this.set("SourceRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetColumnFields(value: () => XIndexAccess): Self = this.set("getColumnFields", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetDataFields(value: () => XIndexAccess): Self = this.set("getDataFields", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetDataPilotFields(value: () => XIndexAccess): Self = this.set("getDataPilotFields", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetFilterDescriptor(value: () => XSheetFilterDescriptor): Self = this.set("getFilterDescriptor", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetHiddenFields(value: () => XIndexAccess): Self = this.set("getHiddenFields", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetPageFields(value: () => XIndexAccess): Self = this.set("getPageFields", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetRowFields(value: () => XIndexAccess): Self = this.set("getRowFields", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetSourceRange(value: () => CellRangeAddress): Self = this.set("getSourceRange", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetTag(value: () => String): Self = this.set("getTag", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetSourceRange(value: CellRangeAddress => Unit): Self = this.set("setSourceRange", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetTag(value: String => Unit): Self = this.set("setTag", js.Any.fromFunction1(value))
+  }
+  
 }
 

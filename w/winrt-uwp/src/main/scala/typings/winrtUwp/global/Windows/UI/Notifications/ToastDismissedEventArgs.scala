@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.Notifications.ToastDismissedEventArgs")
 @js.native
 abstract class ToastDismissedEventArgs ()
-  extends typings.winrtUwp.Windows.UI.Notifications.ToastDismissedEventArgs {
-  /** Gets the reason that a toast notification is no longer displayed on-screen. */
-  /* CompleteClass */
-  override var reason: typings.winrtUwp.Windows.UI.Notifications.ToastDismissalReason = js.native
-}
+  extends typings.winrtUwp.Windows.UI.Notifications.ToastDismissedEventArgs
 

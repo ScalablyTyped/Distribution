@@ -26,18 +26,42 @@ trait GetOpenIDConnectProviderResponse extends js.Object {
 
 object GetOpenIDConnectProviderResponse {
   @scala.inline
-  def apply(
-    ClientIDList: clientIDListType = null,
-    CreateDate: dateType = null,
-    ThumbprintList: thumbprintListType = null,
-    Url: OpenIDConnectProviderUrlType = null
-  ): GetOpenIDConnectProviderResponse = {
+  def apply(): GetOpenIDConnectProviderResponse = {
     val __obj = js.Dynamic.literal()
-    if (ClientIDList != null) __obj.updateDynamic("ClientIDList")(ClientIDList.asInstanceOf[js.Any])
-    if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
-    if (ThumbprintList != null) __obj.updateDynamic("ThumbprintList")(ThumbprintList.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOpenIDConnectProviderResponse]
   }
+  @scala.inline
+  implicit class GetOpenIDConnectProviderResponseOps[Self <: GetOpenIDConnectProviderResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientIDListVarargs(value: clientIDType*): Self = this.set("ClientIDList", js.Array(value :_*))
+    @scala.inline
+    def setClientIDList(value: clientIDListType): Self = this.set("ClientIDList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientIDList: Self = this.set("ClientIDList", js.undefined)
+    @scala.inline
+    def setCreateDate(value: dateType): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    @scala.inline
+    def setThumbprintListVarargs(value: thumbprintType*): Self = this.set("ThumbprintList", js.Array(value :_*))
+    @scala.inline
+    def setThumbprintList(value: thumbprintListType): Self = this.set("ThumbprintList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbprintList: Self = this.set("ThumbprintList", js.undefined)
+    @scala.inline
+    def setUrl(value: OpenIDConnectProviderUrlType): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

@@ -31,123 +31,37 @@ trait SettableObject extends js.Object
 
 object SettableObject {
   @scala.inline
-  def SettableObjectWorkerState(
-    common: StateCommon,
-    native: Record[String, ObjectField],
-    `type`: state,
-    _id: String = null,
-    acl: StateACL = null,
-    encryptedNative: js.Array[String] = null,
-    enums: Record[String, String] = null,
-    from: String = null,
-    protectedNative: js.Array[String] = null,
-    ts: js.UndefOr[Double] = js.undefined
-  ): SettableObject = {
+  def SettableObjectWorkerState(common: StateCommon, native: Record[String, ObjectField], `type`: state): SettableObject = {
     val __obj = js.Dynamic.literal(common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (encryptedNative != null) __obj.updateDynamic("encryptedNative")(encryptedNative.asInstanceOf[js.Any])
-    if (enums != null) __obj.updateDynamic("enums")(enums.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (protectedNative != null) __obj.updateDynamic("protectedNative")(protectedNative.asInstanceOf[js.Any])
-    if (!js.isUndefined(ts)) __obj.updateDynamic("ts")(ts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableObject]
   }
   @scala.inline
-  def SettableObjectWorkerDevic(
-    common: DeviceCommon,
-    native: Record[String, ObjectField],
-    `type`: device,
-    _id: String = null,
-    acl: ObjectACL = null,
-    encryptedNative: js.Array[String] = null,
-    enums: Record[String, String] = null,
-    from: String = null,
-    protectedNative: js.Array[String] = null,
-    ts: js.UndefOr[Double] = js.undefined
-  ): SettableObject = {
+  def SettableObjectWorkerDevic(common: DeviceCommon, native: Record[String, ObjectField], `type`: device): SettableObject = {
     val __obj = js.Dynamic.literal(common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (encryptedNative != null) __obj.updateDynamic("encryptedNative")(encryptedNative.asInstanceOf[js.Any])
-    if (enums != null) __obj.updateDynamic("enums")(enums.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (protectedNative != null) __obj.updateDynamic("protectedNative")(protectedNative.asInstanceOf[js.Any])
-    if (!js.isUndefined(ts)) __obj.updateDynamic("ts")(ts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableObject]
   }
   @scala.inline
-  def SettableObjectWorkerFolde(
-    common: OtherCommon,
-    native: Record[String, ObjectField],
-    `type`: folder,
-    _id: String = null,
-    acl: ObjectACL = null,
-    encryptedNative: js.Array[String] = null,
-    enums: Record[String, String] = null,
-    from: String = null,
-    protectedNative: js.Array[String] = null,
-    ts: js.UndefOr[Double] = js.undefined
-  ): SettableObject = {
+  def SettableObjectWorkerFolde(common: OtherCommon, native: Record[String, ObjectField], `type`: folder): SettableObject = {
     val __obj = js.Dynamic.literal(common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (encryptedNative != null) __obj.updateDynamic("encryptedNative")(encryptedNative.asInstanceOf[js.Any])
-    if (enums != null) __obj.updateDynamic("enums")(enums.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (protectedNative != null) __obj.updateDynamic("protectedNative")(protectedNative.asInstanceOf[js.Any])
-    if (!js.isUndefined(ts)) __obj.updateDynamic("ts")(ts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableObject]
   }
   @scala.inline
   def SettableObjectWorkerOther(
     common: OtherCommon,
     native: Record[String, ObjectField],
-    `type`: adapter | config | enum | group | host | info | instance | meta | script | user,
-    _id: String = null,
-    acl: ObjectACL = null,
-    encryptedNative: js.Array[String] = null,
-    enums: Record[String, String] = null,
-    from: String = null,
-    protectedNative: js.Array[String] = null,
-    ts: js.UndefOr[Double] = js.undefined
+    `type`: adapter | config | enum | group | host | info | instance | meta | script | user
   ): SettableObject = {
     val __obj = js.Dynamic.literal(common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (encryptedNative != null) __obj.updateDynamic("encryptedNative")(encryptedNative.asInstanceOf[js.Any])
-    if (enums != null) __obj.updateDynamic("enums")(enums.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (protectedNative != null) __obj.updateDynamic("protectedNative")(protectedNative.asInstanceOf[js.Any])
-    if (!js.isUndefined(ts)) __obj.updateDynamic("ts")(ts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableObject]
   }
   @scala.inline
-  def SettableObjectWorkerChann(
-    common: ChannelCommon,
-    native: Record[String, ObjectField],
-    `type`: channel,
-    _id: String = null,
-    acl: ObjectACL = null,
-    encryptedNative: js.Array[String] = null,
-    enums: Record[String, String] = null,
-    from: String = null,
-    protectedNative: js.Array[String] = null,
-    ts: js.UndefOr[Double] = js.undefined
-  ): SettableObject = {
+  def SettableObjectWorkerChann(common: ChannelCommon, native: Record[String, ObjectField], `type`: channel): SettableObject = {
     val __obj = js.Dynamic.literal(common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (encryptedNative != null) __obj.updateDynamic("encryptedNative")(encryptedNative.asInstanceOf[js.Any])
-    if (enums != null) __obj.updateDynamic("enums")(enums.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (protectedNative != null) __obj.updateDynamic("protectedNative")(protectedNative.asInstanceOf[js.Any])
-    if (!js.isUndefined(ts)) __obj.updateDynamic("ts")(ts.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableObject]
   }
 }

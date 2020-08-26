@@ -10,73 +10,100 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
+@js.native
 trait TableLoadOptions extends js.Object {
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var borderVisible: js.UndefOr[Boolean] = js.undefined
+  var borderVisible: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets the number of columns in the table.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var columnCount: js.UndefOr[Boolean] = js.undefined
+  var columnCount: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets the ID of the table. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets the Paragraph object that contains the Table object.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var paragraph: js.UndefOr[ParagraphLoadOptions] = js.undefined
+  var paragraph: js.UndefOr[ParagraphLoadOptions] = js.native
   /**
     *
     * Gets the number of rows in the table.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var rowCount: js.UndefOr[Boolean] = js.undefined
+  var rowCount: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets all of the table rows.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var rows: js.UndefOr[TableRowCollectionLoadOptions] = js.undefined
+  var rows: js.UndefOr[TableRowCollectionLoadOptions] = js.native
 }
 
 object TableLoadOptions {
   @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    borderVisible: js.UndefOr[Boolean] = js.undefined,
-    columnCount: js.UndefOr[Boolean] = js.undefined,
-    id: js.UndefOr[Boolean] = js.undefined,
-    paragraph: ParagraphLoadOptions = null,
-    rowCount: js.UndefOr[Boolean] = js.undefined,
-    rows: TableRowCollectionLoadOptions = null
-  ): TableLoadOptions = {
+  def apply(): TableLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableLoadOptions]
   }
+  @scala.inline
+  implicit class TableLoadOptionsOps[Self <: TableLoadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$all: Self = this.set("$all", js.undefined)
+    @scala.inline
+    def setBorderVisible(value: Boolean): Self = this.set("borderVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderVisible: Self = this.set("borderVisible", js.undefined)
+    @scala.inline
+    def setColumnCount(value: Boolean): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    @scala.inline
+    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setParagraph(value: ParagraphLoadOptions): Self = this.set("paragraph", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParagraph: Self = this.set("paragraph", js.undefined)
+    @scala.inline
+    def setRowCount(value: Boolean): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    @scala.inline
+    def setRows(value: TableRowCollectionLoadOptions): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+  }
+  
 }
 

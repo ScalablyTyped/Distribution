@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Inputs extends js.Object {
   /**
     * Allows you to define the accepted modifier keys to trigger a multisort action
@@ -13,48 +14,48 @@ trait Inputs extends js.Object {
     * @default ['ctrlKey', 'shiftKey', 'metaKey']
     * @see https://en.wikipedia.org/wiki/Modifier_key
     */
-  var multisort: js.UndefOr[js.Array[String]] = js.undefined
+  var multisort: js.UndefOr[js.Array[String]] = js.native
   /**
     * @todo Find out how this `inputs.page` setting is useful + show an example
     * @default null
     */
-  var page: js.UndefOr[js.Any] = js.undefined
+  var page: js.UndefOr[js.Any] = js.native
   /**
     * Text content introducing the pagination
     *
     * @default 'Pages: '
     */
-  var pageText: js.UndefOr[String] = js.undefined
+  var pageText: js.UndefOr[String] = js.native
   /**
     * The classname to be injected on the current page link
     *
     * @default 'dynatable-active-page'
     */
-  var paginationActiveClass: js.UndefOr[String] = js.undefined
+  var paginationActiveClass: js.UndefOr[String] = js.native
   /**
     * The classname to be injected on the `<ul>` containing the pagination
     *
     * @default 'dynatable-pagination-links'
     */
-  var paginationClass: js.UndefOr[String] = js.undefined
+  var paginationClass: js.UndefOr[String] = js.native
   /**
     * The classname to be injected on the disabled page links
     *
     * @default 'dynatable-disabled-page'
     */
-  var paginationDisabledClass: js.UndefOr[String] = js.undefined
+  var paginationDisabledClass: js.UndefOr[String] = js.native
   /**
     * Define the number of page number links shown inside the pagination
     *
     * @default [1,2,2,1]
     */
-  var paginationGap: js.UndefOr[js.Array[Double]] = js.undefined
+  var paginationGap: js.UndefOr[js.Array[Double]] = js.native
   /**
     * The classname to be injected on every pagination link
     *
     * @default 'dynatable-page-link'
     */
-  var paginationLinkClass: js.UndefOr[String] = js.undefined
+  var paginationLinkClass: js.UndefOr[String] = js.native
   /**
     * Determines where the pagination links are inserted
     *
@@ -62,38 +63,38 @@ trait Inputs extends js.Object {
     * @default 'after'
     * @see http://api.jquery.com/category/manipulation/dom-insertion-outside/
     */
-  var paginationLinkPlacement: js.UndefOr[String] = js.undefined
+  var paginationLinkPlacement: js.UndefOr[String] = js.native
   /**
     * The target inside next to which the pagination block will be inserted (before or after).
     * You can use a selector string, an Element or a JQuery.
     *
     * @default null
     */
-  var paginationLinkTarget: js.UndefOr[String | Element | JQuery] = js.undefined
+  var paginationLinkTarget: js.UndefOr[String | Element | JQuery] = js.native
   /**
     * Text content for the next page link
     *
     * @default 'Next'
     */
-  var paginationNext: js.UndefOr[String] = js.undefined
+  var paginationNext: js.UndefOr[String] = js.native
   /**
     * The classname to be injected on the next page link
     *
     * @default 'dynatable-page-next'
     */
-  var paginationNextClass: js.UndefOr[String] = js.undefined
+  var paginationNextClass: js.UndefOr[String] = js.native
   /**
     * Text content for the previous page link
     *
     * @default 'Previous'
     */
-  var paginationPrev: js.UndefOr[String] = js.undefined
+  var paginationPrev: js.UndefOr[String] = js.native
   /**
     * The classname to be injected on the previous page link
     *
     * @default 'dynatable-page-prev'
     */
-  var paginationPrevClass: js.UndefOr[String] = js.undefined
+  var paginationPrevClass: js.UndefOr[String] = js.native
   /**
     * Determines where the perPage menu is inserted
     *
@@ -101,26 +102,26 @@ trait Inputs extends js.Object {
     * @default 'before'
     * @see http://api.jquery.com/category/manipulation/dom-insertion-outside/
     */
-  var perPagePlacement: js.UndefOr[String] = js.undefined
+  var perPagePlacement: js.UndefOr[String] = js.native
   /**
     * The target next to which the per page pagination block will be inserted (before or after).
     * You can use a selector string, an Element or a jQuery object.
     *
     * @default null
     */
-  var perPageTarget: js.UndefOr[String | Element | JQuery] = js.undefined
+  var perPageTarget: js.UndefOr[String | Element | JQuery] = js.native
   /**
     * Text content preceding the items per page <select>
     *
     * @default 'Show: '
     */
-  var perPageText: js.UndefOr[String] = js.undefined
+  var perPageText: js.UndefOr[String] = js.native
   /**
     * Text content injected inside the processingIndicator
     *
     * @default 'Processing...'
     */
-  var processingText: js.UndefOr[String] = js.undefined
+  var processingText: js.UndefOr[String] = js.native
   /**
     * Allows you to provide an array of jQuery objects which point to our filter inputs.
     * The inputs musts have a name attribute value matching a columnId in order to work.
@@ -133,31 +134,31 @@ trait Inputs extends js.Object {
     * @example
     * $('#search-year')
     */
-  var queries: js.UndefOr[JQuery] = js.undefined
+  var queries: js.UndefOr[JQuery] = js.native
   /**
     * The events attached to the search/filtering inputs elements
     *
     * @default 'blur change'
     */
-  var queryEvent: js.UndefOr[String] = js.undefined
+  var queryEvent: js.UndefOr[String] = js.native
   /**
     * Text content used inside the recordsCount
     *
     * @default ' (filtered from {recordsTotal} total records)'
     */
-  var recordCountFilteredTemplate: js.UndefOr[String] = js.undefined
+  var recordCountFilteredTemplate: js.UndefOr[String] = js.native
   /**
     * Text content used inside the recordsCount
     *
     * @default '{pageLowerBound} to {pageUpperBound} of'
     */
-  var recordCountPageBoundTemplate: js.UndefOr[String] = js.undefined
+  var recordCountPageBoundTemplate: js.UndefOr[String] = js.native
   /**
     * Text content used inside the recordsCount
     *
     * @default '{recordsShown} of'
     */
-  var recordCountPageUnboundedTemplate: js.UndefOr[String] = js.undefined
+  var recordCountPageUnboundedTemplate: js.UndefOr[String] = js.native
   /**
     * Determines where the recordCount is inserted
     *
@@ -165,7 +166,7 @@ trait Inputs extends js.Object {
     * @default 'after'
     * @see http://api.jquery.com/category/manipulation/dom-insertion-outside/
     */
-  var recordCountPlacement: js.UndefOr[String] = js.undefined
+  var recordCountPlacement: js.UndefOr[String] = js.native
   /**
     * The jQuery object pointing to a target where to insert the recordCount html
     *
@@ -174,31 +175,31 @@ trait Inputs extends js.Object {
     * @example
     * $('#chart-status-text')
     */
-  var recordCountTarget: js.UndefOr[JQuery] = js.undefined
+  var recordCountTarget: js.UndefOr[JQuery] = js.native
   /**
     * Text content used inside the recordsCount
     *
     * @default '<span id="dynatable-record-count-{elementId}" class="dynatable-record-count">{textTemplate}</span>'
     */
-  var recordCountTemplate: js.UndefOr[String] = js.undefined
+  var recordCountTemplate: js.UndefOr[String] = js.native
   /**
     * Text content used inside the recordsCount
     *
     * @default 'Showing '
     */
-  var recordCountText: js.UndefOr[String] = js.undefined
+  var recordCountText: js.UndefOr[String] = js.native
   /**
     * Text content used inside the recordsCount
     *
     * @default '{text} {pageTemplate} {totalTemplate} {filteredTemplate}'
     */
-  var recordCountTextTemplate: js.UndefOr[String] = js.undefined
+  var recordCountTextTemplate: js.UndefOr[String] = js.native
   /**
     * Text content used inside the recordsCount
     *
     * @default '{recordsQueryCount} {collectionName}'
     */
-  var recordCountTotalTemplate: js.UndefOr[String] = js.undefined
+  var recordCountTotalTemplate: js.UndefOr[String] = js.native
   /**
     * Determines where the search field is inserted
     *
@@ -206,100 +207,182 @@ trait Inputs extends js.Object {
     * @default 'before'
     * @see http://api.jquery.com/category/manipulation/dom-insertion-outside/
     */
-  var searchPlacement: js.UndefOr[String] = js.undefined
+  var searchPlacement: js.UndefOr[String] = js.native
   /**
     * The target next to which the search block will be inserted (before or after).
     * You can use a selector string, an Element or a JQuery.
     *
     * @default null
     */
-  var searchTarget: js.UndefOr[String | Element | JQuery] = js.undefined
+  var searchTarget: js.UndefOr[String | Element | JQuery] = js.native
   /**
     * Text preceding the search field
     *
     * @default 'Search: '
     */
-  var searchText: js.UndefOr[String] = js.undefined
+  var searchText: js.UndefOr[String] = js.native
   /**
     * @todo Find out how this `inputs.sorts` setting is useful + show an example
     * @default null
     * @see http://www.dynatable.com/#sorting
     */
-  var sorts: js.UndefOr[js.Any] = js.undefined
+  var sorts: js.UndefOr[js.Any] = js.native
 }
 
 object Inputs {
   @scala.inline
-  def apply(
-    multisort: js.Array[String] = null,
-    page: js.Any = null,
-    pageText: String = null,
-    paginationActiveClass: String = null,
-    paginationClass: String = null,
-    paginationDisabledClass: String = null,
-    paginationGap: js.Array[Double] = null,
-    paginationLinkClass: String = null,
-    paginationLinkPlacement: String = null,
-    paginationLinkTarget: String | Element | JQuery = null,
-    paginationNext: String = null,
-    paginationNextClass: String = null,
-    paginationPrev: String = null,
-    paginationPrevClass: String = null,
-    perPagePlacement: String = null,
-    perPageTarget: String | Element | JQuery = null,
-    perPageText: String = null,
-    processingText: String = null,
-    queries: JQuery = null,
-    queryEvent: String = null,
-    recordCountFilteredTemplate: String = null,
-    recordCountPageBoundTemplate: String = null,
-    recordCountPageUnboundedTemplate: String = null,
-    recordCountPlacement: String = null,
-    recordCountTarget: JQuery = null,
-    recordCountTemplate: String = null,
-    recordCountText: String = null,
-    recordCountTextTemplate: String = null,
-    recordCountTotalTemplate: String = null,
-    searchPlacement: String = null,
-    searchTarget: String | Element | JQuery = null,
-    searchText: String = null,
-    sorts: js.Any = null
-  ): Inputs = {
+  def apply(): Inputs = {
     val __obj = js.Dynamic.literal()
-    if (multisort != null) __obj.updateDynamic("multisort")(multisort.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (pageText != null) __obj.updateDynamic("pageText")(pageText.asInstanceOf[js.Any])
-    if (paginationActiveClass != null) __obj.updateDynamic("paginationActiveClass")(paginationActiveClass.asInstanceOf[js.Any])
-    if (paginationClass != null) __obj.updateDynamic("paginationClass")(paginationClass.asInstanceOf[js.Any])
-    if (paginationDisabledClass != null) __obj.updateDynamic("paginationDisabledClass")(paginationDisabledClass.asInstanceOf[js.Any])
-    if (paginationGap != null) __obj.updateDynamic("paginationGap")(paginationGap.asInstanceOf[js.Any])
-    if (paginationLinkClass != null) __obj.updateDynamic("paginationLinkClass")(paginationLinkClass.asInstanceOf[js.Any])
-    if (paginationLinkPlacement != null) __obj.updateDynamic("paginationLinkPlacement")(paginationLinkPlacement.asInstanceOf[js.Any])
-    if (paginationLinkTarget != null) __obj.updateDynamic("paginationLinkTarget")(paginationLinkTarget.asInstanceOf[js.Any])
-    if (paginationNext != null) __obj.updateDynamic("paginationNext")(paginationNext.asInstanceOf[js.Any])
-    if (paginationNextClass != null) __obj.updateDynamic("paginationNextClass")(paginationNextClass.asInstanceOf[js.Any])
-    if (paginationPrev != null) __obj.updateDynamic("paginationPrev")(paginationPrev.asInstanceOf[js.Any])
-    if (paginationPrevClass != null) __obj.updateDynamic("paginationPrevClass")(paginationPrevClass.asInstanceOf[js.Any])
-    if (perPagePlacement != null) __obj.updateDynamic("perPagePlacement")(perPagePlacement.asInstanceOf[js.Any])
-    if (perPageTarget != null) __obj.updateDynamic("perPageTarget")(perPageTarget.asInstanceOf[js.Any])
-    if (perPageText != null) __obj.updateDynamic("perPageText")(perPageText.asInstanceOf[js.Any])
-    if (processingText != null) __obj.updateDynamic("processingText")(processingText.asInstanceOf[js.Any])
-    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
-    if (queryEvent != null) __obj.updateDynamic("queryEvent")(queryEvent.asInstanceOf[js.Any])
-    if (recordCountFilteredTemplate != null) __obj.updateDynamic("recordCountFilteredTemplate")(recordCountFilteredTemplate.asInstanceOf[js.Any])
-    if (recordCountPageBoundTemplate != null) __obj.updateDynamic("recordCountPageBoundTemplate")(recordCountPageBoundTemplate.asInstanceOf[js.Any])
-    if (recordCountPageUnboundedTemplate != null) __obj.updateDynamic("recordCountPageUnboundedTemplate")(recordCountPageUnboundedTemplate.asInstanceOf[js.Any])
-    if (recordCountPlacement != null) __obj.updateDynamic("recordCountPlacement")(recordCountPlacement.asInstanceOf[js.Any])
-    if (recordCountTarget != null) __obj.updateDynamic("recordCountTarget")(recordCountTarget.asInstanceOf[js.Any])
-    if (recordCountTemplate != null) __obj.updateDynamic("recordCountTemplate")(recordCountTemplate.asInstanceOf[js.Any])
-    if (recordCountText != null) __obj.updateDynamic("recordCountText")(recordCountText.asInstanceOf[js.Any])
-    if (recordCountTextTemplate != null) __obj.updateDynamic("recordCountTextTemplate")(recordCountTextTemplate.asInstanceOf[js.Any])
-    if (recordCountTotalTemplate != null) __obj.updateDynamic("recordCountTotalTemplate")(recordCountTotalTemplate.asInstanceOf[js.Any])
-    if (searchPlacement != null) __obj.updateDynamic("searchPlacement")(searchPlacement.asInstanceOf[js.Any])
-    if (searchTarget != null) __obj.updateDynamic("searchTarget")(searchTarget.asInstanceOf[js.Any])
-    if (searchText != null) __obj.updateDynamic("searchText")(searchText.asInstanceOf[js.Any])
-    if (sorts != null) __obj.updateDynamic("sorts")(sorts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inputs]
   }
+  @scala.inline
+  implicit class InputsOps[Self <: Inputs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMultisortVarargs(value: String*): Self = this.set("multisort", js.Array(value :_*))
+    @scala.inline
+    def setMultisort(value: js.Array[String]): Self = this.set("multisort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultisort: Self = this.set("multisort", js.undefined)
+    @scala.inline
+    def setPage(value: js.Any): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setPageText(value: String): Self = this.set("pageText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageText: Self = this.set("pageText", js.undefined)
+    @scala.inline
+    def setPaginationActiveClass(value: String): Self = this.set("paginationActiveClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationActiveClass: Self = this.set("paginationActiveClass", js.undefined)
+    @scala.inline
+    def setPaginationClass(value: String): Self = this.set("paginationClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationClass: Self = this.set("paginationClass", js.undefined)
+    @scala.inline
+    def setPaginationDisabledClass(value: String): Self = this.set("paginationDisabledClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationDisabledClass: Self = this.set("paginationDisabledClass", js.undefined)
+    @scala.inline
+    def setPaginationGapVarargs(value: Double*): Self = this.set("paginationGap", js.Array(value :_*))
+    @scala.inline
+    def setPaginationGap(value: js.Array[Double]): Self = this.set("paginationGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationGap: Self = this.set("paginationGap", js.undefined)
+    @scala.inline
+    def setPaginationLinkClass(value: String): Self = this.set("paginationLinkClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationLinkClass: Self = this.set("paginationLinkClass", js.undefined)
+    @scala.inline
+    def setPaginationLinkPlacement(value: String): Self = this.set("paginationLinkPlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationLinkPlacement: Self = this.set("paginationLinkPlacement", js.undefined)
+    @scala.inline
+    def setPaginationLinkTarget(value: String | Element | JQuery): Self = this.set("paginationLinkTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationLinkTarget: Self = this.set("paginationLinkTarget", js.undefined)
+    @scala.inline
+    def setPaginationNext(value: String): Self = this.set("paginationNext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationNext: Self = this.set("paginationNext", js.undefined)
+    @scala.inline
+    def setPaginationNextClass(value: String): Self = this.set("paginationNextClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationNextClass: Self = this.set("paginationNextClass", js.undefined)
+    @scala.inline
+    def setPaginationPrev(value: String): Self = this.set("paginationPrev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationPrev: Self = this.set("paginationPrev", js.undefined)
+    @scala.inline
+    def setPaginationPrevClass(value: String): Self = this.set("paginationPrevClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationPrevClass: Self = this.set("paginationPrevClass", js.undefined)
+    @scala.inline
+    def setPerPagePlacement(value: String): Self = this.set("perPagePlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerPagePlacement: Self = this.set("perPagePlacement", js.undefined)
+    @scala.inline
+    def setPerPageTarget(value: String | Element | JQuery): Self = this.set("perPageTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerPageTarget: Self = this.set("perPageTarget", js.undefined)
+    @scala.inline
+    def setPerPageText(value: String): Self = this.set("perPageText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerPageText: Self = this.set("perPageText", js.undefined)
+    @scala.inline
+    def setProcessingText(value: String): Self = this.set("processingText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingText: Self = this.set("processingText", js.undefined)
+    @scala.inline
+    def setQueries(value: JQuery): Self = this.set("queries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueries: Self = this.set("queries", js.undefined)
+    @scala.inline
+    def setQueryEvent(value: String): Self = this.set("queryEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryEvent: Self = this.set("queryEvent", js.undefined)
+    @scala.inline
+    def setRecordCountFilteredTemplate(value: String): Self = this.set("recordCountFilteredTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordCountFilteredTemplate: Self = this.set("recordCountFilteredTemplate", js.undefined)
+    @scala.inline
+    def setRecordCountPageBoundTemplate(value: String): Self = this.set("recordCountPageBoundTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordCountPageBoundTemplate: Self = this.set("recordCountPageBoundTemplate", js.undefined)
+    @scala.inline
+    def setRecordCountPageUnboundedTemplate(value: String): Self = this.set("recordCountPageUnboundedTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordCountPageUnboundedTemplate: Self = this.set("recordCountPageUnboundedTemplate", js.undefined)
+    @scala.inline
+    def setRecordCountPlacement(value: String): Self = this.set("recordCountPlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordCountPlacement: Self = this.set("recordCountPlacement", js.undefined)
+    @scala.inline
+    def setRecordCountTarget(value: JQuery): Self = this.set("recordCountTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordCountTarget: Self = this.set("recordCountTarget", js.undefined)
+    @scala.inline
+    def setRecordCountTemplate(value: String): Self = this.set("recordCountTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordCountTemplate: Self = this.set("recordCountTemplate", js.undefined)
+    @scala.inline
+    def setRecordCountText(value: String): Self = this.set("recordCountText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordCountText: Self = this.set("recordCountText", js.undefined)
+    @scala.inline
+    def setRecordCountTextTemplate(value: String): Self = this.set("recordCountTextTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordCountTextTemplate: Self = this.set("recordCountTextTemplate", js.undefined)
+    @scala.inline
+    def setRecordCountTotalTemplate(value: String): Self = this.set("recordCountTotalTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordCountTotalTemplate: Self = this.set("recordCountTotalTemplate", js.undefined)
+    @scala.inline
+    def setSearchPlacement(value: String): Self = this.set("searchPlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchPlacement: Self = this.set("searchPlacement", js.undefined)
+    @scala.inline
+    def setSearchTarget(value: String | Element | JQuery): Self = this.set("searchTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchTarget: Self = this.set("searchTarget", js.undefined)
+    @scala.inline
+    def setSearchText(value: String): Self = this.set("searchText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchText: Self = this.set("searchText", js.undefined)
+    @scala.inline
+    def setSorts(value: js.Any): Self = this.set("sorts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSorts: Self = this.set("sorts", js.undefined)
+  }
+  
 }
 

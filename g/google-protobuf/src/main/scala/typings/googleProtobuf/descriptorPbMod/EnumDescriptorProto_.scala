@@ -12,9 +12,11 @@ class EnumDescriptorProto_ () extends Message {
   def addReservedName(value: String): String = js.native
   def addReservedName(value: String, index: Double): String = js.native
   def addReservedRange(): EnumReservedRange = js.native
+  def addReservedRange(value: js.UndefOr[scala.Nothing], index: Double): EnumReservedRange = js.native
   def addReservedRange(value: EnumReservedRange): EnumReservedRange = js.native
   def addReservedRange(value: EnumReservedRange, index: Double): EnumReservedRange = js.native
   def addValue(): EnumValueDescriptorProto = js.native
+  def addValue(value: js.UndefOr[scala.Nothing], index: Double): EnumValueDescriptorProto = js.native
   def addValue(value: EnumValueDescriptorProto): EnumValueDescriptorProto = js.native
   def addValue(value: EnumValueDescriptorProto, index: Double): EnumValueDescriptorProto = js.native
   def clearName(): Unit = js.native

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * This service is provided by documents to support Layers.
   * @see DrawingDocument
   */
+@js.native
 trait LayerManager
   extends XLayerManager
      with XNameAccess

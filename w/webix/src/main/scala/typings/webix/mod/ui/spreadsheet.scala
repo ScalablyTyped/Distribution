@@ -66,6 +66,7 @@ class spreadsheet ()
   def isColumnVisible(columnId: Double): Boolean = js.native
   def isRowVisible(rowId: Double): Boolean = js.native
   def load(url: String): js.Promise[_] = js.native
+  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
   def load(url: String, `type`: String): js.Promise[_] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
   def lockCell(row: js.Any, column: js.Any, state: Boolean): Unit = js.native
@@ -98,6 +99,7 @@ class spreadsheet ()
   def setStyle(row: Double, column: Double, style: js.Any): Unit = js.native
   def showSheet(name: String): Unit = js.native
   def sortRange(): Unit = js.native
+  def sortRange(range: js.UndefOr[scala.Nothing], dir: String): Unit = js.native
   def sortRange(range: String): Unit = js.native
   def sortRange(range: String, dir: String): Unit = js.native
   def splitCell(row: Double, column: Double): Unit = js.native

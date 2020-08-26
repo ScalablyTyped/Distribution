@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * An element representing a region that is unknown or cannot be affected by a script, such as a
   * page number.
   */
+@js.native
 trait UnsupportedElement extends Element
 
 object UnsupportedElement {

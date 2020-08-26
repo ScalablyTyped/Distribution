@@ -42,6 +42,7 @@ trait sharedb extends js.Object {
   def close(): Unit = js.native
   def close(callback: BasicCallback): Unit = js.native
   def connect(): Connection = js.native
+  def connect(connection: js.UndefOr[scala.Nothing], req: js.Any): Connection = js.native
   def connect(connection: js.Any): Connection = js.native
   def connect(connection: js.Any, req: js.Any): Connection = js.native
   def listen(stream: js.Any): Unit = js.native

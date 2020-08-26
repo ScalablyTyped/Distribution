@@ -18,14 +18,30 @@ trait SmsMfaConfigType extends js.Object {
 
 object SmsMfaConfigType {
   @scala.inline
-  def apply(
-    SmsAuthenticationMessage: SmsVerificationMessageType = null,
-    SmsConfiguration: SmsConfigurationType = null
-  ): SmsMfaConfigType = {
+  def apply(): SmsMfaConfigType = {
     val __obj = js.Dynamic.literal()
-    if (SmsAuthenticationMessage != null) __obj.updateDynamic("SmsAuthenticationMessage")(SmsAuthenticationMessage.asInstanceOf[js.Any])
-    if (SmsConfiguration != null) __obj.updateDynamic("SmsConfiguration")(SmsConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmsMfaConfigType]
   }
+  @scala.inline
+  implicit class SmsMfaConfigTypeOps[Self <: SmsMfaConfigType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSmsAuthenticationMessage(value: SmsVerificationMessageType): Self = this.set("SmsAuthenticationMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmsAuthenticationMessage: Self = this.set("SmsAuthenticationMessage", js.undefined)
+    @scala.inline
+    def setSmsConfiguration(value: SmsConfigurationType): Self = this.set("SmsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmsConfiguration: Self = this.set("SmsConfiguration", js.undefined)
+  }
+  
 }
 

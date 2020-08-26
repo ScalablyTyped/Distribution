@@ -61,7 +61,41 @@ trait Formula
   def add(subject: js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]]): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
   def add(
     subject: js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]],
+    predicate: js.UndefOr[scala.Nothing],
+    `object`: js.UndefOr[scala.Nothing],
+    graph: QuadGraph
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]],
+    predicate: js.UndefOr[scala.Nothing],
+    `object`: String
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]],
+    predicate: js.UndefOr[scala.Nothing],
+    `object`: String,
+    graph: QuadGraph
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]],
+    predicate: js.UndefOr[scala.Nothing],
+    `object`: Term
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]],
+    predicate: js.UndefOr[scala.Nothing],
+    `object`: Term,
+    graph: QuadGraph
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]],
     predicate: QuadPredicate
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]],
+    predicate: QuadPredicate,
+    `object`: js.UndefOr[scala.Nothing],
+    graph: QuadGraph
   ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
   def add(
     subject: js.Array[Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]],
@@ -93,12 +127,62 @@ trait Formula
     * @param graph - the last part of the statement
     */
   def add(subject: QuadSubject): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: QuadSubject,
+    predicate: js.UndefOr[scala.Nothing],
+    `object`: js.UndefOr[scala.Nothing],
+    graph: QuadGraph
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(subject: QuadSubject, predicate: js.UndefOr[scala.Nothing], `object`: String): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(subject: QuadSubject, predicate: js.UndefOr[scala.Nothing], `object`: String, graph: QuadGraph): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(subject: QuadSubject, predicate: js.UndefOr[scala.Nothing], `object`: Term): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(subject: QuadSubject, predicate: js.UndefOr[scala.Nothing], `object`: Term, graph: QuadGraph): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
   def add(subject: QuadSubject, predicate: QuadPredicate): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: QuadSubject,
+    predicate: QuadPredicate,
+    `object`: js.UndefOr[scala.Nothing],
+    graph: QuadGraph
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
   def add(subject: QuadSubject, predicate: QuadPredicate, `object`: String): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
   def add(subject: QuadSubject, predicate: QuadPredicate, `object`: String, graph: QuadGraph): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
   def add(subject: QuadSubject, predicate: QuadPredicate, `object`: Term): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
   def add(subject: QuadSubject, predicate: QuadPredicate, `object`: Term, graph: QuadGraph): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph],
+    predicate: js.UndefOr[scala.Nothing],
+    `object`: js.UndefOr[scala.Nothing],
+    graph: QuadGraph
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph],
+    predicate: js.UndefOr[scala.Nothing],
+    `object`: String
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph],
+    predicate: js.UndefOr[scala.Nothing],
+    `object`: String,
+    graph: QuadGraph
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph],
+    predicate: js.UndefOr[scala.Nothing],
+    `object`: Term
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph],
+    predicate: js.UndefOr[scala.Nothing],
+    `object`: Term,
+    graph: QuadGraph
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
   def add(subject: Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph], predicate: QuadPredicate): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
+  def add(
+    subject: Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph],
+    predicate: QuadPredicate,
+    `object`: js.UndefOr[scala.Nothing],
+    graph: QuadGraph
+  ): (typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]) | Null | this.type | Double = js.native
   def add(
     subject: Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph],
     predicate: QuadPredicate,
@@ -142,22 +226,12 @@ trait Formula
     * @param g - A node to search for as graph, or if null, a wildcard
     * @returns A node which match the wildcard position, or null
     */
-  def any(): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: Null, p: Null, o: Null, g: QuadGraph): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: Null, p: Null, o: QuadObject): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: Null, p: Null, o: QuadObject, g: QuadGraph): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: Null, p: QuadPredicate): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: Null, p: QuadPredicate, o: Null, g: QuadGraph): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: Null, p: QuadPredicate, o: QuadObject): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: Null, p: QuadPredicate, o: QuadObject, g: QuadGraph): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: QuadSubject): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: QuadSubject, p: Null, o: Null, g: QuadGraph): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: QuadSubject, p: Null, o: QuadObject): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: QuadSubject, p: Null, o: QuadObject, g: QuadGraph): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: QuadSubject, p: QuadPredicate): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: QuadSubject, p: QuadPredicate, o: Null, g: QuadGraph): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: QuadSubject, p: QuadPredicate, o: QuadObject): typings.rdflib.nodeInternalMod.default | Null = js.native
-  def any(s: QuadSubject, p: QuadPredicate, o: QuadObject, g: QuadGraph): typings.rdflib.nodeInternalMod.default | Null = js.native
+  def any(
+    s: js.UndefOr[QuadSubject | Null],
+    p: js.UndefOr[QuadPredicate | Null],
+    o: js.UndefOr[QuadObject | Null],
+    g: js.UndefOr[QuadGraph | Null]
+  ): typings.rdflib.nodeInternalMod.default | Null = js.native
   /**
     * Gets the first JavaScript object equivalent to a node based on the specified pattern
     * @param s The subject
@@ -165,71 +239,21 @@ trait Formula
     * @param o The object
     * @param g The graph that contains the statement
     */
-  def anyJS(): js.Any = js.native
-  def anyJS(s: Null, p: Null, o: Null, g: QuadGraph): js.Any = js.native
-  def anyJS(s: Null, p: Null, o: QuadObject): js.Any = js.native
-  def anyJS(s: Null, p: Null, o: QuadObject, g: QuadGraph): js.Any = js.native
-  def anyJS(s: Null, p: QuadPredicate): js.Any = js.native
-  def anyJS(s: Null, p: QuadPredicate, o: Null, g: QuadGraph): js.Any = js.native
-  def anyJS(s: Null, p: QuadPredicate, o: QuadObject): js.Any = js.native
-  def anyJS(s: Null, p: QuadPredicate, o: QuadObject, g: QuadGraph): js.Any = js.native
-  def anyJS(s: QuadSubject): js.Any = js.native
-  def anyJS(s: QuadSubject, p: Null, o: Null, g: QuadGraph): js.Any = js.native
-  def anyJS(s: QuadSubject, p: Null, o: QuadObject): js.Any = js.native
-  def anyJS(s: QuadSubject, p: Null, o: QuadObject, g: QuadGraph): js.Any = js.native
-  def anyJS(s: QuadSubject, p: QuadPredicate): js.Any = js.native
-  def anyJS(s: QuadSubject, p: QuadPredicate, o: Null, g: QuadGraph): js.Any = js.native
-  def anyJS(s: QuadSubject, p: QuadPredicate, o: QuadObject): js.Any = js.native
-  def anyJS(s: QuadSubject, p: QuadPredicate, o: QuadObject, g: QuadGraph): js.Any = js.native
+  def anyJS(
+    s: js.UndefOr[QuadSubject | Null],
+    p: js.UndefOr[QuadPredicate | Null],
+    o: js.UndefOr[QuadObject | Null],
+    g: js.UndefOr[QuadGraph | Null]
+  ): js.Any = js.native
   /**
     * Gets the first statement that matches the specified pattern
     */
-  def anyStatementMatching(): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: Null, p: Null, o: Null, g: QuadGraph): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: Null, p: Null, o: QuadObject): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: Null, p: Null, o: QuadObject, g: QuadGraph): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: Null, p: QuadPredicate): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: Null, p: QuadPredicate, o: Null, g: QuadGraph): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: Null, p: QuadPredicate, o: QuadObject): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: Null, p: QuadPredicate, o: QuadObject, g: QuadGraph): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: QuadSubject): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: QuadSubject, p: Null, o: Null, g: QuadGraph): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: QuadSubject, p: Null, o: QuadObject): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: QuadSubject, p: Null, o: QuadObject, g: QuadGraph): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: QuadSubject, p: QuadPredicate): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: QuadSubject, p: QuadPredicate, o: Null, g: QuadGraph): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: QuadSubject, p: QuadPredicate, o: QuadObject): js.UndefOr[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def anyStatementMatching(s: QuadSubject, p: QuadPredicate, o: QuadObject, g: QuadGraph): js.UndefOr[
+  def anyStatementMatching(
+    s: js.UndefOr[QuadSubject | Null],
+    p: js.UndefOr[QuadPredicate | Null],
+    o: js.UndefOr[QuadObject | Null],
+    g: js.UndefOr[QuadGraph | Null]
+  ): js.UndefOr[
     typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
   ] = js.native
   /**
@@ -239,22 +263,12 @@ trait Formula
     * @param o The object
     * @param g The graph that contains the statement
     */
-  def anyValue(): String | Unit = js.native
-  def anyValue(s: Null, p: Null, o: Null, g: QuadGraph): String | Unit = js.native
-  def anyValue(s: Null, p: Null, o: QuadObject): String | Unit = js.native
-  def anyValue(s: Null, p: Null, o: QuadObject, g: QuadGraph): String | Unit = js.native
-  def anyValue(s: Null, p: QuadPredicate): String | Unit = js.native
-  def anyValue(s: Null, p: QuadPredicate, o: Null, g: QuadGraph): String | Unit = js.native
-  def anyValue(s: Null, p: QuadPredicate, o: QuadObject): String | Unit = js.native
-  def anyValue(s: Null, p: QuadPredicate, o: QuadObject, g: QuadGraph): String | Unit = js.native
-  def anyValue(s: QuadSubject): String | Unit = js.native
-  def anyValue(s: QuadSubject, p: Null, o: Null, g: QuadGraph): String | Unit = js.native
-  def anyValue(s: QuadSubject, p: Null, o: QuadObject): String | Unit = js.native
-  def anyValue(s: QuadSubject, p: Null, o: QuadObject, g: QuadGraph): String | Unit = js.native
-  def anyValue(s: QuadSubject, p: QuadPredicate): String | Unit = js.native
-  def anyValue(s: QuadSubject, p: QuadPredicate, o: Null, g: QuadGraph): String | Unit = js.native
-  def anyValue(s: QuadSubject, p: QuadPredicate, o: QuadObject): String | Unit = js.native
-  def anyValue(s: QuadSubject, p: QuadPredicate, o: QuadObject, g: QuadGraph): String | Unit = js.native
+  def anyValue(
+    s: js.UndefOr[QuadSubject | Null],
+    p: js.UndefOr[QuadPredicate | Null],
+    o: js.UndefOr[QuadObject | Null],
+    g: js.UndefOr[QuadGraph | Null]
+  ): String | Unit = js.native
   /**
     * Shortcut for adding blankNodes
     * @param [id]
@@ -297,22 +311,12 @@ trait Formula
     * @param g - A node to search for as graph, or if null, a wildcard
     * @returns {Array<Node>} - An array of nodes which match the wildcard position
     */
-  def each(): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: Null, p: Null, o: Null, g: QuadGraph): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: Null, p: Null, o: QuadObject): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: Null, p: Null, o: QuadObject, g: QuadGraph): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: Null, p: QuadPredicate): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: Null, p: QuadPredicate, o: Null, g: QuadGraph): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: Null, p: QuadPredicate, o: QuadObject): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: Null, p: QuadPredicate, o: QuadObject, g: QuadGraph): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: QuadSubject): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: QuadSubject, p: Null, o: Null, g: QuadGraph): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: QuadSubject, p: Null, o: QuadObject): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: QuadSubject, p: Null, o: QuadObject, g: QuadGraph): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: QuadSubject, p: QuadPredicate): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: QuadSubject, p: QuadPredicate, o: Null, g: QuadGraph): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: QuadSubject, p: QuadPredicate, o: QuadObject): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
-  def each(s: QuadSubject, p: QuadPredicate, o: QuadObject, g: QuadGraph): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
+  def each(
+    s: js.UndefOr[QuadSubject | Null],
+    p: js.UndefOr[QuadPredicate | Null],
+    o: js.UndefOr[QuadObject | Null],
+    g: js.UndefOr[QuadGraph | Null]
+  ): js.Array[typings.rdflib.nodeInternalMod.default] = js.native
   /**
     * Test whether this formula is equals to {other}
     * @param other - The other formula
@@ -392,11 +396,19 @@ trait Formula
   def fromNT(str: js.Any): js.Any = js.native
   /** Returns true if this formula holds the specified statement(s) */
   def holds(s: js.Any): Boolean = js.native
+  def holds(s: js.Any, p: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], g: js.Any): Boolean = js.native
+  def holds(s: js.Any, p: js.UndefOr[scala.Nothing], o: js.Any): Boolean = js.native
+  def holds(s: js.Any, p: js.UndefOr[scala.Nothing], o: js.Any, g: js.Any): Boolean = js.native
   def holds(s: js.Any, p: js.Any): Boolean = js.native
+  def holds(s: js.Any, p: js.Any, o: js.UndefOr[scala.Nothing], g: js.Any): Boolean = js.native
   def holds(s: js.Any, p: js.Any, o: js.Any): Boolean = js.native
   def holds(s: js.Any, p: js.Any, o: js.Any, g: js.Any): Boolean = js.native
   def holds(s: js.Array[_]): Boolean = js.native
+  def holds(s: js.Array[_], p: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], g: js.Any): Boolean = js.native
+  def holds(s: js.Array[_], p: js.UndefOr[scala.Nothing], o: js.Any): Boolean = js.native
+  def holds(s: js.Array[_], p: js.UndefOr[scala.Nothing], o: js.Any, g: js.Any): Boolean = js.native
   def holds(s: js.Array[_], p: js.Any): Boolean = js.native
+  def holds(s: js.Array[_], p: js.Any, o: js.UndefOr[scala.Nothing], g: js.Any): Boolean = js.native
   def holds(s: js.Array[_], p: js.Any, o: js.Any): Boolean = js.native
   def holds(s: js.Array[_], p: js.Any, o: js.Any, g: js.Any): Boolean = js.native
   /**
@@ -440,100 +452,13 @@ trait Formula
     * @param justOne - flag - stop when found one rather than get all of them?
     * @returns {Array<Node>} - An array of nodes which match the wildcard position
     */
-  def statementsMatching[JustOne /* <: Boolean */](): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: Null, o: Null, g: Null, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: Null, o: Null, g: QuadGraph): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: Null, o: Null, g: QuadGraph, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: Null, o: QuadObject): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: Null, o: QuadObject, g: Null, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: Null, o: QuadObject, g: QuadGraph): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: Null, o: QuadObject, g: QuadGraph, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: QuadPredicate): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: QuadPredicate, o: Null, g: Null, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: QuadPredicate, o: Null, g: QuadGraph): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: QuadPredicate, o: Null, g: QuadGraph, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: QuadPredicate, o: QuadObject): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: QuadPredicate, o: QuadObject, g: Null, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: QuadPredicate, o: QuadObject, g: QuadGraph): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: Null, p: QuadPredicate, o: QuadObject, g: QuadGraph, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: Null, o: Null, g: Null, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: Null, o: Null, g: QuadGraph): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: Null, o: Null, g: QuadGraph, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: Null, o: QuadObject): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: Null, o: QuadObject, g: Null, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: Null, o: QuadObject, g: QuadGraph): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: Null, o: QuadObject, g: QuadGraph, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: QuadPredicate): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: QuadPredicate, o: Null, g: Null, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: QuadPredicate, o: Null, g: QuadGraph): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: QuadPredicate, o: Null, g: QuadGraph, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: QuadPredicate, o: QuadObject): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: QuadPredicate, o: QuadObject, g: Null, justOne: Boolean): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: QuadPredicate, o: QuadObject, g: QuadGraph): js.Array[
-    typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
-  ] = js.native
-  def statementsMatching[JustOne /* <: Boolean */](s: QuadSubject, p: QuadPredicate, o: QuadObject, g: QuadGraph, justOne: Boolean): js.Array[
+  def statementsMatching[JustOne /* <: Boolean */](
+    s: js.UndefOr[QuadSubject | Null],
+    p: js.UndefOr[QuadPredicate | Null],
+    o: js.UndefOr[QuadObject | Null],
+    g: js.UndefOr[QuadGraph | Null],
+    justOne: js.UndefOr[Boolean]
+  ): js.Array[
     typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
   ] = js.native
   def sym(uri: String): typings.rdflib.namedNodeMod.default = js.native
@@ -545,22 +470,12 @@ trait Formula
     * @param o - The object
     * @param g - The graph that contains the statement
     */
-  def the(): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: Null, p: Null, o: Null, g: QuadGraph): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: Null, p: Null, o: QuadObject): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: Null, p: Null, o: QuadObject, g: QuadGraph): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: Null, p: QuadPredicate): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: Null, p: QuadPredicate, o: Null, g: QuadGraph): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: Null, p: QuadPredicate, o: QuadObject): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: Null, p: QuadPredicate, o: QuadObject, g: QuadGraph): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: QuadSubject): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: QuadSubject, p: Null, o: Null, g: QuadGraph): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: QuadSubject, p: Null, o: QuadObject): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: QuadSubject, p: Null, o: QuadObject, g: QuadGraph): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: QuadSubject, p: QuadPredicate): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: QuadSubject, p: QuadPredicate, o: Null, g: QuadGraph): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: QuadSubject, p: QuadPredicate, o: QuadObject): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
-  def the(s: QuadSubject, p: QuadPredicate, o: QuadObject, g: QuadGraph): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
+  def the(
+    s: js.UndefOr[QuadSubject | Null],
+    p: js.UndefOr[QuadPredicate | Null],
+    o: js.UndefOr[QuadObject | Null],
+    g: js.UndefOr[QuadGraph | Null]
+  ): js.UndefOr[typings.rdflib.nodeInternalMod.default | Null] = js.native
   /**
     * Finds the types in the list which have no *stored* supertypes
     * We exclude the universal class, owl:Things and rdf:Resource, as it is
@@ -590,21 +505,11 @@ trait Formula
     * @param o - The object
     * @param g - The graph that contains the statement
     */
-  def whether(): Double = js.native
-  def whether(s: Null, p: Null, o: Null, g: QuadGraph): Double = js.native
-  def whether(s: Null, p: Null, o: QuadObject): Double = js.native
-  def whether(s: Null, p: Null, o: QuadObject, g: QuadGraph): Double = js.native
-  def whether(s: Null, p: QuadPredicate): Double = js.native
-  def whether(s: Null, p: QuadPredicate, o: Null, g: QuadGraph): Double = js.native
-  def whether(s: Null, p: QuadPredicate, o: QuadObject): Double = js.native
-  def whether(s: Null, p: QuadPredicate, o: QuadObject, g: QuadGraph): Double = js.native
-  def whether(s: QuadSubject): Double = js.native
-  def whether(s: QuadSubject, p: Null, o: Null, g: QuadGraph): Double = js.native
-  def whether(s: QuadSubject, p: Null, o: QuadObject): Double = js.native
-  def whether(s: QuadSubject, p: Null, o: QuadObject, g: QuadGraph): Double = js.native
-  def whether(s: QuadSubject, p: QuadPredicate): Double = js.native
-  def whether(s: QuadSubject, p: QuadPredicate, o: Null, g: QuadGraph): Double = js.native
-  def whether(s: QuadSubject, p: QuadPredicate, o: QuadObject): Double = js.native
-  def whether(s: QuadSubject, p: QuadPredicate, o: QuadObject, g: QuadGraph): Double = js.native
+  def whether(
+    s: js.UndefOr[QuadSubject | Null],
+    p: js.UndefOr[QuadPredicate | Null],
+    o: js.UndefOr[QuadObject | Null],
+    g: js.UndefOr[QuadGraph | Null]
+  ): Double = js.native
 }
 

@@ -33,6 +33,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def getProfile(): GaxiosPromise[SchemaProfile] = js.native
   def getProfile(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
+  def getProfile(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
   def getProfile(params: ParamsResourceUsersGetprofile): GaxiosPromise[SchemaProfile] = js.native
   def getProfile(params: ParamsResourceUsersGetprofile, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
   def getProfile(
@@ -60,6 +61,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def stop(): GaxiosPromise[Unit] = js.native
   def stop(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def stop(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def stop(params: ParamsResourceUsersStop): GaxiosPromise[Unit] = js.native
   def stop(params: ParamsResourceUsersStop, callback: BodyResponseCallback[Unit]): Unit = js.native
   def stop(
@@ -85,6 +87,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def watch(): GaxiosPromise[SchemaWatchResponse] = js.native
   def watch(callback: BodyResponseCallback[SchemaWatchResponse]): Unit = js.native
+  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWatchResponse] = js.native
   def watch(params: ParamsResourceUsersWatch): GaxiosPromise[SchemaWatchResponse] = js.native
   def watch(params: ParamsResourceUsersWatch, callback: BodyResponseCallback[SchemaWatchResponse]): Unit = js.native
   def watch(

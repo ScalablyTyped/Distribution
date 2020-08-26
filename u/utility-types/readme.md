@@ -1,7 +1,7 @@
 
 # Scala.js typings for utility-types
 
-Typings are for version 2.1.0
+Typings are for version 3.10.0
 
 ## Library description:
 Utility Types Collection for TypeScript

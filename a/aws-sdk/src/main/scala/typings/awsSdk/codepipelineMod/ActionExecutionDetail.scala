@@ -50,30 +50,62 @@ trait ActionExecutionDetail extends js.Object {
 
 object ActionExecutionDetail {
   @scala.inline
-  def apply(
-    actionExecutionId: ActionExecutionId = null,
-    actionName: ActionName = null,
-    input: ActionExecutionInput = null,
-    lastUpdateTime: Timestamp = null,
-    output: ActionExecutionOutput = null,
-    pipelineExecutionId: PipelineExecutionId = null,
-    pipelineVersion: js.UndefOr[PipelineVersion] = js.undefined,
-    stageName: StageName = null,
-    startTime: Timestamp = null,
-    status: ActionExecutionStatus = null
-  ): ActionExecutionDetail = {
+  def apply(): ActionExecutionDetail = {
     val __obj = js.Dynamic.literal()
-    if (actionExecutionId != null) __obj.updateDynamic("actionExecutionId")(actionExecutionId.asInstanceOf[js.Any])
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (pipelineExecutionId != null) __obj.updateDynamic("pipelineExecutionId")(pipelineExecutionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(pipelineVersion)) __obj.updateDynamic("pipelineVersion")(pipelineVersion.get.asInstanceOf[js.Any])
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionExecutionDetail]
   }
+  @scala.inline
+  implicit class ActionExecutionDetailOps[Self <: ActionExecutionDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionExecutionId(value: ActionExecutionId): Self = this.set("actionExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionExecutionId: Self = this.set("actionExecutionId", js.undefined)
+    @scala.inline
+    def setActionName(value: ActionName): Self = this.set("actionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionName: Self = this.set("actionName", js.undefined)
+    @scala.inline
+    def setInput(value: ActionExecutionInput): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    @scala.inline
+    def setOutput(value: ActionExecutionOutput): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutput: Self = this.set("output", js.undefined)
+    @scala.inline
+    def setPipelineExecutionId(value: PipelineExecutionId): Self = this.set("pipelineExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineExecutionId: Self = this.set("pipelineExecutionId", js.undefined)
+    @scala.inline
+    def setPipelineVersion(value: PipelineVersion): Self = this.set("pipelineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineVersion: Self = this.set("pipelineVersion", js.undefined)
+    @scala.inline
+    def setStageName(value: StageName): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageName: Self = this.set("stageName", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: ActionExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

@@ -1,38 +1,46 @@
 package typings.ibmMobilefirst.WL.JSONStore
 
-import typings.ibmMobilefirst.WL.IResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FindOptions extends BasicFindOptions {
-  var exact: js.UndefOr[Boolean] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
+  var exact: js.UndefOr[Boolean] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.native
 }
 
 object FindOptions {
   @scala.inline
-  def apply(
-    exact: js.UndefOr[Boolean] = js.undefined,
-    filter: js.Array[String] = null,
-    invocationContext: js.Any = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    offset: js.UndefOr[Double] = js.undefined,
-    onFailure: /* response */ IResponse => Unit = null,
-    onSuccess: /* response */ IResponse => Unit = null,
-    sort: js.Array[String] = null
-  ): FindOptions = {
+  def apply(): FindOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.get.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindOptions]
   }
+  @scala.inline
+  implicit class FindOptionsOps[Self <: FindOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExact(value: Boolean): Self = this.set("exact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExact: Self = this.set("exact", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+  }
+  
 }
 

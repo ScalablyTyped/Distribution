@@ -18,11 +18,32 @@ trait HsmClientCertificateMessage extends js.Object {
 
 object HsmClientCertificateMessage {
   @scala.inline
-  def apply(HsmClientCertificates: HsmClientCertificateList = null, Marker: String = null): HsmClientCertificateMessage = {
+  def apply(): HsmClientCertificateMessage = {
     val __obj = js.Dynamic.literal()
-    if (HsmClientCertificates != null) __obj.updateDynamic("HsmClientCertificates")(HsmClientCertificates.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[HsmClientCertificateMessage]
   }
+  @scala.inline
+  implicit class HsmClientCertificateMessageOps[Self <: HsmClientCertificateMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHsmClientCertificatesVarargs(value: HsmClientCertificate*): Self = this.set("HsmClientCertificates", js.Array(value :_*))
+    @scala.inline
+    def setHsmClientCertificates(value: HsmClientCertificateList): Self = this.set("HsmClientCertificates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsmClientCertificates: Self = this.set("HsmClientCertificates", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

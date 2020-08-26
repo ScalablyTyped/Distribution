@@ -260,9 +260,11 @@ trait Test extends js.Object {
     fn: js.Function2[/* done */ js.Function0[Unit], /* childTest */ this.type, Unit | js.Promise[Unit]]
   ): Unit = js.native
   def assert(obj: js.Any): Boolean = js.native
+  def assert(obj: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def assert(obj: js.Any, message: String): Boolean = js.native
   def assert(obj: js.Any, message: String, extra: Assert): Boolean = js.native
   def assertNot(obj: js.Any): Boolean = js.native
+  def assertNot(obj: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def assertNot(obj: js.Any, message: String): Boolean = js.native
   def assertNot(obj: js.Any, message: String, extra: Assert): Boolean = js.native
   def bailout(): Unit = js.native
@@ -273,49 +275,79 @@ trait Test extends js.Object {
   def cleanSnapshot(s: String): String = js.native
   def comment(message: String, args: js.Any*): Unit = js.native
   def contains(found: js.Any, pattern: String): Boolean = js.native
+  def contains(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def contains(found: js.Any, pattern: String, message: String): Boolean = js.native
   def contains(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def contains(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def contains(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def contains(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def contains(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def contains(found: js.Any, pattern: RegExp): Boolean = js.native
+  def contains(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def contains(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def contains(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def current(): Test = js.native
   def deepEqual(found: js.Any, wanted: js.Any): Boolean = js.native
+  def deepEqual(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def deepEqual(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def deepEqual(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def deepEquals(found: js.Any, wanted: js.Any): Boolean = js.native
+  def deepEquals(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def deepEquals(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def deepEquals(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def deepInequal(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def deepInequal(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def deepInequal(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def deepInequal(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def deepIs(found: js.Any, wanted: js.Any): Boolean = js.native
+  def deepIs(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def deepIs(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def deepIs(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def deepNot(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def deepNot(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def deepNot(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def deepNot(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def dissimilar(found: js.Any, pattern: String): Boolean = js.native
+  def dissimilar(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def dissimilar(found: js.Any, pattern: String, message: String): Boolean = js.native
   def dissimilar(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def dissimilar(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def dissimilar(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def dissimilar(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def dissimilar(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def dissimilar(found: js.Any, pattern: RegExp): Boolean = js.native
+  def dissimilar(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def dissimilar(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def dissimilar(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def doesNotEqual(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def doesNotEqual(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def doesNotEqual(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def doesNotEqual(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def doesNotHave(found: js.Any, pattern: String): Boolean = js.native
+  def doesNotHave(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def doesNotHave(found: js.Any, pattern: String, message: String): Boolean = js.native
   def doesNotHave(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def doesNotHave(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def doesNotHave(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def doesNotHave(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def doesNotHave(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def doesNotHave(found: js.Any, pattern: RegExp): Boolean = js.native
+  def doesNotHave(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def doesNotHave(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def doesNotHave(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   // Verify that the provided function does not throw.
@@ -323,29 +355,38 @@ trait Test extends js.Object {
   // If the function is not provided, then this will be treated as a todo test.
   // Note: if an error is encountered unexpectedly, it's often better to simply throw it. The Test object will handle this as a failure.
   def doesNotThrow(): Boolean = js.native
+  def doesNotThrow(fn: js.UndefOr[scala.Nothing], message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
+  def doesNotThrow(fn: js.UndefOr[scala.Nothing], message: String): Boolean = js.native
+  def doesNotThrow(fn: js.UndefOr[scala.Nothing], message: String, extra: Assert): Boolean = js.native
   def doesNotThrow(fn: js.Function1[/* repeated */ js.Any, _]): Boolean = js.native
+  def doesNotThrow(fn: js.Function1[/* repeated */ js.Any, _], message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def doesNotThrow(fn: js.Function1[/* repeated */ js.Any, _], message: String): Boolean = js.native
   def doesNotThrow(fn: js.Function1[/* repeated */ js.Any, _], message: String, extra: Assert): Boolean = js.native
   def done(): Unit = js.native
   // Verify that the event emitter emits the named event before the end of the test.
   def emits(eventEmitter: EventEmitter, event: String): Unit = js.native
+  def emits(eventEmitter: EventEmitter, event: String, message: js.UndefOr[scala.Nothing], extra: Assert): Unit = js.native
   def emits(eventEmitter: EventEmitter, event: String, message: String): Unit = js.native
   def emits(eventEmitter: EventEmitter, event: String, message: String, extra: Assert): Unit = js.native
   def end(): Unit = js.native
   def endAll(): Unit = js.native
   // Verify that the object found is exactly the same (that is, ===) to the object that is wanted.
   def equal(found: js.Any, wanted: js.Any): Boolean = js.native
+  def equal(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def equal(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def equal(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def equals(found: js.Any, wanted: js.Any): Boolean = js.native
+  def equals(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def equals(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def equals(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def equivalent(found: js.Any, wanted: js.Any): Boolean = js.native
+  def equivalent(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def equivalent(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def equivalent(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   // If the object is an error, then the assertion fails.
   // Note: if an error is encountered unexpectedly, it's often better to simply throw it. The Test object will handle this as a failure.
   def error(obj: js.Any): Boolean = js.native
+  def error(obj: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def error(obj: js.Any, message: String): Boolean = js.native
   def error(obj: js.Any, message: String, extra: Assert): Boolean = js.native
   // Expect the function to throw an uncaught exception at some point in the future, before the test ends. If the test ends without having thrown the expected error, then the test fails.
@@ -355,33 +396,96 @@ trait Test extends js.Object {
   // Note: This method will not properly link a thrown error to the correct test object in some cases involving native modules on Node version 8, because the async_hooks module does not track
   // the execution context ID across native boundaries.
   def expectUncaughtException(): Boolean = js.native
+  def expectUncaughtException(
+    fn: js.UndefOr[scala.Nothing],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
+  def expectUncaughtException(fn: js.UndefOr[scala.Nothing], expectedError: js.UndefOr[scala.Nothing], message: String): Boolean = js.native
+  def expectUncaughtException(
+    fn: js.UndefOr[scala.Nothing],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: String,
+    extra: Assert
+  ): Boolean = js.native
+  def expectUncaughtException(fn: js.UndefOr[scala.Nothing], expectedError: Error): Boolean = js.native
+  def expectUncaughtException(
+    fn: js.UndefOr[scala.Nothing],
+    expectedError: Error,
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
+  def expectUncaughtException(fn: js.UndefOr[scala.Nothing], expectedError: Error, message: String): Boolean = js.native
+  def expectUncaughtException(fn: js.UndefOr[scala.Nothing], expectedError: Error, message: String, extra: Assert): Boolean = js.native
   def expectUncaughtException(fn: js.Function1[/* repeated */ js.Any, _]): Boolean = js.native
+  def expectUncaughtException(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
+  def expectUncaughtException(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: String
+  ): Boolean = js.native
+  def expectUncaughtException(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: String,
+    extra: Assert
+  ): Boolean = js.native
   def expectUncaughtException(fn: js.Function1[/* repeated */ js.Any, _], expectedError: Error): Boolean = js.native
+  def expectUncaughtException(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: Error,
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def expectUncaughtException(fn: js.Function1[/* repeated */ js.Any, _], expectedError: Error, message: String): Boolean = js.native
   def expectUncaughtException(fn: js.Function1[/* repeated */ js.Any, _], expectedError: Error, message: String, extra: Assert): Boolean = js.native
   def fail(): Boolean = js.native
+  def fail(message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def fail(message: String): Boolean = js.native
   def fail(message: String, extra: Assert): Boolean = js.native
   def `false`(obj: js.Any): Boolean = js.native
+  def `false`(obj: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def `false`(obj: js.Any, message: String): Boolean = js.native
   def `false`(obj: js.Any, message: String, extra: Assert): Boolean = js.native
   def formatSnapshot(obj: js.Any): String = js.native
   def has(found: js.Any, pattern: String): Boolean = js.native
+  def has(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def has(found: js.Any, pattern: String, message: String): Boolean = js.native
   def has(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def has(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def has(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def has(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def has(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def has(found: js.Any, pattern: RegExp): Boolean = js.native
+  def has(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def has(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def has(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def hasFields(found: js.Any, pattern: String): Boolean = js.native
+  def hasFields(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def hasFields(found: js.Any, pattern: String, message: String): Boolean = js.native
   def hasFields(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def hasFields(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def hasFields(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def hasFields(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def hasFields(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def hasFields(found: js.Any, pattern: RegExp): Boolean = js.native
+  def hasFields(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def hasFields(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def hasFields(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   // Verify that the found object contains all of the provided fields, and that they are of the same type and value as the pattern provided.
@@ -389,51 +493,87 @@ trait Test extends js.Object {
   // defined in the found object, but it will not differentiate between a missing property and a property set to undefined.
   // Note that t.has(), the un-strict version of this function, is an alias for t.match().
   def hasStrict(found: js.Any, pattern: String): Boolean = js.native
+  def hasStrict(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def hasStrict(found: js.Any, pattern: String, message: String): Boolean = js.native
   def hasStrict(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def hasStrict(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def hasStrict(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def hasStrict(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def hasStrict(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def hasStrict(found: js.Any, pattern: RegExp): Boolean = js.native
+  def hasStrict(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def hasStrict(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def hasStrict(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def ifErr(obj: js.Any): Boolean = js.native
+  def ifErr(obj: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def ifErr(obj: js.Any, message: String): Boolean = js.native
   def ifErr(obj: js.Any, message: String, extra: Assert): Boolean = js.native
   def ifError(obj: js.Any): Boolean = js.native
+  def ifError(obj: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def ifError(obj: js.Any, message: String): Boolean = js.native
   def ifError(obj: js.Any, message: String, extra: Assert): Boolean = js.native
   def include(found: js.Any, pattern: String): Boolean = js.native
+  def include(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def include(found: js.Any, pattern: String, message: String): Boolean = js.native
   def include(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def include(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def include(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def include(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def include(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def include(found: js.Any, pattern: RegExp): Boolean = js.native
+  def include(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def include(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def include(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def includes(found: js.Any, pattern: String): Boolean = js.native
+  def includes(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def includes(found: js.Any, pattern: String, message: String): Boolean = js.native
   def includes(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def includes(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def includes(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def includes(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def includes(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def includes(found: js.Any, pattern: RegExp): Boolean = js.native
+  def includes(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def includes(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def includes(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def inequal(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def inequal(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def inequal(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def inequal(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def inequivalent(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def inequivalent(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def inequivalent(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def inequivalent(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def is(found: js.Any, wanted: js.Any): Boolean = js.native
+  def is(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def is(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def is(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def isA(found: js.Any, `type`: String): Boolean = js.native
+  def isA(found: js.Any, `type`: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isA(found: js.Any, `type`: String, message: String): Boolean = js.native
   def isA(found: js.Any, `type`: String, message: String, extra: Assert): Boolean = js.native
   def isA(found: js.Any, `type`: Instantiable1[/* args (repeated) */ js.Any, js.Object]): Boolean = js.native
+  def isA(
+    found: js.Any,
+    `type`: Instantiable1[/* args (repeated) */ js.Any, js.Object],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def isA(found: js.Any, `type`: Instantiable1[/* args (repeated) */ js.Any, js.Object], message: String): Boolean = js.native
   def isA(
     found: js.Any,
@@ -442,81 +582,137 @@ trait Test extends js.Object {
     extra: Assert
   ): Boolean = js.native
   def isDeep(found: js.Any, wanted: js.Any): Boolean = js.native
+  def isDeep(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isDeep(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def isDeep(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def isDeeply(found: js.Any, wanted: js.Any): Boolean = js.native
+  def isDeeply(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isDeeply(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def isDeeply(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def isDissimilar(found: js.Any, pattern: String): Boolean = js.native
+  def isDissimilar(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isDissimilar(found: js.Any, pattern: String, message: String): Boolean = js.native
   def isDissimilar(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def isDissimilar(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def isDissimilar(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def isDissimilar(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def isDissimilar(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def isDissimilar(found: js.Any, pattern: RegExp): Boolean = js.native
+  def isDissimilar(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isDissimilar(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def isDissimilar(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def isEqual(found: js.Any, wanted: js.Any): Boolean = js.native
+  def isEqual(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isEqual(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def isEqual(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def isInequal(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def isInequal(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isInequal(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def isInequal(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def isLike(found: js.Any, pattern: String): Boolean = js.native
+  def isLike(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isLike(found: js.Any, pattern: String, message: String): Boolean = js.native
   def isLike(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def isLike(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def isLike(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def isLike(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def isLike(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def isLike(found: js.Any, pattern: RegExp): Boolean = js.native
+  def isLike(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isLike(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def isLike(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def isLoose(found: js.Any, wanted: js.Any): Boolean = js.native
+  def isLoose(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isLoose(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def isLoose(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def isNot(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def isNot(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isNot(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def isNot(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def isNotEqual(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def isNotEqual(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isNotEqual(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def isNotEqual(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def isNotLike(found: js.Any, pattern: String): Boolean = js.native
+  def isNotLike(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isNotLike(found: js.Any, pattern: String, message: String): Boolean = js.native
   def isNotLike(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def isNotLike(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def isNotLike(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def isNotLike(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def isNotLike(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def isNotLike(found: js.Any, pattern: RegExp): Boolean = js.native
+  def isNotLike(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isNotLike(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def isNotLike(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def isNotSimilar(found: js.Any, pattern: String): Boolean = js.native
+  def isNotSimilar(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isNotSimilar(found: js.Any, pattern: String, message: String): Boolean = js.native
   def isNotSimilar(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def isNotSimilar(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def isNotSimilar(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def isNotSimilar(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def isNotSimilar(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def isNotSimilar(found: js.Any, pattern: RegExp): Boolean = js.native
+  def isNotSimilar(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isNotSimilar(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def isNotSimilar(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def isStrict(found: js.Any, wanted: js.Any): Boolean = js.native
+  def isStrict(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isStrict(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def isStrict(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def isStrictly(found: js.Any, wanted: js.Any): Boolean = js.native
+  def isStrictly(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isStrictly(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def isStrictly(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def isUnlike(found: js.Any, pattern: String): Boolean = js.native
+  def isUnlike(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isUnlike(found: js.Any, pattern: String, message: String): Boolean = js.native
   def isUnlike(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def isUnlike(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def isUnlike(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def isUnlike(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def isUnlike(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def isUnlike(found: js.Any, pattern: RegExp): Boolean = js.native
+  def isUnlike(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isUnlike(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def isUnlike(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def isa(found: js.Any, `type`: String): Boolean = js.native
+  def isa(found: js.Any, `type`: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def isa(found: js.Any, `type`: String, message: String): Boolean = js.native
   def isa(found: js.Any, `type`: String, message: String, extra: Assert): Boolean = js.native
   def isa(found: js.Any, `type`: Instantiable1[/* args (repeated) */ js.Any, js.Object]): Boolean = js.native
+  def isa(
+    found: js.Any,
+    `type`: Instantiable1[/* args (repeated) */ js.Any, js.Object],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def isa(found: js.Any, `type`: Instantiable1[/* args (repeated) */ js.Any, js.Object], message: String): Boolean = js.native
   def isa(
     found: js.Any,
@@ -525,27 +721,40 @@ trait Test extends js.Object {
     extra: Assert
   ): Boolean = js.native
   def like(found: js.Any, pattern: String): Boolean = js.native
+  def like(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def like(found: js.Any, pattern: String, message: String): Boolean = js.native
   def like(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def like(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def like(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def like(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def like(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def like(found: js.Any, pattern: RegExp): Boolean = js.native
+  def like(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def like(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def like(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def looseEqual(found: js.Any, wanted: js.Any): Boolean = js.native
+  def looseEqual(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def looseEqual(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def looseEqual(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def looseEquals(found: js.Any, wanted: js.Any): Boolean = js.native
+  def looseEquals(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def looseEquals(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def looseEquals(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def looseInequal(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def looseInequal(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def looseInequal(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def looseInequal(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def looseIs(found: js.Any, wanted: js.Any): Boolean = js.native
+  def looseIs(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def looseIs(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def looseIs(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def looseNot(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def looseNot(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def looseNot(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def looseNot(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   // Verify that the found object matches the pattern provided.
@@ -556,105 +765,167 @@ trait Test extends js.Object {
   // This is useful when you want to verify that an object has a certain set of required fields, but additional fields are ok.
   // See tcompare for the full details on how this works.
   def `match`(found: js.Any, pattern: String): Boolean = js.native
+  def `match`(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def `match`(found: js.Any, pattern: String, message: String): Boolean = js.native
   def `match`(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def `match`(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def `match`(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def `match`(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def `match`(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def `match`(found: js.Any, pattern: RegExp): Boolean = js.native
+  def `match`(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def `match`(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def `match`(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   // As of version 11, tap supports saving and then comparing against "snapshot" strings. This is a powerful technique for testing programs that generate output, but it comes with some caveats.
   def matchSnapshot(output: js.Any): Boolean = js.native
+  def matchSnapshot(output: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def matchSnapshot(output: js.Any, message: String): Boolean = js.native
   def matchSnapshot(output: js.Any, message: String, extra: Assert): Boolean = js.native
   def matches(found: js.Any, pattern: String): Boolean = js.native
+  def matches(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def matches(found: js.Any, pattern: String, message: String): Boolean = js.native
   def matches(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def matches(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def matches(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def matches(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def matches(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def matches(found: js.Any, pattern: RegExp): Boolean = js.native
+  def matches(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def matches(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def matches(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def notDeep(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def notDeep(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notDeep(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def notDeep(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def notDeeply(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def notDeeply(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notDeeply(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def notDeeply(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   // Inverse of t.equal().
   // Verify that the object found is not exactly the same (that is, !==) as the object that is wanted.
   def notEqual(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def notEqual(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notEqual(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def notEqual(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def notEquals(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def notEquals(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notEquals(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def notEquals(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def notLike(found: js.Any, pattern: String): Boolean = js.native
+  def notLike(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notLike(found: js.Any, pattern: String, message: String): Boolean = js.native
   def notLike(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def notLike(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def notLike(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def notLike(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def notLike(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def notLike(found: js.Any, pattern: RegExp): Boolean = js.native
+  def notLike(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notLike(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def notLike(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def notLoose(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def notLoose(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notLoose(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def notLoose(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   // Inverse of match()
   // Verify that the found object does not match the pattern provided.
   def notMatch(found: js.Any, pattern: String): Boolean = js.native
+  def notMatch(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notMatch(found: js.Any, pattern: String, message: String): Boolean = js.native
   def notMatch(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def notMatch(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def notMatch(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def notMatch(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def notMatch(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def notMatch(found: js.Any, pattern: RegExp): Boolean = js.native
+  def notMatch(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notMatch(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def notMatch(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   // Verifies that the object is not truthy.
   def notOk(obj: js.Any): Boolean = js.native
+  def notOk(obj: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notOk(obj: js.Any, message: String): Boolean = js.native
   def notOk(obj: js.Any, message: String, extra: Assert): Boolean = js.native
   // Inverse of t.same().
   // Verify that the found object is not deeply equivalent to the unwanted object. Uses non-strict inequality (ie, !=) for scalars.
   def notSame(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def notSame(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notSame(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def notSame(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def notSameStrict(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def notSameStrict(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notSameStrict(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def notSameStrict(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def notSimilar(found: js.Any, pattern: String): Boolean = js.native
+  def notSimilar(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notSimilar(found: js.Any, pattern: String, message: String): Boolean = js.native
   def notSimilar(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def notSimilar(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def notSimilar(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def notSimilar(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def notSimilar(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def notSimilar(found: js.Any, pattern: RegExp): Boolean = js.native
+  def notSimilar(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notSimilar(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def notSimilar(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def notStrictEqual(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def notStrictEqual(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notStrictEqual(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def notStrictEqual(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def notStrictEquals(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def notStrictEquals(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notStrictEquals(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def notStrictEquals(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def notStrictSame(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def notStrictSame(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notStrictSame(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def notStrictSame(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def notThrow(): Boolean = js.native
+  def notThrow(fn: js.UndefOr[scala.Nothing], message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
+  def notThrow(fn: js.UndefOr[scala.Nothing], message: String): Boolean = js.native
+  def notThrow(fn: js.UndefOr[scala.Nothing], message: String, extra: Assert): Boolean = js.native
   def notThrow(fn: js.Function1[/* repeated */ js.Any, _]): Boolean = js.native
+  def notThrow(fn: js.Function1[/* repeated */ js.Any, _], message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def notThrow(fn: js.Function1[/* repeated */ js.Any, _], message: String): Boolean = js.native
   def notThrow(fn: js.Function1[/* repeated */ js.Any, _], message: String, extra: Assert): Boolean = js.native
   // Assertions
   // Verifies that the object is truthy.
   def ok(obj: js.Any): Boolean = js.native
+  def ok(obj: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def ok(obj: js.Any, message: String): Boolean = js.native
   def ok(obj: js.Any, message: String, extra: Assert): Boolean = js.native
   def only(name: String): js.Promise[Unit] = js.native
   def only(name: String, cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]): js.Promise[Unit] = js.native
+  def only(
+    name: String,
+    extra: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]
+  ): js.Promise[Unit] = js.native
   def only(name: String, extra: typings.tap.mod.Options.Test): js.Promise[Unit] = js.native
   def only(
     name: String,
@@ -662,6 +933,7 @@ trait Test extends js.Object {
     cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]
   ): js.Promise[Unit] = js.native
   def pass(): Boolean = js.native
+  def pass(message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def pass(message: String): Boolean = js.native
   def pass(message: String, extra: Assert): Boolean = js.native
   def passing(): Boolean = js.native
@@ -673,12 +945,23 @@ trait Test extends js.Object {
   def rejects(
     promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
     expectedError: Error,
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Unit = js.native
+  def rejects(
+    promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
+    expectedError: Error,
     message: String
   ): Unit = js.native
   def rejects(
     promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
     expectedError: Error,
     message: String,
+    extra: Assert
+  ): Unit = js.native
+  def rejects(
+    promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
+    message: js.UndefOr[scala.Nothing],
     extra: Assert
   ): Unit = js.native
   def rejects(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]], message: String): Unit = js.native
@@ -688,11 +971,24 @@ trait Test extends js.Object {
   // Note: since promises always reject and resolve asynchronously, this assertion is implemented asynchronously. As such, it does not return a boolean to indicate its passing status.
   // Instead, it returns a Promise that resolves when it is completed.
   def rejects(promiseOrFn: js.Promise[_], expectedError: Error): Unit = js.native
+  def rejects(
+    promiseOrFn: js.Promise[_],
+    expectedError: Error,
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Unit = js.native
   def rejects(promiseOrFn: js.Promise[_], expectedError: Error, message: String): Unit = js.native
   def rejects(promiseOrFn: js.Promise[_], expectedError: Error, message: String, extra: Assert): Unit = js.native
+  def rejects(promiseOrFn: js.Promise[_], message: js.UndefOr[scala.Nothing], extra: Assert): Unit = js.native
   def rejects(promiseOrFn: js.Promise[_], message: String): Unit = js.native
   def rejects(promiseOrFn: js.Promise[_], message: String, extra: Assert): Unit = js.native
   def resolveMatch(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]], wanted: String): Unit = js.native
+  def resolveMatch(
+    promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
+    wanted: String,
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Unit = js.native
   def resolveMatch(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]], wanted: String, message: String): Unit = js.native
   def resolveMatch(
     promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
@@ -701,6 +997,12 @@ trait Test extends js.Object {
     extra: Assert
   ): Unit = js.native
   def resolveMatch(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]], wanted: StringDictionary[RegExp]): Unit = js.native
+  def resolveMatch(
+    promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
+    wanted: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Unit = js.native
   def resolveMatch(
     promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
     wanted: StringDictionary[RegExp],
@@ -713,6 +1015,12 @@ trait Test extends js.Object {
     extra: Assert
   ): Unit = js.native
   def resolveMatch(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]], wanted: RegExp): Unit = js.native
+  def resolveMatch(
+    promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
+    wanted: RegExp,
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Unit = js.native
   def resolveMatch(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]], wanted: RegExp, message: String): Unit = js.native
   def resolveMatch(
     promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
@@ -724,51 +1032,86 @@ trait Test extends js.Object {
   // Note: since promises always reject and resolve asynchronously, this assertion is implemented asynchronously. As such, it does not return a boolean to indicate its passing status.
   // Instead, it returns a Promise that resolves when it is completed.
   def resolveMatch(promiseOrFn: js.Promise[_], wanted: String): Unit = js.native
+  def resolveMatch(promiseOrFn: js.Promise[_], wanted: String, message: js.UndefOr[scala.Nothing], extra: Assert): Unit = js.native
   def resolveMatch(promiseOrFn: js.Promise[_], wanted: String, message: String): Unit = js.native
   def resolveMatch(promiseOrFn: js.Promise[_], wanted: String, message: String, extra: Assert): Unit = js.native
   def resolveMatch(promiseOrFn: js.Promise[_], wanted: StringDictionary[RegExp]): Unit = js.native
+  def resolveMatch(
+    promiseOrFn: js.Promise[_],
+    wanted: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Unit = js.native
   def resolveMatch(promiseOrFn: js.Promise[_], wanted: StringDictionary[RegExp], message: String): Unit = js.native
   def resolveMatch(promiseOrFn: js.Promise[_], wanted: StringDictionary[RegExp], message: String, extra: Assert): Unit = js.native
   def resolveMatch(promiseOrFn: js.Promise[_], wanted: RegExp): Unit = js.native
+  def resolveMatch(promiseOrFn: js.Promise[_], wanted: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Unit = js.native
   def resolveMatch(promiseOrFn: js.Promise[_], wanted: RegExp, message: String): Unit = js.native
   def resolveMatch(promiseOrFn: js.Promise[_], wanted: RegExp, message: String, extra: Assert): Unit = js.native
   def resolveMatchSnapshot(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]]): Unit = js.native
+  def resolveMatchSnapshot(
+    promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Unit = js.native
   def resolveMatchSnapshot(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]], message: String): Unit = js.native
   def resolveMatchSnapshot(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]], message: String, extra: Assert): Unit = js.native
   // Verifies that the promise (or promise-returning function) resolves, and furthermore that the value of the promise matches the snapshot.
   // Note: since promises always reject and resolve asynchronously, this assertion is implemented asynchronously. As such, it does not return a boolean to indicate its passing status.
   // Instead, it returns a Promise that resolves when it is completed.
   def resolveMatchSnapshot(promiseOrFn: js.Promise[_]): Unit = js.native
+  def resolveMatchSnapshot(promiseOrFn: js.Promise[_], message: js.UndefOr[scala.Nothing], extra: Assert): Unit = js.native
   def resolveMatchSnapshot(promiseOrFn: js.Promise[_], message: String): Unit = js.native
   def resolveMatchSnapshot(promiseOrFn: js.Promise[_], message: String, extra: Assert): Unit = js.native
   def resolves(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]]): Unit = js.native
+  def resolves(
+    promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Unit = js.native
   def resolves(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]], message: String): Unit = js.native
   def resolves(promiseOrFn: js.Function1[/* repeated */ js.Any, js.Promise[_]], message: String, extra: Assert): Unit = js.native
   // Verifies that the promise (or promise-returning function) resolves, making no expectation about the value that the promise resolves to.
   // Note: since promises always reject and resolve asynchronously, this assertion is implemented asynchronously. As such, it does not return a boolean to indicate its passing status.
   // Instead, it returns a Promise that resolves when it is completed.
   def resolves(promiseOrFn: js.Promise[_]): Unit = js.native
+  def resolves(promiseOrFn: js.Promise[_], message: js.UndefOr[scala.Nothing], extra: Assert): Unit = js.native
   def resolves(promiseOrFn: js.Promise[_], message: String): Unit = js.native
   def resolves(promiseOrFn: js.Promise[_], message: String, extra: Assert): Unit = js.native
   // Verify that the found object is deeply equivalent to the wanted object. Use non-strict equality for scalars (ie, ==). See: tcompare
   def same(found: js.Any, wanted: js.Any): Boolean = js.native
+  def same(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def same(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def same(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def sameStrict(found: js.Any, wanted: js.Any): Boolean = js.native
+  def sameStrict(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def sameStrict(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def sameStrict(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def setTimeout(n: Double): Unit = js.native
   def similar(found: js.Any, pattern: String): Boolean = js.native
+  def similar(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def similar(found: js.Any, pattern: String, message: String): Boolean = js.native
   def similar(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def similar(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def similar(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def similar(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def similar(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def similar(found: js.Any, pattern: RegExp): Boolean = js.native
+  def similar(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def similar(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def similar(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def skip(name: String): js.Promise[Unit] = js.native
   def skip(name: String, cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]): js.Promise[Unit] = js.native
+  def skip(
+    name: String,
+    extra: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]
+  ): js.Promise[Unit] = js.native
   def skip(name: String, extra: typings.tap.mod.Options.Test): js.Promise[Unit] = js.native
   def skip(
     name: String,
@@ -776,52 +1119,78 @@ trait Test extends js.Object {
     cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]
   ): js.Promise[Unit] = js.native
   def spawn(cmd: String, args: String): js.Promise[Unit] = js.native
+  def spawn(
+    cmd: String,
+    args: String,
+    options: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    extra: Spawn
+  ): js.Promise[Unit] = js.native
+  def spawn(cmd: String, args: String, options: js.UndefOr[scala.Nothing], name: String): js.Promise[Unit] = js.native
+  def spawn(cmd: String, args: String, options: js.UndefOr[scala.Nothing], name: String, extra: Spawn): js.Promise[Unit] = js.native
   def spawn(cmd: String, args: String, options: Bag): js.Promise[Unit] = js.native
+  def spawn(cmd: String, args: String, options: Bag, name: js.UndefOr[scala.Nothing], extra: Spawn): js.Promise[Unit] = js.native
   def spawn(cmd: String, args: String, options: Bag, name: String): js.Promise[Unit] = js.native
   def spawn(cmd: String, args: String, options: Bag, name: String, extra: Spawn): js.Promise[Unit] = js.native
   def stdin(name: String): js.Promise[Unit] = js.native
   def stdin(name: String, extra: Bag): js.Promise[Unit] = js.native
   def strictDeepEqual(found: js.Any, wanted: js.Any): Boolean = js.native
+  def strictDeepEqual(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def strictDeepEqual(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def strictDeepEqual(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def strictDeepEquals(found: js.Any, wanted: js.Any): Boolean = js.native
+  def strictDeepEquals(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def strictDeepEquals(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def strictDeepEquals(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def strictDeepInequal(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def strictDeepInequal(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def strictDeepInequal(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def strictDeepInequal(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def strictDeepInequals(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def strictDeepInequals(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def strictDeepInequals(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def strictDeepInequals(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def strictEqual(found: js.Any, wanted: js.Any): Boolean = js.native
+  def strictEqual(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def strictEqual(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def strictEqual(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def strictEquals(found: js.Any, wanted: js.Any): Boolean = js.native
+  def strictEquals(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def strictEquals(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def strictEquals(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def strictEquivalent(found: js.Any, wanted: js.Any): Boolean = js.native
+  def strictEquivalent(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def strictEquivalent(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def strictEquivalent(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def strictInequivalent(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def strictInequivalent(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def strictInequivalent(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def strictInequivalent(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def strictIs(found: js.Any, wanted: js.Any): Boolean = js.native
+  def strictIs(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def strictIs(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def strictIs(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   // Inverse of t.strictSame().
   // Verify that the found object is not deeply equivalent to the unwanted object. Use strict equality for scalars (ie, ===).
   def strictNotSame(found: js.Any, notWanted: js.Any): Boolean = js.native
+  def strictNotSame(found: js.Any, notWanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def strictNotSame(found: js.Any, notWanted: js.Any, message: String): Boolean = js.native
   def strictNotSame(found: js.Any, notWanted: js.Any, message: String, extra: Assert): Boolean = js.native
   // Strict version of t.same().
   // Verify that the found object is deeply equivalent to the wanted object. Use strict equality for scalars (ie, ===).
   def strictSame(found: js.Any, wanted: js.Any): Boolean = js.native
+  def strictSame(found: js.Any, wanted: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def strictSame(found: js.Any, wanted: js.Any, message: String): Boolean = js.native
   def strictSame(found: js.Any, wanted: js.Any, message: String, extra: Assert): Boolean = js.native
   def tearDown(fn: js.Function0[Unit | js.Promise[Unit]]): Unit = js.native
   def teardown(fn: js.Function0[Unit | js.Promise[Unit]]): Unit = js.native
   def test(name: String): js.Promise[Unit] = js.native
   def test(name: String, cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]): js.Promise[Unit] = js.native
+  def test(
+    name: String,
+    extra: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]
+  ): js.Promise[Unit] = js.native
   def test(name: String, extra: typings.tap.mod.Options.Test): js.Promise[Unit] = js.native
   def test(
     name: String,
@@ -829,13 +1198,68 @@ trait Test extends js.Object {
     cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]
   ): js.Promise[Unit] = js.native
   def threw(error: Error): Unit = js.native
+  def threw(error: Error, extra: js.UndefOr[scala.Nothing], proxy: Test): Unit = js.native
   def threw(error: Error, extra: Error): Unit = js.native
   def threw(error: Error, extra: Error, proxy: Test): Unit = js.native
   def `throw`(): Boolean = js.native
+  def `throw`(
+    fn: js.UndefOr[scala.Nothing],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
+  def `throw`(fn: js.UndefOr[scala.Nothing], expectedError: js.UndefOr[scala.Nothing], message: String): Boolean = js.native
+  def `throw`(
+    fn: js.UndefOr[scala.Nothing],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: String,
+    extra: Assert
+  ): Boolean = js.native
+  def `throw`(fn: js.UndefOr[scala.Nothing], expectedError: Error): Boolean = js.native
+  def `throw`(
+    fn: js.UndefOr[scala.Nothing],
+    expectedError: Error,
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
+  def `throw`(fn: js.UndefOr[scala.Nothing], expectedError: Error, message: String): Boolean = js.native
+  def `throw`(fn: js.UndefOr[scala.Nothing], expectedError: Error, message: String, extra: Assert): Boolean = js.native
+  def `throw`(fn: js.UndefOr[scala.Nothing], messageOrExpectedError: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
+  def `throw`(fn: js.UndefOr[scala.Nothing], messageOrExpectedError: String): Boolean = js.native
+  def `throw`(fn: js.UndefOr[scala.Nothing], messageOrExpectedError: String, extra: Assert): Boolean = js.native
+  def `throw`(fn: js.UndefOr[scala.Nothing], messageOrExpectedError: Error, extra: Assert): Boolean = js.native
   def `throw`(fn: js.Function1[/* repeated */ js.Any, _]): Boolean = js.native
+  def `throw`(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
+  def `throw`(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: String
+  ): Boolean = js.native
+  def `throw`(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: String,
+    extra: Assert
+  ): Boolean = js.native
   def `throw`(fn: js.Function1[/* repeated */ js.Any, _], expectedError: Error): Boolean = js.native
+  def `throw`(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: Error,
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def `throw`(fn: js.Function1[/* repeated */ js.Any, _], expectedError: Error, message: String): Boolean = js.native
   def `throw`(fn: js.Function1[/* repeated */ js.Any, _], expectedError: Error, message: String, extra: Assert): Boolean = js.native
+  def `throw`(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    messageOrExpectedError: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def `throw`(fn: js.Function1[/* repeated */ js.Any, _], messageOrExpectedError: String): Boolean = js.native
   def `throw`(fn: js.Function1[/* repeated */ js.Any, _], messageOrExpectedError: String, extra: Assert): Boolean = js.native
   def `throw`(fn: js.Function1[/* repeated */ js.Any, _], messageOrExpectedError: Error, extra: Assert): Boolean = js.native
@@ -857,15 +1281,74 @@ trait Test extends js.Object {
   // The expected error is tested against the throw error using t.match, so regular expressions and the like are fine. If the expected error is an Error object, then the stack field is ignored,
   // since that will generally never match.
   def throws(): Boolean = js.native
+  def throws(
+    fn: js.UndefOr[scala.Nothing],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
+  def throws(fn: js.UndefOr[scala.Nothing], expectedError: js.UndefOr[scala.Nothing], message: String): Boolean = js.native
+  def throws(
+    fn: js.UndefOr[scala.Nothing],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: String,
+    extra: Assert
+  ): Boolean = js.native
+  def throws(fn: js.UndefOr[scala.Nothing], expectedError: Error): Boolean = js.native
+  def throws(
+    fn: js.UndefOr[scala.Nothing],
+    expectedError: Error,
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
+  def throws(fn: js.UndefOr[scala.Nothing], expectedError: Error, message: String): Boolean = js.native
+  def throws(fn: js.UndefOr[scala.Nothing], expectedError: Error, message: String, extra: Assert): Boolean = js.native
+  def throws(fn: js.UndefOr[scala.Nothing], messageOrExpectedError: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
+  def throws(fn: js.UndefOr[scala.Nothing], messageOrExpectedError: String): Boolean = js.native
+  def throws(fn: js.UndefOr[scala.Nothing], messageOrExpectedError: String, extra: Assert): Boolean = js.native
+  def throws(fn: js.UndefOr[scala.Nothing], messageOrExpectedError: Error, extra: Assert): Boolean = js.native
   def throws(fn: js.Function1[/* repeated */ js.Any, _]): Boolean = js.native
+  def throws(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
+  def throws(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: String
+  ): Boolean = js.native
+  def throws(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: js.UndefOr[scala.Nothing],
+    message: String,
+    extra: Assert
+  ): Boolean = js.native
   def throws(fn: js.Function1[/* repeated */ js.Any, _], expectedError: Error): Boolean = js.native
+  def throws(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    expectedError: Error,
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def throws(fn: js.Function1[/* repeated */ js.Any, _], expectedError: Error, message: String): Boolean = js.native
   def throws(fn: js.Function1[/* repeated */ js.Any, _], expectedError: Error, message: String, extra: Assert): Boolean = js.native
+  def throws(
+    fn: js.Function1[/* repeated */ js.Any, _],
+    messageOrExpectedError: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def throws(fn: js.Function1[/* repeated */ js.Any, _], messageOrExpectedError: String): Boolean = js.native
   def throws(fn: js.Function1[/* repeated */ js.Any, _], messageOrExpectedError: String, extra: Assert): Boolean = js.native
   def throws(fn: js.Function1[/* repeated */ js.Any, _], messageOrExpectedError: Error, extra: Assert): Boolean = js.native
   def todo(name: String): js.Promise[Unit] = js.native
   def todo(name: String, cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]): js.Promise[Unit] = js.native
+  def todo(
+    name: String,
+    extra: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]
+  ): js.Promise[Unit] = js.native
   def todo(name: String, extra: typings.tap.mod.Options.Test): js.Promise[Unit] = js.native
   def todo(
     name: String,
@@ -873,6 +1356,7 @@ trait Test extends js.Object {
     cb: js.Function1[/* t */ this.type, js.Promise[Unit] | Unit]
   ): js.Promise[Unit] = js.native
   def `true`(obj: js.Any): Boolean = js.native
+  def `true`(obj: js.Any, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def `true`(obj: js.Any, message: String): Boolean = js.native
   def `true`(obj: js.Any, message: String, extra: Assert): Boolean = js.native
   // Verify that the object is of the type provided.
@@ -882,9 +1366,16 @@ trait Test extends js.Object {
   // t.type(new Date(), 'Date');
   // t.type(new Date(), Date);
   def `type`(found: js.Any, `type`: String): Boolean = js.native
+  def `type`(found: js.Any, `type`: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def `type`(found: js.Any, `type`: String, message: String): Boolean = js.native
   def `type`(found: js.Any, `type`: String, message: String, extra: Assert): Boolean = js.native
   def `type`(found: js.Any, `type`: Instantiable1[/* args (repeated) */ js.Any, js.Object]): Boolean = js.native
+  def `type`(
+    found: js.Any,
+    `type`: Instantiable1[/* args (repeated) */ js.Any, js.Object],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def `type`(found: js.Any, `type`: Instantiable1[/* args (repeated) */ js.Any, js.Object], message: String): Boolean = js.native
   def `type`(
     found: js.Any,
@@ -893,21 +1384,37 @@ trait Test extends js.Object {
     extra: Assert
   ): Boolean = js.native
   def unlike(found: js.Any, pattern: String): Boolean = js.native
+  def unlike(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def unlike(found: js.Any, pattern: String, message: String): Boolean = js.native
   def unlike(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def unlike(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def unlike(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def unlike(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def unlike(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def unlike(found: js.Any, pattern: RegExp): Boolean = js.native
+  def unlike(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def unlike(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def unlike(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
   def unsimilar(found: js.Any, pattern: String): Boolean = js.native
+  def unsimilar(found: js.Any, pattern: String, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def unsimilar(found: js.Any, pattern: String, message: String): Boolean = js.native
   def unsimilar(found: js.Any, pattern: String, message: String, extra: Assert): Boolean = js.native
   def unsimilar(found: js.Any, pattern: StringDictionary[RegExp]): Boolean = js.native
+  def unsimilar(
+    found: js.Any,
+    pattern: StringDictionary[RegExp],
+    message: js.UndefOr[scala.Nothing],
+    extra: Assert
+  ): Boolean = js.native
   def unsimilar(found: js.Any, pattern: StringDictionary[RegExp], message: String): Boolean = js.native
   def unsimilar(found: js.Any, pattern: StringDictionary[RegExp], message: String, extra: Assert): Boolean = js.native
   def unsimilar(found: js.Any, pattern: RegExp): Boolean = js.native
+  def unsimilar(found: js.Any, pattern: RegExp, message: js.UndefOr[scala.Nothing], extra: Assert): Boolean = js.native
   def unsimilar(found: js.Any, pattern: RegExp, message: String): Boolean = js.native
   def unsimilar(found: js.Any, pattern: RegExp, message: String, extra: Assert): Boolean = js.native
 }

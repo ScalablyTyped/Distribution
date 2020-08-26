@@ -48,22 +48,46 @@ trait SchemaSourceRepository extends js.Object {
 
 object SchemaSourceRepository {
   @scala.inline
-  def apply(
-    branch: String = null,
-    deployedRevision: String = null,
-    repositoryUrl: String = null,
-    revision: String = null,
-    sourcePath: String = null,
-    tag: String = null
-  ): SchemaSourceRepository = {
+  def apply(): SchemaSourceRepository = {
     val __obj = js.Dynamic.literal()
-    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
-    if (deployedRevision != null) __obj.updateDynamic("deployedRevision")(deployedRevision.asInstanceOf[js.Any])
-    if (repositoryUrl != null) __obj.updateDynamic("repositoryUrl")(repositoryUrl.asInstanceOf[js.Any])
-    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
-    if (sourcePath != null) __obj.updateDynamic("sourcePath")(sourcePath.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceRepository]
   }
+  @scala.inline
+  implicit class SchemaSourceRepositoryOps[Self <: SchemaSourceRepository] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBranch: Self = this.set("branch", js.undefined)
+    @scala.inline
+    def setDeployedRevision(value: String): Self = this.set("deployedRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployedRevision: Self = this.set("deployedRevision", js.undefined)
+    @scala.inline
+    def setRepositoryUrl(value: String): Self = this.set("repositoryUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryUrl: Self = this.set("repositoryUrl", js.undefined)
+    @scala.inline
+    def setRevision(value: String): Self = this.set("revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevision: Self = this.set("revision", js.undefined)
+    @scala.inline
+    def setSourcePath(value: String): Self = this.set("sourcePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcePath: Self = this.set("sourcePath", js.undefined)
+    @scala.inline
+    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+  }
+  
 }
 

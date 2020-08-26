@@ -18,10 +18,28 @@ trait StateExitedEventDetails extends js.Object {
 
 object StateExitedEventDetails {
   @scala.inline
-  def apply(name: Name, output: SensitiveData = null): StateExitedEventDetails = {
+  def apply(name: Name): StateExitedEventDetails = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateExitedEventDetails]
   }
+  @scala.inline
+  implicit class StateExitedEventDetailsOps[Self <: StateExitedEventDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutput(value: SensitiveData): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutput: Self = this.set("output", js.undefined)
+  }
+  
 }
 

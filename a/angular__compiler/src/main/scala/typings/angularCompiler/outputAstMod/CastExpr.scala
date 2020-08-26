@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CastExpr protected () extends Expression {
   def this(value: Expression) = this()
   def this(value: Expression, `type`: Type) = this()
+  def this(value: Expression, `type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(value: Expression, `type`: Null, sourceSpan: ParseSourceSpan) = this()
   def this(value: Expression, `type`: Type, sourceSpan: ParseSourceSpan) = this()
   var value: Expression = js.native

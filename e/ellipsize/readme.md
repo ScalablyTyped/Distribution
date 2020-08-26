@@ -11,8 +11,8 @@ Ellipsizes a string at the nearest whitespace character near the end of allowed 
 | Full name          | ellipsize |
 | Keywords           | ellipsize, ellipsis, truncate, shorten, string |
 | # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 632945 |
+| # dependents       | 39 |
+| # downloads        | 714083 |
 | # stars            | 2 |
 
 ## Links

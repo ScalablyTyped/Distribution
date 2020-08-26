@@ -32,6 +32,7 @@ class ResourceFolders protected () extends js.Object {
     */
   def exportAssets(): GaxiosPromise[SchemaOperation] = js.native
   def exportAssets(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def exportAssets(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def exportAssets(params: ParamsResourceFoldersExportassets): GaxiosPromise[SchemaOperation] = js.native
   def exportAssets(params: ParamsResourceFoldersExportassets, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def exportAssets(

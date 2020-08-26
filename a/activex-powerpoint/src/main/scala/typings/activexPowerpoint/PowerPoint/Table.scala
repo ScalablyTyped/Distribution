@@ -28,6 +28,7 @@ trait Table extends js.Object {
     * @param boolean [SaveFormatting=false]
     */
   def ApplyStyle(): Unit = js.native
+  def ApplyStyle(StyleID: js.UndefOr[scala.Nothing], SaveFormatting: Boolean): Unit = js.native
   def ApplyStyle(StyleID: String): Unit = js.native
   def ApplyStyle(StyleID: String, SaveFormatting: Boolean): Unit = js.native
   def Cell(Row: Double, Column: Double): typings.activexPowerpoint.PowerPoint.Cell = js.native

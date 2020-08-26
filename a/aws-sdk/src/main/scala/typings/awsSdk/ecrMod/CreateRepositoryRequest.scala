@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateRepositoryRequest extends js.Object {
   /**
-    * The image scanning configuration for the repository. This setting determines whether images are scanned for known vulnerabilities after being pushed to the repository.
+    * The encryption configuration for the repository. This determines how the contents of your repository are encrypted at rest.
+    */
+  var encryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.native
+  /**
+    * The image scanning configuration for the repository. This determines whether images are scanned for known vulnerabilities after being pushed to the repository.
     */
   var imageScanningConfiguration: js.UndefOr[ImageScanningConfiguration] = js.native
   /**
@@ -26,17 +30,42 @@ trait CreateRepositoryRequest extends js.Object {
 
 object CreateRepositoryRequest {
   @scala.inline
-  def apply(
-    repositoryName: RepositoryName,
-    imageScanningConfiguration: ImageScanningConfiguration = null,
-    imageTagMutability: ImageTagMutability = null,
-    tags: TagList = null
-  ): CreateRepositoryRequest = {
+  def apply(repositoryName: RepositoryName): CreateRepositoryRequest = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
-    if (imageScanningConfiguration != null) __obj.updateDynamic("imageScanningConfiguration")(imageScanningConfiguration.asInstanceOf[js.Any])
-    if (imageTagMutability != null) __obj.updateDynamic("imageTagMutability")(imageTagMutability.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRepositoryRequest]
   }
+  @scala.inline
+  implicit class CreateRepositoryRequestOps[Self <: CreateRepositoryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("encryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionConfiguration: Self = this.set("encryptionConfiguration", js.undefined)
+    @scala.inline
+    def setImageScanningConfiguration(value: ImageScanningConfiguration): Self = this.set("imageScanningConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageScanningConfiguration: Self = this.set("imageScanningConfiguration", js.undefined)
+    @scala.inline
+    def setImageTagMutability(value: ImageTagMutability): Self = this.set("imageTagMutability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageTagMutability: Self = this.set("imageTagMutability", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

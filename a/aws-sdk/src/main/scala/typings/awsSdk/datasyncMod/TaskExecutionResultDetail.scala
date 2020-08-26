@@ -46,28 +46,58 @@ trait TaskExecutionResultDetail extends js.Object {
 
 object TaskExecutionResultDetail {
   @scala.inline
-  def apply(
-    ErrorCode: String = null,
-    ErrorDetail: String = null,
-    PrepareDuration: js.UndefOr[Duration] = js.undefined,
-    PrepareStatus: PhaseStatus = null,
-    TotalDuration: js.UndefOr[Duration] = js.undefined,
-    TransferDuration: js.UndefOr[Duration] = js.undefined,
-    TransferStatus: PhaseStatus = null,
-    VerifyDuration: js.UndefOr[Duration] = js.undefined,
-    VerifyStatus: PhaseStatus = null
-  ): TaskExecutionResultDetail = {
+  def apply(): TaskExecutionResultDetail = {
     val __obj = js.Dynamic.literal()
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
-    if (ErrorDetail != null) __obj.updateDynamic("ErrorDetail")(ErrorDetail.asInstanceOf[js.Any])
-    if (!js.isUndefined(PrepareDuration)) __obj.updateDynamic("PrepareDuration")(PrepareDuration.get.asInstanceOf[js.Any])
-    if (PrepareStatus != null) __obj.updateDynamic("PrepareStatus")(PrepareStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalDuration)) __obj.updateDynamic("TotalDuration")(TotalDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TransferDuration)) __obj.updateDynamic("TransferDuration")(TransferDuration.get.asInstanceOf[js.Any])
-    if (TransferStatus != null) __obj.updateDynamic("TransferStatus")(TransferStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(VerifyDuration)) __obj.updateDynamic("VerifyDuration")(VerifyDuration.get.asInstanceOf[js.Any])
-    if (VerifyStatus != null) __obj.updateDynamic("VerifyStatus")(VerifyStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskExecutionResultDetail]
   }
+  @scala.inline
+  implicit class TaskExecutionResultDetailOps[Self <: TaskExecutionResultDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCode(value: String): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    @scala.inline
+    def setErrorDetail(value: String): Self = this.set("ErrorDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorDetail: Self = this.set("ErrorDetail", js.undefined)
+    @scala.inline
+    def setPrepareDuration(value: Duration): Self = this.set("PrepareDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrepareDuration: Self = this.set("PrepareDuration", js.undefined)
+    @scala.inline
+    def setPrepareStatus(value: PhaseStatus): Self = this.set("PrepareStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrepareStatus: Self = this.set("PrepareStatus", js.undefined)
+    @scala.inline
+    def setTotalDuration(value: Duration): Self = this.set("TotalDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalDuration: Self = this.set("TotalDuration", js.undefined)
+    @scala.inline
+    def setTransferDuration(value: Duration): Self = this.set("TransferDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferDuration: Self = this.set("TransferDuration", js.undefined)
+    @scala.inline
+    def setTransferStatus(value: PhaseStatus): Self = this.set("TransferStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferStatus: Self = this.set("TransferStatus", js.undefined)
+    @scala.inline
+    def setVerifyDuration(value: Duration): Self = this.set("VerifyDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifyDuration: Self = this.set("VerifyDuration", js.undefined)
+    @scala.inline
+    def setVerifyStatus(value: PhaseStatus): Self = this.set("VerifyStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifyStatus: Self = this.set("VerifyStatus", js.undefined)
+  }
+  
 }
 

@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
 class NgTableParams[T] () extends js.Object {
   def this(baseParameters: Boolean) = this()
   def this(baseParameters: IParamValues[T]) = this()
+  def this(baseParameters: js.UndefOr[scala.Nothing], baseSettings: ISettings[T]) = this()
   def this(baseParameters: Boolean, baseSettings: ISettings[T]) = this()
   def this(baseParameters: IParamValues[T], baseSettings: ISettings[T]) = this()
   var _params: js.Any = js.native
@@ -71,8 +72,39 @@ class NgTableParams[T] () extends js.Object {
     * @returns Array of pages
     */
   def generatePagesArray(): js.Array[IPageButton] = js.native
+  def generatePagesArray(
+    currentPage: js.UndefOr[scala.Nothing],
+    totalItems: js.UndefOr[scala.Nothing],
+    pageSize: js.UndefOr[scala.Nothing],
+    maxBlocks: Double
+  ): js.Array[IPageButton] = js.native
+  def generatePagesArray(currentPage: js.UndefOr[scala.Nothing], totalItems: js.UndefOr[scala.Nothing], pageSize: Double): js.Array[IPageButton] = js.native
+  def generatePagesArray(
+    currentPage: js.UndefOr[scala.Nothing],
+    totalItems: js.UndefOr[scala.Nothing],
+    pageSize: Double,
+    maxBlocks: Double
+  ): js.Array[IPageButton] = js.native
+  def generatePagesArray(currentPage: js.UndefOr[scala.Nothing], totalItems: Double): js.Array[IPageButton] = js.native
+  def generatePagesArray(
+    currentPage: js.UndefOr[scala.Nothing],
+    totalItems: Double,
+    pageSize: js.UndefOr[scala.Nothing],
+    maxBlocks: Double
+  ): js.Array[IPageButton] = js.native
+  def generatePagesArray(currentPage: js.UndefOr[scala.Nothing], totalItems: Double, pageSize: Double): js.Array[IPageButton] = js.native
+  def generatePagesArray(currentPage: js.UndefOr[scala.Nothing], totalItems: Double, pageSize: Double, maxBlocks: Double): js.Array[IPageButton] = js.native
   def generatePagesArray(currentPage: Double): js.Array[IPageButton] = js.native
+  def generatePagesArray(
+    currentPage: Double,
+    totalItems: js.UndefOr[scala.Nothing],
+    pageSize: js.UndefOr[scala.Nothing],
+    maxBlocks: Double
+  ): js.Array[IPageButton] = js.native
+  def generatePagesArray(currentPage: Double, totalItems: js.UndefOr[scala.Nothing], pageSize: Double): js.Array[IPageButton] = js.native
+  def generatePagesArray(currentPage: Double, totalItems: js.UndefOr[scala.Nothing], pageSize: Double, maxBlocks: Double): js.Array[IPageButton] = js.native
   def generatePagesArray(currentPage: Double, totalItems: Double): js.Array[IPageButton] = js.native
+  def generatePagesArray(currentPage: Double, totalItems: Double, pageSize: js.UndefOr[scala.Nothing], maxBlocks: Double): js.Array[IPageButton] = js.native
   def generatePagesArray(currentPage: Double, totalItems: Double, pageSize: Double): js.Array[IPageButton] = js.native
   def generatePagesArray(currentPage: Double, totalItems: Double, pageSize: Double, maxBlocks: Double): js.Array[IPageButton] = js.native
   /**
@@ -162,6 +194,7 @@ class NgTableParams[T] () extends js.Object {
     * Set new parameters
     */
   def parameters(): this.type = js.native
+  def parameters(newParameters: js.UndefOr[scala.Nothing], parseParamsFromUrl: Boolean): this.type = js.native
   def parameters(newParameters: StringDictionary[String]): this.type = js.native
   def parameters(newParameters: StringDictionary[String], parseParamsFromUrl: Boolean): this.type = js.native
   def parameters(newParameters: IParamValues[T]): this.type = js.native

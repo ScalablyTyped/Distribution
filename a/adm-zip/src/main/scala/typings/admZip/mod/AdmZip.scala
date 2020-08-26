@@ -20,6 +20,7 @@ trait AdmZip extends js.Object {
     * @param attr Attribute to add to the entry.
     */
   def addFile(entryName: String, data: Buffer): Unit = js.native
+  def addFile(entryName: String, data: Buffer, comment: js.UndefOr[scala.Nothing], attr: Double): Unit = js.native
   def addFile(entryName: String, data: Buffer, comment: String): Unit = js.native
   def addFile(entryName: String, data: Buffer, comment: String, attr: Double): Unit = js.native
   /**
@@ -30,6 +31,7 @@ trait AdmZip extends js.Object {
     * @param zipName Name for the file.
     */
   def addLocalFile(localPath: String): Unit = js.native
+  def addLocalFile(localPath: String, zipPath: js.UndefOr[scala.Nothing], zipName: String): Unit = js.native
   def addLocalFile(localPath: String, zipPath: String): Unit = js.native
   def addLocalFile(localPath: String, zipPath: String, zipName: String): Unit = js.native
   /**
@@ -40,6 +42,12 @@ trait AdmZip extends js.Object {
     * @param filter RegExp or Function if files match will be included.
     */
   def addLocalFolder(localPath: String): Unit = js.native
+  def addLocalFolder(
+    localPath: String,
+    zipPath: js.UndefOr[scala.Nothing],
+    filter: js.Function1[/* filename */ String, Boolean]
+  ): Unit = js.native
+  def addLocalFolder(localPath: String, zipPath: js.UndefOr[scala.Nothing], filter: RegExp): Unit = js.native
   def addLocalFolder(localPath: String, zipPath: String): Unit = js.native
   def addLocalFolder(localPath: String, zipPath: String, filter: js.Function1[/* filename */ String, Boolean]): Unit = js.native
   def addLocalFolder(localPath: String, zipPath: String, filter: RegExp): Unit = js.native
@@ -81,6 +89,11 @@ trait AdmZip extends js.Object {
     * @param callback The callback function will be called after extraction.
     */
   def extractAllToAsync(targetPath: String): Unit = js.native
+  def extractAllToAsync(
+    targetPath: String,
+    overwrite: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* error */ Error, Unit]
+  ): Unit = js.native
   def extractAllToAsync(targetPath: String, overwrite: Boolean): Unit = js.native
   def extractAllToAsync(targetPath: String, overwrite: Boolean, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
   /**
@@ -96,9 +109,21 @@ trait AdmZip extends js.Object {
     *   will be overwriten if this is `true`. Default: `false`.
     */
   def extractEntryTo(entryPath: String, targetPath: String): Boolean = js.native
+  def extractEntryTo(
+    entryPath: String,
+    targetPath: String,
+    maintainEntryPath: js.UndefOr[scala.Nothing],
+    overwrite: Boolean
+  ): Boolean = js.native
   def extractEntryTo(entryPath: String, targetPath: String, maintainEntryPath: Boolean): Boolean = js.native
   def extractEntryTo(entryPath: String, targetPath: String, maintainEntryPath: Boolean, overwrite: Boolean): Boolean = js.native
   def extractEntryTo(entryPath: IZipEntry, targetPath: String): Boolean = js.native
+  def extractEntryTo(
+    entryPath: IZipEntry,
+    targetPath: String,
+    maintainEntryPath: js.UndefOr[scala.Nothing],
+    overwrite: Boolean
+  ): Boolean = js.native
   def extractEntryTo(entryPath: IZipEntry, targetPath: String, maintainEntryPath: Boolean): Boolean = js.native
   def extractEntryTo(entryPath: IZipEntry, targetPath: String, maintainEntryPath: Boolean, overwrite: Boolean): Boolean = js.native
   /**
@@ -171,7 +196,30 @@ trait AdmZip extends js.Object {
   def toBuffer(onSuccess: js.Function1[/* buffer */ Buffer, Unit]): Unit = js.native
   def toBuffer(
     onSuccess: js.Function1[/* buffer */ Buffer, Unit],
+    onFail: js.UndefOr[scala.Nothing],
+    onItemStart: js.UndefOr[scala.Nothing],
+    onItemEnd: js.Function1[/* name */ String, Unit]
+  ): Unit = js.native
+  def toBuffer(
+    onSuccess: js.Function1[/* buffer */ Buffer, Unit],
+    onFail: js.UndefOr[scala.Nothing],
+    onItemStart: js.Function1[/* name */ String, Unit]
+  ): Unit = js.native
+  def toBuffer(
+    onSuccess: js.Function1[/* buffer */ Buffer, Unit],
+    onFail: js.UndefOr[scala.Nothing],
+    onItemStart: js.Function1[/* name */ String, Unit],
+    onItemEnd: js.Function1[/* name */ String, Unit]
+  ): Unit = js.native
+  def toBuffer(
+    onSuccess: js.Function1[/* buffer */ Buffer, Unit],
     onFail: js.Function1[/* repeated */ js.Any, Unit]
+  ): Unit = js.native
+  def toBuffer(
+    onSuccess: js.Function1[/* buffer */ Buffer, Unit],
+    onFail: js.Function1[/* repeated */ js.Any, Unit],
+    onItemStart: js.UndefOr[scala.Nothing],
+    onItemEnd: js.Function1[/* name */ String, Unit]
   ): Unit = js.native
   def toBuffer(
     onSuccess: js.Function1[/* buffer */ Buffer, Unit],
@@ -198,6 +246,7 @@ trait AdmZip extends js.Object {
     * overwrite the opened zip.
     */
   def writeZip(): Unit = js.native
+  def writeZip(targetFileName: js.UndefOr[scala.Nothing], callback: js.Function1[/* error */ Error | Null, Unit]): Unit = js.native
   def writeZip(targetFileName: String): Unit = js.native
   def writeZip(targetFileName: String, callback: js.Function1[/* error */ Error | Null, Unit]): Unit = js.native
 }

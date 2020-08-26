@@ -12,7 +12,7 @@ Generic browser priority queue.
 | Keywords           | wordpress, browser, async |
 | # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 140474 |
+| # downloads        | 147450 |
 | # stars            | 0 |
 
 ## Links

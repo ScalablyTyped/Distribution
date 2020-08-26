@@ -12,7 +12,7 @@ Standard HTTP error class. Proper serialization, no bloat. Extensible.
 | Keywords           | error, errors, http, exception |
 | # releases         | 0 |
 | # dependents       | 29 |
-| # downloads        | 492266 |
+| # downloads        | 522231 |
 | # stars            | 0 |
 
 ## Links

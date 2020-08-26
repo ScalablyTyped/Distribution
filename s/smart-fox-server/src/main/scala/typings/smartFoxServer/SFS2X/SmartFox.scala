@@ -81,7 +81,11 @@ trait SmartFox extends js.Object {
     * @param {boolean} [useSSL] Use an encrypted SSL connection.
     */
   def connect(): Unit = js.native
+  def connect(host: js.UndefOr[scala.Nothing], port: js.UndefOr[scala.Nothing], useSSL: Boolean): Unit = js.native
+  def connect(host: js.UndefOr[scala.Nothing], port: Double): Unit = js.native
+  def connect(host: js.UndefOr[scala.Nothing], port: Double, useSSL: Boolean): Unit = js.native
   def connect(host: String): Unit = js.native
+  def connect(host: String, port: js.UndefOr[scala.Nothing], useSSL: Boolean): Unit = js.native
   def connect(host: String, port: Double): Unit = js.native
   def connect(host: String, port: Double, useSSL: Boolean): Unit = js.native
   /**
@@ -95,6 +99,7 @@ trait SmartFox extends js.Object {
     * @param {number}  [queueSize=10] The amount of values stored temporarily and used to calculate the average lag.
     */
   def enableLagMonitor(enabled: Boolean): Unit = js.native
+  def enableLagMonitor(enabled: Boolean, interval: js.UndefOr[scala.Nothing], queueSize: Double): Unit = js.native
   def enableLagMonitor(enabled: Boolean, interval: Double): Unit = js.native
   def enableLagMonitor(enabled: Boolean, interval: Double, queueSize: Double): Unit = js.native
   /**
@@ -145,9 +150,42 @@ trait SmartFox extends js.Object {
     * Sends a request to the server.
     * @param {(Requests.BuddyList.AddBuddyRequest | Requests.BuddyList.BlockBuddyRequest | Requests.BuddyList.BuddyMessageRequest | Requests.BuddyList.GoOnlineRequest | Requests.BuddyList.InitBuddyListRequest | Requests.BuddyList.RemoveBuddyRequest | Requests.BuddyList.SetBuddyVariablesRequest | Requests.Game.CreateSFSGameRequest | Requests.Game.InvitationReplyRequest | Requests.Game.InviteUsersRequest | Requests.Game.QuickJoinGameRequest | Requests.MMO.SetUserPositionRequest | Requests.System.AdminMessageRequest | Requests.System.BanUserRequest | Requests.System.ChangeRoomCapacityRequest | Requests.System.ChangeRoomNameRequest | Requests.System.ChangeRoomPasswordStateRequest | Requests.System.CreateRoomRequest | Requests.System.ExtensionRequest | Requests.System.FindRoomsRequest | Requests.System.FindUsersRequest | Requests.System.JoinRoomRequest | Requests.System.KickUserRequest | Requests.System.LeaveRoomRequest | Requests.System.LoginRequest | Requests.System.LogoutRequest | Requests.System.ModeratorMessageRequest | Requests.System.ObjectMessageRequest | Requests.System.PlayerToSpectatorRequest | Requests.System.PrivateMessageRequest | Requests.System.PublicMessageRequest | Requests.System.SetRoomVariablesRequest | Requests.System.SetUserVariablesRequest | Requests.System.SpectatorToPlayerRequest | Requests.System.SubscribeRoomGroupRequest | Requests.System.UnsubscribeRoomGroupRequest)} request Sends a request to the server.
     */
-  def send(
-    request: AddBuddyRequest | BlockBuddyRequest | BuddyMessageRequest | GoOnlineRequest | InitBuddyListRequest | RemoveBuddyRequest | SetBuddyVariablesRequest | CreateSFSGameRequest | InvitationReplyRequest | InviteUsersRequest | QuickJoinGameRequest | SetUserPositionRequest | AdminMessageRequest | BanUserRequest | ChangeRoomCapacityRequest | ChangeRoomNameRequest | ChangeRoomPasswordStateRequest | CreateRoomRequest | ExtensionRequest | FindRoomsRequest | FindUsersRequest | JoinRoomRequest | KickUserRequest | LeaveRoomRequest | LoginRequest | LogoutRequest | ModeratorMessageRequest | ObjectMessageRequest | PlayerToSpectatorRequest | PrivateMessageRequest | PublicMessageRequest | SetRoomVariablesRequest | SetUserVariablesRequest | SpectatorToPlayerRequest | SubscribeRoomGroupRequest | UnsubscribeRoomGroupRequest
-  ): Unit = js.native
+  def send(request: AddBuddyRequest): Unit = js.native
+  def send(request: BlockBuddyRequest): Unit = js.native
+  def send(request: BuddyMessageRequest): Unit = js.native
+  def send(request: GoOnlineRequest): Unit = js.native
+  def send(request: InitBuddyListRequest): Unit = js.native
+  def send(request: RemoveBuddyRequest): Unit = js.native
+  def send(request: SetBuddyVariablesRequest): Unit = js.native
+  def send(request: CreateSFSGameRequest): Unit = js.native
+  def send(request: InvitationReplyRequest): Unit = js.native
+  def send(request: InviteUsersRequest): Unit = js.native
+  def send(request: QuickJoinGameRequest): Unit = js.native
+  def send(request: SetUserPositionRequest): Unit = js.native
+  def send(request: AdminMessageRequest): Unit = js.native
+  def send(request: BanUserRequest): Unit = js.native
+  def send(request: ChangeRoomCapacityRequest): Unit = js.native
+  def send(request: ChangeRoomNameRequest): Unit = js.native
+  def send(request: ChangeRoomPasswordStateRequest): Unit = js.native
+  def send(request: CreateRoomRequest): Unit = js.native
+  def send(request: ExtensionRequest): Unit = js.native
+  def send(request: FindRoomsRequest): Unit = js.native
+  def send(request: FindUsersRequest): Unit = js.native
+  def send(request: JoinRoomRequest): Unit = js.native
+  def send(request: KickUserRequest): Unit = js.native
+  def send(request: LeaveRoomRequest): Unit = js.native
+  def send(request: LoginRequest): Unit = js.native
+  def send(request: LogoutRequest): Unit = js.native
+  def send(request: ModeratorMessageRequest): Unit = js.native
+  def send(request: ObjectMessageRequest): Unit = js.native
+  def send(request: PlayerToSpectatorRequest): Unit = js.native
+  def send(request: PrivateMessageRequest): Unit = js.native
+  def send(request: PublicMessageRequest): Unit = js.native
+  def send(request: SetRoomVariablesRequest): Unit = js.native
+  def send(request: SetUserVariablesRequest): Unit = js.native
+  def send(request: SpectatorToPlayerRequest): Unit = js.native
+  def send(request: SubscribeRoomGroupRequest): Unit = js.native
+  def send(request: UnsubscribeRoomGroupRequest): Unit = js.native
   /**
     * Allows to specify custom client details that will be used to gather statistics about the client platform via the AdminTool's Analytics Module.
     * @param {string} platformId An identification string for the client, like the browser name for example.

@@ -10,9 +10,9 @@ Storybook for Vue: Develop Vue Component in isolation with Hot Reloading.
 | ------------------ | :-------------: |
 | Full name          | @storybook/vue |
 | Keywords           | storybook |
-| # releases         | 411 |
+| # releases         | 412 |
 | # dependents       | 15 |
-| # downloads        | 2641083 |
+| # downloads        | 2754957 |
 | # stars            | 1 |
 
 ## Links

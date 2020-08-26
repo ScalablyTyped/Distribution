@@ -1,11 +1,11 @@
 package typings.pulumiPulumi.resourceMod
 
-import typings.pulumiPulumi.outputMod.Input
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ComponentResourceOptions extends ResourceOptions {
   /**
     * An optional set of providers to use for child resources. Either keyed by package name (e.g.
@@ -16,37 +16,33 @@ trait ComponentResourceOptions extends ResourceOptions {
     *
     * Note: do not provide both [provider] and [providers];
     */
-  var providers: js.UndefOr[(Record[String, ProviderResource]) | js.Array[ProviderResource]] = js.undefined
+  var providers: js.UndefOr[(Record[String, ProviderResource]) | js.Array[ProviderResource]] = js.native
 }
 
 object ComponentResourceOptions {
   @scala.inline
-  def apply(
-    aliases: js.Array[Input[URN | Alias]] = null,
-    customTimeouts: CustomTimeouts = null,
-    dependsOn: Input[js.Array[Input[Resource]] | Resource] = null,
-    id: Input[ID] = null,
-    ignoreChanges: js.Array[String] = null,
-    parent: Resource = null,
-    protect: js.UndefOr[Boolean] = js.undefined,
-    provider: ProviderResource = null,
-    providers: (Record[String, ProviderResource]) | js.Array[ProviderResource] = null,
-    transformations: js.Array[ResourceTransformation] = null,
-    version: String = null
-  ): ComponentResourceOptions = {
+  def apply(): ComponentResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (customTimeouts != null) __obj.updateDynamic("customTimeouts")(customTimeouts.asInstanceOf[js.Any])
-    if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect.get.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
-    if (transformations != null) __obj.updateDynamic("transformations")(transformations.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentResourceOptions]
   }
+  @scala.inline
+  implicit class ComponentResourceOptionsOps[Self <: ComponentResourceOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvidersVarargs(value: ProviderResource*): Self = this.set("providers", js.Array(value :_*))
+    @scala.inline
+    def setProviders(value: (Record[String, ProviderResource]) | js.Array[ProviderResource]): Self = this.set("providers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviders: Self = this.set("providers", js.undefined)
+  }
+  
 }
 

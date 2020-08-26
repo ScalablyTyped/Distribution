@@ -42,7 +42,16 @@ trait Application extends js.Object {
   def ActiveInspector(): Inspector = js.native
   def ActiveWindow(): js.Any = js.native
   def AdvancedSearch(Scope: String): Search = js.native
+  def AdvancedSearch(
+    Scope: String,
+    Filter: js.UndefOr[scala.Nothing],
+    SearchSubFolders: js.UndefOr[scala.Nothing],
+    Tag: js.Any
+  ): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: js.UndefOr[scala.Nothing], SearchSubFolders: js.Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: js.UndefOr[scala.Nothing], SearchSubFolders: js.Any, Tag: js.Any): Search = js.native
   def AdvancedSearch(Scope: String, Filter: js.Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: js.UndefOr[scala.Nothing], Tag: js.Any): Search = js.native
   def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: js.Any): Search = js.native
   def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: js.Any, Tag: js.Any): Search = js.native
   def CopyFile(FilePath: String, DestFolderPath: String): js.Any = js.native

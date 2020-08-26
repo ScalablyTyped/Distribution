@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   * @see XConnectionTools
   * @since OOo 2.0.4
   */
+@js.native
 trait XObjectNames extends js.Object {
   /**
     * checks whether a given name is allowed for a to-be-created table or query in the database.
@@ -34,7 +35,7 @@ trait XObjectNames extends js.Object {
     * @see com.sun.star.sdb.ErrorMessageDialog
     * @see com.sun.star.sdb.InteractionHandler
     */
-  def checkNameForCreate(CommandType: Double, Name: String): Unit
+  def checkNameForCreate(CommandType: Double, Name: String): Unit = js.native
   /**
     * converts the given object name to a name which is valid in the database.
     *
@@ -42,7 +43,7 @@ trait XObjectNames extends js.Object {
     * by the database, with an underscore character (_).
     * @see com.sun.star.sdbc.XDatabaseMetaData.getExtraNameCharacters
     */
-  def convertToSQLName(Name: String): String
+  def convertToSQLName(Name: String): String = js.native
   /**
     * checks whether a given name is used as table respectively query name in the database.
     *
@@ -56,7 +57,7 @@ trait XObjectNames extends js.Object {
     * @see checkNameIsUsed
     * @throws com::sun::star::lang::IllegalArgumentException if {@link CommandType} specifies an invalid command type.
     */
-  def isNameUsed(CommandType: Double, Name: String): Boolean
+  def isNameUsed(CommandType: Double, Name: String): Boolean = js.native
   /**
     * checks whether a given name is valid as table or query name
     *
@@ -65,7 +66,7 @@ trait XObjectNames extends js.Object {
     * For queries, names are nearly arbitrary, except that usual quoting characters must not be part of the name.
     * @see com.sun.star.sdbc.XDatabaseMetaData.getExtraNameCharacters
     */
-  def isNameValid(CommandType: Double, Name: String): Boolean
+  def isNameValid(CommandType: Double, Name: String): Boolean = js.native
   /**
     * suggests a (unique) table or query name
     *
@@ -81,7 +82,7 @@ trait XObjectNames extends js.Object {
     * @param BaseName specifies the base of the to-be-created object name. If empty, a default base name will be used.
     * @throws com::sun::star::lang::IllegalArgumentException if {@link CommandType} specifies an invalid command type.
     */
-  def suggestName(CommandType: Double, BaseName: String): String
+  def suggestName(CommandType: Double, BaseName: String): String = js.native
 }
 
 object XObjectNames {
@@ -96,5 +97,28 @@ object XObjectNames {
     val __obj = js.Dynamic.literal(checkNameForCreate = js.Any.fromFunction2(checkNameForCreate), convertToSQLName = js.Any.fromFunction1(convertToSQLName), isNameUsed = js.Any.fromFunction2(isNameUsed), isNameValid = js.Any.fromFunction2(isNameValid), suggestName = js.Any.fromFunction2(suggestName))
     __obj.asInstanceOf[XObjectNames]
   }
+  @scala.inline
+  implicit class XObjectNamesOps[Self <: XObjectNames] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckNameForCreate(value: (Double, String) => Unit): Self = this.set("checkNameForCreate", js.Any.fromFunction2(value))
+    @scala.inline
+    def setConvertToSQLName(value: String => String): Self = this.set("convertToSQLName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsNameUsed(value: (Double, String) => Boolean): Self = this.set("isNameUsed", js.Any.fromFunction2(value))
+    @scala.inline
+    def setIsNameValid(value: (Double, String) => Boolean): Self = this.set("isNameValid", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSuggestName(value: (Double, String) => String): Self = this.set("suggestName", js.Any.fromFunction2(value))
+  }
+  
 }
 

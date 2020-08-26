@@ -14,16 +14,26 @@ trait ObjectRemovedSubscriptionArgs extends CommonBucketSubscriptionArgs {
 
 object ObjectRemovedSubscriptionArgs {
   @scala.inline
-  def apply(
-    event: Asterisk | Delete | DeleteMarkerCreated = null,
-    filterPrefix: String = null,
-    filterSuffix: String = null
-  ): ObjectRemovedSubscriptionArgs = {
+  def apply(): ObjectRemovedSubscriptionArgs = {
     val __obj = js.Dynamic.literal()
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (filterPrefix != null) __obj.updateDynamic("filterPrefix")(filterPrefix.asInstanceOf[js.Any])
-    if (filterSuffix != null) __obj.updateDynamic("filterSuffix")(filterSuffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectRemovedSubscriptionArgs]
   }
+  @scala.inline
+  implicit class ObjectRemovedSubscriptionArgsOps[Self <: ObjectRemovedSubscriptionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvent(value: Asterisk | Delete | DeleteMarkerCreated): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvent: Self = this.set("event", js.undefined)
+  }
+  
 }
 

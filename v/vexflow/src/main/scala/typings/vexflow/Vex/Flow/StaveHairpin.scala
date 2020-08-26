@@ -9,13 +9,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StaveHairpin extends js.Object {
-  def draw(): Boolean
-  def renderHairpin(params: Firstx): Unit
-  def setContext(context: IRenderContext): StaveHairpin
-  def setNotes(notes: Firstnote): StaveHairpin
-  def setPosition(position: Position): StaveHairpin
-  def setRenderOptions(options: Leftshiftpx): StaveHairpin
+  def draw(): Boolean = js.native
+  def renderHairpin(params: Firstx): Unit = js.native
+  def setContext(context: IRenderContext): StaveHairpin = js.native
+  def setNotes(notes: Firstnote): StaveHairpin = js.native
+  def setPosition(position: Position): StaveHairpin = js.native
+  def setRenderOptions(options: Leftshiftpx): StaveHairpin = js.native
 }
 
 @JSGlobal("Vex.Flow.StaveHairpin")

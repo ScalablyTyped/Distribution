@@ -20,7 +20,30 @@ object SpatialMath extends js.Object {
   def convertArea(area: Double, fromUnits: AreaUnits, toUnits: AreaUnits): Double = js.native
   def convertDistance(distance: Double, fromUnits: DistanceUnits, toUnits: DistanceUnits): Double = js.native
   def getCardinalSpline(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location]): js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+  def getCardinalSpline(
+    locations: js.Array[typings.bingmaps.Microsoft.Maps.Location],
+    tension: js.UndefOr[scala.Nothing],
+    nodeSize: js.UndefOr[scala.Nothing],
+    close: Boolean
+  ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+  def getCardinalSpline(
+    locations: js.Array[typings.bingmaps.Microsoft.Maps.Location],
+    tension: js.UndefOr[scala.Nothing],
+    nodeSize: Double
+  ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+  def getCardinalSpline(
+    locations: js.Array[typings.bingmaps.Microsoft.Maps.Location],
+    tension: js.UndefOr[scala.Nothing],
+    nodeSize: Double,
+    close: Boolean
+  ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
   def getCardinalSpline(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location], tension: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+  def getCardinalSpline(
+    locations: js.Array[typings.bingmaps.Microsoft.Maps.Location],
+    tension: Double,
+    nodeSize: js.UndefOr[scala.Nothing],
+    close: Boolean
+  ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
   def getCardinalSpline(locations: js.Array[typings.bingmaps.Microsoft.Maps.Location], tension: Double, nodeSize: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
   def getCardinalSpline(
     locations: js.Array[typings.bingmaps.Microsoft.Maps.Location],
@@ -42,6 +65,12 @@ object SpatialMath extends js.Object {
   def getDistanceTo(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     destination: typings.bingmaps.Microsoft.Maps.Location,
+    units: js.UndefOr[scala.Nothing],
+    highAccuracy: Boolean
+  ): Double = js.native
+  def getDistanceTo(
+    origin: typings.bingmaps.Microsoft.Maps.Location,
+    destination: typings.bingmaps.Microsoft.Maps.Location,
     units: DistanceUnits
   ): Double = js.native
   def getDistanceTo(
@@ -59,6 +88,11 @@ object SpatialMath extends js.Object {
     destination: typings.bingmaps.Microsoft.Maps.Location
   ): Double = js.native
   def getLengthOfPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location]): Double = js.native
+  def getLengthOfPath(
+    path: js.Array[typings.bingmaps.Microsoft.Maps.Location],
+    units: js.UndefOr[scala.Nothing],
+    highAccuracy: Boolean
+  ): Double = js.native
   def getLengthOfPath(path: js.Array[typings.bingmaps.Microsoft.Maps.Location], units: DistanceUnits): Double = js.native
   def getLengthOfPath(
     path: js.Array[typings.bingmaps.Microsoft.Maps.Location],
@@ -70,6 +104,13 @@ object SpatialMath extends js.Object {
   def getLocationAlongPath(path: typings.bingmaps.Microsoft.Maps.Polyline, distance: Double): typings.bingmaps.Microsoft.Maps.Location = js.native
   def getLocationAlongPath(path: typings.bingmaps.Microsoft.Maps.Polyline, distance: Double, units: DistanceUnits): typings.bingmaps.Microsoft.Maps.Location = js.native
   def getRegularPolygon(origin: typings.bingmaps.Microsoft.Maps.Location, radius: Double, numberOfPoints: Double): js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+  def getRegularPolygon(
+    origin: typings.bingmaps.Microsoft.Maps.Location,
+    radius: Double,
+    numberOfPoints: Double,
+    units: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
   def getRegularPolygon(
     origin: typings.bingmaps.Microsoft.Maps.Location,
     radius: Double,
@@ -140,7 +181,34 @@ object SpatialMath extends js.Object {
     def buffer(
       shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       distance: Double,
+      units: js.UndefOr[scala.Nothing],
+      endCapType: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(
+      shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      distance: Double,
+      units: js.UndefOr[scala.Nothing],
+      endCapType: BufferEndCap
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(
+      shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      distance: Double,
+      units: js.UndefOr[scala.Nothing],
+      endCapType: BufferEndCap,
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(
+      shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      distance: Double,
       units: DistanceUnits
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(
+      shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      distance: Double,
+      units: DistanceUnits,
+      endCapType: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = js.native
     def buffer(
       shape: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
@@ -156,7 +224,29 @@ object SpatialMath extends js.Object {
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = js.native
     def buffer(shape: IPrimitive, distance: Double): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(
+      shape: IPrimitive,
+      distance: Double,
+      units: js.UndefOr[scala.Nothing],
+      endCapType: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(shape: IPrimitive, distance: Double, units: js.UndefOr[scala.Nothing], endCapType: BufferEndCap): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(
+      shape: IPrimitive,
+      distance: Double,
+      units: js.UndefOr[scala.Nothing],
+      endCapType: BufferEndCap,
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
     def buffer(shape: IPrimitive, distance: Double, units: DistanceUnits): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(
+      shape: IPrimitive,
+      distance: Double,
+      units: DistanceUnits,
+      endCapType: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
     def buffer(shape: IPrimitive, distance: Double, units: DistanceUnits, endCapType: BufferEndCap): IPrimitive | js.Array[IPrimitive] = js.native
     def buffer(
       shape: IPrimitive,
@@ -166,7 +256,34 @@ object SpatialMath extends js.Object {
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = js.native
     def buffer(shape: typings.bingmaps.Microsoft.Maps.Location, distance: Double): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(
+      shape: typings.bingmaps.Microsoft.Maps.Location,
+      distance: Double,
+      units: js.UndefOr[scala.Nothing],
+      endCapType: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(
+      shape: typings.bingmaps.Microsoft.Maps.Location,
+      distance: Double,
+      units: js.UndefOr[scala.Nothing],
+      endCapType: BufferEndCap
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(
+      shape: typings.bingmaps.Microsoft.Maps.Location,
+      distance: Double,
+      units: js.UndefOr[scala.Nothing],
+      endCapType: BufferEndCap,
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
     def buffer(shape: typings.bingmaps.Microsoft.Maps.Location, distance: Double, units: DistanceUnits): IPrimitive | js.Array[IPrimitive] = js.native
+    def buffer(
+      shape: typings.bingmaps.Microsoft.Maps.Location,
+      distance: Double,
+      units: DistanceUnits,
+      endCapType: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
     def buffer(
       shape: typings.bingmaps.Microsoft.Maps.Location,
       distance: Double,
@@ -181,9 +298,11 @@ object SpatialMath extends js.Object {
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = js.native
     def calculateLength(shape: js.Array[IPrimitive]): Double = js.native
+    def calculateLength(shape: js.Array[IPrimitive], units: js.UndefOr[scala.Nothing], highAccuracy: Boolean): Double = js.native
     def calculateLength(shape: js.Array[IPrimitive], units: DistanceUnits): Double = js.native
     def calculateLength(shape: js.Array[IPrimitive], units: DistanceUnits, highAccuracy: Boolean): Double = js.native
     def calculateLength(shape: IPrimitive): Double = js.native
+    def calculateLength(shape: IPrimitive, units: js.UndefOr[scala.Nothing], highAccuracy: Boolean): Double = js.native
     def calculateLength(shape: IPrimitive, units: DistanceUnits): Double = js.native
     def calculateLength(shape: IPrimitive, units: DistanceUnits, highAccuracy: Boolean): Double = js.native
     def centroid(shape: js.Array[IPrimitive]): typings.bingmaps.Microsoft.Maps.Location = js.native
@@ -191,7 +310,30 @@ object SpatialMath extends js.Object {
     def concaveHull(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): IPrimitive | js.Array[IPrimitive] = js.native
     def concaveHull(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      allowMultiPolygons: js.UndefOr[scala.Nothing],
+      allowHoles: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(
+      shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      allowMultiPolygons: js.UndefOr[scala.Nothing],
+      allowHoles: Boolean
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(
+      shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      allowMultiPolygons: js.UndefOr[scala.Nothing],
+      allowHoles: Boolean,
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(
+      shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       allowMultiPolygons: Boolean
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(
+      shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      allowMultiPolygons: Boolean,
+      allowHoles: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = js.native
     def concaveHull(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
@@ -205,11 +347,53 @@ object SpatialMath extends js.Object {
       options: IPolygonOptions
     ): IPrimitive | js.Array[IPrimitive] = js.native
     def concaveHull(shapes: IPrimitive): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(
+      shapes: IPrimitive,
+      allowMultiPolygons: js.UndefOr[scala.Nothing],
+      allowHoles: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(shapes: IPrimitive, allowMultiPolygons: js.UndefOr[scala.Nothing], allowHoles: Boolean): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(
+      shapes: IPrimitive,
+      allowMultiPolygons: js.UndefOr[scala.Nothing],
+      allowHoles: Boolean,
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
     def concaveHull(shapes: IPrimitive, allowMultiPolygons: Boolean): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(
+      shapes: IPrimitive,
+      allowMultiPolygons: Boolean,
+      allowHoles: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
     def concaveHull(shapes: IPrimitive, allowMultiPolygons: Boolean, allowHoles: Boolean): IPrimitive | js.Array[IPrimitive] = js.native
     def concaveHull(shapes: IPrimitive, allowMultiPolygons: Boolean, allowHoles: Boolean, options: IPolygonOptions): IPrimitive | js.Array[IPrimitive] = js.native
     def concaveHull(shapes: typings.bingmaps.Microsoft.Maps.Location): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(
+      shapes: typings.bingmaps.Microsoft.Maps.Location,
+      allowMultiPolygons: js.UndefOr[scala.Nothing],
+      allowHoles: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(
+      shapes: typings.bingmaps.Microsoft.Maps.Location,
+      allowMultiPolygons: js.UndefOr[scala.Nothing],
+      allowHoles: Boolean
+    ): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(
+      shapes: typings.bingmaps.Microsoft.Maps.Location,
+      allowMultiPolygons: js.UndefOr[scala.Nothing],
+      allowHoles: Boolean,
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
     def concaveHull(shapes: typings.bingmaps.Microsoft.Maps.Location, allowMultiPolygons: Boolean): IPrimitive | js.Array[IPrimitive] = js.native
+    def concaveHull(
+      shapes: typings.bingmaps.Microsoft.Maps.Location,
+      allowMultiPolygons: Boolean,
+      allowHoles: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): IPrimitive | js.Array[IPrimitive] = js.native
     def concaveHull(shapes: typings.bingmaps.Microsoft.Maps.Location, allowMultiPolygons: Boolean, allowHoles: Boolean): IPrimitive | js.Array[IPrimitive] = js.native
     def concaveHull(
       shapes: typings.bingmaps.Microsoft.Maps.Location,
@@ -258,6 +442,12 @@ object SpatialMath extends js.Object {
     def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      units: js.UndefOr[scala.Nothing],
+      highAccuracy: Boolean
+    ): Double = js.native
+    def distance(
+      shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: DistanceUnits
     ): Double = js.native
     def distance(
@@ -267,6 +457,12 @@ object SpatialMath extends js.Object {
       highAccuracy: Boolean
     ): Double = js.native
     def distance(shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive], shapeB: IPrimitive): Double = js.native
+    def distance(
+      shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      shapeB: IPrimitive,
+      units: js.UndefOr[scala.Nothing],
+      highAccuracy: Boolean
+    ): Double = js.native
     def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: IPrimitive,
@@ -285,6 +481,12 @@ object SpatialMath extends js.Object {
     def distance(
       shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
+      units: js.UndefOr[scala.Nothing],
+      highAccuracy: Boolean
+    ): Double = js.native
+    def distance(
+      shapeA: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      shapeB: typings.bingmaps.Microsoft.Maps.Location,
       units: DistanceUnits
     ): Double = js.native
     def distance(
@@ -297,6 +499,12 @@ object SpatialMath extends js.Object {
     def distance(
       shapeA: IPrimitive,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      units: js.UndefOr[scala.Nothing],
+      highAccuracy: Boolean
+    ): Double = js.native
+    def distance(
+      shapeA: IPrimitive,
+      shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: DistanceUnits
     ): Double = js.native
     def distance(
@@ -306,9 +514,16 @@ object SpatialMath extends js.Object {
       highAccuracy: Boolean
     ): Double = js.native
     def distance(shapeA: IPrimitive, shapeB: IPrimitive): Double = js.native
+    def distance(shapeA: IPrimitive, shapeB: IPrimitive, units: js.UndefOr[scala.Nothing], highAccuracy: Boolean): Double = js.native
     def distance(shapeA: IPrimitive, shapeB: IPrimitive, units: DistanceUnits): Double = js.native
     def distance(shapeA: IPrimitive, shapeB: IPrimitive, units: DistanceUnits, highAccuracy: Boolean): Double = js.native
     def distance(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location): Double = js.native
+    def distance(
+      shapeA: IPrimitive,
+      shapeB: typings.bingmaps.Microsoft.Maps.Location,
+      units: js.UndefOr[scala.Nothing],
+      highAccuracy: Boolean
+    ): Double = js.native
     def distance(shapeA: IPrimitive, shapeB: typings.bingmaps.Microsoft.Maps.Location, units: DistanceUnits): Double = js.native
     def distance(
       shapeA: IPrimitive,
@@ -323,6 +538,12 @@ object SpatialMath extends js.Object {
     def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      units: js.UndefOr[scala.Nothing],
+      highAccuracy: Boolean
+    ): Double = js.native
+    def distance(
+      shapeA: typings.bingmaps.Microsoft.Maps.Location,
+      shapeB: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       units: DistanceUnits
     ): Double = js.native
     def distance(
@@ -332,6 +553,12 @@ object SpatialMath extends js.Object {
       highAccuracy: Boolean
     ): Double = js.native
     def distance(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive): Double = js.native
+    def distance(
+      shapeA: typings.bingmaps.Microsoft.Maps.Location,
+      shapeB: IPrimitive,
+      units: js.UndefOr[scala.Nothing],
+      highAccuracy: Boolean
+    ): Double = js.native
     def distance(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: IPrimitive, units: DistanceUnits): Double = js.native
     def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
@@ -340,6 +567,12 @@ object SpatialMath extends js.Object {
       highAccuracy: Boolean
     ): Double = js.native
     def distance(shapeA: typings.bingmaps.Microsoft.Maps.Location, shapeB: typings.bingmaps.Microsoft.Maps.Location): Double = js.native
+    def distance(
+      shapeA: typings.bingmaps.Microsoft.Maps.Location,
+      shapeB: typings.bingmaps.Microsoft.Maps.Location,
+      units: js.UndefOr[scala.Nothing],
+      highAccuracy: Boolean
+    ): Double = js.native
     def distance(
       shapeA: typings.bingmaps.Microsoft.Maps.Location,
       shapeB: typings.bingmaps.Microsoft.Maps.Location,
@@ -456,6 +689,12 @@ object SpatialMath extends js.Object {
     def snapLocationsToShape(
       locs: js.Array[typings.bingmaps.Microsoft.Maps.Location],
       shape: js.Array[IPrimitive],
+      tolerance: js.UndefOr[scala.Nothing],
+      toleranceUnits: DistanceUnits
+    ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+    def snapLocationsToShape(
+      locs: js.Array[typings.bingmaps.Microsoft.Maps.Location],
+      shape: js.Array[IPrimitive],
       tolerance: Double
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
     def snapLocationsToShape(
@@ -465,6 +704,12 @@ object SpatialMath extends js.Object {
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
     def snapLocationsToShape(locs: js.Array[typings.bingmaps.Microsoft.Maps.Location], shape: IPrimitive): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+    def snapLocationsToShape(
+      locs: js.Array[typings.bingmaps.Microsoft.Maps.Location],
+      shape: IPrimitive,
+      tolerance: js.UndefOr[scala.Nothing],
+      toleranceUnits: DistanceUnits
+    ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
     def snapLocationsToShape(locs: js.Array[typings.bingmaps.Microsoft.Maps.Location], shape: IPrimitive, tolerance: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
     def snapLocationsToShape(
       locs: js.Array[typings.bingmaps.Microsoft.Maps.Location],
@@ -473,6 +718,12 @@ object SpatialMath extends js.Object {
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
     def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: js.Array[IPrimitive]): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+    def snapLocationsToShape(
+      locs: typings.bingmaps.Microsoft.Maps.Location,
+      shape: js.Array[IPrimitive],
+      tolerance: js.UndefOr[scala.Nothing],
+      toleranceUnits: DistanceUnits
+    ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
     def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: js.Array[IPrimitive], tolerance: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
     def snapLocationsToShape(
       locs: typings.bingmaps.Microsoft.Maps.Location,
@@ -481,6 +732,12 @@ object SpatialMath extends js.Object {
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
     def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: IPrimitive): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
+    def snapLocationsToShape(
+      locs: typings.bingmaps.Microsoft.Maps.Location,
+      shape: IPrimitive,
+      tolerance: js.UndefOr[scala.Nothing],
+      toleranceUnits: DistanceUnits
+    ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
     def snapLocationsToShape(locs: typings.bingmaps.Microsoft.Maps.Location, shape: IPrimitive, tolerance: Double): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
     def snapLocationsToShape(
       locs: typings.bingmaps.Microsoft.Maps.Location,
@@ -489,6 +746,12 @@ object SpatialMath extends js.Object {
       toleranceUnits: DistanceUnits
     ): typings.bingmaps.Microsoft.Maps.Location | js.Array[typings.bingmaps.Microsoft.Maps.Location] = js.native
     def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: js.Array[IPrimitive]): Unit = js.native
+    def snapShapeToShape(
+      shapeToSnap: js.Array[IPrimitive],
+      shape: js.Array[IPrimitive],
+      tolerance: js.UndefOr[scala.Nothing],
+      toleranceUnits: DistanceUnits
+    ): Unit = js.native
     def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: js.Array[IPrimitive], tolerance: Double): Unit = js.native
     def snapShapeToShape(
       shapeToSnap: js.Array[IPrimitive],
@@ -497,6 +760,12 @@ object SpatialMath extends js.Object {
       toleranceUnits: DistanceUnits
     ): Unit = js.native
     def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: IPrimitive): Unit = js.native
+    def snapShapeToShape(
+      shapeToSnap: js.Array[IPrimitive],
+      shape: IPrimitive,
+      tolerance: js.UndefOr[scala.Nothing],
+      toleranceUnits: DistanceUnits
+    ): Unit = js.native
     def snapShapeToShape(shapeToSnap: js.Array[IPrimitive], shape: IPrimitive, tolerance: Double): Unit = js.native
     def snapShapeToShape(
       shapeToSnap: js.Array[IPrimitive],
@@ -505,6 +774,12 @@ object SpatialMath extends js.Object {
       toleranceUnits: DistanceUnits
     ): Unit = js.native
     def snapShapeToShape(shapeToSnap: IPrimitive, shape: js.Array[IPrimitive]): Unit = js.native
+    def snapShapeToShape(
+      shapeToSnap: IPrimitive,
+      shape: js.Array[IPrimitive],
+      tolerance: js.UndefOr[scala.Nothing],
+      toleranceUnits: DistanceUnits
+    ): Unit = js.native
     def snapShapeToShape(shapeToSnap: IPrimitive, shape: js.Array[IPrimitive], tolerance: Double): Unit = js.native
     def snapShapeToShape(
       shapeToSnap: IPrimitive,
@@ -513,6 +788,12 @@ object SpatialMath extends js.Object {
       toleranceUnits: DistanceUnits
     ): Unit = js.native
     def snapShapeToShape(shapeToSnap: IPrimitive, shape: IPrimitive): Unit = js.native
+    def snapShapeToShape(
+      shapeToSnap: IPrimitive,
+      shape: IPrimitive,
+      tolerance: js.UndefOr[scala.Nothing],
+      toleranceUnits: DistanceUnits
+    ): Unit = js.native
     def snapShapeToShape(shapeToSnap: IPrimitive, shape: IPrimitive, tolerance: Double): Unit = js.native
     def snapShapeToShape(shapeToSnap: IPrimitive, shape: IPrimitive, tolerance: Double, toleranceUnits: DistanceUnits): Unit = js.native
     def symDifference(shapeA: js.Array[IPrimitive], shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = js.native
@@ -524,7 +805,12 @@ object SpatialMath extends js.Object {
     def union(shapeA: IPrimitive, shapeB: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = js.native
     def union(shapeA: IPrimitive, shapeB: IPrimitive): IPrimitive | js.Array[IPrimitive] = js.native
     def unionAggregate(shapes: js.Array[IPrimitive]): IPrimitive | js.Array[IPrimitive] = js.native
-    def voronoiDiagram(shapes: js.Array[IPrimitive | typings.bingmaps.Microsoft.Maps.Location]): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
+    def voronoiDiagram(shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive]): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
+    def voronoiDiagram(
+      shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
+      clipRegion: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
     def voronoiDiagram(
       shapes: js.Array[typings.bingmaps.Microsoft.Maps.Location | IPrimitive],
       clipRegion: typings.bingmaps.Microsoft.Maps.LocationRect
@@ -544,6 +830,7 @@ object SpatialMath extends js.Object {
       options: IPolygonOptions
     ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
     def voronoiDiagram(shapes: IPrimitive): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
+    def voronoiDiagram(shapes: IPrimitive, clipRegion: js.UndefOr[scala.Nothing], options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
     def voronoiDiagram(shapes: IPrimitive, clipRegion: typings.bingmaps.Microsoft.Maps.LocationRect): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
     def voronoiDiagram(
       shapes: IPrimitive,
@@ -553,6 +840,11 @@ object SpatialMath extends js.Object {
     def voronoiDiagram(shapes: IPrimitive, clipRegion: typings.bingmaps.Microsoft.Maps.Polygon): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
     def voronoiDiagram(shapes: IPrimitive, clipRegion: typings.bingmaps.Microsoft.Maps.Polygon, options: IPolygonOptions): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
     def voronoiDiagram(shapes: typings.bingmaps.Microsoft.Maps.Location): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
+    def voronoiDiagram(
+      shapes: typings.bingmaps.Microsoft.Maps.Location,
+      clipRegion: js.UndefOr[scala.Nothing],
+      options: IPolygonOptions
+    ): js.Array[typings.bingmaps.Microsoft.Maps.Polygon] = js.native
     def voronoiDiagram(
       shapes: typings.bingmaps.Microsoft.Maps.Location,
       clipRegion: typings.bingmaps.Microsoft.Maps.LocationRect

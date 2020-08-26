@@ -10,9 +10,9 @@ The foundation framework of the Ionic CLI
 | ------------------ | :-------------: |
 | Full name          | @ionic/cli-framework |
 | Keywords           | - |
-| # releases         | 128 |
-| # dependents       | 7 |
-| # downloads        | 3348328 |
+| # releases         | 119 |
+| # dependents       | 8 |
+| # downloads        | 3374969 |
 | # stars            | 0 |
 
 ## Links

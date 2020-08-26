@@ -22,6 +22,7 @@ trait ISeriesNoBounds extends js.Object {
   var visible: Boolean = js.native
   var yMandatory: Boolean = js.native
   def addRandom(count: Double): ISeries = js.native
+  def addRandom(count: Double, range: js.UndefOr[scala.Nothing], x: Boolean): ISeries = js.native
   def addRandom(count: Double, range: Double): ISeries = js.native
   def addRandom(count: Double, range: Double, x: Boolean): ISeries = js.native
   def associatedToAxis(axis: IAxis): Boolean = js.native

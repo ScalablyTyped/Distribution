@@ -34,20 +34,46 @@ trait QualificationRequirement extends js.Object {
 
 object QualificationRequirement {
   @scala.inline
-  def apply(
-    Comparator: Comparator,
-    QualificationTypeId: String,
-    ActionsGuarded: HITAccessActions = null,
-    IntegerValues: IntegerList = null,
-    LocaleValues: LocaleList = null,
-    RequiredToPreview: js.UndefOr[Boolean] = js.undefined
-  ): QualificationRequirement = {
+  def apply(Comparator: Comparator, QualificationTypeId: String): QualificationRequirement = {
     val __obj = js.Dynamic.literal(Comparator = Comparator.asInstanceOf[js.Any], QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any])
-    if (ActionsGuarded != null) __obj.updateDynamic("ActionsGuarded")(ActionsGuarded.asInstanceOf[js.Any])
-    if (IntegerValues != null) __obj.updateDynamic("IntegerValues")(IntegerValues.asInstanceOf[js.Any])
-    if (LocaleValues != null) __obj.updateDynamic("LocaleValues")(LocaleValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequiredToPreview)) __obj.updateDynamic("RequiredToPreview")(RequiredToPreview.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[QualificationRequirement]
   }
+  @scala.inline
+  implicit class QualificationRequirementOps[Self <: QualificationRequirement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparator(value: Comparator): Self = this.set("Comparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQualificationTypeId(value: String): Self = this.set("QualificationTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActionsGuarded(value: HITAccessActions): Self = this.set("ActionsGuarded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionsGuarded: Self = this.set("ActionsGuarded", js.undefined)
+    @scala.inline
+    def setIntegerValuesVarargs(value: Integer*): Self = this.set("IntegerValues", js.Array(value :_*))
+    @scala.inline
+    def setIntegerValues(value: IntegerList): Self = this.set("IntegerValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegerValues: Self = this.set("IntegerValues", js.undefined)
+    @scala.inline
+    def setLocaleValuesVarargs(value: Locale*): Self = this.set("LocaleValues", js.Array(value :_*))
+    @scala.inline
+    def setLocaleValues(value: LocaleList): Self = this.set("LocaleValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocaleValues: Self = this.set("LocaleValues", js.undefined)
+    @scala.inline
+    def setRequiredToPreview(value: Boolean): Self = this.set("RequiredToPreview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiredToPreview: Self = this.set("RequiredToPreview", js.undefined)
+  }
+  
 }
 

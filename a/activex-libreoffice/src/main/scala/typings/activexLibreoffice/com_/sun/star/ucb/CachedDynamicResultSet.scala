@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   *
   * For example, a {@link DynamicResultSet} is returned from the open-command executed by an {@link XCommandProcessor} of the service {@link Content} .
   */
+@js.native
 trait CachedDynamicResultSet
   extends XDynamicResultSet
      with XSourceInitialization

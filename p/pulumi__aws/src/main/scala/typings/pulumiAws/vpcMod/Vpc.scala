@@ -52,7 +52,7 @@ class Vpc protected () extends CustomResource {
   /**
     * A boolean flag to enable/disable ClassicLink
     * for the VPC. Only valid in regions and accounts that support EC2 Classic.
-    * See the [ClassicLink documentation][1] for more information. Defaults false.
+    * See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html) for more information. Defaults false.
     */
   val enableClassiclink: Output_[Boolean] = js.native
   /**
@@ -69,7 +69,8 @@ class Vpc protected () extends CustomResource {
     */
   val enableDnsSupport: Output_[js.UndefOr[Boolean]] = js.native
   /**
-    * A tenancy option for instances launched into the VPC
+    * A tenancy option for instances launched into the VPC. Default is `default`, which
+    * makes your instances shared on the host. Using either of the other options (`dedicated` or `host`) costs at least $2/hr.
     */
   val instanceTenancy: Output_[js.UndefOr[String]] = js.native
   /**
@@ -83,7 +84,7 @@ class Vpc protected () extends CustomResource {
   /**
     * The ID of the main route table associated with
     * this VPC. Note that you can change a VPC's main route table by using an
-    * [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html).
+    * `aws.ec2.MainRouteTableAssociation`.
     */
   val mainRouteTableId: Output_[String] = js.native
   /**
@@ -91,9 +92,9 @@ class Vpc protected () extends CustomResource {
     */
   val ownerId: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -107,8 +108,10 @@ object Vpc extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Vpc = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Vpc = js.native
   def get(name: String, id: Input[ID], state: VpcState): Vpc = js.native
   def get(name: String, id: Input[ID], state: VpcState, opts: CustomResourceOptions): Vpc = js.native
   /**

@@ -9,7 +9,7 @@ trait DeleteVpcEndpointConnectionNotificationsRequest extends js.Object {
   /**
     * One or more notification IDs.
     */
-  var ConnectionNotificationIds: ValueStringList = js.native
+  var ConnectionNotificationIds: ConnectionNotificationIdsList = js.native
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
@@ -18,10 +18,30 @@ trait DeleteVpcEndpointConnectionNotificationsRequest extends js.Object {
 
 object DeleteVpcEndpointConnectionNotificationsRequest {
   @scala.inline
-  def apply(ConnectionNotificationIds: ValueStringList, DryRun: js.UndefOr[Boolean] = js.undefined): DeleteVpcEndpointConnectionNotificationsRequest = {
+  def apply(ConnectionNotificationIds: ConnectionNotificationIdsList): DeleteVpcEndpointConnectionNotificationsRequest = {
     val __obj = js.Dynamic.literal(ConnectionNotificationIds = ConnectionNotificationIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpcEndpointConnectionNotificationsRequest]
   }
+  @scala.inline
+  implicit class DeleteVpcEndpointConnectionNotificationsRequestOps[Self <: DeleteVpcEndpointConnectionNotificationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionNotificationIdsVarargs(value: ConnectionNotificationId*): Self = this.set("ConnectionNotificationIds", js.Array(value :_*))
+    @scala.inline
+    def setConnectionNotificationIds(value: ConnectionNotificationIdsList): Self = this.set("ConnectionNotificationIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

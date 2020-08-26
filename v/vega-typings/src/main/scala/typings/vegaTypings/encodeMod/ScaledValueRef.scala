@@ -15,8 +15,8 @@ trait ScaledValueRef[T] extends js.Object
 
 object ScaledValueRef {
   @scala.inline
-  def Scale[T](scale: Field, value: Boolean | Double | String = null): ScaledValueRef[T] = {
-    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def Scale[T](scale: Field): ScaledValueRef[T] = {
+    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaledValueRef[T]]
   }
   @scala.inline
@@ -40,8 +40,8 @@ object ScaledValueRef {
     __obj.asInstanceOf[ScaledValueRef[T]]
   }
   @scala.inline
-  def Value[T](value: T = null): ScaledValueRef[T] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  def Value[T](): ScaledValueRef[T] = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScaledValueRef[T]]
   }
   @scala.inline

@@ -4,48 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IMetadata extends js.Object {
-  var atlasRawData: js.UndefOr[String] = js.undefined
-  var image: js.UndefOr[js.Any] = js.undefined
-  var imageLoader: js.UndefOr[js.Any] = js.undefined
-  var imageMetadata: js.UndefOr[js.Any] = js.undefined
-  var imageNamePrefix: js.UndefOr[String] = js.undefined
-  var images: js.UndefOr[js.Any] = js.undefined
-  var spineAtlas: js.UndefOr[js.Any] = js.undefined
-  var spineAtlasFile: js.UndefOr[String] = js.undefined
-  var spineAtlasSuffix: js.UndefOr[String] = js.undefined
-  var spineMetadata: js.UndefOr[js.Any] = js.undefined
-  var spineSkeletonScale: js.UndefOr[Double] = js.undefined
+  var atlasRawData: js.UndefOr[String] = js.native
+  var image: js.UndefOr[js.Any] = js.native
+  var imageLoader: js.UndefOr[js.Any] = js.native
+  var imageMetadata: js.UndefOr[js.Any] = js.native
+  var imageNamePrefix: js.UndefOr[String] = js.native
+  var images: js.UndefOr[js.Any] = js.native
+  var spineAtlas: js.UndefOr[js.Any] = js.native
+  var spineAtlasFile: js.UndefOr[String] = js.native
+  var spineAtlasSuffix: js.UndefOr[String] = js.native
+  var spineMetadata: js.UndefOr[js.Any] = js.native
+  var spineSkeletonScale: js.UndefOr[Double] = js.native
 }
 
 object IMetadata {
   @scala.inline
-  def apply(
-    atlasRawData: String = null,
-    image: js.Any = null,
-    imageLoader: js.Any = null,
-    imageMetadata: js.Any = null,
-    imageNamePrefix: String = null,
-    images: js.Any = null,
-    spineAtlas: js.Any = null,
-    spineAtlasFile: String = null,
-    spineAtlasSuffix: String = null,
-    spineMetadata: js.Any = null,
-    spineSkeletonScale: js.UndefOr[Double] = js.undefined
-  ): IMetadata = {
+  def apply(): IMetadata = {
     val __obj = js.Dynamic.literal()
-    if (atlasRawData != null) __obj.updateDynamic("atlasRawData")(atlasRawData.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (imageLoader != null) __obj.updateDynamic("imageLoader")(imageLoader.asInstanceOf[js.Any])
-    if (imageMetadata != null) __obj.updateDynamic("imageMetadata")(imageMetadata.asInstanceOf[js.Any])
-    if (imageNamePrefix != null) __obj.updateDynamic("imageNamePrefix")(imageNamePrefix.asInstanceOf[js.Any])
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (spineAtlas != null) __obj.updateDynamic("spineAtlas")(spineAtlas.asInstanceOf[js.Any])
-    if (spineAtlasFile != null) __obj.updateDynamic("spineAtlasFile")(spineAtlasFile.asInstanceOf[js.Any])
-    if (spineAtlasSuffix != null) __obj.updateDynamic("spineAtlasSuffix")(spineAtlasSuffix.asInstanceOf[js.Any])
-    if (spineMetadata != null) __obj.updateDynamic("spineMetadata")(spineMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(spineSkeletonScale)) __obj.updateDynamic("spineSkeletonScale")(spineSkeletonScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMetadata]
   }
+  @scala.inline
+  implicit class IMetadataOps[Self <: IMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAtlasRawData(value: String): Self = this.set("atlasRawData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtlasRawData: Self = this.set("atlasRawData", js.undefined)
+    @scala.inline
+    def setImage(value: js.Any): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setImageLoader(value: js.Any): Self = this.set("imageLoader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageLoader: Self = this.set("imageLoader", js.undefined)
+    @scala.inline
+    def setImageMetadata(value: js.Any): Self = this.set("imageMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageMetadata: Self = this.set("imageMetadata", js.undefined)
+    @scala.inline
+    def setImageNamePrefix(value: String): Self = this.set("imageNamePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageNamePrefix: Self = this.set("imageNamePrefix", js.undefined)
+    @scala.inline
+    def setImages(value: js.Any): Self = this.set("images", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImages: Self = this.set("images", js.undefined)
+    @scala.inline
+    def setSpineAtlas(value: js.Any): Self = this.set("spineAtlas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpineAtlas: Self = this.set("spineAtlas", js.undefined)
+    @scala.inline
+    def setSpineAtlasFile(value: String): Self = this.set("spineAtlasFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpineAtlasFile: Self = this.set("spineAtlasFile", js.undefined)
+    @scala.inline
+    def setSpineAtlasSuffix(value: String): Self = this.set("spineAtlasSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpineAtlasSuffix: Self = this.set("spineAtlasSuffix", js.undefined)
+    @scala.inline
+    def setSpineMetadata(value: js.Any): Self = this.set("spineMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpineMetadata: Self = this.set("spineMetadata", js.undefined)
+    @scala.inline
+    def setSpineSkeletonScale(value: Double): Self = this.set("spineSkeletonScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpineSkeletonScale: Self = this.set("spineSkeletonScale", js.undefined)
+  }
+  
 }
 

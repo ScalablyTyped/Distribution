@@ -4,134 +4,163 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy {
   // Require that devices have enabled device threat protection.
-  var deviceThreatProtectionEnabled: js.UndefOr[Boolean] = js.undefined
+  var deviceThreatProtectionEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: unavailable, secured,
     * low, medium, high, notSet.
     */
-  var deviceThreatProtectionRequiredSecurityLevel: js.UndefOr[DeviceThreatProtectionLevel] = js.undefined
+  var deviceThreatProtectionRequiredSecurityLevel: js.UndefOr[DeviceThreatProtectionLevel] = js.native
   // Minimum Android security patch level.
-  var minAndroidSecurityPatchLevel: js.UndefOr[String] = js.undefined
+  var minAndroidSecurityPatchLevel: js.UndefOr[String] = js.native
   // Maximum Android version.
-  var osMaximumVersion: js.UndefOr[String] = js.undefined
+  var osMaximumVersion: js.UndefOr[String] = js.native
   // Minimum Android version.
-  var osMinimumVersion: js.UndefOr[String] = js.undefined
+  var osMinimumVersion: js.UndefOr[String] = js.native
   // Number of days before the password expires. Valid values 1 to 365
-  var passwordExpirationDays: js.UndefOr[Double] = js.undefined
+  var passwordExpirationDays: js.UndefOr[Double] = js.native
   // Minimum password length. Valid values 4 to 16
-  var passwordMinimumLength: js.UndefOr[Double] = js.undefined
+  var passwordMinimumLength: js.UndefOr[Double] = js.native
   // Minutes of inactivity before a password is required.
-  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[Double] = js.undefined
+  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[Double] = js.native
   // Number of previous passwords to block. Valid values 1 to 24
-  var passwordPreviousPasswordBlockCount: js.UndefOr[Double] = js.undefined
+  var passwordPreviousPasswordBlockCount: js.UndefOr[Double] = js.native
   // Require a password to unlock device.
-  var passwordRequired: js.UndefOr[Boolean] = js.undefined
+  var passwordRequired: js.UndefOr[Boolean] = js.native
   /**
     * Type of characters in password. Possible values are: deviceDefault, alphabetic, alphanumeric, alphanumericWithSymbols,
     * lowSecurityBiometric, numeric, numericComplex, any.
     */
-  var passwordRequiredType: js.UndefOr[AndroidRequiredPasswordType] = js.undefined
+  var passwordRequiredType: js.UndefOr[AndroidRequiredPasswordType] = js.native
   // Devices must not be jailbroken or rooted.
-  var securityBlockJailbrokenDevices: js.UndefOr[Boolean] = js.undefined
+  var securityBlockJailbrokenDevices: js.UndefOr[Boolean] = js.native
   // Disable USB debugging on Android devices.
-  var securityDisableUsbDebugging: js.UndefOr[Boolean] = js.undefined
+  var securityDisableUsbDebugging: js.UndefOr[Boolean] = js.native
   // Require that devices disallow installation of apps from unknown sources.
-  var securityPreventInstallAppsFromUnknownSources: js.UndefOr[Boolean] = js.undefined
+  var securityPreventInstallAppsFromUnknownSources: js.UndefOr[Boolean] = js.native
   // Require the device to pass the Company Portal client app runtime integrity check.
-  var securityRequireCompanyPortalAppIntegrity: js.UndefOr[Boolean] = js.undefined
+  var securityRequireCompanyPortalAppIntegrity: js.UndefOr[Boolean] = js.native
   // Require Google Play Services to be installed and enabled on the device.
-  var securityRequireGooglePlayServices: js.UndefOr[Boolean] = js.undefined
+  var securityRequireGooglePlayServices: js.UndefOr[Boolean] = js.native
   // Require the device to pass the SafetyNet basic integrity check.
-  var securityRequireSafetyNetAttestationBasicIntegrity: js.UndefOr[Boolean] = js.undefined
+  var securityRequireSafetyNetAttestationBasicIntegrity: js.UndefOr[Boolean] = js.native
   // Require the device to pass the SafetyNet certified device check.
-  var securityRequireSafetyNetAttestationCertifiedDevice: js.UndefOr[Boolean] = js.undefined
+  var securityRequireSafetyNetAttestationCertifiedDevice: js.UndefOr[Boolean] = js.native
   /**
     * Require the device to have up to date security providers. The device will require Google Play Services to be enabled
     * and up to date.
     */
-  var securityRequireUpToDateSecurityProviders: js.UndefOr[Boolean] = js.undefined
+  var securityRequireUpToDateSecurityProviders: js.UndefOr[Boolean] = js.native
   // Require the Android Verify apps feature is turned on.
-  var securityRequireVerifyApps: js.UndefOr[Boolean] = js.undefined
+  var securityRequireVerifyApps: js.UndefOr[Boolean] = js.native
   // Require encryption on Android devices.
-  var storageRequireEncryption: js.UndefOr[Boolean] = js.undefined
+  var storageRequireEncryption: js.UndefOr[Boolean] = js.native
 }
 
 object AndroidWorkProfileCompliancePolicy {
   @scala.inline
-  def apply(
-    assignments: js.Array[DeviceCompliancePolicyAssignment] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    deviceSettingStateSummaries: js.Array[SettingStateDeviceSummary] = null,
-    deviceStatusOverview: DeviceComplianceDeviceOverview = null,
-    deviceStatuses: js.Array[DeviceComplianceDeviceStatus] = null,
-    deviceThreatProtectionEnabled: js.UndefOr[Boolean] = js.undefined,
-    deviceThreatProtectionRequiredSecurityLevel: DeviceThreatProtectionLevel = null,
-    displayName: String = null,
-    id: String = null,
-    lastModifiedDateTime: String = null,
-    minAndroidSecurityPatchLevel: String = null,
-    osMaximumVersion: String = null,
-    osMinimumVersion: String = null,
-    passwordExpirationDays: js.UndefOr[Double] = js.undefined,
-    passwordMinimumLength: js.UndefOr[Double] = js.undefined,
-    passwordMinutesOfInactivityBeforeLock: js.UndefOr[Double] = js.undefined,
-    passwordPreviousPasswordBlockCount: js.UndefOr[Double] = js.undefined,
-    passwordRequired: js.UndefOr[Boolean] = js.undefined,
-    passwordRequiredType: AndroidRequiredPasswordType = null,
-    scheduledActionsForRule: js.Array[DeviceComplianceScheduledActionForRule] = null,
-    securityBlockJailbrokenDevices: js.UndefOr[Boolean] = js.undefined,
-    securityDisableUsbDebugging: js.UndefOr[Boolean] = js.undefined,
-    securityPreventInstallAppsFromUnknownSources: js.UndefOr[Boolean] = js.undefined,
-    securityRequireCompanyPortalAppIntegrity: js.UndefOr[Boolean] = js.undefined,
-    securityRequireGooglePlayServices: js.UndefOr[Boolean] = js.undefined,
-    securityRequireSafetyNetAttestationBasicIntegrity: js.UndefOr[Boolean] = js.undefined,
-    securityRequireSafetyNetAttestationCertifiedDevice: js.UndefOr[Boolean] = js.undefined,
-    securityRequireUpToDateSecurityProviders: js.UndefOr[Boolean] = js.undefined,
-    securityRequireVerifyApps: js.UndefOr[Boolean] = js.undefined,
-    storageRequireEncryption: js.UndefOr[Boolean] = js.undefined,
-    userStatusOverview: DeviceComplianceUserOverview = null,
-    userStatuses: js.Array[DeviceComplianceUserStatus] = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): AndroidWorkProfileCompliancePolicy = {
+  def apply(): AndroidWorkProfileCompliancePolicy = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
-    if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
-    if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(deviceThreatProtectionEnabled)) __obj.updateDynamic("deviceThreatProtectionEnabled")(deviceThreatProtectionEnabled.get.asInstanceOf[js.Any])
-    if (deviceThreatProtectionRequiredSecurityLevel != null) __obj.updateDynamic("deviceThreatProtectionRequiredSecurityLevel")(deviceThreatProtectionRequiredSecurityLevel.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (minAndroidSecurityPatchLevel != null) __obj.updateDynamic("minAndroidSecurityPatchLevel")(minAndroidSecurityPatchLevel.asInstanceOf[js.Any])
-    if (osMaximumVersion != null) __obj.updateDynamic("osMaximumVersion")(osMaximumVersion.asInstanceOf[js.Any])
-    if (osMinimumVersion != null) __obj.updateDynamic("osMinimumVersion")(osMinimumVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordExpirationDays)) __obj.updateDynamic("passwordExpirationDays")(passwordExpirationDays.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordMinimumLength)) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordMinutesOfInactivityBeforeLock)) __obj.updateDynamic("passwordMinutesOfInactivityBeforeLock")(passwordMinutesOfInactivityBeforeLock.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordPreviousPasswordBlockCount)) __obj.updateDynamic("passwordPreviousPasswordBlockCount")(passwordPreviousPasswordBlockCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(passwordRequired)) __obj.updateDynamic("passwordRequired")(passwordRequired.get.asInstanceOf[js.Any])
-    if (passwordRequiredType != null) __obj.updateDynamic("passwordRequiredType")(passwordRequiredType.asInstanceOf[js.Any])
-    if (scheduledActionsForRule != null) __obj.updateDynamic("scheduledActionsForRule")(scheduledActionsForRule.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityBlockJailbrokenDevices)) __obj.updateDynamic("securityBlockJailbrokenDevices")(securityBlockJailbrokenDevices.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityDisableUsbDebugging)) __obj.updateDynamic("securityDisableUsbDebugging")(securityDisableUsbDebugging.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityPreventInstallAppsFromUnknownSources)) __obj.updateDynamic("securityPreventInstallAppsFromUnknownSources")(securityPreventInstallAppsFromUnknownSources.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityRequireCompanyPortalAppIntegrity)) __obj.updateDynamic("securityRequireCompanyPortalAppIntegrity")(securityRequireCompanyPortalAppIntegrity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityRequireGooglePlayServices)) __obj.updateDynamic("securityRequireGooglePlayServices")(securityRequireGooglePlayServices.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityRequireSafetyNetAttestationBasicIntegrity)) __obj.updateDynamic("securityRequireSafetyNetAttestationBasicIntegrity")(securityRequireSafetyNetAttestationBasicIntegrity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityRequireSafetyNetAttestationCertifiedDevice)) __obj.updateDynamic("securityRequireSafetyNetAttestationCertifiedDevice")(securityRequireSafetyNetAttestationCertifiedDevice.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityRequireUpToDateSecurityProviders)) __obj.updateDynamic("securityRequireUpToDateSecurityProviders")(securityRequireUpToDateSecurityProviders.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityRequireVerifyApps)) __obj.updateDynamic("securityRequireVerifyApps")(securityRequireVerifyApps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(storageRequireEncryption)) __obj.updateDynamic("storageRequireEncryption")(storageRequireEncryption.get.asInstanceOf[js.Any])
-    if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
-    if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidWorkProfileCompliancePolicy]
   }
+  @scala.inline
+  implicit class AndroidWorkProfileCompliancePolicyOps[Self <: AndroidWorkProfileCompliancePolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceThreatProtectionEnabled(value: Boolean): Self = this.set("deviceThreatProtectionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceThreatProtectionEnabled: Self = this.set("deviceThreatProtectionEnabled", js.undefined)
+    @scala.inline
+    def setDeviceThreatProtectionRequiredSecurityLevel(value: DeviceThreatProtectionLevel): Self = this.set("deviceThreatProtectionRequiredSecurityLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceThreatProtectionRequiredSecurityLevel: Self = this.set("deviceThreatProtectionRequiredSecurityLevel", js.undefined)
+    @scala.inline
+    def setMinAndroidSecurityPatchLevel(value: String): Self = this.set("minAndroidSecurityPatchLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinAndroidSecurityPatchLevel: Self = this.set("minAndroidSecurityPatchLevel", js.undefined)
+    @scala.inline
+    def setOsMaximumVersion(value: String): Self = this.set("osMaximumVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOsMaximumVersion: Self = this.set("osMaximumVersion", js.undefined)
+    @scala.inline
+    def setOsMinimumVersion(value: String): Self = this.set("osMinimumVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOsMinimumVersion: Self = this.set("osMinimumVersion", js.undefined)
+    @scala.inline
+    def setPasswordExpirationDays(value: Double): Self = this.set("passwordExpirationDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordExpirationDays: Self = this.set("passwordExpirationDays", js.undefined)
+    @scala.inline
+    def setPasswordMinimumLength(value: Double): Self = this.set("passwordMinimumLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordMinimumLength: Self = this.set("passwordMinimumLength", js.undefined)
+    @scala.inline
+    def setPasswordMinutesOfInactivityBeforeLock(value: Double): Self = this.set("passwordMinutesOfInactivityBeforeLock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordMinutesOfInactivityBeforeLock: Self = this.set("passwordMinutesOfInactivityBeforeLock", js.undefined)
+    @scala.inline
+    def setPasswordPreviousPasswordBlockCount(value: Double): Self = this.set("passwordPreviousPasswordBlockCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordPreviousPasswordBlockCount: Self = this.set("passwordPreviousPasswordBlockCount", js.undefined)
+    @scala.inline
+    def setPasswordRequired(value: Boolean): Self = this.set("passwordRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordRequired: Self = this.set("passwordRequired", js.undefined)
+    @scala.inline
+    def setPasswordRequiredType(value: AndroidRequiredPasswordType): Self = this.set("passwordRequiredType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordRequiredType: Self = this.set("passwordRequiredType", js.undefined)
+    @scala.inline
+    def setSecurityBlockJailbrokenDevices(value: Boolean): Self = this.set("securityBlockJailbrokenDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityBlockJailbrokenDevices: Self = this.set("securityBlockJailbrokenDevices", js.undefined)
+    @scala.inline
+    def setSecurityDisableUsbDebugging(value: Boolean): Self = this.set("securityDisableUsbDebugging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityDisableUsbDebugging: Self = this.set("securityDisableUsbDebugging", js.undefined)
+    @scala.inline
+    def setSecurityPreventInstallAppsFromUnknownSources(value: Boolean): Self = this.set("securityPreventInstallAppsFromUnknownSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityPreventInstallAppsFromUnknownSources: Self = this.set("securityPreventInstallAppsFromUnknownSources", js.undefined)
+    @scala.inline
+    def setSecurityRequireCompanyPortalAppIntegrity(value: Boolean): Self = this.set("securityRequireCompanyPortalAppIntegrity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityRequireCompanyPortalAppIntegrity: Self = this.set("securityRequireCompanyPortalAppIntegrity", js.undefined)
+    @scala.inline
+    def setSecurityRequireGooglePlayServices(value: Boolean): Self = this.set("securityRequireGooglePlayServices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityRequireGooglePlayServices: Self = this.set("securityRequireGooglePlayServices", js.undefined)
+    @scala.inline
+    def setSecurityRequireSafetyNetAttestationBasicIntegrity(value: Boolean): Self = this.set("securityRequireSafetyNetAttestationBasicIntegrity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityRequireSafetyNetAttestationBasicIntegrity: Self = this.set("securityRequireSafetyNetAttestationBasicIntegrity", js.undefined)
+    @scala.inline
+    def setSecurityRequireSafetyNetAttestationCertifiedDevice(value: Boolean): Self = this.set("securityRequireSafetyNetAttestationCertifiedDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityRequireSafetyNetAttestationCertifiedDevice: Self = this.set("securityRequireSafetyNetAttestationCertifiedDevice", js.undefined)
+    @scala.inline
+    def setSecurityRequireUpToDateSecurityProviders(value: Boolean): Self = this.set("securityRequireUpToDateSecurityProviders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityRequireUpToDateSecurityProviders: Self = this.set("securityRequireUpToDateSecurityProviders", js.undefined)
+    @scala.inline
+    def setSecurityRequireVerifyApps(value: Boolean): Self = this.set("securityRequireVerifyApps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityRequireVerifyApps: Self = this.set("securityRequireVerifyApps", js.undefined)
+    @scala.inline
+    def setStorageRequireEncryption(value: Boolean): Self = this.set("storageRequireEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageRequireEncryption: Self = this.set("storageRequireEncryption", js.undefined)
+  }
+  
 }
 

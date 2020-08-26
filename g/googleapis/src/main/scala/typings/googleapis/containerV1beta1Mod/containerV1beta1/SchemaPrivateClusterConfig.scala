@@ -41,20 +41,42 @@ trait SchemaPrivateClusterConfig extends js.Object {
 
 object SchemaPrivateClusterConfig {
   @scala.inline
-  def apply(
-    enablePrivateEndpoint: js.UndefOr[Boolean] = js.undefined,
-    enablePrivateNodes: js.UndefOr[Boolean] = js.undefined,
-    masterIpv4CidrBlock: String = null,
-    privateEndpoint: String = null,
-    publicEndpoint: String = null
-  ): SchemaPrivateClusterConfig = {
+  def apply(): SchemaPrivateClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePrivateEndpoint)) __obj.updateDynamic("enablePrivateEndpoint")(enablePrivateEndpoint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePrivateNodes)) __obj.updateDynamic("enablePrivateNodes")(enablePrivateNodes.get.asInstanceOf[js.Any])
-    if (masterIpv4CidrBlock != null) __obj.updateDynamic("masterIpv4CidrBlock")(masterIpv4CidrBlock.asInstanceOf[js.Any])
-    if (privateEndpoint != null) __obj.updateDynamic("privateEndpoint")(privateEndpoint.asInstanceOf[js.Any])
-    if (publicEndpoint != null) __obj.updateDynamic("publicEndpoint")(publicEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPrivateClusterConfig]
   }
+  @scala.inline
+  implicit class SchemaPrivateClusterConfigOps[Self <: SchemaPrivateClusterConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnablePrivateEndpoint(value: Boolean): Self = this.set("enablePrivateEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePrivateEndpoint: Self = this.set("enablePrivateEndpoint", js.undefined)
+    @scala.inline
+    def setEnablePrivateNodes(value: Boolean): Self = this.set("enablePrivateNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePrivateNodes: Self = this.set("enablePrivateNodes", js.undefined)
+    @scala.inline
+    def setMasterIpv4CidrBlock(value: String): Self = this.set("masterIpv4CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterIpv4CidrBlock: Self = this.set("masterIpv4CidrBlock", js.undefined)
+    @scala.inline
+    def setPrivateEndpoint(value: String): Self = this.set("privateEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateEndpoint: Self = this.set("privateEndpoint", js.undefined)
+    @scala.inline
+    def setPublicEndpoint(value: String): Self = this.set("publicEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicEndpoint: Self = this.set("publicEndpoint", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Test if a process with a given pid is running
 | Keywords           | pid, running, child, exec, spawn |
 | # releases         | 0 |
 | # dependents       | 88 |
-| # downloads        | 4978998 |
+| # downloads        | 5154239 |
 | # stars            | 4 |
 
 ## Links

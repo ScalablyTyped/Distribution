@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsdevtools__file-path-filter
 
-Typings are for version 3.0.1
+Typings are for version 3.0.2
 
 ## Library description:
 Filters file paths using globs, regular expressions, or custom criteria
@@ -10,9 +10,9 @@ Filters file paths using globs, regular expressions, or custom criteria
 | ------------------ | :-------------: |
 | Full name          | @jsdevtools/file-path-filter |
 | Keywords           | filter, find, file, path, regex, regexp, glob, include, exclude |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
+| # releases         | 4 |
+| # dependents       | 5 |
+| # downloads        | 4984 |
 | # stars            | 0 |
 
 ## Links

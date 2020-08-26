@@ -20,9 +20,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined rbx.rbx/types.Prefer<rbx.rbx/grid/tiles/tile.TileVariablesOverrides, rbx.rbx/grid/tiles/tile.TileVariablesDefaults> */
+@js.native
 trait TileVariables extends js.Object {
-  var kinds: ancestor | parent | child
-  var sizes: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`
+  var kinds: ancestor | parent | child = js.native
+  var sizes: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` = js.native
 }
 
 object TileVariables {
@@ -34,5 +35,22 @@ object TileVariables {
     val __obj = js.Dynamic.literal(kinds = kinds.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileVariables]
   }
+  @scala.inline
+  implicit class TileVariablesOps[Self <: TileVariables] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKinds(value: ancestor | parent | child): Self = this.set("kinds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSizes(value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`): Self = this.set("sizes", value.asInstanceOf[js.Any])
+  }
+  
 }
 

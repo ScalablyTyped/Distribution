@@ -11,9 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class UpdateToLatestLedgerResponse_ () extends Message {
   def addResponseItems(): ResponseItem = js.native
+  def addResponseItems(value: js.UndefOr[scala.Nothing], index: Double): ResponseItem = js.native
   def addResponseItems(value: ResponseItem): ResponseItem = js.native
   def addResponseItems(value: ResponseItem, index: Double): ResponseItem = js.native
   def addValidatorChangeEvents(): ValidatorChangeEventWithProof = js.native
+  def addValidatorChangeEvents(value: js.UndefOr[scala.Nothing], index: Double): ValidatorChangeEventWithProof = js.native
   def addValidatorChangeEvents(value: ValidatorChangeEventWithProof): ValidatorChangeEventWithProof = js.native
   def addValidatorChangeEvents(value: ValidatorChangeEventWithProof, index: Double): ValidatorChangeEventWithProof = js.native
   def clearLedgerInfoWithSigs(): Unit = js.native

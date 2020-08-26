@@ -4,34 +4,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BillingInfo extends js.Object {
   /** Account id. */
-  var accountId: js.UndefOr[Double] = js.undefined
+  var accountId: js.UndefOr[Double] = js.native
   /** Account name. */
-  var accountName: js.UndefOr[String] = js.undefined
+  var accountName: js.UndefOr[String] = js.native
   /**
     * A list of adgroup IDs associated with this particular account. These IDs may show up as part of a realtime bidding BidRequest, which indicates a bid
     * request for this account.
     */
-  var billingId: js.UndefOr[js.Array[String]] = js.undefined
+  var billingId: js.UndefOr[js.Array[String]] = js.native
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
 }
 
 object BillingInfo {
   @scala.inline
-  def apply(
-    accountId: js.UndefOr[Double] = js.undefined,
-    accountName: String = null,
-    billingId: js.Array[String] = null,
-    kind: String = null
-  ): BillingInfo = {
+  def apply(): BillingInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accountId)) __obj.updateDynamic("accountId")(accountId.get.asInstanceOf[js.Any])
-    if (accountName != null) __obj.updateDynamic("accountName")(accountName.asInstanceOf[js.Any])
-    if (billingId != null) __obj.updateDynamic("billingId")(billingId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingInfo]
   }
+  @scala.inline
+  implicit class BillingInfoOps[Self <: BillingInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: Double): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAccountName(value: String): Self = this.set("accountName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountName: Self = this.set("accountName", js.undefined)
+    @scala.inline
+    def setBillingIdVarargs(value: String*): Self = this.set("billingId", js.Array(value :_*))
+    @scala.inline
+    def setBillingId(value: js.Array[String]): Self = this.set("billingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingId: Self = this.set("billingId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

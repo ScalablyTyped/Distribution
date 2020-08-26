@@ -79,12 +79,36 @@ trait Window extends js.Object {
   def ActiveCell(RowIndex: Double): Range = js.native
   def ActiveCell(RowIndex: Double, ColumnIndex: Double): Range = js.native
   def Close(): Boolean = js.native
+  def Close(
+    SaveChanges: js.UndefOr[scala.Nothing],
+    Filename: js.UndefOr[scala.Nothing],
+    RouteWorkbook: Boolean
+  ): Boolean = js.native
+  def Close(SaveChanges: js.UndefOr[scala.Nothing], Filename: String): Boolean = js.native
+  def Close(SaveChanges: js.UndefOr[scala.Nothing], Filename: String, RouteWorkbook: Boolean): Boolean = js.native
   def Close(SaveChanges: Boolean): Boolean = js.native
+  def Close(SaveChanges: Boolean, Filename: js.UndefOr[scala.Nothing], RouteWorkbook: Boolean): Boolean = js.native
   def Close(SaveChanges: Boolean, Filename: String): Boolean = js.native
   def Close(SaveChanges: Boolean, Filename: String, RouteWorkbook: Boolean): Boolean = js.native
   def LargeScroll(): js.Any = js.native
+  def LargeScroll(
+    Down: js.UndefOr[scala.Nothing],
+    Up: js.UndefOr[scala.Nothing],
+    ToRight: js.UndefOr[scala.Nothing],
+    ToLeft: Double
+  ): js.Any = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: Double): js.Any = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: Double, ToLeft: Double): js.Any = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: Double): js.Any = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: Double): js.Any = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
   def LargeScroll(Down: Double): js.Any = js.native
+  def LargeScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
+  def LargeScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: Double): js.Any = js.native
+  def LargeScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: Double, ToLeft: Double): js.Any = js.native
   def LargeScroll(Down: Double, Up: Double): js.Any = js.native
+  def LargeScroll(Down: Double, Up: Double, ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
   def LargeScroll(Down: Double, Up: Double, ToRight: Double): js.Any = js.native
   def LargeScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
   def NewWindow(): Window = js.native
@@ -118,8 +142,24 @@ trait Window extends js.Object {
   def SelectedSheets(Index: Double): Sheet = js.native
   def SheetViews(Index: js.Any): SheetView = js.native
   def SmallScroll(): js.Any = js.native
+  def SmallScroll(
+    Down: js.UndefOr[scala.Nothing],
+    Up: js.UndefOr[scala.Nothing],
+    ToRight: js.UndefOr[scala.Nothing],
+    ToLeft: Double
+  ): js.Any = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: Double): js.Any = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: Double, ToLeft: Double): js.Any = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: Double): js.Any = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: Double): js.Any = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
   def SmallScroll(Down: Double): js.Any = js.native
+  def SmallScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
+  def SmallScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: Double): js.Any = js.native
+  def SmallScroll(Down: Double, Up: js.UndefOr[scala.Nothing], ToRight: Double, ToLeft: Double): js.Any = js.native
   def SmallScroll(Down: Double, Up: Double): js.Any = js.native
+  def SmallScroll(Down: Double, Up: Double, ToRight: js.UndefOr[scala.Nothing], ToLeft: Double): js.Any = js.native
   def SmallScroll(Down: Double, Up: Double, ToRight: Double): js.Any = js.native
   def SmallScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
   def VisibleRange(Address: String): Range = js.native

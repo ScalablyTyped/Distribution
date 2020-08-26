@@ -1,6 +1,5 @@
 package typings.reactNavigationStack
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.ViewProps
@@ -13,17 +12,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler.native", JSImport.Namespace)
 @js.native
 object gestureHandlerNativeMod extends js.Object {
-  @js.native
-  class GestureHandlerRootView protected ()
-    extends typings.reactNativeGestureHandler.mod.GestureHandlerRootView {
-    def this(props: ViewProps) = this()
-    def this(props: ViewProps, context: js.Any) = this()
-  }
-  
+  val GestureHandlerRootView: ComponentType[ViewProps] = js.native
   def PanGestureHandler(props: PanGestureHandlerProperties): Element = js.native
-  @js.native
-  object GestureHandlerRootView extends TopLevel[ComponentType[ViewProps]]
-  
   @js.native
   object GestureState extends js.Object {
     /* 3 */ val ACTIVE: typings.reactNativeGestureHandler.mod.State.ACTIVE with Double = js.native

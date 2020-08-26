@@ -13,6 +13,7 @@ object utilMod extends js.Object {
   def decompressGzippedContent(buffer: Buffer): js.Promise[String] = js.native
   def decompressGzippedContent(buffer: Buffer, charset: String): js.Promise[String] = js.native
   def getUrl(resource: String): String = js.native
+  def getUrl(resource: String, baseUrl: js.UndefOr[scala.Nothing], queryParams: IRequestQueryParams): String = js.native
   def getUrl(resource: String, baseUrl: String): String = js.native
   def getUrl(resource: String, baseUrl: String, queryParams: IRequestQueryParams): String = js.native
   def obtainContentCharset(response: IHttpClientResponse): String = js.native

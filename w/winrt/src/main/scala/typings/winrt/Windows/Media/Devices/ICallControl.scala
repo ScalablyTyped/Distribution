@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICallControl extends js.Object {
-  var hasRinger: Boolean
-  var onanswerrequested: js.Any
-  var onaudiotransferrequested: js.Any
-  var ondialrequested: js.Any
-  var onhanguprequested: js.Any
-  var onkeypadpressed: js.Any
-  var onredialrequested: js.Any
-  def endCall(callToken: Double): Unit
-  def indicateActiveCall(callToken: Double): Unit
-  def indicateNewIncomingCall(enableRinger: Boolean, callerId: String): Double
-  def indicateNewOutgoingCall(): Double
+  var hasRinger: Boolean = js.native
+  var onanswerrequested: js.Any = js.native
+  var onaudiotransferrequested: js.Any = js.native
+  var ondialrequested: js.Any = js.native
+  var onhanguprequested: js.Any = js.native
+  var onkeypadpressed: js.Any = js.native
+  var onredialrequested: js.Any = js.native
+  def endCall(callToken: Double): Unit = js.native
+  def indicateActiveCall(callToken: Double): Unit = js.native
+  def indicateNewIncomingCall(enableRinger: Boolean, callerId: String): Double = js.native
+  def indicateNewOutgoingCall(): Double = js.native
 }
 
 object ICallControl {
@@ -36,5 +37,40 @@ object ICallControl {
     val __obj = js.Dynamic.literal(endCall = js.Any.fromFunction1(endCall), hasRinger = hasRinger.asInstanceOf[js.Any], indicateActiveCall = js.Any.fromFunction1(indicateActiveCall), indicateNewIncomingCall = js.Any.fromFunction2(indicateNewIncomingCall), indicateNewOutgoingCall = js.Any.fromFunction0(indicateNewOutgoingCall), onanswerrequested = onanswerrequested.asInstanceOf[js.Any], onaudiotransferrequested = onaudiotransferrequested.asInstanceOf[js.Any], ondialrequested = ondialrequested.asInstanceOf[js.Any], onhanguprequested = onhanguprequested.asInstanceOf[js.Any], onkeypadpressed = onkeypadpressed.asInstanceOf[js.Any], onredialrequested = onredialrequested.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICallControl]
   }
+  @scala.inline
+  implicit class ICallControlOps[Self <: ICallControl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndCall(value: Double => Unit): Self = this.set("endCall", js.Any.fromFunction1(value))
+    @scala.inline
+    def setHasRinger(value: Boolean): Self = this.set("hasRinger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndicateActiveCall(value: Double => Unit): Self = this.set("indicateActiveCall", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIndicateNewIncomingCall(value: (Boolean, String) => Double): Self = this.set("indicateNewIncomingCall", js.Any.fromFunction2(value))
+    @scala.inline
+    def setIndicateNewOutgoingCall(value: () => Double): Self = this.set("indicateNewOutgoingCall", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnanswerrequested(value: js.Any): Self = this.set("onanswerrequested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnaudiotransferrequested(value: js.Any): Self = this.set("onaudiotransferrequested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOndialrequested(value: js.Any): Self = this.set("ondialrequested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnhanguprequested(value: js.Any): Self = this.set("onhanguprequested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnkeypadpressed(value: js.Any): Self = this.set("onkeypadpressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnredialrequested(value: js.Any): Self = this.set("onredialrequested", value.asInstanceOf[js.Any])
+  }
+  
 }
 

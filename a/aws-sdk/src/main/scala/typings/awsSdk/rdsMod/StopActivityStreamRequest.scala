@@ -18,10 +18,28 @@ trait StopActivityStreamRequest extends js.Object {
 
 object StopActivityStreamRequest {
   @scala.inline
-  def apply(ResourceArn: String, ApplyImmediately: js.UndefOr[BooleanOptional] = js.undefined): StopActivityStreamRequest = {
+  def apply(ResourceArn: String): StopActivityStreamRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopActivityStreamRequest]
   }
+  @scala.inline
+  implicit class StopActivityStreamRequestOps[Self <: StopActivityStreamRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceArn(value: String): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplyImmediately(value: BooleanOptional): Self = this.set("ApplyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyImmediately: Self = this.set("ApplyImmediately", js.undefined)
+  }
+  
 }
 

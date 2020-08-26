@@ -16,11 +16,11 @@ import scala.scalajs.js.annotation._
 @JSImport("three/src/polyfills", JSImport.Namespace)
 @js.native
 object polyfillsMod extends js.Object {
-  def error(): Unit = js.native
+  def error(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
-  def log(): Unit = js.native
+  def log(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
-  def warn(): Unit = js.native
+  def warn(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def warn(message: js.Any, optionalParams: js.Any*): Unit = js.native
   type TypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array
 }

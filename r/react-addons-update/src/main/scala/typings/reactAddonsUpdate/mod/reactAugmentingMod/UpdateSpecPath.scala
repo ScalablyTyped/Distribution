@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateSpecPath
   extends /* key */ StringDictionary[UpdateSpec]
      with _UpdateSpec
 
 object UpdateSpecPath {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[UpdateSpec] = null): UpdateSpecPath = {
+  def apply(): UpdateSpecPath = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[UpdateSpecPath]
   }
 }

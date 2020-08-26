@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Array<keyof raphael.raphael.RaphaelReadAttributes> & {  0 ? :keyof raphael.raphael.RaphaelReadAttributes} */
+/* Inlined std.Array<keyof raphael.raphael.RaphaelReadAttributes> & {  0 :keyof raphael.raphael.RaphaelReadAttributes | undefined} */
 @js.native
 trait ArraykeyofRaphaelReadAttr extends /* n */ NumberDictionary[transform] {
   var `0`: js.UndefOr[transform] = js.native
@@ -73,6 +73,8 @@ trait ArraykeyofRaphaelReadAttr extends /* n */ NumberDictionary[transform] {
     */
   @JSName("fill")
   def fill_transform(value: transform): this.type = js.native
+  @JSName("fill")
+  def fill_transform(value: transform, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   @JSName("fill")
   def fill_transform(value: transform, start: Double): this.type = js.native
   @JSName("fill")
@@ -352,6 +354,7 @@ trait ArraykeyofRaphaelReadAttr extends /* n */ NumberDictionary[transform] {
     * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): js.Array[transform] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[transform] = js.native
   def slice(start: Double): js.Array[transform] = js.native
   def slice(start: Double, end: Double): js.Array[transform] = js.native
   /**

@@ -1,64 +1,132 @@
 package typings.vexdb.anon
 
-import typings.vexdb.requestObjectsMod.NumberRequest
+import typings.vexdb.requestObjectsMod.Filter
+import typings.vexdb.requestObjectsMod.Programs
 import typings.vexdb.requestObjectsMod.Seasons
-import typings.vexdb.requestObjectsMod.StringRequest
+import typings.vexdb.requestObjectsMod.SkillsType
 import typings.vexdb.responseObjectsMod.SkillsResponseObject
-import typings.vexdb.vexdbNumbers.`0`
-import typings.vexdb.vexdbNumbers.`1`
-import typings.vexdb.vexdbNumbers.`2`
-import typings.vexdb.vexdbStrings.VEXU
-import typings.vexdb.vexdbStrings.VRC
+import typings.vexdb.vexdbStrings.`type`
+import typings.vexdb.vexdbStrings.attempts
+import typings.vexdb.vexdbStrings.program
+import typings.vexdb.vexdbStrings.rank
+import typings.vexdb.vexdbStrings.score
+import typings.vexdb.vexdbStrings.sku
+import typings.vexdb.vexdbStrings.team
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined vexdb.vexdb/out/methods/live.LiveRequestObject<vexdb.vexdb/out/constants/RequestObjects.SkillsRequestObject> */
+@js.native
 trait LiveRequestObjectSkillsRe extends js.Object {
-  var attempts: js.UndefOr[NumberRequest[SkillsResponseObject, Double]] = js.undefined
-  var limit_number: js.UndefOr[Double] = js.undefined
-  var limit_start: js.UndefOr[Double] = js.undefined
-  var prefetch: js.UndefOr[Boolean] = js.undefined
-  var program: js.UndefOr[StringRequest[SkillsResponseObject, VRC | VEXU]] = js.undefined
-  var rank: js.UndefOr[NumberRequest[SkillsResponseObject, Double]] = js.undefined
-  var score: js.UndefOr[NumberRequest[SkillsResponseObject, Double]] = js.undefined
-  var season: js.UndefOr[StringRequest[SkillsResponseObject, Seasons]] = js.undefined
-  var season_rank: js.UndefOr[NumberRequest[SkillsResponseObject, Double]] = js.undefined
-  var sku: js.UndefOr[StringRequest[SkillsResponseObject, String]] = js.undefined
-  var team: js.UndefOr[StringRequest[SkillsResponseObject, String]] = js.undefined
-  var `type`: js.UndefOr[NumberRequest[SkillsResponseObject, `0` | `1` | `2`]] = js.undefined
+  var attempts: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.attempts, Double]] = js.native
+  var limit_number: js.UndefOr[Double] = js.native
+  var limit_start: js.UndefOr[Double] = js.native
+  var prefetch: js.UndefOr[Boolean] = js.native
+  var program: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.program, Programs]] = js.native
+  var rank: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.rank, Double]] = js.native
+  var score: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.score, Double]] = js.native
+  var season: js.UndefOr[Seasons] = js.native
+  var season_rank: js.UndefOr[Double] = js.native
+  var sku: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.sku, String]] = js.native
+  var team: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.team, String]] = js.native
+  var `type`: js.UndefOr[Filter[SkillsResponseObject, typings.vexdb.vexdbStrings.`type`, SkillsType]] = js.native
 }
 
 object LiveRequestObjectSkillsRe {
   @scala.inline
-  def apply(
-    attempts: NumberRequest[SkillsResponseObject, Double] = null,
-    limit_number: js.UndefOr[Double] = js.undefined,
-    limit_start: js.UndefOr[Double] = js.undefined,
-    prefetch: js.UndefOr[Boolean] = js.undefined,
-    program: StringRequest[SkillsResponseObject, VRC | VEXU] = null,
-    rank: NumberRequest[SkillsResponseObject, Double] = null,
-    score: NumberRequest[SkillsResponseObject, Double] = null,
-    season: StringRequest[SkillsResponseObject, Seasons] = null,
-    season_rank: NumberRequest[SkillsResponseObject, Double] = null,
-    sku: StringRequest[SkillsResponseObject, String] = null,
-    team: StringRequest[SkillsResponseObject, String] = null,
-    `type`: NumberRequest[SkillsResponseObject, `0` | `1` | `2`] = null
-  ): LiveRequestObjectSkillsRe = {
+  def apply(): LiveRequestObjectSkillsRe = {
     val __obj = js.Dynamic.literal()
-    if (attempts != null) __obj.updateDynamic("attempts")(attempts.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit_number)) __obj.updateDynamic("limit_number")(limit_number.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit_start)) __obj.updateDynamic("limit_start")(limit_start.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(prefetch)) __obj.updateDynamic("prefetch")(prefetch.get.asInstanceOf[js.Any])
-    if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
-    if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (season_rank != null) __obj.updateDynamic("season_rank")(season_rank.asInstanceOf[js.Any])
-    if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
-    if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveRequestObjectSkillsRe]
   }
+  @scala.inline
+  implicit class LiveRequestObjectSkillsReOps[Self <: LiveRequestObjectSkillsRe] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttemptsFunction2(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
+    ): Self = this.set("attempts", js.Any.fromFunction2(value))
+    @scala.inline
+    def setAttempts(value: Filter[SkillsResponseObject, attempts, Double]): Self = this.set("attempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttempts: Self = this.set("attempts", js.undefined)
+    @scala.inline
+    def setLimit_number(value: Double): Self = this.set("limit_number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit_number: Self = this.set("limit_number", js.undefined)
+    @scala.inline
+    def setLimit_start(value: Double): Self = this.set("limit_start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit_start: Self = this.set("limit_start", js.undefined)
+    @scala.inline
+    def setPrefetch(value: Boolean): Self = this.set("prefetch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefetch: Self = this.set("prefetch", js.undefined)
+    @scala.inline
+    def setProgramFunction2(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
+    ): Self = this.set("program", js.Any.fromFunction2(value))
+    @scala.inline
+    def setProgram(value: Filter[SkillsResponseObject, program, Programs]): Self = this.set("program", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgram: Self = this.set("program", js.undefined)
+    @scala.inline
+    def setRankFunction2(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
+    ): Self = this.set("rank", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRank(value: Filter[SkillsResponseObject, rank, Double]): Self = this.set("rank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRank: Self = this.set("rank", js.undefined)
+    @scala.inline
+    def setScoreFunction2(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
+    ): Self = this.set("score", js.Any.fromFunction2(value))
+    @scala.inline
+    def setScore(value: Filter[SkillsResponseObject, score, Double]): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+    @scala.inline
+    def setSeason(value: Seasons): Self = this.set("season", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeason: Self = this.set("season", js.undefined)
+    @scala.inline
+    def setSeason_rank(value: Double): Self = this.set("season_rank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeason_rank: Self = this.set("season_rank", js.undefined)
+    @scala.inline
+    def setSkuFunction2(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
+    ): Self = this.set("sku", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSku(value: Filter[SkillsResponseObject, sku, String]): Self = this.set("sku", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSku: Self = this.set("sku", js.undefined)
+    @scala.inline
+    def setTeamFunction2(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
+    ): Self = this.set("team", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTeam(value: Filter[SkillsResponseObject, team, String]): Self = this.set("team", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeam: Self = this.set("team", js.undefined)
+    @scala.inline
+    def setTypeFunction2(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
+    ): Self = this.set("type", js.Any.fromFunction2(value))
+    @scala.inline
+    def setType(value: Filter[SkillsResponseObject, `type`, SkillsType]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -30,20 +30,44 @@ trait Communication extends js.Object {
 
 object Communication {
   @scala.inline
-  def apply(
-    attachmentSet: AttachmentSet = null,
-    body: CommunicationBody = null,
-    caseId: CaseId = null,
-    submittedBy: SubmittedBy = null,
-    timeCreated: TimeCreated = null
-  ): Communication = {
+  def apply(): Communication = {
     val __obj = js.Dynamic.literal()
-    if (attachmentSet != null) __obj.updateDynamic("attachmentSet")(attachmentSet.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (caseId != null) __obj.updateDynamic("caseId")(caseId.asInstanceOf[js.Any])
-    if (submittedBy != null) __obj.updateDynamic("submittedBy")(submittedBy.asInstanceOf[js.Any])
-    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Communication]
   }
+  @scala.inline
+  implicit class CommunicationOps[Self <: Communication] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentSetVarargs(value: AttachmentDetails*): Self = this.set("attachmentSet", js.Array(value :_*))
+    @scala.inline
+    def setAttachmentSet(value: AttachmentSet): Self = this.set("attachmentSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentSet: Self = this.set("attachmentSet", js.undefined)
+    @scala.inline
+    def setBody(value: CommunicationBody): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setCaseId(value: CaseId): Self = this.set("caseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseId: Self = this.set("caseId", js.undefined)
+    @scala.inline
+    def setSubmittedBy(value: SubmittedBy): Self = this.set("submittedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmittedBy: Self = this.set("submittedBy", js.undefined)
+    @scala.inline
+    def setTimeCreated(value: TimeCreated): Self = this.set("timeCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeCreated: Self = this.set("timeCreated", js.undefined)
+  }
+  
 }
 

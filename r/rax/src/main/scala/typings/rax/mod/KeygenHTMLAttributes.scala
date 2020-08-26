@@ -4,38 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeygenHTMLAttributes[T] extends HTMLAttributes[T] {
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var challenge: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var form: js.UndefOr[String] = js.undefined
-  var keyParams: js.UndefOr[String] = js.undefined
-  var keyType: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var challenge: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var form: js.UndefOr[String] = js.native
+  var keyParams: js.UndefOr[String] = js.native
+  var keyType: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
 }
 
 object KeygenHTMLAttributes {
   @scala.inline
-  def apply[T](
-    HTMLAttributes: HTMLAttributes[T] = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    challenge: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    form: String = null,
-    keyParams: String = null,
-    keyType: String = null,
-    name: String = null
-  ): KeygenHTMLAttributes[T] = {
+  def apply[T](): KeygenHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (challenge != null) __obj.updateDynamic("challenge")(challenge.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (keyParams != null) __obj.updateDynamic("keyParams")(keyParams.asInstanceOf[js.Any])
-    if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeygenHTMLAttributes[T]]
   }
+  @scala.inline
+  implicit class KeygenHTMLAttributesOps[Self <: KeygenHTMLAttributes[_], T] (val x: Self with KeygenHTMLAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setChallenge(value: String): Self = this.set("challenge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChallenge: Self = this.set("challenge", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setForm(value: String): Self = this.set("form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForm: Self = this.set("form", js.undefined)
+    @scala.inline
+    def setKeyParams(value: String): Self = this.set("keyParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyParams: Self = this.set("keyParams", js.undefined)
+    @scala.inline
+    def setKeyType(value: String): Self = this.set("keyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyType: Self = this.set("keyType", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

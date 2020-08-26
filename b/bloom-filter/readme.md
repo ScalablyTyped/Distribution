@@ -12,7 +12,7 @@ A bloom filter suitable for use in Bitcoin Connection Bloom Filtering as part of
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 115 |
-| # downloads        | 64350 |
+| # downloads        | 65649 |
 | # stars            | 0 |
 
 ## Links

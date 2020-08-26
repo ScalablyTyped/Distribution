@@ -30,6 +30,7 @@ class ResourcePurchases protected () extends js.Object {
     */
   def cancel(): GaxiosPromise[Unit] = js.native
   def cancel(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def cancel(params: ParamsResourcePurchasesCancel): GaxiosPromise[Unit] = js.native
   def cancel(params: ParamsResourcePurchasesCancel, callback: BodyResponseCallback[Unit]): Unit = js.native
   def cancel(
@@ -60,6 +61,7 @@ class ResourcePurchases protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSubscriptionPurchase] = js.native
   def get(callback: BodyResponseCallback[SchemaSubscriptionPurchase]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubscriptionPurchase] = js.native
   def get(params: ParamsResourcePurchasesGet): GaxiosPromise[SchemaSubscriptionPurchase] = js.native
   def get(params: ParamsResourcePurchasesGet, callback: BodyResponseCallback[SchemaSubscriptionPurchase]): Unit = js.native
   def get(

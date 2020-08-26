@@ -30,13 +30,13 @@ class FileManager protected () extends InputWidget {
   @JSName("model")
   var model_FFileManager: IModel = js.native
   def allowedExtensions: String = js.native
-  def allowedExtensions(newValue: String): js.Any = js.native
+  def allowedExtensions_=(newValue: String): Unit = js.native
   def maxFileSize: Double = js.native
-  def maxFileSize(newValue: Double): js.Any = js.native
+  def maxFileSize_=(newValue: Double): Unit = js.native
   def showFileInBrowser: Boolean = js.native
-  def showFileInBrowser(newValue: Boolean): js.Any = js.native
+  def showFileInBrowser_=(newValue: Boolean): Unit = js.native
   def `type`: FileManagerType = js.native
-  def `type`(newValue: FileManagerType): js.Any = js.native
+  def type_=(newValue: FileManagerType): Unit = js.native
 }
 
 /* static members */

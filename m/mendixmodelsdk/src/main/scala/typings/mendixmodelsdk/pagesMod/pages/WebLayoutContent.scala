@@ -38,12 +38,10 @@ class WebLayoutContent protected () extends LayoutContent {
   var model_FWebLayoutContent: IModel = js.native
   @JSName("containerAsLayout")
   def containerAsLayout_MWebLayoutContent: Layout = js.native
-  def layoutCall(): js.Any = js.native
-  def layoutCall(newValue: LayoutCall): js.Any = js.native
-  @JSName("layoutCall")
-  def layoutCall_Union: LayoutCall | Null = js.native
+  def layoutCall: LayoutCall | Null = js.native
+  def layoutCall_=(newValue: LayoutCall | Null): Unit = js.native
   def layoutType: LayoutType = js.native
-  def layoutType(newValue: LayoutType): js.Any = js.native
+  def layoutType_=(newValue: LayoutType): Unit = js.native
   def widgets: IList[Widget] = js.native
 }
 

@@ -27,18 +27,38 @@ trait UserProfileState extends js.Object {
 
 object UserProfileState {
   @scala.inline
-  def apply(
-    allowSelfManagement: Input[Boolean] = null,
-    sshPublicKey: Input[String] = null,
-    sshUsername: Input[String] = null,
-    userArn: Input[String] = null
-  ): UserProfileState = {
+  def apply(): UserProfileState = {
     val __obj = js.Dynamic.literal()
-    if (allowSelfManagement != null) __obj.updateDynamic("allowSelfManagement")(allowSelfManagement.asInstanceOf[js.Any])
-    if (sshPublicKey != null) __obj.updateDynamic("sshPublicKey")(sshPublicKey.asInstanceOf[js.Any])
-    if (sshUsername != null) __obj.updateDynamic("sshUsername")(sshUsername.asInstanceOf[js.Any])
-    if (userArn != null) __obj.updateDynamic("userArn")(userArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserProfileState]
   }
+  @scala.inline
+  implicit class UserProfileStateOps[Self <: UserProfileState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowSelfManagement(value: Input[Boolean]): Self = this.set("allowSelfManagement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSelfManagement: Self = this.set("allowSelfManagement", js.undefined)
+    @scala.inline
+    def setSshPublicKey(value: Input[String]): Self = this.set("sshPublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshPublicKey: Self = this.set("sshPublicKey", js.undefined)
+    @scala.inline
+    def setSshUsername(value: Input[String]): Self = this.set("sshUsername", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshUsername: Self = this.set("sshUsername", js.undefined)
+    @scala.inline
+    def setUserArn(value: Input[String]): Self = this.set("userArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserArn: Self = this.set("userArn", js.undefined)
+  }
+  
 }
 

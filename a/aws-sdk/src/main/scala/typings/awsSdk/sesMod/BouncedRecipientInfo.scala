@@ -26,17 +26,36 @@ trait BouncedRecipientInfo extends js.Object {
 
 object BouncedRecipientInfo {
   @scala.inline
-  def apply(
-    Recipient: Address,
-    BounceType: BounceType = null,
-    RecipientArn: AmazonResourceName = null,
-    RecipientDsnFields: RecipientDsnFields = null
-  ): BouncedRecipientInfo = {
+  def apply(Recipient: Address): BouncedRecipientInfo = {
     val __obj = js.Dynamic.literal(Recipient = Recipient.asInstanceOf[js.Any])
-    if (BounceType != null) __obj.updateDynamic("BounceType")(BounceType.asInstanceOf[js.Any])
-    if (RecipientArn != null) __obj.updateDynamic("RecipientArn")(RecipientArn.asInstanceOf[js.Any])
-    if (RecipientDsnFields != null) __obj.updateDynamic("RecipientDsnFields")(RecipientDsnFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[BouncedRecipientInfo]
   }
+  @scala.inline
+  implicit class BouncedRecipientInfoOps[Self <: BouncedRecipientInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRecipient(value: Address): Self = this.set("Recipient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBounceType(value: BounceType): Self = this.set("BounceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounceType: Self = this.set("BounceType", js.undefined)
+    @scala.inline
+    def setRecipientArn(value: AmazonResourceName): Self = this.set("RecipientArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipientArn: Self = this.set("RecipientArn", js.undefined)
+    @scala.inline
+    def setRecipientDsnFields(value: RecipientDsnFields): Self = this.set("RecipientDsnFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipientDsnFields: Self = this.set("RecipientDsnFields", js.undefined)
+  }
+  
 }
 

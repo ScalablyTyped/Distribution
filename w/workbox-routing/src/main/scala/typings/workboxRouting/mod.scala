@@ -42,24 +42,24 @@ object mod extends js.Object {
   def registerNavigationRoute(cachedAssetUrl: String): typings.workboxRouting.navigationRouteMod.NavigationRoute = js.native
   def registerNavigationRoute(cachedAssetUrl: String, options: RegisterNavigationRouteOptions): typings.workboxRouting.navigationRouteMod.NavigationRoute = js.native
   def registerRoute(capture: String): typings.workboxRouting.routeMod.Route[Boolean] = js.native
+  def registerRoute(capture: String, handler: js.UndefOr[RouteHandler], method: HTTPMethod): typings.workboxRouting.routeMod.Route[Boolean] = js.native
   def registerRoute(capture: String, handler: RouteHandler): typings.workboxRouting.routeMod.Route[Boolean] = js.native
-  def registerRoute(capture: String, handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.routeMod.Route[Boolean] = js.native
   def registerRoute(capture: RegExp): typings.workboxRouting.regExpRouteMod.RegExpRoute = js.native
+  def registerRoute(capture: RegExp, handler: js.UndefOr[RouteHandler], method: HTTPMethod): typings.workboxRouting.regExpRouteMod.RegExpRoute = js.native
   def registerRoute(capture: RegExp, handler: RouteHandler): typings.workboxRouting.regExpRouteMod.RegExpRoute = js.native
-  def registerRoute(capture: RegExp, handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.regExpRouteMod.RegExpRoute = js.native
   def registerRoute(capture: RegisterRouteCapture): typings.workboxRouting.routeMod.Route[_] = js.native
+  def registerRoute(capture: RegisterRouteCapture, handler: js.UndefOr[RouteHandler], method: HTTPMethod): typings.workboxRouting.routeMod.Route[_] = js.native
   def registerRoute(capture: RegisterRouteCapture, handler: RouteHandler): typings.workboxRouting.routeMod.Route[_] = js.native
-  def registerRoute(capture: RegisterRouteCapture, handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.routeMod.Route[_] = js.native
   def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn]): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
+  def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: js.UndefOr[RouteHandler], method: HTTPMethod): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
   def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: RouteHandler): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
-  def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
   def registerRoute[MatchReturn](capture: typings.workboxRouting.routeMod.Route[MatchReturn]): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
-  def registerRoute[MatchReturn](capture: typings.workboxRouting.routeMod.Route[MatchReturn], handler: RouteHandler): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
   def registerRoute[MatchReturn](
     capture: typings.workboxRouting.routeMod.Route[MatchReturn],
-    handler: RouteHandler,
+    handler: js.UndefOr[RouteHandler],
     method: HTTPMethod
   ): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
+  def registerRoute[MatchReturn](capture: typings.workboxRouting.routeMod.Route[MatchReturn], handler: RouteHandler): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
   def setCatchHandler(handler: RouteHandler): Unit = js.native
   def setDefaultHandler(handler: RouteHandler): Unit = js.native
 }

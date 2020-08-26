@@ -12,7 +12,7 @@ A set of utilities to transform strings
 | Keywords           | ember-addon |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 7660 |
+| # downloads        | 10700 |
 | # stars            | 0 |
 
 ## Links

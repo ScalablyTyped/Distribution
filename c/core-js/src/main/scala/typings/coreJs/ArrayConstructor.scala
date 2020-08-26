@@ -56,6 +56,7 @@ trait ArrayConstructor extends js.Object {
     * length+end.
     */
   def fill[T](array: ArrayLike[T], value: T): Array[T] = js.native
+  def fill[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], end: Double): Array[T] = js.native
   def fill[T](array: ArrayLike[T], value: T, start: Double): Array[T] = js.native
   def fill[T](array: ArrayLike[T], value: T, start: Double, end: Double): Array[T] = js.native
   /**
@@ -272,6 +273,7 @@ trait ArrayConstructor extends js.Object {
     * @param end The end of the specified portion of the array.
     */
   def slice[T](array: ArrayLike[T]): Array[T] = js.native
+  def slice[T](array: ArrayLike[T], start: js.UndefOr[scala.Nothing], end: Double): Array[T] = js.native
   def slice[T](array: ArrayLike[T], start: Double): Array[T] = js.native
   def slice[T](array: ArrayLike[T], start: Double, end: Double): Array[T] = js.native
   /**
@@ -295,13 +297,13 @@ trait ArrayConstructor extends js.Object {
     */
   def sort[T](array: ArrayLike[T]): Array[T] = js.native
   def sort[T](array: ArrayLike[T], compareFn: js.Function2[/* a */ T, /* b */ T, Double]): Array[T] = js.native
+  def splice[T](array: ArrayLike[T], start: Double, deleteCount: js.UndefOr[scala.Nothing], items: T*): Array[T] = js.native
   /**
     * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
     * @param start The zero-based location in the array from which to start removing elements.
     * @param deleteCount The number of elements to remove.
     * @param items Elements to insert into the array in place of the deleted elements.
     */
-  def splice[T](array: ArrayLike[T], start: Double): Array[T] = js.native
   def splice[T](array: ArrayLike[T], start: Double, deleteCount: Double, items: T*): Array[T] = js.native
   def turn[T](
     array: ArrayLike[T],

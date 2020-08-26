@@ -11,8 +11,8 @@ Vue single-file component loader for Webpack
 | Full name          | vue-loader |
 | Keywords           | - |
 | # releases         | 66 |
-| # dependents       | 1366 |
-| # downloads        | 45870509 |
+| # dependents       | 1385 |
+| # downloads        | 46348189 |
 | # stars            | 26 |
 
 ## Links

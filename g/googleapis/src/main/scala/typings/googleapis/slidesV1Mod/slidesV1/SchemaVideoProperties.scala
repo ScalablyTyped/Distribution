@@ -42,20 +42,42 @@ trait SchemaVideoProperties extends js.Object {
 
 object SchemaVideoProperties {
   @scala.inline
-  def apply(
-    autoPlay: js.UndefOr[Boolean] = js.undefined,
-    end: js.UndefOr[Double] = js.undefined,
-    mute: js.UndefOr[Boolean] = js.undefined,
-    outline: SchemaOutline = null,
-    start: js.UndefOr[Double] = js.undefined
-  ): SchemaVideoProperties = {
+  def apply(): SchemaVideoProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute.get.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoProperties]
   }
+  @scala.inline
+  implicit class SchemaVideoPropertiesOps[Self <: SchemaVideoProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    @scala.inline
+    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setMute(value: Boolean): Self = this.set("mute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMute: Self = this.set("mute", js.undefined)
+    @scala.inline
+    def setOutline(value: SchemaOutline): Self = this.set("outline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutline: Self = this.set("outline", js.undefined)
+    @scala.inline
+    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

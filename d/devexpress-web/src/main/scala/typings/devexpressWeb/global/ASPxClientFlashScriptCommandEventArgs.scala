@@ -15,15 +15,5 @@ class ASPxClientFlashScriptCommandEventArgs protected ()
     * Initializes a new object of the ASPxClientFlashScriptCommandEventArgs type with the specified settings.
     */
   def this(command: String, args: String) = this()
-  /**
-    * Gets arguments passed via the FSCommand action of the flash object.
-    */
-  /* CompleteClass */
-  override var args: String = js.native
-  /**
-    * Gets a command passed via the FSCommand action of the flash object.
-    */
-  /* CompleteClass */
-  override var command: String = js.native
 }
 

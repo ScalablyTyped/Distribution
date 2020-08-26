@@ -16,9 +16,11 @@ trait TreeView extends Widget {
   var options_TreeView: TreeViewOptions = js.native
   var wrapper: JQuery = js.native
   def append(nodeData: js.Any): JQuery = js.native
+  def append(nodeData: js.Any, parentNode: js.UndefOr[scala.Nothing], success: js.Function): JQuery = js.native
   def append(nodeData: js.Any, parentNode: JQuery): JQuery = js.native
   def append(nodeData: js.Any, parentNode: JQuery, success: js.Function): JQuery = js.native
   def append(nodeData: JQuery): JQuery = js.native
+  def append(nodeData: JQuery, parentNode: js.UndefOr[scala.Nothing], success: js.Function): JQuery = js.native
   def append(nodeData: JQuery, parentNode: JQuery): JQuery = js.native
   def append(nodeData: JQuery, parentNode: JQuery, success: js.Function): JQuery = js.native
   def collapse(nodes: String): Unit = js.native

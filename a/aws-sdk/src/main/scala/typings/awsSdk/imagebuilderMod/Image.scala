@@ -74,42 +74,86 @@ trait Image extends js.Object {
 
 object Image {
   @scala.inline
-  def apply(
-    arn: ImageBuilderArn = null,
-    dateCreated: DateTime = null,
-    distributionConfiguration: DistributionConfiguration = null,
-    enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined,
-    imageRecipe: ImageRecipe = null,
-    imageTestsConfiguration: ImageTestsConfiguration = null,
-    infrastructureConfiguration: InfrastructureConfiguration = null,
-    name: ResourceName = null,
-    osVersion: OsVersion = null,
-    outputResources: OutputResources = null,
-    platform: Platform = null,
-    sourcePipelineArn: Arn = null,
-    sourcePipelineName: ResourceName = null,
-    state: ImageState = null,
-    tags: TagMap = null,
-    version: VersionNumber = null
-  ): Image = {
+  def apply(): Image = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (dateCreated != null) __obj.updateDynamic("dateCreated")(dateCreated.asInstanceOf[js.Any])
-    if (distributionConfiguration != null) __obj.updateDynamic("distributionConfiguration")(distributionConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhancedImageMetadataEnabled)) __obj.updateDynamic("enhancedImageMetadataEnabled")(enhancedImageMetadataEnabled.get.asInstanceOf[js.Any])
-    if (imageRecipe != null) __obj.updateDynamic("imageRecipe")(imageRecipe.asInstanceOf[js.Any])
-    if (imageTestsConfiguration != null) __obj.updateDynamic("imageTestsConfiguration")(imageTestsConfiguration.asInstanceOf[js.Any])
-    if (infrastructureConfiguration != null) __obj.updateDynamic("infrastructureConfiguration")(infrastructureConfiguration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (osVersion != null) __obj.updateDynamic("osVersion")(osVersion.asInstanceOf[js.Any])
-    if (outputResources != null) __obj.updateDynamic("outputResources")(outputResources.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (sourcePipelineArn != null) __obj.updateDynamic("sourcePipelineArn")(sourcePipelineArn.asInstanceOf[js.Any])
-    if (sourcePipelineName != null) __obj.updateDynamic("sourcePipelineName")(sourcePipelineName.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
+  @scala.inline
+  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: ImageBuilderArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDateCreated(value: DateTime): Self = this.set("dateCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateCreated: Self = this.set("dateCreated", js.undefined)
+    @scala.inline
+    def setDistributionConfiguration(value: DistributionConfiguration): Self = this.set("distributionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributionConfiguration: Self = this.set("distributionConfiguration", js.undefined)
+    @scala.inline
+    def setEnhancedImageMetadataEnabled(value: NullableBoolean): Self = this.set("enhancedImageMetadataEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedImageMetadataEnabled: Self = this.set("enhancedImageMetadataEnabled", js.undefined)
+    @scala.inline
+    def setImageRecipe(value: ImageRecipe): Self = this.set("imageRecipe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageRecipe: Self = this.set("imageRecipe", js.undefined)
+    @scala.inline
+    def setImageTestsConfiguration(value: ImageTestsConfiguration): Self = this.set("imageTestsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageTestsConfiguration: Self = this.set("imageTestsConfiguration", js.undefined)
+    @scala.inline
+    def setInfrastructureConfiguration(value: InfrastructureConfiguration): Self = this.set("infrastructureConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfrastructureConfiguration: Self = this.set("infrastructureConfiguration", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOsVersion(value: OsVersion): Self = this.set("osVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOsVersion: Self = this.set("osVersion", js.undefined)
+    @scala.inline
+    def setOutputResources(value: OutputResources): Self = this.set("outputResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputResources: Self = this.set("outputResources", js.undefined)
+    @scala.inline
+    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setSourcePipelineArn(value: Arn): Self = this.set("sourcePipelineArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcePipelineArn: Self = this.set("sourcePipelineArn", js.undefined)
+    @scala.inline
+    def setSourcePipelineName(value: ResourceName): Self = this.set("sourcePipelineName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcePipelineName: Self = this.set("sourcePipelineName", js.undefined)
+    @scala.inline
+    def setState(value: ImageState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersion(value: VersionNumber): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

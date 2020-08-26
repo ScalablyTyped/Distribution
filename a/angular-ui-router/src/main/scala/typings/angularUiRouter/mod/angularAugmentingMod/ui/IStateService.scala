@@ -37,18 +37,23 @@ trait IStateService extends js.Object {
     * @param options Options object.
     */
   def go(to: String): IPromise[_] = js.native
+  def go(to: String, params: js.UndefOr[scala.Nothing], options: IStateOptions): IPromise[_] = js.native
   def go(to: String, params: js.Object): IPromise[_] = js.native
   def go(to: String, params: js.Object, options: IStateOptions): IPromise[_] = js.native
   def go(to: IState): IPromise[_] = js.native
+  def go(to: IState, params: js.UndefOr[scala.Nothing], options: IStateOptions): IPromise[_] = js.native
   def go(to: IState, params: js.Object): IPromise[_] = js.native
   def go(to: IState, params: js.Object, options: IStateOptions): IPromise[_] = js.native
   def href(state: String): String = js.native
+  def href(state: String, params: js.UndefOr[scala.Nothing], options: IHrefOptions): String = js.native
   def href(state: String, params: js.Object): String = js.native
   def href(state: String, params: js.Object, options: IHrefOptions): String = js.native
   def href(state: IState): String = js.native
+  def href(state: IState, params: js.UndefOr[scala.Nothing], options: IHrefOptions): String = js.native
   def href(state: IState, params: js.Object): String = js.native
   def href(state: IState, params: js.Object, options: IHrefOptions): String = js.native
   def includes(state: String): Boolean = js.native
+  def includes(state: String, params: js.UndefOr[scala.Nothing], options: js.Any): Boolean = js.native
   def includes(state: String, params: js.Object): Boolean = js.native
   def includes(state: String, params: js.Object, options: js.Any): Boolean = js.native
   def is(state: String): Boolean = js.native
@@ -59,10 +64,14 @@ trait IStateService extends js.Object {
   def reload(reloadState: String): IPromise[_] = js.native
   def reload(reloadState: IState): IPromise[_] = js.native
   def transitionTo(state: String): IPromise[_] = js.native
+  def transitionTo(state: String, params: js.UndefOr[scala.Nothing], options: IStateOptions): IPromise[_] = js.native
+  def transitionTo(state: String, params: js.UndefOr[scala.Nothing], updateLocation: Boolean): IPromise[_] = js.native
   def transitionTo(state: String, params: js.Object): IPromise[_] = js.native
   def transitionTo(state: String, params: js.Object, options: IStateOptions): IPromise[_] = js.native
   def transitionTo(state: String, params: js.Object, updateLocation: Boolean): IPromise[_] = js.native
   def transitionTo(state: IState): IPromise[_] = js.native
+  def transitionTo(state: IState, params: js.UndefOr[scala.Nothing], options: IStateOptions): IPromise[_] = js.native
+  def transitionTo(state: IState, params: js.UndefOr[scala.Nothing], updateLocation: Boolean): IPromise[_] = js.native
   def transitionTo(state: IState, params: js.Object): IPromise[_] = js.native
   def transitionTo(state: IState, params: js.Object, options: IStateOptions): IPromise[_] = js.native
   def transitionTo(state: IState, params: js.Object, updateLocation: Boolean): IPromise[_] = js.native

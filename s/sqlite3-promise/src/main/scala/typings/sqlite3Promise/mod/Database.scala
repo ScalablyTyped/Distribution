@@ -12,6 +12,11 @@ class Database protected ()
   def this(filename: String) = this()
   def this(filename: String, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
   def this(filename: String, mode: Double) = this()
+  def this(
+    filename: String,
+    mode: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ) = this()
   def this(filename: String, mode: Double, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
 }
 

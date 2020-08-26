@@ -29,6 +29,7 @@ class ResourceVideoabusereportreasons protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaVideoAbuseReportReasonListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaVideoAbuseReportReasonListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVideoAbuseReportReasonListResponse] = js.native
   def list(params: ParamsResourceVideoabusereportreasonsList): GaxiosPromise[SchemaVideoAbuseReportReasonListResponse] = js.native
   def list(
     params: ParamsResourceVideoabusereportreasonsList,

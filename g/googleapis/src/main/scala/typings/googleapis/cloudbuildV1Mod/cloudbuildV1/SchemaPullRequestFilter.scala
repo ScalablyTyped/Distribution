@@ -25,11 +25,30 @@ trait SchemaPullRequestFilter extends js.Object {
 
 object SchemaPullRequestFilter {
   @scala.inline
-  def apply(branch: String = null, commentControl: String = null): SchemaPullRequestFilter = {
+  def apply(): SchemaPullRequestFilter = {
     val __obj = js.Dynamic.literal()
-    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
-    if (commentControl != null) __obj.updateDynamic("commentControl")(commentControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPullRequestFilter]
   }
+  @scala.inline
+  implicit class SchemaPullRequestFilterOps[Self <: SchemaPullRequestFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBranch: Self = this.set("branch", js.undefined)
+    @scala.inline
+    def setCommentControl(value: String): Self = this.set("commentControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommentControl: Self = this.set("commentControl", js.undefined)
+  }
+  
 }
 

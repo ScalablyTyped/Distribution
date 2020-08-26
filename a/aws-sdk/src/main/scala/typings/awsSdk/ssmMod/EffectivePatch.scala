@@ -18,11 +18,30 @@ trait EffectivePatch extends js.Object {
 
 object EffectivePatch {
   @scala.inline
-  def apply(Patch: Patch = null, PatchStatus: PatchStatus = null): EffectivePatch = {
+  def apply(): EffectivePatch = {
     val __obj = js.Dynamic.literal()
-    if (Patch != null) __obj.updateDynamic("Patch")(Patch.asInstanceOf[js.Any])
-    if (PatchStatus != null) __obj.updateDynamic("PatchStatus")(PatchStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectivePatch]
   }
+  @scala.inline
+  implicit class EffectivePatchOps[Self <: EffectivePatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPatch(value: Patch): Self = this.set("Patch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatch: Self = this.set("Patch", js.undefined)
+    @scala.inline
+    def setPatchStatus(value: PatchStatus): Self = this.set("PatchStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatchStatus: Self = this.set("PatchStatus", js.undefined)
+  }
+  
 }
 

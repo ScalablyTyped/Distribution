@@ -33,7 +33,7 @@ object schemaVisitorMod extends js.Object {
     def visitInputFieldDefinition(_field: GraphQLInputField, _details: ObjectTypeGraphQLInputObjectType): GraphQLInputField | Unit | Null = js.native
     def visitInputObject(_object: GraphQLInputObjectType): GraphQLInputObjectType | Unit | Null = js.native
     def visitInterface(_iface: GraphQLInterfaceType): GraphQLInterfaceType | Unit | Null = js.native
-    def visitObject(_object: GraphQLObjectType[_, _, StringDictionary[_]]): (GraphQLObjectType[_, _, StringDictionary[_]]) | Unit | Null = js.native
+    def visitObject(_object: GraphQLObjectType[_, _]): (GraphQLObjectType[_, _]) | Unit | Null = js.native
     def visitScalar(_scalar: GraphQLScalarType): GraphQLScalarType | Unit | Null = js.native
     def visitSchema(_schema: GraphQLSchema): Unit = js.native
     def visitUnion(_union: GraphQLUnionType): GraphQLUnionType | Unit | Null = js.native

@@ -35,6 +35,7 @@ trait Storage extends DbOperator {
     mode: TransactionMode
   ): Request = js.native
   def search(catalog_name: String, query: String): Request = js.native
+  def search(catalog_name: String, query: String, limit: js.UndefOr[scala.Nothing], threshold: Double): Request = js.native
   def search(catalog_name: String, query: String, limit: Double): Request = js.native
   def search(catalog_name: String, query: String, limit: Double, threshold: Double): Request = js.native
   def setName(name: String): js.Any = js.native

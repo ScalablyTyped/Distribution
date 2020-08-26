@@ -5,46 +5,79 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnparseConfig extends js.Object {
    // default: false
-  var columns: js.UndefOr[js.Array[String]] = js.undefined
+  var columns: js.UndefOr[js.Array[String]] = js.native
    // default: '"'
-  var delimiter: js.UndefOr[String] = js.undefined
+  var delimiter: js.UndefOr[String] = js.native
    // default: '"'
-  var escapeChar: js.UndefOr[String] = js.undefined
+  var escapeChar: js.UndefOr[String] = js.native
    // default: ","
-  var header: js.UndefOr[Boolean] = js.undefined
+  var header: js.UndefOr[Boolean] = js.native
    // default: true
-  var newline: js.UndefOr[String] = js.undefined
+  var newline: js.UndefOr[String] = js.native
    // default: false
-  var quoteChar: js.UndefOr[String] = js.undefined
-  var quotes: js.UndefOr[Boolean | js.Array[Boolean]] = js.undefined
+  var quoteChar: js.UndefOr[String] = js.native
+  var quotes: js.UndefOr[Boolean | js.Array[Boolean]] = js.native
    // default: "\r\n"
-  var skipEmptyLines: js.UndefOr[Boolean | greedy] = js.undefined
+  var skipEmptyLines: js.UndefOr[Boolean | greedy] = js.native
 }
 
 object UnparseConfig {
   @scala.inline
-  def apply(
-    columns: js.Array[String] = null,
-    delimiter: String = null,
-    escapeChar: String = null,
-    header: js.UndefOr[Boolean] = js.undefined,
-    newline: String = null,
-    quoteChar: String = null,
-    quotes: Boolean | js.Array[Boolean] = null,
-    skipEmptyLines: Boolean | greedy = null
-  ): UnparseConfig = {
+  def apply(): UnparseConfig = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.get.asInstanceOf[js.Any])
-    if (newline != null) __obj.updateDynamic("newline")(newline.asInstanceOf[js.Any])
-    if (quoteChar != null) __obj.updateDynamic("quoteChar")(quoteChar.asInstanceOf[js.Any])
-    if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
-    if (skipEmptyLines != null) __obj.updateDynamic("skipEmptyLines")(skipEmptyLines.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnparseConfig]
   }
+  @scala.inline
+  implicit class UnparseConfigOps[Self <: UnparseConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnsVarargs(value: String*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[String]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    @scala.inline
+    def setEscapeChar(value: String): Self = this.set("escapeChar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEscapeChar: Self = this.set("escapeChar", js.undefined)
+    @scala.inline
+    def setHeader(value: Boolean): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setNewline(value: String): Self = this.set("newline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewline: Self = this.set("newline", js.undefined)
+    @scala.inline
+    def setQuoteChar(value: String): Self = this.set("quoteChar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuoteChar: Self = this.set("quoteChar", js.undefined)
+    @scala.inline
+    def setQuotesVarargs(value: Boolean*): Self = this.set("quotes", js.Array(value :_*))
+    @scala.inline
+    def setQuotes(value: Boolean | js.Array[Boolean]): Self = this.set("quotes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotes: Self = this.set("quotes", js.undefined)
+    @scala.inline
+    def setSkipEmptyLines(value: Boolean | greedy): Self = this.set("skipEmptyLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipEmptyLines: Self = this.set("skipEmptyLines", js.undefined)
+  }
+  
 }
 

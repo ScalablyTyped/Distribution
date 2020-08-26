@@ -96,6 +96,13 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
     */
   def open(method: java.lang.String, url: java.lang.String): Unit = js.native
   def open(method: java.lang.String, url: java.lang.String, async: scala.Boolean): Unit = js.native
+  def open(
+    method: java.lang.String,
+    url: java.lang.String,
+    async: scala.Boolean,
+    username: js.UndefOr[scala.Nothing],
+    password: java.lang.String
+  ): Unit = js.native
   def open(method: java.lang.String, url: java.lang.String, async: scala.Boolean, username: java.lang.String): Unit = js.native
   def open(
     method: java.lang.String,

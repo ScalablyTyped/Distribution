@@ -63,24 +63,61 @@ object RecommenderConfigurationResponse {
     Id: string,
     LastModifiedDate: string,
     RecommendationProviderRoleArn: string,
-    RecommendationProviderUri: string,
-    Attributes: MapOfString = null,
-    Description: string = null,
-    Name: string = null,
-    RecommendationProviderIdType: string = null,
-    RecommendationTransformerUri: string = null,
-    RecommendationsDisplayName: string = null,
-    RecommendationsPerMessage: js.UndefOr[integer] = js.undefined
+    RecommendationProviderUri: string
   ): RecommenderConfigurationResponse = {
     val __obj = js.Dynamic.literal(CreationDate = CreationDate.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LastModifiedDate = LastModifiedDate.asInstanceOf[js.Any], RecommendationProviderRoleArn = RecommendationProviderRoleArn.asInstanceOf[js.Any], RecommendationProviderUri = RecommendationProviderUri.asInstanceOf[js.Any])
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RecommendationProviderIdType != null) __obj.updateDynamic("RecommendationProviderIdType")(RecommendationProviderIdType.asInstanceOf[js.Any])
-    if (RecommendationTransformerUri != null) __obj.updateDynamic("RecommendationTransformerUri")(RecommendationTransformerUri.asInstanceOf[js.Any])
-    if (RecommendationsDisplayName != null) __obj.updateDynamic("RecommendationsDisplayName")(RecommendationsDisplayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(RecommendationsPerMessage)) __obj.updateDynamic("RecommendationsPerMessage")(RecommendationsPerMessage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommenderConfigurationResponse]
   }
+  @scala.inline
+  implicit class RecommenderConfigurationResponseOps[Self <: RecommenderConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: string): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastModifiedDate(value: string): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecommendationProviderRoleArn(value: string): Self = this.set("RecommendationProviderRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecommendationProviderUri(value: string): Self = this.set("RecommendationProviderUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributes(value: MapOfString): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRecommendationProviderIdType(value: string): Self = this.set("RecommendationProviderIdType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationProviderIdType: Self = this.set("RecommendationProviderIdType", js.undefined)
+    @scala.inline
+    def setRecommendationTransformerUri(value: string): Self = this.set("RecommendationTransformerUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationTransformerUri: Self = this.set("RecommendationTransformerUri", js.undefined)
+    @scala.inline
+    def setRecommendationsDisplayName(value: string): Self = this.set("RecommendationsDisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationsDisplayName: Self = this.set("RecommendationsDisplayName", js.undefined)
+    @scala.inline
+    def setRecommendationsPerMessage(value: integer): Self = this.set("RecommendationsPerMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationsPerMessage: Self = this.set("RecommendationsPerMessage", js.undefined)
+  }
+  
 }
 

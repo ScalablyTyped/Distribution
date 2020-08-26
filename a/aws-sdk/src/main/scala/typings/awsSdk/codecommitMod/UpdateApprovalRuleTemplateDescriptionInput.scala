@@ -25,5 +25,22 @@ object UpdateApprovalRuleTemplateDescriptionInput {
     val __obj = js.Dynamic.literal(approvalRuleTemplateDescription = approvalRuleTemplateDescription.asInstanceOf[js.Any], approvalRuleTemplateName = approvalRuleTemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApprovalRuleTemplateDescriptionInput]
   }
+  @scala.inline
+  implicit class UpdateApprovalRuleTemplateDescriptionInputOps[Self <: UpdateApprovalRuleTemplateDescriptionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApprovalRuleTemplateDescription(value: ApprovalRuleTemplateDescription): Self = this.set("approvalRuleTemplateDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = this.set("approvalRuleTemplateName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

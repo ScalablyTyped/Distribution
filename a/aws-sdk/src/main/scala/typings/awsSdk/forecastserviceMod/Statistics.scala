@@ -42,26 +42,54 @@ trait Statistics extends js.Object {
 
 object Statistics {
   @scala.inline
-  def apply(
-    Avg: js.UndefOr[Double] = js.undefined,
-    Count: js.UndefOr[Integer] = js.undefined,
-    CountDistinct: js.UndefOr[Integer] = js.undefined,
-    CountNan: js.UndefOr[Integer] = js.undefined,
-    CountNull: js.UndefOr[Integer] = js.undefined,
-    Max: String = null,
-    Min: String = null,
-    Stddev: js.UndefOr[Double] = js.undefined
-  ): Statistics = {
+  def apply(): Statistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Avg)) __obj.updateDynamic("Avg")(Avg.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CountDistinct)) __obj.updateDynamic("CountDistinct")(CountDistinct.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CountNan)) __obj.updateDynamic("CountNan")(CountNan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CountNull)) __obj.updateDynamic("CountNull")(CountNull.get.asInstanceOf[js.Any])
-    if (Max != null) __obj.updateDynamic("Max")(Max.asInstanceOf[js.Any])
-    if (Min != null) __obj.updateDynamic("Min")(Min.asInstanceOf[js.Any])
-    if (!js.isUndefined(Stddev)) __obj.updateDynamic("Stddev")(Stddev.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statistics]
   }
+  @scala.inline
+  implicit class StatisticsOps[Self <: Statistics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvg(value: Double): Self = this.set("Avg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvg: Self = this.set("Avg", js.undefined)
+    @scala.inline
+    def setCount(value: Integer): Self = this.set("Count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("Count", js.undefined)
+    @scala.inline
+    def setCountDistinct(value: Integer): Self = this.set("CountDistinct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountDistinct: Self = this.set("CountDistinct", js.undefined)
+    @scala.inline
+    def setCountNan(value: Integer): Self = this.set("CountNan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountNan: Self = this.set("CountNan", js.undefined)
+    @scala.inline
+    def setCountNull(value: Integer): Self = this.set("CountNull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountNull: Self = this.set("CountNull", js.undefined)
+    @scala.inline
+    def setMax(value: String): Self = this.set("Max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("Max", js.undefined)
+    @scala.inline
+    def setMin(value: String): Self = this.set("Min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("Min", js.undefined)
+    @scala.inline
+    def setStddev(value: Double): Self = this.set("Stddev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStddev: Self = this.set("Stddev", js.undefined)
+  }
+  
 }
 

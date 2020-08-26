@@ -7,17 +7,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides access to a collection of cell annotations. */
+@js.native
 trait XSheetAnnotationsSupplier extends XInterface {
   /**
     * returns the collection of cell annotations.
     * @see com.sun.star.sheet.CellAnnotations
     */
-  val Annotations: XSheetAnnotations
+  val Annotations: XSheetAnnotations = js.native
   /**
     * returns the collection of cell annotations.
     * @see com.sun.star.sheet.CellAnnotations
     */
-  def getAnnotations(): XSheetAnnotations
+  def getAnnotations(): XSheetAnnotations = js.native
 }
 
 object XSheetAnnotationsSupplier {
@@ -32,5 +33,22 @@ object XSheetAnnotationsSupplier {
     val __obj = js.Dynamic.literal(Annotations = Annotations.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getAnnotations = js.Any.fromFunction0(getAnnotations), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XSheetAnnotationsSupplier]
   }
+  @scala.inline
+  implicit class XSheetAnnotationsSupplierOps[Self <: XSheetAnnotationsSupplier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotations(value: XSheetAnnotations): Self = this.set("Annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetAnnotations(value: () => XSheetAnnotations): Self = this.set("getAnnotations", js.Any.fromFunction0(value))
+  }
+  
 }
 

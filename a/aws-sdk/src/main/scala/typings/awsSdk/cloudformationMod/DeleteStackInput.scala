@@ -26,17 +26,38 @@ trait DeleteStackInput extends js.Object {
 
 object DeleteStackInput {
   @scala.inline
-  def apply(
-    StackName: StackName,
-    ClientRequestToken: ClientRequestToken = null,
-    RetainResources: RetainResources = null,
-    RoleARN: RoleARN_ = null
-  ): DeleteStackInput = {
+  def apply(StackName: StackName): DeleteStackInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (RetainResources != null) __obj.updateDynamic("RetainResources")(RetainResources.asInstanceOf[js.Any])
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteStackInput]
   }
+  @scala.inline
+  implicit class DeleteStackInputOps[Self <: DeleteStackInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setRetainResourcesVarargs(value: LogicalResourceId*): Self = this.set("RetainResources", js.Array(value :_*))
+    @scala.inline
+    def setRetainResources(value: RetainResources): Self = this.set("RetainResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetainResources: Self = this.set("RetainResources", js.undefined)
+    @scala.inline
+    def setRoleARN(value: RoleARN_): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+  }
+  
 }
 

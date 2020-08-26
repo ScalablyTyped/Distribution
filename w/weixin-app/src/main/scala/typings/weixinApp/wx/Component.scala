@@ -83,6 +83,7 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
     * 触发事件，参见 [组件事件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/custom-component/events.html)
     */
   def triggerEvent(name: String): Unit = js.native
+  def triggerEvent(name: String, details: js.UndefOr[scala.Nothing], options: Partialbubblesbooleancomp): Unit = js.native
   def triggerEvent(name: String, details: js.Any): Unit = js.native
   def triggerEvent(name: String, details: js.Any, options: Partialbubblesbooleancomp): Unit = js.native
 }

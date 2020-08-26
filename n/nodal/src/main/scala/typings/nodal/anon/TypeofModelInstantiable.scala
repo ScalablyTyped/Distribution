@@ -20,7 +20,12 @@ import scala.scalajs.js.annotation._
 trait TypeofModelInstantiable
   extends Instantiable1[/* modelData */ js.Object, Model]
      with Instantiable2[/* modelData */ js.Object, /* fromStorage */ Boolean, Model]
-     with Instantiable3[/* modelData */ js.Object, /* fromStorage */ Boolean, /* fromSeed */ Boolean, Model] {
+     with Instantiable3[
+      /* modelData */ js.Object, 
+      js.UndefOr[/* fromStorage */ Boolean], 
+      /* fromSeed */ Boolean, 
+      Model
+    ] {
   var _relationshipCache: js.Any = js.native
   /**
     * Create a calculated field (in JavaScript). Must be synchronous.

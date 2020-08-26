@@ -44,11 +44,34 @@ trait SchemaQuota extends js.Object {
 
 object SchemaQuota {
   @scala.inline
-  def apply(limits: js.Array[SchemaQuotaLimit] = null, metricRules: js.Array[SchemaMetricRule] = null): SchemaQuota = {
+  def apply(): SchemaQuota = {
     val __obj = js.Dynamic.literal()
-    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
-    if (metricRules != null) __obj.updateDynamic("metricRules")(metricRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuota]
   }
+  @scala.inline
+  implicit class SchemaQuotaOps[Self <: SchemaQuota] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimitsVarargs(value: SchemaQuotaLimit*): Self = this.set("limits", js.Array(value :_*))
+    @scala.inline
+    def setLimits(value: js.Array[SchemaQuotaLimit]): Self = this.set("limits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimits: Self = this.set("limits", js.undefined)
+    @scala.inline
+    def setMetricRulesVarargs(value: SchemaMetricRule*): Self = this.set("metricRules", js.Array(value :_*))
+    @scala.inline
+    def setMetricRules(value: js.Array[SchemaMetricRule]): Self = this.set("metricRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricRules: Self = this.set("metricRules", js.undefined)
+  }
+  
 }
 

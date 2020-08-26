@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.grpcGrpcJs.serverCallMod.ServerReadableStream because var conflicts: destroyed, readable. Inlined cancelled, getPeer, sendMetadata */ @JSImport("@grpc/grpc-js/build/src/server-call", "ServerReadableStreamImpl")
+- typings.grpcGrpcJs.serverCallMod.ServerReadableStream because var conflicts: destroyed, readable. Inlined cancelled, metadata, getPeer, sendMetadata */ @JSImport("@grpc/grpc-js/build/src/server-call", "ServerReadableStreamImpl")
 @js.native
 class ServerReadableStreamImpl[RequestType, ResponseType] protected () extends Readable {
   def this(

@@ -4,57 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Dragging extends js.Object {
-  var dragging: js.UndefOr[Boolean] = js.undefined
-  var drillThroughMaxRows: js.UndefOr[Double] = js.undefined
-  var grandTotalsPosition: js.UndefOr[String] = js.undefined
-  var showAutoCalculationBar: js.UndefOr[Boolean] = js.undefined
-  var showEmptyValues: js.UndefOr[Boolean] = js.undefined
-  var showFilter: js.UndefOr[Boolean] = js.undefined
-  var showGrandTotals: js.UndefOr[String] = js.undefined
-  var showHeaders: js.UndefOr[Boolean] = js.undefined
-  var showHierarchies: js.UndefOr[Boolean] = js.undefined
-  var showHierarchyCaptions: js.UndefOr[Boolean] = js.undefined
-  var showReportFiltersArea: js.UndefOr[Boolean] = js.undefined
-  var showTotals: js.UndefOr[Boolean] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var dragging: js.UndefOr[Boolean] = js.native
+  var drillThroughMaxRows: js.UndefOr[Double] = js.native
+  var grandTotalsPosition: js.UndefOr[String] = js.native
+  var showAutoCalculationBar: js.UndefOr[Boolean] = js.native
+  var showEmptyValues: js.UndefOr[Boolean] = js.native
+  var showFilter: js.UndefOr[Boolean] = js.native
+  var showGrandTotals: js.UndefOr[String] = js.native
+  var showHeaders: js.UndefOr[Boolean] = js.native
+  var showHierarchies: js.UndefOr[Boolean] = js.native
+  var showHierarchyCaptions: js.UndefOr[Boolean] = js.native
+  var showReportFiltersArea: js.UndefOr[Boolean] = js.native
+  var showTotals: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object Dragging {
   @scala.inline
-  def apply(
-    dragging: js.UndefOr[Boolean] = js.undefined,
-    drillThroughMaxRows: js.UndefOr[Double] = js.undefined,
-    grandTotalsPosition: String = null,
-    showAutoCalculationBar: js.UndefOr[Boolean] = js.undefined,
-    showEmptyValues: js.UndefOr[Boolean] = js.undefined,
-    showFilter: js.UndefOr[Boolean] = js.undefined,
-    showGrandTotals: String = null,
-    showHeaders: js.UndefOr[Boolean] = js.undefined,
-    showHierarchies: js.UndefOr[Boolean] = js.undefined,
-    showHierarchyCaptions: js.UndefOr[Boolean] = js.undefined,
-    showReportFiltersArea: js.UndefOr[Boolean] = js.undefined,
-    showTotals: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    `type`: String = null
-  ): Dragging = {
+  def apply(): Dragging = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drillThroughMaxRows)) __obj.updateDynamic("drillThroughMaxRows")(drillThroughMaxRows.get.asInstanceOf[js.Any])
-    if (grandTotalsPosition != null) __obj.updateDynamic("grandTotalsPosition")(grandTotalsPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAutoCalculationBar)) __obj.updateDynamic("showAutoCalculationBar")(showAutoCalculationBar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showEmptyValues)) __obj.updateDynamic("showEmptyValues")(showEmptyValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter.get.asInstanceOf[js.Any])
-    if (showGrandTotals != null) __obj.updateDynamic("showGrandTotals")(showGrandTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHierarchies)) __obj.updateDynamic("showHierarchies")(showHierarchies.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHierarchyCaptions)) __obj.updateDynamic("showHierarchyCaptions")(showHierarchyCaptions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showReportFiltersArea)) __obj.updateDynamic("showReportFiltersArea")(showReportFiltersArea.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dragging]
   }
+  @scala.inline
+  implicit class DraggingOps[Self <: Dragging] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDragging(value: Boolean): Self = this.set("dragging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragging: Self = this.set("dragging", js.undefined)
+    @scala.inline
+    def setDrillThroughMaxRows(value: Double): Self = this.set("drillThroughMaxRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrillThroughMaxRows: Self = this.set("drillThroughMaxRows", js.undefined)
+    @scala.inline
+    def setGrandTotalsPosition(value: String): Self = this.set("grandTotalsPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrandTotalsPosition: Self = this.set("grandTotalsPosition", js.undefined)
+    @scala.inline
+    def setShowAutoCalculationBar(value: Boolean): Self = this.set("showAutoCalculationBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAutoCalculationBar: Self = this.set("showAutoCalculationBar", js.undefined)
+    @scala.inline
+    def setShowEmptyValues(value: Boolean): Self = this.set("showEmptyValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowEmptyValues: Self = this.set("showEmptyValues", js.undefined)
+    @scala.inline
+    def setShowFilter(value: Boolean): Self = this.set("showFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFilter: Self = this.set("showFilter", js.undefined)
+    @scala.inline
+    def setShowGrandTotals(value: String): Self = this.set("showGrandTotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowGrandTotals: Self = this.set("showGrandTotals", js.undefined)
+    @scala.inline
+    def setShowHeaders(value: Boolean): Self = this.set("showHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowHeaders: Self = this.set("showHeaders", js.undefined)
+    @scala.inline
+    def setShowHierarchies(value: Boolean): Self = this.set("showHierarchies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowHierarchies: Self = this.set("showHierarchies", js.undefined)
+    @scala.inline
+    def setShowHierarchyCaptions(value: Boolean): Self = this.set("showHierarchyCaptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowHierarchyCaptions: Self = this.set("showHierarchyCaptions", js.undefined)
+    @scala.inline
+    def setShowReportFiltersArea(value: Boolean): Self = this.set("showReportFiltersArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowReportFiltersArea: Self = this.set("showReportFiltersArea", js.undefined)
+    @scala.inline
+    def setShowTotals(value: Boolean): Self = this.set("showTotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTotals: Self = this.set("showTotals", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

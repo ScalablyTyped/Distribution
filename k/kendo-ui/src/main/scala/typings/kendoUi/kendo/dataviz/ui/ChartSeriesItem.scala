@@ -4,255 +4,428 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartSeriesItem extends js.Object {
-  var aggregate: js.UndefOr[String | js.Function] = js.undefined
-  var axis: js.UndefOr[String] = js.undefined
-  var border: js.UndefOr[ChartSeriesItemBorder] = js.undefined
-  var categoryAxis: js.UndefOr[String] = js.undefined
-  var categoryField: js.UndefOr[String] = js.undefined
-  var closeField: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[String | js.Function] = js.undefined
-  var colorField: js.UndefOr[String] = js.undefined
-  var connectors: js.UndefOr[ChartSeriesItemConnectors] = js.undefined
-  var currentField: js.UndefOr[String] = js.undefined
-  var dashType: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var downColor: js.UndefOr[String | js.Function] = js.undefined
-  var downColorField: js.UndefOr[String] = js.undefined
-  var dynamicHeight: js.UndefOr[Boolean] = js.undefined
-  var dynamicSlope: js.UndefOr[Boolean] = js.undefined
-  var errorBars: js.UndefOr[ChartSeriesItemErrorBars] = js.undefined
-  var errorHighField: js.UndefOr[String] = js.undefined
-  var errorLowField: js.UndefOr[String] = js.undefined
-  var explodeField: js.UndefOr[String] = js.undefined
-  var extremes: js.UndefOr[ChartSeriesItemExtremes] = js.undefined
-  var field: js.UndefOr[String] = js.undefined
-  var fromField: js.UndefOr[String] = js.undefined
-  var gap: js.UndefOr[Double] = js.undefined
-  var highField: js.UndefOr[String] = js.undefined
-  var highlight: js.UndefOr[ChartSeriesItemHighlight] = js.undefined
-  var holeSize: js.UndefOr[Double] = js.undefined
-  var labels: js.UndefOr[ChartSeriesItemLabels] = js.undefined
-  var line: js.UndefOr[String | ChartSeriesItemLine] = js.undefined
-  var lowField: js.UndefOr[String] = js.undefined
-  var lowerField: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[Double | ChartSeriesItemMargin] = js.undefined
-  var markers: js.UndefOr[ChartSeriesItemMarkers] = js.undefined
-  var maxSize: js.UndefOr[Double] = js.undefined
-  var meanField: js.UndefOr[String] = js.undefined
-  var medianField: js.UndefOr[String] = js.undefined
-  var minSize: js.UndefOr[Double] = js.undefined
-  var missingValues: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var neckRatio: js.UndefOr[Double] = js.undefined
-  var negativeColor: js.UndefOr[String] = js.undefined
-  var negativeValues: js.UndefOr[ChartSeriesItemNegativeValues] = js.undefined
-  var noteTextField: js.UndefOr[String] = js.undefined
-  var notes: js.UndefOr[ChartSeriesItemNotes] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var openField: js.UndefOr[String] = js.undefined
-  var outliers: js.UndefOr[ChartSeriesItemOutliers] = js.undefined
-  var outliersField: js.UndefOr[String] = js.undefined
-  var overlay: js.UndefOr[ChartSeriesItemOverlay] = js.undefined
-  var padding: js.UndefOr[Double] = js.undefined
-  var q1Field: js.UndefOr[String] = js.undefined
-  var q3Field: js.UndefOr[String] = js.undefined
-  var segmentSpacing: js.UndefOr[Double] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
-  var sizeField: js.UndefOr[String] = js.undefined
-  var spacing: js.UndefOr[Double] = js.undefined
-  var stack: js.UndefOr[Boolean | String | ChartSeriesItemStack] = js.undefined
-  var startAngle: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[String] = js.undefined
-  var summaryField: js.UndefOr[String] = js.undefined
-  var target: js.UndefOr[ChartSeriesItemTarget] = js.undefined
-  var targetField: js.UndefOr[String] = js.undefined
-  var toField: js.UndefOr[String] = js.undefined
-  var tooltip: js.UndefOr[ChartSeriesItemTooltip] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var upperField: js.UndefOr[String] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var visibleInLegend: js.UndefOr[Boolean] = js.undefined
-  var visibleInLegendField: js.UndefOr[String] = js.undefined
-  var visual: js.UndefOr[js.Function] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var xAxis: js.UndefOr[String] = js.undefined
-  var xErrorHighField: js.UndefOr[String] = js.undefined
-  var xErrorLowField: js.UndefOr[String] = js.undefined
-  var xField: js.UndefOr[String] = js.undefined
-  var yAxis: js.UndefOr[String] = js.undefined
-  var yErrorHighField: js.UndefOr[String] = js.undefined
-  var yErrorLowField: js.UndefOr[String] = js.undefined
-  var yField: js.UndefOr[String] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var aggregate: js.UndefOr[String | js.Function] = js.native
+  var axis: js.UndefOr[String] = js.native
+  var border: js.UndefOr[ChartSeriesItemBorder] = js.native
+  var categoryAxis: js.UndefOr[String] = js.native
+  var categoryField: js.UndefOr[String] = js.native
+  var closeField: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String | js.Function] = js.native
+  var colorField: js.UndefOr[String] = js.native
+  var connectors: js.UndefOr[ChartSeriesItemConnectors] = js.native
+  var currentField: js.UndefOr[String] = js.native
+  var dashType: js.UndefOr[String] = js.native
+  var data: js.UndefOr[js.Any] = js.native
+  var downColor: js.UndefOr[String | js.Function] = js.native
+  var downColorField: js.UndefOr[String] = js.native
+  var dynamicHeight: js.UndefOr[Boolean] = js.native
+  var dynamicSlope: js.UndefOr[Boolean] = js.native
+  var errorBars: js.UndefOr[ChartSeriesItemErrorBars] = js.native
+  var errorHighField: js.UndefOr[String] = js.native
+  var errorLowField: js.UndefOr[String] = js.native
+  var explodeField: js.UndefOr[String] = js.native
+  var extremes: js.UndefOr[ChartSeriesItemExtremes] = js.native
+  var field: js.UndefOr[String] = js.native
+  var fromField: js.UndefOr[String] = js.native
+  var gap: js.UndefOr[Double] = js.native
+  var highField: js.UndefOr[String] = js.native
+  var highlight: js.UndefOr[ChartSeriesItemHighlight] = js.native
+  var holeSize: js.UndefOr[Double] = js.native
+  var labels: js.UndefOr[ChartSeriesItemLabels] = js.native
+  var line: js.UndefOr[String | ChartSeriesItemLine] = js.native
+  var lowField: js.UndefOr[String] = js.native
+  var lowerField: js.UndefOr[String] = js.native
+  var margin: js.UndefOr[Double | ChartSeriesItemMargin] = js.native
+  var markers: js.UndefOr[ChartSeriesItemMarkers] = js.native
+  var maxSize: js.UndefOr[Double] = js.native
+  var meanField: js.UndefOr[String] = js.native
+  var medianField: js.UndefOr[String] = js.native
+  var minSize: js.UndefOr[Double] = js.native
+  var missingValues: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var neckRatio: js.UndefOr[Double] = js.native
+  var negativeColor: js.UndefOr[String] = js.native
+  var negativeValues: js.UndefOr[ChartSeriesItemNegativeValues] = js.native
+  var noteTextField: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[ChartSeriesItemNotes] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var openField: js.UndefOr[String] = js.native
+  var outliers: js.UndefOr[ChartSeriesItemOutliers] = js.native
+  var outliersField: js.UndefOr[String] = js.native
+  var overlay: js.UndefOr[ChartSeriesItemOverlay] = js.native
+  var padding: js.UndefOr[Double] = js.native
+  var q1Field: js.UndefOr[String] = js.native
+  var q3Field: js.UndefOr[String] = js.native
+  var segmentSpacing: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.native
+  var sizeField: js.UndefOr[String] = js.native
+  var spacing: js.UndefOr[Double] = js.native
+  var stack: js.UndefOr[Boolean | String | ChartSeriesItemStack] = js.native
+  var startAngle: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[String] = js.native
+  var summaryField: js.UndefOr[String] = js.native
+  var target: js.UndefOr[ChartSeriesItemTarget] = js.native
+  var targetField: js.UndefOr[String] = js.native
+  var toField: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[ChartSeriesItemTooltip] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var upperField: js.UndefOr[String] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var visibleInLegend: js.UndefOr[Boolean] = js.native
+  var visibleInLegendField: js.UndefOr[String] = js.native
+  var visual: js.UndefOr[js.Function] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var xAxis: js.UndefOr[String] = js.native
+  var xErrorHighField: js.UndefOr[String] = js.native
+  var xErrorLowField: js.UndefOr[String] = js.native
+  var xField: js.UndefOr[String] = js.native
+  var yAxis: js.UndefOr[String] = js.native
+  var yErrorHighField: js.UndefOr[String] = js.native
+  var yErrorLowField: js.UndefOr[String] = js.native
+  var yField: js.UndefOr[String] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object ChartSeriesItem {
   @scala.inline
-  def apply(
-    aggregate: String | js.Function = null,
-    axis: String = null,
-    border: ChartSeriesItemBorder = null,
-    categoryAxis: String = null,
-    categoryField: String = null,
-    closeField: String = null,
-    color: String | js.Function = null,
-    colorField: String = null,
-    connectors: ChartSeriesItemConnectors = null,
-    currentField: String = null,
-    dashType: String = null,
-    data: js.Any = null,
-    downColor: String | js.Function = null,
-    downColorField: String = null,
-    dynamicHeight: js.UndefOr[Boolean] = js.undefined,
-    dynamicSlope: js.UndefOr[Boolean] = js.undefined,
-    errorBars: ChartSeriesItemErrorBars = null,
-    errorHighField: String = null,
-    errorLowField: String = null,
-    explodeField: String = null,
-    extremes: ChartSeriesItemExtremes = null,
-    field: String = null,
-    fromField: String = null,
-    gap: js.UndefOr[Double] = js.undefined,
-    highField: String = null,
-    highlight: ChartSeriesItemHighlight = null,
-    holeSize: js.UndefOr[Double] = js.undefined,
-    labels: ChartSeriesItemLabels = null,
-    line: String | ChartSeriesItemLine = null,
-    lowField: String = null,
-    lowerField: String = null,
-    margin: Double | ChartSeriesItemMargin = null,
-    markers: ChartSeriesItemMarkers = null,
-    maxSize: js.UndefOr[Double] = js.undefined,
-    meanField: String = null,
-    medianField: String = null,
-    minSize: js.UndefOr[Double] = js.undefined,
-    missingValues: String = null,
-    name: String = null,
-    neckRatio: js.UndefOr[Double] = js.undefined,
-    negativeColor: String = null,
-    negativeValues: ChartSeriesItemNegativeValues = null,
-    noteTextField: String = null,
-    notes: ChartSeriesItemNotes = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    openField: String = null,
-    outliers: ChartSeriesItemOutliers = null,
-    outliersField: String = null,
-    overlay: ChartSeriesItemOverlay = null,
-    padding: js.UndefOr[Double] = js.undefined,
-    q1Field: String = null,
-    q3Field: String = null,
-    segmentSpacing: js.UndefOr[Double] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined,
-    sizeField: String = null,
-    spacing: js.UndefOr[Double] = js.undefined,
-    stack: Boolean | String | ChartSeriesItemStack = null,
-    startAngle: js.UndefOr[Double] = js.undefined,
-    style: String = null,
-    summaryField: String = null,
-    target: ChartSeriesItemTarget = null,
-    targetField: String = null,
-    toField: String = null,
-    tooltip: ChartSeriesItemTooltip = null,
-    `type`: String = null,
-    upperField: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    visibleInLegend: js.UndefOr[Boolean] = js.undefined,
-    visibleInLegendField: String = null,
-    visual: js.Function = null,
-    width: js.UndefOr[Double] = js.undefined,
-    xAxis: String = null,
-    xErrorHighField: String = null,
-    xErrorLowField: String = null,
-    xField: String = null,
-    yAxis: String = null,
-    yErrorHighField: String = null,
-    yErrorLowField: String = null,
-    yField: String = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): ChartSeriesItem = {
+  def apply(): ChartSeriesItem = {
     val __obj = js.Dynamic.literal()
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (categoryAxis != null) __obj.updateDynamic("categoryAxis")(categoryAxis.asInstanceOf[js.Any])
-    if (categoryField != null) __obj.updateDynamic("categoryField")(categoryField.asInstanceOf[js.Any])
-    if (closeField != null) __obj.updateDynamic("closeField")(closeField.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorField != null) __obj.updateDynamic("colorField")(colorField.asInstanceOf[js.Any])
-    if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
-    if (currentField != null) __obj.updateDynamic("currentField")(currentField.asInstanceOf[js.Any])
-    if (dashType != null) __obj.updateDynamic("dashType")(dashType.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (downColor != null) __obj.updateDynamic("downColor")(downColor.asInstanceOf[js.Any])
-    if (downColorField != null) __obj.updateDynamic("downColorField")(downColorField.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicHeight)) __obj.updateDynamic("dynamicHeight")(dynamicHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicSlope)) __obj.updateDynamic("dynamicSlope")(dynamicSlope.get.asInstanceOf[js.Any])
-    if (errorBars != null) __obj.updateDynamic("errorBars")(errorBars.asInstanceOf[js.Any])
-    if (errorHighField != null) __obj.updateDynamic("errorHighField")(errorHighField.asInstanceOf[js.Any])
-    if (errorLowField != null) __obj.updateDynamic("errorLowField")(errorLowField.asInstanceOf[js.Any])
-    if (explodeField != null) __obj.updateDynamic("explodeField")(explodeField.asInstanceOf[js.Any])
-    if (extremes != null) __obj.updateDynamic("extremes")(extremes.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (fromField != null) __obj.updateDynamic("fromField")(fromField.asInstanceOf[js.Any])
-    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
-    if (highField != null) __obj.updateDynamic("highField")(highField.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(holeSize)) __obj.updateDynamic("holeSize")(holeSize.get.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (lowField != null) __obj.updateDynamic("lowField")(lowField.asInstanceOf[js.Any])
-    if (lowerField != null) __obj.updateDynamic("lowerField")(lowerField.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
-    if (meanField != null) __obj.updateDynamic("meanField")(meanField.asInstanceOf[js.Any])
-    if (medianField != null) __obj.updateDynamic("medianField")(medianField.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
-    if (missingValues != null) __obj.updateDynamic("missingValues")(missingValues.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(neckRatio)) __obj.updateDynamic("neckRatio")(neckRatio.get.asInstanceOf[js.Any])
-    if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor.asInstanceOf[js.Any])
-    if (negativeValues != null) __obj.updateDynamic("negativeValues")(negativeValues.asInstanceOf[js.Any])
-    if (noteTextField != null) __obj.updateDynamic("noteTextField")(noteTextField.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (openField != null) __obj.updateDynamic("openField")(openField.asInstanceOf[js.Any])
-    if (outliers != null) __obj.updateDynamic("outliers")(outliers.asInstanceOf[js.Any])
-    if (outliersField != null) __obj.updateDynamic("outliersField")(outliersField.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (q1Field != null) __obj.updateDynamic("q1Field")(q1Field.asInstanceOf[js.Any])
-    if (q3Field != null) __obj.updateDynamic("q3Field")(q3Field.asInstanceOf[js.Any])
-    if (!js.isUndefined(segmentSpacing)) __obj.updateDynamic("segmentSpacing")(segmentSpacing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (sizeField != null) __obj.updateDynamic("sizeField")(sizeField.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (!js.isUndefined(startAngle)) __obj.updateDynamic("startAngle")(startAngle.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (summaryField != null) __obj.updateDynamic("summaryField")(summaryField.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (targetField != null) __obj.updateDynamic("targetField")(targetField.asInstanceOf[js.Any])
-    if (toField != null) __obj.updateDynamic("toField")(toField.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (upperField != null) __obj.updateDynamic("upperField")(upperField.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleInLegend)) __obj.updateDynamic("visibleInLegend")(visibleInLegend.get.asInstanceOf[js.Any])
-    if (visibleInLegendField != null) __obj.updateDynamic("visibleInLegendField")(visibleInLegendField.asInstanceOf[js.Any])
-    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
-    if (xErrorHighField != null) __obj.updateDynamic("xErrorHighField")(xErrorHighField.asInstanceOf[js.Any])
-    if (xErrorLowField != null) __obj.updateDynamic("xErrorLowField")(xErrorLowField.asInstanceOf[js.Any])
-    if (xField != null) __obj.updateDynamic("xField")(xField.asInstanceOf[js.Any])
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
-    if (yErrorHighField != null) __obj.updateDynamic("yErrorHighField")(yErrorHighField.asInstanceOf[js.Any])
-    if (yErrorLowField != null) __obj.updateDynamic("yErrorLowField")(yErrorLowField.asInstanceOf[js.Any])
-    if (yField != null) __obj.updateDynamic("yField")(yField.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesItem]
   }
+  @scala.inline
+  implicit class ChartSeriesItemOps[Self <: ChartSeriesItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregate(value: String | js.Function): Self = this.set("aggregate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregate: Self = this.set("aggregate", js.undefined)
+    @scala.inline
+    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setBorder(value: ChartSeriesItemBorder): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setCategoryAxis(value: String): Self = this.set("categoryAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryAxis: Self = this.set("categoryAxis", js.undefined)
+    @scala.inline
+    def setCategoryField(value: String): Self = this.set("categoryField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryField: Self = this.set("categoryField", js.undefined)
+    @scala.inline
+    def setCloseField(value: String): Self = this.set("closeField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseField: Self = this.set("closeField", js.undefined)
+    @scala.inline
+    def setColor(value: String | js.Function): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColorField(value: String): Self = this.set("colorField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorField: Self = this.set("colorField", js.undefined)
+    @scala.inline
+    def setConnectors(value: ChartSeriesItemConnectors): Self = this.set("connectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectors: Self = this.set("connectors", js.undefined)
+    @scala.inline
+    def setCurrentField(value: String): Self = this.set("currentField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentField: Self = this.set("currentField", js.undefined)
+    @scala.inline
+    def setDashType(value: String): Self = this.set("dashType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashType: Self = this.set("dashType", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDownColor(value: String | js.Function): Self = this.set("downColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownColor: Self = this.set("downColor", js.undefined)
+    @scala.inline
+    def setDownColorField(value: String): Self = this.set("downColorField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownColorField: Self = this.set("downColorField", js.undefined)
+    @scala.inline
+    def setDynamicHeight(value: Boolean): Self = this.set("dynamicHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamicHeight: Self = this.set("dynamicHeight", js.undefined)
+    @scala.inline
+    def setDynamicSlope(value: Boolean): Self = this.set("dynamicSlope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamicSlope: Self = this.set("dynamicSlope", js.undefined)
+    @scala.inline
+    def setErrorBars(value: ChartSeriesItemErrorBars): Self = this.set("errorBars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorBars: Self = this.set("errorBars", js.undefined)
+    @scala.inline
+    def setErrorHighField(value: String): Self = this.set("errorHighField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorHighField: Self = this.set("errorHighField", js.undefined)
+    @scala.inline
+    def setErrorLowField(value: String): Self = this.set("errorLowField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorLowField: Self = this.set("errorLowField", js.undefined)
+    @scala.inline
+    def setExplodeField(value: String): Self = this.set("explodeField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplodeField: Self = this.set("explodeField", js.undefined)
+    @scala.inline
+    def setExtremes(value: ChartSeriesItemExtremes): Self = this.set("extremes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtremes: Self = this.set("extremes", js.undefined)
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setFromField(value: String): Self = this.set("fromField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromField: Self = this.set("fromField", js.undefined)
+    @scala.inline
+    def setGap(value: Double): Self = this.set("gap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGap: Self = this.set("gap", js.undefined)
+    @scala.inline
+    def setHighField(value: String): Self = this.set("highField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighField: Self = this.set("highField", js.undefined)
+    @scala.inline
+    def setHighlight(value: ChartSeriesItemHighlight): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    @scala.inline
+    def setHoleSize(value: Double): Self = this.set("holeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoleSize: Self = this.set("holeSize", js.undefined)
+    @scala.inline
+    def setLabels(value: ChartSeriesItemLabels): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLine(value: String | ChartSeriesItemLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setLowField(value: String): Self = this.set("lowField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowField: Self = this.set("lowField", js.undefined)
+    @scala.inline
+    def setLowerField(value: String): Self = this.set("lowerField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerField: Self = this.set("lowerField", js.undefined)
+    @scala.inline
+    def setMargin(value: Double | ChartSeriesItemMargin): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMarkers(value: ChartSeriesItemMarkers): Self = this.set("markers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkers: Self = this.set("markers", js.undefined)
+    @scala.inline
+    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    @scala.inline
+    def setMeanField(value: String): Self = this.set("meanField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeanField: Self = this.set("meanField", js.undefined)
+    @scala.inline
+    def setMedianField(value: String): Self = this.set("medianField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedianField: Self = this.set("medianField", js.undefined)
+    @scala.inline
+    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    @scala.inline
+    def setMissingValues(value: String): Self = this.set("missingValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissingValues: Self = this.set("missingValues", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNeckRatio(value: Double): Self = this.set("neckRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeckRatio: Self = this.set("neckRatio", js.undefined)
+    @scala.inline
+    def setNegativeColor(value: String): Self = this.set("negativeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegativeColor: Self = this.set("negativeColor", js.undefined)
+    @scala.inline
+    def setNegativeValues(value: ChartSeriesItemNegativeValues): Self = this.set("negativeValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegativeValues: Self = this.set("negativeValues", js.undefined)
+    @scala.inline
+    def setNoteTextField(value: String): Self = this.set("noteTextField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoteTextField: Self = this.set("noteTextField", js.undefined)
+    @scala.inline
+    def setNotes(value: ChartSeriesItemNotes): Self = this.set("notes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotes: Self = this.set("notes", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setOpenField(value: String): Self = this.set("openField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenField: Self = this.set("openField", js.undefined)
+    @scala.inline
+    def setOutliers(value: ChartSeriesItemOutliers): Self = this.set("outliers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutliers: Self = this.set("outliers", js.undefined)
+    @scala.inline
+    def setOutliersField(value: String): Self = this.set("outliersField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutliersField: Self = this.set("outliersField", js.undefined)
+    @scala.inline
+    def setOverlay(value: ChartSeriesItemOverlay): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    @scala.inline
+    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setQ1Field(value: String): Self = this.set("q1Field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ1Field: Self = this.set("q1Field", js.undefined)
+    @scala.inline
+    def setQ3Field(value: String): Self = this.set("q3Field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ3Field: Self = this.set("q3Field", js.undefined)
+    @scala.inline
+    def setSegmentSpacing(value: Double): Self = this.set("segmentSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentSpacing: Self = this.set("segmentSpacing", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSizeField(value: String): Self = this.set("sizeField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeField: Self = this.set("sizeField", js.undefined)
+    @scala.inline
+    def setSpacing(value: Double): Self = this.set("spacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacing: Self = this.set("spacing", js.undefined)
+    @scala.inline
+    def setStack(value: Boolean | String | ChartSeriesItemStack): Self = this.set("stack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStack: Self = this.set("stack", js.undefined)
+    @scala.inline
+    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSummaryField(value: String): Self = this.set("summaryField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaryField: Self = this.set("summaryField", js.undefined)
+    @scala.inline
+    def setTarget(value: ChartSeriesItemTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTargetField(value: String): Self = this.set("targetField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetField: Self = this.set("targetField", js.undefined)
+    @scala.inline
+    def setToField(value: String): Self = this.set("toField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToField: Self = this.set("toField", js.undefined)
+    @scala.inline
+    def setTooltip(value: ChartSeriesItemTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUpperField(value: String): Self = this.set("upperField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpperField: Self = this.set("upperField", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setVisibleInLegend(value: Boolean): Self = this.set("visibleInLegend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleInLegend: Self = this.set("visibleInLegend", js.undefined)
+    @scala.inline
+    def setVisibleInLegendField(value: String): Self = this.set("visibleInLegendField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleInLegendField: Self = this.set("visibleInLegendField", js.undefined)
+    @scala.inline
+    def setVisual(value: js.Function): Self = this.set("visual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisual: Self = this.set("visual", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setXAxis(value: String): Self = this.set("xAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxis: Self = this.set("xAxis", js.undefined)
+    @scala.inline
+    def setXErrorHighField(value: String): Self = this.set("xErrorHighField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXErrorHighField: Self = this.set("xErrorHighField", js.undefined)
+    @scala.inline
+    def setXErrorLowField(value: String): Self = this.set("xErrorLowField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXErrorLowField: Self = this.set("xErrorLowField", js.undefined)
+    @scala.inline
+    def setXField(value: String): Self = this.set("xField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXField: Self = this.set("xField", js.undefined)
+    @scala.inline
+    def setYAxis(value: String): Self = this.set("yAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxis: Self = this.set("yAxis", js.undefined)
+    @scala.inline
+    def setYErrorHighField(value: String): Self = this.set("yErrorHighField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYErrorHighField: Self = this.set("yErrorHighField", js.undefined)
+    @scala.inline
+    def setYErrorLowField(value: String): Self = this.set("yErrorLowField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYErrorLowField: Self = this.set("yErrorLowField", js.undefined)
+    @scala.inline
+    def setYField(value: String): Self = this.set("yField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYField: Self = this.set("yField", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

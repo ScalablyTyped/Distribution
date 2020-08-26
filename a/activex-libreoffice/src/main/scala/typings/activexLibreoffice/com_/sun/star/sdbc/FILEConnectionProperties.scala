@@ -14,13 +14,14 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sdbc.XDriverManager
   * @see com.sun.star.sdbc.ConnectionProperties
   */
+@js.native
 trait FILEConnectionProperties extends ConnectionProperties {
   /**
     * specifies the encoding to use to translate the backend data
     *
     * See the [IANA character set list]{@link url="http://www.iana.org/assignments/character-sets"} for a list of valid values.
     */
-  var CharSet: String
+  var CharSet: String = js.native
 }
 
 object FILEConnectionProperties {
@@ -29,5 +30,20 @@ object FILEConnectionProperties {
     val __obj = js.Dynamic.literal(CharSet = CharSet.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[FILEConnectionProperties]
   }
+  @scala.inline
+  implicit class FILEConnectionPropertiesOps[Self <: FILEConnectionProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCharSet(value: String): Self = this.set("CharSet", value.asInstanceOf[js.Any])
+  }
+  
 }
 

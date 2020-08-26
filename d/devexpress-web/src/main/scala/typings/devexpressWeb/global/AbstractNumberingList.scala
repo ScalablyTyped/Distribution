@@ -10,11 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AbstractNumberingList")
 @js.native
 class AbstractNumberingList ()
-  extends typings.devexpressWeb.AbstractNumberingList {
-  /**
-    * Gets or sets a value indicating whether an abstract numbering list is deleted.
-    */
-  /* CompleteClass */
-  override var deleted: Boolean = js.native
-}
+  extends typings.devexpressWeb.AbstractNumberingList
 

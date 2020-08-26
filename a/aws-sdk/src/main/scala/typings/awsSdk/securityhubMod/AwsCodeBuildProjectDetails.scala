@@ -34,22 +34,46 @@ trait AwsCodeBuildProjectDetails extends js.Object {
 
 object AwsCodeBuildProjectDetails {
   @scala.inline
-  def apply(
-    EncryptionKey: NonEmptyString = null,
-    Environment: AwsCodeBuildProjectEnvironment = null,
-    Name: NonEmptyString = null,
-    ServiceRole: NonEmptyString = null,
-    Source: AwsCodeBuildProjectSource = null,
-    VpcConfig: AwsCodeBuildProjectVpcConfig = null
-  ): AwsCodeBuildProjectDetails = {
+  def apply(): AwsCodeBuildProjectDetails = {
     val __obj = js.Dynamic.literal()
-    if (EncryptionKey != null) __obj.updateDynamic("EncryptionKey")(EncryptionKey.asInstanceOf[js.Any])
-    if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
-    if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsCodeBuildProjectDetails]
   }
+  @scala.inline
+  implicit class AwsCodeBuildProjectDetailsOps[Self <: AwsCodeBuildProjectDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptionKey(value: NonEmptyString): Self = this.set("EncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKey: Self = this.set("EncryptionKey", js.undefined)
+    @scala.inline
+    def setEnvironment(value: AwsCodeBuildProjectEnvironment): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    @scala.inline
+    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setServiceRole(value: NonEmptyString): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("ServiceRole", js.undefined)
+    @scala.inline
+    def setSource(value: AwsCodeBuildProjectSource): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("Source", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: AwsCodeBuildProjectVpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

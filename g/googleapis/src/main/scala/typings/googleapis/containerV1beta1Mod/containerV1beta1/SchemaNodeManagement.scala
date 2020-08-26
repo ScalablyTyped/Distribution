@@ -26,16 +26,34 @@ trait SchemaNodeManagement extends js.Object {
 
 object SchemaNodeManagement {
   @scala.inline
-  def apply(
-    autoRepair: js.UndefOr[Boolean] = js.undefined,
-    autoUpgrade: js.UndefOr[Boolean] = js.undefined,
-    upgradeOptions: SchemaAutoUpgradeOptions = null
-  ): SchemaNodeManagement = {
+  def apply(): SchemaNodeManagement = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRepair)) __obj.updateDynamic("autoRepair")(autoRepair.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUpgrade)) __obj.updateDynamic("autoUpgrade")(autoUpgrade.get.asInstanceOf[js.Any])
-    if (upgradeOptions != null) __obj.updateDynamic("upgradeOptions")(upgradeOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNodeManagement]
   }
+  @scala.inline
+  implicit class SchemaNodeManagementOps[Self <: SchemaNodeManagement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoRepair(value: Boolean): Self = this.set("autoRepair", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRepair: Self = this.set("autoRepair", js.undefined)
+    @scala.inline
+    def setAutoUpgrade(value: Boolean): Self = this.set("autoUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoUpgrade: Self = this.set("autoUpgrade", js.undefined)
+    @scala.inline
+    def setUpgradeOptions(value: SchemaAutoUpgradeOptions): Self = this.set("upgradeOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpgradeOptions: Self = this.set("upgradeOptions", js.undefined)
+  }
+  
 }
 

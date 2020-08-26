@@ -11,8 +11,8 @@ Non-blocking stdout stream
 | Full name          | stdout-stream |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 60 |
-| # downloads        | 161872339 |
+| # dependents       | 62 |
+| # downloads        | 164602260 |
 | # stars            | 2 |
 
 ## Links

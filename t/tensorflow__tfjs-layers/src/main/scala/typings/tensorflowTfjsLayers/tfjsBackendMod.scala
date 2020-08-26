@@ -28,9 +28,11 @@ object tfjsBackendMod extends js.Object {
   def concatenate(tensors: js.Array[Tensor[Rank]], axis: Double): Tensor[Rank] = js.native
   def countParams(x: HasShape): Double = js.native
   def dot(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
+  def dot(a: Tensor[Rank], b: Tensor[Rank], activation: js.UndefOr[scala.Nothing], bias: Tensor[Rank]): Tensor[Rank] = js.native
   def dot(a: Tensor[Rank], b: Tensor[Rank], activation: Activation): Tensor[Rank] = js.native
   def dot(a: Tensor[Rank], b: Tensor[Rank], activation: Activation, bias: Tensor[Rank]): Tensor[Rank] = js.native
   def dropout(x: Tensor[Rank], level: Double): Tensor[Rank] = js.native
+  def dropout(x: Tensor[Rank], level: Double, noiseShape: js.UndefOr[scala.Nothing], seed: Double): Tensor[Rank] = js.native
   def dropout(x: Tensor[Rank], level: Double, noiseShape: js.Array[Double]): Tensor[Rank] = js.native
   def dropout(x: Tensor[Rank], level: Double, noiseShape: js.Array[Double], seed: Double): Tensor[Rank] = js.native
   def elu(x: Tensor[Rank]): Tensor[Rank] = js.native
@@ -51,12 +53,71 @@ object tfjsBackendMod extends js.Object {
   def pow(x: Tensor[Rank], a: Double): Tensor[Rank] = js.native
   def pow(x: Tensor[Rank], a: Tensor[Rank]): Tensor[Rank] = js.native
   def randomNormal(shape: Shape): Tensor[Rank] = js.native
+  def randomNormal(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double
+  ): Tensor[Rank] = js.native
+  def randomNormal(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: Double): Tensor[Rank] = js.native
+  def randomNormal(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double
+  ): Tensor[Rank] = js.native
   def randomNormal(shape: Shape, mean: Double): Tensor[Rank] = js.native
+  def randomNormal(
+    shape: Shape,
+    mean: Double,
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double
+  ): Tensor[Rank] = js.native
   def randomNormal(shape: Shape, mean: Double, stddev: Double): Tensor[Rank] = js.native
+  def randomNormal(shape: Shape, mean: Double, stddev: Double, dtype: js.UndefOr[scala.Nothing], seed: Double): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_float32(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: js.UndefOr[scala.Nothing], dtype: float32): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_float32(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: float32,
+    seed: Double
+  ): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_float32(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: Double, dtype: float32): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_float32(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: Double, dtype: float32, seed: Double): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_float32(shape: Shape, mean: Double, stddev: js.UndefOr[scala.Nothing], dtype: float32): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_float32(shape: Shape, mean: Double, stddev: js.UndefOr[scala.Nothing], dtype: float32, seed: Double): Tensor[Rank] = js.native
   @JSName("randomNormal")
   def randomNormal_float32(shape: Shape, mean: Double, stddev: Double, dtype: float32): Tensor[Rank] = js.native
   @JSName("randomNormal")
   def randomNormal_float32(shape: Shape, mean: Double, stddev: Double, dtype: float32, seed: Double): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_int32(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: js.UndefOr[scala.Nothing], dtype: int32): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_int32(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: int32,
+    seed: Double
+  ): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_int32(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: Double, dtype: int32): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_int32(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: Double, dtype: int32, seed: Double): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_int32(shape: Shape, mean: Double, stddev: js.UndefOr[scala.Nothing], dtype: int32): Tensor[Rank] = js.native
+  @JSName("randomNormal")
+  def randomNormal_int32(shape: Shape, mean: Double, stddev: js.UndefOr[scala.Nothing], dtype: int32, seed: Double): Tensor[Rank] = js.native
   @JSName("randomNormal")
   def randomNormal_int32(shape: Shape, mean: Double, stddev: Double, dtype: int32): Tensor[Rank] = js.native
   @JSName("randomNormal")

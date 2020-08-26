@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
 class DatePicker ()
   extends typings.winjs.WinJS.UI.DatePicker {
   def this(element: HTMLElement) = this()
+  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
 
@@ -35,6 +36,7 @@ object DatePicker extends js.Object {
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
     **/
   def getInformation(startDate: js.Any, endDate: js.Any): js.Any = js.native
+  def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.UndefOr[scala.Nothing], datePatterns: js.Any): js.Any = js.native
   def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any): js.Any = js.native
   def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any, datePatterns: js.Any): js.Any = js.native
 }

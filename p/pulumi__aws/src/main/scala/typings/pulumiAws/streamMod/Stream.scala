@@ -52,17 +52,17 @@ class Stream protected () extends CustomResource {
   val retentionPeriod: Output_[js.UndefOr[Double]] = js.native
   /**
     * The number of shards that the stream will use.
-    * Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See [Amazon Kinesis Streams][2] for more.
+    * Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See [Amazon Kinesis Streams](https://docs.aws.amazon.com/kinesis/latest/dev/amazon-kinesis-streams.html) for more.
     */
   val shardCount: Output_[Double] = js.native
   /**
-    * A list of shard-level CloudWatch metrics which can be enabled for the stream. See [Monitoring with CloudWatch][3] for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.
+    * A list of shard-level CloudWatch metrics which can be enabled for the stream. See [Monitoring with CloudWatch](https://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html) for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.
     */
   val shardLevelMetrics: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Creates a new subscription to events fired from this Stream to the handler provided, along
     * with options to control the behavior of the subscription.
@@ -87,8 +87,10 @@ object Stream extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Stream = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Stream = js.native
   def get(name: String, id: Input[ID], state: StreamState): Stream = js.native
   def get(name: String, id: Input[ID], state: StreamState, opts: CustomResourceOptions): Stream = js.native
   /**

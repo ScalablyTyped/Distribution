@@ -1,0 +1,25 @@
+package typings.microsoftGraph.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.microsoftGraph.microsoftGraphStrings.pending
+  - typings.microsoftGraph.microsoftGraphStrings.approved
+  - typings.microsoftGraph.microsoftGraphStrings.declined
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+*/
+trait ScheduleChangeState extends js.Object
+
+object ScheduleChangeState {
+  @scala.inline
+  def approved: typings.microsoftGraph.microsoftGraphStrings.approved = "approved".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.approved]
+  @scala.inline
+  def declined: typings.microsoftGraph.microsoftGraphStrings.declined = "declined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.declined]
+  @scala.inline
+  def pending: typings.microsoftGraph.microsoftGraphStrings.pending = "pending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pending]
+  @scala.inline
+  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+}
+

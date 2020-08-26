@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgTileManagerSplitterOptions
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,40 +15,58 @@ trait IgTileManagerSplitterOptions
     * Gets whether the splitter should be initially collapsed.
     *
     */
-  var collapsed: js.UndefOr[Boolean] = js.undefined
+  var collapsed: js.UndefOr[Boolean] = js.native
   /**
     * Gets whether the splitter can be collapsible.
     *
     */
-  var collapsible: js.UndefOr[Boolean] = js.undefined
+  var collapsible: js.UndefOr[Boolean] = js.native
   /**
     * Gets/Sets whether the splitter should be enabled.
     *
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /**
     * Gets/Sets splitter events.
     *
     */
-  var events: js.UndefOr[IgTileManagerSplitterOptionsEvents] = js.undefined
+  var events: js.UndefOr[IgTileManagerSplitterOptionsEvents] = js.native
 }
 
 object IgTileManagerSplitterOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    collapsible: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    events: IgTileManagerSplitterOptionsEvents = null
-  ): IgTileManagerSplitterOptions = {
+  def apply(): IgTileManagerSplitterOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTileManagerSplitterOptions]
   }
+  @scala.inline
+  implicit class IgTileManagerSplitterOptionsOps[Self <: IgTileManagerSplitterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    @scala.inline
+    def setCollapsible(value: Boolean): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setEvents(value: IgTileManagerSplitterOptionsEvents): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+  }
+  
 }
 

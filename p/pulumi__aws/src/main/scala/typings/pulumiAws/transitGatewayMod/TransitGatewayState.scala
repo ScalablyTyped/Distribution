@@ -52,7 +52,7 @@ trait TransitGatewayState extends js.Object {
   /**
     * Key-value tags for the EC2 Transit Gateway.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Whether VPN Equal Cost Multipath Protocol support is enabled. Valid values: `disable`, `enable`. Default value: `enable`.
     */
@@ -61,34 +61,70 @@ trait TransitGatewayState extends js.Object {
 
 object TransitGatewayState {
   @scala.inline
-  def apply(
-    amazonSideAsn: Input[Double] = null,
-    arn: Input[ARN] = null,
-    associationDefaultRouteTableId: Input[String] = null,
-    autoAcceptSharedAttachments: Input[String] = null,
-    defaultRouteTableAssociation: Input[String] = null,
-    defaultRouteTablePropagation: Input[String] = null,
-    description: Input[String] = null,
-    dnsSupport: Input[String] = null,
-    ownerId: Input[String] = null,
-    propagationDefaultRouteTableId: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpnEcmpSupport: Input[String] = null
-  ): TransitGatewayState = {
+  def apply(): TransitGatewayState = {
     val __obj = js.Dynamic.literal()
-    if (amazonSideAsn != null) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (associationDefaultRouteTableId != null) __obj.updateDynamic("associationDefaultRouteTableId")(associationDefaultRouteTableId.asInstanceOf[js.Any])
-    if (autoAcceptSharedAttachments != null) __obj.updateDynamic("autoAcceptSharedAttachments")(autoAcceptSharedAttachments.asInstanceOf[js.Any])
-    if (defaultRouteTableAssociation != null) __obj.updateDynamic("defaultRouteTableAssociation")(defaultRouteTableAssociation.asInstanceOf[js.Any])
-    if (defaultRouteTablePropagation != null) __obj.updateDynamic("defaultRouteTablePropagation")(defaultRouteTablePropagation.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (dnsSupport != null) __obj.updateDynamic("dnsSupport")(dnsSupport.asInstanceOf[js.Any])
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
-    if (propagationDefaultRouteTableId != null) __obj.updateDynamic("propagationDefaultRouteTableId")(propagationDefaultRouteTableId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpnEcmpSupport != null) __obj.updateDynamic("vpnEcmpSupport")(vpnEcmpSupport.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitGatewayState]
   }
+  @scala.inline
+  implicit class TransitGatewayStateOps[Self <: TransitGatewayState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmazonSideAsn(value: Input[Double]): Self = this.set("amazonSideAsn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmazonSideAsn: Self = this.set("amazonSideAsn", js.undefined)
+    @scala.inline
+    def setArn(value: Input[ARN]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAssociationDefaultRouteTableId(value: Input[String]): Self = this.set("associationDefaultRouteTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationDefaultRouteTableId: Self = this.set("associationDefaultRouteTableId", js.undefined)
+    @scala.inline
+    def setAutoAcceptSharedAttachments(value: Input[String]): Self = this.set("autoAcceptSharedAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAcceptSharedAttachments: Self = this.set("autoAcceptSharedAttachments", js.undefined)
+    @scala.inline
+    def setDefaultRouteTableAssociation(value: Input[String]): Self = this.set("defaultRouteTableAssociation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRouteTableAssociation: Self = this.set("defaultRouteTableAssociation", js.undefined)
+    @scala.inline
+    def setDefaultRouteTablePropagation(value: Input[String]): Self = this.set("defaultRouteTablePropagation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRouteTablePropagation: Self = this.set("defaultRouteTablePropagation", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDnsSupport(value: Input[String]): Self = this.set("dnsSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsSupport: Self = this.set("dnsSupport", js.undefined)
+    @scala.inline
+    def setOwnerId(value: Input[String]): Self = this.set("ownerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("ownerId", js.undefined)
+    @scala.inline
+    def setPropagationDefaultRouteTableId(value: Input[String]): Self = this.set("propagationDefaultRouteTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropagationDefaultRouteTableId: Self = this.set("propagationDefaultRouteTableId", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpnEcmpSupport(value: Input[String]): Self = this.set("vpnEcmpSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnEcmpSupport: Self = this.set("vpnEcmpSupport", js.undefined)
+  }
+  
 }
 

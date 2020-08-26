@@ -30,6 +30,8 @@ trait AsyncMatchers[T, U] extends js.Object {
     * @param message - The message that should be set on the thrown Error.
     */
   def toBeRejectedWithError(): js.Thenable[Unit] = js.native
+  def toBeRejectedWithError(expected: js.UndefOr[scala.Nothing], message: String): js.Thenable[Unit] = js.native
+  def toBeRejectedWithError(expected: js.UndefOr[scala.Nothing], message: RegExp): js.Thenable[Unit] = js.native
   def toBeRejectedWithError(expected: Instantiable1[/* args (repeated) */ js.Any, Error]): js.Thenable[Unit] = js.native
   def toBeRejectedWithError(expected: Instantiable1[/* args (repeated) */ js.Any, Error], message: String): js.Thenable[Unit] = js.native
   def toBeRejectedWithError(expected: Instantiable1[/* args (repeated) */ js.Any, Error], message: RegExp): js.Thenable[Unit] = js.native

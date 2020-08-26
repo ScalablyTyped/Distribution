@@ -52,40 +52,54 @@ trait ParamsResourcePermissionsCreate extends StandardParameters {
 
 object ParamsResourcePermissionsCreate {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    emailMessage: String = null,
-    fields: String = null,
-    fileId: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    requestBody: SchemaPermission = null,
-    sendNotificationEmail: js.UndefOr[Boolean] = js.undefined,
-    supportsTeamDrives: js.UndefOr[Boolean] = js.undefined,
-    transferOwnership: js.UndefOr[Boolean] = js.undefined,
-    useDomainAdminAccess: js.UndefOr[Boolean] = js.undefined,
-    userIp: String = null
-  ): ParamsResourcePermissionsCreate = {
+  def apply(): ParamsResourcePermissionsCreate = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (emailMessage != null) __obj.updateDynamic("emailMessage")(emailMessage.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendNotificationEmail)) __obj.updateDynamic("sendNotificationEmail")(sendNotificationEmail.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transferOwnership)) __obj.updateDynamic("transferOwnership")(transferOwnership.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useDomainAdminAccess)) __obj.updateDynamic("useDomainAdminAccess")(useDomainAdminAccess.get.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourcePermissionsCreate]
   }
+  @scala.inline
+  implicit class ParamsResourcePermissionsCreateOps[Self <: ParamsResourcePermissionsCreate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setEmailMessage(value: String): Self = this.set("emailMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailMessage: Self = this.set("emailMessage", js.undefined)
+    @scala.inline
+    def setFileId(value: String): Self = this.set("fileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileId: Self = this.set("fileId", js.undefined)
+    @scala.inline
+    def setRequestBody(value: SchemaPermission): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    @scala.inline
+    def setSendNotificationEmail(value: Boolean): Self = this.set("sendNotificationEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendNotificationEmail: Self = this.set("sendNotificationEmail", js.undefined)
+    @scala.inline
+    def setSupportsTeamDrives(value: Boolean): Self = this.set("supportsTeamDrives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsTeamDrives: Self = this.set("supportsTeamDrives", js.undefined)
+    @scala.inline
+    def setTransferOwnership(value: Boolean): Self = this.set("transferOwnership", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferOwnership: Self = this.set("transferOwnership", js.undefined)
+    @scala.inline
+    def setUseDomainAdminAccess(value: Boolean): Self = this.set("useDomainAdminAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseDomainAdminAccess: Self = this.set("useDomainAdminAccess", js.undefined)
+  }
+  
 }
 

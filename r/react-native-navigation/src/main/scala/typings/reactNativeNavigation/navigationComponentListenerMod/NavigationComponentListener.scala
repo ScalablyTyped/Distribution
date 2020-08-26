@@ -13,42 +13,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NavigationComponentListener extends js.Object {
-  var componentDidAppear: js.UndefOr[js.Function1[/* _event */ ComponentDidAppearEvent, Unit]] = js.undefined
-  var componentDidDisappear: js.UndefOr[js.Function1[/* _event */ ComponentDidDisappearEvent, Unit]] = js.undefined
-  var modalAttemptedToDismiss: js.UndefOr[js.Function1[/* _event */ ModalAttemptedToDismissEvent, Unit]] = js.undefined
-  var modalDismissed: js.UndefOr[js.Function1[/* _event */ ModalDismissedEvent, Unit]] = js.undefined
-  var navigationButtonPressed: js.UndefOr[js.Function1[/* _event */ NavigationButtonPressedEvent, Unit]] = js.undefined
-  var previewCompleted: js.UndefOr[js.Function1[/* _event */ PreviewCompletedEvent, Unit]] = js.undefined
-  var screenPopped: js.UndefOr[js.Function1[/* _event */ ScreenPoppedEvent, Unit]] = js.undefined
-  var searchBarCancelPressed: js.UndefOr[js.Function1[/* _event */ SearchBarCancelPressedEvent, Unit]] = js.undefined
-  var searchBarUpdated: js.UndefOr[js.Function1[/* _event */ SearchBarUpdatedEvent, Unit]] = js.undefined
+  var componentDidAppear: js.UndefOr[js.Function1[/* _event */ ComponentDidAppearEvent, Unit]] = js.native
+  var componentDidDisappear: js.UndefOr[js.Function1[/* _event */ ComponentDidDisappearEvent, Unit]] = js.native
+  var modalAttemptedToDismiss: js.UndefOr[js.Function1[/* _event */ ModalAttemptedToDismissEvent, Unit]] = js.native
+  var modalDismissed: js.UndefOr[js.Function1[/* _event */ ModalDismissedEvent, Unit]] = js.native
+  var navigationButtonPressed: js.UndefOr[js.Function1[/* _event */ NavigationButtonPressedEvent, Unit]] = js.native
+  var previewCompleted: js.UndefOr[js.Function1[/* _event */ PreviewCompletedEvent, Unit]] = js.native
+  var screenPopped: js.UndefOr[js.Function1[/* _event */ ScreenPoppedEvent, Unit]] = js.native
+  var searchBarCancelPressed: js.UndefOr[js.Function1[/* _event */ SearchBarCancelPressedEvent, Unit]] = js.native
+  var searchBarUpdated: js.UndefOr[js.Function1[/* _event */ SearchBarUpdatedEvent, Unit]] = js.native
 }
 
 object NavigationComponentListener {
   @scala.inline
-  def apply(
-    componentDidAppear: /* _event */ ComponentDidAppearEvent => Unit = null,
-    componentDidDisappear: /* _event */ ComponentDidDisappearEvent => Unit = null,
-    modalAttemptedToDismiss: /* _event */ ModalAttemptedToDismissEvent => Unit = null,
-    modalDismissed: /* _event */ ModalDismissedEvent => Unit = null,
-    navigationButtonPressed: /* _event */ NavigationButtonPressedEvent => Unit = null,
-    previewCompleted: /* _event */ PreviewCompletedEvent => Unit = null,
-    screenPopped: /* _event */ ScreenPoppedEvent => Unit = null,
-    searchBarCancelPressed: /* _event */ SearchBarCancelPressedEvent => Unit = null,
-    searchBarUpdated: /* _event */ SearchBarUpdatedEvent => Unit = null
-  ): NavigationComponentListener = {
+  def apply(): NavigationComponentListener = {
     val __obj = js.Dynamic.literal()
-    if (componentDidAppear != null) __obj.updateDynamic("componentDidAppear")(js.Any.fromFunction1(componentDidAppear))
-    if (componentDidDisappear != null) __obj.updateDynamic("componentDidDisappear")(js.Any.fromFunction1(componentDidDisappear))
-    if (modalAttemptedToDismiss != null) __obj.updateDynamic("modalAttemptedToDismiss")(js.Any.fromFunction1(modalAttemptedToDismiss))
-    if (modalDismissed != null) __obj.updateDynamic("modalDismissed")(js.Any.fromFunction1(modalDismissed))
-    if (navigationButtonPressed != null) __obj.updateDynamic("navigationButtonPressed")(js.Any.fromFunction1(navigationButtonPressed))
-    if (previewCompleted != null) __obj.updateDynamic("previewCompleted")(js.Any.fromFunction1(previewCompleted))
-    if (screenPopped != null) __obj.updateDynamic("screenPopped")(js.Any.fromFunction1(screenPopped))
-    if (searchBarCancelPressed != null) __obj.updateDynamic("searchBarCancelPressed")(js.Any.fromFunction1(searchBarCancelPressed))
-    if (searchBarUpdated != null) __obj.updateDynamic("searchBarUpdated")(js.Any.fromFunction1(searchBarUpdated))
     __obj.asInstanceOf[NavigationComponentListener]
   }
+  @scala.inline
+  implicit class NavigationComponentListenerOps[Self <: NavigationComponentListener] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentDidAppear(value: /* _event */ ComponentDidAppearEvent => Unit): Self = this.set("componentDidAppear", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteComponentDidAppear: Self = this.set("componentDidAppear", js.undefined)
+    @scala.inline
+    def setComponentDidDisappear(value: /* _event */ ComponentDidDisappearEvent => Unit): Self = this.set("componentDidDisappear", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteComponentDidDisappear: Self = this.set("componentDidDisappear", js.undefined)
+    @scala.inline
+    def setModalAttemptedToDismiss(value: /* _event */ ModalAttemptedToDismissEvent => Unit): Self = this.set("modalAttemptedToDismiss", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteModalAttemptedToDismiss: Self = this.set("modalAttemptedToDismiss", js.undefined)
+    @scala.inline
+    def setModalDismissed(value: /* _event */ ModalDismissedEvent => Unit): Self = this.set("modalDismissed", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteModalDismissed: Self = this.set("modalDismissed", js.undefined)
+    @scala.inline
+    def setNavigationButtonPressed(value: /* _event */ NavigationButtonPressedEvent => Unit): Self = this.set("navigationButtonPressed", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNavigationButtonPressed: Self = this.set("navigationButtonPressed", js.undefined)
+    @scala.inline
+    def setPreviewCompleted(value: /* _event */ PreviewCompletedEvent => Unit): Self = this.set("previewCompleted", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePreviewCompleted: Self = this.set("previewCompleted", js.undefined)
+    @scala.inline
+    def setScreenPopped(value: /* _event */ ScreenPoppedEvent => Unit): Self = this.set("screenPopped", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteScreenPopped: Self = this.set("screenPopped", js.undefined)
+    @scala.inline
+    def setSearchBarCancelPressed(value: /* _event */ SearchBarCancelPressedEvent => Unit): Self = this.set("searchBarCancelPressed", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSearchBarCancelPressed: Self = this.set("searchBarCancelPressed", js.undefined)
+    @scala.inline
+    def setSearchBarUpdated(value: /* _event */ SearchBarUpdatedEvent => Unit): Self = this.set("searchBarUpdated", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSearchBarUpdated: Self = this.set("searchBarUpdated", js.undefined)
+  }
+  
 }
 

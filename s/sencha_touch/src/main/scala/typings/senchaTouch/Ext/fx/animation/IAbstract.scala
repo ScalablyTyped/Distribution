@@ -1,320 +1,300 @@
 package typings.senchaTouch.Ext.fx.animation
 
-import typings.senchaTouch.Ext.Array
-import typings.senchaTouch.Ext.IClass
 import typings.senchaTouch.Ext.IEvented
-import typings.senchaTouch.Ext.mixin.IObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IAbstract extends IEvented {
   /** [Config Option] (Object) */
-  var before: js.UndefOr[js.Any] = js.undefined
+  var before: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var easing: js.UndefOr[String] = js.undefined
+  var easing: js.UndefOr[String] = js.native
   /** [Method] Returns the value of after
     * @returns Object
     */
-  var getAfter: js.UndefOr[js.Function0[_]] = js.undefined
+  var getAfter: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of before
     * @returns Object
     */
-  var getBefore: js.UndefOr[js.Function0[_]] = js.undefined
+  var getBefore: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of delay
     * @returns Number
     */
-  var getDelay: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getDelay: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of direction
     * @returns String
     */
-  var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
+  var getDirection: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of duration
     * @returns Number
     */
-  var getDuration: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getDuration: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of easing
     * @returns String
     */
-  var getEasing: js.UndefOr[js.Function0[String]] = js.undefined
+  var getEasing: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of element
     * @returns Object
     */
-  var getElement: js.UndefOr[js.Function0[_]] = js.undefined
+  var getElement: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of iteration
     * @returns Number
     */
-  var getIteration: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getIteration: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of name
     * @returns String
     */
-  var getName: js.UndefOr[js.Function0[String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of onBeforeEnd
     * @returns Object
     */
-  var getOnBeforeEnd: js.UndefOr[js.Function0[_]] = js.undefined
+  var getOnBeforeEnd: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of onBeforeStart
     * @returns Object
     */
-  var getOnBeforeStart: js.UndefOr[js.Function0[_]] = js.undefined
+  var getOnBeforeStart: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of onEnd
     * @returns Object
     */
-  var getOnEnd: js.UndefOr[js.Function0[_]] = js.undefined
+  var getOnEnd: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of preserveEndState
     * @returns Boolean
     */
-  var getPreserveEndState: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getPreserveEndState: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of replacePrevious
     * @returns Boolean
     */
-  var getReplacePrevious: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getReplacePrevious: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of reverse
     * @returns Object
     */
-  var getReverse: js.UndefOr[js.Function0[_]] = js.undefined
+  var getReverse: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of scope
     * @returns Object
     */
-  var getScope: js.UndefOr[js.Function0[_]] = js.undefined
+  var getScope: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Sets the value of after
     * @param after Object The new value.
     */
-  var setAfter: js.UndefOr[js.Function1[/* after */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setAfter: js.UndefOr[js.Function1[/* after */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of before
     * @param before Object The new value.
     */
-  var setBefore: js.UndefOr[js.Function1[/* before */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBefore: js.UndefOr[js.Function1[/* before */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of delay
     * @param delay Number The new value.
     */
-  var setDelay: js.UndefOr[js.Function1[/* delay */ js.UndefOr[Double], Unit]] = js.undefined
+  var setDelay: js.UndefOr[js.Function1[/* delay */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of direction
     * @param direction String The new value.
     */
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of duration
     * @param duration Number The new value.
     */
-  var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.undefined
+  var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of easing
     * @param easing String The new value.
     */
-  var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[String], Unit]] = js.undefined
+  var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of element
     * @param element Object The new value.
     */
-  var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of iteration
     * @param iteration Number The new value.
     */
-  var setIteration: js.UndefOr[js.Function1[/* iteration */ js.UndefOr[Double], Unit]] = js.undefined
+  var setIteration: js.UndefOr[js.Function1[/* iteration */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of name
     * @param name String The new value.
     */
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of onBeforeEnd
     * @param onBeforeEnd Object The new value.
     */
-  var setOnBeforeEnd: js.UndefOr[js.Function1[/* onBeforeEnd */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setOnBeforeEnd: js.UndefOr[js.Function1[/* onBeforeEnd */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of onBeforeStart
     * @param onBeforeStart Object The new value.
     */
-  var setOnBeforeStart: js.UndefOr[js.Function1[/* onBeforeStart */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setOnBeforeStart: js.UndefOr[js.Function1[/* onBeforeStart */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of onEnd
     * @param onEnd Object The new value.
     */
-  var setOnEnd: js.UndefOr[js.Function1[/* onEnd */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setOnEnd: js.UndefOr[js.Function1[/* onEnd */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of preserveEndState
     * @param preserveEndState Boolean The new value.
     */
-  var setPreserveEndState: js.UndefOr[js.Function1[/* preserveEndState */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setPreserveEndState: js.UndefOr[js.Function1[/* preserveEndState */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of replacePrevious
     * @param replacePrevious Boolean The new value.
     */
-  var setReplacePrevious: js.UndefOr[js.Function1[/* replacePrevious */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setReplacePrevious: js.UndefOr[js.Function1[/* replacePrevious */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of reverse
     * @param reverse Object The new value.
     */
-  var setReverse: js.UndefOr[js.Function1[/* reverse */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setReverse: js.UndefOr[js.Function1[/* reverse */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of scope
     * @param scope Object The new value.
     */
-  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.native
 }
 
 object IAbstract {
   @scala.inline
-  def apply(
-    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    before: js.Any = null,
-    bubbleEvents: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clearListeners: () => Unit = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    easing: String = null,
-    enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: String = null,
-    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
-    getAfter: () => _ = null,
-    getBefore: () => _ = null,
-    getBubbleEvents: () => _ = null,
-    getDelay: () => Double = null,
-    getDirection: () => String = null,
-    getDuration: () => Double = null,
-    getEasing: () => String = null,
-    getElement: () => _ = null,
-    getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getIteration: () => Double = null,
-    getListeners: () => _ = null,
-    getName: () => String = null,
-    getOnBeforeEnd: () => _ = null,
-    getOnBeforeStart: () => _ = null,
-    getOnEnd: () => _ = null,
-    getPreserveEndState: () => Boolean = null,
-    getReplacePrevious: () => Boolean = null,
-    getReverse: () => _ = null,
-    getScope: () => _ = null,
-    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    listeners: js.Any = null,
-    mixins: js.Any = null,
-    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    platformConfig: js.Any = null,
-    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
-    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    self: IClass = null,
-    setAfter: /* after */ js.UndefOr[js.Any] => Unit = null,
-    setBefore: /* before */ js.UndefOr[js.Any] => Unit = null,
-    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setDelay: /* delay */ js.UndefOr[Double] => Unit = null,
-    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
-    setDuration: /* duration */ js.UndefOr[Double] => Unit = null,
-    setEasing: /* easing */ js.UndefOr[String] => Unit = null,
-    setElement: /* element */ js.UndefOr[js.Any] => Unit = null,
-    setIteration: /* iteration */ js.UndefOr[Double] => Unit = null,
-    setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setName: /* name */ js.UndefOr[String] => Unit = null,
-    setOnBeforeEnd: /* onBeforeEnd */ js.UndefOr[js.Any] => Unit = null,
-    setOnBeforeStart: /* onBeforeStart */ js.UndefOr[js.Any] => Unit = null,
-    setOnEnd: /* onEnd */ js.UndefOr[js.Any] => Unit = null,
-    setPreserveEndState: /* preserveEndState */ js.UndefOr[Boolean] => Unit = null,
-    setReplacePrevious: /* replacePrevious */ js.UndefOr[Boolean] => Unit = null,
-    setReverse: /* reverse */ js.UndefOr[js.Any] => Unit = null,
-    setScope: /* scope */ js.UndefOr[js.Any] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    suspendEvents: () => Unit = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    uses: Array = null
-  ): IAbstract = {
+  def apply(): IAbstract = {
     val __obj = js.Dynamic.literal()
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
-    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
-    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (getAfter != null) __obj.updateDynamic("getAfter")(js.Any.fromFunction0(getAfter))
-    if (getBefore != null) __obj.updateDynamic("getBefore")(js.Any.fromFunction0(getBefore))
-    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
-    if (getDelay != null) __obj.updateDynamic("getDelay")(js.Any.fromFunction0(getDelay))
-    if (getDirection != null) __obj.updateDynamic("getDirection")(js.Any.fromFunction0(getDirection))
-    if (getDuration != null) __obj.updateDynamic("getDuration")(js.Any.fromFunction0(getDuration))
-    if (getEasing != null) __obj.updateDynamic("getEasing")(js.Any.fromFunction0(getEasing))
-    if (getElement != null) __obj.updateDynamic("getElement")(js.Any.fromFunction0(getElement))
-    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getIteration != null) __obj.updateDynamic("getIteration")(js.Any.fromFunction0(getIteration))
-    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
-    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
-    if (getOnBeforeEnd != null) __obj.updateDynamic("getOnBeforeEnd")(js.Any.fromFunction0(getOnBeforeEnd))
-    if (getOnBeforeStart != null) __obj.updateDynamic("getOnBeforeStart")(js.Any.fromFunction0(getOnBeforeStart))
-    if (getOnEnd != null) __obj.updateDynamic("getOnEnd")(js.Any.fromFunction0(getOnEnd))
-    if (getPreserveEndState != null) __obj.updateDynamic("getPreserveEndState")(js.Any.fromFunction0(getPreserveEndState))
-    if (getReplacePrevious != null) __obj.updateDynamic("getReplacePrevious")(js.Any.fromFunction0(getReplacePrevious))
-    if (getReverse != null) __obj.updateDynamic("getReverse")(js.Any.fromFunction0(getReverse))
-    if (getScope != null) __obj.updateDynamic("getScope")(js.Any.fromFunction0(getScope))
-    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
-    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
-    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
-    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setAfter != null) __obj.updateDynamic("setAfter")(js.Any.fromFunction1(setAfter))
-    if (setBefore != null) __obj.updateDynamic("setBefore")(js.Any.fromFunction1(setBefore))
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
-    if (setDelay != null) __obj.updateDynamic("setDelay")(js.Any.fromFunction1(setDelay))
-    if (setDirection != null) __obj.updateDynamic("setDirection")(js.Any.fromFunction1(setDirection))
-    if (setDuration != null) __obj.updateDynamic("setDuration")(js.Any.fromFunction1(setDuration))
-    if (setEasing != null) __obj.updateDynamic("setEasing")(js.Any.fromFunction1(setEasing))
-    if (setElement != null) __obj.updateDynamic("setElement")(js.Any.fromFunction1(setElement))
-    if (setIteration != null) __obj.updateDynamic("setIteration")(js.Any.fromFunction1(setIteration))
-    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
-    if (setOnBeforeEnd != null) __obj.updateDynamic("setOnBeforeEnd")(js.Any.fromFunction1(setOnBeforeEnd))
-    if (setOnBeforeStart != null) __obj.updateDynamic("setOnBeforeStart")(js.Any.fromFunction1(setOnBeforeStart))
-    if (setOnEnd != null) __obj.updateDynamic("setOnEnd")(js.Any.fromFunction1(setOnEnd))
-    if (setPreserveEndState != null) __obj.updateDynamic("setPreserveEndState")(js.Any.fromFunction1(setPreserveEndState))
-    if (setReplacePrevious != null) __obj.updateDynamic("setReplacePrevious")(js.Any.fromFunction1(setReplacePrevious))
-    if (setReverse != null) __obj.updateDynamic("setReverse")(js.Any.fromFunction1(setReverse))
-    if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1(setScope))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
-    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
-    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstract]
   }
+  @scala.inline
+  implicit class IAbstractOps[Self <: IAbstract] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBefore(value: js.Any): Self = this.set("before", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBefore: Self = this.set("before", js.undefined)
+    @scala.inline
+    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setGetAfter(value: () => _): Self = this.set("getAfter", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetAfter: Self = this.set("getAfter", js.undefined)
+    @scala.inline
+    def setGetBefore(value: () => _): Self = this.set("getBefore", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetBefore: Self = this.set("getBefore", js.undefined)
+    @scala.inline
+    def setGetDelay(value: () => Double): Self = this.set("getDelay", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDelay: Self = this.set("getDelay", js.undefined)
+    @scala.inline
+    def setGetDirection(value: () => String): Self = this.set("getDirection", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDirection: Self = this.set("getDirection", js.undefined)
+    @scala.inline
+    def setGetDuration(value: () => Double): Self = this.set("getDuration", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDuration: Self = this.set("getDuration", js.undefined)
+    @scala.inline
+    def setGetEasing(value: () => String): Self = this.set("getEasing", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetEasing: Self = this.set("getEasing", js.undefined)
+    @scala.inline
+    def setGetElement(value: () => _): Self = this.set("getElement", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetElement: Self = this.set("getElement", js.undefined)
+    @scala.inline
+    def setGetIteration(value: () => Double): Self = this.set("getIteration", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetIteration: Self = this.set("getIteration", js.undefined)
+    @scala.inline
+    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetName: Self = this.set("getName", js.undefined)
+    @scala.inline
+    def setGetOnBeforeEnd(value: () => _): Self = this.set("getOnBeforeEnd", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetOnBeforeEnd: Self = this.set("getOnBeforeEnd", js.undefined)
+    @scala.inline
+    def setGetOnBeforeStart(value: () => _): Self = this.set("getOnBeforeStart", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetOnBeforeStart: Self = this.set("getOnBeforeStart", js.undefined)
+    @scala.inline
+    def setGetOnEnd(value: () => _): Self = this.set("getOnEnd", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetOnEnd: Self = this.set("getOnEnd", js.undefined)
+    @scala.inline
+    def setGetPreserveEndState(value: () => Boolean): Self = this.set("getPreserveEndState", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPreserveEndState: Self = this.set("getPreserveEndState", js.undefined)
+    @scala.inline
+    def setGetReplacePrevious(value: () => Boolean): Self = this.set("getReplacePrevious", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetReplacePrevious: Self = this.set("getReplacePrevious", js.undefined)
+    @scala.inline
+    def setGetReverse(value: () => _): Self = this.set("getReverse", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetReverse: Self = this.set("getReverse", js.undefined)
+    @scala.inline
+    def setGetScope(value: () => _): Self = this.set("getScope", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetScope: Self = this.set("getScope", js.undefined)
+    @scala.inline
+    def setSetAfter(value: /* after */ js.UndefOr[js.Any] => Unit): Self = this.set("setAfter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetAfter: Self = this.set("setAfter", js.undefined)
+    @scala.inline
+    def setSetBefore(value: /* before */ js.UndefOr[js.Any] => Unit): Self = this.set("setBefore", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBefore: Self = this.set("setBefore", js.undefined)
+    @scala.inline
+    def setSetDelay(value: /* delay */ js.UndefOr[Double] => Unit): Self = this.set("setDelay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDelay: Self = this.set("setDelay", js.undefined)
+    @scala.inline
+    def setSetDirection(value: /* direction */ js.UndefOr[String] => Unit): Self = this.set("setDirection", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDirection: Self = this.set("setDirection", js.undefined)
+    @scala.inline
+    def setSetDuration(value: /* duration */ js.UndefOr[Double] => Unit): Self = this.set("setDuration", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDuration: Self = this.set("setDuration", js.undefined)
+    @scala.inline
+    def setSetEasing(value: /* easing */ js.UndefOr[String] => Unit): Self = this.set("setEasing", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetEasing: Self = this.set("setEasing", js.undefined)
+    @scala.inline
+    def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = this.set("setElement", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetElement: Self = this.set("setElement", js.undefined)
+    @scala.inline
+    def setSetIteration(value: /* iteration */ js.UndefOr[Double] => Unit): Self = this.set("setIteration", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetIteration: Self = this.set("setIteration", js.undefined)
+    @scala.inline
+    def setSetName(value: /* name */ js.UndefOr[String] => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetName: Self = this.set("setName", js.undefined)
+    @scala.inline
+    def setSetOnBeforeEnd(value: /* onBeforeEnd */ js.UndefOr[js.Any] => Unit): Self = this.set("setOnBeforeEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetOnBeforeEnd: Self = this.set("setOnBeforeEnd", js.undefined)
+    @scala.inline
+    def setSetOnBeforeStart(value: /* onBeforeStart */ js.UndefOr[js.Any] => Unit): Self = this.set("setOnBeforeStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetOnBeforeStart: Self = this.set("setOnBeforeStart", js.undefined)
+    @scala.inline
+    def setSetOnEnd(value: /* onEnd */ js.UndefOr[js.Any] => Unit): Self = this.set("setOnEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetOnEnd: Self = this.set("setOnEnd", js.undefined)
+    @scala.inline
+    def setSetPreserveEndState(value: /* preserveEndState */ js.UndefOr[Boolean] => Unit): Self = this.set("setPreserveEndState", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetPreserveEndState: Self = this.set("setPreserveEndState", js.undefined)
+    @scala.inline
+    def setSetReplacePrevious(value: /* replacePrevious */ js.UndefOr[Boolean] => Unit): Self = this.set("setReplacePrevious", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetReplacePrevious: Self = this.set("setReplacePrevious", js.undefined)
+    @scala.inline
+    def setSetReverse(value: /* reverse */ js.UndefOr[js.Any] => Unit): Self = this.set("setReverse", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetReverse: Self = this.set("setReverse", js.undefined)
+    @scala.inline
+    def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = this.set("setScope", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetScope: Self = this.set("setScope", js.undefined)
+  }
+  
 }
 

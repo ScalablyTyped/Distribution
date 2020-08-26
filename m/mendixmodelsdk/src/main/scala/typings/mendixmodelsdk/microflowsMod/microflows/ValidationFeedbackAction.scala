@@ -27,26 +27,22 @@ class ValidationFeedbackAction protected () extends MicroflowAction {
   ) = this()
   @JSName("model")
   var model_FValidationFeedbackAction: IModel = js.native
-  def association(): js.Any = js.native
-  def association(newValue: IAssociationBase): js.Any = js.native
+  /**
+    * See: {@link https://docs.mendix.com/refguide7/validation-feedback See 'Member' section in reference guide}
+    */
+  def association: IAssociationBase | Null = js.native
   def associationQualifiedName: String | Null = js.native
+  def association_=(newValue: IAssociationBase | Null): Unit = js.native
   /**
     * See: {@link https://docs.mendix.com/refguide7/validation-feedback See 'Member' section in reference guide}
     */
-  @JSName("association")
-  def association_Union: IAssociationBase | Null = js.native
-  def attribute(): js.Any = js.native
-  def attribute(newValue: IAttribute): js.Any = js.native
+  def attribute: IAttribute | Null = js.native
   def attributeQualifiedName: String | Null = js.native
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/validation-feedback See 'Member' section in reference guide}
-    */
-  @JSName("attribute")
-  def attribute_Union: IAttribute | Null = js.native
+  def attribute_=(newValue: IAttribute | Null): Unit = js.native
   def feedbackTemplate: TextTemplate = js.native
-  def feedbackTemplate(newValue: TextTemplate): js.Any = js.native
+  def feedbackTemplate_=(newValue: TextTemplate): Unit = js.native
   def objectVariableName: String = js.native
-  def objectVariableName(newValue: String): js.Any = js.native
+  def objectVariableName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

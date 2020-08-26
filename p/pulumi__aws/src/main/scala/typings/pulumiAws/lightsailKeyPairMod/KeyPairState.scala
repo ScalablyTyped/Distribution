@@ -51,28 +51,58 @@ trait KeyPairState extends js.Object {
 
 object KeyPairState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    encryptedFingerprint: Input[String] = null,
-    encryptedPrivateKey: Input[String] = null,
-    fingerprint: Input[String] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    pgpKey: Input[String] = null,
-    privateKey: Input[String] = null,
-    publicKey: Input[String] = null
-  ): KeyPairState = {
+  def apply(): KeyPairState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (encryptedFingerprint != null) __obj.updateDynamic("encryptedFingerprint")(encryptedFingerprint.asInstanceOf[js.Any])
-    if (encryptedPrivateKey != null) __obj.updateDynamic("encryptedPrivateKey")(encryptedPrivateKey.asInstanceOf[js.Any])
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (pgpKey != null) __obj.updateDynamic("pgpKey")(pgpKey.asInstanceOf[js.Any])
-    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
-    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPairState]
   }
+  @scala.inline
+  implicit class KeyPairStateOps[Self <: KeyPairState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setEncryptedFingerprint(value: Input[String]): Self = this.set("encryptedFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptedFingerprint: Self = this.set("encryptedFingerprint", js.undefined)
+    @scala.inline
+    def setEncryptedPrivateKey(value: Input[String]): Self = this.set("encryptedPrivateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptedPrivateKey: Self = this.set("encryptedPrivateKey", js.undefined)
+    @scala.inline
+    def setFingerprint(value: Input[String]): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setPgpKey(value: Input[String]): Self = this.set("pgpKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePgpKey: Self = this.set("pgpKey", js.undefined)
+    @scala.inline
+    def setPrivateKey(value: Input[String]): Self = this.set("privateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKey: Self = this.set("privateKey", js.undefined)
+    @scala.inline
+    def setPublicKey(value: Input[String]): Self = this.set("publicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKey: Self = this.set("publicKey", js.undefined)
+  }
+  
 }
 

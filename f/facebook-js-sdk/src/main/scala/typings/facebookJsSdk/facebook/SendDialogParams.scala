@@ -1,36 +1,43 @@
 package typings.facebookJsSdk.facebook
 
-import typings.facebookJsSdk.facebookJsSdkStrings.async
-import typings.facebookJsSdk.facebookJsSdkStrings.iframe
-import typings.facebookJsSdk.facebookJsSdkStrings.page
-import typings.facebookJsSdk.facebookJsSdkStrings.popup
 import typings.facebookJsSdk.facebookJsSdkStrings.send
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SendDialogParams extends DialogParams {
-  var link: String
-  var method: send
-  var to: js.UndefOr[String] = js.undefined
+  var link: String = js.native
+  var method: send = js.native
+  var to: js.UndefOr[String] = js.native
 }
 
 object SendDialogParams {
   @scala.inline
-  def apply(
-    link: String,
-    method: send,
-    app_id: String = null,
-    display: page | iframe | async | popup = null,
-    redirect_uri: String = null,
-    to: String = null
-  ): SendDialogParams = {
+  def apply(link: String, method: send): SendDialogParams = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendDialogParams]
   }
+  @scala.inline
+  implicit class SendDialogParamsOps[Self <: SendDialogParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMethod(value: send): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+  }
+  
 }
 

@@ -19,6 +19,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def createMatchPath(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]]): MatchPath = js.native
+  def createMatchPath(
+    absoluteBaseUrl: String,
+    paths: StringDictionary[js.Array[String]],
+    mainFields: js.UndefOr[scala.Nothing],
+    addMatchAll: Boolean
+  ): MatchPath = js.native
   def createMatchPath(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]], mainFields: js.Array[String]): MatchPath = js.native
   def createMatchPath(
     absoluteBaseUrl: String,
@@ -27,6 +33,12 @@ object mod extends js.Object {
     addMatchAll: Boolean
   ): MatchPath = js.native
   def createMatchPathAsync(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]]): MatchPathAsync = js.native
+  def createMatchPathAsync(
+    absoluteBaseUrl: String,
+    paths: StringDictionary[js.Array[String]],
+    mainFields: js.UndefOr[scala.Nothing],
+    addMatchAll: Boolean
+  ): MatchPathAsync = js.native
   def createMatchPathAsync(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]], mainFields: js.Array[String]): MatchPathAsync = js.native
   def createMatchPathAsync(
     absoluteBaseUrl: String,
@@ -37,12 +49,95 @@ object mod extends js.Object {
   def loadConfig(): ConfigLoaderResult = js.native
   def loadConfig(cwd: String): ConfigLoaderResult = js.native
   def matchFromAbsolutePaths(absolutePathMappings: js.Array[MappingEntry], requestedModule: String): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.UndefOr[scala.Nothing],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsSync_
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsSync_,
+    extensions: js.UndefOr[scala.Nothing],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsSync_,
+    extensions: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsSync_,
+    extensions: js.Array[String],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
   def matchFromAbsolutePaths(absolutePathMappings: js.Array[MappingEntry], requestedModule: String, readJson: ReadJsonSync): js.UndefOr[String] = js.native
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
     readJson: ReadJsonSync,
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.UndefOr[scala.Nothing],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonSync,
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonSync,
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String],
+    mainFields: js.Array[String]
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonSync,
     fileExists: FileExistsSync_
+  ): js.UndefOr[String] = js.native
+  def matchFromAbsolutePaths(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonSync,
+    fileExists: FileExistsSync_,
+    extensions: js.UndefOr[scala.Nothing],
+    mainFields: js.Array[String]
   ): js.UndefOr[String] = js.native
   def matchFromAbsolutePaths(
     absolutePathMappings: js.Array[MappingEntry],
@@ -62,17 +157,136 @@ object mod extends js.Object {
   def matchFromAbsolutePathsAsync(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
-    readJson: js.UndefOr[ReadJsonAsync],
-    fileExists: js.UndefOr[FileExistsAsync_],
-    extensions: js.UndefOr[js.Array[String]],
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.UndefOr[scala.Nothing],
     callback: MatchPathAsyncCallback
   ): Unit = js.native
   def matchFromAbsolutePathsAsync(
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String,
-    readJson: js.UndefOr[ReadJsonAsync],
-    fileExists: js.UndefOr[FileExistsAsync_],
-    extensions: js.UndefOr[js.Array[String]],
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.UndefOr[scala.Nothing],
+    callback: MatchPathAsyncCallback,
+    mainFields: js.Array[String]
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String],
+    callback: MatchPathAsyncCallback
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String],
+    callback: MatchPathAsyncCallback,
+    mainFields: js.Array[String]
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsAsync_,
+    extensions: js.UndefOr[scala.Nothing],
+    callback: MatchPathAsyncCallback
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsAsync_,
+    extensions: js.UndefOr[scala.Nothing],
+    callback: MatchPathAsyncCallback,
+    mainFields: js.Array[String]
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsAsync_,
+    extensions: js.Array[String],
+    callback: MatchPathAsyncCallback
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: js.UndefOr[scala.Nothing],
+    fileExists: FileExistsAsync_,
+    extensions: js.Array[String],
+    callback: MatchPathAsyncCallback,
+    mainFields: js.Array[String]
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonAsync,
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.UndefOr[scala.Nothing],
+    callback: MatchPathAsyncCallback
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonAsync,
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.UndefOr[scala.Nothing],
+    callback: MatchPathAsyncCallback,
+    mainFields: js.Array[String]
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonAsync,
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String],
+    callback: MatchPathAsyncCallback
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonAsync,
+    fileExists: js.UndefOr[scala.Nothing],
+    extensions: js.Array[String],
+    callback: MatchPathAsyncCallback,
+    mainFields: js.Array[String]
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonAsync,
+    fileExists: FileExistsAsync_,
+    extensions: js.UndefOr[scala.Nothing],
+    callback: MatchPathAsyncCallback
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonAsync,
+    fileExists: FileExistsAsync_,
+    extensions: js.UndefOr[scala.Nothing],
+    callback: MatchPathAsyncCallback,
+    mainFields: js.Array[String]
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonAsync,
+    fileExists: FileExistsAsync_,
+    extensions: js.Array[String],
+    callback: MatchPathAsyncCallback
+  ): Unit = js.native
+  def matchFromAbsolutePathsAsync(
+    absolutePathMappings: js.Array[MappingEntry],
+    requestedModule: String,
+    readJson: ReadJsonAsync,
+    fileExists: FileExistsAsync_,
+    extensions: js.Array[String],
     callback: MatchPathAsyncCallback,
     mainFields: js.Array[String]
   ): Unit = js.native

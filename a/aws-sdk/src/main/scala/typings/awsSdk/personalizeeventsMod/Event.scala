@@ -26,10 +26,32 @@ trait Event extends js.Object {
 
 object Event {
   @scala.inline
-  def apply(eventType: StringType, properties: EventPropertiesJSON, sentAt: Date, eventId: StringType = null): Event = {
+  def apply(eventType: StringType, properties: EventPropertiesJSON, sentAt: Date): Event = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], sentAt = sentAt.asInstanceOf[js.Any])
-    if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
+  @scala.inline
+  implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventType(value: StringType): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProperties(value: EventPropertiesJSON): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSentAt(value: Date): Self = this.set("sentAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventId(value: StringType): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventId: Self = this.set("eventId", js.undefined)
+  }
+  
 }
 

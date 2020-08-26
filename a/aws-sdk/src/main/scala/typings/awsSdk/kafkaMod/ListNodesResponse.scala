@@ -23,11 +23,32 @@ trait ListNodesResponse extends js.Object {
 
 object ListNodesResponse {
   @scala.inline
-  def apply(NextToken: string = null, NodeInfoList: listOfNodeInfo = null): ListNodesResponse = {
+  def apply(): ListNodesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (NodeInfoList != null) __obj.updateDynamic("NodeInfoList")(NodeInfoList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNodesResponse]
   }
+  @scala.inline
+  implicit class ListNodesResponseOps[Self <: ListNodesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setNodeInfoListVarargs(value: NodeInfo*): Self = this.set("NodeInfoList", js.Array(value :_*))
+    @scala.inline
+    def setNodeInfoList(value: listOfNodeInfo): Self = this.set("NodeInfoList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeInfoList: Self = this.set("NodeInfoList", js.undefined)
+  }
+  
 }
 

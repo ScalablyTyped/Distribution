@@ -26,18 +26,38 @@ trait GetTemplateSummaryInput extends js.Object {
 
 object GetTemplateSummaryInput {
   @scala.inline
-  def apply(
-    StackName: StackNameOrId = null,
-    StackSetName: StackSetNameOrId = null,
-    TemplateBody: TemplateBody = null,
-    TemplateURL: TemplateURL = null
-  ): GetTemplateSummaryInput = {
+  def apply(): GetTemplateSummaryInput = {
     val __obj = js.Dynamic.literal()
-    if (StackName != null) __obj.updateDynamic("StackName")(StackName.asInstanceOf[js.Any])
-    if (StackSetName != null) __obj.updateDynamic("StackSetName")(StackSetName.asInstanceOf[js.Any])
-    if (TemplateBody != null) __obj.updateDynamic("TemplateBody")(TemplateBody.asInstanceOf[js.Any])
-    if (TemplateURL != null) __obj.updateDynamic("TemplateURL")(TemplateURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTemplateSummaryInput]
   }
+  @scala.inline
+  implicit class GetTemplateSummaryInputOps[Self <: GetTemplateSummaryInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackName(value: StackNameOrId): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackName: Self = this.set("StackName", js.undefined)
+    @scala.inline
+    def setStackSetName(value: StackSetNameOrId): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetName: Self = this.set("StackSetName", js.undefined)
+    @scala.inline
+    def setTemplateBody(value: TemplateBody): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
+    @scala.inline
+    def setTemplateURL(value: TemplateURL): Self = this.set("TemplateURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateURL: Self = this.set("TemplateURL", js.undefined)
+  }
+  
 }
 

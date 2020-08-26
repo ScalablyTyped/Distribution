@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Fired once the [seekToTime](Titanium.Media.AudioPlayer.seek) method completes.
   */
+@js.native
 trait AudioPlayerSeekEvent extends AudioPlayerBaseEvent {
   /**
     * The event for any prior seek request that is still in process will be invoked
@@ -15,7 +16,7 @@ trait AudioPlayerSeekEvent extends AudioPlayerBaseEvent {
     * request or by any other operation this event will be invoked with
     * the `finished` parameter set to `true`.
     */
-  var finished: Boolean
+  var finished: Boolean = js.native
 }
 
 object AudioPlayerSeekEvent {
@@ -24,5 +25,20 @@ object AudioPlayerSeekEvent {
     val __obj = js.Dynamic.literal(finished = finished.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioPlayerSeekEvent]
   }
+  @scala.inline
+  implicit class AudioPlayerSeekEventOps[Self <: AudioPlayerSeekEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFinished(value: Boolean): Self = this.set("finished", value.asInstanceOf[js.Any])
+  }
+  
 }
 

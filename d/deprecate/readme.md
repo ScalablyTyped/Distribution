@@ -11,8 +11,8 @@ Mark methods as deprecated and warn the user when they're called
 | Full name          | deprecate |
 | Keywords           | deprecate |
 | # releases         | 3 |
-| # dependents       | 86 |
-| # downloads        | 16354808 |
+| # dependents       | 87 |
+| # downloads        | 16599136 |
 | # stars            | 0 |
 
 ## Links

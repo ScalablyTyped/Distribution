@@ -30,16 +30,34 @@ trait VpcPeeringConnectionRequester extends js.Object {
 
 object VpcPeeringConnectionRequester {
   @scala.inline
-  def apply(
-    allowClassicLinkToRemoteVpc: Input[Boolean] = null,
-    allowRemoteVpcDnsResolution: Input[Boolean] = null,
-    allowVpcToRemoteClassicLink: Input[Boolean] = null
-  ): VpcPeeringConnectionRequester = {
+  def apply(): VpcPeeringConnectionRequester = {
     val __obj = js.Dynamic.literal()
-    if (allowClassicLinkToRemoteVpc != null) __obj.updateDynamic("allowClassicLinkToRemoteVpc")(allowClassicLinkToRemoteVpc.asInstanceOf[js.Any])
-    if (allowRemoteVpcDnsResolution != null) __obj.updateDynamic("allowRemoteVpcDnsResolution")(allowRemoteVpcDnsResolution.asInstanceOf[js.Any])
-    if (allowVpcToRemoteClassicLink != null) __obj.updateDynamic("allowVpcToRemoteClassicLink")(allowVpcToRemoteClassicLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcPeeringConnectionRequester]
   }
+  @scala.inline
+  implicit class VpcPeeringConnectionRequesterOps[Self <: VpcPeeringConnectionRequester] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowClassicLinkToRemoteVpc(value: Input[Boolean]): Self = this.set("allowClassicLinkToRemoteVpc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowClassicLinkToRemoteVpc: Self = this.set("allowClassicLinkToRemoteVpc", js.undefined)
+    @scala.inline
+    def setAllowRemoteVpcDnsResolution(value: Input[Boolean]): Self = this.set("allowRemoteVpcDnsResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowRemoteVpcDnsResolution: Self = this.set("allowRemoteVpcDnsResolution", js.undefined)
+    @scala.inline
+    def setAllowVpcToRemoteClassicLink(value: Input[Boolean]): Self = this.set("allowVpcToRemoteClassicLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowVpcToRemoteClassicLink: Self = this.set("allowVpcToRemoteClassicLink", js.undefined)
+  }
+  
 }
 

@@ -18,6 +18,7 @@ trait Tools extends js.Object {
   def is(obj: js.Object, `type`: String): Boolean = js.native
   def isArray(obj: js.Object): Boolean = js.native
   def makeMap[T](items: js.Array[T]): js.Object = js.native
+  def makeMap[T](items: js.Array[T], delim: js.UndefOr[scala.Nothing], map: js.Object): js.Object = js.native
   def makeMap[T](items: js.Array[T], delim: String): js.Object = js.native
   def makeMap[T](items: js.Array[T], delim: String, map: js.Object): js.Object = js.native
   def map[T, S](array: js.Array[T], callback: js.Function1[/* c */ T, S]): js.Array[S] = js.native
@@ -26,6 +27,7 @@ trait Tools extends js.Object {
   def toArray[T](obj: js.Object): js.Array[T] = js.native
   def trim(s: String): String = js.native
   def walk(o: js.Object, f: js.Function0[Unit]): Unit = js.native
+  def walk(o: js.Object, f: js.Function0[Unit], n: js.UndefOr[scala.Nothing], s: String): Unit = js.native
   def walk(o: js.Object, f: js.Function0[Unit], n: String): Unit = js.native
   def walk(o: js.Object, f: js.Function0[Unit], n: String, s: String): Unit = js.native
 }

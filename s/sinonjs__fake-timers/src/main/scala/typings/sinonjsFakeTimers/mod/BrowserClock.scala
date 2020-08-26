@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @sinonjs/fake-timers.@sinonjs/fake-timers.FakeClock<number> & {  performance  :{now (): number}} */
+/* Inlined @sinonjs/fake-timers.@sinonjs/fake-timers.FakeClock<number> & {  performance :{now (): number}} */
 @js.native
 trait BrowserClock extends Clock {
   /**

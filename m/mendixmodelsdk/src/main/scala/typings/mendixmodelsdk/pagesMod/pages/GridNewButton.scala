@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/grid-new-button relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/control-bar relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridNewButton")
 @js.native
@@ -27,20 +27,18 @@ class GridNewButton protected () extends GridControlBarButton {
   @JSName("model")
   var model_FGridNewButton: IModel = js.native
   def editLocation: NewButtonEditLocation = js.native
-  def editLocation(newValue: NewButtonEditLocation): js.Any = js.native
-  def entity(): js.Any = js.native
-  def entity(newValue: IEntity): js.Any = js.native
+  def editLocation_=(newValue: NewButtonEditLocation): Unit = js.native
+  def entity: IEntity | Null = js.native
   def entityQualifiedName: String | Null = js.native
-  @JSName("entity")
-  def entity_Union: IEntity | Null = js.native
+  def entity_=(newValue: IEntity | Null): Unit = js.native
   /**
     * In version 6.2.0: deleted
     * In version 6.0.0: deprecated
     */
   def isPersistent: Boolean = js.native
-  def isPersistent(newValue: Boolean): js.Any = js.native
+  def isPersistent_=(newValue: Boolean): Unit = js.native
   def pageSettings: PageSettings = js.native
-  def pageSettings(newValue: PageSettings): js.Any = js.native
+  def pageSettings_=(newValue: PageSettings): Unit = js.native
 }
 
 /* static members */

@@ -16,15 +16,5 @@ class ASPxClientSplitterPaneCancelEventArgs protected ()
     * @param pane A ASPxClientSplitterPane object representing a splitter pane related to the generated event.
     */
   def this(pane: typings.devexpressWeb.ASPxClientSplitterPane) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets the pane object related to the event.
-    */
-  /* CompleteClass */
-  override var pane: typings.devexpressWeb.ASPxClientSplitterPane = js.native
 }
 

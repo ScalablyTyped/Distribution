@@ -4,132 +4,161 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Windows10TeamGeneralConfiguration extends DeviceConfiguration {
   // Indicates whether or not to Block Azure Operational Insights.
-  var azureOperationalInsightsBlockTelemetry: js.UndefOr[Boolean] = js.undefined
+  var azureOperationalInsightsBlockTelemetry: js.UndefOr[Boolean] = js.native
   // The Azure Operational Insights workspace id.
-  var azureOperationalInsightsWorkspaceId: js.UndefOr[String] = js.undefined
+  var azureOperationalInsightsWorkspaceId: js.UndefOr[String] = js.native
   // The Azure Operational Insights Workspace key.
-  var azureOperationalInsightsWorkspaceKey: js.UndefOr[String] = js.undefined
+  var azureOperationalInsightsWorkspaceKey: js.UndefOr[String] = js.native
   // Specifies whether to automatically launch the Connect app whenever a projection is initiated.
-  var connectAppBlockAutoLaunch: js.UndefOr[Boolean] = js.undefined
+  var connectAppBlockAutoLaunch: js.UndefOr[Boolean] = js.native
   // Indicates whether or not to Block setting a maintenance window for device updates.
-  var maintenanceWindowBlocked: js.UndefOr[Boolean] = js.undefined
+  var maintenanceWindowBlocked: js.UndefOr[Boolean] = js.native
   // Maintenance window duration for device updates. Valid values 0 to 5
-  var maintenanceWindowDurationInHours: js.UndefOr[Double] = js.undefined
+  var maintenanceWindowDurationInHours: js.UndefOr[Double] = js.native
   // Maintenance window start time for device updates.
-  var maintenanceWindowStartTime: js.UndefOr[String] = js.undefined
+  var maintenanceWindowStartTime: js.UndefOr[String] = js.native
   // Indicates whether or not to Block wireless projection.
-  var miracastBlocked: js.UndefOr[Boolean] = js.undefined
+  var miracastBlocked: js.UndefOr[Boolean] = js.native
   /**
     * The channel. Possible values are: userDefined, one, two, three, four, five, six, seven, eight, nine, ten, eleven,
     * thirtySix, forty, fortyFour, fortyEight, oneHundredFortyNine, oneHundredFiftyThree, oneHundredFiftySeven,
     * oneHundredSixtyOne, oneHundredSixtyFive.
     */
-  var miracastChannel: js.UndefOr[MiracastChannel] = js.undefined
+  var miracastChannel: js.UndefOr[MiracastChannel] = js.native
   // Indicates whether or not to require a pin for wireless projection.
-  var miracastRequirePin: js.UndefOr[Boolean] = js.undefined
+  var miracastRequirePin: js.UndefOr[Boolean] = js.native
   /**
     * Specifies whether to disable the 'My meetings and files' feature in the Start menu, which shows the signed-in user's
     * meetings and files from Office 365.
     */
-  var settingsBlockMyMeetingsAndFiles: js.UndefOr[Boolean] = js.undefined
+  var settingsBlockMyMeetingsAndFiles: js.UndefOr[Boolean] = js.native
   // Specifies whether to allow the ability to resume a session when the session times out.
-  var settingsBlockSessionResume: js.UndefOr[Boolean] = js.undefined
+  var settingsBlockSessionResume: js.UndefOr[Boolean] = js.native
   // Specifies whether to disable auto-populating of the sign-in dialog with invitees from scheduled meetings.
-  var settingsBlockSigninSuggestions: js.UndefOr[Boolean] = js.undefined
+  var settingsBlockSigninSuggestions: js.UndefOr[Boolean] = js.native
   /**
     * Specifies the default volume value for a new session. Permitted values are 0-100. The default is 45. Valid values 0 to
     * 100
     */
-  var settingsDefaultVolume: js.UndefOr[Double] = js.undefined
+  var settingsDefaultVolume: js.UndefOr[Double] = js.native
   // Specifies the number of minutes until the Hub screen turns off.
-  var settingsScreenTimeoutInMinutes: js.UndefOr[Double] = js.undefined
+  var settingsScreenTimeoutInMinutes: js.UndefOr[Double] = js.native
   // Specifies the number of minutes until the session times out.
-  var settingsSessionTimeoutInMinutes: js.UndefOr[Double] = js.undefined
+  var settingsSessionTimeoutInMinutes: js.UndefOr[Double] = js.native
   // Specifies the number of minutes until the Hub enters sleep mode.
-  var settingsSleepTimeoutInMinutes: js.UndefOr[Double] = js.undefined
+  var settingsSleepTimeoutInMinutes: js.UndefOr[Double] = js.native
   // The welcome screen background image URL. The URL must use the HTTPS protocol and return a PNG image.
-  var welcomeScreenBackgroundImageUrl: js.UndefOr[String] = js.undefined
+  var welcomeScreenBackgroundImageUrl: js.UndefOr[String] = js.native
   // Indicates whether or not to Block the welcome screen from waking up automatically when someone enters the room.
-  var welcomeScreenBlockAutomaticWakeUp: js.UndefOr[Boolean] = js.undefined
+  var welcomeScreenBlockAutomaticWakeUp: js.UndefOr[Boolean] = js.native
   /**
     * The welcome screen meeting information shown. Possible values are: userDefined, showOrganizerAndTimeOnly,
     * showOrganizerAndTimeAndSubject.
     */
-  var welcomeScreenMeetingInformation: js.UndefOr[WelcomeScreenMeetingInformation] = js.undefined
+  var welcomeScreenMeetingInformation: js.UndefOr[WelcomeScreenMeetingInformation] = js.native
 }
 
 object Windows10TeamGeneralConfiguration {
   @scala.inline
-  def apply(
-    assignments: js.Array[DeviceConfigurationAssignment] = null,
-    azureOperationalInsightsBlockTelemetry: js.UndefOr[Boolean] = js.undefined,
-    azureOperationalInsightsWorkspaceId: String = null,
-    azureOperationalInsightsWorkspaceKey: String = null,
-    connectAppBlockAutoLaunch: js.UndefOr[Boolean] = js.undefined,
-    createdDateTime: String = null,
-    description: String = null,
-    deviceSettingStateSummaries: js.Array[SettingStateDeviceSummary] = null,
-    deviceStatusOverview: DeviceConfigurationDeviceOverview = null,
-    deviceStatuses: js.Array[DeviceConfigurationDeviceStatus] = null,
-    displayName: String = null,
-    id: String = null,
-    lastModifiedDateTime: String = null,
-    maintenanceWindowBlocked: js.UndefOr[Boolean] = js.undefined,
-    maintenanceWindowDurationInHours: js.UndefOr[Double] = js.undefined,
-    maintenanceWindowStartTime: String = null,
-    miracastBlocked: js.UndefOr[Boolean] = js.undefined,
-    miracastChannel: MiracastChannel = null,
-    miracastRequirePin: js.UndefOr[Boolean] = js.undefined,
-    settingsBlockMyMeetingsAndFiles: js.UndefOr[Boolean] = js.undefined,
-    settingsBlockSessionResume: js.UndefOr[Boolean] = js.undefined,
-    settingsBlockSigninSuggestions: js.UndefOr[Boolean] = js.undefined,
-    settingsDefaultVolume: js.UndefOr[Double] = js.undefined,
-    settingsScreenTimeoutInMinutes: js.UndefOr[Double] = js.undefined,
-    settingsSessionTimeoutInMinutes: js.UndefOr[Double] = js.undefined,
-    settingsSleepTimeoutInMinutes: js.UndefOr[Double] = js.undefined,
-    userStatusOverview: DeviceConfigurationUserOverview = null,
-    userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: js.UndefOr[Double] = js.undefined,
-    welcomeScreenBackgroundImageUrl: String = null,
-    welcomeScreenBlockAutomaticWakeUp: js.UndefOr[Boolean] = js.undefined,
-    welcomeScreenMeetingInformation: WelcomeScreenMeetingInformation = null
-  ): Windows10TeamGeneralConfiguration = {
+  def apply(): Windows10TeamGeneralConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(azureOperationalInsightsBlockTelemetry)) __obj.updateDynamic("azureOperationalInsightsBlockTelemetry")(azureOperationalInsightsBlockTelemetry.get.asInstanceOf[js.Any])
-    if (azureOperationalInsightsWorkspaceId != null) __obj.updateDynamic("azureOperationalInsightsWorkspaceId")(azureOperationalInsightsWorkspaceId.asInstanceOf[js.Any])
-    if (azureOperationalInsightsWorkspaceKey != null) __obj.updateDynamic("azureOperationalInsightsWorkspaceKey")(azureOperationalInsightsWorkspaceKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectAppBlockAutoLaunch)) __obj.updateDynamic("connectAppBlockAutoLaunch")(connectAppBlockAutoLaunch.get.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
-    if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
-    if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(maintenanceWindowBlocked)) __obj.updateDynamic("maintenanceWindowBlocked")(maintenanceWindowBlocked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maintenanceWindowDurationInHours)) __obj.updateDynamic("maintenanceWindowDurationInHours")(maintenanceWindowDurationInHours.get.asInstanceOf[js.Any])
-    if (maintenanceWindowStartTime != null) __obj.updateDynamic("maintenanceWindowStartTime")(maintenanceWindowStartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(miracastBlocked)) __obj.updateDynamic("miracastBlocked")(miracastBlocked.get.asInstanceOf[js.Any])
-    if (miracastChannel != null) __obj.updateDynamic("miracastChannel")(miracastChannel.asInstanceOf[js.Any])
-    if (!js.isUndefined(miracastRequirePin)) __obj.updateDynamic("miracastRequirePin")(miracastRequirePin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockMyMeetingsAndFiles)) __obj.updateDynamic("settingsBlockMyMeetingsAndFiles")(settingsBlockMyMeetingsAndFiles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockSessionResume)) __obj.updateDynamic("settingsBlockSessionResume")(settingsBlockSessionResume.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsBlockSigninSuggestions)) __obj.updateDynamic("settingsBlockSigninSuggestions")(settingsBlockSigninSuggestions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsDefaultVolume)) __obj.updateDynamic("settingsDefaultVolume")(settingsDefaultVolume.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsScreenTimeoutInMinutes)) __obj.updateDynamic("settingsScreenTimeoutInMinutes")(settingsScreenTimeoutInMinutes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsSessionTimeoutInMinutes)) __obj.updateDynamic("settingsSessionTimeoutInMinutes")(settingsSessionTimeoutInMinutes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(settingsSleepTimeoutInMinutes)) __obj.updateDynamic("settingsSleepTimeoutInMinutes")(settingsSleepTimeoutInMinutes.get.asInstanceOf[js.Any])
-    if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
-    if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
-    if (welcomeScreenBackgroundImageUrl != null) __obj.updateDynamic("welcomeScreenBackgroundImageUrl")(welcomeScreenBackgroundImageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(welcomeScreenBlockAutomaticWakeUp)) __obj.updateDynamic("welcomeScreenBlockAutomaticWakeUp")(welcomeScreenBlockAutomaticWakeUp.get.asInstanceOf[js.Any])
-    if (welcomeScreenMeetingInformation != null) __obj.updateDynamic("welcomeScreenMeetingInformation")(welcomeScreenMeetingInformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Windows10TeamGeneralConfiguration]
   }
+  @scala.inline
+  implicit class Windows10TeamGeneralConfigurationOps[Self <: Windows10TeamGeneralConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAzureOperationalInsightsBlockTelemetry(value: Boolean): Self = this.set("azureOperationalInsightsBlockTelemetry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAzureOperationalInsightsBlockTelemetry: Self = this.set("azureOperationalInsightsBlockTelemetry", js.undefined)
+    @scala.inline
+    def setAzureOperationalInsightsWorkspaceId(value: String): Self = this.set("azureOperationalInsightsWorkspaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAzureOperationalInsightsWorkspaceId: Self = this.set("azureOperationalInsightsWorkspaceId", js.undefined)
+    @scala.inline
+    def setAzureOperationalInsightsWorkspaceKey(value: String): Self = this.set("azureOperationalInsightsWorkspaceKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAzureOperationalInsightsWorkspaceKey: Self = this.set("azureOperationalInsightsWorkspaceKey", js.undefined)
+    @scala.inline
+    def setConnectAppBlockAutoLaunch(value: Boolean): Self = this.set("connectAppBlockAutoLaunch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectAppBlockAutoLaunch: Self = this.set("connectAppBlockAutoLaunch", js.undefined)
+    @scala.inline
+    def setMaintenanceWindowBlocked(value: Boolean): Self = this.set("maintenanceWindowBlocked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceWindowBlocked: Self = this.set("maintenanceWindowBlocked", js.undefined)
+    @scala.inline
+    def setMaintenanceWindowDurationInHours(value: Double): Self = this.set("maintenanceWindowDurationInHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceWindowDurationInHours: Self = this.set("maintenanceWindowDurationInHours", js.undefined)
+    @scala.inline
+    def setMaintenanceWindowStartTime(value: String): Self = this.set("maintenanceWindowStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceWindowStartTime: Self = this.set("maintenanceWindowStartTime", js.undefined)
+    @scala.inline
+    def setMiracastBlocked(value: Boolean): Self = this.set("miracastBlocked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiracastBlocked: Self = this.set("miracastBlocked", js.undefined)
+    @scala.inline
+    def setMiracastChannel(value: MiracastChannel): Self = this.set("miracastChannel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiracastChannel: Self = this.set("miracastChannel", js.undefined)
+    @scala.inline
+    def setMiracastRequirePin(value: Boolean): Self = this.set("miracastRequirePin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiracastRequirePin: Self = this.set("miracastRequirePin", js.undefined)
+    @scala.inline
+    def setSettingsBlockMyMeetingsAndFiles(value: Boolean): Self = this.set("settingsBlockMyMeetingsAndFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsBlockMyMeetingsAndFiles: Self = this.set("settingsBlockMyMeetingsAndFiles", js.undefined)
+    @scala.inline
+    def setSettingsBlockSessionResume(value: Boolean): Self = this.set("settingsBlockSessionResume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsBlockSessionResume: Self = this.set("settingsBlockSessionResume", js.undefined)
+    @scala.inline
+    def setSettingsBlockSigninSuggestions(value: Boolean): Self = this.set("settingsBlockSigninSuggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsBlockSigninSuggestions: Self = this.set("settingsBlockSigninSuggestions", js.undefined)
+    @scala.inline
+    def setSettingsDefaultVolume(value: Double): Self = this.set("settingsDefaultVolume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsDefaultVolume: Self = this.set("settingsDefaultVolume", js.undefined)
+    @scala.inline
+    def setSettingsScreenTimeoutInMinutes(value: Double): Self = this.set("settingsScreenTimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsScreenTimeoutInMinutes: Self = this.set("settingsScreenTimeoutInMinutes", js.undefined)
+    @scala.inline
+    def setSettingsSessionTimeoutInMinutes(value: Double): Self = this.set("settingsSessionTimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsSessionTimeoutInMinutes: Self = this.set("settingsSessionTimeoutInMinutes", js.undefined)
+    @scala.inline
+    def setSettingsSleepTimeoutInMinutes(value: Double): Self = this.set("settingsSleepTimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsSleepTimeoutInMinutes: Self = this.set("settingsSleepTimeoutInMinutes", js.undefined)
+    @scala.inline
+    def setWelcomeScreenBackgroundImageUrl(value: String): Self = this.set("welcomeScreenBackgroundImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWelcomeScreenBackgroundImageUrl: Self = this.set("welcomeScreenBackgroundImageUrl", js.undefined)
+    @scala.inline
+    def setWelcomeScreenBlockAutomaticWakeUp(value: Boolean): Self = this.set("welcomeScreenBlockAutomaticWakeUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWelcomeScreenBlockAutomaticWakeUp: Self = this.set("welcomeScreenBlockAutomaticWakeUp", js.undefined)
+    @scala.inline
+    def setWelcomeScreenMeetingInformation(value: WelcomeScreenMeetingInformation): Self = this.set("welcomeScreenMeetingInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWelcomeScreenMeetingInformation: Self = this.set("welcomeScreenMeetingInformation", js.undefined)
+  }
+  
 }
 

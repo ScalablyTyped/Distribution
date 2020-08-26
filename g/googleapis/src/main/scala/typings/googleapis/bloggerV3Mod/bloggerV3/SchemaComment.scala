@@ -1,7 +1,7 @@
 package typings.googleapis.bloggerV3Mod.bloggerV3
 
-import typings.googleapis.anon.IdString
 import typings.googleapis.anon.Image
+import typings.googleapis.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ trait SchemaComment extends js.Object {
   /**
     * Data about the blog containing this comment.
     */
-  var blog: js.UndefOr[IdString] = js.native
+  var blog: js.UndefOr[`0`] = js.native
   /**
     * The actual content of the comment. May include HTML markup.
     */
@@ -27,7 +27,7 @@ trait SchemaComment extends js.Object {
   /**
     * Data about the comment this is in reply to.
     */
-  var inReplyTo: js.UndefOr[IdString] = js.native
+  var inReplyTo: js.UndefOr[`0`] = js.native
   /**
     * The kind of this entry. Always blogger#comment
     */
@@ -35,7 +35,7 @@ trait SchemaComment extends js.Object {
   /**
     * Data about the post containing this comment.
     */
-  var post: js.UndefOr[IdString] = js.native
+  var post: js.UndefOr[`0`] = js.native
   /**
     * RFC 3339 date-time when this comment was published.
     */
@@ -56,32 +56,66 @@ trait SchemaComment extends js.Object {
 
 object SchemaComment {
   @scala.inline
-  def apply(
-    author: Image = null,
-    blog: IdString = null,
-    content: String = null,
-    id: String = null,
-    inReplyTo: IdString = null,
-    kind: String = null,
-    post: IdString = null,
-    published: String = null,
-    selfLink: String = null,
-    status: String = null,
-    updated: String = null
-  ): SchemaComment = {
+  def apply(): SchemaComment = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (blog != null) __obj.updateDynamic("blog")(blog.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
-    if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaComment]
   }
+  @scala.inline
+  implicit class SchemaCommentOps[Self <: SchemaComment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthor(value: Image): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setBlog(value: `0`): Self = this.set("blog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlog: Self = this.set("blog", js.undefined)
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInReplyTo(value: `0`): Self = this.set("inReplyTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInReplyTo: Self = this.set("inReplyTo", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPost(value: `0`): Self = this.set("post", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePost: Self = this.set("post", js.undefined)
+    @scala.inline
+    def setPublished(value: String): Self = this.set("published", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublished: Self = this.set("published", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+  }
+  
 }
 

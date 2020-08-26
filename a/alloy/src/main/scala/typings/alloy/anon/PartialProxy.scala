@@ -8,58 +8,97 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<titanium.Titanium.Proxy> */
+@js.native
 trait PartialProxy extends js.Object {
   var addEventListener: js.UndefOr[
     js.Function2[/* name */ String, /* callback */ js.Function1[/* param0 */ Event, Unit], Unit]
-  ] = js.undefined
-  var apiName: js.UndefOr[String] = js.undefined
-  var applyProperties: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.undefined
-  var bubbleParent: js.UndefOr[Boolean] = js.undefined
-  var fireEvent: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.undefined
-  var getApiName: js.UndefOr[js.Function0[String]] = js.undefined
-  var getBubbleParent: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  var getLifecycleContainer: js.UndefOr[js.Function0[Window | TabGroup]] = js.undefined
-  var id: js.UndefOr[String | Double] = js.undefined
-  var lifecycleContainer: js.UndefOr[Window | TabGroup] = js.undefined
+  ] = js.native
+  var apiName: js.UndefOr[String] = js.native
+  var applyProperties: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.native
+  var bubbleParent: js.UndefOr[Boolean] = js.native
+  var fireEvent: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.native
+  var getApiName: js.UndefOr[js.Function0[String]] = js.native
+  var getBubbleParent: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getLifecycleContainer: js.UndefOr[js.Function0[Window | TabGroup]] = js.native
+  var id: js.UndefOr[String | Double] = js.native
+  var lifecycleContainer: js.UndefOr[Window | TabGroup] = js.native
   var removeEventListener: js.UndefOr[
     js.Function2[/* name */ String, /* callback */ js.Function1[/* param0 */ Event, Unit], Unit]
-  ] = js.undefined
-  var setBubbleParent: js.UndefOr[js.Function1[/* bubbleParent */ Boolean, Unit]] = js.undefined
-  var setLifecycleContainer: js.UndefOr[js.Function1[/* lifecycleContainer */ Window | TabGroup, Unit]] = js.undefined
+  ] = js.native
+  var setBubbleParent: js.UndefOr[js.Function1[/* bubbleParent */ Boolean, Unit]] = js.native
+  var setLifecycleContainer: js.UndefOr[js.Function1[/* lifecycleContainer */ Window | TabGroup, Unit]] = js.native
 }
 
 object PartialProxy {
   @scala.inline
-  def apply(
-    addEventListener: (/* name */ String, /* callback */ js.Function1[/* param0 */ Event, Unit]) => Unit = null,
-    apiName: String = null,
-    applyProperties: /* props */ js.Any => Unit = null,
-    bubbleParent: js.UndefOr[Boolean] = js.undefined,
-    fireEvent: /* name */ String => Unit = null,
-    getApiName: () => String = null,
-    getBubbleParent: () => Boolean = null,
-    getLifecycleContainer: () => Window | TabGroup = null,
-    id: String | Double = null,
-    lifecycleContainer: Window | TabGroup = null,
-    removeEventListener: (/* name */ String, /* callback */ js.Function1[/* param0 */ Event, Unit]) => Unit = null,
-    setBubbleParent: /* bubbleParent */ Boolean => Unit = null,
-    setLifecycleContainer: /* lifecycleContainer */ Window | TabGroup => Unit = null
-  ): PartialProxy = {
+  def apply(): PartialProxy = {
     val __obj = js.Dynamic.literal()
-    if (addEventListener != null) __obj.updateDynamic("addEventListener")(js.Any.fromFunction2(addEventListener))
-    if (apiName != null) __obj.updateDynamic("apiName")(apiName.asInstanceOf[js.Any])
-    if (applyProperties != null) __obj.updateDynamic("applyProperties")(js.Any.fromFunction1(applyProperties))
-    if (!js.isUndefined(bubbleParent)) __obj.updateDynamic("bubbleParent")(bubbleParent.get.asInstanceOf[js.Any])
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction1(fireEvent))
-    if (getApiName != null) __obj.updateDynamic("getApiName")(js.Any.fromFunction0(getApiName))
-    if (getBubbleParent != null) __obj.updateDynamic("getBubbleParent")(js.Any.fromFunction0(getBubbleParent))
-    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(js.Any.fromFunction0(getLifecycleContainer))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
-    if (removeEventListener != null) __obj.updateDynamic("removeEventListener")(js.Any.fromFunction2(removeEventListener))
-    if (setBubbleParent != null) __obj.updateDynamic("setBubbleParent")(js.Any.fromFunction1(setBubbleParent))
-    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(js.Any.fromFunction1(setLifecycleContainer))
     __obj.asInstanceOf[PartialProxy]
   }
+  @scala.inline
+  implicit class PartialProxyOps[Self <: PartialProxy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddEventListener(value: (/* name */ String, /* callback */ js.Function1[/* param0 */ Event, Unit]) => Unit): Self = this.set("addEventListener", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAddEventListener: Self = this.set("addEventListener", js.undefined)
+    @scala.inline
+    def setApiName(value: String): Self = this.set("apiName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiName: Self = this.set("apiName", js.undefined)
+    @scala.inline
+    def setApplyProperties(value: /* props */ js.Any => Unit): Self = this.set("applyProperties", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteApplyProperties: Self = this.set("applyProperties", js.undefined)
+    @scala.inline
+    def setBubbleParent(value: Boolean): Self = this.set("bubbleParent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBubbleParent: Self = this.set("bubbleParent", js.undefined)
+    @scala.inline
+    def setFireEvent(value: /* name */ String => Unit): Self = this.set("fireEvent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFireEvent: Self = this.set("fireEvent", js.undefined)
+    @scala.inline
+    def setGetApiName(value: () => String): Self = this.set("getApiName", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetApiName: Self = this.set("getApiName", js.undefined)
+    @scala.inline
+    def setGetBubbleParent(value: () => Boolean): Self = this.set("getBubbleParent", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetBubbleParent: Self = this.set("getBubbleParent", js.undefined)
+    @scala.inline
+    def setGetLifecycleContainer(value: () => Window | TabGroup): Self = this.set("getLifecycleContainer", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetLifecycleContainer: Self = this.set("getLifecycleContainer", js.undefined)
+    @scala.inline
+    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLifecycleContainer(value: Window | TabGroup): Self = this.set("lifecycleContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycleContainer: Self = this.set("lifecycleContainer", js.undefined)
+    @scala.inline
+    def setRemoveEventListener(value: (/* name */ String, /* callback */ js.Function1[/* param0 */ Event, Unit]) => Unit): Self = this.set("removeEventListener", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRemoveEventListener: Self = this.set("removeEventListener", js.undefined)
+    @scala.inline
+    def setSetBubbleParent(value: /* bubbleParent */ Boolean => Unit): Self = this.set("setBubbleParent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBubbleParent: Self = this.set("setBubbleParent", js.undefined)
+    @scala.inline
+    def setSetLifecycleContainer(value: /* lifecycleContainer */ Window | TabGroup => Unit): Self = this.set("setLifecycleContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetLifecycleContainer: Self = this.set("setLifecycleContainer", js.undefined)
+  }
+  
 }
 

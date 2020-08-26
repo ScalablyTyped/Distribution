@@ -21,9 +21,8 @@ trait Output extends js.Object
 
 object Output {
   @scala.inline
-  def IDisplayData(data: StringDictionary[js.Any], output_type: display_data, metadata: js.Object = null): Output = {
+  def IDisplayData(data: StringDictionary[js.Any], output_type: display_data): Output = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
   @scala.inline
@@ -32,26 +31,18 @@ object Output {
     __obj.asInstanceOf[Output]
   }
   @scala.inline
-  def IUpdateDisplayData(data: StringDictionary[js.Any], output_type: update_display_data, metadata: js.Object = null): Output = {
+  def IUpdateDisplayData(data: StringDictionary[js.Any], output_type: update_display_data): Output = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
   @scala.inline
-  def IExecuteResult(
-    data: StringDictionary[js.Any],
-    execution_count: Double,
-    output_type: execute_result,
-    metadata: js.Object = null
-  ): Output = {
+  def IExecuteResult(data: StringDictionary[js.Any], execution_count: Double, output_type: execute_result): Output = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], execution_count = execution_count.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
   @scala.inline
-  def IErrorResult(ename: String, evalue: String, output_type: error, traceback: js.Array[String] = null): Output = {
+  def IErrorResult(ename: String, evalue: String, output_type: error): Output = {
     val __obj = js.Dynamic.literal(ename = ename.asInstanceOf[js.Any], evalue = evalue.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any])
-    if (traceback != null) __obj.updateDynamic("traceback")(traceback.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
 }

@@ -18,11 +18,32 @@ trait ListNamedQueriesOutput extends js.Object {
 
 object ListNamedQueriesOutput {
   @scala.inline
-  def apply(NamedQueryIds: NamedQueryIdList = null, NextToken: Token = null): ListNamedQueriesOutput = {
+  def apply(): ListNamedQueriesOutput = {
     val __obj = js.Dynamic.literal()
-    if (NamedQueryIds != null) __obj.updateDynamic("NamedQueryIds")(NamedQueryIds.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNamedQueriesOutput]
   }
+  @scala.inline
+  implicit class ListNamedQueriesOutputOps[Self <: ListNamedQueriesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamedQueryIdsVarargs(value: NamedQueryId*): Self = this.set("NamedQueryIds", js.Array(value :_*))
+    @scala.inline
+    def setNamedQueryIds(value: NamedQueryIdList): Self = this.set("NamedQueryIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedQueryIds: Self = this.set("NamedQueryIds", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

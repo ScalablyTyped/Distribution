@@ -233,7 +233,11 @@ object underscoreAugmentingMod extends js.Object {
       * @param tsep
       */
     def numberFormat(number: Double): String = js.native
+    def numberFormat(number: Double, dec: js.UndefOr[scala.Nothing], dsep: js.UndefOr[scala.Nothing], tsep: String): String = js.native
+    def numberFormat(number: Double, dec: js.UndefOr[scala.Nothing], dsep: String): String = js.native
+    def numberFormat(number: Double, dec: js.UndefOr[scala.Nothing], dsep: String, tsep: String): String = js.native
     def numberFormat(number: Double, dec: Double): String = js.native
+    def numberFormat(number: Double, dec: Double, dsep: js.UndefOr[scala.Nothing], tsep: String): String = js.native
     def numberFormat(number: Double, dec: Double, dsep: String): String = js.native
     def numberFormat(number: Double, dec: Double, dsep: String, tsep: String): String = js.native
     /**
@@ -251,6 +255,7 @@ object underscoreAugmentingMod extends js.Object {
       * @param type
       */
     def pad(str: String, length: Double): String = js.native
+    def pad(str: String, length: Double, padStr: js.UndefOr[scala.Nothing], `type`: String): String = js.native
     def pad(str: String, length: Double, padStr: String): String = js.native
     def pad(str: String, length: Double, padStr: String, `type`: String): String = js.native
     /**
@@ -442,6 +447,7 @@ object underscoreAugmentingMod extends js.Object {
       * @param falseValues
       */
     def toBoolean(str: String): Boolean = js.native
+    def toBoolean(str: String, trueValues: js.UndefOr[scala.Nothing], falseValues: js.Array[_]): Boolean = js.native
     def toBoolean(str: String, trueValues: js.Array[_]): Boolean = js.native
     def toBoolean(str: String, trueValues: js.Array[_], falseValues: js.Array[_]): Boolean = js.native
     /**
@@ -464,7 +470,16 @@ object underscoreAugmentingMod extends js.Object {
       * @param serial
       */
     def toSentence(array: js.Array[_]): String = js.native
+    def toSentence(
+      array: js.Array[_],
+      separator: js.UndefOr[scala.Nothing],
+      lastSeparator: js.UndefOr[scala.Nothing],
+      serial: Boolean
+    ): String = js.native
+    def toSentence(array: js.Array[_], separator: js.UndefOr[scala.Nothing], lastSeparator: String): String = js.native
+    def toSentence(array: js.Array[_], separator: js.UndefOr[scala.Nothing], lastSeparator: String, serial: Boolean): String = js.native
     def toSentence(array: js.Array[_], separator: String): String = js.native
+    def toSentence(array: js.Array[_], separator: String, lastSeparator: js.UndefOr[scala.Nothing], serial: Boolean): String = js.native
     def toSentence(array: js.Array[_], separator: String, lastSeparator: String): String = js.native
     def toSentence(array: js.Array[_], separator: String, lastSeparator: String, serial: Boolean): String = js.native
     /**
@@ -474,6 +489,7 @@ object underscoreAugmentingMod extends js.Object {
       * @param lastSeparator
       */
     def toSentenceSerial(array: js.Array[_]): String = js.native
+    def toSentenceSerial(array: js.Array[_], separator: js.UndefOr[scala.Nothing], lastSeparator: String): String = js.native
     def toSentenceSerial(array: js.Array[_], separator: String): String = js.native
     def toSentenceSerial(array: js.Array[_], separator: String, lastSeparator: String): String = js.native
     /**

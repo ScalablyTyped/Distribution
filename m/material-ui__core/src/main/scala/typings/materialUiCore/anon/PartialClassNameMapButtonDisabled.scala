@@ -14,12 +14,34 @@ trait PartialClassNameMapButtonDisabled extends js.Object {
 
 object PartialClassNameMapButtonDisabled {
   @scala.inline
-  def apply(disabled: String = null, focusVisible: String = null, root: String = null): PartialClassNameMapButtonDisabled = {
+  def apply(): PartialClassNameMapButtonDisabled = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapButtonDisabled]
   }
+  @scala.inline
+  implicit class PartialClassNameMapButtonDisabledOps[Self <: PartialClassNameMapButtonDisabled] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setFocusVisible(value: String): Self = this.set("focusVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusVisible: Self = this.set("focusVisible", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

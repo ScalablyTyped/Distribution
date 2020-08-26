@@ -28,6 +28,7 @@ class ResourceShelves protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Shelf] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1Shelf]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Shelf] = js.native
   def get(params: ParamsResourceShelvesGet): GaxiosPromise[SchemaGoogleExampleLibraryagentV1Shelf] = js.native
   def get(
     params: ParamsResourceShelvesGet,
@@ -60,6 +61,7 @@ class ResourceShelves protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListShelvesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleExampleLibraryagentV1ListShelvesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListShelvesResponse] = js.native
   def list(params: ParamsResourceShelvesList): GaxiosPromise[SchemaGoogleExampleLibraryagentV1ListShelvesResponse] = js.native
   def list(
     params: ParamsResourceShelvesList,

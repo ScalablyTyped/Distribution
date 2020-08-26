@@ -22,16 +22,34 @@ trait MetricFilterMatchRecord extends js.Object {
 
 object MetricFilterMatchRecord {
   @scala.inline
-  def apply(
-    eventMessage: EventMessage = null,
-    eventNumber: js.UndefOr[EventNumber] = js.undefined,
-    extractedValues: ExtractedValues = null
-  ): MetricFilterMatchRecord = {
+  def apply(): MetricFilterMatchRecord = {
     val __obj = js.Dynamic.literal()
-    if (eventMessage != null) __obj.updateDynamic("eventMessage")(eventMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventNumber)) __obj.updateDynamic("eventNumber")(eventNumber.get.asInstanceOf[js.Any])
-    if (extractedValues != null) __obj.updateDynamic("extractedValues")(extractedValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricFilterMatchRecord]
   }
+  @scala.inline
+  implicit class MetricFilterMatchRecordOps[Self <: MetricFilterMatchRecord] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventMessage(value: EventMessage): Self = this.set("eventMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventMessage: Self = this.set("eventMessage", js.undefined)
+    @scala.inline
+    def setEventNumber(value: EventNumber): Self = this.set("eventNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventNumber: Self = this.set("eventNumber", js.undefined)
+    @scala.inline
+    def setExtractedValues(value: ExtractedValues): Self = this.set("extractedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtractedValues: Self = this.set("extractedValues", js.undefined)
+  }
+  
 }
 

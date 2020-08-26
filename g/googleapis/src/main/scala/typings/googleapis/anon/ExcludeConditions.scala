@@ -13,11 +13,30 @@ trait ExcludeConditions extends js.Object {
 
 object ExcludeConditions {
   @scala.inline
-  def apply(excludeConditions: ExclusionDuration = null, includeConditions: SchemaIncludeConditions = null): ExcludeConditions = {
+  def apply(): ExcludeConditions = {
     val __obj = js.Dynamic.literal()
-    if (excludeConditions != null) __obj.updateDynamic("excludeConditions")(excludeConditions.asInstanceOf[js.Any])
-    if (includeConditions != null) __obj.updateDynamic("includeConditions")(includeConditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcludeConditions]
   }
+  @scala.inline
+  implicit class ExcludeConditionsOps[Self <: ExcludeConditions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExcludeConditions(value: ExclusionDuration): Self = this.set("excludeConditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeConditions: Self = this.set("excludeConditions", js.undefined)
+    @scala.inline
+    def setIncludeConditions(value: SchemaIncludeConditions): Self = this.set("includeConditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeConditions: Self = this.set("includeConditions", js.undefined)
+  }
+  
 }
 

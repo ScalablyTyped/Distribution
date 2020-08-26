@@ -12,10 +12,6 @@ object providerErrorMod extends js.Object {
   class ProviderError protected () extends Error {
     def this(message: String) = this()
     def this(message: String, tryNextLink: Boolean) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     val tryNextLink: Boolean = js.native
   }
   

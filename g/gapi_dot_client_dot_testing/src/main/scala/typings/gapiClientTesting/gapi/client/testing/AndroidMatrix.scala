@@ -4,47 +4,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AndroidMatrix extends js.Object {
   /**
     * The ids of the set of Android device to be used.
     * Use the EnvironmentDiscoveryService to get supported options.
     * Required
     */
-  var androidModelIds: js.UndefOr[js.Array[String]] = js.undefined
+  var androidModelIds: js.UndefOr[js.Array[String]] = js.native
   /**
     * The ids of the set of Android OS version to be used.
     * Use the EnvironmentDiscoveryService to get supported options.
     * Required
     */
-  var androidVersionIds: js.UndefOr[js.Array[String]] = js.undefined
+  var androidVersionIds: js.UndefOr[js.Array[String]] = js.native
   /**
     * The set of locales the test device will enable for testing.
     * Use the EnvironmentDiscoveryService to get supported options.
     * Required
     */
-  var locales: js.UndefOr[js.Array[String]] = js.undefined
+  var locales: js.UndefOr[js.Array[String]] = js.native
   /**
     * The set of orientations to test with.
     * Use the EnvironmentDiscoveryService to get supported options.
     * Required
     */
-  var orientations: js.UndefOr[js.Array[String]] = js.undefined
+  var orientations: js.UndefOr[js.Array[String]] = js.native
 }
 
 object AndroidMatrix {
   @scala.inline
-  def apply(
-    androidModelIds: js.Array[String] = null,
-    androidVersionIds: js.Array[String] = null,
-    locales: js.Array[String] = null,
-    orientations: js.Array[String] = null
-  ): AndroidMatrix = {
+  def apply(): AndroidMatrix = {
     val __obj = js.Dynamic.literal()
-    if (androidModelIds != null) __obj.updateDynamic("androidModelIds")(androidModelIds.asInstanceOf[js.Any])
-    if (androidVersionIds != null) __obj.updateDynamic("androidVersionIds")(androidVersionIds.asInstanceOf[js.Any])
-    if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
-    if (orientations != null) __obj.updateDynamic("orientations")(orientations.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidMatrix]
   }
+  @scala.inline
+  implicit class AndroidMatrixOps[Self <: AndroidMatrix] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidModelIdsVarargs(value: String*): Self = this.set("androidModelIds", js.Array(value :_*))
+    @scala.inline
+    def setAndroidModelIds(value: js.Array[String]): Self = this.set("androidModelIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidModelIds: Self = this.set("androidModelIds", js.undefined)
+    @scala.inline
+    def setAndroidVersionIdsVarargs(value: String*): Self = this.set("androidVersionIds", js.Array(value :_*))
+    @scala.inline
+    def setAndroidVersionIds(value: js.Array[String]): Self = this.set("androidVersionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidVersionIds: Self = this.set("androidVersionIds", js.undefined)
+    @scala.inline
+    def setLocalesVarargs(value: String*): Self = this.set("locales", js.Array(value :_*))
+    @scala.inline
+    def setLocales(value: js.Array[String]): Self = this.set("locales", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocales: Self = this.set("locales", js.undefined)
+    @scala.inline
+    def setOrientationsVarargs(value: String*): Self = this.set("orientations", js.Array(value :_*))
+    @scala.inline
+    def setOrientations(value: js.Array[String]): Self = this.set("orientations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientations: Self = this.set("orientations", js.undefined)
+  }
+  
 }
 

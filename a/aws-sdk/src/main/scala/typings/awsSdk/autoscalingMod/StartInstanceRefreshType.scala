@@ -22,15 +22,32 @@ trait StartInstanceRefreshType extends js.Object {
 
 object StartInstanceRefreshType {
   @scala.inline
-  def apply(
-    AutoScalingGroupName: XmlStringMaxLen255,
-    Preferences: RefreshPreferences = null,
-    Strategy: RefreshStrategy = null
-  ): StartInstanceRefreshType = {
+  def apply(AutoScalingGroupName: XmlStringMaxLen255): StartInstanceRefreshType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
-    if (Preferences != null) __obj.updateDynamic("Preferences")(Preferences.asInstanceOf[js.Any])
-    if (Strategy != null) __obj.updateDynamic("Strategy")(Strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartInstanceRefreshType]
   }
+  @scala.inline
+  implicit class StartInstanceRefreshTypeOps[Self <: StartInstanceRefreshType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPreferences(value: RefreshPreferences): Self = this.set("Preferences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferences: Self = this.set("Preferences", js.undefined)
+    @scala.inline
+    def setStrategy(value: RefreshStrategy): Self = this.set("Strategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrategy: Self = this.set("Strategy", js.undefined)
+  }
+  
 }
 

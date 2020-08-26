@@ -10,9 +10,9 @@ AngularJS module for sanitizing HTML
 | ------------------ | :-------------: |
 | Full name          | angular-sanitize |
 | Keywords           | angular, framework, browser, html, client-side |
-| # releases         | 15 |
+| # releases         | 14 |
 | # dependents       | 320 |
-| # downloads        | 10550472 |
+| # downloads        | 10633664 |
 | # stars            | 7 |
 
 ## Links

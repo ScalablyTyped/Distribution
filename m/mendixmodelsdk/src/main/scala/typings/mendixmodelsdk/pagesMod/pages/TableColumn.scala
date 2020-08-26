@@ -25,7 +25,7 @@ class TableColumn protected () extends Element {
   var model_FTableColumn: IModel = js.native
   def containerAsTable: Table = js.native
   def width: Double = js.native
-  def width(newValue: Double): js.Any = js.native
+  def width_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

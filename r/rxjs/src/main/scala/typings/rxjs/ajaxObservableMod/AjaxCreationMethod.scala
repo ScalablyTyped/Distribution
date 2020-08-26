@@ -16,12 +16,15 @@ trait AjaxCreationMethod extends js.Object {
   def getJSON[T](url: String): Observable[T] = js.native
   def getJSON[T](url: String, headers: js.Object): Observable[T] = js.native
   def patch(url: String): Observable[AjaxResponse] = js.native
+  def patch(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[AjaxResponse] = js.native
   def patch(url: String, body: js.Any): Observable[AjaxResponse] = js.native
   def patch(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = js.native
   def post(url: String): Observable[AjaxResponse] = js.native
+  def post(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[AjaxResponse] = js.native
   def post(url: String, body: js.Any): Observable[AjaxResponse] = js.native
   def post(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = js.native
   def put(url: String): Observable[AjaxResponse] = js.native
+  def put(url: String, body: js.UndefOr[scala.Nothing], headers: js.Object): Observable[AjaxResponse] = js.native
   def put(url: String, body: js.Any): Observable[AjaxResponse] = js.native
   def put(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = js.native
 }

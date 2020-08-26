@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IReferrerInfo extends js.Object {
   /** 来源小程序或公众号或App的 appId
     *
@@ -15,17 +16,35 @@ trait IReferrerInfo extends js.Object {
     * - 1038（从另一个小程序返回）：来源小程序 appId
     * - 1043（公众号模板消息）：来源公众号 appId
     */
-  var appId: String
+  var appId: String = js.native
   /** 来源小程序传过来的数据，scene=1037或1038时支持 */
-  var extraData: js.UndefOr[js.Any] = js.undefined
+  var extraData: js.UndefOr[js.Any] = js.native
 }
 
 object IReferrerInfo {
   @scala.inline
-  def apply(appId: String, extraData: js.Any = null): IReferrerInfo = {
+  def apply(appId: String): IReferrerInfo = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
-    if (extraData != null) __obj.updateDynamic("extraData")(extraData.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReferrerInfo]
   }
+  @scala.inline
+  implicit class IReferrerInfoOps[Self <: IReferrerInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExtraData(value: js.Any): Self = this.set("extraData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraData: Self = this.set("extraData", js.undefined)
+  }
+  
 }
 

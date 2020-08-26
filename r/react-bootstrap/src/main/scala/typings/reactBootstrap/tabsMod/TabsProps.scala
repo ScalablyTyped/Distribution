@@ -7,57 +7,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabsProps
   extends AllHTMLAttributes[Tabs]
      with ClassAttributes[Tabs] {
-  var activeKey: js.UndefOr[js.Any] = js.undefined
-  var animation: js.UndefOr[Boolean] = js.undefined
-  var bsStyle: js.UndefOr[String] = js.undefined
-  var defaultActiveKey: js.UndefOr[js.Any] = js.undefined
-  var justified: js.UndefOr[Boolean] = js.undefined
+  var activeKey: js.UndefOr[js.Any] = js.native
+  var animation: js.UndefOr[Boolean] = js.native
+  var bsStyle: js.UndefOr[String] = js.native
+  var defaultActiveKey: js.UndefOr[js.Any] = js.native
+  var justified: js.UndefOr[Boolean] = js.native
    // TODO: Add more specific type
-  var mountOnEnter: js.UndefOr[Boolean] = js.undefined
+  var mountOnEnter: js.UndefOr[Boolean] = js.native
   @JSName("onSelect")
-  var onSelect_TabsProps: js.UndefOr[SelectCallback] = js.undefined
-  var paneWidth: js.UndefOr[js.Any] = js.undefined
+  var onSelect_TabsProps: js.UndefOr[SelectCallback] = js.native
+  var paneWidth: js.UndefOr[js.Any] = js.native
    // TODO: Add more specific type
-  var position: js.UndefOr[String] = js.undefined
-  var tabWidth: js.UndefOr[js.Any] = js.undefined
-  var unmountOnExit: js.UndefOr[Boolean] = js.undefined
+  var position: js.UndefOr[String] = js.native
+  var tabWidth: js.UndefOr[js.Any] = js.native
+  var unmountOnExit: js.UndefOr[Boolean] = js.native
 }
 
 object TabsProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[Tabs] = null,
-    ClassAttributes: ClassAttributes[Tabs] = null,
-    activeKey: js.Any = null,
-    animation: js.UndefOr[Boolean] = js.undefined,
-    bsStyle: String = null,
-    defaultActiveKey: js.Any = null,
-    justified: js.UndefOr[Boolean] = js.undefined,
-    mountOnEnter: js.UndefOr[Boolean] = js.undefined,
-    onSelect: SelectCallback = null,
-    paneWidth: js.Any = null,
-    position: String = null,
-    tabWidth: js.Any = null,
-    unmountOnExit: js.UndefOr[Boolean] = js.undefined
-  ): TabsProps = {
+  def apply(): TabsProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (activeKey != null) __obj.updateDynamic("activeKey")(activeKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
-    if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(justified)) __obj.updateDynamic("justified")(justified.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mountOnEnter)) __obj.updateDynamic("mountOnEnter")(mountOnEnter.get.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
-    if (paneWidth != null) __obj.updateDynamic("paneWidth")(paneWidth.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (tabWidth != null) __obj.updateDynamic("tabWidth")(tabWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsProps]
   }
+  @scala.inline
+  implicit class TabsPropsOps[Self <: TabsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveKey(value: js.Any): Self = this.set("activeKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveKey: Self = this.set("activeKey", js.undefined)
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setBsStyle(value: String): Self = this.set("bsStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsStyle: Self = this.set("bsStyle", js.undefined)
+    @scala.inline
+    def setDefaultActiveKey(value: js.Any): Self = this.set("defaultActiveKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultActiveKey: Self = this.set("defaultActiveKey", js.undefined)
+    @scala.inline
+    def setJustified(value: Boolean): Self = this.set("justified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJustified: Self = this.set("justified", js.undefined)
+    @scala.inline
+    def setMountOnEnter(value: Boolean): Self = this.set("mountOnEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountOnEnter: Self = this.set("mountOnEnter", js.undefined)
+    @scala.inline
+    def setOnSelect(value: SelectCallback): Self = this.set("onSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setPaneWidth(value: js.Any): Self = this.set("paneWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaneWidth: Self = this.set("paneWidth", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setTabWidth(value: js.Any): Self = this.set("tabWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabWidth: Self = this.set("tabWidth", js.undefined)
+    @scala.inline
+    def setUnmountOnExit(value: Boolean): Self = this.set("unmountOnExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnmountOnExit: Self = this.set("unmountOnExit", js.undefined)
+  }
+  
 }
 

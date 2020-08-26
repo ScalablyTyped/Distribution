@@ -5,25 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Try[A] extends js.Object {
-  var isFailure: Boolean
-  var isSuccess: Boolean
-  def apply1[B, C](ob: Try[B], f: js.Function2[/* a */ A, /* b */ B, C]): Try[C]
-  def apply2[B, C, D](ob: Try[B], oc: Try[C], f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Try[D]
-  def chain[B](ob: Try[B]): TryBuilder1[A, B]
-  def failed(): Try[A]
-  def filter(f: js.Function1[/* a */ A, Boolean]): Try[A]
-  def flatMap[B](f: js.Function1[/* a */ A, Try[B]]): Try[B]
-  def fold[B](fe: js.Function1[/* e */ Error, B], ff: js.Function1[/* a */ A, B]): B
-  def foreach[B](f: js.Function1[/* a */ A, Unit]): Unit
-  def get(): A
-  def getError(): Error
-  def getOrElse[B /* <: A */](a: B): A
-  def map[B](f: js.Function1[/* a */ A, B]): Try[B]
-  def orElse[B /* <: A */](a: Try[B]): Try[A]
-  def recover[B /* <: A */](f: js.Function1[/* e */ Error, Optional[Try[B]]]): Try[A]
-  def toOptional(): Optional[A]
-  def transform[B](fs: js.Function1[/* a */ A, Try[B]], ff: js.Function1[/* e */ Error, Try[B]]): Try[B]
+  var isFailure: Boolean = js.native
+  var isSuccess: Boolean = js.native
+  def apply1[B, C](ob: Try[B], f: js.Function2[/* a */ A, /* b */ B, C]): Try[C] = js.native
+  def apply2[B, C, D](ob: Try[B], oc: Try[C], f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Try[D] = js.native
+  def chain[B](ob: Try[B]): TryBuilder1[A, B] = js.native
+  def failed(): Try[A] = js.native
+  def filter(f: js.Function1[/* a */ A, Boolean]): Try[A] = js.native
+  def flatMap[B](f: js.Function1[/* a */ A, Try[B]]): Try[B] = js.native
+  def fold[B](fe: js.Function1[/* e */ Error, B], ff: js.Function1[/* a */ A, B]): B = js.native
+  def foreach[B](f: js.Function1[/* a */ A, Unit]): Unit = js.native
+  def get(): A = js.native
+  def getError(): Error = js.native
+  def getOrElse[B /* <: A */](a: B): A = js.native
+  def map[B](f: js.Function1[/* a */ A, B]): Try[B] = js.native
+  def orElse[B /* <: A */](a: Try[B]): Try[A] = js.native
+  def recover[B /* <: A */](f: js.Function1[/* e */ Error, Optional[Try[B]]]): Try[A] = js.native
+  def toOptional(): Optional[A] = js.native
+  def transform[B](fs: js.Function1[/* a */ A, Try[B]], ff: js.Function1[/* e */ Error, Try[B]]): Try[B] = js.native
 }
 
 @JSImport("scalike", "Try")

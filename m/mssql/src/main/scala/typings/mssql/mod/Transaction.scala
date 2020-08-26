@@ -16,6 +16,10 @@ class Transaction () extends EventEmitter {
     * @param [callback] A callback which is called after transaction has began, or an error has occurred. If omited, method returns Promise.
     */
   def begin(): js.Promise[Transaction] = js.native
+  def begin(
+    isolationLevel: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ js.UndefOr[ConnectionError | TransactionError], Unit]
+  ): Transaction = js.native
   def begin(isolationLevel: IIsolationLevel): js.Promise[Transaction] = js.native
   def begin(
     isolationLevel: IIsolationLevel,

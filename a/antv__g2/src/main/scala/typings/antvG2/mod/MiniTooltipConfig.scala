@@ -1,69 +1,61 @@
 package typings.antvG2.mod
 
-import typings.antvG2.anon.Style
-import typings.antvG2.antvG2Strings.bottom
-import typings.antvG2.antvG2Strings.click
-import typings.antvG2.antvG2Strings.left
 import typings.antvG2.antvG2Strings.mini
-import typings.antvG2.antvG2Strings.mousemove
-import typings.antvG2.antvG2Strings.none
-import typings.antvG2.antvG2Strings.right
-import typings.antvG2.antvG2Strings.top
 import typings.antvG2.mod.Styles.background
 import typings.antvG2.mod.Styles.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MiniTooltipConfig
   extends CommonTooltipConfig
      with TooltipConfig {
-  var boardStyle: js.UndefOr[background] = js.undefined
-  var triangleHeight: js.UndefOr[Double] = js.undefined
-  var triangleWidth: js.UndefOr[Double] = js.undefined
+  var boardStyle: js.UndefOr[background] = js.native
+  var triangleHeight: js.UndefOr[Double] = js.native
+  var triangleWidth: js.UndefOr[Double] = js.native
   @JSName("type")
-  var type_MiniTooltipConfig: mini
-  var valueStyle: js.UndefOr[text] = js.undefined
+  var type_MiniTooltipConfig: mini = js.native
+  var valueStyle: js.UndefOr[text] = js.native
 }
 
 object MiniTooltipConfig {
   @scala.inline
-  def apply(
-    `type`: mini,
-    boardStyle: background = null,
-    crosshairs: Style = null,
-    follow: js.UndefOr[Boolean] = js.undefined,
-    hideMarkers: js.UndefOr[Boolean] = js.undefined,
-    inPlot: js.UndefOr[Boolean] = js.undefined,
-    offset: js.UndefOr[Double] = js.undefined,
-    position: left | right | top | bottom = null,
-    shared: js.UndefOr[Boolean] = js.undefined,
-    showTitle: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    triangleHeight: js.UndefOr[Double] = js.undefined,
-    triangleWidth: js.UndefOr[Double] = js.undefined,
-    triggerOn: mousemove | click | none = null,
-    useHtml: js.UndefOr[Boolean] = js.undefined,
-    valueStyle: text = null
-  ): MiniTooltipConfig = {
+  def apply(`type`: mini): MiniTooltipConfig = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (boardStyle != null) __obj.updateDynamic("boardStyle")(boardStyle.asInstanceOf[js.Any])
-    if (crosshairs != null) __obj.updateDynamic("crosshairs")(crosshairs.asInstanceOf[js.Any])
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideMarkers)) __obj.updateDynamic("hideMarkers")(hideMarkers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inPlot)) __obj.updateDynamic("inPlot")(inPlot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(triangleHeight)) __obj.updateDynamic("triangleHeight")(triangleHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(triangleWidth)) __obj.updateDynamic("triangleWidth")(triangleWidth.get.asInstanceOf[js.Any])
-    if (triggerOn != null) __obj.updateDynamic("triggerOn")(triggerOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHtml)) __obj.updateDynamic("useHtml")(useHtml.get.asInstanceOf[js.Any])
-    if (valueStyle != null) __obj.updateDynamic("valueStyle")(valueStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[MiniTooltipConfig]
   }
+  @scala.inline
+  implicit class MiniTooltipConfigOps[Self <: MiniTooltipConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: mini): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBoardStyle(value: background): Self = this.set("boardStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoardStyle: Self = this.set("boardStyle", js.undefined)
+    @scala.inline
+    def setTriangleHeight(value: Double): Self = this.set("triangleHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriangleHeight: Self = this.set("triangleHeight", js.undefined)
+    @scala.inline
+    def setTriangleWidth(value: Double): Self = this.set("triangleWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriangleWidth: Self = this.set("triangleWidth", js.undefined)
+    @scala.inline
+    def setValueStyle(value: text): Self = this.set("valueStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueStyle: Self = this.set("valueStyle", js.undefined)
+  }
+  
 }
 

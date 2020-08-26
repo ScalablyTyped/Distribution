@@ -27,14 +27,30 @@ trait SchemaExportResourcesRequest extends js.Object {
 
 object SchemaExportResourcesRequest {
   @scala.inline
-  def apply(
-    bigqueryDestination: SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestination = null,
-    gcsDestination: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination = null
-  ): SchemaExportResourcesRequest = {
+  def apply(): SchemaExportResourcesRequest = {
     val __obj = js.Dynamic.literal()
-    if (bigqueryDestination != null) __obj.updateDynamic("bigqueryDestination")(bigqueryDestination.asInstanceOf[js.Any])
-    if (gcsDestination != null) __obj.updateDynamic("gcsDestination")(gcsDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExportResourcesRequest]
   }
+  @scala.inline
+  implicit class SchemaExportResourcesRequestOps[Self <: SchemaExportResourcesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBigqueryDestination(value: SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestination): Self = this.set("bigqueryDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBigqueryDestination: Self = this.set("bigqueryDestination", js.undefined)
+    @scala.inline
+    def setGcsDestination(value: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination): Self = this.set("gcsDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcsDestination: Self = this.set("gcsDestination", js.undefined)
+  }
+  
 }
 

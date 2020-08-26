@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  cancelled  :boolean, getPeer (): string, sendMetadata (responseMetadata : @grpc/grpc-js.@grpc/grpc-js/build/src/metadata.Metadata): void} & node.events.EventEmitter */
+/* Inlined {  cancelled :boolean,  readonly metadata :@grpc/grpc-js.@grpc/grpc-js/build/src/metadata.Metadata, getPeer (): string, sendMetadata (responseMetadata : @grpc/grpc-js.@grpc/grpc-js/build/src/metadata.Metadata): void} & node.events.EventEmitter */
 @js.native
 trait ServerSurfaceCall extends js.Object {
   var cancelled: Boolean = js.native
+  val metadata: Metadata = js.native
   def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def emit(event: String, args: js.Any*): Boolean = js.native

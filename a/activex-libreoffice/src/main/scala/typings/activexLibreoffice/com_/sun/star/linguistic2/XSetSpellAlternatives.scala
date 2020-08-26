@@ -14,18 +14,19 @@ import scala.scalajs.js.annotation._
   * dictionaries.
   * @see com.sun.star.linguistic2.XSpellAlternatives
   */
+@js.native
 trait XSetSpellAlternatives extends XInterface {
   /**
     * set the list of suggestions to be returned.
     * @since OOo 3.0.1
     */
-  def setAlternatives(aAlternatives: SeqEquiv[String]): Unit
+  def setAlternatives(aAlternatives: SeqEquiv[String]): Unit = js.native
   /**
     * set the type of error found.
     * @see com.sun.star.linguistic2.SpellFailure
     * @since OOo 3.0.1
     */
-  def setFailureType(nFailureType: Double): Unit
+  def setFailureType(nFailureType: Double): Unit = js.native
 }
 
 object XSetSpellAlternatives {
@@ -40,5 +41,22 @@ object XSetSpellAlternatives {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setAlternatives = js.Any.fromFunction1(setAlternatives), setFailureType = js.Any.fromFunction1(setFailureType))
     __obj.asInstanceOf[XSetSpellAlternatives]
   }
+  @scala.inline
+  implicit class XSetSpellAlternativesOps[Self <: XSetSpellAlternatives] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSetAlternatives(value: SeqEquiv[String] => Unit): Self = this.set("setAlternatives", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetFailureType(value: Double => Unit): Self = this.set("setFailureType", js.Any.fromFunction1(value))
+  }
+  
 }
 

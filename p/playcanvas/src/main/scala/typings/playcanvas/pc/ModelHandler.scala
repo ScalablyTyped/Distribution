@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
 trait ModelHandler extends ResourceHandler {
   /**
     * Add a parser that converts raw data into a {@link pc.Model}
-    Default parser is for JSON models.
+    * Default parser is for JSON models.
     * @param parser - See JsonModelParser for example.
     * @param decider - Function that decides on which parser to use.
-    Function should take (url, data) arguments and return true if this parser should be used to parse the data into a {@link pc.Model}.
-    The first parser to return true is used.
+    * Function should take (url, data) arguments and return true if this parser should be used to parse the data into a {@link pc.Model}.
+    * The first parser to return true is used.
     */
   def addParser(parser: js.Any, decider: AddParser): Unit = js.native
 }

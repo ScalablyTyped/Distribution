@@ -10,9 +10,9 @@ A jQuery plugin for browser detection.
 | ------------------ | :-------------: |
 | Full name          | jquery.browser |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 364206 |
+| # downloads        | 408272 |
 | # stars            | 1 |
 
 ## Links

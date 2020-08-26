@@ -26,6 +26,9 @@ trait ConfigRuleEvaluationStatus extends js.Object {
     * Indicates whether AWS Config has evaluated your resources against the rule at least once.    true - AWS Config has evaluated your AWS resources against the rule at least once.    false - AWS Config has not once finished evaluating your AWS resources against the rule.  
     */
   var FirstEvaluationStarted: js.UndefOr[Boolean] = js.native
+  /**
+    * The time that you last turned off the AWS Config rule.
+    */
   var LastDeactivatedTime: js.UndefOr[Date] = js.native
   /**
     * The error code that AWS Config returned when the rule last failed.
@@ -55,34 +58,70 @@ trait ConfigRuleEvaluationStatus extends js.Object {
 
 object ConfigRuleEvaluationStatus {
   @scala.inline
-  def apply(
-    ConfigRuleArn: String = null,
-    ConfigRuleId: String = null,
-    ConfigRuleName: ConfigRuleName = null,
-    FirstActivatedTime: Date = null,
-    FirstEvaluationStarted: js.UndefOr[Boolean] = js.undefined,
-    LastDeactivatedTime: Date = null,
-    LastErrorCode: String = null,
-    LastErrorMessage: String = null,
-    LastFailedEvaluationTime: Date = null,
-    LastFailedInvocationTime: Date = null,
-    LastSuccessfulEvaluationTime: Date = null,
-    LastSuccessfulInvocationTime: Date = null
-  ): ConfigRuleEvaluationStatus = {
+  def apply(): ConfigRuleEvaluationStatus = {
     val __obj = js.Dynamic.literal()
-    if (ConfigRuleArn != null) __obj.updateDynamic("ConfigRuleArn")(ConfigRuleArn.asInstanceOf[js.Any])
-    if (ConfigRuleId != null) __obj.updateDynamic("ConfigRuleId")(ConfigRuleId.asInstanceOf[js.Any])
-    if (ConfigRuleName != null) __obj.updateDynamic("ConfigRuleName")(ConfigRuleName.asInstanceOf[js.Any])
-    if (FirstActivatedTime != null) __obj.updateDynamic("FirstActivatedTime")(FirstActivatedTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(FirstEvaluationStarted)) __obj.updateDynamic("FirstEvaluationStarted")(FirstEvaluationStarted.get.asInstanceOf[js.Any])
-    if (LastDeactivatedTime != null) __obj.updateDynamic("LastDeactivatedTime")(LastDeactivatedTime.asInstanceOf[js.Any])
-    if (LastErrorCode != null) __obj.updateDynamic("LastErrorCode")(LastErrorCode.asInstanceOf[js.Any])
-    if (LastErrorMessage != null) __obj.updateDynamic("LastErrorMessage")(LastErrorMessage.asInstanceOf[js.Any])
-    if (LastFailedEvaluationTime != null) __obj.updateDynamic("LastFailedEvaluationTime")(LastFailedEvaluationTime.asInstanceOf[js.Any])
-    if (LastFailedInvocationTime != null) __obj.updateDynamic("LastFailedInvocationTime")(LastFailedInvocationTime.asInstanceOf[js.Any])
-    if (LastSuccessfulEvaluationTime != null) __obj.updateDynamic("LastSuccessfulEvaluationTime")(LastSuccessfulEvaluationTime.asInstanceOf[js.Any])
-    if (LastSuccessfulInvocationTime != null) __obj.updateDynamic("LastSuccessfulInvocationTime")(LastSuccessfulInvocationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigRuleEvaluationStatus]
   }
+  @scala.inline
+  implicit class ConfigRuleEvaluationStatusOps[Self <: ConfigRuleEvaluationStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigRuleArn(value: String): Self = this.set("ConfigRuleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigRuleArn: Self = this.set("ConfigRuleArn", js.undefined)
+    @scala.inline
+    def setConfigRuleId(value: String): Self = this.set("ConfigRuleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigRuleId: Self = this.set("ConfigRuleId", js.undefined)
+    @scala.inline
+    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigRuleName: Self = this.set("ConfigRuleName", js.undefined)
+    @scala.inline
+    def setFirstActivatedTime(value: Date): Self = this.set("FirstActivatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstActivatedTime: Self = this.set("FirstActivatedTime", js.undefined)
+    @scala.inline
+    def setFirstEvaluationStarted(value: Boolean): Self = this.set("FirstEvaluationStarted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstEvaluationStarted: Self = this.set("FirstEvaluationStarted", js.undefined)
+    @scala.inline
+    def setLastDeactivatedTime(value: Date): Self = this.set("LastDeactivatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastDeactivatedTime: Self = this.set("LastDeactivatedTime", js.undefined)
+    @scala.inline
+    def setLastErrorCode(value: String): Self = this.set("LastErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastErrorCode: Self = this.set("LastErrorCode", js.undefined)
+    @scala.inline
+    def setLastErrorMessage(value: String): Self = this.set("LastErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastErrorMessage: Self = this.set("LastErrorMessage", js.undefined)
+    @scala.inline
+    def setLastFailedEvaluationTime(value: Date): Self = this.set("LastFailedEvaluationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastFailedEvaluationTime: Self = this.set("LastFailedEvaluationTime", js.undefined)
+    @scala.inline
+    def setLastFailedInvocationTime(value: Date): Self = this.set("LastFailedInvocationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastFailedInvocationTime: Self = this.set("LastFailedInvocationTime", js.undefined)
+    @scala.inline
+    def setLastSuccessfulEvaluationTime(value: Date): Self = this.set("LastSuccessfulEvaluationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSuccessfulEvaluationTime: Self = this.set("LastSuccessfulEvaluationTime", js.undefined)
+    @scala.inline
+    def setLastSuccessfulInvocationTime(value: Date): Self = this.set("LastSuccessfulInvocationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSuccessfulInvocationTime: Self = this.set("LastSuccessfulInvocationTime", js.undefined)
+  }
+  
 }
 

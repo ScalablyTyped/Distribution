@@ -10,6 +10,7 @@ class Variable protected ()
   extends typings.webcola.vpscMod.Variable {
   def this(desiredPosition: Double) = this()
   def this(desiredPosition: Double, weight: Double) = this()
+  def this(desiredPosition: Double, weight: js.UndefOr[scala.Nothing], scale: Double) = this()
   def this(desiredPosition: Double, weight: Double, scale: Double) = this()
 }
 

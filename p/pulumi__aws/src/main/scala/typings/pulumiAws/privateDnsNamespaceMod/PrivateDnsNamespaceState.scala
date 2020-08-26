@@ -1,5 +1,6 @@
 package typings.pulumiAws.privateDnsNamespaceMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,6 +25,10 @@ trait PrivateDnsNamespaceState extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
+    * A map of tags to assign to the namespace.
+    */
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  /**
     * The ID of VPC that you want to associate the namespace with.
     */
   val vpc: js.UndefOr[Input[String]] = js.native
@@ -31,20 +36,46 @@ trait PrivateDnsNamespaceState extends js.Object {
 
 object PrivateDnsNamespaceState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    description: Input[String] = null,
-    hostedZone: Input[String] = null,
-    name: Input[String] = null,
-    vpc: Input[String] = null
-  ): PrivateDnsNamespaceState = {
+  def apply(): PrivateDnsNamespaceState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (hostedZone != null) __obj.updateDynamic("hostedZone")(hostedZone.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (vpc != null) __obj.updateDynamic("vpc")(vpc.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivateDnsNamespaceState]
   }
+  @scala.inline
+  implicit class PrivateDnsNamespaceStateOps[Self <: PrivateDnsNamespaceState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setHostedZone(value: Input[String]): Self = this.set("hostedZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZone: Self = this.set("hostedZone", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpc(value: Input[String]): Self = this.set("vpc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpc: Self = this.set("vpc", js.undefined)
+  }
+  
 }
 

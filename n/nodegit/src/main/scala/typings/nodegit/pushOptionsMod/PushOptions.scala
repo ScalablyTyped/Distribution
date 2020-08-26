@@ -8,33 +8,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PushOptions
   extends /* key */ StringDictionary[js.Any] {
-  var callbacks: js.UndefOr[RemoteCallbacks] = js.undefined
-  var customHeaders: js.UndefOr[Strarray | String | js.Array[String]] = js.undefined
-  var pbParallelism: js.UndefOr[Double] = js.undefined
-  var proxyOpts: js.UndefOr[ProxyOptions] = js.undefined
-  var version: js.UndefOr[Double] = js.undefined
+  var callbacks: js.UndefOr[RemoteCallbacks] = js.native
+  var customHeaders: js.UndefOr[Strarray | String | js.Array[String]] = js.native
+  var pbParallelism: js.UndefOr[Double] = js.native
+  var proxyOpts: js.UndefOr[ProxyOptions] = js.native
+  var version: js.UndefOr[Double] = js.native
 }
 
 object PushOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    callbacks: RemoteCallbacks = null,
-    customHeaders: Strarray | String | js.Array[String] = null,
-    pbParallelism: js.UndefOr[Double] = js.undefined,
-    proxyOpts: ProxyOptions = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): PushOptions = {
+  def apply(): PushOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(pbParallelism)) __obj.updateDynamic("pbParallelism")(pbParallelism.get.asInstanceOf[js.Any])
-    if (proxyOpts != null) __obj.updateDynamic("proxyOpts")(proxyOpts.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushOptions]
   }
+  @scala.inline
+  implicit class PushOptionsOps[Self <: PushOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallbacks(value: RemoteCallbacks): Self = this.set("callbacks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallbacks: Self = this.set("callbacks", js.undefined)
+    @scala.inline
+    def setCustomHeadersVarargs(value: String*): Self = this.set("customHeaders", js.Array(value :_*))
+    @scala.inline
+    def setCustomHeaders(value: Strarray | String | js.Array[String]): Self = this.set("customHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomHeaders: Self = this.set("customHeaders", js.undefined)
+    @scala.inline
+    def setPbParallelism(value: Double): Self = this.set("pbParallelism", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePbParallelism: Self = this.set("pbParallelism", js.undefined)
+    @scala.inline
+    def setProxyOpts(value: ProxyOptions): Self = this.set("proxyOpts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyOpts: Self = this.set("proxyOpts", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

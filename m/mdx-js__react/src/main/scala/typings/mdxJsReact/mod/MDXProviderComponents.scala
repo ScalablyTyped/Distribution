@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MDXProviderComponents extends /**
   * Any other components we wish to define
   */
@@ -14,100 +15,100 @@ trait MDXProviderComponents extends /**
   /**
     * Link    <https://mdxjs.com> or [MDX](https://mdxjs.com)
     */
-  var a: js.UndefOr[ComponentType[_]] = js.undefined
+  var a: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Blockquote    >
     */
-  var blockquote: js.UndefOr[ComponentType[_]] = js.undefined
+  var blockquote: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Code    `\code```
     */
-  var code: js.UndefOr[ComponentType[_]] = js.undefined
+  var code: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Delete    ~~strikethrough~~
     */
-  var delete: js.UndefOr[ComponentType[_]] = js.undefined
+  var delete: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Emphasis    _emphasis_
     */
-  var em: js.UndefOr[ComponentType[_]] = js.undefined
+  var em: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Heading 1    #
     */
-  var h1: js.UndefOr[ComponentType[_]] = js.undefined
+  var h1: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Heading 2    ##
     */
-  var h2: js.UndefOr[ComponentType[_]] = js.undefined
+  var h2: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Heading 3    ###
     */
-  var h3: js.UndefOr[ComponentType[_]] = js.undefined
+  var h3: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Heading 4    ####
     */
-  var h4: js.UndefOr[ComponentType[_]] = js.undefined
+  var h4: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Heading 5    #####
     */
-  var h5: js.UndefOr[ComponentType[_]] = js.undefined
+  var h5: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Heading 6    ######
     */
-  var h6: js.UndefOr[ComponentType[_]] = js.undefined
+  var h6: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Break    ---
     */
-  var hr: js.UndefOr[ComponentType[_]] = js.undefined
+  var hr: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Image    ![alt](https://mdx-logo.now.sh)
     */
-  var img: js.UndefOr[ComponentType[_]] = js.undefined
+  var img: js.UndefOr[ComponentType[_]] = js.native
   /**
     * InlineCode    `inlineCode`
     */
-  var inlineCode: js.UndefOr[ComponentType[_]] = js.undefined
+  var inlineCode: js.UndefOr[ComponentType[_]] = js.native
   /**
     * List item
     */
-  var li: js.UndefOr[ComponentType[_]] = js.undefined
+  var li: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Ordered list    1.
     */
-  var ol: js.UndefOr[ComponentType[_]] = js.undefined
+  var ol: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Paragraph
     */
-  var p: js.UndefOr[ComponentType[_]] = js.undefined
+  var p: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Pre
     */
-  var pre: js.UndefOr[ComponentType[_]] = js.undefined
+  var pre: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Strong    **strong**
     */
-  var strong: js.UndefOr[ComponentType[_]] = js.undefined
+  var strong: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Table
     */
-  var table: js.UndefOr[ComponentType[_]] = js.undefined
-  var td: js.UndefOr[ComponentType[_]] = js.undefined
+  var table: js.UndefOr[ComponentType[_]] = js.native
+  var td: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Table Cell
     */
-  var th: js.UndefOr[ComponentType[_]] = js.undefined
+  var th: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Thematic break    ***
     */
-  var thematicBreak: js.UndefOr[ComponentType[_]] = js.undefined
+  var thematicBreak: js.UndefOr[ComponentType[_]] = js.native
   /**
     * Table row
     */
-  var tr: js.UndefOr[ComponentType[_]] = js.undefined
+  var tr: js.UndefOr[ComponentType[_]] = js.native
   /**
     * List    -
     */
-  var ul: js.UndefOr[ComponentType[_]] = js.undefined
+  var ul: js.UndefOr[ComponentType[_]] = js.native
   /**
     * The wrapper component can be used to set the layout for the MDX document.
     * It’s often used to set container width, borders, background colors, etc.
@@ -117,72 +118,131 @@ trait MDXProviderComponents extends /**
     * This means that you can do powerful things with the MDX document
     * elements.
     */
-  var wrapper: js.UndefOr[ComponentType[_]] = js.undefined
+  var wrapper: js.UndefOr[ComponentType[_]] = js.native
 }
 
 object MDXProviderComponents {
   @scala.inline
-  def apply(
-    StringDictionary: /**
-    * Any other components we wish to define
-    */
-  /* key */ StringDictionary[ReactNode] = null,
-    a: ComponentType[_] = null,
-    blockquote: ComponentType[_] = null,
-    code: ComponentType[_] = null,
-    delete: ComponentType[_] = null,
-    em: ComponentType[_] = null,
-    h1: ComponentType[_] = null,
-    h2: ComponentType[_] = null,
-    h3: ComponentType[_] = null,
-    h4: ComponentType[_] = null,
-    h5: ComponentType[_] = null,
-    h6: ComponentType[_] = null,
-    hr: ComponentType[_] = null,
-    img: ComponentType[_] = null,
-    inlineCode: ComponentType[_] = null,
-    li: ComponentType[_] = null,
-    ol: ComponentType[_] = null,
-    p: ComponentType[_] = null,
-    pre: ComponentType[_] = null,
-    strong: ComponentType[_] = null,
-    table: ComponentType[_] = null,
-    td: ComponentType[_] = null,
-    th: ComponentType[_] = null,
-    thematicBreak: ComponentType[_] = null,
-    tr: ComponentType[_] = null,
-    ul: ComponentType[_] = null,
-    wrapper: ComponentType[_] = null
-  ): MDXProviderComponents = {
+  def apply(): MDXProviderComponents = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
-    if (blockquote != null) __obj.updateDynamic("blockquote")(blockquote.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
-    if (em != null) __obj.updateDynamic("em")(em.asInstanceOf[js.Any])
-    if (h1 != null) __obj.updateDynamic("h1")(h1.asInstanceOf[js.Any])
-    if (h2 != null) __obj.updateDynamic("h2")(h2.asInstanceOf[js.Any])
-    if (h3 != null) __obj.updateDynamic("h3")(h3.asInstanceOf[js.Any])
-    if (h4 != null) __obj.updateDynamic("h4")(h4.asInstanceOf[js.Any])
-    if (h5 != null) __obj.updateDynamic("h5")(h5.asInstanceOf[js.Any])
-    if (h6 != null) __obj.updateDynamic("h6")(h6.asInstanceOf[js.Any])
-    if (hr != null) __obj.updateDynamic("hr")(hr.asInstanceOf[js.Any])
-    if (img != null) __obj.updateDynamic("img")(img.asInstanceOf[js.Any])
-    if (inlineCode != null) __obj.updateDynamic("inlineCode")(inlineCode.asInstanceOf[js.Any])
-    if (li != null) __obj.updateDynamic("li")(li.asInstanceOf[js.Any])
-    if (ol != null) __obj.updateDynamic("ol")(ol.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (pre != null) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
-    if (strong != null) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (td != null) __obj.updateDynamic("td")(td.asInstanceOf[js.Any])
-    if (th != null) __obj.updateDynamic("th")(th.asInstanceOf[js.Any])
-    if (thematicBreak != null) __obj.updateDynamic("thematicBreak")(thematicBreak.asInstanceOf[js.Any])
-    if (tr != null) __obj.updateDynamic("tr")(tr.asInstanceOf[js.Any])
-    if (ul != null) __obj.updateDynamic("ul")(ul.asInstanceOf[js.Any])
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[MDXProviderComponents]
   }
+  @scala.inline
+  implicit class MDXProviderComponentsOps[Self <: MDXProviderComponents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setA(value: ComponentType[_]): Self = this.set("a", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA: Self = this.set("a", js.undefined)
+    @scala.inline
+    def setBlockquote(value: ComponentType[_]): Self = this.set("blockquote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockquote: Self = this.set("blockquote", js.undefined)
+    @scala.inline
+    def setCode(value: ComponentType[_]): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setDelete(value: ComponentType[_]): Self = this.set("delete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelete: Self = this.set("delete", js.undefined)
+    @scala.inline
+    def setEm(value: ComponentType[_]): Self = this.set("em", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEm: Self = this.set("em", js.undefined)
+    @scala.inline
+    def setH1(value: ComponentType[_]): Self = this.set("h1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH1: Self = this.set("h1", js.undefined)
+    @scala.inline
+    def setH2(value: ComponentType[_]): Self = this.set("h2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH2: Self = this.set("h2", js.undefined)
+    @scala.inline
+    def setH3(value: ComponentType[_]): Self = this.set("h3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH3: Self = this.set("h3", js.undefined)
+    @scala.inline
+    def setH4(value: ComponentType[_]): Self = this.set("h4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH4: Self = this.set("h4", js.undefined)
+    @scala.inline
+    def setH5(value: ComponentType[_]): Self = this.set("h5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH5: Self = this.set("h5", js.undefined)
+    @scala.inline
+    def setH6(value: ComponentType[_]): Self = this.set("h6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH6: Self = this.set("h6", js.undefined)
+    @scala.inline
+    def setHr(value: ComponentType[_]): Self = this.set("hr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHr: Self = this.set("hr", js.undefined)
+    @scala.inline
+    def setImg(value: ComponentType[_]): Self = this.set("img", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImg: Self = this.set("img", js.undefined)
+    @scala.inline
+    def setInlineCode(value: ComponentType[_]): Self = this.set("inlineCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineCode: Self = this.set("inlineCode", js.undefined)
+    @scala.inline
+    def setLi(value: ComponentType[_]): Self = this.set("li", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLi: Self = this.set("li", js.undefined)
+    @scala.inline
+    def setOl(value: ComponentType[_]): Self = this.set("ol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOl: Self = this.set("ol", js.undefined)
+    @scala.inline
+    def setP(value: ComponentType[_]): Self = this.set("p", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP: Self = this.set("p", js.undefined)
+    @scala.inline
+    def setPre(value: ComponentType[_]): Self = this.set("pre", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePre: Self = this.set("pre", js.undefined)
+    @scala.inline
+    def setStrong(value: ComponentType[_]): Self = this.set("strong", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrong: Self = this.set("strong", js.undefined)
+    @scala.inline
+    def setTable(value: ComponentType[_]): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setTd(value: ComponentType[_]): Self = this.set("td", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTd: Self = this.set("td", js.undefined)
+    @scala.inline
+    def setTh(value: ComponentType[_]): Self = this.set("th", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTh: Self = this.set("th", js.undefined)
+    @scala.inline
+    def setThematicBreak(value: ComponentType[_]): Self = this.set("thematicBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThematicBreak: Self = this.set("thematicBreak", js.undefined)
+    @scala.inline
+    def setTr(value: ComponentType[_]): Self = this.set("tr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTr: Self = this.set("tr", js.undefined)
+    @scala.inline
+    def setUl(value: ComponentType[_]): Self = this.set("ul", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUl: Self = this.set("ul", js.undefined)
+    @scala.inline
+    def setWrapper(value: ComponentType[_]): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+  }
+  
 }
 

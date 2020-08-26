@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
+@js.native
 trait PlusNativeObjInputStyles extends js.Object {
   /**
     * 输入框的边框颜色
@@ -24,7 +25,7 @@ trait PlusNativeObjInputStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var borderColor: js.UndefOr[String] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
   /**
     * 输入框边框圆角半径
     * 可取值：圆角半径像素值，数字加"px"格式字符串，如"6px"。
@@ -32,14 +33,14 @@ trait PlusNativeObjInputStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var borderRadius: js.UndefOr[String] = js.undefined
+  var borderRadius: js.UndefOr[String] = js.native
   /**
     * 输入框的边框宽度
     * 可取值：像素值，数字加"px"格式字符串，如"2px"。 默认值为"1px"。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var borderWidth: js.UndefOr[String] = js.undefined
+  var borderWidth: js.UndefOr[String] = js.native
   /**
     * 输入框的字体大小
     * 可取值：字体高度像素值，数字加"px"格式字符串，如"12px"。 
@@ -47,35 +48,35 @@ trait PlusNativeObjInputStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var fontSize: js.UndefOr[String] = js.undefined
+  var fontSize: js.UndefOr[String] = js.native
   /**
     * 输入框失去焦点事件
     * 当编辑框失去焦点时触发。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var onBlur: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
   /**
     * 输入框完成输入事件
     * 弹出软键盘完成输入后，点击软键盘上的“完成”、“前往”按钮时触发。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var onComplete: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onComplete: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
   /**
     * 输入框获取焦点事件
     * 当编辑框获取焦点时触发。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var onFocus: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
   /**
     * 输入框的提示文本
     * 当用户未输入内容时显示在编辑框中（灰色文字）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var placeholder: js.UndefOr[String] = js.undefined
+  var placeholder: js.UndefOr[String] = js.native
   /**
     * 输入框类型
     * 可取值：
@@ -95,33 +96,63 @@ trait PlusNativeObjInputStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var `type`: js.UndefOr[email | number | search | tel | text | url] = js.undefined
+  var `type`: js.UndefOr[email | number | search | tel | text | url] = js.native
 }
 
 object PlusNativeObjInputStyles {
   @scala.inline
-  def apply(
-    borderColor: String = null,
-    borderRadius: String = null,
-    borderWidth: String = null,
-    fontSize: String = null,
-    onBlur: /* result */ js.Any => Unit = null,
-    onComplete: /* result */ js.Any => Unit = null,
-    onFocus: /* result */ js.Any => Unit = null,
-    placeholder: String = null,
-    `type`: email | number | search | tel | text | url = null
-  ): PlusNativeObjInputStyles = {
+  def apply(): PlusNativeObjInputStyles = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjInputStyles]
   }
+  @scala.inline
+  implicit class PlusNativeObjInputStylesOps[Self <: PlusNativeObjInputStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderRadius(value: String): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: String): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setFontSize(value: String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setOnBlur(value: /* result */ js.Any => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnComplete(value: /* result */ js.Any => Unit): Self = this.set("onComplete", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    @scala.inline
+    def setOnFocus(value: /* result */ js.Any => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setType(value: email | number | search | tel | text | url): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

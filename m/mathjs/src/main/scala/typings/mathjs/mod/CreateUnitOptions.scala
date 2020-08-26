@@ -9,27 +9,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateUnitOptions extends js.Object {
-  var aliases: js.UndefOr[js.Array[String]] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var `override`: js.UndefOr[Boolean] = js.undefined
-  var prefixes: js.UndefOr[none | short | long | binary_short | binary_long] = js.undefined
+  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var offset: js.UndefOr[Double] = js.native
+  var `override`: js.UndefOr[Boolean] = js.native
+  var prefixes: js.UndefOr[none | short | long | binary_short | binary_long] = js.native
 }
 
 object CreateUnitOptions {
   @scala.inline
-  def apply(
-    aliases: js.Array[String] = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    `override`: js.UndefOr[Boolean] = js.undefined,
-    prefixes: none | short | long | binary_short | binary_long = null
-  ): CreateUnitOptions = {
+  def apply(): CreateUnitOptions = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.get.asInstanceOf[js.Any])
-    if (prefixes != null) __obj.updateDynamic("prefixes")(prefixes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUnitOptions]
   }
+  @scala.inline
+  implicit class CreateUnitOptionsOps[Self <: CreateUnitOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasesVarargs(value: String*): Self = this.set("aliases", js.Array(value :_*))
+    @scala.inline
+    def setAliases(value: js.Array[String]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("aliases", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOverride(value: Boolean): Self = this.set("override", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverride: Self = this.set("override", js.undefined)
+    @scala.inline
+    def setPrefixes(value: none | short | long | binary_short | binary_long): Self = this.set("prefixes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixes: Self = this.set("prefixes", js.undefined)
+  }
+  
 }
 

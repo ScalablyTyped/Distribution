@@ -11,8 +11,8 @@ Replaces a file extension with another one
 | Full name          | replace-ext |
 | Keywords           | gulp, extensions, filepath, basename |
 | # releases         | 1 |
-| # dependents       | 299 |
-| # downloads        | 223370609 |
+| # dependents       | 305 |
+| # downloads        | 225935873 |
 | # stars            | 10 |
 
 ## Links

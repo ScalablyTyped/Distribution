@@ -20,8 +20,8 @@ class Table protected ()
 @JSImport("@blueprintjs/table", "Table")
 @js.native
 object Table extends js.Object {
-  var SHALLOW_COMPARE_PROP_KEYS_BLACKLIST: js.Any = js.native
-  var SHALLOW_COMPARE_STATE_KEYS_BLACKLIST: js.Any = js.native
+  var SHALLOW_COMPARE_PROP_KEYS_DENYLIST: js.Any = js.native
+  var SHALLOW_COMPARE_STATE_KEYS_DENYLIST: js.Any = js.native
   var childContextTypes: ValidationMapIColumnInter = js.native
   var createColumnIdIndex: js.Any = js.native
   var defaultProps: ITableProps = js.native

@@ -47,7 +47,41 @@ trait ListObjects extends js.Object {
   @JSName("Add")
   def Add_1(SourceType: `1`): ListObject = js.native
   @JSName("Add")
+  def Add_1(
+    SourceType: `1`,
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: js.UndefOr[scala.Nothing],
+    Destination: js.UndefOr[scala.Nothing],
+    TableStyleName: String
+  ): ListObject = js.native
+  @JSName("Add")
+  def Add_1(
+    SourceType: `1`,
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  @JSName("Add")
+  def Add_1(
+    SourceType: `1`,
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: js.UndefOr[scala.Nothing],
+    TableStyleName: String
+  ): ListObject = js.native
+  @JSName("Add")
   def Add_1(SourceType: `1`, Source: Range): ListObject = js.native
+  @JSName("Add")
+  def Add_1(
+    SourceType: `1`,
+    Source: Range,
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: js.UndefOr[scala.Nothing],
+    Destination: js.UndefOr[scala.Nothing],
+    TableStyleName: String
+  ): ListObject = js.native
   @JSName("Add")
   def Add_1(
     SourceType: `1`,
@@ -71,9 +105,160 @@ trait ListObjects extends js.Object {
     * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
     */
   def _Add(): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: js.UndefOr[scala.Nothing],
+    Destination: js.Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: js.Any
+  ): ListObject = js.native
+  def _Add(SourceType: js.UndefOr[scala.Nothing], Source: js.UndefOr[scala.Nothing], LinkSource: js.Any): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.Any,
+    XlListObjectHasHeaders: js.UndefOr[scala.Nothing],
+    Destination: js.Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.Any,
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.Any,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: js.Any
+  ): ListObject = js.native
+  def _Add(SourceType: js.UndefOr[scala.Nothing], Source: js.Any): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.Any,
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: js.UndefOr[scala.Nothing],
+    Destination: js.Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.Any,
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.Any,
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: js.Any
+  ): ListObject = js.native
+  def _Add(SourceType: js.UndefOr[scala.Nothing], Source: js.Any, LinkSource: js.Any): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.Any,
+    LinkSource: js.Any,
+    XlListObjectHasHeaders: js.UndefOr[scala.Nothing],
+    Destination: js.Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.Any,
+    LinkSource: js.Any,
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  def _Add(
+    SourceType: js.UndefOr[scala.Nothing],
+    Source: js.Any,
+    LinkSource: js.Any,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: js.Any
+  ): ListObject = js.native
   def _Add(SourceType: XlListObjectSourceType): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: js.UndefOr[scala.Nothing],
+    Destination: js.Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: js.Any
+  ): ListObject = js.native
+  def _Add(SourceType: XlListObjectSourceType, Source: js.UndefOr[scala.Nothing], LinkSource: js.Any): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.Any,
+    XlListObjectHasHeaders: js.UndefOr[scala.Nothing],
+    Destination: js.Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.Any,
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: js.UndefOr[scala.Nothing],
+    LinkSource: js.Any,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: js.Any
+  ): ListObject = js.native
   def _Add(SourceType: XlListObjectSourceType, Source: js.Any): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: js.Any,
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: js.UndefOr[scala.Nothing],
+    Destination: js.Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: js.Any,
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: js.Any,
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: js.Any
+  ): ListObject = js.native
   def _Add(SourceType: XlListObjectSourceType, Source: js.Any, LinkSource: js.Any): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: js.Any,
+    LinkSource: js.Any,
+    XlListObjectHasHeaders: js.UndefOr[scala.Nothing],
+    Destination: js.Any
+  ): ListObject = js.native
   def _Add(
     SourceType: XlListObjectSourceType,
     Source: js.Any,

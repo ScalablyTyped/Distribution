@@ -10,9 +10,9 @@ React Native module to get Safe Area Insets for iOS 11 or later
 | ------------------ | :-------------: |
 | Full name          | react-native-safe-area |
 | Keywords           | react-native, ios, iPhoneX, SafeArea |
-| # releases         | 12 |
+| # releases         | 11 |
 | # dependents       | 2 |
-| # downloads        | 148481 |
+| # downloads        | 155740 |
 | # stars            | 0 |
 
 ## Links

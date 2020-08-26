@@ -26,28 +26,19 @@ object IntrospectionType {
     fields: js.Array[IntrospectionField],
     kind: INTERFACE,
     name: String,
-    possibleTypes: js.Array[IntrospectionNamedTypeRef],
-    description: String = null
+    possibleTypes: js.Array[IntrospectionNamedTypeRef]
   ): IntrospectionType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionType]
   }
   @scala.inline
-  def IntrospectionEnumType(enumValues: js.Array[IntrospectionEnumValue], kind: ENUM, name: String, description: String = null): IntrospectionType = {
+  def IntrospectionEnumType(enumValues: js.Array[IntrospectionEnumValue], kind: ENUM, name: String): IntrospectionType = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionType]
   }
   @scala.inline
-  def IntrospectionInputObjectType(
-    inputFields: js.Array[IntrospectionInputValue],
-    kind: INPUT_OBJECT,
-    name: String,
-    description: String = null
-  ): IntrospectionType = {
+  def IntrospectionInputObjectType(inputFields: js.Array[IntrospectionInputValue], kind: INPUT_OBJECT, name: String): IntrospectionType = {
     val __obj = js.Dynamic.literal(inputFields = inputFields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionType]
   }
   @scala.inline
@@ -55,28 +46,19 @@ object IntrospectionType {
     fields: js.Array[IntrospectionField],
     interfaces: js.Array[IntrospectionNamedTypeRef],
     kind: OBJECT,
-    name: String,
-    description: String = null
+    name: String
   ): IntrospectionType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionType]
   }
   @scala.inline
-  def IntrospectionScalarType(kind: SCALAR, name: String, description: String = null): IntrospectionType = {
+  def IntrospectionScalarType(kind: SCALAR, name: String): IntrospectionType = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionType]
   }
   @scala.inline
-  def IntrospectionUnionType(
-    kind: UNION,
-    name: String,
-    possibleTypes: js.Array[IntrospectionNamedTypeRef],
-    description: String = null
-  ): IntrospectionType = {
+  def IntrospectionUnionType(kind: UNION, name: String, possibleTypes: js.Array[IntrospectionNamedTypeRef]): IntrospectionType = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], possibleTypes = possibleTypes.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionType]
   }
 }

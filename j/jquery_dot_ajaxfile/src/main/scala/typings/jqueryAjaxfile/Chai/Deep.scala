@@ -22,6 +22,7 @@ trait Deep extends js.Object {
   def include(value: Object): Assertion = js.native
   def include(value: Object, message: String): Assertion = js.native
   def property(name: String): Assertion = js.native
+  def property(name: String, value: js.UndefOr[scala.Nothing], message: String): Assertion = js.native
   def property(name: String, value: js.Any): Assertion = js.native
   def property(name: String, value: js.Any, message: String): Assertion = js.native
 }

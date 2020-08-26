@@ -4,45 +4,86 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContentBody extends js.Object {
-  var action: js.UndefOr[Action | js.Array[Action]] = js.undefined
-  var dictionary: js.UndefOr[js.Any] = js.undefined
-  var goToAction: js.UndefOr[GoToAction] = js.undefined
-  var greeting: js.UndefOr[String] = js.undefined
-  var intro: js.UndefOr[String | js.Array[String]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var outro: js.UndefOr[String | js.Array[String]] = js.undefined
-  var signature: js.UndefOr[String] = js.undefined
-  var table: js.UndefOr[Table | js.Array[Table]] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[Action | js.Array[Action]] = js.native
+  var dictionary: js.UndefOr[js.Any] = js.native
+  var goToAction: js.UndefOr[GoToAction] = js.native
+  var greeting: js.UndefOr[String] = js.native
+  var intro: js.UndefOr[String | js.Array[String]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var outro: js.UndefOr[String | js.Array[String]] = js.native
+  var signature: js.UndefOr[String] = js.native
+  var table: js.UndefOr[Table | js.Array[Table]] = js.native
+  var title: js.UndefOr[String] = js.native
 }
 
 object ContentBody {
   @scala.inline
-  def apply(
-    action: Action | js.Array[Action] = null,
-    dictionary: js.Any = null,
-    goToAction: GoToAction = null,
-    greeting: String = null,
-    intro: String | js.Array[String] = null,
-    name: String = null,
-    outro: String | js.Array[String] = null,
-    signature: String = null,
-    table: Table | js.Array[Table] = null,
-    title: String = null
-  ): ContentBody = {
+  def apply(): ContentBody = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary.asInstanceOf[js.Any])
-    if (goToAction != null) __obj.updateDynamic("goToAction")(goToAction.asInstanceOf[js.Any])
-    if (greeting != null) __obj.updateDynamic("greeting")(greeting.asInstanceOf[js.Any])
-    if (intro != null) __obj.updateDynamic("intro")(intro.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outro != null) __obj.updateDynamic("outro")(outro.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentBody]
   }
+  @scala.inline
+  implicit class ContentBodyOps[Self <: ContentBody] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionVarargs(value: Action*): Self = this.set("action", js.Array(value :_*))
+    @scala.inline
+    def setAction(value: Action | js.Array[Action]): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setDictionary(value: js.Any): Self = this.set("dictionary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDictionary: Self = this.set("dictionary", js.undefined)
+    @scala.inline
+    def setGoToAction(value: GoToAction): Self = this.set("goToAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoToAction: Self = this.set("goToAction", js.undefined)
+    @scala.inline
+    def setGreeting(value: String): Self = this.set("greeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreeting: Self = this.set("greeting", js.undefined)
+    @scala.inline
+    def setIntroVarargs(value: String*): Self = this.set("intro", js.Array(value :_*))
+    @scala.inline
+    def setIntro(value: String | js.Array[String]): Self = this.set("intro", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntro: Self = this.set("intro", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOutroVarargs(value: String*): Self = this.set("outro", js.Array(value :_*))
+    @scala.inline
+    def setOutro(value: String | js.Array[String]): Self = this.set("outro", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutro: Self = this.set("outro", js.undefined)
+    @scala.inline
+    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("signature", js.undefined)
+    @scala.inline
+    def setTableVarargs(value: Table*): Self = this.set("table", js.Array(value :_*))
+    @scala.inline
+    def setTable(value: Table | js.Array[Table]): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

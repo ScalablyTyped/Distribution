@@ -1,45 +1,52 @@
 package typings.rollupPluginBuble.mod
 
-import typings.buble.anon.Arrow
-import typings.buble.anon.Chrome
 import typings.buble.mod.TransformOptions
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends TransformOptions {
-  var exclude: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.undefined
+  var exclude: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.native
   // Every files will be parsed by default, but you can specify which files to include or exclude
-  var include: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.undefined
+  var include: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    exclude: js.UndefOr[Null | (js.Array[String | RegExp]) | String | RegExp] = js.undefined,
-    file: String = null,
-    include: js.UndefOr[Null | (js.Array[String | RegExp]) | String | RegExp] = js.undefined,
-    includeContent: js.UndefOr[Boolean] = js.undefined,
-    jsx: String = null,
-    namedFunctionExpressions: js.UndefOr[Boolean] = js.undefined,
-    objectAssign: String | Boolean = null,
-    source: String = null,
-    target: Chrome = null,
-    transforms: Arrow = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exclude)) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeContent)) __obj.updateDynamic("includeContent")(includeContent.get.asInstanceOf[js.Any])
-    if (jsx != null) __obj.updateDynamic("jsx")(jsx.asInstanceOf[js.Any])
-    if (!js.isUndefined(namedFunctionExpressions)) __obj.updateDynamic("namedFunctionExpressions")(namedFunctionExpressions.get.asInstanceOf[js.Any])
-    if (objectAssign != null) __obj.updateDynamic("objectAssign")(objectAssign.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExcludeVarargs(value: (String | RegExp)*): Self = this.set("exclude", js.Array(value :_*))
+    @scala.inline
+    def setExclude(value: (js.Array[String | RegExp]) | String | RegExp): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclude: Self = this.set("exclude", js.undefined)
+    @scala.inline
+    def setExcludeNull: Self = this.set("exclude", null)
+    @scala.inline
+    def setIncludeVarargs(value: (String | RegExp)*): Self = this.set("include", js.Array(value :_*))
+    @scala.inline
+    def setInclude(value: (js.Array[String | RegExp]) | String | RegExp): Self = this.set("include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude: Self = this.set("include", js.undefined)
+    @scala.inline
+    def setIncludeNull: Self = this.set("include", null)
+  }
+  
 }
 

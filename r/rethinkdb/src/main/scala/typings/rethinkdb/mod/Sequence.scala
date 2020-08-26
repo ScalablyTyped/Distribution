@@ -39,6 +39,7 @@ trait Sequence
   def contains(prop: String): Expression[Boolean] = js.native
   def count(): Expression[Double] = js.native
   def distinct(): Sequence = js.native
+  def distinct(opts: typings.rethinkdb.anon.Index): Sequence = js.native
   def eqJoin(leftAttribute: String, rightSequence: Sequence): Sequence = js.native
   def eqJoin(leftAttribute: String, rightSequence: Sequence, index: Index): Sequence = js.native
   def eqJoin(leftAttribute: ExpressionFunction[_], rightSequence: Sequence): Sequence = js.native

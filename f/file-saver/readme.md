@@ -11,8 +11,8 @@ An HTML5 saveAs() FileSaver implementation
 | Full name          | file-saver |
 | Keywords           | filesaver, saveas, blob |
 | # releases         | 11 |
-| # dependents       | 826 |
-| # downloads        | 25071383 |
+| # dependents       | 842 |
+| # downloads        | 25950610 |
 | # stars            | 24 |
 
 ## Links

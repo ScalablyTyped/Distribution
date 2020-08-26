@@ -18,14 +18,30 @@ trait Schedule extends js.Object {
 
 object Schedule {
   @scala.inline
-  def apply(
-    pipelineExecutionStartCondition: PipelineExecutionStartCondition = null,
-    scheduleExpression: NonEmptyString = null
-  ): Schedule = {
+  def apply(): Schedule = {
     val __obj = js.Dynamic.literal()
-    if (pipelineExecutionStartCondition != null) __obj.updateDynamic("pipelineExecutionStartCondition")(pipelineExecutionStartCondition.asInstanceOf[js.Any])
-    if (scheduleExpression != null) __obj.updateDynamic("scheduleExpression")(scheduleExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schedule]
   }
+  @scala.inline
+  implicit class ScheduleOps[Self <: Schedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPipelineExecutionStartCondition(value: PipelineExecutionStartCondition): Self = this.set("pipelineExecutionStartCondition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineExecutionStartCondition: Self = this.set("pipelineExecutionStartCondition", js.undefined)
+    @scala.inline
+    def setScheduleExpression(value: NonEmptyString): Self = this.set("scheduleExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleExpression: Self = this.set("scheduleExpression", js.undefined)
+  }
+  
 }
 

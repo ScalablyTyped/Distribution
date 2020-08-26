@@ -4,57 +4,84 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Container extends js.Object {
   /**
     * The default element that contains each notification. Defaults to document.body.
     */
-  var container: js.UndefOr[js.Any] = js.undefined
+  var container: js.UndefOr[js.Any] = js.native
   /**
     * The default duration (in milliseconds) of each message. A duration of 0 will prevent messages from closing automatically.
     */
-  var duration: js.UndefOr[Double] = js.undefined
+  var duration: js.UndefOr[Double] = js.native
   /**
     * The maximum number of total notifications that can be visible at one time. Older notifications will be closed when the maximum is reached.
     */
-  var maximumOpen: js.UndefOr[Double] = js.undefined
+  var maximumOpen: js.UndefOr[Double] = js.native
   /**
     * The default position of each message. Currently only center and right are the supported values.
     */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[String] = js.native
   /**
     * The Y pixel value where messages will be shown.
     */
-  var startTop: js.UndefOr[Double] = js.undefined
+  var startTop: js.UndefOr[Double] = js.native
   /**
     * The default message template.
     */
-  var templateUrl: js.UndefOr[String] = js.undefined
+  var templateUrl: js.UndefOr[String] = js.native
   /**
     * The number of pixels that should be reserved between messages vertically.
     */
-  var verticalSpacing: js.UndefOr[Double] = js.undefined
+  var verticalSpacing: js.UndefOr[Double] = js.native
 }
 
 object Container {
   @scala.inline
-  def apply(
-    container: js.Any = null,
-    duration: js.UndefOr[Double] = js.undefined,
-    maximumOpen: js.UndefOr[Double] = js.undefined,
-    position: String = null,
-    startTop: js.UndefOr[Double] = js.undefined,
-    templateUrl: String = null,
-    verticalSpacing: js.UndefOr[Double] = js.undefined
-  ): Container = {
+  def apply(): Container = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumOpen)) __obj.updateDynamic("maximumOpen")(maximumOpen.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(startTop)) __obj.updateDynamic("startTop")(startTop.get.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalSpacing)) __obj.updateDynamic("verticalSpacing")(verticalSpacing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
+  @scala.inline
+  implicit class ContainerOps[Self <: Container] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: js.Any): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setMaximumOpen(value: Double): Self = this.set("maximumOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumOpen: Self = this.set("maximumOpen", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setStartTop(value: Double): Self = this.set("startTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTop: Self = this.set("startTop", js.undefined)
+    @scala.inline
+    def setTemplateUrl(value: String): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
+    @scala.inline
+    def setVerticalSpacing(value: Double): Self = this.set("verticalSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalSpacing: Self = this.set("verticalSpacing", js.undefined)
+  }
+  
 }
 

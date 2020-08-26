@@ -16,6 +16,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IWorkflowActivity extends IElement {
+  /**
+    * In version 8.12.0: added public
+    */
+  val caption: String = js.native
   val containerAsWorkflow: IWorkflow = js.native
   @JSName("model")
   val model_IWorkflowActivity: IModel = js.native

@@ -33,6 +33,7 @@ class ResourceMedia protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaMedia] = js.native
   def insert(callback: BodyResponseCallback[SchemaMedia]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMedia] = js.native
   def insert(params: ParamsResourceMediaInsert): GaxiosPromise[SchemaMedia] = js.native
   def insert(params: ParamsResourceMediaInsert, callback: BodyResponseCallback[SchemaMedia]): Unit = js.native
   def insert(

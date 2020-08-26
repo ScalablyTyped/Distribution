@@ -1,7 +1,7 @@
 package typings.rxAngular
 
 import typings.angular.mod.IRootScopeService
-import typings.rxLiteAggregates.Rx.Observable
+import typings.rx.Rx.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

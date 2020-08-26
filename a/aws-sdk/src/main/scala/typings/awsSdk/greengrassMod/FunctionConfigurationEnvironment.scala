@@ -26,18 +26,40 @@ trait FunctionConfigurationEnvironment extends js.Object {
 
 object FunctionConfigurationEnvironment {
   @scala.inline
-  def apply(
-    AccessSysfs: js.UndefOr[boolean] = js.undefined,
-    Execution: FunctionExecutionConfig = null,
-    ResourceAccessPolicies: listOfResourceAccessPolicy = null,
-    Variables: mapOfString = null
-  ): FunctionConfigurationEnvironment = {
+  def apply(): FunctionConfigurationEnvironment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AccessSysfs)) __obj.updateDynamic("AccessSysfs")(AccessSysfs.get.asInstanceOf[js.Any])
-    if (Execution != null) __obj.updateDynamic("Execution")(Execution.asInstanceOf[js.Any])
-    if (ResourceAccessPolicies != null) __obj.updateDynamic("ResourceAccessPolicies")(ResourceAccessPolicies.asInstanceOf[js.Any])
-    if (Variables != null) __obj.updateDynamic("Variables")(Variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionConfigurationEnvironment]
   }
+  @scala.inline
+  implicit class FunctionConfigurationEnvironmentOps[Self <: FunctionConfigurationEnvironment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessSysfs(value: boolean): Self = this.set("AccessSysfs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessSysfs: Self = this.set("AccessSysfs", js.undefined)
+    @scala.inline
+    def setExecution(value: FunctionExecutionConfig): Self = this.set("Execution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecution: Self = this.set("Execution", js.undefined)
+    @scala.inline
+    def setResourceAccessPoliciesVarargs(value: ResourceAccessPolicy*): Self = this.set("ResourceAccessPolicies", js.Array(value :_*))
+    @scala.inline
+    def setResourceAccessPolicies(value: listOfResourceAccessPolicy): Self = this.set("ResourceAccessPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAccessPolicies: Self = this.set("ResourceAccessPolicies", js.undefined)
+    @scala.inline
+    def setVariables(value: mapOfString): Self = this.set("Variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariables: Self = this.set("Variables", js.undefined)
+  }
+  
 }
 

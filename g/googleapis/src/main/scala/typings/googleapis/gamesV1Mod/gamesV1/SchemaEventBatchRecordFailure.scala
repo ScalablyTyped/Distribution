@@ -35,12 +35,34 @@ trait SchemaEventBatchRecordFailure extends js.Object {
 
 object SchemaEventBatchRecordFailure {
   @scala.inline
-  def apply(failureCause: String = null, kind: String = null, range: SchemaEventPeriodRange = null): SchemaEventBatchRecordFailure = {
+  def apply(): SchemaEventBatchRecordFailure = {
     val __obj = js.Dynamic.literal()
-    if (failureCause != null) __obj.updateDynamic("failureCause")(failureCause.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEventBatchRecordFailure]
   }
+  @scala.inline
+  implicit class SchemaEventBatchRecordFailureOps[Self <: SchemaEventBatchRecordFailure] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailureCause(value: String): Self = this.set("failureCause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureCause: Self = this.set("failureCause", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setRange(value: SchemaEventPeriodRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+  }
+  
 }
 

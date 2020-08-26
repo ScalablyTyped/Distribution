@@ -4,27 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Exponential extends js.Object {
   /** Must be greater than 1. */
-  var growthFactor: js.UndefOr[Double] = js.undefined
+  var growthFactor: js.UndefOr[Double] = js.native
   /** Must be greater than 0. */
-  var numFiniteBuckets: js.UndefOr[Double] = js.undefined
+  var numFiniteBuckets: js.UndefOr[Double] = js.native
   /** Must be greater than 0. */
-  var scale: js.UndefOr[Double] = js.undefined
+  var scale: js.UndefOr[Double] = js.native
 }
 
 object Exponential {
   @scala.inline
-  def apply(
-    growthFactor: js.UndefOr[Double] = js.undefined,
-    numFiniteBuckets: js.UndefOr[Double] = js.undefined,
-    scale: js.UndefOr[Double] = js.undefined
-  ): Exponential = {
+  def apply(): Exponential = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(growthFactor)) __obj.updateDynamic("growthFactor")(growthFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numFiniteBuckets)) __obj.updateDynamic("numFiniteBuckets")(numFiniteBuckets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Exponential]
   }
+  @scala.inline
+  implicit class ExponentialOps[Self <: Exponential] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGrowthFactor(value: Double): Self = this.set("growthFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowthFactor: Self = this.set("growthFactor", js.undefined)
+    @scala.inline
+    def setNumFiniteBuckets(value: Double): Self = this.set("numFiniteBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumFiniteBuckets: Self = this.set("numFiniteBuckets", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+  }
+  
 }
 

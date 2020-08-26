@@ -348,6 +348,12 @@ object octokitPluginPaginateRestStrings {
   sealed trait `GET Slashrepositories` extends js.Object
   
   @js.native
+  sealed trait `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers` extends js.Object
+  
+  @js.native
   sealed trait `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers` extends js.Object
   
   @js.native
@@ -402,9 +408,6 @@ object octokitPluginPaginateRestStrings {
   sealed trait `GET SlashteamsSlashColonteam_idSlashteams` extends js.Object
   
   @js.native
-  sealed trait `GET SlashuserSlashColonmigration_idSlashrepositories` extends js.Object
-  
-  @js.native
   sealed trait `GET SlashuserSlashblocks` extends js.Object
   
   @js.native
@@ -442,6 +445,9 @@ object octokitPluginPaginateRestStrings {
   
   @js.native
   sealed trait `GET SlashuserSlashmigrations` extends js.Object
+  
+  @js.native
+  sealed trait `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories` extends js.Object
   
   @js.native
   sealed trait `GET SlashuserSlashorgs` extends js.Object
@@ -720,6 +726,10 @@ object octokitPluginPaginateRestStrings {
   @scala.inline
   def `GET Slashrepositories`: `GET Slashrepositories` = ("GET /repositories").asInstanceOf[`GET Slashrepositories`]
   @scala.inline
+  def `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups` = ("GET /scim/v2/enterprises/:enterprise/Groups").asInstanceOf[`GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`]
+  @scala.inline
+  def `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`: `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers` = ("GET /scim/v2/enterprises/:enterprise/Users").asInstanceOf[`GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`]
+  @scala.inline
   def `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`: `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers` = ("GET /scim/v2/organizations/:org/Users").asInstanceOf[`GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`]
   @scala.inline
   def `GET SlashsearchSlashcode`: `GET SlashsearchSlashcode` = ("GET /search/code").asInstanceOf[`GET SlashsearchSlashcode`]
@@ -756,8 +766,6 @@ object octokitPluginPaginateRestStrings {
   @scala.inline
   def `GET SlashteamsSlashColonteam_idSlashteams`: `GET SlashteamsSlashColonteam_idSlashteams` = ("GET /teams/:team_id/teams").asInstanceOf[`GET SlashteamsSlashColonteam_idSlashteams`]
   @scala.inline
-  def `GET SlashuserSlashColonmigration_idSlashrepositories`: `GET SlashuserSlashColonmigration_idSlashrepositories` = ("GET /user/:migration_id/repositories").asInstanceOf[`GET SlashuserSlashColonmigration_idSlashrepositories`]
-  @scala.inline
   def `GET SlashuserSlashblocks`: `GET SlashuserSlashblocks` = ("GET /user/blocks").asInstanceOf[`GET SlashuserSlashblocks`]
   @scala.inline
   def `GET SlashuserSlashemails`: `GET SlashuserSlashemails` = ("GET /user/emails").asInstanceOf[`GET SlashuserSlashemails`]
@@ -783,6 +791,8 @@ object octokitPluginPaginateRestStrings {
   def `GET SlashuserSlashmembershipsSlashorgs`: `GET SlashuserSlashmembershipsSlashorgs` = ("GET /user/memberships/orgs").asInstanceOf[`GET SlashuserSlashmembershipsSlashorgs`]
   @scala.inline
   def `GET SlashuserSlashmigrations`: `GET SlashuserSlashmigrations` = ("GET /user/migrations").asInstanceOf[`GET SlashuserSlashmigrations`]
+  @scala.inline
+  def `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`: `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories` = ("GET /user/migrations/:migration_id/repositories").asInstanceOf[`GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`]
   @scala.inline
   def `GET SlashuserSlashorgs`: `GET SlashuserSlashorgs` = ("GET /user/orgs").asInstanceOf[`GET SlashuserSlashorgs`]
   @scala.inline

@@ -8,45 +8,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Content extends js.Object {
-  var border: js.UndefOr[BorderType] = js.undefined
-  var content: js.UndefOr[Pad] = js.undefined
-  var disabled: js.UndefOr[BackgroundBorder] = js.undefined
-  var error: js.UndefOr[ColorMargin] = js.undefined
-  var focus: js.UndefOr[BackgroundBackgroundTypeBorder1] = js.undefined
-  var help: js.UndefOr[MarginMarginType] = js.undefined
-  var info: js.UndefOr[MarginMarginType] = js.undefined
-  var label: js.UndefOr[TextProps] = js.undefined
-  var margin: js.UndefOr[MarginType] = js.undefined
-  var round: js.UndefOr[RoundType] = js.undefined
+  var border: js.UndefOr[BorderType] = js.native
+  var content: js.UndefOr[Pad] = js.native
+  var disabled: js.UndefOr[BackgroundBorder] = js.native
+  var error: js.UndefOr[Margin] = js.native
+  var focus: js.UndefOr[`4`] = js.native
+  var help: js.UndefOr[ColorMargin] = js.native
+  var info: js.UndefOr[ColorMargin] = js.native
+  var label: js.UndefOr[TextProps] = js.native
+  var margin: js.UndefOr[MarginType] = js.native
+  var round: js.UndefOr[RoundType] = js.native
 }
 
 object Content {
   @scala.inline
-  def apply(
-    border: BorderType = null,
-    content: Pad = null,
-    disabled: BackgroundBorder = null,
-    error: ColorMargin = null,
-    focus: BackgroundBackgroundTypeBorder1 = null,
-    help: MarginMarginType = null,
-    info: MarginMarginType = null,
-    label: TextProps = null,
-    margin: MarginType = null,
-    round: RoundType = null
-  ): Content = {
+  def apply(): Content = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
+  @scala.inline
+  implicit class ContentOps[Self <: Content] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderVarargs(value: SizeStyle*): Self = this.set("border", js.Array(value :_*))
+    @scala.inline
+    def setBorder(value: BorderType): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setContent(value: Pad): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDisabled(value: BackgroundBorder): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setError(value: Margin): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFocus(value: `4`): Self = this.set("focus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocus: Self = this.set("focus", js.undefined)
+    @scala.inline
+    def setHelp(value: ColorMargin): Self = this.set("help", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelp: Self = this.set("help", js.undefined)
+    @scala.inline
+    def setInfo(value: ColorMargin): Self = this.set("info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfo: Self = this.set("info", js.undefined)
+    @scala.inline
+    def setLabel(value: TextProps): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMargin(value: MarginType): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setRound(value: RoundType): Self = this.set("round", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRound: Self = this.set("round", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,38 @@ trait ListGeoLocationsRequest extends js.Object {
 
 object ListGeoLocationsRequest {
   @scala.inline
-  def apply(
-    MaxItems: PageMaxItems = null,
-    StartContinentCode: GeoLocationContinentCode = null,
-    StartCountryCode: GeoLocationCountryCode = null,
-    StartSubdivisionCode: GeoLocationSubdivisionCode = null
-  ): ListGeoLocationsRequest = {
+  def apply(): ListGeoLocationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
-    if (StartContinentCode != null) __obj.updateDynamic("StartContinentCode")(StartContinentCode.asInstanceOf[js.Any])
-    if (StartCountryCode != null) __obj.updateDynamic("StartCountryCode")(StartCountryCode.asInstanceOf[js.Any])
-    if (StartSubdivisionCode != null) __obj.updateDynamic("StartSubdivisionCode")(StartSubdivisionCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGeoLocationsRequest]
   }
+  @scala.inline
+  implicit class ListGeoLocationsRequestOps[Self <: ListGeoLocationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    @scala.inline
+    def setStartContinentCode(value: GeoLocationContinentCode): Self = this.set("StartContinentCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartContinentCode: Self = this.set("StartContinentCode", js.undefined)
+    @scala.inline
+    def setStartCountryCode(value: GeoLocationCountryCode): Self = this.set("StartCountryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartCountryCode: Self = this.set("StartCountryCode", js.undefined)
+    @scala.inline
+    def setStartSubdivisionCode(value: GeoLocationSubdivisionCode): Self = this.set("StartSubdivisionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartSubdivisionCode: Self = this.set("StartSubdivisionCode", js.undefined)
+  }
+  
 }
 

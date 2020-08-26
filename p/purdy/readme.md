@@ -12,7 +12,7 @@ Pretty print objects in real purdy colors. Allows clearer visualization of objec
 | Keywords           | ansi, terminal, colors, pretty, print, color |
 | # releases         | 10 |
 | # dependents       | 19 |
-| # downloads        | 183666 |
+| # downloads        | 180821 |
 | # stars            | 21 |
 
 ## Links

@@ -1,11 +1,8 @@
 package typings.winrtUwp.global.Windows.Security.Credentials
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typings.winrtUwp.Windows.Security.Credentials.UI.AuthenticationProtocol
-import typings.winrtUwp.Windows.Security.Credentials.UI.CredentialSaveOption
 import typings.winrtUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult
 import typings.winrtUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability
-import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,65 +20,12 @@ object UI extends js.Object {
   @js.native
   /** Creates and initializes a new, empty instance of the CredentialPickerOptions object. */
   class CredentialPickerOptions ()
-    extends typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerOptions {
-    /** Gets or sets the option of whether the dialog box is displayed. */
-    /* CompleteClass */
-    override var alwaysDisplayDialog: Boolean = js.native
-    /** Gets or sets the authentication protocol. */
-    /* CompleteClass */
-    override var authenticationProtocol: AuthenticationProtocol = js.native
-    /** Gets or sets whether the caller wants to save the credentials. */
-    /* CompleteClass */
-    override var callerSavesCredential: Boolean = js.native
-    /** Gets or sets the caption text that is displayed to the user. */
-    /* CompleteClass */
-    override var caption: String = js.native
-    /** Gets or sets the option on saving credentials. */
-    /* CompleteClass */
-    override var credentialSaveOption: CredentialSaveOption = js.native
-    /** Gets or sets whether the authentication protocol is custom rather than a standard authentication protocol. */
-    /* CompleteClass */
-    override var customAuthenticationProtocol: String = js.native
-    /** Gets or sets the error code. */
-    /* CompleteClass */
-    override var errorCode: Double = js.native
-    /** Gets or sets the body of text that displays to the user. */
-    /* CompleteClass */
-    override var message: String = js.native
-    /** Gets or sets whether to fill dialog box fields with previous credentials. */
-    /* CompleteClass */
-    override var previousCredential: IBuffer = js.native
-    /** Gets or sets the name of the target computer. */
-    /* CompleteClass */
-    override var targetName: String = js.native
-  }
+    extends typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerOptions
   
   /** Describes the results of the dialog box operation. */
   @js.native
   abstract class CredentialPickerResults ()
-    extends typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults {
-    /** Gets the opaque credential. */
-    /* CompleteClass */
-    override var credential: IBuffer = js.native
-    /** Gets the domain name portion of the unpacked credential. */
-    /* CompleteClass */
-    override var credentialDomainName: String = js.native
-    /** Gets the password portion of the unpacked credential. */
-    /* CompleteClass */
-    override var credentialPassword: String = js.native
-    /** Gets the state of the "Save Credentials" check box. */
-    /* CompleteClass */
-    override var credentialSaveOption: CredentialSaveOption = js.native
-    /** Gets the status of the credential save operation. */
-    /* CompleteClass */
-    override var credentialSaved: Boolean = js.native
-    /** Gets the user name of the unpacked credential. */
-    /* CompleteClass */
-    override var credentialUserName: String = js.native
-    /** Gets the value of the error code. */
-    /* CompleteClass */
-    override var errorCode: Double = js.native
-  }
+    extends typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults
   
   /** Checks for availability of a biometric (fingerprint) verifier device and performs a biometric verification. */
   @js.native

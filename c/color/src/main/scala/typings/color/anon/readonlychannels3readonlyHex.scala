@@ -35,25 +35,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined { readonly channels  :3,  readonly labels  :'lab', readonly xyz (lab : color-convert.color-convert/conversions.LAB): color-convert.color-convert/conversions.XYZ, readonly lch (lab : color-convert.color-convert/conversions.LAB): color-convert.color-convert/conversions.LCH} & color-convert.color-convert/route.lab & {[ F in keyof color-convert.color-convert/route.lab ]: {  raw  :color-convert.color-convert/route.lab[F]}} */
+/* Inlined { readonly channels :3,  readonly labels :'lab', readonly xyz (lab : color-convert.color-convert/conversions.LAB): color-convert.color-convert/conversions.XYZ, readonly lch (lab : color-convert.color-convert/conversions.LAB): color-convert.color-convert/conversions.LCH} & color-convert.color-convert/route.lab & {[ F in keyof color-convert.color-convert/route.lab ]: {  raw :color-convert.color-convert/route.lab[F]}} */
 @js.native
 trait readonlychannels3readonlyHex extends js.Object {
-  var ansi16: `87` = js.native
-  var ansi256: `86` = js.native
-  var apple: `95` = js.native
+  var ansi16: `96` = js.native
+  var ansi256: `87` = js.native
+  var apple: `84` = js.native
   val channels: `3` = js.native
-  var cmyk: `90` = js.native
-  var gray: `93` = js.native
-  var hcg: `85` = js.native
-  var hex: `88` = js.native
-  var hsl: `91` = js.native
-  var hsv: `94` = js.native
-  var hwb: `96` = js.native
-  var keyword: `92` = js.native
+  var cmyk: `89` = js.native
+  var gray: `86` = js.native
+  var hcg: `90` = js.native
+  var hex: `94` = js.native
+  var hsl: `95` = js.native
+  var hsv: `92` = js.native
+  var hwb: `88` = js.native
+  var keyword: `85` = js.native
   val labels: lab = js.native
-  var lch: `89` = js.native
+  var lch: `93` = js.native
   var rgb: `83` = js.native
-  var xyz: `84` = js.native
+  var xyz: `91` = js.native
   def ansi16(from: LAB_): ANSI16_ = js.native
   def ansi256(from: LAB_): ANSI256_ = js.native
   def apple(from: LAB_): APPLE_ = js.native

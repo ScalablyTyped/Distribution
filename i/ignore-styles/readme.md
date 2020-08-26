@@ -11,8 +11,8 @@ Ignore imported style files when running in Node
 | Full name          | ignore-styles |
 | Keywords           | webpack, css, testing |
 | # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 4609168 |
+| # dependents       | 52 |
+| # downloads        | 4632078 |
 | # stars            | 7 |
 
 ## Links

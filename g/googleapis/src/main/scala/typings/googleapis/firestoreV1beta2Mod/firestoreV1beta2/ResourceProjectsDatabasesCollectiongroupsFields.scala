@@ -27,6 +27,7 @@ class ResourceProjectsDatabasesCollectiongroupsFields protected () extends js.Ob
     */
   def get(): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta2Field] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta2Field]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta2Field] = js.native
   def get(params: ParamsResourceProjectsDatabasesCollectiongroupsFieldsGet): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta2Field] = js.native
   def get(
     params: ParamsResourceProjectsDatabasesCollectiongroupsFieldsGet,
@@ -64,6 +65,7 @@ class ResourceProjectsDatabasesCollectiongroupsFields protected () extends js.Ob
     */
   def list(): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse] = js.native
   def list(params: ParamsResourceProjectsDatabasesCollectiongroupsFieldsList): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse] = js.native
   def list(
     params: ParamsResourceProjectsDatabasesCollectiongroupsFieldsList,
@@ -105,6 +107,7 @@ class ResourceProjectsDatabasesCollectiongroupsFields protected () extends js.Ob
     */
   def patch(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(params: ParamsResourceProjectsDatabasesCollectiongroupsFieldsPatch): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(
     params: ParamsResourceProjectsDatabasesCollectiongroupsFieldsPatch,

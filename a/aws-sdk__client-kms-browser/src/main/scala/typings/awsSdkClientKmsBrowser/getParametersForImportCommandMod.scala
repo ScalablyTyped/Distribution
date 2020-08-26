@@ -26,16 +26,9 @@ object getParametersForImportCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GetParametersForImportInput) = this()
-    /* CompleteClass */
-    override val input: GetParametersForImportInput = js.native
     val middlewareStack: MiddlewareStack[GetParametersForImportInput, GetParametersForImportOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KMSResolvedConfiguration
-    ): Handler[GetParametersForImportInput, GetParametersForImportOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KMSResolvedConfiguration
     ): Handler[GetParametersForImportInput, GetParametersForImportOutput] = js.native
   }

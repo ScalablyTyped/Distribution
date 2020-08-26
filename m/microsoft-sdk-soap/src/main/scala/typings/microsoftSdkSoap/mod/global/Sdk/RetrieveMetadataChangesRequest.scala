@@ -20,6 +20,11 @@ class RetrieveMetadataChangesRequest protected () extends OrganizationRequest {
   def this(query: EntityQueryExpression, clientVersionStamp: java.lang.String) = this()
   def this(
     query: EntityQueryExpression,
+    clientVersionStamp: js.UndefOr[scala.Nothing],
+    deletedMetadataFilters: DeletedMetadataFilters
+  ) = this()
+  def this(
+    query: EntityQueryExpression,
     clientVersionStamp: java.lang.String,
     deletedMetadataFilters: DeletedMetadataFilters
   ) = this()

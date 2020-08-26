@@ -17,6 +17,12 @@ trait OpenFinGlobalHotkey extends js.Object {
   def addEventListener(
     `type`: OpenFinGlobalHotkeyEventType,
     listener: js.Function1[/* event */ GlobalHotkeyEvent, Unit],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
+  ): Unit = js.native
+  def addEventListener(
+    `type`: OpenFinGlobalHotkeyEventType,
+    listener: js.Function1[/* event */ GlobalHotkeyEvent, Unit],
     callback: js.Function0[Unit]
   ): Unit = js.native
   def addEventListener(
@@ -29,6 +35,11 @@ trait OpenFinGlobalHotkey extends js.Object {
     * Checks if a given hotkey has been registered
     */
   def isRegistered(hotkey: String): Unit = js.native
+  def isRegistered(
+    hotkey: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
+  ): Unit = js.native
   def isRegistered(hotkey: String, callback: js.Function1[/* registered */ Boolean, Unit]): Unit = js.native
   def isRegistered(
     hotkey: String,
@@ -39,6 +50,12 @@ trait OpenFinGlobalHotkey extends js.Object {
     * Registers a global hotkey with the operating system.
     */
   def register(hotkey: String, listener: js.Function0[Unit]): Unit = js.native
+  def register(
+    hotkey: String,
+    listener: js.Function0[Unit],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
+  ): Unit = js.native
   def register(hotkey: String, listener: js.Function0[Unit], callback: js.Function0[Unit]): Unit = js.native
   def register(
     hotkey: String,
@@ -50,6 +67,12 @@ trait OpenFinGlobalHotkey extends js.Object {
     * Removes a previously registered event listener from the specified event.
     */
   def removeEventListener(`type`: OpenFinGlobalHotkeyEventType, listener: js.Function1[/* event */ GlobalHotkeyEvent, Unit]): Unit = js.native
+  def removeEventListener(
+    `type`: OpenFinGlobalHotkeyEventType,
+    listener: js.Function1[/* event */ GlobalHotkeyEvent, Unit],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
+  ): Unit = js.native
   def removeEventListener(
     `type`: OpenFinGlobalHotkeyEventType,
     listener: js.Function1[/* event */ GlobalHotkeyEvent, Unit],
@@ -65,6 +88,11 @@ trait OpenFinGlobalHotkey extends js.Object {
     * Unregisters a global hotkey with the operating system.
     */
   def unregister(hotkey: String): Unit = js.native
+  def unregister(
+    hotkey: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
+  ): Unit = js.native
   def unregister(hotkey: String, callback: js.Function0[Unit]): Unit = js.native
   def unregister(
     hotkey: String,
@@ -75,6 +103,10 @@ trait OpenFinGlobalHotkey extends js.Object {
     * Unregisters all global hotkeys for the current application.
     */
   def unregisterAll(): Unit = js.native
+  def unregisterAll(
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
+  ): Unit = js.native
   def unregisterAll(callback: js.Function0[Unit]): Unit = js.native
   def unregisterAll(
     callback: js.Function0[Unit],

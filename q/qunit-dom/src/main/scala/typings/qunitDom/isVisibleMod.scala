@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object isVisibleMod extends js.Object {
   def default(): Unit = js.native
+  def default(options: js.UndefOr[scala.Nothing], message: String): Unit = js.native
   def default(options: String): Unit = js.native
   def default(options: String, message: String): Unit = js.native
   def default(options: ExistsOptions): Unit = js.native

@@ -5,34 +5,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Settings extends js.Object {
-  val application: Password
-  val attributesEncoder: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.undefined
-  val attributesParser: js.UndefOr[js.Function1[/* json */ String, _]] = js.undefined
-  val baseUrl: String
-  val debug: js.UndefOr[Boolean] = js.undefined
-  val nesting: js.UndefOr[Boolean] = js.undefined
-  val sessionTimeout: js.UndefOr[Double] = js.undefined
+  val application: Password = js.native
+  val attributesEncoder: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.native
+  val attributesParser: js.UndefOr[js.Function1[/* json */ String, _]] = js.native
+  val baseUrl: String = js.native
+  val debug: js.UndefOr[Boolean] = js.native
+  val nesting: js.UndefOr[Boolean] = js.native
+  val sessionTimeout: js.UndefOr[Double] = js.native
 }
 
 object Settings {
   @scala.inline
-  def apply(
-    application: Password,
-    baseUrl: String,
-    attributesEncoder: /* obj */ js.Any => String = null,
-    attributesParser: /* json */ String => _ = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    nesting: js.UndefOr[Boolean] = js.undefined,
-    sessionTimeout: js.UndefOr[Double] = js.undefined
-  ): Settings = {
+  def apply(application: Password, baseUrl: String): Settings = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any])
-    if (attributesEncoder != null) __obj.updateDynamic("attributesEncoder")(js.Any.fromFunction1(attributesEncoder))
-    if (attributesParser != null) __obj.updateDynamic("attributesParser")(js.Any.fromFunction1(attributesParser))
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nesting)) __obj.updateDynamic("nesting")(nesting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sessionTimeout)) __obj.updateDynamic("sessionTimeout")(sessionTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
+  @scala.inline
+  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Password): Self = this.set("application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributesEncoder(value: /* obj */ js.Any => String): Self = this.set("attributesEncoder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAttributesEncoder: Self = this.set("attributesEncoder", js.undefined)
+    @scala.inline
+    def setAttributesParser(value: /* json */ String => _): Self = this.set("attributesParser", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAttributesParser: Self = this.set("attributesParser", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setNesting(value: Boolean): Self = this.set("nesting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNesting: Self = this.set("nesting", js.undefined)
+    @scala.inline
+    def setSessionTimeout(value: Double): Self = this.set("sessionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionTimeout: Self = this.set("sessionTimeout", js.undefined)
+  }
+  
 }
 

@@ -15,7 +15,11 @@ import scala.scalajs.js.annotation._
 class Program ()
   extends typings.pixiJs.PIXI.Program {
   def this(vertexSrc: String) = this()
+  def this(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String) = this()
   def this(vertexSrc: String, fragmentSrc: String) = this()
+  def this(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: js.UndefOr[scala.Nothing], name: String) = this()
+  def this(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String, name: String) = this()
+  def this(vertexSrc: String, fragmentSrc: js.UndefOr[scala.Nothing], name: String) = this()
   def this(vertexSrc: String, fragmentSrc: String, name: String) = this()
 }
 
@@ -50,7 +54,11 @@ object Program extends js.Object {
     * @returns {PIXI.Program} an shiny new Pixi shader!
     */
   def from(): typings.pixiJs.PIXI.Program = js.native
+  def from(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: js.UndefOr[scala.Nothing], name: String): typings.pixiJs.PIXI.Program = js.native
+  def from(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String): typings.pixiJs.PIXI.Program = js.native
+  def from(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String, name: String): typings.pixiJs.PIXI.Program = js.native
   def from(vertexSrc: String): typings.pixiJs.PIXI.Program = js.native
+  def from(vertexSrc: String, fragmentSrc: js.UndefOr[scala.Nothing], name: String): typings.pixiJs.PIXI.Program = js.native
   def from(vertexSrc: String, fragmentSrc: String): typings.pixiJs.PIXI.Program = js.native
   def from(vertexSrc: String, fragmentSrc: String, name: String): typings.pixiJs.PIXI.Program = js.native
 }

@@ -1,168 +1,361 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
+import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ServerInfo extends js.Object {
-  var connection_bandwidth_received_last_minute_total: Double
-  var connection_bandwidth_received_last_second_total: Double
-  var connection_bandwidth_sent_last_minute_total: Double
-  var connection_bandwidth_sent_last_second_total: Double
-  var connection_bytes_received_control: Double
-  var connection_bytes_received_keepalive: Double
-  var connection_bytes_received_speech: Double
-  var connection_bytes_received_total: Double
-  var connection_bytes_sent_control: Double
-  var connection_bytes_sent_keepalive: Double
-  var connection_bytes_sent_speech: Double
-  var connection_bytes_sent_total: Double
-  var connection_filetransfer_bandwidth_received: Double
-  var connection_filetransfer_bandwidth_sent: Double
-  var connection_filetransfer_bytes_received_total: Double
-  var connection_filetransfer_bytes_sent_total: Double
-  var connection_packets_received_control: Double
-  var connection_packets_received_keepalive: Double
-  var connection_packets_received_speech: Double
-  var connection_packets_received_total: Double
-  var connection_packets_sent_control: Double
-  var connection_packets_sent_keepalive: Double
-  var connection_packets_sent_speech: Double
-  var connection_packets_sent_total: Double
-  var virtualserver_antiflood_points_needed_command_block: Double
-  var virtualserver_antiflood_points_needed_ip_block: Double
-  var virtualserver_antiflood_points_needed_plugin_block: Double
-  var virtualserver_antiflood_points_tick_reduce: Double
-  var virtualserver_channel_temp_delete_delay_default: Double
-  var virtualserver_codec_encryption_mode: Double
-  var virtualserver_complain_autoban_count: Double
-  var virtualserver_complain_autoban_time: Double
-  var virtualserver_complain_remove_time: Double
-  var virtualserver_created: Double
-  var virtualserver_default_channel_admin_group: Double
-  var virtualserver_default_channel_group: Double
-  var virtualserver_default_server_group: Double
-  var virtualserver_download_quota: Double
-  var virtualserver_filebase: String
-  var virtualserver_flag_password: Double
-  var virtualserver_hostbanner_gfx_interval: Double
-  var virtualserver_hostbanner_gfx_url: String
-  var virtualserver_hostbanner_mode: Double
-  var virtualserver_hostbanner_url: String
-  var virtualserver_hostbutton_gfx_url: String
-  var virtualserver_hostbutton_tooltip: String
-  var virtualserver_hostbutton_url: String
-  var virtualserver_hostmessage: String
-  var virtualserver_hostmessage_mode: Double
-  var virtualserver_icon_id: Double
-  var virtualserver_log_channel: Double
-  var virtualserver_log_client: Double
-  var virtualserver_log_filetransfer: Double
-  var virtualserver_log_permissions: Double
-  var virtualserver_log_query: Double
-  var virtualserver_log_server: Double
-  var virtualserver_max_download_total_bandwidth: Double
-  var virtualserver_max_upload_total_bandwidth: Double
-  var virtualserver_maxclients: Double
-  var virtualserver_min_android_version: Double
-  var virtualserver_min_client_version: Double
-  var virtualserver_min_clients_in_channel_before_forced_silence: Double
-  var virtualserver_min_ios_version: Double
-  var virtualserver_name: String
-  var virtualserver_name_phonetic: String
-  var virtualserver_needed_identity_security_level: Double
-  var virtualserver_nickname: String
-  var virtualserver_password: String
-  var virtualserver_priority_speaker_dimm_modificator: Double
-  var virtualserver_reserved_slots: Double
-  var virtualserver_status: String
-  var virtualserver_unique_identifier: String
-  var virtualserver_upload_quota: Double
-  var virtualserver_weblist_enabled: Double
-  var virtualserver_welcomemessage: String
+@js.native
+trait ServerInfo extends ResponseEntry {
+  var connectionBandwidthReceivedLastMinuteTotal: Double = js.native
+  var connectionBandwidthReceivedLastSecondTotal: Double = js.native
+  var connectionBandwidthSentLastMinuteTotal: Double = js.native
+  var connectionBandwidthSentLastSecondTotal: Double = js.native
+  var connectionBytesReceivedControl: Double = js.native
+  var connectionBytesReceivedKeepalive: Double = js.native
+  var connectionBytesReceivedSpeech: Double = js.native
+  var connectionBytesReceivedTotal: Double = js.native
+  var connectionBytesSentControl: Double = js.native
+  var connectionBytesSentKeepalive: Double = js.native
+  var connectionBytesSentSpeech: Double = js.native
+  var connectionBytesSentTotal: Double = js.native
+  var connectionFiletransferBandwidthReceived: Double = js.native
+  var connectionFiletransferBandwidthSent: Double = js.native
+  var connectionFiletransferBytesReceivedTotal: Double = js.native
+  var connectionFiletransferBytesSentTotal: Double = js.native
+  var connectionPacketsReceivedControl: Double = js.native
+  var connectionPacketsReceivedKeepalive: Double = js.native
+  var connectionPacketsReceivedSpeech: Double = js.native
+  var connectionPacketsReceivedTotal: Double = js.native
+  var connectionPacketsSentControl: Double = js.native
+  var connectionPacketsSentKeepalive: Double = js.native
+  var connectionPacketsSentSpeech: Double = js.native
+  var connectionPacketsSentTotal: Double = js.native
+  var virtualserverAntifloodPointsNeededCommandBlock: Double = js.native
+  var virtualserverAntifloodPointsNeededIpBlock: Double = js.native
+  var virtualserverAntifloodPointsNeededPluginBlock: Double = js.native
+  var virtualserverAntifloodPointsTickReduce: Double = js.native
+  var virtualserverChannelTempDeleteDelayDefault: Double = js.native
+  var virtualserverChannelsonline: Double = js.native
+  var virtualserverClientsonline: Double = js.native
+  var virtualserverCodecEncryptionMode: Double = js.native
+  var virtualserverComplainAutobanCount: Double = js.native
+  var virtualserverComplainAutobanTime: Double = js.native
+  var virtualserverComplainRemoveTime: Double = js.native
+  var virtualserverCreated: Double = js.native
+  var virtualserverDefaultChannelAdminGroup: String = js.native
+  var virtualserverDefaultChannelGroup: String = js.native
+  var virtualserverDefaultServerGroup: String = js.native
+  var virtualserverDownloadQuota: Double = js.native
+  var virtualserverFilebase: String = js.native
+  var virtualserverFlagPassword: Boolean = js.native
+  var virtualserverHostbannerGfxInterval: Double = js.native
+  var virtualserverHostbannerGfxUrl: String = js.native
+  var virtualserverHostbannerMode: Double = js.native
+  var virtualserverHostbannerUrl: String = js.native
+  var virtualserverHostbuttonGfxUrl: String = js.native
+  var virtualserverHostbuttonTooltip: String = js.native
+  var virtualserverHostbuttonUrl: String = js.native
+  var virtualserverHostmessage: String = js.native
+  var virtualserverHostmessageMode: Double = js.native
+  var virtualserverIconId: String = js.native
+  var virtualserverLogChannel: Double = js.native
+  var virtualserverLogClient: Double = js.native
+  var virtualserverLogFiletransfer: Double = js.native
+  var virtualserverLogPermissions: Double = js.native
+  var virtualserverLogQuery: Double = js.native
+  var virtualserverLogServer: Double = js.native
+  var virtualserverMaxDownloadTotalBandwidth: Double = js.native
+  var virtualserverMaxUploadTotalBandwidth: Double = js.native
+  var virtualserverMaxclients: Double = js.native
+  var virtualserverMinAndroidVersion: Double = js.native
+  var virtualserverMinClientVersion: Double = js.native
+  var virtualserverMinClientsInChannelBeforeForcedSilence: Double = js.native
+  var virtualserverMinIosVersion: Double = js.native
+  var virtualserverName: String = js.native
+  var virtualserverNamePhonetic: String = js.native
+  var virtualserverNeededIdentitySecurityLevel: Double = js.native
+  var virtualserverNickname: String = js.native
+  var virtualserverPassword: String = js.native
+  var virtualserverPrioritySpeakerDimmModificator: Double = js.native
+  var virtualserverQueryclientsonline: Double = js.native
+  var virtualserverReservedSlots: Double = js.native
+  var virtualserverStatus: String = js.native
+  var virtualserverTotalBytesDownloaded: Double = js.native
+  var virtualserverTotalBytesUploaded: Double = js.native
+  var virtualserverTotalPacketlossTotal: Double = js.native
+  var virtualserverTotalPing: Double = js.native
+  var virtualserverUniqueIdentifier: String = js.native
+  var virtualserverUploadQuota: Double = js.native
+  var virtualserverWeblistEnabled: Double = js.native
+  var virtualserverWelcomemessage: String = js.native
 }
 
 object ServerInfo {
   @scala.inline
   def apply(
-    connection_bandwidth_received_last_minute_total: Double,
-    connection_bandwidth_received_last_second_total: Double,
-    connection_bandwidth_sent_last_minute_total: Double,
-    connection_bandwidth_sent_last_second_total: Double,
-    connection_bytes_received_control: Double,
-    connection_bytes_received_keepalive: Double,
-    connection_bytes_received_speech: Double,
-    connection_bytes_received_total: Double,
-    connection_bytes_sent_control: Double,
-    connection_bytes_sent_keepalive: Double,
-    connection_bytes_sent_speech: Double,
-    connection_bytes_sent_total: Double,
-    connection_filetransfer_bandwidth_received: Double,
-    connection_filetransfer_bandwidth_sent: Double,
-    connection_filetransfer_bytes_received_total: Double,
-    connection_filetransfer_bytes_sent_total: Double,
-    connection_packets_received_control: Double,
-    connection_packets_received_keepalive: Double,
-    connection_packets_received_speech: Double,
-    connection_packets_received_total: Double,
-    connection_packets_sent_control: Double,
-    connection_packets_sent_keepalive: Double,
-    connection_packets_sent_speech: Double,
-    connection_packets_sent_total: Double,
-    virtualserver_antiflood_points_needed_command_block: Double,
-    virtualserver_antiflood_points_needed_ip_block: Double,
-    virtualserver_antiflood_points_needed_plugin_block: Double,
-    virtualserver_antiflood_points_tick_reduce: Double,
-    virtualserver_channel_temp_delete_delay_default: Double,
-    virtualserver_codec_encryption_mode: Double,
-    virtualserver_complain_autoban_count: Double,
-    virtualserver_complain_autoban_time: Double,
-    virtualserver_complain_remove_time: Double,
-    virtualserver_created: Double,
-    virtualserver_default_channel_admin_group: Double,
-    virtualserver_default_channel_group: Double,
-    virtualserver_default_server_group: Double,
-    virtualserver_download_quota: Double,
-    virtualserver_filebase: String,
-    virtualserver_flag_password: Double,
-    virtualserver_hostbanner_gfx_interval: Double,
-    virtualserver_hostbanner_gfx_url: String,
-    virtualserver_hostbanner_mode: Double,
-    virtualserver_hostbanner_url: String,
-    virtualserver_hostbutton_gfx_url: String,
-    virtualserver_hostbutton_tooltip: String,
-    virtualserver_hostbutton_url: String,
-    virtualserver_hostmessage: String,
-    virtualserver_hostmessage_mode: Double,
-    virtualserver_icon_id: Double,
-    virtualserver_log_channel: Double,
-    virtualserver_log_client: Double,
-    virtualserver_log_filetransfer: Double,
-    virtualserver_log_permissions: Double,
-    virtualserver_log_query: Double,
-    virtualserver_log_server: Double,
-    virtualserver_max_download_total_bandwidth: Double,
-    virtualserver_max_upload_total_bandwidth: Double,
-    virtualserver_maxclients: Double,
-    virtualserver_min_android_version: Double,
-    virtualserver_min_client_version: Double,
-    virtualserver_min_clients_in_channel_before_forced_silence: Double,
-    virtualserver_min_ios_version: Double,
-    virtualserver_name: String,
-    virtualserver_name_phonetic: String,
-    virtualserver_needed_identity_security_level: Double,
-    virtualserver_nickname: String,
-    virtualserver_password: String,
-    virtualserver_priority_speaker_dimm_modificator: Double,
-    virtualserver_reserved_slots: Double,
-    virtualserver_status: String,
-    virtualserver_unique_identifier: String,
-    virtualserver_upload_quota: Double,
-    virtualserver_weblist_enabled: Double,
-    virtualserver_welcomemessage: String
+    connectionBandwidthReceivedLastMinuteTotal: Double,
+    connectionBandwidthReceivedLastSecondTotal: Double,
+    connectionBandwidthSentLastMinuteTotal: Double,
+    connectionBandwidthSentLastSecondTotal: Double,
+    connectionBytesReceivedControl: Double,
+    connectionBytesReceivedKeepalive: Double,
+    connectionBytesReceivedSpeech: Double,
+    connectionBytesReceivedTotal: Double,
+    connectionBytesSentControl: Double,
+    connectionBytesSentKeepalive: Double,
+    connectionBytesSentSpeech: Double,
+    connectionBytesSentTotal: Double,
+    connectionFiletransferBandwidthReceived: Double,
+    connectionFiletransferBandwidthSent: Double,
+    connectionFiletransferBytesReceivedTotal: Double,
+    connectionFiletransferBytesSentTotal: Double,
+    connectionPacketsReceivedControl: Double,
+    connectionPacketsReceivedKeepalive: Double,
+    connectionPacketsReceivedSpeech: Double,
+    connectionPacketsReceivedTotal: Double,
+    connectionPacketsSentControl: Double,
+    connectionPacketsSentKeepalive: Double,
+    connectionPacketsSentSpeech: Double,
+    connectionPacketsSentTotal: Double,
+    virtualserverAntifloodPointsNeededCommandBlock: Double,
+    virtualserverAntifloodPointsNeededIpBlock: Double,
+    virtualserverAntifloodPointsNeededPluginBlock: Double,
+    virtualserverAntifloodPointsTickReduce: Double,
+    virtualserverChannelTempDeleteDelayDefault: Double,
+    virtualserverChannelsonline: Double,
+    virtualserverClientsonline: Double,
+    virtualserverCodecEncryptionMode: Double,
+    virtualserverComplainAutobanCount: Double,
+    virtualserverComplainAutobanTime: Double,
+    virtualserverComplainRemoveTime: Double,
+    virtualserverCreated: Double,
+    virtualserverDefaultChannelAdminGroup: String,
+    virtualserverDefaultChannelGroup: String,
+    virtualserverDefaultServerGroup: String,
+    virtualserverDownloadQuota: Double,
+    virtualserverFilebase: String,
+    virtualserverFlagPassword: Boolean,
+    virtualserverHostbannerGfxInterval: Double,
+    virtualserverHostbannerGfxUrl: String,
+    virtualserverHostbannerMode: Double,
+    virtualserverHostbannerUrl: String,
+    virtualserverHostbuttonGfxUrl: String,
+    virtualserverHostbuttonTooltip: String,
+    virtualserverHostbuttonUrl: String,
+    virtualserverHostmessage: String,
+    virtualserverHostmessageMode: Double,
+    virtualserverIconId: String,
+    virtualserverLogChannel: Double,
+    virtualserverLogClient: Double,
+    virtualserverLogFiletransfer: Double,
+    virtualserverLogPermissions: Double,
+    virtualserverLogQuery: Double,
+    virtualserverLogServer: Double,
+    virtualserverMaxDownloadTotalBandwidth: Double,
+    virtualserverMaxUploadTotalBandwidth: Double,
+    virtualserverMaxclients: Double,
+    virtualserverMinAndroidVersion: Double,
+    virtualserverMinClientVersion: Double,
+    virtualserverMinClientsInChannelBeforeForcedSilence: Double,
+    virtualserverMinIosVersion: Double,
+    virtualserverName: String,
+    virtualserverNamePhonetic: String,
+    virtualserverNeededIdentitySecurityLevel: Double,
+    virtualserverNickname: String,
+    virtualserverPassword: String,
+    virtualserverPrioritySpeakerDimmModificator: Double,
+    virtualserverQueryclientsonline: Double,
+    virtualserverReservedSlots: Double,
+    virtualserverStatus: String,
+    virtualserverTotalBytesDownloaded: Double,
+    virtualserverTotalBytesUploaded: Double,
+    virtualserverTotalPacketlossTotal: Double,
+    virtualserverTotalPing: Double,
+    virtualserverUniqueIdentifier: String,
+    virtualserverUploadQuota: Double,
+    virtualserverWeblistEnabled: Double,
+    virtualserverWelcomemessage: String
   ): ServerInfo = {
-    val __obj = js.Dynamic.literal(connection_bandwidth_received_last_minute_total = connection_bandwidth_received_last_minute_total.asInstanceOf[js.Any], connection_bandwidth_received_last_second_total = connection_bandwidth_received_last_second_total.asInstanceOf[js.Any], connection_bandwidth_sent_last_minute_total = connection_bandwidth_sent_last_minute_total.asInstanceOf[js.Any], connection_bandwidth_sent_last_second_total = connection_bandwidth_sent_last_second_total.asInstanceOf[js.Any], connection_bytes_received_control = connection_bytes_received_control.asInstanceOf[js.Any], connection_bytes_received_keepalive = connection_bytes_received_keepalive.asInstanceOf[js.Any], connection_bytes_received_speech = connection_bytes_received_speech.asInstanceOf[js.Any], connection_bytes_received_total = connection_bytes_received_total.asInstanceOf[js.Any], connection_bytes_sent_control = connection_bytes_sent_control.asInstanceOf[js.Any], connection_bytes_sent_keepalive = connection_bytes_sent_keepalive.asInstanceOf[js.Any], connection_bytes_sent_speech = connection_bytes_sent_speech.asInstanceOf[js.Any], connection_bytes_sent_total = connection_bytes_sent_total.asInstanceOf[js.Any], connection_filetransfer_bandwidth_received = connection_filetransfer_bandwidth_received.asInstanceOf[js.Any], connection_filetransfer_bandwidth_sent = connection_filetransfer_bandwidth_sent.asInstanceOf[js.Any], connection_filetransfer_bytes_received_total = connection_filetransfer_bytes_received_total.asInstanceOf[js.Any], connection_filetransfer_bytes_sent_total = connection_filetransfer_bytes_sent_total.asInstanceOf[js.Any], connection_packets_received_control = connection_packets_received_control.asInstanceOf[js.Any], connection_packets_received_keepalive = connection_packets_received_keepalive.asInstanceOf[js.Any], connection_packets_received_speech = connection_packets_received_speech.asInstanceOf[js.Any], connection_packets_received_total = connection_packets_received_total.asInstanceOf[js.Any], connection_packets_sent_control = connection_packets_sent_control.asInstanceOf[js.Any], connection_packets_sent_keepalive = connection_packets_sent_keepalive.asInstanceOf[js.Any], connection_packets_sent_speech = connection_packets_sent_speech.asInstanceOf[js.Any], connection_packets_sent_total = connection_packets_sent_total.asInstanceOf[js.Any], virtualserver_antiflood_points_needed_command_block = virtualserver_antiflood_points_needed_command_block.asInstanceOf[js.Any], virtualserver_antiflood_points_needed_ip_block = virtualserver_antiflood_points_needed_ip_block.asInstanceOf[js.Any], virtualserver_antiflood_points_needed_plugin_block = virtualserver_antiflood_points_needed_plugin_block.asInstanceOf[js.Any], virtualserver_antiflood_points_tick_reduce = virtualserver_antiflood_points_tick_reduce.asInstanceOf[js.Any], virtualserver_channel_temp_delete_delay_default = virtualserver_channel_temp_delete_delay_default.asInstanceOf[js.Any], virtualserver_codec_encryption_mode = virtualserver_codec_encryption_mode.asInstanceOf[js.Any], virtualserver_complain_autoban_count = virtualserver_complain_autoban_count.asInstanceOf[js.Any], virtualserver_complain_autoban_time = virtualserver_complain_autoban_time.asInstanceOf[js.Any], virtualserver_complain_remove_time = virtualserver_complain_remove_time.asInstanceOf[js.Any], virtualserver_created = virtualserver_created.asInstanceOf[js.Any], virtualserver_default_channel_admin_group = virtualserver_default_channel_admin_group.asInstanceOf[js.Any], virtualserver_default_channel_group = virtualserver_default_channel_group.asInstanceOf[js.Any], virtualserver_default_server_group = virtualserver_default_server_group.asInstanceOf[js.Any], virtualserver_download_quota = virtualserver_download_quota.asInstanceOf[js.Any], virtualserver_filebase = virtualserver_filebase.asInstanceOf[js.Any], virtualserver_flag_password = virtualserver_flag_password.asInstanceOf[js.Any], virtualserver_hostbanner_gfx_interval = virtualserver_hostbanner_gfx_interval.asInstanceOf[js.Any], virtualserver_hostbanner_gfx_url = virtualserver_hostbanner_gfx_url.asInstanceOf[js.Any], virtualserver_hostbanner_mode = virtualserver_hostbanner_mode.asInstanceOf[js.Any], virtualserver_hostbanner_url = virtualserver_hostbanner_url.asInstanceOf[js.Any], virtualserver_hostbutton_gfx_url = virtualserver_hostbutton_gfx_url.asInstanceOf[js.Any], virtualserver_hostbutton_tooltip = virtualserver_hostbutton_tooltip.asInstanceOf[js.Any], virtualserver_hostbutton_url = virtualserver_hostbutton_url.asInstanceOf[js.Any], virtualserver_hostmessage = virtualserver_hostmessage.asInstanceOf[js.Any], virtualserver_hostmessage_mode = virtualserver_hostmessage_mode.asInstanceOf[js.Any], virtualserver_icon_id = virtualserver_icon_id.asInstanceOf[js.Any], virtualserver_log_channel = virtualserver_log_channel.asInstanceOf[js.Any], virtualserver_log_client = virtualserver_log_client.asInstanceOf[js.Any], virtualserver_log_filetransfer = virtualserver_log_filetransfer.asInstanceOf[js.Any], virtualserver_log_permissions = virtualserver_log_permissions.asInstanceOf[js.Any], virtualserver_log_query = virtualserver_log_query.asInstanceOf[js.Any], virtualserver_log_server = virtualserver_log_server.asInstanceOf[js.Any], virtualserver_max_download_total_bandwidth = virtualserver_max_download_total_bandwidth.asInstanceOf[js.Any], virtualserver_max_upload_total_bandwidth = virtualserver_max_upload_total_bandwidth.asInstanceOf[js.Any], virtualserver_maxclients = virtualserver_maxclients.asInstanceOf[js.Any], virtualserver_min_android_version = virtualserver_min_android_version.asInstanceOf[js.Any], virtualserver_min_client_version = virtualserver_min_client_version.asInstanceOf[js.Any], virtualserver_min_clients_in_channel_before_forced_silence = virtualserver_min_clients_in_channel_before_forced_silence.asInstanceOf[js.Any], virtualserver_min_ios_version = virtualserver_min_ios_version.asInstanceOf[js.Any], virtualserver_name = virtualserver_name.asInstanceOf[js.Any], virtualserver_name_phonetic = virtualserver_name_phonetic.asInstanceOf[js.Any], virtualserver_needed_identity_security_level = virtualserver_needed_identity_security_level.asInstanceOf[js.Any], virtualserver_nickname = virtualserver_nickname.asInstanceOf[js.Any], virtualserver_password = virtualserver_password.asInstanceOf[js.Any], virtualserver_priority_speaker_dimm_modificator = virtualserver_priority_speaker_dimm_modificator.asInstanceOf[js.Any], virtualserver_reserved_slots = virtualserver_reserved_slots.asInstanceOf[js.Any], virtualserver_status = virtualserver_status.asInstanceOf[js.Any], virtualserver_unique_identifier = virtualserver_unique_identifier.asInstanceOf[js.Any], virtualserver_upload_quota = virtualserver_upload_quota.asInstanceOf[js.Any], virtualserver_weblist_enabled = virtualserver_weblist_enabled.asInstanceOf[js.Any], virtualserver_welcomemessage = virtualserver_welcomemessage.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connectionBandwidthReceivedLastMinuteTotal = connectionBandwidthReceivedLastMinuteTotal.asInstanceOf[js.Any], connectionBandwidthReceivedLastSecondTotal = connectionBandwidthReceivedLastSecondTotal.asInstanceOf[js.Any], connectionBandwidthSentLastMinuteTotal = connectionBandwidthSentLastMinuteTotal.asInstanceOf[js.Any], connectionBandwidthSentLastSecondTotal = connectionBandwidthSentLastSecondTotal.asInstanceOf[js.Any], connectionBytesReceivedControl = connectionBytesReceivedControl.asInstanceOf[js.Any], connectionBytesReceivedKeepalive = connectionBytesReceivedKeepalive.asInstanceOf[js.Any], connectionBytesReceivedSpeech = connectionBytesReceivedSpeech.asInstanceOf[js.Any], connectionBytesReceivedTotal = connectionBytesReceivedTotal.asInstanceOf[js.Any], connectionBytesSentControl = connectionBytesSentControl.asInstanceOf[js.Any], connectionBytesSentKeepalive = connectionBytesSentKeepalive.asInstanceOf[js.Any], connectionBytesSentSpeech = connectionBytesSentSpeech.asInstanceOf[js.Any], connectionBytesSentTotal = connectionBytesSentTotal.asInstanceOf[js.Any], connectionFiletransferBandwidthReceived = connectionFiletransferBandwidthReceived.asInstanceOf[js.Any], connectionFiletransferBandwidthSent = connectionFiletransferBandwidthSent.asInstanceOf[js.Any], connectionFiletransferBytesReceivedTotal = connectionFiletransferBytesReceivedTotal.asInstanceOf[js.Any], connectionFiletransferBytesSentTotal = connectionFiletransferBytesSentTotal.asInstanceOf[js.Any], connectionPacketsReceivedControl = connectionPacketsReceivedControl.asInstanceOf[js.Any], connectionPacketsReceivedKeepalive = connectionPacketsReceivedKeepalive.asInstanceOf[js.Any], connectionPacketsReceivedSpeech = connectionPacketsReceivedSpeech.asInstanceOf[js.Any], connectionPacketsReceivedTotal = connectionPacketsReceivedTotal.asInstanceOf[js.Any], connectionPacketsSentControl = connectionPacketsSentControl.asInstanceOf[js.Any], connectionPacketsSentKeepalive = connectionPacketsSentKeepalive.asInstanceOf[js.Any], connectionPacketsSentSpeech = connectionPacketsSentSpeech.asInstanceOf[js.Any], connectionPacketsSentTotal = connectionPacketsSentTotal.asInstanceOf[js.Any], virtualserverAntifloodPointsNeededCommandBlock = virtualserverAntifloodPointsNeededCommandBlock.asInstanceOf[js.Any], virtualserverAntifloodPointsNeededIpBlock = virtualserverAntifloodPointsNeededIpBlock.asInstanceOf[js.Any], virtualserverAntifloodPointsNeededPluginBlock = virtualserverAntifloodPointsNeededPluginBlock.asInstanceOf[js.Any], virtualserverAntifloodPointsTickReduce = virtualserverAntifloodPointsTickReduce.asInstanceOf[js.Any], virtualserverChannelTempDeleteDelayDefault = virtualserverChannelTempDeleteDelayDefault.asInstanceOf[js.Any], virtualserverChannelsonline = virtualserverChannelsonline.asInstanceOf[js.Any], virtualserverClientsonline = virtualserverClientsonline.asInstanceOf[js.Any], virtualserverCodecEncryptionMode = virtualserverCodecEncryptionMode.asInstanceOf[js.Any], virtualserverComplainAutobanCount = virtualserverComplainAutobanCount.asInstanceOf[js.Any], virtualserverComplainAutobanTime = virtualserverComplainAutobanTime.asInstanceOf[js.Any], virtualserverComplainRemoveTime = virtualserverComplainRemoveTime.asInstanceOf[js.Any], virtualserverCreated = virtualserverCreated.asInstanceOf[js.Any], virtualserverDefaultChannelAdminGroup = virtualserverDefaultChannelAdminGroup.asInstanceOf[js.Any], virtualserverDefaultChannelGroup = virtualserverDefaultChannelGroup.asInstanceOf[js.Any], virtualserverDefaultServerGroup = virtualserverDefaultServerGroup.asInstanceOf[js.Any], virtualserverDownloadQuota = virtualserverDownloadQuota.asInstanceOf[js.Any], virtualserverFilebase = virtualserverFilebase.asInstanceOf[js.Any], virtualserverFlagPassword = virtualserverFlagPassword.asInstanceOf[js.Any], virtualserverHostbannerGfxInterval = virtualserverHostbannerGfxInterval.asInstanceOf[js.Any], virtualserverHostbannerGfxUrl = virtualserverHostbannerGfxUrl.asInstanceOf[js.Any], virtualserverHostbannerMode = virtualserverHostbannerMode.asInstanceOf[js.Any], virtualserverHostbannerUrl = virtualserverHostbannerUrl.asInstanceOf[js.Any], virtualserverHostbuttonGfxUrl = virtualserverHostbuttonGfxUrl.asInstanceOf[js.Any], virtualserverHostbuttonTooltip = virtualserverHostbuttonTooltip.asInstanceOf[js.Any], virtualserverHostbuttonUrl = virtualserverHostbuttonUrl.asInstanceOf[js.Any], virtualserverHostmessage = virtualserverHostmessage.asInstanceOf[js.Any], virtualserverHostmessageMode = virtualserverHostmessageMode.asInstanceOf[js.Any], virtualserverIconId = virtualserverIconId.asInstanceOf[js.Any], virtualserverLogChannel = virtualserverLogChannel.asInstanceOf[js.Any], virtualserverLogClient = virtualserverLogClient.asInstanceOf[js.Any], virtualserverLogFiletransfer = virtualserverLogFiletransfer.asInstanceOf[js.Any], virtualserverLogPermissions = virtualserverLogPermissions.asInstanceOf[js.Any], virtualserverLogQuery = virtualserverLogQuery.asInstanceOf[js.Any], virtualserverLogServer = virtualserverLogServer.asInstanceOf[js.Any], virtualserverMaxDownloadTotalBandwidth = virtualserverMaxDownloadTotalBandwidth.asInstanceOf[js.Any], virtualserverMaxUploadTotalBandwidth = virtualserverMaxUploadTotalBandwidth.asInstanceOf[js.Any], virtualserverMaxclients = virtualserverMaxclients.asInstanceOf[js.Any], virtualserverMinAndroidVersion = virtualserverMinAndroidVersion.asInstanceOf[js.Any], virtualserverMinClientVersion = virtualserverMinClientVersion.asInstanceOf[js.Any], virtualserverMinClientsInChannelBeforeForcedSilence = virtualserverMinClientsInChannelBeforeForcedSilence.asInstanceOf[js.Any], virtualserverMinIosVersion = virtualserverMinIosVersion.asInstanceOf[js.Any], virtualserverName = virtualserverName.asInstanceOf[js.Any], virtualserverNamePhonetic = virtualserverNamePhonetic.asInstanceOf[js.Any], virtualserverNeededIdentitySecurityLevel = virtualserverNeededIdentitySecurityLevel.asInstanceOf[js.Any], virtualserverNickname = virtualserverNickname.asInstanceOf[js.Any], virtualserverPassword = virtualserverPassword.asInstanceOf[js.Any], virtualserverPrioritySpeakerDimmModificator = virtualserverPrioritySpeakerDimmModificator.asInstanceOf[js.Any], virtualserverQueryclientsonline = virtualserverQueryclientsonline.asInstanceOf[js.Any], virtualserverReservedSlots = virtualserverReservedSlots.asInstanceOf[js.Any], virtualserverStatus = virtualserverStatus.asInstanceOf[js.Any], virtualserverTotalBytesDownloaded = virtualserverTotalBytesDownloaded.asInstanceOf[js.Any], virtualserverTotalBytesUploaded = virtualserverTotalBytesUploaded.asInstanceOf[js.Any], virtualserverTotalPacketlossTotal = virtualserverTotalPacketlossTotal.asInstanceOf[js.Any], virtualserverTotalPing = virtualserverTotalPing.asInstanceOf[js.Any], virtualserverUniqueIdentifier = virtualserverUniqueIdentifier.asInstanceOf[js.Any], virtualserverUploadQuota = virtualserverUploadQuota.asInstanceOf[js.Any], virtualserverWeblistEnabled = virtualserverWeblistEnabled.asInstanceOf[js.Any], virtualserverWelcomemessage = virtualserverWelcomemessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInfo]
   }
+  @scala.inline
+  implicit class ServerInfoOps[Self <: ServerInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionBandwidthReceivedLastMinuteTotal(value: Double): Self = this.set("connectionBandwidthReceivedLastMinuteTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBandwidthReceivedLastSecondTotal(value: Double): Self = this.set("connectionBandwidthReceivedLastSecondTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBandwidthSentLastMinuteTotal(value: Double): Self = this.set("connectionBandwidthSentLastMinuteTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBandwidthSentLastSecondTotal(value: Double): Self = this.set("connectionBandwidthSentLastSecondTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBytesReceivedControl(value: Double): Self = this.set("connectionBytesReceivedControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBytesReceivedKeepalive(value: Double): Self = this.set("connectionBytesReceivedKeepalive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBytesReceivedSpeech(value: Double): Self = this.set("connectionBytesReceivedSpeech", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBytesReceivedTotal(value: Double): Self = this.set("connectionBytesReceivedTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBytesSentControl(value: Double): Self = this.set("connectionBytesSentControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBytesSentKeepalive(value: Double): Self = this.set("connectionBytesSentKeepalive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBytesSentSpeech(value: Double): Self = this.set("connectionBytesSentSpeech", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionBytesSentTotal(value: Double): Self = this.set("connectionBytesSentTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionFiletransferBandwidthReceived(value: Double): Self = this.set("connectionFiletransferBandwidthReceived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionFiletransferBandwidthSent(value: Double): Self = this.set("connectionFiletransferBandwidthSent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionFiletransferBytesReceivedTotal(value: Double): Self = this.set("connectionFiletransferBytesReceivedTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionFiletransferBytesSentTotal(value: Double): Self = this.set("connectionFiletransferBytesSentTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionPacketsReceivedControl(value: Double): Self = this.set("connectionPacketsReceivedControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionPacketsReceivedKeepalive(value: Double): Self = this.set("connectionPacketsReceivedKeepalive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionPacketsReceivedSpeech(value: Double): Self = this.set("connectionPacketsReceivedSpeech", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionPacketsReceivedTotal(value: Double): Self = this.set("connectionPacketsReceivedTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionPacketsSentControl(value: Double): Self = this.set("connectionPacketsSentControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionPacketsSentKeepalive(value: Double): Self = this.set("connectionPacketsSentKeepalive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionPacketsSentSpeech(value: Double): Self = this.set("connectionPacketsSentSpeech", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionPacketsSentTotal(value: Double): Self = this.set("connectionPacketsSentTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverAntifloodPointsNeededCommandBlock(value: Double): Self = this.set("virtualserverAntifloodPointsNeededCommandBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverAntifloodPointsNeededIpBlock(value: Double): Self = this.set("virtualserverAntifloodPointsNeededIpBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverAntifloodPointsNeededPluginBlock(value: Double): Self = this.set("virtualserverAntifloodPointsNeededPluginBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverAntifloodPointsTickReduce(value: Double): Self = this.set("virtualserverAntifloodPointsTickReduce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverChannelTempDeleteDelayDefault(value: Double): Self = this.set("virtualserverChannelTempDeleteDelayDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverChannelsonline(value: Double): Self = this.set("virtualserverChannelsonline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverClientsonline(value: Double): Self = this.set("virtualserverClientsonline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverCodecEncryptionMode(value: Double): Self = this.set("virtualserverCodecEncryptionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverComplainAutobanCount(value: Double): Self = this.set("virtualserverComplainAutobanCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverComplainAutobanTime(value: Double): Self = this.set("virtualserverComplainAutobanTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverComplainRemoveTime(value: Double): Self = this.set("virtualserverComplainRemoveTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverCreated(value: Double): Self = this.set("virtualserverCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverDefaultChannelAdminGroup(value: String): Self = this.set("virtualserverDefaultChannelAdminGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverDefaultChannelGroup(value: String): Self = this.set("virtualserverDefaultChannelGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverDefaultServerGroup(value: String): Self = this.set("virtualserverDefaultServerGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverDownloadQuota(value: Double): Self = this.set("virtualserverDownloadQuota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverFilebase(value: String): Self = this.set("virtualserverFilebase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverFlagPassword(value: Boolean): Self = this.set("virtualserverFlagPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverHostbannerGfxInterval(value: Double): Self = this.set("virtualserverHostbannerGfxInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverHostbannerGfxUrl(value: String): Self = this.set("virtualserverHostbannerGfxUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverHostbannerMode(value: Double): Self = this.set("virtualserverHostbannerMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverHostbannerUrl(value: String): Self = this.set("virtualserverHostbannerUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverHostbuttonGfxUrl(value: String): Self = this.set("virtualserverHostbuttonGfxUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverHostbuttonTooltip(value: String): Self = this.set("virtualserverHostbuttonTooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverHostbuttonUrl(value: String): Self = this.set("virtualserverHostbuttonUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverHostmessage(value: String): Self = this.set("virtualserverHostmessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverHostmessageMode(value: Double): Self = this.set("virtualserverHostmessageMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverIconId(value: String): Self = this.set("virtualserverIconId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverLogChannel(value: Double): Self = this.set("virtualserverLogChannel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverLogClient(value: Double): Self = this.set("virtualserverLogClient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverLogFiletransfer(value: Double): Self = this.set("virtualserverLogFiletransfer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverLogPermissions(value: Double): Self = this.set("virtualserverLogPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverLogQuery(value: Double): Self = this.set("virtualserverLogQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverLogServer(value: Double): Self = this.set("virtualserverLogServer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverMaxDownloadTotalBandwidth(value: Double): Self = this.set("virtualserverMaxDownloadTotalBandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverMaxUploadTotalBandwidth(value: Double): Self = this.set("virtualserverMaxUploadTotalBandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverMaxclients(value: Double): Self = this.set("virtualserverMaxclients", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverMinAndroidVersion(value: Double): Self = this.set("virtualserverMinAndroidVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverMinClientVersion(value: Double): Self = this.set("virtualserverMinClientVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverMinClientsInChannelBeforeForcedSilence(value: Double): Self = this.set("virtualserverMinClientsInChannelBeforeForcedSilence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverMinIosVersion(value: Double): Self = this.set("virtualserverMinIosVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverName(value: String): Self = this.set("virtualserverName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverNamePhonetic(value: String): Self = this.set("virtualserverNamePhonetic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverNeededIdentitySecurityLevel(value: Double): Self = this.set("virtualserverNeededIdentitySecurityLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverNickname(value: String): Self = this.set("virtualserverNickname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverPassword(value: String): Self = this.set("virtualserverPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverPrioritySpeakerDimmModificator(value: Double): Self = this.set("virtualserverPrioritySpeakerDimmModificator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverQueryclientsonline(value: Double): Self = this.set("virtualserverQueryclientsonline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverReservedSlots(value: Double): Self = this.set("virtualserverReservedSlots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverStatus(value: String): Self = this.set("virtualserverStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverTotalBytesDownloaded(value: Double): Self = this.set("virtualserverTotalBytesDownloaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverTotalBytesUploaded(value: Double): Self = this.set("virtualserverTotalBytesUploaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverTotalPacketlossTotal(value: Double): Self = this.set("virtualserverTotalPacketlossTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverTotalPing(value: Double): Self = this.set("virtualserverTotalPing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverUniqueIdentifier(value: String): Self = this.set("virtualserverUniqueIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverUploadQuota(value: Double): Self = this.set("virtualserverUploadQuota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverWeblistEnabled(value: Double): Self = this.set("virtualserverWeblistEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverWelcomemessage(value: String): Self = this.set("virtualserverWelcomemessage", value.asInstanceOf[js.Any])
+  }
+  
 }
 

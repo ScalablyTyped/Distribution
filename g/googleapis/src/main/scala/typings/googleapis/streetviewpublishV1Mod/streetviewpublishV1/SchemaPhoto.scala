@@ -67,34 +67,74 @@ trait SchemaPhoto extends js.Object {
 
 object SchemaPhoto {
   @scala.inline
-  def apply(
-    captureTime: String = null,
-    connections: js.Array[SchemaConnection] = null,
-    downloadUrl: String = null,
-    mapsPublishStatus: String = null,
-    photoId: SchemaPhotoId = null,
-    places: js.Array[SchemaPlace] = null,
-    pose: SchemaPose = null,
-    shareLink: String = null,
-    thumbnailUrl: String = null,
-    transferStatus: String = null,
-    uploadReference: SchemaUploadRef = null,
-    viewCount: String = null
-  ): SchemaPhoto = {
+  def apply(): SchemaPhoto = {
     val __obj = js.Dynamic.literal()
-    if (captureTime != null) __obj.updateDynamic("captureTime")(captureTime.asInstanceOf[js.Any])
-    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
-    if (downloadUrl != null) __obj.updateDynamic("downloadUrl")(downloadUrl.asInstanceOf[js.Any])
-    if (mapsPublishStatus != null) __obj.updateDynamic("mapsPublishStatus")(mapsPublishStatus.asInstanceOf[js.Any])
-    if (photoId != null) __obj.updateDynamic("photoId")(photoId.asInstanceOf[js.Any])
-    if (places != null) __obj.updateDynamic("places")(places.asInstanceOf[js.Any])
-    if (pose != null) __obj.updateDynamic("pose")(pose.asInstanceOf[js.Any])
-    if (shareLink != null) __obj.updateDynamic("shareLink")(shareLink.asInstanceOf[js.Any])
-    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl.asInstanceOf[js.Any])
-    if (transferStatus != null) __obj.updateDynamic("transferStatus")(transferStatus.asInstanceOf[js.Any])
-    if (uploadReference != null) __obj.updateDynamic("uploadReference")(uploadReference.asInstanceOf[js.Any])
-    if (viewCount != null) __obj.updateDynamic("viewCount")(viewCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPhoto]
   }
+  @scala.inline
+  implicit class SchemaPhotoOps[Self <: SchemaPhoto] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptureTime(value: String): Self = this.set("captureTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureTime: Self = this.set("captureTime", js.undefined)
+    @scala.inline
+    def setConnectionsVarargs(value: SchemaConnection*): Self = this.set("connections", js.Array(value :_*))
+    @scala.inline
+    def setConnections(value: js.Array[SchemaConnection]): Self = this.set("connections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnections: Self = this.set("connections", js.undefined)
+    @scala.inline
+    def setDownloadUrl(value: String): Self = this.set("downloadUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadUrl: Self = this.set("downloadUrl", js.undefined)
+    @scala.inline
+    def setMapsPublishStatus(value: String): Self = this.set("mapsPublishStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapsPublishStatus: Self = this.set("mapsPublishStatus", js.undefined)
+    @scala.inline
+    def setPhotoId(value: SchemaPhotoId): Self = this.set("photoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhotoId: Self = this.set("photoId", js.undefined)
+    @scala.inline
+    def setPlacesVarargs(value: SchemaPlace*): Self = this.set("places", js.Array(value :_*))
+    @scala.inline
+    def setPlaces(value: js.Array[SchemaPlace]): Self = this.set("places", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaces: Self = this.set("places", js.undefined)
+    @scala.inline
+    def setPose(value: SchemaPose): Self = this.set("pose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePose: Self = this.set("pose", js.undefined)
+    @scala.inline
+    def setShareLink(value: String): Self = this.set("shareLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShareLink: Self = this.set("shareLink", js.undefined)
+    @scala.inline
+    def setThumbnailUrl(value: String): Self = this.set("thumbnailUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailUrl: Self = this.set("thumbnailUrl", js.undefined)
+    @scala.inline
+    def setTransferStatus(value: String): Self = this.set("transferStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferStatus: Self = this.set("transferStatus", js.undefined)
+    @scala.inline
+    def setUploadReference(value: SchemaUploadRef): Self = this.set("uploadReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadReference: Self = this.set("uploadReference", js.undefined)
+    @scala.inline
+    def setViewCount(value: String): Self = this.set("viewCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewCount: Self = this.set("viewCount", js.undefined)
+  }
+  
 }
 

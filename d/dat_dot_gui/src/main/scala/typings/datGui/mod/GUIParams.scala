@@ -4,67 +4,96 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GUIParams extends js.Object {
   /**
     * Handles GUI's element placement for you.
     * @default true
     */
-  var autoPlace: js.UndefOr[Boolean] = js.undefined
+  var autoPlace: js.UndefOr[Boolean] = js.native
   /**
     * If true, close/open button shows on top of the GUI.
     * @default false
     */
-  var closeOnTop: js.UndefOr[Boolean] = js.undefined
+  var closeOnTop: js.UndefOr[Boolean] = js.native
   /**
     * If true, starts closed.
     * @default false
     */
-  var closed: js.UndefOr[Boolean] = js.undefined
+  var closed: js.UndefOr[Boolean] = js.native
   /**
     * If true, GUI is closed by the "h" keypress.
     * @default false
     */
-  var hideable: js.UndefOr[Boolean] = js.undefined
+  var hideable: js.UndefOr[Boolean] = js.native
   /**
     * JSON object representing the saved state of this GUI.
     */
-  var load: js.UndefOr[js.Any] = js.undefined
+  var load: js.UndefOr[js.Any] = js.native
   /**
     * The name of this GUI.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * The identifier for a set of saved values.
     */
-  var preset: js.UndefOr[String] = js.undefined
+  var preset: js.UndefOr[String] = js.native
   /**
     * The width of GUI element.
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object GUIParams {
   @scala.inline
-  def apply(
-    autoPlace: js.UndefOr[Boolean] = js.undefined,
-    closeOnTop: js.UndefOr[Boolean] = js.undefined,
-    closed: js.UndefOr[Boolean] = js.undefined,
-    hideable: js.UndefOr[Boolean] = js.undefined,
-    load: js.Any = null,
-    name: String = null,
-    preset: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): GUIParams = {
+  def apply(): GUIParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPlace)) __obj.updateDynamic("autoPlace")(autoPlace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnTop)) __obj.updateDynamic("closeOnTop")(closeOnTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideable)) __obj.updateDynamic("hideable")(hideable.get.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GUIParams]
   }
+  @scala.inline
+  implicit class GUIParamsOps[Self <: GUIParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoPlace(value: Boolean): Self = this.set("autoPlace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPlace: Self = this.set("autoPlace", js.undefined)
+    @scala.inline
+    def setCloseOnTop(value: Boolean): Self = this.set("closeOnTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnTop: Self = this.set("closeOnTop", js.undefined)
+    @scala.inline
+    def setClosed(value: Boolean): Self = this.set("closed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClosed: Self = this.set("closed", js.undefined)
+    @scala.inline
+    def setHideable(value: Boolean): Self = this.set("hideable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideable: Self = this.set("hideable", js.undefined)
+    @scala.inline
+    def setLoad(value: js.Any): Self = this.set("load", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPreset(value: String): Self = this.set("preset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreset: Self = this.set("preset", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

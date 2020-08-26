@@ -42,6 +42,7 @@ package object mod {
     - typings.babelTypes.mod.ConditionalExpression_
     - typings.babelTypes.mod.ContinueStatement_
     - typings.babelTypes.mod.DebuggerStatement_
+    - typings.babelTypes.mod.DecimalLiteral_
     - typings.babelTypes.mod.Declaration
     - typings.babelTypes.mod.DeclareClass_
     - typings.babelTypes.mod.DeclareExportAllDeclaration_
@@ -229,6 +230,7 @@ package object mod {
     - typings.babelTypes.mod.TSMethodSignature_
     - typings.babelTypes.mod.TSModuleBlock_
     - typings.babelTypes.mod.TSModuleDeclaration_
+    - typings.babelTypes.mod.TSNamedTupleMember_
     - typings.babelTypes.mod.TSNamespaceExportDeclaration_
     - typings.babelTypes.mod.TSNeverKeyword_
     - typings.babelTypes.mod.TSNonNullExpression_

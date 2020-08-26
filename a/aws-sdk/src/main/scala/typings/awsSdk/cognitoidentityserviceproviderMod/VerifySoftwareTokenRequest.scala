@@ -26,17 +26,36 @@ trait VerifySoftwareTokenRequest extends js.Object {
 
 object VerifySoftwareTokenRequest {
   @scala.inline
-  def apply(
-    UserCode: SoftwareTokenMFAUserCodeType,
-    AccessToken: TokenModelType = null,
-    FriendlyDeviceName: StringType = null,
-    Session: SessionType = null
-  ): VerifySoftwareTokenRequest = {
+  def apply(UserCode: SoftwareTokenMFAUserCodeType): VerifySoftwareTokenRequest = {
     val __obj = js.Dynamic.literal(UserCode = UserCode.asInstanceOf[js.Any])
-    if (AccessToken != null) __obj.updateDynamic("AccessToken")(AccessToken.asInstanceOf[js.Any])
-    if (FriendlyDeviceName != null) __obj.updateDynamic("FriendlyDeviceName")(FriendlyDeviceName.asInstanceOf[js.Any])
-    if (Session != null) __obj.updateDynamic("Session")(Session.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifySoftwareTokenRequest]
   }
+  @scala.inline
+  implicit class VerifySoftwareTokenRequestOps[Self <: VerifySoftwareTokenRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserCode(value: SoftwareTokenMFAUserCodeType): Self = this.set("UserCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessToken(value: TokenModelType): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessToken: Self = this.set("AccessToken", js.undefined)
+    @scala.inline
+    def setFriendlyDeviceName(value: StringType): Self = this.set("FriendlyDeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFriendlyDeviceName: Self = this.set("FriendlyDeviceName", js.undefined)
+    @scala.inline
+    def setSession(value: SessionType): Self = this.set("Session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession: Self = this.set("Session", js.undefined)
+  }
+  
 }
 

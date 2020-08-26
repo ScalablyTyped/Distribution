@@ -19,30 +19,5 @@ class ASPxClientGridViewContextMenuEventArgs protected ()
     * @param showBrowserMenu true, to display a browser context menu; otherwise, false.
     */
   def this(objectType: String, index: Double, htmlEvent: js.Any, showBrowserMenu: Boolean) = this()
-  /**
-    * Provides access to the parameters associated with the ASPxClientGridView.ContextMenu event.
-    */
-  /* CompleteClass */
-  override var htmlEvent: js.Any = js.native
-  /**
-    * Identifies the grid element being right clicked by the user.
-    */
-  /* CompleteClass */
-  override var index: Double = js.native
-  /**
-    * Gets the currently processed menu object.
-    */
-  /* CompleteClass */
-  override var menu: js.Any = js.native
-  /**
-    * Gets which grid element has been right clicked by the user.
-    */
-  /* CompleteClass */
-  override var objectType: String = js.native
-  /**
-    * Specifies whether a browser context menu should be displayed.
-    */
-  /* CompleteClass */
-  override var showBrowserMenu: Boolean = js.native
 }
 

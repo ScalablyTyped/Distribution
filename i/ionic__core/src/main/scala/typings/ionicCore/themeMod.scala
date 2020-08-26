@@ -22,12 +22,33 @@ object themeMod extends js.Object {
   def getClassMap(classes: String): CssClassMap = js.native
   def getClassMap(classes: js.Array[String]): CssClassMap = js.native
   def hostContext(selector: String, el: HTMLElement): Boolean = js.native
-  def openURL(url: js.UndefOr[Null | String], ev: js.UndefOr[Event | Null], direction: RouterDirection): js.Promise[Boolean] = js.native
+  def openURL(url: js.UndefOr[scala.Nothing], ev: js.UndefOr[scala.Nothing], direction: RouterDirection): js.Promise[Boolean] = js.native
   def openURL(
-    url: js.UndefOr[Null | String],
-    ev: js.UndefOr[Event | Null],
+    url: js.UndefOr[scala.Nothing],
+    ev: js.UndefOr[scala.Nothing],
     direction: RouterDirection,
     animation: AnimationBuilder
   ): js.Promise[Boolean] = js.native
+  def openURL(url: js.UndefOr[scala.Nothing], ev: Null, direction: RouterDirection): js.Promise[Boolean] = js.native
+  def openURL(url: js.UndefOr[scala.Nothing], ev: Null, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
+  def openURL(url: js.UndefOr[scala.Nothing], ev: Event, direction: RouterDirection): js.Promise[Boolean] = js.native
+  def openURL(url: js.UndefOr[scala.Nothing], ev: Event, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
+  def openURL(url: String, ev: js.UndefOr[scala.Nothing], direction: RouterDirection): js.Promise[Boolean] = js.native
+  def openURL(
+    url: String,
+    ev: js.UndefOr[scala.Nothing],
+    direction: RouterDirection,
+    animation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
+  def openURL(url: String, ev: Null, direction: RouterDirection): js.Promise[Boolean] = js.native
+  def openURL(url: String, ev: Null, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
+  def openURL(url: String, ev: Event, direction: RouterDirection): js.Promise[Boolean] = js.native
+  def openURL(url: String, ev: Event, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
+  def openURL(url: Null, ev: js.UndefOr[scala.Nothing], direction: RouterDirection): js.Promise[Boolean] = js.native
+  def openURL(url: Null, ev: js.UndefOr[scala.Nothing], direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
+  def openURL(url: Null, ev: Null, direction: RouterDirection): js.Promise[Boolean] = js.native
+  def openURL(url: Null, ev: Null, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
+  def openURL(url: Null, ev: Event, direction: RouterDirection): js.Promise[Boolean] = js.native
+  def openURL(url: Null, ev: Event, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
 }
 

@@ -114,60 +114,128 @@ trait RestoreFromClusterSnapshotMessage extends js.Object {
 
 object RestoreFromClusterSnapshotMessage {
   @scala.inline
-  def apply(
-    ClusterIdentifier: String,
-    SnapshotIdentifier: String,
-    AdditionalInfo: String = null,
-    AllowVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
-    AutomatedSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    AvailabilityZone: String = null,
-    ClusterParameterGroupName: String = null,
-    ClusterSecurityGroups: ClusterSecurityGroupNameList = null,
-    ClusterSubnetGroupName: String = null,
-    ElasticIp: String = null,
-    EnhancedVpcRouting: js.UndefOr[BooleanOptional] = js.undefined,
-    HsmClientCertificateIdentifier: String = null,
-    HsmConfigurationIdentifier: String = null,
-    IamRoles: IamRoleArnList = null,
-    KmsKeyId: String = null,
-    MaintenanceTrackName: String = null,
-    ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    NodeType: String = null,
-    NumberOfNodes: js.UndefOr[IntegerOptional] = js.undefined,
-    OwnerAccount: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
-    PreferredMaintenanceWindow: String = null,
-    PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined,
-    SnapshotClusterIdentifier: String = null,
-    SnapshotScheduleIdentifier: String = null,
-    VpcSecurityGroupIds: VpcSecurityGroupIdList = null
-  ): RestoreFromClusterSnapshotMessage = {
+  def apply(ClusterIdentifier: String, SnapshotIdentifier: String): RestoreFromClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], SnapshotIdentifier = SnapshotIdentifier.asInstanceOf[js.Any])
-    if (AdditionalInfo != null) __obj.updateDynamic("AdditionalInfo")(AdditionalInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowVersionUpgrade)) __obj.updateDynamic("AllowVersionUpgrade")(AllowVersionUpgrade.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutomatedSnapshotRetentionPeriod)) __obj.updateDynamic("AutomatedSnapshotRetentionPeriod")(AutomatedSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (ClusterParameterGroupName != null) __obj.updateDynamic("ClusterParameterGroupName")(ClusterParameterGroupName.asInstanceOf[js.Any])
-    if (ClusterSecurityGroups != null) __obj.updateDynamic("ClusterSecurityGroups")(ClusterSecurityGroups.asInstanceOf[js.Any])
-    if (ClusterSubnetGroupName != null) __obj.updateDynamic("ClusterSubnetGroupName")(ClusterSubnetGroupName.asInstanceOf[js.Any])
-    if (ElasticIp != null) __obj.updateDynamic("ElasticIp")(ElasticIp.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnhancedVpcRouting)) __obj.updateDynamic("EnhancedVpcRouting")(EnhancedVpcRouting.get.asInstanceOf[js.Any])
-    if (HsmClientCertificateIdentifier != null) __obj.updateDynamic("HsmClientCertificateIdentifier")(HsmClientCertificateIdentifier.asInstanceOf[js.Any])
-    if (HsmConfigurationIdentifier != null) __obj.updateDynamic("HsmConfigurationIdentifier")(HsmConfigurationIdentifier.asInstanceOf[js.Any])
-    if (IamRoles != null) __obj.updateDynamic("IamRoles")(IamRoles.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManualSnapshotRetentionPeriod)) __obj.updateDynamic("ManualSnapshotRetentionPeriod")(ManualSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
-    if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.get.asInstanceOf[js.Any])
-    if (OwnerAccount != null) __obj.updateDynamic("OwnerAccount")(OwnerAccount.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.get.asInstanceOf[js.Any])
-    if (SnapshotClusterIdentifier != null) __obj.updateDynamic("SnapshotClusterIdentifier")(SnapshotClusterIdentifier.asInstanceOf[js.Any])
-    if (SnapshotScheduleIdentifier != null) __obj.updateDynamic("SnapshotScheduleIdentifier")(SnapshotScheduleIdentifier.asInstanceOf[js.Any])
-    if (VpcSecurityGroupIds != null) __obj.updateDynamic("VpcSecurityGroupIds")(VpcSecurityGroupIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreFromClusterSnapshotMessage]
   }
+  @scala.inline
+  implicit class RestoreFromClusterSnapshotMessageOps[Self <: RestoreFromClusterSnapshotMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnapshotIdentifier(value: String): Self = this.set("SnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditionalInfo(value: String): Self = this.set("AdditionalInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalInfo: Self = this.set("AdditionalInfo", js.undefined)
+    @scala.inline
+    def setAllowVersionUpgrade(value: BooleanOptional): Self = this.set("AllowVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowVersionUpgrade: Self = this.set("AllowVersionUpgrade", js.undefined)
+    @scala.inline
+    def setAutomatedSnapshotRetentionPeriod(value: IntegerOptional): Self = this.set("AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomatedSnapshotRetentionPeriod: Self = this.set("AutomatedSnapshotRetentionPeriod", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setClusterParameterGroupName(value: String): Self = this.set("ClusterParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterParameterGroupName: Self = this.set("ClusterParameterGroupName", js.undefined)
+    @scala.inline
+    def setClusterSecurityGroupsVarargs(value: String*): Self = this.set("ClusterSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setClusterSecurityGroups(value: ClusterSecurityGroupNameList): Self = this.set("ClusterSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterSecurityGroups: Self = this.set("ClusterSecurityGroups", js.undefined)
+    @scala.inline
+    def setClusterSubnetGroupName(value: String): Self = this.set("ClusterSubnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterSubnetGroupName: Self = this.set("ClusterSubnetGroupName", js.undefined)
+    @scala.inline
+    def setElasticIp(value: String): Self = this.set("ElasticIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticIp: Self = this.set("ElasticIp", js.undefined)
+    @scala.inline
+    def setEnhancedVpcRouting(value: BooleanOptional): Self = this.set("EnhancedVpcRouting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedVpcRouting: Self = this.set("EnhancedVpcRouting", js.undefined)
+    @scala.inline
+    def setHsmClientCertificateIdentifier(value: String): Self = this.set("HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsmClientCertificateIdentifier: Self = this.set("HsmClientCertificateIdentifier", js.undefined)
+    @scala.inline
+    def setHsmConfigurationIdentifier(value: String): Self = this.set("HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsmConfigurationIdentifier: Self = this.set("HsmConfigurationIdentifier", js.undefined)
+    @scala.inline
+    def setIamRolesVarargs(value: String*): Self = this.set("IamRoles", js.Array(value :_*))
+    @scala.inline
+    def setIamRoles(value: IamRoleArnList): Self = this.set("IamRoles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoles: Self = this.set("IamRoles", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setMaintenanceTrackName(value: String): Self = this.set("MaintenanceTrackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceTrackName: Self = this.set("MaintenanceTrackName", js.undefined)
+    @scala.inline
+    def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = this.set("ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManualSnapshotRetentionPeriod: Self = this.set("ManualSnapshotRetentionPeriod", js.undefined)
+    @scala.inline
+    def setNodeType(value: String): Self = this.set("NodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeType: Self = this.set("NodeType", js.undefined)
+    @scala.inline
+    def setNumberOfNodes(value: IntegerOptional): Self = this.set("NumberOfNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfNodes: Self = this.set("NumberOfNodes", js.undefined)
+    @scala.inline
+    def setOwnerAccount(value: String): Self = this.set("OwnerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAccount: Self = this.set("OwnerAccount", js.undefined)
+    @scala.inline
+    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setPubliclyAccessible(value: BooleanOptional): Self = this.set("PubliclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAccessible: Self = this.set("PubliclyAccessible", js.undefined)
+    @scala.inline
+    def setSnapshotClusterIdentifier(value: String): Self = this.set("SnapshotClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotClusterIdentifier: Self = this.set("SnapshotClusterIdentifier", js.undefined)
+    @scala.inline
+    def setSnapshotScheduleIdentifier(value: String): Self = this.set("SnapshotScheduleIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotScheduleIdentifier: Self = this.set("SnapshotScheduleIdentifier", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupIdsVarargs(value: String*): Self = this.set("VpcSecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroupIds(value: VpcSecurityGroupIdList): Self = this.set("VpcSecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroupIds: Self = this.set("VpcSecurityGroupIds", js.undefined)
+  }
+  
 }
 

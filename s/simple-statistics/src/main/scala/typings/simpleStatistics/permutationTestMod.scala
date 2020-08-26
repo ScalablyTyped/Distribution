@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object permutationTestMod extends js.Object {
   def default(sampleX: js.Array[Double], sampleY: js.Array[Double]): Double = js.native
+  def default(sampleX: js.Array[Double], sampleY: js.Array[Double], string: js.UndefOr[scala.Nothing], k: Double): Double = js.native
   def default(sampleX: js.Array[Double], sampleY: js.Array[Double], string: String): Double = js.native
   def default(sampleX: js.Array[Double], sampleY: js.Array[Double], string: String, k: Double): Double = js.native
 }

@@ -46,28 +46,58 @@ trait ComplianceItem extends js.Object {
 
 object ComplianceItem {
   @scala.inline
-  def apply(
-    ComplianceType: ComplianceTypeName = null,
-    Details: ComplianceItemDetails = null,
-    ExecutionSummary: ComplianceExecutionSummary = null,
-    Id: ComplianceItemId = null,
-    ResourceId: ComplianceResourceId = null,
-    ResourceType: ComplianceResourceType = null,
-    Severity: ComplianceSeverity = null,
-    Status: ComplianceStatus = null,
-    Title: ComplianceItemTitle = null
-  ): ComplianceItem = {
+  def apply(): ComplianceItem = {
     val __obj = js.Dynamic.literal()
-    if (ComplianceType != null) __obj.updateDynamic("ComplianceType")(ComplianceType.asInstanceOf[js.Any])
-    if (Details != null) __obj.updateDynamic("Details")(Details.asInstanceOf[js.Any])
-    if (ExecutionSummary != null) __obj.updateDynamic("ExecutionSummary")(ExecutionSummary.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (Severity != null) __obj.updateDynamic("Severity")(Severity.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceItem]
   }
+  @scala.inline
+  implicit class ComplianceItemOps[Self <: ComplianceItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplianceType(value: ComplianceTypeName): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceType: Self = this.set("ComplianceType", js.undefined)
+    @scala.inline
+    def setDetails(value: ComplianceItemDetails): Self = this.set("Details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("Details", js.undefined)
+    @scala.inline
+    def setExecutionSummary(value: ComplianceExecutionSummary): Self = this.set("ExecutionSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionSummary: Self = this.set("ExecutionSummary", js.undefined)
+    @scala.inline
+    def setId(value: ComplianceItemId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setResourceId(value: ComplianceResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setResourceType(value: ComplianceResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setSeverity(value: ComplianceSeverity): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("Severity", js.undefined)
+    @scala.inline
+    def setStatus(value: ComplianceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTitle(value: ComplianceItemTitle): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+  }
+  
 }
 

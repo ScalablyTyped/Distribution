@@ -28,6 +28,7 @@ class ResourceSitesDomains protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaDomain] = js.native
   def create(callback: BodyResponseCallback[SchemaDomain]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomain] = js.native
   def create(params: ParamsResourceSitesDomainsCreate): GaxiosPromise[SchemaDomain] = js.native
   def create(params: ParamsResourceSitesDomainsCreate, callback: BodyResponseCallback[SchemaDomain]): Unit = js.native
   def create(
@@ -55,6 +56,7 @@ class ResourceSitesDomains protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceSitesDomainsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceSitesDomainsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -82,6 +84,7 @@ class ResourceSitesDomains protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDomain] = js.native
   def get(callback: BodyResponseCallback[SchemaDomain]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomain] = js.native
   def get(params: ParamsResourceSitesDomainsGet): GaxiosPromise[SchemaDomain] = js.native
   def get(params: ParamsResourceSitesDomainsGet, callback: BodyResponseCallback[SchemaDomain]): Unit = js.native
   def get(
@@ -111,6 +114,7 @@ class ResourceSitesDomains protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListDomainsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDomainsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDomainsResponse] = js.native
   def list(params: ParamsResourceSitesDomainsList): GaxiosPromise[SchemaListDomainsResponse] = js.native
   def list(params: ParamsResourceSitesDomainsList, callback: BodyResponseCallback[SchemaListDomainsResponse]): Unit = js.native
   def list(
@@ -140,6 +144,7 @@ class ResourceSitesDomains protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaDomain] = js.native
   def update(callback: BodyResponseCallback[SchemaDomain]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomain] = js.native
   def update(params: ParamsResourceSitesDomainsUpdate): GaxiosPromise[SchemaDomain] = js.native
   def update(params: ParamsResourceSitesDomainsUpdate, callback: BodyResponseCallback[SchemaDomain]): Unit = js.native
   def update(

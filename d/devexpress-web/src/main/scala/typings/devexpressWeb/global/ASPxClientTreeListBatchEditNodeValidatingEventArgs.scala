@@ -17,15 +17,5 @@ class ASPxClientTreeListBatchEditNodeValidatingEventArgs protected ()
     * @param validationInfo An object containing validation information.
     */
   def this(nodeKey: String, validationInfo: js.Any) = this()
-  /**
-    * Gets the node's key value.
-    */
-  /* CompleteClass */
-  override var nodeKey: String = js.native
-  /**
-    * Provides validation information of a validated node.
-    */
-  /* CompleteClass */
-  override var validationInfo: js.Any = js.native
 }
 

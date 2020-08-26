@@ -52,7 +52,8 @@ class DiagnosticMessages () extends js.Object {
   def getMessage(diagnosticIndex: Double): String = js.native
   def getMessage(diagnosticIndex: Double, options: Detailed): String = js.native
   def report(pos: Double, message: Diagnostic, args: js.Any*): Unit = js.native
-  def reportNode(sourceFile: js.UndefOr[SourceFile], node: Node[SyntaxKind], message: Diagnostic, args: js.Any*): Unit = js.native
+  def reportNode(sourceFile: js.UndefOr[scala.Nothing], node: Node[SyntaxKind], message: Diagnostic, args: js.Any*): Unit = js.native
+  def reportNode(sourceFile: SourceFile, node: Node[SyntaxKind], message: Diagnostic, args: js.Any*): Unit = js.native
   def setSourceFile(sourceFile: SourceFile): Unit = js.native
   def size: Double = js.native
   def values(): Generator[js.UndefOr[DiagnosticInfo], Unit, _] = js.native

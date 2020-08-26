@@ -35,7 +35,5 @@ import scala.scalajs.js.annotation._
 class DistributionPoint ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.DistributionPoint {
   def this(params: Dpobj) = this()
-  /* CompleteClass */
-  override def getEncodedHex(): String = js.native
 }
 

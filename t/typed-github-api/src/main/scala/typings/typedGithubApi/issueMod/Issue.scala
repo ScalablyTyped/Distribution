@@ -11,31 +11,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Issue extends js.Object {
-  var assignee: UserSummary | Null
-  var assignees: js.Array[UserSummary]
-  var body: String
-  var closed_at: Date | Null
-  var closed_by: UserSummary | Null
-  var comments: Double
-  var comments_url: String
-  var created_at: Date
-  var events_url: String
-  var html_url: String
-  var id: Double
-  var labels: js.Array[Label]
-  var labels_url: String
-  var locked: Boolean
-  var milestone: Milestone | Null
-  var number: Double
-  var pull_request: js.UndefOr[PullRequestExtension] = js.undefined
-  var repository: js.UndefOr[Repository] = js.undefined
-  var repository_url: String
-  var state: open | closed
-  var title: String
-  var updated_at: Date
-  var url: String
-  var user: UserSummary
+  var assignee: UserSummary | Null = js.native
+  var assignees: js.Array[UserSummary] = js.native
+  var body: String = js.native
+  var closed_at: Date | Null = js.native
+  var closed_by: UserSummary | Null = js.native
+  var comments: Double = js.native
+  var comments_url: String = js.native
+  var created_at: Date = js.native
+  var events_url: String = js.native
+  var html_url: String = js.native
+  var id: Double = js.native
+  var labels: js.Array[Label] = js.native
+  var labels_url: String = js.native
+  var locked: Boolean = js.native
+  var milestone: Milestone | Null = js.native
+  var number: Double = js.native
+  var pull_request: js.UndefOr[PullRequestExtension] = js.native
+  var repository: js.UndefOr[Repository] = js.native
+  var repository_url: String = js.native
+  var state: open | closed = js.native
+  var title: String = js.native
+  var updated_at: Date = js.native
+  var url: String = js.native
+  var user: UserSummary = js.native
 }
 
 object Issue {
@@ -58,18 +59,87 @@ object Issue {
     title: String,
     updated_at: Date,
     url: String,
-    user: UserSummary,
-    assignee: UserSummary = null,
-    closed_at: Date = null,
-    closed_by: UserSummary = null,
-    milestone: Milestone = null,
-    pull_request: PullRequestExtension = null,
-    repository: Repository = null
+    user: UserSummary
   ): Issue = {
-    val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], assignee = assignee.asInstanceOf[js.Any], closed_at = closed_at.asInstanceOf[js.Any], closed_by = closed_by.asInstanceOf[js.Any], milestone = milestone.asInstanceOf[js.Any])
-    if (pull_request != null) __obj.updateDynamic("pull_request")(pull_request.asInstanceOf[js.Any])
-    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Issue]
   }
+  @scala.inline
+  implicit class IssueOps[Self <: Issue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssigneesVarargs(value: UserSummary*): Self = this.set("assignees", js.Array(value :_*))
+    @scala.inline
+    def setAssignees(value: js.Array[UserSummary]): Self = this.set("assignees", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComments(value: Double): Self = this.set("comments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComments_url(value: String): Self = this.set("comments_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreated_at(value: Date): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEvents_url(value: String): Self = this.set("events_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabelsVarargs(value: Label*): Self = this.set("labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: js.Array[Label]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabels_url(value: String): Self = this.set("labels_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocked(value: Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepository_url(value: String): Self = this.set("repository_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: open | closed): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdated_at(value: Date): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUser(value: UserSummary): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssignee(value: UserSummary): Self = this.set("assignee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssigneeNull: Self = this.set("assignee", null)
+    @scala.inline
+    def setClosed_at(value: Date): Self = this.set("closed_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClosed_atNull: Self = this.set("closed_at", null)
+    @scala.inline
+    def setClosed_by(value: UserSummary): Self = this.set("closed_by", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClosed_byNull: Self = this.set("closed_by", null)
+    @scala.inline
+    def setMilestone(value: Milestone): Self = this.set("milestone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMilestoneNull: Self = this.set("milestone", null)
+    @scala.inline
+    def setPull_request(value: PullRequestExtension): Self = this.set("pull_request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePull_request: Self = this.set("pull_request", js.undefined)
+    @scala.inline
+    def setRepository(value: Repository): Self = this.set("repository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepository: Self = this.set("repository", js.undefined)
+  }
+  
 }
 

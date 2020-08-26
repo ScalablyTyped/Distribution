@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.surveyKnockout.mod.ISurveyElement because Already inherited
 - typings.surveyKnockout.mod.IConditionRunner because Already inherited
+- typings.surveyKnockout.mod.ITitleOwner because var conflicts: isRequireTextAfterTitle, isRequireTextBeforeTitle, isRequireTextOnStart, locTitle, name, requiredText. Inlined no
 - typings.surveyKnockout.mod.IElement because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, parent, visible. Inlined renderWidth, width, minWidth, maxWidth, rightIndent, startWithNewLine */ @JSImport("survey-knockout", "PanelModel")
 @js.native
 class PanelModel () extends PanelModelBase {

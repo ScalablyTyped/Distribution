@@ -72,6 +72,7 @@ trait Typeofjest extends js.Object {
     * Mocks a module with an auto-mocked version when it is being required.
     */
   def doMock(moduleName: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
+  def doMock(moduleName: String, factory: js.UndefOr[scala.Nothing], options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
   def doMock(moduleName: String, factory: js.Function0[_]): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
   def doMock(moduleName: String, factory: js.Function0[_], options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
   /**
@@ -96,6 +97,7 @@ trait Typeofjest extends js.Object {
   /**
     * Use the automatic mocking system to generate a mocked version of the given module.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def genMockFromModule[T](moduleName: String): T = js.native
   /**
     * When mocking time, Date.now() will also be mocked. If you for some
@@ -123,17 +125,20 @@ trait Typeofjest extends js.Object {
     * Mocks a module with an auto-mocked version when it is being required.
     */
   def mock(moduleName: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
+  def mock(moduleName: String, factory: js.UndefOr[scala.Nothing], options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
   def mock(moduleName: String, factory: js.Function0[_]): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
   def mock(moduleName: String, factory: js.Function0[_], options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
   /**
     * Returns the actual module instead of a mock, bypassing all checks on
     * whether the module should receive a mock implementation or not.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def requireActual[TModule](moduleName: String): TModule = js.native
   /**
     * Returns a mock module instead of the actual module, bypassing all checks
     * on whether the module should be required normally or not.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def requireMock[TModule](moduleName: String): TModule = js.native
   /**
     * Resets the state of all mocks.
@@ -191,6 +196,7 @@ trait Typeofjest extends js.Object {
     * Explicitly supplies the mock object that the module system should return
     * for the specified module.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def setMock[T](moduleName: String, moduleExports: T): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
   /**
     * Set the current system time used by fake timers. Simulates a user

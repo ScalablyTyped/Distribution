@@ -25,8 +25,8 @@ object TouchableNativeFeedback extends js.Object {
     * @param color The ripple color
     * @param borderless If the ripple can render outside it's bounds
     */
-  def Ripple(color: String): RippleBackgroundPropType = js.native
-  def Ripple(color: String, borderless: Boolean): RippleBackgroundPropType = js.native
+  def Ripple(color: ColorValue): RippleBackgroundPropType = js.native
+  def Ripple(color: ColorValue, borderless: Boolean): RippleBackgroundPropType = js.native
   /**
     * Creates an object that represents android theme's default background for
     * selectable elements (?android:attr/selectableItemBackground).

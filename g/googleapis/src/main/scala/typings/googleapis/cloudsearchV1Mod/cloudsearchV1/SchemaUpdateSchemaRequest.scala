@@ -22,16 +22,34 @@ trait SchemaUpdateSchemaRequest extends js.Object {
 
 object SchemaUpdateSchemaRequest {
   @scala.inline
-  def apply(
-    debugOptions: SchemaDebugOptions = null,
-    schema: SchemaSchema = null,
-    validateOnly: js.UndefOr[Boolean] = js.undefined
-  ): SchemaUpdateSchemaRequest = {
+  def apply(): SchemaUpdateSchemaRequest = {
     val __obj = js.Dynamic.literal()
-    if (debugOptions != null) __obj.updateDynamic("debugOptions")(debugOptions.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateSchemaRequest]
   }
+  @scala.inline
+  implicit class SchemaUpdateSchemaRequestOps[Self <: SchemaUpdateSchemaRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebugOptions(value: SchemaDebugOptions): Self = this.set("debugOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugOptions: Self = this.set("debugOptions", js.undefined)
+    @scala.inline
+    def setSchema(value: SchemaSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setValidateOnly(value: Boolean): Self = this.set("validateOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateOnly: Self = this.set("validateOnly", js.undefined)
+  }
+  
 }
 

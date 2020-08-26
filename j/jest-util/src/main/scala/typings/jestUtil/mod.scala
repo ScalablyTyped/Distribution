@@ -44,7 +44,8 @@ object mod extends js.Object {
   
   @js.native
   class ErrorWithStack protected () extends default {
-    def this(message: js.UndefOr[String], callsite: js.Function) = this()
+    def this(message: js.UndefOr[scala.Nothing], callsite: js.Function) = this()
+    def this(message: String, callsite: js.Function) = this()
   }
   
   @js.native
@@ -79,15 +80,21 @@ object mod extends js.Object {
   var replacePathSepForGlob_Original: js.Function1[/* path */ Path, Glob] = js.native
   var specialChars: TypeofspecialChars = js.native
   def clearLine(stream: WritableStream): Unit = js.native
-  def convertDescriptorToString(): js.UndefOr[String] = js.native
+  def convertDescriptorToString(descriptor: js.UndefOr[scala.Nothing]): js.UndefOr[String] = js.native
   def convertDescriptorToString(descriptor: String): String = js.native
   def convertDescriptorToString(descriptor: js.Function): js.Function | String = js.native
   def convertDescriptorToString(descriptor: Double): Double | String = js.native
   def createDirectory(path: Path): Unit = js.native
   def deepCyclicCopy[T](value: T): T = js.native
+  def deepCyclicCopy[T](value: T, options: js.UndefOr[scala.Nothing], cycles: WeakMap[_, _]): T = js.native
   def deepCyclicCopy[T](value: T, options: DeepCyclicCopyOptions): T = js.native
   def deepCyclicCopy[T](value: T, options: DeepCyclicCopyOptions, cycles: WeakMap[_, _]): T = js.native
   def formatTestResults(results: AggregatedResult): FormattedTestResults = js.native
+  def formatTestResults(
+    results: AggregatedResult,
+    codeCoverageFormatter: js.UndefOr[scala.Nothing],
+    reporter: CodeCoverageReporter
+  ): FormattedTestResults = js.native
   def formatTestResults(results: AggregatedResult, codeCoverageFormatter: CodeCoverageFormatter): FormattedTestResults = js.native
   def formatTestResults(
     results: AggregatedResult,
@@ -114,7 +121,7 @@ object mod extends js.Object {
   @js.native
   object ErrorWithStack
     extends TopLevel[
-          Instantiable2[js.UndefOr[/* message */ String], /* callsite */ js.Function, default]
+          Instantiable2[/* message */ js.UndefOr[String], /* callsite */ js.Function, default]
         ]
   
   @js.native

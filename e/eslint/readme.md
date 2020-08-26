@@ -11,8 +11,8 @@ An AST-based pattern checker for JavaScript.
 | Full name          | eslint |
 | Keywords           | ast, lint, javascript, ecmascript, espree |
 | # releases         | 58 |
-| # dependents       | 8612 |
-| # downloads        | 369862844 |
+| # dependents       | 8765 |
+| # downloads        | 378862254 |
 | # stars            | 329 |
 
 ## Links

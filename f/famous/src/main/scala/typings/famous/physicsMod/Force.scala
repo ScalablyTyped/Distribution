@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Force () extends js.Object {
   def this(targets: js.Any) = this()
   def this(targets: js.Array[_]) = this()
+  def this(targets: js.UndefOr[scala.Nothing], options: IForceOptions) = this()
   def this(targets: js.Any, options: IForceOptions) = this()
   def this(targets: js.Array[_], options: IForceOptions) = this()
   var targets: js.Array[_] = js.native
@@ -17,6 +18,7 @@ class Force () extends js.Object {
   def removeTarget(target: js.Any): Unit = js.native
   def setOptions(options: js.Any): Unit = js.native
   def update(): Unit = js.native
+  def update(time: js.UndefOr[scala.Nothing], dt: Double): Unit = js.native
   def update(time: Double): Unit = js.native
   def update(time: Double, dt: Double): Unit = js.native
 }

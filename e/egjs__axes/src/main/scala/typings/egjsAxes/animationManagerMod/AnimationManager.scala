@@ -24,7 +24,6 @@ class AnimationManager protected () extends js.Object {
   def animateTo(destPos: Axis, duration: Double): Unit = js.native
   def animateTo(destPos: Axis, duration: Double, inputEvent: js.Any): Unit = js.native
   def animationEnd(): Unit = js.native
-  /* private */ def createAnimationParam(pos: js.Any, duration: js.Any): js.Any = js.native
   /* private */ def createAnimationParam(pos: js.Any, duration: js.Any, inputEvent: js.Any): js.Any = js.native
   def easing(p: js.Any): Double = js.native
   /* private */ def frame(param: js.Any): js.Any = js.native

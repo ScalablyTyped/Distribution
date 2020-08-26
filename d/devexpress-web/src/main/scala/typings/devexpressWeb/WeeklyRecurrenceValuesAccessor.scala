@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * An object providing access to an ASPxClientWeeklyRecurrenceControl's editor values.
   */
+@js.native
 trait WeeklyRecurrenceValuesAccessor extends DefaultRecurrenceRuleValuesAccessor
 
 object WeeklyRecurrenceValuesAccessor {

@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.UI
 
-import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.UI.ApplicationSettings.SettingsEdgeLocation
 import typings.winrt.Windows.UI.Popups.UICommandInvokedHandler
 import scala.scalajs.js
@@ -18,24 +17,15 @@ object ApplicationSettings extends js.Object {
   
   @js.native
   class SettingsPane ()
-    extends typings.winrt.Windows.UI.ApplicationSettings.SettingsPane {
-    /* CompleteClass */
-    override var oncommandsrequested: js.Any = js.native
-  }
+    extends typings.winrt.Windows.UI.ApplicationSettings.SettingsPane
   
   @js.native
   class SettingsPaneCommandsRequest ()
-    extends typings.winrt.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest {
-    /* CompleteClass */
-    override var applicationCommands: IVector[typings.winrt.Windows.UI.ApplicationSettings.SettingsCommand] = js.native
-  }
+    extends typings.winrt.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest
   
   @js.native
   class SettingsPaneCommandsRequestedEventArgs ()
-    extends typings.winrt.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs {
-    /* CompleteClass */
-    override var request: typings.winrt.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest = js.native
-  }
+    extends typings.winrt.Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs
   
   @js.native
   object SettingsEdgeLocation extends js.Object {

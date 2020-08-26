@@ -41,6 +41,21 @@ trait SESV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConfigurationSetEventDestinationResponse, Unit]
   ): Request[CreateConfigurationSetEventDestinationResponse, AWSError] = js.native
   /**
+    * Creates a new custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def createCustomVerificationEmailTemplate(): Request[CreateCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  def createCustomVerificationEmailTemplate(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomVerificationEmailTemplateResponse, Unit]
+  ): Request[CreateCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  /**
+    * Creates a new custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def createCustomVerificationEmailTemplate(params: CreateCustomVerificationEmailTemplateRequest): Request[CreateCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  def createCustomVerificationEmailTemplate(
+    params: CreateCustomVerificationEmailTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomVerificationEmailTemplateResponse, Unit]
+  ): Request[CreateCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  /**
     * Create a new pool of dedicated IP addresses. A pool can include one or more dedicated IP addresses that are associated with your AWS account. You can associate a pool with a configuration set. When you send an email that uses that configuration set, the message is sent from one of the addresses in the associated pool.
     */
   def createDedicatedIpPool(): Request[CreateDedicatedIpPoolResponse, AWSError] = js.native
@@ -82,6 +97,32 @@ trait SESV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEmailIdentityResponse, Unit]
   ): Request[CreateEmailIdentityResponse, AWSError] = js.native
   /**
+    * Creates the specified sending authorization policy for the given identity (an email address or a domain).  This API is for the identity owner only. If you have not verified the identity, this API will return an error.  Sending authorization is a feature that enables an identity owner to authorize other senders to use its identities. For information about using sending authorization, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def createEmailIdentityPolicy(): Request[CreateEmailIdentityPolicyResponse, AWSError] = js.native
+  def createEmailIdentityPolicy(callback: js.Function2[/* err */ AWSError, /* data */ CreateEmailIdentityPolicyResponse, Unit]): Request[CreateEmailIdentityPolicyResponse, AWSError] = js.native
+  /**
+    * Creates the specified sending authorization policy for the given identity (an email address or a domain).  This API is for the identity owner only. If you have not verified the identity, this API will return an error.  Sending authorization is a feature that enables an identity owner to authorize other senders to use its identities. For information about using sending authorization, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def createEmailIdentityPolicy(params: CreateEmailIdentityPolicyRequest): Request[CreateEmailIdentityPolicyResponse, AWSError] = js.native
+  def createEmailIdentityPolicy(
+    params: CreateEmailIdentityPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateEmailIdentityPolicyResponse, Unit]
+  ): Request[CreateEmailIdentityPolicyResponse, AWSError] = js.native
+  /**
+    * Creates an email template. Email templates enable you to send personalized email to one or more destinations in a single API operation. For more information, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def createEmailTemplate(): Request[CreateEmailTemplateResponse, AWSError] = js.native
+  def createEmailTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateEmailTemplateResponse, Unit]): Request[CreateEmailTemplateResponse, AWSError] = js.native
+  /**
+    * Creates an email template. Email templates enable you to send personalized email to one or more destinations in a single API operation. For more information, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def createEmailTemplate(params: CreateEmailTemplateRequest): Request[CreateEmailTemplateResponse, AWSError] = js.native
+  def createEmailTemplate(
+    params: CreateEmailTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateEmailTemplateResponse, Unit]
+  ): Request[CreateEmailTemplateResponse, AWSError] = js.native
+  /**
     * Delete an existing configuration set.  Configuration sets are groups of rules that you can apply to the emails you send. You apply a configuration set to an email by including a reference to the configuration set in the headers of the email. When you apply a configuration set to an email, all of the rules in that configuration set are applied to the email.
     */
   def deleteConfigurationSet(): Request[DeleteConfigurationSetResponse, AWSError] = js.native
@@ -110,6 +151,21 @@ trait SESV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteConfigurationSetEventDestinationResponse, Unit]
   ): Request[DeleteConfigurationSetEventDestinationResponse, AWSError] = js.native
   /**
+    * Deletes an existing custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def deleteCustomVerificationEmailTemplate(): Request[DeleteCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  def deleteCustomVerificationEmailTemplate(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteCustomVerificationEmailTemplateResponse, Unit]
+  ): Request[DeleteCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  /**
+    * Deletes an existing custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def deleteCustomVerificationEmailTemplate(params: DeleteCustomVerificationEmailTemplateRequest): Request[DeleteCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  def deleteCustomVerificationEmailTemplate(
+    params: DeleteCustomVerificationEmailTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteCustomVerificationEmailTemplateResponse, Unit]
+  ): Request[DeleteCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  /**
     * Delete a dedicated IP pool.
     */
   def deleteDedicatedIpPool(): Request[DeleteDedicatedIpPoolResponse, AWSError] = js.native
@@ -135,6 +191,32 @@ trait SESV2 extends Service {
     params: DeleteEmailIdentityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEmailIdentityResponse, Unit]
   ): Request[DeleteEmailIdentityResponse, AWSError] = js.native
+  /**
+    * Deletes the specified sending authorization policy for the given identity (an email address or a domain). This API returns successfully even if a policy with the specified name does not exist.  This API is for the identity owner only. If you have not verified the identity, this API will return an error.  Sending authorization is a feature that enables an identity owner to authorize other senders to use its identities. For information about using sending authorization, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def deleteEmailIdentityPolicy(): Request[DeleteEmailIdentityPolicyResponse, AWSError] = js.native
+  def deleteEmailIdentityPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEmailIdentityPolicyResponse, Unit]): Request[DeleteEmailIdentityPolicyResponse, AWSError] = js.native
+  /**
+    * Deletes the specified sending authorization policy for the given identity (an email address or a domain). This API returns successfully even if a policy with the specified name does not exist.  This API is for the identity owner only. If you have not verified the identity, this API will return an error.  Sending authorization is a feature that enables an identity owner to authorize other senders to use its identities. For information about using sending authorization, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def deleteEmailIdentityPolicy(params: DeleteEmailIdentityPolicyRequest): Request[DeleteEmailIdentityPolicyResponse, AWSError] = js.native
+  def deleteEmailIdentityPolicy(
+    params: DeleteEmailIdentityPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteEmailIdentityPolicyResponse, Unit]
+  ): Request[DeleteEmailIdentityPolicyResponse, AWSError] = js.native
+  /**
+    * Deletes an email template. You can execute this operation no more than once per second.
+    */
+  def deleteEmailTemplate(): Request[DeleteEmailTemplateResponse, AWSError] = js.native
+  def deleteEmailTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEmailTemplateResponse, Unit]): Request[DeleteEmailTemplateResponse, AWSError] = js.native
+  /**
+    * Deletes an email template. You can execute this operation no more than once per second.
+    */
+  def deleteEmailTemplate(params: DeleteEmailTemplateRequest): Request[DeleteEmailTemplateResponse, AWSError] = js.native
+  def deleteEmailTemplate(
+    params: DeleteEmailTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteEmailTemplateResponse, Unit]
+  ): Request[DeleteEmailTemplateResponse, AWSError] = js.native
   /**
     * Removes an email address from the suppression list for your account.
     */
@@ -202,6 +284,21 @@ trait SESV2 extends Service {
     params: GetConfigurationSetEventDestinationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetConfigurationSetEventDestinationsResponse, Unit]
   ): Request[GetConfigurationSetEventDestinationsResponse, AWSError] = js.native
+  /**
+    * Returns the custom email verification template for the template name you specify. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def getCustomVerificationEmailTemplate(): Request[GetCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  def getCustomVerificationEmailTemplate(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCustomVerificationEmailTemplateResponse, Unit]
+  ): Request[GetCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  /**
+    * Returns the custom email verification template for the template name you specify. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def getCustomVerificationEmailTemplate(params: GetCustomVerificationEmailTemplateRequest): Request[GetCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  def getCustomVerificationEmailTemplate(
+    params: GetCustomVerificationEmailTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCustomVerificationEmailTemplateResponse, Unit]
+  ): Request[GetCustomVerificationEmailTemplateResponse, AWSError] = js.native
   /**
     * Get information about a dedicated IP address, including the name of the dedicated IP pool that it's associated with, as well information about the automatic warm-up process for the address.
     */
@@ -285,18 +382,44 @@ trait SESV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDomainStatisticsReportResponse, Unit]
   ): Request[GetDomainStatisticsReportResponse, AWSError] = js.native
   /**
-    * Provides information about a specific identity, including the identity's verification status, its DKIM authentication status, and its custom Mail-From settings.
+    * Provides information about a specific identity, including the identity's verification status, sending authorization policies, its DKIM authentication status, and its custom Mail-From settings.
     */
   def getEmailIdentity(): Request[GetEmailIdentityResponse, AWSError] = js.native
   def getEmailIdentity(callback: js.Function2[/* err */ AWSError, /* data */ GetEmailIdentityResponse, Unit]): Request[GetEmailIdentityResponse, AWSError] = js.native
   /**
-    * Provides information about a specific identity, including the identity's verification status, its DKIM authentication status, and its custom Mail-From settings.
+    * Provides information about a specific identity, including the identity's verification status, sending authorization policies, its DKIM authentication status, and its custom Mail-From settings.
     */
   def getEmailIdentity(params: GetEmailIdentityRequest): Request[GetEmailIdentityResponse, AWSError] = js.native
   def getEmailIdentity(
     params: GetEmailIdentityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEmailIdentityResponse, Unit]
   ): Request[GetEmailIdentityResponse, AWSError] = js.native
+  /**
+    * Returns the requested sending authorization policies for the given identity (an email address or a domain). The policies are returned as a map of policy names to policy contents. You can retrieve a maximum of 20 policies at a time.  This API is for the identity owner only. If you have not verified the identity, this API will return an error.  Sending authorization is a feature that enables an identity owner to authorize other senders to use its identities. For information about using sending authorization, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def getEmailIdentityPolicies(): Request[GetEmailIdentityPoliciesResponse, AWSError] = js.native
+  def getEmailIdentityPolicies(callback: js.Function2[/* err */ AWSError, /* data */ GetEmailIdentityPoliciesResponse, Unit]): Request[GetEmailIdentityPoliciesResponse, AWSError] = js.native
+  /**
+    * Returns the requested sending authorization policies for the given identity (an email address or a domain). The policies are returned as a map of policy names to policy contents. You can retrieve a maximum of 20 policies at a time.  This API is for the identity owner only. If you have not verified the identity, this API will return an error.  Sending authorization is a feature that enables an identity owner to authorize other senders to use its identities. For information about using sending authorization, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def getEmailIdentityPolicies(params: GetEmailIdentityPoliciesRequest): Request[GetEmailIdentityPoliciesResponse, AWSError] = js.native
+  def getEmailIdentityPolicies(
+    params: GetEmailIdentityPoliciesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEmailIdentityPoliciesResponse, Unit]
+  ): Request[GetEmailIdentityPoliciesResponse, AWSError] = js.native
+  /**
+    * Displays the template object (which includes the subject line, HTML part and text part) for the template you specify. You can execute this operation no more than once per second.
+    */
+  def getEmailTemplate(): Request[GetEmailTemplateResponse, AWSError] = js.native
+  def getEmailTemplate(callback: js.Function2[/* err */ AWSError, /* data */ GetEmailTemplateResponse, Unit]): Request[GetEmailTemplateResponse, AWSError] = js.native
+  /**
+    * Displays the template object (which includes the subject line, HTML part and text part) for the template you specify. You can execute this operation no more than once per second.
+    */
+  def getEmailTemplate(params: GetEmailTemplateRequest): Request[GetEmailTemplateResponse, AWSError] = js.native
+  def getEmailTemplate(
+    params: GetEmailTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEmailTemplateResponse, Unit]
+  ): Request[GetEmailTemplateResponse, AWSError] = js.native
   /**
     * Retrieves information about a specific email address that's on the suppression list for your account.
     */
@@ -323,6 +446,21 @@ trait SESV2 extends Service {
     params: ListConfigurationSetsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListConfigurationSetsResponse, Unit]
   ): Request[ListConfigurationSetsResponse, AWSError] = js.native
+  /**
+    * Lists the existing custom verification email templates for your account in the current AWS Region. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def listCustomVerificationEmailTemplates(): Request[ListCustomVerificationEmailTemplatesResponse, AWSError] = js.native
+  def listCustomVerificationEmailTemplates(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCustomVerificationEmailTemplatesResponse, Unit]
+  ): Request[ListCustomVerificationEmailTemplatesResponse, AWSError] = js.native
+  /**
+    * Lists the existing custom verification email templates for your account in the current AWS Region. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def listCustomVerificationEmailTemplates(params: ListCustomVerificationEmailTemplatesRequest): Request[ListCustomVerificationEmailTemplatesResponse, AWSError] = js.native
+  def listCustomVerificationEmailTemplates(
+    params: ListCustomVerificationEmailTemplatesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCustomVerificationEmailTemplatesResponse, Unit]
+  ): Request[ListCustomVerificationEmailTemplatesResponse, AWSError] = js.native
   /**
     * List all of the dedicated IP pools that exist in your AWS account in the current Region.
     */
@@ -378,6 +516,19 @@ trait SESV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListEmailIdentitiesResponse, Unit]
   ): Request[ListEmailIdentitiesResponse, AWSError] = js.native
   /**
+    * Lists the email templates present in your Amazon SES account in the current AWS Region. You can execute this operation no more than once per second.
+    */
+  def listEmailTemplates(): Request[ListEmailTemplatesResponse, AWSError] = js.native
+  def listEmailTemplates(callback: js.Function2[/* err */ AWSError, /* data */ ListEmailTemplatesResponse, Unit]): Request[ListEmailTemplatesResponse, AWSError] = js.native
+  /**
+    * Lists the email templates present in your Amazon SES account in the current AWS Region. You can execute this operation no more than once per second.
+    */
+  def listEmailTemplates(params: ListEmailTemplatesRequest): Request[ListEmailTemplatesResponse, AWSError] = js.native
+  def listEmailTemplates(
+    params: ListEmailTemplatesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEmailTemplatesResponse, Unit]
+  ): Request[ListEmailTemplatesResponse, AWSError] = js.native
+  /**
     * Retrieves a list of email addresses that are on the suppression list for your account.
     */
   def listSuppressedDestinations(): Request[ListSuppressedDestinationsResponse, AWSError] = js.native
@@ -418,6 +569,19 @@ trait SESV2 extends Service {
     params: PutAccountDedicatedIpWarmupAttributesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutAccountDedicatedIpWarmupAttributesResponse, Unit]
   ): Request[PutAccountDedicatedIpWarmupAttributesResponse, AWSError] = js.native
+  /**
+    * Update your Amazon SES account details.
+    */
+  def putAccountDetails(): Request[PutAccountDetailsResponse, AWSError] = js.native
+  def putAccountDetails(callback: js.Function2[/* err */ AWSError, /* data */ PutAccountDetailsResponse, Unit]): Request[PutAccountDetailsResponse, AWSError] = js.native
+  /**
+    * Update your Amazon SES account details.
+    */
+  def putAccountDetails(params: PutAccountDetailsRequest): Request[PutAccountDetailsResponse, AWSError] = js.native
+  def putAccountDetails(
+    params: PutAccountDetailsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAccountDetailsResponse, Unit]
+  ): Request[PutAccountDetailsResponse, AWSError] = js.native
   /**
     * Enable or disable the ability of your account to send email.
     */
@@ -638,12 +802,38 @@ trait SESV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutSuppressedDestinationResponse, Unit]
   ): Request[PutSuppressedDestinationResponse, AWSError] = js.native
   /**
-    * Sends an email message. You can use the Amazon SES API v2 to send two types of messages:    Simple – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon SES assembles the message for you.    Raw – A raw, MIME-formatted email message. When you send this type of email, you have to specify all of the message headers, as well as the message body. You can use this message type to send messages that contain attachments. The message that you specify has to be a valid MIME message.  
+    * Composes an email message to multiple destinations.
+    */
+  def sendBulkEmail(): Request[SendBulkEmailResponse, AWSError] = js.native
+  def sendBulkEmail(callback: js.Function2[/* err */ AWSError, /* data */ SendBulkEmailResponse, Unit]): Request[SendBulkEmailResponse, AWSError] = js.native
+  /**
+    * Composes an email message to multiple destinations.
+    */
+  def sendBulkEmail(params: SendBulkEmailRequest): Request[SendBulkEmailResponse, AWSError] = js.native
+  def sendBulkEmail(
+    params: SendBulkEmailRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SendBulkEmailResponse, Unit]
+  ): Request[SendBulkEmailResponse, AWSError] = js.native
+  /**
+    * Adds an email address to the list of identities for your Amazon SES account in the current AWS Region and attempts to verify it. As a result of executing this operation, a customized verification email is sent to the specified address. To use this operation, you must first create a custom verification email template. For more information about creating and using custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def sendCustomVerificationEmail(): Request[SendCustomVerificationEmailResponse, AWSError] = js.native
+  def sendCustomVerificationEmail(callback: js.Function2[/* err */ AWSError, /* data */ SendCustomVerificationEmailResponse, Unit]): Request[SendCustomVerificationEmailResponse, AWSError] = js.native
+  /**
+    * Adds an email address to the list of identities for your Amazon SES account in the current AWS Region and attempts to verify it. As a result of executing this operation, a customized verification email is sent to the specified address. To use this operation, you must first create a custom verification email template. For more information about creating and using custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def sendCustomVerificationEmail(params: SendCustomVerificationEmailRequest): Request[SendCustomVerificationEmailResponse, AWSError] = js.native
+  def sendCustomVerificationEmail(
+    params: SendCustomVerificationEmailRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SendCustomVerificationEmailResponse, Unit]
+  ): Request[SendCustomVerificationEmailResponse, AWSError] = js.native
+  /**
+    * Sends an email message. You can use the Amazon SES API v2 to send two types of messages:    Simple – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon SES assembles the message for you.    Raw – A raw, MIME-formatted email message. When you send this type of email, you have to specify all of the message headers, as well as the message body. You can use this message type to send messages that contain attachments. The message that you specify has to be a valid MIME message.    Templated – A message that contains personalization tags. When you send this type of email, Amazon SES API v2 automatically replaces the tags with values that you specify.  
     */
   def sendEmail(): Request[SendEmailResponse, AWSError] = js.native
   def sendEmail(callback: js.Function2[/* err */ AWSError, /* data */ SendEmailResponse, Unit]): Request[SendEmailResponse, AWSError] = js.native
   /**
-    * Sends an email message. You can use the Amazon SES API v2 to send two types of messages:    Simple – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon SES assembles the message for you.    Raw – A raw, MIME-formatted email message. When you send this type of email, you have to specify all of the message headers, as well as the message body. You can use this message type to send messages that contain attachments. The message that you specify has to be a valid MIME message.  
+    * Sends an email message. You can use the Amazon SES API v2 to send two types of messages:    Simple – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon SES assembles the message for you.    Raw – A raw, MIME-formatted email message. When you send this type of email, you have to specify all of the message headers, as well as the message body. You can use this message type to send messages that contain attachments. The message that you specify has to be a valid MIME message.    Templated – A message that contains personalization tags. When you send this type of email, Amazon SES API v2 automatically replaces the tags with values that you specify.  
     */
   def sendEmail(params: SendEmailRequest): Request[SendEmailResponse, AWSError] = js.native
   def sendEmail(
@@ -663,6 +853,19 @@ trait SESV2 extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Creates a preview of the MIME content of an email when provided with a template and a set of replacement data. You can execute this operation no more than once per second.
+    */
+  def testRenderEmailTemplate(): Request[TestRenderEmailTemplateResponse, AWSError] = js.native
+  def testRenderEmailTemplate(callback: js.Function2[/* err */ AWSError, /* data */ TestRenderEmailTemplateResponse, Unit]): Request[TestRenderEmailTemplateResponse, AWSError] = js.native
+  /**
+    * Creates a preview of the MIME content of an email when provided with a template and a set of replacement data. You can execute this operation no more than once per second.
+    */
+  def testRenderEmailTemplate(params: TestRenderEmailTemplateRequest): Request[TestRenderEmailTemplateResponse, AWSError] = js.native
+  def testRenderEmailTemplate(
+    params: TestRenderEmailTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TestRenderEmailTemplateResponse, Unit]
+  ): Request[TestRenderEmailTemplateResponse, AWSError] = js.native
   /**
     * Remove one or more tags (keys and values) from a specified resource.
     */
@@ -691,5 +894,46 @@ trait SESV2 extends Service {
     params: UpdateConfigurationSetEventDestinationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateConfigurationSetEventDestinationResponse, Unit]
   ): Request[UpdateConfigurationSetEventDestinationResponse, AWSError] = js.native
+  /**
+    * Updates an existing custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def updateCustomVerificationEmailTemplate(): Request[UpdateCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  def updateCustomVerificationEmailTemplate(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateCustomVerificationEmailTemplateResponse, Unit]
+  ): Request[UpdateCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  /**
+    * Updates an existing custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def updateCustomVerificationEmailTemplate(params: UpdateCustomVerificationEmailTemplateRequest): Request[UpdateCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  def updateCustomVerificationEmailTemplate(
+    params: UpdateCustomVerificationEmailTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateCustomVerificationEmailTemplateResponse, Unit]
+  ): Request[UpdateCustomVerificationEmailTemplateResponse, AWSError] = js.native
+  /**
+    * Updates the specified sending authorization policy for the given identity (an email address or a domain). This API returns successfully even if a policy with the specified name does not exist.  This API is for the identity owner only. If you have not verified the identity, this API will return an error.  Sending authorization is a feature that enables an identity owner to authorize other senders to use its identities. For information about using sending authorization, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def updateEmailIdentityPolicy(): Request[UpdateEmailIdentityPolicyResponse, AWSError] = js.native
+  def updateEmailIdentityPolicy(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEmailIdentityPolicyResponse, Unit]): Request[UpdateEmailIdentityPolicyResponse, AWSError] = js.native
+  /**
+    * Updates the specified sending authorization policy for the given identity (an email address or a domain). This API returns successfully even if a policy with the specified name does not exist.  This API is for the identity owner only. If you have not verified the identity, this API will return an error.  Sending authorization is a feature that enables an identity owner to authorize other senders to use its identities. For information about using sending authorization, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def updateEmailIdentityPolicy(params: UpdateEmailIdentityPolicyRequest): Request[UpdateEmailIdentityPolicyResponse, AWSError] = js.native
+  def updateEmailIdentityPolicy(
+    params: UpdateEmailIdentityPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateEmailIdentityPolicyResponse, Unit]
+  ): Request[UpdateEmailIdentityPolicyResponse, AWSError] = js.native
+  /**
+    * Updates an email template. Email templates enable you to send personalized email to one or more destinations in a single API operation. For more information, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def updateEmailTemplate(): Request[UpdateEmailTemplateResponse, AWSError] = js.native
+  def updateEmailTemplate(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEmailTemplateResponse, Unit]): Request[UpdateEmailTemplateResponse, AWSError] = js.native
+  /**
+    * Updates an email template. Email templates enable you to send personalized email to one or more destinations in a single API operation. For more information, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    */
+  def updateEmailTemplate(params: UpdateEmailTemplateRequest): Request[UpdateEmailTemplateResponse, AWSError] = js.native
+  def updateEmailTemplate(
+    params: UpdateEmailTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateEmailTemplateResponse, Unit]
+  ): Request[UpdateEmailTemplateResponse, AWSError] = js.native
 }
 

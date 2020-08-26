@@ -30,20 +30,42 @@ trait AutoScalingSettingsUpdate extends js.Object {
 
 object AutoScalingSettingsUpdate {
   @scala.inline
-  def apply(
-    AutoScalingDisabled: js.UndefOr[BooleanObject] = js.undefined,
-    AutoScalingRoleArn: AutoScalingRoleArn = null,
-    MaximumUnits: js.UndefOr[PositiveLongObject] = js.undefined,
-    MinimumUnits: js.UndefOr[PositiveLongObject] = js.undefined,
-    ScalingPolicyUpdate: AutoScalingPolicyUpdate = null
-  ): AutoScalingSettingsUpdate = {
+  def apply(): AutoScalingSettingsUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoScalingDisabled)) __obj.updateDynamic("AutoScalingDisabled")(AutoScalingDisabled.get.asInstanceOf[js.Any])
-    if (AutoScalingRoleArn != null) __obj.updateDynamic("AutoScalingRoleArn")(AutoScalingRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumUnits)) __obj.updateDynamic("MaximumUnits")(MaximumUnits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinimumUnits)) __obj.updateDynamic("MinimumUnits")(MinimumUnits.get.asInstanceOf[js.Any])
-    if (ScalingPolicyUpdate != null) __obj.updateDynamic("ScalingPolicyUpdate")(ScalingPolicyUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingSettingsUpdate]
   }
+  @scala.inline
+  implicit class AutoScalingSettingsUpdateOps[Self <: AutoScalingSettingsUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingDisabled(value: BooleanObject): Self = this.set("AutoScalingDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingDisabled: Self = this.set("AutoScalingDisabled", js.undefined)
+    @scala.inline
+    def setAutoScalingRoleArn(value: AutoScalingRoleArn): Self = this.set("AutoScalingRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingRoleArn: Self = this.set("AutoScalingRoleArn", js.undefined)
+    @scala.inline
+    def setMaximumUnits(value: PositiveLongObject): Self = this.set("MaximumUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumUnits: Self = this.set("MaximumUnits", js.undefined)
+    @scala.inline
+    def setMinimumUnits(value: PositiveLongObject): Self = this.set("MinimumUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumUnits: Self = this.set("MinimumUnits", js.undefined)
+    @scala.inline
+    def setScalingPolicyUpdate(value: AutoScalingPolicyUpdate): Self = this.set("ScalingPolicyUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingPolicyUpdate: Self = this.set("ScalingPolicyUpdate", js.undefined)
+  }
+  
 }
 

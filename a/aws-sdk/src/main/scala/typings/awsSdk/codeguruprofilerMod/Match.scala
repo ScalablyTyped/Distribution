@@ -22,16 +22,34 @@ trait Match extends js.Object {
 
 object Match {
   @scala.inline
-  def apply(
-    frameAddress: String = null,
-    targetFramesIndex: js.UndefOr[Integer] = js.undefined,
-    thresholdBreachValue: js.UndefOr[Double] = js.undefined
-  ): Match = {
+  def apply(): Match = {
     val __obj = js.Dynamic.literal()
-    if (frameAddress != null) __obj.updateDynamic("frameAddress")(frameAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetFramesIndex)) __obj.updateDynamic("targetFramesIndex")(targetFramesIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(thresholdBreachValue)) __obj.updateDynamic("thresholdBreachValue")(thresholdBreachValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Match]
   }
+  @scala.inline
+  implicit class MatchOps[Self <: Match] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrameAddress(value: String): Self = this.set("frameAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameAddress: Self = this.set("frameAddress", js.undefined)
+    @scala.inline
+    def setTargetFramesIndex(value: Integer): Self = this.set("targetFramesIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetFramesIndex: Self = this.set("targetFramesIndex", js.undefined)
+    @scala.inline
+    def setThresholdBreachValue(value: Double): Self = this.set("thresholdBreachValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThresholdBreachValue: Self = this.set("thresholdBreachValue", js.undefined)
+  }
+  
 }
 

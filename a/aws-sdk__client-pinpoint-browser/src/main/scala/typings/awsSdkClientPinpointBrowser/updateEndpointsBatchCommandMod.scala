@@ -26,16 +26,9 @@ object updateEndpointsBatchCommandMod extends js.Object {
           Blob
         ] {
     def this(input: UpdateEndpointsBatchInput) = this()
-    /* CompleteClass */
-    override val input: UpdateEndpointsBatchInput = js.native
     val middlewareStack: MiddlewareStack[UpdateEndpointsBatchInput, UpdateEndpointsBatchOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[UpdateEndpointsBatchInput, UpdateEndpointsBatchOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[UpdateEndpointsBatchInput, UpdateEndpointsBatchOutput] = js.native
   }

@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
 class SplitView ()
   extends typings.winjs.WinJS.UI.SplitView {
   def this(element: HTMLElement) = this()
+  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
 

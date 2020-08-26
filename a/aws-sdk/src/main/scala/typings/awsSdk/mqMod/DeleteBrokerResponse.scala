@@ -14,10 +14,26 @@ trait DeleteBrokerResponse extends js.Object {
 
 object DeleteBrokerResponse {
   @scala.inline
-  def apply(BrokerId: string = null): DeleteBrokerResponse = {
+  def apply(): DeleteBrokerResponse = {
     val __obj = js.Dynamic.literal()
-    if (BrokerId != null) __obj.updateDynamic("BrokerId")(BrokerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBrokerResponse]
   }
+  @scala.inline
+  implicit class DeleteBrokerResponseOps[Self <: DeleteBrokerResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerId: Self = this.set("BrokerId", js.undefined)
+  }
+  
 }
 

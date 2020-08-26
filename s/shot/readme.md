@@ -11,8 +11,8 @@ Injects a fake HTTP request/response into a node HTTP server
 | Full name          | shot |
 | Keywords           | utilities, http, debug, test |
 | # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 10246529 |
+| # dependents       | 5 |
+| # downloads        | 10111929 |
 | # stars            | 4 |
 
 ## Links

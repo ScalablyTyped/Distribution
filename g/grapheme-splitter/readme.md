@@ -11,8 +11,8 @@ A JavaScript library that breaks strings into their individual user-perceived ch
 | Full name          | grapheme-splitter |
 | Keywords           | utf-8, strings, emoji, split |
 | # releases         | 3 |
-| # dependents       | 34 |
-| # downloads        | 12744020 |
+| # dependents       | 33 |
+| # downloads        | 14828091 |
 | # stars            | 0 |
 
 ## Links

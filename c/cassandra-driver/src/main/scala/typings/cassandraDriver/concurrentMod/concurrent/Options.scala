@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var collectResults: js.UndefOr[Boolean] = js.undefined
-  var concurrencyLevel: js.UndefOr[Double] = js.undefined
-  var executionProfile: js.UndefOr[String] = js.undefined
-  var maxErrors: js.UndefOr[Double] = js.undefined
-  var raiseOnFirstError: js.UndefOr[Boolean] = js.undefined
+  var collectResults: js.UndefOr[Boolean] = js.native
+  var concurrencyLevel: js.UndefOr[Double] = js.native
+  var executionProfile: js.UndefOr[String] = js.native
+  var maxErrors: js.UndefOr[Double] = js.native
+  var raiseOnFirstError: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    collectResults: js.UndefOr[Boolean] = js.undefined,
-    concurrencyLevel: js.UndefOr[Double] = js.undefined,
-    executionProfile: String = null,
-    maxErrors: js.UndefOr[Double] = js.undefined,
-    raiseOnFirstError: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collectResults)) __obj.updateDynamic("collectResults")(collectResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(concurrencyLevel)) __obj.updateDynamic("concurrencyLevel")(concurrencyLevel.get.asInstanceOf[js.Any])
-    if (executionProfile != null) __obj.updateDynamic("executionProfile")(executionProfile.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxErrors)) __obj.updateDynamic("maxErrors")(maxErrors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(raiseOnFirstError)) __obj.updateDynamic("raiseOnFirstError")(raiseOnFirstError.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollectResults(value: Boolean): Self = this.set("collectResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectResults: Self = this.set("collectResults", js.undefined)
+    @scala.inline
+    def setConcurrencyLevel(value: Double): Self = this.set("concurrencyLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConcurrencyLevel: Self = this.set("concurrencyLevel", js.undefined)
+    @scala.inline
+    def setExecutionProfile(value: String): Self = this.set("executionProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionProfile: Self = this.set("executionProfile", js.undefined)
+    @scala.inline
+    def setMaxErrors(value: Double): Self = this.set("maxErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxErrors: Self = this.set("maxErrors", js.undefined)
+    @scala.inline
+    def setRaiseOnFirstError(value: Boolean): Self = this.set("raiseOnFirstError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaiseOnFirstError: Self = this.set("raiseOnFirstError", js.undefined)
+  }
+  
 }
 

@@ -26,16 +26,9 @@ object deleteStreamCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DeleteStreamInput) = this()
-    /* CompleteClass */
-    override val input: DeleteStreamInput = js.native
     val middlewareStack: MiddlewareStack[DeleteStreamInput, DeleteStreamOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KinesisResolvedConfiguration
-    ): Handler[DeleteStreamInput, DeleteStreamOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KinesisResolvedConfiguration
     ): Handler[DeleteStreamInput, DeleteStreamOutput] = js.native
   }

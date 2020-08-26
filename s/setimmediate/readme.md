@@ -12,7 +12,7 @@ A shim for the setImmediate efficient script yielding API
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 341 |
-| # downloads        | 289936787 |
+| # downloads        | 296427725 |
 | # stars            | 7 |
 
 ## Links

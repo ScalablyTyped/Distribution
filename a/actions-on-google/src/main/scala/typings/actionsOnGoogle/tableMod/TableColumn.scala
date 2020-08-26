@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableColumn extends GoogleActionsV2UiElementsTableCardColumnProperties {
   /**
     * Alias for `horizontalAlignment`
@@ -14,21 +15,31 @@ trait TableColumn extends GoogleActionsV2UiElementsTableCardColumnProperties {
     * will be aligned to the leading edge.
     * @public
     */
-  var align: js.UndefOr[GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment] = js.undefined
+  var align: js.UndefOr[GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment] = js.native
 }
 
 object TableColumn {
   @scala.inline
-  def apply(
-    align: GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment = null,
-    header: String = null,
-    horizontalAlignment: GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment = null
-  ): TableColumn = {
+  def apply(): TableColumn = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumn]
   }
+  @scala.inline
+  implicit class TableColumnOps[Self <: TableColumn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+  }
+  
 }
 

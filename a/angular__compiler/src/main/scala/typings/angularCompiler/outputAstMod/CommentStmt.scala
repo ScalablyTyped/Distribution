@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CommentStmt protected () extends Statement {
   def this(comment: String) = this()
   def this(comment: String, multiline: Boolean) = this()
+  def this(comment: String, multiline: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(comment: String, multiline: Boolean, sourceSpan: ParseSourceSpan) = this()
   var comment: String = js.native
   var multiline: Boolean = js.native

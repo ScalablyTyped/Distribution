@@ -24,7 +24,7 @@ object componentStepMod extends js.Object {
     var elementRef: js.Any = js.native
     var m_active: js.Any = js.native
     var onMove: EventEmitter[StepEvent] = js.native
-    var wrapperElement: js.UndefOr[js.Any] = js.native
+    var wrapperElement: js.Any = js.native
     def ngAfterViewInit(): Unit = js.native
     def ngOnInit(): Unit = js.native
   }
@@ -36,20 +36,12 @@ object componentStepMod extends js.Object {
     def this(renderer: Renderer2, elementRef: ElementRef[_]) = this()
     @JSName("$element")
     var $element: js.Any = js.native
-    var contentElement: js.UndefOr[js.Any] = js.native
+    var contentElement: js.Any = js.native
     var elementRef: js.Any = js.native
     var m_title: js.Any = js.native
     var title: String = js.native
     var titleChild: WorksStepTitle = js.native
-    var titleElement: js.UndefOr[js.Any] = js.native
-    /**
-      * A callback method that is invoked immediately after
-      * Angular has completed initialization of all of the directive's
-      * content.
-      * It is invoked only once when the directive is instantiated.
-      */
-    /* CompleteClass */
-    override def ngAfterContentInit(): Unit = js.native
+    var titleElement: js.Any = js.native
     def ngOnInit(): Unit = js.native
   }
   

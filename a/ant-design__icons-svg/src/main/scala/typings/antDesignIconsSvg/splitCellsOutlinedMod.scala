@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/SplitCellsOutlined", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/SplitCellsOutlined", JSImport.Namespace)
 @js.native
 object splitCellsOutlinedMod extends js.Object {
   val default: IconDefinition = js.native

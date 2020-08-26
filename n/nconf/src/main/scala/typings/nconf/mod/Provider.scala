@@ -29,6 +29,7 @@ class Provider () extends js.Object {
   def file(name: String, options: IFileOptions): Provider = js.native
   def file(options: IFileOptions): Provider = js.native
   def get(): js.Any = js.native
+  def get(key: js.UndefOr[scala.Nothing], callback: ICallbackFunction): js.Any = js.native
   def get(key: String): js.Any = js.native
   def get(key: String, callback: ICallbackFunction): js.Any = js.native
   def init(): Unit = js.native

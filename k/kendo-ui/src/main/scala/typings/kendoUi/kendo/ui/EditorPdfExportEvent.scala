@@ -5,21 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EditorPdfExportEvent extends EditorEvent {
-  var promise: js.UndefOr[JQueryPromise[_]] = js.undefined
+  var promise: js.UndefOr[JQueryPromise[_]] = js.native
 }
 
 object EditorPdfExportEvent {
   @scala.inline
-  def apply(
-    isDefaultPrevented: () => Boolean,
-    preventDefault: js.Function,
-    sender: Editor_,
-    promise: JQueryPromise[_] = null
-  ): EditorPdfExportEvent = {
+  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Editor_): EditorPdfExportEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorPdfExportEvent]
   }
+  @scala.inline
+  implicit class EditorPdfExportEventOps[Self <: EditorPdfExportEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPromise(value: JQueryPromise[_]): Self = this.set("promise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromise: Self = this.set("promise", js.undefined)
+  }
+  
 }
 

@@ -1211,9 +1211,15 @@ trait ojDiagramLink extends JetElement[ojDiagramLinkSettableProperties] {
   @JSName("setProperty")
   def setProperty_categories(property: categories, value: js.Array[String]): Unit = js.native
   @JSName("setProperty")
+  def setProperty_color(property: color): Unit = js.native
+  @JSName("setProperty")
   def setProperty_color(property: color, value: String): Unit = js.native
   @JSName("setProperty")
+  def setProperty_endConnectorType(property: endConnectorType): Unit = js.native
+  @JSName("setProperty")
   def setProperty_endNode(property: endNode, value: js.Any): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_label(property: label): Unit = js.native
   @JSName("setProperty")
   def setProperty_label(property: label, value: String): Unit = js.native
   @JSName("setProperty")
@@ -1221,13 +1227,25 @@ trait ojDiagramLink extends JetElement[ojDiagramLinkSettableProperties] {
   @JSName("setProperty")
   def setProperty_labelStyle(property: labelStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
+  def setProperty_selectable(property: selectable): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_shortDesc(property: shortDesc): Unit = js.native
+  @JSName("setProperty")
   def setProperty_shortDesc(property: shortDesc, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_startConnectorType(property: startConnectorType): Unit = js.native
   @JSName("setProperty")
   def setProperty_startNode(property: startNode, value: js.Any): Unit = js.native
   @JSName("setProperty")
+  def setProperty_svgClassName(property: svgClassName): Unit = js.native
+  @JSName("setProperty")
   def setProperty_svgClassName(property: svgClassName, value: String): Unit = js.native
   @JSName("setProperty")
+  def setProperty_svgStyle(property: svgStyle): Unit = js.native
+  @JSName("setProperty")
   def setProperty_svgStyle(property: svgStyle, value: js.Object): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_width(property: width): Unit = js.native
   @JSName("setProperty")
   def setProperty_width(property: width, value: Double): Unit = js.native
 }

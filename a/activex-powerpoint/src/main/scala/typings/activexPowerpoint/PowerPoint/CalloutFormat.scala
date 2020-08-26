@@ -8,26 +8,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CalloutFormat extends js.Object {
-  var Accent: MsoTriState
-  var Angle: MsoCalloutAngleType
-  val Application: js.Any
-  var AutoAttach: MsoTriState
-  val AutoLength: MsoTriState
-  var Border: MsoTriState
-  val Creator: Double
-  val Drop: Double
-  val DropType: MsoCalloutDropType
-  var Gap: Double
-  val Length: Double
-  val Parent: js.Any
+  var Accent: MsoTriState = js.native
+  var Angle: MsoCalloutAngleType = js.native
+  val Application: js.Any = js.native
+  var AutoAttach: MsoTriState = js.native
+  val AutoLength: MsoTriState = js.native
+  var Border: MsoTriState = js.native
+  val Creator: Double = js.native
+  val Drop: Double = js.native
+  val DropType: MsoCalloutDropType = js.native
+  var Gap: Double = js.native
+  val Length: Double = js.native
+  val Parent: js.Any = js.native
   @JSName("PowerPoint.CalloutFormat_typekey")
-  var PowerPointDotCalloutFormat_typekey: CalloutFormat
-  var Type: MsoCalloutType
-  def AutomaticLength(): Unit
-  def CustomDrop(Drop: Double): Unit
-  def CustomLength(Length: Double): Unit
-  def PresetDrop(DropType: MsoCalloutDropType): Unit
+  var PowerPointDotCalloutFormat_typekey: CalloutFormat = js.native
+  var Type: MsoCalloutType = js.native
+  def AutomaticLength(): Unit = js.native
+  def CustomDrop(Drop: Double): Unit = js.native
+  def CustomLength(Length: Double): Unit = js.native
+  def PresetDrop(DropType: MsoCalloutDropType): Unit = js.native
 }
 
 object CalloutFormat {
@@ -56,5 +57,54 @@ object CalloutFormat {
     __obj.updateDynamic("PowerPoint.CalloutFormat_typekey")(PowerPointDotCalloutFormat_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalloutFormat]
   }
+  @scala.inline
+  implicit class CalloutFormatOps[Self <: CalloutFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccent(value: MsoTriState): Self = this.set("Accent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAngle(value: MsoCalloutAngleType): Self = this.set("Angle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoAttach(value: MsoTriState): Self = this.set("AutoAttach", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoLength(value: MsoTriState): Self = this.set("AutoLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutomaticLength(value: () => Unit): Self = this.set("AutomaticLength", js.Any.fromFunction0(value))
+    @scala.inline
+    def setBorder(value: MsoTriState): Self = this.set("Border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomDrop(value: Double => Unit): Self = this.set("CustomDrop", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCustomLength(value: Double => Unit): Self = this.set("CustomLength", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDrop(value: Double): Self = this.set("Drop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDropType(value: MsoCalloutDropType): Self = this.set("DropType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGap(value: Double): Self = this.set("Gap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLength(value: Double): Self = this.set("Length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPowerPointDotCalloutFormat_typekey(value: CalloutFormat): Self = this.set("PowerPoint.CalloutFormat_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPresetDrop(value: MsoCalloutDropType => Unit): Self = this.set("PresetDrop", js.Any.fromFunction1(value))
+    @scala.inline
+    def setType(value: MsoCalloutType): Self = this.set("Type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -35,6 +35,7 @@ object Element extends js.Object {
     * @param origin String/Object The original method name
     */
   def createAlias(): Unit = js.native
+  def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
   def createAlias(alias: js.Any): Unit = js.native
   def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
   /** [Method] Returns the top Element that is located at the passed coordinates Defined in override Ext dom AbstractElement_static
@@ -43,6 +44,7 @@ object Element extends js.Object {
     * @returns String The found Element
     */
   def fromPoint(): java.lang.String = js.native
+  def fromPoint(x: js.UndefOr[scala.Nothing], y: Double): java.lang.String = js.native
   def fromPoint(x: Double): java.lang.String = js.native
   def fromPoint(x: Double, y: Double): java.lang.String = js.native
   /** [Method] Retrieves Ext dom Element objects
@@ -87,6 +89,7 @@ object Element extends js.Object {
     * @returns Array An array of strings representing remaining unique, merged class names. If class names were added to the first list, the changed property will be true.
     */
   def mergeClsList(): typings.extjs.Ext.Array = js.native
+  def mergeClsList(clsList1: js.UndefOr[scala.Nothing], clsList2: js.Any): typings.extjs.Ext.Array = js.native
   def mergeClsList(clsList1: js.Any): typings.extjs.Ext.Array = js.native
   def mergeClsList(clsList1: js.Any, clsList2: js.Any): typings.extjs.Ext.Array = js.native
   /** [Method] Normalizes CSS property keys from dash delimited to camel case JavaScript Syntax
@@ -119,6 +122,7 @@ object Element extends js.Object {
     * @returns Array An array of strings representing remaining class names. If class names were removed, the changed property will be true.
     */
   def removeCls(): typings.extjs.Ext.Array = js.native
+  def removeCls(existingClsList: js.UndefOr[scala.Nothing], removeClsList: js.Any): typings.extjs.Ext.Array = js.native
   def removeCls(existingClsList: js.Any): typings.extjs.Ext.Array = js.native
   def removeCls(existingClsList: js.Any, removeClsList: js.Any): typings.extjs.Ext.Array = js.native
   /** [Method] Selects elements based on the passed CSS selector to enable Element methods to be applied to many related elements in
@@ -128,7 +132,11 @@ object Element extends js.Object {
     * @returns Ext.CompositeElementLite/Ext.CompositeElement
     */
   def select(): js.Any = js.native
+  def select(selector: js.UndefOr[scala.Nothing], unique: js.UndefOr[scala.Nothing], root: js.Any): js.Any = js.native
+  def select(selector: js.UndefOr[scala.Nothing], unique: Boolean): js.Any = js.native
+  def select(selector: js.UndefOr[scala.Nothing], unique: Boolean, root: js.Any): js.Any = js.native
   def select(selector: js.Any): js.Any = js.native
+  def select(selector: js.Any, unique: js.UndefOr[scala.Nothing], root: js.Any): js.Any = js.native
   def select(selector: js.Any, unique: Boolean): js.Any = js.native
   def select(selector: js.Any, unique: Boolean, root: js.Any): js.Any = js.native
   /** [Method] Parses a number or string representing margin sizes into an object
@@ -137,6 +145,7 @@ object Element extends js.Object {
     * @returns String An string with unitized (px if units is not specified) metrics for top, right, bottom and left
     */
   def unitizeBox(): java.lang.String = js.native
+  def unitizeBox(box: js.UndefOr[scala.Nothing], units: java.lang.String): java.lang.String = js.native
   def unitizeBox(box: js.Any): java.lang.String = js.native
   def unitizeBox(box: js.Any, units: java.lang.String): java.lang.String = js.native
 }

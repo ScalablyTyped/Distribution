@@ -19,6 +19,12 @@ trait FileSearchBand extends js.Object {
   def SetFocus(): Unit = js.native
   /** method SetSearchParameters */
   def SetSearchParameters(pbstrSearchID: String, bNavToResults: Boolean): Unit = js.native
+  def SetSearchParameters(
+    pbstrSearchID: String,
+    bNavToResults: Boolean,
+    pvarScope: js.UndefOr[scala.Nothing],
+    pvarQueryFile: js.Any
+  ): Unit = js.native
   def SetSearchParameters(pbstrSearchID: String, bNavToResults: Boolean, pvarScope: js.Any): Unit = js.native
   def SetSearchParameters(pbstrSearchID: String, bNavToResults: Boolean, pvarScope: js.Any, pvarQueryFile: js.Any): Unit = js.native
 }

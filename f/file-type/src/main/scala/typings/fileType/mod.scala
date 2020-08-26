@@ -17,6 +17,7 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
 import typings.std.ArrayBuffer
 import typings.std.Error
+import typings.std.Set
 import typings.std.Uint8Array
 import typings.strtok3.typesMod.ITokenizer
 import scala.scalajs.js
@@ -34,6 +35,7 @@ object mod extends js.Object {
     var readable: Boolean = js.native
     val readableEncoding: BufferEncoding | Null = js.native
     val readableEnded: Boolean = js.native
+    val readableFlowing: Boolean | Null = js.native
     val readableHighWaterMark: Double = js.native
     val readableLength: Double = js.native
     val readableObjectMode: Boolean = js.native
@@ -207,7 +209,7 @@ object mod extends js.Object {
   /**
   	Supported file extensions.
   	*/
-  val extensions: js.Array[typings.fileType.coreMod.FileExtension] = js.native
+  val extensions: Set[typings.fileType.coreMod.FileExtension] = js.native
   /**
   	Supported MIME types.
   	*/

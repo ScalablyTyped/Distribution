@@ -52,14 +52,6 @@ abstract class AssociationBase protected ()
     */
   @JSName("parent")
   val parent_FAssociationBase: IEntity = js.native
-  /**
-    * Returns the qualified name of this element, or
-    * null if this element is not a part of the model,
-    * or if it or one of its namespace containers does not have a
-    * valid name.
-    */
-  /* CompleteClass */
-  override val qualifiedName: String | Null = js.native
   @JSName("remoteSourceDocumentQualifiedName")
   val remoteSourceDocumentQualifiedName_FAssociationBase: String | Null = js.native
   /**
@@ -81,42 +73,38 @@ abstract class AssociationBase protected ()
     * In version 8.11.0: introduced
     */
   def capabilities: AssociationCapabilities = js.native
-  def capabilities(newValue: AssociationCapabilities): js.Any = js.native
+  def capabilities_=(newValue: AssociationCapabilities): Unit = js.native
   def containerAsDomainModel: DomainModel = js.native
   def dataStorageGuid: String = js.native
-  def dataStorageGuid(newValue: String): js.Any = js.native
+  def dataStorageGuid_=(newValue: String): Unit = js.native
   def deleteBehavior: AssociationDeleteBehavior = js.native
-  def deleteBehavior(newValue: AssociationDeleteBehavior): js.Any = js.native
+  def deleteBehavior_=(newValue: AssociationDeleteBehavior): Unit = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def owner: AssociationOwner = js.native
-  def owner(newValue: AssociationOwner): js.Any = js.native
+  def owner_=(newValue: AssociationOwner): Unit = js.native
   def parent: Entity = js.native
-  def parent(newValue: Entity): js.Any = js.native
+  def parent_=(newValue: Entity): Unit = js.native
   @JSName("qualifiedName")
   def qualifiedName_MAssociationBase: String | Null = js.native
-  def remoteSourceDocument(): js.Any = js.native
-  def remoteSourceDocument(newValue: IRemoteEntitySourceDocument): js.Any = js.native
-  def remoteSourceDocumentQualifiedName: String | Null = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 8.10.0: deleted
     * In version 8.3.0: introduced
     */
-  @JSName("remoteSourceDocument")
-  def remoteSourceDocument_Union: IRemoteEntitySourceDocument | Null = js.native
-  def source(): js.Any = js.native
-  def source(newValue: AssociationSource): js.Any = js.native
+  def remoteSourceDocument: IRemoteEntitySourceDocument | Null = js.native
+  def remoteSourceDocumentQualifiedName: String | Null = js.native
+  def remoteSourceDocument_=(newValue: IRemoteEntitySourceDocument | Null): Unit = js.native
   /**
     * In version 8.10.0: introduced
     */
-  @JSName("source")
-  def source_Union: AssociationSource | Null = js.native
+  def source: AssociationSource | Null = js.native
+  def source_=(newValue: AssociationSource | Null): Unit = js.native
   def `type`: AssociationType = js.native
-  def `type`(newValue: AssociationType): js.Any = js.native
+  def type_=(newValue: AssociationType): Unit = js.native
 }
 
 /* static members */

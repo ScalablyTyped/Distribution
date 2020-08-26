@@ -12,7 +12,7 @@ The pirate bay client
 | Keywords           | thepiratebay, pirate bay, torrent, api, client, scraper |
 | # releases         | 2 |
 | # dependents       | 20 |
-| # downloads        | 30193 |
+| # downloads        | 29652 |
 | # stars            | 11 |
 
 ## Links

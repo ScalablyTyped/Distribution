@@ -21,11 +21,30 @@ trait SchemaSiteVerificationWebResourceGettokenRequest extends js.Object {
 
 object SchemaSiteVerificationWebResourceGettokenRequest {
   @scala.inline
-  def apply(site: Identifier = null, verificationMethod: String = null): SchemaSiteVerificationWebResourceGettokenRequest = {
+  def apply(): SchemaSiteVerificationWebResourceGettokenRequest = {
     val __obj = js.Dynamic.literal()
-    if (site != null) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
-    if (verificationMethod != null) __obj.updateDynamic("verificationMethod")(verificationMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSiteVerificationWebResourceGettokenRequest]
   }
+  @scala.inline
+  implicit class SchemaSiteVerificationWebResourceGettokenRequestOps[Self <: SchemaSiteVerificationWebResourceGettokenRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSite(value: Identifier): Self = this.set("site", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSite: Self = this.set("site", js.undefined)
+    @scala.inline
+    def setVerificationMethod(value: String): Self = this.set("verificationMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerificationMethod: Self = this.set("verificationMethod", js.undefined)
+  }
+  
 }
 

@@ -6,7 +6,7 @@ import typings.electron.electronStrings.done
 import typings.electron.electronStrings.interrupted
 import typings.electron.electronStrings.progressing
 import typings.electron.electronStrings.updated
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

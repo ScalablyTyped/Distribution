@@ -31,20 +31,42 @@ trait SchemaVariableFormatValue extends js.Object {
 
 object SchemaVariableFormatValue {
   @scala.inline
-  def apply(
-    caseConversionType: String = null,
-    convertFalseToValue: SchemaParameter = null,
-    convertNullToValue: SchemaParameter = null,
-    convertTrueToValue: SchemaParameter = null,
-    convertUndefinedToValue: SchemaParameter = null
-  ): SchemaVariableFormatValue = {
+  def apply(): SchemaVariableFormatValue = {
     val __obj = js.Dynamic.literal()
-    if (caseConversionType != null) __obj.updateDynamic("caseConversionType")(caseConversionType.asInstanceOf[js.Any])
-    if (convertFalseToValue != null) __obj.updateDynamic("convertFalseToValue")(convertFalseToValue.asInstanceOf[js.Any])
-    if (convertNullToValue != null) __obj.updateDynamic("convertNullToValue")(convertNullToValue.asInstanceOf[js.Any])
-    if (convertTrueToValue != null) __obj.updateDynamic("convertTrueToValue")(convertTrueToValue.asInstanceOf[js.Any])
-    if (convertUndefinedToValue != null) __obj.updateDynamic("convertUndefinedToValue")(convertUndefinedToValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVariableFormatValue]
   }
+  @scala.inline
+  implicit class SchemaVariableFormatValueOps[Self <: SchemaVariableFormatValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaseConversionType(value: String): Self = this.set("caseConversionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseConversionType: Self = this.set("caseConversionType", js.undefined)
+    @scala.inline
+    def setConvertFalseToValue(value: SchemaParameter): Self = this.set("convertFalseToValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvertFalseToValue: Self = this.set("convertFalseToValue", js.undefined)
+    @scala.inline
+    def setConvertNullToValue(value: SchemaParameter): Self = this.set("convertNullToValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvertNullToValue: Self = this.set("convertNullToValue", js.undefined)
+    @scala.inline
+    def setConvertTrueToValue(value: SchemaParameter): Self = this.set("convertTrueToValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvertTrueToValue: Self = this.set("convertTrueToValue", js.undefined)
+    @scala.inline
+    def setConvertUndefinedToValue(value: SchemaParameter): Self = this.set("convertUndefinedToValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvertUndefinedToValue: Self = this.set("convertUndefinedToValue", js.undefined)
+  }
+  
 }
 

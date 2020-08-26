@@ -15,11 +15,5 @@ class DeviceManufacturerNotificationTrigger protected ()
     * @param oneShot Whether the trigger is used only once.
     */
   def this(triggerQualifier: String, oneShot: Boolean) = this()
-  /** Gets whether the trigger is used only once. */
-  /* CompleteClass */
-  override var oneShot: Boolean = js.native
-  /** Gets an app-defined string that qualifies the trigger. */
-  /* CompleteClass */
-  override var triggerQualifier: String = js.native
 }
 

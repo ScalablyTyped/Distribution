@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 object interpolate extends js.Object {
   def apply(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
   def apply(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  def apply(a: js.Any): js.Function1[/* t */ Double, Null] = js.native
   def apply(a: js.Any, b: Boolean): js.Function1[/* t */ Double, Boolean] = js.native
+  def apply(a: js.Any, b: Null): js.Function1[/* t */ Double, Null] = js.native
   def apply(a: Double, b: Double): js.Function1[/* t */ Double, Double] = js.native
   def apply(a: Double, b: ValueOf): js.Function1[/* t */ Double, Double] = js.native
   def apply(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native

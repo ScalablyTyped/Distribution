@@ -8,47 +8,81 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@aws-sdk/build-types.@aws-sdk/build-types/build/TreeModel.Documented> */
 /* Inlined parent @aws-sdk/types.@aws-sdk/types.Member */
+@js.native
 trait TreeModelMember extends js.Object {
-  var documentation: js.UndefOr[String] = js.undefined
-  var flattened: js.UndefOr[Boolean] = js.undefined
-  var location: js.UndefOr[MemberLocation] = js.undefined
-  var locationName: js.UndefOr[String] = js.undefined
-  var queryName: js.UndefOr[String] = js.undefined
-  var resultWrapper: js.UndefOr[String] = js.undefined
-  var sensitive: js.UndefOr[Boolean] = js.undefined
-  var shape: TreeModelShape
-  var streaming: js.UndefOr[Boolean] = js.undefined
-  var xmlAttribute: js.UndefOr[Boolean] = js.undefined
-  var xmlNamespace: js.UndefOr[XmlNamespace] = js.undefined
+  var documentation: js.UndefOr[String] = js.native
+  var flattened: js.UndefOr[Boolean] = js.native
+  var location: js.UndefOr[MemberLocation] = js.native
+  var locationName: js.UndefOr[String] = js.native
+  var queryName: js.UndefOr[String] = js.native
+  var resultWrapper: js.UndefOr[String] = js.native
+  var sensitive: js.UndefOr[Boolean] = js.native
+  var shape: TreeModelShape = js.native
+  var streaming: js.UndefOr[Boolean] = js.native
+  var xmlAttribute: js.UndefOr[Boolean] = js.native
+  var xmlNamespace: js.UndefOr[XmlNamespace] = js.native
 }
 
 object TreeModelMember {
   @scala.inline
-  def apply(
-    shape: TreeModelShape,
-    documentation: String = null,
-    flattened: js.UndefOr[Boolean] = js.undefined,
-    location: MemberLocation = null,
-    locationName: String = null,
-    queryName: String = null,
-    resultWrapper: String = null,
-    sensitive: js.UndefOr[Boolean] = js.undefined,
-    streaming: js.UndefOr[Boolean] = js.undefined,
-    xmlAttribute: js.UndefOr[Boolean] = js.undefined,
-    xmlNamespace: XmlNamespace = null
-  ): TreeModelMember = {
+  def apply(shape: TreeModelShape): TreeModelMember = {
     val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened.get.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (locationName != null) __obj.updateDynamic("locationName")(locationName.asInstanceOf[js.Any])
-    if (queryName != null) __obj.updateDynamic("queryName")(queryName.asInstanceOf[js.Any])
-    if (resultWrapper != null) __obj.updateDynamic("resultWrapper")(resultWrapper.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(streaming)) __obj.updateDynamic("streaming")(streaming.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xmlAttribute)) __obj.updateDynamic("xmlAttribute")(xmlAttribute.get.asInstanceOf[js.Any])
-    if (xmlNamespace != null) __obj.updateDynamic("xmlNamespace")(xmlNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeModelMember]
   }
+  @scala.inline
+  implicit class TreeModelMemberOps[Self <: TreeModelMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShape(value: TreeModelShape): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    @scala.inline
+    def setFlattened(value: Boolean): Self = this.set("flattened", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlattened: Self = this.set("flattened", js.undefined)
+    @scala.inline
+    def setLocation(value: MemberLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setLocationName(value: String): Self = this.set("locationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationName: Self = this.set("locationName", js.undefined)
+    @scala.inline
+    def setQueryName(value: String): Self = this.set("queryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryName: Self = this.set("queryName", js.undefined)
+    @scala.inline
+    def setResultWrapper(value: String): Self = this.set("resultWrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultWrapper: Self = this.set("resultWrapper", js.undefined)
+    @scala.inline
+    def setSensitive(value: Boolean): Self = this.set("sensitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSensitive: Self = this.set("sensitive", js.undefined)
+    @scala.inline
+    def setStreaming(value: Boolean): Self = this.set("streaming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreaming: Self = this.set("streaming", js.undefined)
+    @scala.inline
+    def setXmlAttribute(value: Boolean): Self = this.set("xmlAttribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXmlAttribute: Self = this.set("xmlAttribute", js.undefined)
+    @scala.inline
+    def setXmlNamespace(value: XmlNamespace): Self = this.set("xmlNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXmlNamespace: Self = this.set("xmlNamespace", js.undefined)
+  }
+  
 }
 

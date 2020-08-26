@@ -74,42 +74,88 @@ trait InputTemplate extends js.Object {
 
 object InputTemplate {
   @scala.inline
-  def apply(
-    AudioSelectorGroups: mapOfAudioSelectorGroup = null,
-    AudioSelectors: mapOfAudioSelector = null,
-    CaptionSelectors: mapOfCaptionSelector = null,
-    Crop: Rectangle = null,
-    DeblockFilter: InputDeblockFilter = null,
-    DenoiseFilter: InputDenoiseFilter = null,
-    FilterEnable: InputFilterEnable = null,
-    FilterStrength: js.UndefOr[integerMinNegative5Max5] = js.undefined,
-    ImageInserter: ImageInserter = null,
-    InputClippings: listOfInputClipping = null,
-    Position: Rectangle = null,
-    ProgramNumber: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    PsiControl: InputPsiControl = null,
-    TimecodeSource: InputTimecodeSource = null,
-    TimecodeStart: stringMin11Max11Pattern01D20305D205D = null,
-    VideoSelector: VideoSelector = null
-  ): InputTemplate = {
+  def apply(): InputTemplate = {
     val __obj = js.Dynamic.literal()
-    if (AudioSelectorGroups != null) __obj.updateDynamic("AudioSelectorGroups")(AudioSelectorGroups.asInstanceOf[js.Any])
-    if (AudioSelectors != null) __obj.updateDynamic("AudioSelectors")(AudioSelectors.asInstanceOf[js.Any])
-    if (CaptionSelectors != null) __obj.updateDynamic("CaptionSelectors")(CaptionSelectors.asInstanceOf[js.Any])
-    if (Crop != null) __obj.updateDynamic("Crop")(Crop.asInstanceOf[js.Any])
-    if (DeblockFilter != null) __obj.updateDynamic("DeblockFilter")(DeblockFilter.asInstanceOf[js.Any])
-    if (DenoiseFilter != null) __obj.updateDynamic("DenoiseFilter")(DenoiseFilter.asInstanceOf[js.Any])
-    if (FilterEnable != null) __obj.updateDynamic("FilterEnable")(FilterEnable.asInstanceOf[js.Any])
-    if (!js.isUndefined(FilterStrength)) __obj.updateDynamic("FilterStrength")(FilterStrength.get.asInstanceOf[js.Any])
-    if (ImageInserter != null) __obj.updateDynamic("ImageInserter")(ImageInserter.asInstanceOf[js.Any])
-    if (InputClippings != null) __obj.updateDynamic("InputClippings")(InputClippings.asInstanceOf[js.Any])
-    if (Position != null) __obj.updateDynamic("Position")(Position.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgramNumber)) __obj.updateDynamic("ProgramNumber")(ProgramNumber.get.asInstanceOf[js.Any])
-    if (PsiControl != null) __obj.updateDynamic("PsiControl")(PsiControl.asInstanceOf[js.Any])
-    if (TimecodeSource != null) __obj.updateDynamic("TimecodeSource")(TimecodeSource.asInstanceOf[js.Any])
-    if (TimecodeStart != null) __obj.updateDynamic("TimecodeStart")(TimecodeStart.asInstanceOf[js.Any])
-    if (VideoSelector != null) __obj.updateDynamic("VideoSelector")(VideoSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputTemplate]
   }
+  @scala.inline
+  implicit class InputTemplateOps[Self <: InputTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioSelectorGroups(value: mapOfAudioSelectorGroup): Self = this.set("AudioSelectorGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioSelectorGroups: Self = this.set("AudioSelectorGroups", js.undefined)
+    @scala.inline
+    def setAudioSelectors(value: mapOfAudioSelector): Self = this.set("AudioSelectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioSelectors: Self = this.set("AudioSelectors", js.undefined)
+    @scala.inline
+    def setCaptionSelectors(value: mapOfCaptionSelector): Self = this.set("CaptionSelectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionSelectors: Self = this.set("CaptionSelectors", js.undefined)
+    @scala.inline
+    def setCrop(value: Rectangle): Self = this.set("Crop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrop: Self = this.set("Crop", js.undefined)
+    @scala.inline
+    def setDeblockFilter(value: InputDeblockFilter): Self = this.set("DeblockFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeblockFilter: Self = this.set("DeblockFilter", js.undefined)
+    @scala.inline
+    def setDenoiseFilter(value: InputDenoiseFilter): Self = this.set("DenoiseFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDenoiseFilter: Self = this.set("DenoiseFilter", js.undefined)
+    @scala.inline
+    def setFilterEnable(value: InputFilterEnable): Self = this.set("FilterEnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterEnable: Self = this.set("FilterEnable", js.undefined)
+    @scala.inline
+    def setFilterStrength(value: integerMinNegative5Max5): Self = this.set("FilterStrength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterStrength: Self = this.set("FilterStrength", js.undefined)
+    @scala.inline
+    def setImageInserter(value: ImageInserter): Self = this.set("ImageInserter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageInserter: Self = this.set("ImageInserter", js.undefined)
+    @scala.inline
+    def setInputClippingsVarargs(value: InputClipping*): Self = this.set("InputClippings", js.Array(value :_*))
+    @scala.inline
+    def setInputClippings(value: listOfInputClipping): Self = this.set("InputClippings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputClippings: Self = this.set("InputClippings", js.undefined)
+    @scala.inline
+    def setPosition(value: Rectangle): Self = this.set("Position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("Position", js.undefined)
+    @scala.inline
+    def setProgramNumber(value: integerMin1Max2147483647): Self = this.set("ProgramNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgramNumber: Self = this.set("ProgramNumber", js.undefined)
+    @scala.inline
+    def setPsiControl(value: InputPsiControl): Self = this.set("PsiControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePsiControl: Self = this.set("PsiControl", js.undefined)
+    @scala.inline
+    def setTimecodeSource(value: InputTimecodeSource): Self = this.set("TimecodeSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimecodeSource: Self = this.set("TimecodeSource", js.undefined)
+    @scala.inline
+    def setTimecodeStart(value: stringMin11Max11Pattern01D20305D205D): Self = this.set("TimecodeStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimecodeStart: Self = this.set("TimecodeStart", js.undefined)
+    @scala.inline
+    def setVideoSelector(value: VideoSelector): Self = this.set("VideoSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoSelector: Self = this.set("VideoSelector", js.undefined)
+  }
+  
 }
 

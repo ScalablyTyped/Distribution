@@ -38,24 +38,50 @@ trait PullRequestTarget extends js.Object {
 
 object PullRequestTarget {
   @scala.inline
-  def apply(
-    destinationCommit: CommitId = null,
-    destinationReference: ReferenceName = null,
-    mergeBase: CommitId = null,
-    mergeMetadata: MergeMetadata = null,
-    repositoryName: RepositoryName = null,
-    sourceCommit: CommitId = null,
-    sourceReference: ReferenceName = null
-  ): PullRequestTarget = {
+  def apply(): PullRequestTarget = {
     val __obj = js.Dynamic.literal()
-    if (destinationCommit != null) __obj.updateDynamic("destinationCommit")(destinationCommit.asInstanceOf[js.Any])
-    if (destinationReference != null) __obj.updateDynamic("destinationReference")(destinationReference.asInstanceOf[js.Any])
-    if (mergeBase != null) __obj.updateDynamic("mergeBase")(mergeBase.asInstanceOf[js.Any])
-    if (mergeMetadata != null) __obj.updateDynamic("mergeMetadata")(mergeMetadata.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
-    if (sourceCommit != null) __obj.updateDynamic("sourceCommit")(sourceCommit.asInstanceOf[js.Any])
-    if (sourceReference != null) __obj.updateDynamic("sourceReference")(sourceReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullRequestTarget]
   }
+  @scala.inline
+  implicit class PullRequestTargetOps[Self <: PullRequestTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationCommit(value: CommitId): Self = this.set("destinationCommit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationCommit: Self = this.set("destinationCommit", js.undefined)
+    @scala.inline
+    def setDestinationReference(value: ReferenceName): Self = this.set("destinationReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationReference: Self = this.set("destinationReference", js.undefined)
+    @scala.inline
+    def setMergeBase(value: CommitId): Self = this.set("mergeBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeBase: Self = this.set("mergeBase", js.undefined)
+    @scala.inline
+    def setMergeMetadata(value: MergeMetadata): Self = this.set("mergeMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeMetadata: Self = this.set("mergeMetadata", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+    @scala.inline
+    def setSourceCommit(value: CommitId): Self = this.set("sourceCommit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCommit: Self = this.set("sourceCommit", js.undefined)
+    @scala.inline
+    def setSourceReference(value: ReferenceName): Self = this.set("sourceReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceReference: Self = this.set("sourceReference", js.undefined)
+  }
+  
 }
 

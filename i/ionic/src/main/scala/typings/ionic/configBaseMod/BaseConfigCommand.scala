@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 abstract class BaseConfigCommand () extends Command {
   def generateContext(inputs: CommandLineInputs, options: CommandLineOptions): ConfigContext = js.native
   def interpretValue(): js.Any = js.native
+  def interpretValue(v: js.UndefOr[scala.Nothing], expectJson: Boolean): js.Any = js.native
   def interpretValue(v: String): js.Any = js.native
   def interpretValue(v: String, expectJson: Boolean): js.Any = js.native
   def jsonStringify(v: js.Any): String = js.native

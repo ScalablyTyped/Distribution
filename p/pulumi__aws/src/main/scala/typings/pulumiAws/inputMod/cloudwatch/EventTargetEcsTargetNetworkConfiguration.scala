@@ -23,15 +23,36 @@ trait EventTargetEcsTargetNetworkConfiguration extends js.Object {
 
 object EventTargetEcsTargetNetworkConfiguration {
   @scala.inline
-  def apply(
-    subnets: Input[js.Array[Input[String]]],
-    assignPublicIp: Input[Boolean] = null,
-    securityGroups: Input[js.Array[Input[String]]] = null
-  ): EventTargetEcsTargetNetworkConfiguration = {
+  def apply(subnets: Input[js.Array[Input[String]]]): EventTargetEcsTargetNetworkConfiguration = {
     val __obj = js.Dynamic.literal(subnets = subnets.asInstanceOf[js.Any])
-    if (assignPublicIp != null) __obj.updateDynamic("assignPublicIp")(assignPublicIp.asInstanceOf[js.Any])
-    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTargetEcsTargetNetworkConfiguration]
   }
+  @scala.inline
+  implicit class EventTargetEcsTargetNetworkConfigurationOps[Self <: EventTargetEcsTargetNetworkConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubnetsVarargs(value: Input[String]*): Self = this.set("subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: Input[js.Array[Input[String]]]): Self = this.set("subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssignPublicIp(value: Input[Boolean]): Self = this.set("assignPublicIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignPublicIp: Self = this.set("assignPublicIp", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: Input[String]*): Self = this.set("securityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("securityGroups", js.undefined)
+  }
+  
 }
 

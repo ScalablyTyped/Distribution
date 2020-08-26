@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.ucb.Content
   * @since OOo 1.1.2
   */
+@js.native
 trait ODMAContent
   extends XCommandProcessor2
      with XComponent

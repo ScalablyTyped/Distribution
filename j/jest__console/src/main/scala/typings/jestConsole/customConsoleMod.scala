@@ -30,9 +30,9 @@ object customConsoleMod extends js.Object {
     def dirxml(firstArg: js.Any, args: js.Any*): Unit = js.native
     def error(firstArg: js.Any, args: js.Any*): Unit = js.native
     def getBuffer(): js.UndefOr[scala.Nothing] = js.native
-    def group(): Unit = js.native
+    def group(title: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     def group(title: String, args: js.Any*): Unit = js.native
-    def groupCollapsed(): Unit = js.native
+    def groupCollapsed(title: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     def groupCollapsed(title: String, args: js.Any*): Unit = js.native
     def info(firstArg: js.Any, args: js.Any*): Unit = js.native
     def log(firstArg: js.Any, args: js.Any*): Unit = js.native

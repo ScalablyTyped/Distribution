@@ -22,16 +22,34 @@ trait CreateProvisioningTemplateResponse extends js.Object {
 
 object CreateProvisioningTemplateResponse {
   @scala.inline
-  def apply(
-    defaultVersionId: js.UndefOr[TemplateVersionId] = js.undefined,
-    templateArn: TemplateArn = null,
-    templateName: TemplateName = null
-  ): CreateProvisioningTemplateResponse = {
+  def apply(): CreateProvisioningTemplateResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultVersionId)) __obj.updateDynamic("defaultVersionId")(defaultVersionId.get.asInstanceOf[js.Any])
-    if (templateArn != null) __obj.updateDynamic("templateArn")(templateArn.asInstanceOf[js.Any])
-    if (templateName != null) __obj.updateDynamic("templateName")(templateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProvisioningTemplateResponse]
   }
+  @scala.inline
+  implicit class CreateProvisioningTemplateResponseOps[Self <: CreateProvisioningTemplateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultVersionId(value: TemplateVersionId): Self = this.set("defaultVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultVersionId: Self = this.set("defaultVersionId", js.undefined)
+    @scala.inline
+    def setTemplateArn(value: TemplateArn): Self = this.set("templateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateArn: Self = this.set("templateArn", js.undefined)
+    @scala.inline
+    def setTemplateName(value: TemplateName): Self = this.set("templateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateName: Self = this.set("templateName", js.undefined)
+  }
+  
 }
 

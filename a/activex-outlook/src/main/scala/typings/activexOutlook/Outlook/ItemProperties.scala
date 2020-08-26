@@ -14,6 +14,12 @@ trait ItemProperties extends js.Object {
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Name: String, Type: OlUserPropertyType): ItemProperty = js.native
+  def Add(
+    Name: String,
+    Type: OlUserPropertyType,
+    AddToFolderFields: js.UndefOr[scala.Nothing],
+    DisplayFormat: js.Any
+  ): ItemProperty = js.native
   def Add(Name: String, Type: OlUserPropertyType, AddToFolderFields: js.Any): ItemProperty = js.native
   def Add(Name: String, Type: OlUserPropertyType, AddToFolderFields: js.Any, DisplayFormat: js.Any): ItemProperty = js.native
   def Item(Index: js.Any): ItemProperty = js.native

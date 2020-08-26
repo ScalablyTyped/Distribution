@@ -26,16 +26,9 @@ object deleteEventStreamCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DeleteEventStreamInput) = this()
-    /* CompleteClass */
-    override val input: DeleteEventStreamInput = js.native
     val middlewareStack: MiddlewareStack[DeleteEventStreamInput, DeleteEventStreamOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[DeleteEventStreamInput, DeleteEventStreamOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[DeleteEventStreamInput, DeleteEventStreamOutput] = js.native
   }

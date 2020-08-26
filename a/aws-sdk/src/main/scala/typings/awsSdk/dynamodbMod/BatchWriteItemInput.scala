@@ -19,15 +19,32 @@ trait BatchWriteItemInput extends js.Object {
 
 object BatchWriteItemInput {
   @scala.inline
-  def apply(
-    RequestItems: BatchWriteItemRequestMap,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = null,
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = null
-  ): BatchWriteItemInput = {
+  def apply(RequestItems: BatchWriteItemRequestMap): BatchWriteItemInput = {
     val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])
-    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
-    if (ReturnItemCollectionMetrics != null) __obj.updateDynamic("ReturnItemCollectionMetrics")(ReturnItemCollectionMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchWriteItemInput]
   }
+  @scala.inline
+  implicit class BatchWriteItemInputOps[Self <: BatchWriteItemInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequestItems(value: BatchWriteItemRequestMap): Self = this.set("RequestItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = this.set("ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnConsumedCapacity: Self = this.set("ReturnConsumedCapacity", js.undefined)
+    @scala.inline
+    def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = this.set("ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnItemCollectionMetrics: Self = this.set("ReturnItemCollectionMetrics", js.undefined)
+  }
+  
 }
 

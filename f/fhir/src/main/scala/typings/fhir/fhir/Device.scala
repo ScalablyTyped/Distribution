@@ -8,191 +8,236 @@ import scala.scalajs.js.annotation._
   * Item used in healthcare
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait Device extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait Device extends DomainResource {
   /**
     * Contains extended information for property 'expirationDate'.
     */
-  var _expirationDate: js.UndefOr[Element] = js.undefined
+  var _expirationDate: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'lotNumber'.
     */
-  var _lotNumber: js.UndefOr[Element] = js.undefined
+  var _lotNumber: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'manufactureDate'.
     */
-  var _manufactureDate: js.UndefOr[Element] = js.undefined
+  var _manufactureDate: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'manufacturer'.
     */
-  var _manufacturer: js.UndefOr[Element] = js.undefined
+  var _manufacturer: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'model'.
     */
-  var _model: js.UndefOr[Element] = js.undefined
+  var _model: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.undefined
+  var _url: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.undefined
+  var _version: js.UndefOr[Element] = js.native
   /**
     * Details for human/organization for support
     */
-  var contact: js.UndefOr[js.Array[ContactPoint]] = js.undefined
+  var contact: js.UndefOr[js.Array[ContactPoint]] = js.native
   /**
     * Date and time of expiry of this device (if applicable)
     */
-  var expirationDate: js.UndefOr[dateTime] = js.undefined
+  var expirationDate: js.UndefOr[dateTime] = js.native
   /**
     * Instance identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Where the resource is found
     */
-  var location: js.UndefOr[Reference] = js.undefined
+  var location: js.UndefOr[Reference] = js.native
   /**
     * Lot number of manufacture
     */
-  var lotNumber: js.UndefOr[String] = js.undefined
+  var lotNumber: js.UndefOr[String] = js.native
   /**
     * Date when the device was made
     */
-  var manufactureDate: js.UndefOr[dateTime] = js.undefined
+  var manufactureDate: js.UndefOr[dateTime] = js.native
   /**
     * Name of device manufacturer
     */
-  var manufacturer: js.UndefOr[String] = js.undefined
+  var manufacturer: js.UndefOr[String] = js.native
   /**
     * Model id assigned by the manufacturer
     */
-  var model: js.UndefOr[String] = js.undefined
+  var model: js.UndefOr[String] = js.native
   /**
     * Device notes and comments
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
+  var note: js.UndefOr[js.Array[Annotation]] = js.native
   /**
     * Organization responsible for device
     */
-  var owner: js.UndefOr[Reference] = js.undefined
+  var owner: js.UndefOr[Reference] = js.native
   /**
     * Patient to whom Device is affixed
     */
-  var patient: js.UndefOr[Reference] = js.undefined
+  var patient: js.UndefOr[Reference] = js.native
   /**
     * Safety Characteristics of Device
     */
-  var safety: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var safety: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * active | inactive | entered-in-error | unknown
     */
-  var status: js.UndefOr[code] = js.undefined
+  var status: js.UndefOr[code] = js.native
   /**
     * What kind of device this is
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.undefined
+  var `type`: js.UndefOr[CodeableConcept] = js.native
   /**
     * Unique Device Identifier (UDI) Barcode string
     */
-  var udi: js.UndefOr[DeviceUdi] = js.undefined
+  var udi: js.UndefOr[DeviceUdi] = js.native
   /**
     * Network address to contact device
     */
-  var url: js.UndefOr[uri] = js.undefined
+  var url: js.UndefOr[uri] = js.native
   /**
     * Version number (i.e. software)
     */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
 }
 
 object Device {
   @scala.inline
-  def apply(
-    _expirationDate: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _lotNumber: Element = null,
-    _manufactureDate: Element = null,
-    _manufacturer: Element = null,
-    _model: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    _url: Element = null,
-    _version: Element = null,
-    contact: js.Array[ContactPoint] = null,
-    contained: js.Array[Resource] = null,
-    expirationDate: dateTime = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    location: Reference = null,
-    lotNumber: String = null,
-    manufactureDate: dateTime = null,
-    manufacturer: String = null,
-    meta: Meta = null,
-    model: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    note: js.Array[Annotation] = null,
-    owner: Reference = null,
-    patient: Reference = null,
-    resourceType: code = null,
-    safety: js.Array[CodeableConcept] = null,
-    status: code = null,
-    text: Narrative = null,
-    `type`: CodeableConcept = null,
-    udi: DeviceUdi = null,
-    url: uri = null,
-    version: String = null
-  ): Device = {
+  def apply(): Device = {
     val __obj = js.Dynamic.literal()
-    if (_expirationDate != null) __obj.updateDynamic("_expirationDate")(_expirationDate.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_lotNumber != null) __obj.updateDynamic("_lotNumber")(_lotNumber.asInstanceOf[js.Any])
-    if (_manufactureDate != null) __obj.updateDynamic("_manufactureDate")(_manufactureDate.asInstanceOf[js.Any])
-    if (_manufacturer != null) __obj.updateDynamic("_manufacturer")(_manufacturer.asInstanceOf[js.Any])
-    if (_model != null) __obj.updateDynamic("_model")(_model.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (_url != null) __obj.updateDynamic("_url")(_url.asInstanceOf[js.Any])
-    if (_version != null) __obj.updateDynamic("_version")(_version.asInstanceOf[js.Any])
-    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (lotNumber != null) __obj.updateDynamic("lotNumber")(lotNumber.asInstanceOf[js.Any])
-    if (manufactureDate != null) __obj.updateDynamic("manufactureDate")(manufactureDate.asInstanceOf[js.Any])
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (patient != null) __obj.updateDynamic("patient")(patient.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (safety != null) __obj.updateDynamic("safety")(safety.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (udi != null) __obj.updateDynamic("udi")(udi.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
+  @scala.inline
+  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_expirationDate(value: Element): Self = this.set("_expirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_expirationDate: Self = this.set("_expirationDate", js.undefined)
+    @scala.inline
+    def set_lotNumber(value: Element): Self = this.set("_lotNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_lotNumber: Self = this.set("_lotNumber", js.undefined)
+    @scala.inline
+    def set_manufactureDate(value: Element): Self = this.set("_manufactureDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_manufactureDate: Self = this.set("_manufactureDate", js.undefined)
+    @scala.inline
+    def set_manufacturer(value: Element): Self = this.set("_manufacturer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_manufacturer: Self = this.set("_manufacturer", js.undefined)
+    @scala.inline
+    def set_model(value: Element): Self = this.set("_model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_model: Self = this.set("_model", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_url: Self = this.set("_url", js.undefined)
+    @scala.inline
+    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_version: Self = this.set("_version", js.undefined)
+    @scala.inline
+    def setContactVarargs(value: ContactPoint*): Self = this.set("contact", js.Array(value :_*))
+    @scala.inline
+    def setContact(value: js.Array[ContactPoint]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContact: Self = this.set("contact", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: dateTime): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setLocation(value: Reference): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setLotNumber(value: String): Self = this.set("lotNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLotNumber: Self = this.set("lotNumber", js.undefined)
+    @scala.inline
+    def setManufactureDate(value: dateTime): Self = this.set("manufactureDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManufactureDate: Self = this.set("manufactureDate", js.undefined)
+    @scala.inline
+    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    @scala.inline
+    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    @scala.inline
+    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNote: Self = this.set("note", js.undefined)
+    @scala.inline
+    def setOwner(value: Reference): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatient: Self = this.set("patient", js.undefined)
+    @scala.inline
+    def setSafetyVarargs(value: CodeableConcept*): Self = this.set("safety", js.Array(value :_*))
+    @scala.inline
+    def setSafety(value: js.Array[CodeableConcept]): Self = this.set("safety", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSafety: Self = this.set("safety", js.undefined)
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUdi(value: DeviceUdi): Self = this.set("udi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUdi: Self = this.set("udi", js.undefined)
+    @scala.inline
+    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

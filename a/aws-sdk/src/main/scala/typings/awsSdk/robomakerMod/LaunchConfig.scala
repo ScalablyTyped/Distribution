@@ -30,18 +30,38 @@ trait LaunchConfig extends js.Object {
 
 object LaunchConfig {
   @scala.inline
-  def apply(
-    launchFile: Command,
-    packageName: Command,
-    environmentVariables: EnvironmentVariableMap = null,
-    portForwardingConfig: PortForwardingConfig = null,
-    streamUI: js.UndefOr[Boolean] = js.undefined
-  ): LaunchConfig = {
+  def apply(launchFile: Command, packageName: Command): LaunchConfig = {
     val __obj = js.Dynamic.literal(launchFile = launchFile.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
-    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
-    if (portForwardingConfig != null) __obj.updateDynamic("portForwardingConfig")(portForwardingConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(streamUI)) __obj.updateDynamic("streamUI")(streamUI.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchConfig]
   }
+  @scala.inline
+  implicit class LaunchConfigOps[Self <: LaunchConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLaunchFile(value: Command): Self = this.set("launchFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPackageName(value: Command): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnvironmentVariables(value: EnvironmentVariableMap): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    @scala.inline
+    def setPortForwardingConfig(value: PortForwardingConfig): Self = this.set("portForwardingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortForwardingConfig: Self = this.set("portForwardingConfig", js.undefined)
+    @scala.inline
+    def setStreamUI(value: Boolean): Self = this.set("streamUI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamUI: Self = this.set("streamUI", js.undefined)
+  }
+  
 }
 

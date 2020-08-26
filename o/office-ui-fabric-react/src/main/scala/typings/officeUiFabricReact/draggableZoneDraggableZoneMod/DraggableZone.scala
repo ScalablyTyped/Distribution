@@ -54,7 +54,7 @@ class DraggableZone protected ()
   var _onMouseUp: js.Any = js.native
   var _onTouchEnd: js.Any = js.native
   var _onTouchStart: js.Any = js.native
-  var _touchId: js.UndefOr[js.Any] = js.native
+  var _touchId: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MDraggableZone(prevProps: IDraggableZoneProps): Unit = js.native
   @JSName("componentWillUnmount")

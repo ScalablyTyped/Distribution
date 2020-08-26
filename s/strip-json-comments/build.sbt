@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "strip-json-comments"
-version := "3.1.0-fd8973"
-scalaVersion := "2.13.2"
+version := "3.1.1-9e4224"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

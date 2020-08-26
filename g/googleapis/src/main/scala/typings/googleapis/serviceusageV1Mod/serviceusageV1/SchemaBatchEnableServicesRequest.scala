@@ -23,10 +23,28 @@ trait SchemaBatchEnableServicesRequest extends js.Object {
 
 object SchemaBatchEnableServicesRequest {
   @scala.inline
-  def apply(serviceIds: js.Array[String] = null): SchemaBatchEnableServicesRequest = {
+  def apply(): SchemaBatchEnableServicesRequest = {
     val __obj = js.Dynamic.literal()
-    if (serviceIds != null) __obj.updateDynamic("serviceIds")(serviceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBatchEnableServicesRequest]
   }
+  @scala.inline
+  implicit class SchemaBatchEnableServicesRequestOps[Self <: SchemaBatchEnableServicesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceIdsVarargs(value: String*): Self = this.set("serviceIds", js.Array(value :_*))
+    @scala.inline
+    def setServiceIds(value: js.Array[String]): Self = this.set("serviceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceIds: Self = this.set("serviceIds", js.undefined)
+  }
+  
 }
 

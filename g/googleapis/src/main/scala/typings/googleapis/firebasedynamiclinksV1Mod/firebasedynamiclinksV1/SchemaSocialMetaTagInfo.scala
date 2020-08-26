@@ -26,12 +26,34 @@ trait SchemaSocialMetaTagInfo extends js.Object {
 
 object SchemaSocialMetaTagInfo {
   @scala.inline
-  def apply(socialDescription: String = null, socialImageLink: String = null, socialTitle: String = null): SchemaSocialMetaTagInfo = {
+  def apply(): SchemaSocialMetaTagInfo = {
     val __obj = js.Dynamic.literal()
-    if (socialDescription != null) __obj.updateDynamic("socialDescription")(socialDescription.asInstanceOf[js.Any])
-    if (socialImageLink != null) __obj.updateDynamic("socialImageLink")(socialImageLink.asInstanceOf[js.Any])
-    if (socialTitle != null) __obj.updateDynamic("socialTitle")(socialTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSocialMetaTagInfo]
   }
+  @scala.inline
+  implicit class SchemaSocialMetaTagInfoOps[Self <: SchemaSocialMetaTagInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSocialDescription(value: String): Self = this.set("socialDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocialDescription: Self = this.set("socialDescription", js.undefined)
+    @scala.inline
+    def setSocialImageLink(value: String): Self = this.set("socialImageLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocialImageLink: Self = this.set("socialImageLink", js.undefined)
+    @scala.inline
+    def setSocialTitle(value: String): Self = this.set("socialTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocialTitle: Self = this.set("socialTitle", js.undefined)
+  }
+  
 }
 

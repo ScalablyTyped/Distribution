@@ -11,5 +11,10 @@ import scala.scalajs.js.annotation._
 trait TProtocolConstructor
   extends Instantiable1[/* trans */ TTransport, TProtocol]
      with Instantiable2[/* trans */ TTransport, /* strictRead */ Boolean, TProtocol]
-     with Instantiable3[/* trans */ TTransport, /* strictRead */ Boolean, /* strictWrite */ Boolean, TProtocol]
+     with Instantiable3[
+      /* trans */ TTransport, 
+      js.UndefOr[/* strictRead */ Boolean], 
+      /* strictWrite */ Boolean, 
+      TProtocol
+    ]
 

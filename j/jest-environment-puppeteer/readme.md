@@ -10,9 +10,9 @@ Puppeteer environment for Jest.
 | ------------------ | :-------------: |
 | Full name          | jest-environment-puppeteer |
 | Keywords           | jest, jest-environment, puppeteer, jest-puppeteer, chromeless, chrome-headless |
-| # releases         | 31 |
-| # dependents       | 8 |
-| # downloads        | 3625801 |
+| # releases         | 33 |
+| # dependents       | 9 |
+| # downloads        | 3883914 |
 | # stars            | 0 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ace-builds
 
-Typings are for version 1.4.8
+Typings are for version 1.4.12
 
 ## Library description:
 Ace (Ajax.org Cloud9 Editor)
@@ -10,9 +10,9 @@ Ace (Ajax.org Cloud9 Editor)
 | ------------------ | :-------------: |
 | Full name          | ace-builds |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 113 |
-| # downloads        | 3005722 |
+| # releases         | 12 |
+| # dependents       | 131 |
+| # downloads        | 4657287 |
 | # stars            | 2 |
 
 ## Links

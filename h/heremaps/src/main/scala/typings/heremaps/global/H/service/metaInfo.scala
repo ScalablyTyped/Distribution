@@ -40,7 +40,17 @@ object metaInfo extends js.Object {
     def this(service: typings.heremaps.H.service.metaInfo.Service, opt_params: ServiceParameters) = this()
     def this(
       service: typings.heremaps.H.service.MapTileService,
+      opt_params: js.UndefOr[scala.Nothing],
+      opt_options: typings.heremaps.H.service.metaInfo.TileProvider.Options
+    ) = this()
+    def this(
+      service: typings.heremaps.H.service.MapTileService,
       opt_params: ServiceParameters,
+      opt_options: typings.heremaps.H.service.metaInfo.TileProvider.Options
+    ) = this()
+    def this(
+      service: typings.heremaps.H.service.metaInfo.Service,
+      opt_params: js.UndefOr[scala.Nothing],
       opt_options: typings.heremaps.H.service.metaInfo.TileProvider.Options
     ) = this()
     def this(

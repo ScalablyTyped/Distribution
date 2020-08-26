@@ -33,20 +33,44 @@ trait SchemaWorkflowNode extends js.Object {
 
 object SchemaWorkflowNode {
   @scala.inline
-  def apply(
-    error: String = null,
-    jobId: String = null,
-    prerequisiteStepIds: js.Array[String] = null,
-    state: String = null,
-    stepId: String = null
-  ): SchemaWorkflowNode = {
+  def apply(): SchemaWorkflowNode = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (prerequisiteStepIds != null) __obj.updateDynamic("prerequisiteStepIds")(prerequisiteStepIds.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (stepId != null) __obj.updateDynamic("stepId")(stepId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWorkflowNode]
   }
+  @scala.inline
+  implicit class SchemaWorkflowNodeOps[Self <: SchemaWorkflowNode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setPrerequisiteStepIdsVarargs(value: String*): Self = this.set("prerequisiteStepIds", js.Array(value :_*))
+    @scala.inline
+    def setPrerequisiteStepIds(value: js.Array[String]): Self = this.set("prerequisiteStepIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrerequisiteStepIds: Self = this.set("prerequisiteStepIds", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStepId(value: String): Self = this.set("stepId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepId: Self = this.set("stepId", js.undefined)
+  }
+  
 }
 

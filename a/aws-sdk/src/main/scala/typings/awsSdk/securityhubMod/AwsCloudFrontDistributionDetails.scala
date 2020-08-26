@@ -38,24 +38,50 @@ trait AwsCloudFrontDistributionDetails extends js.Object {
 
 object AwsCloudFrontDistributionDetails {
   @scala.inline
-  def apply(
-    DomainName: NonEmptyString = null,
-    ETag: NonEmptyString = null,
-    LastModifiedTime: NonEmptyString = null,
-    Logging: AwsCloudFrontDistributionLogging = null,
-    Origins: AwsCloudFrontDistributionOrigins = null,
-    Status: NonEmptyString = null,
-    WebAclId: NonEmptyString = null
-  ): AwsCloudFrontDistributionDetails = {
+  def apply(): AwsCloudFrontDistributionDetails = {
     val __obj = js.Dynamic.literal()
-    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (Logging != null) __obj.updateDynamic("Logging")(Logging.asInstanceOf[js.Any])
-    if (Origins != null) __obj.updateDynamic("Origins")(Origins.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (WebAclId != null) __obj.updateDynamic("WebAclId")(WebAclId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsCloudFrontDistributionDetails]
   }
+  @scala.inline
+  implicit class AwsCloudFrontDistributionDetailsOps[Self <: AwsCloudFrontDistributionDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: NonEmptyString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    @scala.inline
+    def setETag(value: NonEmptyString): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("ETag", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: NonEmptyString): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setLogging(value: AwsCloudFrontDistributionLogging): Self = this.set("Logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("Logging", js.undefined)
+    @scala.inline
+    def setOrigins(value: AwsCloudFrontDistributionOrigins): Self = this.set("Origins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigins: Self = this.set("Origins", js.undefined)
+    @scala.inline
+    def setStatus(value: NonEmptyString): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setWebAclId(value: NonEmptyString): Self = this.set("WebAclId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebAclId: Self = this.set("WebAclId", js.undefined)
+  }
+  
 }
 

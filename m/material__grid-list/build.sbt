@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "material__grid-list"
-version := "0.35-dt-20200515Z-a3d2d9"
-scalaVersion := "2.13.2"
+version := "0.35-dt-20200515Z-1e5c6a"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "material__base" % "0.35-dt-20200515Z-5bcbd5",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "material__base" % "7.0.0-39ae3e",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

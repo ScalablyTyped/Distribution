@@ -83,9 +83,11 @@ trait sidebar extends baseview {
   def closeAll(): Unit = js.native
   def collapse(): Unit = js.native
   def copy(sid: String, tindex: Double): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Double = js.native
   def copy(sid: String, tindex: Double, tobj: baseview): Double = js.native
   def copy(sid: String, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: baseview): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
   def count(): Double = js.native
@@ -95,9 +97,11 @@ trait sidebar extends baseview {
   def exists(id: Double): Boolean = js.native
   def expand(): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate): Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: String): Unit = js.native
+  def filter(text: String, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: String, value: String): Unit = js.native
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
   def find(criterion: WebixCallback): js.Any = js.native
@@ -154,6 +158,7 @@ trait sidebar extends baseview {
   def isSelected(id: String): Boolean = js.native
   def isSelected(id: Double): Boolean = js.native
   def load(url: String): js.Promise[_] = js.native
+  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
   def load(url: String, `type`: String): js.Promise[_] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
   def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[_] = js.native
@@ -162,6 +167,7 @@ trait sidebar extends baseview {
   def locate(e: Event): String | Double = js.native
   def mapEvent(map: js.Any): Unit = js.native
   def move(sid: String, tindex: Double): String = js.native
+  def move(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
   def moveSelection(direction: String): Unit = js.native
@@ -190,6 +196,7 @@ trait sidebar extends baseview {
   def select(id: String, preserve: Boolean): Unit = js.native
   def select(id: js.Array[_], preserve: Boolean): Unit = js.native
   def selectAll(): Unit = js.native
+  def selectAll(from: js.UndefOr[scala.Nothing], to: String): Unit = js.native
   def selectAll(from: String): Unit = js.native
   def selectAll(from: String, to: String): Unit = js.native
   def serialize(): js.Array[_] = js.native
@@ -199,6 +206,7 @@ trait sidebar extends baseview {
   def showItem(id: String): Unit = js.native
   def showItem(id: Double): Unit = js.native
   def sort(by: String): Unit = js.native
+  def sort(by: String, dir: js.UndefOr[scala.Nothing], as: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native

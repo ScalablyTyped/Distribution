@@ -10,6 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DropdownOption extends js.Object {
   /**
     * Overflow constraint boundary of the dropdown menu.
@@ -18,20 +19,20 @@ trait DropdownOption extends js.Object {
     *
     * @default "scrollParent"
     */
-  var boundary: js.UndefOr[Boundary | HTMLElement] = js.undefined
+  var boundary: js.UndefOr[Boundary | HTMLElement] = js.native
   /**
     * By default, we use Popper.js for dynamic positioning. Disable this with 'static'.
     *
     * @default "dynamic"
     */
-  var display: js.UndefOr[dynamic | static] = js.undefined
+  var display: js.UndefOr[dynamic | static] = js.native
   /**
     * Allow Dropdown to flip in case of an overlapping on the reference element.
     * For more information refer to Popper.js's flip docs.
     *
     * @default true
     */
-  var flip: js.UndefOr[Boolean] = js.undefined
+  var flip: js.UndefOr[Boolean] = js.native
   /**
     * Offset of the dropdown relative to its target.
     * For more information refer to Popper.js's offset docs.
@@ -40,32 +41,56 @@ trait DropdownOption extends js.Object {
     */
   var offset: js.UndefOr[
     Double | String | (js.ThisFunction1[/* this */ this.type, /* offset */ OffsetsExtend, OffsetsExtend])
-  ] = js.undefined
+  ] = js.native
   /**
     * Reference element of the dropdown menu. Accepts the values of 'toggle', 'parent', or an HTMLElement reference.
     * For more information refer to Popper.js's referenceObject docs.
     *
     * @default "toggle"
     */
-  var reference: js.UndefOr[toggle | parent | HTMLElement] = js.undefined
+  var reference: js.UndefOr[toggle | parent | HTMLElement] = js.native
 }
 
 object DropdownOption {
   @scala.inline
-  def apply(
-    boundary: Boundary | HTMLElement = null,
-    display: dynamic | static = null,
-    flip: js.UndefOr[Boolean] = js.undefined,
-    offset: Double | String | (js.ThisFunction1[DropdownOption, /* offset */ OffsetsExtend, OffsetsExtend]) = null,
-    reference: toggle | parent | HTMLElement = null
-  ): DropdownOption = {
+  def apply(): DropdownOption = {
     val __obj = js.Dynamic.literal()
-    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownOption]
   }
+  @scala.inline
+  implicit class DropdownOptionOps[Self <: DropdownOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundary(value: Boundary | HTMLElement): Self = this.set("boundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundary: Self = this.set("boundary", js.undefined)
+    @scala.inline
+    def setDisplay(value: dynamic | static): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setFlip(value: Boolean): Self = this.set("flip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlip: Self = this.set("flip", js.undefined)
+    @scala.inline
+    def setOffset(
+      value: Double | String | (js.ThisFunction1[DropdownOption, /* offset */ OffsetsExtend, OffsetsExtend])
+    ): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setReference(value: toggle | parent | HTMLElement): Self = this.set("reference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReference: Self = this.set("reference", js.undefined)
+  }
+  
 }
 

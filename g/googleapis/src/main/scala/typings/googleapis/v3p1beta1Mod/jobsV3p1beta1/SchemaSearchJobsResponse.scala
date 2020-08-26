@@ -70,30 +70,68 @@ trait SchemaSearchJobsResponse extends js.Object {
 
 object SchemaSearchJobsResponse {
   @scala.inline
-  def apply(
-    broadenedQueryJobsCount: js.UndefOr[Double] = js.undefined,
-    estimatedTotalSize: js.UndefOr[Double] = js.undefined,
-    histogramQueryResults: js.Array[SchemaHistogramQueryResult] = null,
-    histogramResults: SchemaHistogramResults = null,
-    locationFilters: js.Array[SchemaLocation] = null,
-    matchingJobs: js.Array[SchemaMatchingJob] = null,
-    metadata: SchemaResponseMetadata = null,
-    nextPageToken: String = null,
-    spellCorrection: SchemaSpellingCorrection = null,
-    totalSize: js.UndefOr[Double] = js.undefined
-  ): SchemaSearchJobsResponse = {
+  def apply(): SchemaSearchJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(broadenedQueryJobsCount)) __obj.updateDynamic("broadenedQueryJobsCount")(broadenedQueryJobsCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(estimatedTotalSize)) __obj.updateDynamic("estimatedTotalSize")(estimatedTotalSize.get.asInstanceOf[js.Any])
-    if (histogramQueryResults != null) __obj.updateDynamic("histogramQueryResults")(histogramQueryResults.asInstanceOf[js.Any])
-    if (histogramResults != null) __obj.updateDynamic("histogramResults")(histogramResults.asInstanceOf[js.Any])
-    if (locationFilters != null) __obj.updateDynamic("locationFilters")(locationFilters.asInstanceOf[js.Any])
-    if (matchingJobs != null) __obj.updateDynamic("matchingJobs")(matchingJobs.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (spellCorrection != null) __obj.updateDynamic("spellCorrection")(spellCorrection.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalSize)) __obj.updateDynamic("totalSize")(totalSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchJobsResponse]
   }
+  @scala.inline
+  implicit class SchemaSearchJobsResponseOps[Self <: SchemaSearchJobsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBroadenedQueryJobsCount(value: Double): Self = this.set("broadenedQueryJobsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBroadenedQueryJobsCount: Self = this.set("broadenedQueryJobsCount", js.undefined)
+    @scala.inline
+    def setEstimatedTotalSize(value: Double): Self = this.set("estimatedTotalSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedTotalSize: Self = this.set("estimatedTotalSize", js.undefined)
+    @scala.inline
+    def setHistogramQueryResultsVarargs(value: SchemaHistogramQueryResult*): Self = this.set("histogramQueryResults", js.Array(value :_*))
+    @scala.inline
+    def setHistogramQueryResults(value: js.Array[SchemaHistogramQueryResult]): Self = this.set("histogramQueryResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistogramQueryResults: Self = this.set("histogramQueryResults", js.undefined)
+    @scala.inline
+    def setHistogramResults(value: SchemaHistogramResults): Self = this.set("histogramResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistogramResults: Self = this.set("histogramResults", js.undefined)
+    @scala.inline
+    def setLocationFiltersVarargs(value: SchemaLocation*): Self = this.set("locationFilters", js.Array(value :_*))
+    @scala.inline
+    def setLocationFilters(value: js.Array[SchemaLocation]): Self = this.set("locationFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationFilters: Self = this.set("locationFilters", js.undefined)
+    @scala.inline
+    def setMatchingJobsVarargs(value: SchemaMatchingJob*): Self = this.set("matchingJobs", js.Array(value :_*))
+    @scala.inline
+    def setMatchingJobs(value: js.Array[SchemaMatchingJob]): Self = this.set("matchingJobs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchingJobs: Self = this.set("matchingJobs", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaResponseMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setSpellCorrection(value: SchemaSpellingCorrection): Self = this.set("spellCorrection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellCorrection: Self = this.set("spellCorrection", js.undefined)
+    @scala.inline
+    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
+  }
+  
 }
 

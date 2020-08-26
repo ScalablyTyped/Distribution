@@ -263,11 +263,6 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ HTMLDivPosition, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
-    obj: HTMLDocument,
-    event: onactivate | onafterupdate | onbeforeactivate | onbeforedeactivate | onbeforeeditfocus | onbeforeupdate | oncellchange | onclick | oncontextmenu | oncontrolselect | ondataavailable | ondatasetchanged | ondatasetcomplete | ondblclick | ondeactivate | ondragstart | onerrorupdate | onfocusin | onfocusout | onhelp | onkeydown | onkeypress | onkeyup | onmousedown | onmousemove | onmouseout | onmouseover | onmouseup | onmousewheel | onpropertychange | onreadystatechange | onrowenter | onrowexit | onrowsdelete | onrowsinserted | onselectionchange | onselectstart | onstop,
-    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  def on(
     obj: HTMLEmbed,
     event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLEmbed, /* parameter */ js.Object, Unit]
@@ -429,11 +424,6 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ HTMLOListElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
-    obj: HTMLObjectElement,
-    event: onafterupdate | onbeforeupdate | oncellchange | ondataavailable | ondatasetchanged | ondatasetcomplete | onerror | onerrorupdate | onreadystatechange | onrowenter | onrowexit | onrowsdelete | onrowsinserted,
-    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  def on(
     obj: HTMLOptionButtonElement,
     event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLOptionButtonElement, /* parameter */ js.Object, Unit]
@@ -565,19 +555,9 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   def on(
     obj: HTMLWindow2,
-    event: onafterprint | onbeforeprint | onbeforeunload | onblur | onfocus | onhelp | onload | onresize | onscroll | onunload,
-    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  def on(
-    obj: HTMLWindow2,
     event: onerror,
     argNames: js.Tuple3[description, url, line],
     handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ Description, Unit]
-  ): Unit = js.native
-  def on(
-    obj: HTMLWindowProxy,
-    event: onafterprint | onbeforeprint | onbeforeunload | onblur | onfocus | onhelp | onload | onresize | onscroll | onunload,
-    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLWindowProxy,
@@ -594,11 +574,6 @@ trait ActiveXObject extends js.Object {
     obj: HTMLWndSelectElement,
     event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ js.Any,
     handler: js.ThisFunction1[/* this */ HTMLWndSelectElement, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  def on(
-    obj: OldHTMLDocument,
-    event: onactivate | onafterupdate | onbeforeactivate | onbeforedeactivate | onbeforeeditfocus | onbeforeupdate | oncellchange | onclick | oncontextmenu | oncontrolselect | ondataavailable | ondatasetchanged | ondatasetcomplete | ondblclick | ondeactivate | ondragstart | onerrorupdate | onfocusin | onfocusout | onhelp | onkeydown | onkeypress | onkeyup | onmousedown | onmousemove | onmouseout | onmouseover | onmouseup | onmousewheel | onpropertychange | onreadystatechange | onrowenter | onrowexit | onrowsdelete | onrowsinserted | onselectionchange | onselectstart | onstop,
-    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: OldHTMLFormElement,
@@ -747,16 +722,388 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ htmlInputImage, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
+  def on_onactivate(
+    obj: HTMLDocument,
+    event: onactivate,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onactivate(
+    obj: OldHTMLDocument,
+    event: onactivate,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onafterprint(
+    obj: HTMLWindow2,
+    event: onafterprint,
+    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onafterprint(
+    obj: HTMLWindowProxy,
+    event: onafterprint,
+    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onafterupdate(
+    obj: HTMLDocument,
+    event: onafterupdate,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onafterupdate(
+    obj: HTMLObjectElement,
+    event: onafterupdate,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onafterupdate(
+    obj: OldHTMLDocument,
+    event: onafterupdate,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforeactivate(
+    obj: HTMLDocument,
+    event: onbeforeactivate,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforeactivate(
+    obj: OldHTMLDocument,
+    event: onbeforeactivate,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforedeactivate(
+    obj: HTMLDocument,
+    event: onbeforedeactivate,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforedeactivate(
+    obj: OldHTMLDocument,
+    event: onbeforedeactivate,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforeeditfocus(
+    obj: HTMLDocument,
+    event: onbeforeeditfocus,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforeeditfocus(
+    obj: OldHTMLDocument,
+    event: onbeforeeditfocus,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforeprint(
+    obj: HTMLWindow2,
+    event: onbeforeprint,
+    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforeprint(
+    obj: HTMLWindowProxy,
+    event: onbeforeprint,
+    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforeunload(
+    obj: HTMLWindow2,
+    event: onbeforeunload,
+    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforeunload(
+    obj: HTMLWindowProxy,
+    event: onbeforeunload,
+    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforeupdate(
+    obj: HTMLDocument,
+    event: onbeforeupdate,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforeupdate(
+    obj: HTMLObjectElement,
+    event: onbeforeupdate,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onbeforeupdate(
+    obj: OldHTMLDocument,
+    event: onbeforeupdate,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onblur(
+    obj: HTMLWindow2,
+    event: onblur,
+    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onblur(
+    obj: HTMLWindowProxy,
+    event: onblur,
+    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_oncellchange(
+    obj: HTMLDocument,
+    event: oncellchange,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_oncellchange(
+    obj: HTMLObjectElement,
+    event: oncellchange,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_oncellchange(
+    obj: OldHTMLDocument,
+    event: oncellchange,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onclick(
+    obj: HTMLDocument,
+    event: onclick,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onclick(
+    obj: OldHTMLDocument,
+    event: onclick,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
   def on_onclick(
     obj: Scriptlet,
     event: onclick,
     handler: js.ThisFunction1[/* this */ Scriptlet, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
+  def on_oncontextmenu(
+    obj: HTMLDocument,
+    event: oncontextmenu,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_oncontextmenu(
+    obj: OldHTMLDocument,
+    event: oncontextmenu,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_oncontrolselect(
+    obj: HTMLDocument,
+    event: oncontrolselect,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_oncontrolselect(
+    obj: OldHTMLDocument,
+    event: oncontrolselect,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondataavailable(
+    obj: HTMLDocument,
+    event: ondataavailable,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondataavailable(
+    obj: HTMLObjectElement,
+    event: ondataavailable,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondataavailable(
+    obj: OldHTMLDocument,
+    event: ondataavailable,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondatasetchanged(
+    obj: HTMLDocument,
+    event: ondatasetchanged,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondatasetchanged(
+    obj: HTMLObjectElement,
+    event: ondatasetchanged,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondatasetchanged(
+    obj: OldHTMLDocument,
+    event: ondatasetchanged,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondatasetcomplete(
+    obj: HTMLDocument,
+    event: ondatasetcomplete,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondatasetcomplete(
+    obj: HTMLObjectElement,
+    event: ondatasetcomplete,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondatasetcomplete(
+    obj: OldHTMLDocument,
+    event: ondatasetcomplete,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondblclick(
+    obj: HTMLDocument,
+    event: ondblclick,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondblclick(
+    obj: OldHTMLDocument,
+    event: ondblclick,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
   def on_ondblclick(
     obj: Scriptlet,
     event: ondblclick,
     handler: js.ThisFunction1[/* this */ Scriptlet, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondeactivate(
+    obj: HTMLDocument,
+    event: ondeactivate,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondeactivate(
+    obj: OldHTMLDocument,
+    event: ondeactivate,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondragstart(
+    obj: HTMLDocument,
+    event: ondragstart,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_ondragstart(
+    obj: OldHTMLDocument,
+    event: ondragstart,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onerror(
+    obj: HTMLObjectElement,
+    event: onerror,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onerrorupdate(
+    obj: HTMLDocument,
+    event: onerrorupdate,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onerrorupdate(
+    obj: HTMLObjectElement,
+    event: onerrorupdate,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onerrorupdate(
+    obj: OldHTMLDocument,
+    event: onerrorupdate,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onfocus(
+    obj: HTMLWindow2,
+    event: onfocus,
+    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onfocus(
+    obj: HTMLWindowProxy,
+    event: onfocus,
+    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onfocusin(
+    obj: HTMLDocument,
+    event: onfocusin,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onfocusin(
+    obj: OldHTMLDocument,
+    event: onfocusin,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onfocusout(
+    obj: HTMLDocument,
+    event: onfocusout,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onfocusout(
+    obj: OldHTMLDocument,
+    event: onfocusout,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onhelp(
+    obj: HTMLDocument,
+    event: onhelp,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onhelp(
+    obj: HTMLWindow2,
+    event: onhelp,
+    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onhelp(
+    obj: HTMLWindowProxy,
+    event: onhelp,
+    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onhelp(
+    obj: OldHTMLDocument,
+    event: onhelp,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onkeydown(
+    obj: HTMLDocument,
+    event: onkeydown,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onkeydown(
+    obj: OldHTMLDocument,
+    event: onkeydown,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_onkeydown(
@@ -766,15 +1113,63 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   @JSName("on")
   def on_onkeypress(
+    obj: HTMLDocument,
+    event: onkeypress,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onkeypress(
+    obj: OldHTMLDocument,
+    event: onkeypress,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onkeypress(
     obj: Scriptlet,
     event: onkeypress,
     handler: js.ThisFunction1[/* this */ Scriptlet, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_onkeyup(
+    obj: HTMLDocument,
+    event: onkeyup,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onkeyup(
+    obj: OldHTMLDocument,
+    event: onkeyup,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onkeyup(
     obj: Scriptlet,
     event: onkeyup,
     handler: js.ThisFunction1[/* this */ Scriptlet, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onload(
+    obj: HTMLWindow2,
+    event: onload,
+    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onload(
+    obj: HTMLWindowProxy,
+    event: onload,
+    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onmousedown(
+    obj: HTMLDocument,
+    event: onmousedown,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onmousedown(
+    obj: OldHTMLDocument,
+    event: onmousedown,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_onmousedown(
@@ -784,9 +1179,57 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   @JSName("on")
   def on_onmousemove(
+    obj: HTMLDocument,
+    event: onmousemove,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onmousemove(
+    obj: OldHTMLDocument,
+    event: onmousemove,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onmousemove(
     obj: Scriptlet,
     event: onmousemove,
     handler: js.ThisFunction1[/* this */ Scriptlet, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onmouseout(
+    obj: HTMLDocument,
+    event: onmouseout,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onmouseout(
+    obj: OldHTMLDocument,
+    event: onmouseout,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onmouseover(
+    obj: HTMLDocument,
+    event: onmouseover,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onmouseover(
+    obj: OldHTMLDocument,
+    event: onmouseover,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onmouseup(
+    obj: HTMLDocument,
+    event: onmouseup,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onmouseup(
+    obj: OldHTMLDocument,
+    event: onmouseup,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_onmouseup(
@@ -795,10 +1238,52 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ Scriptlet, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
+  def on_onmousewheel(
+    obj: HTMLDocument,
+    event: onmousewheel,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onmousewheel(
+    obj: OldHTMLDocument,
+    event: onmousewheel,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onpropertychange(
+    obj: HTMLDocument,
+    event: onpropertychange,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onpropertychange(
+    obj: OldHTMLDocument,
+    event: onpropertychange,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onreadystatechange(
+    obj: HTMLDocument,
+    event: onreadystatechange,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onreadystatechange(
+    obj: HTMLObjectElement,
+    event: onreadystatechange,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
   def on_onreadystatechange(
     obj: HTMLXMLHttpRequest,
     event: onreadystatechange,
     handler: js.ThisFunction1[/* this */ HTMLXMLHttpRequest, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onreadystatechange(
+    obj: OldHTMLDocument,
+    event: onreadystatechange,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_onreadystatechange(
@@ -807,10 +1292,154 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ Scriptlet, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
+  def on_onresize(
+    obj: HTMLWindow2,
+    event: onresize,
+    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onresize(
+    obj: HTMLWindowProxy,
+    event: onresize,
+    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowenter(
+    obj: HTMLDocument,
+    event: onrowenter,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowenter(
+    obj: HTMLObjectElement,
+    event: onrowenter,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowenter(
+    obj: OldHTMLDocument,
+    event: onrowenter,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowexit(
+    obj: HTMLDocument,
+    event: onrowexit,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowexit(
+    obj: HTMLObjectElement,
+    event: onrowexit,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowexit(
+    obj: OldHTMLDocument,
+    event: onrowexit,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowsdelete(
+    obj: HTMLDocument,
+    event: onrowsdelete,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowsdelete(
+    obj: HTMLObjectElement,
+    event: onrowsdelete,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowsdelete(
+    obj: OldHTMLDocument,
+    event: onrowsdelete,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowsinserted(
+    obj: HTMLDocument,
+    event: onrowsinserted,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowsinserted(
+    obj: HTMLObjectElement,
+    event: onrowsinserted,
+    handler: js.ThisFunction1[/* this */ HTMLObjectElement, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onrowsinserted(
+    obj: OldHTMLDocument,
+    event: onrowsinserted,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onscroll(
+    obj: HTMLWindow2,
+    event: onscroll,
+    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onscroll(
+    obj: HTMLWindowProxy,
+    event: onscroll,
+    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onselectionchange(
+    obj: HTMLDocument,
+    event: onselectionchange,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onselectionchange(
+    obj: OldHTMLDocument,
+    event: onselectionchange,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onselectstart(
+    obj: HTMLDocument,
+    event: onselectstart,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onselectstart(
+    obj: OldHTMLDocument,
+    event: onselectstart,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onstop(
+    obj: HTMLDocument,
+    event: onstop,
+    handler: js.ThisFunction1[/* this */ HTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onstop(
+    obj: OldHTMLDocument,
+    event: onstop,
+    handler: js.ThisFunction1[/* this */ OldHTMLDocument, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
   def on_ontimeout(
     obj: HTMLXMLHttpRequest,
     event: ontimeout,
     handler: js.ThisFunction1[/* this */ HTMLXMLHttpRequest, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onunload(
+    obj: HTMLWindow2,
+    event: onunload,
+    handler: js.ThisFunction1[/* this */ HTMLWindow2, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_onunload(
+    obj: HTMLWindowProxy,
+    event: onunload,
+    handler: js.ThisFunction1[/* this */ HTMLWindowProxy, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }
 

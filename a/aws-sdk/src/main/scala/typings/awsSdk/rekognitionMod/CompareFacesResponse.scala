@@ -30,20 +30,46 @@ trait CompareFacesResponse extends js.Object {
 
 object CompareFacesResponse {
   @scala.inline
-  def apply(
-    FaceMatches: CompareFacesMatchList = null,
-    SourceImageFace: ComparedSourceImageFace = null,
-    SourceImageOrientationCorrection: OrientationCorrection = null,
-    TargetImageOrientationCorrection: OrientationCorrection = null,
-    UnmatchedFaces: CompareFacesUnmatchList = null
-  ): CompareFacesResponse = {
+  def apply(): CompareFacesResponse = {
     val __obj = js.Dynamic.literal()
-    if (FaceMatches != null) __obj.updateDynamic("FaceMatches")(FaceMatches.asInstanceOf[js.Any])
-    if (SourceImageFace != null) __obj.updateDynamic("SourceImageFace")(SourceImageFace.asInstanceOf[js.Any])
-    if (SourceImageOrientationCorrection != null) __obj.updateDynamic("SourceImageOrientationCorrection")(SourceImageOrientationCorrection.asInstanceOf[js.Any])
-    if (TargetImageOrientationCorrection != null) __obj.updateDynamic("TargetImageOrientationCorrection")(TargetImageOrientationCorrection.asInstanceOf[js.Any])
-    if (UnmatchedFaces != null) __obj.updateDynamic("UnmatchedFaces")(UnmatchedFaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompareFacesResponse]
   }
+  @scala.inline
+  implicit class CompareFacesResponseOps[Self <: CompareFacesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFaceMatchesVarargs(value: CompareFacesMatch*): Self = this.set("FaceMatches", js.Array(value :_*))
+    @scala.inline
+    def setFaceMatches(value: CompareFacesMatchList): Self = this.set("FaceMatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceMatches: Self = this.set("FaceMatches", js.undefined)
+    @scala.inline
+    def setSourceImageFace(value: ComparedSourceImageFace): Self = this.set("SourceImageFace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImageFace: Self = this.set("SourceImageFace", js.undefined)
+    @scala.inline
+    def setSourceImageOrientationCorrection(value: OrientationCorrection): Self = this.set("SourceImageOrientationCorrection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImageOrientationCorrection: Self = this.set("SourceImageOrientationCorrection", js.undefined)
+    @scala.inline
+    def setTargetImageOrientationCorrection(value: OrientationCorrection): Self = this.set("TargetImageOrientationCorrection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetImageOrientationCorrection: Self = this.set("TargetImageOrientationCorrection", js.undefined)
+    @scala.inline
+    def setUnmatchedFacesVarargs(value: ComparedFace*): Self = this.set("UnmatchedFaces", js.Array(value :_*))
+    @scala.inline
+    def setUnmatchedFaces(value: CompareFacesUnmatchList): Self = this.set("UnmatchedFaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnmatchedFaces: Self = this.set("UnmatchedFaces", js.undefined)
+  }
+  
 }
 

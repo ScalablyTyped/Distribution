@@ -4,45 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextStreamReader extends TextStreamBase {
   /**
     * Indicates whether the stream pointer position is at the end of a line.
     */
-  var AtEndOfLine: Boolean
+  var AtEndOfLine: Boolean = js.native
   /**
     * Indicates whether the stream pointer position is at the end of a stream.
     */
-  var AtEndOfStream: Boolean
+  var AtEndOfStream: Boolean = js.native
   @JSName("IWshRuntimeLibrary.TextStreamReader_typekey")
-  var IWshRuntimeLibraryDotTextStreamReader_typekey: TextStreamReader
+  var IWshRuntimeLibraryDotTextStreamReader_typekey: TextStreamReader = js.native
   /**
     * Returns a specified number of characters from an input stream, starting at the current pointer position.
     * Does not return until the ENTER key is pressed.
     * Can only be used on a stream in reading mode; causes an error in writing or appending mode.
     */
-  def Read(characters: Double): String
+  def Read(characters: Double): String = js.native
   /**
     * Returns all characters from an input stream.
     * Can only be used on a stream in reading mode; causes an error in writing or appending mode.
     */
-  def ReadAll(): String
+  def ReadAll(): String = js.native
   /**
     * Returns an entire line from an input stream.
     * Although this method extracts the newline character, it does not add it to the returned string.
     * Can only be used on a stream in reading mode; causes an error in writing or appending mode.
     */
-  def ReadLine(): String
+  def ReadLine(): String = js.native
   /**
     * Skips a specified number of characters when reading from an input text stream.
     * Can only be used on a stream in reading mode; causes an error in writing or appending mode.
     * @param characters Positive number of characters to skip forward. (Backward skipping is not supported.)
     */
-  def Skip(characters: Double): Unit
+  def Skip(characters: Double): Unit = js.native
   /**
     * Skips the next line when reading from an input text stream.
     * Can only be used on a stream in reading mode, not writing or appending mode.
     */
-  def SkipLine(): Unit
+  def SkipLine(): Unit = js.native
 }
 
 object TextStreamReader {
@@ -64,5 +65,34 @@ object TextStreamReader {
     __obj.updateDynamic("IWshRuntimeLibrary.TextStreamReader_typekey")(IWshRuntimeLibraryDotTextStreamReader_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextStreamReader]
   }
+  @scala.inline
+  implicit class TextStreamReaderOps[Self <: TextStreamReader] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAtEndOfLine(value: Boolean): Self = this.set("AtEndOfLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAtEndOfStream(value: Boolean): Self = this.set("AtEndOfStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIWshRuntimeLibraryDotTextStreamReader_typekey(value: TextStreamReader): Self = this.set("IWshRuntimeLibrary.TextStreamReader_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRead(value: Double => String): Self = this.set("Read", js.Any.fromFunction1(value))
+    @scala.inline
+    def setReadAll(value: () => String): Self = this.set("ReadAll", js.Any.fromFunction0(value))
+    @scala.inline
+    def setReadLine(value: () => String): Self = this.set("ReadLine", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSkip(value: Double => Unit): Self = this.set("Skip", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSkipLine(value: () => Unit): Self = this.set("SkipLine", js.Any.fromFunction0(value))
+  }
+  
 }
 

@@ -4,49 +4,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Location extends HistoryLocation {
-  var basename: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[LocationOptions] = js.undefined
-  var params: js.UndefOr[Params] = js.undefined
-  var previous: js.UndefOr[Location] = js.undefined
-  var query: js.UndefOr[Query] = js.undefined
-  var queue: js.UndefOr[js.Array[Location]] = js.undefined
-  var result: js.UndefOr[ObjectLiteral[_]] = js.undefined
-  var routes: js.UndefOr[Routes] = js.undefined
+  var basename: js.UndefOr[String] = js.native
+  var options: js.UndefOr[LocationOptions] = js.native
+  var params: js.UndefOr[Params] = js.native
+  var previous: js.UndefOr[Location] = js.native
+  var query: js.UndefOr[Query] = js.native
+  var queue: js.UndefOr[js.Array[Location]] = js.native
+  var result: js.UndefOr[ObjectLiteral[_]] = js.native
+  var routes: js.UndefOr[Routes] = js.native
 }
 
 object Location {
   @scala.inline
-  def apply(
-    basename: String = null,
-    hash: String = null,
-    key: String = null,
-    options: LocationOptions = null,
-    params: Params = null,
-    pathname: String = null,
-    previous: Location = null,
-    query: Query = null,
-    queue: js.Array[Location] = null,
-    result: ObjectLiteral[_] = null,
-    routes: Routes = null,
-    search: String = null,
-    state: ObjectLiteral[_] = null
-  ): Location = {
+  def apply(): Location = {
     val __obj = js.Dynamic.literal()
-    if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
-    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
+  @scala.inline
+  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBasename(value: String): Self = this.set("basename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasename: Self = this.set("basename", js.undefined)
+    @scala.inline
+    def setOptions(value: LocationOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setParams(value: Params): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setPrevious(value: Location): Self = this.set("previous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevious: Self = this.set("previous", js.undefined)
+    @scala.inline
+    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setQueueVarargs(value: Location*): Self = this.set("queue", js.Array(value :_*))
+    @scala.inline
+    def setQueue(value: js.Array[Location]): Self = this.set("queue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueue: Self = this.set("queue", js.undefined)
+    @scala.inline
+    def setResult(value: ObjectLiteral[_]): Self = this.set("result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("result", js.undefined)
+    @scala.inline
+    def setRoutes(value: Routes): Self = this.set("routes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutes: Self = this.set("routes", js.undefined)
+  }
+  
 }
 

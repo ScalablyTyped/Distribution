@@ -28,9 +28,21 @@ class Charges () extends StripeResource {
     * created. If they are not captured by that point in time, they will be marked as refunded and will no longer be capturable.
     */
   def capture(id: String): js.Promise[ICharge] = js.native
+  def capture(
+    id: String,
+    data: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[HeaderOptions],
+    response: IResponseFn[ICharge]
+  ): js.Promise[ICharge] = js.native
+  def capture(id: String, data: js.UndefOr[scala.Nothing], options: HeaderOptions): js.Promise[ICharge] = js.native
   def capture(id: String, data: IChargeCaptureOptions): js.Promise[ICharge] = js.native
+  def capture(
+    id: String,
+    data: IChargeCaptureOptions,
+    options: js.UndefOr[HeaderOptions],
+    response: IResponseFn[ICharge]
+  ): js.Promise[ICharge] = js.native
   def capture(id: String, data: IChargeCaptureOptions, options: HeaderOptions): js.Promise[ICharge] = js.native
-  def capture(id: String, data: IChargeCaptureOptions, options: HeaderOptions, response: IResponseFn[ICharge]): js.Promise[ICharge] = js.native
   def create(data: IChargeCreationOptions): js.Promise[ICharge] = js.native
   /**
     * To charge a credit card, you create a charge object. If your API key is in test mode, the supplied card won't actually be charged, though

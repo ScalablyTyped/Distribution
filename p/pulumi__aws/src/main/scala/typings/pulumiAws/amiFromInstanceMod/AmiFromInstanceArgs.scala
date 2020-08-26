@@ -40,30 +40,59 @@ trait AmiFromInstanceArgs extends js.Object {
     */
   val sourceInstanceId: Input[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object AmiFromInstanceArgs {
   @scala.inline
-  def apply(
-    sourceInstanceId: Input[String],
-    description: Input[String] = null,
-    ebsBlockDevices: Input[js.Array[Input[AmiFromInstanceEbsBlockDevice]]] = null,
-    ephemeralBlockDevices: Input[js.Array[Input[AmiFromInstanceEphemeralBlockDevice]]] = null,
-    name: Input[String] = null,
-    snapshotWithoutReboot: Input[Boolean] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): AmiFromInstanceArgs = {
+  def apply(sourceInstanceId: Input[String]): AmiFromInstanceArgs = {
     val __obj = js.Dynamic.literal(sourceInstanceId = sourceInstanceId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (ebsBlockDevices != null) __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices.asInstanceOf[js.Any])
-    if (ephemeralBlockDevices != null) __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (snapshotWithoutReboot != null) __obj.updateDynamic("snapshotWithoutReboot")(snapshotWithoutReboot.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmiFromInstanceArgs]
   }
+  @scala.inline
+  implicit class AmiFromInstanceArgsOps[Self <: AmiFromInstanceArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceInstanceId(value: Input[String]): Self = this.set("sourceInstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEbsBlockDevicesVarargs(value: Input[AmiFromInstanceEbsBlockDevice]*): Self = this.set("ebsBlockDevices", js.Array(value :_*))
+    @scala.inline
+    def setEbsBlockDevices(value: Input[js.Array[Input[AmiFromInstanceEbsBlockDevice]]]): Self = this.set("ebsBlockDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsBlockDevices: Self = this.set("ebsBlockDevices", js.undefined)
+    @scala.inline
+    def setEphemeralBlockDevicesVarargs(value: Input[AmiFromInstanceEphemeralBlockDevice]*): Self = this.set("ephemeralBlockDevices", js.Array(value :_*))
+    @scala.inline
+    def setEphemeralBlockDevices(value: Input[js.Array[Input[AmiFromInstanceEphemeralBlockDevice]]]): Self = this.set("ephemeralBlockDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEphemeralBlockDevices: Self = this.set("ephemeralBlockDevices", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSnapshotWithoutReboot(value: Input[Boolean]): Self = this.set("snapshotWithoutReboot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotWithoutReboot: Self = this.set("snapshotWithoutReboot", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

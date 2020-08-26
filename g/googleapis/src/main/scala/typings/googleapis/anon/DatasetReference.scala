@@ -18,22 +18,46 @@ trait DatasetReference extends js.Object {
 
 object DatasetReference {
   @scala.inline
-  def apply(
-    datasetReference: SchemaDatasetReference = null,
-    friendlyName: String = null,
-    id: String = null,
-    kind: String = null,
-    labels: StringDictionary[String] = null,
-    location: String = null
-  ): DatasetReference = {
+  def apply(): DatasetReference = {
     val __obj = js.Dynamic.literal()
-    if (datasetReference != null) __obj.updateDynamic("datasetReference")(datasetReference.asInstanceOf[js.Any])
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetReference]
   }
+  @scala.inline
+  implicit class DatasetReferenceOps[Self <: DatasetReference] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatasetReference(value: SchemaDatasetReference): Self = this.set("datasetReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetReference: Self = this.set("datasetReference", js.undefined)
+    @scala.inline
+    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFriendlyName: Self = this.set("friendlyName", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+  }
+  
 }
 

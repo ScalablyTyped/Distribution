@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * Interfaces and instance classes for types from the Mendix sub meta model `Expressions`.
   */
 /**
-  * See: {@link https://docs.mendix.com/refguide7/microflow-expressions relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/expressions relevant section in reference guide}
   *
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *

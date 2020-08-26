@@ -19,7 +19,7 @@ trait BuildPhase extends js.Object {
     */
   var endTime: js.UndefOr[Timestamp] = js.native
   /**
-    * The current status of the build phase. Valid values include:    FAILED: The build phase failed.    FAULT: The build phase faulted.    IN_PROGRESS: The build phase is still in progress.    QUEUED: The build has been submitted and is queued behind other submitted builds.    STOPPED: The build phase stopped.    SUCCEEDED: The build phase succeeded.    TIMED_OUT: The build phase timed out.  
+    * The current status of the build phase. Valid values include:  FAILED  The build phase failed.  FAULT  The build phase faulted.  IN_PROGRESS  The build phase is still in progress.  QUEUED  The build has been submitted and is queued behind other submitted builds.  STOPPED  The build phase stopped.  SUCCEEDED  The build phase succeeded.  TIMED_OUT  The build phase timed out.  
     */
   var phaseStatus: js.UndefOr[StatusType] = js.native
   /**
@@ -34,22 +34,48 @@ trait BuildPhase extends js.Object {
 
 object BuildPhase {
   @scala.inline
-  def apply(
-    contexts: PhaseContexts = null,
-    durationInSeconds: js.UndefOr[WrapperLong] = js.undefined,
-    endTime: Timestamp = null,
-    phaseStatus: StatusType = null,
-    phaseType: BuildPhaseType = null,
-    startTime: Timestamp = null
-  ): BuildPhase = {
+  def apply(): BuildPhase = {
     val __obj = js.Dynamic.literal()
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
-    if (!js.isUndefined(durationInSeconds)) __obj.updateDynamic("durationInSeconds")(durationInSeconds.get.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (phaseStatus != null) __obj.updateDynamic("phaseStatus")(phaseStatus.asInstanceOf[js.Any])
-    if (phaseType != null) __obj.updateDynamic("phaseType")(phaseType.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildPhase]
   }
+  @scala.inline
+  implicit class BuildPhaseOps[Self <: BuildPhase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContextsVarargs(value: PhaseContext*): Self = this.set("contexts", js.Array(value :_*))
+    @scala.inline
+    def setContexts(value: PhaseContexts): Self = this.set("contexts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContexts: Self = this.set("contexts", js.undefined)
+    @scala.inline
+    def setDurationInSeconds(value: WrapperLong): Self = this.set("durationInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationInSeconds: Self = this.set("durationInSeconds", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setPhaseStatus(value: StatusType): Self = this.set("phaseStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhaseStatus: Self = this.set("phaseStatus", js.undefined)
+    @scala.inline
+    def setPhaseType(value: BuildPhaseType): Self = this.set("phaseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhaseType: Self = this.set("phaseType", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

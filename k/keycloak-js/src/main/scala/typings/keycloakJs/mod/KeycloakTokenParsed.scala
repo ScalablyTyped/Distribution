@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeycloakTokenParsed extends js.Object {
-  var exp: js.UndefOr[Double] = js.undefined
-  var iat: js.UndefOr[Double] = js.undefined
-  var nonce: js.UndefOr[String] = js.undefined
-  var realm_access: js.UndefOr[KeycloakRoles] = js.undefined
-  var resource_access: js.UndefOr[KeycloakResourceAccess] = js.undefined
-  var session_state: js.UndefOr[String] = js.undefined
-  var sub: js.UndefOr[String] = js.undefined
+  var exp: js.UndefOr[Double] = js.native
+  var iat: js.UndefOr[Double] = js.native
+  var nonce: js.UndefOr[String] = js.native
+  var realm_access: js.UndefOr[KeycloakRoles] = js.native
+  var resource_access: js.UndefOr[KeycloakResourceAccess] = js.native
+  var session_state: js.UndefOr[String] = js.native
+  var sub: js.UndefOr[String] = js.native
 }
 
 object KeycloakTokenParsed {
   @scala.inline
-  def apply(
-    exp: js.UndefOr[Double] = js.undefined,
-    iat: js.UndefOr[Double] = js.undefined,
-    nonce: String = null,
-    realm_access: KeycloakRoles = null,
-    resource_access: KeycloakResourceAccess = null,
-    session_state: String = null,
-    sub: String = null
-  ): KeycloakTokenParsed = {
+  def apply(): KeycloakTokenParsed = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exp)) __obj.updateDynamic("exp")(exp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iat)) __obj.updateDynamic("iat")(iat.get.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (realm_access != null) __obj.updateDynamic("realm_access")(realm_access.asInstanceOf[js.Any])
-    if (resource_access != null) __obj.updateDynamic("resource_access")(resource_access.asInstanceOf[js.Any])
-    if (session_state != null) __obj.updateDynamic("session_state")(session_state.asInstanceOf[js.Any])
-    if (sub != null) __obj.updateDynamic("sub")(sub.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeycloakTokenParsed]
   }
+  @scala.inline
+  implicit class KeycloakTokenParsedOps[Self <: KeycloakTokenParsed] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExp(value: Double): Self = this.set("exp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExp: Self = this.set("exp", js.undefined)
+    @scala.inline
+    def setIat(value: Double): Self = this.set("iat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIat: Self = this.set("iat", js.undefined)
+    @scala.inline
+    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonce: Self = this.set("nonce", js.undefined)
+    @scala.inline
+    def setRealm_access(value: KeycloakRoles): Self = this.set("realm_access", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealm_access: Self = this.set("realm_access", js.undefined)
+    @scala.inline
+    def setResource_access(value: KeycloakResourceAccess): Self = this.set("resource_access", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource_access: Self = this.set("resource_access", js.undefined)
+    @scala.inline
+    def setSession_state(value: String): Self = this.set("session_state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession_state: Self = this.set("session_state", js.undefined)
+    @scala.inline
+    def setSub(value: String): Self = this.set("sub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSub: Self = this.set("sub", js.undefined)
+  }
+  
 }
 

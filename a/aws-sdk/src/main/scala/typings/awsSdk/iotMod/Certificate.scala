@@ -30,20 +30,42 @@ trait Certificate extends js.Object {
 
 object Certificate {
   @scala.inline
-  def apply(
-    certificateArn: CertificateArn = null,
-    certificateId: CertificateId = null,
-    certificateMode: CertificateMode = null,
-    creationDate: DateType = null,
-    status: CertificateStatus = null
-  ): Certificate = {
+  def apply(): Certificate = {
     val __obj = js.Dynamic.literal()
-    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
-    if (certificateId != null) __obj.updateDynamic("certificateId")(certificateId.asInstanceOf[js.Any])
-    if (certificateMode != null) __obj.updateDynamic("certificateMode")(certificateMode.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Certificate]
   }
+  @scala.inline
+  implicit class CertificateOps[Self <: Certificate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateArn(value: CertificateArn): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    @scala.inline
+    def setCertificateId(value: CertificateId): Self = this.set("certificateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateId: Self = this.set("certificateId", js.undefined)
+    @scala.inline
+    def setCertificateMode(value: CertificateMode): Self = this.set("certificateMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateMode: Self = this.set("certificateMode", js.undefined)
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setStatus(value: CertificateStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

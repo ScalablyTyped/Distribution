@@ -1,9 +1,6 @@
 package typings.reactNavigationStack
 
 import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.TopLevel
-import typings.react.mod.Component
-import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.reactNative.mod.View
 import typings.reactNativeGestureHandler.mod.PanGestureHandlerProperties
@@ -17,13 +14,7 @@ object gestureHandlerMod extends js.Object {
   @js.native
   class GestureHandlerRootView () extends View
   
-  @js.native
-  class PanGestureHandler protected ()
-    extends Component[PanGestureHandlerProperties, ComponentState, js.Any] {
-    def this(props: PanGestureHandlerProperties) = this()
-    def this(props: PanGestureHandlerProperties, context: js.Any) = this()
-  }
-  
+  val PanGestureHandler: ComponentType[PanGestureHandlerProperties] = js.native
   @js.native
   object GestureHandlerRootView extends Instantiable0[View] {
     /**
@@ -42,9 +33,6 @@ object gestureHandlerMod extends js.Object {
     var FAILED: Double = js.native
     var UNDETERMINED: Double = js.native
   }
-  
-  @js.native
-  object PanGestureHandler extends TopLevel[ComponentType[PanGestureHandlerProperties]]
   
 }
 

@@ -17,14 +17,5 @@ class EmailIrmTemplate ()
     * @param description The description of the new template.
     */
   def this(id: String, name: String, description: String) = this()
-  /** Gets or sets the description of the template. */
-  /* CompleteClass */
-  override var description: String = js.native
-  /** Gets or sets the ID for the template. */
-  /* CompleteClass */
-  override var id: String = js.native
-  /** Gets or sets the name for the template. */
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

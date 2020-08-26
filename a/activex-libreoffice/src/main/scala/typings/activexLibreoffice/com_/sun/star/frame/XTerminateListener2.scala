@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** extend interface {@link XTerminateListener} so a listener will be informed in case termination process was canceled by other reasons. */
+@js.native
 trait XTerminateListener2 extends XTerminateListener {
   /**
     * is called when the master environment (e.g., desktop) was canceled in it's terminate request.
@@ -17,7 +18,7 @@ trait XTerminateListener2 extends XTerminateListener {
     * then. Using this optional(!) interface will make it possible to be informed about canceled termination requests also.
     * @param Event describe the source of the event (e.g., the desktop)
     */
-  def cancelTermination(Event: EventObject): Unit
+  def cancelTermination(Event: EventObject): Unit = js.native
 }
 
 object XTerminateListener2 {
@@ -34,5 +35,20 @@ object XTerminateListener2 {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancelTermination = js.Any.fromFunction1(cancelTermination), disposing = js.Any.fromFunction1(disposing), notifyTermination = js.Any.fromFunction1(notifyTermination), queryInterface = js.Any.fromFunction1(queryInterface), queryTermination = js.Any.fromFunction1(queryTermination), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XTerminateListener2]
   }
+  @scala.inline
+  implicit class XTerminateListener2Ops[Self <: XTerminateListener2] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancelTermination(value: EventObject => Unit): Self = this.set("cancelTermination", js.Any.fromFunction1(value))
+  }
+  
 }
 

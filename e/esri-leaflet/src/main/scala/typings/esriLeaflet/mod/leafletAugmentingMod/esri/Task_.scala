@@ -20,7 +20,16 @@ class Task_ protected () extends Class {
     * parameters will be serialized. Accepts an optional function context for the callback.
     */
   def request(url: String): this.type = js.native
+  def request(
+    url: String,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): this.type = js.native
+  def request(url: String, params: js.UndefOr[scala.Nothing], callback: js.Any): this.type = js.native
+  def request(url: String, params: js.UndefOr[scala.Nothing], callback: js.Any, context: js.Any): this.type = js.native
   def request(url: String, params: js.Any): this.type = js.native
+  def request(url: String, params: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
   def request(url: String, params: js.Any, callback: js.Any): this.type = js.native
   def request(url: String, params: js.Any, callback: js.Any, context: js.Any): this.type = js.native
   /**

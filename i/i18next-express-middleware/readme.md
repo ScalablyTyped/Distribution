@@ -1,7 +1,7 @@
 
 # Scala.js typings for i18next-express-middleware
 
-Typings are for version 1.9.1
+Typings are for version 2.0.0
 
 ## Library description:
 express middleware for i18next

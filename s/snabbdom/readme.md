@@ -1,7 +1,7 @@
 
 # Scala.js typings for snabbdom
 
-Typings are for version 0.7.4
+Typings are for version 1.0.1
 
 ## Library description:
 A virtual DOM library with focus on simplicity, modularity, powerful features and performance.
@@ -10,9 +10,9 @@ A virtual DOM library with focus on simplicity, modularity, powerful features an
 | ------------------ | :-------------: |
 | Full name          | snabbdom |
 | Keywords           | virtual, dom, light, kiss, performance |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 105 |
-| # downloads        | 265766 |
+| # downloads        | 268542 |
 | # stars            | 3 |
 
 ## Links

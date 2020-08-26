@@ -12,7 +12,7 @@ Promise version of sqlite3.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 14072 |
+| # downloads        | 14158 |
 | # stars            | 0 |
 
 ## Links

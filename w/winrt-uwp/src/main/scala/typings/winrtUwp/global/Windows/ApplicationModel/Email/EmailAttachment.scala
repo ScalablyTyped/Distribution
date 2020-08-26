@@ -24,35 +24,5 @@ class EmailAttachment ()
     * @param mimeType The MIME type of the attachment.
     */
   def this(fileName: String, data: IRandomAccessStreamReference, mimeType: String) = this()
-  /** Gets or sets a value that identifies the content of the attachment on a remote system. */
-  /* CompleteClass */
-  override var contentId: String = js.native
-  /** Gets or sets the location of an email attachment as a Uniform Resource Identifier (URI). */
-  /* CompleteClass */
-  override var contentLocation: String = js.native
-  /** Gets or sets the email attachment's data. */
-  /* CompleteClass */
-  override var data: IRandomAccessStreamReference = js.native
-  /** Gets or sets the download state of the email attachment. */
-  /* CompleteClass */
-  override var downloadState: typings.winrtUwp.Windows.ApplicationModel.Email.EmailAttachmentDownloadState = js.native
-  /** Gets or sets the estimated download size of the attachment. */
-  /* CompleteClass */
-  override var estimatedDownloadSizeInBytes: Double = js.native
-  /** Gets or sets the displayed file name for the email attachment. */
-  /* CompleteClass */
-  override var fileName: String = js.native
-  /** Gets the locally unique ID for the email attachment. */
-  /* CompleteClass */
-  override var id: String = js.native
-  /** Gets a Boolean value indicating if the attachment came from the base message. */
-  /* CompleteClass */
-  override var isFromBaseMessage: Boolean = js.native
-  /** Gets or sets a Boolean property indicating if the attachment is included inline, in the body of the message. */
-  /* CompleteClass */
-  override var isInline: Boolean = js.native
-  /** Gets or sets the MIME type of the attachment. */
-  /* CompleteClass */
-  override var mimeType: String = js.native
 }
 

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "commons-validator-js"
-version := "1.0.1615-6167cc"
-scalaVersion := "2.13.2"
+version := "1.0.1647-e5b12c"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -4,5 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DatePickerViewModel extends js.Object
+@js.native
+trait DatePickerViewModel
+  extends Accessor
+     with MomentElementViewModel
 

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply(lightness: Double): String = js.native
+  def apply(lightness: Double, hue: js.UndefOr[scala.Nothing], darkBackground: Boolean): String = js.native
   def apply(lightness: Double, hue: Double): String = js.native
   def apply(lightness: Double, hue: Double, darkBackground: Boolean): String = js.native
   def apply(lightness: Double, hue: cool): String = js.native

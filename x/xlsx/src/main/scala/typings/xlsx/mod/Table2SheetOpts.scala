@@ -4,46 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Table2SheetOpts
   extends CommonOptions
      with DateNFOption {
   /** If true, hidden rows and cells will not be parsed */
-  var display: js.UndefOr[Boolean] = js.undefined
-  /* If true, plaintext parsing will not parse values */
-  var raw: js.UndefOr[Boolean] = js.undefined
+  var display: js.UndefOr[Boolean] = js.native
+  /** If true, plaintext parsing will not parse values */
+  var raw: js.UndefOr[Boolean] = js.native
   /**
     * If >0, read the first sheetRows rows
     * @default 0
     */
-  var sheetRows: js.UndefOr[Double] = js.undefined
+  var sheetRows: js.UndefOr[Double] = js.native
 }
 
 object Table2SheetOpts {
   @scala.inline
-  def apply(
-    WTF: js.UndefOr[Boolean] = js.undefined,
-    bookVBA: js.UndefOr[Boolean] = js.undefined,
-    cellDates: js.UndefOr[Boolean] = js.undefined,
-    cellStyles: js.UndefOr[Boolean] = js.undefined,
-    dateNF: NumberFormat = null,
-    display: js.UndefOr[Boolean] = js.undefined,
-    password: String = null,
-    raw: js.UndefOr[Boolean] = js.undefined,
-    sheetRows: js.UndefOr[Double] = js.undefined,
-    sheetStubs: js.UndefOr[Boolean] = js.undefined
-  ): Table2SheetOpts = {
+  def apply(): Table2SheetOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles.get.asInstanceOf[js.Any])
-    if (dateNF != null) __obj.updateDynamic("dateNF")(dateNF.asInstanceOf[js.Any])
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.get.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetRows)) __obj.updateDynamic("sheetRows")(sheetRows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetStubs)) __obj.updateDynamic("sheetStubs")(sheetStubs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Table2SheetOpts]
   }
+  @scala.inline
+  implicit class Table2SheetOptsOps[Self <: Table2SheetOpts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplay(value: Boolean): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaw: Self = this.set("raw", js.undefined)
+    @scala.inline
+    def setSheetRows(value: Double): Self = this.set("sheetRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetRows: Self = this.set("sheetRows", js.undefined)
+  }
+  
 }
 

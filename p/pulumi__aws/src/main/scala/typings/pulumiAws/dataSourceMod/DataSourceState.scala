@@ -55,30 +55,62 @@ trait DataSourceState extends js.Object {
 
 object DataSourceState {
   @scala.inline
-  def apply(
-    apiId: Input[String] = null,
-    arn: Input[String] = null,
-    description: Input[String] = null,
-    dynamodbConfig: Input[DataSourceDynamodbConfig] = null,
-    elasticsearchConfig: Input[DataSourceElasticsearchConfig] = null,
-    httpConfig: Input[DataSourceHttpConfig] = null,
-    lambdaConfig: Input[DataSourceLambdaConfig] = null,
-    name: Input[String] = null,
-    serviceRoleArn: Input[String] = null,
-    `type`: Input[String] = null
-  ): DataSourceState = {
+  def apply(): DataSourceState = {
     val __obj = js.Dynamic.literal()
-    if (apiId != null) __obj.updateDynamic("apiId")(apiId.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (dynamodbConfig != null) __obj.updateDynamic("dynamodbConfig")(dynamodbConfig.asInstanceOf[js.Any])
-    if (elasticsearchConfig != null) __obj.updateDynamic("elasticsearchConfig")(elasticsearchConfig.asInstanceOf[js.Any])
-    if (httpConfig != null) __obj.updateDynamic("httpConfig")(httpConfig.asInstanceOf[js.Any])
-    if (lambdaConfig != null) __obj.updateDynamic("lambdaConfig")(lambdaConfig.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (serviceRoleArn != null) __obj.updateDynamic("serviceRoleArn")(serviceRoleArn.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceState]
   }
+  @scala.inline
+  implicit class DataSourceStateOps[Self <: DataSourceState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiId(value: Input[String]): Self = this.set("apiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiId: Self = this.set("apiId", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDynamodbConfig(value: Input[DataSourceDynamodbConfig]): Self = this.set("dynamodbConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamodbConfig: Self = this.set("dynamodbConfig", js.undefined)
+    @scala.inline
+    def setElasticsearchConfig(value: Input[DataSourceElasticsearchConfig]): Self = this.set("elasticsearchConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticsearchConfig: Self = this.set("elasticsearchConfig", js.undefined)
+    @scala.inline
+    def setHttpConfig(value: Input[DataSourceHttpConfig]): Self = this.set("httpConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpConfig: Self = this.set("httpConfig", js.undefined)
+    @scala.inline
+    def setLambdaConfig(value: Input[DataSourceLambdaConfig]): Self = this.set("lambdaConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaConfig: Self = this.set("lambdaConfig", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setServiceRoleArn(value: Input[String]): Self = this.set("serviceRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRoleArn: Self = this.set("serviceRoleArn", js.undefined)
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -8,77 +8,102 @@ import scala.scalajs.js.annotation._
 /**
   * ScaleIOVolumeSource represents a persistent ScaleIO volume
   */
+@js.native
 trait ScaleIOVolumeSource extends js.Object {
   /**
-    * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
-    * Ex. "ext4", "xfs", "ntfs". Default is "xfs".
+    * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Default is "xfs".
     */
-  var fsType: js.UndefOr[Input[String]] = js.undefined
+  var fsType: js.UndefOr[Input[String]] = js.native
   /**
     * The host address of the ScaleIO API Gateway.
     */
-  var gateway: Input[String]
+  var gateway: Input[String] = js.native
   /**
     * The name of the ScaleIO Protection Domain for the configured storage.
     */
-  var protectionDomain: js.UndefOr[Input[String]] = js.undefined
+  var protectionDomain: js.UndefOr[Input[String]] = js.native
   /**
-    * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
-    * VolumeMounts.
+    * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
+  var readOnly: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * SecretRef references to the secret for ScaleIO user and other sensitive information. If
-    * this is not provided, Login operation will fail.
+    * SecretRef references to the secret for ScaleIO user and other sensitive information. If this is not provided, Login operation will fail.
     */
-  var secretRef: Input[LocalObjectReference]
+  var secretRef: Input[LocalObjectReference] = js.native
   /**
     * Flag to enable/disable SSL communication with Gateway, default false
     */
-  var sslEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var sslEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned.
-    * Default is ThinProvisioned.
+    * Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned.
     */
-  var storageMode: js.UndefOr[Input[String]] = js.undefined
+  var storageMode: js.UndefOr[Input[String]] = js.native
   /**
     * The ScaleIO Storage Pool associated with the protection domain.
     */
-  var storagePool: js.UndefOr[Input[String]] = js.undefined
+  var storagePool: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the storage system as configured in ScaleIO.
     */
-  var system: Input[String]
+  var system: Input[String] = js.native
   /**
-    * The name of a volume already created in the ScaleIO system that is associated with this
-    * volume source.
+    * The name of a volume already created in the ScaleIO system that is associated with this volume source.
     */
-  var volumeName: js.UndefOr[Input[String]] = js.undefined
+  var volumeName: js.UndefOr[Input[String]] = js.native
 }
 
 object ScaleIOVolumeSource {
   @scala.inline
-  def apply(
-    gateway: Input[String],
-    secretRef: Input[LocalObjectReference],
-    system: Input[String],
-    fsType: Input[String] = null,
-    protectionDomain: Input[String] = null,
-    readOnly: Input[Boolean] = null,
-    sslEnabled: Input[Boolean] = null,
-    storageMode: Input[String] = null,
-    storagePool: Input[String] = null,
-    volumeName: Input[String] = null
-  ): ScaleIOVolumeSource = {
+  def apply(gateway: Input[String], secretRef: Input[LocalObjectReference], system: Input[String]): ScaleIOVolumeSource = {
     val __obj = js.Dynamic.literal(gateway = gateway.asInstanceOf[js.Any], secretRef = secretRef.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any])
-    if (fsType != null) __obj.updateDynamic("fsType")(fsType.asInstanceOf[js.Any])
-    if (protectionDomain != null) __obj.updateDynamic("protectionDomain")(protectionDomain.asInstanceOf[js.Any])
-    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (sslEnabled != null) __obj.updateDynamic("sslEnabled")(sslEnabled.asInstanceOf[js.Any])
-    if (storageMode != null) __obj.updateDynamic("storageMode")(storageMode.asInstanceOf[js.Any])
-    if (storagePool != null) __obj.updateDynamic("storagePool")(storagePool.asInstanceOf[js.Any])
-    if (volumeName != null) __obj.updateDynamic("volumeName")(volumeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleIOVolumeSource]
   }
+  @scala.inline
+  implicit class ScaleIOVolumeSourceOps[Self <: ScaleIOVolumeSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGateway(value: Input[String]): Self = this.set("gateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecretRef(value: Input[LocalObjectReference]): Self = this.set("secretRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSystem(value: Input[String]): Self = this.set("system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFsType(value: Input[String]): Self = this.set("fsType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFsType: Self = this.set("fsType", js.undefined)
+    @scala.inline
+    def setProtectionDomain(value: Input[String]): Self = this.set("protectionDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtectionDomain: Self = this.set("protectionDomain", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setSslEnabled(value: Input[Boolean]): Self = this.set("sslEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslEnabled: Self = this.set("sslEnabled", js.undefined)
+    @scala.inline
+    def setStorageMode(value: Input[String]): Self = this.set("storageMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageMode: Self = this.set("storageMode", js.undefined)
+    @scala.inline
+    def setStoragePool(value: Input[String]): Self = this.set("storagePool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoragePool: Self = this.set("storagePool", js.undefined)
+    @scala.inline
+    def setVolumeName(value: Input[String]): Self = this.set("volumeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeName: Self = this.set("volumeName", js.undefined)
+  }
+  
 }
 

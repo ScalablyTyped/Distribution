@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__react
 
-Typings are for version 5.2.2
+Typings are for version 5.3.1
 
 ## Library description:
 React specific wrapper for @ionic/core
@@ -10,9 +10,9 @@ React specific wrapper for @ionic/core
 | ------------------ | :-------------: |
 | Full name          | @ionic/react |
 | Keywords           | ionic, framework, react, mobile, app, hybrid, webapp, cordova, progressive web app, pwa |
-| # releases         | 143 |
+| # releases         | 150 |
 | # dependents       | 4 |
-| # downloads        | 100258 |
+| # downloads        | 112514 |
 | # stars            | 0 |
 
 ## Links

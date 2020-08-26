@@ -22,15 +22,34 @@ trait InputSwitchScheduleActionSettings extends js.Object {
 
 object InputSwitchScheduleActionSettings {
   @scala.inline
-  def apply(
-    InputAttachmentNameReference: string,
-    InputClippingSettings: InputClippingSettings = null,
-    UrlPath: listOfString = null
-  ): InputSwitchScheduleActionSettings = {
+  def apply(InputAttachmentNameReference: string): InputSwitchScheduleActionSettings = {
     val __obj = js.Dynamic.literal(InputAttachmentNameReference = InputAttachmentNameReference.asInstanceOf[js.Any])
-    if (InputClippingSettings != null) __obj.updateDynamic("InputClippingSettings")(InputClippingSettings.asInstanceOf[js.Any])
-    if (UrlPath != null) __obj.updateDynamic("UrlPath")(UrlPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputSwitchScheduleActionSettings]
   }
+  @scala.inline
+  implicit class InputSwitchScheduleActionSettingsOps[Self <: InputSwitchScheduleActionSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputAttachmentNameReference(value: string): Self = this.set("InputAttachmentNameReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputClippingSettings(value: InputClippingSettings): Self = this.set("InputClippingSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputClippingSettings: Self = this.set("InputClippingSettings", js.undefined)
+    @scala.inline
+    def setUrlPathVarargs(value: string*): Self = this.set("UrlPath", js.Array(value :_*))
+    @scala.inline
+    def setUrlPath(value: listOfString): Self = this.set("UrlPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlPath: Self = this.set("UrlPath", js.undefined)
+  }
+  
 }
 

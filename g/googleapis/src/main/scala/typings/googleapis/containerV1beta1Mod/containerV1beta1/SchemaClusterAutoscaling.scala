@@ -24,14 +24,32 @@ trait SchemaClusterAutoscaling extends js.Object {
 
 object SchemaClusterAutoscaling {
   @scala.inline
-  def apply(
-    enableNodeAutoprovisioning: js.UndefOr[Boolean] = js.undefined,
-    resourceLimits: js.Array[SchemaResourceLimit] = null
-  ): SchemaClusterAutoscaling = {
+  def apply(): SchemaClusterAutoscaling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableNodeAutoprovisioning)) __obj.updateDynamic("enableNodeAutoprovisioning")(enableNodeAutoprovisioning.get.asInstanceOf[js.Any])
-    if (resourceLimits != null) __obj.updateDynamic("resourceLimits")(resourceLimits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClusterAutoscaling]
   }
+  @scala.inline
+  implicit class SchemaClusterAutoscalingOps[Self <: SchemaClusterAutoscaling] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnableNodeAutoprovisioning(value: Boolean): Self = this.set("enableNodeAutoprovisioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableNodeAutoprovisioning: Self = this.set("enableNodeAutoprovisioning", js.undefined)
+    @scala.inline
+    def setResourceLimitsVarargs(value: SchemaResourceLimit*): Self = this.set("resourceLimits", js.Array(value :_*))
+    @scala.inline
+    def setResourceLimits(value: js.Array[SchemaResourceLimit]): Self = this.set("resourceLimits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceLimits: Self = this.set("resourceLimits", js.undefined)
+  }
+  
 }
 

@@ -23,15 +23,32 @@ trait DataSourceDynamodbConfig extends js.Object {
 
 object DataSourceDynamodbConfig {
   @scala.inline
-  def apply(
-    tableName: Input[String],
-    region: Input[String] = null,
-    useCallerCredentials: Input[Boolean] = null
-  ): DataSourceDynamodbConfig = {
+  def apply(tableName: Input[String]): DataSourceDynamodbConfig = {
     val __obj = js.Dynamic.literal(tableName = tableName.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (useCallerCredentials != null) __obj.updateDynamic("useCallerCredentials")(useCallerCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceDynamodbConfig]
   }
+  @scala.inline
+  implicit class DataSourceDynamodbConfigOps[Self <: DataSourceDynamodbConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTableName(value: Input[String]): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegion(value: Input[String]): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setUseCallerCredentials(value: Input[Boolean]): Self = this.set("useCallerCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseCallerCredentials: Self = this.set("useCallerCredentials", js.undefined)
+  }
+  
 }
 

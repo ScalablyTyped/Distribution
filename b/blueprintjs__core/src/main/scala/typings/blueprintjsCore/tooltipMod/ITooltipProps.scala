@@ -2,109 +2,53 @@ package typings.blueprintjsCore.tooltipMod
 
 import typings.blueprintjsCore.blueprintjsCoreStrings.`hover-target`
 import typings.blueprintjsCore.blueprintjsCoreStrings.hover
-import typings.blueprintjsCore.intentMod.Intent
 import typings.blueprintjsCore.popoverSharedPropsMod.IPopoverSharedProps
-import typings.blueprintjsCore.popoverSharedPropsMod.PopoverPosition
 import typings.blueprintjsCore.propsMod.IIntentProps
-import typings.popperJs.mod.Boundary
-import typings.popperJs.mod.Modifiers
-import typings.react.mod.HTMLAttributes
-import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
-import typings.std.Event
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITooltipProps
   extends IPopoverSharedProps
      with IIntentProps {
   /**
     * The content that will be displayed inside of the tooltip.
     */
-  var content: Element | String
+  var content: Element | String = js.native
   /**
     * The kind of hover interaction that triggers the display of the tooltip.
     * Tooltips do not support click interactions.
     * @default PopoverInteractionKind.HOVER_TARGET_ONLY
     */
-  var interactionKind: js.UndefOr[hover | `hover-target`] = js.undefined
+  var interactionKind: js.UndefOr[hover | `hover-target`] = js.native
 }
 
 object ITooltipProps {
   @scala.inline
-  def apply(
-    content: Element | String,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    boundary: Boundary = null,
-    canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined,
-    captureDismiss: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    defaultIsOpen: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    enforceFocus: js.UndefOr[Boolean] = js.undefined,
-    hoverCloseDelay: js.UndefOr[Double] = js.undefined,
-    hoverOpenDelay: js.UndefOr[Double] = js.undefined,
-    inheritDarkTheme: js.UndefOr[Boolean] = js.undefined,
-    intent: Intent = null,
-    interactionKind: hover | `hover-target` = null,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    `lazy`: js.UndefOr[Boolean] = js.undefined,
-    modifiers: Modifiers = null,
-    onClose: /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit = null,
-    onClosed: /* node */ HTMLElement => Unit = null,
-    onClosing: /* node */ HTMLElement => Unit = null,
-    onInteraction: (/* nextOpenState */ Boolean, /* e */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => Unit = null,
-    onOpened: /* node */ HTMLElement => Unit = null,
-    onOpening: /* node */ HTMLElement => Unit = null,
-    openOnTargetFocus: js.UndefOr[Boolean] = js.undefined,
-    popoverClassName: String = null,
-    portalClassName: String = null,
-    portalContainer: HTMLElement = null,
-    position: PopoverPosition = null,
-    targetClassName: String = null,
-    targetProps: HTMLAttributes[HTMLElement] = null,
-    targetTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
-    transitionDuration: js.UndefOr[Double] = js.undefined,
-    usePortal: js.UndefOr[Boolean] = js.undefined,
-    wrapperTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null
-  ): ITooltipProps = {
+  def apply(content: Element | String): ITooltipProps = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (!js.isUndefined(canEscapeKeyClose)) __obj.updateDynamic("canEscapeKeyClose")(canEscapeKeyClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDismiss)) __obj.updateDynamic("captureDismiss")(captureDismiss.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultIsOpen)) __obj.updateDynamic("defaultIsOpen")(defaultIsOpen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverCloseDelay)) __obj.updateDynamic("hoverCloseDelay")(hoverCloseDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverOpenDelay)) __obj.updateDynamic("hoverOpenDelay")(hoverOpenDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inheritDarkTheme)) __obj.updateDynamic("inheritDarkTheme")(inheritDarkTheme.get.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (interactionKind != null) __obj.updateDynamic("interactionKind")(interactionKind.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (onClosed != null) __obj.updateDynamic("onClosed")(js.Any.fromFunction1(onClosed))
-    if (onClosing != null) __obj.updateDynamic("onClosing")(js.Any.fromFunction1(onClosing))
-    if (onInteraction != null) __obj.updateDynamic("onInteraction")(js.Any.fromFunction2(onInteraction))
-    if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction1(onOpened))
-    if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction1(onOpening))
-    if (!js.isUndefined(openOnTargetFocus)) __obj.updateDynamic("openOnTargetFocus")(openOnTargetFocus.get.asInstanceOf[js.Any])
-    if (popoverClassName != null) __obj.updateDynamic("popoverClassName")(popoverClassName.asInstanceOf[js.Any])
-    if (portalClassName != null) __obj.updateDynamic("portalClassName")(portalClassName.asInstanceOf[js.Any])
-    if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (targetClassName != null) __obj.updateDynamic("targetClassName")(targetClassName.asInstanceOf[js.Any])
-    if (targetProps != null) __obj.updateDynamic("targetProps")(targetProps.asInstanceOf[js.Any])
-    if (targetTagName != null) __obj.updateDynamic("targetTagName")(targetTagName.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal.get.asInstanceOf[js.Any])
-    if (wrapperTagName != null) __obj.updateDynamic("wrapperTagName")(wrapperTagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITooltipProps]
   }
+  @scala.inline
+  implicit class ITooltipPropsOps[Self <: ITooltipProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: Element | String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInteractionKind(value: hover | `hover-target`): Self = this.set("interactionKind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteractionKind: Self = this.set("interactionKind", js.undefined)
+  }
+  
 }
 

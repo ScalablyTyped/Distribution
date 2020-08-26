@@ -26,16 +26,9 @@ object updateIdentityPoolCommandMod extends js.Object {
           Blob
         ] {
     def this(input: UpdateIdentityPoolInput) = this()
-    /* CompleteClass */
-    override val input: UpdateIdentityPoolInput = js.native
     val middlewareStack: MiddlewareStack[UpdateIdentityPoolInput, UpdateIdentityPoolOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: CognitoIdentityResolvedConfiguration
-    ): Handler[UpdateIdentityPoolInput, UpdateIdentityPoolOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: CognitoIdentityResolvedConfiguration
     ): Handler[UpdateIdentityPoolInput, UpdateIdentityPoolOutput] = js.native
   }

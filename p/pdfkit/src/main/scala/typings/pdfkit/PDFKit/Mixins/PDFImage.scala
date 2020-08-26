@@ -11,7 +11,11 @@ trait PDFImage extends js.Object {
     */
   def image(src: js.Any): this.type = js.native
   def image(src: js.Any, options: ImageOption): this.type = js.native
+  def image(src: js.Any, x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], options: ImageOption): this.type = js.native
+  def image(src: js.Any, x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
+  def image(src: js.Any, x: js.UndefOr[scala.Nothing], y: Double, options: ImageOption): this.type = js.native
   def image(src: js.Any, x: Double): this.type = js.native
+  def image(src: js.Any, x: Double, y: js.UndefOr[scala.Nothing], options: ImageOption): this.type = js.native
   def image(src: js.Any, x: Double, y: Double): this.type = js.native
   def image(src: js.Any, x: Double, y: Double, options: ImageOption): this.type = js.native
 }

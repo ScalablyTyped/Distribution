@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoogleActionsV2DevicesAndroidAppVersionFilter extends js.Object {
   /**
     * Max version code, inclusive.
@@ -15,20 +16,39 @@ trait GoogleActionsV2DevicesAndroidAppVersionFilter extends js.Object {
     * To specify all versions until max_version, leave min_version unspecified.
     * To specify all versions from min_version, leave max_version unspecified.
     */
-  var maxVersion: js.UndefOr[Double] = js.undefined
+  var maxVersion: js.UndefOr[Double] = js.native
   /**
     * Min version code or 0, inclusive.
     */
-  var minVersion: js.UndefOr[Double] = js.undefined
+  var minVersion: js.UndefOr[Double] = js.native
 }
 
 object GoogleActionsV2DevicesAndroidAppVersionFilter {
   @scala.inline
-  def apply(maxVersion: js.UndefOr[Double] = js.undefined, minVersion: js.UndefOr[Double] = js.undefined): GoogleActionsV2DevicesAndroidAppVersionFilter = {
+  def apply(): GoogleActionsV2DevicesAndroidAppVersionFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxVersion)) __obj.updateDynamic("maxVersion")(maxVersion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minVersion)) __obj.updateDynamic("minVersion")(minVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2DevicesAndroidAppVersionFilter]
   }
+  @scala.inline
+  implicit class GoogleActionsV2DevicesAndroidAppVersionFilterOps[Self <: GoogleActionsV2DevicesAndroidAppVersionFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxVersion(value: Double): Self = this.set("maxVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxVersion: Self = this.set("maxVersion", js.undefined)
+    @scala.inline
+    def setMinVersion(value: Double): Self = this.set("minVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinVersion: Self = this.set("minVersion", js.undefined)
+  }
+  
 }
 

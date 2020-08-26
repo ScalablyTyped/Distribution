@@ -28,6 +28,7 @@ class ResourceCatalogsAssociations protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association] = js.native
   def create(params: ParamsResourceCatalogsAssociationsCreate): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association] = js.native
   def create(
     params: ParamsResourceCatalogsAssociationsCreate,
@@ -58,6 +59,7 @@ class ResourceCatalogsAssociations protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceCatalogsAssociationsDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceCatalogsAssociationsDelete,
@@ -88,6 +90,7 @@ class ResourceCatalogsAssociations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association] = js.native
   def get(params: ParamsResourceCatalogsAssociationsGet): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association] = js.native
   def get(
     params: ParamsResourceCatalogsAssociationsGet,
@@ -122,6 +125,7 @@ class ResourceCatalogsAssociations protected () extends js.Object {
   def list(
     callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponse]
   ): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponse] = js.native
   def list(params: ParamsResourceCatalogsAssociationsList): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListAssociationsResponse] = js.native
   def list(
     params: ParamsResourceCatalogsAssociationsList,

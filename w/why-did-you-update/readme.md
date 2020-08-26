@@ -12,7 +12,7 @@ Patch React to discover unnecessary re-renders
 | Keywords           | react-component |
 | # releases         | 9 |
 | # dependents       | 17 |
-| # downloads        | 2791524 |
+| # downloads        | 2867319 |
 | # stars            | 9 |
 
 ## Links

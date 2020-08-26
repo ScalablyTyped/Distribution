@@ -17,15 +17,5 @@ class ASPxClientEditClickEventArgs protected ()
     * @param htmlEvent A DHTML event object that relates to the processed event.
     */
   def this(htmlElement: js.Any, htmlEvent: js.Any) = this()
-  /**
-    * Gets the HTML element related to the event.
-    */
-  /* CompleteClass */
-  override var htmlElement: js.Any = js.native
-  /**
-    * Gets a DHTML event object that relates to the processed event.
-    */
-  /* CompleteClass */
-  override var htmlEvent: js.Any = js.native
 }
 

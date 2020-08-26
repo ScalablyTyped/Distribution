@@ -23,6 +23,14 @@ object classicNameResolver extends js.Object {
     containingFile: String,
     compilerOptions: CompilerOptions,
     host: ModuleResolutionHost,
+    cache: js.UndefOr[scala.Nothing],
+    redirectedReference: ResolvedProjectReference
+  ): ResolvedModuleWithFailedLookupLocations = js.native
+  def apply(
+    moduleName: String,
+    containingFile: String,
+    compilerOptions: CompilerOptions,
+    host: ModuleResolutionHost,
     cache: NonRelativeModuleNameResolutionCache
   ): ResolvedModuleWithFailedLookupLocations = js.native
   def apply(

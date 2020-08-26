@@ -26,17 +26,38 @@ trait GetResourcePoliciesRequest extends js.Object {
 
 object GetResourcePoliciesRequest {
   @scala.inline
-  def apply(
-    resourceArns: ResourceArnList,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: String = null,
-    principal: String = null
-  ): GetResourcePoliciesRequest = {
+  def apply(resourceArns: ResourceArnList): GetResourcePoliciesRequest = {
     val __obj = js.Dynamic.literal(resourceArns = resourceArns.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcePoliciesRequest]
   }
+  @scala.inline
+  implicit class GetResourcePoliciesRequestOps[Self <: GetResourcePoliciesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceArnsVarargs(value: String*): Self = this.set("resourceArns", js.Array(value :_*))
+    @scala.inline
+    def setResourceArns(value: ResourceArnList): Self = this.set("resourceArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setPrincipal(value: String): Self = this.set("principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipal: Self = this.set("principal", js.undefined)
+  }
+  
 }
 

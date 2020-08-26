@@ -10,45 +10,72 @@ import scala.scalajs.js.annotation._
 /**
   * A minimal subset of the formal JSON Schema that describes a property.
   */
+@js.native
 trait IProperty extends PartialJSONObject {
   /**
     * The default value, if any.
     */
-  var default: js.UndefOr[PartialJSONValue] = js.undefined
+  var default: js.UndefOr[PartialJSONValue] = js.native
   /**
     * The schema description.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * The schema's child properties.
     */
-  var properties: js.UndefOr[StringDictionary[IProperty]] = js.undefined
+  var properties: js.UndefOr[StringDictionary[IProperty]] = js.native
   /**
     * The title of a property.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * The type or types of the data.
     */
-  var `type`: js.UndefOr[Primitive | js.Array[Primitive]] = js.undefined
+  var `type`: js.UndefOr[Primitive | js.Array[Primitive]] = js.native
 }
 
 object IProperty {
   @scala.inline
-  def apply(
-    default: js.UndefOr[Null | PartialJSONValue] = js.undefined,
-    description: String = null,
-    properties: StringDictionary[IProperty] = null,
-    title: String = null,
-    `type`: Primitive | js.Array[Primitive] = null
-  ): IProperty = {
+  def apply(): IProperty = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProperty]
   }
+  @scala.inline
+  implicit class IPropertyOps[Self <: IProperty] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefault(value: PartialJSONValue): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setDefaultNull: Self = this.set("default", null)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[IProperty]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTypeVarargs(value: Primitive*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: Primitive | js.Array[Primitive]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

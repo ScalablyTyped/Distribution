@@ -28,6 +28,7 @@ class Parser protected () extends js.Object {
   var _posStack: js.UndefOr[js.Array[Position]] = js.native
   var _t: Tokenizer = js.native
   def finish[T /* <: Node */](node: T): T = js.native
+  def finish[T /* <: Node */](node: T, start: js.UndefOr[scala.Nothing], end: Position): T = js.native
   def finish[T /* <: Node */](node: T, start: Position): T = js.native
   def finish[T /* <: Node */](node: T, start: Position, end: Position): T = js.native
   def getEnd(node: Node): js.UndefOr[Position] = js.native

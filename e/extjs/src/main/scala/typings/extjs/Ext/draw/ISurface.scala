@@ -1,197 +1,161 @@
 package typings.extjs.Ext.draw
 
 import typings.extjs.Ext.Array
-import typings.extjs.Ext.IClass
 import typings.extjs.Ext.util.IObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ISurface extends IObservable {
   /** [Method] Adds a Sprite to the surface
     * @param args Ext.draw.Sprite[]/Ext.draw.Sprite... One or more Sprite objects or configs.
     * @returns Ext.draw.Sprite[]/Ext.draw.Sprite The sprites added.
     */
-  var add: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], _]] = js.undefined
+  var add: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], _]] = js.native
   /** [Method] Adds one or more CSS classes to the element
     * @param sprite Object The sprite to add the class to.
     * @param className String/String[] The CSS class to add, or an array of classes
     */
   var addCls: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Adds a gradient definition to the Surface
     * @param gradient Object A gradient config.
     */
-  var addGradient: js.UndefOr[js.Function1[/* gradient */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addGradient: js.UndefOr[js.Function1[/* gradient */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Destroys the surface  */
-  var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var destroy: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Returns a new group or an existent group associated with the current surface
     * @param id String The unique identifier of the group.
     * @returns Object The Ext.draw.CompositeSprite.
     */
-  var getGroup: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], _]] = js.undefined
+  var getGroup: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], _]] = js.native
   /** [Method] Retrieves the id of this component  */
-  var getId: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var getId: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (Number) */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /** [Config Option] (Ext.draw.Sprite[]) */
-  var items: js.UndefOr[Array] = js.undefined
+  var items: js.UndefOr[Array] = js.native
   /** [Method] Removes a given sprite from the surface optionally destroying the sprite in the process
     * @param sprite Ext.draw.Sprite
     * @param destroySprite Boolean
     */
   var remove: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Removes all sprites from the surface optionally destroying the sprites in the process
     * @param destroySprites Boolean Whether to destroy all sprites when removing them.
     */
-  var removeAll: js.UndefOr[js.Function1[/* destroySprites */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var removeAll: js.UndefOr[js.Function1[/* destroySprites */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Removes one or more CSS classes from the element
     * @param sprite Object The sprite to remove the class from.
     * @param className String/String[] The CSS class to remove, or an array of classes
     */
   var removeCls: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the size of the surface
     * @param w Number The new width of the canvas.
     * @param h Number The new height of the canvas.
     */
-  var setSize: js.UndefOr[js.Function2[/* w */ js.UndefOr[Double], /* h */ js.UndefOr[Double], Unit]] = js.undefined
+  var setSize: js.UndefOr[js.Function2[/* w */ js.UndefOr[Double], /* h */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets CSS style attributes to an element
     * @param sprite Object The sprite to add, or an array of classes to
     * @param styles Object An Object with CSS styles.
     */
   var setStyle: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Changes the text in the sprite element
     * @param sprite Object The Sprite to change the text.
     * @param text String The new text to be set.
     */
   var setText: js.UndefOr[
     js.Function2[/* sprite */ js.UndefOr[js.Any], /* text */ js.UndefOr[String], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (Number) */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object ISurface {
   @scala.inline
-  def apply(
-    add: /* args */ js.UndefOr[js.Any] => _ = null,
-    addCls: (/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any]) => Unit = null,
-    addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addGradient: /* gradient */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    addManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clearListeners: () => Unit = null,
-    clearManagedListeners: () => Unit = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    enableBubble: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    extend: String = null,
-    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
-    fireEventArgs: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean = null,
-    getGroup: /* id */ js.UndefOr[String] => _ = null,
-    getId: () => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
-    hasListeners: js.Any = null,
-    height: js.UndefOr[Double] = js.undefined,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => ISurface = null,
-    isObservable: js.UndefOr[Boolean] = js.undefined,
-    items: Array = null,
-    listeners: js.Any = null,
-    mixins: js.Any = null,
-    mon: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    mun: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
-    relayEvents: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => _ = null,
-    remove: (/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean]) => Unit = null,
-    removeAll: /* destroySprites */ js.UndefOr[Boolean] => Unit = null,
-    removeCls: (/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    removeManagedListener: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    requires: Array = null,
-    resumeEvent: /* repeated */ js.Any => Unit = null,
-    resumeEvents: () => Unit = null,
-    self: IClass = null,
-    setSize: (/* w */ js.UndefOr[Double], /* h */ js.UndefOr[Double]) => Unit = null,
-    setStyle: (/* sprite */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any]) => Unit = null,
-    setText: (/* sprite */ js.UndefOr[js.Any], /* text */ js.UndefOr[String]) => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    suspendEvent: /* repeated */ js.Any => Unit = null,
-    suspendEvents: /* queueSuspended */ js.UndefOr[Boolean] => Unit = null,
-    un: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    uses: Array = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): ISurface = {
+  def apply(): ISurface = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
-    if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction2(addCls))
-    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
-    if (addGradient != null) __obj.updateDynamic("addGradient")(js.Any.fromFunction1(addGradient))
-    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction4(addListener))
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (clearManagedListeners != null) __obj.updateDynamic("clearManagedListeners")(js.Any.fromFunction0(clearManagedListeners))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (fireEventArgs != null) __obj.updateDynamic("fireEventArgs")(js.Any.fromFunction2(fireEventArgs))
-    if (getGroup != null) __obj.updateDynamic("getGroup")(js.Any.fromFunction1(getGroup))
-    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (hasListeners != null) __obj.updateDynamic("hasListeners")(hasListeners.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isObservable)) __obj.updateDynamic("isObservable")(isObservable.get.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction4(on))
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction3(relayEvents))
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction2(remove))
-    if (removeAll != null) __obj.updateDynamic("removeAll")(js.Any.fromFunction1(removeAll))
-    if (removeCls != null) __obj.updateDynamic("removeCls")(js.Any.fromFunction2(removeCls))
-    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction3(removeListener))
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (resumeEvent != null) __obj.updateDynamic("resumeEvent")(js.Any.fromFunction1(resumeEvent))
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction0(resumeEvents))
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction2(setSize))
-    if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction2(setStyle))
-    if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction2(setText))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (suspendEvent != null) __obj.updateDynamic("suspendEvent")(js.Any.fromFunction1(suspendEvent))
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction1(suspendEvents))
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISurface]
   }
+  @scala.inline
+  implicit class ISurfaceOps[Self <: ISurface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: /* args */ js.UndefOr[js.Any] => _): Self = this.set("add", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAdd: Self = this.set("add", js.undefined)
+    @scala.inline
+    def setAddCls(value: (/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any]) => Unit): Self = this.set("addCls", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAddCls: Self = this.set("addCls", js.undefined)
+    @scala.inline
+    def setAddGradient(value: /* gradient */ js.UndefOr[js.Any] => Unit): Self = this.set("addGradient", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAddGradient: Self = this.set("addGradient", js.undefined)
+    @scala.inline
+    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    @scala.inline
+    def setGetGroup(value: /* id */ js.UndefOr[String] => _): Self = this.set("getGroup", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetGroup: Self = this.set("getGroup", js.undefined)
+    @scala.inline
+    def setGetId(value: () => Unit): Self = this.set("getId", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetId: Self = this.set("getId", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setItems(value: Array): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setRemove(value: (/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean]) => Unit): Self = this.set("remove", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRemove: Self = this.set("remove", js.undefined)
+    @scala.inline
+    def setRemoveAll(value: /* destroySprites */ js.UndefOr[Boolean] => Unit): Self = this.set("removeAll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemoveAll: Self = this.set("removeAll", js.undefined)
+    @scala.inline
+    def setRemoveCls(value: (/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any]) => Unit): Self = this.set("removeCls", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRemoveCls: Self = this.set("removeCls", js.undefined)
+    @scala.inline
+    def setSetSize(value: (/* w */ js.UndefOr[Double], /* h */ js.UndefOr[Double]) => Unit): Self = this.set("setSize", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetSize: Self = this.set("setSize", js.undefined)
+    @scala.inline
+    def setSetStyle(value: (/* sprite */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any]) => Unit): Self = this.set("setStyle", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetStyle: Self = this.set("setStyle", js.undefined)
+    @scala.inline
+    def setSetText(value: (/* sprite */ js.UndefOr[js.Any], /* text */ js.UndefOr[String]) => Unit): Self = this.set("setText", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetText: Self = this.set("setText", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

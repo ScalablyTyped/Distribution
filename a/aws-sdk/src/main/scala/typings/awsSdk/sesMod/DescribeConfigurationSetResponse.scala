@@ -27,20 +27,44 @@ trait DescribeConfigurationSetResponse extends js.Object {
 
 object DescribeConfigurationSetResponse {
   @scala.inline
-  def apply(
-    ConfigurationSet: ConfigurationSet = null,
-    DeliveryOptions: DeliveryOptions = null,
-    EventDestinations: EventDestinations = null,
-    ReputationOptions: ReputationOptions = null,
-    TrackingOptions: TrackingOptions = null
-  ): DescribeConfigurationSetResponse = {
+  def apply(): DescribeConfigurationSetResponse = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationSet != null) __obj.updateDynamic("ConfigurationSet")(ConfigurationSet.asInstanceOf[js.Any])
-    if (DeliveryOptions != null) __obj.updateDynamic("DeliveryOptions")(DeliveryOptions.asInstanceOf[js.Any])
-    if (EventDestinations != null) __obj.updateDynamic("EventDestinations")(EventDestinations.asInstanceOf[js.Any])
-    if (ReputationOptions != null) __obj.updateDynamic("ReputationOptions")(ReputationOptions.asInstanceOf[js.Any])
-    if (TrackingOptions != null) __obj.updateDynamic("TrackingOptions")(TrackingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationSetResponse]
   }
+  @scala.inline
+  implicit class DescribeConfigurationSetResponseOps[Self <: DescribeConfigurationSetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationSet(value: ConfigurationSet): Self = this.set("ConfigurationSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationSet: Self = this.set("ConfigurationSet", js.undefined)
+    @scala.inline
+    def setDeliveryOptions(value: DeliveryOptions): Self = this.set("DeliveryOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryOptions: Self = this.set("DeliveryOptions", js.undefined)
+    @scala.inline
+    def setEventDestinationsVarargs(value: EventDestination*): Self = this.set("EventDestinations", js.Array(value :_*))
+    @scala.inline
+    def setEventDestinations(value: EventDestinations): Self = this.set("EventDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventDestinations: Self = this.set("EventDestinations", js.undefined)
+    @scala.inline
+    def setReputationOptions(value: ReputationOptions): Self = this.set("ReputationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReputationOptions: Self = this.set("ReputationOptions", js.undefined)
+    @scala.inline
+    def setTrackingOptions(value: TrackingOptions): Self = this.set("TrackingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackingOptions: Self = this.set("TrackingOptions", js.undefined)
+  }
+  
 }
 

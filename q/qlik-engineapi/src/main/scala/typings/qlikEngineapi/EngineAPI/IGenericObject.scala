@@ -286,6 +286,12 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A Promise of String qUrl: <url of the exported file> and qWarnings: [1000] only if exported data is truncated
     */
   def exportData(qFileType: FileType, qPath: String): js.Promise[String] = js.native
+  def exportData(
+    qFileType: FileType,
+    qPath: String,
+    qFileName: js.UndefOr[scala.Nothing],
+    qExportState: ExportStateType
+  ): js.Promise[String] = js.native
   def exportData(qFileType: FileType, qPath: String, qFileName: String): js.Promise[String] = js.native
   def exportData(qFileType: FileType, qPath: String, qFileName: String, qExportState: ExportStateType): js.Promise[String] = js.native
   /**
@@ -567,6 +573,13 @@ trait IGenericObject extends IGeneratedAPI {
     qPath: String,
     qRanges: INxMultiRangeSelectInfo,
     qDeselectOnlyOneSelected: Boolean,
+    qColumnsToSelect: js.UndefOr[scala.Nothing],
+    qOrMode: Boolean
+  ): js.Promise[Boolean] = js.native
+  def multiRangeSelectHyperCubeValues(
+    qPath: String,
+    qRanges: INxMultiRangeSelectInfo,
+    qDeselectOnlyOneSelected: Boolean,
     qColumnsToSelect: js.Array[Double]
   ): js.Promise[Boolean] = js.native
   def multiRangeSelectHyperCubeValues(
@@ -606,6 +619,13 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - true or false
     */
   def rangeSelectHyperCubeValues(qPath: String, qRanges: js.Array[INxRangeSelectInfo], qDeselectOnlyOneSelected: Boolean): js.Promise[Boolean] = js.native
+  def rangeSelectHyperCubeValues(
+    qPath: String,
+    qRanges: js.Array[INxRangeSelectInfo],
+    qDeselectOnlyOneSelected: Boolean,
+    qColumnsToSelect: js.UndefOr[scala.Nothing],
+    qOrMode: Boolean
+  ): js.Promise[Boolean] = js.native
   def rangeSelectHyperCubeValues(
     qPath: String,
     qRanges: js.Array[INxRangeSelectInfo],

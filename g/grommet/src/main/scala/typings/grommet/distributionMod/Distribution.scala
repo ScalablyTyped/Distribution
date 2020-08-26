@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Distribution", "Distribution")
+@JSImport("grommet/es6/components/Distribution", "Distribution")
 @js.native
 class Distribution protected ()
   extends Component[
@@ -26,7 +26,7 @@ class Distribution protected ()
   ) = this()
 }
 
-@JSImport("grommet/components/Distribution", "Distribution")
+@JSImport("grommet/es6/components/Distribution", "Distribution")
 @js.native
 object Distribution extends TopLevel[
       ComponentClass[

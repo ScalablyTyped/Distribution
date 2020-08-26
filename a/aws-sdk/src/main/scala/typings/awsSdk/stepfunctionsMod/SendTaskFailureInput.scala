@@ -22,11 +22,32 @@ trait SendTaskFailureInput extends js.Object {
 
 object SendTaskFailureInput {
   @scala.inline
-  def apply(taskToken: TaskToken, cause: SensitiveCause = null, error: SensitiveError = null): SendTaskFailureInput = {
+  def apply(taskToken: TaskToken): SendTaskFailureInput = {
     val __obj = js.Dynamic.literal(taskToken = taskToken.asInstanceOf[js.Any])
-    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendTaskFailureInput]
   }
+  @scala.inline
+  implicit class SendTaskFailureInputOps[Self <: SendTaskFailureInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTaskToken(value: TaskToken): Self = this.set("taskToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCause(value: SensitiveCause): Self = this.set("cause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCause: Self = this.set("cause", js.undefined)
+    @scala.inline
+    def setError(value: SensitiveError): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+  }
+  
 }
 

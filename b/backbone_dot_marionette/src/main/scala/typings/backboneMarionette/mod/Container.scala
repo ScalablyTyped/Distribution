@@ -2,6 +2,7 @@ package typings.backboneMarionette.mod
 
 import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
+import typings.underscore.mod.List
 import typings.underscore.mod.ListIterator
 import typings.underscore.mod.MemoIterator
 import scala.scalajs.js
@@ -19,13 +20,13 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.all
     */
-  def all(iterator: ListIterator[TView, Boolean]): Boolean = js.native
-  def all(iterator: ListIterator[TView, Boolean], context: js.Any): Boolean = js.native
+  def all(iterator: ListIterator[TView, Boolean, List[TView]]): Boolean = js.native
+  def all(iterator: ListIterator[TView, Boolean, List[TView]], context: js.Any): Boolean = js.native
   /**
     * @see _.any
     */
-  def any(iterator: ListIterator[TView, Boolean]): Boolean = js.native
-  def any(iterator: ListIterator[TView, Boolean], context: js.Any): Boolean = js.native
+  def any(iterator: ListIterator[TView, Boolean, List[TView]]): Boolean = js.native
+  def any(iterator: ListIterator[TView, Boolean, List[TView]], context: js.Any): Boolean = js.native
   /**
     * @see _.contains
     */
@@ -34,28 +35,28 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.detect
     */
-  def detect(iterator: ListIterator[TView, Boolean]): js.UndefOr[Container[TView]] = js.native
-  def detect(iterator: ListIterator[TView, Boolean], context: js.Any): js.UndefOr[Container[TView]] = js.native
+  def detect(iterator: ListIterator[TView, Boolean, List[TView]]): js.UndefOr[Container[TView]] = js.native
+  def detect(iterator: ListIterator[TView, Boolean, List[TView]], context: js.Any): js.UndefOr[Container[TView]] = js.native
   /**
     * @see _.each
     */
-  def each(iterator: ListIterator[TView, Unit]): Container[TView] = js.native
-  def each(iterator: ListIterator[TView, Unit], context: js.Any): Container[TView] = js.native
+  def each(iterator: ListIterator[TView, Unit, List[TView]]): Container[TView] = js.native
+  def each(iterator: ListIterator[TView, Unit, List[TView]], context: js.Any): Container[TView] = js.native
   /**
     * @see _.every
     */
-  def every(iterator: ListIterator[TView, Boolean]): Boolean = js.native
-  def every(iterator: ListIterator[TView, Boolean], context: js.Any): Boolean = js.native
+  def every(iterator: ListIterator[TView, Boolean, List[TView]]): Boolean = js.native
+  def every(iterator: ListIterator[TView, Boolean, List[TView]], context: js.Any): Boolean = js.native
   /**
     * @see _.filter
     */
-  def filter(iterator: ListIterator[TView, Boolean]): js.Array[TView] = js.native
-  def filter(iterator: ListIterator[TView, Boolean], context: js.Any): js.Array[TView] = js.native
+  def filter(iterator: ListIterator[TView, Boolean, List[TView]]): js.Array[TView] = js.native
+  def filter(iterator: ListIterator[TView, Boolean, List[TView]], context: js.Any): js.Array[TView] = js.native
   /**
     * @see _.find
     */
-  def find(iterator: ListIterator[TView, Boolean]): js.UndefOr[Container[TView]] = js.native
-  def find(iterator: ListIterator[TView, Boolean], context: js.Any): js.UndefOr[Container[TView]] = js.native
+  def find(iterator: ListIterator[TView, Boolean, List[TView]]): js.UndefOr[Container[TView]] = js.native
+  def find(iterator: ListIterator[TView, Boolean, List[TView]], context: js.Any): js.UndefOr[Container[TView]] = js.native
   /**
     * Find a view by it's cid.
     */
@@ -83,8 +84,8 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.forEach
     */
-  def forEach(iterator: ListIterator[TView, Unit]): Container[TView] = js.native
-  def forEach(iterator: ListIterator[TView, Unit], context: js.Any): Container[TView] = js.native
+  def forEach(iterator: ListIterator[TView, Unit, List[TView]]): Container[TView] = js.native
+  def forEach(iterator: ListIterator[TView, Unit, List[TView]], context: js.Any): Container[TView] = js.native
   /**
     * @see _.include
     */
@@ -110,13 +111,13 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.map
     */
-  def map[TResult](iterator: ListIterator[TView, TResult]): js.Array[TResult] = js.native
-  def map[TResult](iterator: ListIterator[TView, TResult], context: js.Any): js.Array[TResult] = js.native
+  def map[TResult](iterator: ListIterator[TView, TResult, List[TView]]): js.Array[TResult] = js.native
+  def map[TResult](iterator: ListIterator[TView, TResult, List[TView]], context: js.Any): js.Array[TResult] = js.native
   /**
     * @see _.partition
     */
-  def partition(iterator: ListIterator[TView, Boolean]): js.Array[js.Array[TView]] = js.native
-  def partition(iterator: ListIterator[TView, Boolean], context: js.Any): js.Array[js.Array[TView]] = js.native
+  def partition(iterator: ListIterator[TView, Boolean, List[TView]]): js.Array[js.Array[TView]] = js.native
+  def partition(iterator: ListIterator[TView, Boolean, List[TView]], context: js.Any): js.Array[js.Array[TView]] = js.native
   /**
     * @see _.pluck
     */
@@ -124,14 +125,19 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.reduce
     */
-  def reduce[TResult](iterator: MemoIterator[TView, TResult]): TResult = js.native
-  def reduce[TResult](iterator: MemoIterator[TView, TResult], memo: TResult): TResult = js.native
-  def reduce[TResult](iterator: MemoIterator[TView, TResult], memo: TResult, context: js.Any): TResult = js.native
+  def reduce[TResult](iterator: MemoIterator[TView, TResult, List[TView]]): TResult = js.native
+  def reduce[TResult](iterator: MemoIterator[TView, TResult, List[TView]], memo: TResult): TResult = js.native
+  def reduce[TResult](iterator: MemoIterator[TView, TResult, List[TView]], memo: TResult, context: js.Any): TResult = js.native
+  def reduce[TResult](
+    iterator: MemoIterator[TView, TResult, List[TView]],
+    memo: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): TResult = js.native
   /**
     * @see _.reject
     */
-  def reject(iterator: ListIterator[TView, Boolean]): js.Array[TView] = js.native
-  def reject(iterator: ListIterator[TView, Boolean], context: js.Any): js.Array[TView] = js.native
+  def reject(iterator: ListIterator[TView, Boolean, List[TView]]): js.Array[TView] = js.native
+  def reject(iterator: ListIterator[TView, Boolean, List[TView]], context: js.Any): js.Array[TView] = js.native
   /**
     * Find a view by it's cid.
     */
@@ -144,13 +150,13 @@ class Container[TView] () extends js.Object {
   /**
     * @see _.select
     */
-  def select(iterator: ListIterator[TView, Boolean]): js.Array[TView] = js.native
-  def select(iterator: ListIterator[TView, Boolean], context: js.Any): js.Array[TView] = js.native
+  def select(iterator: ListIterator[TView, Boolean, List[TView]]): js.Array[TView] = js.native
+  def select(iterator: ListIterator[TView, Boolean, List[TView]], context: js.Any): js.Array[TView] = js.native
   /**
     * @see _.some
     */
-  def some(iterator: ListIterator[TView, Boolean]): Boolean = js.native
-  def some(iterator: ListIterator[TView, Boolean], context: js.Any): Boolean = js.native
+  def some(iterator: ListIterator[TView, Boolean, List[TView]]): Boolean = js.native
+  def some(iterator: ListIterator[TView, Boolean, List[TView]], context: js.Any): Boolean = js.native
   /**
     * @see _.toArray
     */

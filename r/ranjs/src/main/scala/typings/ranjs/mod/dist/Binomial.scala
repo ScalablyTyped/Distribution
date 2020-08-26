@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Binomial ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Binomial] {
   def this(n: Double) = this()
+  def this(n: js.UndefOr[scala.Nothing], p: Double) = this()
   def this(n: Double, p: Double) = this()
 }
 

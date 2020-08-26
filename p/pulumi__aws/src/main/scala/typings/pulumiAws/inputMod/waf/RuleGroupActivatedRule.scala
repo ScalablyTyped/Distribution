@@ -16,26 +16,43 @@ trait RuleGroupActivatedRule extends js.Object {
     */
   var priority: Input[Double] = js.native
   /**
-    * The ID of a [rule](https://www.terraform.io/docs/providers/aws/r/waf_rule.html)
+    * The ID of a `wafRule`
     */
   var ruleId: Input[String] = js.native
   /**
-    * The rule type, either [`REGULAR`](https://www.terraform.io/docs/providers/aws/r/waf_rule.html), [`RATE_BASED`](https://www.terraform.io/docs/providers/aws/r/waf_rate_based_rule.html), or `GROUP`. Defaults to `REGULAR`.
+    * The rule type, either `REGULAR`, `RATE_BASED`, or `GROUP`. Defaults to `REGULAR`.
     */
   var `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object RuleGroupActivatedRule {
   @scala.inline
-  def apply(
-    action: Input[RuleGroupActivatedRuleAction],
-    priority: Input[Double],
-    ruleId: Input[String],
-    `type`: Input[String] = null
-  ): RuleGroupActivatedRule = {
+  def apply(action: Input[RuleGroupActivatedRuleAction], priority: Input[Double], ruleId: Input[String]): RuleGroupActivatedRule = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupActivatedRule]
   }
+  @scala.inline
+  implicit class RuleGroupActivatedRuleOps[Self <: RuleGroupActivatedRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: Input[RuleGroupActivatedRuleAction]): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuleId(value: Input[String]): Self = this.set("ruleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

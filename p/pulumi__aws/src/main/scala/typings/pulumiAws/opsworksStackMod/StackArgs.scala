@@ -87,9 +87,9 @@ trait StackArgs extends js.Object {
     */
   val serviceRoleArn: Input[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Boolean value controlling whether the custom cookbook settings are
     * enabled.
@@ -108,51 +108,106 @@ trait StackArgs extends js.Object {
 
 object StackArgs {
   @scala.inline
-  def apply(
-    defaultInstanceProfileArn: Input[String],
-    region: Input[String],
-    serviceRoleArn: Input[String],
-    agentVersion: Input[String] = null,
-    berkshelfVersion: Input[String] = null,
-    color: Input[String] = null,
-    configurationManagerName: Input[String] = null,
-    configurationManagerVersion: Input[String] = null,
-    customCookbooksSources: Input[js.Array[Input[StackCustomCookbooksSource]]] = null,
-    customJson: Input[String] = null,
-    defaultAvailabilityZone: Input[String] = null,
-    defaultOs: Input[String] = null,
-    defaultRootDeviceType: Input[String] = null,
-    defaultSshKeyName: Input[String] = null,
-    defaultSubnetId: Input[String] = null,
-    hostnameTheme: Input[String] = null,
-    manageBerkshelf: Input[Boolean] = null,
-    name: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    useCustomCookbooks: Input[Boolean] = null,
-    useOpsworksSecurityGroups: Input[Boolean] = null,
-    vpcId: Input[String] = null
-  ): StackArgs = {
+  def apply(defaultInstanceProfileArn: Input[String], region: Input[String], serviceRoleArn: Input[String]): StackArgs = {
     val __obj = js.Dynamic.literal(defaultInstanceProfileArn = defaultInstanceProfileArn.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], serviceRoleArn = serviceRoleArn.asInstanceOf[js.Any])
-    if (agentVersion != null) __obj.updateDynamic("agentVersion")(agentVersion.asInstanceOf[js.Any])
-    if (berkshelfVersion != null) __obj.updateDynamic("berkshelfVersion")(berkshelfVersion.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (configurationManagerName != null) __obj.updateDynamic("configurationManagerName")(configurationManagerName.asInstanceOf[js.Any])
-    if (configurationManagerVersion != null) __obj.updateDynamic("configurationManagerVersion")(configurationManagerVersion.asInstanceOf[js.Any])
-    if (customCookbooksSources != null) __obj.updateDynamic("customCookbooksSources")(customCookbooksSources.asInstanceOf[js.Any])
-    if (customJson != null) __obj.updateDynamic("customJson")(customJson.asInstanceOf[js.Any])
-    if (defaultAvailabilityZone != null) __obj.updateDynamic("defaultAvailabilityZone")(defaultAvailabilityZone.asInstanceOf[js.Any])
-    if (defaultOs != null) __obj.updateDynamic("defaultOs")(defaultOs.asInstanceOf[js.Any])
-    if (defaultRootDeviceType != null) __obj.updateDynamic("defaultRootDeviceType")(defaultRootDeviceType.asInstanceOf[js.Any])
-    if (defaultSshKeyName != null) __obj.updateDynamic("defaultSshKeyName")(defaultSshKeyName.asInstanceOf[js.Any])
-    if (defaultSubnetId != null) __obj.updateDynamic("defaultSubnetId")(defaultSubnetId.asInstanceOf[js.Any])
-    if (hostnameTheme != null) __obj.updateDynamic("hostnameTheme")(hostnameTheme.asInstanceOf[js.Any])
-    if (manageBerkshelf != null) __obj.updateDynamic("manageBerkshelf")(manageBerkshelf.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (useCustomCookbooks != null) __obj.updateDynamic("useCustomCookbooks")(useCustomCookbooks.asInstanceOf[js.Any])
-    if (useOpsworksSecurityGroups != null) __obj.updateDynamic("useOpsworksSecurityGroups")(useOpsworksSecurityGroups.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackArgs]
   }
+  @scala.inline
+  implicit class StackArgsOps[Self <: StackArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultInstanceProfileArn(value: Input[String]): Self = this.set("defaultInstanceProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegion(value: Input[String]): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceRoleArn(value: Input[String]): Self = this.set("serviceRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAgentVersion(value: Input[String]): Self = this.set("agentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentVersion: Self = this.set("agentVersion", js.undefined)
+    @scala.inline
+    def setBerkshelfVersion(value: Input[String]): Self = this.set("berkshelfVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBerkshelfVersion: Self = this.set("berkshelfVersion", js.undefined)
+    @scala.inline
+    def setColor(value: Input[String]): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setConfigurationManagerName(value: Input[String]): Self = this.set("configurationManagerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationManagerName: Self = this.set("configurationManagerName", js.undefined)
+    @scala.inline
+    def setConfigurationManagerVersion(value: Input[String]): Self = this.set("configurationManagerVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationManagerVersion: Self = this.set("configurationManagerVersion", js.undefined)
+    @scala.inline
+    def setCustomCookbooksSourcesVarargs(value: Input[StackCustomCookbooksSource]*): Self = this.set("customCookbooksSources", js.Array(value :_*))
+    @scala.inline
+    def setCustomCookbooksSources(value: Input[js.Array[Input[StackCustomCookbooksSource]]]): Self = this.set("customCookbooksSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomCookbooksSources: Self = this.set("customCookbooksSources", js.undefined)
+    @scala.inline
+    def setCustomJson(value: Input[String]): Self = this.set("customJson", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomJson: Self = this.set("customJson", js.undefined)
+    @scala.inline
+    def setDefaultAvailabilityZone(value: Input[String]): Self = this.set("defaultAvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAvailabilityZone: Self = this.set("defaultAvailabilityZone", js.undefined)
+    @scala.inline
+    def setDefaultOs(value: Input[String]): Self = this.set("defaultOs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultOs: Self = this.set("defaultOs", js.undefined)
+    @scala.inline
+    def setDefaultRootDeviceType(value: Input[String]): Self = this.set("defaultRootDeviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRootDeviceType: Self = this.set("defaultRootDeviceType", js.undefined)
+    @scala.inline
+    def setDefaultSshKeyName(value: Input[String]): Self = this.set("defaultSshKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSshKeyName: Self = this.set("defaultSshKeyName", js.undefined)
+    @scala.inline
+    def setDefaultSubnetId(value: Input[String]): Self = this.set("defaultSubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSubnetId: Self = this.set("defaultSubnetId", js.undefined)
+    @scala.inline
+    def setHostnameTheme(value: Input[String]): Self = this.set("hostnameTheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostnameTheme: Self = this.set("hostnameTheme", js.undefined)
+    @scala.inline
+    def setManageBerkshelf(value: Input[Boolean]): Self = this.set("manageBerkshelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManageBerkshelf: Self = this.set("manageBerkshelf", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUseCustomCookbooks(value: Input[Boolean]): Self = this.set("useCustomCookbooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseCustomCookbooks: Self = this.set("useCustomCookbooks", js.undefined)
+    @scala.inline
+    def setUseOpsworksSecurityGroups(value: Input[Boolean]): Self = this.set("useOpsworksSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseOpsworksSecurityGroups: Self = this.set("useOpsworksSecurityGroups", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

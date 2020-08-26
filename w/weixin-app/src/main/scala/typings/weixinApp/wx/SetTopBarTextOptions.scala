@@ -5,27 +5,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 界面-----设置置顶信息
+@js.native
 trait SetTopBarTextOptions
   extends BaseOptions[js.Any, js.Any] {
   /**
     * 置顶栏文字内容
     */
-  var text: String
+  var text: String = js.native
 }
 
 object SetTopBarTextOptions {
   @scala.inline
-  def apply(
-    text: String,
-    complete: /* res */ js.Any => Unit = null,
-    fail: js.Any => Unit = null,
-    success: js.Any => Unit = null
-  ): SetTopBarTextOptions = {
+  def apply(text: String): SetTopBarTextOptions = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[SetTopBarTextOptions]
   }
+  @scala.inline
+  implicit class SetTopBarTextOptionsOps[Self <: SetTopBarTextOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+  }
+  
 }
 

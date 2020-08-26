@@ -70,32 +70,72 @@ trait SchemaAccount extends js.Object {
 
 object SchemaAccount {
   @scala.inline
-  def apply(
-    adsLinks: js.Array[SchemaAccountAdsLink] = null,
-    adultContent: js.UndefOr[Boolean] = js.undefined,
-    businessInformation: SchemaAccountBusinessInformation = null,
-    googleMyBusinessLink: SchemaAccountGoogleMyBusinessLink = null,
-    id: String = null,
-    kind: String = null,
-    name: String = null,
-    sellerId: String = null,
-    users: js.Array[SchemaAccountUser] = null,
-    websiteUrl: String = null,
-    youtubeChannelLinks: js.Array[SchemaAccountYouTubeChannelLink] = null
-  ): SchemaAccount = {
+  def apply(): SchemaAccount = {
     val __obj = js.Dynamic.literal()
-    if (adsLinks != null) __obj.updateDynamic("adsLinks")(adsLinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(adultContent)) __obj.updateDynamic("adultContent")(adultContent.get.asInstanceOf[js.Any])
-    if (businessInformation != null) __obj.updateDynamic("businessInformation")(businessInformation.asInstanceOf[js.Any])
-    if (googleMyBusinessLink != null) __obj.updateDynamic("googleMyBusinessLink")(googleMyBusinessLink.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sellerId != null) __obj.updateDynamic("sellerId")(sellerId.asInstanceOf[js.Any])
-    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
-    if (youtubeChannelLinks != null) __obj.updateDynamic("youtubeChannelLinks")(youtubeChannelLinks.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccount]
   }
+  @scala.inline
+  implicit class SchemaAccountOps[Self <: SchemaAccount] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdsLinksVarargs(value: SchemaAccountAdsLink*): Self = this.set("adsLinks", js.Array(value :_*))
+    @scala.inline
+    def setAdsLinks(value: js.Array[SchemaAccountAdsLink]): Self = this.set("adsLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdsLinks: Self = this.set("adsLinks", js.undefined)
+    @scala.inline
+    def setAdultContent(value: Boolean): Self = this.set("adultContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdultContent: Self = this.set("adultContent", js.undefined)
+    @scala.inline
+    def setBusinessInformation(value: SchemaAccountBusinessInformation): Self = this.set("businessInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBusinessInformation: Self = this.set("businessInformation", js.undefined)
+    @scala.inline
+    def setGoogleMyBusinessLink(value: SchemaAccountGoogleMyBusinessLink): Self = this.set("googleMyBusinessLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogleMyBusinessLink: Self = this.set("googleMyBusinessLink", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSellerId(value: String): Self = this.set("sellerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSellerId: Self = this.set("sellerId", js.undefined)
+    @scala.inline
+    def setUsersVarargs(value: SchemaAccountUser*): Self = this.set("users", js.Array(value :_*))
+    @scala.inline
+    def setUsers(value: js.Array[SchemaAccountUser]): Self = this.set("users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsers: Self = this.set("users", js.undefined)
+    @scala.inline
+    def setWebsiteUrl(value: String): Self = this.set("websiteUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteUrl: Self = this.set("websiteUrl", js.undefined)
+    @scala.inline
+    def setYoutubeChannelLinksVarargs(value: SchemaAccountYouTubeChannelLink*): Self = this.set("youtubeChannelLinks", js.Array(value :_*))
+    @scala.inline
+    def setYoutubeChannelLinks(value: js.Array[SchemaAccountYouTubeChannelLink]): Self = this.set("youtubeChannelLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYoutubeChannelLinks: Self = this.set("youtubeChannelLinks", js.undefined)
+  }
+  
 }
 

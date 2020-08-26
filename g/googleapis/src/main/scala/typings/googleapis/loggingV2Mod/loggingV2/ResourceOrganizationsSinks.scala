@@ -32,6 +32,7 @@ class ResourceOrganizationsSinks protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaLogSink] = js.native
   def create(callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogSink] = js.native
   def create(params: ParamsResourceOrganizationsSinksCreate): GaxiosPromise[SchemaLogSink] = js.native
   def create(params: ParamsResourceOrganizationsSinksCreate, callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
   def create(
@@ -60,6 +61,7 @@ class ResourceOrganizationsSinks protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceOrganizationsSinksDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceOrganizationsSinksDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -87,6 +89,7 @@ class ResourceOrganizationsSinks protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLogSink] = js.native
   def get(callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogSink] = js.native
   def get(params: ParamsResourceOrganizationsSinksGet): GaxiosPromise[SchemaLogSink] = js.native
   def get(params: ParamsResourceOrganizationsSinksGet, callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
   def get(
@@ -116,6 +119,7 @@ class ResourceOrganizationsSinks protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListSinksResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSinksResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSinksResponse] = js.native
   def list(params: ParamsResourceOrganizationsSinksList): GaxiosPromise[SchemaListSinksResponse] = js.native
   def list(
     params: ParamsResourceOrganizationsSinksList,
@@ -152,6 +156,7 @@ class ResourceOrganizationsSinks protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaLogSink] = js.native
   def patch(callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogSink] = js.native
   def patch(params: ParamsResourceOrganizationsSinksPatch): GaxiosPromise[SchemaLogSink] = js.native
   def patch(params: ParamsResourceOrganizationsSinksPatch, callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
   def patch(
@@ -185,6 +190,7 @@ class ResourceOrganizationsSinks protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaLogSink] = js.native
   def update(callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogSink] = js.native
   def update(params: ParamsResourceOrganizationsSinksUpdate): GaxiosPromise[SchemaLogSink] = js.native
   def update(params: ParamsResourceOrganizationsSinksUpdate, callback: BodyResponseCallback[SchemaLogSink]): Unit = js.native
   def update(

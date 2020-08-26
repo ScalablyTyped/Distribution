@@ -10,9 +10,9 @@ RBAC-A dynamic plugin roles implementation
 | ------------------ | :-------------: |
 | Full name          | rbac-a |
 | Keywords           | rbac, abac, rbac-a, role, access, control, attribute, dynamic, security |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 3199 |
+| # downloads        | 3349 |
 | # stars            | 3 |
 
 ## Links

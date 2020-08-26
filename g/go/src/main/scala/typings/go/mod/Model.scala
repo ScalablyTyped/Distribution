@@ -190,6 +190,15 @@ class Model () extends js.Object {
     obj: js.Object,
     oldval: js.Any,
     newval: js.Any,
+    oldparam: js.UndefOr[scala.Nothing],
+    newparam: js.Any
+  ): Unit = js.native
+  def raiseChangedEvent(
+    change: EnumValue,
+    propertyname: PropertyAccessor,
+    obj: js.Object,
+    oldval: js.Any,
+    newval: js.Any,
     oldparam: js.Any
   ): Unit = js.native
   def raiseChangedEvent(
@@ -214,6 +223,14 @@ class Model () extends js.Object {
     * @param {*=} newparam an optional value additionally describing the new value.
     */
   def raiseDataChanged(data: js.Object, propertyname: PropertyAccessor, oldval: js.Any, newval: js.Any): Unit = js.native
+  def raiseDataChanged(
+    data: js.Object,
+    propertyname: PropertyAccessor,
+    oldval: js.Any,
+    newval: js.Any,
+    oldparam: js.UndefOr[scala.Nothing],
+    newparam: js.Any
+  ): Unit = js.native
   def raiseDataChanged(data: js.Object, propertyname: PropertyAccessor, oldval: js.Any, newval: js.Any, oldparam: js.Any): Unit = js.native
   def raiseDataChanged(
     data: js.Object,

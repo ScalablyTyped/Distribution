@@ -4,48 +4,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IconProps extends SizeOverrideHTMLProps[Icon] {
-  var Component: js.UndefOr[CustomComponent] = js.undefined
-  var fixedWidth: js.UndefOr[Boolean] = js.undefined
-  var flip: js.UndefOr[IconFlip] = js.undefined
-  var inverse: js.UndefOr[Boolean] = js.undefined
+  var Component: js.UndefOr[CustomComponent] = js.native
+  var fixedWidth: js.UndefOr[Boolean] = js.native
+  var flip: js.UndefOr[IconFlip] = js.native
+  var inverse: js.UndefOr[Boolean] = js.native
   @JSName("name")
-  var name_IconProps: String
-  var pulse: js.UndefOr[Boolean] = js.undefined
-  var rotate: js.UndefOr[IconRotation] = js.undefined
+  var name_IconProps: String = js.native
+  var pulse: js.UndefOr[Boolean] = js.native
+  var rotate: js.UndefOr[IconRotation] = js.native
   @JSName("size")
-  var size_IconProps: js.UndefOr[IconSize] = js.undefined
-  var spin: js.UndefOr[Boolean] = js.undefined
-  var stack: js.UndefOr[IconStackSize] = js.undefined
+  var size_IconProps: js.UndefOr[IconSize] = js.native
+  var spin: js.UndefOr[Boolean] = js.native
+  var stack: js.UndefOr[IconStackSize] = js.native
 }
 
 object IconProps {
   @scala.inline
-  def apply(
-    name: String,
-    Component: CustomComponent = null,
-    SizeOverrideHTMLProps: SizeOverrideHTMLProps[Icon] = null,
-    fixedWidth: js.UndefOr[Boolean] = js.undefined,
-    flip: IconFlip = null,
-    inverse: js.UndefOr[Boolean] = js.undefined,
-    pulse: js.UndefOr[Boolean] = js.undefined,
-    rotate: IconRotation = null,
-    size: IconSize = null,
-    spin: js.UndefOr[Boolean] = js.undefined,
-    stack: IconStackSize = null
-  ): IconProps = {
+  def apply(name: String): IconProps = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
-    if (SizeOverrideHTMLProps != null) js.Dynamic.global.Object.assign(__obj, SizeOverrideHTMLProps)
-    if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth.get.asInstanceOf[js.Any])
-    if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pulse)) __obj.updateDynamic("pulse")(pulse.get.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin.get.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProps]
   }
+  @scala.inline
+  implicit class IconPropsOps[Self <: IconProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComponent(value: CustomComponent): Self = this.set("Component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("Component", js.undefined)
+    @scala.inline
+    def setFixedWidth(value: Boolean): Self = this.set("fixedWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedWidth: Self = this.set("fixedWidth", js.undefined)
+    @scala.inline
+    def setFlip(value: IconFlip): Self = this.set("flip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlip: Self = this.set("flip", js.undefined)
+    @scala.inline
+    def setInverse(value: Boolean): Self = this.set("inverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverse: Self = this.set("inverse", js.undefined)
+    @scala.inline
+    def setPulse(value: Boolean): Self = this.set("pulse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePulse: Self = this.set("pulse", js.undefined)
+    @scala.inline
+    def setRotate(value: IconRotation): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotate: Self = this.set("rotate", js.undefined)
+    @scala.inline
+    def setSize(value: IconSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSpin(value: Boolean): Self = this.set("spin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpin: Self = this.set("spin", js.undefined)
+    @scala.inline
+    def setStack(value: IconStackSize): Self = this.set("stack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStack: Self = this.set("stack", js.undefined)
+  }
+  
 }
 

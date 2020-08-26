@@ -7,88 +7,92 @@ import scala.scalajs.js.annotation._
 /**
   * Create a new Sound Component.
   * @property volume - The volume modifier to play the audio with. In range 0-1.
+  * Defaults to 1.
   * @property pitch - The pitch modifier to play the audio with. Must be larger
-  than 0.01.
+  * than 0.01. Defaults to 1.
   * @property positional - If true the audio will play back at the location
-  of the Entity in space, so the audio will be affected by the position of the
-  {@link pc.AudioListenerComponent}.
+  * of the Entity in space, so the audio will be affected by the position of the
+  * {@link pc.AudioListenerComponent}. Defaults to true.
   * @property distanceModel - Determines which algorithm to use to reduce the
-  volume of the sound as it moves away from the listener. Can be:
-  
-  * {@link pc.DISTANCE_LINEAR}
-  * {@link pc.DISTANCE_INVERSE}
-  * {@link pc.DISTANCE_EXPONENTIAL}
-  
-  Default is {@link pc.DISTANCE_LINEAR}.
+  * volume of the sound as it moves away from the listener. Can be:
+  *
+  * * {@link pc.DISTANCE_LINEAR}
+  * * {@link pc.DISTANCE_INVERSE}
+  * * {@link pc.DISTANCE_EXPONENTIAL}
+  *
+  * Defaults to {@link pc.DISTANCE_LINEAR}.
   * @property refDistance - The reference distance for reducing volume as the
-  sound source moves further from the listener.
+  * sound source moves further from the listener. Defaults to 1.
   * @property maxDistance - The maximum distance from the listener at which audio
-  falloff stops. Note the volume of the audio is not 0 after this distance, but just
-  doesn't fall off anymore.
-  * @property rollOffFactor - The factor used in the falloff equation.
+  * falloff stops. Note the volume of the audio is not 0 after this distance, but just
+  * doesn't fall off anymore. Defaults to 10000.
+  * @property rollOffFactor - The factor used in the falloff equation. Defaults to 1.
   * @property slots - A dictionary that contains the {@link pc.SoundSlot}s managed
-  by this Component.
+  * by this SoundComponent.
   * @param system - The ComponentSystem that created this
-  component.
+  * component.
   * @param entity - The entity that the Component is attached to.
   */
 @js.native
 trait SoundComponent extends Component {
   /**
     * Determines which algorithm to use to reduce the
-    * volume of the sound as it moves away from the listener. Can be:
-    * * {@link pc.DISTANCE_LINEAR}
-    * * {@link pc.DISTANCE_INVERSE}
-    * * {@link pc.DISTANCE_EXPONENTIAL}
-    * Default is {@link pc.DISTANCE_LINEAR}.
+    volume of the sound as it moves away from the listener. Can be:
+    
+    * {@link pc.DISTANCE_LINEAR}
+    * {@link pc.DISTANCE_INVERSE}
+    * {@link pc.DISTANCE_EXPONENTIAL}
+    
+    Defaults to {@link pc.DISTANCE_LINEAR}.
     */
   var distanceModel: String = js.native
   /**
     * The maximum distance from the listener at which audio
-    * falloff stops. Note the volume of the audio is not 0 after this distance, but just
-    * doesn't fall off anymore.
+    falloff stops. Note the volume of the audio is not 0 after this distance, but just
+    doesn't fall off anymore. Defaults to 10000.
     */
   var maxDistance: Double = js.native
   /**
     * The pitch modifier to play the audio with. Must be larger
-    * than 0.01.
+    than 0.01. Defaults to 1.
     */
   var pitch: Double = js.native
   /**
     * If true the audio will play back at the location
-    * of the Entity in space, so the audio will be affected by the position of the
-    * {@link pc.AudioListenerComponent}.
+    of the Entity in space, so the audio will be affected by the position of the
+    {@link pc.AudioListenerComponent}. Defaults to true.
     */
   var positional: Boolean = js.native
   /**
     * The reference distance for reducing volume as the
-    * sound source moves further from the listener.
+    sound source moves further from the listener. Defaults to 1.
     */
   var refDistance: Double = js.native
   /**
-    * The factor used in the falloff equation.
+    * The factor used in the falloff equation. Defaults to 1.
     */
   var rollOffFactor: Double = js.native
   /**
     * A dictionary that contains the {@link pc.SoundSlot}s managed
-    * by this Component.
+    by this SoundComponent.
     */
   var slots: js.Any = js.native
   /**
     * The volume modifier to play the audio with. In range 0-1.
+    Defaults to 1.
     */
   var volume: Double = js.native
   /**
     * Creates a new {@link pc.SoundSlot} with the specified name.
     * @example
     * // get an asset by id
-    var asset = app.assets.get(10);
-    // add a slot
-    this.entity.sound.addSlot('beep', {
-    asset: asset
-    });
-    // play
-    this.entity.sound.play('beep');
+    * var asset = app.assets.get(10);
+    * // add a slot
+    * this.entity.sound.addSlot('beep', {
+    *     asset: asset
+    * });
+    * // play
+    * this.entity.sound.play('beep');
     * @param name - The name of the slot.
     * @param [options] - Settings for the slot.
     * @param [options.volume = 1] - The playback volume, between 0 and 1.
@@ -107,9 +111,9 @@ trait SoundComponent extends Component {
     * Pauses playback of the slot with the specified name. If the name is undefined then all slots currently played will be paused. The slots can be resumed by calling {@link pc.SoundComponent#resume}.
     * @example
     * // pause all sounds
-    this.entity.sound.pause();
-    // pause a specific sound
-    this.entity.sound.pause('beep');
+    * this.entity.sound.pause();
+    * // pause a specific sound
+    * this.entity.sound.pause('beep');
     * @param [name] - The name of the slot to pause. Leave undefined to pause everything.
     */
   def pause(): Unit = js.native
@@ -118,12 +122,12 @@ trait SoundComponent extends Component {
     * Begins playing the sound slot with the specified name. The slot will restart playing if it is already playing unless the overlap field is true in which case a new sound will be created and played.
     * @example
     * // get asset by id
-    var asset = app.assets.get(10);
-    // create a slot and play it
-    this.entity.sound.addSlot('beep', {
-    asset: asset
-    });
-    this.entity.sound.play('beep');
+    * var asset = app.assets.get(10);
+    * // create a slot and play it
+    * this.entity.sound.addSlot('beep', {
+    *     asset: asset
+    * });
+    * this.entity.sound.play('beep');
     * @param name - The name of the {@link pc.SoundSlot} to play.
     * @returns The sound instance that will be played.
     */
@@ -132,38 +136,42 @@ trait SoundComponent extends Component {
     * Removes the {@link pc.SoundSlot} with the specified name.
     * @example
     * // remove a slot called 'beep'
-    this.entity.sound.removeSlot('beep');
+    * this.entity.sound.removeSlot('beep');
     * @param name - The name of the slot.
     */
   def removeSlot(name: String): Unit = js.native
   /**
-    * Resumes playback of the sound slot with the specified name if it's paused. If no name is specified all slots will be resumed.
+    * Resumes playback of the sound slot with the specified name if it's paused. If no
+    * name is specified all slots will be resumed.
     * @example
     * // resume all sounds
-    this.entity.sound.resume();
-    // resume a specific sound
-    this.entity.sound.resume('beep');
-    * @param name - The name of the slot to resume. Leave undefined to resume everything.
+    * this.entity.sound.resume();
+    * // resume a specific sound
+    * this.entity.sound.resume('beep');
+    * @param [name] - The name of the slot to resume. Leave undefined to resume everything.
     */
+  def resume(): Unit = js.native
   def resume(name: String): Unit = js.native
   /**
     * Returns the slot with the specified name.
     * @example
     * // get a slot and set its volume
-    this.entity.sound.slot('beep').volume = 0.5;
+    * this.entity.sound.slot('beep').volume = 0.5;
     * @param name - The name of the slot.
     * @returns The slot.
     */
   def slot(name: String): SoundSlot = js.native
   /**
-    * Stops playback of the sound slot with the specified name if it's paused. If no name is specified all slots will be stopped.
+    * Stops playback of the sound slot with the specified name if it's paused. If no
+    * name is specified all slots will be stopped.
     * @example
     * // stop all sounds
-    this.entity.sound.stop();
-    // stop a specific sound
-    this.entity.sound.stop('beep');
-    * @param name - The name of the slot to stop. Leave undefined to stop everything.
+    * this.entity.sound.stop();
+    * // stop a specific sound
+    * this.entity.sound.stop('beep');
+    * @param [name] - The name of the slot to stop. Leave undefined to stop everything.
     */
+  def stop(): Unit = js.native
   def stop(name: String): Unit = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for extract-files
 
-Typings are for version 3.1
+Typings are for version 8.1
 
 ## Library description:
 Clones a value, recursively extracting File, Blob and ReactNativeFile instances with their object paths, replacing them with null. FileList instances are treated as File instance arrays.

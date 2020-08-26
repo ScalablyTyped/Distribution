@@ -22,11 +22,32 @@ trait BucketLifecycleRuleTransition extends js.Object {
 
 object BucketLifecycleRuleTransition {
   @scala.inline
-  def apply(storageClass: String, date: String = null, days: js.UndefOr[Double] = js.undefined): BucketLifecycleRuleTransition = {
+  def apply(storageClass: String): BucketLifecycleRuleTransition = {
     val __obj = js.Dynamic.literal(storageClass = storageClass.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketLifecycleRuleTransition]
   }
+  @scala.inline
+  implicit class BucketLifecycleRuleTransitionOps[Self <: BucketLifecycleRuleTransition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStorageClass(value: String): Self = this.set("storageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDays(value: Double): Self = this.set("days", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDays: Self = this.set("days", js.undefined)
+  }
+  
 }
 

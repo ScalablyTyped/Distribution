@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "binary-extensions" : "2.0.0"
+      "binary-extensions" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "binary-extensions" : "2.0.0"
+      "binary-extensions" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

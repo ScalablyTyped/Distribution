@@ -14,6 +14,7 @@ object global extends js.Object {
       extends typings.xsockets.XSockets.WebSocket {
       def this(url: String) = this()
       def this(url: String, subprotocol: String) = this()
+      def this(url: String, subprotocol: js.UndefOr[scala.Nothing], settings: js.Any) = this()
       def this(url: String, subprotocol: String, settings: js.Any) = this()
     }
     

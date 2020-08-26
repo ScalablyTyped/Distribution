@@ -5,84 +5,153 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.FullTheme> */
+@js.native
 trait PartialFullTheme extends js.Object {
-  var AirbnbRating: js.UndefOr[PartialAirbnbRatingProps] = js.undefined
-  var Avatar: js.UndefOr[PartialAvatarProps] = js.undefined
-  var Badge: js.UndefOr[PartialBadgeProps] = js.undefined
-  var Button: js.UndefOr[PartialButtonProps] = js.undefined
-  var ButtonGroup: js.UndefOr[PartialButtonGroupProps] = js.undefined
-  var Card: js.UndefOr[PartialCardProps] = js.undefined
-  var CheckBox: js.UndefOr[PartialCheckBoxProps] = js.undefined
-  var Divider: js.UndefOr[PartialDividerProps] = js.undefined
-  var Header: js.UndefOr[PartialHeaderProps] = js.undefined
-  var Icon: js.UndefOr[PartialIconProps] = js.undefined
-  var Image: js.UndefOr[PartialImageProps] = js.undefined
-  var Input: js.UndefOr[PartialInputProps] = js.undefined
-  var ListItem: js.UndefOr[PartialListItemPropsAccessibilityActions] = js.undefined
-  var Overlay: js.UndefOr[PartialOverlayProps] = js.undefined
-  var PricingCard: js.UndefOr[PartialPricingCardProps] = js.undefined
-  var Rating: js.UndefOr[PartialRatingProps] = js.undefined
-  var SearchBar: js.UndefOr[PartialSearchBarProps] = js.undefined
-  var Slider: js.UndefOr[PartialSliderProps] = js.undefined
-  var SocialIcon: js.UndefOr[PartialSocialIconProps] = js.undefined
-  var Text: js.UndefOr[PartialTextProps] = js.undefined
-  var Tile: js.UndefOr[PartialTileProps] = js.undefined
-  var Tooltip: js.UndefOr[PartialTooltipProps] = js.undefined
-  var colors: js.UndefOr[RecursivePartialColorsDisabled] = js.undefined
+  var Accessory: js.UndefOr[PartialIconPropsPartialIm] = js.native
+  var AirbnbRating: js.UndefOr[PartialAirbnbRatingProps] = js.native
+  var Avatar: js.UndefOr[PartialAvatarProps] = js.native
+  var Badge: js.UndefOr[PartialBadgeProps] = js.native
+  var BottomSheet: js.UndefOr[PartialBottomSheetProps] = js.native
+  var Button: js.UndefOr[PartialButtonProps] = js.native
+  var ButtonGroup: js.UndefOr[PartialButtonGroupProps] = js.native
+  var Card: js.UndefOr[PartialCardProps] = js.native
+  var CheckBox: js.UndefOr[PartialCheckBoxProps] = js.native
+  var Divider: js.UndefOr[PartialDividerProps] = js.native
+  var Header: js.UndefOr[PartialHeaderProps] = js.native
+  var Icon: js.UndefOr[PartialIconProps] = js.native
+  var Image: js.UndefOr[PartialImageProps] = js.native
+  var Input: js.UndefOr[PartialInputProps] = js.native
+  var ListItem: js.UndefOr[PartialListItemPropsAccessibilityActions] = js.native
+  var Overlay: js.UndefOr[PartialOverlayProps] = js.native
+  var PricingCard: js.UndefOr[PartialPricingCardProps] = js.native
+  var Rating: js.UndefOr[PartialRatingProps] = js.native
+  var SearchBar: js.UndefOr[PartialSearchBarProps] = js.native
+  var Slider: js.UndefOr[PartialSliderProps] = js.native
+  var SocialIcon: js.UndefOr[PartialSocialIconProps] = js.native
+  var Text: js.UndefOr[PartialTextProps] = js.native
+  var Tile: js.UndefOr[PartialTileProps] = js.native
+  var Tooltip: js.UndefOr[PartialTooltipProps] = js.native
+  var colors: js.UndefOr[RecursivePartialColorsDisabled] = js.native
 }
 
 object PartialFullTheme {
   @scala.inline
-  def apply(
-    AirbnbRating: PartialAirbnbRatingProps = null,
-    Avatar: PartialAvatarProps = null,
-    Badge: PartialBadgeProps = null,
-    Button: PartialButtonProps = null,
-    ButtonGroup: PartialButtonGroupProps = null,
-    Card: PartialCardProps = null,
-    CheckBox: PartialCheckBoxProps = null,
-    Divider: PartialDividerProps = null,
-    Header: PartialHeaderProps = null,
-    Icon: PartialIconProps = null,
-    Image: PartialImageProps = null,
-    Input: PartialInputProps = null,
-    ListItem: PartialListItemPropsAccessibilityActions = null,
-    Overlay: PartialOverlayProps = null,
-    PricingCard: PartialPricingCardProps = null,
-    Rating: PartialRatingProps = null,
-    SearchBar: PartialSearchBarProps = null,
-    Slider: PartialSliderProps = null,
-    SocialIcon: PartialSocialIconProps = null,
-    Text: PartialTextProps = null,
-    Tile: PartialTileProps = null,
-    Tooltip: PartialTooltipProps = null,
-    colors: RecursivePartialColorsDisabled = null
-  ): PartialFullTheme = {
+  def apply(): PartialFullTheme = {
     val __obj = js.Dynamic.literal()
-    if (AirbnbRating != null) __obj.updateDynamic("AirbnbRating")(AirbnbRating.asInstanceOf[js.Any])
-    if (Avatar != null) __obj.updateDynamic("Avatar")(Avatar.asInstanceOf[js.Any])
-    if (Badge != null) __obj.updateDynamic("Badge")(Badge.asInstanceOf[js.Any])
-    if (Button != null) __obj.updateDynamic("Button")(Button.asInstanceOf[js.Any])
-    if (ButtonGroup != null) __obj.updateDynamic("ButtonGroup")(ButtonGroup.asInstanceOf[js.Any])
-    if (Card != null) __obj.updateDynamic("Card")(Card.asInstanceOf[js.Any])
-    if (CheckBox != null) __obj.updateDynamic("CheckBox")(CheckBox.asInstanceOf[js.Any])
-    if (Divider != null) __obj.updateDynamic("Divider")(Divider.asInstanceOf[js.Any])
-    if (Header != null) __obj.updateDynamic("Header")(Header.asInstanceOf[js.Any])
-    if (Icon != null) __obj.updateDynamic("Icon")(Icon.asInstanceOf[js.Any])
-    if (Image != null) __obj.updateDynamic("Image")(Image.asInstanceOf[js.Any])
-    if (Input != null) __obj.updateDynamic("Input")(Input.asInstanceOf[js.Any])
-    if (ListItem != null) __obj.updateDynamic("ListItem")(ListItem.asInstanceOf[js.Any])
-    if (Overlay != null) __obj.updateDynamic("Overlay")(Overlay.asInstanceOf[js.Any])
-    if (PricingCard != null) __obj.updateDynamic("PricingCard")(PricingCard.asInstanceOf[js.Any])
-    if (Rating != null) __obj.updateDynamic("Rating")(Rating.asInstanceOf[js.Any])
-    if (SearchBar != null) __obj.updateDynamic("SearchBar")(SearchBar.asInstanceOf[js.Any])
-    if (Slider != null) __obj.updateDynamic("Slider")(Slider.asInstanceOf[js.Any])
-    if (SocialIcon != null) __obj.updateDynamic("SocialIcon")(SocialIcon.asInstanceOf[js.Any])
-    if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
-    if (Tile != null) __obj.updateDynamic("Tile")(Tile.asInstanceOf[js.Any])
-    if (Tooltip != null) __obj.updateDynamic("Tooltip")(Tooltip.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialFullTheme]
   }
+  @scala.inline
+  implicit class PartialFullThemeOps[Self <: PartialFullTheme] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessory(value: PartialIconPropsPartialIm): Self = this.set("Accessory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessory: Self = this.set("Accessory", js.undefined)
+    @scala.inline
+    def setAirbnbRating(value: PartialAirbnbRatingProps): Self = this.set("AirbnbRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAirbnbRating: Self = this.set("AirbnbRating", js.undefined)
+    @scala.inline
+    def setAvatar(value: PartialAvatarProps): Self = this.set("Avatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvatar: Self = this.set("Avatar", js.undefined)
+    @scala.inline
+    def setBadge(value: PartialBadgeProps): Self = this.set("Badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadge: Self = this.set("Badge", js.undefined)
+    @scala.inline
+    def setBottomSheet(value: PartialBottomSheetProps): Self = this.set("BottomSheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomSheet: Self = this.set("BottomSheet", js.undefined)
+    @scala.inline
+    def setButton(value: PartialButtonProps): Self = this.set("Button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("Button", js.undefined)
+    @scala.inline
+    def setButtonGroup(value: PartialButtonGroupProps): Self = this.set("ButtonGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonGroup: Self = this.set("ButtonGroup", js.undefined)
+    @scala.inline
+    def setCard(value: PartialCardProps): Self = this.set("Card", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCard: Self = this.set("Card", js.undefined)
+    @scala.inline
+    def setCheckBox(value: PartialCheckBoxProps): Self = this.set("CheckBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckBox: Self = this.set("CheckBox", js.undefined)
+    @scala.inline
+    def setDivider(value: PartialDividerProps): Self = this.set("Divider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDivider: Self = this.set("Divider", js.undefined)
+    @scala.inline
+    def setHeader(value: PartialHeaderProps): Self = this.set("Header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("Header", js.undefined)
+    @scala.inline
+    def setIcon(value: PartialIconProps): Self = this.set("Icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("Icon", js.undefined)
+    @scala.inline
+    def setImage(value: PartialImageProps): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("Image", js.undefined)
+    @scala.inline
+    def setInput(value: PartialInputProps): Self = this.set("Input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("Input", js.undefined)
+    @scala.inline
+    def setListItem(value: PartialListItemPropsAccessibilityActions): Self = this.set("ListItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListItem: Self = this.set("ListItem", js.undefined)
+    @scala.inline
+    def setOverlay(value: PartialOverlayProps): Self = this.set("Overlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay: Self = this.set("Overlay", js.undefined)
+    @scala.inline
+    def setPricingCard(value: PartialPricingCardProps): Self = this.set("PricingCard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricingCard: Self = this.set("PricingCard", js.undefined)
+    @scala.inline
+    def setRating(value: PartialRatingProps): Self = this.set("Rating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRating: Self = this.set("Rating", js.undefined)
+    @scala.inline
+    def setSearchBar(value: PartialSearchBarProps): Self = this.set("SearchBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchBar: Self = this.set("SearchBar", js.undefined)
+    @scala.inline
+    def setSlider(value: PartialSliderProps): Self = this.set("Slider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlider: Self = this.set("Slider", js.undefined)
+    @scala.inline
+    def setSocialIcon(value: PartialSocialIconProps): Self = this.set("SocialIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocialIcon: Self = this.set("SocialIcon", js.undefined)
+    @scala.inline
+    def setText(value: PartialTextProps): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("Text", js.undefined)
+    @scala.inline
+    def setTile(value: PartialTileProps): Self = this.set("Tile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTile: Self = this.set("Tile", js.undefined)
+    @scala.inline
+    def setTooltip(value: PartialTooltipProps): Self = this.set("Tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("Tooltip", js.undefined)
+    @scala.inline
+    def setColors(value: RecursivePartialColorsDisabled): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+  }
+  
 }
 

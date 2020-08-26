@@ -1,14 +1,12 @@
 package typings.androiduix.android.graphics.drawable
 
-import typings.androiduix.java.lang.Runnable
+import typings.androiduix.java_.lang.Runnable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.graphics.drawable.ShadowDrawable")
 @js.native
-class ShadowDrawable protected () extends Drawable {
-  def this(drawable: Drawable, radius: Double, dx: Double, dy: Double, color: Double) = this()
+trait ShadowDrawable extends Drawable {
   var mMutated: js.Any = js.native
   var mState: js.Any = js.native
   def drawableSizeChange(who: Drawable): js.Any = js.native

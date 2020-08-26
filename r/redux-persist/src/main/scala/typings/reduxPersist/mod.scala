@@ -45,10 +45,24 @@ object mod extends js.Object {
   def createMigrate(migrations: MigrationManifest, config: MigrationConfig): PersistMigrate = js.native
   def createPersistoid(config: PersistConfig[_, _, _, _]): Persistoid = js.native
   def createTransform[HSS, ESS, S, RS](): Transform[HSS, ESS, S, RS] = js.native
+  def createTransform[HSS, ESS, S, RS](inbound: js.UndefOr[scala.Nothing], outbound: js.UndefOr[scala.Nothing], config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
+  def createTransform[HSS, ESS, S, RS](inbound: js.UndefOr[scala.Nothing], outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
+  def createTransform[HSS, ESS, S, RS](inbound: js.UndefOr[scala.Nothing], outbound: TransformOutbound[ESS, HSS, RS]): Transform[HSS, ESS, S, RS] = js.native
+  def createTransform[HSS, ESS, S, RS](
+    inbound: js.UndefOr[scala.Nothing],
+    outbound: TransformOutbound[ESS, HSS, RS],
+    config: TransformConfig
+  ): Transform[HSS, ESS, S, RS] = js.native
+  def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: js.UndefOr[scala.Nothing], config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
   def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
   def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: TransformOutbound[ESS, HSS, RS]): Transform[HSS, ESS, S, RS] = js.native
   def createTransform[HSS, ESS, S, RS](inbound: Null, outbound: TransformOutbound[ESS, HSS, RS], config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
   def createTransform[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S]): Transform[HSS, ESS, S, RS] = js.native
+  def createTransform[HSS, ESS, S, RS](
+    inbound: TransformInbound[HSS, ESS, S],
+    outbound: js.UndefOr[scala.Nothing],
+    config: TransformConfig
+  ): Transform[HSS, ESS, S, RS] = js.native
   def createTransform[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S], outbound: Null, config: TransformConfig): Transform[HSS, ESS, S, RS] = js.native
   def createTransform[HSS, ESS, S, RS](inbound: TransformInbound[HSS, ESS, S], outbound: TransformOutbound[ESS, HSS, RS]): Transform[HSS, ESS, S, RS] = js.native
   def createTransform[HSS, ESS, S, RS](
@@ -60,6 +74,7 @@ object mod extends js.Object {
   def persistCombineReducers[S, A /* <: Action[_] */](config: PersistConfig[S, _, _, _], reducers: ReducersMapObject[S, A]): Reducer[S with PersistPartial, A] = js.native
   def persistReducer[S, A /* <: Action[_] */](config: PersistConfig[S, _, _, _], baseReducer: Reducer[S, A]): Reducer[S with PersistPartial, A] = js.native
   def persistStore(store: Store[_, AnyAction]): Persistor = js.native
+  def persistStore(store: Store[_, AnyAction], persistorOptions: js.UndefOr[scala.Nothing], callback: js.Function0[_]): Persistor = js.native
   def persistStore(store: Store[_, AnyAction], persistorOptions: Null, callback: js.Function0[_]): Persistor = js.native
   def persistStore(store: Store[_, AnyAction], persistorOptions: PersistorOptions): Persistor = js.native
   def persistStore(store: Store[_, AnyAction], persistorOptions: PersistorOptions, callback: js.Function0[_]): Persistor = js.native

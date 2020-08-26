@@ -16,10 +16,5 @@ class ASPxClientFileManagerToolbarUpdatingEventArgs protected ()
     * @param activeAreaName The active file manager area. Initializes the ASPxClientFileManagerToolbarUpdatingEventArgs.activeAreaName property.
     */
   def this(activeAreaName: String) = this()
-  /**
-    * Gets the name of the currently active file manager area.
-    */
-  /* CompleteClass */
-  override var activeAreaName: String = js.native
 }
 

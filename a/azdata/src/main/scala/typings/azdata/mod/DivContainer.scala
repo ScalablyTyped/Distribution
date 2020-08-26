@@ -32,6 +32,11 @@ trait DivContainer extends Container[DivLayout, DivItemLayout] {
     * An event called when the div is clicked
     */
   def onDidClick(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onDidClick(
+    listener: js.Function1[/* e */ js.Any, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onDidClick(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
   def onDidClick(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
 }

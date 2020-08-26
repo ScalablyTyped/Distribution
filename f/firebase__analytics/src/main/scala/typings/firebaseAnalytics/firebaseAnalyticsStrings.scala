@@ -16,10 +16,19 @@ object firebaseAnalyticsStrings {
   sealed trait config extends js.Object
   
   @js.native
+  sealed trait `cookies-not-enabled` extends AnalyticsError
+  
+  @js.native
   sealed trait event extends js.Object
   
   @js.native
+  sealed trait `indexedDB-unsupported` extends AnalyticsError
+  
+  @js.native
   sealed trait `interop-component-reg-failed` extends AnalyticsError
+  
+  @js.native
+  sealed trait `invalid-indexedDB-context` extends AnalyticsError
   
   @js.native
   sealed trait `no-ga-id` extends AnalyticsError
@@ -34,9 +43,15 @@ object firebaseAnalyticsStrings {
   @scala.inline
   def config: config = "config".asInstanceOf[config]
   @scala.inline
+  def `cookies-not-enabled`: `cookies-not-enabled` = "cookies-not-enabled".asInstanceOf[`cookies-not-enabled`]
+  @scala.inline
   def event: event = "event".asInstanceOf[event]
   @scala.inline
+  def `indexedDB-unsupported`: `indexedDB-unsupported` = "indexedDB-unsupported".asInstanceOf[`indexedDB-unsupported`]
+  @scala.inline
   def `interop-component-reg-failed`: `interop-component-reg-failed` = "interop-component-reg-failed".asInstanceOf[`interop-component-reg-failed`]
+  @scala.inline
+  def `invalid-indexedDB-context`: `invalid-indexedDB-context` = "invalid-indexedDB-context".asInstanceOf[`invalid-indexedDB-context`]
   @scala.inline
   def `no-ga-id`: `no-ga-id` = "no-ga-id".asInstanceOf[`no-ga-id`]
   @scala.inline

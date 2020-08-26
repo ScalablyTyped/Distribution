@@ -26,15 +26,34 @@ trait CreateLoadBalancerPolicyInput extends js.Object {
 
 object CreateLoadBalancerPolicyInput {
   @scala.inline
-  def apply(
-    LoadBalancerName: AccessPointName,
-    PolicyName: PolicyName,
-    PolicyTypeName: PolicyTypeName,
-    PolicyAttributes: PolicyAttributes = null
-  ): CreateLoadBalancerPolicyInput = {
+  def apply(LoadBalancerName: AccessPointName, PolicyName: PolicyName, PolicyTypeName: PolicyTypeName): CreateLoadBalancerPolicyInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any], PolicyTypeName = PolicyTypeName.asInstanceOf[js.Any])
-    if (PolicyAttributes != null) __obj.updateDynamic("PolicyAttributes")(PolicyAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLoadBalancerPolicyInput]
   }
+  @scala.inline
+  implicit class CreateLoadBalancerPolicyInputOps[Self <: CreateLoadBalancerPolicyInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoadBalancerName(value: AccessPointName): Self = this.set("LoadBalancerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicyName(value: PolicyName): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicyTypeName(value: PolicyTypeName): Self = this.set("PolicyTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicyAttributesVarargs(value: PolicyAttribute*): Self = this.set("PolicyAttributes", js.Array(value :_*))
+    @scala.inline
+    def setPolicyAttributes(value: PolicyAttributes): Self = this.set("PolicyAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyAttributes: Self = this.set("PolicyAttributes", js.undefined)
+  }
+  
 }
 

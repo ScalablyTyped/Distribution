@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MultiSelectVirtual extends js.Object {
-  var itemHeight: js.UndefOr[Double] = js.undefined
-  var mapValueTo: js.UndefOr[String] = js.undefined
-  var valueMapper: js.UndefOr[js.Function] = js.undefined
+  var itemHeight: js.UndefOr[Double] = js.native
+  var mapValueTo: js.UndefOr[String] = js.native
+  var valueMapper: js.UndefOr[js.Function] = js.native
 }
 
 object MultiSelectVirtual {
   @scala.inline
-  def apply(
-    itemHeight: js.UndefOr[Double] = js.undefined,
-    mapValueTo: String = null,
-    valueMapper: js.Function = null
-  ): MultiSelectVirtual = {
+  def apply(): MultiSelectVirtual = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(itemHeight)) __obj.updateDynamic("itemHeight")(itemHeight.get.asInstanceOf[js.Any])
-    if (mapValueTo != null) __obj.updateDynamic("mapValueTo")(mapValueTo.asInstanceOf[js.Any])
-    if (valueMapper != null) __obj.updateDynamic("valueMapper")(valueMapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelectVirtual]
   }
+  @scala.inline
+  implicit class MultiSelectVirtualOps[Self <: MultiSelectVirtual] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemHeight(value: Double): Self = this.set("itemHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemHeight: Self = this.set("itemHeight", js.undefined)
+    @scala.inline
+    def setMapValueTo(value: String): Self = this.set("mapValueTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapValueTo: Self = this.set("mapValueTo", js.undefined)
+    @scala.inline
+    def setValueMapper(value: js.Function): Self = this.set("valueMapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueMapper: Self = this.set("valueMapper", js.undefined)
+  }
+  
 }
 

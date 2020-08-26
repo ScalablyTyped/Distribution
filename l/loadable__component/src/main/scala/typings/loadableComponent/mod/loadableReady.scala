@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object loadableReady extends js.Object {
   def apply(): js.Promise[Unit] = js.native
+  def apply(done: js.UndefOr[scala.Nothing], options: LoadableReadyOptions): js.Promise[Unit] = js.native
   def apply(done: js.Function0[_]): js.Promise[Unit] = js.native
   def apply(done: js.Function0[_], options: LoadableReadyOptions): js.Promise[Unit] = js.native
 }

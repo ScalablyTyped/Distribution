@@ -24,11 +24,30 @@ trait SchemaMaintenanceWindow extends js.Object {
 
 object SchemaMaintenanceWindow {
   @scala.inline
-  def apply(durationMs: String = null, startTimeAfterMidnightMs: String = null): SchemaMaintenanceWindow = {
+  def apply(): SchemaMaintenanceWindow = {
     val __obj = js.Dynamic.literal()
-    if (durationMs != null) __obj.updateDynamic("durationMs")(durationMs.asInstanceOf[js.Any])
-    if (startTimeAfterMidnightMs != null) __obj.updateDynamic("startTimeAfterMidnightMs")(startTimeAfterMidnightMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMaintenanceWindow]
   }
+  @scala.inline
+  implicit class SchemaMaintenanceWindowOps[Self <: SchemaMaintenanceWindow] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDurationMs(value: String): Self = this.set("durationMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationMs: Self = this.set("durationMs", js.undefined)
+    @scala.inline
+    def setStartTimeAfterMidnightMs(value: String): Self = this.set("startTimeAfterMidnightMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimeAfterMidnightMs: Self = this.set("startTimeAfterMidnightMs", js.undefined)
+  }
+  
 }
 

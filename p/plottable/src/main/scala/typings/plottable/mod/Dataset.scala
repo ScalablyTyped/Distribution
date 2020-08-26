@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
 class Dataset ()
   extends typings.plottable.datasetMod.Dataset {
   def this(data: js.Array[_]) = this()
+  def this(data: js.UndefOr[scala.Nothing], metadata: js.Any) = this()
   def this(data: js.Array[_], metadata: js.Any) = this()
 }
 

@@ -93,6 +93,7 @@ trait AGServerSocket
   def deauthenticateSelf(): Unit = js.native
   def decode(message: js.Any): js.Any = js.native
   def disconnect(): Unit = js.native
+  def disconnect(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def disconnect(code: Double): Unit = js.native
   def disconnect(code: Double, reason: String): Unit = js.native
   def emitError(error: Error): Unit = js.native
@@ -180,6 +181,7 @@ trait AGServerSocket
   def isAuthTokenExpired(token: AuthToken): Boolean = js.native
   def isSubscribed(channel: String): Boolean = js.native
   def kickOut(): js.Any = js.native
+  def kickOut(channel: js.UndefOr[scala.Nothing], message: String): js.Any = js.native
   def kickOut(channel: String): js.Any = js.native
   def kickOut(channel: String, message: String): js.Any = js.native
   def killAllMiddlewares(): Unit = js.native

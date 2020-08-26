@@ -13,6 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvalidContinuationTokenException
   extends ServiceException[InvalidContinuationTokenExceptionDetails]
      with DescribePullRequestEventsExceptionsUnion
@@ -23,7 +24,7 @@ trait InvalidContinuationTokenException
      with ListPullRequestsExceptionsUnion
      with ListRepositoriesExceptionsUnion {
   @JSName("name")
-  var name_InvalidContinuationTokenException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidContinuationTokenException
+  var name_InvalidContinuationTokenException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidContinuationTokenException = js.native
 }
 
 object InvalidContinuationTokenException {
@@ -32,12 +33,27 @@ object InvalidContinuationTokenException {
     $metadata: ResponseMetadata,
     details: InvalidContinuationTokenExceptionDetails,
     message: String,
-    name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidContinuationTokenException,
-    stack: String = null
+    name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidContinuationTokenException
   ): InvalidContinuationTokenException = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidContinuationTokenException]
   }
+  @scala.inline
+  implicit class InvalidContinuationTokenExceptionOps[Self <: InvalidContinuationTokenException] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(
+      value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidContinuationTokenException
+    ): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

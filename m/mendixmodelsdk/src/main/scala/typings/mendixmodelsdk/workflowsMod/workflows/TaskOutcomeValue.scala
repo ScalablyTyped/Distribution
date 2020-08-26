@@ -31,7 +31,7 @@ class TaskOutcomeValue protected () extends FlowValue {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def outcome: WorkflowTaskOutcome = js.native
-  def outcome(newValue: WorkflowTaskOutcome): js.Any = js.native
+  def outcome_=(newValue: WorkflowTaskOutcome): Unit = js.native
 }
 
 /* static members */

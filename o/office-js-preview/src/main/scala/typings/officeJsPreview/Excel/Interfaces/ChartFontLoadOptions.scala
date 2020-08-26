@@ -10,76 +10,103 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
+@js.native
 trait ChartFontLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the bold status of font.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var bold: js.UndefOr[Boolean] = js.undefined
+  var bold: js.UndefOr[Boolean] = js.native
   /**
     *
     * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
     * [Api set: ExcelApi 1.1]
     */
-  var color: js.UndefOr[Boolean] = js.undefined
+  var color: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the italic status of the font.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var italic: js.UndefOr[Boolean] = js.undefined
+  var italic: js.UndefOr[Boolean] = js.native
   /**
     *
     * Font name (e.g., "Calibri")
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[Boolean] = js.undefined
+  var name: js.UndefOr[Boolean] = js.native
   /**
     *
     * Size of the font (e.g., 11)
     *
     * [Api set: ExcelApi 1.1]
     */
-  var size: js.UndefOr[Boolean] = js.undefined
+  var size: js.UndefOr[Boolean] = js.native
   /**
     *
     * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var underline: js.UndefOr[Boolean] = js.undefined
+  var underline: js.UndefOr[Boolean] = js.native
 }
 
 object ChartFontLoadOptions {
   @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    bold: js.UndefOr[Boolean] = js.undefined,
-    color: js.UndefOr[Boolean] = js.undefined,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    name: js.UndefOr[Boolean] = js.undefined,
-    size: js.UndefOr[Boolean] = js.undefined,
-    underline: js.UndefOr[Boolean] = js.undefined
-  ): ChartFontLoadOptions = {
+  def apply(): ChartFontLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartFontLoadOptions]
   }
+  @scala.inline
+  implicit class ChartFontLoadOptionsOps[Self <: ChartFontLoadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$all: Self = this.set("$all", js.undefined)
+    @scala.inline
+    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBold: Self = this.set("bold", js.undefined)
+    @scala.inline
+    def setColor(value: Boolean): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItalic: Self = this.set("italic", js.undefined)
+    @scala.inline
+    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSize(value: Boolean): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setUnderline(value: Boolean): Self = this.set("underline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnderline: Self = this.set("underline", js.undefined)
+  }
+  
 }
 

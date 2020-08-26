@@ -18,7 +18,12 @@ object treeMod extends js.Object {
     */
   class Tree[T] () extends js.Object {
     def this(name_ : String) = this()
+    def this(name_ : js.UndefOr[scala.Nothing], parent_ : Tree[T]) = this()
     def this(name_ : String, parent_ : Tree[T]) = this()
+    def this(name_ : js.UndefOr[scala.Nothing], parent_ : js.UndefOr[scala.Nothing], node_ : TreeNode[T]) = this()
+    def this(name_ : js.UndefOr[scala.Nothing], parent_ : Null, node_ : TreeNode[T]) = this()
+    def this(name_ : js.UndefOr[scala.Nothing], parent_ : Tree[T], node_ : TreeNode[T]) = this()
+    def this(name_ : String, parent_ : js.UndefOr[scala.Nothing], node_ : TreeNode[T]) = this()
     def this(name_ : String, parent_ : Null, node_ : TreeNode[T]) = this()
     def this(name_ : String, parent_ : Tree[T], node_ : TreeNode[T]) = this()
     var name_ : js.Any = js.native
@@ -68,6 +73,11 @@ object treeMod extends js.Object {
       *   parent.
       */
     def forEachDescendant(action: js.Function1[/* tree */ Tree[T], Unit]): Unit = js.native
+    def forEachDescendant(
+      action: js.Function1[/* tree */ Tree[T], Unit],
+      includeSelf: js.UndefOr[scala.Nothing],
+      childrenFirst: Boolean
+    ): Unit = js.native
     def forEachDescendant(action: js.Function1[/* tree */ Tree[T], Unit], includeSelf: Boolean): Unit = js.native
     def forEachDescendant(action: js.Function1[/* tree */ Tree[T], Unit], includeSelf: Boolean, childrenFirst: Boolean): Unit = js.native
     /**

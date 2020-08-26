@@ -12,7 +12,7 @@ react-panelgroup React component
 | Keywords           | react-component |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 99719 |
+| # downloads        | 102285 |
 | # stars            | 0 |
 
 ## Links

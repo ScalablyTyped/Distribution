@@ -11,7 +11,11 @@ object cylindricalMod extends js.Object {
   @js.native
   class Cylindrical () extends js.Object {
     def this(radius: Double) = this()
+    def this(radius: js.UndefOr[scala.Nothing], theta: Double) = this()
     def this(radius: Double, theta: Double) = this()
+    def this(radius: js.UndefOr[scala.Nothing], theta: js.UndefOr[scala.Nothing], y: Double) = this()
+    def this(radius: js.UndefOr[scala.Nothing], theta: Double, y: Double) = this()
+    def this(radius: Double, theta: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(radius: Double, theta: Double, y: Double) = this()
     var radius: Double = js.native
     var theta: Double = js.native

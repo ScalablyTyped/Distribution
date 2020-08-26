@@ -12,7 +12,7 @@ The composable date & time picker.
 | Keywords           | date, time, picker, input, responsive |
 | # releases         | 12 |
 | # dependents       | 14 |
-| # downloads        | 467842 |
+| # downloads        | 476832 |
 | # stars            | 5 |
 
 ## Links

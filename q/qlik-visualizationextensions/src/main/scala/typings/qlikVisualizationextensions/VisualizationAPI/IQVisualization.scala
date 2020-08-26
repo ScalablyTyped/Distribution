@@ -38,6 +38,7 @@ trait IQVisualization extends js.Object {
     * | | Parameter introduced in version 3.0.
     */
   def show(): Unit = js.native
+  def show(element: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def show(element: String): Unit = js.native
   def show(element: String, options: js.Any): Unit = js.native
   def show(element: js.Any): Unit = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tree-select/lib/Context", "SelectContext")
+@JSImport("rc-tree-select/es/Context", "SelectContext")
 @js.native
 object SelectContext extends TopLevel[Context[ContextProps]]
 

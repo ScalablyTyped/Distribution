@@ -28,71 +28,120 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburstNodeSettableProperties> */
+@js.native
 trait ojSunburstNodeSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
-  var borderColor: js.UndefOr[String] = js.undefined
-  var borderWidth: js.UndefOr[Double] = js.undefined
-  var categories: js.UndefOr[js.Array[String]] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var drilling: js.UndefOr[on | off | inherit] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var labelDisplay: js.UndefOr[horizontal | rotated | off | auto] = js.undefined
-  var labelHalign: js.UndefOr[inner | outer | center] = js.undefined
-  var labelStyle: js.UndefOr[js.Object] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
+  var borderWidth: js.UndefOr[Double] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.native
+  var color: js.UndefOr[String] = js.native
+  var drilling: js.UndefOr[on | off | inherit] = js.native
+  var label: js.UndefOr[String] = js.native
+  var labelDisplay: js.UndefOr[horizontal | rotated | off | auto] = js.native
+  var labelHalign: js.UndefOr[inner | outer | center] = js.native
+  var labelStyle: js.UndefOr[js.Object] = js.native
   var pattern: js.UndefOr[
     smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
-  ] = js.undefined
-  var radius: js.UndefOr[Double] = js.undefined
-  var selectable: js.UndefOr[off | auto] = js.undefined
-  var shortDesc: js.UndefOr[String] = js.undefined
-  var showDisclosure: js.UndefOr[on | off | inherit] = js.undefined
-  var svgClassName: js.UndefOr[String] = js.undefined
-  var svgStyle: js.UndefOr[js.Object] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var radius: js.UndefOr[Double] = js.native
+  var selectable: js.UndefOr[off | auto] = js.native
+  var shortDesc: js.UndefOr[String] = js.native
+  var showDisclosure: js.UndefOr[on | off | inherit] = js.native
+  var svgClassName: js.UndefOr[String] = js.native
+  var svgStyle: js.UndefOr[js.Object] = js.native
+  var value: js.UndefOr[Double] = js.native
 }
 
 object ojSunburstNodeSettablePropertiesLenient {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    borderColor: String = null,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    categories: js.Array[String] = null,
-    color: String = null,
-    drilling: on | off | inherit = null,
-    label: String = null,
-    labelDisplay: horizontal | rotated | off | auto = null,
-    labelHalign: inner | outer | center = null,
-    labelStyle: js.Object = null,
-    pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none = null,
-    radius: js.UndefOr[Double] = js.undefined,
-    selectable: off | auto = null,
-    shortDesc: String = null,
-    showDisclosure: on | off | inherit = null,
-    svgClassName: String = null,
-    svgStyle: js.Object = null,
-    value: js.UndefOr[Double] = js.undefined
-  ): ojSunburstNodeSettablePropertiesLenient = {
+  def apply(): ojSunburstNodeSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelDisplay != null) __obj.updateDynamic("labelDisplay")(labelDisplay.asInstanceOf[js.Any])
-    if (labelHalign != null) __obj.updateDynamic("labelHalign")(labelHalign.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
-    if (showDisclosure != null) __obj.updateDynamic("showDisclosure")(showDisclosure.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojSunburstNodeSettablePropertiesLenient]
   }
+  @scala.inline
+  implicit class ojSunburstNodeSettablePropertiesLenientOps[Self <: ojSunburstNodeSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    @scala.inline
+    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategories: Self = this.set("categories", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDrilling(value: on | off | inherit): Self = this.set("drilling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrilling: Self = this.set("drilling", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelDisplay(value: horizontal | rotated | off | auto): Self = this.set("labelDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelDisplay: Self = this.set("labelDisplay", js.undefined)
+    @scala.inline
+    def setLabelHalign(value: inner | outer | center): Self = this.set("labelHalign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelHalign: Self = this.set("labelHalign", js.undefined)
+    @scala.inline
+    def setLabelStyle(value: js.Object): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    @scala.inline
+    def setPattern(
+      value: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
+    ): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadius: Self = this.set("radius", js.undefined)
+    @scala.inline
+    def setSelectable(value: off | auto): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    @scala.inline
+    def setShortDesc(value: String): Self = this.set("shortDesc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortDesc: Self = this.set("shortDesc", js.undefined)
+    @scala.inline
+    def setShowDisclosure(value: on | off | inherit): Self = this.set("showDisclosure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDisclosure: Self = this.set("showDisclosure", js.undefined)
+    @scala.inline
+    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgClassName: Self = this.set("svgClassName", js.undefined)
+    @scala.inline
+    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgStyle: Self = this.set("svgStyle", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

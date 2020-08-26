@@ -79,40 +79,90 @@ trait SchemaExternallyHostedApk extends js.Object {
 
 object SchemaExternallyHostedApk {
   @scala.inline
-  def apply(
-    applicationLabel: String = null,
-    certificateBase64s: js.Array[String] = null,
-    externallyHostedUrl: String = null,
-    fileSha1Base64: String = null,
-    fileSha256Base64: String = null,
-    fileSize: String = null,
-    iconBase64: String = null,
-    maximumSdk: js.UndefOr[Double] = js.undefined,
-    minimumSdk: js.UndefOr[Double] = js.undefined,
-    nativeCodes: js.Array[String] = null,
-    packageName: String = null,
-    usesFeatures: js.Array[String] = null,
-    usesPermissions: js.Array[SchemaExternallyHostedApkUsesPermission] = null,
-    versionCode: js.UndefOr[Double] = js.undefined,
-    versionName: String = null
-  ): SchemaExternallyHostedApk = {
+  def apply(): SchemaExternallyHostedApk = {
     val __obj = js.Dynamic.literal()
-    if (applicationLabel != null) __obj.updateDynamic("applicationLabel")(applicationLabel.asInstanceOf[js.Any])
-    if (certificateBase64s != null) __obj.updateDynamic("certificateBase64s")(certificateBase64s.asInstanceOf[js.Any])
-    if (externallyHostedUrl != null) __obj.updateDynamic("externallyHostedUrl")(externallyHostedUrl.asInstanceOf[js.Any])
-    if (fileSha1Base64 != null) __obj.updateDynamic("fileSha1Base64")(fileSha1Base64.asInstanceOf[js.Any])
-    if (fileSha256Base64 != null) __obj.updateDynamic("fileSha256Base64")(fileSha256Base64.asInstanceOf[js.Any])
-    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
-    if (iconBase64 != null) __obj.updateDynamic("iconBase64")(iconBase64.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumSdk)) __obj.updateDynamic("maximumSdk")(maximumSdk.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumSdk)) __obj.updateDynamic("minimumSdk")(minimumSdk.get.asInstanceOf[js.Any])
-    if (nativeCodes != null) __obj.updateDynamic("nativeCodes")(nativeCodes.asInstanceOf[js.Any])
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
-    if (usesFeatures != null) __obj.updateDynamic("usesFeatures")(usesFeatures.asInstanceOf[js.Any])
-    if (usesPermissions != null) __obj.updateDynamic("usesPermissions")(usesPermissions.asInstanceOf[js.Any])
-    if (!js.isUndefined(versionCode)) __obj.updateDynamic("versionCode")(versionCode.get.asInstanceOf[js.Any])
-    if (versionName != null) __obj.updateDynamic("versionName")(versionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExternallyHostedApk]
   }
+  @scala.inline
+  implicit class SchemaExternallyHostedApkOps[Self <: SchemaExternallyHostedApk] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationLabel(value: String): Self = this.set("applicationLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationLabel: Self = this.set("applicationLabel", js.undefined)
+    @scala.inline
+    def setCertificateBase64sVarargs(value: String*): Self = this.set("certificateBase64s", js.Array(value :_*))
+    @scala.inline
+    def setCertificateBase64s(value: js.Array[String]): Self = this.set("certificateBase64s", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateBase64s: Self = this.set("certificateBase64s", js.undefined)
+    @scala.inline
+    def setExternallyHostedUrl(value: String): Self = this.set("externallyHostedUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternallyHostedUrl: Self = this.set("externallyHostedUrl", js.undefined)
+    @scala.inline
+    def setFileSha1Base64(value: String): Self = this.set("fileSha1Base64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSha1Base64: Self = this.set("fileSha1Base64", js.undefined)
+    @scala.inline
+    def setFileSha256Base64(value: String): Self = this.set("fileSha256Base64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSha256Base64: Self = this.set("fileSha256Base64", js.undefined)
+    @scala.inline
+    def setFileSize(value: String): Self = this.set("fileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSize: Self = this.set("fileSize", js.undefined)
+    @scala.inline
+    def setIconBase64(value: String): Self = this.set("iconBase64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconBase64: Self = this.set("iconBase64", js.undefined)
+    @scala.inline
+    def setMaximumSdk(value: Double): Self = this.set("maximumSdk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumSdk: Self = this.set("maximumSdk", js.undefined)
+    @scala.inline
+    def setMinimumSdk(value: Double): Self = this.set("minimumSdk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumSdk: Self = this.set("minimumSdk", js.undefined)
+    @scala.inline
+    def setNativeCodesVarargs(value: String*): Self = this.set("nativeCodes", js.Array(value :_*))
+    @scala.inline
+    def setNativeCodes(value: js.Array[String]): Self = this.set("nativeCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNativeCodes: Self = this.set("nativeCodes", js.undefined)
+    @scala.inline
+    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageName: Self = this.set("packageName", js.undefined)
+    @scala.inline
+    def setUsesFeaturesVarargs(value: String*): Self = this.set("usesFeatures", js.Array(value :_*))
+    @scala.inline
+    def setUsesFeatures(value: js.Array[String]): Self = this.set("usesFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsesFeatures: Self = this.set("usesFeatures", js.undefined)
+    @scala.inline
+    def setUsesPermissionsVarargs(value: SchemaExternallyHostedApkUsesPermission*): Self = this.set("usesPermissions", js.Array(value :_*))
+    @scala.inline
+    def setUsesPermissions(value: js.Array[SchemaExternallyHostedApkUsesPermission]): Self = this.set("usesPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsesPermissions: Self = this.set("usesPermissions", js.undefined)
+    @scala.inline
+    def setVersionCode(value: Double): Self = this.set("versionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
+    @scala.inline
+    def setVersionName(value: String): Self = this.set("versionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionName: Self = this.set("versionName", js.undefined)
+  }
+  
 }
 

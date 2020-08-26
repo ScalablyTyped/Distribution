@@ -19,8 +19,10 @@ class ConfgurationSet protected () extends CustomResource {
     * @param args The arguments to use to populate this resource's properties.
     * @param opts A bag of options that control this resource's behavior.
     */
+  /** @deprecated aws.ses.ConfgurationSet has been deprecated in favor of aws.ses.ConfigurationSet */
   def this(name: String) = this()
   def this(name: String, args: ConfgurationSetArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ConfgurationSetArgs, opts: CustomResourceOptions) = this()
   val name: Output_[String] = js.native
 }
@@ -36,8 +38,10 @@ object ConfgurationSet extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ConfgurationSet = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ConfgurationSet = js.native
   def get(name: String, id: Input[ID], state: ConfgurationSetState): ConfgurationSet = js.native
   def get(name: String, id: Input[ID], state: ConfgurationSetState, opts: CustomResourceOptions): ConfgurationSet = js.native
   /**

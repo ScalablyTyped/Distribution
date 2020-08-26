@@ -1,7 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Enumeration
 
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
-import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,50 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Enumeration.DeviceInformation")
 @js.native
 abstract class DeviceInformation ()
-  extends typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation {
-  /** The physical location of the device in its enclosure. For example, it may describe the location of a webcam inside a laptop. */
-  /* CompleteClass */
-  override var enclosureLocation: typings.winrtUwp.Windows.Devices.Enumeration.EnclosureLocation = js.native
-  /** A string representing the identity of the device. */
-  /* CompleteClass */
-  override var id: String = js.native
-  /** Indicates whether this device is the default device for the class. */
-  /* CompleteClass */
-  override var isDefault: Boolean = js.native
-  /** Indicates whether this device is enabled. */
-  /* CompleteClass */
-  override var isEnabled: Boolean = js.native
-  /** Gets the type of DeviceInformation represented by this object. */
-  /* CompleteClass */
-  override var kind: typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationKind = js.native
-  /** The name of the device. This name is in the best available language for the app. */
-  /* CompleteClass */
-  override var name: String = js.native
-  /** Gets the information about the capabilities for this device to pair. */
-  /* CompleteClass */
-  override var pairing: typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationPairing = js.native
-  /** Property store containing well-known values as well as additional properties that can be specified during device enumeration. */
-  /* CompleteClass */
-  override var properties: IMapView[String, _] = js.native
-  /**
-    * Gets a glyph for the device.
-    * @return The object for managing the asynchronous operation that will return a DeviceThumbnail
-    */
-  /* CompleteClass */
-  override def getGlyphThumbnailAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceThumbnail] = js.native
-  /**
-    * Returns a thumbnail image for the device.
-    * @return The object for managing the asynchronous operation that will return a DeviceThumbnail .
-    */
-  /* CompleteClass */
-  override def getThumbnailAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.DeviceThumbnail] = js.native
-  /**
-    * Updates the properties of an existing DeviceInformation object.
-    * @param updateInfo Indicates the properties to update.
-    */
-  /* CompleteClass */
-  override def update(updateInfo: typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformationUpdate): Unit = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
 
 /* static members */
 @JSGlobal("Windows.Devices.Enumeration.DeviceInformation")

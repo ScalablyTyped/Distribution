@@ -28,6 +28,7 @@ class ResourceUserrolepermissions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaUserRolePermission] = js.native
   def get(callback: BodyResponseCallback[SchemaUserRolePermission]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserRolePermission] = js.native
   def get(params: ParamsResourceUserrolepermissionsGet): GaxiosPromise[SchemaUserRolePermission] = js.native
   def get(
     params: ParamsResourceUserrolepermissionsGet,
@@ -59,6 +60,7 @@ class ResourceUserrolepermissions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaUserRolePermissionsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaUserRolePermissionsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserRolePermissionsListResponse] = js.native
   def list(params: ParamsResourceUserrolepermissionsList): GaxiosPromise[SchemaUserRolePermissionsListResponse] = js.native
   def list(
     params: ParamsResourceUserrolepermissionsList,

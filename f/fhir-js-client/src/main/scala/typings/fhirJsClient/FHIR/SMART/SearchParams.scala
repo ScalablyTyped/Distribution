@@ -1,6 +1,5 @@
 package typings.fhirJsClient.FHIR.SMART
 
-import typings.fhirJsClient.anon.DictpropName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * FHIR Search parameter : The parameter used to by the FHIR api methods to perform search on a particular resource.
   */
+@js.native
 trait SearchParams extends CommonQueryFilters {
   /**
     * The patient id. If provided, will make the search query patient specific by adding the patien query parameter
     */
-  var patient: js.UndefOr[String] = js.undefined
+  var patient: js.UndefOr[String] = js.native
   /**
     * The Search filter query object
     * This object syntaxs adopts mongodb-like query syntax ([see](http://docs.mongodb.org/manual/tutorial/query-documents/)
@@ -38,31 +38,42 @@ trait SearchParams extends CommonQueryFilters {
     * {'subject.name': {$exact: 'maud'}}
     * //=> subject.name:exact=maud
     */
-  var query: js.UndefOr[js.Any] = js.undefined
+  var query: js.UndefOr[js.Any] = js.native
   /**
     * The name of the resource type on which the query is performed
     */
-  var `type`: String
+  var `type`: String = js.native
 }
 
 object SearchParams {
   @scala.inline
-  def apply(
-    `type`: String,
-    count: js.UndefOr[Double] = js.undefined,
-    params: DictpropName = null,
-    patient: String = null,
-    query: js.Any = null,
-    since: String = null
-  ): SearchParams = {
+  def apply(`type`: String): SearchParams = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (patient != null) __obj.updateDynamic("patient")(patient.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchParams]
   }
+  @scala.inline
+  implicit class SearchParamsOps[Self <: SearchParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPatient(value: String): Self = this.set("patient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatient: Self = this.set("patient", js.undefined)
+    @scala.inline
+    def setQuery(value: js.Any): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+  }
+  
 }
 

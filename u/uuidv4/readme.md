@@ -1,7 +1,7 @@
 
 # Scala.js typings for uuidv4
 
-Typings are for version 6.1.1
+Typings are for version 6.2.1
 
 ## Library description:
 uuid creates UUIDs.
@@ -10,9 +10,9 @@ uuid creates UUIDs.
 | ------------------ | :-------------: |
 | Full name          | uuidv4 |
 | Keywords           | guid, uuid |
-| # releases         | 10 |
-| # dependents       | 91 |
-| # downloads        | 1120051 |
+| # releases         | 9 |
+| # dependents       | 96 |
+| # downloads        | 1288293 |
 | # stars            | 0 |
 
 ## Links

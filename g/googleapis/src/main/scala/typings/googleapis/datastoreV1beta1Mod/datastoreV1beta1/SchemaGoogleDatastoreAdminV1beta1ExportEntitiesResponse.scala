@@ -21,10 +21,26 @@ trait SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse extends js.Object 
 
 object SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse {
   @scala.inline
-  def apply(outputUrl: String = null): SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse = {
+  def apply(): SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse = {
     val __obj = js.Dynamic.literal()
-    if (outputUrl != null) __obj.updateDynamic("outputUrl")(outputUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponseOps[Self <: SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOutputUrl(value: String): Self = this.set("outputUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputUrl: Self = this.set("outputUrl", js.undefined)
+  }
+  
 }
 

@@ -18,13 +18,28 @@ trait DeleteApplicationMessage extends js.Object {
 
 object DeleteApplicationMessage {
   @scala.inline
-  def apply(
-    ApplicationName: ApplicationName,
-    TerminateEnvByForce: js.UndefOr[TerminateEnvForce] = js.undefined
-  ): DeleteApplicationMessage = {
+  def apply(ApplicationName: ApplicationName): DeleteApplicationMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
-    if (!js.isUndefined(TerminateEnvByForce)) __obj.updateDynamic("TerminateEnvByForce")(TerminateEnvByForce.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationMessage]
   }
+  @scala.inline
+  implicit class DeleteApplicationMessageOps[Self <: DeleteApplicationMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTerminateEnvByForce(value: TerminateEnvForce): Self = this.set("TerminateEnvByForce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminateEnvByForce: Self = this.set("TerminateEnvByForce", js.undefined)
+  }
+  
 }
 

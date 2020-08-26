@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LayerSearchSourceProperties extends SearchSourceProperties {
   /**
     * The results are displayed using this field. Defaults to the layer's `displayField` or the first string field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#displayField)
     */
-  var displayField: js.UndefOr[String] = js.undefined
+  var displayField: js.UndefOr[String] = js.native
   /**
     * Indicates to only return results that match the search value exactly. This property only applies to `string` field searches. `exactMatch` is always `true` when searching fields of type `number`.
     *
@@ -18,104 +19,100 @@ trait LayerSearchSourceProperties extends SearchSourceProperties {
     *
     * @default false
     */
-  var exactMatch: js.UndefOr[Boolean] = js.undefined
+  var exactMatch: js.UndefOr[Boolean] = js.native
   /**
     * The layer queried in the search. This is **required**.
     * > Layers created from client-side graphics are not supported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#layer)
     */
-  var layer: js.UndefOr[LayerProperties] = js.undefined
+  var layer: js.UndefOr[LayerProperties] = js.native
   /**
     * The name of the source for display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#name)
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * One or more field names used to order the query results. Specfiy `ASC` (ascending) or `DESC` (descending) after the field name to control the order. The default order is `ASC`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#orderByFields)
     */
-  var orderByFields: js.UndefOr[js.Array[String]] = js.undefined
+  var orderByFields: js.UndefOr[js.Array[String]] = js.native
   /**
     * An array of string values representing the names of fields in the feature layer to search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#searchFields)
     */
-  var searchFields: js.UndefOr[js.Array[String]] = js.undefined
+  var searchFields: js.UndefOr[js.Array[String]] = js.native
   /**
     * A template string used to display multiple fields in a defined order when results are displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#searchTemplate)
     */
-  var searchTemplate: js.UndefOr[String] = js.undefined
+  var searchTemplate: js.UndefOr[String] = js.native
   /**
     * A template string used to display multiple fields in a defined order when suggestions are displayed. This takes precedence over `displayField`. Field names in the template must have the following format: `{FieldName}`. An example suggestionTemplate could look something like: `Name: {OWNER}, Parcel: {PARCEL_ID}`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#suggestionTemplate)
     */
-  var suggestionTemplate: js.UndefOr[String] = js.undefined
+  var suggestionTemplate: js.UndefOr[String] = js.native
 }
 
 object LayerSearchSourceProperties {
   @scala.inline
-  def apply(
-    autoNavigate: js.UndefOr[Boolean] = js.undefined,
-    displayField: String = null,
-    exactMatch: js.UndefOr[Boolean] = js.undefined,
-    filter: SearchSourceFilter = null,
-    getResults: /* params */ js.Any => js.Promise[js.Array[SearchResult]] = null,
-    getSuggestions: /* params */ js.Any => js.Promise[js.Array[SuggestResult]] = null,
-    layer: LayerProperties = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    maxSuggestions: js.UndefOr[Double] = js.undefined,
-    minSuggestCharacters: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    orderByFields: js.Array[String] = null,
-    outFields: js.Array[String] = null,
-    placeholder: String = null,
-    popupEnabled: js.UndefOr[Boolean] = js.undefined,
-    popupTemplate: PopupTemplateProperties = null,
-    prefix: String = null,
-    resultGraphicEnabled: js.UndefOr[Boolean] = js.undefined,
-    resultSymbol: SymbolProperties = null,
-    searchFields: js.Array[String] = null,
-    searchTemplate: String = null,
-    suffix: String = null,
-    suggestionTemplate: String = null,
-    suggestionsEnabled: js.UndefOr[Boolean] = js.undefined,
-    withinViewEnabled: js.UndefOr[Boolean] = js.undefined,
-    zoomScale: js.UndefOr[Double] = js.undefined
-  ): LayerSearchSourceProperties = {
+  def apply(): LayerSearchSourceProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoNavigate)) __obj.updateDynamic("autoNavigate")(autoNavigate.get.asInstanceOf[js.Any])
-    if (displayField != null) __obj.updateDynamic("displayField")(displayField.asInstanceOf[js.Any])
-    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.get.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (getResults != null) __obj.updateDynamic("getResults")(js.Any.fromFunction1(getResults))
-    if (getSuggestions != null) __obj.updateDynamic("getSuggestions")(js.Any.fromFunction1(getSuggestions))
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSuggestions)) __obj.updateDynamic("maxSuggestions")(maxSuggestions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSuggestCharacters)) __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (orderByFields != null) __obj.updateDynamic("orderByFields")(orderByFields.asInstanceOf[js.Any])
-    if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.get.asInstanceOf[js.Any])
-    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(resultGraphicEnabled)) __obj.updateDynamic("resultGraphicEnabled")(resultGraphicEnabled.get.asInstanceOf[js.Any])
-    if (resultSymbol != null) __obj.updateDynamic("resultSymbol")(resultSymbol.asInstanceOf[js.Any])
-    if (searchFields != null) __obj.updateDynamic("searchFields")(searchFields.asInstanceOf[js.Any])
-    if (searchTemplate != null) __obj.updateDynamic("searchTemplate")(searchTemplate.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (suggestionTemplate != null) __obj.updateDynamic("suggestionTemplate")(suggestionTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(suggestionsEnabled)) __obj.updateDynamic("suggestionsEnabled")(suggestionsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(withinViewEnabled)) __obj.updateDynamic("withinViewEnabled")(withinViewEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomScale)) __obj.updateDynamic("zoomScale")(zoomScale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerSearchSourceProperties]
   }
+  @scala.inline
+  implicit class LayerSearchSourcePropertiesOps[Self <: LayerSearchSourceProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayField(value: String): Self = this.set("displayField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayField: Self = this.set("displayField", js.undefined)
+    @scala.inline
+    def setExactMatch(value: Boolean): Self = this.set("exactMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExactMatch: Self = this.set("exactMatch", js.undefined)
+    @scala.inline
+    def setLayer(value: LayerProperties): Self = this.set("layer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayer: Self = this.set("layer", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrderByFieldsVarargs(value: String*): Self = this.set("orderByFields", js.Array(value :_*))
+    @scala.inline
+    def setOrderByFields(value: js.Array[String]): Self = this.set("orderByFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderByFields: Self = this.set("orderByFields", js.undefined)
+    @scala.inline
+    def setSearchFieldsVarargs(value: String*): Self = this.set("searchFields", js.Array(value :_*))
+    @scala.inline
+    def setSearchFields(value: js.Array[String]): Self = this.set("searchFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchFields: Self = this.set("searchFields", js.undefined)
+    @scala.inline
+    def setSearchTemplate(value: String): Self = this.set("searchTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchTemplate: Self = this.set("searchTemplate", js.undefined)
+    @scala.inline
+    def setSuggestionTemplate(value: String): Self = this.set("suggestionTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionTemplate: Self = this.set("suggestionTemplate", js.undefined)
+  }
+  
 }
 

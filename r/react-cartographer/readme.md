@@ -12,7 +12,7 @@ Generic React component for displaying static maps using Yahoo, Google or Bing a
 | Keywords           | react, react-component, isomorphic, map, maps, visualization, yahoo maps, google maps, gmaps, bing maps |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 13575 |
+| # downloads        | 13766 |
 | # stars            | 1 |
 
 ## Links

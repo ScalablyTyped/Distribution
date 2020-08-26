@@ -9,9 +9,9 @@ Typings are for version 0.4.8
 | ------------------ | :-------------: |
 | Full name          | @apollographql/apollo-tools |
 | Keywords           | - |
-| # releases         | 28 |
-| # dependents       | 10 |
-| # downloads        | 19049624 |
+| # releases         | 30 |
+| # dependents       | 11 |
+| # downloads        | 21077875 |
 | # stars            | 0 |
 
 ## Links

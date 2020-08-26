@@ -48,6 +48,7 @@ trait TreeView_ extends Widget_ {
     * @returns {void}
     */
   def collapseAll(): Unit = js.native
+  def collapseAll(levelUntil: js.UndefOr[scala.Nothing], excludeHiddenNodes: Boolean): Unit = js.native
   def collapseAll(levelUntil: Double): Unit = js.native
   def collapseAll(levelUntil: Double, excludeHiddenNodes: Boolean): Unit = js.native
   /** To collapse a particular node in TreeView.
@@ -84,6 +85,7 @@ trait TreeView_ extends Widget_ {
     * @returns {void}
     */
   def expandAll(): Unit = js.native
+  def expandAll(levelUntil: js.UndefOr[scala.Nothing], excludeHiddenNodes: Boolean): Unit = js.native
   def expandAll(levelUntil: Double): Unit = js.native
   def expandAll(levelUntil: Double, excludeHiddenNodes: Boolean): Unit = js.native
   /** To expandNode particular node in TreeView.

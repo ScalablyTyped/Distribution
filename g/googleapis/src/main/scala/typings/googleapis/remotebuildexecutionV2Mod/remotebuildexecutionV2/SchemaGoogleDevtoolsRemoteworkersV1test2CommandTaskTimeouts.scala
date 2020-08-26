@@ -35,12 +35,34 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts extends js.Obj
 
 object SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts {
   @scala.inline
-  def apply(execution: String = null, idle: String = null, shutdown: String = null): SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts = {
+  def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts = {
     val __obj = js.Dynamic.literal()
-    if (execution != null) __obj.updateDynamic("execution")(execution.asInstanceOf[js.Any])
-    if (idle != null) __obj.updateDynamic("idle")(idle.asInstanceOf[js.Any])
-    if (shutdown != null) __obj.updateDynamic("shutdown")(shutdown.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeoutsOps[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecution(value: String): Self = this.set("execution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecution: Self = this.set("execution", js.undefined)
+    @scala.inline
+    def setIdle(value: String): Self = this.set("idle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdle: Self = this.set("idle", js.undefined)
+    @scala.inline
+    def setShutdown(value: String): Self = this.set("shutdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShutdown: Self = this.set("shutdown", js.undefined)
+  }
+  
 }
 

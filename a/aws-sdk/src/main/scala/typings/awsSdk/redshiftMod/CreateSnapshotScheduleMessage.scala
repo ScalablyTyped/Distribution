@@ -34,22 +34,50 @@ trait CreateSnapshotScheduleMessage extends js.Object {
 
 object CreateSnapshotScheduleMessage {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[BooleanOptional] = js.undefined,
-    NextInvocations: js.UndefOr[IntegerOptional] = js.undefined,
-    ScheduleDefinitions: ScheduleDefinitionList = null,
-    ScheduleDescription: String = null,
-    ScheduleIdentifier: String = null,
-    Tags: TagList = null
-  ): CreateSnapshotScheduleMessage = {
+  def apply(): CreateSnapshotScheduleMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NextInvocations)) __obj.updateDynamic("NextInvocations")(NextInvocations.get.asInstanceOf[js.Any])
-    if (ScheduleDefinitions != null) __obj.updateDynamic("ScheduleDefinitions")(ScheduleDefinitions.asInstanceOf[js.Any])
-    if (ScheduleDescription != null) __obj.updateDynamic("ScheduleDescription")(ScheduleDescription.asInstanceOf[js.Any])
-    if (ScheduleIdentifier != null) __obj.updateDynamic("ScheduleIdentifier")(ScheduleIdentifier.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSnapshotScheduleMessage]
   }
+  @scala.inline
+  implicit class CreateSnapshotScheduleMessageOps[Self <: CreateSnapshotScheduleMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: BooleanOptional): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setNextInvocations(value: IntegerOptional): Self = this.set("NextInvocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextInvocations: Self = this.set("NextInvocations", js.undefined)
+    @scala.inline
+    def setScheduleDefinitionsVarargs(value: String*): Self = this.set("ScheduleDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setScheduleDefinitions(value: ScheduleDefinitionList): Self = this.set("ScheduleDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleDefinitions: Self = this.set("ScheduleDefinitions", js.undefined)
+    @scala.inline
+    def setScheduleDescription(value: String): Self = this.set("ScheduleDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleDescription: Self = this.set("ScheduleDescription", js.undefined)
+    @scala.inline
+    def setScheduleIdentifier(value: String): Self = this.set("ScheduleIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleIdentifier: Self = this.set("ScheduleIdentifier", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

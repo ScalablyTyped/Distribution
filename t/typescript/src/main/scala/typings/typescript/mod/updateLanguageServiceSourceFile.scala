@@ -12,6 +12,13 @@ object updateLanguageServiceSourceFile extends js.Object {
     sourceFile: SourceFile,
     scriptSnapshot: IScriptSnapshot,
     version: java.lang.String,
+    textChangeRange: js.UndefOr[scala.Nothing],
+    aggressiveChecks: Boolean
+  ): SourceFile = js.native
+  def apply(
+    sourceFile: SourceFile,
+    scriptSnapshot: IScriptSnapshot,
+    version: java.lang.String,
     textChangeRange: TextChangeRange
   ): SourceFile = js.native
   def apply(

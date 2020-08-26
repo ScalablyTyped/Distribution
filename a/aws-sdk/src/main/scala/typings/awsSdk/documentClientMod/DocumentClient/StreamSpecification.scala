@@ -18,10 +18,28 @@ trait StreamSpecification extends js.Object {
 
 object StreamSpecification {
   @scala.inline
-  def apply(StreamEnabled: StreamEnabled, StreamViewType: StreamViewType = null): StreamSpecification = {
+  def apply(StreamEnabled: StreamEnabled): StreamSpecification = {
     val __obj = js.Dynamic.literal(StreamEnabled = StreamEnabled.asInstanceOf[js.Any])
-    if (StreamViewType != null) __obj.updateDynamic("StreamViewType")(StreamViewType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamSpecification]
   }
+  @scala.inline
+  implicit class StreamSpecificationOps[Self <: StreamSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStreamEnabled(value: StreamEnabled): Self = this.set("StreamEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamViewType(value: StreamViewType): Self = this.set("StreamViewType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamViewType: Self = this.set("StreamViewType", js.undefined)
+  }
+  
 }
 

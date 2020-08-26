@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 /* Inlined 'mark' | vega-typings.vega-typings/types/spec.Mark['type'] */
 /* Rewritten from type alias, can be one of: 
-  - typings.vegaTypings.vegaTypingsStrings.image
-  - typings.vegaTypings.vegaTypingsStrings.trail
   - typings.vegaTypings.vegaTypingsStrings.area
-  - typings.vegaTypings.vegaTypingsStrings.line
-  - typings.vegaTypings.vegaTypingsStrings.text
-  - typings.vegaTypings.vegaTypingsStrings.mark
-  - typings.vegaTypings.vegaTypingsStrings.rule
-  - typings.vegaTypings.vegaTypingsStrings.arc
-  - typings.vegaTypings.vegaTypingsStrings.shape
-  - typings.vegaTypings.vegaTypingsStrings.path
-  - typings.vegaTypings.vegaTypingsStrings.rect
-  - typings.vegaTypings.vegaTypingsStrings.symbol
+  - typings.vegaTypings.vegaTypingsStrings.trail
   - typings.vegaTypings.vegaTypingsStrings.group
+  - typings.vegaTypings.vegaTypingsStrings.path
+  - typings.vegaTypings.vegaTypingsStrings.image
+  - typings.vegaTypings.vegaTypingsStrings.text
+  - typings.vegaTypings.vegaTypingsStrings.shape
+  - typings.vegaTypings.vegaTypingsStrings.symbol
+  - typings.vegaTypings.vegaTypingsStrings.arc
+  - typings.vegaTypings.vegaTypingsStrings.rule
+  - typings.vegaTypings.vegaTypingsStrings.mark
+  - typings.vegaTypings.vegaTypingsStrings.rect
+  - typings.vegaTypings.vegaTypingsStrings.line
 */
 trait MarkConfigKeys extends js.Object
 

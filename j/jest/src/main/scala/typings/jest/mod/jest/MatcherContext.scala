@@ -15,7 +15,7 @@ trait MatcherContext
   val currentTestName: String = js.native
   val expand: Boolean = js.native
   val expectedAssertionsNumber: (Double | Null) with Double = js.native
-  val isExpectingAssertions: js.UndefOr[Boolean] = js.native
+  val isExpectingAssertions: Boolean with js.UndefOr[Boolean] = js.native
   val isNot: Boolean = js.native
   val promise: String = js.native
   val suppressedErrors: js.Array[_] with js.Array[Error] = js.native
@@ -26,6 +26,7 @@ trait MatcherContext
     *  This is a deep-equality function that will return true if two objects have the same values (recursively).
     */
   def equals(a: js.Any, b: js.Any): Boolean = js.native
+  def equals(a: js.Any, b: js.Any, customTesters: js.UndefOr[scala.Nothing], strictCheck: Boolean): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[EqualityTester]): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[EqualityTester], strictCheck: Boolean): Boolean = js.native
 }

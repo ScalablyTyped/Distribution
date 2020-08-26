@@ -18,14 +18,32 @@ trait RemoveTargetsResponse extends js.Object {
 
 object RemoveTargetsResponse {
   @scala.inline
-  def apply(
-    FailedEntries: RemoveTargetsResultEntryList = null,
-    FailedEntryCount: js.UndefOr[Integer] = js.undefined
-  ): RemoveTargetsResponse = {
+  def apply(): RemoveTargetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (FailedEntries != null) __obj.updateDynamic("FailedEntries")(FailedEntries.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailedEntryCount)) __obj.updateDynamic("FailedEntryCount")(FailedEntryCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveTargetsResponse]
   }
+  @scala.inline
+  implicit class RemoveTargetsResponseOps[Self <: RemoveTargetsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailedEntriesVarargs(value: RemoveTargetsResultEntry*): Self = this.set("FailedEntries", js.Array(value :_*))
+    @scala.inline
+    def setFailedEntries(value: RemoveTargetsResultEntryList): Self = this.set("FailedEntries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedEntries: Self = this.set("FailedEntries", js.undefined)
+    @scala.inline
+    def setFailedEntryCount(value: Integer): Self = this.set("FailedEntryCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedEntryCount: Self = this.set("FailedEntryCount", js.undefined)
+  }
+  
 }
 

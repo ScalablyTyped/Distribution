@@ -4,113 +4,164 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Model extends js.Object {
   /** Fires, on clicking the gauge.
     */
-  var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
+  var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
   /** Fires, on double clicking the digital gauge.
     */
-  var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
+  var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
   /** Specifies the responsiveness of the Digital gauge
     * @Default {false}
     */
-  var enableResize: js.UndefOr[Boolean] = js.undefined
+  var enableResize: js.UndefOr[Boolean] = js.native
   /** This provides options for customizing export settings
     */
-  var exportSettings: js.UndefOr[ExportSettings] = js.undefined
+  var exportSettings: js.UndefOr[ExportSettings] = js.native
   /** Specifies the frame of the Digital gauge.
     * @Default {{backgroundImageUrl: null, innerWidth: 6, outerWidth: 10}}
     */
-  var frame: js.UndefOr[Frame] = js.undefined
+  var frame: js.UndefOr[Frame] = js.native
   /** Specifies the height of the DigitalGauge.
     * @Default {150}
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /** Triggers when the gauge is initialized.
     */
-  var init: js.UndefOr[js.Function1[/* e */ InitEventArgs, Unit]] = js.undefined
+  var init: js.UndefOr[js.Function1[/* e */ InitEventArgs, Unit]] = js.native
   /** Specifies the resize option of the DigitalGauge.
     * @Default {false}
     */
-  var isResponsive: js.UndefOr[Boolean] = js.undefined
+  var isResponsive: js.UndefOr[Boolean] = js.native
   /** Triggers when the gauge item rendering.
     */
-  var itemRendering: js.UndefOr[js.Function1[/* e */ ItemRenderingEventArgs, Unit]] = js.undefined
+  var itemRendering: js.UndefOr[js.Function1[/* e */ ItemRenderingEventArgs, Unit]] = js.native
   /** Specifies the items for the DigitalGauge.
     * @Default {null}
     */
-  var items: js.UndefOr[js.Array[Item]] = js.undefined
+  var items: js.UndefOr[js.Array[Item]] = js.native
   /** Triggers when the gauge is start to load.
     */
-  var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
+  var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
   /** Specifies the matrixSegmentData for the DigitalGauge.
     */
-  var matrixSegmentData: js.UndefOr[js.Any] = js.undefined
+  var matrixSegmentData: js.UndefOr[js.Any] = js.native
   /** Triggers when the gauge render is completed.
     */
-  var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.undefined
+  var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.native
   /** Fires, on right clicking the digital gauge.
     */
-  var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
+  var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.native
   /** Specifies the segmentData for the DigitalGauge.
     */
-  var segmentData: js.UndefOr[js.Any] = js.undefined
+  var segmentData: js.UndefOr[js.Any] = js.native
   /** Specifies the themes for the Digital gauge. See Themes
     * @Default {flatlight}
     */
-  var themes: js.UndefOr[String] = js.undefined
+  var themes: js.UndefOr[String] = js.native
   /** Specifies the value to the DigitalGauge.
     * @Default {text}
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String] = js.native
   /** Specifies the width for the Digital gauge.
     * @Default {400}
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Model {
   @scala.inline
-  def apply(
-    Click: /* e */ ClickEventArgs => Unit = null,
-    doubleClick: /* e */ DoubleClickEventArgs => Unit = null,
-    enableResize: js.UndefOr[Boolean] = js.undefined,
-    exportSettings: ExportSettings = null,
-    frame: Frame = null,
-    height: js.UndefOr[Double] = js.undefined,
-    init: /* e */ InitEventArgs => Unit = null,
-    isResponsive: js.UndefOr[Boolean] = js.undefined,
-    itemRendering: /* e */ ItemRenderingEventArgs => Unit = null,
-    items: js.Array[Item] = null,
-    load: /* e */ LoadEventArgs => Unit = null,
-    matrixSegmentData: js.Any = null,
-    renderComplete: /* e */ RenderCompleteEventArgs => Unit = null,
-    rightClick: /* e */ RightClickEventArgs => Unit = null,
-    segmentData: js.Any = null,
-    themes: String = null,
-    value: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): Model = {
+  def apply(): Model = {
     val __obj = js.Dynamic.literal()
-    if (Click != null) __obj.updateDynamic("Click")(js.Any.fromFunction1(Click))
-    if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
-    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize.get.asInstanceOf[js.Any])
-    if (exportSettings != null) __obj.updateDynamic("exportSettings")(exportSettings.asInstanceOf[js.Any])
-    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
-    if (itemRendering != null) __obj.updateDynamic("itemRendering")(js.Any.fromFunction1(itemRendering))
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
-    if (matrixSegmentData != null) __obj.updateDynamic("matrixSegmentData")(matrixSegmentData.asInstanceOf[js.Any])
-    if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction1(renderComplete))
-    if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
-    if (segmentData != null) __obj.updateDynamic("segmentData")(segmentData.asInstanceOf[js.Any])
-    if (themes != null) __obj.updateDynamic("themes")(themes.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
+  @scala.inline
+  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClick(value: /* e */ ClickEventArgs => Unit): Self = this.set("Click", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClick: Self = this.set("Click", js.undefined)
+    @scala.inline
+    def setDoubleClick(value: /* e */ DoubleClickEventArgs => Unit): Self = this.set("doubleClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDoubleClick: Self = this.set("doubleClick", js.undefined)
+    @scala.inline
+    def setEnableResize(value: Boolean): Self = this.set("enableResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableResize: Self = this.set("enableResize", js.undefined)
+    @scala.inline
+    def setExportSettings(value: ExportSettings): Self = this.set("exportSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportSettings: Self = this.set("exportSettings", js.undefined)
+    @scala.inline
+    def setFrame(value: Frame): Self = this.set("frame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrame: Self = this.set("frame", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setInit(value: /* e */ InitEventArgs => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInit: Self = this.set("init", js.undefined)
+    @scala.inline
+    def setIsResponsive(value: Boolean): Self = this.set("isResponsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsResponsive: Self = this.set("isResponsive", js.undefined)
+    @scala.inline
+    def setItemRendering(value: /* e */ ItemRenderingEventArgs => Unit): Self = this.set("itemRendering", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteItemRendering: Self = this.set("itemRendering", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: Item*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[Item]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setLoad(value: /* e */ LoadEventArgs => Unit): Self = this.set("load", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setMatrixSegmentData(value: js.Any): Self = this.set("matrixSegmentData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatrixSegmentData: Self = this.set("matrixSegmentData", js.undefined)
+    @scala.inline
+    def setRenderComplete(value: /* e */ RenderCompleteEventArgs => Unit): Self = this.set("renderComplete", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderComplete: Self = this.set("renderComplete", js.undefined)
+    @scala.inline
+    def setRightClick(value: /* e */ RightClickEventArgs => Unit): Self = this.set("rightClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRightClick: Self = this.set("rightClick", js.undefined)
+    @scala.inline
+    def setSegmentData(value: js.Any): Self = this.set("segmentData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentData: Self = this.set("segmentData", js.undefined)
+    @scala.inline
+    def setThemes(value: String): Self = this.set("themes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemes: Self = this.set("themes", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -5,22 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined set-cookie-parser.set-cookie-parser.Options & {  map  :true} */
+/* Inlined set-cookie-parser.set-cookie-parser.Options & {  map :true} */
+@js.native
 trait Optionsmaptrue extends js.Object {
-  var decodeValues: js.UndefOr[Boolean] = js.undefined
-  var map: js.UndefOr[Boolean with `true`] = js.undefined
+  var decodeValues: js.UndefOr[Boolean] = js.native
+  var map: js.UndefOr[Boolean] with `true` = js.native
 }
 
 object Optionsmaptrue {
   @scala.inline
-  def apply(
-    decodeValues: js.UndefOr[Boolean] = js.undefined,
-    map: js.UndefOr[Boolean with `true`] = js.undefined
-  ): Optionsmaptrue = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(decodeValues)) __obj.updateDynamic("decodeValues")(decodeValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(map)) __obj.updateDynamic("map")(map.get.asInstanceOf[js.Any])
+  def apply(map: js.UndefOr[Boolean] with `true`): Optionsmaptrue = {
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
     __obj.asInstanceOf[Optionsmaptrue]
   }
+  @scala.inline
+  implicit class OptionsmaptrueOps[Self <: Optionsmaptrue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMap(value: js.UndefOr[Boolean] with `true`): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDecodeValues(value: Boolean): Self = this.set("decodeValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecodeValues: Self = this.set("decodeValues", js.undefined)
+  }
+  
 }
 

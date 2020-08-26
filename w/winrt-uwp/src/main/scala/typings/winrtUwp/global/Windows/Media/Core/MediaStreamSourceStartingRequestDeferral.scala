@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.Core.MediaStreamSourceStartingRequestDeferral")
 @js.native
 abstract class MediaStreamSourceStartingRequestDeferral ()
-  extends typings.winrtUwp.Windows.Media.Core.MediaStreamSourceStartingRequestDeferral {
-  /** Reports that the application has completed processing the Starting event. */
-  /* CompleteClass */
-  override def complete(): Unit = js.native
-}
+  extends typings.winrtUwp.Windows.Media.Core.MediaStreamSourceStartingRequestDeferral
 

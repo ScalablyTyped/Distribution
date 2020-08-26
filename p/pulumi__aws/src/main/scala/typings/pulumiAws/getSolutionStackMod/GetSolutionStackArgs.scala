@@ -21,10 +21,28 @@ trait GetSolutionStackArgs extends js.Object {
 
 object GetSolutionStackArgs {
   @scala.inline
-  def apply(nameRegex: String, mostRecent: js.UndefOr[Boolean] = js.undefined): GetSolutionStackArgs = {
+  def apply(nameRegex: String): GetSolutionStackArgs = {
     val __obj = js.Dynamic.literal(nameRegex = nameRegex.asInstanceOf[js.Any])
-    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSolutionStackArgs]
   }
+  @scala.inline
+  implicit class GetSolutionStackArgsOps[Self <: GetSolutionStackArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNameRegex(value: String): Self = this.set("nameRegex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMostRecent(value: Boolean): Self = this.set("mostRecent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMostRecent: Self = this.set("mostRecent", js.undefined)
+  }
+  
 }
 

@@ -34,19 +34,40 @@ trait ListFindingsReportsRequest extends js.Object {
 
 object ListFindingsReportsRequest {
   @scala.inline
-  def apply(
-    endTime: Timestamp,
-    profilingGroupName: ProfilingGroupName,
-    startTime: Timestamp,
-    dailyReportsOnly: js.UndefOr[Boolean] = js.undefined,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: PaginationToken = null
-  ): ListFindingsReportsRequest = {
+  def apply(endTime: Timestamp, profilingGroupName: ProfilingGroupName, startTime: Timestamp): ListFindingsReportsRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(dailyReportsOnly)) __obj.updateDynamic("dailyReportsOnly")(dailyReportsOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFindingsReportsRequest]
   }
+  @scala.inline
+  implicit class ListFindingsReportsRequestOps[Self <: ListFindingsReportsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDailyReportsOnly(value: Boolean): Self = this.set("dailyReportsOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDailyReportsOnly: Self = this.set("dailyReportsOnly", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

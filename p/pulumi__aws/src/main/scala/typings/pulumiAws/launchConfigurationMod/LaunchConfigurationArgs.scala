@@ -99,46 +99,102 @@ trait LaunchConfigurationArgs extends js.Object {
 
 object LaunchConfigurationArgs {
   @scala.inline
-  def apply(
-    imageId: Input[String],
-    instanceType: Input[String],
-    associatePublicIpAddress: Input[Boolean] = null,
-    ebsBlockDevices: Input[js.Array[Input[LaunchConfigurationEbsBlockDevice]]] = null,
-    ebsOptimized: Input[Boolean] = null,
-    enableMonitoring: Input[Boolean] = null,
-    ephemeralBlockDevices: Input[js.Array[Input[LaunchConfigurationEphemeralBlockDevice]]] = null,
-    iamInstanceProfile: Input[String | InstanceProfile] = null,
-    keyName: Input[String] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    placementTenancy: Input[String] = null,
-    rootBlockDevice: Input[LaunchConfigurationRootBlockDevice] = null,
-    securityGroups: Input[js.Array[Input[String]]] = null,
-    spotPrice: Input[String] = null,
-    userData: Input[String] = null,
-    userDataBase64: Input[String] = null,
-    vpcClassicLinkId: Input[String] = null,
-    vpcClassicLinkSecurityGroups: Input[js.Array[Input[String]]] = null
-  ): LaunchConfigurationArgs = {
+  def apply(imageId: Input[String], instanceType: Input[String]): LaunchConfigurationArgs = {
     val __obj = js.Dynamic.literal(imageId = imageId.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
-    if (associatePublicIpAddress != null) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress.asInstanceOf[js.Any])
-    if (ebsBlockDevices != null) __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices.asInstanceOf[js.Any])
-    if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
-    if (enableMonitoring != null) __obj.updateDynamic("enableMonitoring")(enableMonitoring.asInstanceOf[js.Any])
-    if (ephemeralBlockDevices != null) __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices.asInstanceOf[js.Any])
-    if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile.asInstanceOf[js.Any])
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (placementTenancy != null) __obj.updateDynamic("placementTenancy")(placementTenancy.asInstanceOf[js.Any])
-    if (rootBlockDevice != null) __obj.updateDynamic("rootBlockDevice")(rootBlockDevice.asInstanceOf[js.Any])
-    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
-    if (spotPrice != null) __obj.updateDynamic("spotPrice")(spotPrice.asInstanceOf[js.Any])
-    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
-    if (userDataBase64 != null) __obj.updateDynamic("userDataBase64")(userDataBase64.asInstanceOf[js.Any])
-    if (vpcClassicLinkId != null) __obj.updateDynamic("vpcClassicLinkId")(vpcClassicLinkId.asInstanceOf[js.Any])
-    if (vpcClassicLinkSecurityGroups != null) __obj.updateDynamic("vpcClassicLinkSecurityGroups")(vpcClassicLinkSecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchConfigurationArgs]
   }
+  @scala.inline
+  implicit class LaunchConfigurationArgsOps[Self <: LaunchConfigurationArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageId(value: Input[String]): Self = this.set("imageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: Input[String]): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssociatePublicIpAddress(value: Input[Boolean]): Self = this.set("associatePublicIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatePublicIpAddress: Self = this.set("associatePublicIpAddress", js.undefined)
+    @scala.inline
+    def setEbsBlockDevicesVarargs(value: Input[LaunchConfigurationEbsBlockDevice]*): Self = this.set("ebsBlockDevices", js.Array(value :_*))
+    @scala.inline
+    def setEbsBlockDevices(value: Input[js.Array[Input[LaunchConfigurationEbsBlockDevice]]]): Self = this.set("ebsBlockDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsBlockDevices: Self = this.set("ebsBlockDevices", js.undefined)
+    @scala.inline
+    def setEbsOptimized(value: Input[Boolean]): Self = this.set("ebsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptimized: Self = this.set("ebsOptimized", js.undefined)
+    @scala.inline
+    def setEnableMonitoring(value: Input[Boolean]): Self = this.set("enableMonitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableMonitoring: Self = this.set("enableMonitoring", js.undefined)
+    @scala.inline
+    def setEphemeralBlockDevicesVarargs(value: Input[LaunchConfigurationEphemeralBlockDevice]*): Self = this.set("ephemeralBlockDevices", js.Array(value :_*))
+    @scala.inline
+    def setEphemeralBlockDevices(value: Input[js.Array[Input[LaunchConfigurationEphemeralBlockDevice]]]): Self = this.set("ephemeralBlockDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEphemeralBlockDevices: Self = this.set("ephemeralBlockDevices", js.undefined)
+    @scala.inline
+    def setIamInstanceProfile(value: Input[String | InstanceProfile]): Self = this.set("iamInstanceProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamInstanceProfile: Self = this.set("iamInstanceProfile", js.undefined)
+    @scala.inline
+    def setKeyName(value: Input[String]): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("keyName", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setPlacementTenancy(value: Input[String]): Self = this.set("placementTenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementTenancy: Self = this.set("placementTenancy", js.undefined)
+    @scala.inline
+    def setRootBlockDevice(value: Input[LaunchConfigurationRootBlockDevice]): Self = this.set("rootBlockDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootBlockDevice: Self = this.set("rootBlockDevice", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: Input[String]*): Self = this.set("securityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("securityGroups", js.undefined)
+    @scala.inline
+    def setSpotPrice(value: Input[String]): Self = this.set("spotPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotPrice: Self = this.set("spotPrice", js.undefined)
+    @scala.inline
+    def setUserData(value: Input[String]): Self = this.set("userData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("userData", js.undefined)
+    @scala.inline
+    def setUserDataBase64(value: Input[String]): Self = this.set("userDataBase64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserDataBase64: Self = this.set("userDataBase64", js.undefined)
+    @scala.inline
+    def setVpcClassicLinkId(value: Input[String]): Self = this.set("vpcClassicLinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcClassicLinkId: Self = this.set("vpcClassicLinkId", js.undefined)
+    @scala.inline
+    def setVpcClassicLinkSecurityGroupsVarargs(value: Input[String]*): Self = this.set("vpcClassicLinkSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setVpcClassicLinkSecurityGroups(value: Input[js.Array[Input[String]]]): Self = this.set("vpcClassicLinkSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcClassicLinkSecurityGroups: Self = this.set("vpcClassicLinkSecurityGroups", js.undefined)
+  }
+  
 }
 

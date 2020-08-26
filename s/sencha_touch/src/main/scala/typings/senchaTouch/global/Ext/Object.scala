@@ -24,7 +24,11 @@ object Object extends js.Object {
     * @param scope Object The execution scope (this) of the callback function
     */
   def each(): Unit = js.native
+  def each(`object`: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def each(`object`: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def each(`object`: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def each(`object`: js.Any): Unit = js.native
+  def each(`object`: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def each(`object`: js.Any, fn: js.Any): Unit = js.native
   def each(`object`: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Converts a query string back into an object
@@ -33,6 +37,7 @@ object Object extends js.Object {
     * @returns Object
     */
   def fromQueryString(): js.Any = js.native
+  def fromQueryString(queryString: js.UndefOr[scala.Nothing], recursive: Boolean): js.Any = js.native
   def fromQueryString(queryString: java.lang.String): js.Any = js.native
   def fromQueryString(queryString: java.lang.String, recursive: Boolean): js.Any = js.native
   /** [Method] Returns the first matching key corresponding to the given value
@@ -40,6 +45,7 @@ object Object extends js.Object {
     * @param value Object The value to find
     */
   def getKey(): Unit = js.native
+  def getKey(`object`: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def getKey(`object`: js.Any): Unit = js.native
   def getKey(`object`: js.Any, value: js.Any): Unit = js.native
   /** [Method] Gets all keys of the given object as an array
@@ -78,7 +84,11 @@ object Object extends js.Object {
     * @returns Object[] Array of objects with name and value fields.
     */
   def toQueryObjects(): typings.senchaTouch.Ext.Array = js.native
+  def toQueryObjects(name: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], recursive: Boolean): typings.senchaTouch.Ext.Array = js.native
+  def toQueryObjects(name: js.UndefOr[scala.Nothing], value: js.Any): typings.senchaTouch.Ext.Array = js.native
+  def toQueryObjects(name: js.UndefOr[scala.Nothing], value: js.Any, recursive: Boolean): typings.senchaTouch.Ext.Array = js.native
   def toQueryObjects(name: java.lang.String): typings.senchaTouch.Ext.Array = js.native
+  def toQueryObjects(name: java.lang.String, value: js.UndefOr[scala.Nothing], recursive: Boolean): typings.senchaTouch.Ext.Array = js.native
   def toQueryObjects(name: java.lang.String, value: js.Any): typings.senchaTouch.Ext.Array = js.native
   def toQueryObjects(name: java.lang.String, value: js.Any, recursive: Boolean): typings.senchaTouch.Ext.Array = js.native
   /** [Method] Takes an object and converts it to an encoded query string
@@ -87,6 +97,7 @@ object Object extends js.Object {
     * @returns String queryString
     */
   def toQueryString(): java.lang.String = js.native
+  def toQueryString(`object`: js.UndefOr[scala.Nothing], recursive: Boolean): java.lang.String = js.native
   def toQueryString(`object`: js.Any): java.lang.String = js.native
   def toQueryString(`object`: js.Any, recursive: Boolean): java.lang.String = js.native
 }

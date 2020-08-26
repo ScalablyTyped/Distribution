@@ -8,28 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends GeneralName {
   def this(params: js.Any) = this()
-  /**
-    * value type - from a tagged value (0 for "otherName", 1 for "rfc822Name" etc.)
-    *
-    * @type {number}
-    * @memberOf GeneralName
-    */
-  /* CompleteClass */
-  override var `type`: Double = js.native
-  /**
-    * asn1js object having GENERAL_NAME value (type depends on "type" value)
-    *
-    * @type {*}
-    * @memberOf GeneralName
-    */
-  /* CompleteClass */
-  override var value: js.Any = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

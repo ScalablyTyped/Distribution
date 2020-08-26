@@ -29,6 +29,13 @@ object vueTypesVueAugmentingMod extends js.Object {
     def $subscribeTo[T](
       observable: Observable_[T],
       next: js.Function1[/* t */ T, Unit],
+      error: js.UndefOr[scala.Nothing],
+      complete: js.Function0[Unit]
+    ): Unit = js.native
+    @JSName("$subscribeTo")
+    def $subscribeTo[T](
+      observable: Observable_[T],
+      next: js.Function1[/* t */ T, Unit],
       error: js.Function1[/* e */ js.Any, Unit]
     ): Unit = js.native
     @JSName("$subscribeTo")

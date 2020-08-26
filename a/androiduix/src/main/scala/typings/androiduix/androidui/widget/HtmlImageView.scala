@@ -1,19 +1,12 @@
 package typings.androiduix.androidui.widget
 
-import typings.androiduix.android.content.Context
 import typings.androiduix.android.widget.ImageView.ScaleType
-import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("androidui.widget.HtmlImageView")
 @js.native
-class HtmlImageView protected () extends HtmlBaseView {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
+trait HtmlImageView extends HtmlBaseView {
   var mAdjustViewBounds: js.Any = js.native
   var mAdjustViewBoundsCompat: js.Any = js.native
   var mAlpha: js.Any = js.native

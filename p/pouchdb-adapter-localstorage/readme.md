@@ -10,9 +10,9 @@ PouchDB adapter using LocalStorage as its data store.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-adapter-localstorage |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 81571 |
+| # downloads        | 93094 |
 | # stars            | 1 |
 
 ## Links

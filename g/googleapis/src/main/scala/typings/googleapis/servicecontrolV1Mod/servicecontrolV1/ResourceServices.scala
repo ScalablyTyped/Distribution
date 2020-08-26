@@ -35,6 +35,7 @@ class ResourceServices protected () extends js.Object {
     */
   def allocateQuota(): GaxiosPromise[SchemaAllocateQuotaResponse] = js.native
   def allocateQuota(callback: BodyResponseCallback[SchemaAllocateQuotaResponse]): Unit = js.native
+  def allocateQuota(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAllocateQuotaResponse] = js.native
   def allocateQuota(params: ParamsResourceServicesAllocatequota): GaxiosPromise[SchemaAllocateQuotaResponse] = js.native
   def allocateQuota(
     params: ParamsResourceServicesAllocatequota,
@@ -76,6 +77,7 @@ class ResourceServices protected () extends js.Object {
     */
   def check(): GaxiosPromise[SchemaCheckResponse] = js.native
   def check(callback: BodyResponseCallback[SchemaCheckResponse]): Unit = js.native
+  def check(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCheckResponse] = js.native
   def check(params: ParamsResourceServicesCheck): GaxiosPromise[SchemaCheckResponse] = js.native
   def check(params: ParamsResourceServicesCheck, callback: BodyResponseCallback[SchemaCheckResponse]): Unit = js.native
   def check(
@@ -114,6 +116,7 @@ class ResourceServices protected () extends js.Object {
     */
   def report(): GaxiosPromise[SchemaReportResponse] = js.native
   def report(callback: BodyResponseCallback[SchemaReportResponse]): Unit = js.native
+  def report(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReportResponse] = js.native
   def report(params: ParamsResourceServicesReport): GaxiosPromise[SchemaReportResponse] = js.native
   def report(params: ParamsResourceServicesReport, callback: BodyResponseCallback[SchemaReportResponse]): Unit = js.native
   def report(

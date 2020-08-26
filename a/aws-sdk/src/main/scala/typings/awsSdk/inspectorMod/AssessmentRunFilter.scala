@@ -38,24 +38,54 @@ trait AssessmentRunFilter extends js.Object {
 
 object AssessmentRunFilter {
   @scala.inline
-  def apply(
-    completionTimeRange: TimestampRange = null,
-    durationRange: DurationRange = null,
-    namePattern: NamePattern = null,
-    rulesPackageArns: FilterRulesPackageArnList = null,
-    startTimeRange: TimestampRange = null,
-    stateChangeTimeRange: TimestampRange = null,
-    states: AssessmentRunStateList = null
-  ): AssessmentRunFilter = {
+  def apply(): AssessmentRunFilter = {
     val __obj = js.Dynamic.literal()
-    if (completionTimeRange != null) __obj.updateDynamic("completionTimeRange")(completionTimeRange.asInstanceOf[js.Any])
-    if (durationRange != null) __obj.updateDynamic("durationRange")(durationRange.asInstanceOf[js.Any])
-    if (namePattern != null) __obj.updateDynamic("namePattern")(namePattern.asInstanceOf[js.Any])
-    if (rulesPackageArns != null) __obj.updateDynamic("rulesPackageArns")(rulesPackageArns.asInstanceOf[js.Any])
-    if (startTimeRange != null) __obj.updateDynamic("startTimeRange")(startTimeRange.asInstanceOf[js.Any])
-    if (stateChangeTimeRange != null) __obj.updateDynamic("stateChangeTimeRange")(stateChangeTimeRange.asInstanceOf[js.Any])
-    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentRunFilter]
   }
+  @scala.inline
+  implicit class AssessmentRunFilterOps[Self <: AssessmentRunFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionTimeRange(value: TimestampRange): Self = this.set("completionTimeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionTimeRange: Self = this.set("completionTimeRange", js.undefined)
+    @scala.inline
+    def setDurationRange(value: DurationRange): Self = this.set("durationRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationRange: Self = this.set("durationRange", js.undefined)
+    @scala.inline
+    def setNamePattern(value: NamePattern): Self = this.set("namePattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePattern: Self = this.set("namePattern", js.undefined)
+    @scala.inline
+    def setRulesPackageArnsVarargs(value: Arn*): Self = this.set("rulesPackageArns", js.Array(value :_*))
+    @scala.inline
+    def setRulesPackageArns(value: FilterRulesPackageArnList): Self = this.set("rulesPackageArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRulesPackageArns: Self = this.set("rulesPackageArns", js.undefined)
+    @scala.inline
+    def setStartTimeRange(value: TimestampRange): Self = this.set("startTimeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimeRange: Self = this.set("startTimeRange", js.undefined)
+    @scala.inline
+    def setStateChangeTimeRange(value: TimestampRange): Self = this.set("stateChangeTimeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateChangeTimeRange: Self = this.set("stateChangeTimeRange", js.undefined)
+    @scala.inline
+    def setStatesVarargs(value: AssessmentRunState*): Self = this.set("states", js.Array(value :_*))
+    @scala.inline
+    def setStates(value: AssessmentRunStateList): Self = this.set("states", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStates: Self = this.set("states", js.undefined)
+  }
+  
 }
 

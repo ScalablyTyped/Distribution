@@ -21,66 +21,120 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReactNotificationOptions extends js.Object {
-  var animationIn: js.UndefOr[js.Array[String]] = js.undefined
-  var animationOut: js.UndefOr[js.Array[String]] = js.undefined
-  var container: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center`
+  var animationIn: js.UndefOr[js.Array[String]] = js.native
+  var animationOut: js.UndefOr[js.Array[String]] = js.native
+  var container: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center` = js.native
   var content: js.UndefOr[
     (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object] | ReactNode
-  ] = js.undefined
-  var dismiss: js.UndefOr[DismissOptions] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var insert: js.UndefOr[top | bottom] = js.undefined
-  var message: js.UndefOr[String | ReactNode | FunctionComponent[js.Object]] = js.undefined
-  var onRemoval: js.UndefOr[js.Function2[/* id */ String, /* removedBy */ js.Any, Unit]] = js.undefined
-  var slidingEnter: js.UndefOr[TransitionOptions] = js.undefined
-  var slidingExit: js.UndefOr[TransitionOptions] = js.undefined
-  var title: js.UndefOr[String | ReactNode | FunctionComponent[js.Object]] = js.undefined
-  var touchRevert: js.UndefOr[TransitionOptions] = js.undefined
-  var touchSlidingExit: js.UndefOr[TransitionOptions] = js.undefined
+  ] = js.native
+  var dismiss: js.UndefOr[DismissOptions] = js.native
+  var id: js.UndefOr[String] = js.native
+  var insert: js.UndefOr[top | bottom] = js.native
+  var message: js.UndefOr[String | ReactNode | FunctionComponent[js.Object]] = js.native
+  var onRemoval: js.UndefOr[js.Function2[/* id */ String, /* removedBy */ js.Any, Unit]] = js.native
+  var slidingEnter: js.UndefOr[TransitionOptions] = js.native
+  var slidingExit: js.UndefOr[TransitionOptions] = js.native
+  var title: js.UndefOr[String | ReactNode | FunctionComponent[js.Object]] = js.native
+  var touchRevert: js.UndefOr[TransitionOptions] = js.native
+  var touchSlidingExit: js.UndefOr[TransitionOptions] = js.native
   var `type`: js.UndefOr[
     success | danger | info | typings.reactNotificationsComponent.reactNotificationsComponentStrings.default | warning
-  ] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object ReactNotificationOptions {
   @scala.inline
   def apply(
-    container: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center`,
-    animationIn: js.Array[String] = null,
-    animationOut: js.Array[String] = null,
-    content: (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object] | ReactNode = null,
-    dismiss: DismissOptions = null,
-    id: String = null,
-    insert: top | bottom = null,
-    message: String | ReactNode | FunctionComponent[js.Object] = null,
-    onRemoval: (/* id */ String, /* removedBy */ js.Any) => Unit = null,
-    slidingEnter: TransitionOptions = null,
-    slidingExit: TransitionOptions = null,
-    title: String | ReactNode | FunctionComponent[js.Object] = null,
-    touchRevert: TransitionOptions = null,
-    touchSlidingExit: TransitionOptions = null,
-    `type`: success | danger | info | typings.reactNotificationsComponent.reactNotificationsComponentStrings.default | warning = null,
-    width: js.UndefOr[Double] = js.undefined
+    container: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center`
   ): ReactNotificationOptions = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
-    if (animationIn != null) __obj.updateDynamic("animationIn")(animationIn.asInstanceOf[js.Any])
-    if (animationOut != null) __obj.updateDynamic("animationOut")(animationOut.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (dismiss != null) __obj.updateDynamic("dismiss")(dismiss.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (onRemoval != null) __obj.updateDynamic("onRemoval")(js.Any.fromFunction2(onRemoval))
-    if (slidingEnter != null) __obj.updateDynamic("slidingEnter")(slidingEnter.asInstanceOf[js.Any])
-    if (slidingExit != null) __obj.updateDynamic("slidingExit")(slidingExit.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (touchRevert != null) __obj.updateDynamic("touchRevert")(touchRevert.asInstanceOf[js.Any])
-    if (touchSlidingExit != null) __obj.updateDynamic("touchSlidingExit")(touchSlidingExit.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactNotificationOptions]
   }
+  @scala.inline
+  implicit class ReactNotificationOptionsOps[Self <: ReactNotificationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(
+      value: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center`
+    ): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnimationInVarargs(value: String*): Self = this.set("animationIn", js.Array(value :_*))
+    @scala.inline
+    def setAnimationIn(value: js.Array[String]): Self = this.set("animationIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationIn: Self = this.set("animationIn", js.undefined)
+    @scala.inline
+    def setAnimationOutVarargs(value: String*): Self = this.set("animationOut", js.Array(value :_*))
+    @scala.inline
+    def setAnimationOut(value: js.Array[String]): Self = this.set("animationOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationOut: Self = this.set("animationOut", js.undefined)
+    @scala.inline
+    def setContent(value: (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object] | ReactNode): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDismiss(value: DismissOptions): Self = this.set("dismiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDismiss: Self = this.set("dismiss", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInsert(value: top | bottom): Self = this.set("insert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsert: Self = this.set("insert", js.undefined)
+    @scala.inline
+    def setMessage(value: String | ReactNode | FunctionComponent[js.Object]): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setOnRemoval(value: (/* id */ String, /* removedBy */ js.Any) => Unit): Self = this.set("onRemoval", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRemoval: Self = this.set("onRemoval", js.undefined)
+    @scala.inline
+    def setSlidingEnter(value: TransitionOptions): Self = this.set("slidingEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlidingEnter: Self = this.set("slidingEnter", js.undefined)
+    @scala.inline
+    def setSlidingExit(value: TransitionOptions): Self = this.set("slidingExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlidingExit: Self = this.set("slidingExit", js.undefined)
+    @scala.inline
+    def setTitle(value: String | ReactNode | FunctionComponent[js.Object]): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTouchRevert(value: TransitionOptions): Self = this.set("touchRevert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchRevert: Self = this.set("touchRevert", js.undefined)
+    @scala.inline
+    def setTouchSlidingExit(value: TransitionOptions): Self = this.set("touchSlidingExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchSlidingExit: Self = this.set("touchSlidingExit", js.undefined)
+    @scala.inline
+    def setType(
+      value: success | danger | info | typings.reactNotificationsComponent.reactNotificationsComponentStrings.default | warning
+    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

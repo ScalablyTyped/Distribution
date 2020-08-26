@@ -5,36 +5,63 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Options that can be used when creating a new pseudo-terminal. */
+@js.native
 trait TerminalOptions extends js.Object {
-  var cols: js.UndefOr[Double] = js.undefined
-  var cwd: js.UndefOr[String] = js.undefined
-  var env: js.UndefOr[js.Any] = js.undefined
-  var gid: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var rows: js.UndefOr[Double] = js.undefined
-  var uid: js.UndefOr[Double] = js.undefined
+  var cols: js.UndefOr[Double] = js.native
+  var cwd: js.UndefOr[String] = js.native
+  var env: js.UndefOr[js.Any] = js.native
+  var gid: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var rows: js.UndefOr[Double] = js.native
+  var uid: js.UndefOr[Double] = js.native
 }
 
 object TerminalOptions {
   @scala.inline
-  def apply(
-    cols: js.UndefOr[Double] = js.undefined,
-    cwd: String = null,
-    env: js.Any = null,
-    gid: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    rows: js.UndefOr[Double] = js.undefined,
-    uid: js.UndefOr[Double] = js.undefined
-  ): TerminalOptions = {
+  def apply(): TerminalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminalOptions]
   }
+  @scala.inline
+  implicit class TerminalOptionsOps[Self <: TerminalOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCols(value: Double): Self = this.set("cols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCols: Self = this.set("cols", js.undefined)
+    @scala.inline
+    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCwd: Self = this.set("cwd", js.undefined)
+    @scala.inline
+    def setEnv(value: js.Any): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setGid(value: Double): Self = this.set("gid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGid: Self = this.set("gid", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setUid(value: Double): Self = this.set("uid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUid: Self = this.set("uid", js.undefined)
+  }
+  
 }
 

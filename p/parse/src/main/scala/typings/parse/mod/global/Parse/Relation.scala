@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 class Relation[S /* <: Object[Attributes] */, T /* <: Object[Attributes] */] () extends js.Object {
   def this(parent: S) = this()
   def this(parent: S, key: String) = this()
+  def this(parent: js.UndefOr[scala.Nothing], key: String) = this()
   var key: String = js.native
   var parent: S = js.native
   var targetClassName: String = js.native

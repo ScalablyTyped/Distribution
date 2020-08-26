@@ -14,7 +14,6 @@ class AnnouncedQuickActionsExample protected ()
   var _closeRenameDialog: js.Any = js.native
   var _deleteItem: js.Any = js.native
   var _detailsList: js.Any = js.native
-  var _getSelectionDetails: js.Any = js.native
   var _onRenderItemColumn: js.Any = js.native
   var _onRenderRow: js.Any = js.native
   var _renameItem: js.Any = js.native

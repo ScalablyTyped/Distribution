@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * @see Frame
   * @since OOo 1.1.2
   */
+@js.native
 trait Task extends XTask
 
 object Task {

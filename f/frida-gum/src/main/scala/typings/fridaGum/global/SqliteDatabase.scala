@@ -12,41 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SqliteDatabase")
 @js.native
 class SqliteDatabase ()
-  extends typings.fridaGum.SqliteDatabase {
-  /**
-    * Closes the database. You should call this function when you're done with
-    * the database, unless you are fine with this happening when the object is
-    * garbage-collected or the script is unloaded.
-    */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /**
-    * Dumps the database to a gzip-compressed blob encoded as Base64.
-    *
-    * This is useful for inlining a cache in your agent's code, loaded by
-    * calling `SqliteDatabase.openInline()`.
-    */
-  /* CompleteClass */
-  override def dump(): String = js.native
-  /**
-    * Executes a raw SQL query. Throws an exception if the query is invalid.
-    *
-    * The query's result is ignored, so this should only be used for queries
-    * for setting up the database, e.g. table creation.
-    *
-    * @param sql Text-representation of the SQL query.
-    */
-  /* CompleteClass */
-  override def exec(sql: String): Unit = js.native
-  /**
-    * Compiles the provided SQL into a `SqliteStatement` object. Throws an
-    * exception if the query is invalid.
-    *
-    * @param sql Text-representation of the SQL query.
-    */
-  /* CompleteClass */
-  override def prepare(sql: String): typings.fridaGum.SqliteStatement = js.native
-}
+  extends typings.fridaGum.SqliteDatabase
 
 /* static members */
 @JSGlobal("SqliteDatabase")

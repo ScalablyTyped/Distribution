@@ -36,6 +36,7 @@ class Servo protected () extends js.Object {
   def sweep(opt: ServoSweepOpts): Unit = js.native
   def sweep(range: js.Array[Double]): Unit = js.native
   def to(degrees: Double): Unit = js.native
+  def to(degrees: Double, ms: js.UndefOr[scala.Nothing], rage: Double): Unit = js.native
   def to(degrees: Double, ms: Double): Unit = js.native
   def to(degrees: Double, ms: Double, rage: Double): Unit = js.native
 }

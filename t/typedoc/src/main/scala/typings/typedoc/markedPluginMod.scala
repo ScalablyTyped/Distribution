@@ -13,8 +13,8 @@ object markedPluginMod extends js.Object {
   class MarkedPlugin () extends ContextAwareRendererComponent {
     var includePattern: js.Any = js.native
     var includeSource: String = js.native
-    var includes: js.UndefOr[js.Any] = js.native
-    var mediaDirectory: js.UndefOr[js.Any] = js.native
+    var includes: js.Any = js.native
+    var mediaDirectory: js.Any = js.native
     var mediaPattern: js.Any = js.native
     var mediaSource: String = js.native
     def getHighlighted(text: String): String = js.native

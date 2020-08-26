@@ -17,15 +17,5 @@ class ASPxClientRichEditParagraphPropertiesChangedEventArgs protected ()
     * @param paragraphIndex The changed paragraph's index.
     */
   def this(subDocumentId: Double, paragraphIndex: Double) = this()
-  /**
-    * Gets the changed paragraph's index.
-    */
-  /* CompleteClass */
-  override var paragraphIndex: Double = js.native
-  /**
-    * Gets the active sub-document's identifier.
-    */
-  /* CompleteClass */
-  override var subDocumentId: Double = js.native
 }
 

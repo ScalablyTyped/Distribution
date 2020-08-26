@@ -38,24 +38,50 @@ trait VpcPeeringConnection extends js.Object {
 
 object VpcPeeringConnection {
   @scala.inline
-  def apply(
-    FleetArn: FleetArn = null,
-    FleetId: FleetId = null,
-    GameLiftVpcId: NonZeroAndMaxString = null,
-    IpV4CidrBlock: NonZeroAndMaxString = null,
-    PeerVpcId: NonZeroAndMaxString = null,
-    Status: VpcPeeringConnectionStatus = null,
-    VpcPeeringConnectionId: NonZeroAndMaxString = null
-  ): VpcPeeringConnection = {
+  def apply(): VpcPeeringConnection = {
     val __obj = js.Dynamic.literal()
-    if (FleetArn != null) __obj.updateDynamic("FleetArn")(FleetArn.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (GameLiftVpcId != null) __obj.updateDynamic("GameLiftVpcId")(GameLiftVpcId.asInstanceOf[js.Any])
-    if (IpV4CidrBlock != null) __obj.updateDynamic("IpV4CidrBlock")(IpV4CidrBlock.asInstanceOf[js.Any])
-    if (PeerVpcId != null) __obj.updateDynamic("PeerVpcId")(PeerVpcId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (VpcPeeringConnectionId != null) __obj.updateDynamic("VpcPeeringConnectionId")(VpcPeeringConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcPeeringConnection]
   }
+  @scala.inline
+  implicit class VpcPeeringConnectionOps[Self <: VpcPeeringConnection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetArn(value: FleetArn): Self = this.set("FleetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetArn: Self = this.set("FleetArn", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setGameLiftVpcId(value: NonZeroAndMaxString): Self = this.set("GameLiftVpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameLiftVpcId: Self = this.set("GameLiftVpcId", js.undefined)
+    @scala.inline
+    def setIpV4CidrBlock(value: NonZeroAndMaxString): Self = this.set("IpV4CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpV4CidrBlock: Self = this.set("IpV4CidrBlock", js.undefined)
+    @scala.inline
+    def setPeerVpcId(value: NonZeroAndMaxString): Self = this.set("PeerVpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerVpcId: Self = this.set("PeerVpcId", js.undefined)
+    @scala.inline
+    def setStatus(value: VpcPeeringConnectionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setVpcPeeringConnectionId(value: NonZeroAndMaxString): Self = this.set("VpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcPeeringConnectionId: Self = this.set("VpcPeeringConnectionId", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,36 @@ trait DescribeReplicationInstanceTaskLogsResponse extends js.Object {
 
 object DescribeReplicationInstanceTaskLogsResponse {
   @scala.inline
-  def apply(
-    Marker: String = null,
-    ReplicationInstanceArn: String = null,
-    ReplicationInstanceTaskLogs: ReplicationInstanceTaskLogsList = null
-  ): DescribeReplicationInstanceTaskLogsResponse = {
+  def apply(): DescribeReplicationInstanceTaskLogsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (ReplicationInstanceArn != null) __obj.updateDynamic("ReplicationInstanceArn")(ReplicationInstanceArn.asInstanceOf[js.Any])
-    if (ReplicationInstanceTaskLogs != null) __obj.updateDynamic("ReplicationInstanceTaskLogs")(ReplicationInstanceTaskLogs.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReplicationInstanceTaskLogsResponse]
   }
+  @scala.inline
+  implicit class DescribeReplicationInstanceTaskLogsResponseOps[Self <: DescribeReplicationInstanceTaskLogsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setReplicationInstanceArn(value: String): Self = this.set("ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceArn: Self = this.set("ReplicationInstanceArn", js.undefined)
+    @scala.inline
+    def setReplicationInstanceTaskLogsVarargs(value: ReplicationInstanceTaskLog*): Self = this.set("ReplicationInstanceTaskLogs", js.Array(value :_*))
+    @scala.inline
+    def setReplicationInstanceTaskLogs(value: ReplicationInstanceTaskLogsList): Self = this.set("ReplicationInstanceTaskLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceTaskLogs: Self = this.set("ReplicationInstanceTaskLogs", js.undefined)
+  }
+  
 }
 

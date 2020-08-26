@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait ABORTERR
   extends Instantiable0[DOMException]
      with Instantiable1[/* message */ String, DOMException]
-     with Instantiable2[/* message */ String, /* name */ String, DOMException] {
+     with Instantiable2[js.UndefOr[/* message */ String], /* name */ String, DOMException] {
   val ABORT_ERR: Double = js.native
   val DATA_CLONE_ERR: Double = js.native
   val DOMSTRING_SIZE_ERR: Double = js.native

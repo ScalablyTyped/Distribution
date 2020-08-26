@@ -18,11 +18,30 @@ trait Body extends js.Object {
 
 object Body {
   @scala.inline
-  def apply(Html: Content = null, Text: Content = null): Body = {
+  def apply(): Body = {
     val __obj = js.Dynamic.literal()
-    if (Html != null) __obj.updateDynamic("Html")(Html.asInstanceOf[js.Any])
-    if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Body]
   }
+  @scala.inline
+  implicit class BodyOps[Self <: Body] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHtml(value: Content): Self = this.set("Html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("Html", js.undefined)
+    @scala.inline
+    def setText(value: Content): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("Text", js.undefined)
+  }
+  
 }
 

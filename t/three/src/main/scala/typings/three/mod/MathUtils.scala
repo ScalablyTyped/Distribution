@@ -25,6 +25,8 @@ object MathUtils extends js.Object {
   def randFloatSpread(range: Double): Double = js.native
   def randInt(low: Double, high: Double): Double = js.native
   def random16(): Double = js.native
+  def seededRandom(): Double = js.native
+  def seededRandom(seed: Double): Double = js.native
   def setQuaternionFromProperEuler(q: typings.three.quaternionMod.Quaternion, a: Double, b: Double, c: Double, order: String): Unit = js.native
   def smootherstep(x: Double, min: Double, max: Double): Double = js.native
   def smoothstep(x: Double, min: Double, max: Double): Double = js.native

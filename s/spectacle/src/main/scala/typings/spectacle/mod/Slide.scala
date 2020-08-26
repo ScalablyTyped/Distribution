@@ -1,12 +1,13 @@
 package typings.spectacle.mod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.FC
+import typings.spectacle.anon.BackgroundColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("spectacle", "Slide")
 @js.native
-class Slide ()
-  extends Component[SlideProps, js.Object, js.Any]
+object Slide extends TopLevel[FC[BackgroundColor]]
 

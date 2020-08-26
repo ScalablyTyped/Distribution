@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CommitTransactionsRequest_ () extends Message {
   def addTransactions(): CommittedTransaction = js.native
+  def addTransactions(value: js.UndefOr[scala.Nothing], index: Double): CommittedTransaction = js.native
   def addTransactions(value: CommittedTransaction): CommittedTransaction = js.native
   def addTransactions(value: CommittedTransaction, index: Double): CommittedTransaction = js.native
   def clearTransactionsList(): Unit = js.native

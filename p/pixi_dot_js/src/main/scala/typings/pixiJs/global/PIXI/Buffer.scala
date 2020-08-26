@@ -23,8 +23,11 @@ class Buffer protected ()
   def this(data: ArrayBufferView, _static: Boolean) = this()
   def this(data: ArrayBuffer, _static: Boolean) = this()
   def this(data: SharedArrayBuffer, _static: Boolean) = this()
+  def this(data: ArrayBufferView, _static: js.UndefOr[scala.Nothing], index: Boolean) = this()
   def this(data: ArrayBufferView, _static: Boolean, index: Boolean) = this()
+  def this(data: ArrayBuffer, _static: js.UndefOr[scala.Nothing], index: Boolean) = this()
   def this(data: ArrayBuffer, _static: Boolean, index: Boolean) = this()
+  def this(data: SharedArrayBuffer, _static: js.UndefOr[scala.Nothing], index: Boolean) = this()
   def this(data: SharedArrayBuffer, _static: Boolean, index: Boolean) = this()
 }
 

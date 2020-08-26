@@ -5,47 +5,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContinuousScale extends BaseScale {
-  var bins: js.UndefOr[ScaleBins] = js.undefined
-  var clamp: js.UndefOr[Boolean | SignalRef] = js.undefined
-  var interpolate: js.UndefOr[ScaleInterpolate] = js.undefined
-  var padding: js.UndefOr[Double | SignalRef] = js.undefined
-  var range: js.UndefOr[RangeScheme] = js.undefined
+  var bins: js.UndefOr[ScaleBins] = js.native
+  var clamp: js.UndefOr[Boolean | SignalRef] = js.native
+  var interpolate: js.UndefOr[ScaleInterpolate] = js.native
+  var padding: js.UndefOr[Double | SignalRef] = js.native
+  var range: js.UndefOr[RangeScheme] = js.native
 }
 
 object ContinuousScale {
   @scala.inline
-  def apply(
-    name: String,
-    bins: ScaleBins = null,
-    clamp: Boolean | SignalRef = null,
-    domain: (js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef = null,
-    domainMax: Double | SignalRef = null,
-    domainMid: Double | SignalRef = null,
-    domainMin: Double | SignalRef = null,
-    domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.undefined,
-    interpolate: ScaleInterpolate = null,
-    padding: Double | SignalRef = null,
-    range: RangeScheme = null,
-    reverse: Boolean | SignalRef = null,
-    round: Boolean | SignalRef = null,
-    `type`: ScaleType = null
-  ): ContinuousScale = {
+  def apply(name: String): ContinuousScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
-    if (clamp != null) __obj.updateDynamic("clamp")(clamp.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
-    if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])
-    if (domainMin != null) __obj.updateDynamic("domainMin")(domainMin.asInstanceOf[js.Any])
-    if (!js.isUndefined(domainRaw)) __obj.updateDynamic("domainRaw")(domainRaw.asInstanceOf[js.Any])
-    if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (reverse != null) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinuousScale]
   }
+  @scala.inline
+  implicit class ContinuousScaleOps[Self <: ContinuousScale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBinsVarargs(value: (Double | SignalRef)*): Self = this.set("bins", js.Array(value :_*))
+    @scala.inline
+    def setBins(value: ScaleBins): Self = this.set("bins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBins: Self = this.set("bins", js.undefined)
+    @scala.inline
+    def setClamp(value: Boolean | SignalRef): Self = this.set("clamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClamp: Self = this.set("clamp", js.undefined)
+    @scala.inline
+    def setInterpolate(value: ScaleInterpolate): Self = this.set("interpolate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterpolate: Self = this.set("interpolate", js.undefined)
+    @scala.inline
+    def setPadding(value: Double | SignalRef): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setRangeVarargs(value: (Null | Boolean | String | Double | SignalRef | RangeRawArray)*): Self = this.set("range", js.Array(value :_*))
+    @scala.inline
+    def setRange(value: RangeScheme): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+  }
+  
 }
 

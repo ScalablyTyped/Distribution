@@ -29,6 +29,7 @@ class ResourceUsersMessagesAttachments protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaMessagePartBody] = js.native
   def get(callback: BodyResponseCallback[SchemaMessagePartBody]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessagePartBody] = js.native
   def get(params: ParamsResourceUsersMessagesAttachmentsGet): GaxiosPromise[SchemaMessagePartBody] = js.native
   def get(
     params: ParamsResourceUsersMessagesAttachmentsGet,

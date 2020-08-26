@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object path extends js.Object {
   def apply(): String = js.native
+  def apply(affixes: js.UndefOr[scala.Nothing], defaultPrefix: String): String = js.native
   def apply(affixes: String): String = js.native
   def apply(affixes: String, defaultPrefix: String): String = js.native
   def apply(affixes: AffixOptions): String = js.native

@@ -34,20 +34,42 @@ trait UpdateSchemaRequest extends js.Object {
 
 object UpdateSchemaRequest {
   @scala.inline
-  def apply(
-    RegistryName: string,
-    SchemaName: string,
-    ClientTokenId: stringMin0Max36 = null,
-    Content: stringMin1Max100000 = null,
-    Description: stringMin0Max256 = null,
-    Type: Type = null
-  ): UpdateSchemaRequest = {
+  def apply(RegistryName: string, SchemaName: string): UpdateSchemaRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any])
-    if (ClientTokenId != null) __obj.updateDynamic("ClientTokenId")(ClientTokenId.asInstanceOf[js.Any])
-    if (Content != null) __obj.updateDynamic("Content")(Content.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSchemaRequest]
   }
+  @scala.inline
+  implicit class UpdateSchemaRequestOps[Self <: UpdateSchemaRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegistryName(value: string): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchemaName(value: string): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientTokenId(value: stringMin0Max36): Self = this.set("ClientTokenId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientTokenId: Self = this.set("ClientTokenId", js.undefined)
+    @scala.inline
+    def setContent(value: stringMin1Max100000): Self = this.set("Content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("Content", js.undefined)
+    @scala.inline
+    def setDescription(value: stringMin0Max256): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

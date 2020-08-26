@@ -75,6 +75,7 @@ trait List[T] extends js.Object {
     * @param skipCallback Skip calling the List.addCallback if this child is added successfully. Default false.
     */
   def addAt(child: T): T = js.native
+  def addAt(child: T, index: js.UndefOr[scala.Nothing], skipCallback: Boolean): T = js.native
   def addAt(child: T, index: integer): T = js.native
   def addAt(child: T, index: integer, skipCallback: Boolean): T = js.native
   /**
@@ -92,13 +93,13 @@ trait List[T] extends js.Object {
     * Destroys this List.
     */
   def destroy(): Unit = js.native
+  def each(callback: EachListCallback[T], context: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
   /**
     * Passes all children to the given callback.
     * @param callback The function to call.
     * @param context Value to use as `this` when executing callback.
     * @param args Additional arguments that will be passed to the callback, after the child.
     */
-  def each(callback: EachListCallback[T]): Unit = js.native
   def each(callback: EachListCallback[T], context: js.Any, args: js.Any*): Unit = js.native
   /**
     * Checks if an item exists within the List.
@@ -125,10 +126,41 @@ trait List[T] extends js.Object {
     * @param endIndex The last child index to search up until.
     */
   def getAll(): js.Array[T] = js.native
+  def getAll(property: js.UndefOr[scala.Nothing], value: T): js.Array[T] = js.native
+  def getAll(
+    property: js.UndefOr[scala.Nothing],
+    value: T,
+    startIndex: js.UndefOr[scala.Nothing],
+    endIndex: integer
+  ): js.Array[T] = js.native
+  def getAll(property: js.UndefOr[scala.Nothing], value: T, startIndex: integer): js.Array[T] = js.native
+  def getAll(property: js.UndefOr[scala.Nothing], value: T, startIndex: integer, endIndex: integer): js.Array[T] = js.native
+  def getAll(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    startIndex: js.UndefOr[scala.Nothing],
+    endIndex: integer
+  ): js.Array[T] = js.native
+  def getAll(property: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], startIndex: integer): js.Array[T] = js.native
+  def getAll(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    startIndex: integer,
+    endIndex: integer
+  ): js.Array[T] = js.native
   def getAll(property: String): js.Array[T] = js.native
   def getAll(property: String, value: T): js.Array[T] = js.native
+  def getAll(property: String, value: T, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): js.Array[T] = js.native
   def getAll(property: String, value: T, startIndex: integer): js.Array[T] = js.native
   def getAll(property: String, value: T, startIndex: integer, endIndex: integer): js.Array[T] = js.native
+  def getAll(
+    property: String,
+    value: js.UndefOr[scala.Nothing],
+    startIndex: js.UndefOr[scala.Nothing],
+    endIndex: integer
+  ): js.Array[T] = js.native
+  def getAll(property: String, value: js.UndefOr[scala.Nothing], startIndex: integer): js.Array[T] = js.native
+  def getAll(property: String, value: js.UndefOr[scala.Nothing], startIndex: integer, endIndex: integer): js.Array[T] = js.native
   /**
     * Retrieves the item at a given position inside the List.
     * @param index The index of the item.
@@ -149,6 +181,7 @@ trait List[T] extends js.Object {
     * @param endIndex The position in the List to optionally stop the search at. It won't be checked.
     */
   def getFirst(property: String, value: js.Any): T | Null = js.native
+  def getFirst(property: String, value: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): T | Null = js.native
   def getFirst(property: String, value: js.Any, startIndex: Double): T | Null = js.native
   def getFirst(property: String, value: js.Any, startIndex: Double, endIndex: Double): T | Null = js.native
   /**
@@ -162,6 +195,7 @@ trait List[T] extends js.Object {
     * @param length Restriction on the number of values you want to randomly select from. Default (to top).
     */
   def getRandom(): T | Null = js.native
+  def getRandom(startIndex: js.UndefOr[scala.Nothing], length: integer): T | Null = js.native
   def getRandom(startIndex: integer): T | Null = js.native
   def getRandom(startIndex: integer, length: integer): T | Null = js.native
   /**
@@ -207,7 +241,11 @@ trait List[T] extends js.Object {
     * @param skipCallback Skip calling the List.removeCallback. Default false.
     */
   def removeBetween(): js.Array[T] = js.native
+  def removeBetween(startIndex: js.UndefOr[scala.Nothing], endIndex: js.UndefOr[scala.Nothing], skipCallback: Boolean): js.Array[T] = js.native
+  def removeBetween(startIndex: js.UndefOr[scala.Nothing], endIndex: integer): js.Array[T] = js.native
+  def removeBetween(startIndex: js.UndefOr[scala.Nothing], endIndex: integer, skipCallback: Boolean): js.Array[T] = js.native
   def removeBetween(startIndex: integer): js.Array[T] = js.native
+  def removeBetween(startIndex: integer, endIndex: js.UndefOr[scala.Nothing], skipCallback: Boolean): js.Array[T] = js.native
   def removeBetween(startIndex: integer, endIndex: integer): js.Array[T] = js.native
   def removeBetween(startIndex: integer, endIndex: integer, skipCallback: Boolean): js.Array[T] = js.native
   /**
@@ -233,6 +271,7 @@ trait List[T] extends js.Object {
     * @param endIndex The last child index to search up until.
     */
   def setAll(property: String, value: T): Unit = js.native
+  def setAll(property: String, value: T, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): Unit = js.native
   def setAll(property: String, value: T, startIndex: integer): Unit = js.native
   def setAll(property: String, value: T, startIndex: integer, endIndex: integer): Unit = js.native
   /**

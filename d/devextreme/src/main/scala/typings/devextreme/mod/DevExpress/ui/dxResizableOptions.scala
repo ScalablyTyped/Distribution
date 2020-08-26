@@ -1,9 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.anon.Element
 import typings.devextreme.anon.EventHeight
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
 import typings.devextreme.devextremeStrings.all
 import typings.devextreme.devextremeStrings.bottom
 import typings.devextreme.devextremeStrings.left
@@ -14,63 +11,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxResizableOptions extends DOMComponentOptions[dxResizable] {
   /** @name dxResizable.Options.handles */
-  var handles: js.UndefOr[bottom | left | right | top | all | String] = js.undefined
+  var handles: js.UndefOr[bottom | left | right | top | all | String] = js.native
   /** @name dxResizable.Options.maxHeight */
-  var maxHeight: js.UndefOr[Double] = js.undefined
+  var maxHeight: js.UndefOr[Double] = js.native
   /** @name dxResizable.Options.maxWidth */
-  var maxWidth: js.UndefOr[Double] = js.undefined
+  var maxWidth: js.UndefOr[Double] = js.native
   /** @name dxResizable.Options.minHeight */
-  var minHeight: js.UndefOr[Double] = js.undefined
+  var minHeight: js.UndefOr[Double] = js.native
   /** @name dxResizable.Options.minWidth */
-  var minWidth: js.UndefOr[Double] = js.undefined
+  var minWidth: js.UndefOr[Double] = js.native
   /** @name dxResizable.Options.onResize */
-  var onResize: js.UndefOr[js.Function1[/* e */ EventHeight, _]] = js.undefined
+  var onResize: js.UndefOr[js.Function1[/* e */ EventHeight, _]] = js.native
   /** @name dxResizable.Options.onResizeEnd */
-  var onResizeEnd: js.UndefOr[js.Function1[/* e */ EventHeight, _]] = js.undefined
+  var onResizeEnd: js.UndefOr[js.Function1[/* e */ EventHeight, _]] = js.native
   /** @name dxResizable.Options.onResizeStart */
-  var onResizeStart: js.UndefOr[js.Function1[/* e */ EventHeight, _]] = js.undefined
+  var onResizeStart: js.UndefOr[js.Function1[/* e */ EventHeight, _]] = js.native
 }
 
 object dxResizableOptions {
   @scala.inline
-  def apply(
-    bindingOptions: js.Any = null,
-    elementAttr: js.Any = null,
-    handles: bottom | left | right | top | all | String = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    maxHeight: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    minHeight: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    onDisposing: /* e */ Model[dxResizable] => _ = null,
-    onInitialized: /* e */ Element[dxResizable] => _ = null,
-    onOptionChanged: /* e */ Name[dxResizable] => _ = null,
-    onResize: /* e */ EventHeight => _ = null,
-    onResizeEnd: /* e */ EventHeight => _ = null,
-    onResizeStart: /* e */ EventHeight => _ = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxResizableOptions = {
+  def apply(): dxResizableOptions = {
     val __obj = js.Dynamic.literal()
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (handles != null) __obj.updateDynamic("handles")(handles.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
-    if (onResizeEnd != null) __obj.updateDynamic("onResizeEnd")(js.Any.fromFunction1(onResizeEnd))
-    if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(js.Any.fromFunction1(onResizeStart))
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxResizableOptions]
   }
+  @scala.inline
+  implicit class dxResizableOptionsOps[Self <: dxResizableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHandles(value: bottom | left | right | top | all | String): Self = this.set("handles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandles: Self = this.set("handles", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setOnResize(value: /* e */ EventHeight => _): Self = this.set("onResize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResize: Self = this.set("onResize", js.undefined)
+    @scala.inline
+    def setOnResizeEnd(value: /* e */ EventHeight => _): Self = this.set("onResizeEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResizeEnd: Self = this.set("onResizeEnd", js.undefined)
+    @scala.inline
+    def setOnResizeStart(value: /* e */ EventHeight => _): Self = this.set("onResizeStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResizeStart: Self = this.set("onResizeStart", js.undefined)
+  }
+  
 }
 

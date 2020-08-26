@@ -10,9 +10,9 @@ Dead simple animated typing, with no dependencies.
 | ------------------ | :-------------: |
 | Full name          | ityped |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 22865 |
+| # downloads        | 20899 |
 | # stars            | 1 |
 
 ## Links

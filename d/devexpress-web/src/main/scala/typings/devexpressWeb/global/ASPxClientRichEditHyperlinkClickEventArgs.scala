@@ -24,25 +24,5 @@ class ASPxClientRichEditHyperlinkClickEventArgs protected ()
     targetUri: String,
     hyperlinkType: typings.devexpressWeb.ASPxClientOfficeDocumentLinkType
   ) = this()
-  /**
-    * Gets or sets whether the event is handled manually, so no default processing is required.
-    */
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /**
-    * Gets a DHTML event object that relates to the processed event.
-    */
-  /* CompleteClass */
-  override var htmlEvent: js.Any = js.native
-  /**
-    * Gets a value identifying the clicked hyperlink type.
-    */
-  /* CompleteClass */
-  override var hyperlinkType: typings.devexpressWeb.ASPxClientOfficeDocumentLinkType = js.native
-  /**
-    * Gets the clicked link's URI.
-    */
-  /* CompleteClass */
-  override var targetUri: String = js.native
 }
 

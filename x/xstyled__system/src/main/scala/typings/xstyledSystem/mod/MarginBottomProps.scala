@@ -1,25 +1,57 @@
 package typings.xstyledSystem.mod
 
-import typings.csstype.mod.MarginBottomProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MarginBottomProps[TLength] extends js.Object {
-  val marginBottom: js.UndefOr[ResponsiveValue[MarginBottomProperty[TLength]]] = js.undefined
-  val mb: js.UndefOr[ResponsiveValue[MarginBottomProperty[TLength]]] = js.undefined
+  val marginBottom: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.MarginBottomProperty<TLength> */ _
+    ]
+  ] = js.native
+  val mb: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.MarginBottomProperty<TLength> */ _
+    ]
+  ] = js.native
 }
 
 object MarginBottomProps {
   @scala.inline
-  def apply[TLength](
-    marginBottom: ResponsiveValue[MarginBottomProperty[TLength]] = null,
-    mb: ResponsiveValue[MarginBottomProperty[TLength]] = null
-  ): MarginBottomProps[TLength] = {
+  def apply[TLength](): MarginBottomProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginBottomProps[TLength]]
   }
+  @scala.inline
+  implicit class MarginBottomPropsOps[Self <: MarginBottomProps[_], TLength] (val x: Self with MarginBottomProps[TLength]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarginBottom(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.MarginBottomProperty<TLength> */ _
+        ]
+    ): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    @scala.inline
+    def setMb(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.MarginBottomProperty<TLength> */ _
+        ]
+    ): Self = this.set("mb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMb: Self = this.set("mb", js.undefined)
+  }
+  
 }
 

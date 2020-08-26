@@ -12,7 +12,7 @@ Because stdin with node is annoying
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 60 |
-| # downloads        | 2606983 |
+| # downloads        | 2711551 |
 | # stars            | 2 |
 
 ## Links

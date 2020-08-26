@@ -58,24 +58,59 @@ object FirehoseDeliveryStreamElasticsearchConfiguration {
     cloudwatchLoggingOptions: FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions,
     domainArn: String,
     indexName: String,
-    roleArn: String,
-    bufferingInterval: js.UndefOr[Double] = js.undefined,
-    bufferingSize: js.UndefOr[Double] = js.undefined,
-    indexRotationPeriod: String = null,
-    processingConfiguration: FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration = null,
-    retryDuration: js.UndefOr[Double] = js.undefined,
-    s3BackupMode: String = null,
-    typeName: String = null
+    roleArn: String
   ): FirehoseDeliveryStreamElasticsearchConfiguration = {
     val __obj = js.Dynamic.literal(cloudwatchLoggingOptions = cloudwatchLoggingOptions.asInstanceOf[js.Any], domainArn = domainArn.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(bufferingInterval)) __obj.updateDynamic("bufferingInterval")(bufferingInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bufferingSize)) __obj.updateDynamic("bufferingSize")(bufferingSize.get.asInstanceOf[js.Any])
-    if (indexRotationPeriod != null) __obj.updateDynamic("indexRotationPeriod")(indexRotationPeriod.asInstanceOf[js.Any])
-    if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(retryDuration)) __obj.updateDynamic("retryDuration")(retryDuration.get.asInstanceOf[js.Any])
-    if (s3BackupMode != null) __obj.updateDynamic("s3BackupMode")(s3BackupMode.asInstanceOf[js.Any])
-    if (typeName != null) __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamElasticsearchConfiguration]
   }
+  @scala.inline
+  implicit class FirehoseDeliveryStreamElasticsearchConfigurationOps[Self <: FirehoseDeliveryStreamElasticsearchConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudwatchLoggingOptions(value: FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions): Self = this.set("cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainArn(value: String): Self = this.set("domainArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndexName(value: String): Self = this.set("indexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: String): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBufferingInterval(value: Double): Self = this.set("bufferingInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferingInterval: Self = this.set("bufferingInterval", js.undefined)
+    @scala.inline
+    def setBufferingSize(value: Double): Self = this.set("bufferingSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferingSize: Self = this.set("bufferingSize", js.undefined)
+    @scala.inline
+    def setIndexRotationPeriod(value: String): Self = this.set("indexRotationPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexRotationPeriod: Self = this.set("indexRotationPeriod", js.undefined)
+    @scala.inline
+    def setProcessingConfiguration(value: FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration): Self = this.set("processingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingConfiguration: Self = this.set("processingConfiguration", js.undefined)
+    @scala.inline
+    def setRetryDuration(value: Double): Self = this.set("retryDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryDuration: Self = this.set("retryDuration", js.undefined)
+    @scala.inline
+    def setS3BackupMode(value: String): Self = this.set("s3BackupMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BackupMode: Self = this.set("s3BackupMode", js.undefined)
+    @scala.inline
+    def setTypeName(value: String): Self = this.set("typeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeName: Self = this.set("typeName", js.undefined)
+  }
+  
 }
 

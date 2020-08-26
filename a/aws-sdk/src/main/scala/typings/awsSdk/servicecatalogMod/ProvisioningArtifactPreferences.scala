@@ -18,11 +18,34 @@ trait ProvisioningArtifactPreferences extends js.Object {
 
 object ProvisioningArtifactPreferences {
   @scala.inline
-  def apply(StackSetAccounts: StackSetAccounts = null, StackSetRegions: StackSetRegions = null): ProvisioningArtifactPreferences = {
+  def apply(): ProvisioningArtifactPreferences = {
     val __obj = js.Dynamic.literal()
-    if (StackSetAccounts != null) __obj.updateDynamic("StackSetAccounts")(StackSetAccounts.asInstanceOf[js.Any])
-    if (StackSetRegions != null) __obj.updateDynamic("StackSetRegions")(StackSetRegions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisioningArtifactPreferences]
   }
+  @scala.inline
+  implicit class ProvisioningArtifactPreferencesOps[Self <: ProvisioningArtifactPreferences] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackSetAccountsVarargs(value: AccountId*): Self = this.set("StackSetAccounts", js.Array(value :_*))
+    @scala.inline
+    def setStackSetAccounts(value: StackSetAccounts): Self = this.set("StackSetAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetAccounts: Self = this.set("StackSetAccounts", js.undefined)
+    @scala.inline
+    def setStackSetRegionsVarargs(value: Region*): Self = this.set("StackSetRegions", js.Array(value :_*))
+    @scala.inline
+    def setStackSetRegions(value: StackSetRegions): Self = this.set("StackSetRegions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetRegions: Self = this.set("StackSetRegions", js.undefined)
+  }
+  
 }
 

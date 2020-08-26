@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * The default `Renderer` instance.
   */
-@JSImport("@lumino/widgets/lib/dockpanel", "DockPanel.defaultRenderer")
+@JSImport("@lumino/widgets/types/dockpanel", "DockPanel.defaultRenderer")
 @js.native
 object defaultRenderer extends TopLevel[Renderer]
 

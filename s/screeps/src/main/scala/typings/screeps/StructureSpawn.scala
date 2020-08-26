@@ -83,6 +83,7 @@ trait StructureSpawn
     * ```
     */
   def createCreep(body: js.Array[BodyPartConstant]): ScreepsReturnCode | String = js.native
+  def createCreep(body: js.Array[BodyPartConstant], name: js.UndefOr[scala.Nothing], memory: CreepMemory): ScreepsReturnCode | String = js.native
   def createCreep(body: js.Array[BodyPartConstant], name: String): ScreepsReturnCode | String = js.native
   def createCreep(body: js.Array[BodyPartConstant], name: String, memory: CreepMemory): ScreepsReturnCode | String = js.native
   /**

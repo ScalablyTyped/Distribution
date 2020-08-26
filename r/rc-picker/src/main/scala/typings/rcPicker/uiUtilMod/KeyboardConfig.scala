@@ -4,30 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeyboardConfig extends js.Object {
-  var onCtrlLeftRight: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.undefined
-  var onEnter: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
-  var onLeftRight: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.undefined
-  var onPageUpDown: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.undefined
-  var onUpDown: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.undefined
+  var onCtrlLeftRight: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.native
+  var onEnter: js.UndefOr[js.Function0[Unit] | Null] = js.native
+  var onLeftRight: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.native
+  var onPageUpDown: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.native
+  var onUpDown: js.UndefOr[(js.Function1[/* diff */ Double, Unit]) | Null] = js.native
 }
 
 object KeyboardConfig {
   @scala.inline
-  def apply(
-    onCtrlLeftRight: js.UndefOr[Null | (/* diff */ Double => Unit)] = js.undefined,
-    onEnter: js.UndefOr[Null | (() => Unit)] = js.undefined,
-    onLeftRight: js.UndefOr[Null | (/* diff */ Double => Unit)] = js.undefined,
-    onPageUpDown: js.UndefOr[Null | (/* diff */ Double => Unit)] = js.undefined,
-    onUpDown: js.UndefOr[Null | (/* diff */ Double => Unit)] = js.undefined
-  ): KeyboardConfig = {
+  def apply(): KeyboardConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(onCtrlLeftRight)) __obj.updateDynamic("onCtrlLeftRight")(if (onCtrlLeftRight != null) js.Any.fromFunction1(onCtrlLeftRight.asInstanceOf[/* diff */ Double => Unit]) else null)
-    if (!js.isUndefined(onEnter)) __obj.updateDynamic("onEnter")(if (onEnter != null) js.Any.fromFunction0(onEnter.asInstanceOf[() => Unit]) else null)
-    if (!js.isUndefined(onLeftRight)) __obj.updateDynamic("onLeftRight")(if (onLeftRight != null) js.Any.fromFunction1(onLeftRight.asInstanceOf[/* diff */ Double => Unit]) else null)
-    if (!js.isUndefined(onPageUpDown)) __obj.updateDynamic("onPageUpDown")(if (onPageUpDown != null) js.Any.fromFunction1(onPageUpDown.asInstanceOf[/* diff */ Double => Unit]) else null)
-    if (!js.isUndefined(onUpDown)) __obj.updateDynamic("onUpDown")(if (onUpDown != null) js.Any.fromFunction1(onUpDown.asInstanceOf[/* diff */ Double => Unit]) else null)
     __obj.asInstanceOf[KeyboardConfig]
   }
+  @scala.inline
+  implicit class KeyboardConfigOps[Self <: KeyboardConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnCtrlLeftRight(value: /* diff */ Double => Unit): Self = this.set("onCtrlLeftRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCtrlLeftRight: Self = this.set("onCtrlLeftRight", js.undefined)
+    @scala.inline
+    def setOnCtrlLeftRightNull: Self = this.set("onCtrlLeftRight", null)
+    @scala.inline
+    def setOnEnter(value: () => Unit): Self = this.set("onEnter", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    @scala.inline
+    def setOnEnterNull: Self = this.set("onEnter", null)
+    @scala.inline
+    def setOnLeftRight(value: /* diff */ Double => Unit): Self = this.set("onLeftRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLeftRight: Self = this.set("onLeftRight", js.undefined)
+    @scala.inline
+    def setOnLeftRightNull: Self = this.set("onLeftRight", null)
+    @scala.inline
+    def setOnPageUpDown(value: /* diff */ Double => Unit): Self = this.set("onPageUpDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPageUpDown: Self = this.set("onPageUpDown", js.undefined)
+    @scala.inline
+    def setOnPageUpDownNull: Self = this.set("onPageUpDown", null)
+    @scala.inline
+    def setOnUpDown(value: /* diff */ Double => Unit): Self = this.set("onUpDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUpDown: Self = this.set("onUpDown", js.undefined)
+    @scala.inline
+    def setOnUpDownNull: Self = this.set("onUpDown", null)
+  }
+  
 }
 

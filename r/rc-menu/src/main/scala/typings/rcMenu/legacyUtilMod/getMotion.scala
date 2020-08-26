@@ -1,12 +1,18 @@
 package typings.rcMenu.legacyUtilMod
 
+import typings.rcMenu.interfaceMod.MenuMode
+import typings.rcTrigger.interfaceMod.MotionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-menu/lib/utils/legacyUtil", "getMotion")
+@JSImport("rc-menu/es/utils/legacyUtil", "getMotion")
 @js.native
 object getMotion extends js.Object {
-  def apply(hasPrefixClsMotionOpenAnimationOpenTransitionName: GetMotionProps): js.Any = js.native
+  def apply(
+    hasPrefixClsMotionDefaultMotionsOpenAnimationOpenTransitionName: GetMotionProps,
+    hasSwitchingModeFromInline: GetMotionState,
+    menuMode: MenuMode
+  ): MotionType = js.native
 }
 

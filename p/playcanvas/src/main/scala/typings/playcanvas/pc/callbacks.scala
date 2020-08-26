@@ -139,7 +139,7 @@ object callbacks extends js.Object {
   /**
     * Callback used by {@link pc.StandardMaterial#onUpdateShader}.
     * @param options - An object with shader generator settings (based on current material and scene properties), that you can change and then return.
-    Properties of the object passed into this function are documented in {@link pc.StandardMaterial#onUpdateShader}.
+    * Properties of the object passed into this function are documented in {@link pc.StandardMaterial#onUpdateShader}.
     */
   type UpdateShader = js.Function1[/* options */ js.Any, js.Any]
   /**

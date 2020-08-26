@@ -72,44 +72,62 @@ trait ParamsResourceEventsPatch extends StandardParameters {
 
 object ParamsResourceEventsPatch {
   @scala.inline
-  def apply(
-    alt: String = null,
-    alwaysIncludeEmail: js.UndefOr[Boolean] = js.undefined,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    calendarId: String = null,
-    conferenceDataVersion: js.UndefOr[Double] = js.undefined,
-    eventId: String = null,
-    fields: String = null,
-    key: String = null,
-    maxAttendees: js.UndefOr[Double] = js.undefined,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    requestBody: SchemaEvent = null,
-    sendNotifications: js.UndefOr[Boolean] = js.undefined,
-    sendUpdates: String = null,
-    supportsAttachments: js.UndefOr[Boolean] = js.undefined,
-    userIp: String = null
-  ): ParamsResourceEventsPatch = {
+  def apply(): ParamsResourceEventsPatch = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysIncludeEmail)) __obj.updateDynamic("alwaysIncludeEmail")(alwaysIncludeEmail.get.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (calendarId != null) __obj.updateDynamic("calendarId")(calendarId.asInstanceOf[js.Any])
-    if (!js.isUndefined(conferenceDataVersion)) __obj.updateDynamic("conferenceDataVersion")(conferenceDataVersion.get.asInstanceOf[js.Any])
-    if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAttendees)) __obj.updateDynamic("maxAttendees")(maxAttendees.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendNotifications)) __obj.updateDynamic("sendNotifications")(sendNotifications.get.asInstanceOf[js.Any])
-    if (sendUpdates != null) __obj.updateDynamic("sendUpdates")(sendUpdates.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsAttachments)) __obj.updateDynamic("supportsAttachments")(supportsAttachments.get.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceEventsPatch]
   }
+  @scala.inline
+  implicit class ParamsResourceEventsPatchOps[Self <: ParamsResourceEventsPatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlwaysIncludeEmail(value: Boolean): Self = this.set("alwaysIncludeEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysIncludeEmail: Self = this.set("alwaysIncludeEmail", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setCalendarId(value: String): Self = this.set("calendarId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendarId: Self = this.set("calendarId", js.undefined)
+    @scala.inline
+    def setConferenceDataVersion(value: Double): Self = this.set("conferenceDataVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConferenceDataVersion: Self = this.set("conferenceDataVersion", js.undefined)
+    @scala.inline
+    def setEventId(value: String): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventId: Self = this.set("eventId", js.undefined)
+    @scala.inline
+    def setMaxAttendees(value: Double): Self = this.set("maxAttendees", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAttendees: Self = this.set("maxAttendees", js.undefined)
+    @scala.inline
+    def setRequestBody(value: SchemaEvent): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    @scala.inline
+    def setSendNotifications(value: Boolean): Self = this.set("sendNotifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendNotifications: Self = this.set("sendNotifications", js.undefined)
+    @scala.inline
+    def setSendUpdates(value: String): Self = this.set("sendUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendUpdates: Self = this.set("sendUpdates", js.undefined)
+    @scala.inline
+    def setSupportsAttachments(value: Boolean): Self = this.set("supportsAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsAttachments: Self = this.set("supportsAttachments", js.undefined)
+  }
+  
 }
 

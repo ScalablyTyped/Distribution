@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 class AxisLabel ()
   extends typings.plottable.componentsMod.AxisLabel {
   def this(text: String) = this()
+  def this(text: js.UndefOr[scala.Nothing], angle: Double) = this()
   def this(text: String, angle: Double) = this()
 }
 

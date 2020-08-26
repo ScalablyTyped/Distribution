@@ -23,6 +23,7 @@ trait PubAdsService extends Service {
   def definePassback(adUnitPath: String, size: GeneralSize): PassbackSlot = js.native
   def disableInitialLoad(): Unit = js.native
   def display(adUnitPath: String, size: GeneralSize): Slot = js.native
+  def display(adUnitPath: String, size: GeneralSize, opt_div: js.UndefOr[scala.Nothing], opt_clickUrl: String): Slot = js.native
   def display(adUnitPath: String, size: GeneralSize, opt_div: String): Slot = js.native
   def display(adUnitPath: String, size: GeneralSize, opt_div: String, opt_clickUrl: String): Slot = js.native
   def display(adUnitPath: String, size: GeneralSize, opt_div: Element): Slot = js.native
@@ -38,6 +39,7 @@ trait PubAdsService extends Service {
   def getTargeting(key: String): js.Array[String] = js.native
   def getTargetingKeys(): js.Array[String] = js.native
   def refresh(): Unit = js.native
+  def refresh(opt_slots: js.UndefOr[scala.Nothing], opt_options: ChangeCorrelator): Unit = js.native
   def refresh(opt_slots: js.Array[Slot]): Unit = js.native
   def refresh(opt_slots: js.Array[Slot], opt_options: ChangeCorrelator): Unit = js.native
   def set(key: String, value: String): PubAdsService = js.native
@@ -46,9 +48,11 @@ trait PubAdsService extends Service {
   def setCookieOptions(cookieOptions: Double): PubAdsService = js.native
   def setForceSafeFrame(forceSafeFrame: Boolean): PubAdsService = js.native
   def setLocation(latitudeOrAddress: String): PubAdsService = js.native
+  def setLocation(latitudeOrAddress: String, opt_longitude: js.UndefOr[scala.Nothing], opt_radius: Double): PubAdsService = js.native
   def setLocation(latitudeOrAddress: String, opt_longitude: Double): PubAdsService = js.native
   def setLocation(latitudeOrAddress: String, opt_longitude: Double, opt_radius: Double): PubAdsService = js.native
   def setLocation(latitudeOrAddress: Double): PubAdsService = js.native
+  def setLocation(latitudeOrAddress: Double, opt_longitude: js.UndefOr[scala.Nothing], opt_radius: Double): PubAdsService = js.native
   def setLocation(latitudeOrAddress: Double, opt_longitude: Double): PubAdsService = js.native
   def setLocation(latitudeOrAddress: Double, opt_longitude: Double, opt_radius: Double): PubAdsService = js.native
   def setPrivacySettings(settings: RestrictDataProcessing): Slot = js.native

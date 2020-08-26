@@ -10,39 +10,60 @@ import scala.scalajs.js.annotation._
 /**
 	 * platform specific initialization options.
 	 */
+@js.native
 trait InitOptions extends js.Object {
   /**
   		 * Android specific initialization options.
   		 */
-  var android: js.UndefOr[ClearBadge] = js.undefined
+  var android: js.UndefOr[ClearBadge] = js.native
   /**
   		 * Browser specific initialization options.
   		 */
-  var browser: js.UndefOr[ApplicationServerKey] = js.undefined
+  var browser: js.UndefOr[ApplicationServerKey] = js.native
   /**
   		 * iOS specific initialization options.
   		 */
-  var ios: js.UndefOr[Alert] = js.undefined
+  var ios: js.UndefOr[Alert] = js.native
   /**
   		 * Windows specific initialization options.
   		 */
-  var windows: js.UndefOr[js.Object] = js.undefined
+  var windows: js.UndefOr[js.Object] = js.native
 }
 
 object InitOptions {
   @scala.inline
-  def apply(
-    android: ClearBadge = null,
-    browser: ApplicationServerKey = null,
-    ios: Alert = null,
-    windows: js.Object = null
-  ): InitOptions = {
+  def apply(): InitOptions = {
     val __obj = js.Dynamic.literal()
-    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
-    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
-    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
-    if (windows != null) __obj.updateDynamic("windows")(windows.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
+  @scala.inline
+  implicit class InitOptionsOps[Self <: InitOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroid(value: ClearBadge): Self = this.set("android", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroid: Self = this.set("android", js.undefined)
+    @scala.inline
+    def setBrowser(value: ApplicationServerKey): Self = this.set("browser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser: Self = this.set("browser", js.undefined)
+    @scala.inline
+    def setIos(value: Alert): Self = this.set("ios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIos: Self = this.set("ios", js.undefined)
+    @scala.inline
+    def setWindows(value: js.Object): Self = this.set("windows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindows: Self = this.set("windows", js.undefined)
+  }
+  
 }
 

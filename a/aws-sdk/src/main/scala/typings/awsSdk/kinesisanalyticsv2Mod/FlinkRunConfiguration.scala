@@ -14,10 +14,26 @@ trait FlinkRunConfiguration extends js.Object {
 
 object FlinkRunConfiguration {
   @scala.inline
-  def apply(AllowNonRestoredState: js.UndefOr[BooleanObject] = js.undefined): FlinkRunConfiguration = {
+  def apply(): FlinkRunConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowNonRestoredState)) __obj.updateDynamic("AllowNonRestoredState")(AllowNonRestoredState.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlinkRunConfiguration]
   }
+  @scala.inline
+  implicit class FlinkRunConfigurationOps[Self <: FlinkRunConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowNonRestoredState(value: BooleanObject): Self = this.set("AllowNonRestoredState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowNonRestoredState: Self = this.set("AllowNonRestoredState", js.undefined)
+  }
+  
 }
 

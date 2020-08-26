@@ -13,12 +13,24 @@ trait OAuth2Server extends js.Object {
     * Authenticates a request.
     */
   def authenticate(request: Request, response: Response): js.Promise[Token] = js.native
+  def authenticate(
+    request: Request,
+    response: Response,
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[Token]
+  ): js.Promise[Token] = js.native
   def authenticate(request: Request, response: Response, options: AuthenticateOptions): js.Promise[Token] = js.native
   def authenticate(request: Request, response: Response, options: AuthenticateOptions, callback: Callback[Token]): js.Promise[Token] = js.native
   /**
     * Authorizes a token request.
     */
   def authorize(request: Request, response: Response): js.Promise[AuthorizationCode] = js.native
+  def authorize(
+    request: Request,
+    response: Response,
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[AuthorizationCode]
+  ): js.Promise[AuthorizationCode] = js.native
   def authorize(request: Request, response: Response, options: AuthorizeOptions): js.Promise[AuthorizationCode] = js.native
   def authorize(
     request: Request,
@@ -30,6 +42,12 @@ trait OAuth2Server extends js.Object {
     * Retrieves a new token for an authorized token request.
     */
   def token(request: Request, response: Response): js.Promise[Token] = js.native
+  def token(
+    request: Request,
+    response: Response,
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[Token]
+  ): js.Promise[Token] = js.native
   def token(request: Request, response: Response, options: TokenOptions): js.Promise[Token] = js.native
   def token(request: Request, response: Response, options: TokenOptions, callback: Callback[Token]): js.Promise[Token] = js.native
 }

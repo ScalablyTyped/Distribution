@@ -12,9 +12,5 @@ class HttpErrorResponse protected ()
      with Error {
   def this(init: typings.angularCommon.anon.Error) = this()
   val error: js.Any | Null = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

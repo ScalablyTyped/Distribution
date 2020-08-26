@@ -35,6 +35,11 @@ trait JQueryStatic extends js.Object {
     * @param delay An optional zero-or-greater delay in milliseconds at which the polling loop will execute (for browser that don’t support window.postMessage). If omitted, defaults to 100.
     */
   def receiveMessage(callback: js.Function1[/* event */ MessageEvent, _]): Unit = js.native
+  def receiveMessage(
+    callback: js.Function1[/* event */ MessageEvent, _],
+    sourceOrigin: js.UndefOr[scala.Nothing],
+    delay: Double
+  ): Unit = js.native
   def receiveMessage(callback: js.Function1[/* event */ MessageEvent, _], sourceOrigin: String): Unit = js.native
   def receiveMessage(callback: js.Function1[/* event */ MessageEvent, _], sourceOrigin: String, delay: Double): Unit = js.native
   def receiveMessage(

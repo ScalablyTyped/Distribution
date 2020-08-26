@@ -15,6 +15,7 @@ trait Static extends js.Object {
     * Associate the factory to a model that's not persisted
     */
   def assocAttrs(name: String): js.Any = js.native
+  def assocAttrs(name: String, key: js.UndefOr[scala.Nothing], attributes: js.Any): js.Any = js.native
   def assocAttrs(name: String, key: String): js.Any = js.native
   def assocAttrs(name: String, key: String, attributes: js.Any): js.Any = js.native
   /**
@@ -53,14 +54,15 @@ trait Static extends js.Object {
   def create[T](name: String): js.Promise[T] = js.native
   def create[T](name: String, attrs: Attributes[Partial[T]]): js.Promise[T] = js.native
   def createMany[T](name: String): js.Promise[js.Array[T]] = js.native
+  def createMany[T](name: String, attrs: js.UndefOr[scala.Nothing], buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
   def createMany[T](name: String, attrs: js.Array[Attributes[Partial[T]]]): js.Promise[js.Array[T]] = js.native
   def createMany[T](name: String, attrs: js.Array[Attributes[Partial[T]]], buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
   /**
     * Builds an array of model instances that are persisted
     */
   def createMany[T](name: String, num: Double): js.Promise[js.Array[T]] = js.native
+  def createMany[T](name: String, num: Double, attrs: js.UndefOr[Attributes[Partial[T]]], buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
   def createMany[T](name: String, num: Double, attrs: Attributes[Partial[T]]): js.Promise[js.Array[T]] = js.native
-  def createMany[T](name: String, num: Double, attrs: Attributes[Partial[T]], buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
   /**
     * Define a new factory with a set of options
     */

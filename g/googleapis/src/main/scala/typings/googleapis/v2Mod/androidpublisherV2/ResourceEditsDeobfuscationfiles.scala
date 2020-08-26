@@ -34,6 +34,7 @@ class ResourceEditsDeobfuscationfiles protected () extends js.Object {
     */
   def upload(): GaxiosPromise[SchemaDeobfuscationFilesUploadResponse] = js.native
   def upload(callback: BodyResponseCallback[SchemaDeobfuscationFilesUploadResponse]): Unit = js.native
+  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeobfuscationFilesUploadResponse] = js.native
   def upload(params: ParamsResourceEditsDeobfuscationfilesUpload): GaxiosPromise[SchemaDeobfuscationFilesUploadResponse] = js.native
   def upload(
     params: ParamsResourceEditsDeobfuscationfilesUpload,

@@ -21,6 +21,11 @@ trait ModelViewPanel extends js.Object {
     * Fired whenever the panel's valid property changes
     */
   def onValidityChanged(listener: js.Function1[/* e */ Boolean, _]): Disposable = js.native
+  def onValidityChanged(
+    listener: js.Function1[/* e */ Boolean, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any): Disposable = js.native
   def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   /**

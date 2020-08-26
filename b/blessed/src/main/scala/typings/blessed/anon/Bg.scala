@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Bg extends js.Object {
-  var bg: js.UndefOr[String] = js.undefined
-  var fg: js.UndefOr[String] = js.undefined
+  var bg: js.UndefOr[String] = js.native
+  var fg: js.UndefOr[String] = js.native
 }
 
 object Bg {
   @scala.inline
-  def apply(bg: String = null, fg: String = null): Bg = {
+  def apply(): Bg = {
     val __obj = js.Dynamic.literal()
-    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (fg != null) __obj.updateDynamic("fg")(fg.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bg]
   }
+  @scala.inline
+  implicit class BgOps[Self <: Bg] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBg(value: String): Self = this.set("bg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBg: Self = this.set("bg", js.undefined)
+    @scala.inline
+    def setFg(value: String): Self = this.set("fg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFg: Self = this.set("fg", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object widget extends js.Object {
   def apply(): js.Any = js.native
+  def apply(name: js.UndefOr[scala.Nothing], config: js.Any): js.Any = js.native
   def apply(name: java.lang.String): js.Any = js.native
   def apply(name: java.lang.String, config: js.Any): js.Any = js.native
 }

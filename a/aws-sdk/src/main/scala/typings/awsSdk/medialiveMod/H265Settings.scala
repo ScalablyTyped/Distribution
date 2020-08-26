@@ -35,6 +35,10 @@ trait H265Settings extends js.Object {
     */
   var ColorSpaceSettings: js.UndefOr[H265ColorSpaceSettings] = js.native
   /**
+    * Optional filters that you can apply to an encode.
+    */
+  var FilterSettings: js.UndefOr[H265FilterSettings] = js.native
+  /**
     * Four bit AFD value to write on all frames of video in the output stream. Only valid when afdSignaling is set to 'Fixed'.
     */
   var FixedAfd: js.UndefOr[typings.awsSdk.medialiveMod.FixedAfd] = js.native
@@ -105,6 +109,9 @@ trait H265Settings extends js.Object {
   maximum bitrate.  Recommended if you or your viewers pay for bandwidth.
   CBR: Quality varies, depending on the video complexity. Recommended only if you distribute
   your assets to devices that cannot handle variable bitrates.
+  Multiplex: This rate control mode is only supported (and is required) when the video is being
+  delivered to a MediaLive Multiplex in which case the rate control configuration is controlled
+  by the properties within the Multiplex Program.
     */
   var RateControlMode: js.UndefOr[H265RateControlMode] = js.native
   /**
@@ -134,64 +141,134 @@ trait H265Settings extends js.Object {
 
 object H265Settings {
   @scala.inline
-  def apply(
-    FramerateDenominator: integerMin1Max3003,
-    FramerateNumerator: integerMin1,
-    AdaptiveQuantization: H265AdaptiveQuantization = null,
-    AfdSignaling: AfdSignaling = null,
-    AlternativeTransferFunction: H265AlternativeTransferFunction = null,
-    Bitrate: js.UndefOr[integerMin100000Max40000000] = js.undefined,
-    BufSize: js.UndefOr[integerMin100000Max80000000] = js.undefined,
-    ColorMetadata: H265ColorMetadata = null,
-    ColorSpaceSettings: H265ColorSpaceSettings = null,
-    FixedAfd: FixedAfd = null,
-    FlickerAq: H265FlickerAq = null,
-    GopClosedCadence: js.UndefOr[integerMin0] = js.undefined,
-    GopSize: js.UndefOr[double] = js.undefined,
-    GopSizeUnits: H265GopSizeUnits = null,
-    Level: H265Level = null,
-    LookAheadRateControl: H265LookAheadRateControl = null,
-    MaxBitrate: js.UndefOr[integerMin100000Max40000000] = js.undefined,
-    MinIInterval: js.UndefOr[integerMin0Max30] = js.undefined,
-    ParDenominator: js.UndefOr[integerMin1] = js.undefined,
-    ParNumerator: js.UndefOr[integerMin1] = js.undefined,
-    Profile: H265Profile = null,
-    QvbrQualityLevel: js.UndefOr[integerMin1Max10] = js.undefined,
-    RateControlMode: H265RateControlMode = null,
-    ScanType: H265ScanType = null,
-    SceneChangeDetect: H265SceneChangeDetect = null,
-    Slices: js.UndefOr[integerMin1Max16] = js.undefined,
-    Tier: H265Tier = null,
-    TimecodeInsertion: H265TimecodeInsertionBehavior = null
-  ): H265Settings = {
+  def apply(FramerateDenominator: integerMin1Max3003, FramerateNumerator: integerMin1): H265Settings = {
     val __obj = js.Dynamic.literal(FramerateDenominator = FramerateDenominator.asInstanceOf[js.Any], FramerateNumerator = FramerateNumerator.asInstanceOf[js.Any])
-    if (AdaptiveQuantization != null) __obj.updateDynamic("AdaptiveQuantization")(AdaptiveQuantization.asInstanceOf[js.Any])
-    if (AfdSignaling != null) __obj.updateDynamic("AfdSignaling")(AfdSignaling.asInstanceOf[js.Any])
-    if (AlternativeTransferFunction != null) __obj.updateDynamic("AlternativeTransferFunction")(AlternativeTransferFunction.asInstanceOf[js.Any])
-    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BufSize)) __obj.updateDynamic("BufSize")(BufSize.get.asInstanceOf[js.Any])
-    if (ColorMetadata != null) __obj.updateDynamic("ColorMetadata")(ColorMetadata.asInstanceOf[js.Any])
-    if (ColorSpaceSettings != null) __obj.updateDynamic("ColorSpaceSettings")(ColorSpaceSettings.asInstanceOf[js.Any])
-    if (FixedAfd != null) __obj.updateDynamic("FixedAfd")(FixedAfd.asInstanceOf[js.Any])
-    if (FlickerAq != null) __obj.updateDynamic("FlickerAq")(FlickerAq.asInstanceOf[js.Any])
-    if (!js.isUndefined(GopClosedCadence)) __obj.updateDynamic("GopClosedCadence")(GopClosedCadence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(GopSize)) __obj.updateDynamic("GopSize")(GopSize.get.asInstanceOf[js.Any])
-    if (GopSizeUnits != null) __obj.updateDynamic("GopSizeUnits")(GopSizeUnits.asInstanceOf[js.Any])
-    if (Level != null) __obj.updateDynamic("Level")(Level.asInstanceOf[js.Any])
-    if (LookAheadRateControl != null) __obj.updateDynamic("LookAheadRateControl")(LookAheadRateControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinIInterval)) __obj.updateDynamic("MinIInterval")(MinIInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParDenominator)) __obj.updateDynamic("ParDenominator")(ParDenominator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParNumerator)) __obj.updateDynamic("ParNumerator")(ParNumerator.get.asInstanceOf[js.Any])
-    if (Profile != null) __obj.updateDynamic("Profile")(Profile.asInstanceOf[js.Any])
-    if (!js.isUndefined(QvbrQualityLevel)) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel.get.asInstanceOf[js.Any])
-    if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
-    if (ScanType != null) __obj.updateDynamic("ScanType")(ScanType.asInstanceOf[js.Any])
-    if (SceneChangeDetect != null) __obj.updateDynamic("SceneChangeDetect")(SceneChangeDetect.asInstanceOf[js.Any])
-    if (!js.isUndefined(Slices)) __obj.updateDynamic("Slices")(Slices.get.asInstanceOf[js.Any])
-    if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
-    if (TimecodeInsertion != null) __obj.updateDynamic("TimecodeInsertion")(TimecodeInsertion.asInstanceOf[js.Any])
     __obj.asInstanceOf[H265Settings]
   }
+  @scala.inline
+  implicit class H265SettingsOps[Self <: H265Settings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFramerateDenominator(value: integerMin1Max3003): Self = this.set("FramerateDenominator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFramerateNumerator(value: integerMin1): Self = this.set("FramerateNumerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdaptiveQuantization(value: H265AdaptiveQuantization): Self = this.set("AdaptiveQuantization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdaptiveQuantization: Self = this.set("AdaptiveQuantization", js.undefined)
+    @scala.inline
+    def setAfdSignaling(value: AfdSignaling): Self = this.set("AfdSignaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfdSignaling: Self = this.set("AfdSignaling", js.undefined)
+    @scala.inline
+    def setAlternativeTransferFunction(value: H265AlternativeTransferFunction): Self = this.set("AlternativeTransferFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternativeTransferFunction: Self = this.set("AlternativeTransferFunction", js.undefined)
+    @scala.inline
+    def setBitrate(value: integerMin100000Max40000000): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    @scala.inline
+    def setBufSize(value: integerMin100000Max80000000): Self = this.set("BufSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufSize: Self = this.set("BufSize", js.undefined)
+    @scala.inline
+    def setColorMetadata(value: H265ColorMetadata): Self = this.set("ColorMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorMetadata: Self = this.set("ColorMetadata", js.undefined)
+    @scala.inline
+    def setColorSpaceSettings(value: H265ColorSpaceSettings): Self = this.set("ColorSpaceSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSpaceSettings: Self = this.set("ColorSpaceSettings", js.undefined)
+    @scala.inline
+    def setFilterSettings(value: H265FilterSettings): Self = this.set("FilterSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterSettings: Self = this.set("FilterSettings", js.undefined)
+    @scala.inline
+    def setFixedAfd(value: FixedAfd): Self = this.set("FixedAfd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedAfd: Self = this.set("FixedAfd", js.undefined)
+    @scala.inline
+    def setFlickerAq(value: H265FlickerAq): Self = this.set("FlickerAq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlickerAq: Self = this.set("FlickerAq", js.undefined)
+    @scala.inline
+    def setGopClosedCadence(value: integerMin0): Self = this.set("GopClosedCadence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGopClosedCadence: Self = this.set("GopClosedCadence", js.undefined)
+    @scala.inline
+    def setGopSize(value: double): Self = this.set("GopSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGopSize: Self = this.set("GopSize", js.undefined)
+    @scala.inline
+    def setGopSizeUnits(value: H265GopSizeUnits): Self = this.set("GopSizeUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGopSizeUnits: Self = this.set("GopSizeUnits", js.undefined)
+    @scala.inline
+    def setLevel(value: H265Level): Self = this.set("Level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("Level", js.undefined)
+    @scala.inline
+    def setLookAheadRateControl(value: H265LookAheadRateControl): Self = this.set("LookAheadRateControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookAheadRateControl: Self = this.set("LookAheadRateControl", js.undefined)
+    @scala.inline
+    def setMaxBitrate(value: integerMin100000Max40000000): Self = this.set("MaxBitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBitrate: Self = this.set("MaxBitrate", js.undefined)
+    @scala.inline
+    def setMinIInterval(value: integerMin0Max30): Self = this.set("MinIInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinIInterval: Self = this.set("MinIInterval", js.undefined)
+    @scala.inline
+    def setParDenominator(value: integerMin1): Self = this.set("ParDenominator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParDenominator: Self = this.set("ParDenominator", js.undefined)
+    @scala.inline
+    def setParNumerator(value: integerMin1): Self = this.set("ParNumerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParNumerator: Self = this.set("ParNumerator", js.undefined)
+    @scala.inline
+    def setProfile(value: H265Profile): Self = this.set("Profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("Profile", js.undefined)
+    @scala.inline
+    def setQvbrQualityLevel(value: integerMin1Max10): Self = this.set("QvbrQualityLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQvbrQualityLevel: Self = this.set("QvbrQualityLevel", js.undefined)
+    @scala.inline
+    def setRateControlMode(value: H265RateControlMode): Self = this.set("RateControlMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRateControlMode: Self = this.set("RateControlMode", js.undefined)
+    @scala.inline
+    def setScanType(value: H265ScanType): Self = this.set("ScanType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanType: Self = this.set("ScanType", js.undefined)
+    @scala.inline
+    def setSceneChangeDetect(value: H265SceneChangeDetect): Self = this.set("SceneChangeDetect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSceneChangeDetect: Self = this.set("SceneChangeDetect", js.undefined)
+    @scala.inline
+    def setSlices(value: integerMin1Max16): Self = this.set("Slices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlices: Self = this.set("Slices", js.undefined)
+    @scala.inline
+    def setTier(value: H265Tier): Self = this.set("Tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTier: Self = this.set("Tier", js.undefined)
+    @scala.inline
+    def setTimecodeInsertion(value: H265TimecodeInsertionBehavior): Self = this.set("TimecodeInsertion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimecodeInsertion: Self = this.set("TimecodeInsertion", js.undefined)
+  }
+  
 }
 

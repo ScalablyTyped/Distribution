@@ -6,25 +6,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SearchViewModelSuggestResponseResults extends Object {
   /**
     * An array of suggest results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SuggestResponse)
     */
-  var results: js.Array[SearchViewModelSuggestResult]
+  var results: js.Array[SearchViewModelSuggestResult] = js.native
   /**
     * The [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources) of the selected result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SuggestResponse)
     */
-  var source: js.Any
+  var source: js.Any = js.native
   /**
     * The index of the currently selected source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SuggestResponse)
     */
-  var sourceIndex: Double
+  var sourceIndex: Double = js.native
 }
 
 object SearchViewModelSuggestResponseResults {
@@ -40,5 +41,26 @@ object SearchViewModelSuggestResponseResults {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), results = results.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchViewModelSuggestResponseResults]
   }
+  @scala.inline
+  implicit class SearchViewModelSuggestResponseResultsOps[Self <: SearchViewModelSuggestResponseResults] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResultsVarargs(value: SearchViewModelSuggestResult*): Self = this.set("results", js.Array(value :_*))
+    @scala.inline
+    def setResults(value: js.Array[SearchViewModelSuggestResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: js.Any): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceIndex(value: Double): Self = this.set("sourceIndex", value.asInstanceOf[js.Any])
+  }
+  
 }
 

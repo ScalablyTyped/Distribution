@@ -33,9 +33,9 @@ trait LustreFileSystemArgs extends js.Object {
     */
   val subnetIds: Input[String] = js.native
   /**
-    * A mapping of tags to assign to the file system.
+    * A map of tags to assign to the file system.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The preferred start time (in `d:HH:MM` format) to perform weekly maintenance, in the UTC time zone.
     */
@@ -44,24 +44,52 @@ trait LustreFileSystemArgs extends js.Object {
 
 object LustreFileSystemArgs {
   @scala.inline
-  def apply(
-    storageCapacity: Input[Double],
-    subnetIds: Input[String],
-    exportPath: Input[String] = null,
-    importPath: Input[String] = null,
-    importedFileChunkSize: Input[Double] = null,
-    securityGroupIds: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null,
-    weeklyMaintenanceStartTime: Input[String] = null
-  ): LustreFileSystemArgs = {
+  def apply(storageCapacity: Input[Double], subnetIds: Input[String]): LustreFileSystemArgs = {
     val __obj = js.Dynamic.literal(storageCapacity = storageCapacity.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any])
-    if (exportPath != null) __obj.updateDynamic("exportPath")(exportPath.asInstanceOf[js.Any])
-    if (importPath != null) __obj.updateDynamic("importPath")(importPath.asInstanceOf[js.Any])
-    if (importedFileChunkSize != null) __obj.updateDynamic("importedFileChunkSize")(importedFileChunkSize.asInstanceOf[js.Any])
-    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (weeklyMaintenanceStartTime != null) __obj.updateDynamic("weeklyMaintenanceStartTime")(weeklyMaintenanceStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[LustreFileSystemArgs]
   }
+  @scala.inline
+  implicit class LustreFileSystemArgsOps[Self <: LustreFileSystemArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStorageCapacity(value: Input[Double]): Self = this.set("storageCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetIds(value: Input[String]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExportPath(value: Input[String]): Self = this.set("exportPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportPath: Self = this.set("exportPath", js.undefined)
+    @scala.inline
+    def setImportPath(value: Input[String]): Self = this.set("importPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportPath: Self = this.set("importPath", js.undefined)
+    @scala.inline
+    def setImportedFileChunkSize(value: Input[Double]): Self = this.set("importedFileChunkSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportedFileChunkSize: Self = this.set("importedFileChunkSize", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setWeeklyMaintenanceStartTime(value: Input[String]): Self = this.set("weeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeeklyMaintenanceStartTime: Self = this.set("weeklyMaintenanceStartTime", js.undefined)
+  }
+  
 }
 

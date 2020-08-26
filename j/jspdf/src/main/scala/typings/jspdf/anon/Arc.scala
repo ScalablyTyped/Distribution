@@ -18,8 +18,116 @@ trait Arc extends js.Object {
   def clearRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   def closePath(): Unit = js.native
   def drawImage(img: String, x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  def drawImage(
+    img: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    x2: js.UndefOr[scala.Nothing],
+    y2: js.UndefOr[scala.Nothing],
+    w2: js.UndefOr[scala.Nothing],
+    h2: Double
+  ): Unit = js.native
+  def drawImage(
+    img: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    x2: js.UndefOr[scala.Nothing],
+    y2: js.UndefOr[scala.Nothing],
+    w2: Double
+  ): Unit = js.native
+  def drawImage(
+    img: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    x2: js.UndefOr[scala.Nothing],
+    y2: js.UndefOr[scala.Nothing],
+    w2: Double,
+    h2: Double
+  ): Unit = js.native
+  def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: js.UndefOr[scala.Nothing], y2: Double): Unit = js.native
+  def drawImage(
+    img: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    x2: js.UndefOr[scala.Nothing],
+    y2: Double,
+    w2: js.UndefOr[scala.Nothing],
+    h2: Double
+  ): Unit = js.native
+  def drawImage(
+    img: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    x2: js.UndefOr[scala.Nothing],
+    y2: Double,
+    w2: Double
+  ): Unit = js.native
+  def drawImage(
+    img: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    x2: js.UndefOr[scala.Nothing],
+    y2: Double,
+    w2: Double,
+    h2: Double
+  ): Unit = js.native
   def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Double): Unit = js.native
+  def drawImage(
+    img: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    x2: Double,
+    y2: js.UndefOr[scala.Nothing],
+    w2: js.UndefOr[scala.Nothing],
+    h2: Double
+  ): Unit = js.native
+  def drawImage(
+    img: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    x2: Double,
+    y2: js.UndefOr[scala.Nothing],
+    w2: Double
+  ): Unit = js.native
+  def drawImage(
+    img: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    x2: Double,
+    y2: js.UndefOr[scala.Nothing],
+    w2: Double,
+    h2: Double
+  ): Unit = js.native
   def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Double, y2: Double): Unit = js.native
+  def drawImage(
+    img: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    x2: Double,
+    y2: Double,
+    w2: js.UndefOr[scala.Nothing],
+    h2: Double
+  ): Unit = js.native
   def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Double, y2: Double, w2: Double): Unit = js.native
   def drawImage(
     img: String,

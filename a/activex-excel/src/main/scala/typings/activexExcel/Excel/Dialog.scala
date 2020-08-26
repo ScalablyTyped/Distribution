@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Dialog extends js.Object {
-  val Application: typings.activexExcel.Excel.Application
-  val Creator: XlCreator
+  val Application: typings.activexExcel.Excel.Application = js.native
+  val Creator: XlCreator = js.native
   @JSName("Excel.Dialog_typekey")
-  var ExcelDotDialog_typekey: Dialog
-  val Parent: js.Any
+  var ExcelDotDialog_typekey: Dialog = js.native
+  val Parent: js.Any = js.native
   def Show(
     Arg1: js.UndefOr[js.Any],
     Arg2: js.UndefOr[js.Any],
@@ -41,7 +42,7 @@ trait Dialog extends js.Object {
     Arg28: js.UndefOr[js.Any],
     Arg29: js.UndefOr[js.Any],
     Arg30: js.UndefOr[js.Any]
-  ): Boolean
+  ): Boolean = js.native
 }
 
 object Dialog {
@@ -51,5 +52,26 @@ object Dialog {
     __obj.updateDynamic("Excel.Dialog_typekey")(ExcelDotDialog_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dialog]
   }
+  @scala.inline
+  implicit class DialogOps[Self <: Dialog] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExcelDotDialog_typekey(value: Dialog): Self = this.set("Excel.Dialog_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+  }
+  
 }
 

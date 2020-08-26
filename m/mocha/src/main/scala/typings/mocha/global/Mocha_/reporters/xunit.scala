@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object xunit
   extends TopLevel[
-      Instantiable2[/* runner */ Runner, js.UndefOr[/* options */ MochaOptions], XUnit]
+      Instantiable2[/* runner */ Runner, /* options */ js.UndefOr[MochaOptions], XUnit]
     ]
 

@@ -12,6 +12,7 @@ object getFakeFirebaseServicesMod extends js.Object {
   def getFakeApp(): FirebaseApp = js.native
   def getFakeApp(measurementId: String): FirebaseApp = js.native
   def getFakeInstallations(): FirebaseInstallations = js.native
+  def getFakeInstallations(fid: js.UndefOr[scala.Nothing], onFidResolve: js.Function): FirebaseInstallations = js.native
   def getFakeInstallations(fid: String): FirebaseInstallations = js.native
   def getFakeInstallations(fid: String, onFidResolve: js.Function): FirebaseInstallations = js.native
 }

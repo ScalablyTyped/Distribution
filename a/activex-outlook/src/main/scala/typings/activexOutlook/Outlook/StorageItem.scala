@@ -5,25 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StorageItem extends js.Object {
-  val Application: typings.activexOutlook.Outlook.Application
-  val Attachments: typings.activexOutlook.Outlook.Attachments
-  var Body: String
-  val Class: OlObjectClass
-  val CreationTime: VarDate
-  var Creator: String
-  val EntryID: String
-  val LastModificationTime: VarDate
+  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Attachments: typings.activexOutlook.Outlook.Attachments = js.native
+  var Body: String = js.native
+  val Class: OlObjectClass = js.native
+  val CreationTime: VarDate = js.native
+  var Creator: String = js.native
+  val EntryID: String = js.native
+  val LastModificationTime: VarDate = js.native
   @JSName("Outlook.StorageItem_typekey")
-  var OutlookDotStorageItem_typekey: StorageItem
-  val Parent: js.Any
-  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor
-  val Session: NameSpace
-  val Size: Double
-  var Subject: String
-  val UserProperties: typings.activexOutlook.Outlook.UserProperties
-  def Delete(): Unit
-  def Save(): Unit
+  var OutlookDotStorageItem_typekey: StorageItem = js.native
+  val Parent: js.Any = js.native
+  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
+  val Session: NameSpace = js.native
+  val Size: Double = js.native
+  var Subject: String = js.native
+  val UserProperties: typings.activexOutlook.Outlook.UserProperties = js.native
+  def Delete(): Unit = js.native
+  def Save(): Unit = js.native
 }
 
 object StorageItem {
@@ -51,5 +52,52 @@ object StorageItem {
     __obj.updateDynamic("Outlook.StorageItem_typekey")(OutlookDotStorageItem_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageItem]
   }
+  @scala.inline
+  implicit class StorageItemOps[Self <: StorageItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttachments(value: Attachments): Self = this.set("Attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBody(value: String): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationTime(value: VarDate): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: String): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    @scala.inline
+    def setEntryID(value: String): Self = this.set("EntryID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastModificationTime(value: VarDate): Self = this.set("LastModificationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutlookDotStorageItem_typekey(value: StorageItem): Self = this.set("Outlook.StorageItem_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPropertyAccessor(value: PropertyAccessor): Self = this.set("PropertyAccessor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserProperties(value: UserProperties): Self = this.set("UserProperties", value.asInstanceOf[js.Any])
+  }
+  
 }
 

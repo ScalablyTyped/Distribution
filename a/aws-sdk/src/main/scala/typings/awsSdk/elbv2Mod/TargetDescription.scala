@@ -22,11 +22,32 @@ trait TargetDescription extends js.Object {
 
 object TargetDescription {
   @scala.inline
-  def apply(Id: TargetId, AvailabilityZone: ZoneName = null, Port: js.UndefOr[Port] = js.undefined): TargetDescription = {
+  def apply(Id: TargetId): TargetDescription = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetDescription]
   }
+  @scala.inline
+  implicit class TargetDescriptionOps[Self <: TargetDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: TargetId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAvailabilityZone(value: ZoneName): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setPort(value: Port): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+  }
+  
 }
 

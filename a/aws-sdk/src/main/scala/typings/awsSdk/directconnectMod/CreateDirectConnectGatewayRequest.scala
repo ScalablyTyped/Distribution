@@ -18,13 +18,28 @@ trait CreateDirectConnectGatewayRequest extends js.Object {
 
 object CreateDirectConnectGatewayRequest {
   @scala.inline
-  def apply(
-    directConnectGatewayName: DirectConnectGatewayName,
-    amazonSideAsn: js.UndefOr[LongAsn] = js.undefined
-  ): CreateDirectConnectGatewayRequest = {
+  def apply(directConnectGatewayName: DirectConnectGatewayName): CreateDirectConnectGatewayRequest = {
     val __obj = js.Dynamic.literal(directConnectGatewayName = directConnectGatewayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(amazonSideAsn)) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDirectConnectGatewayRequest]
   }
+  @scala.inline
+  implicit class CreateDirectConnectGatewayRequestOps[Self <: CreateDirectConnectGatewayRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectConnectGatewayName(value: DirectConnectGatewayName): Self = this.set("directConnectGatewayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmazonSideAsn(value: LongAsn): Self = this.set("amazonSideAsn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmazonSideAsn: Self = this.set("amazonSideAsn", js.undefined)
+  }
+  
 }
 

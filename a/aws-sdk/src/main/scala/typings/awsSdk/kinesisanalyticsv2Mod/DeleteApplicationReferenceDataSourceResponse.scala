@@ -18,14 +18,30 @@ trait DeleteApplicationReferenceDataSourceResponse extends js.Object {
 
 object DeleteApplicationReferenceDataSourceResponse {
   @scala.inline
-  def apply(
-    ApplicationARN: ResourceARN = null,
-    ApplicationVersionId: js.UndefOr[ApplicationVersionId] = js.undefined
-  ): DeleteApplicationReferenceDataSourceResponse = {
+  def apply(): DeleteApplicationReferenceDataSourceResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationARN != null) __obj.updateDynamic("ApplicationARN")(ApplicationARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApplicationVersionId)) __obj.updateDynamic("ApplicationVersionId")(ApplicationVersionId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationReferenceDataSourceResponse]
   }
+  @scala.inline
+  implicit class DeleteApplicationReferenceDataSourceResponseOps[Self <: DeleteApplicationReferenceDataSourceResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationARN(value: ResourceARN): Self = this.set("ApplicationARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationARN: Self = this.set("ApplicationARN", js.undefined)
+    @scala.inline
+    def setApplicationVersionId(value: ApplicationVersionId): Self = this.set("ApplicationVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationVersionId: Self = this.set("ApplicationVersionId", js.undefined)
+  }
+  
 }
 

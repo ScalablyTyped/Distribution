@@ -13,72 +13,96 @@ import scala.scalajs.js.annotation._
 object themr extends js.Object {
   def apply(identifier: String): js.Function1[
     /* component */ (Instantiable2[
-      js.UndefOr[/* props */ js.Any], 
-      js.UndefOr[/* context */ js.Any], 
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[_], 
+    ThemedComponentClass[js.Any with MapThemrProps[_], _]
+  ] = js.native
+  def apply(identifier: String, defaultTheme: js.UndefOr[scala.Nothing], options: IThemrOptions): js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
     ]) | SFC[_], 
     ThemedComponentClass[js.Any with MapThemrProps[_], _]
   ] = js.native
   def apply(identifier: String, defaultTheme: js.Object): js.Function1[
     /* component */ (Instantiable2[
-      js.UndefOr[/* props */ js.Any], 
-      js.UndefOr[/* context */ js.Any], 
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
     ]) | SFC[_], 
     ThemedComponentClass[js.Any with MapThemrProps[_], _]
   ] = js.native
   def apply(identifier: String, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
-      js.UndefOr[/* props */ js.Any], 
-      js.UndefOr[/* context */ js.Any], 
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
     ]) | SFC[_], 
     ThemedComponentClass[js.Any with MapThemrProps[_], _]
   ] = js.native
   def apply(identifier: js.Symbol): js.Function1[
     /* component */ (Instantiable2[
-      js.UndefOr[/* props */ js.Any], 
-      js.UndefOr[/* context */ js.Any], 
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[_], 
+    ThemedComponentClass[js.Any with MapThemrProps[_], _]
+  ] = js.native
+  def apply(identifier: js.Symbol, defaultTheme: js.UndefOr[scala.Nothing], options: IThemrOptions): js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
     ]) | SFC[_], 
     ThemedComponentClass[js.Any with MapThemrProps[_], _]
   ] = js.native
   def apply(identifier: js.Symbol, defaultTheme: js.Object): js.Function1[
     /* component */ (Instantiable2[
-      js.UndefOr[/* props */ js.Any], 
-      js.UndefOr[/* context */ js.Any], 
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
     ]) | SFC[_], 
     ThemedComponentClass[js.Any with MapThemrProps[_], _]
   ] = js.native
   def apply(identifier: js.Symbol, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
-      js.UndefOr[/* props */ js.Any], 
-      js.UndefOr[/* context */ js.Any], 
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
     ]) | SFC[_], 
     ThemedComponentClass[js.Any with MapThemrProps[_], _]
   ] = js.native
   def apply(identifier: Double): js.Function1[
     /* component */ (Instantiable2[
-      js.UndefOr[/* props */ js.Any], 
-      js.UndefOr[/* context */ js.Any], 
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[_], 
+    ThemedComponentClass[js.Any with MapThemrProps[_], _]
+  ] = js.native
+  def apply(identifier: Double, defaultTheme: js.UndefOr[scala.Nothing], options: IThemrOptions): js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
     ]) | SFC[_], 
     ThemedComponentClass[js.Any with MapThemrProps[_], _]
   ] = js.native
   def apply(identifier: Double, defaultTheme: js.Object): js.Function1[
     /* component */ (Instantiable2[
-      js.UndefOr[/* props */ js.Any], 
-      js.UndefOr[/* context */ js.Any], 
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
     ]) | SFC[_], 
     ThemedComponentClass[js.Any with MapThemrProps[_], _]
   ] = js.native
   def apply(identifier: Double, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
-      js.UndefOr[/* props */ js.Any], 
-      js.UndefOr[/* context */ js.Any], 
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
     ]) | SFC[_], 
     ThemedComponentClass[js.Any with MapThemrProps[_], _]

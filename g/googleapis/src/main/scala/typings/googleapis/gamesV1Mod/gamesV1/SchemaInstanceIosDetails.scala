@@ -44,24 +44,50 @@ trait SchemaInstanceIosDetails extends js.Object {
 
 object SchemaInstanceIosDetails {
   @scala.inline
-  def apply(
-    bundleIdentifier: String = null,
-    itunesAppId: String = null,
-    kind: String = null,
-    preferredForIpad: js.UndefOr[Boolean] = js.undefined,
-    preferredForIphone: js.UndefOr[Boolean] = js.undefined,
-    supportIpad: js.UndefOr[Boolean] = js.undefined,
-    supportIphone: js.UndefOr[Boolean] = js.undefined
-  ): SchemaInstanceIosDetails = {
+  def apply(): SchemaInstanceIosDetails = {
     val __obj = js.Dynamic.literal()
-    if (bundleIdentifier != null) __obj.updateDynamic("bundleIdentifier")(bundleIdentifier.asInstanceOf[js.Any])
-    if (itunesAppId != null) __obj.updateDynamic("itunesAppId")(itunesAppId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferredForIpad)) __obj.updateDynamic("preferredForIpad")(preferredForIpad.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferredForIphone)) __obj.updateDynamic("preferredForIphone")(preferredForIphone.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportIpad)) __obj.updateDynamic("supportIpad")(supportIpad.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportIphone)) __obj.updateDynamic("supportIphone")(supportIphone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceIosDetails]
   }
+  @scala.inline
+  implicit class SchemaInstanceIosDetailsOps[Self <: SchemaInstanceIosDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBundleIdentifier(value: String): Self = this.set("bundleIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleIdentifier: Self = this.set("bundleIdentifier", js.undefined)
+    @scala.inline
+    def setItunesAppId(value: String): Self = this.set("itunesAppId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItunesAppId: Self = this.set("itunesAppId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPreferredForIpad(value: Boolean): Self = this.set("preferredForIpad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredForIpad: Self = this.set("preferredForIpad", js.undefined)
+    @scala.inline
+    def setPreferredForIphone(value: Boolean): Self = this.set("preferredForIphone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredForIphone: Self = this.set("preferredForIphone", js.undefined)
+    @scala.inline
+    def setSupportIpad(value: Boolean): Self = this.set("supportIpad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportIpad: Self = this.set("supportIpad", js.undefined)
+    @scala.inline
+    def setSupportIphone(value: Boolean): Self = this.set("supportIphone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportIphone: Self = this.set("supportIphone", js.undefined)
+  }
+  
 }
 

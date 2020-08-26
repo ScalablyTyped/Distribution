@@ -16,19 +16,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Wallet extends js.Object {
-  def accountInfo(callback: ResponseCallback[AccountInfoResult]): Unit
+  def accountInfo(callback: ResponseCallback[AccountInfoResult]): Unit = js.native
   def incomingTransferAccept(
     operation_id: String,
     protectionCode: String,
     callback: ResponseCallback[IncomingTransferAcceptResult]
-  ): Unit
-  def incomingTransferReject(operation_id: String, callback: ResponseCallback[IncomingTransferRejectResult]): Unit
-  def operationDetails(operation_id: String, callback: ResponseCallback[OperationDetailsResult]): Unit
-  def operationHistory(options: OperationHistoryOptions, callback: ResponseCallback[OperationHistoryResult]): Unit
-  def processPayment(options: ProcessPaymentOptions, callback: ResponseCallback[ProcessPaymentResult]): Unit
-  def requestPayment(options: RequestPaymentOptions, callback: ResponseCallback[RequestPaymentResult]): Unit
-  def sendAuthenticatedRequest(params: SendAuthenticatedRequestParams, callback: ResponseCallback[_]): Unit
+  ): Unit = js.native
+  def incomingTransferReject(operation_id: String, callback: ResponseCallback[IncomingTransferRejectResult]): Unit = js.native
+  def operationDetails(operation_id: String, callback: ResponseCallback[OperationDetailsResult]): Unit = js.native
+  def operationHistory(options: OperationHistoryOptions, callback: ResponseCallback[OperationHistoryResult]): Unit = js.native
+  def processPayment(options: ProcessPaymentOptions, callback: ResponseCallback[ProcessPaymentResult]): Unit = js.native
+  def requestPayment(options: RequestPaymentOptions, callback: ResponseCallback[RequestPaymentResult]): Unit = js.native
+  def sendAuthenticatedRequest(params: SendAuthenticatedRequestParams, callback: ResponseCallback[_]): Unit = js.native
 }
 
 @JSImport("yandex-money-sdk", "Wallet")

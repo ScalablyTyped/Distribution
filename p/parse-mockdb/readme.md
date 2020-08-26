@@ -10,9 +10,9 @@ Parse JS SDK Mocked Database
 | ------------------ | :-------------: |
 | Full name          | parse-mockdb |
 | Keywords           | parse, parsesdk, mock, unit-testing |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 21281 |
+| # downloads        | 22315 |
 | # stars            | 1 |
 
 ## Links

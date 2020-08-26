@@ -34,14 +34,14 @@ object default extends js.Object {
   var PanInput: TypeofPanInput = js.native
   var PinchInput: Instantiable2[
     /* el */ js.Any, 
-    js.UndefOr[/* options */ PinchInputOption], 
+    /* options */ js.UndefOr[PinchInputOption], 
     typings.egjsAxes.pinchInputMod.PinchInput
   ] = js.native
   var TRANSFORM: String = js.native
   var VERSION: String = js.native
   var WheelInput: Instantiable2[
     /* el */ js.Any, 
-    js.UndefOr[/* options */ WheelInputOption], 
+    /* options */ js.UndefOr[WheelInputOption], 
     typings.egjsAxes.wheelInputMod.WheelInput
   ] = js.native
 }

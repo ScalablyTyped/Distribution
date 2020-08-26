@@ -10,9 +10,9 @@ Typings are for version 3.1
 | ------------------ | :-------------: |
 | Full name          | trouter |
 | Keywords           | route, router, routing |
-| # releases         | 11 |
+| # releases         | 8 |
 | # dependents       | 8 |
-| # downloads        | 387687 |
+| # downloads        | 412706 |
 | # stars            | 0 |
 
 ## Links

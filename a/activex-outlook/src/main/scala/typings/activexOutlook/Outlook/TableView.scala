@@ -5,53 +5,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableView extends js.Object {
-  var AllowInCellEditing: Boolean
-  var AlwaysExpandConversation: Boolean
-  val Application: typings.activexOutlook.Outlook.Application
-  val AutoFormatRules: typings.activexOutlook.Outlook.AutoFormatRules
-  var AutoPreview: OlAutoPreview
-  val AutoPreviewFont: ViewFont
-  var AutomaticColumnSizing: Boolean
-  var AutomaticGrouping: Boolean
-  val Class: OlObjectClass
-  val ColumnFont: ViewFont
-  var DefaultExpandCollapseSetting: OlDefaultExpandCollapseSetting
-  var Filter: String
-  var GridLineStyle: OlGridLineStyle
-  val GroupByFields: OrderFields
-  var HideReadingPaneHeaderInfo: Boolean
-  var Language: String
-  var LockUserChanges: Boolean
-  var MaxLinesInMultiLineView: Double
-  var MultiLine: OlMultiLine
-  var MultiLineWidth: Double
-  var Name: String
+  var AllowInCellEditing: Boolean = js.native
+  var AlwaysExpandConversation: Boolean = js.native
+  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val AutoFormatRules: typings.activexOutlook.Outlook.AutoFormatRules = js.native
+  var AutoPreview: OlAutoPreview = js.native
+  val AutoPreviewFont: ViewFont = js.native
+  var AutomaticColumnSizing: Boolean = js.native
+  var AutomaticGrouping: Boolean = js.native
+  val Class: OlObjectClass = js.native
+  val ColumnFont: ViewFont = js.native
+  var DefaultExpandCollapseSetting: OlDefaultExpandCollapseSetting = js.native
+  var Filter: String = js.native
+  var GridLineStyle: OlGridLineStyle = js.native
+  val GroupByFields: OrderFields = js.native
+  var HideReadingPaneHeaderInfo: Boolean = js.native
+  var Language: String = js.native
+  var LockUserChanges: Boolean = js.native
+  var MaxLinesInMultiLineView: Double = js.native
+  var MultiLine: OlMultiLine = js.native
+  var MultiLineWidth: Double = js.native
+  var Name: String = js.native
   @JSName("Outlook.TableView_typekey")
-  var OutlookDotTableView_typekey: TableView
-  val Parent: js.Any
-  val RowFont: ViewFont
-  val SaveOption: OlViewSaveOption
-  val Session: NameSpace
-  var ShowConversationByDate: Boolean
-  var ShowConversationSendersAboveSubject: Boolean
-  var ShowFullConversations: Boolean
-  var ShowItemsInGroups: Boolean
-  var ShowNewItemRow: Boolean
-  var ShowReadingPane: Boolean
-  var ShowUnreadAndFlaggedMessages: Boolean
-  val SortFields: OrderFields
-  val Standard: Boolean
-  val ViewFields: typings.activexOutlook.Outlook.ViewFields
-  val ViewType: OlViewType
-  var XML: String
-  def Apply(): Unit
-  def Copy(Name: String, SaveOption: OlViewSaveOption): View
-  def Delete(): Unit
-  def GetTable(): Table
-  def GoToDate(Date: VarDate): Unit
-  def Reset(): Unit
-  def Save(): Unit
+  var OutlookDotTableView_typekey: TableView = js.native
+  val Parent: js.Any = js.native
+  val RowFont: ViewFont = js.native
+  val SaveOption: OlViewSaveOption = js.native
+  val Session: NameSpace = js.native
+  var ShowConversationByDate: Boolean = js.native
+  var ShowConversationSendersAboveSubject: Boolean = js.native
+  var ShowFullConversations: Boolean = js.native
+  var ShowItemsInGroups: Boolean = js.native
+  var ShowNewItemRow: Boolean = js.native
+  var ShowReadingPane: Boolean = js.native
+  var ShowUnreadAndFlaggedMessages: Boolean = js.native
+  val SortFields: OrderFields = js.native
+  val Standard: Boolean = js.native
+  val ViewFields: typings.activexOutlook.Outlook.ViewFields = js.native
+  val ViewType: OlViewType = js.native
+  var XML: String = js.native
+  def Apply(): Unit = js.native
+  def Copy(Name: String, SaveOption: OlViewSaveOption): View = js.native
+  def Delete(): Unit = js.native
+  def GetTable(): Table = js.native
+  def GoToDate(Date: VarDate): Unit = js.native
+  def Reset(): Unit = js.native
+  def Save(): Unit = js.native
 }
 
 object TableView {
@@ -107,5 +108,108 @@ object TableView {
     __obj.updateDynamic("Outlook.TableView_typekey")(OutlookDotTableView_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableView]
   }
+  @scala.inline
+  implicit class TableViewOps[Self <: TableView] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowInCellEditing(value: Boolean): Self = this.set("AllowInCellEditing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlwaysExpandConversation(value: Boolean): Self = this.set("AlwaysExpandConversation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApply(value: () => Unit): Self = this.set("Apply", js.Any.fromFunction0(value))
+    @scala.inline
+    def setAutoFormatRules(value: AutoFormatRules): Self = this.set("AutoFormatRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoPreview(value: OlAutoPreview): Self = this.set("AutoPreview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoPreviewFont(value: ViewFont): Self = this.set("AutoPreviewFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutomaticColumnSizing(value: Boolean): Self = this.set("AutomaticColumnSizing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutomaticGrouping(value: Boolean): Self = this.set("AutomaticGrouping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColumnFont(value: ViewFont): Self = this.set("ColumnFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCopy(value: (String, OlViewSaveOption) => View): Self = this.set("Copy", js.Any.fromFunction2(value))
+    @scala.inline
+    def setDefaultExpandCollapseSetting(value: OlDefaultExpandCollapseSetting): Self = this.set("DefaultExpandCollapseSetting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetTable(value: () => Table): Self = this.set("GetTable", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGoToDate(value: VarDate => Unit): Self = this.set("GoToDate", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGridLineStyle(value: OlGridLineStyle): Self = this.set("GridLineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupByFields(value: OrderFields): Self = this.set("GroupByFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHideReadingPaneHeaderInfo(value: Boolean): Self = this.set("HideReadingPaneHeaderInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("Language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLockUserChanges(value: Boolean): Self = this.set("LockUserChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxLinesInMultiLineView(value: Double): Self = this.set("MaxLinesInMultiLineView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMultiLine(value: OlMultiLine): Self = this.set("MultiLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMultiLineWidth(value: Double): Self = this.set("MultiLineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutlookDotTableView_typekey(value: TableView): Self = this.set("Outlook.TableView_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReset(value: () => Unit): Self = this.set("Reset", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRowFont(value: ViewFont): Self = this.set("RowFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSaveOption(value: OlViewSaveOption): Self = this.set("SaveOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowConversationByDate(value: Boolean): Self = this.set("ShowConversationByDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowConversationSendersAboveSubject(value: Boolean): Self = this.set("ShowConversationSendersAboveSubject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowFullConversations(value: Boolean): Self = this.set("ShowFullConversations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowItemsInGroups(value: Boolean): Self = this.set("ShowItemsInGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowNewItemRow(value: Boolean): Self = this.set("ShowNewItemRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowReadingPane(value: Boolean): Self = this.set("ShowReadingPane", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowUnreadAndFlaggedMessages(value: Boolean): Self = this.set("ShowUnreadAndFlaggedMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSortFields(value: OrderFields): Self = this.set("SortFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStandard(value: Boolean): Self = this.set("Standard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setViewFields(value: ViewFields): Self = this.set("ViewFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setViewType(value: OlViewType): Self = this.set("ViewType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setXML(value: String): Self = this.set("XML", value.asInstanceOf[js.Any])
+  }
+  
 }
 

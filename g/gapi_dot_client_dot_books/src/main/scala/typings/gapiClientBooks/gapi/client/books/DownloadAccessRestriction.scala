@@ -4,66 +4,103 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DownloadAccessRestriction extends js.Object {
   /** If restricted, whether access is granted for this (user, device, volume). */
-  var deviceAllowed: js.UndefOr[Boolean] = js.undefined
+  var deviceAllowed: js.UndefOr[Boolean] = js.native
   /** If restricted, the number of content download licenses already acquired (including the requesting client, if licensed). */
-  var downloadsAcquired: js.UndefOr[Double] = js.undefined
+  var downloadsAcquired: js.UndefOr[Double] = js.native
   /** If deviceAllowed, whether access was just acquired with this request. */
-  var justAcquired: js.UndefOr[Boolean] = js.undefined
+  var justAcquired: js.UndefOr[Boolean] = js.native
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** If restricted, the maximum number of content download licenses for this volume. */
-  var maxDownloadDevices: js.UndefOr[Double] = js.undefined
+  var maxDownloadDevices: js.UndefOr[Double] = js.native
   /** Error/warning message. */
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[String] = js.native
   /** Client nonce for verification. Download access and client-validation only. */
-  var nonce: js.UndefOr[String] = js.undefined
+  var nonce: js.UndefOr[String] = js.native
   /**
     * Error/warning reason code. Additional codes may be added in the future. 0 OK 100 ACCESS_DENIED_PUBLISHER_LIMIT 101 ACCESS_DENIED_LIMIT 200
     * WARNING_USED_LAST_ACCESS
     */
-  var reasonCode: js.UndefOr[String] = js.undefined
+  var reasonCode: js.UndefOr[String] = js.native
   /** Whether this volume has any download access restrictions. */
-  var restricted: js.UndefOr[Boolean] = js.undefined
+  var restricted: js.UndefOr[Boolean] = js.native
   /** Response signature. */
-  var signature: js.UndefOr[String] = js.undefined
+  var signature: js.UndefOr[String] = js.native
   /** Client app identifier for verification. Download access and client-validation only. */
-  var source: js.UndefOr[String] = js.undefined
+  var source: js.UndefOr[String] = js.native
   /** Identifies the volume for which this entry applies. */
-  var volumeId: js.UndefOr[String] = js.undefined
+  var volumeId: js.UndefOr[String] = js.native
 }
 
 object DownloadAccessRestriction {
   @scala.inline
-  def apply(
-    deviceAllowed: js.UndefOr[Boolean] = js.undefined,
-    downloadsAcquired: js.UndefOr[Double] = js.undefined,
-    justAcquired: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    maxDownloadDevices: js.UndefOr[Double] = js.undefined,
-    message: String = null,
-    nonce: String = null,
-    reasonCode: String = null,
-    restricted: js.UndefOr[Boolean] = js.undefined,
-    signature: String = null,
-    source: String = null,
-    volumeId: String = null
-  ): DownloadAccessRestriction = {
+  def apply(): DownloadAccessRestriction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deviceAllowed)) __obj.updateDynamic("deviceAllowed")(deviceAllowed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(downloadsAcquired)) __obj.updateDynamic("downloadsAcquired")(downloadsAcquired.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(justAcquired)) __obj.updateDynamic("justAcquired")(justAcquired.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDownloadDevices)) __obj.updateDynamic("maxDownloadDevices")(maxDownloadDevices.get.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.get.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadAccessRestriction]
   }
+  @scala.inline
+  implicit class DownloadAccessRestrictionOps[Self <: DownloadAccessRestriction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceAllowed(value: Boolean): Self = this.set("deviceAllowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceAllowed: Self = this.set("deviceAllowed", js.undefined)
+    @scala.inline
+    def setDownloadsAcquired(value: Double): Self = this.set("downloadsAcquired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadsAcquired: Self = this.set("downloadsAcquired", js.undefined)
+    @scala.inline
+    def setJustAcquired(value: Boolean): Self = this.set("justAcquired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJustAcquired: Self = this.set("justAcquired", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMaxDownloadDevices(value: Double): Self = this.set("maxDownloadDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDownloadDevices: Self = this.set("maxDownloadDevices", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonce: Self = this.set("nonce", js.undefined)
+    @scala.inline
+    def setReasonCode(value: String): Self = this.set("reasonCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonCode: Self = this.set("reasonCode", js.undefined)
+    @scala.inline
+    def setRestricted(value: Boolean): Self = this.set("restricted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestricted: Self = this.set("restricted", js.undefined)
+    @scala.inline
+    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("signature", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+  }
+  
 }
 

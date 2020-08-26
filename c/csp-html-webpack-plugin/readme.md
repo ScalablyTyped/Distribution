@@ -12,7 +12,7 @@ A plugin which, when combined with HTMLWebpackPlugin, adds CSP tags to the HTML 
 | Keywords           | webpack, csp, plugin, html |
 | # releases         | 20 |
 | # dependents       | 5 |
-| # downloads        | 192110 |
+| # downloads        | 207625 |
 | # stars            | 0 |
 
 ## Links

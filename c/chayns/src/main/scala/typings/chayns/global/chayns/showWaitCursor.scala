@@ -13,6 +13,7 @@ object showWaitCursor extends js.Object {
     * chayns
     */
   def apply(): js.Promise[_] = js.native
+  def apply(text: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[_] = js.native
   def apply(text: String): js.Promise[_] = js.native
   def apply(text: String, timeout: Double): js.Promise[_] = js.native
 }

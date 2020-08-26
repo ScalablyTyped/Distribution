@@ -12,64 +12,97 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooltipOptions extends js.Object {
   /** Apply a CSS fade transition to the tooltip. */
-  var animation: js.UndefOr[Boolean] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.native
   /** Appends the tooltip to a specific element. */
-  var container: js.UndefOr[String | HTMLElement | `false`] = js.undefined
+  var container: js.UndefOr[String | HTMLElement | `false`] = js.native
   /**
     *  Delay showing and hiding the tooltip (ms) - does not apply to manual
     *  trigger type.
     */
-  var delay: js.UndefOr[Double | Hide] = js.undefined
+  var delay: js.UndefOr[Double | Hide] = js.native
   /** Allow HTML in the tooltip. */
-  var html: js.UndefOr[Boolean] = js.undefined
+  var html: js.UndefOr[Boolean] = js.native
   /** How to position the tooltip. */
-  var placement: js.UndefOr[top_ | bottom_ | left_ | right_ | auto] = js.undefined
+  var placement: js.UndefOr[top_ | bottom_ | left_ | right_ | auto] = js.native
   /**
     *  If a selector is provided, tooltip objects will be delegated to the
     *  specified targets.
     */
-  var selector: js.UndefOr[String] = js.undefined
+  var selector: js.UndefOr[String] = js.native
   /** Base HTML to use when creating the tooltip. */
-  var template: js.UndefOr[String] = js.undefined
+  var template: js.UndefOr[String] = js.native
   /**
     *  Default title value if title attribute isn't present.
     *  If a function is given, it will be called with its this reference set to
     *  the element that the tooltip is attached to.
     */
-  var title: js.UndefOr[String | HTMLElement | js.Function0[String]] = js.undefined
+  var title: js.UndefOr[String | HTMLElement | js.Function0[String]] = js.native
   /**
     *  How tooltip is triggered - click | hover | focus | manual.
     *  You may pass multiple triggers; separate them with a space.
     */
-  var trigger: js.UndefOr[String] = js.undefined
+  var trigger: js.UndefOr[String] = js.native
 }
 
 object TooltipOptions {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    container: String | HTMLElement | `false` = null,
-    delay: Double | Hide = null,
-    html: js.UndefOr[Boolean] = js.undefined,
-    placement: top_ | bottom_ | left_ | right_ | auto = null,
-    selector: String = null,
-    template: String = null,
-    title: String | HTMLElement | js.Function0[String] = null,
-    trigger: String = null
-  ): TooltipOptions = {
+  def apply(): TooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
+  @scala.inline
+  implicit class TooltipOptionsOps[Self <: TooltipOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setContainer(value: String | HTMLElement | `false`): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setDelay(value: Double | Hide): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setHtml(value: Boolean): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setPlacement(value: top_ | bottom_ | left_ | right_ | auto): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("placement", js.undefined)
+    @scala.inline
+    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTitleFunction0(value: () => String): Self = this.set("title", js.Any.fromFunction0(value))
+    @scala.inline
+    def setTitle(value: String | HTMLElement | js.Function0[String]): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTrigger(value: String): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrigger: Self = this.set("trigger", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Large collection of predicates.
 | Keywords           | check-types, checks, duck-typing, type-checking, types |
 | # releases         | 0 |
 | # dependents       | 148 |
-| # downloads        | 24730058 |
+| # downloads        | 26040726 |
 | # stars            | 2 |
 
 ## Links

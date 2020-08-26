@@ -6,45 +6,78 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ P in keyof FormData ]:? react.react.ReactElement | string | redux-form.redux-form.WarningOther<T>} */
+@js.native
 trait FormWarnings[FormData, T] extends js.Object {
-  var append: js.UndefOr[ReactElement | String | WarningOther[T]] = js.undefined
-  var delete: js.UndefOr[ReactElement | String | WarningOther[T]] = js.undefined
-  var entries: js.UndefOr[ReactElement | String | WarningOther[T]] = js.undefined
-  var forEach: js.UndefOr[ReactElement | String | WarningOther[T]] = js.undefined
-  var get: js.UndefOr[ReactElement | String | WarningOther[T]] = js.undefined
-  var getAll: js.UndefOr[ReactElement | String | WarningOther[T]] = js.undefined
-  var has: js.UndefOr[ReactElement | String | WarningOther[T]] = js.undefined
-  var keys: js.UndefOr[ReactElement | String | WarningOther[T]] = js.undefined
-  var set: js.UndefOr[ReactElement | String | WarningOther[T]] = js.undefined
-  var values: js.UndefOr[ReactElement | String | WarningOther[T]] = js.undefined
+  var append: js.UndefOr[ReactElement | String | WarningOther[T]] = js.native
+  var delete: js.UndefOr[ReactElement | String | WarningOther[T]] = js.native
+  var entries: js.UndefOr[ReactElement | String | WarningOther[T]] = js.native
+  var forEach: js.UndefOr[ReactElement | String | WarningOther[T]] = js.native
+  var get: js.UndefOr[ReactElement | String | WarningOther[T]] = js.native
+  var getAll: js.UndefOr[ReactElement | String | WarningOther[T]] = js.native
+  var has: js.UndefOr[ReactElement | String | WarningOther[T]] = js.native
+  var keys: js.UndefOr[ReactElement | String | WarningOther[T]] = js.native
+  var set: js.UndefOr[ReactElement | String | WarningOther[T]] = js.native
+  var values: js.UndefOr[ReactElement | String | WarningOther[T]] = js.native
 }
 
 object FormWarnings {
   @scala.inline
-  def apply[FormData, T](
-    append: ReactElement | String | WarningOther[T] = null,
-    delete: ReactElement | String | WarningOther[T] = null,
-    entries: ReactElement | String | WarningOther[T] = null,
-    forEach: ReactElement | String | WarningOther[T] = null,
-    get: ReactElement | String | WarningOther[T] = null,
-    getAll: ReactElement | String | WarningOther[T] = null,
-    has: ReactElement | String | WarningOther[T] = null,
-    keys: ReactElement | String | WarningOther[T] = null,
-    set: ReactElement | String | WarningOther[T] = null,
-    values: ReactElement | String | WarningOther[T] = null
-  ): FormWarnings[FormData, T] = {
+  def apply[FormData, T](): FormWarnings[FormData, T] = {
     val __obj = js.Dynamic.literal()
-    if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
-    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
-    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
-    if (forEach != null) __obj.updateDynamic("forEach")(forEach.asInstanceOf[js.Any])
-    if (get != null) __obj.updateDynamic("get")(get.asInstanceOf[js.Any])
-    if (getAll != null) __obj.updateDynamic("getAll")(getAll.asInstanceOf[js.Any])
-    if (has != null) __obj.updateDynamic("has")(has.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormWarnings[FormData, T]]
   }
+  @scala.inline
+  implicit class FormWarningsOps[Self <: FormWarnings[_, _], FormData, T] (val x: Self with (FormWarnings[FormData, T])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppend(value: ReactElement | String | WarningOther[T]): Self = this.set("append", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppend: Self = this.set("append", js.undefined)
+    @scala.inline
+    def setDelete(value: ReactElement | String | WarningOther[T]): Self = this.set("delete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelete: Self = this.set("delete", js.undefined)
+    @scala.inline
+    def setEntries(value: ReactElement | String | WarningOther[T]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntries: Self = this.set("entries", js.undefined)
+    @scala.inline
+    def setForEach(value: ReactElement | String | WarningOther[T]): Self = this.set("forEach", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForEach: Self = this.set("forEach", js.undefined)
+    @scala.inline
+    def setGet(value: ReactElement | String | WarningOther[T]): Self = this.set("get", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGet: Self = this.set("get", js.undefined)
+    @scala.inline
+    def setGetAll(value: ReactElement | String | WarningOther[T]): Self = this.set("getAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetAll: Self = this.set("getAll", js.undefined)
+    @scala.inline
+    def setHas(value: ReactElement | String | WarningOther[T]): Self = this.set("has", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHas: Self = this.set("has", js.undefined)
+    @scala.inline
+    def setKeys(value: ReactElement | String | WarningOther[T]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeys: Self = this.set("keys", js.undefined)
+    @scala.inline
+    def setSet(value: ReactElement | String | WarningOther[T]): Self = this.set("set", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSet: Self = this.set("set", js.undefined)
+    @scala.inline
+    def setValues(value: ReactElement | String | WarningOther[T]): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

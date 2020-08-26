@@ -52,6 +52,7 @@ trait WorksheetProtection extends ClientObject {
     * @param password Optional. Sheet protection password.
     */
   def protect(): Unit = js.native
+  def protect(options: js.UndefOr[scala.Nothing], password: String): Unit = js.native
   def protect(options: WorksheetProtectionOptions): Unit = js.native
   def protect(options: WorksheetProtectionOptions, password: String): Unit = js.native
   /**

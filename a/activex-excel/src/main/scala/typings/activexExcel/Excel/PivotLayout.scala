@@ -17,8 +17,54 @@ trait PivotLayout extends js.Object {
   val PivotCache: typings.activexExcel.Excel.PivotCache = js.native
   val PivotTable: typings.activexExcel.Excel.PivotTable = js.native
   def AddFields(): Unit = js.native
+  def AddFields(
+    RowFields: js.UndefOr[scala.Nothing],
+    ColumnFields: js.UndefOr[scala.Nothing],
+    PageFields: js.UndefOr[scala.Nothing],
+    AppendField: js.Any
+  ): Unit = js.native
+  def AddFields(RowFields: js.UndefOr[scala.Nothing], ColumnFields: js.UndefOr[scala.Nothing], PageFields: js.Any): Unit = js.native
+  def AddFields(
+    RowFields: js.UndefOr[scala.Nothing],
+    ColumnFields: js.UndefOr[scala.Nothing],
+    PageFields: js.Any,
+    AppendField: js.Any
+  ): Unit = js.native
+  def AddFields(RowFields: js.UndefOr[scala.Nothing], ColumnFields: js.Any): Unit = js.native
+  def AddFields(
+    RowFields: js.UndefOr[scala.Nothing],
+    ColumnFields: js.Any,
+    PageFields: js.UndefOr[scala.Nothing],
+    AppendField: js.Any
+  ): Unit = js.native
+  def AddFields(RowFields: js.UndefOr[scala.Nothing], ColumnFields: js.Any, PageFields: js.Any): Unit = js.native
+  def AddFields(
+    RowFields: js.UndefOr[scala.Nothing],
+    ColumnFields: js.Any,
+    PageFields: js.Any,
+    AppendField: js.Any
+  ): Unit = js.native
   def AddFields(RowFields: js.Any): Unit = js.native
+  def AddFields(
+    RowFields: js.Any,
+    ColumnFields: js.UndefOr[scala.Nothing],
+    PageFields: js.UndefOr[scala.Nothing],
+    AppendField: js.Any
+  ): Unit = js.native
+  def AddFields(RowFields: js.Any, ColumnFields: js.UndefOr[scala.Nothing], PageFields: js.Any): Unit = js.native
+  def AddFields(
+    RowFields: js.Any,
+    ColumnFields: js.UndefOr[scala.Nothing],
+    PageFields: js.Any,
+    AppendField: js.Any
+  ): Unit = js.native
   def AddFields(RowFields: js.Any, ColumnFields: js.Any): Unit = js.native
+  def AddFields(
+    RowFields: js.Any,
+    ColumnFields: js.Any,
+    PageFields: js.UndefOr[scala.Nothing],
+    AppendField: js.Any
+  ): Unit = js.native
   def AddFields(RowFields: js.Any, ColumnFields: js.Any, PageFields: js.Any): Unit = js.native
   def AddFields(RowFields: js.Any, ColumnFields: js.Any, PageFields: js.Any, AppendField: js.Any): Unit = js.native
   def ColumnFields(): js.Any = js.native

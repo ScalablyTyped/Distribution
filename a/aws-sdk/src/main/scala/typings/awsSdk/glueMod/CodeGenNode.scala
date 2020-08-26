@@ -26,15 +26,34 @@ trait CodeGenNode extends js.Object {
 
 object CodeGenNode {
   @scala.inline
-  def apply(
-    Args: CodeGenNodeArgs,
-    Id: CodeGenIdentifier,
-    NodeType: CodeGenNodeType,
-    LineNumber: js.UndefOr[Integer] = js.undefined
-  ): CodeGenNode = {
+  def apply(Args: CodeGenNodeArgs, Id: CodeGenIdentifier, NodeType: CodeGenNodeType): CodeGenNode = {
     val __obj = js.Dynamic.literal(Args = Args.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], NodeType = NodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(LineNumber)) __obj.updateDynamic("LineNumber")(LineNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeGenNode]
   }
+  @scala.inline
+  implicit class CodeGenNodeOps[Self <: CodeGenNode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: CodeGenNodeArg*): Self = this.set("Args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: CodeGenNodeArgs): Self = this.set("Args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: CodeGenIdentifier): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeType(value: CodeGenNodeType): Self = this.set("NodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLineNumber(value: Integer): Self = this.set("LineNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineNumber: Self = this.set("LineNumber", js.undefined)
+  }
+  
 }
 

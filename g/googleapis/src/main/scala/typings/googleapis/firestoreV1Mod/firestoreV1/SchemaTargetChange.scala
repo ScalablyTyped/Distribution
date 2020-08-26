@@ -45,20 +45,44 @@ trait SchemaTargetChange extends js.Object {
 
 object SchemaTargetChange {
   @scala.inline
-  def apply(
-    cause: SchemaStatus = null,
-    readTime: String = null,
-    resumeToken: String = null,
-    targetChangeType: String = null,
-    targetIds: js.Array[Double] = null
-  ): SchemaTargetChange = {
+  def apply(): SchemaTargetChange = {
     val __obj = js.Dynamic.literal()
-    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
-    if (targetChangeType != null) __obj.updateDynamic("targetChangeType")(targetChangeType.asInstanceOf[js.Any])
-    if (targetIds != null) __obj.updateDynamic("targetIds")(targetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTargetChange]
   }
+  @scala.inline
+  implicit class SchemaTargetChangeOps[Self <: SchemaTargetChange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCause(value: SchemaStatus): Self = this.set("cause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCause: Self = this.set("cause", js.undefined)
+    @scala.inline
+    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadTime: Self = this.set("readTime", js.undefined)
+    @scala.inline
+    def setResumeToken(value: String): Self = this.set("resumeToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResumeToken: Self = this.set("resumeToken", js.undefined)
+    @scala.inline
+    def setTargetChangeType(value: String): Self = this.set("targetChangeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetChangeType: Self = this.set("targetChangeType", js.undefined)
+    @scala.inline
+    def setTargetIdsVarargs(value: Double*): Self = this.set("targetIds", js.Array(value :_*))
+    @scala.inline
+    def setTargetIds(value: js.Array[Double]): Self = this.set("targetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetIds: Self = this.set("targetIds", js.undefined)
+  }
+  
 }
 

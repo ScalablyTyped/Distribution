@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ASPxClientCrosshairPosition")
 @js.native
 class ASPxClientCrosshairPosition ()
-  extends typings.devexpressWeb.ASPxClientCrosshairPosition {
-  /**
-    * Gets the horizontal offset of a crosshair cursor.
-    */
-  /* CompleteClass */
-  override var offsetX: Double = js.native
-  /**
-    * Gets the vertical offset of a crosshair cursor.
-    */
-  /* CompleteClass */
-  override var offsetY: Double = js.native
-}
+  extends typings.devexpressWeb.ASPxClientCrosshairPosition
 

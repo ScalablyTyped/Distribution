@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object parser extends js.Object {
   def apply(): SAXParser = js.native
+  def apply(strict: js.UndefOr[scala.Nothing], opt: SAXOptions): SAXParser = js.native
   def apply(strict: Boolean): SAXParser = js.native
   def apply(strict: Boolean, opt: SAXOptions): SAXParser = js.native
 }

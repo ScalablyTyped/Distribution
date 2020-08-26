@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Content extends js.Object {
   /** If the attachment is an article, this property contains a snippet of text from the article. It can also include descriptions for other types. */
-  var content: js.UndefOr[String] = js.undefined
+  var content: js.UndefOr[String] = js.native
   /** The title of the attachment, such as a photo caption or an article title. */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String] = js.native
   /** If the attachment is a video, the embeddable link. */
-  var embed: js.UndefOr[Type] = js.undefined
+  var embed: js.UndefOr[Type] = js.native
   /** The full image URL for photo attachments. */
-  var fullImage: js.UndefOr[Height] = js.undefined
+  var fullImage: js.UndefOr[Height] = js.native
   /** The ID of the attachment. */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** The preview image for photos or videos. */
-  var image: js.UndefOr[Height] = js.undefined
+  var image: js.UndefOr[Height] = js.native
   /**
     * The type of media object. Possible values include, but are not limited to, the following values:
     * - "photo" - A photo.
@@ -24,44 +25,80 @@ trait Content extends js.Object {
     * - "video" - A video.
     * - "article" - An article, specified by a link.
     */
-  var objectType: js.UndefOr[String] = js.undefined
+  var objectType: js.UndefOr[String] = js.native
   /**
     * When previewing, these are the optional thumbnails for the post. When posting an article, choose one by setting the attachment.image.url property. If
     * you don't choose one, one will be chosen for you.
     */
-  var previewThumbnails: js.UndefOr[js.Array[Url]] = js.undefined
+  var previewThumbnails: js.UndefOr[js.Array[Url]] = js.native
   /** If the attachment is an album, this property is a list of potential additional thumbnails from the album. */
-  var thumbnails: js.UndefOr[js.Array[Description]] = js.undefined
+  var thumbnails: js.UndefOr[js.Array[Description]] = js.native
   /** The link to the attachment, which should be of type text/html. */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String] = js.native
 }
 
 object Content {
   @scala.inline
-  def apply(
-    content: String = null,
-    displayName: String = null,
-    embed: Type = null,
-    fullImage: Height = null,
-    id: String = null,
-    image: Height = null,
-    objectType: String = null,
-    previewThumbnails: js.Array[Url] = null,
-    thumbnails: js.Array[Description] = null,
-    url: String = null
-  ): Content = {
+  def apply(): Content = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (embed != null) __obj.updateDynamic("embed")(embed.asInstanceOf[js.Any])
-    if (fullImage != null) __obj.updateDynamic("fullImage")(fullImage.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
-    if (previewThumbnails != null) __obj.updateDynamic("previewThumbnails")(previewThumbnails.asInstanceOf[js.Any])
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
+  @scala.inline
+  implicit class ContentOps[Self <: Content] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEmbed(value: Type): Self = this.set("embed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbed: Self = this.set("embed", js.undefined)
+    @scala.inline
+    def setFullImage(value: Height): Self = this.set("fullImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullImage: Self = this.set("fullImage", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImage(value: Height): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectType: Self = this.set("objectType", js.undefined)
+    @scala.inline
+    def setPreviewThumbnailsVarargs(value: Url*): Self = this.set("previewThumbnails", js.Array(value :_*))
+    @scala.inline
+    def setPreviewThumbnails(value: js.Array[Url]): Self = this.set("previewThumbnails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewThumbnails: Self = this.set("previewThumbnails", js.undefined)
+    @scala.inline
+    def setThumbnailsVarargs(value: Description*): Self = this.set("thumbnails", js.Array(value :_*))
+    @scala.inline
+    def setThumbnails(value: js.Array[Description]): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

@@ -19,7 +19,7 @@ trait VpnConnectionArgs extends js.Object {
   /**
     * Tags to apply to the connection.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The ID of the EC2 Transit Gateway.
     */
@@ -52,29 +52,59 @@ trait VpnConnectionArgs extends js.Object {
 
 object VpnConnectionArgs {
   @scala.inline
-  def apply(
-    customerGatewayId: Input[String],
-    `type`: Input[String],
-    staticRoutesOnly: Input[Boolean] = null,
-    tags: Input[StringDictionary[_]] = null,
-    transitGatewayId: Input[String] = null,
-    tunnel1InsideCidr: Input[String] = null,
-    tunnel1PresharedKey: Input[String] = null,
-    tunnel2InsideCidr: Input[String] = null,
-    tunnel2PresharedKey: Input[String] = null,
-    vpnGatewayId: Input[String] = null
-  ): VpnConnectionArgs = {
+  def apply(customerGatewayId: Input[String], `type`: Input[String]): VpnConnectionArgs = {
     val __obj = js.Dynamic.literal(customerGatewayId = customerGatewayId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (staticRoutesOnly != null) __obj.updateDynamic("staticRoutesOnly")(staticRoutesOnly.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (transitGatewayId != null) __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
-    if (tunnel1InsideCidr != null) __obj.updateDynamic("tunnel1InsideCidr")(tunnel1InsideCidr.asInstanceOf[js.Any])
-    if (tunnel1PresharedKey != null) __obj.updateDynamic("tunnel1PresharedKey")(tunnel1PresharedKey.asInstanceOf[js.Any])
-    if (tunnel2InsideCidr != null) __obj.updateDynamic("tunnel2InsideCidr")(tunnel2InsideCidr.asInstanceOf[js.Any])
-    if (tunnel2PresharedKey != null) __obj.updateDynamic("tunnel2PresharedKey")(tunnel2PresharedKey.asInstanceOf[js.Any])
-    if (vpnGatewayId != null) __obj.updateDynamic("vpnGatewayId")(vpnGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpnConnectionArgs]
   }
+  @scala.inline
+  implicit class VpnConnectionArgsOps[Self <: VpnConnectionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomerGatewayId(value: Input[String]): Self = this.set("customerGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStaticRoutesOnly(value: Input[Boolean]): Self = this.set("staticRoutesOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticRoutesOnly: Self = this.set("staticRoutesOnly", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTransitGatewayId(value: Input[String]): Self = this.set("transitGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayId: Self = this.set("transitGatewayId", js.undefined)
+    @scala.inline
+    def setTunnel1InsideCidr(value: Input[String]): Self = this.set("tunnel1InsideCidr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTunnel1InsideCidr: Self = this.set("tunnel1InsideCidr", js.undefined)
+    @scala.inline
+    def setTunnel1PresharedKey(value: Input[String]): Self = this.set("tunnel1PresharedKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTunnel1PresharedKey: Self = this.set("tunnel1PresharedKey", js.undefined)
+    @scala.inline
+    def setTunnel2InsideCidr(value: Input[String]): Self = this.set("tunnel2InsideCidr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTunnel2InsideCidr: Self = this.set("tunnel2InsideCidr", js.undefined)
+    @scala.inline
+    def setTunnel2PresharedKey(value: Input[String]): Self = this.set("tunnel2PresharedKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTunnel2PresharedKey: Self = this.set("tunnel2PresharedKey", js.undefined)
+    @scala.inline
+    def setVpnGatewayId(value: Input[String]): Self = this.set("vpnGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnGatewayId: Self = this.set("vpnGatewayId", js.undefined)
+  }
+  
 }
 

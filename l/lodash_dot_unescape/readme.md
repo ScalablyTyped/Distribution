@@ -11,14 +11,13 @@ The lodash method `_.unescape` exported as a module.
 | Full name          | lodash.unescape |
 | Keywords           | lodash-modularized, unescape |
 | # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 69542533 |
+| # dependents       | 52 |
+| # downloads        | 76143407 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
-- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.unescape)
     
 

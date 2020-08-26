@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 /**
   * Lolex clock for a browser environment.
   */
-/* Inlined lolex.lolex.LolexClock<number> & {  performance  :{now (): number}} */
+/* Inlined lolex.lolex.LolexClock<number> & {  performance :{now (): number}} */
 @js.native
 trait BrowserClock extends Clock {
   /**

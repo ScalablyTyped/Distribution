@@ -28,6 +28,7 @@ class ResourceOperatingsystemversions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaOperatingSystemVersion] = js.native
   def get(callback: BodyResponseCallback[SchemaOperatingSystemVersion]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperatingSystemVersion] = js.native
   def get(params: ParamsResourceOperatingsystemversionsGet): GaxiosPromise[SchemaOperatingSystemVersion] = js.native
   def get(
     params: ParamsResourceOperatingsystemversionsGet,
@@ -58,6 +59,7 @@ class ResourceOperatingsystemversions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaOperatingSystemVersionsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaOperatingSystemVersionsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperatingSystemVersionsListResponse] = js.native
   def list(params: ParamsResourceOperatingsystemversionsList): GaxiosPromise[SchemaOperatingSystemVersionsListResponse] = js.native
   def list(
     params: ParamsResourceOperatingsystemversionsList,

@@ -7,69 +7,118 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OutputOptions extends js.Object {
-  var ascii_only: js.UndefOr[Boolean] = js.undefined
-  var beautify: js.UndefOr[Boolean] = js.undefined
-  var braces: js.UndefOr[Boolean] = js.undefined
-  var comments: js.UndefOr[Boolean | all | some | RegExp] = js.undefined
-  var indent_level: js.UndefOr[Double] = js.undefined
-  var indent_start: js.UndefOr[Boolean] = js.undefined
-  var inline_script: js.UndefOr[Boolean] = js.undefined
-  var keep_quoted_props: js.UndefOr[Boolean] = js.undefined
-  var max_line_len: js.UndefOr[Boolean | Double] = js.undefined
-  var preamble: js.UndefOr[String] = js.undefined
-  var preserve_line: js.UndefOr[Boolean] = js.undefined
-  var quote_keys: js.UndefOr[Boolean] = js.undefined
-  var quote_style: js.UndefOr[OutputQuoteStyle] = js.undefined
-  var semicolons: js.UndefOr[Boolean] = js.undefined
-  var shebang: js.UndefOr[Boolean] = js.undefined
-  var webkit: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var wrap_iife: js.UndefOr[Boolean] = js.undefined
+  var ascii_only: js.UndefOr[Boolean] = js.native
+  var beautify: js.UndefOr[Boolean] = js.native
+  var braces: js.UndefOr[Boolean] = js.native
+  var comments: js.UndefOr[Boolean | all | some | RegExp] = js.native
+  var indent_level: js.UndefOr[Double] = js.native
+  var indent_start: js.UndefOr[Boolean] = js.native
+  var inline_script: js.UndefOr[Boolean] = js.native
+  var keep_quoted_props: js.UndefOr[Boolean] = js.native
+  var max_line_len: js.UndefOr[Boolean | Double] = js.native
+  var preamble: js.UndefOr[String] = js.native
+  var preserve_line: js.UndefOr[Boolean] = js.native
+  var quote_keys: js.UndefOr[Boolean] = js.native
+  var quote_style: js.UndefOr[OutputQuoteStyle] = js.native
+  var semicolons: js.UndefOr[Boolean] = js.native
+  var shebang: js.UndefOr[Boolean] = js.native
+  var webkit: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var wrap_iife: js.UndefOr[Boolean] = js.native
 }
 
 object OutputOptions {
   @scala.inline
-  def apply(
-    ascii_only: js.UndefOr[Boolean] = js.undefined,
-    beautify: js.UndefOr[Boolean] = js.undefined,
-    braces: js.UndefOr[Boolean] = js.undefined,
-    comments: Boolean | all | some | RegExp = null,
-    indent_level: js.UndefOr[Double] = js.undefined,
-    indent_start: js.UndefOr[Boolean] = js.undefined,
-    inline_script: js.UndefOr[Boolean] = js.undefined,
-    keep_quoted_props: js.UndefOr[Boolean] = js.undefined,
-    max_line_len: Boolean | Double = null,
-    preamble: String = null,
-    preserve_line: js.UndefOr[Boolean] = js.undefined,
-    quote_keys: js.UndefOr[Boolean] = js.undefined,
-    quote_style: OutputQuoteStyle = null,
-    semicolons: js.UndefOr[Boolean] = js.undefined,
-    shebang: js.UndefOr[Boolean] = js.undefined,
-    webkit: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    wrap_iife: js.UndefOr[Boolean] = js.undefined
-  ): OutputOptions = {
+  def apply(): OutputOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascii_only)) __obj.updateDynamic("ascii_only")(ascii_only.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(beautify)) __obj.updateDynamic("beautify")(beautify.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(braces)) __obj.updateDynamic("braces")(braces.get.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent_level)) __obj.updateDynamic("indent_level")(indent_level.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent_start)) __obj.updateDynamic("indent_start")(indent_start.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inline_script)) __obj.updateDynamic("inline_script")(inline_script.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep_quoted_props)) __obj.updateDynamic("keep_quoted_props")(keep_quoted_props.get.asInstanceOf[js.Any])
-    if (max_line_len != null) __obj.updateDynamic("max_line_len")(max_line_len.asInstanceOf[js.Any])
-    if (preamble != null) __obj.updateDynamic("preamble")(preamble.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserve_line)) __obj.updateDynamic("preserve_line")(preserve_line.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quote_keys)) __obj.updateDynamic("quote_keys")(quote_keys.get.asInstanceOf[js.Any])
-    if (quote_style != null) __obj.updateDynamic("quote_style")(quote_style.asInstanceOf[js.Any])
-    if (!js.isUndefined(semicolons)) __obj.updateDynamic("semicolons")(semicolons.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shebang)) __obj.updateDynamic("shebang")(shebang.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(webkit)) __obj.updateDynamic("webkit")(webkit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap_iife)) __obj.updateDynamic("wrap_iife")(wrap_iife.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputOptions]
   }
+  @scala.inline
+  implicit class OutputOptionsOps[Self <: OutputOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAscii_only(value: Boolean): Self = this.set("ascii_only", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAscii_only: Self = this.set("ascii_only", js.undefined)
+    @scala.inline
+    def setBeautify(value: Boolean): Self = this.set("beautify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeautify: Self = this.set("beautify", js.undefined)
+    @scala.inline
+    def setBraces(value: Boolean): Self = this.set("braces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBraces: Self = this.set("braces", js.undefined)
+    @scala.inline
+    def setComments(value: Boolean | all | some | RegExp): Self = this.set("comments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComments: Self = this.set("comments", js.undefined)
+    @scala.inline
+    def setIndent_level(value: Double): Self = this.set("indent_level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndent_level: Self = this.set("indent_level", js.undefined)
+    @scala.inline
+    def setIndent_start(value: Boolean): Self = this.set("indent_start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndent_start: Self = this.set("indent_start", js.undefined)
+    @scala.inline
+    def setInline_script(value: Boolean): Self = this.set("inline_script", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline_script: Self = this.set("inline_script", js.undefined)
+    @scala.inline
+    def setKeep_quoted_props(value: Boolean): Self = this.set("keep_quoted_props", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeep_quoted_props: Self = this.set("keep_quoted_props", js.undefined)
+    @scala.inline
+    def setMax_line_len(value: Boolean | Double): Self = this.set("max_line_len", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax_line_len: Self = this.set("max_line_len", js.undefined)
+    @scala.inline
+    def setPreamble(value: String): Self = this.set("preamble", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreamble: Self = this.set("preamble", js.undefined)
+    @scala.inline
+    def setPreserve_line(value: Boolean): Self = this.set("preserve_line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserve_line: Self = this.set("preserve_line", js.undefined)
+    @scala.inline
+    def setQuote_keys(value: Boolean): Self = this.set("quote_keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuote_keys: Self = this.set("quote_keys", js.undefined)
+    @scala.inline
+    def setQuote_style(value: OutputQuoteStyle): Self = this.set("quote_style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuote_style: Self = this.set("quote_style", js.undefined)
+    @scala.inline
+    def setSemicolons(value: Boolean): Self = this.set("semicolons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSemicolons: Self = this.set("semicolons", js.undefined)
+    @scala.inline
+    def setShebang(value: Boolean): Self = this.set("shebang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShebang: Self = this.set("shebang", js.undefined)
+    @scala.inline
+    def setWebkit(value: Boolean): Self = this.set("webkit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebkit: Self = this.set("webkit", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWrap_iife(value: Boolean): Self = this.set("wrap_iife", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap_iife: Self = this.set("wrap_iife", js.undefined)
+  }
+  
 }
 

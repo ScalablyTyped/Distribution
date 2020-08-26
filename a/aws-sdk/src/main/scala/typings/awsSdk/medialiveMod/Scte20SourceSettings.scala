@@ -18,14 +18,30 @@ trait Scte20SourceSettings extends js.Object {
 
 object Scte20SourceSettings {
   @scala.inline
-  def apply(
-    Convert608To708: Scte20Convert608To708 = null,
-    Source608ChannelNumber: js.UndefOr[integerMin1Max4] = js.undefined
-  ): Scte20SourceSettings = {
+  def apply(): Scte20SourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (Convert608To708 != null) __obj.updateDynamic("Convert608To708")(Convert608To708.asInstanceOf[js.Any])
-    if (!js.isUndefined(Source608ChannelNumber)) __obj.updateDynamic("Source608ChannelNumber")(Source608ChannelNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte20SourceSettings]
   }
+  @scala.inline
+  implicit class Scte20SourceSettingsOps[Self <: Scte20SourceSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConvert608To708(value: Scte20Convert608To708): Self = this.set("Convert608To708", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvert608To708: Self = this.set("Convert608To708", js.undefined)
+    @scala.inline
+    def setSource608ChannelNumber(value: integerMin1Max4): Self = this.set("Source608ChannelNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource608ChannelNumber: Self = this.set("Source608ChannelNumber", js.undefined)
+  }
+  
 }
 

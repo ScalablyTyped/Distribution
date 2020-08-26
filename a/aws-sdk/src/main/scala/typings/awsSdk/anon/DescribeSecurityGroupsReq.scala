@@ -2,16 +2,18 @@ package typings.awsSdk.anon
 
 import typings.awsSdk.ec2Mod.Boolean
 import typings.awsSdk.ec2Mod.DescribeSecurityGroupsMaxResults
+import typings.awsSdk.ec2Mod.Filter
 import typings.awsSdk.ec2Mod.FilterList
 import typings.awsSdk.ec2Mod.GroupIdStringList
 import typings.awsSdk.ec2Mod.GroupNameStringList
+import typings.awsSdk.ec2Mod.SecurityGroupName
 import typings.awsSdk.ec2Mod.String
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined aws-sdk.aws-sdk/clients/ec2.DescribeSecurityGroupsRequest & {  $waiter ? :aws-sdk.aws-sdk/lib/service.WaiterConfiguration} */
+/* Inlined aws-sdk.aws-sdk/clients/ec2.DescribeSecurityGroupsRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
 trait DescribeSecurityGroupsReq extends js.Object {
   @JSName("$waiter")
@@ -44,24 +46,56 @@ trait DescribeSecurityGroupsReq extends js.Object {
 
 object DescribeSecurityGroupsReq {
   @scala.inline
-  def apply(
-    $waiter: WaiterConfiguration = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    GroupIds: GroupIdStringList = null,
-    GroupNames: GroupNameStringList = null,
-    MaxResults: js.UndefOr[DescribeSecurityGroupsMaxResults] = js.undefined,
-    NextToken: String = null
-  ): DescribeSecurityGroupsReq = {
+  def apply(): DescribeSecurityGroupsReq = {
     val __obj = js.Dynamic.literal()
-    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (GroupIds != null) __obj.updateDynamic("GroupIds")(GroupIds.asInstanceOf[js.Any])
-    if (GroupNames != null) __obj.updateDynamic("GroupNames")(GroupNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSecurityGroupsReq]
   }
+  @scala.inline
+  implicit class DescribeSecurityGroupsReqOps[Self <: DescribeSecurityGroupsReq] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setGroupIdsVarargs(value: String*): Self = this.set("GroupIds", js.Array(value :_*))
+    @scala.inline
+    def setGroupIds(value: GroupIdStringList): Self = this.set("GroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupIds: Self = this.set("GroupIds", js.undefined)
+    @scala.inline
+    def setGroupNamesVarargs(value: SecurityGroupName*): Self = this.set("GroupNames", js.Array(value :_*))
+    @scala.inline
+    def setGroupNames(value: GroupNameStringList): Self = this.set("GroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupNames: Self = this.set("GroupNames", js.undefined)
+    @scala.inline
+    def setMaxResults(value: DescribeSecurityGroupsMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

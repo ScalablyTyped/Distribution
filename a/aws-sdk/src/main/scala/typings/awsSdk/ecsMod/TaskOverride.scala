@@ -34,22 +34,50 @@ trait TaskOverride extends js.Object {
 
 object TaskOverride {
   @scala.inline
-  def apply(
-    containerOverrides: ContainerOverrides = null,
-    cpu: String = null,
-    executionRoleArn: String = null,
-    inferenceAcceleratorOverrides: InferenceAcceleratorOverrides = null,
-    memory: String = null,
-    taskRoleArn: String = null
-  ): TaskOverride = {
+  def apply(): TaskOverride = {
     val __obj = js.Dynamic.literal()
-    if (containerOverrides != null) __obj.updateDynamic("containerOverrides")(containerOverrides.asInstanceOf[js.Any])
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
-    if (executionRoleArn != null) __obj.updateDynamic("executionRoleArn")(executionRoleArn.asInstanceOf[js.Any])
-    if (inferenceAcceleratorOverrides != null) __obj.updateDynamic("inferenceAcceleratorOverrides")(inferenceAcceleratorOverrides.asInstanceOf[js.Any])
-    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
-    if (taskRoleArn != null) __obj.updateDynamic("taskRoleArn")(taskRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOverride]
   }
+  @scala.inline
+  implicit class TaskOverrideOps[Self <: TaskOverride] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerOverridesVarargs(value: ContainerOverride*): Self = this.set("containerOverrides", js.Array(value :_*))
+    @scala.inline
+    def setContainerOverrides(value: ContainerOverrides): Self = this.set("containerOverrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerOverrides: Self = this.set("containerOverrides", js.undefined)
+    @scala.inline
+    def setCpu(value: String): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpu: Self = this.set("cpu", js.undefined)
+    @scala.inline
+    def setExecutionRoleArn(value: String): Self = this.set("executionRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionRoleArn: Self = this.set("executionRoleArn", js.undefined)
+    @scala.inline
+    def setInferenceAcceleratorOverridesVarargs(value: InferenceAcceleratorOverride*): Self = this.set("inferenceAcceleratorOverrides", js.Array(value :_*))
+    @scala.inline
+    def setInferenceAcceleratorOverrides(value: InferenceAcceleratorOverrides): Self = this.set("inferenceAcceleratorOverrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInferenceAcceleratorOverrides: Self = this.set("inferenceAcceleratorOverrides", js.undefined)
+    @scala.inline
+    def setMemory(value: String): Self = this.set("memory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemory: Self = this.set("memory", js.undefined)
+    @scala.inline
+    def setTaskRoleArn(value: String): Self = this.set("taskRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskRoleArn: Self = this.set("taskRoleArn", js.undefined)
+  }
+  
 }
 

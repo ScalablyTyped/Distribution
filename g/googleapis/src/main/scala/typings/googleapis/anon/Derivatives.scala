@@ -14,18 +14,44 @@ trait Derivatives extends js.Object {
 
 object Derivatives {
   @scala.inline
-  def apply(
-    derivatives: js.Array[Source] = null,
-    examples: js.Array[Source] = null,
-    senses: js.Array[Conjugations] = null,
-    source: Attribution = null
-  ): Derivatives = {
+  def apply(): Derivatives = {
     val __obj = js.Dynamic.literal()
-    if (derivatives != null) __obj.updateDynamic("derivatives")(derivatives.asInstanceOf[js.Any])
-    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
-    if (senses != null) __obj.updateDynamic("senses")(senses.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Derivatives]
   }
+  @scala.inline
+  implicit class DerivativesOps[Self <: Derivatives] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDerivativesVarargs(value: Source*): Self = this.set("derivatives", js.Array(value :_*))
+    @scala.inline
+    def setDerivatives(value: js.Array[Source]): Self = this.set("derivatives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDerivatives: Self = this.set("derivatives", js.undefined)
+    @scala.inline
+    def setExamplesVarargs(value: Source*): Self = this.set("examples", js.Array(value :_*))
+    @scala.inline
+    def setExamples(value: js.Array[Source]): Self = this.set("examples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExamples: Self = this.set("examples", js.undefined)
+    @scala.inline
+    def setSensesVarargs(value: Conjugations*): Self = this.set("senses", js.Array(value :_*))
+    @scala.inline
+    def setSenses(value: js.Array[Conjugations]): Self = this.set("senses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSenses: Self = this.set("senses", js.undefined)
+    @scala.inline
+    def setSource(value: Attribution): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+  }
+  
 }
 

@@ -13,6 +13,7 @@ trait Animation extends js.Object {
   var end_Original: EndEventCallback = js.native
   var rule: String | AnimationRule = js.native
   def animate(): js.Any = js.native
+  def animate(draw: js.UndefOr[scala.Nothing], end: EndEventCallback): js.Any = js.native
   def animate(draw: DrawEventCallback): js.Any = js.native
   def animate(draw: DrawEventCallback, end: EndEventCallback): js.Any = js.native
   def destroy(): js.Any = js.native

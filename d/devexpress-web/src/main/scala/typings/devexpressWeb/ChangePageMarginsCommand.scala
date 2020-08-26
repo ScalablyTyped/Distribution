@@ -17,12 +17,32 @@ trait ChangePageMarginsCommand extends CommandBase {
     * @param bottom The bottom margin in twips.
     */
   def execute(): Boolean = js.native
+  def execute(
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Boolean = js.native
+  def execute(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double): Boolean = js.native
+  def execute(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Boolean = js.native
+  def execute(left: js.UndefOr[scala.Nothing], top: Double): Boolean = js.native
+  def execute(left: js.UndefOr[scala.Nothing], top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Boolean = js.native
+  def execute(left: js.UndefOr[scala.Nothing], top: Double, right: Double): Boolean = js.native
+  def execute(left: js.UndefOr[scala.Nothing], top: Double, right: Double, bottom: Double): Boolean = js.native
   def execute(left: Double): Boolean = js.native
+  def execute(left: Double, top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double): Boolean = js.native
+  def execute(left: Double, top: js.UndefOr[scala.Nothing], right: Double): Boolean = js.native
+  def execute(left: Double, top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Boolean = js.native
   def execute(left: Double, top: Double): Boolean = js.native
+  def execute(left: Double, top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Boolean = js.native
   def execute(left: Double, top: Double, right: Double): Boolean = js.native
   def execute(left: Double, top: Double, right: Double, bottom: Double): Boolean = js.native
   def execute(left: Margins): Boolean = js.native
+  def execute(left: Margins, top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double): Boolean = js.native
+  def execute(left: Margins, top: js.UndefOr[scala.Nothing], right: Double): Boolean = js.native
+  def execute(left: Margins, top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Boolean = js.native
   def execute(left: Margins, top: Double): Boolean = js.native
+  def execute(left: Margins, top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Boolean = js.native
   def execute(left: Margins, top: Double, right: Double): Boolean = js.native
   def execute(left: Margins, top: Double, right: Double, bottom: Double): Boolean = js.native
   /**

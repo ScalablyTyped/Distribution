@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TimePicker ()
   extends Component[ITimePickerProps, ITimePickerState, js.Any] {
   def this(props: ITimePickerProps) = this()
+  def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
   def this(props: ITimePickerProps, context: js.Any) = this()
   var decrementTime: js.Any = js.native
   /**

@@ -22,8 +22,9 @@ class Registerer protected ()
 @JSImport("sip.js/lib/api", "Registerer")
 @js.native
 object Registerer extends js.Object {
+  val defaultExpires: js.Any = js.native
   /** Default registerer options. */
-  val defaultOptions: js.Any = js.native
+  var defaultOptions: js.Any = js.native
   var newUUID: js.Any = js.native
   /**
     * Strip properties with undefined values from options.

@@ -13,7 +13,7 @@ package object queriesMod {
   ]
   type AllByRole = js.Function3[
     /* container */ typings.std.HTMLElement, 
-    /* role */ typings.testingLibraryDom.matchesMod.Matcher, 
+    /* role */ typings.testingLibraryDom.matchesMod.ByRoleMatcher, 
     /* options */ js.UndefOr[typings.testingLibraryDom.queriesMod.ByRoleOptions], 
     js.Array[typings.std.HTMLElement]
   ]
@@ -32,7 +32,7 @@ package object queriesMod {
   ]
   type FindAllByRole_ = js.Function4[
     /* container */ typings.std.HTMLElement, 
-    /* role */ typings.testingLibraryDom.matchesMod.Matcher, 
+    /* role */ typings.testingLibraryDom.matchesMod.ByRoleMatcher, 
     /* options */ js.UndefOr[typings.testingLibraryDom.queriesMod.ByRoleOptions], 
     /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForMod.waitForOptions], 
     js.Promise[js.Array[typings.std.HTMLElement]]
@@ -53,7 +53,7 @@ package object queriesMod {
   ]
   type FindByRole_ = js.Function4[
     /* container */ typings.std.HTMLElement, 
-    /* role */ typings.testingLibraryDom.matchesMod.Matcher, 
+    /* role */ typings.testingLibraryDom.matchesMod.ByRoleMatcher, 
     /* options */ js.UndefOr[typings.testingLibraryDom.queriesMod.ByRoleOptions], 
     /* waitForElementOptions */ js.UndefOr[typings.testingLibraryDom.waitForMod.waitForOptions], 
     js.Promise[typings.std.HTMLElement]
@@ -73,7 +73,7 @@ package object queriesMod {
   ]
   type GetByRole_ = js.Function3[
     /* container */ typings.std.HTMLElement, 
-    /* role */ typings.testingLibraryDom.matchesMod.Matcher, 
+    /* role */ typings.testingLibraryDom.matchesMod.ByRoleMatcher, 
     /* options */ js.UndefOr[typings.testingLibraryDom.queriesMod.ByRoleOptions], 
     typings.std.HTMLElement
   ]
@@ -91,7 +91,7 @@ package object queriesMod {
   ]
   type QueryByRole_ = js.Function3[
     /* container */ typings.std.HTMLElement, 
-    /* role */ typings.testingLibraryDom.matchesMod.Matcher, 
+    /* role */ typings.testingLibraryDom.matchesMod.ByRoleMatcher, 
     /* options */ js.UndefOr[typings.testingLibraryDom.queriesMod.ByRoleOptions], 
     typings.std.HTMLElement | scala.Null
   ]

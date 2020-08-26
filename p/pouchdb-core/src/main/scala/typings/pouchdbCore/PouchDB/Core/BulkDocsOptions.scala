@@ -1,25 +1,36 @@
 package typings.pouchdbCore.PouchDB.Core
 
-import typings.std.Request
-import typings.std.RequestInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BulkDocsOptions extends Options {
-  var new_edits: js.UndefOr[Boolean] = js.undefined
+  var new_edits: js.UndefOr[Boolean] = js.native
 }
 
 object BulkDocsOptions {
   @scala.inline
-  def apply(
-    fetch: (/* url */ String | Request, /* opts */ js.UndefOr[RequestInit]) => js.Promise[typings.std.Response] = null,
-    new_edits: js.UndefOr[Boolean] = js.undefined
-  ): BulkDocsOptions = {
+  def apply(): BulkDocsOptions = {
     val __obj = js.Dynamic.literal()
-    if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (!js.isUndefined(new_edits)) __obj.updateDynamic("new_edits")(new_edits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkDocsOptions]
   }
+  @scala.inline
+  implicit class BulkDocsOptionsOps[Self <: BulkDocsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNew_edits(value: Boolean): Self = this.set("new_edits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNew_edits: Self = this.set("new_edits", js.undefined)
+  }
+  
 }
 

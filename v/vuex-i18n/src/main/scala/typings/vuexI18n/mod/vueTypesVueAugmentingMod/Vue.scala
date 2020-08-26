@@ -14,9 +14,13 @@ trait Vue extends js.Object {
   @JSName("$t")
   def $t(key: String, defaultValue: String): js.UndefOr[String] = js.native
   @JSName("$t")
+  def $t(key: String, defaultValue: String, options: js.UndefOr[scala.Nothing], pluralization: Double): js.UndefOr[String] = js.native
+  @JSName("$t")
   def $t(key: String, defaultValue: String, options: js.Any): js.UndefOr[String] = js.native
   @JSName("$t")
   def $t(key: String, defaultValue: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+  @JSName("$t")
+  def $t(key: String, options: js.UndefOr[scala.Nothing], pluralization: Double): js.UndefOr[String] = js.native
   @JSName("$t")
   def $t(key: String, options: js.Any): js.UndefOr[String] = js.native
   @JSName("$t")

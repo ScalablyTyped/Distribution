@@ -18,6 +18,14 @@ trait BootstrapButton extends Control {
   def getEnabled(): Boolean = js.native
   def getImageUrl(): String = js.native
   def getText(): String = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[ButtonClickEventArgs | EventArgs | ProcessingModeEventArgs], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_checkedChanged(eventName: checkedChanged): this.type = js.native
   @JSName("off")

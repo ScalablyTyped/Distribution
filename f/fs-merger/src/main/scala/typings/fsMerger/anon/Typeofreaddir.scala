@@ -20,9 +20,12 @@ trait Typeofreaddir extends js.Object {
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: js.UndefOr[
-      BaseEncodingOptionswithFi | BufferEncoding | Null | typings.node.anon.WithFileTypes
-    ],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: Null,
     callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
   ): Unit = js.native
   def apply(
@@ -32,13 +35,28 @@ trait Typeofreaddir extends js.Object {
   ): Unit = js.native
   def apply(
     path: PathLike,
+    options: BufferEncoding,
+    callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
     options: BaseEncodingOptionswithFiEncoding,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Dirent], Unit]
   ): Unit = js.native
   def apply(
     path: PathLike,
+    options: BaseEncodingOptionswithFi,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
     options: typings.node.anon.Encoding,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: typings.node.anon.WithFileTypes,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
   ): Unit = js.native
   /**
     * Asynchronous readdir(3) - read a directory.

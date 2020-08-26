@@ -18,11 +18,32 @@ trait DescribeEventsForOrganizationResponse extends js.Object {
 
 object DescribeEventsForOrganizationResponse {
   @scala.inline
-  def apply(events: OrganizationEventList = null, nextToken: nextToken = null): DescribeEventsForOrganizationResponse = {
+  def apply(): DescribeEventsForOrganizationResponse = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEventsForOrganizationResponse]
   }
+  @scala.inline
+  implicit class DescribeEventsForOrganizationResponseOps[Self <: DescribeEventsForOrganizationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventsVarargs(value: OrganizationEvent*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: OrganizationEventList): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setNextToken(value: nextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

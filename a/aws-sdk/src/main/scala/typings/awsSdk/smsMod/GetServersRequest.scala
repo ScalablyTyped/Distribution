@@ -22,16 +22,36 @@ trait GetServersRequest extends js.Object {
 
 object GetServersRequest {
   @scala.inline
-  def apply(
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    vmServerAddressList: VmServerAddressList = null
-  ): GetServersRequest = {
+  def apply(): GetServersRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (vmServerAddressList != null) __obj.updateDynamic("vmServerAddressList")(vmServerAddressList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServersRequest]
   }
+  @scala.inline
+  implicit class GetServersRequestOps[Self <: GetServersRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setVmServerAddressListVarargs(value: VmServerAddress*): Self = this.set("vmServerAddressList", js.Array(value :_*))
+    @scala.inline
+    def setVmServerAddressList(value: VmServerAddressList): Self = this.set("vmServerAddressList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmServerAddressList: Self = this.set("vmServerAddressList", js.undefined)
+  }
+  
 }
 

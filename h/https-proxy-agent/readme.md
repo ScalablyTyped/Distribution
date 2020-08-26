@@ -11,8 +11,8 @@ An HTTP(s) proxy `http.Agent` implementation for HTTPS
 | Full name          | https-proxy-agent |
 | Keywords           | https, proxy, endpoint, agent |
 | # releases         | 9 |
-| # dependents       | 518 |
-| # downloads        | 270995769 |
+| # dependents       | 530 |
+| # downloads        | 284887616 |
 | # stars            | 9 |
 
 ## Links

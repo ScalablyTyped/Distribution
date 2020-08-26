@@ -1,16 +1,13 @@
 package typings.yaml.typesMod.Schema
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.RegExp
 import typings.yaml.typesMod.Node
-import typings.yaml.typesMod.Scalar
-import typings.yaml.typesMod.YAMLMap
-import typings.yaml.typesMod.YAMLSeq
 import typings.yaml.yamlBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultTag
   extends BaseTag
      with Tag {
@@ -19,18 +16,18 @@ trait DefaultTag
     * an explicit tag. For most cases, it's unlikely that you'll actually want to
     * use this, even if you first think you do.
     */
-  var default: `true`
+  var default: `true` = js.native
   /**
     * Together with `default` allows for values to be stringified without an
     * explicit tag and detected using a regular expression. For most cases, it's
     * unlikely that you'll actually want to use these, even if you first think
     * you do.
     */
-  var test: RegExp
+  var test: RegExp = js.native
   /**
     * Alternative form used by default tags; called with `test` match results.
     */
-  def resolve(`match`: String*): Node | js.Any
+  def resolve(`match`: String*): Node | js.Any = js.native
 }
 
 object DefaultTag {
@@ -40,20 +37,29 @@ object DefaultTag {
     identify: js.Any => Boolean,
     resolve: /* repeated */ String => Node | js.Any,
     tag: String,
-    test: RegExp,
-    createNode: (/* schema */ typings.yaml.typesMod.Schema, /* value */ js.Any, /* ctx */ CreateNodeContext) => YAMLMap | YAMLSeq | Scalar = null,
-    format: String = null,
-    nodeClass: Instantiable0[js.Any] = null,
-    options: js.Object = null,
-    stringify: (/* item */ Node, /* ctx */ StringifyContext, /* onComment */ js.UndefOr[js.Function0[Unit]], /* onChompKeep */ js.UndefOr[js.Function0[Unit]]) => String = null
+    test: RegExp
   ): DefaultTag = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], identify = js.Any.fromFunction1(identify), resolve = js.Any.fromFunction1(resolve), tag = tag.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    if (createNode != null) __obj.updateDynamic("createNode")(js.Any.fromFunction3(createNode))
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (nodeClass != null) __obj.updateDynamic("nodeClass")(nodeClass.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (stringify != null) __obj.updateDynamic("stringify")(js.Any.fromFunction4(stringify))
     __obj.asInstanceOf[DefaultTag]
   }
+  @scala.inline
+  implicit class DefaultTagOps[Self <: DefaultTag] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefault(value: `true`): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResolve(value: /* repeated */ String => Node | js.Any): Self = this.set("resolve", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTest(value: RegExp): Self = this.set("test", value.asInstanceOf[js.Any])
+  }
+  
 }
 

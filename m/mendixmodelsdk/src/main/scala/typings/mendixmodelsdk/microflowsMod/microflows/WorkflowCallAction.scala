@@ -29,19 +29,17 @@ class WorkflowCallAction protected () extends MicroflowAction {
   @JSName("model")
   var model_FWorkflowCallAction: IModel = js.native
   def outputVariableName: String = js.native
-  def outputVariableName(newValue: String): js.Any = js.native
+  def outputVariableName_=(newValue: String): Unit = js.native
   def useReturnVariable: Boolean = js.native
-  def useReturnVariable(newValue: Boolean): js.Any = js.native
-  def workflow(): js.Any = js.native
-  def workflow(newValue: IWorkflow): js.Any = js.native
-  def workflowContextVariable: String = js.native
-  def workflowContextVariable(newValue: String): js.Any = js.native
-  def workflowQualifiedName: String | Null = js.native
+  def useReturnVariable_=(newValue: Boolean): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  @JSName("workflow")
-  def workflow_Union: IWorkflow | Null = js.native
+  def workflow: IWorkflow | Null = js.native
+  def workflowContextVariable: String = js.native
+  def workflowContextVariable_=(newValue: String): Unit = js.native
+  def workflowQualifiedName: String | Null = js.native
+  def workflow_=(newValue: IWorkflow | Null): Unit = js.native
 }
 
 /* static members */

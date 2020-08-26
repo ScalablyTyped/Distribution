@@ -38,24 +38,50 @@ trait Alias extends js.Object {
 
 object Alias {
   @scala.inline
-  def apply(
-    AliasArn: AliasArn = null,
-    AliasId: AliasId = null,
-    CreationTime: Timestamp = null,
-    Description: FreeText = null,
-    LastUpdatedTime: Timestamp = null,
-    Name: NonBlankAndLengthConstraintString = null,
-    RoutingStrategy: RoutingStrategy = null
-  ): Alias = {
+  def apply(): Alias = {
     val __obj = js.Dynamic.literal()
-    if (AliasArn != null) __obj.updateDynamic("AliasArn")(AliasArn.asInstanceOf[js.Any])
-    if (AliasId != null) __obj.updateDynamic("AliasId")(AliasId.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RoutingStrategy != null) __obj.updateDynamic("RoutingStrategy")(RoutingStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alias]
   }
+  @scala.inline
+  implicit class AliasOps[Self <: Alias] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasArn(value: AliasArn): Self = this.set("AliasArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasArn: Self = this.set("AliasArn", js.undefined)
+    @scala.inline
+    def setAliasId(value: AliasId): Self = this.set("AliasId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasId: Self = this.set("AliasId", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: FreeText): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: Timestamp): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    @scala.inline
+    def setName(value: NonBlankAndLengthConstraintString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRoutingStrategy(value: RoutingStrategy): Self = this.set("RoutingStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutingStrategy: Self = this.set("RoutingStrategy", js.undefined)
+  }
+  
 }
 

@@ -19,6 +19,7 @@ object PolygonOutlineGeometry extends js.Object {
   def fromPositions(): PolygonOutlineGeometry = js.native
   def fromPositions(options: Positions): PolygonOutlineGeometry = js.native
   def unpack(array: js.Array[Double]): PolygonOutlineGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: PolygonOutlineGeometry): PolygonOutlineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): PolygonOutlineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: PolygonOutlineGeometry): PolygonOutlineGeometry = js.native
 }

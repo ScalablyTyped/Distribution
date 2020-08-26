@@ -18,11 +18,32 @@ trait ListUsageForLicenseConfigurationResponse extends js.Object {
 
 object ListUsageForLicenseConfigurationResponse {
   @scala.inline
-  def apply(LicenseConfigurationUsageList: LicenseConfigurationUsageList = null, NextToken: String = null): ListUsageForLicenseConfigurationResponse = {
+  def apply(): ListUsageForLicenseConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (LicenseConfigurationUsageList != null) __obj.updateDynamic("LicenseConfigurationUsageList")(LicenseConfigurationUsageList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUsageForLicenseConfigurationResponse]
   }
+  @scala.inline
+  implicit class ListUsageForLicenseConfigurationResponseOps[Self <: ListUsageForLicenseConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLicenseConfigurationUsageListVarargs(value: LicenseConfigurationUsage*): Self = this.set("LicenseConfigurationUsageList", js.Array(value :_*))
+    @scala.inline
+    def setLicenseConfigurationUsageList(value: LicenseConfigurationUsageList): Self = this.set("LicenseConfigurationUsageList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseConfigurationUsageList: Self = this.set("LicenseConfigurationUsageList", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

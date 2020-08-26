@@ -16,6 +16,12 @@ trait CustomXMLValidationErrors extends js.Object {
     * @param ClearedOnUpdate [ClearedOnUpdate=true]
     */
   def Add(Node: CustomXMLNode, ErrorName: String): Unit = js.native
+  def Add(
+    Node: CustomXMLNode,
+    ErrorName: String,
+    ErrorText: js.UndefOr[scala.Nothing],
+    ClearedOnUpdate: Boolean
+  ): Unit = js.native
   def Add(Node: CustomXMLNode, ErrorName: String, ErrorText: String): Unit = js.native
   def Add(Node: CustomXMLNode, ErrorName: String, ErrorText: String, ClearedOnUpdate: Boolean): Unit = js.native
   def Item(Index: Double): CustomXMLValidationError = js.native

@@ -26,16 +26,9 @@ object updateApplicationSettingsCommandMod extends js.Object {
           Blob
         ] {
     def this(input: UpdateApplicationSettingsInput) = this()
-    /* CompleteClass */
-    override val input: UpdateApplicationSettingsInput = js.native
     val middlewareStack: MiddlewareStack[UpdateApplicationSettingsInput, UpdateApplicationSettingsOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[UpdateApplicationSettingsInput, UpdateApplicationSettingsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[UpdateApplicationSettingsInput, UpdateApplicationSettingsOutput] = js.native
   }

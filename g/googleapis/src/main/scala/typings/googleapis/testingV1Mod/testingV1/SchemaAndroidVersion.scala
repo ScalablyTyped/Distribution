@@ -45,24 +45,52 @@ trait SchemaAndroidVersion extends js.Object {
 
 object SchemaAndroidVersion {
   @scala.inline
-  def apply(
-    apiLevel: js.UndefOr[Double] = js.undefined,
-    codeName: String = null,
-    distribution: SchemaDistribution = null,
-    id: String = null,
-    releaseDate: SchemaDate = null,
-    tags: js.Array[String] = null,
-    versionString: String = null
-  ): SchemaAndroidVersion = {
+  def apply(): SchemaAndroidVersion = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(apiLevel)) __obj.updateDynamic("apiLevel")(apiLevel.get.asInstanceOf[js.Any])
-    if (codeName != null) __obj.updateDynamic("codeName")(codeName.asInstanceOf[js.Any])
-    if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (versionString != null) __obj.updateDynamic("versionString")(versionString.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAndroidVersion]
   }
+  @scala.inline
+  implicit class SchemaAndroidVersionOps[Self <: SchemaAndroidVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiLevel(value: Double): Self = this.set("apiLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiLevel: Self = this.set("apiLevel", js.undefined)
+    @scala.inline
+    def setCodeName(value: String): Self = this.set("codeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeName: Self = this.set("codeName", js.undefined)
+    @scala.inline
+    def setDistribution(value: SchemaDistribution): Self = this.set("distribution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistribution: Self = this.set("distribution", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setReleaseDate(value: SchemaDate): Self = this.set("releaseDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseDate: Self = this.set("releaseDate", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersionString(value: String): Self = this.set("versionString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionString: Self = this.set("versionString", js.undefined)
+  }
+  
 }
 

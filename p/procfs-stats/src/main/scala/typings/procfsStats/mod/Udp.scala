@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Udp extends js.Object {
-  var drops: String
-  var inode: String
-  var local_address: String
-  var pointer: String
-  var ref: String
-  var rem_address: String
-  var retrnsmt: String
-  var rx_queue: String
-  var sl: String
-  var st: String
-  var timeout: String
+  var drops: String = js.native
+  var inode: String = js.native
+  var local_address: String = js.native
+  var pointer: String = js.native
+  var ref: String = js.native
+  var rem_address: String = js.native
+  var retrnsmt: String = js.native
+  var rx_queue: String = js.native
+  var sl: String = js.native
+  var st: String = js.native
+  var timeout: String = js.native
   @JSName("tm->when")
-  var `tm-Greaterthansignwhen`: String
-  var tr: String
-  var tx_queue: String
-  var uid: String
+  var `tm-Greaterthansignwhen`: String = js.native
+  var tr: String = js.native
+  var tx_queue: String = js.native
+  var uid: String = js.native
 }
 
 object Udp {
@@ -46,5 +47,48 @@ object Udp {
     __obj.updateDynamic("tm->when")(`tm-Greaterthansignwhen`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Udp]
   }
+  @scala.inline
+  implicit class UdpOps[Self <: Udp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDrops(value: String): Self = this.set("drops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInode(value: String): Self = this.set("inode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocal_address(value: String): Self = this.set("local_address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPointer(value: String): Self = this.set("pointer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRem_address(value: String): Self = this.set("rem_address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRetrnsmt(value: String): Self = this.set("retrnsmt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRx_queue(value: String): Self = this.set("rx_queue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSl(value: String): Self = this.set("sl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSt(value: String): Self = this.set("st", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setTm-Greaterthansignwhen`(value: String): Self = this.set("tm->when", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTr(value: String): Self = this.set("tr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTx_queue(value: String): Self = this.set("tx_queue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
+  }
+  
 }
 

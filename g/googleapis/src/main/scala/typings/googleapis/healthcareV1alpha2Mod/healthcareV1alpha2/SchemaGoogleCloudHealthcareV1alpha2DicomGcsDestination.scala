@@ -35,11 +35,30 @@ trait SchemaGoogleCloudHealthcareV1alpha2DicomGcsDestination extends js.Object {
 
 object SchemaGoogleCloudHealthcareV1alpha2DicomGcsDestination {
   @scala.inline
-  def apply(mimeType: String = null, uriPrefix: String = null): SchemaGoogleCloudHealthcareV1alpha2DicomGcsDestination = {
+  def apply(): SchemaGoogleCloudHealthcareV1alpha2DicomGcsDestination = {
     val __obj = js.Dynamic.literal()
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (uriPrefix != null) __obj.updateDynamic("uriPrefix")(uriPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alpha2DicomGcsDestination]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudHealthcareV1alpha2DicomGcsDestinationOps[Self <: SchemaGoogleCloudHealthcareV1alpha2DicomGcsDestination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    @scala.inline
+    def setUriPrefix(value: String): Self = this.set("uriPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUriPrefix: Self = this.set("uriPrefix", js.undefined)
+  }
+  
 }
 

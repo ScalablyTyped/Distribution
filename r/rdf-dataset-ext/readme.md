@@ -12,7 +12,7 @@ Util functions for easier RDF/JS DatasetCore handling
 | Keywords           | dataset, datasetcore, rdf, rdfjs, rdf-ext |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 452 |
+| # downloads        | 787 |
 | # stars            | 0 |
 
 ## Links

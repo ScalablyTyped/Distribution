@@ -18,6 +18,12 @@ object pulumiAwsSnsTopicAugmentingMod extends js.Object {
       * with options to control the behavior of the subscription.
       */
     def onEvent(name: String, handler: TopicEventHandler): typings.pulumiAws.snsMixinsMod.TopicEventSubscription = js.native
+    def onEvent(
+      name: String,
+      handler: TopicEventHandler,
+      args: js.UndefOr[scala.Nothing],
+      opts: ComponentResourceOptions
+    ): typings.pulumiAws.snsMixinsMod.TopicEventSubscription = js.native
     def onEvent(name: String, handler: TopicEventHandler, args: TopicEventSubscriptionArgs): typings.pulumiAws.snsMixinsMod.TopicEventSubscription = js.native
     def onEvent(
       name: String,

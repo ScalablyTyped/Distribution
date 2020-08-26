@@ -112,15 +112,6 @@ class BigNumber_ protected () extends Instance {
   def this(n: Value, base: Double) = this()
   /** Used internally to identify a BigNumber instance. */
   val _isBigNumber: `true` = js.native
-  /** The coefficient of the value of this BigNumber, an array of base 1e14 integer numbers, or null. */
-  /* CompleteClass */
-  override val c: js.Array[Double] | Null = js.native
-  /** The exponent of the value of this BigNumber, an integer number, -1000000000 to 1000000000, or null. */
-  /* CompleteClass */
-  override val e: Double | Null = js.native
-  /** The sign of the value of this BigNumber, -1, 1, or null. */
-  /* CompleteClass */
-  override val s: Double | Null = js.native
   /**
     * Returns a BigNumber whose value is the absolute value, i.e. the magnitude, of the value of this
     * BigNumber.

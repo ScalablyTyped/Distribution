@@ -28,6 +28,7 @@ class ResourceProjectsIndexes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleDatastoreAdminV1Index] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleDatastoreAdminV1Index]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleDatastoreAdminV1Index] = js.native
   def get(params: ParamsResourceProjectsIndexesGet): GaxiosPromise[SchemaGoogleDatastoreAdminV1Index] = js.native
   def get(
     params: ParamsResourceProjectsIndexesGet,
@@ -63,6 +64,7 @@ class ResourceProjectsIndexes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleDatastoreAdminV1ListIndexesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleDatastoreAdminV1ListIndexesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleDatastoreAdminV1ListIndexesResponse] = js.native
   def list(params: ParamsResourceProjectsIndexesList): GaxiosPromise[SchemaGoogleDatastoreAdminV1ListIndexesResponse] = js.native
   def list(
     params: ParamsResourceProjectsIndexesList,

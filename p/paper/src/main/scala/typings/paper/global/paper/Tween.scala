@@ -39,6 +39,14 @@ class Tween protected ()
     from: js.Object,
     to: js.Object,
     duration: Double,
+    easing: js.UndefOr[scala.Nothing],
+    start: Boolean
+  ) = this()
+  def this(
+    `object`: js.Object,
+    from: js.Object,
+    to: js.Object,
+    duration: Double,
     easing: String,
     start: Boolean
   ) = this()
@@ -50,30 +58,5 @@ class Tween protected ()
     easing: js.Function,
     start: Boolean
   ) = this()
-  /** 
-    * The function to be called when the tween is updated. It receives an
-    * object as its sole argument, containing the current progress of the
-    * tweening and the factor calculated by the easing function.
-    */
-  /* CompleteClass */
-  override var onUpdate: js.Function | Null = js.native
-  /** 
-    * Start tweening.
-    */
-  /* CompleteClass */
-  override def start(): typings.paper.paper.Tween = js.native
-  /** 
-    * Stop tweening.
-    */
-  /* CompleteClass */
-  override def stop(): typings.paper.paper.Tween = js.native
-  /** 
-    * Set a function that will be executed when the tween completes.
-    * 
-    * @param function - the function to execute when the tween
-    *     completes
-    */
-  /* CompleteClass */
-  override def `then`(callback: js.Function): typings.paper.paper.Tween = js.native
 }
 

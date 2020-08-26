@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SafariExtensionSettingsChangeEvent extends SafariEvent {
   /**
     * The object that the event is currently being sent to.
     * This attribute varies as the event progresses through the phases, changing as the event moves through the event-dispatch hierarchy.
     */
   @JSName("currentTarget")
-  var currentTarget_SafariExtensionSettingsChangeEvent: SafariExtensionSettings | SafariExtensionSecureSettings
+  var currentTarget_SafariExtensionSettingsChangeEvent: SafariExtensionSettings | SafariExtensionSecureSettings = js.native
   /**
     * The key identifier of the setting that was changed.
     */
-  var key: String
+  var key: String = js.native
   /**
     * The value after the settings change.
     */
-  var newValue: js.Any
+  var newValue: js.Any = js.native
   /**
     * The value before the settings change.
     */
-  var oldValue: js.Any
+  var oldValue: js.Any = js.native
   /**
     * The target of the event.
     * This attribute stays the same as the event moves through the event-dispatch hierarchy. Its value is the same as the object that the event is sent to during the targeting phase.
     */
   @JSName("target")
-  var target_SafariExtensionSettingsChangeEvent: SafariExtensionSettings | SafariExtensionSecureSettings
+  var target_SafariExtensionSettingsChangeEvent: SafariExtensionSettings | SafariExtensionSecureSettings = js.native
 }
 
 object SafariExtensionSettingsChangeEvent {
@@ -52,5 +53,28 @@ object SafariExtensionSettingsChangeEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafariExtensionSettingsChangeEvent]
   }
+  @scala.inline
+  implicit class SafariExtensionSettingsChangeEventOps[Self <: SafariExtensionSettingsChangeEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentTarget(value: SafariExtensionSettings | SafariExtensionSecureSettings): Self = this.set("currentTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewValue(value: js.Any): Self = this.set("newValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOldValue(value: js.Any): Self = this.set("oldValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTarget(value: SafariExtensionSettings | SafariExtensionSecureSettings): Self = this.set("target", value.asInstanceOf[js.Any])
+  }
+  
 }
 

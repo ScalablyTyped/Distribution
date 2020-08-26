@@ -34,22 +34,46 @@ trait ProcessDetails extends js.Object {
 
 object ProcessDetails {
   @scala.inline
-  def apply(
-    LaunchedAt: NonEmptyString = null,
-    Name: NonEmptyString = null,
-    ParentPid: js.UndefOr[Integer] = js.undefined,
-    Path: NonEmptyString = null,
-    Pid: js.UndefOr[Integer] = js.undefined,
-    TerminatedAt: NonEmptyString = null
-  ): ProcessDetails = {
+  def apply(): ProcessDetails = {
     val __obj = js.Dynamic.literal()
-    if (LaunchedAt != null) __obj.updateDynamic("LaunchedAt")(LaunchedAt.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParentPid)) __obj.updateDynamic("ParentPid")(ParentPid.get.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
-    if (!js.isUndefined(Pid)) __obj.updateDynamic("Pid")(Pid.get.asInstanceOf[js.Any])
-    if (TerminatedAt != null) __obj.updateDynamic("TerminatedAt")(TerminatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessDetails]
   }
+  @scala.inline
+  implicit class ProcessDetailsOps[Self <: ProcessDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLaunchedAt(value: NonEmptyString): Self = this.set("LaunchedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchedAt: Self = this.set("LaunchedAt", js.undefined)
+    @scala.inline
+    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setParentPid(value: Integer): Self = this.set("ParentPid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentPid: Self = this.set("ParentPid", js.undefined)
+    @scala.inline
+    def setPath(value: NonEmptyString): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+    @scala.inline
+    def setPid(value: Integer): Self = this.set("Pid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePid: Self = this.set("Pid", js.undefined)
+    @scala.inline
+    def setTerminatedAt(value: NonEmptyString): Self = this.set("TerminatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminatedAt: Self = this.set("TerminatedAt", js.undefined)
+  }
+  
 }
 

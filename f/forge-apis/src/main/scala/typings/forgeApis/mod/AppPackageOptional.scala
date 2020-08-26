@@ -4,39 +4,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AppPackageOptional extends js.Object {
-  var description: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var isObjectEnabler: js.UndefOr[Boolean] = js.undefined
-  var isPublic: js.UndefOr[Boolean] = js.undefined
-  var references: js.UndefOr[js.Array[String]] = js.undefined
-  var requiredEngineVersion: js.UndefOr[String] = js.undefined
-  var resource: js.UndefOr[String] = js.undefined
-  var version: js.UndefOr[Double] = js.undefined
+  var description: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var isObjectEnabler: js.UndefOr[Boolean] = js.native
+  var isPublic: js.UndefOr[Boolean] = js.native
+  var references: js.UndefOr[js.Array[String]] = js.native
+  var requiredEngineVersion: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.native
+  var version: js.UndefOr[Double] = js.native
 }
 
 object AppPackageOptional {
   @scala.inline
-  def apply(
-    description: String = null,
-    id: String = null,
-    isObjectEnabler: js.UndefOr[Boolean] = js.undefined,
-    isPublic: js.UndefOr[Boolean] = js.undefined,
-    references: js.Array[String] = null,
-    requiredEngineVersion: String = null,
-    resource: String = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): AppPackageOptional = {
+  def apply(): AppPackageOptional = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isObjectEnabler)) __obj.updateDynamic("isObjectEnabler")(isObjectEnabler.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic.get.asInstanceOf[js.Any])
-    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
-    if (requiredEngineVersion != null) __obj.updateDynamic("requiredEngineVersion")(requiredEngineVersion.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppPackageOptional]
   }
+  @scala.inline
+  implicit class AppPackageOptionalOps[Self <: AppPackageOptional] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsObjectEnabler(value: Boolean): Self = this.set("isObjectEnabler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsObjectEnabler: Self = this.set("isObjectEnabler", js.undefined)
+    @scala.inline
+    def setIsPublic(value: Boolean): Self = this.set("isPublic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPublic: Self = this.set("isPublic", js.undefined)
+    @scala.inline
+    def setReferencesVarargs(value: String*): Self = this.set("references", js.Array(value :_*))
+    @scala.inline
+    def setReferences(value: js.Array[String]): Self = this.set("references", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferences: Self = this.set("references", js.undefined)
+    @scala.inline
+    def setRequiredEngineVersion(value: String): Self = this.set("requiredEngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiredEngineVersion: Self = this.set("requiredEngineVersion", js.undefined)
+    @scala.inline
+    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

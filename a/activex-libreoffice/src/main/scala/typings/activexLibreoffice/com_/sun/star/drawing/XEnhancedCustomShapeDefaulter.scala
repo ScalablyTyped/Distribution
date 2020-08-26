@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait XEnhancedCustomShapeDefaulter extends XInterface {
   /**
     * This interface allows to create shape properties for the given "ShapeType". The "ShapeType" string can be empty then the current "ShapeType" of the
@@ -423,7 +424,7 @@ trait XEnhancedCustomShapeDefaulter extends XInterface {
     * gallery: split-round-arrow gallery: s-sharped-arrow Gallery: star6 Gallery: star12 Gallery: concave-star6 Gallery: signet Gallery: doorplate gallery:
     * fontwork-arch-left-curve gallery: fontwork-arch-right-curve gallery: fontwork-arch-left-pour gallery: fontwork-arch-right-pour
     */
-  def createCustomShapeDefaults(aShapeType: String): Unit
+  def createCustomShapeDefaults(aShapeType: String): Unit = js.native
 }
 
 object XEnhancedCustomShapeDefaulter {
@@ -437,5 +438,20 @@ object XEnhancedCustomShapeDefaulter {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createCustomShapeDefaults = js.Any.fromFunction1(createCustomShapeDefaults), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XEnhancedCustomShapeDefaulter]
   }
+  @scala.inline
+  implicit class XEnhancedCustomShapeDefaulterOps[Self <: XEnhancedCustomShapeDefaulter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateCustomShapeDefaults(value: String => Unit): Self = this.set("createCustomShapeDefaults", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -3,9 +3,6 @@ package typings.draftJs.mod
 import typings.draftJs.mod.Draft.Model.Decorators.DraftDecoratorType
 import typings.draftJs.mod.Draft.Model.ImmutableData.DraftInlineStyle
 import typings.draftJs.mod.Draft.Model.ImmutableData.EditorChangeType
-import typings.immutable.Immutable.List
-import typings.immutable.Immutable.OrderedMap
-import typings.immutable.Immutable.Stack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,55 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("draft-js", "EditorState")
 @js.native
 class EditorState ()
-  extends typings.draftJs.mod.Draft.Model.ImmutableData.EditorState {
-  /* CompleteClass */
-  override def getAllowUndo(): Boolean = js.native
-  /* CompleteClass */
-  override def getBlockTree(blockKey: String): List[_] = js.native
-  /* CompleteClass */
-  override def getCurrentContent(): typings.draftJs.mod.Draft.Model.ImmutableData.ContentState = js.native
-  /**
-    * Get the appropriate inline style for the editor state. If an
-    * override is in place, use it. Otherwise, the current style is
-    * based on the location of the selection state.
-    */
-  /* CompleteClass */
-  override def getCurrentInlineStyle(): DraftInlineStyle = js.native
-  /* CompleteClass */
-  override def getDecorator(): DraftDecoratorType = js.native
-  /* CompleteClass */
-  override def getDirectionMap(): OrderedMap[_, _] = js.native
-  /**
-    * While editing, the user may apply inline style commands with a collapsed
-    * cursor, intending to type text that adopts the specified style. In this
-    * case, we track the specified style as an "override" that takes precedence
-    * over the inline style of the text adjacent to the cursor.
-    *
-    * If null, there is no override in place.
-    */
-  /* CompleteClass */
-  override def getInlineStyleOverride(): DraftInlineStyle = js.native
-  /* CompleteClass */
-  override def getLastChangeType(): EditorChangeType = js.native
-  /* CompleteClass */
-  override def getNativelyRenderedContent(): typings.draftJs.mod.Draft.Model.ImmutableData.ContentState = js.native
-  /* CompleteClass */
-  override def getRedoStack(): Stack[typings.draftJs.mod.Draft.Model.ImmutableData.ContentState] = js.native
-  /* CompleteClass */
-  override def getSelection(): typings.draftJs.mod.Draft.Model.ImmutableData.SelectionState = js.native
-  /* CompleteClass */
-  override def getUndoStack(): Stack[typings.draftJs.mod.Draft.Model.ImmutableData.ContentState] = js.native
-  /* CompleteClass */
-  override def isInCompositionMode(): Boolean = js.native
-  /* CompleteClass */
-  override def isSelectionAtEndOfContent(): Boolean = js.native
-  /* CompleteClass */
-  override def isSelectionAtStartOfContent(): Boolean = js.native
-  /* CompleteClass */
-  override def mustForceSelection(): Boolean = js.native
-  /* CompleteClass */
-  override def toJS(): js.Object = js.native
-}
+  extends typings.draftJs.mod.Draft.Model.ImmutableData.EditorState
 
 /* static members */
 @JSImport("draft-js", "EditorState")

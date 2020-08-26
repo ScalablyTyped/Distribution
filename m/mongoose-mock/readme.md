@@ -12,7 +12,7 @@ A replacement for mongoose in tests returning models with sinon stubs for method
 | Keywords           | mongoose, test, sinon |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 51938 |
+| # downloads        | 50751 |
 | # stars            | 0 |
 
 ## Links

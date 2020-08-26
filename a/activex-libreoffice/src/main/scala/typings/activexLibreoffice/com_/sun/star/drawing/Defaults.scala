@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
   * This is a set of properties to access the defaults of a drawing document
   * @see DrawingDocumentFactory
   */
+@js.native
 trait Defaults
   extends TextProperties
      with LineProperties

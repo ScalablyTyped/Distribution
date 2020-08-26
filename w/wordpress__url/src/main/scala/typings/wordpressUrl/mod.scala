@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def addQueryArgs(): String = js.native
+  def addQueryArgs(url: js.UndefOr[scala.Nothing], args: js.Object): String = js.native
   def addQueryArgs(url: String): String = js.native
   def addQueryArgs(url: String, args: js.Object): String = js.native
   def cleanForSlug(string: String): String = js.native

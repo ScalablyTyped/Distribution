@@ -18,6 +18,7 @@ trait Oscillator extends js.Object {
     */
   def add(number: Double): Oscillator = js.native
   def amp(vol: js.Object): AudioParam = js.native
+  def amp(vol: js.Object, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): AudioParam = js.native
   def amp(vol: js.Object, rampTime: Double): AudioParam = js.native
   def amp(vol: js.Object, rampTime: Double, timeFromNow: Double): AudioParam = js.native
   /**
@@ -35,6 +36,7 @@ trait Oscillator extends js.Object {
     *   oscillator's gain/amplitude/volume)
     */
   def amp(vol: Double): AudioParam = js.native
+  def amp(vol: Double, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): AudioParam = js.native
   def amp(vol: Double, rampTime: Double): AudioParam = js.native
   def amp(vol: Double, rampTime: Double, timeFromNow: Double): AudioParam = js.native
   /**
@@ -47,6 +49,7 @@ trait Oscillator extends js.Object {
     */
   def disconnect(): Unit = js.native
   def freq(Frequency: js.Object): AudioParam = js.native
+  def freq(Frequency: js.Object, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): AudioParam = js.native
   def freq(Frequency: js.Object, rampTime: Double): AudioParam = js.native
   def freq(Frequency: js.Object, rampTime: Double, timeFromNow: Double): AudioParam = js.native
   /**
@@ -63,6 +66,7 @@ trait Oscillator extends js.Object {
     *   oscillator's frequency
     */
   def freq(Frequency: Double): AudioParam = js.native
+  def freq(Frequency: Double, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): AudioParam = js.native
   def freq(Frequency: Double, rampTime: Double): AudioParam = js.native
   def freq(Frequency: Double, rampTime: Double, timeFromNow: Double): AudioParam = js.native
   /**
@@ -117,6 +121,7 @@ trait Oscillator extends js.Object {
     *   @param [frequency] frequency in Hz.
     */
   def start(): Unit = js.native
+  def start(time: js.UndefOr[scala.Nothing], frequency: Double): Unit = js.native
   def start(time: Double): Unit = js.native
   def start(time: Double, frequency: Double): Unit = js.native
   /**

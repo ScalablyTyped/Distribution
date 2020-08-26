@@ -33,7 +33,6 @@ package object mod {
   type BaseValueType = typings.recharts.mod._BaseValueType | scala.Double
   type ComposedChartProps = typings.recharts.mod.CategoricalChartWrapper[typings.recharts.mod.LayoutType] with typings.recharts.mod.EventAttributes
   type ContentRenderer[P] = js.Function1[/* props */ P, typings.react.mod.ReactNode]
-  type CoordinatesGenerator = js.Function1[/* arg */ typings.recharts.anon.Height, js.Array[scala.Double]]
   type DataKey = java.lang.String | scala.Double | (js.Function1[
     /* dataObject */ js.Any, 
     java.lang.String | scala.Double | (js.Tuple2[scala.Double, scala.Double]) | scala.Null
@@ -43,6 +42,7 @@ package object mod {
     /* dataKey */ typings.recharts.mod.DataKey, 
     typings.recharts.anon.ErrorVal
   ]
+  type HorizontalCoordinatesGenerator = js.Function1[/* arg */ typings.recharts.anon.Height, js.Array[scala.Double]]
   type ItemSorter[T] = js.Function2[/* a */ T, /* b */ T, scala.Double]
   type LabelFormatter = js.Function1[/* label */ java.lang.String | scala.Double, typings.react.mod.ReactNode]
   type LabelListProps = typings.recharts.anon.Angle with (typings.recharts.anon.DataKey | typings.recharts.anon.ValueAccessor)
@@ -91,4 +91,5 @@ package object mod {
     /* index */ scala.Double, 
     typings.react.mod.ReactNode
   ]
+  type VerticalCoordinatesGenerator = js.Function1[/* arg */ typings.recharts.anon.Offset, js.Array[scala.Double]]
 }

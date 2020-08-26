@@ -19,8 +19,39 @@ trait QuickSettings extends js.Object {
     * @returns                 New QuickSettings Panel
     */
   def create[M, S](): QuickSettingsPanel[M, S] = js.native
+  def create[M, S](
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    panelTitle: js.UndefOr[scala.Nothing],
+    parent: HTMLElement
+  ): QuickSettingsPanel[M, S] = js.native
+  def create[M, S](x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], panelTitle: String): QuickSettingsPanel[M, S] = js.native
+  def create[M, S](
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    panelTitle: String,
+    parent: HTMLElement
+  ): QuickSettingsPanel[M, S] = js.native
+  def create[M, S](x: js.UndefOr[scala.Nothing], y: Double): QuickSettingsPanel[M, S] = js.native
+  def create[M, S](
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    panelTitle: js.UndefOr[scala.Nothing],
+    parent: HTMLElement
+  ): QuickSettingsPanel[M, S] = js.native
+  def create[M, S](x: js.UndefOr[scala.Nothing], y: Double, panelTitle: String): QuickSettingsPanel[M, S] = js.native
+  def create[M, S](x: js.UndefOr[scala.Nothing], y: Double, panelTitle: String, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
   def create[M, S](x: Double): QuickSettingsPanel[M, S] = js.native
+  def create[M, S](
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    panelTitle: js.UndefOr[scala.Nothing],
+    parent: HTMLElement
+  ): QuickSettingsPanel[M, S] = js.native
+  def create[M, S](x: Double, y: js.UndefOr[scala.Nothing], panelTitle: String): QuickSettingsPanel[M, S] = js.native
+  def create[M, S](x: Double, y: js.UndefOr[scala.Nothing], panelTitle: String, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
   def create[M, S](x: Double, y: Double): QuickSettingsPanel[M, S] = js.native
+  def create[M, S](x: Double, y: Double, panelTitle: js.UndefOr[scala.Nothing], parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
   def create[M, S](x: Double, y: Double, panelTitle: String): QuickSettingsPanel[M, S] = js.native
   def create[M, S](x: Double, y: Double, panelTitle: String, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
    // tslint:disable-line no-unnecessary-generics

@@ -28,9 +28,11 @@ object global extends js.Object {
     *     event.
     */
   def browserTrigger(element: JQuery): Unit = js.native
+  def browserTrigger(element: JQuery, eventType: js.UndefOr[scala.Nothing], eventData: IBrowserTriggerEventData): Unit = js.native
   def browserTrigger(element: JQuery, eventType: String): Unit = js.native
   def browserTrigger(element: JQuery, eventType: String, eventData: IBrowserTriggerEventData): Unit = js.native
   def browserTrigger(element: Element): Unit = js.native
+  def browserTrigger(element: Element, eventType: js.UndefOr[scala.Nothing], eventData: IBrowserTriggerEventData): Unit = js.native
   def browserTrigger(element: Element, eventType: String): Unit = js.native
   def browserTrigger(element: Element, eventType: String, eventData: IBrowserTriggerEventData): Unit = js.native
 }

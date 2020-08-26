@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "d3-tip"
-version := "v3.5.5-dt-20200515Z-f526f8"
-scalaVersion := "2.13.2"
+version := "v3.5.5-dt-20200515Z-1d2a8d"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "d3-array" % "2.0-dt-20200515Z-eb3698",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "d3-array" % "2.0-dt-20200515Z-570cd7",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

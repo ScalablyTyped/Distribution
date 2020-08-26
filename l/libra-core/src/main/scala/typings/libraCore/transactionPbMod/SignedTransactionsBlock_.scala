@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SignedTransactionsBlock_ () extends Message {
   def addTransactions(): SignedTransaction = js.native
+  def addTransactions(value: js.UndefOr[scala.Nothing], index: Double): SignedTransaction = js.native
   def addTransactions(value: SignedTransaction): SignedTransaction = js.native
   def addTransactions(value: SignedTransaction, index: Double): SignedTransaction = js.native
   def clearTransactionsList(): Unit = js.native

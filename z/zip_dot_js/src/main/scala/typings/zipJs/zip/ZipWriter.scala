@@ -11,6 +11,13 @@ trait ZipWriter extends js.Object {
     name: String,
     reader: Reader,
     onend: js.Function0[Unit],
+    onprogress: js.UndefOr[scala.Nothing],
+    options: WriteOptions
+  ): Unit = js.native
+  def add(
+    name: String,
+    reader: Reader,
+    onend: js.Function0[Unit],
     onprogress: js.Function2[/* progress */ Double, /* total */ Double, Unit]
   ): Unit = js.native
   def add(

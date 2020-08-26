@@ -4,132 +4,225 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpreadsheetOptions extends js.Object {
-  var activeSheet: js.UndefOr[String] = js.undefined
-  var change: js.UndefOr[js.Function1[/* e */ SpreadsheetChangeEvent, Unit]] = js.undefined
-  var changeFormat: js.UndefOr[js.Function1[/* e */ SpreadsheetChangeFormatEvent, Unit]] = js.undefined
-  var changing: js.UndefOr[js.Function1[/* e */ SpreadsheetChangingEvent, Unit]] = js.undefined
-  var columnWidth: js.UndefOr[Double] = js.undefined
-  var columns: js.UndefOr[Double] = js.undefined
-  var copy: js.UndefOr[js.Function1[/* e */ SpreadsheetCopyEvent, Unit]] = js.undefined
-  var cut: js.UndefOr[js.Function1[/* e */ SpreadsheetCutEvent, Unit]] = js.undefined
-  var dataBinding: js.UndefOr[js.Function1[/* e */ SpreadsheetDataBindingEvent, Unit]] = js.undefined
-  var dataBound: js.UndefOr[js.Function1[/* e */ SpreadsheetDataBoundEvent, Unit]] = js.undefined
-  var defaultCellStyle: js.UndefOr[SpreadsheetDefaultCellStyle] = js.undefined
-  var deleteColumn: js.UndefOr[js.Function1[/* e */ SpreadsheetDeleteColumnEvent, Unit]] = js.undefined
-  var deleteRow: js.UndefOr[js.Function1[/* e */ SpreadsheetDeleteRowEvent, Unit]] = js.undefined
-  var excel: js.UndefOr[SpreadsheetExcel] = js.undefined
-  var excelExport: js.UndefOr[js.Function1[/* e */ SpreadsheetExcelExportEvent, Unit]] = js.undefined
-  var excelImport: js.UndefOr[js.Function1[/* e */ SpreadsheetExcelImportEvent, Unit]] = js.undefined
-  var headerHeight: js.UndefOr[Double] = js.undefined
-  var headerWidth: js.UndefOr[Double] = js.undefined
-  var hideColumn: js.UndefOr[js.Function1[/* e */ SpreadsheetHideColumnEvent, Unit]] = js.undefined
-  var hideRow: js.UndefOr[js.Function1[/* e */ SpreadsheetHideRowEvent, Unit]] = js.undefined
-  var insertColumn: js.UndefOr[js.Function1[/* e */ SpreadsheetInsertColumnEvent, Unit]] = js.undefined
-  var insertRow: js.UndefOr[js.Function1[/* e */ SpreadsheetInsertRowEvent, Unit]] = js.undefined
-  var insertSheet: js.UndefOr[js.Function1[/* e */ SpreadsheetInsertSheetEvent, Unit]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var paste: js.UndefOr[js.Function1[/* e */ SpreadsheetPasteEvent, Unit]] = js.undefined
-  var pdf: js.UndefOr[SpreadsheetPdf] = js.undefined
-  var pdfExport: js.UndefOr[js.Function1[/* e */ SpreadsheetPdfExportEvent, Unit]] = js.undefined
-  var removeSheet: js.UndefOr[js.Function1[/* e */ SpreadsheetRemoveSheetEvent, Unit]] = js.undefined
-  var renameSheet: js.UndefOr[js.Function1[/* e */ SpreadsheetRenameSheetEvent, Unit]] = js.undefined
-  var render: js.UndefOr[js.Function1[/* e */ SpreadsheetRenderEvent, Unit]] = js.undefined
-  var rowHeight: js.UndefOr[Double] = js.undefined
-  var rows: js.UndefOr[Double] = js.undefined
-  var select: js.UndefOr[js.Function1[/* e */ SpreadsheetSelectEvent, Unit]] = js.undefined
-  var selectSheet: js.UndefOr[js.Function1[/* e */ SpreadsheetSelectSheetEvent, Unit]] = js.undefined
-  var sheets: js.UndefOr[js.Array[SpreadsheetSheet]] = js.undefined
-  var sheetsbar: js.UndefOr[Boolean] = js.undefined
-  var toolbar: js.UndefOr[Boolean | SpreadsheetToolbar] = js.undefined
-  var unhideColumn: js.UndefOr[js.Function1[/* e */ SpreadsheetUnhideColumnEvent, Unit]] = js.undefined
-  var unhideRow: js.UndefOr[js.Function1[/* e */ SpreadsheetUnhideRowEvent, Unit]] = js.undefined
+  var activeSheet: js.UndefOr[String] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ SpreadsheetChangeEvent, Unit]] = js.native
+  var changeFormat: js.UndefOr[js.Function1[/* e */ SpreadsheetChangeFormatEvent, Unit]] = js.native
+  var changing: js.UndefOr[js.Function1[/* e */ SpreadsheetChangingEvent, Unit]] = js.native
+  var columnWidth: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.native
+  var copy: js.UndefOr[js.Function1[/* e */ SpreadsheetCopyEvent, Unit]] = js.native
+  var cut: js.UndefOr[js.Function1[/* e */ SpreadsheetCutEvent, Unit]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ SpreadsheetDataBindingEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ SpreadsheetDataBoundEvent, Unit]] = js.native
+  var defaultCellStyle: js.UndefOr[SpreadsheetDefaultCellStyle] = js.native
+  var deleteColumn: js.UndefOr[js.Function1[/* e */ SpreadsheetDeleteColumnEvent, Unit]] = js.native
+  var deleteRow: js.UndefOr[js.Function1[/* e */ SpreadsheetDeleteRowEvent, Unit]] = js.native
+  var excel: js.UndefOr[SpreadsheetExcel] = js.native
+  var excelExport: js.UndefOr[js.Function1[/* e */ SpreadsheetExcelExportEvent, Unit]] = js.native
+  var excelImport: js.UndefOr[js.Function1[/* e */ SpreadsheetExcelImportEvent, Unit]] = js.native
+  var headerHeight: js.UndefOr[Double] = js.native
+  var headerWidth: js.UndefOr[Double] = js.native
+  var hideColumn: js.UndefOr[js.Function1[/* e */ SpreadsheetHideColumnEvent, Unit]] = js.native
+  var hideRow: js.UndefOr[js.Function1[/* e */ SpreadsheetHideRowEvent, Unit]] = js.native
+  var insertColumn: js.UndefOr[js.Function1[/* e */ SpreadsheetInsertColumnEvent, Unit]] = js.native
+  var insertRow: js.UndefOr[js.Function1[/* e */ SpreadsheetInsertRowEvent, Unit]] = js.native
+  var insertSheet: js.UndefOr[js.Function1[/* e */ SpreadsheetInsertSheetEvent, Unit]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var paste: js.UndefOr[js.Function1[/* e */ SpreadsheetPasteEvent, Unit]] = js.native
+  var pdf: js.UndefOr[SpreadsheetPdf] = js.native
+  var pdfExport: js.UndefOr[js.Function1[/* e */ SpreadsheetPdfExportEvent, Unit]] = js.native
+  var removeSheet: js.UndefOr[js.Function1[/* e */ SpreadsheetRemoveSheetEvent, Unit]] = js.native
+  var renameSheet: js.UndefOr[js.Function1[/* e */ SpreadsheetRenameSheetEvent, Unit]] = js.native
+  var render: js.UndefOr[js.Function1[/* e */ SpreadsheetRenderEvent, Unit]] = js.native
+  var rowHeight: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ SpreadsheetSelectEvent, Unit]] = js.native
+  var selectSheet: js.UndefOr[js.Function1[/* e */ SpreadsheetSelectSheetEvent, Unit]] = js.native
+  var sheets: js.UndefOr[js.Array[SpreadsheetSheet]] = js.native
+  var sheetsbar: js.UndefOr[Boolean] = js.native
+  var toolbar: js.UndefOr[Boolean | SpreadsheetToolbar] = js.native
+  var unhideColumn: js.UndefOr[js.Function1[/* e */ SpreadsheetUnhideColumnEvent, Unit]] = js.native
+  var unhideRow: js.UndefOr[js.Function1[/* e */ SpreadsheetUnhideRowEvent, Unit]] = js.native
 }
 
 object SpreadsheetOptions {
   @scala.inline
-  def apply(
-    activeSheet: String = null,
-    change: /* e */ SpreadsheetChangeEvent => Unit = null,
-    changeFormat: /* e */ SpreadsheetChangeFormatEvent => Unit = null,
-    changing: /* e */ SpreadsheetChangingEvent => Unit = null,
-    columnWidth: js.UndefOr[Double] = js.undefined,
-    columns: js.UndefOr[Double] = js.undefined,
-    copy: /* e */ SpreadsheetCopyEvent => Unit = null,
-    cut: /* e */ SpreadsheetCutEvent => Unit = null,
-    dataBinding: /* e */ SpreadsheetDataBindingEvent => Unit = null,
-    dataBound: /* e */ SpreadsheetDataBoundEvent => Unit = null,
-    defaultCellStyle: SpreadsheetDefaultCellStyle = null,
-    deleteColumn: /* e */ SpreadsheetDeleteColumnEvent => Unit = null,
-    deleteRow: /* e */ SpreadsheetDeleteRowEvent => Unit = null,
-    excel: SpreadsheetExcel = null,
-    excelExport: /* e */ SpreadsheetExcelExportEvent => Unit = null,
-    excelImport: /* e */ SpreadsheetExcelImportEvent => Unit = null,
-    headerHeight: js.UndefOr[Double] = js.undefined,
-    headerWidth: js.UndefOr[Double] = js.undefined,
-    hideColumn: /* e */ SpreadsheetHideColumnEvent => Unit = null,
-    hideRow: /* e */ SpreadsheetHideRowEvent => Unit = null,
-    insertColumn: /* e */ SpreadsheetInsertColumnEvent => Unit = null,
-    insertRow: /* e */ SpreadsheetInsertRowEvent => Unit = null,
-    insertSheet: /* e */ SpreadsheetInsertSheetEvent => Unit = null,
-    name: String = null,
-    paste: /* e */ SpreadsheetPasteEvent => Unit = null,
-    pdf: SpreadsheetPdf = null,
-    pdfExport: /* e */ SpreadsheetPdfExportEvent => Unit = null,
-    removeSheet: /* e */ SpreadsheetRemoveSheetEvent => Unit = null,
-    renameSheet: /* e */ SpreadsheetRenameSheetEvent => Unit = null,
-    render: /* e */ SpreadsheetRenderEvent => Unit = null,
-    rowHeight: js.UndefOr[Double] = js.undefined,
-    rows: js.UndefOr[Double] = js.undefined,
-    select: /* e */ SpreadsheetSelectEvent => Unit = null,
-    selectSheet: /* e */ SpreadsheetSelectSheetEvent => Unit = null,
-    sheets: js.Array[SpreadsheetSheet] = null,
-    sheetsbar: js.UndefOr[Boolean] = js.undefined,
-    toolbar: Boolean | SpreadsheetToolbar = null,
-    unhideColumn: /* e */ SpreadsheetUnhideColumnEvent => Unit = null,
-    unhideRow: /* e */ SpreadsheetUnhideRowEvent => Unit = null
-  ): SpreadsheetOptions = {
+  def apply(): SpreadsheetOptions = {
     val __obj = js.Dynamic.literal()
-    if (activeSheet != null) __obj.updateDynamic("activeSheet")(activeSheet.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (changeFormat != null) __obj.updateDynamic("changeFormat")(js.Any.fromFunction1(changeFormat))
-    if (changing != null) __obj.updateDynamic("changing")(js.Any.fromFunction1(changing))
-    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
-    if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction1(copy))
-    if (cut != null) __obj.updateDynamic("cut")(js.Any.fromFunction1(cut))
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
-    if (defaultCellStyle != null) __obj.updateDynamic("defaultCellStyle")(defaultCellStyle.asInstanceOf[js.Any])
-    if (deleteColumn != null) __obj.updateDynamic("deleteColumn")(js.Any.fromFunction1(deleteColumn))
-    if (deleteRow != null) __obj.updateDynamic("deleteRow")(js.Any.fromFunction1(deleteRow))
-    if (excel != null) __obj.updateDynamic("excel")(excel.asInstanceOf[js.Any])
-    if (excelExport != null) __obj.updateDynamic("excelExport")(js.Any.fromFunction1(excelExport))
-    if (excelImport != null) __obj.updateDynamic("excelImport")(js.Any.fromFunction1(excelImport))
-    if (!js.isUndefined(headerHeight)) __obj.updateDynamic("headerHeight")(headerHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerWidth)) __obj.updateDynamic("headerWidth")(headerWidth.get.asInstanceOf[js.Any])
-    if (hideColumn != null) __obj.updateDynamic("hideColumn")(js.Any.fromFunction1(hideColumn))
-    if (hideRow != null) __obj.updateDynamic("hideRow")(js.Any.fromFunction1(hideRow))
-    if (insertColumn != null) __obj.updateDynamic("insertColumn")(js.Any.fromFunction1(insertColumn))
-    if (insertRow != null) __obj.updateDynamic("insertRow")(js.Any.fromFunction1(insertRow))
-    if (insertSheet != null) __obj.updateDynamic("insertSheet")(js.Any.fromFunction1(insertSheet))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (paste != null) __obj.updateDynamic("paste")(js.Any.fromFunction1(paste))
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
-    if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
-    if (removeSheet != null) __obj.updateDynamic("removeSheet")(js.Any.fromFunction1(removeSheet))
-    if (renameSheet != null) __obj.updateDynamic("renameSheet")(js.Any.fromFunction1(renameSheet))
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (selectSheet != null) __obj.updateDynamic("selectSheet")(js.Any.fromFunction1(selectSheet))
-    if (sheets != null) __obj.updateDynamic("sheets")(sheets.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetsbar)) __obj.updateDynamic("sheetsbar")(sheetsbar.get.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (unhideColumn != null) __obj.updateDynamic("unhideColumn")(js.Any.fromFunction1(unhideColumn))
-    if (unhideRow != null) __obj.updateDynamic("unhideRow")(js.Any.fromFunction1(unhideRow))
     __obj.asInstanceOf[SpreadsheetOptions]
   }
+  @scala.inline
+  implicit class SpreadsheetOptionsOps[Self <: SpreadsheetOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveSheet(value: String): Self = this.set("activeSheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveSheet: Self = this.set("activeSheet", js.undefined)
+    @scala.inline
+    def setChange(value: /* e */ SpreadsheetChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setChangeFormat(value: /* e */ SpreadsheetChangeFormatEvent => Unit): Self = this.set("changeFormat", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChangeFormat: Self = this.set("changeFormat", js.undefined)
+    @scala.inline
+    def setChanging(value: /* e */ SpreadsheetChangingEvent => Unit): Self = this.set("changing", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChanging: Self = this.set("changing", js.undefined)
+    @scala.inline
+    def setColumnWidth(value: Double): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    @scala.inline
+    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setCopy(value: /* e */ SpreadsheetCopyEvent => Unit): Self = this.set("copy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCopy: Self = this.set("copy", js.undefined)
+    @scala.inline
+    def setCut(value: /* e */ SpreadsheetCutEvent => Unit): Self = this.set("cut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCut: Self = this.set("cut", js.undefined)
+    @scala.inline
+    def setDataBinding(value: /* e */ SpreadsheetDataBindingEvent => Unit): Self = this.set("dataBinding", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    @scala.inline
+    def setDataBound(value: /* e */ SpreadsheetDataBoundEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    @scala.inline
+    def setDefaultCellStyle(value: SpreadsheetDefaultCellStyle): Self = this.set("defaultCellStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCellStyle: Self = this.set("defaultCellStyle", js.undefined)
+    @scala.inline
+    def setDeleteColumn(value: /* e */ SpreadsheetDeleteColumnEvent => Unit): Self = this.set("deleteColumn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDeleteColumn: Self = this.set("deleteColumn", js.undefined)
+    @scala.inline
+    def setDeleteRow(value: /* e */ SpreadsheetDeleteRowEvent => Unit): Self = this.set("deleteRow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDeleteRow: Self = this.set("deleteRow", js.undefined)
+    @scala.inline
+    def setExcel(value: SpreadsheetExcel): Self = this.set("excel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcel: Self = this.set("excel", js.undefined)
+    @scala.inline
+    def setExcelExport(value: /* e */ SpreadsheetExcelExportEvent => Unit): Self = this.set("excelExport", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteExcelExport: Self = this.set("excelExport", js.undefined)
+    @scala.inline
+    def setExcelImport(value: /* e */ SpreadsheetExcelImportEvent => Unit): Self = this.set("excelImport", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteExcelImport: Self = this.set("excelImport", js.undefined)
+    @scala.inline
+    def setHeaderHeight(value: Double): Self = this.set("headerHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderHeight: Self = this.set("headerHeight", js.undefined)
+    @scala.inline
+    def setHeaderWidth(value: Double): Self = this.set("headerWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderWidth: Self = this.set("headerWidth", js.undefined)
+    @scala.inline
+    def setHideColumn(value: /* e */ SpreadsheetHideColumnEvent => Unit): Self = this.set("hideColumn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHideColumn: Self = this.set("hideColumn", js.undefined)
+    @scala.inline
+    def setHideRow(value: /* e */ SpreadsheetHideRowEvent => Unit): Self = this.set("hideRow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHideRow: Self = this.set("hideRow", js.undefined)
+    @scala.inline
+    def setInsertColumn(value: /* e */ SpreadsheetInsertColumnEvent => Unit): Self = this.set("insertColumn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInsertColumn: Self = this.set("insertColumn", js.undefined)
+    @scala.inline
+    def setInsertRow(value: /* e */ SpreadsheetInsertRowEvent => Unit): Self = this.set("insertRow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInsertRow: Self = this.set("insertRow", js.undefined)
+    @scala.inline
+    def setInsertSheet(value: /* e */ SpreadsheetInsertSheetEvent => Unit): Self = this.set("insertSheet", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInsertSheet: Self = this.set("insertSheet", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPaste(value: /* e */ SpreadsheetPasteEvent => Unit): Self = this.set("paste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePaste: Self = this.set("paste", js.undefined)
+    @scala.inline
+    def setPdf(value: SpreadsheetPdf): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePdf: Self = this.set("pdf", js.undefined)
+    @scala.inline
+    def setPdfExport(value: /* e */ SpreadsheetPdfExportEvent => Unit): Self = this.set("pdfExport", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePdfExport: Self = this.set("pdfExport", js.undefined)
+    @scala.inline
+    def setRemoveSheet(value: /* e */ SpreadsheetRemoveSheetEvent => Unit): Self = this.set("removeSheet", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemoveSheet: Self = this.set("removeSheet", js.undefined)
+    @scala.inline
+    def setRenameSheet(value: /* e */ SpreadsheetRenameSheetEvent => Unit): Self = this.set("renameSheet", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenameSheet: Self = this.set("renameSheet", js.undefined)
+    @scala.inline
+    def setRender(value: /* e */ SpreadsheetRenderEvent => Unit): Self = this.set("render", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRender: Self = this.set("render", js.undefined)
+    @scala.inline
+    def setRowHeight(value: Double): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowHeight: Self = this.set("rowHeight", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setSelect(value: /* e */ SpreadsheetSelectEvent => Unit): Self = this.set("select", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setSelectSheet(value: /* e */ SpreadsheetSelectSheetEvent => Unit): Self = this.set("selectSheet", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSelectSheet: Self = this.set("selectSheet", js.undefined)
+    @scala.inline
+    def setSheetsVarargs(value: SpreadsheetSheet*): Self = this.set("sheets", js.Array(value :_*))
+    @scala.inline
+    def setSheets(value: js.Array[SpreadsheetSheet]): Self = this.set("sheets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheets: Self = this.set("sheets", js.undefined)
+    @scala.inline
+    def setSheetsbar(value: Boolean): Self = this.set("sheetsbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetsbar: Self = this.set("sheetsbar", js.undefined)
+    @scala.inline
+    def setToolbar(value: Boolean | SpreadsheetToolbar): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    @scala.inline
+    def setUnhideColumn(value: /* e */ SpreadsheetUnhideColumnEvent => Unit): Self = this.set("unhideColumn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUnhideColumn: Self = this.set("unhideColumn", js.undefined)
+    @scala.inline
+    def setUnhideRow(value: /* e */ SpreadsheetUnhideRowEvent => Unit): Self = this.set("unhideRow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUnhideRow: Self = this.set("unhideRow", js.undefined)
+  }
+  
 }
 

@@ -321,6 +321,11 @@ trait Auth extends js.Object {
     */
   def isSignInWithEmailLink(emailLink: String): Boolean = js.native
   def onAuthStateChanged(nextOrObserver: js.Function1[/* a */ User | Null, _]): Unsubscribe = js.native
+  def onAuthStateChanged(
+    nextOrObserver: js.Function1[/* a */ User | Null, _],
+    error: js.UndefOr[scala.Nothing],
+    completed: Unsubscribe
+  ): Unsubscribe = js.native
   def onAuthStateChanged(nextOrObserver: js.Function1[/* a */ User | Null, _], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
   def onAuthStateChanged(
     nextOrObserver: js.Function1[/* a */ User | Null, _],
@@ -347,6 +352,11 @@ trait Auth extends js.Object {
     * ```
     */
   def onAuthStateChanged(nextOrObserver: Observer[_, typings.std.Error]): Unsubscribe = js.native
+  def onAuthStateChanged(
+    nextOrObserver: Observer[_, typings.std.Error],
+    error: js.UndefOr[scala.Nothing],
+    completed: Unsubscribe
+  ): Unsubscribe = js.native
   def onAuthStateChanged(nextOrObserver: Observer[_, typings.std.Error], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
   def onAuthStateChanged(
     nextOrObserver: Observer[_, typings.std.Error],
@@ -354,6 +364,11 @@ trait Auth extends js.Object {
     completed: Unsubscribe
   ): Unsubscribe = js.native
   def onIdTokenChanged(nextOrObserver: js.Function1[/* a */ User | Null, _]): Unsubscribe = js.native
+  def onIdTokenChanged(
+    nextOrObserver: js.Function1[/* a */ User | Null, _],
+    error: js.UndefOr[scala.Nothing],
+    completed: Unsubscribe
+  ): Unsubscribe = js.native
   def onIdTokenChanged(nextOrObserver: js.Function1[/* a */ User | Null, _], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
   def onIdTokenChanged(
     nextOrObserver: js.Function1[/* a */ User | Null, _],
@@ -381,6 +396,11 @@ trait Auth extends js.Object {
     *     observer is removed.
     */
   def onIdTokenChanged(nextOrObserver: Observer[_, typings.std.Error]): Unsubscribe = js.native
+  def onIdTokenChanged(
+    nextOrObserver: Observer[_, typings.std.Error],
+    error: js.UndefOr[scala.Nothing],
+    completed: Unsubscribe
+  ): Unsubscribe = js.native
   def onIdTokenChanged(nextOrObserver: Observer[_, typings.std.Error], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
   def onIdTokenChanged(
     nextOrObserver: Observer[_, typings.std.Error],
@@ -1003,7 +1023,6 @@ trait Auth extends js.Object {
     * Signs out the current user.
     */
   def signOut(): js.Promise[Unit] = js.native
-  def updateCurrentUser(): js.Promise[Unit] = js.native
   /**
     * Asynchronously sets the provided user as `currentUser` on the current Auth
     * instance. A new instance copy of the user provided will be made and set as
@@ -1030,6 +1049,7 @@ trait Auth extends js.Object {
     *     underlying Auth instance's configured tenant ID</dd>
     * </dl>
     */
+  def updateCurrentUser(): js.Promise[Unit] = js.native
   def updateCurrentUser(user: User): js.Promise[Unit] = js.native
   /**
     * Sets the current language to the default device/browser preference.

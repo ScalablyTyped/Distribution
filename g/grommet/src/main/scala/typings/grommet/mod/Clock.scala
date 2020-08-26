@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Clock")
+@JSImport("grommet/es6", "Clock")
 @js.native
 class Clock protected ()
   extends Component[
@@ -29,7 +29,7 @@ class Clock protected ()
   ) = this()
 }
 
-@JSImport("grommet", "Clock")
+@JSImport("grommet/es6", "Clock")
 @js.native
 object Clock extends TopLevel[
       ComponentClass[

@@ -13,7 +13,5 @@ class ObjectPathProperty protected ()
     parent: typings.sharepoint.SP.ObjectPath,
     propertyName: String
   ) = this()
-  /* CompleteClass */
-  override def setPendingReplace(): Unit = js.native
 }
 

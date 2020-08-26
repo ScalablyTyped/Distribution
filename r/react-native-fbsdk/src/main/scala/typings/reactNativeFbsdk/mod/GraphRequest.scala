@@ -12,6 +12,7 @@ class GraphRequest protected () extends js.Object {
     */
   def this(graphPath: String) = this()
   def this(graphPath: String, config: GraphRequestConfig) = this()
+  def this(graphPath: String, config: js.UndefOr[scala.Nothing], callback: GraphRequestCallback) = this()
   def this(graphPath: String, config: Null, callback: GraphRequestCallback) = this()
   def this(graphPath: String, config: GraphRequestConfig, callback: GraphRequestCallback) = this()
   /**

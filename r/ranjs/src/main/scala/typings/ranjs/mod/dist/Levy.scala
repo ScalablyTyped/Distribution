@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Levy ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Levy] {
   def this(mu: Double) = this()
+  def this(mu: js.UndefOr[scala.Nothing], c: Double) = this()
   def this(mu: Double, c: Double) = this()
 }
 

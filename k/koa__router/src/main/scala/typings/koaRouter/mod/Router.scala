@@ -467,6 +467,7 @@ trait Router[StateT, CustomT] extends js.Object {
     routeHandler: Middleware[StateT with T, CustomT with U]
   ): Router[StateT with T, CustomT with U] = js.native
   def url(name: String): Error = js.native
+  def url(name: String, params: js.UndefOr[scala.Nothing], options: UrlOptionsQuery): Error = js.native
   def url(name: String, params: js.Any): Error = js.native
   def url(name: String, params: js.Any, options: UrlOptionsQuery): Error = js.native
   /**
@@ -490,6 +491,8 @@ trait Router[StateT, CustomT] extends js.Object {
     */
   @JSName("url")
   def url_String(name: String): String = js.native
+  @JSName("url")
+  def url_String(name: String, params: js.UndefOr[scala.Nothing], options: UrlOptionsQuery): String = js.native
   @JSName("url")
   def url_String(name: String, params: js.Any): String = js.native
   @JSName("url")

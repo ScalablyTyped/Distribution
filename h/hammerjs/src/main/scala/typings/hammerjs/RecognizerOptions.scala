@@ -4,47 +4,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RecognizerOptions extends js.Object {
-  var direction: js.UndefOr[Double] = js.undefined
+  var direction: js.UndefOr[Double] = js.native
   var enable: js.UndefOr[
     Boolean | (js.Function2[/* recognizer */ Recognizer, /* inputData */ HammerInput, Boolean])
-  ] = js.undefined
-  var event: js.UndefOr[String] = js.undefined
-  var interval: js.UndefOr[Double] = js.undefined
-  var pointers: js.UndefOr[Double] = js.undefined
-  var posThreshold: js.UndefOr[Double] = js.undefined
-  var taps: js.UndefOr[Double] = js.undefined
-  var threshold: js.UndefOr[Double] = js.undefined
-  var time: js.UndefOr[Double] = js.undefined
-  var velocity: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var event: js.UndefOr[String] = js.native
+  var interval: js.UndefOr[Double] = js.native
+  var pointers: js.UndefOr[Double] = js.native
+  var posThreshold: js.UndefOr[Double] = js.native
+  var taps: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.native
+  var time: js.UndefOr[Double] = js.native
+  var velocity: js.UndefOr[Double] = js.native
 }
 
 object RecognizerOptions {
   @scala.inline
-  def apply(
-    direction: js.UndefOr[Double] = js.undefined,
-    enable: Boolean | (js.Function2[/* recognizer */ Recognizer, /* inputData */ HammerInput, Boolean]) = null,
-    event: String = null,
-    interval: js.UndefOr[Double] = js.undefined,
-    pointers: js.UndefOr[Double] = js.undefined,
-    posThreshold: js.UndefOr[Double] = js.undefined,
-    taps: js.UndefOr[Double] = js.undefined,
-    threshold: js.UndefOr[Double] = js.undefined,
-    time: js.UndefOr[Double] = js.undefined,
-    velocity: js.UndefOr[Double] = js.undefined
-  ): RecognizerOptions = {
+  def apply(): RecognizerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
-    if (enable != null) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointers)) __obj.updateDynamic("pointers")(pointers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(posThreshold)) __obj.updateDynamic("posThreshold")(posThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(taps)) __obj.updateDynamic("taps")(taps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(velocity)) __obj.updateDynamic("velocity")(velocity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecognizerOptions]
   }
+  @scala.inline
+  implicit class RecognizerOptionsOps[Self <: RecognizerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setEnableFunction2(value: (/* recognizer */ Recognizer, /* inputData */ HammerInput) => Boolean): Self = this.set("enable", js.Any.fromFunction2(value))
+    @scala.inline
+    def setEnable(value: Boolean | (js.Function2[/* recognizer */ Recognizer, /* inputData */ HammerInput, Boolean])): Self = this.set("enable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setEvent(value: String): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvent: Self = this.set("event", js.undefined)
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setPointers(value: Double): Self = this.set("pointers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointers: Self = this.set("pointers", js.undefined)
+    @scala.inline
+    def setPosThreshold(value: Double): Self = this.set("posThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosThreshold: Self = this.set("posThreshold", js.undefined)
+    @scala.inline
+    def setTaps(value: Double): Self = this.set("taps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaps: Self = this.set("taps", js.undefined)
+    @scala.inline
+    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    @scala.inline
+    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("time", js.undefined)
+    @scala.inline
+    def setVelocity(value: Double): Self = this.set("velocity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVelocity: Self = this.set("velocity", js.undefined)
+  }
+  
 }
 

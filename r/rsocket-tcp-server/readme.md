@@ -12,7 +12,7 @@ RSocket TCP server
 | Keywords           | - |
 | # releases         | 19 |
 | # dependents       | 4 |
-| # downloads        | 6108 |
+| # downloads        | 6739 |
 | # stars            | 0 |
 
 ## Links

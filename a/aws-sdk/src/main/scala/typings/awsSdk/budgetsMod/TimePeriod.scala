@@ -18,11 +18,30 @@ trait TimePeriod extends js.Object {
 
 object TimePeriod {
   @scala.inline
-  def apply(End: GenericTimestamp = null, Start: GenericTimestamp = null): TimePeriod = {
+  def apply(): TimePeriod = {
     val __obj = js.Dynamic.literal()
-    if (End != null) __obj.updateDynamic("End")(End.asInstanceOf[js.Any])
-    if (Start != null) __obj.updateDynamic("Start")(Start.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePeriod]
   }
+  @scala.inline
+  implicit class TimePeriodOps[Self <: TimePeriod] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnd(value: GenericTimestamp): Self = this.set("End", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("End", js.undefined)
+    @scala.inline
+    def setStart(value: GenericTimestamp): Self = this.set("Start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("Start", js.undefined)
+  }
+  
 }
 

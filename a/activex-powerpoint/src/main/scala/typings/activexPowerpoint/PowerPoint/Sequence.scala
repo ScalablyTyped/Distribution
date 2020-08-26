@@ -19,7 +19,34 @@ trait Sequence extends js.Object {
     * @param number [Index=-1]
     */
   def AddEffect(Shape: Shape, effectId: MsoAnimEffect): Effect = js.native
+  def AddEffect(
+    Shape: Shape,
+    effectId: MsoAnimEffect,
+    Level: js.UndefOr[scala.Nothing],
+    trigger: js.UndefOr[scala.Nothing],
+    Index: Double
+  ): Effect = js.native
+  def AddEffect(
+    Shape: Shape,
+    effectId: MsoAnimEffect,
+    Level: js.UndefOr[scala.Nothing],
+    trigger: MsoAnimTriggerType
+  ): Effect = js.native
+  def AddEffect(
+    Shape: Shape,
+    effectId: MsoAnimEffect,
+    Level: js.UndefOr[scala.Nothing],
+    trigger: MsoAnimTriggerType,
+    Index: Double
+  ): Effect = js.native
   def AddEffect(Shape: Shape, effectId: MsoAnimEffect, Level: MsoAnimateByLevel): Effect = js.native
+  def AddEffect(
+    Shape: Shape,
+    effectId: MsoAnimEffect,
+    Level: MsoAnimateByLevel,
+    trigger: js.UndefOr[scala.Nothing],
+    Index: Double
+  ): Effect = js.native
   def AddEffect(Shape: Shape, effectId: MsoAnimEffect, Level: MsoAnimateByLevel, trigger: MsoAnimTriggerType): Effect = js.native
   def AddEffect(
     Shape: Shape,
@@ -33,6 +60,14 @@ trait Sequence extends js.Object {
     * @param PowerPoint.MsoAnimateByLevel [Level=0]
     */
   def AddTriggerEffect(pShape: Shape, effectId: MsoAnimEffect, trigger: MsoAnimTriggerType, pTriggerShape: Shape): Effect = js.native
+  def AddTriggerEffect(
+    pShape: Shape,
+    effectId: MsoAnimEffect,
+    trigger: MsoAnimTriggerType,
+    pTriggerShape: Shape,
+    bookmark: js.UndefOr[scala.Nothing],
+    Level: MsoAnimateByLevel
+  ): Effect = js.native
   def AddTriggerEffect(
     pShape: Shape,
     effectId: MsoAnimEffect,
@@ -56,6 +91,12 @@ trait Sequence extends js.Object {
     * @param PowerPoint.PpColorSchemeIndex [DimSchemeColor=0]
     */
   def ConvertToAfterEffect(Effect: Effect, After: MsoAnimAfterEffect): Effect = js.native
+  def ConvertToAfterEffect(
+    Effect: Effect,
+    After: MsoAnimAfterEffect,
+    DimColor: js.UndefOr[scala.Nothing],
+    DimSchemeColor: PpColorSchemeIndex
+  ): Effect = js.native
   def ConvertToAfterEffect(Effect: Effect, After: MsoAnimAfterEffect, DimColor: MsoRGBType): Effect = js.native
   def ConvertToAfterEffect(
     Effect: Effect,

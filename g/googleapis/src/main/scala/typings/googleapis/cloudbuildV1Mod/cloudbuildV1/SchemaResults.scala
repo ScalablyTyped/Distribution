@@ -43,22 +43,52 @@ trait SchemaResults extends js.Object {
 
 object SchemaResults {
   @scala.inline
-  def apply(
-    artifactManifest: String = null,
-    artifactTiming: SchemaTimeSpan = null,
-    buildStepImages: js.Array[String] = null,
-    buildStepOutputs: js.Array[String] = null,
-    images: js.Array[SchemaBuiltImage] = null,
-    numArtifacts: String = null
-  ): SchemaResults = {
+  def apply(): SchemaResults = {
     val __obj = js.Dynamic.literal()
-    if (artifactManifest != null) __obj.updateDynamic("artifactManifest")(artifactManifest.asInstanceOf[js.Any])
-    if (artifactTiming != null) __obj.updateDynamic("artifactTiming")(artifactTiming.asInstanceOf[js.Any])
-    if (buildStepImages != null) __obj.updateDynamic("buildStepImages")(buildStepImages.asInstanceOf[js.Any])
-    if (buildStepOutputs != null) __obj.updateDynamic("buildStepOutputs")(buildStepOutputs.asInstanceOf[js.Any])
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (numArtifacts != null) __obj.updateDynamic("numArtifacts")(numArtifacts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResults]
   }
+  @scala.inline
+  implicit class SchemaResultsOps[Self <: SchemaResults] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArtifactManifest(value: String): Self = this.set("artifactManifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactManifest: Self = this.set("artifactManifest", js.undefined)
+    @scala.inline
+    def setArtifactTiming(value: SchemaTimeSpan): Self = this.set("artifactTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactTiming: Self = this.set("artifactTiming", js.undefined)
+    @scala.inline
+    def setBuildStepImagesVarargs(value: String*): Self = this.set("buildStepImages", js.Array(value :_*))
+    @scala.inline
+    def setBuildStepImages(value: js.Array[String]): Self = this.set("buildStepImages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildStepImages: Self = this.set("buildStepImages", js.undefined)
+    @scala.inline
+    def setBuildStepOutputsVarargs(value: String*): Self = this.set("buildStepOutputs", js.Array(value :_*))
+    @scala.inline
+    def setBuildStepOutputs(value: js.Array[String]): Self = this.set("buildStepOutputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildStepOutputs: Self = this.set("buildStepOutputs", js.undefined)
+    @scala.inline
+    def setImagesVarargs(value: SchemaBuiltImage*): Self = this.set("images", js.Array(value :_*))
+    @scala.inline
+    def setImages(value: js.Array[SchemaBuiltImage]): Self = this.set("images", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImages: Self = this.set("images", js.undefined)
+    @scala.inline
+    def setNumArtifacts(value: String): Self = this.set("numArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumArtifacts: Self = this.set("numArtifacts", js.undefined)
+  }
+  
 }
 

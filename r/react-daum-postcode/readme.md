@@ -10,9 +10,9 @@ React daum-postcode component
 | ------------------ | :-------------: |
 | Full name          | react-daum-postcode |
 | Keywords           | react, postcode, zipcode |
-| # releases         | 20 |
+| # releases         | 19 |
 | # dependents       | 0 |
-| # downloads        | 31898 |
+| # downloads        | 33059 |
 | # stars            | 0 |
 
 ## Links

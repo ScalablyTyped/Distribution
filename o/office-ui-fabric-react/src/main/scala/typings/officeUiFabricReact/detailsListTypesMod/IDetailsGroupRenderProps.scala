@@ -1,10 +1,5 @@
 package typings.officeUiFabricReact.detailsListTypesMod
 
-import typings.officeUiFabricReact.groupFooterTypesMod.IGroupFooterProps
-import typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps
-import typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllProps
-import typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility
-import typings.officeUiFabricReact.groupedListTypesMod.IGroup
 import typings.officeUiFabricReact.groupedListTypesMod.IGroupRenderProps
 import typings.react.mod.global.JSX.Element
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
@@ -12,43 +7,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IDetailsGroupRenderProps extends IGroupRenderProps {
   @JSName("onRenderFooter")
-  var onRenderFooter_IDetailsGroupRenderProps: js.UndefOr[IRenderFunction[IDetailsGroupDividerProps]] = js.undefined
+  var onRenderFooter_IDetailsGroupRenderProps: js.UndefOr[IRenderFunction[IDetailsGroupDividerProps]] = js.native
   @JSName("onRenderHeader")
-  var onRenderHeader_IDetailsGroupRenderProps: js.UndefOr[IRenderFunction[IDetailsGroupDividerProps]] = js.undefined
+  var onRenderHeader_IDetailsGroupRenderProps: js.UndefOr[IRenderFunction[IDetailsGroupDividerProps]] = js.native
 }
 
 object IDetailsGroupRenderProps {
   @scala.inline
-  def apply(
-    collapseAllVisibility: CollapseAllVisibility = null,
-    footerProps: IGroupFooterProps = null,
-    getGroupItemLimit: /* group */ IGroup => Double = null,
-    headerProps: IGroupHeaderProps = null,
-    isAllGroupsCollapsed: js.UndefOr[Boolean] = js.undefined,
-    onRenderFooter: (/* props */ js.UndefOr[IDetailsGroupDividerProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsGroupDividerProps], Element | Null]]) => Element | Null = null,
-    onRenderHeader: (/* props */ js.UndefOr[IDetailsGroupDividerProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsGroupDividerProps], Element | Null]]) => Element | Null = null,
-    onRenderShowAll: (/* props */ js.UndefOr[IGroupShowAllProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupShowAllProps], Element | Null]]) => Element | Null = null,
-    onToggleCollapseAll: /* isAllCollapsed */ Boolean => Unit = null,
-    role: String = null,
-    showAllProps: IGroupShowAllProps = null,
-    showEmptyGroups: js.UndefOr[Boolean] = js.undefined
-  ): IDetailsGroupRenderProps = {
+  def apply(): IDetailsGroupRenderProps = {
     val __obj = js.Dynamic.literal()
-    if (collapseAllVisibility != null) __obj.updateDynamic("collapseAllVisibility")(collapseAllVisibility.asInstanceOf[js.Any])
-    if (footerProps != null) __obj.updateDynamic("footerProps")(footerProps.asInstanceOf[js.Any])
-    if (getGroupItemLimit != null) __obj.updateDynamic("getGroupItemLimit")(js.Any.fromFunction1(getGroupItemLimit))
-    if (headerProps != null) __obj.updateDynamic("headerProps")(headerProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAllGroupsCollapsed)) __obj.updateDynamic("isAllGroupsCollapsed")(isAllGroupsCollapsed.get.asInstanceOf[js.Any])
-    if (onRenderFooter != null) __obj.updateDynamic("onRenderFooter")(js.Any.fromFunction2(onRenderFooter))
-    if (onRenderHeader != null) __obj.updateDynamic("onRenderHeader")(js.Any.fromFunction2(onRenderHeader))
-    if (onRenderShowAll != null) __obj.updateDynamic("onRenderShowAll")(js.Any.fromFunction2(onRenderShowAll))
-    if (onToggleCollapseAll != null) __obj.updateDynamic("onToggleCollapseAll")(js.Any.fromFunction1(onToggleCollapseAll))
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (showAllProps != null) __obj.updateDynamic("showAllProps")(showAllProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(showEmptyGroups)) __obj.updateDynamic("showEmptyGroups")(showEmptyGroups.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsGroupRenderProps]
   }
+  @scala.inline
+  implicit class IDetailsGroupRenderPropsOps[Self <: IDetailsGroupRenderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnRenderFooter(
+      value: (/* props */ js.UndefOr[IDetailsGroupDividerProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsGroupDividerProps], Element | Null]]) => Element | Null
+    ): Self = this.set("onRenderFooter", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRenderFooter: Self = this.set("onRenderFooter", js.undefined)
+    @scala.inline
+    def setOnRenderHeader(
+      value: (/* props */ js.UndefOr[IDetailsGroupDividerProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsGroupDividerProps], Element | Null]]) => Element | Null
+    ): Self = this.set("onRenderHeader", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRenderHeader: Self = this.set("onRenderHeader", js.undefined)
+  }
+  
 }
 

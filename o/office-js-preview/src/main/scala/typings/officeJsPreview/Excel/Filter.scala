@@ -106,10 +106,15 @@ trait Filter extends ClientObject {
     * @param oper Optional. The operator that describes how the two criteria are joined.
     */
   def applyCustomFilter(criteria1: String): Unit = js.native
+  def applyCustomFilter(criteria1: String, criteria2: js.UndefOr[scala.Nothing], oper: FilterOperator): Unit = js.native
   def applyCustomFilter(criteria1: String, criteria2: String): Unit = js.native
   def applyCustomFilter(criteria1: String, criteria2: String, oper: FilterOperator): Unit = js.native
   @JSName("applyCustomFilter")
+  def applyCustomFilter_And(criteria1: String, criteria2: js.UndefOr[scala.Nothing], oper: And): Unit = js.native
+  @JSName("applyCustomFilter")
   def applyCustomFilter_And(criteria1: String, criteria2: String, oper: And): Unit = js.native
+  @JSName("applyCustomFilter")
+  def applyCustomFilter_Or(criteria1: String, criteria2: js.UndefOr[scala.Nothing], oper: Or): Unit = js.native
   @JSName("applyCustomFilter")
   def applyCustomFilter_Or(criteria1: String, criteria2: String, oper: Or): Unit = js.native
   /**
@@ -119,9 +124,71 @@ trait Filter extends ClientObject {
     *
     * @param criteria The dynamic criteria to apply.
     */
-  def applyDynamicFilter(
-    criteria: Unknown_ | AboveAverage | AllDatesInPeriodApril | AllDatesInPeriodAugust | AllDatesInPeriodDecember | AllDatesInPeriodFebruray | AllDatesInPeriodJanuary | AllDatesInPeriodJuly | AllDatesInPeriodJune | AllDatesInPeriodMarch | AllDatesInPeriodMay | AllDatesInPeriodNovember | AllDatesInPeriodOctober | AllDatesInPeriodQuarter1 | AllDatesInPeriodQuarter2 | AllDatesInPeriodQuarter3 | AllDatesInPeriodQuarter4 | AllDatesInPeriodSeptember | BelowAverage | LastMonth | LastQuarter | LastWeek | LastYear | NextMonth | NextQuarter | NextWeek | NextYear | ThisMonth | ThisQuarter | ThisWeek | ThisYear | Today | Tomorrow | YearToDate | Yesterday
-  ): Unit = js.native
+  def applyDynamicFilter(criteria: DynamicFilterCriteria): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AboveAverage(criteria: AboveAverage): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodApril(criteria: AllDatesInPeriodApril): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodAugust(criteria: AllDatesInPeriodAugust): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodDecember(criteria: AllDatesInPeriodDecember): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodFebruray(criteria: AllDatesInPeriodFebruray): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodJanuary(criteria: AllDatesInPeriodJanuary): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodJuly(criteria: AllDatesInPeriodJuly): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodJune(criteria: AllDatesInPeriodJune): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodMarch(criteria: AllDatesInPeriodMarch): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodMay(criteria: AllDatesInPeriodMay): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodNovember(criteria: AllDatesInPeriodNovember): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodOctober(criteria: AllDatesInPeriodOctober): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodQuarter1(criteria: AllDatesInPeriodQuarter1): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodQuarter2(criteria: AllDatesInPeriodQuarter2): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodQuarter3(criteria: AllDatesInPeriodQuarter3): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodQuarter4(criteria: AllDatesInPeriodQuarter4): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_AllDatesInPeriodSeptember(criteria: AllDatesInPeriodSeptember): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_BelowAverage(criteria: BelowAverage): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_LastMonth(criteria: LastMonth): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_LastQuarter(criteria: LastQuarter): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_LastWeek(criteria: LastWeek): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_LastYear(criteria: LastYear): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_NextMonth(criteria: NextMonth): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_NextQuarter(criteria: NextQuarter): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_NextWeek(criteria: NextWeek): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_NextYear(criteria: NextYear): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_ThisMonth(criteria: ThisMonth): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_ThisQuarter(criteria: ThisQuarter): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_ThisWeek(criteria: ThisWeek): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_ThisYear(criteria: ThisYear): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_Today(criteria: Today): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_Tomorrow(criteria: Tomorrow): Unit = js.native
   /**
     * Apply a "Dynamic" filter to the column.
     *
@@ -129,7 +196,12 @@ trait Filter extends ClientObject {
     *
     * @param criteria The dynamic criteria to apply.
     */
-  def applyDynamicFilter(criteria: DynamicFilterCriteria): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_Unknown(criteria: Unknown_): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_YearToDate(criteria: YearToDate): Unit = js.native
+  @JSName("applyDynamicFilter")
+  def applyDynamicFilter_Yesterday(criteria: Yesterday): Unit = js.native
   /**
     * Apply a "Font Color" filter to the column for the given color.
     *

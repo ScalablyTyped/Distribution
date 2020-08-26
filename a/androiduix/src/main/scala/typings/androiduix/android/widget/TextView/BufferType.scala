@@ -1,6 +1,5 @@
 package typings.androiduix.android.widget.TextView
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,17 +18,6 @@ object BufferType extends js.Object {
   
   @js.native
   sealed trait SPANNABLE extends BufferType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BufferType with Double] = js.native
-  /* 2 */ @js.native
-  object EDITABLE extends TopLevel[EDITABLE with Double]
-  
-  /* 0 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
-  
-  /* 1 */ @js.native
-  object SPANNABLE extends TopLevel[SPANNABLE with Double]
   
 }
 

@@ -33,6 +33,7 @@ object mod extends js.Object {
     extends typings.apolloServerErrors.mod.ApolloError {
     def this(message: String) = this()
     def this(message: String, code: String) = this()
+    def this(message: String, code: js.UndefOr[scala.Nothing], extensions: Record[String, _]) = this()
     def this(message: String, code: String, extensions: Record[String, _]) = this()
   }
   
@@ -63,6 +64,12 @@ object mod extends js.Object {
     extends typings.apolloServerCore.runHttpQueryMod.HttpQueryError {
     def this(statusCode: Double, message: String) = this()
     def this(statusCode: Double, message: String, isGraphQLError: Boolean) = this()
+    def this(
+      statusCode: Double,
+      message: String,
+      isGraphQLError: js.UndefOr[scala.Nothing],
+      headers: StringDictionary[String]
+    ) = this()
     def this(statusCode: Double, message: String, isGraphQLError: Boolean, headers: StringDictionary[String]) = this()
   }
   

@@ -18,6 +18,7 @@ class Mocap () extends js.Object {
 @js.native
 object Mocap extends js.Object {
   def DEFAULT_SHAPE_FACTORY(): Shape = js.native
+  def DEFAULT_SHAPE_FACTORY(joint: js.UndefOr[scala.Nothing], endpoint: Point): Shape = js.native
   def DEFAULT_SHAPE_FACTORY(joint: js.Any): Shape = js.native
   def DEFAULT_SHAPE_FACTORY(joint: js.Any, endpoint: Point): Shape = js.native
   def parse(source: String): Mocap = js.native

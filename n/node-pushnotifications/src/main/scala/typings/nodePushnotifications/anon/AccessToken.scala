@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccessToken extends js.Object {
-  var accessToken: js.UndefOr[String] = js.undefined
-  var client_id: js.UndefOr[String] = js.undefined
-  var client_secret: js.UndefOr[String] = js.undefined
-  var headers: js.UndefOr[String] = js.undefined
-  var notificationMethod: js.UndefOr[String] = js.undefined
+  var accessToken: js.UndefOr[String] = js.native
+  var client_id: js.UndefOr[String] = js.native
+  var client_secret: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[String] = js.native
+  var notificationMethod: js.UndefOr[String] = js.native
 }
 
 object AccessToken {
   @scala.inline
-  def apply(
-    accessToken: String = null,
-    client_id: String = null,
-    client_secret: String = null,
-    headers: String = null,
-    notificationMethod: String = null
-  ): AccessToken = {
+  def apply(): AccessToken = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
-    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (notificationMethod != null) __obj.updateDynamic("notificationMethod")(notificationMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessToken]
   }
+  @scala.inline
+  implicit class AccessTokenOps[Self <: AccessToken] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    @scala.inline
+    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient_id: Self = this.set("client_id", js.undefined)
+    @scala.inline
+    def setClient_secret(value: String): Self = this.set("client_secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient_secret: Self = this.set("client_secret", js.undefined)
+    @scala.inline
+    def setHeaders(value: String): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setNotificationMethod(value: String): Self = this.set("notificationMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationMethod: Self = this.set("notificationMethod", js.undefined)
+  }
+  
 }
 

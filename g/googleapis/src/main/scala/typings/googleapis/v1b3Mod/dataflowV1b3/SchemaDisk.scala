@@ -39,12 +39,34 @@ trait SchemaDisk extends js.Object {
 
 object SchemaDisk {
   @scala.inline
-  def apply(diskType: String = null, mountPoint: String = null, sizeGb: js.UndefOr[Double] = js.undefined): SchemaDisk = {
+  def apply(): SchemaDisk = {
     val __obj = js.Dynamic.literal()
-    if (diskType != null) __obj.updateDynamic("diskType")(diskType.asInstanceOf[js.Any])
-    if (mountPoint != null) __obj.updateDynamic("mountPoint")(mountPoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeGb)) __obj.updateDynamic("sizeGb")(sizeGb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDisk]
   }
+  @scala.inline
+  implicit class SchemaDiskOps[Self <: SchemaDisk] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskType: Self = this.set("diskType", js.undefined)
+    @scala.inline
+    def setMountPoint(value: String): Self = this.set("mountPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountPoint: Self = this.set("mountPoint", js.undefined)
+    @scala.inline
+    def setSizeGb(value: Double): Self = this.set("sizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeGb: Self = this.set("sizeGb", js.undefined)
+  }
+  
 }
 

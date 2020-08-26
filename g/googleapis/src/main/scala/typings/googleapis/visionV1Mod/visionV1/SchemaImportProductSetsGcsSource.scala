@@ -51,10 +51,26 @@ trait SchemaImportProductSetsGcsSource extends js.Object {
 
 object SchemaImportProductSetsGcsSource {
   @scala.inline
-  def apply(csvFileUri: String = null): SchemaImportProductSetsGcsSource = {
+  def apply(): SchemaImportProductSetsGcsSource = {
     val __obj = js.Dynamic.literal()
-    if (csvFileUri != null) __obj.updateDynamic("csvFileUri")(csvFileUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImportProductSetsGcsSource]
   }
+  @scala.inline
+  implicit class SchemaImportProductSetsGcsSourceOps[Self <: SchemaImportProductSetsGcsSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCsvFileUri(value: String): Self = this.set("csvFileUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvFileUri: Self = this.set("csvFileUri", js.undefined)
+  }
+  
 }
 

@@ -21,6 +21,14 @@ object getClassNames extends js.Object {
     disabled: Boolean,
     isFocused: Boolean,
     keyboardSpinDirection: KeyboardSpinDirection,
+    labelPosition: js.UndefOr[scala.Nothing],
+    className: String
+  ): ISpinButtonClassNames = js.native
+  def apply(
+    styles: ISpinButtonStyles,
+    disabled: Boolean,
+    isFocused: Boolean,
+    keyboardSpinDirection: KeyboardSpinDirection,
     labelPosition: Position
   ): ISpinButtonClassNames = js.native
   def apply(

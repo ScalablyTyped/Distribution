@@ -23,7 +23,7 @@ trait LoadBalancerTlsCertificate extends js.Object {
     */
   var domainValidationRecords: js.UndefOr[LoadBalancerTlsCertificateDomainValidationRecordList] = js.native
   /**
-    * The reason for the SSL/TLS certificate validation failure.
+    * The validation failure reason, if any, of the certificate. The following failure reasons are possible:     NO_AVAILABLE_CONTACTS  - This failure applies to email validation, which is not available for Lightsail certificates.     ADDITIONAL_VERIFICATION_REQUIRED  - Lightsail requires additional information to process this certificate request. This can happen as a fraud-protection measure, such as when the domain ranks within the Alexa top 1000 websites. To provide the required information, use the AWS Support Center to contact AWS Support.  You cannot request a certificate for Amazon-owned domain names such as those ending in amazonaws.com, cloudfront.net, or elasticbeanstalk.com.      DOMAIN_NOT_ALLOWED  - One or more of the domain names in the certificate request was reported as an unsafe domain by VirusTotal. To correct the problem, search for your domain name on the VirusTotal website. If your domain is reported as suspicious, see Google Help for Hacked Websites to learn what you can do. If you believe that the result is a false positive, notify the organization that is reporting the domain. VirusTotal is an aggregate of several antivirus and URL scanners and cannot remove your domain from a block list itself. After you correct the problem and the VirusTotal registry has been updated, request a new certificate. If you see this error and your domain is not included in the VirusTotal list, visit the AWS Support Center and create a case.     INVALID_PUBLIC_DOMAIN  - One or more of the domain names in the certificate request is not valid. Typically, this is because a domain name in the request is not a valid top-level domain. Try to request a certificate again, correcting any spelling errors or typos that were in the failed request, and ensure that all domain names in the request are for valid top-level domains. For example, you cannot request a certificate for example.invalidpublicdomain because invalidpublicdomain is not a valid top-level domain.     OTHER  - Typically, this failure occurs when there is a typographical error in one or more of the domain names in the certificate request. Try to request a certificate again, correcting any spelling errors or typos that were in the failed request.   
     */
   var failureReason: js.UndefOr[LoadBalancerTlsCertificateFailureReason] = js.native
   /**
@@ -39,7 +39,7 @@ trait LoadBalancerTlsCertificate extends js.Object {
     */
   var issuer: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The algorithm that was used to generate the key pair (the public and private key).
+    * The algorithm used to generate the key pair (the public and private key).
     */
   var keyAlgorithm: js.UndefOr[NonEmptyString] = js.native
   /**
@@ -63,7 +63,7 @@ trait LoadBalancerTlsCertificate extends js.Object {
     */
   var notBefore: js.UndefOr[IsoDate] = js.native
   /**
-    * An object containing information about the status of Lightsail's managed renewal for the certificate.
+    * An object that describes the status of the certificate renewal managed by Lightsail.
     */
   var renewalSummary: js.UndefOr[LoadBalancerTlsCertificateRenewalSummary] = js.native
   /**
@@ -71,11 +71,11 @@ trait LoadBalancerTlsCertificate extends js.Object {
     */
   var resourceType: js.UndefOr[ResourceType] = js.native
   /**
-    * The reason the certificate was revoked. Valid values are below.
+    * The reason the certificate was revoked. This value is present only when the certificate status is REVOKED.
     */
   var revocationReason: js.UndefOr[LoadBalancerTlsCertificateRevocationReason] = js.native
   /**
-    * The timestamp when the SSL/TLS certificate was revoked.
+    * The timestamp when the certificate was revoked. This value is present only when the certificate status is REVOKED.
     */
   var revokedAt: js.UndefOr[IsoDate] = js.native
   /**
@@ -95,7 +95,7 @@ trait LoadBalancerTlsCertificate extends js.Object {
     */
   var subject: js.UndefOr[NonEmptyString] = js.native
   /**
-    * One or more domains or subdomains included in the certificate. This list contains the domain names that are bound to the public key that is contained in the certificate. The subject alternative names include the canonical domain name (CNAME) of the certificate and additional domain names that can be used to connect to the website, such as example.com, www.example.com, or m.example.com.
+    * An array of strings that specify the alternate domains (e.g., example2.com) and subdomains (e.g., blog.example.com) for the certificate.
     */
   var subjectAlternativeNames: js.UndefOr[StringList] = js.native
   /**
@@ -110,60 +110,128 @@ trait LoadBalancerTlsCertificate extends js.Object {
 
 object LoadBalancerTlsCertificate {
   @scala.inline
-  def apply(
-    arn: NonEmptyString = null,
-    createdAt: IsoDate = null,
-    domainName: DomainName = null,
-    domainValidationRecords: LoadBalancerTlsCertificateDomainValidationRecordList = null,
-    failureReason: LoadBalancerTlsCertificateFailureReason = null,
-    isAttached: js.UndefOr[Boolean] = js.undefined,
-    issuedAt: IsoDate = null,
-    issuer: NonEmptyString = null,
-    keyAlgorithm: NonEmptyString = null,
-    loadBalancerName: ResourceName = null,
-    location: ResourceLocation = null,
-    name: ResourceName = null,
-    notAfter: IsoDate = null,
-    notBefore: IsoDate = null,
-    renewalSummary: LoadBalancerTlsCertificateRenewalSummary = null,
-    resourceType: ResourceType = null,
-    revocationReason: LoadBalancerTlsCertificateRevocationReason = null,
-    revokedAt: IsoDate = null,
-    serial: NonEmptyString = null,
-    signatureAlgorithm: NonEmptyString = null,
-    status: LoadBalancerTlsCertificateStatus = null,
-    subject: NonEmptyString = null,
-    subjectAlternativeNames: StringList = null,
-    supportCode: String = null,
-    tags: TagList = null
-  ): LoadBalancerTlsCertificate = {
+  def apply(): LoadBalancerTlsCertificate = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (domainValidationRecords != null) __obj.updateDynamic("domainValidationRecords")(domainValidationRecords.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAttached)) __obj.updateDynamic("isAttached")(isAttached.get.asInstanceOf[js.Any])
-    if (issuedAt != null) __obj.updateDynamic("issuedAt")(issuedAt.asInstanceOf[js.Any])
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    if (keyAlgorithm != null) __obj.updateDynamic("keyAlgorithm")(keyAlgorithm.asInstanceOf[js.Any])
-    if (loadBalancerName != null) __obj.updateDynamic("loadBalancerName")(loadBalancerName.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (notAfter != null) __obj.updateDynamic("notAfter")(notAfter.asInstanceOf[js.Any])
-    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
-    if (renewalSummary != null) __obj.updateDynamic("renewalSummary")(renewalSummary.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (revocationReason != null) __obj.updateDynamic("revocationReason")(revocationReason.asInstanceOf[js.Any])
-    if (revokedAt != null) __obj.updateDynamic("revokedAt")(revokedAt.asInstanceOf[js.Any])
-    if (serial != null) __obj.updateDynamic("serial")(serial.asInstanceOf[js.Any])
-    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (subjectAlternativeNames != null) __obj.updateDynamic("subjectAlternativeNames")(subjectAlternativeNames.asInstanceOf[js.Any])
-    if (supportCode != null) __obj.updateDynamic("supportCode")(supportCode.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerTlsCertificate]
   }
+  @scala.inline
+  implicit class LoadBalancerTlsCertificateOps[Self <: LoadBalancerTlsCertificate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setDomainValidationRecordsVarargs(value: LoadBalancerTlsCertificateDomainValidationRecord*): Self = this.set("domainValidationRecords", js.Array(value :_*))
+    @scala.inline
+    def setDomainValidationRecords(value: LoadBalancerTlsCertificateDomainValidationRecordList): Self = this.set("domainValidationRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainValidationRecords: Self = this.set("domainValidationRecords", js.undefined)
+    @scala.inline
+    def setFailureReason(value: LoadBalancerTlsCertificateFailureReason): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setIsAttached(value: Boolean): Self = this.set("isAttached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsAttached: Self = this.set("isAttached", js.undefined)
+    @scala.inline
+    def setIssuedAt(value: IsoDate): Self = this.set("issuedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuedAt: Self = this.set("issuedAt", js.undefined)
+    @scala.inline
+    def setIssuer(value: NonEmptyString): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuer: Self = this.set("issuer", js.undefined)
+    @scala.inline
+    def setKeyAlgorithm(value: NonEmptyString): Self = this.set("keyAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyAlgorithm: Self = this.set("keyAlgorithm", js.undefined)
+    @scala.inline
+    def setLoadBalancerName(value: ResourceName): Self = this.set("loadBalancerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerName: Self = this.set("loadBalancerName", js.undefined)
+    @scala.inline
+    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotAfter(value: IsoDate): Self = this.set("notAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotAfter: Self = this.set("notAfter", js.undefined)
+    @scala.inline
+    def setNotBefore(value: IsoDate): Self = this.set("notBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotBefore: Self = this.set("notBefore", js.undefined)
+    @scala.inline
+    def setRenewalSummary(value: LoadBalancerTlsCertificateRenewalSummary): Self = this.set("renewalSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenewalSummary: Self = this.set("renewalSummary", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setRevocationReason(value: LoadBalancerTlsCertificateRevocationReason): Self = this.set("revocationReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevocationReason: Self = this.set("revocationReason", js.undefined)
+    @scala.inline
+    def setRevokedAt(value: IsoDate): Self = this.set("revokedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevokedAt: Self = this.set("revokedAt", js.undefined)
+    @scala.inline
+    def setSerial(value: NonEmptyString): Self = this.set("serial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerial: Self = this.set("serial", js.undefined)
+    @scala.inline
+    def setSignatureAlgorithm(value: NonEmptyString): Self = this.set("signatureAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignatureAlgorithm: Self = this.set("signatureAlgorithm", js.undefined)
+    @scala.inline
+    def setStatus(value: LoadBalancerTlsCertificateStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubject(value: NonEmptyString): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+    @scala.inline
+    def setSubjectAlternativeNamesVarargs(value: String*): Self = this.set("subjectAlternativeNames", js.Array(value :_*))
+    @scala.inline
+    def setSubjectAlternativeNames(value: StringList): Self = this.set("subjectAlternativeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubjectAlternativeNames: Self = this.set("subjectAlternativeNames", js.undefined)
+    @scala.inline
+    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SwipeableListViewDataSource extends js.Object {
   def cloneWithRowsAndSections(dataBlob: js.Any): SwipeableListViewDataSource = js.native
+  def cloneWithRowsAndSections(
+    dataBlob: js.Any,
+    sectionIdentities: js.UndefOr[scala.Nothing],
+    rowIdentities: js.Array[js.Array[String]]
+  ): SwipeableListViewDataSource = js.native
   def cloneWithRowsAndSections(dataBlob: js.Any, sectionIdentities: js.Array[String]): SwipeableListViewDataSource = js.native
   def cloneWithRowsAndSections(dataBlob: js.Any, sectionIdentities: js.Array[String], rowIdentities: js.Array[js.Array[String]]): SwipeableListViewDataSource = js.native
   def getDataSource(): ListViewDataSource = js.native

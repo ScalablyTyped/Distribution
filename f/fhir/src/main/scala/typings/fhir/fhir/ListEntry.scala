@@ -7,62 +7,74 @@ import scala.scalajs.js.annotation._
 /**
   * Entries in the list
   */
+@js.native
 trait ListEntry extends BackboneElement {
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.undefined
+  var _date: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'deleted'.
     */
-  var _deleted: js.UndefOr[Element] = js.undefined
+  var _deleted: js.UndefOr[Element] = js.native
   /**
     * When item added to list
     */
-  var date: js.UndefOr[dateTime] = js.undefined
+  var date: js.UndefOr[dateTime] = js.native
   /**
     * If this item is actually marked as deleted
     */
-  var deleted: js.UndefOr[Boolean] = js.undefined
+  var deleted: js.UndefOr[Boolean] = js.native
   /**
     * Status/Workflow information about this item
     */
-  var flag: js.UndefOr[CodeableConcept] = js.undefined
+  var flag: js.UndefOr[CodeableConcept] = js.native
   /**
     * Actual entry
     */
-  var item: Reference
+  var item: Reference = js.native
 }
 
 object ListEntry {
   @scala.inline
-  def apply(
-    item: Reference,
-    _date: Element = null,
-    _deleted: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    date: dateTime = null,
-    deleted: js.UndefOr[Boolean] = js.undefined,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    flag: CodeableConcept = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null
-  ): ListEntry = {
+  def apply(item: Reference): ListEntry = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
-    if (_date != null) __obj.updateDynamic("_date")(_date.asInstanceOf[js.Any])
-    if (_deleted != null) __obj.updateDynamic("_deleted")(_deleted.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEntry]
   }
+  @scala.inline
+  implicit class ListEntryOps[Self <: ListEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItem(value: Reference): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_date: Self = this.set("_date", js.undefined)
+    @scala.inline
+    def set_deleted(value: Element): Self = this.set("_deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_deleted: Self = this.set("_deleted", js.undefined)
+    @scala.inline
+    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    @scala.inline
+    def setFlag(value: CodeableConcept): Self = this.set("flag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlag: Self = this.set("flag", js.undefined)
+  }
+  
 }
 

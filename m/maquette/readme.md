@@ -12,7 +12,7 @@ Minimalistic Virtual DOM implementation with support for animated transitions.
 | Keywords           | virtual, dom, animation, transitions |
 | # releases         | 9 |
 | # dependents       | 11 |
-| # downloads        | 46521 |
+| # downloads        | 47233 |
 | # stars            | 0 |
 
 ## Links

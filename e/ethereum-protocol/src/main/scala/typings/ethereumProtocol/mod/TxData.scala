@@ -1,33 +1,34 @@
 package typings.ethereumProtocol.mod
 
-import typings.bignumberJs.mod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TxData extends CallTxDataBase {
-  var from: String
+  var from: String = js.native
 }
 
 object TxData {
   @scala.inline
-  def apply(
-    from: String,
-    data: String = null,
-    gas: Double | String | default = null,
-    gasPrice: Double | String | default = null,
-    nonce: js.UndefOr[Double] = js.undefined,
-    to: String = null,
-    value: Double | String | default = null
-  ): TxData = {
+  def apply(from: String): TxData = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
-    if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonce)) __obj.updateDynamic("nonce")(nonce.get.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TxData]
   }
+  @scala.inline
+  implicit class TxDataOps[Self <: TxData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+  }
+  
 }
 

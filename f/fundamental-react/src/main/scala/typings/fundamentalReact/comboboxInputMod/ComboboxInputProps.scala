@@ -10,53 +10,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ComboboxInputProps
   extends /* x */ StringDictionary[js.Any] {
-  var buttonProps: js.UndefOr[js.Object] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var compact: js.UndefOr[Boolean] = js.undefined
-  var disableStyles: js.UndefOr[Boolean] = js.undefined
-  var inputProps: js.UndefOr[js.Object] = js.undefined
-  var list: ReactNode
+  var buttonProps: js.UndefOr[js.Object] = js.native
+  var className: js.UndefOr[String] = js.native
+  var compact: js.UndefOr[Boolean] = js.native
+  var disableStyles: js.UndefOr[Boolean] = js.native
+  var inputProps: js.UndefOr[js.Object] = js.native
+  var list: ReactNode = js.native
   /* An object containing a `Menu` component. */
-  var menu: ReactElement
+  var menu: ReactElement = js.native
   var onClick: js.UndefOr[
     js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent], Unit]
-  ] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var popoverProps: js.UndefOr[js.Object] = js.undefined
-  var validationState: js.UndefOr[State] = js.undefined
+  ] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var popoverProps: js.UndefOr[js.Object] = js.native
+  var validationState: js.UndefOr[State] = js.native
 }
 
 object ComboboxInputProps {
   @scala.inline
-  def apply(
-    menu: ReactElement,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    buttonProps: js.Object = null,
-    className: String = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    inputProps: js.Object = null,
-    list: ReactNode = null,
-    onClick: /* event */ typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Unit = null,
-    placeholder: String = null,
-    popoverProps: js.Object = null,
-    validationState: State = null
-  ): ComboboxInputProps = {
+  def apply(menu: ReactElement): ComboboxInputProps = {
     val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
-    if (validationState != null) __obj.updateDynamic("validationState")(validationState.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComboboxInputProps]
   }
+  @scala.inline
+  implicit class ComboboxInputPropsOps[Self <: ComboboxInputProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMenu(value: ReactElement): Self = this.set("menu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setButtonProps(value: js.Object): Self = this.set("buttonProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonProps: Self = this.set("buttonProps", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompact: Self = this.set("compact", js.undefined)
+    @scala.inline
+    def setDisableStyles(value: Boolean): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    @scala.inline
+    def setInputProps(value: js.Object): Self = this.set("inputProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputProps: Self = this.set("inputProps", js.undefined)
+    @scala.inline
+    def setList(value: ReactNode): Self = this.set("list", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteList: Self = this.set("list", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* event */ typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPopoverProps(value: js.Object): Self = this.set("popoverProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopoverProps: Self = this.set("popoverProps", js.undefined)
+    @scala.inline
+    def setValidationState(value: State): Self = this.set("validationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationState: Self = this.set("validationState", js.undefined)
+  }
+  
 }
 

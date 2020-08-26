@@ -12,11 +12,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("KiiCloud.KiiAnyAuthenticatedUser")
 @js.native
 class KiiAnyAuthenticatedUser ()
-  extends typings.kiiCloudSdk.KiiCloud.KiiAnyAuthenticatedUser {
-  /**
-    * Returns the ID of AuthenticatedUser user.
-    */
-  /* CompleteClass */
-  override def getID(): String = js.native
-}
+  extends typings.kiiCloudSdk.KiiCloud.KiiAnyAuthenticatedUser
 

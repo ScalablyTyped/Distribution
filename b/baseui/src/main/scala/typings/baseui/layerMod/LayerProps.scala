@@ -6,33 +6,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LayerProps extends js.Object {
-  var children: ReactNode
-  var host: js.UndefOr[HTMLElement] = js.undefined
-  var index: js.UndefOr[Double] = js.undefined
-  var mountNode: js.UndefOr[HTMLElement] = js.undefined
-  var onMount: js.UndefOr[js.Function0[_]] = js.undefined
-  var onUnmount: js.UndefOr[js.Function0[_]] = js.undefined
+  var children: ReactNode = js.native
+  var host: js.UndefOr[HTMLElement] = js.native
+  var index: js.UndefOr[Double] = js.native
+  var mountNode: js.UndefOr[HTMLElement] = js.native
+  var onMount: js.UndefOr[js.Function0[_]] = js.native
+  var onUnmount: js.UndefOr[js.Function0[_]] = js.native
 }
 
 object LayerProps {
   @scala.inline
-  def apply(
-    children: ReactNode = null,
-    host: HTMLElement = null,
-    index: js.UndefOr[Double] = js.undefined,
-    mountNode: HTMLElement = null,
-    onMount: () => _ = null,
-    onUnmount: () => _ = null
-  ): LayerProps = {
+  def apply(): LayerProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
-    if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction0(onMount))
-    if (onUnmount != null) __obj.updateDynamic("onUnmount")(js.Any.fromFunction0(onUnmount))
     __obj.asInstanceOf[LayerProps]
   }
+  @scala.inline
+  implicit class LayerPropsOps[Self <: LayerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setHost(value: HTMLElement): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setMountNode(value: HTMLElement): Self = this.set("mountNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountNode: Self = this.set("mountNode", js.undefined)
+    @scala.inline
+    def setOnMount(value: () => _): Self = this.set("onMount", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnMount: Self = this.set("onMount", js.undefined)
+    @scala.inline
+    def setOnUnmount(value: () => _): Self = this.set("onUnmount", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnUnmount: Self = this.set("onUnmount", js.undefined)
+  }
+  
 }
 

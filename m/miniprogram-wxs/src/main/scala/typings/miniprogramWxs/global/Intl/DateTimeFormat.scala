@@ -18,11 +18,12 @@ object DateTimeFormat
       typings.miniprogramWxs.Intl.DateTimeFormat
     ]
      with Instantiable2[
-      (/* locales */ Array[String]) | (/* locales */ String), 
+      js.UndefOr[(/* locales */ Array[String]) | (/* locales */ String)], 
       /* options */ DateTimeFormatOptions, 
       typings.miniprogramWxs.Intl.DateTimeFormat
     ] {
   def apply(): typings.miniprogramWxs.Intl.DateTimeFormat = js.native
+  def apply(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): typings.miniprogramWxs.Intl.DateTimeFormat = js.native
   def apply(locales: String): typings.miniprogramWxs.Intl.DateTimeFormat = js.native
   def apply(locales: String, options: DateTimeFormatOptions): typings.miniprogramWxs.Intl.DateTimeFormat = js.native
   def apply(locales: Array[String]): typings.miniprogramWxs.Intl.DateTimeFormat = js.native

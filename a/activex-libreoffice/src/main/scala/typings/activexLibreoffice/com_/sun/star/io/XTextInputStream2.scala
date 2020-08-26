@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * Provides a unified interface for the new-style service {@link TextInputStream} .
   * @since LibreOffice 4.1
   */
+@js.native
 trait XTextInputStream2
   extends XTextInputStream
      with XActiveDataSink

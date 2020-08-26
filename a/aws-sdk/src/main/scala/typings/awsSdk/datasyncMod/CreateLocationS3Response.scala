@@ -14,10 +14,26 @@ trait CreateLocationS3Response extends js.Object {
 
 object CreateLocationS3Response {
   @scala.inline
-  def apply(LocationArn: LocationArn = null): CreateLocationS3Response = {
+  def apply(): CreateLocationS3Response = {
     val __obj = js.Dynamic.literal()
-    if (LocationArn != null) __obj.updateDynamic("LocationArn")(LocationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLocationS3Response]
   }
+  @scala.inline
+  implicit class CreateLocationS3ResponseOps[Self <: CreateLocationS3Response] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocationArn(value: LocationArn): Self = this.set("LocationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationArn: Self = this.set("LocationArn", js.undefined)
+  }
+  
 }
 

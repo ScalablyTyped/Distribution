@@ -12,7 +12,7 @@ A simple persistent user settings framework for Electron.
 | Keywords           | electron, app, user, data, settings, config, storage, json, has, get, getAll, set, setAll, delete, deleteAll, watch, file |
 | # releases         | 2 |
 | # dependents       | 40 |
-| # downloads        | 259220 |
+| # downloads        | 256310 |
 | # stars            | 13 |
 
 ## Links

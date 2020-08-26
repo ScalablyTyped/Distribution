@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataSourceSettingsGroupby
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,17 +15,17 @@ trait DataSourceSettingsGroupby
     * Default collapse state
     *
     */
-  var defaultCollapseState: js.UndefOr[Boolean] = js.undefined
+  var defaultCollapseState: js.UndefOr[Boolean] = js.native
   /**
     * The name of the property that determines whether a record from the group data view is a group record.
     *
     */
-  var groupRecordKey: js.UndefOr[String] = js.undefined
+  var groupRecordKey: js.UndefOr[String] = js.native
   /**
     * The name of the property that determines whether a record from the group data view is a summary group record.
     *
     */
-  var groupSummaryRecordKey: js.UndefOr[String] = js.undefined
+  var groupSummaryRecordKey: js.UndefOr[String] = js.native
   /**
     * . Specifies how paging should be applied when there is at least one grouped column
     *
@@ -33,13 +34,13 @@ trait DataSourceSettingsGroupby
     * "allRecords" Paging is applied for all records - data and non-data records(like group-by records)
     * "dataRecordsOnly" Paging is applied ONLY for data records. Non-data records are disregarded in paging calculations.
     */
-  var pagingMode: js.UndefOr[String] = js.undefined
+  var pagingMode: js.UndefOr[String] = js.native
   /**
     * Array of objects containing the summaries for each field.
     * Each summary object has the following format { field:"fieldName", summaryFunctions: [] }, where the summaryFunctions arrays can contain either a summary name (avg, sum, count etc.) or a custom function for caclulating a custom summary.
     *
     */
-  var summaries: js.UndefOr[js.Array[_]] = js.undefined
+  var summaries: js.UndefOr[js.Array[_]] = js.native
   /**
     * Specifies the postion for the summaries for each field inside each group.
     *
@@ -49,29 +50,53 @@ trait DataSourceSettingsGroupby
     * "bottom"  One summary row will be displayed at the bottom for each group
     * "both" Two summary rows will be be display for each group. One on the top and one on the bottom.
     */
-  var summariesPosition: js.UndefOr[String] = js.undefined
+  var summariesPosition: js.UndefOr[String] = js.native
 }
 
 object DataSourceSettingsGroupby {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    defaultCollapseState: js.UndefOr[Boolean] = js.undefined,
-    groupRecordKey: String = null,
-    groupSummaryRecordKey: String = null,
-    pagingMode: String = null,
-    summaries: js.Array[_] = null,
-    summariesPosition: String = null
-  ): DataSourceSettingsGroupby = {
+  def apply(): DataSourceSettingsGroupby = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(defaultCollapseState)) __obj.updateDynamic("defaultCollapseState")(defaultCollapseState.get.asInstanceOf[js.Any])
-    if (groupRecordKey != null) __obj.updateDynamic("groupRecordKey")(groupRecordKey.asInstanceOf[js.Any])
-    if (groupSummaryRecordKey != null) __obj.updateDynamic("groupSummaryRecordKey")(groupSummaryRecordKey.asInstanceOf[js.Any])
-    if (pagingMode != null) __obj.updateDynamic("pagingMode")(pagingMode.asInstanceOf[js.Any])
-    if (summaries != null) __obj.updateDynamic("summaries")(summaries.asInstanceOf[js.Any])
-    if (summariesPosition != null) __obj.updateDynamic("summariesPosition")(summariesPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSettingsGroupby]
   }
+  @scala.inline
+  implicit class DataSourceSettingsGroupbyOps[Self <: DataSourceSettingsGroupby] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultCollapseState(value: Boolean): Self = this.set("defaultCollapseState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCollapseState: Self = this.set("defaultCollapseState", js.undefined)
+    @scala.inline
+    def setGroupRecordKey(value: String): Self = this.set("groupRecordKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupRecordKey: Self = this.set("groupRecordKey", js.undefined)
+    @scala.inline
+    def setGroupSummaryRecordKey(value: String): Self = this.set("groupSummaryRecordKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupSummaryRecordKey: Self = this.set("groupSummaryRecordKey", js.undefined)
+    @scala.inline
+    def setPagingMode(value: String): Self = this.set("pagingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagingMode: Self = this.set("pagingMode", js.undefined)
+    @scala.inline
+    def setSummariesVarargs(value: js.Any*): Self = this.set("summaries", js.Array(value :_*))
+    @scala.inline
+    def setSummaries(value: js.Array[_]): Self = this.set("summaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaries: Self = this.set("summaries", js.undefined)
+    @scala.inline
+    def setSummariesPosition(value: String): Self = this.set("summariesPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummariesPosition: Self = this.set("summariesPosition", js.undefined)
+  }
+  
 }
 

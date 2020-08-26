@@ -10,9 +10,9 @@ React Apollo Hooks.
 | ------------------ | :-------------: |
 | Full name          | @apollo/react-hooks |
 | Keywords           | apollo, graphql, react, hooks |
-| # releases         | 25 |
-| # dependents       | 85 |
-| # downloads        | 6414549 |
+| # releases         | 24 |
+| # dependents       | 91 |
+| # downloads        | 7252498 |
 | # stars            | 0 |
 
 ## Links

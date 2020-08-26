@@ -14,8 +14,6 @@ import typings.fridaGum.ObjC.EnumerateLoadedClassesResult
 import typings.fridaGum.ObjC.InstanceData
 import typings.fridaGum.ObjC.MethodSpec
 import typings.fridaGum.ObjC.ObjectMethod
-import typings.fridaGum.ObjC.ProtocolMethodDescription
-import typings.fridaGum.ObjC.ProtocolPropertyAttributes
 import typings.fridaGum.ObjC.ProtocolSpec
 import typings.fridaGum.ObjC.ProxyConstructor
 import typings.fridaGum.ObjC.ProxyData
@@ -40,8 +38,6 @@ object ObjC extends js.Object {
     def this(target: MethodSpec[BlockImplementation]) = this()
     def this(target: typings.fridaGum.NativePointer, options: NativeFunctionOptions) = this()
     def this(target: MethodSpec[BlockImplementation], options: NativeFunctionOptions) = this()
-    /* CompleteClass */
-    override var handle: typings.fridaGum.NativePointer = js.native
   }
   
   /**
@@ -52,8 +48,6 @@ object ObjC extends js.Object {
     extends typings.fridaGum.ObjC.Object {
     def this(handle: typings.fridaGum.NativePointer) = this()
     def this(handle: typings.fridaGum.NativePointer, protocol: typings.fridaGum.ObjC.Protocol) = this()
-    /* CompleteClass */
-    override var handle: typings.fridaGum.NativePointer = js.native
   }
   
   /**
@@ -63,28 +57,6 @@ object ObjC extends js.Object {
   class Protocol protected ()
     extends typings.fridaGum.ObjC.Protocol {
     def this(handle: typings.fridaGum.NativePointer) = this()
-    /* CompleteClass */
-    override var handle: typings.fridaGum.NativePointer = js.native
-    /**
-      * Methods declared by this protocol.
-      */
-    /* CompleteClass */
-    override var methods: StringDictionary[ProtocolMethodDescription] = js.native
-    /**
-      * Name visible to the Objective-C runtime.
-      */
-    /* CompleteClass */
-    override var name: String = js.native
-    /**
-      * Properties declared by this protocol.
-      */
-    /* CompleteClass */
-    override var properties: StringDictionary[ProtocolPropertyAttributes] = js.native
-    /**
-      * Protocols that this protocol conforms to.
-      */
-    /* CompleteClass */
-    override var protocols: StringDictionary[typings.fridaGum.ObjC.Protocol] = js.native
   }
   
   // tslint:disable:no-unnecessary-qualifier

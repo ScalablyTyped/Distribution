@@ -21,14 +21,30 @@ trait SchemaAnalyticsInfo extends js.Object {
 
 object SchemaAnalyticsInfo {
   @scala.inline
-  def apply(
-    googlePlayAnalytics: SchemaGooglePlayAnalytics = null,
-    itunesConnectAnalytics: SchemaITunesConnectAnalytics = null
-  ): SchemaAnalyticsInfo = {
+  def apply(): SchemaAnalyticsInfo = {
     val __obj = js.Dynamic.literal()
-    if (googlePlayAnalytics != null) __obj.updateDynamic("googlePlayAnalytics")(googlePlayAnalytics.asInstanceOf[js.Any])
-    if (itunesConnectAnalytics != null) __obj.updateDynamic("itunesConnectAnalytics")(itunesConnectAnalytics.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAnalyticsInfo]
   }
+  @scala.inline
+  implicit class SchemaAnalyticsInfoOps[Self <: SchemaAnalyticsInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGooglePlayAnalytics(value: SchemaGooglePlayAnalytics): Self = this.set("googlePlayAnalytics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGooglePlayAnalytics: Self = this.set("googlePlayAnalytics", js.undefined)
+    @scala.inline
+    def setItunesConnectAnalytics(value: SchemaITunesConnectAnalytics): Self = this.set("itunesConnectAnalytics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItunesConnectAnalytics: Self = this.set("itunesConnectAnalytics", js.undefined)
+  }
+  
 }
 

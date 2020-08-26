@@ -10,9 +10,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object fluidRangeMod extends js.Object {
   def default(cssProp: js.Array[FluidRangeConfiguration]): Styles = js.native
+  def default(
+    cssProp: js.Array[FluidRangeConfiguration],
+    minScreen: js.UndefOr[scala.Nothing],
+    maxScreen: String
+  ): Styles = js.native
   def default(cssProp: js.Array[FluidRangeConfiguration], minScreen: String): Styles = js.native
   def default(cssProp: js.Array[FluidRangeConfiguration], minScreen: String, maxScreen: String): Styles = js.native
   def default(cssProp: FluidRangeConfiguration): Styles = js.native
+  def default(cssProp: FluidRangeConfiguration, minScreen: js.UndefOr[scala.Nothing], maxScreen: String): Styles = js.native
   def default(cssProp: FluidRangeConfiguration, minScreen: String): Styles = js.native
   def default(cssProp: FluidRangeConfiguration, minScreen: String, maxScreen: String): Styles = js.native
 }

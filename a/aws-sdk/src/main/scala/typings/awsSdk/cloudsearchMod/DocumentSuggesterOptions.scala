@@ -22,15 +22,32 @@ trait DocumentSuggesterOptions extends js.Object {
 
 object DocumentSuggesterOptions {
   @scala.inline
-  def apply(
-    SourceField: FieldName,
-    FuzzyMatching: SuggesterFuzzyMatching = null,
-    SortExpression: String = null
-  ): DocumentSuggesterOptions = {
+  def apply(SourceField: FieldName): DocumentSuggesterOptions = {
     val __obj = js.Dynamic.literal(SourceField = SourceField.asInstanceOf[js.Any])
-    if (FuzzyMatching != null) __obj.updateDynamic("FuzzyMatching")(FuzzyMatching.asInstanceOf[js.Any])
-    if (SortExpression != null) __obj.updateDynamic("SortExpression")(SortExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSuggesterOptions]
   }
+  @scala.inline
+  implicit class DocumentSuggesterOptionsOps[Self <: DocumentSuggesterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceField(value: FieldName): Self = this.set("SourceField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFuzzyMatching(value: SuggesterFuzzyMatching): Self = this.set("FuzzyMatching", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFuzzyMatching: Self = this.set("FuzzyMatching", js.undefined)
+    @scala.inline
+    def setSortExpression(value: String): Self = this.set("SortExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortExpression: Self = this.set("SortExpression", js.undefined)
+  }
+  
 }
 

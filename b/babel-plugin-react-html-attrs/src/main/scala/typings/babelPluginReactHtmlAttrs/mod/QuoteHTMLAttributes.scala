@@ -4,17 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QuoteHTMLAttributes[T] extends HTMLAttributes[T] {
-  var cite: js.UndefOr[String] = js.undefined
+  var cite: js.UndefOr[String] = js.native
 }
 
 object QuoteHTMLAttributes {
   @scala.inline
-  def apply[T](HTMLAttributes: HTMLAttributes[T] = null, cite: String = null): QuoteHTMLAttributes[T] = {
+  def apply[T](): QuoteHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (cite != null) __obj.updateDynamic("cite")(cite.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuoteHTMLAttributes[T]]
   }
+  @scala.inline
+  implicit class QuoteHTMLAttributesOps[Self <: QuoteHTMLAttributes[_], T] (val x: Self with QuoteHTMLAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCite(value: String): Self = this.set("cite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCite: Self = this.set("cite", js.undefined)
+  }
+  
 }
 

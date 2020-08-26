@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Closed extends js.Object {
-  var closed: js.UndefOr[Boolean] = js.undefined
-  var fragmentShaderSource: js.UndefOr[String] = js.undefined
-  var material: js.UndefOr[typings.cesium.mod.Material] = js.undefined
-  var renderState: js.UndefOr[typings.cesium.mod.RenderState] = js.undefined
-  var translucent: js.UndefOr[Boolean] = js.undefined
-  var vertexShaderSource: js.UndefOr[String] = js.undefined
+  var closed: js.UndefOr[Boolean] = js.native
+  var fragmentShaderSource: js.UndefOr[String] = js.native
+  var material: js.UndefOr[typings.cesium.mod.Material] = js.native
+  var renderState: js.UndefOr[typings.cesium.mod.RenderState] = js.native
+  var translucent: js.UndefOr[Boolean] = js.native
+  var vertexShaderSource: js.UndefOr[String] = js.native
 }
 
 object Closed {
   @scala.inline
-  def apply(
-    closed: js.UndefOr[Boolean] = js.undefined,
-    fragmentShaderSource: String = null,
-    material: typings.cesium.mod.Material = null,
-    renderState: typings.cesium.mod.RenderState = null,
-    translucent: js.UndefOr[Boolean] = js.undefined,
-    vertexShaderSource: String = null
-  ): Closed = {
+  def apply(): Closed = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.get.asInstanceOf[js.Any])
-    if (fragmentShaderSource != null) __obj.updateDynamic("fragmentShaderSource")(fragmentShaderSource.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (renderState != null) __obj.updateDynamic("renderState")(renderState.asInstanceOf[js.Any])
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.get.asInstanceOf[js.Any])
-    if (vertexShaderSource != null) __obj.updateDynamic("vertexShaderSource")(vertexShaderSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Closed]
   }
+  @scala.inline
+  implicit class ClosedOps[Self <: Closed] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClosed(value: Boolean): Self = this.set("closed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClosed: Self = this.set("closed", js.undefined)
+    @scala.inline
+    def setFragmentShaderSource(value: String): Self = this.set("fragmentShaderSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFragmentShaderSource: Self = this.set("fragmentShaderSource", js.undefined)
+    @scala.inline
+    def setMaterial(value: typings.cesium.mod.Material): Self = this.set("material", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaterial: Self = this.set("material", js.undefined)
+    @scala.inline
+    def setRenderState(value: typings.cesium.mod.RenderState): Self = this.set("renderState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderState: Self = this.set("renderState", js.undefined)
+    @scala.inline
+    def setTranslucent(value: Boolean): Self = this.set("translucent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslucent: Self = this.set("translucent", js.undefined)
+    @scala.inline
+    def setVertexShaderSource(value: String): Self = this.set("vertexShaderSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertexShaderSource: Self = this.set("vertexShaderSource", js.undefined)
+  }
+  
 }
 

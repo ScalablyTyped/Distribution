@@ -24,11 +24,30 @@ trait SchemaSuggestedTextStyle extends js.Object {
 
 object SchemaSuggestedTextStyle {
   @scala.inline
-  def apply(textStyle: SchemaTextStyle = null, textStyleSuggestionState: SchemaTextStyleSuggestionState = null): SchemaSuggestedTextStyle = {
+  def apply(): SchemaSuggestedTextStyle = {
     val __obj = js.Dynamic.literal()
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (textStyleSuggestionState != null) __obj.updateDynamic("textStyleSuggestionState")(textStyleSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSuggestedTextStyle]
   }
+  @scala.inline
+  implicit class SchemaSuggestedTextStyleOps[Self <: SchemaSuggestedTextStyle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTextStyle(value: SchemaTextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    @scala.inline
+    def setTextStyleSuggestionState(value: SchemaTextStyleSuggestionState): Self = this.set("textStyleSuggestionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyleSuggestionState: Self = this.set("textStyleSuggestionState", js.undefined)
+  }
+  
 }
 

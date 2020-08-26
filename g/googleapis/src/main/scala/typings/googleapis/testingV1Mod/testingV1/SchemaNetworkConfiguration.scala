@@ -22,12 +22,34 @@ trait SchemaNetworkConfiguration extends js.Object {
 
 object SchemaNetworkConfiguration {
   @scala.inline
-  def apply(downRule: SchemaTrafficRule = null, id: String = null, upRule: SchemaTrafficRule = null): SchemaNetworkConfiguration = {
+  def apply(): SchemaNetworkConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (downRule != null) __obj.updateDynamic("downRule")(downRule.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (upRule != null) __obj.updateDynamic("upRule")(upRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkConfiguration]
   }
+  @scala.inline
+  implicit class SchemaNetworkConfigurationOps[Self <: SchemaNetworkConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDownRule(value: SchemaTrafficRule): Self = this.set("downRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownRule: Self = this.set("downRule", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setUpRule(value: SchemaTrafficRule): Self = this.set("upRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpRule: Self = this.set("upRule", js.undefined)
+  }
+  
 }
 

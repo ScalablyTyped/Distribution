@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Sensors.MagnetometerReadingChangedEventArgs")
 @js.native
 abstract class MagnetometerReadingChangedEventArgs ()
-  extends typings.winrtUwp.Windows.Devices.Sensors.MagnetometerReadingChangedEventArgs {
-  /** Gets the current magnetometer reading. */
-  /* CompleteClass */
-  override var reading: typings.winrtUwp.Windows.Devices.Sensors.MagnetometerReading = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Sensors.MagnetometerReadingChangedEventArgs
 

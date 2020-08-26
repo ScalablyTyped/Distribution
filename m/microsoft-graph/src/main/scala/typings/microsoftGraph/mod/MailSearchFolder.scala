@@ -4,57 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MailSearchFolder extends MailFolder {
   // The OData query to filter the messages.
-  var filterQuery: js.UndefOr[String] = js.undefined
+  var filterQuery: js.UndefOr[String] = js.native
   /**
     * Indicates how the mailbox folder hierarchy should be traversed in the search. true means that a deep search should be
     * done to include child folders in the hierarchy of each folder explicitly specified in sourceFolderIds. false means a
     * shallow search of only each of the folders explicitly specified in sourceFolderIds.
     */
-  var includeNestedFolders: js.UndefOr[Boolean] = js.undefined
+  var includeNestedFolders: js.UndefOr[Boolean] = js.native
   // Indicates whether a search folder is editable using REST APIs.
-  var isSupported: js.UndefOr[Boolean] = js.undefined
+  var isSupported: js.UndefOr[Boolean] = js.native
   // The mailbox folders that should be mined.
-  var sourceFolderIds: js.UndefOr[js.Array[String]] = js.undefined
+  var sourceFolderIds: js.UndefOr[js.Array[String]] = js.native
 }
 
 object MailSearchFolder {
   @scala.inline
-  def apply(
-    childFolderCount: js.UndefOr[Double] = js.undefined,
-    childFolders: js.Array[MailFolder] = null,
-    displayName: String = null,
-    filterQuery: String = null,
-    id: String = null,
-    includeNestedFolders: js.UndefOr[Boolean] = js.undefined,
-    isSupported: js.UndefOr[Boolean] = js.undefined,
-    messageRules: js.Array[MessageRule] = null,
-    messages: js.Array[Message] = null,
-    multiValueExtendedProperties: js.Array[MultiValueLegacyExtendedProperty] = null,
-    parentFolderId: String = null,
-    singleValueExtendedProperties: js.Array[SingleValueLegacyExtendedProperty] = null,
-    sourceFolderIds: js.Array[String] = null,
-    totalItemCount: js.UndefOr[Double] = js.undefined,
-    unreadItemCount: js.UndefOr[Double] = js.undefined
-  ): MailSearchFolder = {
+  def apply(): MailSearchFolder = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(childFolderCount)) __obj.updateDynamic("childFolderCount")(childFolderCount.get.asInstanceOf[js.Any])
-    if (childFolders != null) __obj.updateDynamic("childFolders")(childFolders.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (filterQuery != null) __obj.updateDynamic("filterQuery")(filterQuery.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeNestedFolders)) __obj.updateDynamic("includeNestedFolders")(includeNestedFolders.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSupported)) __obj.updateDynamic("isSupported")(isSupported.get.asInstanceOf[js.Any])
-    if (messageRules != null) __obj.updateDynamic("messageRules")(messageRules.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (multiValueExtendedProperties != null) __obj.updateDynamic("multiValueExtendedProperties")(multiValueExtendedProperties.asInstanceOf[js.Any])
-    if (parentFolderId != null) __obj.updateDynamic("parentFolderId")(parentFolderId.asInstanceOf[js.Any])
-    if (singleValueExtendedProperties != null) __obj.updateDynamic("singleValueExtendedProperties")(singleValueExtendedProperties.asInstanceOf[js.Any])
-    if (sourceFolderIds != null) __obj.updateDynamic("sourceFolderIds")(sourceFolderIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalItemCount)) __obj.updateDynamic("totalItemCount")(totalItemCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unreadItemCount)) __obj.updateDynamic("unreadItemCount")(unreadItemCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailSearchFolder]
   }
+  @scala.inline
+  implicit class MailSearchFolderOps[Self <: MailSearchFolder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterQuery(value: String): Self = this.set("filterQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterQuery: Self = this.set("filterQuery", js.undefined)
+    @scala.inline
+    def setIncludeNestedFolders(value: Boolean): Self = this.set("includeNestedFolders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeNestedFolders: Self = this.set("includeNestedFolders", js.undefined)
+    @scala.inline
+    def setIsSupported(value: Boolean): Self = this.set("isSupported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSupported: Self = this.set("isSupported", js.undefined)
+    @scala.inline
+    def setSourceFolderIdsVarargs(value: String*): Self = this.set("sourceFolderIds", js.Array(value :_*))
+    @scala.inline
+    def setSourceFolderIds(value: js.Array[String]): Self = this.set("sourceFolderIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceFolderIds: Self = this.set("sourceFolderIds", js.undefined)
+  }
+  
 }
 

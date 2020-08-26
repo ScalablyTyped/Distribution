@@ -22,15 +22,34 @@ trait StartBgpFailoverTestRequest extends js.Object {
 
 object StartBgpFailoverTestRequest {
   @scala.inline
-  def apply(
-    virtualInterfaceId: VirtualInterfaceId,
-    bgpPeers: BGPPeerIdList = null,
-    testDurationInMinutes: js.UndefOr[TestDuration] = js.undefined
-  ): StartBgpFailoverTestRequest = {
+  def apply(virtualInterfaceId: VirtualInterfaceId): StartBgpFailoverTestRequest = {
     val __obj = js.Dynamic.literal(virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
-    if (bgpPeers != null) __obj.updateDynamic("bgpPeers")(bgpPeers.asInstanceOf[js.Any])
-    if (!js.isUndefined(testDurationInMinutes)) __obj.updateDynamic("testDurationInMinutes")(testDurationInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartBgpFailoverTestRequest]
   }
+  @scala.inline
+  implicit class StartBgpFailoverTestRequestOps[Self <: StartBgpFailoverTestRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = this.set("virtualInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBgpPeersVarargs(value: BGPPeerId*): Self = this.set("bgpPeers", js.Array(value :_*))
+    @scala.inline
+    def setBgpPeers(value: BGPPeerIdList): Self = this.set("bgpPeers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgpPeers: Self = this.set("bgpPeers", js.undefined)
+    @scala.inline
+    def setTestDurationInMinutes(value: TestDuration): Self = this.set("testDurationInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestDurationInMinutes: Self = this.set("testDurationInMinutes", js.undefined)
+  }
+  
 }
 

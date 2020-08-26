@@ -80,7 +80,11 @@ trait ParticleEmitterManager
     * @param y The y-coordinate to to emit particles from. The default is the y-coordinate of the emitter's current location.
     */
   def emitParticle(): this.type = js.native
+  def emitParticle(count: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
+  def emitParticle(count: js.UndefOr[scala.Nothing], x: Double): this.type = js.native
+  def emitParticle(count: js.UndefOr[scala.Nothing], x: Double, y: Double): this.type = js.native
   def emitParticle(count: integer): this.type = js.native
+  def emitParticle(count: integer, x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def emitParticle(count: integer, x: Double): this.type = js.native
   def emitParticle(count: integer, x: Double, y: Double): this.type = js.native
   /**
@@ -90,7 +94,11 @@ trait ParticleEmitterManager
     * @param count The number of particles to release from each emitter. The default is the emitter's own {@link Phaser.GameObjects.Particles.ParticleEmitter#quantity}.
     */
   def emitParticleAt(): this.type = js.native
+  def emitParticleAt(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], count: integer): this.type = js.native
+  def emitParticleAt(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
+  def emitParticleAt(x: js.UndefOr[scala.Nothing], y: Double, count: integer): this.type = js.native
   def emitParticleAt(x: Double): this.type = js.native
+  def emitParticleAt(x: Double, y: js.UndefOr[scala.Nothing], count: integer): this.type = js.native
   def emitParticleAt(x: Double, y: Double): this.type = js.native
   def emitParticleAt(x: Double, y: Double, count: integer): this.type = js.native
   /**

@@ -25,6 +25,12 @@ class Pool[T] protected () extends js.Object {
   def this(
     processor: js.Function2[/* data */ T, /* index */ Double, IPromise[Unit]],
     concurrency: Double,
+    endless: js.UndefOr[scala.Nothing],
+    tasksData: js.Array[T]
+  ) = this()
+  def this(
+    processor: js.Function2[/* data */ T, /* index */ Double, IPromise[Unit]],
+    concurrency: Double,
     endless: Boolean,
     tasksData: js.Array[T]
   ) = this()

@@ -22,11 +22,30 @@ trait SchemaHeldOrgUnit extends js.Object {
 
 object SchemaHeldOrgUnit {
   @scala.inline
-  def apply(holdTime: String = null, orgUnitId: String = null): SchemaHeldOrgUnit = {
+  def apply(): SchemaHeldOrgUnit = {
     val __obj = js.Dynamic.literal()
-    if (holdTime != null) __obj.updateDynamic("holdTime")(holdTime.asInstanceOf[js.Any])
-    if (orgUnitId != null) __obj.updateDynamic("orgUnitId")(orgUnitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHeldOrgUnit]
   }
+  @scala.inline
+  implicit class SchemaHeldOrgUnitOps[Self <: SchemaHeldOrgUnit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHoldTime(value: String): Self = this.set("holdTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoldTime: Self = this.set("holdTime", js.undefined)
+    @scala.inline
+    def setOrgUnitId(value: String): Self = this.set("orgUnitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrgUnitId: Self = this.set("orgUnitId", js.undefined)
+  }
+  
 }
 

@@ -5,16 +5,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the ChartSeriesCollection object, for use in `chartSeriesCollection.set({ ... })`. */
+@js.native
 trait ChartSeriesCollectionUpdateData extends js.Object {
-  var items: js.UndefOr[js.Array[ChartSeriesData]] = js.undefined
+  var items: js.UndefOr[js.Array[ChartSeriesData]] = js.native
 }
 
 object ChartSeriesCollectionUpdateData {
   @scala.inline
-  def apply(items: js.Array[ChartSeriesData] = null): ChartSeriesCollectionUpdateData = {
+  def apply(): ChartSeriesCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesCollectionUpdateData]
   }
+  @scala.inline
+  implicit class ChartSeriesCollectionUpdateDataOps[Self <: ChartSeriesCollectionUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: ChartSeriesData*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[ChartSeriesData]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+  }
+  
 }
 

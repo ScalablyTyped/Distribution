@@ -26,18 +26,42 @@ trait DescribeHostReservationsRequest extends js.Object {
 
 object DescribeHostReservationsRequest {
   @scala.inline
-  def apply(
-    Filter: FilterList = null,
-    HostReservationIdSet: HostReservationIdSet = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
-    NextToken: String = null
-  ): DescribeHostReservationsRequest = {
+  def apply(): DescribeHostReservationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (HostReservationIdSet != null) __obj.updateDynamic("HostReservationIdSet")(HostReservationIdSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeHostReservationsRequest]
   }
+  @scala.inline
+  implicit class DescribeHostReservationsRequestOps[Self <: DescribeHostReservationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterVarargs(value: Filter*): Self = this.set("Filter", js.Array(value :_*))
+    @scala.inline
+    def setFilter(value: FilterList): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+    @scala.inline
+    def setHostReservationIdSetVarargs(value: HostReservationId*): Self = this.set("HostReservationIdSet", js.Array(value :_*))
+    @scala.inline
+    def setHostReservationIdSet(value: HostReservationIdSet): Self = this.set("HostReservationIdSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostReservationIdSet: Self = this.set("HostReservationIdSet", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Integer): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

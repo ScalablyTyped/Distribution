@@ -22,14 +22,32 @@ trait ByteMatchSetState extends js.Object {
 
 object ByteMatchSetState {
   @scala.inline
-  def apply(
-    byteMatchTuples: Input[js.Array[Input[ByteMatchSetByteMatchTuple]]] = null,
-    name: Input[String] = null
-  ): ByteMatchSetState = {
+  def apply(): ByteMatchSetState = {
     val __obj = js.Dynamic.literal()
-    if (byteMatchTuples != null) __obj.updateDynamic("byteMatchTuples")(byteMatchTuples.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ByteMatchSetState]
   }
+  @scala.inline
+  implicit class ByteMatchSetStateOps[Self <: ByteMatchSetState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setByteMatchTuplesVarargs(value: Input[ByteMatchSetByteMatchTuple]*): Self = this.set("byteMatchTuples", js.Array(value :_*))
+    @scala.inline
+    def setByteMatchTuples(value: Input[js.Array[Input[ByteMatchSetByteMatchTuple]]]): Self = this.set("byteMatchTuples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByteMatchTuples: Self = this.set("byteMatchTuples", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

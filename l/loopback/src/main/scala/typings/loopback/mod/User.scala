@@ -92,6 +92,11 @@ class User () extends PersistedModel {
     * @param {AccessToken} token The generated access token object
     */
   def createAccessToken(ttl: Double): js.Promise[AccessToken] | Unit = js.native
+  def createAccessToken(
+    ttl: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ String | Error, /* token */ AccessToken, Unit]
+  ): js.Promise[AccessToken] | Unit = js.native
   def createAccessToken(ttl: Double, options: js.Any): js.Promise[AccessToken] | Unit = js.native
   def createAccessToken(
     ttl: Double,
@@ -183,6 +188,11 @@ object User extends js.Object {
     * @param {AccessToken} token Access token if login is successfu
     */
   def login(credentials: js.Any): js.Promise[AccessToken] | Unit = js.native
+  def login(
+    credentials: js.Any,
+    include: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
+  ): js.Promise[AccessToken] | Unit = js.native
   def login(credentials: js.Any, include: String): js.Promise[AccessToken] | Unit = js.native
   def login(
     credentials: js.Any,

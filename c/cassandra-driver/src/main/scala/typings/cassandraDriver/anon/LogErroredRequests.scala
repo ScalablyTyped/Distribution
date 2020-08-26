@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LogErroredRequests extends js.Object {
-  var logErroredRequests: js.UndefOr[Boolean] = js.undefined
-  var logNormalRequests: js.UndefOr[Boolean] = js.undefined
-  var messageMaxErrorStackTraceLength: js.UndefOr[Double] = js.undefined
-  var messageMaxParameterValueLength: js.UndefOr[Double] = js.undefined
-  var messageMaxQueryLength: js.UndefOr[Double] = js.undefined
-  var slowThreshold: js.UndefOr[Double] = js.undefined
+  var logErroredRequests: js.UndefOr[Boolean] = js.native
+  var logNormalRequests: js.UndefOr[Boolean] = js.native
+  var messageMaxErrorStackTraceLength: js.UndefOr[Double] = js.native
+  var messageMaxParameterValueLength: js.UndefOr[Double] = js.native
+  var messageMaxQueryLength: js.UndefOr[Double] = js.native
+  var slowThreshold: js.UndefOr[Double] = js.native
 }
 
 object LogErroredRequests {
   @scala.inline
-  def apply(
-    logErroredRequests: js.UndefOr[Boolean] = js.undefined,
-    logNormalRequests: js.UndefOr[Boolean] = js.undefined,
-    messageMaxErrorStackTraceLength: js.UndefOr[Double] = js.undefined,
-    messageMaxParameterValueLength: js.UndefOr[Double] = js.undefined,
-    messageMaxQueryLength: js.UndefOr[Double] = js.undefined,
-    slowThreshold: js.UndefOr[Double] = js.undefined
-  ): LogErroredRequests = {
+  def apply(): LogErroredRequests = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(logErroredRequests)) __obj.updateDynamic("logErroredRequests")(logErroredRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(logNormalRequests)) __obj.updateDynamic("logNormalRequests")(logNormalRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(messageMaxErrorStackTraceLength)) __obj.updateDynamic("messageMaxErrorStackTraceLength")(messageMaxErrorStackTraceLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(messageMaxParameterValueLength)) __obj.updateDynamic("messageMaxParameterValueLength")(messageMaxParameterValueLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(messageMaxQueryLength)) __obj.updateDynamic("messageMaxQueryLength")(messageMaxQueryLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(slowThreshold)) __obj.updateDynamic("slowThreshold")(slowThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogErroredRequests]
   }
+  @scala.inline
+  implicit class LogErroredRequestsOps[Self <: LogErroredRequests] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogErroredRequests(value: Boolean): Self = this.set("logErroredRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogErroredRequests: Self = this.set("logErroredRequests", js.undefined)
+    @scala.inline
+    def setLogNormalRequests(value: Boolean): Self = this.set("logNormalRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogNormalRequests: Self = this.set("logNormalRequests", js.undefined)
+    @scala.inline
+    def setMessageMaxErrorStackTraceLength(value: Double): Self = this.set("messageMaxErrorStackTraceLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageMaxErrorStackTraceLength: Self = this.set("messageMaxErrorStackTraceLength", js.undefined)
+    @scala.inline
+    def setMessageMaxParameterValueLength(value: Double): Self = this.set("messageMaxParameterValueLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageMaxParameterValueLength: Self = this.set("messageMaxParameterValueLength", js.undefined)
+    @scala.inline
+    def setMessageMaxQueryLength(value: Double): Self = this.set("messageMaxQueryLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageMaxQueryLength: Self = this.set("messageMaxQueryLength", js.undefined)
+    @scala.inline
+    def setSlowThreshold(value: Double): Self = this.set("slowThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlowThreshold: Self = this.set("slowThreshold", js.undefined)
+  }
+  
 }
 

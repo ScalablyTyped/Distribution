@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.configuration.backend.DataImporter Service that supports applying a LayerFilter to imported data.
   * @since OOo 2.0
   */
+@js.native
 trait LayerFilter
   extends XLayer
      with XInitialization

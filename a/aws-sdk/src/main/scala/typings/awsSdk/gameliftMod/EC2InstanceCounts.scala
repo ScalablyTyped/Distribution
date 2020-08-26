@@ -38,24 +38,50 @@ trait EC2InstanceCounts extends js.Object {
 
 object EC2InstanceCounts {
   @scala.inline
-  def apply(
-    ACTIVE: js.UndefOr[WholeNumber] = js.undefined,
-    DESIRED: js.UndefOr[WholeNumber] = js.undefined,
-    IDLE: js.UndefOr[WholeNumber] = js.undefined,
-    MAXIMUM: js.UndefOr[WholeNumber] = js.undefined,
-    MINIMUM: js.UndefOr[WholeNumber] = js.undefined,
-    PENDING: js.UndefOr[WholeNumber] = js.undefined,
-    TERMINATING: js.UndefOr[WholeNumber] = js.undefined
-  ): EC2InstanceCounts = {
+  def apply(): EC2InstanceCounts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ACTIVE)) __obj.updateDynamic("ACTIVE")(ACTIVE.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DESIRED)) __obj.updateDynamic("DESIRED")(DESIRED.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IDLE)) __obj.updateDynamic("IDLE")(IDLE.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MAXIMUM)) __obj.updateDynamic("MAXIMUM")(MAXIMUM.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MINIMUM)) __obj.updateDynamic("MINIMUM")(MINIMUM.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(PENDING)) __obj.updateDynamic("PENDING")(PENDING.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TERMINATING)) __obj.updateDynamic("TERMINATING")(TERMINATING.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EC2InstanceCounts]
   }
+  @scala.inline
+  implicit class EC2InstanceCountsOps[Self <: EC2InstanceCounts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setACTIVE(value: WholeNumber): Self = this.set("ACTIVE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteACTIVE: Self = this.set("ACTIVE", js.undefined)
+    @scala.inline
+    def setDESIRED(value: WholeNumber): Self = this.set("DESIRED", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDESIRED: Self = this.set("DESIRED", js.undefined)
+    @scala.inline
+    def setIDLE(value: WholeNumber): Self = this.set("IDLE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIDLE: Self = this.set("IDLE", js.undefined)
+    @scala.inline
+    def setMAXIMUM(value: WholeNumber): Self = this.set("MAXIMUM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMAXIMUM: Self = this.set("MAXIMUM", js.undefined)
+    @scala.inline
+    def setMINIMUM(value: WholeNumber): Self = this.set("MINIMUM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMINIMUM: Self = this.set("MINIMUM", js.undefined)
+    @scala.inline
+    def setPENDING(value: WholeNumber): Self = this.set("PENDING", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePENDING: Self = this.set("PENDING", js.undefined)
+    @scala.inline
+    def setTERMINATING(value: WholeNumber): Self = this.set("TERMINATING", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTERMINATING: Self = this.set("TERMINATING", js.undefined)
+  }
+  
 }
 

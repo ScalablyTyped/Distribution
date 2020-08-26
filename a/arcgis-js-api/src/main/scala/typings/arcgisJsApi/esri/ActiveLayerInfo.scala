@@ -25,7 +25,13 @@ trait ActiveLayerInfo extends Accessor {
     */
   var layer: Layer = js.native
   /**
-    * The legendElements is constructed using the layer [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html). It reflects the actual structure of the legend. Each `legendElement` has the following specification:
+    * The layerView represented by the ActiveLayerInfo object's layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#layerView)
+    */
+  var layerView: LayerView = js.native
+  /**
+    * The legendElements is constructed using the layer [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html). It reflects the actual structure of the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#legendElements)
     */

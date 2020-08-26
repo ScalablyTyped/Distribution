@@ -18,11 +18,32 @@ trait DescribeInstancePatchStatesForPatchGroupResult extends js.Object {
 
 object DescribeInstancePatchStatesForPatchGroupResult {
   @scala.inline
-  def apply(InstancePatchStates: InstancePatchStatesList = null, NextToken: NextToken = null): DescribeInstancePatchStatesForPatchGroupResult = {
+  def apply(): DescribeInstancePatchStatesForPatchGroupResult = {
     val __obj = js.Dynamic.literal()
-    if (InstancePatchStates != null) __obj.updateDynamic("InstancePatchStates")(InstancePatchStates.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstancePatchStatesForPatchGroupResult]
   }
+  @scala.inline
+  implicit class DescribeInstancePatchStatesForPatchGroupResultOps[Self <: DescribeInstancePatchStatesForPatchGroupResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstancePatchStatesVarargs(value: InstancePatchState*): Self = this.set("InstancePatchStates", js.Array(value :_*))
+    @scala.inline
+    def setInstancePatchStates(value: InstancePatchStatesList): Self = this.set("InstancePatchStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancePatchStates: Self = this.set("InstancePatchStates", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

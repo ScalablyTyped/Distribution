@@ -40,20 +40,42 @@ trait SchemaCreateNodePoolRequest extends js.Object {
 
 object SchemaCreateNodePoolRequest {
   @scala.inline
-  def apply(
-    clusterId: String = null,
-    nodePool: SchemaNodePool = null,
-    parent: String = null,
-    projectId: String = null,
-    zone: String = null
-  ): SchemaCreateNodePoolRequest = {
+  def apply(): SchemaCreateNodePoolRequest = {
     val __obj = js.Dynamic.literal()
-    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
-    if (nodePool != null) __obj.updateDynamic("nodePool")(nodePool.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateNodePoolRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateNodePoolRequestOps[Self <: SchemaCreateNodePoolRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterId(value: String): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    @scala.inline
+    def setNodePool(value: SchemaNodePool): Self = this.set("nodePool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodePool: Self = this.set("nodePool", js.undefined)
+    @scala.inline
+    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

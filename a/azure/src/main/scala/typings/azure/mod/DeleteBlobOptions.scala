@@ -4,30 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteBlobOptions extends GetBlobPropertiesOptions {
-  var deleteSnapshots: js.UndefOr[String] = js.undefined
+  var deleteSnapshots: js.UndefOr[String] = js.native
 }
 
 object DeleteBlobOptions {
   @scala.inline
-  def apply(
-    accessConditions: StorageAccessCondition = null,
-    deleteSnapshots: String = null,
-    leaseId: String = null,
-    locationMode: String = null,
-    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
-    snapshotId: String = null,
-    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined
-  ): DeleteBlobOptions = {
+  def apply(): DeleteBlobOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessConditions != null) __obj.updateDynamic("accessConditions")(accessConditions.asInstanceOf[js.Any])
-    if (deleteSnapshots != null) __obj.updateDynamic("deleteSnapshots")(deleteSnapshots.asInstanceOf[js.Any])
-    if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBlobOptions]
   }
+  @scala.inline
+  implicit class DeleteBlobOptionsOps[Self <: DeleteBlobOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteSnapshots(value: String): Self = this.set("deleteSnapshots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteSnapshots: Self = this.set("deleteSnapshots", js.undefined)
+  }
+  
 }
 

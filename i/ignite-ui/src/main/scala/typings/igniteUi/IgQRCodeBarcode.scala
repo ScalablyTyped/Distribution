@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgQRCodeBarcode
   extends /**
   * Option for JSONPDataSourceSettings
@@ -15,23 +16,23 @@ trait IgQRCodeBarcode
     * Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.
     * The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number.
     */
-  var applicationIndicator: js.UndefOr[String] = js.undefined
+  var applicationIndicator: js.UndefOr[String] = js.native
   /**
     * Gets or sets the brush to use to fill the backing of the barcode.
     */
-  var backingBrush: js.UndefOr[String] = js.undefined
+  var backingBrush: js.UndefOr[String] = js.native
   /**
     * Gets or sets the brush to use for the outline of the backing.
     */
-  var backingOutline: js.UndefOr[String] = js.undefined
+  var backingOutline: js.UndefOr[String] = js.native
   /**
     * Gets or sets the stroke thickness of the backing outline.
     */
-  var backingStrokeThickness: js.UndefOr[Double] = js.undefined
+  var backingStrokeThickness: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the brush to use to fill the background of the bars.
     */
-  var barBrush: js.UndefOr[String] = js.undefined
+  var barBrush: js.UndefOr[String] = js.native
   /**
     * Gets or sets a value which specifies how the grid fills within the barcode control dimensions.
     *
@@ -39,18 +40,18 @@ trait IgQRCodeBarcode
     * "fillSpace" FillSpace mode ensures that the barcode grid fills the control dimensions.
     * "ensureEqualSize" EnsureEqualSize mode ensures that every grid column/row has the same pixels number width/height. The sum of all columns/rows pixels may be less than the width/height of the control.
     */
-  var barsFillMode: js.UndefOr[String] = js.undefined
+  var barsFillMode: js.UndefOr[String] = js.native
   /**
     * Gets or sets the data value.
     */
-  var data: js.UndefOr[String] = js.undefined
+  var data: js.UndefOr[String] = js.native
   /**
     * Occurs when the data has changed.
     * Function takes first argument evt and second argument ui.
     * Use ui.owner to obtain reference to the barcode widget.
     * Use ui.newData to obtain the new data.
     */
-  var dataChanged: js.UndefOr[DataChangedEvent] = js.undefined
+  var dataChanged: js.UndefOr[DataChangedEvent] = js.native
   /**
     * Gets or sets a value indicating whether to show the ECI header.
     *
@@ -58,12 +59,12 @@ trait IgQRCodeBarcode
     * "hide" Hide the header.
     * "show" Show the header.
     */
-  var eciHeaderDisplayMode: js.UndefOr[String] = js.undefined
+  var eciHeaderDisplayMode: js.UndefOr[String] = js.native
   /**
     * Each Extended Channel Interpretation (ECI) is designated by a six-digit assignment number: 000000 - 999999.
     * The default value depends on the loaded encodings. The default is ECI 000003 (representing ISO/IEC 8859-1) if the ISO/IEC 8859-1 character set is loaded. Otherwise the default value is 000026 (representing UTF-8).
     */
-  var eciNumber: js.UndefOr[Double] = js.undefined
+  var eciNumber: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the encoding mode for compaction of the QR Code symbol data. The default value is undefined if the Shift_JIS encoding is loaded. Otherwise the default value is byte.
     *
@@ -74,7 +75,7 @@ trait IgQRCodeBarcode
     * "byte" In Byte mode the data is encoded at 8 bits per character. The character set of the Byte encoding mode is byte data (by default it is ISO/IEC 8859-1 character set).
     * "kanji" The Kanji mode efficiently encodes Kanji characters in accordance with the Shift JIS system based on JIS X 0208. Each two-byte character value is compacted to a 13-bit binary codeword.
     */
-  var encodingMode: js.UndefOr[String] = js.undefined
+  var encodingMode: js.UndefOr[String] = js.native
   /**
     * Gets or sets the error correction level of the QR Code symbol.
     *
@@ -84,18 +85,18 @@ trait IgQRCodeBarcode
     * "quartil" Quartil error correction level allows recovery of 25% of the symbol codewords.
     * "high" High error correction level allows recovery of 30% of the symbol codewords.
     */
-  var errorCorrectionLevel: js.UndefOr[String] = js.undefined
+  var errorCorrectionLevel: js.UndefOr[String] = js.native
   /**
     * Occurs when an error has happened.
     * Function takes first argument evt and second argument ui.
     * Use ui.owner to obtain reference to the barcode widget.
     * Use ui.errorMessage to get or set the error message that is to be shown.
     */
-  var errorMessageDisplaying: js.UndefOr[ErrorMessageDisplayingEvent] = js.undefined
+  var errorMessageDisplaying: js.UndefOr[ErrorMessageDisplayingEvent] = js.native
   /**
     * Gets or sets the message text displayed when some error occurs.
     */
-  var errorMessageText: js.UndefOr[String] = js.undefined
+  var errorMessageText: js.UndefOr[String] = js.native
   /**
     * Gets or sets the FNC1 mode indicator which identifies symbols encoding messages formatted according to specific predefined industry or application specifications.
     *
@@ -104,40 +105,40 @@ trait IgQRCodeBarcode
     * "gs1" Uses Fnc1 symbol in the first position of the character in Code 128 symbols and designates data formatted in accordance with the GS1 General Specification.
     * "industry" Uses Fnc1 symbol in the second position of the character in Code 128 symbols and designates data formatted in accordance with a specific industry application previously agreed with AIM Inc.
     */
-  var fnc1Mode: js.UndefOr[String] = js.undefined
+  var fnc1Mode: js.UndefOr[String] = js.native
   /**
     * Gets or sets the font of the text displayed by the control.
     */
-  var font: js.UndefOr[String] = js.undefined
+  var font: js.UndefOr[String] = js.native
   /**
     * Gets or sets the brush to use for the label font.
     */
-  var fontBrush: js.UndefOr[String] = js.undefined
+  var fontBrush: js.UndefOr[String] = js.native
   /**
     * The height of the barcode. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var height: js.UndefOr[String | Double] = js.undefined
+  var height: js.UndefOr[String | Double] = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String] = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[js.Any] = js.native
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
     * to appear blurry.
     */
-  var pixelScalingRatio: js.UndefOr[Double] = js.undefined
+  var pixelScalingRatio: js.UndefOr[Double] = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.undefined
+  var regional: js.UndefOr[String | js.Object] = js.native
   /**
     * Gets or sets the size version of the QR Code symbol.
     *
@@ -184,7 +185,7 @@ trait IgQRCodeBarcode
     * "version39" Version39 defines size of 173x173 modules for the symbol.
     * "version40" Version40 defines size of 177x177 modules for the symbol.
     */
-  var sizeVersion: js.UndefOr[String] = js.undefined
+  var sizeVersion: js.UndefOr[String] = js.native
   /**
     * Gets or sets the stretch.
     *
@@ -194,83 +195,147 @@ trait IgQRCodeBarcode
     * "uniform"
     * "uniformToFill"
     */
-  var stretch: js.UndefOr[String] = js.undefined
+  var stretch: js.UndefOr[String] = js.native
   /**
     * The width of the barcode. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var width: js.UndefOr[String | Double] = js.undefined
+  var width: js.UndefOr[String | Double] = js.native
   /**
     * Gets or sets the width (XDimension) to height (YDimension) ratio. It accepts only positive values. This property does not apply for the QR barcode.
     */
-  var widthToHeightRatio: js.UndefOr[Double] = js.undefined
+  var widthToHeightRatio: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the X-dimension (narrow element width) for a symbol in mm. It accepts values from 0.01 to 100.
     */
-  var xDimension: js.UndefOr[Double] = js.undefined
+  var xDimension: js.UndefOr[Double] = js.native
 }
 
 object IgQRCodeBarcode {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    applicationIndicator: String = null,
-    backingBrush: String = null,
-    backingOutline: String = null,
-    backingStrokeThickness: js.UndefOr[Double] = js.undefined,
-    barBrush: String = null,
-    barsFillMode: String = null,
-    data: String = null,
-    dataChanged: (/* event */ Event, /* ui */ DataChangedEventUIParam) => Unit = null,
-    eciHeaderDisplayMode: String = null,
-    eciNumber: js.UndefOr[Double] = js.undefined,
-    encodingMode: String = null,
-    errorCorrectionLevel: String = null,
-    errorMessageDisplaying: (/* event */ Event, /* ui */ ErrorMessageDisplayingEventUIParam) => Unit = null,
-    errorMessageText: String = null,
-    fnc1Mode: String = null,
-    font: String = null,
-    fontBrush: String = null,
-    height: String | Double = null,
-    language: String = null,
-    locale: js.Any = null,
-    pixelScalingRatio: js.UndefOr[Double] = js.undefined,
-    regional: String | js.Object = null,
-    sizeVersion: String = null,
-    stretch: String = null,
-    width: String | Double = null,
-    widthToHeightRatio: js.UndefOr[Double] = js.undefined,
-    xDimension: js.UndefOr[Double] = js.undefined
-  ): IgQRCodeBarcode = {
+  def apply(): IgQRCodeBarcode = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (applicationIndicator != null) __obj.updateDynamic("applicationIndicator")(applicationIndicator.asInstanceOf[js.Any])
-    if (backingBrush != null) __obj.updateDynamic("backingBrush")(backingBrush.asInstanceOf[js.Any])
-    if (backingOutline != null) __obj.updateDynamic("backingOutline")(backingOutline.asInstanceOf[js.Any])
-    if (!js.isUndefined(backingStrokeThickness)) __obj.updateDynamic("backingStrokeThickness")(backingStrokeThickness.get.asInstanceOf[js.Any])
-    if (barBrush != null) __obj.updateDynamic("barBrush")(barBrush.asInstanceOf[js.Any])
-    if (barsFillMode != null) __obj.updateDynamic("barsFillMode")(barsFillMode.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataChanged != null) __obj.updateDynamic("dataChanged")(js.Any.fromFunction2(dataChanged))
-    if (eciHeaderDisplayMode != null) __obj.updateDynamic("eciHeaderDisplayMode")(eciHeaderDisplayMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(eciNumber)) __obj.updateDynamic("eciNumber")(eciNumber.get.asInstanceOf[js.Any])
-    if (encodingMode != null) __obj.updateDynamic("encodingMode")(encodingMode.asInstanceOf[js.Any])
-    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel.asInstanceOf[js.Any])
-    if (errorMessageDisplaying != null) __obj.updateDynamic("errorMessageDisplaying")(js.Any.fromFunction2(errorMessageDisplaying))
-    if (errorMessageText != null) __obj.updateDynamic("errorMessageText")(errorMessageText.asInstanceOf[js.Any])
-    if (fnc1Mode != null) __obj.updateDynamic("fnc1Mode")(fnc1Mode.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (fontBrush != null) __obj.updateDynamic("fontBrush")(fontBrush.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelScalingRatio)) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.get.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (sizeVersion != null) __obj.updateDynamic("sizeVersion")(sizeVersion.asInstanceOf[js.Any])
-    if (stretch != null) __obj.updateDynamic("stretch")(stretch.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(widthToHeightRatio)) __obj.updateDynamic("widthToHeightRatio")(widthToHeightRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xDimension)) __obj.updateDynamic("xDimension")(xDimension.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgQRCodeBarcode]
   }
+  @scala.inline
+  implicit class IgQRCodeBarcodeOps[Self <: IgQRCodeBarcode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationIndicator(value: String): Self = this.set("applicationIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationIndicator: Self = this.set("applicationIndicator", js.undefined)
+    @scala.inline
+    def setBackingBrush(value: String): Self = this.set("backingBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackingBrush: Self = this.set("backingBrush", js.undefined)
+    @scala.inline
+    def setBackingOutline(value: String): Self = this.set("backingOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackingOutline: Self = this.set("backingOutline", js.undefined)
+    @scala.inline
+    def setBackingStrokeThickness(value: Double): Self = this.set("backingStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackingStrokeThickness: Self = this.set("backingStrokeThickness", js.undefined)
+    @scala.inline
+    def setBarBrush(value: String): Self = this.set("barBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarBrush: Self = this.set("barBrush", js.undefined)
+    @scala.inline
+    def setBarsFillMode(value: String): Self = this.set("barsFillMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarsFillMode: Self = this.set("barsFillMode", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataChanged(value: (/* event */ Event, /* ui */ DataChangedEventUIParam) => Unit): Self = this.set("dataChanged", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDataChanged: Self = this.set("dataChanged", js.undefined)
+    @scala.inline
+    def setEciHeaderDisplayMode(value: String): Self = this.set("eciHeaderDisplayMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEciHeaderDisplayMode: Self = this.set("eciHeaderDisplayMode", js.undefined)
+    @scala.inline
+    def setEciNumber(value: Double): Self = this.set("eciNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEciNumber: Self = this.set("eciNumber", js.undefined)
+    @scala.inline
+    def setEncodingMode(value: String): Self = this.set("encodingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodingMode: Self = this.set("encodingMode", js.undefined)
+    @scala.inline
+    def setErrorCorrectionLevel(value: String): Self = this.set("errorCorrectionLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCorrectionLevel: Self = this.set("errorCorrectionLevel", js.undefined)
+    @scala.inline
+    def setErrorMessageDisplaying(value: (/* event */ Event, /* ui */ ErrorMessageDisplayingEventUIParam) => Unit): Self = this.set("errorMessageDisplaying", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteErrorMessageDisplaying: Self = this.set("errorMessageDisplaying", js.undefined)
+    @scala.inline
+    def setErrorMessageText(value: String): Self = this.set("errorMessageText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageText: Self = this.set("errorMessageText", js.undefined)
+    @scala.inline
+    def setFnc1Mode(value: String): Self = this.set("fnc1Mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFnc1Mode: Self = this.set("fnc1Mode", js.undefined)
+    @scala.inline
+    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setFontBrush(value: String): Self = this.set("fontBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontBrush: Self = this.set("fontBrush", js.undefined)
+    @scala.inline
+    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setPixelScalingRatio(value: Double): Self = this.set("pixelScalingRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelScalingRatio: Self = this.set("pixelScalingRatio", js.undefined)
+    @scala.inline
+    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegional: Self = this.set("regional", js.undefined)
+    @scala.inline
+    def setSizeVersion(value: String): Self = this.set("sizeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeVersion: Self = this.set("sizeVersion", js.undefined)
+    @scala.inline
+    def setStretch(value: String): Self = this.set("stretch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStretch: Self = this.set("stretch", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWidthToHeightRatio(value: Double): Self = this.set("widthToHeightRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidthToHeightRatio: Self = this.set("widthToHeightRatio", js.undefined)
+    @scala.inline
+    def setXDimension(value: Double): Self = this.set("xDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXDimension: Self = this.set("xDimension", js.undefined)
+  }
+  
 }
 

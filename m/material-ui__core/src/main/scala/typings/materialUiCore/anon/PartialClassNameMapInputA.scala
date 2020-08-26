@@ -16,20 +16,42 @@ trait PartialClassNameMapInputA extends js.Object {
 
 object PartialClassNameMapInputA {
   @scala.inline
-  def apply(
-    disablePointerEvents: String = null,
-    filled: String = null,
-    positionEnd: String = null,
-    positionStart: String = null,
-    root: String = null
-  ): PartialClassNameMapInputA = {
+  def apply(): PartialClassNameMapInputA = {
     val __obj = js.Dynamic.literal()
-    if (disablePointerEvents != null) __obj.updateDynamic("disablePointerEvents")(disablePointerEvents.asInstanceOf[js.Any])
-    if (filled != null) __obj.updateDynamic("filled")(filled.asInstanceOf[js.Any])
-    if (positionEnd != null) __obj.updateDynamic("positionEnd")(positionEnd.asInstanceOf[js.Any])
-    if (positionStart != null) __obj.updateDynamic("positionStart")(positionStart.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapInputA]
   }
+  @scala.inline
+  implicit class PartialClassNameMapInputAOps[Self <: PartialClassNameMapInputA] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisablePointerEvents(value: String): Self = this.set("disablePointerEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisablePointerEvents: Self = this.set("disablePointerEvents", js.undefined)
+    @scala.inline
+    def setFilled(value: String): Self = this.set("filled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilled: Self = this.set("filled", js.undefined)
+    @scala.inline
+    def setPositionEnd(value: String): Self = this.set("positionEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionEnd: Self = this.set("positionEnd", js.undefined)
+    @scala.inline
+    def setPositionStart(value: String): Self = this.set("positionStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionStart: Self = this.set("positionStart", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

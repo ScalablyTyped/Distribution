@@ -16,39 +16,70 @@ import scala.scalajs.js.annotation._
   * this style property is ignored.
   * @property lineDashOffset {number=} - The phase offset of the line dash pattern
   */
+@js.native
 trait Options extends js.Object {
-  var fillColor: js.UndefOr[String] = js.undefined
-  var lineCap: js.UndefOr[LineCap] = js.undefined
-  var lineDash: js.UndefOr[js.Array[Double]] = js.undefined
-  var lineDashOffset: js.UndefOr[Double] = js.undefined
-  var lineJoin: js.UndefOr[LineJoin] = js.undefined
-  var lineWidth: js.UndefOr[Double] = js.undefined
-  var miterLimit: js.UndefOr[Double] = js.undefined
-  var strokeColor: js.UndefOr[String] = js.undefined
+  var fillColor: js.UndefOr[String] = js.native
+  var lineCap: js.UndefOr[LineCap] = js.native
+  var lineDash: js.UndefOr[js.Array[Double]] = js.native
+  var lineDashOffset: js.UndefOr[Double] = js.native
+  var lineJoin: js.UndefOr[LineJoin] = js.native
+  var lineWidth: js.UndefOr[Double] = js.native
+  var miterLimit: js.UndefOr[Double] = js.native
+  var strokeColor: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    fillColor: String = null,
-    lineCap: LineCap = null,
-    lineDash: js.Array[Double] = null,
-    lineDashOffset: js.UndefOr[Double] = js.undefined,
-    lineJoin: LineJoin = null,
-    lineWidth: js.UndefOr[Double] = js.undefined,
-    miterLimit: js.UndefOr[Double] = js.undefined,
-    strokeColor: String = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
-    if (lineDash != null) __obj.updateDynamic("lineDash")(lineDash.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineDashOffset)) __obj.updateDynamic("lineDashOffset")(lineDashOffset.get.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(miterLimit)) __obj.updateDynamic("miterLimit")(miterLimit.get.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFillColor(value: String): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    @scala.inline
+    def setLineCap(value: LineCap): Self = this.set("lineCap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineCap: Self = this.set("lineCap", js.undefined)
+    @scala.inline
+    def setLineDashVarargs(value: Double*): Self = this.set("lineDash", js.Array(value :_*))
+    @scala.inline
+    def setLineDash(value: js.Array[Double]): Self = this.set("lineDash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineDash: Self = this.set("lineDash", js.undefined)
+    @scala.inline
+    def setLineDashOffset(value: Double): Self = this.set("lineDashOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineDashOffset: Self = this.set("lineDashOffset", js.undefined)
+    @scala.inline
+    def setLineJoin(value: LineJoin): Self = this.set("lineJoin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineJoin: Self = this.set("lineJoin", js.undefined)
+    @scala.inline
+    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    @scala.inline
+    def setMiterLimit(value: Double): Self = this.set("miterLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiterLimit: Self = this.set("miterLimit", js.undefined)
+    @scala.inline
+    def setStrokeColor(value: String): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeColor: Self = this.set("strokeColor", js.undefined)
+  }
+  
 }
 

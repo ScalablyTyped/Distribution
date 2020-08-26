@@ -17,8 +17,8 @@ object rowTransformerValidatorMod extends js.Object {
     var _rowValidator: js.Any = js.native
     var callTransformer: js.Any = js.native
     var callValidator: js.Any = js.native
-    def rowTransform(transformFunction: RowTransformFunction[I, O]): js.Any = js.native
-    def rowValidator(validateFunction: RowValidate[O]): js.Any = js.native
+    def rowTransform_=(transformFunction: RowTransformFunction[I, O]): Unit = js.native
+    def rowValidator_=(validateFunction: RowValidate[O]): Unit = js.native
     def transformAndValidate(row: I, cb: RowValidatorCallback[O]): Unit = js.native
   }
   

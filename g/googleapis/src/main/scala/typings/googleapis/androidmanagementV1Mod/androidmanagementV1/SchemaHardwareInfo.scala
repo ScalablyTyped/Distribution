@@ -77,38 +77,94 @@ trait SchemaHardwareInfo extends js.Object {
 
 object SchemaHardwareInfo {
   @scala.inline
-  def apply(
-    batteryShutdownTemperatures: js.Array[Double] = null,
-    batteryThrottlingTemperatures: js.Array[Double] = null,
-    brand: String = null,
-    cpuShutdownTemperatures: js.Array[Double] = null,
-    cpuThrottlingTemperatures: js.Array[Double] = null,
-    deviceBasebandVersion: String = null,
-    gpuShutdownTemperatures: js.Array[Double] = null,
-    gpuThrottlingTemperatures: js.Array[Double] = null,
-    hardware: String = null,
-    manufacturer: String = null,
-    model: String = null,
-    serialNumber: String = null,
-    skinShutdownTemperatures: js.Array[Double] = null,
-    skinThrottlingTemperatures: js.Array[Double] = null
-  ): SchemaHardwareInfo = {
+  def apply(): SchemaHardwareInfo = {
     val __obj = js.Dynamic.literal()
-    if (batteryShutdownTemperatures != null) __obj.updateDynamic("batteryShutdownTemperatures")(batteryShutdownTemperatures.asInstanceOf[js.Any])
-    if (batteryThrottlingTemperatures != null) __obj.updateDynamic("batteryThrottlingTemperatures")(batteryThrottlingTemperatures.asInstanceOf[js.Any])
-    if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
-    if (cpuShutdownTemperatures != null) __obj.updateDynamic("cpuShutdownTemperatures")(cpuShutdownTemperatures.asInstanceOf[js.Any])
-    if (cpuThrottlingTemperatures != null) __obj.updateDynamic("cpuThrottlingTemperatures")(cpuThrottlingTemperatures.asInstanceOf[js.Any])
-    if (deviceBasebandVersion != null) __obj.updateDynamic("deviceBasebandVersion")(deviceBasebandVersion.asInstanceOf[js.Any])
-    if (gpuShutdownTemperatures != null) __obj.updateDynamic("gpuShutdownTemperatures")(gpuShutdownTemperatures.asInstanceOf[js.Any])
-    if (gpuThrottlingTemperatures != null) __obj.updateDynamic("gpuThrottlingTemperatures")(gpuThrottlingTemperatures.asInstanceOf[js.Any])
-    if (hardware != null) __obj.updateDynamic("hardware")(hardware.asInstanceOf[js.Any])
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
-    if (skinShutdownTemperatures != null) __obj.updateDynamic("skinShutdownTemperatures")(skinShutdownTemperatures.asInstanceOf[js.Any])
-    if (skinThrottlingTemperatures != null) __obj.updateDynamic("skinThrottlingTemperatures")(skinThrottlingTemperatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHardwareInfo]
   }
+  @scala.inline
+  implicit class SchemaHardwareInfoOps[Self <: SchemaHardwareInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatteryShutdownTemperaturesVarargs(value: Double*): Self = this.set("batteryShutdownTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setBatteryShutdownTemperatures(value: js.Array[Double]): Self = this.set("batteryShutdownTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatteryShutdownTemperatures: Self = this.set("batteryShutdownTemperatures", js.undefined)
+    @scala.inline
+    def setBatteryThrottlingTemperaturesVarargs(value: Double*): Self = this.set("batteryThrottlingTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setBatteryThrottlingTemperatures(value: js.Array[Double]): Self = this.set("batteryThrottlingTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatteryThrottlingTemperatures: Self = this.set("batteryThrottlingTemperatures", js.undefined)
+    @scala.inline
+    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrand: Self = this.set("brand", js.undefined)
+    @scala.inline
+    def setCpuShutdownTemperaturesVarargs(value: Double*): Self = this.set("cpuShutdownTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setCpuShutdownTemperatures(value: js.Array[Double]): Self = this.set("cpuShutdownTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuShutdownTemperatures: Self = this.set("cpuShutdownTemperatures", js.undefined)
+    @scala.inline
+    def setCpuThrottlingTemperaturesVarargs(value: Double*): Self = this.set("cpuThrottlingTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setCpuThrottlingTemperatures(value: js.Array[Double]): Self = this.set("cpuThrottlingTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuThrottlingTemperatures: Self = this.set("cpuThrottlingTemperatures", js.undefined)
+    @scala.inline
+    def setDeviceBasebandVersion(value: String): Self = this.set("deviceBasebandVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceBasebandVersion: Self = this.set("deviceBasebandVersion", js.undefined)
+    @scala.inline
+    def setGpuShutdownTemperaturesVarargs(value: Double*): Self = this.set("gpuShutdownTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setGpuShutdownTemperatures(value: js.Array[Double]): Self = this.set("gpuShutdownTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGpuShutdownTemperatures: Self = this.set("gpuShutdownTemperatures", js.undefined)
+    @scala.inline
+    def setGpuThrottlingTemperaturesVarargs(value: Double*): Self = this.set("gpuThrottlingTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setGpuThrottlingTemperatures(value: js.Array[Double]): Self = this.set("gpuThrottlingTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGpuThrottlingTemperatures: Self = this.set("gpuThrottlingTemperatures", js.undefined)
+    @scala.inline
+    def setHardware(value: String): Self = this.set("hardware", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHardware: Self = this.set("hardware", js.undefined)
+    @scala.inline
+    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    @scala.inline
+    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerialNumber: Self = this.set("serialNumber", js.undefined)
+    @scala.inline
+    def setSkinShutdownTemperaturesVarargs(value: Double*): Self = this.set("skinShutdownTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setSkinShutdownTemperatures(value: js.Array[Double]): Self = this.set("skinShutdownTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkinShutdownTemperatures: Self = this.set("skinShutdownTemperatures", js.undefined)
+    @scala.inline
+    def setSkinThrottlingTemperaturesVarargs(value: Double*): Self = this.set("skinThrottlingTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setSkinThrottlingTemperatures(value: js.Array[Double]): Self = this.set("skinThrottlingTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkinThrottlingTemperatures: Self = this.set("skinThrottlingTemperatures", js.undefined)
+  }
+  
 }
 

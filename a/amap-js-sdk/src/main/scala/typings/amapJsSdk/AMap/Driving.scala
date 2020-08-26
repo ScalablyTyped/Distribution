@@ -15,6 +15,12 @@ trait Driving extends EventBindable {
   def getAvlidPolygons(): js.Array[js.Array[LngLat]] = js.native
   def getAvoidRoad(): String = js.native
   def search(origin: LngLat, destination: LngLat): Unit = js.native
+  def search(
+    origin: LngLat,
+    destination: LngLat,
+    opts: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* status */ String, /* result */ String | DrivingResult, Unit]
+  ): Unit = js.native
   def search(origin: LngLat, destination: LngLat, opts: Waypoints): Unit = js.native
   def search(
     origin: LngLat,

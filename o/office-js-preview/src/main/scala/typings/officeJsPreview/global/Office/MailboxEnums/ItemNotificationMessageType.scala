@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
 object ItemNotificationMessageType extends js.Object {
   /* "errorMessage" */ val ErrorMessage: typings.officeJsPreview.Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage with String = js.native
   /* "informationalMessage" */ val InformationalMessage: typings.officeJsPreview.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage with String = js.native
+  /* "insightMessage" */ val InsightMessage: typings.officeJsPreview.Office.MailboxEnums.ItemNotificationMessageType.InsightMessage with String = js.native
   /* "progressIndicator" */ val ProgressIndicator: typings.officeJsPreview.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[

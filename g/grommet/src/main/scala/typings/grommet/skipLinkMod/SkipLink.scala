@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/SkipLink", "SkipLink")
+@JSImport("grommet/es6/components/SkipLink", "SkipLink")
 @js.native
 object SkipLink extends TopLevel[FC[SkipLinkProps]]
 

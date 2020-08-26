@@ -13,6 +13,7 @@ trait BidiStreamingHandler[RequestType, ResponseType] extends Handler[RequestTyp
   var deserialize_Original: Deserialize[RequestType] = js.native
   @JSName("func")
   var func_Original: handleBidiStreamingCall[RequestType, ResponseType] = js.native
+  var path: String = js.native
   @JSName("serialize")
   var serialize_Original: Serialize[ResponseType] = js.native
   var `type`: HandlerType = js.native

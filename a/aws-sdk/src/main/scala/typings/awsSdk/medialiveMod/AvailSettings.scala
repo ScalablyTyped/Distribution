@@ -12,11 +12,30 @@ trait AvailSettings extends js.Object {
 
 object AvailSettings {
   @scala.inline
-  def apply(Scte35SpliceInsert: Scte35SpliceInsert = null, Scte35TimeSignalApos: Scte35TimeSignalApos = null): AvailSettings = {
+  def apply(): AvailSettings = {
     val __obj = js.Dynamic.literal()
-    if (Scte35SpliceInsert != null) __obj.updateDynamic("Scte35SpliceInsert")(Scte35SpliceInsert.asInstanceOf[js.Any])
-    if (Scte35TimeSignalApos != null) __obj.updateDynamic("Scte35TimeSignalApos")(Scte35TimeSignalApos.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailSettings]
   }
+  @scala.inline
+  implicit class AvailSettingsOps[Self <: AvailSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScte35SpliceInsert(value: Scte35SpliceInsert): Self = this.set("Scte35SpliceInsert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScte35SpliceInsert: Self = this.set("Scte35SpliceInsert", js.undefined)
+    @scala.inline
+    def setScte35TimeSignalApos(value: Scte35TimeSignalApos): Self = this.set("Scte35TimeSignalApos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScte35TimeSignalApos: Self = this.set("Scte35TimeSignalApos", js.undefined)
+  }
+  
 }
 

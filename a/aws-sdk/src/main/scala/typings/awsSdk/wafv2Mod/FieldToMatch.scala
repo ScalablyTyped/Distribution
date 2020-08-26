@@ -38,24 +38,50 @@ trait FieldToMatch extends js.Object {
 
 object FieldToMatch {
   @scala.inline
-  def apply(
-    AllQueryArguments: AllQueryArguments = null,
-    Body: Body = null,
-    Method: Method = null,
-    QueryString: QueryString = null,
-    SingleHeader: SingleHeader = null,
-    SingleQueryArgument: SingleQueryArgument = null,
-    UriPath: UriPath = null
-  ): FieldToMatch = {
+  def apply(): FieldToMatch = {
     val __obj = js.Dynamic.literal()
-    if (AllQueryArguments != null) __obj.updateDynamic("AllQueryArguments")(AllQueryArguments.asInstanceOf[js.Any])
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (Method != null) __obj.updateDynamic("Method")(Method.asInstanceOf[js.Any])
-    if (QueryString != null) __obj.updateDynamic("QueryString")(QueryString.asInstanceOf[js.Any])
-    if (SingleHeader != null) __obj.updateDynamic("SingleHeader")(SingleHeader.asInstanceOf[js.Any])
-    if (SingleQueryArgument != null) __obj.updateDynamic("SingleQueryArgument")(SingleQueryArgument.asInstanceOf[js.Any])
-    if (UriPath != null) __obj.updateDynamic("UriPath")(UriPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldToMatch]
   }
+  @scala.inline
+  implicit class FieldToMatchOps[Self <: FieldToMatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllQueryArguments(value: AllQueryArguments): Self = this.set("AllQueryArguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllQueryArguments: Self = this.set("AllQueryArguments", js.undefined)
+    @scala.inline
+    def setBody(value: Body): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setMethod(value: Method): Self = this.set("Method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("Method", js.undefined)
+    @scala.inline
+    def setQueryString(value: QueryString): Self = this.set("QueryString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryString: Self = this.set("QueryString", js.undefined)
+    @scala.inline
+    def setSingleHeader(value: SingleHeader): Self = this.set("SingleHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleHeader: Self = this.set("SingleHeader", js.undefined)
+    @scala.inline
+    def setSingleQueryArgument(value: SingleQueryArgument): Self = this.set("SingleQueryArgument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleQueryArgument: Self = this.set("SingleQueryArgument", js.undefined)
+    @scala.inline
+    def setUriPath(value: UriPath): Self = this.set("UriPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUriPath: Self = this.set("UriPath", js.undefined)
+  }
+  
 }
 

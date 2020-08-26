@@ -1,68 +1,67 @@
 package typings.reactStripeElements.mod.ReactStripeElements
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.stripeV3.anon.Base
-import typings.stripeV3.anon.Complete
-import typings.stripeV3.stripe.paymentRequest.StripePaymentRequest
-import typings.stripeV3.stripeV3Strings.default
-import typings.stripeV3.stripeV3Strings.solid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ElementProps
   extends typings.stripeV3.stripe.elements.ElementsOptions {
-  var className: js.UndefOr[String] = js.undefined
-  var elementRef: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.undefined
-  var onReady: js.UndefOr[js.Function1[/* el */ HTMLStripeElement, Unit]] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var elementRef: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.native
+  var id: js.UndefOr[String] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* event */ ElementChangeResponse, Unit]] = js.native
+  var onReady: js.UndefOr[js.Function1[/* el */ HTMLStripeElement, Unit]] = js.native
 }
 
 object ElementProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    classes: Base = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementRef: /* ref */ js.Any => Unit = null,
-    hideIcon: js.UndefOr[Boolean] = js.undefined,
-    hidePostalCode: js.UndefOr[Boolean] = js.undefined,
-    iconStyle: solid | default = null,
-    id: String = null,
-    onBlur: /* event */ ElementChangeResponse => Unit = null,
-    onChange: /* event */ ElementChangeResponse => Unit = null,
-    onFocus: /* event */ ElementChangeResponse => Unit = null,
-    onReady: /* el */ HTMLStripeElement => Unit = null,
-    paymentRequest: StripePaymentRequest = null,
-    placeholder: String = null,
-    placeholderCountry: String = null,
-    style: Complete = null,
-    supportedCountries: js.Array[String] = null,
-    value: String | StringDictionary[String] = null
-  ): ElementProps = {
+  def apply(): ElementProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementRef != null) __obj.updateDynamic("elementRef")(js.Any.fromFunction1(elementRef))
-    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePostalCode)) __obj.updateDynamic("hidePostalCode")(hidePostalCode.get.asInstanceOf[js.Any])
-    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
-    if (paymentRequest != null) __obj.updateDynamic("paymentRequest")(paymentRequest.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (placeholderCountry != null) __obj.updateDynamic("placeholderCountry")(placeholderCountry.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (supportedCountries != null) __obj.updateDynamic("supportedCountries")(supportedCountries.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementProps]
   }
+  @scala.inline
+  implicit class ElementPropsOps[Self <: ElementProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setElementRef(value: /* ref */ js.Any => Unit): Self = this.set("elementRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteElementRef: Self = this.set("elementRef", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setOnBlur(value: /* event */ ElementChangeResponse => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* event */ ElementChangeResponse => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnFocus(value: /* event */ ElementChangeResponse => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnReady(value: /* el */ HTMLStripeElement => Unit): Self = this.set("onReady", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnReady: Self = this.set("onReady", js.undefined)
+  }
+  
 }
 

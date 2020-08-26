@@ -70,40 +70,84 @@ trait VideoParameters extends js.Object {
 
 object VideoParameters {
   @scala.inline
-  def apply(
-    AspectRatio: AspectRatio = null,
-    BitRate: VideoBitRate = null,
-    Codec: VideoCodec = null,
-    CodecOptions: CodecOptions = null,
-    DisplayAspectRatio: AspectRatio = null,
-    FixedGOP: FixedGOP = null,
-    FrameRate: FrameRate = null,
-    KeyframesMaxDist: KeyframesMaxDist = null,
-    MaxFrameRate: MaxFrameRate = null,
-    MaxHeight: DigitsOrAuto = null,
-    MaxWidth: DigitsOrAuto = null,
-    PaddingPolicy: PaddingPolicy = null,
-    Resolution: Resolution = null,
-    SizingPolicy: SizingPolicy = null,
-    Watermarks: PresetWatermarks = null
-  ): VideoParameters = {
+  def apply(): VideoParameters = {
     val __obj = js.Dynamic.literal()
-    if (AspectRatio != null) __obj.updateDynamic("AspectRatio")(AspectRatio.asInstanceOf[js.Any])
-    if (BitRate != null) __obj.updateDynamic("BitRate")(BitRate.asInstanceOf[js.Any])
-    if (Codec != null) __obj.updateDynamic("Codec")(Codec.asInstanceOf[js.Any])
-    if (CodecOptions != null) __obj.updateDynamic("CodecOptions")(CodecOptions.asInstanceOf[js.Any])
-    if (DisplayAspectRatio != null) __obj.updateDynamic("DisplayAspectRatio")(DisplayAspectRatio.asInstanceOf[js.Any])
-    if (FixedGOP != null) __obj.updateDynamic("FixedGOP")(FixedGOP.asInstanceOf[js.Any])
-    if (FrameRate != null) __obj.updateDynamic("FrameRate")(FrameRate.asInstanceOf[js.Any])
-    if (KeyframesMaxDist != null) __obj.updateDynamic("KeyframesMaxDist")(KeyframesMaxDist.asInstanceOf[js.Any])
-    if (MaxFrameRate != null) __obj.updateDynamic("MaxFrameRate")(MaxFrameRate.asInstanceOf[js.Any])
-    if (MaxHeight != null) __obj.updateDynamic("MaxHeight")(MaxHeight.asInstanceOf[js.Any])
-    if (MaxWidth != null) __obj.updateDynamic("MaxWidth")(MaxWidth.asInstanceOf[js.Any])
-    if (PaddingPolicy != null) __obj.updateDynamic("PaddingPolicy")(PaddingPolicy.asInstanceOf[js.Any])
-    if (Resolution != null) __obj.updateDynamic("Resolution")(Resolution.asInstanceOf[js.Any])
-    if (SizingPolicy != null) __obj.updateDynamic("SizingPolicy")(SizingPolicy.asInstanceOf[js.Any])
-    if (Watermarks != null) __obj.updateDynamic("Watermarks")(Watermarks.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoParameters]
   }
+  @scala.inline
+  implicit class VideoParametersOps[Self <: VideoParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAspectRatio(value: AspectRatio): Self = this.set("AspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspectRatio: Self = this.set("AspectRatio", js.undefined)
+    @scala.inline
+    def setBitRate(value: VideoBitRate): Self = this.set("BitRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitRate: Self = this.set("BitRate", js.undefined)
+    @scala.inline
+    def setCodec(value: VideoCodec): Self = this.set("Codec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodec: Self = this.set("Codec", js.undefined)
+    @scala.inline
+    def setCodecOptions(value: CodecOptions): Self = this.set("CodecOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodecOptions: Self = this.set("CodecOptions", js.undefined)
+    @scala.inline
+    def setDisplayAspectRatio(value: AspectRatio): Self = this.set("DisplayAspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayAspectRatio: Self = this.set("DisplayAspectRatio", js.undefined)
+    @scala.inline
+    def setFixedGOP(value: FixedGOP): Self = this.set("FixedGOP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedGOP: Self = this.set("FixedGOP", js.undefined)
+    @scala.inline
+    def setFrameRate(value: FrameRate): Self = this.set("FrameRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameRate: Self = this.set("FrameRate", js.undefined)
+    @scala.inline
+    def setKeyframesMaxDist(value: KeyframesMaxDist): Self = this.set("KeyframesMaxDist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyframesMaxDist: Self = this.set("KeyframesMaxDist", js.undefined)
+    @scala.inline
+    def setMaxFrameRate(value: MaxFrameRate): Self = this.set("MaxFrameRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFrameRate: Self = this.set("MaxFrameRate", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: DigitsOrAuto): Self = this.set("MaxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("MaxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: DigitsOrAuto): Self = this.set("MaxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("MaxWidth", js.undefined)
+    @scala.inline
+    def setPaddingPolicy(value: PaddingPolicy): Self = this.set("PaddingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingPolicy: Self = this.set("PaddingPolicy", js.undefined)
+    @scala.inline
+    def setResolution(value: Resolution): Self = this.set("Resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("Resolution", js.undefined)
+    @scala.inline
+    def setSizingPolicy(value: SizingPolicy): Self = this.set("SizingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizingPolicy: Self = this.set("SizingPolicy", js.undefined)
+    @scala.inline
+    def setWatermarksVarargs(value: PresetWatermark*): Self = this.set("Watermarks", js.Array(value :_*))
+    @scala.inline
+    def setWatermarks(value: PresetWatermarks): Self = this.set("Watermarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatermarks: Self = this.set("Watermarks", js.undefined)
+  }
+  
 }
 

@@ -23,6 +23,14 @@ object nodeModuleNameResolver extends js.Object {
     containingFile: String,
     compilerOptions: CompilerOptions,
     host: ModuleResolutionHost,
+    cache: js.UndefOr[scala.Nothing],
+    redirectedReference: ResolvedProjectReference
+  ): ResolvedModuleWithFailedLookupLocations = js.native
+  def apply(
+    moduleName: String,
+    containingFile: String,
+    compilerOptions: CompilerOptions,
+    host: ModuleResolutionHost,
     cache: ModuleResolutionCache
   ): ResolvedModuleWithFailedLookupLocations = js.native
   def apply(

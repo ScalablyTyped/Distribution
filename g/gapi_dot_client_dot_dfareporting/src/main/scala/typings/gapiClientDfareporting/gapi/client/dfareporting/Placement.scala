@@ -4,94 +4,95 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Placement extends js.Object {
   /** Account ID of this placement. This field can be left blank. */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String] = js.native
   /**
     * Whether this placement opts out of ad blocking. When true, ad blocking is disabled for this placement. When false, the campaign and site settings take
     * effect.
     */
-  var adBlockingOptOut: js.UndefOr[Boolean] = js.undefined
+  var adBlockingOptOut: js.UndefOr[Boolean] = js.native
   /** Advertiser ID of this placement. This field can be left blank. */
-  var advertiserId: js.UndefOr[String] = js.undefined
+  var advertiserId: js.UndefOr[String] = js.native
   /** Dimension value for the ID of the advertiser. This is a read-only, auto-generated field. */
-  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
   /** Whether this placement is archived. */
-  var archived: js.UndefOr[Boolean] = js.undefined
+  var archived: js.UndefOr[Boolean] = js.native
   /** Campaign ID of this placement. This field is a required field on insertion. */
-  var campaignId: js.UndefOr[String] = js.undefined
+  var campaignId: js.UndefOr[String] = js.native
   /** Dimension value for the ID of the campaign. This is a read-only, auto-generated field. */
-  var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.native
   /** Comments for this placement. */
-  var comment: js.UndefOr[String] = js.undefined
+  var comment: js.UndefOr[String] = js.native
   /**
     * Placement compatibility. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering on desktop, on mobile devices or in mobile apps for regular or
     * interstitial ads respectively. APP and APP_INTERSTITIAL are no longer allowed for new placement insertions. Instead, use DISPLAY or
     * DISPLAY_INTERSTITIAL. IN_STREAM_VIDEO refers to rendering in in-stream video ads developed with the VAST standard. This field is required on insertion.
     */
-  var compatibility: js.UndefOr[String] = js.undefined
+  var compatibility: js.UndefOr[String] = js.native
   /** ID of the content category assigned to this placement. */
-  var contentCategoryId: js.UndefOr[String] = js.undefined
+  var contentCategoryId: js.UndefOr[String] = js.native
   /** Information about the creation of this placement. This is a read-only field. */
-  var createInfo: js.UndefOr[LastModifiedInfo] = js.undefined
+  var createInfo: js.UndefOr[LastModifiedInfo] = js.native
   /**
     * Directory site ID of this placement. On insert, you must set either this field or the siteId field to specify the site associated with this placement.
     * This is a required field that is read-only after insertion.
     */
-  var directorySiteId: js.UndefOr[String] = js.undefined
+  var directorySiteId: js.UndefOr[String] = js.native
   /** Dimension value for the ID of the directory site. This is a read-only, auto-generated field. */
-  var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
   /** External ID for this placement. */
-  var externalId: js.UndefOr[String] = js.undefined
+  var externalId: js.UndefOr[String] = js.native
   /** ID of this placement. This is a read-only, auto-generated field. */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** Dimension value for the ID of this placement. This is a read-only, auto-generated field. */
-  var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var idDimensionValue: js.UndefOr[DimensionValue] = js.native
   /** Key name of this placement. This is a read-only, auto-generated field. */
-  var keyName: js.UndefOr[String] = js.undefined
+  var keyName: js.UndefOr[String] = js.native
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#placement". */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** Information about the most recent modification of this placement. This is a read-only field. */
-  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
+  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
   /** Lookback window settings for this placement. */
-  var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.undefined
+  var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.native
   /** Name of this placement.This is a required field and must be less than 256 characters long. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** Whether payment was approved for this placement. This is a read-only field relevant only to publisher-paid placements. */
-  var paymentApproved: js.UndefOr[Boolean] = js.undefined
+  var paymentApproved: js.UndefOr[Boolean] = js.native
   /** Payment source for this placement. This is a required field that is read-only after insertion. */
-  var paymentSource: js.UndefOr[String] = js.undefined
+  var paymentSource: js.UndefOr[String] = js.native
   /** ID of this placement's group, if applicable. */
-  var placementGroupId: js.UndefOr[String] = js.undefined
+  var placementGroupId: js.UndefOr[String] = js.native
   /** Dimension value for the ID of the placement group. This is a read-only, auto-generated field. */
-  var placementGroupIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var placementGroupIdDimensionValue: js.UndefOr[DimensionValue] = js.native
   /** ID of the placement strategy assigned to this placement. */
-  var placementStrategyId: js.UndefOr[String] = js.undefined
+  var placementStrategyId: js.UndefOr[String] = js.native
   /** Pricing schedule of this placement. This field is required on insertion, specifically subfields startDate, endDate and pricingType. */
-  var pricingSchedule: js.UndefOr[PricingSchedule] = js.undefined
+  var pricingSchedule: js.UndefOr[PricingSchedule] = js.native
   /**
     * Whether this placement is the primary placement of a roadblock (placement group). You cannot change this field from true to false. Setting this field
     * to true will automatically set the primary field on the original primary placement of the roadblock to false, and it will automatically set the
     * roadblock's primaryPlacementId field to the ID of this placement.
     */
-  var primary: js.UndefOr[Boolean] = js.undefined
+  var primary: js.UndefOr[Boolean] = js.native
   /** Information about the last publisher update. This is a read-only field. */
-  var publisherUpdateInfo: js.UndefOr[LastModifiedInfo] = js.undefined
+  var publisherUpdateInfo: js.UndefOr[LastModifiedInfo] = js.native
   /**
     * Site ID associated with this placement. On insert, you must set either this field or the directorySiteId field to specify the site associated with this
     * placement. This is a required field that is read-only after insertion.
     */
-  var siteId: js.UndefOr[String] = js.undefined
+  var siteId: js.UndefOr[String] = js.native
   /** Dimension value for the ID of the site. This is a read-only, auto-generated field. */
-  var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
+  var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
   /** Size associated with this placement. When inserting or updating a placement, only the size ID field is used. This field is required on insertion. */
-  var size: js.UndefOr[Size] = js.undefined
+  var size: js.UndefOr[Size] = js.native
   /** Whether creatives assigned to this placement must be SSL-compliant. */
-  var sslRequired: js.UndefOr[Boolean] = js.undefined
+  var sslRequired: js.UndefOr[Boolean] = js.native
   /** Third-party placement status. */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String] = js.native
   /** Subaccount ID of this placement. This field can be left blank. */
-  var subaccountId: js.UndefOr[String] = js.undefined
+  var subaccountId: js.UndefOr[String] = js.native
   /**
     * Tag formats to generate for this placement. This field is required on insertion.
     * Acceptable values are:
@@ -111,113 +112,207 @@ trait Placement extends js.Object {
     * - "PLACEMENT_TAG_TRACKING_IFRAME"
     * - "PLACEMENT_TAG_TRACKING_JAVASCRIPT"
     */
-  var tagFormats: js.UndefOr[js.Array[String]] = js.undefined
+  var tagFormats: js.UndefOr[js.Array[String]] = js.native
   /** Tag settings for this placement. */
-  var tagSetting: js.UndefOr[TagSetting] = js.undefined
+  var tagSetting: js.UndefOr[TagSetting] = js.native
   /**
     * Whether Verification and ActiveView are disabled for in-stream video creatives for this placement. The same setting videoActiveViewOptOut exists on the
     * site level -- the opt out occurs if either of these settings are true. These settings are distinct from DirectorySites.settings.activeViewOptOut or
     * Sites.siteSettings.activeViewOptOut which only apply to display ads. However, Accounts.activeViewOptOut opts out both video traffic, as well as display
     * ads, from Verification and ActiveView.
     */
-  var videoActiveViewOptOut: js.UndefOr[Boolean] = js.undefined
+  var videoActiveViewOptOut: js.UndefOr[Boolean] = js.native
   /** A collection of settings which affect video creatives served through this placement. Applicable to placements with IN_STREAM_VIDEO compatibility. */
-  var videoSettings: js.UndefOr[VideoSettings] = js.undefined
+  var videoSettings: js.UndefOr[VideoSettings] = js.native
   /**
     * VPAID adapter setting for this placement. Controls which VPAID format the measurement adapter will use for in-stream video creatives assigned to this
     * placement.
     *
     * Note: Flash is no longer supported. This field now defaults to HTML5 when the following values are provided: FLASH, BOTH.
     */
-  var vpaidAdapterChoice: js.UndefOr[String] = js.undefined
+  var vpaidAdapterChoice: js.UndefOr[String] = js.native
 }
 
 object Placement {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    adBlockingOptOut: js.UndefOr[Boolean] = js.undefined,
-    advertiserId: String = null,
-    advertiserIdDimensionValue: DimensionValue = null,
-    archived: js.UndefOr[Boolean] = js.undefined,
-    campaignId: String = null,
-    campaignIdDimensionValue: DimensionValue = null,
-    comment: String = null,
-    compatibility: String = null,
-    contentCategoryId: String = null,
-    createInfo: LastModifiedInfo = null,
-    directorySiteId: String = null,
-    directorySiteIdDimensionValue: DimensionValue = null,
-    externalId: String = null,
-    id: String = null,
-    idDimensionValue: DimensionValue = null,
-    keyName: String = null,
-    kind: String = null,
-    lastModifiedInfo: LastModifiedInfo = null,
-    lookbackConfiguration: LookbackConfiguration = null,
-    name: String = null,
-    paymentApproved: js.UndefOr[Boolean] = js.undefined,
-    paymentSource: String = null,
-    placementGroupId: String = null,
-    placementGroupIdDimensionValue: DimensionValue = null,
-    placementStrategyId: String = null,
-    pricingSchedule: PricingSchedule = null,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    publisherUpdateInfo: LastModifiedInfo = null,
-    siteId: String = null,
-    siteIdDimensionValue: DimensionValue = null,
-    size: Size = null,
-    sslRequired: js.UndefOr[Boolean] = js.undefined,
-    status: String = null,
-    subaccountId: String = null,
-    tagFormats: js.Array[String] = null,
-    tagSetting: TagSetting = null,
-    videoActiveViewOptOut: js.UndefOr[Boolean] = js.undefined,
-    videoSettings: VideoSettings = null,
-    vpaidAdapterChoice: String = null
-  ): Placement = {
+  def apply(): Placement = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(adBlockingOptOut)) __obj.updateDynamic("adBlockingOptOut")(adBlockingOptOut.get.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
-    if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId.asInstanceOf[js.Any])
-    if (campaignIdDimensionValue != null) __obj.updateDynamic("campaignIdDimensionValue")(campaignIdDimensionValue.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility.asInstanceOf[js.Any])
-    if (contentCategoryId != null) __obj.updateDynamic("contentCategoryId")(contentCategoryId.asInstanceOf[js.Any])
-    if (createInfo != null) __obj.updateDynamic("createInfo")(createInfo.asInstanceOf[js.Any])
-    if (directorySiteId != null) __obj.updateDynamic("directorySiteId")(directorySiteId.asInstanceOf[js.Any])
-    if (directorySiteIdDimensionValue != null) __obj.updateDynamic("directorySiteIdDimensionValue")(directorySiteIdDimensionValue.asInstanceOf[js.Any])
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastModifiedInfo != null) __obj.updateDynamic("lastModifiedInfo")(lastModifiedInfo.asInstanceOf[js.Any])
-    if (lookbackConfiguration != null) __obj.updateDynamic("lookbackConfiguration")(lookbackConfiguration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(paymentApproved)) __obj.updateDynamic("paymentApproved")(paymentApproved.get.asInstanceOf[js.Any])
-    if (paymentSource != null) __obj.updateDynamic("paymentSource")(paymentSource.asInstanceOf[js.Any])
-    if (placementGroupId != null) __obj.updateDynamic("placementGroupId")(placementGroupId.asInstanceOf[js.Any])
-    if (placementGroupIdDimensionValue != null) __obj.updateDynamic("placementGroupIdDimensionValue")(placementGroupIdDimensionValue.asInstanceOf[js.Any])
-    if (placementStrategyId != null) __obj.updateDynamic("placementStrategyId")(placementStrategyId.asInstanceOf[js.Any])
-    if (pricingSchedule != null) __obj.updateDynamic("pricingSchedule")(pricingSchedule.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
-    if (publisherUpdateInfo != null) __obj.updateDynamic("publisherUpdateInfo")(publisherUpdateInfo.asInstanceOf[js.Any])
-    if (siteId != null) __obj.updateDynamic("siteId")(siteId.asInstanceOf[js.Any])
-    if (siteIdDimensionValue != null) __obj.updateDynamic("siteIdDimensionValue")(siteIdDimensionValue.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
-    if (tagFormats != null) __obj.updateDynamic("tagFormats")(tagFormats.asInstanceOf[js.Any])
-    if (tagSetting != null) __obj.updateDynamic("tagSetting")(tagSetting.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoActiveViewOptOut)) __obj.updateDynamic("videoActiveViewOptOut")(videoActiveViewOptOut.get.asInstanceOf[js.Any])
-    if (videoSettings != null) __obj.updateDynamic("videoSettings")(videoSettings.asInstanceOf[js.Any])
-    if (vpaidAdapterChoice != null) __obj.updateDynamic("vpaidAdapterChoice")(vpaidAdapterChoice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Placement]
   }
+  @scala.inline
+  implicit class PlacementOps[Self <: Placement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdBlockingOptOut(value: Boolean): Self = this.set("adBlockingOptOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdBlockingOptOut: Self = this.set("adBlockingOptOut", js.undefined)
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setAdvertiserIdDimensionValue(value: DimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchived: Self = this.set("archived", js.undefined)
+    @scala.inline
+    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    @scala.inline
+    def setCampaignIdDimensionValue(value: DimensionValue): Self = this.set("campaignIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignIdDimensionValue: Self = this.set("campaignIdDimensionValue", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setCompatibility(value: String): Self = this.set("compatibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompatibility: Self = this.set("compatibility", js.undefined)
+    @scala.inline
+    def setContentCategoryId(value: String): Self = this.set("contentCategoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentCategoryId: Self = this.set("contentCategoryId", js.undefined)
+    @scala.inline
+    def setCreateInfo(value: LastModifiedInfo): Self = this.set("createInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateInfo: Self = this.set("createInfo", js.undefined)
+    @scala.inline
+    def setDirectorySiteId(value: String): Self = this.set("directorySiteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectorySiteId: Self = this.set("directorySiteId", js.undefined)
+    @scala.inline
+    def setDirectorySiteIdDimensionValue(value: DimensionValue): Self = this.set("directorySiteIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectorySiteIdDimensionValue: Self = this.set("directorySiteIdDimensionValue", js.undefined)
+    @scala.inline
+    def setExternalId(value: String): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdDimensionValue(value: DimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    @scala.inline
+    def setKeyName(value: String): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("keyName", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastModifiedInfo(value: LastModifiedInfo): Self = this.set("lastModifiedInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedInfo: Self = this.set("lastModifiedInfo", js.undefined)
+    @scala.inline
+    def setLookbackConfiguration(value: LookbackConfiguration): Self = this.set("lookbackConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookbackConfiguration: Self = this.set("lookbackConfiguration", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPaymentApproved(value: Boolean): Self = this.set("paymentApproved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentApproved: Self = this.set("paymentApproved", js.undefined)
+    @scala.inline
+    def setPaymentSource(value: String): Self = this.set("paymentSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentSource: Self = this.set("paymentSource", js.undefined)
+    @scala.inline
+    def setPlacementGroupId(value: String): Self = this.set("placementGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementGroupId: Self = this.set("placementGroupId", js.undefined)
+    @scala.inline
+    def setPlacementGroupIdDimensionValue(value: DimensionValue): Self = this.set("placementGroupIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementGroupIdDimensionValue: Self = this.set("placementGroupIdDimensionValue", js.undefined)
+    @scala.inline
+    def setPlacementStrategyId(value: String): Self = this.set("placementStrategyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementStrategyId: Self = this.set("placementStrategyId", js.undefined)
+    @scala.inline
+    def setPricingSchedule(value: PricingSchedule): Self = this.set("pricingSchedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricingSchedule: Self = this.set("pricingSchedule", js.undefined)
+    @scala.inline
+    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setPublisherUpdateInfo(value: LastModifiedInfo): Self = this.set("publisherUpdateInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisherUpdateInfo: Self = this.set("publisherUpdateInfo", js.undefined)
+    @scala.inline
+    def setSiteId(value: String): Self = this.set("siteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteId: Self = this.set("siteId", js.undefined)
+    @scala.inline
+    def setSiteIdDimensionValue(value: DimensionValue): Self = this.set("siteIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteIdDimensionValue: Self = this.set("siteIdDimensionValue", js.undefined)
+    @scala.inline
+    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSslRequired(value: Boolean): Self = this.set("sslRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslRequired: Self = this.set("sslRequired", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    @scala.inline
+    def setTagFormatsVarargs(value: String*): Self = this.set("tagFormats", js.Array(value :_*))
+    @scala.inline
+    def setTagFormats(value: js.Array[String]): Self = this.set("tagFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagFormats: Self = this.set("tagFormats", js.undefined)
+    @scala.inline
+    def setTagSetting(value: TagSetting): Self = this.set("tagSetting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSetting: Self = this.set("tagSetting", js.undefined)
+    @scala.inline
+    def setVideoActiveViewOptOut(value: Boolean): Self = this.set("videoActiveViewOptOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoActiveViewOptOut: Self = this.set("videoActiveViewOptOut", js.undefined)
+    @scala.inline
+    def setVideoSettings(value: VideoSettings): Self = this.set("videoSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoSettings: Self = this.set("videoSettings", js.undefined)
+    @scala.inline
+    def setVpaidAdapterChoice(value: String): Self = this.set("vpaidAdapterChoice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpaidAdapterChoice: Self = this.set("vpaidAdapterChoice", js.undefined)
+  }
+  
 }
 

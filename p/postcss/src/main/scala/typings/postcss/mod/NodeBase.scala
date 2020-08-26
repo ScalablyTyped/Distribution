@@ -85,12 +85,12 @@ trait NodeBase extends js.Object {
     * @returns The next child of the node's parent; or, returns undefined if
     * the current node is the last child.
     */
-  def next(): ChildNode | Unit = js.native
+  def next(): js.UndefOr[ChildNode] = js.native
   /**
     * @returns The previous child of the node's parent; or, returns undefined
     * if the current node is the first child.
     */
-  def prev(): ChildNode | Unit = js.native
+  def prev(): js.UndefOr[ChildNode] = js.native
   /**
     * @param prop Name or code style property.
     * @param defaultType Name of default value. It can be easily missed if the
@@ -100,8 +100,8 @@ trait NodeBase extends js.Object {
     * will try to autodetect the code style property by looking at other nodes
     * in the tree.
     */
-  def raw(prop: String): js.Any = js.native
-  def raw(prop: String, defaultType: String): js.Any = js.native
+  def raw(prop: String): String = js.native
+  def raw(prop: String, defaultType: String): String = js.native
   /**
     * Removes the node from its parent and cleans the parent property in the
     * node and its children.

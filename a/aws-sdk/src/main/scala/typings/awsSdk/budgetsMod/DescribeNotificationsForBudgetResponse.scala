@@ -18,11 +18,32 @@ trait DescribeNotificationsForBudgetResponse extends js.Object {
 
 object DescribeNotificationsForBudgetResponse {
   @scala.inline
-  def apply(NextToken: GenericString = null, Notifications: Notifications = null): DescribeNotificationsForBudgetResponse = {
+  def apply(): DescribeNotificationsForBudgetResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Notifications != null) __obj.updateDynamic("Notifications")(Notifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNotificationsForBudgetResponse]
   }
+  @scala.inline
+  implicit class DescribeNotificationsForBudgetResponseOps[Self <: DescribeNotificationsForBudgetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: GenericString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setNotificationsVarargs(value: Notification*): Self = this.set("Notifications", js.Array(value :_*))
+    @scala.inline
+    def setNotifications(value: Notifications): Self = this.set("Notifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotifications: Self = this.set("Notifications", js.undefined)
+  }
+  
 }
 

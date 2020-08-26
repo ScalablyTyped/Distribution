@@ -1,9 +1,9 @@
 package typings.pulumiAws
 
+import typings.pulumiAws.appmeshRouteMod.RouteArgs
+import typings.pulumiAws.appmeshRouteMod.RouteState
 import typings.pulumiAws.meshMod.MeshArgs
 import typings.pulumiAws.meshMod.MeshState
-import typings.pulumiAws.routeMod.RouteArgs
-import typings.pulumiAws.routeMod.RouteState
 import typings.pulumiAws.virtualNodeMod.VirtualNodeArgs
 import typings.pulumiAws.virtualNodeMod.VirtualNodeState
 import typings.pulumiAws.virtualRouterMod.VirtualRouterArgs
@@ -32,12 +32,13 @@ object appmeshMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: MeshArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: MeshArgs, opts: CustomResourceOptions) = this()
   }
   
   @js.native
   class Route protected ()
-    extends typings.pulumiAws.routeMod.Route {
+    extends typings.pulumiAws.appmeshRouteMod.Route {
     /**
       * Create a Route resource with the given unique name, arguments, and options.
       *
@@ -101,8 +102,10 @@ object appmeshMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.meshMod.Mesh = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.meshMod.Mesh = js.native
     def get(name: String, id: Input[ID], state: MeshState): typings.pulumiAws.meshMod.Mesh = js.native
     def get(name: String, id: Input[ID], state: MeshState, opts: CustomResourceOptions): typings.pulumiAws.meshMod.Mesh = js.native
     /**
@@ -122,10 +125,12 @@ object appmeshMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.routeMod.Route = js.native
-    def get(name: String, id: Input[ID], state: RouteState): typings.pulumiAws.routeMod.Route = js.native
-    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): typings.pulumiAws.routeMod.Route = js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.appmeshRouteMod.Route = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.appmeshRouteMod.Route = js.native
+    def get(name: String, id: Input[ID], state: RouteState): typings.pulumiAws.appmeshRouteMod.Route = js.native
+    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): typings.pulumiAws.appmeshRouteMod.Route = js.native
     /**
       * Returns true if the given object is an instance of Route.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
@@ -143,8 +148,10 @@ object appmeshMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.virtualNodeMod.VirtualNode = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.virtualNodeMod.VirtualNode = js.native
     def get(name: String, id: Input[ID], state: VirtualNodeState): typings.pulumiAws.virtualNodeMod.VirtualNode = js.native
     def get(name: String, id: Input[ID], state: VirtualNodeState, opts: CustomResourceOptions): typings.pulumiAws.virtualNodeMod.VirtualNode = js.native
     /**
@@ -164,8 +171,10 @@ object appmeshMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.virtualRouterMod.VirtualRouter = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.virtualRouterMod.VirtualRouter = js.native
     def get(name: String, id: Input[ID], state: VirtualRouterState): typings.pulumiAws.virtualRouterMod.VirtualRouter = js.native
     def get(name: String, id: Input[ID], state: VirtualRouterState, opts: CustomResourceOptions): typings.pulumiAws.virtualRouterMod.VirtualRouter = js.native
     /**
@@ -185,8 +194,10 @@ object appmeshMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.virtualServiceMod.VirtualService = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.virtualServiceMod.VirtualService = js.native
     def get(name: String, id: Input[ID], state: VirtualServiceState): typings.pulumiAws.virtualServiceMod.VirtualService = js.native
     def get(name: String, id: Input[ID], state: VirtualServiceState, opts: CustomResourceOptions): typings.pulumiAws.virtualServiceMod.VirtualService = js.native
     /**

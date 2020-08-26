@@ -14,10 +14,26 @@ trait CreateDeliveryStreamOutput extends js.Object {
 
 object CreateDeliveryStreamOutput {
   @scala.inline
-  def apply(DeliveryStreamARN: DeliveryStreamARN = null): CreateDeliveryStreamOutput = {
+  def apply(): CreateDeliveryStreamOutput = {
     val __obj = js.Dynamic.literal()
-    if (DeliveryStreamARN != null) __obj.updateDynamic("DeliveryStreamARN")(DeliveryStreamARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeliveryStreamOutput]
   }
+  @scala.inline
+  implicit class CreateDeliveryStreamOutputOps[Self <: CreateDeliveryStreamOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeliveryStreamARN(value: DeliveryStreamARN): Self = this.set("DeliveryStreamARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryStreamARN: Self = this.set("DeliveryStreamARN", js.undefined)
+  }
+  
 }
 

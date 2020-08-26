@@ -22,16 +22,34 @@ trait IdentityInfo extends js.Object {
 
 object IdentityInfo {
   @scala.inline
-  def apply(
-    IdentityName: Identity = null,
-    IdentityType: IdentityType = null,
-    SendingEnabled: js.UndefOr[Enabled] = js.undefined
-  ): IdentityInfo = {
+  def apply(): IdentityInfo = {
     val __obj = js.Dynamic.literal()
-    if (IdentityName != null) __obj.updateDynamic("IdentityName")(IdentityName.asInstanceOf[js.Any])
-    if (IdentityType != null) __obj.updateDynamic("IdentityType")(IdentityType.asInstanceOf[js.Any])
-    if (!js.isUndefined(SendingEnabled)) __obj.updateDynamic("SendingEnabled")(SendingEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityInfo]
   }
+  @scala.inline
+  implicit class IdentityInfoOps[Self <: IdentityInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentityName(value: Identity): Self = this.set("IdentityName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityName: Self = this.set("IdentityName", js.undefined)
+    @scala.inline
+    def setIdentityType(value: IdentityType): Self = this.set("IdentityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityType: Self = this.set("IdentityType", js.undefined)
+    @scala.inline
+    def setSendingEnabled(value: Enabled): Self = this.set("SendingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendingEnabled: Self = this.set("SendingEnabled", js.undefined)
+  }
+  
 }
 

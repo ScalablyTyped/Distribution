@@ -1,72 +1,50 @@
 package typings.gulpSass.mod
 
-import typings.nodeSass.mod.FunctionDeclarations
-import typings.nodeSass.mod.Importer
 import typings.nodeSass.mod.Options
-import typings.nodeSass.mod.SassFunction
-import typings.nodeSass.nodeSassStrings.compact
-import typings.nodeSass.nodeSassStrings.compressed
-import typings.nodeSass.nodeSassStrings.expanded
-import typings.nodeSass.nodeSassStrings.nested
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SassOptions extends Options {
-  var error: js.UndefOr[js.Function1[/* err */ Error, _]] = js.undefined
-  var imagePaths: js.UndefOr[js.Array[String]] = js.undefined
-  var success: js.UndefOr[js.Function1[/* results */ SassResults, _]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* err */ Error, _]] = js.native
+  var imagePaths: js.UndefOr[js.Array[String]] = js.native
+  var success: js.UndefOr[js.Function1[/* results */ SassResults, _]] = js.native
 }
 
 object SassOptions {
   @scala.inline
-  def apply(
-    data: String = null,
-    error: /* err */ Error => _ = null,
-    file: String = null,
-    functions: FunctionDeclarations[SassFunction] = null,
-    imagePaths: js.Array[String] = null,
-    importer: Importer | js.Array[Importer] = null,
-    includePaths: js.Array[String] = null,
-    indentType: String = null,
-    indentWidth: js.UndefOr[Double] = js.undefined,
-    indentedSyntax: js.UndefOr[Boolean] = js.undefined,
-    linefeed: String = null,
-    omitSourceMapUrl: js.UndefOr[Boolean] = js.undefined,
-    outFile: String = null,
-    outputStyle: compact | compressed | expanded | nested = null,
-    precision: js.UndefOr[Double] = js.undefined,
-    sourceComments: js.UndefOr[Boolean] = js.undefined,
-    sourceMap: Boolean | String = null,
-    sourceMapContents: js.UndefOr[Boolean] = js.undefined,
-    sourceMapEmbed: js.UndefOr[Boolean] = js.undefined,
-    sourceMapRoot: String = null,
-    success: /* results */ SassResults => _ = null
-  ): SassOptions = {
+  def apply(): SassOptions = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (functions != null) __obj.updateDynamic("functions")(functions.asInstanceOf[js.Any])
-    if (imagePaths != null) __obj.updateDynamic("imagePaths")(imagePaths.asInstanceOf[js.Any])
-    if (importer != null) __obj.updateDynamic("importer")(importer.asInstanceOf[js.Any])
-    if (includePaths != null) __obj.updateDynamic("includePaths")(includePaths.asInstanceOf[js.Any])
-    if (indentType != null) __obj.updateDynamic("indentType")(indentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentWidth)) __obj.updateDynamic("indentWidth")(indentWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentedSyntax)) __obj.updateDynamic("indentedSyntax")(indentedSyntax.get.asInstanceOf[js.Any])
-    if (linefeed != null) __obj.updateDynamic("linefeed")(linefeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitSourceMapUrl)) __obj.updateDynamic("omitSourceMapUrl")(omitSourceMapUrl.get.asInstanceOf[js.Any])
-    if (outFile != null) __obj.updateDynamic("outFile")(outFile.asInstanceOf[js.Any])
-    if (outputStyle != null) __obj.updateDynamic("outputStyle")(outputStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceComments)) __obj.updateDynamic("sourceComments")(sourceComments.get.asInstanceOf[js.Any])
-    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMapContents)) __obj.updateDynamic("sourceMapContents")(sourceMapContents.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMapEmbed)) __obj.updateDynamic("sourceMapEmbed")(sourceMapEmbed.get.asInstanceOf[js.Any])
-    if (sourceMapRoot != null) __obj.updateDynamic("sourceMapRoot")(sourceMapRoot.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[SassOptions]
   }
+  @scala.inline
+  implicit class SassOptionsOps[Self <: SassOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: /* err */ Error => _): Self = this.set("error", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setImagePathsVarargs(value: String*): Self = this.set("imagePaths", js.Array(value :_*))
+    @scala.inline
+    def setImagePaths(value: js.Array[String]): Self = this.set("imagePaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagePaths: Self = this.set("imagePaths", js.undefined)
+    @scala.inline
+    def setSuccess(value: /* results */ SassResults => _): Self = this.set("success", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+  }
+  
 }
 

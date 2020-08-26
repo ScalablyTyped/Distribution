@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "wouter" : "2.4.0"
+      "wouter" : "2.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "wouter" : "2.4.0"
+      "wouter" : "2.5.1"
     }
   ],
   "compile-devDependencies" : [

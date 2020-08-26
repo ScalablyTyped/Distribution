@@ -20,6 +20,7 @@ trait IFlow extends js.Object {
   def getSize(): Double = js.native
   def isUploading(): Boolean = js.native
   def off(): Unit = js.native
+  def off(event: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def off(event: String): Unit = js.native
   def off(event: String, callback: js.Function): Unit = js.native
   def on(event: String, callback: js.Function): Unit = js.native

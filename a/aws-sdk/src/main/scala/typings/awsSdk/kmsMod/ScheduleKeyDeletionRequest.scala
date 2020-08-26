@@ -18,10 +18,28 @@ trait ScheduleKeyDeletionRequest extends js.Object {
 
 object ScheduleKeyDeletionRequest {
   @scala.inline
-  def apply(KeyId: KeyIdType, PendingWindowInDays: js.UndefOr[PendingWindowInDaysType] = js.undefined): ScheduleKeyDeletionRequest = {
+  def apply(KeyId: KeyIdType): ScheduleKeyDeletionRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(PendingWindowInDays)) __obj.updateDynamic("PendingWindowInDays")(PendingWindowInDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleKeyDeletionRequest]
   }
+  @scala.inline
+  implicit class ScheduleKeyDeletionRequestOps[Self <: ScheduleKeyDeletionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPendingWindowInDays(value: PendingWindowInDaysType): Self = this.set("PendingWindowInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingWindowInDays: Self = this.set("PendingWindowInDays", js.undefined)
+  }
+  
 }
 

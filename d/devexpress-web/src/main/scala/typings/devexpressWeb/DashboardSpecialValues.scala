@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Provides access to dashboard special values.
   */
+@js.native
 trait DashboardSpecialValues extends js.Object
 

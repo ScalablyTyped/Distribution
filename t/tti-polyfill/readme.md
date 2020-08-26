@@ -12,7 +12,7 @@ Polyfill for Time to Interactive. See https://goo.gl/OSmrPk
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 1931801 |
+| # downloads        | 2003378 |
 | # stars            | 0 |
 
 ## Links

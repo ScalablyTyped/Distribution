@@ -19,14 +19,30 @@ trait SchemaRestResource extends js.Object {
 
 object SchemaRestResource {
   @scala.inline
-  def apply(
-    methods: StringDictionary[SchemaRestMethod] = null,
-    resources: StringDictionary[SchemaRestResource] = null
-  ): SchemaRestResource = {
+  def apply(): SchemaRestResource = {
     val __obj = js.Dynamic.literal()
-    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRestResource]
   }
+  @scala.inline
+  implicit class SchemaRestResourceOps[Self <: SchemaRestResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMethods(value: StringDictionary[SchemaRestMethod]): Self = this.set("methods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethods: Self = this.set("methods", js.undefined)
+    @scala.inline
+    def setResources(value: StringDictionary[SchemaRestResource]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Ecore (EMOF) JavaScript Implementation
 | Keywords           | emf, emof, model |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 1680 |
+| # downloads        | 1562 |
 | # stars            | 0 |
 
 ## Links

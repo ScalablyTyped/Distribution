@@ -1,6 +1,5 @@
 package typings.firebaseStorage
 
-import typings.firebaseStorage.authwrapperMod.AuthWrapper
 import typings.firebaseStorage.blobMod.FbsBlob
 import typings.firebaseStorage.locationMod.Location
 import typings.firebaseStorage.metadataMod.Mappings
@@ -11,6 +10,7 @@ import typings.firebaseStorage.observerMod.StorageObserver
 import typings.firebaseStorage.observerMod.Subscribe
 import typings.firebaseStorage.observerMod.Unsubscribe
 import typings.firebaseStorage.referenceMod.Reference
+import typings.firebaseStorage.serviceMod.StorageService
 import typings.firebaseStorage.srcMetadataMod.Metadata
 import typings.firebaseStorage.taskenumsMod.TaskEvent
 import typings.firebaseStorage.tasksnapshotMod.UploadTaskSnapshot
@@ -29,10 +29,10 @@ object taskMod extends js.Object {
       *     from, untyped to avoid cyclic dependencies.
       * @param blob The blob to upload.
       */
-    def this(ref: Reference, authWrapper: AuthWrapper, location: Location, mappings: Mappings, blob: FbsBlob) = this()
+    def this(ref: Reference, service: StorageService, location: Location, mappings: Mappings, blob: FbsBlob) = this()
     def this(
       ref: Reference,
-      authWrapper: AuthWrapper,
+      service: StorageService,
       location: Location,
       mappings: Mappings,
       blob: FbsBlob,
@@ -42,7 +42,6 @@ object taskMod extends js.Object {
       * Adds the given observer.
       */
     var addObserver_ : js.Any = js.native
-    var authWrapper_ : js.Any = js.native
     var blob_ : js.Any = js.native
     var chunkMultiplier_ : js.Any = js.native
     var completeTransitions_ : js.Any = js.native
@@ -76,6 +75,7 @@ object taskMod extends js.Object {
     var resolveToken_ : js.Any = js.native
     var resolve_ : js.Any = js.native
     var resumable_ : js.Any = js.native
+    var service_ : js.Any = js.native
     var shouldDoResumable_ : js.Any = js.native
     var start_ : js.Any = js.native
     var state_ : js.Any = js.native
@@ -98,10 +98,31 @@ object taskMod extends js.Object {
       * @param type The type of event to listen for.
       */
     def on(`type`: TaskEvent): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: js.UndefOr[scala.Nothing],
+      error: js.UndefOr[scala.Nothing],
+      completed: CompleteFn
+    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: js.UndefOr[scala.Nothing], error: Null, completed: CompleteFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: js.UndefOr[scala.Nothing], error: ErrorFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: js.UndefOr[scala.Nothing],
+      error: ErrorFn,
+      completed: CompleteFn
+    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Null, error: js.UndefOr[scala.Nothing], completed: CompleteFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(`type`: TaskEvent, nextOrObserver: Null, error: Null, completed: CompleteFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(`type`: TaskEvent, nextOrObserver: Null, error: ErrorFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(`type`: TaskEvent, nextOrObserver: Null, error: ErrorFn, completed: CompleteFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(`type`: TaskEvent, nextOrObserver: NextFn[UploadTaskSnapshot]): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: NextFn[UploadTaskSnapshot],
+      error: js.UndefOr[scala.Nothing],
+      completed: CompleteFn
+    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(`type`: TaskEvent, nextOrObserver: NextFn[UploadTaskSnapshot], error: Null, completed: CompleteFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(`type`: TaskEvent, nextOrObserver: NextFn[UploadTaskSnapshot], error: ErrorFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(
@@ -111,6 +132,12 @@ object taskMod extends js.Object {
       completed: CompleteFn
     ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(`type`: TaskEvent, nextOrObserver: StorageObserver[UploadTaskSnapshot]): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: StorageObserver[UploadTaskSnapshot],
+      error: js.UndefOr[scala.Nothing],
+      completed: CompleteFn
+    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(
       `type`: TaskEvent,
       nextOrObserver: StorageObserver[UploadTaskSnapshot],
@@ -142,6 +169,10 @@ object taskMod extends js.Object {
       * @param onRejected The rejection callback.
       */
     def `then`[U](): js.Promise[U] = js.native
+    def `then`[U](
+      onFulfilled: js.UndefOr[scala.Nothing],
+      onRejected: js.Function1[/* error */ Error, U | js.Promise[U]]
+    ): js.Promise[U] = js.native
     def `then`[U](onFulfilled: js.Function1[/* value */ UploadTaskSnapshot, U | js.Promise[U]]): js.Promise[U] = js.native
     def `then`[U](
       onFulfilled: js.Function1[/* value */ UploadTaskSnapshot, U | js.Promise[U]],

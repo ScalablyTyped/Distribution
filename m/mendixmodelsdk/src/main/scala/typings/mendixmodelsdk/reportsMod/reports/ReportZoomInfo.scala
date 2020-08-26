@@ -27,11 +27,9 @@ class ReportZoomInfo protected () extends Element {
   var model_FReportZoomInfo: IModel = js.native
   def containerAsBasicReport: BasicReport = js.native
   def mappings: IList[ReportZoomMapping] = js.native
-  def targetPage(): js.Any = js.native
-  def targetPage(newValue: IPage): js.Any = js.native
+  def targetPage: IPage | Null = js.native
   def targetPageQualifiedName: String | Null = js.native
-  @JSName("targetPage")
-  def targetPage_Union: IPage | Null = js.native
+  def targetPage_=(newValue: IPage | Null): Unit = js.native
 }
 
 /* static members */

@@ -16,6 +16,7 @@ class Pushgateway_ protected () extends js.Object {
   	 */
   def this(url: String) = this()
   def this(url: String, options: js.Any) = this()
+  def this(url: String, options: js.UndefOr[scala.Nothing], registry: Registry) = this()
   def this(url: String, options: js.Any, registry: Registry) = this()
   /**
   	 * Delete all metrics for jobName

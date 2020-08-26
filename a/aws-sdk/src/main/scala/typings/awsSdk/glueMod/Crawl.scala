@@ -34,22 +34,46 @@ trait Crawl extends js.Object {
 
 object Crawl {
   @scala.inline
-  def apply(
-    CompletedOn: TimestampValue = null,
-    ErrorMessage: DescriptionString = null,
-    LogGroup: LogGroup = null,
-    LogStream: LogStream = null,
-    StartedOn: TimestampValue = null,
-    State: CrawlState = null
-  ): Crawl = {
+  def apply(): Crawl = {
     val __obj = js.Dynamic.literal()
-    if (CompletedOn != null) __obj.updateDynamic("CompletedOn")(CompletedOn.asInstanceOf[js.Any])
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (LogGroup != null) __obj.updateDynamic("LogGroup")(LogGroup.asInstanceOf[js.Any])
-    if (LogStream != null) __obj.updateDynamic("LogStream")(LogStream.asInstanceOf[js.Any])
-    if (StartedOn != null) __obj.updateDynamic("StartedOn")(StartedOn.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[Crawl]
   }
+  @scala.inline
+  implicit class CrawlOps[Self <: Crawl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletedOn(value: TimestampValue): Self = this.set("CompletedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedOn: Self = this.set("CompletedOn", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: DescriptionString): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setLogGroup(value: LogGroup): Self = this.set("LogGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroup: Self = this.set("LogGroup", js.undefined)
+    @scala.inline
+    def setLogStream(value: LogStream): Self = this.set("LogStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogStream: Self = this.set("LogStream", js.undefined)
+    @scala.inline
+    def setStartedOn(value: TimestampValue): Self = this.set("StartedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedOn: Self = this.set("StartedOn", js.undefined)
+    @scala.inline
+    def setState(value: CrawlState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

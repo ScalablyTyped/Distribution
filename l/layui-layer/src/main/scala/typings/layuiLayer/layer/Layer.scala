@@ -37,7 +37,11 @@ trait Layer extends js.Object {
     * @param yes
     */
   def alert(): Index = js.native
+  def alert(content: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], yes: Yes): Index = js.native
+  def alert(content: js.UndefOr[scala.Nothing], options: Options): Index = js.native
+  def alert(content: js.UndefOr[scala.Nothing], options: Options, yes: Yes): Index = js.native
   def alert(content: String): Index = js.native
+  def alert(content: String, options: js.UndefOr[scala.Nothing], yes: Yes): Index = js.native
   def alert(content: String, options: Options): Index = js.native
   def alert(content: String, options: Options, yes: Yes): Index = js.native
   def alert(content: String, yes: Yes): Index = js.native
@@ -54,16 +58,7 @@ trait Layer extends js.Object {
     * @param type
     */
   def closeAll(): Unit = js.native
-  @JSName("closeAll")
-  def closeAll_dialog(`type`: dialog): Unit = js.native
-  @JSName("closeAll")
-  def closeAll_iframe(`type`: iframe): Unit = js.native
-  @JSName("closeAll")
-  def closeAll_loading(`type`: loading): Unit = js.native
-  @JSName("closeAll")
-  def closeAll_page(`type`: page): Unit = js.native
-  @JSName("closeAll")
-  def closeAll_tips(`type`: tips): Unit = js.native
+  def closeAll(`type`: dialog | page | iframe | loading | tips): Unit = js.native
   /**
     * 初始化全局配置
     * @param options
@@ -77,15 +72,26 @@ trait Layer extends js.Object {
     * @param cancel
     */
   def confirm(): Index = js.native
+  def confirm(
+    content: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    yes: js.UndefOr[Yes],
+    cancel: Cancel
+  ): Index = js.native
+  def confirm(content: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], yes: Yes): Index = js.native
+  def confirm(content: js.UndefOr[scala.Nothing], options: Options): Index = js.native
+  def confirm(content: js.UndefOr[scala.Nothing], options: Options, yes: js.UndefOr[Yes], cancel: Cancel): Index = js.native
+  def confirm(content: js.UndefOr[scala.Nothing], options: Options, yes: Yes): Index = js.native
   def confirm(content: String): Index = js.native
+  def confirm(content: String, options: js.UndefOr[Yes], yes: Cancel | Yes): Index = js.native
+  def confirm(content: String, options: js.UndefOr[scala.Nothing], yes: js.UndefOr[Yes], cancel: Cancel): Index = js.native
   def confirm(content: String, options: Options): Index = js.native
+  def confirm(content: String, options: Options, yes: js.UndefOr[Yes], cancel: Cancel): Index = js.native
   def confirm(content: String, options: Options, yes: Yes): Index = js.native
-  def confirm(content: String, options: Options, yes: Yes, cancel: Cancel): Index = js.native
   def confirm(content: String, yes: Yes): Index = js.native
-  def confirm(content: String, yes: Yes, cancel: Cancel): Index = js.native
   def confirm(options: Options): Index = js.native
+  def confirm(options: Options, yes: js.UndefOr[Yes], cancel: Cancel): Index = js.native
   def confirm(options: Options, yes: Yes): Index = js.native
-  def confirm(options: Options, yes: Yes, cancel: Cancel): Index = js.native
   def confirm(yes: Yes): Index = js.native
   def confirm(yes: Yes, cancel: Cancel): Index = js.native
   /**
@@ -121,6 +127,7 @@ trait Layer extends js.Object {
     * @param options
     */
   def load(): Index = js.native
+  def load(icon: js.UndefOr[scala.Nothing], options: Options): Index = js.native
   @JSName("load")
   def load_0(icon: `0`): Index = js.native
   @JSName("load")
@@ -146,6 +153,7 @@ trait Layer extends js.Object {
     */
   def msg(content: String): Index = js.native
   def msg(content: String, end: End): Index = js.native
+  def msg(content: String, options: js.UndefOr[scala.Nothing], end: End): Index = js.native
   def msg(content: String, options: Options): Index = js.native
   def msg(content: String, options: Options, end: End): Index = js.native
   /**
@@ -165,6 +173,7 @@ trait Layer extends js.Object {
     * @param yes
     */
   def prompt(): Index = js.native
+  def prompt(options: js.UndefOr[scala.Nothing], yes: Prompt): Index = js.native
   def prompt(options: PromptOptions): Index = js.native
   def prompt(options: PromptOptions, yes: Prompt): Index = js.native
   def prompt(yes: Prompt): Index = js.native

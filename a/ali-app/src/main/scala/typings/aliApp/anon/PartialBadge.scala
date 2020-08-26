@@ -10,24 +10,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<ali-app.my.Badge> */
+@js.native
 trait PartialBadge extends js.Object {
-  var index: js.UndefOr[Double] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[none | point | num | text | more | String] = js.undefined
+  var index: js.UndefOr[Double] = js.native
+  var text: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[none | point | num | text | more | String] = js.native
 }
 
 object PartialBadge {
   @scala.inline
-  def apply(
-    index: js.UndefOr[Double] = js.undefined,
-    text: String = null,
-    `type`: none | point | num | text | more | String = null
-  ): PartialBadge = {
+  def apply(): PartialBadge = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialBadge]
   }
+  @scala.inline
+  implicit class PartialBadgeOps[Self <: PartialBadge] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setType(value: none | point | num | text | more | String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

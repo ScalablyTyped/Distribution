@@ -38,21 +38,44 @@ trait StartOutboundVoiceContactRequest extends js.Object {
 
 object StartOutboundVoiceContactRequest {
   @scala.inline
-  def apply(
-    ContactFlowId: ContactFlowId,
-    DestinationPhoneNumber: PhoneNumber,
-    InstanceId: InstanceId,
-    Attributes: Attributes = null,
-    ClientToken: ClientToken = null,
-    QueueId: QueueId = null,
-    SourcePhoneNumber: PhoneNumber = null
-  ): StartOutboundVoiceContactRequest = {
+  def apply(ContactFlowId: ContactFlowId, DestinationPhoneNumber: PhoneNumber, InstanceId: InstanceId): StartOutboundVoiceContactRequest = {
     val __obj = js.Dynamic.literal(ContactFlowId = ContactFlowId.asInstanceOf[js.Any], DestinationPhoneNumber = DestinationPhoneNumber.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (QueueId != null) __obj.updateDynamic("QueueId")(QueueId.asInstanceOf[js.Any])
-    if (SourcePhoneNumber != null) __obj.updateDynamic("SourcePhoneNumber")(SourcePhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOutboundVoiceContactRequest]
   }
+  @scala.inline
+  implicit class StartOutboundVoiceContactRequestOps[Self <: StartOutboundVoiceContactRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContactFlowId(value: ContactFlowId): Self = this.set("ContactFlowId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationPhoneNumber(value: PhoneNumber): Self = this.set("DestinationPhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributes(value: Attributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setQueueId(value: QueueId): Self = this.set("QueueId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueueId: Self = this.set("QueueId", js.undefined)
+    @scala.inline
+    def setSourcePhoneNumber(value: PhoneNumber): Self = this.set("SourcePhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcePhoneNumber: Self = this.set("SourcePhoneNumber", js.undefined)
+  }
+  
 }
 

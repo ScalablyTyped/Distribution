@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "DataTable")
+@JSImport("grommet/es6", "DataTable")
 @js.native
 class DataTable[TRowType] ()
   extends Component[

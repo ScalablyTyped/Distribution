@@ -18,44 +18,23 @@ trait MutationResult[TResult] extends js.Object
 
 object MutationResult {
   @scala.inline
-  def IdleMutationResult[TResult](error: Null, promise: js.Promise[TResult], reset: () => Unit, status: idle, data: TResult = null): MutationResult[TResult] = {
+  def IdleMutationResult[TResult](error: Null, promise: js.Promise[TResult], reset: () => Unit, status: idle): MutationResult[TResult] = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationResult[TResult]]
   }
   @scala.inline
-  def LoadingMutationResult[TResult](
-    promise: js.Promise[TResult],
-    reset: () => Unit,
-    status: loading,
-    data: TResult = null,
-    error: js.Any = null
-  ): MutationResult[TResult] = {
-    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+  def LoadingMutationResult[TResult](promise: js.Promise[TResult], reset: () => Unit, status: loading): MutationResult[TResult] = {
+    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationResult[TResult]]
   }
   @scala.inline
-  def ErrorMutationResult[TResult](
-    promise: js.Promise[TResult],
-    reset: () => Unit,
-    status: error,
-    data: TResult = null,
-    error: js.Any = null
-  ): MutationResult[TResult] = {
-    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+  def ErrorMutationResult[TResult](promise: js.Promise[TResult], reset: () => Unit, status: error): MutationResult[TResult] = {
+    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationResult[TResult]]
   }
   @scala.inline
-  def SuccessMutationResult[TResult](
-    data: TResult,
-    promise: js.Promise[TResult],
-    reset: () => Unit,
-    status: success,
-    error: js.Any = null
-  ): MutationResult[TResult] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
+  def SuccessMutationResult[TResult](data: TResult, promise: js.Promise[TResult], reset: () => Unit, status: success): MutationResult[TResult] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationResult[TResult]]
   }
 }

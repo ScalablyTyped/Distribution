@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Renderer extends js.Object {
-  def getContext(): IRenderContext
-  def resize(width: Double, height: Double): Renderer
+  def getContext(): IRenderContext = js.native
+  def resize(width: Double, height: Double): Renderer = js.native
 }
 
 @JSGlobal("Vex.Flow.Renderer")

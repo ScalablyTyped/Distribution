@@ -7,24 +7,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DivProps
   extends AllHTMLAttributes[HTMLDivElement]
      with ClassAttributes[HTMLDivElement] {
-  var `data-testid`: js.UndefOr[String] = js.undefined
+  var `data-testid`: js.UndefOr[String] = js.native
 }
 
 object DivProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLDivElement] = null,
-    ClassAttributes: ClassAttributes[HTMLDivElement] = null,
-    `data-testid`: String = null
-  ): DivProps = {
+  def apply(): DivProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (`data-testid` != null) __obj.updateDynamic("data-testid")(`data-testid`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DivProps]
   }
+  @scala.inline
+  implicit class DivPropsOps[Self <: DivProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setData-testid`(value: String): Self = this.set("data-testid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteData-testid`: Self = this.set("data-testid", js.undefined)
+  }
+  
 }
 

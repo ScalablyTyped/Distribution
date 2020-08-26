@@ -26,5 +26,24 @@ object InputConfig {
     val __obj = js.Dynamic.literal(DataInputConfig = DataInputConfig.asInstanceOf[js.Any], Framework = Framework.asInstanceOf[js.Any], S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputConfig]
   }
+  @scala.inline
+  implicit class InputConfigOps[Self <: InputConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataInputConfig(value: DataInputConfig): Self = this.set("DataInputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFramework(value: Framework): Self = this.set("Framework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3Uri(value: S3Uri): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
+  }
+  
 }
 

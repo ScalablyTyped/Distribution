@@ -86,22 +86,54 @@ trait SchemaBuildBazelRemoteExecutionV2Command extends js.Object {
 
 object SchemaBuildBazelRemoteExecutionV2Command {
   @scala.inline
-  def apply(
-    arguments: js.Array[String] = null,
-    environmentVariables: js.Array[SchemaBuildBazelRemoteExecutionV2CommandEnvironmentVariable] = null,
-    outputDirectories: js.Array[String] = null,
-    outputFiles: js.Array[String] = null,
-    platform: SchemaBuildBazelRemoteExecutionV2Platform = null,
-    workingDirectory: String = null
-  ): SchemaBuildBazelRemoteExecutionV2Command = {
+  def apply(): SchemaBuildBazelRemoteExecutionV2Command = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
-    if (outputDirectories != null) __obj.updateDynamic("outputDirectories")(outputDirectories.asInstanceOf[js.Any])
-    if (outputFiles != null) __obj.updateDynamic("outputFiles")(outputFiles.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2Command]
   }
+  @scala.inline
+  implicit class SchemaBuildBazelRemoteExecutionV2CommandOps[Self <: SchemaBuildBazelRemoteExecutionV2Command] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgumentsVarargs(value: String*): Self = this.set("arguments", js.Array(value :_*))
+    @scala.inline
+    def setArguments(value: js.Array[String]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArguments: Self = this.set("arguments", js.undefined)
+    @scala.inline
+    def setEnvironmentVariablesVarargs(value: SchemaBuildBazelRemoteExecutionV2CommandEnvironmentVariable*): Self = this.set("environmentVariables", js.Array(value :_*))
+    @scala.inline
+    def setEnvironmentVariables(value: js.Array[SchemaBuildBazelRemoteExecutionV2CommandEnvironmentVariable]): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    @scala.inline
+    def setOutputDirectoriesVarargs(value: String*): Self = this.set("outputDirectories", js.Array(value :_*))
+    @scala.inline
+    def setOutputDirectories(value: js.Array[String]): Self = this.set("outputDirectories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputDirectories: Self = this.set("outputDirectories", js.undefined)
+    @scala.inline
+    def setOutputFilesVarargs(value: String*): Self = this.set("outputFiles", js.Array(value :_*))
+    @scala.inline
+    def setOutputFiles(value: js.Array[String]): Self = this.set("outputFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFiles: Self = this.set("outputFiles", js.undefined)
+    @scala.inline
+    def setPlatform(value: SchemaBuildBazelRemoteExecutionV2Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setWorkingDirectory(value: String): Self = this.set("workingDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkingDirectory: Self = this.set("workingDirectory", js.undefined)
+  }
+  
 }
 

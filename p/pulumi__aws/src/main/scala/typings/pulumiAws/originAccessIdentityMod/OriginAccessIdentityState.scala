@@ -42,22 +42,46 @@ trait OriginAccessIdentityState extends js.Object {
 
 object OriginAccessIdentityState {
   @scala.inline
-  def apply(
-    callerReference: Input[String] = null,
-    cloudfrontAccessIdentityPath: Input[String] = null,
-    comment: Input[String] = null,
-    etag: Input[String] = null,
-    iamArn: Input[String] = null,
-    s3CanonicalUserId: Input[String] = null
-  ): OriginAccessIdentityState = {
+  def apply(): OriginAccessIdentityState = {
     val __obj = js.Dynamic.literal()
-    if (callerReference != null) __obj.updateDynamic("callerReference")(callerReference.asInstanceOf[js.Any])
-    if (cloudfrontAccessIdentityPath != null) __obj.updateDynamic("cloudfrontAccessIdentityPath")(cloudfrontAccessIdentityPath.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (iamArn != null) __obj.updateDynamic("iamArn")(iamArn.asInstanceOf[js.Any])
-    if (s3CanonicalUserId != null) __obj.updateDynamic("s3CanonicalUserId")(s3CanonicalUserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginAccessIdentityState]
   }
+  @scala.inline
+  implicit class OriginAccessIdentityStateOps[Self <: OriginAccessIdentityState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallerReference(value: Input[String]): Self = this.set("callerReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallerReference: Self = this.set("callerReference", js.undefined)
+    @scala.inline
+    def setCloudfrontAccessIdentityPath(value: Input[String]): Self = this.set("cloudfrontAccessIdentityPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudfrontAccessIdentityPath: Self = this.set("cloudfrontAccessIdentityPath", js.undefined)
+    @scala.inline
+    def setComment(value: Input[String]): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setEtag(value: Input[String]): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setIamArn(value: Input[String]): Self = this.set("iamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamArn: Self = this.set("iamArn", js.undefined)
+    @scala.inline
+    def setS3CanonicalUserId(value: Input[String]): Self = this.set("s3CanonicalUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3CanonicalUserId: Self = this.set("s3CanonicalUserId", js.undefined)
+  }
+  
 }
 

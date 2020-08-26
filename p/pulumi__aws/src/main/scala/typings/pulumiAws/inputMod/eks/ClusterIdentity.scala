@@ -15,10 +15,28 @@ trait ClusterIdentity extends js.Object {
 
 object ClusterIdentity {
   @scala.inline
-  def apply(oidcs: Input[js.Array[Input[ClusterIdentityOidc]]] = null): ClusterIdentity = {
+  def apply(): ClusterIdentity = {
     val __obj = js.Dynamic.literal()
-    if (oidcs != null) __obj.updateDynamic("oidcs")(oidcs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterIdentity]
   }
+  @scala.inline
+  implicit class ClusterIdentityOps[Self <: ClusterIdentity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOidcsVarargs(value: Input[ClusterIdentityOidc]*): Self = this.set("oidcs", js.Array(value :_*))
+    @scala.inline
+    def setOidcs(value: Input[js.Array[Input[ClusterIdentityOidc]]]): Self = this.set("oidcs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOidcs: Self = this.set("oidcs", js.undefined)
+  }
+  
 }
 

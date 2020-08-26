@@ -46,18 +46,51 @@ object CreateLagRequest {
     connectionsBandwidth: Bandwidth,
     lagName: LagName,
     location: LocationCode,
-    numberOfConnections: Count,
-    childConnectionTags: TagList = null,
-    connectionId: ConnectionId = null,
-    providerName: ProviderName = null,
-    tags: TagList = null
+    numberOfConnections: Count
   ): CreateLagRequest = {
     val __obj = js.Dynamic.literal(connectionsBandwidth = connectionsBandwidth.asInstanceOf[js.Any], lagName = lagName.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], numberOfConnections = numberOfConnections.asInstanceOf[js.Any])
-    if (childConnectionTags != null) __obj.updateDynamic("childConnectionTags")(childConnectionTags.asInstanceOf[js.Any])
-    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
-    if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLagRequest]
   }
+  @scala.inline
+  implicit class CreateLagRequestOps[Self <: CreateLagRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionsBandwidth(value: Bandwidth): Self = this.set("connectionsBandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLagName(value: LagName): Self = this.set("lagName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocation(value: LocationCode): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberOfConnections(value: Count): Self = this.set("numberOfConnections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChildConnectionTagsVarargs(value: Tag*): Self = this.set("childConnectionTags", js.Array(value :_*))
+    @scala.inline
+    def setChildConnectionTags(value: TagList): Self = this.set("childConnectionTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildConnectionTags: Self = this.set("childConnectionTags", js.undefined)
+    @scala.inline
+    def setConnectionId(value: ConnectionId): Self = this.set("connectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionId: Self = this.set("connectionId", js.undefined)
+    @scala.inline
+    def setProviderName(value: ProviderName): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderName: Self = this.set("providerName", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

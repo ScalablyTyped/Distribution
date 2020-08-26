@@ -4,41 +4,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICreateWorkingCopyFromTeamServerParameters extends ICreateWorkingCopyParametersBase {
   @JSName("projectId")
-  var projectId_ICreateWorkingCopyFromTeamServerParameters: String
+  var projectId_ICreateWorkingCopyFromTeamServerParameters: String = js.native
   @JSName("teamServerBaseBranch")
-  var teamServerBaseBranch_ICreateWorkingCopyFromTeamServerParameters: String
-  var teamServerGitUrl: js.UndefOr[String] = js.undefined
+  var teamServerBaseBranch_ICreateWorkingCopyFromTeamServerParameters: String = js.native
+  var teamServerGitUrl: js.UndefOr[String] = js.native
 }
 
 object ICreateWorkingCopyFromTeamServerParameters {
   @scala.inline
-  def apply(
-    name: String,
-    projectId: String,
-    teamServerBaseBranch: String,
-    avatarUrl: String = null,
-    description: String = null,
-    isCollaboration: js.UndefOr[Boolean] = js.undefined,
-    longLived: js.UndefOr[Boolean] = js.undefined,
-    markAsChanged: js.UndefOr[Boolean] = js.undefined,
-    setAsDefault: js.UndefOr[Boolean] = js.undefined,
-    teamServerBaseCommitHash: String = null,
-    teamServerBaseRevision: js.UndefOr[Double] = js.undefined,
-    teamServerGitUrl: String = null
-  ): ICreateWorkingCopyFromTeamServerParameters = {
+  def apply(name: String, projectId: String, teamServerBaseBranch: String): ICreateWorkingCopyFromTeamServerParameters = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], teamServerBaseBranch = teamServerBaseBranch.asInstanceOf[js.Any])
-    if (avatarUrl != null) __obj.updateDynamic("avatarUrl")(avatarUrl.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCollaboration)) __obj.updateDynamic("isCollaboration")(isCollaboration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(longLived)) __obj.updateDynamic("longLived")(longLived.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(markAsChanged)) __obj.updateDynamic("markAsChanged")(markAsChanged.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(setAsDefault)) __obj.updateDynamic("setAsDefault")(setAsDefault.get.asInstanceOf[js.Any])
-    if (teamServerBaseCommitHash != null) __obj.updateDynamic("teamServerBaseCommitHash")(teamServerBaseCommitHash.asInstanceOf[js.Any])
-    if (!js.isUndefined(teamServerBaseRevision)) __obj.updateDynamic("teamServerBaseRevision")(teamServerBaseRevision.get.asInstanceOf[js.Any])
-    if (teamServerGitUrl != null) __obj.updateDynamic("teamServerGitUrl")(teamServerGitUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateWorkingCopyFromTeamServerParameters]
   }
+  @scala.inline
+  implicit class ICreateWorkingCopyFromTeamServerParametersOps[Self <: ICreateWorkingCopyFromTeamServerParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTeamServerBaseBranch(value: String): Self = this.set("teamServerBaseBranch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTeamServerGitUrl(value: String): Self = this.set("teamServerGitUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamServerGitUrl: Self = this.set("teamServerGitUrl", js.undefined)
+  }
+  
 }
 

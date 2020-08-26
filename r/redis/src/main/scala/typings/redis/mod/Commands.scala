@@ -61,6 +61,8 @@ trait Commands[R] extends js.Object {
   var HMSET_Original: OverloadedSetCommand[String | Double, OK, R] = js.native
   @JSName("HSCAN")
   var HSCAN_Original: OverloadedKeyCommand[String, js.Tuple2[String, js.Array[String]], R] = js.native
+  @JSName("HSET")
+  var HSET_Original: OverloadedSetCommand[String, Double, R] = js.native
   @JSName("LPUSH")
   var LPUSH_Original: OverloadedKeyCommand[String, Double, R] = js.native
   @JSName("MGET")
@@ -278,6 +280,11 @@ trait Commands[R] extends js.Object {
   @JSName("hscan")
   var hscan_Original: OverloadedKeyCommand[String, js.Tuple2[String, js.Array[String]], R] = js.native
   /**
+    * Set the string value of a hash field.
+    */
+  @JSName("hset")
+  var hset_Original: OverloadedSetCommand[String, Double, R] = js.native
+  /**
     * Prepend one or multiple values to a list.
     */
   @JSName("lpush")
@@ -484,26 +491,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
-  ): R = js.native
-  def BITFIELD(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def BITFIELD(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
     arg5: String | Double,
     arg6: String | Double,
-    cb: Callback[js.Tuple2[Double, Double]]
+    cb: js.UndefOr[Callback[js.Tuple2[Double, Double]]]
   ): R = js.native
   def BITFIELD(
     key: String,
@@ -512,7 +502,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    cb: Callback[js.Tuple2[Double, Double]]
+    cb: js.UndefOr[Callback[js.Tuple2[Double, Double]]]
   ): R = js.native
   def BITFIELD(key: String, arg1: String | Double, cb: Callback[js.Tuple2[Double, Double]]): R = js.native
   def BITFIELD(key: String, arg1: String, arg2: String): R = js.native
@@ -907,24 +897,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
-  ): R = js.native
-  def EVAL(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def EVAL(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
     arg5: String | Double,
     arg6: String | Double,
-    cb: Callback[_]
+    cb: js.UndefOr[Callback[_]]
   ): R = js.native
   def EVAL(
     arg1: String | Double,
@@ -932,7 +907,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    cb: Callback[_]
+    cb: js.UndefOr[Callback[_]]
   ): R = js.native
   def EVAL(arg1: String | Double, cb: Callback[_]): R = js.native
   def EVAL(arg1: String, arg2: String | Double): R = js.native
@@ -1000,24 +975,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
-  ): R = js.native
-  def EVALSHA(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def EVALSHA(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
     arg5: String | Double,
     arg6: String | Double,
-    cb: Callback[_]
+    cb: js.UndefOr[Callback[_]]
   ): R = js.native
   def EVALSHA(
     arg1: String | Double,
@@ -1025,7 +985,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    cb: Callback[_]
+    cb: js.UndefOr[Callback[_]]
   ): R = js.native
   def EVALSHA(arg1: String | Double, cb: Callback[_]): R = js.native
   def EVALSHA(arg1: String, arg2: String | Double): R = js.native
@@ -1137,26 +1097,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
-  ): R = js.native
-  def GEOADD(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def GEOADD(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
     arg5: String | Double,
     arg6: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def GEOADD(
     key: String,
@@ -1165,7 +1108,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def GEOADD(key: String, arg1: String | Double, cb: Callback[Double]): R = js.native
   def GEOADD(key: String, arg1: String, arg2: String): R = js.native
@@ -1349,26 +1292,11 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
-  ): R = js.native
-  def GEORADIUS(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def GEORADIUS(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
     arg5: String | Double,
     arg6: String | Double,
-    cb: Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    cb: js.UndefOr[
+      Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    ]
   ): R = js.native
   def GEORADIUS(
     key: String,
@@ -1377,7 +1305,9 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    cb: Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    cb: js.UndefOr[
+      Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    ]
   ): R = js.native
   def GEORADIUS(
     key: String,
@@ -1640,26 +1570,11 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
-  ): R = js.native
-  def GEORADIUSBYMEMBER(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def GEORADIUSBYMEMBER(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
     arg5: String | Double,
     arg6: String | Double,
-    cb: Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    cb: js.UndefOr[
+      Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    ]
   ): R = js.native
   def GEORADIUSBYMEMBER(
     key: String,
@@ -1668,7 +1583,9 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    cb: Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    cb: js.UndefOr[
+      Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    ]
   ): R = js.native
   def GEORADIUSBYMEMBER(
     key: String,
@@ -1965,9 +1882,9 @@ trait Commands[R] extends js.Object {
   def HEXISTS(key: String, field: String): R = js.native
   def HEXISTS(key: String, field: String, cb: Callback[Double]): R = js.native
   def HGET(key: String, field: String): R = js.native
-  def HGET(key: String, field: String, cb: Callback[String]): R = js.native
+  def HGET(key: String, field: String, cb: Callback[String | Null]): R = js.native
   def HGETALL(key: String): R = js.native
-  def HGETALL(key: String, cb: Callback[StringDictionary[String]]): R = js.native
+  def HGETALL(key: String, cb: Callback[StringDictionary[String] | Null]): R = js.native
   def HINCRBY(key: String, field: String, increment: Double): R = js.native
   def HINCRBY(key: String, field: String, increment: Double, cb: Callback[Double]): R = js.native
   def HINCRBYFLOAT(key: String, field: String, increment: Double): R = js.native
@@ -2017,23 +1934,6 @@ trait Commands[R] extends js.Object {
   def HMGET(key: String, arg1: js.Array[String], cb: Callback[js.Array[String]]): R = js.native
   def HMGET(key: String, args: (String | Callback[js.Array[String]])*): R = js.native
   def HMSET(key: String, arg1: String | Double): R = js.native
-  def HMSET(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double
-  ): R = js.native
-  def HMSET(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
   def HMSET(key: String, arg1: String, arg2: String): R = js.native
   def HMSET(key: String, arg1: String, arg2: String, arg3: String): R = js.native
   def HMSET(key: String, arg1: String, arg2: String, arg3: String, arg4: String): R = js.native
@@ -2073,7 +1973,7 @@ trait Commands[R] extends js.Object {
     arg4: String | Double,
     arg5: String | Double,
     arg6: String | Double,
-    cb: Callback[OK]
+    cb: js.UndefOr[Callback[OK]]
   ): R = js.native
   @JSName("HMSET")
   def HMSET_OK(
@@ -2083,7 +1983,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    cb: Callback[OK]
+    cb: js.UndefOr[Callback[OK]]
   ): R = js.native
   @JSName("HMSET")
   def HMSET_OK(key: String, arg1: String | Double, cb: Callback[OK]): R = js.native
@@ -2195,8 +2095,40 @@ trait Commands[R] extends js.Object {
   def HSCAN(key: String, arg1: js.Array[String]): R = js.native
   def HSCAN(key: String, arg1: js.Array[String], cb: Callback[js.Tuple2[String, js.Array[String]]]): R = js.native
   def HSCAN(key: String, args: (String | (Callback[js.Tuple2[String, js.Array[String]]]))*): R = js.native
-  def HSET(key: String, field: String, value: String): R = js.native
-  def HSET(key: String, field: String, value: String, cb: Callback[Double]): R = js.native
+  def HSET(key: String, arg1: String): R = js.native
+  def HSET(key: String, arg1: String, arg2: String): R = js.native
+  def HSET(key: String, arg1: String, arg2: String, arg3: String): R = js.native
+  def HSET(key: String, arg1: String, arg2: String, arg3: String, arg4: String): R = js.native
+  def HSET(key: String, arg1: String, arg2: String, arg3: String, arg4: String, arg5: String): R = js.native
+  def HSET(key: String, arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, arg6: String): R = js.native
+  def HSET(
+    key: String,
+    arg1: String,
+    arg2: String,
+    arg3: String,
+    arg4: String,
+    arg5: String,
+    arg6: String,
+    cb: Callback[Double]
+  ): R = js.native
+  def HSET(
+    key: String,
+    arg1: String,
+    arg2: String,
+    arg3: String,
+    arg4: String,
+    arg5: String,
+    cb: Callback[Double]
+  ): R = js.native
+  def HSET(key: String, arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[Double]): R = js.native
+  def HSET(key: String, arg1: String, arg2: String, arg3: String, cb: Callback[Double]): R = js.native
+  def HSET(key: String, arg1: String, arg2: String, cb: Callback[Double]): R = js.native
+  def HSET(key: String, arg1: String, cb: Callback[Double]): R = js.native
+  def HSET(key: String, arg1: js.Array[String]): R = js.native
+  def HSET(key: String, arg1: js.Array[String], cb: Callback[Double]): R = js.native
+  def HSET(key: String, arg1: StringDictionary[String]): R = js.native
+  def HSET(key: String, arg1: StringDictionary[String], cb: Callback[Double]): R = js.native
+  def HSET(key: String, args: (String | Callback[Double])*): R = js.native
   def HSETNX(key: String, field: String, value: String): R = js.native
   def HSETNX(key: String, field: String, value: String, cb: Callback[Double]): R = js.native
   def HSTRLEN(key: String, field: String): R = js.native
@@ -2211,6 +2143,7 @@ trait Commands[R] extends js.Object {
   def INCRBYFLOAT(key: String, increment: Double, cb: Callback[String]): R = js.native
   def INFO(): R = js.native
   def INFO(cb: Callback[ServerInfo]): R = js.native
+  def INFO(section: js.UndefOr[scala.Nothing], cb: Callback[ServerInfo]): R = js.native
   def INFO(section: String): R = js.native
   def INFO(section: String, cb: Callback[ServerInfo]): R = js.native
   def INFO(section: js.Array[String]): R = js.native
@@ -3297,26 +3230,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
-  ): R = js.native
-  def ZADD(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def ZADD(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
     arg5: String | Double,
     arg6: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def ZADD(
     key: String,
@@ -3325,7 +3241,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def ZADD(key: String, arg1: String | Double, cb: Callback[Double]): R = js.native
   def ZADD(key: String, arg1: String, arg2: String): R = js.native
@@ -3405,24 +3321,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
-  ): R = js.native
-  def ZINTERSTORE(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def ZINTERSTORE(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
     arg5: String | Double,
     arg6: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def ZINTERSTORE(
     arg1: String | Double,
@@ -3430,7 +3331,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def ZINTERSTORE(arg1: String | Double, cb: Callback[Double]): R = js.native
   def ZINTERSTORE(arg1: String, arg2: String | Double): R = js.native
@@ -3893,24 +3794,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
-  ): R = js.native
-  def ZUNIONSTORE(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def ZUNIONSTORE(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
     arg5: String | Double,
     arg6: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def ZUNIONSTORE(
     arg1: String | Double,
@@ -3918,7 +3804,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def ZUNIONSTORE(arg1: String | Double, cb: Callback[Double]): R = js.native
   def ZUNIONSTORE(arg1: String, arg2: String | Double): R = js.native
@@ -4025,7 +3911,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
+    arg5: String | Double,
+    arg6: String | Double,
+    cb: js.UndefOr[Callback[js.Tuple2[Double, Double]]]
   ): R = js.native
   /**
     * Perform arbitrary bitfield integer operations on strings.
@@ -4037,26 +3925,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def bitfield(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double,
-    cb: Callback[js.Tuple2[Double, Double]]
-  ): R = js.native
-  def bitfield(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    cb: Callback[js.Tuple2[Double, Double]]
+    cb: js.UndefOr[Callback[js.Tuple2[Double, Double]]]
   ): R = js.native
   def bitfield(key: String, arg1: String | Double, cb: Callback[js.Tuple2[Double, Double]]): R = js.native
   /**
@@ -4867,7 +4736,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
+    arg5: String | Double,
+    arg6: String | Double,
+    cb: js.UndefOr[Callback[_]]
   ): R = js.native
   /**
     * Execute a Lua script server side.
@@ -4878,24 +4749,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def eval(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double,
-    cb: Callback[_]
-  ): R = js.native
-  def eval(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    cb: Callback[_]
+    cb: js.UndefOr[Callback[_]]
   ): R = js.native
   def eval(arg1: String | Double, cb: Callback[_]): R = js.native
   /**
@@ -4981,7 +4835,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
+    arg5: String | Double,
+    arg6: String | Double,
+    cb: js.UndefOr[Callback[_]]
   ): R = js.native
   /**
     * Execute a Lue script server side.
@@ -4992,24 +4848,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def evalsha(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double,
-    cb: Callback[_]
-  ): R = js.native
-  def evalsha(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    cb: Callback[_]
+    cb: js.UndefOr[Callback[_]]
   ): R = js.native
   def evalsha(arg1: String | Double, cb: Callback[_]): R = js.native
   /**
@@ -5175,7 +5014,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
+    arg5: String | Double,
+    arg6: String | Double,
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   /**
     * Add one or more geospatial items in the geospatial index represented using a sorted set.
@@ -5187,26 +5028,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def geoadd(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double,
-    cb: Callback[Double]
-  ): R = js.native
-  def geoadd(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def geoadd(key: String, arg1: String | Double, cb: Callback[Double]): R = js.native
   /**
@@ -5483,7 +5305,11 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
+    arg5: String | Double,
+    arg6: String | Double,
+    cb: js.UndefOr[
+      Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    ]
   ): R = js.native
   /**
     * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
@@ -5495,26 +5321,9 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def georadius(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double,
-    cb: Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
-  ): R = js.native
-  def georadius(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    cb: Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    cb: js.UndefOr[
+      Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    ]
   ): R = js.native
   def georadius(
     key: String,
@@ -5798,7 +5607,11 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
+    arg5: String | Double,
+    arg6: String | Double,
+    cb: js.UndefOr[
+      Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    ]
   ): R = js.native
   /**
     * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
@@ -5810,26 +5623,9 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def georadiusbymember(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double,
-    cb: Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
-  ): R = js.native
-  def georadiusbymember(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    cb: Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    cb: js.UndefOr[
+      Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]
+    ]
   ): R = js.native
   def georadiusbymember(
     key: String,
@@ -6180,12 +5976,12 @@ trait Commands[R] extends js.Object {
     * Get the value of a hash field.
     */
   def hget(key: String, field: String): R = js.native
-  def hget(key: String, field: String, cb: Callback[String]): R = js.native
+  def hget(key: String, field: String, cb: Callback[String | Null]): R = js.native
   /**
     * Get all fields and values in a hash.
     */
   def hgetall(key: String): R = js.native
-  def hgetall(key: String, cb: Callback[StringDictionary[String]]): R = js.native
+  def hgetall(key: String, cb: Callback[StringDictionary[String] | Null]): R = js.native
   /**
     * Increment the integer value of a hash field by the given number.
     */
@@ -6277,29 +6073,6 @@ trait Commands[R] extends js.Object {
   /**
     * Set multiple hash fields to multiple values.
     */
-  def hmset(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double
-  ): R = js.native
-  /**
-    * Set multiple hash fields to multiple values.
-    */
-  def hmset(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  /**
-    * Set multiple hash fields to multiple values.
-    */
   def hmset(key: String, arg1: String, arg2: String): R = js.native
   /**
     * Set multiple hash fields to multiple values.
@@ -6336,6 +6109,9 @@ trait Commands[R] extends js.Object {
   def hmset(key: String, arg1: Double, arg2: Double, arg3: Double): R = js.native
   def hmset(key: String, arg1: Double, arg2: Double, arg3: Double, arg4: String): R = js.native
   def hmset(key: String, arg1: Double, arg2: Double, arg3: Double, arg4: Double): R = js.native
+  /**
+    * Set multiple hash fields to multiple values.
+    */
   @JSName("hmset")
   def hmset_OK(
     key: String,
@@ -6345,8 +6121,11 @@ trait Commands[R] extends js.Object {
     arg4: String | Double,
     arg5: String | Double,
     arg6: String | Double,
-    cb: Callback[OK]
+    cb: js.UndefOr[Callback[OK]]
   ): R = js.native
+  /**
+    * Set multiple hash fields to multiple values.
+    */
   @JSName("hmset")
   def hmset_OK(
     key: String,
@@ -6355,7 +6134,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    cb: Callback[OK]
+    cb: js.UndefOr[Callback[OK]]
   ): R = js.native
   @JSName("hmset")
   def hmset_OK(key: String, arg1: String | Double, cb: Callback[OK]): R = js.native
@@ -6497,8 +6276,58 @@ trait Commands[R] extends js.Object {
   /**
     * Set the string value of a hash field.
     */
-  def hset(key: String, field: String, value: String): R = js.native
-  def hset(key: String, field: String, value: String, cb: Callback[Double]): R = js.native
+  def hset(key: String, arg1: String): R = js.native
+  /**
+    * Set the string value of a hash field.
+    */
+  def hset(key: String, arg1: String, arg2: String): R = js.native
+  /**
+    * Set the string value of a hash field.
+    */
+  def hset(key: String, arg1: String, arg2: String, arg3: String): R = js.native
+  /**
+    * Set the string value of a hash field.
+    */
+  def hset(key: String, arg1: String, arg2: String, arg3: String, arg4: String): R = js.native
+  /**
+    * Set the string value of a hash field.
+    */
+  def hset(key: String, arg1: String, arg2: String, arg3: String, arg4: String, arg5: String): R = js.native
+  /**
+    * Set the string value of a hash field.
+    */
+  def hset(key: String, arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, arg6: String): R = js.native
+  def hset(
+    key: String,
+    arg1: String,
+    arg2: String,
+    arg3: String,
+    arg4: String,
+    arg5: String,
+    arg6: String,
+    cb: Callback[Double]
+  ): R = js.native
+  def hset(
+    key: String,
+    arg1: String,
+    arg2: String,
+    arg3: String,
+    arg4: String,
+    arg5: String,
+    cb: Callback[Double]
+  ): R = js.native
+  def hset(key: String, arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[Double]): R = js.native
+  def hset(key: String, arg1: String, arg2: String, arg3: String, cb: Callback[Double]): R = js.native
+  def hset(key: String, arg1: String, arg2: String, cb: Callback[Double]): R = js.native
+  def hset(key: String, arg1: String, cb: Callback[Double]): R = js.native
+  def hset(key: String, arg1: js.Array[String]): R = js.native
+  def hset(key: String, arg1: js.Array[String], cb: Callback[Double]): R = js.native
+  def hset(key: String, arg1: StringDictionary[String]): R = js.native
+  def hset(key: String, arg1: StringDictionary[String], cb: Callback[Double]): R = js.native
+  /**
+    * Set the string value of a hash field.
+    */
+  def hset(key: String, args: (String | Callback[Double])*): R = js.native
   /**
     * Set the value of a hash field, only if the field does not exist.
     */
@@ -6534,6 +6363,7 @@ trait Commands[R] extends js.Object {
     */
   def info(): R = js.native
   def info(cb: Callback[ServerInfo]): R = js.native
+  def info(section: js.UndefOr[scala.Nothing], cb: Callback[ServerInfo]): R = js.native
   def info(section: String): R = js.native
   def info(section: String, cb: Callback[ServerInfo]): R = js.native
   def info(section: js.Array[String]): R = js.native
@@ -8502,7 +8332,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
+    arg5: String | Double,
+    arg6: String | Double,
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   /**
     * Add one or more members to a sorted set, or update its score if it already exists.
@@ -8514,26 +8346,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def zadd(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double,
-    cb: Callback[Double]
-  ): R = js.native
-  def zadd(
-    key: String,
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def zadd(key: String, arg1: String | Double, cb: Callback[Double]): R = js.native
   /**
@@ -8640,7 +8453,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
+    arg5: String | Double,
+    arg6: String | Double,
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   /**
     * Intersect multiple sorted sets and store the resulting sorted set in a new key.
@@ -8651,24 +8466,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def zinterstore(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double,
-    cb: Callback[Double]
-  ): R = js.native
-  def zinterstore(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def zinterstore(arg1: String | Double, cb: Callback[Double]): R = js.native
   /**
@@ -9236,7 +9034,9 @@ trait Commands[R] extends js.Object {
     arg2: String | Double,
     arg3: String | Double,
     arg4: String | Double,
-    arg5: String | Double
+    arg5: String | Double,
+    arg6: String | Double,
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   /**
     * Add multiple sorted sets and store the resulting sorted set in a new key.
@@ -9247,24 +9047,7 @@ trait Commands[R] extends js.Object {
     arg3: String | Double,
     arg4: String | Double,
     arg5: String | Double,
-    arg6: String | Double
-  ): R = js.native
-  def zunionstore(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    arg6: String | Double,
-    cb: Callback[Double]
-  ): R = js.native
-  def zunionstore(
-    arg1: String | Double,
-    arg2: String | Double,
-    arg3: String | Double,
-    arg4: String | Double,
-    arg5: String | Double,
-    cb: Callback[Double]
+    cb: js.UndefOr[Callback[Double]]
   ): R = js.native
   def zunionstore(arg1: String | Double, cb: Callback[Double]): R = js.native
   /**

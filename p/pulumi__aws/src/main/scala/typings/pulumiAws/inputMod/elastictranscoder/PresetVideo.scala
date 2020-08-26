@@ -63,36 +63,74 @@ trait PresetVideo extends js.Object {
 
 object PresetVideo {
   @scala.inline
-  def apply(
-    aspectRatio: Input[String] = null,
-    bitRate: Input[String] = null,
-    codec: Input[String] = null,
-    displayAspectRatio: Input[String] = null,
-    fixedGop: Input[String] = null,
-    frameRate: Input[String] = null,
-    keyframesMaxDist: Input[String] = null,
-    maxFrameRate: Input[String] = null,
-    maxHeight: Input[String] = null,
-    maxWidth: Input[String] = null,
-    paddingPolicy: Input[String] = null,
-    resolution: Input[String] = null,
-    sizingPolicy: Input[String] = null
-  ): PresetVideo = {
+  def apply(): PresetVideo = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (bitRate != null) __obj.updateDynamic("bitRate")(bitRate.asInstanceOf[js.Any])
-    if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
-    if (displayAspectRatio != null) __obj.updateDynamic("displayAspectRatio")(displayAspectRatio.asInstanceOf[js.Any])
-    if (fixedGop != null) __obj.updateDynamic("fixedGop")(fixedGop.asInstanceOf[js.Any])
-    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
-    if (keyframesMaxDist != null) __obj.updateDynamic("keyframesMaxDist")(keyframesMaxDist.asInstanceOf[js.Any])
-    if (maxFrameRate != null) __obj.updateDynamic("maxFrameRate")(maxFrameRate.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (paddingPolicy != null) __obj.updateDynamic("paddingPolicy")(paddingPolicy.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (sizingPolicy != null) __obj.updateDynamic("sizingPolicy")(sizingPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresetVideo]
   }
+  @scala.inline
+  implicit class PresetVideoOps[Self <: PresetVideo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAspectRatio(value: Input[String]): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
+    @scala.inline
+    def setBitRate(value: Input[String]): Self = this.set("bitRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitRate: Self = this.set("bitRate", js.undefined)
+    @scala.inline
+    def setCodec(value: Input[String]): Self = this.set("codec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodec: Self = this.set("codec", js.undefined)
+    @scala.inline
+    def setDisplayAspectRatio(value: Input[String]): Self = this.set("displayAspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayAspectRatio: Self = this.set("displayAspectRatio", js.undefined)
+    @scala.inline
+    def setFixedGop(value: Input[String]): Self = this.set("fixedGop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedGop: Self = this.set("fixedGop", js.undefined)
+    @scala.inline
+    def setFrameRate(value: Input[String]): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+    @scala.inline
+    def setKeyframesMaxDist(value: Input[String]): Self = this.set("keyframesMaxDist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyframesMaxDist: Self = this.set("keyframesMaxDist", js.undefined)
+    @scala.inline
+    def setMaxFrameRate(value: Input[String]): Self = this.set("maxFrameRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFrameRate: Self = this.set("maxFrameRate", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Input[String]): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Input[String]): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setPaddingPolicy(value: Input[String]): Self = this.set("paddingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingPolicy: Self = this.set("paddingPolicy", js.undefined)
+    @scala.inline
+    def setResolution(value: Input[String]): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+    @scala.inline
+    def setSizingPolicy(value: Input[String]): Self = this.set("sizingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizingPolicy: Self = this.set("sizingPolicy", js.undefined)
+  }
+  
 }
 

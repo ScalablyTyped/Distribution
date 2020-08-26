@@ -12,7 +12,7 @@ A cross browser solution to scrolling during drag and drop.
 | Keywords           | react, drag, drop, scroll, dnd, drag and drop, polyfill, auto |
 | # releases         | 2 |
 | # dependents       | 54 |
-| # downloads        | 892600 |
+| # downloads        | 902633 |
 | # stars            | 0 |
 
 ## Links

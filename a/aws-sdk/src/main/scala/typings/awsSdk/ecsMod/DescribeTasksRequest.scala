@@ -22,11 +22,36 @@ trait DescribeTasksRequest extends js.Object {
 
 object DescribeTasksRequest {
   @scala.inline
-  def apply(tasks: StringList, cluster: String = null, include: TaskFieldList = null): DescribeTasksRequest = {
+  def apply(tasks: StringList): DescribeTasksRequest = {
     val __obj = js.Dynamic.literal(tasks = tasks.asInstanceOf[js.Any])
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTasksRequest]
   }
+  @scala.inline
+  implicit class DescribeTasksRequestOps[Self <: DescribeTasksRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTasksVarargs(value: String*): Self = this.set("tasks", js.Array(value :_*))
+    @scala.inline
+    def setTasks(value: StringList): Self = this.set("tasks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCluster: Self = this.set("cluster", js.undefined)
+    @scala.inline
+    def setIncludeVarargs(value: TaskField*): Self = this.set("include", js.Array(value :_*))
+    @scala.inline
+    def setInclude(value: TaskFieldList): Self = this.set("include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude: Self = this.set("include", js.undefined)
+  }
+  
 }
 

@@ -26,17 +26,36 @@ trait UpdateCustomKeyStoreRequest extends js.Object {
 
 object UpdateCustomKeyStoreRequest {
   @scala.inline
-  def apply(
-    CustomKeyStoreId: CustomKeyStoreIdType,
-    CloudHsmClusterId: CloudHsmClusterIdType = null,
-    KeyStorePassword: KeyStorePasswordType = null,
-    NewCustomKeyStoreName: CustomKeyStoreNameType = null
-  ): UpdateCustomKeyStoreRequest = {
+  def apply(CustomKeyStoreId: CustomKeyStoreIdType): UpdateCustomKeyStoreRequest = {
     val __obj = js.Dynamic.literal(CustomKeyStoreId = CustomKeyStoreId.asInstanceOf[js.Any])
-    if (CloudHsmClusterId != null) __obj.updateDynamic("CloudHsmClusterId")(CloudHsmClusterId.asInstanceOf[js.Any])
-    if (KeyStorePassword != null) __obj.updateDynamic("KeyStorePassword")(KeyStorePassword.asInstanceOf[js.Any])
-    if (NewCustomKeyStoreName != null) __obj.updateDynamic("NewCustomKeyStoreName")(NewCustomKeyStoreName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCustomKeyStoreRequest]
   }
+  @scala.inline
+  implicit class UpdateCustomKeyStoreRequestOps[Self <: UpdateCustomKeyStoreRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = this.set("CustomKeyStoreId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = this.set("CloudHsmClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudHsmClusterId: Self = this.set("CloudHsmClusterId", js.undefined)
+    @scala.inline
+    def setKeyStorePassword(value: KeyStorePasswordType): Self = this.set("KeyStorePassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyStorePassword: Self = this.set("KeyStorePassword", js.undefined)
+    @scala.inline
+    def setNewCustomKeyStoreName(value: CustomKeyStoreNameType): Self = this.set("NewCustomKeyStoreName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewCustomKeyStoreName: Self = this.set("NewCustomKeyStoreName", js.undefined)
+  }
+  
 }
 

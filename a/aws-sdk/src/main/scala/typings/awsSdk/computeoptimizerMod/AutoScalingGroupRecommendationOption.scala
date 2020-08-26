@@ -26,18 +26,40 @@ trait AutoScalingGroupRecommendationOption extends js.Object {
 
 object AutoScalingGroupRecommendationOption {
   @scala.inline
-  def apply(
-    configuration: AutoScalingGroupConfiguration = null,
-    performanceRisk: js.UndefOr[PerformanceRisk] = js.undefined,
-    projectedUtilizationMetrics: ProjectedUtilizationMetrics = null,
-    rank: js.UndefOr[Rank] = js.undefined
-  ): AutoScalingGroupRecommendationOption = {
+  def apply(): AutoScalingGroupRecommendationOption = {
     val __obj = js.Dynamic.literal()
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(performanceRisk)) __obj.updateDynamic("performanceRisk")(performanceRisk.get.asInstanceOf[js.Any])
-    if (projectedUtilizationMetrics != null) __obj.updateDynamic("projectedUtilizationMetrics")(projectedUtilizationMetrics.asInstanceOf[js.Any])
-    if (!js.isUndefined(rank)) __obj.updateDynamic("rank")(rank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingGroupRecommendationOption]
   }
+  @scala.inline
+  implicit class AutoScalingGroupRecommendationOptionOps[Self <: AutoScalingGroupRecommendationOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfiguration(value: AutoScalingGroupConfiguration): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setPerformanceRisk(value: PerformanceRisk): Self = this.set("performanceRisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceRisk: Self = this.set("performanceRisk", js.undefined)
+    @scala.inline
+    def setProjectedUtilizationMetricsVarargs(value: UtilizationMetric*): Self = this.set("projectedUtilizationMetrics", js.Array(value :_*))
+    @scala.inline
+    def setProjectedUtilizationMetrics(value: ProjectedUtilizationMetrics): Self = this.set("projectedUtilizationMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectedUtilizationMetrics: Self = this.set("projectedUtilizationMetrics", js.undefined)
+    @scala.inline
+    def setRank(value: Rank): Self = this.set("rank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRank: Self = this.set("rank", js.undefined)
+  }
+  
 }
 

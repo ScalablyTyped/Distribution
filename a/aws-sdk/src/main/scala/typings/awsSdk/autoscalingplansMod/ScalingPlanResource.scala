@@ -48,14 +48,45 @@ object ScalingPlanResource {
     ScalingPlanName: ScalingPlanName,
     ScalingPlanVersion: ScalingPlanVersion,
     ScalingStatusCode: ScalingStatusCode,
-    ServiceNamespace: ServiceNamespace,
-    ScalingPolicies: ScalingPolicies = null,
-    ScalingStatusMessage: XmlString = null
+    ServiceNamespace: ServiceNamespace
   ): ScalingPlanResource = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], ScalableDimension = ScalableDimension.asInstanceOf[js.Any], ScalingPlanName = ScalingPlanName.asInstanceOf[js.Any], ScalingPlanVersion = ScalingPlanVersion.asInstanceOf[js.Any], ScalingStatusCode = ScalingStatusCode.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
-    if (ScalingPolicies != null) __obj.updateDynamic("ScalingPolicies")(ScalingPolicies.asInstanceOf[js.Any])
-    if (ScalingStatusMessage != null) __obj.updateDynamic("ScalingStatusMessage")(ScalingStatusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingPlanResource]
   }
+  @scala.inline
+  implicit class ScalingPlanResourceOps[Self <: ScalingPlanResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceId(value: ResourceIdMaxLen1600): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScalableDimension(value: ScalableDimension): Self = this.set("ScalableDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScalingPlanName(value: ScalingPlanName): Self = this.set("ScalingPlanName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScalingPlanVersion(value: ScalingPlanVersion): Self = this.set("ScalingPlanVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScalingStatusCode(value: ScalingStatusCode): Self = this.set("ScalingStatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceNamespace(value: ServiceNamespace): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScalingPoliciesVarargs(value: ScalingPolicy*): Self = this.set("ScalingPolicies", js.Array(value :_*))
+    @scala.inline
+    def setScalingPolicies(value: ScalingPolicies): Self = this.set("ScalingPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingPolicies: Self = this.set("ScalingPolicies", js.undefined)
+    @scala.inline
+    def setScalingStatusMessage(value: XmlString): Self = this.set("ScalingStatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingStatusMessage: Self = this.set("ScalingStatusMessage", js.undefined)
+  }
+  
 }
 

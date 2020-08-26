@@ -6,36 +6,67 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Readonly<tryer.tryer.Options> */
+@js.native
 trait ReadonlyOptions extends js.Object {
-  val action: js.UndefOr[js.Function0[js.Promise[_]] | (js.Function1[/* done */ js.Function0[Unit], _])] = js.undefined
-  val fail: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
-  val interval: js.UndefOr[Double] = js.undefined
-  val limit: js.UndefOr[Double] = js.undefined
-  val pass: js.UndefOr[js.Function0[Unit]] = js.undefined
-  val until: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  val when: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  val action: js.UndefOr[js.Function0[js.Promise[_]] | (js.Function1[/* done */ js.Function0[Unit], _])] = js.native
+  val fail: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+  val interval: js.UndefOr[Double] = js.native
+  val limit: js.UndefOr[Double] = js.native
+  val pass: js.UndefOr[js.Function0[Unit]] = js.native
+  val until: js.UndefOr[js.Function0[Boolean]] = js.native
+  val when: js.UndefOr[js.Function0[Boolean]] = js.native
 }
 
 object ReadonlyOptions {
   @scala.inline
-  def apply(
-    action: js.Function0[js.Promise[_]] | (js.Function1[/* done */ js.Function0[Unit], _]) = null,
-    fail: /* err */ Error => Unit = null,
-    interval: js.UndefOr[Double] = js.undefined,
-    limit: js.UndefOr[Double] = js.undefined,
-    pass: () => Unit = null,
-    until: () => Boolean = null,
-    when: () => Boolean = null
-  ): ReadonlyOptions = {
+  def apply(): ReadonlyOptions = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (pass != null) __obj.updateDynamic("pass")(js.Any.fromFunction0(pass))
-    if (until != null) __obj.updateDynamic("until")(js.Any.fromFunction0(until))
-    if (when != null) __obj.updateDynamic("when")(js.Any.fromFunction0(when))
     __obj.asInstanceOf[ReadonlyOptions]
   }
+  @scala.inline
+  implicit class ReadonlyOptionsOps[Self <: ReadonlyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionFunction1(value: /* done */ js.Function0[Unit] => _): Self = this.set("action", js.Any.fromFunction1(value))
+    @scala.inline
+    def setActionFunction0(value: () => js.Promise[_]): Self = this.set("action", js.Any.fromFunction0(value))
+    @scala.inline
+    def setAction(value: js.Function0[js.Promise[_]] | (js.Function1[/* done */ js.Function0[Unit], _])): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setFail(value: /* err */ Error => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFail: Self = this.set("fail", js.undefined)
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setPass(value: () => Unit): Self = this.set("pass", js.Any.fromFunction0(value))
+    @scala.inline
+    def deletePass: Self = this.set("pass", js.undefined)
+    @scala.inline
+    def setUntil(value: () => Boolean): Self = this.set("until", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteUntil: Self = this.set("until", js.undefined)
+    @scala.inline
+    def setWhen(value: () => Boolean): Self = this.set("when", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteWhen: Self = this.set("when", js.undefined)
+  }
+  
 }
 

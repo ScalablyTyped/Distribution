@@ -28,7 +28,7 @@ class ModelerSettings protected () extends ProjectSettingsPart {
     */
   def actionActivityDefaultColors: IList[ActionActivityDefaultColor] = js.native
   def lowerCaseMicroflowVariables: Boolean = js.native
-  def lowerCaseMicroflowVariables(newValue: Boolean): js.Any = js.native
+  def lowerCaseMicroflowVariables_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

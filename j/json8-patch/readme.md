@@ -12,7 +12,7 @@ JSON Patch toolkit for JavaScript
 | Keywords           | JSON, patch, diff |
 | # releases         | 4 |
 | # dependents       | 3 |
-| # downloads        | 11305 |
+| # downloads        | 15552 |
 | # stars            | 2 |
 
 ## Links

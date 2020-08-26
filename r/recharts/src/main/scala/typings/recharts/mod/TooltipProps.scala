@@ -7,91 +7,134 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooltipProps extends Animatable {
-  var active: js.UndefOr[Boolean] = js.undefined
-  var allowEscapeViewBox: js.UndefOr[AllowEscapeViewBox] = js.undefined
-  var content: js.UndefOr[ReactElement | StatelessComponent[_] | ContentRenderer[TooltipProps]] = js.undefined
-  var contentStyle: js.UndefOr[js.Object] = js.undefined
-  var coordinate: js.UndefOr[Coordinate] = js.undefined
-  var cursor: js.UndefOr[Boolean | js.Object | ReactElement | StatelessComponent[_]] = js.undefined
-  var filterNull: js.UndefOr[Boolean] = js.undefined
-  var formatter: js.UndefOr[TooltipFormatter] = js.undefined
-  var itemSorter: js.UndefOr[ItemSorter[TooltipPayload]] = js.undefined
-  var itemStyle: js.UndefOr[js.Object] = js.undefined
-  var label: js.UndefOr[String | Double] = js.undefined
-  var labelFormatter: js.UndefOr[LabelFormatter] = js.undefined
-  var labelStyle: js.UndefOr[js.Object] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var payload: js.UndefOr[js.Array[TooltipPayload]] = js.undefined
-  var position: js.UndefOr[Coordinate] = js.undefined
-  var separator: js.UndefOr[String] = js.undefined
-  var useTranslate3d: js.UndefOr[Boolean] = js.undefined
-  var viewBox: js.UndefOr[ViewBox] = js.undefined
-  var wrapperStyle: js.UndefOr[js.Object] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
+  var allowEscapeViewBox: js.UndefOr[AllowEscapeViewBox] = js.native
+  var content: js.UndefOr[ReactElement | StatelessComponent[_] | ContentRenderer[TooltipProps]] = js.native
+  var contentStyle: js.UndefOr[js.Object] = js.native
+  var coordinate: js.UndefOr[Coordinate] = js.native
+  var cursor: js.UndefOr[Boolean | js.Object | ReactElement | StatelessComponent[_]] = js.native
+  var filterNull: js.UndefOr[Boolean] = js.native
+  var formatter: js.UndefOr[TooltipFormatter] = js.native
+  var itemSorter: js.UndefOr[ItemSorter[TooltipPayload]] = js.native
+  var itemStyle: js.UndefOr[js.Object] = js.native
+  var label: js.UndefOr[String | Double] = js.native
+  var labelFormatter: js.UndefOr[LabelFormatter] = js.native
+  var labelStyle: js.UndefOr[js.Object] = js.native
+  var offset: js.UndefOr[Double] = js.native
+  var payload: js.UndefOr[js.Array[TooltipPayload]] = js.native
+  var position: js.UndefOr[Coordinate] = js.native
+  var separator: js.UndefOr[String] = js.native
+  var useTranslate3d: js.UndefOr[Boolean] = js.native
+  var viewBox: js.UndefOr[ViewBox] = js.native
+  var wrapperStyle: js.UndefOr[js.Object] = js.native
 }
 
 object TooltipProps {
   @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    allowEscapeViewBox: AllowEscapeViewBox = null,
-    animationBegin: js.UndefOr[Double] = js.undefined,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    animationEasing: AnimationEasingType = null,
-    animationId: js.UndefOr[Double] = js.undefined,
-    content: ReactElement | StatelessComponent[_] | ContentRenderer[TooltipProps] = null,
-    contentStyle: js.Object = null,
-    coordinate: Coordinate = null,
-    cursor: Boolean | js.Object | ReactElement | StatelessComponent[_] = null,
-    filterNull: js.UndefOr[Boolean] = js.undefined,
-    formatter: (/* value */ String | Double | (js.Array[String | Double]), /* name */ String, /* entry */ TooltipPayload, /* index */ Double) => ReactNode = null,
-    isAnimationActive: js.UndefOr[Boolean] = js.undefined,
-    isUpdateAnimationActive: js.UndefOr[Boolean] = js.undefined,
-    itemSorter: (TooltipPayload, TooltipPayload) => Double = null,
-    itemStyle: js.Object = null,
-    label: String | Double = null,
-    labelFormatter: /* label */ String | Double => ReactNode = null,
-    labelStyle: js.Object = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    onAnimationEnd: /* repeated */ js.Any => Unit = null,
-    onAnimationStart: /* repeated */ js.Any => Unit = null,
-    payload: js.Array[TooltipPayload] = null,
-    position: Coordinate = null,
-    separator: String = null,
-    useTranslate3d: js.UndefOr[Boolean] = js.undefined,
-    viewBox: ViewBox = null,
-    wrapperStyle: js.Object = null
-  ): TooltipProps = {
+  def apply(): TooltipProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (allowEscapeViewBox != null) __obj.updateDynamic("allowEscapeViewBox")(allowEscapeViewBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationBegin)) __obj.updateDynamic("animationBegin")(animationBegin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationId)) __obj.updateDynamic("animationId")(animationId.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
-    if (coordinate != null) __obj.updateDynamic("coordinate")(coordinate.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterNull)) __obj.updateDynamic("filterNull")(filterNull.get.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction4(formatter))
-    if (!js.isUndefined(isAnimationActive)) __obj.updateDynamic("isAnimationActive")(isAnimationActive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive.get.asInstanceOf[js.Any])
-    if (itemSorter != null) __obj.updateDynamic("itemSorter")(js.Any.fromFunction2(itemSorter))
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(js.Any.fromFunction1(labelFormatter))
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTranslate3d)) __obj.updateDynamic("useTranslate3d")(useTranslate3d.get.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
-    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipProps]
   }
+  @scala.inline
+  implicit class TooltipPropsOps[Self <: TooltipProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setAllowEscapeViewBox(value: AllowEscapeViewBox): Self = this.set("allowEscapeViewBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowEscapeViewBox: Self = this.set("allowEscapeViewBox", js.undefined)
+    @scala.inline
+    def setContentFunction1(value: TooltipProps => ReactNode): Self = this.set("content", js.Any.fromFunction1(value))
+    @scala.inline
+    def setContent(value: ReactElement | StatelessComponent[_] | ContentRenderer[TooltipProps]): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setContentStyle(value: js.Object): Self = this.set("contentStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentStyle: Self = this.set("contentStyle", js.undefined)
+    @scala.inline
+    def setCoordinate(value: Coordinate): Self = this.set("coordinate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoordinate: Self = this.set("coordinate", js.undefined)
+    @scala.inline
+    def setCursor(value: Boolean | js.Object | ReactElement | StatelessComponent[_]): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursor: Self = this.set("cursor", js.undefined)
+    @scala.inline
+    def setFilterNull(value: Boolean): Self = this.set("filterNull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterNull: Self = this.set("filterNull", js.undefined)
+    @scala.inline
+    def setFormatter(
+      value: (/* value */ String | Double | (js.Array[String | Double]), /* name */ String, /* entry */ TooltipPayload, /* index */ Double) => ReactNode
+    ): Self = this.set("formatter", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setItemSorter(value: (TooltipPayload, TooltipPayload) => Double): Self = this.set("itemSorter", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemSorter: Self = this.set("itemSorter", js.undefined)
+    @scala.inline
+    def setItemStyle(value: js.Object): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    @scala.inline
+    def setLabel(value: String | Double): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelFormatter(value: /* label */ String | Double => ReactNode): Self = this.set("labelFormatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLabelFormatter: Self = this.set("labelFormatter", js.undefined)
+    @scala.inline
+    def setLabelStyle(value: js.Object): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPayloadVarargs(value: TooltipPayload*): Self = this.set("payload", js.Array(value :_*))
+    @scala.inline
+    def setPayload(value: js.Array[TooltipPayload]): Self = this.set("payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("payload", js.undefined)
+    @scala.inline
+    def setPosition(value: Coordinate): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparator: Self = this.set("separator", js.undefined)
+    @scala.inline
+    def setUseTranslate3d(value: Boolean): Self = this.set("useTranslate3d", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseTranslate3d: Self = this.set("useTranslate3d", js.undefined)
+    @scala.inline
+    def setViewBox(value: ViewBox): Self = this.set("viewBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewBox: Self = this.set("viewBox", js.undefined)
+    @scala.inline
+    def setWrapperStyle(value: js.Object): Self = this.set("wrapperStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapperStyle: Self = this.set("wrapperStyle", js.undefined)
+  }
+  
 }
 

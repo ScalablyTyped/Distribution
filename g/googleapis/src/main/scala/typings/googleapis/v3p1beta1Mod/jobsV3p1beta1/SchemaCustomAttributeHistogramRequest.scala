@@ -33,16 +33,34 @@ trait SchemaCustomAttributeHistogramRequest extends js.Object {
 
 object SchemaCustomAttributeHistogramRequest {
   @scala.inline
-  def apply(
-    key: String = null,
-    longValueHistogramBucketingOption: SchemaNumericBucketingOption = null,
-    stringValueHistogram: js.UndefOr[Boolean] = js.undefined
-  ): SchemaCustomAttributeHistogramRequest = {
+  def apply(): SchemaCustomAttributeHistogramRequest = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (longValueHistogramBucketingOption != null) __obj.updateDynamic("longValueHistogramBucketingOption")(longValueHistogramBucketingOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringValueHistogram)) __obj.updateDynamic("stringValueHistogram")(stringValueHistogram.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomAttributeHistogramRequest]
   }
+  @scala.inline
+  implicit class SchemaCustomAttributeHistogramRequestOps[Self <: SchemaCustomAttributeHistogramRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLongValueHistogramBucketingOption(value: SchemaNumericBucketingOption): Self = this.set("longValueHistogramBucketingOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongValueHistogramBucketingOption: Self = this.set("longValueHistogramBucketingOption", js.undefined)
+    @scala.inline
+    def setStringValueHistogram(value: Boolean): Self = this.set("stringValueHistogram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValueHistogram: Self = this.set("stringValueHistogram", js.undefined)
+  }
+  
 }
 

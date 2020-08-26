@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-sql-parser
 
-Typings are for version 1.11.0
+Typings are for version 3.0.4
 
 ## Library description:
 simple node sql parser
@@ -10,9 +10,9 @@ simple node sql parser
 | ------------------ | :-------------: |
 | Full name          | node-sql-parser |
 | Keywords           | sql, parser, ast, nodejs |
-| # releases         | 47 |
-| # dependents       | 2 |
-| # downloads        | 25186 |
+| # releases         | 51 |
+| # dependents       | 3 |
+| # downloads        | 26581 |
 | # stars            | 0 |
 
 ## Links

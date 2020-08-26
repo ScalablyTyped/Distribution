@@ -29,6 +29,9 @@ trait FormatCondition extends js.Object {
   def IsMemberSafe(dispid: Double): Boolean = js.native
   /** @param Operator [Operator=0] */
   def Modify(Type: AcFormatConditionType): Unit = js.native
+  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: String): Unit = js.native
+  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: Boolean): Unit = js.native
+  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: Double): Unit = js.native
   def Modify(Type: AcFormatConditionType, Operator: AcFormatConditionOperator): Unit = js.native
   def Modify(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: String): Unit = js.native
   def Modify(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: Boolean): Unit = js.native

@@ -46,28 +46,58 @@ trait RdsDbInstance extends js.Object {
 
 object RdsDbInstance {
   @scala.inline
-  def apply(
-    Address: String = null,
-    DbInstanceIdentifier: String = null,
-    DbPassword: String = null,
-    DbUser: String = null,
-    Engine: String = null,
-    MissingOnRds: js.UndefOr[Boolean] = js.undefined,
-    RdsDbInstanceArn: String = null,
-    Region: String = null,
-    StackId: String = null
-  ): RdsDbInstance = {
+  def apply(): RdsDbInstance = {
     val __obj = js.Dynamic.literal()
-    if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
-    if (DbInstanceIdentifier != null) __obj.updateDynamic("DbInstanceIdentifier")(DbInstanceIdentifier.asInstanceOf[js.Any])
-    if (DbPassword != null) __obj.updateDynamic("DbPassword")(DbPassword.asInstanceOf[js.Any])
-    if (DbUser != null) __obj.updateDynamic("DbUser")(DbUser.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (!js.isUndefined(MissingOnRds)) __obj.updateDynamic("MissingOnRds")(MissingOnRds.get.asInstanceOf[js.Any])
-    if (RdsDbInstanceArn != null) __obj.updateDynamic("RdsDbInstanceArn")(RdsDbInstanceArn.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RdsDbInstance]
   }
+  @scala.inline
+  implicit class RdsDbInstanceOps[Self <: RdsDbInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("Address", js.undefined)
+    @scala.inline
+    def setDbInstanceIdentifier(value: String): Self = this.set("DbInstanceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbInstanceIdentifier: Self = this.set("DbInstanceIdentifier", js.undefined)
+    @scala.inline
+    def setDbPassword(value: String): Self = this.set("DbPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbPassword: Self = this.set("DbPassword", js.undefined)
+    @scala.inline
+    def setDbUser(value: String): Self = this.set("DbUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbUser: Self = this.set("DbUser", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setMissingOnRds(value: Boolean): Self = this.set("MissingOnRds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissingOnRds: Self = this.set("MissingOnRds", js.undefined)
+    @scala.inline
+    def setRdsDbInstanceArn(value: String): Self = this.set("RdsDbInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRdsDbInstanceArn: Self = this.set("RdsDbInstanceArn", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+  }
+  
 }
 

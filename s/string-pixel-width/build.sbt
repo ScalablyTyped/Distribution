@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "string-pixel-width"
-version := "1.7-dt-20200515Z-63e146"
-scalaVersion := "2.13.2"
+version := "1.7-dt-20200515Z-451ba7"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

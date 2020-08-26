@@ -18,11 +18,30 @@ trait ApplicationResourceLifecycleConfig extends js.Object {
 
 object ApplicationResourceLifecycleConfig {
   @scala.inline
-  def apply(ServiceRole: String = null, VersionLifecycleConfig: ApplicationVersionLifecycleConfig = null): ApplicationResourceLifecycleConfig = {
+  def apply(): ApplicationResourceLifecycleConfig = {
     val __obj = js.Dynamic.literal()
-    if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
-    if (VersionLifecycleConfig != null) __obj.updateDynamic("VersionLifecycleConfig")(VersionLifecycleConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationResourceLifecycleConfig]
   }
+  @scala.inline
+  implicit class ApplicationResourceLifecycleConfigOps[Self <: ApplicationResourceLifecycleConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceRole(value: String): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("ServiceRole", js.undefined)
+    @scala.inline
+    def setVersionLifecycleConfig(value: ApplicationVersionLifecycleConfig): Self = this.set("VersionLifecycleConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionLifecycleConfig: Self = this.set("VersionLifecycleConfig", js.undefined)
+  }
+  
 }
 

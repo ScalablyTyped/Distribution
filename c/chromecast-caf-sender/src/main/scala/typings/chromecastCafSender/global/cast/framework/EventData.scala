@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 abstract class EventData protected ()
   extends typings.chromecastCafSender.cast.framework.EventData {
   def this(`type`: String) = this()
-  /* CompleteClass */
-  override var `type`: String = js.native
 }
 

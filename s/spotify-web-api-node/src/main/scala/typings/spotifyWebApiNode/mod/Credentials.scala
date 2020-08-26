@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Credentials extends js.Object {
-  var accessToken: js.UndefOr[String] = js.undefined
-  var clientId: js.UndefOr[String] = js.undefined
-  var clientSecret: js.UndefOr[String] = js.undefined
-  var redirectUri: js.UndefOr[String] = js.undefined
-  var refreshToken: js.UndefOr[String] = js.undefined
+  var accessToken: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.native
+  var clientSecret: js.UndefOr[String] = js.native
+  var redirectUri: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.native
 }
 
 object Credentials {
   @scala.inline
-  def apply(
-    accessToken: String = null,
-    clientId: String = null,
-    clientSecret: String = null,
-    redirectUri: String = null,
-    refreshToken: String = null
-  ): Credentials = {
+  def apply(): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
+  @scala.inline
+  implicit class CredentialsOps[Self <: Credentials] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setClientSecret(value: String): Self = this.set("clientSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientSecret: Self = this.set("clientSecret", js.undefined)
+    @scala.inline
+    def setRedirectUri(value: String): Self = this.set("redirectUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirectUri: Self = this.set("redirectUri", js.undefined)
+    @scala.inline
+    def setRefreshToken(value: String): Self = this.set("refreshToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshToken: Self = this.set("refreshToken", js.undefined)
+  }
+  
 }
 

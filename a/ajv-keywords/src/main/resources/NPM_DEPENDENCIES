@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ajv-keywords" : "3.5.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ajv-keywords" : "3.5.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

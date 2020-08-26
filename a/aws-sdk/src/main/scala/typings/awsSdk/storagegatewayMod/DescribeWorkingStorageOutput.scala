@@ -23,18 +23,40 @@ trait DescribeWorkingStorageOutput extends js.Object {
 
 object DescribeWorkingStorageOutput {
   @scala.inline
-  def apply(
-    DiskIds: DiskIds = null,
-    GatewayARN: GatewayARN = null,
-    WorkingStorageAllocatedInBytes: js.UndefOr[long] = js.undefined,
-    WorkingStorageUsedInBytes: js.UndefOr[long] = js.undefined
-  ): DescribeWorkingStorageOutput = {
+  def apply(): DescribeWorkingStorageOutput = {
     val __obj = js.Dynamic.literal()
-    if (DiskIds != null) __obj.updateDynamic("DiskIds")(DiskIds.asInstanceOf[js.Any])
-    if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(WorkingStorageAllocatedInBytes)) __obj.updateDynamic("WorkingStorageAllocatedInBytes")(WorkingStorageAllocatedInBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(WorkingStorageUsedInBytes)) __obj.updateDynamic("WorkingStorageUsedInBytes")(WorkingStorageUsedInBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorkingStorageOutput]
   }
+  @scala.inline
+  implicit class DescribeWorkingStorageOutputOps[Self <: DescribeWorkingStorageOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiskIdsVarargs(value: DiskId*): Self = this.set("DiskIds", js.Array(value :_*))
+    @scala.inline
+    def setDiskIds(value: DiskIds): Self = this.set("DiskIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskIds: Self = this.set("DiskIds", js.undefined)
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    @scala.inline
+    def setWorkingStorageAllocatedInBytes(value: long): Self = this.set("WorkingStorageAllocatedInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkingStorageAllocatedInBytes: Self = this.set("WorkingStorageAllocatedInBytes", js.undefined)
+    @scala.inline
+    def setWorkingStorageUsedInBytes(value: long): Self = this.set("WorkingStorageUsedInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkingStorageUsedInBytes: Self = this.set("WorkingStorageUsedInBytes", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait CancelElasticsearchServiceSoftwareUpdateResponse extends js.Object {
 
 object CancelElasticsearchServiceSoftwareUpdateResponse {
   @scala.inline
-  def apply(ServiceSoftwareOptions: ServiceSoftwareOptions = null): CancelElasticsearchServiceSoftwareUpdateResponse = {
+  def apply(): CancelElasticsearchServiceSoftwareUpdateResponse = {
     val __obj = js.Dynamic.literal()
-    if (ServiceSoftwareOptions != null) __obj.updateDynamic("ServiceSoftwareOptions")(ServiceSoftwareOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelElasticsearchServiceSoftwareUpdateResponse]
   }
+  @scala.inline
+  implicit class CancelElasticsearchServiceSoftwareUpdateResponseOps[Self <: CancelElasticsearchServiceSoftwareUpdateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceSoftwareOptions(value: ServiceSoftwareOptions): Self = this.set("ServiceSoftwareOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceSoftwareOptions: Self = this.set("ServiceSoftwareOptions", js.undefined)
+  }
+  
 }
 

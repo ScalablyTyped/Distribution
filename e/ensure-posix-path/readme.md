@@ -1,7 +1,7 @@
 
 # Scala.js typings for ensure-posix-path
 
-Typings are for version 1.0
+Typings are for version 1.1.1
 
 ## Library description:
 [![Build Status](https://travis-ci.org/stefanpenner/ensure-posix-path.svg)](https://travis-ci.org/stefanpenner/ensure-posix-path) [![Build status](https://ci.appveyor.com/api/projects/status/bt015k54b2ohk1oi?svg=true)](https://ci.appveyor.com/project/embe
@@ -24,7 +24,7 @@ Typings are for version 1.0
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

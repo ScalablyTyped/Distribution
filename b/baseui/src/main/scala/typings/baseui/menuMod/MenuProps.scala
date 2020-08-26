@@ -7,23 +7,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MenuProps extends BaseMenuPropsT {
-  var overrides: js.UndefOr[EmptyState] = js.undefined
-  var size: js.UndefOr[default_ | compact] = js.undefined
+  var overrides: js.UndefOr[EmptyState] = js.native
+  var size: js.UndefOr[default_ | compact] = js.native
 }
 
 object MenuProps {
   @scala.inline
-  def apply(
-    overrides: EmptyState = null,
-    renderAll: js.UndefOr[Boolean] = js.undefined,
-    size: default_ | compact = null
-  ): MenuProps = {
+  def apply(): MenuProps = {
     val __obj = js.Dynamic.literal()
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps]
   }
+  @scala.inline
+  implicit class MenuPropsOps[Self <: MenuProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOverrides(value: EmptyState): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setSize(value: default_ | compact): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

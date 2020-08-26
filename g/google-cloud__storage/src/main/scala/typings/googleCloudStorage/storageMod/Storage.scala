@@ -287,7 +287,7 @@ object Storage extends js.Object {
   var Bucket: Instantiable3[
     /* storage */ Storage, 
     /* name */ String, 
-    js.UndefOr[/* options */ typings.googleCloudStorage.bucketMod.BucketOptions], 
+    /* options */ js.UndefOr[typings.googleCloudStorage.bucketMod.BucketOptions], 
     typings.googleCloudStorage.bucketMod.Bucket
   ] = js.native
   /**
@@ -313,7 +313,7 @@ object Storage extends js.Object {
   var File: Instantiable3[
     /* bucket */ Bucket, 
     /* name */ String, 
-    js.UndefOr[/* options */ FileOptions], 
+    /* options */ js.UndefOr[FileOptions], 
     typings.googleCloudStorage.fileMod.File
   ] = js.native
   /**
@@ -326,7 +326,7 @@ object Storage extends js.Object {
   var HmacKey: Instantiable3[
     /* storage */ Storage, 
     /* accessId */ String, 
-    js.UndefOr[/* options */ HmacKeyOptions], 
+    /* options */ js.UndefOr[HmacKeyOptions], 
     typings.googleCloudStorage.hmacKeyMod.HmacKey
   ] = js.native
   /**
@@ -386,5 +386,6 @@ object Storage extends js.Object {
     * });
     */
   var acl: OWNERROLE = js.native
+  var sanitizeEndpoint: js.Any = js.native
 }
 

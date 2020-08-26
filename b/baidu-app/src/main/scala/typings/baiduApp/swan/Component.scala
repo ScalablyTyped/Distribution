@@ -70,6 +70,13 @@ trait Component[D, P] extends js.Object {
     key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
     */ typings.baiduApp.baiduAppStrings.Component with TopLevel[js.Any],
+    value: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def setData(
+    key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
+    */ typings.baiduApp.baiduAppStrings.Component with TopLevel[js.Any],
     value: js.Any
   ): Unit = js.native
   def setData(
@@ -88,12 +95,14 @@ trait Component[D, P] extends js.Object {
     * @param [callback] callback 是一个回调函数，在这次setData对界面渲染完毕后调用
     */
   def setData(key: String): Unit = js.native
+  def setData(key: String, value: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def setData(key: String, value: js.Any): Unit = js.native
   def setData(key: String, value: js.Any, callback: js.Function0[Unit]): Unit = js.native
   /**
     * 触发事件，参见 [组件事件](https://smartprogram.baidu.com/docs/develop/framework/custom-component_cont/)
     */
   def triggerEvent(name: String): Unit = js.native
+  def triggerEvent(name: String, details: js.UndefOr[scala.Nothing], options: Partialbubblesbooleancomp): Unit = js.native
   def triggerEvent(name: String, details: js.Any): Unit = js.native
   def triggerEvent(name: String, details: js.Any, options: Partialbubblesbooleancomp): Unit = js.native
 }

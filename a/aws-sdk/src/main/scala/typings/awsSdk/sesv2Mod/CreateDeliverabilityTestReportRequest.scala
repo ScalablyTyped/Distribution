@@ -26,16 +26,36 @@ trait CreateDeliverabilityTestReportRequest extends js.Object {
 
 object CreateDeliverabilityTestReportRequest {
   @scala.inline
-  def apply(
-    Content: EmailContent,
-    FromEmailAddress: EmailAddress,
-    ReportName: ReportName = null,
-    Tags: TagList = null
-  ): CreateDeliverabilityTestReportRequest = {
+  def apply(Content: EmailContent, FromEmailAddress: EmailAddress): CreateDeliverabilityTestReportRequest = {
     val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any], FromEmailAddress = FromEmailAddress.asInstanceOf[js.Any])
-    if (ReportName != null) __obj.updateDynamic("ReportName")(ReportName.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeliverabilityTestReportRequest]
   }
+  @scala.inline
+  implicit class CreateDeliverabilityTestReportRequestOps[Self <: CreateDeliverabilityTestReportRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: EmailContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFromEmailAddress(value: EmailAddress): Self = this.set("FromEmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReportName(value: ReportName): Self = this.set("ReportName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportName: Self = this.set("ReportName", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

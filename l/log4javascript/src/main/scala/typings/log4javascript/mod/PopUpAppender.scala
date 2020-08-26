@@ -29,9 +29,164 @@ import scala.scalajs.js.annotation._
 	 */
 class PopUpAppender () extends Appender {
   def this(lazyInit: Boolean) = this()
+  def this(lazyInit: js.UndefOr[scala.Nothing], initiallyMinimized: Boolean) = this()
   def this(lazyInit: Boolean, initiallyMinimized: Boolean) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: Boolean
+  ) = this()
+  def this(lazyInit: js.UndefOr[scala.Nothing], initiallyMinimized: Boolean, useDocumentWrite: Boolean) = this()
+  def this(lazyInit: Boolean, initiallyMinimized: js.UndefOr[scala.Nothing], useDocumentWrite: Boolean) = this()
   def this(lazyInit: Boolean, initiallyMinimized: Boolean, useDocumentWrite: Boolean) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: Double
+  ) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: Boolean,
+    width: Double
+  ) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: Boolean,
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: Double
+  ) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: Boolean,
+    useDocumentWrite: Boolean,
+    width: Double
+  ) = this()
+  def this(
+    lazyInit: Boolean,
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: Double
+  ) = this()
+  def this(
+    lazyInit: Boolean,
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: Boolean,
+    width: Double
+  ) = this()
+  def this(
+    lazyInit: Boolean,
+    initiallyMinimized: Boolean,
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: Double
+  ) = this()
   def this(lazyInit: Boolean, initiallyMinimized: Boolean, useDocumentWrite: Boolean, width: Double) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: Double,
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: Boolean,
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: Boolean,
+    width: Double,
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: Boolean,
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: Boolean,
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: Double,
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: Boolean,
+    useDocumentWrite: Boolean,
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: js.UndefOr[scala.Nothing],
+    initiallyMinimized: Boolean,
+    useDocumentWrite: Boolean,
+    width: Double,
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: Boolean,
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: Boolean,
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: Double,
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: Boolean,
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: Boolean,
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: Boolean,
+    initiallyMinimized: js.UndefOr[scala.Nothing],
+    useDocumentWrite: Boolean,
+    width: Double,
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: Boolean,
+    initiallyMinimized: Boolean,
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: Boolean,
+    initiallyMinimized: Boolean,
+    useDocumentWrite: js.UndefOr[scala.Nothing],
+    width: Double,
+    height: Double
+  ) = this()
+  def this(
+    lazyInit: Boolean,
+    initiallyMinimized: Boolean,
+    useDocumentWrite: Boolean,
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ) = this()
   def this(
     lazyInit: Boolean,
     initiallyMinimized: Boolean,

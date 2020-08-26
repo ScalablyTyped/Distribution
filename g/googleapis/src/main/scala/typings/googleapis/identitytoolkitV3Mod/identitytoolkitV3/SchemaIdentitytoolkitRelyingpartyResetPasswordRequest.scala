@@ -29,18 +29,38 @@ trait SchemaIdentitytoolkitRelyingpartyResetPasswordRequest extends js.Object {
 
 object SchemaIdentitytoolkitRelyingpartyResetPasswordRequest {
   @scala.inline
-  def apply(
-    email: String = null,
-    newPassword: String = null,
-    oldPassword: String = null,
-    oobCode: String = null
-  ): SchemaIdentitytoolkitRelyingpartyResetPasswordRequest = {
+  def apply(): SchemaIdentitytoolkitRelyingpartyResetPasswordRequest = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (newPassword != null) __obj.updateDynamic("newPassword")(newPassword.asInstanceOf[js.Any])
-    if (oldPassword != null) __obj.updateDynamic("oldPassword")(oldPassword.asInstanceOf[js.Any])
-    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartyResetPasswordRequest]
   }
+  @scala.inline
+  implicit class SchemaIdentitytoolkitRelyingpartyResetPasswordRequestOps[Self <: SchemaIdentitytoolkitRelyingpartyResetPasswordRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setNewPassword(value: String): Self = this.set("newPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewPassword: Self = this.set("newPassword", js.undefined)
+    @scala.inline
+    def setOldPassword(value: String): Self = this.set("oldPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOldPassword: Self = this.set("oldPassword", js.undefined)
+    @scala.inline
+    def setOobCode(value: String): Self = this.set("oobCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOobCode: Self = this.set("oobCode", js.undefined)
+  }
+  
 }
 

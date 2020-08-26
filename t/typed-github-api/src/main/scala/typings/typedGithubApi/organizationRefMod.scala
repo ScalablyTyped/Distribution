@@ -29,16 +29,10 @@ object organizationRefMod extends js.Object {
     var login: String = js.native
     def getRepository(name: String): RepositoryRef = js.native
     def loadAsync(): js.Promise[Organization | Null] = js.native
-    def loadRepositoriesAsync(): js.Promise[js.Array[Repository]] = js.native
-    def loadRepositoriesAsync(_type: all | public | `private` | forks | sources | member): js.Promise[js.Array[Repository]] = js.native
     def loadRepositoriesAsync(
-      _type: all | public | `private` | forks | sources | member,
-      _sort: created | updated | pushed | full_name
-    ): js.Promise[js.Array[Repository]] = js.native
-    def loadRepositoriesAsync(
-      _type: all | public | `private` | forks | sources | member,
-      _sort: created | updated | pushed | full_name,
-      _ascending: Boolean
+      _type: js.UndefOr[all | public | `private` | forks | sources | member],
+      _sort: js.UndefOr[created | updated | pushed | full_name],
+      _ascending: js.UndefOr[Boolean]
     ): js.Promise[js.Array[Repository]] = js.native
   }
   

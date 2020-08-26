@@ -9,54 +9,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PopoverProps extends js.Object {
-  var anchorEl: js.UndefOr[ReactInstance] = js.undefined
-  var anchorOrigin: js.UndefOr[origin] = js.undefined
-  var animated: js.UndefOr[Boolean] = js.undefined
-  var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.undefined
-  var autoCloseWhenOffScreen: js.UndefOr[Boolean] = js.undefined
-  var canAutoPosition: js.UndefOr[Boolean] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var onRequestClose: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.undefined
-  var open: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var targetOrigin: js.UndefOr[origin] = js.undefined
-  var useLayerForClickAway: js.UndefOr[Boolean] = js.undefined
-  var zDepth: js.UndefOr[Double] = js.undefined
+  var anchorEl: js.UndefOr[ReactInstance] = js.native
+  var anchorOrigin: js.UndefOr[origin] = js.native
+  var animated: js.UndefOr[Boolean] = js.native
+  var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.native
+  var autoCloseWhenOffScreen: js.UndefOr[Boolean] = js.native
+  var canAutoPosition: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
+  var onRequestClose: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.native
+  var open: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var targetOrigin: js.UndefOr[origin] = js.native
+  var useLayerForClickAway: js.UndefOr[Boolean] = js.native
+  var zDepth: js.UndefOr[Double] = js.native
 }
 
 object PopoverProps {
   @scala.inline
-  def apply(
-    anchorEl: ReactInstance = null,
-    anchorOrigin: origin = null,
-    animated: js.UndefOr[Boolean] = js.undefined,
-    animation: ComponentClass[PopoverAnimationProps, ComponentState] = null,
-    autoCloseWhenOffScreen: js.UndefOr[Boolean] = js.undefined,
-    canAutoPosition: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    onRequestClose: /* reason */ String => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    targetOrigin: origin = null,
-    useLayerForClickAway: js.UndefOr[Boolean] = js.undefined,
-    zDepth: js.UndefOr[Double] = js.undefined
-  ): PopoverProps = {
+  def apply(): PopoverProps = {
     val __obj = js.Dynamic.literal()
-    if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.asInstanceOf[js.Any])
-    if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCloseWhenOffScreen)) __obj.updateDynamic("autoCloseWhenOffScreen")(autoCloseWhenOffScreen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(canAutoPosition)) __obj.updateDynamic("canAutoPosition")(canAutoPosition.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(js.Any.fromFunction1(onRequestClose))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLayerForClickAway)) __obj.updateDynamic("useLayerForClickAway")(useLayerForClickAway.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zDepth)) __obj.updateDynamic("zDepth")(zDepth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverProps]
   }
+  @scala.inline
+  implicit class PopoverPropsOps[Self <: PopoverProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnchorEl(value: ReactInstance): Self = this.set("anchorEl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorEl: Self = this.set("anchorEl", js.undefined)
+    @scala.inline
+    def setAnchorOrigin(value: origin): Self = this.set("anchorOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorOrigin: Self = this.set("anchorOrigin", js.undefined)
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAutoCloseWhenOffScreen(value: Boolean): Self = this.set("autoCloseWhenOffScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCloseWhenOffScreen: Self = this.set("autoCloseWhenOffScreen", js.undefined)
+    @scala.inline
+    def setCanAutoPosition(value: Boolean): Self = this.set("canAutoPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanAutoPosition: Self = this.set("canAutoPosition", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setOnRequestClose(value: /* reason */ String => Unit): Self = this.set("onRequestClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRequestClose: Self = this.set("onRequestClose", js.undefined)
+    @scala.inline
+    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTargetOrigin(value: origin): Self = this.set("targetOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetOrigin: Self = this.set("targetOrigin", js.undefined)
+    @scala.inline
+    def setUseLayerForClickAway(value: Boolean): Self = this.set("useLayerForClickAway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseLayerForClickAway: Self = this.set("useLayerForClickAway", js.undefined)
+    @scala.inline
+    def setZDepth(value: Double): Self = this.set("zDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZDepth: Self = this.set("zDepth", js.undefined)
+  }
+  
 }
 

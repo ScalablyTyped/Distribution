@@ -1,12 +1,13 @@
 package typings.echarts.echarts.EChartOption.SeriesLines
 
 import typings.echarts.anon.FontSize
-import typings.echarts.anon.LineStyleShadowColor
 import typings.echarts.anon.ShadowColor
+import typings.echarts.anon.`12`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataObject extends js.Object {
   /**
     * An array includes two ore more than two coordinates.
@@ -19,47 +20,71 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.coords
     */
-  var coords: js.UndefOr[js.Array[_]] = js.undefined
+  var coords: js.UndefOr[js.Array[_]] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis
     */
-  var emphasis: js.UndefOr[LineStyleShadowColor] = js.undefined
+  var emphasis: js.UndefOr[`12`] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.data.label
     */
-  var label: js.UndefOr[FontSize] = js.undefined
+  var label: js.UndefOr[FontSize] = js.native
   /**
     * The line style of this data item.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.lineStyle
     */
-  var lineStyle: js.UndefOr[ShadowColor] = js.undefined
+  var lineStyle: js.UndefOr[ShadowColor] = js.native
   /**
     * the name of data.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
 }
 
 object DataObject {
   @scala.inline
-  def apply(
-    coords: js.Array[_] = null,
-    emphasis: LineStyleShadowColor = null,
-    label: FontSize = null,
-    lineStyle: ShadowColor = null,
-    name: String = null
-  ): DataObject = {
+  def apply(): DataObject = {
     val __obj = js.Dynamic.literal()
-    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
+  @scala.inline
+  implicit class DataObjectOps[Self <: DataObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoordsVarargs(value: js.Any*): Self = this.set("coords", js.Array(value :_*))
+    @scala.inline
+    def setCoords(value: js.Array[_]): Self = this.set("coords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoords: Self = this.set("coords", js.undefined)
+    @scala.inline
+    def setEmphasis(value: `12`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setLabel(value: FontSize): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLineStyle(value: ShadowColor): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

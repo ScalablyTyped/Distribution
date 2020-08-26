@@ -55,30 +55,62 @@ trait SchemaParagraphElement extends js.Object {
 
 object SchemaParagraphElement {
   @scala.inline
-  def apply(
-    autoText: SchemaAutoText = null,
-    columnBreak: SchemaColumnBreak = null,
-    endIndex: js.UndefOr[Double] = js.undefined,
-    equation: SchemaEquation = null,
-    footnoteReference: SchemaFootnoteReference = null,
-    horizontalRule: SchemaHorizontalRule = null,
-    inlineObjectElement: SchemaInlineObjectElement = null,
-    pageBreak: SchemaPageBreak = null,
-    startIndex: js.UndefOr[Double] = js.undefined,
-    textRun: SchemaTextRun = null
-  ): SchemaParagraphElement = {
+  def apply(): SchemaParagraphElement = {
     val __obj = js.Dynamic.literal()
-    if (autoText != null) __obj.updateDynamic("autoText")(autoText.asInstanceOf[js.Any])
-    if (columnBreak != null) __obj.updateDynamic("columnBreak")(columnBreak.asInstanceOf[js.Any])
-    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
-    if (equation != null) __obj.updateDynamic("equation")(equation.asInstanceOf[js.Any])
-    if (footnoteReference != null) __obj.updateDynamic("footnoteReference")(footnoteReference.asInstanceOf[js.Any])
-    if (horizontalRule != null) __obj.updateDynamic("horizontalRule")(horizontalRule.asInstanceOf[js.Any])
-    if (inlineObjectElement != null) __obj.updateDynamic("inlineObjectElement")(inlineObjectElement.asInstanceOf[js.Any])
-    if (pageBreak != null) __obj.updateDynamic("pageBreak")(pageBreak.asInstanceOf[js.Any])
-    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
-    if (textRun != null) __obj.updateDynamic("textRun")(textRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaParagraphElement]
   }
+  @scala.inline
+  implicit class SchemaParagraphElementOps[Self <: SchemaParagraphElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoText(value: SchemaAutoText): Self = this.set("autoText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoText: Self = this.set("autoText", js.undefined)
+    @scala.inline
+    def setColumnBreak(value: SchemaColumnBreak): Self = this.set("columnBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnBreak: Self = this.set("columnBreak", js.undefined)
+    @scala.inline
+    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    @scala.inline
+    def setEquation(value: SchemaEquation): Self = this.set("equation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEquation: Self = this.set("equation", js.undefined)
+    @scala.inline
+    def setFootnoteReference(value: SchemaFootnoteReference): Self = this.set("footnoteReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFootnoteReference: Self = this.set("footnoteReference", js.undefined)
+    @scala.inline
+    def setHorizontalRule(value: SchemaHorizontalRule): Self = this.set("horizontalRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalRule: Self = this.set("horizontalRule", js.undefined)
+    @scala.inline
+    def setInlineObjectElement(value: SchemaInlineObjectElement): Self = this.set("inlineObjectElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineObjectElement: Self = this.set("inlineObjectElement", js.undefined)
+    @scala.inline
+    def setPageBreak(value: SchemaPageBreak): Self = this.set("pageBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageBreak: Self = this.set("pageBreak", js.undefined)
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    @scala.inline
+    def setTextRun(value: SchemaTextRun): Self = this.set("textRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextRun: Self = this.set("textRun", js.undefined)
+  }
+  
 }
 

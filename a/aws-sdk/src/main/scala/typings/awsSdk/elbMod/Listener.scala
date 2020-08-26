@@ -30,17 +30,36 @@ trait Listener extends js.Object {
 
 object Listener {
   @scala.inline
-  def apply(
-    InstancePort: InstancePort,
-    LoadBalancerPort: AccessPointPort,
-    Protocol: Protocol,
-    InstanceProtocol: Protocol = null,
-    SSLCertificateId: SSLCertificateId = null
-  ): Listener = {
+  def apply(InstancePort: InstancePort, LoadBalancerPort: AccessPointPort, Protocol: Protocol): Listener = {
     val __obj = js.Dynamic.literal(InstancePort = InstancePort.asInstanceOf[js.Any], LoadBalancerPort = LoadBalancerPort.asInstanceOf[js.Any], Protocol = Protocol.asInstanceOf[js.Any])
-    if (InstanceProtocol != null) __obj.updateDynamic("InstanceProtocol")(InstanceProtocol.asInstanceOf[js.Any])
-    if (SSLCertificateId != null) __obj.updateDynamic("SSLCertificateId")(SSLCertificateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Listener]
   }
+  @scala.inline
+  implicit class ListenerOps[Self <: Listener] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstancePort(value: InstancePort): Self = this.set("InstancePort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoadBalancerPort(value: AccessPointPort): Self = this.set("LoadBalancerPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProtocol(value: Protocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceProtocol(value: Protocol): Self = this.set("InstanceProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceProtocol: Self = this.set("InstanceProtocol", js.undefined)
+    @scala.inline
+    def setSSLCertificateId(value: SSLCertificateId): Self = this.set("SSLCertificateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSLCertificateId: Self = this.set("SSLCertificateId", js.undefined)
+  }
+  
 }
 

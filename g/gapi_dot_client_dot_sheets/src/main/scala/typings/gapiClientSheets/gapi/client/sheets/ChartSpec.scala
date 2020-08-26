@@ -4,133 +4,188 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartSpec extends js.Object {
   /**
     * The alternative text that describes the chart.  This is often used
     * for accessibility.
     */
-  var altText: js.UndefOr[String] = js.undefined
+  var altText: js.UndefOr[String] = js.native
   /**
     * The background color of the entire chart.
     * Not applicable to Org charts.
     */
-  var backgroundColor: js.UndefOr[Color] = js.undefined
+  var backgroundColor: js.UndefOr[Color] = js.native
   /**
     * The background color of the entire chart.
     * Not applicable to Org charts.
     * If background_color is also set, this field takes precedence.
     */
-  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
+  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.native
   /**
     * A basic chart specification, can be one of many kinds of charts.
     * See BasicChartType for the list of all
     * charts this supports.
     */
-  var basicChart: js.UndefOr[BasicChartSpec] = js.undefined
+  var basicChart: js.UndefOr[BasicChartSpec] = js.native
   /** A bubble chart specification. */
-  var bubbleChart: js.UndefOr[BubbleChartSpec] = js.undefined
+  var bubbleChart: js.UndefOr[BubbleChartSpec] = js.native
   /** A candlestick chart specification. */
-  var candlestickChart: js.UndefOr[CandlestickChartSpec] = js.undefined
+  var candlestickChart: js.UndefOr[CandlestickChartSpec] = js.native
   /**
     * The name of the font to use by default for all chart text (e.g. title,
     * axis labels, legend).  If a font is specified for a specific part of the
     * chart it will override this font name.
     */
-  var fontName: js.UndefOr[String] = js.undefined
+  var fontName: js.UndefOr[String] = js.native
   /** Determines how the charts will use hidden rows or columns. */
-  var hiddenDimensionStrategy: js.UndefOr[String] = js.undefined
+  var hiddenDimensionStrategy: js.UndefOr[String] = js.native
   /** A histogram chart specification. */
-  var histogramChart: js.UndefOr[HistogramChartSpec] = js.undefined
+  var histogramChart: js.UndefOr[HistogramChartSpec] = js.native
   /**
     * True to make a chart fill the entire space in which it's rendered with
     * minimum padding.  False to use the default padding.
     * (Not applicable to Geo and Org charts.)
     */
-  var maximized: js.UndefOr[Boolean] = js.undefined
+  var maximized: js.UndefOr[Boolean] = js.native
   /** An org chart specification. */
-  var orgChart: js.UndefOr[OrgChartSpec] = js.undefined
+  var orgChart: js.UndefOr[OrgChartSpec] = js.native
   /** A pie chart specification. */
-  var pieChart: js.UndefOr[PieChartSpec] = js.undefined
+  var pieChart: js.UndefOr[PieChartSpec] = js.native
   /** A scorecard chart specification. */
-  var scorecardChart: js.UndefOr[ScorecardChartSpec] = js.undefined
+  var scorecardChart: js.UndefOr[ScorecardChartSpec] = js.native
   /** The subtitle of the chart. */
-  var subtitle: js.UndefOr[String] = js.undefined
+  var subtitle: js.UndefOr[String] = js.native
   /**
     * The subtitle text format.
     * Strikethrough and underline are not supported.
     */
-  var subtitleTextFormat: js.UndefOr[TextFormat] = js.undefined
+  var subtitleTextFormat: js.UndefOr[TextFormat] = js.native
   /**
     * The subtitle text position.
     * This field is optional.
     */
-  var subtitleTextPosition: js.UndefOr[TextPosition] = js.undefined
+  var subtitleTextPosition: js.UndefOr[TextPosition] = js.native
   /** The title of the chart. */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * The title text format.
     * Strikethrough and underline are not supported.
     */
-  var titleTextFormat: js.UndefOr[TextFormat] = js.undefined
+  var titleTextFormat: js.UndefOr[TextFormat] = js.native
   /**
     * The title text position.
     * This field is optional.
     */
-  var titleTextPosition: js.UndefOr[TextPosition] = js.undefined
+  var titleTextPosition: js.UndefOr[TextPosition] = js.native
   /** A treemap chart specification. */
-  var treemapChart: js.UndefOr[TreemapChartSpec] = js.undefined
+  var treemapChart: js.UndefOr[TreemapChartSpec] = js.native
   /** A waterfall chart specification. */
-  var waterfallChart: js.UndefOr[WaterfallChartSpec] = js.undefined
+  var waterfallChart: js.UndefOr[WaterfallChartSpec] = js.native
 }
 
 object ChartSpec {
   @scala.inline
-  def apply(
-    altText: String = null,
-    backgroundColor: Color = null,
-    backgroundColorStyle: ColorStyle = null,
-    basicChart: BasicChartSpec = null,
-    bubbleChart: BubbleChartSpec = null,
-    candlestickChart: CandlestickChartSpec = null,
-    fontName: String = null,
-    hiddenDimensionStrategy: String = null,
-    histogramChart: HistogramChartSpec = null,
-    maximized: js.UndefOr[Boolean] = js.undefined,
-    orgChart: OrgChartSpec = null,
-    pieChart: PieChartSpec = null,
-    scorecardChart: ScorecardChartSpec = null,
-    subtitle: String = null,
-    subtitleTextFormat: TextFormat = null,
-    subtitleTextPosition: TextPosition = null,
-    title: String = null,
-    titleTextFormat: TextFormat = null,
-    titleTextPosition: TextPosition = null,
-    treemapChart: TreemapChartSpec = null,
-    waterfallChart: WaterfallChartSpec = null
-  ): ChartSpec = {
+  def apply(): ChartSpec = {
     val __obj = js.Dynamic.literal()
-    if (altText != null) __obj.updateDynamic("altText")(altText.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (backgroundColorStyle != null) __obj.updateDynamic("backgroundColorStyle")(backgroundColorStyle.asInstanceOf[js.Any])
-    if (basicChart != null) __obj.updateDynamic("basicChart")(basicChart.asInstanceOf[js.Any])
-    if (bubbleChart != null) __obj.updateDynamic("bubbleChart")(bubbleChart.asInstanceOf[js.Any])
-    if (candlestickChart != null) __obj.updateDynamic("candlestickChart")(candlestickChart.asInstanceOf[js.Any])
-    if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
-    if (hiddenDimensionStrategy != null) __obj.updateDynamic("hiddenDimensionStrategy")(hiddenDimensionStrategy.asInstanceOf[js.Any])
-    if (histogramChart != null) __obj.updateDynamic("histogramChart")(histogramChart.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximized)) __obj.updateDynamic("maximized")(maximized.get.asInstanceOf[js.Any])
-    if (orgChart != null) __obj.updateDynamic("orgChart")(orgChart.asInstanceOf[js.Any])
-    if (pieChart != null) __obj.updateDynamic("pieChart")(pieChart.asInstanceOf[js.Any])
-    if (scorecardChart != null) __obj.updateDynamic("scorecardChart")(scorecardChart.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (subtitleTextFormat != null) __obj.updateDynamic("subtitleTextFormat")(subtitleTextFormat.asInstanceOf[js.Any])
-    if (subtitleTextPosition != null) __obj.updateDynamic("subtitleTextPosition")(subtitleTextPosition.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleTextFormat != null) __obj.updateDynamic("titleTextFormat")(titleTextFormat.asInstanceOf[js.Any])
-    if (titleTextPosition != null) __obj.updateDynamic("titleTextPosition")(titleTextPosition.asInstanceOf[js.Any])
-    if (treemapChart != null) __obj.updateDynamic("treemapChart")(treemapChart.asInstanceOf[js.Any])
-    if (waterfallChart != null) __obj.updateDynamic("waterfallChart")(waterfallChart.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSpec]
   }
+  @scala.inline
+  implicit class ChartSpecOps[Self <: ChartSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltText(value: String): Self = this.set("altText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltText: Self = this.set("altText", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBackgroundColorStyle(value: ColorStyle): Self = this.set("backgroundColorStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColorStyle: Self = this.set("backgroundColorStyle", js.undefined)
+    @scala.inline
+    def setBasicChart(value: BasicChartSpec): Self = this.set("basicChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasicChart: Self = this.set("basicChart", js.undefined)
+    @scala.inline
+    def setBubbleChart(value: BubbleChartSpec): Self = this.set("bubbleChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBubbleChart: Self = this.set("bubbleChart", js.undefined)
+    @scala.inline
+    def setCandlestickChart(value: CandlestickChartSpec): Self = this.set("candlestickChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCandlestickChart: Self = this.set("candlestickChart", js.undefined)
+    @scala.inline
+    def setFontName(value: String): Self = this.set("fontName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontName: Self = this.set("fontName", js.undefined)
+    @scala.inline
+    def setHiddenDimensionStrategy(value: String): Self = this.set("hiddenDimensionStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiddenDimensionStrategy: Self = this.set("hiddenDimensionStrategy", js.undefined)
+    @scala.inline
+    def setHistogramChart(value: HistogramChartSpec): Self = this.set("histogramChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistogramChart: Self = this.set("histogramChart", js.undefined)
+    @scala.inline
+    def setMaximized(value: Boolean): Self = this.set("maximized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximized: Self = this.set("maximized", js.undefined)
+    @scala.inline
+    def setOrgChart(value: OrgChartSpec): Self = this.set("orgChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrgChart: Self = this.set("orgChart", js.undefined)
+    @scala.inline
+    def setPieChart(value: PieChartSpec): Self = this.set("pieChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePieChart: Self = this.set("pieChart", js.undefined)
+    @scala.inline
+    def setScorecardChart(value: ScorecardChartSpec): Self = this.set("scorecardChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScorecardChart: Self = this.set("scorecardChart", js.undefined)
+    @scala.inline
+    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    @scala.inline
+    def setSubtitleTextFormat(value: TextFormat): Self = this.set("subtitleTextFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitleTextFormat: Self = this.set("subtitleTextFormat", js.undefined)
+    @scala.inline
+    def setSubtitleTextPosition(value: TextPosition): Self = this.set("subtitleTextPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitleTextPosition: Self = this.set("subtitleTextPosition", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleTextFormat(value: TextFormat): Self = this.set("titleTextFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleTextFormat: Self = this.set("titleTextFormat", js.undefined)
+    @scala.inline
+    def setTitleTextPosition(value: TextPosition): Self = this.set("titleTextPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleTextPosition: Self = this.set("titleTextPosition", js.undefined)
+    @scala.inline
+    def setTreemapChart(value: TreemapChartSpec): Self = this.set("treemapChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreemapChart: Self = this.set("treemapChart", js.undefined)
+    @scala.inline
+    def setWaterfallChart(value: WaterfallChartSpec): Self = this.set("waterfallChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaterfallChart: Self = this.set("waterfallChart", js.undefined)
+  }
+  
 }
 

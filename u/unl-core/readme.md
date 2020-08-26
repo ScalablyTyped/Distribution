@@ -12,7 +12,7 @@ Gustavo Niemeyer’s geocoding system with elevation
 | Keywords           | geohash, geocode, geolocation, latitude, longitude, elevation, unl core, unl |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 780 |
+| # downloads        | 829 |
 | # stars            | 0 |
 
 ## Links

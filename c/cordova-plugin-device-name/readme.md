@@ -12,7 +12,7 @@ Cordova Device Name Plugin
 | Keywords           | ecosystem:cordova, cordova-android, cordova-windows, cordova-ios, cordova, device, name |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 49383 |
+| # downloads        | 49185 |
 | # stars            | 0 |
 
 ## Links

@@ -30,18 +30,38 @@ trait ComplianceItemEntry extends js.Object {
 
 object ComplianceItemEntry {
   @scala.inline
-  def apply(
-    Severity: ComplianceSeverity,
-    Status: ComplianceStatus,
-    Details: ComplianceItemDetails = null,
-    Id: ComplianceItemId = null,
-    Title: ComplianceItemTitle = null
-  ): ComplianceItemEntry = {
+  def apply(Severity: ComplianceSeverity, Status: ComplianceStatus): ComplianceItemEntry = {
     val __obj = js.Dynamic.literal(Severity = Severity.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-    if (Details != null) __obj.updateDynamic("Details")(Details.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceItemEntry]
   }
+  @scala.inline
+  implicit class ComplianceItemEntryOps[Self <: ComplianceItemEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSeverity(value: ComplianceSeverity): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: ComplianceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetails(value: ComplianceItemDetails): Self = this.set("Details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("Details", js.undefined)
+    @scala.inline
+    def setId(value: ComplianceItemId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setTitle(value: ComplianceItemTitle): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+  }
+  
 }
 

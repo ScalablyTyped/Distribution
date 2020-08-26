@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CustomReadonlyEditorProvider[T /* <: CustomDocument */] extends js.Object {
   /**
     * Create a new document for a given resource.
@@ -22,7 +23,7 @@ trait CustomReadonlyEditorProvider[T /* <: CustomDocument */] extends js.Object 
     *
     * @return The custom document.
     */
-  def openCustomDocument(uri: Uri, openContext: CustomDocumentOpenContext, token: CancellationToken): Thenable[T] | T
+  def openCustomDocument(uri: Uri, openContext: CustomDocumentOpenContext, token: CancellationToken): Thenable[T] | T = js.native
   /**
     * Resolve a custom editor for a given resource.
     *
@@ -40,7 +41,7 @@ trait CustomReadonlyEditorProvider[T /* <: CustomDocument */] extends js.Object 
     *
     * @return Optional thenable indicating that the custom editor has been resolved.
     */
-  def resolveCustomEditor(document: T, webviewPanel: WebviewPanel, token: CancellationToken): Thenable[Unit] | Unit
+  def resolveCustomEditor(document: T, webviewPanel: WebviewPanel, token: CancellationToken): Thenable[Unit] | Unit = js.native
 }
 
 object CustomReadonlyEditorProvider {
@@ -52,5 +53,22 @@ object CustomReadonlyEditorProvider {
     val __obj = js.Dynamic.literal(openCustomDocument = js.Any.fromFunction3(openCustomDocument), resolveCustomEditor = js.Any.fromFunction3(resolveCustomEditor))
     __obj.asInstanceOf[CustomReadonlyEditorProvider[T]]
   }
+  @scala.inline
+  implicit class CustomReadonlyEditorProviderOps[Self <: CustomReadonlyEditorProvider[_], /* <: typings.vscode.mod.CustomDocument */ T] (val x: Self with CustomReadonlyEditorProvider[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOpenCustomDocument(value: (Uri, CustomDocumentOpenContext, CancellationToken) => Thenable[T] | T): Self = this.set("openCustomDocument", js.Any.fromFunction3(value))
+    @scala.inline
+    def setResolveCustomEditor(value: (T, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit): Self = this.set("resolveCustomEditor", js.Any.fromFunction3(value))
+  }
+  
 }
 

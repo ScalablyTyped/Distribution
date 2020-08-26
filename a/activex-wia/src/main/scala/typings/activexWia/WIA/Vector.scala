@@ -36,6 +36,7 @@ trait Vector[TItem] extends js.Object {
     * @param number [Height=0]
     */
   def ImageFile(): typings.activexWia.WIA.ImageFile = js.native
+  def ImageFile(Width: js.UndefOr[scala.Nothing], Height: Double): typings.activexWia.WIA.ImageFile = js.native
   def ImageFile(Width: Double): typings.activexWia.WIA.ImageFile = js.native
   def ImageFile(Width: Double, Height: Double): typings.activexWia.WIA.ImageFile = js.native
   /** Returns the specified item in the vector by position */
@@ -47,6 +48,7 @@ trait Vector[TItem] extends js.Object {
     * @param number [Height=0]
     */
   def Picture(): js.Any = js.native
+  def Picture(Width: js.UndefOr[scala.Nothing], Height: Double): js.Any = js.native
   def Picture(Width: Double): js.Any = js.native
   def Picture(Width: Double, Height: Double): js.Any = js.native
   /** Removes the designated element and returns it if successful */
@@ -58,6 +60,7 @@ trait Vector[TItem] extends js.Object {
     * @param boolean [Unicode=true]
     */
   def SetFromString(Value: String): Unit = js.native
+  def SetFromString(Value: String, Resizable: js.UndefOr[scala.Nothing], Unicode: Boolean): Unit = js.native
   def SetFromString(Value: String, Resizable: Boolean): Unit = js.native
   def SetFromString(Value: String, Resizable: Boolean, Unicode: Boolean): Unit = js.native
   /**

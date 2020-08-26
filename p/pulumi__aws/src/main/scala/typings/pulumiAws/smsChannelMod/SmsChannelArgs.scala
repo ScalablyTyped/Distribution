@@ -27,17 +27,36 @@ trait SmsChannelArgs extends js.Object {
 
 object SmsChannelArgs {
   @scala.inline
-  def apply(
-    applicationId: Input[String],
-    enabled: Input[Boolean] = null,
-    senderId: Input[String] = null,
-    shortCode: Input[String] = null
-  ): SmsChannelArgs = {
+  def apply(applicationId: Input[String]): SmsChannelArgs = {
     val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (senderId != null) __obj.updateDynamic("senderId")(senderId.asInstanceOf[js.Any])
-    if (shortCode != null) __obj.updateDynamic("shortCode")(shortCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmsChannelArgs]
   }
+  @scala.inline
+  implicit class SmsChannelArgsOps[Self <: SmsChannelArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: Input[String]): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setSenderId(value: Input[String]): Self = this.set("senderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSenderId: Self = this.set("senderId", js.undefined)
+    @scala.inline
+    def setShortCode(value: Input[String]): Self = this.set("shortCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortCode: Self = this.set("shortCode", js.undefined)
+  }
+  
 }
 

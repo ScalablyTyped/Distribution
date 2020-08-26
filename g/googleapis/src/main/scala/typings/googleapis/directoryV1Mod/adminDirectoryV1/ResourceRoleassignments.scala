@@ -28,6 +28,7 @@ class ResourceRoleassignments protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRoleassignmentsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRoleassignmentsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourceRoleassignments protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRoleAssignment] = js.native
   def get(callback: BodyResponseCallback[SchemaRoleAssignment]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoleAssignment] = js.native
   def get(params: ParamsResourceRoleassignmentsGet): GaxiosPromise[SchemaRoleAssignment] = js.native
   def get(params: ParamsResourceRoleassignmentsGet, callback: BodyResponseCallback[SchemaRoleAssignment]): Unit = js.native
   def get(
@@ -84,6 +86,7 @@ class ResourceRoleassignments protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaRoleAssignment] = js.native
   def insert(callback: BodyResponseCallback[SchemaRoleAssignment]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoleAssignment] = js.native
   def insert(params: ParamsResourceRoleassignmentsInsert): GaxiosPromise[SchemaRoleAssignment] = js.native
   def insert(params: ParamsResourceRoleassignmentsInsert, callback: BodyResponseCallback[SchemaRoleAssignment]): Unit = js.native
   def insert(
@@ -115,6 +118,7 @@ class ResourceRoleassignments protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaRoleAssignments] = js.native
   def list(callback: BodyResponseCallback[SchemaRoleAssignments]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoleAssignments] = js.native
   def list(params: ParamsResourceRoleassignmentsList): GaxiosPromise[SchemaRoleAssignments] = js.native
   def list(params: ParamsResourceRoleassignmentsList, callback: BodyResponseCallback[SchemaRoleAssignments]): Unit = js.native
   def list(

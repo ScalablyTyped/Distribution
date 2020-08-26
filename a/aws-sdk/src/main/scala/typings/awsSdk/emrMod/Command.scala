@@ -22,12 +22,36 @@ trait Command extends js.Object {
 
 object Command {
   @scala.inline
-  def apply(Args: StringList = null, Name: String = null, ScriptPath: String = null): Command = {
+  def apply(): Command = {
     val __obj = js.Dynamic.literal()
-    if (Args != null) __obj.updateDynamic("Args")(Args.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ScriptPath != null) __obj.updateDynamic("ScriptPath")(ScriptPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
+  @scala.inline
+  implicit class CommandOps[Self <: Command] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("Args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: StringList): Self = this.set("Args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("Args", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setScriptPath(value: String): Self = this.set("ScriptPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScriptPath: Self = this.set("ScriptPath", js.undefined)
+  }
+  
 }
 

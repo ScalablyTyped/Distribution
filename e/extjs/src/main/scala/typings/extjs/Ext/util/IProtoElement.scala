@@ -1,34 +1,33 @@
 package typings.extjs.Ext.util
 
-import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
-import typings.extjs.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IProtoElement extends IBase {
   /** [Method] Adds class to the element
     * @param cls String One or more classnames separated with spaces.
     * @returns Ext.util.ProtoElement this
     */
-  var addCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], this.type]] = js.undefined
+  var addCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], this.type]] = js.native
   /** [Property] (String) */
-  var clsProp: js.UndefOr[String] = js.undefined
+  var clsProp: js.UndefOr[String] = js.native
   /** [Method] Indicates that the current state of the object has been flushed to the DOM so we need to track any subsequent changes */
-  var flush: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var flush: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] True if the element has given class
     * @param cls String
     * @returns Boolean
     */
-  var hasCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Boolean]] = js.undefined
+  var hasCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Boolean]] = js.native
   /** [Method] Removes class from the element
     * @param cls String One or more classnames separated with spaces.
     * @returns Ext.util.ProtoElement this
     */
-  var removeCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], this.type]] = js.undefined
+  var removeCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], this.type]] = js.native
   /** [Property] (String) */
-  var removedProp: js.UndefOr[String] = js.undefined
+  var removedProp: js.UndefOr[String] = js.native
   /** [Method] Adds styles to the element
     * @param prop String/Object The style property to be set, or an object of multiple styles.
     * @param value String The value to apply to the given property.
@@ -36,76 +35,76 @@ trait IProtoElement extends IBase {
     */
   var setStyle: js.UndefOr[
     js.Function2[/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], this.type]
-  ] = js.undefined
+  ] = js.native
   /** [Property] (Boolean) */
-  var styleIsText: js.UndefOr[Boolean] = js.undefined
+  var styleIsText: js.UndefOr[Boolean] = js.native
   /** [Property] (String) */
-  var styleProp: js.UndefOr[String] = js.undefined
+  var styleProp: js.UndefOr[String] = js.native
   /** [Method] Writes style and class properties to given object
     * @param to Object
     * @returns Object to
     */
-  var writeTo: js.UndefOr[js.Function1[/* to */ js.UndefOr[js.Any], _]] = js.undefined
+  var writeTo: js.UndefOr[js.Function1[/* to */ js.UndefOr[js.Any], _]] = js.native
 }
 
 object IProtoElement {
   @scala.inline
-  def apply(
-    addCls: /* cls */ js.UndefOr[String] => IProtoElement = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clsProp: String = null,
-    config: js.Any = null,
-    extend: String = null,
-    flush: () => Unit = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    hasCls: /* cls */ js.UndefOr[String] => Boolean = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => IProtoElement = null,
-    mixins: js.Any = null,
-    removeCls: /* cls */ js.UndefOr[String] => IProtoElement = null,
-    removedProp: String = null,
-    requires: Array = null,
-    self: IClass = null,
-    setStyle: (/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IProtoElement = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    styleIsText: js.UndefOr[Boolean] = js.undefined,
-    styleProp: String = null,
-    uses: Array = null,
-    writeTo: /* to */ js.UndefOr[js.Any] => _ = null
-  ): IProtoElement = {
+  def apply(): IProtoElement = {
     val __obj = js.Dynamic.literal()
-    if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction1(addCls))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (clsProp != null) __obj.updateDynamic("clsProp")(clsProp.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (flush != null) __obj.updateDynamic("flush")(js.Any.fromFunction0(flush))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (hasCls != null) __obj.updateDynamic("hasCls")(js.Any.fromFunction1(hasCls))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (removeCls != null) __obj.updateDynamic("removeCls")(js.Any.fromFunction1(removeCls))
-    if (removedProp != null) __obj.updateDynamic("removedProp")(removedProp.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction2(setStyle))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleIsText)) __obj.updateDynamic("styleIsText")(styleIsText.get.asInstanceOf[js.Any])
-    if (styleProp != null) __obj.updateDynamic("styleProp")(styleProp.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (writeTo != null) __obj.updateDynamic("writeTo")(js.Any.fromFunction1(writeTo))
     __obj.asInstanceOf[IProtoElement]
   }
+  @scala.inline
+  implicit class IProtoElementOps[Self <: IProtoElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddCls(value: /* cls */ js.UndefOr[String] => IProtoElement): Self = this.set("addCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAddCls: Self = this.set("addCls", js.undefined)
+    @scala.inline
+    def setClsProp(value: String): Self = this.set("clsProp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClsProp: Self = this.set("clsProp", js.undefined)
+    @scala.inline
+    def setFlush(value: () => Unit): Self = this.set("flush", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteFlush: Self = this.set("flush", js.undefined)
+    @scala.inline
+    def setHasCls(value: /* cls */ js.UndefOr[String] => Boolean): Self = this.set("hasCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHasCls: Self = this.set("hasCls", js.undefined)
+    @scala.inline
+    def setRemoveCls(value: /* cls */ js.UndefOr[String] => IProtoElement): Self = this.set("removeCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemoveCls: Self = this.set("removeCls", js.undefined)
+    @scala.inline
+    def setRemovedProp(value: String): Self = this.set("removedProp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemovedProp: Self = this.set("removedProp", js.undefined)
+    @scala.inline
+    def setSetStyle(value: (/* prop */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => IProtoElement): Self = this.set("setStyle", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetStyle: Self = this.set("setStyle", js.undefined)
+    @scala.inline
+    def setStyleIsText(value: Boolean): Self = this.set("styleIsText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleIsText: Self = this.set("styleIsText", js.undefined)
+    @scala.inline
+    def setStyleProp(value: String): Self = this.set("styleProp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleProp: Self = this.set("styleProp", js.undefined)
+    @scala.inline
+    def setWriteTo(value: /* to */ js.UndefOr[js.Any] => _): Self = this.set("writeTo", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteWriteTo: Self = this.set("writeTo", js.undefined)
+  }
+  
 }
 

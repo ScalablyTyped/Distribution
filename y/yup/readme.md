@@ -10,9 +10,9 @@ Dead simple Object schema validation
 | ------------------ | :-------------: |
 | Full name          | yup |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 434 |
-| # downloads        | 38838082 |
+| # releases         | 18 |
+| # dependents       | 441 |
+| # downloads        | 41360490 |
 | # stars            | 4 |
 
 ## Links

@@ -31,6 +31,11 @@ trait Button extends js.Object {
     * Raised when the button is clicked
     */
   def onClick(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
+  def onClick(
+    listener: js.Function1[/* e */ Unit, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onClick(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
   def onClick(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
 }

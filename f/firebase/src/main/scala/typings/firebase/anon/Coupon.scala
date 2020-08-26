@@ -6,33 +6,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Coupon
   extends /* key */ StringDictionary[js.Any] {
-  var coupon: js.UndefOr[String] = js.undefined
-  var currency: js.UndefOr[String] = js.undefined
-  var items: js.UndefOr[js.Array[Item]] = js.undefined
-  var shipping_tier: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  var coupon: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.native
+  var items: js.UndefOr[js.Array[Item]] = js.native
+  var shipping_tier: js.UndefOr[String] = js.native
+  var value: js.UndefOr[Double] = js.native
 }
 
 object Coupon {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    coupon: String = null,
-    currency: String = null,
-    items: js.Array[Item] = null,
-    shipping_tier: String = null,
-    value: js.UndefOr[Double] = js.undefined
-  ): Coupon = {
+  def apply(): Coupon = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (shipping_tier != null) __obj.updateDynamic("shipping_tier")(shipping_tier.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coupon]
   }
+  @scala.inline
+  implicit class CouponOps[Self <: Coupon] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoupon(value: String): Self = this.set("coupon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoupon: Self = this.set("coupon", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: Item*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[Item]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setShipping_tier(value: String): Self = this.set("shipping_tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipping_tier: Self = this.set("shipping_tier", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

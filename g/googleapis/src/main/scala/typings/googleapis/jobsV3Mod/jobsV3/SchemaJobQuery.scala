@@ -118,34 +118,82 @@ trait SchemaJobQuery extends js.Object {
 
 object SchemaJobQuery {
   @scala.inline
-  def apply(
-    commuteFilter: SchemaCommuteFilter = null,
-    companyDisplayNames: js.Array[String] = null,
-    companyNames: js.Array[String] = null,
-    compensationFilter: SchemaCompensationFilter = null,
-    customAttributeFilter: String = null,
-    disableSpellCheck: js.UndefOr[Boolean] = js.undefined,
-    employmentTypes: js.Array[String] = null,
-    jobCategories: js.Array[String] = null,
-    languageCodes: js.Array[String] = null,
-    locationFilters: js.Array[SchemaLocationFilter] = null,
-    publishTimeRange: SchemaTimestampRange = null,
-    query: String = null
-  ): SchemaJobQuery = {
+  def apply(): SchemaJobQuery = {
     val __obj = js.Dynamic.literal()
-    if (commuteFilter != null) __obj.updateDynamic("commuteFilter")(commuteFilter.asInstanceOf[js.Any])
-    if (companyDisplayNames != null) __obj.updateDynamic("companyDisplayNames")(companyDisplayNames.asInstanceOf[js.Any])
-    if (companyNames != null) __obj.updateDynamic("companyNames")(companyNames.asInstanceOf[js.Any])
-    if (compensationFilter != null) __obj.updateDynamic("compensationFilter")(compensationFilter.asInstanceOf[js.Any])
-    if (customAttributeFilter != null) __obj.updateDynamic("customAttributeFilter")(customAttributeFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSpellCheck)) __obj.updateDynamic("disableSpellCheck")(disableSpellCheck.get.asInstanceOf[js.Any])
-    if (employmentTypes != null) __obj.updateDynamic("employmentTypes")(employmentTypes.asInstanceOf[js.Any])
-    if (jobCategories != null) __obj.updateDynamic("jobCategories")(jobCategories.asInstanceOf[js.Any])
-    if (languageCodes != null) __obj.updateDynamic("languageCodes")(languageCodes.asInstanceOf[js.Any])
-    if (locationFilters != null) __obj.updateDynamic("locationFilters")(locationFilters.asInstanceOf[js.Any])
-    if (publishTimeRange != null) __obj.updateDynamic("publishTimeRange")(publishTimeRange.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobQuery]
   }
+  @scala.inline
+  implicit class SchemaJobQueryOps[Self <: SchemaJobQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommuteFilter(value: SchemaCommuteFilter): Self = this.set("commuteFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommuteFilter: Self = this.set("commuteFilter", js.undefined)
+    @scala.inline
+    def setCompanyDisplayNamesVarargs(value: String*): Self = this.set("companyDisplayNames", js.Array(value :_*))
+    @scala.inline
+    def setCompanyDisplayNames(value: js.Array[String]): Self = this.set("companyDisplayNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyDisplayNames: Self = this.set("companyDisplayNames", js.undefined)
+    @scala.inline
+    def setCompanyNamesVarargs(value: String*): Self = this.set("companyNames", js.Array(value :_*))
+    @scala.inline
+    def setCompanyNames(value: js.Array[String]): Self = this.set("companyNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyNames: Self = this.set("companyNames", js.undefined)
+    @scala.inline
+    def setCompensationFilter(value: SchemaCompensationFilter): Self = this.set("compensationFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompensationFilter: Self = this.set("compensationFilter", js.undefined)
+    @scala.inline
+    def setCustomAttributeFilter(value: String): Self = this.set("customAttributeFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAttributeFilter: Self = this.set("customAttributeFilter", js.undefined)
+    @scala.inline
+    def setDisableSpellCheck(value: Boolean): Self = this.set("disableSpellCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableSpellCheck: Self = this.set("disableSpellCheck", js.undefined)
+    @scala.inline
+    def setEmploymentTypesVarargs(value: String*): Self = this.set("employmentTypes", js.Array(value :_*))
+    @scala.inline
+    def setEmploymentTypes(value: js.Array[String]): Self = this.set("employmentTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmploymentTypes: Self = this.set("employmentTypes", js.undefined)
+    @scala.inline
+    def setJobCategoriesVarargs(value: String*): Self = this.set("jobCategories", js.Array(value :_*))
+    @scala.inline
+    def setJobCategories(value: js.Array[String]): Self = this.set("jobCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobCategories: Self = this.set("jobCategories", js.undefined)
+    @scala.inline
+    def setLanguageCodesVarargs(value: String*): Self = this.set("languageCodes", js.Array(value :_*))
+    @scala.inline
+    def setLanguageCodes(value: js.Array[String]): Self = this.set("languageCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCodes: Self = this.set("languageCodes", js.undefined)
+    @scala.inline
+    def setLocationFiltersVarargs(value: SchemaLocationFilter*): Self = this.set("locationFilters", js.Array(value :_*))
+    @scala.inline
+    def setLocationFilters(value: js.Array[SchemaLocationFilter]): Self = this.set("locationFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationFilters: Self = this.set("locationFilters", js.undefined)
+    @scala.inline
+    def setPublishTimeRange(value: SchemaTimestampRange): Self = this.set("publishTimeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishTimeRange: Self = this.set("publishTimeRange", js.undefined)
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+  }
+  
 }
 

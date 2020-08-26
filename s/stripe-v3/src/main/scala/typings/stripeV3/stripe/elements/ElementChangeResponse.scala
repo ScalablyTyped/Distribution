@@ -6,35 +6,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ElementChangeResponse extends js.Object {
-  var bankName: js.UndefOr[String] = js.undefined
-  var brand: String
-  var complete: Boolean
-  var country: js.UndefOr[String] = js.undefined
-  var elementType: String
-  var empty: Boolean
-  var error: js.UndefOr[Error] = js.undefined
-  var value: js.UndefOr[PostalCode | String] = js.undefined
+  var bankName: js.UndefOr[String] = js.native
+  var brand: String = js.native
+  var complete: Boolean = js.native
+  var country: js.UndefOr[String] = js.native
+  var elementType: String = js.native
+  var empty: Boolean = js.native
+  var error: js.UndefOr[Error] = js.native
+  var value: js.UndefOr[PostalCode | String] = js.native
 }
 
 object ElementChangeResponse {
   @scala.inline
-  def apply(
-    brand: String,
-    complete: Boolean,
-    elementType: String,
-    empty: Boolean,
-    bankName: String = null,
-    country: String = null,
-    error: Error = null,
-    value: PostalCode | String = null
-  ): ElementChangeResponse = {
+  def apply(brand: String, complete: Boolean, elementType: String, empty: Boolean): ElementChangeResponse = {
     val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], elementType = elementType.asInstanceOf[js.Any], empty = empty.asInstanceOf[js.Any])
-    if (bankName != null) __obj.updateDynamic("bankName")(bankName.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementChangeResponse]
   }
+  @scala.inline
+  implicit class ElementChangeResponseOps[Self <: ElementChangeResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComplete(value: Boolean): Self = this.set("complete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setElementType(value: String): Self = this.set("elementType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmpty(value: Boolean): Self = this.set("empty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBankName(value: String): Self = this.set("bankName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBankName: Self = this.set("bankName", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setValue(value: PostalCode | String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

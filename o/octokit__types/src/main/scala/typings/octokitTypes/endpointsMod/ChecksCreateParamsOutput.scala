@@ -4,28 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChecksCreateParamsOutput extends js.Object {
-  var annotations: js.UndefOr[js.Array[ChecksCreateParamsOutputAnnotations]] = js.undefined
-  var images: js.UndefOr[js.Array[ChecksCreateParamsOutputImages]] = js.undefined
-  var summary: String
-  var text: js.UndefOr[String] = js.undefined
-  var title: String
+  var annotations: js.UndefOr[js.Array[ChecksCreateParamsOutputAnnotations]] = js.native
+  var images: js.UndefOr[js.Array[ChecksCreateParamsOutputImages]] = js.native
+  var summary: String = js.native
+  var text: js.UndefOr[String] = js.native
+  var title: String = js.native
 }
 
 object ChecksCreateParamsOutput {
   @scala.inline
-  def apply(
-    summary: String,
-    title: String,
-    annotations: js.Array[ChecksCreateParamsOutputAnnotations] = null,
-    images: js.Array[ChecksCreateParamsOutputImages] = null,
-    text: String = null
-  ): ChecksCreateParamsOutput = {
+  def apply(summary: String, title: String): ChecksCreateParamsOutput = {
     val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksCreateParamsOutput]
   }
+  @scala.inline
+  implicit class ChecksCreateParamsOutputOps[Self <: ChecksCreateParamsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnnotationsVarargs(value: ChecksCreateParamsOutputAnnotations*): Self = this.set("annotations", js.Array(value :_*))
+    @scala.inline
+    def setAnnotations(value: js.Array[ChecksCreateParamsOutputAnnotations]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    @scala.inline
+    def setImagesVarargs(value: ChecksCreateParamsOutputImages*): Self = this.set("images", js.Array(value :_*))
+    @scala.inline
+    def setImages(value: js.Array[ChecksCreateParamsOutputImages]): Self = this.set("images", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImages: Self = this.set("images", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

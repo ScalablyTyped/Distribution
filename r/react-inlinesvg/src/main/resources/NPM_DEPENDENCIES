@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-inlinesvg" : "1.2.0"
+      "react-inlinesvg" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-inlinesvg" : "1.2.0"
+      "react-inlinesvg" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

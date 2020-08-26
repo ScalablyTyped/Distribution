@@ -10,9 +10,9 @@ A small utility to parse, match and generate paths
 | ------------------ | :-------------: |
 | Full name          | path-parser |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 13 |
 | # dependents       | 30 |
-| # downloads        | 1115707 |
+| # downloads        | 1115393 |
 | # stars            | 3 |
 
 ## Links

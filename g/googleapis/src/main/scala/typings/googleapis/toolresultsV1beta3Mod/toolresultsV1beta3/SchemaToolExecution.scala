@@ -46,18 +46,44 @@ trait SchemaToolExecution extends js.Object {
 
 object SchemaToolExecution {
   @scala.inline
-  def apply(
-    commandLineArguments: js.Array[String] = null,
-    exitCode: SchemaToolExitCode = null,
-    toolLogs: js.Array[SchemaFileReference] = null,
-    toolOutputs: js.Array[SchemaToolOutputReference] = null
-  ): SchemaToolExecution = {
+  def apply(): SchemaToolExecution = {
     val __obj = js.Dynamic.literal()
-    if (commandLineArguments != null) __obj.updateDynamic("commandLineArguments")(commandLineArguments.asInstanceOf[js.Any])
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
-    if (toolLogs != null) __obj.updateDynamic("toolLogs")(toolLogs.asInstanceOf[js.Any])
-    if (toolOutputs != null) __obj.updateDynamic("toolOutputs")(toolOutputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaToolExecution]
   }
+  @scala.inline
+  implicit class SchemaToolExecutionOps[Self <: SchemaToolExecution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommandLineArgumentsVarargs(value: String*): Self = this.set("commandLineArguments", js.Array(value :_*))
+    @scala.inline
+    def setCommandLineArguments(value: js.Array[String]): Self = this.set("commandLineArguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommandLineArguments: Self = this.set("commandLineArguments", js.undefined)
+    @scala.inline
+    def setExitCode(value: SchemaToolExitCode): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    @scala.inline
+    def setToolLogsVarargs(value: SchemaFileReference*): Self = this.set("toolLogs", js.Array(value :_*))
+    @scala.inline
+    def setToolLogs(value: js.Array[SchemaFileReference]): Self = this.set("toolLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolLogs: Self = this.set("toolLogs", js.undefined)
+    @scala.inline
+    def setToolOutputsVarargs(value: SchemaToolOutputReference*): Self = this.set("toolOutputs", js.Array(value :_*))
+    @scala.inline
+    def setToolOutputs(value: js.Array[SchemaToolOutputReference]): Self = this.set("toolOutputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolOutputs: Self = this.set("toolOutputs", js.undefined)
+  }
+  
 }
 

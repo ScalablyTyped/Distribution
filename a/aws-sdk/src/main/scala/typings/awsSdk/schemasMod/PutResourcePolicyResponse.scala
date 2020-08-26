@@ -18,11 +18,30 @@ trait PutResourcePolicyResponse extends js.Object {
 
 object PutResourcePolicyResponse {
   @scala.inline
-  def apply(Policy: string = null, RevisionId: string = null): PutResourcePolicyResponse = {
+  def apply(): PutResourcePolicyResponse = {
     val __obj = js.Dynamic.literal()
-    if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutResourcePolicyResponse]
   }
+  @scala.inline
+  implicit class PutResourcePolicyResponseOps[Self <: PutResourcePolicyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicy(value: string): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("Policy", js.undefined)
+    @scala.inline
+    def setRevisionId(value: string): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+  }
+  
 }
 

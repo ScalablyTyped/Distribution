@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides display options and actions a dialog box may take. */
+@js.native
 trait DisplayWebDialogOptions extends js.Object {
   /**
     * Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true).
@@ -14,7 +15,7 @@ trait DisplayWebDialogOptions extends js.Object {
     * [Api set: SharedRuntime 1.1]
     *
     */
-  var displayInIFrame: js.UndefOr[Boolean] = js.undefined
+  var displayInIFrame: js.UndefOr[Boolean] = js.native
   /**
     * Optional parameter that defines the height of the dialog box as a percentage of the current display.
     * For example, accepts strings such as: '50%', '50'.
@@ -22,28 +23,28 @@ trait DisplayWebDialogOptions extends js.Object {
     * [Api set: SharedRuntime 1.1]
     *
     */
-  var height: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[String] = js.native
   /**
     * Optional callback that runs when the dialog box is closed.
     *
     * [Api set: SharedRuntime 1.1]
     *
     */
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Optional callback that runs when the dialog box sends a message to its parent.
     *
     * [Api set: SharedRuntime 1.1]
     *
     */
-  var onMessage: js.UndefOr[js.Function2[/* message */ String, /* dialog */ js.UndefOr[Dialog], Unit]] = js.undefined
+  var onMessage: js.UndefOr[js.Function2[/* message */ String, /* dialog */ js.UndefOr[Dialog], Unit]] = js.native
   /**
     * Optional callback that runs when the dialog box sends an error.
     *
     * [Api set: SharedRuntime 1.1]
     *
     */
-  var onRuntimeError: js.UndefOr[js.Function2[/* error */ Error, /* dialog */ js.UndefOr[Dialog], Unit]] = js.undefined
+  var onRuntimeError: js.UndefOr[js.Function2[/* error */ Error, /* dialog */ js.UndefOr[Dialog], Unit]] = js.native
   /**
     * Optional parameter that defines the width of dialog as a percentage of window.
     * For example, accepts strings such as: '50%', '50'.
@@ -51,27 +52,51 @@ trait DisplayWebDialogOptions extends js.Object {
     * [Api set: SharedRuntime 1.1]
     *
     */
-  var width: js.UndefOr[String] = js.undefined
+  var width: js.UndefOr[String] = js.native
 }
 
 object DisplayWebDialogOptions {
   @scala.inline
-  def apply(
-    displayInIFrame: js.UndefOr[Boolean] = js.undefined,
-    height: String = null,
-    onClose: () => Unit = null,
-    onMessage: (/* message */ String, /* dialog */ js.UndefOr[Dialog]) => Unit = null,
-    onRuntimeError: (/* error */ Error, /* dialog */ js.UndefOr[Dialog]) => Unit = null,
-    width: String = null
-  ): DisplayWebDialogOptions = {
+  def apply(): DisplayWebDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(displayInIFrame)) __obj.updateDynamic("displayInIFrame")(displayInIFrame.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction2(onMessage))
-    if (onRuntimeError != null) __obj.updateDynamic("onRuntimeError")(js.Any.fromFunction2(onRuntimeError))
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayWebDialogOptions]
   }
+  @scala.inline
+  implicit class DisplayWebDialogOptionsOps[Self <: DisplayWebDialogOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayInIFrame(value: Boolean): Self = this.set("displayInIFrame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayInIFrame: Self = this.set("displayInIFrame", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnMessage(value: (/* message */ String, /* dialog */ js.UndefOr[Dialog]) => Unit): Self = this.set("onMessage", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnMessage: Self = this.set("onMessage", js.undefined)
+    @scala.inline
+    def setOnRuntimeError(value: (/* error */ Error, /* dialog */ js.UndefOr[Dialog]) => Unit): Self = this.set("onRuntimeError", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRuntimeError: Self = this.set("onRuntimeError", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

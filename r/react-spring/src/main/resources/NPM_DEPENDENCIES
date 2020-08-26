@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-spring" : "8.0.27"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-spring" : "8.0.27"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

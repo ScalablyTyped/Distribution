@@ -50,30 +50,64 @@ trait Attribute extends js.Object {
 
 object Attribute {
   @scala.inline
-  def apply(
-    BeginOffset: js.UndefOr[Integer] = js.undefined,
-    Category: EntityType = null,
-    EndOffset: js.UndefOr[Integer] = js.undefined,
-    Id: js.UndefOr[Integer] = js.undefined,
-    RelationshipScore: js.UndefOr[Float] = js.undefined,
-    RelationshipType: RelationshipType = null,
-    Score: js.UndefOr[Float] = js.undefined,
-    Text: String = null,
-    Traits: TraitList = null,
-    Type: EntitySubType = null
-  ): Attribute = {
+  def apply(): Attribute = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BeginOffset)) __obj.updateDynamic("BeginOffset")(BeginOffset.get.asInstanceOf[js.Any])
-    if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
-    if (!js.isUndefined(EndOffset)) __obj.updateDynamic("EndOffset")(EndOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Id)) __obj.updateDynamic("Id")(Id.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RelationshipScore)) __obj.updateDynamic("RelationshipScore")(RelationshipScore.get.asInstanceOf[js.Any])
-    if (RelationshipType != null) __obj.updateDynamic("RelationshipType")(RelationshipType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Score)) __obj.updateDynamic("Score")(Score.get.asInstanceOf[js.Any])
-    if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
-    if (Traits != null) __obj.updateDynamic("Traits")(Traits.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
   }
+  @scala.inline
+  implicit class AttributeOps[Self <: Attribute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeginOffset(value: Integer): Self = this.set("BeginOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeginOffset: Self = this.set("BeginOffset", js.undefined)
+    @scala.inline
+    def setCategory(value: EntityType): Self = this.set("Category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("Category", js.undefined)
+    @scala.inline
+    def setEndOffset(value: Integer): Self = this.set("EndOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndOffset: Self = this.set("EndOffset", js.undefined)
+    @scala.inline
+    def setId(value: Integer): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setRelationshipScore(value: Float): Self = this.set("RelationshipScore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationshipScore: Self = this.set("RelationshipScore", js.undefined)
+    @scala.inline
+    def setRelationshipType(value: RelationshipType): Self = this.set("RelationshipType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationshipType: Self = this.set("RelationshipType", js.undefined)
+    @scala.inline
+    def setScore(value: Float): Self = this.set("Score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("Score", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("Text", js.undefined)
+    @scala.inline
+    def setTraitsVarargs(value: Trait*): Self = this.set("Traits", js.Array(value :_*))
+    @scala.inline
+    def setTraits(value: TraitList): Self = this.set("Traits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraits: Self = this.set("Traits", js.undefined)
+    @scala.inline
+    def setType(value: EntitySubType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

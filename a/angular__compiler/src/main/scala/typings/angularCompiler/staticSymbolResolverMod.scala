@@ -36,7 +36,7 @@ object staticSymbolResolverMod extends js.Object {
     var _resolveSymbolMembers: js.Any = js.native
     var createExport: js.Any = js.native
     var createResolvedSymbol: js.Any = js.native
-    var errorRecorder: js.UndefOr[js.Any] = js.native
+    var errorRecorder: js.Any = js.native
     /**
       * @param module an absolute path to a module file.
       */

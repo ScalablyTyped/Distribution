@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PaymentTerm extends js.Object {
-  var due_date: js.UndefOr[String] = js.undefined
-  var term_type: js.UndefOr[String] = js.undefined
+  var due_date: js.UndefOr[String] = js.native
+  var term_type: js.UndefOr[String] = js.native
 }
 
 object PaymentTerm {
   @scala.inline
-  def apply(due_date: String = null, term_type: String = null): PaymentTerm = {
+  def apply(): PaymentTerm = {
     val __obj = js.Dynamic.literal()
-    if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
-    if (term_type != null) __obj.updateDynamic("term_type")(term_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentTerm]
   }
+  @scala.inline
+  implicit class PaymentTermOps[Self <: PaymentTerm] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDue_date(value: String): Self = this.set("due_date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDue_date: Self = this.set("due_date", js.undefined)
+    @scala.inline
+    def setTerm_type(value: String): Self = this.set("term_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerm_type: Self = this.set("term_type", js.undefined)
+  }
+  
 }
 

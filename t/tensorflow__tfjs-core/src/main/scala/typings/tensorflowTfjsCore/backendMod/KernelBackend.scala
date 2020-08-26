@@ -1,15 +1,12 @@
 package typings.tensorflowTfjsCore.backendMod
 
-import typings.tensorflowTfjsCore.anon.Unreliable
 import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
 import typings.tensorflowTfjsCore.convUtilMod.Conv3DInfo
-import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.fusedUtilMod.FusedBatchMatMulConfig
 import typings.tensorflowTfjsCore.fusedUtilMod.FusedConv2DConfig
 import typings.tensorflowTfjsCore.tensorMod.Backend
-import typings.tensorflowTfjsCore.tensorMod.DataId
 import typings.tensorflowTfjsCore.tensorMod.Scalar
 import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsCore.tensorMod.Tensor1D
@@ -59,21 +56,13 @@ class KernelBackend ()
   def avgPool3dBackprop(dy: Tensor5D, x: Tensor5D, convInfo: Conv3DInfo): Tensor5D = js.native
   def avgPoolBackprop(dy: Tensor4D, x: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
   def batchMatMul(a: Tensor3D, b: Tensor3D, transposeA: Boolean, transposeB: Boolean): Tensor3D = js.native
-  def batchNormalization(x: Tensor4D, mean: Tensor1D | Tensor4D, variance: Tensor1D | Tensor4D, varianceEpsilon: Double): Tensor4D = js.native
-  def batchNormalization(
+  def batchNorm(
     x: Tensor4D,
-    mean: Tensor1D | Tensor4D,
-    variance: Tensor1D | Tensor4D,
-    varianceEpsilon: Double,
-    scale: Tensor1D | Tensor4D
-  ): Tensor4D = js.native
-  def batchNormalization(
-    x: Tensor4D,
-    mean: Tensor1D | Tensor4D,
-    variance: Tensor1D | Tensor4D,
-    varianceEpsilon: Double,
-    scale: Tensor1D | Tensor4D,
-    offset: Tensor1D | Tensor4D
+    mean: Tensor4D | Tensor1D,
+    variance: Tensor4D | Tensor1D,
+    offset: js.UndefOr[Tensor4D | Tensor1D],
+    scale: js.UndefOr[Tensor4D | Tensor1D],
+    varianceEpsilon: js.UndefOr[Double]
   ): Tensor4D = js.native
   def batchToSpaceND[T /* <: Tensor[Rank] */](x: T, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = js.native
   def cast[T /* <: Tensor[Rank] */](x: T, dtype: DataType): T = js.native
@@ -115,8 +104,6 @@ class KernelBackend ()
   def depthwiseConv2DDerInput(dy: Tensor4D, filter: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
   def diag(x: Tensor[Rank]): Tensor[Rank] = js.native
   def dispose(): Unit = js.native
-  /* CompleteClass */
-  override def disposeData(dataId: DataId): Unit = js.native
   def elu[T /* <: Tensor[Rank] */](x: T): T = js.native
   def eluDer[T /* <: Tensor[Rank] */](dy: T, y: T): T = js.native
   /** Returns the smallest representable number.  */
@@ -176,13 +163,9 @@ class KernelBackend ()
   def maxPool3dBackprop(dy: Tensor5D, x: Tensor5D, y: Tensor5D, convInfo: Conv3DInfo): Tensor5D = js.native
   def maxPoolBackprop(dy: Tensor4D, x: Tensor4D, y: Tensor4D, convInfo: Conv2DInfo): Tensor4D = js.native
   def maximum(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
-  /* CompleteClass */
-  override def memory(): Unreliable = js.native
   def min(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native
   def minimum(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def mod(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
-  /* CompleteClass */
-  override def move(dataId: DataId, values: BackendValues, shape: js.Array[Double], dtype: DataType): Unit = js.native
   def multinomial(logits: Tensor2D, normalized: Boolean, numSamples: Double, seed: Double): Tensor2D = js.native
   def multiply(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def neg[T /* <: Tensor[Rank] */](a: T): T = js.native
@@ -195,19 +178,12 @@ class KernelBackend ()
     scoreThreshold: Double
   ): Tensor1D = js.native
   def notEqual(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
-  /** Returns number of data ids currently in the storage. */
-  /* CompleteClass */
-  override def numDataIds(): Double = js.native
   def oneHot(indices: Tensor1D, depth: Double, onValue: Double, offValue: Double): Tensor2D = js.native
   def onesLike[R /* <: Rank */](x: Tensor[R]): Tensor[R] = js.native
   def pad[T /* <: Tensor[Rank] */](x: T, paddings: js.Array[js.Tuple2[Double, Double]], constantValue: Double): T = js.native
   def pow[T /* <: Tensor[Rank] */](a: T, b: Tensor[Rank]): T = js.native
   def prelu[T /* <: Tensor[Rank] */](x: T, a: T): T = js.native
   def prod(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native
-  /* CompleteClass */
-  override def read(dataId: DataId): js.Promise[BackendValues] = js.native
-  /* CompleteClass */
-  override def readSync(dataId: DataId): BackendValues = js.native
   def real[T /* <: Tensor[Rank] */](input: T): T = js.native
   def realDivide(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
   def reciprocal[T /* <: Tensor[Rank] */](x: T): T = js.native
@@ -256,15 +232,11 @@ class KernelBackend ()
   def tan[T /* <: Tensor[Rank] */](x: T): T = js.native
   def tanh[T /* <: Tensor[Rank] */](x: T): T = js.native
   def tile[T /* <: Tensor[Rank] */](x: T, reps: js.Array[Double]): T = js.native
-  /* CompleteClass */
-  override def time(f: js.Function0[Unit]): js.Promise[BackendTimingInfo] = js.native
   def topk[T /* <: Tensor[Rank] */](x: T, k: Double, sorted: Boolean): js.Tuple2[T, T] = js.native
   def transpose[T /* <: Tensor[Rank] */](x: T, perm: js.Array[Double]): T = js.native
   def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T, segmentIds: Tensor1D, numSegments: Double): Tensor[Rank] = js.native
   def unstack(x: Tensor[Rank], axis: Double): js.Array[Tensor[Rank]] = js.native
   def where(condition: Tensor[Rank]): Tensor2D = js.native
-  /* CompleteClass */
-  override def write(values: BackendValues, shape: js.Array[Double], dtype: DataType): DataId = js.native
   def zerosLike[R /* <: Rank */](x: Tensor[R]): Tensor[R] = js.native
 }
 

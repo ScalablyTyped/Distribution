@@ -15,7 +15,7 @@ object jsSha256Mod extends js.Object {
     def this(secret: SourceData) = this()
     var error: js.Any = js.native
     val hash: js.Any = js.native
-    val outer: js.UndefOr[js.Any] = js.native
+    val outer: js.Any = js.native
     def digestSync(): Uint8Array = js.native
   }
   

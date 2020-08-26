@@ -46,28 +46,58 @@ trait ContainerSettings extends js.Object {
 
 object ContainerSettings {
   @scala.inline
-  def apply(
-    CmfcSettings: CmfcSettings = null,
-    Container: ContainerType = null,
-    F4vSettings: F4vSettings = null,
-    M2tsSettings: M2tsSettings = null,
-    M3u8Settings: M3u8Settings = null,
-    MovSettings: MovSettings = null,
-    Mp4Settings: Mp4Settings = null,
-    MpdSettings: MpdSettings = null,
-    MxfSettings: MxfSettings = null
-  ): ContainerSettings = {
+  def apply(): ContainerSettings = {
     val __obj = js.Dynamic.literal()
-    if (CmfcSettings != null) __obj.updateDynamic("CmfcSettings")(CmfcSettings.asInstanceOf[js.Any])
-    if (Container != null) __obj.updateDynamic("Container")(Container.asInstanceOf[js.Any])
-    if (F4vSettings != null) __obj.updateDynamic("F4vSettings")(F4vSettings.asInstanceOf[js.Any])
-    if (M2tsSettings != null) __obj.updateDynamic("M2tsSettings")(M2tsSettings.asInstanceOf[js.Any])
-    if (M3u8Settings != null) __obj.updateDynamic("M3u8Settings")(M3u8Settings.asInstanceOf[js.Any])
-    if (MovSettings != null) __obj.updateDynamic("MovSettings")(MovSettings.asInstanceOf[js.Any])
-    if (Mp4Settings != null) __obj.updateDynamic("Mp4Settings")(Mp4Settings.asInstanceOf[js.Any])
-    if (MpdSettings != null) __obj.updateDynamic("MpdSettings")(MpdSettings.asInstanceOf[js.Any])
-    if (MxfSettings != null) __obj.updateDynamic("MxfSettings")(MxfSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerSettings]
   }
+  @scala.inline
+  implicit class ContainerSettingsOps[Self <: ContainerSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCmfcSettings(value: CmfcSettings): Self = this.set("CmfcSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCmfcSettings: Self = this.set("CmfcSettings", js.undefined)
+    @scala.inline
+    def setContainer(value: ContainerType): Self = this.set("Container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("Container", js.undefined)
+    @scala.inline
+    def setF4vSettings(value: F4vSettings): Self = this.set("F4vSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteF4vSettings: Self = this.set("F4vSettings", js.undefined)
+    @scala.inline
+    def setM2tsSettings(value: M2tsSettings): Self = this.set("M2tsSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteM2tsSettings: Self = this.set("M2tsSettings", js.undefined)
+    @scala.inline
+    def setM3u8Settings(value: M3u8Settings): Self = this.set("M3u8Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteM3u8Settings: Self = this.set("M3u8Settings", js.undefined)
+    @scala.inline
+    def setMovSettings(value: MovSettings): Self = this.set("MovSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovSettings: Self = this.set("MovSettings", js.undefined)
+    @scala.inline
+    def setMp4Settings(value: Mp4Settings): Self = this.set("Mp4Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMp4Settings: Self = this.set("Mp4Settings", js.undefined)
+    @scala.inline
+    def setMpdSettings(value: MpdSettings): Self = this.set("MpdSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMpdSettings: Self = this.set("MpdSettings", js.undefined)
+    @scala.inline
+    def setMxfSettings(value: MxfSettings): Self = this.set("MxfSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMxfSettings: Self = this.set("MxfSettings", js.undefined)
+  }
+  
 }
 

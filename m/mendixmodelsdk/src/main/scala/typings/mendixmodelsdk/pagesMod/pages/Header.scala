@@ -30,24 +30,20 @@ class Header protected () extends Widget {
   ) = this()
   @JSName("model")
   var model_FHeader: IModel = js.native
-  def leftWidget(): js.Any = js.native
-  def leftWidget(newValue: Widget): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  @JSName("leftWidget")
-  def leftWidget_Union: Widget | Null = js.native
+  def leftWidget: Widget | Null = js.native
+  def leftWidget_=(newValue: Widget | Null): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */
   def leftWidgets: IList[Widget] = js.native
-  def rightWidget(): js.Any = js.native
-  def rightWidget(newValue: Widget): js.Any = js.native
   /**
     * In version 7.15.0: deleted
     */
-  @JSName("rightWidget")
-  def rightWidget_Union: Widget | Null = js.native
+  def rightWidget: Widget | Null = js.native
+  def rightWidget_=(newValue: Widget | Null): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */

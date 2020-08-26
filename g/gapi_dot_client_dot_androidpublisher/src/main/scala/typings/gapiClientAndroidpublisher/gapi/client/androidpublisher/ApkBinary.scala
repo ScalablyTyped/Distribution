@@ -4,20 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApkBinary extends js.Object {
   /** A sha1 hash of the APK payload, encoded as a hex string and matching the output of the sha1sum command. */
-  var sha1: js.UndefOr[String] = js.undefined
+  var sha1: js.UndefOr[String] = js.native
   /** A sha256 hash of the APK payload, encoded as a hex string and matching the output of the sha256sum command. */
-  var sha256: js.UndefOr[String] = js.undefined
+  var sha256: js.UndefOr[String] = js.native
 }
 
 object ApkBinary {
   @scala.inline
-  def apply(sha1: String = null, sha256: String = null): ApkBinary = {
+  def apply(): ApkBinary = {
     val __obj = js.Dynamic.literal()
-    if (sha1 != null) __obj.updateDynamic("sha1")(sha1.asInstanceOf[js.Any])
-    if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApkBinary]
   }
+  @scala.inline
+  implicit class ApkBinaryOps[Self <: ApkBinary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSha1(value: String): Self = this.set("sha1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha1: Self = this.set("sha1", js.undefined)
+    @scala.inline
+    def setSha256(value: String): Self = this.set("sha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha256: Self = this.set("sha256", js.undefined)
+  }
+  
 }
 

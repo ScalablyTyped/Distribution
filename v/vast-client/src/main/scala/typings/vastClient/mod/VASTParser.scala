@@ -44,6 +44,20 @@ class VASTParser () extends EventEmitter {
     /**
     * how many times the current url has been wrapped
     */
+  wrapperDepth: js.UndefOr[scala.Nothing],
+    /**
+    * url of original wrapper
+    */
+  originalUrl: String
+  ): js.Promise[Document] = js.native
+  def fetchVAST(
+    /**
+    * The url to request the VAST document.
+    */
+  url: String,
+    /**
+    * how many times the current url has been wrapped
+    */
   wrapperDepth: Double
   ): js.Promise[Document] = js.native
   def fetchVAST(

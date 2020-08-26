@@ -6,12 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a point in a buffer in row/column coordinates. */
+@js.native
 trait Point extends js.Object {
   /** A zero-indexed number representing the column of the Point. */
-  var column: Double
+  var column: Double = js.native
   // Properties
   /** A zero-indexed number representing the row of the Point. */
-  var row: Double
+  var row: Double = js.native
   // Comparison
   /**
     *  Compare another Point to this Point instance.
@@ -19,48 +20,48 @@ trait Point extends js.Object {
     *  Returns 0 if this point is equivalent to the argument.
     *  Returns 1 if this point follows the argument.
     */
-  def compare(other: PointCompatible): Double
+  def compare(other: PointCompatible): Double = js.native
   // Construction
   /** Returns a new Point with the same row and column. */
-  def copy(): Point
+  def copy(): Point = js.native
   // Operations
   /** Makes this point immutable and returns itself. */
-  def freeze(): ReadonlyPoint
+  def freeze(): ReadonlyPoint = js.native
   /**
     *  Returns a boolean indicating whether this point has the same row and
     *  column as the given Point.
     */
-  def isEqual(other: PointCompatible): Boolean
+  def isEqual(other: PointCompatible): Boolean = js.native
   /** Returns a Boolean indicating whether this point follows the given Point. */
-  def isGreaterThan(other: PointCompatible): Boolean
+  def isGreaterThan(other: PointCompatible): Boolean = js.native
   /**
     *  Returns a Boolean indicating whether this point follows or is equal to
     *  the given Point.
     */
-  def isGreaterThanOrEqual(other: PointCompatible): Boolean
+  def isGreaterThanOrEqual(other: PointCompatible): Boolean = js.native
   /** Returns a Boolean indicating whether this point precedes the given Point. */
-  def isLessThan(other: PointCompatible): Boolean
+  def isLessThan(other: PointCompatible): Boolean = js.native
   /**
     *  Returns a Boolean indicating whether this point precedes or is equal to
     *  the given Point.
     */
-  def isLessThanOrEqual(other: PointCompatible): Boolean
+  def isLessThanOrEqual(other: PointCompatible): Boolean = js.native
   /** Returns a new Point with the row and column negated. */
-  def negate(): Point
+  def negate(): Point = js.native
   /** Returns an array of this point's row and column. */
-  def serialize(): js.Tuple2[Double, Double]
+  def serialize(): js.Tuple2[Double, Double] = js.native
   /** Returns an array of this point's row and column. */
-  def toArray(): js.Tuple2[Double, Double]
+  def toArray(): js.Tuple2[Double, Double] = js.native
   /**
     *  Build and return a new point by adding the rows and columns of the
     *  given point.
     */
-  def translate(other: PointCompatible): Point
+  def translate(other: PointCompatible): Point = js.native
   /**
     *  Build and return a new Point by traversing the rows and columns
     *  specified by the given point.
     */
-  def traverse(other: PointCompatible): Point
+  def traverse(other: PointCompatible): Point = js.native
 }
 
 object Point {
@@ -85,5 +86,48 @@ object Point {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], compare = js.Any.fromFunction1(compare), copy = js.Any.fromFunction0(copy), freeze = js.Any.fromFunction0(freeze), isEqual = js.Any.fromFunction1(isEqual), isGreaterThan = js.Any.fromFunction1(isGreaterThan), isGreaterThanOrEqual = js.Any.fromFunction1(isGreaterThanOrEqual), isLessThan = js.Any.fromFunction1(isLessThan), isLessThanOrEqual = js.Any.fromFunction1(isLessThanOrEqual), negate = js.Any.fromFunction0(negate), row = row.asInstanceOf[js.Any], serialize = js.Any.fromFunction0(serialize), toArray = js.Any.fromFunction0(toArray), translate = js.Any.fromFunction1(translate), traverse = js.Any.fromFunction1(traverse))
     __obj.asInstanceOf[Point]
   }
+  @scala.inline
+  implicit class PointOps[Self <: Point] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompare(value: PointCompatible => Double): Self = this.set("compare", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCopy(value: () => Point): Self = this.set("copy", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFreeze(value: () => ReadonlyPoint): Self = this.set("freeze", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsEqual(value: PointCompatible => Boolean): Self = this.set("isEqual", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsGreaterThan(value: PointCompatible => Boolean): Self = this.set("isGreaterThan", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsGreaterThanOrEqual(value: PointCompatible => Boolean): Self = this.set("isGreaterThanOrEqual", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsLessThan(value: PointCompatible => Boolean): Self = this.set("isLessThan", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsLessThanOrEqual(value: PointCompatible => Boolean): Self = this.set("isLessThanOrEqual", js.Any.fromFunction1(value))
+    @scala.inline
+    def setNegate(value: () => Point): Self = this.set("negate", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRow(value: Double): Self = this.set("row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSerialize(value: () => js.Tuple2[Double, Double]): Self = this.set("serialize", js.Any.fromFunction0(value))
+    @scala.inline
+    def setToArray(value: () => js.Tuple2[Double, Double]): Self = this.set("toArray", js.Any.fromFunction0(value))
+    @scala.inline
+    def setTranslate(value: PointCompatible => Point): Self = this.set("translate", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTraverse(value: PointCompatible => Point): Self = this.set("traverse", js.Any.fromFunction1(value))
+  }
+  
 }
 

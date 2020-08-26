@@ -1,6 +1,5 @@
 package typings.makerJs.global.MakerJs.models
 
-import typings.makerJs.MakerJs.IPathMap
 import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -67,8 +66,5 @@ class ConnectTheDots protected ()
     * @param numericList String containing a list of numbers which can be delimited by spaces, commas, or anything non-numeric (Note: [exponential notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential) is allowed).
     */
   def this(isClosed: Boolean, numericList: String) = this()
-  /* CompleteClass */
-  @JSName("paths")
-  override var paths_ConnectTheDots: IPathMap = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Keyboard")
+@JSImport("grommet/es6", "Keyboard")
 @js.native
 object Keyboard extends TopLevel[FC[KeyboardProps]]
 

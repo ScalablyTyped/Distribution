@@ -12,7 +12,7 @@ Exports a streamReader function that accepts a readable stream, a function to ca
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 285 |
+| # downloads        | 315 |
 | # stars            | 0 |
 
 ## Links

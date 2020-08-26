@@ -19,6 +19,7 @@ object default extends js.Object {
   def AreNotSame[T](notExpected: T, actual: T): Unit = js.native
   def AreNotSame[T](notExpected: T, actual: T, message: String): Unit = js.native
   def AreSequenceEqual[T](expected: js.Array[T], actual: js.Array[T]): Unit = js.native
+  def AreSequenceEqual[T](expected: js.Array[T], actual: js.Array[T], equals: js.UndefOr[scala.Nothing], message: String): Unit = js.native
   def AreSequenceEqual[T](
     expected: js.Array[T],
     actual: js.Array[T],

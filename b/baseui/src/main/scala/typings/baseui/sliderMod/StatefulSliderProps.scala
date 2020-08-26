@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StatefulSliderProps extends js.Object {
-  var initialState: js.UndefOr[State] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ State, _]] = js.undefined
-  var onFinalChange: js.UndefOr[js.Function1[/* e */ State, _]] = js.undefined
-  var overrides: js.UndefOr[SliderOverrides] = js.undefined
-  var step: js.UndefOr[Double] = js.undefined
+  var initialState: js.UndefOr[State] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.native
+  var onChange: js.UndefOr[js.Function1[/* e */ State, _]] = js.native
+  var onFinalChange: js.UndefOr[js.Function1[/* e */ State, _]] = js.native
+  var overrides: js.UndefOr[SliderOverrides] = js.native
+  var step: js.UndefOr[Double] = js.native
 }
 
 object StatefulSliderProps {
   @scala.inline
-  def apply(
-    initialState: State = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    onChange: /* e */ State => _ = null,
-    onFinalChange: /* e */ State => _ = null,
-    overrides: SliderOverrides = null,
-    step: js.UndefOr[Double] = js.undefined
-  ): StatefulSliderProps = {
+  def apply(): StatefulSliderProps = {
     val __obj = js.Dynamic.literal()
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFinalChange != null) __obj.updateDynamic("onFinalChange")(js.Any.fromFunction1(onFinalChange))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatefulSliderProps]
   }
+  @scala.inline
+  implicit class StatefulSliderPropsOps[Self <: StatefulSliderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitialState(value: State): Self = this.set("initialState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialState: Self = this.set("initialState", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* e */ State => _): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnFinalChange(value: /* e */ State => _): Self = this.set("onFinalChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFinalChange: Self = this.set("onFinalChange", js.undefined)
+    @scala.inline
+    def setOverrides(value: SliderOverrides): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+  }
+  
 }
 

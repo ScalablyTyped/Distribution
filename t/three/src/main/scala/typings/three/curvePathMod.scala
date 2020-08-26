@@ -15,7 +15,6 @@ object curvePathMod extends js.Object {
     var autoClose: Boolean = js.native
     var curves: js.Array[Curve[T]] = js.native
     def add(curve: Curve[T]): Unit = js.native
-    def checkConnection(): Boolean = js.native
     def closePath(): Unit = js.native
     /**
     	 * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.

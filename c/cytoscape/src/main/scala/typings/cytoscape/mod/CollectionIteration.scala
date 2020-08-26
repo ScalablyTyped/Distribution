@@ -82,6 +82,7 @@ trait CollectionIteration[TOut, TIn]
     *            Use negative numbers to select from the end of an array.
     */
   def slice(): this.type = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def slice(start: Double): this.type = js.native
   def slice(start: Double, end: Double): this.type = js.native
   /**

@@ -10,9 +10,9 @@ Rollup plugin to automatically add a library's peerDependencies to its bundle's 
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-peer-deps-external |
 | Keywords           | rollup, plugin, rollup-plugin, peerDependencies, external, optimize, exclude |
-| # releases         | 5 |
-| # dependents       | 39 |
-| # downloads        | 771602 |
+| # releases         | 4 |
+| # dependents       | 40 |
+| # downloads        | 909242 |
 | # stars            | 1 |
 
 ## Links

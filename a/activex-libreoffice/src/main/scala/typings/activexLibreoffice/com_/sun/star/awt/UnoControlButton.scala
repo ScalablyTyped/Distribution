@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** specifies a button control. */
+@js.native
 trait UnoControlButton
   extends XControl
      with XWindow

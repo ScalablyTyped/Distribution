@@ -12,7 +12,7 @@ Super simple typescript library for string-compatible enums
 | Keywords           | typescript, enum |
 | # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 31044 |
+| # downloads        | 271356 |
 | # stars            | 0 |
 
 ## Links

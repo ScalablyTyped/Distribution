@@ -26,7 +26,7 @@ class Permission protected () extends CustomResource {
     */
   val action: Output_[String] = js.native
   /**
-    * The Event Source Token to validate.  Used with [Alexa Skills][1].
+    * The Event Source Token to validate.  Used with [Alexa Skills](https://developer.amazon.com/docs/custom-skills/host-a-custom-skill-as-an-aws-lambda-function.html#use-aws-cli).
     */
   val eventSourceToken: Output_[js.UndefOr[String]] = js.native
   /**
@@ -50,12 +50,11 @@ class Permission protected () extends CustomResource {
     */
   val sourceAccount: Output_[js.UndefOr[String]] = js.native
   /**
-    * When granting Amazon S3 or CloudWatch Events permission to
-    * invoke your function, you should specify this field with the Amazon Resource Name (ARN)
-    * for the S3 Bucket or CloudWatch Events Rule as its value.  This ensures that only events
-    * generated from the specified bucket or rule can invoke the function.
-    * API Gateway ARNs have a unique structure described
-    * [here](http://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-control-access-using-iam-policies-to-invoke-api.html).
+    * When the principal is an AWS service, the ARN of the specific resource within that service to grant permission to.
+    * Without this, any resource from `principal` will be granted permission – even if that resource is from another account.
+    * For S3, this should be the ARN of the S3 Bucket.
+    * For CloudWatch Events, this should be the ARN of the CloudWatch Events Rule.
+    * For API Gateway, this should be the ARN of the API, as described [here](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-control-access-using-iam-policies-to-invoke-api.html).
     */
   val sourceArn: Output_[js.UndefOr[String]] = js.native
   /**
@@ -79,8 +78,10 @@ object Permission extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Permission = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Permission = js.native
   def get(name: String, id: Input[ID], state: PermissionState): Permission = js.native
   def get(name: String, id: Input[ID], state: PermissionState, opts: CustomResourceOptions): Permission = js.native
   /**

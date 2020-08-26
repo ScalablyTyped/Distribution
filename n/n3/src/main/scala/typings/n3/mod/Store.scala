@@ -1,8 +1,5 @@
 package typings.n3.mod
 
-import typings.node.eventsMod.EventEmitter
-import typings.rdfJs.mod.Stream
-import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Store[Q_RDF /* <: typings.rdfJs.mod.BaseQuad */, Q_N3 /* <: BaseQuad */] ()
   extends typings.rdfJs.mod.Store[Q_RDF] {
   def this(triples: js.Array[Q_RDF]) = this()
+  def this(triples: js.UndefOr[scala.Nothing], options: StoreOptions) = this()
   def this(triples: js.Array[Q_RDF], options: StoreOptions) = this()
   val size: Double = js.native
   def addQuad(quad: Q_RDF): Unit = js.native
@@ -19,6 +17,13 @@ class Store[Q_RDF /* <: typings.rdfJs.mod.BaseQuad */, Q_N3 /* <: BaseQuad */] (
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
     predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
     `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
+  ): Unit = js.native
+  def addQuad(
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any,
+    graph: js.UndefOr[scala.Nothing],
+    done: js.Function0[Unit]
   ): Unit = js.native
   def addQuad(
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
@@ -39,6 +44,15 @@ class Store[Q_RDF /* <: typings.rdfJs.mod.BaseQuad */, Q_N3 /* <: BaseQuad */] (
     `object`: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
     ]
+  ): Unit = js.native
+  def addQuad(
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+    `object`: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
+    ],
+    graph: js.UndefOr[scala.Nothing],
+    done: js.Function0[Unit]
   ): Unit = js.native
   def addQuad(
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
@@ -117,75 +131,18 @@ class Store[Q_RDF /* <: typings.rdfJs.mod.BaseQuad */, Q_N3 /* <: BaseQuad */] (
   def getSubjects(predicate: OTerm, `object`: OTerm, graph: OTerm): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: Q_N3['subject'] */ js.Any
   ] = js.native
-  /**
-    * Consumes the given stream.
-    *
-    * The `end` and `error` events are used like described in the Stream interface.
-    * Depending on the use case, subtypes of EventEmitter or Stream are used.
-    * @see Stream
-    *
-    * @param stream The stream that will be consumed.
-    * @return The resulting event emitter.
-    */
-  /* CompleteClass */
-  override def `import`(stream: Stream[Q_RDF]): EventEmitter = js.native
-  def `match`(subject: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: Term, `object`: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: Term, `object`: Term, graph: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: Term, `object`: Term, graph: RegExp): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: Term, `object`: RegExp): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: Term, `object`: RegExp, graph: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: Term, `object`: RegExp, graph: RegExp): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: RegExp): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: RegExp, `object`: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: RegExp, `object`: Term, graph: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: RegExp, `object`: Term, graph: RegExp): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: RegExp, `object`: RegExp): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: RegExp, `object`: RegExp, graph: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: Term, predicate: RegExp, `object`: RegExp, graph: RegExp): Stream[Q_RDF] = js.native
-  def `match`(subject: RegExp, predicate: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: RegExp, predicate: Term, `object`: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: RegExp, predicate: Term, `object`: Term, graph: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: RegExp, predicate: Term, `object`: Term, graph: RegExp): Stream[Q_RDF] = js.native
-  def `match`(subject: RegExp, predicate: Term, `object`: RegExp): Stream[Q_RDF] = js.native
-  def `match`(subject: RegExp, predicate: Term, `object`: RegExp, graph: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: RegExp, predicate: Term, `object`: RegExp, graph: RegExp): Stream[Q_RDF] = js.native
-  def `match`(subject: RegExp, predicate: RegExp, `object`: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: RegExp, predicate: RegExp, `object`: Term, graph: Term): Stream[Q_RDF] = js.native
-  def `match`(subject: RegExp, predicate: RegExp, `object`: Term, graph: RegExp): Stream[Q_RDF] = js.native
-  def `match`(subject: RegExp, predicate: RegExp, `object`: RegExp, graph: Term): Stream[Q_RDF] = js.native
-  def removeMatches(subject: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: Term, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: Term, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: RegExp, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: Term, `object`: RegExp, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: Term, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: Term, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: RegExp): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: RegExp, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: Term, predicate: RegExp, `object`: RegExp, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: Term, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: Term, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: RegExp, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: Term, `object`: RegExp, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: RegExp, `object`: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: RegExp, `object`: Term, graph: Term): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: RegExp, `object`: Term, graph: RegExp): EventEmitter = js.native
-  def removeMatches(subject: RegExp, predicate: RegExp, `object`: RegExp, graph: Term): EventEmitter = js.native
   def removeQuad(quad: Q_RDF): Unit = js.native
   def removeQuad(
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
     predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
     `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
+  ): Unit = js.native
+  def removeQuad(
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any,
+    graph: js.UndefOr[scala.Nothing],
+    done: js.Function0[Unit]
   ): Unit = js.native
   def removeQuad(
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
@@ -206,6 +163,15 @@ class Store[Q_RDF /* <: typings.rdfJs.mod.BaseQuad */, Q_N3 /* <: BaseQuad */] (
     `object`: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
     ]
+  ): Unit = js.native
+  def removeQuad(
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+    `object`: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['object'] */ js.Any
+    ],
+    graph: js.UndefOr[scala.Nothing],
+    done: js.Function0[Unit]
   ): Unit = js.native
   def removeQuad(
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_RDF['subject'] */ js.Any,

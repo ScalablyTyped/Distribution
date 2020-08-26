@@ -14,10 +14,26 @@ trait GetWorkGroupOutput extends js.Object {
 
 object GetWorkGroupOutput {
   @scala.inline
-  def apply(WorkGroup: WorkGroup = null): GetWorkGroupOutput = {
+  def apply(): GetWorkGroupOutput = {
     val __obj = js.Dynamic.literal()
-    if (WorkGroup != null) __obj.updateDynamic("WorkGroup")(WorkGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWorkGroupOutput]
   }
+  @scala.inline
+  implicit class GetWorkGroupOutputOps[Self <: GetWorkGroupOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWorkGroup(value: WorkGroup): Self = this.set("WorkGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkGroup: Self = this.set("WorkGroup", js.undefined)
+  }
+  
 }
 

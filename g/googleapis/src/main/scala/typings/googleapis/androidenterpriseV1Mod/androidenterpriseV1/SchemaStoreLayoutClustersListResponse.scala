@@ -22,11 +22,32 @@ trait SchemaStoreLayoutClustersListResponse extends js.Object {
 
 object SchemaStoreLayoutClustersListResponse {
   @scala.inline
-  def apply(cluster: js.Array[SchemaStoreCluster] = null, kind: String = null): SchemaStoreLayoutClustersListResponse = {
+  def apply(): SchemaStoreLayoutClustersListResponse = {
     val __obj = js.Dynamic.literal()
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStoreLayoutClustersListResponse]
   }
+  @scala.inline
+  implicit class SchemaStoreLayoutClustersListResponseOps[Self <: SchemaStoreLayoutClustersListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterVarargs(value: SchemaStoreCluster*): Self = this.set("cluster", js.Array(value :_*))
+    @scala.inline
+    def setCluster(value: js.Array[SchemaStoreCluster]): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCluster: Self = this.set("cluster", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

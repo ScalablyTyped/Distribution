@@ -29,6 +29,7 @@ trait String extends js.Object {
     * configured for the system.
     */
   def formatDecimal(value: Double): java.lang.String = js.native
+  def formatDecimal(value: Double, locale: js.UndefOr[scala.Nothing], pattern: java.lang.String): java.lang.String = js.native
   def formatDecimal(value: Double, locale: java.lang.String): java.lang.String = js.native
   def formatDecimal(value: Double, locale: java.lang.String, pattern: java.lang.String): java.lang.String = js.native
   /**

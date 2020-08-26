@@ -1,7 +1,7 @@
 
 # Scala.js typings for scroll-behavior
 
-Typings are for version 0.9.11
+Typings are for version 0.9.12
 
 ## Library description:
 Pluggable browser scroll management
@@ -10,9 +10,9 @@ Pluggable browser scroll management
 | ------------------ | :-------------: |
 | Full name          | scroll-behavior |
 | Keywords           | scroll |
-| # releases         | 3 |
+| # releases         | 6 |
 | # dependents       | 52 |
-| # downloads        | 12725793 |
+| # downloads        | 16021063 |
 | # stars            | 8 |
 
 ## Links

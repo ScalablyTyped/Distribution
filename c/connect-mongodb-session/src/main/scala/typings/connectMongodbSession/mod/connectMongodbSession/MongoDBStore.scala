@@ -16,7 +16,7 @@ trait MongoDBStore
      with Instantiable0[MongoDBStore]
      with Instantiable1[/* connection */ ConnectionInfo, MongoDBStore]
      with Instantiable2[
-      /* connection */ ConnectionInfo, 
+      js.UndefOr[/* connection */ ConnectionInfo], 
       /* callback */ js.Function1[/* error */ Error, Unit], 
       MongoDBStore
     ] {

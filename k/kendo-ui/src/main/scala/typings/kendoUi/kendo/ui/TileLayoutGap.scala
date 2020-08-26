@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TileLayoutGap extends js.Object {
-  var columns: js.UndefOr[Double] = js.undefined
-  var rows: js.UndefOr[Double] = js.undefined
+  var columns: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.native
 }
 
 object TileLayoutGap {
   @scala.inline
-  def apply(columns: js.UndefOr[Double] = js.undefined, rows: js.UndefOr[Double] = js.undefined): TileLayoutGap = {
+  def apply(): TileLayoutGap = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileLayoutGap]
   }
+  @scala.inline
+  implicit class TileLayoutGapOps[Self <: TileLayoutGap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+  }
+  
 }
 

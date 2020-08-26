@@ -20,11 +20,13 @@ object utilMod extends js.Object {
   def beingCrawled(): Boolean = js.native
   def bindCallback(callback: js.Function1[/* a */ js.Any, Unit]): js.Function = js.native
   def bindCallback(callback: js.Function1[/* a */ js.Any, Unit], context: js.Object): js.Function = js.native
-  def callUserCallback(): Unit = js.native
+  def callUserCallback(callback: js.UndefOr[scala.Nothing], varArgs: js.Any*): Unit = js.native
   def callUserCallback(callback: js.Function, varArgs: js.Any*): Unit = js.native
+  def callUserCallback(callback: Null, varArgs: js.Any*): Unit = js.native
   def doubleToIEEE754String(v: Double): String = js.native
   def each(obj: js.Object, fn: js.Function2[/* k */ String, /* v */ js.Any, Unit]): Unit = js.native
   def enableLogging(): Unit = js.native
+  def enableLogging(logger_ : js.UndefOr[scala.Nothing], persistent: Boolean): Unit = js.native
   def enableLogging(logger_ : js.Function1[/* a */ String, Unit]): Unit = js.native
   def enableLogging(logger_ : js.Function1[/* a */ String, Unit], persistent: Boolean): Unit = js.native
   def enableLogging(logger_ : Boolean): Unit = js.native
@@ -46,7 +48,7 @@ object utilMod extends js.Object {
   def sha1(str: String): String = js.native
   def splitStringBySize(str: String, segsize: Double): js.Array[String] = js.native
   def stringCompare(a: String, b: String): Double = js.native
-  def tryParseInt(str: String): Double = js.native
+  def tryParseInt(str: String): Double | Null = js.native
   def warn(varArgs: js.Any*): Unit = js.native
   def warnAboutUnsupportedMethod(methodName: String): Unit = js.native
   def warnIfPageIsSecure(): Unit = js.native

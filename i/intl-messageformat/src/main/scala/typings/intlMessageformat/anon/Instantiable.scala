@@ -14,11 +14,12 @@ trait Instantiable
   extends Instantiable0[DateTimeFormat]
      with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), DateTimeFormat]
      with Instantiable2[
-      (/* locales */ js.Array[String]) | (/* locales */ String), 
+      js.UndefOr[(/* locales */ js.Array[String]) | (/* locales */ String)], 
       /* options */ DateTimeFormatOptions, 
       DateTimeFormat
     ] {
   def apply(): DateTimeFormat = js.native
+  def apply(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): DateTimeFormat = js.native
   def apply(locales: String): DateTimeFormat = js.native
   def apply(locales: String, options: DateTimeFormatOptions): DateTimeFormat = js.native
   def apply(locales: js.Array[String]): DateTimeFormat = js.native

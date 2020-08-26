@@ -16,10 +16,13 @@ class Calendar protected ()
   var _dayPicker: js.Any = js.native
   var _focusOnUpdate: js.Any = js.native
   var _handleEscKey: js.Any = js.native
+  var _hasFocus: js.Any = js.native
   var _monthPicker: js.Any = js.native
   var _navigateDayPickerDay: js.Any = js.native
   var _navigateMonthPickerDay: js.Any = js.native
+  var _onBlur: js.Any = js.native
   var _onDatePickerPopupKeyDown: js.Any = js.native
+  var _onFocus: js.Any = js.native
   var _onGotoToday: js.Any = js.native
   var _onGotoTodayClick: js.Any = js.native
   var _onGotoTodayKeyDown: js.Any = js.native
@@ -31,9 +34,6 @@ class Calendar protected ()
   def UNSAFE_componentWillReceiveProps_MCalendar(nextProps: ICalendarProps): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MCalendar(): Unit = js.native
-  /** Sets focus to the selected date. */
-  /* CompleteClass */
-  override def focus(): Unit = js.native
 }
 
 /* static members */

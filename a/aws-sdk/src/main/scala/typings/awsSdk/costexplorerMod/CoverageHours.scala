@@ -26,18 +26,38 @@ trait CoverageHours extends js.Object {
 
 object CoverageHours {
   @scala.inline
-  def apply(
-    CoverageHoursPercentage: CoverageHoursPercentage = null,
-    OnDemandHours: OnDemandHours = null,
-    ReservedHours: ReservedHours = null,
-    TotalRunningHours: TotalRunningHours = null
-  ): CoverageHours = {
+  def apply(): CoverageHours = {
     val __obj = js.Dynamic.literal()
-    if (CoverageHoursPercentage != null) __obj.updateDynamic("CoverageHoursPercentage")(CoverageHoursPercentage.asInstanceOf[js.Any])
-    if (OnDemandHours != null) __obj.updateDynamic("OnDemandHours")(OnDemandHours.asInstanceOf[js.Any])
-    if (ReservedHours != null) __obj.updateDynamic("ReservedHours")(ReservedHours.asInstanceOf[js.Any])
-    if (TotalRunningHours != null) __obj.updateDynamic("TotalRunningHours")(TotalRunningHours.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverageHours]
   }
+  @scala.inline
+  implicit class CoverageHoursOps[Self <: CoverageHours] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoverageHoursPercentage(value: CoverageHoursPercentage): Self = this.set("CoverageHoursPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverageHoursPercentage: Self = this.set("CoverageHoursPercentage", js.undefined)
+    @scala.inline
+    def setOnDemandHours(value: OnDemandHours): Self = this.set("OnDemandHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDemandHours: Self = this.set("OnDemandHours", js.undefined)
+    @scala.inline
+    def setReservedHours(value: ReservedHours): Self = this.set("ReservedHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedHours: Self = this.set("ReservedHours", js.undefined)
+    @scala.inline
+    def setTotalRunningHours(value: TotalRunningHours): Self = this.set("TotalRunningHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalRunningHours: Self = this.set("TotalRunningHours", js.undefined)
+  }
+  
 }
 

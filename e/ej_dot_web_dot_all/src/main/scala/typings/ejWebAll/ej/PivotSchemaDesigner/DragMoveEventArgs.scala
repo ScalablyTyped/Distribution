@@ -4,35 +4,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DragMoveEventArgs extends js.Object {
   /** if the event should be canceled; otherwise, false.
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** returns the HTML element of the dragged field from PivotSchemaDesigner.
     */
-  var dragTarget: js.UndefOr[js.Any] = js.undefined
+  var dragTarget: js.UndefOr[js.Any] = js.native
   /** return the JSON details of the dragged field.
     */
-  var draggedElementData: js.UndefOr[js.Any] = js.undefined
+  var draggedElementData: js.UndefOr[js.Any] = js.native
   /** returns the PivotSchemaDesigner model
     */
-  var model: js.UndefOr[js.Any] = js.undefined
+  var model: js.UndefOr[js.Any] = js.native
 }
 
 object DragMoveEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    dragTarget: js.Any = null,
-    draggedElementData: js.Any = null,
-    model: js.Any = null
-  ): DragMoveEventArgs = {
+  def apply(): DragMoveEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (dragTarget != null) __obj.updateDynamic("dragTarget")(dragTarget.asInstanceOf[js.Any])
-    if (draggedElementData != null) __obj.updateDynamic("draggedElementData")(draggedElementData.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragMoveEventArgs]
   }
+  @scala.inline
+  implicit class DragMoveEventArgsOps[Self <: DragMoveEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setDragTarget(value: js.Any): Self = this.set("dragTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragTarget: Self = this.set("dragTarget", js.undefined)
+    @scala.inline
+    def setDraggedElementData(value: js.Any): Self = this.set("draggedElementData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggedElementData: Self = this.set("draggedElementData", js.undefined)
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+  }
+  
 }
 

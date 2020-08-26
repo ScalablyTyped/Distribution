@@ -20,11 +20,30 @@ trait ThingPrincipalAttachmentState extends js.Object {
 
 object ThingPrincipalAttachmentState {
   @scala.inline
-  def apply(principal: Input[ARN] = null, thing: Input[String] = null): ThingPrincipalAttachmentState = {
+  def apply(): ThingPrincipalAttachmentState = {
     val __obj = js.Dynamic.literal()
-    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
-    if (thing != null) __obj.updateDynamic("thing")(thing.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingPrincipalAttachmentState]
   }
+  @scala.inline
+  implicit class ThingPrincipalAttachmentStateOps[Self <: ThingPrincipalAttachmentState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrincipal(value: Input[ARN]): Self = this.set("principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipal: Self = this.set("principal", js.undefined)
+    @scala.inline
+    def setThing(value: Input[String]): Self = this.set("thing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThing: Self = this.set("thing", js.undefined)
+  }
+  
 }
 

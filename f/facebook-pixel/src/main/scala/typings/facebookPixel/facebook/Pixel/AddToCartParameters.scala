@@ -4,30 +4,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddToCartParameters extends js.Object {
-  var content_ids: js.UndefOr[js.Array[String]] = js.undefined
-  var content_name: js.UndefOr[String] = js.undefined
-  var content_type: js.UndefOr[String] = js.undefined
-  var currency: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  var content_ids: js.UndefOr[js.Array[String]] = js.native
+  var content_name: js.UndefOr[String] = js.native
+  var content_type: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.native
+  var value: js.UndefOr[Double] = js.native
 }
 
 object AddToCartParameters {
   @scala.inline
-  def apply(
-    content_ids: js.Array[String] = null,
-    content_name: String = null,
-    content_type: String = null,
-    currency: String = null,
-    value: js.UndefOr[Double] = js.undefined
-  ): AddToCartParameters = {
+  def apply(): AddToCartParameters = {
     val __obj = js.Dynamic.literal()
-    if (content_ids != null) __obj.updateDynamic("content_ids")(content_ids.asInstanceOf[js.Any])
-    if (content_name != null) __obj.updateDynamic("content_name")(content_name.asInstanceOf[js.Any])
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddToCartParameters]
   }
+  @scala.inline
+  implicit class AddToCartParametersOps[Self <: AddToCartParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent_idsVarargs(value: String*): Self = this.set("content_ids", js.Array(value :_*))
+    @scala.inline
+    def setContent_ids(value: js.Array[String]): Self = this.set("content_ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent_ids: Self = this.set("content_ids", js.undefined)
+    @scala.inline
+    def setContent_name(value: String): Self = this.set("content_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent_name: Self = this.set("content_name", js.undefined)
+    @scala.inline
+    def setContent_type(value: String): Self = this.set("content_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent_type: Self = this.set("content_type", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

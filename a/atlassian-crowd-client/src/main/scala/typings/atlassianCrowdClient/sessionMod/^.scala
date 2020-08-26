@@ -9,14 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends Session {
   def this(token: String, createdAt: Date, expiresAt: Date) = this()
-  /* CompleteClass */
-  override val createdAt: Date = js.native
-  /* CompleteClass */
-  override val expiresAt: Date = js.native
-  /* CompleteClass */
-  override val token: String = js.native
-  /* CompleteClass */
-  override def toCrowd(): SessionObj = js.native
 }
 
 @JSImport("atlassian-crowd-client/lib/models/session", JSImport.Namespace)

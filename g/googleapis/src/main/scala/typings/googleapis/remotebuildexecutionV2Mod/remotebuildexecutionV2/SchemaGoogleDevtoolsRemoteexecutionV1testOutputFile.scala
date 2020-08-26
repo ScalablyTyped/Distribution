@@ -39,18 +39,38 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile extends js.Object {
 
 object SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile {
   @scala.inline
-  def apply(
-    content: String = null,
-    digest: SchemaGoogleDevtoolsRemoteexecutionV1testDigest = null,
-    isExecutable: js.UndefOr[Boolean] = js.undefined,
-    path: String = null
-  ): SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile = {
+  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExecutable)) __obj.updateDynamic("isExecutable")(isExecutable.get.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testOutputFileOps[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = this.set("digest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigest: Self = this.set("digest", js.undefined)
+    @scala.inline
+    def setIsExecutable(value: Boolean): Self = this.set("isExecutable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsExecutable: Self = this.set("isExecutable", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+  }
+  
 }
 

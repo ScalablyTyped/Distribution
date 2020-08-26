@@ -10,6 +10,35 @@ package object cloudfrontMod {
   type AwsAccountNumberList = js.Array[java.lang.String]
   type CacheBehaviorList = js.Array[typings.awsSdk.cloudfrontMod.CacheBehavior]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.none__
+    - typings.awsSdk.awsSdkStrings.whitelist
+    - typings.awsSdk.awsSdkStrings.allExcept
+    - typings.awsSdk.awsSdkStrings.all__
+    - java.lang.String
+  */
+  type CachePolicyCookieBehavior = typings.awsSdk.cloudfrontMod._CachePolicyCookieBehavior | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.none__
+    - typings.awsSdk.awsSdkStrings.whitelist
+    - java.lang.String
+  */
+  type CachePolicyHeaderBehavior = typings.awsSdk.cloudfrontMod._CachePolicyHeaderBehavior | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.none__
+    - typings.awsSdk.awsSdkStrings.whitelist
+    - typings.awsSdk.awsSdkStrings.allExcept
+    - typings.awsSdk.awsSdkStrings.all__
+    - java.lang.String
+  */
+  type CachePolicyQueryStringBehavior = typings.awsSdk.cloudfrontMod._CachePolicyQueryStringBehavior | java.lang.String
+  type CachePolicySummaryList = js.Array[typings.awsSdk.cloudfrontMod.CachePolicySummary]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.managed_
+    - typings.awsSdk.awsSdkStrings.custom__
+    - java.lang.String
+  */
+  type CachePolicyType = typings.awsSdk.cloudfrontMod._CachePolicyType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.cloudfront_
     - typings.awsSdk.awsSdkStrings.iam_
     - typings.awsSdk.awsSdkStrings.acm
@@ -22,6 +51,7 @@ package object cloudfrontMod {
   type ContentTypeProfileList = js.Array[typings.awsSdk.cloudfrontMod.ContentTypeProfile]
   type CookieNameList = js.Array[java.lang.String]
   type CustomErrorResponseList = js.Array[typings.awsSdk.cloudfrontMod.CustomErrorResponse]
+  type DistributionIdListSummary = js.Array[java.lang.String]
   type DistributionSummaryList = js.Array[typings.awsSdk.cloudfrontMod.DistributionSummary]
   type EncryptionEntityList = js.Array[typings.awsSdk.cloudfrontMod.EncryptionEntity]
   /* Rewritten from type alias, can be one of: 
@@ -87,6 +117,7 @@ package object cloudfrontMod {
     - typings.awsSdk.awsSdkStrings.TLSv1_2016
     - typings.awsSdk.awsSdkStrings.TLSv1Dot1_2016
     - typings.awsSdk.awsSdkStrings.TLSv1Dot2_2018
+    - typings.awsSdk.awsSdkStrings.TLSv1Dot2_2019
     - java.lang.String
   */
   type MinimumProtocolVersion = typings.awsSdk.cloudfrontMod._MinimumProtocolVersion | java.lang.String
@@ -101,6 +132,35 @@ package object cloudfrontMod {
     - java.lang.String
   */
   type OriginProtocolPolicy = typings.awsSdk.cloudfrontMod._OriginProtocolPolicy | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.none__
+    - typings.awsSdk.awsSdkStrings.whitelist
+    - typings.awsSdk.awsSdkStrings.all__
+    - java.lang.String
+  */
+  type OriginRequestPolicyCookieBehavior = typings.awsSdk.cloudfrontMod._OriginRequestPolicyCookieBehavior | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.none__
+    - typings.awsSdk.awsSdkStrings.whitelist
+    - typings.awsSdk.awsSdkStrings.allViewer
+    - typings.awsSdk.awsSdkStrings.allViewerAndWhitelistCloudFront
+    - java.lang.String
+  */
+  type OriginRequestPolicyHeaderBehavior = typings.awsSdk.cloudfrontMod._OriginRequestPolicyHeaderBehavior | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.none__
+    - typings.awsSdk.awsSdkStrings.whitelist
+    - typings.awsSdk.awsSdkStrings.all__
+    - java.lang.String
+  */
+  type OriginRequestPolicyQueryStringBehavior = typings.awsSdk.cloudfrontMod._OriginRequestPolicyQueryStringBehavior | java.lang.String
+  type OriginRequestPolicySummaryList = js.Array[typings.awsSdk.cloudfrontMod.OriginRequestPolicySummary]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.managed_
+    - typings.awsSdk.awsSdkStrings.custom__
+    - java.lang.String
+  */
+  type OriginRequestPolicyType = typings.awsSdk.cloudfrontMod._OriginRequestPolicyType | java.lang.String
   type PathList = js.Array[java.lang.String]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PriceClass_100
@@ -112,6 +172,7 @@ package object cloudfrontMod {
   type PublicKeySummaryList = js.Array[typings.awsSdk.cloudfrontMod.PublicKeySummary]
   type QueryArgProfileList = js.Array[typings.awsSdk.cloudfrontMod.QueryArgProfile]
   type QueryStringCacheKeysList = js.Array[java.lang.String]
+  type QueryStringNamesList = js.Array[java.lang.String]
   type ResourceARN = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`sni-only`
@@ -163,6 +224,7 @@ package object cloudfrontMod {
     - typings.awsSdk.awsSdkStrings.`2018-06-18`
     - typings.awsSdk.awsSdkStrings.`2018-11-05`
     - typings.awsSdk.awsSdkStrings.`2019-03-26`
+    - typings.awsSdk.awsSdkStrings.`2020-05-31`
     - typings.awsSdk.awsSdkStrings.latest_
     - java.lang.String
   */

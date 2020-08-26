@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ApiError[T] protected () extends Error {
   def this(status: Double, statusText: String, response: T) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   @JSName("name")
   var name_ApiError: typings.reduxApiMiddleware.reduxApiMiddlewareStrings.ApiError = js.native
   var response: T = js.native

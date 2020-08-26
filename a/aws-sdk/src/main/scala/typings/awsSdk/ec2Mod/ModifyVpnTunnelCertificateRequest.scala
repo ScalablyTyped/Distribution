@@ -22,14 +22,30 @@ trait ModifyVpnTunnelCertificateRequest extends js.Object {
 
 object ModifyVpnTunnelCertificateRequest {
   @scala.inline
-  def apply(
-    VpnConnectionId: VpnConnectionId,
-    VpnTunnelOutsideIpAddress: String,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): ModifyVpnTunnelCertificateRequest = {
+  def apply(VpnConnectionId: VpnConnectionId, VpnTunnelOutsideIpAddress: String): ModifyVpnTunnelCertificateRequest = {
     val __obj = js.Dynamic.literal(VpnConnectionId = VpnConnectionId.asInstanceOf[js.Any], VpnTunnelOutsideIpAddress = VpnTunnelOutsideIpAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpnTunnelCertificateRequest]
   }
+  @scala.inline
+  implicit class ModifyVpnTunnelCertificateRequestOps[Self <: ModifyVpnTunnelCertificateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpnConnectionId(value: VpnConnectionId): Self = this.set("VpnConnectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpnTunnelOutsideIpAddress(value: String): Self = this.set("VpnTunnelOutsideIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

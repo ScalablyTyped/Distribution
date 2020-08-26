@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITypeaheadOverrides extends js.Object {
-  var instanceSelectHandler: js.UndefOr[js.Function] = js.undefined
-  var select: js.UndefOr[js.Function] = js.undefined
-  var selectedClass: js.UndefOr[String] = js.undefined
+  var instanceSelectHandler: js.UndefOr[js.Function] = js.native
+  var select: js.UndefOr[js.Function] = js.native
+  var selectedClass: js.UndefOr[String] = js.native
 }
 
 object ITypeaheadOverrides {
   @scala.inline
-  def apply(
-    instanceSelectHandler: js.Function = null,
-    select: js.Function = null,
-    selectedClass: String = null
-  ): ITypeaheadOverrides = {
+  def apply(): ITypeaheadOverrides = {
     val __obj = js.Dynamic.literal()
-    if (instanceSelectHandler != null) __obj.updateDynamic("instanceSelectHandler")(instanceSelectHandler.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITypeaheadOverrides]
   }
+  @scala.inline
+  implicit class ITypeaheadOverridesOps[Self <: ITypeaheadOverrides] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceSelectHandler(value: js.Function): Self = this.set("instanceSelectHandler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceSelectHandler: Self = this.set("instanceSelectHandler", js.undefined)
+    @scala.inline
+    def setSelect(value: js.Function): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setSelectedClass(value: String): Self = this.set("selectedClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedClass: Self = this.set("selectedClass", js.undefined)
+  }
+  
 }
 

@@ -5,33 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StructureMember extends Member {
-  var location: js.UndefOr[MemberLocation] = js.undefined
-  var streaming: js.UndefOr[scala.Boolean] = js.undefined
-  var xmlNamespace: js.UndefOr[XmlNamespace | java.lang.String] = js.undefined
+  var location: js.UndefOr[MemberLocation] = js.native
+  var streaming: js.UndefOr[scala.Boolean] = js.native
+  var xmlNamespace: js.UndefOr[XmlNamespace | java.lang.String] = js.native
 }
 
 object StructureMember {
   @scala.inline
-  def apply(
-    shape: java.lang.String,
-    documentation: java.lang.String = null,
-    flattened: js.UndefOr[scala.Boolean] = js.undefined,
-    location: MemberLocation = null,
-    locationName: java.lang.String = null,
-    streaming: js.UndefOr[scala.Boolean] = js.undefined,
-    xmlAttribute: js.UndefOr[scala.Boolean] = js.undefined,
-    xmlNamespace: XmlNamespace | java.lang.String = null
-  ): StructureMember = {
+  def apply(shape: java.lang.String): StructureMember = {
     val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened.get.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (locationName != null) __obj.updateDynamic("locationName")(locationName.asInstanceOf[js.Any])
-    if (!js.isUndefined(streaming)) __obj.updateDynamic("streaming")(streaming.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xmlAttribute)) __obj.updateDynamic("xmlAttribute")(xmlAttribute.get.asInstanceOf[js.Any])
-    if (xmlNamespace != null) __obj.updateDynamic("xmlNamespace")(xmlNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructureMember]
   }
+  @scala.inline
+  implicit class StructureMemberOps[Self <: StructureMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocation(value: MemberLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setStreaming(value: scala.Boolean): Self = this.set("streaming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreaming: Self = this.set("streaming", js.undefined)
+    @scala.inline
+    def setXmlNamespace(value: XmlNamespace | java.lang.String): Self = this.set("xmlNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXmlNamespace: Self = this.set("xmlNamespace", js.undefined)
+  }
+  
 }
 

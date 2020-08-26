@@ -40,28 +40,26 @@ class ConsumedAppService protected () extends Document {
   var model_FConsumedAppService: IModel = js.native
   def actions: IList[AppServiceAction] = js.native
   def appServiceLocation: AppServiceLocationEnum = js.native
-  def appServiceLocation(newValue: AppServiceLocationEnum): js.Any = js.native
+  def appServiceLocation_=(newValue: AppServiceLocationEnum): Unit = js.native
   def appStoreGuid: String = js.native
-  def appStoreGuid(newValue: String): js.Any = js.native
+  def appStoreGuid_=(newValue: String): Unit = js.native
   def appStoreVersion: String = js.native
-  def appStoreVersion(newValue: String): js.Any = js.native
   def appStoreVersionGuid: String = js.native
-  def appStoreVersionGuid(newValue: String): js.Any = js.native
+  def appStoreVersionGuid_=(newValue: String): Unit = js.native
+  def appStoreVersion_=(newValue: String): Unit = js.native
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MConsumedAppService: FolderBase = js.native
   def fromAppStore: Boolean = js.native
-  def fromAppStore(newValue: Boolean): js.Any = js.native
-  def locationConstant(): js.Any = js.native
-  def locationConstant(newValue: IConstant): js.Any = js.native
+  def fromAppStore_=(newValue: Boolean): Unit = js.native
+  def locationConstant: IConstant | Null = js.native
   def locationConstantQualifiedName: String | Null = js.native
-  @JSName("locationConstant")
-  def locationConstant_Union: IConstant | Null = js.native
+  def locationConstant_=(newValue: IConstant | Null): Unit = js.native
   def msd: Msd = js.native
-  def msd(newValue: Msd): js.Any = js.native
+  def msd_=(newValue: Msd): Unit = js.native
   def timeOut: Double = js.native
-  def timeOut(newValue: Double): js.Any = js.native
+  def timeOut_=(newValue: Double): Unit = js.native
   def useTimeOut: Boolean = js.native
-  def useTimeOut(newValue: Boolean): js.Any = js.native
+  def useTimeOut_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

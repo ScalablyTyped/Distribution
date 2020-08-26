@@ -27,11 +27,30 @@ trait SchemaSignedUrlKey extends js.Object {
 
 object SchemaSignedUrlKey {
   @scala.inline
-  def apply(keyName: String = null, keyValue: String = null): SchemaSignedUrlKey = {
+  def apply(): SchemaSignedUrlKey = {
     val __obj = js.Dynamic.literal()
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
-    if (keyValue != null) __obj.updateDynamic("keyValue")(keyValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSignedUrlKey]
   }
+  @scala.inline
+  implicit class SchemaSignedUrlKeyOps[Self <: SchemaSignedUrlKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyName(value: String): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("keyName", js.undefined)
+    @scala.inline
+    def setKeyValue(value: String): Self = this.set("keyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyValue: Self = this.set("keyValue", js.undefined)
+  }
+  
 }
 

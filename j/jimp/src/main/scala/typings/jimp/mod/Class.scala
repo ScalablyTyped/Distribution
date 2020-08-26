@@ -25,6 +25,7 @@ class Class protected () extends DepreciatedJimp {
   def this(w: Double, h: Double, background: String) = this()
   def this(w: Double, h: Double, background: Double) = this()
   def this(w: Double, h: Double, cb: ImageCallback[_]) = this()
+  def this(w: Double, h: Double, background: js.UndefOr[scala.Nothing], cb: ImageCallback[_]) = this()
   def this(w: Double, h: Double, background: String, cb: ImageCallback[_]) = this()
   def this(w: Double, h: Double, background: Double, cb: ImageCallback[_]) = this()
 }

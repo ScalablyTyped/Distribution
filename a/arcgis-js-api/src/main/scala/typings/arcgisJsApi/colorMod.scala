@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("esri/renderers/smartMapping/creators/color", JSImport.Namespace)
+@JSImport("esri/smartMapping/renderers/color", JSImport.Namespace)
 @js.native
 object colorMod extends TopLevel[color]
 

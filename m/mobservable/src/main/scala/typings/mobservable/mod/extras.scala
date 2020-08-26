@@ -23,6 +23,7 @@ object extras extends js.Object {
   def getObserverTree(thing: js.Any): IObserverTree = js.native
   def getObserverTree(thing: js.Any, property: String): IObserverTree = js.native
   def trackTransitions(): Lambda = js.native
+  def trackTransitions(extensive: js.UndefOr[scala.Nothing], onReport: js.Function1[/* lines */ ITransitionEvent, Unit]): Lambda = js.native
   def trackTransitions(extensive: Boolean): Lambda = js.native
   def trackTransitions(extensive: Boolean, onReport: js.Function1[/* lines */ ITransitionEvent, Unit]): Lambda = js.native
   def withStrict(newStrict: Boolean, func: Lambda): Unit = js.native

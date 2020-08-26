@@ -26,15 +26,32 @@ trait CreatePackageRequest extends js.Object {
 
 object CreatePackageRequest {
   @scala.inline
-  def apply(
-    PackageName: PackageName,
-    PackageSource: PackageSource,
-    PackageType: PackageType,
-    PackageDescription: PackageDescription = null
-  ): CreatePackageRequest = {
+  def apply(PackageName: PackageName, PackageSource: PackageSource, PackageType: PackageType): CreatePackageRequest = {
     val __obj = js.Dynamic.literal(PackageName = PackageName.asInstanceOf[js.Any], PackageSource = PackageSource.asInstanceOf[js.Any], PackageType = PackageType.asInstanceOf[js.Any])
-    if (PackageDescription != null) __obj.updateDynamic("PackageDescription")(PackageDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePackageRequest]
   }
+  @scala.inline
+  implicit class CreatePackageRequestOps[Self <: CreatePackageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPackageName(value: PackageName): Self = this.set("PackageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPackageSource(value: PackageSource): Self = this.set("PackageSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPackageType(value: PackageType): Self = this.set("PackageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPackageDescription(value: PackageDescription): Self = this.set("PackageDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageDescription: Self = this.set("PackageDescription", js.undefined)
+  }
+  
 }
 

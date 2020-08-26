@@ -14,10 +14,28 @@ trait UpdateDeploymentGroupOutput extends js.Object {
 
 object UpdateDeploymentGroupOutput {
   @scala.inline
-  def apply(hooksNotCleanedUp: AutoScalingGroupList = null): UpdateDeploymentGroupOutput = {
+  def apply(): UpdateDeploymentGroupOutput = {
     val __obj = js.Dynamic.literal()
-    if (hooksNotCleanedUp != null) __obj.updateDynamic("hooksNotCleanedUp")(hooksNotCleanedUp.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeploymentGroupOutput]
   }
+  @scala.inline
+  implicit class UpdateDeploymentGroupOutputOps[Self <: UpdateDeploymentGroupOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHooksNotCleanedUpVarargs(value: AutoScalingGroup*): Self = this.set("hooksNotCleanedUp", js.Array(value :_*))
+    @scala.inline
+    def setHooksNotCleanedUp(value: AutoScalingGroupList): Self = this.set("hooksNotCleanedUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHooksNotCleanedUp: Self = this.set("hooksNotCleanedUp", js.undefined)
+  }
+  
 }
 

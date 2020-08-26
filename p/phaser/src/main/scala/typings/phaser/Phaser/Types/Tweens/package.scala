@@ -91,6 +91,12 @@ package object Tweens {
     /* repeated */ js.Any, 
     scala.Unit
   ]
+  type TweenOnStopCallback = js.Function3[
+    /* tween */ typings.phaser.Phaser.Tweens.Tween, 
+    /* targets */ js.Array[js.Any], 
+    /* repeated */ js.Any, 
+    scala.Unit
+  ]
   type TweenOnUpdateCallback = js.Function3[
     /* tween */ typings.phaser.Phaser.Tweens.Tween, 
     /* target */ js.Any, 

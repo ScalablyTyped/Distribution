@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class Publication protected () extends IPublication {
   def this(id: Double) = this()
-  /* CompleteClass */
-  override var id: Double = js.native
 }
 

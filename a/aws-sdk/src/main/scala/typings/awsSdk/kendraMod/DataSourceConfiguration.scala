@@ -34,22 +34,46 @@ trait DataSourceConfiguration extends js.Object {
 
 object DataSourceConfiguration {
   @scala.inline
-  def apply(
-    DatabaseConfiguration: DatabaseConfiguration = null,
-    OneDriveConfiguration: OneDriveConfiguration = null,
-    S3Configuration: S3DataSourceConfiguration = null,
-    SalesforceConfiguration: SalesforceConfiguration = null,
-    ServiceNowConfiguration: ServiceNowConfiguration = null,
-    SharePointConfiguration: SharePointConfiguration = null
-  ): DataSourceConfiguration = {
+  def apply(): DataSourceConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (DatabaseConfiguration != null) __obj.updateDynamic("DatabaseConfiguration")(DatabaseConfiguration.asInstanceOf[js.Any])
-    if (OneDriveConfiguration != null) __obj.updateDynamic("OneDriveConfiguration")(OneDriveConfiguration.asInstanceOf[js.Any])
-    if (S3Configuration != null) __obj.updateDynamic("S3Configuration")(S3Configuration.asInstanceOf[js.Any])
-    if (SalesforceConfiguration != null) __obj.updateDynamic("SalesforceConfiguration")(SalesforceConfiguration.asInstanceOf[js.Any])
-    if (ServiceNowConfiguration != null) __obj.updateDynamic("ServiceNowConfiguration")(ServiceNowConfiguration.asInstanceOf[js.Any])
-    if (SharePointConfiguration != null) __obj.updateDynamic("SharePointConfiguration")(SharePointConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceConfiguration]
   }
+  @scala.inline
+  implicit class DataSourceConfigurationOps[Self <: DataSourceConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabaseConfiguration(value: DatabaseConfiguration): Self = this.set("DatabaseConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseConfiguration: Self = this.set("DatabaseConfiguration", js.undefined)
+    @scala.inline
+    def setOneDriveConfiguration(value: OneDriveConfiguration): Self = this.set("OneDriveConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOneDriveConfiguration: Self = this.set("OneDriveConfiguration", js.undefined)
+    @scala.inline
+    def setS3Configuration(value: S3DataSourceConfiguration): Self = this.set("S3Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Configuration: Self = this.set("S3Configuration", js.undefined)
+    @scala.inline
+    def setSalesforceConfiguration(value: SalesforceConfiguration): Self = this.set("SalesforceConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalesforceConfiguration: Self = this.set("SalesforceConfiguration", js.undefined)
+    @scala.inline
+    def setServiceNowConfiguration(value: ServiceNowConfiguration): Self = this.set("ServiceNowConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceNowConfiguration: Self = this.set("ServiceNowConfiguration", js.undefined)
+    @scala.inline
+    def setSharePointConfiguration(value: SharePointConfiguration): Self = this.set("SharePointConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharePointConfiguration: Self = this.set("SharePointConfiguration", js.undefined)
+  }
+  
 }
 

@@ -10,15 +10,14 @@ WordPress word count utility.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/wordcount |
 | Keywords           | wordpress, wordcount |
-| # releases         | 22 |
+| # releases         | 21 |
 | # dependents       | 3 |
-| # downloads        | 132374 |
+| # downloads        | 135262 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/wordcount/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
-- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fwordcount)
     
 

@@ -34,18 +34,42 @@ trait SchemaAllocationSpecificSKUAllocationReservedInstanceProperties extends js
 
 object SchemaAllocationSpecificSKUAllocationReservedInstanceProperties {
   @scala.inline
-  def apply(
-    guestAccelerators: js.Array[SchemaAcceleratorConfig] = null,
-    localSsds: js.Array[SchemaAllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk] = null,
-    machineType: String = null,
-    minCpuPlatform: String = null
-  ): SchemaAllocationSpecificSKUAllocationReservedInstanceProperties = {
+  def apply(): SchemaAllocationSpecificSKUAllocationReservedInstanceProperties = {
     val __obj = js.Dynamic.literal()
-    if (guestAccelerators != null) __obj.updateDynamic("guestAccelerators")(guestAccelerators.asInstanceOf[js.Any])
-    if (localSsds != null) __obj.updateDynamic("localSsds")(localSsds.asInstanceOf[js.Any])
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAllocationSpecificSKUAllocationReservedInstanceProperties]
   }
+  @scala.inline
+  implicit class SchemaAllocationSpecificSKUAllocationReservedInstancePropertiesOps[Self <: SchemaAllocationSpecificSKUAllocationReservedInstanceProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGuestAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = this.set("guestAccelerators", js.Array(value :_*))
+    @scala.inline
+    def setGuestAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = this.set("guestAccelerators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuestAccelerators: Self = this.set("guestAccelerators", js.undefined)
+    @scala.inline
+    def setLocalSsdsVarargs(value: SchemaAllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk*): Self = this.set("localSsds", js.Array(value :_*))
+    @scala.inline
+    def setLocalSsds(value: js.Array[SchemaAllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk]): Self = this.set("localSsds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalSsds: Self = this.set("localSsds", js.undefined)
+    @scala.inline
+    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    @scala.inline
+    def setMinCpuPlatform(value: String): Self = this.set("minCpuPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCpuPlatform: Self = this.set("minCpuPlatform", js.undefined)
+  }
+  
 }
 

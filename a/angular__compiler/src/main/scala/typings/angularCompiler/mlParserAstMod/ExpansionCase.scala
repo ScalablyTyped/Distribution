@@ -17,11 +17,7 @@ class ExpansionCase protected () extends Node {
   ) = this()
   var expSourceSpan: ParseSourceSpan = js.native
   var expression: js.Array[Node] = js.native
-  /* CompleteClass */
-  override var sourceSpan: ParseSourceSpan = js.native
   var value: String = js.native
   var valueSourceSpan: ParseSourceSpan = js.native
-  /* CompleteClass */
-  override def visit(visitor: Visitor, context: js.Any): js.Any = js.native
 }
 

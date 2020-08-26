@@ -43,9 +43,9 @@ trait ClusterState extends js.Object {
     */
   val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The id of the VPC that the CloudHSM cluster resides in.
     */
@@ -54,28 +54,62 @@ trait ClusterState extends js.Object {
 
 object ClusterState {
   @scala.inline
-  def apply(
-    clusterCertificates: Input[js.Array[Input[ClusterClusterCertificate]]] = null,
-    clusterId: Input[String] = null,
-    clusterState: Input[String] = null,
-    hsmType: Input[String] = null,
-    securityGroupId: Input[String] = null,
-    sourceBackupIdentifier: Input[String] = null,
-    subnetIds: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpcId: Input[String] = null
-  ): ClusterState = {
+  def apply(): ClusterState = {
     val __obj = js.Dynamic.literal()
-    if (clusterCertificates != null) __obj.updateDynamic("clusterCertificates")(clusterCertificates.asInstanceOf[js.Any])
-    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
-    if (clusterState != null) __obj.updateDynamic("clusterState")(clusterState.asInstanceOf[js.Any])
-    if (hsmType != null) __obj.updateDynamic("hsmType")(hsmType.asInstanceOf[js.Any])
-    if (securityGroupId != null) __obj.updateDynamic("securityGroupId")(securityGroupId.asInstanceOf[js.Any])
-    if (sourceBackupIdentifier != null) __obj.updateDynamic("sourceBackupIdentifier")(sourceBackupIdentifier.asInstanceOf[js.Any])
-    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterState]
   }
+  @scala.inline
+  implicit class ClusterStateOps[Self <: ClusterState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterCertificatesVarargs(value: Input[ClusterClusterCertificate]*): Self = this.set("clusterCertificates", js.Array(value :_*))
+    @scala.inline
+    def setClusterCertificates(value: Input[js.Array[Input[ClusterClusterCertificate]]]): Self = this.set("clusterCertificates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterCertificates: Self = this.set("clusterCertificates", js.undefined)
+    @scala.inline
+    def setClusterId(value: Input[String]): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    @scala.inline
+    def setClusterState(value: Input[String]): Self = this.set("clusterState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterState: Self = this.set("clusterState", js.undefined)
+    @scala.inline
+    def setHsmType(value: Input[String]): Self = this.set("hsmType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsmType: Self = this.set("hsmType", js.undefined)
+    @scala.inline
+    def setSecurityGroupId(value: Input[String]): Self = this.set("securityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupId: Self = this.set("securityGroupId", js.undefined)
+    @scala.inline
+    def setSourceBackupIdentifier(value: Input[String]): Self = this.set("sourceBackupIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceBackupIdentifier: Self = this.set("sourceBackupIdentifier", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: Input[String]*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("subnetIds", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

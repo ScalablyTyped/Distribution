@@ -19,11 +19,8 @@ object ReportServerInfoMe {
     __obj.asInstanceOf[ReportServerInfoMe]
   }
   @scala.inline
-  def ReportServerInfoMeServiceMutation(
-    __typename: ServiceMutation,
-    reportServerInfo: ReportServerInfoMeServiceMutationReportServerInfo = null
-  ): ReportServerInfoMe = {
-    val __obj = js.Dynamic.literal(__typename = __typename.asInstanceOf[js.Any], reportServerInfo = reportServerInfo.asInstanceOf[js.Any])
+  def ReportServerInfoMeServiceMutation(__typename: ServiceMutation): ReportServerInfoMe = {
+    val __obj = js.Dynamic.literal(__typename = __typename.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportServerInfoMe]
   }
 }

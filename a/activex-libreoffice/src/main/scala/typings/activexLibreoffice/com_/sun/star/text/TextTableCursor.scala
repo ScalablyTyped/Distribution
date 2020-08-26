@@ -38,6 +38,7 @@ import scala.scalajs.js.annotation._
   * travel through text table cellsselect text table cellsget property values from the selected cellsset property values in the selected cells
   * @see com.sun.star.text.TextTable
   */
+@js.native
 trait TextTableCursor
   extends XTextTableCursor
      with XPropertySet

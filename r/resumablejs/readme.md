@@ -12,7 +12,7 @@ A JavaScript library for providing multiple simultaneous, stable, fault-tolerant
 | Keywords           | html5, file, upload |
 | # releases         | 1 |
 | # dependents       | 16 |
-| # downloads        | 395012 |
+| # downloads        | 398117 |
 | # stars            | 2 |
 
 ## Links

@@ -26,17 +26,36 @@ trait S3Action extends js.Object {
 
 object S3Action {
   @scala.inline
-  def apply(
-    BucketName: S3BucketName,
-    KmsKeyArn: AmazonResourceName = null,
-    ObjectKeyPrefix: S3KeyPrefix = null,
-    TopicArn: AmazonResourceName = null
-  ): S3Action = {
+  def apply(BucketName: S3BucketName): S3Action = {
     val __obj = js.Dynamic.literal(BucketName = BucketName.asInstanceOf[js.Any])
-    if (KmsKeyArn != null) __obj.updateDynamic("KmsKeyArn")(KmsKeyArn.asInstanceOf[js.Any])
-    if (ObjectKeyPrefix != null) __obj.updateDynamic("ObjectKeyPrefix")(ObjectKeyPrefix.asInstanceOf[js.Any])
-    if (TopicArn != null) __obj.updateDynamic("TopicArn")(TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Action]
   }
+  @scala.inline
+  implicit class S3ActionOps[Self <: S3Action] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketName(value: S3BucketName): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKmsKeyArn(value: AmazonResourceName): Self = this.set("KmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("KmsKeyArn", js.undefined)
+    @scala.inline
+    def setObjectKeyPrefix(value: S3KeyPrefix): Self = this.set("ObjectKeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectKeyPrefix: Self = this.set("ObjectKeyPrefix", js.undefined)
+    @scala.inline
+    def setTopicArn(value: AmazonResourceName): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
+  }
+  
 }
 

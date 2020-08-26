@@ -31,6 +31,7 @@ trait Twitter extends js.Object {
   def request(options: RequiredUriUrl with CoreOptions, callback: RequestCallback): Request = js.native
   def request(uri: String): Request = js.native
   def request(uri: String, callback: RequestCallback): Request = js.native
+  def request(uri: String, options: js.UndefOr[scala.Nothing], callback: RequestCallback): Request = js.native
   def request(uri: String, options: CoreOptions): Request = js.native
   def request(uri: String, options: CoreOptions, callback: RequestCallback): Request = js.native
   def stream(method: String): EventEmitter = js.native

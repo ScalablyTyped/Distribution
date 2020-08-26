@@ -26,6 +26,7 @@ class ResourceResellernotify protected () extends js.Object {
     */
   def getwatchdetails(): GaxiosPromise[SchemaResellernotifyGetwatchdetailsResponse] = js.native
   def getwatchdetails(callback: BodyResponseCallback[SchemaResellernotifyGetwatchdetailsResponse]): Unit = js.native
+  def getwatchdetails(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResellernotifyGetwatchdetailsResponse] = js.native
   def getwatchdetails(params: ParamsResourceResellernotifyGetwatchdetails): GaxiosPromise[SchemaResellernotifyGetwatchdetailsResponse] = js.native
   def getwatchdetails(
     params: ParamsResourceResellernotifyGetwatchdetails,
@@ -56,6 +57,7 @@ class ResourceResellernotify protected () extends js.Object {
     */
   def register(): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def register(callback: BodyResponseCallback[SchemaResellernotifyResource]): Unit = js.native
+  def register(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def register(params: ParamsResourceResellernotifyRegister): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def register(
     params: ParamsResourceResellernotifyRegister,
@@ -86,6 +88,7 @@ class ResourceResellernotify protected () extends js.Object {
     */
   def unregister(): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def unregister(callback: BodyResponseCallback[SchemaResellernotifyResource]): Unit = js.native
+  def unregister(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def unregister(params: ParamsResourceResellernotifyUnregister): GaxiosPromise[SchemaResellernotifyResource] = js.native
   def unregister(
     params: ParamsResourceResellernotifyUnregister,

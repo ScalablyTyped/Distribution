@@ -17,8 +17,8 @@ trait Library
   * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
   * @param lib hash that will be extended
   */
-Instantiable1[/* libFile */ String, js.Any]
-     with Instantiable0[js.Any]
+Instantiable0[js.Any]
+     with Instantiable1[/* libFile */ String, js.Any]
      with Instantiable2[
       (/* libFile */ Null) | (/* libFile */ String), 
       /* funcs */ StringDictionary[js.Array[js.Any]], 
@@ -26,21 +26,23 @@ Instantiable1[/* libFile */ String, js.Any]
     ]
      with Instantiable3[
       (/* libFile */ Null) | (/* libFile */ String), 
-      /* funcs */ StringDictionary[js.Array[js.Any]], 
+      js.UndefOr[/* funcs */ StringDictionary[js.Array[js.Any]]], 
       /* lib */ js.Object, 
       js.Any
     ] {
   /** The extension to use on libraries. */
   var EXT: String = js.native
-  def apply(): js.Any = js.native
   /**
     * @param libFile name of library
     * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
     * @param lib hash that will be extended
     */
+  def apply(): js.Any = js.native
   def apply(libFile: String): js.Any = js.native
+  def apply(libFile: String, funcs: js.UndefOr[scala.Nothing], lib: js.Object): js.Any = js.native
   def apply(libFile: String, funcs: StringDictionary[js.Array[_]]): js.Any = js.native
   def apply(libFile: String, funcs: StringDictionary[js.Array[_]], lib: js.Object): js.Any = js.native
+  def apply(libFile: Null, funcs: js.UndefOr[scala.Nothing], lib: js.Object): js.Any = js.native
   def apply(libFile: Null, funcs: StringDictionary[js.Array[_]]): js.Any = js.native
   def apply(libFile: Null, funcs: StringDictionary[js.Array[_]], lib: js.Object): js.Any = js.native
 }

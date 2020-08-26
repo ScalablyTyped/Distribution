@@ -28,18 +28,38 @@ trait TableItemState extends js.Object {
 
 object TableItemState {
   @scala.inline
-  def apply(
-    hashKey: Input[String] = null,
-    item: Input[String] = null,
-    rangeKey: Input[String] = null,
-    tableName: Input[String] = null
-  ): TableItemState = {
+  def apply(): TableItemState = {
     val __obj = js.Dynamic.literal()
-    if (hashKey != null) __obj.updateDynamic("hashKey")(hashKey.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableItemState]
   }
+  @scala.inline
+  implicit class TableItemStateOps[Self <: TableItemState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHashKey(value: Input[String]): Self = this.set("hashKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashKey: Self = this.set("hashKey", js.undefined)
+    @scala.inline
+    def setItem(value: Input[String]): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setRangeKey(value: Input[String]): Self = this.set("rangeKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeKey: Self = this.set("rangeKey", js.undefined)
+    @scala.inline
+    def setTableName(value: Input[String]): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableName: Self = this.set("tableName", js.undefined)
+  }
+  
 }
 

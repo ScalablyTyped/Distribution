@@ -10,9 +10,9 @@ returns specified keys for passed in object
 | ------------------ | :-------------: |
 | Full name          | whitelist-object |
 | Keywords           | object, whitelist, filter, reduce |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 561 |
+| # downloads        | 546 |
 | # stars            | 1 |
 
 ## Links

@@ -14,10 +14,26 @@ trait LogConfigurations extends js.Object {
 
 object LogConfigurations {
   @scala.inline
-  def apply(Cloudwatch: LogConfiguration = null): LogConfigurations = {
+  def apply(): LogConfigurations = {
     val __obj = js.Dynamic.literal()
-    if (Cloudwatch != null) __obj.updateDynamic("Cloudwatch")(Cloudwatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogConfigurations]
   }
+  @scala.inline
+  implicit class LogConfigurationsOps[Self <: LogConfigurations] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudwatch(value: LogConfiguration): Self = this.set("Cloudwatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatch: Self = this.set("Cloudwatch", js.undefined)
+  }
+  
 }
 

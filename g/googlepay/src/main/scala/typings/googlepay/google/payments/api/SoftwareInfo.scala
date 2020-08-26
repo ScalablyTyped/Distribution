@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * The info of the software used by merchants to integrate with GPay.
   */
+@js.native
 trait SoftwareInfo extends js.Object {
   /**
     * The identifier of the software used by merchants to integrate with
@@ -16,7 +17,7 @@ trait SoftwareInfo extends js.Object {
     *
     * This field is optional.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * The version of the software.
     *
@@ -24,16 +25,35 @@ trait SoftwareInfo extends js.Object {
     *
     * This field is optional.
     */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
 }
 
 object SoftwareInfo {
   @scala.inline
-  def apply(id: String = null, version: String = null): SoftwareInfo = {
+  def apply(): SoftwareInfo = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoftwareInfo]
   }
+  @scala.inline
+  implicit class SoftwareInfoOps[Self <: SoftwareInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

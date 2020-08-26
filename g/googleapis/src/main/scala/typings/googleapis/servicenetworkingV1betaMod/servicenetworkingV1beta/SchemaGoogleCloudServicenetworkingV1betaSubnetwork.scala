@@ -33,18 +33,38 @@ trait SchemaGoogleCloudServicenetworkingV1betaSubnetwork extends js.Object {
 
 object SchemaGoogleCloudServicenetworkingV1betaSubnetwork {
   @scala.inline
-  def apply(
-    ipCidrRange: String = null,
-    name: String = null,
-    network: String = null,
-    outsideAllocation: js.UndefOr[Boolean] = js.undefined
-  ): SchemaGoogleCloudServicenetworkingV1betaSubnetwork = {
+  def apply(): SchemaGoogleCloudServicenetworkingV1betaSubnetwork = {
     val __obj = js.Dynamic.literal()
-    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (!js.isUndefined(outsideAllocation)) __obj.updateDynamic("outsideAllocation")(outsideAllocation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudServicenetworkingV1betaSubnetwork]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudServicenetworkingV1betaSubnetworkOps[Self <: SchemaGoogleCloudServicenetworkingV1betaSubnetwork] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpCidrRange(value: String): Self = this.set("ipCidrRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpCidrRange: Self = this.set("ipCidrRange", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setOutsideAllocation(value: Boolean): Self = this.set("outsideAllocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutsideAllocation: Self = this.set("outsideAllocation", js.undefined)
+  }
+  
 }
 

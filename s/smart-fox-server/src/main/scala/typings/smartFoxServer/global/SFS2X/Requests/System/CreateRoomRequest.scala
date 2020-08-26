@@ -18,6 +18,7 @@ class CreateRoomRequest protected ()
     */
   def this(settings: RoomSettings) = this()
   def this(settings: RoomSettings, autoJoin: Boolean) = this()
+  def this(settings: RoomSettings, autoJoin: js.UndefOr[scala.Nothing], roomToLeave: SFSRoom) = this()
   def this(settings: RoomSettings, autoJoin: Boolean, roomToLeave: SFSRoom) = this()
 }
 

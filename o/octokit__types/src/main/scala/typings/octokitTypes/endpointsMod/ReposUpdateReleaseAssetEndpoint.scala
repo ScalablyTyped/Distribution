@@ -4,27 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReposUpdateReleaseAssetEndpoint extends js.Object {
-  var asset_id: Double
+  var asset_id: Double = js.native
   /**
     * An alternate short description of the asset. Used in place of the filename.
     */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.native
   /**
     * The file name of the asset.
     */
-  var name: js.UndefOr[String] = js.undefined
-  var owner: String
-  var repo: String
+  var name: js.UndefOr[String] = js.native
+  var owner: String = js.native
+  var repo: String = js.native
 }
 
 object ReposUpdateReleaseAssetEndpoint {
   @scala.inline
-  def apply(asset_id: Double, owner: String, repo: String, label: String = null, name: String = null): ReposUpdateReleaseAssetEndpoint = {
+  def apply(asset_id: Double, owner: String, repo: String): ReposUpdateReleaseAssetEndpoint = {
     val __obj = js.Dynamic.literal(asset_id = asset_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateReleaseAssetEndpoint]
   }
+  @scala.inline
+  implicit class ReposUpdateReleaseAssetEndpointOps[Self <: ReposUpdateReleaseAssetEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsset_id(value: Double): Self = this.set("asset_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

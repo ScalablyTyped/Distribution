@@ -7,25 +7,36 @@ import scala.scalajs.js.annotation._
 /**
   * Configures how to poll for an element.
   */
+@js.native
 trait ExpectTimingActions extends ExpectDefaultOptions {
   /**
     * delay to pass to the puppeteer element.type API
     */
-  var delay: js.UndefOr[Double] = js.undefined
+  var delay: js.UndefOr[Double] = js.native
 }
 
 object ExpectTimingActions {
   @scala.inline
-  def apply(
-    delay: js.UndefOr[Double] = js.undefined,
-    polling: ExpectPolling = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): ExpectTimingActions = {
+  def apply(): ExpectTimingActions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (polling != null) __obj.updateDynamic("polling")(polling.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpectTimingActions]
   }
+  @scala.inline
+  implicit class ExpectTimingActionsOps[Self <: ExpectTimingActions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+  }
+  
 }
 

@@ -27,6 +27,7 @@ class ResourceProvisioning protected () extends js.Object {
     */
   def createAccountTicket(): GaxiosPromise[SchemaAccountTicket] = js.native
   def createAccountTicket(callback: BodyResponseCallback[SchemaAccountTicket]): Unit = js.native
+  def createAccountTicket(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountTicket] = js.native
   def createAccountTicket(params: ParamsResourceProvisioningCreateaccountticket): GaxiosPromise[SchemaAccountTicket] = js.native
   def createAccountTicket(
     params: ParamsResourceProvisioningCreateaccountticket,
@@ -57,6 +58,7 @@ class ResourceProvisioning protected () extends js.Object {
     */
   def createAccountTree(): GaxiosPromise[SchemaAccountTreeResponse] = js.native
   def createAccountTree(callback: BodyResponseCallback[SchemaAccountTreeResponse]): Unit = js.native
+  def createAccountTree(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountTreeResponse] = js.native
   def createAccountTree(params: ParamsResourceProvisioningCreateaccounttree): GaxiosPromise[SchemaAccountTreeResponse] = js.native
   def createAccountTree(
     params: ParamsResourceProvisioningCreateaccounttree,

@@ -50,22 +50,54 @@ trait SchemaTestSetup extends js.Object {
 
 object SchemaTestSetup {
   @scala.inline
-  def apply(
-    account: SchemaAccount = null,
-    additionalApks: js.Array[SchemaApk] = null,
-    directoriesToPull: js.Array[String] = null,
-    environmentVariables: js.Array[SchemaEnvironmentVariable] = null,
-    filesToPush: js.Array[SchemaDeviceFile] = null,
-    networkProfile: String = null
-  ): SchemaTestSetup = {
+  def apply(): SchemaTestSetup = {
     val __obj = js.Dynamic.literal()
-    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
-    if (additionalApks != null) __obj.updateDynamic("additionalApks")(additionalApks.asInstanceOf[js.Any])
-    if (directoriesToPull != null) __obj.updateDynamic("directoriesToPull")(directoriesToPull.asInstanceOf[js.Any])
-    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
-    if (filesToPush != null) __obj.updateDynamic("filesToPush")(filesToPush.asInstanceOf[js.Any])
-    if (networkProfile != null) __obj.updateDynamic("networkProfile")(networkProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestSetup]
   }
+  @scala.inline
+  implicit class SchemaTestSetupOps[Self <: SchemaTestSetup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccount(value: SchemaAccount): Self = this.set("account", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccount: Self = this.set("account", js.undefined)
+    @scala.inline
+    def setAdditionalApksVarargs(value: SchemaApk*): Self = this.set("additionalApks", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalApks(value: js.Array[SchemaApk]): Self = this.set("additionalApks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalApks: Self = this.set("additionalApks", js.undefined)
+    @scala.inline
+    def setDirectoriesToPullVarargs(value: String*): Self = this.set("directoriesToPull", js.Array(value :_*))
+    @scala.inline
+    def setDirectoriesToPull(value: js.Array[String]): Self = this.set("directoriesToPull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoriesToPull: Self = this.set("directoriesToPull", js.undefined)
+    @scala.inline
+    def setEnvironmentVariablesVarargs(value: SchemaEnvironmentVariable*): Self = this.set("environmentVariables", js.Array(value :_*))
+    @scala.inline
+    def setEnvironmentVariables(value: js.Array[SchemaEnvironmentVariable]): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    @scala.inline
+    def setFilesToPushVarargs(value: SchemaDeviceFile*): Self = this.set("filesToPush", js.Array(value :_*))
+    @scala.inline
+    def setFilesToPush(value: js.Array[SchemaDeviceFile]): Self = this.set("filesToPush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilesToPush: Self = this.set("filesToPush", js.undefined)
+    @scala.inline
+    def setNetworkProfile(value: String): Self = this.set("networkProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkProfile: Self = this.set("networkProfile", js.undefined)
+  }
+  
 }
 

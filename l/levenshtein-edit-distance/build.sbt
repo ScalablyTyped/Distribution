@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "levenshtein-edit-distance"
-version := "2.0-dt-20200529Z-649e75"
-scalaVersion := "2.13.2"
+version := "2.0-dt-20200529Z-3bb20f"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

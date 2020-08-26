@@ -1,48 +1,73 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.BottomProperty
-import typings.csstype.mod.LeftProperty
-import typings.csstype.mod.PositionProperty
-import typings.csstype.mod.RightProperty
-import typings.csstype.mod.TopProperty
-import typings.csstype.mod.ZIndexProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
   extends ZIndexProps[ThemeType]
-     with TopProps[ThemeType, TopProperty[TLengthStyledSystem]]
-     with RightProps[ThemeType, RightProperty[TLengthStyledSystem]]
-     with BottomProps[ThemeType, BottomProperty[TLengthStyledSystem]]
-     with LeftProps[ThemeType, LeftProperty[TLengthStyledSystem]] {
+     with TopProps[
+      ThemeType, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.TopProperty<TLengthStyledSystem> */ js.Any
+    ]
+     with RightProps[
+      ThemeType, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.RightProperty<TLengthStyledSystem> */ js.Any
+    ]
+     with BottomProps[
+      ThemeType, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.BottomProperty<TLengthStyledSystem> */ js.Any
+    ]
+     with LeftProps[
+      ThemeType, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.LeftProperty<TLengthStyledSystem> */ js.Any
+    ] {
   /**
     * The position CSS property specifies how an element is positioned in a document.
     * The top, right, bottom, and left properties determine the final location of positioned elements.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
     */
-  var position: js.UndefOr[ResponsiveValue[PositionProperty, ThemeType]] = js.undefined
+  var position: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.PositionProperty */ _, 
+      ThemeType
+    ]
+  ] = js.native
 }
 
 object PositionProps {
   @scala.inline
-  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
-    bottom: js.UndefOr[Null | (ResponsiveValue[BottomProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
-    left: js.UndefOr[Null | (ResponsiveValue[LeftProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
-    position: js.UndefOr[Null | (ResponsiveValue[PositionProperty, ThemeType])] = js.undefined,
-    right: js.UndefOr[Null | (ResponsiveValue[RightProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
-    top: js.UndefOr[Null | (ResponsiveValue[TopProperty[TLengthStyledSystem], ThemeType])] = js.undefined,
-    zIndex: js.UndefOr[Null | (ResponsiveValue[ZIndexProperty, ThemeType])] = js.undefined
-  ): PositionProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](): PositionProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionProps[ThemeType]]
   }
+  @scala.inline
+  implicit class PositionPropsOps[Self <: PositionProps[_], /* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType] (val x: Self with PositionProps[ThemeType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPositionVarargs(value: (js.Any | Null)*): Self = this.set("position", js.Array(value :_*))
+    @scala.inline
+    def setPosition(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.PositionProperty */ _, 
+          ThemeType
+        ]
+    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setPositionNull: Self = this.set("position", null)
+  }
+  
 }
 

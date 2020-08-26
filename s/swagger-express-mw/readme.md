@@ -12,7 +12,7 @@ Swagger loader and middleware for express
 | Keywords           | swagger, api, apis, connect |
 | # releases         | 1 |
 | # dependents       | 30 |
-| # downloads        | 596894 |
+| # downloads        | 1080475 |
 | # stars            | 6 |
 
 ## Links

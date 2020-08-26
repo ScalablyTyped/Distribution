@@ -14,10 +14,28 @@ trait DescribeTargetHealthOutput extends js.Object {
 
 object DescribeTargetHealthOutput {
   @scala.inline
-  def apply(TargetHealthDescriptions: TargetHealthDescriptions = null): DescribeTargetHealthOutput = {
+  def apply(): DescribeTargetHealthOutput = {
     val __obj = js.Dynamic.literal()
-    if (TargetHealthDescriptions != null) __obj.updateDynamic("TargetHealthDescriptions")(TargetHealthDescriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTargetHealthOutput]
   }
+  @scala.inline
+  implicit class DescribeTargetHealthOutputOps[Self <: DescribeTargetHealthOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetHealthDescriptionsVarargs(value: TargetHealthDescription*): Self = this.set("TargetHealthDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setTargetHealthDescriptions(value: TargetHealthDescriptions): Self = this.set("TargetHealthDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetHealthDescriptions: Self = this.set("TargetHealthDescriptions", js.undefined)
+  }
+  
 }
 

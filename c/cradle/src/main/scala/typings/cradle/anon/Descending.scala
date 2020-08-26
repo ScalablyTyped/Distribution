@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Descending extends js.Object {
-  var descending: js.UndefOr[Boolean] = js.undefined
-  var endkey: js.UndefOr[js.Any] = js.undefined
-  var group: js.UndefOr[Boolean] = js.undefined
-  var include_docs: js.UndefOr[Boolean] = js.undefined
-  var key: js.UndefOr[String] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var reduce: js.UndefOr[Boolean] = js.undefined
-  var startkey: js.UndefOr[js.Any] = js.undefined
+  var descending: js.UndefOr[Boolean] = js.native
+  var endkey: js.UndefOr[js.Any] = js.native
+  var group: js.UndefOr[Boolean] = js.native
+  var include_docs: js.UndefOr[Boolean] = js.native
+  var key: js.UndefOr[String] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var reduce: js.UndefOr[Boolean] = js.native
+  var startkey: js.UndefOr[js.Any] = js.native
 }
 
 object Descending {
   @scala.inline
-  def apply(
-    descending: js.UndefOr[Boolean] = js.undefined,
-    endkey: js.Any = null,
-    group: js.UndefOr[Boolean] = js.undefined,
-    include_docs: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    reduce: js.UndefOr[Boolean] = js.undefined,
-    startkey: js.Any = null
-  ): Descending = {
+  def apply(): Descending = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.get.asInstanceOf[js.Any])
-    if (endkey != null) __obj.updateDynamic("endkey")(endkey.asInstanceOf[js.Any])
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reduce)) __obj.updateDynamic("reduce")(reduce.get.asInstanceOf[js.Any])
-    if (startkey != null) __obj.updateDynamic("startkey")(startkey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Descending]
   }
+  @scala.inline
+  implicit class DescendingOps[Self <: Descending] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescending(value: Boolean): Self = this.set("descending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescending: Self = this.set("descending", js.undefined)
+    @scala.inline
+    def setEndkey(value: js.Any): Self = this.set("endkey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndkey: Self = this.set("endkey", js.undefined)
+    @scala.inline
+    def setGroup(value: Boolean): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setInclude_docs(value: Boolean): Self = this.set("include_docs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude_docs: Self = this.set("include_docs", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setReduce(value: Boolean): Self = this.set("reduce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReduce: Self = this.set("reduce", js.undefined)
+    @scala.inline
+    def setStartkey(value: js.Any): Self = this.set("startkey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartkey: Self = this.set("startkey", js.undefined)
+  }
+  
 }
 

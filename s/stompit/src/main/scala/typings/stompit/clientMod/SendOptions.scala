@@ -1,67 +1,39 @@
 package typings.stompit.clientMod
 
-import typings.node.BufferEncoding
-import typings.node.anon.Chunk
-import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SendOptions extends WritableOptions {
-  def onError(err: Error): Unit
-  def onReceipt(): Unit
+  def onError(err: Error): Unit = js.native
+  def onReceipt(): Unit = js.native
 }
 
 object SendOptions {
   @scala.inline
-  def apply(
-    onError: Error => Unit,
-    onReceipt: () => Unit,
-    autoDestroy: js.UndefOr[Boolean] = js.undefined,
-    decodeStrings: js.UndefOr[Boolean] = js.undefined,
-    defaultEncoding: BufferEncoding = null,
-    destroy: js.ThisFunction2[
-      /* this */ Writable, 
-      /* error */ Error | Null, 
-      /* callback */ js.Function1[/* error */ Error | Null, Unit], 
-      Unit
-    ] = null,
-    emitClose: js.UndefOr[Boolean] = js.undefined,
-    `final`: js.ThisFunction1[
-      /* this */ Writable, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
-      Unit
-    ] = null,
-    highWaterMark: js.UndefOr[Double] = js.undefined,
-    objectMode: js.UndefOr[Boolean] = js.undefined,
-    write: js.ThisFunction3[
-      /* this */ Writable, 
-      /* chunk */ js.Any, 
-      /* encoding */ BufferEncoding, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
-      Unit
-    ] = null,
-    writev: js.ThisFunction2[
-      /* this */ Writable, 
-      /* chunks */ js.Array[Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
-      Unit
-    ] = null
-  ): SendOptions = {
+  def apply(onError: Error => Unit, onReceipt: () => Unit): SendOptions = {
     val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError), onReceipt = js.Any.fromFunction0(onReceipt))
-    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.get.asInstanceOf[js.Any])
-    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
-    if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose.get.asInstanceOf[js.Any])
-    if (`final` != null) __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
-    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.get.asInstanceOf[js.Any])
-    if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
-    if (writev != null) __obj.updateDynamic("writev")(writev.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendOptions]
   }
+  @scala.inline
+  implicit class SendOptionsOps[Self <: SendOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnError(value: Error => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOnReceipt(value: () => Unit): Self = this.set("onReceipt", js.Any.fromFunction0(value))
+  }
+  
 }
 

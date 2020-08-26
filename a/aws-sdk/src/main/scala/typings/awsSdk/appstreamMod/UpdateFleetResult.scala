@@ -14,10 +14,26 @@ trait UpdateFleetResult extends js.Object {
 
 object UpdateFleetResult {
   @scala.inline
-  def apply(Fleet: Fleet = null): UpdateFleetResult = {
+  def apply(): UpdateFleetResult = {
     val __obj = js.Dynamic.literal()
-    if (Fleet != null) __obj.updateDynamic("Fleet")(Fleet.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFleetResult]
   }
+  @scala.inline
+  implicit class UpdateFleetResultOps[Self <: UpdateFleetResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleet(value: Fleet): Self = this.set("Fleet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleet: Self = this.set("Fleet", js.undefined)
+  }
+  
 }
 

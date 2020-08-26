@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "three" : "0.114.0"
+      "three" : "0.119.1"
     }
   ],
   "test-dependencies" : [
     {
-      "three" : "0.114.0"
+      "three" : "0.119.1"
     }
   ],
   "compile-devDependencies" : [

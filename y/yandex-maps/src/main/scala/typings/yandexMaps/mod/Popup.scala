@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 class Popup[T] protected () extends IPopup[T] {
   def this(map: Map_) = this()
   def this(map: Map_, options: IPopupOptions) = this()
-  /* CompleteClass */
-  override var events: IEventManager = js.native
-  /* CompleteClass */
-  override var options: IOptionManager = js.native
 }
 

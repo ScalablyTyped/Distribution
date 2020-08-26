@@ -2,7 +2,7 @@ package typings.rbx
 
 import typings.rbx.anon.AsElementType
 import typings.rbx.anon.PickBadgeHelpersPropsFloa
-import typings.rbx.anon.`7`
+import typings.rbx.anon.`6`
 import typings.rbx.breadcrumbBreadcrumbMod.BreadcrumbModifierProps
 import typings.rbx.breadcrumbItemMod.BreadcrumbItemProps
 import typings.rbx.exoticMod.ForwardRefAsExoticComponent
@@ -69,7 +69,7 @@ object breadcrumbMod extends js.Object {
       ]) = js.native
     var displayName: js.UndefOr[String] = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: `7`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with BreadcrumbModifierProps with (Pick[
+      props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with BreadcrumbModifierProps with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 

@@ -19,14 +19,32 @@ trait SchemaDealTermsNonGuaranteedAuctionTerms extends js.Object {
 
 object SchemaDealTermsNonGuaranteedAuctionTerms {
   @scala.inline
-  def apply(
-    autoOptimizePrivateAuction: js.UndefOr[Boolean] = js.undefined,
-    reservePricePerBuyers: js.Array[SchemaPricePerBuyer] = null
-  ): SchemaDealTermsNonGuaranteedAuctionTerms = {
+  def apply(): SchemaDealTermsNonGuaranteedAuctionTerms = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoOptimizePrivateAuction)) __obj.updateDynamic("autoOptimizePrivateAuction")(autoOptimizePrivateAuction.get.asInstanceOf[js.Any])
-    if (reservePricePerBuyers != null) __obj.updateDynamic("reservePricePerBuyers")(reservePricePerBuyers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDealTermsNonGuaranteedAuctionTerms]
   }
+  @scala.inline
+  implicit class SchemaDealTermsNonGuaranteedAuctionTermsOps[Self <: SchemaDealTermsNonGuaranteedAuctionTerms] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoOptimizePrivateAuction(value: Boolean): Self = this.set("autoOptimizePrivateAuction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoOptimizePrivateAuction: Self = this.set("autoOptimizePrivateAuction", js.undefined)
+    @scala.inline
+    def setReservePricePerBuyersVarargs(value: SchemaPricePerBuyer*): Self = this.set("reservePricePerBuyers", js.Array(value :_*))
+    @scala.inline
+    def setReservePricePerBuyers(value: js.Array[SchemaPricePerBuyer]): Self = this.set("reservePricePerBuyers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservePricePerBuyers: Self = this.set("reservePricePerBuyers", js.undefined)
+  }
+  
 }
 

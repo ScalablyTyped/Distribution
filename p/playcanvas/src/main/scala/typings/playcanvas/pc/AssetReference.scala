@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 /**
   * An object that manages the case where an object holds a reference to an asset and needs to be notified when
-  changes occur in the asset. e.g. notifications include load, add and remove events.
+  * changes occur in the asset. e.g. notifications include load, add and remove events.
   * @example
   * var reference = new pc.AssetReference('textureAsset', this, this.app.assets, {
-  load: this.onTextureAssetLoad,
-  add: this.onTextureAssetAdd,
-  remove: this.onTextureAssetRemove
-  }, this);
-  reference.id = this.textureAsset.id;
+  *     load: this.onTextureAssetLoad,
+  *     add: this.onTextureAssetAdd,
+  *     remove: this.onTextureAssetRemove
+  * }, this);
+  * reference.id = this.textureAsset.id;
   * @property id - Get or set the asset id which this references. One of either id or url must be set to initialize an asset reference.
   * @property url - Get or set the asset url which this references. One of either id or url must be called to initialize an asset reference.
   * @param propertyName - The name of the property that the asset is stored under, passed into callbacks to enable updating.
@@ -25,15 +25,16 @@ import scala.scalajs.js.annotation._
   * @param [callbacks.remove] - The function called when the asset is remove from the registry remove(propertyName, parent, asset).
   * @param [scope] - The scope to call the callbacks in
   */
+@js.native
 trait AssetReference extends js.Object {
   /**
     * Get or set the asset id which this references. One of either id or url must be set to initialize an asset reference.
     */
-  var id: Double
+  var id: Double = js.native
   /**
     * Get or set the asset url which this references. One of either id or url must be called to initialize an asset reference.
     */
-  var url: String
+  var url: String = js.native
 }
 
 object AssetReference {
@@ -42,5 +43,22 @@ object AssetReference {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetReference]
   }
+  @scala.inline
+  implicit class AssetReferenceOps[Self <: AssetReference] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+  }
+  
 }
 

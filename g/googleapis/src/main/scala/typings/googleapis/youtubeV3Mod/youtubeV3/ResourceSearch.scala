@@ -60,6 +60,7 @@ class ResourceSearch protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSearchListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSearchListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchListResponse] = js.native
   def list(params: ParamsResourceSearchList): GaxiosPromise[SchemaSearchListResponse] = js.native
   def list(params: ParamsResourceSearchList, callback: BodyResponseCallback[SchemaSearchListResponse]): Unit = js.native
   def list(

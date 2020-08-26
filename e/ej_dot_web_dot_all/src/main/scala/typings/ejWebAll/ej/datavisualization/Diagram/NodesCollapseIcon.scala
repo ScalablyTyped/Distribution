@@ -4,69 +4,100 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NodesCollapseIcon extends js.Object {
   /** Sets the border color for collapse icon of node
     * @Default {black}
     */
-  var borderColor: js.UndefOr[String] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
   /** Sets the border width for collapse icon of node
     * @Default {1}
     */
-  var borderWidth: js.UndefOr[Double] = js.undefined
+  var borderWidth: js.UndefOr[Double] = js.native
   /** Sets the fill color for collapse icon of node
     * @Default {white}
     */
-  var fillColor: js.UndefOr[String] = js.undefined
+  var fillColor: js.UndefOr[String] = js.native
   /** Defines the height for collapse icon of node
     * @Default {15}
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /** Sets the horizontal alignment of the icon.
     * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
     */
-  var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
+  var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.native
   /** To set the margin for the collapse icon of node
     * @Default {ej.datavisualization.Diagram.Margin()}
     */
-  var margin: js.UndefOr[js.Any] = js.undefined
+  var margin: js.UndefOr[js.Any] = js.native
   /** Sets the fraction/ratio(relative to node) that defines the position of the icon
     * @Default {ej.datavisualization.Diagram.Point(0.5, 1)}
     */
-  var offset: js.UndefOr[js.Any] = js.undefined
+  var offset: js.UndefOr[js.Any] = js.native
   /** Defines the shape of the collapsed state of the node.
     * @Default {ej.datavisualization.Diagram.IconShapes.None}
     */
-  var shape: js.UndefOr[IconShapes | String] = js.undefined
+  var shape: js.UndefOr[IconShapes | String] = js.native
   /** Sets the vertical alignment of the icon.
     * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
     */
-  var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
+  var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.native
 }
 
 object NodesCollapseIcon {
   @scala.inline
-  def apply(
-    borderColor: String = null,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    fillColor: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    horizontalAlignment: HorizontalAlignment | String = null,
-    margin: js.Any = null,
-    offset: js.Any = null,
-    shape: IconShapes | String = null,
-    verticalAlignment: VerticalAlignment | String = null
-  ): NodesCollapseIcon = {
+  def apply(): NodesCollapseIcon = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesCollapseIcon]
   }
+  @scala.inline
+  implicit class NodesCollapseIconOps[Self <: NodesCollapseIcon] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setFillColor(value: String): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHorizontalAlignment(value: HorizontalAlignment | String): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    @scala.inline
+    def setMargin(value: js.Any): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setOffset(value: js.Any): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setShape(value: IconShapes | String): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setVerticalAlignment(value: VerticalAlignment | String): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+  }
+  
 }
 

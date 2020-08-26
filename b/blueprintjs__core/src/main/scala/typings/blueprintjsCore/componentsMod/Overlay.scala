@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 class Overlay ()
   extends typings.blueprintjsCore.overlayMod.Overlay {
   def this(props: IOverlayProps) = this()
+  def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
   def this(props: IOverlayProps, context: js.Any) = this()
 }
 

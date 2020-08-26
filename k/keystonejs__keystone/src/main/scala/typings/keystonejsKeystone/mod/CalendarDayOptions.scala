@@ -6,43 +6,49 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.keystonejsKeystone.mod.AllFieldsOptions because Already inherited */ trait CalendarDayOptions extends BaseFieldOptions {
-  var format: js.UndefOr[String] = js.undefined
-  var yearPickerType: js.UndefOr[String] = js.undefined
-  var yearRangeFrom: js.UndefOr[Double] = js.undefined
-  var yearRangeTo: js.UndefOr[Double] = js.undefined
+- typings.keystonejsKeystone.mod.AllFieldsOptions because Already inherited */ @js.native
+trait CalendarDayOptions extends BaseFieldOptions {
+  var format: js.UndefOr[String] = js.native
+  var yearPickerType: js.UndefOr[String] = js.native
+  var yearRangeFrom: js.UndefOr[Double] = js.native
+  var yearRangeTo: js.UndefOr[Double] = js.native
 }
 
 object CalendarDayOptions {
   @scala.inline
-  def apply(
-    `type`: FieldType,
-    access: Access = null,
-    defaultValue: Boolean | DefaultValueFunction = null,
-    format: String = null,
-    hooks: Hooks = null,
-    isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    schemaDoc: String = null,
-    yearPickerType: String = null,
-    yearRangeFrom: js.UndefOr[Double] = js.undefined,
-    yearRangeTo: js.UndefOr[Double] = js.undefined
-  ): CalendarDayOptions = {
+  def apply(`type`: FieldType): CalendarDayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
-    if (yearPickerType != null) __obj.updateDynamic("yearPickerType")(yearPickerType.asInstanceOf[js.Any])
-    if (!js.isUndefined(yearRangeFrom)) __obj.updateDynamic("yearRangeFrom")(yearRangeFrom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yearRangeTo)) __obj.updateDynamic("yearRangeTo")(yearRangeTo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarDayOptions]
   }
+  @scala.inline
+  implicit class CalendarDayOptionsOps[Self <: CalendarDayOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setYearPickerType(value: String): Self = this.set("yearPickerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYearPickerType: Self = this.set("yearPickerType", js.undefined)
+    @scala.inline
+    def setYearRangeFrom(value: Double): Self = this.set("yearRangeFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYearRangeFrom: Self = this.set("yearRangeFrom", js.undefined)
+    @scala.inline
+    def setYearRangeTo(value: Double): Self = this.set("yearRangeTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYearRangeTo: Self = this.set("yearRangeTo", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Like Underscore, but lazier
 | Keywords           | lazy, functional, performance, speed, util |
 | # releases         | 2 |
 | # dependents       | 73 |
-| # downloads        | 608721 |
+| # downloads        | 612628 |
 | # stars            | 18 |
 
 ## Links

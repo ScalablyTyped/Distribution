@@ -30,20 +30,42 @@ trait LogSettingsResponse extends js.Object {
 
 object LogSettingsResponse {
   @scala.inline
-  def apply(
-    destination: Destination = null,
-    kmsKeyArn: KmsKeyArn = null,
-    logType: LogType = null,
-    resourceArn: ResourceArn = null,
-    resourcePrefix: ResourcePrefix = null
-  ): LogSettingsResponse = {
+  def apply(): LogSettingsResponse = {
     val __obj = js.Dynamic.literal()
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
-    if (logType != null) __obj.updateDynamic("logType")(logType.asInstanceOf[js.Any])
-    if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
-    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogSettingsResponse]
   }
+  @scala.inline
+  implicit class LogSettingsResponseOps[Self <: LogSettingsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestination(value: Destination): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setKmsKeyArn(value: KmsKeyArn): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+    @scala.inline
+    def setLogType(value: LogType): Self = this.set("logType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogType: Self = this.set("logType", js.undefined)
+    @scala.inline
+    def setResourceArn(value: ResourceArn): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("resourceArn", js.undefined)
+    @scala.inline
+    def setResourcePrefix(value: ResourcePrefix): Self = this.set("resourcePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcePrefix: Self = this.set("resourcePrefix", js.undefined)
+  }
+  
 }
 

@@ -62,36 +62,74 @@ trait RaidArray extends js.Object {
 
 object RaidArray {
   @scala.inline
-  def apply(
-    AvailabilityZone: String = null,
-    CreatedAt: DateTime = null,
-    Device: String = null,
-    InstanceId: String = null,
-    Iops: js.UndefOr[Integer] = js.undefined,
-    MountPoint: String = null,
-    Name: String = null,
-    NumberOfDisks: js.UndefOr[Integer] = js.undefined,
-    RaidArrayId: String = null,
-    RaidLevel: js.UndefOr[Integer] = js.undefined,
-    Size: js.UndefOr[Integer] = js.undefined,
-    StackId: String = null,
-    VolumeType: String = null
-  ): RaidArray = {
+  def apply(): RaidArray = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (Device != null) __obj.updateDynamic("Device")(Device.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops.get.asInstanceOf[js.Any])
-    if (MountPoint != null) __obj.updateDynamic("MountPoint")(MountPoint.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfDisks)) __obj.updateDynamic("NumberOfDisks")(NumberOfDisks.get.asInstanceOf[js.Any])
-    if (RaidArrayId != null) __obj.updateDynamic("RaidArrayId")(RaidArrayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(RaidLevel)) __obj.updateDynamic("RaidLevel")(RaidLevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
-    if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaidArray]
   }
+  @scala.inline
+  implicit class RaidArrayOps[Self <: RaidArray] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: DateTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setDevice(value: String): Self = this.set("Device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevice: Self = this.set("Device", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setIops(value: Integer): Self = this.set("Iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIops: Self = this.set("Iops", js.undefined)
+    @scala.inline
+    def setMountPoint(value: String): Self = this.set("MountPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountPoint: Self = this.set("MountPoint", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNumberOfDisks(value: Integer): Self = this.set("NumberOfDisks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfDisks: Self = this.set("NumberOfDisks", js.undefined)
+    @scala.inline
+    def setRaidArrayId(value: String): Self = this.set("RaidArrayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaidArrayId: Self = this.set("RaidArrayId", js.undefined)
+    @scala.inline
+    def setRaidLevel(value: Integer): Self = this.set("RaidLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaidLevel: Self = this.set("RaidLevel", js.undefined)
+    @scala.inline
+    def setSize(value: Integer): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("Size", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+    @scala.inline
+    def setVolumeType(value: String): Self = this.set("VolumeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeType: Self = this.set("VolumeType", js.undefined)
+  }
+  
 }
 

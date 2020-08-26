@@ -48,29 +48,60 @@ trait Ingestion extends js.Object {
 
 object Ingestion {
   @scala.inline
-  def apply(
-    Arn: Arn,
-    CreatedTime: timestamp,
-    IngestionStatus: IngestionStatus,
-    ErrorInfo: ErrorInfo = null,
-    IngestionId: IngestionId = null,
-    IngestionSizeInBytes: js.UndefOr[long] = js.undefined,
-    IngestionTimeInSeconds: js.UndefOr[long] = js.undefined,
-    QueueInfo: QueueInfo = null,
-    RequestSource: IngestionRequestSource = null,
-    RequestType: IngestionRequestType = null,
-    RowInfo: RowInfo = null
-  ): Ingestion = {
+  def apply(Arn: Arn, CreatedTime: timestamp, IngestionStatus: IngestionStatus): Ingestion = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreatedTime = CreatedTime.asInstanceOf[js.Any], IngestionStatus = IngestionStatus.asInstanceOf[js.Any])
-    if (ErrorInfo != null) __obj.updateDynamic("ErrorInfo")(ErrorInfo.asInstanceOf[js.Any])
-    if (IngestionId != null) __obj.updateDynamic("IngestionId")(IngestionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(IngestionSizeInBytes)) __obj.updateDynamic("IngestionSizeInBytes")(IngestionSizeInBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IngestionTimeInSeconds)) __obj.updateDynamic("IngestionTimeInSeconds")(IngestionTimeInSeconds.get.asInstanceOf[js.Any])
-    if (QueueInfo != null) __obj.updateDynamic("QueueInfo")(QueueInfo.asInstanceOf[js.Any])
-    if (RequestSource != null) __obj.updateDynamic("RequestSource")(RequestSource.asInstanceOf[js.Any])
-    if (RequestType != null) __obj.updateDynamic("RequestType")(RequestType.asInstanceOf[js.Any])
-    if (RowInfo != null) __obj.updateDynamic("RowInfo")(RowInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ingestion]
   }
+  @scala.inline
+  implicit class IngestionOps[Self <: Ingestion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreatedTime(value: timestamp): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIngestionStatus(value: IngestionStatus): Self = this.set("IngestionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setErrorInfo(value: ErrorInfo): Self = this.set("ErrorInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorInfo: Self = this.set("ErrorInfo", js.undefined)
+    @scala.inline
+    def setIngestionId(value: IngestionId): Self = this.set("IngestionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngestionId: Self = this.set("IngestionId", js.undefined)
+    @scala.inline
+    def setIngestionSizeInBytes(value: long): Self = this.set("IngestionSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngestionSizeInBytes: Self = this.set("IngestionSizeInBytes", js.undefined)
+    @scala.inline
+    def setIngestionTimeInSeconds(value: long): Self = this.set("IngestionTimeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngestionTimeInSeconds: Self = this.set("IngestionTimeInSeconds", js.undefined)
+    @scala.inline
+    def setQueueInfo(value: QueueInfo): Self = this.set("QueueInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueueInfo: Self = this.set("QueueInfo", js.undefined)
+    @scala.inline
+    def setRequestSource(value: IngestionRequestSource): Self = this.set("RequestSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestSource: Self = this.set("RequestSource", js.undefined)
+    @scala.inline
+    def setRequestType(value: IngestionRequestType): Self = this.set("RequestType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestType: Self = this.set("RequestType", js.undefined)
+    @scala.inline
+    def setRowInfo(value: RowInfo): Self = this.set("RowInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowInfo: Self = this.set("RowInfo", js.undefined)
+  }
+  
 }
 

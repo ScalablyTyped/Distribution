@@ -8,9 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RequestOptions extends js.Object {
-  var agent: js.UndefOr[Http | `false`] = js.undefined
-  var baseUrl: js.UndefOr[String] = js.undefined
+  var agent: js.UndefOr[Http | `false`] = js.native
+  var baseUrl: js.UndefOr[String] = js.native
   var beforeRedirect: js.UndefOr[
     js.Function6[
       /* redirectMethod */ String, 
@@ -21,62 +22,108 @@ trait RequestOptions extends js.Object {
       /* next */ js.Function0[js.Object], 
       Unit
     ]
-  ] = js.undefined
-  var ciphers: js.UndefOr[String] = js.undefined
-  var downstreamRes: js.UndefOr[js.Any] = js.undefined
-  var events: js.UndefOr[Boolean] = js.undefined
-  var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var maxBytes: js.UndefOr[Double] = js.undefined
-  var payload: js.UndefOr[js.Any] = js.undefined
-  var redirect303: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var ciphers: js.UndefOr[String] = js.native
+  var downstreamRes: js.UndefOr[js.Any] = js.native
+  var events: js.UndefOr[Boolean] = js.native
+  var headers: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var maxBytes: js.UndefOr[Double] = js.native
+  var payload: js.UndefOr[js.Any] = js.native
+  var redirect303: js.UndefOr[Boolean] = js.native
   var redirected: js.UndefOr[
     js.Function3[/* statusCode */ Double, /* location */ String, /* req */ ClientRequest, Unit]
-  ] = js.undefined
-  var redirects: js.UndefOr[Double] = js.undefined
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
-  var secureProtocol: js.UndefOr[String] = js.undefined
-  var socketPath: js.UndefOr[String] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var redirects: js.UndefOr[Double] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+  var secureProtocol: js.UndefOr[String] = js.native
+  var socketPath: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object RequestOptions {
   @scala.inline
-  def apply(
-    agent: Http | `false` = null,
-    baseUrl: String = null,
-    beforeRedirect: (/* redirectMethod */ String, /* statusCode */ Double, /* location */ String, /* resHeaders */ StringDictionary[js.Any], /* redirectOptions */ js.Any, /* next */ js.Function0[js.Object]) => Unit = null,
-    ciphers: String = null,
-    downstreamRes: js.Any = null,
-    events: js.UndefOr[Boolean] = js.undefined,
-    headers: StringDictionary[js.Any] = null,
-    maxBytes: js.UndefOr[Double] = js.undefined,
-    payload: js.Any = null,
-    redirect303: js.UndefOr[Boolean] = js.undefined,
-    redirected: (/* statusCode */ Double, /* location */ String, /* req */ ClientRequest) => Unit = null,
-    redirects: js.UndefOr[Double] = js.undefined,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    secureProtocol: String = null,
-    socketPath: String = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): RequestOptions = {
+  def apply(): RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
-    if (beforeRedirect != null) __obj.updateDynamic("beforeRedirect")(js.Any.fromFunction6(beforeRedirect))
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (downstreamRes != null) __obj.updateDynamic("downstreamRes")(downstreamRes.asInstanceOf[js.Any])
-    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBytes)) __obj.updateDynamic("maxBytes")(maxBytes.get.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(redirect303)) __obj.updateDynamic("redirect303")(redirect303.get.asInstanceOf[js.Any])
-    if (redirected != null) __obj.updateDynamic("redirected")(js.Any.fromFunction3(redirected))
-    if (!js.isUndefined(redirects)) __obj.updateDynamic("redirects")(redirects.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol.asInstanceOf[js.Any])
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
+  @scala.inline
+  implicit class RequestOptionsOps[Self <: RequestOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgent(value: Http | `false`): Self = this.set("agent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgent: Self = this.set("agent", js.undefined)
+    @scala.inline
+    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    @scala.inline
+    def setBeforeRedirect(
+      value: (/* redirectMethod */ String, /* statusCode */ Double, /* location */ String, /* resHeaders */ StringDictionary[js.Any], /* redirectOptions */ js.Any, /* next */ js.Function0[js.Object]) => Unit
+    ): Self = this.set("beforeRedirect", js.Any.fromFunction6(value))
+    @scala.inline
+    def deleteBeforeRedirect: Self = this.set("beforeRedirect", js.undefined)
+    @scala.inline
+    def setCiphers(value: String): Self = this.set("ciphers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCiphers: Self = this.set("ciphers", js.undefined)
+    @scala.inline
+    def setDownstreamRes(value: js.Any): Self = this.set("downstreamRes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownstreamRes: Self = this.set("downstreamRes", js.undefined)
+    @scala.inline
+    def setEvents(value: Boolean): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setHeaders(value: StringDictionary[js.Any]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setMaxBytes(value: Double): Self = this.set("maxBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBytes: Self = this.set("maxBytes", js.undefined)
+    @scala.inline
+    def setPayload(value: js.Any): Self = this.set("payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("payload", js.undefined)
+    @scala.inline
+    def setRedirect303(value: Boolean): Self = this.set("redirect303", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirect303: Self = this.set("redirect303", js.undefined)
+    @scala.inline
+    def setRedirected(value: (/* statusCode */ Double, /* location */ String, /* req */ ClientRequest) => Unit): Self = this.set("redirected", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteRedirected: Self = this.set("redirected", js.undefined)
+    @scala.inline
+    def setRedirects(value: Double): Self = this.set("redirects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirects: Self = this.set("redirects", js.undefined)
+    @scala.inline
+    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
+    @scala.inline
+    def setSecureProtocol(value: String): Self = this.set("secureProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecureProtocol: Self = this.set("secureProtocol", js.undefined)
+    @scala.inline
+    def setSocketPath(value: String): Self = this.set("socketPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocketPath: Self = this.set("socketPath", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

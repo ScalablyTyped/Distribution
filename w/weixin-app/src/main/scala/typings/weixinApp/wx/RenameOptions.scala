@@ -4,27 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RenameOptions
   extends BaseOptions[js.Any, js.Any] {
    // 源文件路径，可以是普通文件或目录
-  var newPath: String
-  var oldPath: String
+  var newPath: String = js.native
+  var oldPath: String = js.native
 }
 
 object RenameOptions {
   @scala.inline
-  def apply(
-    newPath: String,
-    oldPath: String,
-    complete: /* res */ js.Any => Unit = null,
-    fail: js.Any => Unit = null,
-    success: js.Any => Unit = null
-  ): RenameOptions = {
+  def apply(newPath: String, oldPath: String): RenameOptions = {
     val __obj = js.Dynamic.literal(newPath = newPath.asInstanceOf[js.Any], oldPath = oldPath.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[RenameOptions]
   }
+  @scala.inline
+  implicit class RenameOptionsOps[Self <: RenameOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewPath(value: String): Self = this.set("newPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOldPath(value: String): Self = this.set("oldPath", value.asInstanceOf[js.Any])
+  }
+  
 }
 

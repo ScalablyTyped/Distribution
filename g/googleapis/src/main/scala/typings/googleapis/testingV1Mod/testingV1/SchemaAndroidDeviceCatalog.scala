@@ -25,16 +25,38 @@ trait SchemaAndroidDeviceCatalog extends js.Object {
 
 object SchemaAndroidDeviceCatalog {
   @scala.inline
-  def apply(
-    models: js.Array[SchemaAndroidModel] = null,
-    runtimeConfiguration: SchemaAndroidRuntimeConfiguration = null,
-    versions: js.Array[SchemaAndroidVersion] = null
-  ): SchemaAndroidDeviceCatalog = {
+  def apply(): SchemaAndroidDeviceCatalog = {
     val __obj = js.Dynamic.literal()
-    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
-    if (runtimeConfiguration != null) __obj.updateDynamic("runtimeConfiguration")(runtimeConfiguration.asInstanceOf[js.Any])
-    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAndroidDeviceCatalog]
   }
+  @scala.inline
+  implicit class SchemaAndroidDeviceCatalogOps[Self <: SchemaAndroidDeviceCatalog] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setModelsVarargs(value: SchemaAndroidModel*): Self = this.set("models", js.Array(value :_*))
+    @scala.inline
+    def setModels(value: js.Array[SchemaAndroidModel]): Self = this.set("models", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModels: Self = this.set("models", js.undefined)
+    @scala.inline
+    def setRuntimeConfiguration(value: SchemaAndroidRuntimeConfiguration): Self = this.set("runtimeConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeConfiguration: Self = this.set("runtimeConfiguration", js.undefined)
+    @scala.inline
+    def setVersionsVarargs(value: SchemaAndroidVersion*): Self = this.set("versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: js.Array[SchemaAndroidVersion]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersions: Self = this.set("versions", js.undefined)
+  }
+  
 }
 

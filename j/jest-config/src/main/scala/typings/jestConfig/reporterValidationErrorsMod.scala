@@ -1,7 +1,7 @@
 package typings.jestConfig
 
 import typings.jestTypes.configMod.ReporterConfig
-import typings.jestValidate.utilsMod.ValidationError
+import typings.jestValidate.mod.ValidationError
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

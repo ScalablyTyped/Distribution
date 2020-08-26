@@ -1,7 +1,7 @@
 
 # Scala.js typings for bech32
 
-Typings are for version 1.1
+Typings are for version 1.1.4
 
 ## Library description:
 Bech32 encoding / decoding
@@ -10,9 +10,9 @@ Bech32 encoding / decoding
 | ------------------ | :-------------: |
 | Full name          | bech32 |
 | Keywords           | base32, bech32, bitcoin, crypto, crytography, decode, decoding, encode, encoding |
-| # releases         | 4 |
-| # dependents       | 156 |
-| # downloads        | 1253625 |
+| # releases         | 1 |
+| # dependents       | 163 |
+| # downloads        | 1306543 |
 | # stars            | 0 |
 
 ## Links
@@ -24,7 +24,7 @@ Bech32 encoding / decoding
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

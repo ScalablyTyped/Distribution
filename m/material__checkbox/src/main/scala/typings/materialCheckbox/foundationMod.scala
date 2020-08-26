@@ -1,6 +1,11 @@
 package typings.materialCheckbox
 
+import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialCheckbox.adapterMod.MDCCheckboxAdapter
+import typings.materialCheckbox.anon.ANIMCHECKEDINDETERMINATE
+import typings.materialCheckbox.anon.ANIMENDLATCHMS
+import typings.materialCheckbox.anon.ARIACHECKEDATTR
+import typings.materialCheckbox.anon.PartialMDCCheckboxAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,30 +14,40 @@ import scala.scalajs.js.annotation._
 @js.native
 object foundationMod extends js.Object {
   @js.native
-  trait MDCCheckboxFoundation
-    extends typings.materialBase.foundationMod.default[MDCCheckboxAdapter] {
-    def getValue(): String = js.native
+  class MDCCheckboxFoundation () extends MDCFoundation[MDCCheckboxAdapter] {
+    def this(adapter: PartialMDCCheckboxAdapter) = this()
+    /**
+      * Handles the animationend event for the checkbox
+      */
     def handleAnimationEnd(): Unit = js.native
+    /**
+      * Handles the change event for the checkbox
+      */
     def handleChange(): Unit = js.native
-    def isChecked(): Boolean = js.native
-    def isDisabled(): Boolean = js.native
-    def isIndeterminate(): Boolean = js.native
-    def setChecked(checked: Boolean): Unit = js.native
     def setDisabled(disabled: Boolean): Unit = js.native
-    def setIndeterminate(indeterminate: Boolean): Unit = js.native
-    def setValue(value: String): Unit = js.native
   }
   
   @js.native
-  class default () extends MDCCheckboxFoundation
+  class default () extends MDCCheckboxFoundation {
+    def this(adapter: PartialMDCCheckboxAdapter) = this()
+  }
+  
+  /* static members */
+  @js.native
+  object MDCCheckboxFoundation extends js.Object {
+    def cssClasses: ANIMCHECKEDINDETERMINATE = js.native
+    def defaultAdapter: MDCCheckboxAdapter = js.native
+    def numbers: ANIMENDLATCHMS = js.native
+    def strings: ARIACHECKEDATTR = js.native
+  }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    val cssClasses: typings.materialCheckbox.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCCheckboxAdapter = js.native
-    val numbers: typings.materialCheckbox.constantsMod.numbers = js.native
-    val strings: typings.materialCheckbox.constantsMod.strings = js.native
+    def cssClasses: ANIMCHECKEDINDETERMINATE = js.native
+    def defaultAdapter: MDCCheckboxAdapter = js.native
+    def numbers: ANIMENDLATCHMS = js.native
+    def strings: ARIACHECKEDATTR = js.native
   }
   
 }

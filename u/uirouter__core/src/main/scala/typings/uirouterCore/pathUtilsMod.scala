@@ -75,7 +75,7 @@ object pathUtilsMod extends js.Object {
     def matching(pathA: js.Array[PathNode], pathB: js.Array[PathNode], paramsFn: GetParamsFn): js.Array[PathNode] = js.native
     def nonDynamicParams(node: PathNode): js.Array[Param] = js.native
     /** Gets the raw parameter values from a path */
-    def paramValues(path: js.Array[PathNode]): js.Object = js.native
+    def paramValues(path: js.Array[PathNode]): js.Any = js.native
     /**
       * Return a subpath of a path, which stops at the first matching node
       *

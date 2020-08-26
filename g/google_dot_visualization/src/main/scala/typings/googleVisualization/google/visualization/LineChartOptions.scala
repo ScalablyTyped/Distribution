@@ -9,135 +9,232 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LineChartOptions extends js.Object {
-  var aggregationTarget: js.UndefOr[String] = js.undefined
-  var animation: js.UndefOr[TransitionAnimation] = js.undefined
-  var annotations: js.UndefOr[ChartAnnotations] = js.undefined
-  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.undefined
-  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
-  var chartArea: js.UndefOr[ChartArea] = js.undefined
-  var colors: js.UndefOr[js.Array[String]] = js.undefined
-  var crosshair: js.UndefOr[ChartCrosshair] = js.undefined
-  var curveType: js.UndefOr[none | function] = js.undefined
-  var dataOpacity: js.UndefOr[Double] = js.undefined
-  var domainAxis: js.UndefOr[Type] = js.undefined
-  var enableInteractivity: js.UndefOr[Boolean] = js.undefined
-  var explorer: js.UndefOr[ChartExplorer] = js.undefined
-  var focusTarget: js.UndefOr[String] = js.undefined
-  var fontName: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[Double] = js.undefined
-  var hAxis: js.UndefOr[ChartAxis] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var interpolateNulls: js.UndefOr[Boolean] = js.undefined
-  var interval: js.UndefOr[js.Any] = js.undefined
-  var intervals: js.UndefOr[Style] = js.undefined
-  var legend: js.UndefOr[ChartLegend | none] = js.undefined
-  var lineWidth: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var orientation: js.UndefOr[ChartOrientation] = js.undefined
-  var pointShape: js.UndefOr[ChartPointShape] = js.undefined
-  var pointSize: js.UndefOr[Double] = js.undefined
-  var pointsVisible: js.UndefOr[Boolean] = js.undefined
-  var reverseCategories: js.UndefOr[Boolean] = js.undefined
-  var selectionMode: js.UndefOr[ChartSelectionMode] = js.undefined
-  var series: js.UndefOr[js.Array[LineChartSeriesOptions] | NumberDictionary[LineChartSeriesOptions]] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var titlePosition: js.UndefOr[String] = js.undefined
-  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
-  var tooltip: js.UndefOr[ChartTooltip] = js.undefined
-  var trendlines: js.UndefOr[NumberDictionary[ChartTrendlineOptions]] = js.undefined
-  var vAxes: js.UndefOr[js.Any] = js.undefined
-  var vAxis: js.UndefOr[ChartAxis] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var aggregationTarget: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[TransitionAnimation] = js.native
+  var annotations: js.UndefOr[ChartAnnotations] = js.native
+  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.native
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.native
+  var chartArea: js.UndefOr[ChartArea] = js.native
+  var colors: js.UndefOr[js.Array[String]] = js.native
+  var crosshair: js.UndefOr[ChartCrosshair] = js.native
+  var curveType: js.UndefOr[none | function] = js.native
+  var dataOpacity: js.UndefOr[Double] = js.native
+  var domainAxis: js.UndefOr[Type] = js.native
+  var enableInteractivity: js.UndefOr[Boolean] = js.native
+  var explorer: js.UndefOr[ChartExplorer] = js.native
+  var focusTarget: js.UndefOr[String] = js.native
+  var fontName: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[Double] = js.native
+  var hAxis: js.UndefOr[ChartAxis] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var interpolateNulls: js.UndefOr[Boolean] = js.native
+  var interval: js.UndefOr[js.Any] = js.native
+  var intervals: js.UndefOr[Style] = js.native
+  var legend: js.UndefOr[ChartLegend | none] = js.native
+  var lineWidth: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.native
+  var orientation: js.UndefOr[ChartOrientation] = js.native
+  var pointShape: js.UndefOr[ChartPointShape] = js.native
+  var pointSize: js.UndefOr[Double] = js.native
+  var pointsVisible: js.UndefOr[Boolean] = js.native
+  var reverseCategories: js.UndefOr[Boolean] = js.native
+  var selectionMode: js.UndefOr[ChartSelectionMode] = js.native
+  var series: js.UndefOr[js.Array[LineChartSeriesOptions] | NumberDictionary[LineChartSeriesOptions]] = js.native
+  var theme: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var titlePosition: js.UndefOr[String] = js.native
+  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.native
+  var tooltip: js.UndefOr[ChartTooltip] = js.native
+  var trendlines: js.UndefOr[NumberDictionary[ChartTrendlineOptions]] = js.native
+  var vAxes: js.UndefOr[js.Any] = js.native
+  var vAxis: js.UndefOr[ChartAxis] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object LineChartOptions {
   @scala.inline
-  def apply(
-    aggregationTarget: String = null,
-    animation: TransitionAnimation = null,
-    annotations: ChartAnnotations = null,
-    axisTitlesPosition: ChartAxisTitlesPosition = null,
-    backgroundColor: String | ChartStrokeFill = null,
-    chartArea: ChartArea = null,
-    colors: js.Array[String] = null,
-    crosshair: ChartCrosshair = null,
-    curveType: none | function = null,
-    dataOpacity: js.UndefOr[Double] = js.undefined,
-    domainAxis: Type = null,
-    enableInteractivity: js.UndefOr[Boolean] = js.undefined,
-    explorer: ChartExplorer = null,
-    focusTarget: String = null,
-    fontName: String = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    hAxis: ChartAxis = null,
-    height: js.UndefOr[Double] = js.undefined,
-    interpolateNulls: js.UndefOr[Boolean] = js.undefined,
-    interval: js.Any = null,
-    intervals: Style = null,
-    legend: ChartLegend | none = null,
-    lineWidth: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    orientation: ChartOrientation = null,
-    pointShape: ChartPointShape = null,
-    pointSize: js.UndefOr[Double] = js.undefined,
-    pointsVisible: js.UndefOr[Boolean] = js.undefined,
-    reverseCategories: js.UndefOr[Boolean] = js.undefined,
-    selectionMode: ChartSelectionMode = null,
-    series: js.Array[LineChartSeriesOptions] | NumberDictionary[LineChartSeriesOptions] = null,
-    theme: String = null,
-    title: String = null,
-    titlePosition: String = null,
-    titleTextStyle: ChartTextStyle = null,
-    tooltip: ChartTooltip = null,
-    trendlines: NumberDictionary[ChartTrendlineOptions] = null,
-    vAxes: js.Any = null,
-    vAxis: ChartAxis = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): LineChartOptions = {
+  def apply(): LineChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (aggregationTarget != null) __obj.updateDynamic("aggregationTarget")(aggregationTarget.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (axisTitlesPosition != null) __obj.updateDynamic("axisTitlesPosition")(axisTitlesPosition.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair.asInstanceOf[js.Any])
-    if (curveType != null) __obj.updateDynamic("curveType")(curveType.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataOpacity)) __obj.updateDynamic("dataOpacity")(dataOpacity.get.asInstanceOf[js.Any])
-    if (domainAxis != null) __obj.updateDynamic("domainAxis")(domainAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.get.asInstanceOf[js.Any])
-    if (explorer != null) __obj.updateDynamic("explorer")(explorer.asInstanceOf[js.Any])
-    if (focusTarget != null) __obj.updateDynamic("focusTarget")(focusTarget.asInstanceOf[js.Any])
-    if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (hAxis != null) __obj.updateDynamic("hAxis")(hAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(interpolateNulls)) __obj.updateDynamic("interpolateNulls")(interpolateNulls.get.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (intervals != null) __obj.updateDynamic("intervals")(intervals.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (pointShape != null) __obj.updateDynamic("pointShape")(pointShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointSize)) __obj.updateDynamic("pointSize")(pointSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseCategories)) __obj.updateDynamic("reverseCategories")(reverseCategories.get.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titlePosition != null) __obj.updateDynamic("titlePosition")(titlePosition.asInstanceOf[js.Any])
-    if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (trendlines != null) __obj.updateDynamic("trendlines")(trendlines.asInstanceOf[js.Any])
-    if (vAxes != null) __obj.updateDynamic("vAxes")(vAxes.asInstanceOf[js.Any])
-    if (vAxis != null) __obj.updateDynamic("vAxis")(vAxis.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineChartOptions]
   }
+  @scala.inline
+  implicit class LineChartOptionsOps[Self <: LineChartOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregationTarget(value: String): Self = this.set("aggregationTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregationTarget: Self = this.set("aggregationTarget", js.undefined)
+    @scala.inline
+    def setAnimation(value: TransitionAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnnotations(value: ChartAnnotations): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    @scala.inline
+    def setAxisTitlesPosition(value: ChartAxisTitlesPosition): Self = this.set("axisTitlesPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisTitlesPosition: Self = this.set("axisTitlesPosition", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: String | ChartStrokeFill): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setChartArea(value: ChartArea): Self = this.set("chartArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChartArea: Self = this.set("chartArea", js.undefined)
+    @scala.inline
+    def setColorsVarargs(value: String*): Self = this.set("colors", js.Array(value :_*))
+    @scala.inline
+    def setColors(value: js.Array[String]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setCrosshair(value: ChartCrosshair): Self = this.set("crosshair", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrosshair: Self = this.set("crosshair", js.undefined)
+    @scala.inline
+    def setCurveType(value: none | function): Self = this.set("curveType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurveType: Self = this.set("curveType", js.undefined)
+    @scala.inline
+    def setDataOpacity(value: Double): Self = this.set("dataOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataOpacity: Self = this.set("dataOpacity", js.undefined)
+    @scala.inline
+    def setDomainAxis(value: Type): Self = this.set("domainAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainAxis: Self = this.set("domainAxis", js.undefined)
+    @scala.inline
+    def setEnableInteractivity(value: Boolean): Self = this.set("enableInteractivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableInteractivity: Self = this.set("enableInteractivity", js.undefined)
+    @scala.inline
+    def setExplorer(value: ChartExplorer): Self = this.set("explorer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplorer: Self = this.set("explorer", js.undefined)
+    @scala.inline
+    def setFocusTarget(value: String): Self = this.set("focusTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusTarget: Self = this.set("focusTarget", js.undefined)
+    @scala.inline
+    def setFontName(value: String): Self = this.set("fontName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontName: Self = this.set("fontName", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setHAxis(value: ChartAxis): Self = this.set("hAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHAxis: Self = this.set("hAxis", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setInterpolateNulls(value: Boolean): Self = this.set("interpolateNulls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterpolateNulls: Self = this.set("interpolateNulls", js.undefined)
+    @scala.inline
+    def setInterval(value: js.Any): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setIntervals(value: Style): Self = this.set("intervals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntervals: Self = this.set("intervals", js.undefined)
+    @scala.inline
+    def setLegend(value: ChartLegend | none): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegend: Self = this.set("legend", js.undefined)
+    @scala.inline
+    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setOrientation(value: ChartOrientation): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setPointShape(value: ChartPointShape): Self = this.set("pointShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointShape: Self = this.set("pointShape", js.undefined)
+    @scala.inline
+    def setPointSize(value: Double): Self = this.set("pointSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointSize: Self = this.set("pointSize", js.undefined)
+    @scala.inline
+    def setPointsVisible(value: Boolean): Self = this.set("pointsVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointsVisible: Self = this.set("pointsVisible", js.undefined)
+    @scala.inline
+    def setReverseCategories(value: Boolean): Self = this.set("reverseCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReverseCategories: Self = this.set("reverseCategories", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: ChartSelectionMode): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    @scala.inline
+    def setSeriesVarargs(value: LineChartSeriesOptions*): Self = this.set("series", js.Array(value :_*))
+    @scala.inline
+    def setSeries(value: js.Array[LineChartSeriesOptions] | NumberDictionary[LineChartSeriesOptions]): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitlePosition(value: String): Self = this.set("titlePosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitlePosition: Self = this.set("titlePosition", js.undefined)
+    @scala.inline
+    def setTitleTextStyle(value: ChartTextStyle): Self = this.set("titleTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleTextStyle: Self = this.set("titleTextStyle", js.undefined)
+    @scala.inline
+    def setTooltip(value: ChartTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTrendlines(value: NumberDictionary[ChartTrendlineOptions]): Self = this.set("trendlines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrendlines: Self = this.set("trendlines", js.undefined)
+    @scala.inline
+    def setVAxes(value: js.Any): Self = this.set("vAxes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVAxes: Self = this.set("vAxes", js.undefined)
+    @scala.inline
+    def setVAxis(value: ChartAxis): Self = this.set("vAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVAxis: Self = this.set("vAxis", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

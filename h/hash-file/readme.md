@@ -12,7 +12,7 @@ Create a hashed file name
 | Keywords           | file, hash, name, crypto |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 77328 |
+| # downloads        | 83177 |
 | # stars            | 2 |
 
 ## Links

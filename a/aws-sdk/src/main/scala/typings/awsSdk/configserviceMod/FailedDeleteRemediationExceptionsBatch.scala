@@ -18,11 +18,32 @@ trait FailedDeleteRemediationExceptionsBatch extends js.Object {
 
 object FailedDeleteRemediationExceptionsBatch {
   @scala.inline
-  def apply(FailedItems: RemediationExceptionResourceKeys = null, FailureMessage: String = null): FailedDeleteRemediationExceptionsBatch = {
+  def apply(): FailedDeleteRemediationExceptionsBatch = {
     val __obj = js.Dynamic.literal()
-    if (FailedItems != null) __obj.updateDynamic("FailedItems")(FailedItems.asInstanceOf[js.Any])
-    if (FailureMessage != null) __obj.updateDynamic("FailureMessage")(FailureMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailedDeleteRemediationExceptionsBatch]
   }
+  @scala.inline
+  implicit class FailedDeleteRemediationExceptionsBatchOps[Self <: FailedDeleteRemediationExceptionsBatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailedItemsVarargs(value: RemediationExceptionResourceKey*): Self = this.set("FailedItems", js.Array(value :_*))
+    @scala.inline
+    def setFailedItems(value: RemediationExceptionResourceKeys): Self = this.set("FailedItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedItems: Self = this.set("FailedItems", js.undefined)
+    @scala.inline
+    def setFailureMessage(value: String): Self = this.set("FailureMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureMessage: Self = this.set("FailureMessage", js.undefined)
+  }
+  
 }
 

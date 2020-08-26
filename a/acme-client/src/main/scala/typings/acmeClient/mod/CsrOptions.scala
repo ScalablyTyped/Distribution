@@ -4,42 +4,75 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CsrOptions extends js.Object {
-  var altNames: js.UndefOr[js.Array[String]] = js.undefined
-  var commonName: js.UndefOr[String] = js.undefined
-  var country: js.UndefOr[String] = js.undefined
-  var emailAddress: js.UndefOr[String] = js.undefined
-  var keySize: js.UndefOr[Double] = js.undefined
-  var locality: js.UndefOr[String] = js.undefined
-  var organization: js.UndefOr[String] = js.undefined
-  var organizationUnit: js.UndefOr[String] = js.undefined
-  var state: js.UndefOr[String] = js.undefined
+  var altNames: js.UndefOr[js.Array[String]] = js.native
+  var commonName: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.native
+  var keySize: js.UndefOr[Double] = js.native
+  var locality: js.UndefOr[String] = js.native
+  var organization: js.UndefOr[String] = js.native
+  var organizationUnit: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.native
 }
 
 object CsrOptions {
   @scala.inline
-  def apply(
-    altNames: js.Array[String] = null,
-    commonName: String = null,
-    country: String = null,
-    emailAddress: String = null,
-    keySize: js.UndefOr[Double] = js.undefined,
-    locality: String = null,
-    organization: String = null,
-    organizationUnit: String = null,
-    state: String = null
-  ): CsrOptions = {
+  def apply(): CsrOptions = {
     val __obj = js.Dynamic.literal()
-    if (altNames != null) __obj.updateDynamic("altNames")(altNames.asInstanceOf[js.Any])
-    if (commonName != null) __obj.updateDynamic("commonName")(commonName.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(keySize)) __obj.updateDynamic("keySize")(keySize.get.asInstanceOf[js.Any])
-    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
-    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
-    if (organizationUnit != null) __obj.updateDynamic("organizationUnit")(organizationUnit.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[CsrOptions]
   }
+  @scala.inline
+  implicit class CsrOptionsOps[Self <: CsrOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltNamesVarargs(value: String*): Self = this.set("altNames", js.Array(value :_*))
+    @scala.inline
+    def setAltNames(value: js.Array[String]): Self = this.set("altNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltNames: Self = this.set("altNames", js.undefined)
+    @scala.inline
+    def setCommonName(value: String): Self = this.set("commonName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommonName: Self = this.set("commonName", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setEmailAddress(value: String): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
+    @scala.inline
+    def setKeySize(value: Double): Self = this.set("keySize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeySize: Self = this.set("keySize", js.undefined)
+    @scala.inline
+    def setLocality(value: String): Self = this.set("locality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocality: Self = this.set("locality", js.undefined)
+    @scala.inline
+    def setOrganization(value: String): Self = this.set("organization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganization: Self = this.set("organization", js.undefined)
+    @scala.inline
+    def setOrganizationUnit(value: String): Self = this.set("organizationUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationUnit: Self = this.set("organizationUnit", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

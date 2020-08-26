@@ -32,7 +32,7 @@ object nonInviteServerTransactionMod extends js.Object {
       * at which point it MUST transition to the "Terminated" state.
       * https://tools.ietf.org/html/rfc3261#section-17.2.2
       */
-    var timer_J: js.Any = js.native
+    var timerJ: js.Any = js.native
     /**
       * First, the procedures in [4] are followed, which attempt to deliver the response to a backup.
       * If those should all fail, based on the definition of failure in [4], the server transaction SHOULD

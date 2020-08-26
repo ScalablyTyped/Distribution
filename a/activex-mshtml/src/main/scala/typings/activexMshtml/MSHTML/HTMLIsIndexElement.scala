@@ -247,6 +247,7 @@ trait HTMLIsIndexElement extends js.Object {
   def filters(pvarIndex: js.Any): js.Any = js.native
   def focus(): Unit = js.native
   def form(): js.Any = js.native
+  def form(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def form(name: js.Any): js.Any = js.native
   def form(name: js.Any, index: js.Any): js.Any = js.native
   def getAdjacentText(where: String): String = js.native

@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "octokit__rest"
-version := "17.11.2-22d4ff"
-scalaVersion := "2.13.2"
+version := "18.0.3-c6ba5e"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "before-after-hook" % "2.1.0-d84276",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "octokit__core" % "2.5.4-52302a",
-  "org.scalablytyped" %%% "octokit__graphql" % "4.5.1-663980",
-  "org.scalablytyped" %%% "octokit__plugin-paginate-rest" % "2.2.3-e2e72c",
-  "org.scalablytyped" %%% "octokit__plugin-rest-endpoint-methods" % "3.17.0-e13d43",
-  "org.scalablytyped" %%% "octokit__types" % "5.0.1-3cfb71",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "before-after-hook" % "2.1.0-635705",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "octokit__core" % "3.1.1-5dc510",
+  "org.scalablytyped" %%% "octokit__graphql" % "4.5.3-41c148",
+  "org.scalablytyped" %%% "octokit__plugin-paginate-rest" % "2.3.0-4ac6b4",
+  "org.scalablytyped" %%% "octokit__plugin-rest-endpoint-methods" % "4.1.2-723fff",
+  "org.scalablytyped" %%% "octokit__types" % "5.2.0-4a75a2",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

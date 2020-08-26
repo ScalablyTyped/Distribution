@@ -12,7 +12,7 @@ Redis storage adapter for Keyv
 | Keywords           | redis, keyv, storage, adapter, key, value, store, cache, ttl |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 25457 |
+| # downloads        | 27401 |
 | # stars            | 0 |
 
 ## Links

@@ -46,26 +46,58 @@ trait SchemaClusterOperationMetadata extends js.Object {
 
 object SchemaClusterOperationMetadata {
   @scala.inline
-  def apply(
-    clusterName: String = null,
-    clusterUuid: String = null,
-    description: String = null,
-    labels: StringDictionary[String] = null,
-    operationType: String = null,
-    status: SchemaClusterOperationStatus = null,
-    statusHistory: js.Array[SchemaClusterOperationStatus] = null,
-    warnings: js.Array[String] = null
-  ): SchemaClusterOperationMetadata = {
+  def apply(): SchemaClusterOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
-    if (clusterUuid != null) __obj.updateDynamic("clusterUuid")(clusterUuid.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusHistory != null) __obj.updateDynamic("statusHistory")(statusHistory.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClusterOperationMetadata]
   }
+  @scala.inline
+  implicit class SchemaClusterOperationMetadataOps[Self <: SchemaClusterOperationMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    @scala.inline
+    def setClusterUuid(value: String): Self = this.set("clusterUuid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterUuid: Self = this.set("clusterUuid", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setOperationType(value: String): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaClusterOperationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusHistoryVarargs(value: SchemaClusterOperationStatus*): Self = this.set("statusHistory", js.Array(value :_*))
+    @scala.inline
+    def setStatusHistory(value: js.Array[SchemaClusterOperationStatus]): Self = this.set("statusHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusHistory: Self = this.set("statusHistory", js.undefined)
+    @scala.inline
+    def setWarningsVarargs(value: String*): Self = this.set("warnings", js.Array(value :_*))
+    @scala.inline
+    def setWarnings(value: js.Array[String]): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarnings: Self = this.set("warnings", js.undefined)
+  }
+  
 }
 

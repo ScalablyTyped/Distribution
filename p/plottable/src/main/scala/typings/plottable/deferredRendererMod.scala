@@ -23,9 +23,11 @@ object deferredRendererMod extends js.Object {
     /* private */ def applyTransform(): js.Any = js.native
     def resetTransforms(): Unit = js.native
     def setDomains(): Unit = js.native
+    def setDomains(scaleX: js.UndefOr[scala.Nothing], scaleY: ITransformableScale): Unit = js.native
     def setDomains(scaleX: ITransformableScale): Unit = js.native
     def setDomains(scaleX: ITransformableScale, scaleY: ITransformableScale): Unit = js.native
     def updateDomains(): Unit = js.native
+    def updateDomains(scaleX: js.UndefOr[scala.Nothing], scaleY: ITransformableScale): Unit = js.native
     def updateDomains(scaleX: ITransformableScale): Unit = js.native
     def updateDomains(scaleX: ITransformableScale, scaleY: ITransformableScale): Unit = js.native
   }

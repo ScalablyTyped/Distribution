@@ -1,49 +1,56 @@
 package typings.googleCloudStorage.fileMod
 
-import typings.googleCloudCommon.serviceObjectMod.Metadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateWriteStreamOptions extends CreateResumableUploadOptions {
-  var contentType: js.UndefOr[String] = js.undefined
-  var gzip: js.UndefOr[String | Boolean] = js.undefined
-  var resumable: js.UndefOr[Boolean] = js.undefined
-  var validation: js.UndefOr[String | Boolean] = js.undefined
+  var contentType: js.UndefOr[String] = js.native
+  var gzip: js.UndefOr[String | Boolean] = js.native
+  var resumable: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var validation: js.UndefOr[String | Boolean] = js.native
 }
 
 object CreateWriteStreamOptions {
   @scala.inline
-  def apply(
-    configPath: String = null,
-    contentType: String = null,
-    gzip: String | Boolean = null,
-    metadata: Metadata = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    origin: String = null,
-    predefinedAcl: PredefinedAcl = null,
-    `private`: js.UndefOr[Boolean] = js.undefined,
-    public: js.UndefOr[Boolean] = js.undefined,
-    resumable: js.UndefOr[Boolean] = js.undefined,
-    uri: String = null,
-    userProject: String = null,
-    validation: String | Boolean = null
-  ): CreateWriteStreamOptions = {
+  def apply(): CreateWriteStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (configPath != null) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (gzip != null) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resumable)) __obj.updateDynamic("resumable")(resumable.get.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
-    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWriteStreamOptions]
   }
+  @scala.inline
+  implicit class CreateWriteStreamOptionsOps[Self <: CreateWriteStreamOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setGzip(value: String | Boolean): Self = this.set("gzip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGzip: Self = this.set("gzip", js.undefined)
+    @scala.inline
+    def setResumable(value: Boolean): Self = this.set("resumable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResumable: Self = this.set("resumable", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setValidation(value: String | Boolean): Self = this.set("validation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidation: Self = this.set("validation", js.undefined)
+  }
+  
 }
 

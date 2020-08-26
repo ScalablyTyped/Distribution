@@ -26,18 +26,40 @@ trait IceServer extends js.Object {
 
 object IceServer {
   @scala.inline
-  def apply(
-    Password: Password = null,
-    Ttl: js.UndefOr[Ttl] = js.undefined,
-    Uris: Uris = null,
-    Username: Username = null
-  ): IceServer = {
+  def apply(): IceServer = {
     val __obj = js.Dynamic.literal()
-    if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (!js.isUndefined(Ttl)) __obj.updateDynamic("Ttl")(Ttl.get.asInstanceOf[js.Any])
-    if (Uris != null) __obj.updateDynamic("Uris")(Uris.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[IceServer]
   }
+  @scala.inline
+  implicit class IceServerOps[Self <: IceServer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPassword(value: Password): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("Password", js.undefined)
+    @scala.inline
+    def setTtl(value: Ttl): Self = this.set("Ttl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTtl: Self = this.set("Ttl", js.undefined)
+    @scala.inline
+    def setUrisVarargs(value: Uri*): Self = this.set("Uris", js.Array(value :_*))
+    @scala.inline
+    def setUris(value: Uris): Self = this.set("Uris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUris: Self = this.set("Uris", js.undefined)
+    @scala.inline
+    def setUsername(value: Username): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

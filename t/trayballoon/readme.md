@@ -11,7 +11,7 @@ Create a trayballoon on Windows
 | Keywords           | cli-app, cli, bin, trayballoon, tray, balloon, tip, tooltip, popup, popover, windows, win, notification |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 5523 |
+| # downloads        | 3080 |
 | # stars            | 4 |
 
 ## Links

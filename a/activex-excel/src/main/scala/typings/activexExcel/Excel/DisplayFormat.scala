@@ -31,6 +31,7 @@ trait DisplayFormat extends js.Object {
   val WrapText: Boolean = js.native
   def Borders(Index: XlBordersIndex): Border = js.native
   def Characters(): typings.activexExcel.Excel.Characters = js.native
+  def Characters(Start: js.UndefOr[scala.Nothing], Length: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double, Length: Double): typings.activexExcel.Excel.Characters = js.native
 }

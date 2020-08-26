@@ -41,13 +41,17 @@ trait AreaRadial_[Datum] extends js.Object {
     */
   def angle(angle: Double): this.type = js.native
   /**
+    * Returns the current rendering context, which defaults to null.
+    */
+  def context(): CanvasRenderingContext2D | Null = js.native
+  /**
     * Sets the rendering context to null and returns this radial area generator.
     *
     * A path data string representing the generated radial area will be returned when the generator is invoked with data.
     *
     * @param context null, to remove rendering context.
     */
-  def context(): this.type = js.native
+  def context(context: Null): this.type = js.native
   /**
     * Sets the rendering context and returns this radial area generator.
     *
@@ -56,11 +60,6 @@ trait AreaRadial_[Datum] extends js.Object {
     * @param context The rendering context.
     */
   def context(context: CanvasRenderingContext2D): this.type = js.native
-  /**
-    * Returns the current rendering context, which defaults to null.
-    */
-  @JSName("context")
-  def context_Union(): CanvasRenderingContext2D | Null = js.native
   /**
     * Returns the current curve factory, which defaults to curveLinear.
     */
@@ -122,13 +121,9 @@ trait AreaRadial_[Datum] extends js.Object {
     */
   def defined(defined: Boolean): this.type = js.native
   /**
-    * Sets endAngle to null and returns this radial area generator.
-    *
-    * Setting endAngle to null indicates that the previously-computed startAngle value should be reused for the endAngle value.
-    *
-    * @param angle null.
+    * Returns the current endAngle accessor, which defaults to null, indicating that the previously-computed startAngle value should be reused for the endAngle value.
     */
-  def endAngle(): this.type = js.native
+  def endAngle(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
   /**
     * Sets endAngle to the specified function and returns this radial area generator.
     *
@@ -147,10 +142,13 @@ trait AreaRadial_[Datum] extends js.Object {
     */
   def endAngle(angle: Double): this.type = js.native
   /**
-    * Returns the current endAngle accessor, which defaults to null, indicating that the previously-computed startAngle value should be reused for the endAngle value.
+    * Sets endAngle to null and returns this radial area generator.
+    *
+    * Setting endAngle to null indicates that the previously-computed startAngle value should be reused for the endAngle value.
+    *
+    * @param angle null.
     */
-  @JSName("endAngle")
-  def endAngle_Union(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
+  def endAngle(angle: Null): this.type = js.native
   /**
     * Returns the current innerRadius accessor. The default innerRadius accessor is a function a constant value of zero.
     */
@@ -192,13 +190,12 @@ trait AreaRadial_[Datum] extends js.Object {
     */
   def lineStartAngle(): LineRadial_[Datum] = js.native
   /**
-    * Sets outerRadius to null and returns this radial area generator.
+    * Returns the current outerRadius accessor or null. The default outerRadius accessor is a function returning the second element of a
+    * two-element array of numbers.
     *
-    * Setting outerRadius to null indicates that the previously-computed innerRadius value should be reused for the outerRadius value.
-    *
-    * @param radius null.
+    * If the outerRadius accessor is null, the previously-computed innerRadius value is reused for the outerRadius value.
     */
-  def outerRadius(): this.type = js.native
+  def outerRadius(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
   /**
     * Sets outerRadius to the specified function and returns this radial area generator.
     *
@@ -216,13 +213,13 @@ trait AreaRadial_[Datum] extends js.Object {
     */
   def outerRadius(radius: Double): this.type = js.native
   /**
-    * Returns the current outerRadius accessor or null. The default outerRadius accessor is a function returning the second element of a
-    * two-element array of numbers.
+    * Sets outerRadius to null and returns this radial area generator.
     *
-    * If the outerRadius accessor is null, the previously-computed innerRadius value is reused for the outerRadius value.
+    * Setting outerRadius to null indicates that the previously-computed innerRadius value should be reused for the outerRadius value.
+    *
+    * @param radius null.
     */
-  @JSName("outerRadius")
-  def outerRadius_Union(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
+  def outerRadius(radius: Null): this.type = js.native
   /**
     * Returns the current innerRadius accessor. The default innerRadius accessor is a function returning a constant value of zero.
     */

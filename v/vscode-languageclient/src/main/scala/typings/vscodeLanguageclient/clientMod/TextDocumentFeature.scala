@@ -16,6 +16,13 @@ abstract class TextDocumentFeature[PO, RO /* <: typings.vscodeLanguageserverProt
     js.UndefOr[String], 
     js.UndefOr[RO with typings.vscodeLanguageclient.anon.DocumentSelector]
   ] = js.native
+  /* protected */ def getRegistration(
+    documentSelector: js.UndefOr[scala.Nothing],
+    capability: (RO with typings.vscodeLanguageserverProtocol.protocolMod.StaticRegistrationOptions) | PO
+  ): js.Tuple2[
+    js.UndefOr[String], 
+    js.UndefOr[RO with typings.vscodeLanguageclient.anon.DocumentSelector]
+  ] = js.native
   /* protected */ def getRegistration(documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector): js.Tuple2[
     js.UndefOr[String], 
     js.UndefOr[RO with typings.vscodeLanguageclient.anon.DocumentSelector]
@@ -28,6 +35,7 @@ abstract class TextDocumentFeature[PO, RO /* <: typings.vscodeLanguageserverProt
     js.UndefOr[RO with typings.vscodeLanguageclient.anon.DocumentSelector]
   ] = js.native
   /* protected */ def getRegistrationOptions(): js.UndefOr[RO with typings.vscodeLanguageclient.anon.DocumentSelector] = js.native
+  /* protected */ def getRegistrationOptions(documentSelector: js.UndefOr[scala.Nothing], capability: PO): js.UndefOr[RO with typings.vscodeLanguageclient.anon.DocumentSelector] = js.native
   /* protected */ def getRegistrationOptions(documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector): js.UndefOr[RO with typings.vscodeLanguageclient.anon.DocumentSelector] = js.native
   /* protected */ def getRegistrationOptions(
     documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector,

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class MatrixUser protected () extends js.Object {
   def this(userId: String) = this()
   def this(userId: String, dataopt: js.Object) = this()
+  def this(userId: String, dataopt: js.UndefOr[scala.Nothing], escape: Boolean) = this()
   def this(userId: String, dataopt: js.Object, escape: Boolean) = this()
   val host: String = js.native
   val localpart: String = js.native

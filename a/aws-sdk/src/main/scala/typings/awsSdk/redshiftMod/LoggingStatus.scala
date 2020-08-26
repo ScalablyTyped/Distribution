@@ -34,22 +34,46 @@ trait LoggingStatus extends js.Object {
 
 object LoggingStatus {
   @scala.inline
-  def apply(
-    BucketName: String = null,
-    LastFailureMessage: String = null,
-    LastFailureTime: TStamp = null,
-    LastSuccessfulDeliveryTime: TStamp = null,
-    LoggingEnabled: js.UndefOr[Boolean] = js.undefined,
-    S3KeyPrefix: String = null
-  ): LoggingStatus = {
+  def apply(): LoggingStatus = {
     val __obj = js.Dynamic.literal()
-    if (BucketName != null) __obj.updateDynamic("BucketName")(BucketName.asInstanceOf[js.Any])
-    if (LastFailureMessage != null) __obj.updateDynamic("LastFailureMessage")(LastFailureMessage.asInstanceOf[js.Any])
-    if (LastFailureTime != null) __obj.updateDynamic("LastFailureTime")(LastFailureTime.asInstanceOf[js.Any])
-    if (LastSuccessfulDeliveryTime != null) __obj.updateDynamic("LastSuccessfulDeliveryTime")(LastSuccessfulDeliveryTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(LoggingEnabled)) __obj.updateDynamic("LoggingEnabled")(LoggingEnabled.get.asInstanceOf[js.Any])
-    if (S3KeyPrefix != null) __obj.updateDynamic("S3KeyPrefix")(S3KeyPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingStatus]
   }
+  @scala.inline
+  implicit class LoggingStatusOps[Self <: LoggingStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketName(value: String): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketName: Self = this.set("BucketName", js.undefined)
+    @scala.inline
+    def setLastFailureMessage(value: String): Self = this.set("LastFailureMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastFailureMessage: Self = this.set("LastFailureMessage", js.undefined)
+    @scala.inline
+    def setLastFailureTime(value: TStamp): Self = this.set("LastFailureTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastFailureTime: Self = this.set("LastFailureTime", js.undefined)
+    @scala.inline
+    def setLastSuccessfulDeliveryTime(value: TStamp): Self = this.set("LastSuccessfulDeliveryTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSuccessfulDeliveryTime: Self = this.set("LastSuccessfulDeliveryTime", js.undefined)
+    @scala.inline
+    def setLoggingEnabled(value: Boolean): Self = this.set("LoggingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingEnabled: Self = this.set("LoggingEnabled", js.undefined)
+    @scala.inline
+    def setS3KeyPrefix(value: String): Self = this.set("S3KeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3KeyPrefix: Self = this.set("S3KeyPrefix", js.undefined)
+  }
+  
 }
 

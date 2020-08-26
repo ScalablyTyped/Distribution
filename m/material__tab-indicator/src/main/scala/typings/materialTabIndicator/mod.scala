@@ -39,9 +39,9 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object MDCTabIndicatorFoundation extends js.Object {
-    val cssClasses: ACTIVE = js.native
-    val defaultAdapter: MDCTabIndicatorAdapter = js.native
-    val strings: CONTENTSELECTOR = js.native
+    def cssClasses: ACTIVE = js.native
+    def defaultAdapter: MDCTabIndicatorAdapter = js.native
+    def strings: CONTENTSELECTOR = js.native
   }
   
   /**

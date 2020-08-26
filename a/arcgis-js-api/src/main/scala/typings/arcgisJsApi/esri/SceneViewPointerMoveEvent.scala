@@ -7,17 +7,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SceneViewPointerMoveEvent extends js.Object {
-  var button: Double
-  var buttons: Double
-  var native: js.Any
-  var pointerId: Double
-  var pointerType: mouse | touch
-  var stopPropagation: js.Function
-  var timestamp: Double
-  var `type`: `pointer-move`
-  var x: Double
-  var y: Double
+  var button: Double = js.native
+  var buttons: Double = js.native
+  var native: js.Any = js.native
+  var pointerId: Double = js.native
+  var pointerType: mouse | touch = js.native
+  var stopPropagation: js.Function = js.native
+  var timestamp: Double = js.native
+  var `type`: `pointer-move` = js.native
+  var x: Double = js.native
+  var y: Double = js.native
 }
 
 object SceneViewPointerMoveEvent {
@@ -38,5 +39,38 @@ object SceneViewPointerMoveEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewPointerMoveEvent]
   }
+  @scala.inline
+  implicit class SceneViewPointerMoveEventOps[Self <: SceneViewPointerMoveEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setButton(value: Double): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setButtons(value: Double): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNative(value: js.Any): Self = this.set("native", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPointerId(value: Double): Self = this.set("pointerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPointerType(value: mouse | touch): Self = this.set("pointerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStopPropagation(value: js.Function): Self = this.set("stopPropagation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: `pointer-move`): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+  }
+  
 }
 

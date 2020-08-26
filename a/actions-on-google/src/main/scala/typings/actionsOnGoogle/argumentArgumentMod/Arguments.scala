@@ -59,25 +59,25 @@ class Arguments () extends js.Object {
   /** @public */
   def get(name: String): Argument = js.native
   @JSName("get")
-  def get_COMPLETEPURCHASEVALUE(name: COMPLETE_PURCHASE_VALUE): CompletePurchaseArgument = js.native
+  def get_COMPLETEPURCHASEVALUE(name: COMPLETE_PURCHASE_VALUE): js.UndefOr[CompletePurchaseArgument] = js.native
   @JSName("get")
-  def get_CONFIRMATION(name: CONFIRMATION): ConfirmationArgument = js.native
+  def get_CONFIRMATION(name: CONFIRMATION): js.UndefOr[ConfirmationArgument] = js.native
   @JSName("get")
-  def get_DATETIME(name: DATETIME): DateTimeArgument = js.native
+  def get_DATETIME(name: DATETIME): js.UndefOr[DateTimeArgument] = js.native
   @JSName("get")
-  def get_DELIVERYADDRESSVALUE(name: DELIVERY_ADDRESS_VALUE): DeliveryAddressArgument = js.native
+  def get_DELIVERYADDRESSVALUE(name: DELIVERY_ADDRESS_VALUE): js.UndefOr[DeliveryAddressArgument] = js.native
   @JSName("get")
-  def get_DIGITALPURCHASECHECKRESULT(name: DIGITAL_PURCHASE_CHECK_RESULT): DigitalPurchaseCheckArgument = js.native
+  def get_DIGITALPURCHASECHECKRESULT(name: DIGITAL_PURCHASE_CHECK_RESULT): js.UndefOr[DigitalPurchaseCheckArgument] = js.native
   @JSName("get")
-  def get_ISFINALREPROMPT(name: IS_FINAL_REPROMPT): FinalRepromptArgument = js.native
+  def get_ISFINALREPROMPT(name: IS_FINAL_REPROMPT): js.UndefOr[FinalRepromptArgument] = js.native
   @JSName("get")
-  def get_LINK(name: LINK): DeepLinkArgument = js.native
+  def get_LINK(name: LINK): js.UndefOr[DeepLinkArgument] = js.native
   @JSName("get")
-  def get_MEDIASTATUS(name: MEDIA_STATUS): MediaStatusArgument = js.native
+  def get_MEDIASTATUS(name: MEDIA_STATUS): js.UndefOr[MediaStatusArgument] = js.native
   @JSName("get")
-  def get_NEWSURFACE(name: NEW_SURFACE): NewSurfaceArgument = js.native
+  def get_NEWSURFACE(name: NEW_SURFACE): js.UndefOr[NewSurfaceArgument] = js.native
   @JSName("get")
-  def get_OPTION(name: OPTION): OptionArgument = js.native
+  def get_OPTION(name: OPTION): js.UndefOr[OptionArgument] = js.native
   /**
     * Get the argument value by name from the current intent.
     * The first property value not named `name` or `status` will be returned.
@@ -106,20 +106,20 @@ class Arguments () extends js.Object {
     * @public
     */
   @JSName("get")
-  def get_PERMISSION(name: PERMISSION): PermissionArgument = js.native
+  def get_PERMISSION(name: PERMISSION): js.UndefOr[PermissionArgument] = js.native
   @JSName("get")
-  def get_PLACE(name: PLACE): PlaceArgument = js.native
+  def get_PLACE(name: PLACE): js.UndefOr[PlaceArgument] = js.native
   @JSName("get")
-  def get_REGISTERUPDATE(name: REGISTER_UPDATE): RegisterUpdateArgument = js.native
+  def get_REGISTERUPDATE(name: REGISTER_UPDATE): js.UndefOr[RegisterUpdateArgument] = js.native
   @JSName("get")
-  def get_REPROMPTCOUNT(name: REPROMPT_COUNT): RepromptArgument = js.native
+  def get_REPROMPTCOUNT(name: REPROMPT_COUNT): js.UndefOr[RepromptArgument] = js.native
   @JSName("get")
-  def get_SIGNIN(name: SIGN_IN): SignInArgument = js.native
+  def get_SIGNIN(name: SIGN_IN): js.UndefOr[SignInArgument] = js.native
   @JSName("get")
-  def get_TRANSACTIONDECISIONVALUE(name: TRANSACTION_DECISION_VALUE): TransactionDecisionArgument = js.native
+  def get_TRANSACTIONDECISIONVALUE(name: TRANSACTION_DECISION_VALUE): js.UndefOr[TransactionDecisionArgument] = js.native
   @JSName("get")
-  def get_TRANSACTIONREQUIREMENTSCHECKRESULT(name: TRANSACTION_REQUIREMENTS_CHECK_RESULT): TransactionRequirementsArgument = js.native
+  def get_TRANSACTIONREQUIREMENTSCHECKRESULT(name: TRANSACTION_REQUIREMENTS_CHECK_RESULT): js.UndefOr[TransactionRequirementsArgument] = js.native
   @JSName("get")
-  def get_UPDATESUSERID(name: UPDATES_USER_ID): UpdatePermissionUserIdArgument = js.native
+  def get_UPDATESUSERID(name: UPDATES_USER_ID): js.UndefOr[UpdatePermissionUserIdArgument] = js.native
 }
 

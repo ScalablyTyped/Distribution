@@ -5,18 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommandBar extends js.Object {
-  def addCommand(action: Command): Unit
-  def attachEvents(): Unit
-  def findCommandByName(name: String): Command
-  def get_commands(): js.Array[Command]
-  def get_dropDownThreshold(): Double
-  def get_elementID(): String
-  def get_overrideClass(): String
-  def insertCommand(action: Command, position: Double): Unit
-  def render(builder: HtmlBuilder): Unit
-  def set_dropDownThreshold(value: Double): Double
-  def set_overrideClass(value: String): String
+  def addCommand(action: Command): Unit = js.native
+  def attachEvents(): Unit = js.native
+  def findCommandByName(name: String): Command = js.native
+  def get_commands(): js.Array[Command] = js.native
+  def get_dropDownThreshold(): Double = js.native
+  def get_elementID(): String = js.native
+  def get_overrideClass(): String = js.native
+  def insertCommand(action: Command, position: Double): Unit = js.native
+  def render(builder: HtmlBuilder): Unit = js.native
+  def set_dropDownThreshold(value: Double): Double = js.native
+  def set_overrideClass(value: String): String = js.native
 }
 
 object CommandBar {
@@ -37,5 +38,40 @@ object CommandBar {
     val __obj = js.Dynamic.literal(addCommand = js.Any.fromFunction1(addCommand), attachEvents = js.Any.fromFunction0(attachEvents), findCommandByName = js.Any.fromFunction1(findCommandByName), get_commands = js.Any.fromFunction0(get_commands), get_dropDownThreshold = js.Any.fromFunction0(get_dropDownThreshold), get_elementID = js.Any.fromFunction0(get_elementID), get_overrideClass = js.Any.fromFunction0(get_overrideClass), insertCommand = js.Any.fromFunction2(insertCommand), render = js.Any.fromFunction1(render), set_dropDownThreshold = js.Any.fromFunction1(set_dropDownThreshold), set_overrideClass = js.Any.fromFunction1(set_overrideClass))
     __obj.asInstanceOf[CommandBar]
   }
+  @scala.inline
+  implicit class CommandBarOps[Self <: CommandBar] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddCommand(value: Command => Unit): Self = this.set("addCommand", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAttachEvents(value: () => Unit): Self = this.set("attachEvents", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFindCommandByName(value: String => Command): Self = this.set("findCommandByName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGet_commands(value: () => js.Array[Command]): Self = this.set("get_commands", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_dropDownThreshold(value: () => Double): Self = this.set("get_dropDownThreshold", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_elementID(value: () => String): Self = this.set("get_elementID", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_overrideClass(value: () => String): Self = this.set("get_overrideClass", js.Any.fromFunction0(value))
+    @scala.inline
+    def setInsertCommand(value: (Command, Double) => Unit): Self = this.set("insertCommand", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRender(value: HtmlBuilder => Unit): Self = this.set("render", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSet_dropDownThreshold(value: Double => Double): Self = this.set("set_dropDownThreshold", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSet_overrideClass(value: String => String): Self = this.set("set_overrideClass", js.Any.fromFunction1(value))
+  }
+  
 }
 

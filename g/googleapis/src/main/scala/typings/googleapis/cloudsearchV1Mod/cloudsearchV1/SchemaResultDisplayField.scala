@@ -25,12 +25,34 @@ trait SchemaResultDisplayField extends js.Object {
 
 object SchemaResultDisplayField {
   @scala.inline
-  def apply(label: String = null, operatorName: String = null, property: SchemaNamedProperty = null): SchemaResultDisplayField = {
+  def apply(): SchemaResultDisplayField = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (operatorName != null) __obj.updateDynamic("operatorName")(operatorName.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResultDisplayField]
   }
+  @scala.inline
+  implicit class SchemaResultDisplayFieldOps[Self <: SchemaResultDisplayField] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
+    @scala.inline
+    def setProperty(value: SchemaNamedProperty): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+  }
+  
 }
 

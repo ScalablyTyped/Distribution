@@ -28,6 +28,7 @@ class ResourceCountries protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCountry] = js.native
   def get(callback: BodyResponseCallback[SchemaCountry]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCountry] = js.native
   def get(params: ParamsResourceCountriesGet): GaxiosPromise[SchemaCountry] = js.native
   def get(params: ParamsResourceCountriesGet, callback: BodyResponseCallback[SchemaCountry]): Unit = js.native
   def get(
@@ -55,6 +56,7 @@ class ResourceCountries protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCountriesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCountriesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCountriesListResponse] = js.native
   def list(params: ParamsResourceCountriesList): GaxiosPromise[SchemaCountriesListResponse] = js.native
   def list(params: ParamsResourceCountriesList, callback: BodyResponseCallback[SchemaCountriesListResponse]): Unit = js.native
   def list(

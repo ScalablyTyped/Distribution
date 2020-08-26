@@ -30,20 +30,42 @@ trait VmServer extends js.Object {
 
 object VmServer {
   @scala.inline
-  def apply(
-    vmManagerName: VmManagerName = null,
-    vmManagerType: VmManagerType = null,
-    vmName: VmName = null,
-    vmPath: VmPath = null,
-    vmServerAddress: VmServerAddress = null
-  ): VmServer = {
+  def apply(): VmServer = {
     val __obj = js.Dynamic.literal()
-    if (vmManagerName != null) __obj.updateDynamic("vmManagerName")(vmManagerName.asInstanceOf[js.Any])
-    if (vmManagerType != null) __obj.updateDynamic("vmManagerType")(vmManagerType.asInstanceOf[js.Any])
-    if (vmName != null) __obj.updateDynamic("vmName")(vmName.asInstanceOf[js.Any])
-    if (vmPath != null) __obj.updateDynamic("vmPath")(vmPath.asInstanceOf[js.Any])
-    if (vmServerAddress != null) __obj.updateDynamic("vmServerAddress")(vmServerAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[VmServer]
   }
+  @scala.inline
+  implicit class VmServerOps[Self <: VmServer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVmManagerName(value: VmManagerName): Self = this.set("vmManagerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmManagerName: Self = this.set("vmManagerName", js.undefined)
+    @scala.inline
+    def setVmManagerType(value: VmManagerType): Self = this.set("vmManagerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmManagerType: Self = this.set("vmManagerType", js.undefined)
+    @scala.inline
+    def setVmName(value: VmName): Self = this.set("vmName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmName: Self = this.set("vmName", js.undefined)
+    @scala.inline
+    def setVmPath(value: VmPath): Self = this.set("vmPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmPath: Self = this.set("vmPath", js.undefined)
+    @scala.inline
+    def setVmServerAddress(value: VmServerAddress): Self = this.set("vmServerAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmServerAddress: Self = this.set("vmServerAddress", js.undefined)
+  }
+  
 }
 

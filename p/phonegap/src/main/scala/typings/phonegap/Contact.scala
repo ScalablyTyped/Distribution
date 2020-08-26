@@ -22,12 +22,14 @@ trait Contact extends js.Object {
   var photos: js.Array[ContactField] = js.native
   var urls: js.Array[ContactField] = js.native
   def remove(): Unit = js.native
+  def remove(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* contactError */ ContactError, Unit]): Unit = js.native
   def remove(onSuccess: js.Function1[/* contacts */ Contacts, Unit]): Unit = js.native
   def remove(
     onSuccess: js.Function1[/* contacts */ Contacts, Unit],
     onError: js.Function1[/* contactError */ ContactError, Unit]
   ): Unit = js.native
   def save(): Unit = js.native
+  def save(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* contactError */ ContactError, Unit]): Unit = js.native
   def save(onSuccess: js.Function1[/* contacts */ Contacts, Unit]): Unit = js.native
   def save(
     onSuccess: js.Function1[/* contacts */ Contacts, Unit],

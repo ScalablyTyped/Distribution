@@ -29,7 +29,7 @@ class DeleteClientAction protected () extends ClientAction {
   @JSName("model")
   var model_FDeleteClientAction: IModel = js.native
   def closePage: Boolean = js.native
-  def closePage(newValue: Boolean): js.Any = js.native
+  def closePage_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

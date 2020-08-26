@@ -26,18 +26,38 @@ trait LayerVersionContentInput extends js.Object {
 
 object LayerVersionContentInput {
   @scala.inline
-  def apply(
-    S3Bucket: S3Bucket = null,
-    S3Key: S3Key = null,
-    S3ObjectVersion: S3ObjectVersion = null,
-    ZipFile: _Blob = null
-  ): LayerVersionContentInput = {
+  def apply(): LayerVersionContentInput = {
     val __obj = js.Dynamic.literal()
-    if (S3Bucket != null) __obj.updateDynamic("S3Bucket")(S3Bucket.asInstanceOf[js.Any])
-    if (S3Key != null) __obj.updateDynamic("S3Key")(S3Key.asInstanceOf[js.Any])
-    if (S3ObjectVersion != null) __obj.updateDynamic("S3ObjectVersion")(S3ObjectVersion.asInstanceOf[js.Any])
-    if (ZipFile != null) __obj.updateDynamic("ZipFile")(ZipFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerVersionContentInput]
   }
+  @scala.inline
+  implicit class LayerVersionContentInputOps[Self <: LayerVersionContentInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3Bucket(value: S3Bucket): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Bucket: Self = this.set("S3Bucket", js.undefined)
+    @scala.inline
+    def setS3Key(value: S3Key): Self = this.set("S3Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Key: Self = this.set("S3Key", js.undefined)
+    @scala.inline
+    def setS3ObjectVersion(value: S3ObjectVersion): Self = this.set("S3ObjectVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3ObjectVersion: Self = this.set("S3ObjectVersion", js.undefined)
+    @scala.inline
+    def setZipFile(value: _Blob): Self = this.set("ZipFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZipFile: Self = this.set("ZipFile", js.undefined)
+  }
+  
 }
 

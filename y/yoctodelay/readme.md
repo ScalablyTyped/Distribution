@@ -12,7 +12,7 @@ Delay a promise a specified amount of time
 | Keywords           | promise, resolve, delay, defer, wait, stall, timeout, settimeout, event, loop, next, tick, delay, async, await, promises, bluebird |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 4977 |
+| # downloads        | 4978 |
 | # stars            | 1 |
 
 ## Links

@@ -30,20 +30,44 @@ trait TestInvokeAuthorizerResponse extends js.Object {
 
 object TestInvokeAuthorizerResponse {
   @scala.inline
-  def apply(
-    disconnectAfterInSeconds: js.UndefOr[Seconds] = js.undefined,
-    isAuthenticated: js.UndefOr[IsAuthenticated] = js.undefined,
-    policyDocuments: PolicyDocuments = null,
-    principalId: PrincipalId = null,
-    refreshAfterInSeconds: js.UndefOr[Seconds] = js.undefined
-  ): TestInvokeAuthorizerResponse = {
+  def apply(): TestInvokeAuthorizerResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disconnectAfterInSeconds)) __obj.updateDynamic("disconnectAfterInSeconds")(disconnectAfterInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAuthenticated)) __obj.updateDynamic("isAuthenticated")(isAuthenticated.get.asInstanceOf[js.Any])
-    if (policyDocuments != null) __obj.updateDynamic("policyDocuments")(policyDocuments.asInstanceOf[js.Any])
-    if (principalId != null) __obj.updateDynamic("principalId")(principalId.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshAfterInSeconds)) __obj.updateDynamic("refreshAfterInSeconds")(refreshAfterInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestInvokeAuthorizerResponse]
   }
+  @scala.inline
+  implicit class TestInvokeAuthorizerResponseOps[Self <: TestInvokeAuthorizerResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisconnectAfterInSeconds(value: Seconds): Self = this.set("disconnectAfterInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisconnectAfterInSeconds: Self = this.set("disconnectAfterInSeconds", js.undefined)
+    @scala.inline
+    def setIsAuthenticated(value: IsAuthenticated): Self = this.set("isAuthenticated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsAuthenticated: Self = this.set("isAuthenticated", js.undefined)
+    @scala.inline
+    def setPolicyDocumentsVarargs(value: PolicyDocument*): Self = this.set("policyDocuments", js.Array(value :_*))
+    @scala.inline
+    def setPolicyDocuments(value: PolicyDocuments): Self = this.set("policyDocuments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyDocuments: Self = this.set("policyDocuments", js.undefined)
+    @scala.inline
+    def setPrincipalId(value: PrincipalId): Self = this.set("principalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalId: Self = this.set("principalId", js.undefined)
+    @scala.inline
+    def setRefreshAfterInSeconds(value: Seconds): Self = this.set("refreshAfterInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshAfterInSeconds: Self = this.set("refreshAfterInSeconds", js.undefined)
+  }
+  
 }
 

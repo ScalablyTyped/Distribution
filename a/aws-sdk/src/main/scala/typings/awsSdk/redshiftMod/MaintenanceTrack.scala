@@ -22,16 +22,36 @@ trait MaintenanceTrack extends js.Object {
 
 object MaintenanceTrack {
   @scala.inline
-  def apply(
-    DatabaseVersion: String = null,
-    MaintenanceTrackName: String = null,
-    UpdateTargets: EligibleTracksToUpdateList = null
-  ): MaintenanceTrack = {
+  def apply(): MaintenanceTrack = {
     val __obj = js.Dynamic.literal()
-    if (DatabaseVersion != null) __obj.updateDynamic("DatabaseVersion")(DatabaseVersion.asInstanceOf[js.Any])
-    if (MaintenanceTrackName != null) __obj.updateDynamic("MaintenanceTrackName")(MaintenanceTrackName.asInstanceOf[js.Any])
-    if (UpdateTargets != null) __obj.updateDynamic("UpdateTargets")(UpdateTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceTrack]
   }
+  @scala.inline
+  implicit class MaintenanceTrackOps[Self <: MaintenanceTrack] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabaseVersion(value: String): Self = this.set("DatabaseVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseVersion: Self = this.set("DatabaseVersion", js.undefined)
+    @scala.inline
+    def setMaintenanceTrackName(value: String): Self = this.set("MaintenanceTrackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceTrackName: Self = this.set("MaintenanceTrackName", js.undefined)
+    @scala.inline
+    def setUpdateTargetsVarargs(value: UpdateTarget*): Self = this.set("UpdateTargets", js.Array(value :_*))
+    @scala.inline
+    def setUpdateTargets(value: EligibleTracksToUpdateList): Self = this.set("UpdateTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTargets: Self = this.set("UpdateTargets", js.undefined)
+  }
+  
 }
 

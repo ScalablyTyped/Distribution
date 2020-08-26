@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
+@js.native
 trait PlusGeolocationPositionOptions extends js.Object {
   /**
     * 指定获取的定位数据坐标系类型
@@ -25,14 +26,14 @@ trait PlusGeolocationPositionOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var coordsType: js.UndefOr[String] = js.undefined
+  var coordsType: js.UndefOr[String] = js.native
   /**
     * 是否高精确度获取位置信息
     * 高精度获取表示需要使用更多的系统资源，默认值为false。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var enableHighAccuracy: js.UndefOr[Boolean] = js.undefined
+  var enableHighAccuracy: js.UndefOr[Boolean] = js.native
   /**
     * 是否解析地址信息
     * 解析的地址信息保存到Position对象的address、addresses属性中，true表示解析地址信息，false表示不解析地址信息，返回的Position对象的address、addresses属性值为undefined，默认值为true。
@@ -40,7 +41,7 @@ trait PlusGeolocationPositionOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var geocode: js.UndefOr[Boolean] = js.undefined
+  var geocode: js.UndefOr[Boolean] = js.native
   /**
     * 获取位置信息的间隔时间
     * 单位为毫秒（ms），默认值为5000（即5秒）。调用plus.geolocation.watchPosition时为更新位置信息的间隔时间。
@@ -48,7 +49,7 @@ trait PlusGeolocationPositionOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var maximumAge: js.UndefOr[Double] = js.undefined
+  var maximumAge: js.UndefOr[Double] = js.native
   /**
     * 优先使用的定位模块
     * 可取以下供应者：
@@ -63,34 +64,58 @@ trait PlusGeolocationPositionOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var provider: js.UndefOr[system | baidu | amap] = js.undefined
+  var provider: js.UndefOr[system | baidu | amap] = js.native
   /**
     * 获取位置信息的超时时间
     * 单位为毫秒（ms），默认值为不超时。如果在指定的时间内没有获取到位置信息则触发错误回调函数。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var timeout: js.UndefOr[Double] = js.undefined
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object PlusGeolocationPositionOptions {
   @scala.inline
-  def apply(
-    coordsType: String = null,
-    enableHighAccuracy: js.UndefOr[Boolean] = js.undefined,
-    geocode: js.UndefOr[Boolean] = js.undefined,
-    maximumAge: js.UndefOr[Double] = js.undefined,
-    provider: system | baidu | amap = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): PlusGeolocationPositionOptions = {
+  def apply(): PlusGeolocationPositionOptions = {
     val __obj = js.Dynamic.literal()
-    if (coordsType != null) __obj.updateDynamic("coordsType")(coordsType.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(geocode)) __obj.updateDynamic("geocode")(geocode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumAge)) __obj.updateDynamic("maximumAge")(maximumAge.get.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusGeolocationPositionOptions]
   }
+  @scala.inline
+  implicit class PlusGeolocationPositionOptionsOps[Self <: PlusGeolocationPositionOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoordsType(value: String): Self = this.set("coordsType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoordsType: Self = this.set("coordsType", js.undefined)
+    @scala.inline
+    def setEnableHighAccuracy(value: Boolean): Self = this.set("enableHighAccuracy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableHighAccuracy: Self = this.set("enableHighAccuracy", js.undefined)
+    @scala.inline
+    def setGeocode(value: Boolean): Self = this.set("geocode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeocode: Self = this.set("geocode", js.undefined)
+    @scala.inline
+    def setMaximumAge(value: Double): Self = this.set("maximumAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumAge: Self = this.set("maximumAge", js.undefined)
+    @scala.inline
+    def setProvider(value: system | baidu | amap): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

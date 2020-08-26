@@ -30,19 +30,40 @@ trait UpdateScriptInput extends js.Object {
 
 object UpdateScriptInput {
   @scala.inline
-  def apply(
-    ScriptId: ScriptIdOrArn,
-    Name: NonZeroAndMaxString = null,
-    StorageLocation: S3Location = null,
-    Version: NonZeroAndMaxString = null,
-    ZipFile: ZipBlob = null
-  ): UpdateScriptInput = {
+  def apply(ScriptId: ScriptIdOrArn): UpdateScriptInput = {
     val __obj = js.Dynamic.literal(ScriptId = ScriptId.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (StorageLocation != null) __obj.updateDynamic("StorageLocation")(StorageLocation.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
-    if (ZipFile != null) __obj.updateDynamic("ZipFile")(ZipFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateScriptInput]
   }
+  @scala.inline
+  implicit class UpdateScriptInputOps[Self <: UpdateScriptInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScriptId(value: ScriptIdOrArn): Self = this.set("ScriptId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStorageLocation(value: S3Location): Self = this.set("StorageLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageLocation: Self = this.set("StorageLocation", js.undefined)
+    @scala.inline
+    def setVersion(value: NonZeroAndMaxString): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+    @scala.inline
+    def setZipFile(value: ZipBlob): Self = this.set("ZipFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZipFile: Self = this.set("ZipFile", js.undefined)
+  }
+  
 }
 

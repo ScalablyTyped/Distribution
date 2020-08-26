@@ -13,12 +13,34 @@ trait MaximumQps extends js.Object {
 
 object MaximumQps {
   @scala.inline
-  def apply(maximumQps: js.UndefOr[Double] = js.undefined, region: String = null, url: String = null): MaximumQps = {
+  def apply(): MaximumQps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maximumQps)) __obj.updateDynamic("maximumQps")(maximumQps.get.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaximumQps]
   }
+  @scala.inline
+  implicit class MaximumQpsOps[Self <: MaximumQps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaximumQps(value: Double): Self = this.set("maximumQps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumQps: Self = this.set("maximumQps", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

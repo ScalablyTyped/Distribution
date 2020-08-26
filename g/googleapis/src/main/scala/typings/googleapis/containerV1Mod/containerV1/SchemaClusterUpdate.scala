@@ -80,28 +80,60 @@ trait SchemaClusterUpdate extends js.Object {
 
 object SchemaClusterUpdate {
   @scala.inline
-  def apply(
-    desiredAddonsConfig: SchemaAddonsConfig = null,
-    desiredImageType: String = null,
-    desiredLocations: js.Array[String] = null,
-    desiredMasterAuthorizedNetworksConfig: SchemaMasterAuthorizedNetworksConfig = null,
-    desiredMasterVersion: String = null,
-    desiredMonitoringService: String = null,
-    desiredNodePoolAutoscaling: SchemaNodePoolAutoscaling = null,
-    desiredNodePoolId: String = null,
-    desiredNodeVersion: String = null
-  ): SchemaClusterUpdate = {
+  def apply(): SchemaClusterUpdate = {
     val __obj = js.Dynamic.literal()
-    if (desiredAddonsConfig != null) __obj.updateDynamic("desiredAddonsConfig")(desiredAddonsConfig.asInstanceOf[js.Any])
-    if (desiredImageType != null) __obj.updateDynamic("desiredImageType")(desiredImageType.asInstanceOf[js.Any])
-    if (desiredLocations != null) __obj.updateDynamic("desiredLocations")(desiredLocations.asInstanceOf[js.Any])
-    if (desiredMasterAuthorizedNetworksConfig != null) __obj.updateDynamic("desiredMasterAuthorizedNetworksConfig")(desiredMasterAuthorizedNetworksConfig.asInstanceOf[js.Any])
-    if (desiredMasterVersion != null) __obj.updateDynamic("desiredMasterVersion")(desiredMasterVersion.asInstanceOf[js.Any])
-    if (desiredMonitoringService != null) __obj.updateDynamic("desiredMonitoringService")(desiredMonitoringService.asInstanceOf[js.Any])
-    if (desiredNodePoolAutoscaling != null) __obj.updateDynamic("desiredNodePoolAutoscaling")(desiredNodePoolAutoscaling.asInstanceOf[js.Any])
-    if (desiredNodePoolId != null) __obj.updateDynamic("desiredNodePoolId")(desiredNodePoolId.asInstanceOf[js.Any])
-    if (desiredNodeVersion != null) __obj.updateDynamic("desiredNodeVersion")(desiredNodeVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClusterUpdate]
   }
+  @scala.inline
+  implicit class SchemaClusterUpdateOps[Self <: SchemaClusterUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesiredAddonsConfig(value: SchemaAddonsConfig): Self = this.set("desiredAddonsConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredAddonsConfig: Self = this.set("desiredAddonsConfig", js.undefined)
+    @scala.inline
+    def setDesiredImageType(value: String): Self = this.set("desiredImageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredImageType: Self = this.set("desiredImageType", js.undefined)
+    @scala.inline
+    def setDesiredLocationsVarargs(value: String*): Self = this.set("desiredLocations", js.Array(value :_*))
+    @scala.inline
+    def setDesiredLocations(value: js.Array[String]): Self = this.set("desiredLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredLocations: Self = this.set("desiredLocations", js.undefined)
+    @scala.inline
+    def setDesiredMasterAuthorizedNetworksConfig(value: SchemaMasterAuthorizedNetworksConfig): Self = this.set("desiredMasterAuthorizedNetworksConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredMasterAuthorizedNetworksConfig: Self = this.set("desiredMasterAuthorizedNetworksConfig", js.undefined)
+    @scala.inline
+    def setDesiredMasterVersion(value: String): Self = this.set("desiredMasterVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredMasterVersion: Self = this.set("desiredMasterVersion", js.undefined)
+    @scala.inline
+    def setDesiredMonitoringService(value: String): Self = this.set("desiredMonitoringService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredMonitoringService: Self = this.set("desiredMonitoringService", js.undefined)
+    @scala.inline
+    def setDesiredNodePoolAutoscaling(value: SchemaNodePoolAutoscaling): Self = this.set("desiredNodePoolAutoscaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredNodePoolAutoscaling: Self = this.set("desiredNodePoolAutoscaling", js.undefined)
+    @scala.inline
+    def setDesiredNodePoolId(value: String): Self = this.set("desiredNodePoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredNodePoolId: Self = this.set("desiredNodePoolId", js.undefined)
+    @scala.inline
+    def setDesiredNodeVersion(value: String): Self = this.set("desiredNodeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredNodeVersion: Self = this.set("desiredNodeVersion", js.undefined)
+  }
+  
 }
 

@@ -26,17 +26,38 @@ trait DeleteLaunchTemplateVersionsRequest extends js.Object {
 
 object DeleteLaunchTemplateVersionsRequest {
   @scala.inline
-  def apply(
-    Versions: VersionStringList,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    LaunchTemplateId: LaunchTemplateId = null,
-    LaunchTemplateName: LaunchTemplateName = null
-  ): DeleteLaunchTemplateVersionsRequest = {
+  def apply(Versions: VersionStringList): DeleteLaunchTemplateVersionsRequest = {
     val __obj = js.Dynamic.literal(Versions = Versions.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
-    if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLaunchTemplateVersionsRequest]
   }
+  @scala.inline
+  implicit class DeleteLaunchTemplateVersionsRequestOps[Self <: DeleteLaunchTemplateVersionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVersionsVarargs(value: String*): Self = this.set("Versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: VersionStringList): Self = this.set("Versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setLaunchTemplateId(value: LaunchTemplateId): Self = this.set("LaunchTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateId: Self = this.set("LaunchTemplateId", js.undefined)
+    @scala.inline
+    def setLaunchTemplateName(value: LaunchTemplateName): Self = this.set("LaunchTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateName: Self = this.set("LaunchTemplateName", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ Add extensions to GraphQL servers
 | ------------------ | :-------------: |
 | Full name          | graphql-extensions |
 | Keywords           | - |
-| # releases         | 130 |
-| # dependents       | 36 |
-| # downloads        | 37380508 |
+| # releases         | 129 |
+| # dependents       | 35 |
+| # downloads        | 37749485 |
 | # stars            | 0 |
 
 ## Links

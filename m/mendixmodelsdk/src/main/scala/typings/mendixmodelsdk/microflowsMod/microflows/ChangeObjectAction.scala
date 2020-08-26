@@ -26,7 +26,7 @@ class ChangeObjectAction protected () extends ChangeMembersAction {
   @JSName("model")
   var model_FChangeObjectAction: IModel = js.native
   def changeVariableName: String = js.native
-  def changeVariableName(newValue: String): js.Any = js.native
+  def changeVariableName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

@@ -19,6 +19,12 @@ trait Static extends js.Object {
     * This method returns an object with the method cancel(), which you call if you want to cancel live replication.
     */
   def replicate[Content](source: String, target: String): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
+  def replicate[Content](
+    source: String,
+    target: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[ReplicationResultComplete[Content]]
+  ): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
   def replicate[Content](source: String, target: String, options: ReplicateOptions): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
   def replicate[Content](
     source: String,
@@ -27,6 +33,12 @@ trait Static extends js.Object {
     callback: Callback[ReplicationResultComplete[Content]]
   ): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
   def replicate[Content](source: String, target: Database[Content]): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
+  def replicate[Content](
+    source: String,
+    target: Database[Content],
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[ReplicationResultComplete[Content]]
+  ): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
   def replicate[Content](source: String, target: Database[Content], options: ReplicateOptions): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
   def replicate[Content](
     source: String,
@@ -35,6 +47,12 @@ trait Static extends js.Object {
     callback: Callback[ReplicationResultComplete[Content]]
   ): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
   def replicate[Content](source: Database[Content], target: String): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
+  def replicate[Content](
+    source: Database[Content],
+    target: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[ReplicationResultComplete[Content]]
+  ): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
   def replicate[Content](source: Database[Content], target: String, options: ReplicateOptions): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
   def replicate[Content](
     source: Database[Content],
@@ -43,6 +61,12 @@ trait Static extends js.Object {
     callback: Callback[ReplicationResultComplete[Content]]
   ): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
   def replicate[Content](source: Database[Content], target: Database[Content]): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
+  def replicate[Content](
+    source: Database[Content],
+    target: Database[Content],
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[ReplicationResultComplete[Content]]
+  ): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
   def replicate[Content](source: Database[Content], target: Database[Content], options: ReplicateOptions): typings.pouchdbReplication.PouchDB.Replication.Replication[Content] = js.native
   def replicate[Content](
     source: Database[Content],
@@ -60,6 +84,12 @@ trait Static extends js.Object {
     * `PouchDB.sync('mydb', 'http://localhost:5984/mydb')`;
     */
   def sync[Content](source: String, target: String): Sync[Content] = js.native
+  def sync[Content](
+    source: String,
+    target: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[SyncResultComplete[Content]]
+  ): Sync[Content] = js.native
   def sync[Content](source: String, target: String, options: SyncOptions): Sync[Content] = js.native
   def sync[Content](
     source: String,
@@ -68,6 +98,12 @@ trait Static extends js.Object {
     callback: Callback[SyncResultComplete[Content]]
   ): Sync[Content] = js.native
   def sync[Content](source: String, target: Database[Content]): Sync[Content] = js.native
+  def sync[Content](
+    source: String,
+    target: Database[Content],
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[SyncResultComplete[Content]]
+  ): Sync[Content] = js.native
   def sync[Content](source: String, target: Database[Content], options: SyncOptions): Sync[Content] = js.native
   def sync[Content](
     source: String,
@@ -76,6 +112,12 @@ trait Static extends js.Object {
     callback: Callback[SyncResultComplete[Content]]
   ): Sync[Content] = js.native
   def sync[Content](source: Database[Content], target: String): Sync[Content] = js.native
+  def sync[Content](
+    source: Database[Content],
+    target: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[SyncResultComplete[Content]]
+  ): Sync[Content] = js.native
   def sync[Content](source: Database[Content], target: String, options: SyncOptions): Sync[Content] = js.native
   def sync[Content](
     source: Database[Content],
@@ -84,6 +126,12 @@ trait Static extends js.Object {
     callback: Callback[SyncResultComplete[Content]]
   ): Sync[Content] = js.native
   def sync[Content](source: Database[Content], target: Database[Content]): Sync[Content] = js.native
+  def sync[Content](
+    source: Database[Content],
+    target: Database[Content],
+    options: js.UndefOr[scala.Nothing],
+    callback: Callback[SyncResultComplete[Content]]
+  ): Sync[Content] = js.native
   def sync[Content](source: Database[Content], target: Database[Content], options: SyncOptions): Sync[Content] = js.native
   def sync[Content](
     source: Database[Content],

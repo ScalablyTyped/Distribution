@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
   * **XReference**: is a client-side interface which must be implemented by the holder of any weak reference. It is used for notification when the adapted
   * object dies.;
   */
+@js.native
 trait XWeak extends XInterface {
   /**
     * queries the weak adapter.
@@ -35,7 +36,7 @@ trait XWeak extends XInterface {
     * It is important that the adapter must know, but not hold the adapted object. If the adapted object dies, all references to the adapter have to be
     * notified to release the adapter.
     */
-  def queryAdapter(): XAdapter
+  def queryAdapter(): XAdapter = js.native
 }
 
 object XWeak {
@@ -49,5 +50,20 @@ object XWeak {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryAdapter = js.Any.fromFunction0(queryAdapter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XWeak]
   }
+  @scala.inline
+  implicit class XWeakOps[Self <: XWeak] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryAdapter(value: () => XAdapter): Self = this.set("queryAdapter", js.Any.fromFunction0(value))
+  }
+  
 }
 

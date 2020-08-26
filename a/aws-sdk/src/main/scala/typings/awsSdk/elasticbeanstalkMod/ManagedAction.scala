@@ -30,20 +30,42 @@ trait ManagedAction extends js.Object {
 
 object ManagedAction {
   @scala.inline
-  def apply(
-    ActionDescription: String = null,
-    ActionId: String = null,
-    ActionType: ActionType = null,
-    Status: ActionStatus = null,
-    WindowStartTime: Timestamp = null
-  ): ManagedAction = {
+  def apply(): ManagedAction = {
     val __obj = js.Dynamic.literal()
-    if (ActionDescription != null) __obj.updateDynamic("ActionDescription")(ActionDescription.asInstanceOf[js.Any])
-    if (ActionId != null) __obj.updateDynamic("ActionId")(ActionId.asInstanceOf[js.Any])
-    if (ActionType != null) __obj.updateDynamic("ActionType")(ActionType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (WindowStartTime != null) __obj.updateDynamic("WindowStartTime")(WindowStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedAction]
   }
+  @scala.inline
+  implicit class ManagedActionOps[Self <: ManagedAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionDescription(value: String): Self = this.set("ActionDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionDescription: Self = this.set("ActionDescription", js.undefined)
+    @scala.inline
+    def setActionId(value: String): Self = this.set("ActionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionId: Self = this.set("ActionId", js.undefined)
+    @scala.inline
+    def setActionType(value: ActionType): Self = this.set("ActionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionType: Self = this.set("ActionType", js.undefined)
+    @scala.inline
+    def setStatus(value: ActionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setWindowStartTime(value: Timestamp): Self = this.set("WindowStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowStartTime: Self = this.set("WindowStartTime", js.undefined)
+  }
+  
 }
 

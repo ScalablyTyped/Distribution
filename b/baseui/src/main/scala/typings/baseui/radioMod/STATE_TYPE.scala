@@ -6,8 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait STATE_TYPE extends js.Object {
-  var change: CHANGE
+  var change: CHANGE = js.native
 }
 
 @JSImport("baseui/radio", "STATE_TYPE")

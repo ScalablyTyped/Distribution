@@ -18,10 +18,28 @@ trait GetApiKeyRequest extends js.Object {
 
 object GetApiKeyRequest {
   @scala.inline
-  def apply(apiKey: String, includeValue: js.UndefOr[NullableBoolean] = js.undefined): GetApiKeyRequest = {
+  def apply(apiKey: String): GetApiKeyRequest = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeValue)) __obj.updateDynamic("includeValue")(includeValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApiKeyRequest]
   }
+  @scala.inline
+  implicit class GetApiKeyRequestOps[Self <: GetApiKeyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiKey(value: String): Self = this.set("apiKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIncludeValue(value: NullableBoolean): Self = this.set("includeValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeValue: Self = this.set("includeValue", js.undefined)
+  }
+  
 }
 

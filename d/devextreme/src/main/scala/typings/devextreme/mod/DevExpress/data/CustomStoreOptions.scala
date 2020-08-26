@@ -9,25 +9,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CustomStoreOptions extends StoreOptions[CustomStore] {
   /** @name CustomStore.Options.byKey */
-  var byKey: js.UndefOr[js.Function1[/* key */ js.Any | String | Double, Promise[_] | JQueryPromise[_]]] = js.undefined
+  var byKey: js.UndefOr[js.Function1[/* key */ js.Any | String | Double, Promise[_] | JQueryPromise[_]]] = js.native
   /** @name CustomStore.Options.cacheRawData */
-  var cacheRawData: js.UndefOr[Boolean] = js.undefined
+  var cacheRawData: js.UndefOr[Boolean] = js.native
   /** @name CustomStore.Options.insert */
-  var insert: js.UndefOr[js.Function1[/* values */ js.Any, Promise[_] | JQueryPromise[_]]] = js.undefined
+  var insert: js.UndefOr[js.Function1[/* values */ js.Any, Promise[_] | JQueryPromise[_]]] = js.native
   /** @name CustomStore.Options.load */
   var load: js.UndefOr[
     js.Function1[/* options */ LoadOptions, Promise[_] | JQueryPromise[_] | js.Array[_]]
-  ] = js.undefined
+  ] = js.native
   /** @name CustomStore.Options.loadMode */
-  var loadMode: js.UndefOr[processed | raw] = js.undefined
+  var loadMode: js.UndefOr[processed | raw] = js.native
   /** @name CustomStore.Options.remove */
   var remove: js.UndefOr[
     js.Function1[/* key */ js.Any | String | Double, Promise[Unit] | JQueryPromise[Unit]]
-  ] = js.undefined
+  ] = js.native
   /** @name CustomStore.Options.totalCount */
-  var totalCount: js.UndefOr[js.Function1[/* loadOptions */ Filter, Promise[Double] | JQueryPromise[Double]]] = js.undefined
+  var totalCount: js.UndefOr[js.Function1[/* loadOptions */ Filter, Promise[Double] | JQueryPromise[Double]]] = js.native
   /** @name CustomStore.Options.update */
   var update: js.UndefOr[
     js.Function2[
@@ -35,61 +36,65 @@ trait CustomStoreOptions extends StoreOptions[CustomStore] {
       /* values */ js.Any, 
       Promise[_] | JQueryPromise[_]
     ]
-  ] = js.undefined
+  ] = js.native
   /** @name CustomStore.Options.useDefaultSearch */
-  var useDefaultSearch: js.UndefOr[Boolean] = js.undefined
+  var useDefaultSearch: js.UndefOr[Boolean] = js.native
 }
 
 object CustomStoreOptions {
   @scala.inline
-  def apply(
-    byKey: /* key */ js.Any | String | Double => Promise[_] | JQueryPromise[_] = null,
-    cacheRawData: js.UndefOr[Boolean] = js.undefined,
-    errorHandler: js.Function = null,
-    insert: /* values */ js.Any => Promise[_] | JQueryPromise[_] = null,
-    key: String | js.Array[String] = null,
-    load: /* options */ LoadOptions => Promise[_] | JQueryPromise[_] | js.Array[_] = null,
-    loadMode: processed | raw = null,
-    onInserted: (/* values */ js.Any, /* key */ js.Any | String | Double) => _ = null,
-    onInserting: /* values */ js.Any => _ = null,
-    onLoaded: /* result */ js.Array[_] => _ = null,
-    onLoading: /* loadOptions */ LoadOptions => _ = null,
-    onModified: js.Function = null,
-    onModifying: js.Function = null,
-    onPush: /* changes */ js.Array[_] => _ = null,
-    onRemoved: /* key */ js.Any | String | Double => _ = null,
-    onRemoving: /* key */ js.Any | String | Double => _ = null,
-    onUpdated: (/* key */ js.Any | String | Double, /* values */ js.Any) => _ = null,
-    onUpdating: (/* key */ js.Any | String | Double, /* values */ js.Any) => _ = null,
-    remove: /* key */ js.Any | String | Double => Promise[Unit] | JQueryPromise[Unit] = null,
-    totalCount: /* loadOptions */ Filter => Promise[Double] | JQueryPromise[Double] = null,
-    update: (/* key */ js.Any | String | Double, /* values */ js.Any) => Promise[_] | JQueryPromise[_] = null,
-    useDefaultSearch: js.UndefOr[Boolean] = js.undefined
-  ): CustomStoreOptions = {
+  def apply(): CustomStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (byKey != null) __obj.updateDynamic("byKey")(js.Any.fromFunction1(byKey))
-    if (!js.isUndefined(cacheRawData)) __obj.updateDynamic("cacheRawData")(cacheRawData.get.asInstanceOf[js.Any])
-    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler.asInstanceOf[js.Any])
-    if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction1(insert))
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
-    if (loadMode != null) __obj.updateDynamic("loadMode")(loadMode.asInstanceOf[js.Any])
-    if (onInserted != null) __obj.updateDynamic("onInserted")(js.Any.fromFunction2(onInserted))
-    if (onInserting != null) __obj.updateDynamic("onInserting")(js.Any.fromFunction1(onInserting))
-    if (onLoaded != null) __obj.updateDynamic("onLoaded")(js.Any.fromFunction1(onLoaded))
-    if (onLoading != null) __obj.updateDynamic("onLoading")(js.Any.fromFunction1(onLoading))
-    if (onModified != null) __obj.updateDynamic("onModified")(onModified.asInstanceOf[js.Any])
-    if (onModifying != null) __obj.updateDynamic("onModifying")(onModifying.asInstanceOf[js.Any])
-    if (onPush != null) __obj.updateDynamic("onPush")(js.Any.fromFunction1(onPush))
-    if (onRemoved != null) __obj.updateDynamic("onRemoved")(js.Any.fromFunction1(onRemoved))
-    if (onRemoving != null) __obj.updateDynamic("onRemoving")(js.Any.fromFunction1(onRemoving))
-    if (onUpdated != null) __obj.updateDynamic("onUpdated")(js.Any.fromFunction2(onUpdated))
-    if (onUpdating != null) __obj.updateDynamic("onUpdating")(js.Any.fromFunction2(onUpdating))
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
-    if (totalCount != null) __obj.updateDynamic("totalCount")(js.Any.fromFunction1(totalCount))
-    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
-    if (!js.isUndefined(useDefaultSearch)) __obj.updateDynamic("useDefaultSearch")(useDefaultSearch.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomStoreOptions]
   }
+  @scala.inline
+  implicit class CustomStoreOptionsOps[Self <: CustomStoreOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setByKey(value: /* key */ js.Any | String | Double => Promise[_] | JQueryPromise[_]): Self = this.set("byKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteByKey: Self = this.set("byKey", js.undefined)
+    @scala.inline
+    def setCacheRawData(value: Boolean): Self = this.set("cacheRawData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheRawData: Self = this.set("cacheRawData", js.undefined)
+    @scala.inline
+    def setInsert(value: /* values */ js.Any => Promise[_] | JQueryPromise[_]): Self = this.set("insert", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInsert: Self = this.set("insert", js.undefined)
+    @scala.inline
+    def setLoad(value: /* options */ LoadOptions => Promise[_] | JQueryPromise[_] | js.Array[_]): Self = this.set("load", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setLoadMode(value: processed | raw): Self = this.set("loadMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadMode: Self = this.set("loadMode", js.undefined)
+    @scala.inline
+    def setRemove(value: /* key */ js.Any | String | Double => Promise[Unit] | JQueryPromise[Unit]): Self = this.set("remove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemove: Self = this.set("remove", js.undefined)
+    @scala.inline
+    def setTotalCount(value: /* loadOptions */ Filter => Promise[Double] | JQueryPromise[Double]): Self = this.set("totalCount", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTotalCount: Self = this.set("totalCount", js.undefined)
+    @scala.inline
+    def setUpdate(value: (/* key */ js.Any | String | Double, /* values */ js.Any) => Promise[_] | JQueryPromise[_]): Self = this.set("update", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+    @scala.inline
+    def setUseDefaultSearch(value: Boolean): Self = this.set("useDefaultSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseDefaultSearch: Self = this.set("useDefaultSearch", js.undefined)
+  }
+  
 }
 

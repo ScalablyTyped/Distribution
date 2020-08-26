@@ -11,7 +11,7 @@ Express 3.x locals for layout, partial and blocks.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 56 |
-| # downloads        | 1063838 |
+| # downloads        | 1090937 |
 | # stars            | 6 |
 
 ## Links

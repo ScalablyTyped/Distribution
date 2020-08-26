@@ -4,20 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SyncStatus extends js.Object {
   /** Synchornization operation detected a merge conflict. */
-  var mergeConflict: js.UndefOr[Boolean] = js.undefined
+  var mergeConflict: js.UndefOr[Boolean] = js.native
   /** An error occurred during the synchronization operation. */
-  var syncError: js.UndefOr[Boolean] = js.undefined
+  var syncError: js.UndefOr[Boolean] = js.native
 }
 
 object SyncStatus {
   @scala.inline
-  def apply(mergeConflict: js.UndefOr[Boolean] = js.undefined, syncError: js.UndefOr[Boolean] = js.undefined): SyncStatus = {
+  def apply(): SyncStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(mergeConflict)) __obj.updateDynamic("mergeConflict")(mergeConflict.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(syncError)) __obj.updateDynamic("syncError")(syncError.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncStatus]
   }
+  @scala.inline
+  implicit class SyncStatusOps[Self <: SyncStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMergeConflict(value: Boolean): Self = this.set("mergeConflict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeConflict: Self = this.set("mergeConflict", js.undefined)
+    @scala.inline
+    def setSyncError(value: Boolean): Self = this.set("syncError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyncError: Self = this.set("syncError", js.undefined)
+  }
+  
 }
 

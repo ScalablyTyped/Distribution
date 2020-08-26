@@ -2,18 +2,18 @@ package typings.senchaTouch.Ext.util
 
 import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
-import typings.senchaTouch.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ISortable extends IBase {
   /** [Property] (String) */
-  var defaultSortDirection: js.UndefOr[String] = js.undefined
+  var defaultSortDirection: js.UndefOr[String] = js.native
   /** [Method] Performs initialization of this mixin  */
-  var initSortable: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var initSortable: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Property] (Boolean) */
-  var isSortable: js.UndefOr[Boolean] = js.undefined
+  var isSortable: js.UndefOr[Boolean] = js.native
   /** [Method] Sorts the data in the Store by one or more of its properties
     * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
     * @param direction String The overall direction to sort the data by.
@@ -29,65 +29,57 @@ trait ISortable extends IBase {
       /* doSort */ js.UndefOr[Boolean], 
       Array
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Property] (String) */
-  var sortRoot: js.UndefOr[String] = js.undefined
+  var sortRoot: js.UndefOr[String] = js.native
   /** [Property] (Ext.util.MixedCollection) */
-  var sorters: js.UndefOr[IMixedCollection] = js.undefined
+  var sorters: js.UndefOr[IMixedCollection] = js.native
 }
 
 object ISortable {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    defaultSortDirection: String = null,
-    destroy: () => Unit = null,
-    extend: String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    initSortable: () => Unit = null,
-    isSortable: js.UndefOr[Boolean] = js.undefined,
-    mixins: js.Any = null,
-    platformConfig: js.Any = null,
-    self: IClass = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    sort: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String], /* where */ js.UndefOr[String], /* doSort */ js.UndefOr[Boolean]) => Array = null,
-    sortRoot: String = null,
-    sorters: IMixedCollection = null,
-    statics: js.Any = null,
-    uses: Array = null
-  ): ISortable = {
+  def apply(): ISortable = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (initSortable != null) __obj.updateDynamic("initSortable")(js.Any.fromFunction0(initSortable))
-    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction4(sort))
-    if (sortRoot != null) __obj.updateDynamic("sortRoot")(sortRoot.asInstanceOf[js.Any])
-    if (sorters != null) __obj.updateDynamic("sorters")(sorters.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISortable]
   }
+  @scala.inline
+  implicit class ISortableOps[Self <: ISortable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultSortDirection(value: String): Self = this.set("defaultSortDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSortDirection: Self = this.set("defaultSortDirection", js.undefined)
+    @scala.inline
+    def setInitSortable(value: () => Unit): Self = this.set("initSortable", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteInitSortable: Self = this.set("initSortable", js.undefined)
+    @scala.inline
+    def setIsSortable(value: Boolean): Self = this.set("isSortable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSortable: Self = this.set("isSortable", js.undefined)
+    @scala.inline
+    def setSort(
+      value: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String], /* where */ js.UndefOr[String], /* doSort */ js.UndefOr[Boolean]) => Array
+    ): Self = this.set("sort", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setSortRoot(value: String): Self = this.set("sortRoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortRoot: Self = this.set("sortRoot", js.undefined)
+    @scala.inline
+    def setSorters(value: IMixedCollection): Self = this.set("sorters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSorters: Self = this.set("sorters", js.undefined)
+  }
+  
 }
 

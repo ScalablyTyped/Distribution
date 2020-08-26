@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "bootstrap-filestyle"
-version := "1.2-dt-20200331Z-bc94b7"
-scalaVersion := "2.13.2"
+version := "1.2-dt-20200331Z-6efacf"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

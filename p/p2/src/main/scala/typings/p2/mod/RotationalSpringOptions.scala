@@ -4,30 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RotationalSpringOptions extends SpringOptions {
-  var restAngle: js.UndefOr[Double] = js.undefined
+  var restAngle: js.UndefOr[Double] = js.native
 }
 
 object RotationalSpringOptions {
   @scala.inline
-  def apply(
-    damping: js.UndefOr[Double] = js.undefined,
-    localAnchorA: js.Tuple2[Double, Double] = null,
-    localAnchorB: js.Tuple2[Double, Double] = null,
-    restAngle: js.UndefOr[Double] = js.undefined,
-    stiffness: js.UndefOr[Double] = js.undefined,
-    worldAnchorA: js.Tuple2[Double, Double] = null,
-    worldAnchorB: js.Tuple2[Double, Double] = null
-  ): RotationalSpringOptions = {
+  def apply(): RotationalSpringOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(damping)) __obj.updateDynamic("damping")(damping.get.asInstanceOf[js.Any])
-    if (localAnchorA != null) __obj.updateDynamic("localAnchorA")(localAnchorA.asInstanceOf[js.Any])
-    if (localAnchorB != null) __obj.updateDynamic("localAnchorB")(localAnchorB.asInstanceOf[js.Any])
-    if (!js.isUndefined(restAngle)) __obj.updateDynamic("restAngle")(restAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stiffness)) __obj.updateDynamic("stiffness")(stiffness.get.asInstanceOf[js.Any])
-    if (worldAnchorA != null) __obj.updateDynamic("worldAnchorA")(worldAnchorA.asInstanceOf[js.Any])
-    if (worldAnchorB != null) __obj.updateDynamic("worldAnchorB")(worldAnchorB.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotationalSpringOptions]
   }
+  @scala.inline
+  implicit class RotationalSpringOptionsOps[Self <: RotationalSpringOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRestAngle(value: Double): Self = this.set("restAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestAngle: Self = this.set("restAngle", js.undefined)
+  }
+  
 }
 

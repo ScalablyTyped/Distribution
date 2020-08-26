@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * #### Notes
   * Subclasses are free to reimplement rendering methods as needed.
   */
-@JSImport("@lumino/widgets/lib/tabbar", "TabBar.Renderer")
+@JSImport("@lumino/widgets/types/tabbar", "TabBar.Renderer")
 @js.native
 /**
   * Construct a new renderer.
@@ -22,11 +22,6 @@ class Renderer ()
   extends IRenderer[js.Any] {
   var _tabID: js.Any = js.native
   var _tabKeys: js.Any = js.native
-  /**
-    * A selector which matches the close icon node in a tab.
-    */
-  /* CompleteClass */
-  override val closeIconSelector: String = js.native
   /**
     * Create the class name for the tab icon.
     *
@@ -96,14 +91,5 @@ class Renderer ()
     * @returns A virtual element representing the tab label.
     */
   def renderLabel(data: IRenderData[_]): VirtualElement = js.native
-  /**
-    * Render the virtual element for a tab.
-    *
-    * @param data - The data to use for rendering the tab.
-    *
-    * @returns A virtual element representing the tab.
-    */
-  /* CompleteClass */
-  override def renderTab(data: IRenderData[js.Any]): VirtualElement = js.native
 }
 

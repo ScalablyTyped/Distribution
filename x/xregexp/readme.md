@@ -10,9 +10,9 @@ Extended regular expressions
 | ------------------ | :-------------: |
 | Full name          | xregexp |
 | Keywords           | regex, regexp, regular expression, unicode |
-| # releases         | 8 |
-| # dependents       | 427 |
-| # downloads        | 183969347 |
+| # releases         | 7 |
+| # dependents       | 434 |
+| # downloads        | 184771353 |
 | # stars            | 31 |
 
 ## Links

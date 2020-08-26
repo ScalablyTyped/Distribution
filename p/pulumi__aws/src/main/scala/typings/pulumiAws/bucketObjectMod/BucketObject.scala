@@ -82,7 +82,7 @@ class BucketObject protected () extends CustomResource {
     */
   val kmsKeyId: Output_[js.UndefOr[String]] = js.native
   /**
-    * A mapping of keys/values to provision metadata (will be automatically prefixed by `x-amz-meta-`, note that only lowercase label are currently supported by the AWS Go API).
+    * A map of keys/values to provision metadata (will be automatically prefixed by `x-amz-meta-`, note that only lowercase label are currently supported by the AWS Go API).
     */
   val metadata: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
@@ -111,9 +111,9 @@ class BucketObject protected () extends CustomResource {
     */
   val storageClass: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the object.
+    * A map of tags to assign to the object.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * A unique version ID value for the object, if bucket versioning
     * is enabled.
@@ -136,8 +136,10 @@ object BucketObject extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): BucketObject = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BucketObject = js.native
   def get(name: String, id: Input[ID], state: BucketObjectState): BucketObject = js.native
   def get(name: String, id: Input[ID], state: BucketObjectState, opts: CustomResourceOptions): BucketObject = js.native
   /**

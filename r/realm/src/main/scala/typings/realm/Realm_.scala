@@ -117,6 +117,11 @@ trait Realm_ extends js.Object {
     * @returns void
     */
   def deleteModel(name: String): Unit = js.native
+  /**
+    * @param  {string|Realm.ObjectType|Function} type
+    * @param  {string} id
+    * @returns {T | undefined}
+    */
   def objectForPrimaryKey[T](`type`: String, key: String): js.UndefOr[T with Object] = js.native
   /**
     * @param  {string|Realm.ObjectType|Function} type

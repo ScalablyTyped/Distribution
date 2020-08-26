@@ -42,26 +42,58 @@ trait DescribeEnvironmentsMessage extends js.Object {
 
 object DescribeEnvironmentsMessage {
   @scala.inline
-  def apply(
-    ApplicationName: ApplicationName = null,
-    EnvironmentIds: EnvironmentIdList = null,
-    EnvironmentNames: EnvironmentNamesList = null,
-    IncludeDeleted: js.UndefOr[IncludeDeleted] = js.undefined,
-    IncludedDeletedBackTo: IncludeDeletedBackTo = null,
-    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
-    NextToken: Token = null,
-    VersionLabel: VersionLabel = null
-  ): DescribeEnvironmentsMessage = {
+  def apply(): DescribeEnvironmentsMessage = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationName != null) __obj.updateDynamic("ApplicationName")(ApplicationName.asInstanceOf[js.Any])
-    if (EnvironmentIds != null) __obj.updateDynamic("EnvironmentIds")(EnvironmentIds.asInstanceOf[js.Any])
-    if (EnvironmentNames != null) __obj.updateDynamic("EnvironmentNames")(EnvironmentNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeDeleted)) __obj.updateDynamic("IncludeDeleted")(IncludeDeleted.get.asInstanceOf[js.Any])
-    if (IncludedDeletedBackTo != null) __obj.updateDynamic("IncludedDeletedBackTo")(IncludedDeletedBackTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (VersionLabel != null) __obj.updateDynamic("VersionLabel")(VersionLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEnvironmentsMessage]
   }
+  @scala.inline
+  implicit class DescribeEnvironmentsMessageOps[Self <: DescribeEnvironmentsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationName: Self = this.set("ApplicationName", js.undefined)
+    @scala.inline
+    def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = this.set("EnvironmentIds", js.Array(value :_*))
+    @scala.inline
+    def setEnvironmentIds(value: EnvironmentIdList): Self = this.set("EnvironmentIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentIds: Self = this.set("EnvironmentIds", js.undefined)
+    @scala.inline
+    def setEnvironmentNamesVarargs(value: EnvironmentName*): Self = this.set("EnvironmentNames", js.Array(value :_*))
+    @scala.inline
+    def setEnvironmentNames(value: EnvironmentNamesList): Self = this.set("EnvironmentNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentNames: Self = this.set("EnvironmentNames", js.undefined)
+    @scala.inline
+    def setIncludeDeleted(value: IncludeDeleted): Self = this.set("IncludeDeleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDeleted: Self = this.set("IncludeDeleted", js.undefined)
+    @scala.inline
+    def setIncludedDeletedBackTo(value: IncludeDeletedBackTo): Self = this.set("IncludedDeletedBackTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludedDeletedBackTo: Self = this.set("IncludedDeletedBackTo", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: MaxRecords): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setVersionLabel(value: VersionLabel): Self = this.set("VersionLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionLabel: Self = this.set("VersionLabel", js.undefined)
+  }
+  
 }
 

@@ -33,20 +33,46 @@ trait VirtualNodeSpec extends js.Object {
 
 object VirtualNodeSpec {
   @scala.inline
-  def apply(
-    backendDefaults: BackendDefaults = null,
-    backends: Backends = null,
-    listeners: Listeners = null,
-    logging: Logging = null,
-    serviceDiscovery: ServiceDiscovery = null
-  ): VirtualNodeSpec = {
+  def apply(): VirtualNodeSpec = {
     val __obj = js.Dynamic.literal()
-    if (backendDefaults != null) __obj.updateDynamic("backendDefaults")(backendDefaults.asInstanceOf[js.Any])
-    if (backends != null) __obj.updateDynamic("backends")(backends.asInstanceOf[js.Any])
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (serviceDiscovery != null) __obj.updateDynamic("serviceDiscovery")(serviceDiscovery.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpec]
   }
+  @scala.inline
+  implicit class VirtualNodeSpecOps[Self <: VirtualNodeSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackendDefaults(value: BackendDefaults): Self = this.set("backendDefaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackendDefaults: Self = this.set("backendDefaults", js.undefined)
+    @scala.inline
+    def setBackendsVarargs(value: Backend*): Self = this.set("backends", js.Array(value :_*))
+    @scala.inline
+    def setBackends(value: Backends): Self = this.set("backends", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackends: Self = this.set("backends", js.undefined)
+    @scala.inline
+    def setListenersVarargs(value: Listener*): Self = this.set("listeners", js.Array(value :_*))
+    @scala.inline
+    def setListeners(value: Listeners): Self = this.set("listeners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListeners: Self = this.set("listeners", js.undefined)
+    @scala.inline
+    def setLogging(value: Logging): Self = this.set("logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("logging", js.undefined)
+    @scala.inline
+    def setServiceDiscovery(value: ServiceDiscovery): Self = this.set("serviceDiscovery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceDiscovery: Self = this.set("serviceDiscovery", js.undefined)
+  }
+  
 }
 

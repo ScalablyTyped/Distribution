@@ -26,17 +26,36 @@ trait S3DataSpec extends js.Object {
 
 object S3DataSpec {
   @scala.inline
-  def apply(
-    DataLocationS3: S3Url,
-    DataRearrangement: DataRearrangement = null,
-    DataSchema: DataSchema = null,
-    DataSchemaLocationS3: S3Url = null
-  ): S3DataSpec = {
+  def apply(DataLocationS3: S3Url): S3DataSpec = {
     val __obj = js.Dynamic.literal(DataLocationS3 = DataLocationS3.asInstanceOf[js.Any])
-    if (DataRearrangement != null) __obj.updateDynamic("DataRearrangement")(DataRearrangement.asInstanceOf[js.Any])
-    if (DataSchema != null) __obj.updateDynamic("DataSchema")(DataSchema.asInstanceOf[js.Any])
-    if (DataSchemaLocationS3 != null) __obj.updateDynamic("DataSchemaLocationS3")(DataSchemaLocationS3.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3DataSpec]
   }
+  @scala.inline
+  implicit class S3DataSpecOps[Self <: S3DataSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataLocationS3(value: S3Url): Self = this.set("DataLocationS3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataRearrangement(value: DataRearrangement): Self = this.set("DataRearrangement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRearrangement: Self = this.set("DataRearrangement", js.undefined)
+    @scala.inline
+    def setDataSchema(value: DataSchema): Self = this.set("DataSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSchema: Self = this.set("DataSchema", js.undefined)
+    @scala.inline
+    def setDataSchemaLocationS3(value: S3Url): Self = this.set("DataSchemaLocationS3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSchemaLocationS3: Self = this.set("DataSchemaLocationS3", js.undefined)
+  }
+  
 }
 

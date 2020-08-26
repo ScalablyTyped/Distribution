@@ -41,9 +41,11 @@ class Scene () extends js.Object {
   def setBackgroundImage(image: HTMLImageElement): Unit = js.native
   def setLayerPriority(layer: Double, background: Boolean): Unit = js.native
   def setMap(map: JSObject): Unit = js.native
+  def setMap(map: JSObject, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def setMap(map: JSObject, x: Double): Unit = js.native
   def setMap(map: JSObject, x: Double, y: Double): Unit = js.native
   def setMap(map: Map): Unit = js.native
+  def setMap(map: Map, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def setMap(map: Map, x: Double): Unit = js.native
   def setMap(map: Map, x: Double, y: Double): Unit = js.native
   def setOpacity(opacity: Double): Unit = js.native

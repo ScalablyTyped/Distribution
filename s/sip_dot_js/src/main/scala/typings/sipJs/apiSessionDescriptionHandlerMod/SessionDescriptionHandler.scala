@@ -1,6 +1,5 @@
 package typings.sipJs.apiSessionDescriptionHandlerMod
 
-import typings.std.RTCSessionDescriptionInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +23,7 @@ trait SessionDescriptionHandler extends js.Object {
     * is called after close or when close occurs before complete.
     */
   def getDescription(): js.Promise[BodyAndContentType] = js.native
+  def getDescription(options: js.UndefOr[scala.Nothing], modifiers: js.Array[SessionDescriptionHandlerModifier]): js.Promise[BodyAndContentType] = js.native
   def getDescription(options: SessionDescriptionHandlerOptions): js.Promise[BodyAndContentType] = js.native
   def getDescription(options: SessionDescriptionHandlerOptions, modifiers: js.Array[SessionDescriptionHandlerModifier]): js.Promise[BodyAndContentType] = js.native
   /**
@@ -32,14 +32,6 @@ trait SessionDescriptionHandler extends js.Object {
     * @returns True if the content type is  handled by this session description handler. False otherwise.
     */
   def hasDescription(contentType: String): Boolean = js.native
-  /**
-    * The modifier that should be used when the session would like to place the call on hold.
-    * @param sessionDescription - The description that will be modified.
-    * @returns Promise that resolves with modified SDP.
-    * Rejects with `ClosedSessionDescriptionHandlerError` when this method
-    * is called after close or when close occurs before complete.
-    */
-  def holdModifier(sessionDescription: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = js.native
   /**
     * Send DTMF via RTP (RFC 4733).
     * Returns true if DTMF send is successful, false otherwise.
@@ -59,6 +51,11 @@ trait SessionDescriptionHandler extends js.Object {
     * is called after close or when close occurs before complete.
     */
   def setDescription(sdp: String): js.Promise[Unit] = js.native
+  def setDescription(
+    sdp: String,
+    options: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[SessionDescriptionHandlerModifier]
+  ): js.Promise[Unit] = js.native
   def setDescription(sdp: String, options: SessionDescriptionHandlerOptions): js.Promise[Unit] = js.native
   def setDescription(
     sdp: String,

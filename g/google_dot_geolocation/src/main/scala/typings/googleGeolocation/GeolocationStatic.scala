@@ -12,6 +12,11 @@ trait GeolocationStatic extends js.Object {
   def getCurrentPosition(success: js.Function1[/* position */ Position, Unit]): Unit = js.native
   def getCurrentPosition(
     success: js.Function1[/* position */ Position, Unit],
+    error: js.UndefOr[scala.Nothing],
+    opts: PositionOptions
+  ): Unit = js.native
+  def getCurrentPosition(
+    success: js.Function1[/* position */ Position, Unit],
     error: js.Function1[/* positionError */ PositionError, Unit]
   ): Unit = js.native
   def getCurrentPosition(

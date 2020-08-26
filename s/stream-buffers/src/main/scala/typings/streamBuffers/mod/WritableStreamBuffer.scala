@@ -14,6 +14,7 @@ class WritableStreamBuffer () extends Writable {
   def getContents(): Buffer | `false` = js.native
   def getContents(length: Double): Buffer | `false` = js.native
   def getContentsAsString(): String | `false` = js.native
+  def getContentsAsString(encoding: js.UndefOr[scala.Nothing], length: Double): String | `false` = js.native
   def getContentsAsString(encoding: String): String | `false` = js.native
   def getContentsAsString(encoding: String, length: Double): String | `false` = js.native
   def maxSize(): Double = js.native

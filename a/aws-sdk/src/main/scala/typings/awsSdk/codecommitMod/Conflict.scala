@@ -18,11 +18,32 @@ trait Conflict extends js.Object {
 
 object Conflict {
   @scala.inline
-  def apply(conflictMetadata: ConflictMetadata = null, mergeHunks: MergeHunks = null): Conflict = {
+  def apply(): Conflict = {
     val __obj = js.Dynamic.literal()
-    if (conflictMetadata != null) __obj.updateDynamic("conflictMetadata")(conflictMetadata.asInstanceOf[js.Any])
-    if (mergeHunks != null) __obj.updateDynamic("mergeHunks")(mergeHunks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Conflict]
   }
+  @scala.inline
+  implicit class ConflictOps[Self <: Conflict] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConflictMetadata(value: ConflictMetadata): Self = this.set("conflictMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConflictMetadata: Self = this.set("conflictMetadata", js.undefined)
+    @scala.inline
+    def setMergeHunksVarargs(value: MergeHunk*): Self = this.set("mergeHunks", js.Array(value :_*))
+    @scala.inline
+    def setMergeHunks(value: MergeHunks): Self = this.set("mergeHunks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeHunks: Self = this.set("mergeHunks", js.undefined)
+  }
+  
 }
 

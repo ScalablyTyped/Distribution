@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Readonly<std.Promise<TResponse>> & {readonly wait (requestOptions ? : @algolia/transporter.@algolia/transporter.RequestOptions): std.Readonly<@algolia/client-common.@algolia/client-common.WaitablePromise<TResponse>>} */
+/* Inlined std.Readonly<std.Promise<TResponse>> & {readonly wait (requestOptions : @algolia/transporter.@algolia/transporter.RequestOptions | undefined): std.Readonly<@algolia/client-common.@algolia/client-common.WaitablePromise<TResponse>>} */
 @js.native
 trait WaitablePromise[TResponse] extends js.Object {
   def `catch`[TResult](): js.Promise[TResponse | TResult] = js.native

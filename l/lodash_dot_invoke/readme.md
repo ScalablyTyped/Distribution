@@ -12,7 +12,7 @@ The lodash method `_.invoke` exported as a module.
 | Keywords           | lodash-modularized, invoke |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 175659 |
+| # downloads        | 176188 |
 | # stars            | 0 |
 
 ## Links

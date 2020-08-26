@@ -28,6 +28,7 @@ class ResourceCatalogsProductsVersions protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(params: ParamsResourceCatalogsProductsVersionsCreate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(
     params: ParamsResourceCatalogsProductsVersionsCreate,
@@ -58,6 +59,7 @@ class ResourceCatalogsProductsVersions protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceCatalogsProductsVersionsDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceCatalogsProductsVersionsDelete,
@@ -88,6 +90,7 @@ class ResourceCatalogsProductsVersions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Version] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Version]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Version] = js.native
   def get(params: ParamsResourceCatalogsProductsVersionsGet): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Version] = js.native
   def get(
     params: ParamsResourceCatalogsProductsVersionsGet,
@@ -121,6 +124,7 @@ class ResourceCatalogsProductsVersions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListVersionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListVersionsResponse] = js.native
   def list(params: ParamsResourceCatalogsProductsVersionsList): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1ListVersionsResponse] = js.native
   def list(
     params: ParamsResourceCatalogsProductsVersionsList,
@@ -153,6 +157,7 @@ class ResourceCatalogsProductsVersions protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Version] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogproducerV1beta1Version]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Version] = js.native
   def patch(params: ParamsResourceCatalogsProductsVersionsPatch): GaxiosPromise[SchemaGoogleCloudPrivatecatalogproducerV1beta1Version] = js.native
   def patch(
     params: ParamsResourceCatalogsProductsVersionsPatch,

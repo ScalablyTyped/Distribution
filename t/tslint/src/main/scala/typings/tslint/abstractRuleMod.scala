@@ -7,7 +7,6 @@ import typings.tslint.ruleMod.IRuleMetadata
 import typings.tslint.ruleMod.RuleFailure
 import typings.tslint.ruleMod.RuleSeverity
 import typings.tslint.walkerMod.WalkContext
-import typings.tslint.walkerWalkerMod.IWalker
 import typings.typescript.mod.SourceFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,9 +22,6 @@ object abstractRuleMod extends js.Object {
     val ruleArguments: js.Array[_] = js.native
     var ruleName: String = js.native
     val ruleSeverity: RuleSeverity = js.native
-    /* CompleteClass */
-    @JSName("apply")
-    override def apply(sourceFile: SourceFile): js.Array[RuleFailure] = js.native
     /* protected */ def applyWithFunction(
       sourceFile: SourceFile,
       walkFn: js.Function1[/* ctx */ WalkContext[js.UndefOr[scala.Nothing]], Unit]
@@ -37,18 +33,12 @@ object abstractRuleMod extends js.Object {
       options: NoInfer[T],
       checker: NoInfer[U]
     ): js.Array[RuleFailure] = js.native
-    /* CompleteClass */
-    override def applyWithWalker(walker: IWalker): js.Array[RuleFailure] = js.native
     /**
       * @deprecated
       * Failures will be filtered based on `tslint:disable` comments by tslint.
       * This method now does nothing.
       */
     /* protected */ def filterFailures(failures: js.Array[RuleFailure]): js.Array[RuleFailure] = js.native
-    /* CompleteClass */
-    override def getOptions(): IOptions = js.native
-    /* CompleteClass */
-    override def isEnabled(): Boolean = js.native
   }
   
   /* static members */

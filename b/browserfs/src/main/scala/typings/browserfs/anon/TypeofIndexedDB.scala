@@ -18,7 +18,7 @@ trait TypeofIndexedDB
      with Instantiable2[/* cb */ BFSCallback[IndexedDBFileSystem], /* storeName */ String, default]
      with Instantiable3[
       /* cb */ BFSCallback[IndexedDBFileSystem], 
-      /* storeName */ String, 
+      js.UndefOr[/* storeName */ String], 
       /* deprecateMsg */ Boolean, 
       default
     ] {

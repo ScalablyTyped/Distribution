@@ -23,11 +23,15 @@ trait NodeGroupArgs extends js.Object {
     */
   val diskSize: js.UndefOr[Input[Double]] = js.native
   /**
+    * Force version update if existing pods are unable to be drained due to a pod disruption budget issue.
+    */
+  val forceUpdateVersion: js.UndefOr[Input[Boolean]] = js.native
+  /**
     * Set of instance types associated with the EKS Node Group. Defaults to `["t3.medium"]`. This provider will only perform drift detection if a configuration value is provided. Currently, the EKS API only accepts a single value in the set.
     */
   val instanceTypes: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of Kubernetes labels. Only labels that are applied with the EKS API are managed by this argument. Other Kubernetes labels applied to the EKS Node Group will not be managed.
+    * Key-value map of Kubernetes labels. Only labels that are applied with the EKS API are managed by this argument. Other Kubernetes labels applied to the EKS Node Group will not be managed.
     */
   val labels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
@@ -57,7 +61,7 @@ trait NodeGroupArgs extends js.Object {
   /**
     * Key-value mapping of resource tags.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Kubernetes version. Defaults to EKS Cluster Kubernetes version. This provider will only perform drift detection if a configuration value is provided.
     */
@@ -70,28 +74,73 @@ object NodeGroupArgs {
     clusterName: Input[String],
     nodeRoleArn: Input[String],
     scalingConfig: Input[NodeGroupScalingConfig],
-    subnetIds: Input[js.Array[Input[String]]],
-    amiType: Input[String] = null,
-    diskSize: Input[Double] = null,
-    instanceTypes: Input[String] = null,
-    labels: Input[StringDictionary[Input[String]]] = null,
-    nodeGroupName: Input[String] = null,
-    releaseVersion: Input[String] = null,
-    remoteAccess: Input[NodeGroupRemoteAccess] = null,
-    tags: Input[StringDictionary[_]] = null,
-    version: Input[String] = null
+    subnetIds: Input[js.Array[Input[String]]]
   ): NodeGroupArgs = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodeRoleArn = nodeRoleArn.asInstanceOf[js.Any], scalingConfig = scalingConfig.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any])
-    if (amiType != null) __obj.updateDynamic("amiType")(amiType.asInstanceOf[js.Any])
-    if (diskSize != null) __obj.updateDynamic("diskSize")(diskSize.asInstanceOf[js.Any])
-    if (instanceTypes != null) __obj.updateDynamic("instanceTypes")(instanceTypes.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (nodeGroupName != null) __obj.updateDynamic("nodeGroupName")(nodeGroupName.asInstanceOf[js.Any])
-    if (releaseVersion != null) __obj.updateDynamic("releaseVersion")(releaseVersion.asInstanceOf[js.Any])
-    if (remoteAccess != null) __obj.updateDynamic("remoteAccess")(remoteAccess.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeGroupArgs]
   }
+  @scala.inline
+  implicit class NodeGroupArgsOps[Self <: NodeGroupArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterName(value: Input[String]): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeRoleArn(value: Input[String]): Self = this.set("nodeRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScalingConfig(value: Input[NodeGroupScalingConfig]): Self = this.set("scalingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetIdsVarargs(value: Input[String]*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmiType(value: Input[String]): Self = this.set("amiType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmiType: Self = this.set("amiType", js.undefined)
+    @scala.inline
+    def setDiskSize(value: Input[Double]): Self = this.set("diskSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSize: Self = this.set("diskSize", js.undefined)
+    @scala.inline
+    def setForceUpdateVersion(value: Input[Boolean]): Self = this.set("forceUpdateVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceUpdateVersion: Self = this.set("forceUpdateVersion", js.undefined)
+    @scala.inline
+    def setInstanceTypes(value: Input[String]): Self = this.set("instanceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTypes: Self = this.set("instanceTypes", js.undefined)
+    @scala.inline
+    def setLabels(value: Input[StringDictionary[Input[String]]]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setNodeGroupName(value: Input[String]): Self = this.set("nodeGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeGroupName: Self = this.set("nodeGroupName", js.undefined)
+    @scala.inline
+    def setReleaseVersion(value: Input[String]): Self = this.set("releaseVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseVersion: Self = this.set("releaseVersion", js.undefined)
+    @scala.inline
+    def setRemoteAccess(value: Input[NodeGroupRemoteAccess]): Self = this.set("remoteAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteAccess: Self = this.set("remoteAccess", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersion(value: Input[String]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

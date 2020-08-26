@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CampaignCreativeAssociation extends js.Object {
-  var creativeId: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
+  var creativeId: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
 }
 
 object CampaignCreativeAssociation {
   @scala.inline
-  def apply(creativeId: String = null, kind: String = null): CampaignCreativeAssociation = {
+  def apply(): CampaignCreativeAssociation = {
     val __obj = js.Dynamic.literal()
-    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CampaignCreativeAssociation]
   }
+  @scala.inline
+  implicit class CampaignCreativeAssociationOps[Self <: CampaignCreativeAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreativeId(value: String): Self = this.set("creativeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeId: Self = this.set("creativeId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

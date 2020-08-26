@@ -12,7 +12,7 @@ A Bunyan stream that sends log events to Seq
 | Keywords           | bunyan, seq |
 | # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 67545 |
+| # downloads        | 70041 |
 | # stars            | 0 |
 
 ## Links

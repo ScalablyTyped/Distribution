@@ -3,20 +3,20 @@ package typings.ariClient.mod
 import typings.ariClient.anon.AppArgsSnoopId
 import typings.ariClient.anon.AppString
 import typings.ariClient.anon.Before
-import typings.ariClient.anon.DirectionString
 import typings.ariClient.anon.Encapsulation
 import typings.ariClient.anon.EndpointString
 import typings.ariClient.anon.Extension
 import typings.ariClient.anon.Format
 import typings.ariClient.anon.Formats
 import typings.ariClient.anon.Label
-import typings.ariClient.anon.MohClassString
 import typings.ariClient.anon.Offsetms
 import typings.ariClient.anon.PlaybackId
-import typings.ariClient.anon.ReasonString
 import typings.ariClient.anon.Timeout
 import typings.ariClient.anon.Value
 import typings.ariClient.anon.Whisper
+import typings.ariClient.anon.`3`
+import typings.ariClient.anon.`4`
+import typings.ariClient.anon.`5`
 import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
@@ -200,13 +200,13 @@ trait Channel extends Resource {
     * Delete (i.e. hangup) a channel.
     */
   def hangup(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  def hangup(params: ReasonString): js.Promise[Unit] = js.native
+  def hangup(params: `4`): js.Promise[Unit] = js.native
   /**
     * Delete (i.e. hangup) a channel.
     *
     * @param [params.reason] - Reason for hanging up the channel.
     */
-  def hangup(params: ReasonString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def hangup(params: `4`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   /**
     * Hold a channel.
     */
@@ -247,13 +247,13 @@ trait Channel extends Resource {
     * Mute a channel.
     */
   def mute(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  def mute(params: DirectionString): js.Promise[Unit] = js.native
+  def mute(params: `5`): js.Promise[Unit] = js.native
   /**
     * Mute a channel.
     *
     * @param [params.direction] - Direction in which to mute audio.
     */
-  def mute(params: DirectionString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def mute(params: `5`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   /**
     * Create a new channel (originate).
     * The new channel is created immediately and a snapshot of it returned. If a Stasis application is provided it will be automatically subscribed to the originated channel for further
@@ -561,7 +561,7 @@ trait Channel extends Resource {
     * must reinitiate music on hold.
     */
   def startMoh(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  def startMoh(params: MohClassString): js.Promise[Unit] = js.native
+  def startMoh(params: `3`): js.Promise[Unit] = js.native
   /**
     * Play music on hold to a channel.
     * Using media operations such as /play on a channel playing MOH in this manner will suspend MOH without resuming automatically. If continuing music on hold is desired, the stasis application
@@ -569,7 +569,7 @@ trait Channel extends Resource {
     *
     * @param [params.mohClass] - Music on hold class to use.
     */
-  def startMoh(params: MohClassString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def startMoh(params: `3`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   /**
     * Play silence to a channel.
     * Using media operations such as /play on a channel playing silence in this manner will suspend silence without resuming automatically.
@@ -614,12 +614,12 @@ trait Channel extends Resource {
     * Unmute a channel.
     */
   def unmute(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  def unmute(params: DirectionString): js.Promise[Unit] = js.native
+  def unmute(params: `5`): js.Promise[Unit] = js.native
   /**
     * Unmute a channel.
     *
     * @param [params.direction] - Direction in which to unmute audio.
     */
-  def unmute(params: DirectionString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def unmute(params: `5`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
 

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cucumber-html-reporter"
-version := "5.2.0-beb68f"
-scalaVersion := "2.13.2"
+version := "5.2.0-ccc49a"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

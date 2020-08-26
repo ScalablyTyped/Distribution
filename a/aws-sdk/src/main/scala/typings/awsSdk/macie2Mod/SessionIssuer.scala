@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SessionIssuer extends js.Object {
   /**
-    * The account that owns the entity that was used to get the credentials.
+    * The unique identifier for the AWS account that owns the entity that was used to get the credentials.
     */
   var accountId: js.UndefOr[string] = js.native
   /**
@@ -15,7 +15,7 @@ trait SessionIssuer extends js.Object {
     */
   var arn: js.UndefOr[string] = js.native
   /**
-    * The internal identifier for the entity that was used to get the credentials.
+    * The unique identifier for the entity that was used to get the credentials.
     */
   var principalId: js.UndefOr[string] = js.native
   /**
@@ -30,20 +30,42 @@ trait SessionIssuer extends js.Object {
 
 object SessionIssuer {
   @scala.inline
-  def apply(
-    accountId: string = null,
-    arn: string = null,
-    principalId: string = null,
-    `type`: string = null,
-    userName: string = null
-  ): SessionIssuer = {
+  def apply(): SessionIssuer = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (principalId != null) __obj.updateDynamic("principalId")(principalId.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionIssuer]
   }
+  @scala.inline
+  implicit class SessionIssuerOps[Self <: SessionIssuer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: string): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setArn(value: string): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setPrincipalId(value: string): Self = this.set("principalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalId: Self = this.set("principalId", js.undefined)
+    @scala.inline
+    def setType(value: string): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUserName(value: string): Self = this.set("userName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("userName", js.undefined)
+  }
+  
 }
 

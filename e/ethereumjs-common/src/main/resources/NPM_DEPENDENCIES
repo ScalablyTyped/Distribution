@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ethereumjs-common" : "1.5.0"
+      "ethereumjs-common" : "1.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ethereumjs-common" : "1.5.0"
+      "ethereumjs-common" : "1.5.2"
     }
   ],
   "compile-devDependencies" : [

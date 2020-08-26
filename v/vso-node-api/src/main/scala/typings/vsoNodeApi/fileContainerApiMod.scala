@@ -18,7 +18,7 @@ object fileContainerApiMod extends js.Object {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.vsoNodeApi.clientApiBasesMod.ClientApiBase because Already inherited
   - typings.vsoNodeApi.fileContainerApiBaseMod.IFileContainerApiBase because Already inherited
-  - typings.vsoNodeApi.fileContainerApiMod.IFileContainerApi because var conflicts: baseUrl, http, rest, userAgent, vsoClient. Inlined createItem, getItem, getItem, getItem, getItem */ @js.native
+  - typings.vsoNodeApi.fileContainerApiMod.IFileContainerApi because var conflicts: baseUrl, http, rest, userAgent, vsoClient. Inlined createItem, getItem, getItem, getItem, getItem, getItem, getItem, getItem, getItem */ @js.native
   class FileContainerApi protected () extends FileContainerApiBase {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
@@ -45,7 +45,16 @@ object fileContainerApiMod extends js.Object {
       * @param {string} downloadFileName
       */
     def getItem(containerId: Double): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(
+      containerId: Double,
+      scope: js.UndefOr[scala.Nothing],
+      itemPath: js.UndefOr[scala.Nothing],
+      downloadFileName: String
+    ): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: js.UndefOr[scala.Nothing], itemPath: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: js.UndefOr[scala.Nothing], itemPath: String, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: String, itemPath: js.UndefOr[scala.Nothing], downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String, itemPath: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String, itemPath: String, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
   }
@@ -61,7 +70,16 @@ object fileContainerApiMod extends js.Object {
       options: js.Any
     ): js.Promise[FileContainerItem] = js.native
     def getItem(containerId: Double): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(
+      containerId: Double,
+      scope: js.UndefOr[scala.Nothing],
+      itemPath: js.UndefOr[scala.Nothing],
+      downloadFileName: String
+    ): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: js.UndefOr[scala.Nothing], itemPath: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: js.UndefOr[scala.Nothing], itemPath: String, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String): js.Promise[IRestResponse[ReadableStream]] = js.native
+    def getItem(containerId: Double, scope: String, itemPath: js.UndefOr[scala.Nothing], downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String, itemPath: String): js.Promise[IRestResponse[ReadableStream]] = js.native
     def getItem(containerId: Double, scope: String, itemPath: String, downloadFileName: String): js.Promise[IRestResponse[ReadableStream]] = js.native
   }

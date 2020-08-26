@@ -77,7 +77,6 @@ class ColumnController () extends js.Object {
   var valueColumns: js.Any = js.native
   var viewportLeft: js.Any = js.native
   var viewportRight: js.Any = js.native
-  /* private */ def actionOnGridColumns(keys: js.Any, action: js.Any, source: js.Any): js.Any = js.native
   /* private */ def actionOnGridColumns(keys: js.Any, action: js.Any, source: js.Any, createEvent: js.Any): js.Any = js.native
   /* private */ def addAutoGroupToGridColumns(): js.Any = js.native
   def addPivotColumn(key: String): Unit = js.native
@@ -156,8 +155,6 @@ class ColumnController () extends js.Object {
   def getDisplayedColBefore(col: Column): Column = js.native
   def getDisplayedColumnGroups(`type`: String): js.Array[ColumnGroupChild] = js.native
   def getDisplayedColumns(`type`: String): js.Array[Column] = js.native
-  /* private */ def getDisplayedColumnsForRow(rowNode: js.Any, displayedColumns: js.Any): js.Any = js.native
-  /* private */ def getDisplayedColumnsForRow(rowNode: js.Any, displayedColumns: js.Any, filterCallback: js.Any): js.Any = js.native
   /* private */ def getDisplayedColumnsForRow(rowNode: js.Any, displayedColumns: js.Any, filterCallback: js.Any, emptySpaceBeforeColumn: js.Any): js.Any = js.native
   def getDisplayedColumnsStartingAt(column: Column): js.Array[Column] = js.native
   def getDisplayedGroupAfter(columnGroup: ColumnGroup): ColumnGroup = js.native

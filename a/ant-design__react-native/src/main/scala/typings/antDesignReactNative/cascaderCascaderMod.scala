@@ -1,6 +1,6 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.anon.Data
+import typings.antDesignReactNative.anon.ColsData
 import typings.antDesignReactNative.anon.DataValue
 import typings.antDesignReactNative.anon.ValueArray
 import typings.antDesignReactNative.cascaderTypesMod.CascaderProps
@@ -18,8 +18,8 @@ object cascaderCascaderMod extends js.Object {
     extends Component[CascaderProps, js.Any, js.Any] {
     @JSName("state")
     var state_Cascader: ValueArray = js.native
-    @JSName("componentWillReceiveProps")
-    def componentWillReceiveProps_MCascader(nextProps: DataValue): Unit = js.native
+    @JSName("UNSAFE_componentWillReceiveProps")
+    def UNSAFE_componentWillReceiveProps_MCascader(nextProps: DataValue): Unit = js.native
     def getCols(): js.Array[Element] = js.native
     def getValue(d: js.Any, `val`: js.Any): js.Array[_] = js.native
     def onValueChange(value: js.Any, index: js.Any): Unit = js.native
@@ -31,7 +31,7 @@ object cascaderCascaderMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: Data = js.native
+    var defaultProps: ColsData = js.native
   }
   
 }

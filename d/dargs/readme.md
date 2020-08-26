@@ -11,8 +11,8 @@ Reverse minimist. Convert an object of options into an array of command-line arg
 | Full name          | dargs |
 | Keywords           | reverse, minimist, options, arguments, args, flags, cli, nopt, commander, binary, command, inverse, opposite, invert, switch, construct, parse, parser, argv |
 | # releases         | 4 |
-| # dependents       | 139 |
-| # downloads        | 59722039 |
+| # dependents       | 143 |
+| # downloads        | 63174744 |
 | # stars            | 12 |
 
 ## Links

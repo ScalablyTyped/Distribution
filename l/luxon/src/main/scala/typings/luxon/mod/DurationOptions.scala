@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DurationOptions extends js.Object {
-  var conversionAccuracy: js.UndefOr[ConversionAccuracy] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
-  var numberingSystem: js.UndefOr[NumberingSystem] = js.undefined
+  var conversionAccuracy: js.UndefOr[ConversionAccuracy] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var numberingSystem: js.UndefOr[NumberingSystem] = js.native
 }
 
 object DurationOptions {
   @scala.inline
-  def apply(
-    conversionAccuracy: ConversionAccuracy = null,
-    locale: String = null,
-    numberingSystem: NumberingSystem = null
-  ): DurationOptions = {
+  def apply(): DurationOptions = {
     val __obj = js.Dynamic.literal()
-    if (conversionAccuracy != null) __obj.updateDynamic("conversionAccuracy")(conversionAccuracy.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurationOptions]
   }
+  @scala.inline
+  implicit class DurationOptionsOps[Self <: DurationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConversionAccuracy(value: ConversionAccuracy): Self = this.set("conversionAccuracy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversionAccuracy: Self = this.set("conversionAccuracy", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setNumberingSystem(value: NumberingSystem): Self = this.set("numberingSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberingSystem: Self = this.set("numberingSystem", js.undefined)
+  }
+  
 }
 

@@ -1,6 +1,6 @@
 package typings.gitlab.groupsMod
 
-import typings.gitlab.anon.Sudoproviderstring
+import typings.gitlab.anon.Sudoproviderstringundefin
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.projectsMod.ProjectSchema
 import typings.gitlab.requestHelperMod.BaseRequestOptions
@@ -35,9 +35,9 @@ class Groups () extends BaseService {
   def remove(groupId: Double): js.Promise[js.Object] = js.native
   def remove(groupId: Double, options: Sudo): js.Promise[js.Object] = js.native
   def removeLDAPLink(groupId: String, cn: js.Any): js.Promise[js.Object] = js.native
-  def removeLDAPLink(groupId: String, cn: js.Any, hasProviderOptions: Sudoproviderstring): js.Promise[js.Object] = js.native
+  def removeLDAPLink(groupId: String, cn: js.Any, hasProviderOptions: Sudoproviderstringundefin): js.Promise[js.Object] = js.native
   def removeLDAPLink(groupId: Double, cn: js.Any): js.Promise[js.Object] = js.native
-  def removeLDAPLink(groupId: Double, cn: js.Any, hasProviderOptions: Sudoproviderstring): js.Promise[js.Object] = js.native
+  def removeLDAPLink(groupId: Double, cn: js.Any, hasProviderOptions: Sudoproviderstringundefin): js.Promise[js.Object] = js.native
   def search(nameOrPath: String): js.Promise[GetResponse] = js.native
   def search(nameOrPath: String, options: Sudo): js.Promise[GetResponse] = js.native
   def show(groupId: String): js.Promise[GroupDetailSchema] = js.native

@@ -1,45 +1,43 @@
 package typings.reactLazyLoadImageComponent.mod
 
 import typings.react.mod.CSSProperties
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LazyLoadComponentProps extends CommonProps {
-  var children: ReactNode
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var children: ReactNode = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object LazyLoadComponentProps {
   @scala.inline
-  def apply(
-    afterLoad: () => _ = null,
-    beforeLoad: () => _ = null,
-    children: ReactNode = null,
-    delayMethod: DelayMethod = null,
-    delayTime: js.UndefOr[Double] = js.undefined,
-    placeholder: js.UndefOr[Null | ReactElement] = js.undefined,
-    scrollPosition: ScrollPosition = null,
-    style: CSSProperties = null,
-    threshold: js.UndefOr[Double] = js.undefined,
-    useIntersectionObserver: js.UndefOr[Boolean] = js.undefined,
-    visibleByDefault: js.UndefOr[Boolean] = js.undefined
-  ): LazyLoadComponentProps = {
+  def apply(): LazyLoadComponentProps = {
     val __obj = js.Dynamic.literal()
-    if (afterLoad != null) __obj.updateDynamic("afterLoad")(js.Any.fromFunction0(afterLoad))
-    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(js.Any.fromFunction0(beforeLoad))
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (delayMethod != null) __obj.updateDynamic("delayMethod")(delayMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayTime)) __obj.updateDynamic("delayTime")(delayTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(placeholder)) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (scrollPosition != null) __obj.updateDynamic("scrollPosition")(scrollPosition.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIntersectionObserver)) __obj.updateDynamic("useIntersectionObserver")(useIntersectionObserver.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleByDefault)) __obj.updateDynamic("visibleByDefault")(visibleByDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LazyLoadComponentProps]
   }
+  @scala.inline
+  implicit class LazyLoadComponentPropsOps[Self <: LazyLoadComponentProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

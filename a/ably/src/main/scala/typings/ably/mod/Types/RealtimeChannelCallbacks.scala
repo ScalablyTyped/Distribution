@@ -12,11 +12,13 @@ trait RealtimeChannelCallbacks extends RealtimeChannelBase {
   def detach(): Unit = js.native
   def detach(callback: standardCallback): Unit = js.native
   def history(): Unit = js.native
+  def history(paramsOrCallback: js.UndefOr[scala.Nothing], callback: paginatedResultCallback[Message]): Unit = js.native
   def history(paramsOrCallback: RealtimeHistoryParams): Unit = js.native
   def history(paramsOrCallback: RealtimeHistoryParams, callback: paginatedResultCallback[Message]): Unit = js.native
   def history(paramsOrCallback: paginatedResultCallback[Message]): Unit = js.native
   def history(paramsOrCallback: paginatedResultCallback[Message], callback: paginatedResultCallback[Message]): Unit = js.native
   def publish(messagesOrName: js.Any): Unit = js.native
+  def publish(messagesOrName: js.Any, messageDataOrCallback: js.UndefOr[scala.Nothing], callback: errorCallback): Unit = js.native
   def publish(messagesOrName: js.Any, messageDataOrCallback: js.Any): Unit = js.native
   def publish(messagesOrName: js.Any, messageDataOrCallback: js.Any, callback: errorCallback): Unit = js.native
   def publish(messagesOrName: js.Any, messageDataOrCallback: errorCallback): Unit = js.native
@@ -24,6 +26,11 @@ trait RealtimeChannelCallbacks extends RealtimeChannelBase {
   def setOptions(options: ChannelOptions): Unit = js.native
   def setOptions(options: ChannelOptions, callback: errorCallback): Unit = js.native
   def subscribe(eventOrCallback: String): Unit = js.native
+  def subscribe(
+    eventOrCallback: String,
+    listener: js.UndefOr[scala.Nothing],
+    callbackWhenAttached: standardCallback
+  ): Unit = js.native
   def subscribe(eventOrCallback: String, listener: messageCallback[Message]): Unit = js.native
   def subscribe(
     eventOrCallback: String,
@@ -31,6 +38,11 @@ trait RealtimeChannelCallbacks extends RealtimeChannelBase {
     callbackWhenAttached: standardCallback
   ): Unit = js.native
   def subscribe(eventOrCallback: js.Array[String]): Unit = js.native
+  def subscribe(
+    eventOrCallback: js.Array[String],
+    listener: js.UndefOr[scala.Nothing],
+    callbackWhenAttached: standardCallback
+  ): Unit = js.native
   def subscribe(eventOrCallback: js.Array[String], listener: messageCallback[Message]): Unit = js.native
   def subscribe(
     eventOrCallback: js.Array[String],
@@ -38,6 +50,11 @@ trait RealtimeChannelCallbacks extends RealtimeChannelBase {
     callbackWhenAttached: standardCallback
   ): Unit = js.native
   def subscribe(eventOrCallback: messageCallback[Message]): Unit = js.native
+  def subscribe(
+    eventOrCallback: messageCallback[Message],
+    listener: js.UndefOr[scala.Nothing],
+    callbackWhenAttached: standardCallback
+  ): Unit = js.native
   def subscribe(eventOrCallback: messageCallback[Message], listener: messageCallback[Message]): Unit = js.native
   def subscribe(
     eventOrCallback: messageCallback[Message],

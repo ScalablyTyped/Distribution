@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): Parser = js.native
+  def apply(authOptions: js.UndefOr[scala.Nothing], extension: Overrides): Parser = js.native
   def apply(authOptions: Options): Parser = js.native
   def apply(authOptions: Options, extension: Overrides): Parser = js.native
 }

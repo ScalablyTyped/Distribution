@@ -22,12 +22,34 @@ trait ExportProjectResult extends js.Object {
 
 object ExportProjectResult {
   @scala.inline
-  def apply(downloadUrl: DownloadUrl = null, shareUrl: ShareUrl = null, snapshotId: SnapshotId = null): ExportProjectResult = {
+  def apply(): ExportProjectResult = {
     val __obj = js.Dynamic.literal()
-    if (downloadUrl != null) __obj.updateDynamic("downloadUrl")(downloadUrl.asInstanceOf[js.Any])
-    if (shareUrl != null) __obj.updateDynamic("shareUrl")(shareUrl.asInstanceOf[js.Any])
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportProjectResult]
   }
+  @scala.inline
+  implicit class ExportProjectResultOps[Self <: ExportProjectResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDownloadUrl(value: DownloadUrl): Self = this.set("downloadUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadUrl: Self = this.set("downloadUrl", js.undefined)
+    @scala.inline
+    def setShareUrl(value: ShareUrl): Self = this.set("shareUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShareUrl: Self = this.set("shareUrl", js.undefined)
+    @scala.inline
+    def setSnapshotId(value: SnapshotId): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotId: Self = this.set("snapshotId", js.undefined)
+  }
+  
 }
 

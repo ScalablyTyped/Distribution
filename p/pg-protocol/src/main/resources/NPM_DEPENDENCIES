@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pg-protocol" : "1.2.4"
+      "pg-protocol" : "1.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "pg-protocol" : "1.2.4"
+      "pg-protocol" : "1.2.5"
     }
   ],
   "compile-devDependencies" : [

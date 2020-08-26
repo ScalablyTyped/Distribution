@@ -2,18 +2,18 @@ package typings.reactLoadable.LoadableExport
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
-import typings.reactLoadable.reactLoadableBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OptionsWithRender[Props, Exports /* <: js.Object */]
   extends CommonOptions
      with Options[Props, Exports] {
   /**
     * Function returning a promise which returns an object to be passed to `render` on success.
     */
-  def loader(): js.Promise[Exports]
+  def loader(): js.Promise[Exports] = js.native
   /**
     * If you want to customize what gets rendered from your loader you can also pass `render`.
     *
@@ -29,7 +29,7 @@ trait OptionsWithRender[Props, Exports /* <: js.Object */]
     * });
     * ```
     */
-  def render(loaded: Exports, props: Props): ReactNode
+  def render(loaded: Exports, props: Props): ReactNode = js.native
 }
 
 object OptionsWithRender {
@@ -37,18 +37,27 @@ object OptionsWithRender {
   def apply[Props, /* <: js.Object */ Exports](
     loader: () => js.Promise[Exports],
     loading: ComponentType[LoadingComponentProps],
-    render: (Exports, Props) => ReactNode,
-    delay: js.UndefOr[Null | Double | `false`] = js.undefined,
-    modules: js.Array[String] = null,
-    timeout: js.UndefOr[Null | Double | `false`] = js.undefined,
-    webpack: () => js.Array[String | Double] = null
+    render: (Exports, Props) => ReactNode
   ): OptionsWithRender[Props, Exports] = {
     val __obj = js.Dynamic.literal(loader = js.Any.fromFunction0(loader), loading = loading.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (webpack != null) __obj.updateDynamic("webpack")(js.Any.fromFunction0(webpack))
     __obj.asInstanceOf[OptionsWithRender[Props, Exports]]
   }
+  @scala.inline
+  implicit class OptionsWithRenderOps[Self <: OptionsWithRender[_, _], Props, /* <: js.Object */ Exports] (val x: Self with (OptionsWithRender[Props, Exports])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoader(value: () => js.Promise[Exports]): Self = this.set("loader", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRender(value: (Exports, Props) => ReactNode): Self = this.set("render", js.Any.fromFunction2(value))
+  }
+  
 }
 

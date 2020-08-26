@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class LongPoll protected () extends js.Object {
   def this(endPoint: String) = this()
   def close(): Unit = js.native
+  def close(code: js.UndefOr[scala.Nothing], reason: js.Any): Unit = js.native
   def close(code: js.Any): Unit = js.native
   def close(code: js.Any, reason: js.Any): Unit = js.native
   def closeAndRetry(): Unit = js.native

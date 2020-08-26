@@ -18,7 +18,38 @@ trait Cycle extends js.Object {
   def apply(options: CycleOptions): JQuery = js.native
    // the actual fn for effecting a transition
   def commonReset(currSlideElement: Element, nextSlideElement: Element, options: CycleOptions): Unit = js.native
+  def commonReset(
+    currSlideElement: Element,
+    nextSlideElement: Element,
+    options: CycleOptions,
+    w: js.UndefOr[scala.Nothing],
+    h: js.UndefOr[scala.Nothing],
+    rev: Boolean
+  ): Unit = js.native
+  def commonReset(
+    currSlideElement: Element,
+    nextSlideElement: Element,
+    options: CycleOptions,
+    w: js.UndefOr[scala.Nothing],
+    h: Boolean
+  ): Unit = js.native
+  def commonReset(
+    currSlideElement: Element,
+    nextSlideElement: Element,
+    options: CycleOptions,
+    w: js.UndefOr[scala.Nothing],
+    h: Boolean,
+    rev: Boolean
+  ): Unit = js.native
   def commonReset(currSlideElement: Element, nextSlideElement: Element, options: CycleOptions, w: Boolean): Unit = js.native
+  def commonReset(
+    currSlideElement: Element,
+    nextSlideElement: Element,
+    options: CycleOptions,
+    w: Boolean,
+    h: js.UndefOr[scala.Nothing],
+    rev: Boolean
+  ): Unit = js.native
   def commonReset(
     currSlideElement: Element,
     nextSlideElement: Element,

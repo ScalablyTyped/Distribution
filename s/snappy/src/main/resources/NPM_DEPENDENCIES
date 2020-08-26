@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "snappy" : "6.3.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "snappy" : "6.3.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

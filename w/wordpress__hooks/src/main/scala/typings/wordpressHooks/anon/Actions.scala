@@ -73,14 +73,14 @@ trait Actions extends js.Object {
     callback: js.Function2[/* firstArg */ T, /* repeated */ js.Any, T],
     priority: Double
   ): Unit = js.native
-  def applyFilters[T](hookName: String): T | Double | String = js.native
   def applyFilters[T](hookName: String, firstArg: T, rest: js.Any*): T | Double | String = js.native
+  def applyFilters[T](hookName: String, firstArg: js.UndefOr[scala.Nothing], rest: js.Any*): T | Double | String = js.native
   def currentAction(): String | Null = js.native
   def currentFilter(): String | Null = js.native
   def didAction(hookName: String): Double = js.native
   def didFilter(hookName: String): Double = js.native
-  def doAction[T](hookName: String): T | Double | String = js.native
   def doAction[T](hookName: String, firstArg: T, rest: js.Any*): T | Double | String = js.native
+  def doAction[T](hookName: String, firstArg: js.UndefOr[scala.Nothing], rest: js.Any*): T | Double | String = js.native
   def doingAction(): Boolean = js.native
   def doingAction(hookName: String): Boolean = js.native
   def doingFilter(): Boolean = js.native

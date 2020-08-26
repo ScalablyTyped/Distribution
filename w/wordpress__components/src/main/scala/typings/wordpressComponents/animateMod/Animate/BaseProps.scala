@@ -8,9 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseProps extends js.Object {
-  var `type`: appear | `slide-in`
-  def children(props: ClassName): ReactNode
+  var `type`: appear | `slide-in` = js.native
+  def children(props: ClassName): ReactNode = js.native
 }
 
 object BaseProps {
@@ -20,5 +21,22 @@ object BaseProps {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseProps]
   }
+  @scala.inline
+  implicit class BasePropsOps[Self <: BaseProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ClassName => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    @scala.inline
+    def setType(value: appear | `slide-in`): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

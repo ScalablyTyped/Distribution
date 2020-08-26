@@ -85,10 +85,12 @@ trait Fetcher extends CallbackifyInterface {
     * @param doc - The resource
     */
   def createIfNotExists(doc: typings.rdflib.namedNodeMod.default): js.Promise[ExtendedResponse] = js.native
+  def createIfNotExists(doc: typings.rdflib.namedNodeMod.default, contentType: js.UndefOr[scala.Nothing], data: String): js.Promise[ExtendedResponse] = js.native
   @JSName("createIfNotExists")
   def createIfNotExists_textturtle(doc: typings.rdflib.namedNodeMod.default, contentType: textSlashturtle): js.Promise[ExtendedResponse] = js.native
   @JSName("createIfNotExists")
   def createIfNotExists_textturtle(doc: typings.rdflib.namedNodeMod.default, contentType: textSlashturtle, data: String): js.Promise[ExtendedResponse] = js.native
+  def defaultFetch(): js.Any = js.native
   def delete(uri: String): js.Promise[ExtendedResponse] = js.native
   def delete(uri: String, options: Options): js.Promise[ExtendedResponse] = js.native
   def doneFetch(options: reqQuadSubjectoriginalQua, response: ExtendedResponse): Response = js.native
@@ -149,10 +151,10 @@ trait Fetcher extends CallbackifyInterface {
   def isPending(docuri: String): Boolean = js.native
   def linkData(originalUri: NamedNode, rel: String, uri: String, why: QuadGraph): Unit = js.native
   def linkData(originalUri: NamedNode, rel: String, uri: String, why: QuadGraph, reverse: Boolean): Unit = js.native
-  def load(uri: String): js.Promise[Result] | js.Array[js.Promise[Result]] = js.native
-  def load(uri: String, options: Options): js.Promise[Result] | js.Array[js.Promise[Result]] = js.native
-  def load(uri: js.Array[String | NamedNode]): js.Promise[Result] | js.Array[js.Promise[Result]] = js.native
-  def load(uri: js.Array[String | NamedNode], options: Options): js.Promise[Result] | js.Array[js.Promise[Result]] = js.native
+  def load(uri: String): js.Promise[js.Array[Result] | Result] = js.native
+  def load(uri: String, options: Options): js.Promise[js.Array[Result] | Result] = js.native
+  def load(uri: js.Array[String | NamedNode]): js.Promise[js.Array[Result] | Result] = js.native
+  def load(uri: js.Array[String | NamedNode], options: Options): js.Promise[js.Array[Result] | Result] = js.native
   /**
     * Promise-based load function
     *
@@ -198,8 +200,8 @@ trait Fetcher extends CallbackifyInterface {
     *
     * @returns {Promise<Result>}
     */
-  def load(uri: NamedNode): js.Promise[Result] | js.Array[js.Promise[Result]] = js.native
-  def load(uri: NamedNode, options: Options): js.Promise[Result] | js.Array[js.Promise[Result]] = js.native
+  def load(uri: NamedNode): js.Promise[js.Array[Result] | Result] = js.native
+  def load(uri: NamedNode, options: Options): js.Promise[js.Array[Result] | Result] = js.native
   /**
     * Looks up something.
     * Looks up all the URIs a things has.
@@ -245,17 +247,37 @@ trait Fetcher extends CallbackifyInterface {
     *                     includes response.status as the HTTP status if any.
     */
   def nowOrWhenFetched(uriIn: String): Unit = js.native
+  def nowOrWhenFetched(
+    uriIn: String,
+    p2: js.UndefOr[scala.Nothing],
+    userCallback: js.UndefOr[scala.Nothing],
+    options: Options
+  ): Unit = js.native
+  def nowOrWhenFetched(uriIn: String, p2: js.UndefOr[scala.Nothing], userCallback: UserCallback): Unit = js.native
+  def nowOrWhenFetched(uriIn: String, p2: js.UndefOr[scala.Nothing], userCallback: UserCallback, options: Options): Unit = js.native
   def nowOrWhenFetched(uriIn: String, p2: Options): Unit = js.native
+  def nowOrWhenFetched(uriIn: String, p2: Options, userCallback: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def nowOrWhenFetched(uriIn: String, p2: Options, userCallback: UserCallback): Unit = js.native
   def nowOrWhenFetched(uriIn: String, p2: Options, userCallback: UserCallback, options: Options): Unit = js.native
   def nowOrWhenFetched(uriIn: String, p2: UserCallback): Unit = js.native
+  def nowOrWhenFetched(uriIn: String, p2: UserCallback, userCallback: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def nowOrWhenFetched(uriIn: String, p2: UserCallback, userCallback: UserCallback): Unit = js.native
   def nowOrWhenFetched(uriIn: String, p2: UserCallback, userCallback: UserCallback, options: Options): Unit = js.native
   def nowOrWhenFetched(uriIn: NamedNode): Unit = js.native
+  def nowOrWhenFetched(
+    uriIn: NamedNode,
+    p2: js.UndefOr[scala.Nothing],
+    userCallback: js.UndefOr[scala.Nothing],
+    options: Options
+  ): Unit = js.native
+  def nowOrWhenFetched(uriIn: NamedNode, p2: js.UndefOr[scala.Nothing], userCallback: UserCallback): Unit = js.native
+  def nowOrWhenFetched(uriIn: NamedNode, p2: js.UndefOr[scala.Nothing], userCallback: UserCallback, options: Options): Unit = js.native
   def nowOrWhenFetched(uriIn: NamedNode, p2: Options): Unit = js.native
+  def nowOrWhenFetched(uriIn: NamedNode, p2: Options, userCallback: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def nowOrWhenFetched(uriIn: NamedNode, p2: Options, userCallback: UserCallback): Unit = js.native
   def nowOrWhenFetched(uriIn: NamedNode, p2: Options, userCallback: UserCallback, options: Options): Unit = js.native
   def nowOrWhenFetched(uriIn: NamedNode, p2: UserCallback): Unit = js.native
+  def nowOrWhenFetched(uriIn: NamedNode, p2: UserCallback, userCallback: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def nowOrWhenFetched(uriIn: NamedNode, p2: UserCallback, userCallback: UserCallback): Unit = js.native
   def nowOrWhenFetched(uriIn: NamedNode, p2: UserCallback, userCallback: UserCallback, options: Options): Unit = js.native
   def objectRefresh(term: NamedNode): Unit = js.native

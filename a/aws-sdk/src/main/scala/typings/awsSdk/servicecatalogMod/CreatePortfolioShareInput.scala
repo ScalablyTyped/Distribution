@@ -26,17 +26,36 @@ trait CreatePortfolioShareInput extends js.Object {
 
 object CreatePortfolioShareInput {
   @scala.inline
-  def apply(
-    PortfolioId: Id,
-    AcceptLanguage: AcceptLanguage = null,
-    AccountId: AccountId = null,
-    OrganizationNode: OrganizationNode = null
-  ): CreatePortfolioShareInput = {
+  def apply(PortfolioId: Id): CreatePortfolioShareInput = {
     val __obj = js.Dynamic.literal(PortfolioId = PortfolioId.asInstanceOf[js.Any])
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (OrganizationNode != null) __obj.updateDynamic("OrganizationNode")(OrganizationNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePortfolioShareInput]
   }
+  @scala.inline
+  implicit class CreatePortfolioShareInputOps[Self <: CreatePortfolioShareInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPortfolioId(value: Id): Self = this.set("PortfolioId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setOrganizationNode(value: OrganizationNode): Self = this.set("OrganizationNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationNode: Self = this.set("OrganizationNode", js.undefined)
+  }
+  
 }
 

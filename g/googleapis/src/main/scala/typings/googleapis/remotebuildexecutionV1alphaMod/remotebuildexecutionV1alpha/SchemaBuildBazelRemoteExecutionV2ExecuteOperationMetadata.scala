@@ -29,18 +29,38 @@ trait SchemaBuildBazelRemoteExecutionV2ExecuteOperationMetadata extends js.Objec
 
 object SchemaBuildBazelRemoteExecutionV2ExecuteOperationMetadata {
   @scala.inline
-  def apply(
-    actionDigest: SchemaBuildBazelRemoteExecutionV2Digest = null,
-    stage: String = null,
-    stderrStreamName: String = null,
-    stdoutStreamName: String = null
-  ): SchemaBuildBazelRemoteExecutionV2ExecuteOperationMetadata = {
+  def apply(): SchemaBuildBazelRemoteExecutionV2ExecuteOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (actionDigest != null) __obj.updateDynamic("actionDigest")(actionDigest.asInstanceOf[js.Any])
-    if (stage != null) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])
-    if (stderrStreamName != null) __obj.updateDynamic("stderrStreamName")(stderrStreamName.asInstanceOf[js.Any])
-    if (stdoutStreamName != null) __obj.updateDynamic("stdoutStreamName")(stdoutStreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ExecuteOperationMetadata]
   }
+  @scala.inline
+  implicit class SchemaBuildBazelRemoteExecutionV2ExecuteOperationMetadataOps[Self <: SchemaBuildBazelRemoteExecutionV2ExecuteOperationMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = this.set("actionDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionDigest: Self = this.set("actionDigest", js.undefined)
+    @scala.inline
+    def setStage(value: String): Self = this.set("stage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStage: Self = this.set("stage", js.undefined)
+    @scala.inline
+    def setStderrStreamName(value: String): Self = this.set("stderrStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStderrStreamName: Self = this.set("stderrStreamName", js.undefined)
+    @scala.inline
+    def setStdoutStreamName(value: String): Self = this.set("stdoutStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdoutStreamName: Self = this.set("stdoutStreamName", js.undefined)
+  }
+  
 }
 

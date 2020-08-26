@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   *
   * An implementation of this service in general does not need to buffer data itself.
   */
+@js.native
 trait DataOutputStream
   extends XDataOutputStream
      with XActiveDataSource

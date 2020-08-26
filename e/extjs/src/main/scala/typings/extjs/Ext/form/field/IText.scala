@@ -6,169 +6,265 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IText extends IBase {
   /** [Config Option] (Boolean) */
-  var allowBlank: js.UndefOr[Boolean] = js.undefined
+  var allowBlank: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var allowOnlyWhitespace: js.UndefOr[Boolean] = js.undefined
+  var allowOnlyWhitespace: js.UndefOr[Boolean] = js.native
   /** [Method] Automatically grows the field to accomodate the width of the text up to the maximum field width allowed  */
-  var autoSize: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var autoSize: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] private */
   @JSName("beforeFocus")
-  var beforeFocus_IText: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var beforeFocus_IText: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (String) */
-  var blankText: js.UndefOr[String] = js.undefined
+  var blankText: js.UndefOr[String] = js.native
   /** [Config Option] (Boolean) */
-  var disableKeyFilter: js.UndefOr[Boolean] = js.undefined
+  var disableKeyFilter: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String) */
-  var emptyCls: js.UndefOr[String] = js.undefined
+  var emptyCls: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var emptyText: js.UndefOr[String] = js.undefined
+  var emptyText: js.UndefOr[String] = js.native
   /** [Config Option] (Boolean) */
-  var enableKeyEvents: js.UndefOr[Boolean] = js.undefined
+  var enableKeyEvents: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var enforceMaxLength: js.UndefOr[Boolean] = js.undefined
+  var enforceMaxLength: js.UndefOr[Boolean] = js.native
   /** [Method] Validates a value according to the field s validation rules and returns an array of errors for any failing validations
     * @param value Object The value to validate. The processed raw value will be used if nothing is passed.
     * @returns String[] Array of any validation errors
     */
   @JSName("getErrors")
-  var getErrors_IText: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Array]] = js.undefined
+  var getErrors_IText: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Array]] = js.native
   /** [Method] Returns the raw String value of the field without performing any normalization conversion or validation
     * @returns String The raw String value of the field
     */
   @JSName("getRawValue")
-  var getRawValue_IText: js.UndefOr[js.Function0[String]] = js.undefined
+  var getRawValue_IText: js.UndefOr[js.Function0[String]] = js.native
   /** [Config Option] (Boolean) */
-  var grow: js.UndefOr[Boolean] = js.undefined
+  var grow: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String) */
-  var growAppend: js.UndefOr[String] = js.undefined
+  var growAppend: js.UndefOr[String] = js.native
   /** [Config Option] (Number) */
-  var growMax: js.UndefOr[Double] = js.undefined
+  var growMax: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var growMin: js.UndefOr[Double] = js.undefined
+  var growMin: js.UndefOr[Double] = js.native
   /** [Config Option] (RegExp) */
-  var maskRe: js.UndefOr[RegExp] = js.undefined
+  var maskRe: js.UndefOr[RegExp] = js.native
   /** [Config Option] (Number) */
-  var maxLength: js.UndefOr[Double] = js.undefined
+  var maxLength: js.UndefOr[Double] = js.native
   /** [Config Option] (String) */
-  var maxLengthText: js.UndefOr[String] = js.undefined
+  var maxLengthText: js.UndefOr[String] = js.native
   /** [Config Option] (Number) */
-  var minLength: js.UndefOr[Double] = js.undefined
+  var minLength: js.UndefOr[Double] = js.native
   /** [Config Option] (String) */
-  var minLengthText: js.UndefOr[String] = js.undefined
+  var minLengthText: js.UndefOr[String] = js.native
   /** [Method] private */
   @JSName("postBlur")
-  var postBlur_IText: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var postBlur_IText: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Performs any necessary manipulation of a raw String value to prepare it for conversion and or validation
     * @param value String The unprocessed string value
     * @returns String The processed string value
     */
   @JSName("processRawValue")
-  var processRawValue_IText: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], String]] = js.undefined
+  var processRawValue_IText: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], String]] = js.native
   /** [Config Option] (RegExp) */
-  var regex: js.UndefOr[RegExp] = js.undefined
+  var regex: js.UndefOr[RegExp] = js.native
   /** [Config Option] (String) */
-  var regexText: js.UndefOr[String] = js.undefined
+  var regexText: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var requiredCls: js.UndefOr[String] = js.undefined
+  var requiredCls: js.UndefOr[String] = js.native
+  /** [Method] Resets the current field value to the originally loaded value and clears any validation messages  */
+  @JSName("reset")
+  var reset_IText: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (Boolean) */
-  var selectOnFocus: js.UndefOr[Boolean] = js.undefined
+  var selectOnFocus: js.UndefOr[Boolean] = js.native
   /** [Method] Selects text in this field
     * @param start Number The index where the selection should start
     * @param end Number The index where the selection should end (defaults to the text length)
     */
-  var selectText: js.UndefOr[js.Function2[/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double], Unit]] = js.undefined
+  var selectText: js.UndefOr[js.Function2[/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double], Unit]] = js.native
+  /** [Method] Sets a data value into the field and runs the change detection and validation
+    * @param value Object The value to set
+    * @returns any this
+    */
+  @JSName("setValue")
+  var setValue_IText: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.native
   /** [Config Option] (Number) */
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
   /** [Config Option] (RegExp) */
-  var stripCharsRe: js.UndefOr[RegExp] = js.undefined
+  var stripCharsRe: js.UndefOr[RegExp] = js.native
   /** [Config Option] (Boolean) */
-  var validateBlank: js.UndefOr[Boolean] = js.undefined
+  var validateBlank: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Function) */
-  var validator: js.UndefOr[js.Any] = js.undefined
+  var validator: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var vtype: js.UndefOr[String] = js.undefined
+  var vtype: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var vtypeText: js.UndefOr[String] = js.undefined
+  var vtypeText: js.UndefOr[String] = js.native
 }
 
 object IText {
   @scala.inline
-  def apply(
-    IBase: IBase = null,
-    allowBlank: js.UndefOr[Boolean] = js.undefined,
-    allowOnlyWhitespace: js.UndefOr[Boolean] = js.undefined,
-    autoSize: () => Unit = null,
-    beforeFocus: () => Unit = null,
-    blankText: String = null,
-    disableKeyFilter: js.UndefOr[Boolean] = js.undefined,
-    emptyCls: String = null,
-    emptyText: String = null,
-    enableKeyEvents: js.UndefOr[Boolean] = js.undefined,
-    enforceMaxLength: js.UndefOr[Boolean] = js.undefined,
-    getErrors: /* value */ js.UndefOr[js.Any] => Array = null,
-    getRawValue: () => String = null,
-    grow: js.UndefOr[Boolean] = js.undefined,
-    growAppend: String = null,
-    growMax: js.UndefOr[Double] = js.undefined,
-    growMin: js.UndefOr[Double] = js.undefined,
-    maskRe: RegExp = null,
-    maxLength: js.UndefOr[Double] = js.undefined,
-    maxLengthText: String = null,
-    minLength: js.UndefOr[Double] = js.undefined,
-    minLengthText: String = null,
-    postBlur: () => Unit = null,
-    processRawValue: /* value */ js.UndefOr[String] => String = null,
-    regex: RegExp = null,
-    regexText: String = null,
-    requiredCls: String = null,
-    selectOnFocus: js.UndefOr[Boolean] = js.undefined,
-    selectText: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Unit = null,
-    size: js.UndefOr[Double] = js.undefined,
-    stripCharsRe: RegExp = null,
-    validateBlank: js.UndefOr[Boolean] = js.undefined,
-    validator: js.Any = null,
-    vtype: String = null,
-    vtypeText: String = null
-  ): IText = {
+  def apply(): IText = {
     val __obj = js.Dynamic.literal()
-    if (IBase != null) js.Dynamic.global.Object.assign(__obj, IBase)
-    if (!js.isUndefined(allowBlank)) __obj.updateDynamic("allowBlank")(allowBlank.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowOnlyWhitespace)) __obj.updateDynamic("allowOnlyWhitespace")(allowOnlyWhitespace.get.asInstanceOf[js.Any])
-    if (autoSize != null) __obj.updateDynamic("autoSize")(js.Any.fromFunction0(autoSize))
-    if (beforeFocus != null) __obj.updateDynamic("beforeFocus")(js.Any.fromFunction0(beforeFocus))
-    if (blankText != null) __obj.updateDynamic("blankText")(blankText.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableKeyFilter)) __obj.updateDynamic("disableKeyFilter")(disableKeyFilter.get.asInstanceOf[js.Any])
-    if (emptyCls != null) __obj.updateDynamic("emptyCls")(emptyCls.asInstanceOf[js.Any])
-    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableKeyEvents)) __obj.updateDynamic("enableKeyEvents")(enableKeyEvents.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceMaxLength)) __obj.updateDynamic("enforceMaxLength")(enforceMaxLength.get.asInstanceOf[js.Any])
-    if (getErrors != null) __obj.updateDynamic("getErrors")(js.Any.fromFunction1(getErrors))
-    if (getRawValue != null) __obj.updateDynamic("getRawValue")(js.Any.fromFunction0(getRawValue))
-    if (!js.isUndefined(grow)) __obj.updateDynamic("grow")(grow.get.asInstanceOf[js.Any])
-    if (growAppend != null) __obj.updateDynamic("growAppend")(growAppend.asInstanceOf[js.Any])
-    if (!js.isUndefined(growMax)) __obj.updateDynamic("growMax")(growMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(growMin)) __obj.updateDynamic("growMin")(growMin.get.asInstanceOf[js.Any])
-    if (maskRe != null) __obj.updateDynamic("maskRe")(maskRe.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
-    if (maxLengthText != null) __obj.updateDynamic("maxLengthText")(maxLengthText.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
-    if (minLengthText != null) __obj.updateDynamic("minLengthText")(minLengthText.asInstanceOf[js.Any])
-    if (postBlur != null) __obj.updateDynamic("postBlur")(js.Any.fromFunction0(postBlur))
-    if (processRawValue != null) __obj.updateDynamic("processRawValue")(js.Any.fromFunction1(processRawValue))
-    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
-    if (regexText != null) __obj.updateDynamic("regexText")(regexText.asInstanceOf[js.Any])
-    if (requiredCls != null) __obj.updateDynamic("requiredCls")(requiredCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOnFocus)) __obj.updateDynamic("selectOnFocus")(selectOnFocus.get.asInstanceOf[js.Any])
-    if (selectText != null) __obj.updateDynamic("selectText")(js.Any.fromFunction2(selectText))
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (stripCharsRe != null) __obj.updateDynamic("stripCharsRe")(stripCharsRe.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateBlank)) __obj.updateDynamic("validateBlank")(validateBlank.get.asInstanceOf[js.Any])
-    if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
-    if (vtype != null) __obj.updateDynamic("vtype")(vtype.asInstanceOf[js.Any])
-    if (vtypeText != null) __obj.updateDynamic("vtypeText")(vtypeText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IText]
   }
+  @scala.inline
+  implicit class ITextOps[Self <: IText] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowBlank(value: Boolean): Self = this.set("allowBlank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowBlank: Self = this.set("allowBlank", js.undefined)
+    @scala.inline
+    def setAllowOnlyWhitespace(value: Boolean): Self = this.set("allowOnlyWhitespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowOnlyWhitespace: Self = this.set("allowOnlyWhitespace", js.undefined)
+    @scala.inline
+    def setAutoSize(value: () => Unit): Self = this.set("autoSize", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteAutoSize: Self = this.set("autoSize", js.undefined)
+    @scala.inline
+    def setBeforeFocus(value: () => Unit): Self = this.set("beforeFocus", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteBeforeFocus: Self = this.set("beforeFocus", js.undefined)
+    @scala.inline
+    def setBlankText(value: String): Self = this.set("blankText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlankText: Self = this.set("blankText", js.undefined)
+    @scala.inline
+    def setDisableKeyFilter(value: Boolean): Self = this.set("disableKeyFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableKeyFilter: Self = this.set("disableKeyFilter", js.undefined)
+    @scala.inline
+    def setEmptyCls(value: String): Self = this.set("emptyCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptyCls: Self = this.set("emptyCls", js.undefined)
+    @scala.inline
+    def setEmptyText(value: String): Self = this.set("emptyText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptyText: Self = this.set("emptyText", js.undefined)
+    @scala.inline
+    def setEnableKeyEvents(value: Boolean): Self = this.set("enableKeyEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableKeyEvents: Self = this.set("enableKeyEvents", js.undefined)
+    @scala.inline
+    def setEnforceMaxLength(value: Boolean): Self = this.set("enforceMaxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceMaxLength: Self = this.set("enforceMaxLength", js.undefined)
+    @scala.inline
+    def setGetErrors(value: /* value */ js.UndefOr[js.Any] => Array): Self = this.set("getErrors", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetErrors: Self = this.set("getErrors", js.undefined)
+    @scala.inline
+    def setGetRawValue(value: () => String): Self = this.set("getRawValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRawValue: Self = this.set("getRawValue", js.undefined)
+    @scala.inline
+    def setGrow(value: Boolean): Self = this.set("grow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrow: Self = this.set("grow", js.undefined)
+    @scala.inline
+    def setGrowAppend(value: String): Self = this.set("growAppend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowAppend: Self = this.set("growAppend", js.undefined)
+    @scala.inline
+    def setGrowMax(value: Double): Self = this.set("growMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowMax: Self = this.set("growMax", js.undefined)
+    @scala.inline
+    def setGrowMin(value: Double): Self = this.set("growMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowMin: Self = this.set("growMin", js.undefined)
+    @scala.inline
+    def setMaskRe(value: RegExp): Self = this.set("maskRe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskRe: Self = this.set("maskRe", js.undefined)
+    @scala.inline
+    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    @scala.inline
+    def setMaxLengthText(value: String): Self = this.set("maxLengthText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLengthText: Self = this.set("maxLengthText", js.undefined)
+    @scala.inline
+    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    @scala.inline
+    def setMinLengthText(value: String): Self = this.set("minLengthText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLengthText: Self = this.set("minLengthText", js.undefined)
+    @scala.inline
+    def setPostBlur(value: () => Unit): Self = this.set("postBlur", js.Any.fromFunction0(value))
+    @scala.inline
+    def deletePostBlur: Self = this.set("postBlur", js.undefined)
+    @scala.inline
+    def setProcessRawValue(value: /* value */ js.UndefOr[String] => String): Self = this.set("processRawValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteProcessRawValue: Self = this.set("processRawValue", js.undefined)
+    @scala.inline
+    def setRegex(value: RegExp): Self = this.set("regex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegex: Self = this.set("regex", js.undefined)
+    @scala.inline
+    def setRegexText(value: String): Self = this.set("regexText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexText: Self = this.set("regexText", js.undefined)
+    @scala.inline
+    def setRequiredCls(value: String): Self = this.set("requiredCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiredCls: Self = this.set("requiredCls", js.undefined)
+    @scala.inline
+    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteReset: Self = this.set("reset", js.undefined)
+    @scala.inline
+    def setSelectOnFocus(value: Boolean): Self = this.set("selectOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectOnFocus: Self = this.set("selectOnFocus", js.undefined)
+    @scala.inline
+    def setSelectText(value: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Unit): Self = this.set("selectText", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSelectText: Self = this.set("selectText", js.undefined)
+    @scala.inline
+    def setSetValue(value: /* value */ js.UndefOr[js.Any] => _): Self = this.set("setValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStripCharsRe(value: RegExp): Self = this.set("stripCharsRe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripCharsRe: Self = this.set("stripCharsRe", js.undefined)
+    @scala.inline
+    def setValidateBlank(value: Boolean): Self = this.set("validateBlank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateBlank: Self = this.set("validateBlank", js.undefined)
+    @scala.inline
+    def setValidator(value: js.Any): Self = this.set("validator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidator: Self = this.set("validator", js.undefined)
+    @scala.inline
+    def setVtype(value: String): Self = this.set("vtype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVtype: Self = this.set("vtype", js.undefined)
+    @scala.inline
+    def setVtypeText(value: String): Self = this.set("vtypeText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVtypeText: Self = this.set("vtypeText", js.undefined)
+  }
+  
 }
 

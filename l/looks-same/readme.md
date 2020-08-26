@@ -10,9 +10,9 @@ Pure node.js library for comparing PNG-images, taking into account human color p
 | ------------------ | :-------------: |
 | Full name          | looks-same |
 | Keywords           | png, compare, ciede2000, diff |
-| # releases         | 15 |
+| # releases         | 14 |
 | # dependents       | 29 |
-| # downloads        | 719070 |
+| # downloads        | 739442 |
 | # stars            | 2 |
 
 ## Links

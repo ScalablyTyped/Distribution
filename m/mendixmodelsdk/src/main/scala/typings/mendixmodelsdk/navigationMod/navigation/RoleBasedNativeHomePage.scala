@@ -29,16 +29,12 @@ class RoleBasedNativeHomePage protected () extends Element {
   @JSName("model")
   var model_FRoleBasedNativeHomePage: IModel = js.native
   def containerAsNativeNavigationProfile: NativeNavigationProfile = js.native
-  def page(): js.Any = js.native
-  def page(newValue: IPage): js.Any = js.native
+  def page: IPage | Null = js.native
   def pageQualifiedName: String | Null = js.native
-  @JSName("page")
-  def page_Union: IPage | Null = js.native
-  def userRole(): js.Any = js.native
-  def userRole(newValue: IUserRole): js.Any = js.native
+  def page_=(newValue: IPage | Null): Unit = js.native
+  def userRole: IUserRole | Null = js.native
   def userRoleQualifiedName: String | Null = js.native
-  @JSName("userRole")
-  def userRole_Union: IUserRole | Null = js.native
+  def userRole_=(newValue: IUserRole | Null): Unit = js.native
 }
 
 /* static members */

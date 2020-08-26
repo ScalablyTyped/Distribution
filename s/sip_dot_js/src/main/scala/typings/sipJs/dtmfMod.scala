@@ -15,8 +15,8 @@ object dtmfMod extends js.Object {
     def this(incomingInfoRequest: IncomingInfoRequest, tone: String, duration: Double) = this()
     var _duration: js.Any = js.native
     var _tone: js.Any = js.native
-    val duration: Double = js.native
-    val tone: String = js.native
+    def duration: Double = js.native
+    def tone: String = js.native
   }
   
 }

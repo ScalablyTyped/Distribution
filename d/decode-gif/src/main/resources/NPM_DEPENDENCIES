@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "decode-gif" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "decode-gif" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

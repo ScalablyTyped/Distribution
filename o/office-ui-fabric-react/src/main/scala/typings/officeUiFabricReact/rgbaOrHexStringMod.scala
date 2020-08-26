@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object rgbaOrHexStringMod extends js.Object {
   @JSName("_rgbaOrHexString")
-  def rgbaOrHexString(r: Double, g: Double, b: Double, a: js.UndefOr[Double], hex: String): String = js.native
+  def rgbaOrHexString(r: Double, g: Double, b: Double, a: js.UndefOr[scala.Nothing], hex: String): String = js.native
+  @JSName("_rgbaOrHexString")
+  def rgbaOrHexString(r: Double, g: Double, b: Double, a: Double, hex: String): String = js.native
 }
 

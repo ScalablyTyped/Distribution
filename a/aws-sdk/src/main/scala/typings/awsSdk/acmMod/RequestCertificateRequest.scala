@@ -42,25 +42,58 @@ trait RequestCertificateRequest extends js.Object {
 
 object RequestCertificateRequest {
   @scala.inline
-  def apply(
-    DomainName: DomainNameString,
-    CertificateAuthorityArn: Arn = null,
-    DomainValidationOptions: DomainValidationOptionList = null,
-    IdempotencyToken: IdempotencyToken = null,
-    Options: CertificateOptions = null,
-    SubjectAlternativeNames: DomainList = null,
-    Tags: TagList = null,
-    ValidationMethod: ValidationMethod = null
-  ): RequestCertificateRequest = {
+  def apply(DomainName: DomainNameString): RequestCertificateRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (CertificateAuthorityArn != null) __obj.updateDynamic("CertificateAuthorityArn")(CertificateAuthorityArn.asInstanceOf[js.Any])
-    if (DomainValidationOptions != null) __obj.updateDynamic("DomainValidationOptions")(DomainValidationOptions.asInstanceOf[js.Any])
-    if (IdempotencyToken != null) __obj.updateDynamic("IdempotencyToken")(IdempotencyToken.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
-    if (SubjectAlternativeNames != null) __obj.updateDynamic("SubjectAlternativeNames")(SubjectAlternativeNames.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (ValidationMethod != null) __obj.updateDynamic("ValidationMethod")(ValidationMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestCertificateRequest]
   }
+  @scala.inline
+  implicit class RequestCertificateRequestOps[Self <: RequestCertificateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: DomainNameString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateAuthorityArn: Self = this.set("CertificateAuthorityArn", js.undefined)
+    @scala.inline
+    def setDomainValidationOptionsVarargs(value: DomainValidationOption*): Self = this.set("DomainValidationOptions", js.Array(value :_*))
+    @scala.inline
+    def setDomainValidationOptions(value: DomainValidationOptionList): Self = this.set("DomainValidationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainValidationOptions: Self = this.set("DomainValidationOptions", js.undefined)
+    @scala.inline
+    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdempotencyToken: Self = this.set("IdempotencyToken", js.undefined)
+    @scala.inline
+    def setOptions(value: CertificateOptions): Self = this.set("Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("Options", js.undefined)
+    @scala.inline
+    def setSubjectAlternativeNamesVarargs(value: DomainNameString*): Self = this.set("SubjectAlternativeNames", js.Array(value :_*))
+    @scala.inline
+    def setSubjectAlternativeNames(value: DomainList): Self = this.set("SubjectAlternativeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubjectAlternativeNames: Self = this.set("SubjectAlternativeNames", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setValidationMethod(value: ValidationMethod): Self = this.set("ValidationMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationMethod: Self = this.set("ValidationMethod", js.undefined)
+  }
+  
 }
 

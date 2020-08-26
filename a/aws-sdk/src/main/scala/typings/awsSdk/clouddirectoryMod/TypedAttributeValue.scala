@@ -30,20 +30,42 @@ trait TypedAttributeValue extends js.Object {
 
 object TypedAttributeValue {
   @scala.inline
-  def apply(
-    BinaryValue: BinaryAttributeValue = null,
-    BooleanValue: js.UndefOr[BooleanAttributeValue] = js.undefined,
-    DatetimeValue: DatetimeAttributeValue = null,
-    NumberValue: NumberAttributeValue = null,
-    StringValue: StringAttributeValue = null
-  ): TypedAttributeValue = {
+  def apply(): TypedAttributeValue = {
     val __obj = js.Dynamic.literal()
-    if (BinaryValue != null) __obj.updateDynamic("BinaryValue")(BinaryValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(BooleanValue)) __obj.updateDynamic("BooleanValue")(BooleanValue.get.asInstanceOf[js.Any])
-    if (DatetimeValue != null) __obj.updateDynamic("DatetimeValue")(DatetimeValue.asInstanceOf[js.Any])
-    if (NumberValue != null) __obj.updateDynamic("NumberValue")(NumberValue.asInstanceOf[js.Any])
-    if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypedAttributeValue]
   }
+  @scala.inline
+  implicit class TypedAttributeValueOps[Self <: TypedAttributeValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBinaryValue(value: BinaryAttributeValue): Self = this.set("BinaryValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinaryValue: Self = this.set("BinaryValue", js.undefined)
+    @scala.inline
+    def setBooleanValue(value: BooleanAttributeValue): Self = this.set("BooleanValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBooleanValue: Self = this.set("BooleanValue", js.undefined)
+    @scala.inline
+    def setDatetimeValue(value: DatetimeAttributeValue): Self = this.set("DatetimeValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatetimeValue: Self = this.set("DatetimeValue", js.undefined)
+    @scala.inline
+    def setNumberValue(value: NumberAttributeValue): Self = this.set("NumberValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberValue: Self = this.set("NumberValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: StringAttributeValue): Self = this.set("StringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("StringValue", js.undefined)
+  }
+  
 }
 

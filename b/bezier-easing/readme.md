@@ -11,8 +11,8 @@ BezierEasing provides Cubic Bezier Curve easing which generalizes easing functio
 | Full name          | bezier-easing |
 | Keywords           | cubic-bezier, bezier, easing, interpolation, animation, timing, timing-function |
 | # releases         | 2 |
-| # dependents       | 118 |
-| # downloads        | 4265271 |
+| # dependents       | 122 |
+| # downloads        | 4579997 |
 | # stars            | 9 |
 
 ## Links

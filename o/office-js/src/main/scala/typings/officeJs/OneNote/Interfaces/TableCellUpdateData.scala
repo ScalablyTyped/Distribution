@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the TableCell object, for use in "tableCell.set({ ... })". */
+@js.native
 trait TableCellUpdateData extends js.Object {
   /**
     *
@@ -12,15 +13,31 @@ trait TableCellUpdateData extends js.Object {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var shadingColor: js.UndefOr[String] = js.undefined
+  var shadingColor: js.UndefOr[String] = js.native
 }
 
 object TableCellUpdateData {
   @scala.inline
-  def apply(shadingColor: String = null): TableCellUpdateData = {
+  def apply(): TableCellUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellUpdateData]
   }
+  @scala.inline
+  implicit class TableCellUpdateDataOps[Self <: TableCellUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShadingColor(value: String): Self = this.set("shadingColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadingColor: Self = this.set("shadingColor", js.undefined)
+  }
+  
 }
 

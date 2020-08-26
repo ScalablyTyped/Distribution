@@ -23,11 +23,32 @@ trait SchemaSnippet extends js.Object {
 
 object SchemaSnippet {
   @scala.inline
-  def apply(matchRanges: js.Array[SchemaMatchRange] = null, snippet: String = null): SchemaSnippet = {
+  def apply(): SchemaSnippet = {
     val __obj = js.Dynamic.literal()
-    if (matchRanges != null) __obj.updateDynamic("matchRanges")(matchRanges.asInstanceOf[js.Any])
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSnippet]
   }
+  @scala.inline
+  implicit class SchemaSnippetOps[Self <: SchemaSnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMatchRangesVarargs(value: SchemaMatchRange*): Self = this.set("matchRanges", js.Array(value :_*))
+    @scala.inline
+    def setMatchRanges(value: js.Array[SchemaMatchRange]): Self = this.set("matchRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchRanges: Self = this.set("matchRanges", js.undefined)
+    @scala.inline
+    def setSnippet(value: String): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnippet: Self = this.set("snippet", js.undefined)
+  }
+  
 }
 

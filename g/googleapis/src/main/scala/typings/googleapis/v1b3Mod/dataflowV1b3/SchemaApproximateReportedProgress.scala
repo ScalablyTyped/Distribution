@@ -53,18 +53,38 @@ trait SchemaApproximateReportedProgress extends js.Object {
 
 object SchemaApproximateReportedProgress {
   @scala.inline
-  def apply(
-    consumedParallelism: SchemaReportedParallelism = null,
-    fractionConsumed: js.UndefOr[Double] = js.undefined,
-    position: SchemaPosition = null,
-    remainingParallelism: SchemaReportedParallelism = null
-  ): SchemaApproximateReportedProgress = {
+  def apply(): SchemaApproximateReportedProgress = {
     val __obj = js.Dynamic.literal()
-    if (consumedParallelism != null) __obj.updateDynamic("consumedParallelism")(consumedParallelism.asInstanceOf[js.Any])
-    if (!js.isUndefined(fractionConsumed)) __obj.updateDynamic("fractionConsumed")(fractionConsumed.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (remainingParallelism != null) __obj.updateDynamic("remainingParallelism")(remainingParallelism.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApproximateReportedProgress]
   }
+  @scala.inline
+  implicit class SchemaApproximateReportedProgressOps[Self <: SchemaApproximateReportedProgress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumedParallelism(value: SchemaReportedParallelism): Self = this.set("consumedParallelism", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumedParallelism: Self = this.set("consumedParallelism", js.undefined)
+    @scala.inline
+    def setFractionConsumed(value: Double): Self = this.set("fractionConsumed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFractionConsumed: Self = this.set("fractionConsumed", js.undefined)
+    @scala.inline
+    def setPosition(value: SchemaPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRemainingParallelism(value: SchemaReportedParallelism): Self = this.set("remainingParallelism", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemainingParallelism: Self = this.set("remainingParallelism", js.undefined)
+  }
+  
 }
 

@@ -32,13 +32,13 @@ class MetadataReference protected () extends Element {
   def containerAsConsumedODataService: ConsumedODataService = js.native
   def containerAsMetadataReference: MetadataReference = js.native
   def metadata: String = js.native
-  def metadata(newValue: String): js.Any = js.native
   /**
     * In version 8.8.0: introduced
     */
   def metadataReferences: IList[MetadataReference] = js.native
+  def metadata_=(newValue: String): Unit = js.native
   def uri: String = js.native
-  def uri(newValue: String): js.Any = js.native
+  def uri_=(newValue: String): Unit = js.native
 }
 
 /* static members */

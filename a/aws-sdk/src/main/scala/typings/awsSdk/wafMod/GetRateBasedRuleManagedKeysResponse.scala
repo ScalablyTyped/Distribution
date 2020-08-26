@@ -18,11 +18,32 @@ trait GetRateBasedRuleManagedKeysResponse extends js.Object {
 
 object GetRateBasedRuleManagedKeysResponse {
   @scala.inline
-  def apply(ManagedKeys: ManagedKeys = null, NextMarker: NextMarker = null): GetRateBasedRuleManagedKeysResponse = {
+  def apply(): GetRateBasedRuleManagedKeysResponse = {
     val __obj = js.Dynamic.literal()
-    if (ManagedKeys != null) __obj.updateDynamic("ManagedKeys")(ManagedKeys.asInstanceOf[js.Any])
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRateBasedRuleManagedKeysResponse]
   }
+  @scala.inline
+  implicit class GetRateBasedRuleManagedKeysResponseOps[Self <: GetRateBasedRuleManagedKeysResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setManagedKeysVarargs(value: ManagedKey*): Self = this.set("ManagedKeys", js.Array(value :_*))
+    @scala.inline
+    def setManagedKeys(value: ManagedKeys): Self = this.set("ManagedKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedKeys: Self = this.set("ManagedKeys", js.undefined)
+    @scala.inline
+    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+  }
+  
 }
 

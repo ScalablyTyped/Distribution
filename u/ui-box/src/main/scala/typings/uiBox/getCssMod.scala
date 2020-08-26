@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ui-box/dist/get-css", JSImport.Namespace)
+@JSImport("ui-box/dist/src/get-css", JSImport.Namespace)
 @js.native
 object getCssMod extends js.Object {
   def default(propertyInfo: PropertyInfo, value: String): EnhancedProp | Null = js.native

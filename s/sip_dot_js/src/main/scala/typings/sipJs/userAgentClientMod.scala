@@ -39,12 +39,9 @@ object userAgentClientMod extends js.Object {
     var credentials: js.Any = js.native
     var init: js.Any = js.native
     var logger: Logger = js.native
-    val loggerFactory: LoggerFactory = js.native
     @JSName("message")
     var message_UserAgentClient: OutgoingRequestMessage = js.native
     var stale: js.Any = js.native
-    /** The transaction associated with this request. */
-    val transaction: ClientTransaction = js.native
     var transactionConstructor: js.Any = js.native
     /**
       * If a 401 (Unauthorized) or 407 (Proxy Authentication Required)
@@ -70,6 +67,7 @@ object userAgentClientMod extends js.Object {
       */
     /* protected */ def authenticationGuard(message: IncomingResponseMessage): Boolean = js.native
     /* protected */ def authenticationGuard(message: IncomingResponseMessage, dialog: Dialog): Boolean = js.native
+    def loggerFactory: LoggerFactory = js.native
     /**
       * 8.1.3.1 Transaction Layer Errors
       * In some cases, the response returned by the transaction layer will
@@ -102,6 +100,8 @@ object userAgentClientMod extends js.Object {
       * @param message - Incoming response message.
       */
     /* protected */ def receiveResponse(message: IncomingResponseMessage): Unit = js.native
+    /** The transaction associated with this request. */
+    def transaction: ClientTransaction = js.native
   }
   
   type ClientTransactionConstructor = Instantiable3[

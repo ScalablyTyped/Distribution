@@ -26,11 +26,32 @@ trait SchemaServiceAccountConfig extends js.Object {
 
 object SchemaServiceAccountConfig {
   @scala.inline
-  def apply(accountId: String = null, tenantProjectRoles: js.Array[String] = null): SchemaServiceAccountConfig = {
+  def apply(): SchemaServiceAccountConfig = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (tenantProjectRoles != null) __obj.updateDynamic("tenantProjectRoles")(tenantProjectRoles.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServiceAccountConfig]
   }
+  @scala.inline
+  implicit class SchemaServiceAccountConfigOps[Self <: SchemaServiceAccountConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setTenantProjectRolesVarargs(value: String*): Self = this.set("tenantProjectRoles", js.Array(value :_*))
+    @scala.inline
+    def setTenantProjectRoles(value: js.Array[String]): Self = this.set("tenantProjectRoles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenantProjectRoles: Self = this.set("tenantProjectRoles", js.undefined)
+  }
+  
 }
 

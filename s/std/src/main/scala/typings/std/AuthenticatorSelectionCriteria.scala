@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AuthenticatorSelectionCriteria extends js.Object {
-  var authenticatorAttachment: js.UndefOr[AuthenticatorAttachment] = js.undefined
-  var requireResidentKey: js.UndefOr[scala.Boolean] = js.undefined
-  var userVerification: js.UndefOr[UserVerificationRequirement] = js.undefined
+  var authenticatorAttachment: js.UndefOr[AuthenticatorAttachment] = js.native
+  var requireResidentKey: js.UndefOr[scala.Boolean] = js.native
+  var userVerification: js.UndefOr[UserVerificationRequirement] = js.native
 }
 
 object AuthenticatorSelectionCriteria {
   @scala.inline
-  def apply(
-    authenticatorAttachment: AuthenticatorAttachment = null,
-    requireResidentKey: js.UndefOr[scala.Boolean] = js.undefined,
-    userVerification: UserVerificationRequirement = null
-  ): AuthenticatorSelectionCriteria = {
+  def apply(): AuthenticatorSelectionCriteria = {
     val __obj = js.Dynamic.literal()
-    if (authenticatorAttachment != null) __obj.updateDynamic("authenticatorAttachment")(authenticatorAttachment.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireResidentKey)) __obj.updateDynamic("requireResidentKey")(requireResidentKey.get.asInstanceOf[js.Any])
-    if (userVerification != null) __obj.updateDynamic("userVerification")(userVerification.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticatorSelectionCriteria]
   }
+  @scala.inline
+  implicit class AuthenticatorSelectionCriteriaOps[Self <: AuthenticatorSelectionCriteria] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticatorAttachment(value: AuthenticatorAttachment): Self = this.set("authenticatorAttachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticatorAttachment: Self = this.set("authenticatorAttachment", js.undefined)
+    @scala.inline
+    def setRequireResidentKey(value: scala.Boolean): Self = this.set("requireResidentKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireResidentKey: Self = this.set("requireResidentKey", js.undefined)
+    @scala.inline
+    def setUserVerification(value: UserVerificationRequirement): Self = this.set("userVerification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserVerification: Self = this.set("userVerification", js.undefined)
+  }
+  
 }
 

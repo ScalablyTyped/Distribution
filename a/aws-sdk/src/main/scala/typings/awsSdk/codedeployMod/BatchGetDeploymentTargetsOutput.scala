@@ -14,10 +14,28 @@ trait BatchGetDeploymentTargetsOutput extends js.Object {
 
 object BatchGetDeploymentTargetsOutput {
   @scala.inline
-  def apply(deploymentTargets: DeploymentTargetList = null): BatchGetDeploymentTargetsOutput = {
+  def apply(): BatchGetDeploymentTargetsOutput = {
     val __obj = js.Dynamic.literal()
-    if (deploymentTargets != null) __obj.updateDynamic("deploymentTargets")(deploymentTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetDeploymentTargetsOutput]
   }
+  @scala.inline
+  implicit class BatchGetDeploymentTargetsOutputOps[Self <: BatchGetDeploymentTargetsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeploymentTargetsVarargs(value: DeploymentTarget*): Self = this.set("deploymentTargets", js.Array(value :_*))
+    @scala.inline
+    def setDeploymentTargets(value: DeploymentTargetList): Self = this.set("deploymentTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentTargets: Self = this.set("deploymentTargets", js.undefined)
+  }
+  
 }
 

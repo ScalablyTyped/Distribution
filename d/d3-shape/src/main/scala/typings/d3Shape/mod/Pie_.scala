@@ -83,13 +83,9 @@ trait Pie_[This, Datum] extends js.Object {
     */
   def padAngle(angle: Double): this.type = js.native
   /**
-    * Sets the data comparator to null and returns this pie generator.
-    *
-    * If both the data comparator and the value comparator are null, then arcs are positioned in the original input order.
-    *
-    * @param comparator null, to set the pie generator to use the original input order or use the sortValues comparator, if any.
+    * Returns the current data comparator, which defaults to null.
     */
-  def sort(): this.type = js.native
+  def sort(): (js.Function2[/* a */ Datum, /* b */ Datum, Double]) | Null = js.native
   /**
     * Sets the data comparator to the specified function and returns this pie generator.
     *
@@ -106,13 +102,17 @@ trait Pie_[This, Datum] extends js.Object {
     */
   def sort(comparator: js.Function2[/* a */ Datum, /* b */ Datum, Double]): this.type = js.native
   /**
-    * Sets the value comparator to null and returns this pie generator.
+    * Sets the data comparator to null and returns this pie generator.
     *
     * If both the data comparator and the value comparator are null, then arcs are positioned in the original input order.
     *
-    * @param comparator null, to set the pie generator to use the original input order or use the data comparator, if any.
+    * @param comparator null, to set the pie generator to use the original input order or use the sortValues comparator, if any.
     */
-  def sortValues(): this.type = js.native
+  def sort(comparator: Null): this.type = js.native
+  /**
+    * Returns the current value comparator, which defaults to descending value.
+    */
+  def sortValues(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
   /**
     * Sets the value comparator to the specified function and returns this pie generator.
     *
@@ -129,15 +129,13 @@ trait Pie_[This, Datum] extends js.Object {
     */
   def sortValues(comparator: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
   /**
-    * Returns the current value comparator, which defaults to descending value.
+    * Sets the value comparator to null and returns this pie generator.
+    *
+    * If both the data comparator and the value comparator are null, then arcs are positioned in the original input order.
+    *
+    * @param comparator null, to set the pie generator to use the original input order or use the data comparator, if any.
     */
-  @JSName("sortValues")
-  def sortValues_Union(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
-  /**
-    * Returns the current data comparator, which defaults to null.
-    */
-  @JSName("sort")
-  def sort_Union(): (js.Function2[/* a */ Datum, /* b */ Datum, Double]) | Null = js.native
+  def sortValues(comparator: Null): this.type = js.native
   /**
     * Returns the current start angle accessor, which defaults to a function returning a constant zero.
     */

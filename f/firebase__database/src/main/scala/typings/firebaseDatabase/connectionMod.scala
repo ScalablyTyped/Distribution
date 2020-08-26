@@ -10,6 +10,15 @@ import scala.scalajs.js.annotation._
 object connectionMod extends js.Object {
   @js.native
   class Connection protected () extends js.Object {
+    def this(
+      id: String,
+      repoInfo_ : RepoInfo,
+      applicationId_ : js.UndefOr[scala.Nothing],
+      onMessage_ : js.Function1[/* a */ js.Object, Unit],
+      onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
+      onDisconnect_ : js.Function0[Unit],
+      onKill_ : js.Function1[/* a */ String, Unit]
+    ) = this()
     /**
       * @param id - an id for this connection
       * @param repoInfo_ - the info for the endpoint to connect to
@@ -23,7 +32,7 @@ object connectionMod extends js.Object {
     def this(
       id: String,
       repoInfo_ : RepoInfo,
-      applicationId_ : js.UndefOr[String],
+      applicationId_ : String,
       onMessage_ : js.Function1[/* a */ js.Object, Unit],
       onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
       onDisconnect_ : js.Function0[Unit],
@@ -32,7 +41,17 @@ object connectionMod extends js.Object {
     def this(
       id: String,
       repoInfo_ : RepoInfo,
-      applicationId_ : js.UndefOr[String],
+      applicationId_ : js.UndefOr[scala.Nothing],
+      onMessage_ : js.Function1[/* a */ js.Object, Unit],
+      onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
+      onDisconnect_ : js.Function0[Unit],
+      onKill_ : js.Function1[/* a */ String, Unit],
+      lastSessionId: String
+    ) = this()
+    def this(
+      id: String,
+      repoInfo_ : RepoInfo,
+      applicationId_ : String,
       onMessage_ : js.Function1[/* a */ js.Object, Unit],
       onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
       onDisconnect_ : js.Function0[Unit],

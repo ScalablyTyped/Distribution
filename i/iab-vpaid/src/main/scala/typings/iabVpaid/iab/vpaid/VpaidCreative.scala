@@ -279,6 +279,22 @@ trait VpaidCreative extends js.Object {
     * @returns The proposed VPAID version
     */
   def handshakeVersion(playerVPAIDVersion: String): String = js.native
+  def initAd(
+    width: Double,
+    height: Double,
+    viewMode: ViewMode,
+    desiredBitrate: Double,
+    creativeData: js.UndefOr[scala.Nothing],
+    environmentVars: EnvironmentVars
+  ): Unit = js.native
+  def initAd(
+    width: Double,
+    height: Double,
+    viewMode: ViewMode,
+    desiredBitrate: Double,
+    creativeData: Null,
+    environmentVars: EnvironmentVars
+  ): Unit = js.native
   /**
     * After the ad unit is loaded and the video player calls `handshakeVersion`, the video player
     * calls `initAd()` to initialize the ad experience. The video player may preload the ad unit and
@@ -305,7 +321,7 @@ trait VpaidCreative extends js.Object {
     height: Double,
     viewMode: ViewMode,
     desiredBitrate: Double,
-    creativeData: js.UndefOr[CreativeData | Null],
+    creativeData: CreativeData,
     environmentVars: EnvironmentVars
   ): Unit = js.native
   /**
@@ -440,10 +456,6 @@ trait VpaidCreative extends js.Object {
   def subscribe_AdSkipped(fn: js.Function0[Unit], event: AdSkipped): Unit = js.native
   @JSName("subscribe")
   def subscribe_AdSkipped(fn: js.Function0[Unit], event: AdSkipped, listenerScope: js.Object): Unit = js.native
-  @JSName("subscribe")
-  def subscribe_AdStarted(fn: js.Function0[Unit], event: AdStarted): Unit = js.native
-  @JSName("subscribe")
-  def subscribe_AdStarted(fn: js.Function0[Unit], event: AdStarted, listenerScope: js.Object): Unit = js.native
   /**
     * The video player calls this method to register a listener to a particular event
     *
@@ -451,6 +463,10 @@ trait VpaidCreative extends js.Object {
     * @param event is the name of the event that the video player is subscribing to
     * @param listenerScope [optional] is a reference to the object in which the function is defined
     */
+  @JSName("subscribe")
+  def subscribe_AdStarted(fn: js.Function0[Unit], event: AdStarted): Unit = js.native
+  @JSName("subscribe")
+  def subscribe_AdStarted(fn: js.Function0[Unit], event: AdStarted, listenerScope: js.Object): Unit = js.native
   @JSName("subscribe")
   def subscribe_AdStopped(fn: js.Function0[Unit], event: AdStopped): Unit = js.native
   @JSName("subscribe")
@@ -513,14 +529,14 @@ trait VpaidCreative extends js.Object {
   def unsubscribe_AdSkippableStateChange(fn: js.Function0[Unit], event: AdSkippableStateChange): Unit = js.native
   @JSName("unsubscribe")
   def unsubscribe_AdSkipped(fn: js.Function0[Unit], event: AdSkipped): Unit = js.native
-  @JSName("unsubscribe")
-  def unsubscribe_AdStarted(fn: js.Function0[Unit], event: AdStarted): Unit = js.native
   /**
     * The video player calls this method to remove a listener for a particular event
     *
     * @param event is the name of the event that the video player is unsubscribing from
     * @param fn is the event listener that is being removed
     */
+  @JSName("unsubscribe")
+  def unsubscribe_AdStarted(fn: js.Function0[Unit], event: AdStarted): Unit = js.native
   @JSName("unsubscribe")
   def unsubscribe_AdStopped(fn: js.Function0[Unit], event: AdStopped): Unit = js.native
   @JSName("unsubscribe")

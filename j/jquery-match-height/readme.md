@@ -12,7 +12,7 @@ a responsive equal heights plugin for jQuery
 | Keywords           | matchHeight, equal, match, height, equalize, columns |
 | # releases         | 1 |
 | # dependents       | 16 |
-| # downloads        | 1492802 |
+| # downloads        | 1531573 |
 | # stars            | 7 |
 
 ## Links

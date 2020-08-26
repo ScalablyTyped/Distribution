@@ -11,8 +11,8 @@ redux-immutable is used to create an equivalent function of Redux combineReducer
 | Full name          | redux-immutable |
 | Keywords           | immutable, redux |
 | # releases         | 1 |
-| # dependents       | 223 |
-| # downloads        | 6211581 |
+| # dependents       | 225 |
+| # downloads        | 6304521 |
 | # stars            | 14 |
 
 ## Links

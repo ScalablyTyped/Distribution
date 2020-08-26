@@ -5,30 +5,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<smooth-scrollbar.smooth-scrollbar/interfaces.ScrollIntoViewOptions> */
+@js.native
 trait PartialScrollIntoViewOpti extends js.Object {
-  var alignToTop: js.UndefOr[Boolean] = js.undefined
-  var offsetBottom: js.UndefOr[Double] = js.undefined
-  var offsetLeft: js.UndefOr[Double] = js.undefined
-  var offsetTop: js.UndefOr[Double] = js.undefined
-  var onlyScrollIfNeeded: js.UndefOr[Boolean] = js.undefined
+  var alignToTop: js.UndefOr[Boolean] = js.native
+  var offsetBottom: js.UndefOr[Double] = js.native
+  var offsetLeft: js.UndefOr[Double] = js.native
+  var offsetTop: js.UndefOr[Double] = js.native
+  var onlyScrollIfNeeded: js.UndefOr[Boolean] = js.native
 }
 
 object PartialScrollIntoViewOpti {
   @scala.inline
-  def apply(
-    alignToTop: js.UndefOr[Boolean] = js.undefined,
-    offsetBottom: js.UndefOr[Double] = js.undefined,
-    offsetLeft: js.UndefOr[Double] = js.undefined,
-    offsetTop: js.UndefOr[Double] = js.undefined,
-    onlyScrollIfNeeded: js.UndefOr[Boolean] = js.undefined
-  ): PartialScrollIntoViewOpti = {
+  def apply(): PartialScrollIntoViewOpti = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alignToTop)) __obj.updateDynamic("alignToTop")(alignToTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetBottom)) __obj.updateDynamic("offsetBottom")(offsetBottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetLeft)) __obj.updateDynamic("offsetLeft")(offsetLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetTop)) __obj.updateDynamic("offsetTop")(offsetTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyScrollIfNeeded)) __obj.updateDynamic("onlyScrollIfNeeded")(onlyScrollIfNeeded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialScrollIntoViewOpti]
   }
+  @scala.inline
+  implicit class PartialScrollIntoViewOptiOps[Self <: PartialScrollIntoViewOpti] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignToTop(value: Boolean): Self = this.set("alignToTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignToTop: Self = this.set("alignToTop", js.undefined)
+    @scala.inline
+    def setOffsetBottom(value: Double): Self = this.set("offsetBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetBottom: Self = this.set("offsetBottom", js.undefined)
+    @scala.inline
+    def setOffsetLeft(value: Double): Self = this.set("offsetLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetLeft: Self = this.set("offsetLeft", js.undefined)
+    @scala.inline
+    def setOffsetTop(value: Double): Self = this.set("offsetTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetTop: Self = this.set("offsetTop", js.undefined)
+    @scala.inline
+    def setOnlyScrollIfNeeded(value: Boolean): Self = this.set("onlyScrollIfNeeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyScrollIfNeeded: Self = this.set("onlyScrollIfNeeded", js.undefined)
+  }
+  
 }
 

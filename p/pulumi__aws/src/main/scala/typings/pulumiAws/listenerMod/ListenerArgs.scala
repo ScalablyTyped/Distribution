@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListenerArgs extends js.Object {
   /**
-    * The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the [`aws.lb.ListenerCertificate` resource](https://www.terraform.io/docs/providers/aws/r/lb_listener_certificate.html).
+    * The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the `aws.lb.ListenerCertificate` resource.
     */
   val certificateArn: js.UndefOr[Input[String]] = js.native
   /**
@@ -39,16 +39,43 @@ object ListenerArgs {
   def apply(
     defaultActions: Input[js.Array[Input[ListenerDefaultAction]]],
     loadBalancerArn: Input[String],
-    port: Input[Double],
-    certificateArn: Input[String] = null,
-    protocol: Input[String] = null,
-    sslPolicy: Input[String] = null
+    port: Input[Double]
   ): ListenerArgs = {
     val __obj = js.Dynamic.literal(defaultActions = defaultActions.asInstanceOf[js.Any], loadBalancerArn = loadBalancerArn.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (sslPolicy != null) __obj.updateDynamic("sslPolicy")(sslPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerArgs]
   }
+  @scala.inline
+  implicit class ListenerArgsOps[Self <: ListenerArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultActionsVarargs(value: Input[ListenerDefaultAction]*): Self = this.set("defaultActions", js.Array(value :_*))
+    @scala.inline
+    def setDefaultActions(value: Input[js.Array[Input[ListenerDefaultAction]]]): Self = this.set("defaultActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoadBalancerArn(value: Input[String]): Self = this.set("loadBalancerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPort(value: Input[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateArn(value: Input[String]): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    @scala.inline
+    def setProtocol(value: Input[String]): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setSslPolicy(value: Input[String]): Self = this.set("sslPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslPolicy: Self = this.set("sslPolicy", js.undefined)
+  }
+  
 }
 

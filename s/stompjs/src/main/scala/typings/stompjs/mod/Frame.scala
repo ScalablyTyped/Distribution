@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Frame protected () extends js.Object {
   def this(command: String) = this()
   def this(command: String, headers: js.Object) = this()
+  def this(command: String, headers: js.UndefOr[scala.Nothing], body: String) = this()
   def this(command: String, headers: js.Object, body: String) = this()
   var body: String = js.native
   var command: String = js.native
@@ -19,6 +20,7 @@ class Frame protected () extends js.Object {
 @js.native
 object Frame extends js.Object {
   def marshall(command: String): js.Any = js.native
+  def marshall(command: String, headers: js.UndefOr[scala.Nothing], body: String): js.Any = js.native
   def marshall(command: String, headers: js.Object): js.Any = js.native
   def marshall(command: String, headers: js.Object, body: String): js.Any = js.native
   def sizeOfUTF8(s: String): Double = js.native

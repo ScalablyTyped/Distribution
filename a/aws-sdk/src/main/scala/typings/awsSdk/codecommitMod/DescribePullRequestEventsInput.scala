@@ -30,19 +30,40 @@ trait DescribePullRequestEventsInput extends js.Object {
 
 object DescribePullRequestEventsInput {
   @scala.inline
-  def apply(
-    pullRequestId: PullRequestId,
-    actorArn: Arn = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    pullRequestEventType: PullRequestEventType = null
-  ): DescribePullRequestEventsInput = {
+  def apply(pullRequestId: PullRequestId): DescribePullRequestEventsInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId.asInstanceOf[js.Any])
-    if (actorArn != null) __obj.updateDynamic("actorArn")(actorArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (pullRequestEventType != null) __obj.updateDynamic("pullRequestEventType")(pullRequestEventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePullRequestEventsInput]
   }
+  @scala.inline
+  implicit class DescribePullRequestEventsInputOps[Self <: DescribePullRequestEventsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPullRequestId(value: PullRequestId): Self = this.set("pullRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActorArn(value: Arn): Self = this.set("actorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActorArn: Self = this.set("actorArn", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setPullRequestEventType(value: PullRequestEventType): Self = this.set("pullRequestEventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestEventType: Self = this.set("pullRequestEventType", js.undefined)
+  }
+  
 }
 

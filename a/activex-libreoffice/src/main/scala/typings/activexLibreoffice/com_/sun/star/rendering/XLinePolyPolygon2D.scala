@@ -12,9 +12,10 @@ import scala.scalajs.js.annotation._
   * Specialized interface for a 2D poly-polygon containing only straight line segments.
   * @since OOo 2.0
   */
+@js.native
 trait XLinePolyPolygon2D extends XPolyPolygon2D {
   /** Get a single point from the poly-polygon */
-  def getPoint(nPolygonIndex: Double, nPointIndex: Double): RealPoint2D
+  def getPoint(nPolygonIndex: Double, nPointIndex: Double): RealPoint2D = js.native
   /**
     * Query subset of this poly-polygon, starting at the given polygon and the given point within that polygon, and containing the specified number of
     * polygons and points in the last polygon.
@@ -23,9 +24,9 @@ trait XLinePolyPolygon2D extends XPolyPolygon2D {
     * @param nPointIndex The index of the point within the first polygon (that with the index number nPolygonIndex) to start extraction with. Set to 0 to star
     * @param nNumberOfPoints The number of points in the last polygon of the extraction sequence, to be extracted. Set to -1 to extract all points from the la
     */
-  def getPoints(nPolygonIndex: Double, nNumberOfPolygons: Double, nPointIndex: Double, nNumberOfPoints: Double): SafeArray[SafeArray[RealPoint2D]]
+  def getPoints(nPolygonIndex: Double, nNumberOfPolygons: Double, nPointIndex: Double, nNumberOfPoints: Double): SafeArray[SafeArray[RealPoint2D]] = js.native
   /** Set a single point on the poly-polygon. The remaining points of the poly-polygon will not be changed by this method. */
-  def setPoint(point: RealPoint2D, nPolygonIndex: Double, nPointIndex: Double): Unit
+  def setPoint(point: RealPoint2D, nPolygonIndex: Double, nPointIndex: Double): Unit = js.native
   /**
     * Set the specified sequence of points to the poly-polygon.
     *
@@ -34,7 +35,7 @@ trait XLinePolyPolygon2D extends XPolyPolygon2D {
     * @param nPolygonIndex The index of the polygon to start point insertion with. This index must be in the range [0,numPolygons], and the insertion will tak
     * @throws com::sun::star::lang::IndexOutOfBoundsException if one of the given values exceed the permissible range.
     */
-  def setPoints(points: SeqEquiv[SeqEquiv[RealPoint2D]], nPolygonIndex: Double): Unit
+  def setPoints(points: SeqEquiv[SeqEquiv[RealPoint2D]], nPolygonIndex: Double): Unit = js.native
 }
 
 object XLinePolyPolygon2D {
@@ -60,5 +61,26 @@ object XLinePolyPolygon2D {
     val __obj = js.Dynamic.literal(FillRule = FillRule.asInstanceOf[js.Any], NumberOfPolygons = NumberOfPolygons.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPolyPolygon = js.Any.fromFunction2(addPolyPolygon), getFillRule = js.Any.fromFunction0(getFillRule), getNumberOfPolygonPoints = js.Any.fromFunction1(getNumberOfPolygonPoints), getNumberOfPolygons = js.Any.fromFunction0(getNumberOfPolygons), getPoint = js.Any.fromFunction2(getPoint), getPoints = js.Any.fromFunction4(getPoints), isClosed = js.Any.fromFunction1(isClosed), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setClosed = js.Any.fromFunction2(setClosed), setFillRule = js.Any.fromFunction1(setFillRule), setPoint = js.Any.fromFunction3(setPoint), setPoints = js.Any.fromFunction2(setPoints))
     __obj.asInstanceOf[XLinePolyPolygon2D]
   }
+  @scala.inline
+  implicit class XLinePolyPolygon2DOps[Self <: XLinePolyPolygon2D] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetPoint(value: (Double, Double) => RealPoint2D): Self = this.set("getPoint", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetPoints(value: (Double, Double, Double, Double) => SafeArray[SafeArray[RealPoint2D]]): Self = this.set("getPoints", js.Any.fromFunction4(value))
+    @scala.inline
+    def setSetPoint(value: (RealPoint2D, Double, Double) => Unit): Self = this.set("setPoint", js.Any.fromFunction3(value))
+    @scala.inline
+    def setSetPoints(value: (SeqEquiv[SeqEquiv[RealPoint2D]], Double) => Unit): Self = this.set("setPoints", js.Any.fromFunction2(value))
+  }
+  
 }
 

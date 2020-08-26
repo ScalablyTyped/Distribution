@@ -2,51 +2,70 @@ package typings.node.childProcessMod
 
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
-import typings.node.NodeJS.ProcessEnv
-import typings.node.NodeJS.Signals
+import typings.node.nodeStrings.ignore
+import typings.node.nodeStrings.inherit
+import typings.node.nodeStrings.ipc
+import typings.node.nodeStrings.pipe
+import typings.node.processMod.global.NodeJS.Signals
+import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExecFileSyncOptions extends CommonOptions {
-  var encoding: js.UndefOr[BufferEncoding] = js.undefined
-  var input: js.UndefOr[String | ArrayBufferView] = js.undefined
-  var killSignal: js.UndefOr[Signals | Double] = js.undefined
-  var maxBuffer: js.UndefOr[Double] = js.undefined
-  var shell: js.UndefOr[Boolean | String] = js.undefined
-  var stdio: js.UndefOr[StdioOptions] = js.undefined
+  var encoding: js.UndefOr[BufferEncoding] = js.native
+  var input: js.UndefOr[String | ArrayBufferView] = js.native
+  var killSignal: js.UndefOr[Signals | Double] = js.native
+  var maxBuffer: js.UndefOr[Double] = js.native
+  var shell: js.UndefOr[Boolean | String] = js.native
+  var stdio: js.UndefOr[StdioOptions] = js.native
 }
 
 object ExecFileSyncOptions {
   @scala.inline
-  def apply(
-    cwd: String = null,
-    encoding: BufferEncoding = null,
-    env: ProcessEnv = null,
-    gid: js.UndefOr[Double] = js.undefined,
-    input: String | ArrayBufferView = null,
-    killSignal: Signals | Double = null,
-    maxBuffer: js.UndefOr[Double] = js.undefined,
-    shell: Boolean | String = null,
-    stdio: StdioOptions = null,
-    timeout: js.UndefOr[Double] = js.undefined,
-    uid: js.UndefOr[Double] = js.undefined,
-    windowsHide: js.UndefOr[Boolean] = js.undefined
-  ): ExecFileSyncOptions = {
+  def apply(): ExecFileSyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBuffer)) __obj.updateDynamic("maxBuffer")(maxBuffer.get.asInstanceOf[js.Any])
-    if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
-    if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecFileSyncOptions]
   }
+  @scala.inline
+  implicit class ExecFileSyncOptionsOps[Self <: ExecFileSyncOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncoding(value: BufferEncoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setInput(value: String | ArrayBufferView): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setKillSignal(value: Signals | Double): Self = this.set("killSignal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKillSignal: Self = this.set("killSignal", js.undefined)
+    @scala.inline
+    def setMaxBuffer(value: Double): Self = this.set("maxBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBuffer: Self = this.set("maxBuffer", js.undefined)
+    @scala.inline
+    def setShell(value: Boolean | String): Self = this.set("shell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShell: Self = this.set("shell", js.undefined)
+    @scala.inline
+    def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = this.set("stdio", js.Array(value :_*))
+    @scala.inline
+    def setStdio(value: StdioOptions): Self = this.set("stdio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdio: Self = this.set("stdio", js.undefined)
+  }
+  
 }
 

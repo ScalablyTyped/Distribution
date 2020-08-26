@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * makes it possible to register listeners, which are called whenever an animation event occurs.
   * @since OOo 3.0
   */
+@js.native
 trait XAnimationListener extends XEventListener {
   /**
     * This event is raised when the element local timeline begins to play.
@@ -21,7 +22,7 @@ trait XAnimationListener extends XEventListener {
     * interface method.
     * @param Node The node that begins to play.
     */
-  def beginEvent(Node: XAnimationNode): Unit
+  def beginEvent(Node: XAnimationNode): Unit = js.native
   /**
     * This event is raised at the active end of the element.
     *
@@ -31,7 +32,7 @@ trait XAnimationListener extends XEventListener {
     * with a DOM method.
     * @param Node The node that stops playing.
     */
-  def endEvent(Node: XAnimationNode): Unit
+  def endEvent(Node: XAnimationNode): Unit = js.native
   /**
     * This event is raised when the element local timeline repeats.
     *
@@ -41,7 +42,7 @@ trait XAnimationListener extends XEventListener {
     * @param Node The node that repeats.
     * @param Repeat The value is a 0-based integer, but the repeat event is not raised for the first iteration and so the observed values will be >= 1.
     */
-  def repeat(Node: XAnimationNode, Repeat: Double): Unit
+  def repeat(Node: XAnimationNode, Repeat: Double): Unit = js.native
 }
 
 object XAnimationListener {
@@ -58,5 +59,24 @@ object XAnimationListener {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), beginEvent = js.Any.fromFunction1(beginEvent), disposing = js.Any.fromFunction1(disposing), endEvent = js.Any.fromFunction1(endEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), repeat = js.Any.fromFunction2(repeat))
     __obj.asInstanceOf[XAnimationListener]
   }
+  @scala.inline
+  implicit class XAnimationListenerOps[Self <: XAnimationListener] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeginEvent(value: XAnimationNode => Unit): Self = this.set("beginEvent", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEndEvent(value: XAnimationNode => Unit): Self = this.set("endEvent", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRepeat(value: (XAnimationNode, Double) => Unit): Self = this.set("repeat", js.Any.fromFunction2(value))
+  }
+  
 }
 

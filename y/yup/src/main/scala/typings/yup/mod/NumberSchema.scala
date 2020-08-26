@@ -21,27 +21,27 @@ import scala.scalajs.js.annotation._
 trait NumberSchema[T /* <: js.UndefOr[Double | Null] */] extends Schema[T] {
   def defined(): NumberSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
   def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): NumberSchema[MaintainOptionality[T, U]] = js.native
-  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: TestOptionsMessage[Values, _]): NumberSchema[MaintainOptionality[T, U]] = js.native
+  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, _]]): NumberSchema[MaintainOptionality[T, U]] = js.native
   def integer(): NumberSchema[T] = js.native
-  def integer(message: TestOptionsMessage[js.Object, _]): NumberSchema[T] = js.native
+  def integer(message: js.UndefOr[TestOptionsMessage[js.Object, _]]): NumberSchema[T] = js.native
   def lessThan(limit: Double): NumberSchema[T] = js.native
-  def lessThan(limit: Double, message: TestOptionsMessage[Less, _]): NumberSchema[T] = js.native
+  def lessThan(limit: Double, message: js.UndefOr[TestOptionsMessage[Less, _]]): NumberSchema[T] = js.native
   def lessThan(limit: Ref_): NumberSchema[T] = js.native
-  def lessThan(limit: Ref_, message: TestOptionsMessage[Less, _]): NumberSchema[T] = js.native
+  def lessThan(limit: Ref_, message: js.UndefOr[TestOptionsMessage[Less, _]]): NumberSchema[T] = js.native
   def max(limit: Double): NumberSchema[T] = js.native
-  def max(limit: Double, message: TestOptionsMessage[Max, _]): NumberSchema[T] = js.native
+  def max(limit: Double, message: js.UndefOr[TestOptionsMessage[Max, _]]): NumberSchema[T] = js.native
   def max(limit: Ref_): NumberSchema[T] = js.native
-  def max(limit: Ref_, message: TestOptionsMessage[Max, _]): NumberSchema[T] = js.native
+  def max(limit: Ref_, message: js.UndefOr[TestOptionsMessage[Max, _]]): NumberSchema[T] = js.native
   def min(limit: Double): NumberSchema[T] = js.native
-  def min(limit: Double, message: TestOptionsMessage[Min, _]): NumberSchema[T] = js.native
+  def min(limit: Double, message: js.UndefOr[TestOptionsMessage[Min, _]]): NumberSchema[T] = js.native
   def min(limit: Ref_): NumberSchema[T] = js.native
-  def min(limit: Ref_, message: TestOptionsMessage[Min, _]): NumberSchema[T] = js.native
+  def min(limit: Ref_, message: js.UndefOr[TestOptionsMessage[Min, _]]): NumberSchema[T] = js.native
   def moreThan(limit: Double): NumberSchema[T] = js.native
-  def moreThan(limit: Double, message: TestOptionsMessage[More, _]): NumberSchema[T] = js.native
+  def moreThan(limit: Double, message: js.UndefOr[TestOptionsMessage[More, _]]): NumberSchema[T] = js.native
   def moreThan(limit: Ref_): NumberSchema[T] = js.native
-  def moreThan(limit: Ref_, message: TestOptionsMessage[More, _]): NumberSchema[T] = js.native
+  def moreThan(limit: Ref_, message: js.UndefOr[TestOptionsMessage[More, _]]): NumberSchema[T] = js.native
   def negative(): NumberSchema[T] = js.native
-  def negative(message: TestOptionsMessage[Less, _]): NumberSchema[T] = js.native
+  def negative(message: js.UndefOr[TestOptionsMessage[Less, _]]): NumberSchema[T] = js.native
   def notRequired(): NumberSchema[js.UndefOr[T]] = js.native
   def nullable(): NumberSchema[T | Null] = js.native
   def nullable(isNullable: Boolean): NumberSchema[T] = js.native
@@ -50,10 +50,10 @@ trait NumberSchema[T /* <: js.UndefOr[Double | Null] */] extends Schema[T] {
   @JSName("nullable")
   def nullable_true(isNullable: `true`): NumberSchema[T | Null] = js.native
   def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): NumberSchema[MaintainOptionality[T, U]] = js.native
-  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: TestOptionsMessage[Values, _]): NumberSchema[MaintainOptionality[T, U]] = js.native
+  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, _]]): NumberSchema[MaintainOptionality[T, U]] = js.native
   def optional(): NumberSchema[js.UndefOr[T]] = js.native
   def positive(): NumberSchema[T] = js.native
-  def positive(message: TestOptionsMessage[More, _]): NumberSchema[T] = js.native
+  def positive(message: js.UndefOr[TestOptionsMessage[More, _]]): NumberSchema[T] = js.native
   def required(): NumberSchema[Exclude[T, js.UndefOr[Null]]] = js.native
   def required(message: TestOptionsMessage[js.Object, _]): NumberSchema[Exclude[T, js.UndefOr[Null]]] = js.native
   @JSName("round")

@@ -38,24 +38,50 @@ trait InventoryDeletionStatusItem extends js.Object {
 
 object InventoryDeletionStatusItem {
   @scala.inline
-  def apply(
-    DeletionId: InventoryDeletionId = null,
-    DeletionStartTime: InventoryDeletionStartTime = null,
-    DeletionSummary: InventoryDeletionSummary = null,
-    LastStatus: InventoryDeletionStatus = null,
-    LastStatusMessage: InventoryDeletionLastStatusMessage = null,
-    LastStatusUpdateTime: InventoryDeletionLastStatusUpdateTime = null,
-    TypeName: InventoryItemTypeName = null
-  ): InventoryDeletionStatusItem = {
+  def apply(): InventoryDeletionStatusItem = {
     val __obj = js.Dynamic.literal()
-    if (DeletionId != null) __obj.updateDynamic("DeletionId")(DeletionId.asInstanceOf[js.Any])
-    if (DeletionStartTime != null) __obj.updateDynamic("DeletionStartTime")(DeletionStartTime.asInstanceOf[js.Any])
-    if (DeletionSummary != null) __obj.updateDynamic("DeletionSummary")(DeletionSummary.asInstanceOf[js.Any])
-    if (LastStatus != null) __obj.updateDynamic("LastStatus")(LastStatus.asInstanceOf[js.Any])
-    if (LastStatusMessage != null) __obj.updateDynamic("LastStatusMessage")(LastStatusMessage.asInstanceOf[js.Any])
-    if (LastStatusUpdateTime != null) __obj.updateDynamic("LastStatusUpdateTime")(LastStatusUpdateTime.asInstanceOf[js.Any])
-    if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryDeletionStatusItem]
   }
+  @scala.inline
+  implicit class InventoryDeletionStatusItemOps[Self <: InventoryDeletionStatusItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeletionId(value: InventoryDeletionId): Self = this.set("DeletionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionId: Self = this.set("DeletionId", js.undefined)
+    @scala.inline
+    def setDeletionStartTime(value: InventoryDeletionStartTime): Self = this.set("DeletionStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionStartTime: Self = this.set("DeletionStartTime", js.undefined)
+    @scala.inline
+    def setDeletionSummary(value: InventoryDeletionSummary): Self = this.set("DeletionSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionSummary: Self = this.set("DeletionSummary", js.undefined)
+    @scala.inline
+    def setLastStatus(value: InventoryDeletionStatus): Self = this.set("LastStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStatus: Self = this.set("LastStatus", js.undefined)
+    @scala.inline
+    def setLastStatusMessage(value: InventoryDeletionLastStatusMessage): Self = this.set("LastStatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStatusMessage: Self = this.set("LastStatusMessage", js.undefined)
+    @scala.inline
+    def setLastStatusUpdateTime(value: InventoryDeletionLastStatusUpdateTime): Self = this.set("LastStatusUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStatusUpdateTime: Self = this.set("LastStatusUpdateTime", js.undefined)
+    @scala.inline
+    def setTypeName(value: InventoryItemTypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeName: Self = this.set("TypeName", js.undefined)
+  }
+  
 }
 

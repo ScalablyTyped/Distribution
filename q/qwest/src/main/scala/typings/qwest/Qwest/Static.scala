@@ -19,6 +19,7 @@ trait Static extends js.Object {
     * @param options Configuration options for the AJAX request
     * */
   def delete(url: String): Promise = js.native
+  def delete(url: String, data: js.UndefOr[scala.Nothing], options: Options): Promise = js.native
   def delete(url: String, data: js.Any): Promise = js.native
   def delete(url: String, data: js.Any, options: Options): Promise = js.native
   /**
@@ -28,6 +29,7 @@ trait Static extends js.Object {
     * @param options Configuration options for the AJAX request
     * */
   def get(url: String): Promise = js.native
+  def get(url: String, data: js.UndefOr[scala.Nothing], options: Options): Promise = js.native
   def get(url: String, data: js.Any): Promise = js.native
   def get(url: String, data: js.Any, options: Options): Promise = js.native
   /** Sets the request limit */
@@ -39,6 +41,7 @@ trait Static extends js.Object {
     * @param options Configuration options for the AJAX request
     * */
   def post(url: String): Promise = js.native
+  def post(url: String, data: js.UndefOr[scala.Nothing], options: Options): Promise = js.native
   def post(url: String, data: js.Any): Promise = js.native
   def post(url: String, data: js.Any, options: Options): Promise = js.native
   /**
@@ -48,6 +51,7 @@ trait Static extends js.Object {
     * @param options Configuration options for the AJAX request
     * */
   def put(url: String): Promise = js.native
+  def put(url: String, data: js.UndefOr[scala.Nothing], options: Options): Promise = js.native
   def put(url: String, data: js.Any): Promise = js.native
   def put(url: String, data: js.Any, options: Options): Promise = js.native
   /** Set default cross-domain response type for IE8/9 (defaults to 'json') */

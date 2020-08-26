@@ -27,6 +27,7 @@ class Topic protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: TopicArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: TopicArgs, opts: CustomResourceOptions) = this()
   /**
     * IAM role for failure feedback
@@ -105,14 +106,20 @@ class Topic protected () extends CustomResource {
     */
   val sqsSuccessFeedbackSampleRate: Output_[js.UndefOr[Double]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Creates a new subscription to events fired from this Topic to the handler provided, along
     * with options to control the behavior of the subscription.
     */
   def onEvent(name: String, handler: TopicEventHandler): TopicEventSubscription = js.native
+  def onEvent(
+    name: String,
+    handler: TopicEventHandler,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions
+  ): TopicEventSubscription = js.native
   def onEvent(name: String, handler: TopicEventHandler, args: TopicEventSubscriptionArgs): TopicEventSubscription = js.native
   def onEvent(
     name: String,
@@ -133,8 +140,10 @@ object Topic extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Topic = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Topic = js.native
   def get(name: String, id: Input[ID], state: TopicState): Topic = js.native
   def get(name: String, id: Input[ID], state: TopicState, opts: CustomResourceOptions): Topic = js.native
   /**

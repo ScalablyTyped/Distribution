@@ -21,11 +21,30 @@ trait SchemaReportInfo extends js.Object {
 
 object SchemaReportInfo {
   @scala.inline
-  def apply(operationId: String = null, quotaInfo: SchemaQuotaInfo = null): SchemaReportInfo = {
+  def apply(): SchemaReportInfo = {
     val __obj = js.Dynamic.literal()
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (quotaInfo != null) __obj.updateDynamic("quotaInfo")(quotaInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReportInfo]
   }
+  @scala.inline
+  implicit class SchemaReportInfoOps[Self <: SchemaReportInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setQuotaInfo(value: SchemaQuotaInfo): Self = this.set("quotaInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaInfo: Self = this.set("quotaInfo", js.undefined)
+  }
+  
 }
 

@@ -29,9 +29,10 @@ object cloudtrailMod extends js.Object {
     def this(name: String, args: TrailArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getServiceAccount(): js.Promise[GetServiceAccountResult] with GetServiceAccountResult = js.native
-  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] with GetServiceAccountResult = js.native
-  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] with GetServiceAccountResult = js.native
+  def getServiceAccount(): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] = js.native
+  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
   /* static members */
   @js.native
   object Trail extends js.Object {
@@ -42,8 +43,10 @@ object cloudtrailMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.trailMod.Trail = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.trailMod.Trail = js.native
     def get(name: String, id: Input[ID], state: TrailState): typings.pulumiAws.trailMod.Trail = js.native
     def get(name: String, id: Input[ID], state: TrailState, opts: CustomResourceOptions): typings.pulumiAws.trailMod.Trail = js.native
     /**

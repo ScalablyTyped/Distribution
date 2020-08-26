@@ -37,6 +37,7 @@ class LaunchTemplate protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: LaunchTemplateArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: LaunchTemplateArgs, opts: CustomResourceOptions) = this()
   /**
     * The Amazon Resource Name (ARN) of the instance profile.
@@ -61,7 +62,7 @@ class LaunchTemplate protected () extends CustomResource {
     */
   val creditSpecification: Output_[js.UndefOr[LaunchTemplateCreditSpecification]] = js.native
   /**
-    * The default version of the launch template.
+    * Default Version of the launch template.
     */
   val defaultVersion: Output_[Double] = js.native
   /**
@@ -168,9 +169,13 @@ class LaunchTemplate protected () extends CustomResource {
     */
   val tagSpecifications: Output_[js.UndefOr[js.Array[LaunchTemplateTagSpecification]]] = js.native
   /**
-    * A mapping of tags to assign to the launch template.
+    * A map of tags to assign to the launch template.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  /**
+    * Whether to update Default Version each update. Conflicts with `defaultVersion`.
+    */
+  val updateDefaultVersion: Output_[js.UndefOr[Boolean]] = js.native
   /**
     * The Base64-encoded user data to provide when launching the instance.
     */
@@ -192,8 +197,10 @@ object LaunchTemplate extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): LaunchTemplate = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LaunchTemplate = js.native
   def get(name: String, id: Input[ID], state: LaunchTemplateState): LaunchTemplate = js.native
   def get(name: String, id: Input[ID], state: LaunchTemplateState, opts: CustomResourceOptions): LaunchTemplate = js.native
   /**

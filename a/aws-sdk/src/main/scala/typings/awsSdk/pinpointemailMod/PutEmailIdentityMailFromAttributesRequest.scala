@@ -22,15 +22,32 @@ trait PutEmailIdentityMailFromAttributesRequest extends js.Object {
 
 object PutEmailIdentityMailFromAttributesRequest {
   @scala.inline
-  def apply(
-    EmailIdentity: Identity,
-    BehaviorOnMxFailure: BehaviorOnMxFailure = null,
-    MailFromDomain: MailFromDomainName = null
-  ): PutEmailIdentityMailFromAttributesRequest = {
+  def apply(EmailIdentity: Identity): PutEmailIdentityMailFromAttributesRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any])
-    if (BehaviorOnMxFailure != null) __obj.updateDynamic("BehaviorOnMxFailure")(BehaviorOnMxFailure.asInstanceOf[js.Any])
-    if (MailFromDomain != null) __obj.updateDynamic("MailFromDomain")(MailFromDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEmailIdentityMailFromAttributesRequest]
   }
+  @scala.inline
+  implicit class PutEmailIdentityMailFromAttributesRequestOps[Self <: PutEmailIdentityMailFromAttributesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmailIdentity(value: Identity): Self = this.set("EmailIdentity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBehaviorOnMxFailure(value: BehaviorOnMxFailure): Self = this.set("BehaviorOnMxFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBehaviorOnMxFailure: Self = this.set("BehaviorOnMxFailure", js.undefined)
+    @scala.inline
+    def setMailFromDomain(value: MailFromDomainName): Self = this.set("MailFromDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMailFromDomain: Self = this.set("MailFromDomain", js.undefined)
+  }
+  
 }
 

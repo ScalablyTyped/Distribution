@@ -1,0 +1,19 @@
+package typings.angularCompiler.compilerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler/compiler", "DeclareVarStmt")
+@js.native
+class DeclareVarStmt protected ()
+  extends typings.angularCompiler.publicApiMod.DeclareVarStmt {
+  def this(
+    name: String,
+    value: js.UndefOr[typings.angularCompiler.outputAstMod.Expression],
+    `type`: js.UndefOr[typings.angularCompiler.outputAstMod.Type | Null],
+    modifiers: js.UndefOr[js.Array[typings.angularCompiler.outputAstMod.StmtModifier] | Null],
+    sourceSpan: js.UndefOr[typings.angularCompiler.srcParseUtilMod.ParseSourceSpan | Null]
+  ) = this()
+}
+

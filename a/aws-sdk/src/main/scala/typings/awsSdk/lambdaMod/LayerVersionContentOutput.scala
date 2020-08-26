@@ -22,12 +22,34 @@ trait LayerVersionContentOutput extends js.Object {
 
 object LayerVersionContentOutput {
   @scala.inline
-  def apply(CodeSha256: String = null, CodeSize: js.UndefOr[Long] = js.undefined, Location: String = null): LayerVersionContentOutput = {
+  def apply(): LayerVersionContentOutput = {
     val __obj = js.Dynamic.literal()
-    if (CodeSha256 != null) __obj.updateDynamic("CodeSha256")(CodeSha256.asInstanceOf[js.Any])
-    if (!js.isUndefined(CodeSize)) __obj.updateDynamic("CodeSize")(CodeSize.get.asInstanceOf[js.Any])
-    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerVersionContentOutput]
   }
+  @scala.inline
+  implicit class LayerVersionContentOutputOps[Self <: LayerVersionContentOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodeSha256(value: String): Self = this.set("CodeSha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeSha256: Self = this.set("CodeSha256", js.undefined)
+    @scala.inline
+    def setCodeSize(value: Long): Self = this.set("CodeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeSize: Self = this.set("CodeSize", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("Location", js.undefined)
+  }
+  
 }
 

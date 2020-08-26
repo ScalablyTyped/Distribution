@@ -30,20 +30,46 @@ trait DescribeImagesRequest extends js.Object {
 
 object DescribeImagesRequest {
   @scala.inline
-  def apply(
-    Arns: ArnList = null,
-    MaxResults: js.UndefOr[DescribeImagesMaxResults] = js.undefined,
-    Names: StringList = null,
-    NextToken: String = null,
-    Type: VisibilityType = null
-  ): DescribeImagesRequest = {
+  def apply(): DescribeImagesRequest = {
     val __obj = js.Dynamic.literal()
-    if (Arns != null) __obj.updateDynamic("Arns")(Arns.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeImagesRequest]
   }
+  @scala.inline
+  implicit class DescribeImagesRequestOps[Self <: DescribeImagesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArnsVarargs(value: Arn*): Self = this.set("Arns", js.Array(value :_*))
+    @scala.inline
+    def setArns(value: ArnList): Self = this.set("Arns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArns: Self = this.set("Arns", js.undefined)
+    @scala.inline
+    def setMaxResults(value: DescribeImagesMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNamesVarargs(value: String*): Self = this.set("Names", js.Array(value :_*))
+    @scala.inline
+    def setNames(value: StringList): Self = this.set("Names", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNames: Self = this.set("Names", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setType(value: VisibilityType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

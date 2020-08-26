@@ -11,48 +11,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DetectorOptions extends js.Object {
   /**
     * cache user language on
     */
-  var caches: js.UndefOr[js.Array[String]] = js.undefined
-  /**
-    * fallback to a similar whitelist language
-    * Example 1: Browser language is 'es'
-    * if 'es' is not found in whitelist, first fallback to any whitelist language that starts with 'es-', then fallback to fallbackLng ('es' -> 'es-*' -> fallbackLng)
-    * Example 2: Browser language is 'es-MX'
-    * if 'es-MX' is not found in whitelist, first fallback to 'es', then fallback to 'es-*', then fallback to fallbackLng ('es-MX' -> 'es' -> 'es-*' -> fallbackLng)
-    * @default false
-    */
-  var checkForSimilarInWhitelist: js.UndefOr[Boolean] = js.undefined
-  /**
-    * only detect languages that are in the whitelist
-    * @default true
-    */
-  var checkWhitelist: js.UndefOr[Boolean] = js.undefined
-  var cookieDomain: js.UndefOr[String] = js.undefined
+  var caches: js.UndefOr[js.Array[String]] = js.native
+  var cookieDomain: js.UndefOr[String] = js.native
   /**
     * optional expire and domain for set cookie
     * @default 10
     */
-  var cookieMinutes: js.UndefOr[Double] = js.undefined
+  var cookieMinutes: js.UndefOr[Double] = js.native
   /**
     * languages to not persist (cookie, localStorage)
     */
-  var excludeCacheFor: js.UndefOr[js.Array[String]] = js.undefined
+  var excludeCacheFor: js.UndefOr[js.Array[String]] = js.native
   /**
     * optional htmlTag with lang attribute
     * @default document.documentElement
     */
-  var htmlTag: js.UndefOr[HTMLElement | Null] = js.undefined
-  var lookupCookie: js.UndefOr[String] = js.undefined
-  var lookupFromPathIndex: js.UndefOr[Double] = js.undefined
-  var lookupFromSubdomainIndex: js.UndefOr[Double] = js.undefined
-  var lookupLocalStorage: js.UndefOr[String] = js.undefined
+  var htmlTag: js.UndefOr[HTMLElement | Null] = js.native
+  var lookupCookie: js.UndefOr[String] = js.native
+  var lookupFromPathIndex: js.UndefOr[Double] = js.native
+  var lookupFromSubdomainIndex: js.UndefOr[Double] = js.native
+  var lookupLocalStorage: js.UndefOr[String] = js.native
   /**
     * keys or params to lookup language from
     */
-  var lookupQuerystring: js.UndefOr[String] = js.undefined
+  var lookupQuerystring: js.UndefOr[String] = js.native
   /**
     * order and from where user language should be detected
     */
@@ -60,43 +47,83 @@ trait DetectorOptions extends js.Object {
     js.Array[
       querystring | cookie | sessionStorage | localStorage | navigator | htmlTag | String
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object DetectorOptions {
   @scala.inline
-  def apply(
-    caches: js.Array[String] = null,
-    checkForSimilarInWhitelist: js.UndefOr[Boolean] = js.undefined,
-    checkWhitelist: js.UndefOr[Boolean] = js.undefined,
-    cookieDomain: String = null,
-    cookieMinutes: js.UndefOr[Double] = js.undefined,
-    excludeCacheFor: js.Array[String] = null,
-    htmlTag: js.UndefOr[Null | HTMLElement] = js.undefined,
-    lookupCookie: String = null,
-    lookupFromPathIndex: js.UndefOr[Double] = js.undefined,
-    lookupFromSubdomainIndex: js.UndefOr[Double] = js.undefined,
-    lookupLocalStorage: String = null,
-    lookupQuerystring: String = null,
-    order: js.Array[
-      querystring | cookie | sessionStorage | localStorage | navigator | htmlTag | String
-    ] = null
-  ): DetectorOptions = {
+  def apply(): DetectorOptions = {
     val __obj = js.Dynamic.literal()
-    if (caches != null) __obj.updateDynamic("caches")(caches.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkForSimilarInWhitelist)) __obj.updateDynamic("checkForSimilarInWhitelist")(checkForSimilarInWhitelist.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkWhitelist)) __obj.updateDynamic("checkWhitelist")(checkWhitelist.get.asInstanceOf[js.Any])
-    if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain.asInstanceOf[js.Any])
-    if (!js.isUndefined(cookieMinutes)) __obj.updateDynamic("cookieMinutes")(cookieMinutes.get.asInstanceOf[js.Any])
-    if (excludeCacheFor != null) __obj.updateDynamic("excludeCacheFor")(excludeCacheFor.asInstanceOf[js.Any])
-    if (!js.isUndefined(htmlTag)) __obj.updateDynamic("htmlTag")(htmlTag.asInstanceOf[js.Any])
-    if (lookupCookie != null) __obj.updateDynamic("lookupCookie")(lookupCookie.asInstanceOf[js.Any])
-    if (!js.isUndefined(lookupFromPathIndex)) __obj.updateDynamic("lookupFromPathIndex")(lookupFromPathIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lookupFromSubdomainIndex)) __obj.updateDynamic("lookupFromSubdomainIndex")(lookupFromSubdomainIndex.get.asInstanceOf[js.Any])
-    if (lookupLocalStorage != null) __obj.updateDynamic("lookupLocalStorage")(lookupLocalStorage.asInstanceOf[js.Any])
-    if (lookupQuerystring != null) __obj.updateDynamic("lookupQuerystring")(lookupQuerystring.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectorOptions]
   }
+  @scala.inline
+  implicit class DetectorOptionsOps[Self <: DetectorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCachesVarargs(value: String*): Self = this.set("caches", js.Array(value :_*))
+    @scala.inline
+    def setCaches(value: js.Array[String]): Self = this.set("caches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaches: Self = this.set("caches", js.undefined)
+    @scala.inline
+    def setCookieDomain(value: String): Self = this.set("cookieDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieDomain: Self = this.set("cookieDomain", js.undefined)
+    @scala.inline
+    def setCookieMinutes(value: Double): Self = this.set("cookieMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieMinutes: Self = this.set("cookieMinutes", js.undefined)
+    @scala.inline
+    def setExcludeCacheForVarargs(value: String*): Self = this.set("excludeCacheFor", js.Array(value :_*))
+    @scala.inline
+    def setExcludeCacheFor(value: js.Array[String]): Self = this.set("excludeCacheFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeCacheFor: Self = this.set("excludeCacheFor", js.undefined)
+    @scala.inline
+    def setHtmlTag(value: HTMLElement): Self = this.set("htmlTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlTag: Self = this.set("htmlTag", js.undefined)
+    @scala.inline
+    def setHtmlTagNull: Self = this.set("htmlTag", null)
+    @scala.inline
+    def setLookupCookie(value: String): Self = this.set("lookupCookie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookupCookie: Self = this.set("lookupCookie", js.undefined)
+    @scala.inline
+    def setLookupFromPathIndex(value: Double): Self = this.set("lookupFromPathIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookupFromPathIndex: Self = this.set("lookupFromPathIndex", js.undefined)
+    @scala.inline
+    def setLookupFromSubdomainIndex(value: Double): Self = this.set("lookupFromSubdomainIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookupFromSubdomainIndex: Self = this.set("lookupFromSubdomainIndex", js.undefined)
+    @scala.inline
+    def setLookupLocalStorage(value: String): Self = this.set("lookupLocalStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookupLocalStorage: Self = this.set("lookupLocalStorage", js.undefined)
+    @scala.inline
+    def setLookupQuerystring(value: String): Self = this.set("lookupQuerystring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookupQuerystring: Self = this.set("lookupQuerystring", js.undefined)
+    @scala.inline
+    def setOrderVarargs(value: (querystring | cookie | sessionStorage | localStorage | navigator | htmlTag | String)*): Self = this.set("order", js.Array(value :_*))
+    @scala.inline
+    def setOrder(
+      value: js.Array[
+          querystring | cookie | sessionStorage | localStorage | navigator | htmlTag | String
+        ]
+    ): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+  }
+  
 }
 

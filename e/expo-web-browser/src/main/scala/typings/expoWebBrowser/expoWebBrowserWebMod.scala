@@ -20,6 +20,7 @@ object expoWebBrowserWebMod extends js.Object {
     def dismissAuthSession(): Unit = js.native
     def maybeCompleteAuthSession(hasSkipRedirectCheck: SkipRedirectCheck): Message = js.native
     def openAuthSessionAsync(url: String): js.Promise[WebBrowserAuthSessionResult] = js.native
+    def openAuthSessionAsync(url: String, redirectUrl: js.UndefOr[scala.Nothing], openOptions: WebBrowserOpenOptions): js.Promise[WebBrowserAuthSessionResult] = js.native
     def openAuthSessionAsync(url: String, redirectUrl: String): js.Promise[WebBrowserAuthSessionResult] = js.native
     def openAuthSessionAsync(url: String, redirectUrl: String, openOptions: WebBrowserOpenOptions): js.Promise[WebBrowserAuthSessionResult] = js.native
     def openBrowserAsync(url: String): js.Promise[WebBrowserResult] = js.native

@@ -5,39 +5,74 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IOptions extends js.Object {
-  var checkExistence: js.UndefOr[Boolean] = js.undefined
-  var debugging: js.UndefOr[Boolean] = js.undefined
-  var env: js.UndefOr[String] = js.undefined
-  var filter: js.UndefOr[RegExp | IFilterFunction | String | js.Array[String]] = js.undefined
-  var includeDev: js.UndefOr[Boolean | String] = js.undefined
-  var includeSelf: js.UndefOr[Boolean] = js.undefined
-  var main: js.UndefOr[String | js.Array[String] | js.Object] = js.undefined
-  var paths: js.UndefOr[IPaths | String] = js.undefined
+  var checkExistence: js.UndefOr[Boolean] = js.native
+  var debugging: js.UndefOr[Boolean] = js.native
+  var env: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[RegExp | IFilterFunction | String | js.Array[String]] = js.native
+  var includeDev: js.UndefOr[Boolean | String] = js.native
+  var includeSelf: js.UndefOr[Boolean] = js.native
+  var main: js.UndefOr[String | js.Array[String] | js.Object] = js.native
+  var paths: js.UndefOr[IPaths | String] = js.native
 }
 
 object IOptions {
   @scala.inline
-  def apply(
-    checkExistence: js.UndefOr[Boolean] = js.undefined,
-    debugging: js.UndefOr[Boolean] = js.undefined,
-    env: String = null,
-    filter: RegExp | IFilterFunction | String | js.Array[String] = null,
-    includeDev: Boolean | String = null,
-    includeSelf: js.UndefOr[Boolean] = js.undefined,
-    main: String | js.Array[String] | js.Object = null,
-    paths: IPaths | String = null
-  ): IOptions = {
+  def apply(): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkExistence)) __obj.updateDynamic("checkExistence")(checkExistence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugging)) __obj.updateDynamic("debugging")(debugging.get.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (includeDev != null) __obj.updateDynamic("includeDev")(includeDev.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeSelf)) __obj.updateDynamic("includeSelf")(includeSelf.get.asInstanceOf[js.Any])
-    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
-    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
+  @scala.inline
+  implicit class IOptionsOps[Self <: IOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckExistence(value: Boolean): Self = this.set("checkExistence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckExistence: Self = this.set("checkExistence", js.undefined)
+    @scala.inline
+    def setDebugging(value: Boolean): Self = this.set("debugging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugging: Self = this.set("debugging", js.undefined)
+    @scala.inline
+    def setEnv(value: String): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setFilterVarargs(value: String*): Self = this.set("filter", js.Array(value :_*))
+    @scala.inline
+    def setFilterFunction1(value: /* filepath */ String => Boolean): Self = this.set("filter", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFilter(value: RegExp | IFilterFunction | String | js.Array[String]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setIncludeDev(value: Boolean | String): Self = this.set("includeDev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDev: Self = this.set("includeDev", js.undefined)
+    @scala.inline
+    def setIncludeSelf(value: Boolean): Self = this.set("includeSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeSelf: Self = this.set("includeSelf", js.undefined)
+    @scala.inline
+    def setMainVarargs(value: String*): Self = this.set("main", js.Array(value :_*))
+    @scala.inline
+    def setMain(value: String | js.Array[String] | js.Object): Self = this.set("main", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMain: Self = this.set("main", js.undefined)
+    @scala.inline
+    def setPaths(value: IPaths | String): Self = this.set("paths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaths: Self = this.set("paths", js.undefined)
+  }
+  
 }
 

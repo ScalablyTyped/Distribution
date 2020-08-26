@@ -31,18 +31,38 @@ trait SchemaDimensionRange extends js.Object {
 
 object SchemaDimensionRange {
   @scala.inline
-  def apply(
-    dimension: String = null,
-    endIndex: js.UndefOr[Double] = js.undefined,
-    sheetId: js.UndefOr[Double] = js.undefined,
-    startIndex: js.UndefOr[Double] = js.undefined
-  ): SchemaDimensionRange = {
+  def apply(): SchemaDimensionRange = {
     val __obj = js.Dynamic.literal()
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
-    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDimensionRange]
   }
+  @scala.inline
+  implicit class SchemaDimensionRangeOps[Self <: SchemaDimensionRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimension(value: String): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension: Self = this.set("dimension", js.undefined)
+    @scala.inline
+    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    @scala.inline
+    def setSheetId(value: Double): Self = this.set("sheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetId: Self = this.set("sheetId", js.undefined)
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+  }
+  
 }
 

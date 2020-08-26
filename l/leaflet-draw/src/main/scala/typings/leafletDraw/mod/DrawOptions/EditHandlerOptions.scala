@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EditHandlerOptions extends js.Object {
   /**
     * The path options for how the layers will look while in edit mode.
@@ -12,15 +13,31 @@ trait EditHandlerOptions extends js.Object {
     *
     * @default { dashArray: '10, 10', fill: true, fillColor: '#fe57a1', fillOpacity: 0.1, maintainColor: false }
     */
-  var selectedPathOptions: js.UndefOr[PathOptions] = js.undefined
+  var selectedPathOptions: js.UndefOr[PathOptions] = js.native
 }
 
 object EditHandlerOptions {
   @scala.inline
-  def apply(selectedPathOptions: PathOptions = null): EditHandlerOptions = {
+  def apply(): EditHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (selectedPathOptions != null) __obj.updateDynamic("selectedPathOptions")(selectedPathOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditHandlerOptions]
   }
+  @scala.inline
+  implicit class EditHandlerOptionsOps[Self <: EditHandlerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSelectedPathOptions(value: PathOptions): Self = this.set("selectedPathOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedPathOptions: Self = this.set("selectedPathOptions", js.undefined)
+  }
+  
 }
 

@@ -34,6 +34,7 @@ trait ClassDgramSocket extends ClassEventEmitter {
     * @async
     */
   def bind(opts: js.Object): Unit = js.native
+  def bind(port: js.UndefOr[scala.Nothing], addr: String): Unit = js.native
   def bind(port: Double): Unit = js.native
   def bind(port: Double, addr: String): Unit = js.native
   /**

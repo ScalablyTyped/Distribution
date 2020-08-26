@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetCurrentMetricDataRequest extends js.Object {
   /**
-    * The metrics to retrieve. Specify the name and unit for each metric. The following metrics are available:  AGENTS_AFTER_CONTACT_WORK  Unit: COUNT  AGENTS_AVAILABLE  Unit: COUNT  AGENTS_ERROR  Unit: COUNT  AGENTS_NON_PRODUCTIVE  Unit: COUNT  AGENTS_ON_CALL  Unit: COUNT  AGENTS_ON_CONTACT  Unit: COUNT  AGENTS_ONLINE  Unit: COUNT  AGENTS_STAFFED  Unit: COUNT  CONTACTS_IN_QUEUE  Unit: COUNT  CONTACTS_SCHEDULED  Unit: COUNT  OLDEST_CONTACT_AGE  Unit: SECONDS  SLOTS_ACTIVE  Unit: COUNT  SLOTS_AVAILABLE  Unit: COUNT  
+    * The metrics to retrieve. Specify the name and unit for each metric. The following metrics are available. For a description of each metric, see Real-time Metrics Definitions in the Amazon Connect Administrator Guide.  AGENTS_AFTER_CONTACT_WORK  Unit: COUNT  AGENTS_AVAILABLE  Unit: COUNT  AGENTS_ERROR  Unit: COUNT  AGENTS_NON_PRODUCTIVE  Unit: COUNT  AGENTS_ON_CALL  Unit: COUNT  AGENTS_ON_CONTACT  Unit: COUNT  AGENTS_ONLINE  Unit: COUNT  AGENTS_STAFFED  Unit: COUNT  CONTACTS_IN_QUEUE  Unit: COUNT  CONTACTS_SCHEDULED  Unit: COUNT  OLDEST_CONTACT_AGE  Unit: SECONDS  SLOTS_ACTIVE  Unit: COUNT  SLOTS_AVAILABLE  Unit: COUNT  
     */
   var CurrentMetrics: typings.awsSdk.connectMod.CurrentMetrics = js.native
   /**
@@ -34,19 +34,44 @@ trait GetCurrentMetricDataRequest extends js.Object {
 
 object GetCurrentMetricDataRequest {
   @scala.inline
-  def apply(
-    CurrentMetrics: CurrentMetrics,
-    Filters: Filters,
-    InstanceId: InstanceId,
-    Groupings: Groupings = null,
-    MaxResults: js.UndefOr[MaxResult100] = js.undefined,
-    NextToken: NextToken = null
-  ): GetCurrentMetricDataRequest = {
+  def apply(CurrentMetrics: CurrentMetrics, Filters: Filters, InstanceId: InstanceId): GetCurrentMetricDataRequest = {
     val __obj = js.Dynamic.literal(CurrentMetrics = CurrentMetrics.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (Groupings != null) __obj.updateDynamic("Groupings")(Groupings.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCurrentMetricDataRequest]
   }
+  @scala.inline
+  implicit class GetCurrentMetricDataRequestOps[Self <: GetCurrentMetricDataRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentMetricsVarargs(value: CurrentMetric*): Self = this.set("CurrentMetrics", js.Array(value :_*))
+    @scala.inline
+    def setCurrentMetrics(value: CurrentMetrics): Self = this.set("CurrentMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilters(value: Filters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupingsVarargs(value: Grouping*): Self = this.set("Groupings", js.Array(value :_*))
+    @scala.inline
+    def setGroupings(value: Groupings): Self = this.set("Groupings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupings: Self = this.set("Groupings", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResult100): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

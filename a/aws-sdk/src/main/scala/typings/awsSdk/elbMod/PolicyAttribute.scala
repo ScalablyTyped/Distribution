@@ -18,11 +18,30 @@ trait PolicyAttribute extends js.Object {
 
 object PolicyAttribute {
   @scala.inline
-  def apply(AttributeName: AttributeName = null, AttributeValue: AttributeValue = null): PolicyAttribute = {
+  def apply(): PolicyAttribute = {
     val __obj = js.Dynamic.literal()
-    if (AttributeName != null) __obj.updateDynamic("AttributeName")(AttributeName.asInstanceOf[js.Any])
-    if (AttributeValue != null) __obj.updateDynamic("AttributeValue")(AttributeValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyAttribute]
   }
+  @scala.inline
+  implicit class PolicyAttributeOps[Self <: PolicyAttribute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeName(value: AttributeName): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeName: Self = this.set("AttributeName", js.undefined)
+    @scala.inline
+    def setAttributeValue(value: AttributeValue): Self = this.set("AttributeValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeValue: Self = this.set("AttributeValue", js.undefined)
+  }
+  
 }
 

@@ -26,6 +26,7 @@ trait baseview extends js.Object {
   def $skin(args: js.Any*): js.Any = js.native
   def adjust(): Unit = js.native
   def bind(target: js.Any): Unit = js.native
+  def bind(target: js.Any, rule: js.UndefOr[scala.Nothing], format: String): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
   def define(property: String, value: js.Any): Unit = js.native
@@ -44,6 +45,7 @@ trait baseview extends js.Object {
   def queryView(config: js.Any, mode: String): js.Any = js.native
   def resize(): Unit = js.native
   def show(): Unit = js.native
+  def show(force: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
   def show(force: Boolean): Unit = js.native
   def show(force: Boolean, animation: Boolean): Unit = js.native
   def unbind(): Unit = js.native

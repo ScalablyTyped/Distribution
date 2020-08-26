@@ -20,11 +20,32 @@ trait SchemaInterconnectAttachmentsScopedList extends js.Object {
 
 object SchemaInterconnectAttachmentsScopedList {
   @scala.inline
-  def apply(interconnectAttachments: js.Array[SchemaInterconnectAttachment] = null, warning: Code = null): SchemaInterconnectAttachmentsScopedList = {
+  def apply(): SchemaInterconnectAttachmentsScopedList = {
     val __obj = js.Dynamic.literal()
-    if (interconnectAttachments != null) __obj.updateDynamic("interconnectAttachments")(interconnectAttachments.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInterconnectAttachmentsScopedList]
   }
+  @scala.inline
+  implicit class SchemaInterconnectAttachmentsScopedListOps[Self <: SchemaInterconnectAttachmentsScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInterconnectAttachmentsVarargs(value: SchemaInterconnectAttachment*): Self = this.set("interconnectAttachments", js.Array(value :_*))
+    @scala.inline
+    def setInterconnectAttachments(value: js.Array[SchemaInterconnectAttachment]): Self = this.set("interconnectAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterconnectAttachments: Self = this.set("interconnectAttachments", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

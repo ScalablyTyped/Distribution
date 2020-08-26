@@ -23,14 +23,30 @@ trait SchemaGoogleCloudVideointelligenceV1p3beta1TextFrame extends js.Object {
 
 object SchemaGoogleCloudVideointelligenceV1p3beta1TextFrame {
   @scala.inline
-  def apply(
-    rotatedBoundingBox: SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly = null,
-    timeOffset: String = null
-  ): SchemaGoogleCloudVideointelligenceV1p3beta1TextFrame = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1p3beta1TextFrame = {
     val __obj = js.Dynamic.literal()
-    if (rotatedBoundingBox != null) __obj.updateDynamic("rotatedBoundingBox")(rotatedBoundingBox.asInstanceOf[js.Any])
-    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p3beta1TextFrame]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1TextFrameOps[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1TextFrame] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRotatedBoundingBox(value: SchemaGoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly): Self = this.set("rotatedBoundingBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotatedBoundingBox: Self = this.set("rotatedBoundingBox", js.undefined)
+    @scala.inline
+    def setTimeOffset(value: String): Self = this.set("timeOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeOffset: Self = this.set("timeOffset", js.undefined)
+  }
+  
 }
 

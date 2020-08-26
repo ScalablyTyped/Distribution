@@ -4,46 +4,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WatcherPutWatch[T] extends Generic {
-  var active: js.UndefOr[Boolean] = js.undefined
-  var body: js.UndefOr[T] = js.undefined
-  var id: String
-  var if_primary_term: js.UndefOr[Double] = js.undefined
-  var if_seq_no: js.UndefOr[Double] = js.undefined
-  var version: js.UndefOr[Double] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
+  var body: js.UndefOr[T] = js.native
+  var id: String = js.native
+  var if_primary_term: js.UndefOr[Double] = js.native
+  var if_seq_no: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.native
 }
 
 object WatcherPutWatch {
   @scala.inline
-  def apply[T](
-    id: String,
-    active: js.UndefOr[Boolean] = js.undefined,
-    body: T = null,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    if_primary_term: js.UndefOr[Double] = js.undefined,
-    if_seq_no: js.UndefOr[Double] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    method: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): WatcherPutWatch[T] = {
+  def apply[T](id: String): WatcherPutWatch[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(if_primary_term)) __obj.updateDynamic("if_primary_term")(if_primary_term.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(if_seq_no)) __obj.updateDynamic("if_seq_no")(if_seq_no.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatcherPutWatch[T]]
   }
+  @scala.inline
+  implicit class WatcherPutWatchOps[Self <: WatcherPutWatch[_], T] (val x: Self with WatcherPutWatch[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setIf_primary_term(value: Double): Self = this.set("if_primary_term", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIf_primary_term: Self = this.set("if_primary_term", js.undefined)
+    @scala.inline
+    def setIf_seq_no(value: Double): Self = this.set("if_seq_no", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIf_seq_no: Self = this.set("if_seq_no", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

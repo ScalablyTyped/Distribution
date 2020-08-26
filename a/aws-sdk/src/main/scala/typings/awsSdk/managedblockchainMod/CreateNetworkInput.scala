@@ -48,14 +48,43 @@ object CreateNetworkInput {
     FrameworkVersion: FrameworkVersionString,
     MemberConfiguration: MemberConfiguration,
     Name: NameString,
-    VotingPolicy: VotingPolicy,
-    Description: DescriptionString = null,
-    FrameworkConfiguration: NetworkFrameworkConfiguration = null
+    VotingPolicy: VotingPolicy
   ): CreateNetworkInput = {
     val __obj = js.Dynamic.literal(ClientRequestToken = ClientRequestToken.asInstanceOf[js.Any], Framework = Framework.asInstanceOf[js.Any], FrameworkVersion = FrameworkVersion.asInstanceOf[js.Any], MemberConfiguration = MemberConfiguration.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], VotingPolicy = VotingPolicy.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (FrameworkConfiguration != null) __obj.updateDynamic("FrameworkConfiguration")(FrameworkConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNetworkInput]
   }
+  @scala.inline
+  implicit class CreateNetworkInputOps[Self <: CreateNetworkInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestTokenString): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFramework(value: Framework): Self = this.set("Framework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFrameworkVersion(value: FrameworkVersionString): Self = this.set("FrameworkVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMemberConfiguration(value: MemberConfiguration): Self = this.set("MemberConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVotingPolicy(value: VotingPolicy): Self = this.set("VotingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setFrameworkConfiguration(value: NetworkFrameworkConfiguration): Self = this.set("FrameworkConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameworkConfiguration: Self = this.set("FrameworkConfiguration", js.undefined)
+  }
+  
 }
 

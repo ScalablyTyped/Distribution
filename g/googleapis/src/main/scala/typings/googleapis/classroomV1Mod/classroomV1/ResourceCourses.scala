@@ -40,6 +40,7 @@ class ResourceCourses protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaCourse] = js.native
   def create(callback: BodyResponseCallback[SchemaCourse]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCourse] = js.native
   def create(params: ParamsResourceCoursesCreate): GaxiosPromise[SchemaCourse] = js.native
   def create(params: ParamsResourceCoursesCreate, callback: BodyResponseCallback[SchemaCourse]): Unit = js.native
   def create(
@@ -70,6 +71,7 @@ class ResourceCourses protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -100,6 +102,7 @@ class ResourceCourses protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCourse] = js.native
   def get(callback: BodyResponseCallback[SchemaCourse]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCourse] = js.native
   def get(params: ParamsResourceCoursesGet): GaxiosPromise[SchemaCourse] = js.native
   def get(params: ParamsResourceCoursesGet, callback: BodyResponseCallback[SchemaCourse]): Unit = js.native
   def get(
@@ -136,6 +139,7 @@ class ResourceCourses protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListCoursesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCoursesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCoursesResponse] = js.native
   def list(params: ParamsResourceCoursesList): GaxiosPromise[SchemaListCoursesResponse] = js.native
   def list(params: ParamsResourceCoursesList, callback: BodyResponseCallback[SchemaListCoursesResponse]): Unit = js.native
   def list(
@@ -171,6 +175,7 @@ class ResourceCourses protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaCourse] = js.native
   def patch(callback: BodyResponseCallback[SchemaCourse]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCourse] = js.native
   def patch(params: ParamsResourceCoursesPatch): GaxiosPromise[SchemaCourse] = js.native
   def patch(params: ParamsResourceCoursesPatch, callback: BodyResponseCallback[SchemaCourse]): Unit = js.native
   def patch(
@@ -203,6 +208,7 @@ class ResourceCourses protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaCourse] = js.native
   def update(callback: BodyResponseCallback[SchemaCourse]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCourse] = js.native
   def update(params: ParamsResourceCoursesUpdate): GaxiosPromise[SchemaCourse] = js.native
   def update(params: ParamsResourceCoursesUpdate, callback: BodyResponseCallback[SchemaCourse]): Unit = js.native
   def update(

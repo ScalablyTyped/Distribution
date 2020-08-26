@@ -12,10 +12,12 @@ object mod extends js.Object {
   trait Scale extends js.Object {
     def scale(f: Double): this.type = js.native
     def scale(f: Double, cb: ImageCallback[this.type]): this.type = js.native
+    def scale(f: Double, mode: js.UndefOr[scala.Nothing], cb: ImageCallback[this.type]): this.type = js.native
     def scale(f: Double, mode: String): this.type = js.native
     def scale(f: Double, mode: String, cb: ImageCallback[this.type]): this.type = js.native
     def scaleToFit(w: Double, h: Double): this.type = js.native
     def scaleToFit(w: Double, h: Double, cb: ImageCallback[this.type]): this.type = js.native
+    def scaleToFit(w: Double, h: Double, mode: js.UndefOr[scala.Nothing], cb: ImageCallback[this.type]): this.type = js.native
     def scaleToFit(w: Double, h: Double, mode: String): this.type = js.native
     def scaleToFit(w: Double, h: Double, mode: String, cb: ImageCallback[this.type]): this.type = js.native
   }

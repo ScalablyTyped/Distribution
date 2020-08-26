@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GeoJsonOverlay extends js.Object {
-  var geoJson: GeoJSON
+  var geoJson: GeoJSON = js.native
 }
 
 object GeoJsonOverlay {
@@ -15,5 +16,20 @@ object GeoJsonOverlay {
     val __obj = js.Dynamic.literal(geoJson = geoJson.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJsonOverlay]
   }
+  @scala.inline
+  implicit class GeoJsonOverlayOps[Self <: GeoJsonOverlay] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGeoJson(value: GeoJSON): Self = this.set("geoJson", value.asInstanceOf[js.Any])
+  }
+  
 }
 

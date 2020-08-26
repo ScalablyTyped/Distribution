@@ -18,10 +18,28 @@ trait CreateReusableDelegationSetRequest extends js.Object {
 
 object CreateReusableDelegationSetRequest {
   @scala.inline
-  def apply(CallerReference: Nonce, HostedZoneId: ResourceId = null): CreateReusableDelegationSetRequest = {
+  def apply(CallerReference: Nonce): CreateReusableDelegationSetRequest = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any])
-    if (HostedZoneId != null) __obj.updateDynamic("HostedZoneId")(HostedZoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReusableDelegationSetRequest]
   }
+  @scala.inline
+  implicit class CreateReusableDelegationSetRequestOps[Self <: CreateReusableDelegationSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallerReference(value: Nonce): Self = this.set("CallerReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZoneId: Self = this.set("HostedZoneId", js.undefined)
+  }
+  
 }
 

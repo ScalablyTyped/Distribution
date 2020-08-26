@@ -1,5 +1,7 @@
 package typings.frappeGantt.mod
 
+import typings.std.HTMLElement
+import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends Gantt {
   def this(wrapper: String, tasks: js.Array[Task]) = this()
+  def this(wrapper: HTMLElement, tasks: js.Array[Task]) = this()
+  def this(wrapper: SVGElement, tasks: js.Array[Task]) = this()
   def this(wrapper: String, tasks: js.Array[Task], options: Options) = this()
-  /* CompleteClass */
-  override def change_view_mode(mode: viewMode): Unit = js.native
-  /* CompleteClass */
-  override def refresh(tasks: js.Array[Task]): Unit = js.native
+  def this(wrapper: HTMLElement, tasks: js.Array[Task], options: Options) = this()
+  def this(wrapper: SVGElement, tasks: js.Array[Task], options: Options) = this()
 }
 

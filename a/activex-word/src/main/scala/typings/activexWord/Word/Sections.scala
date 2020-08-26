@@ -16,6 +16,7 @@ trait Sections extends js.Object {
   @JSName("Word.Sections_typekey")
   var WordDotSections_typekey: Sections = js.native
   def Add(): Section = js.native
+  def Add(Range: js.UndefOr[scala.Nothing], Start: js.Any): Section = js.native
   def Add(Range: js.Any): Section = js.native
   def Add(Range: js.Any, Start: js.Any): Section = js.native
   def Item(Index: Double): Section = js.native

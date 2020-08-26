@@ -30,6 +30,7 @@ class ResourceManagementCustomdatasources protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCustomDataSources] = js.native
   def list(callback: BodyResponseCallback[SchemaCustomDataSources]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomDataSources] = js.native
   def list(params: ParamsResourceManagementCustomdatasourcesList): GaxiosPromise[SchemaCustomDataSources] = js.native
   def list(
     params: ParamsResourceManagementCustomdatasourcesList,

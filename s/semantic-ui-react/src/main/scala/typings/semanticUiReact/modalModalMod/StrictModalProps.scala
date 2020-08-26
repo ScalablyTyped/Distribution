@@ -3,8 +3,10 @@ package typings.semanticUiReact.modalModalMod
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.Ref
+import typings.react.mod.ReactNodeArray
+import typings.react.mod.ReactType
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.modalActionsMod.ModalActionsProps
 import typings.semanticUiReact.modalContentMod.ModalContentProps
@@ -23,27 +25,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrictModalProps extends StrictPortalProps {
   /** Shorthand for Modal.Actions. Typically an array of button shorthand. */
-  var actions: js.UndefOr[SemanticShorthandItem[ModalActionsProps]] = js.undefined
+  var actions: js.UndefOr[SemanticShorthandItem[ModalActionsProps]] = js.native
   /** An element type to render as (string or function). */
-  var as: js.UndefOr[js.Any] = js.undefined
+  var as: js.UndefOr[js.Any] = js.native
   /** A Modal can reduce its complexity */
-  var basic: js.UndefOr[Boolean] = js.undefined
+  var basic: js.UndefOr[Boolean] = js.native
   /** A modal can be vertically centered in the viewport */
-  var centered: js.UndefOr[Boolean] = js.undefined
+  var centered: js.UndefOr[Boolean] = js.native
   /** Additional classes. */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /** Icon. */
-  var closeIcon: js.UndefOr[js.Any] = js.undefined
+  var closeIcon: js.UndefOr[js.Any] = js.native
   /** Whether or not the Modal should close when the dimmer is clicked. */
-  var closeOnDimmerClick: js.UndefOr[Boolean] = js.undefined
+  var closeOnDimmerClick: js.UndefOr[Boolean] = js.native
   /** A Modal can be passed content via shorthand. */
-  var content: js.UndefOr[SemanticShorthandItem[ModalContentProps]] = js.undefined
+  var content: js.UndefOr[SemanticShorthandItem[ModalContentProps]] = js.native
   /** A modal can appear in a dimmer. */
-  var dimmer: js.UndefOr[`true` | blurring | inverted] = js.undefined
+  var dimmer: js.UndefOr[`true` | blurring | inverted] = js.native
   /** A Modal can be passed header via shorthand. */
-  var header: js.UndefOr[SemanticShorthandItem[ModalHeaderProps]] = js.undefined
+  var header: js.UndefOr[SemanticShorthandItem[ModalHeaderProps]] = js.native
   /**
     * Action onClick handler when using shorthand `actions`.
     *
@@ -52,7 +55,7 @@ trait StrictModalProps extends StrictPortalProps {
     */
   var onActionClick: js.UndefOr[
     js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps, Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * Called when a close event happens.
     *
@@ -62,7 +65,7 @@ trait StrictModalProps extends StrictPortalProps {
   @JSName("onClose")
   var onClose_StrictModalProps: js.UndefOr[
     js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps, Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * Called when the portal is mounted on the DOM.
     *
@@ -70,7 +73,7 @@ trait StrictModalProps extends StrictPortalProps {
     * @param {object} data - All props.
     */
   @JSName("onMount")
-  var onMount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ ModalProps, Unit]] = js.undefined
+  var onMount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ ModalProps, Unit]] = js.native
   /**
     * Called when an open event happens.
     *
@@ -80,7 +83,7 @@ trait StrictModalProps extends StrictPortalProps {
   @JSName("onOpen")
   var onOpen_StrictModalProps: js.UndefOr[
     js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps, Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * Called when the portal is unmounted from the DOM.
     *
@@ -88,89 +91,111 @@ trait StrictModalProps extends StrictPortalProps {
     * @param {object} data - All props.
     */
   @JSName("onUnmount")
-  var onUnmount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ ModalProps, Unit]] = js.undefined
+  var onUnmount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ ModalProps, Unit]] = js.native
   /** A modal can vary in size. */
-  var size: js.UndefOr[mini | tiny | small | large | fullscreen] = js.undefined
+  var size: js.UndefOr[mini | tiny | small | large | fullscreen] = js.native
   /** Custom styles. */
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object StrictModalProps {
   @scala.inline
-  def apply(
-    actions: SemanticShorthandItem[ModalActionsProps] = null,
-    as: js.Any = null,
-    basic: js.UndefOr[Boolean] = js.undefined,
-    centered: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    className: String = null,
-    closeIcon: js.Any = null,
-    closeOnDimmerClick: js.UndefOr[Boolean] = js.undefined,
-    closeOnDocumentClick: js.UndefOr[Boolean] = js.undefined,
-    closeOnEscape: js.UndefOr[Boolean] = js.undefined,
-    closeOnPortalMouseLeave: js.UndefOr[Boolean] = js.undefined,
-    closeOnTriggerBlur: js.UndefOr[Boolean] = js.undefined,
-    closeOnTriggerClick: js.UndefOr[Boolean] = js.undefined,
-    closeOnTriggerMouseLeave: js.UndefOr[Boolean] = js.undefined,
-    content: SemanticShorthandItem[ModalContentProps] = null,
-    defaultOpen: js.UndefOr[Boolean] = js.undefined,
-    dimmer: `true` | blurring | inverted = null,
-    eventPool: String = null,
-    header: SemanticShorthandItem[ModalHeaderProps] = null,
-    mountNode: js.Any = null,
-    mouseEnterDelay: js.UndefOr[Double] = js.undefined,
-    mouseLeaveDelay: js.UndefOr[Double] = js.undefined,
-    onActionClick: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit = null,
-    onClose: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit = null,
-    onMount: (/* nothing */ Null, /* data */ ModalProps) => Unit = null,
-    onOpen: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit = null,
-    onUnmount: (/* nothing */ Null, /* data */ ModalProps) => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    openOnTriggerClick: js.UndefOr[Boolean] = js.undefined,
-    openOnTriggerFocus: js.UndefOr[Boolean] = js.undefined,
-    openOnTriggerMouseEnter: js.UndefOr[Boolean] = js.undefined,
-    size: mini | tiny | small | large | fullscreen = null,
-    style: CSSProperties = null,
-    trigger: ReactNode = null,
-    triggerRef: js.UndefOr[Null | Ref[_]] = js.undefined
-  ): StrictModalProps = {
+  def apply(): StrictModalProps = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(basic)) __obj.updateDynamic("basic")(basic.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnDimmerClick)) __obj.updateDynamic("closeOnDimmerClick")(closeOnDimmerClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnDocumentClick)) __obj.updateDynamic("closeOnDocumentClick")(closeOnDocumentClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnPortalMouseLeave)) __obj.updateDynamic("closeOnPortalMouseLeave")(closeOnPortalMouseLeave.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnTriggerBlur)) __obj.updateDynamic("closeOnTriggerBlur")(closeOnTriggerBlur.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnTriggerClick)) __obj.updateDynamic("closeOnTriggerClick")(closeOnTriggerClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnTriggerMouseLeave)) __obj.updateDynamic("closeOnTriggerMouseLeave")(closeOnTriggerMouseLeave.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
-    if (dimmer != null) __obj.updateDynamic("dimmer")(dimmer.asInstanceOf[js.Any])
-    if (eventPool != null) __obj.updateDynamic("eventPool")(eventPool.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseEnterDelay)) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseLeaveDelay)) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.get.asInstanceOf[js.Any])
-    if (onActionClick != null) __obj.updateDynamic("onActionClick")(js.Any.fromFunction2(onActionClick))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
-    if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction2(onMount))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2(onOpen))
-    if (onUnmount != null) __obj.updateDynamic("onUnmount")(js.Any.fromFunction2(onUnmount))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(openOnTriggerClick)) __obj.updateDynamic("openOnTriggerClick")(openOnTriggerClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(openOnTriggerFocus)) __obj.updateDynamic("openOnTriggerFocus")(openOnTriggerFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(openOnTriggerMouseEnter)) __obj.updateDynamic("openOnTriggerMouseEnter")(openOnTriggerMouseEnter.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(triggerRef)) __obj.updateDynamic("triggerRef")(triggerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictModalProps]
   }
+  @scala.inline
+  implicit class StrictModalPropsOps[Self <: StrictModalProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsFunction3(
+      value: (/* component */ ReactType[ModalActionsProps], ModalActionsProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("actions", js.Any.fromFunction3(value))
+    @scala.inline
+    def setActions(value: SemanticShorthandItem[ModalActionsProps]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+    @scala.inline
+    def setAs(value: js.Any): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setBasic(value: Boolean): Self = this.set("basic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasic: Self = this.set("basic", js.undefined)
+    @scala.inline
+    def setCentered(value: Boolean): Self = this.set("centered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCentered: Self = this.set("centered", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCloseIcon(value: js.Any): Self = this.set("closeIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseIcon: Self = this.set("closeIcon", js.undefined)
+    @scala.inline
+    def setCloseOnDimmerClick(value: Boolean): Self = this.set("closeOnDimmerClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnDimmerClick: Self = this.set("closeOnDimmerClick", js.undefined)
+    @scala.inline
+    def setContentFunction3(
+      value: (/* component */ ReactType[ModalContentProps], ModalContentProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("content", js.Any.fromFunction3(value))
+    @scala.inline
+    def setContent(value: SemanticShorthandItem[ModalContentProps]): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDimmer(value: `true` | blurring | inverted): Self = this.set("dimmer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimmer: Self = this.set("dimmer", js.undefined)
+    @scala.inline
+    def setHeaderFunction3(
+      value: (/* component */ ReactType[ModalHeaderProps], ModalHeaderProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("header", js.Any.fromFunction3(value))
+    @scala.inline
+    def setHeader(value: SemanticShorthandItem[ModalHeaderProps]): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setOnActionClick(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit): Self = this.set("onActionClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnActionClick: Self = this.set("onActionClick", js.undefined)
+    @scala.inline
+    def setOnClose(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit): Self = this.set("onClose", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnMount(value: (/* nothing */ Null, /* data */ ModalProps) => Unit): Self = this.set("onMount", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnMount: Self = this.set("onMount", js.undefined)
+    @scala.inline
+    def setOnOpen(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit): Self = this.set("onOpen", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    @scala.inline
+    def setOnUnmount(value: (/* nothing */ Null, /* data */ ModalProps) => Unit): Self = this.set("onUnmount", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnUnmount: Self = this.set("onUnmount", js.undefined)
+    @scala.inline
+    def setSize(value: mini | tiny | small | large | fullscreen): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

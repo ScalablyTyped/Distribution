@@ -31,18 +31,38 @@ trait SchemaReportType extends js.Object {
 
 object SchemaReportType {
   @scala.inline
-  def apply(
-    deprecateTime: String = null,
-    id: String = null,
-    name: String = null,
-    systemManaged: js.UndefOr[Boolean] = js.undefined
-  ): SchemaReportType = {
+  def apply(): SchemaReportType = {
     val __obj = js.Dynamic.literal()
-    if (deprecateTime != null) __obj.updateDynamic("deprecateTime")(deprecateTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(systemManaged)) __obj.updateDynamic("systemManaged")(systemManaged.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReportType]
   }
+  @scala.inline
+  implicit class SchemaReportTypeOps[Self <: SchemaReportType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeprecateTime(value: String): Self = this.set("deprecateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecateTime: Self = this.set("deprecateTime", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSystemManaged(value: Boolean): Self = this.set("systemManaged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemManaged: Self = this.set("systemManaged", js.undefined)
+  }
+  
 }
 

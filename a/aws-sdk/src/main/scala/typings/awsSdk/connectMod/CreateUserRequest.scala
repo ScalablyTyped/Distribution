@@ -55,20 +55,55 @@ object CreateUserRequest {
     PhoneConfig: UserPhoneConfig,
     RoutingProfileId: RoutingProfileId,
     SecurityProfileIds: SecurityProfileIds,
-    Username: AgentUsername,
-    DirectoryUserId: DirectoryUserId = null,
-    HierarchyGroupId: HierarchyGroupId = null,
-    IdentityInfo: UserIdentityInfo = null,
-    Password: Password = null,
-    Tags: TagMap = null
+    Username: AgentUsername
   ): CreateUserRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], PhoneConfig = PhoneConfig.asInstanceOf[js.Any], RoutingProfileId = RoutingProfileId.asInstanceOf[js.Any], SecurityProfileIds = SecurityProfileIds.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (DirectoryUserId != null) __obj.updateDynamic("DirectoryUserId")(DirectoryUserId.asInstanceOf[js.Any])
-    if (HierarchyGroupId != null) __obj.updateDynamic("HierarchyGroupId")(HierarchyGroupId.asInstanceOf[js.Any])
-    if (IdentityInfo != null) __obj.updateDynamic("IdentityInfo")(IdentityInfo.asInstanceOf[js.Any])
-    if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserRequest]
   }
+  @scala.inline
+  implicit class CreateUserRequestOps[Self <: CreateUserRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPhoneConfig(value: UserPhoneConfig): Self = this.set("PhoneConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoutingProfileId(value: RoutingProfileId): Self = this.set("RoutingProfileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurityProfileIdsVarargs(value: SecurityProfileId*): Self = this.set("SecurityProfileIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityProfileIds(value: SecurityProfileIds): Self = this.set("SecurityProfileIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: AgentUsername): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDirectoryUserId(value: DirectoryUserId): Self = this.set("DirectoryUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryUserId: Self = this.set("DirectoryUserId", js.undefined)
+    @scala.inline
+    def setHierarchyGroupId(value: HierarchyGroupId): Self = this.set("HierarchyGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHierarchyGroupId: Self = this.set("HierarchyGroupId", js.undefined)
+    @scala.inline
+    def setIdentityInfo(value: UserIdentityInfo): Self = this.set("IdentityInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityInfo: Self = this.set("IdentityInfo", js.undefined)
+    @scala.inline
+    def setPassword(value: Password): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("Password", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

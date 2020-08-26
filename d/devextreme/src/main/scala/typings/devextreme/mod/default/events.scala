@@ -1,6 +1,6 @@
 package typings.devextreme.mod.default
 
-import typings.devextreme.mod.DevExpress.event
+import typings.devextreme.mod.DevExpress.events.event
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation._
 @JSImport("devextreme", "events")
 @js.native
 object events extends js.Object {
+  @js.native
+  class dxEvent ()
+    extends typings.devextreme.mod.DevExpress.events.dxEvent
+  
+  def eventsHandler(event: typings.devextreme.mod.DevExpress.events.dxEvent, extraParameters: js.Any): Boolean = js.native
   def off(element: js.Array[Element]): Unit = js.native
   def off(element: js.Array[Element], eventName: String): Unit = js.native
   def off(element: js.Array[Element], eventName: String, handler: js.Function): Unit = js.native

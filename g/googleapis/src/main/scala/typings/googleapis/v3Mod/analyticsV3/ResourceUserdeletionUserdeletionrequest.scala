@@ -27,6 +27,7 @@ class ResourceUserdeletionUserdeletionrequest protected () extends js.Object {
     */
   def upsert(): GaxiosPromise[SchemaUserDeletionRequest] = js.native
   def upsert(callback: BodyResponseCallback[SchemaUserDeletionRequest]): Unit = js.native
+  def upsert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserDeletionRequest] = js.native
   def upsert(params: ParamsResourceUserdeletionUserdeletionrequestUpsert): GaxiosPromise[SchemaUserDeletionRequest] = js.native
   def upsert(
     params: ParamsResourceUserdeletionUserdeletionrequestUpsert,

@@ -34,18 +34,38 @@ trait SchemaInstanceGroupManagerVersion extends js.Object {
 
 object SchemaInstanceGroupManagerVersion {
   @scala.inline
-  def apply(
-    instanceTemplate: String = null,
-    name: String = null,
-    tag: String = null,
-    targetSize: SchemaFixedOrPercent = null
-  ): SchemaInstanceGroupManagerVersion = {
+  def apply(): SchemaInstanceGroupManagerVersion = {
     val __obj = js.Dynamic.literal()
-    if (instanceTemplate != null) __obj.updateDynamic("instanceTemplate")(instanceTemplate.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (targetSize != null) __obj.updateDynamic("targetSize")(targetSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerVersion]
   }
+  @scala.inline
+  implicit class SchemaInstanceGroupManagerVersionOps[Self <: SchemaInstanceGroupManagerVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceTemplate(value: String): Self = this.set("instanceTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTemplate: Self = this.set("instanceTemplate", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+    @scala.inline
+    def setTargetSize(value: SchemaFixedOrPercent): Self = this.set("targetSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetSize: Self = this.set("targetSize", js.undefined)
+  }
+  
 }
 

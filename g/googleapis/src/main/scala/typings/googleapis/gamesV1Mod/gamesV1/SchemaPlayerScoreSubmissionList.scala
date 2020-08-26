@@ -22,11 +22,32 @@ trait SchemaPlayerScoreSubmissionList extends js.Object {
 
 object SchemaPlayerScoreSubmissionList {
   @scala.inline
-  def apply(kind: String = null, scores: js.Array[SchemaScoreSubmission] = null): SchemaPlayerScoreSubmissionList = {
+  def apply(): SchemaPlayerScoreSubmissionList = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (scores != null) __obj.updateDynamic("scores")(scores.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlayerScoreSubmissionList]
   }
+  @scala.inline
+  implicit class SchemaPlayerScoreSubmissionListOps[Self <: SchemaPlayerScoreSubmissionList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setScoresVarargs(value: SchemaScoreSubmission*): Self = this.set("scores", js.Array(value :_*))
+    @scala.inline
+    def setScores(value: js.Array[SchemaScoreSubmission]): Self = this.set("scores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScores: Self = this.set("scores", js.undefined)
+  }
+  
 }
 

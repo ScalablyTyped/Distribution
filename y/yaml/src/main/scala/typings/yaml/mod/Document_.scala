@@ -60,12 +60,16 @@ class Document_ () extends Collection {
     * by the document.
     **/
   def setSchema(): Unit = js.native
-  def setSchema(id: `1Dot0` | `1Dot1` | `1Dot2`): Unit = js.native
-  def setSchema(id: `1Dot0` | `1Dot1` | `1Dot2`, customTags: js.Array[TagId | Tag]): Unit = js.native
+  def setSchema(id: js.UndefOr[`1Dot0` | `1Dot1` | `1Dot2`]): Unit = js.native
+  def setSchema(id: js.UndefOr[`1Dot0` | `1Dot1` | `1Dot2`], customTags: js.Array[Tag | TagId]): Unit = js.native
   def setSchema(id: Name): Unit = js.native
   def setSchema(id: Name, customTags: js.Array[TagId | Tag]): Unit = js.native
   /** Set `handle` as a shorthand string for the `prefix` tag namespace. */
   def setTagPrefix(handle: String, prefix: String): Unit = js.native
+  def toJSON(
+    arg: js.UndefOr[scala.Nothing],
+    onAnchor: js.Function2[/* value */ js.Any, /* count */ Double, Unit]
+  ): js.Any = js.native
   def toJSON(arg: String): js.Any = js.native
   def toJSON(arg: String, onAnchor: js.Function2[/* value */ js.Any, /* count */ Double, Unit]): js.Any = js.native
 }

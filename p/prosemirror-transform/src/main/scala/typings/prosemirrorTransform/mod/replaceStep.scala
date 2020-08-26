@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object replaceStep extends js.Object {
   def apply[S /* <: Schema[_, _] */](doc: Node[S], from: Double): js.UndefOr[Step[S] | Null] = js.native
+  def apply[S /* <: Schema[_, _] */](doc: Node[S], from: Double, to: js.UndefOr[scala.Nothing], slice: Slice[S]): js.UndefOr[Step[S] | Null] = js.native
   def apply[S /* <: Schema[_, _] */](doc: Node[S], from: Double, to: Double): js.UndefOr[Step[S] | Null] = js.native
   def apply[S /* <: Schema[_, _] */](doc: Node[S], from: Double, to: Double, slice: Slice[S]): js.UndefOr[Step[S] | Null] = js.native
 }

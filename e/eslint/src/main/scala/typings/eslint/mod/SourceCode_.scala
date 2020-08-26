@@ -127,7 +127,11 @@ class SourceCode_ protected () extends js.Object {
   def getLocFromIndex(index: Double): Position = js.native
   def getNodeByRangeIndex(index: Double): Node | Null = js.native
   def getText(): String = js.native
+  def getText(node: js.UndefOr[scala.Nothing], beforeCount: js.UndefOr[scala.Nothing], afterCount: Double): String = js.native
+  def getText(node: js.UndefOr[scala.Nothing], beforeCount: Double): String = js.native
+  def getText(node: js.UndefOr[scala.Nothing], beforeCount: Double, afterCount: Double): String = js.native
   def getText(node: Node): String = js.native
+  def getText(node: Node, beforeCount: js.UndefOr[scala.Nothing], afterCount: Double): String = js.native
   def getText(node: Node, beforeCount: Double): String = js.native
   def getText(node: Node, beforeCount: Double, afterCount: Double): String = js.native
   def getTokenAfter(node: Token): Token | Null = js.native
@@ -147,6 +151,7 @@ class SourceCode_ protected () extends js.Object {
   def getTokenByRangeStart(offset: Double): Token | Null = js.native
   def getTokenByRangeStart(offset: Double, options: IncludeComments): Token | Null = js.native
   def getTokens(node: Node): js.Array[Token] = js.native
+  def getTokens(node: Node, beforeCount: js.UndefOr[scala.Nothing], afterCount: Double): js.Array[Token] = js.native
   def getTokens(node: Node, beforeCount: Double): js.Array[Token] = js.native
   def getTokens(node: Node, beforeCount: Double, afterCount: Double): js.Array[Token] = js.native
   def getTokens(node: Node, options: CursorWithCountOptions): js.Array[Token] = js.native
@@ -163,12 +168,42 @@ class SourceCode_ protected () extends js.Object {
   def getTokensBefore(node: Comment, options: CursorWithCountOptions): js.Array[Token] = js.native
   def getTokensBefore(node: Node): js.Array[Token] = js.native
   def getTokensBefore(node: Node, options: CursorWithCountOptions): js.Array[Token] = js.native
-  def getTokensBetween(left: Node | Token | Comment, right: Node | Token | Comment): js.Array[Token] = js.native
-  def getTokensBetween(
-    left: Node | Token | Comment,
-    right: Node | Token | Comment,
-    padding: Double | FilterPredicate | CursorWithCountOptions
-  ): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Token): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Token, padding: Double): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Token, padding: CursorWithCountOptions): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Token, padding: FilterPredicate): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Comment): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Comment, padding: Double): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Comment, padding: CursorWithCountOptions): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Comment, padding: FilterPredicate): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Node): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Node, padding: Double): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Node, padding: CursorWithCountOptions): js.Array[Token] = js.native
+  def getTokensBetween(left: Token, right: Node, padding: FilterPredicate): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Token): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Token, padding: Double): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Token, padding: CursorWithCountOptions): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Token, padding: FilterPredicate): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Comment): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Comment, padding: Double): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Comment, padding: CursorWithCountOptions): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Comment, padding: FilterPredicate): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Node): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Node, padding: Double): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Node, padding: CursorWithCountOptions): js.Array[Token] = js.native
+  def getTokensBetween(left: Comment, right: Node, padding: FilterPredicate): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Token): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Token, padding: Double): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Token, padding: CursorWithCountOptions): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Token, padding: FilterPredicate): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Comment): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Comment, padding: Double): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Comment, padding: CursorWithCountOptions): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Comment, padding: FilterPredicate): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Node): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Node, padding: Double): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Node, padding: CursorWithCountOptions): js.Array[Token] = js.native
+  def getTokensBetween(left: Node, right: Node, padding: FilterPredicate): js.Array[Token] = js.native
   def isSpaceBetweenTokens(first: Token, second: Token): Boolean = js.native
 }
 

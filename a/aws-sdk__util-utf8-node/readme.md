@@ -11,8 +11,8 @@ A Node.JS UTF-8 string <-> UInt8Array converter
 | Full name          | @aws-sdk/util-utf8-node |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 186 |
-| # downloads        | 897738 |
+| # dependents       | 368 |
+| # downloads        | 940989 |
 | # stars            | 0 |
 
 ## Links

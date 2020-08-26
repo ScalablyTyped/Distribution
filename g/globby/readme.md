@@ -4,15 +4,15 @@
 Typings are for version 11.0.1
 
 ## Library description:
-Extends `glob` with support for multiple patterns and exposes a Promise API
+User-friendly glob matching
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | globby |
 | Keywords           | all, array, directories, expand, files, filesystem, filter, find, fnmatch, folders, fs, glob, globbing, globs, gulpfriendly, match, matcher, minimatch, multi, multiple, paths, pattern, patterns, traverse, util, utility, wildcard, wildcards, promise, gitignore, git |
-| # releases         | 9 |
-| # dependents       | 2704 |
-| # downloads        | 746920013 |
+| # releases         | 8 |
+| # dependents       | 2751 |
+| # downloads        | 762831122 |
 | # stars            | 49 |
 
 ## Links

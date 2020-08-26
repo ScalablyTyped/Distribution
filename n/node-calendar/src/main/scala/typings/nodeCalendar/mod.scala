@@ -161,10 +161,6 @@ object mod extends js.Object {
     */
   class IllegalDayError () extends Error {
     def this(message: String) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native
@@ -174,10 +170,6 @@ object mod extends js.Object {
     */
   class IllegalLocaleError () extends Error {
     def this(message: String) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native
@@ -187,10 +179,6 @@ object mod extends js.Object {
     */
   class IllegalMonthError () extends Error {
     def this(message: String) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native
@@ -200,10 +188,6 @@ object mod extends js.Object {
     */
   class IllegalTimeError () extends Error {
     def this(message: String) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native
@@ -213,10 +197,6 @@ object mod extends js.Object {
     */
   class IllegalWeekdayError () extends Error {
     def this(message: String) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   var APRIL: Double = js.native

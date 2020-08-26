@@ -1,13 +1,13 @@
 package typings.pickadate.Pickadate
 
-import typings.pickadate.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DateOptions extends Options {
    // default 'Today'
-  var close: js.UndefOr[String] = js.undefined
+  var close: js.UndefOr[String] = js.native
   /**
     * Disable a specific or arbitrary set of dates selectable on the
     * picker. Accepts an array of Date objects, arrays formatted as
@@ -17,43 +17,43 @@ trait DateOptions extends Options {
     * Enable dates that fall within a range of disabled dates by
     * adding an `inverted` parameter to the item within the collection.
     */
-  var disable: js.UndefOr[js.Array[_]] = js.undefined
+  var disable: js.UndefOr[js.Array[_]] = js.native
   /**
     * The first day of the week can be set to either Sunday or Monday.
     * True or 1 sets it as Monday and false or 0 as Sunday.
     */
-  var firstDay: js.UndefOr[Boolean | Double] = js.undefined
+  var firstDay: js.UndefOr[Boolean | Double] = js.native
   // Classes
-  var klass: js.UndefOr[DateKlassOptions] = js.undefined
+  var klass: js.UndefOr[DateKlassOptions] = js.native
    // default 'Close'
   // Accessibility labels
-  var labelMonthNext: js.UndefOr[String] = js.undefined
+  var labelMonthNext: js.UndefOr[String] = js.native
    // default 'Next month'
-  var labelMonthPrev: js.UndefOr[String] = js.undefined
+  var labelMonthPrev: js.UndefOr[String] = js.native
    // default 'Previous month'
-  var labelMonthSelect: js.UndefOr[String] = js.undefined
+  var labelMonthSelect: js.UndefOr[String] = js.native
    // default 'Select a month'
-  var labelYearSelect: js.UndefOr[String] = js.undefined
+  var labelYearSelect: js.UndefOr[String] = js.native
   /**
     * Set the maximum selectable date on the picker.
     * Accepts the same values as the `min` property.
     */
-  var max: js.UndefOr[MinOrMaxDateOption] = js.undefined
+  var max: js.UndefOr[MinOrMaxDateOption] = js.native
   /**
     * Set the minimum selectable date on the picker. Accepts a Date object,
     * array formatted as [YEAR, MONTH, DATE], a positive or negative integer
     * for a date relative to today, or a boolean (`true` sets it to today,
     * `false` removes any limit).
     */
-  var min: js.UndefOr[MinOrMaxDateOption] = js.undefined
+  var min: js.UndefOr[MinOrMaxDateOption] = js.native
   // Strings and translations
-  var monthsFull: js.UndefOr[js.Array[String]] = js.undefined
+  var monthsFull: js.UndefOr[js.Array[String]] = js.native
    // default 'January' through 'December'
-  var monthsShort: js.UndefOr[js.Array[String]] = js.undefined
+  var monthsShort: js.UndefOr[js.Array[String]] = js.native
   /**
     * True enables the dropdown selector and false replaces it with text
     */
-  var selectMonths: js.UndefOr[Boolean] = js.undefined
+  var selectMonths: js.UndefOr[Boolean] = js.native
    //default 'Select a year'
   /**
     * True enables the dropdown selector and false replaces it with text.
@@ -61,96 +61,122 @@ trait DateOptions extends Options {
     * using an even integer - half before and half after the year in focus.
     * If true the value will default to 10.
     */
-  var selectYears: js.UndefOr[Boolean | Double] = js.undefined
+  var selectYears: js.UndefOr[Boolean | Double] = js.native
    // default 'Sun' through 'Sat'
-  var showMonthsShort: js.UndefOr[Boolean] = js.undefined
-  var showWeekdaysFull: js.UndefOr[Boolean] = js.undefined
+  var showMonthsShort: js.UndefOr[Boolean] = js.native
+  var showWeekdaysFull: js.UndefOr[Boolean] = js.native
   // Buttons
-  var today: js.UndefOr[String] = js.undefined
+  var today: js.UndefOr[String] = js.native
    // default 'Jan' through 'Dec'
-  var weekdaysFull: js.UndefOr[js.Array[String]] = js.undefined
+  var weekdaysFull: js.UndefOr[js.Array[String]] = js.native
    // default 'Sunday' through 'Saturday'
-  var weekdaysShort: js.UndefOr[js.Array[String]] = js.undefined
+  var weekdaysShort: js.UndefOr[js.Array[String]] = js.native
 }
 
 object DateOptions {
   @scala.inline
-  def apply(
-    clear: String = null,
-    close: String = null,
-    closeOnClear: js.UndefOr[Boolean] = js.undefined,
-    closeOnSelect: js.UndefOr[Boolean] = js.undefined,
-    container: String | JQuery = null,
-    containerHidden: String = null,
-    disable: js.Array[_] = null,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    firstDay: Boolean | Double = null,
-    format: String = null,
-    formatSubmit: String = null,
-    hiddenName: js.UndefOr[Boolean] = js.undefined,
-    hiddenPrefix: String = null,
-    hiddenSuffix: String = null,
-    klass: DateKlassOptions = null,
-    labelMonthNext: String = null,
-    labelMonthPrev: String = null,
-    labelMonthSelect: String = null,
-    labelYearSelect: String = null,
-    max: MinOrMaxDateOption = null,
-    min: MinOrMaxDateOption = null,
-    monthsFull: js.Array[String] = null,
-    monthsShort: js.Array[String] = null,
-    onClose: /* event */ js.Any => Unit = null,
-    onOpen: /* event */ js.Any => Unit = null,
-    onRender: /* event */ js.Any => Unit = null,
-    onSet: /* event */ js.Any => Unit = null,
-    onStart: /* event */ js.Any => Unit = null,
-    onStop: /* event */ js.Any => Unit = null,
-    selectMonths: js.UndefOr[Boolean] = js.undefined,
-    selectYears: Boolean | Double = null,
-    showMonthsShort: js.UndefOr[Boolean] = js.undefined,
-    showWeekdaysFull: js.UndefOr[Boolean] = js.undefined,
-    today: String = null,
-    weekdaysFull: js.Array[String] = null,
-    weekdaysShort: js.Array[String] = null
-  ): DateOptions = {
+  def apply(): DateOptions = {
     val __obj = js.Dynamic.literal()
-    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnClear)) __obj.updateDynamic("closeOnClear")(closeOnClear.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect.get.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerHidden != null) __obj.updateDynamic("containerHidden")(containerHidden.asInstanceOf[js.Any])
-    if (disable != null) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
-    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formatSubmit != null) __obj.updateDynamic("formatSubmit")(formatSubmit.asInstanceOf[js.Any])
-    if (!js.isUndefined(hiddenName)) __obj.updateDynamic("hiddenName")(hiddenName.get.asInstanceOf[js.Any])
-    if (hiddenPrefix != null) __obj.updateDynamic("hiddenPrefix")(hiddenPrefix.asInstanceOf[js.Any])
-    if (hiddenSuffix != null) __obj.updateDynamic("hiddenSuffix")(hiddenSuffix.asInstanceOf[js.Any])
-    if (klass != null) __obj.updateDynamic("klass")(klass.asInstanceOf[js.Any])
-    if (labelMonthNext != null) __obj.updateDynamic("labelMonthNext")(labelMonthNext.asInstanceOf[js.Any])
-    if (labelMonthPrev != null) __obj.updateDynamic("labelMonthPrev")(labelMonthPrev.asInstanceOf[js.Any])
-    if (labelMonthSelect != null) __obj.updateDynamic("labelMonthSelect")(labelMonthSelect.asInstanceOf[js.Any])
-    if (labelYearSelect != null) __obj.updateDynamic("labelYearSelect")(labelYearSelect.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (monthsFull != null) __obj.updateDynamic("monthsFull")(monthsFull.asInstanceOf[js.Any])
-    if (monthsShort != null) __obj.updateDynamic("monthsShort")(monthsShort.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
-    if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction1(onRender))
-    if (onSet != null) __obj.updateDynamic("onSet")(js.Any.fromFunction1(onSet))
-    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
-    if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction1(onStop))
-    if (!js.isUndefined(selectMonths)) __obj.updateDynamic("selectMonths")(selectMonths.get.asInstanceOf[js.Any])
-    if (selectYears != null) __obj.updateDynamic("selectYears")(selectYears.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMonthsShort)) __obj.updateDynamic("showMonthsShort")(showMonthsShort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekdaysFull)) __obj.updateDynamic("showWeekdaysFull")(showWeekdaysFull.get.asInstanceOf[js.Any])
-    if (today != null) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
-    if (weekdaysFull != null) __obj.updateDynamic("weekdaysFull")(weekdaysFull.asInstanceOf[js.Any])
-    if (weekdaysShort != null) __obj.updateDynamic("weekdaysShort")(weekdaysShort.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateOptions]
   }
+  @scala.inline
+  implicit class DateOptionsOps[Self <: DateOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setDisableVarargs(value: js.Any*): Self = this.set("disable", js.Array(value :_*))
+    @scala.inline
+    def setDisable(value: js.Array[_]): Self = this.set("disable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisable: Self = this.set("disable", js.undefined)
+    @scala.inline
+    def setFirstDay(value: Boolean | Double): Self = this.set("firstDay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstDay: Self = this.set("firstDay", js.undefined)
+    @scala.inline
+    def setKlass(value: DateKlassOptions): Self = this.set("klass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKlass: Self = this.set("klass", js.undefined)
+    @scala.inline
+    def setLabelMonthNext(value: String): Self = this.set("labelMonthNext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelMonthNext: Self = this.set("labelMonthNext", js.undefined)
+    @scala.inline
+    def setLabelMonthPrev(value: String): Self = this.set("labelMonthPrev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelMonthPrev: Self = this.set("labelMonthPrev", js.undefined)
+    @scala.inline
+    def setLabelMonthSelect(value: String): Self = this.set("labelMonthSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelMonthSelect: Self = this.set("labelMonthSelect", js.undefined)
+    @scala.inline
+    def setLabelYearSelect(value: String): Self = this.set("labelYearSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelYearSelect: Self = this.set("labelYearSelect", js.undefined)
+    @scala.inline
+    def setMax(value: MinOrMaxDateOption): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: MinOrMaxDateOption): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMonthsFullVarargs(value: String*): Self = this.set("monthsFull", js.Array(value :_*))
+    @scala.inline
+    def setMonthsFull(value: js.Array[String]): Self = this.set("monthsFull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonthsFull: Self = this.set("monthsFull", js.undefined)
+    @scala.inline
+    def setMonthsShortVarargs(value: String*): Self = this.set("monthsShort", js.Array(value :_*))
+    @scala.inline
+    def setMonthsShort(value: js.Array[String]): Self = this.set("monthsShort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonthsShort: Self = this.set("monthsShort", js.undefined)
+    @scala.inline
+    def setSelectMonths(value: Boolean): Self = this.set("selectMonths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectMonths: Self = this.set("selectMonths", js.undefined)
+    @scala.inline
+    def setSelectYears(value: Boolean | Double): Self = this.set("selectYears", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectYears: Self = this.set("selectYears", js.undefined)
+    @scala.inline
+    def setShowMonthsShort(value: Boolean): Self = this.set("showMonthsShort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMonthsShort: Self = this.set("showMonthsShort", js.undefined)
+    @scala.inline
+    def setShowWeekdaysFull(value: Boolean): Self = this.set("showWeekdaysFull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowWeekdaysFull: Self = this.set("showWeekdaysFull", js.undefined)
+    @scala.inline
+    def setToday(value: String): Self = this.set("today", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToday: Self = this.set("today", js.undefined)
+    @scala.inline
+    def setWeekdaysFullVarargs(value: String*): Self = this.set("weekdaysFull", js.Array(value :_*))
+    @scala.inline
+    def setWeekdaysFull(value: js.Array[String]): Self = this.set("weekdaysFull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeekdaysFull: Self = this.set("weekdaysFull", js.undefined)
+    @scala.inline
+    def setWeekdaysShortVarargs(value: String*): Self = this.set("weekdaysShort", js.Array(value :_*))
+    @scala.inline
+    def setWeekdaysShort(value: js.Array[String]): Self = this.set("weekdaysShort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeekdaysShort: Self = this.set("weekdaysShort", js.undefined)
+  }
+  
 }
 

@@ -33,62 +33,52 @@ class ProxyConfiguration protected () extends Element {
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
   def hostExpression: String = js.native
-  def hostExpression(newValue: String): js.Any = js.native
-  def hostExpressionModel(): js.Any = js.native
-  def hostExpressionModel(newValue: Expression): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  @JSName("hostExpressionModel")
-  def hostExpressionModel_Union: Expression | Null = js.native
+  def hostExpressionModel: Expression | Null = js.native
+  def hostExpressionModel_=(newValue: Expression | Null): Unit = js.native
+  def hostExpression_=(newValue: String): Unit = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
   def passwordExpression: String = js.native
-  def passwordExpression(newValue: String): js.Any = js.native
-  def passwordExpressionModel(): js.Any = js.native
-  def passwordExpressionModel(newValue: Expression): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  @JSName("passwordExpressionModel")
-  def passwordExpressionModel_Union: Expression | Null = js.native
+  def passwordExpressionModel: Expression | Null = js.native
+  def passwordExpressionModel_=(newValue: Expression | Null): Unit = js.native
+  def passwordExpression_=(newValue: String): Unit = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
   def portExpression: String = js.native
-  def portExpression(newValue: String): js.Any = js.native
-  def portExpressionModel(): js.Any = js.native
-  def portExpressionModel(newValue: Expression): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  @JSName("portExpressionModel")
-  def portExpressionModel_Union: Expression | Null = js.native
+  def portExpressionModel: Expression | Null = js.native
+  def portExpressionModel_=(newValue: Expression | Null): Unit = js.native
+  def portExpression_=(newValue: String): Unit = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
   def useConfigurationExpression: String = js.native
-  def useConfigurationExpression(newValue: String): js.Any = js.native
-  def useConfigurationExpressionModel(): js.Any = js.native
-  def useConfigurationExpressionModel(newValue: Expression): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  @JSName("useConfigurationExpressionModel")
-  def useConfigurationExpressionModel_Union: Expression | Null = js.native
+  def useConfigurationExpressionModel: Expression | Null = js.native
+  def useConfigurationExpressionModel_=(newValue: Expression | Null): Unit = js.native
+  def useConfigurationExpression_=(newValue: String): Unit = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
   def usernameExpression: String = js.native
-  def usernameExpression(newValue: String): js.Any = js.native
-  def usernameExpressionModel(): js.Any = js.native
-  def usernameExpressionModel(newValue: Expression): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
-  @JSName("usernameExpressionModel")
-  def usernameExpressionModel_Union: Expression | Null = js.native
+  def usernameExpressionModel: Expression | Null = js.native
+  def usernameExpressionModel_=(newValue: Expression | Null): Unit = js.native
+  def usernameExpression_=(newValue: String): Unit = js.native
 }
 
 /* static members */

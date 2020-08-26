@@ -53,32 +53,76 @@ trait CreateInputRequest extends js.Object {
 
 object CreateInputRequest {
   @scala.inline
-  def apply(
-    Destinations: listOfInputDestinationRequest = null,
-    InputDevices: listOfInputDeviceSettings = null,
-    InputSecurityGroups: listOfString = null,
-    MediaConnectFlows: listOfMediaConnectFlowRequest = null,
-    Name: string = null,
-    RequestId: string = null,
-    RoleArn: string = null,
-    Sources: listOfInputSourceRequest = null,
-    Tags: Tags = null,
-    Type: InputType = null,
-    Vpc: InputVpcRequest = null
-  ): CreateInputRequest = {
+  def apply(): CreateInputRequest = {
     val __obj = js.Dynamic.literal()
-    if (Destinations != null) __obj.updateDynamic("Destinations")(Destinations.asInstanceOf[js.Any])
-    if (InputDevices != null) __obj.updateDynamic("InputDevices")(InputDevices.asInstanceOf[js.Any])
-    if (InputSecurityGroups != null) __obj.updateDynamic("InputSecurityGroups")(InputSecurityGroups.asInstanceOf[js.Any])
-    if (MediaConnectFlows != null) __obj.updateDynamic("MediaConnectFlows")(MediaConnectFlows.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (Sources != null) __obj.updateDynamic("Sources")(Sources.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (Vpc != null) __obj.updateDynamic("Vpc")(Vpc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInputRequest]
   }
+  @scala.inline
+  implicit class CreateInputRequestOps[Self <: CreateInputRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationsVarargs(value: InputDestinationRequest*): Self = this.set("Destinations", js.Array(value :_*))
+    @scala.inline
+    def setDestinations(value: listOfInputDestinationRequest): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinations: Self = this.set("Destinations", js.undefined)
+    @scala.inline
+    def setInputDevicesVarargs(value: InputDeviceSettings*): Self = this.set("InputDevices", js.Array(value :_*))
+    @scala.inline
+    def setInputDevices(value: listOfInputDeviceSettings): Self = this.set("InputDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDevices: Self = this.set("InputDevices", js.undefined)
+    @scala.inline
+    def setInputSecurityGroupsVarargs(value: string*): Self = this.set("InputSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setInputSecurityGroups(value: listOfString): Self = this.set("InputSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputSecurityGroups: Self = this.set("InputSecurityGroups", js.undefined)
+    @scala.inline
+    def setMediaConnectFlowsVarargs(value: MediaConnectFlowRequest*): Self = this.set("MediaConnectFlows", js.Array(value :_*))
+    @scala.inline
+    def setMediaConnectFlows(value: listOfMediaConnectFlowRequest): Self = this.set("MediaConnectFlows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaConnectFlows: Self = this.set("MediaConnectFlows", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRequestId(value: string): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setSourcesVarargs(value: InputSourceRequest*): Self = this.set("Sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: listOfInputSourceRequest): Self = this.set("Sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("Sources", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setType(value: InputType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setVpc(value: InputVpcRequest): Self = this.set("Vpc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpc: Self = this.set("Vpc", js.undefined)
+  }
+  
 }
 

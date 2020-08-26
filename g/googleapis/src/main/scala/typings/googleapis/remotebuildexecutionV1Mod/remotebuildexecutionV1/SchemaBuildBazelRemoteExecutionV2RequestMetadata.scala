@@ -39,18 +39,38 @@ trait SchemaBuildBazelRemoteExecutionV2RequestMetadata extends js.Object {
 
 object SchemaBuildBazelRemoteExecutionV2RequestMetadata {
   @scala.inline
-  def apply(
-    actionId: String = null,
-    correlatedInvocationsId: String = null,
-    toolDetails: SchemaBuildBazelRemoteExecutionV2ToolDetails = null,
-    toolInvocationId: String = null
-  ): SchemaBuildBazelRemoteExecutionV2RequestMetadata = {
+  def apply(): SchemaBuildBazelRemoteExecutionV2RequestMetadata = {
     val __obj = js.Dynamic.literal()
-    if (actionId != null) __obj.updateDynamic("actionId")(actionId.asInstanceOf[js.Any])
-    if (correlatedInvocationsId != null) __obj.updateDynamic("correlatedInvocationsId")(correlatedInvocationsId.asInstanceOf[js.Any])
-    if (toolDetails != null) __obj.updateDynamic("toolDetails")(toolDetails.asInstanceOf[js.Any])
-    if (toolInvocationId != null) __obj.updateDynamic("toolInvocationId")(toolInvocationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2RequestMetadata]
   }
+  @scala.inline
+  implicit class SchemaBuildBazelRemoteExecutionV2RequestMetadataOps[Self <: SchemaBuildBazelRemoteExecutionV2RequestMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionId(value: String): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionId: Self = this.set("actionId", js.undefined)
+    @scala.inline
+    def setCorrelatedInvocationsId(value: String): Self = this.set("correlatedInvocationsId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorrelatedInvocationsId: Self = this.set("correlatedInvocationsId", js.undefined)
+    @scala.inline
+    def setToolDetails(value: SchemaBuildBazelRemoteExecutionV2ToolDetails): Self = this.set("toolDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolDetails: Self = this.set("toolDetails", js.undefined)
+    @scala.inline
+    def setToolInvocationId(value: String): Self = this.set("toolInvocationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolInvocationId: Self = this.set("toolInvocationId", js.undefined)
+  }
+  
 }
 

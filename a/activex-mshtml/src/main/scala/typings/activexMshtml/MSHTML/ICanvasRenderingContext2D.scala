@@ -4,36 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICanvasRenderingContext2D extends js.Object {
   @JSName("MSHTML.ICanvasRenderingContext2D_typekey")
-  var MSHTMLDotICanvasRenderingContext2D_typekey: ICanvasRenderingContext2D
-  val canvas: IHTMLCanvasElement
-  var fillStyle: js.Any
-  var font: String
-  var globalAlpha: Double
-  var globalCompositeOperation: String
-  var lineCap: String
-  var lineJoin: String
-  var lineWidth: Double
-  var miterLimit: Double
-  var shadowBlur: Double
-  var shadowColor: String
-  var shadowOffsetX: Double
-  var shadowOffsetY: Double
-  var strokeStyle: js.Any
-  var textAlign: String
-  var textBaseline: String
-  def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Double): Unit
-  def arcTo(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double): Unit
-  def beginPath(): Unit
-  def bezierCurveTo(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double): Unit
-  def clearRect(x: Double, y: Double, w: Double, h: Double): Unit
-  def clip(): Unit
-  def closePath(): Unit
-  def createImageData(a1: js.Any, a2: js.Any): ICanvasImageData
-  def createLinearGradient(x0: Double, y0: Double, x1: Double, y1: Double): ICanvasGradient
-  def createPattern(Image: js.Any, repetition: js.Any): ICanvasPattern
-  def createRadialGradient(x0: Double, y0: Double, r0: Double, x1: Double, y1: Double, r1: Double): ICanvasGradient
+  var MSHTMLDotICanvasRenderingContext2D_typekey: ICanvasRenderingContext2D = js.native
+  val canvas: IHTMLCanvasElement = js.native
+  var fillStyle: js.Any = js.native
+  var font: String = js.native
+  var globalAlpha: Double = js.native
+  var globalCompositeOperation: String = js.native
+  var lineCap: String = js.native
+  var lineJoin: String = js.native
+  var lineWidth: Double = js.native
+  var miterLimit: Double = js.native
+  var shadowBlur: Double = js.native
+  var shadowColor: String = js.native
+  var shadowOffsetX: Double = js.native
+  var shadowOffsetY: Double = js.native
+  var strokeStyle: js.Any = js.native
+  var textAlign: String = js.native
+  var textBaseline: String = js.native
+  def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double): Unit = js.native
+  def beginPath(): Unit = js.native
+  def bezierCurveTo(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double): Unit = js.native
+  def clearRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  def clip(): Unit = js.native
+  def closePath(): Unit = js.native
+  def createImageData(a1: js.Any, a2: js.Any): ICanvasImageData = js.native
+  def createLinearGradient(x0: Double, y0: Double, x1: Double, y1: Double): ICanvasGradient = js.native
+  def createPattern(Image: js.Any, repetition: js.Any): ICanvasPattern = js.native
+  def createRadialGradient(x0: Double, y0: Double, r0: Double, x1: Double, y1: Double, r1: Double): ICanvasGradient = js.native
   def drawImage(
     pSrc: js.Any,
     a1: js.Any,
@@ -44,15 +45,15 @@ trait ICanvasRenderingContext2D extends js.Object {
     a6: js.Any,
     a7: js.Any,
     a8: js.Any
-  ): Unit
-  def fill(): Unit
-  def fillRect(x: Double, y: Double, w: Double, h: Double): Unit
-  def fillText(text: String, x: Double, y: Double, maxWidth: js.Any): Unit
-  def getImageData(sx: Double, sy: Double, sw: Double, sh: Double): ICanvasImageData
-  def isPointInPath(x: Double, y: Double): Boolean
-  def lineTo(x: Double, y: Double): Unit
-  def measureText(text: String): ICanvasTextMetrics
-  def moveTo(x: Double, y: Double): Unit
+  ): Unit = js.native
+  def fill(): Unit = js.native
+  def fillRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  def fillText(text: String, x: Double, y: Double, maxWidth: js.Any): Unit = js.native
+  def getImageData(sx: Double, sy: Double, sw: Double, sh: Double): ICanvasImageData = js.native
+  def isPointInPath(x: Double, y: Double): Boolean = js.native
+  def lineTo(x: Double, y: Double): Unit = js.native
+  def measureText(text: String): ICanvasTextMetrics = js.native
+  def moveTo(x: Double, y: Double): Unit = js.native
   def putImageData(
     imagedata: ICanvasImageData,
     dx: Double,
@@ -61,19 +62,19 @@ trait ICanvasRenderingContext2D extends js.Object {
     dirtyY: js.Any,
     dirtyWidth: js.Any,
     dirtyHeight: js.Any
-  ): Unit
-  def quadraticCurveTo(cpx: Double, cpy: Double, x: Double, y: Double): Unit
-  def rect(x: Double, y: Double, w: Double, h: Double): Unit
-  def restore(): Unit
-  def rotate(angle: Double): Unit
-  def save(): Unit
-  def scale(x: Double, y: Double): Unit
-  def setTransform(m11: Double, m12: Double, m21: Double, m22: Double, dx: Double, dy: Double): Unit
-  def stroke(): Unit
-  def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit
-  def strokeText(text: String, x: Double, y: Double, maxWidth: js.Any): Unit
-  def transform(m11: Double, m12: Double, m21: Double, m22: Double, dx: Double, dy: Double): Unit
-  def translate(x: Double, y: Double): Unit
+  ): Unit = js.native
+  def quadraticCurveTo(cpx: Double, cpy: Double, x: Double, y: Double): Unit = js.native
+  def rect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  def restore(): Unit = js.native
+  def rotate(angle: Double): Unit = js.native
+  def save(): Unit = js.native
+  def scale(x: Double, y: Double): Unit = js.native
+  def setTransform(m11: Double, m12: Double, m21: Double, m22: Double, dx: Double, dy: Double): Unit = js.native
+  def stroke(): Unit = js.native
+  def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  def strokeText(text: String, x: Double, y: Double, maxWidth: js.Any): Unit = js.native
+  def transform(m11: Double, m12: Double, m21: Double, m22: Double, dx: Double, dy: Double): Unit = js.native
+  def translate(x: Double, y: Double): Unit = js.native
 }
 
 object ICanvasRenderingContext2D {
@@ -134,5 +135,118 @@ object ICanvasRenderingContext2D {
     __obj.updateDynamic("MSHTML.ICanvasRenderingContext2D_typekey")(MSHTMLDotICanvasRenderingContext2D_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICanvasRenderingContext2D]
   }
+  @scala.inline
+  implicit class ICanvasRenderingContext2DOps[Self <: ICanvasRenderingContext2D] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMSHTMLDotICanvasRenderingContext2D_typekey(value: ICanvasRenderingContext2D): Self = this.set("MSHTML.ICanvasRenderingContext2D_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArc(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = this.set("arc", js.Any.fromFunction6(value))
+    @scala.inline
+    def setArcTo(value: (Double, Double, Double, Double, Double) => Unit): Self = this.set("arcTo", js.Any.fromFunction5(value))
+    @scala.inline
+    def setBeginPath(value: () => Unit): Self = this.set("beginPath", js.Any.fromFunction0(value))
+    @scala.inline
+    def setBezierCurveTo(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = this.set("bezierCurveTo", js.Any.fromFunction6(value))
+    @scala.inline
+    def setCanvas(value: IHTMLCanvasElement): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClearRect(value: (Double, Double, Double, Double) => Unit): Self = this.set("clearRect", js.Any.fromFunction4(value))
+    @scala.inline
+    def setClip(value: () => Unit): Self = this.set("clip", js.Any.fromFunction0(value))
+    @scala.inline
+    def setClosePath(value: () => Unit): Self = this.set("closePath", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCreateImageData(value: (js.Any, js.Any) => ICanvasImageData): Self = this.set("createImageData", js.Any.fromFunction2(value))
+    @scala.inline
+    def setCreateLinearGradient(value: (Double, Double, Double, Double) => ICanvasGradient): Self = this.set("createLinearGradient", js.Any.fromFunction4(value))
+    @scala.inline
+    def setCreatePattern(value: (js.Any, js.Any) => ICanvasPattern): Self = this.set("createPattern", js.Any.fromFunction2(value))
+    @scala.inline
+    def setCreateRadialGradient(value: (Double, Double, Double, Double, Double, Double) => ICanvasGradient): Self = this.set("createRadialGradient", js.Any.fromFunction6(value))
+    @scala.inline
+    def setDrawImage(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = this.set("drawImage", js.Any.fromFunction9(value))
+    @scala.inline
+    def setFill(value: () => Unit): Self = this.set("fill", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFillRect(value: (Double, Double, Double, Double) => Unit): Self = this.set("fillRect", js.Any.fromFunction4(value))
+    @scala.inline
+    def setFillStyle(value: js.Any): Self = this.set("fillStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFillText(value: (String, Double, Double, js.Any) => Unit): Self = this.set("fillText", js.Any.fromFunction4(value))
+    @scala.inline
+    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetImageData(value: (Double, Double, Double, Double) => ICanvasImageData): Self = this.set("getImageData", js.Any.fromFunction4(value))
+    @scala.inline
+    def setGlobalAlpha(value: Double): Self = this.set("globalAlpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGlobalCompositeOperation(value: String): Self = this.set("globalCompositeOperation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsPointInPath(value: (Double, Double) => Boolean): Self = this.set("isPointInPath", js.Any.fromFunction2(value))
+    @scala.inline
+    def setLineCap(value: String): Self = this.set("lineCap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLineJoin(value: String): Self = this.set("lineJoin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLineTo(value: (Double, Double) => Unit): Self = this.set("lineTo", js.Any.fromFunction2(value))
+    @scala.inline
+    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMeasureText(value: String => ICanvasTextMetrics): Self = this.set("measureText", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMiterLimit(value: Double): Self = this.set("miterLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMoveTo(value: (Double, Double) => Unit): Self = this.set("moveTo", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPutImageData(value: (ICanvasImageData, Double, Double, js.Any, js.Any, js.Any, js.Any) => Unit): Self = this.set("putImageData", js.Any.fromFunction7(value))
+    @scala.inline
+    def setQuadraticCurveTo(value: (Double, Double, Double, Double) => Unit): Self = this.set("quadraticCurveTo", js.Any.fromFunction4(value))
+    @scala.inline
+    def setRect(value: (Double, Double, Double, Double) => Unit): Self = this.set("rect", js.Any.fromFunction4(value))
+    @scala.inline
+    def setRestore(value: () => Unit): Self = this.set("restore", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRotate(value: Double => Unit): Self = this.set("rotate", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSave(value: () => Unit): Self = this.set("save", js.Any.fromFunction0(value))
+    @scala.inline
+    def setScale(value: (Double, Double) => Unit): Self = this.set("scale", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetTransform(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = this.set("setTransform", js.Any.fromFunction6(value))
+    @scala.inline
+    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShadowColor(value: String): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShadowOffsetX(value: Double): Self = this.set("shadowOffsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShadowOffsetY(value: Double): Self = this.set("shadowOffsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStroke(value: () => Unit): Self = this.set("stroke", js.Any.fromFunction0(value))
+    @scala.inline
+    def setStrokeRect(value: (Double, Double, Double, Double) => Unit): Self = this.set("strokeRect", js.Any.fromFunction4(value))
+    @scala.inline
+    def setStrokeStyle(value: js.Any): Self = this.set("strokeStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStrokeText(value: (String, Double, Double, js.Any) => Unit): Self = this.set("strokeText", js.Any.fromFunction4(value))
+    @scala.inline
+    def setTextAlign(value: String): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTextBaseline(value: String): Self = this.set("textBaseline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransform(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = this.set("transform", js.Any.fromFunction6(value))
+    @scala.inline
+    def setTranslate(value: (Double, Double) => Unit): Self = this.set("translate", js.Any.fromFunction2(value))
+  }
+  
 }
 

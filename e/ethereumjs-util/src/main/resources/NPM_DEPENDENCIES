@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ethereumjs-util" : "6.2.0"
+      "ethereumjs-util" : "7.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "ethereumjs-util" : "6.2.0"
+      "ethereumjs-util" : "7.0.3"
     }
   ],
   "compile-devDependencies" : [

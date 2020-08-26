@@ -7,62 +7,73 @@ import scala.scalajs.js.annotation._
 /**
   * A participant in the test execution, either the execution engine, a client, or a server
   */
+@js.native
 trait TestReportParticipant extends BackboneElement {
   /**
     * Contains extended information for property 'display'.
     */
-  var _display: js.UndefOr[Element] = js.undefined
+  var _display: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.undefined
+  var _type: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'uri'.
     */
-  var _uri: js.UndefOr[Element] = js.undefined
+  var _uri: js.UndefOr[Element] = js.native
   /**
     * The display name of the participant
     */
-  var display: js.UndefOr[String] = js.undefined
+  var display: js.UndefOr[String] = js.native
   /**
     * test-engine | client | server
     */
-  var `type`: code
+  var `type`: code = js.native
   /**
     * The uri of the participant. An absolute URL is preferred
     */
-  var uri: typings.fhir.fhir.uri
+  var uri: typings.fhir.fhir.uri = js.native
 }
 
 object TestReportParticipant {
   @scala.inline
-  def apply(
-    `type`: code,
-    uri: uri,
-    _display: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _type: Element = null,
-    _uri: Element = null,
-    display: String = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null
-  ): TestReportParticipant = {
+  def apply(`type`: code, uri: uri): TestReportParticipant = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_display != null) __obj.updateDynamic("_display")(_display.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
-    if (_uri != null) __obj.updateDynamic("_uri")(_uri.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestReportParticipant]
   }
+  @scala.inline
+  implicit class TestReportParticipantOps[Self <: TestReportParticipant] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUri(value: uri): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_display(value: Element): Self = this.set("_display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_display: Self = this.set("_display", js.undefined)
+    @scala.inline
+    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_type: Self = this.set("_type", js.undefined)
+    @scala.inline
+    def set_uri(value: Element): Self = this.set("_uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_uri: Self = this.set("_uri", js.undefined)
+    @scala.inline
+    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+  }
+  
 }
 

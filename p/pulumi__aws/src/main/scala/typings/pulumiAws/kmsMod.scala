@@ -71,6 +71,7 @@ object kmsMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: ExternalKeyArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ExternalKeyArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -100,19 +101,20 @@ object kmsMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: KeyArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: KeyArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] with GetAliasResult = js.native
-  def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] with GetAliasResult = js.native
-  def getCipherText(args: GetCipherTextArgs): js.Promise[GetCipherTextResult] with GetCipherTextResult = js.native
-  def getCipherText(args: GetCipherTextArgs, opts: InvokeOptions): js.Promise[GetCipherTextResult] with GetCipherTextResult = js.native
-  def getKey(args: GetKeyArgs): js.Promise[GetKeyResult] with GetKeyResult = js.native
-  def getKey(args: GetKeyArgs, opts: InvokeOptions): js.Promise[GetKeyResult] with GetKeyResult = js.native
-  def getSecret(args: GetSecretArgs): js.Promise[GetSecretResult] with GetSecretResult = js.native
-  def getSecret(args: GetSecretArgs, opts: InvokeOptions): js.Promise[GetSecretResult] with GetSecretResult = js.native
-  def getSecrets(args: GetSecretsArgs): js.Promise[GetSecretsResult] with GetSecretsResult = js.native
-  def getSecrets(args: GetSecretsArgs, opts: InvokeOptions): js.Promise[GetSecretsResult] with GetSecretsResult = js.native
+  def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] = js.native
+  def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] = js.native
+  def getCipherText(args: GetCipherTextArgs): js.Promise[GetCipherTextResult] = js.native
+  def getCipherText(args: GetCipherTextArgs, opts: InvokeOptions): js.Promise[GetCipherTextResult] = js.native
+  def getKey(args: GetKeyArgs): js.Promise[GetKeyResult] = js.native
+  def getKey(args: GetKeyArgs, opts: InvokeOptions): js.Promise[GetKeyResult] = js.native
+  def getSecret(args: GetSecretArgs): js.Promise[GetSecretResult] = js.native
+  def getSecret(args: GetSecretArgs, opts: InvokeOptions): js.Promise[GetSecretResult] = js.native
+  def getSecrets(args: GetSecretsArgs): js.Promise[GetSecretsResult] = js.native
+  def getSecrets(args: GetSecretsArgs, opts: InvokeOptions): js.Promise[GetSecretsResult] = js.native
   /* static members */
   @js.native
   object Alias extends js.Object {
@@ -123,8 +125,10 @@ object kmsMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.kmsAliasMod.Alias = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.kmsAliasMod.Alias = js.native
     def get(name: String, id: Input[ID], state: AliasState): typings.pulumiAws.kmsAliasMod.Alias = js.native
     def get(name: String, id: Input[ID], state: AliasState, opts: CustomResourceOptions): typings.pulumiAws.kmsAliasMod.Alias = js.native
     /**
@@ -144,8 +148,10 @@ object kmsMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.ciphertextMod.Ciphertext = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ciphertextMod.Ciphertext = js.native
     def get(name: String, id: Input[ID], state: CiphertextState): typings.pulumiAws.ciphertextMod.Ciphertext = js.native
     def get(name: String, id: Input[ID], state: CiphertextState, opts: CustomResourceOptions): typings.pulumiAws.ciphertextMod.Ciphertext = js.native
     /**
@@ -165,8 +171,10 @@ object kmsMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.externalKeyMod.ExternalKey = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.externalKeyMod.ExternalKey = js.native
     def get(name: String, id: Input[ID], state: ExternalKeyState): typings.pulumiAws.externalKeyMod.ExternalKey = js.native
     def get(name: String, id: Input[ID], state: ExternalKeyState, opts: CustomResourceOptions): typings.pulumiAws.externalKeyMod.ExternalKey = js.native
     /**
@@ -186,8 +194,10 @@ object kmsMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.grantMod.Grant = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.grantMod.Grant = js.native
     def get(name: String, id: Input[ID], state: GrantState): typings.pulumiAws.grantMod.Grant = js.native
     def get(name: String, id: Input[ID], state: GrantState, opts: CustomResourceOptions): typings.pulumiAws.grantMod.Grant = js.native
     /**
@@ -207,8 +217,10 @@ object kmsMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.keyMod.Key = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.keyMod.Key = js.native
     def get(name: String, id: Input[ID], state: KeyState): typings.pulumiAws.keyMod.Key = js.native
     def get(name: String, id: Input[ID], state: KeyState, opts: CustomResourceOptions): typings.pulumiAws.keyMod.Key = js.native
     /**

@@ -1,66 +1,39 @@
 package typings.swPrecacheWebpackPlugin.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.std.RegExp
-import typings.swPrecache.anon.Handler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // workaround to override parent types
+@js.native
 trait _Options
   extends typings.swPrecache.mod.Options {
   @JSName("importScripts")
-  var importScripts__Options: js.UndefOr[js.Any] = js.undefined
+  var importScripts__Options: js.UndefOr[js.Any] = js.native
 }
 
 object _Options {
   @scala.inline
-  def apply(
-    cacheId: String = null,
-    clientsClaim: js.UndefOr[Boolean] = js.undefined,
-    directoryIndex: String = null,
-    dontCacheBustUrlsMatching: RegExp = null,
-    dynamicUrlToDependencies: StringDictionary[String | Buffer | js.Array[String]] = null,
-    handleFetch: js.UndefOr[Boolean] = js.undefined,
-    ignoreUrlParametersMatching: js.Array[RegExp] = null,
-    importScripts: js.Any = null,
-    logger: /* repeated */ js.Any => Unit = null,
-    maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.undefined,
-    navigateFallback: String = null,
-    navigateFallbackWhitelist: js.Array[RegExp] = null,
-    replacePrefix: String = null,
-    runtimeCaching: js.Array[Handler] = null,
-    skipWaiting: js.UndefOr[Boolean] = js.undefined,
-    staticFileGlobs: js.Array[String] = null,
-    stripPrefix: String = null,
-    stripPrefixMulti: StringDictionary[String] = null,
-    templateFilePath: String = null,
-    verbose: js.UndefOr[Boolean] = js.undefined
-  ): _Options = {
+  def apply(): _Options = {
     val __obj = js.Dynamic.literal()
-    if (cacheId != null) __obj.updateDynamic("cacheId")(cacheId.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientsClaim)) __obj.updateDynamic("clientsClaim")(clientsClaim.get.asInstanceOf[js.Any])
-    if (directoryIndex != null) __obj.updateDynamic("directoryIndex")(directoryIndex.asInstanceOf[js.Any])
-    if (dontCacheBustUrlsMatching != null) __obj.updateDynamic("dontCacheBustUrlsMatching")(dontCacheBustUrlsMatching.asInstanceOf[js.Any])
-    if (dynamicUrlToDependencies != null) __obj.updateDynamic("dynamicUrlToDependencies")(dynamicUrlToDependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleFetch)) __obj.updateDynamic("handleFetch")(handleFetch.get.asInstanceOf[js.Any])
-    if (ignoreUrlParametersMatching != null) __obj.updateDynamic("ignoreUrlParametersMatching")(ignoreUrlParametersMatching.asInstanceOf[js.Any])
-    if (importScripts != null) __obj.updateDynamic("importScripts")(importScripts.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction1(logger))
-    if (!js.isUndefined(maximumFileSizeToCacheInBytes)) __obj.updateDynamic("maximumFileSizeToCacheInBytes")(maximumFileSizeToCacheInBytes.get.asInstanceOf[js.Any])
-    if (navigateFallback != null) __obj.updateDynamic("navigateFallback")(navigateFallback.asInstanceOf[js.Any])
-    if (navigateFallbackWhitelist != null) __obj.updateDynamic("navigateFallbackWhitelist")(navigateFallbackWhitelist.asInstanceOf[js.Any])
-    if (replacePrefix != null) __obj.updateDynamic("replacePrefix")(replacePrefix.asInstanceOf[js.Any])
-    if (runtimeCaching != null) __obj.updateDynamic("runtimeCaching")(runtimeCaching.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipWaiting)) __obj.updateDynamic("skipWaiting")(skipWaiting.get.asInstanceOf[js.Any])
-    if (staticFileGlobs != null) __obj.updateDynamic("staticFileGlobs")(staticFileGlobs.asInstanceOf[js.Any])
-    if (stripPrefix != null) __obj.updateDynamic("stripPrefix")(stripPrefix.asInstanceOf[js.Any])
-    if (stripPrefixMulti != null) __obj.updateDynamic("stripPrefixMulti")(stripPrefixMulti.asInstanceOf[js.Any])
-    if (templateFilePath != null) __obj.updateDynamic("templateFilePath")(templateFilePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Options]
   }
+  @scala.inline
+  implicit class _OptionsOps[Self <: _Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImportScripts(value: js.Any): Self = this.set("importScripts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportScripts: Self = this.set("importScripts", js.undefined)
+  }
+  
 }
 

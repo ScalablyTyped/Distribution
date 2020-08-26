@@ -1,22 +1,12 @@
 package typings.antd.groupMod
 
-import typings.antd.anon.Options
-import typings.antd.anon.Value
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("antd/lib/checkbox/Group", JSImport.Default)
+@JSImport("antd/lib/avatar/group", JSImport.Default)
 @js.native
-class default protected () extends CheckboxGroup {
-  def this(props: CheckboxGroupProps) = this()
-}
-
-/* static members */
-@JSImport("antd/lib/checkbox/Group", JSImport.Default)
-@js.native
-object default extends js.Object {
-  var defaultProps: Options = js.native
-  def getDerivedStateFromProps(nextProps: CheckboxGroupProps): Value | Null = js.native
-}
+object default extends TopLevel[FC[GroupProps]]
 

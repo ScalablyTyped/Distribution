@@ -27,6 +27,7 @@ class ResourceSavedadstyles protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSavedAdStyle] = js.native
   def get(callback: BodyResponseCallback[SchemaSavedAdStyle]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSavedAdStyle] = js.native
   def get(params: ParamsResourceSavedadstylesGet): GaxiosPromise[SchemaSavedAdStyle] = js.native
   def get(params: ParamsResourceSavedadstylesGet, callback: BodyResponseCallback[SchemaSavedAdStyle]): Unit = js.native
   def get(
@@ -55,6 +56,7 @@ class ResourceSavedadstyles protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSavedAdStyles] = js.native
   def list(callback: BodyResponseCallback[SchemaSavedAdStyles]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSavedAdStyles] = js.native
   def list(params: ParamsResourceSavedadstylesList): GaxiosPromise[SchemaSavedAdStyles] = js.native
   def list(params: ParamsResourceSavedadstylesList, callback: BodyResponseCallback[SchemaSavedAdStyles]): Unit = js.native
   def list(

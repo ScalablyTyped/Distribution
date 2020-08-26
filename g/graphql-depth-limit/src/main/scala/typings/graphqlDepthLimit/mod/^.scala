@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(depthLimit: Double): js.Any = js.native
+  def apply(
+    depthLimit: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* obj */ js.Any, Unit]
+  ): js.Any = js.native
   def apply(depthLimit: Double, options: Options): js.Any = js.native
   def apply(depthLimit: Double, options: Options, callback: js.Function1[/* obj */ js.Any, Unit]): js.Any = js.native
 }

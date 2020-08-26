@@ -39,6 +39,11 @@ trait Static extends js.Object {
     * @return {*} the destination model
     */
   def mapModel(sourceModel: js.Any): js.Any = js.native
+  def mapModel(
+    sourceModel: js.Any,
+    includeWrappedFunction: js.UndefOr[scala.Nothing],
+    includeUnwrappedFunction: IncludePropertyCallback
+  ): js.Any = js.native
   def mapModel(sourceModel: js.Any, includeWrappedFunction: IncludePropertyCallback): js.Any = js.native
   def mapModel(
     sourceModel: js.Any,

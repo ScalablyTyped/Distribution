@@ -38,20 +38,42 @@ trait SchemaCustomMetric extends js.Object {
 
 object SchemaCustomMetric {
   @scala.inline
-  def apply(
-    filter: String = null,
-    metricName: String = null,
-    singleInstanceAssignment: js.UndefOr[Double] = js.undefined,
-    targetType: String = null,
-    targetUtilization: js.UndefOr[Double] = js.undefined
-  ): SchemaCustomMetric = {
+  def apply(): SchemaCustomMetric = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleInstanceAssignment)) __obj.updateDynamic("singleInstanceAssignment")(singleInstanceAssignment.get.asInstanceOf[js.Any])
-    if (targetType != null) __obj.updateDynamic("targetType")(targetType.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetUtilization)) __obj.updateDynamic("targetUtilization")(targetUtilization.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomMetric]
   }
+  @scala.inline
+  implicit class SchemaCustomMetricOps[Self <: SchemaCustomMetric] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setMetricName(value: String): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("metricName", js.undefined)
+    @scala.inline
+    def setSingleInstanceAssignment(value: Double): Self = this.set("singleInstanceAssignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleInstanceAssignment: Self = this.set("singleInstanceAssignment", js.undefined)
+    @scala.inline
+    def setTargetType(value: String): Self = this.set("targetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetType: Self = this.set("targetType", js.undefined)
+    @scala.inline
+    def setTargetUtilization(value: Double): Self = this.set("targetUtilization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetUtilization: Self = this.set("targetUtilization", js.undefined)
+  }
+  
 }
 

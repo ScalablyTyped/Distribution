@@ -41,7 +41,7 @@ object tagmanagerMod extends js.Object {
     @js.native
     object v1
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Tagmanager]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Tagmanager]
             ]
     
     @js.native
@@ -49,7 +49,7 @@ object tagmanagerMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.tagmanagerV2Mod.tagmanagerV2.Tagmanager
               ]
             ]

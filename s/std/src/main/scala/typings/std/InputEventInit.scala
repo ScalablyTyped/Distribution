@@ -4,34 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputEventInit extends UIEventInit {
-  var data: js.UndefOr[java.lang.String | Null] = js.undefined
-  var inputType: js.UndefOr[java.lang.String] = js.undefined
-  var isComposing: js.UndefOr[scala.Boolean] = js.undefined
+  var data: js.UndefOr[java.lang.String | Null] = js.native
+  var inputType: js.UndefOr[java.lang.String] = js.native
+  var isComposing: js.UndefOr[scala.Boolean] = js.native
 }
 
 object InputEventInit {
   @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    data: js.UndefOr[Null | java.lang.String] = js.undefined,
-    detail: js.UndefOr[Double] = js.undefined,
-    inputType: java.lang.String = null,
-    isComposing: js.UndefOr[scala.Boolean] = js.undefined,
-    view: js.UndefOr[Null | Window] = js.undefined
-  ): InputEventInit = {
+  def apply(): InputEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(detail)) __obj.updateDynamic("detail")(detail.get.asInstanceOf[js.Any])
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
-    if (!js.isUndefined(isComposing)) __obj.updateDynamic("isComposing")(isComposing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(view)) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputEventInit]
   }
+  @scala.inline
+  implicit class InputEventInitOps[Self <: InputEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: java.lang.String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataNull: Self = this.set("data", null)
+    @scala.inline
+    def setInputType(value: java.lang.String): Self = this.set("inputType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputType: Self = this.set("inputType", js.undefined)
+    @scala.inline
+    def setIsComposing(value: scala.Boolean): Self = this.set("isComposing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsComposing: Self = this.set("isComposing", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Parse an author, contributor, maintainer or other 'person' string into an object
 | Keywords           | author, authors, contributor, exec, expression, extract, maintainer, maintainers, match, package, parse, person, pkg, re, regex, regexp, regular, somebody |
 | # releases         | 0 |
 | # dependents       | 111 |
-| # downloads        | 4729089 |
+| # downloads        | 4848717 |
 | # stars            | 2 |
 
 ## Links

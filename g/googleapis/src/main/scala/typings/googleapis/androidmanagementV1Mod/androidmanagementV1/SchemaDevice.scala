@@ -164,70 +164,156 @@ trait SchemaDevice extends js.Object {
 
 object SchemaDevice {
   @scala.inline
-  def apply(
-    apiLevel: js.UndefOr[Double] = js.undefined,
-    applicationReports: js.Array[SchemaApplicationReport] = null,
-    appliedPolicyName: String = null,
-    appliedPolicyVersion: String = null,
-    appliedState: String = null,
-    deviceSettings: SchemaDeviceSettings = null,
-    disabledReason: SchemaUserFacingMessage = null,
-    displays: js.Array[SchemaDisplay] = null,
-    enrollmentTime: String = null,
-    enrollmentTokenData: String = null,
-    enrollmentTokenName: String = null,
-    hardwareInfo: SchemaHardwareInfo = null,
-    hardwareStatusSamples: js.Array[SchemaHardwareStatus] = null,
-    lastPolicyComplianceReportTime: String = null,
-    lastPolicySyncTime: String = null,
-    lastStatusReportTime: String = null,
-    managementMode: String = null,
-    memoryEvents: js.Array[SchemaMemoryEvent] = null,
-    memoryInfo: SchemaMemoryInfo = null,
-    name: String = null,
-    networkInfo: SchemaNetworkInfo = null,
-    nonComplianceDetails: js.Array[SchemaNonComplianceDetail] = null,
-    policyCompliant: js.UndefOr[Boolean] = js.undefined,
-    policyName: String = null,
-    powerManagementEvents: js.Array[SchemaPowerManagementEvent] = null,
-    previousDeviceNames: js.Array[String] = null,
-    softwareInfo: SchemaSoftwareInfo = null,
-    state: String = null,
-    user: SchemaUser = null,
-    userName: String = null
-  ): SchemaDevice = {
+  def apply(): SchemaDevice = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(apiLevel)) __obj.updateDynamic("apiLevel")(apiLevel.get.asInstanceOf[js.Any])
-    if (applicationReports != null) __obj.updateDynamic("applicationReports")(applicationReports.asInstanceOf[js.Any])
-    if (appliedPolicyName != null) __obj.updateDynamic("appliedPolicyName")(appliedPolicyName.asInstanceOf[js.Any])
-    if (appliedPolicyVersion != null) __obj.updateDynamic("appliedPolicyVersion")(appliedPolicyVersion.asInstanceOf[js.Any])
-    if (appliedState != null) __obj.updateDynamic("appliedState")(appliedState.asInstanceOf[js.Any])
-    if (deviceSettings != null) __obj.updateDynamic("deviceSettings")(deviceSettings.asInstanceOf[js.Any])
-    if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason.asInstanceOf[js.Any])
-    if (displays != null) __obj.updateDynamic("displays")(displays.asInstanceOf[js.Any])
-    if (enrollmentTime != null) __obj.updateDynamic("enrollmentTime")(enrollmentTime.asInstanceOf[js.Any])
-    if (enrollmentTokenData != null) __obj.updateDynamic("enrollmentTokenData")(enrollmentTokenData.asInstanceOf[js.Any])
-    if (enrollmentTokenName != null) __obj.updateDynamic("enrollmentTokenName")(enrollmentTokenName.asInstanceOf[js.Any])
-    if (hardwareInfo != null) __obj.updateDynamic("hardwareInfo")(hardwareInfo.asInstanceOf[js.Any])
-    if (hardwareStatusSamples != null) __obj.updateDynamic("hardwareStatusSamples")(hardwareStatusSamples.asInstanceOf[js.Any])
-    if (lastPolicyComplianceReportTime != null) __obj.updateDynamic("lastPolicyComplianceReportTime")(lastPolicyComplianceReportTime.asInstanceOf[js.Any])
-    if (lastPolicySyncTime != null) __obj.updateDynamic("lastPolicySyncTime")(lastPolicySyncTime.asInstanceOf[js.Any])
-    if (lastStatusReportTime != null) __obj.updateDynamic("lastStatusReportTime")(lastStatusReportTime.asInstanceOf[js.Any])
-    if (managementMode != null) __obj.updateDynamic("managementMode")(managementMode.asInstanceOf[js.Any])
-    if (memoryEvents != null) __obj.updateDynamic("memoryEvents")(memoryEvents.asInstanceOf[js.Any])
-    if (memoryInfo != null) __obj.updateDynamic("memoryInfo")(memoryInfo.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (networkInfo != null) __obj.updateDynamic("networkInfo")(networkInfo.asInstanceOf[js.Any])
-    if (nonComplianceDetails != null) __obj.updateDynamic("nonComplianceDetails")(nonComplianceDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(policyCompliant)) __obj.updateDynamic("policyCompliant")(policyCompliant.get.asInstanceOf[js.Any])
-    if (policyName != null) __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
-    if (powerManagementEvents != null) __obj.updateDynamic("powerManagementEvents")(powerManagementEvents.asInstanceOf[js.Any])
-    if (previousDeviceNames != null) __obj.updateDynamic("previousDeviceNames")(previousDeviceNames.asInstanceOf[js.Any])
-    if (softwareInfo != null) __obj.updateDynamic("softwareInfo")(softwareInfo.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDevice]
   }
+  @scala.inline
+  implicit class SchemaDeviceOps[Self <: SchemaDevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiLevel(value: Double): Self = this.set("apiLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiLevel: Self = this.set("apiLevel", js.undefined)
+    @scala.inline
+    def setApplicationReportsVarargs(value: SchemaApplicationReport*): Self = this.set("applicationReports", js.Array(value :_*))
+    @scala.inline
+    def setApplicationReports(value: js.Array[SchemaApplicationReport]): Self = this.set("applicationReports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationReports: Self = this.set("applicationReports", js.undefined)
+    @scala.inline
+    def setAppliedPolicyName(value: String): Self = this.set("appliedPolicyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppliedPolicyName: Self = this.set("appliedPolicyName", js.undefined)
+    @scala.inline
+    def setAppliedPolicyVersion(value: String): Self = this.set("appliedPolicyVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppliedPolicyVersion: Self = this.set("appliedPolicyVersion", js.undefined)
+    @scala.inline
+    def setAppliedState(value: String): Self = this.set("appliedState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppliedState: Self = this.set("appliedState", js.undefined)
+    @scala.inline
+    def setDeviceSettings(value: SchemaDeviceSettings): Self = this.set("deviceSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceSettings: Self = this.set("deviceSettings", js.undefined)
+    @scala.inline
+    def setDisabledReason(value: SchemaUserFacingMessage): Self = this.set("disabledReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledReason: Self = this.set("disabledReason", js.undefined)
+    @scala.inline
+    def setDisplaysVarargs(value: SchemaDisplay*): Self = this.set("displays", js.Array(value :_*))
+    @scala.inline
+    def setDisplays(value: js.Array[SchemaDisplay]): Self = this.set("displays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplays: Self = this.set("displays", js.undefined)
+    @scala.inline
+    def setEnrollmentTime(value: String): Self = this.set("enrollmentTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnrollmentTime: Self = this.set("enrollmentTime", js.undefined)
+    @scala.inline
+    def setEnrollmentTokenData(value: String): Self = this.set("enrollmentTokenData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnrollmentTokenData: Self = this.set("enrollmentTokenData", js.undefined)
+    @scala.inline
+    def setEnrollmentTokenName(value: String): Self = this.set("enrollmentTokenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnrollmentTokenName: Self = this.set("enrollmentTokenName", js.undefined)
+    @scala.inline
+    def setHardwareInfo(value: SchemaHardwareInfo): Self = this.set("hardwareInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHardwareInfo: Self = this.set("hardwareInfo", js.undefined)
+    @scala.inline
+    def setHardwareStatusSamplesVarargs(value: SchemaHardwareStatus*): Self = this.set("hardwareStatusSamples", js.Array(value :_*))
+    @scala.inline
+    def setHardwareStatusSamples(value: js.Array[SchemaHardwareStatus]): Self = this.set("hardwareStatusSamples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHardwareStatusSamples: Self = this.set("hardwareStatusSamples", js.undefined)
+    @scala.inline
+    def setLastPolicyComplianceReportTime(value: String): Self = this.set("lastPolicyComplianceReportTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastPolicyComplianceReportTime: Self = this.set("lastPolicyComplianceReportTime", js.undefined)
+    @scala.inline
+    def setLastPolicySyncTime(value: String): Self = this.set("lastPolicySyncTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastPolicySyncTime: Self = this.set("lastPolicySyncTime", js.undefined)
+    @scala.inline
+    def setLastStatusReportTime(value: String): Self = this.set("lastStatusReportTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStatusReportTime: Self = this.set("lastStatusReportTime", js.undefined)
+    @scala.inline
+    def setManagementMode(value: String): Self = this.set("managementMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagementMode: Self = this.set("managementMode", js.undefined)
+    @scala.inline
+    def setMemoryEventsVarargs(value: SchemaMemoryEvent*): Self = this.set("memoryEvents", js.Array(value :_*))
+    @scala.inline
+    def setMemoryEvents(value: js.Array[SchemaMemoryEvent]): Self = this.set("memoryEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryEvents: Self = this.set("memoryEvents", js.undefined)
+    @scala.inline
+    def setMemoryInfo(value: SchemaMemoryInfo): Self = this.set("memoryInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryInfo: Self = this.set("memoryInfo", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetworkInfo(value: SchemaNetworkInfo): Self = this.set("networkInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInfo: Self = this.set("networkInfo", js.undefined)
+    @scala.inline
+    def setNonComplianceDetailsVarargs(value: SchemaNonComplianceDetail*): Self = this.set("nonComplianceDetails", js.Array(value :_*))
+    @scala.inline
+    def setNonComplianceDetails(value: js.Array[SchemaNonComplianceDetail]): Self = this.set("nonComplianceDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonComplianceDetails: Self = this.set("nonComplianceDetails", js.undefined)
+    @scala.inline
+    def setPolicyCompliant(value: Boolean): Self = this.set("policyCompliant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyCompliant: Self = this.set("policyCompliant", js.undefined)
+    @scala.inline
+    def setPolicyName(value: String): Self = this.set("policyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyName: Self = this.set("policyName", js.undefined)
+    @scala.inline
+    def setPowerManagementEventsVarargs(value: SchemaPowerManagementEvent*): Self = this.set("powerManagementEvents", js.Array(value :_*))
+    @scala.inline
+    def setPowerManagementEvents(value: js.Array[SchemaPowerManagementEvent]): Self = this.set("powerManagementEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePowerManagementEvents: Self = this.set("powerManagementEvents", js.undefined)
+    @scala.inline
+    def setPreviousDeviceNamesVarargs(value: String*): Self = this.set("previousDeviceNames", js.Array(value :_*))
+    @scala.inline
+    def setPreviousDeviceNames(value: js.Array[String]): Self = this.set("previousDeviceNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousDeviceNames: Self = this.set("previousDeviceNames", js.undefined)
+    @scala.inline
+    def setSoftwareInfo(value: SchemaSoftwareInfo): Self = this.set("softwareInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSoftwareInfo: Self = this.set("softwareInfo", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setUser(value: SchemaUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+    @scala.inline
+    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("userName", js.undefined)
+  }
+  
 }
 

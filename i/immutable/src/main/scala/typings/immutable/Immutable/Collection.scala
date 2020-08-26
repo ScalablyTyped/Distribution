@@ -119,6 +119,11 @@ trait Collection[K, V] extends ValueObject {
   def find(predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean]): js.UndefOr[V] = js.native
   def find(
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
+    context: js.UndefOr[scala.Nothing],
+    notSetValue: V
+  ): js.UndefOr[V] = js.native
+  def find(
+    predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): js.UndefOr[V] = js.native
   def find(
@@ -130,6 +135,11 @@ trait Collection[K, V] extends ValueObject {
     * Returns the first [key, value] entry for which the `predicate` returns true.
     */
   def findEntry(predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean]): js.UndefOr[js.Tuple2[K, V]] = js.native
+  def findEntry(
+    predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
+    context: js.UndefOr[scala.Nothing],
+    notSetValue: V
+  ): js.UndefOr[js.Tuple2[K, V]] = js.native
   def findEntry(
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
@@ -155,6 +165,11 @@ trait Collection[K, V] extends ValueObject {
   def findLast(predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean]): js.UndefOr[V] = js.native
   def findLast(
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
+    context: js.UndefOr[scala.Nothing],
+    notSetValue: V
+  ): js.UndefOr[V] = js.native
+  def findLast(
+    predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
   ): js.UndefOr[V] = js.native
   def findLast(
@@ -169,6 +184,11 @@ trait Collection[K, V] extends ValueObject {
     * Note: `predicate` will be called for each entry in reverse.
     */
   def findLastEntry(predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean]): js.UndefOr[js.Tuple2[K, V]] = js.native
+  def findLastEntry(
+    predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
+    context: js.UndefOr[scala.Nothing],
+    notSetValue: V
+  ): js.UndefOr[js.Tuple2[K, V]] = js.native
   def findLastEntry(
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Boolean],
     context: js.Any
@@ -566,6 +586,7 @@ trait Collection[K, V] extends ValueObject {
     * will return itself.
     */
   def slice(): this.type = js.native
+  def slice(begin: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def slice(begin: Double): this.type = js.native
   def slice(begin: Double, end: Double): this.type = js.native
   /**

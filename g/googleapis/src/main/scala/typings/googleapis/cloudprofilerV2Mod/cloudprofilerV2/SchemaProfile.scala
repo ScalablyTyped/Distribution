@@ -48,22 +48,46 @@ trait SchemaProfile extends js.Object {
 
 object SchemaProfile {
   @scala.inline
-  def apply(
-    deployment: SchemaDeployment = null,
-    duration: String = null,
-    labels: StringDictionary[String] = null,
-    name: String = null,
-    profileBytes: String = null,
-    profileType: String = null
-  ): SchemaProfile = {
+  def apply(): SchemaProfile = {
     val __obj = js.Dynamic.literal()
-    if (deployment != null) __obj.updateDynamic("deployment")(deployment.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (profileBytes != null) __obj.updateDynamic("profileBytes")(profileBytes.asInstanceOf[js.Any])
-    if (profileType != null) __obj.updateDynamic("profileType")(profileType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProfile]
   }
+  @scala.inline
+  implicit class SchemaProfileOps[Self <: SchemaProfile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeployment(value: SchemaDeployment): Self = this.set("deployment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployment: Self = this.set("deployment", js.undefined)
+    @scala.inline
+    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProfileBytes(value: String): Self = this.set("profileBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileBytes: Self = this.set("profileBytes", js.undefined)
+    @scala.inline
+    def setProfileType(value: String): Self = this.set("profileType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileType: Self = this.set("profileType", js.undefined)
+  }
+  
 }
 

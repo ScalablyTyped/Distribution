@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SimpleCommandState")
 @js.native
 class SimpleCommandState ()
-  extends typings.devexpressWeb.SimpleCommandState {
-  /**
-    * Specifies a command availability.
-    */
-  /* CompleteClass */
-  override var enabled: Boolean = js.native
-  /**
-    * Specifies a command visibility.
-    */
-  /* CompleteClass */
-  override var visible: Boolean = js.native
-}
+  extends typings.devexpressWeb.SimpleCommandState
 

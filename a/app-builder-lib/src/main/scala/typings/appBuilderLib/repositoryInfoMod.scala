@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object repositoryInfoMod extends js.Object {
   def getRepositoryInfo(projectDir: String): js.Promise[SourceRepositoryInfo | Null] = js.native
+  def getRepositoryInfo(projectDir: String, metadata: js.UndefOr[scala.Nothing], devMetadata: Metadata): js.Promise[SourceRepositoryInfo | Null] = js.native
   def getRepositoryInfo(projectDir: String, metadata: Metadata): js.Promise[SourceRepositoryInfo | Null] = js.native
   def getRepositoryInfo(projectDir: String, metadata: Metadata, devMetadata: Metadata): js.Promise[SourceRepositoryInfo | Null] = js.native
 }

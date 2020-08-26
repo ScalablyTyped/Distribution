@@ -30,20 +30,42 @@ trait ListRecordHistoryInput extends js.Object {
 
 object ListRecordHistoryInput {
   @scala.inline
-  def apply(
-    AcceptLanguage: AcceptLanguage = null,
-    AccessLevelFilter: AccessLevelFilter = null,
-    PageSize: js.UndefOr[PageSize] = js.undefined,
-    PageToken: PageToken = null,
-    SearchFilter: ListRecordHistorySearchFilter = null
-  ): ListRecordHistoryInput = {
+  def apply(): ListRecordHistoryInput = {
     val __obj = js.Dynamic.literal()
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (AccessLevelFilter != null) __obj.updateDynamic("AccessLevelFilter")(AccessLevelFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
-    if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
-    if (SearchFilter != null) __obj.updateDynamic("SearchFilter")(SearchFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRecordHistoryInput]
   }
+  @scala.inline
+  implicit class ListRecordHistoryInputOps[Self <: ListRecordHistoryInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    @scala.inline
+    def setAccessLevelFilter(value: AccessLevelFilter): Self = this.set("AccessLevelFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessLevelFilter: Self = this.set("AccessLevelFilter", js.undefined)
+    @scala.inline
+    def setPageSize(value: PageSize): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: PageToken): Self = this.set("PageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("PageToken", js.undefined)
+    @scala.inline
+    def setSearchFilter(value: ListRecordHistorySearchFilter): Self = this.set("SearchFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchFilter: Self = this.set("SearchFilter", js.undefined)
+  }
+  
 }
 

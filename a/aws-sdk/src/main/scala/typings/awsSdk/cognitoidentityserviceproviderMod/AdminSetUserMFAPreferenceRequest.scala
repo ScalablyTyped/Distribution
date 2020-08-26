@@ -26,16 +26,34 @@ trait AdminSetUserMFAPreferenceRequest extends js.Object {
 
 object AdminSetUserMFAPreferenceRequest {
   @scala.inline
-  def apply(
-    UserPoolId: UserPoolIdType,
-    Username: UsernameType,
-    SMSMfaSettings: SMSMfaSettingsType = null,
-    SoftwareTokenMfaSettings: SoftwareTokenMfaSettingsType = null
-  ): AdminSetUserMFAPreferenceRequest = {
+  def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminSetUserMFAPreferenceRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (SMSMfaSettings != null) __obj.updateDynamic("SMSMfaSettings")(SMSMfaSettings.asInstanceOf[js.Any])
-    if (SoftwareTokenMfaSettings != null) __obj.updateDynamic("SoftwareTokenMfaSettings")(SoftwareTokenMfaSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminSetUserMFAPreferenceRequest]
   }
+  @scala.inline
+  implicit class AdminSetUserMFAPreferenceRequestOps[Self <: AdminSetUserMFAPreferenceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSMSMfaSettings(value: SMSMfaSettingsType): Self = this.set("SMSMfaSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSMSMfaSettings: Self = this.set("SMSMfaSettings", js.undefined)
+    @scala.inline
+    def setSoftwareTokenMfaSettings(value: SoftwareTokenMfaSettingsType): Self = this.set("SoftwareTokenMfaSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSoftwareTokenMfaSettings: Self = this.set("SoftwareTokenMfaSettings", js.undefined)
+  }
+  
 }
 

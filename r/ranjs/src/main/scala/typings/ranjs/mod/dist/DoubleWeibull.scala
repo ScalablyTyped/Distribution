@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class DoubleWeibull ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.DoubleWeibull] {
   def this(lambda: Double) = this()
+  def this(lambda: js.UndefOr[scala.Nothing], k: Double) = this()
   def this(lambda: Double, k: Double) = this()
 }
 

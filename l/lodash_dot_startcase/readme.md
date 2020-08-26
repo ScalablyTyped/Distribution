@@ -11,8 +11,8 @@ The lodash method `_.startCase` exported as a module.
 | Full name          | lodash.startcase |
 | Keywords           | lodash-modularized, startcase |
 | # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 5619499 |
+| # dependents       | 83 |
+| # downloads        | 5363187 |
 | # stars            | 0 |
 
 ## Links

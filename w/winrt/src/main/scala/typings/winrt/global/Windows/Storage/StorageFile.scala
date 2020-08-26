@@ -4,9 +4,7 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.StreamedFileDataRequestedHandler
-import typings.winrt.Windows.Storage.Streams.IInputStream
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
-import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,12 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Storage.StorageFile")
 @js.native
 class StorageFile ()
-  extends typings.winrt.Windows.Storage.StorageFile {
-  /* CompleteClass */
-  override def openReadAsync(): IAsyncOperation[IRandomAccessStreamWithContentType] = js.native
-  /* CompleteClass */
-  override def openSequentialReadAsync(): IAsyncOperation[IInputStream] = js.native
-}
+  extends typings.winrt.Windows.Storage.StorageFile
 
 /* static members */
 @JSGlobal("Windows.Storage.StorageFile")

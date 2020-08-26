@@ -14,6 +14,7 @@ class ApolloError protected ()
      with /* key */ StringDictionary[js.Any] {
   def this(message: String) = this()
   def this(message: String, code: String) = this()
+  def this(message: String, code: js.UndefOr[scala.Nothing], extensions: Record[String, _]) = this()
   def this(message: String, code: String, extensions: Record[String, _]) = this()
   @JSName("extensions")
   var extensions_ApolloError: Record[String, _] = js.native

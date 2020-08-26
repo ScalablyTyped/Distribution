@@ -94,9 +94,9 @@ trait DistributionArgs extends js.Object {
     */
   val retainOnDelete: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The SSL
     * configuration for this distribution (maximum
@@ -114,7 +114,7 @@ trait DistributionArgs extends js.Object {
     * requests, the Id of the AWS WAF web ACL that is associated with the
     * distribution. The WAF Web ACL must exist in the WAF Global (CloudFront)
     * region and the credentials configuring this argument must have
-    * `waf:GetWebACL` permissions assigned.
+    * `waf:GetWebACL` permissions assigned. If using WAFv2, provide the ARN of the web ACL.
     */
   val webAclId: js.UndefOr[Input[String]] = js.native
 }
@@ -126,38 +126,99 @@ object DistributionArgs {
     enabled: Input[Boolean],
     origins: Input[js.Array[Input[DistributionOrigin]]],
     restrictions: Input[DistributionRestrictions],
-    viewerCertificate: Input[DistributionViewerCertificate],
-    aliases: Input[js.Array[Input[String]]] = null,
-    comment: Input[String] = null,
-    customErrorResponses: Input[js.Array[Input[DistributionCustomErrorResponse]]] = null,
-    defaultRootObject: Input[String] = null,
-    httpVersion: Input[String] = null,
-    isIpv6Enabled: Input[Boolean] = null,
-    loggingConfig: Input[DistributionLoggingConfig] = null,
-    orderedCacheBehaviors: Input[js.Array[Input[DistributionOrderedCacheBehavior]]] = null,
-    originGroups: Input[js.Array[Input[DistributionOriginGroup]]] = null,
-    priceClass: Input[String] = null,
-    retainOnDelete: Input[Boolean] = null,
-    tags: Input[StringDictionary[_]] = null,
-    waitForDeployment: Input[Boolean] = null,
-    webAclId: Input[String] = null
+    viewerCertificate: Input[DistributionViewerCertificate]
   ): DistributionArgs = {
     val __obj = js.Dynamic.literal(defaultCacheBehavior = defaultCacheBehavior.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any], restrictions = restrictions.asInstanceOf[js.Any], viewerCertificate = viewerCertificate.asInstanceOf[js.Any])
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (customErrorResponses != null) __obj.updateDynamic("customErrorResponses")(customErrorResponses.asInstanceOf[js.Any])
-    if (defaultRootObject != null) __obj.updateDynamic("defaultRootObject")(defaultRootObject.asInstanceOf[js.Any])
-    if (httpVersion != null) __obj.updateDynamic("httpVersion")(httpVersion.asInstanceOf[js.Any])
-    if (isIpv6Enabled != null) __obj.updateDynamic("isIpv6Enabled")(isIpv6Enabled.asInstanceOf[js.Any])
-    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
-    if (orderedCacheBehaviors != null) __obj.updateDynamic("orderedCacheBehaviors")(orderedCacheBehaviors.asInstanceOf[js.Any])
-    if (originGroups != null) __obj.updateDynamic("originGroups")(originGroups.asInstanceOf[js.Any])
-    if (priceClass != null) __obj.updateDynamic("priceClass")(priceClass.asInstanceOf[js.Any])
-    if (retainOnDelete != null) __obj.updateDynamic("retainOnDelete")(retainOnDelete.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (waitForDeployment != null) __obj.updateDynamic("waitForDeployment")(waitForDeployment.asInstanceOf[js.Any])
-    if (webAclId != null) __obj.updateDynamic("webAclId")(webAclId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionArgs]
   }
+  @scala.inline
+  implicit class DistributionArgsOps[Self <: DistributionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultCacheBehavior(value: Input[DistributionDefaultCacheBehavior]): Self = this.set("defaultCacheBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOriginsVarargs(value: Input[DistributionOrigin]*): Self = this.set("origins", js.Array(value :_*))
+    @scala.inline
+    def setOrigins(value: Input[js.Array[Input[DistributionOrigin]]]): Self = this.set("origins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRestrictions(value: Input[DistributionRestrictions]): Self = this.set("restrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setViewerCertificate(value: Input[DistributionViewerCertificate]): Self = this.set("viewerCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAliasesVarargs(value: Input[String]*): Self = this.set("aliases", js.Array(value :_*))
+    @scala.inline
+    def setAliases(value: Input[js.Array[Input[String]]]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("aliases", js.undefined)
+    @scala.inline
+    def setComment(value: Input[String]): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setCustomErrorResponsesVarargs(value: Input[DistributionCustomErrorResponse]*): Self = this.set("customErrorResponses", js.Array(value :_*))
+    @scala.inline
+    def setCustomErrorResponses(value: Input[js.Array[Input[DistributionCustomErrorResponse]]]): Self = this.set("customErrorResponses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomErrorResponses: Self = this.set("customErrorResponses", js.undefined)
+    @scala.inline
+    def setDefaultRootObject(value: Input[String]): Self = this.set("defaultRootObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRootObject: Self = this.set("defaultRootObject", js.undefined)
+    @scala.inline
+    def setHttpVersion(value: Input[String]): Self = this.set("httpVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpVersion: Self = this.set("httpVersion", js.undefined)
+    @scala.inline
+    def setIsIpv6Enabled(value: Input[Boolean]): Self = this.set("isIpv6Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsIpv6Enabled: Self = this.set("isIpv6Enabled", js.undefined)
+    @scala.inline
+    def setLoggingConfig(value: Input[DistributionLoggingConfig]): Self = this.set("loggingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfig: Self = this.set("loggingConfig", js.undefined)
+    @scala.inline
+    def setOrderedCacheBehaviorsVarargs(value: Input[DistributionOrderedCacheBehavior]*): Self = this.set("orderedCacheBehaviors", js.Array(value :_*))
+    @scala.inline
+    def setOrderedCacheBehaviors(value: Input[js.Array[Input[DistributionOrderedCacheBehavior]]]): Self = this.set("orderedCacheBehaviors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderedCacheBehaviors: Self = this.set("orderedCacheBehaviors", js.undefined)
+    @scala.inline
+    def setOriginGroupsVarargs(value: Input[DistributionOriginGroup]*): Self = this.set("originGroups", js.Array(value :_*))
+    @scala.inline
+    def setOriginGroups(value: Input[js.Array[Input[DistributionOriginGroup]]]): Self = this.set("originGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginGroups: Self = this.set("originGroups", js.undefined)
+    @scala.inline
+    def setPriceClass(value: Input[String]): Self = this.set("priceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriceClass: Self = this.set("priceClass", js.undefined)
+    @scala.inline
+    def setRetainOnDelete(value: Input[Boolean]): Self = this.set("retainOnDelete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetainOnDelete: Self = this.set("retainOnDelete", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setWaitForDeployment(value: Input[Boolean]): Self = this.set("waitForDeployment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForDeployment: Self = this.set("waitForDeployment", js.undefined)
+    @scala.inline
+    def setWebAclId(value: Input[String]): Self = this.set("webAclId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebAclId: Self = this.set("webAclId", js.undefined)
+  }
+  
 }
 

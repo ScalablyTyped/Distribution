@@ -29,16 +29,34 @@ trait SchemaPivotGroupRule extends js.Object {
 
 object SchemaPivotGroupRule {
   @scala.inline
-  def apply(
-    dateTimeRule: SchemaDateTimeRule = null,
-    histogramRule: SchemaHistogramRule = null,
-    manualRule: SchemaManualRule = null
-  ): SchemaPivotGroupRule = {
+  def apply(): SchemaPivotGroupRule = {
     val __obj = js.Dynamic.literal()
-    if (dateTimeRule != null) __obj.updateDynamic("dateTimeRule")(dateTimeRule.asInstanceOf[js.Any])
-    if (histogramRule != null) __obj.updateDynamic("histogramRule")(histogramRule.asInstanceOf[js.Any])
-    if (manualRule != null) __obj.updateDynamic("manualRule")(manualRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPivotGroupRule]
   }
+  @scala.inline
+  implicit class SchemaPivotGroupRuleOps[Self <: SchemaPivotGroupRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDateTimeRule(value: SchemaDateTimeRule): Self = this.set("dateTimeRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateTimeRule: Self = this.set("dateTimeRule", js.undefined)
+    @scala.inline
+    def setHistogramRule(value: SchemaHistogramRule): Self = this.set("histogramRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistogramRule: Self = this.set("histogramRule", js.undefined)
+    @scala.inline
+    def setManualRule(value: SchemaManualRule): Self = this.set("manualRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManualRule: Self = this.set("manualRule", js.undefined)
+  }
+  
 }
 

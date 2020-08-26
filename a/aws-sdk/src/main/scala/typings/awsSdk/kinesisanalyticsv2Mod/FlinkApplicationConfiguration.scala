@@ -22,16 +22,34 @@ trait FlinkApplicationConfiguration extends js.Object {
 
 object FlinkApplicationConfiguration {
   @scala.inline
-  def apply(
-    CheckpointConfiguration: CheckpointConfiguration = null,
-    MonitoringConfiguration: MonitoringConfiguration = null,
-    ParallelismConfiguration: ParallelismConfiguration = null
-  ): FlinkApplicationConfiguration = {
+  def apply(): FlinkApplicationConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (CheckpointConfiguration != null) __obj.updateDynamic("CheckpointConfiguration")(CheckpointConfiguration.asInstanceOf[js.Any])
-    if (MonitoringConfiguration != null) __obj.updateDynamic("MonitoringConfiguration")(MonitoringConfiguration.asInstanceOf[js.Any])
-    if (ParallelismConfiguration != null) __obj.updateDynamic("ParallelismConfiguration")(ParallelismConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlinkApplicationConfiguration]
   }
+  @scala.inline
+  implicit class FlinkApplicationConfigurationOps[Self <: FlinkApplicationConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckpointConfiguration(value: CheckpointConfiguration): Self = this.set("CheckpointConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckpointConfiguration: Self = this.set("CheckpointConfiguration", js.undefined)
+    @scala.inline
+    def setMonitoringConfiguration(value: MonitoringConfiguration): Self = this.set("MonitoringConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoringConfiguration: Self = this.set("MonitoringConfiguration", js.undefined)
+    @scala.inline
+    def setParallelismConfiguration(value: ParallelismConfiguration): Self = this.set("ParallelismConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelismConfiguration: Self = this.set("ParallelismConfiguration", js.undefined)
+  }
+  
 }
 

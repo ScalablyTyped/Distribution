@@ -1,8 +1,6 @@
 package typings.makerJs.global.MakerJs.models
 
 import typings.makerJs.MakerJs.IModel
-import typings.makerJs.MakerJs.IPathMap
-import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,11 +35,5 @@ class RoundRectangle protected ()
     * @param radius Corner radius.
     */
   def this(width: Double, height: Double, radius: Double) = this()
-  /* CompleteClass */
-  @JSName("origin")
-  override var origin_RoundRectangle: IPoint = js.native
-  /* CompleteClass */
-  @JSName("paths")
-  override var paths_RoundRectangle: IPathMap = js.native
 }
 

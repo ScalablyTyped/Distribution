@@ -44,61 +44,60 @@ trait Selection extends js.Object {
     cb: /* import warning: importer.ImportType#apply Failed type conversion: @simonwep/selection-js.@simonwep/selection-js.SelectionEvents[E] */ js.Any
   ): this.type = js.native
   @JSName("option")
-  def option_boundaries(name: boundaries): js.Array[String] = js.native
+  def option_boundaries(name: boundaries): js.UndefOr[js.Array[String]] = js.native
   @JSName("option")
-  def option_boundaries(name: boundaries, value: js.Array[String]): js.Array[String] = js.native
+  def option_boundaries(name: boundaries, value: js.UndefOr[js.Array[String]]): js.UndefOr[js.Array[String]] = js.native
   @JSName("option")
-  def option_class(name: `class`): String = js.native
+  def option_class(name: `class`): js.UndefOr[String] = js.native
   @JSName("option")
-  def option_class(name: `class`, value: String): String = js.native
+  def option_class(name: `class`, value: js.UndefOr[String]): js.UndefOr[String] = js.native
   @JSName("option")
-  def option_disableTouch(name: disableTouch): Boolean = js.native
+  def option_disableTouch(name: disableTouch): js.UndefOr[Boolean] = js.native
   @JSName("option")
-  def option_disableTouch(name: disableTouch, value: Boolean): Boolean = js.native
+  def option_disableTouch(name: disableTouch, value: js.UndefOr[Boolean]): js.UndefOr[Boolean] = js.native
   @JSName("option")
-  def option_frame(name: frame): Node = js.native
+  def option_frame(name: frame): js.UndefOr[Node] = js.native
   @JSName("option")
-  def option_frame(name: frame, value: Node): Node = js.native
+  def option_frame(name: frame, value: js.UndefOr[Node]): js.UndefOr[Node] = js.native
   @JSName("option")
-  def option_manualScrollSpeed(name: manualScrollSpeed): Double = js.native
+  def option_manualScrollSpeed(name: manualScrollSpeed): js.UndefOr[Double] = js.native
   @JSName("option")
-  def option_manualScrollSpeed(name: manualScrollSpeed, value: Double): Double = js.native
+  def option_manualScrollSpeed(name: manualScrollSpeed, value: js.UndefOr[Double]): js.UndefOr[Double] = js.native
   @JSName("option")
-  def option_mode(name: mode): Mode = js.native
+  def option_mode(name: mode): js.UndefOr[Mode] = js.native
   @JSName("option")
-  def option_mode(name: mode, value: Mode): Mode = js.native
+  def option_mode(name: mode, value: js.UndefOr[Mode]): js.UndefOr[Mode] = js.native
   @JSName("option")
-  def option_scrollSpeedDivider(name: scrollSpeedDivider): Double = js.native
+  def option_scrollSpeedDivider(name: scrollSpeedDivider): js.UndefOr[Double] = js.native
   @JSName("option")
-  def option_scrollSpeedDivider(name: scrollSpeedDivider, value: Double): Double = js.native
+  def option_scrollSpeedDivider(name: scrollSpeedDivider, value: js.UndefOr[Double]): js.UndefOr[Double] = js.native
   @JSName("option")
-  def option_selectables(name: selectables): js.Array[String] = js.native
+  def option_selectables(name: selectables): js.UndefOr[js.Array[String]] = js.native
   @JSName("option")
-  def option_selectables(name: selectables, value: js.Array[String]): js.Array[String] = js.native
+  def option_selectables(name: selectables, value: js.UndefOr[js.Array[String]]): js.UndefOr[js.Array[String]] = js.native
   @JSName("option")
-  def option_selectionAreaContainer(name: selectionAreaContainer): String | HTMLElement | (js.Array[String | HTMLElement]) = js.native
+  def option_selectionAreaContainer(name: selectionAreaContainer): js.UndefOr[String | HTMLElement | (js.Array[String | HTMLElement])] = js.native
   @JSName("option")
-  def option_selectionAreaContainer(name: selectionAreaContainer, value: String): String | HTMLElement | (js.Array[String | HTMLElement]) = js.native
+  def option_selectionAreaContainer(
+    name: selectionAreaContainer,
+    value: js.UndefOr[String | HTMLElement | (js.Array[String | HTMLElement])]
+  ): js.UndefOr[String | HTMLElement | (js.Array[String | HTMLElement])] = js.native
   @JSName("option")
-  def option_selectionAreaContainer(name: selectionAreaContainer, value: js.Array[String | HTMLElement]): String | HTMLElement | (js.Array[String | HTMLElement]) = js.native
+  def option_singleClick(name: singleClick): js.UndefOr[Boolean] = js.native
   @JSName("option")
-  def option_selectionAreaContainer(name: selectionAreaContainer, value: HTMLElement): String | HTMLElement | (js.Array[String | HTMLElement]) = js.native
+  def option_singleClick(name: singleClick, value: js.UndefOr[Boolean]): js.UndefOr[Boolean] = js.native
   @JSName("option")
-  def option_singleClick(name: singleClick): Boolean = js.native
+  def option_startThreshold(name: startThreshold): js.UndefOr[Double] = js.native
   @JSName("option")
-  def option_singleClick(name: singleClick, value: Boolean): Boolean = js.native
+  def option_startThreshold(name: startThreshold, value: js.UndefOr[Double]): js.UndefOr[Double] = js.native
   @JSName("option")
-  def option_startThreshold(name: startThreshold): Double = js.native
+  def option_startareas(name: startareas): js.UndefOr[js.Array[String]] = js.native
   @JSName("option")
-  def option_startThreshold(name: startThreshold, value: Double): Double = js.native
+  def option_startareas(name: startareas, value: js.UndefOr[js.Array[String]]): js.UndefOr[js.Array[String]] = js.native
   @JSName("option")
-  def option_startareas(name: startareas): js.Array[String] = js.native
+  def option_tapMode(name: tapMode): js.UndefOr[TapMode] = js.native
   @JSName("option")
-  def option_startareas(name: startareas, value: js.Array[String]): js.Array[String] = js.native
-  @JSName("option")
-  def option_tapMode(name: tapMode): TapMode = js.native
-  @JSName("option")
-  def option_tapMode(name: tapMode, value: TapMode): TapMode = js.native
+  def option_tapMode(name: tapMode, value: js.UndefOr[TapMode]): js.UndefOr[TapMode] = js.native
   def removeFromSelection(el: Element): Unit = js.native
   def resolveSelectables(): Unit = js.native
   @JSName("select")

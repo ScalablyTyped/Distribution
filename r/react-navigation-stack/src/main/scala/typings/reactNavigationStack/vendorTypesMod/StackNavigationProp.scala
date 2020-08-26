@@ -1,7 +1,7 @@
 package typings.reactNavigationStack.vendorTypesMod
 
 import typings.reactNavigation.anon.Key
-import typings.reactNavigation.anon.ParamsP
+import typings.reactNavigation.anon.`2`
 import typings.reactNavigation.mod.NavigationAction
 import typings.reactNavigation.mod.NavigationDispatch
 import typings.reactNavigation.mod.NavigationEventCallback
@@ -19,12 +19,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-navigation.react-navigation.NavigationScreenProp<State, Params> & {push (routeName : string, params ? : react-navigation.react-navigation.NavigationParams, action ? : react-navigation.react-navigation.NavigationNavigateAction): boolean, replace (routeName : string, params ? : react-navigation.react-navigation.NavigationParams, action ? : react-navigation.react-navigation.NavigationNavigateAction): boolean, reset (actions : std.Array<react-navigation.react-navigation.NavigationAction>, index : number): boolean, pop (n ? : number, params ? : {  immediate ? :boolean}): boolean, popToTop (params ? : {  immediate ? :boolean}): boolean, addListener (event : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.NavigationStackEventName, callback : react-navigation.react-navigation.NavigationEventCallback): react-navigation.react-navigation.NavigationEventSubscription} */
+/* Inlined react-navigation.react-navigation.NavigationScreenProp<State, Params> & {push (routeName : string, params : react-navigation.react-navigation.NavigationParams | undefined, action : react-navigation.react-navigation.NavigationNavigateAction | undefined): boolean, replace (routeName : string, params : react-navigation.react-navigation.NavigationParams | undefined, action : react-navigation.react-navigation.NavigationNavigateAction | undefined): boolean, reset (actions : std.Array<react-navigation.react-navigation.NavigationAction>, index : number): boolean, pop (n : number | undefined, params : {  immediate :boolean | undefined} | undefined): boolean, popToTop (params : {  immediate :boolean | undefined} | undefined): boolean, addListener (event : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.NavigationStackEventName, callback : react-navigation.react-navigation.NavigationEventCallback): react-navigation.react-navigation.NavigationEventSubscription} */
 @js.native
 trait StackNavigationProp[State, Params] extends js.Object {
   var dispatch: NavigationDispatch = js.native
   var router: js.UndefOr[NavigationRouter[NavigationState, js.Object]] = js.native
-  var state: State with ParamsP[Params] = js.native
+  var state: State with `2`[Params] = js.native
   def addListener(eventName: String, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   def addListener(event: NavigationStackEventName, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   def dangerouslyGetParent(): js.UndefOr[NavigationScreenProp[State, NavigationParams]] = js.native
@@ -48,15 +48,19 @@ trait StackNavigationProp[State, Params] extends js.Object {
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T, action: NavigationAction): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: js.UndefOr[scala.Nothing], action: NavigationAction): Boolean = js.native
   def pop(): Boolean = js.native
+  def pop(n: js.UndefOr[scala.Nothing], params: Immediate): Boolean = js.native
   def pop(n: Double): Boolean = js.native
   def pop(n: Double, params: Immediate): Boolean = js.native
   def popToTop(): Boolean = js.native
   def popToTop(params: Immediate): Boolean = js.native
   def push(routeName: String): Boolean = js.native
+  def push(routeName: String, params: js.UndefOr[scala.Nothing], action: NavigationNavigateAction): Boolean = js.native
   def push(routeName: String, params: NavigationParams): Boolean = js.native
   def push(routeName: String, params: NavigationParams, action: NavigationNavigateAction): Boolean = js.native
   def replace(routeName: String): Boolean = js.native
+  def replace(routeName: String, params: js.UndefOr[scala.Nothing], action: NavigationNavigateAction): Boolean = js.native
   def replace(routeName: String, params: NavigationParams): Boolean = js.native
   def replace(routeName: String, params: NavigationParams, action: NavigationNavigateAction): Boolean = js.native
   def reset(actions: js.Array[NavigationAction], index: Double): Boolean = js.native

@@ -24,6 +24,13 @@ trait HTMLXMLHttpRequest extends js.Object {
   def getAllResponseHeaders(): String = js.native
   def getResponseHeader(bstrHeader: String): String = js.native
   def open(bstrMethod: String, bstrURL: String, varAsync: js.Any): Unit = js.native
+  def open(
+    bstrMethod: String,
+    bstrURL: String,
+    varAsync: js.Any,
+    varUser: js.UndefOr[scala.Nothing],
+    varPassword: js.Any
+  ): Unit = js.native
   def open(bstrMethod: String, bstrURL: String, varAsync: js.Any, varUser: js.Any): Unit = js.native
   def open(bstrMethod: String, bstrURL: String, varAsync: js.Any, varUser: js.Any, varPassword: js.Any): Unit = js.native
   def removeEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native

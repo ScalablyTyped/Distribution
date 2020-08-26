@@ -10,9 +10,9 @@ React Apollo `graphql` higher-order component.
 | ------------------ | :-------------: |
 | Full name          | @apollo/react-hoc |
 | Keywords           | apollo, graphql, react, hoc |
-| # releases         | 21 |
-| # dependents       | 7 |
-| # downloads        | 3578951 |
+| # releases         | 20 |
+| # dependents       | 8 |
+| # downloads        | 4078898 |
 | # stars            | 0 |
 
 ## Links

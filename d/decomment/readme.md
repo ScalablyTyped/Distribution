@@ -12,7 +12,7 @@ Removes comments from JSON/JavaScript, CSS/HTML, CPP/H, etc.
 | Keywords           | remove comments, JavaScript, JSON, CSS, HTML, CPP, C++, Text |
 | # releases         | 2 |
 | # dependents       | 36 |
-| # downloads        | 1082637 |
+| # downloads        | 1535482 |
 | # stars            | 5 |
 
 ## Links

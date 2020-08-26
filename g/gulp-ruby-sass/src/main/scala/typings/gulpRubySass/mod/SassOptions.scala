@@ -9,89 +9,150 @@ import scala.scalajs.js.annotation._
   * Options are converted from dashed to camelCase
   * @interface SassOptions
   */
+@js.native
 trait SassOptions extends js.Object {
-  var cacheLocation: js.UndefOr[String] = js.undefined
-  var check: js.UndefOr[Boolean] = js.undefined
-  var compass: js.UndefOr[Boolean] = js.undefined
-  var debugInfo: js.UndefOr[Boolean] = js.undefined
-  var defaultEncoding: js.UndefOr[String] = js.undefined
-  var force: js.UndefOr[Boolean] = js.undefined
-  var interactive: js.UndefOr[Boolean] = js.undefined
-  var lineComments: js.UndefOr[Boolean] = js.undefined
-  var lineNumbers: js.UndefOr[Boolean] = js.undefined
-  var loadPath: js.UndefOr[String | js.Array[String]] = js.undefined
-  var noCache: js.UndefOr[Boolean] = js.undefined
-  var precision: js.UndefOr[Double] = js.undefined
-  var quiet: js.UndefOr[Boolean] = js.undefined
-  var require: js.UndefOr[String] = js.undefined
-  var scss: js.UndefOr[Boolean] = js.undefined
+  var cacheLocation: js.UndefOr[String] = js.native
+  var check: js.UndefOr[Boolean] = js.native
+  var compass: js.UndefOr[Boolean] = js.native
+  var debugInfo: js.UndefOr[Boolean] = js.native
+  var defaultEncoding: js.UndefOr[String] = js.native
+  var force: js.UndefOr[Boolean] = js.native
+  var interactive: js.UndefOr[Boolean] = js.native
+  var lineComments: js.UndefOr[Boolean] = js.native
+  var lineNumbers: js.UndefOr[Boolean] = js.native
+  var loadPath: js.UndefOr[String | js.Array[String]] = js.native
+  var noCache: js.UndefOr[Boolean] = js.native
+  var precision: js.UndefOr[Double] = js.native
+  var quiet: js.UndefOr[Boolean] = js.native
+  var require: js.UndefOr[String] = js.native
+  var scss: js.UndefOr[Boolean] = js.native
   // Actually, there should be a string. However due to ts spec, overriding member should be the same type or a subtype.
   // http://stackoverflow.com/questions/19605557/incompatible-static-properties-in-three-d-ts-with-latest-typescript
   // We need Options.soucemap to be boolean, so here 'any' is used instead of string.
-  var sourcemap: js.UndefOr[js.Any] = js.undefined
-  var stdin: js.UndefOr[Boolean] = js.undefined
-  var stopOnError: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[String] = js.undefined
-  var trace: js.UndefOr[Boolean] = js.undefined
-  var unixNewlines: js.UndefOr[Boolean] = js.undefined
-  var update: js.UndefOr[String] = js.undefined
+  var sourcemap: js.UndefOr[js.Any] = js.native
+  var stdin: js.UndefOr[Boolean] = js.native
+  var stopOnError: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[String] = js.native
+  var trace: js.UndefOr[Boolean] = js.native
+  var unixNewlines: js.UndefOr[Boolean] = js.native
+  var update: js.UndefOr[String] = js.native
   // All listed below options are acceptable by the sass executable and potentially may be used from js.
   // However I doubt are there cases when it's meaningful
-  var watch: js.UndefOr[String] = js.undefined
+  var watch: js.UndefOr[String] = js.native
 }
 
 object SassOptions {
   @scala.inline
-  def apply(
-    cacheLocation: String = null,
-    check: js.UndefOr[Boolean] = js.undefined,
-    compass: js.UndefOr[Boolean] = js.undefined,
-    debugInfo: js.UndefOr[Boolean] = js.undefined,
-    defaultEncoding: String = null,
-    force: js.UndefOr[Boolean] = js.undefined,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    lineComments: js.UndefOr[Boolean] = js.undefined,
-    lineNumbers: js.UndefOr[Boolean] = js.undefined,
-    loadPath: String | js.Array[String] = null,
-    noCache: js.UndefOr[Boolean] = js.undefined,
-    precision: js.UndefOr[Double] = js.undefined,
-    quiet: js.UndefOr[Boolean] = js.undefined,
-    require: String = null,
-    scss: js.UndefOr[Boolean] = js.undefined,
-    sourcemap: js.Any = null,
-    stdin: js.UndefOr[Boolean] = js.undefined,
-    stopOnError: js.UndefOr[Boolean] = js.undefined,
-    style: String = null,
-    trace: js.UndefOr[Boolean] = js.undefined,
-    unixNewlines: js.UndefOr[Boolean] = js.undefined,
-    update: String = null,
-    watch: String = null
-  ): SassOptions = {
+  def apply(): SassOptions = {
     val __obj = js.Dynamic.literal()
-    if (cacheLocation != null) __obj.updateDynamic("cacheLocation")(cacheLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(compass)) __obj.updateDynamic("compass")(compass.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugInfo)) __obj.updateDynamic("debugInfo")(debugInfo.get.asInstanceOf[js.Any])
-    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineComments)) __obj.updateDynamic("lineComments")(lineComments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers.get.asInstanceOf[js.Any])
-    if (loadPath != null) __obj.updateDynamic("loadPath")(loadPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
-    if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
-    if (!js.isUndefined(scss)) __obj.updateDynamic("scss")(scss.get.asInstanceOf[js.Any])
-    if (sourcemap != null) __obj.updateDynamic("sourcemap")(sourcemap.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdin)) __obj.updateDynamic("stdin")(stdin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopOnError)) __obj.updateDynamic("stopOnError")(stopOnError.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unixNewlines)) __obj.updateDynamic("unixNewlines")(unixNewlines.get.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
-    if (watch != null) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[SassOptions]
   }
+  @scala.inline
+  implicit class SassOptionsOps[Self <: SassOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheLocation(value: String): Self = this.set("cacheLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheLocation: Self = this.set("cacheLocation", js.undefined)
+    @scala.inline
+    def setCheck(value: Boolean): Self = this.set("check", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheck: Self = this.set("check", js.undefined)
+    @scala.inline
+    def setCompass(value: Boolean): Self = this.set("compass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompass: Self = this.set("compass", js.undefined)
+    @scala.inline
+    def setDebugInfo(value: Boolean): Self = this.set("debugInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugInfo: Self = this.set("debugInfo", js.undefined)
+    @scala.inline
+    def setDefaultEncoding(value: String): Self = this.set("defaultEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEncoding: Self = this.set("defaultEncoding", js.undefined)
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+    @scala.inline
+    def setInteractive(value: Boolean): Self = this.set("interactive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteractive: Self = this.set("interactive", js.undefined)
+    @scala.inline
+    def setLineComments(value: Boolean): Self = this.set("lineComments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineComments: Self = this.set("lineComments", js.undefined)
+    @scala.inline
+    def setLineNumbers(value: Boolean): Self = this.set("lineNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineNumbers: Self = this.set("lineNumbers", js.undefined)
+    @scala.inline
+    def setLoadPathVarargs(value: String*): Self = this.set("loadPath", js.Array(value :_*))
+    @scala.inline
+    def setLoadPath(value: String | js.Array[String]): Self = this.set("loadPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadPath: Self = this.set("loadPath", js.undefined)
+    @scala.inline
+    def setNoCache(value: Boolean): Self = this.set("noCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoCache: Self = this.set("noCache", js.undefined)
+    @scala.inline
+    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+    @scala.inline
+    def setQuiet(value: Boolean): Self = this.set("quiet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuiet: Self = this.set("quiet", js.undefined)
+    @scala.inline
+    def setRequire(value: String): Self = this.set("require", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequire: Self = this.set("require", js.undefined)
+    @scala.inline
+    def setScss(value: Boolean): Self = this.set("scss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScss: Self = this.set("scss", js.undefined)
+    @scala.inline
+    def setSourcemap(value: js.Any): Self = this.set("sourcemap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcemap: Self = this.set("sourcemap", js.undefined)
+    @scala.inline
+    def setStdin(value: Boolean): Self = this.set("stdin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdin: Self = this.set("stdin", js.undefined)
+    @scala.inline
+    def setStopOnError(value: Boolean): Self = this.set("stopOnError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopOnError: Self = this.set("stopOnError", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTrace(value: Boolean): Self = this.set("trace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrace: Self = this.set("trace", js.undefined)
+    @scala.inline
+    def setUnixNewlines(value: Boolean): Self = this.set("unixNewlines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnixNewlines: Self = this.set("unixNewlines", js.undefined)
+    @scala.inline
+    def setUpdate(value: String): Self = this.set("update", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+    @scala.inline
+    def setWatch(value: String): Self = this.set("watch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatch: Self = this.set("watch", js.undefined)
+  }
+  
 }
 

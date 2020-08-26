@@ -16,6 +16,12 @@ class Instrumenter () extends js.Object {
   var opts: InstrumenterOptions = js.native
   var sourceMap: RawSourceMap | Null = js.native
   def instrument(code: String, filenameOrCallback: String): Unit = js.native
+  def instrument(
+    code: String,
+    filenameOrCallback: String,
+    callback: js.UndefOr[scala.Nothing],
+    inputSourceMap: RawSourceMap
+  ): Unit = js.native
   def instrument(code: String, filenameOrCallback: String, callback: InstrumenterCallback): Unit = js.native
   def instrument(
     code: String,
@@ -24,6 +30,12 @@ class Instrumenter () extends js.Object {
     inputSourceMap: RawSourceMap
   ): Unit = js.native
   def instrument(code: String, filenameOrCallback: InstrumenterCallback): Unit = js.native
+  def instrument(
+    code: String,
+    filenameOrCallback: InstrumenterCallback,
+    callback: js.UndefOr[scala.Nothing],
+    inputSourceMap: RawSourceMap
+  ): Unit = js.native
   def instrument(code: String, filenameOrCallback: InstrumenterCallback, callback: InstrumenterCallback): Unit = js.native
   def instrument(
     code: String,

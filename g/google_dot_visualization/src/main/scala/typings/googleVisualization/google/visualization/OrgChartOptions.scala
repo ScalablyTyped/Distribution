@@ -4,41 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrgChartOptions extends js.Object {
-  var allowCollapse: js.UndefOr[Boolean] = js.undefined
-  var allowHtml: js.UndefOr[Boolean] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var nodeClass: js.UndefOr[String] = js.undefined
-  var selectedNodeClass: js.UndefOr[String] = js.undefined
-  var selectionColor: js.UndefOr[String] = js.undefined
+  var allowCollapse: js.UndefOr[Boolean] = js.native
+  var allowHtml: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[String] = js.native
+  var nodeClass: js.UndefOr[String] = js.native
+  var selectedNodeClass: js.UndefOr[String] = js.native
+  var selectionColor: js.UndefOr[String] = js.native
   /**
     * Chart size
     * @type {('small'|'medium'|'large')}
     * @default 'medium'
     */
-  var size: js.UndefOr[String] = js.undefined
+  var size: js.UndefOr[String] = js.native
 }
 
 object OrgChartOptions {
   @scala.inline
-  def apply(
-    allowCollapse: js.UndefOr[Boolean] = js.undefined,
-    allowHtml: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    nodeClass: String = null,
-    selectedNodeClass: String = null,
-    selectionColor: String = null,
-    size: String = null
-  ): OrgChartOptions = {
+  def apply(): OrgChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCollapse)) __obj.updateDynamic("allowCollapse")(allowCollapse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowHtml)) __obj.updateDynamic("allowHtml")(allowHtml.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (nodeClass != null) __obj.updateDynamic("nodeClass")(nodeClass.asInstanceOf[js.Any])
-    if (selectedNodeClass != null) __obj.updateDynamic("selectedNodeClass")(selectedNodeClass.asInstanceOf[js.Any])
-    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgChartOptions]
   }
+  @scala.inline
+  implicit class OrgChartOptionsOps[Self <: OrgChartOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowCollapse(value: Boolean): Self = this.set("allowCollapse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCollapse: Self = this.set("allowCollapse", js.undefined)
+    @scala.inline
+    def setAllowHtml(value: Boolean): Self = this.set("allowHtml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowHtml: Self = this.set("allowHtml", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setNodeClass(value: String): Self = this.set("nodeClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeClass: Self = this.set("nodeClass", js.undefined)
+    @scala.inline
+    def setSelectedNodeClass(value: String): Self = this.set("selectedNodeClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedNodeClass: Self = this.set("selectedNodeClass", js.undefined)
+    @scala.inline
+    def setSelectionColor(value: String): Self = this.set("selectionColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionColor: Self = this.set("selectionColor", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

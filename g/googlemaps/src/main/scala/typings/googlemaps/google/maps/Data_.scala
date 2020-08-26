@@ -26,6 +26,11 @@ trait Data_ extends MVCObject {
   def getMap(): Map[Element] = js.native
   def getStyle(): StylingFunction | StyleOptions = js.native
   def loadGeoJson(url: String): Unit = js.native
+  def loadGeoJson(
+    url: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* features */ js.Array[Feature], Unit]
+  ): Unit = js.native
   def loadGeoJson(url: String, options: GeoJsonOptions): Unit = js.native
   def loadGeoJson(
     url: String,

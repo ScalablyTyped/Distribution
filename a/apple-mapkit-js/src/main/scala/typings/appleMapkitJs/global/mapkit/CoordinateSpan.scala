@@ -21,27 +21,5 @@ class CoordinateSpan protected ()
     * degrees) to display for the map region.
     */
   def this(latitudeDelta: Double, longitudeDelta: Double) = this()
-  /**
-    * The amount of north-to-south distance (measured in degrees) to display on
-    * the map.
-    */
-  /* CompleteClass */
-  override var latitudeDelta: Double = js.native
-  /**
-    * The amount of east-to-west distance (measured in degrees) to display for
-    * the map region.
-    */
-  /* CompleteClass */
-  override var longitudeDelta: Double = js.native
-  /**
-    * Returns a copy of the coordinate span.
-    */
-  /* CompleteClass */
-  override def copy(): typings.appleMapkitJs.mapkit.CoordinateSpan = js.native
-  /**
-    * Returns a Boolean value that indicates whether two spans are equal.
-    */
-  /* CompleteClass */
-  override def equals(anotherSpan: typings.appleMapkitJs.mapkit.CoordinateSpan): Boolean = js.native
 }
 

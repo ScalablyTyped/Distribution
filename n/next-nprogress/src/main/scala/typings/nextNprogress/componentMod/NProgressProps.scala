@@ -5,27 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NProgressProps extends js.Object {
-  var color: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[PartialNProgressOptions] = js.undefined
-  var showAfterMs: js.UndefOr[Double] = js.undefined
-  var spinner: js.UndefOr[Boolean] = js.undefined
+  var color: js.UndefOr[String] = js.native
+  var options: js.UndefOr[PartialNProgressOptions] = js.native
+  var showAfterMs: js.UndefOr[Double] = js.native
+  var spinner: js.UndefOr[Boolean] = js.native
 }
 
 object NProgressProps {
   @scala.inline
-  def apply(
-    color: String = null,
-    options: PartialNProgressOptions = null,
-    showAfterMs: js.UndefOr[Double] = js.undefined,
-    spinner: js.UndefOr[Boolean] = js.undefined
-  ): NProgressProps = {
+  def apply(): NProgressProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAfterMs)) __obj.updateDynamic("showAfterMs")(showAfterMs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spinner)) __obj.updateDynamic("spinner")(spinner.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NProgressProps]
   }
+  @scala.inline
+  implicit class NProgressPropsOps[Self <: NProgressProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setOptions(value: PartialNProgressOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setShowAfterMs(value: Double): Self = this.set("showAfterMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAfterMs: Self = this.set("showAfterMs", js.undefined)
+    @scala.inline
+    def setSpinner(value: Boolean): Self = this.set("spinner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpinner: Self = this.set("spinner", js.undefined)
+  }
+  
 }
 

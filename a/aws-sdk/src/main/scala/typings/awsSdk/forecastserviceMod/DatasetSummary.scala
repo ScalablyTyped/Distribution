@@ -34,22 +34,46 @@ trait DatasetSummary extends js.Object {
 
 object DatasetSummary {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    DatasetArn: Arn = null,
-    DatasetName: Name = null,
-    DatasetType: DatasetType = null,
-    Domain: Domain = null,
-    LastModificationTime: Timestamp = null
-  ): DatasetSummary = {
+  def apply(): DatasetSummary = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DatasetArn != null) __obj.updateDynamic("DatasetArn")(DatasetArn.asInstanceOf[js.Any])
-    if (DatasetName != null) __obj.updateDynamic("DatasetName")(DatasetName.asInstanceOf[js.Any])
-    if (DatasetType != null) __obj.updateDynamic("DatasetType")(DatasetType.asInstanceOf[js.Any])
-    if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
-    if (LastModificationTime != null) __obj.updateDynamic("LastModificationTime")(LastModificationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetSummary]
   }
+  @scala.inline
+  implicit class DatasetSummaryOps[Self <: DatasetSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDatasetArn(value: Arn): Self = this.set("DatasetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetArn: Self = this.set("DatasetArn", js.undefined)
+    @scala.inline
+    def setDatasetName(value: Name): Self = this.set("DatasetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetName: Self = this.set("DatasetName", js.undefined)
+    @scala.inline
+    def setDatasetType(value: DatasetType): Self = this.set("DatasetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetType: Self = this.set("DatasetType", js.undefined)
+    @scala.inline
+    def setDomain(value: Domain): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("Domain", js.undefined)
+    @scala.inline
+    def setLastModificationTime(value: Timestamp): Self = this.set("LastModificationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModificationTime: Self = this.set("LastModificationTime", js.undefined)
+  }
+  
 }
 

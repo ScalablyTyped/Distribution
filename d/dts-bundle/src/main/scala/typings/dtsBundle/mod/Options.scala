@@ -5,67 +5,116 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var baseDir: js.UndefOr[String] = js.undefined
-  var emitOnIncludedFileNotFound: js.UndefOr[Boolean] = js.undefined
-  var emitOnNoIncludedFileNotFound: js.UndefOr[Boolean] = js.undefined
-  var exclude: js.UndefOr[RegExp | (js.Function2[/* file */ String, /* external */ Boolean, Boolean])] = js.undefined
-  var externals: js.UndefOr[Boolean] = js.undefined
-  var headerPath: js.UndefOr[String] = js.undefined
-  var headerText: js.UndefOr[String] = js.undefined
-  var indent: js.UndefOr[String] = js.undefined
-  var main: String
-  var name: String
-  var newLine: js.UndefOr[String] = js.undefined
-  var out: js.UndefOr[String] = js.undefined
-  var outputAsModuleFolder: js.UndefOr[Boolean] = js.undefined
-  var prefix: js.UndefOr[String] = js.undefined
-  var referenceExternals: js.UndefOr[Boolean] = js.undefined
-  var removeSource: js.UndefOr[Boolean] = js.undefined
-  var separator: js.UndefOr[String] = js.undefined
-  var verbose: js.UndefOr[Boolean] = js.undefined
+  var baseDir: js.UndefOr[String] = js.native
+  var emitOnIncludedFileNotFound: js.UndefOr[Boolean] = js.native
+  var emitOnNoIncludedFileNotFound: js.UndefOr[Boolean] = js.native
+  var exclude: js.UndefOr[RegExp | (js.Function2[/* file */ String, /* external */ Boolean, Boolean])] = js.native
+  var externals: js.UndefOr[Boolean] = js.native
+  var headerPath: js.UndefOr[String] = js.native
+  var headerText: js.UndefOr[String] = js.native
+  var indent: js.UndefOr[String] = js.native
+  var main: String = js.native
+  var name: String = js.native
+  var newLine: js.UndefOr[String] = js.native
+  var out: js.UndefOr[String] = js.native
+  var outputAsModuleFolder: js.UndefOr[Boolean] = js.native
+  var prefix: js.UndefOr[String] = js.native
+  var referenceExternals: js.UndefOr[Boolean] = js.native
+  var removeSource: js.UndefOr[Boolean] = js.native
+  var separator: js.UndefOr[String] = js.native
+  var verbose: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    main: String,
-    name: String,
-    baseDir: String = null,
-    emitOnIncludedFileNotFound: js.UndefOr[Boolean] = js.undefined,
-    emitOnNoIncludedFileNotFound: js.UndefOr[Boolean] = js.undefined,
-    exclude: RegExp | (js.Function2[/* file */ String, /* external */ Boolean, Boolean]) = null,
-    externals: js.UndefOr[Boolean] = js.undefined,
-    headerPath: String = null,
-    headerText: String = null,
-    indent: String = null,
-    newLine: String = null,
-    out: String = null,
-    outputAsModuleFolder: js.UndefOr[Boolean] = js.undefined,
-    prefix: String = null,
-    referenceExternals: js.UndefOr[Boolean] = js.undefined,
-    removeSource: js.UndefOr[Boolean] = js.undefined,
-    separator: String = null,
-    verbose: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(main: String, name: String): Options = {
     val __obj = js.Dynamic.literal(main = main.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
-    if (!js.isUndefined(emitOnIncludedFileNotFound)) __obj.updateDynamic("emitOnIncludedFileNotFound")(emitOnIncludedFileNotFound.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(emitOnNoIncludedFileNotFound)) __obj.updateDynamic("emitOnNoIncludedFileNotFound")(emitOnNoIncludedFileNotFound.get.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(externals)) __obj.updateDynamic("externals")(externals.get.asInstanceOf[js.Any])
-    if (headerPath != null) __obj.updateDynamic("headerPath")(headerPath.asInstanceOf[js.Any])
-    if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (newLine != null) __obj.updateDynamic("newLine")(newLine.asInstanceOf[js.Any])
-    if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputAsModuleFolder)) __obj.updateDynamic("outputAsModuleFolder")(outputAsModuleFolder.get.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(referenceExternals)) __obj.updateDynamic("referenceExternals")(referenceExternals.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeSource)) __obj.updateDynamic("removeSource")(removeSource.get.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMain(value: String): Self = this.set("main", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBaseDir(value: String): Self = this.set("baseDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseDir: Self = this.set("baseDir", js.undefined)
+    @scala.inline
+    def setEmitOnIncludedFileNotFound(value: Boolean): Self = this.set("emitOnIncludedFileNotFound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmitOnIncludedFileNotFound: Self = this.set("emitOnIncludedFileNotFound", js.undefined)
+    @scala.inline
+    def setEmitOnNoIncludedFileNotFound(value: Boolean): Self = this.set("emitOnNoIncludedFileNotFound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmitOnNoIncludedFileNotFound: Self = this.set("emitOnNoIncludedFileNotFound", js.undefined)
+    @scala.inline
+    def setExcludeFunction2(value: (/* file */ String, /* external */ Boolean) => Boolean): Self = this.set("exclude", js.Any.fromFunction2(value))
+    @scala.inline
+    def setExclude(value: RegExp | (js.Function2[/* file */ String, /* external */ Boolean, Boolean])): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclude: Self = this.set("exclude", js.undefined)
+    @scala.inline
+    def setExternals(value: Boolean): Self = this.set("externals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternals: Self = this.set("externals", js.undefined)
+    @scala.inline
+    def setHeaderPath(value: String): Self = this.set("headerPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderPath: Self = this.set("headerPath", js.undefined)
+    @scala.inline
+    def setHeaderText(value: String): Self = this.set("headerText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderText: Self = this.set("headerText", js.undefined)
+    @scala.inline
+    def setIndent(value: String): Self = this.set("indent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndent: Self = this.set("indent", js.undefined)
+    @scala.inline
+    def setNewLine(value: String): Self = this.set("newLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewLine: Self = this.set("newLine", js.undefined)
+    @scala.inline
+    def setOut(value: String): Self = this.set("out", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOut: Self = this.set("out", js.undefined)
+    @scala.inline
+    def setOutputAsModuleFolder(value: Boolean): Self = this.set("outputAsModuleFolder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputAsModuleFolder: Self = this.set("outputAsModuleFolder", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setReferenceExternals(value: Boolean): Self = this.set("referenceExternals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceExternals: Self = this.set("referenceExternals", js.undefined)
+    @scala.inline
+    def setRemoveSource(value: Boolean): Self = this.set("removeSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveSource: Self = this.set("removeSource", js.undefined)
+    @scala.inline
+    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparator: Self = this.set("separator", js.undefined)
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+  }
+  
 }
 

@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
+@js.native
 trait PlusNativeObjViewDrawTagStyles extends js.Object {
   /**
     * 矩形区域颜色
@@ -25,21 +26,21 @@ trait PlusNativeObjViewDrawTagStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /**
     * 绘制操作标识
     * 可通过view对象的drawBitmap/drawRect/drawText/clearRect方法进行更新。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * 绘制输入框的样式
     * 当tag属性值为"input"时有效，用于指定绘制输入框的样式、大小位置等信息。，
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var inputStyles: js.UndefOr[PlusNativeObjInputStyles] = js.undefined
+  var inputStyles: js.UndefOr[PlusNativeObjInputStyles] = js.native
   /**
     * 绘制内容区域
     * 当tag属性值为"img"时，用于指定绘制图片的目标区域；
@@ -49,28 +50,28 @@ trait PlusNativeObjViewDrawTagStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var position: js.UndefOr[PlusNativeObjPosition] = js.undefined
+  var position: js.UndefOr[PlusNativeObjPosition] = js.native
   /**
     * 绘制区域的样式
     * 当tag属性值为"rect"时有效，用于指定绘制区域的样式、填充颜色、圆角大小等信息。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var rectStyles: js.UndefOr[PlusNativeObjRectStyles] = js.undefined
+  var rectStyles: js.UndefOr[PlusNativeObjRectStyles] = js.native
   /**
     * 绘制富文本的样式
     * 当tag属性值为"richtext"时有效，用于指定绘制富文本内容的默认字体颜色、字体类型等信息。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var richTextStyles: js.UndefOr[PlusNativeObjRichTextStyles] = js.undefined
+  var richTextStyles: js.UndefOr[PlusNativeObjRichTextStyles] = js.native
   /**
     * 图片源的绘制区域
     * 当tag属性值为"img"时有效，用于指定图片源的绘制区域，相对于图片的区域信息，默认值为{top:'0px',left:'0px',width:'100%',height:'100%'}。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var sprite: js.UndefOr[PlusNativeObjPosition] = js.undefined
+  var sprite: js.UndefOr[PlusNativeObjPosition] = js.native
   /**
     * 绘制的图片资源
     * 当tag属性值为"img"时有效，可以是图片资源路径（字符串类型）或者图片对象（plus.nativeObj.Bitmap对象）。
@@ -78,7 +79,7 @@ trait PlusNativeObjViewDrawTagStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var src: js.UndefOr[String] = js.undefined
+  var src: js.UndefOr[String] = js.native
   /**
     * 绘制操作类型
     * 可取值：
@@ -95,51 +96,85 @@ trait PlusNativeObjViewDrawTagStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var tag: js.UndefOr[img | rect | font | richtext | input] = js.undefined
+  var tag: js.UndefOr[img | rect | font | richtext | input] = js.native
   /**
     * 绘制的文本内容
     * 当tag属性值为"font"时有效，用于保存绘制的文本内容。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /**
     * 绘制文本的样式
     * 当tag属性值为"font"时有效，用于指定绘制文本内容的字体大小、字体颜色、字体类型等信息。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var textStyles: js.UndefOr[PlusNativeObjTextStyles] = js.undefined
+  var textStyles: js.UndefOr[PlusNativeObjTextStyles] = js.native
 }
 
 object PlusNativeObjViewDrawTagStyles {
   @scala.inline
-  def apply(
-    color: String = null,
-    id: String = null,
-    inputStyles: PlusNativeObjInputStyles = null,
-    position: PlusNativeObjPosition = null,
-    rectStyles: PlusNativeObjRectStyles = null,
-    richTextStyles: PlusNativeObjRichTextStyles = null,
-    sprite: PlusNativeObjPosition = null,
-    src: String = null,
-    tag: img | rect | font | richtext | input = null,
-    text: String = null,
-    textStyles: PlusNativeObjTextStyles = null
-  ): PlusNativeObjViewDrawTagStyles = {
+  def apply(): PlusNativeObjViewDrawTagStyles = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputStyles != null) __obj.updateDynamic("inputStyles")(inputStyles.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (rectStyles != null) __obj.updateDynamic("rectStyles")(rectStyles.asInstanceOf[js.Any])
-    if (richTextStyles != null) __obj.updateDynamic("richTextStyles")(richTextStyles.asInstanceOf[js.Any])
-    if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textStyles != null) __obj.updateDynamic("textStyles")(textStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjViewDrawTagStyles]
   }
+  @scala.inline
+  implicit class PlusNativeObjViewDrawTagStylesOps[Self <: PlusNativeObjViewDrawTagStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInputStyles(value: PlusNativeObjInputStyles): Self = this.set("inputStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputStyles: Self = this.set("inputStyles", js.undefined)
+    @scala.inline
+    def setPosition(value: PlusNativeObjPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRectStyles(value: PlusNativeObjRectStyles): Self = this.set("rectStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRectStyles: Self = this.set("rectStyles", js.undefined)
+    @scala.inline
+    def setRichTextStyles(value: PlusNativeObjRichTextStyles): Self = this.set("richTextStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRichTextStyles: Self = this.set("richTextStyles", js.undefined)
+    @scala.inline
+    def setSprite(value: PlusNativeObjPosition): Self = this.set("sprite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSprite: Self = this.set("sprite", js.undefined)
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrc: Self = this.set("src", js.undefined)
+    @scala.inline
+    def setTag(value: img | rect | font | richtext | input): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextStyles(value: PlusNativeObjTextStyles): Self = this.set("textStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyles: Self = this.set("textStyles", js.undefined)
+  }
+  
 }
 

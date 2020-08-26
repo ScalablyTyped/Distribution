@@ -65,30 +65,64 @@ trait SchemaOrderedJob extends js.Object {
 
 object SchemaOrderedJob {
   @scala.inline
-  def apply(
-    hadoopJob: SchemaHadoopJob = null,
-    hiveJob: SchemaHiveJob = null,
-    labels: StringDictionary[String] = null,
-    pigJob: SchemaPigJob = null,
-    prerequisiteStepIds: js.Array[String] = null,
-    pysparkJob: SchemaPySparkJob = null,
-    scheduling: SchemaJobScheduling = null,
-    sparkJob: SchemaSparkJob = null,
-    sparkSqlJob: SchemaSparkSqlJob = null,
-    stepId: String = null
-  ): SchemaOrderedJob = {
+  def apply(): SchemaOrderedJob = {
     val __obj = js.Dynamic.literal()
-    if (hadoopJob != null) __obj.updateDynamic("hadoopJob")(hadoopJob.asInstanceOf[js.Any])
-    if (hiveJob != null) __obj.updateDynamic("hiveJob")(hiveJob.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (pigJob != null) __obj.updateDynamic("pigJob")(pigJob.asInstanceOf[js.Any])
-    if (prerequisiteStepIds != null) __obj.updateDynamic("prerequisiteStepIds")(prerequisiteStepIds.asInstanceOf[js.Any])
-    if (pysparkJob != null) __obj.updateDynamic("pysparkJob")(pysparkJob.asInstanceOf[js.Any])
-    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling.asInstanceOf[js.Any])
-    if (sparkJob != null) __obj.updateDynamic("sparkJob")(sparkJob.asInstanceOf[js.Any])
-    if (sparkSqlJob != null) __obj.updateDynamic("sparkSqlJob")(sparkSqlJob.asInstanceOf[js.Any])
-    if (stepId != null) __obj.updateDynamic("stepId")(stepId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrderedJob]
   }
+  @scala.inline
+  implicit class SchemaOrderedJobOps[Self <: SchemaOrderedJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHadoopJob(value: SchemaHadoopJob): Self = this.set("hadoopJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHadoopJob: Self = this.set("hadoopJob", js.undefined)
+    @scala.inline
+    def setHiveJob(value: SchemaHiveJob): Self = this.set("hiveJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiveJob: Self = this.set("hiveJob", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setPigJob(value: SchemaPigJob): Self = this.set("pigJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePigJob: Self = this.set("pigJob", js.undefined)
+    @scala.inline
+    def setPrerequisiteStepIdsVarargs(value: String*): Self = this.set("prerequisiteStepIds", js.Array(value :_*))
+    @scala.inline
+    def setPrerequisiteStepIds(value: js.Array[String]): Self = this.set("prerequisiteStepIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrerequisiteStepIds: Self = this.set("prerequisiteStepIds", js.undefined)
+    @scala.inline
+    def setPysparkJob(value: SchemaPySparkJob): Self = this.set("pysparkJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePysparkJob: Self = this.set("pysparkJob", js.undefined)
+    @scala.inline
+    def setScheduling(value: SchemaJobScheduling): Self = this.set("scheduling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduling: Self = this.set("scheduling", js.undefined)
+    @scala.inline
+    def setSparkJob(value: SchemaSparkJob): Self = this.set("sparkJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSparkJob: Self = this.set("sparkJob", js.undefined)
+    @scala.inline
+    def setSparkSqlJob(value: SchemaSparkSqlJob): Self = this.set("sparkSqlJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSparkSqlJob: Self = this.set("sparkSqlJob", js.undefined)
+    @scala.inline
+    def setStepId(value: String): Self = this.set("stepId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepId: Self = this.set("stepId", js.undefined)
+  }
+  
 }
 

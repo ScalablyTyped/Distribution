@@ -13,10 +13,6 @@ object metadataMod extends js.Object {
     def this(key: String, value: js.Any) = this()
     def this(key: js.Symbol, value: js.Any) = this()
     def this(key: Double, value: js.Any) = this()
-    /* CompleteClass */
-    override var key: String | Double | js.Symbol = js.native
-    /* CompleteClass */
-    override var value: js.Any = js.native
   }
   
 }

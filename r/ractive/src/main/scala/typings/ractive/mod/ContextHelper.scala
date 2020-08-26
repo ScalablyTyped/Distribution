@@ -157,14 +157,14 @@ class ContextHelper () extends js.Object {
   	 * @param values
   	 */
   def push(keypath: String, values: js.Any*): ArrayPushPromise = js.native
+  def raise(event: String, context: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
+  def raise(event: String, context: js.Object, args: js.Any*): Unit = js.native
   /**
   	 * Manually call a Ractive event handler on the element associated with this Context e.g. to trigger the 'event' handler <div on-event="..." />, use context.raise('event');
   	 * @param event the name of the event to trigger
   	 * @param context the optional context to supply to the event handler
   	 * @param args any additional args to supply to the event handler
   	 */
-  def raise(event: String): Unit = js.native
-  def raise(event: String, context: js.Object, args: js.Any*): Unit = js.native
   def raise(event: String, context: ContextHelper, args: js.Any*): Unit = js.native
   /**
   	 * Get the source keypath for the given Context-relative keypath if it is a link.
@@ -179,6 +179,7 @@ class ContextHelper () extends js.Object {
   	 * @param ractive target instance in which to resolve the keypath
   	 */
   def resolve(): String = js.native
+  def resolve(keypath: js.UndefOr[scala.Nothing], ractive: Ractive[Ractive[_]]): String = js.native
   def resolve(keypath: String): String = js.native
   def resolve(keypath: String, ractive: Ractive[Ractive[_]]): String = js.native
   /**

@@ -11,18 +11,39 @@ trait S3JobDefinition extends js.Object {
     */
   var bucketDefinitions: js.UndefOr[listOfS3BucketDefinitionForJob] = js.native
   /**
-    * A JobScopeTerm object that specifies conditions for including or excluding objects from the job.
+    * The property- and tag-based conditions that determine which objects to include or exclude from the analysis.
     */
   var scoping: js.UndefOr[Scoping] = js.native
 }
 
 object S3JobDefinition {
   @scala.inline
-  def apply(bucketDefinitions: listOfS3BucketDefinitionForJob = null, scoping: Scoping = null): S3JobDefinition = {
+  def apply(): S3JobDefinition = {
     val __obj = js.Dynamic.literal()
-    if (bucketDefinitions != null) __obj.updateDynamic("bucketDefinitions")(bucketDefinitions.asInstanceOf[js.Any])
-    if (scoping != null) __obj.updateDynamic("scoping")(scoping.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3JobDefinition]
   }
+  @scala.inline
+  implicit class S3JobDefinitionOps[Self <: S3JobDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketDefinitionsVarargs(value: S3BucketDefinitionForJob*): Self = this.set("bucketDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setBucketDefinitions(value: listOfS3BucketDefinitionForJob): Self = this.set("bucketDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketDefinitions: Self = this.set("bucketDefinitions", js.undefined)
+    @scala.inline
+    def setScoping(value: Scoping): Self = this.set("scoping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScoping: Self = this.set("scoping", js.undefined)
+  }
+  
 }
 

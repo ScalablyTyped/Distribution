@@ -127,6 +127,7 @@ trait ojMenu_ extends baseComponent[ojMenuSettableProperties] {
   @JSName("getProperty")
   def getProperty_openOptions(property: openOptions): OpenOptions = js.native
   def open(): Unit = js.native
+  def open(event: js.UndefOr[scala.Nothing], openOptions: OpenOptions): Unit = js.native
   def open(event: js.Object): Unit = js.native
   def open(event: js.Object, openOptions: OpenOptions): Unit = js.native
   def setProperties(properties: ojMenuSettablePropertiesLenient): Unit = js.native

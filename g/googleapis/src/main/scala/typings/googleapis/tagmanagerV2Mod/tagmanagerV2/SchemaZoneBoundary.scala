@@ -22,11 +22,34 @@ trait SchemaZoneBoundary extends js.Object {
 
 object SchemaZoneBoundary {
   @scala.inline
-  def apply(condition: js.Array[SchemaCondition] = null, customEvaluationTriggerId: js.Array[String] = null): SchemaZoneBoundary = {
+  def apply(): SchemaZoneBoundary = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (customEvaluationTriggerId != null) __obj.updateDynamic("customEvaluationTriggerId")(customEvaluationTriggerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaZoneBoundary]
   }
+  @scala.inline
+  implicit class SchemaZoneBoundaryOps[Self <: SchemaZoneBoundary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConditionVarargs(value: SchemaCondition*): Self = this.set("condition", js.Array(value :_*))
+    @scala.inline
+    def setCondition(value: js.Array[SchemaCondition]): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+    @scala.inline
+    def setCustomEvaluationTriggerIdVarargs(value: String*): Self = this.set("customEvaluationTriggerId", js.Array(value :_*))
+    @scala.inline
+    def setCustomEvaluationTriggerId(value: js.Array[String]): Self = this.set("customEvaluationTriggerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomEvaluationTriggerId: Self = this.set("customEvaluationTriggerId", js.undefined)
+  }
+  
 }
 

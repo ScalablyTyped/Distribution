@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stellar-sdk", "BASE_FEE")
 @js.native
-object BASE_FEE extends TopLevel[Double]
+object BASE_FEE extends TopLevel[/* "hash" */ String]
 

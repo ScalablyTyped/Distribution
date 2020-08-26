@@ -75,44 +75,44 @@ trait Pikaday extends js.Object {
     * Go to the previous month (this will change year if necessary).
     */
   def prevMonth(): Unit = js.native
-  def setDate(): Unit = js.native
   /**
     * Set the current selection. This will be restricted within the bounds
     * of minDate and maxDate options if they're specified. A boolean (true)
     * can optionally be passed as the second parameter to prevent triggering
     * of the onSelect callback, allowing the date to be set silently.
     */
+  def setDate(): Unit = js.native
   def setDate(date: String): Unit = js.native
   def setDate(date: String, preventOnSelect: Boolean): Unit = js.native
   def setDate(date: Null, preventOnSelect: Boolean): Unit = js.native
   def setDate(date: Date): Unit = js.native
   def setDate(date: Date, preventOnSelect: Boolean): Unit = js.native
-  def setEndRange(): Unit = js.native
   /**
     * Update the range end date. For using two Pikaday instances to select
     * a date range.
     */
+  def setEndRange(): Unit = js.native
   def setEndRange(date: Date): Unit = js.native
-  def setMaxDate(): Unit = js.native
   /**
     * Update the maximum/latest date that can be selected.
     */
+  def setMaxDate(): Unit = js.native
   def setMaxDate(date: Date): Unit = js.native
-  def setMinDate(): Unit = js.native
   /**
     * Update the minimum/earliest date that can be selected.
     */
+  def setMinDate(): Unit = js.native
   def setMinDate(date: Date): Unit = js.native
   /**
     * Set the current selection with a Moment.js object (see setDate).
     */
   def setMoment(moment: js.Any): Unit = js.native
   def setMoment(moment: js.Any, preventOnSelect: Boolean): Unit = js.native
-  def setStartRange(): Unit = js.native
   /**
     * Update the range start date. For using two Pikaday instances to
     * select a date range.
     */
+  def setStartRange(): Unit = js.native
   def setStartRange(date: Date): Unit = js.native
   /**
     * Make the picker visible.

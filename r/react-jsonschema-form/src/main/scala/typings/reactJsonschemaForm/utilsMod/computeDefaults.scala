@@ -28,5 +28,12 @@ object computeDefaults extends js.Object {
     rawFormData: T,
     includeUndefinedValues: Boolean
   ): js.Array[js.UndefOr[JSONSchema6Type]] = js.native
+  def apply[T](
+    schema: JSONSchema6,
+    parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
+    definitions: StringDictionary[js.Any],
+    rawFormData: js.UndefOr[scala.Nothing],
+    includeUndefinedValues: Boolean
+  ): js.Array[js.UndefOr[JSONSchema6Type]] = js.native
 }
 

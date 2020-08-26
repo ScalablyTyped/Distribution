@@ -10,6 +10,7 @@ object mod extends js.Object {
   def getCurrentIndex(): Double = js.native
   def getHash(doc: js.Any): js.Any = js.native
   def getState(): js.Any = js.native
+  def getState(friendly: js.UndefOr[scala.Nothing], create: js.Any): js.Any = js.native
   def getState(friendly: js.Any): js.Any = js.native
   def getState(friendly: js.Any, create: js.Any): js.Any = js.native
   def getStateByIndex(index: Double): js.Any = js.native

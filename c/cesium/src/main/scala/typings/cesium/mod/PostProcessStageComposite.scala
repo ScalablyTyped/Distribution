@@ -9,7 +9,30 @@ import scala.scalajs.js.annotation._
 class PostProcessStageComposite protected () extends js.Object {
   def this(stages: js.Array[PostProcessStage]) = this()
   def this(stages: js.Array[PostProcessStage], inputPreviousStageTexture: Boolean) = this()
+  def this(
+    stages: js.Array[PostProcessStage],
+    inputPreviousStageTexture: js.UndefOr[scala.Nothing],
+    name: String
+  ) = this()
   def this(stages: js.Array[PostProcessStage], inputPreviousStageTexture: Boolean, name: String) = this()
+  def this(
+    stages: js.Array[PostProcessStage],
+    inputPreviousStageTexture: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    uniforms: js.Object
+  ) = this()
+  def this(
+    stages: js.Array[PostProcessStage],
+    inputPreviousStageTexture: js.UndefOr[scala.Nothing],
+    name: String,
+    uniforms: js.Object
+  ) = this()
+  def this(
+    stages: js.Array[PostProcessStage],
+    inputPreviousStageTexture: Boolean,
+    name: js.UndefOr[scala.Nothing],
+    uniforms: js.Object
+  ) = this()
   def this(
     stages: js.Array[PostProcessStage],
     inputPreviousStageTexture: Boolean,

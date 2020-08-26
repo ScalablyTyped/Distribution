@@ -28,11 +28,6 @@ trait Query extends js.Object {
     * Returns a `Reference` to the `Query`'s location.
     */
   var ref: Reference = js.native
-  def endAt(): Query = js.native
-  def endAt(value: String): Query = js.native
-  def endAt(value: String, key: String): Query = js.native
-  def endAt(value: Boolean): Query = js.native
-  def endAt(value: Boolean, key: String): Query = js.native
   /**
     * Creates a `Query` with the specified ending point.
     *
@@ -67,14 +62,14 @@ trait Query extends js.Object {
     *   previously specified priority. This argument is only allowed if ordering by
     *   child, value, or priority.
     */
+  def endAt(): Query = js.native
+  def endAt(value: String): Query = js.native
+  def endAt(value: String, key: String): Query = js.native
+  def endAt(value: Boolean): Query = js.native
+  def endAt(value: Boolean, key: String): Query = js.native
   def endAt(value: Double): Query = js.native
   def endAt(value: Double, key: String): Query = js.native
   def endAt(value: Null, key: String): Query = js.native
-  def equalTo(): Query = js.native
-  def equalTo(value: String): Query = js.native
-  def equalTo(value: String, key: String): Query = js.native
-  def equalTo(value: Boolean): Query = js.native
-  def equalTo(value: Boolean, key: String): Query = js.native
   /**
     * Creates a `Query` that includes children that match the specified value.
     *
@@ -108,10 +103,14 @@ trait Query extends js.Object {
     *   previously specified priority. This argument is only allowed if ordering by
     *   child, value, or priority.
     */
+  def equalTo(): Query = js.native
+  def equalTo(value: String): Query = js.native
+  def equalTo(value: String, key: String): Query = js.native
+  def equalTo(value: Boolean): Query = js.native
+  def equalTo(value: Boolean, key: String): Query = js.native
   def equalTo(value: Double): Query = js.native
   def equalTo(value: Double, key: String): Query = js.native
   def equalTo(value: Null, key: String): Query = js.native
-  def isEqual(): Boolean = js.native
   /**
     * Returns whether or not the current and provided queries represent the same
     * location, have the same query parameters, and are from the same instance of
@@ -151,6 +150,7 @@ trait Query extends js.Object {
     * @return Whether or not the current and provided queries are
     *   equivalent.
     */
+  def isEqual(): Boolean = js.native
   def isEqual(other: Query): Boolean = js.native
   /**
     * Generates a new `Query` limited to the first specific number of children.
@@ -264,7 +264,18 @@ trait Query extends js.Object {
     * @param context The context that was passed to `on()`.
     */
   def off(): Unit = js.native
+  def off(eventType: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
+  ): Unit = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+    context: js.Object
+  ): Unit = js.native
   def off(eventType: EventType): Unit = js.native
+  def off(eventType: EventType, callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
   def off(
     eventType: EventType,
     callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
@@ -393,6 +404,12 @@ trait Query extends js.Object {
   def on(
     eventType: EventType,
     callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+    cancelCallbackOrContext: js.UndefOr[scala.Nothing],
+    context: js.Object
+  ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
+  def on(
+    eventType: EventType,
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
     cancelCallbackOrContext: js.Object
   ): js.Function2[/* a */ DataSnapshot | Null, /* b */ js.UndefOr[String | Null], _] = js.native
   def on(
@@ -443,7 +460,47 @@ trait Query extends js.Object {
   def once(eventType: EventType): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: js.UndefOr[scala.Nothing],
+    context: js.Object
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
+    context: js.Object
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: js.Object
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: js.Object,
+    context: js.Object
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallbackOrContext: Null,
+    context: js.Object
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
     successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _]
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], _],
+    failureCallbackOrContext: js.UndefOr[scala.Nothing],
+    context: js.Object
   ): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,
@@ -550,11 +607,6 @@ trait Query extends js.Object {
     * ```
     */
   def orderByValue(): Query = js.native
-  def startAt(): Query = js.native
-  def startAt(value: String): Query = js.native
-  def startAt(value: String, key: String): Query = js.native
-  def startAt(value: Boolean): Query = js.native
-  def startAt(value: Boolean, key: String): Query = js.native
   /**
     * Creates a `Query` with the specified starting point.
     *
@@ -588,6 +640,11 @@ trait Query extends js.Object {
     * @param key The child key to start at. This argument is only allowed
     *   if ordering by child, value, or priority.
     */
+  def startAt(): Query = js.native
+  def startAt(value: String): Query = js.native
+  def startAt(value: String, key: String): Query = js.native
+  def startAt(value: Boolean): Query = js.native
+  def startAt(value: Boolean, key: String): Query = js.native
   def startAt(value: Double): Query = js.native
   def startAt(value: Double, key: String): Query = js.native
   def startAt(value: Null, key: String): Query = js.native

@@ -4,39 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NightwatchTestHooks
   extends NightwatchGlobals
      with NightwatchTests {
-  var after: js.UndefOr[GlobalNightwatchTestHook] = js.undefined
-  var afterEach: js.UndefOr[GlobalNightwatchTestHookEach] = js.undefined
-  var before: js.UndefOr[GlobalNightwatchTestHook] = js.undefined
-  var beforeEach: js.UndefOr[GlobalNightwatchTestHookEach] = js.undefined
+  var after: js.UndefOr[GlobalNightwatchTestHook] = js.native
+  var afterEach: js.UndefOr[GlobalNightwatchTestHookEach] = js.native
+  var before: js.UndefOr[GlobalNightwatchTestHook] = js.native
+  var beforeEach: js.UndefOr[GlobalNightwatchTestHookEach] = js.native
 }
 
 object NightwatchTestHooks {
   @scala.inline
-  def apply(
-    abortOnAssertionFailure: js.UndefOr[Boolean] = js.undefined,
-    after: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit = null,
-    afterEach: (/* browser */ NightwatchBrowser, /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit = null,
-    asyncHookTimeout: js.UndefOr[Double] = js.undefined,
-    before: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit = null,
-    beforeEach: (/* browser */ NightwatchBrowser, /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit = null,
-    throwOnMultipleElementsReturned: js.UndefOr[Boolean] = js.undefined,
-    waitForConditionPollInterval: js.UndefOr[Double] = js.undefined,
-    waitForConditionTimeout: js.UndefOr[Double] = js.undefined
-  ): NightwatchTestHooks = {
+  def apply(): NightwatchTestHooks = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortOnAssertionFailure)) __obj.updateDynamic("abortOnAssertionFailure")(abortOnAssertionFailure.get.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1(after))
-    if (afterEach != null) __obj.updateDynamic("afterEach")(js.Any.fromFunction2(afterEach))
-    if (!js.isUndefined(asyncHookTimeout)) __obj.updateDynamic("asyncHookTimeout")(asyncHookTimeout.get.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1(before))
-    if (beforeEach != null) __obj.updateDynamic("beforeEach")(js.Any.fromFunction2(beforeEach))
-    if (!js.isUndefined(throwOnMultipleElementsReturned)) __obj.updateDynamic("throwOnMultipleElementsReturned")(throwOnMultipleElementsReturned.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForConditionPollInterval)) __obj.updateDynamic("waitForConditionPollInterval")(waitForConditionPollInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForConditionTimeout)) __obj.updateDynamic("waitForConditionTimeout")(waitForConditionTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchTestHooks]
   }
+  @scala.inline
+  implicit class NightwatchTestHooksOps[Self <: NightwatchTestHooks] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfter(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = this.set("after", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfter: Self = this.set("after", js.undefined)
+    @scala.inline
+    def setAfterEach(
+      value: (/* browser */ NightwatchBrowser, /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit
+    ): Self = this.set("afterEach", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAfterEach: Self = this.set("afterEach", js.undefined)
+    @scala.inline
+    def setBefore(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = this.set("before", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBefore: Self = this.set("before", js.undefined)
+    @scala.inline
+    def setBeforeEach(
+      value: (/* browser */ NightwatchBrowser, /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit
+    ): Self = this.set("beforeEach", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBeforeEach: Self = this.set("beforeEach", js.undefined)
+  }
+  
 }
 

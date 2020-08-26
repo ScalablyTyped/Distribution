@@ -1,6 +1,11 @@
 package typings.materialSlider
 
+import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialSlider.adapterMod.MDCSliderAdapter
+import typings.materialSlider.anon.ACTIVE
+import typings.materialSlider.anon.ARIADISABLED
+import typings.materialSlider.anon.PAGEFACTOR
+import typings.materialSlider.anon.PartialMDCSliderAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +14,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object foundationMod extends js.Object {
   @js.native
-  trait MDCSliderFoundation
-    extends typings.materialBase.foundationMod.default[MDCSliderAdapter] {
+  class MDCSliderFoundation () extends MDCFoundation[MDCSliderAdapter] {
+    def this(adapter: PartialMDCSliderAdapter) = this()
     def getMax(): Double = js.native
     def getMin(): Double = js.native
     def getStep(): Double = js.native
@@ -26,15 +31,26 @@ object foundationMod extends js.Object {
   }
   
   @js.native
-  class default () extends MDCSliderFoundation
+  class default () extends MDCSliderFoundation {
+    def this(adapter: PartialMDCSliderAdapter) = this()
+  }
+  
+  /* static members */
+  @js.native
+  object MDCSliderFoundation extends js.Object {
+    def cssClasses: ACTIVE = js.native
+    def defaultAdapter: MDCSliderAdapter = js.native
+    def numbers: PAGEFACTOR = js.native
+    def strings: ARIADISABLED = js.native
+  }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    val cssClasses: typings.materialSlider.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCSliderAdapter = js.native
-    val numbers: typings.materialSlider.constantsMod.numbers = js.native
-    val strings: typings.materialSlider.constantsMod.strings = js.native
+    def cssClasses: ACTIVE = js.native
+    def defaultAdapter: MDCSliderAdapter = js.native
+    def numbers: PAGEFACTOR = js.native
+    def strings: ARIADISABLED = js.native
   }
   
 }

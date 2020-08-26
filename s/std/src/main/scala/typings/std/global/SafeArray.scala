@@ -10,8 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SafeArray")
 @js.native
 class SafeArray[T] protected ()
-  extends typings.std.SafeArray[T] {
-  /* CompleteClass */
-  override var SafeArray_typekey: typings.std.SafeArray[T] = js.native
-}
+  extends typings.std.SafeArray[T]
 

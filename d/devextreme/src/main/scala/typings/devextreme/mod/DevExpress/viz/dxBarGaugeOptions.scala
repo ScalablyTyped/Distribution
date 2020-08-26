@@ -1,15 +1,8 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.anon.CancelComponentData
-import typings.devextreme.anon.ComponentDxBarGauge
-import typings.devextreme.anon.ComponentTElementDxElementModelAny
 import typings.devextreme.anon.ConnectorColor
-import typings.devextreme.anon.Element
 import typings.devextreme.anon.EndAngle
-import typings.devextreme.anon.FormatModel
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
-import typings.devextreme.anon.TargetAny
+import typings.devextreme.anon.`18`
 import typings.devextreme.devextremeStrings.Bright
 import typings.devextreme.devextremeStrings.Carmine
 import typings.devextreme.devextremeStrings.Default
@@ -29,153 +22,152 @@ import typings.devextreme.devextremeStrings.`Soft Pastel`
 import typings.devextreme.devextremeStrings.alternate
 import typings.devextreme.devextremeStrings.blend
 import typings.devextreme.devextremeStrings.extrapolate
-import typings.devextreme.devextremeStrings.genericDotcarmine
-import typings.devextreme.devextremeStrings.genericDotcontrast
-import typings.devextreme.devextremeStrings.genericDotdark
-import typings.devextreme.devextremeStrings.genericDotdarkmoon
-import typings.devextreme.devextremeStrings.genericDotdarkviolet
-import typings.devextreme.devextremeStrings.genericDotgreenmist
-import typings.devextreme.devextremeStrings.genericDotlight
-import typings.devextreme.devextremeStrings.genericDotsoftblue
 import typings.devextreme.devextremeStrings.hide
-import typings.devextreme.devextremeStrings.ios7Dotdefault
-import typings.devextreme.devextremeStrings.materialDotblueDotlight
-import typings.devextreme.devextremeStrings.materialDotlimeDotlight
-import typings.devextreme.devextremeStrings.materialDotorangeDotlight
-import typings.devextreme.devextremeStrings.materialDotpurpleDotlight
-import typings.devextreme.devextremeStrings.materialDottealDotlight
 import typings.devextreme.devextremeStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxBarGaugeOptions extends BaseWidgetOptions[dxBarGauge] {
   /** @name dxBarGauge.Options.animation */
-  var animation: js.UndefOr[js.Any] = js.undefined
+  var animation: js.UndefOr[js.Any] = js.native
   /** @name dxBarGauge.Options.backgroundColor */
-  var backgroundColor: js.UndefOr[String] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
   /** @name dxBarGauge.Options.barSpacing */
-  var barSpacing: js.UndefOr[Double] = js.undefined
+  var barSpacing: js.UndefOr[Double] = js.native
   /** @name dxBarGauge.Options.baseValue */
-  var baseValue: js.UndefOr[Double] = js.undefined
+  var baseValue: js.UndefOr[Double] = js.native
   /** @name dxBarGauge.Options.endValue */
-  var endValue: js.UndefOr[Double] = js.undefined
+  var endValue: js.UndefOr[Double] = js.native
   /** @name dxBarGauge.Options.geometry */
-  var geometry: js.UndefOr[EndAngle] = js.undefined
+  var geometry: js.UndefOr[EndAngle] = js.native
   /** @name dxBarGauge.Options.label */
-  var label: js.UndefOr[ConnectorColor] = js.undefined
+  var label: js.UndefOr[ConnectorColor] = js.native
   /** @name dxBarGauge.Options.legend */
-  var legend: js.UndefOr[dxBarGaugeLegend] = js.undefined
+  var legend: js.UndefOr[dxBarGaugeLegend] = js.native
   /** @name dxBarGauge.Options.loadingIndicator */
   @JSName("loadingIndicator")
-  var loadingIndicator_dxBarGaugeOptions: js.UndefOr[dxBarGaugeLoadingIndicator] = js.undefined
+  var loadingIndicator_dxBarGaugeOptions: js.UndefOr[dxBarGaugeLoadingIndicator] = js.native
   /** @name dxBarGauge.Options.onTooltipHidden */
-  var onTooltipHidden: js.UndefOr[js.Function1[/* e */ ComponentDxBarGauge, _]] = js.undefined
+  var onTooltipHidden: js.UndefOr[js.Function1[/* e */ `18`, _]] = js.native
   /** @name dxBarGauge.Options.onTooltipShown */
-  var onTooltipShown: js.UndefOr[js.Function1[/* e */ ComponentDxBarGauge, _]] = js.undefined
+  var onTooltipShown: js.UndefOr[js.Function1[/* e */ `18`, _]] = js.native
   /** @name dxBarGauge.Options.palette */
   var palette: js.UndefOr[
     js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-  ] = js.undefined
+  ] = js.native
   /** @name dxBarGauge.Options.paletteExtensionMode */
-  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
+  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.native
   /** @name dxBarGauge.Options.relativeInnerRadius */
-  var relativeInnerRadius: js.UndefOr[Double] = js.undefined
+  var relativeInnerRadius: js.UndefOr[Double] = js.native
   /** @name dxBarGauge.Options.resolveLabelOverlapping */
-  var resolveLabelOverlapping: js.UndefOr[hide | none] = js.undefined
+  var resolveLabelOverlapping: js.UndefOr[hide | none] = js.native
   /** @name dxBarGauge.Options.startValue */
-  var startValue: js.UndefOr[Double] = js.undefined
+  var startValue: js.UndefOr[Double] = js.native
   /** @name dxBarGauge.Options.tooltip */
   @JSName("tooltip")
-  var tooltip_dxBarGaugeOptions: js.UndefOr[dxBarGaugeTooltip] = js.undefined
+  var tooltip_dxBarGaugeOptions: js.UndefOr[dxBarGaugeTooltip] = js.native
   /** @name dxBarGauge.Options.values */
-  var values: js.UndefOr[js.Array[Double]] = js.undefined
+  var values: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object dxBarGaugeOptions {
   @scala.inline
-  def apply(
-    animation: js.Any = null,
-    backgroundColor: String = null,
-    barSpacing: js.UndefOr[Double] = js.undefined,
-    baseValue: js.UndefOr[Double] = js.undefined,
-    bindingOptions: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    endValue: js.UndefOr[Double] = js.undefined,
-    export: BaseWidgetExport = null,
-    geometry: EndAngle = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    label: ConnectorColor = null,
-    legend: dxBarGaugeLegend = null,
-    loadingIndicator: dxBarGaugeLoadingIndicator = null,
-    margin: BaseWidgetMargin = null,
-    onDisposing: /* e */ Model[dxBarGauge] => _ = null,
-    onDrawn: /* e */ ComponentTElementDxElementModelAny[dxBarGauge] => _ = null,
-    onExported: /* e */ ComponentTElementDxElementModelAny[dxBarGauge] => _ = null,
-    onExporting: /* e */ FormatModel[dxBarGauge] => _ = null,
-    onFileSaving: /* e */ CancelComponentData[dxBarGauge] => _ = null,
-    onIncidentOccurred: /* e */ TargetAny[dxBarGauge] => _ = null,
-    onInitialized: /* e */ Element[dxBarGauge] => _ = null,
-    onOptionChanged: /* e */ Name[dxBarGauge] => _ = null,
-    onTooltipHidden: /* e */ ComponentDxBarGauge => _ = null,
-    onTooltipShown: /* e */ ComponentDxBarGauge => _ = null,
-    palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
-    paletteExtensionMode: alternate | blend | extrapolate = null,
-    pathModified: js.UndefOr[Boolean] = js.undefined,
-    redrawOnResize: js.UndefOr[Boolean] = js.undefined,
-    relativeInnerRadius: js.UndefOr[Double] = js.undefined,
-    resolveLabelOverlapping: hide | none = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    size: BaseWidgetSize = null,
-    startValue: js.UndefOr[Double] = js.undefined,
-    theme: genericDotdark | genericDotlight | genericDotcontrast | ios7Dotdefault | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight = null,
-    title: BaseWidgetTitle | String = null,
-    tooltip: dxBarGaugeTooltip = null,
-    values: js.Array[Double] = null,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxBarGaugeOptions = {
+  def apply(): dxBarGaugeOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(barSpacing)) __obj.updateDynamic("barSpacing")(barSpacing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(baseValue)) __obj.updateDynamic("baseValue")(baseValue.get.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(endValue)) __obj.updateDynamic("endValue")(endValue.get.asInstanceOf[js.Any])
-    if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onDrawn != null) __obj.updateDynamic("onDrawn")(js.Any.fromFunction1(onDrawn))
-    if (onExported != null) __obj.updateDynamic("onExported")(js.Any.fromFunction1(onExported))
-    if (onExporting != null) __obj.updateDynamic("onExporting")(js.Any.fromFunction1(onExporting))
-    if (onFileSaving != null) __obj.updateDynamic("onFileSaving")(js.Any.fromFunction1(onFileSaving))
-    if (onIncidentOccurred != null) __obj.updateDynamic("onIncidentOccurred")(js.Any.fromFunction1(onIncidentOccurred))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (onTooltipHidden != null) __obj.updateDynamic("onTooltipHidden")(js.Any.fromFunction1(onTooltipHidden))
-    if (onTooltipShown != null) __obj.updateDynamic("onTooltipShown")(js.Any.fromFunction1(onTooltipShown))
-    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (paletteExtensionMode != null) __obj.updateDynamic("paletteExtensionMode")(paletteExtensionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(relativeInnerRadius)) __obj.updateDynamic("relativeInnerRadius")(relativeInnerRadius.get.asInstanceOf[js.Any])
-    if (resolveLabelOverlapping != null) __obj.updateDynamic("resolveLabelOverlapping")(resolveLabelOverlapping.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(startValue)) __obj.updateDynamic("startValue")(startValue.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxBarGaugeOptions]
   }
+  @scala.inline
+  implicit class dxBarGaugeOptionsOps[Self <: dxBarGaugeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: js.Any): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBarSpacing(value: Double): Self = this.set("barSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarSpacing: Self = this.set("barSpacing", js.undefined)
+    @scala.inline
+    def setBaseValue(value: Double): Self = this.set("baseValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseValue: Self = this.set("baseValue", js.undefined)
+    @scala.inline
+    def setEndValue(value: Double): Self = this.set("endValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndValue: Self = this.set("endValue", js.undefined)
+    @scala.inline
+    def setGeometry(value: EndAngle): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeometry: Self = this.set("geometry", js.undefined)
+    @scala.inline
+    def setLabel(value: ConnectorColor): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLegend(value: dxBarGaugeLegend): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegend: Self = this.set("legend", js.undefined)
+    @scala.inline
+    def setLoadingIndicator(value: dxBarGaugeLoadingIndicator): Self = this.set("loadingIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadingIndicator: Self = this.set("loadingIndicator", js.undefined)
+    @scala.inline
+    def setOnTooltipHidden(value: /* e */ `18` => _): Self = this.set("onTooltipHidden", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTooltipHidden: Self = this.set("onTooltipHidden", js.undefined)
+    @scala.inline
+    def setOnTooltipShown(value: /* e */ `18` => _): Self = this.set("onTooltipShown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTooltipShown: Self = this.set("onTooltipShown", js.undefined)
+    @scala.inline
+    def setPaletteVarargs(value: String*): Self = this.set("palette", js.Array(value :_*))
+    @scala.inline
+    def setPalette(
+      value: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
+    ): Self = this.set("palette", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePalette: Self = this.set("palette", js.undefined)
+    @scala.inline
+    def setPaletteExtensionMode(value: alternate | blend | extrapolate): Self = this.set("paletteExtensionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaletteExtensionMode: Self = this.set("paletteExtensionMode", js.undefined)
+    @scala.inline
+    def setRelativeInnerRadius(value: Double): Self = this.set("relativeInnerRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativeInnerRadius: Self = this.set("relativeInnerRadius", js.undefined)
+    @scala.inline
+    def setResolveLabelOverlapping(value: hide | none): Self = this.set("resolveLabelOverlapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolveLabelOverlapping: Self = this.set("resolveLabelOverlapping", js.undefined)
+    @scala.inline
+    def setStartValue(value: Double): Self = this.set("startValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartValue: Self = this.set("startValue", js.undefined)
+    @scala.inline
+    def setTooltip(value: dxBarGaugeTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: Double*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: js.Array[Double]): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

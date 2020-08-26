@@ -6,47 +6,67 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * ReplicationControllerCondition describes the state of a replication controller at a certain
-  * point.
+  * ReplicationControllerCondition describes the state of a replication controller at a certain point.
   */
+@js.native
 trait ReplicationControllerCondition extends js.Object {
   /**
     * The last time the condition transitioned from one status to another.
     */
-  var lastTransitionTime: js.UndefOr[Input[String]] = js.undefined
+  var lastTransitionTime: js.UndefOr[Input[String]] = js.native
   /**
     * A human readable message indicating details about the transition.
     */
-  var message: js.UndefOr[Input[String]] = js.undefined
+  var message: js.UndefOr[Input[String]] = js.native
   /**
     * The reason for the condition's last transition.
     */
-  var reason: js.UndefOr[Input[String]] = js.undefined
+  var reason: js.UndefOr[Input[String]] = js.native
   /**
     * Status of the condition, one of True, False, Unknown.
     */
-  var status: Input[String]
+  var status: Input[String] = js.native
   /**
     * Type of replication controller condition.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object ReplicationControllerCondition {
   @scala.inline
-  def apply(
-    status: Input[String],
-    `type`: Input[String],
-    lastTransitionTime: Input[String] = null,
-    message: Input[String] = null,
-    reason: Input[String] = null
-  ): ReplicationControllerCondition = {
+  def apply(status: Input[String], `type`: Input[String]): ReplicationControllerCondition = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lastTransitionTime != null) __obj.updateDynamic("lastTransitionTime")(lastTransitionTime.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationControllerCondition]
   }
+  @scala.inline
+  implicit class ReplicationControllerConditionOps[Self <: ReplicationControllerCondition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastTransitionTime(value: Input[String]): Self = this.set("lastTransitionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastTransitionTime: Self = this.set("lastTransitionTime", js.undefined)
+    @scala.inline
+    def setMessage(value: Input[String]): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setReason(value: Input[String]): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+  }
+  
 }
 

@@ -42,21 +42,46 @@ trait User extends js.Object {
 
 object User {
   @scala.inline
-  def apply(
-    Arn: arnType,
-    CreateDate: dateType,
-    Path: pathType,
-    UserId: idType,
-    UserName: userNameType,
-    PasswordLastUsed: dateType = null,
-    PermissionsBoundary: AttachedPermissionsBoundary = null,
-    Tags: tagListType = null
-  ): User = {
+  def apply(Arn: arnType, CreateDate: dateType, Path: pathType, UserId: idType, UserName: userNameType): User = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreateDate = CreateDate.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-    if (PasswordLastUsed != null) __obj.updateDynamic("PasswordLastUsed")(PasswordLastUsed.asInstanceOf[js.Any])
-    if (PermissionsBoundary != null) __obj.updateDynamic("PermissionsBoundary")(PermissionsBoundary.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
+  @scala.inline
+  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreateDate(value: dateType): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserId(value: idType): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserName(value: userNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPasswordLastUsed(value: dateType): Self = this.set("PasswordLastUsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordLastUsed: Self = this.set("PasswordLastUsed", js.undefined)
+    @scala.inline
+    def setPermissionsBoundary(value: AttachedPermissionsBoundary): Self = this.set("PermissionsBoundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionsBoundary: Self = this.set("PermissionsBoundary", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: tagListType): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Webpack block for the webpack dev server.
 | Keywords           | webpack, webpack-blocks |
 | # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 138881 |
+| # downloads        | 124019 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ drawer ui component for react
 | Keywords           | react, react-component, react-drawer, drawer |
 | # releases         | 3 |
 | # dependents       | 16 |
-| # downloads        | 571475 |
+| # downloads        | 596138 |
 | # stars            | 0 |
 
 ## Links

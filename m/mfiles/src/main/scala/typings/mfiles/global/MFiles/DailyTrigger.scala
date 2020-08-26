@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.DailyTrigger")
 @js.native
-class DailyTrigger () extends IDailyTrigger {
-  /* CompleteClass */
-  override var DaysInterval: Double = js.native
-}
+class DailyTrigger () extends IDailyTrigger
 
 @JSGlobal("MFiles.DailyTrigger")
 @js.native

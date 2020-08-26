@@ -4,48 +4,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JQueryCLEditorOptions extends js.Object {
-  var bodyStyle: js.UndefOr[String] = js.undefined
-  var colors: js.UndefOr[String] = js.undefined
-  var controls: js.UndefOr[String] = js.undefined
-  var docCSSFile: js.UndefOr[String] = js.undefined
-  var docType: js.UndefOr[String] = js.undefined
-  var fonts: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var sizes: js.UndefOr[String] = js.undefined
-  var styles: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
-  var useCSS: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var bodyStyle: js.UndefOr[String] = js.native
+  var colors: js.UndefOr[String] = js.native
+  var controls: js.UndefOr[String] = js.native
+  var docCSSFile: js.UndefOr[String] = js.native
+  var docType: js.UndefOr[String] = js.native
+  var fonts: js.UndefOr[String] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var sizes: js.UndefOr[String] = js.native
+  var styles: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var useCSS: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object JQueryCLEditorOptions {
   @scala.inline
-  def apply(
-    bodyStyle: String = null,
-    colors: String = null,
-    controls: String = null,
-    docCSSFile: String = null,
-    docType: String = null,
-    fonts: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    sizes: String = null,
-    styles: js.Array[js.Array[String]] = null,
-    useCSS: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): JQueryCLEditorOptions = {
+  def apply(): JQueryCLEditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (docCSSFile != null) __obj.updateDynamic("docCSSFile")(docCSSFile.asInstanceOf[js.Any])
-    if (docType != null) __obj.updateDynamic("docType")(docType.asInstanceOf[js.Any])
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCSS)) __obj.updateDynamic("useCSS")(useCSS.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryCLEditorOptions]
   }
+  @scala.inline
+  implicit class JQueryCLEditorOptionsOps[Self <: JQueryCLEditorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBodyStyle(value: String): Self = this.set("bodyStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyStyle: Self = this.set("bodyStyle", js.undefined)
+    @scala.inline
+    def setColors(value: String): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setControls(value: String): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setDocCSSFile(value: String): Self = this.set("docCSSFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocCSSFile: Self = this.set("docCSSFile", js.undefined)
+    @scala.inline
+    def setDocType(value: String): Self = this.set("docType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocType: Self = this.set("docType", js.undefined)
+    @scala.inline
+    def setFonts(value: String): Self = this.set("fonts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFonts: Self = this.set("fonts", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setSizes(value: String): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizes: Self = this.set("sizes", js.undefined)
+    @scala.inline
+    def setStylesVarargs(value: js.Array[String]*): Self = this.set("styles", js.Array(value :_*))
+    @scala.inline
+    def setStyles(value: js.Array[js.Array[String]]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setUseCSS(value: Boolean): Self = this.set("useCSS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseCSS: Self = this.set("useCSS", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -22,12 +22,34 @@ trait SchemaProductAspect extends js.Object {
 
 object SchemaProductAspect {
   @scala.inline
-  def apply(aspectName: String = null, destinationName: String = null, intention: String = null): SchemaProductAspect = {
+  def apply(): SchemaProductAspect = {
     val __obj = js.Dynamic.literal()
-    if (aspectName != null) __obj.updateDynamic("aspectName")(aspectName.asInstanceOf[js.Any])
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
-    if (intention != null) __obj.updateDynamic("intention")(intention.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProductAspect]
   }
+  @scala.inline
+  implicit class SchemaProductAspectOps[Self <: SchemaProductAspect] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAspectName(value: String): Self = this.set("aspectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspectName: Self = this.set("aspectName", js.undefined)
+    @scala.inline
+    def setDestinationName(value: String): Self = this.set("destinationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationName: Self = this.set("destinationName", js.undefined)
+    @scala.inline
+    def setIntention(value: String): Self = this.set("intention", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntention: Self = this.set("intention", js.undefined)
+  }
+  
 }
 

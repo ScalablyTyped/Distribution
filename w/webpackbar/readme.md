@@ -11,8 +11,8 @@ Elegant ProgressBar and Profiler for Webpack
 | Full name          | webpackbar |
 | Keywords           | - |
 | # releases         | 50 |
-| # dependents       | 294 |
-| # downloads        | 14268092 |
+| # dependents       | 305 |
+| # downloads        | 14778323 |
 | # stars            | 1 |
 
 ## Links

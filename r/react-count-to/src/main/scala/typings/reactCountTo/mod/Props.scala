@@ -5,43 +5,74 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Props extends js.Object {
-  var children: js.UndefOr[js.Function1[/* value */ Double, ReactElement]] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var digits: js.UndefOr[Double] = js.undefined
-  var easing: js.UndefOr[js.Function1[/* progress */ Double, Double]] = js.undefined
-  var from: js.UndefOr[Double] = js.undefined
-  var onComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var speed: Double
-  var tagName: js.UndefOr[String] = js.undefined
-  var to: Double
+  var children: js.UndefOr[js.Function1[/* value */ Double, ReactElement]] = js.native
+  var className: js.UndefOr[String] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var digits: js.UndefOr[Double] = js.native
+  var easing: js.UndefOr[js.Function1[/* progress */ Double, Double]] = js.native
+  var from: js.UndefOr[Double] = js.native
+  var onComplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var speed: Double = js.native
+  var tagName: js.UndefOr[String] = js.native
+  var to: Double = js.native
 }
 
 object Props {
   @scala.inline
-  def apply(
-    speed: Double,
-    to: Double,
-    children: /* value */ Double => ReactElement = null,
-    className: String = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    digits: js.UndefOr[Double] = js.undefined,
-    easing: /* progress */ Double => Double = null,
-    from: js.UndefOr[Double] = js.undefined,
-    onComplete: () => Unit = null,
-    tagName: String = null
-  ): Props = {
+  def apply(speed: Double, to: Double): Props = {
     val __obj = js.Dynamic.literal(speed = speed.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(digits)) __obj.updateDynamic("digits")(digits.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
-    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction0(onComplete))
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
+  @scala.inline
+  implicit class PropsOps[Self <: Props] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChildren(value: /* value */ Double => ReactElement): Self = this.set("children", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDigits(value: Double): Self = this.set("digits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigits: Self = this.set("digits", js.undefined)
+    @scala.inline
+    def setEasing(value: /* progress */ Double => Double): Self = this.set("easing", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setOnComplete(value: () => Unit): Self = this.set("onComplete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    @scala.inline
+    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagName: Self = this.set("tagName", js.undefined)
+  }
+  
 }
 

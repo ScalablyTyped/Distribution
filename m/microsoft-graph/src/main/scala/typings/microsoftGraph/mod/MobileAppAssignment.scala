@@ -4,32 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MobileAppAssignment extends Entity {
   /**
     * The install intent defined by the admin. Possible values are: available, required, uninstall,
     * availableWithoutEnrollment.
     */
-  var intent: js.UndefOr[InstallIntent] = js.undefined
+  var intent: js.UndefOr[InstallIntent] = js.native
   // The settings for target assignment defined by the admin.
-  var settings: js.UndefOr[MobileAppAssignmentSettings] = js.undefined
+  var settings: js.UndefOr[MobileAppAssignmentSettings] = js.native
   // The target group assignment defined by the admin.
-  var target: js.UndefOr[DeviceAndAppManagementAssignmentTarget] = js.undefined
+  var target: js.UndefOr[DeviceAndAppManagementAssignmentTarget] = js.native
 }
 
 object MobileAppAssignment {
   @scala.inline
-  def apply(
-    id: String = null,
-    intent: InstallIntent = null,
-    settings: MobileAppAssignmentSettings = null,
-    target: DeviceAndAppManagementAssignmentTarget = null
-  ): MobileAppAssignment = {
+  def apply(): MobileAppAssignment = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileAppAssignment]
   }
+  @scala.inline
+  implicit class MobileAppAssignmentOps[Self <: MobileAppAssignment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIntent(value: InstallIntent): Self = this.set("intent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntent: Self = this.set("intent", js.undefined)
+    @scala.inline
+    def setSettings(value: MobileAppAssignmentSettings): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setTarget(value: DeviceAndAppManagementAssignmentTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+  }
+  
 }
 

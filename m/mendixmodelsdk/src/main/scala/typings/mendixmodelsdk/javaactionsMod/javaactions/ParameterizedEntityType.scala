@@ -47,7 +47,7 @@ class ParameterizedEntityType protected () extends EntityType {
   @JSName("containerAsListType")
   def containerAsListType_MParameterizedEntityType: ListType = js.native
   def typeParameter: TypeParameter = js.native
-  def typeParameter(newValue: TypeParameter): js.Any = js.native
+  def typeParameter_=(newValue: TypeParameter): Unit = js.native
 }
 
 /* static members */

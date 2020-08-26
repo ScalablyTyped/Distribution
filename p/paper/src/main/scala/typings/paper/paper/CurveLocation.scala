@@ -18,71 +18,72 @@ import scala.scalajs.js.annotation._
   * {@link PathItem#getIntersections},
   * etc.
   */
+@js.native
 trait CurveLocation extends js.Object {
   /** 
     * The curvature of the {@link #curve} at the given location.
     */
-  val curvature: Double
+  val curvature: Double = js.native
   /** 
     * The curve that this location belongs to.
     */
-  val curve: Curve
+  val curve: Curve = js.native
   /** 
     * The length of the curve from its beginning up to the location described
     * by this object.
     */
-  val curveOffset: Double
+  val curveOffset: Double = js.native
   /** 
     * The distance from the queried point to the returned location.
     * 
     * @see Curve#getNearestLocation(point)
     * @see PathItem#getNearestLocation(point)
     */
-  val distance: Double
+  val distance: Double = js.native
   /** 
     * The index of the {@link #curve} within the {@link Path#curves} list, if
     * it is part of a {@link Path} item.
     */
-  val index: Double
+  val index: Double = js.native
   /** 
     * The curve location on the intersecting curve, if this location is the
     * result of a call to {@link PathItem#getIntersections} /
     * {@link Curve#getIntersections}.
     */
-  val intersection: CurveLocation
+  val intersection: CurveLocation = js.native
   /** 
     * The normal vector to the {@link #curve} at the given location.
     */
-  val normal: Point
+  val normal: Point = js.native
   /** 
     * The length of the path from its beginning up to the location described
     * by this object. If the curve is not part of a path, then the length
     * within the curve is returned instead.
     */
-  val offset: Double
+  val offset: Double = js.native
   /** 
     * The path that this locations is situated on.
     */
-  val path: Path
+  val path: Path = js.native
   /** 
     * The point which is defined by the {@link #curve} and
     * {@link #time}.
     */
-  val point: Point
+  val point: Point = js.native
   /** 
     * The segment of the curve which is closer to the described location.
     */
-  val segment: Segment
+  val segment: Segment = js.native
   /** 
     * The tangential vector to the {@link #curve} at the given location.
     */
-  val tangent: Point
+  val tangent: Point = js.native
   /** 
     * The curve-time parameter, as used by various bezier curve calculations.
     * It is value between `0` (beginning of the curve) and `1` (end of the
     * curve).
     */
-  val time: Double
+  val time: Double = js.native
   /** 
     * Checks whether tow CurveLocation objects are describing the same location
     * on a path, by applying the same tolerances as elsewhere when dealing with
@@ -90,7 +91,7 @@ trait CurveLocation extends js.Object {
     * 
     * @return true if the locations are equal
     */
-  def equals(location: CurveLocation): Boolean
+  def equals(location: CurveLocation): Boolean = js.native
   /** 
     * Checks if the location is an intersection with another curve and is
     * part of an overlap between the two involved paths.
@@ -101,7 +102,7 @@ trait CurveLocation extends js.Object {
     * @return true if the location is an intersection that is
     * part of an overlap between the two involved paths
     */
-  def hasOverlap(): Boolean
+  def hasOverlap(): Boolean = js.native
   /** 
     * Checks if the location is an intersection with another curve and is
     * crossing the other curve, as opposed to just touching it.
@@ -111,7 +112,7 @@ trait CurveLocation extends js.Object {
     * @return true if the location is an intersection that is
     * crossing another curve
     */
-  def isCrossing(): Boolean
+  def isCrossing(): Boolean = js.native
   /** 
     * Checks if the location is an intersection with another curve and is
     * merely touching the other curve, as opposed to crossing it.
@@ -121,7 +122,7 @@ trait CurveLocation extends js.Object {
     * @return true if the location is an intersection that is
     * merely touching another curve
     */
-  def isTouching(): Boolean
+  def isTouching(): Boolean = js.native
 }
 
 object CurveLocation {
@@ -148,5 +149,52 @@ object CurveLocation {
     val __obj = js.Dynamic.literal(curvature = curvature.asInstanceOf[js.Any], curve = curve.asInstanceOf[js.Any], curveOffset = curveOffset.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], equals = js.Any.fromFunction1(equals), hasOverlap = js.Any.fromFunction0(hasOverlap), index = index.asInstanceOf[js.Any], intersection = intersection.asInstanceOf[js.Any], isCrossing = js.Any.fromFunction0(isCrossing), isTouching = js.Any.fromFunction0(isTouching), normal = normal.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], segment = segment.asInstanceOf[js.Any], tangent = tangent.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurveLocation]
   }
+  @scala.inline
+  implicit class CurveLocationOps[Self <: CurveLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurvature(value: Double): Self = this.set("curvature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurve(value: Curve): Self = this.set("curve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurveOffset(value: Double): Self = this.set("curveOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEquals(value: CurveLocation => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    @scala.inline
+    def setHasOverlap(value: () => Boolean): Self = this.set("hasOverlap", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIntersection(value: CurveLocation): Self = this.set("intersection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsCrossing(value: () => Boolean): Self = this.set("isCrossing", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsTouching(value: () => Boolean): Self = this.set("isTouching", js.Any.fromFunction0(value))
+    @scala.inline
+    def setNormal(value: Point): Self = this.set("normal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: Path): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPoint(value: Point): Self = this.set("point", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSegment(value: Segment): Self = this.set("segment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTangent(value: Point): Self = this.set("tangent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+  }
+  
 }
 

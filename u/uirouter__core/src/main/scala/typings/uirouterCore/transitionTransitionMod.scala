@@ -34,12 +34,13 @@ object transitionTransitionMod extends js.Object {
       *
       * If the target state is not valid, an error is thrown.
       *
-      * @internalapi
+      * @internal
       *
       * @param fromPath The path of [[PathNode]]s from which the transition is leaving.  The last node in the `fromPath`
       *        encapsulates the "from state".
       * @param targetState The target state and parameters being transitioned to (also, the transition options)
       * @param router The [[UIRouter]] instance
+      * @internal
       */
     def this(fromPath: js.Array[PathNode], targetState: TargetState, router: UIRouter) = this()
     /**
@@ -49,27 +50,27 @@ object transitionTransitionMod extends js.Object {
       */
     @JSName("$id")
     var $id: Double = js.native
-    /** @hidden */
+    /** @internal */
     var _aborted: Boolean = js.native
-    /** @hidden If a transition doesn't exit/enter any states, returns any [[Param]] whose value changed */
+    /** @internal If a transition doesn't exit/enter any states, returns any [[Param]] whose value changed */
     var _changedParams: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _deferred: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _error: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _hookBuilder: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _options: js.Any = js.native
-    /** @hidden Holds the hook registration functions such as those passed to Transition.onStart() */
+    /** @internal Holds the hook registration functions such as those passed to Transition.onStart() */
     @JSName("_registeredHooks")
     var _registeredHooks_Transition: RegisteredHooks = js.native
-    /** @hidden */
+    /** @internal */
     var _targetState: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var _treeChanges: js.Any = js.native
     var applyViewConfigs: js.Any = js.native
-    /** @hidden
+    /** @internal
       * Creates the transition-level hook registration functions
       * (which can then be used to register hooks)
       */
@@ -97,20 +98,18 @@ object transitionTransitionMod extends js.Object {
       */
     var success: Boolean = js.native
     /**
-      * @internalapi
-      *
+      * @internal
       * @returns the internal from [State] object
       */
     @JSName("$from")
     def $from(): StateObject = js.native
     /**
-      * @internalapi
-      *
+      * @internal
       * @returns the internal to [State] object
       */
     @JSName("$to")
     def $to(): StateObject = js.native
-    /** @hidden */
+    /** @internal */
     def _ignoredReason(): js.UndefOr[SameAsCurrent | SameAsPending] = js.native
     /**
       * Aborts this transition
@@ -287,8 +286,8 @@ object transitionTransitionMod extends js.Object {
       * @returns a [[UIInjector]]
       */
     def injector(): UIInjector = js.native
+    def injector(state: js.UndefOr[StateOrName], pathName: String): UIInjector = js.native
     def injector(state: StateOrName): UIInjector = js.native
-    def injector(state: StateOrName, pathName: String): UIInjector = js.native
     def is(compare: To): Boolean = js.native
     /**
       * Determines whether two transitions are equivalent.
@@ -429,7 +428,7 @@ object transitionTransitionMod extends js.Object {
       * This transition can be returned from a [[TransitionService]] hook to
       * redirect a transition to a new state and/or set of parameters.
       *
-      * @internalapi
+      * @internal
       *
       * @returns Returns a new [[Transition]] instance.
       */
@@ -464,7 +463,7 @@ object transitionTransitionMod extends js.Object {
       *
       * This method is generally called from the [[StateService.transitionTo]]
       *
-      * @internalapi
+      * @internal
       *
       * @returns a promise for a successful transition.
       */
@@ -518,6 +517,7 @@ object transitionTransitionMod extends js.Object {
       * @returns a list of ViewConfig objects for the given path.
       */
     def views(): js.Array[ViewConfig] = js.native
+    def views(pathname: js.UndefOr[scala.Nothing], state: StateObject): js.Array[ViewConfig] = js.native
     def views(pathname: String): js.Array[ViewConfig] = js.native
     def views(pathname: String, state: StateObject): js.Array[ViewConfig] = js.native
   }
@@ -525,7 +525,7 @@ object transitionTransitionMod extends js.Object {
   /* static members */
   @js.native
   object Transition extends js.Object {
-    /** @hidden */
+    /** @internal */
     var diToken: TypeofTransition = js.native
   }
   

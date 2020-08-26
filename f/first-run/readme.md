@@ -12,7 +12,7 @@ Check if it's the first time the process is run
 | Keywords           | first, init, initial, run, time, process, start |
 | # releases         | 2 |
 | # dependents       | 22 |
-| # downloads        | 19206 |
+| # downloads        | 20570 |
 | # stars            | 1 |
 
 ## Links

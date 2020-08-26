@@ -114,60 +114,136 @@ trait RunJobFlowInput extends js.Object {
 
 object RunJobFlowInput {
   @scala.inline
-  def apply(
-    Instances: JobFlowInstancesConfig,
-    Name: XmlStringMaxLen256,
-    AdditionalInfo: XmlString = null,
-    AmiVersion: XmlStringMaxLen256 = null,
-    Applications: ApplicationList = null,
-    AutoScalingRole: XmlString = null,
-    BootstrapActions: BootstrapActionConfigList = null,
-    Configurations: ConfigurationList = null,
-    CustomAmiId: XmlStringMaxLen256 = null,
-    EbsRootVolumeSize: js.UndefOr[Integer] = js.undefined,
-    JobFlowRole: XmlString = null,
-    KerberosAttributes: KerberosAttributes = null,
-    LogEncryptionKmsKeyId: XmlString = null,
-    LogUri: XmlString = null,
-    ManagedScalingPolicy: ManagedScalingPolicy = null,
-    NewSupportedProducts: NewSupportedProductsList = null,
-    ReleaseLabel: XmlStringMaxLen256 = null,
-    RepoUpgradeOnBoot: RepoUpgradeOnBoot = null,
-    ScaleDownBehavior: ScaleDownBehavior = null,
-    SecurityConfiguration: XmlString = null,
-    ServiceRole: XmlString = null,
-    StepConcurrencyLevel: js.UndefOr[Integer] = js.undefined,
-    Steps: StepConfigList = null,
-    SupportedProducts: SupportedProductsList = null,
-    Tags: TagList = null,
-    VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
-  ): RunJobFlowInput = {
+  def apply(Instances: JobFlowInstancesConfig, Name: XmlStringMaxLen256): RunJobFlowInput = {
     val __obj = js.Dynamic.literal(Instances = Instances.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (AdditionalInfo != null) __obj.updateDynamic("AdditionalInfo")(AdditionalInfo.asInstanceOf[js.Any])
-    if (AmiVersion != null) __obj.updateDynamic("AmiVersion")(AmiVersion.asInstanceOf[js.Any])
-    if (Applications != null) __obj.updateDynamic("Applications")(Applications.asInstanceOf[js.Any])
-    if (AutoScalingRole != null) __obj.updateDynamic("AutoScalingRole")(AutoScalingRole.asInstanceOf[js.Any])
-    if (BootstrapActions != null) __obj.updateDynamic("BootstrapActions")(BootstrapActions.asInstanceOf[js.Any])
-    if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations.asInstanceOf[js.Any])
-    if (CustomAmiId != null) __obj.updateDynamic("CustomAmiId")(CustomAmiId.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsRootVolumeSize)) __obj.updateDynamic("EbsRootVolumeSize")(EbsRootVolumeSize.get.asInstanceOf[js.Any])
-    if (JobFlowRole != null) __obj.updateDynamic("JobFlowRole")(JobFlowRole.asInstanceOf[js.Any])
-    if (KerberosAttributes != null) __obj.updateDynamic("KerberosAttributes")(KerberosAttributes.asInstanceOf[js.Any])
-    if (LogEncryptionKmsKeyId != null) __obj.updateDynamic("LogEncryptionKmsKeyId")(LogEncryptionKmsKeyId.asInstanceOf[js.Any])
-    if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
-    if (ManagedScalingPolicy != null) __obj.updateDynamic("ManagedScalingPolicy")(ManagedScalingPolicy.asInstanceOf[js.Any])
-    if (NewSupportedProducts != null) __obj.updateDynamic("NewSupportedProducts")(NewSupportedProducts.asInstanceOf[js.Any])
-    if (ReleaseLabel != null) __obj.updateDynamic("ReleaseLabel")(ReleaseLabel.asInstanceOf[js.Any])
-    if (RepoUpgradeOnBoot != null) __obj.updateDynamic("RepoUpgradeOnBoot")(RepoUpgradeOnBoot.asInstanceOf[js.Any])
-    if (ScaleDownBehavior != null) __obj.updateDynamic("ScaleDownBehavior")(ScaleDownBehavior.asInstanceOf[js.Any])
-    if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
-    if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(StepConcurrencyLevel)) __obj.updateDynamic("StepConcurrencyLevel")(StepConcurrencyLevel.get.asInstanceOf[js.Any])
-    if (Steps != null) __obj.updateDynamic("Steps")(Steps.asInstanceOf[js.Any])
-    if (SupportedProducts != null) __obj.updateDynamic("SupportedProducts")(SupportedProducts.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(VisibleToAllUsers)) __obj.updateDynamic("VisibleToAllUsers")(VisibleToAllUsers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunJobFlowInput]
   }
+  @scala.inline
+  implicit class RunJobFlowInputOps[Self <: RunJobFlowInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstances(value: JobFlowInstancesConfig): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: XmlStringMaxLen256): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditionalInfo(value: XmlString): Self = this.set("AdditionalInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalInfo: Self = this.set("AdditionalInfo", js.undefined)
+    @scala.inline
+    def setAmiVersion(value: XmlStringMaxLen256): Self = this.set("AmiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmiVersion: Self = this.set("AmiVersion", js.undefined)
+    @scala.inline
+    def setApplicationsVarargs(value: Application*): Self = this.set("Applications", js.Array(value :_*))
+    @scala.inline
+    def setApplications(value: ApplicationList): Self = this.set("Applications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplications: Self = this.set("Applications", js.undefined)
+    @scala.inline
+    def setAutoScalingRole(value: XmlString): Self = this.set("AutoScalingRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingRole: Self = this.set("AutoScalingRole", js.undefined)
+    @scala.inline
+    def setBootstrapActionsVarargs(value: BootstrapActionConfig*): Self = this.set("BootstrapActions", js.Array(value :_*))
+    @scala.inline
+    def setBootstrapActions(value: BootstrapActionConfigList): Self = this.set("BootstrapActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBootstrapActions: Self = this.set("BootstrapActions", js.undefined)
+    @scala.inline
+    def setConfigurationsVarargs(value: Configuration*): Self = this.set("Configurations", js.Array(value :_*))
+    @scala.inline
+    def setConfigurations(value: ConfigurationList): Self = this.set("Configurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurations: Self = this.set("Configurations", js.undefined)
+    @scala.inline
+    def setCustomAmiId(value: XmlStringMaxLen256): Self = this.set("CustomAmiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAmiId: Self = this.set("CustomAmiId", js.undefined)
+    @scala.inline
+    def setEbsRootVolumeSize(value: Integer): Self = this.set("EbsRootVolumeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsRootVolumeSize: Self = this.set("EbsRootVolumeSize", js.undefined)
+    @scala.inline
+    def setJobFlowRole(value: XmlString): Self = this.set("JobFlowRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobFlowRole: Self = this.set("JobFlowRole", js.undefined)
+    @scala.inline
+    def setKerberosAttributes(value: KerberosAttributes): Self = this.set("KerberosAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKerberosAttributes: Self = this.set("KerberosAttributes", js.undefined)
+    @scala.inline
+    def setLogEncryptionKmsKeyId(value: XmlString): Self = this.set("LogEncryptionKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogEncryptionKmsKeyId: Self = this.set("LogEncryptionKmsKeyId", js.undefined)
+    @scala.inline
+    def setLogUri(value: XmlString): Self = this.set("LogUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUri: Self = this.set("LogUri", js.undefined)
+    @scala.inline
+    def setManagedScalingPolicy(value: ManagedScalingPolicy): Self = this.set("ManagedScalingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedScalingPolicy: Self = this.set("ManagedScalingPolicy", js.undefined)
+    @scala.inline
+    def setNewSupportedProductsVarargs(value: SupportedProductConfig*): Self = this.set("NewSupportedProducts", js.Array(value :_*))
+    @scala.inline
+    def setNewSupportedProducts(value: NewSupportedProductsList): Self = this.set("NewSupportedProducts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewSupportedProducts: Self = this.set("NewSupportedProducts", js.undefined)
+    @scala.inline
+    def setReleaseLabel(value: XmlStringMaxLen256): Self = this.set("ReleaseLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseLabel: Self = this.set("ReleaseLabel", js.undefined)
+    @scala.inline
+    def setRepoUpgradeOnBoot(value: RepoUpgradeOnBoot): Self = this.set("RepoUpgradeOnBoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepoUpgradeOnBoot: Self = this.set("RepoUpgradeOnBoot", js.undefined)
+    @scala.inline
+    def setScaleDownBehavior(value: ScaleDownBehavior): Self = this.set("ScaleDownBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleDownBehavior: Self = this.set("ScaleDownBehavior", js.undefined)
+    @scala.inline
+    def setSecurityConfiguration(value: XmlString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    @scala.inline
+    def setServiceRole(value: XmlString): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("ServiceRole", js.undefined)
+    @scala.inline
+    def setStepConcurrencyLevel(value: Integer): Self = this.set("StepConcurrencyLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepConcurrencyLevel: Self = this.set("StepConcurrencyLevel", js.undefined)
+    @scala.inline
+    def setStepsVarargs(value: StepConfig*): Self = this.set("Steps", js.Array(value :_*))
+    @scala.inline
+    def setSteps(value: StepConfigList): Self = this.set("Steps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSteps: Self = this.set("Steps", js.undefined)
+    @scala.inline
+    def setSupportedProductsVarargs(value: XmlStringMaxLen256*): Self = this.set("SupportedProducts", js.Array(value :_*))
+    @scala.inline
+    def setSupportedProducts(value: SupportedProductsList): Self = this.set("SupportedProducts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedProducts: Self = this.set("SupportedProducts", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVisibleToAllUsers(value: Boolean): Self = this.set("VisibleToAllUsers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleToAllUsers: Self = this.set("VisibleToAllUsers", js.undefined)
+  }
+  
 }
 

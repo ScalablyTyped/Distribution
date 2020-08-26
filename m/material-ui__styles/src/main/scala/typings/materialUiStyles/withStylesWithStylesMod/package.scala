@@ -8,6 +8,7 @@ package object withStylesWithStylesMod {
   type ClassKeyInferable[Theme, Props /* <: js.Object */] = java.lang.String | (typings.materialUiStyles.withStylesWithStylesMod.Styles[Theme, Props, java.lang.String])
   type ClassKeyOfStyles[StylesOrClassKey] = js.Any | StylesOrClassKey
   type ClassNameMap[ClassKey /* <: java.lang.String */] = typings.std.Record[ClassKey, java.lang.String]
+  type JSSFontface = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.FontFace */ js.Any) with typings.materialUiStyles.anon.Fallbacks
   type PropsFunc[Props /* <: js.Object */, T] = js.Function1[/* props */ Props, T]
   type PropsOfStyles[StylesType] = js.Object
   type StyleRules[Props /* <: js.Object */, ClassKey /* <: java.lang.String */] = typings.std.Record[

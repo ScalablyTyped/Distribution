@@ -18,10 +18,28 @@ trait DeploymentCommand extends js.Object {
 
 object DeploymentCommand {
   @scala.inline
-  def apply(Name: DeploymentCommandName, Args: DeploymentCommandArgs = null): DeploymentCommand = {
+  def apply(Name: DeploymentCommandName): DeploymentCommand = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (Args != null) __obj.updateDynamic("Args")(Args.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentCommand]
   }
+  @scala.inline
+  implicit class DeploymentCommandOps[Self <: DeploymentCommand] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: DeploymentCommandName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArgs(value: DeploymentCommandArgs): Self = this.set("Args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("Args", js.undefined)
+  }
+  
 }
 

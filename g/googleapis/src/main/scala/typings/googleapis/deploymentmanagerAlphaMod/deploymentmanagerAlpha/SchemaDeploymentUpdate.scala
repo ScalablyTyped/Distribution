@@ -34,18 +34,40 @@ trait SchemaDeploymentUpdate extends js.Object {
 
 object SchemaDeploymentUpdate {
   @scala.inline
-  def apply(
-    credential: SchemaCredential = null,
-    description: String = null,
-    labels: js.Array[SchemaDeploymentUpdateLabelEntry] = null,
-    manifest: String = null
-  ): SchemaDeploymentUpdate = {
+  def apply(): SchemaDeploymentUpdate = {
     val __obj = js.Dynamic.literal()
-    if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeploymentUpdate]
   }
+  @scala.inline
+  implicit class SchemaDeploymentUpdateOps[Self <: SchemaDeploymentUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCredential(value: SchemaCredential): Self = this.set("credential", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredential: Self = this.set("credential", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: SchemaDeploymentUpdateLabelEntry*): Self = this.set("labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: js.Array[SchemaDeploymentUpdateLabelEntry]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setManifest(value: String): Self = this.set("manifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifest: Self = this.set("manifest", js.undefined)
+  }
+  
 }
 

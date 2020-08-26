@@ -10,9 +10,9 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | ip |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 1529 |
-| # downloads        | 270597391 |
+| # releases         | 0 |
+| # dependents       | 1570 |
+| # downloads        | 286201831 |
 | # stars            | 54 |
 
 ## Links

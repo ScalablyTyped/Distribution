@@ -10,9 +10,9 @@ An easily designable, cross browser (!!), custom scroll with ReactJS Animations 
 | ------------------ | :-------------: |
 | Full name          | react-custom-scroll |
 | Keywords           | react, react-custom-scroll, react-component, customscroll, custom-scroll, ui component, ui, component |
-| # releases         | 14 |
+| # releases         | 15 |
 | # dependents       | 8 |
-| # downloads        | 167765 |
+| # downloads        | 180443 |
 | # stars            | 4 |
 
 ## Links

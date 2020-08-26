@@ -4,27 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseProps extends js.Object {
-  var focusOnMount: js.UndefOr[Boolean] = js.undefined
-  var forceIsDirty: js.UndefOr[Boolean] = js.undefined
-  var forceIsSaving: js.UndefOr[Boolean] = js.undefined
-  var isOpen: js.UndefOr[Boolean] = js.undefined
+  var children: js.UndefOr[scala.Nothing] = js.native
+  var focusOnMount: js.UndefOr[Boolean] = js.native
+  var forceIsDirty: js.UndefOr[Boolean] = js.native
+  var forceIsSaving: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.native
 }
 
 object BaseProps {
   @scala.inline
-  def apply(
-    focusOnMount: js.UndefOr[Boolean] = js.undefined,
-    forceIsDirty: js.UndefOr[Boolean] = js.undefined,
-    forceIsSaving: js.UndefOr[Boolean] = js.undefined,
-    isOpen: js.UndefOr[Boolean] = js.undefined
-  ): BaseProps = {
+  def apply(): BaseProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(focusOnMount)) __obj.updateDynamic("focusOnMount")(focusOnMount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceIsDirty)) __obj.updateDynamic("forceIsDirty")(forceIsDirty.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceIsSaving)) __obj.updateDynamic("forceIsSaving")(forceIsSaving.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseProps]
   }
+  @scala.inline
+  implicit class BasePropsOps[Self <: BaseProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFocusOnMount(value: Boolean): Self = this.set("focusOnMount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusOnMount: Self = this.set("focusOnMount", js.undefined)
+    @scala.inline
+    def setForceIsDirty(value: Boolean): Self = this.set("forceIsDirty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceIsDirty: Self = this.set("forceIsDirty", js.undefined)
+    @scala.inline
+    def setForceIsSaving(value: Boolean): Self = this.set("forceIsSaving", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceIsSaving: Self = this.set("forceIsSaving", js.undefined)
+    @scala.inline
+    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+  }
+  
 }
 

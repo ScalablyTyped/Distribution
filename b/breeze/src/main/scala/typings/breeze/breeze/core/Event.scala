@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait Event extends js.Object {
   def clear(): Unit = js.native
   def publish(data: js.Any): Unit = js.native
+  def publish(data: js.Any, publishAsync: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): Unit = js.native
   def publish(data: js.Any, publishAsync: Boolean): Unit = js.native
   def publish(data: js.Any, publishAsync: Boolean, errorCallback: ErrorCallback): Unit = js.native
   def publishAsync(data: js.Any): Unit = js.native

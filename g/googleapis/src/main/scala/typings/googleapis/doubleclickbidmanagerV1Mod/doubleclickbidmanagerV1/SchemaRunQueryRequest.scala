@@ -34,18 +34,38 @@ trait SchemaRunQueryRequest extends js.Object {
 
 object SchemaRunQueryRequest {
   @scala.inline
-  def apply(
-    dataRange: String = null,
-    reportDataEndTimeMs: String = null,
-    reportDataStartTimeMs: String = null,
-    timezoneCode: String = null
-  ): SchemaRunQueryRequest = {
+  def apply(): SchemaRunQueryRequest = {
     val __obj = js.Dynamic.literal()
-    if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange.asInstanceOf[js.Any])
-    if (reportDataEndTimeMs != null) __obj.updateDynamic("reportDataEndTimeMs")(reportDataEndTimeMs.asInstanceOf[js.Any])
-    if (reportDataStartTimeMs != null) __obj.updateDynamic("reportDataStartTimeMs")(reportDataStartTimeMs.asInstanceOf[js.Any])
-    if (timezoneCode != null) __obj.updateDynamic("timezoneCode")(timezoneCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRunQueryRequest]
   }
+  @scala.inline
+  implicit class SchemaRunQueryRequestOps[Self <: SchemaRunQueryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataRange(value: String): Self = this.set("dataRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRange: Self = this.set("dataRange", js.undefined)
+    @scala.inline
+    def setReportDataEndTimeMs(value: String): Self = this.set("reportDataEndTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportDataEndTimeMs: Self = this.set("reportDataEndTimeMs", js.undefined)
+    @scala.inline
+    def setReportDataStartTimeMs(value: String): Self = this.set("reportDataStartTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportDataStartTimeMs: Self = this.set("reportDataStartTimeMs", js.undefined)
+    @scala.inline
+    def setTimezoneCode(value: String): Self = this.set("timezoneCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezoneCode: Self = this.set("timezoneCode", js.undefined)
+  }
+  
 }
 

@@ -22,12 +22,34 @@ trait NetworkInterface extends js.Object {
 
 object NetworkInterface {
   @scala.inline
-  def apply(attachmentId: String = null, ipv6Address: String = null, privateIpv4Address: String = null): NetworkInterface = {
+  def apply(): NetworkInterface = {
     val __obj = js.Dynamic.literal()
-    if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId.asInstanceOf[js.Any])
-    if (ipv6Address != null) __obj.updateDynamic("ipv6Address")(ipv6Address.asInstanceOf[js.Any])
-    if (privateIpv4Address != null) __obj.updateDynamic("privateIpv4Address")(privateIpv4Address.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterface]
   }
+  @scala.inline
+  implicit class NetworkInterfaceOps[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentId(value: String): Self = this.set("attachmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentId: Self = this.set("attachmentId", js.undefined)
+    @scala.inline
+    def setIpv6Address(value: String): Self = this.set("ipv6Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Address: Self = this.set("ipv6Address", js.undefined)
+    @scala.inline
+    def setPrivateIpv4Address(value: String): Self = this.set("privateIpv4Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpv4Address: Self = this.set("privateIpv4Address", js.undefined)
+  }
+  
 }
 

@@ -34,22 +34,46 @@ trait DataTransferProgress extends js.Object {
 
 object DataTransferProgress {
   @scala.inline
-  def apply(
-    CurrentRateInMegaBytesPerSecond: js.UndefOr[DoubleOptional] = js.undefined,
-    DataTransferredInMegaBytes: js.UndefOr[Long] = js.undefined,
-    ElapsedTimeInSeconds: js.UndefOr[LongOptional] = js.undefined,
-    EstimatedTimeToCompletionInSeconds: js.UndefOr[LongOptional] = js.undefined,
-    Status: String = null,
-    TotalDataInMegaBytes: js.UndefOr[Long] = js.undefined
-  ): DataTransferProgress = {
+  def apply(): DataTransferProgress = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CurrentRateInMegaBytesPerSecond)) __obj.updateDynamic("CurrentRateInMegaBytesPerSecond")(CurrentRateInMegaBytesPerSecond.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataTransferredInMegaBytes)) __obj.updateDynamic("DataTransferredInMegaBytes")(DataTransferredInMegaBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ElapsedTimeInSeconds)) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EstimatedTimeToCompletionInSeconds)) __obj.updateDynamic("EstimatedTimeToCompletionInSeconds")(EstimatedTimeToCompletionInSeconds.get.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalDataInMegaBytes)) __obj.updateDynamic("TotalDataInMegaBytes")(TotalDataInMegaBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTransferProgress]
   }
+  @scala.inline
+  implicit class DataTransferProgressOps[Self <: DataTransferProgress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentRateInMegaBytesPerSecond(value: DoubleOptional): Self = this.set("CurrentRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentRateInMegaBytesPerSecond: Self = this.set("CurrentRateInMegaBytesPerSecond", js.undefined)
+    @scala.inline
+    def setDataTransferredInMegaBytes(value: Long): Self = this.set("DataTransferredInMegaBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTransferredInMegaBytes: Self = this.set("DataTransferredInMegaBytes", js.undefined)
+    @scala.inline
+    def setElapsedTimeInSeconds(value: LongOptional): Self = this.set("ElapsedTimeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElapsedTimeInSeconds: Self = this.set("ElapsedTimeInSeconds", js.undefined)
+    @scala.inline
+    def setEstimatedTimeToCompletionInSeconds(value: LongOptional): Self = this.set("EstimatedTimeToCompletionInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedTimeToCompletionInSeconds: Self = this.set("EstimatedTimeToCompletionInSeconds", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTotalDataInMegaBytes(value: Long): Self = this.set("TotalDataInMegaBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalDataInMegaBytes: Self = this.set("TotalDataInMegaBytes", js.undefined)
+  }
+  
 }
 

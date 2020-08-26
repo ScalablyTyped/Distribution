@@ -19,7 +19,7 @@ trait RdsHttpEndpointConfig extends js.Object {
     */
   var databaseName: js.UndefOr[String] = js.native
   /**
-    * Amazon RDS cluster identifier.
+    * Amazon RDS cluster ARN.
     */
   var dbClusterIdentifier: js.UndefOr[String] = js.native
   /**
@@ -30,20 +30,42 @@ trait RdsHttpEndpointConfig extends js.Object {
 
 object RdsHttpEndpointConfig {
   @scala.inline
-  def apply(
-    awsRegion: String = null,
-    awsSecretStoreArn: String = null,
-    databaseName: String = null,
-    dbClusterIdentifier: String = null,
-    schema: String = null
-  ): RdsHttpEndpointConfig = {
+  def apply(): RdsHttpEndpointConfig = {
     val __obj = js.Dynamic.literal()
-    if (awsRegion != null) __obj.updateDynamic("awsRegion")(awsRegion.asInstanceOf[js.Any])
-    if (awsSecretStoreArn != null) __obj.updateDynamic("awsSecretStoreArn")(awsSecretStoreArn.asInstanceOf[js.Any])
-    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
-    if (dbClusterIdentifier != null) __obj.updateDynamic("dbClusterIdentifier")(dbClusterIdentifier.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[RdsHttpEndpointConfig]
   }
+  @scala.inline
+  implicit class RdsHttpEndpointConfigOps[Self <: RdsHttpEndpointConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsRegion(value: String): Self = this.set("awsRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsRegion: Self = this.set("awsRegion", js.undefined)
+    @scala.inline
+    def setAwsSecretStoreArn(value: String): Self = this.set("awsSecretStoreArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsSecretStoreArn: Self = this.set("awsSecretStoreArn", js.undefined)
+    @scala.inline
+    def setDatabaseName(value: String): Self = this.set("databaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseName: Self = this.set("databaseName", js.undefined)
+    @scala.inline
+    def setDbClusterIdentifier(value: String): Self = this.set("dbClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbClusterIdentifier: Self = this.set("dbClusterIdentifier", js.undefined)
+    @scala.inline
+    def setSchema(value: String): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+  }
+  
 }
 

@@ -5,16 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** XML Schema Item */
+@js.native
 trait ISchemaItem extends js.Object {
   @JSName("MSXML2.ISchemaItem_typekey")
-  var MSXML2DotISchemaItem_typekey: ISchemaItem
-  val id: String
-  val itemType: SOMITEMTYPE
-  val name: String
-  val namespaceURI: String
-  val schema: ISchema
-  val unhandledAttributes: IVBSAXAttributes
-  def writeAnnotation(annotationSink: js.Any): Boolean
+  var MSXML2DotISchemaItem_typekey: ISchemaItem = js.native
+  val id: String = js.native
+  val itemType: SOMITEMTYPE = js.native
+  val name: String = js.native
+  val namespaceURI: String = js.native
+  val schema: ISchema = js.native
+  val unhandledAttributes: IVBSAXAttributes = js.native
+  def writeAnnotation(annotationSink: js.Any): Boolean = js.native
 }
 
 object ISchemaItem {
@@ -33,5 +34,34 @@ object ISchemaItem {
     __obj.updateDynamic("MSXML2.ISchemaItem_typekey")(MSXML2DotISchemaItem_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISchemaItem]
   }
+  @scala.inline
+  implicit class ISchemaItemOps[Self <: ISchemaItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMSXML2DotISchemaItem_typekey(value: ISchemaItem): Self = this.set("MSXML2.ISchemaItem_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItemType(value: SOMITEMTYPE): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNamespaceURI(value: String): Self = this.set("namespaceURI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchema(value: ISchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUnhandledAttributes(value: IVBSAXAttributes): Self = this.set("unhandledAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWriteAnnotation(value: js.Any => Boolean): Self = this.set("writeAnnotation", js.Any.fromFunction1(value))
+  }
+  
 }
 

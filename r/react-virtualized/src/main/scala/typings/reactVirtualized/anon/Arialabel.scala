@@ -9,13 +9,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Arialabel extends js.Object {
-  var `aria-label`: Requireable[String]
-  var cellCount: Validator[Double]
-  var cellGroupRenderer: Validator[CollectionCellGroupRenderer]
-  var cellRenderer: Validator[CollectionCellRenderer]
-  var cellSizeAndPositionGetter: Validator[CollectionCellSizeAndPositionGetter]
-  var sectionSize: Requireable[Double]
+  var `aria-label`: Requireable[String] = js.native
+  var cellCount: Validator[Double] = js.native
+  var cellGroupRenderer: Validator[CollectionCellGroupRenderer] = js.native
+  var cellRenderer: Validator[CollectionCellRenderer] = js.native
+  var cellSizeAndPositionGetter: Validator[CollectionCellSizeAndPositionGetter] = js.native
+  var sectionSize: Requireable[Double] = js.native
 }
 
 object Arialabel {
@@ -32,5 +33,30 @@ object Arialabel {
     __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arialabel]
   }
+  @scala.inline
+  implicit class ArialabelOps[Self <: Arialabel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setAria-label`(value: Requireable[String]): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCellCount(value: Validator[Double]): Self = this.set("cellCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCellGroupRenderer(value: Validator[CollectionCellGroupRenderer]): Self = this.set("cellGroupRenderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCellRenderer(value: Validator[CollectionCellRenderer]): Self = this.set("cellRenderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCellSizeAndPositionGetter(value: Validator[CollectionCellSizeAndPositionGetter]): Self = this.set("cellSizeAndPositionGetter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSectionSize(value: Requireable[Double]): Self = this.set("sectionSize", value.asInstanceOf[js.Any])
+  }
+  
 }
 

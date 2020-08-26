@@ -4,64 +4,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimeScale extends ChartScales {
-  var displayFormats: js.UndefOr[TimeDisplayFormat] = js.undefined
-  var isoWeekday: js.UndefOr[Boolean] = js.undefined
-  var max: js.UndefOr[String] = js.undefined
-  var min: js.UndefOr[String] = js.undefined
-  var minUnit: js.UndefOr[TimeUnit] = js.undefined
-  var parser: js.UndefOr[String | (js.Function1[/* arg */ js.Any, _])] = js.undefined
-  var round: js.UndefOr[TimeUnit] = js.undefined
-  var stepSize: js.UndefOr[Double] = js.undefined
-  var tooltipFormat: js.UndefOr[String] = js.undefined
-  var unit: js.UndefOr[TimeUnit] = js.undefined
-  var unitStepSize: js.UndefOr[Double] = js.undefined
+  var displayFormats: js.UndefOr[TimeDisplayFormat] = js.native
+  var isoWeekday: js.UndefOr[Boolean] = js.native
+  var max: js.UndefOr[String] = js.native
+  var min: js.UndefOr[String] = js.native
+  var minUnit: js.UndefOr[TimeUnit] = js.native
+  var parser: js.UndefOr[String | (js.Function1[/* arg */ js.Any, _])] = js.native
+  var round: js.UndefOr[TimeUnit] = js.native
+  var stepSize: js.UndefOr[Double] = js.native
+  var tooltipFormat: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[TimeUnit] = js.native
+  var unitStepSize: js.UndefOr[Double] = js.native
 }
 
 object TimeScale {
   @scala.inline
-  def apply(
-    display: js.UndefOr[Boolean] = js.undefined,
-    displayFormats: TimeDisplayFormat = null,
-    gridLines: GridLineOptions = null,
-    isoWeekday: js.UndefOr[Boolean] = js.undefined,
-    max: String = null,
-    min: String = null,
-    minUnit: TimeUnit = null,
-    parser: String | (js.Function1[/* arg */ js.Any, _]) = null,
-    position: PositionType | String = null,
-    round: TimeUnit = null,
-    scaleLabel: ScaleTitleOptions = null,
-    stepSize: js.UndefOr[Double] = js.undefined,
-    ticks: TickOptions = null,
-    tooltipFormat: String = null,
-    `type`: ScaleType | String = null,
-    unit: TimeUnit = null,
-    unitStepSize: js.UndefOr[Double] = js.undefined,
-    xAxes: js.Array[ChartXAxe] = null,
-    yAxes: js.Array[ChartYAxe] = null
-  ): TimeScale = {
+  def apply(): TimeScale = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.get.asInstanceOf[js.Any])
-    if (displayFormats != null) __obj.updateDynamic("displayFormats")(displayFormats.asInstanceOf[js.Any])
-    if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(isoWeekday)) __obj.updateDynamic("isoWeekday")(isoWeekday.get.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minUnit != null) __obj.updateDynamic("minUnit")(minUnit.asInstanceOf[js.Any])
-    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (scaleLabel != null) __obj.updateDynamic("scaleLabel")(scaleLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepSize)) __obj.updateDynamic("stepSize")(stepSize.get.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (!js.isUndefined(unitStepSize)) __obj.updateDynamic("unitStepSize")(unitStepSize.get.asInstanceOf[js.Any])
-    if (xAxes != null) __obj.updateDynamic("xAxes")(xAxes.asInstanceOf[js.Any])
-    if (yAxes != null) __obj.updateDynamic("yAxes")(yAxes.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeScale]
   }
+  @scala.inline
+  implicit class TimeScaleOps[Self <: TimeScale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayFormats(value: TimeDisplayFormat): Self = this.set("displayFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayFormats: Self = this.set("displayFormats", js.undefined)
+    @scala.inline
+    def setIsoWeekday(value: Boolean): Self = this.set("isoWeekday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsoWeekday: Self = this.set("isoWeekday", js.undefined)
+    @scala.inline
+    def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: String): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMinUnit(value: TimeUnit): Self = this.set("minUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinUnit: Self = this.set("minUnit", js.undefined)
+    @scala.inline
+    def setParserFunction1(value: /* arg */ js.Any => _): Self = this.set("parser", js.Any.fromFunction1(value))
+    @scala.inline
+    def setParser(value: String | (js.Function1[/* arg */ js.Any, _])): Self = this.set("parser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParser: Self = this.set("parser", js.undefined)
+    @scala.inline
+    def setRound(value: TimeUnit): Self = this.set("round", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRound: Self = this.set("round", js.undefined)
+    @scala.inline
+    def setStepSize(value: Double): Self = this.set("stepSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepSize: Self = this.set("stepSize", js.undefined)
+    @scala.inline
+    def setTooltipFormat(value: String): Self = this.set("tooltipFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipFormat: Self = this.set("tooltipFormat", js.undefined)
+    @scala.inline
+    def setUnit(value: TimeUnit): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+    @scala.inline
+    def setUnitStepSize(value: Double): Self = this.set("unitStepSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnitStepSize: Self = this.set("unitStepSize", js.undefined)
+  }
+  
 }
 

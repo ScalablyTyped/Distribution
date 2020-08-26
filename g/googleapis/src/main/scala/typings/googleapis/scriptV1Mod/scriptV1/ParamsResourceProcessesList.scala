@@ -82,56 +82,76 @@ trait ParamsResourceProcessesList extends StandardParameters {
 
 object ParamsResourceProcessesList {
   @scala.inline
-  def apply(
-    $Dotxgafv: String = null,
-    access_token: String = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    callback: String = null,
-    fields: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    pageToken: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    uploadType: String = null,
-    upload_protocol: String = null,
-    userProcessFilterDotdeploymentId: String = null,
-    userProcessFilterDotendTime: String = null,
-    userProcessFilterDotfunctionName: String = null,
-    userProcessFilterDotprojectName: String = null,
-    userProcessFilterDotscriptId: String = null,
-    userProcessFilterDotstartTime: String = null,
-    userProcessFilterDotstatuses: js.Array[String] = null,
-    userProcessFilterDottypes: js.Array[String] = null,
-    userProcessFilterDotuserAccessLevels: js.Array[String] = null
-  ): ParamsResourceProcessesList = {
+  def apply(): ParamsResourceProcessesList = {
     val __obj = js.Dynamic.literal()
-    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
-    if (userProcessFilterDotdeploymentId != null) __obj.updateDynamic("userProcessFilter.deploymentId")(userProcessFilterDotdeploymentId.asInstanceOf[js.Any])
-    if (userProcessFilterDotendTime != null) __obj.updateDynamic("userProcessFilter.endTime")(userProcessFilterDotendTime.asInstanceOf[js.Any])
-    if (userProcessFilterDotfunctionName != null) __obj.updateDynamic("userProcessFilter.functionName")(userProcessFilterDotfunctionName.asInstanceOf[js.Any])
-    if (userProcessFilterDotprojectName != null) __obj.updateDynamic("userProcessFilter.projectName")(userProcessFilterDotprojectName.asInstanceOf[js.Any])
-    if (userProcessFilterDotscriptId != null) __obj.updateDynamic("userProcessFilter.scriptId")(userProcessFilterDotscriptId.asInstanceOf[js.Any])
-    if (userProcessFilterDotstartTime != null) __obj.updateDynamic("userProcessFilter.startTime")(userProcessFilterDotstartTime.asInstanceOf[js.Any])
-    if (userProcessFilterDotstatuses != null) __obj.updateDynamic("userProcessFilter.statuses")(userProcessFilterDotstatuses.asInstanceOf[js.Any])
-    if (userProcessFilterDottypes != null) __obj.updateDynamic("userProcessFilter.types")(userProcessFilterDottypes.asInstanceOf[js.Any])
-    if (userProcessFilterDotuserAccessLevels != null) __obj.updateDynamic("userProcessFilter.userAccessLevels")(userProcessFilterDotuserAccessLevels.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceProcessesList]
   }
+  @scala.inline
+  implicit class ParamsResourceProcessesListOps[Self <: ParamsResourceProcessesList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setUserProcessFilterDotdeploymentId(value: String): Self = this.set("userProcessFilter.deploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProcessFilterDotdeploymentId: Self = this.set("userProcessFilter.deploymentId", js.undefined)
+    @scala.inline
+    def setUserProcessFilterDotendTime(value: String): Self = this.set("userProcessFilter.endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProcessFilterDotendTime: Self = this.set("userProcessFilter.endTime", js.undefined)
+    @scala.inline
+    def setUserProcessFilterDotfunctionName(value: String): Self = this.set("userProcessFilter.functionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProcessFilterDotfunctionName: Self = this.set("userProcessFilter.functionName", js.undefined)
+    @scala.inline
+    def setUserProcessFilterDotprojectName(value: String): Self = this.set("userProcessFilter.projectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProcessFilterDotprojectName: Self = this.set("userProcessFilter.projectName", js.undefined)
+    @scala.inline
+    def setUserProcessFilterDotscriptId(value: String): Self = this.set("userProcessFilter.scriptId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProcessFilterDotscriptId: Self = this.set("userProcessFilter.scriptId", js.undefined)
+    @scala.inline
+    def setUserProcessFilterDotstartTime(value: String): Self = this.set("userProcessFilter.startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProcessFilterDotstartTime: Self = this.set("userProcessFilter.startTime", js.undefined)
+    @scala.inline
+    def setUserProcessFilterDotstatusesVarargs(value: String*): Self = this.set("userProcessFilter.statuses", js.Array(value :_*))
+    @scala.inline
+    def setUserProcessFilterDotstatuses(value: js.Array[String]): Self = this.set("userProcessFilter.statuses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProcessFilterDotstatuses: Self = this.set("userProcessFilter.statuses", js.undefined)
+    @scala.inline
+    def setUserProcessFilterDottypesVarargs(value: String*): Self = this.set("userProcessFilter.types", js.Array(value :_*))
+    @scala.inline
+    def setUserProcessFilterDottypes(value: js.Array[String]): Self = this.set("userProcessFilter.types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProcessFilterDottypes: Self = this.set("userProcessFilter.types", js.undefined)
+    @scala.inline
+    def setUserProcessFilterDotuserAccessLevelsVarargs(value: String*): Self = this.set("userProcessFilter.userAccessLevels", js.Array(value :_*))
+    @scala.inline
+    def setUserProcessFilterDotuserAccessLevels(value: js.Array[String]): Self = this.set("userProcessFilter.userAccessLevels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProcessFilterDotuserAccessLevels: Self = this.set("userProcessFilter.userAccessLevels", js.undefined)
+  }
+  
 }
 

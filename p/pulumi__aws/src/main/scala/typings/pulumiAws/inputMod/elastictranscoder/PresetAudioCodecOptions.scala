@@ -27,18 +27,38 @@ trait PresetAudioCodecOptions extends js.Object {
 
 object PresetAudioCodecOptions {
   @scala.inline
-  def apply(
-    bitDepth: Input[String] = null,
-    bitOrder: Input[String] = null,
-    profile: Input[String] = null,
-    signed: Input[String] = null
-  ): PresetAudioCodecOptions = {
+  def apply(): PresetAudioCodecOptions = {
     val __obj = js.Dynamic.literal()
-    if (bitDepth != null) __obj.updateDynamic("bitDepth")(bitDepth.asInstanceOf[js.Any])
-    if (bitOrder != null) __obj.updateDynamic("bitOrder")(bitOrder.asInstanceOf[js.Any])
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (signed != null) __obj.updateDynamic("signed")(signed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresetAudioCodecOptions]
   }
+  @scala.inline
+  implicit class PresetAudioCodecOptionsOps[Self <: PresetAudioCodecOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBitDepth(value: Input[String]): Self = this.set("bitDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitDepth: Self = this.set("bitDepth", js.undefined)
+    @scala.inline
+    def setBitOrder(value: Input[String]): Self = this.set("bitOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitOrder: Self = this.set("bitOrder", js.undefined)
+    @scala.inline
+    def setProfile(value: Input[String]): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+    @scala.inline
+    def setSigned(value: Input[String]): Self = this.set("signed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigned: Self = this.set("signed", js.undefined)
+  }
+  
 }
 

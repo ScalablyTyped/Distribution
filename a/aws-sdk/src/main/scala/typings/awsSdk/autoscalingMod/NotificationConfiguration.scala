@@ -22,16 +22,34 @@ trait NotificationConfiguration extends js.Object {
 
 object NotificationConfiguration {
   @scala.inline
-  def apply(
-    AutoScalingGroupName: ResourceName = null,
-    NotificationType: XmlStringMaxLen255 = null,
-    TopicARN: ResourceName = null
-  ): NotificationConfiguration = {
+  def apply(): NotificationConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName.asInstanceOf[js.Any])
-    if (NotificationType != null) __obj.updateDynamic("NotificationType")(NotificationType.asInstanceOf[js.Any])
-    if (TopicARN != null) __obj.updateDynamic("TopicARN")(TopicARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationConfiguration]
   }
+  @scala.inline
+  implicit class NotificationConfigurationOps[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupName: Self = this.set("AutoScalingGroupName", js.undefined)
+    @scala.inline
+    def setNotificationType(value: XmlStringMaxLen255): Self = this.set("NotificationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationType: Self = this.set("NotificationType", js.undefined)
+    @scala.inline
+    def setTopicARN(value: ResourceName): Self = this.set("TopicARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicARN: Self = this.set("TopicARN", js.undefined)
+  }
+  
 }
 

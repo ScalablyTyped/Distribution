@@ -370,16 +370,23 @@ class WebDriver protected () extends js.Object {
     * @template T
     */
   def wait(condition: WebElementCondition): WebElementPromise = js.native
+  def wait(condition: WebElementCondition, opt_timeout: js.UndefOr[scala.Nothing], opt_message: String): WebElementPromise = js.native
   def wait(condition: WebElementCondition, opt_timeout: Double): WebElementPromise = js.native
   def wait(condition: WebElementCondition, opt_timeout: Double, opt_message: String): WebElementPromise = js.native
   def wait[T](condition: js.Function): js.Promise[T] = js.native
   def wait[T](condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]]): js.Promise[T] = js.native
+  def wait[T](
+    condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]],
+    opt_timeout: js.UndefOr[scala.Nothing],
+    opt_message: String
+  ): js.Promise[T] = js.native
   def wait[T](condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]], opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](
     condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]],
     opt_timeout: Double,
     opt_message: String
   ): js.Promise[T] = js.native
+  def wait[T](condition: js.Function, opt_timeout: js.UndefOr[scala.Nothing], opt_message: String): js.Promise[T] = js.native
   def wait[T](condition: js.Function, opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](condition: js.Function, opt_timeout: Double, opt_message: String): js.Promise[T] = js.native
   /**
@@ -433,9 +440,11 @@ class WebDriver protected () extends js.Object {
     * @template T
     */
   def wait[T](condition: js.Thenable[T]): js.Promise[T] = js.native
+  def wait[T](condition: js.Thenable[T], opt_timeout: js.UndefOr[scala.Nothing], opt_message: String): js.Promise[T] = js.native
   def wait[T](condition: js.Thenable[T], opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](condition: js.Thenable[T], opt_timeout: Double, opt_message: String): js.Promise[T] = js.native
   def wait[T](condition: Condition[T]): js.Promise[T] = js.native
+  def wait[T](condition: Condition[T], opt_timeout: js.UndefOr[scala.Nothing], opt_message: String): js.Promise[T] = js.native
   def wait[T](condition: Condition[T], opt_timeout: Double): js.Promise[T] = js.native
   def wait[T](condition: Condition[T], opt_timeout: Double, opt_message: String): js.Promise[T] = js.native
 }

@@ -37,18 +37,42 @@ trait SchemaServingRestriction extends js.Object {
 
 object SchemaServingRestriction {
   @scala.inline
-  def apply(
-    contexts: js.Array[SchemaServingContext] = null,
-    disapproval: SchemaDisapproval = null,
-    disapprovalReasons: js.Array[SchemaDisapproval] = null,
-    status: String = null
-  ): SchemaServingRestriction = {
+  def apply(): SchemaServingRestriction = {
     val __obj = js.Dynamic.literal()
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
-    if (disapproval != null) __obj.updateDynamic("disapproval")(disapproval.asInstanceOf[js.Any])
-    if (disapprovalReasons != null) __obj.updateDynamic("disapprovalReasons")(disapprovalReasons.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServingRestriction]
   }
+  @scala.inline
+  implicit class SchemaServingRestrictionOps[Self <: SchemaServingRestriction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContextsVarargs(value: SchemaServingContext*): Self = this.set("contexts", js.Array(value :_*))
+    @scala.inline
+    def setContexts(value: js.Array[SchemaServingContext]): Self = this.set("contexts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContexts: Self = this.set("contexts", js.undefined)
+    @scala.inline
+    def setDisapproval(value: SchemaDisapproval): Self = this.set("disapproval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisapproval: Self = this.set("disapproval", js.undefined)
+    @scala.inline
+    def setDisapprovalReasonsVarargs(value: SchemaDisapproval*): Self = this.set("disapprovalReasons", js.Array(value :_*))
+    @scala.inline
+    def setDisapprovalReasons(value: js.Array[SchemaDisapproval]): Self = this.set("disapprovalReasons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisapprovalReasons: Self = this.set("disapprovalReasons", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

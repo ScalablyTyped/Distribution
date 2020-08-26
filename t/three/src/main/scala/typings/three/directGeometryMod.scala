@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 object directGeometryMod extends js.Object {
   @js.native
   class DirectGeometry () extends js.Object {
-    var boundingBox: Box3 = js.native
-    var boundingSphere: Sphere = js.native
+    var boundingBox: Box3 | Null = js.native
+    var boundingSphere: Sphere | Null = js.native
     var colors: js.Array[Color] = js.native
     var colorsNeedUpdate: Boolean = js.native
     var groups: js.Array[MaterialIndexStart] = js.native

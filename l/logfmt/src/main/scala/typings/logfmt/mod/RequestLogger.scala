@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 trait RequestLogger extends js.Object {
   def apply(): HTTPHandler = js.native
   def apply(formatter: RequestLoggerFormatter): HTTPHandler = js.native
+  def apply(options: js.UndefOr[scala.Nothing], formatter: RequestLoggerFormatter): HTTPHandler = js.native
   def apply(options: RequestLoggerOptions): HTTPHandler = js.native
   def apply(options: RequestLoggerOptions, formatter: RequestLoggerFormatter): HTTPHandler = js.native
   def commonFormatter(req: IncomingMessage, res: ServerResponse): Contentlength = js.native

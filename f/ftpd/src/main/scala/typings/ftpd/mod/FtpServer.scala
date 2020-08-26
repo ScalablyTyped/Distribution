@@ -29,7 +29,26 @@ class FtpServer protected () extends EventEmitter {
     * Start listening, see net.Server.listen()
     */
   def listen(port: Double): Unit = js.native
+  def listen(
+    port: Double,
+    host: js.UndefOr[scala.Nothing],
+    backlog: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): Unit = js.native
+  def listen(port: Double, host: js.UndefOr[scala.Nothing], backlog: Double): Unit = js.native
+  def listen(
+    port: Double,
+    host: js.UndefOr[scala.Nothing],
+    backlog: Double,
+    listeningListener: js.Function0[Unit]
+  ): Unit = js.native
   def listen(port: Double, host: String): Unit = js.native
+  def listen(
+    port: Double,
+    host: String,
+    backlog: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): Unit = js.native
   def listen(port: Double, host: String, backlog: Double): Unit = js.native
   def listen(port: Double, host: String, backlog: Double, listeningListener: js.Function0[Unit]): Unit = js.native
 }

@@ -4,32 +4,47 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlannerAssignedToTaskBoardTaskFormat extends Entity {
   /**
     * Dictionary of hints used to order tasks on the AssignedTo view of the Task Board. The key of each entry is one of the
     * users the task is assigned to and the value is the order hint. The format of each value is defined as outlined here.
     */
-  var orderHintsByAssignee: js.UndefOr[PlannerOrderHintsByAssignee] = js.undefined
+  var orderHintsByAssignee: js.UndefOr[PlannerOrderHintsByAssignee] = js.native
   /**
     * Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or
     * if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format
     * is defined as outlined here.
     */
-  var unassignedOrderHint: js.UndefOr[String] = js.undefined
+  var unassignedOrderHint: js.UndefOr[String] = js.native
 }
 
 object PlannerAssignedToTaskBoardTaskFormat {
   @scala.inline
-  def apply(
-    id: String = null,
-    orderHintsByAssignee: PlannerOrderHintsByAssignee = null,
-    unassignedOrderHint: String = null
-  ): PlannerAssignedToTaskBoardTaskFormat = {
+  def apply(): PlannerAssignedToTaskBoardTaskFormat = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (orderHintsByAssignee != null) __obj.updateDynamic("orderHintsByAssignee")(orderHintsByAssignee.asInstanceOf[js.Any])
-    if (unassignedOrderHint != null) __obj.updateDynamic("unassignedOrderHint")(unassignedOrderHint.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerAssignedToTaskBoardTaskFormat]
   }
+  @scala.inline
+  implicit class PlannerAssignedToTaskBoardTaskFormatOps[Self <: PlannerAssignedToTaskBoardTaskFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOrderHintsByAssignee(value: PlannerOrderHintsByAssignee): Self = this.set("orderHintsByAssignee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderHintsByAssignee: Self = this.set("orderHintsByAssignee", js.undefined)
+    @scala.inline
+    def setUnassignedOrderHint(value: String): Self = this.set("unassignedOrderHint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnassignedOrderHint: Self = this.set("unassignedOrderHint", js.undefined)
+  }
+  
 }
 

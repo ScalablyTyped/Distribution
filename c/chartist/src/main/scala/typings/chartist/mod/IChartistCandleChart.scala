@@ -20,7 +20,7 @@ trait IChartistCandleChart
      with Instantiable4[
       /* target */ js.Any, 
       /* data */ IChartistData, 
-      /* options */ ICandleChartOptions, 
+      js.UndefOr[/* options */ ICandleChartOptions], 
       /* responsiveOptions */ js.Array[IResponsiveOptionTuple[ICandleChartOptions]], 
       IChartistCandleChart
     ]

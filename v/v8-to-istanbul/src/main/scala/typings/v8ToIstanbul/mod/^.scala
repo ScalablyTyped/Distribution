@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(scriptPath: String): V8ToIstanbul = js.native
+  def apply(scriptPath: String, wrapperLength: js.UndefOr[scala.Nothing], sources: Sources): V8ToIstanbul = js.native
   def apply(scriptPath: String, wrapperLength: Double): V8ToIstanbul = js.native
   def apply(scriptPath: String, wrapperLength: Double, sources: Sources): V8ToIstanbul = js.native
 }

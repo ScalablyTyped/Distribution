@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NumberSequence () extends js.Object {
   def this(initValue: Double) = this()
+  def this(initValue: js.UndefOr[scala.Nothing], step: Double) = this()
   def this(initValue: Double, step: Double) = this()
   var nextValue: js.Any = js.native
   var step: js.Any = js.native

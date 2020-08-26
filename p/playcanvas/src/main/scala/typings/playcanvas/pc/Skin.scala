@@ -12,5 +12,6 @@ import scala.scalajs.js.annotation._
   * @param ibp - The array of inverse bind matrices.
   * @param boneNames - The array of bone names for the bones referenced by this skin.
   */
+@js.native
 trait Skin extends js.Object
 

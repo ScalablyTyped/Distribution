@@ -10,9 +10,9 @@ Runs (webpack) loaders
 | ------------------ | :-------------: |
 | Full name          | loader-runner |
 | Keywords           | webpack, loader |
-| # releases         | 3 |
-| # dependents       | 58 |
-| # downloads        | 275785611 |
+| # releases         | 5 |
+| # dependents       | 60 |
+| # downloads        | 291996901 |
 | # stars            | 2 |
 
 ## Links

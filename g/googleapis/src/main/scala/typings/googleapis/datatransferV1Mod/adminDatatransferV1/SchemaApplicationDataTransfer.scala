@@ -26,16 +26,36 @@ trait SchemaApplicationDataTransfer extends js.Object {
 
 object SchemaApplicationDataTransfer {
   @scala.inline
-  def apply(
-    applicationId: String = null,
-    applicationTransferParams: js.Array[SchemaApplicationTransferParam] = null,
-    applicationTransferStatus: String = null
-  ): SchemaApplicationDataTransfer = {
+  def apply(): SchemaApplicationDataTransfer = {
     val __obj = js.Dynamic.literal()
-    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
-    if (applicationTransferParams != null) __obj.updateDynamic("applicationTransferParams")(applicationTransferParams.asInstanceOf[js.Any])
-    if (applicationTransferStatus != null) __obj.updateDynamic("applicationTransferStatus")(applicationTransferStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApplicationDataTransfer]
   }
+  @scala.inline
+  implicit class SchemaApplicationDataTransferOps[Self <: SchemaApplicationDataTransfer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: String): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    @scala.inline
+    def setApplicationTransferParamsVarargs(value: SchemaApplicationTransferParam*): Self = this.set("applicationTransferParams", js.Array(value :_*))
+    @scala.inline
+    def setApplicationTransferParams(value: js.Array[SchemaApplicationTransferParam]): Self = this.set("applicationTransferParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationTransferParams: Self = this.set("applicationTransferParams", js.undefined)
+    @scala.inline
+    def setApplicationTransferStatus(value: String): Self = this.set("applicationTransferStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationTransferStatus: Self = this.set("applicationTransferStatus", js.undefined)
+  }
+  
 }
 

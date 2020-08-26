@@ -7,22 +7,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LinkObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.links.emphasis
     */
-  var emphasis: js.UndefOr[LabelLineStyle] = js.undefined
+  var emphasis: js.UndefOr[LabelLineStyle] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.links.label
     */
-  var label: js.UndefOr[FontSize] = js.undefined
+  var label: js.UndefOr[FontSize] = js.native
   /**
     * Line style of edges.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.links.lineStyle
     */
-  var lineStyle: js.UndefOr[ShadowColor] = js.undefined
+  var lineStyle: js.UndefOr[ShadowColor] = js.native
   /**
     * [name of source node](https://echarts.apache.org/en/option.html#series-graph.data.name)
     * on edge
@@ -30,7 +31,7 @@ trait LinkObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.links.source
     */
-  var source: js.UndefOr[String] = js.undefined
+  var source: js.UndefOr[String] = js.native
   /**
     * Symbol of edge ends.
     * Can be an array with two item to specify two ends, or a string
@@ -39,7 +40,7 @@ trait LinkObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.links.symbol
     */
-  var symbol: js.UndefOr[js.Array[_] | String] = js.undefined
+  var symbol: js.UndefOr[js.Array[_] | String] = js.native
   /**
     * Symbol size of edge ends.
     * Can be an array with two item to specify two ends, or a string
@@ -48,7 +49,7 @@ trait LinkObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.links.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | String] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[_] | String] = js.native
   /**
     * [name of target node](https://echarts.apache.org/en/option.html#series-graph.data.name)
     * on edge
@@ -56,38 +57,70 @@ trait LinkObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.links.target
     */
-  var target: js.UndefOr[String] = js.undefined
+  var target: js.UndefOr[String] = js.native
   /**
     * value of edge, can be mapped to edge length in force graph.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.links.value
     */
-  var value: js.UndefOr[Double] = js.undefined
+  var value: js.UndefOr[Double] = js.native
 }
 
 object LinkObject {
   @scala.inline
-  def apply(
-    emphasis: LabelLineStyle = null,
-    label: FontSize = null,
-    lineStyle: ShadowColor = null,
-    source: String = null,
-    symbol: js.Array[_] | String = null,
-    symbolSize: js.Array[_] | String = null,
-    target: String = null,
-    value: js.UndefOr[Double] = js.undefined
-  ): LinkObject = {
+  def apply(): LinkObject = {
     val __obj = js.Dynamic.literal()
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkObject]
   }
+  @scala.inline
+  implicit class LinkObjectOps[Self <: LinkObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmphasis(value: LabelLineStyle): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setLabel(value: FontSize): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLineStyle(value: ShadowColor): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSymbolVarargs(value: js.Any*): Self = this.set("symbol", js.Array(value :_*))
+    @scala.inline
+    def setSymbol(value: js.Array[_] | String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setSymbolSizeVarargs(value: js.Any*): Self = this.set("symbolSize", js.Array(value :_*))
+    @scala.inline
+    def setSymbolSize(value: js.Array[_] | String): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

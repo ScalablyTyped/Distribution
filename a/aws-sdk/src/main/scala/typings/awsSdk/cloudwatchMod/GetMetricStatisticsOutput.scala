@@ -18,11 +18,32 @@ trait GetMetricStatisticsOutput extends js.Object {
 
 object GetMetricStatisticsOutput {
   @scala.inline
-  def apply(Datapoints: Datapoints = null, Label: MetricLabel = null): GetMetricStatisticsOutput = {
+  def apply(): GetMetricStatisticsOutput = {
     val __obj = js.Dynamic.literal()
-    if (Datapoints != null) __obj.updateDynamic("Datapoints")(Datapoints.asInstanceOf[js.Any])
-    if (Label != null) __obj.updateDynamic("Label")(Label.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMetricStatisticsOutput]
   }
+  @scala.inline
+  implicit class GetMetricStatisticsOutputOps[Self <: GetMetricStatisticsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatapointsVarargs(value: Datapoint*): Self = this.set("Datapoints", js.Array(value :_*))
+    @scala.inline
+    def setDatapoints(value: Datapoints): Self = this.set("Datapoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatapoints: Self = this.set("Datapoints", js.undefined)
+    @scala.inline
+    def setLabel(value: MetricLabel): Self = this.set("Label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("Label", js.undefined)
+  }
+  
 }
 

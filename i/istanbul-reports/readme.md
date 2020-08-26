@@ -1,7 +1,7 @@
 
 # Scala.js typings for istanbul-reports
 
-Typings are for version 1.1
+Typings are for version 3.0
 
 ## Library description:
 istanbul reports
@@ -10,9 +10,9 @@ istanbul reports
 | ------------------ | :-------------: |
 | Full name          | istanbul-reports |
 | Keywords           | istanbul, reports |
-| # releases         | 29 |
-| # dependents       | 56 |
-| # downloads        | 282524694 |
+| # releases         | 28 |
+| # dependents       | 57 |
+| # downloads        | 287487921 |
 | # stars            | 0 |
 
 ## Links

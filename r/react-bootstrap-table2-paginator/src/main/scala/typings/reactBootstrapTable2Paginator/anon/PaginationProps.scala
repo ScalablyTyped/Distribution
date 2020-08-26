@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PaginationProps extends js.Object {
-  var paginationProps: PaginationChildProps
-  var paginationTableProps: BootstrapTableProps[_]
+  var paginationProps: PaginationChildProps = js.native
+  var paginationTableProps: BootstrapTableProps[_] = js.native
 }
 
 object PaginationProps {
@@ -17,5 +18,22 @@ object PaginationProps {
     val __obj = js.Dynamic.literal(paginationProps = paginationProps.asInstanceOf[js.Any], paginationTableProps = paginationTableProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationProps]
   }
+  @scala.inline
+  implicit class PaginationPropsOps[Self <: PaginationProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPaginationProps(value: PaginationChildProps): Self = this.set("paginationProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaginationTableProps(value: BootstrapTableProps[_]): Self = this.set("paginationTableProps", value.asInstanceOf[js.Any])
+  }
+  
 }
 

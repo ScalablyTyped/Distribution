@@ -31,16 +31,38 @@ trait SchemaSourceSplitResponse extends js.Object {
 
 object SchemaSourceSplitResponse {
   @scala.inline
-  def apply(
-    bundles: js.Array[SchemaDerivedSource] = null,
-    outcome: String = null,
-    shards: js.Array[SchemaSourceSplitShard] = null
-  ): SchemaSourceSplitResponse = {
+  def apply(): SchemaSourceSplitResponse = {
     val __obj = js.Dynamic.literal()
-    if (bundles != null) __obj.updateDynamic("bundles")(bundles.asInstanceOf[js.Any])
-    if (outcome != null) __obj.updateDynamic("outcome")(outcome.asInstanceOf[js.Any])
-    if (shards != null) __obj.updateDynamic("shards")(shards.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceSplitResponse]
   }
+  @scala.inline
+  implicit class SchemaSourceSplitResponseOps[Self <: SchemaSourceSplitResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBundlesVarargs(value: SchemaDerivedSource*): Self = this.set("bundles", js.Array(value :_*))
+    @scala.inline
+    def setBundles(value: js.Array[SchemaDerivedSource]): Self = this.set("bundles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundles: Self = this.set("bundles", js.undefined)
+    @scala.inline
+    def setOutcome(value: String): Self = this.set("outcome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutcome: Self = this.set("outcome", js.undefined)
+    @scala.inline
+    def setShardsVarargs(value: SchemaSourceSplitShard*): Self = this.set("shards", js.Array(value :_*))
+    @scala.inline
+    def setShards(value: js.Array[SchemaSourceSplitShard]): Self = this.set("shards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShards: Self = this.set("shards", js.undefined)
+  }
+  
 }
 

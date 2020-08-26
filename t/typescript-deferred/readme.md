@@ -12,7 +12,7 @@ A tiny Promises/A+ promise implementation written in Typescript
 | Keywords           | promise, deferred, typescript, promises-aplus |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 573 |
+| # downloads        | 588 |
 | # stars            | 0 |
 
 ## Links

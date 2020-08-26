@@ -225,6 +225,7 @@ object Tweens extends js.Object {
       * @param scope The context scope of the callback.
       */
     def setCallback(`type`: String, callback: js.Function): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: js.UndefOr[scala.Nothing], scope: js.Object): this.type = js.native
     def setCallback(`type`: String, callback: js.Function, params: js.Array[_]): this.type = js.native
     def setCallback(`type`: String, callback: js.Function, params: js.Array[_], scope: js.Object): this.type = js.native
     /**
@@ -272,7 +273,7 @@ object Tweens extends js.Object {
       * `onStart` When the Tween starts playing after a delayed state. Will happen at the same time as `onActive` if it has no delay.
       * `onYoyo` When a TweenData starts a yoyo. This happens _after_ the `hold` delay expires, if set.
       * `onRepeat` When a TweenData repeats playback. This happens _after_ the `repeatDelay` expires, if set.
-      * `onComplete` When the Tween finishes playback fully or `Tween.stop` is called. Never invoked if tween is set to repeat infinitely.
+      * `onComplete` When the Tween finishes playback fully. Never invoked if tween is set to repeat infinitely.
       * `onUpdate` When a TweenData updates a property on a source target during playback.
       * `onLoop` When a Tween loops. This happens _after_ the `loopDelay` expires, if set.
       */
@@ -527,6 +528,7 @@ object Tweens extends js.Object {
       * @param scope The context the callback will be invoked in.
       */
     def setCallback(`type`: String, callback: js.Function): this.type = js.native
+    def setCallback(`type`: String, callback: js.Function, params: js.UndefOr[scala.Nothing], scope: js.Any): this.type = js.native
     def setCallback(`type`: String, callback: js.Function, params: js.Array[_]): this.type = js.native
     def setCallback(`type`: String, callback: js.Function, params: js.Array[_], scope: js.Any): this.type = js.native
     /**
@@ -628,13 +630,13 @@ object Tweens extends js.Object {
       * We need to shutdown and then kill off all external references.
       */
     def destroy(): Unit = js.native
+    def each(callback: js.Function, scope: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /**
       * Passes all Tweens to the given callback.
       * @param callback The function to call.
       * @param scope The scope (`this` object) to call the function with.
       * @param args The arguments to pass into the function. Its first argument will always be the Tween currently being iterated.
       */
-    def each(callback: js.Function): Unit = js.native
     def each(callback: js.Function, scope: js.Object, args: js.Any*): Unit = js.native
     /**
       * Add an existing tween into the active Tween list.
@@ -744,7 +746,7 @@ object Tweens extends js.Object {
       */
     def stagger(value: Double, config: StaggerConfig): js.Function = js.native
     /**
-      * Create a Tween Timeline and add it to the active Tween list/
+      * Create a Tween Timeline and add it to the active Tween list.
       * @param config The configuration object for the Timeline and its Tweens.
       */
     def timeline(): Timeline = js.native

@@ -18,10 +18,28 @@ trait CancelBundleTaskRequest extends js.Object {
 
 object CancelBundleTaskRequest {
   @scala.inline
-  def apply(BundleId: BundleId, DryRun: js.UndefOr[Boolean] = js.undefined): CancelBundleTaskRequest = {
+  def apply(BundleId: BundleId): CancelBundleTaskRequest = {
     val __obj = js.Dynamic.literal(BundleId = BundleId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelBundleTaskRequest]
   }
+  @scala.inline
+  implicit class CancelBundleTaskRequestOps[Self <: CancelBundleTaskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBundleId(value: BundleId): Self = this.set("BundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

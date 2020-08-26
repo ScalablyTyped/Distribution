@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class JsonMetadataClass protected () extends js.Object {
   def this(name: String, properties: js.Array[_]) = this()
   def this(name: String, properties: js.Array[_], creator: js.Function1[/* json */ js.UndefOr[js.Any], _]) = this()
+  def this(name: String, properties: js.Array[_], creator: js.UndefOr[scala.Nothing], parentName: String) = this()
   def this(
     name: String,
     properties: js.Array[_],

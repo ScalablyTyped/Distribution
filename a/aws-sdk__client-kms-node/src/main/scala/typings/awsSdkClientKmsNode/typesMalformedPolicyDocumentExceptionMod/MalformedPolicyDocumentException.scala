@@ -8,12 +8,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MalformedPolicyDocumentException
   extends ServiceException[MalformedPolicyDocumentExceptionDetails]
      with CreateKeyExceptionsUnion
      with PutKeyPolicyExceptionsUnion {
   @JSName("name")
-  var name_MalformedPolicyDocumentException: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.MalformedPolicyDocumentException
+  var name_MalformedPolicyDocumentException: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.MalformedPolicyDocumentException = js.native
 }
 
 object MalformedPolicyDocumentException {
@@ -22,12 +23,25 @@ object MalformedPolicyDocumentException {
     $metadata: ResponseMetadata,
     details: MalformedPolicyDocumentExceptionDetails,
     message: String,
-    name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.MalformedPolicyDocumentException,
-    stack: String = null
+    name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.MalformedPolicyDocumentException
   ): MalformedPolicyDocumentException = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[MalformedPolicyDocumentException]
   }
+  @scala.inline
+  implicit class MalformedPolicyDocumentExceptionOps[Self <: MalformedPolicyDocumentException] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.MalformedPolicyDocumentException): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

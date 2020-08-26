@@ -26,18 +26,38 @@ trait ListFindingsRequest extends js.Object {
 
 object ListFindingsRequest {
   @scala.inline
-  def apply(
-    findingCriteria: FindingCriteria = null,
-    maxResults: js.UndefOr[integer] = js.undefined,
-    nextToken: string = null,
-    sortCriteria: SortCriteria = null
-  ): ListFindingsRequest = {
+  def apply(): ListFindingsRequest = {
     val __obj = js.Dynamic.literal()
-    if (findingCriteria != null) __obj.updateDynamic("findingCriteria")(findingCriteria.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (sortCriteria != null) __obj.updateDynamic("sortCriteria")(sortCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFindingsRequest]
   }
+  @scala.inline
+  implicit class ListFindingsRequestOps[Self <: ListFindingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFindingCriteria(value: FindingCriteria): Self = this.set("findingCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindingCriteria: Self = this.set("findingCriteria", js.undefined)
+    @scala.inline
+    def setMaxResults(value: integer): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setSortCriteria(value: SortCriteria): Self = this.set("sortCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortCriteria: Self = this.set("sortCriteria", js.undefined)
+  }
+  
 }
 

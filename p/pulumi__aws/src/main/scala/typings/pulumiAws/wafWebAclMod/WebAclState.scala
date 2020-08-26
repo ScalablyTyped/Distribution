@@ -36,31 +36,59 @@ trait WebAclState extends js.Object {
     */
   val rules: js.UndefOr[Input[js.Array[Input[WebAclRule]]]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object WebAclState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    defaultAction: Input[WebAclDefaultAction] = null,
-    loggingConfiguration: Input[WebAclLoggingConfiguration] = null,
-    metricName: Input[String] = null,
-    name: Input[String] = null,
-    rules: Input[js.Array[Input[WebAclRule]]] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): WebAclState = {
+  def apply(): WebAclState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (defaultAction != null) __obj.updateDynamic("defaultAction")(defaultAction.asInstanceOf[js.Any])
-    if (loggingConfiguration != null) __obj.updateDynamic("loggingConfiguration")(loggingConfiguration.asInstanceOf[js.Any])
-    if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclState]
   }
+  @scala.inline
+  implicit class WebAclStateOps[Self <: WebAclState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDefaultAction(value: Input[WebAclDefaultAction]): Self = this.set("defaultAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAction: Self = this.set("defaultAction", js.undefined)
+    @scala.inline
+    def setLoggingConfiguration(value: Input[WebAclLoggingConfiguration]): Self = this.set("loggingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfiguration: Self = this.set("loggingConfiguration", js.undefined)
+    @scala.inline
+    def setMetricName(value: Input[String]): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("metricName", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: Input[WebAclRule]*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: Input[js.Array[Input[WebAclRule]]]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

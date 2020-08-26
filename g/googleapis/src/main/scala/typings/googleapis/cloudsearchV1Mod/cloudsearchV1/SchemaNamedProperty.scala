@@ -30,30 +30,62 @@ trait SchemaNamedProperty extends js.Object {
 
 object SchemaNamedProperty {
   @scala.inline
-  def apply(
-    booleanValue: js.UndefOr[Boolean] = js.undefined,
-    dateValues: SchemaDateValues = null,
-    doubleValues: SchemaDoubleValues = null,
-    enumValues: SchemaEnumValues = null,
-    htmlValues: SchemaHtmlValues = null,
-    integerValues: SchemaIntegerValues = null,
-    name: String = null,
-    objectValues: SchemaObjectValues = null,
-    textValues: SchemaTextValues = null,
-    timestampValues: SchemaTimestampValues = null
-  ): SchemaNamedProperty = {
+  def apply(): SchemaNamedProperty = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.get.asInstanceOf[js.Any])
-    if (dateValues != null) __obj.updateDynamic("dateValues")(dateValues.asInstanceOf[js.Any])
-    if (doubleValues != null) __obj.updateDynamic("doubleValues")(doubleValues.asInstanceOf[js.Any])
-    if (enumValues != null) __obj.updateDynamic("enumValues")(enumValues.asInstanceOf[js.Any])
-    if (htmlValues != null) __obj.updateDynamic("htmlValues")(htmlValues.asInstanceOf[js.Any])
-    if (integerValues != null) __obj.updateDynamic("integerValues")(integerValues.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (objectValues != null) __obj.updateDynamic("objectValues")(objectValues.asInstanceOf[js.Any])
-    if (textValues != null) __obj.updateDynamic("textValues")(textValues.asInstanceOf[js.Any])
-    if (timestampValues != null) __obj.updateDynamic("timestampValues")(timestampValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNamedProperty]
   }
+  @scala.inline
+  implicit class SchemaNamedPropertyOps[Self <: SchemaNamedProperty] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBooleanValue(value: Boolean): Self = this.set("booleanValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBooleanValue: Self = this.set("booleanValue", js.undefined)
+    @scala.inline
+    def setDateValues(value: SchemaDateValues): Self = this.set("dateValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateValues: Self = this.set("dateValues", js.undefined)
+    @scala.inline
+    def setDoubleValues(value: SchemaDoubleValues): Self = this.set("doubleValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleValues: Self = this.set("doubleValues", js.undefined)
+    @scala.inline
+    def setEnumValues(value: SchemaEnumValues): Self = this.set("enumValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnumValues: Self = this.set("enumValues", js.undefined)
+    @scala.inline
+    def setHtmlValues(value: SchemaHtmlValues): Self = this.set("htmlValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlValues: Self = this.set("htmlValues", js.undefined)
+    @scala.inline
+    def setIntegerValues(value: SchemaIntegerValues): Self = this.set("integerValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegerValues: Self = this.set("integerValues", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setObjectValues(value: SchemaObjectValues): Self = this.set("objectValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectValues: Self = this.set("objectValues", js.undefined)
+    @scala.inline
+    def setTextValues(value: SchemaTextValues): Self = this.set("textValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextValues: Self = this.set("textValues", js.undefined)
+    @scala.inline
+    def setTimestampValues(value: SchemaTimestampValues): Self = this.set("timestampValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampValues: Self = this.set("timestampValues", js.undefined)
+  }
+  
 }
 

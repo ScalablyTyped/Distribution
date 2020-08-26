@@ -43,8 +43,8 @@ trait ScreenComponent extends Component {
   var screenSpace: Boolean = js.native
   /**
     * Set the drawOrder of each child {@link pc.ElementComponent}
-    so that ElementComponents which are last in the hierarchy are rendered on top.
-    Draw Order sync is queued and will be updated by the next update loop.
+    * so that ElementComponents which are last in the hierarchy are rendered on top.
+    * Draw Order sync is queued and will be updated by the next update loop.
     */
   def syncDrawOrder(): Unit = js.native
 }

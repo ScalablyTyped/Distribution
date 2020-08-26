@@ -31,13 +31,38 @@ trait SchemaITunesConnectAnalytics extends js.Object {
 
 object SchemaITunesConnectAnalytics {
   @scala.inline
-  def apply(at: String = null, ct: String = null, mt: String = null, pt: String = null): SchemaITunesConnectAnalytics = {
+  def apply(): SchemaITunesConnectAnalytics = {
     val __obj = js.Dynamic.literal()
-    if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
-    if (ct != null) __obj.updateDynamic("ct")(ct.asInstanceOf[js.Any])
-    if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
-    if (pt != null) __obj.updateDynamic("pt")(pt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaITunesConnectAnalytics]
   }
+  @scala.inline
+  implicit class SchemaITunesConnectAnalyticsOps[Self <: SchemaITunesConnectAnalytics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAt(value: String): Self = this.set("at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAt: Self = this.set("at", js.undefined)
+    @scala.inline
+    def setCt(value: String): Self = this.set("ct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCt: Self = this.set("ct", js.undefined)
+    @scala.inline
+    def setMt(value: String): Self = this.set("mt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMt: Self = this.set("mt", js.undefined)
+    @scala.inline
+    def setPt(value: String): Self = this.set("pt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePt: Self = this.set("pt", js.undefined)
+  }
+  
 }
 

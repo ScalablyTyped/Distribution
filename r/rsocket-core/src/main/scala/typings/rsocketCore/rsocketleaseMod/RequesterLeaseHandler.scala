@@ -13,14 +13,6 @@ class RequesterLeaseHandler protected ()
      with Disposable {
   def this(leaseReceiver: js.Function1[/* flowable */ Flowable[Lease], Unit]) = this()
   def availability(): Double = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  /* CompleteClass */
-  override def errorMessage(): String = js.native
-  /* CompleteClass */
-  override def isDisposed(): Boolean = js.native
   def receive(frame: LeaseFrame): Unit = js.native
-  /* CompleteClass */
-  override def use(): Boolean = js.native
 }
 

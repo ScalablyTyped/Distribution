@@ -40,6 +40,7 @@ object mod extends js.Object {
       */
     def this(body: String) = this()
     def this(body: String, status: Double) = this()
+    def this(body: String, status: js.UndefOr[scala.Nothing], headers: js.Object) = this()
     def this(body: String, status: Double, headers: js.Object) = this()
   }
   
@@ -130,7 +131,7 @@ object mod extends js.Object {
     object SimpleRouter
       extends TopLevel[
               Instantiable1[
-                js.UndefOr[/* road */ typings.roads.roadMod.default], 
+                /* road */ js.UndefOr[typings.roads.roadMod.default], 
                 typings.roads.simpleRouterMod.default
               ]
             ]

@@ -34,22 +34,48 @@ trait LocalGatewayRouteTableVirtualInterfaceGroupAssociation extends js.Object {
 
 object LocalGatewayRouteTableVirtualInterfaceGroupAssociation {
   @scala.inline
-  def apply(
-    LocalGatewayId: String = null,
-    LocalGatewayRouteTableId: LocalGatewayId = null,
-    LocalGatewayRouteTableVirtualInterfaceGroupAssociationId: LocalGatewayRouteTableVirtualInterfaceGroupAssociationId = null,
-    LocalGatewayVirtualInterfaceGroupId: LocalGatewayVirtualInterfaceGroupId = null,
-    State: String = null,
-    Tags: TagList = null
-  ): LocalGatewayRouteTableVirtualInterfaceGroupAssociation = {
+  def apply(): LocalGatewayRouteTableVirtualInterfaceGroupAssociation = {
     val __obj = js.Dynamic.literal()
-    if (LocalGatewayId != null) __obj.updateDynamic("LocalGatewayId")(LocalGatewayId.asInstanceOf[js.Any])
-    if (LocalGatewayRouteTableId != null) __obj.updateDynamic("LocalGatewayRouteTableId")(LocalGatewayRouteTableId.asInstanceOf[js.Any])
-    if (LocalGatewayRouteTableVirtualInterfaceGroupAssociationId != null) __obj.updateDynamic("LocalGatewayRouteTableVirtualInterfaceGroupAssociationId")(LocalGatewayRouteTableVirtualInterfaceGroupAssociationId.asInstanceOf[js.Any])
-    if (LocalGatewayVirtualInterfaceGroupId != null) __obj.updateDynamic("LocalGatewayVirtualInterfaceGroupId")(LocalGatewayVirtualInterfaceGroupId.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalGatewayRouteTableVirtualInterfaceGroupAssociation]
   }
+  @scala.inline
+  implicit class LocalGatewayRouteTableVirtualInterfaceGroupAssociationOps[Self <: LocalGatewayRouteTableVirtualInterfaceGroupAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocalGatewayId(value: String): Self = this.set("LocalGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalGatewayId: Self = this.set("LocalGatewayId", js.undefined)
+    @scala.inline
+    def setLocalGatewayRouteTableId(value: LocalGatewayId): Self = this.set("LocalGatewayRouteTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalGatewayRouteTableId: Self = this.set("LocalGatewayRouteTableId", js.undefined)
+    @scala.inline
+    def setLocalGatewayRouteTableVirtualInterfaceGroupAssociationId(value: LocalGatewayRouteTableVirtualInterfaceGroupAssociationId): Self = this.set("LocalGatewayRouteTableVirtualInterfaceGroupAssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationId: Self = this.set("LocalGatewayRouteTableVirtualInterfaceGroupAssociationId", js.undefined)
+    @scala.inline
+    def setLocalGatewayVirtualInterfaceGroupId(value: LocalGatewayVirtualInterfaceGroupId): Self = this.set("LocalGatewayVirtualInterfaceGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalGatewayVirtualInterfaceGroupId: Self = this.set("LocalGatewayVirtualInterfaceGroupId", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

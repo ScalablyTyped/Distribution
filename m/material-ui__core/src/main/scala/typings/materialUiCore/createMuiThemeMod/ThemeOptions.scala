@@ -34,34 +34,74 @@ trait ThemeOptions extends js.Object {
 
 object ThemeOptions {
   @scala.inline
-  def apply(
-    breakpoints: BreakpointsOptions = null,
-    direction: Direction = null,
-    mixins: MixinsOptions = null,
-    overrides: Overrides = null,
-    palette: PaletteOptions = null,
-    props: ComponentsProps = null,
-    shadows: Shadows = null,
-    shape: ShapeOptions = null,
-    spacing: SpacingOptions = null,
-    transitions: TransitionsOptions = null,
-    typography: TypographyOptions | (js.Function1[/* palette */ Palette, TypographyOptions]) = null,
-    zIndex: ZIndexOptions = null
-  ): ThemeOptions = {
+  def apply(): ThemeOptions = {
     val __obj = js.Dynamic.literal()
-    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
-    if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
-    if (transitions != null) __obj.updateDynamic("transitions")(transitions.asInstanceOf[js.Any])
-    if (typography != null) __obj.updateDynamic("typography")(typography.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeOptions]
   }
+  @scala.inline
+  implicit class ThemeOptionsOps[Self <: ThemeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBreakpoints(value: BreakpointsOptions): Self = this.set("breakpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreakpoints: Self = this.set("breakpoints", js.undefined)
+    @scala.inline
+    def setDirection(value: Direction): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setMixins(value: MixinsOptions): Self = this.set("mixins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMixins: Self = this.set("mixins", js.undefined)
+    @scala.inline
+    def setOverrides(value: Overrides): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setPalette(value: PaletteOptions): Self = this.set("palette", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePalette: Self = this.set("palette", js.undefined)
+    @scala.inline
+    def setProps(value: ComponentsProps): Self = this.set("props", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProps: Self = this.set("props", js.undefined)
+    @scala.inline
+    def setShadowsVarargs(value: js.Any*): Self = this.set("shadows", js.Array(value :_*))
+    @scala.inline
+    def setShadows(value: Shadows): Self = this.set("shadows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadows: Self = this.set("shadows", js.undefined)
+    @scala.inline
+    def setShape(value: ShapeOptions): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setSpacing(value: SpacingOptions): Self = this.set("spacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacing: Self = this.set("spacing", js.undefined)
+    @scala.inline
+    def setTransitions(value: TransitionsOptions): Self = this.set("transitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitions: Self = this.set("transitions", js.undefined)
+    @scala.inline
+    def setTypographyFunction1(value: /* palette */ Palette => TypographyOptions): Self = this.set("typography", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTypography(value: TypographyOptions | (js.Function1[/* palette */ Palette, TypographyOptions])): Self = this.set("typography", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypography: Self = this.set("typography", js.undefined)
+    @scala.inline
+    def setZIndex(value: ZIndexOptions): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

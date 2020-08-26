@@ -30,7 +30,7 @@ object indexingMod extends js.Object {
     @js.native
     object v3
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Indexing]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Indexing]
             ]
     
   }

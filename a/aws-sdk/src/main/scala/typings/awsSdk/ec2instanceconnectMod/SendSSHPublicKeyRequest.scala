@@ -35,5 +35,26 @@ object SendSSHPublicKeyRequest {
     val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], InstanceOSUser = InstanceOSUser.asInstanceOf[js.Any], SSHPublicKey = SSHPublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendSSHPublicKeyRequest]
   }
+  @scala.inline
+  implicit class SendSSHPublicKeyRequestOps[Self <: SendSSHPublicKeyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: AvailabilityZone): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceOSUser(value: InstanceOSUser): Self = this.set("InstanceOSUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSSHPublicKey(value: SSHPublicKey): Self = this.set("SSHPublicKey", value.asInstanceOf[js.Any])
+  }
+  
 }
 

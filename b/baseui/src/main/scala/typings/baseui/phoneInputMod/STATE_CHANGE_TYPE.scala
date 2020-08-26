@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait STATE_CHANGE_TYPE extends js.Object {
-  var countryChange: typings.baseui.baseuiStrings.countryChange
-  var textChange: typings.baseui.baseuiStrings.textChange
+  var countryChange: typings.baseui.baseuiStrings.countryChange = js.native
+  var textChange: typings.baseui.baseuiStrings.textChange = js.native
 }
 
 @JSImport("baseui/phone-input", "STATE_CHANGE_TYPE")

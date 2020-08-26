@@ -101,6 +101,11 @@ trait Subject extends js.Object {
     *                 of type `Office.AsyncResult`. If setting the subject fails, the `asyncResult.error` property will contain an error code.
     */
   def setAsync(subject: String): Unit = js.native
+  def setAsync(
+    subject: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setAsync(subject: String, options: AsyncContextOptions): Unit = js.native
   def setAsync(
     subject: String,

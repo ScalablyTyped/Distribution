@@ -92,6 +92,7 @@ class Range protected () extends js.Object {
     * is not changing anything.
     */
   def `with`(change: End): Range = js.native
+  def `with`(start: js.UndefOr[scala.Nothing], end: Position): Range = js.native
   def `with`(start: Position): Range = js.native
   def `with`(start: Position, end: Position): Range = js.native
 }

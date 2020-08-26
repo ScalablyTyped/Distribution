@@ -26,15 +26,34 @@ trait AttachClassicLinkVpcRequest extends js.Object {
 
 object AttachClassicLinkVpcRequest {
   @scala.inline
-  def apply(
-    Groups: GroupIdStringList,
-    InstanceId: InstanceId,
-    VpcId: VpcId,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): AttachClassicLinkVpcRequest = {
+  def apply(Groups: GroupIdStringList, InstanceId: InstanceId, VpcId: VpcId): AttachClassicLinkVpcRequest = {
     val __obj = js.Dynamic.literal(Groups = Groups.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachClassicLinkVpcRequest]
   }
+  @scala.inline
+  implicit class AttachClassicLinkVpcRequestOps[Self <: AttachClassicLinkVpcRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupsVarargs(value: String*): Self = this.set("Groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: GroupIdStringList): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

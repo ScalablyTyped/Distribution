@@ -4,31 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPropertyVersionInfo extends ILifeCycle {
-  var public: js.UndefOr[IModifierValueHistory] = js.undefined
-  var required: js.UndefOr[IModifierValueHistory] = js.undefined
+  var public: js.UndefOr[IModifierValueHistory] = js.native
+  var required: js.UndefOr[IModifierValueHistory] = js.native
 }
 
 object IPropertyVersionInfo {
   @scala.inline
-  def apply(
-    deleted: String = null,
-    deletionMessage: js.UndefOr[Null | String] = js.undefined,
-    deprecated: String = null,
-    deprecationMessage: js.UndefOr[Null | String] = js.undefined,
-    introduced: String = null,
-    public: IModifierValueHistory = null,
-    required: IModifierValueHistory = null
-  ): IPropertyVersionInfo = {
+  def apply(): IPropertyVersionInfo = {
     val __obj = js.Dynamic.literal()
-    if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
-    if (!js.isUndefined(deletionMessage)) __obj.updateDynamic("deletionMessage")(deletionMessage.asInstanceOf[js.Any])
-    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecationMessage)) __obj.updateDynamic("deprecationMessage")(deprecationMessage.asInstanceOf[js.Any])
-    if (introduced != null) __obj.updateDynamic("introduced")(introduced.asInstanceOf[js.Any])
-    if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
-    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPropertyVersionInfo]
   }
+  @scala.inline
+  implicit class IPropertyVersionInfoOps[Self <: IPropertyVersionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPublic(value: IModifierValueHistory): Self = this.set("public", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublic: Self = this.set("public", js.undefined)
+    @scala.inline
+    def setRequired(value: IModifierValueHistory): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+  }
+  
 }
 

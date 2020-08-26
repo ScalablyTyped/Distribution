@@ -55,28 +55,62 @@ trait SchemaFlag extends js.Object {
 
 object SchemaFlag {
   @scala.inline
-  def apply(
-    allowedStringValues: js.Array[String] = null,
-    appliesTo: js.Array[String] = null,
-    inBeta: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    maxValue: String = null,
-    minValue: String = null,
-    name: String = null,
-    requiresRestart: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null
-  ): SchemaFlag = {
+  def apply(): SchemaFlag = {
     val __obj = js.Dynamic.literal()
-    if (allowedStringValues != null) __obj.updateDynamic("allowedStringValues")(allowedStringValues.asInstanceOf[js.Any])
-    if (appliesTo != null) __obj.updateDynamic("appliesTo")(appliesTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(inBeta)) __obj.updateDynamic("inBeta")(inBeta.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(requiresRestart)) __obj.updateDynamic("requiresRestart")(requiresRestart.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFlag]
   }
+  @scala.inline
+  implicit class SchemaFlagOps[Self <: SchemaFlag] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedStringValuesVarargs(value: String*): Self = this.set("allowedStringValues", js.Array(value :_*))
+    @scala.inline
+    def setAllowedStringValues(value: js.Array[String]): Self = this.set("allowedStringValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedStringValues: Self = this.set("allowedStringValues", js.undefined)
+    @scala.inline
+    def setAppliesToVarargs(value: String*): Self = this.set("appliesTo", js.Array(value :_*))
+    @scala.inline
+    def setAppliesTo(value: js.Array[String]): Self = this.set("appliesTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppliesTo: Self = this.set("appliesTo", js.undefined)
+    @scala.inline
+    def setInBeta(value: Boolean): Self = this.set("inBeta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInBeta: Self = this.set("inBeta", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMaxValue(value: String): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: String): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRequiresRestart(value: Boolean): Self = this.set("requiresRestart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiresRestart: Self = this.set("requiresRestart", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

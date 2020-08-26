@@ -8,16 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends OtherCertificateFormat {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var otherCert: js.Any = js.native
-  /* CompleteClass */
-  override var otherCertFormat: String = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

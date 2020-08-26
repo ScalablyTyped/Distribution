@@ -22,16 +22,36 @@ trait SearchNetworkProfilesResponse extends js.Object {
 
 object SearchNetworkProfilesResponse {
   @scala.inline
-  def apply(
-    NetworkProfiles: NetworkProfileDataList = null,
-    NextToken: NextToken = null,
-    TotalCount: js.UndefOr[TotalCount] = js.undefined
-  ): SearchNetworkProfilesResponse = {
+  def apply(): SearchNetworkProfilesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NetworkProfiles != null) __obj.updateDynamic("NetworkProfiles")(NetworkProfiles.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchNetworkProfilesResponse]
   }
+  @scala.inline
+  implicit class SearchNetworkProfilesResponseOps[Self <: SearchNetworkProfilesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetworkProfilesVarargs(value: NetworkProfileData*): Self = this.set("NetworkProfiles", js.Array(value :_*))
+    @scala.inline
+    def setNetworkProfiles(value: NetworkProfileDataList): Self = this.set("NetworkProfiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkProfiles: Self = this.set("NetworkProfiles", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTotalCount(value: TotalCount): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
+  }
+  
 }
 

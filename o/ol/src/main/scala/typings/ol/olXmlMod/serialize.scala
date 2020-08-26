@@ -20,6 +20,14 @@ object serialize extends js.Object {
     nodeFactory: js.ThisFunction3[/* this */ T, /* p0 */ js.Any, /* p1 */ js.Array[_], /* p2 */ js.UndefOr[String], Node],
     values: js.Array[_],
     objectStack: js.Array[_],
+    opt_keys: js.UndefOr[scala.Nothing],
+    opt_this: T
+  ): Unit = js.native
+  def apply[T](
+    serializersNS: StringDictionary[StringDictionary[Serializer]],
+    nodeFactory: js.ThisFunction3[/* this */ T, /* p0 */ js.Any, /* p1 */ js.Array[_], /* p2 */ js.UndefOr[String], Node],
+    values: js.Array[_],
+    objectStack: js.Array[_],
     opt_keys: js.Array[String]
   ): Unit = js.native
   def apply[T](

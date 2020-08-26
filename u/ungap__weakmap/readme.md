@@ -12,7 +12,7 @@ An essential WeakMap polyfill for legacy browsers.
 | Keywords           | WeakMap, polyfill, legacy, ungap |
 | # releases         | 7 |
 | # dependents       | 12 |
-| # downloads        | 66046 |
+| # downloads        | 70476 |
 | # stars            | 0 |
 
 ## Links

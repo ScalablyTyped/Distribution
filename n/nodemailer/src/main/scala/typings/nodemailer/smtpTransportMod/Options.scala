@@ -1,199 +1,178 @@
 package typings.nodemailer.smtpTransportMod
 
-import typings.node.Buffer
 import typings.node.netMod.Socket
-import typings.node.streamMod.Readable
 import typings.node.tlsMod.ConnectionOptions
-import typings.nodemailer.mailerMod.Address
-import typings.nodemailer.mailerMod.AmpAttachment
-import typings.nodemailer.mailerMod.Attachment
-import typings.nodemailer.mailerMod.AttachmentLike
-import typings.nodemailer.mailerMod.Envelope
-import typings.nodemailer.mailerMod.Headers
-import typings.nodemailer.mailerMod.IcalAttachment
-import typings.nodemailer.mailerMod.ListHeaders
-import typings.nodemailer.mailerMod.TextEncoding
 import typings.nodemailer.mod.TransportOptions
-import typings.nodemailer.nodemailerStrings.high
-import typings.nodemailer.nodemailerStrings.low
-import typings.nodemailer.nodemailerStrings.normal
 import typings.nodemailer.sharedMod.Logger
 import typings.nodemailer.smtpConnectionMod.CustomAuthenticationHandlers
-import typings.nodemailer.smtpConnectionMod.DSNOptions
 import typings.nodemailer.smtpConnectionMod.ms
-import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.nodemailer.smtpConnectionMod.Options because var conflicts: auth. Inlined host, port, secure, ignoreTLS, requireTLS, opportunisticTLS, name, localAddress, connectionTimeout, greetingTimeout, socketTimeout, logger, transactionLog, debug, authMethod, tls, socket, connection, customAuth */ trait Options
+- typings.nodemailer.smtpConnectionMod.Options because var conflicts: auth. Inlined host, port, secure, ignoreTLS, requireTLS, opportunisticTLS, name, localAddress, connectionTimeout, greetingTimeout, socketTimeout, logger, transactionLog, debug, authMethod, tls, socket, connection, customAuth */ @js.native
+trait Options
   extends MailOptions
      with TransportOptions {
   /** defines preferred authentication method, e.g. ‘PLAIN’ */
-  var authMethod: js.UndefOr[String] = js.undefined
+  var authMethod: js.UndefOr[String] = js.native
   /** connected socket to use instead of creating and connecting a new one. If secure option is true, then socket is upgraded from plaintext to ciphertext */
-  var connection: js.UndefOr[Socket] = js.undefined
+  var connection: js.UndefOr[Socket] = js.native
   /** how many milliseconds to wait for the connection to establish */
-  var connectionTimeout: js.UndefOr[ms] = js.undefined
-  var customAuth: js.UndefOr[CustomAuthenticationHandlers] = js.undefined
+  var connectionTimeout: js.UndefOr[ms] = js.native
+  var customAuth: js.UndefOr[CustomAuthenticationHandlers] = js.native
   /** if set to true, then logs SMTP traffic and message content, otherwise logs only transaction events */
-  var debug: js.UndefOr[Boolean] = js.undefined
+  var debug: js.UndefOr[Boolean] = js.native
   var getSocket: js.UndefOr[
     js.Function2[
       /* options */ this.type, 
       /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ js.Any, Unit], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** how many milliseconds to wait for the greeting after connection is established */
-  var greetingTimeout: js.UndefOr[ms] = js.undefined
+  var greetingTimeout: js.UndefOr[ms] = js.native
   /** the hostname or IP address to connect to (defaults to ‘localhost’) */
-  var host: js.UndefOr[String] = js.undefined
+  var host: js.UndefOr[String] = js.native
   /** turns off STARTTLS support if true */
-  var ignoreTLS: js.UndefOr[Boolean] = js.undefined
+  var ignoreTLS: js.UndefOr[Boolean] = js.native
   /** the local interface to bind to for network connections */
-  var localAddress: js.UndefOr[String] = js.undefined
+  var localAddress: js.UndefOr[String] = js.native
   /** optional bunyan compatible logger instance. If set to true then logs to console. If value is not set or is false then nothing is logged */
-  var logger: js.UndefOr[Logger | Boolean] = js.undefined
+  var logger: js.UndefOr[Logger | Boolean] = js.native
   /** optional hostname of the client, used for identifying to the server */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** tries to use STARTTLS and continues normally if it fails */
-  var opportunisticTLS: js.UndefOr[Boolean] = js.undefined
+  var opportunisticTLS: js.UndefOr[Boolean] = js.native
   /** the port to connect to (defaults to 25 or 465) */
-  var port: js.UndefOr[Double] = js.undefined
+  var port: js.UndefOr[Double] = js.native
   /** forces the client to use STARTTLS. Returns an error if upgrading the connection is not possible or fails. */
-  var requireTLS: js.UndefOr[Boolean] = js.undefined
+  var requireTLS: js.UndefOr[Boolean] = js.native
   /** defines if the connection should use SSL (if true) or not (if false) */
-  var secure: js.UndefOr[Boolean] = js.undefined
-  var service: js.UndefOr[String] = js.undefined
+  var secure: js.UndefOr[Boolean] = js.native
+  var service: js.UndefOr[String] = js.native
   /** initialized socket to use instead of creating a new one */
-  var socket: js.UndefOr[Socket] = js.undefined
+  var socket: js.UndefOr[Socket] = js.native
   /** how many milliseconds of inactivity to allow */
-  var socketTimeout: js.UndefOr[ms] = js.undefined
+  var socketTimeout: js.UndefOr[ms] = js.native
   /** defines additional options to be passed to the socket constructor, e.g. {rejectUnauthorized: true} */
-  var tls: js.UndefOr[ConnectionOptions] = js.undefined
+  var tls: js.UndefOr[ConnectionOptions] = js.native
   /** if set to true, then logs SMTP traffic without message content */
-  var transactionLog: js.UndefOr[Boolean] = js.undefined
+  var transactionLog: js.UndefOr[Boolean] = js.native
    // TODO http.ClientRequest?
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    alternatives: js.Array[Attachment] = null,
-    amp: String | Buffer | Readable | AmpAttachment = null,
-    attachments: js.Array[Attachment] = null,
-    auth: typings.nodemailer.smtpConnectionMod.AuthenticationType = null,
-    authMethod: String = null,
-    bcc: String | Address | (js.Array[String | Address]) = null,
-    cc: String | Address | (js.Array[String | Address]) = null,
-    component: String = null,
-    connection: Socket = null,
-    connectionTimeout: js.UndefOr[ms] = js.undefined,
-    customAuth: CustomAuthenticationHandlers = null,
-    date: Date | String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    disableFileAccess: js.UndefOr[Boolean] = js.undefined,
-    disableUrlAccess: js.UndefOr[Boolean] = js.undefined,
-    dkim: typings.nodemailer.dkimMod.Options = null,
-    dsn: DSNOptions = null,
-    encoding: String = null,
-    envelope: Envelope | typings.nodemailer.mimeNodeMod.Envelope = null,
-    from: String | Address = null,
-    getSocket: (Options, /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ js.Any, Unit]) => Unit = null,
-    greetingTimeout: js.UndefOr[ms] = js.undefined,
-    headers: Headers = null,
-    host: String = null,
-    html: String | Buffer | Readable | AttachmentLike = null,
-    icalEvent: String | Buffer | Readable | IcalAttachment = null,
-    ignoreTLS: js.UndefOr[Boolean] = js.undefined,
-    inReplyTo: String | Address = null,
-    list: ListHeaders = null,
-    localAddress: String = null,
-    logger: Logger | Boolean = null,
-    messageId: String = null,
-    name: String = null,
-    normalizeHeaderKey: /* key */ String => String = null,
-    opportunisticTLS: js.UndefOr[Boolean] = js.undefined,
-    port: js.UndefOr[Double] = js.undefined,
-    priority: high | normal | low = null,
-    raw: String | Buffer | Readable | AttachmentLike = null,
-    references: String | js.Array[String] = null,
-    replyTo: String | Address = null,
-    requireTLS: js.UndefOr[Boolean] = js.undefined,
-    secure: js.UndefOr[Boolean] = js.undefined,
-    sender: String | Address = null,
-    service: String = null,
-    socket: Socket = null,
-    socketTimeout: js.UndefOr[ms] = js.undefined,
-    subject: String = null,
-    text: String | Buffer | Readable | AttachmentLike = null,
-    textEncoding: TextEncoding = null,
-    tls: ConnectionOptions = null,
-    to: String | Address | (js.Array[String | Address]) = null,
-    transactionLog: js.UndefOr[Boolean] = js.undefined,
-    url: String = null,
-    watchHtml: String | Buffer | Readable | AttachmentLike = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives.asInstanceOf[js.Any])
-    if (amp != null) __obj.updateDynamic("amp")(amp.asInstanceOf[js.Any])
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod.asInstanceOf[js.Any])
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
-    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout.get.asInstanceOf[js.Any])
-    if (customAuth != null) __obj.updateDynamic("customAuth")(customAuth.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFileAccess)) __obj.updateDynamic("disableFileAccess")(disableFileAccess.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableUrlAccess)) __obj.updateDynamic("disableUrlAccess")(disableUrlAccess.get.asInstanceOf[js.Any])
-    if (dkim != null) __obj.updateDynamic("dkim")(dkim.asInstanceOf[js.Any])
-    if (dsn != null) __obj.updateDynamic("dsn")(dsn.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (envelope != null) __obj.updateDynamic("envelope")(envelope.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (getSocket != null) __obj.updateDynamic("getSocket")(js.Any.fromFunction2(getSocket))
-    if (!js.isUndefined(greetingTimeout)) __obj.updateDynamic("greetingTimeout")(greetingTimeout.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (icalEvent != null) __obj.updateDynamic("icalEvent")(icalEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreTLS)) __obj.updateDynamic("ignoreTLS")(ignoreTLS.get.asInstanceOf[js.Any])
-    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(js.Any.fromFunction1(normalizeHeaderKey))
-    if (!js.isUndefined(opportunisticTLS)) __obj.updateDynamic("opportunisticTLS")(opportunisticTLS.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
-    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireTLS)) __obj.updateDynamic("requireTLS")(requireTLS.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
-    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
-    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout.get.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textEncoding != null) __obj.updateDynamic("textEncoding")(textEncoding.asInstanceOf[js.Any])
-    if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (!js.isUndefined(transactionLog)) __obj.updateDynamic("transactionLog")(transactionLog.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (watchHtml != null) __obj.updateDynamic("watchHtml")(watchHtml.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthMethod(value: String): Self = this.set("authMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthMethod: Self = this.set("authMethod", js.undefined)
+    @scala.inline
+    def setConnection(value: Socket): Self = this.set("connection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnection: Self = this.set("connection", js.undefined)
+    @scala.inline
+    def setConnectionTimeout(value: ms): Self = this.set("connectionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionTimeout: Self = this.set("connectionTimeout", js.undefined)
+    @scala.inline
+    def setCustomAuth(value: CustomAuthenticationHandlers): Self = this.set("customAuth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAuth: Self = this.set("customAuth", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setGetSocket(
+      value: (Options, /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ js.Any, Unit]) => Unit
+    ): Self = this.set("getSocket", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGetSocket: Self = this.set("getSocket", js.undefined)
+    @scala.inline
+    def setGreetingTimeout(value: ms): Self = this.set("greetingTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreetingTimeout: Self = this.set("greetingTimeout", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setIgnoreTLS(value: Boolean): Self = this.set("ignoreTLS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreTLS: Self = this.set("ignoreTLS", js.undefined)
+    @scala.inline
+    def setLocalAddress(value: String): Self = this.set("localAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalAddress: Self = this.set("localAddress", js.undefined)
+    @scala.inline
+    def setLogger(value: Logger | Boolean): Self = this.set("logger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogger: Self = this.set("logger", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOpportunisticTLS(value: Boolean): Self = this.set("opportunisticTLS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpportunisticTLS: Self = this.set("opportunisticTLS", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setRequireTLS(value: Boolean): Self = this.set("requireTLS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireTLS: Self = this.set("requireTLS", js.undefined)
+    @scala.inline
+    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecure: Self = this.set("secure", js.undefined)
+    @scala.inline
+    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+    @scala.inline
+    def setSocket(value: Socket): Self = this.set("socket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocket: Self = this.set("socket", js.undefined)
+    @scala.inline
+    def setSocketTimeout(value: ms): Self = this.set("socketTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocketTimeout: Self = this.set("socketTimeout", js.undefined)
+    @scala.inline
+    def setTls(value: ConnectionOptions): Self = this.set("tls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTls: Self = this.set("tls", js.undefined)
+    @scala.inline
+    def setTransactionLog(value: Boolean): Self = this.set("transactionLog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionLog: Self = this.set("transactionLog", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

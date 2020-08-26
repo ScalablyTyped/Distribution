@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined tern.tern/lib/infer.Prim & {  name  :'number'} */
+/* Inlined tern.tern/lib/infer.Prim & {  name :'number'} */
 @js.native
 trait Primnamenumber extends js.Object {
   /** The name of the type, if any. */

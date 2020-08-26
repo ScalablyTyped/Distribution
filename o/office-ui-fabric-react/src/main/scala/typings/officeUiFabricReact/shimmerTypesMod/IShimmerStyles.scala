@@ -5,35 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IShimmerStyles extends js.Object {
   /** Refers to wrapper element of the children only. */
-  var dataWrapper: js.UndefOr[IStyle] = js.undefined
+  var dataWrapper: js.UndefOr[IStyle] = js.native
   /** Refers to the root wrapper element. */
-  var root: js.UndefOr[IStyle] = js.undefined
+  var root: js.UndefOr[IStyle] = js.native
   /** Styles for the hidden helper element to aid with screen readers. */
-  var screenReaderText: js.UndefOr[IStyle] = js.undefined
+  var screenReaderText: js.UndefOr[IStyle] = js.native
   /** Refers to gradient element of the shimmer animation only. */
-  var shimmerGradient: js.UndefOr[IStyle] = js.undefined
+  var shimmerGradient: js.UndefOr[IStyle] = js.native
   /** Refers to wrapper element of the shimmer only. */
-  var shimmerWrapper: js.UndefOr[IStyle] = js.undefined
+  var shimmerWrapper: js.UndefOr[IStyle] = js.native
 }
 
 object IShimmerStyles {
   @scala.inline
-  def apply(
-    dataWrapper: js.UndefOr[Null | IStyle] = js.undefined,
-    root: js.UndefOr[Null | IStyle] = js.undefined,
-    screenReaderText: js.UndefOr[Null | IStyle] = js.undefined,
-    shimmerGradient: js.UndefOr[Null | IStyle] = js.undefined,
-    shimmerWrapper: js.UndefOr[Null | IStyle] = js.undefined
-  ): IShimmerStyles = {
+  def apply(): IShimmerStyles = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dataWrapper)) __obj.updateDynamic("dataWrapper")(dataWrapper.asInstanceOf[js.Any])
-    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenReaderText)) __obj.updateDynamic("screenReaderText")(screenReaderText.asInstanceOf[js.Any])
-    if (!js.isUndefined(shimmerGradient)) __obj.updateDynamic("shimmerGradient")(shimmerGradient.asInstanceOf[js.Any])
-    if (!js.isUndefined(shimmerWrapper)) __obj.updateDynamic("shimmerWrapper")(shimmerWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerStyles]
   }
+  @scala.inline
+  implicit class IShimmerStylesOps[Self <: IShimmerStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataWrapper(value: IStyle): Self = this.set("dataWrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataWrapper: Self = this.set("dataWrapper", js.undefined)
+    @scala.inline
+    def setDataWrapperNull: Self = this.set("dataWrapper", null)
+    @scala.inline
+    def setRoot(value: IStyle): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setRootNull: Self = this.set("root", null)
+    @scala.inline
+    def setScreenReaderText(value: IStyle): Self = this.set("screenReaderText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenReaderText: Self = this.set("screenReaderText", js.undefined)
+    @scala.inline
+    def setScreenReaderTextNull: Self = this.set("screenReaderText", null)
+    @scala.inline
+    def setShimmerGradient(value: IStyle): Self = this.set("shimmerGradient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShimmerGradient: Self = this.set("shimmerGradient", js.undefined)
+    @scala.inline
+    def setShimmerGradientNull: Self = this.set("shimmerGradient", null)
+    @scala.inline
+    def setShimmerWrapper(value: IStyle): Self = this.set("shimmerWrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShimmerWrapper: Self = this.set("shimmerWrapper", js.undefined)
+    @scala.inline
+    def setShimmerWrapperNull: Self = this.set("shimmerWrapper", null)
+  }
+  
 }
 

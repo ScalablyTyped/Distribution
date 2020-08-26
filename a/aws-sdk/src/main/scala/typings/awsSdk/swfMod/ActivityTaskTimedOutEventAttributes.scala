@@ -26,15 +26,32 @@ trait ActivityTaskTimedOutEventAttributes extends js.Object {
 
 object ActivityTaskTimedOutEventAttributes {
   @scala.inline
-  def apply(
-    scheduledEventId: EventId,
-    startedEventId: EventId,
-    timeoutType: ActivityTaskTimeoutType,
-    details: LimitedData = null
-  ): ActivityTaskTimedOutEventAttributes = {
+  def apply(scheduledEventId: EventId, startedEventId: EventId, timeoutType: ActivityTaskTimeoutType): ActivityTaskTimedOutEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any], timeoutType = timeoutType.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityTaskTimedOutEventAttributes]
   }
+  @scala.inline
+  implicit class ActivityTaskTimedOutEventAttributesOps[Self <: ActivityTaskTimedOutEventAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScheduledEventId(value: EventId): Self = this.set("scheduledEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartedEventId(value: EventId): Self = this.set("startedEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeoutType(value: ActivityTaskTimeoutType): Self = this.set("timeoutType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetails(value: LimitedData): Self = this.set("details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("details", js.undefined)
+  }
+  
 }
 

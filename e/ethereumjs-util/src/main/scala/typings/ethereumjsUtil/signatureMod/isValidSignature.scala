@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object isValidSignature extends js.Object {
   def apply(v: Double, r: Buffer, s: Buffer): Boolean = js.native
+  def apply(v: Double, r: Buffer, s: Buffer, homesteadOrLater: js.UndefOr[scala.Nothing], chainId: Double): Boolean = js.native
   def apply(v: Double, r: Buffer, s: Buffer, homesteadOrLater: Boolean): Boolean = js.native
   def apply(v: Double, r: Buffer, s: Buffer, homesteadOrLater: Boolean, chainId: Double): Boolean = js.native
 }

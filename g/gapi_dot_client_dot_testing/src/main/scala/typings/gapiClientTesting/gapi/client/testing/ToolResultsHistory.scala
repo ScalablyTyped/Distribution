@@ -4,26 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ToolResultsHistory extends js.Object {
   /**
     * A tool results history ID.
     * Required
     */
-  var historyId: js.UndefOr[String] = js.undefined
+  var historyId: js.UndefOr[String] = js.native
   /**
     * The cloud project that owns the tool results history.
     * Required
     */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: js.UndefOr[String] = js.native
 }
 
 object ToolResultsHistory {
   @scala.inline
-  def apply(historyId: String = null, projectId: String = null): ToolResultsHistory = {
+  def apply(): ToolResultsHistory = {
     val __obj = js.Dynamic.literal()
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolResultsHistory]
   }
+  @scala.inline
+  implicit class ToolResultsHistoryOps[Self <: ToolResultsHistory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHistoryId(value: String): Self = this.set("historyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistoryId: Self = this.set("historyId", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+  }
+  
 }
 

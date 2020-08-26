@@ -13,6 +13,11 @@ trait IUtils extends js.Object {
   def camelize(text: String): String = js.native
   def camelizeVar(text: String): String = js.native
   def enumSql(dir: String): js.Any = js.native
+  def enumSql(
+    dir: String,
+    options: js.UndefOr[scala.Nothing],
+    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, _]
+  ): js.Any = js.native
   def enumSql(dir: String, options: IgnoreErrors): js.Any = js.native
   def enumSql(
     dir: String,

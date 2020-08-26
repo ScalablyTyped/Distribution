@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Menu extends js.Object {
-  var edit: js.UndefOr[MenuItem] = js.undefined
-  var file: js.UndefOr[MenuItem] = js.undefined
-  var format: js.UndefOr[MenuItem] = js.undefined
-  var insert: js.UndefOr[MenuItem] = js.undefined
-  var table: js.UndefOr[MenuItem] = js.undefined
-  var tools: js.UndefOr[MenuItem] = js.undefined
-  var view: js.UndefOr[MenuItem] = js.undefined
+  var edit: js.UndefOr[MenuItem] = js.native
+  var file: js.UndefOr[MenuItem] = js.native
+  var format: js.UndefOr[MenuItem] = js.native
+  var insert: js.UndefOr[MenuItem] = js.native
+  var table: js.UndefOr[MenuItem] = js.native
+  var tools: js.UndefOr[MenuItem] = js.native
+  var view: js.UndefOr[MenuItem] = js.native
 }
 
 object Menu {
   @scala.inline
-  def apply(
-    edit: MenuItem = null,
-    file: MenuItem = null,
-    format: MenuItem = null,
-    insert: MenuItem = null,
-    table: MenuItem = null,
-    tools: MenuItem = null,
-    view: MenuItem = null
-  ): Menu = {
+  def apply(): Menu = {
     val __obj = js.Dynamic.literal()
-    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Menu]
   }
+  @scala.inline
+  implicit class MenuOps[Self <: Menu] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEdit(value: MenuItem): Self = this.set("edit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdit: Self = this.set("edit", js.undefined)
+    @scala.inline
+    def setFile(value: MenuItem): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+    @scala.inline
+    def setFormat(value: MenuItem): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setInsert(value: MenuItem): Self = this.set("insert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsert: Self = this.set("insert", js.undefined)
+    @scala.inline
+    def setTable(value: MenuItem): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setTools(value: MenuItem): Self = this.set("tools", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTools: Self = this.set("tools", js.undefined)
+    @scala.inline
+    def setView(value: MenuItem): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+  }
+  
 }
 

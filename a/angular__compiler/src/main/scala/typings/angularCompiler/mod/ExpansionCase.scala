@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "ExpansionCase")
 @js.native
 class ExpansionCase protected ()
-  extends typings.angularCompiler.publicApiMod.ExpansionCase {
+  extends typings.angularCompiler.compilerMod.ExpansionCase {
   def this(
     value: String,
     expression: js.Array[Node],

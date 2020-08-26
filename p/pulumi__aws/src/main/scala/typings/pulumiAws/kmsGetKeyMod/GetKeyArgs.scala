@@ -22,10 +22,30 @@ trait GetKeyArgs extends js.Object {
 
 object GetKeyArgs {
   @scala.inline
-  def apply(keyId: String, grantTokens: js.Array[String] = null): GetKeyArgs = {
+  def apply(keyId: String): GetKeyArgs = {
     val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any])
-    if (grantTokens != null) __obj.updateDynamic("grantTokens")(grantTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyArgs]
   }
+  @scala.inline
+  implicit class GetKeyArgsOps[Self <: GetKeyArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyId(value: String): Self = this.set("keyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGrantTokensVarargs(value: String*): Self = this.set("grantTokens", js.Array(value :_*))
+    @scala.inline
+    def setGrantTokens(value: js.Array[String]): Self = this.set("grantTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantTokens: Self = this.set("grantTokens", js.undefined)
+  }
+  
 }
 

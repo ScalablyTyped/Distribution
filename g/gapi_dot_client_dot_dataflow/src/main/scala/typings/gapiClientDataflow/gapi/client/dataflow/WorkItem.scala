@@ -4,78 +4,123 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WorkItem extends js.Object {
   /** Work item-specific configuration as an opaque blob. */
-  var configuration: js.UndefOr[String] = js.undefined
+  var configuration: js.UndefOr[String] = js.native
   /** Identifies this WorkItem. */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** The initial index to use when reporting the status of the WorkItem. */
-  var initialReportIndex: js.UndefOr[String] = js.undefined
+  var initialReportIndex: js.UndefOr[String] = js.native
   /** Identifies the workflow job this WorkItem belongs to. */
-  var jobId: js.UndefOr[String] = js.undefined
+  var jobId: js.UndefOr[String] = js.native
   /** Time when the lease on this Work will expire. */
-  var leaseExpireTime: js.UndefOr[String] = js.undefined
+  var leaseExpireTime: js.UndefOr[String] = js.native
   /** Additional information for MapTask WorkItems. */
-  var mapTask: js.UndefOr[MapTask] = js.undefined
+  var mapTask: js.UndefOr[MapTask] = js.native
   /**
     * Any required packages that need to be fetched in order to execute
     * this WorkItem.
     */
-  var packages: js.UndefOr[js.Array[Package]] = js.undefined
+  var packages: js.UndefOr[js.Array[Package]] = js.native
   /** Identifies the cloud project this WorkItem belongs to. */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: js.UndefOr[String] = js.native
   /** Recommended reporting interval. */
-  var reportStatusInterval: js.UndefOr[String] = js.undefined
+  var reportStatusInterval: js.UndefOr[String] = js.native
   /** Additional information for SeqMapTask WorkItems. */
-  var seqMapTask: js.UndefOr[SeqMapTask] = js.undefined
+  var seqMapTask: js.UndefOr[SeqMapTask] = js.native
   /** Additional information for ShellTask WorkItems. */
-  var shellTask: js.UndefOr[ShellTask] = js.undefined
+  var shellTask: js.UndefOr[ShellTask] = js.native
   /** Additional information for source operation WorkItems. */
-  var sourceOperationTask: js.UndefOr[SourceOperationRequest] = js.undefined
+  var sourceOperationTask: js.UndefOr[SourceOperationRequest] = js.native
   /** Additional information for StreamingComputationTask WorkItems. */
-  var streamingComputationTask: js.UndefOr[StreamingComputationTask] = js.undefined
+  var streamingComputationTask: js.UndefOr[StreamingComputationTask] = js.native
   /** Additional information for StreamingConfigTask WorkItems. */
-  var streamingConfigTask: js.UndefOr[StreamingConfigTask] = js.undefined
+  var streamingConfigTask: js.UndefOr[StreamingConfigTask] = js.native
   /** Additional information for StreamingSetupTask WorkItems. */
-  var streamingSetupTask: js.UndefOr[StreamingSetupTask] = js.undefined
+  var streamingSetupTask: js.UndefOr[StreamingSetupTask] = js.native
 }
 
 object WorkItem {
   @scala.inline
-  def apply(
-    configuration: String = null,
-    id: String = null,
-    initialReportIndex: String = null,
-    jobId: String = null,
-    leaseExpireTime: String = null,
-    mapTask: MapTask = null,
-    packages: js.Array[Package] = null,
-    projectId: String = null,
-    reportStatusInterval: String = null,
-    seqMapTask: SeqMapTask = null,
-    shellTask: ShellTask = null,
-    sourceOperationTask: SourceOperationRequest = null,
-    streamingComputationTask: StreamingComputationTask = null,
-    streamingConfigTask: StreamingConfigTask = null,
-    streamingSetupTask: StreamingSetupTask = null
-  ): WorkItem = {
+  def apply(): WorkItem = {
     val __obj = js.Dynamic.literal()
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (initialReportIndex != null) __obj.updateDynamic("initialReportIndex")(initialReportIndex.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (leaseExpireTime != null) __obj.updateDynamic("leaseExpireTime")(leaseExpireTime.asInstanceOf[js.Any])
-    if (mapTask != null) __obj.updateDynamic("mapTask")(mapTask.asInstanceOf[js.Any])
-    if (packages != null) __obj.updateDynamic("packages")(packages.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (reportStatusInterval != null) __obj.updateDynamic("reportStatusInterval")(reportStatusInterval.asInstanceOf[js.Any])
-    if (seqMapTask != null) __obj.updateDynamic("seqMapTask")(seqMapTask.asInstanceOf[js.Any])
-    if (shellTask != null) __obj.updateDynamic("shellTask")(shellTask.asInstanceOf[js.Any])
-    if (sourceOperationTask != null) __obj.updateDynamic("sourceOperationTask")(sourceOperationTask.asInstanceOf[js.Any])
-    if (streamingComputationTask != null) __obj.updateDynamic("streamingComputationTask")(streamingComputationTask.asInstanceOf[js.Any])
-    if (streamingConfigTask != null) __obj.updateDynamic("streamingConfigTask")(streamingConfigTask.asInstanceOf[js.Any])
-    if (streamingSetupTask != null) __obj.updateDynamic("streamingSetupTask")(streamingSetupTask.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItem]
   }
+  @scala.inline
+  implicit class WorkItemOps[Self <: WorkItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfiguration(value: String): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInitialReportIndex(value: String): Self = this.set("initialReportIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialReportIndex: Self = this.set("initialReportIndex", js.undefined)
+    @scala.inline
+    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setLeaseExpireTime(value: String): Self = this.set("leaseExpireTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaseExpireTime: Self = this.set("leaseExpireTime", js.undefined)
+    @scala.inline
+    def setMapTask(value: MapTask): Self = this.set("mapTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapTask: Self = this.set("mapTask", js.undefined)
+    @scala.inline
+    def setPackagesVarargs(value: Package*): Self = this.set("packages", js.Array(value :_*))
+    @scala.inline
+    def setPackages(value: js.Array[Package]): Self = this.set("packages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackages: Self = this.set("packages", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setReportStatusInterval(value: String): Self = this.set("reportStatusInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportStatusInterval: Self = this.set("reportStatusInterval", js.undefined)
+    @scala.inline
+    def setSeqMapTask(value: SeqMapTask): Self = this.set("seqMapTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeqMapTask: Self = this.set("seqMapTask", js.undefined)
+    @scala.inline
+    def setShellTask(value: ShellTask): Self = this.set("shellTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShellTask: Self = this.set("shellTask", js.undefined)
+    @scala.inline
+    def setSourceOperationTask(value: SourceOperationRequest): Self = this.set("sourceOperationTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceOperationTask: Self = this.set("sourceOperationTask", js.undefined)
+    @scala.inline
+    def setStreamingComputationTask(value: StreamingComputationTask): Self = this.set("streamingComputationTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingComputationTask: Self = this.set("streamingComputationTask", js.undefined)
+    @scala.inline
+    def setStreamingConfigTask(value: StreamingConfigTask): Self = this.set("streamingConfigTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingConfigTask: Self = this.set("streamingConfigTask", js.undefined)
+    @scala.inline
+    def setStreamingSetupTask(value: StreamingSetupTask): Self = this.set("streamingSetupTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingSetupTask: Self = this.set("streamingSetupTask", js.undefined)
+  }
+  
 }
 

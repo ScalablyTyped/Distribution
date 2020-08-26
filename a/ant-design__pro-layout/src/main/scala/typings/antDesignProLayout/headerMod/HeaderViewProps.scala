@@ -1,10 +1,12 @@
 package typings.antDesignProLayout.headerMod
 
 import typings.antDesignProLayout.anon.DefaultOpenAll
+import typings.antDesignProLayout.antDesignProLayoutStrings.mix
 import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
-import typings.antDesignProLayout.antDesignProLayoutStrings.sidemenu
-import typings.antDesignProLayout.antDesignProLayoutStrings.topmenu
+import typings.antDesignProLayout.antDesignProLayoutStrings.side
+import typings.antDesignProLayout.antDesignProLayoutStrings.top
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
+import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.antDesignProLayout.typingsMod.WithFalse
 import typings.antd.menuContextMod.MenuTheme
 import typings.react.mod.CSSProperties
@@ -13,25 +15,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.Settings> */
-/* Inlined parent @ant-design/pro-layout.@ant-design/pro-layout/lib/GlobalHeader.GlobalHeaderProps */
+/* Inlined std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.PureSettings> & @ant-design/pro-layout.@ant-design/pro-layout/lib/GlobalHeader.GlobalHeaderProps & {  isMobile :boolean | undefined,   collapsed :boolean | undefined,   logo :react.react.ReactNode | undefined,   headerRender :@ant-design/pro-layout.@ant-design/pro-layout/lib/typings.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/lib/Header.HeaderViewProps, defaultDom : react.react.ReactNode): react.react.ReactNode> | undefined,   headerTitleRender :@ant-design/pro-layout.@ant-design/pro-layout/lib/typings.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/lib/Header.HeaderViewProps, defaultDom : react.react.ReactNode): react.react.ReactNode> | undefined,   headerContentRender :@ant-design/pro-layout.@ant-design/pro-layout/lib/typings.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/lib/Header.HeaderViewProps): react.react.ReactNode> | undefined,   siderWidth :number | undefined,   hasSiderMenu :boolean | undefined} */
+@js.native
 trait HeaderViewProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var collapsed: js.UndefOr[Boolean] = js.undefined
-  var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
-  var colorWeak: js.UndefOr[Boolean] = js.undefined
-  var contentWidth: js.UndefOr[ContentWidth] = js.undefined
-  var fixSiderbar: js.UndefOr[Boolean] = js.undefined
-  var fixedHeader: js.UndefOr[Boolean] = js.undefined
-  var hasSiderMenu: js.UndefOr[Boolean] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.native
+  var colorWeak: js.UndefOr[Boolean] = js.native
+  var contentWidth: js.UndefOr[ContentWidth] = js.native
+  var fixSiderbar: js.UndefOr[Boolean] = js.native
+  var fixedHeader: js.UndefOr[Boolean] = js.native
+  var hasSiderMenu: js.UndefOr[Boolean] = js.native
+  var headerContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.native
+  var headerHeight: js.UndefOr[Double] = js.native
   var headerRender: js.UndefOr[
-    WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
-  ] = js.undefined
-  var iconfontUrl: js.UndefOr[String] = js.undefined
-  var isMobile: js.UndefOr[Boolean] = js.undefined
-  var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
-  var logo: js.UndefOr[ReactNode] = js.undefined
-  var menu: js.UndefOr[DefaultOpenAll] = js.undefined
+    WithFalse[js.Function2[/* props */ this.type, /* defaultDom */ ReactNode, ReactNode]]
+  ] = js.native
+  var headerTitleRender: js.UndefOr[
+    WithFalse[js.Function2[/* props */ this.type, /* defaultDom */ ReactNode, ReactNode]]
+  ] = js.native
+  var iconfontUrl: js.UndefOr[String] = js.native
+  var isMobile: js.UndefOr[Boolean] = js.native
+  var layout: js.UndefOr[side | top | mix] = js.native
+  var logo: js.UndefOr[ReactNode] = js.native
+  var menu: js.UndefOr[DefaultOpenAll] = js.native
+  var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.native
   var menuHeaderRender: js.UndefOr[
     WithFalse[
       js.Function3[
@@ -41,78 +49,182 @@ trait HeaderViewProps extends js.Object {
         ReactNode
       ]
     ]
-  ] = js.undefined
+  ] = js.native
   var menuRender: js.UndefOr[
-    WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
-  ] = js.undefined
-  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
-  var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
-  var primaryColor: js.UndefOr[String] = js.undefined
-  var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.undefined
-  var siderWidth: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+    WithFalse[js.Function2[/* props */ this.type, /* defaultDom */ ReactNode, ReactNode]]
+  ] = js.native
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.native
+  var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var primaryColor: js.UndefOr[String] = js.native
+  var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.native
+  var siderWidth: js.UndefOr[Double] = js.native
+  var splitMenus: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var title: js.UndefOr[String] = js.native
 }
 
 object HeaderViewProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    collapsedButtonRender: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]] = null,
-    colorWeak: js.UndefOr[Boolean] = js.undefined,
-    contentWidth: ContentWidth = null,
-    fixSiderbar: js.UndefOr[Boolean] = js.undefined,
-    fixedHeader: js.UndefOr[Boolean] = js.undefined,
-    hasSiderMenu: js.UndefOr[Boolean] = js.undefined,
-    headerRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
-    iconfontUrl: String = null,
-    isMobile: js.UndefOr[Boolean] = js.undefined,
-    layout: sidemenu | topmenu = null,
-    logo: ReactNode = null,
-    menu: DefaultOpenAll = null,
-    menuHeaderRender: WithFalse[
-      js.Function3[
-        /* logo */ ReactNode, 
-        /* title */ ReactNode, 
-        /* props */ js.UndefOr[HeaderViewProps], 
-        ReactNode
-      ]
-    ] = null,
-    menuRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
-    navTheme: MenuTheme | realDark = null,
-    onCollapse: /* collapsed */ Boolean => Unit = null,
-    primaryColor: String = null,
-    rightContentRender: WithFalse[js.Function1[HeaderViewProps, ReactNode]] = null,
-    siderWidth: js.UndefOr[Double] = js.undefined,
-    style: CSSProperties = null,
-    title: String = null
-  ): HeaderViewProps = {
+  def apply(): HeaderViewProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
-    if (collapsedButtonRender != null) __obj.updateDynamic("collapsedButtonRender")(collapsedButtonRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.get.asInstanceOf[js.Any])
-    if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasSiderMenu)) __obj.updateDynamic("hasSiderMenu")(hasSiderMenu.get.asInstanceOf[js.Any])
-    if (headerRender != null) __obj.updateDynamic("headerRender")(headerRender.asInstanceOf[js.Any])
-    if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.get.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    if (menuHeaderRender != null) __obj.updateDynamic("menuHeaderRender")(menuHeaderRender.asInstanceOf[js.Any])
-    if (menuRender != null) __obj.updateDynamic("menuRender")(menuRender.asInstanceOf[js.Any])
-    if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme.asInstanceOf[js.Any])
-    if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
-    if (rightContentRender != null) __obj.updateDynamic("rightContentRender")(rightContentRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(siderWidth)) __obj.updateDynamic("siderWidth")(siderWidth.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderViewProps]
   }
+  @scala.inline
+  implicit class HeaderViewPropsOps[Self <: HeaderViewProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    @scala.inline
+    def setCollapsedButtonRenderFunction1(value: /* collapsed */ js.UndefOr[Boolean] => ReactNode): Self = this.set("collapsedButtonRender", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCollapsedButtonRender(value: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]): Self = this.set("collapsedButtonRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsedButtonRender: Self = this.set("collapsedButtonRender", js.undefined)
+    @scala.inline
+    def setColorWeak(value: Boolean): Self = this.set("colorWeak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorWeak: Self = this.set("colorWeak", js.undefined)
+    @scala.inline
+    def setContentWidth(value: ContentWidth): Self = this.set("contentWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentWidth: Self = this.set("contentWidth", js.undefined)
+    @scala.inline
+    def setFixSiderbar(value: Boolean): Self = this.set("fixSiderbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixSiderbar: Self = this.set("fixSiderbar", js.undefined)
+    @scala.inline
+    def setFixedHeader(value: Boolean): Self = this.set("fixedHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedHeader: Self = this.set("fixedHeader", js.undefined)
+    @scala.inline
+    def setHasSiderMenu(value: Boolean): Self = this.set("hasSiderMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasSiderMenu: Self = this.set("hasSiderMenu", js.undefined)
+    @scala.inline
+    def setHeaderContentRenderFunction1(value: HeaderViewProps => ReactNode): Self = this.set("headerContentRender", js.Any.fromFunction1(value))
+    @scala.inline
+    def setHeaderContentRender(value: WithFalse[js.Function1[HeaderViewProps, ReactNode]]): Self = this.set("headerContentRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderContentRender: Self = this.set("headerContentRender", js.undefined)
+    @scala.inline
+    def setHeaderHeight(value: Double): Self = this.set("headerHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderHeight: Self = this.set("headerHeight", js.undefined)
+    @scala.inline
+    def setHeaderRenderFunction2(value: (HeaderViewProps, /* defaultDom */ ReactNode) => ReactNode): Self = this.set("headerRender", js.Any.fromFunction2(value))
+    @scala.inline
+    def setHeaderRender(value: WithFalse[js.Function2[HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]): Self = this.set("headerRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderRender: Self = this.set("headerRender", js.undefined)
+    @scala.inline
+    def setHeaderTitleRenderFunction2(value: (HeaderViewProps, /* defaultDom */ ReactNode) => ReactNode): Self = this.set("headerTitleRender", js.Any.fromFunction2(value))
+    @scala.inline
+    def setHeaderTitleRender(value: WithFalse[js.Function2[HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]): Self = this.set("headerTitleRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderTitleRender: Self = this.set("headerTitleRender", js.undefined)
+    @scala.inline
+    def setIconfontUrl(value: String): Self = this.set("iconfontUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconfontUrl: Self = this.set("iconfontUrl", js.undefined)
+    @scala.inline
+    def setIsMobile(value: Boolean): Self = this.set("isMobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMobile: Self = this.set("isMobile", js.undefined)
+    @scala.inline
+    def setLayout(value: side | top | mix): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setLogo(value: ReactNode): Self = this.set("logo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogo: Self = this.set("logo", js.undefined)
+    @scala.inline
+    def setMenu(value: DefaultOpenAll): Self = this.set("menu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenu: Self = this.set("menu", js.undefined)
+    @scala.inline
+    def setMenuDataVarargs(value: MenuDataItem*): Self = this.set("menuData", js.Array(value :_*))
+    @scala.inline
+    def setMenuData(value: js.Array[MenuDataItem]): Self = this.set("menuData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuData: Self = this.set("menuData", js.undefined)
+    @scala.inline
+    def setMenuHeaderRenderFunction3(
+      value: (/* logo */ ReactNode, /* title */ ReactNode, /* props */ js.UndefOr[HeaderViewProps]) => ReactNode
+    ): Self = this.set("menuHeaderRender", js.Any.fromFunction3(value))
+    @scala.inline
+    def setMenuHeaderRender(
+      value: WithFalse[
+          js.Function3[
+            /* logo */ ReactNode, 
+            /* title */ ReactNode, 
+            /* props */ js.UndefOr[HeaderViewProps], 
+            ReactNode
+          ]
+        ]
+    ): Self = this.set("menuHeaderRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuHeaderRender: Self = this.set("menuHeaderRender", js.undefined)
+    @scala.inline
+    def setMenuRenderFunction2(value: (HeaderViewProps, /* defaultDom */ ReactNode) => ReactNode): Self = this.set("menuRender", js.Any.fromFunction2(value))
+    @scala.inline
+    def setMenuRender(value: WithFalse[js.Function2[HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]): Self = this.set("menuRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuRender: Self = this.set("menuRender", js.undefined)
+    @scala.inline
+    def setNavTheme(value: MenuTheme | realDark): Self = this.set("navTheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavTheme: Self = this.set("navTheme", js.undefined)
+    @scala.inline
+    def setOnCollapse(value: /* collapsed */ Boolean => Unit): Self = this.set("onCollapse", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCollapse: Self = this.set("onCollapse", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setPrimaryColor(value: String): Self = this.set("primaryColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryColor: Self = this.set("primaryColor", js.undefined)
+    @scala.inline
+    def setRightContentRenderFunction1(value: HeaderViewProps => ReactNode): Self = this.set("rightContentRender", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRightContentRender(value: WithFalse[js.Function1[HeaderViewProps, ReactNode]]): Self = this.set("rightContentRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightContentRender: Self = this.set("rightContentRender", js.undefined)
+    @scala.inline
+    def setSiderWidth(value: Double): Self = this.set("siderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiderWidth: Self = this.set("siderWidth", js.undefined)
+    @scala.inline
+    def setSplitMenus(value: Boolean): Self = this.set("splitMenus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitMenus: Self = this.set("splitMenus", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

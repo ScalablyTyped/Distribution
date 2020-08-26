@@ -62,36 +62,94 @@ trait DescribeSavingsPlansOfferingsRequest extends js.Object {
 
 object DescribeSavingsPlansOfferingsRequest {
   @scala.inline
-  def apply(
-    currencies: CurrencyList = null,
-    descriptions: SavingsPlanDescriptionsList = null,
-    durations: DurationsList = null,
-    filters: SavingsPlanOfferingFiltersList = null,
-    maxResults: js.UndefOr[PageSize] = js.undefined,
-    nextToken: PaginationToken = null,
-    offeringIds: UUIDs = null,
-    operations: SavingsPlanOperationList = null,
-    paymentOptions: SavingsPlanPaymentOptionList = null,
-    planTypes: SavingsPlanTypeList = null,
-    productType: SavingsPlanProductType = null,
-    serviceCodes: SavingsPlanServiceCodeList = null,
-    usageTypes: SavingsPlanUsageTypeList = null
-  ): DescribeSavingsPlansOfferingsRequest = {
+  def apply(): DescribeSavingsPlansOfferingsRequest = {
     val __obj = js.Dynamic.literal()
-    if (currencies != null) __obj.updateDynamic("currencies")(currencies.asInstanceOf[js.Any])
-    if (descriptions != null) __obj.updateDynamic("descriptions")(descriptions.asInstanceOf[js.Any])
-    if (durations != null) __obj.updateDynamic("durations")(durations.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (offeringIds != null) __obj.updateDynamic("offeringIds")(offeringIds.asInstanceOf[js.Any])
-    if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
-    if (paymentOptions != null) __obj.updateDynamic("paymentOptions")(paymentOptions.asInstanceOf[js.Any])
-    if (planTypes != null) __obj.updateDynamic("planTypes")(planTypes.asInstanceOf[js.Any])
-    if (productType != null) __obj.updateDynamic("productType")(productType.asInstanceOf[js.Any])
-    if (serviceCodes != null) __obj.updateDynamic("serviceCodes")(serviceCodes.asInstanceOf[js.Any])
-    if (usageTypes != null) __obj.updateDynamic("usageTypes")(usageTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSavingsPlansOfferingsRequest]
   }
+  @scala.inline
+  implicit class DescribeSavingsPlansOfferingsRequestOps[Self <: DescribeSavingsPlansOfferingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrenciesVarargs(value: CurrencyCode*): Self = this.set("currencies", js.Array(value :_*))
+    @scala.inline
+    def setCurrencies(value: CurrencyList): Self = this.set("currencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencies: Self = this.set("currencies", js.undefined)
+    @scala.inline
+    def setDescriptionsVarargs(value: SavingsPlanDescription*): Self = this.set("descriptions", js.Array(value :_*))
+    @scala.inline
+    def setDescriptions(value: SavingsPlanDescriptionsList): Self = this.set("descriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescriptions: Self = this.set("descriptions", js.undefined)
+    @scala.inline
+    def setDurationsVarargs(value: SavingsPlansDuration*): Self = this.set("durations", js.Array(value :_*))
+    @scala.inline
+    def setDurations(value: DurationsList): Self = this.set("durations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurations: Self = this.set("durations", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: SavingsPlanOfferingFilterElement*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: SavingsPlanOfferingFiltersList): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: PageSize): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setOfferingIdsVarargs(value: UUID*): Self = this.set("offeringIds", js.Array(value :_*))
+    @scala.inline
+    def setOfferingIds(value: UUIDs): Self = this.set("offeringIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingIds: Self = this.set("offeringIds", js.undefined)
+    @scala.inline
+    def setOperationsVarargs(value: SavingsPlanOperation*): Self = this.set("operations", js.Array(value :_*))
+    @scala.inline
+    def setOperations(value: SavingsPlanOperationList): Self = this.set("operations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperations: Self = this.set("operations", js.undefined)
+    @scala.inline
+    def setPaymentOptionsVarargs(value: SavingsPlanPaymentOption*): Self = this.set("paymentOptions", js.Array(value :_*))
+    @scala.inline
+    def setPaymentOptions(value: SavingsPlanPaymentOptionList): Self = this.set("paymentOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentOptions: Self = this.set("paymentOptions", js.undefined)
+    @scala.inline
+    def setPlanTypesVarargs(value: SavingsPlanType*): Self = this.set("planTypes", js.Array(value :_*))
+    @scala.inline
+    def setPlanTypes(value: SavingsPlanTypeList): Self = this.set("planTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlanTypes: Self = this.set("planTypes", js.undefined)
+    @scala.inline
+    def setProductType(value: SavingsPlanProductType): Self = this.set("productType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductType: Self = this.set("productType", js.undefined)
+    @scala.inline
+    def setServiceCodesVarargs(value: SavingsPlanServiceCode*): Self = this.set("serviceCodes", js.Array(value :_*))
+    @scala.inline
+    def setServiceCodes(value: SavingsPlanServiceCodeList): Self = this.set("serviceCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCodes: Self = this.set("serviceCodes", js.undefined)
+    @scala.inline
+    def setUsageTypesVarargs(value: SavingsPlanUsageType*): Self = this.set("usageTypes", js.Array(value :_*))
+    @scala.inline
+    def setUsageTypes(value: SavingsPlanUsageTypeList): Self = this.set("usageTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsageTypes: Self = this.set("usageTypes", js.undefined)
+  }
+  
 }
 

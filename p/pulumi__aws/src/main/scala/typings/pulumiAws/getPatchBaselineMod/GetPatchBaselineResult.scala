@@ -12,7 +12,7 @@ trait GetPatchBaselineResult extends js.Object {
     */
   val description: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -26,20 +26,42 @@ trait GetPatchBaselineResult extends js.Object {
 
 object GetPatchBaselineResult {
   @scala.inline
-  def apply(
-    description: String,
-    id: String,
-    name: String,
-    owner: String,
-    defaultBaseline: js.UndefOr[Boolean] = js.undefined,
-    namePrefix: String = null,
-    operatingSystem: String = null
-  ): GetPatchBaselineResult = {
+  def apply(description: String, id: String, name: String, owner: String): GetPatchBaselineResult = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultBaseline)) __obj.updateDynamic("defaultBaseline")(defaultBaseline.get.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPatchBaselineResult]
   }
+  @scala.inline
+  implicit class GetPatchBaselineResultOps[Self <: GetPatchBaselineResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultBaseline(value: Boolean): Self = this.set("defaultBaseline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultBaseline: Self = this.set("defaultBaseline", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: String): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setOperatingSystem(value: String): Self = this.set("operatingSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystem: Self = this.set("operatingSystem", js.undefined)
+  }
+  
 }
 

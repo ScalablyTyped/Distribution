@@ -30,19 +30,40 @@ trait UpdateVPCEConfigurationRequest extends js.Object {
 
 object UpdateVPCEConfigurationRequest {
   @scala.inline
-  def apply(
-    arn: AmazonResourceName,
-    serviceDnsName: ServiceDnsName = null,
-    vpceConfigurationDescription: VPCEConfigurationDescription = null,
-    vpceConfigurationName: VPCEConfigurationName = null,
-    vpceServiceName: VPCEServiceName = null
-  ): UpdateVPCEConfigurationRequest = {
+  def apply(arn: AmazonResourceName): UpdateVPCEConfigurationRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-    if (serviceDnsName != null) __obj.updateDynamic("serviceDnsName")(serviceDnsName.asInstanceOf[js.Any])
-    if (vpceConfigurationDescription != null) __obj.updateDynamic("vpceConfigurationDescription")(vpceConfigurationDescription.asInstanceOf[js.Any])
-    if (vpceConfigurationName != null) __obj.updateDynamic("vpceConfigurationName")(vpceConfigurationName.asInstanceOf[js.Any])
-    if (vpceServiceName != null) __obj.updateDynamic("vpceServiceName")(vpceServiceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVPCEConfigurationRequest]
   }
+  @scala.inline
+  implicit class UpdateVPCEConfigurationRequestOps[Self <: UpdateVPCEConfigurationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceDnsName(value: ServiceDnsName): Self = this.set("serviceDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceDnsName: Self = this.set("serviceDnsName", js.undefined)
+    @scala.inline
+    def setVpceConfigurationDescription(value: VPCEConfigurationDescription): Self = this.set("vpceConfigurationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpceConfigurationDescription: Self = this.set("vpceConfigurationDescription", js.undefined)
+    @scala.inline
+    def setVpceConfigurationName(value: VPCEConfigurationName): Self = this.set("vpceConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpceConfigurationName: Self = this.set("vpceConfigurationName", js.undefined)
+    @scala.inline
+    def setVpceServiceName(value: VPCEServiceName): Self = this.set("vpceServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpceServiceName: Self = this.set("vpceServiceName", js.undefined)
+  }
+  
 }
 

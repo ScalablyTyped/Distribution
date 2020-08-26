@@ -18,10 +18,28 @@ trait DeleteChangeSetInput extends js.Object {
 
 object DeleteChangeSetInput {
   @scala.inline
-  def apply(ChangeSetName: ChangeSetNameOrId, StackName: StackNameOrId = null): DeleteChangeSetInput = {
+  def apply(ChangeSetName: ChangeSetNameOrId): DeleteChangeSetInput = {
     val __obj = js.Dynamic.literal(ChangeSetName = ChangeSetName.asInstanceOf[js.Any])
-    if (StackName != null) __obj.updateDynamic("StackName")(StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteChangeSetInput]
   }
+  @scala.inline
+  implicit class DeleteChangeSetInputOps[Self <: DeleteChangeSetInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeSetName(value: ChangeSetNameOrId): Self = this.set("ChangeSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackName(value: StackNameOrId): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackName: Self = this.set("StackName", js.undefined)
+  }
+  
 }
 

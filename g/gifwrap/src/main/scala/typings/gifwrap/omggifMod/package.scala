@@ -1,0 +1,9 @@
+package typings.gifwrap
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object omggifMod {
+  type ByteArray = typings.std.Uint8Array | typings.node.Buffer
+}

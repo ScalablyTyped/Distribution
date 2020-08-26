@@ -22,24 +22,45 @@ trait RuleGroupArgs extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object RuleGroupArgs {
   @scala.inline
-  def apply(
-    metricName: Input[String],
-    activatedRules: Input[js.Array[Input[RuleGroupActivatedRule]]] = null,
-    name: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): RuleGroupArgs = {
+  def apply(metricName: Input[String]): RuleGroupArgs = {
     val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any])
-    if (activatedRules != null) __obj.updateDynamic("activatedRules")(activatedRules.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupArgs]
   }
+  @scala.inline
+  implicit class RuleGroupArgsOps[Self <: RuleGroupArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetricName(value: Input[String]): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivatedRulesVarargs(value: Input[RuleGroupActivatedRule]*): Self = this.set("activatedRules", js.Array(value :_*))
+    @scala.inline
+    def setActivatedRules(value: Input[js.Array[Input[RuleGroupActivatedRule]]]): Self = this.set("activatedRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivatedRules: Self = this.set("activatedRules", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

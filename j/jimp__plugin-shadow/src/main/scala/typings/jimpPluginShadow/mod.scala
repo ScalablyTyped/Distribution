@@ -13,6 +13,7 @@ object mod extends js.Object {
   trait Shadow extends js.Object {
     def shadow(): this.type = js.native
     def shadow(cb: ImageCallback[this.type]): this.type = js.native
+    def shadow(options: js.UndefOr[scala.Nothing], cb: ImageCallback[this.type]): this.type = js.native
     def shadow(options: Blur): this.type = js.native
     def shadow(options: Blur, cb: ImageCallback[this.type]): this.type = js.native
   }

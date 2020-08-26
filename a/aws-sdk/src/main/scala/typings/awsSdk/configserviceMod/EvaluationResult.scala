@@ -34,22 +34,46 @@ trait EvaluationResult extends js.Object {
 
 object EvaluationResult {
   @scala.inline
-  def apply(
-    Annotation: StringWithCharLimit256 = null,
-    ComplianceType: ComplianceType = null,
-    ConfigRuleInvokedTime: Date = null,
-    EvaluationResultIdentifier: EvaluationResultIdentifier = null,
-    ResultRecordedTime: Date = null,
-    ResultToken: String = null
-  ): EvaluationResult = {
+  def apply(): EvaluationResult = {
     val __obj = js.Dynamic.literal()
-    if (Annotation != null) __obj.updateDynamic("Annotation")(Annotation.asInstanceOf[js.Any])
-    if (ComplianceType != null) __obj.updateDynamic("ComplianceType")(ComplianceType.asInstanceOf[js.Any])
-    if (ConfigRuleInvokedTime != null) __obj.updateDynamic("ConfigRuleInvokedTime")(ConfigRuleInvokedTime.asInstanceOf[js.Any])
-    if (EvaluationResultIdentifier != null) __obj.updateDynamic("EvaluationResultIdentifier")(EvaluationResultIdentifier.asInstanceOf[js.Any])
-    if (ResultRecordedTime != null) __obj.updateDynamic("ResultRecordedTime")(ResultRecordedTime.asInstanceOf[js.Any])
-    if (ResultToken != null) __obj.updateDynamic("ResultToken")(ResultToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationResult]
   }
+  @scala.inline
+  implicit class EvaluationResultOps[Self <: EvaluationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotation(value: StringWithCharLimit256): Self = this.set("Annotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotation: Self = this.set("Annotation", js.undefined)
+    @scala.inline
+    def setComplianceType(value: ComplianceType): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceType: Self = this.set("ComplianceType", js.undefined)
+    @scala.inline
+    def setConfigRuleInvokedTime(value: Date): Self = this.set("ConfigRuleInvokedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigRuleInvokedTime: Self = this.set("ConfigRuleInvokedTime", js.undefined)
+    @scala.inline
+    def setEvaluationResultIdentifier(value: EvaluationResultIdentifier): Self = this.set("EvaluationResultIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationResultIdentifier: Self = this.set("EvaluationResultIdentifier", js.undefined)
+    @scala.inline
+    def setResultRecordedTime(value: Date): Self = this.set("ResultRecordedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultRecordedTime: Self = this.set("ResultRecordedTime", js.undefined)
+    @scala.inline
+    def setResultToken(value: String): Self = this.set("ResultToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultToken: Self = this.set("ResultToken", js.undefined)
+  }
+  
 }
 

@@ -2,12 +2,12 @@ package typings.openfin.transportMod
 
 import typings.node.eventsMod.EventEmitter
 import typings.openfin.anon.Reject
-import typings.openfin.entityTypeMod.EntityTypeHelpers
 import typings.openfin.environmentMod.Environment
 import typings.openfin.eventAggregatorMod.EventAggregator
 import typings.openfin.identityMod.Identity
 import typings.openfin.openfinBooleans.`true`
 import typings.openfin.openfinStrings.`request-external-authorization`
+import typings.openfin.utilEntityTypeMod.EntityTypeHelpers
 import typings.openfin.wireMod.ConnectConfig
 import typings.openfin.wireMod.ExistingConnectConfig
 import typings.openfin.wireMod.InternalConnectConfig

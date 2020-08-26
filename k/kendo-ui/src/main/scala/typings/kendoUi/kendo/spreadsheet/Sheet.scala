@@ -32,6 +32,7 @@ trait Sheet extends Observable {
   def insertRow(index: Double): Unit = js.native
   def range(ref: String): Range = js.native
   def range(rowIndex: Double, columnIndex: Double): Range = js.native
+  def range(rowIndex: Double, columnIndex: Double, rowCount: js.UndefOr[scala.Nothing], columnCount: Double): Range = js.native
   def range(rowIndex: Double, columnIndex: Double, rowCount: Double): Range = js.native
   def range(rowIndex: Double, columnIndex: Double, rowCount: Double, columnCount: Double): Range = js.native
   def rowHeight(): Unit = js.native

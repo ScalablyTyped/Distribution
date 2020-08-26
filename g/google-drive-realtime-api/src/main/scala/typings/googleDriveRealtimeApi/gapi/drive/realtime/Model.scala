@@ -28,6 +28,7 @@ trait Model extends js.Object {
   // Note that the compound operation MUST start and end in the same synchronous execution block. If this invariant
   // is violated, the data model will become invalid and all future changes will fail.
   def beginCompoundOperation(): Unit = js.native
+  def beginCompoundOperation(opt_name: js.UndefOr[scala.Nothing], opt_isUndoable: Boolean): Unit = js.native
   def beginCompoundOperation(opt_name: String): Unit = js.native
   def beginCompoundOperation(opt_name: String, opt_isUndoable: Boolean): Unit = js.native
   // Creates and returns a new collaborative object. This can be used to create custom collaborative objects.
@@ -75,6 +76,7 @@ trait Model extends js.Object {
   // version of this data model which does not require a network connection.
   // See https://developers.google.com/drive/v2/reference/realtime/update for more information.
   def toJson(): String = js.native
+  def toJson(opt_appId: js.UndefOr[scala.Nothing], opt_revision: Double): String = js.native
   def toJson(opt_appId: String): String = js.native
   def toJson(opt_appId: String, opt_revision: Double): String = js.native
   // Undo the last thing the active collaborator did.

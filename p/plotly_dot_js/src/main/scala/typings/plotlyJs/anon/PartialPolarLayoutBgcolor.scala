@@ -10,39 +10,72 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<plotly.js.plotly.js.PolarLayout> */
+@js.native
 trait PartialPolarLayoutBgcolor extends js.Object {
-  var angularaxis: js.UndefOr[Partial[LayoutAxis]] = js.undefined
-  var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
-  var domain: js.UndefOr[Partial[Domain]] = js.undefined
-  var gridshape: js.UndefOr[circular | linear] = js.undefined
-  var hole: js.UndefOr[Double] = js.undefined
-  var radialaxis: js.UndefOr[Partial[LayoutAxis]] = js.undefined
-  var sector: js.UndefOr[js.Array[Double]] = js.undefined
-  var uirevision: js.UndefOr[String | Double] = js.undefined
+  var angularaxis: js.UndefOr[Partial[LayoutAxis]] = js.native
+  var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var domain: js.UndefOr[Partial[Domain]] = js.native
+  var gridshape: js.UndefOr[circular | linear] = js.native
+  var hole: js.UndefOr[Double] = js.native
+  var radialaxis: js.UndefOr[Partial[LayoutAxis]] = js.native
+  var sector: js.UndefOr[js.Array[Double]] = js.native
+  var uirevision: js.UndefOr[String | Double] = js.native
 }
 
 object PartialPolarLayoutBgcolor {
   @scala.inline
-  def apply(
-    angularaxis: Partial[LayoutAxis] = null,
-    bgcolor: typings.plotlyJs.mod.Color = null,
-    domain: Partial[Domain] = null,
-    gridshape: circular | linear = null,
-    hole: js.UndefOr[Double] = js.undefined,
-    radialaxis: Partial[LayoutAxis] = null,
-    sector: js.Array[Double] = null,
-    uirevision: String | Double = null
-  ): PartialPolarLayoutBgcolor = {
+  def apply(): PartialPolarLayoutBgcolor = {
     val __obj = js.Dynamic.literal()
-    if (angularaxis != null) __obj.updateDynamic("angularaxis")(angularaxis.asInstanceOf[js.Any])
-    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (gridshape != null) __obj.updateDynamic("gridshape")(gridshape.asInstanceOf[js.Any])
-    if (!js.isUndefined(hole)) __obj.updateDynamic("hole")(hole.get.asInstanceOf[js.Any])
-    if (radialaxis != null) __obj.updateDynamic("radialaxis")(radialaxis.asInstanceOf[js.Any])
-    if (sector != null) __obj.updateDynamic("sector")(sector.asInstanceOf[js.Any])
-    if (uirevision != null) __obj.updateDynamic("uirevision")(uirevision.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialPolarLayoutBgcolor]
   }
+  @scala.inline
+  implicit class PartialPolarLayoutBgcolorOps[Self <: PartialPolarLayoutBgcolor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAngularaxis(value: Partial[LayoutAxis]): Self = this.set("angularaxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngularaxis: Self = this.set("angularaxis", js.undefined)
+    @scala.inline
+    def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("bgcolor", js.Array(value :_*))
+    @scala.inline
+    def setBgcolor(value: typings.plotlyJs.mod.Color): Self = this.set("bgcolor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgcolor: Self = this.set("bgcolor", js.undefined)
+    @scala.inline
+    def setDomain(value: Partial[Domain]): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setGridshape(value: circular | linear): Self = this.set("gridshape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridshape: Self = this.set("gridshape", js.undefined)
+    @scala.inline
+    def setHole(value: Double): Self = this.set("hole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHole: Self = this.set("hole", js.undefined)
+    @scala.inline
+    def setRadialaxis(value: Partial[LayoutAxis]): Self = this.set("radialaxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadialaxis: Self = this.set("radialaxis", js.undefined)
+    @scala.inline
+    def setSectorVarargs(value: Double*): Self = this.set("sector", js.Array(value :_*))
+    @scala.inline
+    def setSector(value: js.Array[Double]): Self = this.set("sector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSector: Self = this.set("sector", js.undefined)
+    @scala.inline
+    def setUirevision(value: String | Double): Self = this.set("uirevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUirevision: Self = this.set("uirevision", js.undefined)
+  }
+  
 }
 

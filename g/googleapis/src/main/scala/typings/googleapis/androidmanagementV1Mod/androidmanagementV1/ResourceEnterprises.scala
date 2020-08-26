@@ -37,6 +37,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaEnterprise] = js.native
   def create(callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
   def create(params: ParamsResourceEnterprisesCreate): GaxiosPromise[SchemaEnterprise] = js.native
   def create(params: ParamsResourceEnterprisesCreate, callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
   def create(
@@ -64,6 +65,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaEnterprise] = js.native
   def get(callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
   def get(params: ParamsResourceEnterprisesGet): GaxiosPromise[SchemaEnterprise] = js.native
   def get(params: ParamsResourceEnterprisesGet, callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
   def get(
@@ -93,6 +95,7 @@ class ResourceEnterprises protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaEnterprise] = js.native
   def patch(callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnterprise] = js.native
   def patch(params: ParamsResourceEnterprisesPatch): GaxiosPromise[SchemaEnterprise] = js.native
   def patch(params: ParamsResourceEnterprisesPatch, callback: BodyResponseCallback[SchemaEnterprise]): Unit = js.native
   def patch(

@@ -24,6 +24,8 @@ trait TypeofDriverInstantiable extends Instantiable0[Driver] {
     * @return {!Driver} A new driver instance.
     */
   def createSession(): Driver = js.native
+  def createSession(opt_config: js.UndefOr[scala.Nothing], opt_service: Executor): Driver = js.native
+  def createSession(opt_config: js.UndefOr[scala.Nothing], opt_service: DriverService): Driver = js.native
   def createSession(opt_config: Options): Driver = js.native
   def createSession(opt_config: Options, opt_service: Executor): Driver = js.native
   def createSession(opt_config: Options, opt_service: DriverService): Driver = js.native

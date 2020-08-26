@@ -4,99 +4,142 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Model extends js.Object {
   /** This property is used to set the background color for the signature.
     * @Default {#ffffff}
     */
-  var backgroundColor: js.UndefOr[String] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
   /** This property is used to set the background image for the signature.
     */
-  var backgroundImage: js.UndefOr[String] = js.undefined
+  var backgroundImage: js.UndefOr[String] = js.native
   /** Triggers when the stroke is changed.
     */
-  var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
+  var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
   /** Enables or disables the Signature textbox widget.
     * @Default {true}
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /** Sets the height of the Signature control.
     * @Default {100%}
     */
-  var height: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[String] = js.native
   /** Enables/disables responsive support for the signature control (i.e) maintain the signature drawing during the window resizing time.
     * @Default {false}
     */
-  var isResponsive: js.UndefOr[Boolean] = js.undefined
+  var isResponsive: js.UndefOr[Boolean] = js.native
   /** Triggered when the pointer is clicked or touched in the signature canvas.
     */
-  var mouseDown: js.UndefOr[js.Function1[/* e */ MouseDownEventArgs, Unit]] = js.undefined
+  var mouseDown: js.UndefOr[js.Function1[/* e */ MouseDownEventArgs, Unit]] = js.native
   /** Triggered when the pointer is moved in the signature canvas.
     */
-  var mouseMove: js.UndefOr[js.Function1[/* e */ MouseMoveEventArgs, Unit]] = js.undefined
+  var mouseMove: js.UndefOr[js.Function1[/* e */ MouseMoveEventArgs, Unit]] = js.native
   /** Triggered when the pointer is released after click or touch in the signature canvas.
     */
-  var mouseUp: js.UndefOr[js.Function1[/* e */ MouseUpEventArgs, Unit]] = js.undefined
+  var mouseUp: js.UndefOr[js.Function1[/* e */ MouseUpEventArgs, Unit]] = js.native
   /** Allows the type of the image format to be saved when the signature image is saved.
     */
-  var saveImageFormat: js.UndefOr[SaveImageFormat | String] = js.undefined
+  var saveImageFormat: js.UndefOr[SaveImageFormat | String] = js.native
   /** Allows the signature image to be saved along with its background.
     * @Default {false}
     */
-  var saveWithBackground: js.UndefOr[Boolean] = js.undefined
+  var saveWithBackground: js.UndefOr[Boolean] = js.native
   /** Enables or disables rounded corner.
     * @Default {true}
     */
-  var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
+  var showRoundedCorner: js.UndefOr[Boolean] = js.native
   /** Sets the stroke color for the stroke of the signature.
     * @Default {#000000}
     */
-  var strokeColor: js.UndefOr[String] = js.undefined
+  var strokeColor: js.UndefOr[String] = js.native
   /** Sets the stroke width for the stroke of the signature.
     * @Default {2}
     */
-  var strokeWidth: js.UndefOr[Double] = js.undefined
+  var strokeWidth: js.UndefOr[Double] = js.native
   /** Sets the width of the Signature control.
     * @Default {100%}
     */
-  var width: js.UndefOr[String] = js.undefined
+  var width: js.UndefOr[String] = js.native
 }
 
 object Model {
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    backgroundImage: String = null,
-    change: /* e */ ChangeEventArgs => Unit = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    height: String = null,
-    isResponsive: js.UndefOr[Boolean] = js.undefined,
-    mouseDown: /* e */ MouseDownEventArgs => Unit = null,
-    mouseMove: /* e */ MouseMoveEventArgs => Unit = null,
-    mouseUp: /* e */ MouseUpEventArgs => Unit = null,
-    saveImageFormat: SaveImageFormat | String = null,
-    saveWithBackground: js.UndefOr[Boolean] = js.undefined,
-    showRoundedCorner: js.UndefOr[Boolean] = js.undefined,
-    strokeColor: String = null,
-    strokeWidth: js.UndefOr[Double] = js.undefined,
-    width: String = null
-  ): Model = {
+  def apply(): Model = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
-    if (mouseDown != null) __obj.updateDynamic("mouseDown")(js.Any.fromFunction1(mouseDown))
-    if (mouseMove != null) __obj.updateDynamic("mouseMove")(js.Any.fromFunction1(mouseMove))
-    if (mouseUp != null) __obj.updateDynamic("mouseUp")(js.Any.fromFunction1(mouseUp))
-    if (saveImageFormat != null) __obj.updateDynamic("saveImageFormat")(saveImageFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveWithBackground)) __obj.updateDynamic("saveWithBackground")(saveWithBackground.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner.get.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
+  @scala.inline
+  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBackgroundImage(value: String): Self = this.set("backgroundImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImage: Self = this.set("backgroundImage", js.undefined)
+    @scala.inline
+    def setChange(value: /* e */ ChangeEventArgs => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIsResponsive(value: Boolean): Self = this.set("isResponsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsResponsive: Self = this.set("isResponsive", js.undefined)
+    @scala.inline
+    def setMouseDown(value: /* e */ MouseDownEventArgs => Unit): Self = this.set("mouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMouseDown: Self = this.set("mouseDown", js.undefined)
+    @scala.inline
+    def setMouseMove(value: /* e */ MouseMoveEventArgs => Unit): Self = this.set("mouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMouseMove: Self = this.set("mouseMove", js.undefined)
+    @scala.inline
+    def setMouseUp(value: /* e */ MouseUpEventArgs => Unit): Self = this.set("mouseUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMouseUp: Self = this.set("mouseUp", js.undefined)
+    @scala.inline
+    def setSaveImageFormat(value: SaveImageFormat | String): Self = this.set("saveImageFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaveImageFormat: Self = this.set("saveImageFormat", js.undefined)
+    @scala.inline
+    def setSaveWithBackground(value: Boolean): Self = this.set("saveWithBackground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaveWithBackground: Self = this.set("saveWithBackground", js.undefined)
+    @scala.inline
+    def setShowRoundedCorner(value: Boolean): Self = this.set("showRoundedCorner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowRoundedCorner: Self = this.set("showRoundedCorner", js.undefined)
+    @scala.inline
+    def setStrokeColor(value: String): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeColor: Self = this.set("strokeColor", js.undefined)
+    @scala.inline
+    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

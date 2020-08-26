@@ -26,16 +26,9 @@ object getSegmentsCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GetSegmentsInput) = this()
-    /* CompleteClass */
-    override val input: GetSegmentsInput = js.native
     val middlewareStack: MiddlewareStack[GetSegmentsInput, GetSegmentsOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[GetSegmentsInput, GetSegmentsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[GetSegmentsInput, GetSegmentsOutput] = js.native
   }

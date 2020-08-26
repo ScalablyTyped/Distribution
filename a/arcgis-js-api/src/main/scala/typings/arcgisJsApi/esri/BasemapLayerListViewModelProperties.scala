@@ -4,63 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BasemapLayerListViewModelProperties extends js.Object {
-  /**
-    * A collection of [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing the [baseLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html#baseLayers).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#baseItems)
-    */
-  var baseItems: js.UndefOr[CollectionProperties[ListItem]] = js.undefined
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html). Each list item can be modified according to its modifiable properties. Actions can be added to list items using the [actionsSections](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#actionsSections) property of the ListItem.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#baseListItemCreatedFunction)
     */
-  var baseListItemCreatedFunction: js.UndefOr[js.Function] = js.undefined
+  var baseListItemCreatedFunction: js.UndefOr[js.Function] = js.native
   /**
     * The current basemap's title.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#basemapTitle)
     */
-  var basemapTitle: js.UndefOr[String] = js.undefined
-  /**
-    * A collection of [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing the [referenceLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html#referenceLayers).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#referenceItems)
-    */
-  var referenceItems: js.UndefOr[CollectionProperties[ListItem]] = js.undefined
+  var basemapTitle: js.UndefOr[String] = js.native
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing reference layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#referenceListItemCreatedFunction)
     */
-  var referenceListItemCreatedFunction: js.UndefOr[js.Function] = js.undefined
+  var referenceListItemCreatedFunction: js.UndefOr[js.Function] = js.native
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
 }
 
 object BasemapLayerListViewModelProperties {
   @scala.inline
-  def apply(
-    baseItems: CollectionProperties[ListItem] = null,
-    baseListItemCreatedFunction: js.Function = null,
-    basemapTitle: String = null,
-    referenceItems: CollectionProperties[ListItem] = null,
-    referenceListItemCreatedFunction: js.Function = null,
-    view: MapViewProperties | SceneViewProperties = null
-  ): BasemapLayerListViewModelProperties = {
+  def apply(): BasemapLayerListViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (baseItems != null) __obj.updateDynamic("baseItems")(baseItems.asInstanceOf[js.Any])
-    if (baseListItemCreatedFunction != null) __obj.updateDynamic("baseListItemCreatedFunction")(baseListItemCreatedFunction.asInstanceOf[js.Any])
-    if (basemapTitle != null) __obj.updateDynamic("basemapTitle")(basemapTitle.asInstanceOf[js.Any])
-    if (referenceItems != null) __obj.updateDynamic("referenceItems")(referenceItems.asInstanceOf[js.Any])
-    if (referenceListItemCreatedFunction != null) __obj.updateDynamic("referenceListItemCreatedFunction")(referenceListItemCreatedFunction.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasemapLayerListViewModelProperties]
   }
+  @scala.inline
+  implicit class BasemapLayerListViewModelPropertiesOps[Self <: BasemapLayerListViewModelProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseListItemCreatedFunction(value: js.Function): Self = this.set("baseListItemCreatedFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseListItemCreatedFunction: Self = this.set("baseListItemCreatedFunction", js.undefined)
+    @scala.inline
+    def setBasemapTitle(value: String): Self = this.set("basemapTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasemapTitle: Self = this.set("basemapTitle", js.undefined)
+    @scala.inline
+    def setReferenceListItemCreatedFunction(value: js.Function): Self = this.set("referenceListItemCreatedFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceListItemCreatedFunction: Self = this.set("referenceListItemCreatedFunction", js.undefined)
+    @scala.inline
+    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+  }
+  
 }
 

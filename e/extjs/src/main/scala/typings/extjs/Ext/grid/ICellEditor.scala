@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICellEditor extends IEditor
 
 object ICellEditor {
   @scala.inline
-  def apply(IEditor: IEditor = null): ICellEditor = {
+  def apply(): ICellEditor = {
     val __obj = js.Dynamic.literal()
-    if (IEditor != null) js.Dynamic.global.Object.assign(__obj, IEditor)
     __obj.asInstanceOf[ICellEditor]
   }
 }

@@ -94,52 +94,106 @@ trait RemoteAccessSession extends js.Object {
 
 object RemoteAccessSession {
   @scala.inline
-  def apply(
-    arn: AmazonResourceName = null,
-    billingMethod: BillingMethod = null,
-    clientId: ClientId = null,
-    created: DateTime = null,
-    device: Device = null,
-    deviceMinutes: DeviceMinutes = null,
-    deviceUdid: String = null,
-    endpoint: String = null,
-    hostAddress: HostAddress = null,
-    instanceArn: AmazonResourceName = null,
-    interactionMode: InteractionMode = null,
-    message: Message = null,
-    name: Name = null,
-    remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined,
-    remoteRecordAppArn: AmazonResourceName = null,
-    remoteRecordEnabled: js.UndefOr[Boolean] = js.undefined,
-    result: ExecutionResult = null,
-    skipAppResign: js.UndefOr[SkipAppResign] = js.undefined,
-    started: DateTime = null,
-    status: ExecutionStatus = null,
-    stopped: DateTime = null
-  ): RemoteAccessSession = {
+  def apply(): RemoteAccessSession = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (billingMethod != null) __obj.updateDynamic("billingMethod")(billingMethod.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (deviceMinutes != null) __obj.updateDynamic("deviceMinutes")(deviceMinutes.asInstanceOf[js.Any])
-    if (deviceUdid != null) __obj.updateDynamic("deviceUdid")(deviceUdid.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (hostAddress != null) __obj.updateDynamic("hostAddress")(hostAddress.asInstanceOf[js.Any])
-    if (instanceArn != null) __obj.updateDynamic("instanceArn")(instanceArn.asInstanceOf[js.Any])
-    if (interactionMode != null) __obj.updateDynamic("interactionMode")(interactionMode.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled.get.asInstanceOf[js.Any])
-    if (remoteRecordAppArn != null) __obj.updateDynamic("remoteRecordAppArn")(remoteRecordAppArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteRecordEnabled)) __obj.updateDynamic("remoteRecordEnabled")(remoteRecordEnabled.get.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.get.asInstanceOf[js.Any])
-    if (started != null) __obj.updateDynamic("started")(started.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (stopped != null) __obj.updateDynamic("stopped")(stopped.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteAccessSession]
   }
+  @scala.inline
+  implicit class RemoteAccessSessionOps[Self <: RemoteAccessSession] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setBillingMethod(value: BillingMethod): Self = this.set("billingMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingMethod: Self = this.set("billingMethod", js.undefined)
+    @scala.inline
+    def setClientId(value: ClientId): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setCreated(value: DateTime): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setDevice(value: Device): Self = this.set("device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevice: Self = this.set("device", js.undefined)
+    @scala.inline
+    def setDeviceMinutes(value: DeviceMinutes): Self = this.set("deviceMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceMinutes: Self = this.set("deviceMinutes", js.undefined)
+    @scala.inline
+    def setDeviceUdid(value: String): Self = this.set("deviceUdid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceUdid: Self = this.set("deviceUdid", js.undefined)
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setHostAddress(value: HostAddress): Self = this.set("hostAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostAddress: Self = this.set("hostAddress", js.undefined)
+    @scala.inline
+    def setInstanceArn(value: AmazonResourceName): Self = this.set("instanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceArn: Self = this.set("instanceArn", js.undefined)
+    @scala.inline
+    def setInteractionMode(value: InteractionMode): Self = this.set("interactionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteractionMode: Self = this.set("interactionMode", js.undefined)
+    @scala.inline
+    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRemoteDebugEnabled(value: Boolean): Self = this.set("remoteDebugEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteDebugEnabled: Self = this.set("remoteDebugEnabled", js.undefined)
+    @scala.inline
+    def setRemoteRecordAppArn(value: AmazonResourceName): Self = this.set("remoteRecordAppArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteRecordAppArn: Self = this.set("remoteRecordAppArn", js.undefined)
+    @scala.inline
+    def setRemoteRecordEnabled(value: Boolean): Self = this.set("remoteRecordEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteRecordEnabled: Self = this.set("remoteRecordEnabled", js.undefined)
+    @scala.inline
+    def setResult(value: ExecutionResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("result", js.undefined)
+    @scala.inline
+    def setSkipAppResign(value: SkipAppResign): Self = this.set("skipAppResign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipAppResign: Self = this.set("skipAppResign", js.undefined)
+    @scala.inline
+    def setStarted(value: DateTime): Self = this.set("started", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStarted: Self = this.set("started", js.undefined)
+    @scala.inline
+    def setStatus(value: ExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStopped(value: DateTime): Self = this.set("stopped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopped: Self = this.set("stopped", js.undefined)
+  }
+  
 }
 

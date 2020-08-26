@@ -62,15 +62,69 @@ trait Router[Dependencies /* <: DefaultDependencies */] extends js.Object {
   def getState(): State = js.native
   def invokeEventListeners(eventName: js.Any, args: js.Any*): Unit = js.native
   def isActive(name: String): Boolean = js.native
+  def isActive(
+    name: String,
+    params: js.UndefOr[scala.Nothing],
+    strictEquality: js.UndefOr[scala.Nothing],
+    ignoreQueryParams: Boolean
+  ): Boolean = js.native
+  def isActive(name: String, params: js.UndefOr[scala.Nothing], strictEquality: Boolean): Boolean = js.native
+  def isActive(
+    name: String,
+    params: js.UndefOr[scala.Nothing],
+    strictEquality: Boolean,
+    ignoreQueryParams: Boolean
+  ): Boolean = js.native
   def isActive(name: String, params: Params): Boolean = js.native
+  def isActive(
+    name: String,
+    params: Params,
+    strictEquality: js.UndefOr[scala.Nothing],
+    ignoreQueryParams: Boolean
+  ): Boolean = js.native
   def isActive(name: String, params: Params, strictEquality: Boolean): Boolean = js.native
   def isActive(name: String, params: Params, strictEquality: Boolean, ignoreQueryParams: Boolean): Boolean = js.native
   def isStarted(): Boolean = js.native
   def makeNotFoundState(path: String): State = js.native
   def makeNotFoundState(path: String, options: NavigationOptions): State = js.native
   def makeState(name: String): State = js.native
+  def makeState(
+    name: String,
+    params: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    meta: js.UndefOr[scala.Nothing],
+    forceId: Double
+  ): State = js.native
+  def makeState(name: String, params: js.UndefOr[scala.Nothing], path: js.UndefOr[scala.Nothing], meta: js.Any): State = js.native
+  def makeState(
+    name: String,
+    params: js.UndefOr[scala.Nothing],
+    path: js.UndefOr[scala.Nothing],
+    meta: js.Any,
+    forceId: Double
+  ): State = js.native
+  def makeState(name: String, params: js.UndefOr[scala.Nothing], path: String): State = js.native
+  def makeState(
+    name: String,
+    params: js.UndefOr[scala.Nothing],
+    path: String,
+    meta: js.UndefOr[scala.Nothing],
+    forceId: Double
+  ): State = js.native
+  def makeState(name: String, params: js.UndefOr[scala.Nothing], path: String, meta: js.Any): State = js.native
+  def makeState(name: String, params: js.UndefOr[scala.Nothing], path: String, meta: js.Any, forceId: Double): State = js.native
   def makeState(name: String, params: Params): State = js.native
+  def makeState(
+    name: String,
+    params: Params,
+    path: js.UndefOr[scala.Nothing],
+    meta: js.UndefOr[scala.Nothing],
+    forceId: Double
+  ): State = js.native
+  def makeState(name: String, params: Params, path: js.UndefOr[scala.Nothing], meta: js.Any): State = js.native
+  def makeState(name: String, params: Params, path: js.UndefOr[scala.Nothing], meta: js.Any, forceId: Double): State = js.native
   def makeState(name: String, params: Params, path: String): State = js.native
+  def makeState(name: String, params: Params, path: String, meta: js.UndefOr[scala.Nothing], forceId: Double): State = js.native
   def makeState(name: String, params: Params, path: String, meta: js.Any): State = js.native
   def makeState(name: String, params: Params, path: String, meta: js.Any, forceId: Double): State = js.native
   def matchPath(path: String): State | Null = js.native

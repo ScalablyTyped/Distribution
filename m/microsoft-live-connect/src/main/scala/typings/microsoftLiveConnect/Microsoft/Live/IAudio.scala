@@ -12,104 +12,105 @@ import scala.scalajs.js.annotation._
   * with the user. Use the wl.skydrive_update scope to create, update, or
   * delete Audio objects.
   */
+@js.native
 trait IAudio extends js.Object {
   /**
     * The audio's album name.
     */
-  var album: String
+  var album: String = js.native
   /**
     * The artist name of the audio's album.
     */
-  var album_artist: String
+  var album_artist: String = js.native
   /**
     * The audio's artist name.
     */
-  var artist: String
+  var artist: String = js.native
   /**
     * The number of comments associated with the audio.
     */
-  var comments_count: Double
+  var comments_count: Double = js.native
   /**
     * A value that indicates whether comments are enabled for the audio. If
     * comments can be made, this value is true; otherwise, it is false.
     */
-  var comments_enabled: Boolean
+  var comments_enabled: Boolean = js.native
   /**
     * The time, in ISO 8601 format, at which the audio was created.
     */
-  var created_time: String
+  var created_time: String = js.native
   /**
     * A description of the audio, or null if no description is specified.
     */
-  var description: String
+  var description: String = js.native
   /**
     * The audio's playing time, in milliseconds.
     */
-  var duration: Double
+  var duration: Double = js.native
   /**
     * Info about the user who uploaded the audio.
     */
-  var from: IUserInfo
+  var from: IUserInfo = js.native
   /**
     * The audio's genre.
     */
-  var genre: String
+  var genre: String = js.native
   /**
     * The Audio object's ID.
     */
-  var id: String
+  var id: String = js.native
   /**
     * A value that indicates whether this audio can be embedded. If this
     * audio can be embedded, this value is true; otherwise, it is false.
     */
-  var is_embeddable: Boolean
+  var is_embeddable: Boolean = js.native
   /**
     * A URL to view the item on SkyDrive.
     */
-  var link: String
+  var link: String = js.native
   /**
     * The name of the audio.
     */
-  var name: String
+  var name: String = js.native
   /**
     * The id of the folder in which the audio is currently stored.
     */
-  var parent_id: String
+  var parent_id: String = js.native
   /**
     * A URL to view the audio's picture on SkyDrive.
     */
-  var picture: String
+  var picture: String = js.native
   /**
     * The object that contains permission info.
     */
-  var shared_with: ISharedWith
+  var shared_with: ISharedWith = js.native
   /**
     * The size, in bytes, of the audio.
     */
-  var size: Double
+  var size: Double = js.native
   /**
     * The URL to use to download the audio from SkyDrive.
     * Warning
     * This value is not persistent. Use it immediately after making the
     * request, and avoid caching.
     */
-  var source: String
+  var source: String = js.native
   /**
     * The audio's title.
     */
-  var title: String
+  var title: String = js.native
   /**
     * The type of object; in this case, "audio".
     */
-  var `type`: String
+  var `type`: String = js.native
   /**
     * The time, in ISO 8601 format, at which the audio was last updated.
     */
-  var updated_time: String
+  var updated_time: String = js.native
   /**
     * The URL to use to upload a new audio to overwrite the existing audio.
     */
-  var upload_location: String
+  var upload_location: String = js.native
 }
 
 object IAudio {
@@ -143,5 +144,64 @@ object IAudio {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAudio]
   }
+  @scala.inline
+  implicit class IAudioOps[Self <: IAudio] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlbum(value: String): Self = this.set("album", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlbum_artist(value: String): Self = this.set("album_artist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArtist(value: String): Self = this.set("artist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComments_count(value: Double): Self = this.set("comments_count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComments_enabled(value: Boolean): Self = this.set("comments_enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreated_time(value: String): Self = this.set("created_time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFrom(value: IUserInfo): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGenre(value: String): Self = this.set("genre", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIs_embeddable(value: Boolean): Self = this.set("is_embeddable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent_id(value: String): Self = this.set("parent_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPicture(value: String): Self = this.set("picture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShared_with(value: ISharedWith): Self = this.set("shared_with", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdated_time(value: String): Self = this.set("updated_time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpload_location(value: String): Self = this.set("upload_location", value.asInstanceOf[js.Any])
+  }
+  
 }
 

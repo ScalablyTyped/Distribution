@@ -12,7 +12,7 @@ Axios third-party module to print all axios requests as curl commands in the con
 | Keywords           | axios, curl, debug |
 | # releases         | 19 |
 | # dependents       | 2 |
-| # downloads        | 16598 |
+| # downloads        | 18023 |
 | # stars            | 0 |
 
 ## Links

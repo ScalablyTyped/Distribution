@@ -22,16 +22,34 @@ trait AuditMitigationActionsTaskMetadata extends js.Object {
 
 object AuditMitigationActionsTaskMetadata {
   @scala.inline
-  def apply(
-    startTime: Timestamp = null,
-    taskId: AuditMitigationActionsTaskId = null,
-    taskStatus: AuditMitigationActionsTaskStatus = null
-  ): AuditMitigationActionsTaskMetadata = {
+  def apply(): AuditMitigationActionsTaskMetadata = {
     val __obj = js.Dynamic.literal()
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (taskId != null) __obj.updateDynamic("taskId")(taskId.asInstanceOf[js.Any])
-    if (taskStatus != null) __obj.updateDynamic("taskStatus")(taskStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditMitigationActionsTaskMetadata]
   }
+  @scala.inline
+  implicit class AuditMitigationActionsTaskMetadataOps[Self <: AuditMitigationActionsTaskMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setTaskId(value: AuditMitigationActionsTaskId): Self = this.set("taskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskId: Self = this.set("taskId", js.undefined)
+    @scala.inline
+    def setTaskStatus(value: AuditMitigationActionsTaskStatus): Self = this.set("taskStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskStatus: Self = this.set("taskStatus", js.undefined)
+  }
+  
 }
 

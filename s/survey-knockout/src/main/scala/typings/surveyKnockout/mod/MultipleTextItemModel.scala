@@ -12,6 +12,7 @@ class MultipleTextItemModel ()
      with ISurveyData
      with ISurveyImpl {
   def this(name: js.Any) = this()
+  def this(name: js.UndefOr[scala.Nothing], title: String) = this()
   def this(name: js.Any, title: String) = this()
   val editor: QuestionTextModel = js.native
   /**
@@ -54,8 +55,6 @@ class MultipleTextItemModel ()
     * @see name
     */
   var title: String = js.native
-  /* CompleteClass */
-  override var validatedValue: js.Any = js.native
   /**
     * The list of question validators.
     */
@@ -65,21 +64,7 @@ class MultipleTextItemModel ()
     */
   var value: js.Any = js.native
   /* protected */ def createEditor(name: String): QuestionTextModel = js.native
-  /* CompleteClass */
-  override def geSurveyData(): ISurveyData = js.native
-  /* CompleteClass */
-  override def getDataFilteredProperties(): js.Any = js.native
-  /* CompleteClass */
-  override def getDataFilteredValues(): js.Any = js.native
   def getMaxLength(): js.Any = js.native
-  /* CompleteClass */
-  override def getSurvey(): ISurvey = js.native
-  /* CompleteClass */
-  override def getTextProcessor(): ITextProcessor = js.native
-  /* CompleteClass */
-  override def getValidatorTitle(): String = js.native
-  /* CompleteClass */
-  override def getValidators(): js.Array[SurveyValidator] = js.native
   def isEmpty(): Boolean = js.native
   def onValueChanged(newValue: js.Any): Unit = js.native
   def setComment(name: String, newValue: String): Unit = js.native

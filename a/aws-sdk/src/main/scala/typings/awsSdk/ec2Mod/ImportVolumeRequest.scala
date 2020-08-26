@@ -30,17 +30,36 @@ trait ImportVolumeRequest extends js.Object {
 
 object ImportVolumeRequest {
   @scala.inline
-  def apply(
-    AvailabilityZone: String,
-    Image: DiskImageDetail,
-    Volume: VolumeDetail,
-    Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): ImportVolumeRequest = {
+  def apply(AvailabilityZone: String, Image: DiskImageDetail, Volume: VolumeDetail): ImportVolumeRequest = {
     val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any], Volume = Volume.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportVolumeRequest]
   }
+  @scala.inline
+  implicit class ImportVolumeRequestOps[Self <: ImportVolumeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImage(value: DiskImageDetail): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVolume(value: VolumeDetail): Self = this.set("Volume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

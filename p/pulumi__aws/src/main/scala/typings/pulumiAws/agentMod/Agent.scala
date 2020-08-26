@@ -22,6 +22,7 @@ class Agent protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: AgentArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: AgentArgs, opts: CustomResourceOptions) = this()
   /**
     * DataSync Agent activation key during resource creation. Conflicts with `ipAddress`. If an `ipAddress` is provided instead, the provider will retrieve the `activationKey` as part of the resource creation.
@@ -42,7 +43,7 @@ class Agent protected () extends CustomResource {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Agent.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -56,8 +57,10 @@ object Agent extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Agent = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Agent = js.native
   def get(name: String, id: Input[ID], state: AgentState): Agent = js.native
   def get(name: String, id: Input[ID], state: AgentState, opts: CustomResourceOptions): Agent = js.native
   /**

@@ -11,8 +11,8 @@ Simple express file upload middleware that wraps around Busboy
 | Full name          | express-fileupload |
 | Keywords           | express, file-upload, upload, forms, multipart, files, busboy, middleware |
 | # releases         | 19 |
-| # dependents       | 197 |
-| # downloads        | 2446280 |
+| # dependents       | 198 |
+| # downloads        | 2540909 |
 | # stars            | 44 |
 
 ## Links

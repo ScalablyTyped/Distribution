@@ -12,7 +12,7 @@ url safe base64 en- and decoding
 | Keywords           | base64, safe, url |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 12816 |
+| # downloads        | 13197 |
 | # stars            | 0 |
 
 ## Links

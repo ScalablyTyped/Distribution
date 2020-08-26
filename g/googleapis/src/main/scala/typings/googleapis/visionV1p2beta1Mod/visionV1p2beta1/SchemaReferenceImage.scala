@@ -34,12 +34,36 @@ trait SchemaReferenceImage extends js.Object {
 
 object SchemaReferenceImage {
   @scala.inline
-  def apply(boundingPolys: js.Array[SchemaBoundingPoly] = null, name: String = null, uri: String = null): SchemaReferenceImage = {
+  def apply(): SchemaReferenceImage = {
     val __obj = js.Dynamic.literal()
-    if (boundingPolys != null) __obj.updateDynamic("boundingPolys")(boundingPolys.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReferenceImage]
   }
+  @scala.inline
+  implicit class SchemaReferenceImageOps[Self <: SchemaReferenceImage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingPolysVarargs(value: SchemaBoundingPoly*): Self = this.set("boundingPolys", js.Array(value :_*))
+    @scala.inline
+    def setBoundingPolys(value: js.Array[SchemaBoundingPoly]): Self = this.set("boundingPolys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingPolys: Self = this.set("boundingPolys", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

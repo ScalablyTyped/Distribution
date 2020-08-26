@@ -10,9 +10,9 @@ A minimal but effective logging mechanism with support for log levels and plugga
 | ------------------ | :-------------: |
 | Full name          | aurelia-logging |
 | Keywords           | aurelia, logging |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 66 |
-| # downloads        | 586167 |
+| # downloads        | 592817 |
 | # stars            | 0 |
 
 ## Links

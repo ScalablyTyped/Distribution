@@ -29,6 +29,7 @@ class ResourceResources protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaResource] = js.native
   def get(callback: BodyResponseCallback[SchemaResource]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResource] = js.native
   def get(params: ParamsResourceResourcesGet): GaxiosPromise[SchemaResource] = js.native
   def get(params: ParamsResourceResourcesGet, callback: BodyResponseCallback[SchemaResource]): Unit = js.native
   def get(
@@ -61,6 +62,7 @@ class ResourceResources protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaResourcesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaResourcesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResourcesListResponse] = js.native
   def list(params: ParamsResourceResourcesList): GaxiosPromise[SchemaResourcesListResponse] = js.native
   def list(params: ParamsResourceResourcesList, callback: BodyResponseCallback[SchemaResourcesListResponse]): Unit = js.native
   def list(

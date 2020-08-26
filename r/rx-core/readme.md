@@ -12,7 +12,7 @@ Core library for composing asynchronous and event-based operations in JavaScript
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 1558 |
+| # downloads        | 1496 |
 | # stars            | 1 |
 
 ## Links

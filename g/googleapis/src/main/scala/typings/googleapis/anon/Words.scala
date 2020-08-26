@@ -12,11 +12,32 @@ trait Words extends js.Object {
 
 object Words {
   @scala.inline
-  def apply(source: Attribution = null, words: js.Array[Derivatives] = null): Words = {
+  def apply(): Words = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[Words]
   }
+  @scala.inline
+  implicit class WordsOps[Self <: Words] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSource(value: Attribution): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setWordsVarargs(value: Derivatives*): Self = this.set("words", js.Array(value :_*))
+    @scala.inline
+    def setWords(value: js.Array[Derivatives]): Self = this.set("words", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWords: Self = this.set("words", js.undefined)
+  }
+  
 }
 

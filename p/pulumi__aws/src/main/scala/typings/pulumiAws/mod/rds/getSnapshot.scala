@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws", "rds.getSnapshot")
 @js.native
 object getSnapshot extends js.Object {
-  def apply(): js.Promise[GetSnapshotResult] with GetSnapshotResult = js.native
-  def apply(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] with GetSnapshotResult = js.native
-  def apply(args: GetSnapshotArgs, opts: InvokeOptions): js.Promise[GetSnapshotResult] with GetSnapshotResult = js.native
+  def apply(): js.Promise[GetSnapshotResult] = js.native
+  def apply(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSnapshotResult] = js.native
+  def apply(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] = js.native
+  def apply(args: GetSnapshotArgs, opts: InvokeOptions): js.Promise[GetSnapshotResult] = js.native
 }
 

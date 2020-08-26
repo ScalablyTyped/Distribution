@@ -16,6 +16,7 @@ trait FancytreeStatic extends js.Object {
   def assert(cond: Boolean, msg: String): Unit = js.native
   /** Return a function that executes *fn* at most every *timeout* ms. */
   def debounce[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](timeout: Double, fn: T): T = js.native
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](timeout: Double, fn: T, invokeAsap: js.UndefOr[scala.Nothing], ctx: js.Any): T = js.native
   def debounce[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](timeout: Double, fn: T, invokeAsap: Boolean): T = js.native
   def debounce[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](timeout: Double, fn: T, invokeAsap: Boolean, ctx: js.Any): T = js.native
   def debug(msg: String): Unit = js.native

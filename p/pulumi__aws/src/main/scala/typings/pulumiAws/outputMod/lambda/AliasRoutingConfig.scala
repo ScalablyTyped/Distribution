@@ -15,10 +15,26 @@ trait AliasRoutingConfig extends js.Object {
 
 object AliasRoutingConfig {
   @scala.inline
-  def apply(additionalVersionWeights: StringDictionary[Double] = null): AliasRoutingConfig = {
+  def apply(): AliasRoutingConfig = {
     val __obj = js.Dynamic.literal()
-    if (additionalVersionWeights != null) __obj.updateDynamic("additionalVersionWeights")(additionalVersionWeights.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasRoutingConfig]
   }
+  @scala.inline
+  implicit class AliasRoutingConfigOps[Self <: AliasRoutingConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalVersionWeights(value: StringDictionary[Double]): Self = this.set("additionalVersionWeights", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalVersionWeights: Self = this.set("additionalVersionWeights", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Jest utility for creating variations of the same test
 | Keywords           | jest, test, testing |
 | # releases         | 1 |
 | # dependents       | 8 |
-| # downloads        | 382966 |
+| # downloads        | 394495 |
 | # stars            | 1 |
 
 ## Links

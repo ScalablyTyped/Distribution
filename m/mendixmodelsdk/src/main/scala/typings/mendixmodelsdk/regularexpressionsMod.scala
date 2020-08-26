@@ -58,7 +58,7 @@ object regularexpressionsMod extends js.Object {
       @JSName("containerAsFolderBase")
       def containerAsFolderBase_MRegularExpression: FolderBase = js.native
       def regEx: String = js.native
-      def regEx(newValue: String): js.Any = js.native
+      def regEx_=(newValue: String): Unit = js.native
     }
     
     /* static members */

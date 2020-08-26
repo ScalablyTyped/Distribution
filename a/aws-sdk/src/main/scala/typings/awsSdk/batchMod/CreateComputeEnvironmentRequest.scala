@@ -30,18 +30,37 @@ trait CreateComputeEnvironmentRequest extends js.Object {
 
 object CreateComputeEnvironmentRequest {
   @scala.inline
-  def apply(
-    computeEnvironmentName: String,
-    serviceRole: String,
-    `type`: CEType,
-    computeResources: ComputeResource = null,
-    state: CEState = null
-  ): CreateComputeEnvironmentRequest = {
+  def apply(computeEnvironmentName: String, serviceRole: String, `type`: CEType): CreateComputeEnvironmentRequest = {
     val __obj = js.Dynamic.literal(computeEnvironmentName = computeEnvironmentName.asInstanceOf[js.Any], serviceRole = serviceRole.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (computeResources != null) __obj.updateDynamic("computeResources")(computeResources.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateComputeEnvironmentRequest]
   }
+  @scala.inline
+  implicit class CreateComputeEnvironmentRequestOps[Self <: CreateComputeEnvironmentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputeEnvironmentName(value: String): Self = this.set("computeEnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceRole(value: String): Self = this.set("serviceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: CEType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComputeResources(value: ComputeResource): Self = this.set("computeResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeResources: Self = this.set("computeResources", js.undefined)
+    @scala.inline
+    def setState(value: CEState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

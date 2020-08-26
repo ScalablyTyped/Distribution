@@ -36,18 +36,42 @@ trait SchemaListResponse extends js.Object {
 
 object SchemaListResponse {
   @scala.inline
-  def apply(
-    debugString: String = null,
-    errorCode: js.Array[String] = null,
-    maxAge: String = null,
-    statements: js.Array[SchemaStatement] = null
-  ): SchemaListResponse = {
+  def apply(): SchemaListResponse = {
     val __obj = js.Dynamic.literal()
-    if (debugString != null) __obj.updateDynamic("debugString")(debugString.asInstanceOf[js.Any])
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (statements != null) __obj.updateDynamic("statements")(statements.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListResponse]
   }
+  @scala.inline
+  implicit class SchemaListResponseOps[Self <: SchemaListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebugString(value: String): Self = this.set("debugString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugString: Self = this.set("debugString", js.undefined)
+    @scala.inline
+    def setErrorCodeVarargs(value: String*): Self = this.set("errorCode", js.Array(value :_*))
+    @scala.inline
+    def setErrorCode(value: js.Array[String]): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    @scala.inline
+    def setMaxAge(value: String): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    @scala.inline
+    def setStatementsVarargs(value: SchemaStatement*): Self = this.set("statements", js.Array(value :_*))
+    @scala.inline
+    def setStatements(value: js.Array[SchemaStatement]): Self = this.set("statements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatements: Self = this.set("statements", js.undefined)
+  }
+  
 }
 

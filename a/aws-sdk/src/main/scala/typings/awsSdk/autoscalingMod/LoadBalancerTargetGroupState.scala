@@ -18,11 +18,30 @@ trait LoadBalancerTargetGroupState extends js.Object {
 
 object LoadBalancerTargetGroupState {
   @scala.inline
-  def apply(LoadBalancerTargetGroupARN: XmlStringMaxLen511 = null, State: XmlStringMaxLen255 = null): LoadBalancerTargetGroupState = {
+  def apply(): LoadBalancerTargetGroupState = {
     val __obj = js.Dynamic.literal()
-    if (LoadBalancerTargetGroupARN != null) __obj.updateDynamic("LoadBalancerTargetGroupARN")(LoadBalancerTargetGroupARN.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerTargetGroupState]
   }
+  @scala.inline
+  implicit class LoadBalancerTargetGroupStateOps[Self <: LoadBalancerTargetGroupState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoadBalancerTargetGroupARN(value: XmlStringMaxLen511): Self = this.set("LoadBalancerTargetGroupARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerTargetGroupARN: Self = this.set("LoadBalancerTargetGroupARN", js.undefined)
+    @scala.inline
+    def setState(value: XmlStringMaxLen255): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

@@ -10,56 +10,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StarProps extends js.Object {
-  var allowHalf: js.UndefOr[Boolean] = js.undefined
-  var character: js.UndefOr[js.Function1[/* props */ StarProps, ReactNode]] = js.undefined
-  var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ StarProps, ReactNode]] = js.undefined
-  var count: js.UndefOr[Double] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var focused: js.UndefOr[Boolean] = js.undefined
-  var index: js.UndefOr[Double] = js.undefined
+  var allowHalf: js.UndefOr[Boolean] = js.native
+  var character: js.UndefOr[js.Function1[/* props */ this.type, ReactNode]] = js.native
+  var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ this.type, ReactNode]] = js.native
+  var count: js.UndefOr[Double] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var focused: js.UndefOr[Boolean] = js.native
+  var index: js.UndefOr[Double] = js.native
   var onClick: js.UndefOr[
     js.Function2[
       /* e */ (MouseEvent[HTMLDivElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement], 
       /* index */ Double, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var onHover: js.UndefOr[
     js.Function2[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* index */ Double, Unit]
-  ] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var value: js.UndefOr[Double] = js.native
 }
 
 object StarProps {
   @scala.inline
-  def apply(
-    allowHalf: js.UndefOr[Boolean] = js.undefined,
-    character: /* props */ StarProps => ReactNode = null,
-    characterRender: (/* origin */ ReactElement, /* props */ StarProps) => ReactNode = null,
-    count: js.UndefOr[Double] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    focused: js.UndefOr[Boolean] = js.undefined,
-    index: js.UndefOr[Double] = js.undefined,
-    onClick: (/* e */ (MouseEvent[HTMLDivElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement], /* index */ Double) => Unit = null,
-    onHover: (/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* index */ Double) => Unit = null,
-    prefixCls: String = null,
-    value: js.UndefOr[Double] = js.undefined
-  ): StarProps = {
+  def apply(): StarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHalf)) __obj.updateDynamic("allowHalf")(allowHalf.get.asInstanceOf[js.Any])
-    if (character != null) __obj.updateDynamic("character")(js.Any.fromFunction1(character))
-    if (characterRender != null) __obj.updateDynamic("characterRender")(js.Any.fromFunction2(characterRender))
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction2(onHover))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StarProps]
   }
+  @scala.inline
+  implicit class StarPropsOps[Self <: StarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowHalf(value: Boolean): Self = this.set("allowHalf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowHalf: Self = this.set("allowHalf", js.undefined)
+    @scala.inline
+    def setCharacter(value: StarProps => ReactNode): Self = this.set("character", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCharacter: Self = this.set("character", js.undefined)
+    @scala.inline
+    def setCharacterRender(value: (/* origin */ ReactElement, StarProps) => ReactNode): Self = this.set("characterRender", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCharacterRender: Self = this.set("characterRender", js.undefined)
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setFocused(value: Boolean): Self = this.set("focused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocused: Self = this.set("focused", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setOnClick(
+      value: (/* e */ (MouseEvent[HTMLDivElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement], /* index */ Double) => Unit
+    ): Self = this.set("onClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnHover(value: (/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* index */ Double) => Unit): Self = this.set("onHover", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnHover: Self = this.set("onHover", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

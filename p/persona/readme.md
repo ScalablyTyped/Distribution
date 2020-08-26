@@ -11,7 +11,7 @@ The official web client library for the Persona API.
 | Keywords           | - |
 | # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 2184 |
+| # downloads        | 2342 |
 | # stars            | 0 |
 
 ## Links

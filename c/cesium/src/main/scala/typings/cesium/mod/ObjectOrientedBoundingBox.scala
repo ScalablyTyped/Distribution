@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObjectOrientedBoundingBox () extends js.Object {
   def this(rotation: Matrix3) = this()
+  def this(rotation: js.UndefOr[scala.Nothing], translation: Cartesian3) = this()
   def this(rotation: Matrix3, translation: Cartesian3) = this()
+  def this(rotation: js.UndefOr[scala.Nothing], translation: js.UndefOr[scala.Nothing], scale: Cartesian3) = this()
+  def this(rotation: js.UndefOr[scala.Nothing], translation: Cartesian3, scale: Cartesian3) = this()
+  def this(rotation: Matrix3, translation: js.UndefOr[scala.Nothing], scale: Cartesian3) = this()
   def this(rotation: Matrix3, translation: Cartesian3, scale: Cartesian3) = this()
   var rotation: Matrix3 = js.native
   var scale: Cartesian3 = js.native

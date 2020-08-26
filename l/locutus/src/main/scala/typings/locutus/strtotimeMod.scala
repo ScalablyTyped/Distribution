@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object strtotimeMod extends js.Object {
   def apply(): js.Any = js.native
+  def apply(text: js.UndefOr[scala.Nothing], now: js.Any): js.Any = js.native
   def apply(text: js.Any): js.Any = js.native
   def apply(text: js.Any, now: js.Any): js.Any = js.native
 }

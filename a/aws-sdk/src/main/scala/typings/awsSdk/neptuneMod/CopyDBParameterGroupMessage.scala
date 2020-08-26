@@ -29,12 +29,35 @@ object CopyDBParameterGroupMessage {
   def apply(
     SourceDBParameterGroupIdentifier: String,
     TargetDBParameterGroupDescription: String,
-    TargetDBParameterGroupIdentifier: String,
-    Tags: TagList = null
+    TargetDBParameterGroupIdentifier: String
   ): CopyDBParameterGroupMessage = {
     val __obj = js.Dynamic.literal(SourceDBParameterGroupIdentifier = SourceDBParameterGroupIdentifier.asInstanceOf[js.Any], TargetDBParameterGroupDescription = TargetDBParameterGroupDescription.asInstanceOf[js.Any], TargetDBParameterGroupIdentifier = TargetDBParameterGroupIdentifier.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyDBParameterGroupMessage]
   }
+  @scala.inline
+  implicit class CopyDBParameterGroupMessageOps[Self <: CopyDBParameterGroupMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceDBParameterGroupIdentifier(value: String): Self = this.set("SourceDBParameterGroupIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetDBParameterGroupDescription(value: String): Self = this.set("TargetDBParameterGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetDBParameterGroupIdentifier(value: String): Self = this.set("TargetDBParameterGroupIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

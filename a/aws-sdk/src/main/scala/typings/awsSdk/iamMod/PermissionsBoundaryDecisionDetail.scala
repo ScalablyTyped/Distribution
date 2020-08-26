@@ -14,10 +14,26 @@ trait PermissionsBoundaryDecisionDetail extends js.Object {
 
 object PermissionsBoundaryDecisionDetail {
   @scala.inline
-  def apply(AllowedByPermissionsBoundary: js.UndefOr[booleanType] = js.undefined): PermissionsBoundaryDecisionDetail = {
+  def apply(): PermissionsBoundaryDecisionDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowedByPermissionsBoundary)) __obj.updateDynamic("AllowedByPermissionsBoundary")(AllowedByPermissionsBoundary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionsBoundaryDecisionDetail]
   }
+  @scala.inline
+  implicit class PermissionsBoundaryDecisionDetailOps[Self <: PermissionsBoundaryDecisionDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedByPermissionsBoundary(value: booleanType): Self = this.set("AllowedByPermissionsBoundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedByPermissionsBoundary: Self = this.set("AllowedByPermissionsBoundary", js.undefined)
+  }
+  
 }
 

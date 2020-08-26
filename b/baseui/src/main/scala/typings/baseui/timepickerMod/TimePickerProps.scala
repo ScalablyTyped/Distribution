@@ -12,51 +12,90 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimePickerProps extends js.Object {
-  var creatable: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var error: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[`12` | `24`] = js.undefined
-  var nullable: js.UndefOr[Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* args */ Date, _]] = js.undefined
-  var overrides: js.UndefOr[Select] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var positive: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
-  var step: js.UndefOr[Double] = js.undefined
-  var value: js.UndefOr[Date | Null] = js.undefined
+  var creatable: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[`12` | `24`] = js.native
+  var nullable: js.UndefOr[Boolean] = js.native
+  var onChange: js.UndefOr[js.Function1[/* args */ Date, _]] = js.native
+  var overrides: js.UndefOr[Select] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var positive: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.native
+  var step: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Date | Null] = js.native
 }
 
 object TimePickerProps {
   @scala.inline
-  def apply(
-    creatable: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    error: js.UndefOr[Boolean] = js.undefined,
-    format: `12` | `24` = null,
-    nullable: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* args */ Date => _ = null,
-    overrides: Select = null,
-    placeholder: String = null,
-    positive: js.UndefOr[Boolean] = js.undefined,
-    size: mini | default_ | compact | large_ = null,
-    step: js.UndefOr[Double] = js.undefined,
-    value: js.UndefOr[Null | Date] = js.undefined
-  ): TimePickerProps = {
+  def apply(): TimePickerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(creatable)) __obj.updateDynamic("creatable")(creatable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.get.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerProps]
   }
+  @scala.inline
+  implicit class TimePickerPropsOps[Self <: TimePickerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatable(value: Boolean): Self = this.set("creatable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatable: Self = this.set("creatable", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFormat(value: `12` | `24`): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setNullable(value: Boolean): Self = this.set("nullable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNullable: Self = this.set("nullable", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* args */ Date => _): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOverrides(value: Select): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPositive(value: Boolean): Self = this.set("positive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositive: Self = this.set("positive", js.undefined)
+    @scala.inline
+    def setSize(value: mini | default_ | compact | large_): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setValue(value: Date): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValueNull: Self = this.set("value", null)
+  }
+  
 }
 

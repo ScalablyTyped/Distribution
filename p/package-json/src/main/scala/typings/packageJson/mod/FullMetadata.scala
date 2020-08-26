@@ -2,22 +2,20 @@ package typings.packageJson.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.packageJson.anon.Dictversion
-import typings.packageJson.anon.Email
-import typings.packageJson.anon.Type
-import typings.packageJson.anon.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FullMetadata
   extends AbbreviatedMetadata
      with HoistedData {
-  val _id: String
-  val _rev: String
-  val time: Dictversion
-  val users: js.UndefOr[StringDictionary[Boolean]] = js.undefined
+  val _id: String = js.native
+  val _rev: String = js.native
+  val time: Dictversion = js.native
+  val users: js.UndefOr[StringDictionary[Boolean]] = js.native
   @JSName("versions")
-  val versions_FullMetadata: StringDictionary[FullVersion]
+  val versions_FullMetadata: StringDictionary[FullVersion] = js.native
 }
 
 object FullMetadata {
@@ -29,35 +27,36 @@ object FullMetadata {
     modified: String,
     name: String,
     time: Dictversion,
-    versions: StringDictionary[FullVersion],
-    author: Person = null,
-    bugs: Email | Url = null,
-    contributors: js.Array[Person] = null,
-    description: String = null,
-    homepage: String = null,
-    keywords: js.Array[String] = null,
-    license: String = null,
-    maintainers: js.Array[Person] = null,
-    readme: String = null,
-    readmeFilename: String = null,
-    repository: Type = null,
-    users: StringDictionary[Boolean] = null
+    versions: StringDictionary[FullVersion]
   ): FullMetadata = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
     __obj.updateDynamic("dist-tags")(`dist-tags`.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (bugs != null) __obj.updateDynamic("bugs")(bugs.asInstanceOf[js.Any])
-    if (contributors != null) __obj.updateDynamic("contributors")(contributors.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
-    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers.asInstanceOf[js.Any])
-    if (readme != null) __obj.updateDynamic("readme")(readme.asInstanceOf[js.Any])
-    if (readmeFilename != null) __obj.updateDynamic("readmeFilename")(readmeFilename.asInstanceOf[js.Any])
-    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
-    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullMetadata]
   }
+  @scala.inline
+  implicit class FullMetadataOps[Self <: FullMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_id(value: String): Self = this.set("_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_rev(value: String): Self = this.set("_rev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTime(value: Dictversion): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersions(value: StringDictionary[FullVersion]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsers(value: StringDictionary[Boolean]): Self = this.set("users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsers: Self = this.set("users", js.undefined)
+  }
+  
 }
 

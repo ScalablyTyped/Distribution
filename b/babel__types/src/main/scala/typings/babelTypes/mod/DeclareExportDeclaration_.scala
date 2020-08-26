@@ -6,38 +6,60 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait DeclareExportDeclaration_
+- typings.babelTypes.mod._Node because Already inherited */ @js.native
+trait DeclareExportDeclaration_
   extends Declaration
      with BaseNode
      with Flow
      with FlowDeclaration
      with Statement {
-  var declaration: Flow | Null
-  var default: Boolean | Null
-  var source: StringLiteral_ | Null
-  var specifiers: (js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_]) | Null
+  var declaration: Flow | Null = js.native
+  var default: Boolean | Null = js.native
+  var source: StringLiteral_ | Null = js.native
+  var specifiers: (js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_]) | Null = js.native
   @JSName("type")
-  var type_DeclareExportDeclaration_ : DeclareExportDeclaration
+  var type_DeclareExportDeclaration_ : DeclareExportDeclaration = js.native
 }
 
 object DeclareExportDeclaration_ {
   @scala.inline
-  def apply(
-    `type`: DeclareExportDeclaration,
-    declaration: Flow = null,
-    default: Boolean = null.asInstanceOf[Boolean],
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    source: StringLiteral_ = null,
-    specifiers: js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_] = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): DeclareExportDeclaration_ = {
-    val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def apply(`type`: DeclareExportDeclaration): DeclareExportDeclaration_ = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclareExportDeclaration_]
   }
+  @scala.inline
+  implicit class DeclareExportDeclaration_Ops[Self <: DeclareExportDeclaration_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: DeclareExportDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeclaration(value: Flow): Self = this.set("declaration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeclarationNull: Self = this.set("declaration", null)
+    @scala.inline
+    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultNull: Self = this.set("default", null)
+    @scala.inline
+    def setSource(value: StringLiteral_): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceNull: Self = this.set("source", null)
+    @scala.inline
+    def setSpecifiersVarargs(value: (ExportSpecifier_ | ExportNamespaceSpecifier_)*): Self = this.set("specifiers", js.Array(value :_*))
+    @scala.inline
+    def setSpecifiers(value: js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_]): Self = this.set("specifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpecifiersNull: Self = this.set("specifiers", null)
+  }
+  
 }
 

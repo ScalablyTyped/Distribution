@@ -41,6 +41,7 @@ class Object ()
   def this(attributes: js.Array[String]) = this()
   def this(className: String) = this()
   def this(attributes: js.Array[String], options: js.Any) = this()
+  def this(className: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(className: String, options: js.Any) = this()
 }
 
@@ -51,6 +52,7 @@ object Object extends js.Object {
   def destroyAll[T](list: js.Array[typings.avoscloudSdk.mod.Object]): typings.avoscloudSdk.mod.Promise[T] = js.native
   def destroyAll[T](list: js.Array[typings.avoscloudSdk.mod.Object], options: DestroyAllOptions): typings.avoscloudSdk.mod.Promise[T] = js.native
   def extend(className: String): js.Any = js.native
+  def extend(className: String, protoProps: js.UndefOr[scala.Nothing], classProps: js.Any): js.Any = js.native
   def extend(className: String, protoProps: js.Any): js.Any = js.native
   def extend(className: String, protoProps: js.Any, classProps: js.Any): js.Any = js.native
   def fetchAll[T](list: js.Array[typings.avoscloudSdk.mod.Object], options: SuccessFailureOptions): typings.avoscloudSdk.mod.Promise[T] = js.native

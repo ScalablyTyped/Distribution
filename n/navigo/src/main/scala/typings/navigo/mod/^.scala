@@ -13,9 +13,14 @@ import scala.scalajs.js.annotation._
   */
 class ^ () extends Navigo {
   def this(root: String) = this()
+  def this(root: js.UndefOr[scala.Nothing], useHash: Boolean) = this()
   def this(root: String, useHash: Boolean) = this()
   def this(root: Null, useHash: Boolean) = this()
+  def this(root: js.UndefOr[scala.Nothing], useHash: js.UndefOr[scala.Nothing], hash: String) = this()
+  def this(root: js.UndefOr[scala.Nothing], useHash: Boolean, hash: String) = this()
+  def this(root: String, useHash: js.UndefOr[scala.Nothing], hash: String) = this()
   def this(root: String, useHash: Boolean, hash: String) = this()
+  def this(root: Null, useHash: js.UndefOr[scala.Nothing], hash: String) = this()
   def this(root: Null, useHash: Boolean, hash: String) = this()
 }
 

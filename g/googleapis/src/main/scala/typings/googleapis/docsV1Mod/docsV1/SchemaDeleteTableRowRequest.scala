@@ -20,10 +20,26 @@ trait SchemaDeleteTableRowRequest extends js.Object {
 
 object SchemaDeleteTableRowRequest {
   @scala.inline
-  def apply(tableCellLocation: SchemaTableCellLocation = null): SchemaDeleteTableRowRequest = {
+  def apply(): SchemaDeleteTableRowRequest = {
     val __obj = js.Dynamic.literal()
-    if (tableCellLocation != null) __obj.updateDynamic("tableCellLocation")(tableCellLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeleteTableRowRequest]
   }
+  @scala.inline
+  implicit class SchemaDeleteTableRowRequestOps[Self <: SchemaDeleteTableRowRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTableCellLocation(value: SchemaTableCellLocation): Self = this.set("tableCellLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableCellLocation: Self = this.set("tableCellLocation", js.undefined)
+  }
+  
 }
 

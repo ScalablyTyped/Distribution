@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rmc-pull-to-refresh/lib/PullToRefresh", JSImport.Namespace)
+@JSImport("rmc-pull-to-refresh/es/PullToRefresh", JSImport.Namespace)
 @js.native
 object pullToRefreshMod extends js.Object {
   @js.native
@@ -16,6 +16,7 @@ object pullToRefreshMod extends js.Object {
     var _ScreenY: js.Any = js.native
     var _isMounted: Boolean = js.native
     var _lastScreenY: js.Any = js.native
+    var _startScreenX: js.Any = js.native
     var _startScreenY: js.Any = js.native
     var _timer: js.Any = js.native
     var _to: js.Any = js.native

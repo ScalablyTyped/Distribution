@@ -45,6 +45,7 @@ class Controller protected () extends js.Object {
     * @param owningView The view inside which this controller resides.
     */
   def automate(): Unit = js.native
+  def automate(overrideContext: js.UndefOr[scala.Nothing], owningView: View_): Unit = js.native
   def automate(overrideContext: js.Object): Unit = js.native
   def automate(overrideContext: js.Object, owningView: View_): Unit = js.native
   /**

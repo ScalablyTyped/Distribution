@@ -12,7 +12,7 @@ Decorator that will attempt to apply focus to the first field with an error upon
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 15 |
-| # downloads        | 1139032 |
+| # downloads        | 1184470 |
 | # stars            | 0 |
 
 ## Links

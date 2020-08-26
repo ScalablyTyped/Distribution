@@ -22,12 +22,34 @@ trait InstanceStatusDetails extends js.Object {
 
 object InstanceStatusDetails {
   @scala.inline
-  def apply(ImpairedSince: DateTime = null, Name: StatusName = null, Status: StatusType = null): InstanceStatusDetails = {
+  def apply(): InstanceStatusDetails = {
     val __obj = js.Dynamic.literal()
-    if (ImpairedSince != null) __obj.updateDynamic("ImpairedSince")(ImpairedSince.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceStatusDetails]
   }
+  @scala.inline
+  implicit class InstanceStatusDetailsOps[Self <: InstanceStatusDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImpairedSince(value: DateTime): Self = this.set("ImpairedSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImpairedSince: Self = this.set("ImpairedSince", js.undefined)
+    @scala.inline
+    def setName(value: StatusName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

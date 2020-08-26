@@ -55,20 +55,57 @@ object StackResourceDrift {
     ResourceType: ResourceType,
     StackId: StackId,
     StackResourceDriftStatus: StackResourceDriftStatus,
-    Timestamp: Timestamp,
-    ActualProperties: Properties = null,
-    ExpectedProperties: Properties = null,
-    PhysicalResourceId: PhysicalResourceId = null,
-    PhysicalResourceIdContext: PhysicalResourceIdContext = null,
-    PropertyDifferences: PropertyDifferences = null
+    Timestamp: Timestamp
   ): StackResourceDrift = {
     val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any], StackResourceDriftStatus = StackResourceDriftStatus.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
-    if (ActualProperties != null) __obj.updateDynamic("ActualProperties")(ActualProperties.asInstanceOf[js.Any])
-    if (ExpectedProperties != null) __obj.updateDynamic("ExpectedProperties")(ExpectedProperties.asInstanceOf[js.Any])
-    if (PhysicalResourceId != null) __obj.updateDynamic("PhysicalResourceId")(PhysicalResourceId.asInstanceOf[js.Any])
-    if (PhysicalResourceIdContext != null) __obj.updateDynamic("PhysicalResourceIdContext")(PhysicalResourceIdContext.asInstanceOf[js.Any])
-    if (PropertyDifferences != null) __obj.updateDynamic("PropertyDifferences")(PropertyDifferences.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackResourceDrift]
   }
+  @scala.inline
+  implicit class StackResourceDriftOps[Self <: StackResourceDrift] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogicalResourceId(value: LogicalResourceId): Self = this.set("LogicalResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackId(value: StackId): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackResourceDriftStatus(value: StackResourceDriftStatus): Self = this.set("StackResourceDriftStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActualProperties(value: Properties): Self = this.set("ActualProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActualProperties: Self = this.set("ActualProperties", js.undefined)
+    @scala.inline
+    def setExpectedProperties(value: Properties): Self = this.set("ExpectedProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedProperties: Self = this.set("ExpectedProperties", js.undefined)
+    @scala.inline
+    def setPhysicalResourceId(value: PhysicalResourceId): Self = this.set("PhysicalResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhysicalResourceId: Self = this.set("PhysicalResourceId", js.undefined)
+    @scala.inline
+    def setPhysicalResourceIdContextVarargs(value: PhysicalResourceIdContextKeyValuePair*): Self = this.set("PhysicalResourceIdContext", js.Array(value :_*))
+    @scala.inline
+    def setPhysicalResourceIdContext(value: PhysicalResourceIdContext): Self = this.set("PhysicalResourceIdContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhysicalResourceIdContext: Self = this.set("PhysicalResourceIdContext", js.undefined)
+    @scala.inline
+    def setPropertyDifferencesVarargs(value: PropertyDifference*): Self = this.set("PropertyDifferences", js.Array(value :_*))
+    @scala.inline
+    def setPropertyDifferences(value: PropertyDifferences): Self = this.set("PropertyDifferences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyDifferences: Self = this.set("PropertyDifferences", js.undefined)
+  }
+  
 }
 

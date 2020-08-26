@@ -15,7 +15,16 @@ class DateTimeFormatterBuilder () extends js.Object {
   def appendOffsetId(): DateTimeFormatterBuilder = js.native
   def appendPattern(pattern: String): DateTimeFormatterBuilder = js.native
   def appendValue(field: TemporalField): DateTimeFormatterBuilder = js.native
+  def appendValue(
+    field: TemporalField,
+    width: js.UndefOr[scala.Nothing],
+    maxWidth: js.UndefOr[scala.Nothing],
+    signStyle: SignStyle
+  ): DateTimeFormatterBuilder = js.native
+  def appendValue(field: TemporalField, width: js.UndefOr[scala.Nothing], maxWidth: Double): DateTimeFormatterBuilder = js.native
+  def appendValue(field: TemporalField, width: js.UndefOr[scala.Nothing], maxWidth: Double, signStyle: SignStyle): DateTimeFormatterBuilder = js.native
   def appendValue(field: TemporalField, width: Double): DateTimeFormatterBuilder = js.native
+  def appendValue(field: TemporalField, width: Double, maxWidth: js.UndefOr[scala.Nothing], signStyle: SignStyle): DateTimeFormatterBuilder = js.native
   def appendValue(field: TemporalField, width: Double, maxWidth: Double): DateTimeFormatterBuilder = js.native
   def appendValue(field: TemporalField, width: Double, maxWidth: Double, signStyle: SignStyle): DateTimeFormatterBuilder = js.native
   def appendValueReduced(field: TemporalField, width: Double, maxWidth: Double, base: Double): DateTimeFormatterBuilder = js.native

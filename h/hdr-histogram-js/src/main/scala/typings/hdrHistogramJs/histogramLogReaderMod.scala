@@ -68,6 +68,7 @@ object histogramLogReaderMod extends js.Object {
       * @return a DecodedInterval, or a null if no appropriate interval found
       */
     def nextIntervalHistogram(): AbstractHistogram | Null = js.native
+    def nextIntervalHistogram(rangeStartTimeSec: js.UndefOr[scala.Nothing], rangeEndTimeSec: Double): AbstractHistogram | Null = js.native
     def nextIntervalHistogram(rangeStartTimeSec: Double): AbstractHistogram | Null = js.native
     def nextIntervalHistogram(rangeStartTimeSec: Double, rangeEndTimeSec: Double): AbstractHistogram | Null = js.native
   }

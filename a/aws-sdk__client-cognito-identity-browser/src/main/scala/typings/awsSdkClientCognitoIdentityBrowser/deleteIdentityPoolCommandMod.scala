@@ -26,16 +26,9 @@ object deleteIdentityPoolCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DeleteIdentityPoolInput) = this()
-    /* CompleteClass */
-    override val input: DeleteIdentityPoolInput = js.native
     val middlewareStack: MiddlewareStack[DeleteIdentityPoolInput, DeleteIdentityPoolOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: CognitoIdentityResolvedConfiguration
-    ): Handler[DeleteIdentityPoolInput, DeleteIdentityPoolOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: CognitoIdentityResolvedConfiguration
     ): Handler[DeleteIdentityPoolInput, DeleteIdentityPoolOutput] = js.native
   }

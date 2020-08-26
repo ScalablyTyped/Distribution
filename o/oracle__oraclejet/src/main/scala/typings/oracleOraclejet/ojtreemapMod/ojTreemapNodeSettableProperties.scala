@@ -30,64 +30,112 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ojTreemapNodeSettableProperties extends JetSettableProperties {
-  var categories: js.UndefOr[js.Array[String]] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var drilling: js.UndefOr[on | off | inherit] = js.undefined
-  var groupLabelDisplay: js.UndefOr[node | off | header] = js.undefined
-  var header: js.UndefOr[Isolate] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var labelDisplay: js.UndefOr[off | node] = js.undefined
-  var labelHalign: js.UndefOr[start | end | center] = js.undefined
-  var labelStyle: js.UndefOr[js.Object] = js.undefined
-  var labelValign: js.UndefOr[top | bottom | center] = js.undefined
+  var categories: js.UndefOr[js.Array[String]] = js.native
+  var color: js.UndefOr[String] = js.native
+  var drilling: js.UndefOr[on | off | inherit] = js.native
+  var groupLabelDisplay: js.UndefOr[node | off | header] = js.native
+  var header: js.UndefOr[Isolate] = js.native
+  var label: js.UndefOr[String] = js.native
+  var labelDisplay: js.UndefOr[off | node] = js.native
+  var labelHalign: js.UndefOr[start | end | center] = js.native
+  var labelStyle: js.UndefOr[js.Object] = js.native
+  var labelValign: js.UndefOr[top | bottom | center] = js.native
   var pattern: js.UndefOr[
     smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
-  ] = js.undefined
-  var selectable: js.UndefOr[off | auto] = js.undefined
-  var shortDesc: js.UndefOr[String] = js.undefined
-  var svgClassName: js.UndefOr[String] = js.undefined
-  var svgStyle: js.UndefOr[js.Object] = js.undefined
-  var value: Double
+  ] = js.native
+  var selectable: js.UndefOr[off | auto] = js.native
+  var shortDesc: js.UndefOr[String] = js.native
+  var svgClassName: js.UndefOr[String] = js.native
+  var svgStyle: js.UndefOr[js.Object] = js.native
+  var value: Double = js.native
 }
 
 object ojTreemapNodeSettableProperties {
   @scala.inline
-  def apply(
-    value: Double,
-    categories: js.Array[String] = null,
-    color: String = null,
-    drilling: on | off | inherit = null,
-    groupLabelDisplay: node | off | header = null,
-    header: Isolate = null,
-    label: String = null,
-    labelDisplay: off | node = null,
-    labelHalign: start | end | center = null,
-    labelStyle: js.Object = null,
-    labelValign: top | bottom | center = null,
-    pattern: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none = null,
-    selectable: off | auto = null,
-    shortDesc: String = null,
-    svgClassName: String = null,
-    svgStyle: js.Object = null
-  ): ojTreemapNodeSettableProperties = {
+  def apply(value: Double): ojTreemapNodeSettableProperties = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
-    if (groupLabelDisplay != null) __obj.updateDynamic("groupLabelDisplay")(groupLabelDisplay.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelDisplay != null) __obj.updateDynamic("labelDisplay")(labelDisplay.asInstanceOf[js.Any])
-    if (labelHalign != null) __obj.updateDynamic("labelHalign")(labelHalign.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (labelValign != null) __obj.updateDynamic("labelValign")(labelValign.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTreemapNodeSettableProperties]
   }
+  @scala.inline
+  implicit class ojTreemapNodeSettablePropertiesOps[Self <: ojTreemapNodeSettableProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    @scala.inline
+    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategories: Self = this.set("categories", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDrilling(value: on | off | inherit): Self = this.set("drilling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrilling: Self = this.set("drilling", js.undefined)
+    @scala.inline
+    def setGroupLabelDisplay(value: node | off | header): Self = this.set("groupLabelDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupLabelDisplay: Self = this.set("groupLabelDisplay", js.undefined)
+    @scala.inline
+    def setHeader(value: Isolate): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelDisplay(value: off | node): Self = this.set("labelDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelDisplay: Self = this.set("labelDisplay", js.undefined)
+    @scala.inline
+    def setLabelHalign(value: start | end | center): Self = this.set("labelHalign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelHalign: Self = this.set("labelHalign", js.undefined)
+    @scala.inline
+    def setLabelStyle(value: js.Object): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    @scala.inline
+    def setLabelValign(value: top | bottom | center): Self = this.set("labelValign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelValign: Self = this.set("labelValign", js.undefined)
+    @scala.inline
+    def setPattern(
+      value: smallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle | largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none
+    ): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setSelectable(value: off | auto): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    @scala.inline
+    def setShortDesc(value: String): Self = this.set("shortDesc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortDesc: Self = this.set("shortDesc", js.undefined)
+    @scala.inline
+    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgClassName: Self = this.set("svgClassName", js.undefined)
+    @scala.inline
+    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgStyle: Self = this.set("svgStyle", js.undefined)
+  }
+  
 }
 

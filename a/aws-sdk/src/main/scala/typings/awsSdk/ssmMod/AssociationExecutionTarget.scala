@@ -46,28 +46,58 @@ trait AssociationExecutionTarget extends js.Object {
 
 object AssociationExecutionTarget {
   @scala.inline
-  def apply(
-    AssociationId: AssociationId = null,
-    AssociationVersion: AssociationVersion = null,
-    DetailedStatus: StatusName = null,
-    ExecutionId: AssociationExecutionId = null,
-    LastExecutionDate: DateTime = null,
-    OutputSource: OutputSource = null,
-    ResourceId: AssociationResourceId = null,
-    ResourceType: AssociationResourceType = null,
-    Status: StatusName = null
-  ): AssociationExecutionTarget = {
+  def apply(): AssociationExecutionTarget = {
     val __obj = js.Dynamic.literal()
-    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
-    if (AssociationVersion != null) __obj.updateDynamic("AssociationVersion")(AssociationVersion.asInstanceOf[js.Any])
-    if (DetailedStatus != null) __obj.updateDynamic("DetailedStatus")(DetailedStatus.asInstanceOf[js.Any])
-    if (ExecutionId != null) __obj.updateDynamic("ExecutionId")(ExecutionId.asInstanceOf[js.Any])
-    if (LastExecutionDate != null) __obj.updateDynamic("LastExecutionDate")(LastExecutionDate.asInstanceOf[js.Any])
-    if (OutputSource != null) __obj.updateDynamic("OutputSource")(OutputSource.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationExecutionTarget]
   }
+  @scala.inline
+  implicit class AssociationExecutionTargetOps[Self <: AssociationExecutionTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationId(value: AssociationId): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    @scala.inline
+    def setAssociationVersion(value: AssociationVersion): Self = this.set("AssociationVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationVersion: Self = this.set("AssociationVersion", js.undefined)
+    @scala.inline
+    def setDetailedStatus(value: StatusName): Self = this.set("DetailedStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailedStatus: Self = this.set("DetailedStatus", js.undefined)
+    @scala.inline
+    def setExecutionId(value: AssociationExecutionId): Self = this.set("ExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionId: Self = this.set("ExecutionId", js.undefined)
+    @scala.inline
+    def setLastExecutionDate(value: DateTime): Self = this.set("LastExecutionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastExecutionDate: Self = this.set("LastExecutionDate", js.undefined)
+    @scala.inline
+    def setOutputSource(value: OutputSource): Self = this.set("OutputSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputSource: Self = this.set("OutputSource", js.undefined)
+    @scala.inline
+    def setResourceId(value: AssociationResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setResourceType(value: AssociationResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusName): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

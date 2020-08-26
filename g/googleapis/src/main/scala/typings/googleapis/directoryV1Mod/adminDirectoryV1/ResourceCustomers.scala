@@ -27,6 +27,7 @@ class ResourceCustomers protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCustomer] = js.native
   def get(callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomer] = js.native
   def get(params: ParamsResourceCustomersGet): GaxiosPromise[SchemaCustomer] = js.native
   def get(params: ParamsResourceCustomersGet, callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
   def get(
@@ -55,6 +56,7 @@ class ResourceCustomers protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaCustomer] = js.native
   def patch(callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomer] = js.native
   def patch(params: ParamsResourceCustomersPatch): GaxiosPromise[SchemaCustomer] = js.native
   def patch(params: ParamsResourceCustomersPatch, callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
   def patch(
@@ -83,6 +85,7 @@ class ResourceCustomers protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaCustomer] = js.native
   def update(callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomer] = js.native
   def update(params: ParamsResourceCustomersUpdate): GaxiosPromise[SchemaCustomer] = js.native
   def update(params: ParamsResourceCustomersUpdate, callback: BodyResponseCallback[SchemaCustomer]): Unit = js.native
   def update(

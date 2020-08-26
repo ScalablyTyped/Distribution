@@ -42,26 +42,54 @@ trait DocumentVersionInfo extends js.Object {
 
 object DocumentVersionInfo {
   @scala.inline
-  def apply(
-    CreatedDate: DateTime = null,
-    DocumentFormat: DocumentFormat = null,
-    DocumentVersion: DocumentVersion = null,
-    IsDefaultVersion: js.UndefOr[Boolean] = js.undefined,
-    Name: DocumentName = null,
-    Status: DocumentStatus = null,
-    StatusInformation: DocumentStatusInformation = null,
-    VersionName: DocumentVersionName = null
-  ): DocumentVersionInfo = {
+  def apply(): DocumentVersionInfo = {
     val __obj = js.Dynamic.literal()
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (DocumentFormat != null) __obj.updateDynamic("DocumentFormat")(DocumentFormat.asInstanceOf[js.Any])
-    if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefaultVersion)) __obj.updateDynamic("IsDefaultVersion")(IsDefaultVersion.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusInformation != null) __obj.updateDynamic("StatusInformation")(StatusInformation.asInstanceOf[js.Any])
-    if (VersionName != null) __obj.updateDynamic("VersionName")(VersionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentVersionInfo]
   }
+  @scala.inline
+  implicit class DocumentVersionInfoOps[Self <: DocumentVersionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedDate(value: DateTime): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setDocumentFormat(value: DocumentFormat): Self = this.set("DocumentFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentFormat: Self = this.set("DocumentFormat", js.undefined)
+    @scala.inline
+    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    @scala.inline
+    def setIsDefaultVersion(value: Boolean): Self = this.set("IsDefaultVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefaultVersion: Self = this.set("IsDefaultVersion", js.undefined)
+    @scala.inline
+    def setName(value: DocumentName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStatus(value: DocumentStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusInformation(value: DocumentStatusInformation): Self = this.set("StatusInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusInformation: Self = this.set("StatusInformation", js.undefined)
+    @scala.inline
+    def setVersionName(value: DocumentVersionName): Self = this.set("VersionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionName: Self = this.set("VersionName", js.undefined)
+  }
+  
 }
 

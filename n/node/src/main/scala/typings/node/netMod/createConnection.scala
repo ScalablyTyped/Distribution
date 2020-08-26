@@ -12,6 +12,7 @@ object createConnection extends js.Object {
   def apply(path: String): Socket = js.native
   def apply(path: String, connectionListener: js.Function0[Unit]): Socket = js.native
   def apply(port: Double): Socket = js.native
+  def apply(port: Double, host: js.UndefOr[scala.Nothing], connectionListener: js.Function0[Unit]): Socket = js.native
   def apply(port: Double, host: String): Socket = js.native
   def apply(port: Double, host: String, connectionListener: js.Function0[Unit]): Socket = js.native
 }

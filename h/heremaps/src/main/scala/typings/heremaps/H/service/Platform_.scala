@@ -38,7 +38,7 @@ trait Platform_ extends js.Object {
     opt_lang: js.UndefOr[String],
     opt_secondaryLang: js.UndefOr[String],
     opt_style: js.UndefOr[String],
-    opt_pois: js.UndefOr[Boolean | String]
+    opt_pois: js.UndefOr[String | Boolean]
   ): DefaultLayers = js.native
   /**
     * This method returns the currently used base URL.

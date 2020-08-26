@@ -12,7 +12,7 @@ A javascript filter for bad words
 | Keywords           | curse, words, profanity, filter |
 | # releases         | 10 |
 | # dependents       | 12 |
-| # downloads        | 734584 |
+| # downloads        | 681695 |
 | # stars            | 8 |
 
 ## Links

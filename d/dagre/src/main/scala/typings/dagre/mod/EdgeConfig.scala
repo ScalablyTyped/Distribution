@@ -7,33 +7,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EdgeConfig extends js.Object {
-  var height: js.UndefOr[Double] = js.undefined
-  var labeloffest: js.UndefOr[Double] = js.undefined
-  var lablepos: js.UndefOr[l | c | r] = js.undefined
-  var minlen: js.UndefOr[Double] = js.undefined
-  var weight: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
+  var labeloffest: js.UndefOr[Double] = js.native
+  var lablepos: js.UndefOr[l | c | r] = js.native
+  var minlen: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object EdgeConfig {
   @scala.inline
-  def apply(
-    height: js.UndefOr[Double] = js.undefined,
-    labeloffest: js.UndefOr[Double] = js.undefined,
-    lablepos: l | c | r = null,
-    minlen: js.UndefOr[Double] = js.undefined,
-    weight: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): EdgeConfig = {
+  def apply(): EdgeConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(labeloffest)) __obj.updateDynamic("labeloffest")(labeloffest.get.asInstanceOf[js.Any])
-    if (lablepos != null) __obj.updateDynamic("lablepos")(lablepos.asInstanceOf[js.Any])
-    if (!js.isUndefined(minlen)) __obj.updateDynamic("minlen")(minlen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeConfig]
   }
+  @scala.inline
+  implicit class EdgeConfigOps[Self <: EdgeConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLabeloffest(value: Double): Self = this.set("labeloffest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabeloffest: Self = this.set("labeloffest", js.undefined)
+    @scala.inline
+    def setLablepos(value: l | c | r): Self = this.set("lablepos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLablepos: Self = this.set("lablepos", js.undefined)
+    @scala.inline
+    def setMinlen(value: Double): Self = this.set("minlen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinlen: Self = this.set("minlen", js.undefined)
+    @scala.inline
+    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("weight", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

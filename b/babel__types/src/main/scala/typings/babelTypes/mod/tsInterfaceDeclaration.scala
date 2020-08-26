@@ -9,8 +9,41 @@ import scala.scalajs.js.annotation._
 object tsInterfaceDeclaration extends js.Object {
   def apply(
     id: Identifier_,
-    typeParameters: js.UndefOr[Null | TSTypeParameterDeclaration_],
-    _extends: js.UndefOr[js.Array[TSExpressionWithTypeArguments_] | Null],
+    typeParameters: js.UndefOr[scala.Nothing],
+    _extends: js.UndefOr[scala.Nothing],
+    body: TSInterfaceBody_
+  ): TSInterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: js.UndefOr[scala.Nothing],
+    _extends: js.Array[TSExpressionWithTypeArguments_],
+    body: TSInterfaceBody_
+  ): TSInterfaceDeclaration_ = js.native
+  def apply(id: Identifier_, typeParameters: js.UndefOr[scala.Nothing], _extends: Null, body: TSInterfaceBody_): TSInterfaceDeclaration_ = js.native
+  def apply(id: Identifier_, typeParameters: Null, _extends: js.UndefOr[scala.Nothing], body: TSInterfaceBody_): TSInterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: Null,
+    _extends: js.Array[TSExpressionWithTypeArguments_],
+    body: TSInterfaceBody_
+  ): TSInterfaceDeclaration_ = js.native
+  def apply(id: Identifier_, typeParameters: Null, _extends: Null, body: TSInterfaceBody_): TSInterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: TSTypeParameterDeclaration_,
+    _extends: js.UndefOr[scala.Nothing],
+    body: TSInterfaceBody_
+  ): TSInterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: TSTypeParameterDeclaration_,
+    _extends: js.Array[TSExpressionWithTypeArguments_],
+    body: TSInterfaceBody_
+  ): TSInterfaceDeclaration_ = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: TSTypeParameterDeclaration_,
+    _extends: Null,
     body: TSInterfaceBody_
   ): TSInterfaceDeclaration_ = js.native
 }

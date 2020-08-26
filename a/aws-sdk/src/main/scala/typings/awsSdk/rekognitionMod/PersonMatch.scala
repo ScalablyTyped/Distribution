@@ -22,16 +22,36 @@ trait PersonMatch extends js.Object {
 
 object PersonMatch {
   @scala.inline
-  def apply(
-    FaceMatches: FaceMatchList = null,
-    Person: PersonDetail = null,
-    Timestamp: js.UndefOr[Timestamp] = js.undefined
-  ): PersonMatch = {
+  def apply(): PersonMatch = {
     val __obj = js.Dynamic.literal()
-    if (FaceMatches != null) __obj.updateDynamic("FaceMatches")(FaceMatches.asInstanceOf[js.Any])
-    if (Person != null) __obj.updateDynamic("Person")(Person.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timestamp)) __obj.updateDynamic("Timestamp")(Timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersonMatch]
   }
+  @scala.inline
+  implicit class PersonMatchOps[Self <: PersonMatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFaceMatchesVarargs(value: FaceMatch*): Self = this.set("FaceMatches", js.Array(value :_*))
+    @scala.inline
+    def setFaceMatches(value: FaceMatchList): Self = this.set("FaceMatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceMatches: Self = this.set("FaceMatches", js.undefined)
+    @scala.inline
+    def setPerson(value: PersonDetail): Self = this.set("Person", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerson: Self = this.set("Person", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+  }
+  
 }
 

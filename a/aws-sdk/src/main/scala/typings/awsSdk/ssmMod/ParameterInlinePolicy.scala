@@ -22,12 +22,34 @@ trait ParameterInlinePolicy extends js.Object {
 
 object ParameterInlinePolicy {
   @scala.inline
-  def apply(PolicyStatus: String = null, PolicyText: String = null, PolicyType: String = null): ParameterInlinePolicy = {
+  def apply(): ParameterInlinePolicy = {
     val __obj = js.Dynamic.literal()
-    if (PolicyStatus != null) __obj.updateDynamic("PolicyStatus")(PolicyStatus.asInstanceOf[js.Any])
-    if (PolicyText != null) __obj.updateDynamic("PolicyText")(PolicyText.asInstanceOf[js.Any])
-    if (PolicyType != null) __obj.updateDynamic("PolicyType")(PolicyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterInlinePolicy]
   }
+  @scala.inline
+  implicit class ParameterInlinePolicyOps[Self <: ParameterInlinePolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyStatus(value: String): Self = this.set("PolicyStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyStatus: Self = this.set("PolicyStatus", js.undefined)
+    @scala.inline
+    def setPolicyText(value: String): Self = this.set("PolicyText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyText: Self = this.set("PolicyText", js.undefined)
+    @scala.inline
+    def setPolicyType(value: String): Self = this.set("PolicyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyType: Self = this.set("PolicyType", js.undefined)
+  }
+  
 }
 

@@ -14,7 +14,7 @@ object ^
         /* queryDom */ String, 
         /* fontJSONSource */ String, 
         /* textStep */ js.Array[TextStep], 
-        js.UndefOr[/* textGlobals */ TextProperties], 
+        /* textGlobals */ js.UndefOr[TextProperties], 
         VaraType
       ]
     ]

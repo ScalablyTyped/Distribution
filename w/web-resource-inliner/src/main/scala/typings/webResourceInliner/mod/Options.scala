@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * This is the HTML or CSS content to be inlined, you should provide HTML to the html() method and CSS to the css() method or you will get errors or garbage output.
     */
-  var fileContent: String
+  var fileContent: String = js.native
   /**
     * When true, inline images unless they have an exclusion attribute (see inlineAttribute option).
     *
@@ -22,7 +23,7 @@ trait Options extends js.Object {
     *
     * @default 8
     */
-  var images: js.UndefOr[Boolean | Double] = js.undefined
+  var images: js.UndefOr[Boolean | Double] = js.native
   /**
     * Sets the attribute that is used to include/exclude specific resources based on the default behavior for the resource type.
     *
@@ -34,13 +35,13 @@ trait Options extends js.Object {
     *
     * @default "data-inline"
     */
-  var inlineAttribute: js.UndefOr[String] = js.undefined
+  var inlineAttribute: js.UndefOr[String] = js.native
   /**
     * Allows to make changes to links before they are inlined, such as CSS pre-and-post-processors.
     *
     * Callback is standard node error first, second argument is transformed value.
     */
-  var linkTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, _]] = js.undefined
+  var linkTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, _]] = js.native
   /**
     * When true, inline stylesheet links unless they have an exclusion attribute (see inlineAttribute option).
     *
@@ -50,7 +51,7 @@ trait Options extends js.Object {
     *
     * @default true
     */
-  var links: js.UndefOr[Boolean | Double] = js.undefined
+  var links: js.UndefOr[Boolean | Double] = js.native
   /**
     * Describes the path relationship between CSS content and the context it will be loaded in.
     *
@@ -60,7 +61,7 @@ trait Options extends js.Object {
     *
     * @default ""
     */
-  var rebaseRelativeTo: js.UndefOr[String] = js.undefined
+  var rebaseRelativeTo: js.UndefOr[String] = js.native
   /**
     * Describes the path relationship between where web-resource-inliner is running and what the relative paths in fileContent or href/src urls refer to.
     *
@@ -70,7 +71,7 @@ trait Options extends js.Object {
     *
     * @default ""
     */
-  var relativeTo: js.UndefOr[String] = js.undefined
+  var relativeTo: js.UndefOr[String] = js.native
   /**
     * Allows to adjust issued requests.
     *
@@ -87,13 +88,13 @@ trait Options extends js.Object {
       /* requestOptions */ RequiredUriUrl with CoreOptions, 
       RequiredUriUrl with CoreOptions
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Allows to make changes to scripts before they are inlined, such as minifying.
     *
     * Callback is standard node error first, second argument is transformed value.
     */
-  var scriptTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, _]] = js.undefined
+  var scriptTransform: js.UndefOr[js.Function2[/* content */ String, /* done */ Callback, _]] = js.native
   /**
     * When true, inline scripts unless they have an exclusion attribute (see inlineAttribute option).
     *
@@ -103,7 +104,7 @@ trait Options extends js.Object {
     *
     * @default true
     */
-  var scripts: js.UndefOr[Boolean | Double] = js.undefined
+  var scripts: js.UndefOr[Boolean | Double] = js.native
   /**
     * When strict is true, a missing resource will cause the inliner to halt and return an error in the callback.
     *
@@ -111,7 +112,7 @@ trait Options extends js.Object {
     *
     * @default false
     */
-  var strict: js.UndefOr[Boolean] = js.undefined
+  var strict: js.UndefOr[Boolean] = js.native
   /**
     * When true, inline SVG <use> unless they have an exclusion attribute (see inlineAttribute option).
     *
@@ -123,38 +124,73 @@ trait Options extends js.Object {
     *
     * @default 8
     */
-  var svgs: js.UndefOr[Boolean | Double] = js.undefined
+  var svgs: js.UndefOr[Boolean | Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    fileContent: String,
-    images: Boolean | Double = null,
-    inlineAttribute: String = null,
-    linkTransform: (/* content */ String, /* done */ Callback) => _ = null,
-    links: Boolean | Double = null,
-    rebaseRelativeTo: String = null,
-    relativeTo: String = null,
-    requestTransform: /* requestOptions */ RequiredUriUrl with CoreOptions => RequiredUriUrl with CoreOptions = null,
-    scriptTransform: (/* content */ String, /* done */ Callback) => _ = null,
-    scripts: Boolean | Double = null,
-    strict: js.UndefOr[Boolean] = js.undefined,
-    svgs: Boolean | Double = null
-  ): Options = {
+  def apply(fileContent: String): Options = {
     val __obj = js.Dynamic.literal(fileContent = fileContent.asInstanceOf[js.Any])
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (inlineAttribute != null) __obj.updateDynamic("inlineAttribute")(inlineAttribute.asInstanceOf[js.Any])
-    if (linkTransform != null) __obj.updateDynamic("linkTransform")(js.Any.fromFunction2(linkTransform))
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (rebaseRelativeTo != null) __obj.updateDynamic("rebaseRelativeTo")(rebaseRelativeTo.asInstanceOf[js.Any])
-    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo.asInstanceOf[js.Any])
-    if (requestTransform != null) __obj.updateDynamic("requestTransform")(js.Any.fromFunction1(requestTransform))
-    if (scriptTransform != null) __obj.updateDynamic("scriptTransform")(js.Any.fromFunction2(scriptTransform))
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
-    if (svgs != null) __obj.updateDynamic("svgs")(svgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileContent(value: String): Self = this.set("fileContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImages(value: Boolean | Double): Self = this.set("images", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImages: Self = this.set("images", js.undefined)
+    @scala.inline
+    def setInlineAttribute(value: String): Self = this.set("inlineAttribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineAttribute: Self = this.set("inlineAttribute", js.undefined)
+    @scala.inline
+    def setLinkTransform(value: (/* content */ String, /* done */ Callback) => _): Self = this.set("linkTransform", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLinkTransform: Self = this.set("linkTransform", js.undefined)
+    @scala.inline
+    def setLinks(value: Boolean | Double): Self = this.set("links", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinks: Self = this.set("links", js.undefined)
+    @scala.inline
+    def setRebaseRelativeTo(value: String): Self = this.set("rebaseRelativeTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRebaseRelativeTo: Self = this.set("rebaseRelativeTo", js.undefined)
+    @scala.inline
+    def setRelativeTo(value: String): Self = this.set("relativeTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativeTo: Self = this.set("relativeTo", js.undefined)
+    @scala.inline
+    def setRequestTransform(value: /* requestOptions */ RequiredUriUrl with CoreOptions => RequiredUriUrl with CoreOptions): Self = this.set("requestTransform", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRequestTransform: Self = this.set("requestTransform", js.undefined)
+    @scala.inline
+    def setScriptTransform(value: (/* content */ String, /* done */ Callback) => _): Self = this.set("scriptTransform", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteScriptTransform: Self = this.set("scriptTransform", js.undefined)
+    @scala.inline
+    def setScripts(value: Boolean | Double): Self = this.set("scripts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScripts: Self = this.set("scripts", js.undefined)
+    @scala.inline
+    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrict: Self = this.set("strict", js.undefined)
+    @scala.inline
+    def setSvgs(value: Boolean | Double): Self = this.set("svgs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgs: Self = this.set("svgs", js.undefined)
+  }
+  
 }
 

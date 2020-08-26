@@ -13,13 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ClusterArgs extends js.Object {
   /**
-    * Specifies whether any cluster modifications
-    * are applied immediately, or during the next maintenance window. Default is
-    * `false`. See [Amazon RDS Documentation for more information.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html)
+    * Specifies whether any cluster modifications are applied immediately, or during the next maintenance window. Default is `false`. See [Amazon RDS Documentation for more information.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html)
     */
   val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. RDS automatically assigns 3 AZs if less than 3 AZs are configured, which will show as a difference requiring resource recreation next deployment. It is recommended to specify 3 AZs or use `ignoreChanges` if necessary.
+    * A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. RDS automatically assigns 3 AZs if less than 3 AZs are configured, which will show as a difference requiring resource recreation next provider update. It is recommended to specify 3 AZs or use [the `ignoreChanges` argument](https://www.pulumi.com/docs/intro/concepts/programming-model/#ignorechanges) if necessary.
     */
   val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
@@ -47,7 +45,7 @@ trait ClusterArgs extends js.Object {
     */
   val copyTagsToSnapshot: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * Name for an automatically created database on cluster creation. There are different naming restrictions per database engine: [RDS Naming Constraints][5]
+    * Name for an automatically created database on cluster creation. There are different naming restrictions per database engine: [RDS Naming Constraints](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html#RDS_Limits.Constraints)
     */
   val databaseName: js.UndefOr[Input[String]] = js.native
   /**
@@ -55,7 +53,7 @@ trait ClusterArgs extends js.Object {
     */
   val dbClusterParameterGroupName: js.UndefOr[Input[String]] = js.native
   /**
-    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `dbSubnetGroupName` specified on every [`aws.rds.ClusterInstance`](https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html) in the cluster.
+    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `dbSubnetGroupName` specified on every `aws.rds.ClusterInstance` in the cluster.
     */
   val dbSubnetGroupName: js.UndefOr[Input[String]] = js.native
   /**
@@ -67,8 +65,7 @@ trait ClusterArgs extends js.Object {
     */
   val enableHttpEndpoint: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * List of log types to export to cloudwatch. If omitted, no logs will be exported.
-    * The following log types are supported: `audit`, `error`, `general`, `slowquery`, `postgresql` (PostgreSQL).
+    * List of log types to export to cloudwatch. If omitted, no logs will be exported. The following log types are supported: `audit`, `error`, `general`, `slowquery`, `postgresql` (PostgreSQL).
     */
   val enabledCloudwatchLogsExports: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
@@ -84,13 +81,11 @@ trait ClusterArgs extends js.Object {
     */
   val engineVersion: js.UndefOr[Input[String]] = js.native
   /**
-    * The name of your final DB snapshot
-    * when this DB cluster is deleted. If omitted, no final snapshot will be
-    * made.
+    * The name of your final DB snapshot when this DB cluster is deleted. If omitted, no final snapshot will be made.
     */
   val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.native
   /**
-    * The global cluster identifier specified on [`aws.rds.GlobalCluster`](https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html).
+    * The global cluster identifier specified on `aws.rds.GlobalCluster`.
     */
   val globalClusterIdentifier: js.UndefOr[Input[String]] = js.native
   /**
@@ -106,12 +101,11 @@ trait ClusterArgs extends js.Object {
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
-    * Password for the master DB user. Note that this may
-    * show up in logs, and it will be stored in the state file. Please refer to the [RDS Naming Constraints][5]
+    * Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Please refer to the [RDS Naming Constraints](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html#RDS_Limits.Constraints)
     */
   val masterPassword: js.UndefOr[Input[String]] = js.native
   /**
-    * Username for the master DB user. Please refer to the [RDS Naming Constraints][5]. This argument does not support in-place updates and cannot be changed during a restore from snapshot.
+    * Username for the master DB user. Please refer to the [RDS Naming Constraints](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html#RDS_Limits.Constraints). This argument does not support in-place updates and cannot be changed during a restore from snapshot.
     */
   val masterUsername: js.UndefOr[Input[String]] = js.native
   /**
@@ -119,8 +113,7 @@ trait ClusterArgs extends js.Object {
     */
   val port: js.UndefOr[Input[Double]] = js.native
   /**
-    * The daily time range during which automated backups are created if automated backups are enabled using the BackupRetentionPeriod parameter.Time in UTC
-    * Default: A 30-minute window selected at random from an 8-hour block of time per region. e.g. 04:00-09:00
+    * The daily time range during which automated backups are created if automated backups are enabled using the BackupRetentionPeriod parameter.Time in UTC. Default: A 30-minute window selected at random from an 8-hour block of time per region. e.g. 04:00-09:00
     */
   val preferredBackupWindow: js.UndefOr[Input[String]] = js.native
   /**
@@ -153,94 +146,187 @@ trait ClusterArgs extends js.Object {
     */
   val storageEncrypted: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * A mapping of tags to assign to the DB cluster.
+    * A map of tags to assign to the DB cluster.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
-    * List of VPC security groups to associate
-    * with the Cluster
+    * List of VPC security groups to associate with the Cluster
     */
   val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object ClusterArgs {
   @scala.inline
-  def apply(
-    applyImmediately: Input[Boolean] = null,
-    availabilityZones: Input[js.Array[Input[String]]] = null,
-    backtrackWindow: Input[Double] = null,
-    backupRetentionPeriod: Input[Double] = null,
-    clusterIdentifier: Input[String] = null,
-    clusterIdentifierPrefix: Input[String] = null,
-    clusterMembers: Input[js.Array[Input[String]]] = null,
-    copyTagsToSnapshot: Input[Boolean] = null,
-    databaseName: Input[String] = null,
-    dbClusterParameterGroupName: Input[String] = null,
-    dbSubnetGroupName: Input[String] = null,
-    deletionProtection: Input[Boolean] = null,
-    enableHttpEndpoint: Input[Boolean] = null,
-    enabledCloudwatchLogsExports: Input[js.Array[Input[String]]] = null,
-    engine: Input[EngineType] = null,
-    engineMode: Input[EngineMode] = null,
-    engineVersion: Input[String] = null,
-    finalSnapshotIdentifier: Input[String] = null,
-    globalClusterIdentifier: Input[String] = null,
-    iamDatabaseAuthenticationEnabled: Input[Boolean] = null,
-    iamRoles: Input[js.Array[Input[String]]] = null,
-    kmsKeyId: Input[String] = null,
-    masterPassword: Input[String] = null,
-    masterUsername: Input[String] = null,
-    port: Input[Double] = null,
-    preferredBackupWindow: Input[String] = null,
-    preferredMaintenanceWindow: Input[String] = null,
-    replicationSourceIdentifier: Input[String] = null,
-    s3Import: Input[ClusterS3Import] = null,
-    scalingConfiguration: Input[ClusterScalingConfiguration] = null,
-    skipFinalSnapshot: Input[Boolean] = null,
-    snapshotIdentifier: Input[String] = null,
-    sourceRegion: Input[String] = null,
-    storageEncrypted: Input[Boolean] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpcSecurityGroupIds: Input[js.Array[Input[String]]] = null
-  ): ClusterArgs = {
+  def apply(): ClusterArgs = {
     val __obj = js.Dynamic.literal()
-    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
-    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
-    if (backtrackWindow != null) __obj.updateDynamic("backtrackWindow")(backtrackWindow.asInstanceOf[js.Any])
-    if (backupRetentionPeriod != null) __obj.updateDynamic("backupRetentionPeriod")(backupRetentionPeriod.asInstanceOf[js.Any])
-    if (clusterIdentifier != null) __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
-    if (clusterIdentifierPrefix != null) __obj.updateDynamic("clusterIdentifierPrefix")(clusterIdentifierPrefix.asInstanceOf[js.Any])
-    if (clusterMembers != null) __obj.updateDynamic("clusterMembers")(clusterMembers.asInstanceOf[js.Any])
-    if (copyTagsToSnapshot != null) __obj.updateDynamic("copyTagsToSnapshot")(copyTagsToSnapshot.asInstanceOf[js.Any])
-    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
-    if (dbClusterParameterGroupName != null) __obj.updateDynamic("dbClusterParameterGroupName")(dbClusterParameterGroupName.asInstanceOf[js.Any])
-    if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])
-    if (deletionProtection != null) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
-    if (enableHttpEndpoint != null) __obj.updateDynamic("enableHttpEndpoint")(enableHttpEndpoint.asInstanceOf[js.Any])
-    if (enabledCloudwatchLogsExports != null) __obj.updateDynamic("enabledCloudwatchLogsExports")(enabledCloudwatchLogsExports.asInstanceOf[js.Any])
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (engineMode != null) __obj.updateDynamic("engineMode")(engineMode.asInstanceOf[js.Any])
-    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    if (finalSnapshotIdentifier != null) __obj.updateDynamic("finalSnapshotIdentifier")(finalSnapshotIdentifier.asInstanceOf[js.Any])
-    if (globalClusterIdentifier != null) __obj.updateDynamic("globalClusterIdentifier")(globalClusterIdentifier.asInstanceOf[js.Any])
-    if (iamDatabaseAuthenticationEnabled != null) __obj.updateDynamic("iamDatabaseAuthenticationEnabled")(iamDatabaseAuthenticationEnabled.asInstanceOf[js.Any])
-    if (iamRoles != null) __obj.updateDynamic("iamRoles")(iamRoles.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (masterPassword != null) __obj.updateDynamic("masterPassword")(masterPassword.asInstanceOf[js.Any])
-    if (masterUsername != null) __obj.updateDynamic("masterUsername")(masterUsername.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (preferredBackupWindow != null) __obj.updateDynamic("preferredBackupWindow")(preferredBackupWindow.asInstanceOf[js.Any])
-    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (replicationSourceIdentifier != null) __obj.updateDynamic("replicationSourceIdentifier")(replicationSourceIdentifier.asInstanceOf[js.Any])
-    if (s3Import != null) __obj.updateDynamic("s3Import")(s3Import.asInstanceOf[js.Any])
-    if (scalingConfiguration != null) __obj.updateDynamic("scalingConfiguration")(scalingConfiguration.asInstanceOf[js.Any])
-    if (skipFinalSnapshot != null) __obj.updateDynamic("skipFinalSnapshot")(skipFinalSnapshot.asInstanceOf[js.Any])
-    if (snapshotIdentifier != null) __obj.updateDynamic("snapshotIdentifier")(snapshotIdentifier.asInstanceOf[js.Any])
-    if (sourceRegion != null) __obj.updateDynamic("sourceRegion")(sourceRegion.asInstanceOf[js.Any])
-    if (storageEncrypted != null) __obj.updateDynamic("storageEncrypted")(storageEncrypted.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcSecurityGroupIds != null) __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterArgs]
   }
+  @scala.inline
+  implicit class ClusterArgsOps[Self <: ClusterArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplyImmediately(value: Input[Boolean]): Self = this.set("applyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyImmediately: Self = this.set("applyImmediately", js.undefined)
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: Input[String]*): Self = this.set("availabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = this.set("availabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("availabilityZones", js.undefined)
+    @scala.inline
+    def setBacktrackWindow(value: Input[Double]): Self = this.set("backtrackWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBacktrackWindow: Self = this.set("backtrackWindow", js.undefined)
+    @scala.inline
+    def setBackupRetentionPeriod(value: Input[Double]): Self = this.set("backupRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupRetentionPeriod: Self = this.set("backupRetentionPeriod", js.undefined)
+    @scala.inline
+    def setClusterIdentifier(value: Input[String]): Self = this.set("clusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterIdentifier: Self = this.set("clusterIdentifier", js.undefined)
+    @scala.inline
+    def setClusterIdentifierPrefix(value: Input[String]): Self = this.set("clusterIdentifierPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterIdentifierPrefix: Self = this.set("clusterIdentifierPrefix", js.undefined)
+    @scala.inline
+    def setClusterMembersVarargs(value: Input[String]*): Self = this.set("clusterMembers", js.Array(value :_*))
+    @scala.inline
+    def setClusterMembers(value: Input[js.Array[Input[String]]]): Self = this.set("clusterMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterMembers: Self = this.set("clusterMembers", js.undefined)
+    @scala.inline
+    def setCopyTagsToSnapshot(value: Input[Boolean]): Self = this.set("copyTagsToSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTagsToSnapshot: Self = this.set("copyTagsToSnapshot", js.undefined)
+    @scala.inline
+    def setDatabaseName(value: Input[String]): Self = this.set("databaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseName: Self = this.set("databaseName", js.undefined)
+    @scala.inline
+    def setDbClusterParameterGroupName(value: Input[String]): Self = this.set("dbClusterParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbClusterParameterGroupName: Self = this.set("dbClusterParameterGroupName", js.undefined)
+    @scala.inline
+    def setDbSubnetGroupName(value: Input[String]): Self = this.set("dbSubnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbSubnetGroupName: Self = this.set("dbSubnetGroupName", js.undefined)
+    @scala.inline
+    def setDeletionProtection(value: Input[Boolean]): Self = this.set("deletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionProtection: Self = this.set("deletionProtection", js.undefined)
+    @scala.inline
+    def setEnableHttpEndpoint(value: Input[Boolean]): Self = this.set("enableHttpEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableHttpEndpoint: Self = this.set("enableHttpEndpoint", js.undefined)
+    @scala.inline
+    def setEnabledCloudwatchLogsExportsVarargs(value: Input[String]*): Self = this.set("enabledCloudwatchLogsExports", js.Array(value :_*))
+    @scala.inline
+    def setEnabledCloudwatchLogsExports(value: Input[js.Array[Input[String]]]): Self = this.set("enabledCloudwatchLogsExports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledCloudwatchLogsExports: Self = this.set("enabledCloudwatchLogsExports", js.undefined)
+    @scala.inline
+    def setEngine(value: Input[EngineType]): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("engine", js.undefined)
+    @scala.inline
+    def setEngineMode(value: Input[EngineMode]): Self = this.set("engineMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineMode: Self = this.set("engineMode", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: Input[String]): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    @scala.inline
+    def setFinalSnapshotIdentifier(value: Input[String]): Self = this.set("finalSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalSnapshotIdentifier: Self = this.set("finalSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setGlobalClusterIdentifier(value: Input[String]): Self = this.set("globalClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalClusterIdentifier: Self = this.set("globalClusterIdentifier", js.undefined)
+    @scala.inline
+    def setIamDatabaseAuthenticationEnabled(value: Input[Boolean]): Self = this.set("iamDatabaseAuthenticationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamDatabaseAuthenticationEnabled: Self = this.set("iamDatabaseAuthenticationEnabled", js.undefined)
+    @scala.inline
+    def setIamRolesVarargs(value: Input[String]*): Self = this.set("iamRoles", js.Array(value :_*))
+    @scala.inline
+    def setIamRoles(value: Input[js.Array[Input[String]]]): Self = this.set("iamRoles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoles: Self = this.set("iamRoles", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setMasterPassword(value: Input[String]): Self = this.set("masterPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterPassword: Self = this.set("masterPassword", js.undefined)
+    @scala.inline
+    def setMasterUsername(value: Input[String]): Self = this.set("masterUsername", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterUsername: Self = this.set("masterUsername", js.undefined)
+    @scala.inline
+    def setPort(value: Input[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setPreferredBackupWindow(value: Input[String]): Self = this.set("preferredBackupWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredBackupWindow: Self = this.set("preferredBackupWindow", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: Input[String]): Self = this.set("preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("preferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setReplicationSourceIdentifier(value: Input[String]): Self = this.set("replicationSourceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationSourceIdentifier: Self = this.set("replicationSourceIdentifier", js.undefined)
+    @scala.inline
+    def setS3Import(value: Input[ClusterS3Import]): Self = this.set("s3Import", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Import: Self = this.set("s3Import", js.undefined)
+    @scala.inline
+    def setScalingConfiguration(value: Input[ClusterScalingConfiguration]): Self = this.set("scalingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingConfiguration: Self = this.set("scalingConfiguration", js.undefined)
+    @scala.inline
+    def setSkipFinalSnapshot(value: Input[Boolean]): Self = this.set("skipFinalSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipFinalSnapshot: Self = this.set("skipFinalSnapshot", js.undefined)
+    @scala.inline
+    def setSnapshotIdentifier(value: Input[String]): Self = this.set("snapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotIdentifier: Self = this.set("snapshotIdentifier", js.undefined)
+    @scala.inline
+    def setSourceRegion(value: Input[String]): Self = this.set("sourceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRegion: Self = this.set("sourceRegion", js.undefined)
+    @scala.inline
+    def setStorageEncrypted(value: Input[Boolean]): Self = this.set("storageEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageEncrypted: Self = this.set("storageEncrypted", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("vpcSecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("vpcSecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroupIds: Self = this.set("vpcSecurityGroupIds", js.undefined)
+  }
+  
 }
 

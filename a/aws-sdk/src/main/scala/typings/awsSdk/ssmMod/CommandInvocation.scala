@@ -71,42 +71,88 @@ trait CommandInvocation extends js.Object {
 
 object CommandInvocation {
   @scala.inline
-  def apply(
-    CloudWatchOutputConfig: CloudWatchOutputConfig = null,
-    CommandId: CommandId = null,
-    CommandPlugins: CommandPluginList = null,
-    Comment: Comment = null,
-    DocumentName: DocumentName = null,
-    DocumentVersion: DocumentVersion = null,
-    InstanceId: InstanceId = null,
-    InstanceName: InstanceTagName = null,
-    NotificationConfig: NotificationConfig = null,
-    RequestedDateTime: DateTime = null,
-    ServiceRole: ServiceRole = null,
-    StandardErrorUrl: Url = null,
-    StandardOutputUrl: Url = null,
-    Status: CommandInvocationStatus = null,
-    StatusDetails: StatusDetails = null,
-    TraceOutput: InvocationTraceOutput = null
-  ): CommandInvocation = {
+  def apply(): CommandInvocation = {
     val __obj = js.Dynamic.literal()
-    if (CloudWatchOutputConfig != null) __obj.updateDynamic("CloudWatchOutputConfig")(CloudWatchOutputConfig.asInstanceOf[js.Any])
-    if (CommandId != null) __obj.updateDynamic("CommandId")(CommandId.asInstanceOf[js.Any])
-    if (CommandPlugins != null) __obj.updateDynamic("CommandPlugins")(CommandPlugins.asInstanceOf[js.Any])
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (DocumentName != null) __obj.updateDynamic("DocumentName")(DocumentName.asInstanceOf[js.Any])
-    if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (InstanceName != null) __obj.updateDynamic("InstanceName")(InstanceName.asInstanceOf[js.Any])
-    if (NotificationConfig != null) __obj.updateDynamic("NotificationConfig")(NotificationConfig.asInstanceOf[js.Any])
-    if (RequestedDateTime != null) __obj.updateDynamic("RequestedDateTime")(RequestedDateTime.asInstanceOf[js.Any])
-    if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
-    if (StandardErrorUrl != null) __obj.updateDynamic("StandardErrorUrl")(StandardErrorUrl.asInstanceOf[js.Any])
-    if (StandardOutputUrl != null) __obj.updateDynamic("StandardOutputUrl")(StandardOutputUrl.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusDetails != null) __obj.updateDynamic("StatusDetails")(StatusDetails.asInstanceOf[js.Any])
-    if (TraceOutput != null) __obj.updateDynamic("TraceOutput")(TraceOutput.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandInvocation]
   }
+  @scala.inline
+  implicit class CommandInvocationOps[Self <: CommandInvocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchOutputConfig(value: CloudWatchOutputConfig): Self = this.set("CloudWatchOutputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchOutputConfig: Self = this.set("CloudWatchOutputConfig", js.undefined)
+    @scala.inline
+    def setCommandId(value: CommandId): Self = this.set("CommandId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommandId: Self = this.set("CommandId", js.undefined)
+    @scala.inline
+    def setCommandPluginsVarargs(value: CommandPlugin*): Self = this.set("CommandPlugins", js.Array(value :_*))
+    @scala.inline
+    def setCommandPlugins(value: CommandPluginList): Self = this.set("CommandPlugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommandPlugins: Self = this.set("CommandPlugins", js.undefined)
+    @scala.inline
+    def setComment(value: Comment): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("Comment", js.undefined)
+    @scala.inline
+    def setDocumentName(value: DocumentName): Self = this.set("DocumentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentName: Self = this.set("DocumentName", js.undefined)
+    @scala.inline
+    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setInstanceName(value: InstanceTagName): Self = this.set("InstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceName: Self = this.set("InstanceName", js.undefined)
+    @scala.inline
+    def setNotificationConfig(value: NotificationConfig): Self = this.set("NotificationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationConfig: Self = this.set("NotificationConfig", js.undefined)
+    @scala.inline
+    def setRequestedDateTime(value: DateTime): Self = this.set("RequestedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedDateTime: Self = this.set("RequestedDateTime", js.undefined)
+    @scala.inline
+    def setServiceRole(value: ServiceRole): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("ServiceRole", js.undefined)
+    @scala.inline
+    def setStandardErrorUrl(value: Url): Self = this.set("StandardErrorUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandardErrorUrl: Self = this.set("StandardErrorUrl", js.undefined)
+    @scala.inline
+    def setStandardOutputUrl(value: Url): Self = this.set("StandardOutputUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandardOutputUrl: Self = this.set("StandardOutputUrl", js.undefined)
+    @scala.inline
+    def setStatus(value: CommandInvocationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusDetails(value: StatusDetails): Self = this.set("StatusDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetails: Self = this.set("StatusDetails", js.undefined)
+    @scala.inline
+    def setTraceOutput(value: InvocationTraceOutput): Self = this.set("TraceOutput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraceOutput: Self = this.set("TraceOutput", js.undefined)
+  }
+  
 }
 

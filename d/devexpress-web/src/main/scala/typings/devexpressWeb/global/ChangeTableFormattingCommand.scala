@@ -10,17 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ChangeTableFormattingCommand")
 @js.native
 class ChangeTableFormattingCommand ()
-  extends typings.devexpressWeb.ChangeTableFormattingCommand {
-  /**
-    * Executes the ChangeTableFormattingCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
-    * @param settings A TableFormattingSettings object containing the settings to format a table.
-    */
-  /* CompleteClass */
-  override def execute(settings: typings.devexpressWeb.TableFormattingSettings): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.CommandState[typings.devexpressWeb.TableFormattingSettings] = js.native
-}
+  extends typings.devexpressWeb.ChangeTableFormattingCommand
 

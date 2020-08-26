@@ -4,51 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CSSBeautifyOptions extends CoreBeautifyOptions {
-  var newline_between_rules: js.UndefOr[Boolean] = js.undefined
-  var selector_separator_newline: js.UndefOr[Boolean] = js.undefined
-  var space_around_combinator: js.UndefOr[Boolean] = js.undefined
-  var space_around_selector_separator: js.UndefOr[Boolean] = js.undefined
+  var newline_between_rules: js.UndefOr[Boolean] = js.native
+  var selector_separator_newline: js.UndefOr[Boolean] = js.native
+  var space_around_combinator: js.UndefOr[Boolean] = js.native
+  var space_around_selector_separator: js.UndefOr[Boolean] = js.native
 }
 
 object CSSBeautifyOptions {
   @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    end_with_newline: js.UndefOr[Boolean] = js.undefined,
-    eol: String = null,
-    indent_char: String = null,
-    indent_empty_lines: js.UndefOr[Boolean] = js.undefined,
-    indent_level: js.UndefOr[Double] = js.undefined,
-    indent_size: js.UndefOr[Double] = js.undefined,
-    indent_with_tabs: js.UndefOr[Boolean] = js.undefined,
-    max_preserve_newlines: js.UndefOr[Double] = js.undefined,
-    newline_between_rules: js.UndefOr[Boolean] = js.undefined,
-    preserve_newlines: js.UndefOr[Boolean] = js.undefined,
-    selector_separator_newline: js.UndefOr[Boolean] = js.undefined,
-    space_around_combinator: js.UndefOr[Boolean] = js.undefined,
-    space_around_selector_separator: js.UndefOr[Boolean] = js.undefined,
-    templating: js.Array[String] = null,
-    wrap_line_length: js.UndefOr[Double] = js.undefined
-  ): CSSBeautifyOptions = {
+  def apply(): CSSBeautifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(end_with_newline)) __obj.updateDynamic("end_with_newline")(end_with_newline.get.asInstanceOf[js.Any])
-    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
-    if (indent_char != null) __obj.updateDynamic("indent_char")(indent_char.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent_empty_lines)) __obj.updateDynamic("indent_empty_lines")(indent_empty_lines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent_level)) __obj.updateDynamic("indent_level")(indent_level.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent_size)) __obj.updateDynamic("indent_size")(indent_size.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent_with_tabs)) __obj.updateDynamic("indent_with_tabs")(indent_with_tabs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max_preserve_newlines)) __obj.updateDynamic("max_preserve_newlines")(max_preserve_newlines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(newline_between_rules)) __obj.updateDynamic("newline_between_rules")(newline_between_rules.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserve_newlines)) __obj.updateDynamic("preserve_newlines")(preserve_newlines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selector_separator_newline)) __obj.updateDynamic("selector_separator_newline")(selector_separator_newline.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(space_around_combinator)) __obj.updateDynamic("space_around_combinator")(space_around_combinator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(space_around_selector_separator)) __obj.updateDynamic("space_around_selector_separator")(space_around_selector_separator.get.asInstanceOf[js.Any])
-    if (templating != null) __obj.updateDynamic("templating")(templating.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap_line_length)) __obj.updateDynamic("wrap_line_length")(wrap_line_length.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSBeautifyOptions]
   }
+  @scala.inline
+  implicit class CSSBeautifyOptionsOps[Self <: CSSBeautifyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewline_between_rules(value: Boolean): Self = this.set("newline_between_rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewline_between_rules: Self = this.set("newline_between_rules", js.undefined)
+    @scala.inline
+    def setSelector_separator_newline(value: Boolean): Self = this.set("selector_separator_newline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector_separator_newline: Self = this.set("selector_separator_newline", js.undefined)
+    @scala.inline
+    def setSpace_around_combinator(value: Boolean): Self = this.set("space_around_combinator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpace_around_combinator: Self = this.set("space_around_combinator", js.undefined)
+    @scala.inline
+    def setSpace_around_selector_separator(value: Boolean): Self = this.set("space_around_selector_separator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpace_around_selector_separator: Self = this.set("space_around_selector_separator", js.undefined)
+  }
+  
 }
 

@@ -46,27 +46,56 @@ trait CreateBucketRequest extends js.Object {
 
 object CreateBucketRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    ACL: BucketCannedACL = null,
-    CreateBucketConfiguration: CreateBucketConfiguration = null,
-    GrantFullControl: GrantFullControl = null,
-    GrantRead: GrantRead = null,
-    GrantReadACP: GrantReadACP = null,
-    GrantWrite: GrantWrite = null,
-    GrantWriteACP: GrantWriteACP = null,
-    ObjectLockEnabledForBucket: js.UndefOr[ObjectLockEnabledForBucket] = js.undefined
-  ): CreateBucketRequest = {
+  def apply(Bucket: BucketName): CreateBucketRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-    if (ACL != null) __obj.updateDynamic("ACL")(ACL.asInstanceOf[js.Any])
-    if (CreateBucketConfiguration != null) __obj.updateDynamic("CreateBucketConfiguration")(CreateBucketConfiguration.asInstanceOf[js.Any])
-    if (GrantFullControl != null) __obj.updateDynamic("GrantFullControl")(GrantFullControl.asInstanceOf[js.Any])
-    if (GrantRead != null) __obj.updateDynamic("GrantRead")(GrantRead.asInstanceOf[js.Any])
-    if (GrantReadACP != null) __obj.updateDynamic("GrantReadACP")(GrantReadACP.asInstanceOf[js.Any])
-    if (GrantWrite != null) __obj.updateDynamic("GrantWrite")(GrantWrite.asInstanceOf[js.Any])
-    if (GrantWriteACP != null) __obj.updateDynamic("GrantWriteACP")(GrantWriteACP.asInstanceOf[js.Any])
-    if (!js.isUndefined(ObjectLockEnabledForBucket)) __obj.updateDynamic("ObjectLockEnabledForBucket")(ObjectLockEnabledForBucket.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBucketRequest]
   }
+  @scala.inline
+  implicit class CreateBucketRequestOps[Self <: CreateBucketRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setACL(value: BucketCannedACL): Self = this.set("ACL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteACL: Self = this.set("ACL", js.undefined)
+    @scala.inline
+    def setCreateBucketConfiguration(value: CreateBucketConfiguration): Self = this.set("CreateBucketConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateBucketConfiguration: Self = this.set("CreateBucketConfiguration", js.undefined)
+    @scala.inline
+    def setGrantFullControl(value: GrantFullControl): Self = this.set("GrantFullControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantFullControl: Self = this.set("GrantFullControl", js.undefined)
+    @scala.inline
+    def setGrantRead(value: GrantRead): Self = this.set("GrantRead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantRead: Self = this.set("GrantRead", js.undefined)
+    @scala.inline
+    def setGrantReadACP(value: GrantReadACP): Self = this.set("GrantReadACP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantReadACP: Self = this.set("GrantReadACP", js.undefined)
+    @scala.inline
+    def setGrantWrite(value: GrantWrite): Self = this.set("GrantWrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantWrite: Self = this.set("GrantWrite", js.undefined)
+    @scala.inline
+    def setGrantWriteACP(value: GrantWriteACP): Self = this.set("GrantWriteACP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantWriteACP: Self = this.set("GrantWriteACP", js.undefined)
+    @scala.inline
+    def setObjectLockEnabledForBucket(value: ObjectLockEnabledForBucket): Self = this.set("ObjectLockEnabledForBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectLockEnabledForBucket: Self = this.set("ObjectLockEnabledForBucket", js.undefined)
+  }
+  
 }
 

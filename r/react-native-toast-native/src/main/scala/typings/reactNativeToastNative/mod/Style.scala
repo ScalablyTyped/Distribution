@@ -4,71 +4,120 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Style extends js.Object {
-  var backgroundColor: js.UndefOr[String] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
   // iOS-only
-  var borderColor: js.UndefOr[String] = js.undefined
-  var borderRadius: js.UndefOr[Double] = js.undefined
-  var borderWidth: js.UndefOr[Double] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[Double] = js.undefined
-  var fontWeight: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var letterSpacing: js.UndefOr[Double] = js.undefined
-  var lineHeight: js.UndefOr[Double] = js.undefined
-  var lines: js.UndefOr[Double] = js.undefined
-  var paddingBottom: js.UndefOr[Double] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
+  var borderRadius: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.native
+  var color: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[Double] = js.native
+  var fontWeight: js.UndefOr[String] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var letterSpacing: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.native
+  var lines: js.UndefOr[Double] = js.native
+  var paddingBottom: js.UndefOr[Double] = js.native
   // Android-only
-  var paddingLeft: js.UndefOr[Double] = js.undefined
-  var paddingRight: js.UndefOr[Double] = js.undefined
-  var paddingTop: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var xOffset: js.UndefOr[Double] = js.undefined
-  var yOffset: js.UndefOr[Double] = js.undefined
+  var paddingLeft: js.UndefOr[Double] = js.native
+  var paddingRight: js.UndefOr[Double] = js.native
+  var paddingTop: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var xOffset: js.UndefOr[Double] = js.native
+  var yOffset: js.UndefOr[Double] = js.native
 }
 
 object Style {
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    borderColor: String = null,
-    borderRadius: js.UndefOr[Double] = js.undefined,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    color: String = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    fontWeight: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    letterSpacing: js.UndefOr[Double] = js.undefined,
-    lineHeight: js.UndefOr[Double] = js.undefined,
-    lines: js.UndefOr[Double] = js.undefined,
-    paddingBottom: js.UndefOr[Double] = js.undefined,
-    paddingLeft: js.UndefOr[Double] = js.undefined,
-    paddingRight: js.UndefOr[Double] = js.undefined,
-    paddingTop: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    xOffset: js.UndefOr[Double] = js.undefined,
-    yOffset: js.UndefOr[Double] = js.undefined
-  ): Style = {
+  def apply(): Style = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(letterSpacing)) __obj.updateDynamic("letterSpacing")(letterSpacing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineHeight)) __obj.updateDynamic("lineHeight")(lineHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lines)) __obj.updateDynamic("lines")(lines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(paddingBottom)) __obj.updateDynamic("paddingBottom")(paddingBottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(paddingLeft)) __obj.updateDynamic("paddingLeft")(paddingLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(paddingRight)) __obj.updateDynamic("paddingRight")(paddingRight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(paddingTop)) __obj.updateDynamic("paddingTop")(paddingTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xOffset)) __obj.updateDynamic("xOffset")(xOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yOffset)) __obj.updateDynamic("yOffset")(yOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Style]
   }
+  @scala.inline
+  implicit class StyleOps[Self <: Style] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderRadius(value: Double): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontWeight(value: String): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLetterSpacing(value: Double): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLetterSpacing: Self = this.set("letterSpacing", js.undefined)
+    @scala.inline
+    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    @scala.inline
+    def setLines(value: Double): Self = this.set("lines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLines: Self = this.set("lines", js.undefined)
+    @scala.inline
+    def setPaddingBottom(value: Double): Self = this.set("paddingBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingBottom: Self = this.set("paddingBottom", js.undefined)
+    @scala.inline
+    def setPaddingLeft(value: Double): Self = this.set("paddingLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingLeft: Self = this.set("paddingLeft", js.undefined)
+    @scala.inline
+    def setPaddingRight(value: Double): Self = this.set("paddingRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingRight: Self = this.set("paddingRight", js.undefined)
+    @scala.inline
+    def setPaddingTop(value: Double): Self = this.set("paddingTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingTop: Self = this.set("paddingTop", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setXOffset(value: Double): Self = this.set("xOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXOffset: Self = this.set("xOffset", js.undefined)
+    @scala.inline
+    def setYOffset(value: Double): Self = this.set("yOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYOffset: Self = this.set("yOffset", js.undefined)
+  }
+  
 }
 

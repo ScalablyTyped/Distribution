@@ -18,15 +18,19 @@ trait RequestHandler extends js.Object {
   def reply[T](statusOrCallback: Double): MockAdapter = js.native
   def reply[T](statusOrCallback: Double, data: T): MockAdapter = js.native
   def reply[T](statusOrCallback: Double, data: T, headers: js.Any): MockAdapter = js.native
+  def reply[T](statusOrCallback: Double, data: js.UndefOr[scala.Nothing], headers: js.Any): MockAdapter = js.native
   def reply[T](statusOrCallback: CallbackResponseSpecFunc): MockAdapter = js.native
   def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: T): MockAdapter = js.native
   def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: T, headers: js.Any): MockAdapter = js.native
+  def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: js.UndefOr[scala.Nothing], headers: js.Any): MockAdapter = js.native
   def replyOnce[T](statusOrCallback: Double): MockAdapter = js.native
   def replyOnce[T](statusOrCallback: Double, data: T): MockAdapter = js.native
   def replyOnce[T](statusOrCallback: Double, data: T, headers: js.Any): MockAdapter = js.native
+  def replyOnce[T](statusOrCallback: Double, data: js.UndefOr[scala.Nothing], headers: js.Any): MockAdapter = js.native
   def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc): MockAdapter = js.native
   def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: T): MockAdapter = js.native
   def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: T, headers: js.Any): MockAdapter = js.native
+  def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: js.UndefOr[scala.Nothing], headers: js.Any): MockAdapter = js.native
   def timeout(): MockAdapter = js.native
   def timeoutOnce(): MockAdapter = js.native
 }

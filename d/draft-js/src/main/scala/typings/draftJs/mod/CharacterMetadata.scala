@@ -1,7 +1,6 @@
 package typings.draftJs.mod
 
 import typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadataConfig
-import typings.draftJs.mod.Draft.Model.ImmutableData.DraftInlineStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,14 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("draft-js", "CharacterMetadata")
 @js.native
 class CharacterMetadata ()
-  extends typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata {
-  /* CompleteClass */
-  override def getEntity(): String = js.native
-  /* CompleteClass */
-  override def getStyle(): DraftInlineStyle = js.native
-  /* CompleteClass */
-  override def hasStyle(style: String): Boolean = js.native
-}
+  extends typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata
 
 /* static members */
 @JSImport("draft-js", "CharacterMetadata")

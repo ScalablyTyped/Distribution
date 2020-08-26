@@ -82,6 +82,7 @@ trait FormikContextType[Values] extends js.Object {
   def setFieldError(field: String, message: String): Unit = js.native
   /** Set whether field has been touched directly */
   def setFieldTouched(field: String): Unit = js.native
+  def setFieldTouched(field: String, isTouched: js.UndefOr[scala.Nothing], shouldValidate: Boolean): Unit = js.native
   def setFieldTouched(field: String, isTouched: Boolean): Unit = js.native
   def setFieldTouched(field: String, isTouched: Boolean, shouldValidate: Boolean): Unit = js.native
   /** Set value of form field directly */

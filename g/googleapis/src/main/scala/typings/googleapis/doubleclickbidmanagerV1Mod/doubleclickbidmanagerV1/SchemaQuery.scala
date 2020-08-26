@@ -51,26 +51,54 @@ trait SchemaQuery extends js.Object {
 
 object SchemaQuery {
   @scala.inline
-  def apply(
-    kind: String = null,
-    metadata: SchemaQueryMetadata = null,
-    params: SchemaParameters = null,
-    queryId: String = null,
-    reportDataEndTimeMs: String = null,
-    reportDataStartTimeMs: String = null,
-    schedule: SchemaQuerySchedule = null,
-    timezoneCode: String = null
-  ): SchemaQuery = {
+  def apply(): SchemaQuery = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (queryId != null) __obj.updateDynamic("queryId")(queryId.asInstanceOf[js.Any])
-    if (reportDataEndTimeMs != null) __obj.updateDynamic("reportDataEndTimeMs")(reportDataEndTimeMs.asInstanceOf[js.Any])
-    if (reportDataStartTimeMs != null) __obj.updateDynamic("reportDataStartTimeMs")(reportDataStartTimeMs.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (timezoneCode != null) __obj.updateDynamic("timezoneCode")(timezoneCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuery]
   }
+  @scala.inline
+  implicit class SchemaQueryOps[Self <: SchemaQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaQueryMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setParams(value: SchemaParameters): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setQueryId(value: String): Self = this.set("queryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryId: Self = this.set("queryId", js.undefined)
+    @scala.inline
+    def setReportDataEndTimeMs(value: String): Self = this.set("reportDataEndTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportDataEndTimeMs: Self = this.set("reportDataEndTimeMs", js.undefined)
+    @scala.inline
+    def setReportDataStartTimeMs(value: String): Self = this.set("reportDataStartTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportDataStartTimeMs: Self = this.set("reportDataStartTimeMs", js.undefined)
+    @scala.inline
+    def setSchedule(value: SchemaQuerySchedule): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setTimezoneCode(value: String): Self = this.set("timezoneCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezoneCode: Self = this.set("timezoneCode", js.undefined)
+  }
+  
 }
 

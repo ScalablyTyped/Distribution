@@ -6,7 +6,6 @@ import typings.graphql.mod.GraphQLSchema
 import typings.graphqlBinding.distTypesMod.BindingOptions
 import typings.graphqlBinding.distTypesMod.Options
 import typings.graphqlBinding.distTypesMod.QueryOrMutation
-import typings.graphqlTools.interfacesMod.IResolvers
 import typings.std.AsyncIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,6 +23,13 @@ object delegateMod extends js.Object {
     var schema: GraphQLSchema = js.native
     def before(): Unit = js.native
     def delegate(operation: QueryOrMutation, fieldName: String, args: StringDictionary[js.Any]): js.Promise[_] = js.native
+    def delegate(
+      operation: QueryOrMutation,
+      fieldName: String,
+      args: StringDictionary[js.Any],
+      infoOrQuery: js.UndefOr[scala.Nothing],
+      options: Options
+    ): js.Promise[_] = js.native
     def delegate(operation: QueryOrMutation, fieldName: String, args: StringDictionary[js.Any], infoOrQuery: String): js.Promise[_] = js.native
     def delegate(
       operation: QueryOrMutation,
@@ -46,7 +52,28 @@ object delegateMod extends js.Object {
       options: Options
     ): js.Promise[_] = js.native
     def delegateSubscription(fieldName: String): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
+    def delegateSubscription(
+      fieldName: String,
+      args: js.UndefOr[scala.Nothing],
+      infoOrQuery: js.UndefOr[scala.Nothing],
+      options: Options
+    ): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
+    def delegateSubscription(fieldName: String, args: js.UndefOr[scala.Nothing], infoOrQuery: String): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
+    def delegateSubscription(fieldName: String, args: js.UndefOr[scala.Nothing], infoOrQuery: String, options: Options): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
+    def delegateSubscription(fieldName: String, args: js.UndefOr[scala.Nothing], infoOrQuery: GraphQLResolveInfo): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
+    def delegateSubscription(
+      fieldName: String,
+      args: js.UndefOr[scala.Nothing],
+      infoOrQuery: GraphQLResolveInfo,
+      options: Options
+    ): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
     def delegateSubscription(fieldName: String, args: StringDictionary[js.Any]): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
+    def delegateSubscription(
+      fieldName: String,
+      args: StringDictionary[js.Any],
+      infoOrQuery: js.UndefOr[scala.Nothing],
+      options: Options
+    ): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
     def delegateSubscription(fieldName: String, args: StringDictionary[js.Any], infoOrQuery: String): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
     def delegateSubscription(fieldName: String, args: StringDictionary[js.Any], infoOrQuery: String, options: Options): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
     def delegateSubscription(fieldName: String, args: StringDictionary[js.Any], infoOrQuery: GraphQLResolveInfo): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
@@ -56,9 +83,9 @@ object delegateMod extends js.Object {
       infoOrQuery: GraphQLResolveInfo,
       options: Options
     ): js.Promise[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]] = js.native
-    def getAbstractResolvers(): IResolvers[_, _] = js.native
-    def getAbstractResolvers(filterSchema: String): IResolvers[_, _] = js.native
-    def getAbstractResolvers(filterSchema: GraphQLSchema): IResolvers[_, _] = js.native
+    def getAbstractResolvers(): js.Any = js.native
+    def getAbstractResolvers(filterSchema: String): js.Any = js.native
+    def getAbstractResolvers(filterSchema: GraphQLSchema): js.Any = js.native
     def request[T](query: String): js.Promise[T] = js.native
     def request[T](query: String, variables: StringDictionary[js.Any]): js.Promise[T] = js.native
   }

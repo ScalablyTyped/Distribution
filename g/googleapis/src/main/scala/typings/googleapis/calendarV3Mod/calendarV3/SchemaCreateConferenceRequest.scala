@@ -24,16 +24,34 @@ trait SchemaCreateConferenceRequest extends js.Object {
 
 object SchemaCreateConferenceRequest {
   @scala.inline
-  def apply(
-    conferenceSolutionKey: SchemaConferenceSolutionKey = null,
-    requestId: String = null,
-    status: SchemaConferenceRequestStatus = null
-  ): SchemaCreateConferenceRequest = {
+  def apply(): SchemaCreateConferenceRequest = {
     val __obj = js.Dynamic.literal()
-    if (conferenceSolutionKey != null) __obj.updateDynamic("conferenceSolutionKey")(conferenceSolutionKey.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateConferenceRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateConferenceRequestOps[Self <: SchemaCreateConferenceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConferenceSolutionKey(value: SchemaConferenceSolutionKey): Self = this.set("conferenceSolutionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConferenceSolutionKey: Self = this.set("conferenceSolutionKey", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaConferenceRequestStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

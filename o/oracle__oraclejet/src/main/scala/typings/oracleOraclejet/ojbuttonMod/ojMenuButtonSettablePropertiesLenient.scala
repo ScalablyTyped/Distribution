@@ -11,30 +11,51 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojbutton.ojMenuButtonSettableProperties> */
+@js.native
 trait ojMenuButtonSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
-  var chroming: js.UndefOr[full | half | outlined] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var display: js.UndefOr[all | icons] = js.undefined
-  var translations: js.UndefOr[js.Object] = js.undefined
+  var chroming: js.UndefOr[full | half | outlined] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var display: js.UndefOr[all | icons] = js.native
+  var translations: js.UndefOr[js.Object | Null] = js.native
 }
 
 object ojMenuButtonSettablePropertiesLenient {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    chroming: full | half | outlined = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    display: all | icons = null,
-    translations: js.Object = null
-  ): ojMenuButtonSettablePropertiesLenient = {
+  def apply(): ojMenuButtonSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (chroming != null) __obj.updateDynamic("chroming")(chroming.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojMenuButtonSettablePropertiesLenient]
   }
+  @scala.inline
+  implicit class ojMenuButtonSettablePropertiesLenientOps[Self <: ojMenuButtonSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChroming(value: full | half | outlined): Self = this.set("chroming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChroming: Self = this.set("chroming", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisplay(value: all | icons): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setTranslations(value: js.Object): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslations: Self = this.set("translations", js.undefined)
+    @scala.inline
+    def setTranslationsNull: Self = this.set("translations", null)
+  }
+  
 }
 

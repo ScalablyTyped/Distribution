@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait DeprecatedServer extends js.Object {
   /** @deprecated */
   def start(): Unit = js.native
+  def start(options: js.UndefOr[scala.Nothing], callback: ServerCallback): Unit = js.native
   def start(options: js.Any): Unit = js.native
   def start(options: js.Any, callback: ServerCallback): Unit = js.native
 }

@@ -78,44 +78,96 @@ trait Cluster extends js.Object {
 
 object Cluster {
   @scala.inline
-  def apply(
-    ActiveNodes: js.UndefOr[IntegerOptional] = js.undefined,
-    ClusterArn: String = null,
-    ClusterDiscoveryEndpoint: Endpoint = null,
-    ClusterName: String = null,
-    Description: String = null,
-    IamRoleArn: String = null,
-    NodeIdsToRemove: NodeIdentifierList = null,
-    NodeType: String = null,
-    Nodes: NodeList = null,
-    NotificationConfiguration: NotificationConfiguration = null,
-    ParameterGroup: ParameterGroupStatus = null,
-    PreferredMaintenanceWindow: String = null,
-    SSEDescription: SSEDescription = null,
-    SecurityGroups: SecurityGroupMembershipList = null,
-    Status: String = null,
-    SubnetGroup: String = null,
-    TotalNodes: js.UndefOr[IntegerOptional] = js.undefined
-  ): Cluster = {
+  def apply(): Cluster = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ActiveNodes)) __obj.updateDynamic("ActiveNodes")(ActiveNodes.get.asInstanceOf[js.Any])
-    if (ClusterArn != null) __obj.updateDynamic("ClusterArn")(ClusterArn.asInstanceOf[js.Any])
-    if (ClusterDiscoveryEndpoint != null) __obj.updateDynamic("ClusterDiscoveryEndpoint")(ClusterDiscoveryEndpoint.asInstanceOf[js.Any])
-    if (ClusterName != null) __obj.updateDynamic("ClusterName")(ClusterName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
-    if (NodeIdsToRemove != null) __obj.updateDynamic("NodeIdsToRemove")(NodeIdsToRemove.asInstanceOf[js.Any])
-    if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
-    if (Nodes != null) __obj.updateDynamic("Nodes")(Nodes.asInstanceOf[js.Any])
-    if (NotificationConfiguration != null) __obj.updateDynamic("NotificationConfiguration")(NotificationConfiguration.asInstanceOf[js.Any])
-    if (ParameterGroup != null) __obj.updateDynamic("ParameterGroup")(ParameterGroup.asInstanceOf[js.Any])
-    if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (SSEDescription != null) __obj.updateDynamic("SSEDescription")(SSEDescription.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (SubnetGroup != null) __obj.updateDynamic("SubnetGroup")(SubnetGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalNodes)) __obj.updateDynamic("TotalNodes")(TotalNodes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cluster]
   }
+  @scala.inline
+  implicit class ClusterOps[Self <: Cluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveNodes(value: IntegerOptional): Self = this.set("ActiveNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveNodes: Self = this.set("ActiveNodes", js.undefined)
+    @scala.inline
+    def setClusterArn(value: String): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterArn: Self = this.set("ClusterArn", js.undefined)
+    @scala.inline
+    def setClusterDiscoveryEndpoint(value: Endpoint): Self = this.set("ClusterDiscoveryEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterDiscoveryEndpoint: Self = this.set("ClusterDiscoveryEndpoint", js.undefined)
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("ClusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterName: Self = this.set("ClusterName", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: String): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    @scala.inline
+    def setNodeIdsToRemoveVarargs(value: String*): Self = this.set("NodeIdsToRemove", js.Array(value :_*))
+    @scala.inline
+    def setNodeIdsToRemove(value: NodeIdentifierList): Self = this.set("NodeIdsToRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeIdsToRemove: Self = this.set("NodeIdsToRemove", js.undefined)
+    @scala.inline
+    def setNodeType(value: String): Self = this.set("NodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeType: Self = this.set("NodeType", js.undefined)
+    @scala.inline
+    def setNodesVarargs(value: Node*): Self = this.set("Nodes", js.Array(value :_*))
+    @scala.inline
+    def setNodes(value: NodeList): Self = this.set("Nodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodes: Self = this.set("Nodes", js.undefined)
+    @scala.inline
+    def setNotificationConfiguration(value: NotificationConfiguration): Self = this.set("NotificationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationConfiguration: Self = this.set("NotificationConfiguration", js.undefined)
+    @scala.inline
+    def setParameterGroup(value: ParameterGroupStatus): Self = this.set("ParameterGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterGroup: Self = this.set("ParameterGroup", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setSSEDescription(value: SSEDescription): Self = this.set("SSEDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSEDescription: Self = this.set("SSEDescription", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: SecurityGroupMembership*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: SecurityGroupMembershipList): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSubnetGroup(value: String): Self = this.set("SubnetGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetGroup: Self = this.set("SubnetGroup", js.undefined)
+    @scala.inline
+    def setTotalNodes(value: IntegerOptional): Self = this.set("TotalNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalNodes: Self = this.set("TotalNodes", js.undefined)
+  }
+  
 }
 

@@ -26,30 +26,5 @@ class ASPxClientHintHidingEventArgs protected ()
     titleElement: js.Any,
     cancel: Boolean
   ) = this()
-  /**
-    * Gets or sets a value indicating whether the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets the object that is the hint's content.
-    */
-  /* CompleteClass */
-  override var contentElement: js.Any = js.native
-  /**
-    * Gets the object that is the hint element.
-    */
-  /* CompleteClass */
-  override var hintElement: js.Any = js.native
-  /**
-    * Gets the object that is the hint's target element.
-    */
-  /* CompleteClass */
-  override var targetElement: js.Any = js.native
-  /**
-    * Gets the object that is the hint's title.
-    */
-  /* CompleteClass */
-  override var titleElement: js.Any = js.native
 }
 

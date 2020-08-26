@@ -1,31 +1,37 @@
 package typings.reactcss.mod
 
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HoverProps[T] extends Props[T] {
-  var hover: js.UndefOr[Boolean] = js.undefined
+  var hover: js.UndefOr[Boolean] = js.native
 }
 
 object HoverProps {
   @scala.inline
-  def apply[T](
-    children: ReactNode = null,
-    hover: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
-    ref: js.UndefOr[Null | LegacyRef[T]] = js.undefined
-  ): HoverProps[T] = {
+  def apply[T](): HoverProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(hover)) __obj.updateDynamic("hover")(hover.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[HoverProps[T]]
   }
+  @scala.inline
+  implicit class HoverPropsOps[Self <: HoverProps[_], T] (val x: Self with HoverProps[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHover(value: Boolean): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+  }
+  
 }
 

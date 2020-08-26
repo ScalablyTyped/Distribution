@@ -47,26 +47,60 @@ trait SchemaDomainProvisioning extends js.Object {
 
 object SchemaDomainProvisioning {
   @scala.inline
-  def apply(
-    certChallengeDiscoveredTxt: js.Array[String] = null,
-    certChallengeDns: SchemaCertDnsChallenge = null,
-    certChallengeHttp: SchemaCertHttpChallenge = null,
-    certStatus: String = null,
-    discoveredIps: js.Array[String] = null,
-    dnsFetchTime: String = null,
-    dnsStatus: String = null,
-    expectedIps: js.Array[String] = null
-  ): SchemaDomainProvisioning = {
+  def apply(): SchemaDomainProvisioning = {
     val __obj = js.Dynamic.literal()
-    if (certChallengeDiscoveredTxt != null) __obj.updateDynamic("certChallengeDiscoveredTxt")(certChallengeDiscoveredTxt.asInstanceOf[js.Any])
-    if (certChallengeDns != null) __obj.updateDynamic("certChallengeDns")(certChallengeDns.asInstanceOf[js.Any])
-    if (certChallengeHttp != null) __obj.updateDynamic("certChallengeHttp")(certChallengeHttp.asInstanceOf[js.Any])
-    if (certStatus != null) __obj.updateDynamic("certStatus")(certStatus.asInstanceOf[js.Any])
-    if (discoveredIps != null) __obj.updateDynamic("discoveredIps")(discoveredIps.asInstanceOf[js.Any])
-    if (dnsFetchTime != null) __obj.updateDynamic("dnsFetchTime")(dnsFetchTime.asInstanceOf[js.Any])
-    if (dnsStatus != null) __obj.updateDynamic("dnsStatus")(dnsStatus.asInstanceOf[js.Any])
-    if (expectedIps != null) __obj.updateDynamic("expectedIps")(expectedIps.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDomainProvisioning]
   }
+  @scala.inline
+  implicit class SchemaDomainProvisioningOps[Self <: SchemaDomainProvisioning] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertChallengeDiscoveredTxtVarargs(value: String*): Self = this.set("certChallengeDiscoveredTxt", js.Array(value :_*))
+    @scala.inline
+    def setCertChallengeDiscoveredTxt(value: js.Array[String]): Self = this.set("certChallengeDiscoveredTxt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertChallengeDiscoveredTxt: Self = this.set("certChallengeDiscoveredTxt", js.undefined)
+    @scala.inline
+    def setCertChallengeDns(value: SchemaCertDnsChallenge): Self = this.set("certChallengeDns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertChallengeDns: Self = this.set("certChallengeDns", js.undefined)
+    @scala.inline
+    def setCertChallengeHttp(value: SchemaCertHttpChallenge): Self = this.set("certChallengeHttp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertChallengeHttp: Self = this.set("certChallengeHttp", js.undefined)
+    @scala.inline
+    def setCertStatus(value: String): Self = this.set("certStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertStatus: Self = this.set("certStatus", js.undefined)
+    @scala.inline
+    def setDiscoveredIpsVarargs(value: String*): Self = this.set("discoveredIps", js.Array(value :_*))
+    @scala.inline
+    def setDiscoveredIps(value: js.Array[String]): Self = this.set("discoveredIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscoveredIps: Self = this.set("discoveredIps", js.undefined)
+    @scala.inline
+    def setDnsFetchTime(value: String): Self = this.set("dnsFetchTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsFetchTime: Self = this.set("dnsFetchTime", js.undefined)
+    @scala.inline
+    def setDnsStatus(value: String): Self = this.set("dnsStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsStatus: Self = this.set("dnsStatus", js.undefined)
+    @scala.inline
+    def setExpectedIpsVarargs(value: String*): Self = this.set("expectedIps", js.Array(value :_*))
+    @scala.inline
+    def setExpectedIps(value: js.Array[String]): Self = this.set("expectedIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedIps: Self = this.set("expectedIps", js.undefined)
+  }
+  
 }
 

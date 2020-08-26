@@ -12,7 +12,7 @@ Writeable stream for uploading content of unknown size to S3 via the multipart A
 | Keywords           | aws, s3, upload, pipe, stream |
 | # releases         | 1 |
 | # dependents       | 52 |
-| # downloads        | 1685407 |
+| # downloads        | 1648794 |
 | # stars            | 20 |
 
 ## Links

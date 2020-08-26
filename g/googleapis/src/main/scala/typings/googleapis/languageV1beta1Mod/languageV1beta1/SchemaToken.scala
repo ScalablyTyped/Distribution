@@ -30,18 +30,38 @@ trait SchemaToken extends js.Object {
 
 object SchemaToken {
   @scala.inline
-  def apply(
-    dependencyEdge: SchemaDependencyEdge = null,
-    lemma: String = null,
-    partOfSpeech: SchemaPartOfSpeech = null,
-    text: SchemaTextSpan = null
-  ): SchemaToken = {
+  def apply(): SchemaToken = {
     val __obj = js.Dynamic.literal()
-    if (dependencyEdge != null) __obj.updateDynamic("dependencyEdge")(dependencyEdge.asInstanceOf[js.Any])
-    if (lemma != null) __obj.updateDynamic("lemma")(lemma.asInstanceOf[js.Any])
-    if (partOfSpeech != null) __obj.updateDynamic("partOfSpeech")(partOfSpeech.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaToken]
   }
+  @scala.inline
+  implicit class SchemaTokenOps[Self <: SchemaToken] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDependencyEdge(value: SchemaDependencyEdge): Self = this.set("dependencyEdge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependencyEdge: Self = this.set("dependencyEdge", js.undefined)
+    @scala.inline
+    def setLemma(value: String): Self = this.set("lemma", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLemma: Self = this.set("lemma", js.undefined)
+    @scala.inline
+    def setPartOfSpeech(value: SchemaPartOfSpeech): Self = this.set("partOfSpeech", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartOfSpeech: Self = this.set("partOfSpeech", js.undefined)
+    @scala.inline
+    def setText(value: SchemaTextSpan): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

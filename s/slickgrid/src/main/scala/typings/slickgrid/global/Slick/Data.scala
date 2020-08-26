@@ -13,17 +13,6 @@ object Data extends js.Object {
   class DataView[T /* <: SlickData */] ()
     extends typings.slickgrid.Slick.Data.DataView[T] {
     def this(options: DataViewOptions[T]) = this()
-    /**
-      * Returns the item at a given index.
-      * @param index
-      */
-    /* CompleteClass */
-    override def getItem(index: Double): T = js.native
-    /**
-      * Returns the number of data items in the set.
-      */
-    /* CompleteClass */
-    override def getLength(): Double = js.native
   }
   
   @js.native
@@ -34,68 +23,23 @@ object Data extends js.Object {
   object Aggregators extends js.Object {
     @js.native
     class Aggregator[T /* <: SlickData */] ()
-      extends typings.slickgrid.Slick.Data.Aggregators.Aggregator[T] {
-      /* CompleteClass */
-      override var field: String = js.native
-      /* CompleteClass */
-      override def accumulate(item: T): Unit = js.native
-      /* CompleteClass */
-      override def init(): Unit = js.native
-      /* CompleteClass */
-      override def storeResult(groupTotals: typings.slickgrid.Slick.GroupTotals[T]): Unit = js.native
-    }
+      extends typings.slickgrid.Slick.Data.Aggregators.Aggregator[T]
     
     @js.native
     class Avg[T] ()
-      extends typings.slickgrid.Slick.Data.Aggregators.Aggregator[T] {
-      /* CompleteClass */
-      override var field: String = js.native
-      /* CompleteClass */
-      override def accumulate(item: T): Unit = js.native
-      /* CompleteClass */
-      override def init(): Unit = js.native
-      /* CompleteClass */
-      override def storeResult(groupTotals: typings.slickgrid.Slick.GroupTotals[T]): Unit = js.native
-    }
+      extends typings.slickgrid.Slick.Data.Aggregators.Aggregator[T]
     
     @js.native
     class Max[T] ()
-      extends typings.slickgrid.Slick.Data.Aggregators.Aggregator[T] {
-      /* CompleteClass */
-      override var field: String = js.native
-      /* CompleteClass */
-      override def accumulate(item: T): Unit = js.native
-      /* CompleteClass */
-      override def init(): Unit = js.native
-      /* CompleteClass */
-      override def storeResult(groupTotals: typings.slickgrid.Slick.GroupTotals[T]): Unit = js.native
-    }
+      extends typings.slickgrid.Slick.Data.Aggregators.Aggregator[T]
     
     @js.native
     class Min[T] ()
-      extends typings.slickgrid.Slick.Data.Aggregators.Aggregator[T] {
-      /* CompleteClass */
-      override var field: String = js.native
-      /* CompleteClass */
-      override def accumulate(item: T): Unit = js.native
-      /* CompleteClass */
-      override def init(): Unit = js.native
-      /* CompleteClass */
-      override def storeResult(groupTotals: typings.slickgrid.Slick.GroupTotals[T]): Unit = js.native
-    }
+      extends typings.slickgrid.Slick.Data.Aggregators.Aggregator[T]
     
     @js.native
     class Sum[T] ()
-      extends typings.slickgrid.Slick.Data.Aggregators.Aggregator[T] {
-      /* CompleteClass */
-      override var field: String = js.native
-      /* CompleteClass */
-      override def accumulate(item: T): Unit = js.native
-      /* CompleteClass */
-      override def init(): Unit = js.native
-      /* CompleteClass */
-      override def storeResult(groupTotals: typings.slickgrid.Slick.GroupTotals[T]): Unit = js.native
-    }
+      extends typings.slickgrid.Slick.Data.Aggregators.Aggregator[T]
     
   }
   

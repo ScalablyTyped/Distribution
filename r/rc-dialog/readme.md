@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-dialog
 
-Typings are for version 8.0.1
+Typings are for version 8.1.0
 
 ## Library description:
 dialog ui component for react
@@ -10,9 +10,9 @@ dialog ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-dialog |
 | Keywords           | react, react-component, react-dialog, dialog, ui |
-| # releases         | 31 |
-| # dependents       | 249 |
-| # downloads        | 10234526 |
+| # releases         | 32 |
+| # dependents       | 253 |
+| # downloads        | 10546338 |
 | # stars            | 4 |
 
 ## Links

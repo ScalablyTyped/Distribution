@@ -1,9 +1,6 @@
 package typings.reactToolbox.buttonButtonMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.CSSProperties
-import typings.react.mod.Key
-import typings.react.mod.ReactNode
 import typings.reactToolbox.baseMod.ButtonBaseProps
 import typings.reactToolbox.baseMod.ButtonTheme
 import typings.reactToolbox.rippleMod.RippleTheme
@@ -12,7 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactToolbox.rippleMod.RippleProps because var conflicts: children, disabled. Inlined onRippleEnded, spread, theme */ trait ButtonProps
+- typings.reactToolbox.rippleMod.RippleProps because var conflicts: children, disabled. Inlined onRippleEnded, spread, theme */ @js.native
+trait ButtonProps
   extends ButtonBaseProps
      with /**
   * Additional properties passed to rippled component.
@@ -22,148 +20,107 @@ import scala.scalajs.js.annotation._
     * If true, the button will have a flat look.
     * @default false
     */
-  var flat: js.UndefOr[Boolean] = js.undefined
+  var flat: js.UndefOr[Boolean] = js.native
   /**
     * If true, the button will have a floating look.
     * @default false
     */
-  var floating: js.UndefOr[Boolean] = js.undefined
+  var floating: js.UndefOr[Boolean] = js.native
   /**
     * Creates a link for the button.
     */
-  var href: js.UndefOr[String] = js.undefined
+  var href: js.UndefOr[String] = js.native
   /**
     * The text string to use for the name of the button.
     */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.native
   /**
     * To be used with floating button. If true, the button will be smaller.
     * @default false
     */
-  var mini: js.UndefOr[Boolean] = js.undefined
+  var mini: js.UndefOr[Boolean] = js.native
   /**
     * Function that will be called when the ripple animation ends.
     */
-  var onRippleEnded: js.UndefOr[js.Function] = js.undefined
+  var onRippleEnded: js.UndefOr[js.Function] = js.native
   /**
     * If true, the button will have a raised look.
     * @default false
     */
-  var raised: js.UndefOr[Boolean] = js.undefined
+  var raised: js.UndefOr[Boolean] = js.native
   /**
     * Factor to indicate how much should the ripple spread under the component.
     * @default 2
     */
-  var spread: js.UndefOr[Double] = js.undefined
+  var spread: js.UndefOr[Double] = js.native
   /**
     * Passed down to the root element
     */
-  var target: js.UndefOr[String] = js.undefined
+  var target: js.UndefOr[String] = js.native
   /**
     * Classnames object defining the component style.
     */
-  var theme: js.UndefOr[ButtonTheme | RippleTheme] = js.undefined
+  var theme: js.UndefOr[ButtonTheme | RippleTheme] = js.native
 }
 
 object ButtonProps {
   @scala.inline
-  def apply(
-    StringDictionary: /**
-    * Additional properties passed to rippled component.
-    */
-  /* key */ StringDictionary[js.Any] = null,
-    accent: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    flat: js.UndefOr[Boolean] = js.undefined,
-    floating: js.UndefOr[Boolean] = js.undefined,
-    href: String = null,
-    icon: ReactNode = null,
-    inverse: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
-    label: String = null,
-    mini: js.UndefOr[Boolean] = js.undefined,
-    neutral: js.UndefOr[Boolean] = js.undefined,
-    onClick: js.Function = null,
-    onContextMenu: js.Function = null,
-    onDoubleClick: js.Function = null,
-    onDrag: js.Function = null,
-    onDragEnd: js.Function = null,
-    onDragEnter: js.Function = null,
-    onDragExit: js.Function = null,
-    onDragLeave: js.Function = null,
-    onDragOver: js.Function = null,
-    onDragStart: js.Function = null,
-    onDrop: js.Function = null,
-    onMouseDown: js.Function = null,
-    onMouseEnter: js.Function = null,
-    onMouseLeave: js.Function = null,
-    onMouseMove: js.Function = null,
-    onMouseOut: js.Function = null,
-    onMouseOver: js.Function = null,
-    onMouseUp: js.Function = null,
-    onRippleEnded: js.Function = null,
-    onTouchCancel: js.Function = null,
-    onTouchEnd: js.Function = null,
-    onTouchMove: js.Function = null,
-    onTouchStart: js.Function = null,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    raised: js.UndefOr[Boolean] = js.undefined,
-    ripple: js.UndefOr[Boolean] = js.undefined,
-    spread: js.UndefOr[Double] = js.undefined,
-    style: CSSProperties = null,
-    target: String = null,
-    theme: ButtonTheme | RippleTheme = null,
-    `type`: String = null
-  ): ButtonProps = {
+  def apply(): ButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.get.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(neutral)) __obj.updateDynamic("neutral")(neutral.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu.asInstanceOf[js.Any])
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick.asInstanceOf[js.Any])
-    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag.asInstanceOf[js.Any])
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd.asInstanceOf[js.Any])
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter.asInstanceOf[js.Any])
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit.asInstanceOf[js.Any])
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave.asInstanceOf[js.Any])
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver.asInstanceOf[js.Any])
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart.asInstanceOf[js.Any])
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop.asInstanceOf[js.Any])
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown.asInstanceOf[js.Any])
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter.asInstanceOf[js.Any])
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave.asInstanceOf[js.Any])
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove.asInstanceOf[js.Any])
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut.asInstanceOf[js.Any])
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver.asInstanceOf[js.Any])
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp.asInstanceOf[js.Any])
-    if (onRippleEnded != null) __obj.updateDynamic("onRippleEnded")(onRippleEnded.asInstanceOf[js.Any])
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel.asInstanceOf[js.Any])
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd.asInstanceOf[js.Any])
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove.asInstanceOf[js.Any])
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ripple)) __obj.updateDynamic("ripple")(ripple.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
+  @scala.inline
+  implicit class ButtonPropsOps[Self <: ButtonProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFlat(value: Boolean): Self = this.set("flat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlat: Self = this.set("flat", js.undefined)
+    @scala.inline
+    def setFloating(value: Boolean): Self = this.set("floating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloating: Self = this.set("floating", js.undefined)
+    @scala.inline
+    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHref: Self = this.set("href", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMini(value: Boolean): Self = this.set("mini", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMini: Self = this.set("mini", js.undefined)
+    @scala.inline
+    def setOnRippleEnded(value: js.Function): Self = this.set("onRippleEnded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnRippleEnded: Self = this.set("onRippleEnded", js.undefined)
+    @scala.inline
+    def setRaised(value: Boolean): Self = this.set("raised", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaised: Self = this.set("raised", js.undefined)
+    @scala.inline
+    def setSpread(value: Double): Self = this.set("spread", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpread: Self = this.set("spread", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTheme(value: ButtonTheme | RippleTheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+  }
+  
 }
 

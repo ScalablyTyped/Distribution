@@ -5,6 +5,7 @@ import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.pagesMod.pages.PageSettings
 import typings.mendixmodelsdk.textsMod.texts.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +25,7 @@ class TextTemplate protected () extends Template {
   @JSName("model")
   var model_FTextTemplate: IModel = js.native
   def text: Text = js.native
-  def text(newValue: Text): js.Any = js.native
+  def text_=(newValue: Text): Unit = js.native
 }
 
 /* static members */
@@ -39,6 +40,15 @@ object TextTemplate extends js.Object {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   def create(model: IModel): TextTemplate = js.native
+  /**
+    * Creates and returns a new TextTemplate instance in the SDK and on the server.
+    * The new TextTemplate will be automatically stored in the 'titleOverride' property
+    * of the parent pages.PageSettings element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.12.0 and higher
+    */
+  def createInPageSettingsUnderTitleOverride(container: PageSettings): TextTemplate = js.native
   /**
     * Creates and returns a new TextTemplate instance in the SDK and on the server.
     * The new TextTemplate will be automatically stored in the 'template' property

@@ -16,9 +16,5 @@ class PasswordAuthenticator protected () extends Authenticator {
     * @param password RBAC password.
     */
   def this(username: String, password: String) = this()
-  /* CompleteClass */
-  override var password: String = js.native
-  /* CompleteClass */
-  override var username: String = js.native
 }
 

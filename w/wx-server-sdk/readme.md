@@ -10,9 +10,9 @@ mini program cloud server sdk
 | ------------------ | :-------------: |
 | Full name          | wx-server-sdk |
 | Keywords           | - |
-| # releases         | 123 |
+| # releases         | 126 |
 | # dependents       | 9 |
-| # downloads        | 1240097 |
+| # downloads        | 1285222 |
 | # stars            | 0 |
 
 ## Links

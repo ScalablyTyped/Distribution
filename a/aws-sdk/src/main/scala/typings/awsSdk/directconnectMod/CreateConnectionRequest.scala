@@ -34,19 +34,42 @@ trait CreateConnectionRequest extends js.Object {
 
 object CreateConnectionRequest {
   @scala.inline
-  def apply(
-    bandwidth: Bandwidth,
-    connectionName: ConnectionName,
-    location: LocationCode,
-    lagId: LagId = null,
-    providerName: ProviderName = null,
-    tags: TagList = null
-  ): CreateConnectionRequest = {
+  def apply(bandwidth: Bandwidth, connectionName: ConnectionName, location: LocationCode): CreateConnectionRequest = {
     val __obj = js.Dynamic.literal(bandwidth = bandwidth.asInstanceOf[js.Any], connectionName = connectionName.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-    if (lagId != null) __obj.updateDynamic("lagId")(lagId.asInstanceOf[js.Any])
-    if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConnectionRequest]
   }
+  @scala.inline
+  implicit class CreateConnectionRequestOps[Self <: CreateConnectionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBandwidth(value: Bandwidth): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionName(value: ConnectionName): Self = this.set("connectionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocation(value: LocationCode): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLagId(value: LagId): Self = this.set("lagId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLagId: Self = this.set("lagId", js.undefined)
+    @scala.inline
+    def setProviderName(value: ProviderName): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderName: Self = this.set("providerName", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

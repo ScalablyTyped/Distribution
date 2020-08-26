@@ -1,40 +1,77 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
+import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Whoami extends js.Object {
-  var client_channel_id: Double
-  var client_database_id: Double
-  var client_id: Double
-  var client_login_name: String
-  var client_nickname: String
-  var client_origin_server_id: Double
-  var client_unique_identifier: String
-  var virtualserver_id: Double
-  var virtualserver_port: Double
-  var virtualserver_status: String
-  var virtualserver_unique_identifier: String
+@js.native
+trait Whoami extends ResponseEntry {
+  var clientChannelId: String = js.native
+  var clientDatabaseId: String = js.native
+  var clientId: String = js.native
+  var clientLoginName: String = js.native
+  var clientNickname: String = js.native
+  var clientOriginServerId: String = js.native
+  var clientUniqueIdentifier: String = js.native
+  var virtualserverId: String = js.native
+  var virtualserverPort: Double = js.native
+  var virtualserverStatus: String = js.native
+  var virtualserverUniqueIdentifier: String = js.native
 }
 
 object Whoami {
   @scala.inline
   def apply(
-    client_channel_id: Double,
-    client_database_id: Double,
-    client_id: Double,
-    client_login_name: String,
-    client_nickname: String,
-    client_origin_server_id: Double,
-    client_unique_identifier: String,
-    virtualserver_id: Double,
-    virtualserver_port: Double,
-    virtualserver_status: String,
-    virtualserver_unique_identifier: String
+    clientChannelId: String,
+    clientDatabaseId: String,
+    clientId: String,
+    clientLoginName: String,
+    clientNickname: String,
+    clientOriginServerId: String,
+    clientUniqueIdentifier: String,
+    virtualserverId: String,
+    virtualserverPort: Double,
+    virtualserverStatus: String,
+    virtualserverUniqueIdentifier: String
   ): Whoami = {
-    val __obj = js.Dynamic.literal(client_channel_id = client_channel_id.asInstanceOf[js.Any], client_database_id = client_database_id.asInstanceOf[js.Any], client_id = client_id.asInstanceOf[js.Any], client_login_name = client_login_name.asInstanceOf[js.Any], client_nickname = client_nickname.asInstanceOf[js.Any], client_origin_server_id = client_origin_server_id.asInstanceOf[js.Any], client_unique_identifier = client_unique_identifier.asInstanceOf[js.Any], virtualserver_id = virtualserver_id.asInstanceOf[js.Any], virtualserver_port = virtualserver_port.asInstanceOf[js.Any], virtualserver_status = virtualserver_status.asInstanceOf[js.Any], virtualserver_unique_identifier = virtualserver_unique_identifier.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clientChannelId = clientChannelId.asInstanceOf[js.Any], clientDatabaseId = clientDatabaseId.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], clientLoginName = clientLoginName.asInstanceOf[js.Any], clientNickname = clientNickname.asInstanceOf[js.Any], clientOriginServerId = clientOriginServerId.asInstanceOf[js.Any], clientUniqueIdentifier = clientUniqueIdentifier.asInstanceOf[js.Any], virtualserverId = virtualserverId.asInstanceOf[js.Any], virtualserverPort = virtualserverPort.asInstanceOf[js.Any], virtualserverStatus = virtualserverStatus.asInstanceOf[js.Any], virtualserverUniqueIdentifier = virtualserverUniqueIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Whoami]
   }
+  @scala.inline
+  implicit class WhoamiOps[Self <: Whoami] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientChannelId(value: String): Self = this.set("clientChannelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientDatabaseId(value: String): Self = this.set("clientDatabaseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientLoginName(value: String): Self = this.set("clientLoginName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientNickname(value: String): Self = this.set("clientNickname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientOriginServerId(value: String): Self = this.set("clientOriginServerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientUniqueIdentifier(value: String): Self = this.set("clientUniqueIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverId(value: String): Self = this.set("virtualserverId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverPort(value: Double): Self = this.set("virtualserverPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverStatus(value: String): Self = this.set("virtualserverStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualserverUniqueIdentifier(value: String): Self = this.set("virtualserverUniqueIdentifier", value.asInstanceOf[js.Any])
+  }
+  
 }
 

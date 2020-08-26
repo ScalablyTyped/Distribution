@@ -84,6 +84,7 @@ class ResourceProjectsTraces protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTrace] = js.native
   def get(callback: BodyResponseCallback[SchemaTrace]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTrace] = js.native
   def get(params: ParamsResourceProjectsTracesGet): GaxiosPromise[SchemaTrace] = js.native
   def get(params: ParamsResourceProjectsTracesGet, callback: BodyResponseCallback[SchemaTrace]): Unit = js.native
   def get(
@@ -185,6 +186,7 @@ class ResourceProjectsTraces protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListTracesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTracesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTracesResponse] = js.native
   def list(params: ParamsResourceProjectsTracesList): GaxiosPromise[SchemaListTracesResponse] = js.native
   def list(params: ParamsResourceProjectsTracesList, callback: BodyResponseCallback[SchemaListTracesResponse]): Unit = js.native
   def list(

@@ -5,81 +5,140 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeListColumn extends js.Object {
-  var attributes: js.UndefOr[js.Any] = js.undefined
-  var columns: js.UndefOr[js.Any] = js.undefined
-  var command: js.UndefOr[js.Array[TreeListColumnCommandItem]] = js.undefined
-  var editable: js.UndefOr[js.Function] = js.undefined
-  var editor: js.UndefOr[js.Function2[/* container */ JQuery, /* options */ TreeListEditorOptions, Unit]] = js.undefined
-  var encoded: js.UndefOr[Boolean] = js.undefined
-  var expandable: js.UndefOr[Boolean] = js.undefined
-  var field: js.UndefOr[String] = js.undefined
-  var filterable: js.UndefOr[Boolean | TreeListColumnFilterable] = js.undefined
-  var footerTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var headerAttributes: js.UndefOr[js.Any] = js.undefined
-  var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var lockable: js.UndefOr[Boolean] = js.undefined
-  var locked: js.UndefOr[Boolean] = js.undefined
-  var menu: js.UndefOr[Boolean] = js.undefined
-  var minScreenWidth: js.UndefOr[Double] = js.undefined
-  var sortable: js.UndefOr[Boolean | TreeListColumnSortable] = js.undefined
-  var template: js.UndefOr[String | js.Function] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[String | Double] = js.undefined
+  var attributes: js.UndefOr[js.Any] = js.native
+  var columns: js.UndefOr[js.Any] = js.native
+  var command: js.UndefOr[js.Array[TreeListColumnCommandItem]] = js.native
+  var editable: js.UndefOr[js.Function] = js.native
+  var editor: js.UndefOr[js.Function2[/* container */ JQuery, /* options */ TreeListEditorOptions, Unit]] = js.native
+  var encoded: js.UndefOr[Boolean] = js.native
+  var expandable: js.UndefOr[Boolean] = js.native
+  var field: js.UndefOr[String] = js.native
+  var filterable: js.UndefOr[Boolean | TreeListColumnFilterable] = js.native
+  var footerTemplate: js.UndefOr[String | js.Function] = js.native
+  var format: js.UndefOr[String] = js.native
+  var headerAttributes: js.UndefOr[js.Any] = js.native
+  var headerTemplate: js.UndefOr[String | js.Function] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var lockable: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.native
+  var menu: js.UndefOr[Boolean] = js.native
+  var minScreenWidth: js.UndefOr[Double] = js.native
+  var sortable: js.UndefOr[Boolean | TreeListColumnSortable] = js.native
+  var template: js.UndefOr[String | js.Function] = js.native
+  var title: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String | Double] = js.native
 }
 
 object TreeListColumn {
   @scala.inline
-  def apply(
-    attributes: js.Any = null,
-    columns: js.Any = null,
-    command: js.Array[TreeListColumnCommandItem] = null,
-    editable: js.Function = null,
-    editor: (/* container */ JQuery, /* options */ TreeListEditorOptions) => Unit = null,
-    encoded: js.UndefOr[Boolean] = js.undefined,
-    expandable: js.UndefOr[Boolean] = js.undefined,
-    field: String = null,
-    filterable: Boolean | TreeListColumnFilterable = null,
-    footerTemplate: String | js.Function = null,
-    format: String = null,
-    headerAttributes: js.Any = null,
-    headerTemplate: String | js.Function = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    lockable: js.UndefOr[Boolean] = js.undefined,
-    locked: js.UndefOr[Boolean] = js.undefined,
-    menu: js.UndefOr[Boolean] = js.undefined,
-    minScreenWidth: js.UndefOr[Double] = js.undefined,
-    sortable: Boolean | TreeListColumnSortable = null,
-    template: String | js.Function = null,
-    title: String = null,
-    width: String | Double = null
-  ): TreeListColumn = {
+  def apply(): TreeListColumn = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (editor != null) __obj.updateDynamic("editor")(js.Any.fromFunction2(editor))
-    if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.get.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (headerAttributes != null) __obj.updateDynamic("headerAttributes")(headerAttributes.asInstanceOf[js.Any])
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockable)) __obj.updateDynamic("lockable")(lockable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(menu)) __obj.updateDynamic("menu")(menu.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minScreenWidth)) __obj.updateDynamic("minScreenWidth")(minScreenWidth.get.asInstanceOf[js.Any])
-    if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumn]
   }
+  @scala.inline
+  implicit class TreeListColumnOps[Self <: TreeListColumn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: js.Any): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setColumns(value: js.Any): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setCommandVarargs(value: TreeListColumnCommandItem*): Self = this.set("command", js.Array(value :_*))
+    @scala.inline
+    def setCommand(value: js.Array[TreeListColumnCommandItem]): Self = this.set("command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommand: Self = this.set("command", js.undefined)
+    @scala.inline
+    def setEditable(value: js.Function): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setEditor(value: (/* container */ JQuery, /* options */ TreeListEditorOptions) => Unit): Self = this.set("editor", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteEditor: Self = this.set("editor", js.undefined)
+    @scala.inline
+    def setEncoded(value: Boolean): Self = this.set("encoded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoded: Self = this.set("encoded", js.undefined)
+    @scala.inline
+    def setExpandable(value: Boolean): Self = this.set("expandable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandable: Self = this.set("expandable", js.undefined)
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setFilterable(value: Boolean | TreeListColumnFilterable): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    @scala.inline
+    def setFooterTemplate(value: String | js.Function): Self = this.set("footerTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterTemplate: Self = this.set("footerTemplate", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setHeaderAttributes(value: js.Any): Self = this.set("headerAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderAttributes: Self = this.set("headerAttributes", js.undefined)
+    @scala.inline
+    def setHeaderTemplate(value: String | js.Function): Self = this.set("headerTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderTemplate: Self = this.set("headerTemplate", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setLockable(value: Boolean): Self = this.set("lockable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockable: Self = this.set("lockable", js.undefined)
+    @scala.inline
+    def setLocked(value: Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocked: Self = this.set("locked", js.undefined)
+    @scala.inline
+    def setMenu(value: Boolean): Self = this.set("menu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenu: Self = this.set("menu", js.undefined)
+    @scala.inline
+    def setMinScreenWidth(value: Double): Self = this.set("minScreenWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinScreenWidth: Self = this.set("minScreenWidth", js.undefined)
+    @scala.inline
+    def setSortable(value: Boolean | TreeListColumnSortable): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortable: Self = this.set("sortable", js.undefined)
+    @scala.inline
+    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

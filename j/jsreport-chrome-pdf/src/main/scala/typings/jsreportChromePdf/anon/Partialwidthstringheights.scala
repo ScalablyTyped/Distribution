@@ -4,34 +4,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  width  :string,   height  :string,   deviceScaleFactor  :string,   isMobile  :boolean,   hasTouch  :boolean,   isLandscape  :boolean}> */
+/* Inlined std.Partial<{  width :string,   height :string,   deviceScaleFactor :string,   isMobile :boolean,   hasTouch :boolean,   isLandscape :boolean}> */
+@js.native
 trait Partialwidthstringheights extends js.Object {
-  var deviceScaleFactor: js.UndefOr[String] = js.undefined
-  var hasTouch: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[String] = js.undefined
-  var isLandscape: js.UndefOr[Boolean] = js.undefined
-  var isMobile: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[String] = js.undefined
+  var deviceScaleFactor: js.UndefOr[String] = js.native
+  var hasTouch: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[String] = js.native
+  var isLandscape: js.UndefOr[Boolean] = js.native
+  var isMobile: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[String] = js.native
 }
 
 object Partialwidthstringheights {
   @scala.inline
-  def apply(
-    deviceScaleFactor: String = null,
-    hasTouch: js.UndefOr[Boolean] = js.undefined,
-    height: String = null,
-    isLandscape: js.UndefOr[Boolean] = js.undefined,
-    isMobile: js.UndefOr[Boolean] = js.undefined,
-    width: String = null
-  ): Partialwidthstringheights = {
+  def apply(): Partialwidthstringheights = {
     val __obj = js.Dynamic.literal()
-    if (deviceScaleFactor != null) __obj.updateDynamic("deviceScaleFactor")(deviceScaleFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTouch)) __obj.updateDynamic("hasTouch")(hasTouch.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLandscape)) __obj.updateDynamic("isLandscape")(isLandscape.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Partialwidthstringheights]
   }
+  @scala.inline
+  implicit class PartialwidthstringheightsOps[Self <: Partialwidthstringheights] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceScaleFactor(value: String): Self = this.set("deviceScaleFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceScaleFactor: Self = this.set("deviceScaleFactor", js.undefined)
+    @scala.inline
+    def setHasTouch(value: Boolean): Self = this.set("hasTouch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasTouch: Self = this.set("hasTouch", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIsLandscape(value: Boolean): Self = this.set("isLandscape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsLandscape: Self = this.set("isLandscape", js.undefined)
+    @scala.inline
+    def setIsMobile(value: Boolean): Self = this.set("isMobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMobile: Self = this.set("isMobile", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

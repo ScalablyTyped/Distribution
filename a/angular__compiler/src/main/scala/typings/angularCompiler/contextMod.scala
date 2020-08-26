@@ -44,7 +44,7 @@ object contextMod extends js.Object {
     val meta: I18nMeta = js.native
     var placeholders: Map[String, js.Array[_]] = js.native
     val ref: ReadVarExpr = js.native
-    var registry: js.UndefOr[js.Any] = js.native
+    var registry: js.Any = js.native
     val templateIndex: Double | Null = js.native
     def appendBinding(binding: AST): Unit = js.native
     def appendBoundText(node: I18nMeta): Unit = js.native

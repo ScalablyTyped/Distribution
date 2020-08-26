@@ -6,6 +6,7 @@ import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
 import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
+import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
@@ -33,152 +34,251 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.TextProps>> */
+@js.native
 trait RecursivePartialPartialTe extends js.Object {
-  var accessibilityActions: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]] = js.undefined
+  var accessibilityActions: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]] = js.native
   var accessibilityComponentType: js.UndefOr[
     RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]
-  ] = js.undefined
-  var accessibilityElementsHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var accessibilityHint: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
-  var accessibilityIgnoresInvertColors: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var accessibilityLabel: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
-  var accessibilityLiveRegion: js.UndefOr[RecursivePartial[js.UndefOr[none | polite | assertive]]] = js.undefined
-  var accessibilityRole: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityRole]]] = js.undefined
-  var accessibilityState: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityState]]] = js.undefined
-  var accessibilityTraits: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]] = js.undefined
-  var accessibilityValue: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityValue]]] = js.undefined
-  var accessibilityViewIsModal: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var accessible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var adjustsFontSizeToFit: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var allowFontScaling: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var ellipsizeMode: js.UndefOr[RecursivePartial[js.UndefOr[head | middle | tail | clip]]] = js.undefined
-  var h1: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var h1Style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
-  var h2: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var h2Style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
-  var h3: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var h3Style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
-  var h4: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var h4Style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
-  var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.undefined
-  var lineBreakMode: js.UndefOr[RecursivePartial[js.UndefOr[head | middle | tail | clip]]] = js.undefined
-  var maxFontSizeMultiplier: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
-  var minimumFontScale: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
-  var nativeID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
-  var numberOfLines: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
+  ] = js.native
+  var accessibilityElementsHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var accessibilityHint: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var accessibilityIgnoresInvertColors: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var accessibilityLabel: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var accessibilityLiveRegion: js.UndefOr[RecursivePartial[js.UndefOr[none | polite | assertive]]] = js.native
+  var accessibilityRole: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityRole]]] = js.native
+  var accessibilityState: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityState]]] = js.native
+  var accessibilityTraits: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]] = js.native
+  var accessibilityValue: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityValue]]] = js.native
+  var accessibilityViewIsModal: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var accessible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var adjustsFontSizeToFit: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var allowFontScaling: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var ellipsizeMode: js.UndefOr[RecursivePartial[js.UndefOr[head | middle | tail | clip]]] = js.native
+  var h1: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var h1Style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var h2: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var h2Style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var h3: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var h3Style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var h4: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var h4Style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.native
+  var lineBreakMode: js.UndefOr[RecursivePartial[js.UndefOr[head | middle | tail | clip]]] = js.native
+  var maxFontSizeMultiplier: js.UndefOr[RecursivePartial[js.UndefOr[Double | Null]]] = js.native
+  var minimumFontScale: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var nativeID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var numberOfLines: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
   var onAccessibilityAction: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]
-  ] = js.undefined
-  var onAccessibilityEscape: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
-  var onAccessibilityTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
-  var onLayout: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]] = js.undefined
+  ] = js.native
+  var onAccessibilityEscape: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onAccessibilityTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onLayout: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]] = js.native
   var onLongPress: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.undefined
-  var onMagicTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
+  ] = js.native
+  var onMagicTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
   var onPress: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
-  ] = js.undefined
-  var selectable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var selectionColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
-  var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
-  var suppressHighlighting: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
-  var testID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
-  var textBreakStrategy: js.UndefOr[RecursivePartial[js.UndefOr[simple | highQuality | balanced]]] = js.undefined
+  ] = js.native
+  var selectable: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var selectionColor: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.native
+  var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var suppressHighlighting: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var testID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var textBreakStrategy: js.UndefOr[RecursivePartial[js.UndefOr[simple | highQuality | balanced]]] = js.native
 }
 
 object RecursivePartialPartialTe {
   @scala.inline
-  def apply(
-    accessibilityActions: RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]] = null,
-    accessibilityComponentType: RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]] = null,
-    accessibilityElementsHidden: RecursivePartial[js.UndefOr[Boolean]] = null,
-    accessibilityHint: RecursivePartial[js.UndefOr[String]] = null,
-    accessibilityIgnoresInvertColors: RecursivePartial[js.UndefOr[Boolean]] = null,
-    accessibilityLabel: RecursivePartial[js.UndefOr[String]] = null,
-    accessibilityLiveRegion: RecursivePartial[js.UndefOr[none | polite | assertive]] = null,
-    accessibilityRole: RecursivePartial[js.UndefOr[AccessibilityRole]] = null,
-    accessibilityState: RecursivePartial[js.UndefOr[AccessibilityState]] = null,
-    accessibilityTraits: RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]] = null,
-    accessibilityValue: RecursivePartial[js.UndefOr[AccessibilityValue]] = null,
-    accessibilityViewIsModal: RecursivePartial[js.UndefOr[Boolean]] = null,
-    accessible: RecursivePartial[js.UndefOr[Boolean]] = null,
-    adjustsFontSizeToFit: RecursivePartial[js.UndefOr[Boolean]] = null,
-    allowFontScaling: RecursivePartial[js.UndefOr[Boolean]] = null,
-    ellipsizeMode: RecursivePartial[js.UndefOr[head | middle | tail | clip]] = null,
-    h1: RecursivePartial[js.UndefOr[Boolean]] = null,
-    h1Style: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]] = null,
-    h2: RecursivePartial[js.UndefOr[Boolean]] = null,
-    h2Style: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]] = null,
-    h3: RecursivePartial[js.UndefOr[Boolean]] = null,
-    h3Style: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]] = null,
-    h4: RecursivePartial[js.UndefOr[Boolean]] = null,
-    h4Style: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]] = null,
-    importantForAccessibility: RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]] = null,
-    lineBreakMode: RecursivePartial[js.UndefOr[head | middle | tail | clip]] = null,
-    maxFontSizeMultiplier: RecursivePartial[js.UndefOr[Double]] = null,
-    minimumFontScale: RecursivePartial[js.UndefOr[Double]] = null,
-    nativeID: RecursivePartial[js.UndefOr[String]] = null,
-    numberOfLines: RecursivePartial[js.UndefOr[Double]] = null,
-    onAccessibilityAction: RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]] = null,
-    onAccessibilityEscape: RecursivePartial[js.UndefOr[js.Function0[Unit]]] = null,
-    onAccessibilityTap: RecursivePartial[js.UndefOr[js.Function0[Unit]]] = null,
-    onLayout: RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]] = null,
-    onLongPress: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]] = null,
-    onMagicTap: RecursivePartial[js.UndefOr[js.Function0[Unit]]] = null,
-    onPress: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]] = null,
-    selectable: RecursivePartial[js.UndefOr[Boolean]] = null,
-    selectionColor: RecursivePartial[js.UndefOr[String]] = null,
-    style: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]] = null,
-    suppressHighlighting: RecursivePartial[js.UndefOr[Boolean]] = null,
-    testID: RecursivePartial[js.UndefOr[String]] = null,
-    textBreakStrategy: RecursivePartial[js.UndefOr[simple | highQuality | balanced]] = null
-  ): RecursivePartialPartialTe = {
+  def apply(): RecursivePartialPartialTe = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (accessibilityElementsHidden != null) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (accessibilityIgnoresInvertColors != null) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
-    if (accessibilityViewIsModal != null) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
-    if (accessible != null) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
-    if (adjustsFontSizeToFit != null) __obj.updateDynamic("adjustsFontSizeToFit")(adjustsFontSizeToFit.asInstanceOf[js.Any])
-    if (allowFontScaling != null) __obj.updateDynamic("allowFontScaling")(allowFontScaling.asInstanceOf[js.Any])
-    if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
-    if (h1 != null) __obj.updateDynamic("h1")(h1.asInstanceOf[js.Any])
-    if (h1Style != null) __obj.updateDynamic("h1Style")(h1Style.asInstanceOf[js.Any])
-    if (h2 != null) __obj.updateDynamic("h2")(h2.asInstanceOf[js.Any])
-    if (h2Style != null) __obj.updateDynamic("h2Style")(h2Style.asInstanceOf[js.Any])
-    if (h3 != null) __obj.updateDynamic("h3")(h3.asInstanceOf[js.Any])
-    if (h3Style != null) __obj.updateDynamic("h3Style")(h3Style.asInstanceOf[js.Any])
-    if (h4 != null) __obj.updateDynamic("h4")(h4.asInstanceOf[js.Any])
-    if (h4Style != null) __obj.updateDynamic("h4Style")(h4Style.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (lineBreakMode != null) __obj.updateDynamic("lineBreakMode")(lineBreakMode.asInstanceOf[js.Any])
-    if (maxFontSizeMultiplier != null) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.asInstanceOf[js.Any])
-    if (minimumFontScale != null) __obj.updateDynamic("minimumFontScale")(minimumFontScale.asInstanceOf[js.Any])
-    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(onAccessibilityAction.asInstanceOf[js.Any])
-    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(onAccessibilityEscape.asInstanceOf[js.Any])
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap.asInstanceOf[js.Any])
-    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout.asInstanceOf[js.Any])
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress.asInstanceOf[js.Any])
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap.asInstanceOf[js.Any])
-    if (onPress != null) __obj.updateDynamic("onPress")(onPress.asInstanceOf[js.Any])
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (suppressHighlighting != null) __obj.updateDynamic("suppressHighlighting")(suppressHighlighting.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecursivePartialPartialTe]
   }
+  @scala.inline
+  implicit class RecursivePartialPartialTeOps[Self <: RecursivePartialPartialTe] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessibilityActions(value: RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]): Self = this.set("accessibilityActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityActions: Self = this.set("accessibilityActions", js.undefined)
+    @scala.inline
+    def setAccessibilityComponentType(value: RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]): Self = this.set("accessibilityComponentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityComponentType: Self = this.set("accessibilityComponentType", js.undefined)
+    @scala.inline
+    def setAccessibilityElementsHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityElementsHidden: Self = this.set("accessibilityElementsHidden", js.undefined)
+    @scala.inline
+    def setAccessibilityHint(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("accessibilityHint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityHint: Self = this.set("accessibilityHint", js.undefined)
+    @scala.inline
+    def setAccessibilityIgnoresInvertColors(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityIgnoresInvertColors: Self = this.set("accessibilityIgnoresInvertColors", js.undefined)
+    @scala.inline
+    def setAccessibilityLabel(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    @scala.inline
+    def setAccessibilityLiveRegion(value: RecursivePartial[js.UndefOr[none | polite | assertive]]): Self = this.set("accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityLiveRegion: Self = this.set("accessibilityLiveRegion", js.undefined)
+    @scala.inline
+    def setAccessibilityRole(value: RecursivePartial[js.UndefOr[AccessibilityRole]]): Self = this.set("accessibilityRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityRole: Self = this.set("accessibilityRole", js.undefined)
+    @scala.inline
+    def setAccessibilityState(value: RecursivePartial[js.UndefOr[AccessibilityState]]): Self = this.set("accessibilityState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityState: Self = this.set("accessibilityState", js.undefined)
+    @scala.inline
+    def setAccessibilityTraits(value: RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]): Self = this.set("accessibilityTraits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityTraits: Self = this.set("accessibilityTraits", js.undefined)
+    @scala.inline
+    def setAccessibilityValue(value: RecursivePartial[js.UndefOr[AccessibilityValue]]): Self = this.set("accessibilityValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityValue: Self = this.set("accessibilityValue", js.undefined)
+    @scala.inline
+    def setAccessibilityViewIsModal(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("accessibilityViewIsModal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityViewIsModal: Self = this.set("accessibilityViewIsModal", js.undefined)
+    @scala.inline
+    def setAccessible(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("accessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessible: Self = this.set("accessible", js.undefined)
+    @scala.inline
+    def setAdjustsFontSizeToFit(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("adjustsFontSizeToFit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustsFontSizeToFit: Self = this.set("adjustsFontSizeToFit", js.undefined)
+    @scala.inline
+    def setAllowFontScaling(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("allowFontScaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowFontScaling: Self = this.set("allowFontScaling", js.undefined)
+    @scala.inline
+    def setEllipsizeMode(value: RecursivePartial[js.UndefOr[head | middle | tail | clip]]): Self = this.set("ellipsizeMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEllipsizeMode: Self = this.set("ellipsizeMode", js.undefined)
+    @scala.inline
+    def setH1(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("h1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH1: Self = this.set("h1", js.undefined)
+    @scala.inline
+    def setH1Style(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("h1Style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH1Style: Self = this.set("h1Style", js.undefined)
+    @scala.inline
+    def setH2(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("h2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH2: Self = this.set("h2", js.undefined)
+    @scala.inline
+    def setH2Style(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("h2Style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH2Style: Self = this.set("h2Style", js.undefined)
+    @scala.inline
+    def setH3(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("h3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH3: Self = this.set("h3", js.undefined)
+    @scala.inline
+    def setH3Style(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("h3Style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH3Style: Self = this.set("h3Style", js.undefined)
+    @scala.inline
+    def setH4(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("h4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH4: Self = this.set("h4", js.undefined)
+    @scala.inline
+    def setH4Style(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("h4Style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH4Style: Self = this.set("h4Style", js.undefined)
+    @scala.inline
+    def setImportantForAccessibility(value: RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]): Self = this.set("importantForAccessibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportantForAccessibility: Self = this.set("importantForAccessibility", js.undefined)
+    @scala.inline
+    def setLineBreakMode(value: RecursivePartial[js.UndefOr[head | middle | tail | clip]]): Self = this.set("lineBreakMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineBreakMode: Self = this.set("lineBreakMode", js.undefined)
+    @scala.inline
+    def setMaxFontSizeMultiplier(value: RecursivePartial[js.UndefOr[Double | Null]]): Self = this.set("maxFontSizeMultiplier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFontSizeMultiplier: Self = this.set("maxFontSizeMultiplier", js.undefined)
+    @scala.inline
+    def setMinimumFontScale(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("minimumFontScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumFontScale: Self = this.set("minimumFontScale", js.undefined)
+    @scala.inline
+    def setNativeID(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("nativeID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNativeID: Self = this.set("nativeID", js.undefined)
+    @scala.inline
+    def setNumberOfLines(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("numberOfLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfLines: Self = this.set("numberOfLines", js.undefined)
+    @scala.inline
+    def setOnAccessibilityAction(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]): Self = this.set("onAccessibilityAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAccessibilityAction: Self = this.set("onAccessibilityAction", js.undefined)
+    @scala.inline
+    def setOnAccessibilityEscape(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onAccessibilityEscape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAccessibilityEscape: Self = this.set("onAccessibilityEscape", js.undefined)
+    @scala.inline
+    def setOnAccessibilityTap(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onAccessibilityTap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAccessibilityTap: Self = this.set("onAccessibilityTap", js.undefined)
+    @scala.inline
+    def setOnLayout(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]): Self = this.set("onLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLayout: Self = this.set("onLayout", js.undefined)
+    @scala.inline
+    def setOnLongPress(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = this.set("onLongPress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnLongPress: Self = this.set("onLongPress", js.undefined)
+    @scala.inline
+    def setOnMagicTap(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onMagicTap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnMagicTap: Self = this.set("onMagicTap", js.undefined)
+    @scala.inline
+    def setOnPress(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = this.set("onPress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    @scala.inline
+    def setSelectable(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    @scala.inline
+    def setSelectionColor(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = this.set("selectionColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionColor: Self = this.set("selectionColor", js.undefined)
+    @scala.inline
+    def setStyle(value: RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSuppressHighlighting(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("suppressHighlighting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressHighlighting: Self = this.set("suppressHighlighting", js.undefined)
+    @scala.inline
+    def setTestID(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("testID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestID: Self = this.set("testID", js.undefined)
+    @scala.inline
+    def setTextBreakStrategy(value: RecursivePartial[js.UndefOr[simple | highQuality | balanced]]): Self = this.set("textBreakStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextBreakStrategy: Self = this.set("textBreakStrategy", js.undefined)
+  }
+  
 }
 

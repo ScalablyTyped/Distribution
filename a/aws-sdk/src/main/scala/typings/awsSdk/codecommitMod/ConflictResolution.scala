@@ -22,16 +22,40 @@ trait ConflictResolution extends js.Object {
 
 object ConflictResolution {
   @scala.inline
-  def apply(
-    deleteFiles: DeleteFileEntries = null,
-    replaceContents: ReplaceContentEntries = null,
-    setFileModes: SetFileModeEntries = null
-  ): ConflictResolution = {
+  def apply(): ConflictResolution = {
     val __obj = js.Dynamic.literal()
-    if (deleteFiles != null) __obj.updateDynamic("deleteFiles")(deleteFiles.asInstanceOf[js.Any])
-    if (replaceContents != null) __obj.updateDynamic("replaceContents")(replaceContents.asInstanceOf[js.Any])
-    if (setFileModes != null) __obj.updateDynamic("setFileModes")(setFileModes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConflictResolution]
   }
+  @scala.inline
+  implicit class ConflictResolutionOps[Self <: ConflictResolution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteFilesVarargs(value: DeleteFileEntry*): Self = this.set("deleteFiles", js.Array(value :_*))
+    @scala.inline
+    def setDeleteFiles(value: DeleteFileEntries): Self = this.set("deleteFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteFiles: Self = this.set("deleteFiles", js.undefined)
+    @scala.inline
+    def setReplaceContentsVarargs(value: ReplaceContentEntry*): Self = this.set("replaceContents", js.Array(value :_*))
+    @scala.inline
+    def setReplaceContents(value: ReplaceContentEntries): Self = this.set("replaceContents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceContents: Self = this.set("replaceContents", js.undefined)
+    @scala.inline
+    def setSetFileModesVarargs(value: SetFileModeEntry*): Self = this.set("setFileModes", js.Array(value :_*))
+    @scala.inline
+    def setSetFileModes(value: SetFileModeEntries): Self = this.set("setFileModes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetFileModes: Self = this.set("setFileModes", js.undefined)
+  }
+  
 }
 

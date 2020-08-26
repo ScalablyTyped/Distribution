@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReplaceAllTextRequest extends js.Object {
-  var containsText: js.UndefOr[SubstringMatchCriteria] = js.undefined
-  var replaceText: js.UndefOr[String] = js.undefined
+  var containsText: js.UndefOr[SubstringMatchCriteria] = js.native
+  var replaceText: js.UndefOr[String] = js.native
 }
 
 object ReplaceAllTextRequest {
   @scala.inline
-  def apply(containsText: SubstringMatchCriteria = null, replaceText: String = null): ReplaceAllTextRequest = {
+  def apply(): ReplaceAllTextRequest = {
     val __obj = js.Dynamic.literal()
-    if (containsText != null) __obj.updateDynamic("containsText")(containsText.asInstanceOf[js.Any])
-    if (replaceText != null) __obj.updateDynamic("replaceText")(replaceText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceAllTextRequest]
   }
+  @scala.inline
+  implicit class ReplaceAllTextRequestOps[Self <: ReplaceAllTextRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainsText(value: SubstringMatchCriteria): Self = this.set("containsText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsText: Self = this.set("containsText", js.undefined)
+    @scala.inline
+    def setReplaceText(value: String): Self = this.set("replaceText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceText: Self = this.set("replaceText", js.undefined)
+  }
+  
 }
 

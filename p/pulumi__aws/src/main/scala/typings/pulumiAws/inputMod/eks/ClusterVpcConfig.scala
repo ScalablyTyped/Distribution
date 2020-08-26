@@ -39,23 +39,54 @@ trait ClusterVpcConfig extends js.Object {
 
 object ClusterVpcConfig {
   @scala.inline
-  def apply(
-    subnetIds: Input[js.Array[Input[String]]],
-    clusterSecurityGroupId: Input[String] = null,
-    endpointPrivateAccess: Input[Boolean] = null,
-    endpointPublicAccess: Input[Boolean] = null,
-    publicAccessCidrs: Input[js.Array[Input[String]]] = null,
-    securityGroupIds: Input[js.Array[Input[String]]] = null,
-    vpcId: Input[String] = null
-  ): ClusterVpcConfig = {
+  def apply(subnetIds: Input[js.Array[Input[String]]]): ClusterVpcConfig = {
     val __obj = js.Dynamic.literal(subnetIds = subnetIds.asInstanceOf[js.Any])
-    if (clusterSecurityGroupId != null) __obj.updateDynamic("clusterSecurityGroupId")(clusterSecurityGroupId.asInstanceOf[js.Any])
-    if (endpointPrivateAccess != null) __obj.updateDynamic("endpointPrivateAccess")(endpointPrivateAccess.asInstanceOf[js.Any])
-    if (endpointPublicAccess != null) __obj.updateDynamic("endpointPublicAccess")(endpointPublicAccess.asInstanceOf[js.Any])
-    if (publicAccessCidrs != null) __obj.updateDynamic("publicAccessCidrs")(publicAccessCidrs.asInstanceOf[js.Any])
-    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterVpcConfig]
   }
+  @scala.inline
+  implicit class ClusterVpcConfigOps[Self <: ClusterVpcConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubnetIdsVarargs(value: Input[String]*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterSecurityGroupId(value: Input[String]): Self = this.set("clusterSecurityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterSecurityGroupId: Self = this.set("clusterSecurityGroupId", js.undefined)
+    @scala.inline
+    def setEndpointPrivateAccess(value: Input[Boolean]): Self = this.set("endpointPrivateAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointPrivateAccess: Self = this.set("endpointPrivateAccess", js.undefined)
+    @scala.inline
+    def setEndpointPublicAccess(value: Input[Boolean]): Self = this.set("endpointPublicAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointPublicAccess: Self = this.set("endpointPublicAccess", js.undefined)
+    @scala.inline
+    def setPublicAccessCidrsVarargs(value: Input[String]*): Self = this.set("publicAccessCidrs", js.Array(value :_*))
+    @scala.inline
+    def setPublicAccessCidrs(value: Input[js.Array[Input[String]]]): Self = this.set("publicAccessCidrs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicAccessCidrs: Self = this.set("publicAccessCidrs", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

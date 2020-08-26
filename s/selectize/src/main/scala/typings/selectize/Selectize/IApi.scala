@@ -65,6 +65,11 @@ trait IApi[T, U] extends js.Object {
     * new item, given the user input. Once this completes, it will be added to the item list.
     */
   def createItem(value: T): Unit = js.native
+  def createItem(
+    value: T,
+    triggerDropdown: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]
+  ): Unit = js.native
   def createItem(value: T, triggerDropdown: Boolean): Unit = js.native
   def createItem(value: T, triggerDropdown: Boolean, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
   // Other

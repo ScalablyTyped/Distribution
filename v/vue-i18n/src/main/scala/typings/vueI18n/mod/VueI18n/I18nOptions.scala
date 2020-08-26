@@ -8,72 +8,129 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:interface-name
+@js.native
 trait I18nOptions extends js.Object {
-  var componentInstanceCreatedListener: js.UndefOr[ComponentInstanceCreatedListener] = js.undefined
-  var dateTimeFormats: js.UndefOr[DateTimeFormats] = js.undefined
-  var fallbackLocale: js.UndefOr[FallbackLocale] = js.undefined
-  var fallbackRoot: js.UndefOr[Boolean] = js.undefined
-  var formatFallbackMessages: js.UndefOr[Boolean] = js.undefined
-  var formatter: js.UndefOr[Formatter] = js.undefined
-  var locale: js.UndefOr[Locale] = js.undefined
-  var messages: js.UndefOr[LocaleMessages] = js.undefined
-  var missing: js.UndefOr[MissingHandler] = js.undefined
-  var modifiers: js.UndefOr[Modifiers] = js.undefined
-  var numberFormats: js.UndefOr[NumberFormats] = js.undefined
-  var pluralizationRules: js.UndefOr[PluralizationRulesMap] = js.undefined
-  var postTranslation: js.UndefOr[PostTranslationHandler] = js.undefined
-  var preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined
-  var sharedMessages: js.UndefOr[LocaleMessages] = js.undefined
-  var silentFallbackWarn: js.UndefOr[Boolean | RegExp] = js.undefined
-  var silentTranslationWarn: js.UndefOr[Boolean | RegExp] = js.undefined
-  var sync: js.UndefOr[Boolean] = js.undefined
-  var warnHtmlInMessage: js.UndefOr[WarnHtmlInMessageLevel] = js.undefined
+  var componentInstanceCreatedListener: js.UndefOr[ComponentInstanceCreatedListener] = js.native
+  var dateTimeFormats: js.UndefOr[DateTimeFormats] = js.native
+  var fallbackLocale: js.UndefOr[FallbackLocale] = js.native
+  var fallbackRoot: js.UndefOr[Boolean] = js.native
+  var formatFallbackMessages: js.UndefOr[Boolean] = js.native
+  var formatter: js.UndefOr[Formatter] = js.native
+  var locale: js.UndefOr[Locale] = js.native
+  var messages: js.UndefOr[LocaleMessages] = js.native
+  var missing: js.UndefOr[MissingHandler] = js.native
+  var modifiers: js.UndefOr[Modifiers] = js.native
+  var numberFormats: js.UndefOr[NumberFormats] = js.native
+  var pluralizationRules: js.UndefOr[PluralizationRulesMap] = js.native
+  var postTranslation: js.UndefOr[PostTranslationHandler] = js.native
+  var preserveDirectiveContent: js.UndefOr[Boolean] = js.native
+  var sharedMessages: js.UndefOr[LocaleMessages] = js.native
+  var silentFallbackWarn: js.UndefOr[Boolean | RegExp] = js.native
+  var silentTranslationWarn: js.UndefOr[Boolean | RegExp] = js.native
+  var sync: js.UndefOr[Boolean] = js.native
+  var warnHtmlInMessage: js.UndefOr[WarnHtmlInMessageLevel] = js.native
 }
 
 object I18nOptions {
   @scala.inline
-  def apply(
-    componentInstanceCreatedListener: (/* newVm */ typings.vueI18n.mod.VueI18n with IVueI18n, /* rootVm */ typings.vueI18n.mod.VueI18n with IVueI18n) => Unit = null,
-    dateTimeFormats: DateTimeFormats = null,
-    fallbackLocale: FallbackLocale = null,
-    fallbackRoot: js.UndefOr[Boolean] = js.undefined,
-    formatFallbackMessages: js.UndefOr[Boolean] = js.undefined,
-    formatter: Formatter = null,
-    locale: Locale = null,
-    messages: LocaleMessages = null,
-    missing: (/* locale */ Locale, /* key */ Path, /* vm */ Vue | Null, /* values */ js.Any) => String | Unit = null,
-    modifiers: Modifiers = null,
-    numberFormats: NumberFormats = null,
-    pluralizationRules: PluralizationRulesMap = null,
-    postTranslation: (/* str */ String, /* key */ js.UndefOr[String]) => String = null,
-    preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined,
-    sharedMessages: LocaleMessages = null,
-    silentFallbackWarn: Boolean | RegExp = null,
-    silentTranslationWarn: Boolean | RegExp = null,
-    sync: js.UndefOr[Boolean] = js.undefined,
-    warnHtmlInMessage: WarnHtmlInMessageLevel = null
-  ): I18nOptions = {
+  def apply(): I18nOptions = {
     val __obj = js.Dynamic.literal()
-    if (componentInstanceCreatedListener != null) __obj.updateDynamic("componentInstanceCreatedListener")(js.Any.fromFunction2(componentInstanceCreatedListener))
-    if (dateTimeFormats != null) __obj.updateDynamic("dateTimeFormats")(dateTimeFormats.asInstanceOf[js.Any])
-    if (fallbackLocale != null) __obj.updateDynamic("fallbackLocale")(fallbackLocale.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallbackRoot)) __obj.updateDynamic("fallbackRoot")(fallbackRoot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(formatFallbackMessages)) __obj.updateDynamic("formatFallbackMessages")(formatFallbackMessages.get.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (missing != null) __obj.updateDynamic("missing")(js.Any.fromFunction4(missing))
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (numberFormats != null) __obj.updateDynamic("numberFormats")(numberFormats.asInstanceOf[js.Any])
-    if (pluralizationRules != null) __obj.updateDynamic("pluralizationRules")(pluralizationRules.asInstanceOf[js.Any])
-    if (postTranslation != null) __obj.updateDynamic("postTranslation")(js.Any.fromFunction2(postTranslation))
-    if (!js.isUndefined(preserveDirectiveContent)) __obj.updateDynamic("preserveDirectiveContent")(preserveDirectiveContent.get.asInstanceOf[js.Any])
-    if (sharedMessages != null) __obj.updateDynamic("sharedMessages")(sharedMessages.asInstanceOf[js.Any])
-    if (silentFallbackWarn != null) __obj.updateDynamic("silentFallbackWarn")(silentFallbackWarn.asInstanceOf[js.Any])
-    if (silentTranslationWarn != null) __obj.updateDynamic("silentTranslationWarn")(silentTranslationWarn.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
-    if (warnHtmlInMessage != null) __obj.updateDynamic("warnHtmlInMessage")(warnHtmlInMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[I18nOptions]
   }
+  @scala.inline
+  implicit class I18nOptionsOps[Self <: I18nOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentInstanceCreatedListener(
+      value: (/* newVm */ typings.vueI18n.mod.VueI18n with IVueI18n, /* rootVm */ typings.vueI18n.mod.VueI18n with IVueI18n) => Unit
+    ): Self = this.set("componentInstanceCreatedListener", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteComponentInstanceCreatedListener: Self = this.set("componentInstanceCreatedListener", js.undefined)
+    @scala.inline
+    def setDateTimeFormats(value: DateTimeFormats): Self = this.set("dateTimeFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateTimeFormats: Self = this.set("dateTimeFormats", js.undefined)
+    @scala.inline
+    def setFallbackLocaleVarargs(value: String*): Self = this.set("fallbackLocale", js.Array(value :_*))
+    @scala.inline
+    def setFallbackLocale(value: FallbackLocale): Self = this.set("fallbackLocale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackLocale: Self = this.set("fallbackLocale", js.undefined)
+    @scala.inline
+    def setFallbackRoot(value: Boolean): Self = this.set("fallbackRoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackRoot: Self = this.set("fallbackRoot", js.undefined)
+    @scala.inline
+    def setFormatFallbackMessages(value: Boolean): Self = this.set("formatFallbackMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatFallbackMessages: Self = this.set("formatFallbackMessages", js.undefined)
+    @scala.inline
+    def setFormatter(value: Formatter): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setLocale(value: Locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMessages(value: LocaleMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setMissing(
+      value: (/* locale */ Locale, /* key */ Path, /* vm */ Vue | Null, /* values */ js.Any) => String | Unit
+    ): Self = this.set("missing", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteMissing: Self = this.set("missing", js.undefined)
+    @scala.inline
+    def setModifiers(value: Modifiers): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    @scala.inline
+    def setNumberFormats(value: NumberFormats): Self = this.set("numberFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberFormats: Self = this.set("numberFormats", js.undefined)
+    @scala.inline
+    def setPluralizationRules(value: PluralizationRulesMap): Self = this.set("pluralizationRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePluralizationRules: Self = this.set("pluralizationRules", js.undefined)
+    @scala.inline
+    def setPostTranslation(value: (/* str */ String, /* key */ js.UndefOr[String]) => String): Self = this.set("postTranslation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deletePostTranslation: Self = this.set("postTranslation", js.undefined)
+    @scala.inline
+    def setPreserveDirectiveContent(value: Boolean): Self = this.set("preserveDirectiveContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveDirectiveContent: Self = this.set("preserveDirectiveContent", js.undefined)
+    @scala.inline
+    def setSharedMessages(value: LocaleMessages): Self = this.set("sharedMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedMessages: Self = this.set("sharedMessages", js.undefined)
+    @scala.inline
+    def setSilentFallbackWarn(value: Boolean | RegExp): Self = this.set("silentFallbackWarn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilentFallbackWarn: Self = this.set("silentFallbackWarn", js.undefined)
+    @scala.inline
+    def setSilentTranslationWarn(value: Boolean | RegExp): Self = this.set("silentTranslationWarn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilentTranslationWarn: Self = this.set("silentTranslationWarn", js.undefined)
+    @scala.inline
+    def setSync(value: Boolean): Self = this.set("sync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSync: Self = this.set("sync", js.undefined)
+    @scala.inline
+    def setWarnHtmlInMessage(value: WarnHtmlInMessageLevel): Self = this.set("warnHtmlInMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarnHtmlInMessage: Self = this.set("warnHtmlInMessage", js.undefined)
+  }
+  
 }
 

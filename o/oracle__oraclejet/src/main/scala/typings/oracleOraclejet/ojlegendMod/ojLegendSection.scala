@@ -979,7 +979,15 @@ trait ojLegendSection extends JetElement[ojLegendSectionSettableProperties] {
   def setProperty(property: textHalign, value: start): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojLegendSectionSettableProperties]): Unit = js.native
   @JSName("setProperty")
+  def setProperty_collapsible(property: collapsible): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_text(property: text): Unit = js.native
+  @JSName("setProperty")
   def setProperty_text(property: text, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_textHalign(property: textHalign): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_textStyle(property: textStyle): Unit = js.native
   @JSName("setProperty")
   def setProperty_textStyle(property: textStyle, value: js.Object): Unit = js.native
 }

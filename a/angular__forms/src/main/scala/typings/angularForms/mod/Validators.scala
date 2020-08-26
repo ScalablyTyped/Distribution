@@ -13,6 +13,7 @@ class Validators () extends js.Object
 @JSImport("@angular/forms", "Validators")
 @js.native
 object Validators extends js.Object {
+  def compose(validators: js.Array[js.UndefOr[ValidatorFn | Null]]): ValidatorFn | Null = js.native
   /**
     * @description
     * Compose multiple validators into a single function that returns the union
@@ -24,8 +25,7 @@ object Validators extends js.Object {
     * @see `updateValueAndValidity()`
     *
     */
-  def compose(): Null = js.native
-  def compose(validators: js.Array[js.UndefOr[ValidatorFn | Null]]): ValidatorFn | Null = js.native
+  def compose(validators: Null): Null = js.native
   /**
     * @description
     * Compose multiple async validators into a single function that returns the union

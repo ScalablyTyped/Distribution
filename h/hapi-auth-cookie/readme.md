@@ -12,7 +12,7 @@ Cookie authentication plugin
 | Keywords           | hapi, plugin, auth, cookie, session |
 | # releases         | 7 |
 | # dependents       | 50 |
-| # downloads        | 350010 |
+| # downloads        | 352740 |
 | # stars            | 8 |
 
 ## Links

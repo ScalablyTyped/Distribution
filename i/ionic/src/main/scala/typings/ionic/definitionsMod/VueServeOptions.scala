@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VueServeOptions extends ServeOptions {
-  var configuration: js.UndefOr[String] = js.undefined
-  var sourcemaps: js.UndefOr[Boolean] = js.undefined
-  var ssl: js.UndefOr[Boolean] = js.undefined
+  var configuration: js.UndefOr[String] = js.native
+  var sourcemaps: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.native
 }
 
 object VueServeOptions {
@@ -23,29 +24,36 @@ object VueServeOptions {
     livereload: Boolean,
     open: Boolean,
     port: Double,
-    proxy: Boolean,
-    browser: String = null,
-    browserOption: String = null,
-    configuration: String = null,
-    externalAddressRequired: js.UndefOr[Boolean] = js.undefined,
-    platform: String = null,
-    project: String = null,
-    sourcemaps: js.UndefOr[Boolean] = js.undefined,
-    ssl: js.UndefOr[Boolean] = js.undefined,
-    verbose: js.UndefOr[Boolean] = js.undefined
+    proxy: Boolean
   ): VueServeOptions = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], devapp = devapp.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], lab = lab.asInstanceOf[js.Any], labHost = labHost.asInstanceOf[js.Any], labPort = labPort.asInstanceOf[js.Any], livereload = livereload.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any])
     __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
-    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
-    if (browserOption != null) __obj.updateDynamic("browserOption")(browserOption.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalAddressRequired)) __obj.updateDynamic("externalAddressRequired")(externalAddressRequired.get.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourcemaps)) __obj.updateDynamic("sourcemaps")(sourcemaps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VueServeOptions]
   }
+  @scala.inline
+  implicit class VueServeOptionsOps[Self <: VueServeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfiguration(value: String): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setSourcemaps(value: Boolean): Self = this.set("sourcemaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcemaps: Self = this.set("sourcemaps", js.undefined)
+    @scala.inline
+    def setSsl(value: Boolean): Self = this.set("ssl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsl: Self = this.set("ssl", js.undefined)
+  }
+  
 }
 

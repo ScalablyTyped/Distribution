@@ -34,22 +34,46 @@ trait VerificationMessageTemplateType extends js.Object {
 
 object VerificationMessageTemplateType {
   @scala.inline
-  def apply(
-    DefaultEmailOption: DefaultEmailOptionType = null,
-    EmailMessage: EmailVerificationMessageType = null,
-    EmailMessageByLink: EmailVerificationMessageByLinkType = null,
-    EmailSubject: EmailVerificationSubjectType = null,
-    EmailSubjectByLink: EmailVerificationSubjectByLinkType = null,
-    SmsMessage: SmsVerificationMessageType = null
-  ): VerificationMessageTemplateType = {
+  def apply(): VerificationMessageTemplateType = {
     val __obj = js.Dynamic.literal()
-    if (DefaultEmailOption != null) __obj.updateDynamic("DefaultEmailOption")(DefaultEmailOption.asInstanceOf[js.Any])
-    if (EmailMessage != null) __obj.updateDynamic("EmailMessage")(EmailMessage.asInstanceOf[js.Any])
-    if (EmailMessageByLink != null) __obj.updateDynamic("EmailMessageByLink")(EmailMessageByLink.asInstanceOf[js.Any])
-    if (EmailSubject != null) __obj.updateDynamic("EmailSubject")(EmailSubject.asInstanceOf[js.Any])
-    if (EmailSubjectByLink != null) __obj.updateDynamic("EmailSubjectByLink")(EmailSubjectByLink.asInstanceOf[js.Any])
-    if (SmsMessage != null) __obj.updateDynamic("SmsMessage")(SmsMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerificationMessageTemplateType]
   }
+  @scala.inline
+  implicit class VerificationMessageTemplateTypeOps[Self <: VerificationMessageTemplateType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultEmailOption(value: DefaultEmailOptionType): Self = this.set("DefaultEmailOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEmailOption: Self = this.set("DefaultEmailOption", js.undefined)
+    @scala.inline
+    def setEmailMessage(value: EmailVerificationMessageType): Self = this.set("EmailMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailMessage: Self = this.set("EmailMessage", js.undefined)
+    @scala.inline
+    def setEmailMessageByLink(value: EmailVerificationMessageByLinkType): Self = this.set("EmailMessageByLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailMessageByLink: Self = this.set("EmailMessageByLink", js.undefined)
+    @scala.inline
+    def setEmailSubject(value: EmailVerificationSubjectType): Self = this.set("EmailSubject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailSubject: Self = this.set("EmailSubject", js.undefined)
+    @scala.inline
+    def setEmailSubjectByLink(value: EmailVerificationSubjectByLinkType): Self = this.set("EmailSubjectByLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailSubjectByLink: Self = this.set("EmailSubjectByLink", js.undefined)
+    @scala.inline
+    def setSmsMessage(value: SmsVerificationMessageType): Self = this.set("SmsMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmsMessage: Self = this.set("SmsMessage", js.undefined)
+  }
+  
 }
 

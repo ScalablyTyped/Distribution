@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.anon.MediaTypeHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,15 +15,6 @@ class HttpMediaTypeHeaderValue protected ()
     * @param mediaType The media-type of the entity-body used in the Content-Type HTTP header.
     */
   def this(mediaType: String) = this()
-  /** Gets or sets the character set of the entity-body used in the Content-Type HTTP header. */
-  /* CompleteClass */
-  override var charSet: String = js.native
-  /** Gets or sets the media-type of the entity-body used in the Content-Type HTTP header. */
-  /* CompleteClass */
-  override var mediaType: String = js.native
-  /** Gets a set of parameters included in the Content-Type HTTP header. */
-  /* CompleteClass */
-  override var parameters: IVector[typings.winrtUwp.Windows.Web.Http.Headers.HttpNameValueHeaderValue] = js.native
 }
 
 /* static members */

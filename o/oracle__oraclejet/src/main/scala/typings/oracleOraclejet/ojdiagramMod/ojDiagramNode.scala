@@ -1,7 +1,7 @@
 package typings.oracleOraclejet.ojdiagramMod
 
-import typings.oracleOraclejet.anon.IconShape
 import typings.oracleOraclejet.anon.Opacity
+import typings.oracleOraclejet.anon.`6`
 import typings.oracleOraclejet.mod.JetElement
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.mod.JetSetPropertyType
@@ -154,11 +154,11 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
   var onIconChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[Opacity]], _]) | Null = js.native
   var onLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
   var onLabelStyleChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[js.Object | Null]], _]) | Null = js.native
-  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[IconShape]], _]) | Null = js.native
+  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[`6`]], _]) | Null = js.native
   var onSelectableChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[auto | off]], _]) | Null = js.native
   var onShortDescChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[String]], _]) | Null = js.native
   var onShowDisclosureChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[on | off]], _]) | Null = js.native
-  var overview: js.UndefOr[IconShape] = js.native
+  var overview: js.UndefOr[`6`] = js.native
   var selectable: js.UndefOr[auto | off] = js.native
   var shortDesc: js.UndefOr[String] = js.native
   var showDisclosure: js.UndefOr[on | off] = js.native
@@ -702,12 +702,12 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
   @JSName("addEventListener")
   def addEventListener_overviewChanged(
     `type`: overviewChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[IconShape]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[`6`]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_overviewChanged(
     `type`: overviewChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[IconShape]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.UndefOr[`6`]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1066,7 +1066,7 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
   @JSName("getProperty")
   def getProperty_labelStyle(property: labelStyle): js.UndefOr[js.Object | Null] = js.native
   @JSName("getProperty")
-  def getProperty_overview(property: overview): js.UndefOr[IconShape] = js.native
+  def getProperty_overview(property: overview): js.UndefOr[`6`] = js.native
   @JSName("getProperty")
   def getProperty_selectable(property: selectable): js.UndefOr[auto | off] = js.native
   @JSName("getProperty")
@@ -1083,9 +1083,17 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
   def setProperty(property: showDisclosure, value: on): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojDiagramNodeSettableProperties]): Unit = js.native
   @JSName("setProperty")
+  def setProperty_categories(property: categories): Unit = js.native
+  @JSName("setProperty")
   def setProperty_categories(property: categories, value: js.Array[String]): Unit = js.native
   @JSName("setProperty")
+  def setProperty_descendantsConnectivity(property: descendantsConnectivity): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_icon(property: icon): Unit = js.native
+  @JSName("setProperty")
   def setProperty_icon(property: icon, value: Opacity): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_label(property: label): Unit = js.native
   @JSName("setProperty")
   def setProperty_label(property: label, value: String): Unit = js.native
   @JSName("setProperty")
@@ -1093,8 +1101,16 @@ trait ojDiagramNode extends JetElement[ojDiagramNodeSettableProperties] {
   @JSName("setProperty")
   def setProperty_labelStyle(property: labelStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
-  def setProperty_overview(property: overview, value: IconShape): Unit = js.native
+  def setProperty_overview(property: overview): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_overview(property: overview, value: `6`): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_selectable(property: selectable): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_shortDesc(property: shortDesc): Unit = js.native
   @JSName("setProperty")
   def setProperty_shortDesc(property: shortDesc, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_showDisclosure(property: showDisclosure): Unit = js.native
 }
 

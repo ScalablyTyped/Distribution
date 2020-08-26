@@ -42,26 +42,54 @@ trait ApprovalRuleTemplate extends js.Object {
 
 object ApprovalRuleTemplate {
   @scala.inline
-  def apply(
-    approvalRuleTemplateContent: ApprovalRuleTemplateContent = null,
-    approvalRuleTemplateDescription: ApprovalRuleTemplateDescription = null,
-    approvalRuleTemplateId: ApprovalRuleTemplateId = null,
-    approvalRuleTemplateName: ApprovalRuleTemplateName = null,
-    creationDate: CreationDate = null,
-    lastModifiedDate: LastModifiedDate = null,
-    lastModifiedUser: Arn = null,
-    ruleContentSha256: RuleContentSha256 = null
-  ): ApprovalRuleTemplate = {
+  def apply(): ApprovalRuleTemplate = {
     val __obj = js.Dynamic.literal()
-    if (approvalRuleTemplateContent != null) __obj.updateDynamic("approvalRuleTemplateContent")(approvalRuleTemplateContent.asInstanceOf[js.Any])
-    if (approvalRuleTemplateDescription != null) __obj.updateDynamic("approvalRuleTemplateDescription")(approvalRuleTemplateDescription.asInstanceOf[js.Any])
-    if (approvalRuleTemplateId != null) __obj.updateDynamic("approvalRuleTemplateId")(approvalRuleTemplateId.asInstanceOf[js.Any])
-    if (approvalRuleTemplateName != null) __obj.updateDynamic("approvalRuleTemplateName")(approvalRuleTemplateName.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (lastModifiedUser != null) __obj.updateDynamic("lastModifiedUser")(lastModifiedUser.asInstanceOf[js.Any])
-    if (ruleContentSha256 != null) __obj.updateDynamic("ruleContentSha256")(ruleContentSha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApprovalRuleTemplate]
   }
+  @scala.inline
+  implicit class ApprovalRuleTemplateOps[Self <: ApprovalRuleTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApprovalRuleTemplateContent(value: ApprovalRuleTemplateContent): Self = this.set("approvalRuleTemplateContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalRuleTemplateContent: Self = this.set("approvalRuleTemplateContent", js.undefined)
+    @scala.inline
+    def setApprovalRuleTemplateDescription(value: ApprovalRuleTemplateDescription): Self = this.set("approvalRuleTemplateDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalRuleTemplateDescription: Self = this.set("approvalRuleTemplateDescription", js.undefined)
+    @scala.inline
+    def setApprovalRuleTemplateId(value: ApprovalRuleTemplateId): Self = this.set("approvalRuleTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalRuleTemplateId: Self = this.set("approvalRuleTemplateId", js.undefined)
+    @scala.inline
+    def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = this.set("approvalRuleTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalRuleTemplateName: Self = this.set("approvalRuleTemplateName", js.undefined)
+    @scala.inline
+    def setCreationDate(value: CreationDate): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: LastModifiedDate): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    @scala.inline
+    def setLastModifiedUser(value: Arn): Self = this.set("lastModifiedUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedUser: Self = this.set("lastModifiedUser", js.undefined)
+    @scala.inline
+    def setRuleContentSha256(value: RuleContentSha256): Self = this.set("ruleContentSha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleContentSha256: Self = this.set("ruleContentSha256", js.undefined)
+  }
+  
 }
 

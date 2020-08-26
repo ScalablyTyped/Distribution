@@ -13,16 +13,34 @@ trait VideoCodecSettings extends js.Object {
 
 object VideoCodecSettings {
   @scala.inline
-  def apply(
-    FrameCaptureSettings: FrameCaptureSettings = null,
-    H264Settings: H264Settings = null,
-    H265Settings: H265Settings = null
-  ): VideoCodecSettings = {
+  def apply(): VideoCodecSettings = {
     val __obj = js.Dynamic.literal()
-    if (FrameCaptureSettings != null) __obj.updateDynamic("FrameCaptureSettings")(FrameCaptureSettings.asInstanceOf[js.Any])
-    if (H264Settings != null) __obj.updateDynamic("H264Settings")(H264Settings.asInstanceOf[js.Any])
-    if (H265Settings != null) __obj.updateDynamic("H265Settings")(H265Settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoCodecSettings]
   }
+  @scala.inline
+  implicit class VideoCodecSettingsOps[Self <: VideoCodecSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrameCaptureSettings(value: FrameCaptureSettings): Self = this.set("FrameCaptureSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameCaptureSettings: Self = this.set("FrameCaptureSettings", js.undefined)
+    @scala.inline
+    def setH264Settings(value: H264Settings): Self = this.set("H264Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH264Settings: Self = this.set("H264Settings", js.undefined)
+    @scala.inline
+    def setH265Settings(value: H265Settings): Self = this.set("H265Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH265Settings: Self = this.set("H265Settings", js.undefined)
+  }
+  
 }
 

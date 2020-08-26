@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait XHR extends js.Object {
   def fire(name: String): js.Object = js.native
+  def fire(name: String, args: js.UndefOr[scala.Nothing], bubble: Boolean): js.Object = js.native
   def fire(name: String, args: js.Object): js.Object = js.native
   def fire(name: String, args: js.Object, bubble: Boolean): js.Object = js.native
   def hasEventListeners(name: String): Boolean = js.native
   def off(): js.Object = js.native
+  def off(name: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Object = js.native
   def off(name: String): js.Object = js.native
   def off(name: String, callback: js.Function0[Unit]): js.Object = js.native
   def on(name: String, callback: js.Function0[Unit]): js.Object = js.native

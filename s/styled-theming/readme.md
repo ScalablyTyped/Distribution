@@ -11,8 +11,8 @@ Create themes for your app using styled-components
 | Full name          | styled-theming |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 585774 |
+| # dependents       | 41 |
+| # downloads        | 634735 |
 | # stars            | 0 |
 
 ## Links

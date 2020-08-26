@@ -1,7 +1,9 @@
 package typings.ionicReact
 
-import typings.ionicReact.anon.IonRouterOutletPickHTMLAt
+import typings.ionicCore.componentsMod.JSX.IonIcon
+import typings.ionicReact.anon.IonRouterOutletsetRefvalH
 import typings.ionicReact.anon.IonTabBarPickHTMLAttribut
+import typings.ionicReact.anon.IonTabButtononIonTabButto
 import typings.ionicReact.anon.PickHTMLAttributesHTMLIon
 import typings.ionicReact.anon.PickIonBackButtondisabled
 import typings.ionicReact.ionicReactPropsMod.IonicReactProps
@@ -17,9 +19,10 @@ import scala.scalajs.js.annotation._
 object innerProxiesMod extends js.Object {
   val IonBackButtonInner: ForwardRefExoticComponent[PickIonBackButtondisabled] = js.native
   val IonIconInner: ForwardRefExoticComponent[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IoniconsJSX.IonIcon */ js.Any) with PickHTMLAttributesHTMLIon with IonicReactProps with RefAttributes[HTMLIonIconElement]
+    IonIcon with PickHTMLAttributesHTMLIon with IonicReactProps with RefAttributes[HTMLIonIconElement]
   ] = js.native
-  val IonRouterOutletInner: ForwardRefExoticComponent[IonRouterOutletPickHTMLAt] = js.native
+  val IonRouterOutletInner: ForwardRefExoticComponent[IonRouterOutletsetRefvalH] = js.native
   val IonTabBarInner: ForwardRefExoticComponent[IonTabBarPickHTMLAttribut] = js.native
+  val IonTabButtonInner: ForwardRefExoticComponent[IonTabButtononIonTabButto] = js.native
 }
 

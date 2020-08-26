@@ -12,7 +12,7 @@ Removes the need to move the map to be able to see the content of a L.Popup
 | Keywords           | leaflet, popup |
 | # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 251126 |
+| # downloads        | 260492 |
 | # stars            | 0 |
 
 ## Links

@@ -32,12 +32,34 @@ trait SchemaDocumentationRule extends js.Object {
 
 object SchemaDocumentationRule {
   @scala.inline
-  def apply(deprecationDescription: String = null, description: String = null, selector: String = null): SchemaDocumentationRule = {
+  def apply(): SchemaDocumentationRule = {
     val __obj = js.Dynamic.literal()
-    if (deprecationDescription != null) __obj.updateDynamic("deprecationDescription")(deprecationDescription.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDocumentationRule]
   }
+  @scala.inline
+  implicit class SchemaDocumentationRuleOps[Self <: SchemaDocumentationRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeprecationDescription(value: String): Self = this.set("deprecationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecationDescription: Self = this.set("deprecationDescription", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+  }
+  
 }
 

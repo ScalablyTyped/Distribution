@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Basically a very large random number (128-bit) which means the probability of creating two that clash is vanishingly small.
-  GUIDs are used as the unique identifiers for Entities.
+  * GUIDs are used as the unique identifiers for Entities.
   */
 @JSGlobal("pc.guid")
 @js.native

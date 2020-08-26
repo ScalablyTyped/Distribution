@@ -38,24 +38,56 @@ trait SimulationJobSummary extends js.Object {
 
 object SimulationJobSummary {
   @scala.inline
-  def apply(
-    arn: Arn = null,
-    dataSourceNames: DataSourceNames = null,
-    lastUpdatedAt: LastUpdatedAt = null,
-    name: Name = null,
-    robotApplicationNames: RobotApplicationNames = null,
-    simulationApplicationNames: SimulationApplicationNames = null,
-    status: SimulationJobStatus = null
-  ): SimulationJobSummary = {
+  def apply(): SimulationJobSummary = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (dataSourceNames != null) __obj.updateDynamic("dataSourceNames")(dataSourceNames.asInstanceOf[js.Any])
-    if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (robotApplicationNames != null) __obj.updateDynamic("robotApplicationNames")(robotApplicationNames.asInstanceOf[js.Any])
-    if (simulationApplicationNames != null) __obj.updateDynamic("simulationApplicationNames")(simulationApplicationNames.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimulationJobSummary]
   }
+  @scala.inline
+  implicit class SimulationJobSummaryOps[Self <: SimulationJobSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDataSourceNamesVarargs(value: Name*): Self = this.set("dataSourceNames", js.Array(value :_*))
+    @scala.inline
+    def setDataSourceNames(value: DataSourceNames): Self = this.set("dataSourceNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceNames: Self = this.set("dataSourceNames", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: LastUpdatedAt): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRobotApplicationNamesVarargs(value: Name*): Self = this.set("robotApplicationNames", js.Array(value :_*))
+    @scala.inline
+    def setRobotApplicationNames(value: RobotApplicationNames): Self = this.set("robotApplicationNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRobotApplicationNames: Self = this.set("robotApplicationNames", js.undefined)
+    @scala.inline
+    def setSimulationApplicationNamesVarargs(value: Name*): Self = this.set("simulationApplicationNames", js.Array(value :_*))
+    @scala.inline
+    def setSimulationApplicationNames(value: SimulationApplicationNames): Self = this.set("simulationApplicationNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimulationApplicationNames: Self = this.set("simulationApplicationNames", js.undefined)
+    @scala.inline
+    def setStatus(value: SimulationJobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

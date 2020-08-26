@@ -11,27 +11,28 @@ import scala.scalajs.js.annotation._
   * 开发者可以通过小程序管理后台左侧菜单“反馈管理”页面查看相关打印日志。
   * 基础库默认会把 App、Page 的生命周期函数和 wx 命名空间下的函数调用写入日志。
   */
+@js.native
 trait LogManager extends js.Object {
   /**
     * 写debug日志
     * @param args 要记录的日志内容
     */
-  def debug(args: js.Any*): Unit
+  def debug(args: js.Any*): Unit = js.native
   /**
     * 写info日志
     * @param args 要记录的日志内容
     */
-  def info(args: js.Any*): Unit
+  def info(args: js.Any*): Unit = js.native
   /**
     * 写log日志
     * @param args 要记录的日志内容
     */
-  def log(args: js.Any*): Unit
+  def log(args: js.Any*): Unit = js.native
   /**
     * 写warn日志
     * @param args 要记录的日志内容
     */
-  def warn(args: js.Any*): Unit
+  def warn(args: js.Any*): Unit = js.native
 }
 
 object LogManager {
@@ -45,5 +46,26 @@ object LogManager {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), info = js.Any.fromFunction1(info), log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
     __obj.asInstanceOf[LogManager]
   }
+  @scala.inline
+  implicit class LogManagerOps[Self <: LogManager] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebug(value: /* repeated */ js.Any => Unit): Self = this.set("debug", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInfo(value: /* repeated */ js.Any => Unit): Self = this.set("info", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLog(value: /* repeated */ js.Any => Unit): Self = this.set("log", js.Any.fromFunction1(value))
+    @scala.inline
+    def setWarn(value: /* repeated */ js.Any => Unit): Self = this.set("warn", js.Any.fromFunction1(value))
+  }
+  
 }
 

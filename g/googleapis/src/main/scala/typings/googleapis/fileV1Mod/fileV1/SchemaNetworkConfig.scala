@@ -39,18 +39,42 @@ trait SchemaNetworkConfig extends js.Object {
 
 object SchemaNetworkConfig {
   @scala.inline
-  def apply(
-    ipAddresses: js.Array[String] = null,
-    modes: js.Array[String] = null,
-    network: String = null,
-    reservedIpRange: String = null
-  ): SchemaNetworkConfig = {
+  def apply(): SchemaNetworkConfig = {
     val __obj = js.Dynamic.literal()
-    if (ipAddresses != null) __obj.updateDynamic("ipAddresses")(ipAddresses.asInstanceOf[js.Any])
-    if (modes != null) __obj.updateDynamic("modes")(modes.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (reservedIpRange != null) __obj.updateDynamic("reservedIpRange")(reservedIpRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkConfig]
   }
+  @scala.inline
+  implicit class SchemaNetworkConfigOps[Self <: SchemaNetworkConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpAddressesVarargs(value: String*): Self = this.set("ipAddresses", js.Array(value :_*))
+    @scala.inline
+    def setIpAddresses(value: js.Array[String]): Self = this.set("ipAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddresses: Self = this.set("ipAddresses", js.undefined)
+    @scala.inline
+    def setModesVarargs(value: String*): Self = this.set("modes", js.Array(value :_*))
+    @scala.inline
+    def setModes(value: js.Array[String]): Self = this.set("modes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModes: Self = this.set("modes", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setReservedIpRange(value: String): Self = this.set("reservedIpRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedIpRange: Self = this.set("reservedIpRange", js.undefined)
+  }
+  
 }
 

@@ -10,41 +10,42 @@ import scala.scalajs.js.annotation._
   * enables a {@link SpreadsheetView} to split the view.
   * @deprecated Deprecated
   */
+@js.native
 trait XViewSplitable extends XInterface {
   /**
     * returns `TRUE` if the view is split into individual panes.
     *
     * Only one of {@link XViewSplitable.getIsWindowSplit()} and {@link XViewFreezable.hasFrozenPanes()} can be `TRUE` .
     */
-  val IsWindowSplit: Boolean
+  val IsWindowSplit: Boolean = js.native
   /** returns the column before which the view is split. */
-  val SplitColumn: Double
+  val SplitColumn: Double = js.native
   /** returns the horizontal position in pixels where the view is split. */
-  val SplitHorizontal: Double
+  val SplitHorizontal: Double = js.native
   /** returns the row before which the view is split. */
-  val SplitRow: Double
+  val SplitRow: Double = js.native
   /** returns the vertical position in pixels where the view is split. */
-  val SplitVertical: Double
+  val SplitVertical: Double = js.native
   /**
     * returns `TRUE` if the view is split into individual panes.
     *
     * Only one of {@link XViewSplitable.getIsWindowSplit()} and {@link XViewFreezable.hasFrozenPanes()} can be `TRUE` .
     */
-  def getIsWindowSplit(): Boolean
+  def getIsWindowSplit(): Boolean = js.native
   /** returns the column before which the view is split. */
-  def getSplitColumn(): Double
+  def getSplitColumn(): Double = js.native
   /** returns the horizontal position in pixels where the view is split. */
-  def getSplitHorizontal(): Double
+  def getSplitHorizontal(): Double = js.native
   /** returns the row before which the view is split. */
-  def getSplitRow(): Double
+  def getSplitRow(): Double = js.native
   /** returns the vertical position in pixels where the view is split. */
-  def getSplitVertical(): Double
+  def getSplitVertical(): Double = js.native
   /**
     * splits the view at the specified position.
     *
     * To split only horizontally, specify **nPixelY** as 0. To split only vertically, specify **nPixelX** as 0.
     */
-  def splitAtPosition(nPixelX: Double, nPixelY: Double): Unit
+  def splitAtPosition(nPixelX: Double, nPixelY: Double): Unit = js.native
 }
 
 object XViewSplitable {
@@ -68,5 +69,40 @@ object XViewSplitable {
     val __obj = js.Dynamic.literal(IsWindowSplit = IsWindowSplit.asInstanceOf[js.Any], SplitColumn = SplitColumn.asInstanceOf[js.Any], SplitHorizontal = SplitHorizontal.asInstanceOf[js.Any], SplitRow = SplitRow.asInstanceOf[js.Any], SplitVertical = SplitVertical.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getIsWindowSplit = js.Any.fromFunction0(getIsWindowSplit), getSplitColumn = js.Any.fromFunction0(getSplitColumn), getSplitHorizontal = js.Any.fromFunction0(getSplitHorizontal), getSplitRow = js.Any.fromFunction0(getSplitRow), getSplitVertical = js.Any.fromFunction0(getSplitVertical), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), splitAtPosition = js.Any.fromFunction2(splitAtPosition))
     __obj.asInstanceOf[XViewSplitable]
   }
+  @scala.inline
+  implicit class XViewSplitableOps[Self <: XViewSplitable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsWindowSplit(value: Boolean): Self = this.set("IsWindowSplit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSplitColumn(value: Double): Self = this.set("SplitColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSplitHorizontal(value: Double): Self = this.set("SplitHorizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSplitRow(value: Double): Self = this.set("SplitRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSplitVertical(value: Double): Self = this.set("SplitVertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetIsWindowSplit(value: () => Boolean): Self = this.set("getIsWindowSplit", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetSplitColumn(value: () => Double): Self = this.set("getSplitColumn", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetSplitHorizontal(value: () => Double): Self = this.set("getSplitHorizontal", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetSplitRow(value: () => Double): Self = this.set("getSplitRow", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetSplitVertical(value: () => Double): Self = this.set("getSplitVertical", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSplitAtPosition(value: (Double, Double) => Unit): Self = this.set("splitAtPosition", js.Any.fromFunction2(value))
+  }
+  
 }
 

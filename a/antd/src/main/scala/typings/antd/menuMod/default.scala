@@ -1,6 +1,7 @@
 package typings.antd.menuMod
 
 import typings.antd.anon.TypeofItem
+import typings.antd.anon.TypeofItemGroup
 import typings.antd.anon.TypeofSubMenu
 import typings.rcMenu.dividerMod.DividerProps
 import typings.react.mod.FC
@@ -18,7 +19,7 @@ class default () extends Menu
 object default extends js.Object {
   var Divider: FC[DividerProps] = js.native
   var Item: TypeofItem = js.native
-  var ItemGroup: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemGroup */ js.Any = js.native
+  var ItemGroup: TypeofItemGroup = js.native
   var SubMenu: TypeofSubMenu = js.native
 }
 

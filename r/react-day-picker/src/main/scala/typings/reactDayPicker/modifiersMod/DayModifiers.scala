@@ -5,24 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DayModifiers
   extends /* other */ StringDictionary[js.UndefOr[Boolean]] {
-  var outside: js.UndefOr[Boolean] = js.undefined
-  var today: js.UndefOr[Boolean] = js.undefined
+  var outside: js.UndefOr[Boolean] = js.native
+  var today: js.UndefOr[Boolean] = js.native
 }
 
 object DayModifiers {
   @scala.inline
-  def apply(
-    StringDictionary: /* integration */ StringDictionary[js.UndefOr[Boolean]] = null,
-    outside: js.UndefOr[Boolean] = js.undefined,
-    today: js.UndefOr[Boolean] = js.undefined
-  ): DayModifiers = {
+  def apply(): DayModifiers = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(outside)) __obj.updateDynamic("outside")(outside.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(today)) __obj.updateDynamic("today")(today.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DayModifiers]
   }
+  @scala.inline
+  implicit class DayModifiersOps[Self <: DayModifiers] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOutside(value: Boolean): Self = this.set("outside", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutside: Self = this.set("outside", js.undefined)
+    @scala.inline
+    def setToday(value: Boolean): Self = this.set("today", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToday: Self = this.set("today", js.undefined)
+  }
+  
 }
 

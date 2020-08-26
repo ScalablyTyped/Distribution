@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "csv2json"
-version := "1.4-dt-20190813Z-334010"
-scalaVersion := "2.13.2"
+version := "1.4-dt-20190813Z-239886"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20200515Z-828fde",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "pumpify" % "1.4-dt-20181017Z-0aab50",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20200515Z-193d3f",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "pumpify" % "1.4-dt-20181017Z-262a2f",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

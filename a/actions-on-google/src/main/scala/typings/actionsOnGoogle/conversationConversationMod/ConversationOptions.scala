@@ -6,31 +6,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConversationOptions[TUserStorage] extends js.Object {
   /** @public */
-  var headers: js.UndefOr[Headers] = js.undefined
+  var headers: js.UndefOr[Headers] = js.native
   /** @public */
-  var init: js.UndefOr[ConversationOptionsInit[js.Object, TUserStorage]] = js.undefined
+  var init: js.UndefOr[ConversationOptionsInit[js.Object, TUserStorage]] = js.native
   /** @public */
-  var ordersv3: js.UndefOr[Boolean] = js.undefined
+  var ordersv3: js.UndefOr[Boolean] = js.native
   /** @public */
-  var request: js.UndefOr[GoogleActionsV2AppRequest] = js.undefined
+  var request: js.UndefOr[GoogleActionsV2AppRequest] = js.native
 }
 
 object ConversationOptions {
   @scala.inline
-  def apply[TUserStorage](
-    headers: Headers = null,
-    init: ConversationOptionsInit[js.Object, TUserStorage] = null,
-    ordersv3: js.UndefOr[Boolean] = js.undefined,
-    request: GoogleActionsV2AppRequest = null
-  ): ConversationOptions[TUserStorage] = {
+  def apply[TUserStorage](): ConversationOptions[TUserStorage] = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordersv3)) __obj.updateDynamic("ordersv3")(ordersv3.get.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConversationOptions[TUserStorage]]
   }
+  @scala.inline
+  implicit class ConversationOptionsOps[Self <: ConversationOptions[_], TUserStorage] (val x: Self with ConversationOptions[TUserStorage]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setInit(value: ConversationOptionsInit[js.Object, TUserStorage]): Self = this.set("init", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInit: Self = this.set("init", js.undefined)
+    @scala.inline
+    def setOrdersv3(value: Boolean): Self = this.set("ordersv3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrdersv3: Self = this.set("ordersv3", js.undefined)
+    @scala.inline
+    def setRequest(value: GoogleActionsV2AppRequest): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+  }
+  
 }
 

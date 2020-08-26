@@ -11,8 +11,8 @@ UUID check for Node and the browser
 | Full name          | is-uuid |
 | Keywords           | UUID, v1, v2, v3, v4, v5, nil, regex |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 501757 |
+| # dependents       | 22 |
+| # downloads        | 526262 |
 | # stars            | 0 |
 
 ## Links

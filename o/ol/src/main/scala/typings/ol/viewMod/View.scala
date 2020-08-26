@@ -43,11 +43,27 @@ trait View
   def centerOn(coordinate: Coordinate, size: Size, position: Pixel): Unit = js.native
   def centerOnInternal(coordinate: Coordinate, size: Size, position: Pixel): Unit = js.native
   def endInteraction(): Unit = js.native
+  def endInteraction(
+    opt_duration: js.UndefOr[scala.Nothing],
+    opt_resolutionDirection: js.UndefOr[scala.Nothing],
+    opt_anchor: Coordinate
+  ): Unit = js.native
+  def endInteraction(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double): Unit = js.native
+  def endInteraction(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
   def endInteraction(opt_duration: Double): Unit = js.native
+  def endInteraction(opt_duration: Double, opt_resolutionDirection: js.UndefOr[scala.Nothing], opt_anchor: Coordinate): Unit = js.native
   def endInteraction(opt_duration: Double, opt_resolutionDirection: Double): Unit = js.native
   def endInteraction(opt_duration: Double, opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
   def endInteractionInternal(): Unit = js.native
+  def endInteractionInternal(
+    opt_duration: js.UndefOr[scala.Nothing],
+    opt_resolutionDirection: js.UndefOr[scala.Nothing],
+    opt_anchor: Coordinate
+  ): Unit = js.native
+  def endInteractionInternal(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double): Unit = js.native
+  def endInteractionInternal(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
   def endInteractionInternal(opt_duration: Double): Unit = js.native
+  def endInteractionInternal(opt_duration: Double, opt_resolutionDirection: js.UndefOr[scala.Nothing], opt_anchor: Coordinate): Unit = js.native
   def endInteractionInternal(opt_duration: Double, opt_resolutionDirection: Double): Unit = js.native
   def endInteractionInternal(opt_duration: Double, opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
   def fit(geometryOrExtent: Extent): Unit = js.native
@@ -61,12 +77,15 @@ trait View
   def getCenterInternal(): Coordinate = js.native
   def getConstrainResolution(): Boolean = js.native
   def getConstrainedCenter(): Coordinate = js.native
+  def getConstrainedCenter(targetCenter: js.UndefOr[scala.Nothing], opt_targetResolution: Double): Coordinate = js.native
   def getConstrainedCenter(targetCenter: Coordinate): Coordinate = js.native
   def getConstrainedCenter(targetCenter: Coordinate, opt_targetResolution: Double): Coordinate = js.native
   def getConstrainedResolution(): Double = js.native
+  def getConstrainedResolution(targetResolution: js.UndefOr[scala.Nothing], opt_direction: Double): Double = js.native
   def getConstrainedResolution(targetResolution: Double): Double = js.native
   def getConstrainedResolution(targetResolution: Double, opt_direction: Double): Double = js.native
   def getConstrainedZoom(): Double = js.native
+  def getConstrainedZoom(targetZoom: js.UndefOr[scala.Nothing], opt_direction: Double): Double = js.native
   def getConstrainedZoom(targetZoom: Double): Double = js.native
   def getConstrainedZoom(targetZoom: Double, opt_direction: Double): Double = js.native
   def getConstraints(): Constraints = js.native
@@ -108,7 +127,15 @@ trait View
   @JSName("once")
   def once_changerotation(`type`: changeColonrotation, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   def resolveConstraints(): Unit = js.native
+  def resolveConstraints(
+    opt_duration: js.UndefOr[scala.Nothing],
+    opt_resolutionDirection: js.UndefOr[scala.Nothing],
+    opt_anchor: Coordinate
+  ): Unit = js.native
+  def resolveConstraints(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double): Unit = js.native
+  def resolveConstraints(opt_duration: js.UndefOr[scala.Nothing], opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
   def resolveConstraints(opt_duration: Double): Unit = js.native
+  def resolveConstraints(opt_duration: Double, opt_resolutionDirection: js.UndefOr[scala.Nothing], opt_anchor: Coordinate): Unit = js.native
   def resolveConstraints(opt_duration: Double, opt_resolutionDirection: Double): Unit = js.native
   def resolveConstraints(opt_duration: Double, opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
   def setCenter(): Unit = js.native

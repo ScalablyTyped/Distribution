@@ -1,6 +1,5 @@
 package typings.ckeditor.global.CKEDITOR.ui
 
-import typings.ckeditor.CKEDITOR.editor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,10 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CKEDITOR.ui.richCombo")
 @js.native
 class richCombo ()
-  extends typings.ckeditor.CKEDITOR.ui.richCombo {
-  /* CompleteClass */
-  override def render(editor: editor, output: js.Array[String]): Unit = js.native
-}
+  extends typings.ckeditor.CKEDITOR.ui.richCombo
 
 /* static members */
 @JSGlobal("CKEDITOR.ui.richCombo")

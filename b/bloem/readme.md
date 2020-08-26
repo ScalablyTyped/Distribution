@@ -12,7 +12,7 @@ Bloom Filter using the FNV hash function
 | Keywords           | bloom filter, scalable bloom filters |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 49280 |
+| # downloads        | 47592 |
 | # stars            | 1 |
 
 ## Links

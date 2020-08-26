@@ -32,9 +32,9 @@ trait InstanceArgs extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * launch script to configure server with additional user data
     */
@@ -43,21 +43,44 @@ trait InstanceArgs extends js.Object {
 
 object InstanceArgs {
   @scala.inline
-  def apply(
-    availabilityZone: Input[String],
-    blueprintId: Input[String],
-    bundleId: Input[String],
-    keyPairName: Input[String] = null,
-    name: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    userData: Input[String] = null
-  ): InstanceArgs = {
+  def apply(availabilityZone: Input[String], blueprintId: Input[String], bundleId: Input[String]): InstanceArgs = {
     val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], blueprintId = blueprintId.asInstanceOf[js.Any], bundleId = bundleId.asInstanceOf[js.Any])
-    if (keyPairName != null) __obj.updateDynamic("keyPairName")(keyPairName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceArgs]
   }
+  @scala.inline
+  implicit class InstanceArgsOps[Self <: InstanceArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: Input[String]): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlueprintId(value: Input[String]): Self = this.set("blueprintId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBundleId(value: Input[String]): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeyPairName(value: Input[String]): Self = this.set("keyPairName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPairName: Self = this.set("keyPairName", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUserData(value: Input[String]): Self = this.set("userData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("userData", js.undefined)
+  }
+  
 }
 

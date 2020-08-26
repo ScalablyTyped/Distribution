@@ -72,6 +72,7 @@ trait Context extends js.Object {
     * @returns ContextSizeResponse
     */
   def isSizeBetween(): ContextSizeResponse | Null = js.native
+  def isSizeBetween(minSize: js.UndefOr[scala.Nothing], maxSize: Double): ContextSizeResponse | Null = js.native
   def isSizeBetween(minSize: Double): ContextSizeResponse | Null = js.native
   def isSizeBetween(minSize: Double, maxSize: Double): ContextSizeResponse | Null = js.native
   /**

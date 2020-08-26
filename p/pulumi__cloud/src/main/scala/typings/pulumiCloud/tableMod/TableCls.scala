@@ -19,11 +19,11 @@ class TableCls protected () extends Table {
     */
   def this(name: String) = this()
   def this(name: String, primaryKey: Input[String]) = this()
-  def this(name: String, primaryKey: Input[String], primaryKeyType: Input[PrimaryKeyType]) = this()
+  def this(name: String, primaryKey: js.UndefOr[Input[String]], primaryKeyType: Input[PrimaryKeyType]) = this()
   def this(
     name: String,
-    primaryKey: Input[String],
-    primaryKeyType: Input[PrimaryKeyType],
+    primaryKey: js.UndefOr[Input[String]],
+    primaryKeyType: js.UndefOr[Input[PrimaryKeyType]],
     opts: ResourceOptions
   ) = this()
 }

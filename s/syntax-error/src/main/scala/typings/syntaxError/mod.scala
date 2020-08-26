@@ -18,6 +18,7 @@ object mod extends js.Object {
     * that match the most recent Node versions.
     */
   def apply(src: js.Any): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
+  def apply(src: js.Any, file: js.UndefOr[scala.Nothing], opts: Options): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
   def apply(src: js.Any, file: String): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
   def apply(src: js.Any, file: String, opts: Options): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
 }

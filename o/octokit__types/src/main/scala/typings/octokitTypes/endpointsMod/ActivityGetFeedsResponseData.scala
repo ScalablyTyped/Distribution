@@ -5,16 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActivityGetFeedsResponseData extends js.Object {
-  var _links: Currentuser
-  var current_user_actor_url: String
-  var current_user_organization_url: String
-  var current_user_organization_urls: js.Array[String]
-  var current_user_public_url: String
-  var current_user_url: String
-  var security_advisories_url: String
-  var timeline_url: String
-  var user_url: String
+  var _links: Currentuser = js.native
+  var current_user_actor_url: String = js.native
+  var current_user_organization_url: String = js.native
+  var current_user_organization_urls: js.Array[String] = js.native
+  var current_user_public_url: String = js.native
+  var current_user_url: String = js.native
+  var security_advisories_url: String = js.native
+  var timeline_url: String = js.native
+  var user_url: String = js.native
 }
 
 object ActivityGetFeedsResponseData {
@@ -33,5 +34,38 @@ object ActivityGetFeedsResponseData {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], current_user_actor_url = current_user_actor_url.asInstanceOf[js.Any], current_user_organization_url = current_user_organization_url.asInstanceOf[js.Any], current_user_organization_urls = current_user_organization_urls.asInstanceOf[js.Any], current_user_public_url = current_user_public_url.asInstanceOf[js.Any], current_user_url = current_user_url.asInstanceOf[js.Any], security_advisories_url = security_advisories_url.asInstanceOf[js.Any], timeline_url = timeline_url.asInstanceOf[js.Any], user_url = user_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityGetFeedsResponseData]
   }
+  @scala.inline
+  implicit class ActivityGetFeedsResponseDataOps[Self <: ActivityGetFeedsResponseData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_links(value: Currentuser): Self = this.set("_links", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrent_user_actor_url(value: String): Self = this.set("current_user_actor_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrent_user_organization_url(value: String): Self = this.set("current_user_organization_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrent_user_organization_urlsVarargs(value: String*): Self = this.set("current_user_organization_urls", js.Array(value :_*))
+    @scala.inline
+    def setCurrent_user_organization_urls(value: js.Array[String]): Self = this.set("current_user_organization_urls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrent_user_public_url(value: String): Self = this.set("current_user_public_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrent_user_url(value: String): Self = this.set("current_user_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurity_advisories_url(value: String): Self = this.set("security_advisories_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeline_url(value: String): Self = this.set("timeline_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUser_url(value: String): Self = this.set("user_url", value.asInstanceOf[js.Any])
+  }
+  
 }
 

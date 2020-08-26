@@ -22,7 +22,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/server-call.ServerSurfaceCall & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectWritable<ResponseType> & {  request  :RequestType | null} */
+/* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/server-call.ServerSurfaceCall & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectWritable<ResponseType> & {  request :RequestType | null} */
 @js.native
 trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   var _writev: js.UndefOr[
@@ -34,6 +34,7 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   ] = js.native
   var cancelled: Boolean = js.native
   var destroyed: Boolean = js.native
+  val metadata: Metadata = js.native
   var request: RequestType | Null = js.native
   val writable: Boolean = js.native
   val writableCorked: Double = js.native
@@ -97,9 +98,11 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def end(cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: ResponseType): Unit = js.native
   def end(chunk: ResponseType, cb: js.Function): Unit = js.native
+  def end(chunk: ResponseType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
   def end(chunk: ResponseType, encoding: js.Any): Unit = js.native
   def end(chunk: ResponseType, encoding: js.Any, cb: js.Function): Unit = js.native
   def end(chunk: js.Any with ResponseType, cb: js.Function): Unit = js.native
+  def end(chunk: js.Any with ResponseType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
   def end(chunk: js.Any with ResponseType, encoding: js.Any): Unit = js.native
   def end(chunk: js.Any with ResponseType, encoding: js.Any, cb: js.Function): Unit = js.native
   def end(chunk: (js.Any with ResponseType) | js.Any): Unit = js.native
@@ -110,6 +113,7 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def end(data: String, cb: js.Function0[Unit]): Unit = js.native
   def end(data: Uint8Array): Unit = js.native
   def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   def eventNames(): js.Array[String | js.Symbol] = js.native
@@ -210,8 +214,10 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
   def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   def write(chunk: ResponseType): Boolean = js.native
   def write(chunk: ResponseType, cb: js.Function): Boolean = js.native
+  def write(chunk: ResponseType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
   def write(chunk: ResponseType, encoding: js.Any): Boolean = js.native
   def write(chunk: ResponseType, encoding: js.Any, cb: js.Function): Boolean = js.native
+  def write(chunk: js.Any with ResponseType, encoding: js.UndefOr[scala.Nothing], cb: WriteCallback): Boolean = js.native
   def write(chunk: js.Any with ResponseType, encoding: js.Any): Boolean = js.native
   def write(chunk: js.Any with ResponseType, encoding: js.Any, cb: WriteCallback): Boolean = js.native
   def write(chunk: (js.Any with ResponseType) | js.Any): Boolean = js.native
@@ -224,6 +230,11 @@ trait ServerWritableStream[RequestType, ResponseType] extends js.Object {
     chunk: js.Any,
     encoding: BufferEncoding,
     cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  ): Boolean = js.native
+  def write(
+    str: String,
+    encoding: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
   ): Boolean = js.native
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native

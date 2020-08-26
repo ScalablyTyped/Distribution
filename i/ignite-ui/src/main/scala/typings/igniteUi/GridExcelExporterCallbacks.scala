@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridExcelExporterCallbacks
   extends /**
   * Option for JSONPDataSourceSettings
@@ -21,7 +22,7 @@ trait GridExcelExporterCallbacks
     * Use args.grid to get reference to the igGrid widget.
     *
     */
-  var cellExported: js.UndefOr[js.Function] = js.undefined
+  var cellExported: js.UndefOr[js.Function] = js.native
   /**
     * Cancel="true" A function to call before the cell is exported.
     * Function takes arguments sender and args.
@@ -34,13 +35,13 @@ trait GridExcelExporterCallbacks
     * Return false in order to cancel exporting the cell.
     *
     */
-  var cellExporting: js.UndefOr[js.Function] = js.undefined
+  var cellExporting: js.UndefOr[js.Function] = js.native
   /**
     * A function to call when exporting fails.
     * Use error to obtain reference of the error object.
     *
     */
-  var error: js.UndefOr[js.Function] = js.undefined
+  var error: js.UndefOr[js.Function] = js.native
   /**
     * A function to call before the Excel file is downloaded.
     * Function takes arguments sender and args.
@@ -50,7 +51,7 @@ trait GridExcelExporterCallbacks
     * Return false in order to cancel downloading the file.
     *
     */
-  var exportEnding: js.UndefOr[js.Function] = js.undefined
+  var exportEnding: js.UndefOr[js.Function] = js.native
   /**
     * Cancel="true" A function to call before exporting starts.
     * Function takes arguments sender and args.
@@ -58,7 +59,7 @@ trait GridExcelExporterCallbacks
     * Return false in order to cancel exporting.
     *
     */
-  var exportStarting: js.UndefOr[js.Function] = js.undefined
+  var exportStarting: js.UndefOr[js.Function] = js.native
   /**
     * A function to call after a header cell is exported.
     * Function takes arguments sender and args.
@@ -67,7 +68,7 @@ trait GridExcelExporterCallbacks
     * Use args.columnIndex to get the igGrid column index.
     *
     */
-  var headerCellExported: js.UndefOr[js.Function] = js.undefined
+  var headerCellExported: js.UndefOr[js.Function] = js.native
   /**
     * A function to call before the header cell is exported.
     * Function takes arguments sender and args.
@@ -77,7 +78,7 @@ trait GridExcelExporterCallbacks
     * Return false in order to cancel exporting the cell.
     *
     */
-  var headerCellExporting: js.UndefOr[js.Function] = js.undefined
+  var headerCellExporting: js.UndefOr[js.Function] = js.native
   /**
     * Cancel="true" A function to call after the row is exported.
     * Function takes arguments sender and args.
@@ -88,7 +89,7 @@ trait GridExcelExporterCallbacks
     * Note: When exporting igHierarchicalGrid this callback is available only for the root grid rows.
     *
     */
-  var rowExported: js.UndefOr[js.Function] = js.undefined
+  var rowExported: js.UndefOr[js.Function] = js.native
   /**
     * A function to call before the row is exported.
     * Function takes arguments sender and args.
@@ -100,13 +101,13 @@ trait GridExcelExporterCallbacks
     * Note: When exporting igHierarchicalGrid this callback is available only for the root grid rows.
     *
     */
-  var rowExporting: js.UndefOr[js.Function] = js.undefined
+  var rowExporting: js.UndefOr[js.Function] = js.native
   /**
     * A function to call when saving the file succeeds.
     * Use data to get the reference of saved object.
     *
     */
-  var success: js.UndefOr[js.Function] = js.undefined
+  var success: js.UndefOr[js.Function] = js.native
   /**
     * A function to call after the summary is exported.
     * Function takes arguments sender and args.
@@ -117,7 +118,7 @@ trait GridExcelExporterCallbacks
     * Use args.xlRowIndex to get the Excel worksheet row index.
     *
     */
-  var summaryExported: js.UndefOr[js.Function] = js.undefined
+  var summaryExported: js.UndefOr[js.Function] = js.native
   /**
     * A function to call before the summary is exported.
     * Function takes arguments sender and args.
@@ -129,41 +130,75 @@ trait GridExcelExporterCallbacks
     * Return false in order to cancel exporting the summary.
     *
     */
-  var summaryExporting: js.UndefOr[js.Function] = js.undefined
+  var summaryExporting: js.UndefOr[js.Function] = js.native
 }
 
 object GridExcelExporterCallbacks {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    cellExported: js.Function = null,
-    cellExporting: js.Function = null,
-    error: js.Function = null,
-    exportEnding: js.Function = null,
-    exportStarting: js.Function = null,
-    headerCellExported: js.Function = null,
-    headerCellExporting: js.Function = null,
-    rowExported: js.Function = null,
-    rowExporting: js.Function = null,
-    success: js.Function = null,
-    summaryExported: js.Function = null,
-    summaryExporting: js.Function = null
-  ): GridExcelExporterCallbacks = {
+  def apply(): GridExcelExporterCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cellExported != null) __obj.updateDynamic("cellExported")(cellExported.asInstanceOf[js.Any])
-    if (cellExporting != null) __obj.updateDynamic("cellExporting")(cellExporting.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (exportEnding != null) __obj.updateDynamic("exportEnding")(exportEnding.asInstanceOf[js.Any])
-    if (exportStarting != null) __obj.updateDynamic("exportStarting")(exportStarting.asInstanceOf[js.Any])
-    if (headerCellExported != null) __obj.updateDynamic("headerCellExported")(headerCellExported.asInstanceOf[js.Any])
-    if (headerCellExporting != null) __obj.updateDynamic("headerCellExporting")(headerCellExporting.asInstanceOf[js.Any])
-    if (rowExported != null) __obj.updateDynamic("rowExported")(rowExported.asInstanceOf[js.Any])
-    if (rowExporting != null) __obj.updateDynamic("rowExporting")(rowExporting.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (summaryExported != null) __obj.updateDynamic("summaryExported")(summaryExported.asInstanceOf[js.Any])
-    if (summaryExporting != null) __obj.updateDynamic("summaryExporting")(summaryExporting.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridExcelExporterCallbacks]
   }
+  @scala.inline
+  implicit class GridExcelExporterCallbacksOps[Self <: GridExcelExporterCallbacks] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCellExported(value: js.Function): Self = this.set("cellExported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellExported: Self = this.set("cellExported", js.undefined)
+    @scala.inline
+    def setCellExporting(value: js.Function): Self = this.set("cellExporting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellExporting: Self = this.set("cellExporting", js.undefined)
+    @scala.inline
+    def setError(value: js.Function): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setExportEnding(value: js.Function): Self = this.set("exportEnding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportEnding: Self = this.set("exportEnding", js.undefined)
+    @scala.inline
+    def setExportStarting(value: js.Function): Self = this.set("exportStarting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportStarting: Self = this.set("exportStarting", js.undefined)
+    @scala.inline
+    def setHeaderCellExported(value: js.Function): Self = this.set("headerCellExported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderCellExported: Self = this.set("headerCellExported", js.undefined)
+    @scala.inline
+    def setHeaderCellExporting(value: js.Function): Self = this.set("headerCellExporting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderCellExporting: Self = this.set("headerCellExporting", js.undefined)
+    @scala.inline
+    def setRowExported(value: js.Function): Self = this.set("rowExported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowExported: Self = this.set("rowExported", js.undefined)
+    @scala.inline
+    def setRowExporting(value: js.Function): Self = this.set("rowExporting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowExporting: Self = this.set("rowExporting", js.undefined)
+    @scala.inline
+    def setSuccess(value: js.Function): Self = this.set("success", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+    @scala.inline
+    def setSummaryExported(value: js.Function): Self = this.set("summaryExported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaryExported: Self = this.set("summaryExported", js.undefined)
+    @scala.inline
+    def setSummaryExporting(value: js.Function): Self = this.set("summaryExporting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaryExporting: Self = this.set("summaryExporting", js.undefined)
+  }
+  
 }
 

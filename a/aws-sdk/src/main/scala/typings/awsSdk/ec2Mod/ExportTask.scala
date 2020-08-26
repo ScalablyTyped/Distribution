@@ -38,24 +38,52 @@ trait ExportTask extends js.Object {
 
 object ExportTask {
   @scala.inline
-  def apply(
-    Description: String = null,
-    ExportTaskId: String = null,
-    ExportToS3Task: ExportToS3Task = null,
-    InstanceExportDetails: InstanceExportDetails = null,
-    State: ExportTaskState = null,
-    StatusMessage: String = null,
-    Tags: TagList = null
-  ): ExportTask = {
+  def apply(): ExportTask = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ExportTaskId != null) __obj.updateDynamic("ExportTaskId")(ExportTaskId.asInstanceOf[js.Any])
-    if (ExportToS3Task != null) __obj.updateDynamic("ExportToS3Task")(ExportToS3Task.asInstanceOf[js.Any])
-    if (InstanceExportDetails != null) __obj.updateDynamic("InstanceExportDetails")(InstanceExportDetails.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportTask]
   }
+  @scala.inline
+  implicit class ExportTaskOps[Self <: ExportTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setExportTaskId(value: String): Self = this.set("ExportTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportTaskId: Self = this.set("ExportTaskId", js.undefined)
+    @scala.inline
+    def setExportToS3Task(value: ExportToS3Task): Self = this.set("ExportToS3Task", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportToS3Task: Self = this.set("ExportToS3Task", js.undefined)
+    @scala.inline
+    def setInstanceExportDetails(value: InstanceExportDetails): Self = this.set("InstanceExportDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceExportDetails: Self = this.set("InstanceExportDetails", js.undefined)
+    @scala.inline
+    def setState(value: ExportTaskState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

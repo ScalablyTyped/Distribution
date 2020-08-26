@@ -85,30 +85,66 @@ trait SchemaApplicationPolicy extends js.Object {
 
 object SchemaApplicationPolicy {
   @scala.inline
-  def apply(
-    defaultPermissionPolicy: String = null,
-    delegatedScopes: js.Array[String] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    installType: String = null,
-    lockTaskAllowed: js.UndefOr[Boolean] = js.undefined,
-    managedConfiguration: StringDictionary[js.Any] = null,
-    managedConfigurationTemplate: SchemaManagedConfigurationTemplate = null,
-    minimumVersionCode: js.UndefOr[Double] = js.undefined,
-    packageName: String = null,
-    permissionGrants: js.Array[SchemaPermissionGrant] = null
-  ): SchemaApplicationPolicy = {
+  def apply(): SchemaApplicationPolicy = {
     val __obj = js.Dynamic.literal()
-    if (defaultPermissionPolicy != null) __obj.updateDynamic("defaultPermissionPolicy")(defaultPermissionPolicy.asInstanceOf[js.Any])
-    if (delegatedScopes != null) __obj.updateDynamic("delegatedScopes")(delegatedScopes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (installType != null) __obj.updateDynamic("installType")(installType.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockTaskAllowed)) __obj.updateDynamic("lockTaskAllowed")(lockTaskAllowed.get.asInstanceOf[js.Any])
-    if (managedConfiguration != null) __obj.updateDynamic("managedConfiguration")(managedConfiguration.asInstanceOf[js.Any])
-    if (managedConfigurationTemplate != null) __obj.updateDynamic("managedConfigurationTemplate")(managedConfigurationTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumVersionCode)) __obj.updateDynamic("minimumVersionCode")(minimumVersionCode.get.asInstanceOf[js.Any])
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
-    if (permissionGrants != null) __obj.updateDynamic("permissionGrants")(permissionGrants.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApplicationPolicy]
   }
+  @scala.inline
+  implicit class SchemaApplicationPolicyOps[Self <: SchemaApplicationPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultPermissionPolicy(value: String): Self = this.set("defaultPermissionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPermissionPolicy: Self = this.set("defaultPermissionPolicy", js.undefined)
+    @scala.inline
+    def setDelegatedScopesVarargs(value: String*): Self = this.set("delegatedScopes", js.Array(value :_*))
+    @scala.inline
+    def setDelegatedScopes(value: js.Array[String]): Self = this.set("delegatedScopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegatedScopes: Self = this.set("delegatedScopes", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setInstallType(value: String): Self = this.set("installType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallType: Self = this.set("installType", js.undefined)
+    @scala.inline
+    def setLockTaskAllowed(value: Boolean): Self = this.set("lockTaskAllowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockTaskAllowed: Self = this.set("lockTaskAllowed", js.undefined)
+    @scala.inline
+    def setManagedConfiguration(value: StringDictionary[js.Any]): Self = this.set("managedConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedConfiguration: Self = this.set("managedConfiguration", js.undefined)
+    @scala.inline
+    def setManagedConfigurationTemplate(value: SchemaManagedConfigurationTemplate): Self = this.set("managedConfigurationTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedConfigurationTemplate: Self = this.set("managedConfigurationTemplate", js.undefined)
+    @scala.inline
+    def setMinimumVersionCode(value: Double): Self = this.set("minimumVersionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumVersionCode: Self = this.set("minimumVersionCode", js.undefined)
+    @scala.inline
+    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageName: Self = this.set("packageName", js.undefined)
+    @scala.inline
+    def setPermissionGrantsVarargs(value: SchemaPermissionGrant*): Self = this.set("permissionGrants", js.Array(value :_*))
+    @scala.inline
+    def setPermissionGrants(value: js.Array[SchemaPermissionGrant]): Self = this.set("permissionGrants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionGrants: Self = this.set("permissionGrants", js.undefined)
+  }
+  
 }
 

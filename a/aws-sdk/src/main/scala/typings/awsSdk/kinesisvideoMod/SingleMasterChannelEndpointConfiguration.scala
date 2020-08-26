@@ -18,11 +18,32 @@ trait SingleMasterChannelEndpointConfiguration extends js.Object {
 
 object SingleMasterChannelEndpointConfiguration {
   @scala.inline
-  def apply(Protocols: ListOfProtocols = null, Role: ChannelRole = null): SingleMasterChannelEndpointConfiguration = {
+  def apply(): SingleMasterChannelEndpointConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (Protocols != null) __obj.updateDynamic("Protocols")(Protocols.asInstanceOf[js.Any])
-    if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleMasterChannelEndpointConfiguration]
   }
+  @scala.inline
+  implicit class SingleMasterChannelEndpointConfigurationOps[Self <: SingleMasterChannelEndpointConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProtocolsVarargs(value: ChannelProtocol*): Self = this.set("Protocols", js.Array(value :_*))
+    @scala.inline
+    def setProtocols(value: ListOfProtocols): Self = this.set("Protocols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocols: Self = this.set("Protocols", js.undefined)
+    @scala.inline
+    def setRole(value: ChannelRole): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("Role", js.undefined)
+  }
+  
 }
 

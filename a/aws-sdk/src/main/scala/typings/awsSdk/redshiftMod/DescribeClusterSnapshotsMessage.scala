@@ -58,34 +58,76 @@ trait DescribeClusterSnapshotsMessage extends js.Object {
 
 object DescribeClusterSnapshotsMessage {
   @scala.inline
-  def apply(
-    ClusterExists: js.UndefOr[BooleanOptional] = js.undefined,
-    ClusterIdentifier: String = null,
-    EndTime: TStamp = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    OwnerAccount: String = null,
-    SnapshotIdentifier: String = null,
-    SnapshotType: String = null,
-    SortingEntities: SnapshotSortingEntityList = null,
-    StartTime: TStamp = null,
-    TagKeys: TagKeyList = null,
-    TagValues: TagValueList = null
-  ): DescribeClusterSnapshotsMessage = {
+  def apply(): DescribeClusterSnapshotsMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ClusterExists)) __obj.updateDynamic("ClusterExists")(ClusterExists.get.asInstanceOf[js.Any])
-    if (ClusterIdentifier != null) __obj.updateDynamic("ClusterIdentifier")(ClusterIdentifier.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (OwnerAccount != null) __obj.updateDynamic("OwnerAccount")(OwnerAccount.asInstanceOf[js.Any])
-    if (SnapshotIdentifier != null) __obj.updateDynamic("SnapshotIdentifier")(SnapshotIdentifier.asInstanceOf[js.Any])
-    if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType.asInstanceOf[js.Any])
-    if (SortingEntities != null) __obj.updateDynamic("SortingEntities")(SortingEntities.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (TagKeys != null) __obj.updateDynamic("TagKeys")(TagKeys.asInstanceOf[js.Any])
-    if (TagValues != null) __obj.updateDynamic("TagValues")(TagValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClusterSnapshotsMessage]
   }
+  @scala.inline
+  implicit class DescribeClusterSnapshotsMessageOps[Self <: DescribeClusterSnapshotsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterExists(value: BooleanOptional): Self = this.set("ClusterExists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterExists: Self = this.set("ClusterExists", js.undefined)
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterIdentifier: Self = this.set("ClusterIdentifier", js.undefined)
+    @scala.inline
+    def setEndTime(value: TStamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setOwnerAccount(value: String): Self = this.set("OwnerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAccount: Self = this.set("OwnerAccount", js.undefined)
+    @scala.inline
+    def setSnapshotIdentifier(value: String): Self = this.set("SnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotIdentifier: Self = this.set("SnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setSnapshotType(value: String): Self = this.set("SnapshotType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotType: Self = this.set("SnapshotType", js.undefined)
+    @scala.inline
+    def setSortingEntitiesVarargs(value: SnapshotSortingEntity*): Self = this.set("SortingEntities", js.Array(value :_*))
+    @scala.inline
+    def setSortingEntities(value: SnapshotSortingEntityList): Self = this.set("SortingEntities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortingEntities: Self = this.set("SortingEntities", js.undefined)
+    @scala.inline
+    def setStartTime(value: TStamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setTagKeysVarargs(value: String*): Self = this.set("TagKeys", js.Array(value :_*))
+    @scala.inline
+    def setTagKeys(value: TagKeyList): Self = this.set("TagKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagKeys: Self = this.set("TagKeys", js.undefined)
+    @scala.inline
+    def setTagValuesVarargs(value: String*): Self = this.set("TagValues", js.Array(value :_*))
+    @scala.inline
+    def setTagValues(value: TagValueList): Self = this.set("TagValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagValues: Self = this.set("TagValues", js.undefined)
+  }
+  
 }
 

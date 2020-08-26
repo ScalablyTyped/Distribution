@@ -5,21 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 7. Current Load, Processes & Services
+@js.native
 trait CurrentLoadData extends js.Object {
-  var avgload: Double
-  var cpus: js.Array[CurrentLoadCpuData]
-  var currentload: Double
-  var currentload_idle: Double
-  var currentload_irq: Double
-  var currentload_nice: Double
-  var currentload_system: Double
-  var currentload_user: Double
-  var raw_currentload: Double
-  var raw_currentload_idle: Double
-  var raw_currentload_irq: Double
-  var raw_currentload_nice: Double
-  var raw_currentload_system: Double
-  var raw_currentload_user: Double
+  var avgload: Double = js.native
+  var cpus: js.Array[CurrentLoadCpuData] = js.native
+  var currentload: Double = js.native
+  var currentload_idle: Double = js.native
+  var currentload_irq: Double = js.native
+  var currentload_nice: Double = js.native
+  var currentload_system: Double = js.native
+  var currentload_user: Double = js.native
+  var raw_currentload: Double = js.native
+  var raw_currentload_idle: Double = js.native
+  var raw_currentload_irq: Double = js.native
+  var raw_currentload_nice: Double = js.native
+  var raw_currentload_system: Double = js.native
+  var raw_currentload_user: Double = js.native
 }
 
 object CurrentLoadData {
@@ -43,5 +44,48 @@ object CurrentLoadData {
     val __obj = js.Dynamic.literal(avgload = avgload.asInstanceOf[js.Any], cpus = cpus.asInstanceOf[js.Any], currentload = currentload.asInstanceOf[js.Any], currentload_idle = currentload_idle.asInstanceOf[js.Any], currentload_irq = currentload_irq.asInstanceOf[js.Any], currentload_nice = currentload_nice.asInstanceOf[js.Any], currentload_system = currentload_system.asInstanceOf[js.Any], currentload_user = currentload_user.asInstanceOf[js.Any], raw_currentload = raw_currentload.asInstanceOf[js.Any], raw_currentload_idle = raw_currentload_idle.asInstanceOf[js.Any], raw_currentload_irq = raw_currentload_irq.asInstanceOf[js.Any], raw_currentload_nice = raw_currentload_nice.asInstanceOf[js.Any], raw_currentload_system = raw_currentload_system.asInstanceOf[js.Any], raw_currentload_user = raw_currentload_user.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentLoadData]
   }
+  @scala.inline
+  implicit class CurrentLoadDataOps[Self <: CurrentLoadData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvgload(value: Double): Self = this.set("avgload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCpusVarargs(value: CurrentLoadCpuData*): Self = this.set("cpus", js.Array(value :_*))
+    @scala.inline
+    def setCpus(value: js.Array[CurrentLoadCpuData]): Self = this.set("cpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentload(value: Double): Self = this.set("currentload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentload_idle(value: Double): Self = this.set("currentload_idle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentload_irq(value: Double): Self = this.set("currentload_irq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentload_nice(value: Double): Self = this.set("currentload_nice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentload_system(value: Double): Self = this.set("currentload_system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentload_user(value: Double): Self = this.set("currentload_user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRaw_currentload(value: Double): Self = this.set("raw_currentload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRaw_currentload_idle(value: Double): Self = this.set("raw_currentload_idle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRaw_currentload_irq(value: Double): Self = this.set("raw_currentload_irq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRaw_currentload_nice(value: Double): Self = this.set("raw_currentload_nice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRaw_currentload_system(value: Double): Self = this.set("raw_currentload_system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRaw_currentload_user(value: Double): Self = this.set("raw_currentload_user", value.asInstanceOf[js.Any])
+  }
+  
 }
 

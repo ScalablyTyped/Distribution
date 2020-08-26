@@ -18,6 +18,12 @@ class Button protected () extends EventSource {
   def addHandler(eventName: ButtonEventName, handler: EventHandler[ButtonEvent]): Unit = js.native
   def addHandler(eventName: ButtonEventName, handler: EventHandler[ButtonEvent], userData: js.Object): Unit = js.native
   def addOnceHandler(eventName: ButtonEventName, handler: EventHandler[ButtonEvent]): Unit = js.native
+  def addOnceHandler(
+    eventName: ButtonEventName,
+    handler: EventHandler[ButtonEvent],
+    userData: js.UndefOr[scala.Nothing],
+    times: Double
+  ): Unit = js.native
   def addOnceHandler(eventName: ButtonEventName, handler: EventHandler[ButtonEvent], userData: js.Object): Unit = js.native
   def addOnceHandler(eventName: ButtonEventName, handler: EventHandler[ButtonEvent], userData: js.Object, times: Double): Unit = js.native
   def disable(): Unit = js.native

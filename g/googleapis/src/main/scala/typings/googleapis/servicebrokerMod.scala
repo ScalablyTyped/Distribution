@@ -54,7 +54,7 @@ object servicebrokerMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Servicebroker
               ]
             ]
@@ -64,7 +64,7 @@ object servicebrokerMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1.Servicebroker
               ]
             ]
@@ -74,7 +74,7 @@ object servicebrokerMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1.Servicebroker
               ]
             ]

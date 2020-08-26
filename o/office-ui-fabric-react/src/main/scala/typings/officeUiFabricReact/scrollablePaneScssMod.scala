@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/ScrollablePane/ScrollablePane.scss", JSImport.Namespace)
 @js.native
 object scrollablePaneScssMod extends js.Object {
-  val root: /* "root_e5dc0be2" */ String = js.native
-  val stickyAbove: /* "stickyAbove_e5dc0be2" */ String = js.native
-  val stickyBelow: /* "stickyBelow_e5dc0be2" */ String = js.native
+  val root: /* "root_a32d3702" */ String = js.native
+  val stickyAbove: /* "stickyAbove_a32d3702" */ String = js.native
+  val stickyBelow: /* "stickyBelow_a32d3702" */ String = js.native
 }
 

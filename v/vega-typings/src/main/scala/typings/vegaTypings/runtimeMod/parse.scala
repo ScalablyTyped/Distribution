@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object parse extends js.Object {
   def apply(spec: Spec): Runtime = js.native
+  def apply(spec: Spec, config: js.UndefOr[scala.Nothing], opt: Ast): Runtime = js.native
   def apply(spec: Spec, config: Config): Runtime = js.native
   def apply(spec: Spec, config: Config, opt: Ast): Runtime = js.native
 }

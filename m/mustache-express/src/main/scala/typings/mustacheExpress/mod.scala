@@ -15,6 +15,7 @@ object mod extends js.Object {
   }
   
   def apply(): ExpessEngine = js.native
+  def apply(partialsPath: js.UndefOr[scala.Nothing], partialsExt: String): ExpessEngine = js.native
   def apply(partialsPath: String): ExpessEngine = js.native
   def apply(partialsPath: String, partialsExt: String): ExpessEngine = js.native
   type TemplateCache = Cache

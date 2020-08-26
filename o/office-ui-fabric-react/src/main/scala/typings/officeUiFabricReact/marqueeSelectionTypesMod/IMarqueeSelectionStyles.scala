@@ -5,27 +5,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IMarqueeSelectionStyles extends js.Object {
-  var box: js.UndefOr[IStyle] = js.undefined
-  var boxFill: js.UndefOr[IStyle] = js.undefined
-  var dragMask: js.UndefOr[IStyle] = js.undefined
-  var root: js.UndefOr[IStyle] = js.undefined
+  var box: js.UndefOr[IStyle] = js.native
+  var boxFill: js.UndefOr[IStyle] = js.native
+  var dragMask: js.UndefOr[IStyle] = js.native
+  var root: js.UndefOr[IStyle] = js.native
 }
 
 object IMarqueeSelectionStyles {
   @scala.inline
-  def apply(
-    box: js.UndefOr[Null | IStyle] = js.undefined,
-    boxFill: js.UndefOr[Null | IStyle] = js.undefined,
-    dragMask: js.UndefOr[Null | IStyle] = js.undefined,
-    root: js.UndefOr[Null | IStyle] = js.undefined
-  ): IMarqueeSelectionStyles = {
+  def apply(): IMarqueeSelectionStyles = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(box)) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
-    if (!js.isUndefined(boxFill)) __obj.updateDynamic("boxFill")(boxFill.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragMask)) __obj.updateDynamic("dragMask")(dragMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMarqueeSelectionStyles]
   }
+  @scala.inline
+  implicit class IMarqueeSelectionStylesOps[Self <: IMarqueeSelectionStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBox(value: IStyle): Self = this.set("box", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBox: Self = this.set("box", js.undefined)
+    @scala.inline
+    def setBoxNull: Self = this.set("box", null)
+    @scala.inline
+    def setBoxFill(value: IStyle): Self = this.set("boxFill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoxFill: Self = this.set("boxFill", js.undefined)
+    @scala.inline
+    def setBoxFillNull: Self = this.set("boxFill", null)
+    @scala.inline
+    def setDragMask(value: IStyle): Self = this.set("dragMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragMask: Self = this.set("dragMask", js.undefined)
+    @scala.inline
+    def setDragMaskNull: Self = this.set("dragMask", null)
+    @scala.inline
+    def setRoot(value: IStyle): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setRootNull: Self = this.set("root", null)
+  }
+  
 }
 

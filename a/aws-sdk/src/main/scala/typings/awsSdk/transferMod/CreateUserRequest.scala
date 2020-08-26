@@ -46,25 +46,56 @@ trait CreateUserRequest extends js.Object {
 
 object CreateUserRequest {
   @scala.inline
-  def apply(
-    Role: Role,
-    ServerId: ServerId,
-    UserName: UserName,
-    HomeDirectory: HomeDirectory = null,
-    HomeDirectoryMappings: HomeDirectoryMappings = null,
-    HomeDirectoryType: HomeDirectoryType = null,
-    Policy: Policy = null,
-    SshPublicKeyBody: SshPublicKeyBody = null,
-    Tags: Tags = null
-  ): CreateUserRequest = {
+  def apply(Role: Role, ServerId: ServerId, UserName: UserName): CreateUserRequest = {
     val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], ServerId = ServerId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-    if (HomeDirectory != null) __obj.updateDynamic("HomeDirectory")(HomeDirectory.asInstanceOf[js.Any])
-    if (HomeDirectoryMappings != null) __obj.updateDynamic("HomeDirectoryMappings")(HomeDirectoryMappings.asInstanceOf[js.Any])
-    if (HomeDirectoryType != null) __obj.updateDynamic("HomeDirectoryType")(HomeDirectoryType.asInstanceOf[js.Any])
-    if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
-    if (SshPublicKeyBody != null) __obj.updateDynamic("SshPublicKeyBody")(SshPublicKeyBody.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserRequest]
   }
+  @scala.inline
+  implicit class CreateUserRequestOps[Self <: CreateUserRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRole(value: Role): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerId(value: ServerId): Self = this.set("ServerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserName(value: UserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHomeDirectory(value: HomeDirectory): Self = this.set("HomeDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeDirectory: Self = this.set("HomeDirectory", js.undefined)
+    @scala.inline
+    def setHomeDirectoryMappingsVarargs(value: HomeDirectoryMapEntry*): Self = this.set("HomeDirectoryMappings", js.Array(value :_*))
+    @scala.inline
+    def setHomeDirectoryMappings(value: HomeDirectoryMappings): Self = this.set("HomeDirectoryMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeDirectoryMappings: Self = this.set("HomeDirectoryMappings", js.undefined)
+    @scala.inline
+    def setHomeDirectoryType(value: HomeDirectoryType): Self = this.set("HomeDirectoryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeDirectoryType: Self = this.set("HomeDirectoryType", js.undefined)
+    @scala.inline
+    def setPolicy(value: Policy): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("Policy", js.undefined)
+    @scala.inline
+    def setSshPublicKeyBody(value: SshPublicKeyBody): Self = this.set("SshPublicKeyBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshPublicKeyBody: Self = this.set("SshPublicKeyBody", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

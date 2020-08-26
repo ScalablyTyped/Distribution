@@ -55,37 +55,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Chrome extends js.Object {
   var chrome: js.UndefOr[
     `48` | `49` | `50` | `51` | `52` | `53` | `54` | `55` | `56` | `57` | `58` | `59` | `60` | `61` | `62` | `63` | `64` | `65` | `66` | `67` | `68` | `69` | `70` | `71`
-  ] = js.undefined
-  var edge: js.UndefOr[`12` | `13` | `14` | `15` | `16` | `17` | `18` | `19`] = js.undefined
+  ] = js.native
+  var edge: js.UndefOr[`12` | `13` | `14` | `15` | `16` | `17` | `18` | `19`] = js.native
   var firefox: js.UndefOr[
     `43` | `44` | `45` | `46` | `47` | `48` | `49` | `50` | `51` | `52` | `53` | `54` | `55` | `56` | `57` | `58` | `59` | `60` | `61` | `62` | `63` | `64`
-  ] = js.undefined
-  var ie: js.UndefOr[`8` | `9` | `10` | `11`] = js.undefined
-  var node: js.UndefOr[`0.10` | `0.12` | `4` | `5` | `6` | `8` | `8.3` | `8.7` | `8.10`] = js.undefined
-  var safari: js.UndefOr[`8` | `9` | `10` | `10.1` | `11` | `11.1` | `12`] = js.undefined
+  ] = js.native
+  var ie: js.UndefOr[`8` | `9` | `10` | `11`] = js.native
+  var node: js.UndefOr[`0.10` | `0.12` | `4` | `5` | `6` | `8` | `8.3` | `8.7` | `8.10`] = js.native
+  var safari: js.UndefOr[`8` | `9` | `10` | `10.1` | `11` | `11.1` | `12`] = js.native
 }
 
 object Chrome {
   @scala.inline
-  def apply(
-    chrome: `48` | `49` | `50` | `51` | `52` | `53` | `54` | `55` | `56` | `57` | `58` | `59` | `60` | `61` | `62` | `63` | `64` | `65` | `66` | `67` | `68` | `69` | `70` | `71` = null,
-    edge: `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` = null,
-    firefox: `43` | `44` | `45` | `46` | `47` | `48` | `49` | `50` | `51` | `52` | `53` | `54` | `55` | `56` | `57` | `58` | `59` | `60` | `61` | `62` | `63` | `64` = null,
-    ie: `8` | `9` | `10` | `11` = null,
-    node: `0.10` | `0.12` | `4` | `5` | `6` | `8` | `8.3` | `8.7` | `8.10` = null,
-    safari: `8` | `9` | `10` | `10.1` | `11` | `11.1` | `12` = null
-  ): Chrome = {
+  def apply(): Chrome = {
     val __obj = js.Dynamic.literal()
-    if (chrome != null) __obj.updateDynamic("chrome")(chrome.asInstanceOf[js.Any])
-    if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
-    if (firefox != null) __obj.updateDynamic("firefox")(firefox.asInstanceOf[js.Any])
-    if (ie != null) __obj.updateDynamic("ie")(ie.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (safari != null) __obj.updateDynamic("safari")(safari.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chrome]
   }
+  @scala.inline
+  implicit class ChromeOps[Self <: Chrome] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChrome(
+      value: `48` | `49` | `50` | `51` | `52` | `53` | `54` | `55` | `56` | `57` | `58` | `59` | `60` | `61` | `62` | `63` | `64` | `65` | `66` | `67` | `68` | `69` | `70` | `71`
+    ): Self = this.set("chrome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChrome: Self = this.set("chrome", js.undefined)
+    @scala.inline
+    def setEdge(value: `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19`): Self = this.set("edge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdge: Self = this.set("edge", js.undefined)
+    @scala.inline
+    def setFirefox(
+      value: `43` | `44` | `45` | `46` | `47` | `48` | `49` | `50` | `51` | `52` | `53` | `54` | `55` | `56` | `57` | `58` | `59` | `60` | `61` | `62` | `63` | `64`
+    ): Self = this.set("firefox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirefox: Self = this.set("firefox", js.undefined)
+    @scala.inline
+    def setIe(value: `8` | `9` | `10` | `11`): Self = this.set("ie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIe: Self = this.set("ie", js.undefined)
+    @scala.inline
+    def setNode(value: `0.10` | `0.12` | `4` | `5` | `6` | `8` | `8.3` | `8.7` | `8.10`): Self = this.set("node", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNode: Self = this.set("node", js.undefined)
+    @scala.inline
+    def setSafari(value: `8` | `9` | `10` | `10.1` | `11` | `11.1` | `12`): Self = this.set("safari", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSafari: Self = this.set("safari", js.undefined)
+  }
+  
 }
 

@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Null
   extends Value
      with _ImporterReturnType {
@@ -15,7 +16,7 @@ trait Null
     * allow things that aren't types.Null to match it in case statements and
     * assignments.
     */
-  val ___NULL___ : js.Symbol
+  val ___NULL___ : js.Symbol = js.native
 }
 
 @JSImport("node-sass", "types.Null")

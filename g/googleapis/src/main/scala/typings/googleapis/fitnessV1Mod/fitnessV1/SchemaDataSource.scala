@@ -89,26 +89,56 @@ trait SchemaDataSource extends js.Object {
 
 object SchemaDataSource {
   @scala.inline
-  def apply(
-    application: SchemaApplication = null,
-    dataQualityStandard: js.Array[String] = null,
-    dataStreamId: String = null,
-    dataStreamName: String = null,
-    dataType: SchemaDataType = null,
-    device: SchemaDevice = null,
-    name: String = null,
-    `type`: String = null
-  ): SchemaDataSource = {
+  def apply(): SchemaDataSource = {
     val __obj = js.Dynamic.literal()
-    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (dataQualityStandard != null) __obj.updateDynamic("dataQualityStandard")(dataQualityStandard.asInstanceOf[js.Any])
-    if (dataStreamId != null) __obj.updateDynamic("dataStreamId")(dataStreamId.asInstanceOf[js.Any])
-    if (dataStreamName != null) __obj.updateDynamic("dataStreamName")(dataStreamName.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDataSource]
   }
+  @scala.inline
+  implicit class SchemaDataSourceOps[Self <: SchemaDataSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: SchemaApplication): Self = this.set("application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplication: Self = this.set("application", js.undefined)
+    @scala.inline
+    def setDataQualityStandardVarargs(value: String*): Self = this.set("dataQualityStandard", js.Array(value :_*))
+    @scala.inline
+    def setDataQualityStandard(value: js.Array[String]): Self = this.set("dataQualityStandard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataQualityStandard: Self = this.set("dataQualityStandard", js.undefined)
+    @scala.inline
+    def setDataStreamId(value: String): Self = this.set("dataStreamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataStreamId: Self = this.set("dataStreamId", js.undefined)
+    @scala.inline
+    def setDataStreamName(value: String): Self = this.set("dataStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataStreamName: Self = this.set("dataStreamName", js.undefined)
+    @scala.inline
+    def setDataType(value: SchemaDataType): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataType: Self = this.set("dataType", js.undefined)
+    @scala.inline
+    def setDevice(value: SchemaDevice): Self = this.set("device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevice: Self = this.set("device", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

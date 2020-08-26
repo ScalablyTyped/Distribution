@@ -20,6 +20,7 @@ object PolygonGeometry extends js.Object {
   def fromPositions(): PolygonGeometry = js.native
   def fromPositions(options: CloseBottom): PolygonGeometry = js.native
   def unpack(array: js.Array[Double]): PolygonGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: PolygonGeometry): PolygonGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): PolygonGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: PolygonGeometry): PolygonGeometry = js.native
 }

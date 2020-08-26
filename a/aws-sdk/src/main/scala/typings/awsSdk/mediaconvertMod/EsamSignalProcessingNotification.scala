@@ -14,10 +14,26 @@ trait EsamSignalProcessingNotification extends js.Object {
 
 object EsamSignalProcessingNotification {
   @scala.inline
-  def apply(SccXml: stringPatternSNSignalProcessingNotificationNS = null): EsamSignalProcessingNotification = {
+  def apply(): EsamSignalProcessingNotification = {
     val __obj = js.Dynamic.literal()
-    if (SccXml != null) __obj.updateDynamic("SccXml")(SccXml.asInstanceOf[js.Any])
     __obj.asInstanceOf[EsamSignalProcessingNotification]
   }
+  @scala.inline
+  implicit class EsamSignalProcessingNotificationOps[Self <: EsamSignalProcessingNotification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSccXml(value: stringPatternSNSignalProcessingNotificationNS): Self = this.set("SccXml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSccXml: Self = this.set("SccXml", js.undefined)
+  }
+  
 }
 

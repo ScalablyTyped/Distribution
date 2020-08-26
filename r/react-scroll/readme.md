@@ -10,9 +10,9 @@ A scroll component for React.js
 | ------------------ | :-------------: |
 | Full name          | react-scroll |
 | Keywords           | react, react-component, scroll, scroller, scrolls |
-| # releases         | 12 |
-| # dependents       | 106 |
-| # downloads        | 8406600 |
+| # releases         | 9 |
+| # dependents       | 109 |
+| # downloads        | 8620644 |
 | # stars            | 24 |
 
 ## Links

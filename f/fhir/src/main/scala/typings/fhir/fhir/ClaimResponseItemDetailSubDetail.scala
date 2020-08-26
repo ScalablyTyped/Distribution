@@ -7,56 +7,72 @@ import scala.scalajs.js.annotation._
 /**
   * Subdetail line items
   */
+@js.native
 trait ClaimResponseItemDetailSubDetail extends BackboneElement {
   /**
     * Contains extended information for property 'noteNumber'.
     */
-  var _noteNumber: js.UndefOr[js.Array[Element]] = js.undefined
+  var _noteNumber: js.UndefOr[js.Array[Element]] = js.native
   /**
     * Contains extended information for property 'sequenceLinkId'.
     */
-  var _sequenceLinkId: js.UndefOr[Element] = js.undefined
+  var _sequenceLinkId: js.UndefOr[Element] = js.native
   /**
     * Subdetail level adjudication details
     */
-  var adjudication: js.UndefOr[js.Array[ClaimResponseItemAdjudication]] = js.undefined
+  var adjudication: js.UndefOr[js.Array[ClaimResponseItemAdjudication]] = js.native
   /**
     * List of note numbers which apply
     */
-  var noteNumber: js.UndefOr[js.Array[positiveInt]] = js.undefined
+  var noteNumber: js.UndefOr[js.Array[positiveInt]] = js.native
   /**
     * Service instance
     */
-  var sequenceLinkId: positiveInt
+  var sequenceLinkId: positiveInt = js.native
 }
 
 object ClaimResponseItemDetailSubDetail {
   @scala.inline
-  def apply(
-    sequenceLinkId: positiveInt,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _noteNumber: js.Array[Element] = null,
-    _sequenceLinkId: Element = null,
-    adjudication: js.Array[ClaimResponseItemAdjudication] = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    noteNumber: js.Array[positiveInt] = null
-  ): ClaimResponseItemDetailSubDetail = {
+  def apply(sequenceLinkId: positiveInt): ClaimResponseItemDetailSubDetail = {
     val __obj = js.Dynamic.literal(sequenceLinkId = sequenceLinkId.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_noteNumber != null) __obj.updateDynamic("_noteNumber")(_noteNumber.asInstanceOf[js.Any])
-    if (_sequenceLinkId != null) __obj.updateDynamic("_sequenceLinkId")(_sequenceLinkId.asInstanceOf[js.Any])
-    if (adjudication != null) __obj.updateDynamic("adjudication")(adjudication.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (noteNumber != null) __obj.updateDynamic("noteNumber")(noteNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimResponseItemDetailSubDetail]
   }
+  @scala.inline
+  implicit class ClaimResponseItemDetailSubDetailOps[Self <: ClaimResponseItemDetailSubDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSequenceLinkId(value: positiveInt): Self = this.set("sequenceLinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_noteNumberVarargs(value: Element*): Self = this.set("_noteNumber", js.Array(value :_*))
+    @scala.inline
+    def set_noteNumber(value: js.Array[Element]): Self = this.set("_noteNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_noteNumber: Self = this.set("_noteNumber", js.undefined)
+    @scala.inline
+    def set_sequenceLinkId(value: Element): Self = this.set("_sequenceLinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_sequenceLinkId: Self = this.set("_sequenceLinkId", js.undefined)
+    @scala.inline
+    def setAdjudicationVarargs(value: ClaimResponseItemAdjudication*): Self = this.set("adjudication", js.Array(value :_*))
+    @scala.inline
+    def setAdjudication(value: js.Array[ClaimResponseItemAdjudication]): Self = this.set("adjudication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjudication: Self = this.set("adjudication", js.undefined)
+    @scala.inline
+    def setNoteNumberVarargs(value: positiveInt*): Self = this.set("noteNumber", js.Array(value :_*))
+    @scala.inline
+    def setNoteNumber(value: js.Array[positiveInt]): Self = this.set("noteNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoteNumber: Self = this.set("noteNumber", js.undefined)
+  }
+  
 }
 

@@ -22,15 +22,34 @@ trait UpdateVocabularyFilterRequest extends js.Object {
 
 object UpdateVocabularyFilterRequest {
   @scala.inline
-  def apply(
-    VocabularyFilterName: VocabularyFilterName,
-    VocabularyFilterFileUri: Uri = null,
-    Words: Words = null
-  ): UpdateVocabularyFilterRequest = {
+  def apply(VocabularyFilterName: VocabularyFilterName): UpdateVocabularyFilterRequest = {
     val __obj = js.Dynamic.literal(VocabularyFilterName = VocabularyFilterName.asInstanceOf[js.Any])
-    if (VocabularyFilterFileUri != null) __obj.updateDynamic("VocabularyFilterFileUri")(VocabularyFilterFileUri.asInstanceOf[js.Any])
-    if (Words != null) __obj.updateDynamic("Words")(Words.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVocabularyFilterRequest]
   }
+  @scala.inline
+  implicit class UpdateVocabularyFilterRequestOps[Self <: UpdateVocabularyFilterRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVocabularyFilterName(value: VocabularyFilterName): Self = this.set("VocabularyFilterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVocabularyFilterFileUri(value: Uri): Self = this.set("VocabularyFilterFileUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVocabularyFilterFileUri: Self = this.set("VocabularyFilterFileUri", js.undefined)
+    @scala.inline
+    def setWordsVarargs(value: Word*): Self = this.set("Words", js.Array(value :_*))
+    @scala.inline
+    def setWords(value: Words): Self = this.set("Words", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWords: Self = this.set("Words", js.undefined)
+  }
+  
 }
 

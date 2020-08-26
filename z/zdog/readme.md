@@ -12,7 +12,7 @@ Round, flat, designer-friendly pseudo-3D engine
 | Keywords           | 3D, canvas, svg |
 | # releases         | 8 |
 | # dependents       | 3 |
-| # downloads        | 13775 |
+| # downloads        | 15815 |
 | # stars            | 1 |
 
 ## Links

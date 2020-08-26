@@ -47,24 +47,50 @@ trait SchemaPubsubLocation extends js.Object {
 
 object SchemaPubsubLocation {
   @scala.inline
-  def apply(
-    dropLateData: js.UndefOr[Boolean] = js.undefined,
-    idLabel: String = null,
-    subscription: String = null,
-    timestampLabel: String = null,
-    topic: String = null,
-    trackingSubscription: String = null,
-    withAttributes: js.UndefOr[Boolean] = js.undefined
-  ): SchemaPubsubLocation = {
+  def apply(): SchemaPubsubLocation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dropLateData)) __obj.updateDynamic("dropLateData")(dropLateData.get.asInstanceOf[js.Any])
-    if (idLabel != null) __obj.updateDynamic("idLabel")(idLabel.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    if (timestampLabel != null) __obj.updateDynamic("timestampLabel")(timestampLabel.asInstanceOf[js.Any])
-    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
-    if (trackingSubscription != null) __obj.updateDynamic("trackingSubscription")(trackingSubscription.asInstanceOf[js.Any])
-    if (!js.isUndefined(withAttributes)) __obj.updateDynamic("withAttributes")(withAttributes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPubsubLocation]
   }
+  @scala.inline
+  implicit class SchemaPubsubLocationOps[Self <: SchemaPubsubLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDropLateData(value: Boolean): Self = this.set("dropLateData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropLateData: Self = this.set("dropLateData", js.undefined)
+    @scala.inline
+    def setIdLabel(value: String): Self = this.set("idLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdLabel: Self = this.set("idLabel", js.undefined)
+    @scala.inline
+    def setSubscription(value: String): Self = this.set("subscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscription: Self = this.set("subscription", js.undefined)
+    @scala.inline
+    def setTimestampLabel(value: String): Self = this.set("timestampLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampLabel: Self = this.set("timestampLabel", js.undefined)
+    @scala.inline
+    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopic: Self = this.set("topic", js.undefined)
+    @scala.inline
+    def setTrackingSubscription(value: String): Self = this.set("trackingSubscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackingSubscription: Self = this.set("trackingSubscription", js.undefined)
+    @scala.inline
+    def setWithAttributes(value: Boolean): Self = this.set("withAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithAttributes: Self = this.set("withAttributes", js.undefined)
+  }
+  
 }
 

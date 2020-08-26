@@ -10,33 +10,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OffCanvasProps extends js.Object {
-  var children: ReactNode
-  var effect: js.UndefOr[push | overlay | parallax] = js.undefined
-  var isMenuOpened: js.UndefOr[Boolean] = js.undefined
-  var position: js.UndefOr[left | right] = js.undefined
-  var transitionDuration: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var children: ReactNode = js.native
+  var effect: js.UndefOr[push | overlay | parallax] = js.native
+  var isMenuOpened: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[left | right] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object OffCanvasProps {
   @scala.inline
-  def apply(
-    children: ReactNode = null,
-    effect: push | overlay | parallax = null,
-    isMenuOpened: js.UndefOr[Boolean] = js.undefined,
-    position: left | right = null,
-    transitionDuration: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): OffCanvasProps = {
+  def apply(): OffCanvasProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMenuOpened)) __obj.updateDynamic("isMenuOpened")(isMenuOpened.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffCanvasProps]
   }
+  @scala.inline
+  implicit class OffCanvasPropsOps[Self <: OffCanvasProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setEffect(value: push | overlay | parallax): Self = this.set("effect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffect: Self = this.set("effect", js.undefined)
+    @scala.inline
+    def setIsMenuOpened(value: Boolean): Self = this.set("isMenuOpened", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMenuOpened: Self = this.set("isMenuOpened", js.undefined)
+    @scala.inline
+    def setPosition(value: left | right): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setTransitionDuration(value: Double): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

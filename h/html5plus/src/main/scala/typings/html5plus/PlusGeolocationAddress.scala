@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
+@js.native
 trait PlusGeolocationAddress extends js.Object {
   /**
     * 城市名称
@@ -16,89 +17,119 @@ trait PlusGeolocationAddress extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var city: js.UndefOr[String] = js.undefined
+  var city: js.UndefOr[String] = js.native
   /**
     * 城市代码
     * 如“010”，如果无法获取此信息则返回undefined。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var cityCode: js.UndefOr[String] = js.undefined
+  var cityCode: js.UndefOr[String] = js.native
   /**
     * 国家
     * 如“中国”，如果无法获取此信息则返回undefined。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var country: js.UndefOr[String] = js.undefined
+  var country: js.UndefOr[String] = js.native
   /**
     * 区（县）名称
     * 如“朝阳区”，如果无法获取此信息则返回undefined。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var district: js.UndefOr[String] = js.undefined
+  var district: js.UndefOr[String] = js.native
   /**
     * POI信息
     * 如“电子城．国际电子总部”，如果无法获取此信息则返回undefined。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var poiName: js.UndefOr[String] = js.undefined
+  var poiName: js.UndefOr[String] = js.native
   /**
     * 邮政编码
     * 如“100016”，如果无法获取此信息则返回undefined。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var postalCode: js.UndefOr[String] = js.undefined
+  var postalCode: js.UndefOr[String] = js.native
   /**
     * 省份名称
     * 如“北京市”，如果无法获取此信息则返回undefined。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var province: js.UndefOr[String] = js.undefined
+  var province: js.UndefOr[String] = js.native
   /**
     * 街道信息
     * 如“酒仙桥路”，如果无法获取此信息则返回undefined。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var street: js.UndefOr[String] = js.undefined
+  var street: js.UndefOr[String] = js.native
   /**
     * 获取街道门牌号信息
     * 如“3号”，如果无法获取此信息则返回undefined。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var streetNum: js.UndefOr[String] = js.undefined
+  var streetNum: js.UndefOr[String] = js.native
 }
 
 object PlusGeolocationAddress {
   @scala.inline
-  def apply(
-    city: String = null,
-    cityCode: String = null,
-    country: String = null,
-    district: String = null,
-    poiName: String = null,
-    postalCode: String = null,
-    province: String = null,
-    street: String = null,
-    streetNum: String = null
-  ): PlusGeolocationAddress = {
+  def apply(): PlusGeolocationAddress = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (cityCode != null) __obj.updateDynamic("cityCode")(cityCode.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (district != null) __obj.updateDynamic("district")(district.asInstanceOf[js.Any])
-    if (poiName != null) __obj.updateDynamic("poiName")(poiName.asInstanceOf[js.Any])
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
-    if (province != null) __obj.updateDynamic("province")(province.asInstanceOf[js.Any])
-    if (street != null) __obj.updateDynamic("street")(street.asInstanceOf[js.Any])
-    if (streetNum != null) __obj.updateDynamic("streetNum")(streetNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusGeolocationAddress]
   }
+  @scala.inline
+  implicit class PlusGeolocationAddressOps[Self <: PlusGeolocationAddress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("city", js.undefined)
+    @scala.inline
+    def setCityCode(value: String): Self = this.set("cityCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCityCode: Self = this.set("cityCode", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setDistrict(value: String): Self = this.set("district", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistrict: Self = this.set("district", js.undefined)
+    @scala.inline
+    def setPoiName(value: String): Self = this.set("poiName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoiName: Self = this.set("poiName", js.undefined)
+    @scala.inline
+    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostalCode: Self = this.set("postalCode", js.undefined)
+    @scala.inline
+    def setProvince(value: String): Self = this.set("province", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvince: Self = this.set("province", js.undefined)
+    @scala.inline
+    def setStreet(value: String): Self = this.set("street", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreet: Self = this.set("street", js.undefined)
+    @scala.inline
+    def setStreetNum(value: String): Self = this.set("streetNum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreetNum: Self = this.set("streetNum", js.undefined)
+  }
+  
 }
 

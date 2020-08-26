@@ -9,8 +9,10 @@ import scala.scalajs.js.annotation._
 class Template protected () extends js.Object {
   def this(src: String) = this()
   def this(src: String, env: Environment) = this()
+  def this(src: String, env: js.UndefOr[scala.Nothing], eagerCompile: Boolean) = this()
   def this(src: String, env: Environment, eagerCompile: Boolean) = this()
   def render(): String = js.native
+  def render(context: js.UndefOr[scala.Nothing], callback: TemplateCallback[String]): Unit = js.native
   def render(context: js.Object): String = js.native
   def render(context: js.Object, callback: TemplateCallback[String]): Unit = js.native
   @JSName("render")

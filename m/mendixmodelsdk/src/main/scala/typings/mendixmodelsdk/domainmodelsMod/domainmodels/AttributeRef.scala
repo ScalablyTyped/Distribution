@@ -39,8 +39,8 @@ class AttributeRef protected () extends MemberRef {
   @JSName("model")
   var model_FAttributeRef: IModel = js.native
   def attribute: IAttribute = js.native
-  def attribute(newValue: IAttribute): js.Any = js.native
   def attributeQualifiedName: String = js.native
+  def attribute_=(newValue: IAttribute): Unit = js.native
 }
 
 /* static members */

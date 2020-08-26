@@ -5,60 +5,99 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ShortcutsArray
   extends /* action */ StringDictionary[js.UndefOr[String]] {
-  var cleanBlock: js.UndefOr[String] = js.undefined
-  var drawImage: js.UndefOr[String] = js.undefined
-  var drawLink: js.UndefOr[String] = js.undefined
-  var toggleBlockquote: js.UndefOr[String] = js.undefined
-  var toggleBold: js.UndefOr[String] = js.undefined
-  var toggleCodeBlock: js.UndefOr[String] = js.undefined
-  var toggleFullScreen: js.UndefOr[String] = js.undefined
-  var toggleHeadingBigger: js.UndefOr[String] = js.undefined
-  var toggleHeadingSmaller: js.UndefOr[String] = js.undefined
-  var toggleItalic: js.UndefOr[String] = js.undefined
-  var toggleOrderedList: js.UndefOr[String] = js.undefined
-  var togglePreview: js.UndefOr[String] = js.undefined
-  var toggleSideBySide: js.UndefOr[String] = js.undefined
-  var toggleUnorderedList: js.UndefOr[String] = js.undefined
+  var cleanBlock: js.UndefOr[String] = js.native
+  var drawImage: js.UndefOr[String] = js.native
+  var drawLink: js.UndefOr[String] = js.native
+  var toggleBlockquote: js.UndefOr[String] = js.native
+  var toggleBold: js.UndefOr[String] = js.native
+  var toggleCodeBlock: js.UndefOr[String] = js.native
+  var toggleFullScreen: js.UndefOr[String] = js.native
+  var toggleHeadingBigger: js.UndefOr[String] = js.native
+  var toggleHeadingSmaller: js.UndefOr[String] = js.native
+  var toggleItalic: js.UndefOr[String] = js.native
+  var toggleOrderedList: js.UndefOr[String] = js.native
+  var togglePreview: js.UndefOr[String] = js.native
+  var toggleSideBySide: js.UndefOr[String] = js.native
+  var toggleUnorderedList: js.UndefOr[String] = js.native
 }
 
 object ShortcutsArray {
   @scala.inline
-  def apply(
-    StringDictionary: /* header */ StringDictionary[js.UndefOr[String]] = null,
-    cleanBlock: String = null,
-    drawImage: String = null,
-    drawLink: String = null,
-    toggleBlockquote: String = null,
-    toggleBold: String = null,
-    toggleCodeBlock: String = null,
-    toggleFullScreen: String = null,
-    toggleHeadingBigger: String = null,
-    toggleHeadingSmaller: String = null,
-    toggleItalic: String = null,
-    toggleOrderedList: String = null,
-    togglePreview: String = null,
-    toggleSideBySide: String = null,
-    toggleUnorderedList: String = null
-  ): ShortcutsArray = {
+  def apply(): ShortcutsArray = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cleanBlock != null) __obj.updateDynamic("cleanBlock")(cleanBlock.asInstanceOf[js.Any])
-    if (drawImage != null) __obj.updateDynamic("drawImage")(drawImage.asInstanceOf[js.Any])
-    if (drawLink != null) __obj.updateDynamic("drawLink")(drawLink.asInstanceOf[js.Any])
-    if (toggleBlockquote != null) __obj.updateDynamic("toggleBlockquote")(toggleBlockquote.asInstanceOf[js.Any])
-    if (toggleBold != null) __obj.updateDynamic("toggleBold")(toggleBold.asInstanceOf[js.Any])
-    if (toggleCodeBlock != null) __obj.updateDynamic("toggleCodeBlock")(toggleCodeBlock.asInstanceOf[js.Any])
-    if (toggleFullScreen != null) __obj.updateDynamic("toggleFullScreen")(toggleFullScreen.asInstanceOf[js.Any])
-    if (toggleHeadingBigger != null) __obj.updateDynamic("toggleHeadingBigger")(toggleHeadingBigger.asInstanceOf[js.Any])
-    if (toggleHeadingSmaller != null) __obj.updateDynamic("toggleHeadingSmaller")(toggleHeadingSmaller.asInstanceOf[js.Any])
-    if (toggleItalic != null) __obj.updateDynamic("toggleItalic")(toggleItalic.asInstanceOf[js.Any])
-    if (toggleOrderedList != null) __obj.updateDynamic("toggleOrderedList")(toggleOrderedList.asInstanceOf[js.Any])
-    if (togglePreview != null) __obj.updateDynamic("togglePreview")(togglePreview.asInstanceOf[js.Any])
-    if (toggleSideBySide != null) __obj.updateDynamic("toggleSideBySide")(toggleSideBySide.asInstanceOf[js.Any])
-    if (toggleUnorderedList != null) __obj.updateDynamic("toggleUnorderedList")(toggleUnorderedList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortcutsArray]
   }
+  @scala.inline
+  implicit class ShortcutsArrayOps[Self <: ShortcutsArray] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCleanBlock(value: String): Self = this.set("cleanBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCleanBlock: Self = this.set("cleanBlock", js.undefined)
+    @scala.inline
+    def setDrawImage(value: String): Self = this.set("drawImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawImage: Self = this.set("drawImage", js.undefined)
+    @scala.inline
+    def setDrawLink(value: String): Self = this.set("drawLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawLink: Self = this.set("drawLink", js.undefined)
+    @scala.inline
+    def setToggleBlockquote(value: String): Self = this.set("toggleBlockquote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleBlockquote: Self = this.set("toggleBlockquote", js.undefined)
+    @scala.inline
+    def setToggleBold(value: String): Self = this.set("toggleBold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleBold: Self = this.set("toggleBold", js.undefined)
+    @scala.inline
+    def setToggleCodeBlock(value: String): Self = this.set("toggleCodeBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleCodeBlock: Self = this.set("toggleCodeBlock", js.undefined)
+    @scala.inline
+    def setToggleFullScreen(value: String): Self = this.set("toggleFullScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleFullScreen: Self = this.set("toggleFullScreen", js.undefined)
+    @scala.inline
+    def setToggleHeadingBigger(value: String): Self = this.set("toggleHeadingBigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleHeadingBigger: Self = this.set("toggleHeadingBigger", js.undefined)
+    @scala.inline
+    def setToggleHeadingSmaller(value: String): Self = this.set("toggleHeadingSmaller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleHeadingSmaller: Self = this.set("toggleHeadingSmaller", js.undefined)
+    @scala.inline
+    def setToggleItalic(value: String): Self = this.set("toggleItalic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleItalic: Self = this.set("toggleItalic", js.undefined)
+    @scala.inline
+    def setToggleOrderedList(value: String): Self = this.set("toggleOrderedList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleOrderedList: Self = this.set("toggleOrderedList", js.undefined)
+    @scala.inline
+    def setTogglePreview(value: String): Self = this.set("togglePreview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTogglePreview: Self = this.set("togglePreview", js.undefined)
+    @scala.inline
+    def setToggleSideBySide(value: String): Self = this.set("toggleSideBySide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleSideBySide: Self = this.set("toggleSideBySide", js.undefined)
+    @scala.inline
+    def setToggleUnorderedList(value: String): Self = this.set("toggleUnorderedList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleUnorderedList: Self = this.set("toggleUnorderedList", js.undefined)
+  }
+  
 }
 

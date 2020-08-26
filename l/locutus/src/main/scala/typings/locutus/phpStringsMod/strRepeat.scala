@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object strRepeat extends js.Object {
   def apply(): js.Any = js.native
+  def apply(input: js.UndefOr[scala.Nothing], multiplier: js.Any): js.Any = js.native
   def apply(input: js.Any): js.Any = js.native
   def apply(input: js.Any, multiplier: js.Any): js.Any = js.native
 }

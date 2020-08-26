@@ -21,11 +21,30 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton extends js.Objec
 
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton {
   @scala.inline
-  def apply(postback: String = null, text: String = null): SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton = {
     val __obj = js.Dynamic.literal()
-    if (postback != null) __obj.updateDynamic("postback")(postback.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButtonOps[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPostback(value: String): Self = this.set("postback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostback: Self = this.set("postback", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

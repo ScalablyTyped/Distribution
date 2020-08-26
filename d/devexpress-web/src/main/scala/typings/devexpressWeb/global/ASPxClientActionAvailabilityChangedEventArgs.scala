@@ -10,11 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ASPxClientActionAvailabilityChangedEventArgs")
 @js.native
 class ASPxClientActionAvailabilityChangedEventArgs ()
-  extends typings.devexpressWeb.ASPxClientActionAvailabilityChangedEventArgs {
-  /**
-    * Gets the component name of the dashboard item.
-    */
-  /* CompleteClass */
-  override var ItemName: String = js.native
-}
+  extends typings.devexpressWeb.ASPxClientActionAvailabilityChangedEventArgs
 

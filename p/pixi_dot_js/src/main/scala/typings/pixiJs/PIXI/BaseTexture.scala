@@ -275,6 +275,7 @@ trait BaseTexture extends EventEmitter {
     * @returns {PIXI.BaseTexture} this
     */
   def setStyle(): BaseTexture = js.native
+  def setStyle(scaleMode: js.UndefOr[scala.Nothing], mipmap: MIPMAP_MODES): BaseTexture = js.native
   def setStyle(scaleMode: SCALE_MODES): BaseTexture = js.native
   def setStyle(scaleMode: SCALE_MODES, mipmap: MIPMAP_MODES): BaseTexture = js.native
   /**

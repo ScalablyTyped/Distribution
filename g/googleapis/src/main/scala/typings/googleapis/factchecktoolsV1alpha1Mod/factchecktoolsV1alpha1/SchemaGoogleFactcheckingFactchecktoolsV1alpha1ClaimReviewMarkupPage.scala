@@ -50,22 +50,48 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage extend
 
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage {
   @scala.inline
-  def apply(
-    claimReviewAuthor: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor = null,
-    claimReviewMarkups: js.Array[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup] = null,
-    name: String = null,
-    pageUrl: String = null,
-    publishDate: String = null,
-    versionId: String = null
-  ): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage = {
+  def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage = {
     val __obj = js.Dynamic.literal()
-    if (claimReviewAuthor != null) __obj.updateDynamic("claimReviewAuthor")(claimReviewAuthor.asInstanceOf[js.Any])
-    if (claimReviewMarkups != null) __obj.updateDynamic("claimReviewMarkups")(claimReviewMarkups.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pageUrl != null) __obj.updateDynamic("pageUrl")(pageUrl.asInstanceOf[js.Any])
-    if (publishDate != null) __obj.updateDynamic("publishDate")(publishDate.asInstanceOf[js.Any])
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage]
   }
+  @scala.inline
+  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPageOps[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClaimReviewAuthor(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor): Self = this.set("claimReviewAuthor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaimReviewAuthor: Self = this.set("claimReviewAuthor", js.undefined)
+    @scala.inline
+    def setClaimReviewMarkupsVarargs(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup*): Self = this.set("claimReviewMarkups", js.Array(value :_*))
+    @scala.inline
+    def setClaimReviewMarkups(value: js.Array[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup]): Self = this.set("claimReviewMarkups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaimReviewMarkups: Self = this.set("claimReviewMarkups", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPageUrl(value: String): Self = this.set("pageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageUrl: Self = this.set("pageUrl", js.undefined)
+    @scala.inline
+    def setPublishDate(value: String): Self = this.set("publishDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishDate: Self = this.set("publishDate", js.undefined)
+    @scala.inline
+    def setVersionId(value: String): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("versionId", js.undefined)
+  }
+  
 }
 

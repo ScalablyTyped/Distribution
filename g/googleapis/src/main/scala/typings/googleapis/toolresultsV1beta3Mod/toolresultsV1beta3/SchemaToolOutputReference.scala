@@ -28,16 +28,34 @@ trait SchemaToolOutputReference extends js.Object {
 
 object SchemaToolOutputReference {
   @scala.inline
-  def apply(
-    creationTime: SchemaTimestamp = null,
-    output: SchemaFileReference = null,
-    testCase: SchemaTestCaseReference = null
-  ): SchemaToolOutputReference = {
+  def apply(): SchemaToolOutputReference = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (testCase != null) __obj.updateDynamic("testCase")(testCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaToolOutputReference]
   }
+  @scala.inline
+  implicit class SchemaToolOutputReferenceOps[Self <: SchemaToolOutputReference] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: SchemaTimestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setOutput(value: SchemaFileReference): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutput: Self = this.set("output", js.undefined)
+    @scala.inline
+    def setTestCase(value: SchemaTestCaseReference): Self = this.set("testCase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestCase: Self = this.set("testCase", js.undefined)
+  }
+  
 }
 

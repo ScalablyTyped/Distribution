@@ -12,7 +12,7 @@ Lightweight full-text search engine in Javascript for browser search and offline
 | Keywords           | search, text retrieval, offline search, full text search |
 | # releases         | 1 |
 | # dependents       | 39 |
-| # downloads        | 685703 |
+| # downloads        | 688297 |
 | # stars            | 10 |
 
 ## Links

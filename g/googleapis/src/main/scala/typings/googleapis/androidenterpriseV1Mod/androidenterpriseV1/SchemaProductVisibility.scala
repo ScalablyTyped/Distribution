@@ -27,12 +27,38 @@ trait SchemaProductVisibility extends js.Object {
 
 object SchemaProductVisibility {
   @scala.inline
-  def apply(productId: String = null, trackIds: js.Array[String] = null, tracks: js.Array[String] = null): SchemaProductVisibility = {
+  def apply(): SchemaProductVisibility = {
     val __obj = js.Dynamic.literal()
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (trackIds != null) __obj.updateDynamic("trackIds")(trackIds.asInstanceOf[js.Any])
-    if (tracks != null) __obj.updateDynamic("tracks")(tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProductVisibility]
   }
+  @scala.inline
+  implicit class SchemaProductVisibilityOps[Self <: SchemaProductVisibility] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+    @scala.inline
+    def setTrackIdsVarargs(value: String*): Self = this.set("trackIds", js.Array(value :_*))
+    @scala.inline
+    def setTrackIds(value: js.Array[String]): Self = this.set("trackIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackIds: Self = this.set("trackIds", js.undefined)
+    @scala.inline
+    def setTracksVarargs(value: String*): Self = this.set("tracks", js.Array(value :_*))
+    @scala.inline
+    def setTracks(value: js.Array[String]): Self = this.set("tracks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTracks: Self = this.set("tracks", js.undefined)
+  }
+  
 }
 

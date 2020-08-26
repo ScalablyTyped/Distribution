@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddNamedRangeRequest extends js.Object {
-  var namedRange: js.UndefOr[NamedRange] = js.undefined
+  var namedRange: js.UndefOr[NamedRange] = js.native
 }
 
 object AddNamedRangeRequest {
   @scala.inline
-  def apply(namedRange: NamedRange = null): AddNamedRangeRequest = {
+  def apply(): AddNamedRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (namedRange != null) __obj.updateDynamic("namedRange")(namedRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddNamedRangeRequest]
   }
+  @scala.inline
+  implicit class AddNamedRangeRequestOps[Self <: AddNamedRangeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamedRange(value: NamedRange): Self = this.set("namedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedRange: Self = this.set("namedRange", js.undefined)
+  }
+  
 }
 

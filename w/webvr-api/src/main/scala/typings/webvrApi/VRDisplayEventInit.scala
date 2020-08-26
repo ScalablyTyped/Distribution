@@ -5,26 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VRDisplayEventInit extends EventInit {
-  var display: VRDisplay
-  var reason: js.UndefOr[VRDisplayEventReasonDtAlias] = js.undefined
+  var display: VRDisplay = js.native
+  var reason: js.UndefOr[VRDisplayEventReasonDtAlias] = js.native
 }
 
 object VRDisplayEventInit {
   @scala.inline
-  def apply(
-    display: VRDisplay,
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    composed: js.UndefOr[Boolean] = js.undefined,
-    reason: VRDisplayEventReasonDtAlias = null
-  ): VRDisplayEventInit = {
+  def apply(display: VRDisplay): VRDisplayEventInit = {
     val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[VRDisplayEventInit]
   }
+  @scala.inline
+  implicit class VRDisplayEventInitOps[Self <: VRDisplayEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplay(value: VRDisplay): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReason(value: VRDisplayEventReasonDtAlias): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+  }
+  
 }
 

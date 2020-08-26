@@ -7,33 +7,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Boolean extends js.Object {
-  var boolean: js.UndefOr[Cast[scala.Boolean]] = js.undefined
-  var date: js.UndefOr[Cast[typings.std.Date]] = js.undefined
-  var number: js.UndefOr[Cast[Double]] = js.undefined
+  var boolean: js.UndefOr[Cast[scala.Boolean]] = js.native
+  var date: js.UndefOr[Cast[typings.std.Date]] = js.native
+  var number: js.UndefOr[Cast[Double]] = js.native
   /**
     * Custom formatter for generic object values
     */
-  var `object`: js.UndefOr[Cast[Record[String, _]]] = js.undefined
-  var string: js.UndefOr[Cast[String]] = js.undefined
+  var `object`: js.UndefOr[Cast[Record[String, _]]] = js.native
+  var string: js.UndefOr[Cast[String]] = js.native
 }
 
 object Boolean {
   @scala.inline
-  def apply(
-    boolean: (scala.Boolean, /* context */ CastingContext) => String = null,
-    date: (typings.std.Date, /* context */ CastingContext) => String = null,
-    number: (Double, /* context */ CastingContext) => String = null,
-    `object`: (Record[String, _], /* context */ CastingContext) => String = null,
-    string: (String, /* context */ CastingContext) => String = null
-  ): Boolean = {
+  def apply(): Boolean = {
     val __obj = js.Dynamic.literal()
-    if (boolean != null) __obj.updateDynamic("boolean")(js.Any.fromFunction2(boolean))
-    if (date != null) __obj.updateDynamic("date")(js.Any.fromFunction2(date))
-    if (number != null) __obj.updateDynamic("number")(js.Any.fromFunction2(number))
-    if (`object` != null) __obj.updateDynamic("object")(js.Any.fromFunction2(`object`))
-    if (string != null) __obj.updateDynamic("string")(js.Any.fromFunction2(string))
     __obj.asInstanceOf[Boolean]
   }
+  @scala.inline
+  implicit class BooleanOps[Self <: Boolean] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoolean(value: (scala.Boolean, /* context */ CastingContext) => String): Self = this.set("boolean", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBoolean: Self = this.set("boolean", js.undefined)
+    @scala.inline
+    def setDate(value: (typings.std.Date, /* context */ CastingContext) => String): Self = this.set("date", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setNumber(value: (Double, /* context */ CastingContext) => String): Self = this.set("number", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteNumber: Self = this.set("number", js.undefined)
+    @scala.inline
+    def setObject(value: (Record[String, _], /* context */ CastingContext) => String): Self = this.set("object", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteObject: Self = this.set("object", js.undefined)
+    @scala.inline
+    def setString(value: (String, /* context */ CastingContext) => String): Self = this.set("string", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteString: Self = this.set("string", js.undefined)
+  }
+  
 }
 

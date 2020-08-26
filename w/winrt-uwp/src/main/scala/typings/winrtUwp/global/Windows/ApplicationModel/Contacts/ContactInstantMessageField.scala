@@ -39,29 +39,5 @@ class ContactInstantMessageField protected ()
     displayText: String,
     verb: Uri
   ) = this()
-  /** Gets the category for the contact data. */
-  /* CompleteClass */
-  override var category: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldCategory = js.native
-  /** Gets the display text for the Uniform Resource Identifier (URI) that starts an instant message. */
-  /* CompleteClass */
-  override var displayText: String = js.native
-  /** Gets the Uniform Resource Identifier (URI) that can start an instant message. */
-  /* CompleteClass */
-  override var launchUri: Uri = js.native
-  /** Gets the name of the field. */
-  /* CompleteClass */
-  override var name: String = js.native
-  /** Gets the name of the service used for sending instant messages. */
-  /* CompleteClass */
-  override var service: String = js.native
-  /** Gets the contact field type for the data. */
-  /* CompleteClass */
-  override var `type`: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType = js.native
-  /** Gets the user's name. */
-  /* CompleteClass */
-  override var userName: String = js.native
-  /** Gets the value of the contact data. */
-  /* CompleteClass */
-  override var value: String = js.native
 }
 

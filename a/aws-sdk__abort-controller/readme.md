@@ -12,7 +12,7 @@ A simple abort controller library
 | Keywords           | - |
 | # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 27697 |
+| # downloads        | 30610 |
 | # stars            | 0 |
 
 ## Links

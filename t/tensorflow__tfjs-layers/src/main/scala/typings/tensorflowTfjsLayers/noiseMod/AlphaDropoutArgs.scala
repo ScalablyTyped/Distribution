@@ -1,49 +1,48 @@
 package typings.tensorflowTfjsLayers.noiseMod
 
-import typings.tensorflowTfjsCore.distTypesMod.DataType
-import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AlphaDropoutArgs extends LayerArgs {
   /**
     * A 1-D `Tensor` of type `int32`, representing the
     * shape for randomly generated keep/drop flags.
     */
-  var noiseShape: js.UndefOr[Shape] = js.undefined
+  var noiseShape: js.UndefOr[Shape] = js.native
   /** drop probability.  */
-  var rate: Double
+  var rate: Double = js.native
 }
 
 object AlphaDropoutArgs {
   @scala.inline
-  def apply(
-    rate: Double,
-    batchInputShape: Shape = null,
-    batchSize: js.UndefOr[Double] = js.undefined,
-    dtype: DataType = null,
-    inputDType: DataType = null,
-    inputShape: Shape = null,
-    name: String = null,
-    noiseShape: Shape = null,
-    trainable: js.UndefOr[Boolean] = js.undefined,
-    weights: js.Array[Tensor[Rank]] = null
-  ): AlphaDropoutArgs = {
+  def apply(rate: Double): AlphaDropoutArgs = {
     val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
-    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType.asInstanceOf[js.Any])
-    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (noiseShape != null) __obj.updateDynamic("noiseShape")(noiseShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
-    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlphaDropoutArgs]
   }
+  @scala.inline
+  implicit class AlphaDropoutArgsOps[Self <: AlphaDropoutArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRate(value: Double): Self = this.set("rate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNoiseShapeVarargs(value: (Null | Double)*): Self = this.set("noiseShape", js.Array(value :_*))
+    @scala.inline
+    def setNoiseShape(value: Shape): Self = this.set("noiseShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoiseShape: Self = this.set("noiseShape", js.undefined)
+  }
+  
 }
 

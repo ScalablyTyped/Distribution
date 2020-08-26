@@ -24,6 +24,12 @@ object ^ extends js.Object {
   def fileInitInput(opts: MergeFileInput, version: Double): Double = js.native
   def initOptions(opts: MergeOptions, version: Double): Double = js.native
   def merge(repo: Repository, theirHead: AnnotatedCommit): js.Any = js.native
+  def merge(
+    repo: Repository,
+    theirHead: AnnotatedCommit,
+    mergeOpts: js.UndefOr[scala.Nothing],
+    checkoutOpts: CheckoutOptions
+  ): js.Any = js.native
   def merge(repo: Repository, theirHead: AnnotatedCommit, mergeOpts: MergeOptions): js.Any = js.native
   def merge(
     repo: Repository,

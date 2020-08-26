@@ -43,6 +43,7 @@ trait WebSocketClient extends js.Object {
     * The promise resolves once the WebSocket connection is closed.
     */
   def disconnect(): js.Promise[CloseEvent | Null] = js.native
+  def disconnect(code: js.UndefOr[scala.Nothing], reason: String): js.Promise[CloseEvent | Null] = js.native
   def disconnect(code: Double): js.Promise[CloseEvent | Null] = js.native
   def disconnect(code: Double, reason: String): js.Promise[CloseEvent | Null] = js.native
   /**

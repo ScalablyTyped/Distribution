@@ -7,85 +7,108 @@ import scala.scalajs.js.annotation._
 /**
   * A reference to a code defined by a terminology system
   */
+@js.native
 trait Coding extends Element {
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.undefined
+  var _code: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'display'.
     */
-  var _display: js.UndefOr[Element] = js.undefined
+  var _display: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'system'.
     */
-  var _system: js.UndefOr[Element] = js.undefined
+  var _system: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'userSelected'.
     */
-  var _userSelected: js.UndefOr[Element] = js.undefined
+  var _userSelected: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.undefined
+  var _version: js.UndefOr[Element] = js.native
   /**
     * Symbol in syntax defined by the system
     */
-  var code: js.UndefOr[typings.fhir.fhir.code] = js.undefined
+  var code: js.UndefOr[typings.fhir.fhir.code] = js.native
   /**
     * Representation defined by the system
     */
-  var display: js.UndefOr[String] = js.undefined
+  var display: js.UndefOr[String] = js.native
   /**
     * Identity of the terminology system
     */
-  var system: js.UndefOr[uri] = js.undefined
+  var system: js.UndefOr[uri] = js.native
   /**
     * If this coding was chosen directly by the user
     */
-  var userSelected: js.UndefOr[Boolean] = js.undefined
+  var userSelected: js.UndefOr[Boolean] = js.native
   /**
     * Version of the system - if relevant
     */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
 }
 
 object Coding {
   @scala.inline
-  def apply(
-    _code: Element = null,
-    _display: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _system: Element = null,
-    _userSelected: Element = null,
-    _version: Element = null,
-    code: code = null,
-    display: String = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    system: uri = null,
-    userSelected: js.UndefOr[Boolean] = js.undefined,
-    version: String = null
-  ): Coding = {
+  def apply(): Coding = {
     val __obj = js.Dynamic.literal()
-    if (_code != null) __obj.updateDynamic("_code")(_code.asInstanceOf[js.Any])
-    if (_display != null) __obj.updateDynamic("_display")(_display.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_system != null) __obj.updateDynamic("_system")(_system.asInstanceOf[js.Any])
-    if (_userSelected != null) __obj.updateDynamic("_userSelected")(_userSelected.asInstanceOf[js.Any])
-    if (_version != null) __obj.updateDynamic("_version")(_version.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
-    if (!js.isUndefined(userSelected)) __obj.updateDynamic("userSelected")(userSelected.get.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coding]
   }
+  @scala.inline
+  implicit class CodingOps[Self <: Coding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_code: Self = this.set("_code", js.undefined)
+    @scala.inline
+    def set_display(value: Element): Self = this.set("_display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_display: Self = this.set("_display", js.undefined)
+    @scala.inline
+    def set_system(value: Element): Self = this.set("_system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_system: Self = this.set("_system", js.undefined)
+    @scala.inline
+    def set_userSelected(value: Element): Self = this.set("_userSelected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_userSelected: Self = this.set("_userSelected", js.undefined)
+    @scala.inline
+    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_version: Self = this.set("_version", js.undefined)
+    @scala.inline
+    def setCode(value: code): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setSystem(value: uri): Self = this.set("system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystem: Self = this.set("system", js.undefined)
+    @scala.inline
+    def setUserSelected(value: Boolean): Self = this.set("userSelected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserSelected: Self = this.set("userSelected", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

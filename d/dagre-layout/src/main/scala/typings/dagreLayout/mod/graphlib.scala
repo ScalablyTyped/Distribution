@@ -26,6 +26,7 @@ object graphlib extends js.Object {
     def setEdge(params: Name): Graph = js.native
     def setEdge(params: Name, value: String): Graph = js.native
     def setEdge(sourceId: String, targetId: String): Graph = js.native
+    def setEdge(sourceId: String, targetId: String, options: js.UndefOr[scala.Nothing], value: String): Graph = js.native
     def setEdge(sourceId: String, targetId: String, options: StringDictionary[js.Any]): Graph = js.native
     def setEdge(sourceId: String, targetId: String, options: StringDictionary[js.Any], value: String): Graph = js.native
     def setGraph(label: GraphLabel): Graph = js.native

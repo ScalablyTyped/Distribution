@@ -30,20 +30,42 @@ trait HostProperties extends js.Object {
 
 object HostProperties {
   @scala.inline
-  def apply(
-    Cores: js.UndefOr[Integer] = js.undefined,
-    InstanceFamily: String = null,
-    InstanceType: String = null,
-    Sockets: js.UndefOr[Integer] = js.undefined,
-    TotalVCpus: js.UndefOr[Integer] = js.undefined
-  ): HostProperties = {
+  def apply(): HostProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Cores)) __obj.updateDynamic("Cores")(Cores.get.asInstanceOf[js.Any])
-    if (InstanceFamily != null) __obj.updateDynamic("InstanceFamily")(InstanceFamily.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Sockets)) __obj.updateDynamic("Sockets")(Sockets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalVCpus)) __obj.updateDynamic("TotalVCpus")(TotalVCpus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostProperties]
   }
+  @scala.inline
+  implicit class HostPropertiesOps[Self <: HostProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCores(value: Integer): Self = this.set("Cores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCores: Self = this.set("Cores", js.undefined)
+    @scala.inline
+    def setInstanceFamily(value: String): Self = this.set("InstanceFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceFamily: Self = this.set("InstanceFamily", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setSockets(value: Integer): Self = this.set("Sockets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSockets: Self = this.set("Sockets", js.undefined)
+    @scala.inline
+    def setTotalVCpus(value: Integer): Self = this.set("TotalVCpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalVCpus: Self = this.set("TotalVCpus", js.undefined)
+  }
+  
 }
 

@@ -34,21 +34,46 @@ trait UpdateIndexRequest extends js.Object {
 
 object UpdateIndexRequest {
   @scala.inline
-  def apply(
-    Id: IndexId,
-    CapacityUnits: CapacityUnitsConfiguration = null,
-    Description: Description = null,
-    DocumentMetadataConfigurationUpdates: DocumentMetadataConfigurationList = null,
-    Name: IndexName = null,
-    RoleArn: RoleArn = null
-  ): UpdateIndexRequest = {
+  def apply(Id: IndexId): UpdateIndexRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-    if (CapacityUnits != null) __obj.updateDynamic("CapacityUnits")(CapacityUnits.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DocumentMetadataConfigurationUpdates != null) __obj.updateDynamic("DocumentMetadataConfigurationUpdates")(DocumentMetadataConfigurationUpdates.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateIndexRequest]
   }
+  @scala.inline
+  implicit class UpdateIndexRequestOps[Self <: UpdateIndexRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: IndexId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCapacityUnits(value: CapacityUnitsConfiguration): Self = this.set("CapacityUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityUnits: Self = this.set("CapacityUnits", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDocumentMetadataConfigurationUpdatesVarargs(value: DocumentMetadataConfiguration*): Self = this.set("DocumentMetadataConfigurationUpdates", js.Array(value :_*))
+    @scala.inline
+    def setDocumentMetadataConfigurationUpdates(value: DocumentMetadataConfigurationList): Self = this.set("DocumentMetadataConfigurationUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentMetadataConfigurationUpdates: Self = this.set("DocumentMetadataConfigurationUpdates", js.undefined)
+    @scala.inline
+    def setName(value: IndexName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+  }
+  
 }
 

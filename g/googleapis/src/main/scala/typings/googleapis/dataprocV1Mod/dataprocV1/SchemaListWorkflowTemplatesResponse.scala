@@ -24,11 +24,32 @@ trait SchemaListWorkflowTemplatesResponse extends js.Object {
 
 object SchemaListWorkflowTemplatesResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, templates: js.Array[SchemaWorkflowTemplate] = null): SchemaListWorkflowTemplatesResponse = {
+  def apply(): SchemaListWorkflowTemplatesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListWorkflowTemplatesResponse]
   }
+  @scala.inline
+  implicit class SchemaListWorkflowTemplatesResponseOps[Self <: SchemaListWorkflowTemplatesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setTemplatesVarargs(value: SchemaWorkflowTemplate*): Self = this.set("templates", js.Array(value :_*))
+    @scala.inline
+    def setTemplates(value: js.Array[SchemaWorkflowTemplate]): Self = this.set("templates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplates: Self = this.set("templates", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofQuaternion extends Instantiable0[Quaternion] {
+  def multiplyQuaternionsFlat(
+    dst: js.Array[Double],
+    dstOffset: Double,
+    src0: js.Array[Double],
+    srcOffset: Double,
+    src1: js.Array[Double],
+    stcOffset1: Double
+  ): js.Array[Double] = js.native
   /**
   	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
   	 */

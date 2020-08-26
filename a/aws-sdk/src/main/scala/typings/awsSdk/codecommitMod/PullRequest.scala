@@ -54,32 +54,70 @@ trait PullRequest extends js.Object {
 
 object PullRequest {
   @scala.inline
-  def apply(
-    approvalRules: ApprovalRulesList = null,
-    authorArn: Arn = null,
-    clientRequestToken: ClientRequestToken = null,
-    creationDate: CreationDate = null,
-    description: Description = null,
-    lastActivityDate: LastModifiedDate = null,
-    pullRequestId: PullRequestId = null,
-    pullRequestStatus: PullRequestStatusEnum = null,
-    pullRequestTargets: PullRequestTargetList = null,
-    revisionId: RevisionId = null,
-    title: Title = null
-  ): PullRequest = {
+  def apply(): PullRequest = {
     val __obj = js.Dynamic.literal()
-    if (approvalRules != null) __obj.updateDynamic("approvalRules")(approvalRules.asInstanceOf[js.Any])
-    if (authorArn != null) __obj.updateDynamic("authorArn")(authorArn.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (lastActivityDate != null) __obj.updateDynamic("lastActivityDate")(lastActivityDate.asInstanceOf[js.Any])
-    if (pullRequestId != null) __obj.updateDynamic("pullRequestId")(pullRequestId.asInstanceOf[js.Any])
-    if (pullRequestStatus != null) __obj.updateDynamic("pullRequestStatus")(pullRequestStatus.asInstanceOf[js.Any])
-    if (pullRequestTargets != null) __obj.updateDynamic("pullRequestTargets")(pullRequestTargets.asInstanceOf[js.Any])
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullRequest]
   }
+  @scala.inline
+  implicit class PullRequestOps[Self <: PullRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApprovalRulesVarargs(value: ApprovalRule*): Self = this.set("approvalRules", js.Array(value :_*))
+    @scala.inline
+    def setApprovalRules(value: ApprovalRulesList): Self = this.set("approvalRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalRules: Self = this.set("approvalRules", js.undefined)
+    @scala.inline
+    def setAuthorArn(value: Arn): Self = this.set("authorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorArn: Self = this.set("authorArn", js.undefined)
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setCreationDate(value: CreationDate): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLastActivityDate(value: LastModifiedDate): Self = this.set("lastActivityDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastActivityDate: Self = this.set("lastActivityDate", js.undefined)
+    @scala.inline
+    def setPullRequestId(value: PullRequestId): Self = this.set("pullRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestId: Self = this.set("pullRequestId", js.undefined)
+    @scala.inline
+    def setPullRequestStatus(value: PullRequestStatusEnum): Self = this.set("pullRequestStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestStatus: Self = this.set("pullRequestStatus", js.undefined)
+    @scala.inline
+    def setPullRequestTargetsVarargs(value: PullRequestTarget*): Self = this.set("pullRequestTargets", js.Array(value :_*))
+    @scala.inline
+    def setPullRequestTargets(value: PullRequestTargetList): Self = this.set("pullRequestTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestTargets: Self = this.set("pullRequestTargets", js.undefined)
+    @scala.inline
+    def setRevisionId(value: RevisionId): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    @scala.inline
+    def setTitle(value: Title): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

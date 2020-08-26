@@ -4,24 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PastLogsOptions extends LogsOptions {
-  var toBlock: js.UndefOr[BlockNumber] = js.undefined
+  var toBlock: js.UndefOr[BlockNumber] = js.native
 }
 
 object PastLogsOptions {
   @scala.inline
-  def apply(
-    address: String | js.Array[String] = null,
-    fromBlock: BlockNumber = null,
-    toBlock: BlockNumber = null,
-    topics: js.Array[String | js.Array[String] | Null] = null
-  ): PastLogsOptions = {
+  def apply(): PastLogsOptions = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (fromBlock != null) __obj.updateDynamic("fromBlock")(fromBlock.asInstanceOf[js.Any])
-    if (toBlock != null) __obj.updateDynamic("toBlock")(toBlock.asInstanceOf[js.Any])
-    if (topics != null) __obj.updateDynamic("topics")(topics.asInstanceOf[js.Any])
     __obj.asInstanceOf[PastLogsOptions]
   }
+  @scala.inline
+  implicit class PastLogsOptionsOps[Self <: PastLogsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setToBlock(value: BlockNumber): Self = this.set("toBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToBlock: Self = this.set("toBlock", js.undefined)
+  }
+  
 }
 

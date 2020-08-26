@@ -22,6 +22,7 @@ object global extends js.Object {
     def bulkUploads(): BulkUploads = js.native
     def campaigns(): AdWordsSelector[Campaign] = js.native
     def createLabel(name: String): Unit = js.native
+    def createLabel(name: String, description: js.UndefOr[scala.Nothing], backgroundColor: String): Unit = js.native
     def createLabel(name: String, description: String): Unit = js.native
     def createLabel(name: String, description: String, backgroundColor: String): Unit = js.native
     def currentAccount(): CurrentAccount = js.native

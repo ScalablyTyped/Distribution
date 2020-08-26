@@ -34,22 +34,46 @@ trait AlarmHistoryItem extends js.Object {
 
 object AlarmHistoryItem {
   @scala.inline
-  def apply(
-    AlarmName: AlarmName = null,
-    AlarmType: AlarmType = null,
-    HistoryData: HistoryData = null,
-    HistoryItemType: HistoryItemType = null,
-    HistorySummary: HistorySummary = null,
-    Timestamp: Timestamp = null
-  ): AlarmHistoryItem = {
+  def apply(): AlarmHistoryItem = {
     val __obj = js.Dynamic.literal()
-    if (AlarmName != null) __obj.updateDynamic("AlarmName")(AlarmName.asInstanceOf[js.Any])
-    if (AlarmType != null) __obj.updateDynamic("AlarmType")(AlarmType.asInstanceOf[js.Any])
-    if (HistoryData != null) __obj.updateDynamic("HistoryData")(HistoryData.asInstanceOf[js.Any])
-    if (HistoryItemType != null) __obj.updateDynamic("HistoryItemType")(HistoryItemType.asInstanceOf[js.Any])
-    if (HistorySummary != null) __obj.updateDynamic("HistorySummary")(HistorySummary.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlarmHistoryItem]
   }
+  @scala.inline
+  implicit class AlarmHistoryItemOps[Self <: AlarmHistoryItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlarmName(value: AlarmName): Self = this.set("AlarmName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmName: Self = this.set("AlarmName", js.undefined)
+    @scala.inline
+    def setAlarmType(value: AlarmType): Self = this.set("AlarmType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmType: Self = this.set("AlarmType", js.undefined)
+    @scala.inline
+    def setHistoryData(value: HistoryData): Self = this.set("HistoryData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistoryData: Self = this.set("HistoryData", js.undefined)
+    @scala.inline
+    def setHistoryItemType(value: HistoryItemType): Self = this.set("HistoryItemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistoryItemType: Self = this.set("HistoryItemType", js.undefined)
+    @scala.inline
+    def setHistorySummary(value: HistorySummary): Self = this.set("HistorySummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistorySummary: Self = this.set("HistorySummary", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+  }
+  
 }
 

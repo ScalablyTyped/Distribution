@@ -26,18 +26,40 @@ trait ImportInstanceTaskDetails extends js.Object {
 
 object ImportInstanceTaskDetails {
   @scala.inline
-  def apply(
-    Description: String = null,
-    InstanceId: String = null,
-    Platform: PlatformValues = null,
-    Volumes: ImportInstanceVolumeDetailSet = null
-  ): ImportInstanceTaskDetails = {
+  def apply(): ImportInstanceTaskDetails = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
-    if (Volumes != null) __obj.updateDynamic("Volumes")(Volumes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportInstanceTaskDetails]
   }
+  @scala.inline
+  implicit class ImportInstanceTaskDetailsOps[Self <: ImportInstanceTaskDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setPlatform(value: PlatformValues): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("Platform", js.undefined)
+    @scala.inline
+    def setVolumesVarargs(value: ImportInstanceVolumeDetailItem*): Self = this.set("Volumes", js.Array(value :_*))
+    @scala.inline
+    def setVolumes(value: ImportInstanceVolumeDetailSet): Self = this.set("Volumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumes: Self = this.set("Volumes", js.undefined)
+  }
+  
 }
 

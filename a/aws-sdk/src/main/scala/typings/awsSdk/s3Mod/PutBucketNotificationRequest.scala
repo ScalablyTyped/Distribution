@@ -22,14 +22,30 @@ trait PutBucketNotificationRequest extends js.Object {
 
 object PutBucketNotificationRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    NotificationConfiguration: NotificationConfigurationDeprecated,
-    ContentMD5: ContentMD5 = null
-  ): PutBucketNotificationRequest = {
+  def apply(Bucket: BucketName, NotificationConfiguration: NotificationConfigurationDeprecated): PutBucketNotificationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], NotificationConfiguration = NotificationConfiguration.asInstanceOf[js.Any])
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketNotificationRequest]
   }
+  @scala.inline
+  implicit class PutBucketNotificationRequestOps[Self <: PutBucketNotificationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotificationConfiguration(value: NotificationConfigurationDeprecated): Self = this.set("NotificationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
+  }
+  
 }
 

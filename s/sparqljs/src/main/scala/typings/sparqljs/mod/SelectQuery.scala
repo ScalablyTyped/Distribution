@@ -2,27 +2,27 @@ package typings.sparqljs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.anon.Default
-import typings.sparqljs.sparqljsStrings.Asterisk
 import typings.sparqljs.sparqljsStrings.SELECT
 import typings.sparqljs.sparqljsStrings.query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectQuery
   extends Query
      with BaseQuery
      with Pattern {
-  var distinct: js.UndefOr[Boolean] = js.undefined
-  var from: js.UndefOr[Default] = js.undefined
-  var group: js.UndefOr[js.Array[Grouping]] = js.undefined
-  var having: js.UndefOr[js.Array[Expression]] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var order: js.UndefOr[js.Array[Ordering]] = js.undefined
-  var queryType: SELECT
-  var reduced: js.UndefOr[Boolean] = js.undefined
-  var variables: js.Array[Asterisk | Variable]
+  var distinct: js.UndefOr[Boolean] = js.native
+  var from: js.UndefOr[Default] = js.native
+  var group: js.UndefOr[js.Array[Grouping]] = js.native
+  var having: js.UndefOr[js.Array[Expression]] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[js.Array[Ordering]] = js.native
+  var queryType: SELECT = js.native
+  var reduced: js.UndefOr[Boolean] = js.native
+  var variables: js.Array[Variable | Wildcard] = js.native
 }
 
 object SelectQuery {
@@ -31,33 +31,68 @@ object SelectQuery {
     prefixes: StringDictionary[String],
     queryType: SELECT,
     `type`: query,
-    variables: js.Array[Asterisk | Variable],
-    base: String = null,
-    distinct: js.UndefOr[Boolean] = js.undefined,
-    from: Default = null,
-    group: js.Array[Grouping] = null,
-    having: js.Array[Expression] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    offset: js.UndefOr[Double] = js.undefined,
-    order: js.Array[Ordering] = null,
-    reduced: js.UndefOr[Boolean] = js.undefined,
-    values: js.Array[ValuePatternRow] = null,
-    where: js.Array[Pattern] = null
+    variables: js.Array[Variable | Wildcard]
   ): SelectQuery = {
     val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.get.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (having != null) __obj.updateDynamic("having")(having.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(reduced)) __obj.updateDynamic("reduced")(reduced.get.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectQuery]
   }
+  @scala.inline
+  implicit class SelectQueryOps[Self <: SelectQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryType(value: SELECT): Self = this.set("queryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVariablesVarargs(value: (Variable | Wildcard)*): Self = this.set("variables", js.Array(value :_*))
+    @scala.inline
+    def setVariables(value: js.Array[Variable | Wildcard]): Self = this.set("variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDistinct(value: Boolean): Self = this.set("distinct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistinct: Self = this.set("distinct", js.undefined)
+    @scala.inline
+    def setFrom(value: Default): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setGroupVarargs(value: Grouping*): Self = this.set("group", js.Array(value :_*))
+    @scala.inline
+    def setGroup(value: js.Array[Grouping]): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setHavingVarargs(value: Expression*): Self = this.set("having", js.Array(value :_*))
+    @scala.inline
+    def setHaving(value: js.Array[Expression]): Self = this.set("having", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHaving: Self = this.set("having", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOrderVarargs(value: Ordering*): Self = this.set("order", js.Array(value :_*))
+    @scala.inline
+    def setOrder(value: js.Array[Ordering]): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+    @scala.inline
+    def setReduced(value: Boolean): Self = this.set("reduced", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReduced: Self = this.set("reduced", js.undefined)
+  }
+  
 }
 

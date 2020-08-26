@@ -154,10 +154,6 @@ class Element protected () extends Node {
   var name: String = js.native
   var outputs: js.Array[BoundEvent] = js.native
   var references: js.Array[Reference] = js.native
-  /* CompleteClass */
-  override var sourceSpan: ParseSourceSpan = js.native
   var startSourceSpan: ParseSourceSpan | Null = js.native
-  /* CompleteClass */
-  override def visit[Result](visitor: Visitor[Result]): Result = js.native
 }
 

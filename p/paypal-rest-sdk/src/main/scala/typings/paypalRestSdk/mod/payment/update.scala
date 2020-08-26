@@ -12,6 +12,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object update extends js.Object {
   def apply(id: String, data: js.Array[UpdateRequest]): Unit = js.native
+  def apply(
+    id: String,
+    data: js.Array[UpdateRequest],
+    config: js.UndefOr[scala.Nothing],
+    cb: CallbackFunction[PaymentResponse]
+  ): Unit = js.native
   def apply(id: String, data: js.Array[UpdateRequest], config: RequestOptions): Unit = js.native
   def apply(
     id: String,

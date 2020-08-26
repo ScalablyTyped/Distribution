@@ -33,14 +33,37 @@ object UploadServerCertificateRequest {
   def apply(
     CertificateBody: certificateBodyType,
     PrivateKey: privateKeyType,
-    ServerCertificateName: serverCertificateNameType,
-    CertificateChain: certificateChainType = null,
-    Path: pathType = null
+    ServerCertificateName: serverCertificateNameType
   ): UploadServerCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateBody = CertificateBody.asInstanceOf[js.Any], PrivateKey = PrivateKey.asInstanceOf[js.Any], ServerCertificateName = ServerCertificateName.asInstanceOf[js.Any])
-    if (CertificateChain != null) __obj.updateDynamic("CertificateChain")(CertificateChain.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadServerCertificateRequest]
   }
+  @scala.inline
+  implicit class UploadServerCertificateRequestOps[Self <: UploadServerCertificateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateBody(value: certificateBodyType): Self = this.set("CertificateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrivateKey(value: privateKeyType): Self = this.set("PrivateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerCertificateName(value: serverCertificateNameType): Self = this.set("ServerCertificateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateChain(value: certificateChainType): Self = this.set("CertificateChain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateChain: Self = this.set("CertificateChain", js.undefined)
+    @scala.inline
+    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+  }
+  
 }
 

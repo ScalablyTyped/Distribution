@@ -23,6 +23,13 @@ class ListItemBuilder () extends js.Object {
     * @param tertiaryText tertiaryText
     */
   def addItem(image: Image, token: String, primaryText: TextField): ListItemBuilder = js.native
+  def addItem(
+    image: Image,
+    token: String,
+    primaryText: TextField,
+    secondaryText: js.UndefOr[scala.Nothing],
+    tertiaryText: TextField
+  ): ListItemBuilder = js.native
   def addItem(image: Image, token: String, primaryText: TextField, secondaryText: TextField): ListItemBuilder = js.native
   def addItem(
     image: Image,

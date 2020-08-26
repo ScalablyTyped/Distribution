@@ -12,19 +12,208 @@ trait DOMMatrix extends DOMMatrixReadOnly {
   def rotateAxisAngleSelf(x: Double, y: Double, z: Double, angle: Double): DOMMatrix = js.native
   def rotateFromVectorSelf(x: Double, y: Double): DOMMatrix = js.native
   def rotateSelf(angle: Double): DOMMatrix = js.native
+  def rotateSelf(angle: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
   def rotateSelf(angle: Double, originX: Double): DOMMatrix = js.native
   def rotateSelf(angle: Double, originX: Double, originY: Double): DOMMatrix = js.native
   def scale3dSelf(scale: Double): DOMMatrix = js.native
+  def scale3dSelf(
+    scale: Double,
+    originX: js.UndefOr[scala.Nothing],
+    originY: js.UndefOr[scala.Nothing],
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scale3dSelf(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
+  def scale3dSelf(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double, originZ: Double): DOMMatrix = js.native
   def scale3dSelf(scale: Double, originX: Double): DOMMatrix = js.native
+  def scale3dSelf(scale: Double, originX: Double, originY: js.UndefOr[scala.Nothing], originZ: Double): DOMMatrix = js.native
   def scale3dSelf(scale: Double, originX: Double, originY: Double): DOMMatrix = js.native
   def scale3dSelf(scale: Double, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
   def scaleNonUniformSelf(scaleX: Double): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: js.UndefOr[scala.Nothing],
+    originY: js.UndefOr[scala.Nothing],
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: js.UndefOr[scala.Nothing],
+    originY: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: js.UndefOr[scala.Nothing],
+    originY: Double,
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: Double,
+    originY: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: Double,
+    originY: Double,
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(scaleX: Double, scaleY: js.UndefOr[scala.Nothing], scaleZ: Double): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: Double,
+    originX: js.UndefOr[scala.Nothing],
+    originY: js.UndefOr[scala.Nothing],
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: Double,
+    originX: js.UndefOr[scala.Nothing],
+    originY: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: Double,
+    originX: js.UndefOr[scala.Nothing],
+    originY: Double,
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(scaleX: Double, scaleY: js.UndefOr[scala.Nothing], scaleZ: Double, originX: Double): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: Double,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: Double,
+    originX: Double,
+    originY: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: js.UndefOr[scala.Nothing],
+    scaleZ: Double,
+    originX: Double,
+    originY: Double,
+    originZ: Double
+  ): DOMMatrix = js.native
   def scaleNonUniformSelf(scaleX: Double, scaleY: Double): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: Double,
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: js.UndefOr[scala.Nothing],
+    originY: js.UndefOr[scala.Nothing],
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: Double,
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: js.UndefOr[scala.Nothing],
+    originY: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: Double,
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: js.UndefOr[scala.Nothing],
+    originY: Double,
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: js.UndefOr[scala.Nothing], originX: Double): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: Double,
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: Double,
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: Double,
+    originY: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: Double,
+    scaleZ: js.UndefOr[scala.Nothing],
+    originX: Double,
+    originY: Double,
+    originZ: Double
+  ): DOMMatrix = js.native
   def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: Double,
+    scaleZ: Double,
+    originX: js.UndefOr[scala.Nothing],
+    originY: js.UndefOr[scala.Nothing],
+    originZ: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: Double,
+    scaleZ: Double,
+    originX: js.UndefOr[scala.Nothing],
+    originY: Double
+  ): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: Double,
+    scaleZ: Double,
+    originX: js.UndefOr[scala.Nothing],
+    originY: Double,
+    originZ: Double
+  ): DOMMatrix = js.native
   def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double, originX: Double): DOMMatrix = js.native
+  def scaleNonUniformSelf(
+    scaleX: Double,
+    scaleY: Double,
+    scaleZ: Double,
+    originX: Double,
+    originY: js.UndefOr[scala.Nothing],
+    originZ: Double
+  ): DOMMatrix = js.native
   def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double, originX: Double, originY: Double): DOMMatrix = js.native
   def scaleNonUniformSelf(scaleX: Double, scaleY: Double, scaleZ: Double, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
   def scaleSelf(scale: Double): DOMMatrix = js.native
+  def scaleSelf(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
   def scaleSelf(scale: Double, originX: Double): DOMMatrix = js.native
   def scaleSelf(scale: Double, originX: Double, originY: Double): DOMMatrix = js.native
   def setMatrixValue(transformList: DOMMatrix): DOMMatrix = js.native

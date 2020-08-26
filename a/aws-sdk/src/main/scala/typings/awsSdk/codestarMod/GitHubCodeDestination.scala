@@ -44,13 +44,40 @@ object GitHubCodeDestination {
     owner: RepositoryOwner,
     privateRepository: RepositoryIsPrivate,
     token: GitHubPersonalToken,
-    `type`: RepositoryType,
-    description: RepositoryDescription = null
+    `type`: RepositoryType
   ): GitHubCodeDestination = {
     val __obj = js.Dynamic.literal(issuesEnabled = issuesEnabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], privateRepository = privateRepository.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitHubCodeDestination]
   }
+  @scala.inline
+  implicit class GitHubCodeDestinationOps[Self <: GitHubCodeDestination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIssuesEnabled(value: RepositoryEnableIssues): Self = this.set("issuesEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: RepositoryName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOwner(value: RepositoryOwner): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrivateRepository(value: RepositoryIsPrivate): Self = this.set("privateRepository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToken(value: GitHubPersonalToken): Self = this.set("token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: RepositoryType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: RepositoryDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+  }
+  
 }
 

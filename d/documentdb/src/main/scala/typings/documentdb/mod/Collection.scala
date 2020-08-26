@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Collection extends UniqueId {
   /** The default time to live in seconds for documents in a collection. */
-  var defaultTtl: js.UndefOr[Double] = js.undefined
+  var defaultTtl: js.UndefOr[Double] = js.native
   /** The indexing policy associated with the collection. */
-  var indexingPolicy: js.UndefOr[IndexingPolicy] = js.undefined
+  var indexingPolicy: js.UndefOr[IndexingPolicy] = js.native
   /**
     * This value is used to configure the partition key to be used for partitioning data into multiple partitions.
     *
@@ -16,22 +17,39 @@ trait Collection extends UniqueId {
     *
     * If the x-ms-offer-throughput is equal to or under 10,000, then the collection must not include a partitionKey definition.
     */
-  var partitionKey: js.UndefOr[CollectionPartitionKey] = js.undefined
+  var partitionKey: js.UndefOr[CollectionPartitionKey] = js.native
 }
 
 object Collection {
   @scala.inline
-  def apply(
-    id: String,
-    defaultTtl: js.UndefOr[Double] = js.undefined,
-    indexingPolicy: IndexingPolicy = null,
-    partitionKey: CollectionPartitionKey = null
-  ): Collection = {
+  def apply(id: String): Collection = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultTtl)) __obj.updateDynamic("defaultTtl")(defaultTtl.get.asInstanceOf[js.Any])
-    if (indexingPolicy != null) __obj.updateDynamic("indexingPolicy")(indexingPolicy.asInstanceOf[js.Any])
-    if (partitionKey != null) __obj.updateDynamic("partitionKey")(partitionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collection]
   }
+  @scala.inline
+  implicit class CollectionOps[Self <: Collection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultTtl(value: Double): Self = this.set("defaultTtl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTtl: Self = this.set("defaultTtl", js.undefined)
+    @scala.inline
+    def setIndexingPolicy(value: IndexingPolicy): Self = this.set("indexingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexingPolicy: Self = this.set("indexingPolicy", js.undefined)
+    @scala.inline
+    def setPartitionKey(value: CollectionPartitionKey): Self = this.set("partitionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionKey: Self = this.set("partitionKey", js.undefined)
+  }
+  
 }
 

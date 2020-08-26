@@ -7,8 +7,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Infragistics.ToolbarHelper")
 @js.native
 class ToolbarHelper ()
-  extends typings.igniteUi.Infragistics.ToolbarHelper {
-  /* CompleteClass */
-  override def analyse(el: js.Object): Unit = js.native
-}
+  extends typings.igniteUi.Infragistics.ToolbarHelper
 

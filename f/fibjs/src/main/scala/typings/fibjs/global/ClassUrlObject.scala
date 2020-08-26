@@ -33,7 +33,15 @@ class ClassUrlObject ()
     */
   def this(args: js.Object) = this()
   def this(url: String) = this()
+  def this(url: js.UndefOr[scala.Nothing], parseQueryString: Boolean) = this()
   def this(url: String, parseQueryString: Boolean) = this()
+  def this(
+    url: js.UndefOr[scala.Nothing],
+    parseQueryString: js.UndefOr[scala.Nothing],
+    slashesDenoteHost: Boolean
+  ) = this()
+  def this(url: js.UndefOr[scala.Nothing], parseQueryString: Boolean, slashesDenoteHost: Boolean) = this()
+  def this(url: String, parseQueryString: js.UndefOr[scala.Nothing], slashesDenoteHost: Boolean) = this()
   def this(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean) = this()
 }
 

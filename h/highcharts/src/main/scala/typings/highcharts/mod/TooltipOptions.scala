@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooltipOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable animation of
     * the tooltip.
     */
-  var animation: js.UndefOr[Boolean] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
     * for the tooltip.
@@ -17,18 +18,18 @@ trait TooltipOptions extends js.Object {
     * In styled mode, the stroke width is set in the `.highcharts-tooltip-box`
     * class.
     */
-  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the tooltip border.
     * When `undefined`, the border takes the color of the corresponding series
     * or point.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The radius of the rounded border
     * corners.
     */
-  var borderRadius: js.UndefOr[Double] = js.undefined
+  var borderRadius: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the tooltip
     * border.
@@ -36,18 +37,18 @@ trait TooltipOptions extends js.Object {
     * In styled mode, the stroke width is set in the `.highcharts-tooltip-box`
     * class.
     */
-  var borderWidth: js.UndefOr[Double] = js.undefined
+  var borderWidth: js.UndefOr[Double] = js.native
   /**
     * (Highstock) How many decimals to show for the `point.change` value when
     * the `series.compare` option is set. This is overridable in each series'
     * tooltip options object. The default is to preserve all decimals.
     */
-  var changeDecimals: js.UndefOr[Double] = js.undefined
+  var changeDecimals: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A CSS class name to apply to the
     * tooltip's container div, allowing unique CSS styling for each chart.
     */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The HTML of the cluster point's
     * in the tooltip. Works only with marker-clusters module and analogously to
@@ -56,7 +57,7 @@ trait TooltipOptions extends js.Object {
     * The cluster tooltip can be also formatted using `tooltip.formatter`
     * callback function and `point.isCluster` flag.
     */
-  var clusterFormat: js.UndefOr[js.Object] = js.undefined
+  var clusterFormat: js.UndefOr[js.Object] = js.native
   /**
     * (Highcharts, Highstock, Gantt) For series on a datetime axes, the date
     * format in the tooltip's header will by default be guessed based on the
@@ -64,16 +65,16 @@ trait TooltipOptions extends js.Object {
     * used for each unit. For an overview of the replacement codes, see
     * dateFormat.
     */
-  var dateTimeLabelFormats: js.UndefOr[Dictionary[String]] = js.undefined
+  var dateTimeLabelFormats: js.UndefOr[Dictionary[String]] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Distance from point to tooltip
     * in pixels.
     */
-  var distance: js.UndefOr[Double] = js.undefined
+  var distance: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the tooltip.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether the tooltip should
     * follow the mouse as it moves across columns, pie slices and other point
@@ -84,7 +85,7 @@ trait TooltipOptions extends js.Object {
     * For touch moves to behave the same way, followTouchMove must be `true`
     * also.
     */
-  var followPointer: js.UndefOr[Boolean] = js.undefined
+  var followPointer: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether the tooltip should
     * update as the finger moves on a touch device. If this is `true` and
@@ -97,12 +98,12 @@ trait TooltipOptions extends js.Object {
     * is true, the tooltip will jump from column to column as the user swipes
     * across the plot area.
     */
-  var followTouchMove: js.UndefOr[Boolean] = js.undefined
+  var followTouchMove: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A string to append to the
     * tooltip format.
     */
-  var footerFormat: js.UndefOr[String] = js.undefined
+  var footerFormat: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback function to format the
     * text of the tooltip from scratch. In case of single or shared tooltips, a
@@ -146,7 +147,7 @@ trait TooltipOptions extends js.Object {
     *
     * - **this.y (not shared) / this.points[i].y (shared)**: The y value.
     */
-  var formatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.undefined
+  var formatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The HTML of the tooltip header
     * line. Variables are enclosed by curly brackets. Available variables are
@@ -156,7 +157,7 @@ trait TooltipOptions extends js.Object {
     * For datetime axes, the `point.key` date format can be set using
     * `tooltip.xDateFormat`.
     */
-  var headerFormat: js.UndefOr[String] = js.undefined
+  var headerFormat: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of a symbol to use for
     * the border around the tooltip header. Applies only when tooltip.split is
@@ -166,23 +167,23 @@ trait TooltipOptions extends js.Object {
     * `Highcharts.SVGRenderer.prototype.symbols` the same way as for
     * series.marker.symbol.
     */
-  var headerShape: js.UndefOr[OptionsHeaderShapeValue] = js.undefined
+  var headerShape: js.UndefOr[OptionsHeaderShapeValue] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The number of milliseconds to
     * wait until the tooltip is hidden when mouse out from a point or chart.
     */
-  var hideDelay: js.UndefOr[Double] = js.undefined
+  var hideDelay: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The HTML of the null point's
     * line in the tooltip. Works analogously to pointFormat.
     */
-  var nullFormat: js.UndefOr[String] = js.undefined
+  var nullFormat: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback function to format the
     * text of the tooltip for visible null points. Works analogously to
     * formatter.
     */
-  var nullFormatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.undefined
+  var nullFormatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to allow the tooltip to
     * render outside the chart's SVG element box. By default (`false`), the
@@ -195,12 +196,12 @@ trait TooltipOptions extends js.Object {
     * Defaults to `true` if `chart.scrollablePlotArea` is activated, otherwise
     * `false`.
     */
-  var outside: js.UndefOr[Boolean] = js.undefined
+  var outside: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Padding inside the tooltip, in
     * pixels.
     */
-  var padding: js.UndefOr[Double] = js.undefined
+  var padding: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The HTML of the point's line in
     * the tooltip. Variables are enclosed by curly brackets. Available
@@ -213,13 +214,13 @@ trait TooltipOptions extends js.Object {
     * In styled mode, the dot is colored by a class name rather than the point
     * color.
     */
-  var pointFormat: js.UndefOr[String] = js.undefined
+  var pointFormat: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function for
     * formatting the HTML output for a single point in the tooltip. Like the
     * `pointFormat` string, but with more flexibility.
     */
-  var pointFormatter: js.UndefOr[FormatterCallbackFunction[Point]] = js.undefined
+  var pointFormatter: js.UndefOr[FormatterCallbackFunction[Point]] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function to place the
     * tooltip in a default position. The callback receives three parameters:
@@ -236,12 +237,12 @@ trait TooltipOptions extends js.Object {
     * The return should be an object containing x and y values, for example `{
     * x: 100, y: 100 }`.
     */
-  var positioner: js.UndefOr[TooltipPositionerCallbackFunction] = js.undefined
+  var positioner: js.UndefOr[TooltipPositionerCallbackFunction] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to apply a drop shadow
     * to the tooltip.
     */
-  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of a symbol to use for
     * the border around the tooltip. Can be one of: `"callout"`, `"circle"`, or
@@ -252,7 +253,7 @@ trait TooltipOptions extends js.Object {
     * `Highcharts.SVGRenderer.prototype.symbols` the same way as for
     * series.marker.symbol.
     */
-  var shape: js.UndefOr[TooltipShapeValue] = js.undefined
+  var shape: js.UndefOr[TooltipShapeValue] = js.native
   /**
     * (Highcharts, Highstock) When the tooltip is shared, the entire plot area
     * will capture mouse movement or touch events. Tooltip texts for series
@@ -264,7 +265,7 @@ trait TooltipOptions extends js.Object {
     * series, especially line-type series. The `tooltip.split` option takes
     * precedence over `tooltip.shared`.
     */
-  var shared: js.UndefOr[Boolean] = js.undefined
+  var shared: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock) Proximity snap for graphs or single points. It
     * defaults to 10 for mouse-powered devices and 25 for touch devices.
@@ -274,19 +275,19 @@ trait TooltipOptions extends js.Object {
     * stickyTracking is `true` (default) and when the tooltip is shared or
     * split.
     */
-  var snap: js.UndefOr[Double] = js.undefined
+  var snap: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock) Split the tooltip into one label per series, with
     * the header close to the axis. This is recommended over shared tooltips
     * for charts with multiple line series, generally making them easier to
     * read. This option takes precedence over `tooltip.shared`.
     */
-  var split: js.UndefOr[Boolean] = js.undefined
+  var split: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Prevents the tooltip from
     * switching or closing, when touched or pointed.
     */
-  var stickOnContact: js.UndefOr[Boolean] = js.undefined
+  var stickOnContact: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the tooltip. The
     * tooltip can also be styled through the CSS class `.highcharts-tooltip`.
@@ -295,118 +296,204 @@ trait TooltipOptions extends js.Object {
     * mouse events, so in order to use clickable tooltips, this value must be
     * set to `auto`.
     */
-  var style: js.UndefOr[CSSObject] = js.undefined
+  var style: js.UndefOr[CSSObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Use HTML to render the contents
     * of the tooltip instead of SVG. Using HTML allows advanced formatting like
     * tables and images in the tooltip. It is also recommended for rtl
     * languages as it works around rtl bugs in early Firefox.
     */
-  var useHTML: js.UndefOr[Boolean] = js.undefined
+  var useHTML: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) How many decimals to show in
     * each series' y value. This is overridable in each series' tooltip options
     * object. The default is to preserve all decimals.
     */
-  var valueDecimals: js.UndefOr[Double] = js.undefined
+  var valueDecimals: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A string to prepend to each
     * series' y value. Overridable in each series' tooltip options object.
     */
-  var valuePrefix: js.UndefOr[String] = js.undefined
+  var valuePrefix: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A string to append to each
     * series' y value. Overridable in each series' tooltip options object.
     */
-  var valueSuffix: js.UndefOr[String] = js.undefined
+  var valueSuffix: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Gantt) The format for the date in the tooltip
     * header if the X axis is a datetime axis. The default is a best guess
     * based on the smallest distance between points in the chart.
     */
-  var xDateFormat: js.UndefOr[String] = js.undefined
+  var xDateFormat: js.UndefOr[String] = js.native
 }
 
 object TooltipOptions {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    backgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderRadius: js.UndefOr[Double] = js.undefined,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    changeDecimals: js.UndefOr[Double] = js.undefined,
-    className: String = null,
-    clusterFormat: js.Object = null,
-    dateTimeLabelFormats: Dictionary[String] = null,
-    distance: js.UndefOr[Double] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    followPointer: js.UndefOr[Boolean] = js.undefined,
-    followTouchMove: js.UndefOr[Boolean] = js.undefined,
-    footerFormat: String = null,
-    formatter: TooltipFormatterCallbackFunction = null,
-    headerFormat: String = null,
-    headerShape: OptionsHeaderShapeValue = null,
-    hideDelay: js.UndefOr[Double] = js.undefined,
-    nullFormat: String = null,
-    nullFormatter: TooltipFormatterCallbackFunction = null,
-    outside: js.UndefOr[Boolean] = js.undefined,
-    padding: js.UndefOr[Double] = js.undefined,
-    pointFormat: String = null,
-    pointFormatter: FormatterCallbackFunction[Point] = null,
-    positioner: TooltipPositionerCallbackFunction = null,
-    shadow: Boolean | ShadowOptionsObject = null,
-    shape: TooltipShapeValue = null,
-    shared: js.UndefOr[Boolean] = js.undefined,
-    snap: js.UndefOr[Double] = js.undefined,
-    split: js.UndefOr[Boolean] = js.undefined,
-    stickOnContact: js.UndefOr[Boolean] = js.undefined,
-    style: CSSObject = null,
-    useHTML: js.UndefOr[Boolean] = js.undefined,
-    valueDecimals: js.UndefOr[Double] = js.undefined,
-    valuePrefix: String = null,
-    valueSuffix: String = null,
-    xDateFormat: String = null
-  ): TooltipOptions = {
+  def apply(): TooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(changeDecimals)) __obj.updateDynamic("changeDecimals")(changeDecimals.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clusterFormat != null) __obj.updateDynamic("clusterFormat")(clusterFormat.asInstanceOf[js.Any])
-    if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
-    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(followPointer)) __obj.updateDynamic("followPointer")(followPointer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(followTouchMove)) __obj.updateDynamic("followTouchMove")(followTouchMove.get.asInstanceOf[js.Any])
-    if (footerFormat != null) __obj.updateDynamic("footerFormat")(footerFormat.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat.asInstanceOf[js.Any])
-    if (headerShape != null) __obj.updateDynamic("headerShape")(headerShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDelay)) __obj.updateDynamic("hideDelay")(hideDelay.get.asInstanceOf[js.Any])
-    if (nullFormat != null) __obj.updateDynamic("nullFormat")(nullFormat.asInstanceOf[js.Any])
-    if (nullFormatter != null) __obj.updateDynamic("nullFormatter")(nullFormatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(outside)) __obj.updateDynamic("outside")(outside.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (pointFormat != null) __obj.updateDynamic("pointFormat")(pointFormat.asInstanceOf[js.Any])
-    if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(pointFormatter.asInstanceOf[js.Any])
-    if (positioner != null) __obj.updateDynamic("positioner")(positioner.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(split)) __obj.updateDynamic("split")(split.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickOnContact)) __obj.updateDynamic("stickOnContact")(stickOnContact.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueDecimals)) __obj.updateDynamic("valueDecimals")(valueDecimals.get.asInstanceOf[js.Any])
-    if (valuePrefix != null) __obj.updateDynamic("valuePrefix")(valuePrefix.asInstanceOf[js.Any])
-    if (valueSuffix != null) __obj.updateDynamic("valueSuffix")(valueSuffix.asInstanceOf[js.Any])
-    if (xDateFormat != null) __obj.updateDynamic("xDateFormat")(xDateFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
+  @scala.inline
+  implicit class TooltipOptionsOps[Self <: TooltipOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderRadius(value: Double): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setChangeDecimals(value: Double): Self = this.set("changeDecimals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeDecimals: Self = this.set("changeDecimals", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClusterFormat(value: js.Object): Self = this.set("clusterFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterFormat: Self = this.set("clusterFormat", js.undefined)
+    @scala.inline
+    def setDateTimeLabelFormats(value: Dictionary[String]): Self = this.set("dateTimeLabelFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateTimeLabelFormats: Self = this.set("dateTimeLabelFormats", js.undefined)
+    @scala.inline
+    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistance: Self = this.set("distance", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setFollowPointer(value: Boolean): Self = this.set("followPointer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFollowPointer: Self = this.set("followPointer", js.undefined)
+    @scala.inline
+    def setFollowTouchMove(value: Boolean): Self = this.set("followTouchMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFollowTouchMove: Self = this.set("followTouchMove", js.undefined)
+    @scala.inline
+    def setFooterFormat(value: String): Self = this.set("footerFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterFormat: Self = this.set("footerFormat", js.undefined)
+    @scala.inline
+    def setFormatter(value: TooltipFormatterCallbackFunction): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setHeaderFormat(value: String): Self = this.set("headerFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderFormat: Self = this.set("headerFormat", js.undefined)
+    @scala.inline
+    def setHeaderShape(value: OptionsHeaderShapeValue): Self = this.set("headerShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderShape: Self = this.set("headerShape", js.undefined)
+    @scala.inline
+    def setHideDelay(value: Double): Self = this.set("hideDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideDelay: Self = this.set("hideDelay", js.undefined)
+    @scala.inline
+    def setNullFormat(value: String): Self = this.set("nullFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNullFormat: Self = this.set("nullFormat", js.undefined)
+    @scala.inline
+    def setNullFormatter(value: TooltipFormatterCallbackFunction): Self = this.set("nullFormatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNullFormatter: Self = this.set("nullFormatter", js.undefined)
+    @scala.inline
+    def setOutside(value: Boolean): Self = this.set("outside", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutside: Self = this.set("outside", js.undefined)
+    @scala.inline
+    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPointFormat(value: String): Self = this.set("pointFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointFormat: Self = this.set("pointFormat", js.undefined)
+    @scala.inline
+    def setPointFormatter(value: FormatterCallbackFunction[Point]): Self = this.set("pointFormatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointFormatter: Self = this.set("pointFormatter", js.undefined)
+    @scala.inline
+    def setPositioner(value: TooltipPositionerCallbackFunction): Self = this.set("positioner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositioner: Self = this.set("positioner", js.undefined)
+    @scala.inline
+    def setShadow(value: Boolean | ShadowOptionsObject): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadow: Self = this.set("shadow", js.undefined)
+    @scala.inline
+    def setShape(value: TooltipShapeValue): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setShared(value: Boolean): Self = this.set("shared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShared: Self = this.set("shared", js.undefined)
+    @scala.inline
+    def setSnap(value: Double): Self = this.set("snap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnap: Self = this.set("snap", js.undefined)
+    @scala.inline
+    def setSplit(value: Boolean): Self = this.set("split", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplit: Self = this.set("split", js.undefined)
+    @scala.inline
+    def setStickOnContact(value: Boolean): Self = this.set("stickOnContact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStickOnContact: Self = this.set("stickOnContact", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setUseHTML(value: Boolean): Self = this.set("useHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseHTML: Self = this.set("useHTML", js.undefined)
+    @scala.inline
+    def setValueDecimals(value: Double): Self = this.set("valueDecimals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueDecimals: Self = this.set("valueDecimals", js.undefined)
+    @scala.inline
+    def setValuePrefix(value: String): Self = this.set("valuePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuePrefix: Self = this.set("valuePrefix", js.undefined)
+    @scala.inline
+    def setValueSuffix(value: String): Self = this.set("valueSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueSuffix: Self = this.set("valueSuffix", js.undefined)
+    @scala.inline
+    def setXDateFormat(value: String): Self = this.set("xDateFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXDateFormat: Self = this.set("xDateFormat", js.undefined)
+  }
+  
 }
 

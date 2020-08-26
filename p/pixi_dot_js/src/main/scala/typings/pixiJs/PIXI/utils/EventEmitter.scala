@@ -60,11 +60,19 @@ trait EventEmitter extends js.Object {
     */
   //tslint:disable-next-line:ban-types forbidden-types
   def off(event: String): this.type = js.native
+  def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
+  def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+  def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
   def off(event: String, fn: js.Function): this.type = js.native
+  def off(event: String, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   def off(event: String, fn: js.Function, context: js.Any): this.type = js.native
   def off(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
   def off(event: js.Symbol): this.type = js.native
+  def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
+  def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+  def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
   def off(event: js.Symbol, fn: js.Function): this.type = js.native
+  def off(event: js.Symbol, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   def off(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
   def off(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
   /**
@@ -113,11 +121,19 @@ trait EventEmitter extends js.Object {
     */
   //tslint:disable-next-line:ban-types forbidden-types
   def removeListener(event: String): this.type = js.native
+  def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
+  def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+  def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
   def removeListener(event: String, fn: js.Function): this.type = js.native
+  def removeListener(event: String, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   def removeListener(event: String, fn: js.Function, context: js.Any): this.type = js.native
   def removeListener(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
   def removeListener(event: js.Symbol): this.type = js.native
+  def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
+  def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+  def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
   def removeListener(event: js.Symbol, fn: js.Function): this.type = js.native
+  def removeListener(event: js.Symbol, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   def removeListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
   def removeListener(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
 }

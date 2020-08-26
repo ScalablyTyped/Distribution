@@ -5,51 +5,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClientOptions extends js.Object {
-  var ansiColors: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var autoConnect: js.UndefOr[Boolean] = js.undefined
-  var dynamicPublicPath: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var noInfo: js.UndefOr[Boolean] = js.undefined
-  var overlay: js.UndefOr[Boolean] = js.undefined
-  var overlayStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var overlayWarnings: js.UndefOr[Boolean] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var quiet: js.UndefOr[Boolean] = js.undefined
-  var reload: js.UndefOr[Boolean] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  var ansiColors: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var autoConnect: js.UndefOr[Boolean] = js.native
+  var dynamicPublicPath: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
+  var noInfo: js.UndefOr[Boolean] = js.native
+  var overlay: js.UndefOr[Boolean] = js.native
+  var overlayStyles: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var overlayWarnings: js.UndefOr[Boolean] = js.native
+  var path: js.UndefOr[String] = js.native
+  var quiet: js.UndefOr[Boolean] = js.native
+  var reload: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object ClientOptions {
   @scala.inline
-  def apply(
-    ansiColors: StringDictionary[js.Any] = null,
-    autoConnect: js.UndefOr[Boolean] = js.undefined,
-    dynamicPublicPath: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    noInfo: js.UndefOr[Boolean] = js.undefined,
-    overlay: js.UndefOr[Boolean] = js.undefined,
-    overlayStyles: StringDictionary[js.Any] = null,
-    overlayWarnings: js.UndefOr[Boolean] = js.undefined,
-    path: String = null,
-    quiet: js.UndefOr[Boolean] = js.undefined,
-    reload: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): ClientOptions = {
+  def apply(): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (ansiColors != null) __obj.updateDynamic("ansiColors")(ansiColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamicPublicPath)) __obj.updateDynamic("dynamicPublicPath")(dynamicPublicPath.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noInfo)) __obj.updateDynamic("noInfo")(noInfo.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.get.asInstanceOf[js.Any])
-    if (overlayStyles != null) __obj.updateDynamic("overlayStyles")(overlayStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlayWarnings)) __obj.updateDynamic("overlayWarnings")(overlayWarnings.get.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
+  @scala.inline
+  implicit class ClientOptionsOps[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnsiColors(value: StringDictionary[js.Any]): Self = this.set("ansiColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnsiColors: Self = this.set("ansiColors", js.undefined)
+    @scala.inline
+    def setAutoConnect(value: Boolean): Self = this.set("autoConnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoConnect: Self = this.set("autoConnect", js.undefined)
+    @scala.inline
+    def setDynamicPublicPath(value: Boolean): Self = this.set("dynamicPublicPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamicPublicPath: Self = this.set("dynamicPublicPath", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNoInfo(value: Boolean): Self = this.set("noInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoInfo: Self = this.set("noInfo", js.undefined)
+    @scala.inline
+    def setOverlay(value: Boolean): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    @scala.inline
+    def setOverlayStyles(value: StringDictionary[js.Any]): Self = this.set("overlayStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayStyles: Self = this.set("overlayStyles", js.undefined)
+    @scala.inline
+    def setOverlayWarnings(value: Boolean): Self = this.set("overlayWarnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayWarnings: Self = this.set("overlayWarnings", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setQuiet(value: Boolean): Self = this.set("quiet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuiet: Self = this.set("quiet", js.undefined)
+    @scala.inline
+    def setReload(value: Boolean): Self = this.set("reload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReload: Self = this.set("reload", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

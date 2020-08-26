@@ -38,23 +38,52 @@ trait ModifyVpcEndpointServiceConfigurationRequest extends js.Object {
 
 object ModifyVpcEndpointServiceConfigurationRequest {
   @scala.inline
-  def apply(
-    ServiceId: VpcEndpointServiceId,
-    AcceptanceRequired: js.UndefOr[Boolean] = js.undefined,
-    AddNetworkLoadBalancerArns: ValueStringList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    PrivateDnsName: String = null,
-    RemoveNetworkLoadBalancerArns: ValueStringList = null,
-    RemovePrivateDnsName: js.UndefOr[Boolean] = js.undefined
-  ): ModifyVpcEndpointServiceConfigurationRequest = {
+  def apply(ServiceId: VpcEndpointServiceId): ModifyVpcEndpointServiceConfigurationRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.get.asInstanceOf[js.Any])
-    if (AddNetworkLoadBalancerArns != null) __obj.updateDynamic("AddNetworkLoadBalancerArns")(AddNetworkLoadBalancerArns.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName.asInstanceOf[js.Any])
-    if (RemoveNetworkLoadBalancerArns != null) __obj.updateDynamic("RemoveNetworkLoadBalancerArns")(RemoveNetworkLoadBalancerArns.asInstanceOf[js.Any])
-    if (!js.isUndefined(RemovePrivateDnsName)) __obj.updateDynamic("RemovePrivateDnsName")(RemovePrivateDnsName.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcEndpointServiceConfigurationRequest]
   }
+  @scala.inline
+  implicit class ModifyVpcEndpointServiceConfigurationRequestOps[Self <: ModifyVpcEndpointServiceConfigurationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceId(value: VpcEndpointServiceId): Self = this.set("ServiceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptanceRequired(value: Boolean): Self = this.set("AcceptanceRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptanceRequired: Self = this.set("AcceptanceRequired", js.undefined)
+    @scala.inline
+    def setAddNetworkLoadBalancerArnsVarargs(value: String*): Self = this.set("AddNetworkLoadBalancerArns", js.Array(value :_*))
+    @scala.inline
+    def setAddNetworkLoadBalancerArns(value: ValueStringList): Self = this.set("AddNetworkLoadBalancerArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddNetworkLoadBalancerArns: Self = this.set("AddNetworkLoadBalancerArns", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setPrivateDnsName(value: String): Self = this.set("PrivateDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateDnsName: Self = this.set("PrivateDnsName", js.undefined)
+    @scala.inline
+    def setRemoveNetworkLoadBalancerArnsVarargs(value: String*): Self = this.set("RemoveNetworkLoadBalancerArns", js.Array(value :_*))
+    @scala.inline
+    def setRemoveNetworkLoadBalancerArns(value: ValueStringList): Self = this.set("RemoveNetworkLoadBalancerArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveNetworkLoadBalancerArns: Self = this.set("RemoveNetworkLoadBalancerArns", js.undefined)
+    @scala.inline
+    def setRemovePrivateDnsName(value: Boolean): Self = this.set("RemovePrivateDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemovePrivateDnsName: Self = this.set("RemovePrivateDnsName", js.undefined)
+  }
+  
 }
 

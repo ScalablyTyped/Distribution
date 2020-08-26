@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class DefaultNodeModel ()
   extends typings.stormReactDiagrams.defaultNodeModelMod.DefaultNodeModel {
   def this(name: String) = this()
+  def this(name: js.UndefOr[scala.Nothing], color: String) = this()
   def this(name: String, color: String) = this()
 }
 

@@ -1,6 +1,8 @@
 package typings.aframe.mod.THREE
 
+import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import typings.std.HTMLVideoElement
 import typings.three.constantsMod.Mapping
 import typings.three.constantsMod.PixelFormat
 import typings.three.constantsMod.TextureDataType
@@ -15,7 +17,7 @@ import scala.scalajs.js.annotation._
 class CanvasTexture protected ()
   extends typings.three.mod.CanvasTexture {
   def this(
-    canvas: HTMLImageElement,
+    canvas: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement,
     mapping: js.UndefOr[Mapping],
     wrapS: js.UndefOr[Wrapping],
     wrapT: js.UndefOr[Wrapping],

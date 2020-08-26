@@ -22,16 +22,34 @@ trait SetUserPoolMfaConfigResponse extends js.Object {
 
 object SetUserPoolMfaConfigResponse {
   @scala.inline
-  def apply(
-    MfaConfiguration: UserPoolMfaType = null,
-    SmsMfaConfiguration: SmsMfaConfigType = null,
-    SoftwareTokenMfaConfiguration: SoftwareTokenMfaConfigType = null
-  ): SetUserPoolMfaConfigResponse = {
+  def apply(): SetUserPoolMfaConfigResponse = {
     val __obj = js.Dynamic.literal()
-    if (MfaConfiguration != null) __obj.updateDynamic("MfaConfiguration")(MfaConfiguration.asInstanceOf[js.Any])
-    if (SmsMfaConfiguration != null) __obj.updateDynamic("SmsMfaConfiguration")(SmsMfaConfiguration.asInstanceOf[js.Any])
-    if (SoftwareTokenMfaConfiguration != null) __obj.updateDynamic("SoftwareTokenMfaConfiguration")(SoftwareTokenMfaConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetUserPoolMfaConfigResponse]
   }
+  @scala.inline
+  implicit class SetUserPoolMfaConfigResponseOps[Self <: SetUserPoolMfaConfigResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMfaConfiguration(value: UserPoolMfaType): Self = this.set("MfaConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMfaConfiguration: Self = this.set("MfaConfiguration", js.undefined)
+    @scala.inline
+    def setSmsMfaConfiguration(value: SmsMfaConfigType): Self = this.set("SmsMfaConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmsMfaConfiguration: Self = this.set("SmsMfaConfiguration", js.undefined)
+    @scala.inline
+    def setSoftwareTokenMfaConfiguration(value: SoftwareTokenMfaConfigType): Self = this.set("SoftwareTokenMfaConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSoftwareTokenMfaConfiguration: Self = this.set("SoftwareTokenMfaConfiguration", js.undefined)
+  }
+  
 }
 

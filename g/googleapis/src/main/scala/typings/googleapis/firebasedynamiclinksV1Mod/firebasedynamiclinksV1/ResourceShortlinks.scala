@@ -32,6 +32,7 @@ class ResourceShortlinks protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaCreateShortDynamicLinkResponse] = js.native
   def create(callback: BodyResponseCallback[SchemaCreateShortDynamicLinkResponse]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreateShortDynamicLinkResponse] = js.native
   def create(params: ParamsResourceShortlinksCreate): GaxiosPromise[SchemaCreateShortDynamicLinkResponse] = js.native
   def create(
     params: ParamsResourceShortlinksCreate,

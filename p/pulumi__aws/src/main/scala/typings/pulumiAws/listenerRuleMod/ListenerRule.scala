@@ -28,7 +28,7 @@ class ListenerRule protected () extends CustomResource {
     */
   val actions: Output_[js.Array[ListenerRuleAction]] = js.native
   /**
-    * The ARN of the rule (matches `id`)
+    * The Amazon Resource Name (ARN) of the target group.
     */
   val arn: Output_[String] = js.native
   /**
@@ -56,8 +56,10 @@ object ListenerRule extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ListenerRule = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ListenerRule = js.native
   def get(name: String, id: Input[ID], state: ListenerRuleState): ListenerRule = js.native
   def get(name: String, id: Input[ID], state: ListenerRuleState, opts: CustomResourceOptions): ListenerRule = js.native
   /**

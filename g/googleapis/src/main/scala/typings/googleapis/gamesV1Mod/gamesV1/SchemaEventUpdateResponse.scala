@@ -30,18 +30,44 @@ trait SchemaEventUpdateResponse extends js.Object {
 
 object SchemaEventUpdateResponse {
   @scala.inline
-  def apply(
-    batchFailures: js.Array[SchemaEventBatchRecordFailure] = null,
-    eventFailures: js.Array[SchemaEventRecordFailure] = null,
-    kind: String = null,
-    playerEvents: js.Array[SchemaPlayerEvent] = null
-  ): SchemaEventUpdateResponse = {
+  def apply(): SchemaEventUpdateResponse = {
     val __obj = js.Dynamic.literal()
-    if (batchFailures != null) __obj.updateDynamic("batchFailures")(batchFailures.asInstanceOf[js.Any])
-    if (eventFailures != null) __obj.updateDynamic("eventFailures")(eventFailures.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (playerEvents != null) __obj.updateDynamic("playerEvents")(playerEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEventUpdateResponse]
   }
+  @scala.inline
+  implicit class SchemaEventUpdateResponseOps[Self <: SchemaEventUpdateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchFailuresVarargs(value: SchemaEventBatchRecordFailure*): Self = this.set("batchFailures", js.Array(value :_*))
+    @scala.inline
+    def setBatchFailures(value: js.Array[SchemaEventBatchRecordFailure]): Self = this.set("batchFailures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchFailures: Self = this.set("batchFailures", js.undefined)
+    @scala.inline
+    def setEventFailuresVarargs(value: SchemaEventRecordFailure*): Self = this.set("eventFailures", js.Array(value :_*))
+    @scala.inline
+    def setEventFailures(value: js.Array[SchemaEventRecordFailure]): Self = this.set("eventFailures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventFailures: Self = this.set("eventFailures", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPlayerEventsVarargs(value: SchemaPlayerEvent*): Self = this.set("playerEvents", js.Array(value :_*))
+    @scala.inline
+    def setPlayerEvents(value: js.Array[SchemaPlayerEvent]): Self = this.set("playerEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayerEvents: Self = this.set("playerEvents", js.undefined)
+  }
+  
 }
 

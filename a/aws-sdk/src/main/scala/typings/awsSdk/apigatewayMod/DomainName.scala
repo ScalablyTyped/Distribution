@@ -70,40 +70,82 @@ trait DomainName extends js.Object {
 
 object DomainName {
   @scala.inline
-  def apply(
-    certificateArn: String = null,
-    certificateName: String = null,
-    certificateUploadDate: Timestamp = null,
-    distributionDomainName: String = null,
-    distributionHostedZoneId: String = null,
-    domainName: String = null,
-    domainNameStatus: DomainNameStatus = null,
-    domainNameStatusMessage: String = null,
-    endpointConfiguration: EndpointConfiguration = null,
-    regionalCertificateArn: String = null,
-    regionalCertificateName: String = null,
-    regionalDomainName: String = null,
-    regionalHostedZoneId: String = null,
-    securityPolicy: SecurityPolicy = null,
-    tags: MapOfStringToString = null
-  ): DomainName = {
+  def apply(): DomainName = {
     val __obj = js.Dynamic.literal()
-    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
-    if (certificateName != null) __obj.updateDynamic("certificateName")(certificateName.asInstanceOf[js.Any])
-    if (certificateUploadDate != null) __obj.updateDynamic("certificateUploadDate")(certificateUploadDate.asInstanceOf[js.Any])
-    if (distributionDomainName != null) __obj.updateDynamic("distributionDomainName")(distributionDomainName.asInstanceOf[js.Any])
-    if (distributionHostedZoneId != null) __obj.updateDynamic("distributionHostedZoneId")(distributionHostedZoneId.asInstanceOf[js.Any])
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (domainNameStatus != null) __obj.updateDynamic("domainNameStatus")(domainNameStatus.asInstanceOf[js.Any])
-    if (domainNameStatusMessage != null) __obj.updateDynamic("domainNameStatusMessage")(domainNameStatusMessage.asInstanceOf[js.Any])
-    if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration.asInstanceOf[js.Any])
-    if (regionalCertificateArn != null) __obj.updateDynamic("regionalCertificateArn")(regionalCertificateArn.asInstanceOf[js.Any])
-    if (regionalCertificateName != null) __obj.updateDynamic("regionalCertificateName")(regionalCertificateName.asInstanceOf[js.Any])
-    if (regionalDomainName != null) __obj.updateDynamic("regionalDomainName")(regionalDomainName.asInstanceOf[js.Any])
-    if (regionalHostedZoneId != null) __obj.updateDynamic("regionalHostedZoneId")(regionalHostedZoneId.asInstanceOf[js.Any])
-    if (securityPolicy != null) __obj.updateDynamic("securityPolicy")(securityPolicy.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainName]
   }
+  @scala.inline
+  implicit class DomainNameOps[Self <: DomainName] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateArn(value: String): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    @scala.inline
+    def setCertificateName(value: String): Self = this.set("certificateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateName: Self = this.set("certificateName", js.undefined)
+    @scala.inline
+    def setCertificateUploadDate(value: Timestamp): Self = this.set("certificateUploadDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateUploadDate: Self = this.set("certificateUploadDate", js.undefined)
+    @scala.inline
+    def setDistributionDomainName(value: String): Self = this.set("distributionDomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributionDomainName: Self = this.set("distributionDomainName", js.undefined)
+    @scala.inline
+    def setDistributionHostedZoneId(value: String): Self = this.set("distributionHostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributionHostedZoneId: Self = this.set("distributionHostedZoneId", js.undefined)
+    @scala.inline
+    def setDomainName(value: String): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setDomainNameStatus(value: DomainNameStatus): Self = this.set("domainNameStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainNameStatus: Self = this.set("domainNameStatus", js.undefined)
+    @scala.inline
+    def setDomainNameStatusMessage(value: String): Self = this.set("domainNameStatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainNameStatusMessage: Self = this.set("domainNameStatusMessage", js.undefined)
+    @scala.inline
+    def setEndpointConfiguration(value: EndpointConfiguration): Self = this.set("endpointConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointConfiguration: Self = this.set("endpointConfiguration", js.undefined)
+    @scala.inline
+    def setRegionalCertificateArn(value: String): Self = this.set("regionalCertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionalCertificateArn: Self = this.set("regionalCertificateArn", js.undefined)
+    @scala.inline
+    def setRegionalCertificateName(value: String): Self = this.set("regionalCertificateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionalCertificateName: Self = this.set("regionalCertificateName", js.undefined)
+    @scala.inline
+    def setRegionalDomainName(value: String): Self = this.set("regionalDomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionalDomainName: Self = this.set("regionalDomainName", js.undefined)
+    @scala.inline
+    def setRegionalHostedZoneId(value: String): Self = this.set("regionalHostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionalHostedZoneId: Self = this.set("regionalHostedZoneId", js.undefined)
+    @scala.inline
+    def setSecurityPolicy(value: SecurityPolicy): Self = this.set("securityPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityPolicy: Self = this.set("securityPolicy", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfStringToString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

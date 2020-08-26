@@ -30,19 +30,40 @@ trait GetAggregateDiscoveredResourceCountsRequest extends js.Object {
 
 object GetAggregateDiscoveredResourceCountsRequest {
   @scala.inline
-  def apply(
-    ConfigurationAggregatorName: ConfigurationAggregatorName,
-    Filters: ResourceCountFilters = null,
-    GroupByKey: ResourceCountGroupKey = null,
-    Limit: js.UndefOr[GroupByAPILimit] = js.undefined,
-    NextToken: NextToken = null
-  ): GetAggregateDiscoveredResourceCountsRequest = {
+  def apply(ConfigurationAggregatorName: ConfigurationAggregatorName): GetAggregateDiscoveredResourceCountsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (GroupByKey != null) __obj.updateDynamic("GroupByKey")(GroupByKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAggregateDiscoveredResourceCountsRequest]
   }
+  @scala.inline
+  implicit class GetAggregateDiscoveredResourceCountsRequestOps[Self <: GetAggregateDiscoveredResourceCountsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = this.set("ConfigurationAggregatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilters(value: ResourceCountFilters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setGroupByKey(value: ResourceCountGroupKey): Self = this.set("GroupByKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupByKey: Self = this.set("GroupByKey", js.undefined)
+    @scala.inline
+    def setLimit(value: GroupByAPILimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

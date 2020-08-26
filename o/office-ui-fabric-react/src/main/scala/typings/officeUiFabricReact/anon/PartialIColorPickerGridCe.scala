@@ -7,6 +7,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
+import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
 import scala.scalajs.js
@@ -14,87 +15,146 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/SwatchColorPicker/ColorPickerGridCell.types.IColorPickerGridCellProps> */
+@js.native
 trait PartialIColorPickerGridCe extends js.Object {
-  var borderWidth: js.UndefOr[Double] = js.undefined
-  var circle: js.UndefOr[Boolean] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var idPrefix: js.UndefOr[String] = js.undefined
-  var index: js.UndefOr[Double] = js.undefined
-  var item: js.UndefOr[IColorCellProps] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* item */ IColorCellProps, scala.Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* item */ IColorCellProps, scala.Unit]] = js.undefined
-  var onHover: js.UndefOr[js.Function1[/* item */ js.UndefOr[IColorCellProps], scala.Unit]] = js.undefined
-  var onKeyDown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLButtonElement], scala.Unit]] = js.undefined
-  var onMouseEnter: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.undefined
+  var borderWidth: js.UndefOr[Double] = js.native
+  var circle: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[String] = js.native
+  var idPrefix: js.UndefOr[String] = js.native
+  var index: js.UndefOr[Double] = js.native
+  var item: js.UndefOr[IColorCellProps] = js.native
+  var label: js.UndefOr[String] = js.native
+  var onClick: js.UndefOr[js.Function1[/* item */ IColorCellProps, scala.Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* item */ IColorCellProps, scala.Unit]] = js.native
+  var onHover: js.UndefOr[js.Function1[/* item */ js.UndefOr[IColorCellProps], scala.Unit]] = js.native
+  var onKeyDown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLButtonElement], scala.Unit]] = js.native
+  var onMouseEnter: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.native
   var onMouseLeave: js.UndefOr[
     js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], scala.Unit]
-  ] = js.undefined
-  var onMouseMove: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.undefined
+  ] = js.native
+  var onMouseMove: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.native
   var onWheel: js.UndefOr[
     js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], scala.Unit]
-  ] = js.undefined
-  var selected: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var selected: js.UndefOr[Boolean] = js.native
   var styles: js.UndefOr[
     IStyleFunctionOrObject[IColorPickerGridCellStyleProps, IColorPickerGridCellStyles]
-  ] = js.undefined
-  var theme: js.UndefOr[ITheme] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var theme: js.UndefOr[ITheme] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object PartialIColorPickerGridCe {
   @scala.inline
-  def apply(
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    circle: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    idPrefix: String = null,
-    index: js.UndefOr[Double] = js.undefined,
-    item: IColorCellProps = null,
-    label: String = null,
-    onClick: /* item */ IColorCellProps => scala.Unit = null,
-    onFocus: /* item */ IColorCellProps => scala.Unit = null,
-    onHover: /* item */ js.UndefOr[IColorCellProps] => scala.Unit = null,
-    onKeyDown: /* ev */ KeyboardEvent[HTMLButtonElement] => scala.Unit = null,
-    onMouseEnter: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Boolean = null,
-    onMouseLeave: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => scala.Unit = null,
-    onMouseMove: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Boolean = null,
-    onWheel: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => scala.Unit = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    styles: IStyleFunctionOrObject[IColorPickerGridCellStyleProps, IColorPickerGridCellStyles] = null,
-    theme: ITheme = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): PartialIColorPickerGridCe = {
+  def apply(): PartialIColorPickerGridCe = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(circle)) __obj.updateDynamic("circle")(circle.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1(onHover))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialIColorPickerGridCe]
   }
+  @scala.inline
+  implicit class PartialIColorPickerGridCeOps[Self <: PartialIColorPickerGridCe] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setCircle(value: Boolean): Self = this.set("circle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCircle: Self = this.set("circle", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdPrefix(value: String): Self = this.set("idPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdPrefix: Self = this.set("idPrefix", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setItem(value: IColorCellProps): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* item */ IColorCellProps => scala.Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnFocus(value: /* item */ IColorCellProps => scala.Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnHover(value: /* item */ js.UndefOr[IColorCellProps] => scala.Unit): Self = this.set("onHover", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnHover: Self = this.set("onHover", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: /* ev */ KeyboardEvent[HTMLButtonElement] => scala.Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Boolean): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => scala.Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Boolean): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setOnWheel(value: /* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => scala.Unit): Self = this.set("onWheel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+    @scala.inline
+    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setStylesFunction1(value: IColorPickerGridCellStyleProps => DeepPartial[IColorPickerGridCellStyles]): Self = this.set("styles", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStyles(value: IStyleFunctionOrObject[IColorPickerGridCellStyleProps, IColorPickerGridCellStyles]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

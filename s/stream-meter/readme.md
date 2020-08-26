@@ -11,7 +11,7 @@ A stream meter that both counts the bytes piped through it, and can optionally a
 | Keywords           | streams2, streams, meter, abort |
 | # releases         | 1 |
 | # dependents       | 22 |
-| # downloads        | 1322510 |
+| # downloads        | 1370670 |
 | # stars            | 3 |
 
 ## Links

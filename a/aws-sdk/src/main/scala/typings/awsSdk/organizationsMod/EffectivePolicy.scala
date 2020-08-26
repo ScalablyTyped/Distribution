@@ -26,18 +26,38 @@ trait EffectivePolicy extends js.Object {
 
 object EffectivePolicy {
   @scala.inline
-  def apply(
-    LastUpdatedTimestamp: Timestamp = null,
-    PolicyContent: PolicyContent = null,
-    PolicyType: EffectivePolicyType = null,
-    TargetId: PolicyTargetId = null
-  ): EffectivePolicy = {
+  def apply(): EffectivePolicy = {
     val __obj = js.Dynamic.literal()
-    if (LastUpdatedTimestamp != null) __obj.updateDynamic("LastUpdatedTimestamp")(LastUpdatedTimestamp.asInstanceOf[js.Any])
-    if (PolicyContent != null) __obj.updateDynamic("PolicyContent")(PolicyContent.asInstanceOf[js.Any])
-    if (PolicyType != null) __obj.updateDynamic("PolicyType")(PolicyType.asInstanceOf[js.Any])
-    if (TargetId != null) __obj.updateDynamic("TargetId")(TargetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectivePolicy]
   }
+  @scala.inline
+  implicit class EffectivePolicyOps[Self <: EffectivePolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastUpdatedTimestamp(value: Timestamp): Self = this.set("LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTimestamp: Self = this.set("LastUpdatedTimestamp", js.undefined)
+    @scala.inline
+    def setPolicyContent(value: PolicyContent): Self = this.set("PolicyContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyContent: Self = this.set("PolicyContent", js.undefined)
+    @scala.inline
+    def setPolicyType(value: EffectivePolicyType): Self = this.set("PolicyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyType: Self = this.set("PolicyType", js.undefined)
+    @scala.inline
+    def setTargetId(value: PolicyTargetId): Self = this.set("TargetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetId: Self = this.set("TargetId", js.undefined)
+  }
+  
 }
 

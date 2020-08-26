@@ -6,27 +6,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EncodingOverride extends js.Object {
-  var baseURL: js.UndefOr[String] = js.undefined
-  var encodingOverride: js.UndefOr[String] = js.undefined
-  var stateOverride: js.UndefOr[StateOverride] = js.undefined
-  var url: js.UndefOr[URLRecord] = js.undefined
+  var baseURL: js.UndefOr[String] = js.native
+  var encodingOverride: js.UndefOr[String] = js.native
+  var stateOverride: js.UndefOr[StateOverride] = js.native
+  var url: js.UndefOr[URLRecord] = js.native
 }
 
 object EncodingOverride {
   @scala.inline
-  def apply(
-    baseURL: String = null,
-    encodingOverride: String = null,
-    stateOverride: StateOverride = null,
-    url: URLRecord = null
-  ): EncodingOverride = {
+  def apply(): EncodingOverride = {
     val __obj = js.Dynamic.literal()
-    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
-    if (encodingOverride != null) __obj.updateDynamic("encodingOverride")(encodingOverride.asInstanceOf[js.Any])
-    if (stateOverride != null) __obj.updateDynamic("stateOverride")(stateOverride.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodingOverride]
   }
+  @scala.inline
+  implicit class EncodingOverrideOps[Self <: EncodingOverride] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseURL(value: String): Self = this.set("baseURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseURL: Self = this.set("baseURL", js.undefined)
+    @scala.inline
+    def setEncodingOverride(value: String): Self = this.set("encodingOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodingOverride: Self = this.set("encodingOverride", js.undefined)
+    @scala.inline
+    def setStateOverride(value: StateOverride): Self = this.set("stateOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateOverride: Self = this.set("stateOverride", js.undefined)
+    @scala.inline
+    def setUrl(value: URLRecord): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

@@ -22,7 +22,7 @@ trait MongoInstance extends js.Object {
   var isInstanceReady: Boolean = js.native
   var killerProcess: ChildProcess | Null = js.native
   var opts: MongodOps = js.native
-  var waitForPrimaryResolveFns: js.Array[js.Function] = js.native
+  var waitForPrimaryResolveFns: js.Array[js.Function1[/* value */ Boolean, Unit]] = js.native
   /**
     * Spawn an child to kill the parent and the mongod instance if both are Dead
     * @param parentPid Parent to kill

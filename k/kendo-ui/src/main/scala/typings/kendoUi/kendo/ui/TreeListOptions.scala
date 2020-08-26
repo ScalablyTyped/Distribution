@@ -5,156 +5,267 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeListOptions extends js.Object {
-  var autoBind: js.UndefOr[Boolean] = js.undefined
-  var beforeEdit: js.UndefOr[js.Function1[/* e */ TreeListBeforeEditEvent, Unit]] = js.undefined
-  var cancel: js.UndefOr[js.Function1[/* e */ TreeListCancelEvent, Unit]] = js.undefined
-  var cellClose: js.UndefOr[js.Function1[/* e */ TreeListCellCloseEvent, Unit]] = js.undefined
-  var change: js.UndefOr[js.Function1[/* e */ TreeListChangeEvent, Unit]] = js.undefined
-  var collapse: js.UndefOr[js.Function1[/* e */ TreeListCollapseEvent, Unit]] = js.undefined
-  var columnHide: js.UndefOr[js.Function1[/* e */ TreeListColumnHideEvent, Unit]] = js.undefined
-  var columnLock: js.UndefOr[js.Function1[/* e */ TreeListColumnLockEvent, Unit]] = js.undefined
-  var columnMenu: js.UndefOr[Boolean | TreeListColumnMenu] = js.undefined
-  var columnMenuInit: js.UndefOr[js.Function1[/* e */ TreeListColumnMenuInitEvent, Unit]] = js.undefined
-  var columnMenuOpen: js.UndefOr[js.Function1[/* e */ TreeListColumnMenuOpenEvent, Unit]] = js.undefined
-  var columnReorder: js.UndefOr[js.Function1[/* e */ TreeListColumnReorderEvent, Unit]] = js.undefined
-  var columnResize: js.UndefOr[js.Function1[/* e */ TreeListColumnResizeEvent, Unit]] = js.undefined
-  var columnShow: js.UndefOr[js.Function1[/* e */ TreeListColumnShowEvent, Unit]] = js.undefined
-  var columnUnlock: js.UndefOr[js.Function1[/* e */ TreeListColumnUnlockEvent, Unit]] = js.undefined
-  var columns: js.UndefOr[js.Array[TreeListColumn]] = js.undefined
-  var dataBinding: js.UndefOr[js.Function1[/* e */ TreeListDataBindingEvent, Unit]] = js.undefined
-  var dataBound: js.UndefOr[js.Function1[/* e */ TreeListDataBoundEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[js.Any | TreeListDataSource] = js.undefined
-  var drag: js.UndefOr[js.Function1[/* e */ TreeListDragEvent, Unit]] = js.undefined
-  var dragend: js.UndefOr[js.Function1[/* e */ TreeListDragendEvent, Unit]] = js.undefined
-  var dragstart: js.UndefOr[js.Function1[/* e */ TreeListDragstartEvent, Unit]] = js.undefined
-  var drop: js.UndefOr[js.Function1[/* e */ TreeListDropEvent, Unit]] = js.undefined
-  var edit: js.UndefOr[js.Function1[/* e */ TreeListEditEvent, Unit]] = js.undefined
-  var editable: js.UndefOr[Boolean | TreeListEditable] = js.undefined
-  var excel: js.UndefOr[TreeListExcel] = js.undefined
-  var excelExport: js.UndefOr[js.Function1[/* e */ TreeListExcelExportEvent, Unit]] = js.undefined
-  var expand: js.UndefOr[js.Function1[/* e */ TreeListExpandEvent, Unit]] = js.undefined
-  var filterMenuInit: js.UndefOr[js.Function1[/* e */ TreeListFilterMenuInitEvent, Unit]] = js.undefined
-  var filterMenuOpen: js.UndefOr[js.Function1[/* e */ TreeListFilterMenuOpenEvent, Unit]] = js.undefined
-  var filterable: js.UndefOr[Boolean | TreeListFilterable] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var messages: js.UndefOr[TreeListMessages] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var navigatable: js.UndefOr[Boolean] = js.undefined
-  var pageable: js.UndefOr[Boolean | TreeListPageable] = js.undefined
-  var pdf: js.UndefOr[TreeListPdf] = js.undefined
-  var pdfExport: js.UndefOr[js.Function1[/* e */ TreeListPdfExportEvent, Unit]] = js.undefined
-  var remove: js.UndefOr[js.Function1[/* e */ TreeListRemoveEvent, Unit]] = js.undefined
-  var reorderable: js.UndefOr[Boolean] = js.undefined
-  var resizable: js.UndefOr[Boolean] = js.undefined
-  var save: js.UndefOr[js.Function1[/* e */ TreeListSaveEvent, Unit]] = js.undefined
-  var saveChanges: js.UndefOr[js.Function1[/* e */ TreeListSaveChangesEvent, Unit]] = js.undefined
-  var scrollable: js.UndefOr[Boolean | js.Any] = js.undefined
-  var selectable: js.UndefOr[Boolean | String] = js.undefined
-  var sortable: js.UndefOr[Boolean | TreeListSortable] = js.undefined
-  var toolbar: js.UndefOr[js.Array[TreeListToolbarItem] | js.Any] = js.undefined
+  var autoBind: js.UndefOr[Boolean] = js.native
+  var beforeEdit: js.UndefOr[js.Function1[/* e */ TreeListBeforeEditEvent, Unit]] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ TreeListCancelEvent, Unit]] = js.native
+  var cellClose: js.UndefOr[js.Function1[/* e */ TreeListCellCloseEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ TreeListChangeEvent, Unit]] = js.native
+  var collapse: js.UndefOr[js.Function1[/* e */ TreeListCollapseEvent, Unit]] = js.native
+  var columnHide: js.UndefOr[js.Function1[/* e */ TreeListColumnHideEvent, Unit]] = js.native
+  var columnLock: js.UndefOr[js.Function1[/* e */ TreeListColumnLockEvent, Unit]] = js.native
+  var columnMenu: js.UndefOr[Boolean | TreeListColumnMenu] = js.native
+  var columnMenuInit: js.UndefOr[js.Function1[/* e */ TreeListColumnMenuInitEvent, Unit]] = js.native
+  var columnMenuOpen: js.UndefOr[js.Function1[/* e */ TreeListColumnMenuOpenEvent, Unit]] = js.native
+  var columnReorder: js.UndefOr[js.Function1[/* e */ TreeListColumnReorderEvent, Unit]] = js.native
+  var columnResize: js.UndefOr[js.Function1[/* e */ TreeListColumnResizeEvent, Unit]] = js.native
+  var columnShow: js.UndefOr[js.Function1[/* e */ TreeListColumnShowEvent, Unit]] = js.native
+  var columnUnlock: js.UndefOr[js.Function1[/* e */ TreeListColumnUnlockEvent, Unit]] = js.native
+  var columns: js.UndefOr[js.Array[TreeListColumn]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ TreeListDataBindingEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ TreeListDataBoundEvent, Unit]] = js.native
+  var dataSource: js.UndefOr[js.Any | TreeListDataSource] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ TreeListDragEvent, Unit]] = js.native
+  var dragend: js.UndefOr[js.Function1[/* e */ TreeListDragendEvent, Unit]] = js.native
+  var dragstart: js.UndefOr[js.Function1[/* e */ TreeListDragstartEvent, Unit]] = js.native
+  var drop: js.UndefOr[js.Function1[/* e */ TreeListDropEvent, Unit]] = js.native
+  var edit: js.UndefOr[js.Function1[/* e */ TreeListEditEvent, Unit]] = js.native
+  var editable: js.UndefOr[Boolean | TreeListEditable] = js.native
+  var excel: js.UndefOr[TreeListExcel] = js.native
+  var excelExport: js.UndefOr[js.Function1[/* e */ TreeListExcelExportEvent, Unit]] = js.native
+  var expand: js.UndefOr[js.Function1[/* e */ TreeListExpandEvent, Unit]] = js.native
+  var filterMenuInit: js.UndefOr[js.Function1[/* e */ TreeListFilterMenuInitEvent, Unit]] = js.native
+  var filterMenuOpen: js.UndefOr[js.Function1[/* e */ TreeListFilterMenuOpenEvent, Unit]] = js.native
+  var filterable: js.UndefOr[Boolean | TreeListFilterable] = js.native
+  var height: js.UndefOr[Double | String] = js.native
+  var messages: js.UndefOr[TreeListMessages] = js.native
+  var name: js.UndefOr[String] = js.native
+  var navigatable: js.UndefOr[Boolean] = js.native
+  var pageable: js.UndefOr[Boolean | TreeListPageable] = js.native
+  var pdf: js.UndefOr[TreeListPdf] = js.native
+  var pdfExport: js.UndefOr[js.Function1[/* e */ TreeListPdfExportEvent, Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ TreeListRemoveEvent, Unit]] = js.native
+  var reorderable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.native
+  var save: js.UndefOr[js.Function1[/* e */ TreeListSaveEvent, Unit]] = js.native
+  var saveChanges: js.UndefOr[js.Function1[/* e */ TreeListSaveChangesEvent, Unit]] = js.native
+  var scrollable: js.UndefOr[Boolean | js.Any] = js.native
+  var selectable: js.UndefOr[Boolean | String] = js.native
+  var sortable: js.UndefOr[Boolean | TreeListSortable] = js.native
+  var toolbar: js.UndefOr[js.Array[TreeListToolbarItem] | js.Any] = js.native
 }
 
 object TreeListOptions {
   @scala.inline
-  def apply(
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    beforeEdit: /* e */ TreeListBeforeEditEvent => Unit = null,
-    cancel: /* e */ TreeListCancelEvent => Unit = null,
-    cellClose: /* e */ TreeListCellCloseEvent => Unit = null,
-    change: /* e */ TreeListChangeEvent => Unit = null,
-    collapse: /* e */ TreeListCollapseEvent => Unit = null,
-    columnHide: /* e */ TreeListColumnHideEvent => Unit = null,
-    columnLock: /* e */ TreeListColumnLockEvent => Unit = null,
-    columnMenu: Boolean | TreeListColumnMenu = null,
-    columnMenuInit: /* e */ TreeListColumnMenuInitEvent => Unit = null,
-    columnMenuOpen: /* e */ TreeListColumnMenuOpenEvent => Unit = null,
-    columnReorder: /* e */ TreeListColumnReorderEvent => Unit = null,
-    columnResize: /* e */ TreeListColumnResizeEvent => Unit = null,
-    columnShow: /* e */ TreeListColumnShowEvent => Unit = null,
-    columnUnlock: /* e */ TreeListColumnUnlockEvent => Unit = null,
-    columns: js.Array[TreeListColumn] = null,
-    dataBinding: /* e */ TreeListDataBindingEvent => Unit = null,
-    dataBound: /* e */ TreeListDataBoundEvent => Unit = null,
-    dataSource: js.Any | TreeListDataSource = null,
-    drag: /* e */ TreeListDragEvent => Unit = null,
-    dragend: /* e */ TreeListDragendEvent => Unit = null,
-    dragstart: /* e */ TreeListDragstartEvent => Unit = null,
-    drop: /* e */ TreeListDropEvent => Unit = null,
-    edit: /* e */ TreeListEditEvent => Unit = null,
-    editable: Boolean | TreeListEditable = null,
-    excel: TreeListExcel = null,
-    excelExport: /* e */ TreeListExcelExportEvent => Unit = null,
-    expand: /* e */ TreeListExpandEvent => Unit = null,
-    filterMenuInit: /* e */ TreeListFilterMenuInitEvent => Unit = null,
-    filterMenuOpen: /* e */ TreeListFilterMenuOpenEvent => Unit = null,
-    filterable: Boolean | TreeListFilterable = null,
-    height: Double | String = null,
-    messages: TreeListMessages = null,
-    name: String = null,
-    navigatable: js.UndefOr[Boolean] = js.undefined,
-    pageable: Boolean | TreeListPageable = null,
-    pdf: TreeListPdf = null,
-    pdfExport: /* e */ TreeListPdfExportEvent => Unit = null,
-    remove: /* e */ TreeListRemoveEvent => Unit = null,
-    reorderable: js.UndefOr[Boolean] = js.undefined,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    save: /* e */ TreeListSaveEvent => Unit = null,
-    saveChanges: /* e */ TreeListSaveChangesEvent => Unit = null,
-    scrollable: Boolean | js.Any = null,
-    selectable: Boolean | String = null,
-    sortable: Boolean | TreeListSortable = null,
-    toolbar: js.Array[TreeListToolbarItem] | js.Any = null
-  ): TreeListOptions = {
+  def apply(): TreeListOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
-    if (beforeEdit != null) __obj.updateDynamic("beforeEdit")(js.Any.fromFunction1(beforeEdit))
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
-    if (cellClose != null) __obj.updateDynamic("cellClose")(js.Any.fromFunction1(cellClose))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction1(collapse))
-    if (columnHide != null) __obj.updateDynamic("columnHide")(js.Any.fromFunction1(columnHide))
-    if (columnLock != null) __obj.updateDynamic("columnLock")(js.Any.fromFunction1(columnLock))
-    if (columnMenu != null) __obj.updateDynamic("columnMenu")(columnMenu.asInstanceOf[js.Any])
-    if (columnMenuInit != null) __obj.updateDynamic("columnMenuInit")(js.Any.fromFunction1(columnMenuInit))
-    if (columnMenuOpen != null) __obj.updateDynamic("columnMenuOpen")(js.Any.fromFunction1(columnMenuOpen))
-    if (columnReorder != null) __obj.updateDynamic("columnReorder")(js.Any.fromFunction1(columnReorder))
-    if (columnResize != null) __obj.updateDynamic("columnResize")(js.Any.fromFunction1(columnResize))
-    if (columnShow != null) __obj.updateDynamic("columnShow")(js.Any.fromFunction1(columnShow))
-    if (columnUnlock != null) __obj.updateDynamic("columnUnlock")(js.Any.fromFunction1(columnUnlock))
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
-    if (dragend != null) __obj.updateDynamic("dragend")(js.Any.fromFunction1(dragend))
-    if (dragstart != null) __obj.updateDynamic("dragstart")(js.Any.fromFunction1(dragstart))
-    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
-    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (excel != null) __obj.updateDynamic("excel")(excel.asInstanceOf[js.Any])
-    if (excelExport != null) __obj.updateDynamic("excelExport")(js.Any.fromFunction1(excelExport))
-    if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction1(expand))
-    if (filterMenuInit != null) __obj.updateDynamic("filterMenuInit")(js.Any.fromFunction1(filterMenuInit))
-    if (filterMenuOpen != null) __obj.updateDynamic("filterMenuOpen")(js.Any.fromFunction1(filterMenuOpen))
-    if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.get.asInstanceOf[js.Any])
-    if (pageable != null) __obj.updateDynamic("pageable")(pageable.asInstanceOf[js.Any])
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
-    if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
-    if (!js.isUndefined(reorderable)) __obj.updateDynamic("reorderable")(reorderable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
-    if (saveChanges != null) __obj.updateDynamic("saveChanges")(js.Any.fromFunction1(saveChanges))
-    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListOptions]
   }
+  @scala.inline
+  implicit class TreeListOptionsOps[Self <: TreeListOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    @scala.inline
+    def setBeforeEdit(value: /* e */ TreeListBeforeEditEvent => Unit): Self = this.set("beforeEdit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeEdit: Self = this.set("beforeEdit", js.undefined)
+    @scala.inline
+    def setCancel(value: /* e */ TreeListCancelEvent => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setCellClose(value: /* e */ TreeListCellCloseEvent => Unit): Self = this.set("cellClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCellClose: Self = this.set("cellClose", js.undefined)
+    @scala.inline
+    def setChange(value: /* e */ TreeListChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setCollapse(value: /* e */ TreeListCollapseEvent => Unit): Self = this.set("collapse", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    @scala.inline
+    def setColumnHide(value: /* e */ TreeListColumnHideEvent => Unit): Self = this.set("columnHide", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteColumnHide: Self = this.set("columnHide", js.undefined)
+    @scala.inline
+    def setColumnLock(value: /* e */ TreeListColumnLockEvent => Unit): Self = this.set("columnLock", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteColumnLock: Self = this.set("columnLock", js.undefined)
+    @scala.inline
+    def setColumnMenu(value: Boolean | TreeListColumnMenu): Self = this.set("columnMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnMenu: Self = this.set("columnMenu", js.undefined)
+    @scala.inline
+    def setColumnMenuInit(value: /* e */ TreeListColumnMenuInitEvent => Unit): Self = this.set("columnMenuInit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteColumnMenuInit: Self = this.set("columnMenuInit", js.undefined)
+    @scala.inline
+    def setColumnMenuOpen(value: /* e */ TreeListColumnMenuOpenEvent => Unit): Self = this.set("columnMenuOpen", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteColumnMenuOpen: Self = this.set("columnMenuOpen", js.undefined)
+    @scala.inline
+    def setColumnReorder(value: /* e */ TreeListColumnReorderEvent => Unit): Self = this.set("columnReorder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteColumnReorder: Self = this.set("columnReorder", js.undefined)
+    @scala.inline
+    def setColumnResize(value: /* e */ TreeListColumnResizeEvent => Unit): Self = this.set("columnResize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteColumnResize: Self = this.set("columnResize", js.undefined)
+    @scala.inline
+    def setColumnShow(value: /* e */ TreeListColumnShowEvent => Unit): Self = this.set("columnShow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteColumnShow: Self = this.set("columnShow", js.undefined)
+    @scala.inline
+    def setColumnUnlock(value: /* e */ TreeListColumnUnlockEvent => Unit): Self = this.set("columnUnlock", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteColumnUnlock: Self = this.set("columnUnlock", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: TreeListColumn*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[TreeListColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setDataBinding(value: /* e */ TreeListDataBindingEvent => Unit): Self = this.set("dataBinding", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    @scala.inline
+    def setDataBound(value: /* e */ TreeListDataBoundEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any | TreeListDataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDrag(value: /* e */ TreeListDragEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDrag: Self = this.set("drag", js.undefined)
+    @scala.inline
+    def setDragend(value: /* e */ TreeListDragendEvent => Unit): Self = this.set("dragend", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragend: Self = this.set("dragend", js.undefined)
+    @scala.inline
+    def setDragstart(value: /* e */ TreeListDragstartEvent => Unit): Self = this.set("dragstart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragstart: Self = this.set("dragstart", js.undefined)
+    @scala.inline
+    def setDrop(value: /* e */ TreeListDropEvent => Unit): Self = this.set("drop", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDrop: Self = this.set("drop", js.undefined)
+    @scala.inline
+    def setEdit(value: /* e */ TreeListEditEvent => Unit): Self = this.set("edit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEdit: Self = this.set("edit", js.undefined)
+    @scala.inline
+    def setEditable(value: Boolean | TreeListEditable): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setExcel(value: TreeListExcel): Self = this.set("excel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcel: Self = this.set("excel", js.undefined)
+    @scala.inline
+    def setExcelExport(value: /* e */ TreeListExcelExportEvent => Unit): Self = this.set("excelExport", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteExcelExport: Self = this.set("excelExport", js.undefined)
+    @scala.inline
+    def setExpand(value: /* e */ TreeListExpandEvent => Unit): Self = this.set("expand", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteExpand: Self = this.set("expand", js.undefined)
+    @scala.inline
+    def setFilterMenuInit(value: /* e */ TreeListFilterMenuInitEvent => Unit): Self = this.set("filterMenuInit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilterMenuInit: Self = this.set("filterMenuInit", js.undefined)
+    @scala.inline
+    def setFilterMenuOpen(value: /* e */ TreeListFilterMenuOpenEvent => Unit): Self = this.set("filterMenuOpen", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilterMenuOpen: Self = this.set("filterMenuOpen", js.undefined)
+    @scala.inline
+    def setFilterable(value: Boolean | TreeListFilterable): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setMessages(value: TreeListMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNavigatable(value: Boolean): Self = this.set("navigatable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatable: Self = this.set("navigatable", js.undefined)
+    @scala.inline
+    def setPageable(value: Boolean | TreeListPageable): Self = this.set("pageable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageable: Self = this.set("pageable", js.undefined)
+    @scala.inline
+    def setPdf(value: TreeListPdf): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePdf: Self = this.set("pdf", js.undefined)
+    @scala.inline
+    def setPdfExport(value: /* e */ TreeListPdfExportEvent => Unit): Self = this.set("pdfExport", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePdfExport: Self = this.set("pdfExport", js.undefined)
+    @scala.inline
+    def setRemove(value: /* e */ TreeListRemoveEvent => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemove: Self = this.set("remove", js.undefined)
+    @scala.inline
+    def setReorderable(value: Boolean): Self = this.set("reorderable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReorderable: Self = this.set("reorderable", js.undefined)
+    @scala.inline
+    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizable: Self = this.set("resizable", js.undefined)
+    @scala.inline
+    def setSave(value: /* e */ TreeListSaveEvent => Unit): Self = this.set("save", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSave: Self = this.set("save", js.undefined)
+    @scala.inline
+    def setSaveChanges(value: /* e */ TreeListSaveChangesEvent => Unit): Self = this.set("saveChanges", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSaveChanges: Self = this.set("saveChanges", js.undefined)
+    @scala.inline
+    def setScrollable(value: Boolean | js.Any): Self = this.set("scrollable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollable: Self = this.set("scrollable", js.undefined)
+    @scala.inline
+    def setSelectable(value: Boolean | String): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    @scala.inline
+    def setSortable(value: Boolean | TreeListSortable): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortable: Self = this.set("sortable", js.undefined)
+    @scala.inline
+    def setToolbarVarargs(value: TreeListToolbarItem*): Self = this.set("toolbar", js.Array(value :_*))
+    @scala.inline
+    def setToolbar(value: js.Array[TreeListToolbarItem] | js.Any): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+  }
+  
 }
 

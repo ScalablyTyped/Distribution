@@ -14,10 +14,26 @@ trait DeleteTrafficMirrorFilterResult extends js.Object {
 
 object DeleteTrafficMirrorFilterResult {
   @scala.inline
-  def apply(TrafficMirrorFilterId: String = null): DeleteTrafficMirrorFilterResult = {
+  def apply(): DeleteTrafficMirrorFilterResult = {
     val __obj = js.Dynamic.literal()
-    if (TrafficMirrorFilterId != null) __obj.updateDynamic("TrafficMirrorFilterId")(TrafficMirrorFilterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTrafficMirrorFilterResult]
   }
+  @scala.inline
+  implicit class DeleteTrafficMirrorFilterResultOps[Self <: DeleteTrafficMirrorFilterResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrafficMirrorFilterId(value: String): Self = this.set("TrafficMirrorFilterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrafficMirrorFilterId: Self = this.set("TrafficMirrorFilterId", js.undefined)
+  }
+  
 }
 

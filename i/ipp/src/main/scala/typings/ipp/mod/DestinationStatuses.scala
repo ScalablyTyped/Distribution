@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DestinationStatuses extends js.Object {
-  var `destination-uri`: js.UndefOr[String] = js.undefined
-  var `images-completed`: js.UndefOr[Double] = js.undefined
-  var `transmission-status`: js.UndefOr[TransmissionStatus] = js.undefined
+  var `destination-uri`: js.UndefOr[String] = js.native
+  var `images-completed`: js.UndefOr[Double] = js.native
+  var `transmission-status`: js.UndefOr[TransmissionStatus] = js.native
 }
 
 object DestinationStatuses {
   @scala.inline
-  def apply(
-    `destination-uri`: String = null,
-    `images-completed`: js.UndefOr[Double] = js.undefined,
-    `transmission-status`: TransmissionStatus = null
-  ): DestinationStatuses = {
+  def apply(): DestinationStatuses = {
     val __obj = js.Dynamic.literal()
-    if (`destination-uri` != null) __obj.updateDynamic("destination-uri")(`destination-uri`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`images-completed`)) __obj.updateDynamic("images-completed")(`images-completed`.get.asInstanceOf[js.Any])
-    if (`transmission-status` != null) __obj.updateDynamic("transmission-status")(`transmission-status`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationStatuses]
   }
+  @scala.inline
+  implicit class DestinationStatusesOps[Self <: DestinationStatuses] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setDestination-uri`(value: String): Self = this.set("destination-uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteDestination-uri`: Self = this.set("destination-uri", js.undefined)
+    @scala.inline
+    def `setImages-completed`(value: Double): Self = this.set("images-completed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteImages-completed`: Self = this.set("images-completed", js.undefined)
+    @scala.inline
+    def `setTransmission-status`(value: TransmissionStatus): Self = this.set("transmission-status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteTransmission-status`: Self = this.set("transmission-status", js.undefined)
+  }
+  
 }
 

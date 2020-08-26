@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the ColorScaleConditionalFormat object, for use in `colorScaleConditionalFormat.set({ ... })`. */
+@js.native
 trait ColorScaleConditionalFormatUpdateData extends js.Object {
   /**
     *
@@ -13,15 +14,31 @@ trait ColorScaleConditionalFormatUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var criteria: js.UndefOr[ConditionalColorScaleCriteria] = js.undefined
+  var criteria: js.UndefOr[ConditionalColorScaleCriteria] = js.native
 }
 
 object ColorScaleConditionalFormatUpdateData {
   @scala.inline
-  def apply(criteria: ConditionalColorScaleCriteria = null): ColorScaleConditionalFormatUpdateData = {
+  def apply(): ColorScaleConditionalFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorScaleConditionalFormatUpdateData]
   }
+  @scala.inline
+  implicit class ColorScaleConditionalFormatUpdateDataOps[Self <: ColorScaleConditionalFormatUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCriteria(value: ConditionalColorScaleCriteria): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriteria: Self = this.set("criteria", js.undefined)
+  }
+  
 }
 

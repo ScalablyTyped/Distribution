@@ -53,12 +53,23 @@ trait ChaiUtils extends js.Object {
   def getPathInfo(obj: js.Object, path: String): PathInfo = js.native
   def getPathValue(obj: js.Object, path: String): js.UndefOr[js.Object] = js.native
   def getProperties(obj: js.Object): js.Array[String] = js.native
+  def hasProperty(obj: js.UndefOr[scala.Nothing], name: ObjectProperty): Boolean = js.native
   // Reexports from pathval:
-  def hasProperty(obj: js.UndefOr[Null | js.Object], name: ObjectProperty): Boolean = js.native
-  def inspect(obj: js.Any): Unit = js.native
-  def inspect(obj: js.Any, showHidden: Boolean): Unit = js.native
-  def inspect(obj: js.Any, showHidden: Boolean, depth: Double): Unit = js.native
-  def inspect(obj: js.Any, showHidden: Boolean, depth: Double, colors: Boolean): Unit = js.native
+  def hasProperty(obj: js.Object, name: ObjectProperty): Boolean = js.native
+  def hasProperty(obj: Null, name: ObjectProperty): Boolean = js.native
+  def inspect(obj: js.Any): String = js.native
+  def inspect(
+    obj: js.Any,
+    showHidden: js.UndefOr[scala.Nothing],
+    depth: js.UndefOr[scala.Nothing],
+    colors: Boolean
+  ): String = js.native
+  def inspect(obj: js.Any, showHidden: js.UndefOr[scala.Nothing], depth: Double): String = js.native
+  def inspect(obj: js.Any, showHidden: js.UndefOr[scala.Nothing], depth: Double, colors: Boolean): String = js.native
+  def inspect(obj: js.Any, showHidden: Boolean): String = js.native
+  def inspect(obj: js.Any, showHidden: Boolean, depth: js.UndefOr[scala.Nothing], colors: Boolean): String = js.native
+  def inspect(obj: js.Any, showHidden: Boolean, depth: Double): String = js.native
+  def inspect(obj: js.Any, showHidden: Boolean, depth: Double, colors: Boolean): String = js.native
   def isProxyEnabled(): Boolean = js.native
   def objDisplay(obj: js.Object): Unit = js.native
   def overwriteChainableMethod(ctx: js.Object, name: String, method: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native

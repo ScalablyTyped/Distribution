@@ -6,61 +6,96 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnimeAnimParams
   extends AnimeCallBack
      with /* AnyAnimatedProperty */ StringDictionary[js.Any] {
-  var delay: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
-  var duration: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
+  var delay: js.UndefOr[Double | FunctionBasedParameter] = js.native
+  var duration: js.UndefOr[Double | FunctionBasedParameter] = js.native
   var easing: js.UndefOr[
     EasingOptions | String | CustomEasingFunction | (js.Function1[/* el */ HTMLElement, String])
-  ] = js.undefined
-  var elasticity: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
-  var endDelay: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
-  var keyframes: js.UndefOr[js.Array[AnimeAnimParams]] = js.undefined
-  var round: js.UndefOr[Double | Boolean | FunctionBasedParameter] = js.undefined
-  var targets: js.UndefOr[AnimeTarget | js.Array[AnimeTarget]] = js.undefined
+  ] = js.native
+  var elasticity: js.UndefOr[Double | FunctionBasedParameter] = js.native
+  var endDelay: js.UndefOr[Double | FunctionBasedParameter] = js.native
+  var keyframes: js.UndefOr[js.Array[AnimeAnimParams]] = js.native
+  var round: js.UndefOr[Double | Boolean | FunctionBasedParameter] = js.native
+  var targets: js.UndefOr[AnimeTarget | js.Array[AnimeTarget]] = js.native
 }
 
 object AnimeAnimParams {
   @scala.inline
-  def apply(
-    StringDictionary: /* AnyAnimatedProperty */ StringDictionary[js.Any] = null,
-    begin: /* anim */ AnimeInstance => Unit = null,
-    change: /* anim */ AnimeInstance => Unit = null,
-    changeBegin: /* anim */ AnimeInstance => Unit = null,
-    changeComplete: /* anim */ AnimeInstance => Unit = null,
-    complete: /* anim */ AnimeInstance => Unit = null,
-    delay: Double | FunctionBasedParameter = null,
-    duration: Double | FunctionBasedParameter = null,
-    easing: EasingOptions | String | CustomEasingFunction | (js.Function1[/* el */ HTMLElement, String]) = null,
-    elasticity: Double | FunctionBasedParameter = null,
-    endDelay: Double | FunctionBasedParameter = null,
-    keyframes: js.Array[AnimeAnimParams] = null,
-    loopBegin: /* anim */ AnimeInstance => Unit = null,
-    loopComplete: /* anim */ AnimeInstance => Unit = null,
-    round: Double | Boolean | FunctionBasedParameter = null,
-    targets: js.UndefOr[Null | AnimeTarget | js.Array[AnimeTarget]] = js.undefined,
-    update: /* anim */ AnimeInstance => Unit = null
-  ): AnimeAnimParams = {
+  def apply(): AnimeAnimParams = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (changeBegin != null) __obj.updateDynamic("changeBegin")(js.Any.fromFunction1(changeBegin))
-    if (changeComplete != null) __obj.updateDynamic("changeComplete")(js.Any.fromFunction1(changeComplete))
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (elasticity != null) __obj.updateDynamic("elasticity")(elasticity.asInstanceOf[js.Any])
-    if (endDelay != null) __obj.updateDynamic("endDelay")(endDelay.asInstanceOf[js.Any])
-    if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes.asInstanceOf[js.Any])
-    if (loopBegin != null) __obj.updateDynamic("loopBegin")(js.Any.fromFunction1(loopBegin))
-    if (loopComplete != null) __obj.updateDynamic("loopComplete")(js.Any.fromFunction1(loopComplete))
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (!js.isUndefined(targets)) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction1(update))
     __obj.asInstanceOf[AnimeAnimParams]
   }
+  @scala.inline
+  implicit class AnimeAnimParamsOps[Self <: AnimeAnimParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelayFunction3(value: (/* element */ HTMLElement, /* index */ Double, /* length */ Double) => Double): Self = this.set("delay", js.Any.fromFunction3(value))
+    @scala.inline
+    def setDelay(value: Double | FunctionBasedParameter): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDurationFunction3(value: (/* element */ HTMLElement, /* index */ Double, /* length */ Double) => Double): Self = this.set("duration", js.Any.fromFunction3(value))
+    @scala.inline
+    def setDuration(value: Double | FunctionBasedParameter): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEasingFunction1(value: /* el */ HTMLElement => String): Self = this.set("easing", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEasingFunction3(
+      value: (/* el */ HTMLElement, /* index */ Double, /* length */ Double) => js.Function1[/* time */ Double, Double]
+    ): Self = this.set("easing", js.Any.fromFunction3(value))
+    @scala.inline
+    def setEasing(
+      value: EasingOptions | String | CustomEasingFunction | (js.Function1[/* el */ HTMLElement, String])
+    ): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setElasticityFunction3(value: (/* element */ HTMLElement, /* index */ Double, /* length */ Double) => Double): Self = this.set("elasticity", js.Any.fromFunction3(value))
+    @scala.inline
+    def setElasticity(value: Double | FunctionBasedParameter): Self = this.set("elasticity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticity: Self = this.set("elasticity", js.undefined)
+    @scala.inline
+    def setEndDelayFunction3(value: (/* element */ HTMLElement, /* index */ Double, /* length */ Double) => Double): Self = this.set("endDelay", js.Any.fromFunction3(value))
+    @scala.inline
+    def setEndDelay(value: Double | FunctionBasedParameter): Self = this.set("endDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDelay: Self = this.set("endDelay", js.undefined)
+    @scala.inline
+    def setKeyframesVarargs(value: AnimeAnimParams*): Self = this.set("keyframes", js.Array(value :_*))
+    @scala.inline
+    def setKeyframes(value: js.Array[AnimeAnimParams]): Self = this.set("keyframes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyframes: Self = this.set("keyframes", js.undefined)
+    @scala.inline
+    def setRoundFunction3(value: (/* element */ HTMLElement, /* index */ Double, /* length */ Double) => Double): Self = this.set("round", js.Any.fromFunction3(value))
+    @scala.inline
+    def setRound(value: Double | Boolean | FunctionBasedParameter): Self = this.set("round", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRound: Self = this.set("round", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: AnimeTarget*): Self = this.set("targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: AnimeTarget | js.Array[AnimeTarget]): Self = this.set("targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("targets", js.undefined)
+    @scala.inline
+    def setTargetsNull: Self = this.set("targets", null)
+  }
+  
 }
 

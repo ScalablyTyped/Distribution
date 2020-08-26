@@ -28,16 +28,14 @@ class ^ protected () extends VFileMessage {
   def this(reason: Error, position: Node) = this()
   def this(reason: Error, position: Point) = this()
   def this(reason: Error, position: Position) = this()
+  def this(reason: String, position: js.UndefOr[scala.Nothing], origin: String) = this()
   def this(reason: String, position: Node, origin: String) = this()
   def this(reason: String, position: Point, origin: String) = this()
   def this(reason: String, position: Position, origin: String) = this()
+  def this(reason: Error, position: js.UndefOr[scala.Nothing], origin: String) = this()
   def this(reason: Error, position: Node, origin: String) = this()
   def this(reason: Error, position: Point, origin: String) = this()
   def this(reason: Error, position: Position, origin: String) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 
 @JSImport("vfile-message", JSImport.Namespace)

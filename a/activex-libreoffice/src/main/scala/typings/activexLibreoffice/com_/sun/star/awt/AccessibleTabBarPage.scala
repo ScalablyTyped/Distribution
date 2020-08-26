@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * specifies accessibility support for a tabbar page.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleTabBarPage
   extends XAccessibleExtendedComponent
      with XAccessibleContext

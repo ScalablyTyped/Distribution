@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProxyHandler[T /* <: js.Object */] extends js.Object {
   @JSName("apply")
   var apply: js.UndefOr[
     js.Function3[/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any], _]
-  ] = js.undefined
+  ] = js.native
   var construct: js.UndefOr[
     js.Function3[/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any], js.Object]
-  ] = js.undefined
+  ] = js.native
   var defineProperty: js.UndefOr[
     js.Function3[
       /* target */ T, 
@@ -19,18 +20,18 @@ trait ProxyHandler[T /* <: js.Object */] extends js.Object {
       /* attributes */ PropertyDescriptor, 
       scala.Boolean
     ]
-  ] = js.undefined
-  var deleteProperty: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.undefined
-  var enumerate: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.undefined
-  var get: js.UndefOr[js.Function3[/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any, _]] = js.undefined
+  ] = js.native
+  var deleteProperty: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.native
+  var enumerate: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.native
+  var get: js.UndefOr[js.Function3[/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any, _]] = js.native
   var getOwnPropertyDescriptor: js.UndefOr[
     js.Function2[/* target */ T, /* p */ PropertyKey, js.UndefOr[PropertyDescriptor]]
-  ] = js.undefined
-  var getPrototypeOf: js.UndefOr[js.Function1[/* target */ T, js.Object | Null]] = js.undefined
-  var has: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.undefined
-  var isExtensible: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.undefined
-  var ownKeys: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.undefined
-  var preventExtensions: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.undefined
+  ] = js.native
+  var getPrototypeOf: js.UndefOr[js.Function1[/* target */ T, js.Object | Null]] = js.native
+  var has: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.native
+  var isExtensible: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.native
+  var ownKeys: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.native
+  var preventExtensions: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.native
   var set: js.UndefOr[
     js.Function4[
       /* target */ T, 
@@ -39,44 +40,86 @@ trait ProxyHandler[T /* <: js.Object */] extends js.Object {
       /* receiver */ js.Any, 
       scala.Boolean
     ]
-  ] = js.undefined
-  var setPrototypeOf: js.UndefOr[js.Function2[/* target */ T, /* v */ js.Any, scala.Boolean]] = js.undefined
+  ] = js.native
+  var setPrototypeOf: js.UndefOr[js.Function2[/* target */ T, /* v */ js.Any, scala.Boolean]] = js.native
 }
 
 object ProxyHandler {
   @scala.inline
-  def apply[/* <: js.Object */ T](
-    apply: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => _ = null,
-    construct: (/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any]) => js.Object = null,
-    defineProperty: (/* target */ T, /* p */ PropertyKey, /* attributes */ PropertyDescriptor) => scala.Boolean = null,
-    deleteProperty: (/* target */ T, /* p */ PropertyKey) => scala.Boolean = null,
-    enumerate: /* target */ T => js.Array[PropertyKey] = null,
-    get: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => _ = null,
-    getOwnPropertyDescriptor: (/* target */ T, /* p */ PropertyKey) => js.UndefOr[PropertyDescriptor] = null,
-    getPrototypeOf: /* target */ T => js.Object | Null = null,
-    has: (/* target */ T, /* p */ PropertyKey) => scala.Boolean = null,
-    isExtensible: /* target */ T => scala.Boolean = null,
-    ownKeys: /* target */ T => js.Array[PropertyKey] = null,
-    preventExtensions: /* target */ T => scala.Boolean = null,
-    set: (/* target */ T, /* p */ PropertyKey, /* value */ js.Any, /* receiver */ js.Any) => scala.Boolean = null,
-    setPrototypeOf: (/* target */ T, /* v */ js.Any) => scala.Boolean = null
-  ): ProxyHandler[T] = {
+  def apply[/* <: js.Object */ T](): ProxyHandler[T] = {
     val __obj = js.Dynamic.literal()
-    if (apply != null) __obj.updateDynamic("apply")(js.Any.fromFunction3(apply))
-    if (construct != null) __obj.updateDynamic("construct")(js.Any.fromFunction3(construct))
-    if (defineProperty != null) __obj.updateDynamic("defineProperty")(js.Any.fromFunction3(defineProperty))
-    if (deleteProperty != null) __obj.updateDynamic("deleteProperty")(js.Any.fromFunction2(deleteProperty))
-    if (enumerate != null) __obj.updateDynamic("enumerate")(js.Any.fromFunction1(enumerate))
-    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction3(get))
-    if (getOwnPropertyDescriptor != null) __obj.updateDynamic("getOwnPropertyDescriptor")(js.Any.fromFunction2(getOwnPropertyDescriptor))
-    if (getPrototypeOf != null) __obj.updateDynamic("getPrototypeOf")(js.Any.fromFunction1(getPrototypeOf))
-    if (has != null) __obj.updateDynamic("has")(js.Any.fromFunction2(has))
-    if (isExtensible != null) __obj.updateDynamic("isExtensible")(js.Any.fromFunction1(isExtensible))
-    if (ownKeys != null) __obj.updateDynamic("ownKeys")(js.Any.fromFunction1(ownKeys))
-    if (preventExtensions != null) __obj.updateDynamic("preventExtensions")(js.Any.fromFunction1(preventExtensions))
-    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction4(set))
-    if (setPrototypeOf != null) __obj.updateDynamic("setPrototypeOf")(js.Any.fromFunction2(setPrototypeOf))
     __obj.asInstanceOf[ProxyHandler[T]]
   }
+  @scala.inline
+  implicit class ProxyHandlerOps[Self <: ProxyHandler[_], /* <: js.Object */ T] (val x: Self with ProxyHandler[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApply(value: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => _): Self = this.set("apply", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteApply: Self = this.set("apply", js.undefined)
+    @scala.inline
+    def setConstruct(value: (/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any]) => js.Object): Self = this.set("construct", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteConstruct: Self = this.set("construct", js.undefined)
+    @scala.inline
+    def setDefineProperty(value: (/* target */ T, /* p */ PropertyKey, /* attributes */ PropertyDescriptor) => scala.Boolean): Self = this.set("defineProperty", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteDefineProperty: Self = this.set("defineProperty", js.undefined)
+    @scala.inline
+    def setDeleteProperty(value: (/* target */ T, /* p */ PropertyKey) => scala.Boolean): Self = this.set("deleteProperty", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDeleteProperty: Self = this.set("deleteProperty", js.undefined)
+    @scala.inline
+    def setEnumerate(value: /* target */ T => js.Array[PropertyKey]): Self = this.set("enumerate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEnumerate: Self = this.set("enumerate", js.undefined)
+    @scala.inline
+    def setGet(value: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => _): Self = this.set("get", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteGet: Self = this.set("get", js.undefined)
+    @scala.inline
+    def setGetOwnPropertyDescriptor(value: (/* target */ T, /* p */ PropertyKey) => js.UndefOr[PropertyDescriptor]): Self = this.set("getOwnPropertyDescriptor", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGetOwnPropertyDescriptor: Self = this.set("getOwnPropertyDescriptor", js.undefined)
+    @scala.inline
+    def setGetPrototypeOf(value: /* target */ T => js.Object | Null): Self = this.set("getPrototypeOf", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetPrototypeOf: Self = this.set("getPrototypeOf", js.undefined)
+    @scala.inline
+    def setHas(value: (/* target */ T, /* p */ PropertyKey) => scala.Boolean): Self = this.set("has", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHas: Self = this.set("has", js.undefined)
+    @scala.inline
+    def setIsExtensible(value: /* target */ T => scala.Boolean): Self = this.set("isExtensible", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIsExtensible: Self = this.set("isExtensible", js.undefined)
+    @scala.inline
+    def setOwnKeys(value: /* target */ T => js.Array[PropertyKey]): Self = this.set("ownKeys", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOwnKeys: Self = this.set("ownKeys", js.undefined)
+    @scala.inline
+    def setPreventExtensions(value: /* target */ T => scala.Boolean): Self = this.set("preventExtensions", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePreventExtensions: Self = this.set("preventExtensions", js.undefined)
+    @scala.inline
+    def setSet(
+      value: (/* target */ T, /* p */ PropertyKey, /* value */ js.Any, /* receiver */ js.Any) => scala.Boolean
+    ): Self = this.set("set", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteSet: Self = this.set("set", js.undefined)
+    @scala.inline
+    def setSetPrototypeOf(value: (/* target */ T, /* v */ js.Any) => scala.Boolean): Self = this.set("setPrototypeOf", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetPrototypeOf: Self = this.set("setPrototypeOf", js.undefined)
+  }
+  
 }
 

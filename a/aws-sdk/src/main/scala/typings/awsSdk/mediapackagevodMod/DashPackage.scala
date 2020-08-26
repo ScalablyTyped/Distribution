@@ -31,19 +31,44 @@ trait DashPackage extends js.Object {
 
 object DashPackage {
   @scala.inline
-  def apply(
-    DashManifests: listOfDashManifest,
-    Encryption: DashEncryption = null,
-    PeriodTriggers: listOfPeriodTriggersElement = null,
-    SegmentDurationSeconds: js.UndefOr[integer] = js.undefined,
-    SegmentTemplateFormat: SegmentTemplateFormat = null
-  ): DashPackage = {
+  def apply(DashManifests: listOfDashManifest): DashPackage = {
     val __obj = js.Dynamic.literal(DashManifests = DashManifests.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (PeriodTriggers != null) __obj.updateDynamic("PeriodTriggers")(PeriodTriggers.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.get.asInstanceOf[js.Any])
-    if (SegmentTemplateFormat != null) __obj.updateDynamic("SegmentTemplateFormat")(SegmentTemplateFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashPackage]
   }
+  @scala.inline
+  implicit class DashPackageOps[Self <: DashPackage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDashManifestsVarargs(value: DashManifest*): Self = this.set("DashManifests", js.Array(value :_*))
+    @scala.inline
+    def setDashManifests(value: listOfDashManifest): Self = this.set("DashManifests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncryption(value: DashEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setPeriodTriggersVarargs(value: PeriodTriggersElement*): Self = this.set("PeriodTriggers", js.Array(value :_*))
+    @scala.inline
+    def setPeriodTriggers(value: listOfPeriodTriggersElement): Self = this.set("PeriodTriggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriodTriggers: Self = this.set("PeriodTriggers", js.undefined)
+    @scala.inline
+    def setSegmentDurationSeconds(value: integer): Self = this.set("SegmentDurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentDurationSeconds: Self = this.set("SegmentDurationSeconds", js.undefined)
+    @scala.inline
+    def setSegmentTemplateFormat(value: SegmentTemplateFormat): Self = this.set("SegmentTemplateFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentTemplateFormat: Self = this.set("SegmentTemplateFormat", js.undefined)
+  }
+  
 }
 

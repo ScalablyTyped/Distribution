@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ui-box/dist/enhancers/overflow", JSImport.Namespace)
+@JSImport("ui-box/dist/src/enhancers/overflow", JSImport.Namespace)
 @js.native
 object overflowMod extends js.Object {
   val propAliases: PropAliases = js.native

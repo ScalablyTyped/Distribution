@@ -75,38 +75,78 @@ trait SchemaOrganization extends js.Object {
 
 object SchemaOrganization {
   @scala.inline
-  def apply(
-    current: js.UndefOr[Boolean] = js.undefined,
-    department: String = null,
-    domain: String = null,
-    endDate: SchemaDate = null,
-    formattedType: String = null,
-    jobDescription: String = null,
-    location: String = null,
-    metadata: SchemaFieldMetadata = null,
-    name: String = null,
-    phoneticName: String = null,
-    startDate: SchemaDate = null,
-    symbol: String = null,
-    title: String = null,
-    `type`: String = null
-  ): SchemaOrganization = {
+  def apply(): SchemaOrganization = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.get.asInstanceOf[js.Any])
-    if (department != null) __obj.updateDynamic("department")(department.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType.asInstanceOf[js.Any])
-    if (jobDescription != null) __obj.updateDynamic("jobDescription")(jobDescription.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (phoneticName != null) __obj.updateDynamic("phoneticName")(phoneticName.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrganization]
   }
+  @scala.inline
+  implicit class SchemaOrganizationOps[Self <: SchemaOrganization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrent(value: Boolean): Self = this.set("current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrent: Self = this.set("current", js.undefined)
+    @scala.inline
+    def setDepartment(value: String): Self = this.set("department", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepartment: Self = this.set("department", js.undefined)
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setEndDate(value: SchemaDate): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    @scala.inline
+    def setFormattedType(value: String): Self = this.set("formattedType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormattedType: Self = this.set("formattedType", js.undefined)
+    @scala.inline
+    def setJobDescription(value: String): Self = this.set("jobDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobDescription: Self = this.set("jobDescription", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaFieldMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPhoneticName(value: String): Self = this.set("phoneticName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneticName: Self = this.set("phoneticName", js.undefined)
+    @scala.inline
+    def setStartDate(value: SchemaDate): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    @scala.inline
+    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

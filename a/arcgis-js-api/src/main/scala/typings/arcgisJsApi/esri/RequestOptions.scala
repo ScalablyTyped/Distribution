@@ -21,6 +21,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RequestOptions extends Object {
   /**
     * Indicates if and how requests to ArcGIS Services are authenticated. Only applicable when [`esriConfig.request.useIdentity = true`](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request).
@@ -35,43 +36,43 @@ trait RequestOptions extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var authMode: js.UndefOr[auto | anonymous | immediate | `no-prompt`] = js.undefined
+  var authMode: js.UndefOr[auto | anonymous | immediate | `no-prompt`] = js.native
   /**
     * If uploading a file, specify the form data or element used to submit the file here. If specified, the parameters of the `query` will be added to the URL.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var body: js.UndefOr[FormData | HTMLFormElement | String] = js.undefined
+  var body: js.UndefOr[FormData | HTMLFormElement | String] = js.native
   /**
     * If `true`, the browser will send a request to the server instead of using the browser's local cache. If `false`, the browser's default cache handling will be used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var cacheBust: js.UndefOr[Boolean] = js.undefined
+  var cacheBust: js.UndefOr[Boolean] = js.native
   /**
     * Headers to use for the request. This is an object whose property names are header names.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[js.Any] = js.native
   /**
     * Indicates if the request should be made using the HTTP POST method. By default, this is determined automatically based on the request size.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var method: js.UndefOr[auto | post] = js.undefined
+  var method: js.UndefOr[auto | post] = js.native
   /**
     * Query parameters for the request. The query parameters will be added to the URL if: a GET request is used, or if the `body` property is set. Otherwise, the query parameters will be added to the body request parameters if: the `body` property is not set, and a POST request is used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var query: js.UndefOr[js.Any] = js.undefined
+  var query: js.UndefOr[js.Any] = js.native
   /**
     * Response format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var responseType: js.UndefOr[json | xml | text | blob | `array-buffer` | document | image] = js.undefined
+  var responseType: js.UndefOr[json | xml | text | blob | `array-buffer` | document | image] = js.native
   /**
     * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).  Example:
     * ```js
@@ -96,19 +97,19 @@ trait RequestOptions extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var signal: js.UndefOr[AbortSignal] = js.undefined
+  var signal: js.UndefOr[AbortSignal] = js.native
   /**
     * Indicates the amount of time in milliseconds to wait for a response from the server. Set to `0` to wait for the response indefinitely.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var timeout: js.UndefOr[Double] = js.undefined
+  var timeout: js.UndefOr[Double] = js.native
   /**
     * Indicates the request should use the proxy. By default this is determined automatically based on the domain of the request URL.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var useProxy: js.UndefOr[Boolean] = js.undefined
+  var useProxy: js.UndefOr[Boolean] = js.native
 }
 
 object RequestOptions {
@@ -116,30 +117,63 @@ object RequestOptions {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    authMode: auto | anonymous | immediate | `no-prompt` = null,
-    body: FormData | HTMLFormElement | String = null,
-    cacheBust: js.UndefOr[Boolean] = js.undefined,
-    headers: js.Any = null,
-    method: auto | post = null,
-    query: js.Any = null,
-    responseType: json | xml | text | blob | `array-buffer` | document | image = null,
-    signal: AbortSignal = null,
-    timeout: js.UndefOr[Double] = js.undefined,
-    useProxy: js.UndefOr[Boolean] = js.undefined
+    propertyIsEnumerable: PropertyKey => Boolean
   ): RequestOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (authMode != null) __obj.updateDynamic("authMode")(authMode.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheBust)) __obj.updateDynamic("cacheBust")(cacheBust.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useProxy)) __obj.updateDynamic("useProxy")(useProxy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
+  @scala.inline
+  implicit class RequestOptionsOps[Self <: RequestOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthMode(value: auto | anonymous | immediate | `no-prompt`): Self = this.set("authMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthMode: Self = this.set("authMode", js.undefined)
+    @scala.inline
+    def setBody(value: FormData | HTMLFormElement | String): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setCacheBust(value: Boolean): Self = this.set("cacheBust", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheBust: Self = this.set("cacheBust", js.undefined)
+    @scala.inline
+    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setMethod(value: auto | post): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setQuery(value: js.Any): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setResponseType(value: json | xml | text | blob | `array-buffer` | document | image): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    @scala.inline
+    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignal: Self = this.set("signal", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUseProxy(value: Boolean): Self = this.set("useProxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseProxy: Self = this.set("useProxy", js.undefined)
+  }
+  
 }
 

@@ -34,22 +34,48 @@ trait VpcPeeringConnection extends js.Object {
 
 object VpcPeeringConnection {
   @scala.inline
-  def apply(
-    AccepterVpcInfo: VpcPeeringConnectionVpcInfo = null,
-    ExpirationTime: DateTime = null,
-    RequesterVpcInfo: VpcPeeringConnectionVpcInfo = null,
-    Status: VpcPeeringConnectionStateReason = null,
-    Tags: TagList = null,
-    VpcPeeringConnectionId: String = null
-  ): VpcPeeringConnection = {
+  def apply(): VpcPeeringConnection = {
     val __obj = js.Dynamic.literal()
-    if (AccepterVpcInfo != null) __obj.updateDynamic("AccepterVpcInfo")(AccepterVpcInfo.asInstanceOf[js.Any])
-    if (ExpirationTime != null) __obj.updateDynamic("ExpirationTime")(ExpirationTime.asInstanceOf[js.Any])
-    if (RequesterVpcInfo != null) __obj.updateDynamic("RequesterVpcInfo")(RequesterVpcInfo.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcPeeringConnectionId != null) __obj.updateDynamic("VpcPeeringConnectionId")(VpcPeeringConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcPeeringConnection]
   }
+  @scala.inline
+  implicit class VpcPeeringConnectionOps[Self <: VpcPeeringConnection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccepterVpcInfo(value: VpcPeeringConnectionVpcInfo): Self = this.set("AccepterVpcInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccepterVpcInfo: Self = this.set("AccepterVpcInfo", js.undefined)
+    @scala.inline
+    def setExpirationTime(value: DateTime): Self = this.set("ExpirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationTime: Self = this.set("ExpirationTime", js.undefined)
+    @scala.inline
+    def setRequesterVpcInfo(value: VpcPeeringConnectionVpcInfo): Self = this.set("RequesterVpcInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterVpcInfo: Self = this.set("RequesterVpcInfo", js.undefined)
+    @scala.inline
+    def setStatus(value: VpcPeeringConnectionStateReason): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcPeeringConnectionId(value: String): Self = this.set("VpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcPeeringConnectionId: Self = this.set("VpcPeeringConnectionId", js.undefined)
+  }
+  
 }
 

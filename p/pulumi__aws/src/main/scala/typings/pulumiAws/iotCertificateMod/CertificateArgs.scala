@@ -23,10 +23,28 @@ trait CertificateArgs extends js.Object {
 
 object CertificateArgs {
   @scala.inline
-  def apply(active: Input[Boolean], csr: Input[String] = null): CertificateArgs = {
+  def apply(active: Input[Boolean]): CertificateArgs = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
-    if (csr != null) __obj.updateDynamic("csr")(csr.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateArgs]
   }
+  @scala.inline
+  implicit class CertificateArgsOps[Self <: CertificateArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Input[Boolean]): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCsr(value: Input[String]): Self = this.set("csr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsr: Self = this.set("csr", js.undefined)
+  }
+  
 }
 

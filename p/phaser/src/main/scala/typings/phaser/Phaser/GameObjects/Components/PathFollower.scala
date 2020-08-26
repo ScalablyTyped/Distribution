@@ -68,6 +68,7 @@ trait PathFollower extends js.Object {
     * @param startAt Optional start position of the follow, between 0 and 1. Default 0.
     */
   def startFollow(): this.type = js.native
+  def startFollow(config: js.UndefOr[scala.Nothing], startAt: Double): this.type = js.native
   def startFollow(config: Double): this.type = js.native
   def startFollow(config: Double, startAt: Double): this.type = js.native
   def startFollow(config: PathConfig): this.type = js.native

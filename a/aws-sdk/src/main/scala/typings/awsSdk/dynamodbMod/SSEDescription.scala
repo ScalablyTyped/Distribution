@@ -26,18 +26,38 @@ trait SSEDescription extends js.Object {
 
 object SSEDescription {
   @scala.inline
-  def apply(
-    InaccessibleEncryptionDateTime: Date = null,
-    KMSMasterKeyArn: KMSMasterKeyArn = null,
-    SSEType: SSEType = null,
-    Status: SSEStatus = null
-  ): SSEDescription = {
+  def apply(): SSEDescription = {
     val __obj = js.Dynamic.literal()
-    if (InaccessibleEncryptionDateTime != null) __obj.updateDynamic("InaccessibleEncryptionDateTime")(InaccessibleEncryptionDateTime.asInstanceOf[js.Any])
-    if (KMSMasterKeyArn != null) __obj.updateDynamic("KMSMasterKeyArn")(KMSMasterKeyArn.asInstanceOf[js.Any])
-    if (SSEType != null) __obj.updateDynamic("SSEType")(SSEType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SSEDescription]
   }
+  @scala.inline
+  implicit class SSEDescriptionOps[Self <: SSEDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInaccessibleEncryptionDateTime(value: Date): Self = this.set("InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInaccessibleEncryptionDateTime: Self = this.set("InaccessibleEncryptionDateTime", js.undefined)
+    @scala.inline
+    def setKMSMasterKeyArn(value: KMSMasterKeyArn): Self = this.set("KMSMasterKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSMasterKeyArn: Self = this.set("KMSMasterKeyArn", js.undefined)
+    @scala.inline
+    def setSSEType(value: SSEType): Self = this.set("SSEType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSEType: Self = this.set("SSEType", js.undefined)
+    @scala.inline
+    def setStatus(value: SSEStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

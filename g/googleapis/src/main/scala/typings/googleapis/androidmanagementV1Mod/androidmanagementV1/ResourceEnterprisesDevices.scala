@@ -29,6 +29,7 @@ class ResourceEnterprisesDevices protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceEnterprisesDevicesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceEnterprisesDevicesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourceEnterprisesDevices protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDevice] = js.native
   def get(callback: BodyResponseCallback[SchemaDevice]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDevice] = js.native
   def get(params: ParamsResourceEnterprisesDevicesGet): GaxiosPromise[SchemaDevice] = js.native
   def get(params: ParamsResourceEnterprisesDevicesGet, callback: BodyResponseCallback[SchemaDevice]): Unit = js.native
   def get(
@@ -86,6 +88,7 @@ class ResourceEnterprisesDevices protected () extends js.Object {
     */
   def issueCommand(): GaxiosPromise[SchemaOperation] = js.native
   def issueCommand(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def issueCommand(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def issueCommand(params: ParamsResourceEnterprisesDevicesIssuecommand): GaxiosPromise[SchemaOperation] = js.native
   def issueCommand(
     params: ParamsResourceEnterprisesDevicesIssuecommand,
@@ -118,6 +121,7 @@ class ResourceEnterprisesDevices protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListDevicesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDevicesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDevicesResponse] = js.native
   def list(params: ParamsResourceEnterprisesDevicesList): GaxiosPromise[SchemaListDevicesResponse] = js.native
   def list(
     params: ParamsResourceEnterprisesDevicesList,
@@ -150,6 +154,7 @@ class ResourceEnterprisesDevices protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaDevice] = js.native
   def patch(callback: BodyResponseCallback[SchemaDevice]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDevice] = js.native
   def patch(params: ParamsResourceEnterprisesDevicesPatch): GaxiosPromise[SchemaDevice] = js.native
   def patch(params: ParamsResourceEnterprisesDevicesPatch, callback: BodyResponseCallback[SchemaDevice]): Unit = js.native
   def patch(

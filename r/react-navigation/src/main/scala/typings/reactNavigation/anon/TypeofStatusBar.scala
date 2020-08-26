@@ -1,6 +1,7 @@
 package typings.reactNavigation.anon
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.StatusBar
 import typings.reactNative.mod.StatusBarAnimation
 import typings.reactNative.mod.StatusBarProps
@@ -41,8 +42,8 @@ trait TypeofStatusBar extends Instantiable0[StatusBar] {
     * @param color Background color.
     * @param animated Animate the style change.
     */
-  def setBackgroundColor(color: String): Unit = js.native
-  def setBackgroundColor(color: String, animated: Boolean): Unit = js.native
+  def setBackgroundColor(color: ColorValue): Unit = js.native
+  def setBackgroundColor(color: ColorValue, animated: Boolean): Unit = js.native
   /**
     * Set the status bar style
     * @param style Status bar style to set

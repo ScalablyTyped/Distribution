@@ -12,7 +12,7 @@ JSSpec - contextualised test runner for javascript
 | Keywords           | spec, test, jsspec |
 | # releases         | 17 |
 | # dependents       | 0 |
-| # downloads        | 703 |
+| # downloads        | 851 |
 | # stars            | 0 |
 
 ## Links

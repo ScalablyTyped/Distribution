@@ -11,8 +11,8 @@ Wire Bower dependencies to your source code.
 | Full name          | wiredep |
 | Keywords           | bower, package, management, inject, script, dependencies |
 | # releases         | 1 |
-| # dependents       | 299 |
-| # downloads        | 2473861 |
+| # dependents       | 302 |
+| # downloads        | 2452747 |
 | # stars            | 77 |
 
 ## Links

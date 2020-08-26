@@ -4,20 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait hardforkOptions extends js.Object {
   /** optional, only active HFs (default: false) */
-  var onlyActive: js.UndefOr[Boolean] = js.undefined
+  var onlyActive: js.UndefOr[Boolean] = js.native
   /** optional, only allow supported HFs (default: false) */
-  var onlySupported: js.UndefOr[Boolean] = js.undefined
+  var onlySupported: js.UndefOr[Boolean] = js.native
 }
 
 object hardforkOptions {
   @scala.inline
-  def apply(onlyActive: js.UndefOr[Boolean] = js.undefined, onlySupported: js.UndefOr[Boolean] = js.undefined): hardforkOptions = {
+  def apply(): hardforkOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(onlyActive)) __obj.updateDynamic("onlyActive")(onlyActive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlySupported)) __obj.updateDynamic("onlySupported")(onlySupported.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[hardforkOptions]
   }
+  @scala.inline
+  implicit class hardforkOptionsOps[Self <: hardforkOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnlyActive(value: Boolean): Self = this.set("onlyActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyActive: Self = this.set("onlyActive", js.undefined)
+    @scala.inline
+    def setOnlySupported(value: Boolean): Self = this.set("onlySupported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlySupported: Self = this.set("onlySupported", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ easy way to wrap js object to java object
 | Keywords           | js, java, object, wraper, class |
 | # releases         | 4 |
 | # dependents       | 23 |
-| # downloads        | 9953 |
+| # downloads        | 9764 |
 | # stars            | 3 |
 
 ## Links

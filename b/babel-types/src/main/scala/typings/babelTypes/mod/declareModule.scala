@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object declareModule extends js.Object {
   def apply(): DeclareModule_ = js.native
+  def apply(id: js.UndefOr[scala.Nothing], body: BlockStatement_): DeclareModule_ = js.native
   def apply(id: Identifier_): DeclareModule_ = js.native
   def apply(id: Identifier_, body: BlockStatement_): DeclareModule_ = js.native
   def apply(id: StringLiteral_): DeclareModule_ = js.native

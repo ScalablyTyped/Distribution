@@ -10,9 +10,9 @@ A single, throttle built-in solution to subscribe to browser UI Events.
 | ------------------ | :-------------: |
 | Full name          | subscribe-ui-event |
 | Keywords           | addEventListener, browser, events, requestAnimationFrame, resize, scroll, subscribe, throttle |
-| # releases         | 10 |
+| # releases         | 8 |
 | # dependents       | 19 |
-| # downloads        | 2274907 |
+| # downloads        | 2426257 |
 | # stars            | 3 |
 
 ## Links

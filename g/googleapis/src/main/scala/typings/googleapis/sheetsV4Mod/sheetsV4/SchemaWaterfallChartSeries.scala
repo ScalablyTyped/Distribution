@@ -41,22 +41,48 @@ trait SchemaWaterfallChartSeries extends js.Object {
 
 object SchemaWaterfallChartSeries {
   @scala.inline
-  def apply(
-    customSubtotals: js.Array[SchemaWaterfallChartCustomSubtotal] = null,
-    data: SchemaChartData = null,
-    hideTrailingSubtotal: js.UndefOr[Boolean] = js.undefined,
-    negativeColumnsStyle: SchemaWaterfallChartColumnStyle = null,
-    positiveColumnsStyle: SchemaWaterfallChartColumnStyle = null,
-    subtotalColumnsStyle: SchemaWaterfallChartColumnStyle = null
-  ): SchemaWaterfallChartSeries = {
+  def apply(): SchemaWaterfallChartSeries = {
     val __obj = js.Dynamic.literal()
-    if (customSubtotals != null) __obj.updateDynamic("customSubtotals")(customSubtotals.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTrailingSubtotal)) __obj.updateDynamic("hideTrailingSubtotal")(hideTrailingSubtotal.get.asInstanceOf[js.Any])
-    if (negativeColumnsStyle != null) __obj.updateDynamic("negativeColumnsStyle")(negativeColumnsStyle.asInstanceOf[js.Any])
-    if (positiveColumnsStyle != null) __obj.updateDynamic("positiveColumnsStyle")(positiveColumnsStyle.asInstanceOf[js.Any])
-    if (subtotalColumnsStyle != null) __obj.updateDynamic("subtotalColumnsStyle")(subtotalColumnsStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWaterfallChartSeries]
   }
+  @scala.inline
+  implicit class SchemaWaterfallChartSeriesOps[Self <: SchemaWaterfallChartSeries] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomSubtotalsVarargs(value: SchemaWaterfallChartCustomSubtotal*): Self = this.set("customSubtotals", js.Array(value :_*))
+    @scala.inline
+    def setCustomSubtotals(value: js.Array[SchemaWaterfallChartCustomSubtotal]): Self = this.set("customSubtotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSubtotals: Self = this.set("customSubtotals", js.undefined)
+    @scala.inline
+    def setData(value: SchemaChartData): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setHideTrailingSubtotal(value: Boolean): Self = this.set("hideTrailingSubtotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideTrailingSubtotal: Self = this.set("hideTrailingSubtotal", js.undefined)
+    @scala.inline
+    def setNegativeColumnsStyle(value: SchemaWaterfallChartColumnStyle): Self = this.set("negativeColumnsStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegativeColumnsStyle: Self = this.set("negativeColumnsStyle", js.undefined)
+    @scala.inline
+    def setPositiveColumnsStyle(value: SchemaWaterfallChartColumnStyle): Self = this.set("positiveColumnsStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositiveColumnsStyle: Self = this.set("positiveColumnsStyle", js.undefined)
+    @scala.inline
+    def setSubtotalColumnsStyle(value: SchemaWaterfallChartColumnStyle): Self = this.set("subtotalColumnsStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtotalColumnsStyle: Self = this.set("subtotalColumnsStyle", js.undefined)
+  }
+  
 }
 

@@ -60,6 +60,7 @@ trait Date extends js.Object {
     * @param date A numeric value equal for the day of the month.
     */
   def setFullYear(year: Double): Double = js.native
+  def setFullYear(year: Double, month: js.UndefOr[scala.Nothing], date: Double): Double = js.native
   def setFullYear(year: Double, month: Double): Double = js.native
   def setFullYear(year: Double, month: Double, date: Double): Double = js.native
   /**
@@ -70,7 +71,11 @@ trait Date extends js.Object {
     * @param ms A numeric value equal to the milliseconds value.
     */
   def setHours(hours: Double): Double = js.native
+  def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
+  def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double): Double = js.native
+  def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double, ms: Double): Double = js.native
   def setHours(hours: Double, min: Double): Double = js.native
+  def setHours(hours: Double, min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
   def setHours(hours: Double, min: Double, sec: Double): Double = js.native
   def setHours(hours: Double, min: Double, sec: Double, ms: Double): Double = js.native
   /**
@@ -85,6 +90,7 @@ trait Date extends js.Object {
     * @param ms A numeric value equal to the milliseconds value.
     */
   def setMinutes(min: Double): Double = js.native
+  def setMinutes(min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
   def setMinutes(min: Double, sec: Double): Double = js.native
   def setMinutes(min: Double, sec: Double, ms: Double): Double = js.native
   /**
@@ -118,6 +124,7 @@ trait Date extends js.Object {
     * @param date A numeric value equal to the day of the month.
     */
   def setUTCFullYear(year: Double): Double = js.native
+  def setUTCFullYear(year: Double, month: js.UndefOr[scala.Nothing], date: Double): Double = js.native
   def setUTCFullYear(year: Double, month: Double): Double = js.native
   def setUTCFullYear(year: Double, month: Double, date: Double): Double = js.native
   /**
@@ -128,7 +135,11 @@ trait Date extends js.Object {
     * @param ms A numeric value equal to the milliseconds value.
     */
   def setUTCHours(hours: Double): Double = js.native
+  def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
+  def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double): Double = js.native
+  def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double, ms: Double): Double = js.native
   def setUTCHours(hours: Double, min: Double): Double = js.native
+  def setUTCHours(hours: Double, min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
   def setUTCHours(hours: Double, min: Double, sec: Double): Double = js.native
   def setUTCHours(hours: Double, min: Double, sec: Double, ms: Double): Double = js.native
   /**
@@ -143,6 +154,7 @@ trait Date extends js.Object {
     * @param ms A numeric value equal to the milliseconds value.
     */
   def setUTCMinutes(min: Double): Double = js.native
+  def setUTCMinutes(min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): Double = js.native
   def setUTCMinutes(min: Double, sec: Double): Double = js.native
   def setUTCMinutes(min: Double, sec: Double, ms: Double): Double = js.native
   /**

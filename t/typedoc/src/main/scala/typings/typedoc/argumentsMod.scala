@@ -15,13 +15,7 @@ object argumentsMod extends js.Object {
     def this(priority: Double) = this()
     def this(priority: Double, args: js.Array[String]) = this()
     var args: js.Any = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    /* CompleteClass */
-    override var priority: Double = js.native
     def read(container: Options, logger: Logger): Unit = js.native
-    /* CompleteClass */
-    override def read(container: typings.typedoc.optionsOptionsMod.Options, logger: Logger): Unit = js.native
   }
   
 }

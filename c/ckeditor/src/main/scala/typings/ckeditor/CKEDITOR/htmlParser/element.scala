@@ -24,6 +24,12 @@ trait element extends node {
   @JSName("forEach")
   def forEach_false(callback: js.Function1[/* node */ node, Unit | `false`]): Unit = js.native
   @JSName("forEach")
+  def forEach_false(
+    callback: js.Function1[/* node */ node, Unit | `false`],
+    `type`: js.UndefOr[scala.Nothing],
+    skipRoot: Boolean
+  ): Unit = js.native
+  @JSName("forEach")
   def forEach_false(callback: js.Function1[/* node */ node, Unit | `false`], `type`: Double): Unit = js.native
   @JSName("forEach")
   def forEach_false(callback: js.Function1[/* node */ node, Unit | `false`], `type`: Double, skipRoot: Boolean): Unit = js.native

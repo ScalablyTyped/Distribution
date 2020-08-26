@@ -23,6 +23,10 @@ class FlowLog protected () extends CustomResource {
   def this(name: String, args: FlowLogArgs) = this()
   def this(name: String, args: FlowLogArgs, opts: CustomResourceOptions) = this()
   /**
+    * The ARN of the Flow Log.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * Elastic Network Interface ID to attach to
     */
   val eniId: Output_[js.UndefOr[String]] = js.native
@@ -44,6 +48,8 @@ class FlowLog protected () extends CustomResource {
   val logFormat: Output_[String] = js.native
   /**
     * *Deprecated:* Use `logDestination` instead. The name of the CloudWatch log group.
+    *
+    * @deprecated use 'log_destination' argument instead
     */
   val logGroupName: Output_[String] = js.native
   /**
@@ -58,9 +64,9 @@ class FlowLog protected () extends CustomResource {
     */
   val subnetId: Output_[js.UndefOr[String]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The type of traffic to capture. Valid values: `ACCEPT`,`REJECT`, `ALL`.
     */
@@ -82,8 +88,10 @@ object FlowLog extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): FlowLog = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): FlowLog = js.native
   def get(name: String, id: Input[ID], state: FlowLogState): FlowLog = js.native
   def get(name: String, id: Input[ID], state: FlowLogState, opts: CustomResourceOptions): FlowLog = js.native
   /**

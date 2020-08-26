@@ -26,15 +26,32 @@ trait DomainSummary extends js.Object {
 
 object DomainSummary {
   @scala.inline
-  def apply(
-    CreatedTime: DateTime,
-    DomainName: DomainName,
-    DomainStatus: DomainStatus,
-    DisplayName: DisplayName = null
-  ): DomainSummary = {
+  def apply(CreatedTime: DateTime, DomainName: DomainName, DomainStatus: DomainStatus): DomainSummary = {
     val __obj = js.Dynamic.literal(CreatedTime = CreatedTime.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], DomainStatus = DomainStatus.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainSummary]
   }
+  @scala.inline
+  implicit class DomainSummaryOps[Self <: DomainSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedTime(value: DateTime): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainStatus(value: DomainStatus): Self = this.set("DomainStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisplayName(value: DisplayName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+  }
+  
 }
 

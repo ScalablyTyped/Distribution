@@ -11,6 +11,7 @@ object browserLocationConfigMod extends js.Object {
   @js.native
   class BrowserLocationConfig () extends LocationConfig {
     def this(router: js.Any) = this()
+    def this(router: js.UndefOr[scala.Nothing], _isHtml5: Boolean) = this()
     def this(router: js.Any, _isHtml5: Boolean) = this()
     var _baseHref: js.Any = js.native
     var _hashPrefix: js.Any = js.native

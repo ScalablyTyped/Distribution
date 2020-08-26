@@ -82,7 +82,6 @@ object rowCompMod extends js.Object {
     def afterFlush(): Unit = js.native
     /* private */ def afterRowAttached(rowContainerComp: js.Any, eRow: js.Any): js.Any = js.native
     /* private */ def angular1Compile(element: js.Any): js.Any = js.native
-    /* private */ def applyPaginationOffset(topPx: js.Any): js.Any = js.native
     /* private */ def applyPaginationOffset(topPx: js.Any, reverse: js.Any): js.Any = js.native
     /* private */ def callAfterRowAttachedOnCells(newCellComps: js.Any, eRow: js.Any): js.Any = js.native
     /* private */ def createCells(cols: js.Any): js.Any = js.native
@@ -100,10 +99,8 @@ object rowCompMod extends js.Object {
     /* private */ def createFullWidthRows(`type`: js.Any, name: js.Any): js.Any = js.native
     /* private */ def createNewCell(col: js.Any, eContainer: js.Any, cellTemplates: js.Any, newCellComps: js.Any): js.Any = js.native
     /* private */ def createRowContainer(rowContainerComp: js.Any, cols: js.Any, callback: js.Any): js.Any = js.native
-    /* private */ def createRowEvent(`type`: js.Any): js.Any = js.native
     /* private */ def createRowEvent(`type`: js.Any, domEvent: js.Any): js.Any = js.native
     /* private */ def createRowEventWithSource(`type`: js.Any, domEvent: js.Any): js.Any = js.native
-    /* private */ def createTemplate(contents: js.Any): js.Any = js.native
     /* private */ def createTemplate(contents: js.Any, extraCssClass: js.Any): js.Any = js.native
     def destroy(animate: Boolean): Unit = js.native
     /* private */ def destroyContainingCells(): js.Any = js.native
@@ -158,7 +155,6 @@ object rowCompMod extends js.Object {
     /* private */ def preProcessRowClassRules(): js.Any = js.native
     /* private */ def preProcessStylesFromGridOptions(): js.Any = js.native
     /* private */ def processClassesFromGridOptions(): js.Any = js.native
-    /* private */ def processRowClassRules(onApplicableClass: js.Any): js.Any = js.native
     /* private */ def processRowClassRules(onApplicableClass: js.Any, onNotApplicableClass: js.Any): js.Any = js.native
     /* private */ def processStylesFromGridOptions(): js.Any = js.native
     /* private */ def refreshCells(): js.Any = js.native
@@ -171,7 +167,15 @@ object rowCompMod extends js.Object {
     /* private */ def setupNormalRowContainers(): js.Any = js.native
     /* private */ def setupRowContainers(): js.Any = js.native
     def startRowEditing(): Unit = js.native
+    def startRowEditing(
+      keyPress: js.UndefOr[scala.Nothing],
+      charPress: js.UndefOr[scala.Nothing],
+      sourceRenderedCell: CellComp
+    ): Unit = js.native
+    def startRowEditing(keyPress: js.UndefOr[scala.Nothing], charPress: String): Unit = js.native
+    def startRowEditing(keyPress: js.UndefOr[scala.Nothing], charPress: String, sourceRenderedCell: CellComp): Unit = js.native
     def startRowEditing(keyPress: Double): Unit = js.native
+    def startRowEditing(keyPress: Double, charPress: js.UndefOr[scala.Nothing], sourceRenderedCell: CellComp): Unit = js.native
     def startRowEditing(keyPress: Double, charPress: String): Unit = js.native
     def startRowEditing(keyPress: Double, charPress: String, sourceRenderedCell: CellComp): Unit = js.native
     def stopEditing(): Unit = js.native

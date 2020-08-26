@@ -108,7 +108,7 @@ package object comprehendmedicalMod {
   */
   type JobStatus = typings.awsSdk.comprehendmedicalMod._JobStatus | java.lang.String
   type KMSKey = java.lang.String
-  type LanguageCode = typings.awsSdk.awsSdkStrings.en | java.lang.String
+  type LanguageCode = typings.awsSdk.awsSdkStrings.en_ | java.lang.String
   type ManifestFilePath = java.lang.String
   type MaxResultsInteger = scala.Double
   type ModelVersion = java.lang.String

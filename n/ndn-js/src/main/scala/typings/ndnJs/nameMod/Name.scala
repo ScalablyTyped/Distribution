@@ -18,18 +18,23 @@ class Name () extends js.Object {
   def append(components: Name): Name = js.native
   def append(components: Component): Name = js.native
   def append(value: String): Name = js.native
+  def append(value: String, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Name = js.native
   def append(value: String, `type`: ComponentType): Name = js.native
   def append(value: String, `type`: ComponentType, otherTypeCode: Double): Name = js.native
   def append(value: js.Array[Double]): Name = js.native
+  def append(value: js.Array[Double], `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Name = js.native
   def append(value: js.Array[Double], `type`: ComponentType): Name = js.native
   def append(value: js.Array[Double], `type`: ComponentType, otherTypeCode: Double): Name = js.native
   def append(value: Blob): Name = js.native
+  def append(value: Blob, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Name = js.native
   def append(value: Blob, `type`: ComponentType): Name = js.native
   def append(value: Blob, `type`: ComponentType, otherTypeCode: Double): Name = js.native
   def append(value: ArrayBuffer): Name = js.native
+  def append(value: ArrayBuffer, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Name = js.native
   def append(value: ArrayBuffer, `type`: ComponentType): Name = js.native
   def append(value: ArrayBuffer, `type`: ComponentType, otherTypeCode: Double): Name = js.native
   def append(value: Uint8Array): Name = js.native
+  def append(value: Uint8Array, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Name = js.native
   def append(value: Uint8Array, `type`: ComponentType): Name = js.native
   def append(value: Uint8Array, `type`: ComponentType, otherTypeCode: Double): Name = js.native
   def appendImplicitSha256Digest(digest: Blob): Name = js.native
@@ -41,6 +46,13 @@ class Name () extends js.Object {
   def appendVersion(version: Double): Name = js.native
   def clear(): Unit = js.native
   def compare(iStartComponent: Double, nComponents: Double, other: Name): CompareResult = js.native
+  def compare(
+    iStartComponent: Double,
+    nComponents: Double,
+    other: Name,
+    iOtherStartComponent: js.UndefOr[scala.Nothing],
+    nOtherComponents: Double
+  ): CompareResult = js.native
   def compare(iStartComponent: Double, nComponents: Double, other: Name, iOtherStartComponent: Double): CompareResult = js.native
   def compare(
     iStartComponent: Double,
@@ -78,15 +90,23 @@ object Name extends js.Object {
     def this(value: Blob) = this()
     def this(value: ArrayBuffer) = this()
     def this(value: Uint8Array) = this()
+    def this(value: js.UndefOr[scala.Nothing], `type`: ComponentType) = this()
     def this(value: String, `type`: ComponentType) = this()
     def this(value: js.Array[Double], `type`: ComponentType) = this()
     def this(value: Blob, `type`: ComponentType) = this()
     def this(value: ArrayBuffer, `type`: ComponentType) = this()
     def this(value: Uint8Array, `type`: ComponentType) = this()
+    def this(value: js.UndefOr[scala.Nothing], `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
+    def this(value: js.UndefOr[scala.Nothing], `type`: ComponentType, otherTypeCode: Double) = this()
+    def this(value: String, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
     def this(value: String, `type`: ComponentType, otherTypeCode: Double) = this()
+    def this(value: js.Array[Double], `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
     def this(value: js.Array[Double], `type`: ComponentType, otherTypeCode: Double) = this()
+    def this(value: Blob, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
     def this(value: Blob, `type`: ComponentType, otherTypeCode: Double) = this()
+    def this(value: ArrayBuffer, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
     def this(value: ArrayBuffer, `type`: ComponentType, otherTypeCode: Double) = this()
+    def this(value: Uint8Array, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
     def this(value: Uint8Array, `type`: ComponentType, otherTypeCode: Double) = this()
     def compare(other: Component): CompareResult = js.native
     def equals(other: Component): Boolean = js.native
@@ -118,6 +138,7 @@ object Name extends js.Object {
   object Component extends js.Object {
     def fromImplicitSha256Digest(digest: Blob): Component = js.native
     def fromNumber(number: Double): Component = js.native
+    def fromNumber(number: Double, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): Component = js.native
     def fromNumber(number: Double, `type`: ComponentType): Component = js.native
     def fromNumber(number: Double, `type`: ComponentType, otherTypeCode: Double): Component = js.native
     def fromNumberWithMarker(number: Double, marker: Double): Component = js.native

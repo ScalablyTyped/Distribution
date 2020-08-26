@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 class BoundingBox ()
   extends typings.playcanvas.pc.BoundingBox {
   def this(center: typings.playcanvas.pc.Vec3) = this()
+  def this(center: js.UndefOr[scala.Nothing], halfExtents: typings.playcanvas.pc.Vec3) = this()
   def this(center: typings.playcanvas.pc.Vec3, halfExtents: typings.playcanvas.pc.Vec3) = this()
 }
 

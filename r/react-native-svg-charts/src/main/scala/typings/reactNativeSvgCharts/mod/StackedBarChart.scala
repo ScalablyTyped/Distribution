@@ -15,6 +15,12 @@ class StackedBarChart[T] ()
 @js.native
 object StackedBarChart extends js.Object {
   def extractDataPoints[T](data: T, keys: js.Array[/* keyof T */ String]): js.Array[Double] = js.native
+  def extractDataPoints[T](
+    data: T,
+    keys: js.Array[/* keyof T */ String],
+    order: js.UndefOr[scala.Nothing],
+    offset: OffsetFunction
+  ): js.Array[Double] = js.native
   def extractDataPoints[T](data: T, keys: js.Array[/* keyof T */ String], order: OrderFunction): js.Array[Double] = js.native
   def extractDataPoints[T](data: T, keys: js.Array[/* keyof T */ String], order: OrderFunction, offset: OffsetFunction): js.Array[Double] = js.native
 }

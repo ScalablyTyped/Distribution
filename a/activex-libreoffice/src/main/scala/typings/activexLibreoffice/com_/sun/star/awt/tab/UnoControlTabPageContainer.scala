@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
   * specifies a TabPageContainer control.
   * @since OOo 3.4
   */
+@js.native
 trait UnoControlTabPageContainer
   extends XControl
      with XWindow

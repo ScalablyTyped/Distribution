@@ -14,10 +14,5 @@ class TokenizerCls protected ()
     * @param flag Any additional regular expression flags to pass (like "i" for case insensitive)
     **/
   def this(rules: js.Any, flag: String) = this()
-  /**
-    * Returns an object containing two properties: `tokens`, which contains all the tokens; and `state`, the current state.
-    **/
-  /* CompleteClass */
-  override def getLineTokens(): js.Any = js.native
 }
 

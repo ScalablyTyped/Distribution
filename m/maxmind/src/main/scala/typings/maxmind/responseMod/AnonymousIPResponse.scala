@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonymousIPResponse extends Response {
-  var ip_address: js.UndefOr[String] = js.undefined
-  val is_anonymous: js.UndefOr[Boolean] = js.undefined
-  val is_anonymous_proxy: js.UndefOr[Boolean] = js.undefined
-  val is_anonymous_vpn: js.UndefOr[Boolean] = js.undefined
-  val is_hosting_provider: js.UndefOr[Boolean] = js.undefined
-  val is_public_proxy: js.UndefOr[Boolean] = js.undefined
-  val is_tor_exit_node: js.UndefOr[Boolean] = js.undefined
+  var ip_address: js.UndefOr[String] = js.native
+  val is_anonymous: js.UndefOr[Boolean] = js.native
+  val is_anonymous_proxy: js.UndefOr[Boolean] = js.native
+  val is_anonymous_vpn: js.UndefOr[Boolean] = js.native
+  val is_hosting_provider: js.UndefOr[Boolean] = js.native
+  val is_public_proxy: js.UndefOr[Boolean] = js.native
+  val is_tor_exit_node: js.UndefOr[Boolean] = js.native
 }
 
 object AnonymousIPResponse {
   @scala.inline
-  def apply(
-    ip_address: String = null,
-    is_anonymous: js.UndefOr[Boolean] = js.undefined,
-    is_anonymous_proxy: js.UndefOr[Boolean] = js.undefined,
-    is_anonymous_vpn: js.UndefOr[Boolean] = js.undefined,
-    is_hosting_provider: js.UndefOr[Boolean] = js.undefined,
-    is_public_proxy: js.UndefOr[Boolean] = js.undefined,
-    is_tor_exit_node: js.UndefOr[Boolean] = js.undefined
-  ): AnonymousIPResponse = {
+  def apply(): AnonymousIPResponse = {
     val __obj = js.Dynamic.literal()
-    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_anonymous)) __obj.updateDynamic("is_anonymous")(is_anonymous.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_anonymous_proxy)) __obj.updateDynamic("is_anonymous_proxy")(is_anonymous_proxy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_anonymous_vpn)) __obj.updateDynamic("is_anonymous_vpn")(is_anonymous_vpn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_hosting_provider)) __obj.updateDynamic("is_hosting_provider")(is_hosting_provider.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_public_proxy)) __obj.updateDynamic("is_public_proxy")(is_public_proxy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_tor_exit_node)) __obj.updateDynamic("is_tor_exit_node")(is_tor_exit_node.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonymousIPResponse]
   }
+  @scala.inline
+  implicit class AnonymousIPResponseOps[Self <: AnonymousIPResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIp_address(value: String): Self = this.set("ip_address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIp_address: Self = this.set("ip_address", js.undefined)
+    @scala.inline
+    def setIs_anonymous(value: Boolean): Self = this.set("is_anonymous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_anonymous: Self = this.set("is_anonymous", js.undefined)
+    @scala.inline
+    def setIs_anonymous_proxy(value: Boolean): Self = this.set("is_anonymous_proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_anonymous_proxy: Self = this.set("is_anonymous_proxy", js.undefined)
+    @scala.inline
+    def setIs_anonymous_vpn(value: Boolean): Self = this.set("is_anonymous_vpn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_anonymous_vpn: Self = this.set("is_anonymous_vpn", js.undefined)
+    @scala.inline
+    def setIs_hosting_provider(value: Boolean): Self = this.set("is_hosting_provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_hosting_provider: Self = this.set("is_hosting_provider", js.undefined)
+    @scala.inline
+    def setIs_public_proxy(value: Boolean): Self = this.set("is_public_proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_public_proxy: Self = this.set("is_public_proxy", js.undefined)
+    @scala.inline
+    def setIs_tor_exit_node(value: Boolean): Self = this.set("is_tor_exit_node", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_tor_exit_node: Self = this.set("is_tor_exit_node", js.undefined)
+  }
+  
 }
 

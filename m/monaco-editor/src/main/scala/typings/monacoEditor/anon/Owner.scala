@@ -5,20 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Owner extends js.Object {
-  var owner: js.UndefOr[String] = js.undefined
-  var resource: js.UndefOr[Uri] = js.undefined
-  var take: js.UndefOr[Double] = js.undefined
+  var owner: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[Uri] = js.native
+  var take: js.UndefOr[Double] = js.native
 }
 
 object Owner {
   @scala.inline
-  def apply(owner: String = null, resource: Uri = null, take: js.UndefOr[Double] = js.undefined): Owner = {
+  def apply(): Owner = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (!js.isUndefined(take)) __obj.updateDynamic("take")(take.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Owner]
   }
+  @scala.inline
+  implicit class OwnerOps[Self <: Owner] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setResource(value: Uri): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setTake(value: Double): Self = this.set("take", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTake: Self = this.set("take", js.undefined)
+  }
+  
 }
 

@@ -8,24 +8,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParseOptions extends js.Object {
-  var contentType: js.UndefOr[html | markdown | text] = js.undefined
-  var headers: js.UndefOr[js.Object] = js.undefined
-  var html: js.UndefOr[String | Buffer] = js.undefined
+  var contentType: js.UndefOr[html | markdown | text] = js.native
+  var headers: js.UndefOr[js.Object] = js.native
+  var html: js.UndefOr[String | Buffer] = js.native
 }
 
 object ParseOptions {
   @scala.inline
-  def apply(
-    contentType: html | markdown | text = null,
-    headers: js.Object = null,
-    html: String | Buffer = null
-  ): ParseOptions = {
+  def apply(): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
+  @scala.inline
+  implicit class ParseOptionsOps[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: html | markdown | text): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHtml(value: String | Buffer): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+  }
+  
 }
 

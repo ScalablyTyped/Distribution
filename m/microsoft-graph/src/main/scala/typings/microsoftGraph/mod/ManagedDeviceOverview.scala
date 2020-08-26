@@ -4,37 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ManagedDeviceOverview extends Entity {
   // Distribution of Exchange Access State in Intune
-  var deviceExchangeAccessStateSummary: js.UndefOr[DeviceExchangeAccessStateSummary] = js.undefined
+  var deviceExchangeAccessStateSummary: js.UndefOr[DeviceExchangeAccessStateSummary] = js.native
   // Device operating system summary.
-  var deviceOperatingSystemSummary: js.UndefOr[DeviceOperatingSystemSummary] = js.undefined
+  var deviceOperatingSystemSummary: js.UndefOr[DeviceOperatingSystemSummary] = js.native
   // The number of devices enrolled in both MDM and EAS
-  var dualEnrolledDeviceCount: js.UndefOr[Double] = js.undefined
+  var dualEnrolledDeviceCount: js.UndefOr[Double] = js.native
   // Total enrolled device count. Does not include PC devices managed via Intune PC Agent
-  var enrolledDeviceCount: js.UndefOr[Double] = js.undefined
+  var enrolledDeviceCount: js.UndefOr[Double] = js.native
   // The number of devices enrolled in MDM
-  var mdmEnrolledCount: js.UndefOr[Double] = js.undefined
+  var mdmEnrolledCount: js.UndefOr[Double] = js.native
 }
 
 object ManagedDeviceOverview {
   @scala.inline
-  def apply(
-    deviceExchangeAccessStateSummary: DeviceExchangeAccessStateSummary = null,
-    deviceOperatingSystemSummary: DeviceOperatingSystemSummary = null,
-    dualEnrolledDeviceCount: js.UndefOr[Double] = js.undefined,
-    enrolledDeviceCount: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    mdmEnrolledCount: js.UndefOr[Double] = js.undefined
-  ): ManagedDeviceOverview = {
+  def apply(): ManagedDeviceOverview = {
     val __obj = js.Dynamic.literal()
-    if (deviceExchangeAccessStateSummary != null) __obj.updateDynamic("deviceExchangeAccessStateSummary")(deviceExchangeAccessStateSummary.asInstanceOf[js.Any])
-    if (deviceOperatingSystemSummary != null) __obj.updateDynamic("deviceOperatingSystemSummary")(deviceOperatingSystemSummary.asInstanceOf[js.Any])
-    if (!js.isUndefined(dualEnrolledDeviceCount)) __obj.updateDynamic("dualEnrolledDeviceCount")(dualEnrolledDeviceCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enrolledDeviceCount)) __obj.updateDynamic("enrolledDeviceCount")(enrolledDeviceCount.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdmEnrolledCount)) __obj.updateDynamic("mdmEnrolledCount")(mdmEnrolledCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedDeviceOverview]
   }
+  @scala.inline
+  implicit class ManagedDeviceOverviewOps[Self <: ManagedDeviceOverview] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceExchangeAccessStateSummary(value: DeviceExchangeAccessStateSummary): Self = this.set("deviceExchangeAccessStateSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceExchangeAccessStateSummary: Self = this.set("deviceExchangeAccessStateSummary", js.undefined)
+    @scala.inline
+    def setDeviceOperatingSystemSummary(value: DeviceOperatingSystemSummary): Self = this.set("deviceOperatingSystemSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceOperatingSystemSummary: Self = this.set("deviceOperatingSystemSummary", js.undefined)
+    @scala.inline
+    def setDualEnrolledDeviceCount(value: Double): Self = this.set("dualEnrolledDeviceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDualEnrolledDeviceCount: Self = this.set("dualEnrolledDeviceCount", js.undefined)
+    @scala.inline
+    def setEnrolledDeviceCount(value: Double): Self = this.set("enrolledDeviceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnrolledDeviceCount: Self = this.set("enrolledDeviceCount", js.undefined)
+    @scala.inline
+    def setMdmEnrolledCount(value: Double): Self = this.set("mdmEnrolledCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMdmEnrolledCount: Self = this.set("mdmEnrolledCount", js.undefined)
+  }
+  
 }
 

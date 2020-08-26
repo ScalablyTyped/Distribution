@@ -28,6 +28,7 @@ class ResourceProjectsMetrics protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaLogMetric] = js.native
   def create(callback: BodyResponseCallback[SchemaLogMetric]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogMetric] = js.native
   def create(params: ParamsResourceProjectsMetricsCreate): GaxiosPromise[SchemaLogMetric] = js.native
   def create(params: ParamsResourceProjectsMetricsCreate, callback: BodyResponseCallback[SchemaLogMetric]): Unit = js.native
   def create(
@@ -55,6 +56,7 @@ class ResourceProjectsMetrics protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsMetricsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsMetricsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -82,6 +84,7 @@ class ResourceProjectsMetrics protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLogMetric] = js.native
   def get(callback: BodyResponseCallback[SchemaLogMetric]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogMetric] = js.native
   def get(params: ParamsResourceProjectsMetricsGet): GaxiosPromise[SchemaLogMetric] = js.native
   def get(params: ParamsResourceProjectsMetricsGet, callback: BodyResponseCallback[SchemaLogMetric]): Unit = js.native
   def get(
@@ -111,6 +114,7 @@ class ResourceProjectsMetrics protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListLogMetricsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLogMetricsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListLogMetricsResponse] = js.native
   def list(params: ParamsResourceProjectsMetricsList): GaxiosPromise[SchemaListLogMetricsResponse] = js.native
   def list(
     params: ParamsResourceProjectsMetricsList,
@@ -142,6 +146,7 @@ class ResourceProjectsMetrics protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaLogMetric] = js.native
   def update(callback: BodyResponseCallback[SchemaLogMetric]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLogMetric] = js.native
   def update(params: ParamsResourceProjectsMetricsUpdate): GaxiosPromise[SchemaLogMetric] = js.native
   def update(params: ParamsResourceProjectsMetricsUpdate, callback: BodyResponseCallback[SchemaLogMetric]): Unit = js.native
   def update(

@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation._
 class TypeScriptCompiler ()
   extends typings.typescriptServices.TypeScript.TypeScriptCompiler {
   def this(logger: ILogger) = this()
+  def this(
+    logger: js.UndefOr[scala.Nothing],
+    _settings: typings.typescriptServices.TypeScript.ImmutableCompilationSettings
+  ) = this()
   def this(logger: ILogger, _settings: typings.typescriptServices.TypeScript.ImmutableCompilationSettings) = this()
 }
 

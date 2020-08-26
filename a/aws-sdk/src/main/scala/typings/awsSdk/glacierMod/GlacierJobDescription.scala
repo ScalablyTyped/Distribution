@@ -94,52 +94,106 @@ trait GlacierJobDescription extends js.Object {
 
 object GlacierJobDescription {
   @scala.inline
-  def apply(
-    Action: ActionCode = null,
-    ArchiveId: String = null,
-    ArchiveSHA256TreeHash: String = null,
-    ArchiveSizeInBytes: js.UndefOr[Size] = js.undefined,
-    Completed: js.UndefOr[Boolean] = js.undefined,
-    CompletionDate: String = null,
-    CreationDate: String = null,
-    InventoryRetrievalParameters: InventoryRetrievalJobDescription = null,
-    InventorySizeInBytes: js.UndefOr[Size] = js.undefined,
-    JobDescription: String = null,
-    JobId: String = null,
-    JobOutputPath: String = null,
-    OutputLocation: OutputLocation = null,
-    RetrievalByteRange: String = null,
-    SHA256TreeHash: String = null,
-    SNSTopic: String = null,
-    SelectParameters: SelectParameters = null,
-    StatusCode: StatusCode = null,
-    StatusMessage: String = null,
-    Tier: String = null,
-    VaultARN: String = null
-  ): GlacierJobDescription = {
+  def apply(): GlacierJobDescription = {
     val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (ArchiveId != null) __obj.updateDynamic("ArchiveId")(ArchiveId.asInstanceOf[js.Any])
-    if (ArchiveSHA256TreeHash != null) __obj.updateDynamic("ArchiveSHA256TreeHash")(ArchiveSHA256TreeHash.asInstanceOf[js.Any])
-    if (!js.isUndefined(ArchiveSizeInBytes)) __obj.updateDynamic("ArchiveSizeInBytes")(ArchiveSizeInBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Completed)) __obj.updateDynamic("Completed")(Completed.get.asInstanceOf[js.Any])
-    if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (InventoryRetrievalParameters != null) __obj.updateDynamic("InventoryRetrievalParameters")(InventoryRetrievalParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(InventorySizeInBytes)) __obj.updateDynamic("InventorySizeInBytes")(InventorySizeInBytes.get.asInstanceOf[js.Any])
-    if (JobDescription != null) __obj.updateDynamic("JobDescription")(JobDescription.asInstanceOf[js.Any])
-    if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
-    if (JobOutputPath != null) __obj.updateDynamic("JobOutputPath")(JobOutputPath.asInstanceOf[js.Any])
-    if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])
-    if (RetrievalByteRange != null) __obj.updateDynamic("RetrievalByteRange")(RetrievalByteRange.asInstanceOf[js.Any])
-    if (SHA256TreeHash != null) __obj.updateDynamic("SHA256TreeHash")(SHA256TreeHash.asInstanceOf[js.Any])
-    if (SNSTopic != null) __obj.updateDynamic("SNSTopic")(SNSTopic.asInstanceOf[js.Any])
-    if (SelectParameters != null) __obj.updateDynamic("SelectParameters")(SelectParameters.asInstanceOf[js.Any])
-    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
-    if (VaultARN != null) __obj.updateDynamic("VaultARN")(VaultARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlacierJobDescription]
   }
+  @scala.inline
+  implicit class GlacierJobDescriptionOps[Self <: GlacierJobDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: ActionCode): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setArchiveId(value: String): Self = this.set("ArchiveId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveId: Self = this.set("ArchiveId", js.undefined)
+    @scala.inline
+    def setArchiveSHA256TreeHash(value: String): Self = this.set("ArchiveSHA256TreeHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveSHA256TreeHash: Self = this.set("ArchiveSHA256TreeHash", js.undefined)
+    @scala.inline
+    def setArchiveSizeInBytes(value: Size): Self = this.set("ArchiveSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveSizeInBytes: Self = this.set("ArchiveSizeInBytes", js.undefined)
+    @scala.inline
+    def setCompleted(value: Boolean): Self = this.set("Completed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompleted: Self = this.set("Completed", js.undefined)
+    @scala.inline
+    def setCompletionDate(value: String): Self = this.set("CompletionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionDate: Self = this.set("CompletionDate", js.undefined)
+    @scala.inline
+    def setCreationDate(value: String): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setInventoryRetrievalParameters(value: InventoryRetrievalJobDescription): Self = this.set("InventoryRetrievalParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventoryRetrievalParameters: Self = this.set("InventoryRetrievalParameters", js.undefined)
+    @scala.inline
+    def setInventorySizeInBytes(value: Size): Self = this.set("InventorySizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventorySizeInBytes: Self = this.set("InventorySizeInBytes", js.undefined)
+    @scala.inline
+    def setJobDescription(value: String): Self = this.set("JobDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobDescription: Self = this.set("JobDescription", js.undefined)
+    @scala.inline
+    def setJobId(value: String): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("JobId", js.undefined)
+    @scala.inline
+    def setJobOutputPath(value: String): Self = this.set("JobOutputPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobOutputPath: Self = this.set("JobOutputPath", js.undefined)
+    @scala.inline
+    def setOutputLocation(value: OutputLocation): Self = this.set("OutputLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputLocation: Self = this.set("OutputLocation", js.undefined)
+    @scala.inline
+    def setRetrievalByteRange(value: String): Self = this.set("RetrievalByteRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetrievalByteRange: Self = this.set("RetrievalByteRange", js.undefined)
+    @scala.inline
+    def setSHA256TreeHash(value: String): Self = this.set("SHA256TreeHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSHA256TreeHash: Self = this.set("SHA256TreeHash", js.undefined)
+    @scala.inline
+    def setSNSTopic(value: String): Self = this.set("SNSTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSNSTopic: Self = this.set("SNSTopic", js.undefined)
+    @scala.inline
+    def setSelectParameters(value: SelectParameters): Self = this.set("SelectParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectParameters: Self = this.set("SelectParameters", js.undefined)
+    @scala.inline
+    def setStatusCode(value: StatusCode): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setTier(value: String): Self = this.set("Tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTier: Self = this.set("Tier", js.undefined)
+    @scala.inline
+    def setVaultARN(value: String): Self = this.set("VaultARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVaultARN: Self = this.set("VaultARN", js.undefined)
+  }
+  
 }
 

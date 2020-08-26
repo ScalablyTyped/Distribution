@@ -22,16 +22,34 @@ trait DeleteAppRequest extends js.Object {
 
 object DeleteAppRequest {
   @scala.inline
-  def apply(
-    appId: AppId = null,
-    forceStopAppReplication: js.UndefOr[ForceStopAppReplication] = js.undefined,
-    forceTerminateApp: js.UndefOr[ForceTerminateApp] = js.undefined
-  ): DeleteAppRequest = {
+  def apply(): DeleteAppRequest = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceStopAppReplication)) __obj.updateDynamic("forceStopAppReplication")(forceStopAppReplication.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceTerminateApp)) __obj.updateDynamic("forceTerminateApp")(forceTerminateApp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAppRequest]
   }
+  @scala.inline
+  implicit class DeleteAppRequestOps[Self <: DeleteAppRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppId: Self = this.set("appId", js.undefined)
+    @scala.inline
+    def setForceStopAppReplication(value: ForceStopAppReplication): Self = this.set("forceStopAppReplication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceStopAppReplication: Self = this.set("forceStopAppReplication", js.undefined)
+    @scala.inline
+    def setForceTerminateApp(value: ForceTerminateApp): Self = this.set("forceTerminateApp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceTerminateApp: Self = this.set("forceTerminateApp", js.undefined)
+  }
+  
 }
 

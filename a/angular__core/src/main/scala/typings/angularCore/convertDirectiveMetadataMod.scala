@@ -11,12 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object convertDirectiveMetadataMod extends js.Object {
   @js.native
-  class UnexpectedMetadataValueError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+  class UnexpectedMetadataValueError () extends Error
   
   def convertDirectiveMetadataToExpression(
     metadata: js.Any,

@@ -23,12 +23,34 @@ trait IdentityPolicyState extends js.Object {
 
 object IdentityPolicyState {
   @scala.inline
-  def apply(identity: Input[String] = null, name: Input[String] = null, policy: Input[String] = null): IdentityPolicyState = {
+  def apply(): IdentityPolicyState = {
     val __obj = js.Dynamic.literal()
-    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityPolicyState]
   }
+  @scala.inline
+  implicit class IdentityPolicyStateOps[Self <: IdentityPolicyState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentity(value: Input[String]): Self = this.set("identity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentity: Self = this.set("identity", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPolicy(value: Input[String]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+  }
+  
 }
 

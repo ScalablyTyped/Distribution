@@ -22,6 +22,7 @@ trait TypeofBFSUtils extends js.Object {
   def bufferValidator(v: js.Object, cb: BFSOneArgCallback): Unit = js.native
   def checkOptions(fsType: FileSystemConstructor, opts: js.Any, cb: BFSOneArgCallback): Unit = js.native
   def copyingSlice(buff: Buffer): Buffer = js.native
+  def copyingSlice(buff: Buffer, start: js.UndefOr[scala.Nothing], end: Double): Buffer = js.native
   def copyingSlice(buff: Buffer, start: Double): Buffer = js.native
   def copyingSlice(buff: Buffer, start: Double, end: Double): Buffer = js.native
   def deprecationMessage(print: Boolean, fsName: String, opts: js.Any): Unit = js.native

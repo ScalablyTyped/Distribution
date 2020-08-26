@@ -54,32 +54,70 @@ trait CreateJobOutput extends js.Object {
 
 object CreateJobOutput {
   @scala.inline
-  def apply(
-    AlbumArt: JobAlbumArt = null,
-    Captions: Captions = null,
-    Composition: Composition = null,
-    Encryption: Encryption = null,
-    Key: Key = null,
-    PresetId: Id = null,
-    Rotate: Rotate = null,
-    SegmentDuration: FloatString = null,
-    ThumbnailEncryption: Encryption = null,
-    ThumbnailPattern: ThumbnailPattern = null,
-    Watermarks: JobWatermarks = null
-  ): CreateJobOutput = {
+  def apply(): CreateJobOutput = {
     val __obj = js.Dynamic.literal()
-    if (AlbumArt != null) __obj.updateDynamic("AlbumArt")(AlbumArt.asInstanceOf[js.Any])
-    if (Captions != null) __obj.updateDynamic("Captions")(Captions.asInstanceOf[js.Any])
-    if (Composition != null) __obj.updateDynamic("Composition")(Composition.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (PresetId != null) __obj.updateDynamic("PresetId")(PresetId.asInstanceOf[js.Any])
-    if (Rotate != null) __obj.updateDynamic("Rotate")(Rotate.asInstanceOf[js.Any])
-    if (SegmentDuration != null) __obj.updateDynamic("SegmentDuration")(SegmentDuration.asInstanceOf[js.Any])
-    if (ThumbnailEncryption != null) __obj.updateDynamic("ThumbnailEncryption")(ThumbnailEncryption.asInstanceOf[js.Any])
-    if (ThumbnailPattern != null) __obj.updateDynamic("ThumbnailPattern")(ThumbnailPattern.asInstanceOf[js.Any])
-    if (Watermarks != null) __obj.updateDynamic("Watermarks")(Watermarks.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobOutput]
   }
+  @scala.inline
+  implicit class CreateJobOutputOps[Self <: CreateJobOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlbumArt(value: JobAlbumArt): Self = this.set("AlbumArt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlbumArt: Self = this.set("AlbumArt", js.undefined)
+    @scala.inline
+    def setCaptions(value: Captions): Self = this.set("Captions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptions: Self = this.set("Captions", js.undefined)
+    @scala.inline
+    def setCompositionVarargs(value: Clip*): Self = this.set("Composition", js.Array(value :_*))
+    @scala.inline
+    def setComposition(value: Composition): Self = this.set("Composition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComposition: Self = this.set("Composition", js.undefined)
+    @scala.inline
+    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setKey(value: Key): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setPresetId(value: Id): Self = this.set("PresetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresetId: Self = this.set("PresetId", js.undefined)
+    @scala.inline
+    def setRotate(value: Rotate): Self = this.set("Rotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotate: Self = this.set("Rotate", js.undefined)
+    @scala.inline
+    def setSegmentDuration(value: FloatString): Self = this.set("SegmentDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentDuration: Self = this.set("SegmentDuration", js.undefined)
+    @scala.inline
+    def setThumbnailEncryption(value: Encryption): Self = this.set("ThumbnailEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailEncryption: Self = this.set("ThumbnailEncryption", js.undefined)
+    @scala.inline
+    def setThumbnailPattern(value: ThumbnailPattern): Self = this.set("ThumbnailPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailPattern: Self = this.set("ThumbnailPattern", js.undefined)
+    @scala.inline
+    def setWatermarksVarargs(value: JobWatermark*): Self = this.set("Watermarks", js.Array(value :_*))
+    @scala.inline
+    def setWatermarks(value: JobWatermarks): Self = this.set("Watermarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatermarks: Self = this.set("Watermarks", js.undefined)
+  }
+  
 }
 

@@ -36,6 +36,7 @@ class ResourceDataMcf protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaMcfData] = js.native
   def get(callback: BodyResponseCallback[SchemaMcfData]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMcfData] = js.native
   def get(params: ParamsResourceDataMcfGet): GaxiosPromise[SchemaMcfData] = js.native
   def get(params: ParamsResourceDataMcfGet, callback: BodyResponseCallback[SchemaMcfData]): Unit = js.native
   def get(

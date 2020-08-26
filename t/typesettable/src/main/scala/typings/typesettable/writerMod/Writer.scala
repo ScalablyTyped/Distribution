@@ -25,6 +25,7 @@ class Writer protected () extends js.Object {
     * default container will be used.
     */
   def write[T](text: String, width: Double, height: Double): Unit = js.native
+  def write[T](text: String, width: Double, height: Double, options: js.UndefOr[scala.Nothing], container: T): Unit = js.native
   def write[T](text: String, width: Double, height: Double, options: IWriteOptions): Unit = js.native
   def write[T](text: String, width: Double, height: Double, options: IWriteOptions, container: T): Unit = js.native
   /* private */ def writeLines(

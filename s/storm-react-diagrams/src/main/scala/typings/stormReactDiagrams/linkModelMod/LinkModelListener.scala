@@ -1,38 +1,43 @@
 package typings.stormReactDiagrams.linkModelMod
 
-import typings.stormReactDiagrams.anon.BaseEventBaseModelBaseEnt
 import typings.stormReactDiagrams.anon.BaseEventLinkModelLinkMod
-import typings.stormReactDiagrams.anon.Locked
-import typings.stormReactDiagrams.baseEntityMod.BaseEntity
-import typings.stormReactDiagrams.baseEntityMod.BaseEvent
-import typings.stormReactDiagrams.baseEntityMod.BaseListener
-import typings.stormReactDiagrams.baseModelMod.BaseModel
 import typings.stormReactDiagrams.baseModelMod.BaseModelListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LinkModelListener extends BaseModelListener {
-  var sourcePortChanged: js.UndefOr[js.Function1[/* event */ BaseEventLinkModelLinkMod, Unit]] = js.undefined
-  var targetPortChanged: js.UndefOr[js.Function1[/* event */ BaseEventLinkModelLinkMod, Unit]] = js.undefined
+  var sourcePortChanged: js.UndefOr[js.Function1[/* event */ BaseEventLinkModelLinkMod, Unit]] = js.native
+  var targetPortChanged: js.UndefOr[js.Function1[/* event */ BaseEventLinkModelLinkMod, Unit]] = js.native
 }
 
 object LinkModelListener {
   @scala.inline
-  def apply(
-    entityRemoved: /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[_]], LinkModelListener]] => Unit = null,
-    lockChanged: /* event */ BaseEvent[js.Any] with Locked => Unit = null,
-    selectionChanged: /* event */ BaseEventBaseModelBaseEnt => Unit = null,
-    sourcePortChanged: /* event */ BaseEventLinkModelLinkMod => Unit = null,
-    targetPortChanged: /* event */ BaseEventLinkModelLinkMod => Unit = null
-  ): LinkModelListener = {
+  def apply(): LinkModelListener = {
     val __obj = js.Dynamic.literal()
-    if (entityRemoved != null) __obj.updateDynamic("entityRemoved")(js.Any.fromFunction1(entityRemoved))
-    if (lockChanged != null) __obj.updateDynamic("lockChanged")(js.Any.fromFunction1(lockChanged))
-    if (selectionChanged != null) __obj.updateDynamic("selectionChanged")(js.Any.fromFunction1(selectionChanged))
-    if (sourcePortChanged != null) __obj.updateDynamic("sourcePortChanged")(js.Any.fromFunction1(sourcePortChanged))
-    if (targetPortChanged != null) __obj.updateDynamic("targetPortChanged")(js.Any.fromFunction1(targetPortChanged))
     __obj.asInstanceOf[LinkModelListener]
   }
+  @scala.inline
+  implicit class LinkModelListenerOps[Self <: LinkModelListener] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourcePortChanged(value: /* event */ BaseEventLinkModelLinkMod => Unit): Self = this.set("sourcePortChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSourcePortChanged: Self = this.set("sourcePortChanged", js.undefined)
+    @scala.inline
+    def setTargetPortChanged(value: /* event */ BaseEventLinkModelLinkMod => Unit): Self = this.set("targetPortChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTargetPortChanged: Self = this.set("targetPortChanged", js.undefined)
+  }
+  
 }
 

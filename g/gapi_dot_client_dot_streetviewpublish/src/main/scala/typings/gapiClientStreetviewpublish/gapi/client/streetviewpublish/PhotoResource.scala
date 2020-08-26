@@ -9,6 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PhotoResource extends js.Object {
   /**
     * After the client finishes uploading the photo with the returned
@@ -31,7 +32,7 @@ trait PhotoResource extends js.Object {
     * &#42; google.rpc.Code.RESOURCE_EXHAUSTED if the account has reached the
     * storage limit.
     */
-  def create(request: Accesstoken): Request[Photo]
+  def create(request: Accesstoken): Request[Photo] = js.native
   /**
     * Deletes a Photo and its metadata.
     *
@@ -41,7 +42,7 @@ trait PhotoResource extends js.Object {
     * create the requested photo.
     * &#42; google.rpc.Code.NOT_FOUND if the photo ID does not exist.
     */
-  def delete(request: Alt): Request[js.Object]
+  def delete(request: Alt): Request[js.Object] = js.native
   /**
     * Gets the metadata of the specified
     * Photo.
@@ -53,7 +54,7 @@ trait PhotoResource extends js.Object {
     * &#42; google.rpc.Code.NOT_FOUND if the requested
     * Photo does not exist.
     */
-  def get(request: Bearertoken): Request[Photo]
+  def get(request: Bearertoken): Request[Photo] = js.native
   /**
     * Creates an upload session to start uploading photo bytes. The upload URL of
     * the returned UploadRef is used to
@@ -75,7 +76,7 @@ trait PhotoResource extends js.Object {
     * CreatePhoto
     * to create the Photo object entry.
     */
-  def startUpload(request: Accesstoken): Request[UploadRef]
+  def startUpload(request: Accesstoken): Request[UploadRef] = js.native
   /**
     * Updates the metadata of a Photo, such
     * as pose, place association, connections, etc. Changing the pixels of a
@@ -98,7 +99,7 @@ trait PhotoResource extends js.Object {
     * &#42; google.rpc.Code.INVALID_ARGUMENT if the request is malformed.
     * &#42; google.rpc.Code.NOT_FOUND if the requested photo does not exist.
     */
-  def update(request: Callback): Request[Photo]
+  def update(request: Callback): Request[Photo] = js.native
 }
 
 object PhotoResource {
@@ -113,5 +114,28 @@ object PhotoResource {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), startUpload = js.Any.fromFunction1(startUpload), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[PhotoResource]
   }
+  @scala.inline
+  implicit class PhotoResourceOps[Self <: PhotoResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreate(value: Accesstoken => Request[Photo]): Self = this.set("create", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDelete(value: Alt => Request[js.Object]): Self = this.set("delete", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGet(value: Bearertoken => Request[Photo]): Self = this.set("get", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStartUpload(value: Accesstoken => Request[UploadRef]): Self = this.set("startUpload", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUpdate(value: Callback => Request[Photo]): Self = this.set("update", js.Any.fromFunction1(value))
+  }
+  
 }
 

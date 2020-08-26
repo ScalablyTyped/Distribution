@@ -13,7 +13,7 @@ import typings.mongodb.anon.ScaleSession
 import typings.mongodb.anon.Session
 import typings.mongodb.anon.SessionClientSession
 import typings.mongodb.anon.UpdateOneOptionsmultibool
-import typings.mongodb.anon.`1`
+import typings.mongodb.anon.`0`
 import typings.mongodb.mongodbStrings._id
 import typings.std.Partial
 import scala.scalajs.js
@@ -45,8 +45,24 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   def aggregate[T](): AggregationCursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html#aggregate */
   def aggregate[T](callback: MongoCallback[AggregationCursor[T]]): AggregationCursor[T] = js.native
+  def aggregate[T](
+    pipeline: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: MongoCallback[AggregationCursor[T]]
+  ): AggregationCursor[T] = js.native
+  def aggregate[T](pipeline: js.UndefOr[scala.Nothing], options: CollectionAggregationOptions): AggregationCursor[T] = js.native
+  def aggregate[T](
+    pipeline: js.UndefOr[scala.Nothing],
+    options: CollectionAggregationOptions,
+    callback: MongoCallback[AggregationCursor[T]]
+  ): AggregationCursor[T] = js.native
   def aggregate[T](pipeline: js.Array[js.Object]): AggregationCursor[T] = js.native
   def aggregate[T](pipeline: js.Array[js.Object], callback: MongoCallback[AggregationCursor[T]]): AggregationCursor[T] = js.native
+  def aggregate[T](
+    pipeline: js.Array[js.Object],
+    options: js.UndefOr[scala.Nothing],
+    callback: MongoCallback[AggregationCursor[T]]
+  ): AggregationCursor[T] = js.native
   def aggregate[T](pipeline: js.Array[js.Object], options: CollectionAggregationOptions): AggregationCursor[T] = js.native
   def aggregate[T](
     pipeline: js.Array[js.Object],
@@ -71,6 +87,7 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
     * @deprecated Use countDocuments or estimatedDocumentCount
     */
   def count(callback: MongoCallback[scala.Double]): Unit = js.native
+  def count(query: js.UndefOr[scala.Nothing], options: MongoCountPreferences): js.Promise[scala.Double] = js.native
   def count(query: FilterQuery[TSchema]): js.Promise[scala.Double] = js.native
   def count(query: FilterQuery[TSchema], callback: MongoCallback[scala.Double]): Unit = js.native
   def count(query: FilterQuery[TSchema], options: MongoCountPreferences): js.Promise[scala.Double] = js.native
@@ -78,6 +95,7 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   def countDocuments(): js.Promise[scala.Double] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#countDocuments */
   def countDocuments(callback: MongoCallback[scala.Double]): Unit = js.native
+  def countDocuments(query: js.UndefOr[scala.Nothing], options: MongoCountPreferences): js.Promise[scala.Double] = js.native
   def countDocuments(query: FilterQuery[TSchema]): js.Promise[scala.Double] = js.native
   def countDocuments(query: FilterQuery[TSchema], callback: MongoCallback[scala.Double]): Unit = js.native
   def countDocuments(query: FilterQuery[TSchema], options: MongoCountPreferences): js.Promise[scala.Double] = js.native
@@ -94,12 +112,8 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   def createIndexes(indexSpecs: js.Array[IndexSpecification]): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#createIndexes and  http://docs.mongodb.org/manual/reference/command/createIndexes/ */
   def createIndexes(indexSpecs: js.Array[IndexSpecification], callback: MongoCallback[_]): Unit = js.native
-  def createIndexes(indexSpecs: js.Array[IndexSpecification], options: SessionClientSession): js.Promise[_] = js.native
-  def createIndexes(
-    indexSpecs: js.Array[IndexSpecification],
-    options: SessionClientSession,
-    callback: MongoCallback[_]
-  ): Unit = js.native
+  def createIndexes(indexSpecs: js.Array[IndexSpecification], options: `0`): js.Promise[_] = js.native
+  def createIndexes(indexSpecs: js.Array[IndexSpecification], options: `0`, callback: MongoCallback[_]): Unit = js.native
   def deleteMany(filter: FilterQuery[TSchema]): js.Promise[DeleteWriteOpResultObject] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#deleteMany */
   def deleteMany(filter: FilterQuery[TSchema], callback: MongoCallback[DeleteWriteOpResultObject]): Unit = js.native
@@ -120,6 +134,7 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   ): Unit = js.native
   def distinct(key: String): js.Promise[js.Array[_]] = js.native
   def distinct(key: String, callback: MongoCallback[js.Array[_]]): Unit = js.native
+  def distinct(key: String, query: js.UndefOr[scala.Nothing], options: MongoDistinctPreferences): js.Promise[js.Array[_]] = js.native
   def distinct(key: String, query: FilterQuery[TSchema]): js.Promise[js.Array[_]] = js.native
   def distinct(key: String, query: FilterQuery[TSchema], callback: MongoCallback[js.Array[_]]): Unit = js.native
   def distinct(key: String, query: FilterQuery[TSchema], options: MongoDistinctPreferences): js.Promise[js.Array[_]] = js.native
@@ -134,6 +149,8 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#distinct */
   @JSName("distinct")
   def distinct_id(key: _id, callback: MongoCallback[js.Array[FlattenIfArray[ExtractIdType[TSchema]]]]): Unit = js.native
+  @JSName("distinct")
+  def distinct_id(key: _id, query: js.UndefOr[scala.Nothing], options: MongoDistinctPreferences): js.Promise[js.Array[FlattenIfArray[ExtractIdType[TSchema]]]] = js.native
   @JSName("distinct")
   def distinct_id(key: _id, query: FilterQuery[TSchema]): js.Promise[js.Array[FlattenIfArray[ExtractIdType[TSchema]]]] = js.native
   @JSName("distinct")
@@ -154,8 +171,8 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#drop */
   def drop(): js.Promise[_] = js.native
   def drop(callback: MongoCallback[_]): Unit = js.native
-  def drop(options: `1`): js.Promise[_] = js.native
-  def drop(options: `1`, callback: MongoCallback[_]): Unit = js.native
+  def drop(options: SessionClientSession): js.Promise[_] = js.native
+  def drop(options: SessionClientSession, callback: MongoCallback[_]): Unit = js.native
   def dropIndex(indexName: String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#dropIndex */
   def dropIndex(indexName: String, callback: MongoCallback[_]): Unit = js.native
@@ -171,6 +188,7 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   def estimatedDocumentCount(): js.Promise[scala.Double] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#estimatedDocumentCount */
   def estimatedDocumentCount(callback: MongoCallback[scala.Double]): Unit = js.native
+  def estimatedDocumentCount(query: js.UndefOr[scala.Nothing], options: MongoCountPreferences): js.Promise[scala.Double] = js.native
   def estimatedDocumentCount(query: FilterQuery[TSchema]): js.Promise[scala.Double] = js.native
   def estimatedDocumentCount(query: FilterQuery[TSchema], callback: MongoCallback[scala.Double]): Unit = js.native
   def estimatedDocumentCount(query: FilterQuery[TSchema], options: MongoCountPreferences): js.Promise[scala.Double] = js.native
@@ -822,12 +840,12 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   def indexExists(indexes: String): js.Promise[Boolean] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#indexExists */
   def indexExists(indexes: String, callback: MongoCallback[Boolean]): Unit = js.native
-  def indexExists(indexes: String, options: `1`): js.Promise[Boolean] = js.native
-  def indexExists(indexes: String, options: `1`, callback: MongoCallback[Boolean]): Unit = js.native
+  def indexExists(indexes: String, options: SessionClientSession): js.Promise[Boolean] = js.native
+  def indexExists(indexes: String, options: SessionClientSession, callback: MongoCallback[Boolean]): Unit = js.native
   def indexExists(indexes: js.Array[String]): js.Promise[Boolean] = js.native
   def indexExists(indexes: js.Array[String], callback: MongoCallback[Boolean]): Unit = js.native
-  def indexExists(indexes: js.Array[String], options: `1`): js.Promise[Boolean] = js.native
-  def indexExists(indexes: js.Array[String], options: `1`, callback: MongoCallback[Boolean]): Unit = js.native
+  def indexExists(indexes: js.Array[String], options: SessionClientSession): js.Promise[Boolean] = js.native
+  def indexExists(indexes: js.Array[String], options: SessionClientSession, callback: MongoCallback[Boolean]): Unit = js.native
   def indexInformation(): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#indexInformation */
   def indexInformation(callback: MongoCallback[_]): Unit = js.native
@@ -836,8 +854,8 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#indexes */
   def indexes(): js.Promise[_] = js.native
   def indexes(callback: MongoCallback[_]): Unit = js.native
-  def indexes(options: SessionClientSession, callback: MongoCallback[_]): Unit = js.native
-  def indexes(options: `1`): js.Promise[_] = js.native
+  def indexes(options: SessionClientSession): js.Promise[_] = js.native
+  def indexes(options: `0`, callback: MongoCallback[_]): Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#initializeOrderedBulkOp */
   def initializeOrderedBulkOp(): OrderedBulkOperation = js.native
   def initializeOrderedBulkOp(options: CommonOptions): OrderedBulkOperation = js.native
@@ -877,8 +895,8 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#isCapped */
   def isCapped(): js.Promise[_] = js.native
   def isCapped(callback: MongoCallback[_]): Unit = js.native
-  def isCapped(options: `1`): js.Promise[_] = js.native
-  def isCapped(options: `1`, callback: MongoCallback[_]): Unit = js.native
+  def isCapped(options: SessionClientSession): js.Promise[_] = js.native
+  def isCapped(options: SessionClientSession, callback: MongoCallback[_]): Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#listIndexes */
   def listIndexes(): CommandCursor = js.native
   def listIndexes(options: BatchSizeReadPreference): CommandCursor = js.native
@@ -925,8 +943,8 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#options */
   def options(): js.Promise[_] = js.native
   def options(callback: MongoCallback[_]): Unit = js.native
-  def options(options: `1`): js.Promise[_] = js.native
-  def options(options: `1`, callback: MongoCallback[_]): Unit = js.native
+  def options(options: SessionClientSession): js.Promise[_] = js.native
+  def options(options: SessionClientSession, callback: MongoCallback[_]): Unit = js.native
   def parallelCollectionScan(): js.Promise[js.Array[Cursor[_]]] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#parallelCollectionScan */
   def parallelCollectionScan(callback: MongoCallback[js.Array[Cursor[_]]]): Unit = js.native
@@ -935,13 +953,14 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#reIndex */
   def reIndex(): js.Promise[_] = js.native
   def reIndex(callback: MongoCallback[_]): Unit = js.native
-  def reIndex(options: `1`): js.Promise[_] = js.native
-  def reIndex(options: `1`, callback: MongoCallback[_]): Unit = js.native
+  def reIndex(options: SessionClientSession): js.Promise[_] = js.native
+  def reIndex(options: SessionClientSession, callback: MongoCallback[_]): Unit = js.native
   /** @deprecated Use use deleteOne, deleteMany or bulkWrite */
   def remove(selector: js.Object): Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#remove */
   /** @deprecated Use use deleteOne, deleteMany or bulkWrite */
   def remove(selector: js.Object, callback: MongoCallback[WriteOpResult]): Unit = js.native
+  def remove(selector: js.Object, options: js.UndefOr[scala.Nothing], callback: MongoCallback[WriteOpResult]): Unit = js.native
   def remove(selector: js.Object, options: CommonOptionssingleboolea): Unit = js.native
   def remove(selector: js.Object, options: CommonOptionssingleboolea, callback: MongoCallback[WriteOpResult]): Unit = js.native
   /** @deprecated Use use deleteOne, deleteMany or bulkWrite */
@@ -1064,6 +1083,7 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
     */
   def watch[T](): ChangeStream[T] = js.native
   def watch[T](options: ChangeStreamOptionssessio): ChangeStream[T] = js.native
+  def watch[T](pipeline: js.UndefOr[scala.Nothing], options: ChangeStreamOptionssessio): ChangeStream[T] = js.native
   def watch[T](pipeline: js.Array[js.Object]): ChangeStream[T] = js.native
   def watch[T](pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream[T] = js.native
 }

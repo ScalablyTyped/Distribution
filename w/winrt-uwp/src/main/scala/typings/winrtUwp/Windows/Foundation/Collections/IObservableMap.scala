@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Notifies listeners of dynamic changes to a map, such as when items are added or removed. */
+@js.native
 trait IObservableMap[K, V] extends IMap[K, V]
 
 object IObservableMap {

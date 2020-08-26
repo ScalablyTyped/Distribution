@@ -12,7 +12,7 @@ Javascript implementation of the L-diggity.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 68 |
-| # downloads        | 405597 |
+| # downloads        | 408311 |
 | # stars            | 8 |
 
 ## Links

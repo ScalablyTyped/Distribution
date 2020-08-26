@@ -11,8 +11,8 @@ Run Python scripts from Node.js with simple (but efficient) inter-process commun
 | Full name          | python-shell |
 | Keywords           | python |
 | # releases         | 11 |
-| # dependents       | 108 |
-| # downloads        | 898589 |
+| # dependents       | 109 |
+| # downloads        | 894087 |
 | # stars            | 30 |
 
 ## Links

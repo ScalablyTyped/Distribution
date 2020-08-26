@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TransitionService protected ()
   extends typings.uirouterCore.transitionMod.TransitionService {
-  /** @hidden */
+  /** @internal */
   def this(_router: typings.uirouterCore.routerMod.UIRouter) = this()
 }
 

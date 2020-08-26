@@ -26,18 +26,38 @@ trait NoiseReducerTemporalFilterSettings extends js.Object {
 
 object NoiseReducerTemporalFilterSettings {
   @scala.inline
-  def apply(
-    AggressiveMode: js.UndefOr[integerMin0Max4] = js.undefined,
-    PostTemporalSharpening: NoiseFilterPostTemporalSharpening = null,
-    Speed: js.UndefOr[integerMinNegative1Max3] = js.undefined,
-    Strength: js.UndefOr[integerMin0Max16] = js.undefined
-  ): NoiseReducerTemporalFilterSettings = {
+  def apply(): NoiseReducerTemporalFilterSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AggressiveMode)) __obj.updateDynamic("AggressiveMode")(AggressiveMode.get.asInstanceOf[js.Any])
-    if (PostTemporalSharpening != null) __obj.updateDynamic("PostTemporalSharpening")(PostTemporalSharpening.asInstanceOf[js.Any])
-    if (!js.isUndefined(Speed)) __obj.updateDynamic("Speed")(Speed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Strength)) __obj.updateDynamic("Strength")(Strength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoiseReducerTemporalFilterSettings]
   }
+  @scala.inline
+  implicit class NoiseReducerTemporalFilterSettingsOps[Self <: NoiseReducerTemporalFilterSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggressiveMode(value: integerMin0Max4): Self = this.set("AggressiveMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggressiveMode: Self = this.set("AggressiveMode", js.undefined)
+    @scala.inline
+    def setPostTemporalSharpening(value: NoiseFilterPostTemporalSharpening): Self = this.set("PostTemporalSharpening", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostTemporalSharpening: Self = this.set("PostTemporalSharpening", js.undefined)
+    @scala.inline
+    def setSpeed(value: integerMinNegative1Max3): Self = this.set("Speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeed: Self = this.set("Speed", js.undefined)
+    @scala.inline
+    def setStrength(value: integerMin0Max16): Self = this.set("Strength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrength: Self = this.set("Strength", js.undefined)
+  }
+  
 }
 

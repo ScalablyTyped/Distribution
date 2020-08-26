@@ -18,13 +18,17 @@ trait Area_[Datum] extends js.Object {
     */
   def apply(data: js.Array[Datum]): String | Null = js.native
   /**
+    * Returns the current rendering context, which defaults to null.
+    */
+  def context(): CanvasRenderingContext2D | Null = js.native
+  /**
     * Sets the rendering context to null and returns this area generator.
     *
     * A path data string representing the generated area will be returned when the generator is invoked with data.
     *
     * @param context null, to remove rendering context.
     */
-  def context(): this.type = js.native
+  def context(context: Null): this.type = js.native
   /**
     * Sets the rendering context and returns this area generator.
     *
@@ -33,11 +37,6 @@ trait Area_[Datum] extends js.Object {
     * @param context The rendering context.
     */
   def context(context: CanvasRenderingContext2D): this.type = js.native
-  /**
-    * Returns the current rendering context, which defaults to null.
-    */
-  @JSName("context")
-  def context_Union(): CanvasRenderingContext2D | Null = js.native
   /**
     * Returns the current curve factory, which defaults to curveLinear.
     */
@@ -160,13 +159,9 @@ trait Area_[Datum] extends js.Object {
     */
   def x0(x: Double): this.type = js.native
   /**
-    * Sets x1 to null and returns this area generator.
-    *
-    * Setting x1 to null indicates that the previously-computed x0 value should be reused for the x1 value.
-    *
-    * @param x null.
+    * Returns the current x1 accessor, which defaults to null, indicating that the previously-computed x0 value should be reused for the x1 value.
     */
-  def x1(): this.type = js.native
+  def x1(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
   /**
     * Sets x1 to the specified function and returns this area generator.
     *
@@ -184,10 +179,13 @@ trait Area_[Datum] extends js.Object {
     */
   def x1(x: Double): this.type = js.native
   /**
-    * Returns the current x1 accessor, which defaults to null, indicating that the previously-computed x0 value should be reused for the x1 value.
+    * Sets x1 to null and returns this area generator.
+    *
+    * Setting x1 to null indicates that the previously-computed x0 value should be reused for the x1 value.
+    *
+    * @param x null.
     */
-  @JSName("x1")
-  def x1_Union(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
+  def x1(x: Null): this.type = js.native
   /**
     * Returns the current y0 accessor. The default y0 accessor is a function returning a constant value of zero.
     */
@@ -231,13 +229,12 @@ trait Area_[Datum] extends js.Object {
     */
   def y0(y: Double): this.type = js.native
   /**
-    * Sets y1 to null and returns this area generator.
+    * Returns the current y1 accessor or null. The default y1 accessor is a function returning the second element of a
+    * two-element array of numbers.
     *
-    * Setting y1 to null indicates that the previously-computed y0 value should be reused for the y1 value.
-    *
-    * @param y null.
+    * If the y1 accessor is null, the previously-computed y0 value is reused for the y1 value.
     */
-  def y1(): this.type = js.native
+  def y1(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
   /**
     * Sets y1 to the specified function and returns this area generator.
     *
@@ -255,12 +252,12 @@ trait Area_[Datum] extends js.Object {
     */
   def y1(y: Double): this.type = js.native
   /**
-    * Returns the current y1 accessor or null. The default y1 accessor is a function returning the second element of a
-    * two-element array of numbers.
+    * Sets y1 to null and returns this area generator.
     *
-    * If the y1 accessor is null, the previously-computed y0 value is reused for the y1 value.
+    * Setting y1 to null indicates that the previously-computed y0 value should be reused for the y1 value.
+    *
+    * @param y null.
     */
-  @JSName("y1")
-  def y1_Union(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
+  def y1(y: Null): this.type = js.native
 }
 

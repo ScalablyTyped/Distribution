@@ -54,36 +54,76 @@ trait CreateOriginEndpointRequest extends js.Object {
 
 object CreateOriginEndpointRequest {
   @scala.inline
-  def apply(
-    ChannelId: string,
-    Id: string,
-    Authorization: Authorization = null,
-    CmafPackage: CmafPackageCreateOrUpdateParameters = null,
-    DashPackage: DashPackage = null,
-    Description: string = null,
-    HlsPackage: HlsPackage = null,
-    ManifestName: string = null,
-    MssPackage: MssPackage = null,
-    Origination: Origination = null,
-    StartoverWindowSeconds: js.UndefOr[integer] = js.undefined,
-    Tags: Tags = null,
-    TimeDelaySeconds: js.UndefOr[integer] = js.undefined,
-    Whitelist: listOfString = null
-  ): CreateOriginEndpointRequest = {
+  def apply(ChannelId: string, Id: string): CreateOriginEndpointRequest = {
     val __obj = js.Dynamic.literal(ChannelId = ChannelId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
-    if (Authorization != null) __obj.updateDynamic("Authorization")(Authorization.asInstanceOf[js.Any])
-    if (CmafPackage != null) __obj.updateDynamic("CmafPackage")(CmafPackage.asInstanceOf[js.Any])
-    if (DashPackage != null) __obj.updateDynamic("DashPackage")(DashPackage.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (HlsPackage != null) __obj.updateDynamic("HlsPackage")(HlsPackage.asInstanceOf[js.Any])
-    if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName.asInstanceOf[js.Any])
-    if (MssPackage != null) __obj.updateDynamic("MssPackage")(MssPackage.asInstanceOf[js.Any])
-    if (Origination != null) __obj.updateDynamic("Origination")(Origination.asInstanceOf[js.Any])
-    if (!js.isUndefined(StartoverWindowSeconds)) __obj.updateDynamic("StartoverWindowSeconds")(StartoverWindowSeconds.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeDelaySeconds)) __obj.updateDynamic("TimeDelaySeconds")(TimeDelaySeconds.get.asInstanceOf[js.Any])
-    if (Whitelist != null) __obj.updateDynamic("Whitelist")(Whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOriginEndpointRequest]
   }
+  @scala.inline
+  implicit class CreateOriginEndpointRequestOps[Self <: CreateOriginEndpointRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelId(value: string): Self = this.set("ChannelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorization(value: Authorization): Self = this.set("Authorization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorization: Self = this.set("Authorization", js.undefined)
+    @scala.inline
+    def setCmafPackage(value: CmafPackageCreateOrUpdateParameters): Self = this.set("CmafPackage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCmafPackage: Self = this.set("CmafPackage", js.undefined)
+    @scala.inline
+    def setDashPackage(value: DashPackage): Self = this.set("DashPackage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashPackage: Self = this.set("DashPackage", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setHlsPackage(value: HlsPackage): Self = this.set("HlsPackage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsPackage: Self = this.set("HlsPackage", js.undefined)
+    @scala.inline
+    def setManifestName(value: string): Self = this.set("ManifestName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestName: Self = this.set("ManifestName", js.undefined)
+    @scala.inline
+    def setMssPackage(value: MssPackage): Self = this.set("MssPackage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMssPackage: Self = this.set("MssPackage", js.undefined)
+    @scala.inline
+    def setOrigination(value: Origination): Self = this.set("Origination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigination: Self = this.set("Origination", js.undefined)
+    @scala.inline
+    def setStartoverWindowSeconds(value: integer): Self = this.set("StartoverWindowSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartoverWindowSeconds: Self = this.set("StartoverWindowSeconds", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTimeDelaySeconds(value: integer): Self = this.set("TimeDelaySeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeDelaySeconds: Self = this.set("TimeDelaySeconds", js.undefined)
+    @scala.inline
+    def setWhitelistVarargs(value: string*): Self = this.set("Whitelist", js.Array(value :_*))
+    @scala.inline
+    def setWhitelist(value: listOfString): Self = this.set("Whitelist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhitelist: Self = this.set("Whitelist", js.undefined)
+  }
+  
 }
 

@@ -20,15 +20,32 @@ trait HlsEncryption extends js.Object {
 
 object HlsEncryption {
   @scala.inline
-  def apply(
-    SpekeKeyProvider: SpekeKeyProvider,
-    ConstantInitializationVector: string = null,
-    EncryptionMethod: EncryptionMethod = null
-  ): HlsEncryption = {
+  def apply(SpekeKeyProvider: SpekeKeyProvider): HlsEncryption = {
     val __obj = js.Dynamic.literal(SpekeKeyProvider = SpekeKeyProvider.asInstanceOf[js.Any])
-    if (ConstantInitializationVector != null) __obj.updateDynamic("ConstantInitializationVector")(ConstantInitializationVector.asInstanceOf[js.Any])
-    if (EncryptionMethod != null) __obj.updateDynamic("EncryptionMethod")(EncryptionMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsEncryption]
   }
+  @scala.inline
+  implicit class HlsEncryptionOps[Self <: HlsEncryption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = this.set("SpekeKeyProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConstantInitializationVector(value: string): Self = this.set("ConstantInitializationVector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstantInitializationVector: Self = this.set("ConstantInitializationVector", js.undefined)
+    @scala.inline
+    def setEncryptionMethod(value: EncryptionMethod): Self = this.set("EncryptionMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionMethod: Self = this.set("EncryptionMethod", js.undefined)
+  }
+  
 }
 

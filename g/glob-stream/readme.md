@@ -10,9 +10,9 @@ A Readable Stream interface over node-glob.
 | ------------------ | :-------------: |
 | Full name          | glob-stream |
 | Keywords           | glob, stream, gulp, readable, fs, files |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 95 |
-| # downloads        | 101326062 |
+| # downloads        | 100613360 |
 | # stars            | 9 |
 
 ## Links

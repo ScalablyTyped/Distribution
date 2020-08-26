@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IEnumerator[T] extends js.Object {
-  def current(): T
-  def dispose(): Unit
-  def moveNext(): Boolean
+  def current(): T = js.native
+  def dispose(): Unit = js.native
+  def moveNext(): Boolean = js.native
 }
 
 object IEnumerator {
@@ -16,5 +17,24 @@ object IEnumerator {
     val __obj = js.Dynamic.literal(current = js.Any.fromFunction0(current), dispose = js.Any.fromFunction0(dispose), moveNext = js.Any.fromFunction0(moveNext))
     __obj.asInstanceOf[IEnumerator[T]]
   }
+  @scala.inline
+  implicit class IEnumeratorOps[Self <: IEnumerator[_], T] (val x: Self with IEnumerator[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrent(value: () => T): Self = this.set("current", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    @scala.inline
+    def setMoveNext(value: () => Boolean): Self = this.set("moveNext", js.Any.fromFunction0(value))
+  }
+  
 }
 

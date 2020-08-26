@@ -5,16 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Rules
   extends /* attribute */ StringDictionary[String | (js.Array[String | TypeCheckingRule]) | Rules]
 
 object Rules {
   @scala.inline
-  def apply(
-    StringDictionary: /* attribute */ StringDictionary[String | (js.Array[String | TypeCheckingRule]) | Rules] = null
-  ): Rules = {
+  def apply(): Rules = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Rules]
   }
 }

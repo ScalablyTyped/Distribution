@@ -9,7 +9,16 @@ import scala.scalajs.js.annotation._
 trait WorkDoneProgress extends js.Object {
   val token: CancellationToken = js.native
   def begin(title: String): Unit = js.native
+  def begin(
+    title: String,
+    percentage: js.UndefOr[scala.Nothing],
+    message: js.UndefOr[scala.Nothing],
+    cancellable: Boolean
+  ): Unit = js.native
+  def begin(title: String, percentage: js.UndefOr[scala.Nothing], message: String): Unit = js.native
+  def begin(title: String, percentage: js.UndefOr[scala.Nothing], message: String, cancellable: Boolean): Unit = js.native
   def begin(title: String, percentage: Double): Unit = js.native
+  def begin(title: String, percentage: Double, message: js.UndefOr[scala.Nothing], cancellable: Boolean): Unit = js.native
   def begin(title: String, percentage: Double, message: String): Unit = js.native
   def begin(title: String, percentage: Double, message: String, cancellable: Boolean): Unit = js.native
   def done(): Unit = js.native

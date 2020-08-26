@@ -1,43 +1,41 @@
 package typings.svgSprite.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefsAndSymbolSpecificModeConfig extends ModeConfig {
   /**
     * If you want to embed the sprite into your HTML source, you will want to set this to true
     * in order to prevent the creation of SVG namespace declarations and to set some other attributes for effectively hiding the library sprite.
     * @default false
     */
-  var `inline`: js.UndefOr[Boolean] = js.undefined
+  var `inline`: js.UndefOr[Boolean] = js.native
 }
 
 object DefsAndSymbolSpecificModeConfig {
   @scala.inline
-  def apply(
-    bust: js.UndefOr[Boolean] = js.undefined,
-    dest: String = null,
-    dimensions: String | Boolean = null,
-    example: RenderingConfiguration | Boolean = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    mode: String = null,
-    prefix: String = null,
-    render: StringDictionary[RenderingConfiguration | Boolean] = null,
-    sprite: String = null
-  ): DefsAndSymbolSpecificModeConfig = {
+  def apply(): DefsAndSymbolSpecificModeConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bust)) __obj.updateDynamic("bust")(bust.get.asInstanceOf[js.Any])
-    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefsAndSymbolSpecificModeConfig]
   }
+  @scala.inline
+  implicit class DefsAndSymbolSpecificModeConfigOps[Self <: DefsAndSymbolSpecificModeConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+  }
+  
 }
 

@@ -100,6 +100,19 @@ trait SwaggerMiddleware extends js.Object {
     * Express routing options (e.g. `caseSensitive`, `strict`).
     * If an Express Application or Router is passed, then its routing settings will be used.
     */
+  router: js.UndefOr[scala.Nothing],
+    /**
+    * The data store that will be used to persist REST resources.
+    * If `router` is an Express Application, then you can set/get the data store
+    * using `router.get("mock data store")
+    */
+  datastore: js.Any
+  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def mock(
+    /**
+    * Express routing options (e.g. `caseSensitive`, `strict`).
+    * If an Express Application or Router is passed, then its routing settings will be used.
+    */
   router: Application_
   ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def mock(

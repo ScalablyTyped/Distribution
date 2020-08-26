@@ -29,9 +29,11 @@ object getUsersInRole extends js.Object {
     * @return {Cursor} cursor of users in role
     */
   def apply(role: String): Cursor[User] = js.native
+  def apply(role: String, group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User] = js.native
   def apply(role: String, group: String): Cursor[User] = js.native
   def apply(role: String, group: String, options: Fields): Cursor[User] = js.native
   def apply(role: js.Array[String]): Cursor[User] = js.native
+  def apply(role: js.Array[String], group: js.UndefOr[scala.Nothing], options: Fields): Cursor[User] = js.native
   def apply(role: js.Array[String], group: String): Cursor[User] = js.native
   def apply(role: js.Array[String], group: String, options: Fields): Cursor[User] = js.native
 }

@@ -2,8 +2,6 @@ package typings.webpackChain.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpsMod.ServerOptions
-import typings.webpack.mod.Compiler_
-import typings.webpack.mod.Options.Stats
 import typings.webpackChain.anon.Errors
 import typings.webpackChain.webpackChainStrings.error
 import typings.webpackChain.webpackChainStrings.info
@@ -19,8 +17,22 @@ class DevServer ()
   extends typings.webpackChain.mod._Config.TypedChainedMap[Config, js.Any] {
   var allowedHosts: TypedChainedSet[this.type, String] = js.native
   def apply(value: String): this.type = js.native
-  def after(value: js.Function3[/* app */ js.Any, /* server */ js.Any, /* compiler */ Compiler_, Unit]): this.type = js.native
-  def before(value: js.Function3[/* app */ js.Any, /* server */ js.Any, /* compiler */ Compiler_, Unit]): this.type = js.native
+  def after(
+    value: js.Function3[
+      /* app */ js.Any, 
+      /* server */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, 
+      Unit
+    ]
+  ): this.type = js.native
+  def before(
+    value: js.Function3[
+      /* app */ js.Any, 
+      /* server */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, 
+      Unit
+    ]
+  ): this.type = js.native
   def bonjour(value: Boolean): this.type = js.native
   @JSName("clientLogLevel")
   def clientLogLevel_error(value: error): this.type = js.native
@@ -36,8 +48,6 @@ class DevServer ()
   def contentBase(value: js.Array[String]): this.type = js.native
   def contentBase(value: Boolean): this.type = js.native
   def disableHostCheck(value: Boolean): this.type = js.native
-  /* CompleteClass */
-  override def end(): Config = js.native
   def filename(value: String): this.type = js.native
   def headers(value: StringDictionary[String]): this.type = js.native
   def historyApiFallback(value: js.Any): this.type = js.native
@@ -72,7 +82,9 @@ class DevServer ()
   def sockPort(value: Double): this.type = js.native
   def socket(value: String): this.type = js.native
   def staticOptions(value: js.Any): this.type = js.native
-  def stats(value: Stats): this.type = js.native
+  def stats(
+    value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
+  ): this.type = js.native
   def stdin(value: Boolean): this.type = js.native
   def useLocalIp(value: Boolean): this.type = js.native
   def watchContentBase(value: Boolean): this.type = js.native

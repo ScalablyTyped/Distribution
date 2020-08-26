@@ -12,7 +12,7 @@ The lodash method `_.replace` exported as a module.
 | Keywords           | lodash-modularized, replace |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 164025 |
+| # downloads        | 150908 |
 | # stars            | 0 |
 
 ## Links

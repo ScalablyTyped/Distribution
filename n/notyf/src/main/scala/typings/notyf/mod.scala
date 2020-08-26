@@ -41,9 +41,10 @@ object mod extends js.Object {
   
   @js.native
   object NotyfEvent extends js.Object {
-    /* 0 */ val Dismiss: typings.notyf.notyfOptionsMod.NotyfEvent.Dismiss with Double = js.native
+    /* "click" */ val Click: typings.notyf.notyfOptionsMod.NotyfEvent.Click with String = js.native
+    /* "dismiss" */ val Dismiss: typings.notyf.notyfOptionsMod.NotyfEvent.Dismiss with String = js.native
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.notyf.notyfOptionsMod.NotyfEvent with Double] = js.native
+    def apply(value: String): js.UndefOr[typings.notyf.notyfOptionsMod.NotyfEvent with String] = js.native
   }
   
 }

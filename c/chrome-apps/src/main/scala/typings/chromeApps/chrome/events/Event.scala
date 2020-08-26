@@ -58,6 +58,7 @@ trait Event[T /* <: js.Function */] extends js.Object {
     */
   def removeRules(): Unit = js.native
   def removeRules(callback: js.Function0[Unit]): Unit = js.native
+  def removeRules(ruleIdentifiers: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def removeRules(ruleIdentifiers: js.Array[String]): Unit = js.native
   def removeRules(ruleIdentifiers: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
 }

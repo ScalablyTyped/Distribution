@@ -83,34 +83,81 @@ object DistributionConfig {
     Comment: CommentType,
     DefaultCacheBehavior: DefaultCacheBehavior,
     Enabled: Boolean,
-    Origins: Origins,
-    Aliases: Aliases = null,
-    CacheBehaviors: CacheBehaviors = null,
-    CustomErrorResponses: CustomErrorResponses = null,
-    DefaultRootObject: String = null,
-    HttpVersion: HttpVersion = null,
-    IsIPV6Enabled: js.UndefOr[Boolean] = js.undefined,
-    Logging: LoggingConfig = null,
-    OriginGroups: OriginGroups = null,
-    PriceClass: PriceClass = null,
-    Restrictions: Restrictions = null,
-    ViewerCertificate: ViewerCertificate = null,
-    WebACLId: String = null
+    Origins: Origins
   ): DistributionConfig = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], Comment = Comment.asInstanceOf[js.Any], DefaultCacheBehavior = DefaultCacheBehavior.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Origins = Origins.asInstanceOf[js.Any])
-    if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases.asInstanceOf[js.Any])
-    if (CacheBehaviors != null) __obj.updateDynamic("CacheBehaviors")(CacheBehaviors.asInstanceOf[js.Any])
-    if (CustomErrorResponses != null) __obj.updateDynamic("CustomErrorResponses")(CustomErrorResponses.asInstanceOf[js.Any])
-    if (DefaultRootObject != null) __obj.updateDynamic("DefaultRootObject")(DefaultRootObject.asInstanceOf[js.Any])
-    if (HttpVersion != null) __obj.updateDynamic("HttpVersion")(HttpVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsIPV6Enabled)) __obj.updateDynamic("IsIPV6Enabled")(IsIPV6Enabled.get.asInstanceOf[js.Any])
-    if (Logging != null) __obj.updateDynamic("Logging")(Logging.asInstanceOf[js.Any])
-    if (OriginGroups != null) __obj.updateDynamic("OriginGroups")(OriginGroups.asInstanceOf[js.Any])
-    if (PriceClass != null) __obj.updateDynamic("PriceClass")(PriceClass.asInstanceOf[js.Any])
-    if (Restrictions != null) __obj.updateDynamic("Restrictions")(Restrictions.asInstanceOf[js.Any])
-    if (ViewerCertificate != null) __obj.updateDynamic("ViewerCertificate")(ViewerCertificate.asInstanceOf[js.Any])
-    if (WebACLId != null) __obj.updateDynamic("WebACLId")(WebACLId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionConfig]
   }
+  @scala.inline
+  implicit class DistributionConfigOps[Self <: DistributionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallerReference(value: String): Self = this.set("CallerReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComment(value: CommentType): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultCacheBehavior(value: DefaultCacheBehavior): Self = this.set("DefaultCacheBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrigins(value: Origins): Self = this.set("Origins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAliases(value: Aliases): Self = this.set("Aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("Aliases", js.undefined)
+    @scala.inline
+    def setCacheBehaviors(value: CacheBehaviors): Self = this.set("CacheBehaviors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheBehaviors: Self = this.set("CacheBehaviors", js.undefined)
+    @scala.inline
+    def setCustomErrorResponses(value: CustomErrorResponses): Self = this.set("CustomErrorResponses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomErrorResponses: Self = this.set("CustomErrorResponses", js.undefined)
+    @scala.inline
+    def setDefaultRootObject(value: String): Self = this.set("DefaultRootObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRootObject: Self = this.set("DefaultRootObject", js.undefined)
+    @scala.inline
+    def setHttpVersion(value: HttpVersion): Self = this.set("HttpVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpVersion: Self = this.set("HttpVersion", js.undefined)
+    @scala.inline
+    def setIsIPV6Enabled(value: Boolean): Self = this.set("IsIPV6Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsIPV6Enabled: Self = this.set("IsIPV6Enabled", js.undefined)
+    @scala.inline
+    def setLogging(value: LoggingConfig): Self = this.set("Logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("Logging", js.undefined)
+    @scala.inline
+    def setOriginGroups(value: OriginGroups): Self = this.set("OriginGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginGroups: Self = this.set("OriginGroups", js.undefined)
+    @scala.inline
+    def setPriceClass(value: PriceClass): Self = this.set("PriceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriceClass: Self = this.set("PriceClass", js.undefined)
+    @scala.inline
+    def setRestrictions(value: Restrictions): Self = this.set("Restrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictions: Self = this.set("Restrictions", js.undefined)
+    @scala.inline
+    def setViewerCertificate(value: ViewerCertificate): Self = this.set("ViewerCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewerCertificate: Self = this.set("ViewerCertificate", js.undefined)
+    @scala.inline
+    def setWebACLId(value: String): Self = this.set("WebACLId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebACLId: Self = this.set("WebACLId", js.undefined)
+  }
+  
 }
 

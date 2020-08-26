@@ -10,15 +10,14 @@ Execute callback after the DOM is loaded.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/dom-ready |
 | Keywords           | wordpress, dom-ready |
-| # releases         | 19 |
+| # releases         | 18 |
 | # dependents       | 5 |
-| # downloads        | 187083 |
+| # downloads        | 190918 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/dom-ready/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
-- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fdom-ready)
     
 

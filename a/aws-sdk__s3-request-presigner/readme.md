@@ -10,9 +10,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/s3-request-presigner |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 741 |
+| # downloads        | 1166 |
 | # stars            | 0 |
 
 ## Links

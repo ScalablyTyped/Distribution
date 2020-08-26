@@ -28,6 +28,7 @@ class ResourceThreathits protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaEmpty] = js.native
   def create(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def create(params: ParamsResourceThreathitsCreate): GaxiosPromise[SchemaEmpty] = js.native
   def create(params: ParamsResourceThreathitsCreate, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def create(

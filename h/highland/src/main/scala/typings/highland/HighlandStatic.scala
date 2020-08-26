@@ -4,8 +4,8 @@ import typings.highland.Highland.MappingHint
 import typings.highland.Highland.Nil
 import typings.highland.Highland.OnFinished
 import typings.highland.Highland.Stream
-import typings.node.NodeJS.EventEmitter
 import typings.node.NodeJS.ReadableStream
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import typings.std.Iterable
 import typings.std.Iterator

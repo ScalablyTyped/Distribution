@@ -4,7 +4,6 @@ import typings.dndCore.interfacesMod.DragDropManager
 import typings.dndCore.interfacesMod.Identifier
 import typings.dndCore.interfacesMod.Listener
 import typings.dndCore.interfacesMod.Unsubscribe
-import typings.reactDnd.anon.HandlerIds
 import typings.reactDnd.anon.Shallow
 import typings.reactDnd.monitorsMod.DragSourceMonitor
 import scala.scalajs.js
@@ -27,7 +26,6 @@ object dragSourceMonitorImplMod extends js.Object {
     def isOverTarget(targetId: Identifier, options: Shallow): Boolean = js.native
     def isSourcePublic(): Boolean | Null = js.native
     def subscribeToOffsetChange(listener: Listener): Unsubscribe = js.native
-    def subscribeToStateChange(listener: Listener, options: HandlerIds): Unsubscribe = js.native
   }
   
 }

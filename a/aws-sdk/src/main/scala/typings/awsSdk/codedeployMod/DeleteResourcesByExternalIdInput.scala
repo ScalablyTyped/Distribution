@@ -14,10 +14,26 @@ trait DeleteResourcesByExternalIdInput extends js.Object {
 
 object DeleteResourcesByExternalIdInput {
   @scala.inline
-  def apply(externalId: ExternalId = null): DeleteResourcesByExternalIdInput = {
+  def apply(): DeleteResourcesByExternalIdInput = {
     val __obj = js.Dynamic.literal()
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResourcesByExternalIdInput]
   }
+  @scala.inline
+  implicit class DeleteResourcesByExternalIdInputOps[Self <: DeleteResourcesByExternalIdInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExternalId(value: ExternalId): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("externalId", js.undefined)
+  }
+  
 }
 

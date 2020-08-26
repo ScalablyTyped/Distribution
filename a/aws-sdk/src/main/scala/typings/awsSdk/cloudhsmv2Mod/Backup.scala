@@ -35,41 +35,77 @@ trait Backup extends js.Object {
     */
   var SourceBackup: js.UndefOr[BackupId] = js.native
   /**
-    * The identifier (ID) of the cluster containing the source backup from which the new backup was copied. .
+    * The identifier (ID) of the cluster containing the source backup from which the new backup was copied.
     */
   var SourceCluster: js.UndefOr[ClusterId] = js.native
   /**
-    * The AWS region that contains the source backup from which the new backup was copied.
+    * The AWS Region that contains the source backup from which the new backup was copied.
     */
   var SourceRegion: js.UndefOr[Region] = js.native
+  /**
+    * The list of tags for the backup.
+    */
   var TagList: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.TagList] = js.native
 }
 
 object Backup {
   @scala.inline
-  def apply(
-    BackupId: BackupId,
-    BackupState: BackupState = null,
-    ClusterId: ClusterId = null,
-    CopyTimestamp: Timestamp = null,
-    CreateTimestamp: Timestamp = null,
-    DeleteTimestamp: Timestamp = null,
-    SourceBackup: BackupId = null,
-    SourceCluster: ClusterId = null,
-    SourceRegion: Region = null,
-    TagList: TagList = null
-  ): Backup = {
+  def apply(BackupId: BackupId): Backup = {
     val __obj = js.Dynamic.literal(BackupId = BackupId.asInstanceOf[js.Any])
-    if (BackupState != null) __obj.updateDynamic("BackupState")(BackupState.asInstanceOf[js.Any])
-    if (ClusterId != null) __obj.updateDynamic("ClusterId")(ClusterId.asInstanceOf[js.Any])
-    if (CopyTimestamp != null) __obj.updateDynamic("CopyTimestamp")(CopyTimestamp.asInstanceOf[js.Any])
-    if (CreateTimestamp != null) __obj.updateDynamic("CreateTimestamp")(CreateTimestamp.asInstanceOf[js.Any])
-    if (DeleteTimestamp != null) __obj.updateDynamic("DeleteTimestamp")(DeleteTimestamp.asInstanceOf[js.Any])
-    if (SourceBackup != null) __obj.updateDynamic("SourceBackup")(SourceBackup.asInstanceOf[js.Any])
-    if (SourceCluster != null) __obj.updateDynamic("SourceCluster")(SourceCluster.asInstanceOf[js.Any])
-    if (SourceRegion != null) __obj.updateDynamic("SourceRegion")(SourceRegion.asInstanceOf[js.Any])
-    if (TagList != null) __obj.updateDynamic("TagList")(TagList.asInstanceOf[js.Any])
     __obj.asInstanceOf[Backup]
   }
+  @scala.inline
+  implicit class BackupOps[Self <: Backup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupId(value: BackupId): Self = this.set("BackupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBackupState(value: BackupState): Self = this.set("BackupState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupState: Self = this.set("BackupState", js.undefined)
+    @scala.inline
+    def setClusterId(value: ClusterId): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("ClusterId", js.undefined)
+    @scala.inline
+    def setCopyTimestamp(value: Timestamp): Self = this.set("CopyTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTimestamp: Self = this.set("CopyTimestamp", js.undefined)
+    @scala.inline
+    def setCreateTimestamp(value: Timestamp): Self = this.set("CreateTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTimestamp: Self = this.set("CreateTimestamp", js.undefined)
+    @scala.inline
+    def setDeleteTimestamp(value: Timestamp): Self = this.set("DeleteTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteTimestamp: Self = this.set("DeleteTimestamp", js.undefined)
+    @scala.inline
+    def setSourceBackup(value: BackupId): Self = this.set("SourceBackup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceBackup: Self = this.set("SourceBackup", js.undefined)
+    @scala.inline
+    def setSourceCluster(value: ClusterId): Self = this.set("SourceCluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCluster: Self = this.set("SourceCluster", js.undefined)
+    @scala.inline
+    def setSourceRegion(value: Region): Self = this.set("SourceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRegion: Self = this.set("SourceRegion", js.undefined)
+    @scala.inline
+    def setTagListVarargs(value: Tag*): Self = this.set("TagList", js.Array(value :_*))
+    @scala.inline
+    def setTagList(value: TagList): Self = this.set("TagList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagList: Self = this.set("TagList", js.undefined)
+  }
+  
 }
 

@@ -24,16 +24,38 @@ trait SchemaSharedTargeting extends js.Object {
 
 object SchemaSharedTargeting {
   @scala.inline
-  def apply(
-    exclusions: js.Array[SchemaTargetingValue] = null,
-    inclusions: js.Array[SchemaTargetingValue] = null,
-    key: String = null
-  ): SchemaSharedTargeting = {
+  def apply(): SchemaSharedTargeting = {
     val __obj = js.Dynamic.literal()
-    if (exclusions != null) __obj.updateDynamic("exclusions")(exclusions.asInstanceOf[js.Any])
-    if (inclusions != null) __obj.updateDynamic("inclusions")(inclusions.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSharedTargeting]
   }
+  @scala.inline
+  implicit class SchemaSharedTargetingOps[Self <: SchemaSharedTargeting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExclusionsVarargs(value: SchemaTargetingValue*): Self = this.set("exclusions", js.Array(value :_*))
+    @scala.inline
+    def setExclusions(value: js.Array[SchemaTargetingValue]): Self = this.set("exclusions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusions: Self = this.set("exclusions", js.undefined)
+    @scala.inline
+    def setInclusionsVarargs(value: SchemaTargetingValue*): Self = this.set("inclusions", js.Array(value :_*))
+    @scala.inline
+    def setInclusions(value: js.Array[SchemaTargetingValue]): Self = this.set("inclusions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclusions: Self = this.set("inclusions", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+  }
+  
 }
 

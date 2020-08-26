@@ -22,6 +22,7 @@ class ReflectionFlags () extends Array[String] {
   def isPrivate: Boolean = js.native
   def isProtected: Boolean = js.native
   def isPublic: Boolean = js.native
+  def isReadonly: Boolean = js.native
   def isRest: Boolean = js.native
   def isStatic: Boolean = js.native
   def setFlag(flag: ReflectionFlag, set: Boolean): Unit = js.native

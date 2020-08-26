@@ -40,6 +40,11 @@ abstract class HttpExecutor[REQUEST] () extends js.Object {
   /* protected */ def doDownload(requestOptions: js.Any, options: DownloadCallOptions, redirectCount: Double): Unit = js.native
   def downloadToBuffer(url: URL_, options: DownloadOptions): js.Promise[Buffer] = js.native
   def request(options: RequestOptions): js.Promise[String | Null] = js.native
+  def request(
+    options: RequestOptions,
+    cancellationToken: js.UndefOr[scala.Nothing],
+    data: StringDictionary[js.Any]
+  ): js.Promise[String | Null] = js.native
   def request(options: RequestOptions, cancellationToken: CancellationToken): js.Promise[String | Null] = js.native
   def request(options: RequestOptions, cancellationToken: CancellationToken, data: StringDictionary[js.Any]): js.Promise[String | Null] = js.native
 }

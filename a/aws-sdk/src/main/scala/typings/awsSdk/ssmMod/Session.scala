@@ -46,28 +46,58 @@ trait Session extends js.Object {
 
 object Session {
   @scala.inline
-  def apply(
-    Details: SessionDetails = null,
-    DocumentName: DocumentName = null,
-    EndDate: DateTime = null,
-    OutputUrl: SessionManagerOutputUrl = null,
-    Owner: SessionOwner = null,
-    SessionId: SessionId = null,
-    StartDate: DateTime = null,
-    Status: SessionStatus = null,
-    Target: SessionTarget = null
-  ): Session = {
+  def apply(): Session = {
     val __obj = js.Dynamic.literal()
-    if (Details != null) __obj.updateDynamic("Details")(Details.asInstanceOf[js.Any])
-    if (DocumentName != null) __obj.updateDynamic("DocumentName")(DocumentName.asInstanceOf[js.Any])
-    if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
-    if (OutputUrl != null) __obj.updateDynamic("OutputUrl")(OutputUrl.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (SessionId != null) __obj.updateDynamic("SessionId")(SessionId.asInstanceOf[js.Any])
-    if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Target != null) __obj.updateDynamic("Target")(Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
+  @scala.inline
+  implicit class SessionOps[Self <: Session] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetails(value: SessionDetails): Self = this.set("Details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("Details", js.undefined)
+    @scala.inline
+    def setDocumentName(value: DocumentName): Self = this.set("DocumentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentName: Self = this.set("DocumentName", js.undefined)
+    @scala.inline
+    def setEndDate(value: DateTime): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("EndDate", js.undefined)
+    @scala.inline
+    def setOutputUrl(value: SessionManagerOutputUrl): Self = this.set("OutputUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputUrl: Self = this.set("OutputUrl", js.undefined)
+    @scala.inline
+    def setOwner(value: SessionOwner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+    @scala.inline
+    def setSessionId(value: SessionId): Self = this.set("SessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionId: Self = this.set("SessionId", js.undefined)
+    @scala.inline
+    def setStartDate(value: DateTime): Self = this.set("StartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+    @scala.inline
+    def setStatus(value: SessionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTarget(value: SessionTarget): Self = this.set("Target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("Target", js.undefined)
+  }
+  
 }
 

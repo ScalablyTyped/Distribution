@@ -66,6 +66,10 @@ object Box extends js.Object {
       */
     def read(): js.Promise[String | Buffer] = js.native
     def read(fn: js.Function2[/* err */ js.Any, /* result */ String | Buffer, Unit]): js.Promise[String | Buffer] = js.native
+    def read(
+      option: js.UndefOr[scala.Nothing],
+      fn: js.Function2[/* err */ js.Any, /* result */ String | Buffer, Unit]
+    ): js.Promise[String | Buffer] = js.native
     def read(option: Encoding): js.Promise[String | Buffer] = js.native
     def read(option: Encoding, fn: js.Function2[/* err */ js.Any, /* result */ String | Buffer, Unit]): js.Promise[String | Buffer] = js.native
     /**
@@ -78,6 +82,7 @@ object Box extends js.Object {
       */
     def render(): js.Promise[String] = js.native
     def render(fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
+    def render(option: js.UndefOr[scala.Nothing], fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
     def render(option: js.Any): js.Promise[String] = js.native
     def render(option: js.Any, fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
     /**

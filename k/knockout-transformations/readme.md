@@ -12,7 +12,7 @@ Live transform methods for Knockout observable arrays
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 8202 |
+| # downloads        | 8381 |
 | # stars            | 0 |
 
 ## Links

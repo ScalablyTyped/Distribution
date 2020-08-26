@@ -28,6 +28,7 @@ class ResourcePageviews protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPageviews] = js.native
   def get(callback: BodyResponseCallback[SchemaPageviews]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPageviews] = js.native
   def get(params: ParamsResourcePageviewsGet): GaxiosPromise[SchemaPageviews] = js.native
   def get(params: ParamsResourcePageviewsGet, callback: BodyResponseCallback[SchemaPageviews]): Unit = js.native
   def get(

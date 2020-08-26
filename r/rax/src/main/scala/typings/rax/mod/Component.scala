@@ -1,6 +1,6 @@
 package typings.rax.mod
 
-import typings.rax.anon.ReadonlychildrenRaxNode
+import typings.rax.anon.ReadonlychildrenRaxNodeun
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Component[P, S, SS] protected () extends ComponentLifecycle[P, S, SS] {
   def this(props: P) = this()
-  val props: P with ReadonlychildrenRaxNode = js.native
+  val props: P with ReadonlychildrenRaxNodeun = js.native
   var state: S = js.native
   def forceUpdate(): Unit = js.native
   def forceUpdate(callBack: js.Function0[Unit]): Unit = js.native

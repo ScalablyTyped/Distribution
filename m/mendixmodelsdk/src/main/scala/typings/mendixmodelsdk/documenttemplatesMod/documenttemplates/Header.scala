@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/header-(document-template) relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/header-document-template relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Header")
 @js.native
@@ -26,7 +26,7 @@ class Header protected () extends DropZone {
   @JSName("model")
   var model_FHeader: IModel = js.native
   def topMargin: Double = js.native
-  def topMargin(newValue: Double): js.Any = js.native
+  def topMargin_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

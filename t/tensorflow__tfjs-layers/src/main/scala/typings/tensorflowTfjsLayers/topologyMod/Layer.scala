@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "Layer")
 @js.native
-abstract class Layer protected () extends Serializable {
+abstract class Layer () extends Serializable {
   def this(args: LayerArgs) = this()
   var _addedWeightNames: js.Any = js.native
   var _built: js.Any = js.native
@@ -144,9 +144,222 @@ abstract class Layer protected () extends Serializable {
     */
   /** @doc {heading: 'Models', 'subheading': 'Classes'} */
   /* protected */ def addWeight(name: String, shape: Shape): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: Boolean
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: Boolean,
+    constraint: Constraint
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: Regularizer
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: Regularizer,
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: Regularizer,
+    trainable: Boolean
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: Regularizer,
+    trainable: Boolean,
+    constraint: Constraint
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(name: String, shape: Shape, dtype: js.UndefOr[scala.Nothing], initializer: Initializer): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: Initializer,
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: Initializer,
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: Boolean
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: Initializer,
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: Boolean,
+    constraint: Constraint
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: Initializer,
+    regularizer: Regularizer
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: Initializer,
+    regularizer: Regularizer,
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: Initializer,
+    regularizer: Regularizer,
+    trainable: Boolean
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: js.UndefOr[scala.Nothing],
+    initializer: Initializer,
+    regularizer: Regularizer,
+    trainable: Boolean,
+    constraint: Constraint
+  ): LayerVariable = js.native
   /* protected */ def addWeight(name: String, shape: Shape, dtype: DataType): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: DataType,
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: DataType,
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: Boolean
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: DataType,
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: Boolean,
+    constraint: Constraint
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: DataType,
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: Regularizer
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: DataType,
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: Regularizer,
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: DataType,
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: Regularizer,
+    trainable: Boolean
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: DataType,
+    initializer: js.UndefOr[scala.Nothing],
+    regularizer: Regularizer,
+    trainable: Boolean,
+    constraint: Constraint
+  ): LayerVariable = js.native
   /* protected */ def addWeight(name: String, shape: Shape, dtype: DataType, initializer: Initializer): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: DataType,
+    initializer: Initializer,
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: DataType,
+    initializer: Initializer,
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: Boolean
+  ): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: DataType,
+    initializer: Initializer,
+    regularizer: js.UndefOr[scala.Nothing],
+    trainable: Boolean,
+    constraint: Constraint
+  ): LayerVariable = js.native
   /* protected */ def addWeight(name: String, shape: Shape, dtype: DataType, initializer: Initializer, regularizer: Regularizer): LayerVariable = js.native
+  /* protected */ def addWeight(
+    name: String,
+    shape: Shape,
+    dtype: DataType,
+    initializer: Initializer,
+    regularizer: Regularizer,
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ): LayerVariable = js.native
   /* protected */ def addWeight(
     name: String,
     shape: Shape,

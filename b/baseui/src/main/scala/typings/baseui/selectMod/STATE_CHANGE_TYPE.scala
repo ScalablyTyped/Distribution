@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait STATE_CHANGE_TYPE extends js.Object {
-  var clear: typings.baseui.baseuiStrings.clear
-  var remove: typings.baseui.baseuiStrings.remove
-  var select: typings.baseui.baseuiStrings.select
+  var clear: typings.baseui.baseuiStrings.clear = js.native
+  var remove: typings.baseui.baseuiStrings.remove = js.native
+  var select: typings.baseui.baseuiStrings.select = js.native
 }
 
 @JSImport("baseui/select", "STATE_CHANGE_TYPE")

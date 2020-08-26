@@ -26,7 +26,7 @@ trait VNodeConstructor
       /* tagName */ String, 
       /* properties */ VProperties, 
       /* children */ js.Array[VTree], 
-      /* key */ String, 
+      js.UndefOr[/* key */ String], 
       /* namespace */ String, 
       VNode
     ]

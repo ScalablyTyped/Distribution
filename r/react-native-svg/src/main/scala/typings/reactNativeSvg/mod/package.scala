@@ -13,8 +13,12 @@ package object mod {
     - typings.reactNativeSvg.mod.NumberProp
   */
   type BaselineShift = typings.reactNativeSvg.mod._BaselineShift | js.Array[typings.reactNativeSvg.mod.NumberProp] | typings.reactNativeSvg.mod.NumberProp
+  type Circle = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.CircleProps, typings.react.mod.ComponentState]
+  type ClipPath = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.ClipPathProps, typings.react.mod.ComponentState]
   type Color = typings.reactNativeSvg.mod.int32ARGBColor | typings.reactNativeSvg.mod.rgbaArray | java.lang.String
   type ColumnMajorTransformMatrix = js.Tuple6[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
+  type Defs = typings.react.mod.ComponentClass[js.Object, typings.react.mod.ComponentState]
+  type Ellipse = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.EllipseProps, typings.react.mod.ComponentState]
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeSvg.mod.NumberProp
     - typings.reactNativeSvg.reactNativeSvgStrings.normal
@@ -32,10 +36,30 @@ package object mod {
     - typings.reactNativeSvg.reactNativeSvgStrings.`900`
   */
   type FontWeight = typings.reactNativeSvg.mod._FontWeight | typings.reactNativeSvg.mod.NumberProp
+  type ForeignObject = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.ForeignObjectProps, typings.react.mod.ComponentState]
+  type G = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.GProps, typings.react.mod.ComponentState]
+  type Image = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.ImageProps, typings.react.mod.ComponentState]
+  type Line = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.LineProps, typings.react.mod.ComponentState]
+  type LinearGradient = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.LinearGradientProps, typings.react.mod.ComponentState]
+  type Marker = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.MarkerProps, typings.react.mod.ComponentState]
+  type Mask = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.MaskProps, typings.react.mod.ComponentState]
   type Middleware = js.Function1[/* ast */ typings.reactNativeSvg.mod.XmlAST, typings.reactNativeSvg.mod.XmlAST]
   type NumberArray = js.Array[typings.reactNativeSvg.mod.NumberProp] | typings.reactNativeSvg.mod.NumberProp
   type NumberProp = java.lang.String | scala.Double
+  type Path = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.PathProps, typings.react.mod.ComponentState]
+  type Pattern = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.PatternProps, typings.react.mod.ComponentState]
+  type Polygon = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.PolygonProps, typings.react.mod.ComponentState]
+  type Polyline = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.PolylineProps, typings.react.mod.ComponentState]
+  type RadialGradient = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.RadialGradientProps, typings.react.mod.ComponentState]
+  type Rect = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.RectProps, typings.react.mod.ComponentState]
+  type Stop = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.StopProps, typings.react.mod.ComponentState]
   type Styles = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  type Svg = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.SvgProps, typings.react.mod.ComponentState]
+  type Symbol = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.SymbolProps, typings.react.mod.ComponentState]
+  type TSpan = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.TSpanProps, typings.react.mod.ComponentState]
+  type Text = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.TextProps, typings.react.mod.ComponentState]
+  type TextPath = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.TextPathProps, typings.react.mod.ComponentState]
+  type Use = typings.react.mod.ComponentClass[typings.reactNativeSvg.mod.UseProps, typings.react.mod.ComponentState]
   type int32ARGBColor = scala.Double
   type rgbaArray = js.Array[scala.Double]
 }

@@ -10,26 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ASPxClientLegend")
 @js.native
 class ASPxClientLegend ()
-  extends typings.devexpressWeb.ASPxClientLegend {
-  /**
-    * Gets the chart that owns the current chart element.
-    */
-  /* CompleteClass */
-  override var chart: typings.devexpressWeb.ASPxClientWebChart = js.native
-  /**
-    * Returns a collection of custom legend items of the legend.
-    */
-  /* CompleteClass */
-  override var customItems: js.Array[typings.devexpressWeb.ASPxClientCustomLegendItem] = js.native
-  /**
-    * Returns the name of the legend.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-  /**
-    * Returns a value which determines whether to use checkboxes instead of markers on a chart legend for all legend items.
-    */
-  /* CompleteClass */
-  override var useCheckBoxes: Boolean = js.native
-}
+  extends typings.devexpressWeb.ASPxClientLegend
 

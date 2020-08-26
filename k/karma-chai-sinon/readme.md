@@ -12,7 +12,7 @@ Chai + Sinon-Chai + Sinon for Karma
 | Keywords           | karma, karma-plugin, chai, sinon, sinon-chai, mocha |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 814913 |
+| # downloads        | 822018 |
 | # stars            | 5 |
 
 ## Links

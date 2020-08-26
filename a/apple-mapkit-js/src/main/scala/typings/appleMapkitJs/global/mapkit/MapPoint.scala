@@ -19,33 +19,5 @@ class MapPoint protected ()
     * @param  The point along the north-south axis of the map projection.
     */
   def this(x: Double, y: Double) = this()
-  /**
-    * The location of the point along the x-axis of the map.
-    */
-  /* CompleteClass */
-  override var x: Double = js.native
-  /**
-    * The location of the point along the y-axis of the map.
-    */
-  /* CompleteClass */
-  override var y: Double = js.native
-  /**
-    * Returns a copy of a map point.
-    */
-  /* CompleteClass */
-  override def copy(): typings.appleMapkitJs.mapkit.MapPoint = js.native
-  /**
-    * Indicates whether two map points are equal.
-    *
-    * @param anotherPoint A map point to use for comparison.
-    */
-  /* CompleteClass */
-  override def equals(anotherPoint: typings.appleMapkitJs.mapkit.MapPoint): Boolean = js.native
-  /**
-    * Returns a coordinate containing the latitude and longitude corresponding
-    * to a map point.
-    */
-  /* CompleteClass */
-  override def toCoordinate(): typings.appleMapkitJs.mapkit.Coordinate = js.native
 }
 

@@ -16,12 +16,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.app.AlertDialog")
 @js.native
-class AlertDialog protected () extends Dialog {
-  def this(context: Context) = this()
-  def this(context: Context, cancelable: Boolean) = this()
-  def this(context: Context, cancelable: Boolean, cancelListener: OnCancelListener) = this()
+trait AlertDialog extends Dialog {
   var mAlert: js.Any = js.native
   def getButton(whichButton: Double): Button = js.native
   def getListView(): ListView = js.native
@@ -30,8 +26,76 @@ class AlertDialog protected () extends Dialog {
   def setIcon(icon: Drawable): Unit = js.native
   def setMessage(message: String): Unit = js.native
   def setView(view: View): Unit = js.native
+  def setView(
+    view: View,
+    viewSpacingLeft: js.UndefOr[scala.Nothing],
+    viewSpacingTop: js.UndefOr[scala.Nothing],
+    viewSpacingRight: js.UndefOr[scala.Nothing],
+    viewSpacingBottom: Double
+  ): Unit = js.native
+  def setView(
+    view: View,
+    viewSpacingLeft: js.UndefOr[scala.Nothing],
+    viewSpacingTop: js.UndefOr[scala.Nothing],
+    viewSpacingRight: Double
+  ): Unit = js.native
+  def setView(
+    view: View,
+    viewSpacingLeft: js.UndefOr[scala.Nothing],
+    viewSpacingTop: js.UndefOr[scala.Nothing],
+    viewSpacingRight: Double,
+    viewSpacingBottom: Double
+  ): Unit = js.native
+  def setView(view: View, viewSpacingLeft: js.UndefOr[scala.Nothing], viewSpacingTop: Double): Unit = js.native
+  def setView(
+    view: View,
+    viewSpacingLeft: js.UndefOr[scala.Nothing],
+    viewSpacingTop: Double,
+    viewSpacingRight: js.UndefOr[scala.Nothing],
+    viewSpacingBottom: Double
+  ): Unit = js.native
+  def setView(
+    view: View,
+    viewSpacingLeft: js.UndefOr[scala.Nothing],
+    viewSpacingTop: Double,
+    viewSpacingRight: Double
+  ): Unit = js.native
+  def setView(
+    view: View,
+    viewSpacingLeft: js.UndefOr[scala.Nothing],
+    viewSpacingTop: Double,
+    viewSpacingRight: Double,
+    viewSpacingBottom: Double
+  ): Unit = js.native
   def setView(view: View, viewSpacingLeft: Double): Unit = js.native
+  def setView(
+    view: View,
+    viewSpacingLeft: Double,
+    viewSpacingTop: js.UndefOr[scala.Nothing],
+    viewSpacingRight: js.UndefOr[scala.Nothing],
+    viewSpacingBottom: Double
+  ): Unit = js.native
+  def setView(
+    view: View,
+    viewSpacingLeft: Double,
+    viewSpacingTop: js.UndefOr[scala.Nothing],
+    viewSpacingRight: Double
+  ): Unit = js.native
+  def setView(
+    view: View,
+    viewSpacingLeft: Double,
+    viewSpacingTop: js.UndefOr[scala.Nothing],
+    viewSpacingRight: Double,
+    viewSpacingBottom: Double
+  ): Unit = js.native
   def setView(view: View, viewSpacingLeft: Double, viewSpacingTop: Double): Unit = js.native
+  def setView(
+    view: View,
+    viewSpacingLeft: Double,
+    viewSpacingTop: Double,
+    viewSpacingRight: js.UndefOr[scala.Nothing],
+    viewSpacingBottom: Double
+  ): Unit = js.native
   def setView(view: View, viewSpacingLeft: Double, viewSpacingTop: Double, viewSpacingRight: Double): Unit = js.native
   def setView(
     view: View,
@@ -42,13 +106,11 @@ class AlertDialog protected () extends Dialog {
   ): Unit = js.native
 }
 
-/* static members */
 @JSGlobal("android.app.AlertDialog")
 @js.native
 object AlertDialog extends js.Object {
   @js.native
-  class Builder protected () extends js.Object {
-    def this(context: Context) = this()
+  trait Builder extends js.Object {
     var P: js.Any = js.native
     def create(): AlertDialog = js.native
     def getContext(): Context = js.native
@@ -72,8 +134,76 @@ object AlertDialog extends js.Object {
     def setSingleChoiceItemsWithAdapter(adapter: ListAdapter, checkedItem: Double, listener: OnClickListener): Builder = js.native
     def setTitle(title: String): Builder = js.native
     def setView(view: View): Builder = js.native
+    def setView(
+      view: View,
+      viewSpacingLeft: js.UndefOr[scala.Nothing],
+      viewSpacingTop: js.UndefOr[scala.Nothing],
+      viewSpacingRight: js.UndefOr[scala.Nothing],
+      viewSpacingBottom: Double
+    ): Builder = js.native
+    def setView(
+      view: View,
+      viewSpacingLeft: js.UndefOr[scala.Nothing],
+      viewSpacingTop: js.UndefOr[scala.Nothing],
+      viewSpacingRight: Double
+    ): Builder = js.native
+    def setView(
+      view: View,
+      viewSpacingLeft: js.UndefOr[scala.Nothing],
+      viewSpacingTop: js.UndefOr[scala.Nothing],
+      viewSpacingRight: Double,
+      viewSpacingBottom: Double
+    ): Builder = js.native
+    def setView(view: View, viewSpacingLeft: js.UndefOr[scala.Nothing], viewSpacingTop: Double): Builder = js.native
+    def setView(
+      view: View,
+      viewSpacingLeft: js.UndefOr[scala.Nothing],
+      viewSpacingTop: Double,
+      viewSpacingRight: js.UndefOr[scala.Nothing],
+      viewSpacingBottom: Double
+    ): Builder = js.native
+    def setView(
+      view: View,
+      viewSpacingLeft: js.UndefOr[scala.Nothing],
+      viewSpacingTop: Double,
+      viewSpacingRight: Double
+    ): Builder = js.native
+    def setView(
+      view: View,
+      viewSpacingLeft: js.UndefOr[scala.Nothing],
+      viewSpacingTop: Double,
+      viewSpacingRight: Double,
+      viewSpacingBottom: Double
+    ): Builder = js.native
     def setView(view: View, viewSpacingLeft: Double): Builder = js.native
+    def setView(
+      view: View,
+      viewSpacingLeft: Double,
+      viewSpacingTop: js.UndefOr[scala.Nothing],
+      viewSpacingRight: js.UndefOr[scala.Nothing],
+      viewSpacingBottom: Double
+    ): Builder = js.native
+    def setView(
+      view: View,
+      viewSpacingLeft: Double,
+      viewSpacingTop: js.UndefOr[scala.Nothing],
+      viewSpacingRight: Double
+    ): Builder = js.native
+    def setView(
+      view: View,
+      viewSpacingLeft: Double,
+      viewSpacingTop: js.UndefOr[scala.Nothing],
+      viewSpacingRight: Double,
+      viewSpacingBottom: Double
+    ): Builder = js.native
     def setView(view: View, viewSpacingLeft: Double, viewSpacingTop: Double): Builder = js.native
+    def setView(
+      view: View,
+      viewSpacingLeft: Double,
+      viewSpacingTop: Double,
+      viewSpacingRight: js.UndefOr[scala.Nothing],
+      viewSpacingBottom: Double
+    ): Builder = js.native
     def setView(view: View, viewSpacingLeft: Double, viewSpacingTop: Double, viewSpacingRight: Double): Builder = js.native
     def setView(
       view: View,
@@ -85,10 +215,5 @@ object AlertDialog extends js.Object {
     def show(): AlertDialog = js.native
   }
   
-  var THEME_DEVICE_DEFAULT_DARK: Double = js.native
-  var THEME_DEVICE_DEFAULT_LIGHT: Double = js.native
-  var THEME_HOLO_DARK: Double = js.native
-  var THEME_HOLO_LIGHT: Double = js.native
-  var THEME_TRADITIONAL: Double = js.native
 }
 

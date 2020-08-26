@@ -63,24 +63,63 @@ object StartChildWorkflowExecutionInitiatedEventAttributes {
     decisionTaskCompletedEventId: EventId,
     taskList: TaskList,
     workflowId: WorkflowId,
-    workflowType: WorkflowType,
-    control: Data = null,
-    executionStartToCloseTimeout: DurationInSecondsOptional = null,
-    input: Data = null,
-    lambdaRole: Arn = null,
-    tagList: TagList = null,
-    taskPriority: TaskPriority = null,
-    taskStartToCloseTimeout: DurationInSecondsOptional = null
+    workflowType: WorkflowType
   ): StartChildWorkflowExecutionInitiatedEventAttributes = {
     val __obj = js.Dynamic.literal(childPolicy = childPolicy.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any], taskList = taskList.asInstanceOf[js.Any], workflowId = workflowId.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
-    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
-    if (executionStartToCloseTimeout != null) __obj.updateDynamic("executionStartToCloseTimeout")(executionStartToCloseTimeout.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (lambdaRole != null) __obj.updateDynamic("lambdaRole")(lambdaRole.asInstanceOf[js.Any])
-    if (tagList != null) __obj.updateDynamic("tagList")(tagList.asInstanceOf[js.Any])
-    if (taskPriority != null) __obj.updateDynamic("taskPriority")(taskPriority.asInstanceOf[js.Any])
-    if (taskStartToCloseTimeout != null) __obj.updateDynamic("taskStartToCloseTimeout")(taskStartToCloseTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartChildWorkflowExecutionInitiatedEventAttributes]
   }
+  @scala.inline
+  implicit class StartChildWorkflowExecutionInitiatedEventAttributesOps[Self <: StartChildWorkflowExecutionInitiatedEventAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildPolicy(value: ChildPolicy): Self = this.set("childPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDecisionTaskCompletedEventId(value: EventId): Self = this.set("decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskList(value: TaskList): Self = this.set("taskList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkflowId(value: WorkflowId): Self = this.set("workflowId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkflowType(value: WorkflowType): Self = this.set("workflowType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setControl(value: Data): Self = this.set("control", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControl: Self = this.set("control", js.undefined)
+    @scala.inline
+    def setExecutionStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("executionStartToCloseTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionStartToCloseTimeout: Self = this.set("executionStartToCloseTimeout", js.undefined)
+    @scala.inline
+    def setInput(value: Data): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setLambdaRole(value: Arn): Self = this.set("lambdaRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaRole: Self = this.set("lambdaRole", js.undefined)
+    @scala.inline
+    def setTagListVarargs(value: Tag*): Self = this.set("tagList", js.Array(value :_*))
+    @scala.inline
+    def setTagList(value: TagList): Self = this.set("tagList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagList: Self = this.set("tagList", js.undefined)
+    @scala.inline
+    def setTaskPriority(value: TaskPriority): Self = this.set("taskPriority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskPriority: Self = this.set("taskPriority", js.undefined)
+    @scala.inline
+    def setTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("taskStartToCloseTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskStartToCloseTimeout: Self = this.set("taskStartToCloseTimeout", js.undefined)
+  }
+  
 }
 

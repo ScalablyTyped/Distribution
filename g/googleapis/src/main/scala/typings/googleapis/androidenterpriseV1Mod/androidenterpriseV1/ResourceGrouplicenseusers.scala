@@ -29,6 +29,7 @@ class ResourceGrouplicenseusers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGroupLicenseUsersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGroupLicenseUsersListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroupLicenseUsersListResponse] = js.native
   def list(params: ParamsResourceGrouplicenseusersList): GaxiosPromise[SchemaGroupLicenseUsersListResponse] = js.native
   def list(
     params: ParamsResourceGrouplicenseusersList,

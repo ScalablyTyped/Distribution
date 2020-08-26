@@ -20,11 +20,32 @@ trait SchemaUrlMapsScopedList extends js.Object {
 
 object SchemaUrlMapsScopedList {
   @scala.inline
-  def apply(urlMaps: js.Array[SchemaUrlMap] = null, warning: Code = null): SchemaUrlMapsScopedList = {
+  def apply(): SchemaUrlMapsScopedList = {
     val __obj = js.Dynamic.literal()
-    if (urlMaps != null) __obj.updateDynamic("urlMaps")(urlMaps.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUrlMapsScopedList]
   }
+  @scala.inline
+  implicit class SchemaUrlMapsScopedListOps[Self <: SchemaUrlMapsScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUrlMapsVarargs(value: SchemaUrlMap*): Self = this.set("urlMaps", js.Array(value :_*))
+    @scala.inline
+    def setUrlMaps(value: js.Array[SchemaUrlMap]): Self = this.set("urlMaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlMaps: Self = this.set("urlMaps", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

@@ -16,10 +16,26 @@ trait ClientAuthentication extends js.Object {
 
 object ClientAuthentication {
   @scala.inline
-  def apply(Tls: Tls = null): ClientAuthentication = {
+  def apply(): ClientAuthentication = {
     val __obj = js.Dynamic.literal()
-    if (Tls != null) __obj.updateDynamic("Tls")(Tls.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientAuthentication]
   }
+  @scala.inline
+  implicit class ClientAuthenticationOps[Self <: ClientAuthentication] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTls(value: Tls): Self = this.set("Tls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTls: Self = this.set("Tls", js.undefined)
+  }
+  
 }
 

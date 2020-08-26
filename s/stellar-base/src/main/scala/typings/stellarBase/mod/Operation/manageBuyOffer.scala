@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-base", "Operation.manageBuyOffer")
 @js.native
 object manageBuyOffer extends js.Object {
-  def apply(options: ManageBuyOffer): typings.stellarBase.mod.xdr.Operation[ManageBuyOffer_] = js.native
+  def apply(options: ManageBuyOffer): typings.stellarBase.xdrMod.default.Operation[ManageBuyOffer_] = js.native
 }
 

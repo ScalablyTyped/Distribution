@@ -26,9 +26,15 @@ trait EntityAspect extends js.Object {
   def isNavigationPropertyLoaded(navigationProperty: String): Boolean = js.native
   def isNavigationPropertyLoaded(navigationProperty: NavigationProperty): Boolean = js.native
   def loadNavigationProperty(navigationProperty: String): js.Promise[QueryResult] = js.native
+  def loadNavigationProperty(navigationProperty: String, callback: js.UndefOr[scala.Nothing], errorCallback: js.Function): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: String, callback: js.Function): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: String, callback: js.Function, errorCallback: js.Function): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: NavigationProperty): js.Promise[QueryResult] = js.native
+  def loadNavigationProperty(
+    navigationProperty: NavigationProperty,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function
+  ): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: NavigationProperty, callback: js.Function): js.Promise[QueryResult] = js.native
   def loadNavigationProperty(navigationProperty: NavigationProperty, callback: js.Function, errorCallback: js.Function): js.Promise[QueryResult] = js.native
   def rejectChanges(): Unit = js.native

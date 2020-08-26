@@ -14,24 +14,24 @@ object math extends js.Object {
     * Conversion factor between degrees and radians.
     * @example
     * // Convert 180 degrees to pi radians
-    var rad = 180 * pc.math.DEG_TO_RAD;
+    * var rad = 180 * pc.math.DEG_TO_RAD;
     */
   val DEG_TO_RAD: Double = js.native
   /**
     * Conversion factor between degrees and radians.
     * @example
     * // Convert pi radians to 180 degrees
-    var deg = Math.PI * pc.math.RAD_TO_DEG;
+    * var deg = Math.PI * pc.math.RAD_TO_DEG;
     */
   val RAD_TO_DEG: Double = js.native
   /**
     * Convert 3 8 bit Numbers into a single unsigned 24 bit Number.
     * @example
     * // Set result1 to 0x112233 from an array of 3 values
-    var result1 = pc.math.bytesToInt24([0x11, 0x22, 0x33]);
-    
-    // Set result2 to 0x112233 from 3 discrete values
-    var result2 = pc.math.bytesToInt24(0x11, 0x22, 0x33);
+    * var result1 = pc.math.bytesToInt24([0x11, 0x22, 0x33]);
+    *
+    * // Set result2 to 0x112233 from 3 discrete values
+    * var result2 = pc.math.bytesToInt24(0x11, 0x22, 0x33);
     * @param r - A single byte (0-255).
     * @param g - A single byte (0-255).
     * @param b - A single byte (0-255).
@@ -42,10 +42,10 @@ object math extends js.Object {
     * Convert 4 1-byte Numbers into a single unsigned 32bit Number.
     * @example
     * // Set result1 to 0x11223344 from an array of 4 values
-    var result1 = pc.math.bytesToInt32([0x11, 0x22, 0x33, 0x44]);
-    
-    // Set result2 to 0x11223344 from 4 discrete values
-    var result2 = pc.math.bytesToInt32(0x11, 0x22, 0x33, 0x44);
+    * var result1 = pc.math.bytesToInt32([0x11, 0x22, 0x33, 0x44]);
+    *
+    * // Set result2 to 0x11223344 from 4 discrete values
+    * var result2 = pc.math.bytesToInt32(0x11, 0x22, 0x33, 0x44);
     * @param r - A single byte (0-255).
     * @param g - A single byte (0-255).
     * @param b - A single byte (0-255).
@@ -71,7 +71,7 @@ object math extends js.Object {
     * Convert an 24 bit integer into an array of 3 bytes.
     * @example
     * // Set bytes to [0x11, 0x22, 0x33]
-    var bytes = pc.math.intToBytes24(0x112233);
+    * var bytes = pc.math.intToBytes24(0x112233);
     * @param i - Number holding an integer value.
     * @returns An array of 3 bytes.
     */
@@ -80,7 +80,7 @@ object math extends js.Object {
     * Convert an 32 bit integer into an array of 4 bytes.
     * @example
     * // Set bytes to [0x11, 0x22, 0x33, 0x44]
-    var bytes = pc.math.intToBytes32(0x11223344);
+    * var bytes = pc.math.intToBytes32(0x11223344);
     * @param i - Number holding an integer value.
     * @returns An array of 4 bytes.
     */
@@ -90,19 +90,19 @@ object math extends js.Object {
     * @param a - Number to linearly interpolate from.
     * @param b - Number to linearly interpolate to.
     * @param alpha - The value controlling the result of interpolation. When alpha is 0,
-    a is returned. When alpha is 1, b is returned. Between 0 and 1, a linear interpolation between
-    a and b is returned. alpha is clamped between 0 and 1.
+    * a is returned. When alpha is 1, b is returned. Between 0 and 1, a linear interpolation between
+    * a and b is returned. alpha is clamped between 0 and 1.
     * @returns The linear interpolation of two numbers.
     */
   def lerp(a: Double, b: Double, alpha: Double): Double = js.native
   /**
     * Calculates the linear interpolation of two angles ensuring that interpolation
-    is correctly performed across the 360 to 0 degree boundary. Angles are supplied in degrees.
+    * is correctly performed across the 360 to 0 degree boundary. Angles are supplied in degrees.
     * @param a - Angle (in degrees) to linearly interpolate from.
     * @param b - Angle (in degrees) to linearly interpolate to.
     * @param alpha - The value controlling the result of interpolation. When alpha is 0,
-    a is returned. When alpha is 1, b is returned. Between 0 and 1, a linear interpolation between
-    a and b is returned. alpha is clamped between 0 and 1.
+    * a is returned. When alpha is 1, b is returned. Between 0 and 1, a linear interpolation between
+    * a and b is returned. alpha is clamped between 0 and 1.
     * @returns The linear interpolation of two angles.
     */
   def lerpAngle(a: Double, b: Double, alpha: Double): Double = js.native
@@ -120,7 +120,7 @@ object math extends js.Object {
   def powerOfTwo(x: Double): Boolean = js.native
   /**
     * Return a pseudo-random number between min and max.
-    The number generated is in the range [min, max), that is inclusive of the minimum but exclusive of the maximum.
+    * The number generated is in the range [min, max), that is inclusive of the minimum but exclusive of the maximum.
     * @param min - Lower bound for range.
     * @param max - Upper bound for range.
     * @returns Pseudo-random number between the supplied range.
@@ -135,8 +135,8 @@ object math extends js.Object {
   def roundUp(numToRound: Double, multiple: Double): Double = js.native
   /**
     * An improved version of the pc.math.smoothstep function which has zero
-    1st and 2nd order derivatives at t=0 and t=1.
-    <br/>See http://en.wikipedia.org/wiki/Smoothstep for more details.
+    * 1st and 2nd order derivatives at t=0 and t=1.
+    * <br/>See http://en.wikipedia.org/wiki/Smoothstep for more details.
     * @param min - The lower bound of the interpolation range.
     * @param max - The upper bound of the interpolation range.
     * @param x - The value to interpolate.
@@ -145,12 +145,12 @@ object math extends js.Object {
   def smootherstep(min: Double, max: Double, x: Double): Double = js.native
   /**
     * The function interpolates smoothly between two input values based on
-    a third one that should be between the first two. The returned value is clamped
-    between 0 and 1.
-    <br/>The slope (i.e. derivative) of the smoothstep function starts at 0 and ends at 0.
-    This makes it easy to create a sequence of transitions using smoothstep to interpolate
-    each segment rather than using a more sophisticated or expensive interpolation technique.
-    <br/>See http://en.wikipedia.org/wiki/Smoothstep for more details.
+    * a third one that should be between the first two. The returned value is clamped
+    * between 0 and 1.
+    * <br/>The slope (i.e. derivative) of the smoothstep function starts at 0 and ends at 0.
+    * This makes it easy to create a sequence of transitions using smoothstep to interpolate
+    * each segment rather than using a more sophisticated or expensive interpolation technique.
+    * <br/>See http://en.wikipedia.org/wiki/Smoothstep for more details.
     * @param min - The lower bound of the interpolation range.
     * @param max - The upper bound of the interpolation range.
     * @param x - The value to interpolate.

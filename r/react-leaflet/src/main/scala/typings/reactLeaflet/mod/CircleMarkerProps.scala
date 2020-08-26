@@ -1,98 +1,57 @@
 package typings.reactLeaflet.mod
 
 import typings.leaflet.mod.CircleMarkerOptions
-import typings.leaflet.mod.FillRule
 import typings.leaflet.mod.LatLngExpression
-import typings.leaflet.mod.LeafletEvent
-import typings.leaflet.mod.LeafletMouseEvent
-import typings.leaflet.mod.LineCapShape
-import typings.leaflet.mod.LineJoinShape
-import typings.leaflet.mod.PopupEvent
-import typings.leaflet.mod.Renderer
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
-- typings.reactLeaflet.mod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait CircleMarkerProps
+- typings.reactLeaflet.mod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ @js.native
+trait CircleMarkerProps
   extends CircleMarkerOptions
      with PathEvents {
-  var center: LatLngExpression
-  var children: js.UndefOr[Children] = js.undefined
-  var leaflet: js.UndefOr[LeafletContext] = js.undefined
+  var center: LatLngExpression = js.native
+  var children: js.UndefOr[Children] = js.native
+  var leaflet: js.UndefOr[LeafletContext] = js.native
   @JSName("radius")
-  var radius_CircleMarkerProps: Double
+  var radius_CircleMarkerProps: Double = js.native
 }
 
 object CircleMarkerProps {
   @scala.inline
-  def apply(
-    center: LatLngExpression,
-    radius: Double,
-    attribution: String = null,
-    bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined,
-    children: Children = null,
-    className: String = null,
-    color: String = null,
-    dashArray: String | js.Array[Double] = null,
-    dashOffset: String = null,
-    fill: js.UndefOr[Boolean] = js.undefined,
-    fillColor: String = null,
-    fillOpacity: js.UndefOr[Double] = js.undefined,
-    fillRule: FillRule = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    leaflet: LeafletContext = null,
-    lineCap: LineCapShape = null,
-    lineJoin: LineJoinShape = null,
-    onadd: /* event */ LeafletEvent => Unit = null,
-    onclick: /* event */ LeafletMouseEvent => Unit = null,
-    oncontextmenu: /* event */ LeafletMouseEvent => Unit = null,
-    ondblclick: /* event */ LeafletMouseEvent => Unit = null,
-    onmousedown: /* event */ LeafletMouseEvent => Unit = null,
-    onmouseout: /* event */ LeafletMouseEvent => Unit = null,
-    onmouseover: /* event */ LeafletMouseEvent => Unit = null,
-    onpopupclose: /* event */ PopupEvent => Unit = null,
-    onpopupopen: /* event */ PopupEvent => Unit = null,
-    onremove: /* event */ LeafletEvent => Unit = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    pane: String = null,
-    renderer: Renderer = null,
-    stroke: js.UndefOr[Boolean] = js.undefined,
-    weight: js.UndefOr[Double] = js.undefined
-  ): CircleMarkerProps = {
+  def apply(center: LatLngExpression, radius: Double): CircleMarkerProps = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
-    if (dashOffset != null) __obj.updateDynamic("dashOffset")(dashOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
-    if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
-    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (onadd != null) __obj.updateDynamic("onadd")(js.Any.fromFunction1(onadd))
-    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
-    if (oncontextmenu != null) __obj.updateDynamic("oncontextmenu")(js.Any.fromFunction1(oncontextmenu))
-    if (ondblclick != null) __obj.updateDynamic("ondblclick")(js.Any.fromFunction1(ondblclick))
-    if (onmousedown != null) __obj.updateDynamic("onmousedown")(js.Any.fromFunction1(onmousedown))
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction1(onmouseout))
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(js.Any.fromFunction1(onmouseover))
-    if (onpopupclose != null) __obj.updateDynamic("onpopupclose")(js.Any.fromFunction1(onpopupclose))
-    if (onpopupopen != null) __obj.updateDynamic("onpopupopen")(js.Any.fromFunction1(onpopupopen))
-    if (onremove != null) __obj.updateDynamic("onremove")(js.Any.fromFunction1(onremove))
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleMarkerProps]
   }
+  @scala.inline
+  implicit class CircleMarkerPropsOps[Self <: CircleMarkerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCenter(value: LatLngExpression): Self = this.set("center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChildrenVarargs(value: ReactNode*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: Children): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setLeaflet(value: LeafletContext): Self = this.set("leaflet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaflet: Self = this.set("leaflet", js.undefined)
+  }
+  
 }
 

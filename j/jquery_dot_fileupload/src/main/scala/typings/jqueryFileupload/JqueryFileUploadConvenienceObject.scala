@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait JqueryFileUploadConvenienceObject extends js.Object {
   def abort(): JqueryFileUploadEnhancedPromise[_] = js.native
   def process(): JqueryFileUploadEnhancedPromise[_] = js.native
+  def process(resolveFunc: js.UndefOr[scala.Nothing], rejectFunc: js.Function): JqueryFileUploadEnhancedPromise[_] = js.native
   def process(resolveFunc: js.Function): JqueryFileUploadEnhancedPromise[_] = js.native
   def process(resolveFunc: js.Function, rejectFunc: js.Function): JqueryFileUploadEnhancedPromise[_] = js.native
   def processing(): JqueryFileUploadEnhancedPromise[_] = js.native

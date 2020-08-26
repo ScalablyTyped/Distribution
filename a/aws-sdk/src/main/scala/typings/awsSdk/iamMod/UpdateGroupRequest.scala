@@ -22,11 +22,32 @@ trait UpdateGroupRequest extends js.Object {
 
 object UpdateGroupRequest {
   @scala.inline
-  def apply(GroupName: groupNameType, NewGroupName: groupNameType = null, NewPath: pathType = null): UpdateGroupRequest = {
+  def apply(GroupName: groupNameType): UpdateGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any])
-    if (NewGroupName != null) __obj.updateDynamic("NewGroupName")(NewGroupName.asInstanceOf[js.Any])
-    if (NewPath != null) __obj.updateDynamic("NewPath")(NewPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGroupRequest]
   }
+  @scala.inline
+  implicit class UpdateGroupRequestOps[Self <: UpdateGroupRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupName(value: groupNameType): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewGroupName(value: groupNameType): Self = this.set("NewGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewGroupName: Self = this.set("NewGroupName", js.undefined)
+    @scala.inline
+    def setNewPath(value: pathType): Self = this.set("NewPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewPath: Self = this.set("NewPath", js.undefined)
+  }
+  
 }
 

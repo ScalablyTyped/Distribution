@@ -12,7 +12,7 @@ A useful modern JavaScript solution that helps your website users to add (instal
 | Keywords           | add to home, add website to home screen, add pwa to home screen, install to home screen, install pwa, ios progressive web app, ios pwa |
 | # releases         | 16 |
 | # dependents       | 0 |
-| # downloads        | 3954 |
+| # downloads        | 4148 |
 | # stars            | 0 |
 
 ## Links

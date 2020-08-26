@@ -1,6 +1,6 @@
 package typings.gitlab
 
-import typings.gitlab.anon.searchstringPaginatedRequ
+import typings.gitlab.anon.searchstringundefinedPagi
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
@@ -15,9 +15,9 @@ object branchesMod extends js.Object {
   @js.native
   class Branches () extends BaseService {
     def all(projectId: String): js.Promise[GetResponse] = js.native
-    def all(projectId: String, options: searchstringPaginatedRequ): js.Promise[GetResponse] = js.native
+    def all(projectId: String, options: searchstringundefinedPagi): js.Promise[GetResponse] = js.native
     def all(projectId: Double): js.Promise[GetResponse] = js.native
-    def all(projectId: Double, options: searchstringPaginatedRequ): js.Promise[GetResponse] = js.native
+    def all(projectId: Double, options: searchstringundefinedPagi): js.Promise[GetResponse] = js.native
     def create(projectId: String, branchName: String, ref: String): js.Promise[js.Object] = js.native
     def create(projectId: String, branchName: String, ref: String, options: Sudo): js.Promise[js.Object] = js.native
     def create(projectId: Double, branchName: String, ref: String): js.Promise[js.Object] = js.native

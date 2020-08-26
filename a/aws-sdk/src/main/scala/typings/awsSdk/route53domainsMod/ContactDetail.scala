@@ -66,38 +66,80 @@ trait ContactDetail extends js.Object {
 
 object ContactDetail {
   @scala.inline
-  def apply(
-    AddressLine1: AddressLine = null,
-    AddressLine2: AddressLine = null,
-    City: City = null,
-    ContactType: ContactType = null,
-    CountryCode: CountryCode = null,
-    Email: Email = null,
-    ExtraParams: ExtraParamList = null,
-    Fax: ContactNumber = null,
-    FirstName: ContactName = null,
-    LastName: ContactName = null,
-    OrganizationName: ContactName = null,
-    PhoneNumber: ContactNumber = null,
-    State: State = null,
-    ZipCode: ZipCode = null
-  ): ContactDetail = {
+  def apply(): ContactDetail = {
     val __obj = js.Dynamic.literal()
-    if (AddressLine1 != null) __obj.updateDynamic("AddressLine1")(AddressLine1.asInstanceOf[js.Any])
-    if (AddressLine2 != null) __obj.updateDynamic("AddressLine2")(AddressLine2.asInstanceOf[js.Any])
-    if (City != null) __obj.updateDynamic("City")(City.asInstanceOf[js.Any])
-    if (ContactType != null) __obj.updateDynamic("ContactType")(ContactType.asInstanceOf[js.Any])
-    if (CountryCode != null) __obj.updateDynamic("CountryCode")(CountryCode.asInstanceOf[js.Any])
-    if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
-    if (ExtraParams != null) __obj.updateDynamic("ExtraParams")(ExtraParams.asInstanceOf[js.Any])
-    if (Fax != null) __obj.updateDynamic("Fax")(Fax.asInstanceOf[js.Any])
-    if (FirstName != null) __obj.updateDynamic("FirstName")(FirstName.asInstanceOf[js.Any])
-    if (LastName != null) __obj.updateDynamic("LastName")(LastName.asInstanceOf[js.Any])
-    if (OrganizationName != null) __obj.updateDynamic("OrganizationName")(OrganizationName.asInstanceOf[js.Any])
-    if (PhoneNumber != null) __obj.updateDynamic("PhoneNumber")(PhoneNumber.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (ZipCode != null) __obj.updateDynamic("ZipCode")(ZipCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactDetail]
   }
+  @scala.inline
+  implicit class ContactDetailOps[Self <: ContactDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressLine1(value: AddressLine): Self = this.set("AddressLine1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressLine1: Self = this.set("AddressLine1", js.undefined)
+    @scala.inline
+    def setAddressLine2(value: AddressLine): Self = this.set("AddressLine2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressLine2: Self = this.set("AddressLine2", js.undefined)
+    @scala.inline
+    def setCity(value: City): Self = this.set("City", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("City", js.undefined)
+    @scala.inline
+    def setContactType(value: ContactType): Self = this.set("ContactType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactType: Self = this.set("ContactType", js.undefined)
+    @scala.inline
+    def setCountryCode(value: CountryCode): Self = this.set("CountryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCode: Self = this.set("CountryCode", js.undefined)
+    @scala.inline
+    def setEmail(value: Email): Self = this.set("Email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("Email", js.undefined)
+    @scala.inline
+    def setExtraParamsVarargs(value: ExtraParam*): Self = this.set("ExtraParams", js.Array(value :_*))
+    @scala.inline
+    def setExtraParams(value: ExtraParamList): Self = this.set("ExtraParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraParams: Self = this.set("ExtraParams", js.undefined)
+    @scala.inline
+    def setFax(value: ContactNumber): Self = this.set("Fax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFax: Self = this.set("Fax", js.undefined)
+    @scala.inline
+    def setFirstName(value: ContactName): Self = this.set("FirstName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstName: Self = this.set("FirstName", js.undefined)
+    @scala.inline
+    def setLastName(value: ContactName): Self = this.set("LastName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastName: Self = this.set("LastName", js.undefined)
+    @scala.inline
+    def setOrganizationName(value: ContactName): Self = this.set("OrganizationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationName: Self = this.set("OrganizationName", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: ContactNumber): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("PhoneNumber", js.undefined)
+    @scala.inline
+    def setState(value: State): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setZipCode(value: ZipCode): Self = this.set("ZipCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZipCode: Self = this.set("ZipCode", js.undefined)
+  }
+  
 }
 

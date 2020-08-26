@@ -4,65 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Fields extends js.Object {
   /** Used to group the items.
     */
-  var groupBy: js.UndefOr[String] = js.undefined
+  var groupBy: js.UndefOr[String] = js.native
   /** Defines the HTML attributes such as ID, class, and styles for the item.
     */
-  var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+  var htmlAttributes: js.UndefOr[js.Any] = js.native
   /** Defines the ID for the tag.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** Defines the image attributes such as height, width, styles, and so on.
     */
-  var imageAttributes: js.UndefOr[String] = js.undefined
+  var imageAttributes: js.UndefOr[String] = js.native
   /** Defines the imageURL for the image location.
     */
-  var imageUrl: js.UndefOr[String] = js.undefined
+  var imageUrl: js.UndefOr[String] = js.native
   /** Defines the tag value to be selected initially.
     */
-  var selected: js.UndefOr[Boolean] = js.undefined
+  var selected: js.UndefOr[Boolean] = js.native
   /** Defines the sprite CSS for the image tag.
     */
-  var spriteCssClass: js.UndefOr[String] = js.undefined
+  var spriteCssClass: js.UndefOr[String] = js.native
   /** Defines the table name for tag value or display text while rendering remote data.
     */
-  var tableName: js.UndefOr[String] = js.undefined
+  var tableName: js.UndefOr[String] = js.native
   /** Defines the text content for the tag.
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /** Defines the tag value.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String] = js.native
 }
 
 object Fields {
   @scala.inline
-  def apply(
-    groupBy: String = null,
-    htmlAttributes: js.Any = null,
-    id: String = null,
-    imageAttributes: String = null,
-    imageUrl: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    spriteCssClass: String = null,
-    tableName: String = null,
-    text: String = null,
-    value: String = null
-  ): Fields = {
+  def apply(): Fields = {
     val __obj = js.Dynamic.literal()
-    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
-    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageAttributes != null) __obj.updateDynamic("imageAttributes")(imageAttributes.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass.asInstanceOf[js.Any])
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
+  @scala.inline
+  implicit class FieldsOps[Self <: Fields] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupBy(value: String): Self = this.set("groupBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupBy: Self = this.set("groupBy", js.undefined)
+    @scala.inline
+    def setHtmlAttributes(value: js.Any): Self = this.set("htmlAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlAttributes: Self = this.set("htmlAttributes", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImageAttributes(value: String): Self = this.set("imageAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageAttributes: Self = this.set("imageAttributes", js.undefined)
+    @scala.inline
+    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    @scala.inline
+    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setSpriteCssClass(value: String): Self = this.set("spriteCssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpriteCssClass: Self = this.set("spriteCssClass", js.undefined)
+    @scala.inline
+    def setTableName(value: String): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableName: Self = this.set("tableName", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait SuggestionQuery extends js.Object {
 
 object SuggestionQuery {
   @scala.inline
-  def apply(PropertyNameQuery: PropertyNameQuery = null): SuggestionQuery = {
+  def apply(): SuggestionQuery = {
     val __obj = js.Dynamic.literal()
-    if (PropertyNameQuery != null) __obj.updateDynamic("PropertyNameQuery")(PropertyNameQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestionQuery]
   }
+  @scala.inline
+  implicit class SuggestionQueryOps[Self <: SuggestionQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPropertyNameQuery(value: PropertyNameQuery): Self = this.set("PropertyNameQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyNameQuery: Self = this.set("PropertyNameQuery", js.undefined)
+  }
+  
 }
 

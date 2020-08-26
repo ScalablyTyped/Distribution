@@ -69,6 +69,12 @@ object draftJsStrings {
   sealed trait after extends DraftInsertionType
   
   @js.native
+  sealed trait anchorKey extends js.Object
+  
+  @js.native
+  sealed trait anchorOffset extends js.Object
+  
+  @js.native
   sealed trait `apply-entity` extends EditorChangeType
   
   @js.native
@@ -129,10 +135,19 @@ object draftJsStrings {
   sealed trait external extends DraftDragType
   
   @js.native
+  sealed trait focusKey extends js.Object
+  
+  @js.native
+  sealed trait focusOffset extends js.Object
+  
+  @js.native
   sealed trait forward extends DraftRemovalDirection
   
   @js.native
   sealed trait handled extends DraftHandleValue
+  
+  @js.native
+  sealed trait hasFocus extends js.Object
   
   @js.native
   sealed trait `header-five` extends CoreDraftBlockType
@@ -160,6 +175,9 @@ object draftJsStrings {
   
   @js.native
   sealed trait internal extends DraftDragType
+  
+  @js.native
+  sealed trait isBackward extends js.Object
   
   @js.native
   sealed trait italic_ extends DraftEditorCommand
@@ -265,6 +283,10 @@ object draftJsStrings {
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline
+  def anchorKey: anchorKey = "anchorKey".asInstanceOf[anchorKey]
+  @scala.inline
+  def anchorOffset: anchorOffset = "anchorOffset".asInstanceOf[anchorOffset]
+  @scala.inline
   def `apply-entity`: `apply-entity` = "apply-entity".asInstanceOf[`apply-entity`]
   @scala.inline
   def atomic: atomic = "atomic".asInstanceOf[atomic]
@@ -305,9 +327,15 @@ object draftJsStrings {
   @scala.inline
   def external: external = "external".asInstanceOf[external]
   @scala.inline
+  def focusKey: focusKey = "focusKey".asInstanceOf[focusKey]
+  @scala.inline
+  def focusOffset: focusOffset = "focusOffset".asInstanceOf[focusOffset]
+  @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
   @scala.inline
   def handled: handled = "handled".asInstanceOf[handled]
+  @scala.inline
+  def hasFocus: hasFocus = "hasFocus".asInstanceOf[hasFocus]
   @scala.inline
   def `header-five`: `header-five` = "header-five".asInstanceOf[`header-five`]
   @scala.inline
@@ -326,6 +354,8 @@ object draftJsStrings {
   def `insert-fragment`: `insert-fragment` = "insert-fragment".asInstanceOf[`insert-fragment`]
   @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
+  @scala.inline
+  def isBackward: isBackward = "isBackward".asInstanceOf[isBackward]
   @scala.inline
   def italic_ : italic_ = "italic".asInstanceOf[italic_]
   @scala.inline

@@ -11,6 +11,7 @@ class SvgContext protected ()
   extends typings.typesettable.contextsMod.SvgContext {
   def this(element: SVGElement) = this()
   def this(element: SVGElement, className: String) = this()
+  def this(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean) = this()
   def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()
 }
 

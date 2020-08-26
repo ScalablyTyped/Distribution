@@ -18,11 +18,32 @@ trait ListApiKeysResponse extends js.Object {
 
 object ListApiKeysResponse {
   @scala.inline
-  def apply(apiKeys: ApiKeys = null, nextToken: PaginationToken = null): ListApiKeysResponse = {
+  def apply(): ListApiKeysResponse = {
     val __obj = js.Dynamic.literal()
-    if (apiKeys != null) __obj.updateDynamic("apiKeys")(apiKeys.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListApiKeysResponse]
   }
+  @scala.inline
+  implicit class ListApiKeysResponseOps[Self <: ListApiKeysResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiKeysVarargs(value: ApiKey*): Self = this.set("apiKeys", js.Array(value :_*))
+    @scala.inline
+    def setApiKeys(value: ApiKeys): Self = this.set("apiKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiKeys: Self = this.set("apiKeys", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

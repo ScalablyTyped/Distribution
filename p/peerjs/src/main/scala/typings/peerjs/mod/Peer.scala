@@ -30,7 +30,7 @@ trait Peer extends js.Object {
     */
   var id: String = js.native
   /**
-    * Connects to the remote peer specified by id and returns a data connection.
+    * Calls the remote peer specified by id and returns a media connection.
     * @param id The brokering ID of the remote peer (their peer.id).
     * @param stream The caller's media stream
     * @param options Metadata associated with the connection, passed in by whoever initiated the connection.
@@ -38,7 +38,7 @@ trait Peer extends js.Object {
   def call(id: String, stream: MediaStream): MediaConnection = js.native
   def call(id: String, stream: MediaStream, options: CallOption): MediaConnection = js.native
   /**
-    *
+    * Connects to the remote peer specified by id and returns a data connection.
     * @param id The brokering ID of the remote peer (their peer.id).
     * @param options for specifying details about Peer Connection
     */
@@ -72,7 +72,7 @@ trait Peer extends js.Object {
   def off(event: String, fn: js.Function): Unit = js.native
   def off(event: String, fn: js.Function, once: Boolean): Unit = js.native
   /**
-    * Calls the remote peer specified by id and returns a media connection.
+    * Set listeners for peer events.
     * @param event Event name
     * @param cb Callback Function
     */

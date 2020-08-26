@@ -27,17 +27,10 @@ object putBucketVersioningCommandMod extends js.Object {
           Readable
         ] {
     def this(input: PutBucketVersioningInput) = this()
-    /* CompleteClass */
-    override val input: PutBucketVersioningInput = js.native
     val middlewareStack: MiddlewareStack[PutBucketVersioningInput, PutBucketVersioningOutput, Readable] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[PutBucketVersioningInput, PutBucketVersioningOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[PutBucketVersioningInput, PutBucketVersioningOutput] = js.native
   }

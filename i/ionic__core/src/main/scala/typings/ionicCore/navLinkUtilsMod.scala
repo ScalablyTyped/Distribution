@@ -13,7 +13,34 @@ import scala.scalajs.js.annotation._
 @js.native
 object navLinkUtilsMod extends js.Object {
   def navLink(el: HTMLElement, routerDirection: RouterDirection): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: js.UndefOr[scala.Nothing],
+    componentProps: js.UndefOr[scala.Nothing],
+    routerAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: js.UndefOr[scala.Nothing],
+    componentProps: ComponentProps[Null]
+  ): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: js.UndefOr[scala.Nothing],
+    componentProps: ComponentProps[Null],
+    routerAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
   def navLink(el: HTMLElement, routerDirection: RouterDirection, component: String): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: String,
+    componentProps: js.UndefOr[scala.Nothing],
+    routerAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
   def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
@@ -32,6 +59,13 @@ object navLinkUtilsMod extends js.Object {
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: js.Function,
+    componentProps: js.UndefOr[scala.Nothing],
+    routerAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: js.Function,
     componentProps: ComponentProps[Null]
   ): js.Promise[Boolean] = js.native
   def navLink(
@@ -39,6 +73,13 @@ object navLinkUtilsMod extends js.Object {
     routerDirection: RouterDirection,
     component: js.Function,
     componentProps: ComponentProps[Null],
+    routerAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: Null,
+    componentProps: js.UndefOr[scala.Nothing],
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = js.native
   def navLink(
@@ -59,6 +100,13 @@ object navLinkUtilsMod extends js.Object {
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: ViewController,
+    componentProps: js.UndefOr[scala.Nothing],
+    routerAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: ViewController,
     componentProps: ComponentProps[Null]
   ): js.Promise[Boolean] = js.native
   def navLink(
@@ -69,6 +117,13 @@ object navLinkUtilsMod extends js.Object {
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = js.native
   def navLink(el: HTMLElement, routerDirection: RouterDirection, component: HTMLElement): js.Promise[Boolean] = js.native
+  def navLink(
+    el: HTMLElement,
+    routerDirection: RouterDirection,
+    component: HTMLElement,
+    componentProps: js.UndefOr[scala.Nothing],
+    routerAnimation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
   def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,

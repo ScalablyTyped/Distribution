@@ -23,7 +23,7 @@ package object cloudsearchMod {
     - typings.awsSdk.awsSdkStrings.da
     - typings.awsSdk.awsSdkStrings.de_
     - typings.awsSdk.awsSdkStrings.el
-    - typings.awsSdk.awsSdkStrings.en
+    - typings.awsSdk.awsSdkStrings.en_
     - typings.awsSdk.awsSdkStrings.es_
     - typings.awsSdk.awsSdkStrings.eu_
     - typings.awsSdk.awsSdkStrings.fa
@@ -37,7 +37,7 @@ package object cloudsearchMod {
     - typings.awsSdk.awsSdkStrings.hy
     - typings.awsSdk.awsSdkStrings.id__
     - typings.awsSdk.awsSdkStrings.it_
-    - typings.awsSdk.awsSdkStrings.ja
+    - typings.awsSdk.awsSdkStrings.ja_
     - typings.awsSdk.awsSdkStrings.ko
     - typings.awsSdk.awsSdkStrings.lv_
     - typings.awsSdk.awsSdkStrings.mul

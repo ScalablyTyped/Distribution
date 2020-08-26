@@ -73,6 +73,7 @@ trait Grid extends Shape {
     * @param fillAlpha The alpha the alternating grid cells will be filled with. You can also set the alpha of the overall Shape using its `alpha` property. Default 1.
     */
   def setAltFillStyle(): this.type = js.native
+  def setAltFillStyle(fillColor: js.UndefOr[scala.Nothing], fillAlpha: Double): this.type = js.native
   def setAltFillStyle(fillColor: Double): this.type = js.native
   def setAltFillStyle(fillColor: Double, fillAlpha: Double): this.type = js.native
   /**
@@ -88,6 +89,7 @@ trait Grid extends Shape {
     * @param fillAlpha The alpha the lines between the grid cells will be filled with. You can also set the alpha of the overall Shape using its `alpha` property. Default 1.
     */
   def setOutlineStyle(): this.type = js.native
+  def setOutlineStyle(fillColor: js.UndefOr[scala.Nothing], fillAlpha: Double): this.type = js.native
   def setOutlineStyle(fillColor: Double): this.type = js.native
   def setOutlineStyle(fillColor: Double, fillAlpha: Double): this.type = js.native
 }

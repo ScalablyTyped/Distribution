@@ -47,7 +47,26 @@ object extensionManagementApiMod extends js.Object {
     ): js.Promise[Unit] = js.native
     def deleteRequest(publisherName: String, extensionName: String): js.Promise[Unit] = js.native
     def getAcquisitionOptions(itemId: String): js.Promise[AcquisitionOptions] = js.native
+    def getAcquisitionOptions(
+      itemId: String,
+      testCommerce: js.UndefOr[scala.Nothing],
+      isFreeOrTrialInstall: js.UndefOr[scala.Nothing],
+      isAccountOwner: Boolean
+    ): js.Promise[AcquisitionOptions] = js.native
+    def getAcquisitionOptions(itemId: String, testCommerce: js.UndefOr[scala.Nothing], isFreeOrTrialInstall: Boolean): js.Promise[AcquisitionOptions] = js.native
+    def getAcquisitionOptions(
+      itemId: String,
+      testCommerce: js.UndefOr[scala.Nothing],
+      isFreeOrTrialInstall: Boolean,
+      isAccountOwner: Boolean
+    ): js.Promise[AcquisitionOptions] = js.native
     def getAcquisitionOptions(itemId: String, testCommerce: Boolean): js.Promise[AcquisitionOptions] = js.native
+    def getAcquisitionOptions(
+      itemId: String,
+      testCommerce: Boolean,
+      isFreeOrTrialInstall: js.UndefOr[scala.Nothing],
+      isAccountOwner: Boolean
+    ): js.Promise[AcquisitionOptions] = js.native
     def getAcquisitionOptions(itemId: String, testCommerce: Boolean, isFreeOrTrialInstall: Boolean): js.Promise[AcquisitionOptions] = js.native
     def getAcquisitionOptions(itemId: String, testCommerce: Boolean, isFreeOrTrialInstall: Boolean, isAccountOwner: Boolean): js.Promise[AcquisitionOptions] = js.native
     def getDocumentByName(
@@ -68,8 +87,66 @@ object extensionManagementApiMod extends js.Object {
     def getInstalledExtensionByName(publisherName: String, extensionName: String): js.Promise[InstalledExtension] = js.native
     def getInstalledExtensionByName(publisherName: String, extensionName: String, assetTypes: js.Array[String]): js.Promise[InstalledExtension] = js.native
     def getInstalledExtensions(): js.Promise[js.Array[InstalledExtension]] = js.native
+    def getInstalledExtensions(
+      includeDisabledExtensions: js.UndefOr[scala.Nothing],
+      includeErrors: js.UndefOr[scala.Nothing],
+      assetTypes: js.UndefOr[scala.Nothing],
+      includeInstallationIssues: Boolean
+    ): js.Promise[js.Array[InstalledExtension]] = js.native
+    def getInstalledExtensions(
+      includeDisabledExtensions: js.UndefOr[scala.Nothing],
+      includeErrors: js.UndefOr[scala.Nothing],
+      assetTypes: js.Array[String]
+    ): js.Promise[js.Array[InstalledExtension]] = js.native
+    def getInstalledExtensions(
+      includeDisabledExtensions: js.UndefOr[scala.Nothing],
+      includeErrors: js.UndefOr[scala.Nothing],
+      assetTypes: js.Array[String],
+      includeInstallationIssues: Boolean
+    ): js.Promise[js.Array[InstalledExtension]] = js.native
+    def getInstalledExtensions(includeDisabledExtensions: js.UndefOr[scala.Nothing], includeErrors: Boolean): js.Promise[js.Array[InstalledExtension]] = js.native
+    def getInstalledExtensions(
+      includeDisabledExtensions: js.UndefOr[scala.Nothing],
+      includeErrors: Boolean,
+      assetTypes: js.UndefOr[scala.Nothing],
+      includeInstallationIssues: Boolean
+    ): js.Promise[js.Array[InstalledExtension]] = js.native
+    def getInstalledExtensions(
+      includeDisabledExtensions: js.UndefOr[scala.Nothing],
+      includeErrors: Boolean,
+      assetTypes: js.Array[String]
+    ): js.Promise[js.Array[InstalledExtension]] = js.native
+    def getInstalledExtensions(
+      includeDisabledExtensions: js.UndefOr[scala.Nothing],
+      includeErrors: Boolean,
+      assetTypes: js.Array[String],
+      includeInstallationIssues: Boolean
+    ): js.Promise[js.Array[InstalledExtension]] = js.native
     def getInstalledExtensions(includeDisabledExtensions: Boolean): js.Promise[js.Array[InstalledExtension]] = js.native
+    def getInstalledExtensions(
+      includeDisabledExtensions: Boolean,
+      includeErrors: js.UndefOr[scala.Nothing],
+      assetTypes: js.UndefOr[scala.Nothing],
+      includeInstallationIssues: Boolean
+    ): js.Promise[js.Array[InstalledExtension]] = js.native
+    def getInstalledExtensions(
+      includeDisabledExtensions: Boolean,
+      includeErrors: js.UndefOr[scala.Nothing],
+      assetTypes: js.Array[String]
+    ): js.Promise[js.Array[InstalledExtension]] = js.native
+    def getInstalledExtensions(
+      includeDisabledExtensions: Boolean,
+      includeErrors: js.UndefOr[scala.Nothing],
+      assetTypes: js.Array[String],
+      includeInstallationIssues: Boolean
+    ): js.Promise[js.Array[InstalledExtension]] = js.native
     def getInstalledExtensions(includeDisabledExtensions: Boolean, includeErrors: Boolean): js.Promise[js.Array[InstalledExtension]] = js.native
+    def getInstalledExtensions(
+      includeDisabledExtensions: Boolean,
+      includeErrors: Boolean,
+      assetTypes: js.UndefOr[scala.Nothing],
+      includeInstallationIssues: Boolean
+    ): js.Promise[js.Array[InstalledExtension]] = js.native
     def getInstalledExtensions(includeDisabledExtensions: Boolean, includeErrors: Boolean, assetTypes: js.Array[String]): js.Promise[js.Array[InstalledExtension]] = js.native
     def getInstalledExtensions(
       includeDisabledExtensions: Boolean,
@@ -80,7 +157,23 @@ object extensionManagementApiMod extends js.Object {
     def getPolicies(userId: String): js.Promise[UserExtensionPolicy] = js.native
     def getRequests(): js.Promise[js.Array[RequestedExtension]] = js.native
     def getStates(): js.Promise[js.Array[ExtensionState]] = js.native
+    def getStates(
+      includeDisabled: js.UndefOr[scala.Nothing],
+      includeErrors: js.UndefOr[scala.Nothing],
+      includeInstallationIssues: Boolean
+    ): js.Promise[js.Array[ExtensionState]] = js.native
+    def getStates(includeDisabled: js.UndefOr[scala.Nothing], includeErrors: Boolean): js.Promise[js.Array[ExtensionState]] = js.native
+    def getStates(
+      includeDisabled: js.UndefOr[scala.Nothing],
+      includeErrors: Boolean,
+      includeInstallationIssues: Boolean
+    ): js.Promise[js.Array[ExtensionState]] = js.native
     def getStates(includeDisabled: Boolean): js.Promise[js.Array[ExtensionState]] = js.native
+    def getStates(
+      includeDisabled: Boolean,
+      includeErrors: js.UndefOr[scala.Nothing],
+      includeInstallationIssues: Boolean
+    ): js.Promise[js.Array[ExtensionState]] = js.native
     def getStates(includeDisabled: Boolean, includeErrors: Boolean): js.Promise[js.Array[ExtensionState]] = js.native
     def getStates(includeDisabled: Boolean, includeErrors: Boolean, includeInstallationIssues: Boolean): js.Promise[js.Array[ExtensionState]] = js.native
     def getToken(): js.Promise[String] = js.native
@@ -108,6 +201,12 @@ object extensionManagementApiMod extends js.Object {
       collectionName: String
     ): js.Promise[_] = js.native
     def uninstallExtensionByName(publisherName: String, extensionName: String): js.Promise[Unit] = js.native
+    def uninstallExtensionByName(
+      publisherName: String,
+      extensionName: String,
+      reason: js.UndefOr[scala.Nothing],
+      reasonCode: String
+    ): js.Promise[Unit] = js.native
     def uninstallExtensionByName(publisherName: String, extensionName: String, reason: String): js.Promise[Unit] = js.native
     def uninstallExtensionByName(publisherName: String, extensionName: String, reason: String, reasonCode: String): js.Promise[Unit] = js.native
     def updateDocumentByName(

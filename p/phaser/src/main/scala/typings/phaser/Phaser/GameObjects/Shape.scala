@@ -48,6 +48,11 @@ trait Shape
     */
   var fillColor: Double = js.native
   /**
+    * The source Shape data. Typically a geometry object.
+    * You should not manipulate this directly.
+    */
+  val geom: js.Any = js.native
+  /**
     * Controls if this Shape is filled or not.
     * Note that some Shapes do not support being filled (such as Line shapes)
     */
@@ -101,6 +106,7 @@ trait Shape
     * @param alpha The alpha value used when filling this shape, if a fill color is given. Default 1.
     */
   def setFillStyle(): this.type = js.native
+  def setFillStyle(color: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
   def setFillStyle(color: Double): this.type = js.native
   def setFillStyle(color: Double, alpha: Double): this.type = js.native
   /**
@@ -116,7 +122,11 @@ trait Shape
     * @param alpha The alpha value used when stroking this shape, if a stroke color is given. Default 1.
     */
   def setStrokeStyle(): this.type = js.native
+  def setStrokeStyle(lineWidth: js.UndefOr[scala.Nothing], color: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
+  def setStrokeStyle(lineWidth: js.UndefOr[scala.Nothing], color: Double): this.type = js.native
+  def setStrokeStyle(lineWidth: js.UndefOr[scala.Nothing], color: Double, alpha: Double): this.type = js.native
   def setStrokeStyle(lineWidth: Double): this.type = js.native
+  def setStrokeStyle(lineWidth: Double, color: js.UndefOr[scala.Nothing], alpha: Double): this.type = js.native
   def setStrokeStyle(lineWidth: Double, color: Double): this.type = js.native
   def setStrokeStyle(lineWidth: Double, color: Double, alpha: Double): this.type = js.native
 }

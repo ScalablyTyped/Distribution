@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrderAdjustment extends ShopifyObject {
-  var amount: String
-  var kind: String
-  var order_id: js.Any
-  var reason: String
-  var refund_id: Double
-  var tax_amount: String
+  var amount: String = js.native
+  var kind: String = js.native
+  var order_id: js.Any = js.native
+  var reason: String = js.native
+  var refund_id: Double = js.native
+  var tax_amount: String = js.native
 }
 
 object OrderAdjustment {
@@ -22,14 +23,35 @@ object OrderAdjustment {
     order_id: js.Any,
     reason: String,
     refund_id: Double,
-    tax_amount: String,
-    admin_graphql_api_id: String = null,
-    id: js.UndefOr[Double] = js.undefined
+    tax_amount: String
   ): OrderAdjustment = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], order_id = order_id.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], refund_id = refund_id.asInstanceOf[js.Any], tax_amount = tax_amount.asInstanceOf[js.Any])
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderAdjustment]
   }
+  @scala.inline
+  implicit class OrderAdjustmentOps[Self <: OrderAdjustment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrder_id(value: js.Any): Self = this.set("order_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRefund_id(value: Double): Self = this.set("refund_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTax_amount(value: String): Self = this.set("tax_amount", value.asInstanceOf[js.Any])
+  }
+  
 }
 

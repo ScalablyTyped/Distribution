@@ -7,68 +7,88 @@ import scala.scalajs.js.annotation._
 /**
   * What the plan is trying to accomplish
   */
+@js.native
 trait PlanDefinitionGoal extends BackboneElement {
   /**
     * What does the goal address
     */
-  var addresses: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var addresses: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * E.g. Treatment, dietary, behavioral, etc
     */
-  var category: js.UndefOr[CodeableConcept] = js.undefined
+  var category: js.UndefOr[CodeableConcept] = js.native
   /**
     * Code or text describing the goal
     */
-  var description: CodeableConcept
+  var description: CodeableConcept = js.native
   /**
     * Supporting documentation for the goal
     */
-  var documentation: js.UndefOr[js.Array[RelatedArtifact]] = js.undefined
+  var documentation: js.UndefOr[js.Array[RelatedArtifact]] = js.native
   /**
     * high-priority | medium-priority | low-priority
     */
-  var priority: js.UndefOr[CodeableConcept] = js.undefined
+  var priority: js.UndefOr[CodeableConcept] = js.native
   /**
     * When goal pursuit begins
     */
-  var start: js.UndefOr[CodeableConcept] = js.undefined
+  var start: js.UndefOr[CodeableConcept] = js.native
   /**
     * Target outcome for the goal
     */
-  var target: js.UndefOr[js.Array[PlanDefinitionGoalTarget]] = js.undefined
+  var target: js.UndefOr[js.Array[PlanDefinitionGoalTarget]] = js.native
 }
 
 object PlanDefinitionGoal {
   @scala.inline
-  def apply(
-    description: CodeableConcept,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    addresses: js.Array[CodeableConcept] = null,
-    category: CodeableConcept = null,
-    documentation: js.Array[RelatedArtifact] = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    priority: CodeableConcept = null,
-    start: CodeableConcept = null,
-    target: js.Array[PlanDefinitionGoalTarget] = null
-  ): PlanDefinitionGoal = {
+  def apply(description: CodeableConcept): PlanDefinitionGoal = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlanDefinitionGoal]
   }
+  @scala.inline
+  implicit class PlanDefinitionGoalOps[Self <: PlanDefinitionGoal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: CodeableConcept): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddressesVarargs(value: CodeableConcept*): Self = this.set("addresses", js.Array(value :_*))
+    @scala.inline
+    def setAddresses(value: js.Array[CodeableConcept]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddresses: Self = this.set("addresses", js.undefined)
+    @scala.inline
+    def setCategory(value: CodeableConcept): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setDocumentationVarargs(value: RelatedArtifact*): Self = this.set("documentation", js.Array(value :_*))
+    @scala.inline
+    def setDocumentation(value: js.Array[RelatedArtifact]): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    @scala.inline
+    def setPriority(value: CodeableConcept): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setStart(value: CodeableConcept): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setTargetVarargs(value: PlanDefinitionGoalTarget*): Self = this.set("target", js.Array(value :_*))
+    @scala.inline
+    def setTarget(value: js.Array[PlanDefinitionGoalTarget]): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+  }
+  
 }
 

@@ -29,6 +29,7 @@ class ResourceCustomchannels protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCustomChannel] = js.native
   def get(callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomChannel] = js.native
   def get(params: ParamsResourceCustomchannelsGet): GaxiosPromise[SchemaCustomChannel] = js.native
   def get(params: ParamsResourceCustomchannelsGet, callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
   def get(
@@ -59,6 +60,7 @@ class ResourceCustomchannels protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(callback: BodyResponseCallback[SchemaCustomChannels]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(params: ParamsResourceCustomchannelsList): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(params: ParamsResourceCustomchannelsList, callback: BodyResponseCallback[SchemaCustomChannels]): Unit = js.native
   def list(

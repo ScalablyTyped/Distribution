@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * (e.g.: `com.sun.star.bridge.UrpBridge` would be correct servicename for the "urp" protocol). However, the protocol names are compared case
   * insensitive. If there exist two services supporting the same protocol, it is arbitrary which one is chosen, so this should be omitted.
   */
+@js.native
 trait Bridge
   extends XInitialization
      with XBridge

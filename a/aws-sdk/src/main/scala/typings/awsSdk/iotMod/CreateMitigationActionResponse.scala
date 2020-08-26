@@ -18,11 +18,30 @@ trait CreateMitigationActionResponse extends js.Object {
 
 object CreateMitigationActionResponse {
   @scala.inline
-  def apply(actionArn: MitigationActionArn = null, actionId: MitigationActionId = null): CreateMitigationActionResponse = {
+  def apply(): CreateMitigationActionResponse = {
     val __obj = js.Dynamic.literal()
-    if (actionArn != null) __obj.updateDynamic("actionArn")(actionArn.asInstanceOf[js.Any])
-    if (actionId != null) __obj.updateDynamic("actionId")(actionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMitigationActionResponse]
   }
+  @scala.inline
+  implicit class CreateMitigationActionResponseOps[Self <: CreateMitigationActionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionArn(value: MitigationActionArn): Self = this.set("actionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionArn: Self = this.set("actionArn", js.undefined)
+    @scala.inline
+    def setActionId(value: MitigationActionId): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionId: Self = this.set("actionId", js.undefined)
+  }
+  
 }
 

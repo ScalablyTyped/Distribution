@@ -11,12 +11,6 @@ class RemoteSystemConnectionRequest protected ()
   extends typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemConnectionRequest {
   /** Initializes an instance of the RemoteSystemConnectionRequest class. */
   def this(remoteSystem: typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystem) = this()
-  /** Represents the remote system (device) that the app intends to communicate with. */
-  /* CompleteClass */
-  override var remoteSystem: typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystem = js.native
-  /** Represents the remote application that the app intends to communicate with. */
-  /* CompleteClass */
-  override var remoteSystemApp: typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemApp = js.native
 }
 
 /* static members */

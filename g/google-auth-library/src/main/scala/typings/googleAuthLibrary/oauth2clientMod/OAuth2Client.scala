@@ -27,7 +27,11 @@ import scala.scalajs.js.annotation._
 class OAuth2Client () extends AuthClient {
   def this(clientId: String) = this()
   def this(options: OAuth2ClientOptions) = this()
+  def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String) = this()
   def this(clientId: String, clientSecret: String) = this()
+  def this(clientId: js.UndefOr[scala.Nothing], clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
+  def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, redirectUri: String) = this()
+  def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
   def this(clientId: String, clientSecret: String, redirectUri: String) = this()
   var _clientId: js.UndefOr[String] = js.native
   var _clientSecret: js.UndefOr[String] = js.native
@@ -40,7 +44,7 @@ class OAuth2Client () extends AuthClient {
   var getAccessTokenAsync: js.Any = js.native
   var getTokenAsync: js.Any = js.native
   var projectId: js.UndefOr[String] = js.native
-  var redirectUri: js.UndefOr[js.Any] = js.native
+  var redirectUri: js.Any = js.native
   var refreshAccessTokenAsync: js.Any = js.native
   var refreshTokenPromises: Map[String, js.Promise[GetTokenResponse]] = js.native
   var revokeCredentialsAsync: js.Any = js.native
@@ -98,17 +102,6 @@ class OAuth2Client () extends AuthClient {
     */
   def getRequestHeaders(): js.Promise[Headers] = js.native
   def getRequestHeaders(url: String): js.Promise[Headers] = js.native
-  /**
-    * Obtain the set of headers required to authenticate a request.
-    *
-    * @deprecated Use getRequestHeaders instead.
-    * @param url the Uri being authorized
-    * @param callback the func described above
-    */
-  def getRequestMetadata(): js.Promise[RequestMetadataResponse] = js.native
-  def getRequestMetadata(url: String): js.Promise[RequestMetadataResponse] = js.native
-  def getRequestMetadata(url: String, callback: RequestMetadataCallback): Unit = js.native
-  def getRequestMetadata(url: Null, callback: RequestMetadataCallback): Unit = js.native
   /* protected */ def getRequestMetadataAsync(): js.Promise[RequestMetadataResponse] = js.native
   /* protected */ def getRequestMetadataAsync(url: String): js.Promise[RequestMetadataResponse] = js.native
   /**
@@ -188,7 +181,35 @@ class OAuth2Client () extends AuthClient {
     * @param maxExpiry The max expiry the certificate can be (Optional).
     * @return Returns a promise resolving to LoginTicket on verification.
     */
+  def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(
+    jwt: String,
+    certs: Certificates | PublicKeys,
+    requiredAudience: js.UndefOr[scala.Nothing],
+    issuers: js.UndefOr[scala.Nothing],
+    maxExpiry: Double
+  ): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(
+    jwt: String,
+    certs: Certificates | PublicKeys,
+    requiredAudience: js.UndefOr[scala.Nothing],
+    issuers: js.Array[String]
+  ): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(
+    jwt: String,
+    certs: Certificates | PublicKeys,
+    requiredAudience: js.UndefOr[scala.Nothing],
+    issuers: js.Array[String],
+    maxExpiry: Double
+  ): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys, requiredAudience: String): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(
+    jwt: String,
+    certs: Certificates | PublicKeys,
+    requiredAudience: String,
+    issuers: js.UndefOr[scala.Nothing],
+    maxExpiry: Double
+  ): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys, requiredAudience: String, issuers: js.Array[String]): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(
     jwt: String,
@@ -198,6 +219,13 @@ class OAuth2Client () extends AuthClient {
     maxExpiry: Double
   ): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(jwt: String, certs: Certificates | PublicKeys, requiredAudience: js.Array[String]): js.Promise[LoginTicket] = js.native
+  def verifySignedJwtWithCertsAsync(
+    jwt: String,
+    certs: Certificates | PublicKeys,
+    requiredAudience: js.Array[String],
+    issuers: js.UndefOr[scala.Nothing],
+    maxExpiry: Double
+  ): js.Promise[LoginTicket] = js.native
   def verifySignedJwtWithCertsAsync(
     jwt: String,
     certs: Certificates | PublicKeys,

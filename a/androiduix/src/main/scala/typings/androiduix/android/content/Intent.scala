@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.content.Intent")
 @js.native
-class Intent () extends js.Object {
-  def this(activityName: String) = this()
+trait Intent extends js.Object {
   var activityName: js.Any = js.native
   var mExtras: js.Any = js.native
   var mFlags: js.Any = js.native
@@ -38,12 +36,5 @@ class Intent () extends js.Object {
   def hasExtra(name: String): Boolean = js.native
   def putExtra(name: String, value: js.Any): Intent = js.native
   def setFlags(flags: Double): Intent = js.native
-}
-
-/* static members */
-@JSGlobal("android.content.Intent")
-@js.native
-object Intent extends js.Object {
-  var FLAG_ACTIVITY_CLEAR_TOP: Double = js.native
 }
 

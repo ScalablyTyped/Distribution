@@ -26,11 +26,30 @@ trait SchemaNamespace extends js.Object {
 
 object SchemaNamespace {
   @scala.inline
-  def apply(namespaceName: String = null, servingVisibility: String = null): SchemaNamespace = {
+  def apply(): SchemaNamespace = {
     val __obj = js.Dynamic.literal()
-    if (namespaceName != null) __obj.updateDynamic("namespaceName")(namespaceName.asInstanceOf[js.Any])
-    if (servingVisibility != null) __obj.updateDynamic("servingVisibility")(servingVisibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNamespace]
   }
+  @scala.inline
+  implicit class SchemaNamespaceOps[Self <: SchemaNamespace] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamespaceName(value: String): Self = this.set("namespaceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceName: Self = this.set("namespaceName", js.undefined)
+    @scala.inline
+    def setServingVisibility(value: String): Self = this.set("servingVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServingVisibility: Self = this.set("servingVisibility", js.undefined)
+  }
+  
 }
 

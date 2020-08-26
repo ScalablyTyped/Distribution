@@ -39,12 +39,39 @@ object UpdateRegexPatternSetRequest {
     LockToken: LockToken,
     Name: EntityName,
     RegularExpressionList: RegularExpressionList,
-    Scope: Scope,
-    Description: EntityDescription = null
+    Scope: Scope
   ): UpdateRegexPatternSetRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], LockToken = LockToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], RegularExpressionList = RegularExpressionList.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRegexPatternSetRequest]
   }
+  @scala.inline
+  implicit class UpdateRegexPatternSetRequestOps[Self <: UpdateRegexPatternSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: EntityId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLockToken(value: LockToken): Self = this.set("LockToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegularExpressionListVarargs(value: Regex*): Self = this.set("RegularExpressionList", js.Array(value :_*))
+    @scala.inline
+    def setRegularExpressionList(value: RegularExpressionList): Self = this.set("RegularExpressionList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScope(value: Scope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: EntityDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

@@ -5,6 +5,7 @@ import typings.twilioVideo.mod.BandwidthProfileMode
 import typings.twilioVideo.mod.LogLevel
 import typings.twilioVideo.mod.Track.Kind
 import typings.twilioVideo.mod.Track.Priority
+import typings.twilioVideo.mod.TrackSwitchOffMode
 import typings.twilioVideo.mod.VideoCodec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -198,6 +199,12 @@ object twilioVideoStrings {
   sealed trait debug extends LogLevel
   
   @js.native
+  sealed trait detected extends TrackSwitchOffMode
+  
+  @js.native
+  sealed trait disabled extends TrackSwitchOffMode
+  
+  @js.native
   sealed trait error extends LogLevel
   
   @js.native
@@ -229,6 +236,9 @@ object twilioVideoStrings {
   
   @js.native
   sealed trait opus extends AudioCodec
+  
+  @js.native
+  sealed trait predicted extends TrackSwitchOffMode
   
   @js.native
   sealed trait presentation extends BandwidthProfileMode
@@ -376,6 +386,10 @@ object twilioVideoStrings {
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
+  def detected: detected = "detected".asInstanceOf[detected]
+  @scala.inline
+  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def gll: gll = "gll".asInstanceOf[gll]
@@ -397,6 +411,8 @@ object twilioVideoStrings {
   def off: off = "off".asInstanceOf[off]
   @scala.inline
   def opus: opus = "opus".asInstanceOf[opus]
+  @scala.inline
+  def predicted: predicted = "predicted".asInstanceOf[predicted]
   @scala.inline
   def presentation: presentation = "presentation".asInstanceOf[presentation]
   @scala.inline

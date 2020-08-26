@@ -41,6 +41,7 @@ trait PlusAccelerometer extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/accelerometer.html](http://www.html5plus.org/doc/zh_cn/accelerometer.html)
     */
   def getCurrentAcceleration(): Unit = js.native
+  def getCurrentAcceleration(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getCurrentAcceleration(successCB: js.Function1[/* result */ PlusAccelerometerAcceleration, Unit]): Unit = js.native
   def getCurrentAcceleration(
     successCB: js.Function1[/* result */ PlusAccelerometerAcceleration, Unit],
@@ -55,7 +56,23 @@ trait PlusAccelerometer extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/accelerometer.html](http://www.html5plus.org/doc/zh_cn/accelerometer.html)
     */
   def watchAcceleration(): Double = js.native
+  def watchAcceleration(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusAccelerometerAccelerometerOption
+  ): Double = js.native
+  def watchAcceleration(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Double = js.native
+  def watchAcceleration(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit],
+    options: PlusAccelerometerAccelerometerOption
+  ): Double = js.native
   def watchAcceleration(successCB: js.Function1[/* result */ PlusAccelerometerAcceleration, Unit]): Double = js.native
+  def watchAcceleration(
+    successCB: js.Function1[/* result */ PlusAccelerometerAcceleration, Unit],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusAccelerometerAccelerometerOption
+  ): Double = js.native
   def watchAcceleration(
     successCB: js.Function1[/* result */ PlusAccelerometerAcceleration, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]

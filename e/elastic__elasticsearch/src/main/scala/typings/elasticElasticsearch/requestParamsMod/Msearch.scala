@@ -8,58 +8,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Msearch[T] extends Generic {
-  var body: T
-  var ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.undefined
-  var index: js.UndefOr[String | js.Array[String]] = js.undefined
-  var max_concurrent_searches: js.UndefOr[Double] = js.undefined
-  var max_concurrent_shard_requests: js.UndefOr[Double] = js.undefined
-  var pre_filter_shard_size: js.UndefOr[Double] = js.undefined
-  var rest_total_hits_as_int: js.UndefOr[Boolean] = js.undefined
-  var search_type: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.undefined
-  var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
-  var typed_keys: js.UndefOr[Boolean] = js.undefined
+  var body: T = js.native
+  var ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var max_concurrent_searches: js.UndefOr[Double] = js.native
+  var max_concurrent_shard_requests: js.UndefOr[Double] = js.native
+  var pre_filter_shard_size: js.UndefOr[Double] = js.native
+  var rest_total_hits_as_int: js.UndefOr[Boolean] = js.native
+  var search_type: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.native
+  var `type`: js.UndefOr[String | js.Array[String]] = js.native
+  var typed_keys: js.UndefOr[Boolean] = js.native
 }
 
 object Msearch {
   @scala.inline
-  def apply[T](
-    body: T,
-    ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.undefined,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    index: String | js.Array[String] = null,
-    max_concurrent_searches: js.UndefOr[Double] = js.undefined,
-    max_concurrent_shard_requests: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    pre_filter_shard_size: js.UndefOr[Double] = js.undefined,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    rest_total_hits_as_int: js.UndefOr[Boolean] = js.undefined,
-    search_type: query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch = null,
-    source: String = null,
-    `type`: String | js.Array[String] = null,
-    typed_keys: js.UndefOr[Boolean] = js.undefined
-  ): Msearch[T] = {
+  def apply[T](body: T): Msearch[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    if (!js.isUndefined(ccs_minimize_roundtrips)) __obj.updateDynamic("ccs_minimize_roundtrips")(ccs_minimize_roundtrips.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(max_concurrent_searches)) __obj.updateDynamic("max_concurrent_searches")(max_concurrent_searches.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max_concurrent_shard_requests)) __obj.updateDynamic("max_concurrent_shard_requests")(max_concurrent_shard_requests.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(pre_filter_shard_size)) __obj.updateDynamic("pre_filter_shard_size")(pre_filter_shard_size.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rest_total_hits_as_int)) __obj.updateDynamic("rest_total_hits_as_int")(rest_total_hits_as_int.get.asInstanceOf[js.Any])
-    if (search_type != null) __obj.updateDynamic("search_type")(search_type.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(typed_keys)) __obj.updateDynamic("typed_keys")(typed_keys.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Msearch[T]]
   }
+  @scala.inline
+  implicit class MsearchOps[Self <: Msearch[_], T] (val x: Self with Msearch[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCcs_minimize_roundtrips(value: Boolean): Self = this.set("ccs_minimize_roundtrips", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCcs_minimize_roundtrips: Self = this.set("ccs_minimize_roundtrips", js.undefined)
+    @scala.inline
+    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    @scala.inline
+    def setIndex(value: String | js.Array[String]): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setMax_concurrent_searches(value: Double): Self = this.set("max_concurrent_searches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax_concurrent_searches: Self = this.set("max_concurrent_searches", js.undefined)
+    @scala.inline
+    def setMax_concurrent_shard_requests(value: Double): Self = this.set("max_concurrent_shard_requests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax_concurrent_shard_requests: Self = this.set("max_concurrent_shard_requests", js.undefined)
+    @scala.inline
+    def setPre_filter_shard_size(value: Double): Self = this.set("pre_filter_shard_size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePre_filter_shard_size: Self = this.set("pre_filter_shard_size", js.undefined)
+    @scala.inline
+    def setRest_total_hits_as_int(value: Boolean): Self = this.set("rest_total_hits_as_int", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRest_total_hits_as_int: Self = this.set("rest_total_hits_as_int", js.undefined)
+    @scala.inline
+    def setSearch_type(value: query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch): Self = this.set("search_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch_type: Self = this.set("search_type", js.undefined)
+    @scala.inline
+    def setTypeVarargs(value: String*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: String | js.Array[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setTyped_keys(value: Boolean): Self = this.set("typed_keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTyped_keys: Self = this.set("typed_keys", js.undefined)
+  }
+  
 }
 

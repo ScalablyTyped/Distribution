@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataGroupingOptionsObject extends js.Object {
   /**
     * (Highstock) The method of approximation inside a group. When for example
@@ -33,7 +34,7 @@ trait DataGroupingOptionsObject extends js.Object {
     * Defaults to `average` for line-type series, `sum` for columns, `range`
     * for range series and `ohlc` for OHLC and candlestick.
     */
-  var approximation: js.UndefOr[String | DataGroupingApproximationValue | js.Function] = js.undefined
+  var approximation: js.UndefOr[String | DataGroupingApproximationValue | js.Function] = js.native
   /**
     * (Highstock) Datetime formats for the header of the tooltip in a stock
     * chart. The format can vary within a chart depending on the currently
@@ -49,17 +50,17 @@ trait DataGroupingOptionsObject extends js.Object {
     * and third item of the week array are used, and applied to the start and
     * end date of the time span.
     */
-  var dateTimeLabelFormats: js.UndefOr[js.Object] = js.undefined
+  var dateTimeLabelFormats: js.UndefOr[js.Object] = js.native
   /**
     * (Highstock) Enable or disable data grouping.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) When data grouping is forced, it runs no matter how small the
     * intervals are. This can be handy for example when the sum should be
     * calculated for values appearing at random times within each hour.
     */
-  var forced: js.UndefOr[Boolean] = js.undefined
+  var forced: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) By default only points within the visible range are grouped.
     * Enabling this option will force data grouping to calculate all grouped
@@ -67,7 +68,7 @@ trait DataGroupingOptionsObject extends js.Object {
     * series from calculating a grouped point partially. The effect is similar
     * to Series.getExtremesFromAll but does not affect yAxis extremes.
     */
-  var groupAll: js.UndefOr[Boolean] = js.undefined
+  var groupAll: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) The approximate pixel width of each group. If for example a
     * series with 30 points is displayed over a 600 pixel wide plot area, no
@@ -79,7 +80,7 @@ trait DataGroupingOptionsObject extends js.Object {
     * line series have 2px default group width, while column series have 10px.
     * If combined, both the line and the column will have 10px by default.
     */
-  var groupPixelWidth: js.UndefOr[Double] = js.undefined
+  var groupPixelWidth: js.UndefOr[Double] = js.native
   /**
     * (Highstock) Normally, a group is indexed by the start of that group, so
     * for example when 30 daily values are grouped into one month, that month's
@@ -88,7 +89,7 @@ trait DataGroupingOptionsObject extends js.Object {
     * data is shifted to the middle of the group, and min and max values are
     * preserved. Internally, this is used in the Navigator series.
     */
-  var smoothed: js.UndefOr[Boolean] = js.undefined
+  var smoothed: js.UndefOr[Boolean] = js.native
   /**
     * (Highstock) An array determining what time intervals the data is allowed
     * to be grouped to. Each array item is an array where the first value is
@@ -96,31 +97,61 @@ trait DataGroupingOptionsObject extends js.Object {
     *
     * Defaults to: (see online documentation for example)
     */
-  var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
+  var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.native
 }
 
 object DataGroupingOptionsObject {
   @scala.inline
-  def apply(
-    approximation: String | DataGroupingApproximationValue | js.Function = null,
-    dateTimeLabelFormats: js.Object = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    forced: js.UndefOr[Boolean] = js.undefined,
-    groupAll: js.UndefOr[Boolean] = js.undefined,
-    groupPixelWidth: js.UndefOr[Double] = js.undefined,
-    smoothed: js.UndefOr[Boolean] = js.undefined,
-    units: js.Array[js.Tuple2[String, js.Array[Double] | Null]] = null
-  ): DataGroupingOptionsObject = {
+  def apply(): DataGroupingOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (approximation != null) __obj.updateDynamic("approximation")(approximation.asInstanceOf[js.Any])
-    if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forced)) __obj.updateDynamic("forced")(forced.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupAll)) __obj.updateDynamic("groupAll")(groupAll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupPixelWidth)) __obj.updateDynamic("groupPixelWidth")(groupPixelWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothed)) __obj.updateDynamic("smoothed")(smoothed.get.asInstanceOf[js.Any])
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataGroupingOptionsObject]
   }
+  @scala.inline
+  implicit class DataGroupingOptionsObjectOps[Self <: DataGroupingOptionsObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApproximation(value: String | DataGroupingApproximationValue | js.Function): Self = this.set("approximation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApproximation: Self = this.set("approximation", js.undefined)
+    @scala.inline
+    def setDateTimeLabelFormats(value: js.Object): Self = this.set("dateTimeLabelFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateTimeLabelFormats: Self = this.set("dateTimeLabelFormats", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setForced(value: Boolean): Self = this.set("forced", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForced: Self = this.set("forced", js.undefined)
+    @scala.inline
+    def setGroupAll(value: Boolean): Self = this.set("groupAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupAll: Self = this.set("groupAll", js.undefined)
+    @scala.inline
+    def setGroupPixelWidth(value: Double): Self = this.set("groupPixelWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupPixelWidth: Self = this.set("groupPixelWidth", js.undefined)
+    @scala.inline
+    def setSmoothed(value: Boolean): Self = this.set("smoothed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmoothed: Self = this.set("smoothed", js.undefined)
+    @scala.inline
+    def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = this.set("units", js.Array(value :_*))
+    @scala.inline
+    def setUnits(value: js.Array[js.Tuple2[String, js.Array[Double] | Null]]): Self = this.set("units", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnits: Self = this.set("units", js.undefined)
+  }
+  
 }
 

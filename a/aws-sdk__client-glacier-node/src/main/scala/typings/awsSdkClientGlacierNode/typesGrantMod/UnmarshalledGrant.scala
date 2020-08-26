@@ -1,33 +1,41 @@
 package typings.awsSdkClientGlacierNode.typesGrantMod
 
-import typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.FULL_CONTROL
-import typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.READ
-import typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.READ_ACP
-import typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.WRITE
-import typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.WRITE_ACP
 import typings.awsSdkClientGlacierNode.typesGranteeMod.UnmarshalledGrantee
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledGrant extends Grant {
   /**
     * <p>The grantee.</p>
     */
   @JSName("Grantee")
-  var Grantee_UnmarshalledGrant: js.UndefOr[UnmarshalledGrantee] = js.undefined
+  var Grantee_UnmarshalledGrant: js.UndefOr[UnmarshalledGrantee] = js.native
 }
 
 object UnmarshalledGrant {
   @scala.inline
-  def apply(
-    Grantee: UnmarshalledGrantee = null,
-    Permission: FULL_CONTROL | WRITE | WRITE_ACP | READ | READ_ACP | String = null
-  ): UnmarshalledGrant = {
+  def apply(): UnmarshalledGrant = {
     val __obj = js.Dynamic.literal()
-    if (Grantee != null) __obj.updateDynamic("Grantee")(Grantee.asInstanceOf[js.Any])
-    if (Permission != null) __obj.updateDynamic("Permission")(Permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledGrant]
   }
+  @scala.inline
+  implicit class UnmarshalledGrantOps[Self <: UnmarshalledGrant] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGrantee(value: UnmarshalledGrantee): Self = this.set("Grantee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantee: Self = this.set("Grantee", js.undefined)
+  }
+  
 }
 

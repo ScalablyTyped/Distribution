@@ -79,12 +79,6 @@ object dom extends js.Object {
   class nodeList protected ()
     extends typings.ckeditor.CKEDITOR.dom.nodeList {
     def this(nativeList: NodeList) = this()
-    /* CompleteClass */
-    override def count(): Double = js.native
-    /* CompleteClass */
-    override def getItem(index: Double): typings.ckeditor.CKEDITOR.dom.node = js.native
-    /* CompleteClass */
-    override def toArray(): js.Array[typings.ckeditor.CKEDITOR.dom.node] = js.native
   }
   
   @js.native
@@ -158,6 +152,7 @@ object dom extends js.Object {
     def bogus(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
     def bogus(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
     def bookmark(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
+    def bookmark(contentOnly: js.UndefOr[scala.Nothing], isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
     def bookmark(contentOnly: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
     def bookmark(contentOnly: Boolean, isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native
     def editable(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = js.native

@@ -8,16 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
-    * Node-oracledb supports Promises on all methods. The standard Promise library is used.
-    *
-    * This property can be set to override or disable the Promise implementation.
-    *
-    * Promises can be disabled by setting this property to null.
-    *
-    * Example:
-    *
-    *      const myLib = require('myFavouritePromiseImplementation');
-    *      oracledb.Promise = myLib;
+    * The oracledb.Promise property is no longer used in node-oracledb 5 and has no effect.
+    * 
+    * Node-oracledb supports Promises on all methods. The native Promise library is used.
+    * 
+    * @deprecated 5.0
     */
   var Promise: js.Promise[js.Any] = js.native
   /**
@@ -233,6 +228,44 @@ object ^ extends js.Object {
     * @default 60
     */
   var poolTimeout: Double = js.native
+  /**
+    * This is a query tuning option to set the number of additional rows the underlying Oracle Client library
+    * fetches during the internal initial statement execution phase of a query. The prefetch size does not affect when, or how many,
+    * rows are returned by node-oracledb to the application.
+    * 
+    * The prefetchRows attribute can be used in conjunction with oracledb.fetchArraySize to tune query performance, memory use,
+    * and to reduce the number of round-trip calls needed to return query results.
+    * 
+    * The prefetchRows value is ignored in some cases, such as when the query involves a LOB.
+    * 
+    * This property may be overridden in an connection.execute() call, which is preferred usage if you need to change the value.
+    * 
+    * This attribute is not used in node-oracledb version 2, 3 or 4. In those versions use only oracledb.fetchArraySize instead.
+    * 
+    * @default 2
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#rowfetching
+    */
+  var prefetchRows: Double = js.native
+  /**
+    * The maximum number of pending pool.getConnection() calls that can be queued.
+    * 
+    * When the number of pool.getConnection() calls that have been queued waiting for an available connection reaches queueMax,
+    * then any future pool.getConnection() calls will immediately return an error and will not be queued.
+    * 
+    * If queueMax is -1, then the queue length is not limited.
+    * 
+    * This property may be overridden when creating a connection pool.
+    * 
+    * @default 500
+    */
+  var queueMax: Double = js.native
+  /**
+    * This property was removed in node-oracledb 3.0 and queuing was always enabled.
+    * In node-oracledb 5.0, set queueMax to 0 to disable queuing.
+    * 
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#connpoolqueue
+    */
+  var queueRequests: Double = js.native
   /**
     * The number of milliseconds after which connection requests waiting in the connection request queue are terminated.
     * If queueTimeout is 0, then queued connection requests are never terminated.

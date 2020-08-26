@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-value-parser" : "4.0.3"
+      "postcss-value-parser" : "4.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-value-parser" : "4.0.3"
+      "postcss-value-parser" : "4.1.0"
     }
   ],
   "compile-devDependencies" : [

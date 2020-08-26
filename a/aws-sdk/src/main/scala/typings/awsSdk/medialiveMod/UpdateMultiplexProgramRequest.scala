@@ -22,14 +22,30 @@ trait UpdateMultiplexProgramRequest extends js.Object {
 
 object UpdateMultiplexProgramRequest {
   @scala.inline
-  def apply(
-    MultiplexId: string,
-    ProgramName: string,
-    MultiplexProgramSettings: MultiplexProgramSettings = null
-  ): UpdateMultiplexProgramRequest = {
+  def apply(MultiplexId: string, ProgramName: string): UpdateMultiplexProgramRequest = {
     val __obj = js.Dynamic.literal(MultiplexId = MultiplexId.asInstanceOf[js.Any], ProgramName = ProgramName.asInstanceOf[js.Any])
-    if (MultiplexProgramSettings != null) __obj.updateDynamic("MultiplexProgramSettings")(MultiplexProgramSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMultiplexProgramRequest]
   }
+  @scala.inline
+  implicit class UpdateMultiplexProgramRequestOps[Self <: UpdateMultiplexProgramRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMultiplexId(value: string): Self = this.set("MultiplexId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProgramName(value: string): Self = this.set("ProgramName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMultiplexProgramSettings(value: MultiplexProgramSettings): Self = this.set("MultiplexProgramSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiplexProgramSettings: Self = this.set("MultiplexProgramSettings", js.undefined)
+  }
+  
 }
 

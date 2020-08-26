@@ -8,8 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReadgroupsetsResource extends js.Object {
-  var coveragebuckets: CoveragebucketsResource
+  var coveragebuckets: CoveragebucketsResource = js.native
   /**
     * Deletes a read group set.
     *
@@ -17,7 +18,7 @@ trait ReadgroupsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(request: Pp): Request[js.Object]
+  def delete(request: Pp): Request[js.Object] = js.native
   /**
     * Exports a read group set to a BAM file in Google Cloud Storage.
     *
@@ -30,7 +31,7 @@ trait ReadgroupsetsResource extends js.Object {
     * ImportReadGroupSets
     * for caveats.
     */
-  def export(request: Pp): Request[Operation]
+  def export(request: Pp): Request[Operation] = js.native
   /**
     * Gets a read group set by ID.
     *
@@ -38,7 +39,7 @@ trait ReadgroupsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(request: Pp): Request[ReadGroupSet]
+  def get(request: Pp): Request[ReadGroupSet] = js.native
   /**
     * Creates read group sets by asynchronously importing the provided
     * information.
@@ -59,7 +60,7 @@ trait ReadgroupsetsResource extends js.Object {
     * - Unmapped reads will be stripped of positional information (reference name
     * and position)
     */
-  def `import`(request: Accesstoken): Request[Operation]
+  def `import`(request: Accesstoken): Request[Operation] = js.native
   /**
     * Updates a read group set.
     *
@@ -69,7 +70,7 @@ trait ReadgroupsetsResource extends js.Object {
     *
     * This method supports patch semantics.
     */
-  def patch(request: PrettyPrint): Request[ReadGroupSet]
+  def patch(request: PrettyPrint): Request[ReadGroupSet] = js.native
   /**
     * Searches for read group sets matching the criteria.
     *
@@ -80,7 +81,7 @@ trait ReadgroupsetsResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.searchReadGroupSets](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L135).
     */
-  def search(request: Accesstoken): Request[SearchReadGroupSetsResponse]
+  def search(request: Accesstoken): Request[SearchReadGroupSetsResponse] = js.native
 }
 
 object ReadgroupsetsResource {
@@ -98,5 +99,32 @@ object ReadgroupsetsResource {
     __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
     __obj.asInstanceOf[ReadgroupsetsResource]
   }
+  @scala.inline
+  implicit class ReadgroupsetsResourceOps[Self <: ReadgroupsetsResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoveragebuckets(value: CoveragebucketsResource): Self = this.set("coveragebuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelete(value: Pp => Request[js.Object]): Self = this.set("delete", js.Any.fromFunction1(value))
+    @scala.inline
+    def setExport(value: Pp => Request[Operation]): Self = this.set("export", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGet(value: Pp => Request[ReadGroupSet]): Self = this.set("get", js.Any.fromFunction1(value))
+    @scala.inline
+    def setImport(value: Accesstoken => Request[Operation]): Self = this.set("import", js.Any.fromFunction1(value))
+    @scala.inline
+    def setPatch(value: PrettyPrint => Request[ReadGroupSet]): Self = this.set("patch", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSearch(value: Accesstoken => Request[SearchReadGroupSetsResponse]): Self = this.set("search", js.Any.fromFunction1(value))
+  }
+  
 }
 

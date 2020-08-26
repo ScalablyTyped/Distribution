@@ -30,20 +30,44 @@ trait UserDefinedFunctionInput extends js.Object {
 
 object UserDefinedFunctionInput {
   @scala.inline
-  def apply(
-    ClassName: NameString = null,
-    FunctionName: NameString = null,
-    OwnerName: NameString = null,
-    OwnerType: PrincipalType = null,
-    ResourceUris: ResourceUriList = null
-  ): UserDefinedFunctionInput = {
+  def apply(): UserDefinedFunctionInput = {
     val __obj = js.Dynamic.literal()
-    if (ClassName != null) __obj.updateDynamic("ClassName")(ClassName.asInstanceOf[js.Any])
-    if (FunctionName != null) __obj.updateDynamic("FunctionName")(FunctionName.asInstanceOf[js.Any])
-    if (OwnerName != null) __obj.updateDynamic("OwnerName")(OwnerName.asInstanceOf[js.Any])
-    if (OwnerType != null) __obj.updateDynamic("OwnerType")(OwnerType.asInstanceOf[js.Any])
-    if (ResourceUris != null) __obj.updateDynamic("ResourceUris")(ResourceUris.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDefinedFunctionInput]
   }
+  @scala.inline
+  implicit class UserDefinedFunctionInputOps[Self <: UserDefinedFunctionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: NameString): Self = this.set("ClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("ClassName", js.undefined)
+    @scala.inline
+    def setFunctionName(value: NameString): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionName: Self = this.set("FunctionName", js.undefined)
+    @scala.inline
+    def setOwnerName(value: NameString): Self = this.set("OwnerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerName: Self = this.set("OwnerName", js.undefined)
+    @scala.inline
+    def setOwnerType(value: PrincipalType): Self = this.set("OwnerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerType: Self = this.set("OwnerType", js.undefined)
+    @scala.inline
+    def setResourceUrisVarargs(value: ResourceUri*): Self = this.set("ResourceUris", js.Array(value :_*))
+    @scala.inline
+    def setResourceUris(value: ResourceUriList): Self = this.set("ResourceUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceUris: Self = this.set("ResourceUris", js.undefined)
+  }
+  
 }
 

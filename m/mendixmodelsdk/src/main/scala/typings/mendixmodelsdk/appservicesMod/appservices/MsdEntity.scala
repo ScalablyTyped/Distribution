@@ -27,17 +27,17 @@ class MsdEntity protected () extends Element {
   def attributes: IList[MsdAttribute] = js.native
   def containerAsMsdDomainModel: MsdDomainModel = js.native
   def generalizationName: String = js.native
-  def generalizationName(newValue: String): js.Any = js.native
+  def generalizationName_=(newValue: String): Unit = js.native
   def guid: String = js.native
-  def guid(newValue: String): js.Any = js.native
+  def guid_=(newValue: String): Unit = js.native
   def locationX: Double = js.native
-  def locationX(newValue: Double): js.Any = js.native
+  def locationX_=(newValue: Double): Unit = js.native
   def locationY: Double = js.native
-  def locationY(newValue: Double): js.Any = js.native
+  def locationY_=(newValue: Double): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def persistable: Boolean = js.native
-  def persistable(newValue: Boolean): js.Any = js.native
+  def persistable_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

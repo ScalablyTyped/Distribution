@@ -43,12 +43,22 @@ trait DiffEditorComponent extends Component {
     * An event called when the editor content is updated
     */
   def onContentChanged(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onContentChanged(
+    listener: js.Function1[/* e */ js.Any, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onContentChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
   def onContentChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * An event called when the editor is created
     */
   def onEditorCreated(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onEditorCreated(
+    listener: js.Function1[/* e */ js.Any, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onEditorCreated(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
   def onEditorCreated(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
 }

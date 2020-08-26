@@ -116,6 +116,34 @@ trait TextStyle extends js.Object {
     */
   var testString: String = js.native
   /**
+    * A custom function that will be responsible for wrapping the text. It will receive two
+    * arguments: text (the string to wrap), textObject (this Text instance). It should return
+    * the wrapped lines either as an array of lines or as a string with newline characters in
+    * place to indicate where breaks should happen. Setting this directly will not re-run the
+    * word wrapping algorithm. To change the callback and re-wrap, use
+    * {@link Phaser.GameObjects.TextStyle#setWordWrapCallback}.
+    */
+  var wordWrapCallback: TextStyleWordWrapCallback | Null = js.native
+  /**
+    * The scope that will be applied when the wordWrapCallback is invoked. Setting this directly will not re-run the
+    * word wrapping algorithm. To change the callback and re-wrap, use
+    * {@link Phaser.GameObjects.TextStyle#setWordWrapCallback}.
+    */
+  var wordWrapCallbackScope: js.Object | Null = js.native
+  /**
+    * Whether or not to use the advanced wrapping algorithm. If true, spaces are collapsed and
+    * whitespace is trimmed from lines. If false, spaces and whitespace are left as is. Setting
+    * this property directly will not re-run the word wrapping algorithm. To change the
+    * advanced setting and re-wrap, use {@link Phaser.GameObjects.TextStyle#setWordWrapWidth}.
+    */
+  var wordWrapUseAdvanced: Boolean = js.native
+  /**
+    * The maximum width of a line of text in pixels. Null means no line wrapping. Setting this
+    * property directly will not re-run the word wrapping algorithm. To change the width and
+    * re-wrap, use {@link Phaser.GameObjects.TextStyle#setWordWrapWidth}.
+    */
+  var wordWrapWidth: Double | Null = js.native
+  /**
     * Destroy this Text Style.
     */
   def destroy(): Unit = js.native
@@ -246,6 +274,7 @@ trait TextStyle extends js.Object {
     * @param y The vertical shadow offset. Default 0.
     */
   def setShadowOffset(): Text = js.native
+  def setShadowOffset(x: js.UndefOr[scala.Nothing], y: Double): Text = js.native
   def setShadowOffset(x: Double): Text = js.native
   def setShadowOffset(x: Double, y: Double): Text = js.native
   /**
@@ -266,6 +295,11 @@ trait TextStyle extends js.Object {
     * @param setDefaults Use the default values is not set, or the local values. Default false.
     */
   def setStyle(style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle): Text = js.native
+  def setStyle(
+    style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle,
+    updateText: js.UndefOr[scala.Nothing],
+    setDefaults: Boolean
+  ): Text = js.native
   def setStyle(style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle, updateText: Boolean): Text = js.native
   def setStyle(
     style: typings.phaser.Phaser.Types.GameObjects.Text.TextStyle,

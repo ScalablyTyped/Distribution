@@ -6,33 +6,33 @@ import scala.scalajs.js.annotation._
 
 /**
   * Load resource data, potentially from remote sources. Caches resource on load to prevent
-  multiple requests. Add ResourceHandlers to handle different types of resources.
+  * multiple requests. Add ResourceHandlers to handle different types of resources.
   * @param app - The application.
   */
 @js.native
 trait ResourceLoader extends js.Object {
   /**
     * Add a {@link pc.ResourceHandler} for a resource type. Handler should support atleast load() and open().
-    Handlers can optionally support patch(asset, assets) to handle dependencies on other assets.
+    * Handlers can optionally support patch(asset, assets) to handle dependencies on other assets.
     * @example
     * var loader = new ResourceLoader();
-    loader.addHandler("json", new pc.JsonHandler());
+    * loader.addHandler("json", new pc.JsonHandler());
     * @param type - The name of the resource type that the handler will be registerd with. Can be:
-    
-    * {@link pc.ASSET_ANIMATION}
-    * {@link pc.ASSET_AUDIO}
-    * {@link pc.ASSET_IMAGE}
-    * {@link pc.ASSET_JSON}
-    * {@link pc.ASSET_MODEL}
-    * {@link pc.ASSET_MATERIAL}
-    * {@link pc.ASSET_TEXT}
-    * {@link pc.ASSET_TEXTURE}
-    * {@link pc.ASSET_CUBEMAP}
-    * {@link pc.ASSET_SHADER}
-    * {@link pc.ASSET_CSS}
-    * {@link pc.ASSET_HTML}
-    * {@link pc.ASSET_SCRIPT}
-    * {@link pc.ASSET_CONTAINER}
+    *
+    * * {@link pc.ASSET_ANIMATION}
+    * * {@link pc.ASSET_AUDIO}
+    * * {@link pc.ASSET_IMAGE}
+    * * {@link pc.ASSET_JSON}
+    * * {@link pc.ASSET_MODEL}
+    * * {@link pc.ASSET_MATERIAL}
+    * * {@link pc.ASSET_TEXT}
+    * * {@link pc.ASSET_TEXTURE}
+    * * {@link pc.ASSET_CUBEMAP}
+    * * {@link pc.ASSET_SHADER}
+    * * {@link pc.ASSET_CSS}
+    * * {@link pc.ASSET_HTML}
+    * * {@link pc.ASSET_SCRIPT}
+    * * {@link pc.ASSET_CONTAINER}
     * @param handler - An instance of a resource handler supporting atleast load() and open().
     */
   def addHandler(`type`: String, handler: ResourceHandler): Unit = js.native
@@ -61,17 +61,17 @@ trait ResourceLoader extends js.Object {
   def getHandler(`type`: String): ResourceHandler = js.native
   /**
     * Make a request for a resource from a remote URL. Parse the returned data using the
-    handler for the specified type. When loaded and parsed, use the callback to return an instance of
-    the resource.
+    * handler for the specified type. When loaded and parsed, use the callback to return an instance of
+    * the resource.
     * @example
     * app.loader.load("../path/to/texture.png", "texture", function (err, texture) {
-    // use texture here
-    });
+    *     // use texture here
+    * });
     * @param url - The URL of the resource to load.
     * @param type - The type of resource expected.
     * @param callback - The callback used when the resource is loaded or an error occurs.
     * @param [asset] - Optional asset that is passed into handler
-    Passed (err, resource) where err is null if there are no errors.
+    * Passed (err, resource) where err is null if there are no errors.
     */
   def load(url: String, `type`: String, callback: typings.playcanvas.pc.callbacks.ResourceLoader): Unit = js.native
   def load(
@@ -89,7 +89,7 @@ trait ResourceLoader extends js.Object {
   def open(`type`: String, data: js.Any): js.Any = js.native
   /**
     * Perform any operations on a resource, that requires a dependency on its asset data
-    or any other asset data.
+    * or any other asset data.
     * @param asset - The asset to patch.
     * @param assets - The asset registry.
     */

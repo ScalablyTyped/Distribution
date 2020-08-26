@@ -30,20 +30,46 @@ trait DescribeDimensionKeysResponse extends js.Object {
 
 object DescribeDimensionKeysResponse {
   @scala.inline
-  def apply(
-    AlignedEndTime: ISOTimestamp = null,
-    AlignedStartTime: ISOTimestamp = null,
-    Keys: DimensionKeyDescriptionList = null,
-    NextToken: String = null,
-    PartitionKeys: ResponsePartitionKeyList = null
-  ): DescribeDimensionKeysResponse = {
+  def apply(): DescribeDimensionKeysResponse = {
     val __obj = js.Dynamic.literal()
-    if (AlignedEndTime != null) __obj.updateDynamic("AlignedEndTime")(AlignedEndTime.asInstanceOf[js.Any])
-    if (AlignedStartTime != null) __obj.updateDynamic("AlignedStartTime")(AlignedStartTime.asInstanceOf[js.Any])
-    if (Keys != null) __obj.updateDynamic("Keys")(Keys.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PartitionKeys != null) __obj.updateDynamic("PartitionKeys")(PartitionKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDimensionKeysResponse]
   }
+  @scala.inline
+  implicit class DescribeDimensionKeysResponseOps[Self <: DescribeDimensionKeysResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignedEndTime(value: ISOTimestamp): Self = this.set("AlignedEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignedEndTime: Self = this.set("AlignedEndTime", js.undefined)
+    @scala.inline
+    def setAlignedStartTime(value: ISOTimestamp): Self = this.set("AlignedStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignedStartTime: Self = this.set("AlignedStartTime", js.undefined)
+    @scala.inline
+    def setKeysVarargs(value: DimensionKeyDescription*): Self = this.set("Keys", js.Array(value :_*))
+    @scala.inline
+    def setKeys(value: DimensionKeyDescriptionList): Self = this.set("Keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeys: Self = this.set("Keys", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPartitionKeysVarargs(value: ResponsePartitionKey*): Self = this.set("PartitionKeys", js.Array(value :_*))
+    @scala.inline
+    def setPartitionKeys(value: ResponsePartitionKeyList): Self = this.set("PartitionKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionKeys: Self = this.set("PartitionKeys", js.undefined)
+  }
+  
 }
 

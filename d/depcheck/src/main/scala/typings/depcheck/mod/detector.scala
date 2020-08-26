@@ -11,6 +11,8 @@ object detector extends js.Object {
   var exportDeclaration_Original: Detector_ = js.native
   @JSName("expressViewEngine")
   var expressViewEngine_Original: Detector_ = js.native
+  @JSName("extract")
+  var extract_Original: Detector_ = js.native
   @JSName("gruntLoadTaskCallExpression")
   var gruntLoadTaskCallExpression_Original: Detector_ = js.native
   @JSName("importCallExpression")
@@ -27,6 +29,7 @@ object detector extends js.Object {
   var typescriptImportType_Original: Detector_ = js.native
   def exportDeclaration(node: Node): js.Array[String] | String = js.native
   def expressViewEngine(node: Node): js.Array[String] | String = js.native
+  def extract(node: Node): js.Array[String] | String = js.native
   def gruntLoadTaskCallExpression(node: Node): js.Array[String] | String = js.native
   def importCallExpression(node: Node): js.Array[String] | String = js.native
   def importDeclaration(node: Node): js.Array[String] | String = js.native

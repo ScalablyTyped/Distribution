@@ -12,7 +12,7 @@ Accessible React Modal Dialog.
 | Keywords           | - |
 | # releases         | 30 |
 | # dependents       | 38 |
-| # downloads        | 994749 |
+| # downloads        | 1024358 |
 | # stars            | 0 |
 
 ## Links

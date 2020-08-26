@@ -27,12 +27,33 @@ object AnalyticsApplicationReferenceDataSourcesSchema {
   @scala.inline
   def apply(
     recordColumns: Input[js.Array[Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordColumn]]],
-    recordFormat: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat],
-    recordEncoding: Input[String] = null
+    recordFormat: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat]
   ): AnalyticsApplicationReferenceDataSourcesSchema = {
     val __obj = js.Dynamic.literal(recordColumns = recordColumns.asInstanceOf[js.Any], recordFormat = recordFormat.asInstanceOf[js.Any])
-    if (recordEncoding != null) __obj.updateDynamic("recordEncoding")(recordEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationReferenceDataSourcesSchema]
   }
+  @scala.inline
+  implicit class AnalyticsApplicationReferenceDataSourcesSchemaOps[Self <: AnalyticsApplicationReferenceDataSourcesSchema] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRecordColumnsVarargs(value: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordColumn]*): Self = this.set("recordColumns", js.Array(value :_*))
+    @scala.inline
+    def setRecordColumns(value: Input[js.Array[Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordColumn]]]): Self = this.set("recordColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecordFormat(value: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat]): Self = this.set("recordFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecordEncoding(value: Input[String]): Self = this.set("recordEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordEncoding: Self = this.set("recordEncoding", js.undefined)
+  }
+  
 }
 

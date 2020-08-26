@@ -125,27 +125,39 @@ object pureMod extends js.Object {
   def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = js.native
   def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = js.native
   def getSuggestedQuery(element: HTMLElement): js.UndefOr[Suggestion] = js.native
+  def getSuggestedQuery(element: HTMLElement, variant: js.UndefOr[scala.Nothing], method: Method): js.UndefOr[Suggestion] = js.native
   def getSuggestedQuery(element: HTMLElement, variant: Variant): js.UndefOr[Suggestion] = js.native
   def getSuggestedQuery(element: HTMLElement, variant: Variant, method: Method): js.UndefOr[Suggestion] = js.native
   def isInaccessible(element: Element): Boolean = js.native
   def logDOM(): Unit = js.native
+  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
+  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double): Unit = js.native
+  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): Unit = js.native
   def logDOM(dom: Element): Unit = js.native
+  def logDOM(dom: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
   def logDOM(dom: Element, maxLength: Double): Unit = js.native
   def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
   def logDOM(dom: HTMLDocument): Unit = js.native
+  def logDOM(dom: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
   def logDOM(dom: HTMLDocument, maxLength: Double): Unit = js.native
   def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
   def logRoles(container: HTMLElement): String = js.native
   def prettyDOM(): String | `false` = js.native
+  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
+  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double): String | `false` = js.native
+  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): String | `false` = js.native
   def prettyDOM(dom: Element): String | `false` = js.native
+  def prettyDOM(dom: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
   def prettyDOM(dom: Element, maxLength: Double): String | `false` = js.native
   def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = js.native
   def prettyDOM(dom: HTMLDocument): String | `false` = js.native
+  def prettyDOM(dom: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
   def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = js.native
   def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = js.native
   def render(ui: ReactElement): RenderResultreadonlygetAl = js.native
   def render(ui: ReactElement, options: OmitRenderOptionsreadonly): RenderResultreadonlygetAl = js.native
   def render[Q /* <: Queries */](ui: ReactElement, options: RenderOptions[Q]): RenderResult[Q] = js.native
+  def wait(callback: js.UndefOr[scala.Nothing], options: Interval): js.Promise[Unit] = js.native
   def wait(callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def wait(callback: js.Function0[Unit], options: Interval): js.Promise[Unit] = js.native
   def waitFor[T](callback: js.Function0[T]): js.Promise[T] = js.native
@@ -277,13 +289,23 @@ object pureMod extends js.Object {
       * of elements
       */
     def debug(): Unit = js.native
+    def debug(element: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
+    def debug(element: js.UndefOr[scala.Nothing], maxLength: Double): Unit = js.native
+    def debug(element: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): Unit = js.native
     def debug(element: js.Array[Element | HTMLDocument]): Unit = js.native
+    def debug(
+      element: js.Array[Element | HTMLDocument],
+      maxLength: js.UndefOr[scala.Nothing],
+      options: OptionsReceived
+    ): Unit = js.native
     def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = js.native
     def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = js.native
     def debug(element: Element): Unit = js.native
+    def debug(element: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
     def debug(element: Element, maxLength: Double): Unit = js.native
     def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
     def debug(element: HTMLDocument): Unit = js.native
+    def debug(element: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
     def debug(element: HTMLDocument, maxLength: Double): Unit = js.native
     def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
   }

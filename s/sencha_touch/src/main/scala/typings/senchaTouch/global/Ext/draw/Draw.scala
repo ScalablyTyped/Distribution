@@ -62,7 +62,11 @@ object Draw extends js.Object {
     * @returns Boolean
     */
   def isBBoxIntersect(): Boolean = js.native
+  def isBBoxIntersect(bbox1: js.UndefOr[scala.Nothing], bbox2: js.UndefOr[scala.Nothing], padding: Double): Boolean = js.native
+  def isBBoxIntersect(bbox1: js.UndefOr[scala.Nothing], bbox2: js.Any): Boolean = js.native
+  def isBBoxIntersect(bbox1: js.UndefOr[scala.Nothing], bbox2: js.Any, padding: Double): Boolean = js.native
   def isBBoxIntersect(bbox1: js.Any): Boolean = js.native
+  def isBBoxIntersect(bbox1: js.Any, bbox2: js.UndefOr[scala.Nothing], padding: Double): Boolean = js.native
   def isBBoxIntersect(bbox1: js.Any, bbox2: js.Any): Boolean = js.native
   def isBBoxIntersect(bbox1: js.Any, bbox2: js.Any, padding: Double): Boolean = js.native
   /** [Method] Converting degrees to radians
@@ -84,7 +88,11 @@ object Draw extends js.Object {
     * @returns Object Object holding two arrays, for x and y coordinates of the curve.
     */
   def smooth(): js.Any = js.native
+  def smooth(dataX: js.UndefOr[scala.Nothing], dataY: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
+  def smooth(dataX: js.UndefOr[scala.Nothing], dataY: js.Any): js.Any = js.native
+  def smooth(dataX: js.UndefOr[scala.Nothing], dataY: js.Any, value: js.Any): js.Any = js.native
   def smooth(dataX: js.Any): js.Any = js.native
+  def smooth(dataX: js.Any, dataY: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
   def smooth(dataX: js.Any, dataY: js.Any): js.Any = js.native
   def smooth(dataX: js.Any, dataY: js.Any, value: js.Any): js.Any = js.native
   /** [Method] Natural cubic spline interpolation

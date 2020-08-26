@@ -74,6 +74,7 @@ object Anim extends js.Object {
     * @returns Object mixins The mixin prototypes as key - value pairs
     */
   def initConfig(): js.Any = js.native
+  def initConfig(el: js.UndefOr[scala.Nothing], runConfig: js.Any): js.Any = js.native
   def initConfig(el: js.Any): js.Any = js.native
   def initConfig(el: js.Any, runConfig: js.Any): js.Any = js.native
   /** [Method] Used to run an animation on a specific element
@@ -82,7 +83,11 @@ object Anim extends js.Object {
     * @param config Object The config object for the animation.
     */
   def run(): Unit = js.native
+  def run(el: js.UndefOr[scala.Nothing], anim: js.UndefOr[scala.Nothing], config: js.Any): Unit = js.native
+  def run(el: js.UndefOr[scala.Nothing], anim: java.lang.String): Unit = js.native
+  def run(el: js.UndefOr[scala.Nothing], anim: java.lang.String, config: js.Any): Unit = js.native
   def run(el: js.Any): Unit = js.native
+  def run(el: js.Any, anim: js.UndefOr[scala.Nothing], config: js.Any): Unit = js.native
   def run(el: js.Any, anim: java.lang.String): Unit = js.native
   def run(el: js.Any, anim: java.lang.String, config: js.Any): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

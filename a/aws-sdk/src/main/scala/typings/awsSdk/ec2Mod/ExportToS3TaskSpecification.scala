@@ -26,18 +26,38 @@ trait ExportToS3TaskSpecification extends js.Object {
 
 object ExportToS3TaskSpecification {
   @scala.inline
-  def apply(
-    ContainerFormat: ContainerFormat = null,
-    DiskImageFormat: DiskImageFormat = null,
-    S3Bucket: String = null,
-    S3Prefix: String = null
-  ): ExportToS3TaskSpecification = {
+  def apply(): ExportToS3TaskSpecification = {
     val __obj = js.Dynamic.literal()
-    if (ContainerFormat != null) __obj.updateDynamic("ContainerFormat")(ContainerFormat.asInstanceOf[js.Any])
-    if (DiskImageFormat != null) __obj.updateDynamic("DiskImageFormat")(DiskImageFormat.asInstanceOf[js.Any])
-    if (S3Bucket != null) __obj.updateDynamic("S3Bucket")(S3Bucket.asInstanceOf[js.Any])
-    if (S3Prefix != null) __obj.updateDynamic("S3Prefix")(S3Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportToS3TaskSpecification]
   }
+  @scala.inline
+  implicit class ExportToS3TaskSpecificationOps[Self <: ExportToS3TaskSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerFormat(value: ContainerFormat): Self = this.set("ContainerFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerFormat: Self = this.set("ContainerFormat", js.undefined)
+    @scala.inline
+    def setDiskImageFormat(value: DiskImageFormat): Self = this.set("DiskImageFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskImageFormat: Self = this.set("DiskImageFormat", js.undefined)
+    @scala.inline
+    def setS3Bucket(value: String): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Bucket: Self = this.set("S3Bucket", js.undefined)
+    @scala.inline
+    def setS3Prefix(value: String): Self = this.set("S3Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Prefix: Self = this.set("S3Prefix", js.undefined)
+  }
+  
 }
 

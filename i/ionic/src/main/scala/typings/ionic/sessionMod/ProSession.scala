@@ -17,13 +17,7 @@ class ProSession ()
   override def getUserToken(): String = js.native
   /* InferMemberOverrides */
   override def isLoggedIn(): Boolean = js.native
-  /* CompleteClass */
-  override def login(email: String, password: String): js.Promise[Unit] = js.native
   /* InferMemberOverrides */
   override def logout(): js.Promise[Unit] = js.native
-  /* CompleteClass */
-  override def ssoLogin(email: String): js.Promise[Unit] = js.native
-  /* CompleteClass */
-  override def tokenLogin(token: String): js.Promise[Unit] = js.native
 }
 

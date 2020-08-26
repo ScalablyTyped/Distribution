@@ -31,18 +31,38 @@ trait SchemaRunQueryRequest extends js.Object {
 
 object SchemaRunQueryRequest {
   @scala.inline
-  def apply(
-    gqlQuery: SchemaGqlQuery = null,
-    partitionId: SchemaPartitionId = null,
-    query: SchemaQuery = null,
-    readOptions: SchemaReadOptions = null
-  ): SchemaRunQueryRequest = {
+  def apply(): SchemaRunQueryRequest = {
     val __obj = js.Dynamic.literal()
-    if (gqlQuery != null) __obj.updateDynamic("gqlQuery")(gqlQuery.asInstanceOf[js.Any])
-    if (partitionId != null) __obj.updateDynamic("partitionId")(partitionId.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (readOptions != null) __obj.updateDynamic("readOptions")(readOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRunQueryRequest]
   }
+  @scala.inline
+  implicit class SchemaRunQueryRequestOps[Self <: SchemaRunQueryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGqlQuery(value: SchemaGqlQuery): Self = this.set("gqlQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGqlQuery: Self = this.set("gqlQuery", js.undefined)
+    @scala.inline
+    def setPartitionId(value: SchemaPartitionId): Self = this.set("partitionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionId: Self = this.set("partitionId", js.undefined)
+    @scala.inline
+    def setQuery(value: SchemaQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setReadOptions(value: SchemaReadOptions): Self = this.set("readOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOptions: Self = this.set("readOptions", js.undefined)
+  }
+  
 }
 

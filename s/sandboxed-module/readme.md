@@ -12,7 +12,7 @@ A sandboxed Node.js module loader that lets you inject dependencies into your mo
 | Keywords           | require, mocking, mocks, stubs, dependency injection, testing |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 91122 |
+| # downloads        | 88040 |
 | # stars            | 3 |
 
 ## Links

@@ -21,19 +21,5 @@ class PropertyChanged protected ()
     changeKey: IChangeKey,
     validationState: ValidationState
   ) = this()
-  /* CompleteClass */
-  override var changeKey: IChangeKey = js.native
-  /* CompleteClass */
-  override var fieldKey: String = js.native
-  /* CompleteClass */
-  override var newProp: PropertyUpdate = js.native
-  /* CompleteClass */
-  override var oldProp: PropertyUpdate = js.native
-  /* CompleteClass */
-  override var propType: IPropertyType = js.native
-  /* CompleteClass */
-  override var recordKey: Double = js.native
-  /* CompleteClass */
-  override var validationState: ValidationState = js.native
 }
 

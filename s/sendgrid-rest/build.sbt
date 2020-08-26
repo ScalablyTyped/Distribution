@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "sendgrid-rest"
-version := "2.6.0-30cd2d"
-scalaVersion := "2.13.2"
+version := "2.6.1-273970"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

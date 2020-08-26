@@ -10,6 +10,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object skipTrivia extends js.Object {
   def apply(text: String, pos: Double, end: Double): Double = js.native
+  def apply(
+    text: String,
+    pos: Double,
+    end: Double,
+    htmlTrivia: js.UndefOr[scala.Nothing],
+    commentTrivia: js.Array[CommentTrivia]
+  ): Double = js.native
   def apply(text: String, pos: Double, end: Double, htmlTrivia: js.Array[HtmlTrivia]): Double = js.native
   def apply(
     text: String,

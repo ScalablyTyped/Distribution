@@ -18,14 +18,30 @@ trait AwsJobExecutionsRolloutConfig extends js.Object {
 
 object AwsJobExecutionsRolloutConfig {
   @scala.inline
-  def apply(
-    exponentialRate: AwsJobExponentialRolloutRate = null,
-    maximumPerMinute: js.UndefOr[MaximumPerMinute] = js.undefined
-  ): AwsJobExecutionsRolloutConfig = {
+  def apply(): AwsJobExecutionsRolloutConfig = {
     val __obj = js.Dynamic.literal()
-    if (exponentialRate != null) __obj.updateDynamic("exponentialRate")(exponentialRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumPerMinute)) __obj.updateDynamic("maximumPerMinute")(maximumPerMinute.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsJobExecutionsRolloutConfig]
   }
+  @scala.inline
+  implicit class AwsJobExecutionsRolloutConfigOps[Self <: AwsJobExecutionsRolloutConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExponentialRate(value: AwsJobExponentialRolloutRate): Self = this.set("exponentialRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExponentialRate: Self = this.set("exponentialRate", js.undefined)
+    @scala.inline
+    def setMaximumPerMinute(value: MaximumPerMinute): Self = this.set("maximumPerMinute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumPerMinute: Self = this.set("maximumPerMinute", js.undefined)
+  }
+  
 }
 

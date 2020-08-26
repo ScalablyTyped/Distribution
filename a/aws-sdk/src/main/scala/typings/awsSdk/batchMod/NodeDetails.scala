@@ -18,11 +18,30 @@ trait NodeDetails extends js.Object {
 
 object NodeDetails {
   @scala.inline
-  def apply(isMainNode: js.UndefOr[Boolean] = js.undefined, nodeIndex: js.UndefOr[Integer] = js.undefined): NodeDetails = {
+  def apply(): NodeDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isMainNode)) __obj.updateDynamic("isMainNode")(isMainNode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeIndex)) __obj.updateDynamic("nodeIndex")(nodeIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDetails]
   }
+  @scala.inline
+  implicit class NodeDetailsOps[Self <: NodeDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsMainNode(value: Boolean): Self = this.set("isMainNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMainNode: Self = this.set("isMainNode", js.undefined)
+    @scala.inline
+    def setNodeIndex(value: Integer): Self = this.set("nodeIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeIndex: Self = this.set("nodeIndex", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,42 @@ trait DescribeCapacityProvidersRequest extends js.Object {
 
 object DescribeCapacityProvidersRequest {
   @scala.inline
-  def apply(
-    capacityProviders: StringList = null,
-    include: CapacityProviderFieldList = null,
-    maxResults: js.UndefOr[BoxedInteger] = js.undefined,
-    nextToken: String = null
-  ): DescribeCapacityProvidersRequest = {
+  def apply(): DescribeCapacityProvidersRequest = {
     val __obj = js.Dynamic.literal()
-    if (capacityProviders != null) __obj.updateDynamic("capacityProviders")(capacityProviders.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCapacityProvidersRequest]
   }
+  @scala.inline
+  implicit class DescribeCapacityProvidersRequestOps[Self <: DescribeCapacityProvidersRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityProvidersVarargs(value: String*): Self = this.set("capacityProviders", js.Array(value :_*))
+    @scala.inline
+    def setCapacityProviders(value: StringList): Self = this.set("capacityProviders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityProviders: Self = this.set("capacityProviders", js.undefined)
+    @scala.inline
+    def setIncludeVarargs(value: CapacityProviderField*): Self = this.set("include", js.Array(value :_*))
+    @scala.inline
+    def setInclude(value: CapacityProviderFieldList): Self = this.set("include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude: Self = this.set("include", js.undefined)
+    @scala.inline
+    def setMaxResults(value: BoxedInteger): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

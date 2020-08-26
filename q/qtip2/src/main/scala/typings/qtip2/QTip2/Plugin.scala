@@ -72,7 +72,11 @@ trait Plugin extends js.Object {
   var defaults: QTipOptions = js.native
   def apply(): JQuery = js.native
   def apply(methodName: String): js.Any = js.native
+  def apply(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.UndefOr[scala.Nothing], p3: js.Any): js.Any = js.native
+  def apply(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.Any): js.Any = js.native
+  def apply(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.Any, p3: js.Any): js.Any = js.native
   def apply(methodName: String, p1: js.Any): js.Any = js.native
+  def apply(methodName: String, p1: js.Any, p2: js.UndefOr[scala.Nothing], p3: js.Any): js.Any = js.native
   def apply(methodName: String, p1: js.Any, p2: js.Any): js.Any = js.native
   def apply(methodName: String, p1: js.Any, p2: js.Any, p3: js.Any): js.Any = js.native
   def apply(methodName: api): Api = js.native
@@ -224,11 +228,13 @@ trait Plugin extends js.Object {
   def apply(methodName: option, propertyName: suppress): Boolean = js.native
   def apply(methodName: option, propertyName: suppress, value: Boolean): Api = js.native
   def apply(methodName: reposition): JQuery = js.native
+  def apply(methodName: reposition, event: js.UndefOr[scala.Nothing], effect: Boolean): JQuery = js.native
   def apply(methodName: reposition, event: Event): JQuery = js.native
   def apply(methodName: reposition, event: Event, effect: Boolean): JQuery = js.native
   def apply(methodName: show): JQuery = js.native
   def apply(methodName: show, event: Event): JQuery = js.native
   def apply(methodName: toggle): JQuery = js.native
+  def apply(methodName: toggle, state: js.UndefOr[scala.Nothing], event: Event): JQuery = js.native
   def apply(methodName: toggle, state: Boolean): JQuery = js.native
   def apply(methodName: toggle, state: Boolean, event: Event): JQuery = js.native
   def apply(options: QTipOptions): JQuery = js.native

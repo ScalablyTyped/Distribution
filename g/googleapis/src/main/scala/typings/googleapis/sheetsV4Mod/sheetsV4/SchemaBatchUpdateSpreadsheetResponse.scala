@@ -28,16 +28,36 @@ trait SchemaBatchUpdateSpreadsheetResponse extends js.Object {
 
 object SchemaBatchUpdateSpreadsheetResponse {
   @scala.inline
-  def apply(
-    replies: js.Array[SchemaResponse] = null,
-    spreadsheetId: String = null,
-    updatedSpreadsheet: SchemaSpreadsheet = null
-  ): SchemaBatchUpdateSpreadsheetResponse = {
+  def apply(): SchemaBatchUpdateSpreadsheetResponse = {
     val __obj = js.Dynamic.literal()
-    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
-    if (updatedSpreadsheet != null) __obj.updateDynamic("updatedSpreadsheet")(updatedSpreadsheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBatchUpdateSpreadsheetResponse]
   }
+  @scala.inline
+  implicit class SchemaBatchUpdateSpreadsheetResponseOps[Self <: SchemaBatchUpdateSpreadsheetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepliesVarargs(value: SchemaResponse*): Self = this.set("replies", js.Array(value :_*))
+    @scala.inline
+    def setReplies(value: js.Array[SchemaResponse]): Self = this.set("replies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplies: Self = this.set("replies", js.undefined)
+    @scala.inline
+    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
+    @scala.inline
+    def setUpdatedSpreadsheet(value: SchemaSpreadsheet): Self = this.set("updatedSpreadsheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedSpreadsheet: Self = this.set("updatedSpreadsheet", js.undefined)
+  }
+  
 }
 

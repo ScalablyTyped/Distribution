@@ -12,7 +12,7 @@ Extension for require.resolve which will resolve directories as well as files
 | Keywords           | require, resolve, directory |
 | # releases         | 1 |
 | # dependents       | 3 |
-| # downloads        | 9438 |
+| # downloads        | 9593 |
 | # stars            | 1 |
 
 ## Links

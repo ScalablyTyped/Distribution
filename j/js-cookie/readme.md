@@ -10,9 +10,9 @@ A simple, lightweight JavaScript API for handling cookies
 | ------------------ | :-------------: |
 | Full name          | js-cookie |
 | Keywords           | cookie, cookies, browser, amd, commonjs, client, js-cookie, browserify |
-| # releases         | 4 |
-| # dependents       | 1594 |
-| # downloads        | 44981144 |
+| # releases         | 6 |
+| # dependents       | 1649 |
+| # downloads        | 46768929 |
 | # stars            | 79 |
 
 ## Links

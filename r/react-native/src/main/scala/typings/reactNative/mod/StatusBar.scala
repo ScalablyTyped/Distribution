@@ -44,8 +44,8 @@ object StatusBar extends js.Object {
     * @param color Background color.
     * @param animated Animate the style change.
     */
-  def setBackgroundColor(color: String): Unit = js.native
-  def setBackgroundColor(color: String, animated: Boolean): Unit = js.native
+  def setBackgroundColor(color: ColorValue): Unit = js.native
+  def setBackgroundColor(color: ColorValue, animated: Boolean): Unit = js.native
   /**
     * Set the status bar style
     * @param style Status bar style to set

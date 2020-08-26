@@ -63,26 +63,54 @@ trait SchemaPlaylist extends js.Object {
 
 object SchemaPlaylist {
   @scala.inline
-  def apply(
-    contentDetails: SchemaPlaylistContentDetails = null,
-    etag: String = null,
-    id: String = null,
-    kind: String = null,
-    localizations: StringDictionary[SchemaPlaylistLocalization] = null,
-    player: SchemaPlaylistPlayer = null,
-    snippet: SchemaPlaylistSnippet = null,
-    status: SchemaPlaylistStatus = null
-  ): SchemaPlaylist = {
+  def apply(): SchemaPlaylist = {
     val __obj = js.Dynamic.literal()
-    if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (localizations != null) __obj.updateDynamic("localizations")(localizations.asInstanceOf[js.Any])
-    if (player != null) __obj.updateDynamic("player")(player.asInstanceOf[js.Any])
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlaylist]
   }
+  @scala.inline
+  implicit class SchemaPlaylistOps[Self <: SchemaPlaylist] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentDetails(value: SchemaPlaylistContentDetails): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDetails: Self = this.set("contentDetails", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLocalizations(value: StringDictionary[SchemaPlaylistLocalization]): Self = this.set("localizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalizations: Self = this.set("localizations", js.undefined)
+    @scala.inline
+    def setPlayer(value: SchemaPlaylistPlayer): Self = this.set("player", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayer: Self = this.set("player", js.undefined)
+    @scala.inline
+    def setSnippet(value: SchemaPlaylistSnippet): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaPlaylistStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

@@ -1,6 +1,6 @@
 package typings.pulumiAws.basePathMappingMod
 
-import typings.pulumiAws.restApiMod.RestApi
+import typings.pulumiAws.apigatewayMod.RestApi
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,18 +28,38 @@ trait BasePathMappingState extends js.Object {
 
 object BasePathMappingState {
   @scala.inline
-  def apply(
-    basePath: Input[String] = null,
-    domainName: Input[String] = null,
-    restApi: Input[String | RestApi] = null,
-    stageName: Input[String] = null
-  ): BasePathMappingState = {
+  def apply(): BasePathMappingState = {
     val __obj = js.Dynamic.literal()
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePathMappingState]
   }
+  @scala.inline
+  implicit class BasePathMappingStateOps[Self <: BasePathMappingState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBasePath(value: Input[String]): Self = this.set("basePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasePath: Self = this.set("basePath", js.undefined)
+    @scala.inline
+    def setDomainName(value: Input[String]): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setRestApi(value: Input[String | RestApi]): Self = this.set("restApi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestApi: Self = this.set("restApi", js.undefined)
+    @scala.inline
+    def setStageName(value: Input[String]): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageName: Self = this.set("stageName", js.undefined)
+  }
+  
 }
 

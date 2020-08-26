@@ -11,7 +11,7 @@ package object mod {
   ]
   type JestAxe = js.Function2[
     /* html */ typings.std.Element | java.lang.String, 
-    /* options */ js.UndefOr[typings.jestAxe.mod.AxeOptions], 
+    /* options */ js.UndefOr[typings.axeCore.mod.RunOptions], 
     js.Promise[typings.axeCore.mod.AxeResults]
   ]
 }

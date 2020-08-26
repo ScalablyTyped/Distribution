@@ -12,7 +12,7 @@ Markdown parser, done right. 100% Commonmark support, extensions, syntax plugins
 | Keywords           | commonmark, markdown, md, parse, parser, process, remarkable, render, renderer, text |
 | # releases         | 5 |
 | # dependents       | 249 |
-| # downloads        | 9855678 |
+| # downloads        | 10066657 |
 | # stars            | 22 |
 
 ## Links

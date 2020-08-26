@@ -84,6 +84,7 @@ object randomMod extends js.Object {
       * @param end the ending slice index (defaults to `source.length`)
       */
     def pick[T](source: ArrayLike[T]): T = js.native
+    def pick[T](source: ArrayLike[T], begin: js.UndefOr[scala.Nothing], end: Double): T = js.native
     def pick[T](source: ArrayLike[T], begin: Double): T = js.native
     def pick[T](source: ArrayLike[T], begin: Double, end: Double): T = js.native
     /**

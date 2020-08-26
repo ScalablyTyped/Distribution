@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RoomState () extends js.Object {
   def this(roomId: String) = this()
+  def this(roomId: js.UndefOr[scala.Nothing], oobMemberFlags: js.Object) = this()
   def this(roomId: String, oobMemberFlags: js.Object) = this()
   var members: StringDictionary[RoomMember] = js.native
   var roomId: String = js.native

@@ -78,6 +78,7 @@ class Network protected () extends js.Object {
     * @param [options] optional cluster options
     */
   def clusterByHubsize(): Unit = js.native
+  def clusterByHubsize(hubsize: js.UndefOr[scala.Nothing], options: ClusterOptions): Unit = js.native
   def clusterByHubsize(hubsize: Double): Unit = js.native
   def clusterByHubsize(hubsize: Double, options: ClusterOptions): Unit = js.native
   /**

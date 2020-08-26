@@ -56,6 +56,7 @@ class EventEmitter2 () extends js.Object {
   def removeListener(event: event | eventNS, listener: ListenerFn): this.type = js.native
   def setMaxListeners(n: Double): Unit = js.native
   def stopListeningTo(): Boolean = js.native
+  def stopListeningTo(target: js.UndefOr[scala.Nothing], event: event | eventNS): Boolean = js.native
   def stopListeningTo(target: GeneralEventEmitter): Boolean = js.native
   def stopListeningTo(target: GeneralEventEmitter, event: event | eventNS): Boolean = js.native
   def waitFor(event: event | eventNS): CancelablePromise[js.Array[_]] = js.native

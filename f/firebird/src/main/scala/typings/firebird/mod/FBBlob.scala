@@ -39,9 +39,25 @@ trait FBBlob extends js.Object {
     */
   def _readAll(): Unit = js.native
   def _readAll(callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]): Unit = js.native
+  def _readAll(
+    initialSize: js.UndefOr[scala.Nothing],
+    chunkSize: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+  ): Unit = js.native
+  def _readAll(initialSize: js.UndefOr[scala.Nothing], chunkSize: Double): Unit = js.native
+  def _readAll(
+    initialSize: js.UndefOr[scala.Nothing],
+    chunkSize: Double,
+    callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+  ): Unit = js.native
   def _readAll(initialSize: Double): Unit = js.native
   def _readAll(
     initialSize: Double,
+    callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+  ): Unit = js.native
+  def _readAll(
+    initialSize: Double,
+    chunkSize: js.UndefOr[scala.Nothing],
     callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
   ): Unit = js.native
   def _readAll(initialSize: Double, chunkSize: Double): Unit = js.native
@@ -65,6 +81,11 @@ trait FBBlob extends js.Object {
     * @param callback function(err), err - Error object in case of error, or null;
     */
   def _write(buffer: Buffer): Unit = js.native
+  def _write(
+    buffer: Buffer,
+    len: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   def _write(buffer: Buffer, len: Double): Unit = js.native
   def _write(buffer: Buffer, len: Double, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   /**

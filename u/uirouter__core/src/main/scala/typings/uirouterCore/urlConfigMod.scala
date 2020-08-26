@@ -13,11 +13,12 @@ import scala.scalajs.js.annotation._
 object urlConfigMod extends js.Object {
   @js.native
   class UrlConfig protected () extends Disposable {
-    /** @hidden */ def this(/** @hidden */ router: UIRouter) = this()
-    /** @hidden */ var _defaultSquashPolicy: Boolean | String = js.native
-    /** @hidden */ var _isCaseInsensitive: Boolean = js.native
-    /** @hidden */ var _isStrictMode: Boolean = js.native
-    /** @hidden */ var paramTypes: ParamTypes = js.native
+    /** @internal */ def this(/** @internal */ router: UIRouter) = this()
+    /** @internal */ var _decodeParams: Boolean = js.native
+    /** @internal */ var _defaultSquashPolicy: Boolean | String = js.native
+    /** @internal */ var _isCaseInsensitive: Boolean = js.native
+    /** @internal */ var _isStrictMode: Boolean = js.native
+    /** @internal */ var paramTypes: ParamTypes = js.native
     var router: js.Any = js.native
     /**
       * Gets the base Href, e.g., `http://localhost/approot/`
@@ -139,6 +140,11 @@ object urlConfigMod extends js.Object {
       * @returns if only the `name` parameter was specified: the currently registered [[ParamType]] object, or undefined
       */
     def `type`(name: String): js.Any = js.native
+    def `type`(
+      name: String,
+      definition: js.UndefOr[scala.Nothing],
+      definitionFn: js.Function0[ParamTypeDefinition]
+    ): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
   }

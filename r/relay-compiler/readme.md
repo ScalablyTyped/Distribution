@@ -10,9 +10,9 @@ A compiler tool for building GraphQL-driven applications.
 | ------------------ | :-------------: |
 | Full name          | relay-compiler |
 | Keywords           | graphql, relay |
-| # releases         | 169 |
+| # releases         | 187 |
 | # dependents       | 33 |
-| # downloads        | 5069390 |
+| # downloads        | 5231821 |
 | # stars            | 1 |
 
 ## Links

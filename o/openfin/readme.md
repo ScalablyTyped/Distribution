@@ -1,7 +1,7 @@
 
 # Scala.js typings for openfin
 
-Typings are for version 50.0
+Typings are for version 51.0
 
 
 

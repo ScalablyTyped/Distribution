@@ -10,9 +10,9 @@ React plugin for the Navigation router
 | ------------------ | :-------------: |
 | Full name          | navigation-react |
 | Keywords           | router, navigation, react |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 1527 |
+| # downloads        | 1525 |
 | # stars            | 0 |
 
 ## Links

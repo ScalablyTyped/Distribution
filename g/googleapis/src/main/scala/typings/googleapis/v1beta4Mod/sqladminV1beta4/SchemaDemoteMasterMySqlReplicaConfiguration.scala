@@ -39,22 +39,46 @@ trait SchemaDemoteMasterMySqlReplicaConfiguration extends js.Object {
 
 object SchemaDemoteMasterMySqlReplicaConfiguration {
   @scala.inline
-  def apply(
-    caCertificate: String = null,
-    clientCertificate: String = null,
-    clientKey: String = null,
-    kind: String = null,
-    password: String = null,
-    username: String = null
-  ): SchemaDemoteMasterMySqlReplicaConfiguration = {
+  def apply(): SchemaDemoteMasterMySqlReplicaConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (caCertificate != null) __obj.updateDynamic("caCertificate")(caCertificate.asInstanceOf[js.Any])
-    if (clientCertificate != null) __obj.updateDynamic("clientCertificate")(clientCertificate.asInstanceOf[js.Any])
-    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDemoteMasterMySqlReplicaConfiguration]
   }
+  @scala.inline
+  implicit class SchemaDemoteMasterMySqlReplicaConfigurationOps[Self <: SchemaDemoteMasterMySqlReplicaConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaCertificate(value: String): Self = this.set("caCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaCertificate: Self = this.set("caCertificate", js.undefined)
+    @scala.inline
+    def setClientCertificate(value: String): Self = this.set("clientCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientCertificate: Self = this.set("clientCertificate", js.undefined)
+    @scala.inline
+    def setClientKey(value: String): Self = this.set("clientKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientKey: Self = this.set("clientKey", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

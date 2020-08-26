@@ -14,10 +14,26 @@ trait UpdateNetworkProfileResult extends js.Object {
 
 object UpdateNetworkProfileResult {
   @scala.inline
-  def apply(networkProfile: NetworkProfile = null): UpdateNetworkProfileResult = {
+  def apply(): UpdateNetworkProfileResult = {
     val __obj = js.Dynamic.literal()
-    if (networkProfile != null) __obj.updateDynamic("networkProfile")(networkProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNetworkProfileResult]
   }
+  @scala.inline
+  implicit class UpdateNetworkProfileResultOps[Self <: UpdateNetworkProfileResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetworkProfile(value: NetworkProfile): Self = this.set("networkProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkProfile: Self = this.set("networkProfile", js.undefined)
+  }
+  
 }
 

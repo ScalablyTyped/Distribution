@@ -7,12 +7,18 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "ReadPropExpr")
 @js.native
 class ReadPropExpr protected ()
-  extends typings.angularCompiler.publicApiMod.ReadPropExpr {
+  extends typings.angularCompiler.compilerMod.ReadPropExpr {
   def this(receiver: typings.angularCompiler.outputAstMod.Expression, name: String) = this()
   def this(
     receiver: typings.angularCompiler.outputAstMod.Expression,
     name: String,
     `type`: typings.angularCompiler.outputAstMod.Type
+  ) = this()
+  def this(
+    receiver: typings.angularCompiler.outputAstMod.Expression,
+    name: String,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
     receiver: typings.angularCompiler.outputAstMod.Expression,

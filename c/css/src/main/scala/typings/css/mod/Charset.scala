@@ -1,26 +1,39 @@
 package typings.css.mod
 
-import typings.css.anon.Content
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Charset
   extends Node
      with AtRule {
   /** The part following @charset. */
-  var charset: js.UndefOr[String] = js.undefined
+  var charset: js.UndefOr[String] = js.native
 }
 
 object Charset {
   @scala.inline
-  def apply(charset: String = null, parent: Node = null, position: Content = null, `type`: String = null): Charset = {
+  def apply(): Charset = {
     val __obj = js.Dynamic.literal()
-    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Charset]
   }
+  @scala.inline
+  implicit class CharsetOps[Self <: Charset] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCharset(value: String): Self = this.set("charset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharset: Self = this.set("charset", js.undefined)
+  }
+  
 }
 

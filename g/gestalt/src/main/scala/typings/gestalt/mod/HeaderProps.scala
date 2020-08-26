@@ -33,38 +33,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HeaderProps extends js.Object {
-  var accessibilityLevel: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var accessibilityLevel: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`] = js.native
+  var children: js.UndefOr[ReactNode] = js.native
   var color: js.UndefOr[
     blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
-  ] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var overflow: js.UndefOr[normal | breakWord] = js.undefined
-  var size: js.UndefOr[sm | md | lg] = js.undefined
-  var truncate: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var id: js.UndefOr[String] = js.native
+  var overflow: js.UndefOr[normal | breakWord] = js.native
+  var size: js.UndefOr[sm | md | lg] = js.native
+  var truncate: js.UndefOr[Boolean] = js.native
 }
 
 object HeaderProps {
   @scala.inline
-  def apply(
-    accessibilityLevel: `1` | `2` | `3` | `4` | `5` | `6` = null,
-    children: ReactNode = null,
-    color: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white = null,
-    id: String = null,
-    overflow: normal | breakWord = null,
-    size: sm | md | lg = null,
-    truncate: js.UndefOr[Boolean] = js.undefined
-  ): HeaderProps = {
+  def apply(): HeaderProps = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityLevel != null) __obj.updateDynamic("accessibilityLevel")(accessibilityLevel.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderProps]
   }
+  @scala.inline
+  implicit class HeaderPropsOps[Self <: HeaderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessibilityLevel(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = this.set("accessibilityLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityLevel: Self = this.set("accessibilityLevel", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setColor(
+      value: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
+    ): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setOverflow(value: normal | breakWord): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    @scala.inline
+    def setSize(value: sm | md | lg): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTruncate(value: Boolean): Self = this.set("truncate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTruncate: Self = this.set("truncate", js.undefined)
+  }
+  
 }
 

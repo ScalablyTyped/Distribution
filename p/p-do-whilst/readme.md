@@ -12,7 +12,7 @@ Calls a function repeatedly while a condition returns true and then resolves the
 | Keywords           | promise, do, whilst, while, loop, wait, condition, conditional, async, await, promises, bluebird |
 | # releases         | 3 |
 | # dependents       | 7 |
-| # downloads        | 107800 |
+| # downloads        | 107218 |
 | # stars            | 0 |
 
 ## Links

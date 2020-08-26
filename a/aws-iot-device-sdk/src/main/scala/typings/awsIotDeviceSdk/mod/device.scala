@@ -36,6 +36,7 @@ class device () extends EventEmitter {
     * @param callback
     */
   def end(): Client = js.native
+  def end(force: js.UndefOr[scala.Nothing], callback: js.Function): Client = js.native
   def end(force: Boolean): Client = js.native
   def end(force: Boolean, callback: js.Function): Client = js.native
   @JSName("on")
@@ -55,6 +56,12 @@ class device () extends EventEmitter {
   @JSName("on")
   def on_reconnect(event: reconnect, listener: js.Function0[Unit]): this.type = js.native
   def publish(topic: String, message: String): Client = js.native
+  def publish(
+    topic: String,
+    message: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
+  ): Client = js.native
   def publish(topic: String, message: String, options: IClientPublishOptions): Client = js.native
   def publish(
     topic: String,
@@ -75,6 +82,12 @@ class device () extends EventEmitter {
     * @param called when publish succeeds or fails
     */
   def publish(topic: String, message: Buffer): Client = js.native
+  def publish(
+    topic: String,
+    message: Buffer,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
+  ): Client = js.native
   def publish(topic: String, message: Buffer, options: IClientPublishOptions): Client = js.native
   def publish(
     topic: String,
@@ -89,9 +102,11 @@ class device () extends EventEmitter {
     * @param callback fired on suback
     */
   def subscribe(topic: String): Client = js.native
+  def subscribe(topic: String, options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
   def subscribe(topic: String, options: IClientSubscribeOptions): Client = js.native
   def subscribe(topic: String, options: IClientSubscribeOptions, callback: ClientSubscribeCallback): Client = js.native
   def subscribe(topic: js.Array[String]): Client = js.native
+  def subscribe(topic: js.Array[String], options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
   def subscribe(topic: js.Array[String], options: IClientSubscribeOptions): Client = js.native
   def subscribe(topic: js.Array[String], options: IClientSubscribeOptions, callback: ClientSubscribeCallback): Client = js.native
   /**

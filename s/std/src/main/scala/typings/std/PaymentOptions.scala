@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PaymentOptions extends js.Object {
-  var requestPayerEmail: js.UndefOr[scala.Boolean] = js.undefined
-  var requestPayerName: js.UndefOr[scala.Boolean] = js.undefined
-  var requestPayerPhone: js.UndefOr[scala.Boolean] = js.undefined
-  var requestShipping: js.UndefOr[scala.Boolean] = js.undefined
-  var shippingType: js.UndefOr[java.lang.String] = js.undefined
+  var requestPayerEmail: js.UndefOr[scala.Boolean] = js.native
+  var requestPayerName: js.UndefOr[scala.Boolean] = js.native
+  var requestPayerPhone: js.UndefOr[scala.Boolean] = js.native
+  var requestShipping: js.UndefOr[scala.Boolean] = js.native
+  var shippingType: js.UndefOr[java.lang.String] = js.native
 }
 
 object PaymentOptions {
   @scala.inline
-  def apply(
-    requestPayerEmail: js.UndefOr[scala.Boolean] = js.undefined,
-    requestPayerName: js.UndefOr[scala.Boolean] = js.undefined,
-    requestPayerPhone: js.UndefOr[scala.Boolean] = js.undefined,
-    requestShipping: js.UndefOr[scala.Boolean] = js.undefined,
-    shippingType: java.lang.String = null
-  ): PaymentOptions = {
+  def apply(): PaymentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(requestPayerEmail)) __obj.updateDynamic("requestPayerEmail")(requestPayerEmail.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestPayerName)) __obj.updateDynamic("requestPayerName")(requestPayerName.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestPayerPhone)) __obj.updateDynamic("requestPayerPhone")(requestPayerPhone.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestShipping)) __obj.updateDynamic("requestShipping")(requestShipping.get.asInstanceOf[js.Any])
-    if (shippingType != null) __obj.updateDynamic("shippingType")(shippingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentOptions]
   }
+  @scala.inline
+  implicit class PaymentOptionsOps[Self <: PaymentOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequestPayerEmail(value: scala.Boolean): Self = this.set("requestPayerEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayerEmail: Self = this.set("requestPayerEmail", js.undefined)
+    @scala.inline
+    def setRequestPayerName(value: scala.Boolean): Self = this.set("requestPayerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayerName: Self = this.set("requestPayerName", js.undefined)
+    @scala.inline
+    def setRequestPayerPhone(value: scala.Boolean): Self = this.set("requestPayerPhone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayerPhone: Self = this.set("requestPayerPhone", js.undefined)
+    @scala.inline
+    def setRequestShipping(value: scala.Boolean): Self = this.set("requestShipping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestShipping: Self = this.set("requestShipping", js.undefined)
+    @scala.inline
+    def setShippingType(value: java.lang.String): Self = this.set("shippingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingType: Self = this.set("shippingType", js.undefined)
+  }
+  
 }
 

@@ -6,255 +6,432 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var URLhashListener: js.UndefOr[Boolean] = js.undefined
-  var animateIn: js.UndefOr[String | Boolean] = js.undefined
-  var animateOut: js.UndefOr[String | Boolean] = js.undefined
-  var autoHeightClass: js.UndefOr[String] = js.undefined
-  var autoWidth: js.UndefOr[Boolean] = js.undefined
-  var autoplay: js.UndefOr[Boolean] = js.undefined
-  var autoplayHoverPause: js.UndefOr[Boolean] = js.undefined
-  var autoplaySpeed: js.UndefOr[Double | Boolean] = js.undefined
-  var autoplayTimeout: js.UndefOr[Double] = js.undefined
-  var callbacks: js.UndefOr[Boolean] = js.undefined
-  var center: js.UndefOr[Boolean] = js.undefined
-  var controlsClass: js.UndefOr[String] = js.undefined
-  var dotClass: js.UndefOr[String] = js.undefined
-  var dotData: js.UndefOr[Boolean] = js.undefined
-  var dots: js.UndefOr[Boolean] = js.undefined
-  var dotsClass: js.UndefOr[String] = js.undefined
-  var dotsContainer: js.UndefOr[String | Boolean] = js.undefined
-  var dotsEach: js.UndefOr[Double | Boolean] = js.undefined
-  var dotsSpeed: js.UndefOr[Double | Boolean] = js.undefined
-  var dragClass: js.UndefOr[String] = js.undefined
-  var dragEndSpeed: js.UndefOr[Double | Boolean] = js.undefined
-  var fallbackEasing: js.UndefOr[String] = js.undefined
-  var fluidSpeed: js.UndefOr[Double | Boolean] = js.undefined
-  var freeDrag: js.UndefOr[Boolean] = js.undefined
-  var grabClass: js.UndefOr[String] = js.undefined
-  var info: js.UndefOr[HandlerCallback] = js.undefined
-  var itemElement: js.UndefOr[String] = js.undefined
-  var items: js.UndefOr[Double] = js.undefined
-  var lazyContent: js.UndefOr[Boolean] = js.undefined
-  var lazyLoad: js.UndefOr[Boolean] = js.undefined
-  var loadedClass: js.UndefOr[String] = js.undefined
-  var loadingClass: js.UndefOr[String] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var margin: js.UndefOr[Double] = js.undefined
-  var merge: js.UndefOr[Boolean] = js.undefined
-  var mergeFit: js.UndefOr[Boolean] = js.undefined
-  var mouseDrag: js.UndefOr[Boolean] = js.undefined
-  var nav: js.UndefOr[Boolean] = js.undefined
-  var navClass: js.UndefOr[js.Array[String]] = js.undefined
-  var navContainer: js.UndefOr[String | Boolean] = js.undefined
-  var navContainerClass: js.UndefOr[String] = js.undefined
-  var navElement: js.UndefOr[String] = js.undefined
-  var navSpeed: js.UndefOr[Double | Boolean] = js.undefined
-  var navText: js.UndefOr[js.Array[String]] = js.undefined
-  var nestedItemSelector: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[HandlerCallback] = js.undefined
-  var onChanged: js.UndefOr[HandlerCallback] = js.undefined
-  var onDrag: js.UndefOr[HandlerCallback] = js.undefined
-  var onDragged: js.UndefOr[HandlerCallback] = js.undefined
-  var onInitialize: js.UndefOr[HandlerCallback] = js.undefined
-  var onInitialized: js.UndefOr[HandlerCallback] = js.undefined
-  var onLoadLazy: js.UndefOr[HandlerCallback] = js.undefined
-  var onLoadedLazy: js.UndefOr[HandlerCallback] = js.undefined
-  var onPlayVideo: js.UndefOr[HandlerCallback] = js.undefined
-  var onRefresh: js.UndefOr[HandlerCallback] = js.undefined
-  var onRefreshed: js.UndefOr[HandlerCallback] = js.undefined
-  var onResize: js.UndefOr[HandlerCallback] = js.undefined
-  var onResized: js.UndefOr[HandlerCallback] = js.undefined
-  var onStopVideo: js.UndefOr[HandlerCallback] = js.undefined
-  var onTranslate: js.UndefOr[HandlerCallback] = js.undefined
-  var onTranslated: js.UndefOr[HandlerCallback] = js.undefined
-  var pullDrag: js.UndefOr[Boolean] = js.undefined
-  var refreshClass: js.UndefOr[String] = js.undefined
-  var responsive: js.UndefOr[StringDictionary[Options]] = js.undefined
-  var responsiveBaseElement: js.UndefOr[Element] = js.undefined
-  var responsiveClass: js.UndefOr[String | Boolean] = js.undefined
-  var responsiveRefreshRate: js.UndefOr[Double] = js.undefined
-  var rewind: js.UndefOr[Boolean] = js.undefined
-  var rtlClass: js.UndefOr[String] = js.undefined
-  var slideBy: js.UndefOr[Double | String] = js.undefined
-  var smartSpeed: js.UndefOr[Double | Boolean] = js.undefined
-  var stageClass: js.UndefOr[String] = js.undefined
-  var stageElement: js.UndefOr[String] = js.undefined
-  var stageOuterClass: js.UndefOr[String] = js.undefined
-  var stagePadding: js.UndefOr[Double] = js.undefined
-  var startPosition: js.UndefOr[Double | String] = js.undefined
-  var touchDrag: js.UndefOr[Boolean] = js.undefined
-  var video: js.UndefOr[Boolean] = js.undefined
-  var videoHeight: js.UndefOr[Double | Boolean] = js.undefined
-  var videoWidth: js.UndefOr[Double | Boolean] = js.undefined
+  var URLhashListener: js.UndefOr[Boolean] = js.native
+  var animateIn: js.UndefOr[String | Boolean] = js.native
+  var animateOut: js.UndefOr[String | Boolean] = js.native
+  var autoHeightClass: js.UndefOr[String] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplayHoverPause: js.UndefOr[Boolean] = js.native
+  var autoplaySpeed: js.UndefOr[Double | Boolean] = js.native
+  var autoplayTimeout: js.UndefOr[Double] = js.native
+  var callbacks: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[Boolean] = js.native
+  var controlsClass: js.UndefOr[String] = js.native
+  var dotClass: js.UndefOr[String] = js.native
+  var dotData: js.UndefOr[Boolean] = js.native
+  var dots: js.UndefOr[Boolean] = js.native
+  var dotsClass: js.UndefOr[String] = js.native
+  var dotsContainer: js.UndefOr[String | Boolean] = js.native
+  var dotsEach: js.UndefOr[Double | Boolean] = js.native
+  var dotsSpeed: js.UndefOr[Double | Boolean] = js.native
+  var dragClass: js.UndefOr[String] = js.native
+  var dragEndSpeed: js.UndefOr[Double | Boolean] = js.native
+  var fallbackEasing: js.UndefOr[String] = js.native
+  var fluidSpeed: js.UndefOr[Double | Boolean] = js.native
+  var freeDrag: js.UndefOr[Boolean] = js.native
+  var grabClass: js.UndefOr[String] = js.native
+  var info: js.UndefOr[HandlerCallback] = js.native
+  var itemElement: js.UndefOr[String] = js.native
+  var items: js.UndefOr[Double] = js.native
+  var lazyContent: js.UndefOr[Boolean] = js.native
+  var lazyLoad: js.UndefOr[Boolean] = js.native
+  var loadedClass: js.UndefOr[String] = js.native
+  var loadingClass: js.UndefOr[String] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var margin: js.UndefOr[Double] = js.native
+  var merge: js.UndefOr[Boolean] = js.native
+  var mergeFit: js.UndefOr[Boolean] = js.native
+  var mouseDrag: js.UndefOr[Boolean] = js.native
+  var nav: js.UndefOr[Boolean] = js.native
+  var navClass: js.UndefOr[js.Array[String]] = js.native
+  var navContainer: js.UndefOr[String | Boolean] = js.native
+  var navContainerClass: js.UndefOr[String] = js.native
+  var navElement: js.UndefOr[String] = js.native
+  var navSpeed: js.UndefOr[Double | Boolean] = js.native
+  var navText: js.UndefOr[js.Array[String]] = js.native
+  var nestedItemSelector: js.UndefOr[String] = js.native
+  var onChange: js.UndefOr[HandlerCallback] = js.native
+  var onChanged: js.UndefOr[HandlerCallback] = js.native
+  var onDrag: js.UndefOr[HandlerCallback] = js.native
+  var onDragged: js.UndefOr[HandlerCallback] = js.native
+  var onInitialize: js.UndefOr[HandlerCallback] = js.native
+  var onInitialized: js.UndefOr[HandlerCallback] = js.native
+  var onLoadLazy: js.UndefOr[HandlerCallback] = js.native
+  var onLoadedLazy: js.UndefOr[HandlerCallback] = js.native
+  var onPlayVideo: js.UndefOr[HandlerCallback] = js.native
+  var onRefresh: js.UndefOr[HandlerCallback] = js.native
+  var onRefreshed: js.UndefOr[HandlerCallback] = js.native
+  var onResize: js.UndefOr[HandlerCallback] = js.native
+  var onResized: js.UndefOr[HandlerCallback] = js.native
+  var onStopVideo: js.UndefOr[HandlerCallback] = js.native
+  var onTranslate: js.UndefOr[HandlerCallback] = js.native
+  var onTranslated: js.UndefOr[HandlerCallback] = js.native
+  var pullDrag: js.UndefOr[Boolean] = js.native
+  var refreshClass: js.UndefOr[String] = js.native
+  var responsive: js.UndefOr[StringDictionary[Options]] = js.native
+  var responsiveBaseElement: js.UndefOr[Element] = js.native
+  var responsiveClass: js.UndefOr[String | Boolean] = js.native
+  var responsiveRefreshRate: js.UndefOr[Double] = js.native
+  var rewind: js.UndefOr[Boolean] = js.native
+  var rtlClass: js.UndefOr[String] = js.native
+  var slideBy: js.UndefOr[Double | String] = js.native
+  var smartSpeed: js.UndefOr[Double | Boolean] = js.native
+  var stageClass: js.UndefOr[String] = js.native
+  var stageElement: js.UndefOr[String] = js.native
+  var stageOuterClass: js.UndefOr[String] = js.native
+  var stagePadding: js.UndefOr[Double] = js.native
+  var startPosition: js.UndefOr[Double | String] = js.native
+  var touchDrag: js.UndefOr[Boolean] = js.native
+  var video: js.UndefOr[Boolean] = js.native
+  var videoHeight: js.UndefOr[Double | Boolean] = js.native
+  var videoWidth: js.UndefOr[Double | Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    URLhashListener: js.UndefOr[Boolean] = js.undefined,
-    animateIn: String | Boolean = null,
-    animateOut: String | Boolean = null,
-    autoHeightClass: String = null,
-    autoWidth: js.UndefOr[Boolean] = js.undefined,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    autoplayHoverPause: js.UndefOr[Boolean] = js.undefined,
-    autoplaySpeed: Double | Boolean = null,
-    autoplayTimeout: js.UndefOr[Double] = js.undefined,
-    callbacks: js.UndefOr[Boolean] = js.undefined,
-    center: js.UndefOr[Boolean] = js.undefined,
-    controlsClass: String = null,
-    dotClass: String = null,
-    dotData: js.UndefOr[Boolean] = js.undefined,
-    dots: js.UndefOr[Boolean] = js.undefined,
-    dotsClass: String = null,
-    dotsContainer: String | Boolean = null,
-    dotsEach: Double | Boolean = null,
-    dotsSpeed: Double | Boolean = null,
-    dragClass: String = null,
-    dragEndSpeed: Double | Boolean = null,
-    fallbackEasing: String = null,
-    fluidSpeed: Double | Boolean = null,
-    freeDrag: js.UndefOr[Boolean] = js.undefined,
-    grabClass: String = null,
-    info: /* repeated */ js.Any => Unit = null,
-    itemElement: String = null,
-    items: js.UndefOr[Double] = js.undefined,
-    lazyContent: js.UndefOr[Boolean] = js.undefined,
-    lazyLoad: js.UndefOr[Boolean] = js.undefined,
-    loadedClass: String = null,
-    loadingClass: String = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    margin: js.UndefOr[Double] = js.undefined,
-    merge: js.UndefOr[Boolean] = js.undefined,
-    mergeFit: js.UndefOr[Boolean] = js.undefined,
-    mouseDrag: js.UndefOr[Boolean] = js.undefined,
-    nav: js.UndefOr[Boolean] = js.undefined,
-    navClass: js.Array[String] = null,
-    navContainer: String | Boolean = null,
-    navContainerClass: String = null,
-    navElement: String = null,
-    navSpeed: Double | Boolean = null,
-    navText: js.Array[String] = null,
-    nestedItemSelector: String = null,
-    onChange: /* repeated */ js.Any => Unit = null,
-    onChanged: /* repeated */ js.Any => Unit = null,
-    onDrag: /* repeated */ js.Any => Unit = null,
-    onDragged: /* repeated */ js.Any => Unit = null,
-    onInitialize: /* repeated */ js.Any => Unit = null,
-    onInitialized: /* repeated */ js.Any => Unit = null,
-    onLoadLazy: /* repeated */ js.Any => Unit = null,
-    onLoadedLazy: /* repeated */ js.Any => Unit = null,
-    onPlayVideo: /* repeated */ js.Any => Unit = null,
-    onRefresh: /* repeated */ js.Any => Unit = null,
-    onRefreshed: /* repeated */ js.Any => Unit = null,
-    onResize: /* repeated */ js.Any => Unit = null,
-    onResized: /* repeated */ js.Any => Unit = null,
-    onStopVideo: /* repeated */ js.Any => Unit = null,
-    onTranslate: /* repeated */ js.Any => Unit = null,
-    onTranslated: /* repeated */ js.Any => Unit = null,
-    pullDrag: js.UndefOr[Boolean] = js.undefined,
-    refreshClass: String = null,
-    responsive: StringDictionary[Options] = null,
-    responsiveBaseElement: Element = null,
-    responsiveClass: String | Boolean = null,
-    responsiveRefreshRate: js.UndefOr[Double] = js.undefined,
-    rewind: js.UndefOr[Boolean] = js.undefined,
-    rtlClass: String = null,
-    slideBy: Double | String = null,
-    smartSpeed: Double | Boolean = null,
-    stageClass: String = null,
-    stageElement: String = null,
-    stageOuterClass: String = null,
-    stagePadding: js.UndefOr[Double] = js.undefined,
-    startPosition: Double | String = null,
-    touchDrag: js.UndefOr[Boolean] = js.undefined,
-    video: js.UndefOr[Boolean] = js.undefined,
-    videoHeight: Double | Boolean = null,
-    videoWidth: Double | Boolean = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(URLhashListener)) __obj.updateDynamic("URLhashListener")(URLhashListener.get.asInstanceOf[js.Any])
-    if (animateIn != null) __obj.updateDynamic("animateIn")(animateIn.asInstanceOf[js.Any])
-    if (animateOut != null) __obj.updateDynamic("animateOut")(animateOut.asInstanceOf[js.Any])
-    if (autoHeightClass != null) __obj.updateDynamic("autoHeightClass")(autoHeightClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplayHoverPause)) __obj.updateDynamic("autoplayHoverPause")(autoplayHoverPause.get.asInstanceOf[js.Any])
-    if (autoplaySpeed != null) __obj.updateDynamic("autoplaySpeed")(autoplaySpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplayTimeout)) __obj.updateDynamic("autoplayTimeout")(autoplayTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(callbacks)) __obj.updateDynamic("callbacks")(callbacks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
-    if (controlsClass != null) __obj.updateDynamic("controlsClass")(controlsClass.asInstanceOf[js.Any])
-    if (dotClass != null) __obj.updateDynamic("dotClass")(dotClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotData)) __obj.updateDynamic("dotData")(dotData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots.get.asInstanceOf[js.Any])
-    if (dotsClass != null) __obj.updateDynamic("dotsClass")(dotsClass.asInstanceOf[js.Any])
-    if (dotsContainer != null) __obj.updateDynamic("dotsContainer")(dotsContainer.asInstanceOf[js.Any])
-    if (dotsEach != null) __obj.updateDynamic("dotsEach")(dotsEach.asInstanceOf[js.Any])
-    if (dotsSpeed != null) __obj.updateDynamic("dotsSpeed")(dotsSpeed.asInstanceOf[js.Any])
-    if (dragClass != null) __obj.updateDynamic("dragClass")(dragClass.asInstanceOf[js.Any])
-    if (dragEndSpeed != null) __obj.updateDynamic("dragEndSpeed")(dragEndSpeed.asInstanceOf[js.Any])
-    if (fallbackEasing != null) __obj.updateDynamic("fallbackEasing")(fallbackEasing.asInstanceOf[js.Any])
-    if (fluidSpeed != null) __obj.updateDynamic("fluidSpeed")(fluidSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(freeDrag)) __obj.updateDynamic("freeDrag")(freeDrag.get.asInstanceOf[js.Any])
-    if (grabClass != null) __obj.updateDynamic("grabClass")(grabClass.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(js.Any.fromFunction1(info))
-    if (itemElement != null) __obj.updateDynamic("itemElement")(itemElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(items)) __obj.updateDynamic("items")(items.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyContent)) __obj.updateDynamic("lazyContent")(lazyContent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad.get.asInstanceOf[js.Any])
-    if (loadedClass != null) __obj.updateDynamic("loadedClass")(loadedClass.asInstanceOf[js.Any])
-    if (loadingClass != null) __obj.updateDynamic("loadingClass")(loadingClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mergeFit)) __obj.updateDynamic("mergeFit")(mergeFit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseDrag)) __obj.updateDynamic("mouseDrag")(mouseDrag.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nav)) __obj.updateDynamic("nav")(nav.get.asInstanceOf[js.Any])
-    if (navClass != null) __obj.updateDynamic("navClass")(navClass.asInstanceOf[js.Any])
-    if (navContainer != null) __obj.updateDynamic("navContainer")(navContainer.asInstanceOf[js.Any])
-    if (navContainerClass != null) __obj.updateDynamic("navContainerClass")(navContainerClass.asInstanceOf[js.Any])
-    if (navElement != null) __obj.updateDynamic("navElement")(navElement.asInstanceOf[js.Any])
-    if (navSpeed != null) __obj.updateDynamic("navSpeed")(navSpeed.asInstanceOf[js.Any])
-    if (navText != null) __obj.updateDynamic("navText")(navText.asInstanceOf[js.Any])
-    if (nestedItemSelector != null) __obj.updateDynamic("nestedItemSelector")(nestedItemSelector.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onChanged != null) __obj.updateDynamic("onChanged")(js.Any.fromFunction1(onChanged))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
-    if (onDragged != null) __obj.updateDynamic("onDragged")(js.Any.fromFunction1(onDragged))
-    if (onInitialize != null) __obj.updateDynamic("onInitialize")(js.Any.fromFunction1(onInitialize))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onLoadLazy != null) __obj.updateDynamic("onLoadLazy")(js.Any.fromFunction1(onLoadLazy))
-    if (onLoadedLazy != null) __obj.updateDynamic("onLoadedLazy")(js.Any.fromFunction1(onLoadedLazy))
-    if (onPlayVideo != null) __obj.updateDynamic("onPlayVideo")(js.Any.fromFunction1(onPlayVideo))
-    if (onRefresh != null) __obj.updateDynamic("onRefresh")(js.Any.fromFunction1(onRefresh))
-    if (onRefreshed != null) __obj.updateDynamic("onRefreshed")(js.Any.fromFunction1(onRefreshed))
-    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
-    if (onResized != null) __obj.updateDynamic("onResized")(js.Any.fromFunction1(onResized))
-    if (onStopVideo != null) __obj.updateDynamic("onStopVideo")(js.Any.fromFunction1(onStopVideo))
-    if (onTranslate != null) __obj.updateDynamic("onTranslate")(js.Any.fromFunction1(onTranslate))
-    if (onTranslated != null) __obj.updateDynamic("onTranslated")(js.Any.fromFunction1(onTranslated))
-    if (!js.isUndefined(pullDrag)) __obj.updateDynamic("pullDrag")(pullDrag.get.asInstanceOf[js.Any])
-    if (refreshClass != null) __obj.updateDynamic("refreshClass")(refreshClass.asInstanceOf[js.Any])
-    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (responsiveBaseElement != null) __obj.updateDynamic("responsiveBaseElement")(responsiveBaseElement.asInstanceOf[js.Any])
-    if (responsiveClass != null) __obj.updateDynamic("responsiveClass")(responsiveClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsiveRefreshRate)) __obj.updateDynamic("responsiveRefreshRate")(responsiveRefreshRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rewind)) __obj.updateDynamic("rewind")(rewind.get.asInstanceOf[js.Any])
-    if (rtlClass != null) __obj.updateDynamic("rtlClass")(rtlClass.asInstanceOf[js.Any])
-    if (slideBy != null) __obj.updateDynamic("slideBy")(slideBy.asInstanceOf[js.Any])
-    if (smartSpeed != null) __obj.updateDynamic("smartSpeed")(smartSpeed.asInstanceOf[js.Any])
-    if (stageClass != null) __obj.updateDynamic("stageClass")(stageClass.asInstanceOf[js.Any])
-    if (stageElement != null) __obj.updateDynamic("stageElement")(stageElement.asInstanceOf[js.Any])
-    if (stageOuterClass != null) __obj.updateDynamic("stageOuterClass")(stageOuterClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(stagePadding)) __obj.updateDynamic("stagePadding")(stagePadding.get.asInstanceOf[js.Any])
-    if (startPosition != null) __obj.updateDynamic("startPosition")(startPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchDrag)) __obj.updateDynamic("touchDrag")(touchDrag.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video.get.asInstanceOf[js.Any])
-    if (videoHeight != null) __obj.updateDynamic("videoHeight")(videoHeight.asInstanceOf[js.Any])
-    if (videoWidth != null) __obj.updateDynamic("videoWidth")(videoWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setURLhashListener(value: Boolean): Self = this.set("URLhashListener", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteURLhashListener: Self = this.set("URLhashListener", js.undefined)
+    @scala.inline
+    def setAnimateIn(value: String | Boolean): Self = this.set("animateIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimateIn: Self = this.set("animateIn", js.undefined)
+    @scala.inline
+    def setAnimateOut(value: String | Boolean): Self = this.set("animateOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimateOut: Self = this.set("animateOut", js.undefined)
+    @scala.inline
+    def setAutoHeightClass(value: String): Self = this.set("autoHeightClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHeightClass: Self = this.set("autoHeightClass", js.undefined)
+    @scala.inline
+    def setAutoWidth(value: Boolean): Self = this.set("autoWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoWidth: Self = this.set("autoWidth", js.undefined)
+    @scala.inline
+    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    @scala.inline
+    def setAutoplayHoverPause(value: Boolean): Self = this.set("autoplayHoverPause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplayHoverPause: Self = this.set("autoplayHoverPause", js.undefined)
+    @scala.inline
+    def setAutoplaySpeed(value: Double | Boolean): Self = this.set("autoplaySpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplaySpeed: Self = this.set("autoplaySpeed", js.undefined)
+    @scala.inline
+    def setAutoplayTimeout(value: Double): Self = this.set("autoplayTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplayTimeout: Self = this.set("autoplayTimeout", js.undefined)
+    @scala.inline
+    def setCallbacks(value: Boolean): Self = this.set("callbacks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallbacks: Self = this.set("callbacks", js.undefined)
+    @scala.inline
+    def setCenter(value: Boolean): Self = this.set("center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenter: Self = this.set("center", js.undefined)
+    @scala.inline
+    def setControlsClass(value: String): Self = this.set("controlsClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControlsClass: Self = this.set("controlsClass", js.undefined)
+    @scala.inline
+    def setDotClass(value: String): Self = this.set("dotClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotClass: Self = this.set("dotClass", js.undefined)
+    @scala.inline
+    def setDotData(value: Boolean): Self = this.set("dotData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotData: Self = this.set("dotData", js.undefined)
+    @scala.inline
+    def setDots(value: Boolean): Self = this.set("dots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDots: Self = this.set("dots", js.undefined)
+    @scala.inline
+    def setDotsClass(value: String): Self = this.set("dotsClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotsClass: Self = this.set("dotsClass", js.undefined)
+    @scala.inline
+    def setDotsContainer(value: String | Boolean): Self = this.set("dotsContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotsContainer: Self = this.set("dotsContainer", js.undefined)
+    @scala.inline
+    def setDotsEach(value: Double | Boolean): Self = this.set("dotsEach", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotsEach: Self = this.set("dotsEach", js.undefined)
+    @scala.inline
+    def setDotsSpeed(value: Double | Boolean): Self = this.set("dotsSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotsSpeed: Self = this.set("dotsSpeed", js.undefined)
+    @scala.inline
+    def setDragClass(value: String): Self = this.set("dragClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragClass: Self = this.set("dragClass", js.undefined)
+    @scala.inline
+    def setDragEndSpeed(value: Double | Boolean): Self = this.set("dragEndSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragEndSpeed: Self = this.set("dragEndSpeed", js.undefined)
+    @scala.inline
+    def setFallbackEasing(value: String): Self = this.set("fallbackEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackEasing: Self = this.set("fallbackEasing", js.undefined)
+    @scala.inline
+    def setFluidSpeed(value: Double | Boolean): Self = this.set("fluidSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFluidSpeed: Self = this.set("fluidSpeed", js.undefined)
+    @scala.inline
+    def setFreeDrag(value: Boolean): Self = this.set("freeDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFreeDrag: Self = this.set("freeDrag", js.undefined)
+    @scala.inline
+    def setGrabClass(value: String): Self = this.set("grabClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrabClass: Self = this.set("grabClass", js.undefined)
+    @scala.inline
+    def setInfo(value: /* repeated */ js.Any => Unit): Self = this.set("info", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInfo: Self = this.set("info", js.undefined)
+    @scala.inline
+    def setItemElement(value: String): Self = this.set("itemElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemElement: Self = this.set("itemElement", js.undefined)
+    @scala.inline
+    def setItems(value: Double): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setLazyContent(value: Boolean): Self = this.set("lazyContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazyContent: Self = this.set("lazyContent", js.undefined)
+    @scala.inline
+    def setLazyLoad(value: Boolean): Self = this.set("lazyLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazyLoad: Self = this.set("lazyLoad", js.undefined)
+    @scala.inline
+    def setLoadedClass(value: String): Self = this.set("loadedClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadedClass: Self = this.set("loadedClass", js.undefined)
+    @scala.inline
+    def setLoadingClass(value: String): Self = this.set("loadingClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadingClass: Self = this.set("loadingClass", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMerge(value: Boolean): Self = this.set("merge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerge: Self = this.set("merge", js.undefined)
+    @scala.inline
+    def setMergeFit(value: Boolean): Self = this.set("mergeFit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeFit: Self = this.set("mergeFit", js.undefined)
+    @scala.inline
+    def setMouseDrag(value: Boolean): Self = this.set("mouseDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseDrag: Self = this.set("mouseDrag", js.undefined)
+    @scala.inline
+    def setNav(value: Boolean): Self = this.set("nav", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNav: Self = this.set("nav", js.undefined)
+    @scala.inline
+    def setNavClassVarargs(value: String*): Self = this.set("navClass", js.Array(value :_*))
+    @scala.inline
+    def setNavClass(value: js.Array[String]): Self = this.set("navClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavClass: Self = this.set("navClass", js.undefined)
+    @scala.inline
+    def setNavContainer(value: String | Boolean): Self = this.set("navContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavContainer: Self = this.set("navContainer", js.undefined)
+    @scala.inline
+    def setNavContainerClass(value: String): Self = this.set("navContainerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavContainerClass: Self = this.set("navContainerClass", js.undefined)
+    @scala.inline
+    def setNavElement(value: String): Self = this.set("navElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavElement: Self = this.set("navElement", js.undefined)
+    @scala.inline
+    def setNavSpeed(value: Double | Boolean): Self = this.set("navSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavSpeed: Self = this.set("navSpeed", js.undefined)
+    @scala.inline
+    def setNavTextVarargs(value: String*): Self = this.set("navText", js.Array(value :_*))
+    @scala.inline
+    def setNavText(value: js.Array[String]): Self = this.set("navText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavText: Self = this.set("navText", js.undefined)
+    @scala.inline
+    def setNestedItemSelector(value: String): Self = this.set("nestedItemSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNestedItemSelector: Self = this.set("nestedItemSelector", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* repeated */ js.Any => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnChanged(value: /* repeated */ js.Any => Unit): Self = this.set("onChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChanged: Self = this.set("onChanged", js.undefined)
+    @scala.inline
+    def setOnDrag(value: /* repeated */ js.Any => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    @scala.inline
+    def setOnDragged(value: /* repeated */ js.Any => Unit): Self = this.set("onDragged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragged: Self = this.set("onDragged", js.undefined)
+    @scala.inline
+    def setOnInitialize(value: /* repeated */ js.Any => Unit): Self = this.set("onInitialize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInitialize: Self = this.set("onInitialize", js.undefined)
+    @scala.inline
+    def setOnInitialized(value: /* repeated */ js.Any => Unit): Self = this.set("onInitialized", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInitialized: Self = this.set("onInitialized", js.undefined)
+    @scala.inline
+    def setOnLoadLazy(value: /* repeated */ js.Any => Unit): Self = this.set("onLoadLazy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadLazy: Self = this.set("onLoadLazy", js.undefined)
+    @scala.inline
+    def setOnLoadedLazy(value: /* repeated */ js.Any => Unit): Self = this.set("onLoadedLazy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadedLazy: Self = this.set("onLoadedLazy", js.undefined)
+    @scala.inline
+    def setOnPlayVideo(value: /* repeated */ js.Any => Unit): Self = this.set("onPlayVideo", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPlayVideo: Self = this.set("onPlayVideo", js.undefined)
+    @scala.inline
+    def setOnRefresh(value: /* repeated */ js.Any => Unit): Self = this.set("onRefresh", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRefresh: Self = this.set("onRefresh", js.undefined)
+    @scala.inline
+    def setOnRefreshed(value: /* repeated */ js.Any => Unit): Self = this.set("onRefreshed", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRefreshed: Self = this.set("onRefreshed", js.undefined)
+    @scala.inline
+    def setOnResize(value: /* repeated */ js.Any => Unit): Self = this.set("onResize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResize: Self = this.set("onResize", js.undefined)
+    @scala.inline
+    def setOnResized(value: /* repeated */ js.Any => Unit): Self = this.set("onResized", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResized: Self = this.set("onResized", js.undefined)
+    @scala.inline
+    def setOnStopVideo(value: /* repeated */ js.Any => Unit): Self = this.set("onStopVideo", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStopVideo: Self = this.set("onStopVideo", js.undefined)
+    @scala.inline
+    def setOnTranslate(value: /* repeated */ js.Any => Unit): Self = this.set("onTranslate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTranslate: Self = this.set("onTranslate", js.undefined)
+    @scala.inline
+    def setOnTranslated(value: /* repeated */ js.Any => Unit): Self = this.set("onTranslated", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTranslated: Self = this.set("onTranslated", js.undefined)
+    @scala.inline
+    def setPullDrag(value: Boolean): Self = this.set("pullDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullDrag: Self = this.set("pullDrag", js.undefined)
+    @scala.inline
+    def setRefreshClass(value: String): Self = this.set("refreshClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshClass: Self = this.set("refreshClass", js.undefined)
+    @scala.inline
+    def setResponsive(value: StringDictionary[Options]): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsive: Self = this.set("responsive", js.undefined)
+    @scala.inline
+    def setResponsiveBaseElement(value: Element): Self = this.set("responsiveBaseElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsiveBaseElement: Self = this.set("responsiveBaseElement", js.undefined)
+    @scala.inline
+    def setResponsiveClass(value: String | Boolean): Self = this.set("responsiveClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsiveClass: Self = this.set("responsiveClass", js.undefined)
+    @scala.inline
+    def setResponsiveRefreshRate(value: Double): Self = this.set("responsiveRefreshRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsiveRefreshRate: Self = this.set("responsiveRefreshRate", js.undefined)
+    @scala.inline
+    def setRewind(value: Boolean): Self = this.set("rewind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRewind: Self = this.set("rewind", js.undefined)
+    @scala.inline
+    def setRtlClass(value: String): Self = this.set("rtlClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtlClass: Self = this.set("rtlClass", js.undefined)
+    @scala.inline
+    def setSlideBy(value: Double | String): Self = this.set("slideBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideBy: Self = this.set("slideBy", js.undefined)
+    @scala.inline
+    def setSmartSpeed(value: Double | Boolean): Self = this.set("smartSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmartSpeed: Self = this.set("smartSpeed", js.undefined)
+    @scala.inline
+    def setStageClass(value: String): Self = this.set("stageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageClass: Self = this.set("stageClass", js.undefined)
+    @scala.inline
+    def setStageElement(value: String): Self = this.set("stageElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageElement: Self = this.set("stageElement", js.undefined)
+    @scala.inline
+    def setStageOuterClass(value: String): Self = this.set("stageOuterClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageOuterClass: Self = this.set("stageOuterClass", js.undefined)
+    @scala.inline
+    def setStagePadding(value: Double): Self = this.set("stagePadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStagePadding: Self = this.set("stagePadding", js.undefined)
+    @scala.inline
+    def setStartPosition(value: Double | String): Self = this.set("startPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartPosition: Self = this.set("startPosition", js.undefined)
+    @scala.inline
+    def setTouchDrag(value: Boolean): Self = this.set("touchDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchDrag: Self = this.set("touchDrag", js.undefined)
+    @scala.inline
+    def setVideo(value: Boolean): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+    @scala.inline
+    def setVideoHeight(value: Double | Boolean): Self = this.set("videoHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoHeight: Self = this.set("videoHeight", js.undefined)
+    @scala.inline
+    def setVideoWidth(value: Double | Boolean): Self = this.set("videoWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoWidth: Self = this.set("videoWidth", js.undefined)
+  }
+  
 }
 

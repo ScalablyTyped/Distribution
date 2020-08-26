@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * loaded are at least {@link Controller} . Instead of {@link SynchronousFrameLoader} this one use asynchronous processes to load the component.
   * @see SynchronousFrameLoader
   */
+@js.native
 trait FrameLoader
   extends XFrameLoader
      with XInitialization

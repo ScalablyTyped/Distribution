@@ -12,7 +12,7 @@ Linq methods for JavaScript/TypeScript to work with Arrays
 | Keywords           | Linq, .NET, TypeScript, JavaScript, Array, Sorting |
 | # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 3716 |
+| # downloads        | 3798 |
 | # stars            | 0 |
 
 ## Links

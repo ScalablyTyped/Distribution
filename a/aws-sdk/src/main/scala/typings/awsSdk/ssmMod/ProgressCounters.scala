@@ -30,20 +30,42 @@ trait ProgressCounters extends js.Object {
 
 object ProgressCounters {
   @scala.inline
-  def apply(
-    CancelledSteps: js.UndefOr[Integer] = js.undefined,
-    FailedSteps: js.UndefOr[Integer] = js.undefined,
-    SuccessSteps: js.UndefOr[Integer] = js.undefined,
-    TimedOutSteps: js.UndefOr[Integer] = js.undefined,
-    TotalSteps: js.UndefOr[Integer] = js.undefined
-  ): ProgressCounters = {
+  def apply(): ProgressCounters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CancelledSteps)) __obj.updateDynamic("CancelledSteps")(CancelledSteps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailedSteps)) __obj.updateDynamic("FailedSteps")(FailedSteps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SuccessSteps)) __obj.updateDynamic("SuccessSteps")(SuccessSteps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimedOutSteps)) __obj.updateDynamic("TimedOutSteps")(TimedOutSteps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalSteps)) __obj.updateDynamic("TotalSteps")(TotalSteps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressCounters]
   }
+  @scala.inline
+  implicit class ProgressCountersOps[Self <: ProgressCounters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancelledSteps(value: Integer): Self = this.set("CancelledSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelledSteps: Self = this.set("CancelledSteps", js.undefined)
+    @scala.inline
+    def setFailedSteps(value: Integer): Self = this.set("FailedSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedSteps: Self = this.set("FailedSteps", js.undefined)
+    @scala.inline
+    def setSuccessSteps(value: Integer): Self = this.set("SuccessSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessSteps: Self = this.set("SuccessSteps", js.undefined)
+    @scala.inline
+    def setTimedOutSteps(value: Integer): Self = this.set("TimedOutSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimedOutSteps: Self = this.set("TimedOutSteps", js.undefined)
+    @scala.inline
+    def setTotalSteps(value: Integer): Self = this.set("TotalSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalSteps: Self = this.set("TotalSteps", js.undefined)
+  }
+  
 }
 

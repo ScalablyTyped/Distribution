@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "express-openapi" : "6.0.0"
+      "express-openapi" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "express-openapi" : "6.0.0"
+      "express-openapi" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

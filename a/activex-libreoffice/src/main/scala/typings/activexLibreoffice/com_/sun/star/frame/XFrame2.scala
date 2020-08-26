@@ -15,6 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @since LibreOffice 4.1 */
+@js.native
 trait XFrame2
   extends XFramesSupplier
      with XDispatchProvider
@@ -34,21 +35,21 @@ trait XFrame2
     * Note: ;  It's not recommended to cache an already gotten supplier. Because there exist no possibility to check for enabled/disabled recording then.
     * @since OOo 1.1.2
     */
-  var DispatchRecorderSupplier: XDispatchRecorderSupplier
+  var DispatchRecorderSupplier: XDispatchRecorderSupplier = js.native
   /**
     * Provides access to the {@link LayoutManager} of the frame. This is actually of type {@link XLayoutManager} , but this API is still experimental
     * (unpublished).
     */
-  var LayoutManager: XInterface
+  var LayoutManager: XInterface = js.native
   /**
     * if possible it sets/gets the UI title on/from the frame container window
     *
     * It depends from the type of the frame container window. If it is a system task window all will be OK. Otherwise the title can't be set.
     * Setting/getting of the pure value of this property must be possible in every case. Only showing on the UI can be fail.
     */
-  var Title: String
+  var Title: String = js.native
   /** contains user defined attributes. */
-  var UserDefinedAttributes: XNameContainer
+  var UserDefinedAttributes: XNameContainer = js.native
 }
 
 object XFrame2 {
@@ -103,5 +104,26 @@ object XFrame2 {
     val __obj = js.Dynamic.literal(ActiveFrame = ActiveFrame.asInstanceOf[js.Any], ComponentWindow = ComponentWindow.asInstanceOf[js.Any], ContainerWindow = ContainerWindow.asInstanceOf[js.Any], Controller = Controller.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DispatchRecorderSupplier = DispatchRecorderSupplier.asInstanceOf[js.Any], Frames = Frames.asInstanceOf[js.Any], LayoutManager = LayoutManager.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SupportedCommandGroups = SupportedCommandGroups.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], UserDefinedAttributes = UserDefinedAttributes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), activate = js.Any.fromFunction0(activate), addEventListener = js.Any.fromFunction1(addEventListener), addFrameActionListener = js.Any.fromFunction1(addFrameActionListener), contextChanged = js.Any.fromFunction0(contextChanged), createStatusIndicator = js.Any.fromFunction0(createStatusIndicator), deactivate = js.Any.fromFunction0(deactivate), dispose = js.Any.fromFunction0(dispose), findFrame = js.Any.fromFunction2(findFrame), getActiveFrame = js.Any.fromFunction0(getActiveFrame), getComponentWindow = js.Any.fromFunction0(getComponentWindow), getConfigurableDispatchInformation = js.Any.fromFunction1(getConfigurableDispatchInformation), getContainerWindow = js.Any.fromFunction0(getContainerWindow), getController = js.Any.fromFunction0(getController), getCreator = js.Any.fromFunction0(getCreator), getFrames = js.Any.fromFunction0(getFrames), getName = js.Any.fromFunction0(getName), getSupportedCommandGroups = js.Any.fromFunction0(getSupportedCommandGroups), initialize = js.Any.fromFunction1(initialize), isActive = js.Any.fromFunction0(isActive), isTop = js.Any.fromFunction0(isTop), queryDispatch = js.Any.fromFunction3(queryDispatch), queryDispatches = js.Any.fromFunction1(queryDispatches), queryInterface = js.Any.fromFunction1(queryInterface), registerDispatchProviderInterceptor = js.Any.fromFunction1(registerDispatchProviderInterceptor), release = js.Any.fromFunction0(release), releaseDispatchProviderInterceptor = js.Any.fromFunction1(releaseDispatchProviderInterceptor), removeEventListener = js.Any.fromFunction1(removeEventListener), removeFrameActionListener = js.Any.fromFunction1(removeFrameActionListener), setActiveFrame = js.Any.fromFunction1(setActiveFrame), setComponent = js.Any.fromFunction2(setComponent), setCreator = js.Any.fromFunction1(setCreator), setName = js.Any.fromFunction1(setName))
     __obj.asInstanceOf[XFrame2]
   }
+  @scala.inline
+  implicit class XFrame2Ops[Self <: XFrame2] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDispatchRecorderSupplier(value: XDispatchRecorderSupplier): Self = this.set("DispatchRecorderSupplier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLayoutManager(value: XInterface): Self = this.set("LayoutManager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserDefinedAttributes(value: XNameContainer): Self = this.set("UserDefinedAttributes", value.asInstanceOf[js.Any])
+  }
+  
 }
 

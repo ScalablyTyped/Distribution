@@ -34,19 +34,42 @@ trait PipelineDeclaration extends js.Object {
 
 object PipelineDeclaration {
   @scala.inline
-  def apply(
-    name: PipelineName,
-    roleArn: RoleArn,
-    stages: PipelineStageDeclarationList,
-    artifactStore: ArtifactStore = null,
-    artifactStores: ArtifactStoreMap = null,
-    version: js.UndefOr[PipelineVersion] = js.undefined
-  ): PipelineDeclaration = {
+  def apply(name: PipelineName, roleArn: RoleArn, stages: PipelineStageDeclarationList): PipelineDeclaration = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], stages = stages.asInstanceOf[js.Any])
-    if (artifactStore != null) __obj.updateDynamic("artifactStore")(artifactStore.asInstanceOf[js.Any])
-    if (artifactStores != null) __obj.updateDynamic("artifactStores")(artifactStores.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineDeclaration]
   }
+  @scala.inline
+  implicit class PipelineDeclarationOps[Self <: PipelineDeclaration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: PipelineName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStagesVarargs(value: StageDeclaration*): Self = this.set("stages", js.Array(value :_*))
+    @scala.inline
+    def setStages(value: PipelineStageDeclarationList): Self = this.set("stages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArtifactStore(value: ArtifactStore): Self = this.set("artifactStore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactStore: Self = this.set("artifactStore", js.undefined)
+    @scala.inline
+    def setArtifactStores(value: ArtifactStoreMap): Self = this.set("artifactStores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactStores: Self = this.set("artifactStores", js.undefined)
+    @scala.inline
+    def setVersion(value: PipelineVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

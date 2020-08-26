@@ -266,6 +266,7 @@ trait HTMLTable extends js.Object {
   def attachEvent(event: String, pdisp: js.Any): Boolean = js.native
   def blur(): Unit = js.native
   def cells(): js.Any = js.native
+  def cells(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def cells(name: js.Any): js.Any = js.native
   def cells(name: js.Any, index: js.Any): js.Any = js.native
   def clearAttributes(): Unit = js.native
@@ -356,6 +357,7 @@ trait HTMLTable extends js.Object {
     * @param indexTo [indexTo=-1]
     */
   def moveRow(): js.Any = js.native
+  def moveRow(indexFrom: js.UndefOr[scala.Nothing], indexTo: Double): js.Any = js.native
   def moveRow(indexFrom: Double): js.Any = js.native
   def moveRow(indexFrom: Double, indexTo: Double): js.Any = js.native
   def msMatchesSelector(v: String): Boolean = js.native
@@ -384,6 +386,7 @@ trait HTMLTable extends js.Object {
   def replaceChild(newChild: IHTMLDOMNode, oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   def replaceNode(replacement: IHTMLDOMNode): IHTMLDOMNode = js.native
   def rows(): js.Any = js.native
+  def rows(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def rows(name: js.Any): js.Any = js.native
   def rows(name: js.Any, index: js.Any): js.Any = js.native
   def scrollIntoView(): Unit = js.native
@@ -403,6 +406,7 @@ trait HTMLTable extends js.Object {
   def setExpression(propname: String, expression: String, language: String): Unit = js.native
   def swapNode(otherNode: IHTMLDOMNode): IHTMLDOMNode = js.native
   def tBodies(): js.Any = js.native
+  def tBodies(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def tBodies(name: js.Any): js.Any = js.native
   def tBodies(name: js.Any, index: js.Any): js.Any = js.native
 }

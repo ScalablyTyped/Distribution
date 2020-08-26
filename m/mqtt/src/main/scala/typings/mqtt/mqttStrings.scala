@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object mqttStrings {
   @js.native
+  sealed trait connect extends js.Object
+  
+  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -41,6 +44,8 @@ object mqttStrings {
   @js.native
   sealed trait wxs extends js.Object
   
+  @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline

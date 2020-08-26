@@ -6,13 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait File extends js.Object {
-  var content: String
-  var fileNameNormalized: String
-  var fileNameOriginal: String
-  var gulp: js.UndefOr[VinylFile] = js.undefined
-  var kind: FileKind
-  var ts: js.UndefOr[SourceFile] = js.undefined
+  var content: String = js.native
+  var fileNameNormalized: String = js.native
+  var fileNameOriginal: String = js.native
+  var gulp: js.UndefOr[VinylFile] = js.native
+  var kind: FileKind = js.native
+  var ts: js.UndefOr[SourceFile] = js.native
 }
 
 @JSImport("gulp-typescript/release/input", "File")

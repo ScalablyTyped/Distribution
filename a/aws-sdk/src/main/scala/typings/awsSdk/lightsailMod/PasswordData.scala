@@ -18,11 +18,30 @@ trait PasswordData extends js.Object {
 
 object PasswordData {
   @scala.inline
-  def apply(ciphertext: String = null, keyPairName: ResourceName = null): PasswordData = {
+  def apply(): PasswordData = {
     val __obj = js.Dynamic.literal()
-    if (ciphertext != null) __obj.updateDynamic("ciphertext")(ciphertext.asInstanceOf[js.Any])
-    if (keyPairName != null) __obj.updateDynamic("keyPairName")(keyPairName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordData]
   }
+  @scala.inline
+  implicit class PasswordDataOps[Self <: PasswordData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCiphertext(value: String): Self = this.set("ciphertext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCiphertext: Self = this.set("ciphertext", js.undefined)
+    @scala.inline
+    def setKeyPairName(value: ResourceName): Self = this.set("keyPairName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPairName: Self = this.set("keyPairName", js.undefined)
+  }
+  
 }
 

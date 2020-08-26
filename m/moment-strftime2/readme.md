@@ -10,9 +10,9 @@ strftime support for Moment.js
 | ------------------ | :-------------: |
 | Full name          | moment-strftime2 |
 | Keywords           | moment, strftime, date, time, datetime |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 1055 |
+| # downloads        | 1135 |
 | # stars            | 0 |
 
 ## Links

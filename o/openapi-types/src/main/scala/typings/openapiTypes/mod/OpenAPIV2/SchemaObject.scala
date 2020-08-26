@@ -6,104 +6,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SchemaObject
   extends IJsonSchema
      with /* index */ StringDictionary[js.Any]
      with Schema {
-  var default: js.UndefOr[js.Any] = js.undefined
-  var discriminator: js.UndefOr[String] = js.undefined
-  var example: js.UndefOr[js.Any] = js.undefined
-  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
+  var default: js.UndefOr[js.Any] = js.native
+  var discriminator: js.UndefOr[String] = js.native
+  var example: js.UndefOr[js.Any] = js.native
+  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.native
   @JSName("items")
-  var items_SchemaObject: js.UndefOr[ItemsObject] = js.undefined
+  var items_SchemaObject: js.UndefOr[ItemsObject] = js.native
   @JSName("properties")
-  var properties_SchemaObject: js.UndefOr[StringDictionary[SchemaObject]] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var xml: js.UndefOr[XMLObject] = js.undefined
+  var properties_SchemaObject: js.UndefOr[StringDictionary[SchemaObject]] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var xml: js.UndefOr[XMLObject] = js.native
 }
 
 object SchemaObject {
   @scala.inline
-  def apply(
-    $schema: String = null,
-    StringDictionary: /* index */ StringDictionary[js.Any] = null,
-    additionalItems: Boolean | IJsonSchema = null,
-    additionalProperties: Boolean | IJsonSchema = null,
-    allOf: js.Array[IJsonSchema] = null,
-    anyOf: js.Array[IJsonSchema] = null,
-    default: js.Any = null,
-    definitions: StringDictionary[IJsonSchema] = null,
-    dependencies: StringDictionary[IJsonSchema | js.Array[String]] = null,
-    description: String = null,
-    discriminator: String = null,
-    enum: js.Array[_] = null,
-    example: js.Any = null,
-    exclusiveMaximum: js.UndefOr[Boolean] = js.undefined,
-    exclusiveMinimum: js.UndefOr[Boolean] = js.undefined,
-    externalDocs: ExternalDocumentationObject = null,
-    id: String = null,
-    items: ItemsObject = null,
-    maxItems: js.UndefOr[Double] = js.undefined,
-    maxLength: js.UndefOr[Double] = js.undefined,
-    maxProperties: js.UndefOr[Double] = js.undefined,
-    maximum: js.UndefOr[Double] = js.undefined,
-    minItems: js.UndefOr[Double] = js.undefined,
-    minLength: js.UndefOr[Double] = js.undefined,
-    minProperties: js.UndefOr[Double] = js.undefined,
-    minimum: js.UndefOr[Double] = js.undefined,
-    multipleOf: js.UndefOr[Double] = js.undefined,
-    not: IJsonSchema = null,
-    oneOf: js.Array[IJsonSchema] = null,
-    pattern: String = null,
-    patternProperties: StringDictionary[IJsonSchema] = null,
-    properties: StringDictionary[SchemaObject] = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    required: js.Array[String] = null,
-    title: String = null,
-    `type`: String | js.Array[String] = null,
-    uniqueItems: js.UndefOr[Boolean] = js.undefined,
-    xml: XMLObject = null
-  ): SchemaObject = {
+  def apply(): SchemaObject = {
     val __obj = js.Dynamic.literal()
-    if ($schema != null) __obj.updateDynamic("$schema")($schema.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (additionalItems != null) __obj.updateDynamic("additionalItems")(additionalItems.asInstanceOf[js.Any])
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
-    if (allOf != null) __obj.updateDynamic("allOf")(allOf.asInstanceOf[js.Any])
-    if (anyOf != null) __obj.updateDynamic("anyOf")(anyOf.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMaximum)) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMinimum)) __obj.updateDynamic("exclusiveMinimum")(exclusiveMinimum.get.asInstanceOf[js.Any])
-    if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxItems)) __obj.updateDynamic("maxItems")(maxItems.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxProperties)) __obj.updateDynamic("maxProperties")(maxProperties.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minItems)) __obj.updateDynamic("minItems")(minItems.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minProperties)) __obj.updateDynamic("minProperties")(minProperties.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleOf)) __obj.updateDynamic("multipleOf")(multipleOf.get.asInstanceOf[js.Any])
-    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
-    if (oneOf != null) __obj.updateDynamic("oneOf")(oneOf.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (patternProperties != null) __obj.updateDynamic("patternProperties")(patternProperties.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems.get.asInstanceOf[js.Any])
-    if (xml != null) __obj.updateDynamic("xml")(xml.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaObject]
   }
+  @scala.inline
+  implicit class SchemaObjectOps[Self <: SchemaObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setDiscriminator(value: String): Self = this.set("discriminator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscriminator: Self = this.set("discriminator", js.undefined)
+    @scala.inline
+    def setExample(value: js.Any): Self = this.set("example", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExample: Self = this.set("example", js.undefined)
+    @scala.inline
+    def setExternalDocs(value: ExternalDocumentationObject): Self = this.set("externalDocs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalDocs: Self = this.set("externalDocs", js.undefined)
+    @scala.inline
+    def setItems(value: ItemsObject): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[SchemaObject]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setXml(value: XMLObject): Self = this.set("xml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXml: Self = this.set("xml", js.undefined)
+  }
+  
 }
 

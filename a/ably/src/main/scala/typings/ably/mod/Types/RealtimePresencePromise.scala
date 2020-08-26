@@ -19,10 +19,10 @@ trait RealtimePresencePromise extends RealtimePresenceBase {
   def leaveClient(clientId: String): js.Promise[Unit] = js.native
   def leaveClient(clientId: String, data: js.Any): js.Promise[Unit] = js.native
   def subscribe(): js.Promise[Unit] = js.native
+  def subscribe(action: js.UndefOr[PresenceAction], listener: messageCallback[PresenceMessage]): js.Promise[Unit] = js.native
   def subscribe(action: js.Array[PresenceAction]): js.Promise[Unit] = js.native
   def subscribe(action: js.Array[PresenceAction], listener: messageCallback[PresenceMessage]): js.Promise[Unit] = js.native
   def subscribe(action: PresenceAction): js.Promise[Unit] = js.native
-  def subscribe(action: PresenceAction, listener: messageCallback[PresenceMessage]): js.Promise[Unit] = js.native
   def subscribe(action: messageCallback[PresenceMessage]): js.Promise[Unit] = js.native
   def subscribe(action: messageCallback[PresenceMessage], listener: messageCallback[PresenceMessage]): js.Promise[Unit] = js.native
   def update(): js.Promise[Unit] = js.native

@@ -51,14 +51,12 @@ class BuildingBlock protected () extends TemplateFormBase {
     * In version 8.3.0: introduced
     */
   def platform: SnippetType = js.native
-  def platform(newValue: SnippetType): js.Any = js.native
-  def widget(): js.Any = js.native
-  def widget(newValue: Widget): js.Any = js.native
+  def platform_=(newValue: SnippetType): Unit = js.native
   /**
     * In version 7.15.0: deleted
     */
-  @JSName("widget")
-  def widget_Union: Widget | Null = js.native
+  def widget: Widget | Null = js.native
+  def widget_=(newValue: Widget | Null): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */

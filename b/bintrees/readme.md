@@ -12,7 +12,7 @@ Binary Search Trees
 | Keywords           | binary tree, red black tree, red-black tree, redblack tree |
 | # releases         | 0 |
 | # dependents       | 41 |
-| # downloads        | 10363227 |
+| # downloads        | 10706418 |
 | # stars            | 2 |
 
 ## Links

@@ -11,10 +11,6 @@ object readFileErrorMod extends js.Object {
   @js.native
   class ReadFileError protected () extends Error {
     def this(originalError: Error) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var originalError: Error = js.native
   }
   

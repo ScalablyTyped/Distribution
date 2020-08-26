@@ -8,36 +8,69 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<cli-table.cli-table.TableOptions> */
+@js.native
 trait PartialTableOptions extends js.Object {
-  var chars: js.UndefOr[PartialRecordtoptopmidtop] = js.undefined
-  var colAligns: js.UndefOr[js.Array[left | middle | right]] = js.undefined
-  var colWidths: js.UndefOr[js.Array[Double]] = js.undefined
-  var colors: js.UndefOr[Boolean] = js.undefined
-  var head: js.UndefOr[js.Array[String]] = js.undefined
-  var style: js.UndefOr[Partialpaddingleftnumberp] = js.undefined
-  var truncate: js.UndefOr[String] = js.undefined
+  var chars: js.UndefOr[PartialRecordtoptopmidtop] = js.native
+  var colAligns: js.UndefOr[js.Array[left | middle | right]] = js.native
+  var colWidths: js.UndefOr[js.Array[Double]] = js.native
+  var colors: js.UndefOr[Boolean] = js.native
+  var head: js.UndefOr[js.Array[String]] = js.native
+  var style: js.UndefOr[Partialpaddingleftnumberp] = js.native
+  var truncate: js.UndefOr[String] = js.native
 }
 
 object PartialTableOptions {
   @scala.inline
-  def apply(
-    chars: PartialRecordtoptopmidtop = null,
-    colAligns: js.Array[left | middle | right] = null,
-    colWidths: js.Array[Double] = null,
-    colors: js.UndefOr[Boolean] = js.undefined,
-    head: js.Array[String] = null,
-    style: Partialpaddingleftnumberp = null,
-    truncate: String = null
-  ): PartialTableOptions = {
+  def apply(): PartialTableOptions = {
     val __obj = js.Dynamic.literal()
-    if (chars != null) __obj.updateDynamic("chars")(chars.asInstanceOf[js.Any])
-    if (colAligns != null) __obj.updateDynamic("colAligns")(colAligns.asInstanceOf[js.Any])
-    if (colWidths != null) __obj.updateDynamic("colWidths")(colWidths.asInstanceOf[js.Any])
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.get.asInstanceOf[js.Any])
-    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTableOptions]
   }
+  @scala.inline
+  implicit class PartialTableOptionsOps[Self <: PartialTableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChars(value: PartialRecordtoptopmidtop): Self = this.set("chars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChars: Self = this.set("chars", js.undefined)
+    @scala.inline
+    def setColAlignsVarargs(value: (left | middle | right)*): Self = this.set("colAligns", js.Array(value :_*))
+    @scala.inline
+    def setColAligns(value: js.Array[left | middle | right]): Self = this.set("colAligns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColAligns: Self = this.set("colAligns", js.undefined)
+    @scala.inline
+    def setColWidthsVarargs(value: Double*): Self = this.set("colWidths", js.Array(value :_*))
+    @scala.inline
+    def setColWidths(value: js.Array[Double]): Self = this.set("colWidths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColWidths: Self = this.set("colWidths", js.undefined)
+    @scala.inline
+    def setColors(value: Boolean): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setHeadVarargs(value: String*): Self = this.set("head", js.Array(value :_*))
+    @scala.inline
+    def setHead(value: js.Array[String]): Self = this.set("head", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHead: Self = this.set("head", js.undefined)
+    @scala.inline
+    def setStyle(value: Partialpaddingleftnumberp): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTruncate(value: String): Self = this.set("truncate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTruncate: Self = this.set("truncate", js.undefined)
+  }
+  
 }
 

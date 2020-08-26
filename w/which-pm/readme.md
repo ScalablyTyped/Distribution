@@ -12,7 +12,7 @@ Detects what package manager was used for installation
 | Keywords           | npm, pnpm, yarn |
 | # releases         | 3 |
 | # dependents       | 7 |
-| # downloads        | 1892084 |
+| # downloads        | 1957288 |
 | # stars            | 0 |
 
 ## Links

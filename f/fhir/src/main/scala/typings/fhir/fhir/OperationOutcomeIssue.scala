@@ -7,91 +7,120 @@ import scala.scalajs.js.annotation._
 /**
   * A single issue associated with the action
   */
+@js.native
 trait OperationOutcomeIssue extends BackboneElement {
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.undefined
+  var _code: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'diagnostics'.
     */
-  var _diagnostics: js.UndefOr[Element] = js.undefined
+  var _diagnostics: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'expression'.
     */
-  var _expression: js.UndefOr[js.Array[Element]] = js.undefined
+  var _expression: js.UndefOr[js.Array[Element]] = js.native
   /**
     * Contains extended information for property 'location'.
     */
-  var _location: js.UndefOr[js.Array[Element]] = js.undefined
+  var _location: js.UndefOr[js.Array[Element]] = js.native
   /**
     * Contains extended information for property 'severity'.
     */
-  var _severity: js.UndefOr[Element] = js.undefined
+  var _severity: js.UndefOr[Element] = js.native
   /**
     * Error or warning code
     */
-  var code: typings.fhir.fhir.code
+  var code: typings.fhir.fhir.code = js.native
   /**
     * Additional details about the error
     */
-  var details: js.UndefOr[CodeableConcept] = js.undefined
+  var details: js.UndefOr[CodeableConcept] = js.native
   /**
     * Additional diagnostic information about the issue
     */
-  var diagnostics: js.UndefOr[String] = js.undefined
+  var diagnostics: js.UndefOr[String] = js.native
   /**
     * FHIRPath of element(s) related to issue
     */
-  var expression: js.UndefOr[js.Array[String]] = js.undefined
+  var expression: js.UndefOr[js.Array[String]] = js.native
   /**
     * Path of element(s) related to issue
     */
-  var location: js.UndefOr[js.Array[String]] = js.undefined
+  var location: js.UndefOr[js.Array[String]] = js.native
   /**
     * fatal | error | warning | information
     */
-  var severity: code
+  var severity: code = js.native
 }
 
 object OperationOutcomeIssue {
   @scala.inline
-  def apply(
-    code: code,
-    severity: code,
-    _code: Element = null,
-    _diagnostics: Element = null,
-    _expression: js.Array[Element] = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _location: js.Array[Element] = null,
-    _severity: Element = null,
-    details: CodeableConcept = null,
-    diagnostics: String = null,
-    expression: js.Array[String] = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    location: js.Array[String] = null,
-    modifierExtension: js.Array[Extension] = null
-  ): OperationOutcomeIssue = {
+  def apply(code: code, severity: code): OperationOutcomeIssue = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
-    if (_code != null) __obj.updateDynamic("_code")(_code.asInstanceOf[js.Any])
-    if (_diagnostics != null) __obj.updateDynamic("_diagnostics")(_diagnostics.asInstanceOf[js.Any])
-    if (_expression != null) __obj.updateDynamic("_expression")(_expression.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_location != null) __obj.updateDynamic("_location")(_location.asInstanceOf[js.Any])
-    if (_severity != null) __obj.updateDynamic("_severity")(_severity.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationOutcomeIssue]
   }
+  @scala.inline
+  implicit class OperationOutcomeIssueOps[Self <: OperationOutcomeIssue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: code): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSeverity(value: code): Self = this.set("severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_code: Self = this.set("_code", js.undefined)
+    @scala.inline
+    def set_diagnostics(value: Element): Self = this.set("_diagnostics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_diagnostics: Self = this.set("_diagnostics", js.undefined)
+    @scala.inline
+    def set_expressionVarargs(value: Element*): Self = this.set("_expression", js.Array(value :_*))
+    @scala.inline
+    def set_expression(value: js.Array[Element]): Self = this.set("_expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_expression: Self = this.set("_expression", js.undefined)
+    @scala.inline
+    def set_locationVarargs(value: Element*): Self = this.set("_location", js.Array(value :_*))
+    @scala.inline
+    def set_location(value: js.Array[Element]): Self = this.set("_location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_location: Self = this.set("_location", js.undefined)
+    @scala.inline
+    def set_severity(value: Element): Self = this.set("_severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_severity: Self = this.set("_severity", js.undefined)
+    @scala.inline
+    def setDetails(value: CodeableConcept): Self = this.set("details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("details", js.undefined)
+    @scala.inline
+    def setDiagnostics(value: String): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiagnostics: Self = this.set("diagnostics", js.undefined)
+    @scala.inline
+    def setExpressionVarargs(value: String*): Self = this.set("expression", js.Array(value :_*))
+    @scala.inline
+    def setExpression(value: js.Array[String]): Self = this.set("expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpression: Self = this.set("expression", js.undefined)
+    @scala.inline
+    def setLocationVarargs(value: String*): Self = this.set("location", js.Array(value :_*))
+    @scala.inline
+    def setLocation(value: js.Array[String]): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+  }
+  
 }
 

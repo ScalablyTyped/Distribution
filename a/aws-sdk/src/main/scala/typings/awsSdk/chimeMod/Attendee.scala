@@ -22,16 +22,34 @@ trait Attendee extends js.Object {
 
 object Attendee {
   @scala.inline
-  def apply(
-    AttendeeId: GuidString = null,
-    ExternalUserId: ExternalUserIdType = null,
-    JoinToken: JoinTokenString = null
-  ): Attendee = {
+  def apply(): Attendee = {
     val __obj = js.Dynamic.literal()
-    if (AttendeeId != null) __obj.updateDynamic("AttendeeId")(AttendeeId.asInstanceOf[js.Any])
-    if (ExternalUserId != null) __obj.updateDynamic("ExternalUserId")(ExternalUserId.asInstanceOf[js.Any])
-    if (JoinToken != null) __obj.updateDynamic("JoinToken")(JoinToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attendee]
   }
+  @scala.inline
+  implicit class AttendeeOps[Self <: Attendee] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttendeeId(value: GuidString): Self = this.set("AttendeeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttendeeId: Self = this.set("AttendeeId", js.undefined)
+    @scala.inline
+    def setExternalUserId(value: ExternalUserIdType): Self = this.set("ExternalUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalUserId: Self = this.set("ExternalUserId", js.undefined)
+    @scala.inline
+    def setJoinToken(value: JoinTokenString): Self = this.set("JoinToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoinToken: Self = this.set("JoinToken", js.undefined)
+  }
+  
 }
 

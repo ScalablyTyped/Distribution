@@ -19,14 +19,30 @@ trait SchemaTransitTableTransitTimeRowTransitTimeValue extends js.Object {
 
 object SchemaTransitTableTransitTimeRowTransitTimeValue {
   @scala.inline
-  def apply(
-    maxTransitTimeInDays: js.UndefOr[Double] = js.undefined,
-    minTransitTimeInDays: js.UndefOr[Double] = js.undefined
-  ): SchemaTransitTableTransitTimeRowTransitTimeValue = {
+  def apply(): SchemaTransitTableTransitTimeRowTransitTimeValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxTransitTimeInDays)) __obj.updateDynamic("maxTransitTimeInDays")(maxTransitTimeInDays.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minTransitTimeInDays)) __obj.updateDynamic("minTransitTimeInDays")(minTransitTimeInDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTransitTableTransitTimeRowTransitTimeValue]
   }
+  @scala.inline
+  implicit class SchemaTransitTableTransitTimeRowTransitTimeValueOps[Self <: SchemaTransitTableTransitTimeRowTransitTimeValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxTransitTimeInDays(value: Double): Self = this.set("maxTransitTimeInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxTransitTimeInDays: Self = this.set("maxTransitTimeInDays", js.undefined)
+    @scala.inline
+    def setMinTransitTimeInDays(value: Double): Self = this.set("minTransitTimeInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinTransitTimeInDays: Self = this.set("minTransitTimeInDays", js.undefined)
+  }
+  
 }
 

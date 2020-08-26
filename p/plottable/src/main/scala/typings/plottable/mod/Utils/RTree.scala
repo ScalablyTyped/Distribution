@@ -17,6 +17,7 @@ object RTree extends js.Object {
   class RTree[T] ()
     extends typings.plottable.utilsMod.RTree.RTree[T] {
     def this(maxNodeChildren: Double) = this()
+    def this(maxNodeChildren: js.UndefOr[scala.Nothing], splitStrategy: IRTreeSplitStrategy) = this()
     def this(maxNodeChildren: Double, splitStrategy: IRTreeSplitStrategy) = this()
   }
   

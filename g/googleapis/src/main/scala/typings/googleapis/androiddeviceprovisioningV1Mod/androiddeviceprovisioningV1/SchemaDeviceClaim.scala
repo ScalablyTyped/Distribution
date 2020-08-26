@@ -28,12 +28,34 @@ trait SchemaDeviceClaim extends js.Object {
 
 object SchemaDeviceClaim {
   @scala.inline
-  def apply(ownerCompanyId: String = null, resellerId: String = null, sectionType: String = null): SchemaDeviceClaim = {
+  def apply(): SchemaDeviceClaim = {
     val __obj = js.Dynamic.literal()
-    if (ownerCompanyId != null) __obj.updateDynamic("ownerCompanyId")(ownerCompanyId.asInstanceOf[js.Any])
-    if (resellerId != null) __obj.updateDynamic("resellerId")(resellerId.asInstanceOf[js.Any])
-    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeviceClaim]
   }
+  @scala.inline
+  implicit class SchemaDeviceClaimOps[Self <: SchemaDeviceClaim] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOwnerCompanyId(value: String): Self = this.set("ownerCompanyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerCompanyId: Self = this.set("ownerCompanyId", js.undefined)
+    @scala.inline
+    def setResellerId(value: String): Self = this.set("resellerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResellerId: Self = this.set("resellerId", js.undefined)
+    @scala.inline
+    def setSectionType(value: String): Self = this.set("sectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSectionType: Self = this.set("sectionType", js.undefined)
+  }
+  
 }
 

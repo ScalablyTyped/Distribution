@@ -18,6 +18,11 @@ trait JQueryGenericPromise[T] extends js.Object {
   def `then`(doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, Unit]): JQueryPromise[Unit] = js.native
   def `then`(
     doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, Unit],
+    failFilter: js.UndefOr[scala.Nothing],
+    progressFilter: js.Function1[/* repeated */ js.Any, _]
+  ): JQueryPromise[Unit] = js.native
+  def `then`(
+    doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, Unit],
     failFilter: js.Function1[/* repeated */ js.Any, _]
   ): JQueryPromise[Unit] = js.native
   def `then`(
@@ -33,6 +38,12 @@ trait JQueryGenericPromise[T] extends js.Object {
     */
   @JSName("then")
   def then_U[U](doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, U | JQueryPromise[U]]): JQueryPromise[U] = js.native
+  @JSName("then")
+  def then_U[U](
+    doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, U | JQueryPromise[U]],
+    failFilter: js.UndefOr[scala.Nothing],
+    progressFilter: js.Function1[/* repeated */ js.Any, _]
+  ): JQueryPromise[U] = js.native
   @JSName("then")
   def then_U[U](
     doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, U | JQueryPromise[U]],

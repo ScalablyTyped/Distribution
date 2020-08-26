@@ -41,6 +41,11 @@ object sidebarAction extends js.Object {
   def show(details: SidebarShowDetail): Unit = js.native
   def show(details: SidebarShowDetail, callback: js.Function1[/* windowId */ Double, Unit]): Unit = js.native
   def show(windowId: Double): Unit = js.native
+  def show(
+    windowId: Double,
+    details: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* windowId */ Double, Unit]
+  ): Unit = js.native
   def show(windowId: Double, details: SidebarShowDetail): Unit = js.native
   def show(windowId: Double, details: SidebarShowDetail, callback: js.Function1[/* windowId */ Double, Unit]): Unit = js.native
   def undock(popupWindowId: Double, callback: js.Function1[/* windowId */ Double, Unit]): Unit = js.native

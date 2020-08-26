@@ -12,7 +12,7 @@ N3 parser that implements the RDFJS Sink interface
 | Keywords           | rdf, rdfjs, parser, n3, ntriples, turtle |
 | # releases         | 4 |
 | # dependents       | 5 |
-| # downloads        | 5215 |
+| # downloads        | 5724 |
 | # stars            | 0 |
 
 ## Links

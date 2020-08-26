@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Parser () extends js.Object {
   var canBeIdentifier: js.Any = js.native
-  var cancelToken: js.UndefOr[js.Any] = js.native
+  var cancelToken: js.Any = js.native
   var diagnostics: js.Any = js.native
   var finishNode: js.Any = js.native
   var imports: js.Any = js.native

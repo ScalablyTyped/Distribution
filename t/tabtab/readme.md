@@ -12,7 +12,7 @@ tab completion helpers, for node cli programs. Inspired by npm completion.
 | Keywords           | terminal, tab, unix, console, complete, completion |
 | # releases         | 4 |
 | # dependents       | 107 |
-| # downloads        | 15253672 |
+| # downloads        | 16065744 |
 | # stars            | 7 |
 
 ## Links

@@ -34,11 +34,30 @@ trait SchemaAuthRequirement extends js.Object {
 
 object SchemaAuthRequirement {
   @scala.inline
-  def apply(audiences: String = null, providerId: String = null): SchemaAuthRequirement = {
+  def apply(): SchemaAuthRequirement = {
     val __obj = js.Dynamic.literal()
-    if (audiences != null) __obj.updateDynamic("audiences")(audiences.asInstanceOf[js.Any])
-    if (providerId != null) __obj.updateDynamic("providerId")(providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAuthRequirement]
   }
+  @scala.inline
+  implicit class SchemaAuthRequirementOps[Self <: SchemaAuthRequirement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudiences(value: String): Self = this.set("audiences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudiences: Self = this.set("audiences", js.undefined)
+    @scala.inline
+    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderId: Self = this.set("providerId", js.undefined)
+  }
+  
 }
 

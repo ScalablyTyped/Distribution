@@ -22,16 +22,36 @@ trait DeviceFilter extends js.Object {
 
 object DeviceFilter {
   @scala.inline
-  def apply(
-    attribute: DeviceFilterAttribute = null,
-    operator: RuleOperator = null,
-    values: DeviceFilterValues = null
-  ): DeviceFilter = {
+  def apply(): DeviceFilter = {
     val __obj = js.Dynamic.literal()
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceFilter]
   }
+  @scala.inline
+  implicit class DeviceFilterOps[Self <: DeviceFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttribute(value: DeviceFilterAttribute): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttribute: Self = this.set("attribute", js.undefined)
+    @scala.inline
+    def setOperator(value: RuleOperator): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: String*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: DeviceFilterValues): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

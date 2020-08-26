@@ -15,6 +15,10 @@ trait User extends js.Object {
     */
   var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
   /**
+    * The custom permissions profile associated with this user.
+    */
+  var CustomPermissionsName: js.UndefOr[RoleName] = js.native
+  /**
     * The user's email address.
     */
   var Email: js.UndefOr[String] = js.native
@@ -38,24 +42,54 @@ trait User extends js.Object {
 
 object User {
   @scala.inline
-  def apply(
-    Active: js.UndefOr[Boolean] = js.undefined,
-    Arn: Arn = null,
-    Email: String = null,
-    IdentityType: IdentityType = null,
-    PrincipalId: String = null,
-    Role: UserRole = null,
-    UserName: UserName_ = null
-  ): User = {
+  def apply(): User = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
-    if (IdentityType != null) __obj.updateDynamic("IdentityType")(IdentityType.asInstanceOf[js.Any])
-    if (PrincipalId != null) __obj.updateDynamic("PrincipalId")(PrincipalId.asInstanceOf[js.Any])
-    if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
+  @scala.inline
+  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("Active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("Active", js.undefined)
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCustomPermissionsName(value: RoleName): Self = this.set("CustomPermissionsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomPermissionsName: Self = this.set("CustomPermissionsName", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("Email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("Email", js.undefined)
+    @scala.inline
+    def setIdentityType(value: IdentityType): Self = this.set("IdentityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityType: Self = this.set("IdentityType", js.undefined)
+    @scala.inline
+    def setPrincipalId(value: String): Self = this.set("PrincipalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalId: Self = this.set("PrincipalId", js.undefined)
+    @scala.inline
+    def setRole(value: UserRole): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("Role", js.undefined)
+    @scala.inline
+    def setUserName(value: UserName_): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("UserName", js.undefined)
+  }
+  
 }
 

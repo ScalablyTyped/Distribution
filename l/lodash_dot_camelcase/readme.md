@@ -11,8 +11,8 @@ The lodash method `_.camelCase` exported as a module.
 | Full name          | lodash.camelcase |
 | Keywords           | lodash-modularized, camelcase |
 | # releases         | 0 |
-| # dependents       | 578 |
-| # downloads        | 178745514 |
+| # dependents       | 581 |
+| # downloads        | 180559279 |
 | # stars            | 0 |
 
 ## Links

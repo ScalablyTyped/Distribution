@@ -11,10 +11,26 @@ trait GetBucketReplicationOutput extends js.Object {
 
 object GetBucketReplicationOutput {
   @scala.inline
-  def apply(ReplicationConfiguration: ReplicationConfiguration = null): GetBucketReplicationOutput = {
+  def apply(): GetBucketReplicationOutput = {
     val __obj = js.Dynamic.literal()
-    if (ReplicationConfiguration != null) __obj.updateDynamic("ReplicationConfiguration")(ReplicationConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketReplicationOutput]
   }
+  @scala.inline
+  implicit class GetBucketReplicationOutputOps[Self <: GetBucketReplicationOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReplicationConfiguration(value: ReplicationConfiguration): Self = this.set("ReplicationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationConfiguration: Self = this.set("ReplicationConfiguration", js.undefined)
+  }
+  
 }
 

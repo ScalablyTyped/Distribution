@@ -18,9 +18,8 @@ object Attachment {
     __obj.asInstanceOf[Attachment]
   }
   @scala.inline
-  def FullAttachment(content_type: String, data: AttachmentData, digest: String = null): Attachment = {
+  def FullAttachment(content_type: String, data: AttachmentData): Attachment = {
     val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
-    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]
   }
 }

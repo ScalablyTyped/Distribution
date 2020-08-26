@@ -18,11 +18,32 @@ trait ListBackupPlanTemplatesOutput extends js.Object {
 
 object ListBackupPlanTemplatesOutput {
   @scala.inline
-  def apply(BackupPlanTemplatesList: BackupPlanTemplatesList = null, NextToken: String = null): ListBackupPlanTemplatesOutput = {
+  def apply(): ListBackupPlanTemplatesOutput = {
     val __obj = js.Dynamic.literal()
-    if (BackupPlanTemplatesList != null) __obj.updateDynamic("BackupPlanTemplatesList")(BackupPlanTemplatesList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBackupPlanTemplatesOutput]
   }
+  @scala.inline
+  implicit class ListBackupPlanTemplatesOutputOps[Self <: ListBackupPlanTemplatesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupPlanTemplatesListVarargs(value: BackupPlanTemplatesListMember*): Self = this.set("BackupPlanTemplatesList", js.Array(value :_*))
+    @scala.inline
+    def setBackupPlanTemplatesList(value: BackupPlanTemplatesList): Self = this.set("BackupPlanTemplatesList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanTemplatesList: Self = this.set("BackupPlanTemplatesList", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

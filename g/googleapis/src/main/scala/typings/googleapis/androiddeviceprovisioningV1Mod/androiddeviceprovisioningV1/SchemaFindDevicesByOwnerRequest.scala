@@ -30,18 +30,40 @@ trait SchemaFindDevicesByOwnerRequest extends js.Object {
 
 object SchemaFindDevicesByOwnerRequest {
   @scala.inline
-  def apply(
-    customerId: js.Array[String] = null,
-    limit: String = null,
-    pageToken: String = null,
-    sectionType: String = null
-  ): SchemaFindDevicesByOwnerRequest = {
+  def apply(): SchemaFindDevicesByOwnerRequest = {
     val __obj = js.Dynamic.literal()
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFindDevicesByOwnerRequest]
   }
+  @scala.inline
+  implicit class SchemaFindDevicesByOwnerRequestOps[Self <: SchemaFindDevicesByOwnerRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomerIdVarargs(value: String*): Self = this.set("customerId", js.Array(value :_*))
+    @scala.inline
+    def setCustomerId(value: js.Array[String]): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    @scala.inline
+    def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setSectionType(value: String): Self = this.set("sectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSectionType: Self = this.set("sectionType", js.undefined)
+  }
+  
 }
 

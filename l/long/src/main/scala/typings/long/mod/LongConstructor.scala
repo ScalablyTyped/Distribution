@@ -15,7 +15,7 @@ trait LongConstructor
   */
 Instantiable1[/* low */ Double, Long]
      with Instantiable2[/* low */ Double, /* high */ Double, Long]
-     with Instantiable3[/* low */ Double, /* high */ Double, /* unsigned */ Boolean, Long] {
+     with Instantiable3[/* low */ Double, js.UndefOr[/* high */ Double], /* unsigned */ Boolean, Long] {
   /**
     * Maximum unsigned value.
     */
@@ -57,6 +57,7 @@ Instantiable1[/* low */ Double, Long]
     * Creates a Long from its byte representation.
     */
   def fromBytes(bytes: js.Array[Double]): Long = js.native
+  def fromBytes(bytes: js.Array[Double], unsigned: js.UndefOr[scala.Nothing], le: Boolean): Long = js.native
   def fromBytes(bytes: js.Array[Double], unsigned: Boolean): Long = js.native
   def fromBytes(bytes: js.Array[Double], unsigned: Boolean, le: Boolean): Long = js.native
   /**
@@ -83,6 +84,7 @@ Instantiable1[/* low */ Double, Long]
     * Returns a Long representation of the given string, written using the specified radix.
     */
   def fromString(str: String): Long = js.native
+  def fromString(str: String, unsigned: js.UndefOr[scala.Nothing], radix: Double): Long = js.native
   def fromString(str: String, unsigned: Boolean): Long = js.native
   def fromString(str: String, unsigned: Boolean, radix: Double): Long = js.native
   def fromString(str: String, unsigned: Double): Long = js.native

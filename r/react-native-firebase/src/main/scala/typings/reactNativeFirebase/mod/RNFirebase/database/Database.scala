@@ -24,6 +24,12 @@ trait Database
     * unregister listener
     */
   def off(path: String, modifiersString: String): js.Any = js.native
+  def off(
+    path: String,
+    modifiersString: String,
+    eventName: js.UndefOr[scala.Nothing],
+    origCB: js.Function0[Unit]
+  ): js.Any = js.native
   def off(path: String, modifiersString: String, eventName: String): js.Any = js.native
   def off(path: String, modifiersString: String, eventName: String, origCB: js.Function0[Unit]): js.Any = js.native
   /**

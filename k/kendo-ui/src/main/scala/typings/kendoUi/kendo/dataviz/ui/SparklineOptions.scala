@@ -4,117 +4,204 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SparklineOptions extends js.Object {
-  var autoBind: js.UndefOr[Boolean] = js.undefined
-  var axisDefaults: js.UndefOr[js.Any] = js.undefined
-  var axisLabelClick: js.UndefOr[js.Function1[/* e */ SparklineAxisLabelClickEvent, Unit]] = js.undefined
-  var categoryAxis: js.UndefOr[SparklineCategoryAxisItem | js.Array[SparklineCategoryAxisItem]] = js.undefined
-  var chartArea: js.UndefOr[SparklineChartArea] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var dataBound: js.UndefOr[js.Function1[/* e */ SparklineEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[js.Any] = js.undefined
-  var drag: js.UndefOr[js.Function1[/* e */ SparklineDragEvent, Unit]] = js.undefined
-  var dragEnd: js.UndefOr[js.Function1[/* e */ SparklineDragEndEvent, Unit]] = js.undefined
-  var dragStart: js.UndefOr[js.Function1[/* e */ SparklineDragStartEvent, Unit]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var paneRender: js.UndefOr[js.Function1[/* e */ SparklinePaneRenderEvent, Unit]] = js.undefined
-  var plotArea: js.UndefOr[SparklinePlotArea] = js.undefined
-  var plotAreaClick: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaClickEvent, Unit]] = js.undefined
-  var plotAreaHover: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaHoverEvent, Unit]] = js.undefined
-  var plotAreaLeave: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaLeaveEvent, Unit]] = js.undefined
-  var pointWidth: js.UndefOr[Double] = js.undefined
-  var renderAs: js.UndefOr[String] = js.undefined
-  var series: js.UndefOr[js.Array[SparklineSeriesItem]] = js.undefined
-  var seriesClick: js.UndefOr[js.Function1[/* e */ SparklineSeriesClickEvent, Unit]] = js.undefined
-  var seriesColors: js.UndefOr[js.Any] = js.undefined
-  var seriesDefaults: js.UndefOr[SparklineSeriesDefaults] = js.undefined
-  var seriesHover: js.UndefOr[js.Function1[/* e */ SparklineSeriesHoverEvent, Unit]] = js.undefined
-  var seriesLeave: js.UndefOr[js.Function1[/* e */ SparklineSeriesLeaveEvent, Unit]] = js.undefined
-  var seriesOver: js.UndefOr[js.Function1[/* e */ SparklineSeriesOverEvent, Unit]] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
-  var tooltip: js.UndefOr[SparklineTooltip] = js.undefined
-  var transitions: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var valueAxis: js.UndefOr[SparklineValueAxisItem | js.Array[SparklineValueAxisItem]] = js.undefined
-  var zoom: js.UndefOr[js.Function1[/* e */ SparklineZoomEvent, Unit]] = js.undefined
-  var zoomEnd: js.UndefOr[js.Function1[/* e */ SparklineZoomEndEvent, Unit]] = js.undefined
-  var zoomStart: js.UndefOr[js.Function1[/* e */ SparklineZoomStartEvent, Unit]] = js.undefined
+  var autoBind: js.UndefOr[Boolean] = js.native
+  var axisDefaults: js.UndefOr[js.Any] = js.native
+  var axisLabelClick: js.UndefOr[js.Function1[/* e */ SparklineAxisLabelClickEvent, Unit]] = js.native
+  var categoryAxis: js.UndefOr[SparklineCategoryAxisItem | js.Array[SparklineCategoryAxisItem]] = js.native
+  var chartArea: js.UndefOr[SparklineChartArea] = js.native
+  var data: js.UndefOr[js.Any] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ SparklineEvent, Unit]] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ SparklineDragEvent, Unit]] = js.native
+  var dragEnd: js.UndefOr[js.Function1[/* e */ SparklineDragEndEvent, Unit]] = js.native
+  var dragStart: js.UndefOr[js.Function1[/* e */ SparklineDragStartEvent, Unit]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var paneRender: js.UndefOr[js.Function1[/* e */ SparklinePaneRenderEvent, Unit]] = js.native
+  var plotArea: js.UndefOr[SparklinePlotArea] = js.native
+  var plotAreaClick: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaClickEvent, Unit]] = js.native
+  var plotAreaHover: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaHoverEvent, Unit]] = js.native
+  var plotAreaLeave: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaLeaveEvent, Unit]] = js.native
+  var pointWidth: js.UndefOr[Double] = js.native
+  var renderAs: js.UndefOr[String] = js.native
+  var series: js.UndefOr[js.Array[SparklineSeriesItem]] = js.native
+  var seriesClick: js.UndefOr[js.Function1[/* e */ SparklineSeriesClickEvent, Unit]] = js.native
+  var seriesColors: js.UndefOr[js.Any] = js.native
+  var seriesDefaults: js.UndefOr[SparklineSeriesDefaults] = js.native
+  var seriesHover: js.UndefOr[js.Function1[/* e */ SparklineSeriesHoverEvent, Unit]] = js.native
+  var seriesLeave: js.UndefOr[js.Function1[/* e */ SparklineSeriesLeaveEvent, Unit]] = js.native
+  var seriesOver: js.UndefOr[js.Function1[/* e */ SparklineSeriesOverEvent, Unit]] = js.native
+  var theme: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[SparklineTooltip] = js.native
+  var transitions: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var valueAxis: js.UndefOr[SparklineValueAxisItem | js.Array[SparklineValueAxisItem]] = js.native
+  var zoom: js.UndefOr[js.Function1[/* e */ SparklineZoomEvent, Unit]] = js.native
+  var zoomEnd: js.UndefOr[js.Function1[/* e */ SparklineZoomEndEvent, Unit]] = js.native
+  var zoomStart: js.UndefOr[js.Function1[/* e */ SparklineZoomStartEvent, Unit]] = js.native
 }
 
 object SparklineOptions {
   @scala.inline
-  def apply(
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    axisDefaults: js.Any = null,
-    axisLabelClick: /* e */ SparklineAxisLabelClickEvent => Unit = null,
-    categoryAxis: SparklineCategoryAxisItem | js.Array[SparklineCategoryAxisItem] = null,
-    chartArea: SparklineChartArea = null,
-    data: js.Any = null,
-    dataBound: /* e */ SparklineEvent => Unit = null,
-    dataSource: js.Any = null,
-    drag: /* e */ SparklineDragEvent => Unit = null,
-    dragEnd: /* e */ SparklineDragEndEvent => Unit = null,
-    dragStart: /* e */ SparklineDragStartEvent => Unit = null,
-    name: String = null,
-    paneRender: /* e */ SparklinePaneRenderEvent => Unit = null,
-    plotArea: SparklinePlotArea = null,
-    plotAreaClick: /* e */ SparklinePlotAreaClickEvent => Unit = null,
-    plotAreaHover: /* e */ SparklinePlotAreaHoverEvent => Unit = null,
-    plotAreaLeave: /* e */ SparklinePlotAreaLeaveEvent => Unit = null,
-    pointWidth: js.UndefOr[Double] = js.undefined,
-    renderAs: String = null,
-    series: js.Array[SparklineSeriesItem] = null,
-    seriesClick: /* e */ SparklineSeriesClickEvent => Unit = null,
-    seriesColors: js.Any = null,
-    seriesDefaults: SparklineSeriesDefaults = null,
-    seriesHover: /* e */ SparklineSeriesHoverEvent => Unit = null,
-    seriesLeave: /* e */ SparklineSeriesLeaveEvent => Unit = null,
-    seriesOver: /* e */ SparklineSeriesOverEvent => Unit = null,
-    theme: String = null,
-    tooltip: SparklineTooltip = null,
-    transitions: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    valueAxis: SparklineValueAxisItem | js.Array[SparklineValueAxisItem] = null,
-    zoom: /* e */ SparklineZoomEvent => Unit = null,
-    zoomEnd: /* e */ SparklineZoomEndEvent => Unit = null,
-    zoomStart: /* e */ SparklineZoomStartEvent => Unit = null
-  ): SparklineOptions = {
+  def apply(): SparklineOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
-    if (axisDefaults != null) __obj.updateDynamic("axisDefaults")(axisDefaults.asInstanceOf[js.Any])
-    if (axisLabelClick != null) __obj.updateDynamic("axisLabelClick")(js.Any.fromFunction1(axisLabelClick))
-    if (categoryAxis != null) __obj.updateDynamic("categoryAxis")(categoryAxis.asInstanceOf[js.Any])
-    if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
-    if (dragEnd != null) __obj.updateDynamic("dragEnd")(js.Any.fromFunction1(dragEnd))
-    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction1(dragStart))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (paneRender != null) __obj.updateDynamic("paneRender")(js.Any.fromFunction1(paneRender))
-    if (plotArea != null) __obj.updateDynamic("plotArea")(plotArea.asInstanceOf[js.Any])
-    if (plotAreaClick != null) __obj.updateDynamic("plotAreaClick")(js.Any.fromFunction1(plotAreaClick))
-    if (plotAreaHover != null) __obj.updateDynamic("plotAreaHover")(js.Any.fromFunction1(plotAreaHover))
-    if (plotAreaLeave != null) __obj.updateDynamic("plotAreaLeave")(js.Any.fromFunction1(plotAreaLeave))
-    if (!js.isUndefined(pointWidth)) __obj.updateDynamic("pointWidth")(pointWidth.get.asInstanceOf[js.Any])
-    if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (seriesClick != null) __obj.updateDynamic("seriesClick")(js.Any.fromFunction1(seriesClick))
-    if (seriesColors != null) __obj.updateDynamic("seriesColors")(seriesColors.asInstanceOf[js.Any])
-    if (seriesDefaults != null) __obj.updateDynamic("seriesDefaults")(seriesDefaults.asInstanceOf[js.Any])
-    if (seriesHover != null) __obj.updateDynamic("seriesHover")(js.Any.fromFunction1(seriesHover))
-    if (seriesLeave != null) __obj.updateDynamic("seriesLeave")(js.Any.fromFunction1(seriesLeave))
-    if (seriesOver != null) __obj.updateDynamic("seriesOver")(js.Any.fromFunction1(seriesOver))
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (valueAxis != null) __obj.updateDynamic("valueAxis")(valueAxis.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(js.Any.fromFunction1(zoom))
-    if (zoomEnd != null) __obj.updateDynamic("zoomEnd")(js.Any.fromFunction1(zoomEnd))
-    if (zoomStart != null) __obj.updateDynamic("zoomStart")(js.Any.fromFunction1(zoomStart))
     __obj.asInstanceOf[SparklineOptions]
   }
+  @scala.inline
+  implicit class SparklineOptionsOps[Self <: SparklineOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    @scala.inline
+    def setAxisDefaults(value: js.Any): Self = this.set("axisDefaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisDefaults: Self = this.set("axisDefaults", js.undefined)
+    @scala.inline
+    def setAxisLabelClick(value: /* e */ SparklineAxisLabelClickEvent => Unit): Self = this.set("axisLabelClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAxisLabelClick: Self = this.set("axisLabelClick", js.undefined)
+    @scala.inline
+    def setCategoryAxisVarargs(value: SparklineCategoryAxisItem*): Self = this.set("categoryAxis", js.Array(value :_*))
+    @scala.inline
+    def setCategoryAxis(value: SparklineCategoryAxisItem | js.Array[SparklineCategoryAxisItem]): Self = this.set("categoryAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryAxis: Self = this.set("categoryAxis", js.undefined)
+    @scala.inline
+    def setChartArea(value: SparklineChartArea): Self = this.set("chartArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChartArea: Self = this.set("chartArea", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataBound(value: /* e */ SparklineEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDrag(value: /* e */ SparklineDragEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDrag: Self = this.set("drag", js.undefined)
+    @scala.inline
+    def setDragEnd(value: /* e */ SparklineDragEndEvent => Unit): Self = this.set("dragEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragEnd: Self = this.set("dragEnd", js.undefined)
+    @scala.inline
+    def setDragStart(value: /* e */ SparklineDragStartEvent => Unit): Self = this.set("dragStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragStart: Self = this.set("dragStart", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPaneRender(value: /* e */ SparklinePaneRenderEvent => Unit): Self = this.set("paneRender", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePaneRender: Self = this.set("paneRender", js.undefined)
+    @scala.inline
+    def setPlotArea(value: SparklinePlotArea): Self = this.set("plotArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlotArea: Self = this.set("plotArea", js.undefined)
+    @scala.inline
+    def setPlotAreaClick(value: /* e */ SparklinePlotAreaClickEvent => Unit): Self = this.set("plotAreaClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePlotAreaClick: Self = this.set("plotAreaClick", js.undefined)
+    @scala.inline
+    def setPlotAreaHover(value: /* e */ SparklinePlotAreaHoverEvent => Unit): Self = this.set("plotAreaHover", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePlotAreaHover: Self = this.set("plotAreaHover", js.undefined)
+    @scala.inline
+    def setPlotAreaLeave(value: /* e */ SparklinePlotAreaLeaveEvent => Unit): Self = this.set("plotAreaLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePlotAreaLeave: Self = this.set("plotAreaLeave", js.undefined)
+    @scala.inline
+    def setPointWidth(value: Double): Self = this.set("pointWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointWidth: Self = this.set("pointWidth", js.undefined)
+    @scala.inline
+    def setRenderAs(value: String): Self = this.set("renderAs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderAs: Self = this.set("renderAs", js.undefined)
+    @scala.inline
+    def setSeriesVarargs(value: SparklineSeriesItem*): Self = this.set("series", js.Array(value :_*))
+    @scala.inline
+    def setSeries(value: js.Array[SparklineSeriesItem]): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setSeriesClick(value: /* e */ SparklineSeriesClickEvent => Unit): Self = this.set("seriesClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSeriesClick: Self = this.set("seriesClick", js.undefined)
+    @scala.inline
+    def setSeriesColors(value: js.Any): Self = this.set("seriesColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeriesColors: Self = this.set("seriesColors", js.undefined)
+    @scala.inline
+    def setSeriesDefaults(value: SparklineSeriesDefaults): Self = this.set("seriesDefaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeriesDefaults: Self = this.set("seriesDefaults", js.undefined)
+    @scala.inline
+    def setSeriesHover(value: /* e */ SparklineSeriesHoverEvent => Unit): Self = this.set("seriesHover", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSeriesHover: Self = this.set("seriesHover", js.undefined)
+    @scala.inline
+    def setSeriesLeave(value: /* e */ SparklineSeriesLeaveEvent => Unit): Self = this.set("seriesLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSeriesLeave: Self = this.set("seriesLeave", js.undefined)
+    @scala.inline
+    def setSeriesOver(value: /* e */ SparklineSeriesOverEvent => Unit): Self = this.set("seriesOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSeriesOver: Self = this.set("seriesOver", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTooltip(value: SparklineTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTransitions(value: Boolean): Self = this.set("transitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitions: Self = this.set("transitions", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValueAxisVarargs(value: SparklineValueAxisItem*): Self = this.set("valueAxis", js.Array(value :_*))
+    @scala.inline
+    def setValueAxis(value: SparklineValueAxisItem | js.Array[SparklineValueAxisItem]): Self = this.set("valueAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueAxis: Self = this.set("valueAxis", js.undefined)
+    @scala.inline
+    def setZoom(value: /* e */ SparklineZoomEvent => Unit): Self = this.set("zoom", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+    @scala.inline
+    def setZoomEnd(value: /* e */ SparklineZoomEndEvent => Unit): Self = this.set("zoomEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomEnd: Self = this.set("zoomEnd", js.undefined)
+    @scala.inline
+    def setZoomStart(value: /* e */ SparklineZoomStartEvent => Unit): Self = this.set("zoomStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomStart: Self = this.set("zoomStart", js.undefined)
+  }
+  
 }
 

@@ -23,6 +23,7 @@ trait Timespan extends js.Object {
   var weeks: js.UndefOr[Double] = js.native
   var years: js.UndefOr[Double] = js.native
   def toHTML(): String = js.native
+  def toHTML(tagName: js.UndefOr[scala.Nothing], label: String): String = js.native
   def toHTML(tagName: String): String = js.native
   def toHTML(tagName: String, label: String): String = js.native
   def toString(label: String): String = js.native

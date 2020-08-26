@@ -4,95 +4,140 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooltipText extends js.Object {
   /** Sets the tooltip text for the add button.
     */
-  var addButton: js.UndefOr[String] = js.undefined
+  var addButton: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the basic preset.
     */
-  var basic: js.UndefOr[String] = js.undefined
+  var basic: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the candy crush preset.
     */
-  var candyCrush: js.UndefOr[String] = js.undefined
+  var candyCrush: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the citrus preset.
     */
-  var citrus: js.UndefOr[String] = js.undefined
+  var citrus: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the current color area.
     */
-  var currentColor: js.UndefOr[String] = js.undefined
+  var currentColor: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the flat colors preset.
     */
-  var flatColors: js.UndefOr[String] = js.undefined
+  var flatColors: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the misty preset.
     */
-  var misty: js.UndefOr[String] = js.undefined
+  var misty: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the mono chrome preset.
     */
-  var monoChrome: js.UndefOr[String] = js.undefined
+  var monoChrome: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the moon light preset.
     */
-  var moonLight: js.UndefOr[String] = js.undefined
+  var moonLight: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the pink shades preset.
     */
-  var pinkShades: js.UndefOr[String] = js.undefined
+  var pinkShades: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the sandy preset.
     */
-  var sandy: js.UndefOr[String] = js.undefined
+  var sandy: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the sea wolf preset.
     */
-  var seaWolf: js.UndefOr[String] = js.undefined
+  var seaWolf: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the selected color area.
     */
-  var selectedColor: js.UndefOr[String] = js.undefined
+  var selectedColor: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the switcher button.
     */
-  var switcher: js.UndefOr[String] = js.undefined
+  var switcher: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the vintage preset.
     */
-  var vintage: js.UndefOr[String] = js.undefined
+  var vintage: js.UndefOr[String] = js.native
   /** Sets the tooltip text for the web colors preset.
     */
-  var webColors: js.UndefOr[String] = js.undefined
+  var webColors: js.UndefOr[String] = js.native
 }
 
 object TooltipText {
   @scala.inline
-  def apply(
-    addButton: String = null,
-    basic: String = null,
-    candyCrush: String = null,
-    citrus: String = null,
-    currentColor: String = null,
-    flatColors: String = null,
-    misty: String = null,
-    monoChrome: String = null,
-    moonLight: String = null,
-    pinkShades: String = null,
-    sandy: String = null,
-    seaWolf: String = null,
-    selectedColor: String = null,
-    switcher: String = null,
-    vintage: String = null,
-    webColors: String = null
-  ): TooltipText = {
+  def apply(): TooltipText = {
     val __obj = js.Dynamic.literal()
-    if (addButton != null) __obj.updateDynamic("addButton")(addButton.asInstanceOf[js.Any])
-    if (basic != null) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
-    if (candyCrush != null) __obj.updateDynamic("candyCrush")(candyCrush.asInstanceOf[js.Any])
-    if (citrus != null) __obj.updateDynamic("citrus")(citrus.asInstanceOf[js.Any])
-    if (currentColor != null) __obj.updateDynamic("currentColor")(currentColor.asInstanceOf[js.Any])
-    if (flatColors != null) __obj.updateDynamic("flatColors")(flatColors.asInstanceOf[js.Any])
-    if (misty != null) __obj.updateDynamic("misty")(misty.asInstanceOf[js.Any])
-    if (monoChrome != null) __obj.updateDynamic("monoChrome")(monoChrome.asInstanceOf[js.Any])
-    if (moonLight != null) __obj.updateDynamic("moonLight")(moonLight.asInstanceOf[js.Any])
-    if (pinkShades != null) __obj.updateDynamic("pinkShades")(pinkShades.asInstanceOf[js.Any])
-    if (sandy != null) __obj.updateDynamic("sandy")(sandy.asInstanceOf[js.Any])
-    if (seaWolf != null) __obj.updateDynamic("seaWolf")(seaWolf.asInstanceOf[js.Any])
-    if (selectedColor != null) __obj.updateDynamic("selectedColor")(selectedColor.asInstanceOf[js.Any])
-    if (switcher != null) __obj.updateDynamic("switcher")(switcher.asInstanceOf[js.Any])
-    if (vintage != null) __obj.updateDynamic("vintage")(vintage.asInstanceOf[js.Any])
-    if (webColors != null) __obj.updateDynamic("webColors")(webColors.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipText]
   }
+  @scala.inline
+  implicit class TooltipTextOps[Self <: TooltipText] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddButton(value: String): Self = this.set("addButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddButton: Self = this.set("addButton", js.undefined)
+    @scala.inline
+    def setBasic(value: String): Self = this.set("basic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasic: Self = this.set("basic", js.undefined)
+    @scala.inline
+    def setCandyCrush(value: String): Self = this.set("candyCrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCandyCrush: Self = this.set("candyCrush", js.undefined)
+    @scala.inline
+    def setCitrus(value: String): Self = this.set("citrus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCitrus: Self = this.set("citrus", js.undefined)
+    @scala.inline
+    def setCurrentColor(value: String): Self = this.set("currentColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentColor: Self = this.set("currentColor", js.undefined)
+    @scala.inline
+    def setFlatColors(value: String): Self = this.set("flatColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlatColors: Self = this.set("flatColors", js.undefined)
+    @scala.inline
+    def setMisty(value: String): Self = this.set("misty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMisty: Self = this.set("misty", js.undefined)
+    @scala.inline
+    def setMonoChrome(value: String): Self = this.set("monoChrome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonoChrome: Self = this.set("monoChrome", js.undefined)
+    @scala.inline
+    def setMoonLight(value: String): Self = this.set("moonLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoonLight: Self = this.set("moonLight", js.undefined)
+    @scala.inline
+    def setPinkShades(value: String): Self = this.set("pinkShades", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinkShades: Self = this.set("pinkShades", js.undefined)
+    @scala.inline
+    def setSandy(value: String): Self = this.set("sandy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSandy: Self = this.set("sandy", js.undefined)
+    @scala.inline
+    def setSeaWolf(value: String): Self = this.set("seaWolf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeaWolf: Self = this.set("seaWolf", js.undefined)
+    @scala.inline
+    def setSelectedColor(value: String): Self = this.set("selectedColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedColor: Self = this.set("selectedColor", js.undefined)
+    @scala.inline
+    def setSwitcher(value: String): Self = this.set("switcher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwitcher: Self = this.set("switcher", js.undefined)
+    @scala.inline
+    def setVintage(value: String): Self = this.set("vintage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVintage: Self = this.set("vintage", js.undefined)
+    @scala.inline
+    def setWebColors(value: String): Self = this.set("webColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebColors: Self = this.set("webColors", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class AsyncHost () extends HostBase {
   def this(hasReadFileWriteFileBaseOptions: AsyncHostOptions) = this()
-  var readFileCallback: js.UndefOr[js.Any] = js.native
-  var writeFileCallback: js.UndefOr[js.Any] = js.native
+  var readFileCallback: js.Any = js.native
+  var writeFileCallback: js.Any = js.native
   def getSourceFile(file: String): js.Promise[js.UndefOr[SourceFile]] = js.native
   def getSourceFile(file: String, cancelable: Cancelable): js.Promise[js.UndefOr[SourceFile]] = js.native
   def getSourceFile(file: String, cancelable: CancellationToken): js.Promise[js.UndefOr[SourceFile]] = js.native
@@ -29,6 +29,7 @@ class AsyncHost () extends HostBase {
 @js.native
 object AsyncHost extends js.Object {
   def forFile(content: String): AsyncSingleFileHost = js.native
+  def forFile(content: String, file: js.UndefOr[scala.Nothing], hostFallback: AsyncHost): AsyncSingleFileHost = js.native
   def forFile(content: String, file: String): AsyncSingleFileHost = js.native
   def forFile(content: String, file: String, hostFallback: AsyncHost): AsyncSingleFileHost = js.native
 }

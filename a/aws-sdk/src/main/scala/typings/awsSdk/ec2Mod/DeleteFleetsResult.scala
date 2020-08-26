@@ -18,14 +18,34 @@ trait DeleteFleetsResult extends js.Object {
 
 object DeleteFleetsResult {
   @scala.inline
-  def apply(
-    SuccessfulFleetDeletions: DeleteFleetSuccessSet = null,
-    UnsuccessfulFleetDeletions: DeleteFleetErrorSet = null
-  ): DeleteFleetsResult = {
+  def apply(): DeleteFleetsResult = {
     val __obj = js.Dynamic.literal()
-    if (SuccessfulFleetDeletions != null) __obj.updateDynamic("SuccessfulFleetDeletions")(SuccessfulFleetDeletions.asInstanceOf[js.Any])
-    if (UnsuccessfulFleetDeletions != null) __obj.updateDynamic("UnsuccessfulFleetDeletions")(UnsuccessfulFleetDeletions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFleetsResult]
   }
+  @scala.inline
+  implicit class DeleteFleetsResultOps[Self <: DeleteFleetsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSuccessfulFleetDeletionsVarargs(value: DeleteFleetSuccessItem*): Self = this.set("SuccessfulFleetDeletions", js.Array(value :_*))
+    @scala.inline
+    def setSuccessfulFleetDeletions(value: DeleteFleetSuccessSet): Self = this.set("SuccessfulFleetDeletions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessfulFleetDeletions: Self = this.set("SuccessfulFleetDeletions", js.undefined)
+    @scala.inline
+    def setUnsuccessfulFleetDeletionsVarargs(value: DeleteFleetErrorItem*): Self = this.set("UnsuccessfulFleetDeletions", js.Array(value :_*))
+    @scala.inline
+    def setUnsuccessfulFleetDeletions(value: DeleteFleetErrorSet): Self = this.set("UnsuccessfulFleetDeletions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsuccessfulFleetDeletions: Self = this.set("UnsuccessfulFleetDeletions", js.undefined)
+  }
+  
 }
 

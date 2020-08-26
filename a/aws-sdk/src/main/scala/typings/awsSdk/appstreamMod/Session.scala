@@ -50,25 +50,52 @@ trait Session extends js.Object {
 
 object Session {
   @scala.inline
-  def apply(
-    FleetName: String,
-    Id: String,
-    StackName: String,
-    State: SessionState,
-    UserId: UserId,
-    AuthenticationType: AuthenticationType = null,
-    ConnectionState: SessionConnectionState = null,
-    MaxExpirationTime: Timestamp = null,
-    NetworkAccessConfiguration: NetworkAccessConfiguration = null,
-    StartTime: Timestamp = null
-  ): Session = {
+  def apply(FleetName: String, Id: String, StackName: String, State: SessionState, UserId: UserId): Session = {
     val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
-    if (AuthenticationType != null) __obj.updateDynamic("AuthenticationType")(AuthenticationType.asInstanceOf[js.Any])
-    if (ConnectionState != null) __obj.updateDynamic("ConnectionState")(ConnectionState.asInstanceOf[js.Any])
-    if (MaxExpirationTime != null) __obj.updateDynamic("MaxExpirationTime")(MaxExpirationTime.asInstanceOf[js.Any])
-    if (NetworkAccessConfiguration != null) __obj.updateDynamic("NetworkAccessConfiguration")(NetworkAccessConfiguration.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
+  @scala.inline
+  implicit class SessionOps[Self <: Session] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetName(value: String): Self = this.set("FleetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackName(value: String): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: SessionState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserId(value: UserId): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationType(value: AuthenticationType): Self = this.set("AuthenticationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationType: Self = this.set("AuthenticationType", js.undefined)
+    @scala.inline
+    def setConnectionState(value: SessionConnectionState): Self = this.set("ConnectionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionState: Self = this.set("ConnectionState", js.undefined)
+    @scala.inline
+    def setMaxExpirationTime(value: Timestamp): Self = this.set("MaxExpirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxExpirationTime: Self = this.set("MaxExpirationTime", js.undefined)
+    @scala.inline
+    def setNetworkAccessConfiguration(value: NetworkAccessConfiguration): Self = this.set("NetworkAccessConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkAccessConfiguration: Self = this.set("NetworkAccessConfiguration", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+  }
+  
 }
 

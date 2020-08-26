@@ -10,9 +10,9 @@ A lightweight library that provides tools for organizing asynchronous code
 | ------------------ | :-------------: |
 | Full name          | es6-promise |
 | Keywords           | futures, polyfill, promise, promises |
-| # releases         | 10 |
-| # dependents       | 3290 |
-| # downloads        | 413659344 |
+| # releases         | 7 |
+| # dependents       | 3352 |
+| # downloads        | 431994246 |
 | # stars            | 91 |
 
 ## Links

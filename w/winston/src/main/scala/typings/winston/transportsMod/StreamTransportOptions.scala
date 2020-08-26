@@ -1,40 +1,41 @@
 package typings.winston.transportsMod
 
-import typings.logform.mod.Format_
 import typings.node.NodeJS.WritableStream
 import typings.winstonTransport.mod.TransportStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StreamTransportOptions extends TransportStreamOptions {
-  var eol: js.UndefOr[String] = js.undefined
-  var stream: WritableStream
+  var eol: js.UndefOr[String] = js.native
+  var stream: WritableStream = js.native
 }
 
 object StreamTransportOptions {
   @scala.inline
-  def apply(
-    stream: WritableStream,
-    close: () => Unit = null,
-    eol: String = null,
-    format: Format_ = null,
-    handleExceptions: js.UndefOr[Boolean] = js.undefined,
-    level: String = null,
-    log: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _ = null,
-    logv: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _ = null,
-    silent: js.UndefOr[Boolean] = js.undefined
-  ): StreamTransportOptions = {
+  def apply(stream: WritableStream): StreamTransportOptions = {
     val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
-    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleExceptions)) __obj.updateDynamic("handleExceptions")(handleExceptions.get.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
-    if (logv != null) __obj.updateDynamic("logv")(js.Any.fromFunction2(logv))
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamTransportOptions]
   }
+  @scala.inline
+  implicit class StreamTransportOptionsOps[Self <: StreamTransportOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStream(value: WritableStream): Self = this.set("stream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEol(value: String): Self = this.set("eol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEol: Self = this.set("eol", js.undefined)
+  }
+  
 }
 

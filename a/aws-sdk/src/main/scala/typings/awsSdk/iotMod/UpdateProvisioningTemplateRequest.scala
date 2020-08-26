@@ -38,23 +38,48 @@ trait UpdateProvisioningTemplateRequest extends js.Object {
 
 object UpdateProvisioningTemplateRequest {
   @scala.inline
-  def apply(
-    templateName: TemplateName,
-    defaultVersionId: js.UndefOr[TemplateVersionId] = js.undefined,
-    description: TemplateDescription = null,
-    enabled: js.UndefOr[Enabled] = js.undefined,
-    preProvisioningHook: ProvisioningHook = null,
-    provisioningRoleArn: RoleArn = null,
-    removePreProvisioningHook: js.UndefOr[RemoveHook] = js.undefined
-  ): UpdateProvisioningTemplateRequest = {
+  def apply(templateName: TemplateName): UpdateProvisioningTemplateRequest = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultVersionId)) __obj.updateDynamic("defaultVersionId")(defaultVersionId.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (preProvisioningHook != null) __obj.updateDynamic("preProvisioningHook")(preProvisioningHook.asInstanceOf[js.Any])
-    if (provisioningRoleArn != null) __obj.updateDynamic("provisioningRoleArn")(provisioningRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(removePreProvisioningHook)) __obj.updateDynamic("removePreProvisioningHook")(removePreProvisioningHook.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProvisioningTemplateRequest]
   }
+  @scala.inline
+  implicit class UpdateProvisioningTemplateRequestOps[Self <: UpdateProvisioningTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTemplateName(value: TemplateName): Self = this.set("templateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultVersionId(value: TemplateVersionId): Self = this.set("defaultVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultVersionId: Self = this.set("defaultVersionId", js.undefined)
+    @scala.inline
+    def setDescription(value: TemplateDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnabled(value: Enabled): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setPreProvisioningHook(value: ProvisioningHook): Self = this.set("preProvisioningHook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreProvisioningHook: Self = this.set("preProvisioningHook", js.undefined)
+    @scala.inline
+    def setProvisioningRoleArn(value: RoleArn): Self = this.set("provisioningRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisioningRoleArn: Self = this.set("provisioningRoleArn", js.undefined)
+    @scala.inline
+    def setRemovePreProvisioningHook(value: RemoveHook): Self = this.set("removePreProvisioningHook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemovePreProvisioningHook: Self = this.set("removePreProvisioningHook", js.undefined)
+  }
+  
 }
 

@@ -7,41 +7,40 @@ import scala.scalajs.js.annotation._
 /**
   * Operation Request or Response
   */
+@js.native
 trait Parameters
   extends ResourceBase
      with Resource {
   /**
     * Operation Parameter
     */
-  var parameter: js.UndefOr[js.Array[ParametersParameter]] = js.undefined
+  var parameter: js.UndefOr[js.Array[ParametersParameter]] = js.native
 }
 
 object Parameters {
   @scala.inline
-  def apply(
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    id: id = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    parameter: js.Array[ParametersParameter] = null,
-    resourceType: code = null
-  ): Parameters = {
+  def apply(): Parameters = {
     val __obj = js.Dynamic.literal()
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameters]
   }
+  @scala.inline
+  implicit class ParametersOps[Self <: Parameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParameterVarargs(value: ParametersParameter*): Self = this.set("parameter", js.Array(value :_*))
+    @scala.inline
+    def setParameter(value: js.Array[ParametersParameter]): Self = this.set("parameter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameter: Self = this.set("parameter", js.undefined)
+  }
+  
 }
 

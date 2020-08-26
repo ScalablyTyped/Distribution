@@ -1,7 +1,7 @@
 
 # Scala.js typings for serialize-javascript
 
-Typings are for version 1.5
+Typings are for version 4.0
 
 ## Library description:
 Serialize JavaScript to a superset of JSON that includes regular expressions and functions.

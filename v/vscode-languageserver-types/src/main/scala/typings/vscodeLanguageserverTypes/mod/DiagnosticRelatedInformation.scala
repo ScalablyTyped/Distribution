@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DiagnosticRelatedInformation extends js.Object {
   /**
     * The location of this related diagnostic information.
     */
-  var location: Location
+  var location: Location = js.native
   /**
     * The message of this related diagnostic information.
     */
-  var message: String
+  var message: String = js.native
 }
 
 @JSImport("vscode-languageserver-types", "DiagnosticRelatedInformation")

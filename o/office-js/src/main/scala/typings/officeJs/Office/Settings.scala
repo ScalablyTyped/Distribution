@@ -70,6 +70,12 @@ trait Settings extends js.Object {
     handler: js.Any,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
@@ -170,6 +176,11 @@ trait Settings extends js.Object {
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
   def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeHandlerAsync(
+    eventType: EventType,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: RemoveHandlerOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
@@ -220,6 +231,7 @@ trait Settings extends js.Object {
     */
   def saveAsync(): Unit = js.native
   def saveAsync(callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def saveAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def saveAsync(options: SaveSettingsOptions): Unit = js.native
   def saveAsync(options: SaveSettingsOptions, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   /**

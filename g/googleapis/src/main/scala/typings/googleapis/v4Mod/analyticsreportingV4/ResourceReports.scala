@@ -27,6 +27,7 @@ class ResourceReports protected () extends js.Object {
     */
   def batchGet(): GaxiosPromise[SchemaGetReportsResponse] = js.native
   def batchGet(callback: BodyResponseCallback[SchemaGetReportsResponse]): Unit = js.native
+  def batchGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetReportsResponse] = js.native
   def batchGet(params: ParamsResourceReportsBatchget): GaxiosPromise[SchemaGetReportsResponse] = js.native
   def batchGet(params: ParamsResourceReportsBatchget, callback: BodyResponseCallback[SchemaGetReportsResponse]): Unit = js.native
   def batchGet(

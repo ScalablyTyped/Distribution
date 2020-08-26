@@ -35,6 +35,12 @@ trait Contacts extends js.Object {
   def find(
     fields: js.Array[String],
     onSuccess: js.Function1[/* contacts */ js.Array[Contact], Unit],
+    onError: js.UndefOr[scala.Nothing],
+    options: ContactFindOptions
+  ): Unit = js.native
+  def find(
+    fields: js.Array[String],
+    onSuccess: js.Function1[/* contacts */ js.Array[Contact], Unit],
     onError: js.Function1[/* error */ ContactError, Unit]
   ): Unit = js.native
   def find(

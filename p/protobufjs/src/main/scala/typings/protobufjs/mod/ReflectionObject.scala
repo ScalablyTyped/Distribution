@@ -20,6 +20,8 @@ abstract class ReflectionObject () extends js.Object {
   var options: js.UndefOr[StringDictionary[js.Any]] = js.native
   /** Parent namespace. */
   var parent: Namespace | Null = js.native
+  /** Parsed Options. */
+  var parsedOptions: js.UndefOr[StringDictionary[js.Array[_]]] = js.native
   /** Whether already resolved or not. */
   var resolved: Boolean = js.native
   /** Reference to the root namespace. */
@@ -62,6 +64,14 @@ abstract class ReflectionObject () extends js.Object {
     */
   def setOptions(options: StringDictionary[js.Any]): ReflectionObject = js.native
   def setOptions(options: StringDictionary[js.Any], ifNotSet: Boolean): ReflectionObject = js.native
+  /**
+    * Sets a parsed option.
+    * @param name parsed Option name
+    * @param value Option value
+    * @param propName dot '.' delimited full path of property within the option to set. if undefined\empty, will add a new option with that value
+    * @returns `this`
+    */
+  def setParsedOption(name: String, value: js.Any, propName: String): ReflectionObject = js.native
   /**
     * Converts this reflection object to its descriptor representation.
     * @returns Descriptor

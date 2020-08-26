@@ -1133,10 +1133,15 @@ trait ojSparkChartItem extends JetElement[ojSparkChartItemSettableProperties] {
   def setProperties(properties: ojSparkChartItemSettablePropertiesLenient): Unit = js.native
   def setProperty(property: markerDisplayed, value: off): Unit = js.native
   def setProperty(property: markerDisplayed, value: on): Unit = js.native
-  def setProperty(
-    property: markerShape,
-    value: auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
-  ): Unit = js.native
+  def setProperty(property: markerShape, value: auto): Unit = js.native
+  def setProperty(property: markerShape, value: circle): Unit = js.native
+  def setProperty(property: markerShape, value: diamond): Unit = js.native
+  def setProperty(property: markerShape, value: human): Unit = js.native
+  def setProperty(property: markerShape, value: plus): Unit = js.native
+  def setProperty(property: markerShape, value: square): Unit = js.native
+  def setProperty(property: markerShape, value: star): Unit = js.native
+  def setProperty(property: markerShape, value: triangleDown): Unit = js.native
+  def setProperty(property: markerShape, value: triangleUp): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojSparkChartItemSettableProperties]): Unit = js.native
   @JSName("setProperty")
   def setProperty_borderColor(property: borderColor, value: String): Unit = js.native
@@ -1152,6 +1157,10 @@ trait ojSparkChartItem extends JetElement[ojSparkChartItemSettableProperties] {
   def setProperty_low(property: low): Unit = js.native
   @JSName("setProperty")
   def setProperty_low(property: low, value: Double): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_markerShape(property: markerShape): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_markerShape(property: markerShape, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_markerSize(property: markerSize, value: Double): Unit = js.native
   @JSName("setProperty")

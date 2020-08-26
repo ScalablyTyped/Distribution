@@ -9,20 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "Collapsible")
 @js.native
 class Collapsible ()
-  extends typings.materializeCss.M.Collapsible {
-  /**
-    * Close collapsible section
-    * @param n Nth section to close
-    */
-  /* CompleteClass */
-  override def close(n: Double): Unit = js.native
-  /**
-    * Open collapsible section
-    * @param n Nth section to open
-    */
-  /* CompleteClass */
-  override def open(n: Double): Unit = js.native
-}
+  extends typings.materializeCss.M.Collapsible
 
 /* static members */
 @JSImport("materialize-css", "Collapsible")

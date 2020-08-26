@@ -62,8 +62,49 @@ trait Point extends js.Object {
   def Select(): js.Any = js.native
   /** @param Type [Type=2] */
   def _ApplyDataLabels(): js.Any = js.native
+  def _ApplyDataLabels(
+    Type: js.UndefOr[scala.Nothing],
+    LegendKey: js.UndefOr[scala.Nothing],
+    AutoText: js.UndefOr[scala.Nothing],
+    HasLeaderLines: js.Any
+  ): js.Any = js.native
+  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.UndefOr[scala.Nothing], AutoText: js.Any): js.Any = js.native
+  def _ApplyDataLabels(
+    Type: js.UndefOr[scala.Nothing],
+    LegendKey: js.UndefOr[scala.Nothing],
+    AutoText: js.Any,
+    HasLeaderLines: js.Any
+  ): js.Any = js.native
+  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any): js.Any = js.native
+  def _ApplyDataLabels(
+    Type: js.UndefOr[scala.Nothing],
+    LegendKey: js.Any,
+    AutoText: js.UndefOr[scala.Nothing],
+    HasLeaderLines: js.Any
+  ): js.Any = js.native
+  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType): js.Any = js.native
+  def _ApplyDataLabels(
+    Type: XlDataLabelsType,
+    LegendKey: js.UndefOr[scala.Nothing],
+    AutoText: js.UndefOr[scala.Nothing],
+    HasLeaderLines: js.Any
+  ): js.Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.UndefOr[scala.Nothing], AutoText: js.Any): js.Any = js.native
+  def _ApplyDataLabels(
+    Type: XlDataLabelsType,
+    LegendKey: js.UndefOr[scala.Nothing],
+    AutoText: js.Any,
+    HasLeaderLines: js.Any
+  ): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any): js.Any = js.native
+  def _ApplyDataLabels(
+    Type: XlDataLabelsType,
+    LegendKey: js.Any,
+    AutoText: js.UndefOr[scala.Nothing],
+    HasLeaderLines: js.Any
+  ): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
 }

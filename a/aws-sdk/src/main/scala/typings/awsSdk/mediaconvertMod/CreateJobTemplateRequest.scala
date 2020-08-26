@@ -50,28 +50,60 @@ trait CreateJobTemplateRequest extends js.Object {
 
 object CreateJobTemplateRequest {
   @scala.inline
-  def apply(
-    Name: string,
-    Settings: JobTemplateSettings,
-    AccelerationSettings: AccelerationSettings = null,
-    Category: string = null,
-    Description: string = null,
-    HopDestinations: listOfHopDestination = null,
-    Priority: js.UndefOr[integerMinNegative50Max50] = js.undefined,
-    Queue: string = null,
-    StatusUpdateInterval: StatusUpdateInterval = null,
-    Tags: mapOfString = null
-  ): CreateJobTemplateRequest = {
+  def apply(Name: string, Settings: JobTemplateSettings): CreateJobTemplateRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any])
-    if (AccelerationSettings != null) __obj.updateDynamic("AccelerationSettings")(AccelerationSettings.asInstanceOf[js.Any])
-    if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (HopDestinations != null) __obj.updateDynamic("HopDestinations")(HopDestinations.asInstanceOf[js.Any])
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
-    if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
-    if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobTemplateRequest]
   }
+  @scala.inline
+  implicit class CreateJobTemplateRequestOps[Self <: CreateJobTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSettings(value: JobTemplateSettings): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccelerationSettings(value: AccelerationSettings): Self = this.set("AccelerationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerationSettings: Self = this.set("AccelerationSettings", js.undefined)
+    @scala.inline
+    def setCategory(value: string): Self = this.set("Category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("Category", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setHopDestinationsVarargs(value: HopDestination*): Self = this.set("HopDestinations", js.Array(value :_*))
+    @scala.inline
+    def setHopDestinations(value: listOfHopDestination): Self = this.set("HopDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHopDestinations: Self = this.set("HopDestinations", js.undefined)
+    @scala.inline
+    def setPriority(value: integerMinNegative50Max50): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("Priority", js.undefined)
+    @scala.inline
+    def setQueue(value: string): Self = this.set("Queue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueue: Self = this.set("Queue", js.undefined)
+    @scala.inline
+    def setStatusUpdateInterval(value: StatusUpdateInterval): Self = this.set("StatusUpdateInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusUpdateInterval: Self = this.set("StatusUpdateInterval", js.undefined)
+    @scala.inline
+    def setTags(value: mapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

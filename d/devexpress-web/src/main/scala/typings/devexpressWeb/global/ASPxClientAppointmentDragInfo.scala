@@ -26,30 +26,5 @@ class ASPxClientAppointmentDragInfo protected ()
     newInterval: typings.devexpressWeb.ASPxClientTimeInterval,
     newResources: js.Array[String]
   ) = this()
-  /**
-    * Gets the dragged appointment's identifier.
-    */
-  /* CompleteClass */
-  override var appointmentId: String = js.native
-  /**
-    * Gets the appointment's interval after the drag operation.
-    */
-  /* CompleteClass */
-  override var newInterval: typings.devexpressWeb.ASPxClientTimeInterval = js.native
-  /**
-    * Gets resources associated with the appointment after the drag operation.
-    */
-  /* CompleteClass */
-  override var newResources: js.Array[String] = js.native
-  /**
-    * Gets the appointment's interval before the drag operation.
-    */
-  /* CompleteClass */
-  override var oldInterval: typings.devexpressWeb.ASPxClientTimeInterval = js.native
-  /**
-    * Gets resources that were associated with the appointment before the drag operation.
-    */
-  /* CompleteClass */
-  override var oldResources: js.Array[String] = js.native
 }
 

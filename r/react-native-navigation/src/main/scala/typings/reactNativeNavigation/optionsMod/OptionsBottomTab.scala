@@ -6,133 +6,193 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OptionsBottomTab extends js.Object {
+  /**
+    * Show the badge with the animation.
+    * #### (Android specific)
+    */
+  var animateBadge: js.UndefOr[Boolean] = js.native
   /**
     * Set the text in a badge that is overlayed over the component
     */
-  var badge: js.UndefOr[String] = js.undefined
+  var badge: js.UndefOr[String] = js.native
   /**
     * Set the background color of the badge that is overlayed over the component
     */
-  var badgeColor: js.UndefOr[String] = js.undefined
+  var badgeColor: js.UndefOr[String] = js.native
   /**
     * Set true if you want to disable the icon tinting
     * #### (iOS specific)
     */
-  var disableIconTint: js.UndefOr[Boolean] = js.undefined
+  var disableIconTint: js.UndefOr[Boolean] = js.native
   /**
     * Set true if you want to disable the text tinting
     * #### (iOS specific)
     */
-  var disableSelectedIconTint: js.UndefOr[Boolean] = js.undefined
-  var dotIndicator: js.UndefOr[DotIndicatorOptions] = js.undefined
+  var disableSelectedIconTint: js.UndefOr[Boolean] = js.native
+  var dotIndicator: js.UndefOr[DotIndicatorOptions] = js.native
   /**
     * Set the text font family
     */
-  var fontFamily: js.UndefOr[FontFamily] = js.undefined
+  var fontFamily: js.UndefOr[FontFamily] = js.native
   /**
     * Set the text font size
     */
-  var fontSize: js.UndefOr[Double] = js.undefined
+  var fontSize: js.UndefOr[Double] = js.native
   /**
     * Set the font weight, ignore fontFamily and use the iOS system fonts instead
     * #### (iOS specific)
     */
-  var fontWeight: js.UndefOr[FontWeight] = js.undefined
+  var fontWeight: js.UndefOr[FontWeight] = js.native
   /**
     * Set the tab icon
     */
-  var icon: js.UndefOr[ImageRequireSource | ImageResource] = js.undefined
+  var icon: js.UndefOr[ImageRequireSource | ImageResource] = js.native
   /**
     * Set the icon tint
     */
-  var iconColor: js.UndefOr[Color] = js.undefined
+  var iconColor: js.UndefOr[Color] = js.native
   /**
     * Set the insets of the icon
     * #### (iOS specific)
     */
-  var iconInsets: js.UndefOr[Insets] = js.undefined
+  var iconInsets: js.UndefOr[Insets] = js.native
   /**
     * If it's set to false, pressing a tab won't select the tab
     * instead it will emit a bottomTabPressedEvent
     */
-  var selectTabOnPress: js.UndefOr[Boolean] = js.undefined
+  var selectTabOnPress: js.UndefOr[Boolean] = js.native
   /**
     * Set the font size for selected tabs
     * #### (Android specific)
     */
-  var selectedFontSize: js.UndefOr[Double] = js.undefined
+  var selectedFontSize: js.UndefOr[Double] = js.native
   /**
     * Set selected icon image
     * #### (iOS specific)
     */
-  var selectedIcon: js.UndefOr[ImageRequireSource] = js.undefined
+  var selectedIcon: js.UndefOr[ImageRequireSource] = js.native
   /**
     * Set the selected icon tint
     */
-  var selectedIconColor: js.UndefOr[Color] = js.undefined
+  var selectedIconColor: js.UndefOr[Color] = js.native
   /**
     * Set the selected text color
     */
-  var selectedTextColor: js.UndefOr[Color] = js.undefined
+  var selectedTextColor: js.UndefOr[Color] = js.native
   /**
     * Set a testID to reference the tab in E2E tests
     */
-  var testID: js.UndefOr[String] = js.undefined
+  var testID: js.UndefOr[String] = js.native
   /**
     * Set the text to display below the icon
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /**
     * Set the text color
     */
-  var textColor: js.UndefOr[Color] = js.undefined
+  var textColor: js.UndefOr[Color] = js.native
 }
 
 object OptionsBottomTab {
   @scala.inline
-  def apply(
-    badge: String = null,
-    badgeColor: String = null,
-    disableIconTint: js.UndefOr[Boolean] = js.undefined,
-    disableSelectedIconTint: js.UndefOr[Boolean] = js.undefined,
-    dotIndicator: DotIndicatorOptions = null,
-    fontFamily: FontFamily = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    fontWeight: FontWeight = null,
-    icon: ImageRequireSource | ImageResource = null,
-    iconColor: Color = null,
-    iconInsets: Insets = null,
-    selectTabOnPress: js.UndefOr[Boolean] = js.undefined,
-    selectedFontSize: js.UndefOr[Double] = js.undefined,
-    selectedIcon: js.UndefOr[ImageRequireSource] = js.undefined,
-    selectedIconColor: Color = null,
-    selectedTextColor: Color = null,
-    testID: String = null,
-    text: String = null,
-    textColor: Color = null
-  ): OptionsBottomTab = {
+  def apply(): OptionsBottomTab = {
     val __obj = js.Dynamic.literal()
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableIconTint)) __obj.updateDynamic("disableIconTint")(disableIconTint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSelectedIconTint)) __obj.updateDynamic("disableSelectedIconTint")(disableSelectedIconTint.get.asInstanceOf[js.Any])
-    if (dotIndicator != null) __obj.updateDynamic("dotIndicator")(dotIndicator.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
-    if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectTabOnPress)) __obj.updateDynamic("selectTabOnPress")(selectTabOnPress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectedFontSize)) __obj.updateDynamic("selectedFontSize")(selectedFontSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectedIcon)) __obj.updateDynamic("selectedIcon")(selectedIcon.get.asInstanceOf[js.Any])
-    if (selectedIconColor != null) __obj.updateDynamic("selectedIconColor")(selectedIconColor.asInstanceOf[js.Any])
-    if (selectedTextColor != null) __obj.updateDynamic("selectedTextColor")(selectedTextColor.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsBottomTab]
   }
+  @scala.inline
+  implicit class OptionsBottomTabOps[Self <: OptionsBottomTab] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimateBadge(value: Boolean): Self = this.set("animateBadge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimateBadge: Self = this.set("animateBadge", js.undefined)
+    @scala.inline
+    def setBadge(value: String): Self = this.set("badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadge: Self = this.set("badge", js.undefined)
+    @scala.inline
+    def setBadgeColor(value: String): Self = this.set("badgeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadgeColor: Self = this.set("badgeColor", js.undefined)
+    @scala.inline
+    def setDisableIconTint(value: Boolean): Self = this.set("disableIconTint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableIconTint: Self = this.set("disableIconTint", js.undefined)
+    @scala.inline
+    def setDisableSelectedIconTint(value: Boolean): Self = this.set("disableSelectedIconTint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableSelectedIconTint: Self = this.set("disableSelectedIconTint", js.undefined)
+    @scala.inline
+    def setDotIndicator(value: DotIndicatorOptions): Self = this.set("dotIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotIndicator: Self = this.set("dotIndicator", js.undefined)
+    @scala.inline
+    def setFontFamily(value: FontFamily): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontWeight(value: FontWeight): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setIcon(value: ImageRequireSource | ImageResource): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconColor(value: Color): Self = this.set("iconColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconColor: Self = this.set("iconColor", js.undefined)
+    @scala.inline
+    def setIconInsets(value: Insets): Self = this.set("iconInsets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconInsets: Self = this.set("iconInsets", js.undefined)
+    @scala.inline
+    def setSelectTabOnPress(value: Boolean): Self = this.set("selectTabOnPress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectTabOnPress: Self = this.set("selectTabOnPress", js.undefined)
+    @scala.inline
+    def setSelectedFontSize(value: Double): Self = this.set("selectedFontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedFontSize: Self = this.set("selectedFontSize", js.undefined)
+    @scala.inline
+    def setSelectedIcon(value: ImageRequireSource): Self = this.set("selectedIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedIcon: Self = this.set("selectedIcon", js.undefined)
+    @scala.inline
+    def setSelectedIconColor(value: Color): Self = this.set("selectedIconColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedIconColor: Self = this.set("selectedIconColor", js.undefined)
+    @scala.inline
+    def setSelectedTextColor(value: Color): Self = this.set("selectedTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedTextColor: Self = this.set("selectedTextColor", js.undefined)
+    @scala.inline
+    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestID: Self = this.set("testID", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextColor(value: Color): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextColor: Self = this.set("textColor", js.undefined)
+  }
+  
 }
 

@@ -33,6 +33,7 @@ object mod extends js.Object {
   class default protected () extends Hashids {
     def this(salt: String) = this()
     def this(salt: String, minHashLength: Double) = this()
+    def this(salt: String, minHashLength: js.UndefOr[scala.Nothing], alphabet: String) = this()
     def this(salt: String, minHashLength: Double, alphabet: String) = this()
   }
   

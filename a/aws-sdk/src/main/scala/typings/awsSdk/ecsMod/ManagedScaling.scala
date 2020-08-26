@@ -26,18 +26,38 @@ trait ManagedScaling extends js.Object {
 
 object ManagedScaling {
   @scala.inline
-  def apply(
-    maximumScalingStepSize: js.UndefOr[ManagedScalingStepSize] = js.undefined,
-    minimumScalingStepSize: js.UndefOr[ManagedScalingStepSize] = js.undefined,
-    status: ManagedScalingStatus = null,
-    targetCapacity: js.UndefOr[ManagedScalingTargetCapacity] = js.undefined
-  ): ManagedScaling = {
+  def apply(): ManagedScaling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maximumScalingStepSize)) __obj.updateDynamic("maximumScalingStepSize")(maximumScalingStepSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumScalingStepSize)) __obj.updateDynamic("minimumScalingStepSize")(minimumScalingStepSize.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetCapacity)) __obj.updateDynamic("targetCapacity")(targetCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedScaling]
   }
+  @scala.inline
+  implicit class ManagedScalingOps[Self <: ManagedScaling] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaximumScalingStepSize(value: ManagedScalingStepSize): Self = this.set("maximumScalingStepSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumScalingStepSize: Self = this.set("maximumScalingStepSize", js.undefined)
+    @scala.inline
+    def setMinimumScalingStepSize(value: ManagedScalingStepSize): Self = this.set("minimumScalingStepSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumScalingStepSize: Self = this.set("minimumScalingStepSize", js.undefined)
+    @scala.inline
+    def setStatus(value: ManagedScalingStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTargetCapacity(value: ManagedScalingTargetCapacity): Self = this.set("targetCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetCapacity: Self = this.set("targetCapacity", js.undefined)
+  }
+  
 }
 

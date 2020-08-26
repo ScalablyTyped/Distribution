@@ -30,20 +30,42 @@ trait SavingsPlansUtilizationDetail extends js.Object {
 
 object SavingsPlansUtilizationDetail {
   @scala.inline
-  def apply(
-    AmortizedCommitment: SavingsPlansAmortizedCommitment = null,
-    Attributes: Attributes = null,
-    Savings: SavingsPlansSavings = null,
-    SavingsPlanArn: SavingsPlanArn = null,
-    Utilization: SavingsPlansUtilization = null
-  ): SavingsPlansUtilizationDetail = {
+  def apply(): SavingsPlansUtilizationDetail = {
     val __obj = js.Dynamic.literal()
-    if (AmortizedCommitment != null) __obj.updateDynamic("AmortizedCommitment")(AmortizedCommitment.asInstanceOf[js.Any])
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (Savings != null) __obj.updateDynamic("Savings")(Savings.asInstanceOf[js.Any])
-    if (SavingsPlanArn != null) __obj.updateDynamic("SavingsPlanArn")(SavingsPlanArn.asInstanceOf[js.Any])
-    if (Utilization != null) __obj.updateDynamic("Utilization")(Utilization.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingsPlansUtilizationDetail]
   }
+  @scala.inline
+  implicit class SavingsPlansUtilizationDetailOps[Self <: SavingsPlansUtilizationDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = this.set("AmortizedCommitment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmortizedCommitment: Self = this.set("AmortizedCommitment", js.undefined)
+    @scala.inline
+    def setAttributes(value: Attributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setSavings(value: SavingsPlansSavings): Self = this.set("Savings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavings: Self = this.set("Savings", js.undefined)
+    @scala.inline
+    def setSavingsPlanArn(value: SavingsPlanArn): Self = this.set("SavingsPlanArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavingsPlanArn: Self = this.set("SavingsPlanArn", js.undefined)
+    @scala.inline
+    def setUtilization(value: SavingsPlansUtilization): Self = this.set("Utilization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtilization: Self = this.set("Utilization", js.undefined)
+  }
+  
 }
 

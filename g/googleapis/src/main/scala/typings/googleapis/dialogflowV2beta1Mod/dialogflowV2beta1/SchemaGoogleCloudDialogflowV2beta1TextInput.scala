@@ -25,11 +25,30 @@ trait SchemaGoogleCloudDialogflowV2beta1TextInput extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2beta1TextInput {
   @scala.inline
-  def apply(languageCode: String = null, text: String = null): SchemaGoogleCloudDialogflowV2beta1TextInput = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1TextInput = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1TextInput]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1TextInputOps[Self <: SchemaGoogleCloudDialogflowV2beta1TextInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

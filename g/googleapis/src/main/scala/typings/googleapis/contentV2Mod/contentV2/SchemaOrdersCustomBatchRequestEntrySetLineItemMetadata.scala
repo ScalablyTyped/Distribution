@@ -21,16 +21,36 @@ trait SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata extends js.Object {
 
 object SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata {
   @scala.inline
-  def apply(
-    annotations: js.Array[SchemaOrderMerchantProvidedAnnotation] = null,
-    lineItemId: String = null,
-    productId: String = null
-  ): SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata = {
+  def apply(): SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata]
   }
+  @scala.inline
+  implicit class SchemaOrdersCustomBatchRequestEntrySetLineItemMetadataOps[Self <: SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotationsVarargs(value: SchemaOrderMerchantProvidedAnnotation*): Self = this.set("annotations", js.Array(value :_*))
+    @scala.inline
+    def setAnnotations(value: js.Array[SchemaOrderMerchantProvidedAnnotation]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    @scala.inline
+    def setLineItemId(value: String): Self = this.set("lineItemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineItemId: Self = this.set("lineItemId", js.undefined)
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+  }
+  
 }
 

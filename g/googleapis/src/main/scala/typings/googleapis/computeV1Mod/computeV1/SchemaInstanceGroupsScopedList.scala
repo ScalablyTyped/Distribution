@@ -21,11 +21,32 @@ trait SchemaInstanceGroupsScopedList extends js.Object {
 
 object SchemaInstanceGroupsScopedList {
   @scala.inline
-  def apply(instanceGroups: js.Array[SchemaInstanceGroup] = null, warning: Code = null): SchemaInstanceGroupsScopedList = {
+  def apply(): SchemaInstanceGroupsScopedList = {
     val __obj = js.Dynamic.literal()
-    if (instanceGroups != null) __obj.updateDynamic("instanceGroups")(instanceGroups.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupsScopedList]
   }
+  @scala.inline
+  implicit class SchemaInstanceGroupsScopedListOps[Self <: SchemaInstanceGroupsScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceGroupsVarargs(value: SchemaInstanceGroup*): Self = this.set("instanceGroups", js.Array(value :_*))
+    @scala.inline
+    def setInstanceGroups(value: js.Array[SchemaInstanceGroup]): Self = this.set("instanceGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceGroups: Self = this.set("instanceGroups", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

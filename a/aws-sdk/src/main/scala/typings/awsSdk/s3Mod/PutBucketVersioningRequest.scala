@@ -26,16 +26,34 @@ trait PutBucketVersioningRequest extends js.Object {
 
 object PutBucketVersioningRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    VersioningConfiguration: VersioningConfiguration,
-    ContentMD5: ContentMD5 = null,
-    MFA: MFA = null
-  ): PutBucketVersioningRequest = {
+  def apply(Bucket: BucketName, VersioningConfiguration: VersioningConfiguration): PutBucketVersioningRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], VersioningConfiguration = VersioningConfiguration.asInstanceOf[js.Any])
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
-    if (MFA != null) __obj.updateDynamic("MFA")(MFA.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketVersioningRequest]
   }
+  @scala.inline
+  implicit class PutBucketVersioningRequestOps[Self <: PutBucketVersioningRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersioningConfiguration(value: VersioningConfiguration): Self = this.set("VersioningConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
+    @scala.inline
+    def setMFA(value: MFA): Self = this.set("MFA", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMFA: Self = this.set("MFA", js.undefined)
+  }
+  
 }
 

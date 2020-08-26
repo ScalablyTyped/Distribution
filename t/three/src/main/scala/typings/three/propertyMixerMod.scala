@@ -13,10 +13,12 @@ object propertyMixerMod extends js.Object {
     var binding: js.Any = js.native
     var buffer: js.Any = js.native
     var cumulativeWeight: Double = js.native
+    var cumulativeWeightAdditive: Double = js.native
     var referenceCount: Double = js.native
     var useCount: Double = js.native
     var valueSize: Double = js.native
     def accumulate(accuIndex: Double, weight: Double): Unit = js.native
+    def accumulateAdditive(weight: Double): Unit = js.native
     @JSName("apply")
     def apply(accuIndex: Double): Unit = js.native
     def restoreOriginalState(): Unit = js.native

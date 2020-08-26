@@ -14,6 +14,13 @@ object ɵɵattributeInterpolateV extends js.Object {
     /* namespace */ js.UndefOr[String], 
     /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any
   ] = js.native
+  def apply(attrName: String, values: js.Array[_], sanitizer: js.UndefOr[scala.Nothing], namespace: String): js.Function4[
+    /* attrName */ String, 
+    /* values */ js.Array[_], 
+    /* sanitizer */ js.UndefOr[SanitizerFn], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any
+  ] = js.native
   def apply(attrName: String, values: js.Array[_], sanitizer: SanitizerFn): js.Function4[
     /* attrName */ String, 
     /* values */ js.Array[_], 

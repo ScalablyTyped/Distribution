@@ -6,35 +6,54 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ArrayPattern_
+- typings.babelTypes.mod._Node because Already inherited */ @js.native
+trait ArrayPattern_
   extends LVal
      with BaseNode
      with Pattern
      with PatternLike {
-  var decorators: js.Array[Decorator_] | Null
-  var elements: js.Array[Null | PatternLike]
-  var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
+  var decorators: js.Array[Decorator_] | Null = js.native
+  var elements: js.Array[Null | PatternLike] = js.native
+  var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null = js.native
   @JSName("type")
-  var type_ArrayPattern_ : ArrayPattern
+  var type_ArrayPattern_ : ArrayPattern = js.native
 }
 
 object ArrayPattern_ {
   @scala.inline
-  def apply(
-    elements: js.Array[Null | PatternLike],
-    `type`: ArrayPattern,
-    decorators: js.Array[Decorator_] = null,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ = null
-  ): ArrayPattern_ = {
-    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
+  def apply(elements: js.Array[Null | PatternLike], `type`: ArrayPattern): ArrayPattern_ = {
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayPattern_]
   }
+  @scala.inline
+  implicit class ArrayPattern_Ops[Self <: ArrayPattern_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElementsVarargs(value: (Null | PatternLike)*): Self = this.set("elements", js.Array(value :_*))
+    @scala.inline
+    def setElements(value: js.Array[Null | PatternLike]): Self = this.set("elements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: ArrayPattern): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDecoratorsVarargs(value: Decorator_ *): Self = this.set("decorators", js.Array(value :_*))
+    @scala.inline
+    def setDecorators(value: js.Array[Decorator_]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDecoratorsNull: Self = this.set("decorators", null)
+    @scala.inline
+    def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypeAnnotationNull: Self = this.set("typeAnnotation", null)
+  }
+  
 }
 

@@ -29,6 +29,7 @@ object elasticsearch extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: DomainArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: DomainArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -46,8 +47,8 @@ object elasticsearch extends js.Object {
     def this(name: String, args: DomainPolicyArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getDomain(args: GetDomainArgs): js.Promise[GetDomainResult] with GetDomainResult = js.native
-  def getDomain(args: GetDomainArgs, opts: InvokeOptions): js.Promise[GetDomainResult] with GetDomainResult = js.native
+  def getDomain(args: GetDomainArgs): js.Promise[GetDomainResult] = js.native
+  def getDomain(args: GetDomainArgs, opts: InvokeOptions): js.Promise[GetDomainResult] = js.native
   /* static members */
   @js.native
   object Domain extends js.Object {
@@ -58,8 +59,10 @@ object elasticsearch extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.domainMod.Domain = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.domainMod.Domain = js.native
     def get(name: String, id: Input[ID], state: DomainState): typings.pulumiAws.domainMod.Domain = js.native
     def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): typings.pulumiAws.domainMod.Domain = js.native
     /**
@@ -79,8 +82,10 @@ object elasticsearch extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.domainPolicyMod.DomainPolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.domainPolicyMod.DomainPolicy = js.native
     def get(name: String, id: Input[ID], state: DomainPolicyState): typings.pulumiAws.domainPolicyMod.DomainPolicy = js.native
     def get(name: String, id: Input[ID], state: DomainPolicyState, opts: CustomResourceOptions): typings.pulumiAws.domainPolicyMod.DomainPolicy = js.native
     /**

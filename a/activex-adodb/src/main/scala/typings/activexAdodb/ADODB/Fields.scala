@@ -14,7 +14,34 @@ trait Fields extends js.Object {
     * @param Attrib [Attrib=-1]
     */
   def Append(Name: String, Type: DataTypeEnum): Unit = js.native
+  def Append(
+    Name: String,
+    Type: DataTypeEnum,
+    DefinedSize: js.UndefOr[scala.Nothing],
+    Attrib: js.UndefOr[scala.Nothing],
+    FieldValue: js.Any
+  ): Unit = js.native
+  def Append(
+    Name: String,
+    Type: DataTypeEnum,
+    DefinedSize: js.UndefOr[scala.Nothing],
+    Attrib: FieldAttributeEnum
+  ): Unit = js.native
+  def Append(
+    Name: String,
+    Type: DataTypeEnum,
+    DefinedSize: js.UndefOr[scala.Nothing],
+    Attrib: FieldAttributeEnum,
+    FieldValue: js.Any
+  ): Unit = js.native
   def Append(Name: String, Type: DataTypeEnum, DefinedSize: Double): Unit = js.native
+  def Append(
+    Name: String,
+    Type: DataTypeEnum,
+    DefinedSize: Double,
+    Attrib: js.UndefOr[scala.Nothing],
+    FieldValue: js.Any
+  ): Unit = js.native
   def Append(Name: String, Type: DataTypeEnum, DefinedSize: Double, Attrib: FieldAttributeEnum): Unit = js.native
   def Append(
     Name: String,
@@ -38,6 +65,12 @@ trait Fields extends js.Object {
     * @param Attrib [Attrib=-1]
     */
   def _Append(Name: String, Type: DataTypeEnum): Unit = js.native
+  def _Append(
+    Name: String,
+    Type: DataTypeEnum,
+    DefinedSize: js.UndefOr[scala.Nothing],
+    Attrib: FieldAttributeEnum
+  ): Unit = js.native
   def _Append(Name: String, Type: DataTypeEnum, DefinedSize: Double): Unit = js.native
   def _Append(Name: String, Type: DataTypeEnum, DefinedSize: Double, Attrib: FieldAttributeEnum): Unit = js.native
 }

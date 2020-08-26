@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 class Document () extends js.Object {
   def this(version: Double) = this()
+  def this(version: js.UndefOr[scala.Nothing], encoding: String) = this()
   def this(version: Double, encoding: String) = this()
   var errors: js.Array[SyntaxError] = js.native
   var validationErrors: js.Array[ValidationError] = js.native

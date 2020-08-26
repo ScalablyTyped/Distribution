@@ -1,7 +1,6 @@
 package typings.yandexMaps.mod.multiRouter
 
 import typings.yandexMaps.mod.IEventEmitter
-import typings.yandexMaps.mod.IEventManager
 import typings.yandexMaps.mod.IMultiRouteParams
 import typings.yandexMaps.mod.IMultiRouteReferencePoint
 import typings.yandexMaps.mod.data.Manager
@@ -15,8 +14,6 @@ import scala.scalajs.js.annotation._
 class MultiRouteModel protected () extends IEventEmitter {
   def this(referencePoints: js.Array[IMultiRouteReferencePoint]) = this()
   def this(referencePoints: js.Array[IMultiRouteReferencePoint], params: IMultiRouteParams) = this()
-  /* CompleteClass */
-  override var events: IEventManager = js.native
   var properties: Manager = js.native
   def destroy(): Unit = js.native
   def getAllPoints(): js.Array[WayPointModel | ViaPointModel] = js.native
@@ -29,9 +26,15 @@ class MultiRouteModel protected () extends IEventEmitter {
   def getViaPoints(): js.Array[ViaPointModel] = js.native
   def getWayPoints(): js.Array[WayPointModel] = js.native
   def setParams(params: IMultiRouteParams): Unit = js.native
+  def setParams(params: IMultiRouteParams, extend: js.UndefOr[scala.Nothing], clearRequests: Boolean): Unit = js.native
   def setParams(params: IMultiRouteParams, extend: Boolean): Unit = js.native
   def setParams(params: IMultiRouteParams, extend: Boolean, clearRequests: Boolean): Unit = js.native
   def setReferencePoints(referencePoints: js.Array[IMultiRouteReferencePoint]): Unit = js.native
+  def setReferencePoints(
+    referencePoints: js.Array[IMultiRouteReferencePoint],
+    viaIndexes: js.UndefOr[scala.Nothing],
+    clearRequests: Boolean
+  ): Unit = js.native
   def setReferencePoints(referencePoints: js.Array[IMultiRouteReferencePoint], viaIndexes: js.Array[Double]): Unit = js.native
   def setReferencePoints(
     referencePoints: js.Array[IMultiRouteReferencePoint],

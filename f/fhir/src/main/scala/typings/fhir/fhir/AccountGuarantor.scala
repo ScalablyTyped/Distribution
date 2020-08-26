@@ -7,50 +7,58 @@ import scala.scalajs.js.annotation._
 /**
   * Responsible for the account
   */
+@js.native
 trait AccountGuarantor extends BackboneElement {
   /**
     * Contains extended information for property 'onHold'.
     */
-  var _onHold: js.UndefOr[Element] = js.undefined
+  var _onHold: js.UndefOr[Element] = js.native
   /**
     * Credit or other hold applied
     */
-  var onHold: js.UndefOr[Boolean] = js.undefined
+  var onHold: js.UndefOr[Boolean] = js.native
   /**
     * Responsible entity
     */
-  var party: Reference
+  var party: Reference = js.native
   /**
     * Guarrantee account during
     */
-  var period: js.UndefOr[Period] = js.undefined
+  var period: js.UndefOr[Period] = js.native
 }
 
 object AccountGuarantor {
   @scala.inline
-  def apply(
-    party: Reference,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _onHold: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    onHold: js.UndefOr[Boolean] = js.undefined,
-    period: Period = null
-  ): AccountGuarantor = {
+  def apply(party: Reference): AccountGuarantor = {
     val __obj = js.Dynamic.literal(party = party.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_onHold != null) __obj.updateDynamic("_onHold")(_onHold.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(onHold)) __obj.updateDynamic("onHold")(onHold.get.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountGuarantor]
   }
+  @scala.inline
+  implicit class AccountGuarantorOps[Self <: AccountGuarantor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParty(value: Reference): Self = this.set("party", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_onHold(value: Element): Self = this.set("_onHold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_onHold: Self = this.set("_onHold", js.undefined)
+    @scala.inline
+    def setOnHold(value: Boolean): Self = this.set("onHold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnHold: Self = this.set("onHold", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+  }
+  
 }
 

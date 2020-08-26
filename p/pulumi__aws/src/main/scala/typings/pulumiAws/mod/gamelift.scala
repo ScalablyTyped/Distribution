@@ -72,6 +72,7 @@ object gamelift extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: GameSessionQueueArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: GameSessionQueueArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -85,8 +86,10 @@ object gamelift extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.aliasMod.Alias = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.aliasMod.Alias = js.native
     def get(name: String, id: Input[ID], state: AliasState): typings.pulumiAws.aliasMod.Alias = js.native
     def get(name: String, id: Input[ID], state: AliasState, opts: CustomResourceOptions): typings.pulumiAws.aliasMod.Alias = js.native
     /**
@@ -106,8 +109,10 @@ object gamelift extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.buildMod.Build = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.buildMod.Build = js.native
     def get(name: String, id: Input[ID], state: BuildState): typings.pulumiAws.buildMod.Build = js.native
     def get(name: String, id: Input[ID], state: BuildState, opts: CustomResourceOptions): typings.pulumiAws.buildMod.Build = js.native
     /**
@@ -127,8 +132,10 @@ object gamelift extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.gameliftFleetMod.Fleet = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.gameliftFleetMod.Fleet = js.native
     def get(name: String, id: Input[ID], state: FleetState): typings.pulumiAws.gameliftFleetMod.Fleet = js.native
     def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): typings.pulumiAws.gameliftFleetMod.Fleet = js.native
     /**
@@ -148,8 +155,10 @@ object gamelift extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.gameSessionQueueMod.GameSessionQueue = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.gameSessionQueueMod.GameSessionQueue = js.native
     def get(name: String, id: Input[ID], state: GameSessionQueueState): typings.pulumiAws.gameSessionQueueMod.GameSessionQueue = js.native
     def get(name: String, id: Input[ID], state: GameSessionQueueState, opts: CustomResourceOptions): typings.pulumiAws.gameSessionQueueMod.GameSessionQueue = js.native
     /**

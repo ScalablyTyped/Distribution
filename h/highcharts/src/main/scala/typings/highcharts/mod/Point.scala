@@ -217,6 +217,8 @@ class Point () extends js.Object {
     *        configuration.
     */
   def remove(): Unit = js.native
+  def remove(redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
+  def remove(redraw: js.UndefOr[scala.Nothing], animation: AnimationOptionsObject): Unit = js.native
   def remove(redraw: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
@@ -238,6 +240,7 @@ class Point () extends js.Object {
     * @fires Highcharts.Point#unselect
     */
   def select(): Unit = js.native
+  def select(selected: js.UndefOr[scala.Nothing], accumulate: Boolean): Unit = js.native
   def select(selected: Boolean): Unit = js.native
   def select(selected: Boolean, accumulate: Boolean): Unit = js.native
   /**
@@ -271,6 +274,7 @@ class Point () extends js.Object {
     * @fires Highcharts.Point#afterSetState
     */
   def setState(): Unit = js.native
+  def setState(state: js.UndefOr[scala.Nothing], move: Boolean): Unit = js.native
   def setState(state: _empty): Unit = js.native
   def setState(state: _empty, move: Boolean): Unit = js.native
   def setState(state: PointStateValue): Unit = js.native
@@ -315,6 +319,8 @@ class Point () extends js.Object {
     * @fires Highcharts.Point#update
     */
   def update(options: PointOptionsType): Unit = js.native
+  def update(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
+  def update(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], animation: AnimationOptionsObject): Unit = js.native
   def update(options: PointOptionsType, redraw: Boolean): Unit = js.native
   def update(options: PointOptionsType, redraw: Boolean, animation: Boolean): Unit = js.native
   def update(options: PointOptionsType, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native

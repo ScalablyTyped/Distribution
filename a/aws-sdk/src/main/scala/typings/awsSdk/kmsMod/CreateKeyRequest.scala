@@ -42,26 +42,56 @@ trait CreateKeyRequest extends js.Object {
 
 object CreateKeyRequest {
   @scala.inline
-  def apply(
-    BypassPolicyLockoutSafetyCheck: js.UndefOr[BooleanType] = js.undefined,
-    CustomKeyStoreId: CustomKeyStoreIdType = null,
-    CustomerMasterKeySpec: CustomerMasterKeySpec = null,
-    Description: DescriptionType = null,
-    KeyUsage: KeyUsageType = null,
-    Origin: OriginType = null,
-    Policy: PolicyType = null,
-    Tags: TagList = null
-  ): CreateKeyRequest = {
+  def apply(): CreateKeyRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BypassPolicyLockoutSafetyCheck)) __obj.updateDynamic("BypassPolicyLockoutSafetyCheck")(BypassPolicyLockoutSafetyCheck.get.asInstanceOf[js.Any])
-    if (CustomKeyStoreId != null) __obj.updateDynamic("CustomKeyStoreId")(CustomKeyStoreId.asInstanceOf[js.Any])
-    if (CustomerMasterKeySpec != null) __obj.updateDynamic("CustomerMasterKeySpec")(CustomerMasterKeySpec.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (KeyUsage != null) __obj.updateDynamic("KeyUsage")(KeyUsage.asInstanceOf[js.Any])
-    if (Origin != null) __obj.updateDynamic("Origin")(Origin.asInstanceOf[js.Any])
-    if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateKeyRequest]
   }
+  @scala.inline
+  implicit class CreateKeyRequestOps[Self <: CreateKeyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBypassPolicyLockoutSafetyCheck(value: BooleanType): Self = this.set("BypassPolicyLockoutSafetyCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBypassPolicyLockoutSafetyCheck: Self = this.set("BypassPolicyLockoutSafetyCheck", js.undefined)
+    @scala.inline
+    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = this.set("CustomKeyStoreId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomKeyStoreId: Self = this.set("CustomKeyStoreId", js.undefined)
+    @scala.inline
+    def setCustomerMasterKeySpec(value: CustomerMasterKeySpec): Self = this.set("CustomerMasterKeySpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerMasterKeySpec: Self = this.set("CustomerMasterKeySpec", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionType): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setKeyUsage(value: KeyUsageType): Self = this.set("KeyUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyUsage: Self = this.set("KeyUsage", js.undefined)
+    @scala.inline
+    def setOrigin(value: OriginType): Self = this.set("Origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("Origin", js.undefined)
+    @scala.inline
+    def setPolicy(value: PolicyType): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("Policy", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

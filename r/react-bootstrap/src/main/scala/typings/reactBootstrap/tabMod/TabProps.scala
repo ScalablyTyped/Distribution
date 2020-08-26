@@ -2,55 +2,69 @@ package typings.reactBootstrap.tabMod
 
 import typings.react.mod.ReactNode
 import typings.reactBootstrap.mod.TransitionCallbacks
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab> ]: P} & {[ P in 'title' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab>[P]} */ trait TabProps extends TransitionCallbacks {
-  var animation: js.UndefOr[Boolean] = js.undefined
-  var `aria-labelledby`: js.UndefOr[String] = js.undefined
-  var bsClass: js.UndefOr[String] = js.undefined
-  var eventKey: js.UndefOr[js.Any] = js.undefined
-  var tabClassName: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
+- Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab> ]: P} & {[ P in 'title' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab>[P]} */ @js.native
+trait TabProps extends TransitionCallbacks {
+  var animation: js.UndefOr[Boolean] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var bsClass: js.UndefOr[String] = js.native
+  var eventKey: js.UndefOr[js.Any] = js.native
+  var tabClassName: js.UndefOr[String] = js.native
+  var title: js.UndefOr[ReactNode] = js.native
    // TODO: Add more specific type
-  var unmountOnExit: js.UndefOr[Boolean] = js.undefined
+  var unmountOnExit: js.UndefOr[Boolean] = js.native
 }
 
 object TabProps {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    `aria-labelledby`: String = null,
-    bsClass: String = null,
-    eventKey: js.Any = null,
-    onEnter: /* node */ HTMLElement => _ = null,
-    onEntered: /* node */ HTMLElement => _ = null,
-    onEntering: /* node */ HTMLElement => _ = null,
-    onExit: /* node */ HTMLElement => _ = null,
-    onExited: /* node */ HTMLElement => _ = null,
-    onExiting: /* node */ HTMLElement => _ = null,
-    tabClassName: String = null,
-    title: ReactNode = null,
-    unmountOnExit: js.UndefOr[Boolean] = js.undefined
-  ): TabProps = {
+  def apply(): TabProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
-    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
-    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1(onEntered))
-    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction1(onEntering))
-    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1(onExit))
-    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
-    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1(onExiting))
-    if (tabClassName != null) __obj.updateDynamic("tabClassName")(tabClassName.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabProps]
   }
+  @scala.inline
+  implicit class TabPropsOps[Self <: TabProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def `setAria-labelledby`(value: String): Self = this.set("aria-labelledby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-labelledby`: Self = this.set("aria-labelledby", js.undefined)
+    @scala.inline
+    def setBsClass(value: String): Self = this.set("bsClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsClass: Self = this.set("bsClass", js.undefined)
+    @scala.inline
+    def setEventKey(value: js.Any): Self = this.set("eventKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventKey: Self = this.set("eventKey", js.undefined)
+    @scala.inline
+    def setTabClassName(value: String): Self = this.set("tabClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabClassName: Self = this.set("tabClassName", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUnmountOnExit(value: Boolean): Self = this.set("unmountOnExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnmountOnExit: Self = this.set("unmountOnExit", js.undefined)
+  }
+  
 }
 

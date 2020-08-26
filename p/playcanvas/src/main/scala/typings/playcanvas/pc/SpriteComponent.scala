@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * Enables an Entity to render a simple static sprite or sprite animations.
   * @property type - The type of the SpriteComponent. Can be:
-  
-  * {@link pc.SPRITETYPE_SIMPLE}: The component renders a single frame from a sprite asset.
-  * {@link pc.SPRITETYPE_ANIMATED}: The component can play sprite animation clips.
+  *
+  * * {@link pc.SPRITETYPE_SIMPLE}: The component renders a single frame from a sprite asset.
+  * * {@link pc.SPRITETYPE_ANIMATED}: The component can play sprite animation clips.
   * @property frame - The frame counter of the sprite. Specifies which frame from the current sprite asset to render.
   * @property spriteAsset - The id of the sprite asset to render. Only works for {@link pc.SPRITETYPE_SIMPLE} types.
   * @property sprite - The current sprite.
@@ -94,8 +94,9 @@ trait SpriteComponent extends Component {
   var spriteAsset: Double = js.native
   /**
     * The type of the SpriteComponent. Can be:
-    * * {@link pc.SPRITETYPE_SIMPLE}: The component renders a single frame from a sprite asset.
-    * * {@link pc.SPRITETYPE_ANIMATED}: The component can play sprite animation clips.
+    
+    * {@link pc.SPRITETYPE_SIMPLE}: The component renders a single frame from a sprite asset.
+    * {@link pc.SPRITETYPE_ANIMATED}: The component can play sprite animation clips.
     */
   var `type`: String = js.native
   /**

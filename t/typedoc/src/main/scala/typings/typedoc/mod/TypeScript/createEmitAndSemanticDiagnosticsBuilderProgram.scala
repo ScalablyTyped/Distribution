@@ -22,6 +22,12 @@ object createEmitAndSemanticDiagnosticsBuilderProgram extends js.Object {
   def apply(
     newProgram: Program,
     host: BuilderProgramHost,
+    oldProgram: js.UndefOr[scala.Nothing],
+    configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def apply(
+    newProgram: Program,
+    host: BuilderProgramHost,
     oldProgram: EmitAndSemanticDiagnosticsBuilderProgram
   ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
   def apply(

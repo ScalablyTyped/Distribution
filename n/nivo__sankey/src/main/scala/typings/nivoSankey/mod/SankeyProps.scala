@@ -26,112 +26,207 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  align  :'center' | 'justify' | 'start' | 'end',   sort  :'auto' | 'input' | 'ascending' | 'descending' | @nivo/sankey.@nivo/sankey.SankeySortFunction,   margin  :@nivo/core.@nivo/core.Box,   nodeOpacity  :number,   nodeHoverOpacity  :number,   nodeHoverOthersOpacity  :number,   nodeThickness  :number,   nodeSpacing  :number,   nodeInnerPadding  :number,   nodeBorderWidth  :number,   nodeBorderColor  :@nivo/colors.@nivo/colors.InheritedColorProp<@nivo/sankey.@nivo/sankey.SankeyNodeDatum>,   linkOpacity  :number,   linkHoverOpacity  :number,   linkHoverOthersOpacity  :number,   linkContract  :number,   linkBlendMode  :@nivo/core.@nivo/core.CssMixBlendMode,   enableLinkGradient  :boolean,   enableLabels  :boolean,   label  :string | @nivo/sankey.@nivo/sankey.AccessorFunc,   labelPosition  :'inside' | 'outside',   labelPadding  :number,   labelOrientation  :'horizontal' | 'vertical',   labelTextColor  :@nivo/colors.@nivo/colors.InheritedColorProp<@nivo/sankey.@nivo/sankey.SankeyNodeDatum>,   labelFormat  :string | @nivo/sankey.@nivo/sankey.LabelFormatter,   isInteractive  :boolean,   onClick  :@nivo/sankey.@nivo/sankey.SankeyMouseHandler,   tooltipFormat  :@nivo/sankey.@nivo/sankey.TooltipFormat,   nodeTooltip  :@nivo/sankey.@nivo/sankey.TooltipRenderer<@nivo/sankey.@nivo/sankey.SankeyNodeProps>,   linkTooltip  :@nivo/sankey.@nivo/sankey.TooltipRenderer<@nivo/sankey.@nivo/sankey.SankeyLinkProps>,   colors  :@nivo/colors.@nivo/colors.OrdinalColorsInstruction<any>,   theme  :@nivo/core.@nivo/core.Theme,   legends  :std.Array<@nivo/legends.@nivo/legends.LegendProps>}> */
+/* Inlined std.Partial<{  align :'center' | 'justify' | 'start' | 'end',   sort :'auto' | 'input' | 'ascending' | 'descending' | @nivo/sankey.@nivo/sankey.SankeySortFunction,   margin :@nivo/core.@nivo/core.Box,   nodeOpacity :number,   nodeHoverOpacity :number,   nodeHoverOthersOpacity :number,   nodeThickness :number,   nodeSpacing :number,   nodeInnerPadding :number,   nodeBorderWidth :number,   nodeBorderColor :@nivo/colors.@nivo/colors.InheritedColorProp<@nivo/sankey.@nivo/sankey.SankeyNodeDatum>,   linkOpacity :number,   linkHoverOpacity :number,   linkHoverOthersOpacity :number,   linkContract :number,   linkBlendMode :@nivo/core.@nivo/core.CssMixBlendMode,   enableLinkGradient :boolean,   enableLabels :boolean,   label :string | @nivo/sankey.@nivo/sankey.AccessorFunc,   labelPosition :'inside' | 'outside',   labelPadding :number,   labelOrientation :'horizontal' | 'vertical',   labelTextColor :@nivo/colors.@nivo/colors.InheritedColorProp<@nivo/sankey.@nivo/sankey.SankeyNodeDatum>,   labelFormat :string | @nivo/sankey.@nivo/sankey.LabelFormatter,   isInteractive :boolean,   onClick :@nivo/sankey.@nivo/sankey.SankeyMouseHandler,   tooltipFormat :@nivo/sankey.@nivo/sankey.TooltipFormat,   nodeTooltip :@nivo/sankey.@nivo/sankey.TooltipRenderer<@nivo/sankey.@nivo/sankey.SankeyNodeDatum>,   linkTooltip :@nivo/sankey.@nivo/sankey.TooltipRenderer<@nivo/sankey.@nivo/sankey.SankeyLinkDatum>,   colors :@nivo/colors.@nivo/colors.OrdinalColorsInstruction<any>,   theme :@nivo/core.@nivo/core.Theme,   legends :std.Array<@nivo/legends.@nivo/legends.LegendProps>}> */
+@js.native
 trait SankeyProps extends js.Object {
-  var align: js.UndefOr[center | justify | start | end] = js.undefined
-  var colors: js.UndefOr[OrdinalColorsInstruction[_]] = js.undefined
-  var enableLabels: js.UndefOr[Boolean] = js.undefined
-  var enableLinkGradient: js.UndefOr[Boolean] = js.undefined
-  var isInteractive: js.UndefOr[Boolean] = js.undefined
-  var label: js.UndefOr[String | AccessorFunc] = js.undefined
-  var labelFormat: js.UndefOr[String | LabelFormatter] = js.undefined
-  var labelOrientation: js.UndefOr[horizontal | vertical] = js.undefined
-  var labelPadding: js.UndefOr[Double] = js.undefined
-  var labelPosition: js.UndefOr[inside | outside] = js.undefined
-  var labelTextColor: js.UndefOr[InheritedColorProp[SankeyNodeDatum]] = js.undefined
-  var legends: js.UndefOr[js.Array[LegendProps]] = js.undefined
-  var linkBlendMode: js.UndefOr[CssMixBlendMode] = js.undefined
-  var linkContract: js.UndefOr[Double] = js.undefined
-  var linkHoverOpacity: js.UndefOr[Double] = js.undefined
-  var linkHoverOthersOpacity: js.UndefOr[Double] = js.undefined
-  var linkOpacity: js.UndefOr[Double] = js.undefined
-  var linkTooltip: js.UndefOr[TooltipRenderer[SankeyLinkProps]] = js.undefined
-  var margin: js.UndefOr[Box] = js.undefined
-  var nodeBorderColor: js.UndefOr[InheritedColorProp[SankeyNodeDatum]] = js.undefined
-  var nodeBorderWidth: js.UndefOr[Double] = js.undefined
-  var nodeHoverOpacity: js.UndefOr[Double] = js.undefined
-  var nodeHoverOthersOpacity: js.UndefOr[Double] = js.undefined
-  var nodeInnerPadding: js.UndefOr[Double] = js.undefined
-  var nodeOpacity: js.UndefOr[Double] = js.undefined
-  var nodeSpacing: js.UndefOr[Double] = js.undefined
-  var nodeThickness: js.UndefOr[Double] = js.undefined
-  var nodeTooltip: js.UndefOr[TooltipRenderer[SankeyNodeProps]] = js.undefined
-  var onClick: js.UndefOr[SankeyMouseHandler] = js.undefined
-  var sort: js.UndefOr[auto | input | ascending | descending | SankeySortFunction] = js.undefined
-  var theme: js.UndefOr[Theme] = js.undefined
-  var tooltipFormat: js.UndefOr[TooltipFormat] = js.undefined
+  var align: js.UndefOr[center | justify | start | end] = js.native
+  var colors: js.UndefOr[OrdinalColorsInstruction[_]] = js.native
+  var enableLabels: js.UndefOr[Boolean] = js.native
+  var enableLinkGradient: js.UndefOr[Boolean] = js.native
+  var isInteractive: js.UndefOr[Boolean] = js.native
+  var label: js.UndefOr[String | AccessorFunc] = js.native
+  var labelFormat: js.UndefOr[String | LabelFormatter] = js.native
+  var labelOrientation: js.UndefOr[horizontal | vertical] = js.native
+  var labelPadding: js.UndefOr[Double] = js.native
+  var labelPosition: js.UndefOr[inside | outside] = js.native
+  var labelTextColor: js.UndefOr[InheritedColorProp[SankeyNodeDatum]] = js.native
+  var legends: js.UndefOr[js.Array[LegendProps]] = js.native
+  var linkBlendMode: js.UndefOr[CssMixBlendMode] = js.native
+  var linkContract: js.UndefOr[Double] = js.native
+  var linkHoverOpacity: js.UndefOr[Double] = js.native
+  var linkHoverOthersOpacity: js.UndefOr[Double] = js.native
+  var linkOpacity: js.UndefOr[Double] = js.native
+  var linkTooltip: js.UndefOr[TooltipRenderer[SankeyLinkDatum]] = js.native
+  var margin: js.UndefOr[Box] = js.native
+  var nodeBorderColor: js.UndefOr[InheritedColorProp[SankeyNodeDatum]] = js.native
+  var nodeBorderWidth: js.UndefOr[Double] = js.native
+  var nodeHoverOpacity: js.UndefOr[Double] = js.native
+  var nodeHoverOthersOpacity: js.UndefOr[Double] = js.native
+  var nodeInnerPadding: js.UndefOr[Double] = js.native
+  var nodeOpacity: js.UndefOr[Double] = js.native
+  var nodeSpacing: js.UndefOr[Double] = js.native
+  var nodeThickness: js.UndefOr[Double] = js.native
+  var nodeTooltip: js.UndefOr[TooltipRenderer[SankeyNodeDatum]] = js.native
+  var onClick: js.UndefOr[SankeyMouseHandler] = js.native
+  var sort: js.UndefOr[auto | input | ascending | descending | SankeySortFunction] = js.native
+  var theme: js.UndefOr[Theme] = js.native
+  var tooltipFormat: js.UndefOr[TooltipFormat] = js.native
 }
 
 object SankeyProps {
   @scala.inline
-  def apply(
-    align: center | justify | start | end = null,
-    colors: OrdinalColorsInstruction[_] = null,
-    enableLabels: js.UndefOr[Boolean] = js.undefined,
-    enableLinkGradient: js.UndefOr[Boolean] = js.undefined,
-    isInteractive: js.UndefOr[Boolean] = js.undefined,
-    label: String | AccessorFunc = null,
-    labelFormat: String | LabelFormatter = null,
-    labelOrientation: horizontal | vertical = null,
-    labelPadding: js.UndefOr[Double] = js.undefined,
-    labelPosition: inside | outside = null,
-    labelTextColor: InheritedColorProp[SankeyNodeDatum] = null,
-    legends: js.Array[LegendProps] = null,
-    linkBlendMode: CssMixBlendMode = null,
-    linkContract: js.UndefOr[Double] = js.undefined,
-    linkHoverOpacity: js.UndefOr[Double] = js.undefined,
-    linkHoverOthersOpacity: js.UndefOr[Double] = js.undefined,
-    linkOpacity: js.UndefOr[Double] = js.undefined,
-    linkTooltip: SankeyLinkProps => ReactNode = null,
-    margin: Box = null,
-    nodeBorderColor: InheritedColorProp[SankeyNodeDatum] = null,
-    nodeBorderWidth: js.UndefOr[Double] = js.undefined,
-    nodeHoverOpacity: js.UndefOr[Double] = js.undefined,
-    nodeHoverOthersOpacity: js.UndefOr[Double] = js.undefined,
-    nodeInnerPadding: js.UndefOr[Double] = js.undefined,
-    nodeOpacity: js.UndefOr[Double] = js.undefined,
-    nodeSpacing: js.UndefOr[Double] = js.undefined,
-    nodeThickness: js.UndefOr[Double] = js.undefined,
-    nodeTooltip: SankeyNodeProps => ReactNode = null,
-    onClick: (/* data */ SankeyNodeDatum | SankeyLinkDatum, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
-    sort: auto | input | ascending | descending | SankeySortFunction = null,
-    theme: Theme = null,
-    tooltipFormat: /* value */ Double => ReactNode = null
-  ): SankeyProps = {
+  def apply(): SankeyProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLabels)) __obj.updateDynamic("enableLabels")(enableLabels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLinkGradient)) __obj.updateDynamic("enableLinkGradient")(enableLinkGradient.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat.asInstanceOf[js.Any])
-    if (labelOrientation != null) __obj.updateDynamic("labelOrientation")(labelOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelPadding)) __obj.updateDynamic("labelPadding")(labelPadding.get.asInstanceOf[js.Any])
-    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
-    if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(labelTextColor.asInstanceOf[js.Any])
-    if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
-    if (linkBlendMode != null) __obj.updateDynamic("linkBlendMode")(linkBlendMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkContract)) __obj.updateDynamic("linkContract")(linkContract.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkHoverOpacity)) __obj.updateDynamic("linkHoverOpacity")(linkHoverOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkHoverOthersOpacity)) __obj.updateDynamic("linkHoverOthersOpacity")(linkHoverOthersOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkOpacity)) __obj.updateDynamic("linkOpacity")(linkOpacity.get.asInstanceOf[js.Any])
-    if (linkTooltip != null) __obj.updateDynamic("linkTooltip")(js.Any.fromFunction1(linkTooltip))
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (nodeBorderColor != null) __obj.updateDynamic("nodeBorderColor")(nodeBorderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeBorderWidth)) __obj.updateDynamic("nodeBorderWidth")(nodeBorderWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeHoverOpacity)) __obj.updateDynamic("nodeHoverOpacity")(nodeHoverOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeHoverOthersOpacity)) __obj.updateDynamic("nodeHoverOthersOpacity")(nodeHoverOthersOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeInnerPadding)) __obj.updateDynamic("nodeInnerPadding")(nodeInnerPadding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeOpacity)) __obj.updateDynamic("nodeOpacity")(nodeOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeSpacing)) __obj.updateDynamic("nodeSpacing")(nodeSpacing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeThickness)) __obj.updateDynamic("nodeThickness")(nodeThickness.get.asInstanceOf[js.Any])
-    if (nodeTooltip != null) __obj.updateDynamic("nodeTooltip")(js.Any.fromFunction1(nodeTooltip))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(js.Any.fromFunction1(tooltipFormat))
     __obj.asInstanceOf[SankeyProps]
   }
+  @scala.inline
+  implicit class SankeyPropsOps[Self <: SankeyProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: center | justify | start | end): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setColorsVarargs(value: String*): Self = this.set("colors", js.Array(value :_*))
+    @scala.inline
+    def setColorsFunction1(value: _ => String): Self = this.set("colors", js.Any.fromFunction1(value))
+    @scala.inline
+    def setColors(value: OrdinalColorsInstruction[_]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setEnableLabels(value: Boolean): Self = this.set("enableLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLabels: Self = this.set("enableLabels", js.undefined)
+    @scala.inline
+    def setEnableLinkGradient(value: Boolean): Self = this.set("enableLinkGradient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLinkGradient: Self = this.set("enableLinkGradient", js.undefined)
+    @scala.inline
+    def setIsInteractive(value: Boolean): Self = this.set("isInteractive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsInteractive: Self = this.set("isInteractive", js.undefined)
+    @scala.inline
+    def setLabelFunction1(value: /* datum */ SankeyNodeDatum => String): Self = this.set("label", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLabel(value: String | AccessorFunc): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelFormatFunction1(value: /* label */ String | Double => String | Double): Self = this.set("labelFormat", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLabelFormat(value: String | LabelFormatter): Self = this.set("labelFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelFormat: Self = this.set("labelFormat", js.undefined)
+    @scala.inline
+    def setLabelOrientation(value: horizontal | vertical): Self = this.set("labelOrientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelOrientation: Self = this.set("labelOrientation", js.undefined)
+    @scala.inline
+    def setLabelPadding(value: Double): Self = this.set("labelPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelPadding: Self = this.set("labelPadding", js.undefined)
+    @scala.inline
+    def setLabelPosition(value: inside | outside): Self = this.set("labelPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelPosition: Self = this.set("labelPosition", js.undefined)
+    @scala.inline
+    def setLabelTextColorFunction1(value: SankeyNodeDatum => String): Self = this.set("labelTextColor", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLabelTextColor(value: InheritedColorProp[SankeyNodeDatum]): Self = this.set("labelTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelTextColor: Self = this.set("labelTextColor", js.undefined)
+    @scala.inline
+    def setLegendsVarargs(value: LegendProps*): Self = this.set("legends", js.Array(value :_*))
+    @scala.inline
+    def setLegends(value: js.Array[LegendProps]): Self = this.set("legends", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegends: Self = this.set("legends", js.undefined)
+    @scala.inline
+    def setLinkBlendMode(value: CssMixBlendMode): Self = this.set("linkBlendMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkBlendMode: Self = this.set("linkBlendMode", js.undefined)
+    @scala.inline
+    def setLinkContract(value: Double): Self = this.set("linkContract", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkContract: Self = this.set("linkContract", js.undefined)
+    @scala.inline
+    def setLinkHoverOpacity(value: Double): Self = this.set("linkHoverOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkHoverOpacity: Self = this.set("linkHoverOpacity", js.undefined)
+    @scala.inline
+    def setLinkHoverOthersOpacity(value: Double): Self = this.set("linkHoverOthersOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkHoverOthersOpacity: Self = this.set("linkHoverOthersOpacity", js.undefined)
+    @scala.inline
+    def setLinkOpacity(value: Double): Self = this.set("linkOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkOpacity: Self = this.set("linkOpacity", js.undefined)
+    @scala.inline
+    def setLinkTooltip(value: SankeyLinkDatum => ReactNode): Self = this.set("linkTooltip", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLinkTooltip: Self = this.set("linkTooltip", js.undefined)
+    @scala.inline
+    def setMargin(value: Box): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setNodeBorderColorFunction1(value: SankeyNodeDatum => String): Self = this.set("nodeBorderColor", js.Any.fromFunction1(value))
+    @scala.inline
+    def setNodeBorderColor(value: InheritedColorProp[SankeyNodeDatum]): Self = this.set("nodeBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeBorderColor: Self = this.set("nodeBorderColor", js.undefined)
+    @scala.inline
+    def setNodeBorderWidth(value: Double): Self = this.set("nodeBorderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeBorderWidth: Self = this.set("nodeBorderWidth", js.undefined)
+    @scala.inline
+    def setNodeHoverOpacity(value: Double): Self = this.set("nodeHoverOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeHoverOpacity: Self = this.set("nodeHoverOpacity", js.undefined)
+    @scala.inline
+    def setNodeHoverOthersOpacity(value: Double): Self = this.set("nodeHoverOthersOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeHoverOthersOpacity: Self = this.set("nodeHoverOthersOpacity", js.undefined)
+    @scala.inline
+    def setNodeInnerPadding(value: Double): Self = this.set("nodeInnerPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeInnerPadding: Self = this.set("nodeInnerPadding", js.undefined)
+    @scala.inline
+    def setNodeOpacity(value: Double): Self = this.set("nodeOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeOpacity: Self = this.set("nodeOpacity", js.undefined)
+    @scala.inline
+    def setNodeSpacing(value: Double): Self = this.set("nodeSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeSpacing: Self = this.set("nodeSpacing", js.undefined)
+    @scala.inline
+    def setNodeThickness(value: Double): Self = this.set("nodeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeThickness: Self = this.set("nodeThickness", js.undefined)
+    @scala.inline
+    def setNodeTooltip(value: SankeyNodeDatum => ReactNode): Self = this.set("nodeTooltip", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNodeTooltip: Self = this.set("nodeTooltip", js.undefined)
+    @scala.inline
+    def setOnClick(
+      value: (/* data */ SankeyNodeDatum | SankeyLinkDatum, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit
+    ): Self = this.set("onClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setSortFunction2(value: (/* nodeA */ SankeyDataNode, /* nodeB */ SankeyDataNode) => Double): Self = this.set("sort", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSort(value: auto | input | ascending | descending | SankeySortFunction): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setTheme(value: Theme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTooltipFormat(value: /* value */ Double => ReactNode): Self = this.set("tooltipFormat", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTooltipFormat: Self = this.set("tooltipFormat", js.undefined)
+  }
+  
 }
 

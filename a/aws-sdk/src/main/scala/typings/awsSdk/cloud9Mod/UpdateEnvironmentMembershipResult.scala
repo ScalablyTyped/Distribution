@@ -14,10 +14,26 @@ trait UpdateEnvironmentMembershipResult extends js.Object {
 
 object UpdateEnvironmentMembershipResult {
   @scala.inline
-  def apply(membership: EnvironmentMember = null): UpdateEnvironmentMembershipResult = {
+  def apply(): UpdateEnvironmentMembershipResult = {
     val __obj = js.Dynamic.literal()
-    if (membership != null) __obj.updateDynamic("membership")(membership.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEnvironmentMembershipResult]
   }
+  @scala.inline
+  implicit class UpdateEnvironmentMembershipResultOps[Self <: UpdateEnvironmentMembershipResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMembership(value: EnvironmentMember): Self = this.set("membership", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMembership: Self = this.set("membership", js.undefined)
+  }
+  
 }
 

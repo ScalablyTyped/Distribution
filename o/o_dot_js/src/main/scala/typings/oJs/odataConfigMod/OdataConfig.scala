@@ -16,7 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.RequestInit & {  rootUrl  :std.URL,   query ? :std.URLSearchParams,   fragment  :string,   batch ? :o.js.o.js/dist/types/OdataConfig.OdataBatchConfig,   disablePolyfill  :boolean, onStart (oHandler : o.js.o.js/dist/types/OHandler.OHandler): void, onFinish (oHandler : o.js.o.js/dist/types/OHandler.OHandler, res ? : std.Response): void, onError (oHandler : o.js.o.js/dist/types/OHandler.OHandler, res : std.Response): void} */
+/* Inlined std.RequestInit & {  rootUrl :std.URL,   query :std.URLSearchParams | undefined,   fragment :string,   batch :o.js.o.js/dist/types/OdataConfig.OdataBatchConfig | undefined,   disablePolyfill :boolean, onStart (oHandler : o.js.o.js/dist/types/OHandler.OHandler): void, onFinish (oHandler : o.js.o.js/dist/types/OHandler.OHandler, res : std.Response | undefined): void, onError (oHandler : o.js.o.js/dist/types/OHandler.OHandler, res : std.Response): void} */
 @js.native
 trait OdataConfig extends js.Object {
   /**

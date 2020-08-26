@@ -55,6 +55,14 @@ class Vimeo protected () extends js.Object {
     */
   def generateClientCredentials(scope: String, fn: CompleteCallback): Unit = js.native
   def generateClientCredentials(scope: js.Array[String], fn: CompleteCallback): Unit = js.native
+  def replace(
+    file: String,
+    videoUri: String,
+    params: js.Object,
+    completeCallback: UriCallback,
+    progressCallback: js.UndefOr[scala.Nothing],
+    errorCallback: ErrorCallback
+  ): Unit = js.native
   /**
     * Replace the source of a single Vimeo video.
     *
@@ -74,7 +82,7 @@ class Vimeo protected () extends js.Object {
     videoUri: String,
     params: js.Object,
     completeCallback: UriCallback,
-    progressCallback: js.UndefOr[ProgressCallback],
+    progressCallback: ProgressCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
   /**
@@ -116,7 +124,20 @@ class Vimeo protected () extends js.Object {
   def upload(
     filePath: String,
     completeCallback: UriCallback,
-    progressCallback: js.UndefOr[ProgressCallback],
+    progressCallback: js.UndefOr[scala.Nothing],
+    errorCallback: ErrorCallback
+  ): Unit = js.native
+  def upload(
+    filePath: String,
+    completeCallback: UriCallback,
+    progressCallback: ProgressCallback,
+    errorCallback: ErrorCallback
+  ): Unit = js.native
+  def upload(
+    filePath: String,
+    params: js.Object,
+    completeCallback: UriCallback,
+    progressCallback: js.UndefOr[scala.Nothing],
     errorCallback: ErrorCallback
   ): Unit = js.native
   /**
@@ -139,7 +160,7 @@ class Vimeo protected () extends js.Object {
     filePath: String,
     params: js.Object,
     completeCallback: UriCallback,
-    progressCallback: js.UndefOr[ProgressCallback],
+    progressCallback: ProgressCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
 }

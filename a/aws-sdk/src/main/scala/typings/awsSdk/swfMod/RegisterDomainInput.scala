@@ -26,16 +26,36 @@ trait RegisterDomainInput extends js.Object {
 
 object RegisterDomainInput {
   @scala.inline
-  def apply(
-    name: DomainName,
-    workflowExecutionRetentionPeriodInDays: DurationInDays,
-    description: Description = null,
-    tags: ResourceTagList = null
-  ): RegisterDomainInput = {
+  def apply(name: DomainName, workflowExecutionRetentionPeriodInDays: DurationInDays): RegisterDomainInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], workflowExecutionRetentionPeriodInDays = workflowExecutionRetentionPeriodInDays.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterDomainInput]
   }
+  @scala.inline
+  implicit class RegisterDomainInputOps[Self <: RegisterDomainInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: DomainName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkflowExecutionRetentionPeriodInDays(value: DurationInDays): Self = this.set("workflowExecutionRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: ResourceTag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: ResourceTagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

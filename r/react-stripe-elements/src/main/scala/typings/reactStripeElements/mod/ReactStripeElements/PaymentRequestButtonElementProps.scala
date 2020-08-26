@@ -1,63 +1,36 @@
 package typings.reactStripeElements.mod.ReactStripeElements
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.stripeV3.anon.Base
-import typings.stripeV3.anon.Complete
-import typings.stripeV3.stripe.paymentRequest.StripePaymentRequest
-import typings.stripeV3.stripeV3Strings.default
-import typings.stripeV3.stripeV3Strings.solid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PaymentRequestButtonElementProps extends ElementProps {
-  var onClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
 }
 
 object PaymentRequestButtonElementProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    classes: Base = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementRef: /* ref */ js.Any => Unit = null,
-    hideIcon: js.UndefOr[Boolean] = js.undefined,
-    hidePostalCode: js.UndefOr[Boolean] = js.undefined,
-    iconStyle: solid | default = null,
-    id: String = null,
-    onBlur: /* event */ ElementChangeResponse => Unit = null,
-    onChange: /* event */ ElementChangeResponse => Unit = null,
-    onClick: /* event */ js.Any => Unit = null,
-    onFocus: /* event */ ElementChangeResponse => Unit = null,
-    onReady: /* el */ HTMLStripeElement => Unit = null,
-    paymentRequest: StripePaymentRequest = null,
-    placeholder: String = null,
-    placeholderCountry: String = null,
-    style: Complete = null,
-    supportedCountries: js.Array[String] = null,
-    value: String | StringDictionary[String] = null
-  ): PaymentRequestButtonElementProps = {
+  def apply(): PaymentRequestButtonElementProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementRef != null) __obj.updateDynamic("elementRef")(js.Any.fromFunction1(elementRef))
-    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePostalCode)) __obj.updateDynamic("hidePostalCode")(hidePostalCode.get.asInstanceOf[js.Any])
-    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
-    if (paymentRequest != null) __obj.updateDynamic("paymentRequest")(paymentRequest.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (placeholderCountry != null) __obj.updateDynamic("placeholderCountry")(placeholderCountry.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (supportedCountries != null) __obj.updateDynamic("supportedCountries")(supportedCountries.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentRequestButtonElementProps]
   }
+  @scala.inline
+  implicit class PaymentRequestButtonElementPropsOps[Self <: PaymentRequestButtonElementProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnClick(value: /* event */ js.Any => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+  }
+  
 }
 

@@ -38,24 +38,50 @@ trait JobBookmarkEntry extends js.Object {
 
 object JobBookmarkEntry {
   @scala.inline
-  def apply(
-    Attempt: js.UndefOr[IntegerValue] = js.undefined,
-    JobBookmark: JsonValue = null,
-    JobName: JobName = null,
-    PreviousRunId: RunId = null,
-    Run: js.UndefOr[IntegerValue] = js.undefined,
-    RunId: RunId = null,
-    Version: js.UndefOr[IntegerValue] = js.undefined
-  ): JobBookmarkEntry = {
+  def apply(): JobBookmarkEntry = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Attempt)) __obj.updateDynamic("Attempt")(Attempt.get.asInstanceOf[js.Any])
-    if (JobBookmark != null) __obj.updateDynamic("JobBookmark")(JobBookmark.asInstanceOf[js.Any])
-    if (JobName != null) __obj.updateDynamic("JobName")(JobName.asInstanceOf[js.Any])
-    if (PreviousRunId != null) __obj.updateDynamic("PreviousRunId")(PreviousRunId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Run)) __obj.updateDynamic("Run")(Run.get.asInstanceOf[js.Any])
-    if (RunId != null) __obj.updateDynamic("RunId")(RunId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobBookmarkEntry]
   }
+  @scala.inline
+  implicit class JobBookmarkEntryOps[Self <: JobBookmarkEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttempt(value: IntegerValue): Self = this.set("Attempt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttempt: Self = this.set("Attempt", js.undefined)
+    @scala.inline
+    def setJobBookmark(value: JsonValue): Self = this.set("JobBookmark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobBookmark: Self = this.set("JobBookmark", js.undefined)
+    @scala.inline
+    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("JobName", js.undefined)
+    @scala.inline
+    def setPreviousRunId(value: RunId): Self = this.set("PreviousRunId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousRunId: Self = this.set("PreviousRunId", js.undefined)
+    @scala.inline
+    def setRun(value: IntegerValue): Self = this.set("Run", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRun: Self = this.set("Run", js.undefined)
+    @scala.inline
+    def setRunId(value: RunId): Self = this.set("RunId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunId: Self = this.set("RunId", js.undefined)
+    @scala.inline
+    def setVersion(value: IntegerValue): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

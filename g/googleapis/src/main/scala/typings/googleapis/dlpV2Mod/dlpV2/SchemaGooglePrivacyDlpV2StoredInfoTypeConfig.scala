@@ -25,16 +25,34 @@ trait SchemaGooglePrivacyDlpV2StoredInfoTypeConfig extends js.Object {
 
 object SchemaGooglePrivacyDlpV2StoredInfoTypeConfig {
   @scala.inline
-  def apply(
-    description: String = null,
-    displayName: String = null,
-    largeCustomDictionary: SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig = null
-  ): SchemaGooglePrivacyDlpV2StoredInfoTypeConfig = {
+  def apply(): SchemaGooglePrivacyDlpV2StoredInfoTypeConfig = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (largeCustomDictionary != null) __obj.updateDynamic("largeCustomDictionary")(largeCustomDictionary.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2StoredInfoTypeConfig]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2StoredInfoTypeConfigOps[Self <: SchemaGooglePrivacyDlpV2StoredInfoTypeConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setLargeCustomDictionary(value: SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig): Self = this.set("largeCustomDictionary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLargeCustomDictionary: Self = this.set("largeCustomDictionary", js.undefined)
+  }
+  
 }
 

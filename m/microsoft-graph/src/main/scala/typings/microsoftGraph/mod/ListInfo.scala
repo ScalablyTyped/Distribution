@@ -4,30 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListInfo extends js.Object {
   // If true, indicates that content types are enabled for this list.
-  var contentTypesEnabled: js.UndefOr[Boolean] = js.undefined
+  var contentTypesEnabled: js.UndefOr[Boolean] = js.native
   // If true, indicates that the list is not normally visible in the SharePoint user experience.
-  var hidden: js.UndefOr[Boolean] = js.undefined
+  var hidden: js.UndefOr[Boolean] = js.native
   /**
     * An enumerated value that represents the base list template used in creating the list. Possible values include
     * documentLibrary, genericList, task, survey, announcements, contacts, and more.
     */
-  var template: js.UndefOr[String] = js.undefined
+  var template: js.UndefOr[String] = js.native
 }
 
 object ListInfo {
   @scala.inline
-  def apply(
-    contentTypesEnabled: js.UndefOr[Boolean] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    template: String = null
-  ): ListInfo = {
+  def apply(): ListInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contentTypesEnabled)) __obj.updateDynamic("contentTypesEnabled")(contentTypesEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInfo]
   }
+  @scala.inline
+  implicit class ListInfoOps[Self <: ListInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentTypesEnabled(value: Boolean): Self = this.set("contentTypesEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentTypesEnabled: Self = this.set("contentTypesEnabled", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+  }
+  
 }
 

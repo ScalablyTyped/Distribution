@@ -13,12 +13,6 @@ class AggregateError protected ()
   extends typings.std.AggregateError {
   def this(errors: Iterable[_]) = this()
   def this(errors: Iterable[_], message: java.lang.String) = this()
-  /* CompleteClass */
-  override var errors: js.Array[_] = js.native
-  /* CompleteClass */
-  override var message: java.lang.String = js.native
-  /* CompleteClass */
-  override var name: java.lang.String = js.native
 }
 
 @JSGlobal("AggregateError")

@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RequestError protected () extends Error {
   def this(message: String) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   @JSName("name")
   var name_RequestError: typings.reduxApiMiddleware.reduxApiMiddlewareStrings.RequestError = js.native
 }

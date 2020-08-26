@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 @JSImport("googleapis/build/src/apis/content", "VERSIONS")
 @js.native
 object ^ extends js.Object {
-  var v2: Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Content] = js.native
+  var v2: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Content] = js.native
   @JSName("v2.1")
   var v2Dot1: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     typings.googleapis.v21Mod.contentV21.Content
   ] = js.native
 }

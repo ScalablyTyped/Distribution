@@ -11,8 +11,8 @@ Easy interface for Google's Cloud Messaging service (now Firebase Cloud Messagin
 | Full name          | node-gcm |
 | Keywords           | google, cloud, push, notifications, android, c2dm, gcm, fcm, firebase, ios, apn, messaging |
 | # releases         | 5 |
-| # dependents       | 95 |
-| # downloads        | 1530273 |
+| # dependents       | 96 |
+| # downloads        | 1547094 |
 | # stars            | 49 |
 
 ## Links

@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistanceMatrixRowElement extends js.Object {
   /**
     * The total distance of this route, expressed in meters (`value`) and as `text`.
     * The textual value uses the `unit` system specified with the unit parameter of the original request, or the origin's region.
     */
-  var distance: Distance
+  var distance: Distance = js.native
   /**
     * The length of time it takes to travel this route, expressed in seconds (the `value` field) and as `text`.
     * The textual representation is localized according to the query's `language` parameter.
     */
-  var duration: Duration
+  var duration: Duration = js.native
   /**
     * The length of time it takes to travel this route, based on current and historical traffic conditions.
     * See the `traffic_model` request parameter for the options you can use to request that the returned value is
@@ -26,14 +27,14 @@ trait DistanceMatrixRowElement extends js.Object {
     *  - Traffic conditions are available for the requested route.
     *  - The `mode` parameter is set to `driving`.
     */
-  var duration_in_traffic: Duration
+  var duration_in_traffic: Duration = js.native
   /**
     * If present, contains the total fare (that is, the total ticket costs) on this route.
     * This property is only returned for transit requests and only for transit providers where fare information is available.
     */
-  var fare: TransitFare
+  var fare: TransitFare = js.native
   /** possible status codes  */
-  var status: DistanceMatrixResponseElementLevelStatus
+  var status: DistanceMatrixResponseElementLevelStatus = js.native
 }
 
 object DistanceMatrixRowElement {
@@ -48,5 +49,28 @@ object DistanceMatrixRowElement {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], duration_in_traffic = duration_in_traffic.asInstanceOf[js.Any], fare = fare.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceMatrixRowElement]
   }
+  @scala.inline
+  implicit class DistanceMatrixRowElementOps[Self <: DistanceMatrixRowElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDistance(value: Distance): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDuration(value: Duration): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDuration_in_traffic(value: Duration): Self = this.set("duration_in_traffic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFare(value: TransitFare): Self = this.set("fare", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: DistanceMatrixResponseElementLevelStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -32,16 +32,36 @@ trait SchemaCommitRequest extends js.Object {
 
 object SchemaCommitRequest {
   @scala.inline
-  def apply(
-    mutations: js.Array[SchemaMutation] = null,
-    singleUseTransaction: SchemaTransactionOptions = null,
-    transactionId: String = null
-  ): SchemaCommitRequest = {
+  def apply(): SchemaCommitRequest = {
     val __obj = js.Dynamic.literal()
-    if (mutations != null) __obj.updateDynamic("mutations")(mutations.asInstanceOf[js.Any])
-    if (singleUseTransaction != null) __obj.updateDynamic("singleUseTransaction")(singleUseTransaction.asInstanceOf[js.Any])
-    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCommitRequest]
   }
+  @scala.inline
+  implicit class SchemaCommitRequestOps[Self <: SchemaCommitRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMutationsVarargs(value: SchemaMutation*): Self = this.set("mutations", js.Array(value :_*))
+    @scala.inline
+    def setMutations(value: js.Array[SchemaMutation]): Self = this.set("mutations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMutations: Self = this.set("mutations", js.undefined)
+    @scala.inline
+    def setSingleUseTransaction(value: SchemaTransactionOptions): Self = this.set("singleUseTransaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleUseTransaction: Self = this.set("singleUseTransaction", js.undefined)
+    @scala.inline
+    def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
+  }
+  
 }
 

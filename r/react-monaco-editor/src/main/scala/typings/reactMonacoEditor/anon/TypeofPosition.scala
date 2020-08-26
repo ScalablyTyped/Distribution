@@ -13,12 +13,12 @@ trait TypeofPosition extends Instantiable2[/* lineNumber */ Double, /* column */
     * A function that compares positions, useful for sorting
     */
   def compare(a: IPosition, b: IPosition): Double = js.native
-  def equals(): Boolean = js.native
-  def equals(a: Null, b: IPosition): Boolean = js.native
-  def equals(a: IPosition): Boolean = js.native
   /**
     * Test if position `a` equals position `b`
     */
+  def equals(): Boolean = js.native
+  def equals(a: Null, b: IPosition): Boolean = js.native
+  def equals(a: IPosition): Boolean = js.native
   def equals(a: IPosition, b: IPosition): Boolean = js.native
   /**
     * Test if position `a` is before position `b`.

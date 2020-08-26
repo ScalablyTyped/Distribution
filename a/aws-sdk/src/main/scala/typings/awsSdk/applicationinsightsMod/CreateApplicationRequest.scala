@@ -30,19 +30,42 @@ trait CreateApplicationRequest extends js.Object {
 
 object CreateApplicationRequest {
   @scala.inline
-  def apply(
-    ResourceGroupName: ResourceGroupName,
-    CWEMonitorEnabled: js.UndefOr[CWEMonitorEnabled] = js.undefined,
-    OpsCenterEnabled: js.UndefOr[OpsCenterEnabled] = js.undefined,
-    OpsItemSNSTopicArn: OpsItemSNSTopicArn = null,
-    Tags: TagList = null
-  ): CreateApplicationRequest = {
+  def apply(ResourceGroupName: ResourceGroupName): CreateApplicationRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(CWEMonitorEnabled)) __obj.updateDynamic("CWEMonitorEnabled")(CWEMonitorEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(OpsCenterEnabled)) __obj.updateDynamic("OpsCenterEnabled")(OpsCenterEnabled.get.asInstanceOf[js.Any])
-    if (OpsItemSNSTopicArn != null) __obj.updateDynamic("OpsItemSNSTopicArn")(OpsItemSNSTopicArn.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationRequest]
   }
+  @scala.inline
+  implicit class CreateApplicationRequestOps[Self <: CreateApplicationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceGroupName(value: ResourceGroupName): Self = this.set("ResourceGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCWEMonitorEnabled(value: CWEMonitorEnabled): Self = this.set("CWEMonitorEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCWEMonitorEnabled: Self = this.set("CWEMonitorEnabled", js.undefined)
+    @scala.inline
+    def setOpsCenterEnabled(value: OpsCenterEnabled): Self = this.set("OpsCenterEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpsCenterEnabled: Self = this.set("OpsCenterEnabled", js.undefined)
+    @scala.inline
+    def setOpsItemSNSTopicArn(value: OpsItemSNSTopicArn): Self = this.set("OpsItemSNSTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpsItemSNSTopicArn: Self = this.set("OpsItemSNSTopicArn", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

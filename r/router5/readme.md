@@ -12,7 +12,7 @@ A simple, powerful, view-agnostic, modular and extensible router
 | Keywords           | router, routing, html5, functional, reactive, universal, isomorphic |
 | # releases         | 31 |
 | # dependents       | 18 |
-| # downloads        | 718403 |
+| # downloads        | 723104 |
 | # stars            | 5 |
 
 ## Links

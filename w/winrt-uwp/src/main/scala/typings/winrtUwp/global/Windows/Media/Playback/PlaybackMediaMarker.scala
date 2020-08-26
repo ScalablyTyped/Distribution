@@ -21,14 +21,5 @@ class PlaybackMediaMarker protected ()
     * @param text The text of the media marker.
     */
   def this(value: Double, mediaMarketType: String, text: String) = this()
-  /** Gets the type of the media marker. */
-  /* CompleteClass */
-  override var mediaMarkerType: String = js.native
-  /** Gets the text associated with the marker. */
-  /* CompleteClass */
-  override var text: String = js.native
-  /** Gets the offset in the media timeline where the marker occurs. */
-  /* CompleteClass */
-  override var time: Double = js.native
 }
 

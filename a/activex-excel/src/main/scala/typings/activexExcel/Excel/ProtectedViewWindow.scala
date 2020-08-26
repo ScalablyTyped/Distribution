@@ -27,7 +27,11 @@ trait ProtectedViewWindow extends js.Object {
   def Edit(): typings.activexExcel.Excel.Workbook = js.native
   def Edit(WriteResPassword: String): typings.activexExcel.Excel.Workbook = js.native
   @JSName("Edit")
+  def Edit_0(WriteResPassword: js.UndefOr[scala.Nothing], UpdateLinks: `0`): typings.activexExcel.Excel.Workbook = js.native
+  @JSName("Edit")
   def Edit_0(WriteResPassword: String, UpdateLinks: `0`): typings.activexExcel.Excel.Workbook = js.native
+  @JSName("Edit")
+  def Edit_1(WriteResPassword: js.UndefOr[scala.Nothing], UpdateLinks: `1`): typings.activexExcel.Excel.Workbook = js.native
   @JSName("Edit")
   def Edit_1(WriteResPassword: String, UpdateLinks: `1`): typings.activexExcel.Excel.Workbook = js.native
 }

@@ -22,16 +22,34 @@ trait EntityTypesEvaluationMetrics extends js.Object {
 
 object EntityTypesEvaluationMetrics {
   @scala.inline
-  def apply(
-    F1Score: js.UndefOr[Double] = js.undefined,
-    Precision: js.UndefOr[Double] = js.undefined,
-    Recall: js.UndefOr[Double] = js.undefined
-  ): EntityTypesEvaluationMetrics = {
+  def apply(): EntityTypesEvaluationMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(F1Score)) __obj.updateDynamic("F1Score")(F1Score.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Precision)) __obj.updateDynamic("Precision")(Precision.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Recall)) __obj.updateDynamic("Recall")(Recall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityTypesEvaluationMetrics]
   }
+  @scala.inline
+  implicit class EntityTypesEvaluationMetricsOps[Self <: EntityTypesEvaluationMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setF1Score(value: Double): Self = this.set("F1Score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteF1Score: Self = this.set("F1Score", js.undefined)
+    @scala.inline
+    def setPrecision(value: Double): Self = this.set("Precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("Precision", js.undefined)
+    @scala.inline
+    def setRecall(value: Double): Self = this.set("Recall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecall: Self = this.set("Recall", js.undefined)
+  }
+  
 }
 

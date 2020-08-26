@@ -11,6 +11,7 @@ object ^ extends js.Object {
   def apply(callback: Callback): Stringifier = js.native
   def apply(input: Input): Stringifier = js.native
   def apply(input: Input, callback: Callback): Stringifier = js.native
+  def apply(input: Input, options: js.UndefOr[scala.Nothing], callback: Callback): Stringifier = js.native
   def apply(input: Input, options: Options): Stringifier = js.native
   def apply(input: Input, options: Options, callback: Callback): Stringifier = js.native
   def apply(options: Options): Stringifier = js.native

@@ -22,12 +22,34 @@ trait DBClusterRole extends js.Object {
 
 object DBClusterRole {
   @scala.inline
-  def apply(FeatureName: String = null, RoleArn: String = null, Status: String = null): DBClusterRole = {
+  def apply(): DBClusterRole = {
     val __obj = js.Dynamic.literal()
-    if (FeatureName != null) __obj.updateDynamic("FeatureName")(FeatureName.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterRole]
   }
+  @scala.inline
+  implicit class DBClusterRoleOps[Self <: DBClusterRole] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFeatureName(value: String): Self = this.set("FeatureName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureName: Self = this.set("FeatureName", js.undefined)
+    @scala.inline
+    def setRoleArn(value: String): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

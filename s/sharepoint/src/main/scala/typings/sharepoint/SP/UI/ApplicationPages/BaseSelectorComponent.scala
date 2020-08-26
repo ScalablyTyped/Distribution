@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseSelectorComponent extends ISelectorComponent
 
 object BaseSelectorComponent {

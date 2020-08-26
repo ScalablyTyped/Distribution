@@ -66,38 +66,90 @@ trait Cluster extends js.Object {
 
 object Cluster {
   @scala.inline
-  def apply(
-    activeServicesCount: js.UndefOr[Integer] = js.undefined,
-    attachments: Attachments = null,
-    attachmentsStatus: String = null,
-    capacityProviders: StringList = null,
-    clusterArn: String = null,
-    clusterName: String = null,
-    defaultCapacityProviderStrategy: CapacityProviderStrategy = null,
-    pendingTasksCount: js.UndefOr[Integer] = js.undefined,
-    registeredContainerInstancesCount: js.UndefOr[Integer] = js.undefined,
-    runningTasksCount: js.UndefOr[Integer] = js.undefined,
-    settings: ClusterSettings = null,
-    statistics: Statistics = null,
-    status: String = null,
-    tags: Tags = null
-  ): Cluster = {
+  def apply(): Cluster = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeServicesCount)) __obj.updateDynamic("activeServicesCount")(activeServicesCount.get.asInstanceOf[js.Any])
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (attachmentsStatus != null) __obj.updateDynamic("attachmentsStatus")(attachmentsStatus.asInstanceOf[js.Any])
-    if (capacityProviders != null) __obj.updateDynamic("capacityProviders")(capacityProviders.asInstanceOf[js.Any])
-    if (clusterArn != null) __obj.updateDynamic("clusterArn")(clusterArn.asInstanceOf[js.Any])
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
-    if (defaultCapacityProviderStrategy != null) __obj.updateDynamic("defaultCapacityProviderStrategy")(defaultCapacityProviderStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(pendingTasksCount)) __obj.updateDynamic("pendingTasksCount")(pendingTasksCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(registeredContainerInstancesCount)) __obj.updateDynamic("registeredContainerInstancesCount")(registeredContainerInstancesCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(runningTasksCount)) __obj.updateDynamic("runningTasksCount")(runningTasksCount.get.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cluster]
   }
+  @scala.inline
+  implicit class ClusterOps[Self <: Cluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveServicesCount(value: Integer): Self = this.set("activeServicesCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveServicesCount: Self = this.set("activeServicesCount", js.undefined)
+    @scala.inline
+    def setAttachmentsVarargs(value: Attachment*): Self = this.set("attachments", js.Array(value :_*))
+    @scala.inline
+    def setAttachments(value: Attachments): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    @scala.inline
+    def setAttachmentsStatus(value: String): Self = this.set("attachmentsStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentsStatus: Self = this.set("attachmentsStatus", js.undefined)
+    @scala.inline
+    def setCapacityProvidersVarargs(value: String*): Self = this.set("capacityProviders", js.Array(value :_*))
+    @scala.inline
+    def setCapacityProviders(value: StringList): Self = this.set("capacityProviders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityProviders: Self = this.set("capacityProviders", js.undefined)
+    @scala.inline
+    def setClusterArn(value: String): Self = this.set("clusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterArn: Self = this.set("clusterArn", js.undefined)
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    @scala.inline
+    def setDefaultCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = this.set("defaultCapacityProviderStrategy", js.Array(value :_*))
+    @scala.inline
+    def setDefaultCapacityProviderStrategy(value: CapacityProviderStrategy): Self = this.set("defaultCapacityProviderStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCapacityProviderStrategy: Self = this.set("defaultCapacityProviderStrategy", js.undefined)
+    @scala.inline
+    def setPendingTasksCount(value: Integer): Self = this.set("pendingTasksCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingTasksCount: Self = this.set("pendingTasksCount", js.undefined)
+    @scala.inline
+    def setRegisteredContainerInstancesCount(value: Integer): Self = this.set("registeredContainerInstancesCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisteredContainerInstancesCount: Self = this.set("registeredContainerInstancesCount", js.undefined)
+    @scala.inline
+    def setRunningTasksCount(value: Integer): Self = this.set("runningTasksCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunningTasksCount: Self = this.set("runningTasksCount", js.undefined)
+    @scala.inline
+    def setSettingsVarargs(value: ClusterSetting*): Self = this.set("settings", js.Array(value :_*))
+    @scala.inline
+    def setSettings(value: ClusterSettings): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setStatisticsVarargs(value: KeyValuePair*): Self = this.set("statistics", js.Array(value :_*))
+    @scala.inline
+    def setStatistics(value: Statistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

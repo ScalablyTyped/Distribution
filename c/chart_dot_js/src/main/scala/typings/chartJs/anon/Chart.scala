@@ -5,27 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Chart extends js.Object {
-  var chart: js.UndefOr[typings.chartJs.mod.Chart] = js.undefined
-  var dataIndex: js.UndefOr[Double] = js.undefined
-  var dataset: js.UndefOr[ChartDataSets] = js.undefined
-  var datasetIndex: js.UndefOr[Double] = js.undefined
+  var chart: js.UndefOr[typings.chartJs.mod.Chart] = js.native
+  var dataIndex: js.UndefOr[Double] = js.native
+  var dataset: js.UndefOr[ChartDataSets] = js.native
+  var datasetIndex: js.UndefOr[Double] = js.native
 }
 
 object Chart {
   @scala.inline
-  def apply(
-    chart: typings.chartJs.mod.Chart = null,
-    dataIndex: js.UndefOr[Double] = js.undefined,
-    dataset: ChartDataSets = null,
-    datasetIndex: js.UndefOr[Double] = js.undefined
-  ): Chart = {
+  def apply(): Chart = {
     val __obj = js.Dynamic.literal()
-    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataIndex)) __obj.updateDynamic("dataIndex")(dataIndex.get.asInstanceOf[js.Any])
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
-    if (!js.isUndefined(datasetIndex)) __obj.updateDynamic("datasetIndex")(datasetIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chart]
   }
+  @scala.inline
+  implicit class ChartOps[Self <: Chart] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChart(value: typings.chartJs.mod.Chart): Self = this.set("chart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChart: Self = this.set("chart", js.undefined)
+    @scala.inline
+    def setDataIndex(value: Double): Self = this.set("dataIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataIndex: Self = this.set("dataIndex", js.undefined)
+    @scala.inline
+    def setDataset(value: ChartDataSets): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataset: Self = this.set("dataset", js.undefined)
+    @scala.inline
+    def setDatasetIndex(value: Double): Self = this.set("datasetIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetIndex: Self = this.set("datasetIndex", js.undefined)
+  }
+  
 }
 

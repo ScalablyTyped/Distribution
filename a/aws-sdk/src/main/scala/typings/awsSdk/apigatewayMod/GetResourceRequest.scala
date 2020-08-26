@@ -22,10 +22,32 @@ trait GetResourceRequest extends js.Object {
 
 object GetResourceRequest {
   @scala.inline
-  def apply(resourceId: String, restApiId: String, embed: ListOfString = null): GetResourceRequest = {
+  def apply(resourceId: String, restApiId: String): GetResourceRequest = {
     val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-    if (embed != null) __obj.updateDynamic("embed")(embed.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceRequest]
   }
+  @scala.inline
+  implicit class GetResourceRequestOps[Self <: GetResourceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmbedVarargs(value: String*): Self = this.set("embed", js.Array(value :_*))
+    @scala.inline
+    def setEmbed(value: ListOfString): Self = this.set("embed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbed: Self = this.set("embed", js.undefined)
+  }
+  
 }
 

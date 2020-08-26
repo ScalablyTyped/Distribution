@@ -5,17 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColdSubscription
   extends /* key */ StringDictionary[js.UndefOr[js.Function]] {
-  def stop(): Unit
+  def stop(): Unit = js.native
 }
 
 object ColdSubscription {
   @scala.inline
-  def apply(stop: () => Unit, StringDictionary: /* key */ StringDictionary[js.UndefOr[js.Function]] = null): ColdSubscription = {
+  def apply(stop: () => Unit): ColdSubscription = {
     val __obj = js.Dynamic.literal(stop = js.Any.fromFunction0(stop))
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ColdSubscription]
   }
+  @scala.inline
+  implicit class ColdSubscriptionOps[Self <: ColdSubscription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+  }
+  
 }
 

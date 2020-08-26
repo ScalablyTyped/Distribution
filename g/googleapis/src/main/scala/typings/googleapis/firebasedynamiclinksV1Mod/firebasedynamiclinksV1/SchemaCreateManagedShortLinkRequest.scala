@@ -42,20 +42,42 @@ trait SchemaCreateManagedShortLinkRequest extends js.Object {
 
 object SchemaCreateManagedShortLinkRequest {
   @scala.inline
-  def apply(
-    dynamicLinkInfo: SchemaDynamicLinkInfo = null,
-    longDynamicLink: String = null,
-    name: String = null,
-    sdkVersion: String = null,
-    suffix: SchemaSuffix = null
-  ): SchemaCreateManagedShortLinkRequest = {
+  def apply(): SchemaCreateManagedShortLinkRequest = {
     val __obj = js.Dynamic.literal()
-    if (dynamicLinkInfo != null) __obj.updateDynamic("dynamicLinkInfo")(dynamicLinkInfo.asInstanceOf[js.Any])
-    if (longDynamicLink != null) __obj.updateDynamic("longDynamicLink")(longDynamicLink.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sdkVersion != null) __obj.updateDynamic("sdkVersion")(sdkVersion.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateManagedShortLinkRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateManagedShortLinkRequestOps[Self <: SchemaCreateManagedShortLinkRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDynamicLinkInfo(value: SchemaDynamicLinkInfo): Self = this.set("dynamicLinkInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamicLinkInfo: Self = this.set("dynamicLinkInfo", js.undefined)
+    @scala.inline
+    def setLongDynamicLink(value: String): Self = this.set("longDynamicLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongDynamicLink: Self = this.set("longDynamicLink", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSdkVersion(value: String): Self = this.set("sdkVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSdkVersion: Self = this.set("sdkVersion", js.undefined)
+    @scala.inline
+    def setSuffix(value: SchemaSuffix): Self = this.set("suffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuffix: Self = this.set("suffix", js.undefined)
+  }
+  
 }
 

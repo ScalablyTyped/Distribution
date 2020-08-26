@@ -16,6 +16,9 @@ object minioStrings {
   sealed trait `ap-southeast-2` extends _Region
   
   @js.native
+  sealed trait close extends js.Object
+  
+  @js.native
   sealed trait `cn-north-1` extends _Region
   
   @js.native
@@ -37,10 +40,19 @@ object minioStrings {
   sealed trait none extends js.Object
   
   @js.native
+  sealed trait pause extends js.Object
+  
+  @js.native
+  sealed trait readable extends js.Object
+  
+  @js.native
   sealed trait readonly extends js.Object
   
   @js.native
   sealed trait readwrite extends js.Object
+  
+  @js.native
+  sealed trait resume extends js.Object
   
   @js.native
   sealed trait `sa-east-1` extends _Region
@@ -64,6 +76,8 @@ object minioStrings {
   @scala.inline
   def `ap-southeast-2`: `ap-southeast-2` = "ap-southeast-2".asInstanceOf[`ap-southeast-2`]
   @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def `cn-north-1`: `cn-north-1` = "cn-north-1".asInstanceOf[`cn-north-1`]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
@@ -78,9 +92,15 @@ object minioStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
+  def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
+  def readable: readable = "readable".asInstanceOf[readable]
+  @scala.inline
   def readonly: readonly = "readonly".asInstanceOf[readonly]
   @scala.inline
   def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
+  @scala.inline
+  def resume: resume = "resume".asInstanceOf[resume]
   @scala.inline
   def `sa-east-1`: `sa-east-1` = "sa-east-1".asInstanceOf[`sa-east-1`]
   @scala.inline

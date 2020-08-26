@@ -16,15 +16,18 @@ object webidl2jsWrapperMod extends js.Object {
     def convert(obj: js.Any): implementation = js.native
     def convert(obj: js.Any, options: Options): implementation = js.native
     def create(globalObject: js.Object): typings.std.URL = js.native
+    def create(globalObject: js.Object, hasUrlBase: js.UndefOr[scala.Nothing], privateData: js.Object): typings.std.URL = js.native
     def create(globalObject: js.Object, hasUrlBase: js.Tuple2[String, js.UndefOr[String]]): typings.std.URL = js.native
     def create(globalObject: js.Object, hasUrlBase: js.Tuple2[String, js.UndefOr[String]], privateData: js.Object): typings.std.URL = js.native
     def createImpl(globalObject: js.Object): implementation = js.native
+    def createImpl(globalObject: js.Object, hasUrlBase: js.UndefOr[scala.Nothing], privateData: js.Object): implementation = js.native
     def createImpl(globalObject: js.Object, hasUrlBase: js.Tuple2[String, js.UndefOr[String]]): implementation = js.native
     def createImpl(globalObject: js.Object, hasUrlBase: js.Tuple2[String, js.UndefOr[String]], privateData: js.Object): implementation = js.native
     def install(globalObject: js.Object): Unit = js.native
     def is(obj: js.Any): /* is std.URL */ Boolean = js.native
     def isImpl(obj: js.Any): /* is whatwg-url.whatwg-url/lib/URL-impl.implementation */ Boolean = js.native
     def setup[T /* <: typings.std.URL */](obj: T, globalObject: js.Object): T = js.native
+    def setup[T /* <: typings.std.URL */](obj: T, globalObject: js.Object, hasUrlBase: js.UndefOr[scala.Nothing], privateData: js.Object): T = js.native
     def setup[T /* <: typings.std.URL */](obj: T, globalObject: js.Object, hasUrlBase: js.Tuple2[String, js.UndefOr[String]]): T = js.native
     def setup[T /* <: typings.std.URL */](
       obj: T,

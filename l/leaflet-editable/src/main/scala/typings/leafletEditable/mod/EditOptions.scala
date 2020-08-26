@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 /**
   * Options to pass to L.Editable when instanciating.
   */
+@js.native
 trait EditOptions extends js.Object {
   /**
     * CSS class to be added to the map container while drawing.
     */
-  var drawingCSSClass: js.UndefOr[String] = js.undefined
+  var drawingCSSClass: js.UndefOr[String] = js.native
   /**
     * Layer used to store edit tools (vertex, line guide…).
     */
@@ -20,87 +21,127 @@ trait EditOptions extends js.Object {
     LayerGroup_[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ILayer */ _
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Default layer used to store drawn features (marker, polyline…).
     */
-  var featuresLayer: js.UndefOr[LayerGroup_[Polyline | Polygon | Marker]] = js.undefined
+  var featuresLayer: js.UndefOr[LayerGroup_[Polyline | Polygon | Marker]] = js.native
   /**
     * Options to be passed to the line guides.
     */
-  var lineGuideOptions: js.UndefOr[js.Object] = js.undefined
+  var lineGuideOptions: js.UndefOr[js.Object] = js.native
   /**
     * Class to be used when creating a new Marker.
     */
-  var markerClass: js.UndefOr[js.Object] = js.undefined
+  var markerClass: js.UndefOr[js.Object] = js.native
   /**
     * Class to be used as Marker editor.
     */
-  var markerEditorClass: js.UndefOr[js.Object] = js.undefined
+  var markerEditorClass: js.UndefOr[js.Object] = js.native
   /**
     * Class to be used as middle vertex, pulled by the user to create a new point in the middle of a path.
     */
-  var middleMarkerClass: js.UndefOr[js.Object] = js.undefined
+  var middleMarkerClass: js.UndefOr[js.Object] = js.native
   /**
     * Class to be used when creating a new Polygon.
     */
-  var polygonClass: js.UndefOr[js.Object] = js.undefined
+  var polygonClass: js.UndefOr[js.Object] = js.native
   /**
     * Class to be used as Polygon editor.
     */
-  var polygonEditorClass: js.UndefOr[js.Object] = js.undefined
+  var polygonEditorClass: js.UndefOr[js.Object] = js.native
   /**
     * Class to be used when creating a new Polyline.
     */
-  var polylineClass: js.UndefOr[js.Object] = js.undefined
+  var polylineClass: js.UndefOr[js.Object] = js.native
   /**
     * Class to be used as Polyline editor.
     */
-  var polylineEditorClass: js.UndefOr[js.Object] = js.undefined
+  var polylineEditorClass: js.UndefOr[js.Object] = js.native
   /**
     * Set this to true if you don't want middle markers.
     */
-  var skipMiddleMarkers: js.UndefOr[Boolean] = js.undefined
+  var skipMiddleMarkers: js.UndefOr[Boolean] = js.native
   /**
     * Class to be used as vertex, for path editing.
     */
-  var vertexMarkerClass: js.UndefOr[js.Object] = js.undefined
+  var vertexMarkerClass: js.UndefOr[js.Object] = js.native
 }
 
 object EditOptions {
   @scala.inline
-  def apply(
-    drawingCSSClass: String = null,
-    editLayer: LayerGroup_[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ILayer */ _
-    ] = null,
-    featuresLayer: LayerGroup_[Polyline | Polygon | Marker] = null,
-    lineGuideOptions: js.Object = null,
-    markerClass: js.Object = null,
-    markerEditorClass: js.Object = null,
-    middleMarkerClass: js.Object = null,
-    polygonClass: js.Object = null,
-    polygonEditorClass: js.Object = null,
-    polylineClass: js.Object = null,
-    polylineEditorClass: js.Object = null,
-    skipMiddleMarkers: js.UndefOr[Boolean] = js.undefined,
-    vertexMarkerClass: js.Object = null
-  ): EditOptions = {
+  def apply(): EditOptions = {
     val __obj = js.Dynamic.literal()
-    if (drawingCSSClass != null) __obj.updateDynamic("drawingCSSClass")(drawingCSSClass.asInstanceOf[js.Any])
-    if (editLayer != null) __obj.updateDynamic("editLayer")(editLayer.asInstanceOf[js.Any])
-    if (featuresLayer != null) __obj.updateDynamic("featuresLayer")(featuresLayer.asInstanceOf[js.Any])
-    if (lineGuideOptions != null) __obj.updateDynamic("lineGuideOptions")(lineGuideOptions.asInstanceOf[js.Any])
-    if (markerClass != null) __obj.updateDynamic("markerClass")(markerClass.asInstanceOf[js.Any])
-    if (markerEditorClass != null) __obj.updateDynamic("markerEditorClass")(markerEditorClass.asInstanceOf[js.Any])
-    if (middleMarkerClass != null) __obj.updateDynamic("middleMarkerClass")(middleMarkerClass.asInstanceOf[js.Any])
-    if (polygonClass != null) __obj.updateDynamic("polygonClass")(polygonClass.asInstanceOf[js.Any])
-    if (polygonEditorClass != null) __obj.updateDynamic("polygonEditorClass")(polygonEditorClass.asInstanceOf[js.Any])
-    if (polylineClass != null) __obj.updateDynamic("polylineClass")(polylineClass.asInstanceOf[js.Any])
-    if (polylineEditorClass != null) __obj.updateDynamic("polylineEditorClass")(polylineEditorClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipMiddleMarkers)) __obj.updateDynamic("skipMiddleMarkers")(skipMiddleMarkers.get.asInstanceOf[js.Any])
-    if (vertexMarkerClass != null) __obj.updateDynamic("vertexMarkerClass")(vertexMarkerClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditOptions]
   }
+  @scala.inline
+  implicit class EditOptionsOps[Self <: EditOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDrawingCSSClass(value: String): Self = this.set("drawingCSSClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawingCSSClass: Self = this.set("drawingCSSClass", js.undefined)
+    @scala.inline
+    def setEditLayer(
+      value: LayerGroup_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ILayer */ _
+        ]
+    ): Self = this.set("editLayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditLayer: Self = this.set("editLayer", js.undefined)
+    @scala.inline
+    def setFeaturesLayer(value: LayerGroup_[Polyline | Polygon | Marker]): Self = this.set("featuresLayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeaturesLayer: Self = this.set("featuresLayer", js.undefined)
+    @scala.inline
+    def setLineGuideOptions(value: js.Object): Self = this.set("lineGuideOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineGuideOptions: Self = this.set("lineGuideOptions", js.undefined)
+    @scala.inline
+    def setMarkerClass(value: js.Object): Self = this.set("markerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerClass: Self = this.set("markerClass", js.undefined)
+    @scala.inline
+    def setMarkerEditorClass(value: js.Object): Self = this.set("markerEditorClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerEditorClass: Self = this.set("markerEditorClass", js.undefined)
+    @scala.inline
+    def setMiddleMarkerClass(value: js.Object): Self = this.set("middleMarkerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiddleMarkerClass: Self = this.set("middleMarkerClass", js.undefined)
+    @scala.inline
+    def setPolygonClass(value: js.Object): Self = this.set("polygonClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolygonClass: Self = this.set("polygonClass", js.undefined)
+    @scala.inline
+    def setPolygonEditorClass(value: js.Object): Self = this.set("polygonEditorClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolygonEditorClass: Self = this.set("polygonEditorClass", js.undefined)
+    @scala.inline
+    def setPolylineClass(value: js.Object): Self = this.set("polylineClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolylineClass: Self = this.set("polylineClass", js.undefined)
+    @scala.inline
+    def setPolylineEditorClass(value: js.Object): Self = this.set("polylineEditorClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolylineEditorClass: Self = this.set("polylineEditorClass", js.undefined)
+    @scala.inline
+    def setSkipMiddleMarkers(value: Boolean): Self = this.set("skipMiddleMarkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipMiddleMarkers: Self = this.set("skipMiddleMarkers", js.undefined)
+    @scala.inline
+    def setVertexMarkerClass(value: js.Object): Self = this.set("vertexMarkerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertexMarkerClass: Self = this.set("vertexMarkerClass", js.undefined)
+  }
+  
 }
 

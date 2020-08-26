@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
+@js.native
 trait PlusNativeObjImageSliderStyles extends js.Object {
   /**
     * 是否自动播放
@@ -20,7 +21,7 @@ trait PlusNativeObjImageSliderStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var autoplay: js.UndefOr[Boolean] = js.undefined
+  var autoplay: js.UndefOr[Boolean] = js.native
   /**
     * 是否可全屏显示
     * 可取值：
@@ -30,21 +31,21 @@ trait PlusNativeObjImageSliderStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var fullscreen: js.UndefOr[Boolean] = js.undefined
+  var fullscreen: js.UndefOr[Boolean] = js.native
   /**
     * 轮播的图片
     * 至少必须设置一张图片的地址信息，否则可能导致图片轮播控件显示不正常。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var images: js.UndefOr[js.Array[PlusNativeObj]] = js.undefined
+  var images: js.UndefOr[js.Array[PlusNativeObj]] = js.native
   /**
     * 自动播放切换时间
     * 当autoplay属性值为true时生效，单位为毫秒。默认值为3000（3秒）。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var interval: js.UndefOr[Double] = js.undefined
+  var interval: js.UndefOr[Double] = js.native
   /**
     * 是否可循环轮播
     * 可取值：
@@ -54,25 +55,49 @@ trait PlusNativeObjImageSliderStyles extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var loop: js.UndefOr[Boolean] = js.undefined
+  var loop: js.UndefOr[Boolean] = js.native
 }
 
 object PlusNativeObjImageSliderStyles {
   @scala.inline
-  def apply(
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    images: js.Array[PlusNativeObj] = null,
-    interval: js.UndefOr[Double] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined
-  ): PlusNativeObjImageSliderStyles = {
+  def apply(): PlusNativeObjImageSliderStyles = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjImageSliderStyles]
   }
+  @scala.inline
+  implicit class PlusNativeObjImageSliderStylesOps[Self <: PlusNativeObjImageSliderStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    @scala.inline
+    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    @scala.inline
+    def setImagesVarargs(value: PlusNativeObj*): Self = this.set("images", js.Array(value :_*))
+    @scala.inline
+    def setImages(value: js.Array[PlusNativeObj]): Self = this.set("images", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImages: Self = this.set("images", js.undefined)
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+  }
+  
 }
 

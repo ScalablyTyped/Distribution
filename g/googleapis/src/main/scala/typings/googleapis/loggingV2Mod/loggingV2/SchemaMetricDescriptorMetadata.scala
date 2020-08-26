@@ -30,12 +30,34 @@ trait SchemaMetricDescriptorMetadata extends js.Object {
 
 object SchemaMetricDescriptorMetadata {
   @scala.inline
-  def apply(ingestDelay: String = null, launchStage: String = null, samplePeriod: String = null): SchemaMetricDescriptorMetadata = {
+  def apply(): SchemaMetricDescriptorMetadata = {
     val __obj = js.Dynamic.literal()
-    if (ingestDelay != null) __obj.updateDynamic("ingestDelay")(ingestDelay.asInstanceOf[js.Any])
-    if (launchStage != null) __obj.updateDynamic("launchStage")(launchStage.asInstanceOf[js.Any])
-    if (samplePeriod != null) __obj.updateDynamic("samplePeriod")(samplePeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMetricDescriptorMetadata]
   }
+  @scala.inline
+  implicit class SchemaMetricDescriptorMetadataOps[Self <: SchemaMetricDescriptorMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIngestDelay(value: String): Self = this.set("ingestDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngestDelay: Self = this.set("ingestDelay", js.undefined)
+    @scala.inline
+    def setLaunchStage(value: String): Self = this.set("launchStage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchStage: Self = this.set("launchStage", js.undefined)
+    @scala.inline
+    def setSamplePeriod(value: String): Self = this.set("samplePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamplePeriod: Self = this.set("samplePeriod", js.undefined)
+  }
+  
 }
 

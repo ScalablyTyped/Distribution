@@ -2,12 +2,12 @@ package typings.fabric.fabricImplMod
 
 import typings.fabric.anon.Br
 import typings.fabric.anon.E
-import typings.fabric.anon.EEvent
 import typings.fabric.anon.Mb
 import typings.fabric.anon.PropertySet
 import typings.fabric.anon.ScaleX
 import typings.fabric.anon.Top
 import typings.fabric.anon.X
+import typings.fabric.anon.`0`
 import typings.fabric.fabricStrings.bl
 import typings.fabric.fabricStrings.br
 import typings.fabric.fabricStrings.fill
@@ -77,6 +77,7 @@ class Object ()
     * @return {Object} .y height dimension
     */
   def _getTransformedDimensions(): X = js.native
+  def _getTransformedDimensions(skewX: js.UndefOr[scala.Nothing], skewY: Double): X = js.native
   def _getTransformedDimensions(skewX: Double): X = js.native
   def _getTransformedDimensions(skewX: Double, skewY: Double): X = js.native
   /**
@@ -201,7 +202,16 @@ class Object ()
     * @return {Boolean} true if point is inside the object
     */
   def containsPoint(point: Point): Boolean = js.native
+  def containsPoint(
+    point: Point,
+    lines: js.UndefOr[scala.Nothing],
+    absolute: js.UndefOr[scala.Nothing],
+    calculate: Boolean
+  ): Boolean = js.native
+  def containsPoint(point: Point, lines: js.UndefOr[scala.Nothing], absolute: Boolean): Boolean = js.native
+  def containsPoint(point: Point, lines: js.UndefOr[scala.Nothing], absolute: Boolean, calculate: Boolean): Boolean = js.native
   def containsPoint(point: Point, lines: js.Any): Boolean = js.native
+  def containsPoint(point: Point, lines: js.Any, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def containsPoint(point: Point, lines: js.Any, absolute: Boolean): Boolean = js.native
   def containsPoint(point: Point, lines: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
   // functions from interactivity mixin
@@ -228,6 +238,7 @@ class Object ()
     * @chainable
     */
   def drawBordersInGroup(ctx: CanvasRenderingContext2D): Object = js.native
+  def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: js.UndefOr[scala.Nothing], styleOverride: js.Any): Object = js.native
   def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: js.Any): Object = js.native
   def drawBordersInGroup(ctx: CanvasRenderingContext2D, options: js.Any, styleOverride: js.Any): Object = js.native
   /**
@@ -292,6 +303,7 @@ class Object ()
     * @return {Object} Object with left, top, width, height properties
     */
   def getBoundingRect(): Top = js.native
+  def getBoundingRect(absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Top = js.native
   def getBoundingRect(absolute: Boolean): Top = js.native
   def getBoundingRect(absolute: Boolean, calculate: Boolean): Top = js.native
   /**
@@ -302,6 +314,7 @@ class Object ()
     * return correct set of coordinates for intersection
     */
   def getCoords(): js.Any = js.native
+  def getCoords(absolute: js.UndefOr[scala.Nothing], calculate: Boolean): js.Any = js.native
   def getCoords(absolute: Boolean): js.Any = js.native
   def getCoords(absolute: Boolean, calculate: Boolean): js.Any = js.native
   /**
@@ -379,6 +392,7 @@ class Object ()
     * @return {String}
     */
   def getSvgTransform(): String = js.native
+  def getSvgTransform(full: js.UndefOr[scala.Nothing], additionalTransform: String): String = js.native
   def getSvgTransform(full: Boolean): String = js.native
   def getSvgTransform(full: Boolean, additionalTransform: String): String = js.native
   /**
@@ -412,6 +426,7 @@ class Object ()
     * @return {Boolean} true if object intersects with another object
     */
   def intersectsWithObject(other: Object): Boolean = js.native
+  def intersectsWithObject(other: Object, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def intersectsWithObject(other: Object, absolute: Boolean): Boolean = js.native
   def intersectsWithObject(other: Object, absolute: Boolean, calculate: Boolean): Boolean = js.native
   /**
@@ -423,6 +438,7 @@ class Object ()
     * @return {Boolean} true if object intersects with an area formed by 2 points
     */
   def intersectsWithRect(pointTL: js.Any, pointBR: js.Any): Boolean = js.native
+  def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean): Boolean = js.native
   def intersectsWithRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
   /**
@@ -440,6 +456,7 @@ class Object ()
     * @return {Boolean} true if object is fully contained within area of another object
     */
   def isContainedWithinObject(other: Object): Boolean = js.native
+  def isContainedWithinObject(other: Object, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def isContainedWithinObject(other: Object, absolute: Boolean): Boolean = js.native
   def isContainedWithinObject(other: Object, absolute: Boolean, calculate: Boolean): Boolean = js.native
   /**
@@ -448,6 +465,7 @@ class Object ()
     * @param pointBR bottom-right point of area
     */
   def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any): Boolean = js.native
+  def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: js.UndefOr[scala.Nothing], calculate: Boolean): Boolean = js.native
   def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean): Boolean = js.native
   def isContainedWithinRect(pointTL: js.Any, pointBR: js.Any, absolute: Boolean, calculate: Boolean): Boolean = js.native
   /**
@@ -499,7 +517,7 @@ class Object ()
     * This callback function is called every time _discardActiveObject or _setActiveObject
     * try to to select this object. If the function returns true, the process is cancelled
     */
-  def onSelect(options: EEvent): Boolean = js.native
+  def onSelect(options: `0`): Boolean = js.native
   /**
     * Renders an object on a specified context
     * @param {CanvasRenderingContext2D} ctx Context to render on
@@ -603,6 +621,7 @@ class Object ()
     * @chainable
     */
   def setCoords(): Object = js.native
+  def setCoords(ignoreZoom: js.UndefOr[scala.Nothing], skipAbsolute: Boolean): Object = js.native
   def setCoords(ignoreZoom: Boolean): Object = js.native
   def setCoords(ignoreZoom: Boolean, skipAbsolute: Boolean): Object = js.native
   @JSName("setGradient")
@@ -824,6 +843,7 @@ object Object extends js.Object {
     * @return {fabric.Object}
     */
   def _fromObject(className: String, `object`: Object): Object = js.native
+  def _fromObject(className: String, `object`: Object, callback: js.UndefOr[scala.Nothing], extraParam: js.Any): Object = js.native
   def _fromObject(className: String, `object`: Object, callback: js.Function): Object = js.native
   def _fromObject(className: String, `object`: Object, callback: js.Function, extraParam: js.Any): Object = js.native
 }

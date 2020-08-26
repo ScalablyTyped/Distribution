@@ -25,9 +25,9 @@ class ReportZoomMapping protected () extends Element {
   var model_FReportZoomMapping: IModel = js.native
   def containerAsReportZoomInfo: ReportZoomInfo = js.native
   def sourceReportColumnName: String = js.native
-  def sourceReportColumnName(newValue: String): js.Any = js.native
+  def sourceReportColumnName_=(newValue: String): Unit = js.native
   def targetParameterName: String = js.native
-  def targetParameterName(newValue: String): js.Any = js.native
+  def targetParameterName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

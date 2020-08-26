@@ -180,6 +180,7 @@ trait GridStack extends js.Object {
     * var grid = document.querySelector('.grid-stack').gridstack;
     */
   def init(): GridStack = js.native
+  def init(options: js.UndefOr[scala.Nothing], el: GridStackElement): GridStack = js.native
   def init(options: GridstackOptions): GridStack = js.native
   def init(options: GridstackOptions, el: GridStackElement): GridStack = js.native
   /**
@@ -192,6 +193,7 @@ trait GridStack extends js.Object {
     * grids.forEach(...)
     */
   def initAll(): js.Array[GridStack] = js.native
+  def initAll(options: js.UndefOr[scala.Nothing], selector: String): js.Array[GridStack] = js.native
   def initAll(options: GridstackOptions): js.Array[GridStack] = js.native
   def initAll(options: GridstackOptions, selector: String): js.Array[GridStack] = js.native
   /**

@@ -22,80 +22,143 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojinputtext.ojTextAreaSettableProperties> */
+@js.native
 trait ojTextAreaSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
-  var asyncValidators: js.UndefOr[js.Array[AsyncValidator[_]]] = js.undefined
-  var autocomplete: js.UndefOr[on | off | String] = js.undefined
-  var autofocus: js.UndefOr[Boolean] = js.undefined
-  var converter: js.UndefOr[Converter[_] | RegisteredConverter] = js.undefined
-  var describedBy: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var displayOptions: js.UndefOr[ConverterHint] = js.undefined
-  var help: js.UndefOr[Instruction] = js.undefined
-  var helpHints: js.UndefOr[Definition] = js.undefined
-  var labelHint: js.UndefOr[String] = js.undefined
-  var messagesCustom: js.UndefOr[js.Array[^]] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var rawValue: js.UndefOr[js.Any] = js.undefined
-  var readonly: js.UndefOr[Boolean] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var rows: js.UndefOr[Double] = js.undefined
-  var translations: js.UndefOr[Regexp] = js.undefined
+  var asyncValidators: js.UndefOr[js.Array[AsyncValidator[_]]] = js.native
+  var autocomplete: js.UndefOr[on | off | String] = js.native
+  var autofocus: js.UndefOr[Boolean] = js.native
+  var converter: js.UndefOr[Converter[_] | RegisteredConverter | Null] = js.native
+  var describedBy: js.UndefOr[String | Null] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var displayOptions: js.UndefOr[ConverterHint] = js.native
+  var help: js.UndefOr[Instruction] = js.native
+  var helpHints: js.UndefOr[Definition] = js.native
+  var labelHint: js.UndefOr[String] = js.native
+  var messagesCustom: js.UndefOr[js.Array[^]] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var rawValue: js.UndefOr[js.Any] = js.native
+  var readonly: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.native
+  var rows: js.UndefOr[Double] = js.native
+  var translations: js.UndefOr[Regexp] = js.native
   var valid: js.UndefOr[
     typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
-  ] = js.undefined
-  var validators: js.UndefOr[js.Array[Validator[_] | RegisteredValidator]] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  ] = js.native
+  var validators: js.UndefOr[(js.Array[Validator[_] | RegisteredValidator]) | Null] = js.native
+  var value: js.UndefOr[js.Any] = js.native
 }
 
 object ojTextAreaSettablePropertiesLenient {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    asyncValidators: js.Array[AsyncValidator[_]] = null,
-    autocomplete: on | off | String = null,
-    autofocus: js.UndefOr[Boolean] = js.undefined,
-    converter: Converter[_] | RegisteredConverter = null,
-    describedBy: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    displayOptions: ConverterHint = null,
-    help: Instruction = null,
-    helpHints: Definition = null,
-    labelHint: String = null,
-    messagesCustom: js.Array[^] = null,
-    placeholder: String = null,
-    rawValue: js.Any = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    required: js.UndefOr[Boolean] = js.undefined,
-    rows: js.UndefOr[Double] = js.undefined,
-    translations: Regexp = null,
-    valid: valid | pending | invalidHidden | invalidShown = null,
-    validators: js.Array[Validator[_] | RegisteredValidator] = null,
-    value: js.Any = null
-  ): ojTextAreaSettablePropertiesLenient = {
+  def apply(): ojTextAreaSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (asyncValidators != null) __obj.updateDynamic("asyncValidators")(asyncValidators.asInstanceOf[js.Any])
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.get.asInstanceOf[js.Any])
-    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
-    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (displayOptions != null) __obj.updateDynamic("displayOptions")(displayOptions.asInstanceOf[js.Any])
-    if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    if (helpHints != null) __obj.updateDynamic("helpHints")(helpHints.asInstanceOf[js.Any])
-    if (labelHint != null) __obj.updateDynamic("labelHint")(labelHint.asInstanceOf[js.Any])
-    if (messagesCustom != null) __obj.updateDynamic("messagesCustom")(messagesCustom.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
-    if (valid != null) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
-    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTextAreaSettablePropertiesLenient]
   }
+  @scala.inline
+  implicit class ojTextAreaSettablePropertiesLenientOps[Self <: ojTextAreaSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsyncValidatorsVarargs(value: AsyncValidator[js.Any]*): Self = this.set("asyncValidators", js.Array(value :_*))
+    @scala.inline
+    def setAsyncValidators(value: js.Array[AsyncValidator[_]]): Self = this.set("asyncValidators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsyncValidators: Self = this.set("asyncValidators", js.undefined)
+    @scala.inline
+    def setAutocomplete(value: on | off | String): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutocomplete: Self = this.set("autocomplete", js.undefined)
+    @scala.inline
+    def setAutofocus(value: Boolean): Self = this.set("autofocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutofocus: Self = this.set("autofocus", js.undefined)
+    @scala.inline
+    def setConverter(value: Converter[_] | RegisteredConverter): Self = this.set("converter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConverter: Self = this.set("converter", js.undefined)
+    @scala.inline
+    def setConverterNull: Self = this.set("converter", null)
+    @scala.inline
+    def setDescribedBy(value: String): Self = this.set("describedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescribedBy: Self = this.set("describedBy", js.undefined)
+    @scala.inline
+    def setDescribedByNull: Self = this.set("describedBy", null)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisplayOptions(value: ConverterHint): Self = this.set("displayOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayOptions: Self = this.set("displayOptions", js.undefined)
+    @scala.inline
+    def setHelp(value: Instruction): Self = this.set("help", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelp: Self = this.set("help", js.undefined)
+    @scala.inline
+    def setHelpHints(value: Definition): Self = this.set("helpHints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelpHints: Self = this.set("helpHints", js.undefined)
+    @scala.inline
+    def setLabelHint(value: String): Self = this.set("labelHint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelHint: Self = this.set("labelHint", js.undefined)
+    @scala.inline
+    def setMessagesCustomVarargs(value: ^ *): Self = this.set("messagesCustom", js.Array(value :_*))
+    @scala.inline
+    def setMessagesCustom(value: js.Array[^]): Self = this.set("messagesCustom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessagesCustom: Self = this.set("messagesCustom", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setRawValue(value: js.Any): Self = this.set("rawValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawValue: Self = this.set("rawValue", js.undefined)
+    @scala.inline
+    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadonly: Self = this.set("readonly", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setTranslations(value: Regexp): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslations: Self = this.set("translations", js.undefined)
+    @scala.inline
+    def setValid(value: valid | pending | invalidHidden | invalidShown): Self = this.set("valid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValid: Self = this.set("valid", js.undefined)
+    @scala.inline
+    def setValidatorsVarargs(value: (Validator[js.Any] | RegisteredValidator)*): Self = this.set("validators", js.Array(value :_*))
+    @scala.inline
+    def setValidators(value: js.Array[Validator[_] | RegisteredValidator]): Self = this.set("validators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidators: Self = this.set("validators", js.undefined)
+    @scala.inline
+    def setValidatorsNull: Self = this.set("validators", null)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

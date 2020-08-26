@@ -19,7 +19,7 @@ object ^
   * This is safe to use as long as the object is only used from a single thread and no other hashes are created while operating on this one.
   * If this constraint cannot be met, you can use new to create a new state object
   */
-Instantiable0[MurmurHash3]) with (Instantiable1[/* text */ String, MurmurHash3]) with (Instantiable2[/* text */ String, /* seed */ Double, MurmurHash3])
+Instantiable0[MurmurHash3]) with (Instantiable1[/* text */ String, MurmurHash3]) with (Instantiable2[/* text */ String, /* seed */ Double, MurmurHash3]) with (Instantiable2[/* text */ js.UndefOr[scala.Nothing], /* seed */ Double, MurmurHash3])
     ] {
   /**
     * Get a hash state object, optionally initialized with the given string and seed.
@@ -29,6 +29,7 @@ Instantiable0[MurmurHash3]) with (Instantiable1[/* text */ String, MurmurHash3])
     * If this constraint cannot be met, you can use new to create a new state object
     */
   def apply(): MurmurHash3 = js.native
+  def apply(text: js.UndefOr[scala.Nothing], seed: Double): MurmurHash3 = js.native
   def apply(text: String): MurmurHash3 = js.native
   def apply(text: String, seed: Double): MurmurHash3 = js.native
 }

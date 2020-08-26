@@ -37,6 +37,8 @@ trait TypeofBabel extends js.Object {
   var NodePath: Instantiable2[/* hub */ Hub, /* parent */ Node, typings.babelCore.mod.NodePath[js.Object]] = js.native
   @JSName("template")
   val template_Original: DefaultTemplateBuilder = js.native
+  @JSName("traverse")
+  val traverse_Original: Call = js.native
   val types: Typeoftypes = js.native
   val version: String = js.native
   def createConfigItem(value: js.Tuple2[PluginTarget, PluginOptions]): ConfigItem = js.native
@@ -54,8 +56,9 @@ trait TypeofBabel extends js.Object {
   def loadPartialConfig(options: TransformOptions): ReadonlyPartialConfig | Null = js.native
   def parse(code: String): ParseResult | Null = js.native
   def parse(code: String, callback: FileParseCallback): Unit = js.native
-  def parse(code: String, options: js.UndefOr[TransformOptions], callback: FileParseCallback): Unit = js.native
+  def parse(code: String, options: js.UndefOr[scala.Nothing], callback: FileParseCallback): Unit = js.native
   def parse(code: String, options: TransformOptions): ParseResult | Null = js.native
+  def parse(code: String, options: TransformOptions, callback: FileParseCallback): Unit = js.native
   def parseAsync(code: String): js.Promise[ParseResult | Null] = js.native
   def parseAsync(code: String, options: TransformOptions): js.Promise[ParseResult | Null] = js.native
   def parseSync(code: String): ParseResult | Null = js.native
@@ -77,33 +80,83 @@ trait TypeofBabel extends js.Object {
   def template(tpl: TemplateStringsArray, args: js.Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Statement | js.Array[Statement]] = js.native
   def transform(code: String): BabelFileResult | Null = js.native
   def transform(code: String, callback: FileResultCallback): Unit = js.native
-  def transform(code: String, opts: js.UndefOr[TransformOptions], callback: FileResultCallback): Unit = js.native
+  def transform(code: String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native
   def transform(code: String, opts: TransformOptions): BabelFileResult | Null = js.native
+  def transform(code: String, opts: TransformOptions, callback: FileResultCallback): Unit = js.native
   def transformAsync(code: String): js.Promise[BabelFileResult | Null] = js.native
   def transformAsync(code: String, opts: TransformOptions): js.Promise[BabelFileResult | Null] = js.native
   def transformFile(filename: String, callback: FileResultCallback): Unit = js.native
-  def transformFile(filename: String, opts: js.UndefOr[TransformOptions], callback: FileResultCallback): Unit = js.native
+  def transformFile(filename: String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native
+  def transformFile(filename: String, opts: TransformOptions, callback: FileResultCallback): Unit = js.native
   def transformFileAsync(filename: String): js.Promise[BabelFileResult | Null] = js.native
   def transformFileAsync(filename: String, opts: TransformOptions): js.Promise[BabelFileResult | Null] = js.native
   def transformFileSync(filename: String): BabelFileResult | Null = js.native
   def transformFileSync(filename: String, opts: TransformOptions): BabelFileResult | Null = js.native
-  def transformFromAst(ast: typings.babelCore.mod.Node, code: js.UndefOr[String], callback: FileResultCallback): Unit = js.native
+  def transformFromAst(ast: typings.babelCore.mod.Node, code: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native
   def transformFromAst(
     ast: typings.babelCore.mod.Node,
-    code: js.UndefOr[String],
-    opts: js.UndefOr[TransformOptions],
+    code: js.UndefOr[scala.Nothing],
+    opts: js.UndefOr[scala.Nothing],
+    callback: FileResultCallback
+  ): Unit = js.native
+  def transformFromAst(
+    ast: typings.babelCore.mod.Node,
+    code: js.UndefOr[scala.Nothing],
+    opts: TransformOptions,
+    callback: FileResultCallback
+  ): Unit = js.native
+  def transformFromAst(ast: typings.babelCore.mod.Node, code: String, callback: FileResultCallback): Unit = js.native
+  def transformFromAst(
+    ast: typings.babelCore.mod.Node,
+    code: String,
+    opts: js.UndefOr[scala.Nothing],
+    callback: FileResultCallback
+  ): Unit = js.native
+  def transformFromAst(
+    ast: typings.babelCore.mod.Node,
+    code: String,
+    opts: TransformOptions,
     callback: FileResultCallback
   ): Unit = js.native
   def transformFromAstAsync(ast: typings.babelCore.mod.Node): js.Promise[BabelFileResult | Null] = js.native
+  def transformFromAstAsync(ast: typings.babelCore.mod.Node, code: js.UndefOr[scala.Nothing], opts: TransformOptions): js.Promise[BabelFileResult | Null] = js.native
   def transformFromAstAsync(ast: typings.babelCore.mod.Node, code: String): js.Promise[BabelFileResult | Null] = js.native
   def transformFromAstAsync(ast: typings.babelCore.mod.Node, code: String, opts: TransformOptions): js.Promise[BabelFileResult | Null] = js.native
   def transformFromAstSync(ast: typings.babelCore.mod.Node): BabelFileResult | Null = js.native
+  def transformFromAstSync(ast: typings.babelCore.mod.Node, code: js.UndefOr[scala.Nothing], opts: TransformOptions): BabelFileResult | Null = js.native
   def transformFromAstSync(ast: typings.babelCore.mod.Node, code: String): BabelFileResult | Null = js.native
   def transformFromAstSync(ast: typings.babelCore.mod.Node, code: String, opts: TransformOptions): BabelFileResult | Null = js.native
   def transformSync(code: String): BabelFileResult | Null = js.native
   def transformSync(code: String, opts: TransformOptions): BabelFileResult | Null = js.native
   def traverse(parent: js.Array[Node], opts: TraverseOptions[Node]): Unit = js.native
+  def traverse(
+    parent: js.Array[Node],
+    opts: TraverseOptions[Node],
+    scope: js.UndefOr[scala.Nothing],
+    state: js.UndefOr[scala.Nothing],
+    parentPath: NodePath[Node]
+  ): Unit = js.native
+  def traverse(
+    parent: js.Array[Node],
+    opts: TraverseOptions[Node],
+    scope: js.UndefOr[scala.Nothing],
+    state: js.Any
+  ): Unit = js.native
+  def traverse(
+    parent: js.Array[Node],
+    opts: TraverseOptions[Node],
+    scope: js.UndefOr[scala.Nothing],
+    state: js.Any,
+    parentPath: NodePath[Node]
+  ): Unit = js.native
   def traverse(parent: js.Array[Node], opts: TraverseOptions[Node], scope: Scope): Unit = js.native
+  def traverse(
+    parent: js.Array[Node],
+    opts: TraverseOptions[Node],
+    scope: Scope,
+    state: js.UndefOr[scala.Nothing],
+    parentPath: NodePath[Node]
+  ): Unit = js.native
   def traverse(parent: js.Array[Node], opts: TraverseOptions[Node], scope: Scope, state: js.Any): Unit = js.native
   def traverse(
     parent: js.Array[Node],
@@ -113,24 +166,56 @@ trait TypeofBabel extends js.Object {
     parentPath: NodePath[Node]
   ): Unit = js.native
   def traverse(parent: Node, opts: TraverseOptions[Node]): Unit = js.native
+  def traverse(
+    parent: Node,
+    opts: TraverseOptions[Node],
+    scope: js.UndefOr[scala.Nothing],
+    state: js.UndefOr[scala.Nothing],
+    parentPath: NodePath[Node]
+  ): Unit = js.native
+  def traverse(parent: Node, opts: TraverseOptions[Node], scope: js.UndefOr[scala.Nothing], state: js.Any): Unit = js.native
+  def traverse(
+    parent: Node,
+    opts: TraverseOptions[Node],
+    scope: js.UndefOr[scala.Nothing],
+    state: js.Any,
+    parentPath: NodePath[Node]
+  ): Unit = js.native
   def traverse(parent: Node, opts: TraverseOptions[Node], scope: Scope): Unit = js.native
+  def traverse(
+    parent: Node,
+    opts: TraverseOptions[Node],
+    scope: Scope,
+    state: js.UndefOr[scala.Nothing],
+    parentPath: NodePath[Node]
+  ): Unit = js.native
   def traverse(parent: Node, opts: TraverseOptions[Node], scope: Scope, state: js.Any): Unit = js.native
   def traverse(parent: Node, opts: TraverseOptions[Node], scope: Scope, state: js.Any, parentPath: NodePath[Node]): Unit = js.native
-  def traverse[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: js.UndefOr[Scope], state: S): Unit = js.native
+  def traverse[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: js.UndefOr[scala.Nothing], state: S): Unit = js.native
   def traverse[S](
     parent: js.Array[Node],
     opts: TraverseOptions[S],
-    scope: js.UndefOr[Scope],
+    scope: js.UndefOr[scala.Nothing],
     state: S,
     parentPath: NodePath[Node]
   ): Unit = js.native
-  def traverse[S](parent: Node, opts: TraverseOptions[S], scope: js.UndefOr[Scope], state: S): Unit = js.native
+  def traverse[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = js.native
+  def traverse[S](
+    parent: js.Array[Node],
+    opts: TraverseOptions[S],
+    scope: Scope,
+    state: S,
+    parentPath: NodePath[Node]
+  ): Unit = js.native
+  def traverse[S](parent: Node, opts: TraverseOptions[S], scope: js.UndefOr[scala.Nothing], state: S): Unit = js.native
   def traverse[S](
     parent: Node,
     opts: TraverseOptions[S],
-    scope: js.UndefOr[Scope],
+    scope: js.UndefOr[scala.Nothing],
     state: S,
     parentPath: NodePath[Node]
   ): Unit = js.native
+  def traverse[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = js.native
+  def traverse[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = js.native
 }
 

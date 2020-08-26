@@ -55,7 +55,15 @@ trait CurrentProject extends js.Object {
   def ImportExportSpecifications(Index: Double): ImportExportSpecification = js.native
   def IsMemberSafe(dispid: Double): Boolean = js.native
   def OpenConnection(): Unit = js.native
+  def OpenConnection(
+    BaseConnectionString: js.UndefOr[scala.Nothing],
+    UserID: js.UndefOr[scala.Nothing],
+    Password: String
+  ): Unit = js.native
+  def OpenConnection(BaseConnectionString: js.UndefOr[scala.Nothing], UserID: String): Unit = js.native
+  def OpenConnection(BaseConnectionString: js.UndefOr[scala.Nothing], UserID: String, Password: String): Unit = js.native
   def OpenConnection(BaseConnectionString: String): Unit = js.native
+  def OpenConnection(BaseConnectionString: String, UserID: js.UndefOr[scala.Nothing], Password: String): Unit = js.native
   def OpenConnection(BaseConnectionString: String, UserID: String): Unit = js.native
   def OpenConnection(BaseConnectionString: String, UserID: String, Password: String): Unit = js.native
   def Properties(Index: String): AccessObjectProperty = js.native

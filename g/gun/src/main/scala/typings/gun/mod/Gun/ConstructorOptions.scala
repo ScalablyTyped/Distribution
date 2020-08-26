@@ -11,37 +11,64 @@ import scala.scalajs.js.annotation._
   * Their project README will likely list the exposed options
   * https://github.com/amark/gun/wiki/Modules
   */
-/* Inlined std.Partial<{  file  :string,   web  :any,   s3  :{  key  :any,   secret  :any,   bucket  :any},   peers  :std.Record<string, {}>,   radisk  :boolean,   localStorage  :boolean, uuid (): string, [key: string] : any}> */
+/* Inlined std.Partial<{  file :string,   web :any,   s3 :{  key :any,   secret :any,   bucket :any},   peers :std.Record<string, {}>,   radisk :boolean,   localStorage :boolean, uuid (): string, [key: string] : any}> */
+@js.native
 trait ConstructorOptions extends js.Object {
-  var file: js.UndefOr[String] = js.undefined
-  var localStorage: js.UndefOr[Boolean] = js.undefined
-  var peers: js.UndefOr[Record[String, js.Object]] = js.undefined
-  var radisk: js.UndefOr[Boolean] = js.undefined
-  var s3: js.UndefOr[Bucket] = js.undefined
-  var uuid: js.UndefOr[js.Function0[String]] = js.undefined
-  var web: js.UndefOr[js.Any] = js.undefined
+  var file: js.UndefOr[String] = js.native
+  var localStorage: js.UndefOr[Boolean] = js.native
+  var peers: js.UndefOr[Record[String, js.Object]] = js.native
+  var radisk: js.UndefOr[Boolean] = js.native
+  var s3: js.UndefOr[Bucket] = js.native
+  var uuid: js.UndefOr[js.Function0[String]] = js.native
+  var web: js.UndefOr[js.Any] = js.native
 }
 
 object ConstructorOptions {
   @scala.inline
-  def apply(
-    file: String = null,
-    localStorage: js.UndefOr[Boolean] = js.undefined,
-    peers: Record[String, js.Object] = null,
-    radisk: js.UndefOr[Boolean] = js.undefined,
-    s3: Bucket = null,
-    uuid: () => String = null,
-    web: js.Any = null
-  ): ConstructorOptions = {
+  def apply(): ConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(localStorage)) __obj.updateDynamic("localStorage")(localStorage.get.asInstanceOf[js.Any])
-    if (peers != null) __obj.updateDynamic("peers")(peers.asInstanceOf[js.Any])
-    if (!js.isUndefined(radisk)) __obj.updateDynamic("radisk")(radisk.get.asInstanceOf[js.Any])
-    if (s3 != null) __obj.updateDynamic("s3")(s3.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(js.Any.fromFunction0(uuid))
-    if (web != null) __obj.updateDynamic("web")(web.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorOptions]
   }
+  @scala.inline
+  implicit class ConstructorOptionsOps[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+    @scala.inline
+    def setLocalStorage(value: Boolean): Self = this.set("localStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalStorage: Self = this.set("localStorage", js.undefined)
+    @scala.inline
+    def setPeers(value: Record[String, js.Object]): Self = this.set("peers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeers: Self = this.set("peers", js.undefined)
+    @scala.inline
+    def setRadisk(value: Boolean): Self = this.set("radisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadisk: Self = this.set("radisk", js.undefined)
+    @scala.inline
+    def setS3(value: Bucket): Self = this.set("s3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3: Self = this.set("s3", js.undefined)
+    @scala.inline
+    def setUuid(value: () => String): Self = this.set("uuid", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteUuid: Self = this.set("uuid", js.undefined)
+    @scala.inline
+    def setWeb(value: js.Any): Self = this.set("web", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeb: Self = this.set("web", js.undefined)
+  }
+  
 }
 

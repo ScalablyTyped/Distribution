@@ -22,10 +22,30 @@ trait TelemetryMetadata extends js.Object {
 
 object TelemetryMetadata {
   @scala.inline
-  def apply(count: Long, messageType: MessageType, dataSize: js.UndefOr[Long] = js.undefined): TelemetryMetadata = {
+  def apply(count: Long, messageType: MessageType): TelemetryMetadata = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataSize)) __obj.updateDynamic("dataSize")(dataSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TelemetryMetadata]
   }
+  @scala.inline
+  implicit class TelemetryMetadataOps[Self <: TelemetryMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: Long): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessageType(value: MessageType): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataSize(value: Long): Self = this.set("dataSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSize: Self = this.set("dataSize", js.undefined)
+  }
+  
 }
 

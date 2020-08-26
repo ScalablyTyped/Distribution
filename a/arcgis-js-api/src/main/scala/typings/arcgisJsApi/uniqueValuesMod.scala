@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("esri/renderers/smartMapping/statistics/uniqueValues", JSImport.Namespace)
+@JSImport("esri/smartMapping/statistics/uniqueValues", JSImport.Namespace)
 @js.native
 object uniqueValuesMod
   extends TopLevel[

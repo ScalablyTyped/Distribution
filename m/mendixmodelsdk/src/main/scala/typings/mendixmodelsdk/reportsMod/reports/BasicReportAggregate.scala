@@ -26,10 +26,10 @@ class BasicReportAggregate protected () extends Element {
   @JSName("model")
   var model_FBasicReportAggregate: IModel = js.native
   def aggregateFunction: AggregateFunctionEnum = js.native
-  def aggregateFunction(newValue: AggregateFunctionEnum): js.Any = js.native
+  def aggregateFunction_=(newValue: AggregateFunctionEnum): Unit = js.native
   def applicablePerColumn: IList[Boolean] = js.native
   def caption: Text = js.native
-  def caption(newValue: Text): js.Any = js.native
+  def caption_=(newValue: Text): Unit = js.native
   def containerAsBasicReport: BasicReport = js.native
 }
 

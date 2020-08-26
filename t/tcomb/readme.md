@@ -12,7 +12,7 @@ Type checking and DDD for JavaScript
 | Keywords           | type, combinators, checking, safety, model, domain, debugging, immutable, DDD, JSON, store |
 | # releases         | 6 |
 | # dependents       | 150 |
-| # downloads        | 13615129 |
+| # downloads        | 13786951 |
 | # stars            | 7 |
 
 ## Links

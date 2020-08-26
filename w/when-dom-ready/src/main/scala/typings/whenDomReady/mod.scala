@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply(): js.Promise[Unit] = js.native
+  def apply(callback: js.UndefOr[scala.Nothing], document: EventTarget): js.Promise[Unit] = js.native
   def apply(callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def apply(callback: js.Function0[Unit], document: EventTarget): js.Promise[Unit] = js.native
   def apply(document: EventTarget): js.Promise[Unit] = js.native

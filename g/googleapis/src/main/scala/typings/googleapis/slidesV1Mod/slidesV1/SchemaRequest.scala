@@ -186,96 +186,194 @@ trait SchemaRequest extends js.Object {
 
 object SchemaRequest {
   @scala.inline
-  def apply(
-    createImage: SchemaCreateImageRequest = null,
-    createLine: SchemaCreateLineRequest = null,
-    createParagraphBullets: SchemaCreateParagraphBulletsRequest = null,
-    createShape: SchemaCreateShapeRequest = null,
-    createSheetsChart: SchemaCreateSheetsChartRequest = null,
-    createSlide: SchemaCreateSlideRequest = null,
-    createTable: SchemaCreateTableRequest = null,
-    createVideo: SchemaCreateVideoRequest = null,
-    deleteObject: SchemaDeleteObjectRequest = null,
-    deleteParagraphBullets: SchemaDeleteParagraphBulletsRequest = null,
-    deleteTableColumn: SchemaDeleteTableColumnRequest = null,
-    deleteTableRow: SchemaDeleteTableRowRequest = null,
-    deleteText: SchemaDeleteTextRequest = null,
-    duplicateObject: SchemaDuplicateObjectRequest = null,
-    groupObjects: SchemaGroupObjectsRequest = null,
-    insertTableColumns: SchemaInsertTableColumnsRequest = null,
-    insertTableRows: SchemaInsertTableRowsRequest = null,
-    insertText: SchemaInsertTextRequest = null,
-    mergeTableCells: SchemaMergeTableCellsRequest = null,
-    refreshSheetsChart: SchemaRefreshSheetsChartRequest = null,
-    replaceAllShapesWithImage: SchemaReplaceAllShapesWithImageRequest = null,
-    replaceAllShapesWithSheetsChart: SchemaReplaceAllShapesWithSheetsChartRequest = null,
-    replaceAllText: SchemaReplaceAllTextRequest = null,
-    replaceImage: SchemaReplaceImageRequest = null,
-    rerouteLine: SchemaRerouteLineRequest = null,
-    ungroupObjects: SchemaUngroupObjectsRequest = null,
-    unmergeTableCells: SchemaUnmergeTableCellsRequest = null,
-    updateImageProperties: SchemaUpdateImagePropertiesRequest = null,
-    updateLineCategory: SchemaUpdateLineCategoryRequest = null,
-    updateLineProperties: SchemaUpdateLinePropertiesRequest = null,
-    updatePageElementAltText: SchemaUpdatePageElementAltTextRequest = null,
-    updatePageElementTransform: SchemaUpdatePageElementTransformRequest = null,
-    updatePageElementsZOrder: SchemaUpdatePageElementsZOrderRequest = null,
-    updatePageProperties: SchemaUpdatePagePropertiesRequest = null,
-    updateParagraphStyle: SchemaUpdateParagraphStyleRequest = null,
-    updateShapeProperties: SchemaUpdateShapePropertiesRequest = null,
-    updateSlidesPosition: SchemaUpdateSlidesPositionRequest = null,
-    updateTableBorderProperties: SchemaUpdateTableBorderPropertiesRequest = null,
-    updateTableCellProperties: SchemaUpdateTableCellPropertiesRequest = null,
-    updateTableColumnProperties: SchemaUpdateTableColumnPropertiesRequest = null,
-    updateTableRowProperties: SchemaUpdateTableRowPropertiesRequest = null,
-    updateTextStyle: SchemaUpdateTextStyleRequest = null,
-    updateVideoProperties: SchemaUpdateVideoPropertiesRequest = null
-  ): SchemaRequest = {
+  def apply(): SchemaRequest = {
     val __obj = js.Dynamic.literal()
-    if (createImage != null) __obj.updateDynamic("createImage")(createImage.asInstanceOf[js.Any])
-    if (createLine != null) __obj.updateDynamic("createLine")(createLine.asInstanceOf[js.Any])
-    if (createParagraphBullets != null) __obj.updateDynamic("createParagraphBullets")(createParagraphBullets.asInstanceOf[js.Any])
-    if (createShape != null) __obj.updateDynamic("createShape")(createShape.asInstanceOf[js.Any])
-    if (createSheetsChart != null) __obj.updateDynamic("createSheetsChart")(createSheetsChart.asInstanceOf[js.Any])
-    if (createSlide != null) __obj.updateDynamic("createSlide")(createSlide.asInstanceOf[js.Any])
-    if (createTable != null) __obj.updateDynamic("createTable")(createTable.asInstanceOf[js.Any])
-    if (createVideo != null) __obj.updateDynamic("createVideo")(createVideo.asInstanceOf[js.Any])
-    if (deleteObject != null) __obj.updateDynamic("deleteObject")(deleteObject.asInstanceOf[js.Any])
-    if (deleteParagraphBullets != null) __obj.updateDynamic("deleteParagraphBullets")(deleteParagraphBullets.asInstanceOf[js.Any])
-    if (deleteTableColumn != null) __obj.updateDynamic("deleteTableColumn")(deleteTableColumn.asInstanceOf[js.Any])
-    if (deleteTableRow != null) __obj.updateDynamic("deleteTableRow")(deleteTableRow.asInstanceOf[js.Any])
-    if (deleteText != null) __obj.updateDynamic("deleteText")(deleteText.asInstanceOf[js.Any])
-    if (duplicateObject != null) __obj.updateDynamic("duplicateObject")(duplicateObject.asInstanceOf[js.Any])
-    if (groupObjects != null) __obj.updateDynamic("groupObjects")(groupObjects.asInstanceOf[js.Any])
-    if (insertTableColumns != null) __obj.updateDynamic("insertTableColumns")(insertTableColumns.asInstanceOf[js.Any])
-    if (insertTableRows != null) __obj.updateDynamic("insertTableRows")(insertTableRows.asInstanceOf[js.Any])
-    if (insertText != null) __obj.updateDynamic("insertText")(insertText.asInstanceOf[js.Any])
-    if (mergeTableCells != null) __obj.updateDynamic("mergeTableCells")(mergeTableCells.asInstanceOf[js.Any])
-    if (refreshSheetsChart != null) __obj.updateDynamic("refreshSheetsChart")(refreshSheetsChart.asInstanceOf[js.Any])
-    if (replaceAllShapesWithImage != null) __obj.updateDynamic("replaceAllShapesWithImage")(replaceAllShapesWithImage.asInstanceOf[js.Any])
-    if (replaceAllShapesWithSheetsChart != null) __obj.updateDynamic("replaceAllShapesWithSheetsChart")(replaceAllShapesWithSheetsChart.asInstanceOf[js.Any])
-    if (replaceAllText != null) __obj.updateDynamic("replaceAllText")(replaceAllText.asInstanceOf[js.Any])
-    if (replaceImage != null) __obj.updateDynamic("replaceImage")(replaceImage.asInstanceOf[js.Any])
-    if (rerouteLine != null) __obj.updateDynamic("rerouteLine")(rerouteLine.asInstanceOf[js.Any])
-    if (ungroupObjects != null) __obj.updateDynamic("ungroupObjects")(ungroupObjects.asInstanceOf[js.Any])
-    if (unmergeTableCells != null) __obj.updateDynamic("unmergeTableCells")(unmergeTableCells.asInstanceOf[js.Any])
-    if (updateImageProperties != null) __obj.updateDynamic("updateImageProperties")(updateImageProperties.asInstanceOf[js.Any])
-    if (updateLineCategory != null) __obj.updateDynamic("updateLineCategory")(updateLineCategory.asInstanceOf[js.Any])
-    if (updateLineProperties != null) __obj.updateDynamic("updateLineProperties")(updateLineProperties.asInstanceOf[js.Any])
-    if (updatePageElementAltText != null) __obj.updateDynamic("updatePageElementAltText")(updatePageElementAltText.asInstanceOf[js.Any])
-    if (updatePageElementTransform != null) __obj.updateDynamic("updatePageElementTransform")(updatePageElementTransform.asInstanceOf[js.Any])
-    if (updatePageElementsZOrder != null) __obj.updateDynamic("updatePageElementsZOrder")(updatePageElementsZOrder.asInstanceOf[js.Any])
-    if (updatePageProperties != null) __obj.updateDynamic("updatePageProperties")(updatePageProperties.asInstanceOf[js.Any])
-    if (updateParagraphStyle != null) __obj.updateDynamic("updateParagraphStyle")(updateParagraphStyle.asInstanceOf[js.Any])
-    if (updateShapeProperties != null) __obj.updateDynamic("updateShapeProperties")(updateShapeProperties.asInstanceOf[js.Any])
-    if (updateSlidesPosition != null) __obj.updateDynamic("updateSlidesPosition")(updateSlidesPosition.asInstanceOf[js.Any])
-    if (updateTableBorderProperties != null) __obj.updateDynamic("updateTableBorderProperties")(updateTableBorderProperties.asInstanceOf[js.Any])
-    if (updateTableCellProperties != null) __obj.updateDynamic("updateTableCellProperties")(updateTableCellProperties.asInstanceOf[js.Any])
-    if (updateTableColumnProperties != null) __obj.updateDynamic("updateTableColumnProperties")(updateTableColumnProperties.asInstanceOf[js.Any])
-    if (updateTableRowProperties != null) __obj.updateDynamic("updateTableRowProperties")(updateTableRowProperties.asInstanceOf[js.Any])
-    if (updateTextStyle != null) __obj.updateDynamic("updateTextStyle")(updateTextStyle.asInstanceOf[js.Any])
-    if (updateVideoProperties != null) __obj.updateDynamic("updateVideoProperties")(updateVideoProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRequest]
   }
+  @scala.inline
+  implicit class SchemaRequestOps[Self <: SchemaRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateImage(value: SchemaCreateImageRequest): Self = this.set("createImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateImage: Self = this.set("createImage", js.undefined)
+    @scala.inline
+    def setCreateLine(value: SchemaCreateLineRequest): Self = this.set("createLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateLine: Self = this.set("createLine", js.undefined)
+    @scala.inline
+    def setCreateParagraphBullets(value: SchemaCreateParagraphBulletsRequest): Self = this.set("createParagraphBullets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateParagraphBullets: Self = this.set("createParagraphBullets", js.undefined)
+    @scala.inline
+    def setCreateShape(value: SchemaCreateShapeRequest): Self = this.set("createShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateShape: Self = this.set("createShape", js.undefined)
+    @scala.inline
+    def setCreateSheetsChart(value: SchemaCreateSheetsChartRequest): Self = this.set("createSheetsChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateSheetsChart: Self = this.set("createSheetsChart", js.undefined)
+    @scala.inline
+    def setCreateSlide(value: SchemaCreateSlideRequest): Self = this.set("createSlide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateSlide: Self = this.set("createSlide", js.undefined)
+    @scala.inline
+    def setCreateTable(value: SchemaCreateTableRequest): Self = this.set("createTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTable: Self = this.set("createTable", js.undefined)
+    @scala.inline
+    def setCreateVideo(value: SchemaCreateVideoRequest): Self = this.set("createVideo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateVideo: Self = this.set("createVideo", js.undefined)
+    @scala.inline
+    def setDeleteObject(value: SchemaDeleteObjectRequest): Self = this.set("deleteObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteObject: Self = this.set("deleteObject", js.undefined)
+    @scala.inline
+    def setDeleteParagraphBullets(value: SchemaDeleteParagraphBulletsRequest): Self = this.set("deleteParagraphBullets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteParagraphBullets: Self = this.set("deleteParagraphBullets", js.undefined)
+    @scala.inline
+    def setDeleteTableColumn(value: SchemaDeleteTableColumnRequest): Self = this.set("deleteTableColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteTableColumn: Self = this.set("deleteTableColumn", js.undefined)
+    @scala.inline
+    def setDeleteTableRow(value: SchemaDeleteTableRowRequest): Self = this.set("deleteTableRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteTableRow: Self = this.set("deleteTableRow", js.undefined)
+    @scala.inline
+    def setDeleteText(value: SchemaDeleteTextRequest): Self = this.set("deleteText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteText: Self = this.set("deleteText", js.undefined)
+    @scala.inline
+    def setDuplicateObject(value: SchemaDuplicateObjectRequest): Self = this.set("duplicateObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuplicateObject: Self = this.set("duplicateObject", js.undefined)
+    @scala.inline
+    def setGroupObjects(value: SchemaGroupObjectsRequest): Self = this.set("groupObjects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupObjects: Self = this.set("groupObjects", js.undefined)
+    @scala.inline
+    def setInsertTableColumns(value: SchemaInsertTableColumnsRequest): Self = this.set("insertTableColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertTableColumns: Self = this.set("insertTableColumns", js.undefined)
+    @scala.inline
+    def setInsertTableRows(value: SchemaInsertTableRowsRequest): Self = this.set("insertTableRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertTableRows: Self = this.set("insertTableRows", js.undefined)
+    @scala.inline
+    def setInsertText(value: SchemaInsertTextRequest): Self = this.set("insertText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertText: Self = this.set("insertText", js.undefined)
+    @scala.inline
+    def setMergeTableCells(value: SchemaMergeTableCellsRequest): Self = this.set("mergeTableCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeTableCells: Self = this.set("mergeTableCells", js.undefined)
+    @scala.inline
+    def setRefreshSheetsChart(value: SchemaRefreshSheetsChartRequest): Self = this.set("refreshSheetsChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshSheetsChart: Self = this.set("refreshSheetsChart", js.undefined)
+    @scala.inline
+    def setReplaceAllShapesWithImage(value: SchemaReplaceAllShapesWithImageRequest): Self = this.set("replaceAllShapesWithImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceAllShapesWithImage: Self = this.set("replaceAllShapesWithImage", js.undefined)
+    @scala.inline
+    def setReplaceAllShapesWithSheetsChart(value: SchemaReplaceAllShapesWithSheetsChartRequest): Self = this.set("replaceAllShapesWithSheetsChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceAllShapesWithSheetsChart: Self = this.set("replaceAllShapesWithSheetsChart", js.undefined)
+    @scala.inline
+    def setReplaceAllText(value: SchemaReplaceAllTextRequest): Self = this.set("replaceAllText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceAllText: Self = this.set("replaceAllText", js.undefined)
+    @scala.inline
+    def setReplaceImage(value: SchemaReplaceImageRequest): Self = this.set("replaceImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceImage: Self = this.set("replaceImage", js.undefined)
+    @scala.inline
+    def setRerouteLine(value: SchemaRerouteLineRequest): Self = this.set("rerouteLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRerouteLine: Self = this.set("rerouteLine", js.undefined)
+    @scala.inline
+    def setUngroupObjects(value: SchemaUngroupObjectsRequest): Self = this.set("ungroupObjects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUngroupObjects: Self = this.set("ungroupObjects", js.undefined)
+    @scala.inline
+    def setUnmergeTableCells(value: SchemaUnmergeTableCellsRequest): Self = this.set("unmergeTableCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnmergeTableCells: Self = this.set("unmergeTableCells", js.undefined)
+    @scala.inline
+    def setUpdateImageProperties(value: SchemaUpdateImagePropertiesRequest): Self = this.set("updateImageProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateImageProperties: Self = this.set("updateImageProperties", js.undefined)
+    @scala.inline
+    def setUpdateLineCategory(value: SchemaUpdateLineCategoryRequest): Self = this.set("updateLineCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateLineCategory: Self = this.set("updateLineCategory", js.undefined)
+    @scala.inline
+    def setUpdateLineProperties(value: SchemaUpdateLinePropertiesRequest): Self = this.set("updateLineProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateLineProperties: Self = this.set("updateLineProperties", js.undefined)
+    @scala.inline
+    def setUpdatePageElementAltText(value: SchemaUpdatePageElementAltTextRequest): Self = this.set("updatePageElementAltText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatePageElementAltText: Self = this.set("updatePageElementAltText", js.undefined)
+    @scala.inline
+    def setUpdatePageElementTransform(value: SchemaUpdatePageElementTransformRequest): Self = this.set("updatePageElementTransform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatePageElementTransform: Self = this.set("updatePageElementTransform", js.undefined)
+    @scala.inline
+    def setUpdatePageElementsZOrder(value: SchemaUpdatePageElementsZOrderRequest): Self = this.set("updatePageElementsZOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatePageElementsZOrder: Self = this.set("updatePageElementsZOrder", js.undefined)
+    @scala.inline
+    def setUpdatePageProperties(value: SchemaUpdatePagePropertiesRequest): Self = this.set("updatePageProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatePageProperties: Self = this.set("updatePageProperties", js.undefined)
+    @scala.inline
+    def setUpdateParagraphStyle(value: SchemaUpdateParagraphStyleRequest): Self = this.set("updateParagraphStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateParagraphStyle: Self = this.set("updateParagraphStyle", js.undefined)
+    @scala.inline
+    def setUpdateShapeProperties(value: SchemaUpdateShapePropertiesRequest): Self = this.set("updateShapeProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateShapeProperties: Self = this.set("updateShapeProperties", js.undefined)
+    @scala.inline
+    def setUpdateSlidesPosition(value: SchemaUpdateSlidesPositionRequest): Self = this.set("updateSlidesPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateSlidesPosition: Self = this.set("updateSlidesPosition", js.undefined)
+    @scala.inline
+    def setUpdateTableBorderProperties(value: SchemaUpdateTableBorderPropertiesRequest): Self = this.set("updateTableBorderProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTableBorderProperties: Self = this.set("updateTableBorderProperties", js.undefined)
+    @scala.inline
+    def setUpdateTableCellProperties(value: SchemaUpdateTableCellPropertiesRequest): Self = this.set("updateTableCellProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTableCellProperties: Self = this.set("updateTableCellProperties", js.undefined)
+    @scala.inline
+    def setUpdateTableColumnProperties(value: SchemaUpdateTableColumnPropertiesRequest): Self = this.set("updateTableColumnProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTableColumnProperties: Self = this.set("updateTableColumnProperties", js.undefined)
+    @scala.inline
+    def setUpdateTableRowProperties(value: SchemaUpdateTableRowPropertiesRequest): Self = this.set("updateTableRowProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTableRowProperties: Self = this.set("updateTableRowProperties", js.undefined)
+    @scala.inline
+    def setUpdateTextStyle(value: SchemaUpdateTextStyleRequest): Self = this.set("updateTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTextStyle: Self = this.set("updateTextStyle", js.undefined)
+    @scala.inline
+    def setUpdateVideoProperties(value: SchemaUpdateVideoPropertiesRequest): Self = this.set("updateVideoProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateVideoProperties: Self = this.set("updateVideoProperties", js.undefined)
+  }
+  
 }
 

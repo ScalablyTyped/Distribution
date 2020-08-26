@@ -25,22 +25,46 @@ trait SchemaAccountTreeRequest extends js.Object {
 
 object SchemaAccountTreeRequest {
   @scala.inline
-  def apply(
-    accountName: String = null,
-    kind: String = null,
-    profileName: String = null,
-    timezone: String = null,
-    webpropertyName: String = null,
-    websiteUrl: String = null
-  ): SchemaAccountTreeRequest = {
+  def apply(): SchemaAccountTreeRequest = {
     val __obj = js.Dynamic.literal()
-    if (accountName != null) __obj.updateDynamic("accountName")(accountName.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (profileName != null) __obj.updateDynamic("profileName")(profileName.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (webpropertyName != null) __obj.updateDynamic("webpropertyName")(webpropertyName.asInstanceOf[js.Any])
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountTreeRequest]
   }
+  @scala.inline
+  implicit class SchemaAccountTreeRequestOps[Self <: SchemaAccountTreeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountName(value: String): Self = this.set("accountName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountName: Self = this.set("accountName", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setProfileName(value: String): Self = this.set("profileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileName: Self = this.set("profileName", js.undefined)
+    @scala.inline
+    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    @scala.inline
+    def setWebpropertyName(value: String): Self = this.set("webpropertyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebpropertyName: Self = this.set("webpropertyName", js.undefined)
+    @scala.inline
+    def setWebsiteUrl(value: String): Self = this.set("websiteUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteUrl: Self = this.set("websiteUrl", js.undefined)
+  }
+  
 }
 

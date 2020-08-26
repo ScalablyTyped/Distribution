@@ -11,8 +11,8 @@ Search CSS(-like) strings
 | Full name          | style-search |
 | Keywords           | css, search, stylelint |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 48403892 |
+| # dependents       | 15 |
+| # downloads        | 46438017 |
 | # stars            | 0 |
 
 ## Links

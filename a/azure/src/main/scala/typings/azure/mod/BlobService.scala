@@ -41,6 +41,12 @@ class BlobService () extends StorageServiceClient {
     */
   def this(storageAccount: String, storageAccessKey: String) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String) = this()
+  def this(
+    storageAccount: String,
+    storageAccessKey: String,
+    host: js.UndefOr[scala.Nothing],
+    sasToken: String
+  ) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String, sasToken: String) = this()
   var SpeedSummary: Instantiable1[/* name */ String, typings.azure.mod.SpeedSummary] = js.native
   var parallelOperationThreadCount: Double = js.native

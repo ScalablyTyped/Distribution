@@ -105,6 +105,7 @@ trait Blob extends Proxy {
     * Returns a thumbnail version of the underlying image, optionally with a border and rounded corners.
     */
   def imageAsThumbnail(size: Double): Blob = js.native
+  def imageAsThumbnail(size: Double, borderSize: js.UndefOr[scala.Nothing], cornerRadius: Double): Blob = js.native
   def imageAsThumbnail(size: Double, borderSize: Double): Blob = js.native
   def imageAsThumbnail(size: Double, borderSize: Double, cornerRadius: Double): Blob = js.native
   /**

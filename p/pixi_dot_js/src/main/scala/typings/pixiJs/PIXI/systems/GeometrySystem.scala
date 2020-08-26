@@ -104,7 +104,16 @@ trait GeometrySystem extends System {
     * @param {Number} [instanceCount] - the number of instances of the set of elements to execute
     */
   def draw(`type`: Double): Unit = js.native
+  def draw(
+    `type`: Double,
+    size: js.UndefOr[scala.Nothing],
+    start: js.UndefOr[scala.Nothing],
+    instanceCount: Double
+  ): Unit = js.native
+  def draw(`type`: Double, size: js.UndefOr[scala.Nothing], start: Double): Unit = js.native
+  def draw(`type`: Double, size: js.UndefOr[scala.Nothing], start: Double, instanceCount: Double): Unit = js.native
   def draw(`type`: Double, size: Double): Unit = js.native
+  def draw(`type`: Double, size: Double, start: js.UndefOr[scala.Nothing], instanceCount: Double): Unit = js.native
   def draw(`type`: Double, size: Double, start: Double): Unit = js.native
   def draw(`type`: Double, size: Double, start: Double, instanceCount: Double): Unit = js.native
   /**

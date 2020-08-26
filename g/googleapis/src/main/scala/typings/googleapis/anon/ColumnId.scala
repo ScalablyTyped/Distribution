@@ -12,11 +12,30 @@ trait ColumnId extends js.Object {
 
 object ColumnId {
   @scala.inline
-  def apply(columnId: js.UndefOr[Double] = js.undefined, tableIndex: js.UndefOr[Double] = js.undefined): ColumnId = {
+  def apply(): ColumnId = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columnId)) __obj.updateDynamic("columnId")(columnId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tableIndex)) __obj.updateDynamic("tableIndex")(tableIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnId]
   }
+  @scala.inline
+  implicit class ColumnIdOps[Self <: ColumnId] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnId(value: Double): Self = this.set("columnId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnId: Self = this.set("columnId", js.undefined)
+    @scala.inline
+    def setTableIndex(value: Double): Self = this.set("tableIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableIndex: Self = this.set("tableIndex", js.undefined)
+  }
+  
 }
 

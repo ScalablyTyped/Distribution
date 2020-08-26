@@ -35,20 +35,42 @@ trait SchemaGoogleCloudVisionV1p4beta1LocalizedObjectAnnotation extends js.Objec
 
 object SchemaGoogleCloudVisionV1p4beta1LocalizedObjectAnnotation {
   @scala.inline
-  def apply(
-    boundingPoly: SchemaGoogleCloudVisionV1p4beta1BoundingPoly = null,
-    languageCode: String = null,
-    mid: String = null,
-    name: String = null,
-    score: js.UndefOr[Double] = js.undefined
-  ): SchemaGoogleCloudVisionV1p4beta1LocalizedObjectAnnotation = {
+  def apply(): SchemaGoogleCloudVisionV1p4beta1LocalizedObjectAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (mid != null) __obj.updateDynamic("mid")(mid.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p4beta1LocalizedObjectAnnotation]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p4beta1LocalizedObjectAnnotationOps[Self <: SchemaGoogleCloudVisionV1p4beta1LocalizedObjectAnnotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingPoly(value: SchemaGoogleCloudVisionV1p4beta1BoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setMid(value: String): Self = this.set("mid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMid: Self = this.set("mid", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+  }
+  
 }
 

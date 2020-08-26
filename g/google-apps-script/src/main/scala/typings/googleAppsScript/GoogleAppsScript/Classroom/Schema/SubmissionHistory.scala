@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubmissionHistory extends js.Object {
-  var gradeHistory: js.UndefOr[GradeHistory] = js.undefined
-  var stateHistory: js.UndefOr[StateHistory] = js.undefined
+  var gradeHistory: js.UndefOr[GradeHistory] = js.native
+  var stateHistory: js.UndefOr[StateHistory] = js.native
 }
 
 object SubmissionHistory {
   @scala.inline
-  def apply(gradeHistory: GradeHistory = null, stateHistory: StateHistory = null): SubmissionHistory = {
+  def apply(): SubmissionHistory = {
     val __obj = js.Dynamic.literal()
-    if (gradeHistory != null) __obj.updateDynamic("gradeHistory")(gradeHistory.asInstanceOf[js.Any])
-    if (stateHistory != null) __obj.updateDynamic("stateHistory")(stateHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmissionHistory]
   }
+  @scala.inline
+  implicit class SubmissionHistoryOps[Self <: SubmissionHistory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGradeHistory(value: GradeHistory): Self = this.set("gradeHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGradeHistory: Self = this.set("gradeHistory", js.undefined)
+    @scala.inline
+    def setStateHistory(value: StateHistory): Self = this.set("stateHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateHistory: Self = this.set("stateHistory", js.undefined)
+  }
+  
 }
 

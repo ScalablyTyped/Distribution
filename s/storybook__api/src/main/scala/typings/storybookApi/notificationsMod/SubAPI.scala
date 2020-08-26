@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubAPI extends js.Object {
-  def addNotification(notification: Notification): Unit
-  def clearNotification(id: String): Unit
+  def addNotification(notification: Notification): Unit = js.native
+  def clearNotification(id: String): Unit = js.native
 }
 
 object SubAPI {
@@ -15,5 +16,22 @@ object SubAPI {
     val __obj = js.Dynamic.literal(addNotification = js.Any.fromFunction1(addNotification), clearNotification = js.Any.fromFunction1(clearNotification))
     __obj.asInstanceOf[SubAPI]
   }
+  @scala.inline
+  implicit class SubAPIOps[Self <: SubAPI] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddNotification(value: Notification => Unit): Self = this.set("addNotification", js.Any.fromFunction1(value))
+    @scala.inline
+    def setClearNotification(value: String => Unit): Self = this.set("clearNotification", js.Any.fromFunction1(value))
+  }
+  
 }
 

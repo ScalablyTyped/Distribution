@@ -26,5 +26,24 @@ object CertificateAuthorityConfiguration {
     val __obj = js.Dynamic.literal(KeyAlgorithm = KeyAlgorithm.asInstanceOf[js.Any], SigningAlgorithm = SigningAlgorithm.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateAuthorityConfiguration]
   }
+  @scala.inline
+  implicit class CertificateAuthorityConfigurationOps[Self <: CertificateAuthorityConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyAlgorithm(value: KeyAlgorithm): Self = this.set("KeyAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSigningAlgorithm(value: SigningAlgorithm): Self = this.set("SigningAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubject(value: ASN1Subject): Self = this.set("Subject", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -15,11 +15,13 @@ trait ActionContext[S, R] extends js.Object {
   var rootState: R = js.native
   var state: S = js.native
   def commit(`type`: String): Unit = js.native
+  def commit(`type`: String, payload: js.UndefOr[scala.Nothing], options: CommitOptions): Unit = js.native
   def commit(`type`: String, payload: js.Any): Unit = js.native
   def commit(`type`: String, payload: js.Any, options: CommitOptions): Unit = js.native
   def commit[P /* <: Payload */](payloadWithType: P): Unit = js.native
   def commit[P /* <: Payload */](payloadWithType: P, options: CommitOptions): Unit = js.native
   def dispatch(`type`: String): js.Promise[_] = js.native
+  def dispatch(`type`: String, payload: js.UndefOr[scala.Nothing], options: DispatchOptions): js.Promise[_] = js.native
   def dispatch(`type`: String, payload: js.Any): js.Promise[_] = js.native
   def dispatch(`type`: String, payload: js.Any, options: DispatchOptions): js.Promise[_] = js.native
   def dispatch[P /* <: Payload */](payloadWithType: P): js.Promise[_] = js.native

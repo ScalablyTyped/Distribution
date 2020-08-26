@@ -21,6 +21,7 @@ object alarms extends js.Object {
   var onAlarm: AlarmEvent = js.native
   def clear(): Unit = js.native
   def clear(callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
+  def clear(name: js.UndefOr[scala.Nothing], callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
   def clear(name: String): Unit = js.native
   def clear(name: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
   def clearAll(): Unit = js.native

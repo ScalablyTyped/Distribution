@@ -33,8 +33,29 @@ trait QueryDef extends js.Object {
   def Cancel(): Unit = js.native
   def Close(): Unit = js.native
   def CreateProperty(): Property = js.native
+  def CreateProperty(
+    Name: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Value: js.UndefOr[scala.Nothing],
+    DDL: Boolean
+  ): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum): Property = js.native
+  def CreateProperty(
+    Name: js.UndefOr[scala.Nothing],
+    Type: DataTypeEnum,
+    Value: js.UndefOr[scala.Nothing],
+    DDL: Boolean
+  ): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum): Property = js.native
+  def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def Execute(): Unit = js.native
@@ -42,7 +63,11 @@ trait QueryDef extends js.Object {
   def Fields(Item: String): Field = js.native
   def Fields(Item: Double): Field = js.native
   def OpenRecordset(): Recordset = js.native
+  def OpenRecordset(Type: js.UndefOr[scala.Nothing], Options: js.UndefOr[scala.Nothing], LockEdit: LockTypeEnum): Recordset = js.native
+  def OpenRecordset(Type: js.UndefOr[scala.Nothing], Options: RecordsetOptionEnum): Recordset = js.native
+  def OpenRecordset(Type: js.UndefOr[scala.Nothing], Options: RecordsetOptionEnum, LockEdit: LockTypeEnum): Recordset = js.native
   def OpenRecordset(Type: RecordsetTypeEnum): Recordset = js.native
+  def OpenRecordset(Type: RecordsetTypeEnum, Options: js.UndefOr[scala.Nothing], LockEdit: LockTypeEnum): Recordset = js.native
   def OpenRecordset(Type: RecordsetTypeEnum, Options: RecordsetOptionEnum): Recordset = js.native
   def OpenRecordset(Type: RecordsetTypeEnum, Options: RecordsetOptionEnum, LockEdit: LockTypeEnum): Recordset = js.native
   def Parameters(Item: String): Parameter = js.native

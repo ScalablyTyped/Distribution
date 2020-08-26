@@ -11,8 +11,8 @@ encodeURIComponent with charset
 | Full name          | urlencode |
 | Keywords           | urlencode, urldecode, encodeURIComponent, decodeURIComponent, querystring, parse |
 | # releases         | 1 |
-| # dependents       | 295 |
-| # downloads        | 1273483 |
+| # dependents       | 330 |
+| # downloads        | 1323851 |
 | # stars            | 11 |
 
 ## Links

@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   * elements and user-defined ones. All changes on user interface element settings are done on this layer.
   * @since OOo 2.0
   */
+@js.native
 trait ModuleUIConfigurationManager
   extends XUIConfigurationPersistence
      with XUIConfigurationManager
@@ -36,7 +37,7 @@ trait ModuleUIConfigurationManager
     * changes also at the root storage. A non-initialized module user interface configuration manager cannot be used, it is treated as a read-only
     * container.
     */
-  def createDefault(ModuleShortName: String, ModuleIdentifier: String): Unit
+  def createDefault(ModuleShortName: String, ModuleIdentifier: String): Unit = js.native
 }
 
 object ModuleUIConfigurationManager {
@@ -73,5 +74,20 @@ object ModuleUIConfigurationManager {
     val __obj = js.Dynamic.literal(EventsManager = EventsManager.asInstanceOf[js.Any], ImageManager = ImageManager.asInstanceOf[js.Any], ShortCutManager = ShortCutManager.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addConfigurationListener = js.Any.fromFunction1(addConfigurationListener), createDefault = js.Any.fromFunction2(createDefault), createSettings = js.Any.fromFunction0(createSettings), getDefaultSettings = js.Any.fromFunction1(getDefaultSettings), getEventsManager = js.Any.fromFunction0(getEventsManager), getImageManager = js.Any.fromFunction0(getImageManager), getSettings = js.Any.fromFunction2(getSettings), getShortCutManager = js.Any.fromFunction0(getShortCutManager), getUIElementsInfo = js.Any.fromFunction1(getUIElementsInfo), hasSettings = js.Any.fromFunction1(hasSettings), insertSettings = js.Any.fromFunction2(insertSettings), isDefaultSettings = js.Any.fromFunction1(isDefaultSettings), isModified = js.Any.fromFunction0(isModified), isReadOnly = js.Any.fromFunction0(isReadOnly), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reload = js.Any.fromFunction0(reload), removeConfigurationListener = js.Any.fromFunction1(removeConfigurationListener), removeSettings = js.Any.fromFunction1(removeSettings), replaceSettings = js.Any.fromFunction2(replaceSettings), reset = js.Any.fromFunction0(reset), store = js.Any.fromFunction0(store), storeToStorage = js.Any.fromFunction1(storeToStorage))
     __obj.asInstanceOf[ModuleUIConfigurationManager]
   }
+  @scala.inline
+  implicit class ModuleUIConfigurationManagerOps[Self <: ModuleUIConfigurationManager] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateDefault(value: (String, String) => Unit): Self = this.set("createDefault", js.Any.fromFunction2(value))
+  }
+  
 }
 

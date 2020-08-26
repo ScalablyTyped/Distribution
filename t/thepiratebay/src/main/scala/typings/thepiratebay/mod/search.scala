@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object search extends js.Object {
   def apply(): js.Promise[js.Array[TorrentSearchResult]] = js.native
+  def apply(query: js.UndefOr[scala.Nothing], options: SearchOptions): js.Promise[js.Array[TorrentSearchResult]] = js.native
   def apply(query: String): js.Promise[js.Array[TorrentSearchResult]] = js.native
   def apply(query: String, options: SearchOptions): js.Promise[js.Array[TorrentSearchResult]] = js.native
 }

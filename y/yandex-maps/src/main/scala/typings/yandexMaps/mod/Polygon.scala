@@ -16,10 +16,17 @@ class Polygon protected () extends GeoObject_ {
   def this(geometry: js.Object, properties: IDataManager) = this()
   def this(geometry: IPolygonGeometry, properties: js.Object) = this()
   def this(geometry: IPolygonGeometry, properties: IDataManager) = this()
+  def this(
+    geometry: js.Array[js.Array[js.Array[Double]]],
+    properties: js.UndefOr[scala.Nothing],
+    options: IPolygonOptions
+  ) = this()
   def this(geometry: js.Array[js.Array[js.Array[Double]]], properties: js.Object, options: IPolygonOptions) = this()
   def this(geometry: js.Array[js.Array[js.Array[Double]]], properties: IDataManager, options: IPolygonOptions) = this()
+  def this(geometry: js.Object, properties: js.UndefOr[scala.Nothing], options: IPolygonOptions) = this()
   def this(geometry: js.Object, properties: js.Object, options: IPolygonOptions) = this()
   def this(geometry: js.Object, properties: IDataManager, options: IPolygonOptions) = this()
+  def this(geometry: IPolygonGeometry, properties: js.UndefOr[scala.Nothing], options: IPolygonOptions) = this()
   def this(geometry: IPolygonGeometry, properties: js.Object, options: IPolygonOptions) = this()
   def this(geometry: IPolygonGeometry, properties: IDataManager, options: IPolygonOptions) = this()
 }

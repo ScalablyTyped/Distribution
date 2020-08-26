@@ -11,6 +11,7 @@ object sourcesMod extends js.Object {
   class SourceDirectory ()
     extends typings.typedoc.directoryMod.SourceDirectory {
     def this(name: String) = this()
+    def this(name: js.UndefOr[scala.Nothing], parent: typings.typedoc.directoryMod.SourceDirectory) = this()
     def this(name: String, parent: typings.typedoc.directoryMod.SourceDirectory) = this()
   }
   

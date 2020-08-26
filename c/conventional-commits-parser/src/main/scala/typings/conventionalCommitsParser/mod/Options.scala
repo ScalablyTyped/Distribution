@@ -10,6 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * What commentChar to use. By default it is `null`, so no comments are stripped.
@@ -21,14 +22,14 @@ trait Options extends js.Object {
     * @default
     * null
     */
-  var commentChar: js.UndefOr[String | Null] = js.undefined
+  var commentChar: js.UndefOr[String | Null] = js.native
   /**
     * Pattern to match other fields.
     *
     * @default
     * /^-(.*?)-$/
     */
-  var fieldPattern: js.UndefOr[Pattern] = js.undefined
+  var fieldPattern: js.UndefOr[Pattern] = js.native
   /**
     * Used to define what capturing group of `headerPattern` captures what header
     * part. The order of the array should correspond to the order of
@@ -38,28 +39,28 @@ trait Options extends js.Object {
     * @default
     * ['type', 'scope', 'subject']
     */
-  var headerCorrespondence: js.UndefOr[Correspondence] = js.undefined
+  var headerCorrespondence: js.UndefOr[Correspondence] = js.native
   /**
     * Used to match header pattern.
     *
     * @default
     * /^(\w*)(?:\(([\w\$\.\-\* ]*)\))?\: (.*)$/
     */
-  var headerPattern: js.UndefOr[Pattern] = js.undefined
+  var headerPattern: js.UndefOr[Pattern] = js.native
   /**
     * The prefixes of an issue. EG: In `gh-123` `gh-` is the prefix.
     *
     * @default
     * ['#']
     */
-  var issuePrefixes: js.UndefOr[Prefixes] = js.undefined
+  var issuePrefixes: js.UndefOr[Prefixes] = js.native
   /**
     * Used to define if `issuePrefixes` should be considered case sensitive.
     *
     * @default
     * false
     */
-  var issuePrefixesCaseSensitive: js.UndefOr[Boolean] = js.undefined
+  var issuePrefixesCaseSensitive: js.UndefOr[Boolean] = js.native
   /**
     * Used to define what capturing group of `mergePattern`.
     *
@@ -68,7 +69,7 @@ trait Options extends js.Object {
     * @default
     * null
     */
-  var mergeCorrespondence: js.UndefOr[Correspondence] = js.undefined
+  var mergeCorrespondence: js.UndefOr[Correspondence] = js.native
   /**
     * Pattern to match merge headers. EG: branch merge, GitHub or GitLab like pull
     * requests headers. When a merge header is parsed, the next line is used for
@@ -94,7 +95,7 @@ trait Options extends js.Object {
     * @default
     * null
     */
-  var mergePattern: js.UndefOr[Pattern] = js.undefined
+  var mergePattern: js.UndefOr[Pattern] = js.native
   /**
     * Keywords for important notes. This value is case __insensitive__. If it's a
     * `string` it will be converted to an `array` separated by a comma.
@@ -102,7 +103,7 @@ trait Options extends js.Object {
     * @default
     * ['BREAKING CHANGE']
     */
-  var noteKeywords: js.UndefOr[Keywords] = js.undefined
+  var noteKeywords: js.UndefOr[Keywords] = js.native
   /**
     * Keywords to reference an issue. This value is case __insensitive__. If it's a
     * `string` it will be converted to an `array` separated by a comma.
@@ -112,7 +113,7 @@ trait Options extends js.Object {
     * @default
     * ['close', 'closes', 'closed', 'fix', 'fixes', 'fixed', 'resolve', 'resolves', 'resolved']
     */
-  var referenceActions: js.UndefOr[Actions] = js.undefined
+  var referenceActions: js.UndefOr[Actions] = js.native
   /**
     * Used to define what capturing group of `revertPattern` captures what reverted
     * commit fields. The order of the array should correspond to the order of
@@ -145,14 +146,14 @@ trait Options extends js.Object {
     * @default
     * ['header', 'hash']
     */
-  var revertCorrespondence: js.UndefOr[Correspondence] = js.undefined
+  var revertCorrespondence: js.UndefOr[Correspondence] = js.native
   /**
     * Pattern to match what this commit reverts.
     *
     * @default
     * /^Revert\s"([\s\S]*)"\s*This reverts commit (\w*)\./
     */
-  var revertPattern: js.UndefOr[Pattern] = js.undefined
+  var revertPattern: js.UndefOr[Pattern] = js.native
   /**
     * What warn function to use. For example, `console.warn.bind(console)` or
     * `grunt.log.writeln`. By default, it's a noop. If it is `true`, it will error
@@ -161,7 +162,7 @@ trait Options extends js.Object {
     * @default
     * function () {}
     */
-  var warn: js.UndefOr[js.Function1[/* message */ js.UndefOr[js.Any], Unit | Boolean]] = js.undefined
+  var warn: js.UndefOr[js.Function1[/* message */ js.UndefOr[js.Any], Unit | Boolean]] = js.native
 }
 
 @JSImport("conventional-commits-parser", "Options")

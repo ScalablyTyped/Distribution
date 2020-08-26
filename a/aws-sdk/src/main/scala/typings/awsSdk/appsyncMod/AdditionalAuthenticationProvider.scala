@@ -22,16 +22,34 @@ trait AdditionalAuthenticationProvider extends js.Object {
 
 object AdditionalAuthenticationProvider {
   @scala.inline
-  def apply(
-    authenticationType: AuthenticationType = null,
-    openIDConnectConfig: OpenIDConnectConfig = null,
-    userPoolConfig: CognitoUserPoolConfig = null
-  ): AdditionalAuthenticationProvider = {
+  def apply(): AdditionalAuthenticationProvider = {
     val __obj = js.Dynamic.literal()
-    if (authenticationType != null) __obj.updateDynamic("authenticationType")(authenticationType.asInstanceOf[js.Any])
-    if (openIDConnectConfig != null) __obj.updateDynamic("openIDConnectConfig")(openIDConnectConfig.asInstanceOf[js.Any])
-    if (userPoolConfig != null) __obj.updateDynamic("userPoolConfig")(userPoolConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdditionalAuthenticationProvider]
   }
+  @scala.inline
+  implicit class AdditionalAuthenticationProviderOps[Self <: AdditionalAuthenticationProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticationType(value: AuthenticationType): Self = this.set("authenticationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationType: Self = this.set("authenticationType", js.undefined)
+    @scala.inline
+    def setOpenIDConnectConfig(value: OpenIDConnectConfig): Self = this.set("openIDConnectConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenIDConnectConfig: Self = this.set("openIDConnectConfig", js.undefined)
+    @scala.inline
+    def setUserPoolConfig(value: CognitoUserPoolConfig): Self = this.set("userPoolConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPoolConfig: Self = this.set("userPoolConfig", js.undefined)
+  }
+  
 }
 

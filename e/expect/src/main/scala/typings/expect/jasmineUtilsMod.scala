@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object jasmineUtilsMod extends js.Object {
   def equals(a: js.Any, b: js.Any): Boolean = js.native
+  def equals(a: js.Any, b: js.Any, customTesters: js.UndefOr[scala.Nothing], strictCheck: Boolean): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[Tester]): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[Tester], strictCheck: Boolean): Boolean = js.native
   def fnNameFor(func: js.Function): String = js.native

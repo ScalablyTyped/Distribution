@@ -2,140 +2,189 @@ package typings.reactDom.testUtilsMod
 
 import typings.react.mod.AbstractView
 import typings.std.DataTransfer
-import typings.std.Date
-import typings.std.Event
 import typings.std.EventTarget
 import typings.std.TouchList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SyntheticEventData extends OptionalEventProperties {
-  var altKey: js.UndefOr[Boolean] = js.undefined
-  var button: js.UndefOr[Double] = js.undefined
-  var buttons: js.UndefOr[Double] = js.undefined
-  var changedTouches: js.UndefOr[TouchList] = js.undefined
-  var charCode: js.UndefOr[Double] = js.undefined
-  var clientX: js.UndefOr[Double] = js.undefined
-  var clientY: js.UndefOr[Double] = js.undefined
-  var clipboardData: js.UndefOr[DataTransfer] = js.undefined
-  var ctrlKey: js.UndefOr[Boolean] = js.undefined
-  var deltaMode: js.UndefOr[Double] = js.undefined
-  var deltaX: js.UndefOr[Double] = js.undefined
-  var deltaY: js.UndefOr[Double] = js.undefined
-  var deltaZ: js.UndefOr[Double] = js.undefined
-  var detail: js.UndefOr[Double] = js.undefined
-  var getModifierState: js.UndefOr[js.Function1[/* key */ String, Boolean]] = js.undefined
-  var key: js.UndefOr[String] = js.undefined
-  var keyCode: js.UndefOr[Double] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
-  var location: js.UndefOr[Double] = js.undefined
-  var metaKey: js.UndefOr[Boolean] = js.undefined
-  var pageX: js.UndefOr[Double] = js.undefined
-  var pageY: js.UndefOr[Double] = js.undefined
-  var relatedTarget: js.UndefOr[EventTarget] = js.undefined
-  var repeat: js.UndefOr[Boolean] = js.undefined
-  var screenX: js.UndefOr[Double] = js.undefined
-  var screenY: js.UndefOr[Double] = js.undefined
-  var shiftKey: js.UndefOr[Boolean] = js.undefined
-  var targetTouches: js.UndefOr[TouchList] = js.undefined
-  var touches: js.UndefOr[TouchList] = js.undefined
-  var view: js.UndefOr[AbstractView] = js.undefined
-  var which: js.UndefOr[Double] = js.undefined
+  var altKey: js.UndefOr[Boolean] = js.native
+  var button: js.UndefOr[Double] = js.native
+  var buttons: js.UndefOr[Double] = js.native
+  var changedTouches: js.UndefOr[TouchList] = js.native
+  var charCode: js.UndefOr[Double] = js.native
+  var clientX: js.UndefOr[Double] = js.native
+  var clientY: js.UndefOr[Double] = js.native
+  var clipboardData: js.UndefOr[DataTransfer] = js.native
+  var ctrlKey: js.UndefOr[Boolean] = js.native
+  var deltaMode: js.UndefOr[Double] = js.native
+  var deltaX: js.UndefOr[Double] = js.native
+  var deltaY: js.UndefOr[Double] = js.native
+  var deltaZ: js.UndefOr[Double] = js.native
+  var detail: js.UndefOr[Double] = js.native
+  var getModifierState: js.UndefOr[js.Function1[/* key */ String, Boolean]] = js.native
+  var key: js.UndefOr[String] = js.native
+  var keyCode: js.UndefOr[Double] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var location: js.UndefOr[Double] = js.native
+  var metaKey: js.UndefOr[Boolean] = js.native
+  var pageX: js.UndefOr[Double] = js.native
+  var pageY: js.UndefOr[Double] = js.native
+  var relatedTarget: js.UndefOr[EventTarget] = js.native
+  var repeat: js.UndefOr[Boolean] = js.native
+  var screenX: js.UndefOr[Double] = js.native
+  var screenY: js.UndefOr[Double] = js.native
+  var shiftKey: js.UndefOr[Boolean] = js.native
+  var targetTouches: js.UndefOr[TouchList] = js.native
+  var touches: js.UndefOr[TouchList] = js.native
+  var view: js.UndefOr[AbstractView] = js.native
+  var which: js.UndefOr[Double] = js.native
 }
 
 object SyntheticEventData {
   @scala.inline
-  def apply(
-    altKey: js.UndefOr[Boolean] = js.undefined,
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    button: js.UndefOr[Double] = js.undefined,
-    buttons: js.UndefOr[Double] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    changedTouches: TouchList = null,
-    charCode: js.UndefOr[Double] = js.undefined,
-    clientX: js.UndefOr[Double] = js.undefined,
-    clientY: js.UndefOr[Double] = js.undefined,
-    clipboardData: DataTransfer = null,
-    ctrlKey: js.UndefOr[Boolean] = js.undefined,
-    currentTarget: EventTarget = null,
-    defaultPrevented: js.UndefOr[Boolean] = js.undefined,
-    deltaMode: js.UndefOr[Double] = js.undefined,
-    deltaX: js.UndefOr[Double] = js.undefined,
-    deltaY: js.UndefOr[Double] = js.undefined,
-    deltaZ: js.UndefOr[Double] = js.undefined,
-    detail: js.UndefOr[Double] = js.undefined,
-    eventPhase: js.UndefOr[Double] = js.undefined,
-    getModifierState: /* key */ String => Boolean = null,
-    isTrusted: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    keyCode: js.UndefOr[Double] = js.undefined,
-    locale: String = null,
-    location: js.UndefOr[Double] = js.undefined,
-    metaKey: js.UndefOr[Boolean] = js.undefined,
-    nativeEvent: Event = null,
-    pageX: js.UndefOr[Double] = js.undefined,
-    pageY: js.UndefOr[Double] = js.undefined,
-    preventDefault: () => Unit = null,
-    relatedTarget: EventTarget = null,
-    repeat: js.UndefOr[Boolean] = js.undefined,
-    screenX: js.UndefOr[Double] = js.undefined,
-    screenY: js.UndefOr[Double] = js.undefined,
-    shiftKey: js.UndefOr[Boolean] = js.undefined,
-    stopPropagation: () => Unit = null,
-    target: EventTarget = null,
-    targetTouches: TouchList = null,
-    timeStamp: Date = null,
-    touches: TouchList = null,
-    `type`: String = null,
-    view: AbstractView = null,
-    which: js.UndefOr[Double] = js.undefined
-  ): SyntheticEventData = {
+  def apply(): SyntheticEventData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttons)) __obj.updateDynamic("buttons")(buttons.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (changedTouches != null) __obj.updateDynamic("changedTouches")(changedTouches.asInstanceOf[js.Any])
-    if (!js.isUndefined(charCode)) __obj.updateDynamic("charCode")(charCode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientX)) __obj.updateDynamic("clientX")(clientX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientY)) __obj.updateDynamic("clientY")(clientY.get.asInstanceOf[js.Any])
-    if (clipboardData != null) __obj.updateDynamic("clipboardData")(clipboardData.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.get.asInstanceOf[js.Any])
-    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultPrevented)) __obj.updateDynamic("defaultPrevented")(defaultPrevented.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deltaMode)) __obj.updateDynamic("deltaMode")(deltaMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deltaX)) __obj.updateDynamic("deltaX")(deltaX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deltaY)) __obj.updateDynamic("deltaY")(deltaY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deltaZ)) __obj.updateDynamic("deltaZ")(deltaZ.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(detail)) __obj.updateDynamic("detail")(detail.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventPhase)) __obj.updateDynamic("eventPhase")(eventPhase.get.asInstanceOf[js.Any])
-    if (getModifierState != null) __obj.updateDynamic("getModifierState")(js.Any.fromFunction1(getModifierState))
-    if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyCode)) __obj.updateDynamic("keyCode")(keyCode.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(metaKey)) __obj.updateDynamic("metaKey")(metaKey.get.asInstanceOf[js.Any])
-    if (nativeEvent != null) __obj.updateDynamic("nativeEvent")(nativeEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageX)) __obj.updateDynamic("pageX")(pageX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageY)) __obj.updateDynamic("pageY")(pageY.get.asInstanceOf[js.Any])
-    if (preventDefault != null) __obj.updateDynamic("preventDefault")(js.Any.fromFunction0(preventDefault))
-    if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenX)) __obj.updateDynamic("screenX")(screenX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenY)) __obj.updateDynamic("screenY")(screenY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.get.asInstanceOf[js.Any])
-    if (stopPropagation != null) __obj.updateDynamic("stopPropagation")(js.Any.fromFunction0(stopPropagation))
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (targetTouches != null) __obj.updateDynamic("targetTouches")(targetTouches.asInstanceOf[js.Any])
-    if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp.asInstanceOf[js.Any])
-    if (touches != null) __obj.updateDynamic("touches")(touches.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(which)) __obj.updateDynamic("which")(which.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntheticEventData]
   }
+  @scala.inline
+  implicit class SyntheticEventDataOps[Self <: SyntheticEventData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltKey(value: Boolean): Self = this.set("altKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltKey: Self = this.set("altKey", js.undefined)
+    @scala.inline
+    def setButton(value: Double): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("button", js.undefined)
+    @scala.inline
+    def setButtons(value: Double): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtons: Self = this.set("buttons", js.undefined)
+    @scala.inline
+    def setChangedTouches(value: TouchList): Self = this.set("changedTouches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangedTouches: Self = this.set("changedTouches", js.undefined)
+    @scala.inline
+    def setCharCode(value: Double): Self = this.set("charCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharCode: Self = this.set("charCode", js.undefined)
+    @scala.inline
+    def setClientX(value: Double): Self = this.set("clientX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientX: Self = this.set("clientX", js.undefined)
+    @scala.inline
+    def setClientY(value: Double): Self = this.set("clientY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientY: Self = this.set("clientY", js.undefined)
+    @scala.inline
+    def setClipboardData(value: DataTransfer): Self = this.set("clipboardData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClipboardData: Self = this.set("clipboardData", js.undefined)
+    @scala.inline
+    def setCtrlKey(value: Boolean): Self = this.set("ctrlKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCtrlKey: Self = this.set("ctrlKey", js.undefined)
+    @scala.inline
+    def setDeltaMode(value: Double): Self = this.set("deltaMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeltaMode: Self = this.set("deltaMode", js.undefined)
+    @scala.inline
+    def setDeltaX(value: Double): Self = this.set("deltaX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeltaX: Self = this.set("deltaX", js.undefined)
+    @scala.inline
+    def setDeltaY(value: Double): Self = this.set("deltaY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeltaY: Self = this.set("deltaY", js.undefined)
+    @scala.inline
+    def setDeltaZ(value: Double): Self = this.set("deltaZ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeltaZ: Self = this.set("deltaZ", js.undefined)
+    @scala.inline
+    def setDetail(value: Double): Self = this.set("detail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetail: Self = this.set("detail", js.undefined)
+    @scala.inline
+    def setGetModifierState(value: /* key */ String => Boolean): Self = this.set("getModifierState", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetModifierState: Self = this.set("getModifierState", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setKeyCode(value: Double): Self = this.set("keyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyCode: Self = this.set("keyCode", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setLocation(value: Double): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMetaKey(value: Boolean): Self = this.set("metaKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetaKey: Self = this.set("metaKey", js.undefined)
+    @scala.inline
+    def setPageX(value: Double): Self = this.set("pageX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageX: Self = this.set("pageX", js.undefined)
+    @scala.inline
+    def setPageY(value: Double): Self = this.set("pageY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageY: Self = this.set("pageY", js.undefined)
+    @scala.inline
+    def setRelatedTarget(value: EventTarget): Self = this.set("relatedTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedTarget: Self = this.set("relatedTarget", js.undefined)
+    @scala.inline
+    def setRepeat(value: Boolean): Self = this.set("repeat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeat: Self = this.set("repeat", js.undefined)
+    @scala.inline
+    def setScreenX(value: Double): Self = this.set("screenX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenX: Self = this.set("screenX", js.undefined)
+    @scala.inline
+    def setScreenY(value: Double): Self = this.set("screenY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenY: Self = this.set("screenY", js.undefined)
+    @scala.inline
+    def setShiftKey(value: Boolean): Self = this.set("shiftKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShiftKey: Self = this.set("shiftKey", js.undefined)
+    @scala.inline
+    def setTargetTouches(value: TouchList): Self = this.set("targetTouches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetTouches: Self = this.set("targetTouches", js.undefined)
+    @scala.inline
+    def setTouches(value: TouchList): Self = this.set("touches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouches: Self = this.set("touches", js.undefined)
+    @scala.inline
+    def setView(value: AbstractView): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setWhich(value: Double): Self = this.set("which", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhich: Self = this.set("which", js.undefined)
+  }
+  
 }
 

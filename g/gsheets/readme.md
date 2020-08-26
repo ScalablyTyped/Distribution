@@ -12,7 +12,7 @@ Get public Google Spreadsheets as plain JavaScript/JSON
 | Keywords           | google, spreadsheets, worksheets, sheets, json, cli |
 | # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 13055 |
+| # downloads        | 14099 |
 | # stars            | 1 |
 
 ## Links

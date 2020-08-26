@@ -7,21 +7,12 @@ import scala.scalajs.js.annotation._
 @JSImport("source-map", "SourceNode")
 @js.native
 class SourceNode () extends js.Object {
-  def this(line: Double) = this()
-  def this(line: Double, column: Double) = this()
-  def this(line: Double, column: Double, source: String) = this()
   def this(
-    line: Double,
-    column: Double,
-    source: String,
-    chunks: (js.Array[String | SourceNode]) | SourceNode | String
-  ) = this()
-  def this(
-    line: Double,
-    column: Double,
-    source: String,
-    chunks: (js.Array[String | SourceNode]) | SourceNode | String,
-    name: String
+    line: Double | Null,
+    column: Double | Null,
+    source: String | Null,
+    chunks: js.UndefOr[(js.Array[String | SourceNode]) | SourceNode | String],
+    name: js.UndefOr[String]
   ) = this()
   var children: js.Array[SourceNode] = js.native
   var column: Double = js.native

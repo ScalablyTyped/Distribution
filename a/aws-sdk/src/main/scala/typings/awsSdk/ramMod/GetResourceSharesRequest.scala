@@ -38,23 +38,52 @@ trait GetResourceSharesRequest extends js.Object {
 
 object GetResourceSharesRequest {
   @scala.inline
-  def apply(
-    resourceOwner: ResourceOwner,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    name: String = null,
-    nextToken: String = null,
-    resourceShareArns: ResourceShareArnList = null,
-    resourceShareStatus: ResourceShareStatus = null,
-    tagFilters: TagFilters = null
-  ): GetResourceSharesRequest = {
+  def apply(resourceOwner: ResourceOwner): GetResourceSharesRequest = {
     val __obj = js.Dynamic.literal(resourceOwner = resourceOwner.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (resourceShareArns != null) __obj.updateDynamic("resourceShareArns")(resourceShareArns.asInstanceOf[js.Any])
-    if (resourceShareStatus != null) __obj.updateDynamic("resourceShareStatus")(resourceShareStatus.asInstanceOf[js.Any])
-    if (tagFilters != null) __obj.updateDynamic("tagFilters")(tagFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceSharesRequest]
   }
+  @scala.inline
+  implicit class GetResourceSharesRequestOps[Self <: GetResourceSharesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceOwner(value: ResourceOwner): Self = this.set("resourceOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setResourceShareArnsVarargs(value: String*): Self = this.set("resourceShareArns", js.Array(value :_*))
+    @scala.inline
+    def setResourceShareArns(value: ResourceShareArnList): Self = this.set("resourceShareArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceShareArns: Self = this.set("resourceShareArns", js.undefined)
+    @scala.inline
+    def setResourceShareStatus(value: ResourceShareStatus): Self = this.set("resourceShareStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceShareStatus: Self = this.set("resourceShareStatus", js.undefined)
+    @scala.inline
+    def setTagFiltersVarargs(value: TagFilter*): Self = this.set("tagFilters", js.Array(value :_*))
+    @scala.inline
+    def setTagFilters(value: TagFilters): Self = this.set("tagFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagFilters: Self = this.set("tagFilters", js.undefined)
+  }
+  
 }
 

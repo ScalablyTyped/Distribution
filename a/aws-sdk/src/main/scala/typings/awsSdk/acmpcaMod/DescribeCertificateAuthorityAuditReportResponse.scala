@@ -26,18 +26,38 @@ trait DescribeCertificateAuthorityAuditReportResponse extends js.Object {
 
 object DescribeCertificateAuthorityAuditReportResponse {
   @scala.inline
-  def apply(
-    AuditReportStatus: AuditReportStatus = null,
-    CreatedAt: TStamp = null,
-    S3BucketName: String = null,
-    S3Key: String = null
-  ): DescribeCertificateAuthorityAuditReportResponse = {
+  def apply(): DescribeCertificateAuthorityAuditReportResponse = {
     val __obj = js.Dynamic.literal()
-    if (AuditReportStatus != null) __obj.updateDynamic("AuditReportStatus")(AuditReportStatus.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (S3BucketName != null) __obj.updateDynamic("S3BucketName")(S3BucketName.asInstanceOf[js.Any])
-    if (S3Key != null) __obj.updateDynamic("S3Key")(S3Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCertificateAuthorityAuditReportResponse]
   }
+  @scala.inline
+  implicit class DescribeCertificateAuthorityAuditReportResponseOps[Self <: DescribeCertificateAuthorityAuditReportResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditReportStatus(value: AuditReportStatus): Self = this.set("AuditReportStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditReportStatus: Self = this.set("AuditReportStatus", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: TStamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setS3BucketName(value: String): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BucketName: Self = this.set("S3BucketName", js.undefined)
+    @scala.inline
+    def setS3Key(value: String): Self = this.set("S3Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Key: Self = this.set("S3Key", js.undefined)
+  }
+  
 }
 

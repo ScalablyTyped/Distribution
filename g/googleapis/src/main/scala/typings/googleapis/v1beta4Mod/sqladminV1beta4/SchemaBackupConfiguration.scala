@@ -35,20 +35,42 @@ trait SchemaBackupConfiguration extends js.Object {
 
 object SchemaBackupConfiguration {
   @scala.inline
-  def apply(
-    binaryLogEnabled: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    replicationLogArchivingEnabled: js.UndefOr[Boolean] = js.undefined,
-    startTime: String = null
-  ): SchemaBackupConfiguration = {
+  def apply(): SchemaBackupConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binaryLogEnabled)) __obj.updateDynamic("binaryLogEnabled")(binaryLogEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(replicationLogArchivingEnabled)) __obj.updateDynamic("replicationLogArchivingEnabled")(replicationLogArchivingEnabled.get.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackupConfiguration]
   }
+  @scala.inline
+  implicit class SchemaBackupConfigurationOps[Self <: SchemaBackupConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBinaryLogEnabled(value: Boolean): Self = this.set("binaryLogEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinaryLogEnabled: Self = this.set("binaryLogEnabled", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setReplicationLogArchivingEnabled(value: Boolean): Self = this.set("replicationLogArchivingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationLogArchivingEnabled: Self = this.set("replicationLogArchivingEnabled", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

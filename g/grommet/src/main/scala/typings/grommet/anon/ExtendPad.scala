@@ -7,27 +7,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExtendPad extends js.Object {
-  var background: js.UndefOr[BackgroundType] = js.undefined
-  var border: js.UndefOr[String | ColorSideSize] = js.undefined
-  var extend: js.UndefOr[ExtendType] = js.undefined
-  var pad: js.UndefOr[PadType] = js.undefined
+  var background: js.UndefOr[BackgroundType] = js.native
+  var border: js.UndefOr[String | ColorSideSize] = js.native
+  var extend: js.UndefOr[ExtendType] = js.native
+  var pad: js.UndefOr[PadType] = js.native
 }
 
 object ExtendPad {
   @scala.inline
-  def apply(
-    background: BackgroundType = null,
-    border: String | ColorSideSize = null,
-    extend: ExtendType = null,
-    pad: PadType = null
-  ): ExtendPad = {
+  def apply(): ExtendPad = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendPad]
   }
+  @scala.inline
+  implicit class ExtendPadOps[Self <: ExtendPad] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: BackgroundType): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBorder(value: String | ColorSideSize): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setExtendFunction1(value: /* args */ js.Any => Unit): Self = this.set("extend", js.Any.fromFunction1(value))
+    @scala.inline
+    def setExtend(value: ExtendType): Self = this.set("extend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtend: Self = this.set("extend", js.undefined)
+    @scala.inline
+    def setPad(value: PadType): Self = this.set("pad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePad: Self = this.set("pad", js.undefined)
+  }
+  
 }
 

@@ -32,6 +32,7 @@ class ResourceProvidersNotesOccurrences protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListNoteOccurrencesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListNoteOccurrencesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListNoteOccurrencesResponse] = js.native
   def list(params: ParamsResourceProvidersNotesOccurrencesList): GaxiosPromise[SchemaListNoteOccurrencesResponse] = js.native
   def list(
     params: ParamsResourceProvidersNotesOccurrencesList,

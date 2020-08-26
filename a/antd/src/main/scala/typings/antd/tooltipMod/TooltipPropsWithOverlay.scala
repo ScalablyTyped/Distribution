@@ -1,49 +1,49 @@
 package typings.antd.tooltipMod
 
-import typings.antd.colorsMod.PresetColorType
-import typings.antd.placementsMod.AdjustOverflow
-import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooltipPropsWithOverlay
   extends AbstractTooltipProps
      with TooltipProps {
-  var overlay: ReactNode | RenderFunction
-  var title: js.UndefOr[ReactNode | RenderFunction] = js.undefined
+  @JSName("overlay")
+  var overlay_TooltipPropsWithOverlay: ReactNode | RenderFunction = js.native
+  var title: js.UndefOr[ReactNode | RenderFunction] = js.native
 }
 
 object TooltipPropsWithOverlay {
   @scala.inline
-  def apply(
-    arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
-    autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
-    className: String = null,
-    color: PresetColorType = null,
-    getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
-    openClassName: String = null,
-    overlay: ReactNode | RenderFunction = null,
-    placement: TooltipPlacement = null,
-    style: CSSProperties = null,
-    title: ReactNode | RenderFunction = null
-  ): TooltipPropsWithOverlay = {
+  def apply(): TooltipPropsWithOverlay = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter.get.asInstanceOf[js.Any])
-    if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
-    if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
-    if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipPropsWithOverlay]
   }
+  @scala.inline
+  implicit class TooltipPropsWithOverlayOps[Self <: TooltipPropsWithOverlay] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOverlayFunction0(value: () => ReactNode): Self = this.set("overlay", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOverlay(value: ReactNode | RenderFunction): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    @scala.inline
+    def setTitleFunction0(value: () => ReactNode): Self = this.set("title", js.Any.fromFunction0(value))
+    @scala.inline
+    def setTitle(value: ReactNode | RenderFunction): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

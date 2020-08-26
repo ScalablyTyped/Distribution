@@ -1,6 +1,5 @@
 package typings.node7z.mod
 
-import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 // (also the progress event emits an array of strings, which doesn't correlate with any promise<T>)
 // so instead of patching `when` promises I'm extending the generic Promise for use internally
 @js.native
-trait PromiseWithProgress[T] extends Promise[T] {
+trait PromiseWithProgress[T]
+  extends js.Promise[T] {
   def progress(progress: js.Function1[/* files */ js.Array[String], Unit]): this.type = js.native
 }
 

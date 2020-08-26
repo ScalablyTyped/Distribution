@@ -34,22 +34,46 @@ trait Event extends js.Object {
 
 object Event {
   @scala.inline
-  def apply(
-    EventCode: EventCode = null,
-    EventId: NonZeroAndMaxString = null,
-    EventTime: Timestamp = null,
-    Message: NonEmptyString = null,
-    PreSignedLogUrl: NonZeroAndMaxString = null,
-    ResourceId: NonZeroAndMaxString = null
-  ): Event = {
+  def apply(): Event = {
     val __obj = js.Dynamic.literal()
-    if (EventCode != null) __obj.updateDynamic("EventCode")(EventCode.asInstanceOf[js.Any])
-    if (EventId != null) __obj.updateDynamic("EventId")(EventId.asInstanceOf[js.Any])
-    if (EventTime != null) __obj.updateDynamic("EventTime")(EventTime.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (PreSignedLogUrl != null) __obj.updateDynamic("PreSignedLogUrl")(PreSignedLogUrl.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
+  @scala.inline
+  implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventCode(value: EventCode): Self = this.set("EventCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventCode: Self = this.set("EventCode", js.undefined)
+    @scala.inline
+    def setEventId(value: NonZeroAndMaxString): Self = this.set("EventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventId: Self = this.set("EventId", js.undefined)
+    @scala.inline
+    def setEventTime(value: Timestamp): Self = this.set("EventTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTime: Self = this.set("EventTime", js.undefined)
+    @scala.inline
+    def setMessage(value: NonEmptyString): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setPreSignedLogUrl(value: NonZeroAndMaxString): Self = this.set("PreSignedLogUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreSignedLogUrl: Self = this.set("PreSignedLogUrl", js.undefined)
+    @scala.inline
+    def setResourceId(value: NonZeroAndMaxString): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+  }
+  
 }
 

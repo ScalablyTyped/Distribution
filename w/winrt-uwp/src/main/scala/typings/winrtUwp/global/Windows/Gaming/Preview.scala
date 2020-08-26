@@ -15,18 +15,7 @@ object Preview extends js.Object {
     
     @js.native
     abstract class GameListEntry ()
-      extends typings.winrtUwp.Windows.Gaming.Preview.GamesEnumeration.GameListEntry {
-      /* CompleteClass */
-      override var category: js.Any = js.native
-       /* unmapped type */ /* CompleteClass */
-      override var displayInfo: js.Any = js.native
-       /* unmapped type */ /* CompleteClass */
-      override var launchAsync: js.Any = js.native
-       /* unmapped type */ /* CompleteClass */
-      override var properties: js.Any = js.native
-       /* unmapped type */ /* CompleteClass */
-      override var setCategoryAsync: js.Any = js.native
-    }
+      extends typings.winrtUwp.Windows.Gaming.Preview.GamesEnumeration.GameListEntry
     
     /* static members */
     @js.native

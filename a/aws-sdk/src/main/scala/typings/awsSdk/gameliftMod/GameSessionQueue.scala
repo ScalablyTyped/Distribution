@@ -30,20 +30,46 @@ trait GameSessionQueue extends js.Object {
 
 object GameSessionQueue {
   @scala.inline
-  def apply(
-    Destinations: GameSessionQueueDestinationList = null,
-    GameSessionQueueArn: GameSessionQueueArn = null,
-    Name: GameSessionQueueName = null,
-    PlayerLatencyPolicies: PlayerLatencyPolicyList = null,
-    TimeoutInSeconds: js.UndefOr[WholeNumber] = js.undefined
-  ): GameSessionQueue = {
+  def apply(): GameSessionQueue = {
     val __obj = js.Dynamic.literal()
-    if (Destinations != null) __obj.updateDynamic("Destinations")(Destinations.asInstanceOf[js.Any])
-    if (GameSessionQueueArn != null) __obj.updateDynamic("GameSessionQueueArn")(GameSessionQueueArn.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (PlayerLatencyPolicies != null) __obj.updateDynamic("PlayerLatencyPolicies")(PlayerLatencyPolicies.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeoutInSeconds)) __obj.updateDynamic("TimeoutInSeconds")(TimeoutInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameSessionQueue]
   }
+  @scala.inline
+  implicit class GameSessionQueueOps[Self <: GameSessionQueue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationsVarargs(value: GameSessionQueueDestination*): Self = this.set("Destinations", js.Array(value :_*))
+    @scala.inline
+    def setDestinations(value: GameSessionQueueDestinationList): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinations: Self = this.set("Destinations", js.undefined)
+    @scala.inline
+    def setGameSessionQueueArn(value: GameSessionQueueArn): Self = this.set("GameSessionQueueArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameSessionQueueArn: Self = this.set("GameSessionQueueArn", js.undefined)
+    @scala.inline
+    def setName(value: GameSessionQueueName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPlayerLatencyPoliciesVarargs(value: PlayerLatencyPolicy*): Self = this.set("PlayerLatencyPolicies", js.Array(value :_*))
+    @scala.inline
+    def setPlayerLatencyPolicies(value: PlayerLatencyPolicyList): Self = this.set("PlayerLatencyPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayerLatencyPolicies: Self = this.set("PlayerLatencyPolicies", js.undefined)
+    @scala.inline
+    def setTimeoutInSeconds(value: WholeNumber): Self = this.set("TimeoutInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutInSeconds: Self = this.set("TimeoutInSeconds", js.undefined)
+  }
+  
 }
 

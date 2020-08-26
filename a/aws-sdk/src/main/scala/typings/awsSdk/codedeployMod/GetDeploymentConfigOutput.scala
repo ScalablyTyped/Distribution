@@ -14,10 +14,26 @@ trait GetDeploymentConfigOutput extends js.Object {
 
 object GetDeploymentConfigOutput {
   @scala.inline
-  def apply(deploymentConfigInfo: DeploymentConfigInfo = null): GetDeploymentConfigOutput = {
+  def apply(): GetDeploymentConfigOutput = {
     val __obj = js.Dynamic.literal()
-    if (deploymentConfigInfo != null) __obj.updateDynamic("deploymentConfigInfo")(deploymentConfigInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeploymentConfigOutput]
   }
+  @scala.inline
+  implicit class GetDeploymentConfigOutputOps[Self <: GetDeploymentConfigOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeploymentConfigInfo(value: DeploymentConfigInfo): Self = this.set("deploymentConfigInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentConfigInfo: Self = this.set("deploymentConfigInfo", js.undefined)
+  }
+  
 }
 

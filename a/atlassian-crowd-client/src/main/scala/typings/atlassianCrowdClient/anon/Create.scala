@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Create extends js.Object {
   def create(username: String, password: String): js.Promise[^] = js.native
+  def create(username: String, password: String, validationFactors: js.UndefOr[scala.Nothing], duration: Double): js.Promise[^] = js.native
   def create(
     username: String,
     password: String,
@@ -20,6 +21,7 @@ trait Create extends js.Object {
     duration: Double
   ): js.Promise[^] = js.native
   def createUnvalidated(username: String): js.Promise[^] = js.native
+  def createUnvalidated(username: String, validationFactors: js.UndefOr[scala.Nothing], duration: Double): js.Promise[^] = js.native
   def createUnvalidated(username: String, validationFactors: typings.atlassianCrowdClient.validationFactorsMod.^): js.Promise[^] = js.native
   def createUnvalidated(
     username: String,

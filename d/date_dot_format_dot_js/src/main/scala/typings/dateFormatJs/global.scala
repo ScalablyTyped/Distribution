@@ -21,7 +21,11 @@ object global extends js.Object {
     var i18n: DateFormatI18n = js.native
     var masks: DateFormatMasks = js.native
     def apply(): String = js.native
+    def apply(date: js.UndefOr[scala.Nothing], mask: js.UndefOr[scala.Nothing], utc: Boolean): String = js.native
+    def apply(date: js.UndefOr[scala.Nothing], mask: String): String = js.native
+    def apply(date: js.UndefOr[scala.Nothing], mask: String, utc: Boolean): String = js.native
     def apply(date: js.Any): String = js.native
+    def apply(date: js.Any, mask: js.UndefOr[scala.Nothing], utc: Boolean): String = js.native
     def apply(date: js.Any, mask: String): String = js.native
     def apply(date: js.Any, mask: String, utc: Boolean): String = js.native
   }

@@ -12,7 +12,7 @@ Immutable data structures for JavaScript which are backwards-compatible with nor
 | Keywords           | immutable |
 | # releases         | 3 |
 | # dependents       | 228 |
-| # downloads        | 13321814 |
+| # downloads        | 14046328 |
 | # stars            | 19 |
 
 ## Links

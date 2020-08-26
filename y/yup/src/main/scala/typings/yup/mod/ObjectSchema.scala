@@ -20,12 +20,13 @@ trait ObjectSchema[T /* <: js.UndefOr[js.Object | Null] */] extends Schema[T] {
   def constantCase(): ObjectSchema[T] = js.native
   def defined(): ObjectSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
   def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): ObjectSchema[U] = js.native
-  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: TestOptionsMessage[Values, _]): ObjectSchema[U] = js.native
+  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, _]]): ObjectSchema[U] = js.native
   def from(fromKey: String, toKey: String): ObjectSchema[T] = js.native
   def from(fromKey: String, toKey: String, alias: Boolean): ObjectSchema[T] = js.native
   def noUnknown(): ObjectSchema[T] = js.native
+  def noUnknown(onlyKnownKeys: js.UndefOr[scala.Nothing], message: js.UndefOr[TestOptionsMessage[js.Object, _]]): ObjectSchema[T] = js.native
   def noUnknown(onlyKnownKeys: Boolean): ObjectSchema[T] = js.native
-  def noUnknown(onlyKnownKeys: Boolean, message: TestOptionsMessage[js.Object, _]): ObjectSchema[T] = js.native
+  def noUnknown(onlyKnownKeys: Boolean, message: js.UndefOr[TestOptionsMessage[js.Object, _]]): ObjectSchema[T] = js.native
   def notRequired(): ObjectSchema[js.UndefOr[T]] = js.native
   def nullable(): ObjectSchema[T | Null] = js.native
   def nullable(isNullable: Boolean): ObjectSchema[T] = js.native
@@ -34,7 +35,7 @@ trait ObjectSchema[T /* <: js.UndefOr[js.Object | Null] */] extends Schema[T] {
   @JSName("nullable")
   def nullable_true(isNullable: `true`): ObjectSchema[T | Null] = js.native
   def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): ObjectSchema[U] = js.native
-  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: TestOptionsMessage[Values, _]): ObjectSchema[U] = js.native
+  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, _]]): ObjectSchema[U] = js.native
   def optional(): ObjectSchema[js.UndefOr[T]] = js.native
   def required(): ObjectSchema[Exclude[T, js.UndefOr[Null]]] = js.native
   def required(message: TestOptionsMessage[js.Object, _]): ObjectSchema[Exclude[T, js.UndefOr[Null]]] = js.native
@@ -48,7 +49,8 @@ trait ObjectSchema[T /* <: js.UndefOr[js.Object | Null] */] extends Schema[T] {
   def test_U_T_ObjectSchema[U /* <: T */](name: String, message: TestOptionsMessage[js.Object, _], test: AssertingTestFunction[U]): ObjectSchema[U] = js.native
   def transformKeys(callback: js.Function1[/* key */ js.Any, _]): Unit = js.native
   def unknown(): ObjectSchema[T] = js.native
+  def unknown(allow: js.UndefOr[scala.Nothing], message: js.UndefOr[TestOptionsMessage[js.Object, _]]): ObjectSchema[T] = js.native
   def unknown(allow: Boolean): ObjectSchema[T] = js.native
-  def unknown(allow: Boolean, message: TestOptionsMessage[js.Object, _]): ObjectSchema[T] = js.native
+  def unknown(allow: Boolean, message: js.UndefOr[TestOptionsMessage[js.Object, _]]): ObjectSchema[T] = js.native
 }
 

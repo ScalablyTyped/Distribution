@@ -42,26 +42,54 @@ trait DomainDescription extends js.Object {
 
 object DomainDescription {
   @scala.inline
-  def apply(
-    arn: Arn = null,
-    assetSizeBytes: js.UndefOr[Long] = js.undefined,
-    createdTime: Timestamp = null,
-    encryptionKey: Arn = null,
-    name: DomainName = null,
-    owner: AccountId = null,
-    repositoryCount: js.UndefOr[Integer] = js.undefined,
-    status: DomainStatus = null
-  ): DomainDescription = {
+  def apply(): DomainDescription = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(assetSizeBytes)) __obj.updateDynamic("assetSizeBytes")(assetSizeBytes.get.asInstanceOf[js.Any])
-    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
-    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (!js.isUndefined(repositoryCount)) __obj.updateDynamic("repositoryCount")(repositoryCount.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainDescription]
   }
+  @scala.inline
+  implicit class DomainDescriptionOps[Self <: DomainDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAssetSizeBytes(value: Long): Self = this.set("assetSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetSizeBytes: Self = this.set("assetSizeBytes", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: Timestamp): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    @scala.inline
+    def setEncryptionKey(value: Arn): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKey: Self = this.set("encryptionKey", js.undefined)
+    @scala.inline
+    def setName(value: DomainName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOwner(value: AccountId): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setRepositoryCount(value: Integer): Self = this.set("repositoryCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryCount: Self = this.set("repositoryCount", js.undefined)
+    @scala.inline
+    def setStatus(value: DomainStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ListProjectsOutput extends js.Object {
 
 object ListProjectsOutput {
   @scala.inline
-  def apply(nextToken: String = null, projects: ProjectNames = null): ListProjectsOutput = {
+  def apply(): ListProjectsOutput = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (projects != null) __obj.updateDynamic("projects")(projects.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProjectsOutput]
   }
+  @scala.inline
+  implicit class ListProjectsOutputOps[Self <: ListProjectsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setProjectsVarargs(value: NonEmptyString*): Self = this.set("projects", js.Array(value :_*))
+    @scala.inline
+    def setProjects(value: ProjectNames): Self = this.set("projects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjects: Self = this.set("projects", js.undefined)
+  }
+  
 }
 

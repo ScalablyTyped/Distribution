@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "FormField")
+@JSImport("grommet/es6", "FormField")
 @js.native
 class FormField protected ()
   extends Component[
@@ -38,7 +38,7 @@ class FormField protected ()
   ) = this()
 }
 
-@JSImport("grommet", "FormField")
+@JSImport("grommet/es6", "FormField")
 @js.native
 object FormField extends TopLevel[
       ComponentClass[

@@ -31,6 +31,7 @@ import scala.scalajs.js.annotation._
   * a rearrangement of the visible shapes, the user gets notified of this.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleDrawDocumentView
   extends XAccessible
      with XAccessibleContext

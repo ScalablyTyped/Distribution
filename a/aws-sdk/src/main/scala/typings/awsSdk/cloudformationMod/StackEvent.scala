@@ -54,28 +54,58 @@ trait StackEvent extends js.Object {
 
 object StackEvent {
   @scala.inline
-  def apply(
-    EventId: EventId,
-    StackId: StackId,
-    StackName: StackName,
-    Timestamp: Timestamp,
-    ClientRequestToken: ClientRequestToken = null,
-    LogicalResourceId: LogicalResourceId = null,
-    PhysicalResourceId: PhysicalResourceId = null,
-    ResourceProperties: ResourceProperties = null,
-    ResourceStatus: ResourceStatus = null,
-    ResourceStatusReason: ResourceStatusReason = null,
-    ResourceType: ResourceType = null
-  ): StackEvent = {
+  def apply(EventId: EventId, StackId: StackId, StackName: StackName, Timestamp: Timestamp): StackEvent = {
     val __obj = js.Dynamic.literal(EventId = EventId.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (LogicalResourceId != null) __obj.updateDynamic("LogicalResourceId")(LogicalResourceId.asInstanceOf[js.Any])
-    if (PhysicalResourceId != null) __obj.updateDynamic("PhysicalResourceId")(PhysicalResourceId.asInstanceOf[js.Any])
-    if (ResourceProperties != null) __obj.updateDynamic("ResourceProperties")(ResourceProperties.asInstanceOf[js.Any])
-    if (ResourceStatus != null) __obj.updateDynamic("ResourceStatus")(ResourceStatus.asInstanceOf[js.Any])
-    if (ResourceStatusReason != null) __obj.updateDynamic("ResourceStatusReason")(ResourceStatusReason.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackEvent]
   }
+  @scala.inline
+  implicit class StackEventOps[Self <: StackEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventId(value: EventId): Self = this.set("EventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackId(value: StackId): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setLogicalResourceId(value: LogicalResourceId): Self = this.set("LogicalResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogicalResourceId: Self = this.set("LogicalResourceId", js.undefined)
+    @scala.inline
+    def setPhysicalResourceId(value: PhysicalResourceId): Self = this.set("PhysicalResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhysicalResourceId: Self = this.set("PhysicalResourceId", js.undefined)
+    @scala.inline
+    def setResourceProperties(value: ResourceProperties): Self = this.set("ResourceProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceProperties: Self = this.set("ResourceProperties", js.undefined)
+    @scala.inline
+    def setResourceStatus(value: ResourceStatus): Self = this.set("ResourceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceStatus: Self = this.set("ResourceStatus", js.undefined)
+    @scala.inline
+    def setResourceStatusReason(value: ResourceStatusReason): Self = this.set("ResourceStatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceStatusReason: Self = this.set("ResourceStatusReason", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+  }
+  
 }
 

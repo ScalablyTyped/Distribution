@@ -10,9 +10,9 @@ Core Storybook Components
 | ------------------ | :-------------: |
 | Full name          | @storybook/components |
 | Keywords           | storybook |
-| # releases         | 427 |
-| # dependents       | 73 |
-| # downloads        | 53141096 |
+| # releases         | 428 |
+| # dependents       | 75 |
+| # downloads        | 54640774 |
 | # stars            | 0 |
 
 ## Links

@@ -10,6 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MapperOpts
   extends /* customAttr */ StringDictionary[js.Any] {
   /**
@@ -20,7 +21,7 @@ trait MapperOpts
     * @since 3.0.0
     * @tutorial ["http://www.js-data.io/v3.0/docs/connecting-to-a-data-source","Connecting to a data source"]
     */
-  var _adapters: js.UndefOr[js.Object] = js.undefined
+  var _adapters: js.UndefOr[js.Object] = js.native
   /**
     * Whether {@link Mapper#beforeCreate} and {@link Mapper#beforeCreateMany}
     * should automatically receive default values according to the Mapper's schema.
@@ -28,7 +29,7 @@ trait MapperOpts
     * @default true
     * @since 3.0.0
     */
-  var applyDefaults: js.UndefOr[Boolean] = js.undefined
+  var applyDefaults: js.UndefOr[Boolean] = js.native
   /**
     * Whether to augment {@link Mapper#recordClass} with ES5 getters and setters
     * according to the properties defined in {@link Mapper#schema}. This makes
@@ -39,7 +40,7 @@ trait MapperOpts
     * @default true
     * @since 3.0.0
     */
-  var applySchema: js.UndefOr[Boolean] = js.undefined
+  var applySchema: js.UndefOr[Boolean] = js.native
   /**
     * The name of the registered adapter that this Mapper should used by default.
     *
@@ -47,32 +48,32 @@ trait MapperOpts
     * @since 3.0.0
     * @tutorial ["http://www.js-data.io/v3.0/docs/connecting-to-a-data-source","Connecting to a data source"]
     */
-  var defaultAdapter: js.UndefOr[String] = js.undefined
-  var endpoint: js.UndefOr[String] = js.undefined
+  var defaultAdapter: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.native
   /**
     * The field used as the unique identifier on records handled by this Mapper.
     *
     * @default id
     * @since 3.0.0
     */
-  var idAttribute: js.UndefOr[String] = js.undefined
+  var idAttribute: js.UndefOr[String] = js.native
   /**
     * Whether records created from this mapper keep changeHistory on property changes.
     *
     * @default true
     * @since 3.0.0
     */
-  var keepChangeHistory: js.UndefOr[Boolean] = js.undefined
-  var mapperClass: js.UndefOr[Instantiable1[js.UndefOr[/* opts */ MapperOpts], Mapper]] = js.undefined
-  var methods: js.UndefOr[StringDictionary[js.Function]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
+  var keepChangeHistory: js.UndefOr[Boolean] = js.native
+  var mapperClass: js.UndefOr[Instantiable1[/* opts */ js.UndefOr[MapperOpts], Mapper]] = js.native
+  var methods: js.UndefOr[StringDictionary[js.Function]] = js.native
+  var name: js.UndefOr[String] = js.native
   /**
     * Whether to skip validation when the Record instances are created.
     *
     * @default false
     * @since 3.0.0
     */
-  var noValidate: js.UndefOr[Boolean] = js.undefined
+  var noValidate: js.UndefOr[Boolean] = js.native
   /**
     * Whether this Mapper should emit operational events.
     *
@@ -80,9 +81,9 @@ trait MapperOpts
     * @since 3.0.0
     */
   @JSName("notify")
-  var notify_FMapperOpts: js.UndefOr[Boolean] = js.undefined
-  var onConflict: js.UndefOr[skip] = js.undefined
-  var properties: js.UndefOr[StringDictionary[PropertyDefinition]] = js.undefined
+  var notify_FMapperOpts: js.UndefOr[Boolean] = js.native
+  var onConflict: js.UndefOr[skip] = js.native
+  var properties: js.UndefOr[StringDictionary[PropertyDefinition]] = js.native
   /**
     * Whether {@link Mapper#create}, {@link Mapper#createMany},
     * {@link Mapper#update}, {@link Mapper#updateAll}, {@link Mapper#updateMany},
@@ -97,12 +98,12 @@ trait MapperOpts
     * @default false
     * @since 3.0.0
     */
-  var raw: js.UndefOr[Boolean] = js.undefined
-  var recordClass: js.UndefOr[TypeofRecord | Boolean] = js.undefined
-  var relations: js.UndefOr[js.Any] = js.undefined
-  var schema: js.UndefOr[SchemaDefinition | typings.jsData.schemaMod.default] = js.undefined
-  var scopes: js.UndefOr[js.Any] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var raw: js.UndefOr[Boolean] = js.native
+  var recordClass: js.UndefOr[TypeofRecord | Boolean] = js.native
+  var relations: js.UndefOr[js.Any] = js.native
+  var schema: js.UndefOr[SchemaDefinition | typings.jsData.schemaMod.default] = js.native
+  var scopes: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[String] = js.native
   /**
     * Whether records created from this mapper automatically validate their properties
     * when their properties are modified.
@@ -110,62 +111,116 @@ trait MapperOpts
     * @default true
     * @since 3.0.0
     */
-  var validateOnSet: js.UndefOr[Boolean] = js.undefined
-  var wrap: js.UndefOr[Boolean] = js.undefined
+  var validateOnSet: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.native
 }
 
 object MapperOpts {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    _adapters: js.Object = null,
-    applyDefaults: js.UndefOr[Boolean] = js.undefined,
-    applySchema: js.UndefOr[Boolean] = js.undefined,
-    defaultAdapter: String = null,
-    endpoint: String = null,
-    idAttribute: String = null,
-    keepChangeHistory: js.UndefOr[Boolean] = js.undefined,
-    mapperClass: Instantiable1[js.UndefOr[/* opts */ MapperOpts], Mapper] = null,
-    methods: StringDictionary[js.Function] = null,
-    name: String = null,
-    noValidate: js.UndefOr[Boolean] = js.undefined,
-    notify: js.UndefOr[Boolean] = js.undefined,
-    onConflict: skip = null,
-    properties: StringDictionary[PropertyDefinition] = null,
-    raw: js.UndefOr[Boolean] = js.undefined,
-    recordClass: TypeofRecord | Boolean = null,
-    relations: js.Any = null,
-    schema: SchemaDefinition | typings.jsData.schemaMod.default = null,
-    scopes: js.Any = null,
-    `type`: String = null,
-    validateOnSet: js.UndefOr[Boolean] = js.undefined,
-    wrap: js.UndefOr[Boolean] = js.undefined
-  ): MapperOpts = {
+  def apply(): MapperOpts = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_adapters != null) __obj.updateDynamic("_adapters")(_adapters.asInstanceOf[js.Any])
-    if (!js.isUndefined(applyDefaults)) __obj.updateDynamic("applyDefaults")(applyDefaults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(applySchema)) __obj.updateDynamic("applySchema")(applySchema.get.asInstanceOf[js.Any])
-    if (defaultAdapter != null) __obj.updateDynamic("defaultAdapter")(defaultAdapter.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (idAttribute != null) __obj.updateDynamic("idAttribute")(idAttribute.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepChangeHistory)) __obj.updateDynamic("keepChangeHistory")(keepChangeHistory.get.asInstanceOf[js.Any])
-    if (mapperClass != null) __obj.updateDynamic("mapperClass")(mapperClass.asInstanceOf[js.Any])
-    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.get.asInstanceOf[js.Any])
-    if (onConflict != null) __obj.updateDynamic("onConflict")(onConflict.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
-    if (recordClass != null) __obj.updateDynamic("recordClass")(recordClass.asInstanceOf[js.Any])
-    if (relations != null) __obj.updateDynamic("relations")(relations.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnSet)) __obj.updateDynamic("validateOnSet")(validateOnSet.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapperOpts]
   }
+  @scala.inline
+  implicit class MapperOptsOps[Self <: MapperOpts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_adapters(value: js.Object): Self = this.set("_adapters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_adapters: Self = this.set("_adapters", js.undefined)
+    @scala.inline
+    def setApplyDefaults(value: Boolean): Self = this.set("applyDefaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyDefaults: Self = this.set("applyDefaults", js.undefined)
+    @scala.inline
+    def setApplySchema(value: Boolean): Self = this.set("applySchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplySchema: Self = this.set("applySchema", js.undefined)
+    @scala.inline
+    def setDefaultAdapter(value: String): Self = this.set("defaultAdapter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAdapter: Self = this.set("defaultAdapter", js.undefined)
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setIdAttribute(value: String): Self = this.set("idAttribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdAttribute: Self = this.set("idAttribute", js.undefined)
+    @scala.inline
+    def setKeepChangeHistory(value: Boolean): Self = this.set("keepChangeHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepChangeHistory: Self = this.set("keepChangeHistory", js.undefined)
+    @scala.inline
+    def setMapperClass(value: Instantiable1[/* opts */ js.UndefOr[MapperOpts], Mapper]): Self = this.set("mapperClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapperClass: Self = this.set("mapperClass", js.undefined)
+    @scala.inline
+    def setMethods(value: StringDictionary[js.Function]): Self = this.set("methods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethods: Self = this.set("methods", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNoValidate(value: Boolean): Self = this.set("noValidate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoValidate: Self = this.set("noValidate", js.undefined)
+    @scala.inline
+    def setNotify(value: Boolean): Self = this.set("notify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotify: Self = this.set("notify", js.undefined)
+    @scala.inline
+    def setOnConflict(value: skip): Self = this.set("onConflict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnConflict: Self = this.set("onConflict", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[PropertyDefinition]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaw: Self = this.set("raw", js.undefined)
+    @scala.inline
+    def setRecordClass(value: TypeofRecord | Boolean): Self = this.set("recordClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordClass: Self = this.set("recordClass", js.undefined)
+    @scala.inline
+    def setRelations(value: js.Any): Self = this.set("relations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelations: Self = this.set("relations", js.undefined)
+    @scala.inline
+    def setSchema(value: SchemaDefinition | typings.jsData.schemaMod.default): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setScopes(value: js.Any): Self = this.set("scopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScopes: Self = this.set("scopes", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValidateOnSet(value: Boolean): Self = this.set("validateOnSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateOnSet: Self = this.set("validateOnSet", js.undefined)
+    @scala.inline
+    def setWrap(value: Boolean): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap: Self = this.set("wrap", js.undefined)
+  }
+  
 }
 

@@ -14,10 +14,26 @@ trait AttachVpnGatewayResult extends js.Object {
 
 object AttachVpnGatewayResult {
   @scala.inline
-  def apply(VpcAttachment: VpcAttachment = null): AttachVpnGatewayResult = {
+  def apply(): AttachVpnGatewayResult = {
     val __obj = js.Dynamic.literal()
-    if (VpcAttachment != null) __obj.updateDynamic("VpcAttachment")(VpcAttachment.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachVpnGatewayResult]
   }
+  @scala.inline
+  implicit class AttachVpnGatewayResultOps[Self <: AttachVpnGatewayResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpcAttachment(value: VpcAttachment): Self = this.set("VpcAttachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcAttachment: Self = this.set("VpcAttachment", js.undefined)
+  }
+  
 }
 

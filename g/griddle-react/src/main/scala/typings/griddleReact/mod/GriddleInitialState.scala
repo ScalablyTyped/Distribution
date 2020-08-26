@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GriddleInitialState
   extends /* x */ StringDictionary[js.Any] {
-  var enableSettings: js.UndefOr[Boolean] = js.undefined
-  var pageProperties: js.UndefOr[GriddlePageProperties] = js.undefined
+  var enableSettings: js.UndefOr[Boolean] = js.native
+  var pageProperties: js.UndefOr[GriddlePageProperties] = js.native
   var sortMethod: js.UndefOr[
     js.Function3[
       /* data */ js.Array[_], 
@@ -17,29 +18,53 @@ trait GriddleInitialState
       /* sortAscending */ js.UndefOr[Boolean], 
       Double
     ]
-  ] = js.undefined
-  var sortProperties: js.UndefOr[js.Array[GriddleSortKey]] = js.undefined
-  var textProperties: js.UndefOr[FilterPlaceholder] = js.undefined
+  ] = js.native
+  var sortProperties: js.UndefOr[js.Array[GriddleSortKey]] = js.native
+  var textProperties: js.UndefOr[FilterPlaceholder] = js.native
 }
 
 object GriddleInitialState {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    enableSettings: js.UndefOr[Boolean] = js.undefined,
-    pageProperties: GriddlePageProperties = null,
-    sortMethod: (/* data */ js.Array[_], /* column */ String, /* sortAscending */ js.UndefOr[Boolean]) => Double = null,
-    sortProperties: js.Array[GriddleSortKey] = null,
-    textProperties: FilterPlaceholder = null
-  ): GriddleInitialState = {
+  def apply(): GriddleInitialState = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(enableSettings)) __obj.updateDynamic("enableSettings")(enableSettings.get.asInstanceOf[js.Any])
-    if (pageProperties != null) __obj.updateDynamic("pageProperties")(pageProperties.asInstanceOf[js.Any])
-    if (sortMethod != null) __obj.updateDynamic("sortMethod")(js.Any.fromFunction3(sortMethod))
-    if (sortProperties != null) __obj.updateDynamic("sortProperties")(sortProperties.asInstanceOf[js.Any])
-    if (textProperties != null) __obj.updateDynamic("textProperties")(textProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[GriddleInitialState]
   }
+  @scala.inline
+  implicit class GriddleInitialStateOps[Self <: GriddleInitialState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnableSettings(value: Boolean): Self = this.set("enableSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSettings: Self = this.set("enableSettings", js.undefined)
+    @scala.inline
+    def setPageProperties(value: GriddlePageProperties): Self = this.set("pageProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageProperties: Self = this.set("pageProperties", js.undefined)
+    @scala.inline
+    def setSortMethod(
+      value: (/* data */ js.Array[_], /* column */ String, /* sortAscending */ js.UndefOr[Boolean]) => Double
+    ): Self = this.set("sortMethod", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteSortMethod: Self = this.set("sortMethod", js.undefined)
+    @scala.inline
+    def setSortPropertiesVarargs(value: GriddleSortKey*): Self = this.set("sortProperties", js.Array(value :_*))
+    @scala.inline
+    def setSortProperties(value: js.Array[GriddleSortKey]): Self = this.set("sortProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortProperties: Self = this.set("sortProperties", js.undefined)
+    @scala.inline
+    def setTextProperties(value: FilterPlaceholder): Self = this.set("textProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextProperties: Self = this.set("textProperties", js.undefined)
+  }
+  
 }
 

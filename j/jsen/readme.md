@@ -11,7 +11,7 @@ JSON-Schema validator built for speed
 | Keywords           | JSON, schema, validator, speed |
 | # releases         | 0 |
 | # dependents       | 35 |
-| # downloads        | 1316994 |
+| # downloads        | 1381220 |
 | # stars            | 0 |
 
 ## Links

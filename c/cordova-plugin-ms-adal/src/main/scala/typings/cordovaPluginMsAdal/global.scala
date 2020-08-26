@@ -1,11 +1,6 @@
 package typings.cordovaPluginMsAdal
 
-import typings.cordovaPluginMsAdal.Microsoft.ADAL.Promise
 import typings.cordovaPluginMsAdal.Microsoft.ADAL.PromiseAuthenticationContext
-import typings.cordovaPluginMsAdal.Microsoft.ADAL.PromiseTokenCacheItems
-import typings.cordovaPluginMsAdal.Microsoft.ADAL.TokenCacheItem
-import typings.cordovaPluginMsAdal.Microsoft.ADAL.UserInfo
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,63 +34,11 @@ object global extends js.Object {
       
       @js.native
       class AuthenticationResult ()
-        extends typings.cordovaPluginMsAdal.Microsoft.ADAL.AuthenticationResult {
-        /* CompleteClass */
-        override var accessToken: String = js.native
-        /* CompleteClass */
-        override var accessTokenType: String = js.native
-        /* CompleteClass */
-        override var expiresOn: Date = js.native
-        /* CompleteClass */
-        override var idToken: String = js.native
-        /* CompleteClass */
-        override var isMultipleResourceRefreshToken: Boolean = js.native
-        /* CompleteClass */
-        override var status: String = js.native
-        /* CompleteClass */
-        override var statusCode: String = js.native
-        /* CompleteClass */
-        override var tenantId: String = js.native
-        /* CompleteClass */
-        override var userInfo: UserInfo = js.native
-        /**
-          * Creates authorization header for web requests.
-          *
-          * @returns {String} The authorization header.
-          */
-        /* CompleteClass */
-        override def createAuthorizationHeader(): String = js.native
-      }
+        extends typings.cordovaPluginMsAdal.Microsoft.ADAL.AuthenticationResult
       
       @js.native
       class TokenCache ()
-        extends typings.cordovaPluginMsAdal.Microsoft.ADAL.TokenCache {
-        /* CompleteClass */
-        override var contextAuthority: String = js.native
-        /**
-          * Clears the cache by deleting all the items.
-          *
-          * @returns {Promise} Promise either fulfilled when operation is completed or rejected with error.
-          */
-        /* CompleteClass */
-        override def clear(): Promise = js.native
-        /**
-          * Deletes cached item.
-          *
-          * @param   {TokenCacheItem}  item Cached item to delete from cache
-          *
-          * @returns {Promise} Promise either fulfilled when operation is completed or rejected with error.
-          */
-        /* CompleteClass */
-        override def deleteItem(item: TokenCacheItem): Promise = js.native
-        /**
-          * Gets all cached items.
-          *
-          * @returns {Promise} Promise either fulfilled with array of cached items or rejected with error.
-          */
-        /* CompleteClass */
-        override def readItems(): PromiseTokenCacheItems = js.native
-      }
+        extends typings.cordovaPluginMsAdal.Microsoft.ADAL.TokenCache
       
       /* static members */
       @js.native

@@ -43,7 +43,16 @@ trait IChartistSvg extends js.Object {
     * Create a new SVG element whose wrapper object will be selected for further operations. This way you can also create nested groups easily.
     */
   def elem(name: String): IChartistSvg = js.native
+  def elem(
+    name: String,
+    attributes: js.UndefOr[scala.Nothing],
+    className: js.UndefOr[scala.Nothing],
+    insertFirst: Boolean
+  ): IChartistSvg = js.native
+  def elem(name: String, attributes: js.UndefOr[scala.Nothing], className: String): IChartistSvg = js.native
+  def elem(name: String, attributes: js.UndefOr[scala.Nothing], className: String, insertFirst: Boolean): IChartistSvg = js.native
   def elem(name: String, attributes: js.Object): IChartistSvg = js.native
+  def elem(name: String, attributes: js.Object, className: js.UndefOr[scala.Nothing], insertFirst: Boolean): IChartistSvg = js.native
   def elem(name: String, attributes: js.Object, className: String): IChartistSvg = js.native
   def elem(name: String, attributes: js.Object, className: String, insertFirst: Boolean): IChartistSvg = js.native
   /**
@@ -55,7 +64,16 @@ trait IChartistSvg extends js.Object {
     * This method creates a foreignObject (see https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) that allows to embed HTML content into a SVG graphic. With the help of foreignObjects you can enable the usage of regular HTML elements inside of SVG where they are subject for SVG positioning and transformation but the Browser will use the HTML rendering capabilities for the containing DOM.
     */
   def foreignObject(content: js.Any): IChartistSvg = js.native
+  def foreignObject(
+    content: js.Any,
+    attributes: js.UndefOr[scala.Nothing],
+    className: js.UndefOr[scala.Nothing],
+    insertFirst: Boolean
+  ): IChartistSvg = js.native
+  def foreignObject(content: js.Any, attributes: js.UndefOr[scala.Nothing], className: String): IChartistSvg = js.native
+  def foreignObject(content: js.Any, attributes: js.UndefOr[scala.Nothing], className: String, insertFirst: Boolean): IChartistSvg = js.native
   def foreignObject(content: js.Any, attributes: js.Object): IChartistSvg = js.native
+  def foreignObject(content: js.Any, attributes: js.Object, className: js.UndefOr[scala.Nothing], insertFirst: Boolean): IChartistSvg = js.native
   def foreignObject(content: js.Any, attributes: js.Object, className: String): IChartistSvg = js.native
   def foreignObject(content: js.Any, attributes: js.Object, className: String, insertFirst: Boolean): IChartistSvg = js.native
   /**

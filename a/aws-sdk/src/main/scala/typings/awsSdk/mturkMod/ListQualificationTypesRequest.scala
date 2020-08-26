@@ -27,19 +27,40 @@ trait ListQualificationTypesRequest extends js.Object {
 
 object ListQualificationTypesRequest {
   @scala.inline
-  def apply(
-    MustBeRequestable: Boolean,
-    MaxResults: js.UndefOr[ResultSize] = js.undefined,
-    MustBeOwnedByCaller: js.UndefOr[Boolean] = js.undefined,
-    NextToken: PaginationToken = null,
-    Query: String = null
-  ): ListQualificationTypesRequest = {
+  def apply(MustBeRequestable: Boolean): ListQualificationTypesRequest = {
     val __obj = js.Dynamic.literal(MustBeRequestable = MustBeRequestable.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MustBeOwnedByCaller)) __obj.updateDynamic("MustBeOwnedByCaller")(MustBeOwnedByCaller.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Query != null) __obj.updateDynamic("Query")(Query.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQualificationTypesRequest]
   }
+  @scala.inline
+  implicit class ListQualificationTypesRequestOps[Self <: ListQualificationTypesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMustBeRequestable(value: Boolean): Self = this.set("MustBeRequestable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: ResultSize): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setMustBeOwnedByCaller(value: Boolean): Self = this.set("MustBeOwnedByCaller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMustBeOwnedByCaller: Self = this.set("MustBeOwnedByCaller", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setQuery(value: String): Self = this.set("Query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("Query", js.undefined)
+  }
+  
 }
 

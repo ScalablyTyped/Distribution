@@ -10,6 +10,7 @@ class Light ()
   extends typings.three.lightMod.Light {
   def this(hex: String) = this()
   def this(hex: Double) = this()
+  def this(hex: js.UndefOr[scala.Nothing], intensity: Double) = this()
   def this(hex: String, intensity: Double) = this()
   def this(hex: Double, intensity: Double) = this()
 }

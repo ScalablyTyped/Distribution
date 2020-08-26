@@ -28,16 +28,34 @@ trait SchemaCustomAttributeHistogramResult extends js.Object {
 
 object SchemaCustomAttributeHistogramResult {
   @scala.inline
-  def apply(
-    key: String = null,
-    longValueHistogramResult: SchemaNumericBucketingResult = null,
-    stringValueHistogramResult: StringDictionary[Double] = null
-  ): SchemaCustomAttributeHistogramResult = {
+  def apply(): SchemaCustomAttributeHistogramResult = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (longValueHistogramResult != null) __obj.updateDynamic("longValueHistogramResult")(longValueHistogramResult.asInstanceOf[js.Any])
-    if (stringValueHistogramResult != null) __obj.updateDynamic("stringValueHistogramResult")(stringValueHistogramResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomAttributeHistogramResult]
   }
+  @scala.inline
+  implicit class SchemaCustomAttributeHistogramResultOps[Self <: SchemaCustomAttributeHistogramResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLongValueHistogramResult(value: SchemaNumericBucketingResult): Self = this.set("longValueHistogramResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongValueHistogramResult: Self = this.set("longValueHistogramResult", js.undefined)
+    @scala.inline
+    def setStringValueHistogramResult(value: StringDictionary[Double]): Self = this.set("stringValueHistogramResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValueHistogramResult: Self = this.set("stringValueHistogramResult", js.undefined)
+  }
+  
 }
 

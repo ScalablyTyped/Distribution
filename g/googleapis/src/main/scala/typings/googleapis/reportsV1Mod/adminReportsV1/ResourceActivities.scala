@@ -38,6 +38,7 @@ class ResourceActivities protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaActivities] = js.native
   def list(callback: BodyResponseCallback[SchemaActivities]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaActivities] = js.native
   def list(params: ParamsResourceActivitiesList): GaxiosPromise[SchemaActivities] = js.native
   def list(params: ParamsResourceActivitiesList, callback: BodyResponseCallback[SchemaActivities]): Unit = js.native
   def list(
@@ -76,6 +77,7 @@ class ResourceActivities protected () extends js.Object {
     */
   def watch(): GaxiosPromise[SchemaChannel] = js.native
   def watch(callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
+  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceActivitiesWatch): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceActivitiesWatch, callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
   def watch(

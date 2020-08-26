@@ -75,32 +75,70 @@ trait SchemaBuildTrigger extends js.Object {
 
 object SchemaBuildTrigger {
   @scala.inline
-  def apply(
-    build: SchemaBuild = null,
-    createTime: String = null,
-    description: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    filename: String = null,
-    github: SchemaGitHubEventsConfig = null,
-    id: String = null,
-    ignoredFiles: js.Array[String] = null,
-    includedFiles: js.Array[String] = null,
-    substitutions: StringDictionary[String] = null,
-    triggerTemplate: SchemaRepoSource = null
-  ): SchemaBuildTrigger = {
+  def apply(): SchemaBuildTrigger = {
     val __obj = js.Dynamic.literal()
-    if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (github != null) __obj.updateDynamic("github")(github.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ignoredFiles != null) __obj.updateDynamic("ignoredFiles")(ignoredFiles.asInstanceOf[js.Any])
-    if (includedFiles != null) __obj.updateDynamic("includedFiles")(includedFiles.asInstanceOf[js.Any])
-    if (substitutions != null) __obj.updateDynamic("substitutions")(substitutions.asInstanceOf[js.Any])
-    if (triggerTemplate != null) __obj.updateDynamic("triggerTemplate")(triggerTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildTrigger]
   }
+  @scala.inline
+  implicit class SchemaBuildTriggerOps[Self <: SchemaBuildTrigger] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuild(value: SchemaBuild): Self = this.set("build", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuild: Self = this.set("build", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setGithub(value: SchemaGitHubEventsConfig): Self = this.set("github", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGithub: Self = this.set("github", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIgnoredFilesVarargs(value: String*): Self = this.set("ignoredFiles", js.Array(value :_*))
+    @scala.inline
+    def setIgnoredFiles(value: js.Array[String]): Self = this.set("ignoredFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoredFiles: Self = this.set("ignoredFiles", js.undefined)
+    @scala.inline
+    def setIncludedFilesVarargs(value: String*): Self = this.set("includedFiles", js.Array(value :_*))
+    @scala.inline
+    def setIncludedFiles(value: js.Array[String]): Self = this.set("includedFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludedFiles: Self = this.set("includedFiles", js.undefined)
+    @scala.inline
+    def setSubstitutions(value: StringDictionary[String]): Self = this.set("substitutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubstitutions: Self = this.set("substitutions", js.undefined)
+    @scala.inline
+    def setTriggerTemplate(value: SchemaRepoSource): Self = this.set("triggerTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerTemplate: Self = this.set("triggerTemplate", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,9 @@
 package typings.devextreme.mod.DevExpress.viz
 
 import typings.devextreme.anon.CancelComponentData
-import typings.devextreme.anon.ComponentTElementDxElementModelAny
-import typings.devextreme.anon.Element
 import typings.devextreme.anon.FormatModel
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
-import typings.devextreme.anon.TargetAny
+import typings.devextreme.anon.`16`
+import typings.devextreme.anon.`17`
 import typings.devextreme.devextremeStrings.genericDotcarmine
 import typings.devextreme.devextremeStrings.genericDotcontrast
 import typings.devextreme.devextremeStrings.genericDotdark
@@ -26,93 +23,122 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseWidgetOptions[T] extends DOMComponentOptions[T] {
   /** @name BaseWidget.Options.disabled */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /** @name BaseWidget.Options.export */
-  var export: js.UndefOr[BaseWidgetExport] = js.undefined
+  var export: js.UndefOr[BaseWidgetExport] = js.native
   /** @name BaseWidget.Options.loadingIndicator */
-  var loadingIndicator: js.UndefOr[BaseWidgetLoadingIndicator] = js.undefined
+  var loadingIndicator: js.UndefOr[BaseWidgetLoadingIndicator] = js.native
   /** @name BaseWidget.Options.margin */
-  var margin: js.UndefOr[BaseWidgetMargin] = js.undefined
+  var margin: js.UndefOr[BaseWidgetMargin] = js.native
   /** @name BaseWidget.Options.onDrawn */
-  var onDrawn: js.UndefOr[js.Function1[/* e */ ComponentTElementDxElementModelAny[T], _]] = js.undefined
+  var onDrawn: js.UndefOr[js.Function1[/* e */ `16`[T], _]] = js.native
   /** @name BaseWidget.Options.onExported */
-  var onExported: js.UndefOr[js.Function1[/* e */ ComponentTElementDxElementModelAny[T], _]] = js.undefined
+  var onExported: js.UndefOr[js.Function1[/* e */ `16`[T], _]] = js.native
   /** @name BaseWidget.Options.onExporting */
-  var onExporting: js.UndefOr[js.Function1[/* e */ FormatModel[T], _]] = js.undefined
+  var onExporting: js.UndefOr[js.Function1[/* e */ FormatModel[T], _]] = js.native
   /** @name BaseWidget.Options.onFileSaving */
-  var onFileSaving: js.UndefOr[js.Function1[/* e */ CancelComponentData[T], _]] = js.undefined
+  var onFileSaving: js.UndefOr[js.Function1[/* e */ CancelComponentData[T], _]] = js.native
   /** @name BaseWidget.Options.onIncidentOccurred */
-  var onIncidentOccurred: js.UndefOr[js.Function1[/* e */ TargetAny[T], _]] = js.undefined
+  var onIncidentOccurred: js.UndefOr[js.Function1[/* e */ `17`[T], _]] = js.native
   /** @name BaseWidget.Options.pathModified */
-  var pathModified: js.UndefOr[Boolean] = js.undefined
+  var pathModified: js.UndefOr[Boolean] = js.native
   /** @name BaseWidget.Options.redrawOnResize */
-  var redrawOnResize: js.UndefOr[Boolean] = js.undefined
+  var redrawOnResize: js.UndefOr[Boolean] = js.native
   /** @name BaseWidget.Options.size */
-  var size: js.UndefOr[BaseWidgetSize] = js.undefined
+  var size: js.UndefOr[BaseWidgetSize] = js.native
   /** @name BaseWidget.Options.theme */
   var theme: js.UndefOr[
     genericDotdark | genericDotlight | genericDotcontrast | ios7Dotdefault | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight
-  ] = js.undefined
+  ] = js.native
   /** @name BaseWidget.Options.title */
-  var title: js.UndefOr[BaseWidgetTitle | String] = js.undefined
+  var title: js.UndefOr[BaseWidgetTitle | String] = js.native
   /** @name BaseWidget.Options.tooltip */
-  var tooltip: js.UndefOr[BaseWidgetTooltip] = js.undefined
+  var tooltip: js.UndefOr[BaseWidgetTooltip] = js.native
 }
 
 object BaseWidgetOptions {
   @scala.inline
-  def apply[T](
-    bindingOptions: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    export: BaseWidgetExport = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    loadingIndicator: BaseWidgetLoadingIndicator = null,
-    margin: BaseWidgetMargin = null,
-    onDisposing: /* e */ Model[T] => _ = null,
-    onDrawn: /* e */ ComponentTElementDxElementModelAny[T] => _ = null,
-    onExported: /* e */ ComponentTElementDxElementModelAny[T] => _ = null,
-    onExporting: /* e */ FormatModel[T] => _ = null,
-    onFileSaving: /* e */ CancelComponentData[T] => _ = null,
-    onIncidentOccurred: /* e */ TargetAny[T] => _ = null,
-    onInitialized: /* e */ Element[T] => _ = null,
-    onOptionChanged: /* e */ Name[T] => _ = null,
-    pathModified: js.UndefOr[Boolean] = js.undefined,
-    redrawOnResize: js.UndefOr[Boolean] = js.undefined,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    size: BaseWidgetSize = null,
-    theme: genericDotdark | genericDotlight | genericDotcontrast | ios7Dotdefault | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight = null,
-    title: BaseWidgetTitle | String = null,
-    tooltip: BaseWidgetTooltip = null,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): BaseWidgetOptions[T] = {
+  def apply[T](): BaseWidgetOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onDrawn != null) __obj.updateDynamic("onDrawn")(js.Any.fromFunction1(onDrawn))
-    if (onExported != null) __obj.updateDynamic("onExported")(js.Any.fromFunction1(onExported))
-    if (onExporting != null) __obj.updateDynamic("onExporting")(js.Any.fromFunction1(onExporting))
-    if (onFileSaving != null) __obj.updateDynamic("onFileSaving")(js.Any.fromFunction1(onFileSaving))
-    if (onIncidentOccurred != null) __obj.updateDynamic("onIncidentOccurred")(js.Any.fromFunction1(onIncidentOccurred))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseWidgetOptions[T]]
   }
+  @scala.inline
+  implicit class BaseWidgetOptionsOps[Self <: BaseWidgetOptions[_], T] (val x: Self with BaseWidgetOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setExport(value: BaseWidgetExport): Self = this.set("export", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExport: Self = this.set("export", js.undefined)
+    @scala.inline
+    def setLoadingIndicator(value: BaseWidgetLoadingIndicator): Self = this.set("loadingIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadingIndicator: Self = this.set("loadingIndicator", js.undefined)
+    @scala.inline
+    def setMargin(value: BaseWidgetMargin): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setOnDrawn(value: /* e */ `16`[T] => _): Self = this.set("onDrawn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrawn: Self = this.set("onDrawn", js.undefined)
+    @scala.inline
+    def setOnExported(value: /* e */ `16`[T] => _): Self = this.set("onExported", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnExported: Self = this.set("onExported", js.undefined)
+    @scala.inline
+    def setOnExporting(value: /* e */ FormatModel[T] => _): Self = this.set("onExporting", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnExporting: Self = this.set("onExporting", js.undefined)
+    @scala.inline
+    def setOnFileSaving(value: /* e */ CancelComponentData[T] => _): Self = this.set("onFileSaving", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFileSaving: Self = this.set("onFileSaving", js.undefined)
+    @scala.inline
+    def setOnIncidentOccurred(value: /* e */ `17`[T] => _): Self = this.set("onIncidentOccurred", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIncidentOccurred: Self = this.set("onIncidentOccurred", js.undefined)
+    @scala.inline
+    def setPathModified(value: Boolean): Self = this.set("pathModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathModified: Self = this.set("pathModified", js.undefined)
+    @scala.inline
+    def setRedrawOnResize(value: Boolean): Self = this.set("redrawOnResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedrawOnResize: Self = this.set("redrawOnResize", js.undefined)
+    @scala.inline
+    def setSize(value: BaseWidgetSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTheme(
+      value: genericDotdark | genericDotlight | genericDotcontrast | ios7Dotdefault | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight
+    ): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTitle(value: BaseWidgetTitle | String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTooltip(value: BaseWidgetTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+  }
+  
 }
 

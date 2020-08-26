@@ -34,19 +34,46 @@ trait ModifyReplicationGroupShardConfigurationMessage extends js.Object {
 
 object ModifyReplicationGroupShardConfigurationMessage {
   @scala.inline
-  def apply(
-    ApplyImmediately: Boolean,
-    NodeGroupCount: Integer,
-    ReplicationGroupId: String,
-    NodeGroupsToRemove: NodeGroupsToRemoveList = null,
-    NodeGroupsToRetain: NodeGroupsToRetainList = null,
-    ReshardingConfiguration: ReshardingConfigurationList = null
-  ): ModifyReplicationGroupShardConfigurationMessage = {
+  def apply(ApplyImmediately: Boolean, NodeGroupCount: Integer, ReplicationGroupId: String): ModifyReplicationGroupShardConfigurationMessage = {
     val __obj = js.Dynamic.literal(ApplyImmediately = ApplyImmediately.asInstanceOf[js.Any], NodeGroupCount = NodeGroupCount.asInstanceOf[js.Any], ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
-    if (NodeGroupsToRemove != null) __obj.updateDynamic("NodeGroupsToRemove")(NodeGroupsToRemove.asInstanceOf[js.Any])
-    if (NodeGroupsToRetain != null) __obj.updateDynamic("NodeGroupsToRetain")(NodeGroupsToRetain.asInstanceOf[js.Any])
-    if (ReshardingConfiguration != null) __obj.updateDynamic("ReshardingConfiguration")(ReshardingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyReplicationGroupShardConfigurationMessage]
   }
+  @scala.inline
+  implicit class ModifyReplicationGroupShardConfigurationMessageOps[Self <: ModifyReplicationGroupShardConfigurationMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplyImmediately(value: Boolean): Self = this.set("ApplyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeGroupCount(value: Integer): Self = this.set("NodeGroupCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeGroupsToRemoveVarargs(value: AllowedNodeGroupId*): Self = this.set("NodeGroupsToRemove", js.Array(value :_*))
+    @scala.inline
+    def setNodeGroupsToRemove(value: NodeGroupsToRemoveList): Self = this.set("NodeGroupsToRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeGroupsToRemove: Self = this.set("NodeGroupsToRemove", js.undefined)
+    @scala.inline
+    def setNodeGroupsToRetainVarargs(value: AllowedNodeGroupId*): Self = this.set("NodeGroupsToRetain", js.Array(value :_*))
+    @scala.inline
+    def setNodeGroupsToRetain(value: NodeGroupsToRetainList): Self = this.set("NodeGroupsToRetain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeGroupsToRetain: Self = this.set("NodeGroupsToRetain", js.undefined)
+    @scala.inline
+    def setReshardingConfigurationVarargs(value: ReshardingConfiguration*): Self = this.set("ReshardingConfiguration", js.Array(value :_*))
+    @scala.inline
+    def setReshardingConfiguration(value: ReshardingConfigurationList): Self = this.set("ReshardingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReshardingConfiguration: Self = this.set("ReshardingConfiguration", js.undefined)
+  }
+  
 }
 

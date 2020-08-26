@@ -30,20 +30,48 @@ trait GetAutoScalingGroupRecommendationsRequest extends js.Object {
 
 object GetAutoScalingGroupRecommendationsRequest {
   @scala.inline
-  def apply(
-    accountIds: AccountIds = null,
-    autoScalingGroupArns: AutoScalingGroupArns = null,
-    filters: Filters = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null
-  ): GetAutoScalingGroupRecommendationsRequest = {
+  def apply(): GetAutoScalingGroupRecommendationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (accountIds != null) __obj.updateDynamic("accountIds")(accountIds.asInstanceOf[js.Any])
-    if (autoScalingGroupArns != null) __obj.updateDynamic("autoScalingGroupArns")(autoScalingGroupArns.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAutoScalingGroupRecommendationsRequest]
   }
+  @scala.inline
+  implicit class GetAutoScalingGroupRecommendationsRequestOps[Self <: GetAutoScalingGroupRecommendationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountIdsVarargs(value: AccountId*): Self = this.set("accountIds", js.Array(value :_*))
+    @scala.inline
+    def setAccountIds(value: AccountIds): Self = this.set("accountIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountIds: Self = this.set("accountIds", js.undefined)
+    @scala.inline
+    def setAutoScalingGroupArnsVarargs(value: AutoScalingGroupArn*): Self = this.set("autoScalingGroupArns", js.Array(value :_*))
+    @scala.inline
+    def setAutoScalingGroupArns(value: AutoScalingGroupArns): Self = this.set("autoScalingGroupArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupArns: Self = this.set("autoScalingGroupArns", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: Filters): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

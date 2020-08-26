@@ -12,7 +12,7 @@ Browser SDK for Amazon Kinesis
 | Keywords           | - |
 | # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 746 |
+| # downloads        | 987 |
 | # stars            | 0 |
 
 ## Links

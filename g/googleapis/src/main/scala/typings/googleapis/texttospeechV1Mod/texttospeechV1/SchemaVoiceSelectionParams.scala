@@ -42,12 +42,34 @@ trait SchemaVoiceSelectionParams extends js.Object {
 
 object SchemaVoiceSelectionParams {
   @scala.inline
-  def apply(languageCode: String = null, name: String = null, ssmlGender: String = null): SchemaVoiceSelectionParams = {
+  def apply(): SchemaVoiceSelectionParams = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ssmlGender != null) __obj.updateDynamic("ssmlGender")(ssmlGender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVoiceSelectionParams]
   }
+  @scala.inline
+  implicit class SchemaVoiceSelectionParamsOps[Self <: SchemaVoiceSelectionParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSsmlGender(value: String): Self = this.set("ssmlGender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsmlGender: Self = this.set("ssmlGender", js.undefined)
+  }
+  
 }
 

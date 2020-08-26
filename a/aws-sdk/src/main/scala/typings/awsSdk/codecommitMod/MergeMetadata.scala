@@ -26,18 +26,38 @@ trait MergeMetadata extends js.Object {
 
 object MergeMetadata {
   @scala.inline
-  def apply(
-    isMerged: js.UndefOr[IsMerged] = js.undefined,
-    mergeCommitId: CommitId = null,
-    mergeOption: MergeOptionTypeEnum = null,
-    mergedBy: Arn = null
-  ): MergeMetadata = {
+  def apply(): MergeMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isMerged)) __obj.updateDynamic("isMerged")(isMerged.get.asInstanceOf[js.Any])
-    if (mergeCommitId != null) __obj.updateDynamic("mergeCommitId")(mergeCommitId.asInstanceOf[js.Any])
-    if (mergeOption != null) __obj.updateDynamic("mergeOption")(mergeOption.asInstanceOf[js.Any])
-    if (mergedBy != null) __obj.updateDynamic("mergedBy")(mergedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeMetadata]
   }
+  @scala.inline
+  implicit class MergeMetadataOps[Self <: MergeMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsMerged(value: IsMerged): Self = this.set("isMerged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMerged: Self = this.set("isMerged", js.undefined)
+    @scala.inline
+    def setMergeCommitId(value: CommitId): Self = this.set("mergeCommitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeCommitId: Self = this.set("mergeCommitId", js.undefined)
+    @scala.inline
+    def setMergeOption(value: MergeOptionTypeEnum): Self = this.set("mergeOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeOption: Self = this.set("mergeOption", js.undefined)
+    @scala.inline
+    def setMergedBy(value: Arn): Self = this.set("mergedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergedBy: Self = this.set("mergedBy", js.undefined)
+  }
+  
 }
 

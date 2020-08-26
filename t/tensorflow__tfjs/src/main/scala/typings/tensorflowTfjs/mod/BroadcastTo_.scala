@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs", "BroadcastTo")
 @js.native
-object BroadcastTo_ extends TopLevel[/* "Identity" */ String]
+object BroadcastTo_ extends TopLevel[/* "Conv2D" */ String]
 

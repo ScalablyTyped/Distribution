@@ -4,151 +4,198 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartTitleOptions extends js.Object {
   /**
     * Sets the background color of Chart Title. Values can be "HTML Color Name" or "hex" code.
     * Default: null
     * Example: "red", "#FF0000" ..
     */
-  var backgroundColor: js.UndefOr[String] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
   /**
     * Sets the color of border around Chart Title. Values of borderColor can be "HTML Color Name" or "hex" code .
     * Default: "black"
     * Example: "red", "#FF0000" ..
     */
-  var borderColor: js.UndefOr[String] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
   /**
     * Sets the thickness of border around the Title in pixels. To display border around title, set the borderThickness to a number greater than zero.
     * Default: 0
     * Example: 2,4 ..
     */
-  var borderThickness: js.UndefOr[Double] = js.undefined
+  var borderThickness: js.UndefOr[Double] = js.native
   /**
     * To display rounded borders around the title, set the cornerRadius of title. Higher the value, more rounded are the corners.
     * Default: 0
     * Options: 5,8 ..
     */
-  var cornerRadius: js.UndefOr[Double] = js.undefined
+  var cornerRadius: js.UndefOr[Double] = js.native
   /**
     * When dockInsidePlotArea is set to true, title renders inside the plot area there by giving more space to plot area.
     * Default: false
     * Example: false, true.
     */
-  var dockInsidePlotArea: js.UndefOr[Boolean] = js.undefined
+  var dockInsidePlotArea: js.UndefOr[Boolean] = js.native
   /**
     * Sets the font color of Chart Title. The value of fontColor can be a "HTML Color Name" or "hex" code .
     * Default: "black"
     * Example: "red", "#FAC003" ..
     */
-  var fontColor: js.UndefOr[String] = js.undefined
+  var fontColor: js.UndefOr[String] = js.native
   /**
     * Sets the Font Family of Chart Title.
     * Default: "calibri, Optima, Candara, verdana, Geneva, sans-serif"
     * Example: "arial" , "tahoma", "verdana" ..
     */
-  var fontFamily: js.UndefOr[String] = js.undefined
+  var fontFamily: js.UndefOr[String] = js.native
   /**
     * Sets the font Size of Chart Title in pixels.
     * Default: 20
     * Example: 16,18,22 ..
     */
-  var fontSize: js.UndefOr[Double] = js.undefined
+  var fontSize: js.UndefOr[Double] = js.native
   /**
     * Sets the fontStyle of Chart Title. fontStyle can be set to one of the below options.
     * Default: "normal"
     * Options: "normal", "italic" , "oblique"
     */
-  var fontStyle: js.UndefOr[String] = js.undefined
+  var fontStyle: js.UndefOr[String] = js.native
   /**
     * Sets the Font Weight used in the Chart Title.
     * Default: "normal"
     * Options: "lighter", "normal", "bold" , "bolder"
     */
-  var fontWeight: js.UndefOr[String] = js.undefined
+  var fontWeight: js.UndefOr[String] = js.native
   /**
     * This property lets you align the Chart Title horizontally.
     * Default: "center"
     * Options: "left", "right", "center"
     */
-  var horizontalAlign: js.UndefOr[String] = js.undefined
+  var horizontalAlign: js.UndefOr[String] = js.native
   /**
     * This property lets you set margin around the Chart Title in pixels.
     * Default: 5
     * Example: 4,12 ..
     */
-  var margin: js.UndefOr[Double] = js.undefined
+  var margin: js.UndefOr[Double] = js.native
   /**
     * Sets the maximum width of title after which it gets wrapped or clipped depending on whether wrap is set to true (default) or false.
     * Default: Automatically calculated based on the chart size.
     * Example: 200, 400 ..
     */
-  var maxWidth: js.UndefOr[Double] = js.undefined
+  var maxWidth: js.UndefOr[Double] = js.native
   /**
     * This property allows you to set the padding for Chart Title
     * Default: 0
     * Example: 5, 8 ..
     */
-  var padding: js.UndefOr[Double] = js.undefined
+  var padding: js.UndefOr[Double] = js.native
   /**
     * Sets the Title’s text.
     * Default: null
     * Example: "Chart title"
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /**
     * This property lets you align the Chart Title vertically.
     * Default: "top"
     * Options: "top", "center", "bottom"
     */
-  var verticalAlign: js.UndefOr[String] = js.undefined
+  var verticalAlign: js.UndefOr[String] = js.native
   /**
     * Wrap specifies whether to wrap the title once its width crosses maxWidth or not. If it is set to false, title gets clipped after reaching maxWidth.
     * Default: true;
     * Example : true, false
     */
-  var wrap: js.UndefOr[Boolean] = js.undefined
+  var wrap: js.UndefOr[Boolean] = js.native
 }
 
 object ChartTitleOptions {
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    borderColor: String = null,
-    borderThickness: js.UndefOr[Double] = js.undefined,
-    cornerRadius: js.UndefOr[Double] = js.undefined,
-    dockInsidePlotArea: js.UndefOr[Boolean] = js.undefined,
-    fontColor: String = null,
-    fontFamily: String = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    fontStyle: String = null,
-    fontWeight: String = null,
-    horizontalAlign: String = null,
-    margin: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    padding: js.UndefOr[Double] = js.undefined,
-    text: String = null,
-    verticalAlign: String = null,
-    wrap: js.UndefOr[Boolean] = js.undefined
-  ): ChartTitleOptions = {
+  def apply(): ChartTitleOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderThickness)) __obj.updateDynamic("borderThickness")(borderThickness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cornerRadius)) __obj.updateDynamic("cornerRadius")(cornerRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dockInsidePlotArea)) __obj.updateDynamic("dockInsidePlotArea")(dockInsidePlotArea.get.asInstanceOf[js.Any])
-    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (horizontalAlign != null) __obj.updateDynamic("horizontalAlign")(horizontalAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTitleOptions]
   }
+  @scala.inline
+  implicit class ChartTitleOptionsOps[Self <: ChartTitleOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderThickness(value: Double): Self = this.set("borderThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderThickness: Self = this.set("borderThickness", js.undefined)
+    @scala.inline
+    def setCornerRadius(value: Double): Self = this.set("cornerRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCornerRadius: Self = this.set("cornerRadius", js.undefined)
+    @scala.inline
+    def setDockInsidePlotArea(value: Boolean): Self = this.set("dockInsidePlotArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDockInsidePlotArea: Self = this.set("dockInsidePlotArea", js.undefined)
+    @scala.inline
+    def setFontColor(value: String): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontColor: Self = this.set("fontColor", js.undefined)
+    @scala.inline
+    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    @scala.inline
+    def setFontWeight(value: String): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setHorizontalAlign(value: String): Self = this.set("horizontalAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalAlign: Self = this.set("horizontalAlign", js.undefined)
+    @scala.inline
+    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setVerticalAlign(value: String): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    @scala.inline
+    def setWrap(value: Boolean): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap: Self = this.set("wrap", js.undefined)
+  }
+  
 }
 

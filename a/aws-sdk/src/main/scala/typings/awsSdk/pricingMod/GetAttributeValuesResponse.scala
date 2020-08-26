@@ -18,11 +18,32 @@ trait GetAttributeValuesResponse extends js.Object {
 
 object GetAttributeValuesResponse {
   @scala.inline
-  def apply(AttributeValues: AttributeValueList = null, NextToken: String = null): GetAttributeValuesResponse = {
+  def apply(): GetAttributeValuesResponse = {
     val __obj = js.Dynamic.literal()
-    if (AttributeValues != null) __obj.updateDynamic("AttributeValues")(AttributeValues.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAttributeValuesResponse]
   }
+  @scala.inline
+  implicit class GetAttributeValuesResponseOps[Self <: GetAttributeValuesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeValuesVarargs(value: AttributeValue*): Self = this.set("AttributeValues", js.Array(value :_*))
+    @scala.inline
+    def setAttributeValues(value: AttributeValueList): Self = this.set("AttributeValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeValues: Self = this.set("AttributeValues", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

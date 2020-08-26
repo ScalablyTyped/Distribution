@@ -34,22 +34,48 @@ trait AnomalyDetector extends js.Object {
 
 object AnomalyDetector {
   @scala.inline
-  def apply(
-    Configuration: AnomalyDetectorConfiguration = null,
-    Dimensions: Dimensions = null,
-    MetricName: MetricName = null,
-    Namespace: Namespace = null,
-    Stat: AnomalyDetectorMetricStat = null,
-    StateValue: AnomalyDetectorStateValue = null
-  ): AnomalyDetector = {
+  def apply(): AnomalyDetector = {
     val __obj = js.Dynamic.literal()
-    if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration.asInstanceOf[js.Any])
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName.asInstanceOf[js.Any])
-    if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace.asInstanceOf[js.Any])
-    if (Stat != null) __obj.updateDynamic("Stat")(Stat.asInstanceOf[js.Any])
-    if (StateValue != null) __obj.updateDynamic("StateValue")(StateValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnomalyDetector]
   }
+  @scala.inline
+  implicit class AnomalyDetectorOps[Self <: AnomalyDetector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfiguration(value: AnomalyDetectorConfiguration): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("Configuration", js.undefined)
+    @scala.inline
+    def setDimensionsVarargs(value: Dimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: Dimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("MetricName", js.undefined)
+    @scala.inline
+    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+    @scala.inline
+    def setStat(value: AnomalyDetectorMetricStat): Self = this.set("Stat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStat: Self = this.set("Stat", js.undefined)
+    @scala.inline
+    def setStateValue(value: AnomalyDetectorStateValue): Self = this.set("StateValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateValue: Self = this.set("StateValue", js.undefined)
+  }
+  
 }
 

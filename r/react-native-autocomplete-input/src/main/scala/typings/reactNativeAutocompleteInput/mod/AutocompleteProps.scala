@@ -2,154 +2,64 @@ package typings.reactNativeAutocompleteInput.mod
 
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.reactNative.anon.Start
-import typings.reactNative.mod.AccessibilityActionEvent
-import typings.reactNative.mod.AccessibilityActionInfo
-import typings.reactNative.mod.AccessibilityRole
-import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
-import typings.reactNative.mod.AccessibilityValue
-import typings.reactNative.mod.DataDetectorTypes
-import typings.reactNative.mod.DocumentSelectionState
 import typings.reactNative.mod.FlatListProps
-import typings.reactNative.mod.GestureResponderEvent
-import typings.reactNative.mod.Insets
-import typings.reactNative.mod.KeyboardTypeOptions
-import typings.reactNative.mod.LayoutChangeEvent
-import typings.reactNative.mod.NativeSyntheticEvent
-import typings.reactNative.mod.ReturnKeyTypeOptions
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TVParallaxProperties
-import typings.reactNative.mod.TextInputChangeEventData
-import typings.reactNative.mod.TextInputContentSizeChangeEventData
-import typings.reactNative.mod.TextInputEndEditingEventData
-import typings.reactNative.mod.TextInputFocusEventData
-import typings.reactNative.mod.TextInputKeyPressEventData
 import typings.reactNative.mod.TextInputProperties
 import typings.reactNative.mod.TextInputProps
-import typings.reactNative.mod.TextInputScrollEventData
-import typings.reactNative.mod.TextInputSelectionChangeEventData
-import typings.reactNative.mod.TextInputSubmitEditingEventData
-import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNative.reactNativeStrings.URL
-import typings.reactNative.reactNativeStrings.`box-none`
-import typings.reactNative.reactNativeStrings.`box-only`
-import typings.reactNative.reactNativeStrings.`cc-csc`
-import typings.reactNative.reactNativeStrings.`cc-exp-month`
-import typings.reactNative.reactNativeStrings.`cc-exp-year`
-import typings.reactNative.reactNativeStrings.`cc-exp`
-import typings.reactNative.reactNativeStrings.`cc-number`
-import typings.reactNative.reactNativeStrings.`no-hide-descendants`
-import typings.reactNative.reactNativeStrings.`postal-code`
-import typings.reactNative.reactNativeStrings.`street-address`
-import typings.reactNative.reactNativeStrings.`unless-editing`
-import typings.reactNative.reactNativeStrings.`while-editing`
-import typings.reactNative.reactNativeStrings.addressCity
-import typings.reactNative.reactNativeStrings.addressCityAndState
-import typings.reactNative.reactNativeStrings.addressState
-import typings.reactNative.reactNativeStrings.always
-import typings.reactNative.reactNativeStrings.assertive
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.balanced
-import typings.reactNative.reactNativeStrings.bottom
-import typings.reactNative.reactNativeStrings.button
-import typings.reactNative.reactNativeStrings.center
-import typings.reactNative.reactNativeStrings.characters
-import typings.reactNative.reactNativeStrings.countryName
-import typings.reactNative.reactNativeStrings.creditCardNumber
-import typings.reactNative.reactNativeStrings.dark
-import typings.reactNative.reactNativeStrings.email
-import typings.reactNative.reactNativeStrings.emailAddress
-import typings.reactNative.reactNativeStrings.familyName
-import typings.reactNative.reactNativeStrings.fullStreetAddress
-import typings.reactNative.reactNativeStrings.givenName
-import typings.reactNative.reactNativeStrings.highQuality
-import typings.reactNative.reactNativeStrings.jobTitle
-import typings.reactNative.reactNativeStrings.light
-import typings.reactNative.reactNativeStrings.location
-import typings.reactNative.reactNativeStrings.middleName
-import typings.reactNative.reactNativeStrings.name
-import typings.reactNative.reactNativeStrings.namePrefix
-import typings.reactNative.reactNativeStrings.nameSuffix
-import typings.reactNative.reactNativeStrings.never
-import typings.reactNative.reactNativeStrings.newPassword
-import typings.reactNative.reactNativeStrings.nickname
-import typings.reactNative.reactNativeStrings.no
-import typings.reactNative.reactNativeStrings.noExcludeDescendants
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.off
-import typings.reactNative.reactNativeStrings.oneTimeCode
-import typings.reactNative.reactNativeStrings.organizationName
-import typings.reactNative.reactNativeStrings.password
-import typings.reactNative.reactNativeStrings.polite
-import typings.reactNative.reactNativeStrings.postalCode
-import typings.reactNative.reactNativeStrings.radiobutton_checked
-import typings.reactNative.reactNativeStrings.radiobutton_unchecked
-import typings.reactNative.reactNativeStrings.sentences
-import typings.reactNative.reactNativeStrings.simple
-import typings.reactNative.reactNativeStrings.streetAddressLine1
-import typings.reactNative.reactNativeStrings.streetAddressLine2
-import typings.reactNative.reactNativeStrings.sublocality
-import typings.reactNative.reactNativeStrings.tel
-import typings.reactNative.reactNativeStrings.telephoneNumber
-import typings.reactNative.reactNativeStrings.top
-import typings.reactNative.reactNativeStrings.username
-import typings.reactNative.reactNativeStrings.words
-import typings.reactNative.reactNativeStrings.yes
-import typings.reactNative.reactNativeStrings.yesExcludeDescendants
 import typings.reactNativeAutocompleteInput.anon.Index
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AutocompleteProps[T] extends TextInputProps {
   /**
     * style
     * These styles will be applied to the container which surrounds the autocomplete component.
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * array
     * An array with suggestion items to be rendered in renderItem({ item, index }). Any array with length > 0 will open the suggestion list and any array with length < 1 will hide the list.
     */
-  var data: js.Array[T]
+  var data: js.Array[T] = js.native
   /**
     * object
     * Props to pass on to the underlying FlatList.
     */
-  var flatListProps: js.UndefOr[Partial[FlatListProps[T]]] = js.undefined
+  var flatListProps: js.UndefOr[Partial[FlatListProps[T]]] = js.native
   /**
     * bool
     * Set to true to hide the suggestion list.
     */
-  var hideResults: js.UndefOr[Boolean] = js.undefined
+  var hideResults: js.UndefOr[Boolean] = js.native
   /**
     * style
     * These styles will be applied to the container which surrounds the textInput component.
     */
-  var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * function
     * keyExtractor will be called to get key for each item. It's up to you which string to return as a key.
     */
-  var keyExtractor: js.UndefOr[js.Function2[/* item */ T, /* i */ Double, String]] = js.undefined
+  var keyExtractor: js.UndefOr[js.Function2[/* item */ T, /* i */ Double, String]] = js.native
   /**
     * style
     * These styles will be applied to the container which surrounds the result list.
     */
-  var listContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var listContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * style
     * These style will be applied to the result list.
     */
-  var listStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var listStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * function
     * onShowResult will be called when the autocomplete suggestions appear or disappear.
     */
-  var onShowResult: js.UndefOr[js.Function1[/* showResults */ Boolean, Unit]] = js.undefined
+  var onShowResult: js.UndefOr[js.Function1[/* showResults */ Boolean, Unit]] = js.native
   /**
     * function
     * renderSeparator will be called to render the list separators which will be displayed between the list elements in the result view below the text input.
@@ -161,263 +71,93 @@ trait AutocompleteProps[T] extends TextInputProps {
       /* adjacentRowHighlighted */ js.UndefOr[Boolean], 
       ReactElement
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * function
     * render custom TextInput. All props passed to this function.
     */
-  var renderTextInput: js.UndefOr[js.Function1[/* props */ TextInputProperties, ReactNode]] = js.undefined
+  var renderTextInput: js.UndefOr[js.Function1[/* props */ TextInputProperties, ReactNode]] = js.native
   /**
     * function
     * renderItem will be called to render the data objects which will be displayed in the result view below the text input.
     */
-  def renderItem(itemWithIndex: Index[T]): ReactNode
+  def renderItem(itemWithIndex: Index[T]): ReactNode = js.native
 }
 
 object AutocompleteProps {
   @scala.inline
-  def apply[T](
-    data: js.Array[T],
-    renderItem: Index[T] => ReactNode,
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityValue: AccessibilityValue = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    allowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    autoCapitalize: none | sentences | words | characters = null,
-    autoCompleteType: `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off = null,
-    autoCorrect: js.UndefOr[Boolean] = js.undefined,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    blurOnSubmit: js.UndefOr[Boolean] = js.undefined,
-    caretHidden: js.UndefOr[Boolean] = js.undefined,
-    clearButtonMode: never | `while-editing` | `unless-editing` | always = null,
-    clearTextOnFocus: js.UndefOr[Boolean] = js.undefined,
-    collapsable: js.UndefOr[Boolean] = js.undefined,
-    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    contextMenuHidden: js.UndefOr[Boolean] = js.undefined,
-    dataDetectorTypes: DataDetectorTypes | js.Array[DataDetectorTypes] = null,
-    defaultValue: String = null,
-    disableFullscreenUI: js.UndefOr[Boolean] = js.undefined,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.undefined,
-    flatListProps: Partial[FlatListProps[T]] = null,
-    focusable: js.UndefOr[Boolean] = js.undefined,
-    hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
-    hideResults: js.UndefOr[Boolean] = js.undefined,
-    hitSlop: Insets = null,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    importantForAutofill: auto | no | noExcludeDescendants | yes | yesExcludeDescendants = null,
-    inlineImageLeft: String = null,
-    inlineImagePadding: js.UndefOr[Double] = js.undefined,
-    inputAccessoryViewID: String = null,
-    inputContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    isTVSelectable: js.UndefOr[Boolean] = js.undefined,
-    keyExtractor: (/* item */ T, /* i */ Double) => String = null,
-    keyboardAppearance: typings.reactNative.reactNativeStrings.default | light | dark = null,
-    keyboardType: KeyboardTypeOptions = null,
-    listContainerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    listStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    maxFontSizeMultiplier: js.UndefOr[Null | Double] = js.undefined,
-    maxLength: js.UndefOr[Double] = js.undefined,
-    multiline: js.UndefOr[Boolean] = js.undefined,
-    nativeID: String = null,
-    needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
-    numberOfLines: js.UndefOr[Double] = js.undefined,
-    onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
-    onAccessibilityEscape: () => Unit = null,
-    onAccessibilityTap: () => Unit = null,
-    onBlur: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => Unit = null,
-    onChange: /* e */ NativeSyntheticEvent[TextInputChangeEventData] => Unit = null,
-    onChangeText: /* text */ String => Unit = null,
-    onContentSizeChange: /* e */ NativeSyntheticEvent[TextInputContentSizeChangeEventData] => Unit = null,
-    onEndEditing: /* e */ NativeSyntheticEvent[TextInputEndEditingEventData] => Unit = null,
-    onFocus: /* e */ NativeSyntheticEvent[TextInputFocusEventData] => Unit = null,
-    onKeyPress: /* e */ NativeSyntheticEvent[TextInputKeyPressEventData] => Unit = null,
-    onLayout: /* event */ LayoutChangeEvent => Unit = null,
-    onMagicTap: () => Unit = null,
-    onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
-    onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onResponderEnd: /* event */ GestureResponderEvent => Unit = null,
-    onResponderGrant: /* event */ GestureResponderEvent => Unit = null,
-    onResponderMove: /* event */ GestureResponderEvent => Unit = null,
-    onResponderReject: /* event */ GestureResponderEvent => Unit = null,
-    onResponderRelease: /* event */ GestureResponderEvent => Unit = null,
-    onResponderStart: /* event */ GestureResponderEvent => Unit = null,
-    onResponderTerminate: /* event */ GestureResponderEvent => Unit = null,
-    onResponderTerminationRequest: /* event */ GestureResponderEvent => Boolean = null,
-    onScroll: /* e */ NativeSyntheticEvent[TextInputScrollEventData] => Unit = null,
-    onSelectionChange: /* e */ NativeSyntheticEvent[TextInputSelectionChangeEventData] => Unit = null,
-    onShowResult: /* showResults */ Boolean => Unit = null,
-    onStartShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
-    onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onSubmitEditing: /* e */ NativeSyntheticEvent[TextInputSubmitEditingEventData] => Unit = null,
-    onTouchCancel: /* event */ GestureResponderEvent => Unit = null,
-    onTouchEnd: /* event */ GestureResponderEvent => Unit = null,
-    onTouchEndCapture: /* event */ GestureResponderEvent => Unit = null,
-    onTouchMove: /* event */ GestureResponderEvent => Unit = null,
-    onTouchStart: /* event */ GestureResponderEvent => Unit = null,
-    passwordRules: js.UndefOr[Null | String] = js.undefined,
-    placeholder: String = null,
-    placeholderTextColor: String = null,
-    pointerEvents: `box-none` | none | `box-only` | auto = null,
-    rejectResponderTermination: js.UndefOr[Null | Boolean] = js.undefined,
-    removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
-    renderSeparator: (/* sectionID */ String | Double, /* rowID */ String | Double, /* adjacentRowHighlighted */ js.UndefOr[Boolean]) => ReactElement = null,
-    renderTextInput: /* props */ TextInputProperties => ReactNode = null,
-    renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
-    returnKeyLabel: String = null,
-    returnKeyType: ReturnKeyTypeOptions = null,
-    scrollEnabled: js.UndefOr[Boolean] = js.undefined,
-    secureTextEntry: js.UndefOr[Boolean] = js.undefined,
-    selectTextOnFocus: js.UndefOr[Boolean] = js.undefined,
-    selection: Start = null,
-    selectionColor: String = null,
-    selectionState: DocumentSelectionState = null,
-    shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
-    showSoftInputOnFocus: js.UndefOr[Boolean] = js.undefined,
-    spellCheck: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    testID: String = null,
-    textAlignVertical: auto | top | bottom | center = null,
-    textBreakStrategy: simple | highQuality | balanced = null,
-    textContentType: none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode = null,
-    tvParallaxMagnification: js.UndefOr[Double] = js.undefined,
-    tvParallaxProperties: TVParallaxProperties = null,
-    tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined,
-    tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined,
-    tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined,
-    underlineColorAndroid: String = null,
-    value: String = null
-  ): AutocompleteProps[T] = {
+  def apply[T](data: js.Array[T], renderItem: Index[T] => ReactNode): AutocompleteProps[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], renderItem = js.Any.fromFunction1(renderItem))
-    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.get.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.get.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.get.asInstanceOf[js.Any])
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (autoCompleteType != null) __obj.updateDynamic("autoCompleteType")(autoCompleteType.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(blurOnSubmit)) __obj.updateDynamic("blurOnSubmit")(blurOnSubmit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(caretHidden)) __obj.updateDynamic("caretHidden")(caretHidden.get.asInstanceOf[js.Any])
-    if (clearButtonMode != null) __obj.updateDynamic("clearButtonMode")(clearButtonMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearTextOnFocus)) __obj.updateDynamic("clearTextOnFocus")(clearTextOnFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(contextMenuHidden)) __obj.updateDynamic("contextMenuHidden")(contextMenuHidden.get.asInstanceOf[js.Any])
-    if (dataDetectorTypes != null) __obj.updateDynamic("dataDetectorTypes")(dataDetectorTypes.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFullscreenUI)) __obj.updateDynamic("disableFullscreenUI")(disableFullscreenUI.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablesReturnKeyAutomatically)) __obj.updateDynamic("enablesReturnKeyAutomatically")(enablesReturnKeyAutomatically.get.asInstanceOf[js.Any])
-    if (flatListProps != null) __obj.updateDynamic("flatListProps")(flatListProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideResults)) __obj.updateDynamic("hideResults")(hideResults.get.asInstanceOf[js.Any])
-    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (importantForAutofill != null) __obj.updateDynamic("importantForAutofill")(importantForAutofill.asInstanceOf[js.Any])
-    if (inlineImageLeft != null) __obj.updateDynamic("inlineImageLeft")(inlineImageLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineImagePadding)) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.get.asInstanceOf[js.Any])
-    if (inputAccessoryViewID != null) __obj.updateDynamic("inputAccessoryViewID")(inputAccessoryViewID.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputContainerStyle)) __obj.updateDynamic("inputContainerStyle")(inputContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable.get.asInstanceOf[js.Any])
-    if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(js.Any.fromFunction2(keyExtractor))
-    if (keyboardAppearance != null) __obj.updateDynamic("keyboardAppearance")(keyboardAppearance.asInstanceOf[js.Any])
-    if (keyboardType != null) __obj.updateDynamic("keyboardType")(keyboardType.asInstanceOf[js.Any])
-    if (!js.isUndefined(listContainerStyle)) __obj.updateDynamic("listContainerStyle")(listContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(listStyle)) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFontSizeMultiplier)) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.get.asInstanceOf[js.Any])
-    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfLines)) __obj.updateDynamic("numberOfLines")(numberOfLines.get.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
-    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
-    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(js.Any.fromFunction1(onContentSizeChange))
-    if (onEndEditing != null) __obj.updateDynamic("onEndEditing")(js.Any.fromFunction1(onEndEditing))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1(onResponderEnd))
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1(onResponderGrant))
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1(onResponderMove))
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1(onResponderReject))
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1(onResponderRelease))
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction1(onSelectionChange))
-    if (onShowResult != null) __obj.updateDynamic("onShowResult")(js.Any.fromFunction1(onShowResult))
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
-    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction1(onSubmitEditing))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (!js.isUndefined(passwordRules)) __obj.updateDynamic("passwordRules")(passwordRules.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (placeholderTextColor != null) __obj.updateDynamic("placeholderTextColor")(placeholderTextColor.asInstanceOf[js.Any])
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectResponderTermination)) __obj.updateDynamic("rejectResponderTermination")(rejectResponderTermination.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.get.asInstanceOf[js.Any])
-    if (renderSeparator != null) __obj.updateDynamic("renderSeparator")(js.Any.fromFunction3(renderSeparator))
-    if (renderTextInput != null) __obj.updateDynamic("renderTextInput")(js.Any.fromFunction1(renderTextInput))
-    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.get.asInstanceOf[js.Any])
-    if (returnKeyLabel != null) __obj.updateDynamic("returnKeyLabel")(returnKeyLabel.asInstanceOf[js.Any])
-    if (returnKeyType != null) __obj.updateDynamic("returnKeyType")(returnKeyType.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureTextEntry)) __obj.updateDynamic("secureTextEntry")(secureTextEntry.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectTextOnFocus)) __obj.updateDynamic("selectTextOnFocus")(selectTextOnFocus.get.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
-    if (selectionState != null) __obj.updateDynamic("selectionState")(selectionState.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSoftInputOnFocus)) __obj.updateDynamic("showSoftInputOnFocus")(showSoftInputOnFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (textAlignVertical != null) __obj.updateDynamic("textAlignVertical")(textAlignVertical.asInstanceOf[js.Any])
-    if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
-    if (textContentType != null) __obj.updateDynamic("textContentType")(textContentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxMagnification)) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.get.asInstanceOf[js.Any])
-    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxShiftDistanceX)) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxShiftDistanceY)) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxTiltAngle)) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.get.asInstanceOf[js.Any])
-    if (underlineColorAndroid != null) __obj.updateDynamic("underlineColorAndroid")(underlineColorAndroid.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteProps[T]]
   }
+  @scala.inline
+  implicit class AutocompletePropsOps[Self <: AutocompleteProps[_], T] (val x: Self with AutocompleteProps[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataVarargs(value: T*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[T]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenderItem(value: Index[T] => ReactNode): Self = this.set("renderItem", js.Any.fromFunction1(value))
+    @scala.inline
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    @scala.inline
+    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    @scala.inline
+    def setFlatListProps(value: Partial[FlatListProps[T]]): Self = this.set("flatListProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlatListProps: Self = this.set("flatListProps", js.undefined)
+    @scala.inline
+    def setHideResults(value: Boolean): Self = this.set("hideResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideResults: Self = this.set("hideResults", js.undefined)
+    @scala.inline
+    def setInputContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("inputContainerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputContainerStyle: Self = this.set("inputContainerStyle", js.undefined)
+    @scala.inline
+    def setInputContainerStyleNull: Self = this.set("inputContainerStyle", null)
+    @scala.inline
+    def setKeyExtractor(value: (/* item */ T, /* i */ Double) => String): Self = this.set("keyExtractor", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteKeyExtractor: Self = this.set("keyExtractor", js.undefined)
+    @scala.inline
+    def setListContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("listContainerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListContainerStyle: Self = this.set("listContainerStyle", js.undefined)
+    @scala.inline
+    def setListContainerStyleNull: Self = this.set("listContainerStyle", null)
+    @scala.inline
+    def setListStyle(value: StyleProp[ViewStyle]): Self = this.set("listStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListStyle: Self = this.set("listStyle", js.undefined)
+    @scala.inline
+    def setListStyleNull: Self = this.set("listStyle", null)
+    @scala.inline
+    def setOnShowResult(value: /* showResults */ Boolean => Unit): Self = this.set("onShowResult", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnShowResult: Self = this.set("onShowResult", js.undefined)
+    @scala.inline
+    def setRenderSeparator(
+      value: (/* sectionID */ String | Double, /* rowID */ String | Double, /* adjacentRowHighlighted */ js.UndefOr[Boolean]) => ReactElement
+    ): Self = this.set("renderSeparator", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteRenderSeparator: Self = this.set("renderSeparator", js.undefined)
+    @scala.inline
+    def setRenderTextInput(value: /* props */ TextInputProperties => ReactNode): Self = this.set("renderTextInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderTextInput: Self = this.set("renderTextInput", js.undefined)
+  }
+  
 }
 

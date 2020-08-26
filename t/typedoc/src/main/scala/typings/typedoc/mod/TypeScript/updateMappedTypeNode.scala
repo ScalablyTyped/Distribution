@@ -29,7 +29,7 @@ object updateMappedTypeNode extends js.Object {
     node: MappedTypeNode,
     readonlyToken: js.UndefOr[MinusToken | PlusToken | ReadonlyToken],
     typeParameter: TypeParameterDeclaration,
-    questionToken: MinusToken | PlusToken | QuestionToken,
+    questionToken: js.UndefOr[MinusToken | PlusToken | QuestionToken],
     `type`: TypeNode
   ): MappedTypeNode = js.native
 }

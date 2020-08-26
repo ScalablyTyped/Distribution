@@ -18,32 +18,5 @@ class EntitySet protected ()
     * @param oEntityType DataJS object for the entity type
     */
   def this(oModel: js.Any, oSchema: js.Any, oContainer: js.Any, oEntitySet: js.Any, oEntityType: js.Any) = this()
-  /**
-    * Get entity type used for this entity set
-    * @returns The DataJS object representing the entity type
-    */
-  /* CompleteClass */
-  override def getEntityType(): js.Any = js.native
-  /**
-    * Get the fully qualified name for this entity type
-    * @returns The fully qualified name
-    */
-  /* CompleteClass */
-  override def getQName(): String = js.native
-  /**
-    * Get full description for this entity set
-    * @returns The DataJS object representing the entity set
-    */
-  /* CompleteClass */
-  override def getSetDescription(): js.Any = js.native
-  /**
-    * Get names of properties in this entity set that can be updated
-    * @returns An object with individual JS properties for each         updatable property. For testing
-    * whether propertyName is the name         of an updatable property, use        
-    * <code>getUpdatablePropertyNameSet()[propertyName]</code>. The         included JS object properties
-    * are all set to true.
-    */
-  /* CompleteClass */
-  override def getUpdatablePropertyNameSet(): js.Any = js.native
 }
 

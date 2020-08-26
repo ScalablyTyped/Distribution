@@ -26,16 +26,34 @@ trait SchemaApproximateProgress extends js.Object {
 
 object SchemaApproximateProgress {
   @scala.inline
-  def apply(
-    percentComplete: js.UndefOr[Double] = js.undefined,
-    position: SchemaPosition = null,
-    remainingTime: String = null
-  ): SchemaApproximateProgress = {
+  def apply(): SchemaApproximateProgress = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(percentComplete)) __obj.updateDynamic("percentComplete")(percentComplete.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (remainingTime != null) __obj.updateDynamic("remainingTime")(remainingTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApproximateProgress]
   }
+  @scala.inline
+  implicit class SchemaApproximateProgressOps[Self <: SchemaApproximateProgress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPercentComplete(value: Double): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentComplete: Self = this.set("percentComplete", js.undefined)
+    @scala.inline
+    def setPosition(value: SchemaPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRemainingTime(value: String): Self = this.set("remainingTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemainingTime: Self = this.set("remainingTime", js.undefined)
+  }
+  
 }
 

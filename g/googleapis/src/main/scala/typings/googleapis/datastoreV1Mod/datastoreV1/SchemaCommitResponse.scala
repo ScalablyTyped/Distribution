@@ -23,14 +23,32 @@ trait SchemaCommitResponse extends js.Object {
 
 object SchemaCommitResponse {
   @scala.inline
-  def apply(
-    indexUpdates: js.UndefOr[Double] = js.undefined,
-    mutationResults: js.Array[SchemaMutationResult] = null
-  ): SchemaCommitResponse = {
+  def apply(): SchemaCommitResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(indexUpdates)) __obj.updateDynamic("indexUpdates")(indexUpdates.get.asInstanceOf[js.Any])
-    if (mutationResults != null) __obj.updateDynamic("mutationResults")(mutationResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCommitResponse]
   }
+  @scala.inline
+  implicit class SchemaCommitResponseOps[Self <: SchemaCommitResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexUpdates(value: Double): Self = this.set("indexUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexUpdates: Self = this.set("indexUpdates", js.undefined)
+    @scala.inline
+    def setMutationResultsVarargs(value: SchemaMutationResult*): Self = this.set("mutationResults", js.Array(value :_*))
+    @scala.inline
+    def setMutationResults(value: js.Array[SchemaMutationResult]): Self = this.set("mutationResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMutationResults: Self = this.set("mutationResults", js.undefined)
+  }
+  
 }
 

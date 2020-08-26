@@ -12,7 +12,7 @@ jwt as promised
 | Keywords           | jwt, then, promise |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 14511 |
+| # downloads        | 14663 |
 | # stars            | 0 |
 
 ## Links

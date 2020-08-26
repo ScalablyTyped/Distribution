@@ -18,7 +18,5 @@ class BatchRecorder protected () extends Recorder {
     */
   def this(args: typings.zipkin.anon.Logger) = this()
   def flush(): Unit = js.native
-  /* CompleteClass */
-  override def record(rec: Record): Unit = js.native
 }
 

@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Error () extends IError {
   def this(error: String) = this()
+  def this(error: js.UndefOr[scala.Nothing], args: js.Array[_]) = this()
   def this(error: String, args: js.Array[_]) = this()
+  def this(error: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], kwargs: js.Any) = this()
+  def this(error: js.UndefOr[scala.Nothing], args: js.Array[_], kwargs: js.Any) = this()
+  def this(error: String, args: js.UndefOr[scala.Nothing], kwargs: js.Any) = this()
   def this(error: String, args: js.Array[_], kwargs: js.Any) = this()
-  /* CompleteClass */
-  override var args: js.Array[_] = js.native
-  /* CompleteClass */
-  override var error: String = js.native
-  /* CompleteClass */
-  override var kwargs: js.Any = js.native
 }
 

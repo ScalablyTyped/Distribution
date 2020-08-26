@@ -12,7 +12,5 @@ class TreeView[E] protected ()
   extends typings.novaEditorNode.TreeView[E] {
   def this(identifier: String) = this()
   def this(identifier: String, options: DataProvider[E]) = this()
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
 

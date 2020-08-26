@@ -41,6 +41,7 @@ trait IResourceClass[T]
   def delete(): T = js.native
   def delete(params: js.Object): T = js.native
   def delete(params: js.Object, data: js.Object): T = js.native
+  def delete(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): T = js.native
   def delete(params: js.Object, data: js.Object, success: Function): T = js.native
   def delete(params: js.Object, data: js.Object, success: Function, error: Function): T = js.native
   def delete(params: js.Object, success: Function): T = js.native
@@ -50,6 +51,7 @@ trait IResourceClass[T]
   def get(): T = js.native
   def get(params: js.Object): T = js.native
   def get(params: js.Object, data: js.Object): T = js.native
+  def get(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): T = js.native
   def get(params: js.Object, data: js.Object, success: Function): T = js.native
   def get(params: js.Object, data: js.Object, success: Function, error: Function): T = js.native
   def get(params: js.Object, success: Function): T = js.native
@@ -59,6 +61,7 @@ trait IResourceClass[T]
   def query(): IResourceArray[T] = js.native
   def query(params: js.Object): IResourceArray[T] = js.native
   def query(params: js.Object, data: js.Object): IResourceArray[T] = js.native
+  def query(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IResourceArray[T] = js.native
   def query(params: js.Object, data: js.Object, success: Function): IResourceArray[T] = js.native
   def query(params: js.Object, data: js.Object, success: Function, error: Function): IResourceArray[T] = js.native
   def query(params: js.Object, success: Function): IResourceArray[T] = js.native
@@ -68,6 +71,7 @@ trait IResourceClass[T]
   def remove(): T = js.native
   def remove(params: js.Object): T = js.native
   def remove(params: js.Object, data: js.Object): T = js.native
+  def remove(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): T = js.native
   def remove(params: js.Object, data: js.Object, success: Function): T = js.native
   def remove(params: js.Object, data: js.Object, success: Function, error: Function): T = js.native
   def remove(params: js.Object, success: Function): T = js.native
@@ -77,6 +81,7 @@ trait IResourceClass[T]
   def save(): T = js.native
   def save(params: js.Object): T = js.native
   def save(params: js.Object, data: js.Object): T = js.native
+  def save(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): T = js.native
   def save(params: js.Object, data: js.Object, success: Function): T = js.native
   def save(params: js.Object, data: js.Object, success: Function, error: Function): T = js.native
   def save(params: js.Object, success: Function): T = js.native

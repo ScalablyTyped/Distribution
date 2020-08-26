@@ -22,16 +22,34 @@ trait PipelineDetail extends js.Object {
 
 object PipelineDetail {
   @scala.inline
-  def apply(
-    ActiveInputAttachmentName: string = null,
-    ActiveInputSwitchActionName: string = null,
-    PipelineId: string = null
-  ): PipelineDetail = {
+  def apply(): PipelineDetail = {
     val __obj = js.Dynamic.literal()
-    if (ActiveInputAttachmentName != null) __obj.updateDynamic("ActiveInputAttachmentName")(ActiveInputAttachmentName.asInstanceOf[js.Any])
-    if (ActiveInputSwitchActionName != null) __obj.updateDynamic("ActiveInputSwitchActionName")(ActiveInputSwitchActionName.asInstanceOf[js.Any])
-    if (PipelineId != null) __obj.updateDynamic("PipelineId")(PipelineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineDetail]
   }
+  @scala.inline
+  implicit class PipelineDetailOps[Self <: PipelineDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveInputAttachmentName(value: string): Self = this.set("ActiveInputAttachmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveInputAttachmentName: Self = this.set("ActiveInputAttachmentName", js.undefined)
+    @scala.inline
+    def setActiveInputSwitchActionName(value: string): Self = this.set("ActiveInputSwitchActionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveInputSwitchActionName: Self = this.set("ActiveInputSwitchActionName", js.undefined)
+    @scala.inline
+    def setPipelineId(value: string): Self = this.set("PipelineId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineId: Self = this.set("PipelineId", js.undefined)
+  }
+  
 }
 

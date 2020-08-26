@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TargetChange extends js.Object {
   /** The error that resulted in this change, if applicable. */
-  var cause: js.UndefOr[Status] = js.undefined
+  var cause: js.UndefOr[Status] = js.native
   /**
     * The consistent `read_time` for the given `target_ids` (omitted when the
     * target_ids are not at a consistent snapshot).
@@ -19,16 +20,16 @@ trait TargetChange extends js.Object {
     * For a given stream, `read_time` is guaranteed to be monotonically
     * increasing.
     */
-  var readTime: js.UndefOr[String] = js.undefined
+  var readTime: js.UndefOr[String] = js.native
   /**
     * A token that can be used to resume the stream for the given `target_ids`,
     * or all targets if `target_ids` is empty.
     *
     * Not set on every target change.
     */
-  var resumeToken: js.UndefOr[String] = js.undefined
+  var resumeToken: js.UndefOr[String] = js.native
   /** The type of change that occurred. */
-  var targetChangeType: js.UndefOr[String] = js.undefined
+  var targetChangeType: js.UndefOr[String] = js.native
   /**
     * The target IDs of targets that have changed.
     *
@@ -40,25 +41,49 @@ trait TargetChange extends js.Object {
     *
     * For other states, the order of the target IDs is not defined.
     */
-  var targetIds: js.UndefOr[js.Array[Double]] = js.undefined
+  var targetIds: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object TargetChange {
   @scala.inline
-  def apply(
-    cause: Status = null,
-    readTime: String = null,
-    resumeToken: String = null,
-    targetChangeType: String = null,
-    targetIds: js.Array[Double] = null
-  ): TargetChange = {
+  def apply(): TargetChange = {
     val __obj = js.Dynamic.literal()
-    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
-    if (targetChangeType != null) __obj.updateDynamic("targetChangeType")(targetChangeType.asInstanceOf[js.Any])
-    if (targetIds != null) __obj.updateDynamic("targetIds")(targetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetChange]
   }
+  @scala.inline
+  implicit class TargetChangeOps[Self <: TargetChange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCause(value: Status): Self = this.set("cause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCause: Self = this.set("cause", js.undefined)
+    @scala.inline
+    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadTime: Self = this.set("readTime", js.undefined)
+    @scala.inline
+    def setResumeToken(value: String): Self = this.set("resumeToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResumeToken: Self = this.set("resumeToken", js.undefined)
+    @scala.inline
+    def setTargetChangeType(value: String): Self = this.set("targetChangeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetChangeType: Self = this.set("targetChangeType", js.undefined)
+    @scala.inline
+    def setTargetIdsVarargs(value: Double*): Self = this.set("targetIds", js.Array(value :_*))
+    @scala.inline
+    def setTargetIds(value: js.Array[Double]): Self = this.set("targetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetIds: Self = this.set("targetIds", js.undefined)
+  }
+  
 }
 

@@ -19,6 +19,11 @@ trait CancellationToken extends js.Object {
     * An [event](#Event) which fires upon cancellation.
     */
   def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onCancellationRequested(
+    listener: js.Function1[/* e */ js.Any, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
   def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
 }

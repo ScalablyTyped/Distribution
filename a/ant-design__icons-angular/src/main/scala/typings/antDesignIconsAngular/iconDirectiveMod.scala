@@ -3,7 +3,6 @@ package typings.antDesignIconsAngular
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.OnChanges
 import typings.angularCore.mod.Renderer2
-import typings.angularCore.mod.SimpleChanges
 import typings.antDesignIconsAngular.iconServiceMod.IconService
 import typings.antDesignIconsAngular.typesMod.IconDefinition
 import typings.antDesignIconsAngular.typesMod.ThemeType
@@ -38,15 +37,6 @@ object iconDirectiveMod extends js.Object {
     /* protected */ def _parseIconType(`type`: String, theme: ThemeType): IconDefinition | String = js.native
     /* protected */ def _parseIconType(`type`: IconDefinition, theme: ThemeType): IconDefinition | String = js.native
     /* protected */ def _setSVGElement(svg: SVGElement): Unit = js.native
-    /**
-      * A callback method that is invoked immediately after the
-      * default change detector has checked data-bound properties
-      * if at least one has changed, and before the view and content
-      * children are checked.
-      * @param changes The changed properties.
-      */
-    /* CompleteClass */
-    override def ngOnChanges(changes: SimpleChanges): Unit = js.native
   }
   
 }

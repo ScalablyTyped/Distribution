@@ -4,27 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseModuleSpecifier extends BaseNode {
-  var local: Identifier
+  var local: Identifier = js.native
 }
 
 object BaseModuleSpecifier {
   @scala.inline
-  def apply(
-    local: Identifier,
-    `type`: String,
-    leadingComments: js.Array[Comment] = null,
-    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): BaseModuleSpecifier = {
+  def apply(local: Identifier, `type`: String): BaseModuleSpecifier = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseModuleSpecifier]
   }
+  @scala.inline
+  implicit class BaseModuleSpecifierOps[Self <: BaseModuleSpecifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocal(value: Identifier): Self = this.set("local", value.asInstanceOf[js.Any])
+  }
+  
 }
 

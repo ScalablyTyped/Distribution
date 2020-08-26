@@ -26,9 +26,8 @@ object AnyOS {
     __obj.asInstanceOf[AnyOS]
   }
   @scala.inline
-  def LinuxOS(dist: String, os: linux, release: String, codename: String = null): AnyOS = {
+  def LinuxOS(dist: String, os: linux, release: String): AnyOS = {
     val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
-    if (codename != null) __obj.updateDynamic("codename")(codename.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyOS]
   }
 }

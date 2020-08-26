@@ -70,7 +70,16 @@ trait Delay extends Effect {
     *   delay.
     */
   def process(Signal: js.Object): Unit = js.native
+  def process(
+    Signal: js.Object,
+    delayTime: js.UndefOr[scala.Nothing],
+    feedback: js.UndefOr[scala.Nothing],
+    lowPass: Double
+  ): Unit = js.native
+  def process(Signal: js.Object, delayTime: js.UndefOr[scala.Nothing], feedback: Double): Unit = js.native
+  def process(Signal: js.Object, delayTime: js.UndefOr[scala.Nothing], feedback: Double, lowPass: Double): Unit = js.native
   def process(Signal: js.Object, delayTime: Double): Unit = js.native
+  def process(Signal: js.Object, delayTime: Double, feedback: js.UndefOr[scala.Nothing], lowPass: Double): Unit = js.native
   def process(Signal: js.Object, delayTime: Double, feedback: Double): Unit = js.native
   def process(Signal: js.Object, delayTime: Double, feedback: Double, lowPass: Double): Unit = js.native
   /**

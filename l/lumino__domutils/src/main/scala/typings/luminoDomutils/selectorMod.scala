@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/domutils/lib/selector", JSImport.Namespace)
+@JSImport("@lumino/domutils/types/selector", JSImport.Namespace)
 @js.native
 object selectorMod extends js.Object {
   @js.native

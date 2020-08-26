@@ -1,9 +1,6 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.anon.ComponentElement
 import typings.devextreme.anon.EventItemData
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
 import typings.devextreme.anon.RemovedItems
 import typings.devextreme.devextremeStrings.contained
 import typings.devextreme.devextremeStrings.multiple
@@ -17,92 +14,101 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxButtonGroupOptions extends WidgetOptions[dxButtonGroup] {
   /** @name dxButtonGroup.Options.buttonTemplate */
   var buttonTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ js.Any, /* buttonContent */ dxElement, String | Element | JQuery])
-  ] = js.undefined
+  ] = js.native
   /** @deprecated */
   /** @name dxButtonGroup.Options.itemTemplate */
-  var itemTemplate: js.UndefOr[typings.devextreme.mod.DevExpress.core.template | js.Function] = js.undefined
+  var itemTemplate: js.UndefOr[typings.devextreme.mod.DevExpress.core.template | js.Function] = js.native
   /** @name dxButtonGroup.Options.items */
-  var items: js.UndefOr[js.Array[dxButtonGroupItem]] = js.undefined
+  var items: js.UndefOr[js.Array[dxButtonGroupItem]] = js.native
   /** @name dxButtonGroup.Options.keyExpr */
-  var keyExpr: js.UndefOr[String | js.Function] = js.undefined
+  var keyExpr: js.UndefOr[String | js.Function] = js.native
   /** @name dxButtonGroup.Options.onItemClick */
-  var onItemClick: js.UndefOr[js.Function1[/* e */ EventItemData, _]] = js.undefined
+  var onItemClick: js.UndefOr[js.Function1[/* e */ EventItemData, _]] = js.native
   /** @name dxButtonGroup.Options.onSelectionChanged */
-  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ RemovedItems, _]] = js.undefined
+  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ RemovedItems, _]] = js.native
   /** @name dxButtonGroup.Options.selectedItemKeys */
-  var selectedItemKeys: js.UndefOr[js.Array[_]] = js.undefined
+  var selectedItemKeys: js.UndefOr[js.Array[_]] = js.native
   /** @name dxButtonGroup.Options.selectedItems */
-  var selectedItems: js.UndefOr[js.Array[_]] = js.undefined
+  var selectedItems: js.UndefOr[js.Array[_]] = js.native
   /** @name dxButtonGroup.Options.selectionMode */
-  var selectionMode: js.UndefOr[multiple | single_] = js.undefined
+  var selectionMode: js.UndefOr[multiple | single_] = js.native
   /** @name dxButtonGroup.Options.stylingMode */
-  var stylingMode: js.UndefOr[text | outlined | contained] = js.undefined
+  var stylingMode: js.UndefOr[text | outlined | contained] = js.native
 }
 
 object dxButtonGroupOptions {
   @scala.inline
-  def apply(
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    bindingOptions: js.Any = null,
-    buttonTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ js.Any, /* buttonContent */ dxElement, String | Element | JQuery]) = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    itemTemplate: typings.devextreme.mod.DevExpress.core.template | js.Function = null,
-    items: js.Array[dxButtonGroupItem] = null,
-    keyExpr: String | js.Function = null,
-    onContentReady: /* e */ ComponentElement[dxButtonGroup] => _ = null,
-    onDisposing: /* e */ Model[dxButtonGroup] => _ = null,
-    onInitialized: /* e */ typings.devextreme.anon.Element[dxButtonGroup] => _ = null,
-    onItemClick: /* e */ EventItemData => _ = null,
-    onOptionChanged: /* e */ Name[dxButtonGroup] => _ = null,
-    onSelectionChanged: /* e */ RemovedItems => _ = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    selectedItemKeys: js.Array[_] = null,
-    selectedItems: js.Array[_] = null,
-    selectionMode: multiple | single_ = null,
-    stylingMode: text | outlined | contained = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxButtonGroupOptions = {
+  def apply(): dxButtonGroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (buttonTemplate != null) __obj.updateDynamic("buttonTemplate")(buttonTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
-    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (keyExpr != null) __obj.updateDynamic("keyExpr")(keyExpr.asInstanceOf[js.Any])
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1(onContentReady))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction1(onItemClick))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1(onSelectionChanged))
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (selectedItemKeys != null) __obj.updateDynamic("selectedItemKeys")(selectedItemKeys.asInstanceOf[js.Any])
-    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (stylingMode != null) __obj.updateDynamic("stylingMode")(stylingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxButtonGroupOptions]
   }
+  @scala.inline
+  implicit class dxButtonGroupOptionsOps[Self <: dxButtonGroupOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setButtonTemplateFunction2(value: (/* buttonData */ js.Any, /* buttonContent */ dxElement) => String | Element | JQuery): Self = this.set("buttonTemplate", js.Any.fromFunction2(value))
+    @scala.inline
+    def setButtonTemplate(
+      value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* buttonData */ js.Any, /* buttonContent */ dxElement, String | Element | JQuery])
+    ): Self = this.set("buttonTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonTemplate: Self = this.set("buttonTemplate", js.undefined)
+    @scala.inline
+    def setItemTemplate(value: typings.devextreme.mod.DevExpress.core.template | js.Function): Self = this.set("itemTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemTemplate: Self = this.set("itemTemplate", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: dxButtonGroupItem*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[dxButtonGroupItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setKeyExpr(value: String | js.Function): Self = this.set("keyExpr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyExpr: Self = this.set("keyExpr", js.undefined)
+    @scala.inline
+    def setOnItemClick(value: /* e */ EventItemData => _): Self = this.set("onItemClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnItemClick: Self = this.set("onItemClick", js.undefined)
+    @scala.inline
+    def setOnSelectionChanged(value: /* e */ RemovedItems => _): Self = this.set("onSelectionChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelectionChanged: Self = this.set("onSelectionChanged", js.undefined)
+    @scala.inline
+    def setSelectedItemKeysVarargs(value: js.Any*): Self = this.set("selectedItemKeys", js.Array(value :_*))
+    @scala.inline
+    def setSelectedItemKeys(value: js.Array[_]): Self = this.set("selectedItemKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedItemKeys: Self = this.set("selectedItemKeys", js.undefined)
+    @scala.inline
+    def setSelectedItemsVarargs(value: js.Any*): Self = this.set("selectedItems", js.Array(value :_*))
+    @scala.inline
+    def setSelectedItems(value: js.Array[_]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedItems: Self = this.set("selectedItems", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: multiple | single_): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    @scala.inline
+    def setStylingMode(value: text | outlined | contained): Self = this.set("stylingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStylingMode: Self = this.set("stylingMode", js.undefined)
+  }
+  
 }
 

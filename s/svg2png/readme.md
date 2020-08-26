@@ -10,9 +10,9 @@ Converts SVGs to PNGs, using PhantomJS
 | ------------------ | :-------------: |
 | Full name          | svg2png |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 89 |
-| # downloads        | 3512866 |
+| # releases         | 0 |
+| # dependents       | 92 |
+| # downloads        | 3403064 |
 | # stars            | 16 |
 
 ## Links

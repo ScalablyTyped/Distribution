@@ -12,7 +12,7 @@ Check if a path is in the current working directory
 | Keywords           | path, cwd, pwd, check, filepath, file, folder, in, inside |
 | # releases         | 5 |
 | # dependents       | 32 |
-| # downloads        | 310743896 |
+| # downloads        | 321263898 |
 | # stars            | 2 |
 
 ## Links

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EnablePolicyTypeRequest extends js.Object {
   /**
-    * The policy type that you want to enable. You can specify one of the following values:    BACKUP_POLICY     SERVICE_CONTROL_POLICY     TAG_POLICY   
+    * The policy type that you want to enable. You can specify one of the following values:    AISERVICES_OPT_OUT_POLICY     BACKUP_POLICY     SERVICE_CONTROL_POLICY     TAG_POLICY   
     */
   var PolicyType: typings.awsSdk.organizationsMod.PolicyType = js.native
   /**
@@ -22,5 +22,22 @@ object EnablePolicyTypeRequest {
     val __obj = js.Dynamic.literal(PolicyType = PolicyType.asInstanceOf[js.Any], RootId = RootId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnablePolicyTypeRequest]
   }
+  @scala.inline
+  implicit class EnablePolicyTypeRequestOps[Self <: EnablePolicyTypeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyType(value: PolicyType): Self = this.set("PolicyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRootId(value: RootId): Self = this.set("RootId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

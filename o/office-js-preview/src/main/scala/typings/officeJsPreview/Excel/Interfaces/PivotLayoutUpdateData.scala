@@ -13,6 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`. */
+@js.native
 trait PivotLayoutUpdateData extends js.Object {
   /**
     *
@@ -20,21 +21,21 @@ trait PivotLayoutUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoFormat: js.UndefOr[Boolean] = js.undefined
+  var autoFormat: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies if the field list can be shown in the UI.
     *
     * [Api set: ExcelApi 1.10]
     */
-  var enableFieldList: js.UndefOr[Boolean] = js.undefined
+  var enableFieldList: js.UndefOr[Boolean] = js.native
   /**
     *
     * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var layoutType: js.UndefOr[PivotLayoutType | Compact | Tabular | Outline] = js.undefined
+  var layoutType: js.UndefOr[PivotLayoutType | Compact | Tabular | Outline] = js.native
   /**
     *
     * The style applied to the PivotTable.
@@ -42,59 +43,87 @@ trait PivotLayoutUpdateData extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var pivotStyle: js.UndefOr[PivotTableStyleUpdateData] = js.undefined
+  var pivotStyle: js.UndefOr[PivotTableStyleUpdateData] = js.native
   /**
     *
     * Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var preserveFormatting: js.UndefOr[Boolean] = js.undefined
+  var preserveFormatting: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies if the PivotTable report shows grand totals for columns.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined
+  var showColumnGrandTotals: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies if the PivotTable report shows grand totals for rows.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showRowGrandTotals: js.UndefOr[Boolean] = js.undefined
+  var showRowGrandTotals: js.UndefOr[Boolean] = js.native
   /**
     *
     * This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states, this will be null.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var subtotalLocation: js.UndefOr[SubtotalLocationType | AtTop | AtBottom | Off] = js.undefined
+  var subtotalLocation: js.UndefOr[SubtotalLocationType | AtTop | AtBottom | Off] = js.native
 }
 
 object PivotLayoutUpdateData {
   @scala.inline
-  def apply(
-    autoFormat: js.UndefOr[Boolean] = js.undefined,
-    enableFieldList: js.UndefOr[Boolean] = js.undefined,
-    layoutType: PivotLayoutType | Compact | Tabular | Outline = null,
-    pivotStyle: PivotTableStyleUpdateData = null,
-    preserveFormatting: js.UndefOr[Boolean] = js.undefined,
-    showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined,
-    showRowGrandTotals: js.UndefOr[Boolean] = js.undefined,
-    subtotalLocation: SubtotalLocationType | AtTop | AtBottom | Off = null
-  ): PivotLayoutUpdateData = {
+  def apply(): PivotLayoutUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFormat)) __obj.updateDynamic("autoFormat")(autoFormat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFieldList)) __obj.updateDynamic("enableFieldList")(enableFieldList.get.asInstanceOf[js.Any])
-    if (layoutType != null) __obj.updateDynamic("layoutType")(layoutType.asInstanceOf[js.Any])
-    if (pivotStyle != null) __obj.updateDynamic("pivotStyle")(pivotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveFormatting)) __obj.updateDynamic("preserveFormatting")(preserveFormatting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnGrandTotals)) __obj.updateDynamic("showColumnGrandTotals")(showColumnGrandTotals.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRowGrandTotals)) __obj.updateDynamic("showRowGrandTotals")(showRowGrandTotals.get.asInstanceOf[js.Any])
-    if (subtotalLocation != null) __obj.updateDynamic("subtotalLocation")(subtotalLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotLayoutUpdateData]
   }
+  @scala.inline
+  implicit class PivotLayoutUpdateDataOps[Self <: PivotLayoutUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoFormat(value: Boolean): Self = this.set("autoFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFormat: Self = this.set("autoFormat", js.undefined)
+    @scala.inline
+    def setEnableFieldList(value: Boolean): Self = this.set("enableFieldList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableFieldList: Self = this.set("enableFieldList", js.undefined)
+    @scala.inline
+    def setLayoutType(value: PivotLayoutType | Compact | Tabular | Outline): Self = this.set("layoutType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayoutType: Self = this.set("layoutType", js.undefined)
+    @scala.inline
+    def setPivotStyle(value: PivotTableStyleUpdateData): Self = this.set("pivotStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePivotStyle: Self = this.set("pivotStyle", js.undefined)
+    @scala.inline
+    def setPreserveFormatting(value: Boolean): Self = this.set("preserveFormatting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveFormatting: Self = this.set("preserveFormatting", js.undefined)
+    @scala.inline
+    def setShowColumnGrandTotals(value: Boolean): Self = this.set("showColumnGrandTotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowColumnGrandTotals: Self = this.set("showColumnGrandTotals", js.undefined)
+    @scala.inline
+    def setShowRowGrandTotals(value: Boolean): Self = this.set("showRowGrandTotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowRowGrandTotals: Self = this.set("showRowGrandTotals", js.undefined)
+    @scala.inline
+    def setSubtotalLocation(value: SubtotalLocationType | AtTop | AtBottom | Off): Self = this.set("subtotalLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtotalLocation: Self = this.set("subtotalLocation", js.undefined)
+  }
+  
 }
 

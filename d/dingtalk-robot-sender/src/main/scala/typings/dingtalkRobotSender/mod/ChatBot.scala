@@ -45,7 +45,6 @@ trait ChatBot extends js.Object {
     * @return
     */
   def link(link: MessageUrl): js.Promise[AxiosResponse[_]] = js.native
-  def markdown(title: String, text: String): js.Promise[AxiosResponse[_]] = js.native
   /**
     * 发送Markdown消息
     *
@@ -53,6 +52,7 @@ trait ChatBot extends js.Object {
     * @param text 消息内容(支持Markdown)
     * @return
     */
+  def markdown(title: String, text: String): js.Promise[AxiosResponse[_]] = js.native
   def markdown(title: String, text: String, at: AtMobiles): js.Promise[AxiosResponse[_]] = js.native
   /**
     * 发送钉钉消息
@@ -69,6 +69,6 @@ trait ChatBot extends js.Object {
     * @return
     */
   def text(content: String): js.Promise[AxiosResponse[_]] = js.native
-  def text(content: String, at: AtMobiles): js.Promise[AxiosResponse[_]] = js.native
+  def text(content: String, at: js.UndefOr[AtMobiles]): js.Promise[AxiosResponse[_]] = js.native
 }
 

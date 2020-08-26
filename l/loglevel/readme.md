@@ -10,9 +10,9 @@ Minimal lightweight logging for JavaScript, adding reliable log level methods to
 | ------------------ | :-------------: |
 | Full name          | loglevel |
 | Keywords           | log, logger, logging, browser |
-| # releases         | 6 |
-| # dependents       | 623 |
-| # downloads        | 226459627 |
+| # releases         | 7 |
+| # dependents       | 627 |
+| # downloads        | 233204097 |
 | # stars            | 15 |
 
 ## Links

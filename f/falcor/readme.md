@@ -12,7 +12,7 @@ A JavaScript library for efficient data fetching.
 | Keywords           | JSON, Netflix, Observable, falcorjs |
 | # releases         | 16 |
 | # dependents       | 19 |
-| # downloads        | 45803 |
+| # downloads        | 44733 |
 | # stars            | 19 |
 
 ## Links

@@ -26,5 +26,24 @@ object AcknowledgeThirdPartyJobInput {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcknowledgeThirdPartyJobInput]
   }
+  @scala.inline
+  implicit class AcknowledgeThirdPartyJobInputOps[Self <: AcknowledgeThirdPartyJobInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobId(value: ThirdPartyJobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNonce(value: Nonce): Self = this.set("nonce", value.asInstanceOf[js.Any])
+  }
+  
 }
 

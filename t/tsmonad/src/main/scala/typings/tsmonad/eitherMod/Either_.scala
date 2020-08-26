@@ -17,26 +17,13 @@ class Either_[L, R] protected ()
   def this(`type`: EitherType) = this()
   def this(`type`: EitherType, l: L) = this()
   def this(`type`: EitherType, l: L, r: R) = this()
+  def this(`type`: EitherType, l: js.UndefOr[scala.Nothing], r: R) = this()
   var l: js.Any = js.native
   var r: js.Any = js.native
   var `type`: js.Any = js.native
-  /* CompleteClass */
-  override def bind[U](f: js.Function1[R, Monad[U]]): Monad[U] = js.native
   def caseOf[T](pattern: EitherPatterns[L, R, T]): T = js.native
-  /* CompleteClass */
-  override def chain[U](f: js.Function1[R, Monad[U]]): Monad[U] = js.native
   def `do`(): Either_[L, R] = js.native
   def `do`(patterns: Partial[EitherPatterns[L, R, Unit]]): Either_[L, R] = js.native
-  /* CompleteClass */
-  override def fmap[U](f: js.Function1[R, U]): Functor[U] = js.native
-  /* CompleteClass */
-  override def lift[U](f: js.Function1[R, U]): Functor[U] = js.native
-  /* CompleteClass */
-  override def map[U](f: js.Function1[R, U]): Functor[U] = js.native
-  /* CompleteClass */
-  override def of[U](t: U): Monad[U] = js.native
-  /* CompleteClass */
-  override def unit[U](t: U): Monad[U] = js.native
 }
 
 /* static members */

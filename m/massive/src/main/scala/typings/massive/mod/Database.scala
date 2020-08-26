@@ -16,7 +16,9 @@ class Database protected ()
   def this(connection: js.Object) = this()
   def this(connection: String, loader: Loader) = this()
   def this(connection: js.Object, loader: Loader) = this()
+  def this(connection: String, loader: js.UndefOr[scala.Nothing], driverConfig: js.Object) = this()
   def this(connection: String, loader: Loader, driverConfig: js.Object) = this()
+  def this(connection: js.Object, loader: js.UndefOr[scala.Nothing], driverConfig: js.Object) = this()
   def this(connection: js.Object, loader: Loader, driverConfig: js.Object) = this()
   def attach(entities: js.Array[_]): js.Promise[js.Array[_]] = js.native
   /** Attach an entity to the connected instance. */
@@ -50,21 +52,21 @@ class Database protected ()
   /** List all the views attached to the connected instance. */
   def listViews(): js.Promise[js.Array[_]] = js.native
   def query(query: String): js.Promise[_] = js.native
+  def query(query: String, params: js.UndefOr[QueryParams], options: ResultProcessingOptions): js.Promise[_] = js.native
   def query(query: String, params: QueryParams): js.Promise[_] = js.native
-  def query(query: String, params: QueryParams, options: ResultProcessingOptions): js.Promise[_] = js.native
   def query(query: Delete): js.Promise[_] = js.native
+  def query(query: Delete, params: js.UndefOr[QueryParams], options: ResultProcessingOptions): js.Promise[_] = js.native
   def query(query: Delete, params: QueryParams): js.Promise[_] = js.native
-  def query(query: Delete, params: QueryParams, options: ResultProcessingOptions): js.Promise[_] = js.native
   def query(query: Insert): js.Promise[_] = js.native
+  def query(query: Insert, params: js.UndefOr[QueryParams], options: ResultProcessingOptions): js.Promise[_] = js.native
   def query(query: Insert, params: QueryParams): js.Promise[_] = js.native
-  def query(query: Insert, params: QueryParams, options: ResultProcessingOptions): js.Promise[_] = js.native
   /** Execute a query. */
   def query(query: Select): js.Promise[_] = js.native
+  def query(query: Select, params: js.UndefOr[QueryParams], options: ResultProcessingOptions): js.Promise[_] = js.native
   def query(query: Select, params: QueryParams): js.Promise[_] = js.native
-  def query(query: Select, params: QueryParams, options: ResultProcessingOptions): js.Promise[_] = js.native
   def query(query: Update): js.Promise[_] = js.native
+  def query(query: Update, params: js.UndefOr[QueryParams], options: ResultProcessingOptions): js.Promise[_] = js.native
   def query(query: Update, params: QueryParams): js.Promise[_] = js.native
-  def query(query: Update, params: QueryParams, options: ResultProcessingOptions): js.Promise[_] = js.native
   /**
     * Synchronize the database API with the current state by scanning for tables, views, functions, and scripts.
     * Objects and files which no longer exist are cleared and new objects and files added.

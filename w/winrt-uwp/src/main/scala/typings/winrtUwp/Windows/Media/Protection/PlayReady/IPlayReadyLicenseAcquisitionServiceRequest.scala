@@ -8,11 +8,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Performs a license acquisition process. */
+@js.native
 trait IPlayReadyLicenseAcquisitionServiceRequest extends IPlayReadyServiceRequest {
   /** Gets the current content header property. */
-  var contentHeader: PlayReadyContentHeader
+  var contentHeader: PlayReadyContentHeader = js.native
   /** Gets the current domain service identifier property that overrides a service identifier in the content header. */
-  var domainServiceId: String
+  var domainServiceId: String = js.native
 }
 
 object IPlayReadyLicenseAcquisitionServiceRequest {
@@ -34,5 +35,22 @@ object IPlayReadyLicenseAcquisitionServiceRequest {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlayReadyLicenseAcquisitionServiceRequest]
   }
+  @scala.inline
+  implicit class IPlayReadyLicenseAcquisitionServiceRequestOps[Self <: IPlayReadyLicenseAcquisitionServiceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentHeader(value: PlayReadyContentHeader): Self = this.set("contentHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainServiceId(value: String): Self = this.set("domainServiceId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

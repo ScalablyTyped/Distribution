@@ -22,6 +22,7 @@ trait MatcherState extends js.Object {
   var testPath: js.UndefOr[Path] = js.native
   var utils: readonlyprintExpectedvalu = js.native
   def equals(a: js.Any, b: js.Any): Boolean = js.native
+  def equals(a: js.Any, b: js.Any, customTesters: js.UndefOr[scala.Nothing], strictCheck: Boolean): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[Tester]): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[Tester], strictCheck: Boolean): Boolean = js.native
 }

@@ -375,6 +375,7 @@ trait Spreadsheet_ extends Widget_ {
     * @returns {void}
     */
   def mergeAcrossCells(): Unit = js.native
+  def mergeAcrossCells(range: js.UndefOr[scala.Nothing], alertStatus: Boolean): Unit = js.native
   def mergeAcrossCells(range: String): Unit = js.native
   def mergeAcrossCells(range: String, alertStatus: Boolean): Unit = js.native
   /** This method is used to merge the selected cells in the Spreadsheet.
@@ -383,6 +384,7 @@ trait Spreadsheet_ extends Widget_ {
     * @returns {void}
     */
   def mergeCells(): Unit = js.native
+  def mergeCells(range: js.UndefOr[scala.Nothing], alertStatus: Boolean): Unit = js.native
   def mergeCells(range: String): Unit = js.native
   def mergeCells(range: String, alertStatus: Boolean): Unit = js.native
   def mergeCells(range: js.Array[_]): Unit = js.native
@@ -431,8 +433,95 @@ trait Spreadsheet_ extends Widget_ {
     * @returns {void}
     */
   def removeHyperlink(range: String): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: js.UndefOr[scala.Nothing],
+    status: js.UndefOr[scala.Nothing],
+    cells: js.UndefOr[scala.Nothing],
+    skipHiddenRow: Boolean
+  ): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: js.UndefOr[scala.Nothing],
+    status: js.UndefOr[scala.Nothing],
+    cells: String
+  ): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: js.UndefOr[scala.Nothing],
+    status: js.UndefOr[scala.Nothing],
+    cells: String,
+    skipHiddenRow: Boolean
+  ): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: js.UndefOr[scala.Nothing],
+    status: js.UndefOr[scala.Nothing],
+    cells: js.Array[_]
+  ): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: js.UndefOr[scala.Nothing],
+    status: js.UndefOr[scala.Nothing],
+    cells: js.Array[_],
+    skipHiddenRow: Boolean
+  ): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: js.UndefOr[scala.Nothing], status: Boolean): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: js.UndefOr[scala.Nothing],
+    status: Boolean,
+    cells: js.UndefOr[scala.Nothing],
+    skipHiddenRow: Boolean
+  ): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: js.UndefOr[scala.Nothing], status: Boolean, cells: String): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: js.UndefOr[scala.Nothing],
+    status: Boolean,
+    cells: String,
+    skipHiddenRow: Boolean
+  ): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: js.UndefOr[scala.Nothing], status: Boolean, cells: js.Array[_]): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: js.UndefOr[scala.Nothing],
+    status: Boolean,
+    cells: js.Array[_],
+    skipHiddenRow: Boolean
+  ): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: Boolean,
+    status: js.UndefOr[scala.Nothing],
+    cells: js.UndefOr[scala.Nothing],
+    skipHiddenRow: Boolean
+  ): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Boolean, status: js.UndefOr[scala.Nothing], cells: String): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: Boolean,
+    status: js.UndefOr[scala.Nothing],
+    cells: String,
+    skipHiddenRow: Boolean
+  ): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Boolean, status: js.UndefOr[scala.Nothing], cells: js.Array[_]): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: Boolean,
+    status: js.UndefOr[scala.Nothing],
+    cells: js.Array[_],
+    skipHiddenRow: Boolean
+  ): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean): Unit = js.native
+  def removeHyperlink(
+    range: String,
+    isClearHLink: Boolean,
+    status: Boolean,
+    cells: js.UndefOr[scala.Nothing],
+    skipHiddenRow: Boolean
+  ): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: String): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: String, skipHiddenRow: Boolean): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: js.Array[_]): Unit = js.native
@@ -609,6 +698,7 @@ trait Spreadsheet_ extends Widget_ {
     * @returns {void}
     */
   def updateUniqueData(data: DataOptions): Unit = js.native
+  def updateUniqueData(data: DataOptions, range: js.UndefOr[scala.Nothing], skipCell: Boolean): Unit = js.native
   def updateUniqueData(data: DataOptions, range: String): Unit = js.native
   def updateUniqueData(data: DataOptions, range: String, skipCell: Boolean): Unit = js.native
   def updateUniqueData(data: DataOptions, range: js.Array[_]): Unit = js.native

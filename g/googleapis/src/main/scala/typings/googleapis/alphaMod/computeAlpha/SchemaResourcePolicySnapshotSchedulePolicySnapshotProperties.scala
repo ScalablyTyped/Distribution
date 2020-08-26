@@ -29,16 +29,36 @@ trait SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties extends js.Ob
 
 object SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties {
   @scala.inline
-  def apply(
-    guestFlush: js.UndefOr[Boolean] = js.undefined,
-    labels: StringDictionary[String] = null,
-    storageLocations: js.Array[String] = null
-  ): SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties = {
+  def apply(): SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(guestFlush)) __obj.updateDynamic("guestFlush")(guestFlush.get.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (storageLocations != null) __obj.updateDynamic("storageLocations")(storageLocations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties]
   }
+  @scala.inline
+  implicit class SchemaResourcePolicySnapshotSchedulePolicySnapshotPropertiesOps[Self <: SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGuestFlush(value: Boolean): Self = this.set("guestFlush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuestFlush: Self = this.set("guestFlush", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setStorageLocationsVarargs(value: String*): Self = this.set("storageLocations", js.Array(value :_*))
+    @scala.inline
+    def setStorageLocations(value: js.Array[String]): Self = this.set("storageLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageLocations: Self = this.set("storageLocations", js.undefined)
+  }
+  
 }
 

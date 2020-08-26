@@ -46,55 +46,5 @@ import scala.scalajs.js.annotation._
   * Initialization method.
   */
 class Blackboard ()
-  extends typings.behavior3.b3.Blackboard {
-  /**
-    * Internal method to retrieve the context memory. If treeScope and
-    * nodeScope are provided, this method returns the per node per tree
-    * memory. If only the treeScope is provided, it returns the per tree
-    * memory. If no parameter is provided, it returns the global memory.
-    * Notice that, if only nodeScope is provided, this method will still
-    * return the global memory.
-    *
-    */
-  /* CompleteClass */
-  override def _getMemory(treeScope: String, nodeScope: String): js.Any = js.native
-  /**
-    * Internal method to retrieve the node context memory, given the tree
-    * memory. If the memory does not exist, this method creates is.
-    *
-    */
-  /* CompleteClass */
-  override def _getNodeMemory(treeMemory: String, nodeScope: String): js.Any = js.native
-  /**
-    * Internal method to retrieve the tree context memory. If the memory does
-    * not exist, this method creates it.
-    *
-    */
-  /* CompleteClass */
-  override def _getTreeMemory(treeScope: String): js.Any = js.native
-  /**
-    * Retrieves a value in the blackboard. If treeScope and nodeScope are
-    * provided, this method will retrieve the value from the per node per tree
-    * memory. If only the treeScope is provided, it will retrieve the value
-    * from the per tree memory. If no parameter is provided, this method will
-    * retrieve from the global memory. If only nodeScope is provided (but
-    * treeScope not), this method will still try to retrieve from the global
-    * memory.
-    *
-    */
-  /* CompleteClass */
-  override def get(key: String, treeScope: String, nodeScope: String): js.Any = js.native
-  /**
-    * Stores a value in the blackboard. If treeScope and nodeScope are
-    * provided, this method will save the value into the per node per tree
-    * memory. If only the treeScope is provided, it will save the value into
-    * the per tree memory. If no parameter is provided, this method will save
-    * the value into the global memory. Notice that, if only nodeScope is
-    * provided (but treeScope not), this method will still save the value into
-    * the global memory.
-    *
-    */
-  /* CompleteClass */
-  override def set(key: String, value: String, treeScope: String, nodeScope: String): Unit = js.native
-}
+  extends typings.behavior3.b3.Blackboard
 

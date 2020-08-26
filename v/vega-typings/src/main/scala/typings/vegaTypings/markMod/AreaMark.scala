@@ -2,58 +2,40 @@ package typings.vegaTypings.markMod
 
 import typings.vegaTypings.encodeMod.AreaEncodeEntry
 import typings.vegaTypings.encodeMod.Encodable
-import typings.vegaTypings.encodeMod.Encode
-import typings.vegaTypings.onTriggerMod.OnMarkTrigger
-import typings.vegaTypings.signalMod.SignalRef
-import typings.vegaTypings.transformMod.Transforms
 import typings.vegaTypings.vegaTypingsStrings.area
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AreaMark
   extends BaseMark
      with Encodable[AreaEncodeEntry]
      with Mark {
-  var `type`: area
+  var `type`: area = js.native
 }
 
 object AreaMark {
   @scala.inline
-  def apply(
-    `type`: area,
-    aria: js.UndefOr[Boolean] = js.undefined,
-    clip: Clip = null,
-    description: String = null,
-    encode: Encode[AreaEncodeEntry] = null,
-    from: From = null,
-    interactive: Boolean | SignalRef = null,
-    key: String = null,
-    name: String = null,
-    on: js.Array[OnMarkTrigger] = null,
-    role: String = null,
-    sort: Compare = null,
-    style: String | js.Array[String] = null,
-    transform: js.Array[Transforms] = null,
-    zindex: js.UndefOr[Double] = js.undefined
-  ): AreaMark = {
+  def apply(`type`: area): AreaMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
-    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (interactive != null) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaMark]
   }
+  @scala.inline
+  implicit class AreaMarkOps[Self <: AreaMark] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: area): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

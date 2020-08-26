@@ -26,11 +26,30 @@ trait SchemaUrlRewrite extends js.Object {
 
 object SchemaUrlRewrite {
   @scala.inline
-  def apply(hostRewrite: String = null, pathPrefixRewrite: String = null): SchemaUrlRewrite = {
+  def apply(): SchemaUrlRewrite = {
     val __obj = js.Dynamic.literal()
-    if (hostRewrite != null) __obj.updateDynamic("hostRewrite")(hostRewrite.asInstanceOf[js.Any])
-    if (pathPrefixRewrite != null) __obj.updateDynamic("pathPrefixRewrite")(pathPrefixRewrite.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUrlRewrite]
   }
+  @scala.inline
+  implicit class SchemaUrlRewriteOps[Self <: SchemaUrlRewrite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostRewrite(value: String): Self = this.set("hostRewrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostRewrite: Self = this.set("hostRewrite", js.undefined)
+    @scala.inline
+    def setPathPrefixRewrite(value: String): Self = this.set("pathPrefixRewrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathPrefixRewrite: Self = this.set("pathPrefixRewrite", js.undefined)
+  }
+  
 }
 

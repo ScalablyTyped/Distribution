@@ -87,6 +87,10 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def actionSheet(): PlusNativeUINativeUIObj = js.native
+  def actionSheet(
+    actionsheetStyle: js.UndefOr[scala.Nothing],
+    actionsheetCallback: js.Function1[/* result */ js.Any, Unit]
+  ): PlusNativeUINativeUIObj = js.native
   def actionSheet(actionsheetStyle: PlusNativeUIActionSheetStyles): PlusNativeUINativeUIObj = js.native
   def actionSheet(
     actionsheetStyle: PlusNativeUIActionSheetStyles,
@@ -100,8 +104,53 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def alert(): Unit = js.native
+  def alert(
+    message: js.UndefOr[scala.Nothing],
+    alertCB: js.UndefOr[scala.Nothing],
+    title: js.UndefOr[scala.Nothing],
+    buttonCapture: String
+  ): Unit = js.native
+  def alert(message: js.UndefOr[scala.Nothing], alertCB: js.UndefOr[scala.Nothing], title: String): Unit = js.native
+  def alert(
+    message: js.UndefOr[scala.Nothing],
+    alertCB: js.UndefOr[scala.Nothing],
+    title: String,
+    buttonCapture: String
+  ): Unit = js.native
+  def alert(message: js.UndefOr[scala.Nothing], alertCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def alert(
+    message: js.UndefOr[scala.Nothing],
+    alertCB: js.Function1[/* result */ js.Any, Unit],
+    title: js.UndefOr[scala.Nothing],
+    buttonCapture: String
+  ): Unit = js.native
+  def alert(
+    message: js.UndefOr[scala.Nothing],
+    alertCB: js.Function1[/* result */ js.Any, Unit],
+    title: String
+  ): Unit = js.native
+  def alert(
+    message: js.UndefOr[scala.Nothing],
+    alertCB: js.Function1[/* result */ js.Any, Unit],
+    title: String,
+    buttonCapture: String
+  ): Unit = js.native
   def alert(message: String): Unit = js.native
+  def alert(
+    message: String,
+    alertCB: js.UndefOr[scala.Nothing],
+    title: js.UndefOr[scala.Nothing],
+    buttonCapture: String
+  ): Unit = js.native
+  def alert(message: String, alertCB: js.UndefOr[scala.Nothing], title: String): Unit = js.native
+  def alert(message: String, alertCB: js.UndefOr[scala.Nothing], title: String, buttonCapture: String): Unit = js.native
   def alert(message: String, alertCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def alert(
+    message: String,
+    alertCB: js.Function1[/* result */ js.Any, Unit],
+    title: js.UndefOr[scala.Nothing],
+    buttonCapture: String
+  ): Unit = js.native
   def alert(message: String, alertCB: js.Function1[/* result */ js.Any, Unit], title: String): Unit = js.native
   def alert(
     message: String,
@@ -131,8 +180,62 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def confirm(): Unit = js.native
+  def confirm(
+    message: js.UndefOr[scala.Nothing],
+    confirmCB: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def confirm(
+    message: js.UndefOr[scala.Nothing],
+    confirmCB: js.UndefOr[scala.Nothing],
+    options: PlusNativeUIConfirmOptions
+  ): Unit = js.native
+  def confirm(
+    message: js.UndefOr[scala.Nothing],
+    confirmCB: js.UndefOr[scala.Nothing],
+    options: PlusNativeUIConfirmOptions,
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def confirm(message: js.UndefOr[scala.Nothing], confirmCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def confirm(
+    message: js.UndefOr[scala.Nothing],
+    confirmCB: js.Function1[/* result */ js.Any, Unit],
+    options: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def confirm(
+    message: js.UndefOr[scala.Nothing],
+    confirmCB: js.Function1[/* result */ js.Any, Unit],
+    options: PlusNativeUIConfirmOptions
+  ): Unit = js.native
+  def confirm(
+    message: js.UndefOr[scala.Nothing],
+    confirmCB: js.Function1[/* result */ js.Any, Unit],
+    options: PlusNativeUIConfirmOptions,
+    buttons: js.Array[_]
+  ): Unit = js.native
   def confirm(message: String): Unit = js.native
+  def confirm(
+    message: String,
+    confirmCB: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def confirm(message: String, confirmCB: js.UndefOr[scala.Nothing], options: PlusNativeUIConfirmOptions): Unit = js.native
+  def confirm(
+    message: String,
+    confirmCB: js.UndefOr[scala.Nothing],
+    options: PlusNativeUIConfirmOptions,
+    buttons: js.Array[_]
+  ): Unit = js.native
   def confirm(message: String, confirmCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def confirm(
+    message: String,
+    confirmCB: js.Function1[/* result */ js.Any, Unit],
+    options: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
   def confirm(
     message: String,
     confirmCB: js.Function1[/* result */ js.Any, Unit],
@@ -152,7 +255,23 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def pickDate(): Unit = js.native
+  def pickDate(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusNativeUIPickDateOption
+  ): Unit = js.native
+  def pickDate(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def pickDate(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit],
+    options: PlusNativeUIPickDateOption
+  ): Unit = js.native
   def pickDate(successCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def pickDate(
+    successCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusNativeUIPickDateOption
+  ): Unit = js.native
   def pickDate(
     successCB: js.Function1[/* result */ js.Any, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
@@ -170,7 +289,23 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def pickTime(): Unit = js.native
+  def pickTime(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusNativeUIPickTimeOption
+  ): Unit = js.native
+  def pickTime(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def pickTime(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit],
+    options: PlusNativeUIPickTimeOption
+  ): Unit = js.native
   def pickTime(successCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def pickTime(
+    successCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusNativeUIPickTimeOption
+  ): Unit = js.native
   def pickTime(
     successCB: js.Function1[/* result */ js.Any, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
@@ -187,6 +322,7 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def previewImage(): Unit = js.native
+  def previewImage(urls: js.UndefOr[scala.Nothing], options: PlusNativeUIPreviewImageOptions): Unit = js.native
   def previewImage(urls: js.Array[_]): Unit = js.native
   def previewImage(urls: js.Array[_], options: PlusNativeUIPreviewImageOptions): Unit = js.native
   /**
@@ -197,9 +333,159 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def prompt(): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.UndefOr[scala.Nothing],
+    title: js.UndefOr[scala.Nothing],
+    tip: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.UndefOr[scala.Nothing],
+    title: js.UndefOr[scala.Nothing],
+    tip: String
+  ): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.UndefOr[scala.Nothing],
+    title: js.UndefOr[scala.Nothing],
+    tip: String,
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def prompt(message: js.UndefOr[scala.Nothing], promptCB: js.UndefOr[scala.Nothing], title: String): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.UndefOr[scala.Nothing],
+    title: String,
+    tip: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.UndefOr[scala.Nothing],
+    title: String,
+    tip: String
+  ): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.UndefOr[scala.Nothing],
+    title: String,
+    tip: String,
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def prompt(message: js.UndefOr[scala.Nothing], promptCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.Function1[/* result */ js.Any, Unit],
+    title: js.UndefOr[scala.Nothing],
+    tip: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.Function1[/* result */ js.Any, Unit],
+    title: js.UndefOr[scala.Nothing],
+    tip: String
+  ): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.Function1[/* result */ js.Any, Unit],
+    title: js.UndefOr[scala.Nothing],
+    tip: String,
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.Function1[/* result */ js.Any, Unit],
+    title: String
+  ): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.Function1[/* result */ js.Any, Unit],
+    title: String,
+    tip: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.Function1[/* result */ js.Any, Unit],
+    title: String,
+    tip: String
+  ): Unit = js.native
+  def prompt(
+    message: js.UndefOr[scala.Nothing],
+    promptCB: js.Function1[/* result */ js.Any, Unit],
+    title: String,
+    tip: String,
+    buttons: js.Array[_]
+  ): Unit = js.native
   def prompt(message: String): Unit = js.native
+  def prompt(
+    message: String,
+    promptCB: js.UndefOr[scala.Nothing],
+    title: js.UndefOr[scala.Nothing],
+    tip: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def prompt(
+    message: String,
+    promptCB: js.UndefOr[scala.Nothing],
+    title: js.UndefOr[scala.Nothing],
+    tip: String
+  ): Unit = js.native
+  def prompt(
+    message: String,
+    promptCB: js.UndefOr[scala.Nothing],
+    title: js.UndefOr[scala.Nothing],
+    tip: String,
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def prompt(message: String, promptCB: js.UndefOr[scala.Nothing], title: String): Unit = js.native
+  def prompt(
+    message: String,
+    promptCB: js.UndefOr[scala.Nothing],
+    title: String,
+    tip: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def prompt(message: String, promptCB: js.UndefOr[scala.Nothing], title: String, tip: String): Unit = js.native
+  def prompt(
+    message: String,
+    promptCB: js.UndefOr[scala.Nothing],
+    title: String,
+    tip: String,
+    buttons: js.Array[_]
+  ): Unit = js.native
   def prompt(message: String, promptCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def prompt(
+    message: String,
+    promptCB: js.Function1[/* result */ js.Any, Unit],
+    title: js.UndefOr[scala.Nothing],
+    tip: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
+  def prompt(
+    message: String,
+    promptCB: js.Function1[/* result */ js.Any, Unit],
+    title: js.UndefOr[scala.Nothing],
+    tip: String
+  ): Unit = js.native
+  def prompt(
+    message: String,
+    promptCB: js.Function1[/* result */ js.Any, Unit],
+    title: js.UndefOr[scala.Nothing],
+    tip: String,
+    buttons: js.Array[_]
+  ): Unit = js.native
   def prompt(message: String, promptCB: js.Function1[/* result */ js.Any, Unit], title: String): Unit = js.native
+  def prompt(
+    message: String,
+    promptCB: js.Function1[/* result */ js.Any, Unit],
+    title: String,
+    tip: js.UndefOr[scala.Nothing],
+    buttons: js.Array[_]
+  ): Unit = js.native
   def prompt(message: String, promptCB: js.Function1[/* result */ js.Any, Unit], title: String, tip: String): Unit = js.native
   def prompt(
     message: String,
@@ -215,6 +501,7 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def showWaiting(): PlusNativeUIWaitingObj = js.native
+  def showWaiting(title: js.UndefOr[scala.Nothing], options: PlusNativeUIWaitingOptions): PlusNativeUIWaitingObj = js.native
   def showWaiting(title: String): PlusNativeUIWaitingObj = js.native
   def showWaiting(title: String, options: PlusNativeUIWaitingOptions): PlusNativeUIWaitingObj = js.native
   /**
@@ -225,6 +512,7 @@ trait PlusNativeUI extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def toast(): Unit = js.native
+  def toast(message: js.UndefOr[scala.Nothing], options: PlusNativeUIToastOptions): Unit = js.native
   def toast(message: String): Unit = js.native
   def toast(message: String, options: PlusNativeUIToastOptions): Unit = js.native
 }

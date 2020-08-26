@@ -1,43 +1,52 @@
 package typings.restifyErrors.mod
 
-import typings.std.Error
-import typings.verror.mod.Info
 import typings.verror.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RestifyHttpErrorOptions extends Options {
-  var code: js.UndefOr[String] = js.undefined
-  var context: js.UndefOr[js.Any] = js.undefined
-  var message: js.UndefOr[String] = js.undefined
-  var statusCode: js.UndefOr[Double] = js.undefined
+  var code: js.UndefOr[String] = js.native
+  var context: js.UndefOr[js.Any] = js.native
+  var message: js.UndefOr[String] = js.native
+  var statusCode: js.UndefOr[Double] = js.native
 }
 
 object RestifyHttpErrorOptions {
   @scala.inline
-  def apply(
-    cause: js.UndefOr[Null | Error] = js.undefined,
-    code: String = null,
-    constructorOpt: /* repeated */ js.Any => Unit = null,
-    context: js.Any = null,
-    info: Info = null,
-    message: String = null,
-    name: String = null,
-    statusCode: js.UndefOr[Double] = js.undefined,
-    strict: js.UndefOr[Boolean] = js.undefined
-  ): RestifyHttpErrorOptions = {
+  def apply(): RestifyHttpErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cause)) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (constructorOpt != null) __obj.updateDynamic("constructorOpt")(js.Any.fromFunction1(constructorOpt))
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestifyHttpErrorOptions]
   }
+  @scala.inline
+  implicit class RestifyHttpErrorOptionsOps[Self <: RestifyHttpErrorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+  }
+  
 }
 

@@ -4,42 +4,77 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JsonFragment extends js.Object {
-  var anonymous: js.UndefOr[Boolean] = js.undefined
-  var constant: js.UndefOr[Boolean] = js.undefined
-  var gas: js.UndefOr[String] = js.undefined
-  var inputs: js.UndefOr[js.Array[JsonFragmentType]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var outputs: js.UndefOr[js.Array[JsonFragmentType]] = js.undefined
-  var payable: js.UndefOr[Boolean] = js.undefined
-  var stateMutability: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var anonymous: js.UndefOr[Boolean] = js.native
+  var constant: js.UndefOr[Boolean] = js.native
+  var gas: js.UndefOr[String] = js.native
+  var inputs: js.UndefOr[js.Array[JsonFragmentType]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var outputs: js.UndefOr[js.Array[JsonFragmentType]] = js.native
+  var payable: js.UndefOr[Boolean] = js.native
+  var stateMutability: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object JsonFragment {
   @scala.inline
-  def apply(
-    anonymous: js.UndefOr[Boolean] = js.undefined,
-    constant: js.UndefOr[Boolean] = js.undefined,
-    gas: String = null,
-    inputs: js.Array[JsonFragmentType] = null,
-    name: String = null,
-    outputs: js.Array[JsonFragmentType] = null,
-    payable: js.UndefOr[Boolean] = js.undefined,
-    stateMutability: String = null,
-    `type`: String = null
-  ): JsonFragment = {
+  def apply(): JsonFragment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(constant)) __obj.updateDynamic("constant")(constant.get.asInstanceOf[js.Any])
-    if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (!js.isUndefined(payable)) __obj.updateDynamic("payable")(payable.get.asInstanceOf[js.Any])
-    if (stateMutability != null) __obj.updateDynamic("stateMutability")(stateMutability.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonFragment]
   }
+  @scala.inline
+  implicit class JsonFragmentOps[Self <: JsonFragment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnonymous(value: Boolean): Self = this.set("anonymous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnonymous: Self = this.set("anonymous", js.undefined)
+    @scala.inline
+    def setConstant(value: Boolean): Self = this.set("constant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstant: Self = this.set("constant", js.undefined)
+    @scala.inline
+    def setGas(value: String): Self = this.set("gas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGas: Self = this.set("gas", js.undefined)
+    @scala.inline
+    def setInputsVarargs(value: JsonFragmentType*): Self = this.set("inputs", js.Array(value :_*))
+    @scala.inline
+    def setInputs(value: js.Array[JsonFragmentType]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputs: Self = this.set("inputs", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOutputsVarargs(value: JsonFragmentType*): Self = this.set("outputs", js.Array(value :_*))
+    @scala.inline
+    def setOutputs(value: js.Array[JsonFragmentType]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    @scala.inline
+    def setPayable(value: Boolean): Self = this.set("payable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayable: Self = this.set("payable", js.undefined)
+    @scala.inline
+    def setStateMutability(value: String): Self = this.set("stateMutability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateMutability: Self = this.set("stateMutability", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

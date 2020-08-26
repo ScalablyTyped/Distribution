@@ -19,12 +19,12 @@ object Utilities extends js.Object {
   @js.native
   class DateTimeManager () extends js.Object
   
-  def AllPermissionsNA(): Unit = js.native
   /**
     * Shows confirmation popup if all permissions are set as NA
     * It is called from add page tab and page properties update
     * @param isPagePropertisPopUp true if called from page properties.
     */
+  def AllPermissionsNA(): Unit = js.native
   def AllPermissionsNA(isPagePropertisPopUp: Boolean): Unit = js.native
   /**
     * Called to show confirmation pop up while exiting edit page mode.

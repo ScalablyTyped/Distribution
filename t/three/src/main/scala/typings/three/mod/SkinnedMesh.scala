@@ -6,41 +6,17 @@ import scala.scalajs.js.annotation._
 
 @JSImport("three", "SkinnedMesh")
 @js.native
-class SkinnedMesh ()
-  extends typings.three.skinnedMeshMod.SkinnedMesh {
-  def this(geometry: typings.three.bufferGeometryMod.BufferGeometry) = this()
-  def this(geometry: typings.three.geometryMod.Geometry) = this()
+class SkinnedMesh[TGeometry /* <: typings.three.geometryMod.Geometry | typings.three.bufferGeometryMod.BufferGeometry */, TMaterial /* <: typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material] */] ()
+  extends typings.three.skinnedMeshMod.SkinnedMesh[TGeometry, TMaterial] {
+  def this(geometry: TGeometry) = this()
+  def this(geometry: TGeometry, material: TMaterial) = this()
+  def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial) = this()
+  def this(geometry: TGeometry, material: TMaterial, useVertexTexture: Boolean) = this()
+  def this(geometry: TGeometry, material: js.UndefOr[scala.Nothing], useVertexTexture: Boolean) = this()
+  def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial, useVertexTexture: Boolean) = this()
   def this(
-    geometry: typings.three.bufferGeometryMod.BufferGeometry,
-    material: js.Array[typings.three.materialMod.Material]
-  ) = this()
-  def this(
-    geometry: typings.three.bufferGeometryMod.BufferGeometry,
-    material: typings.three.materialMod.Material
-  ) = this()
-  def this(
-    geometry: typings.three.geometryMod.Geometry,
-    material: js.Array[typings.three.materialMod.Material]
-  ) = this()
-  def this(geometry: typings.three.geometryMod.Geometry, material: typings.three.materialMod.Material) = this()
-  def this(
-    geometry: typings.three.bufferGeometryMod.BufferGeometry,
-    material: js.Array[typings.three.materialMod.Material],
-    useVertexTexture: Boolean
-  ) = this()
-  def this(
-    geometry: typings.three.bufferGeometryMod.BufferGeometry,
-    material: typings.three.materialMod.Material,
-    useVertexTexture: Boolean
-  ) = this()
-  def this(
-    geometry: typings.three.geometryMod.Geometry,
-    material: js.Array[typings.three.materialMod.Material],
-    useVertexTexture: Boolean
-  ) = this()
-  def this(
-    geometry: typings.three.geometryMod.Geometry,
-    material: typings.three.materialMod.Material,
+    geometry: js.UndefOr[scala.Nothing],
+    material: js.UndefOr[scala.Nothing],
     useVertexTexture: Boolean
   ) = this()
 }

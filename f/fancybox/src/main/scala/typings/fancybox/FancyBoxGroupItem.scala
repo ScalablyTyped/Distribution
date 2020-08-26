@@ -9,19 +9,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FancyBoxGroupItem extends js.Object {
-  var opts: js.UndefOr[FancyBoxOptions] = js.undefined
-  var src: String
-  var `type`: js.UndefOr[image | `inline` | ajax | iframe | html] = js.undefined
+  var opts: js.UndefOr[FancyBoxOptions] = js.native
+  var src: String = js.native
+  var `type`: js.UndefOr[image | `inline` | ajax | iframe | html] = js.native
 }
 
 object FancyBoxGroupItem {
   @scala.inline
-  def apply(src: String, opts: FancyBoxOptions = null, `type`: image | `inline` | ajax | iframe | html = null): FancyBoxGroupItem = {
+  def apply(src: String): FancyBoxGroupItem = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-    if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxGroupItem]
   }
+  @scala.inline
+  implicit class FancyBoxGroupItemOps[Self <: FancyBoxGroupItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOpts(value: FancyBoxOptions): Self = this.set("opts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpts: Self = this.set("opts", js.undefined)
+    @scala.inline
+    def setType(value: image | `inline` | ajax | iframe | html): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

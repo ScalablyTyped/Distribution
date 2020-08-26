@@ -35,20 +35,42 @@ trait SchemaStreamingSetupTask extends js.Object {
 
 object SchemaStreamingSetupTask {
   @scala.inline
-  def apply(
-    drain: js.UndefOr[Boolean] = js.undefined,
-    receiveWorkPort: js.UndefOr[Double] = js.undefined,
-    snapshotConfig: SchemaStreamingApplianceSnapshotConfig = null,
-    streamingComputationTopology: SchemaTopologyConfig = null,
-    workerHarnessPort: js.UndefOr[Double] = js.undefined
-  ): SchemaStreamingSetupTask = {
+  def apply(): SchemaStreamingSetupTask = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drain)) __obj.updateDynamic("drain")(drain.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(receiveWorkPort)) __obj.updateDynamic("receiveWorkPort")(receiveWorkPort.get.asInstanceOf[js.Any])
-    if (snapshotConfig != null) __obj.updateDynamic("snapshotConfig")(snapshotConfig.asInstanceOf[js.Any])
-    if (streamingComputationTopology != null) __obj.updateDynamic("streamingComputationTopology")(streamingComputationTopology.asInstanceOf[js.Any])
-    if (!js.isUndefined(workerHarnessPort)) __obj.updateDynamic("workerHarnessPort")(workerHarnessPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStreamingSetupTask]
   }
+  @scala.inline
+  implicit class SchemaStreamingSetupTaskOps[Self <: SchemaStreamingSetupTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDrain(value: Boolean): Self = this.set("drain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrain: Self = this.set("drain", js.undefined)
+    @scala.inline
+    def setReceiveWorkPort(value: Double): Self = this.set("receiveWorkPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReceiveWorkPort: Self = this.set("receiveWorkPort", js.undefined)
+    @scala.inline
+    def setSnapshotConfig(value: SchemaStreamingApplianceSnapshotConfig): Self = this.set("snapshotConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotConfig: Self = this.set("snapshotConfig", js.undefined)
+    @scala.inline
+    def setStreamingComputationTopology(value: SchemaTopologyConfig): Self = this.set("streamingComputationTopology", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingComputationTopology: Self = this.set("streamingComputationTopology", js.undefined)
+    @scala.inline
+    def setWorkerHarnessPort(value: Double): Self = this.set("workerHarnessPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerHarnessPort: Self = this.set("workerHarnessPort", js.undefined)
+  }
+  
 }
 

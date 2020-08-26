@@ -9,12 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object syncMod extends js.Object {
   def apply(directory: String, callback: Callback): String | Unit = js.native
-  type Callback = js.Function2[
-    /* directory */ String, 
-    /* files */ js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify stirng */ js.Any
-    ], 
-    String | `false` | Unit
-  ]
+  type Callback = js.Function2[/* directory */ String, /* files */ js.Array[String], String | `false` | Unit]
 }
 

@@ -12,6 +12,12 @@ trait FrameworkComponentWrapper extends js.Object {
   def wrap[A /* <: IComponent[_] */](
     frameworkComponent: InstantiableAny,
     methodList: js.Array[String],
+    optionalMethodList: js.UndefOr[scala.Nothing],
+    componentName: String
+  ): A = js.native
+  def wrap[A /* <: IComponent[_] */](
+    frameworkComponent: InstantiableAny,
+    methodList: js.Array[String],
     optionalMethodList: js.Array[String]
   ): A = js.native
   def wrap[A /* <: IComponent[_] */](

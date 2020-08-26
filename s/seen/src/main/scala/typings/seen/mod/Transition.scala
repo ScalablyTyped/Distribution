@@ -1,7 +1,7 @@
 package typings.seen.mod
 
 import typings.seen.anon.Duration
-import typings.seen.anon.DurationNumber
+import typings.seen.anon.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("seen", "Transition")
 @js.native
 class Transition () extends js.Object {
-  def this(options: DurationNumber) = this()
+  def this(options: `1`) = this()
   var defaults: Duration = js.native
   var duration: Double = js.native
   def firstFrame(): Unit = js.native

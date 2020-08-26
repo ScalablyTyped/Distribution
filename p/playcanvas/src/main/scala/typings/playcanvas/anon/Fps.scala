@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Fps extends js.Object {
-  var fps: js.UndefOr[Double] = js.undefined
-  var loop: js.UndefOr[js.Any] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var spriteAsset: js.UndefOr[Double] = js.undefined
+  var fps: js.UndefOr[Double] = js.native
+  var loop: js.UndefOr[js.Any] = js.native
+  var name: js.UndefOr[String] = js.native
+  var spriteAsset: js.UndefOr[Double] = js.native
 }
 
 object Fps {
   @scala.inline
-  def apply(
-    fps: js.UndefOr[Double] = js.undefined,
-    loop: js.Any = null,
-    name: String = null,
-    spriteAsset: js.UndefOr[Double] = js.undefined
-  ): Fps = {
+  def apply(): Fps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fps)) __obj.updateDynamic("fps")(fps.get.asInstanceOf[js.Any])
-    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(spriteAsset)) __obj.updateDynamic("spriteAsset")(spriteAsset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fps]
   }
+  @scala.inline
+  implicit class FpsOps[Self <: Fps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFps(value: Double): Self = this.set("fps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFps: Self = this.set("fps", js.undefined)
+    @scala.inline
+    def setLoop(value: js.Any): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSpriteAsset(value: Double): Self = this.set("spriteAsset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpriteAsset: Self = this.set("spriteAsset", js.undefined)
+  }
+  
 }
 

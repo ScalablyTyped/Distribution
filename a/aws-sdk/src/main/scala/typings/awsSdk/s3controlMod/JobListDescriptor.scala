@@ -42,26 +42,54 @@ trait JobListDescriptor extends js.Object {
 
 object JobListDescriptor {
   @scala.inline
-  def apply(
-    CreationTime: JobCreationTime = null,
-    Description: NonEmptyMaxLength256String = null,
-    JobId: JobId = null,
-    Operation: OperationName = null,
-    Priority: js.UndefOr[JobPriority] = js.undefined,
-    ProgressSummary: JobProgressSummary = null,
-    Status: JobStatus = null,
-    TerminationDate: JobTerminationDate = null
-  ): JobListDescriptor = {
+  def apply(): JobListDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
-    if (Operation != null) __obj.updateDynamic("Operation")(Operation.asInstanceOf[js.Any])
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
-    if (ProgressSummary != null) __obj.updateDynamic("ProgressSummary")(ProgressSummary.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TerminationDate != null) __obj.updateDynamic("TerminationDate")(TerminationDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobListDescriptor]
   }
+  @scala.inline
+  implicit class JobListDescriptorOps[Self <: JobListDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: JobCreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: NonEmptyMaxLength256String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("JobId", js.undefined)
+    @scala.inline
+    def setOperation(value: OperationName): Self = this.set("Operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperation: Self = this.set("Operation", js.undefined)
+    @scala.inline
+    def setPriority(value: JobPriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("Priority", js.undefined)
+    @scala.inline
+    def setProgressSummary(value: JobProgressSummary): Self = this.set("ProgressSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressSummary: Self = this.set("ProgressSummary", js.undefined)
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTerminationDate(value: JobTerminationDate): Self = this.set("TerminationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminationDate: Self = this.set("TerminationDate", js.undefined)
+  }
+  
 }
 

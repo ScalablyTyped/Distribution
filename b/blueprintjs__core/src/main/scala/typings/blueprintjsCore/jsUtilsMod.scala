@@ -10,6 +10,7 @@ object jsUtilsMod extends js.Object {
   def approxEqual(a: Double, b: Double): Boolean = js.native
   def approxEqual(a: Double, b: Double, tolerance: Double): Boolean = js.native
   def arrayLengthCompare(): Double = js.native
+  def arrayLengthCompare(a: js.UndefOr[scala.Nothing], b: js.Array[_]): Double = js.native
   def arrayLengthCompare(a: js.Array[_]): Double = js.native
   def arrayLengthCompare(a: js.Array[_], b: js.Array[_]): Double = js.native
   def clamp(`val`: Double, min: Double, max: Double): Double = js.native

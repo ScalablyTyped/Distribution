@@ -28,6 +28,7 @@ class ResourcePermissions protected () extends js.Object {
     */
   def queryTestablePermissions(): GaxiosPromise[SchemaQueryTestablePermissionsResponse] = js.native
   def queryTestablePermissions(callback: BodyResponseCallback[SchemaQueryTestablePermissionsResponse]): Unit = js.native
+  def queryTestablePermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQueryTestablePermissionsResponse] = js.native
   def queryTestablePermissions(params: ParamsResourcePermissionsQuerytestablepermissions): GaxiosPromise[SchemaQueryTestablePermissionsResponse] = js.native
   def queryTestablePermissions(
     params: ParamsResourcePermissionsQuerytestablepermissions,

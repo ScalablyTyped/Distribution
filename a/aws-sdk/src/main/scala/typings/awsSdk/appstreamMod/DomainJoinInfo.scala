@@ -18,14 +18,30 @@ trait DomainJoinInfo extends js.Object {
 
 object DomainJoinInfo {
   @scala.inline
-  def apply(
-    DirectoryName: DirectoryName = null,
-    OrganizationalUnitDistinguishedName: OrganizationalUnitDistinguishedName = null
-  ): DomainJoinInfo = {
+  def apply(): DomainJoinInfo = {
     val __obj = js.Dynamic.literal()
-    if (DirectoryName != null) __obj.updateDynamic("DirectoryName")(DirectoryName.asInstanceOf[js.Any])
-    if (OrganizationalUnitDistinguishedName != null) __obj.updateDynamic("OrganizationalUnitDistinguishedName")(OrganizationalUnitDistinguishedName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainJoinInfo]
   }
+  @scala.inline
+  implicit class DomainJoinInfoOps[Self <: DomainJoinInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoryName(value: DirectoryName): Self = this.set("DirectoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryName: Self = this.set("DirectoryName", js.undefined)
+    @scala.inline
+    def setOrganizationalUnitDistinguishedName(value: OrganizationalUnitDistinguishedName): Self = this.set("OrganizationalUnitDistinguishedName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationalUnitDistinguishedName: Self = this.set("OrganizationalUnitDistinguishedName", js.undefined)
+  }
+  
 }
 

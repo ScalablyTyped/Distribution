@@ -14,6 +14,7 @@ object labelModelMod extends js.Object {
   @js.native
   class LabelModel () extends BaseModel[LinkModel[LinkModelListener], BaseModelListener] {
     def this(`type`: String) = this()
+    def this(`type`: js.UndefOr[scala.Nothing], id: String) = this()
     def this(`type`: String, id: String) = this()
     var offsetX: Double = js.native
     var offsetY: Double = js.native

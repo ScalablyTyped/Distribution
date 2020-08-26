@@ -12,7 +12,7 @@ YUI 3 Source
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 48 |
-| # downloads        | 804403 |
+| # downloads        | 829905 |
 | # stars            | 8 |
 
 ## Links

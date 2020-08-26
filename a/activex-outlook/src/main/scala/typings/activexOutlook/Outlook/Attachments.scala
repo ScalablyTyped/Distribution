@@ -14,7 +14,16 @@ trait Attachments extends js.Object {
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Source: js.Any): Attachment = js.native
+  def Add(
+    Source: js.Any,
+    Type: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    DisplayName: js.Any
+  ): Attachment = js.native
+  def Add(Source: js.Any, Type: js.UndefOr[scala.Nothing], Position: js.Any): Attachment = js.native
+  def Add(Source: js.Any, Type: js.UndefOr[scala.Nothing], Position: js.Any, DisplayName: js.Any): Attachment = js.native
   def Add(Source: js.Any, Type: js.Any): Attachment = js.native
+  def Add(Source: js.Any, Type: js.Any, Position: js.UndefOr[scala.Nothing], DisplayName: js.Any): Attachment = js.native
   def Add(Source: js.Any, Type: js.Any, Position: js.Any): Attachment = js.native
   def Add(Source: js.Any, Type: js.Any, Position: js.Any, DisplayName: js.Any): Attachment = js.native
   def Item(Index: js.Any): Attachment = js.native

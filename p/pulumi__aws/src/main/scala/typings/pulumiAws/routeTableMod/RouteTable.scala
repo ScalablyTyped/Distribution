@@ -33,7 +33,7 @@ class RouteTable protected () extends CustomResource {
   /**
     * Key-value tags for the EC2 Transit Gateway Route Table.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Identifier of EC2 Transit Gateway.
     */
@@ -51,8 +51,10 @@ object RouteTable extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): RouteTable = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RouteTable = js.native
   def get(name: String, id: Input[ID], state: RouteTableState): RouteTable = js.native
   def get(name: String, id: Input[ID], state: RouteTableState, opts: CustomResourceOptions): RouteTable = js.native
   /**

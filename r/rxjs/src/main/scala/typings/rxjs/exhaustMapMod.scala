@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object exhaustMapMod extends js.Object {
   def exhaustMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def exhaustMap[T, O /* <: ObservableInput[_] */](
+    project: js.Function2[/* value */ T, /* index */ Double, O],
+    resultSelector: js.UndefOr[scala.Nothing]
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def exhaustMap[T, I, R](
     project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[I]],
     resultSelector: js.Function4[

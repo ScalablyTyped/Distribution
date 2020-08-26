@@ -22,15 +22,32 @@ trait UpdateCertificateAuthorityRequest extends js.Object {
 
 object UpdateCertificateAuthorityRequest {
   @scala.inline
-  def apply(
-    CertificateAuthorityArn: Arn,
-    RevocationConfiguration: RevocationConfiguration = null,
-    Status: CertificateAuthorityStatus = null
-  ): UpdateCertificateAuthorityRequest = {
+  def apply(CertificateAuthorityArn: Arn): UpdateCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any])
-    if (RevocationConfiguration != null) __obj.updateDynamic("RevocationConfiguration")(RevocationConfiguration.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCertificateAuthorityRequest]
   }
+  @scala.inline
+  implicit class UpdateCertificateAuthorityRequestOps[Self <: UpdateCertificateAuthorityRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevocationConfiguration(value: RevocationConfiguration): Self = this.set("RevocationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevocationConfiguration: Self = this.set("RevocationConfiguration", js.undefined)
+    @scala.inline
+    def setStatus(value: CertificateAuthorityStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,38 @@ trait SentimentScore extends js.Object {
 
 object SentimentScore {
   @scala.inline
-  def apply(
-    Mixed: js.UndefOr[Float] = js.undefined,
-    Negative: js.UndefOr[Float] = js.undefined,
-    Neutral: js.UndefOr[Float] = js.undefined,
-    Positive: js.UndefOr[Float] = js.undefined
-  ): SentimentScore = {
+  def apply(): SentimentScore = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Mixed)) __obj.updateDynamic("Mixed")(Mixed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Negative)) __obj.updateDynamic("Negative")(Negative.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Neutral)) __obj.updateDynamic("Neutral")(Neutral.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Positive)) __obj.updateDynamic("Positive")(Positive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentimentScore]
   }
+  @scala.inline
+  implicit class SentimentScoreOps[Self <: SentimentScore] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMixed(value: Float): Self = this.set("Mixed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMixed: Self = this.set("Mixed", js.undefined)
+    @scala.inline
+    def setNegative(value: Float): Self = this.set("Negative", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegative: Self = this.set("Negative", js.undefined)
+    @scala.inline
+    def setNeutral(value: Float): Self = this.set("Neutral", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeutral: Self = this.set("Neutral", js.undefined)
+    @scala.inline
+    def setPositive(value: Float): Self = this.set("Positive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositive: Self = this.set("Positive", js.undefined)
+  }
+  
 }
 

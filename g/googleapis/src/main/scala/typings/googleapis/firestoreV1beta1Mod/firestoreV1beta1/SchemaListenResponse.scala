@@ -36,20 +36,42 @@ trait SchemaListenResponse extends js.Object {
 
 object SchemaListenResponse {
   @scala.inline
-  def apply(
-    documentChange: SchemaDocumentChange = null,
-    documentDelete: SchemaDocumentDelete = null,
-    documentRemove: SchemaDocumentRemove = null,
-    filter: SchemaExistenceFilter = null,
-    targetChange: SchemaTargetChange = null
-  ): SchemaListenResponse = {
+  def apply(): SchemaListenResponse = {
     val __obj = js.Dynamic.literal()
-    if (documentChange != null) __obj.updateDynamic("documentChange")(documentChange.asInstanceOf[js.Any])
-    if (documentDelete != null) __obj.updateDynamic("documentDelete")(documentDelete.asInstanceOf[js.Any])
-    if (documentRemove != null) __obj.updateDynamic("documentRemove")(documentRemove.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (targetChange != null) __obj.updateDynamic("targetChange")(targetChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListenResponse]
   }
+  @scala.inline
+  implicit class SchemaListenResponseOps[Self <: SchemaListenResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentChange(value: SchemaDocumentChange): Self = this.set("documentChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentChange: Self = this.set("documentChange", js.undefined)
+    @scala.inline
+    def setDocumentDelete(value: SchemaDocumentDelete): Self = this.set("documentDelete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentDelete: Self = this.set("documentDelete", js.undefined)
+    @scala.inline
+    def setDocumentRemove(value: SchemaDocumentRemove): Self = this.set("documentRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentRemove: Self = this.set("documentRemove", js.undefined)
+    @scala.inline
+    def setFilter(value: SchemaExistenceFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setTargetChange(value: SchemaTargetChange): Self = this.set("targetChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetChange: Self = this.set("targetChange", js.undefined)
+  }
+  
 }
 

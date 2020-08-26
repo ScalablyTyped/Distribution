@@ -46,28 +46,58 @@ trait AutoBranchCreationConfig extends js.Object {
 
 object AutoBranchCreationConfig {
   @scala.inline
-  def apply(
-    basicAuthCredentials: BasicAuthCredentials = null,
-    buildSpec: BuildSpec = null,
-    enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined,
-    enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined,
-    enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.undefined,
-    environmentVariables: EnvironmentVariables = null,
-    framework: Framework = null,
-    pullRequestEnvironmentName: PullRequestEnvironmentName = null,
-    stage: Stage = null
-  ): AutoBranchCreationConfig = {
+  def apply(): AutoBranchCreationConfig = {
     val __obj = js.Dynamic.literal()
-    if (basicAuthCredentials != null) __obj.updateDynamic("basicAuthCredentials")(basicAuthCredentials.asInstanceOf[js.Any])
-    if (buildSpec != null) __obj.updateDynamic("buildSpec")(buildSpec.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoBuild)) __obj.updateDynamic("enableAutoBuild")(enableAutoBuild.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePullRequestPreview)) __obj.updateDynamic("enablePullRequestPreview")(enablePullRequestPreview.get.asInstanceOf[js.Any])
-    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
-    if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
-    if (pullRequestEnvironmentName != null) __obj.updateDynamic("pullRequestEnvironmentName")(pullRequestEnvironmentName.asInstanceOf[js.Any])
-    if (stage != null) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoBranchCreationConfig]
   }
+  @scala.inline
+  implicit class AutoBranchCreationConfigOps[Self <: AutoBranchCreationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBasicAuthCredentials(value: BasicAuthCredentials): Self = this.set("basicAuthCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasicAuthCredentials: Self = this.set("basicAuthCredentials", js.undefined)
+    @scala.inline
+    def setBuildSpec(value: BuildSpec): Self = this.set("buildSpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildSpec: Self = this.set("buildSpec", js.undefined)
+    @scala.inline
+    def setEnableAutoBuild(value: EnableAutoBuild): Self = this.set("enableAutoBuild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAutoBuild: Self = this.set("enableAutoBuild", js.undefined)
+    @scala.inline
+    def setEnableBasicAuth(value: EnableBasicAuth): Self = this.set("enableBasicAuth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableBasicAuth: Self = this.set("enableBasicAuth", js.undefined)
+    @scala.inline
+    def setEnablePullRequestPreview(value: EnablePullRequestPreview): Self = this.set("enablePullRequestPreview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePullRequestPreview: Self = this.set("enablePullRequestPreview", js.undefined)
+    @scala.inline
+    def setEnvironmentVariables(value: EnvironmentVariables): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    @scala.inline
+    def setFramework(value: Framework): Self = this.set("framework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramework: Self = this.set("framework", js.undefined)
+    @scala.inline
+    def setPullRequestEnvironmentName(value: PullRequestEnvironmentName): Self = this.set("pullRequestEnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestEnvironmentName: Self = this.set("pullRequestEnvironmentName", js.undefined)
+    @scala.inline
+    def setStage(value: Stage): Self = this.set("stage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStage: Self = this.set("stage", js.undefined)
+  }
+  
 }
 

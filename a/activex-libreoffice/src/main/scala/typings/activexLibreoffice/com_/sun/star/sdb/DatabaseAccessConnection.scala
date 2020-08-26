@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
   * connection to the database.
   * @deprecated Deprecated
   */
+@js.native
 trait DatabaseAccessConnection
   extends XConnection
      with XComponent

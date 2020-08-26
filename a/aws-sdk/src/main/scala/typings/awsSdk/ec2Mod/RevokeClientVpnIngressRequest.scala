@@ -30,18 +30,38 @@ trait RevokeClientVpnIngressRequest extends js.Object {
 
 object RevokeClientVpnIngressRequest {
   @scala.inline
-  def apply(
-    ClientVpnEndpointId: ClientVpnEndpointId,
-    TargetNetworkCidr: String,
-    AccessGroupId: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    RevokeAllGroups: js.UndefOr[Boolean] = js.undefined
-  ): RevokeClientVpnIngressRequest = {
+  def apply(ClientVpnEndpointId: ClientVpnEndpointId, TargetNetworkCidr: String): RevokeClientVpnIngressRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any], TargetNetworkCidr = TargetNetworkCidr.asInstanceOf[js.Any])
-    if (AccessGroupId != null) __obj.updateDynamic("AccessGroupId")(AccessGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RevokeAllGroups)) __obj.updateDynamic("RevokeAllGroups")(RevokeAllGroups.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeClientVpnIngressRequest]
   }
+  @scala.inline
+  implicit class RevokeClientVpnIngressRequestOps[Self <: RevokeClientVpnIngressRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetNetworkCidr(value: String): Self = this.set("TargetNetworkCidr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessGroupId(value: String): Self = this.set("AccessGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessGroupId: Self = this.set("AccessGroupId", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setRevokeAllGroups(value: Boolean): Self = this.set("RevokeAllGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevokeAllGroups: Self = this.set("RevokeAllGroups", js.undefined)
+  }
+  
 }
 

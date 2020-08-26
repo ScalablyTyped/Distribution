@@ -1,6 +1,7 @@
 package typings.oracledb.mod
 
 import typings.node.streamMod.Readable
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -405,6 +406,40 @@ trait Connection extends js.Object {
     */
   def rollback(): js.Promise[Unit] = js.native
   def rollback(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  /**
+    * Used to shut down a database instance. This is the flexible version of oracledb.shutdown(), allowing more control over behavior.
+    * 
+    * This method must be called twice. The first call blocks new connections. SQL statements such as await ALTER DATABASE CLOSE NORMAL
+    * and ALTER DATABASE DISMOUNT can then be used to close and unmount the database instance. Alternatively database administration can
+    * be performed. Finally, a second call connection.shutdown(oracledb.SHUTDOWN_MODE_FINAL) is required to fully close the database instance.
+    * 
+    * If the initial connection.shutdown() shutdownMode mode oracledb.SHUTDOWN_MODE_ABORT is used, then connection.shutdown() does not need to be called a second time.
+    * 
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#startupshutdown
+    * @since 5.0
+    */
+  def shutdown(): js.Promise[Unit] = js.native
+  def shutdown(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def shutdown(mode: Double): js.Promise[Unit] = js.native
+  def shutdown(mode: Double, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  /**
+    * Used to start up a database instance. This is the flexible version of oracledb.startup(), allowing more control over behavior.
+    * 
+    * The connection must be a standalone connection, not a pooled connection.
+    * 
+    * This function starts the database in an unmounted state. SQL statements such as ALTER DATABASE MOUNT and ALTER DATABASE OPEN
+    * can then be executed to completely open the database instance. Database recovery commands could also be executed at this time.
+    * 
+    * The connection used must have the privilege set to oracledb.SYSPRELIM, along with either oracledb.SYSDBA or oracledb.SYSOPER.
+    * For example oracledb.SYSDBA | oracledb.SYSPRELIM.
+    * 
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#startupshutdown
+    * @since 5.0
+    */
+  def startup(): js.Promise[Unit] = js.native
+  def startup(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def startup(opts: StartupOptions): js.Promise[Unit] = js.native
+  def startup(opts: StartupOptions, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   /**
     * Register a JavaScript callback method to be invoked when data is changed in the database by any committed transaction,
     * or when there are Advanced Queuing messages to be dequeued.

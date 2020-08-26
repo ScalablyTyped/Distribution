@@ -21,11 +21,30 @@ trait SchemaGoogleDevtoolsRemoteworkersV1test2Blob extends js.Object {
 
 object SchemaGoogleDevtoolsRemoteworkersV1test2Blob {
   @scala.inline
-  def apply(contents: String = null, digest: SchemaGoogleDevtoolsRemoteworkersV1test2Digest = null): SchemaGoogleDevtoolsRemoteworkersV1test2Blob = {
+  def apply(): SchemaGoogleDevtoolsRemoteworkersV1test2Blob = {
     val __obj = js.Dynamic.literal()
-    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
-    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteworkersV1test2Blob]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemoteworkersV1test2BlobOps[Self <: SchemaGoogleDevtoolsRemoteworkersV1test2Blob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContents(value: String): Self = this.set("contents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContents: Self = this.set("contents", js.undefined)
+    @scala.inline
+    def setDigest(value: SchemaGoogleDevtoolsRemoteworkersV1test2Digest): Self = this.set("digest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigest: Self = this.set("digest", js.undefined)
+  }
+  
 }
 

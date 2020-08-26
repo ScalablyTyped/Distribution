@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Flag () extends js.Object {
   def this(defaultValue: Boolean) = this()
+  def this(defaultValue: js.UndefOr[scala.Nothing], options: RoxFlagOptions) = this()
   def this(defaultValue: Boolean, options: RoxFlagOptions) = this()
   // Default value of the Flag
   val defaultValue: Boolean = js.native

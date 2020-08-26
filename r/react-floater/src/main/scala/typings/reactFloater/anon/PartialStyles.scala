@@ -6,60 +6,103 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<react-floater.react-floater.Styles> */
+@js.native
 trait PartialStyles extends js.Object {
-  var arrow: js.UndefOr[CSSPropertieslengthnumber] = js.undefined
-  var close: js.UndefOr[CSSProperties] = js.undefined
-  var container: js.UndefOr[CSSProperties] = js.undefined
-  var content: js.UndefOr[CSSProperties] = js.undefined
-  var floater: js.UndefOr[CSSProperties] = js.undefined
-  var floaterCentered: js.UndefOr[CSSProperties] = js.undefined
-  var floaterClosing: js.UndefOr[CSSProperties] = js.undefined
-  var floaterOpening: js.UndefOr[CSSProperties] = js.undefined
-  var floaterWithAnimation: js.UndefOr[CSSProperties] = js.undefined
-  var floaterWithComponent: js.UndefOr[CSSProperties] = js.undefined
-  var footer: js.UndefOr[CSSProperties] = js.undefined
-  var options: js.UndefOr[ZIndex] = js.undefined
-  var title: js.UndefOr[CSSProperties] = js.undefined
-  var wrapper: js.UndefOr[CSSProperties] = js.undefined
-  var wrapperPosition: js.UndefOr[CSSProperties] = js.undefined
+  var arrow: js.UndefOr[CSSPropertieslengthnumber] = js.native
+  var close: js.UndefOr[CSSProperties] = js.native
+  var container: js.UndefOr[CSSProperties] = js.native
+  var content: js.UndefOr[CSSProperties] = js.native
+  var floater: js.UndefOr[CSSProperties] = js.native
+  var floaterCentered: js.UndefOr[CSSProperties] = js.native
+  var floaterClosing: js.UndefOr[CSSProperties] = js.native
+  var floaterOpening: js.UndefOr[CSSProperties] = js.native
+  var floaterWithAnimation: js.UndefOr[CSSProperties] = js.native
+  var floaterWithComponent: js.UndefOr[CSSProperties] = js.native
+  var footer: js.UndefOr[CSSProperties] = js.native
+  var options: js.UndefOr[ZIndex] = js.native
+  var title: js.UndefOr[CSSProperties] = js.native
+  var wrapper: js.UndefOr[CSSProperties] = js.native
+  var wrapperPosition: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyles {
   @scala.inline
-  def apply(
-    arrow: CSSPropertieslengthnumber = null,
-    close: CSSProperties = null,
-    container: CSSProperties = null,
-    content: CSSProperties = null,
-    floater: CSSProperties = null,
-    floaterCentered: CSSProperties = null,
-    floaterClosing: CSSProperties = null,
-    floaterOpening: CSSProperties = null,
-    floaterWithAnimation: CSSProperties = null,
-    floaterWithComponent: CSSProperties = null,
-    footer: CSSProperties = null,
-    options: ZIndex = null,
-    title: CSSProperties = null,
-    wrapper: CSSProperties = null,
-    wrapperPosition: CSSProperties = null
-  ): PartialStyles = {
+  def apply(): PartialStyles = {
     val __obj = js.Dynamic.literal()
-    if (arrow != null) __obj.updateDynamic("arrow")(arrow.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (floater != null) __obj.updateDynamic("floater")(floater.asInstanceOf[js.Any])
-    if (floaterCentered != null) __obj.updateDynamic("floaterCentered")(floaterCentered.asInstanceOf[js.Any])
-    if (floaterClosing != null) __obj.updateDynamic("floaterClosing")(floaterClosing.asInstanceOf[js.Any])
-    if (floaterOpening != null) __obj.updateDynamic("floaterOpening")(floaterOpening.asInstanceOf[js.Any])
-    if (floaterWithAnimation != null) __obj.updateDynamic("floaterWithAnimation")(floaterWithAnimation.asInstanceOf[js.Any])
-    if (floaterWithComponent != null) __obj.updateDynamic("floaterWithComponent")(floaterWithComponent.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
-    if (wrapperPosition != null) __obj.updateDynamic("wrapperPosition")(wrapperPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyles]
   }
+  @scala.inline
+  implicit class PartialStylesOps[Self <: PartialStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrow(value: CSSPropertieslengthnumber): Self = this.set("arrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrow: Self = this.set("arrow", js.undefined)
+    @scala.inline
+    def setClose(value: CSSProperties): Self = this.set("close", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setContainer(value: CSSProperties): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setContent(value: CSSProperties): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setFloater(value: CSSProperties): Self = this.set("floater", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloater: Self = this.set("floater", js.undefined)
+    @scala.inline
+    def setFloaterCentered(value: CSSProperties): Self = this.set("floaterCentered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloaterCentered: Self = this.set("floaterCentered", js.undefined)
+    @scala.inline
+    def setFloaterClosing(value: CSSProperties): Self = this.set("floaterClosing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloaterClosing: Self = this.set("floaterClosing", js.undefined)
+    @scala.inline
+    def setFloaterOpening(value: CSSProperties): Self = this.set("floaterOpening", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloaterOpening: Self = this.set("floaterOpening", js.undefined)
+    @scala.inline
+    def setFloaterWithAnimation(value: CSSProperties): Self = this.set("floaterWithAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloaterWithAnimation: Self = this.set("floaterWithAnimation", js.undefined)
+    @scala.inline
+    def setFloaterWithComponent(value: CSSProperties): Self = this.set("floaterWithComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloaterWithComponent: Self = this.set("floaterWithComponent", js.undefined)
+    @scala.inline
+    def setFooter(value: CSSProperties): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setOptions(value: ZIndex): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setTitle(value: CSSProperties): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWrapper(value: CSSProperties): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+    @scala.inline
+    def setWrapperPosition(value: CSSProperties): Self = this.set("wrapperPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapperPosition: Self = this.set("wrapperPosition", js.undefined)
+  }
+  
 }
 

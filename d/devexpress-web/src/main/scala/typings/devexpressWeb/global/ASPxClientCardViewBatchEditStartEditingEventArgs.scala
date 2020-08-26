@@ -22,25 +22,5 @@ class ASPxClientCardViewBatchEditStartEditingEventArgs protected ()
     focusedColumn: typings.devexpressWeb.ASPxClientCardViewColumn,
     cardValues: js.Any
   ) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets a hashtable that maintains information about editable cells.
-    */
-  /* CompleteClass */
-  override var cardValues: js.Any = js.native
-  /**
-    * Gets the CardView column that owns a cell that is about to be edited.
-    */
-  /* CompleteClass */
-  override var focusedColumn: typings.devexpressWeb.ASPxClientCardViewColumn = js.native
-  /**
-    * Gets the visible index of the card whose cells are about to be edited.
-    */
-  /* CompleteClass */
-  override var visibleIndex: Double = js.native
 }
 

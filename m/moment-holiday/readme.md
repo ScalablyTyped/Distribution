@@ -12,7 +12,7 @@ A Moment.js plugin for handling holidays.
 | Keywords           | moment, momentjs, holiday, holidays, calculation, united states, us, canada, croatia, denmark, hrvatska, india, easter, finland, germany |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 106370 |
+| # downloads        | 114417 |
 | # stars            | 1 |
 
 ## Links

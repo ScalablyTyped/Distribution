@@ -18,11 +18,30 @@ trait ImageIdentifier extends js.Object {
 
 object ImageIdentifier {
   @scala.inline
-  def apply(imageDigest: ImageDigest = null, imageTag: ImageTag = null): ImageIdentifier = {
+  def apply(): ImageIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (imageDigest != null) __obj.updateDynamic("imageDigest")(imageDigest.asInstanceOf[js.Any])
-    if (imageTag != null) __obj.updateDynamic("imageTag")(imageTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageIdentifier]
   }
+  @scala.inline
+  implicit class ImageIdentifierOps[Self <: ImageIdentifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageDigest(value: ImageDigest): Self = this.set("imageDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageDigest: Self = this.set("imageDigest", js.undefined)
+    @scala.inline
+    def setImageTag(value: ImageTag): Self = this.set("imageTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageTag: Self = this.set("imageTag", js.undefined)
+  }
+  
 }
 

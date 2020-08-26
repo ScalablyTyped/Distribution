@@ -10,9 +10,9 @@ Telephone number input React component
 | ------------------ | :-------------: |
 | Full name          | react-phone-number-input |
 | Keywords           | react, phone, number, input, telephone, international |
-| # releases         | 117 |
-| # dependents       | 39 |
-| # downloads        | 1940798 |
+| # releases         | 121 |
+| # dependents       | 41 |
+| # downloads        | 2045451 |
 | # stars            | 3 |
 
 ## Links

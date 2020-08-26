@@ -7,11 +7,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TransactionUser extends js.Object {
   /**
     * Logger factory.
     */
-  var loggerFactory: LoggerFactory
+  var loggerFactory: LoggerFactory = js.native
   /**
     * Callback for notification of transaction state changes.
     *
@@ -22,7 +23,7 @@ trait TransactionUser extends js.Object {
     * https://tools.ietf.org/html/rfc3261#section-17
     * https://tools.ietf.org/html/rfc6026
     */
-  var onStateChange: js.UndefOr[js.Function1[/* newState */ TransactionState, Unit]] = js.undefined
+  var onStateChange: js.UndefOr[js.Function1[/* newState */ TransactionState, Unit]] = js.native
   /**
     * Callback for notification of a transport error.
     *
@@ -35,20 +36,37 @@ trait TransactionUser extends js.Object {
     * https://tools.ietf.org/html/rfc3261#section-17.2.4
     * https://tools.ietf.org/html/rfc6026
     */
-  var onTransportError: js.UndefOr[js.Function1[/* error */ TransportError, Unit]] = js.undefined
+  var onTransportError: js.UndefOr[js.Function1[/* error */ TransportError, Unit]] = js.native
 }
 
 object TransactionUser {
   @scala.inline
-  def apply(
-    loggerFactory: LoggerFactory,
-    onStateChange: /* newState */ TransactionState => Unit = null,
-    onTransportError: /* error */ TransportError => Unit = null
-  ): TransactionUser = {
+  def apply(loggerFactory: LoggerFactory): TransactionUser = {
     val __obj = js.Dynamic.literal(loggerFactory = loggerFactory.asInstanceOf[js.Any])
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
-    if (onTransportError != null) __obj.updateDynamic("onTransportError")(js.Any.fromFunction1(onTransportError))
     __obj.asInstanceOf[TransactionUser]
   }
+  @scala.inline
+  implicit class TransactionUserOps[Self <: TransactionUser] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoggerFactory(value: LoggerFactory): Self = this.set("loggerFactory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnStateChange(value: /* newState */ TransactionState => Unit): Self = this.set("onStateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStateChange: Self = this.set("onStateChange", js.undefined)
+    @scala.inline
+    def setOnTransportError(value: /* error */ TransportError => Unit): Self = this.set("onTransportError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTransportError: Self = this.set("onTransportError", js.undefined)
+  }
+  
 }
 

@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides access to all embedded objects in a document. */
+@js.native
 trait TextEmbeddedObjects
   extends XNameAccess
      with XIndexAccess

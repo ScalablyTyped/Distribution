@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * {{program example here, see documentation}}
   * @since OOo 1.1.2
   */
+@js.native
 trait SpreadsheetDrawPage
   extends XShapes
      with XShapeGrouper

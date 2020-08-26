@@ -34,21 +34,44 @@ trait ModifyHsmRequest extends js.Object {
 
 object ModifyHsmRequest {
   @scala.inline
-  def apply(
-    HsmArn: HsmArn,
-    EniIp: IpAddress = null,
-    ExternalId: ExternalId = null,
-    IamRoleArn: IamRoleArn = null,
-    SubnetId: SubnetId = null,
-    SyslogIp: IpAddress = null
-  ): ModifyHsmRequest = {
+  def apply(HsmArn: HsmArn): ModifyHsmRequest = {
     val __obj = js.Dynamic.literal(HsmArn = HsmArn.asInstanceOf[js.Any])
-    if (EniIp != null) __obj.updateDynamic("EniIp")(EniIp.asInstanceOf[js.Any])
-    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId.asInstanceOf[js.Any])
-    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (SyslogIp != null) __obj.updateDynamic("SyslogIp")(SyslogIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyHsmRequest]
   }
+  @scala.inline
+  implicit class ModifyHsmRequestOps[Self <: ModifyHsmRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHsmArn(value: HsmArn): Self = this.set("HsmArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEniIp(value: IpAddress): Self = this.set("EniIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEniIp: Self = this.set("EniIp", js.undefined)
+    @scala.inline
+    def setExternalId(value: ExternalId): Self = this.set("ExternalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("ExternalId", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: IamRoleArn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    @scala.inline
+    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setSyslogIp(value: IpAddress): Self = this.set("SyslogIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyslogIp: Self = this.set("SyslogIp", js.undefined)
+  }
+  
 }
 

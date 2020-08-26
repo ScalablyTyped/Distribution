@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * You are only allowed to keep references of interfaces to UNO objects if you are by definition the owner of that object or your reference is very
   * temporary or you have registered an EventListener at that object and release the reference when "disposing" is called.
   */
+@js.native
 trait XComponent extends XInterface {
   /**
     * adds an event listener to the object.
@@ -28,7 +29,7 @@ trait XComponent extends XInterface {
     * the {@link addEventListener()} call.
     * @see XComponent.removeEventListener
     */
-  def addEventListener(xListener: XEventListener): Unit
+  def addEventListener(xListener: XEventListener): Unit = js.native
   /**
     * The owner of an object calls this method to explicitly free all resources kept by this object and thus break cyclic references.
     *
@@ -45,7 +46,7 @@ trait XComponent extends XInterface {
     * For some objects no real owner can be identified, thus it can be disposed from multiple reference holders. In this case the object should be able to
     * cope with multiple {@link dispose()} -calls (which are inevitable in a multithreaded environment).
     */
-  def dispose(): Unit
+  def dispose(): Unit = js.native
   /**
     * removes an event listener from the listener list.
     *
@@ -57,7 +58,7 @@ trait XComponent extends XInterface {
     * DisposedException} , but will rather be ignored silently.
     * @see XComponent.addEventListener
     */
-  def removeEventListener(aListener: XEventListener): Unit
+  def removeEventListener(aListener: XEventListener): Unit = js.native
 }
 
 object XComponent {
@@ -73,5 +74,24 @@ object XComponent {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
     __obj.asInstanceOf[XComponent]
   }
+  @scala.inline
+  implicit class XComponentOps[Self <: XComponent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddEventListener(value: XEventListener => Unit): Self = this.set("addEventListener", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRemoveEventListener(value: XEventListener => Unit): Self = this.set("removeEventListener", js.Any.fromFunction1(value))
+  }
+  
 }
 

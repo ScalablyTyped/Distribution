@@ -1,11 +1,10 @@
 package typings.protonNative.mod
 
-import typings.protonNative.anon.H
-import typings.protonNative.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PickerProps
   extends GridChildrenProps
      with Label
@@ -13,67 +12,79 @@ trait PickerProps
   /**
     * Whether the user can enter their own custom text in addition to the drop down menu.
     */
-  var editable: js.UndefOr[Boolean] = js.undefined
+  var editable: js.UndefOr[Boolean] = js.native
   /**
     * Whether the Picker is enabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /**
     * When an *editable* Picker is changed. The current text is passed as an argument.
     */
-  var onChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
   /**
     * When a *non-editable* Picker is changed. The current selection is passed as an argument.
     */
-  var onSelect: js.UndefOr[js.Function1[/* selection */ Double, Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function1[/* selection */ Double, Unit]] = js.native
   /**
     * What element is selected if the picker *is not* editable.
     */
-  var selected: js.UndefOr[Double] = js.undefined
+  var selected: js.UndefOr[Double] = js.native
   /**
     * What text is selected/typed if the picker *is* editable.
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /**
     * Whether the Picker can be seen.
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object PickerProps {
   @scala.inline
-  def apply(
-    align: H = null,
-    column: js.UndefOr[Double] = js.undefined,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    expand: H = null,
-    label: String = null,
-    onChange: /* text */ String => Unit = null,
-    onSelect: /* selection */ Double => Unit = null,
-    row: js.UndefOr[Double] = js.undefined,
-    selected: js.UndefOr[Double] = js.undefined,
-    span: X = null,
-    stretchy: js.UndefOr[Boolean] = js.undefined,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): PickerProps = {
+  def apply(): PickerProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickerProps]
   }
+  @scala.inline
+  implicit class PickerPropsOps[Self <: PickerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* text */ String => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnSelect(value: /* selection */ Double => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setSelected(value: Double): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

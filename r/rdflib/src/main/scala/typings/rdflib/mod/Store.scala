@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   */
 class Store () extends default {
   def this(features: FeaturesType) = this()
-  def this(features: FeaturesType, opts: FormulaOpts) = this()
+  def this(features: js.UndefOr[FeaturesType], opts: FormulaOpts) = this()
 }
 
 /* static members */

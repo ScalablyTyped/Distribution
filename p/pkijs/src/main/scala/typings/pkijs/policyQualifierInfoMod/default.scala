@@ -8,16 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends PolicyQualifierInfo {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var policyQualifierId: String = js.native
-  /* CompleteClass */
-  override var qualifier: js.Any = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

@@ -1,78 +1,56 @@
 package typings.openidClient.mod
 
-import typings.openidClient.anon.Idtoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RequestObjectPayload extends AuthorizationParameters {
-  var aud: js.UndefOr[String] = js.undefined
-  var exp: js.UndefOr[Double] = js.undefined
-  var iat: js.UndefOr[Double] = js.undefined
-  var iss: js.UndefOr[String] = js.undefined
-  var jti: js.UndefOr[String] = js.undefined
+  var aud: js.UndefOr[String] = js.native
+  var exp: js.UndefOr[Double] = js.native
+  var iat: js.UndefOr[Double] = js.native
+  var iss: js.UndefOr[String] = js.native
+  var jti: js.UndefOr[String] = js.native
 }
 
 object RequestObjectPayload {
   @scala.inline
-  def apply(
-    acr_values: String = null,
-    aud: String = null,
-    audience: String = null,
-    claims: String | Idtoken = null,
-    claims_locales: String = null,
-    client_id: String = null,
-    code_challenge: String = null,
-    code_challenge_method: String = null,
-    display: String = null,
-    exp: js.UndefOr[Double] = js.undefined,
-    iat: js.UndefOr[Double] = js.undefined,
-    id_token_hint: String = null,
-    iss: String = null,
-    jti: String = null,
-    login_hint: String = null,
-    max_age: String = null,
-    nonce: String = null,
-    prompt: String = null,
-    redirect_uri: String = null,
-    registration: String = null,
-    request: String = null,
-    request_uri: String = null,
-    resource: String | js.Array[String] = null,
-    response_mode: String = null,
-    response_type: String = null,
-    scope: String = null,
-    ui_locales: String = null
-  ): RequestObjectPayload = {
+  def apply(): RequestObjectPayload = {
     val __obj = js.Dynamic.literal()
-    if (acr_values != null) __obj.updateDynamic("acr_values")(acr_values.asInstanceOf[js.Any])
-    if (aud != null) __obj.updateDynamic("aud")(aud.asInstanceOf[js.Any])
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (claims != null) __obj.updateDynamic("claims")(claims.asInstanceOf[js.Any])
-    if (claims_locales != null) __obj.updateDynamic("claims_locales")(claims_locales.asInstanceOf[js.Any])
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
-    if (code_challenge != null) __obj.updateDynamic("code_challenge")(code_challenge.asInstanceOf[js.Any])
-    if (code_challenge_method != null) __obj.updateDynamic("code_challenge_method")(code_challenge_method.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(exp)) __obj.updateDynamic("exp")(exp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iat)) __obj.updateDynamic("iat")(iat.get.asInstanceOf[js.Any])
-    if (id_token_hint != null) __obj.updateDynamic("id_token_hint")(id_token_hint.asInstanceOf[js.Any])
-    if (iss != null) __obj.updateDynamic("iss")(iss.asInstanceOf[js.Any])
-    if (jti != null) __obj.updateDynamic("jti")(jti.asInstanceOf[js.Any])
-    if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint.asInstanceOf[js.Any])
-    if (max_age != null) __obj.updateDynamic("max_age")(max_age.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
-    if (registration != null) __obj.updateDynamic("registration")(registration.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (request_uri != null) __obj.updateDynamic("request_uri")(request_uri.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (response_mode != null) __obj.updateDynamic("response_mode")(response_mode.asInstanceOf[js.Any])
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (ui_locales != null) __obj.updateDynamic("ui_locales")(ui_locales.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestObjectPayload]
   }
+  @scala.inline
+  implicit class RequestObjectPayloadOps[Self <: RequestObjectPayload] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAud(value: String): Self = this.set("aud", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAud: Self = this.set("aud", js.undefined)
+    @scala.inline
+    def setExp(value: Double): Self = this.set("exp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExp: Self = this.set("exp", js.undefined)
+    @scala.inline
+    def setIat(value: Double): Self = this.set("iat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIat: Self = this.set("iat", js.undefined)
+    @scala.inline
+    def setIss(value: String): Self = this.set("iss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIss: Self = this.set("iss", js.undefined)
+    @scala.inline
+    def setJti(value: String): Self = this.set("jti", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJti: Self = this.set("jti", js.undefined)
+  }
+  
 }
 

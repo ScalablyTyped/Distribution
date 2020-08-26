@@ -1,14 +1,18 @@
 package typings.webpackStatsPlugin.statsWriterPluginMod
 
-import typings.webpack.mod.Plugin
-import typings.webpack.mod.compilation.Compilation
+import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait StatsWriterPlugin extends Plugin {
-  def emitStats(curCompiler: Compilation): js.Promise[String] = js.native
-  def emitStats(curCompiler: Compilation, callback: TransformFunc): js.Promise[Unit] = js.native
+  def emitStats(
+    curCompiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any
+  ): js.Promise[String] = js.native
+  def emitStats(
+    curCompiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any,
+    callback: TransformFunc
+  ): js.Promise[Unit] = js.native
 }
 

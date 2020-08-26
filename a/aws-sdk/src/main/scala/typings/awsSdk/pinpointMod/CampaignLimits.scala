@@ -26,18 +26,38 @@ trait CampaignLimits extends js.Object {
 
 object CampaignLimits {
   @scala.inline
-  def apply(
-    Daily: js.UndefOr[integer] = js.undefined,
-    MaximumDuration: js.UndefOr[integer] = js.undefined,
-    MessagesPerSecond: js.UndefOr[integer] = js.undefined,
-    Total: js.UndefOr[integer] = js.undefined
-  ): CampaignLimits = {
+  def apply(): CampaignLimits = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Daily)) __obj.updateDynamic("Daily")(Daily.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumDuration)) __obj.updateDynamic("MaximumDuration")(MaximumDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MessagesPerSecond)) __obj.updateDynamic("MessagesPerSecond")(MessagesPerSecond.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Total)) __obj.updateDynamic("Total")(Total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CampaignLimits]
   }
+  @scala.inline
+  implicit class CampaignLimitsOps[Self <: CampaignLimits] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDaily(value: integer): Self = this.set("Daily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDaily: Self = this.set("Daily", js.undefined)
+    @scala.inline
+    def setMaximumDuration(value: integer): Self = this.set("MaximumDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumDuration: Self = this.set("MaximumDuration", js.undefined)
+    @scala.inline
+    def setMessagesPerSecond(value: integer): Self = this.set("MessagesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessagesPerSecond: Self = this.set("MessagesPerSecond", js.undefined)
+    @scala.inline
+    def setTotal(value: integer): Self = this.set("Total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal: Self = this.set("Total", js.undefined)
+  }
+  
 }
 

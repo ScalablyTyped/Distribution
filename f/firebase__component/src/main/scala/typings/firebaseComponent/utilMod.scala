@@ -20,6 +20,13 @@ object utilMod extends js.Object {
   @JSName("getFakeComponent")
   def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest]): Component[badtest] = js.native
   @JSName("getFakeComponent")
+  def getFakeComponent_badtest(
+    name: badtest,
+    factory: InstanceFactory[badtest],
+    multipleInstance: js.UndefOr[scala.Nothing],
+    instantiationMode: InstantiationMode
+  ): Component[badtest] = js.native
+  @JSName("getFakeComponent")
   def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest], multipleInstance: Boolean): Component[badtest] = js.native
   @JSName("getFakeComponent")
   def getFakeComponent_badtest(
@@ -30,6 +37,13 @@ object utilMod extends js.Object {
   ): Component[badtest] = js.native
   @JSName("getFakeComponent")
   def getFakeComponent_fireball(name: fireball, factory: InstanceFactory[fireball]): Component[fireball] = js.native
+  @JSName("getFakeComponent")
+  def getFakeComponent_fireball(
+    name: fireball,
+    factory: InstanceFactory[fireball],
+    multipleInstance: js.UndefOr[scala.Nothing],
+    instantiationMode: InstantiationMode
+  ): Component[fireball] = js.native
   @JSName("getFakeComponent")
   def getFakeComponent_fireball(name: fireball, factory: InstanceFactory[fireball], multipleInstance: Boolean): Component[fireball] = js.native
   @JSName("getFakeComponent")
@@ -42,6 +56,13 @@ object utilMod extends js.Object {
   @JSName("getFakeComponent")
   def getFakeComponent_rocket(name: rocket, factory: InstanceFactory[rocket]): Component[rocket] = js.native
   @JSName("getFakeComponent")
+  def getFakeComponent_rocket(
+    name: rocket,
+    factory: InstanceFactory[rocket],
+    multipleInstance: js.UndefOr[scala.Nothing],
+    instantiationMode: InstantiationMode
+  ): Component[rocket] = js.native
+  @JSName("getFakeComponent")
   def getFakeComponent_rocket(name: rocket, factory: InstanceFactory[rocket], multipleInstance: Boolean): Component[rocket] = js.native
   @JSName("getFakeComponent")
   def getFakeComponent_rocket(
@@ -53,6 +74,13 @@ object utilMod extends js.Object {
   @JSName("getFakeComponent")
   def getFakeComponent_ship(name: ship, factory: InstanceFactory[ship]): Component[ship] = js.native
   @JSName("getFakeComponent")
+  def getFakeComponent_ship(
+    name: ship,
+    factory: InstanceFactory[ship],
+    multipleInstance: js.UndefOr[scala.Nothing],
+    instantiationMode: InstantiationMode
+  ): Component[ship] = js.native
+  @JSName("getFakeComponent")
   def getFakeComponent_ship(name: ship, factory: InstanceFactory[ship], multipleInstance: Boolean): Component[ship] = js.native
   @JSName("getFakeComponent")
   def getFakeComponent_ship(
@@ -63,6 +91,13 @@ object utilMod extends js.Object {
   ): Component[ship] = js.native
   @JSName("getFakeComponent")
   def getFakeComponent_test(name: test, factory: InstanceFactory[test]): Component[test] = js.native
+  @JSName("getFakeComponent")
+  def getFakeComponent_test(
+    name: test,
+    factory: InstanceFactory[test],
+    multipleInstance: js.UndefOr[scala.Nothing],
+    instantiationMode: InstantiationMode
+  ): Component[test] = js.native
   @JSName("getFakeComponent")
   def getFakeComponent_test(name: test, factory: InstanceFactory[test], multipleInstance: Boolean): Component[test] = js.native
   @JSName("getFakeComponent")

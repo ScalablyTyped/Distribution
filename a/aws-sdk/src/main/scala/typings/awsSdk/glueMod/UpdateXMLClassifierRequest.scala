@@ -22,11 +22,32 @@ trait UpdateXMLClassifierRequest extends js.Object {
 
 object UpdateXMLClassifierRequest {
   @scala.inline
-  def apply(Name: NameString, Classification: Classification = null, RowTag: RowTag = null): UpdateXMLClassifierRequest = {
+  def apply(Name: NameString): UpdateXMLClassifierRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (Classification != null) __obj.updateDynamic("Classification")(Classification.asInstanceOf[js.Any])
-    if (RowTag != null) __obj.updateDynamic("RowTag")(RowTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateXMLClassifierRequest]
   }
+  @scala.inline
+  implicit class UpdateXMLClassifierRequestOps[Self <: UpdateXMLClassifierRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClassification(value: Classification): Self = this.set("Classification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassification: Self = this.set("Classification", js.undefined)
+    @scala.inline
+    def setRowTag(value: RowTag): Self = this.set("RowTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowTag: Self = this.set("RowTag", js.undefined)
+  }
+  
 }
 

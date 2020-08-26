@@ -23,6 +23,10 @@ class TrafficMirrorSession protected () extends CustomResource {
   def this(name: String, args: TrafficMirrorSessionArgs) = this()
   def this(name: String, args: TrafficMirrorSessionArgs, opts: CustomResourceOptions) = this()
   /**
+    * The ARN of the traffic mirror session.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * A description of the traffic mirror session.
     */
   val description: Output_[js.UndefOr[String]] = js.native
@@ -39,9 +43,9 @@ class TrafficMirrorSession protected () extends CustomResource {
     */
   val sessionNumber: Output_[Double] = js.native
   /**
-    * Key-value mapping of resource tags.
+    * Key-value map of resource tags.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * ID of the traffic mirror filter to be used
     */
@@ -67,8 +71,10 @@ object TrafficMirrorSession extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): TrafficMirrorSession = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TrafficMirrorSession = js.native
   def get(name: String, id: Input[ID], state: TrafficMirrorSessionState): TrafficMirrorSession = js.native
   def get(name: String, id: Input[ID], state: TrafficMirrorSessionState, opts: CustomResourceOptions): TrafficMirrorSession = js.native
   /**

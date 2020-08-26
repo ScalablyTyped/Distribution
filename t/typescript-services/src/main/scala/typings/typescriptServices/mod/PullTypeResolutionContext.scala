@@ -12,6 +12,11 @@ class PullTypeResolutionContext protected ()
   def this(resolver: typings.typescriptServices.TypeScript.PullTypeResolver, inTypeCheck: Boolean) = this()
   def this(
     resolver: typings.typescriptServices.TypeScript.PullTypeResolver,
+    inTypeCheck: js.UndefOr[scala.Nothing],
+    fileName: String
+  ) = this()
+  def this(
+    resolver: typings.typescriptServices.TypeScript.PullTypeResolver,
     inTypeCheck: Boolean,
     fileName: String
   ) = this()

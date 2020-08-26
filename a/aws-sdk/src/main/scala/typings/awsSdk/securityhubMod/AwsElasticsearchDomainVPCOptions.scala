@@ -26,18 +26,44 @@ trait AwsElasticsearchDomainVPCOptions extends js.Object {
 
 object AwsElasticsearchDomainVPCOptions {
   @scala.inline
-  def apply(
-    AvailabilityZones: NonEmptyStringList = null,
-    SecurityGroupIds: NonEmptyStringList = null,
-    SubnetIds: NonEmptyStringList = null,
-    VPCId: NonEmptyString = null
-  ): AwsElasticsearchDomainVPCOptions = {
+  def apply(): AwsElasticsearchDomainVPCOptions = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
-    if (VPCId != null) __obj.updateDynamic("VPCId")(VPCId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsElasticsearchDomainVPCOptions]
   }
+  @scala.inline
+  implicit class AwsElasticsearchDomainVPCOptionsOps[Self <: AwsElasticsearchDomainVPCOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: NonEmptyString*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: NonEmptyStringList): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: NonEmptyString*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: NonEmptyStringList): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: NonEmptyString*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: NonEmptyStringList): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    @scala.inline
+    def setVPCId(value: NonEmptyString): Self = this.set("VPCId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVPCId: Self = this.set("VPCId", js.undefined)
+  }
+  
 }
 

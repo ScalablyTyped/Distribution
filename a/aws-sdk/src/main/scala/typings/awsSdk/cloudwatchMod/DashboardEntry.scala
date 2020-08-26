@@ -26,18 +26,38 @@ trait DashboardEntry extends js.Object {
 
 object DashboardEntry {
   @scala.inline
-  def apply(
-    DashboardArn: DashboardArn = null,
-    DashboardName: DashboardName = null,
-    LastModified: LastModified = null,
-    Size: js.UndefOr[Size] = js.undefined
-  ): DashboardEntry = {
+  def apply(): DashboardEntry = {
     val __obj = js.Dynamic.literal()
-    if (DashboardArn != null) __obj.updateDynamic("DashboardArn")(DashboardArn.asInstanceOf[js.Any])
-    if (DashboardName != null) __obj.updateDynamic("DashboardName")(DashboardName.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashboardEntry]
   }
+  @scala.inline
+  implicit class DashboardEntryOps[Self <: DashboardEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDashboardArn(value: DashboardArn): Self = this.set("DashboardArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashboardArn: Self = this.set("DashboardArn", js.undefined)
+    @scala.inline
+    def setDashboardName(value: DashboardName): Self = this.set("DashboardName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashboardName: Self = this.set("DashboardName", js.undefined)
+    @scala.inline
+    def setLastModified(value: LastModified): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setSize(value: Size): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("Size", js.undefined)
+  }
+  
 }
 

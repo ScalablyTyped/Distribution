@@ -4,20 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /** @default false */
-  var commonmark: js.UndefOr[Boolean] = js.undefined
+  var commonmark: js.UndefOr[Boolean] = js.native
   /** @default false */
-  var gfm: js.UndefOr[Boolean] = js.undefined
+  var gfm: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(commonmark: js.UndefOr[Boolean] = js.undefined, gfm: js.UndefOr[Boolean] = js.undefined): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(commonmark)) __obj.updateDynamic("commonmark")(commonmark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommonmark(value: Boolean): Self = this.set("commonmark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommonmark: Self = this.set("commonmark", js.undefined)
+    @scala.inline
+    def setGfm(value: Boolean): Self = this.set("gfm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGfm: Self = this.set("gfm", js.undefined)
+  }
+  
 }
 

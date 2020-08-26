@@ -34,20 +34,42 @@ trait SchemaCdnSettings extends js.Object {
 
 object SchemaCdnSettings {
   @scala.inline
-  def apply(
-    format: String = null,
-    frameRate: String = null,
-    ingestionInfo: SchemaIngestionInfo = null,
-    ingestionType: String = null,
-    resolution: String = null
-  ): SchemaCdnSettings = {
+  def apply(): SchemaCdnSettings = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
-    if (ingestionInfo != null) __obj.updateDynamic("ingestionInfo")(ingestionInfo.asInstanceOf[js.Any])
-    if (ingestionType != null) __obj.updateDynamic("ingestionType")(ingestionType.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCdnSettings]
   }
+  @scala.inline
+  implicit class SchemaCdnSettingsOps[Self <: SchemaCdnSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setFrameRate(value: String): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+    @scala.inline
+    def setIngestionInfo(value: SchemaIngestionInfo): Self = this.set("ingestionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngestionInfo: Self = this.set("ingestionInfo", js.undefined)
+    @scala.inline
+    def setIngestionType(value: String): Self = this.set("ingestionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngestionType: Self = this.set("ingestionType", js.undefined)
+    @scala.inline
+    def setResolution(value: String): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+  }
+  
 }
 

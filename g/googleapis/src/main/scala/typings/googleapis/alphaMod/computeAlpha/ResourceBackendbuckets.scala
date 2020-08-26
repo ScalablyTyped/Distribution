@@ -31,6 +31,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     */
   def addSignedUrlKey(): GaxiosPromise[SchemaOperation] = js.native
   def addSignedUrlKey(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def addSignedUrlKey(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addSignedUrlKey(params: ParamsResourceBackendbucketsAddsignedurlkey): GaxiosPromise[SchemaOperation] = js.native
   def addSignedUrlKey(
     params: ParamsResourceBackendbucketsAddsignedurlkey,
@@ -63,6 +64,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceBackendbucketsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceBackendbucketsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -94,6 +96,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     */
   def deleteSignedUrlKey(): GaxiosPromise[SchemaOperation] = js.native
   def deleteSignedUrlKey(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def deleteSignedUrlKey(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deleteSignedUrlKey(params: ParamsResourceBackendbucketsDeletesignedurlkey): GaxiosPromise[SchemaOperation] = js.native
   def deleteSignedUrlKey(
     params: ParamsResourceBackendbucketsDeletesignedurlkey,
@@ -126,6 +129,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaBackendBucket] = js.native
   def get(callback: BodyResponseCallback[SchemaBackendBucket]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackendBucket] = js.native
   def get(params: ParamsResourceBackendbucketsGet): GaxiosPromise[SchemaBackendBucket] = js.native
   def get(params: ParamsResourceBackendbucketsGet, callback: BodyResponseCallback[SchemaBackendBucket]): Unit = js.native
   def get(
@@ -155,6 +159,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceBackendbucketsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceBackendbucketsGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -185,6 +190,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceBackendbucketsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceBackendbucketsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -217,6 +223,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaBackendBucketList] = js.native
   def list(callback: BodyResponseCallback[SchemaBackendBucketList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBackendBucketList] = js.native
   def list(params: ParamsResourceBackendbucketsList): GaxiosPromise[SchemaBackendBucketList] = js.native
   def list(params: ParamsResourceBackendbucketsList, callback: BodyResponseCallback[SchemaBackendBucketList]): Unit = js.native
   def list(
@@ -249,6 +256,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceBackendbucketsPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceBackendbucketsPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -279,6 +287,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceBackendbucketsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceBackendbucketsSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -308,6 +317,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceBackendbucketsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceBackendbucketsTestiampermissions,
@@ -342,6 +352,7 @@ class ResourceBackendbuckets protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceBackendbucketsUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceBackendbucketsUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

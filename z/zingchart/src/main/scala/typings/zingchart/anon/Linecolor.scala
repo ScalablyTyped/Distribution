@@ -4,47 +4,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Linecolor extends js.Object {
   /**
     * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comp
     * letely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.undefined
+  var alpha: js.UndefOr[Double] = js.native
   /**
     * Sets the line color of the object, applicable on non-closed shapes. See also border-colorfor closed shapes. "none" | "transparent"
     *  | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `line-color`: js.UndefOr[String] = js.undefined
+  var `line-color`: js.UndefOr[String] = js.native
   /**
     * Sets the line width of the object, applicable on non-closed shapes. See also border-widthfor closed shapes. 4 | "6px" | ...
     */
-  var `line-width`: js.UndefOr[js.Any] = js.undefined
+  var `line-width`: js.UndefOr[js.Any] = js.native
   /**
     * Sets an X offset to apply when positioning the object/shape. 4 | "6px" | ...
     */
-  var `offset-x`: js.UndefOr[js.Any] = js.undefined
+  var `offset-x`: js.UndefOr[js.Any] = js.native
   /**
     * Sets a Y offset to apply when positioning the object/shape. 4 | "6px" | ...
     */
-  var `offset-y`: js.UndefOr[js.Any] = js.undefined
+  var `offset-y`: js.UndefOr[js.Any] = js.native
 }
 
 object Linecolor {
   @scala.inline
-  def apply(
-    alpha: js.UndefOr[Double] = js.undefined,
-    `line-color`: String = null,
-    `line-width`: js.Any = null,
-    `offset-x`: js.Any = null,
-    `offset-y`: js.Any = null
-  ): Linecolor = {
+  def apply(): Linecolor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
-    if (`line-color` != null) __obj.updateDynamic("line-color")(`line-color`.asInstanceOf[js.Any])
-    if (`line-width` != null) __obj.updateDynamic("line-width")(`line-width`.asInstanceOf[js.Any])
-    if (`offset-x` != null) __obj.updateDynamic("offset-x")(`offset-x`.asInstanceOf[js.Any])
-    if (`offset-y` != null) __obj.updateDynamic("offset-y")(`offset-y`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Linecolor]
   }
+  @scala.inline
+  implicit class LinecolorOps[Self <: Linecolor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    @scala.inline
+    def `setLine-color`(value: String): Self = this.set("line-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteLine-color`: Self = this.set("line-color", js.undefined)
+    @scala.inline
+    def `setLine-width`(value: js.Any): Self = this.set("line-width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteLine-width`: Self = this.set("line-width", js.undefined)
+    @scala.inline
+    def `setOffset-x`(value: js.Any): Self = this.set("offset-x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOffset-x`: Self = this.set("offset-x", js.undefined)
+    @scala.inline
+    def `setOffset-y`(value: js.Any): Self = this.set("offset-y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOffset-y`: Self = this.set("offset-y", js.undefined)
+  }
+  
 }
 

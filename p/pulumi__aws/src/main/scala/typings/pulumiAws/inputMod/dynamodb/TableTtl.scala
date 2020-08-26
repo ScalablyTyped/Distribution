@@ -12,17 +12,35 @@ trait TableTtl extends js.Object {
     */
   var attributeName: Input[String] = js.native
   /**
-    * Whether to enable point-in-time recovery - note that it can take up to 10 minutes to enable for new tables. If the `pointInTimeRecovery` block is not provided then this defaults to `false`.
+    * Indicates whether ttl is enabled (true) or disabled (false).
     */
   var enabled: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object TableTtl {
   @scala.inline
-  def apply(attributeName: Input[String], enabled: Input[Boolean] = null): TableTtl = {
+  def apply(attributeName: Input[String]): TableTtl = {
     val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableTtl]
   }
+  @scala.inline
+  implicit class TableTtlOps[Self <: TableTtl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeName(value: Input[String]): Self = this.set("attributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+  }
+  
 }
 

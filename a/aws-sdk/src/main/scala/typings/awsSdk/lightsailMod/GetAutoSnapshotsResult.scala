@@ -22,16 +22,36 @@ trait GetAutoSnapshotsResult extends js.Object {
 
 object GetAutoSnapshotsResult {
   @scala.inline
-  def apply(
-    autoSnapshots: AutoSnapshotDetailsList = null,
-    resourceName: ResourceName = null,
-    resourceType: ResourceType = null
-  ): GetAutoSnapshotsResult = {
+  def apply(): GetAutoSnapshotsResult = {
     val __obj = js.Dynamic.literal()
-    if (autoSnapshots != null) __obj.updateDynamic("autoSnapshots")(autoSnapshots.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAutoSnapshotsResult]
   }
+  @scala.inline
+  implicit class GetAutoSnapshotsResultOps[Self <: GetAutoSnapshotsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoSnapshotsVarargs(value: AutoSnapshotDetails*): Self = this.set("autoSnapshots", js.Array(value :_*))
+    @scala.inline
+    def setAutoSnapshots(value: AutoSnapshotDetailsList): Self = this.set("autoSnapshots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoSnapshots: Self = this.set("autoSnapshots", js.undefined)
+    @scala.inline
+    def setResourceName(value: ResourceName): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+  }
+  
 }
 

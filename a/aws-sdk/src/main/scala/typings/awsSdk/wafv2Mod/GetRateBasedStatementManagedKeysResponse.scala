@@ -18,14 +18,30 @@ trait GetRateBasedStatementManagedKeysResponse extends js.Object {
 
 object GetRateBasedStatementManagedKeysResponse {
   @scala.inline
-  def apply(
-    ManagedKeysIPV4: RateBasedStatementManagedKeysIPSet = null,
-    ManagedKeysIPV6: RateBasedStatementManagedKeysIPSet = null
-  ): GetRateBasedStatementManagedKeysResponse = {
+  def apply(): GetRateBasedStatementManagedKeysResponse = {
     val __obj = js.Dynamic.literal()
-    if (ManagedKeysIPV4 != null) __obj.updateDynamic("ManagedKeysIPV4")(ManagedKeysIPV4.asInstanceOf[js.Any])
-    if (ManagedKeysIPV6 != null) __obj.updateDynamic("ManagedKeysIPV6")(ManagedKeysIPV6.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRateBasedStatementManagedKeysResponse]
   }
+  @scala.inline
+  implicit class GetRateBasedStatementManagedKeysResponseOps[Self <: GetRateBasedStatementManagedKeysResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setManagedKeysIPV4(value: RateBasedStatementManagedKeysIPSet): Self = this.set("ManagedKeysIPV4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedKeysIPV4: Self = this.set("ManagedKeysIPV4", js.undefined)
+    @scala.inline
+    def setManagedKeysIPV6(value: RateBasedStatementManagedKeysIPSet): Self = this.set("ManagedKeysIPV6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedKeysIPV6: Self = this.set("ManagedKeysIPV6", js.undefined)
+  }
+  
 }
 

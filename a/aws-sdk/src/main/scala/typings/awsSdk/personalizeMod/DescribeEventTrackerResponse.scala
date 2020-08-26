@@ -14,10 +14,26 @@ trait DescribeEventTrackerResponse extends js.Object {
 
 object DescribeEventTrackerResponse {
   @scala.inline
-  def apply(eventTracker: EventTracker = null): DescribeEventTrackerResponse = {
+  def apply(): DescribeEventTrackerResponse = {
     val __obj = js.Dynamic.literal()
-    if (eventTracker != null) __obj.updateDynamic("eventTracker")(eventTracker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEventTrackerResponse]
   }
+  @scala.inline
+  implicit class DescribeEventTrackerResponseOps[Self <: DescribeEventTrackerResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventTracker(value: EventTracker): Self = this.set("eventTracker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTracker: Self = this.set("eventTracker", js.undefined)
+  }
+  
 }
 

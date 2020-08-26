@@ -48,20 +48,44 @@ trait SchemaRevisionStatus extends js.Object {
 
 object SchemaRevisionStatus {
   @scala.inline
-  def apply(
-    conditions: js.Array[SchemaRevisionCondition] = null,
-    imageDigest: String = null,
-    logUrl: String = null,
-    observedGeneration: js.UndefOr[Double] = js.undefined,
-    serviceName: String = null
-  ): SchemaRevisionStatus = {
+  def apply(): SchemaRevisionStatus = {
     val __obj = js.Dynamic.literal()
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
-    if (imageDigest != null) __obj.updateDynamic("imageDigest")(imageDigest.asInstanceOf[js.Any])
-    if (logUrl != null) __obj.updateDynamic("logUrl")(logUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(observedGeneration)) __obj.updateDynamic("observedGeneration")(observedGeneration.get.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRevisionStatus]
   }
+  @scala.inline
+  implicit class SchemaRevisionStatusOps[Self <: SchemaRevisionStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConditionsVarargs(value: SchemaRevisionCondition*): Self = this.set("conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: js.Array[SchemaRevisionCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("conditions", js.undefined)
+    @scala.inline
+    def setImageDigest(value: String): Self = this.set("imageDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageDigest: Self = this.set("imageDigest", js.undefined)
+    @scala.inline
+    def setLogUrl(value: String): Self = this.set("logUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUrl: Self = this.set("logUrl", js.undefined)
+    @scala.inline
+    def setObservedGeneration(value: Double): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObservedGeneration: Self = this.set("observedGeneration", js.undefined)
+    @scala.inline
+    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+  }
+  
 }
 

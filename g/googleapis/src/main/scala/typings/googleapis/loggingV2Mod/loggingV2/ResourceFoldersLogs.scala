@@ -29,6 +29,7 @@ class ResourceFoldersLogs protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceFoldersLogsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceFoldersLogsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -59,6 +60,7 @@ class ResourceFoldersLogs protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListLogsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLogsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListLogsResponse] = js.native
   def list(params: ParamsResourceFoldersLogsList): GaxiosPromise[SchemaListLogsResponse] = js.native
   def list(params: ParamsResourceFoldersLogsList, callback: BodyResponseCallback[SchemaListLogsResponse]): Unit = js.native
   def list(

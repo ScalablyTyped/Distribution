@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridExcel extends js.Object {
-  var allPages: js.UndefOr[Boolean] = js.undefined
-  var fileName: js.UndefOr[String] = js.undefined
-  var filterable: js.UndefOr[Boolean] = js.undefined
-  var forceProxy: js.UndefOr[Boolean] = js.undefined
-  var proxyURL: js.UndefOr[String] = js.undefined
+  var allPages: js.UndefOr[Boolean] = js.native
+  var fileName: js.UndefOr[String] = js.native
+  var filterable: js.UndefOr[Boolean] = js.native
+  var forceProxy: js.UndefOr[Boolean] = js.native
+  var proxyURL: js.UndefOr[String] = js.native
 }
 
 object GridExcel {
   @scala.inline
-  def apply(
-    allPages: js.UndefOr[Boolean] = js.undefined,
-    fileName: String = null,
-    filterable: js.UndefOr[Boolean] = js.undefined,
-    forceProxy: js.UndefOr[Boolean] = js.undefined,
-    proxyURL: String = null
-  ): GridExcel = {
+  def apply(): GridExcel = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allPages)) __obj.updateDynamic("allPages")(allPages.get.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceProxy)) __obj.updateDynamic("forceProxy")(forceProxy.get.asInstanceOf[js.Any])
-    if (proxyURL != null) __obj.updateDynamic("proxyURL")(proxyURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridExcel]
   }
+  @scala.inline
+  implicit class GridExcelOps[Self <: GridExcel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllPages(value: Boolean): Self = this.set("allPages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllPages: Self = this.set("allPages", js.undefined)
+    @scala.inline
+    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileName: Self = this.set("fileName", js.undefined)
+    @scala.inline
+    def setFilterable(value: Boolean): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    @scala.inline
+    def setForceProxy(value: Boolean): Self = this.set("forceProxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceProxy: Self = this.set("forceProxy", js.undefined)
+    @scala.inline
+    def setProxyURL(value: String): Self = this.set("proxyURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyURL: Self = this.set("proxyURL", js.undefined)
+  }
+  
 }
 

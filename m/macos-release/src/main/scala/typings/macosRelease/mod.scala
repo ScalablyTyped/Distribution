@@ -1,6 +1,7 @@
 package typings.macosRelease
 
 import typings.macosRelease.anon.Call
+import typings.macosRelease.anon.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +10,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   // TODO: remove this in the next major version, refactor the whole definition to:
-  // declare function macosRelease(release?: string): string;
+  // declare function macosRelease(release?: string): {name: string, version: string};
   // export = macosRelease;
   @JSName("default")
   var default_Original: Call = js.native
   /**
   	Get the name and version of a macOS release from the Darwin version.
-  	@param release - By default, the current operating system is used, but you can supply a custom [Darwin kernel version](http://en.wikipedia.org/wiki/Darwin_%28operating_system%29#Release_history), which is the output of [`os.release()`](https://nodejs.org/api/os.html#os_os_release).
+  	@param release - By default, the current operating system is used, but you can supply a custom [Darwin kernel version](https://en.wikipedia.org/wiki/Darwin_%28operating_system%29#Release_history), which is the output of [`os.release()`](https://nodejs.org/api/os.html#os_os_release).
   	@example
   	```
   	import * as os from 'os';
@@ -30,13 +31,15 @@ object mod extends js.Object {
   	//=> {name: 'Sierra', version: '10.12'}
   	macosRelease('14.0.0');
   	//=> {name: 'Yosemite', version: '10.10'}
+  	macosRelease('20.0.0');
+  	//=> {name: 'Big Sur', version: '11'}
   	```
   	*/
-  def apply(): String = js.native
-  def apply(release: String): String = js.native
+  def apply(): Name = js.native
+  def apply(release: String): Name = js.native
   /**
   	Get the name and version of a macOS release from the Darwin version.
-  	@param release - By default, the current operating system is used, but you can supply a custom [Darwin kernel version](http://en.wikipedia.org/wiki/Darwin_%28operating_system%29#Release_history), which is the output of [`os.release()`](https://nodejs.org/api/os.html#os_os_release).
+  	@param release - By default, the current operating system is used, but you can supply a custom [Darwin kernel version](https://en.wikipedia.org/wiki/Darwin_%28operating_system%29#Release_history), which is the output of [`os.release()`](https://nodejs.org/api/os.html#os_os_release).
   	@example
   	```
   	import * as os from 'os';
@@ -51,12 +54,14 @@ object mod extends js.Object {
   	//=> {name: 'Sierra', version: '10.12'}
   	macosRelease('14.0.0');
   	//=> {name: 'Yosemite', version: '10.10'}
+  	macosRelease('20.0.0');
+  	//=> {name: 'Big Sur', version: '11'}
   	```
   	*/
   // TODO: remove this in the next major version, refactor the whole definition to:
-  // declare function macosRelease(release?: string): string;
+  // declare function macosRelease(release?: string): {name: string, version: string};
   // export = macosRelease;
-  def default(): String = js.native
-  def default(release: String): String = js.native
+  def default(): Name = js.native
+  def default(release: String): Name = js.native
 }
 

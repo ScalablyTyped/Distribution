@@ -99,6 +99,7 @@ trait BigInteger extends js.Object {
     * Returns true if the number is very likely to be prime, false otherwise.
     */
   def isProbablePrime(): Boolean = js.native
+  def isProbablePrime(iterations: js.UndefOr[scala.Nothing], rng: js.Function0[Double]): Boolean = js.native
   def isProbablePrime(iterations: Double): Boolean = js.native
   def isProbablePrime(iterations: Double, rng: js.Function0[Double]): Boolean = js.native
   /**
@@ -230,6 +231,7 @@ trait BigInteger extends js.Object {
     * Converts a bigInt to a string. This method is called behind the scenes in JSON.stringify.
     */
   def toJSON(): String = js.native
+  def toString(radix: js.UndefOr[scala.Nothing], alphabet: String): String = js.native
   def toString(radix: Double): String = js.native
   def toString(radix: Double, alphabet: String): String = js.native
   /**

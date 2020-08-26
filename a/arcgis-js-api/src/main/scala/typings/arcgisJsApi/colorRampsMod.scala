@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("esri/renderers/smartMapping/symbology/support/colorRamps", JSImport.Namespace)
+@JSImport("esri/smartMapping/symbology/support/colorRamps", JSImport.Namespace)
 @js.native
 object colorRampsMod extends TopLevel[colorRamps]
 

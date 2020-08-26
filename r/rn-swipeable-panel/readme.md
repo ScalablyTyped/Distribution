@@ -4,15 +4,15 @@
 Typings are for version 1.1
 
 ## Library description:
-Swipeable panel for react native
+Swipeable bottom panel for react native
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rn-swipeable-panel |
 | Keywords           | react, react native, react-native-component, mobile, ios, android, swipeable, panel, swipeable-panel, swipe-up, swipe-down, bottom, bottom-panel, bottom-up, bottom-up-panel |
-| # releases         | 31 |
+| # releases         | 41 |
 | # dependents       | 0 |
-| # downloads        | 10597 |
+| # downloads        | 17081 |
 | # stars            | 0 |
 
 ## Links

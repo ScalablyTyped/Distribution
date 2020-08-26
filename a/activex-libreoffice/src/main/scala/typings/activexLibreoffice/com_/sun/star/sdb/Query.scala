@@ -26,6 +26,7 @@ import scala.scalajs.js.annotation._
   * It can be used if there is a need to execute SQL statements more than once, or if you want to format the query result fields differently from the
   * underlying table definitions.
   */
+@js.native
 trait Query
   extends XPropertySet
      with XContent

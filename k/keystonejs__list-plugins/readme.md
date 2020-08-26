@@ -10,9 +10,9 @@ List level plugins which can update list config during list initialization inclu
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/list-plugins |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 5547 |
+| # downloads        | 6177 |
 | # stars            | 0 |
 
 ## Links

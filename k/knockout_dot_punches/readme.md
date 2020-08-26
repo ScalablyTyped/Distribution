@@ -12,7 +12,7 @@ Enhanced binding syntaxes for Knockout 3+
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 4535 |
+| # downloads        | 4747 |
 | # stars            | 0 |
 
 ## Links

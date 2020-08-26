@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
+@js.native
 trait PlusWebviewWebviewListenResourceOptions extends js.Object {
   /**
     * 区配是否需要处理的URL资源
@@ -17,15 +18,31 @@ trait PlusWebviewWebviewListenResourceOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `match`: js.UndefOr[String] = js.undefined
+  var `match`: js.UndefOr[String] = js.native
 }
 
 object PlusWebviewWebviewListenResourceOptions {
   @scala.inline
-  def apply(`match`: String = null): PlusWebviewWebviewListenResourceOptions = {
+  def apply(): PlusWebviewWebviewListenResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewListenResourceOptions]
   }
+  @scala.inline
+  implicit class PlusWebviewWebviewListenResourceOptionsOps[Self <: PlusWebviewWebviewListenResourceOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMatch(value: String): Self = this.set("match", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatch: Self = this.set("match", js.undefined)
+  }
+  
 }
 

@@ -20,6 +20,7 @@ class VirtualTimeScheduler ()
         ], 
         AsyncAction[js.Object]
       ]) = this()
+  def this(SchedulerAction: js.UndefOr[scala.Nothing], maxFrames: Double) = this()
   def this(
     SchedulerAction: Instantiable2[
         /* scheduler */ AsyncScheduler, 

@@ -18,11 +18,32 @@ trait AddFlowSourcesResponse extends js.Object {
 
 object AddFlowSourcesResponse {
   @scala.inline
-  def apply(FlowArn: string = null, Sources: listOfSource = null): AddFlowSourcesResponse = {
+  def apply(): AddFlowSourcesResponse = {
     val __obj = js.Dynamic.literal()
-    if (FlowArn != null) __obj.updateDynamic("FlowArn")(FlowArn.asInstanceOf[js.Any])
-    if (Sources != null) __obj.updateDynamic("Sources")(Sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddFlowSourcesResponse]
   }
+  @scala.inline
+  implicit class AddFlowSourcesResponseOps[Self <: AddFlowSourcesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFlowArn(value: string): Self = this.set("FlowArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowArn: Self = this.set("FlowArn", js.undefined)
+    @scala.inline
+    def setSourcesVarargs(value: Source*): Self = this.set("Sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: listOfSource): Self = this.set("Sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("Sources", js.undefined)
+  }
+  
 }
 

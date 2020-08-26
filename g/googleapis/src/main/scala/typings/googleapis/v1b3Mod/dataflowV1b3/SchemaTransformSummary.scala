@@ -37,22 +37,52 @@ trait SchemaTransformSummary extends js.Object {
 
 object SchemaTransformSummary {
   @scala.inline
-  def apply(
-    displayData: js.Array[SchemaDisplayData] = null,
-    id: String = null,
-    inputCollectionName: js.Array[String] = null,
-    kind: String = null,
-    name: String = null,
-    outputCollectionName: js.Array[String] = null
-  ): SchemaTransformSummary = {
+  def apply(): SchemaTransformSummary = {
     val __obj = js.Dynamic.literal()
-    if (displayData != null) __obj.updateDynamic("displayData")(displayData.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputCollectionName != null) __obj.updateDynamic("inputCollectionName")(inputCollectionName.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outputCollectionName != null) __obj.updateDynamic("outputCollectionName")(outputCollectionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTransformSummary]
   }
+  @scala.inline
+  implicit class SchemaTransformSummaryOps[Self <: SchemaTransformSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayDataVarargs(value: SchemaDisplayData*): Self = this.set("displayData", js.Array(value :_*))
+    @scala.inline
+    def setDisplayData(value: js.Array[SchemaDisplayData]): Self = this.set("displayData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayData: Self = this.set("displayData", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInputCollectionNameVarargs(value: String*): Self = this.set("inputCollectionName", js.Array(value :_*))
+    @scala.inline
+    def setInputCollectionName(value: js.Array[String]): Self = this.set("inputCollectionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputCollectionName: Self = this.set("inputCollectionName", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOutputCollectionNameVarargs(value: String*): Self = this.set("outputCollectionName", js.Array(value :_*))
+    @scala.inline
+    def setOutputCollectionName(value: js.Array[String]): Self = this.set("outputCollectionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputCollectionName: Self = this.set("outputCollectionName", js.undefined)
+  }
+  
 }
 

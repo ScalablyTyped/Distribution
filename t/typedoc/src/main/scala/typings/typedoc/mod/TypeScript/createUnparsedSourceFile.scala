@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createUnparsedSourceFile extends js.Object {
   def apply(text: String): UnparsedSource = js.native
+  def apply(text: String, mapPath: js.UndefOr[scala.Nothing], map: String): UnparsedSource = js.native
   def apply(text: String, mapPath: String): UnparsedSource = js.native
   def apply(text: String, mapPath: String, map: String): UnparsedSource = js.native
 }

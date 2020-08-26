@@ -1,6 +1,6 @@
 package typings.pulumiAws.resourceMod
 
-import typings.pulumiAws.restApiMod.RestApi
+import typings.pulumiAws.apigatewayMod.RestApi
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,18 +28,38 @@ trait ResourceState extends js.Object {
 
 object ResourceState {
   @scala.inline
-  def apply(
-    parentId: Input[String] = null,
-    path: Input[String] = null,
-    pathPart: Input[String] = null,
-    restApi: Input[String | RestApi] = null
-  ): ResourceState = {
+  def apply(): ResourceState = {
     val __obj = js.Dynamic.literal()
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (pathPart != null) __obj.updateDynamic("pathPart")(pathPart.asInstanceOf[js.Any])
-    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceState]
   }
+  @scala.inline
+  implicit class ResourceStateOps[Self <: ResourceState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParentId(value: Input[String]): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("parentId", js.undefined)
+    @scala.inline
+    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPathPart(value: Input[String]): Self = this.set("pathPart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathPart: Self = this.set("pathPart", js.undefined)
+    @scala.inline
+    def setRestApi(value: Input[String | RestApi]): Self = this.set("restApi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestApi: Self = this.set("restApi", js.undefined)
+  }
+  
 }
 

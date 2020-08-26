@@ -14,16 +14,9 @@ trait PersistorAction extends js.Object
 
 object PersistorAction {
   @scala.inline
-  def RehydrateAction(
-    key: String,
-    `type`: persistSlashREHYDRATE,
-    err: js.UndefOr[Null | RehydrateErrorType] = js.undefined,
-    payload: js.UndefOr[Null | js.Object] = js.undefined
-  ): PersistorAction = {
+  def RehydrateAction(key: String, `type`: persistSlashREHYDRATE): PersistorAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(err)) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
-    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistorAction]
   }
   @scala.inline

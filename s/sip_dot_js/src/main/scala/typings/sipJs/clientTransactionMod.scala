@@ -23,8 +23,6 @@ object clientTransactionMod extends js.Object {
       loggerCategory: String
     ) = this()
     var _request: js.Any = js.native
-    /** The outgoing request the transaction handling. */
-    val request: OutgoingRequestMessage = js.native
     var user: ClientTransactionUser = js.native
     /**
       * A 408 to non-INVITE will always arrive too late to be useful ([3]),
@@ -43,6 +41,8 @@ object clientTransactionMod extends js.Object {
       * @param response - The incoming response.
       */
     def receiveResponse(response: IncomingResponseMessage): Unit = js.native
+    /** The outgoing request the transaction handling. */
+    def request: OutgoingRequestMessage = js.native
   }
   
   /* static members */

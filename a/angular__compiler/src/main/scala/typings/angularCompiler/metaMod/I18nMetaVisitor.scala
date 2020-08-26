@@ -17,7 +17,23 @@ import scala.scalajs.js.annotation._
 @js.native
 class I18nMetaVisitor () extends Visitor {
   def this(interpolationConfig: InterpolationConfig) = this()
+  def this(interpolationConfig: js.UndefOr[scala.Nothing], keepI18nAttrs: Boolean) = this()
   def this(interpolationConfig: InterpolationConfig, keepI18nAttrs: Boolean) = this()
+  def this(
+    interpolationConfig: js.UndefOr[scala.Nothing],
+    keepI18nAttrs: js.UndefOr[scala.Nothing],
+    enableI18nLegacyMessageIdFormat: Boolean
+  ) = this()
+  def this(
+    interpolationConfig: js.UndefOr[scala.Nothing],
+    keepI18nAttrs: Boolean,
+    enableI18nLegacyMessageIdFormat: Boolean
+  ) = this()
+  def this(
+    interpolationConfig: InterpolationConfig,
+    keepI18nAttrs: js.UndefOr[scala.Nothing],
+    enableI18nLegacyMessageIdFormat: Boolean
+  ) = this()
   def this(
     interpolationConfig: InterpolationConfig,
     keepI18nAttrs: Boolean,
@@ -54,23 +70,11 @@ class I18nMetaVisitor () extends Visitor {
   var interpolationConfig: js.Any = js.native
   var keepI18nAttrs: js.Any = js.native
   def visitAttribute(attribute: Attribute): js.Any = js.native
-  /* CompleteClass */
-  override def visitAttribute(attribute: Attribute, context: js.Any): js.Any = js.native
   def visitComment(comment: Comment): js.Any = js.native
-  /* CompleteClass */
-  override def visitComment(comment: Comment, context: js.Any): js.Any = js.native
   def visitElement(element: Element): js.Any = js.native
-  /* CompleteClass */
-  override def visitElement(element: Element, context: js.Any): js.Any = js.native
   def visitExpansion(expansion: Expansion): js.Any = js.native
-  /* CompleteClass */
-  override def visitExpansion(expansion: Expansion, context: js.Any): js.Any = js.native
   def visitExpansion(expansion: Expansion, currentMessage: Message): js.Any = js.native
   def visitExpansionCase(expansionCase: ExpansionCase): js.Any = js.native
-  /* CompleteClass */
-  override def visitExpansionCase(expansionCase: ExpansionCase, context: js.Any): js.Any = js.native
   def visitText(text: Text): js.Any = js.native
-  /* CompleteClass */
-  override def visitText(text: Text, context: js.Any): js.Any = js.native
 }
 

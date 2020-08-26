@@ -28,6 +28,7 @@ class ResourceProjectsTracesSpans protected () extends js.Object {
     */
   def createSpan(): GaxiosPromise[SchemaSpan] = js.native
   def createSpan(callback: BodyResponseCallback[SchemaSpan]): Unit = js.native
+  def createSpan(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSpan] = js.native
   def createSpan(params: ParamsResourceProjectsTracesSpansCreatespan): GaxiosPromise[SchemaSpan] = js.native
   def createSpan(params: ParamsResourceProjectsTracesSpansCreatespan, callback: BodyResponseCallback[SchemaSpan]): Unit = js.native
   def createSpan(

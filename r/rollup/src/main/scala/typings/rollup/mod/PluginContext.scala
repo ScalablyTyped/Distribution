@@ -1,12 +1,10 @@
 package typings.rollup.mod
 
-import typings.estree.mod.Program
-import typings.node.Buffer
-import typings.node.eventsMod.EventEmitter
 import typings.rollup.anon.Line
 import typings.rollup.anon.Name
 import typings.rollup.anon.SkipSelf
 import typings.std.IterableIterator
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +20,18 @@ trait PluginContext extends MinimalPluginContext {
   var emitChunk_Original: EmitChunk = js.native
   @JSName("emitFile")
   var emitFile_Original: EmitFile = js.native
+  @JSName("getModuleInfo")
+  var getModuleInfo_Original: GetModuleInfo = js.native
   /** @deprecated Use `this.resolve` instead */
   @JSName("isExternal")
   var isExternal_Original: IsExternal = js.native
+  /** @deprecated Use `this.getModuleIds` instead */
   var moduleIds: IterableIterator[String] = js.native
-  /** @deprecated Use `this.addWatchFile` and the `watchChange` hook instead  */
-  var watcher: EventEmitter = js.native
   def addWatchFile(id: String): Unit = js.native
   /** @deprecated Use `this.emitFile` instead */
   def emitAsset(name: String): String = js.native
   def emitAsset(name: String, source: String): String = js.native
-  def emitAsset(name: String, source: Buffer): String = js.native
+  def emitAsset(name: String, source: Uint8Array): String = js.native
   /** @deprecated Use `this.emitFile` instead */
   def emitChunk(id: String): String = js.native
   def emitChunk(id: String, options: Name): String = js.native
@@ -48,16 +47,21 @@ trait PluginContext extends MinimalPluginContext {
   /** @deprecated Use `this.getFileName` instead */
   def getChunkFileName(chunkReferenceId: String): String = js.native
   def getFileName(fileReferenceId: String): String = js.native
-  def getModuleInfo(moduleId: String): typings.rollup.anon.HasModuleSideEffects = js.native
+  def getModuleIds(): IterableIterator[String] = js.native
+  def getModuleInfo(moduleId: String): ModuleInfo = js.native
+  def isExternal(source: String, importer: js.UndefOr[scala.Nothing], isResolved: Boolean): Boolean = js.native
   /** @deprecated Use `this.resolve` instead */
-  def isExternal(source: String, importer: String, isResolved: Boolean): js.UndefOr[Boolean | Null] = js.native
-  def parse(input: String, options: js.Any): Program = js.native
+  def isExternal(source: String, importer: String, isResolved: Boolean): Boolean = js.native
+  def parse(input: String, options: js.Any): AcornNode = js.native
+  def resolve(source: String): js.Promise[ResolvedId | Null] = js.native
+  def resolve(source: String, importer: js.UndefOr[scala.Nothing], options: SkipSelf): js.Promise[ResolvedId | Null] = js.native
   def resolve(source: String, importer: String): js.Promise[ResolvedId | Null] = js.native
   def resolve(source: String, importer: String, options: SkipSelf): js.Promise[ResolvedId | Null] = js.native
   /** @deprecated Use `this.resolve` instead */
+  def resolveId(source: String): js.Promise[String | Null] = js.native
   def resolveId(source: String, importer: String): js.Promise[String | Null] = js.native
   def setAssetSource(assetReferenceId: String, source: String): Unit = js.native
-  def setAssetSource(assetReferenceId: String, source: Buffer): Unit = js.native
+  def setAssetSource(assetReferenceId: String, source: Uint8Array): Unit = js.native
   def warn(warning: String): Unit = js.native
   def warn(warning: String, pos: Double): Unit = js.native
   def warn(warning: String, pos: Line): Unit = js.native

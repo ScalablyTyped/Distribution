@@ -11,8 +11,8 @@ smart-buffer is a Buffer wrapper that adds automatic read & write offset trackin
 | Full name          | smart-buffer |
 | Keywords           | buffer, smart, packet, serialize, network, cursor, simple |
 | # releases         | 3 |
-| # dependents       | 35 |
-| # downloads        | 133113535 |
+| # dependents       | 36 |
+| # downloads        | 137546444 |
 | # stars            | 3 |
 
 ## Links

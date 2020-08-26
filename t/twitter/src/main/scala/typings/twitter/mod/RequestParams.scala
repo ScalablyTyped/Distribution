@@ -5,18 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RequestParams
   extends /* key */ StringDictionary[js.Any] {
-  var base: js.UndefOr[String] = js.undefined
+  var base: js.UndefOr[String] = js.native
 }
 
 object RequestParams {
   @scala.inline
-  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null, base: String = null): RequestParams = {
+  def apply(): RequestParams = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestParams]
   }
+  @scala.inline
+  implicit class RequestParamsOps[Self <: RequestParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBase(value: String): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase: Self = this.set("base", js.undefined)
+  }
+  
 }
 

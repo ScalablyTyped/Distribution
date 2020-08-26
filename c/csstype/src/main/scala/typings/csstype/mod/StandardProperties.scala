@@ -4,20 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StandardProperties[TLength]
-  extends StandardLonghandProperties[TLength]
-     with StandardShorthandProperties[TLength]
+@js.native
+trait StandardProperties[TLength, TTime]
+  extends StandardLonghandProperties[TLength, TTime]
+     with StandardShorthandProperties[TLength, TTime]
 
 object StandardProperties {
   @scala.inline
-  def apply[TLength](
-    StandardLonghandProperties: StandardLonghandProperties[TLength] = null,
-    StandardShorthandProperties: StandardShorthandProperties[TLength] = null
-  ): StandardProperties[TLength] = {
+  def apply[TLength, TTime](): StandardProperties[TLength, TTime] = {
     val __obj = js.Dynamic.literal()
-    if (StandardLonghandProperties != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandProperties)
-    if (StandardShorthandProperties != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandProperties)
-    __obj.asInstanceOf[StandardProperties[TLength]]
+    __obj.asInstanceOf[StandardProperties[TLength, TTime]]
   }
 }
 

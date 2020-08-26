@@ -28,6 +28,7 @@ class ResourceParents protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceParentsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceParentsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -52,6 +53,7 @@ class ResourceParents protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaParentReference] = js.native
   def get(callback: BodyResponseCallback[SchemaParentReference]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaParentReference] = js.native
   def get(params: ParamsResourceParentsGet): GaxiosPromise[SchemaParentReference] = js.native
   def get(params: ParamsResourceParentsGet, callback: BodyResponseCallback[SchemaParentReference]): Unit = js.native
   def get(
@@ -81,6 +83,7 @@ class ResourceParents protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaParentReference] = js.native
   def insert(callback: BodyResponseCallback[SchemaParentReference]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaParentReference] = js.native
   def insert(params: ParamsResourceParentsInsert): GaxiosPromise[SchemaParentReference] = js.native
   def insert(params: ParamsResourceParentsInsert, callback: BodyResponseCallback[SchemaParentReference]): Unit = js.native
   def insert(
@@ -108,6 +111,7 @@ class ResourceParents protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaParentList] = js.native
   def list(callback: BodyResponseCallback[SchemaParentList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaParentList] = js.native
   def list(params: ParamsResourceParentsList): GaxiosPromise[SchemaParentList] = js.native
   def list(params: ParamsResourceParentsList, callback: BodyResponseCallback[SchemaParentList]): Unit = js.native
   def list(

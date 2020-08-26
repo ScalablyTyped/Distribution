@@ -52,7 +52,7 @@ class ReportButton protected () extends Widget {
   @JSName("model")
   var model_FReportButton: IModel = js.native
   def caption: Text = js.native
-  def caption(newValue: Text): js.Any = js.native
+  def caption_=(newValue: Text): Unit = js.native
 }
 
 /* static members */

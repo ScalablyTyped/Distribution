@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
+@js.native
 trait PlusNativeUIToastOptions extends js.Object {
   /**
     * 提示消息框在屏幕中的水平位置
@@ -28,7 +29,7 @@ trait PlusNativeUIToastOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var align: js.UndefOr[left | center | right] = js.undefined
+  var align: js.UndefOr[left | center | right] = js.native
   /**
     * 提示消息框显示的时间
     * 可选值为"long"、"short"，值为"long"时显示时间约为3.5s，值为"short"时显示时间约为2s，未设置时默认值为"short"。
@@ -37,35 +38,35 @@ trait PlusNativeUIToastOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var duration: js.UndefOr[long | short] = js.undefined
+  var duration: js.UndefOr[long | short] = js.native
   /**
     * 提示消息框上显示的图标
     * 仅支持本地图片路径。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String] = js.native
   /**
     * 图标的高度
     * 单位为px（逻辑像素值），默认值为图片的高度。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var iconHeight: js.UndefOr[String] = js.undefined
+  var iconHeight: js.UndefOr[String] = js.native
   /**
     * 图标的宽度
     * 单位为px（逻辑像素值），默认值为图片的宽度。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var iconWidth: js.UndefOr[String] = js.undefined
+  var iconWidth: js.UndefOr[String] = js.native
   /**
     * 富文本样式
     * 当type属性值为"richtext"时有效，用于定义富文本的样式，如其文本对齐方式、使用的字体等。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var richTextStyle: js.UndefOr[PlusNativeObjRichTextStyles] = js.undefined
+  var richTextStyle: js.UndefOr[PlusNativeObjRichTextStyles] = js.native
   /**
     * 提示消息框上显示的样式
     * 可取值：
@@ -75,7 +76,7 @@ trait PlusNativeUIToastOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var style: js.UndefOr[String] = js.undefined
+  var style: js.UndefOr[String] = js.native
   /**
     * 提示消息框上显示的文本类型
     * 可取值：
@@ -93,7 +94,7 @@ trait PlusNativeUIToastOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var `type`: js.UndefOr[text | richtext] = js.undefined
+  var `type`: js.UndefOr[text | richtext] = js.native
   /**
     * 提示消息在屏幕中的垂直位置
     * 可选值为"top"、"center"、"bottom"，分别为垂直居顶、居中、居底，未设置时默认值为"bottom"。
@@ -103,33 +104,63 @@ trait PlusNativeUIToastOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var verticalAlign: js.UndefOr[top | center | bottom] = js.undefined
+  var verticalAlign: js.UndefOr[top | center | bottom] = js.native
 }
 
 object PlusNativeUIToastOptions {
   @scala.inline
-  def apply(
-    align: left | center | right = null,
-    duration: long | short = null,
-    icon: String = null,
-    iconHeight: String = null,
-    iconWidth: String = null,
-    richTextStyle: PlusNativeObjRichTextStyles = null,
-    style: String = null,
-    `type`: text | richtext = null,
-    verticalAlign: top | center | bottom = null
-  ): PlusNativeUIToastOptions = {
+  def apply(): PlusNativeUIToastOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconHeight != null) __obj.updateDynamic("iconHeight")(iconHeight.asInstanceOf[js.Any])
-    if (iconWidth != null) __obj.updateDynamic("iconWidth")(iconWidth.asInstanceOf[js.Any])
-    if (richTextStyle != null) __obj.updateDynamic("richTextStyle")(richTextStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIToastOptions]
   }
+  @scala.inline
+  implicit class PlusNativeUIToastOptionsOps[Self <: PlusNativeUIToastOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: left | center | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setDuration(value: long | short): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconHeight(value: String): Self = this.set("iconHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconHeight: Self = this.set("iconHeight", js.undefined)
+    @scala.inline
+    def setIconWidth(value: String): Self = this.set("iconWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconWidth: Self = this.set("iconWidth", js.undefined)
+    @scala.inline
+    def setRichTextStyle(value: PlusNativeObjRichTextStyles): Self = this.set("richTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRichTextStyle: Self = this.set("richTextStyle", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setType(value: text | richtext): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVerticalAlign(value: top | center | bottom): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+  }
+  
 }
 

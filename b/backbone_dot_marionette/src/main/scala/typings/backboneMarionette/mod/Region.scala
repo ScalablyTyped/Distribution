@@ -18,41 +18,23 @@ class Region ()
   extends Object
      with DomMixin {
   def this(options: RegionConstructionOptions) = this()
-  /* CompleteClass */
-  override var appendChildren: js.Any = js.native
-  /* CompleteClass */
-  override var beforeEl: js.Any = js.native
   /**
     * Defaults to 'mnr' (undocumented)
     */
   var cidPrefix: String = js.native
-  /* CompleteClass */
-  override var createBuffer: js.Any = js.native
   /**
     * @returns view that this region has.
     */
   var currentView: typings.backbone.mod.View[Model[_, ModelSetOptions]] = js.native
-  /* CompleteClass */
-  override var detachContents: js.Any = js.native
-  /* CompleteClass */
-  override var detachEl: js.Any = js.native
   /**
     * Contains the element that this region should manage.
     */
   var el: js.Any = js.native
-  /* CompleteClass */
-  override var findEls: js.Any = js.native
-  /* CompleteClass */
-  override var removeEl: js.Any = js.native
-  /* CompleteClass */
-  override var replaceEl: js.Any = js.native
   /**
     * Overwrite the parent el of the region with the rendered contents of
     * the inner View.
     */
   var replaceElement: Boolean = js.native
-  /* CompleteClass */
-  override var setInnerContent: js.Any = js.native
   /**
     * Takes the DOM node el and appends the rendered children to the end of
     * the element's contents.

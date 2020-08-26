@@ -33,54 +33,46 @@ class VersionedService protected () extends Element {
   @JSName("model")
   var model_FVersionedService: IModel = js.native
   def appServiceState: AppServiceState = js.native
-  def appServiceState(newValue: AppServiceState): js.Any = js.native
+  def appServiceState_=(newValue: AppServiceState): Unit = js.native
   def caption: String = js.native
-  def caption(newValue: String): js.Any = js.native
+  def caption_=(newValue: String): Unit = js.native
   def containerAsPublishedServiceBase: PublishedServiceBase = js.native
   def description: String = js.native
-  def description(newValue: String): js.Any = js.native
+  def description_=(newValue: String): Unit = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
-  def enumerationsByContract(): js.Any = js.native
-  def enumerationsByContract(newValue: MsdEnumerationContainer): js.Any = js.native
-  @JSName("enumerationsByContract")
-  def enumerationsByContract_Union: MsdEnumerationContainer | Null = js.native
+  def documentation_=(newValue: String): Unit = js.native
+  def enumerationsByContract: MsdEnumerationContainer | Null = js.native
+  def enumerationsByContract_=(newValue: MsdEnumerationContainer | Null): Unit = js.native
   def headerAuthentication: HeaderAuthentication = js.native
-  def headerAuthentication(newValue: HeaderAuthentication): js.Any = js.native
-  def headerImportMapping(): js.Any = js.native
-  def headerImportMapping(newValue: IImportMapping): js.Any = js.native
+  def headerAuthentication_=(newValue: HeaderAuthentication): Unit = js.native
+  def headerImportMapping: IImportMapping | Null = js.native
   def headerImportMappingQualifiedName: String | Null = js.native
-  @JSName("headerImportMapping")
-  def headerImportMapping_Union: IImportMapping | Null = js.native
-  def headerMicroflow(): js.Any = js.native
-  def headerMicroflow(newValue: IMicroflow): js.Any = js.native
+  def headerImportMapping_=(newValue: IImportMapping | Null): Unit = js.native
+  def headerMicroflow: IMicroflow | Null = js.native
   def headerMicroflowQualifiedName: String | Null = js.native
-  @JSName("headerMicroflow")
-  def headerMicroflow_Union: IMicroflow | Null = js.native
-  def image(): js.Any = js.native
-  def image(newValue: IImage): js.Any = js.native
+  def headerMicroflow_=(newValue: IMicroflow | Null): Unit = js.native
+  def image: IImage | Null = js.native
   def imageQualifiedName: String | Null = js.native
-  @JSName("image")
-  def image_Union: IImage | Null = js.native
+  def image_=(newValue: IImage | Null): Unit = js.native
   def isLockedByContract: Boolean = js.native
-  def isLockedByContract(newValue: Boolean): js.Any = js.native
+  def isLockedByContract_=(newValue: Boolean): Unit = js.native
   /**
     * In version 7.17.0: introduced
     */
   def objectHandlingBackup: ObjectHandlingBackupEnum = js.native
-  def objectHandlingBackup(newValue: ObjectHandlingBackupEnum): js.Any = js.native
+  def objectHandlingBackup_=(newValue: ObjectHandlingBackupEnum): Unit = js.native
   def operations: IList[PublishedOperation] = js.native
   /**
     * In version 7.13.0: introduced
     */
   def optimizedXml: Boolean = js.native
-  def optimizedXml(newValue: Boolean): js.Any = js.native
+  def optimizedXml_=(newValue: Boolean): Unit = js.native
   def targetNamespace: String = js.native
-  def targetNamespace(newValue: String): js.Any = js.native
+  def targetNamespace_=(newValue: String): Unit = js.native
   def validate: Boolean = js.native
-  def validate(newValue: Boolean): js.Any = js.native
+  def validate_=(newValue: Boolean): Unit = js.native
   def versionNumber: Double = js.native
-  def versionNumber(newValue: Double): js.Any = js.native
+  def versionNumber_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

@@ -34,56 +34,97 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Options Type Defs
+@js.native
 trait OpenOptions extends js.Object {
-  var autoOpen: js.UndefOr[Boolean] = js.undefined
+  var autoOpen: js.UndefOr[Boolean] = js.native
   var baudRate: js.UndefOr[
     `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double
-  ] = js.undefined
-  var binding: js.UndefOr[BaseBinding] = js.undefined
-  var bindingOptions: js.UndefOr[Vmin] = js.undefined
-  var dataBits: js.UndefOr[`8` | `7` | `6` | `5`] = js.undefined
-  var highWaterMark: js.UndefOr[Double] = js.undefined
-  var lock: js.UndefOr[Boolean] = js.undefined
-  var parity: js.UndefOr[none | even | mark | odd | space] = js.undefined
-  var rtscts: js.UndefOr[Boolean] = js.undefined
-  var stopBits: js.UndefOr[`1` | `2`] = js.undefined
-  var xany: js.UndefOr[Boolean] = js.undefined
-  var xoff: js.UndefOr[Boolean] = js.undefined
-  var xon: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var binding: js.UndefOr[BaseBinding] = js.native
+  var bindingOptions: js.UndefOr[Vmin] = js.native
+  var dataBits: js.UndefOr[`8` | `7` | `6` | `5`] = js.native
+  var highWaterMark: js.UndefOr[Double] = js.native
+  var lock: js.UndefOr[Boolean] = js.native
+  var parity: js.UndefOr[none | even | mark | odd | space] = js.native
+  var rtscts: js.UndefOr[Boolean] = js.native
+  var stopBits: js.UndefOr[`1` | `2`] = js.native
+  var xany: js.UndefOr[Boolean] = js.native
+  var xoff: js.UndefOr[Boolean] = js.native
+  var xon: js.UndefOr[Boolean] = js.native
 }
 
 object OpenOptions {
   @scala.inline
-  def apply(
-    autoOpen: js.UndefOr[Boolean] = js.undefined,
-    baudRate: `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double = null,
-    binding: BaseBinding = null,
-    bindingOptions: Vmin = null,
-    dataBits: `8` | `7` | `6` | `5` = null,
-    highWaterMark: js.UndefOr[Double] = js.undefined,
-    lock: js.UndefOr[Boolean] = js.undefined,
-    parity: none | even | mark | odd | space = null,
-    rtscts: js.UndefOr[Boolean] = js.undefined,
-    stopBits: `1` | `2` = null,
-    xany: js.UndefOr[Boolean] = js.undefined,
-    xoff: js.UndefOr[Boolean] = js.undefined,
-    xon: js.UndefOr[Boolean] = js.undefined
-  ): OpenOptions = {
+  def apply(): OpenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.get.asInstanceOf[js.Any])
-    if (baudRate != null) __obj.updateDynamic("baudRate")(baudRate.asInstanceOf[js.Any])
-    if (binding != null) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (dataBits != null) __obj.updateDynamic("dataBits")(dataBits.asInstanceOf[js.Any])
-    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lock)) __obj.updateDynamic("lock")(lock.get.asInstanceOf[js.Any])
-    if (parity != null) __obj.updateDynamic("parity")(parity.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtscts)) __obj.updateDynamic("rtscts")(rtscts.get.asInstanceOf[js.Any])
-    if (stopBits != null) __obj.updateDynamic("stopBits")(stopBits.asInstanceOf[js.Any])
-    if (!js.isUndefined(xany)) __obj.updateDynamic("xany")(xany.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xoff)) __obj.updateDynamic("xoff")(xoff.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xon)) __obj.updateDynamic("xon")(xon.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenOptions]
   }
+  @scala.inline
+  implicit class OpenOptionsOps[Self <: OpenOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoOpen(value: Boolean): Self = this.set("autoOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoOpen: Self = this.set("autoOpen", js.undefined)
+    @scala.inline
+    def setBaudRate(
+      value: `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double
+    ): Self = this.set("baudRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaudRate: Self = this.set("baudRate", js.undefined)
+    @scala.inline
+    def setBinding(value: BaseBinding): Self = this.set("binding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinding: Self = this.set("binding", js.undefined)
+    @scala.inline
+    def setBindingOptions(value: Vmin): Self = this.set("bindingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindingOptions: Self = this.set("bindingOptions", js.undefined)
+    @scala.inline
+    def setDataBits(value: `8` | `7` | `6` | `5`): Self = this.set("dataBits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataBits: Self = this.set("dataBits", js.undefined)
+    @scala.inline
+    def setHighWaterMark(value: Double): Self = this.set("highWaterMark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighWaterMark: Self = this.set("highWaterMark", js.undefined)
+    @scala.inline
+    def setLock(value: Boolean): Self = this.set("lock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLock: Self = this.set("lock", js.undefined)
+    @scala.inline
+    def setParity(value: none | even | mark | odd | space): Self = this.set("parity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParity: Self = this.set("parity", js.undefined)
+    @scala.inline
+    def setRtscts(value: Boolean): Self = this.set("rtscts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtscts: Self = this.set("rtscts", js.undefined)
+    @scala.inline
+    def setStopBits(value: `1` | `2`): Self = this.set("stopBits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopBits: Self = this.set("stopBits", js.undefined)
+    @scala.inline
+    def setXany(value: Boolean): Self = this.set("xany", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXany: Self = this.set("xany", js.undefined)
+    @scala.inline
+    def setXoff(value: Boolean): Self = this.set("xoff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXoff: Self = this.set("xoff", js.undefined)
+    @scala.inline
+    def setXon(value: Boolean): Self = this.set("xon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXon: Self = this.set("xon", js.undefined)
+  }
+  
 }
 

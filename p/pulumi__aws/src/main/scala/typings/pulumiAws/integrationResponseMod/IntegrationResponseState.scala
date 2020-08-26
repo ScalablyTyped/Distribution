@@ -1,7 +1,6 @@
 package typings.pulumiAws.integrationResponseMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.restApiMod.RestApi
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,65 +9,73 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IntegrationResponseState extends js.Object {
   /**
-    * Specifies how to handle request payload content type conversions. Supported values are `CONVERT_TO_BINARY` and `CONVERT_TO_TEXT`. If this property is not defined, the response payload will be passed through from the integration response to the method response without modification.
+    * The API identifier.
     */
-  val contentHandling: js.UndefOr[Input[String]] = js.native
+  val apiId: js.UndefOr[Input[String]] = js.native
   /**
-    * The HTTP method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)
+    * How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
     */
-  val httpMethod: js.UndefOr[Input[String]] = js.native
+  val contentHandlingStrategy: js.UndefOr[Input[String]] = js.native
   /**
-    * The API resource ID
+    * The identifier of the `aws.apigatewayv2.Integration`.
     */
-  val resourceId: js.UndefOr[Input[String]] = js.native
+  val integrationId: js.UndefOr[Input[String]] = js.native
   /**
-    * A map of response parameters that can be read from the backend response.
-    * For example: `responseParameters = { "method.response.header.X-Some-Header" = "integration.response.header.X-Some-Other-Header" }`
+    * The integration response key.
     */
-  val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  val integrationResponseKey: js.UndefOr[Input[String]] = js.native
   /**
-    * A map specifying the templates used to transform the integration response body
+    * A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
     */
   val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
-    * The ID of the associated REST API
+    * The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
     */
-  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
-  /**
-    * Specifies the regular expression pattern used to choose
-    * an integration response based on the response from the backend. Setting this to `-` makes the integration the default one.
-    * If the backend is an `AWS` Lambda function, the AWS Lambda function error header is matched.
-    * For all other `HTTP` and `AWS` backends, the HTTP status code is matched.
-    */
-  val selectionPattern: js.UndefOr[Input[String]] = js.native
-  /**
-    * The HTTP status code
-    */
-  val statusCode: js.UndefOr[Input[String]] = js.native
+  val templateSelectionExpression: js.UndefOr[Input[String]] = js.native
 }
 
 object IntegrationResponseState {
   @scala.inline
-  def apply(
-    contentHandling: Input[String] = null,
-    httpMethod: Input[String] = null,
-    resourceId: Input[String] = null,
-    responseParameters: Input[StringDictionary[Input[String]]] = null,
-    responseTemplates: Input[StringDictionary[Input[String]]] = null,
-    restApi: Input[String | RestApi] = null,
-    selectionPattern: Input[String] = null,
-    statusCode: Input[String] = null
-  ): IntegrationResponseState = {
+  def apply(): IntegrationResponseState = {
     val __obj = js.Dynamic.literal()
-    if (contentHandling != null) __obj.updateDynamic("contentHandling")(contentHandling.asInstanceOf[js.Any])
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
-    if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
-    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
-    if (selectionPattern != null) __obj.updateDynamic("selectionPattern")(selectionPattern.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegrationResponseState]
   }
+  @scala.inline
+  implicit class IntegrationResponseStateOps[Self <: IntegrationResponseState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiId(value: Input[String]): Self = this.set("apiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiId: Self = this.set("apiId", js.undefined)
+    @scala.inline
+    def setContentHandlingStrategy(value: Input[String]): Self = this.set("contentHandlingStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentHandlingStrategy: Self = this.set("contentHandlingStrategy", js.undefined)
+    @scala.inline
+    def setIntegrationId(value: Input[String]): Self = this.set("integrationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrationId: Self = this.set("integrationId", js.undefined)
+    @scala.inline
+    def setIntegrationResponseKey(value: Input[String]): Self = this.set("integrationResponseKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrationResponseKey: Self = this.set("integrationResponseKey", js.undefined)
+    @scala.inline
+    def setResponseTemplates(value: Input[StringDictionary[Input[String]]]): Self = this.set("responseTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTemplates: Self = this.set("responseTemplates", js.undefined)
+    @scala.inline
+    def setTemplateSelectionExpression(value: Input[String]): Self = this.set("templateSelectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateSelectionExpression: Self = this.set("templateSelectionExpression", js.undefined)
+  }
+  
 }
 

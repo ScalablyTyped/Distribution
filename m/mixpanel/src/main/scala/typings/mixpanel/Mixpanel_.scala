@@ -129,6 +129,7 @@ trait Mixpanel_ extends js.Object {
     * @param libraryName The name for the new mixpanel instance that you want created
     */
   def init(token: String): Mixpanel = js.native
+  def init(token: String, config: js.UndefOr[scala.Nothing], libraryName: String): Mixpanel = js.native
   def init(token: String, config: Config): Mixpanel = js.native
   def init(token: String, config: Config, libraryName: String): Mixpanel = js.native
   /**
@@ -185,6 +186,7 @@ trait Mixpanel_ extends js.Object {
     * @param days How many days since the users last visit to store the super properties
     */
   def register_once(properties: StringDictionary[js.Any]): Unit = js.native
+  def register_once(properties: StringDictionary[js.Any], defaultValue: js.UndefOr[scala.Nothing], days: Double): Unit = js.native
   def register_once(properties: StringDictionary[js.Any], defaultValue: String): Unit = js.native
   def register_once(properties: StringDictionary[js.Any], defaultValue: String, days: Double): Unit = js.native
   /**
@@ -232,6 +234,7 @@ trait Mixpanel_ extends js.Object {
     * @param callback If provided, the callback function will be called after tracking the event.
     */
   def track(eventName: String): Unit = js.native
+  def track(eventName: String, properties: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def track(eventName: String, properties: StringDictionary[js.Any]): Unit = js.native
   def track(eventName: String, properties: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
   /**

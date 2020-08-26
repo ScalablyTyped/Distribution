@@ -1,18 +1,12 @@
 package typings.androiduix.android.widget
 
-import typings.androiduix.android.content.Context
 import typings.androiduix.android.view.KeyEvent
-import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.widget.GridView")
 @js.native
-class GridView protected () extends AbsListView {
-  def this(context: Context, attrs: HTMLElement) = this()
-  def this(context: Context, attrs: HTMLElement, defStyle: Map[String, String]) = this()
+trait GridView extends AbsListView {
   var mColumnWidth: js.Any = js.native
   var mGravity: js.Any = js.native
   var mHorizontalSpacing: js.Any = js.native
@@ -76,16 +70,5 @@ class GridView protected () extends AbsListView {
     recycled: js.Any,
     where: js.Any
   ): js.Any = js.native
-}
-
-/* static members */
-@JSGlobal("android.widget.GridView")
-@js.native
-object GridView extends js.Object {
-  var AUTO_FIT: Double = js.native
-  var NO_STRETCH: Double = js.native
-  var STRETCH_COLUMN_WIDTH: Double = js.native
-  var STRETCH_SPACING: Double = js.native
-  var STRETCH_SPACING_UNIFORM: Double = js.native
 }
 

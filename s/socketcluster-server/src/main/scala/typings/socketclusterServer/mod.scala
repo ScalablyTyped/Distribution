@@ -24,8 +24,17 @@ object mod extends js.Object {
   def attach(server: Server): AGServer = js.native
   def attach(server: Server, options: AGServerOptions): AGServer = js.native
   def listen(): AGServer = js.native
+  def listen(port: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): AGServer = js.native
+  def listen(
+    port: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): AGServer = js.native
+  def listen(port: js.UndefOr[scala.Nothing], options: AGServerOptions): AGServer = js.native
+  def listen(port: js.UndefOr[scala.Nothing], options: AGServerOptions, listeningListener: js.Function0[Unit]): AGServer = js.native
   def listen(port: Double): AGServer = js.native
   def listen(port: Double, listeningListener: js.Function0[Unit]): AGServer = js.native
+  def listen(port: Double, options: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): AGServer = js.native
   def listen(port: Double, options: AGServerOptions): AGServer = js.native
   def listen(port: Double, options: AGServerOptions, listeningListener: js.Function0[Unit]): AGServer = js.native
 }

@@ -19,6 +19,10 @@ trait FileSystemDescription extends js.Object {
     */
   var Encrypted: js.UndefOr[typings.awsSdk.efsMod.Encrypted] = js.native
   /**
+    * The Amazon Resource Name (ARN) for the EFS file system, in the format arn:aws:elasticfilesystem:region:account-id:file-system/file-system-id . Example with sample data: arn:aws:elasticfilesystem:us-west-2:1111333322228888:file-system/fs-01234567 
+    */
+  var FileSystemArn: js.UndefOr[typings.awsSdk.efsMod.FileSystemArn] = js.native
+  /**
     * The ID of the file system, assigned by Amazon EFS.
     */
   var FileSystemId: typings.awsSdk.efsMod.FileSystemId = js.native
@@ -75,20 +79,67 @@ object FileSystemDescription {
     OwnerId: AwsAccountId,
     PerformanceMode: PerformanceMode,
     SizeInBytes: FileSystemSize,
-    Tags: Tags,
-    Encrypted: js.UndefOr[Encrypted] = js.undefined,
-    KmsKeyId: KmsKeyId = null,
-    Name: TagValue = null,
-    ProvisionedThroughputInMibps: js.UndefOr[ProvisionedThroughputInMibps] = js.undefined,
-    ThroughputMode: ThroughputMode = null
+    Tags: Tags
   ): FileSystemDescription = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], CreationToken = CreationToken.asInstanceOf[js.Any], FileSystemId = FileSystemId.asInstanceOf[js.Any], LifeCycleState = LifeCycleState.asInstanceOf[js.Any], NumberOfMountTargets = NumberOfMountTargets.asInstanceOf[js.Any], OwnerId = OwnerId.asInstanceOf[js.Any], PerformanceMode = PerformanceMode.asInstanceOf[js.Any], SizeInBytes = SizeInBytes.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProvisionedThroughputInMibps)) __obj.updateDynamic("ProvisionedThroughputInMibps")(ProvisionedThroughputInMibps.get.asInstanceOf[js.Any])
-    if (ThroughputMode != null) __obj.updateDynamic("ThroughputMode")(ThroughputMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemDescription]
   }
+  @scala.inline
+  implicit class FileSystemDescriptionOps[Self <: FileSystemDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationToken(value: CreationToken): Self = this.set("CreationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLifeCycleState(value: LifeCycleState): Self = this.set("LifeCycleState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberOfMountTargets(value: MountTargetCount): Self = this.set("NumberOfMountTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOwnerId(value: AwsAccountId): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPerformanceMode(value: PerformanceMode): Self = this.set("PerformanceMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSizeInBytes(value: FileSystemSize): Self = this.set("SizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncrypted(value: Encrypted): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    @scala.inline
+    def setFileSystemArn(value: FileSystemArn): Self = this.set("FileSystemArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemArn: Self = this.set("FileSystemArn", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setName(value: TagValue): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setProvisionedThroughputInMibps(value: ProvisionedThroughputInMibps): Self = this.set("ProvisionedThroughputInMibps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedThroughputInMibps: Self = this.set("ProvisionedThroughputInMibps", js.undefined)
+    @scala.inline
+    def setThroughputMode(value: ThroughputMode): Self = this.set("ThroughputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThroughputMode: Self = this.set("ThroughputMode", js.undefined)
+  }
+  
 }
 

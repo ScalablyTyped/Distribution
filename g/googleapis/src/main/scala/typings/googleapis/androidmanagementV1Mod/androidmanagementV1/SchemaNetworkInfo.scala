@@ -29,18 +29,38 @@ trait SchemaNetworkInfo extends js.Object {
 
 object SchemaNetworkInfo {
   @scala.inline
-  def apply(
-    imei: String = null,
-    meid: String = null,
-    networkOperatorName: String = null,
-    wifiMacAddress: String = null
-  ): SchemaNetworkInfo = {
+  def apply(): SchemaNetworkInfo = {
     val __obj = js.Dynamic.literal()
-    if (imei != null) __obj.updateDynamic("imei")(imei.asInstanceOf[js.Any])
-    if (meid != null) __obj.updateDynamic("meid")(meid.asInstanceOf[js.Any])
-    if (networkOperatorName != null) __obj.updateDynamic("networkOperatorName")(networkOperatorName.asInstanceOf[js.Any])
-    if (wifiMacAddress != null) __obj.updateDynamic("wifiMacAddress")(wifiMacAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkInfo]
   }
+  @scala.inline
+  implicit class SchemaNetworkInfoOps[Self <: SchemaNetworkInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImei(value: String): Self = this.set("imei", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImei: Self = this.set("imei", js.undefined)
+    @scala.inline
+    def setMeid(value: String): Self = this.set("meid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeid: Self = this.set("meid", js.undefined)
+    @scala.inline
+    def setNetworkOperatorName(value: String): Self = this.set("networkOperatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkOperatorName: Self = this.set("networkOperatorName", js.undefined)
+    @scala.inline
+    def setWifiMacAddress(value: String): Self = this.set("wifiMacAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWifiMacAddress: Self = this.set("wifiMacAddress", js.undefined)
+  }
+  
 }
 

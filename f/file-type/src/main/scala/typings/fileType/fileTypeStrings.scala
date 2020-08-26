@@ -119,6 +119,9 @@ object fileTypeStrings {
   sealed trait `applicationSlashx-apple-diskimage` extends MimeType
   
   @js.native
+  sealed trait `applicationSlashx-asar` extends MimeType
+  
+  @js.native
   sealed trait `applicationSlashx-blender` extends MimeType
   
   @js.native
@@ -135,6 +138,9 @@ object fileTypeStrings {
   
   @js.native
   sealed trait `applicationSlashx-google-chrome-extension` extends MimeType
+  
+  @js.native
+  sealed trait `applicationSlashx-indesign` extends MimeType
   
   @js.native
   sealed trait `applicationSlashx-lzh-compressed` extends MimeType
@@ -201,6 +207,9 @@ object fileTypeStrings {
   
   @js.native
   sealed trait arw extends FileExtension
+  
+  @js.native
+  sealed trait asar extends FileExtension
   
   @js.native
   sealed trait asf extends FileExtension
@@ -492,6 +501,9 @@ object fileTypeStrings {
   
   @js.native
   sealed trait `imageSlashx-sony-arw` extends MimeType
+  
+  @js.native
+  sealed trait indd extends FileExtension
   
   @js.native
   sealed trait it extends FileExtension
@@ -868,6 +880,8 @@ object fileTypeStrings {
   @scala.inline
   def `applicationSlashx-apple-diskimage`: `applicationSlashx-apple-diskimage` = "application/x-apple-diskimage".asInstanceOf[`applicationSlashx-apple-diskimage`]
   @scala.inline
+  def `applicationSlashx-asar`: `applicationSlashx-asar` = "application/x-asar".asInstanceOf[`applicationSlashx-asar`]
+  @scala.inline
   def `applicationSlashx-blender`: `applicationSlashx-blender` = "application/x-blender".asInstanceOf[`applicationSlashx-blender`]
   @scala.inline
   def `applicationSlashx-bzip2`: `applicationSlashx-bzip2` = "application/x-bzip2".asInstanceOf[`applicationSlashx-bzip2`]
@@ -879,6 +893,8 @@ object fileTypeStrings {
   def `applicationSlashx-esri-shape`: `applicationSlashx-esri-shape` = "application/x-esri-shape".asInstanceOf[`applicationSlashx-esri-shape`]
   @scala.inline
   def `applicationSlashx-google-chrome-extension`: `applicationSlashx-google-chrome-extension` = "application/x-google-chrome-extension".asInstanceOf[`applicationSlashx-google-chrome-extension`]
+  @scala.inline
+  def `applicationSlashx-indesign`: `applicationSlashx-indesign` = "application/x-indesign".asInstanceOf[`applicationSlashx-indesign`]
   @scala.inline
   def `applicationSlashx-lzh-compressed`: `applicationSlashx-lzh-compressed` = "application/x-lzh-compressed".asInstanceOf[`applicationSlashx-lzh-compressed`]
   @scala.inline
@@ -923,6 +939,8 @@ object fileTypeStrings {
   def arrow: arrow = "arrow".asInstanceOf[arrow]
   @scala.inline
   def arw: arw = "arw".asInstanceOf[arw]
+  @scala.inline
+  def asar: asar = "asar".asInstanceOf[asar]
   @scala.inline
   def asf: asf = "asf".asInstanceOf[asf]
   @scala.inline
@@ -1117,6 +1135,8 @@ object fileTypeStrings {
   def `imageSlashx-panasonic-rw2`: `imageSlashx-panasonic-rw2` = "image/x-panasonic-rw2".asInstanceOf[`imageSlashx-panasonic-rw2`]
   @scala.inline
   def `imageSlashx-sony-arw`: `imageSlashx-sony-arw` = "image/x-sony-arw".asInstanceOf[`imageSlashx-sony-arw`]
+  @scala.inline
+  def indd: indd = "indd".asInstanceOf[indd]
   @scala.inline
   def it: it = "it".asInstanceOf[it]
   @scala.inline

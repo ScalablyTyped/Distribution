@@ -13,23 +13,23 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var v1: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     Androidpublisher
   ] = js.native
   @JSName("v1.1")
   var v1Dot1: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     typings.googleapis.v11Mod.androidpublisherV11.Androidpublisher
   ] = js.native
   var v2: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     typings.googleapis.v2Mod.androidpublisherV2.Androidpublisher
   ] = js.native
   var v3: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     typings.googleapis.androidpublisherV3Mod.androidpublisherV3.Androidpublisher
   ] = js.native
 }

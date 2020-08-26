@@ -10,9 +10,9 @@ ElGamal cryptosystem for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | elgamal |
 | Keywords           | el, gamal, crypto, encrypt |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 4893 |
+| # downloads        | 4673 |
 | # stars            | 1 |
 
 ## Links

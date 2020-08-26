@@ -25,14 +25,30 @@ trait SchemaInstanceGroupManagerStatus extends js.Object {
 
 object SchemaInstanceGroupManagerStatus {
   @scala.inline
-  def apply(
-    isStable: js.UndefOr[Boolean] = js.undefined,
-    versionTarget: SchemaInstanceGroupManagerStatusVersionTarget = null
-  ): SchemaInstanceGroupManagerStatus = {
+  def apply(): SchemaInstanceGroupManagerStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isStable)) __obj.updateDynamic("isStable")(isStable.get.asInstanceOf[js.Any])
-    if (versionTarget != null) __obj.updateDynamic("versionTarget")(versionTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerStatus]
   }
+  @scala.inline
+  implicit class SchemaInstanceGroupManagerStatusOps[Self <: SchemaInstanceGroupManagerStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsStable(value: Boolean): Self = this.set("isStable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsStable: Self = this.set("isStable", js.undefined)
+    @scala.inline
+    def setVersionTarget(value: SchemaInstanceGroupManagerStatusVersionTarget): Self = this.set("versionTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionTarget: Self = this.set("versionTarget", js.undefined)
+  }
+  
 }
 

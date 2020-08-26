@@ -43,7 +43,15 @@ object notificationApiMod extends js.Object {
     def listNotificationReasons(): js.Promise[js.Array[NotificationReason]] = js.native
     def listNotificationReasons(notificationIds: Double): js.Promise[js.Array[NotificationReason]] = js.native
     def listSubscriptions(): js.Promise[js.Array[NotificationSubscription]] = js.native
+    def listSubscriptions(
+      targetId: js.UndefOr[scala.Nothing],
+      ids: js.UndefOr[scala.Nothing],
+      queryFlags: SubscriptionQueryFlags
+    ): js.Promise[js.Array[NotificationSubscription]] = js.native
+    def listSubscriptions(targetId: js.UndefOr[scala.Nothing], ids: js.Array[String]): js.Promise[js.Array[NotificationSubscription]] = js.native
+    def listSubscriptions(targetId: js.UndefOr[scala.Nothing], ids: js.Array[String], queryFlags: SubscriptionQueryFlags): js.Promise[js.Array[NotificationSubscription]] = js.native
     def listSubscriptions(targetId: String): js.Promise[js.Array[NotificationSubscription]] = js.native
+    def listSubscriptions(targetId: String, ids: js.UndefOr[scala.Nothing], queryFlags: SubscriptionQueryFlags): js.Promise[js.Array[NotificationSubscription]] = js.native
     def listSubscriptions(targetId: String, ids: js.Array[String]): js.Promise[js.Array[NotificationSubscription]] = js.native
     def listSubscriptions(targetId: String, ids: js.Array[String], queryFlags: SubscriptionQueryFlags): js.Promise[js.Array[NotificationSubscription]] = js.native
     def performBatchNotificationOperations(operation: BatchNotificationOperation): js.Promise[Unit] = js.native

@@ -1,88 +1,69 @@
 package typings.tensorflowTfjsLayers.convolutionalSerializationMod
 
-import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsLayers.constraintConfigMod.ConstraintSerialization
 import typings.tensorflowTfjsLayers.initializerConfigMod.InitializerSerialization
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormatSerialization
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.regularizerConfigMod.RegularizerSerialization
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SeparableConvLayerConfig extends ConvLayerConfig {
-  var depth_multiplier: js.UndefOr[Double] = js.undefined
-  var depthwise_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
-  var depthwise_initializer: js.UndefOr[InitializerSerialization] = js.undefined
-  var depthwise_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
-  var pointwise_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
-  var pointwise_initializer: js.UndefOr[InitializerSerialization] = js.undefined
-  var pointwise_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
+  var depth_multiplier: js.UndefOr[Double] = js.native
+  var depthwise_constraint: js.UndefOr[ConstraintSerialization] = js.native
+  var depthwise_initializer: js.UndefOr[InitializerSerialization] = js.native
+  var depthwise_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+  var pointwise_constraint: js.UndefOr[ConstraintSerialization] = js.native
+  var pointwise_initializer: js.UndefOr[InitializerSerialization] = js.native
+  var pointwise_regularizer: js.UndefOr[RegularizerSerialization] = js.native
 }
 
 object SeparableConvLayerConfig {
   @scala.inline
-  def apply(
-    filters: Double,
-    kernel_size: Double | js.Array[Double],
-    activation: String = null,
-    activity_regularizer: RegularizerSerialization = null,
-    batch_input_shape: Shape = null,
-    batch_size: js.UndefOr[Double] = js.undefined,
-    bias_constraint: ConstraintSerialization = null,
-    bias_initializer: InitializerSerialization = null,
-    bias_regularizer: RegularizerSerialization = null,
-    data_format: DataFormatSerialization = null,
-    depth_multiplier: js.UndefOr[Double] = js.undefined,
-    depthwise_constraint: ConstraintSerialization = null,
-    depthwise_initializer: InitializerSerialization = null,
-    depthwise_regularizer: RegularizerSerialization = null,
-    dilation_rate: Double | js.Array[Double] | (js.Tuple2[Double, Double]) = null,
-    dtype: DataType = null,
-    input_dtype: DataType = null,
-    input_shape: Shape = null,
-    kernel_constraint: ConstraintSerialization = null,
-    kernel_initializer: InitializerSerialization = null,
-    kernel_regularizer: RegularizerSerialization = null,
-    name: String = null,
-    padding: PaddingMode = null,
-    pointwise_constraint: ConstraintSerialization = null,
-    pointwise_initializer: InitializerSerialization = null,
-    pointwise_regularizer: RegularizerSerialization = null,
-    strides: Double | js.Array[Double] = null,
-    trainable: js.UndefOr[Boolean] = js.undefined,
-    use_bias: js.UndefOr[Boolean] = js.undefined
-  ): SeparableConvLayerConfig = {
+  def apply(filters: Double, kernel_size: Double | js.Array[Double]): SeparableConvLayerConfig = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], kernel_size = kernel_size.asInstanceOf[js.Any])
-    if (activation != null) __obj.updateDynamic("activation")(activation.asInstanceOf[js.Any])
-    if (activity_regularizer != null) __obj.updateDynamic("activity_regularizer")(activity_regularizer.asInstanceOf[js.Any])
-    if (batch_input_shape != null) __obj.updateDynamic("batch_input_shape")(batch_input_shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(batch_size)) __obj.updateDynamic("batch_size")(batch_size.get.asInstanceOf[js.Any])
-    if (bias_constraint != null) __obj.updateDynamic("bias_constraint")(bias_constraint.asInstanceOf[js.Any])
-    if (bias_initializer != null) __obj.updateDynamic("bias_initializer")(bias_initializer.asInstanceOf[js.Any])
-    if (bias_regularizer != null) __obj.updateDynamic("bias_regularizer")(bias_regularizer.asInstanceOf[js.Any])
-    if (data_format != null) __obj.updateDynamic("data_format")(data_format.asInstanceOf[js.Any])
-    if (!js.isUndefined(depth_multiplier)) __obj.updateDynamic("depth_multiplier")(depth_multiplier.get.asInstanceOf[js.Any])
-    if (depthwise_constraint != null) __obj.updateDynamic("depthwise_constraint")(depthwise_constraint.asInstanceOf[js.Any])
-    if (depthwise_initializer != null) __obj.updateDynamic("depthwise_initializer")(depthwise_initializer.asInstanceOf[js.Any])
-    if (depthwise_regularizer != null) __obj.updateDynamic("depthwise_regularizer")(depthwise_regularizer.asInstanceOf[js.Any])
-    if (dilation_rate != null) __obj.updateDynamic("dilation_rate")(dilation_rate.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (input_dtype != null) __obj.updateDynamic("input_dtype")(input_dtype.asInstanceOf[js.Any])
-    if (input_shape != null) __obj.updateDynamic("input_shape")(input_shape.asInstanceOf[js.Any])
-    if (kernel_constraint != null) __obj.updateDynamic("kernel_constraint")(kernel_constraint.asInstanceOf[js.Any])
-    if (kernel_initializer != null) __obj.updateDynamic("kernel_initializer")(kernel_initializer.asInstanceOf[js.Any])
-    if (kernel_regularizer != null) __obj.updateDynamic("kernel_regularizer")(kernel_regularizer.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pointwise_constraint != null) __obj.updateDynamic("pointwise_constraint")(pointwise_constraint.asInstanceOf[js.Any])
-    if (pointwise_initializer != null) __obj.updateDynamic("pointwise_initializer")(pointwise_initializer.asInstanceOf[js.Any])
-    if (pointwise_regularizer != null) __obj.updateDynamic("pointwise_regularizer")(pointwise_regularizer.asInstanceOf[js.Any])
-    if (strides != null) __obj.updateDynamic("strides")(strides.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(use_bias)) __obj.updateDynamic("use_bias")(use_bias.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeparableConvLayerConfig]
   }
+  @scala.inline
+  implicit class SeparableConvLayerConfigOps[Self <: SeparableConvLayerConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDepth_multiplier(value: Double): Self = this.set("depth_multiplier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepth_multiplier: Self = this.set("depth_multiplier", js.undefined)
+    @scala.inline
+    def setDepthwise_constraint(value: ConstraintSerialization): Self = this.set("depthwise_constraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepthwise_constraint: Self = this.set("depthwise_constraint", js.undefined)
+    @scala.inline
+    def setDepthwise_initializer(value: InitializerSerialization): Self = this.set("depthwise_initializer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepthwise_initializer: Self = this.set("depthwise_initializer", js.undefined)
+    @scala.inline
+    def setDepthwise_regularizer(value: RegularizerSerialization): Self = this.set("depthwise_regularizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepthwise_regularizer: Self = this.set("depthwise_regularizer", js.undefined)
+    @scala.inline
+    def setPointwise_constraint(value: ConstraintSerialization): Self = this.set("pointwise_constraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointwise_constraint: Self = this.set("pointwise_constraint", js.undefined)
+    @scala.inline
+    def setPointwise_initializer(value: InitializerSerialization): Self = this.set("pointwise_initializer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointwise_initializer: Self = this.set("pointwise_initializer", js.undefined)
+    @scala.inline
+    def setPointwise_regularizer(value: RegularizerSerialization): Self = this.set("pointwise_regularizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointwise_regularizer: Self = this.set("pointwise_regularizer", js.undefined)
+  }
+  
 }
 

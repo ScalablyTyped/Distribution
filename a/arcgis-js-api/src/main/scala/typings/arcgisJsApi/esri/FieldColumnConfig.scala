@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FieldColumnConfig extends FieldConfig {
   /**
-    * Controls the sort order of the column. This property will only be honored on one fieldColumn in the FeatureTable widget. If direction is specified on more than one FieldColumn in the same FeatureTable, it will only be honored on the column with the highest index.
+    * Controls the sort order of the column. This property will only be honored on one [fieldColumn](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html) in the FeatureTable widget. If direction is specified on more than one [fieldColumn](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html) in the same FeatureTable, it will only be honored on the column with the highest index.
     *
     * Possible Value | Description
     * ---------------|------------
@@ -19,10 +19,22 @@ trait FieldColumnConfig extends FieldConfig {
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#direction)
-    *
-    * @default null
     */
   var direction: asc_ | desc_ | js.Any = js.native
+  /**
+    * Set this object to customize the field column's menu content.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#menuConfig)
+    */
+  var menuConfig: ButtonMenuConfig = js.native
+  /**
+    * Indicates whether the field column can be sorted.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#sortable)
+    *
+    * @default true
+    */
+  var sortable: Boolean = js.native
   /**
     * Indicates whether the field column is visible.
     *

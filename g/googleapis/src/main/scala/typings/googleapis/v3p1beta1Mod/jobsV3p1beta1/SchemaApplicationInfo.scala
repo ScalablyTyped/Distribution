@@ -36,12 +36,38 @@ trait SchemaApplicationInfo extends js.Object {
 
 object SchemaApplicationInfo {
   @scala.inline
-  def apply(emails: js.Array[String] = null, instruction: String = null, uris: js.Array[String] = null): SchemaApplicationInfo = {
+  def apply(): SchemaApplicationInfo = {
     val __obj = js.Dynamic.literal()
-    if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
-    if (instruction != null) __obj.updateDynamic("instruction")(instruction.asInstanceOf[js.Any])
-    if (uris != null) __obj.updateDynamic("uris")(uris.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApplicationInfo]
   }
+  @scala.inline
+  implicit class SchemaApplicationInfoOps[Self <: SchemaApplicationInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmailsVarargs(value: String*): Self = this.set("emails", js.Array(value :_*))
+    @scala.inline
+    def setEmails(value: js.Array[String]): Self = this.set("emails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmails: Self = this.set("emails", js.undefined)
+    @scala.inline
+    def setInstruction(value: String): Self = this.set("instruction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstruction: Self = this.set("instruction", js.undefined)
+    @scala.inline
+    def setUrisVarargs(value: String*): Self = this.set("uris", js.Array(value :_*))
+    @scala.inline
+    def setUris(value: js.Array[String]): Self = this.set("uris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUris: Self = this.set("uris", js.undefined)
+  }
+  
 }
 

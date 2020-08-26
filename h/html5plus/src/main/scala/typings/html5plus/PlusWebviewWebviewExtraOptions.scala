@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
+@js.native
 trait PlusWebviewWebviewExtraOptions extends js.Object {
   /**
     * 窗口动画加速
@@ -23,7 +24,7 @@ trait PlusWebviewWebviewExtraOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var acceleration: js.UndefOr[auto] = js.undefined
+  var acceleration: js.UndefOr[auto] = js.native
   /**
     * 窗口动画加速时使用的图片
     * 当使用截屏方式加速窗口动画时，可设置已经创建好的截屏图片，此时不会进行实时截屏操作，加速窗口动画响应时间，提升用户体验。
@@ -32,7 +33,7 @@ trait PlusWebviewWebviewExtraOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var capture: js.UndefOr[PlusNativeObjBitmap] = js.undefined
+  var capture: js.UndefOr[PlusNativeObjBitmap] = js.native
   /**
     * 关联窗口动画使用的图片
     * 当使用截屏方式加速窗口动画时，可设置已经创建好的截屏图片，此时不会进行实时截屏操作，加速关联窗口动画响应时间，提升用户体验。
@@ -41,21 +42,39 @@ trait PlusWebviewWebviewExtraOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var otherCapture: js.UndefOr[PlusNativeObjBitmap] = js.undefined
+  var otherCapture: js.UndefOr[PlusNativeObjBitmap] = js.native
 }
 
 object PlusWebviewWebviewExtraOptions {
   @scala.inline
-  def apply(
-    acceleration: auto = null,
-    capture: PlusNativeObjBitmap = null,
-    otherCapture: PlusNativeObjBitmap = null
-  ): PlusWebviewWebviewExtraOptions = {
+  def apply(): PlusWebviewWebviewExtraOptions = {
     val __obj = js.Dynamic.literal()
-    if (acceleration != null) __obj.updateDynamic("acceleration")(acceleration.asInstanceOf[js.Any])
-    if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
-    if (otherCapture != null) __obj.updateDynamic("otherCapture")(otherCapture.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewExtraOptions]
   }
+  @scala.inline
+  implicit class PlusWebviewWebviewExtraOptionsOps[Self <: PlusWebviewWebviewExtraOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleration(value: auto): Self = this.set("acceleration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleration: Self = this.set("acceleration", js.undefined)
+    @scala.inline
+    def setCapture(value: PlusNativeObjBitmap): Self = this.set("capture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapture: Self = this.set("capture", js.undefined)
+    @scala.inline
+    def setOtherCapture(value: PlusNativeObjBitmap): Self = this.set("otherCapture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtherCapture: Self = this.set("otherCapture", js.undefined)
+  }
+  
 }
 

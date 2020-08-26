@@ -19,7 +19,17 @@ class TimeUuid () extends Uuid {
 @js.native
 object TimeUuid extends js.Object {
   def fromDate(date: Date): TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: js.UndefOr[scala.Nothing], clockId: String): TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: js.UndefOr[scala.Nothing], clockId: Buffer): TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: String): TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: String, clockId: String): TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: String, clockId: Buffer): TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: Buffer): TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: Buffer, clockId: String): TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: Buffer, clockId: Buffer): TimeUuid = js.native
   def fromDate(date: Date, ticks: Double): TimeUuid = js.native
+  def fromDate(date: Date, ticks: Double, nodeId: js.UndefOr[scala.Nothing], clockId: String): TimeUuid = js.native
+  def fromDate(date: Date, ticks: Double, nodeId: js.UndefOr[scala.Nothing], clockId: Buffer): TimeUuid = js.native
   def fromDate(date: Date, ticks: Double, nodeId: String): TimeUuid = js.native
   def fromDate(date: Date, ticks: Double, nodeId: String, clockId: String): TimeUuid = js.native
   def fromDate(date: Date, ticks: Double, nodeId: String, clockId: String, callback: ValueCallback[TimeUuid]): Unit = js.native

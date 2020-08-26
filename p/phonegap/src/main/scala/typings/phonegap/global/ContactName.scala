@@ -8,20 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ContactName")
 @js.native
 class ContactName ()
-  extends typings.phonegap.ContactName {
-  /* CompleteClass */
-  override var familyName: String = js.native
-  /* CompleteClass */
-  override var formatted: String = js.native
-  /* CompleteClass */
-  override var givenName: String = js.native
-  /* CompleteClass */
-  override var honorificPrefix: String = js.native
-  /* CompleteClass */
-  override var honorificSuffix: String = js.native
-  /* CompleteClass */
-  override var middleName: String = js.native
-}
+  extends typings.phonegap.ContactName
 
 @JSGlobal("ContactName")
 @js.native

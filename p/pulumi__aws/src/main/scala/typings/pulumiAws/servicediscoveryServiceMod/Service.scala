@@ -1,5 +1,6 @@
 package typings.pulumiAws.servicediscoveryServiceMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.servicediscovery.ServiceDnsConfig
 import typings.pulumiAws.outputMod.servicediscovery.ServiceHealthCheckConfig
 import typings.pulumiAws.outputMod.servicediscovery.ServiceHealthCheckCustomConfig
@@ -24,6 +25,7 @@ class Service protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: ServiceArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ServiceArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN of the service.
@@ -53,6 +55,10 @@ class Service protected () extends CustomResource {
     * The ID of the namespace to use for DNS configuration.
     */
   val namespaceId: Output_[String] = js.native
+  /**
+    * A map of tags to assign to the service.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -66,8 +72,10 @@ object Service extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Service = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Service = js.native
   def get(name: String, id: Input[ID], state: ServiceState): Service = js.native
   def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): Service = js.native
   /**

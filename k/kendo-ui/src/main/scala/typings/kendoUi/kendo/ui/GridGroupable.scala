@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridGroupable extends js.Object {
-  var compare: js.UndefOr[js.Function] = js.undefined
-  var dir: js.UndefOr[String] = js.undefined
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  var messages: js.UndefOr[GridGroupableMessages] = js.undefined
-  var showFooter: js.UndefOr[Boolean] = js.undefined
+  var compare: js.UndefOr[js.Function] = js.native
+  var dir: js.UndefOr[String] = js.native
+  var enabled: js.UndefOr[Boolean] = js.native
+  var messages: js.UndefOr[GridGroupableMessages] = js.native
+  var showFooter: js.UndefOr[Boolean] = js.native
 }
 
 object GridGroupable {
   @scala.inline
-  def apply(
-    compare: js.Function = null,
-    dir: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    messages: GridGroupableMessages = null,
-    showFooter: js.UndefOr[Boolean] = js.undefined
-  ): GridGroupable = {
+  def apply(): GridGroupable = {
     val __obj = js.Dynamic.literal()
-    if (compare != null) __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridGroupable]
   }
+  @scala.inline
+  implicit class GridGroupableOps[Self <: GridGroupable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompare(value: js.Function): Self = this.set("compare", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompare: Self = this.set("compare", js.undefined)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setMessages(value: GridGroupableMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setShowFooter(value: Boolean): Self = this.set("showFooter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFooter: Self = this.set("showFooter", js.undefined)
+  }
+  
 }
 

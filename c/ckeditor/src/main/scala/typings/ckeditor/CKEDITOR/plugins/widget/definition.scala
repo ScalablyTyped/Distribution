@@ -11,93 +11,142 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait definition extends feature {
-  var button: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.undefined
-  var defaults: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var dialog: js.UndefOr[String] = js.undefined
-  var downcast: js.UndefOr[String | (js.Function1[/* element */ element, Unit])] = js.undefined
-  var downcasts: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
-  var edit: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var editables: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var getLabel: js.UndefOr[js.Function0[_]] = js.undefined
-  var init: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var `inline`: js.UndefOr[Boolean] = js.undefined
-  var insert: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var mask: js.UndefOr[Boolean] = js.undefined
-  var parts: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var pathName: js.UndefOr[String] = js.undefined
-  var styleToAllowedContentRules: js.UndefOr[js.Function1[/* style */ style, allowedContentRules]] = js.undefined
-  var styleableElements: js.UndefOr[String] = js.undefined
-  var template: js.UndefOr[String | typings.ckeditor.CKEDITOR.template] = js.undefined
-  var upcast: js.UndefOr[String | (js.Function2[/* element */ element, /* data */ js.Any, Boolean])] = js.undefined
-  var upcastPriority: js.UndefOr[Double] = js.undefined
-  var upcasts: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var button: js.UndefOr[String] = js.native
+  var data: js.UndefOr[js.Function1[/* evt */ eventInfo, Unit]] = js.native
+  var defaults: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var dialog: js.UndefOr[String] = js.native
+  var downcast: js.UndefOr[String | (js.Function1[/* element */ element, Unit])] = js.native
+  var downcasts: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var draggable: js.UndefOr[Boolean] = js.native
+  var edit: js.UndefOr[js.Function0[Unit]] = js.native
+  var editables: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var getLabel: js.UndefOr[js.Function0[_]] = js.native
+  var init: js.UndefOr[js.Function0[Unit]] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.native
+  var insert: js.UndefOr[js.Function0[Unit]] = js.native
+  var mask: js.UndefOr[Boolean] = js.native
+  var parts: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var pathName: js.UndefOr[String] = js.native
+  var styleToAllowedContentRules: js.UndefOr[js.Function1[/* style */ style, allowedContentRules]] = js.native
+  var styleableElements: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String | typings.ckeditor.CKEDITOR.template] = js.native
+  var upcast: js.UndefOr[String | (js.Function2[/* element */ element, /* data */ js.Any, Boolean])] = js.native
+  var upcastPriority: js.UndefOr[Double] = js.native
+  var upcasts: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 
 object definition {
   @scala.inline
-  def apply(
-    allowedContent: allowedContentRules = null,
-    button: String = null,
-    contentForms: js.Any = null,
-    contentTransformations: js.Any = null,
-    data: /* evt */ eventInfo => Unit = null,
-    defaults: StringDictionary[js.Any] = null,
-    dialog: String = null,
-    downcast: String | (js.Function1[/* element */ element, Unit]) = null,
-    downcasts: StringDictionary[js.Any] = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    edit: () => Unit = null,
-    editables: StringDictionary[js.Any] = null,
-    getLabel: () => _ = null,
-    init: () => Unit = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    insert: () => Unit = null,
-    mask: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    parts: StringDictionary[js.Any] = null,
-    pathName: String = null,
-    requiredContent: String | style = null,
-    styleToAllowedContentRules: /* style */ style => allowedContentRules = null,
-    styleableElements: String = null,
-    template: String | template = null,
-    toFeature: () => feature = null,
-    upcast: String | (js.Function2[/* element */ element, /* data */ js.Any, Boolean]) = null,
-    upcastPriority: js.UndefOr[Double] = js.undefined,
-    upcasts: StringDictionary[js.Any] = null
-  ): definition = {
+  def apply(): definition = {
     val __obj = js.Dynamic.literal()
-    if (allowedContent != null) __obj.updateDynamic("allowedContent")(allowedContent.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (contentForms != null) __obj.updateDynamic("contentForms")(contentForms.asInstanceOf[js.Any])
-    if (contentTransformations != null) __obj.updateDynamic("contentTransformations")(contentTransformations.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(js.Any.fromFunction1(data))
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
-    if (dialog != null) __obj.updateDynamic("dialog")(dialog.asInstanceOf[js.Any])
-    if (downcast != null) __obj.updateDynamic("downcast")(downcast.asInstanceOf[js.Any])
-    if (downcasts != null) __obj.updateDynamic("downcasts")(downcasts.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction0(edit))
-    if (editables != null) __obj.updateDynamic("editables")(editables.asInstanceOf[js.Any])
-    if (getLabel != null) __obj.updateDynamic("getLabel")(js.Any.fromFunction0(getLabel))
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction0(init))
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (insert != null) __obj.updateDynamic("insert")(js.Any.fromFunction0(insert))
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parts != null) __obj.updateDynamic("parts")(parts.asInstanceOf[js.Any])
-    if (pathName != null) __obj.updateDynamic("pathName")(pathName.asInstanceOf[js.Any])
-    if (requiredContent != null) __obj.updateDynamic("requiredContent")(requiredContent.asInstanceOf[js.Any])
-    if (styleToAllowedContentRules != null) __obj.updateDynamic("styleToAllowedContentRules")(js.Any.fromFunction1(styleToAllowedContentRules))
-    if (styleableElements != null) __obj.updateDynamic("styleableElements")(styleableElements.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (toFeature != null) __obj.updateDynamic("toFeature")(js.Any.fromFunction0(toFeature))
-    if (upcast != null) __obj.updateDynamic("upcast")(upcast.asInstanceOf[js.Any])
-    if (!js.isUndefined(upcastPriority)) __obj.updateDynamic("upcastPriority")(upcastPriority.get.asInstanceOf[js.Any])
-    if (upcasts != null) __obj.updateDynamic("upcasts")(upcasts.asInstanceOf[js.Any])
     __obj.asInstanceOf[definition]
   }
+  @scala.inline
+  implicit class definitionOps[Self <: definition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setButton(value: String): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("button", js.undefined)
+    @scala.inline
+    def setData(value: /* evt */ eventInfo => Unit): Self = this.set("data", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDefaults(value: StringDictionary[js.Any]): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    @scala.inline
+    def setDialog(value: String): Self = this.set("dialog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialog: Self = this.set("dialog", js.undefined)
+    @scala.inline
+    def setDowncastFunction1(value: /* element */ element => Unit): Self = this.set("downcast", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDowncast(value: String | (js.Function1[/* element */ element, Unit])): Self = this.set("downcast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDowncast: Self = this.set("downcast", js.undefined)
+    @scala.inline
+    def setDowncasts(value: StringDictionary[js.Any]): Self = this.set("downcasts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDowncasts: Self = this.set("downcasts", js.undefined)
+    @scala.inline
+    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setEdit(value: () => Unit): Self = this.set("edit", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteEdit: Self = this.set("edit", js.undefined)
+    @scala.inline
+    def setEditables(value: StringDictionary[js.Any]): Self = this.set("editables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditables: Self = this.set("editables", js.undefined)
+    @scala.inline
+    def setGetLabel(value: () => _): Self = this.set("getLabel", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetLabel: Self = this.set("getLabel", js.undefined)
+    @scala.inline
+    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteInit: Self = this.set("init", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setInsert(value: () => Unit): Self = this.set("insert", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteInsert: Self = this.set("insert", js.undefined)
+    @scala.inline
+    def setMask(value: Boolean): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setParts(value: StringDictionary[js.Any]): Self = this.set("parts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParts: Self = this.set("parts", js.undefined)
+    @scala.inline
+    def setPathName(value: String): Self = this.set("pathName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathName: Self = this.set("pathName", js.undefined)
+    @scala.inline
+    def setStyleToAllowedContentRules(value: /* style */ style => allowedContentRules): Self = this.set("styleToAllowedContentRules", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStyleToAllowedContentRules: Self = this.set("styleToAllowedContentRules", js.undefined)
+    @scala.inline
+    def setStyleableElements(value: String): Self = this.set("styleableElements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleableElements: Self = this.set("styleableElements", js.undefined)
+    @scala.inline
+    def setTemplate(value: String | template): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setUpcastFunction2(value: (/* element */ element, /* data */ js.Any) => Boolean): Self = this.set("upcast", js.Any.fromFunction2(value))
+    @scala.inline
+    def setUpcast(value: String | (js.Function2[/* element */ element, /* data */ js.Any, Boolean])): Self = this.set("upcast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpcast: Self = this.set("upcast", js.undefined)
+    @scala.inline
+    def setUpcastPriority(value: Double): Self = this.set("upcastPriority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpcastPriority: Self = this.set("upcastPriority", js.undefined)
+    @scala.inline
+    def setUpcasts(value: StringDictionary[js.Any]): Self = this.set("upcasts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpcasts: Self = this.set("upcasts", js.undefined)
+  }
+  
 }
 

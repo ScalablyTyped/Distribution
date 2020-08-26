@@ -42,25 +42,54 @@ trait UpdateServerRequest extends js.Object {
 
 object UpdateServerRequest {
   @scala.inline
-  def apply(
-    ServerId: ServerId,
-    Certificate: Certificate = null,
-    EndpointDetails: EndpointDetails = null,
-    EndpointType: EndpointType = null,
-    HostKey: HostKey = null,
-    IdentityProviderDetails: IdentityProviderDetails = null,
-    LoggingRole: NullableRole = null,
-    Protocols: Protocols = null
-  ): UpdateServerRequest = {
+  def apply(ServerId: ServerId): UpdateServerRequest = {
     val __obj = js.Dynamic.literal(ServerId = ServerId.asInstanceOf[js.Any])
-    if (Certificate != null) __obj.updateDynamic("Certificate")(Certificate.asInstanceOf[js.Any])
-    if (EndpointDetails != null) __obj.updateDynamic("EndpointDetails")(EndpointDetails.asInstanceOf[js.Any])
-    if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
-    if (HostKey != null) __obj.updateDynamic("HostKey")(HostKey.asInstanceOf[js.Any])
-    if (IdentityProviderDetails != null) __obj.updateDynamic("IdentityProviderDetails")(IdentityProviderDetails.asInstanceOf[js.Any])
-    if (LoggingRole != null) __obj.updateDynamic("LoggingRole")(LoggingRole.asInstanceOf[js.Any])
-    if (Protocols != null) __obj.updateDynamic("Protocols")(Protocols.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServerRequest]
   }
+  @scala.inline
+  implicit class UpdateServerRequestOps[Self <: UpdateServerRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServerId(value: ServerId): Self = this.set("ServerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificate(value: Certificate): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificate: Self = this.set("Certificate", js.undefined)
+    @scala.inline
+    def setEndpointDetails(value: EndpointDetails): Self = this.set("EndpointDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointDetails: Self = this.set("EndpointDetails", js.undefined)
+    @scala.inline
+    def setEndpointType(value: EndpointType): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    @scala.inline
+    def setHostKey(value: HostKey): Self = this.set("HostKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostKey: Self = this.set("HostKey", js.undefined)
+    @scala.inline
+    def setIdentityProviderDetails(value: IdentityProviderDetails): Self = this.set("IdentityProviderDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityProviderDetails: Self = this.set("IdentityProviderDetails", js.undefined)
+    @scala.inline
+    def setLoggingRole(value: NullableRole): Self = this.set("LoggingRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingRole: Self = this.set("LoggingRole", js.undefined)
+    @scala.inline
+    def setProtocolsVarargs(value: Protocol*): Self = this.set("Protocols", js.Array(value :_*))
+    @scala.inline
+    def setProtocols(value: Protocols): Self = this.set("Protocols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocols: Self = this.set("Protocols", js.undefined)
+  }
+  
 }
 

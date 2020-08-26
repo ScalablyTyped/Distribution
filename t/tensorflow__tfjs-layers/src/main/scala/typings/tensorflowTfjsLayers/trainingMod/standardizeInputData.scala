@@ -12,7 +12,34 @@ import scala.scalajs.js.annotation._
 @js.native
 object standardizeInputData extends js.Object {
   def apply(data: js.Array[Tensor[Rank]], names: js.Array[String]): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: js.Array[Tensor[Rank]],
+    names: js.Array[String],
+    shapes: js.UndefOr[scala.Nothing],
+    checkBatchAxis: js.UndefOr[scala.Nothing],
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: js.Array[Tensor[Rank]],
+    names: js.Array[String],
+    shapes: js.UndefOr[scala.Nothing],
+    checkBatchAxis: Boolean
+  ): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: js.Array[Tensor[Rank]],
+    names: js.Array[String],
+    shapes: js.UndefOr[scala.Nothing],
+    checkBatchAxis: Boolean,
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = js.native
   def apply(data: js.Array[Tensor[Rank]], names: js.Array[String], shapes: js.Array[Shape]): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: js.Array[Tensor[Rank]],
+    names: js.Array[String],
+    shapes: js.Array[Shape],
+    checkBatchAxis: js.UndefOr[scala.Nothing],
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = js.native
   def apply(
     data: js.Array[Tensor[Rank]],
     names: js.Array[String],
@@ -27,7 +54,34 @@ object standardizeInputData extends js.Object {
     exceptionPrefix: String
   ): js.Array[Tensor[Rank]] = js.native
   def apply(data: StringDictionary[Tensor[Rank]], names: js.Array[String]): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: StringDictionary[Tensor[Rank]],
+    names: js.Array[String],
+    shapes: js.UndefOr[scala.Nothing],
+    checkBatchAxis: js.UndefOr[scala.Nothing],
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: StringDictionary[Tensor[Rank]],
+    names: js.Array[String],
+    shapes: js.UndefOr[scala.Nothing],
+    checkBatchAxis: Boolean
+  ): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: StringDictionary[Tensor[Rank]],
+    names: js.Array[String],
+    shapes: js.UndefOr[scala.Nothing],
+    checkBatchAxis: Boolean,
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = js.native
   def apply(data: StringDictionary[Tensor[Rank]], names: js.Array[String], shapes: js.Array[Shape]): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: StringDictionary[Tensor[Rank]],
+    names: js.Array[String],
+    shapes: js.Array[Shape],
+    checkBatchAxis: js.UndefOr[scala.Nothing],
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = js.native
   def apply(
     data: StringDictionary[Tensor[Rank]],
     names: js.Array[String],
@@ -42,7 +96,34 @@ object standardizeInputData extends js.Object {
     exceptionPrefix: String
   ): js.Array[Tensor[Rank]] = js.native
   def apply(data: Tensor[Rank], names: js.Array[String]): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: Tensor[Rank],
+    names: js.Array[String],
+    shapes: js.UndefOr[scala.Nothing],
+    checkBatchAxis: js.UndefOr[scala.Nothing],
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: Tensor[Rank],
+    names: js.Array[String],
+    shapes: js.UndefOr[scala.Nothing],
+    checkBatchAxis: Boolean
+  ): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: Tensor[Rank],
+    names: js.Array[String],
+    shapes: js.UndefOr[scala.Nothing],
+    checkBatchAxis: Boolean,
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = js.native
   def apply(data: Tensor[Rank], names: js.Array[String], shapes: js.Array[Shape]): js.Array[Tensor[Rank]] = js.native
+  def apply(
+    data: Tensor[Rank],
+    names: js.Array[String],
+    shapes: js.Array[Shape],
+    checkBatchAxis: js.UndefOr[scala.Nothing],
+    exceptionPrefix: String
+  ): js.Array[Tensor[Rank]] = js.native
   def apply(data: Tensor[Rank], names: js.Array[String], shapes: js.Array[Shape], checkBatchAxis: Boolean): js.Array[Tensor[Rank]] = js.native
   def apply(
     data: Tensor[Rank],

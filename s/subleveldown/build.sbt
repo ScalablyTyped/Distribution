@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "subleveldown"
-version := "4.1-dt-20191226Z-6916c7"
-scalaVersion := "2.13.2"
+version := "4.1-dt-20191226Z-aedcc9"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "abstract-leveldown" % "5.0-dt-20180913Z-178331",
-  "org.scalablytyped" %%% "level-codec" % "9.0-dt-20200515Z-1953af",
-  "org.scalablytyped" %%% "levelup" % "4.3-dt-20200515Z-d30a10",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "abstract-leveldown" % "5.0-dt-20180913Z-ccf732",
+  "org.scalablytyped" %%% "level-codec" % "9.0-dt-20200515Z-9c6e26",
+  "org.scalablytyped" %%% "levelup" % "4.3-dt-20200515Z-9ab4f7",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

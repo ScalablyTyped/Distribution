@@ -14,10 +14,26 @@ trait DescribeJournalKinesisStreamResponse extends js.Object {
 
 object DescribeJournalKinesisStreamResponse {
   @scala.inline
-  def apply(Stream: JournalKinesisStreamDescription = null): DescribeJournalKinesisStreamResponse = {
+  def apply(): DescribeJournalKinesisStreamResponse = {
     val __obj = js.Dynamic.literal()
-    if (Stream != null) __obj.updateDynamic("Stream")(Stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeJournalKinesisStreamResponse]
   }
+  @scala.inline
+  implicit class DescribeJournalKinesisStreamResponseOps[Self <: DescribeJournalKinesisStreamResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStream(value: JournalKinesisStreamDescription): Self = this.set("Stream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStream: Self = this.set("Stream", js.undefined)
+  }
+  
 }
 

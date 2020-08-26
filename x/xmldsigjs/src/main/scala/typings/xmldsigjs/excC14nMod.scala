@@ -17,7 +17,7 @@ object excC14nMod extends js.Object {
       * using the standard canonicalization algorithm.
       */
     def InclusiveNamespacesPrefixList: String = js.native
-    def InclusiveNamespacesPrefixList(value: String): js.Any = js.native
+    def InclusiveNamespacesPrefixList_=(value: String): Unit = js.native
   }
   
   @js.native

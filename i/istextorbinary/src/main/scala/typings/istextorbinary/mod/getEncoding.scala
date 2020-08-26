@@ -12,7 +12,12 @@ import scala.scalajs.js.annotation._
 object getEncoding extends js.Object {
   def apply(
     buffer: Buffer,
-    opts: js.UndefOr[Options],
+    opts: js.UndefOr[scala.Nothing],
+    next: js.Function2[/* err */ Null, /* result */ utf8 | binary, Unit]
+  ): Unit = js.native
+  def apply(
+    buffer: Buffer,
+    opts: Options,
     next: js.Function2[/* err */ Null, /* result */ utf8 | binary, Unit]
   ): Unit = js.native
 }

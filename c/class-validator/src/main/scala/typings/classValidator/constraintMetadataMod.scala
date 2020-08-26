@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("class-validator/metadata/ConstraintMetadata", JSImport.Namespace)
+@JSImport("class-validator/types/metadata/ConstraintMetadata", JSImport.Namespace)
 @js.native
 object constraintMetadataMod extends js.Object {
   @js.native
   class ConstraintMetadata protected () extends js.Object {
     def this(target: js.Function) = this()
     def this(target: js.Function, name: String) = this()
+    def this(target: js.Function, name: js.UndefOr[scala.Nothing], async: Boolean) = this()
     def this(target: js.Function, name: String, async: Boolean) = this()
     /**
       * Indicates if this validation is asynchronous or not.

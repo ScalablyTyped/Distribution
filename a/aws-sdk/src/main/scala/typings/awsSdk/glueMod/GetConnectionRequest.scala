@@ -22,15 +22,32 @@ trait GetConnectionRequest extends js.Object {
 
 object GetConnectionRequest {
   @scala.inline
-  def apply(
-    Name: NameString,
-    CatalogId: CatalogIdString = null,
-    HidePassword: js.UndefOr[Boolean] = js.undefined
-  ): GetConnectionRequest = {
+  def apply(Name: NameString): GetConnectionRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
-    if (!js.isUndefined(HidePassword)) __obj.updateDynamic("HidePassword")(HidePassword.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectionRequest]
   }
+  @scala.inline
+  implicit class GetConnectionRequestOps[Self <: GetConnectionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+    @scala.inline
+    def setHidePassword(value: Boolean): Self = this.set("HidePassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidePassword: Self = this.set("HidePassword", js.undefined)
+  }
+  
 }
 

@@ -26,11 +26,32 @@ trait SchemaDataDiskAssignment extends js.Object {
 
 object SchemaDataDiskAssignment {
   @scala.inline
-  def apply(dataDisks: js.Array[String] = null, vmInstance: String = null): SchemaDataDiskAssignment = {
+  def apply(): SchemaDataDiskAssignment = {
     val __obj = js.Dynamic.literal()
-    if (dataDisks != null) __obj.updateDynamic("dataDisks")(dataDisks.asInstanceOf[js.Any])
-    if (vmInstance != null) __obj.updateDynamic("vmInstance")(vmInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDataDiskAssignment]
   }
+  @scala.inline
+  implicit class SchemaDataDiskAssignmentOps[Self <: SchemaDataDiskAssignment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataDisksVarargs(value: String*): Self = this.set("dataDisks", js.Array(value :_*))
+    @scala.inline
+    def setDataDisks(value: js.Array[String]): Self = this.set("dataDisks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataDisks: Self = this.set("dataDisks", js.undefined)
+    @scala.inline
+    def setVmInstance(value: String): Self = this.set("vmInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmInstance: Self = this.set("vmInstance", js.undefined)
+  }
+  
 }
 

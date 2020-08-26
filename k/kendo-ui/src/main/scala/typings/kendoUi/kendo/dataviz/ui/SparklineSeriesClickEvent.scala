@@ -4,36 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SparklineSeriesClickEvent extends SparklineEvent {
-  var category: js.UndefOr[js.Any] = js.undefined
-  var dataItem: js.UndefOr[js.Any] = js.undefined
-  var element: js.UndefOr[js.Any] = js.undefined
-  var percentage: js.UndefOr[js.Any] = js.undefined
-  var series: js.UndefOr[SparklineSeriesClickEventSeries] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  var category: js.UndefOr[js.Any] = js.native
+  var dataItem: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.native
+  var percentage: js.UndefOr[js.Any] = js.native
+  var series: js.UndefOr[SparklineSeriesClickEventSeries] = js.native
+  var value: js.UndefOr[js.Any] = js.native
 }
 
 object SparklineSeriesClickEvent {
   @scala.inline
-  def apply(
-    isDefaultPrevented: () => Boolean,
-    preventDefault: js.Function,
-    sender: Sparkline,
-    category: js.Any = null,
-    dataItem: js.Any = null,
-    element: js.Any = null,
-    percentage: js.Any = null,
-    series: SparklineSeriesClickEventSeries = null,
-    value: js.Any = null
-  ): SparklineSeriesClickEvent = {
+  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Sparkline): SparklineSeriesClickEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineSeriesClickEvent]
   }
+  @scala.inline
+  implicit class SparklineSeriesClickEventOps[Self <: SparklineSeriesClickEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: js.Any): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setDataItem(value: js.Any): Self = this.set("dataItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataItem: Self = this.set("dataItem", js.undefined)
+    @scala.inline
+    def setElement(value: js.Any): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    @scala.inline
+    def setPercentage(value: js.Any): Self = this.set("percentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentage: Self = this.set("percentage", js.undefined)
+    @scala.inline
+    def setSeries(value: SparklineSeriesClickEventSeries): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

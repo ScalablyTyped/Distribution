@@ -12,7 +12,7 @@ Asynchronous bootstrapping of Node applications
 | Keywords           | async, boot, delayed, open |
 | # releases         | 25 |
 | # dependents       | 9 |
-| # downloads        | 2094545 |
+| # downloads        | 2248005 |
 | # stars            | 4 |
 
 ## Links

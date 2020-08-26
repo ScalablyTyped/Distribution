@@ -41,24 +41,54 @@ trait SchemaGooglePrivacyDlpV2TransformationSummary extends js.Object {
 
 object SchemaGooglePrivacyDlpV2TransformationSummary {
   @scala.inline
-  def apply(
-    field: SchemaGooglePrivacyDlpV2FieldId = null,
-    fieldTransformations: js.Array[SchemaGooglePrivacyDlpV2FieldTransformation] = null,
-    infoType: SchemaGooglePrivacyDlpV2InfoType = null,
-    recordSuppress: SchemaGooglePrivacyDlpV2RecordSuppression = null,
-    results: js.Array[SchemaGooglePrivacyDlpV2SummaryResult] = null,
-    transformation: SchemaGooglePrivacyDlpV2PrimitiveTransformation = null,
-    transformedBytes: String = null
-  ): SchemaGooglePrivacyDlpV2TransformationSummary = {
+  def apply(): SchemaGooglePrivacyDlpV2TransformationSummary = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (fieldTransformations != null) __obj.updateDynamic("fieldTransformations")(fieldTransformations.asInstanceOf[js.Any])
-    if (infoType != null) __obj.updateDynamic("infoType")(infoType.asInstanceOf[js.Any])
-    if (recordSuppress != null) __obj.updateDynamic("recordSuppress")(recordSuppress.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (transformation != null) __obj.updateDynamic("transformation")(transformation.asInstanceOf[js.Any])
-    if (transformedBytes != null) __obj.updateDynamic("transformedBytes")(transformedBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TransformationSummary]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2TransformationSummaryOps[Self <: SchemaGooglePrivacyDlpV2TransformationSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setFieldTransformationsVarargs(value: SchemaGooglePrivacyDlpV2FieldTransformation*): Self = this.set("fieldTransformations", js.Array(value :_*))
+    @scala.inline
+    def setFieldTransformations(value: js.Array[SchemaGooglePrivacyDlpV2FieldTransformation]): Self = this.set("fieldTransformations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldTransformations: Self = this.set("fieldTransformations", js.undefined)
+    @scala.inline
+    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = this.set("infoType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfoType: Self = this.set("infoType", js.undefined)
+    @scala.inline
+    def setRecordSuppress(value: SchemaGooglePrivacyDlpV2RecordSuppression): Self = this.set("recordSuppress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordSuppress: Self = this.set("recordSuppress", js.undefined)
+    @scala.inline
+    def setResultsVarargs(value: SchemaGooglePrivacyDlpV2SummaryResult*): Self = this.set("results", js.Array(value :_*))
+    @scala.inline
+    def setResults(value: js.Array[SchemaGooglePrivacyDlpV2SummaryResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+    @scala.inline
+    def setTransformation(value: SchemaGooglePrivacyDlpV2PrimitiveTransformation): Self = this.set("transformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformation: Self = this.set("transformation", js.undefined)
+    @scala.inline
+    def setTransformedBytes(value: String): Self = this.set("transformedBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformedBytes: Self = this.set("transformedBytes", js.undefined)
+  }
+  
 }
 

@@ -36,7 +36,7 @@ trait GetDirectoryResult extends js.Object {
     */
   val enableSso: Boolean = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -56,9 +56,9 @@ trait GetDirectoryResult extends js.Object {
     */
   val size: String = js.native
   /**
-    * A mapping of tags assigned to the directory/connector.
+    * A map of tags assigned to the directory/connector.
     */
-  val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val tags: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD`).
     */
@@ -83,13 +83,64 @@ object GetDirectoryResult {
     shortName: String,
     size: String,
     `type`: String,
-    vpcSettings: js.Array[GetDirectoryVpcSetting],
-    tags: StringDictionary[js.Any] = null
+    vpcSettings: js.Array[GetDirectoryVpcSetting]
   ): GetDirectoryResult = {
     val __obj = js.Dynamic.literal(accessUrl = accessUrl.asInstanceOf[js.Any], alias = alias.asInstanceOf[js.Any], connectSettings = connectSettings.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], directoryId = directoryId.asInstanceOf[js.Any], dnsIpAddresses = dnsIpAddresses.asInstanceOf[js.Any], edition = edition.asInstanceOf[js.Any], enableSso = enableSso.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], securityGroupId = securityGroupId.asInstanceOf[js.Any], shortName = shortName.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], vpcSettings = vpcSettings.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDirectoryResult]
   }
+  @scala.inline
+  implicit class GetDirectoryResultOps[Self <: GetDirectoryResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessUrl(value: String): Self = this.set("accessUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectSettingsVarargs(value: GetDirectoryConnectSetting*): Self = this.set("connectSettings", js.Array(value :_*))
+    @scala.inline
+    def setConnectSettings(value: js.Array[GetDirectoryConnectSetting]): Self = this.set("connectSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDirectoryId(value: String): Self = this.set("directoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDnsIpAddressesVarargs(value: String*): Self = this.set("dnsIpAddresses", js.Array(value :_*))
+    @scala.inline
+    def setDnsIpAddresses(value: js.Array[String]): Self = this.set("dnsIpAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEdition(value: String): Self = this.set("edition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnableSso(value: Boolean): Self = this.set("enableSso", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurityGroupId(value: String): Self = this.set("securityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShortName(value: String): Self = this.set("shortName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcSettingsVarargs(value: GetDirectoryVpcSetting*): Self = this.set("vpcSettings", js.Array(value :_*))
+    @scala.inline
+    def setVpcSettings(value: js.Array[GetDirectoryVpcSetting]): Self = this.set("vpcSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

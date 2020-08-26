@@ -12,7 +12,7 @@ Absinthe Socket
 | Keywords           | absinthe, phoenix, socket, client, graphql, utilities, utils |
 | # releases         | 3 |
 | # dependents       | 10 |
-| # downloads        | 347588 |
+| # downloads        | 366959 |
 | # stars            | 0 |
 
 ## Links

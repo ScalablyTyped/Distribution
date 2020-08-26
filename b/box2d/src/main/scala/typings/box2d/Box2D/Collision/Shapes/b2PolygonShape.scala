@@ -65,6 +65,7 @@ trait b2PolygonShape extends b2Shape {
     * @return Oriented box shape.
     **/
   def SetAsOrientedBox(hx: Double, hy: Double): Unit = js.native
+  def SetAsOrientedBox(hx: Double, hy: Double, center: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
   def SetAsOrientedBox(hx: Double, hy: Double, center: b2Vec2): Unit = js.native
   def SetAsOrientedBox(hx: Double, hy: Double, center: b2Vec2, angle: Double): Unit = js.native
   /**

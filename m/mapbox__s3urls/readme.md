@@ -12,7 +12,7 @@ Create S3 urls from bucket/key or extract bucket/key from them
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 104791 |
+| # downloads        | 111469 |
 | # stars            | 0 |
 
 ## Links

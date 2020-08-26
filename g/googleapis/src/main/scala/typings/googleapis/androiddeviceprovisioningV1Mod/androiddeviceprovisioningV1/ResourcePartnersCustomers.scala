@@ -32,6 +32,7 @@ class ResourcePartnersCustomers protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaCompany] = js.native
   def create(callback: BodyResponseCallback[SchemaCompany]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCompany] = js.native
   def create(params: ParamsResourcePartnersCustomersCreate): GaxiosPromise[SchemaCompany] = js.native
   def create(params: ParamsResourcePartnersCustomersCreate, callback: BodyResponseCallback[SchemaCompany]): Unit = js.native
   def create(
@@ -63,6 +64,7 @@ class ResourcePartnersCustomers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListCustomersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCustomersResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCustomersResponse] = js.native
   def list(params: ParamsResourcePartnersCustomersList): GaxiosPromise[SchemaListCustomersResponse] = js.native
   def list(
     params: ParamsResourcePartnersCustomersList,

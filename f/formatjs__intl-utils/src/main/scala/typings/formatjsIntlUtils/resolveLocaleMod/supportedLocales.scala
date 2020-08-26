@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@formatjs/intl-utils/dist/resolve-locale", "supportedLocales")
+@JSImport("@formatjs/intl-utils/lib/src/resolve-locale", "supportedLocales")
 @js.native
 object supportedLocales extends js.Object {
   def apply(availableLocales: js.Array[String], requestedLocales: js.Array[String]): js.Array[String] = js.native

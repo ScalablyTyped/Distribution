@@ -70,6 +70,12 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
   def animate(
     targetAttributes: PartialRaphaelAttributes,
     durationMilliseconds: Double,
+    easing: js.UndefOr[scala.Nothing],
+    onAnimationComplete: RaphaelOnAnimationCompleteHandler[this.type]
+  ): this.type = js.native
+  def animate(
+    targetAttributes: PartialRaphaelAttributes,
+    durationMilliseconds: Double,
     easing: RaphaelBuiltinEasingFormula
   ): this.type = js.native
   def animate(
@@ -125,6 +131,17 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     otherAnimation: RaphaelAnimation,
     targetAttributes: PartialRaphaelAttributes,
     durationMilliseconds: Double
+  ): this.type = js.native
+  def animateWith(
+    otherElement: RaphaelElement[
+      TTechnology, 
+      /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
+    ],
+    otherAnimation: RaphaelAnimation,
+    targetAttributes: PartialRaphaelAttributes,
+    durationMilliseconds: Double,
+    easing: js.UndefOr[scala.Nothing],
+    onAnimationComplete: RaphaelOnAnimationCompleteHandler[this.type]
   ): this.type = js.native
   def animateWith(
     otherElement: RaphaelElement[
@@ -249,9 +266,7 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
   @JSName("attr")
   def attr_fontsize(attributeName: `font-size`): this.type = js.native
   @JSName("attr")
-  def attr_fontsize(attributeName: `font-size`, attributeValue: String): this.type = js.native
-  @JSName("attr")
-  def attr_fontsize(attributeName: `font-size`, attributeValue: Double): this.type = js.native
+  def attr_fontsize(attributeName: `font-size`, attributeValue: Double | String): this.type = js.native
   @JSName("attr")
   def attr_fontsize_Union(attributeName: `font-size`): js.UndefOr[Double | String] = js.native
   @JSName("attr")
@@ -377,11 +392,10 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
   @JSName("attr")
   def attr_transform(attributeName: transform): this.type = js.native
   @JSName("attr")
-  def attr_transform(attributeName: transform, attributeValue: String): this.type = js.native
-  @JSName("attr")
-  def attr_transform(attributeName: transform, attributeValue: js.Array[RaphaelTransformSegment]): this.type = js.native
-  @JSName("attr")
-  def attr_transform(attributeName: transform, attributeValue: RaphaelTransformSegment): this.type = js.native
+  def attr_transform(
+    attributeName: transform,
+    attributeValue: String | RaphaelTransformSegment | js.Array[RaphaelTransformSegment]
+  ): this.type = js.native
   /**
     * Finds the current value of the given attribute.
     * @typeparam K Type of the attribute name to read.
@@ -471,6 +485,37 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     startThisContext: StartThisContext,
     endThisContext: EndThisContext
   ): this.type = js.native
+  def drag[MoveThisContext, StartThisContext, EndThisContext](
+    onMoveHandler: RaphaelDragOnMoveHandler[MoveThisContext],
+    onStartHandler: RaphaelDragOnStartHandler[StartThisContext],
+    onEndHandler: RaphaelDragOnEndHandler[EndThisContext],
+    moveThisContext: MoveThisContext,
+    startThisContext: js.UndefOr[scala.Nothing],
+    endThisContext: EndThisContext
+  ): this.type = js.native
+  def drag[MoveThisContext, StartThisContext, EndThisContext](
+    onMoveHandler: RaphaelDragOnMoveHandler[MoveThisContext],
+    onStartHandler: RaphaelDragOnStartHandler[StartThisContext],
+    onEndHandler: RaphaelDragOnEndHandler[EndThisContext],
+    moveThisContext: js.UndefOr[scala.Nothing],
+    startThisContext: StartThisContext
+  ): this.type = js.native
+  def drag[MoveThisContext, StartThisContext, EndThisContext](
+    onMoveHandler: RaphaelDragOnMoveHandler[MoveThisContext],
+    onStartHandler: RaphaelDragOnStartHandler[StartThisContext],
+    onEndHandler: RaphaelDragOnEndHandler[EndThisContext],
+    moveThisContext: js.UndefOr[scala.Nothing],
+    startThisContext: StartThisContext,
+    endThisContext: EndThisContext
+  ): this.type = js.native
+  def drag[MoveThisContext, StartThisContext, EndThisContext](
+    onMoveHandler: RaphaelDragOnMoveHandler[MoveThisContext],
+    onStartHandler: RaphaelDragOnStartHandler[StartThisContext],
+    onEndHandler: RaphaelDragOnEndHandler[EndThisContext],
+    moveThisContext: js.UndefOr[scala.Nothing],
+    startThisContext: js.UndefOr[scala.Nothing],
+    endThisContext: EndThisContext
+  ): this.type = js.native
   /**
     * Returns a bounding box for this element.
     * @param isWithoutTransform `true` if you want to have bounding box before transformations are applied.
@@ -516,6 +561,12 @@ trait RaphaelBaseElement[TTechnology /* <: RaphaelTechnology */] extends js.Obje
     onHoverInHandler: RaphaelBasicEventHandler[HoverInThisContext, MouseEvent],
     onHoverOutHandler: RaphaelBasicEventHandler[HoverOutThisContext, MouseEvent],
     hoverInThisContext: HoverInThisContext,
+    hoverOutThisContext: HoverOutThisContext
+  ): this.type = js.native
+  def hover[HoverInThisContext, HoverOutThisContext](
+    onHoverInHandler: RaphaelBasicEventHandler[HoverInThisContext, MouseEvent],
+    onHoverOutHandler: RaphaelBasicEventHandler[HoverOutThisContext, MouseEvent],
+    hoverInThisContext: js.UndefOr[scala.Nothing],
     hoverOutThisContext: HoverOutThisContext
   ): this.type = js.native
   /**

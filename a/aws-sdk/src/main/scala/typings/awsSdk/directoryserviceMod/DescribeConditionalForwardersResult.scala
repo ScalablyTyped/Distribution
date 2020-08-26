@@ -14,10 +14,28 @@ trait DescribeConditionalForwardersResult extends js.Object {
 
 object DescribeConditionalForwardersResult {
   @scala.inline
-  def apply(ConditionalForwarders: ConditionalForwarders = null): DescribeConditionalForwardersResult = {
+  def apply(): DescribeConditionalForwardersResult = {
     val __obj = js.Dynamic.literal()
-    if (ConditionalForwarders != null) __obj.updateDynamic("ConditionalForwarders")(ConditionalForwarders.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConditionalForwardersResult]
   }
+  @scala.inline
+  implicit class DescribeConditionalForwardersResultOps[Self <: DescribeConditionalForwardersResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConditionalForwardersVarargs(value: ConditionalForwarder*): Self = this.set("ConditionalForwarders", js.Array(value :_*))
+    @scala.inline
+    def setConditionalForwarders(value: ConditionalForwarders): Self = this.set("ConditionalForwarders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionalForwarders: Self = this.set("ConditionalForwarders", js.undefined)
+  }
+  
 }
 

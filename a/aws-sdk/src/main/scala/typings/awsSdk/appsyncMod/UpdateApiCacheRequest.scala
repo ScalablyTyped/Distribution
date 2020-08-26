@@ -31,5 +31,26 @@ object UpdateApiCacheRequest {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApiCacheRequest]
   }
+  @scala.inline
+  implicit class UpdateApiCacheRequestOps[Self <: UpdateApiCacheRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiCachingBehavior(value: ApiCachingBehavior): Self = this.set("apiCachingBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiId(value: String): Self = this.set("apiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTtl(value: Long): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: ApiCacheType): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

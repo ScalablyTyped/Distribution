@@ -4,26 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EntityAnnotation extends js.Object {
   /**
     * Image region to which this entity belongs. Not produced
     * for `LABEL_DETECTION` features.
     */
-  var boundingPoly: js.UndefOr[BoundingPoly] = js.undefined
+  var boundingPoly: js.UndefOr[BoundingPoly] = js.native
   /**
     * The accuracy of the entity detection in an image.
     * For example, for an image in which the "Eiffel Tower" entity is detected,
     * this field represents the confidence that there is a tower in the query
     * image. Range [0, 1].
     */
-  var confidence: js.UndefOr[Double] = js.undefined
+  var confidence: js.UndefOr[Double] = js.native
   /** Entity textual description, expressed in its `locale` language. */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * The language code for the locale in which the entity textual
     * `description` is expressed.
     */
-  var locale: js.UndefOr[String] = js.undefined
+  var locale: js.UndefOr[String] = js.native
   /**
     * The location information for the detected entity. Multiple
     * `LocationInfo` elements can be present because one location may
@@ -31,19 +32,19 @@ trait EntityAnnotation extends js.Object {
     * may indicate the location of the place where the image was taken.
     * Location information is usually present for landmarks.
     */
-  var locations: js.UndefOr[js.Array[LocationInfo]] = js.undefined
+  var locations: js.UndefOr[js.Array[LocationInfo]] = js.native
   /**
     * Opaque entity ID. Some IDs may be available in
     * [Google Knowledge Graph Search API](https://developers.google.com/knowledge-graph/).
     */
-  var mid: js.UndefOr[String] = js.undefined
+  var mid: js.UndefOr[String] = js.native
   /**
     * Some entities may have optional user-supplied `Property` (name/value)
     * fields, such a score or string that qualifies the entity.
     */
-  var properties: js.UndefOr[js.Array[Property]] = js.undefined
+  var properties: js.UndefOr[js.Array[Property]] = js.native
   /** Overall score of the result. Range [0, 1]. */
-  var score: js.UndefOr[Double] = js.undefined
+  var score: js.UndefOr[Double] = js.native
   /**
     * The relevancy of the ICA (Image Content Annotation) label to the
     * image. For example, the relevancy of "tower" is likely higher to an image
@@ -51,33 +52,67 @@ trait EntityAnnotation extends js.Object {
     * detected distant towering building, even though the confidence that
     * there is a tower in each image may be the same. Range [0, 1].
     */
-  var topicality: js.UndefOr[Double] = js.undefined
+  var topicality: js.UndefOr[Double] = js.native
 }
 
 object EntityAnnotation {
   @scala.inline
-  def apply(
-    boundingPoly: BoundingPoly = null,
-    confidence: js.UndefOr[Double] = js.undefined,
-    description: String = null,
-    locale: String = null,
-    locations: js.Array[LocationInfo] = null,
-    mid: String = null,
-    properties: js.Array[Property] = null,
-    score: js.UndefOr[Double] = js.undefined,
-    topicality: js.UndefOr[Double] = js.undefined
-  ): EntityAnnotation = {
+  def apply(): EntityAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly.asInstanceOf[js.Any])
-    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
-    if (mid != null) __obj.updateDynamic("mid")(mid.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(topicality)) __obj.updateDynamic("topicality")(topicality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityAnnotation]
   }
+  @scala.inline
+  implicit class EntityAnnotationOps[Self <: EntityAnnotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingPoly(value: BoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    @scala.inline
+    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setLocationsVarargs(value: LocationInfo*): Self = this.set("locations", js.Array(value :_*))
+    @scala.inline
+    def setLocations(value: js.Array[LocationInfo]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocations: Self = this.set("locations", js.undefined)
+    @scala.inline
+    def setMid(value: String): Self = this.set("mid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMid: Self = this.set("mid", js.undefined)
+    @scala.inline
+    def setPropertiesVarargs(value: Property*): Self = this.set("properties", js.Array(value :_*))
+    @scala.inline
+    def setProperties(value: js.Array[Property]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+    @scala.inline
+    def setTopicality(value: Double): Self = this.set("topicality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicality: Self = this.set("topicality", js.undefined)
+  }
+  
 }
 

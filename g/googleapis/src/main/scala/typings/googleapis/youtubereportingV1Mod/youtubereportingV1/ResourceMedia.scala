@@ -28,6 +28,7 @@ class ResourceMedia protected () extends js.Object {
     */
   def download(): GaxiosPromise[SchemaGdataMedia] = js.native
   def download(callback: BodyResponseCallback[SchemaGdataMedia]): Unit = js.native
+  def download(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGdataMedia] = js.native
   def download(params: ParamsResourceMediaDownload): GaxiosPromise[SchemaGdataMedia] = js.native
   def download(params: ParamsResourceMediaDownload, callback: BodyResponseCallback[SchemaGdataMedia]): Unit = js.native
   def download(

@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 class ^ () extends SparkPost {
   def this(apiKey: String) = this()
+  def this(apiKey: js.UndefOr[scala.Nothing], options: ConstructorOptions) = this()
   def this(apiKey: String, options: ConstructorOptions) = this()
 }
 

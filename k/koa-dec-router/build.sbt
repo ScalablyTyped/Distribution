@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "koa-dec-router"
-version := "0.0-dt-20190710Z-55098a"
-scalaVersion := "2.13.2"
+version := "0.0-dt-20190710Z-27d165"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

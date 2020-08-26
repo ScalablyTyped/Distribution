@@ -30,5 +30,30 @@ object AddPermissionRequest {
     val __obj = js.Dynamic.literal(AWSAccountIds = AWSAccountIds.asInstanceOf[js.Any], Actions = Actions.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPermissionRequest]
   }
+  @scala.inline
+  implicit class AddPermissionRequestOps[Self <: AddPermissionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAWSAccountIdsVarargs(value: String*): Self = this.set("AWSAccountIds", js.Array(value :_*))
+    @scala.inline
+    def setAWSAccountIds(value: AWSAccountIdList): Self = this.set("AWSAccountIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActionsVarargs(value: String*): Self = this.set("Actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: ActionNameList): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabel(value: String): Self = this.set("Label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQueueUrl(value: String): Self = this.set("QueueUrl", value.asInstanceOf[js.Any])
+  }
+  
 }
 

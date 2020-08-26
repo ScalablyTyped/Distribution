@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@next/react-refresh-utils" : "9.4.4"
+      "@next/react-refresh-utils" : "9.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@next/react-refresh-utils" : "9.4.4"
+      "@next/react-refresh-utils" : "9.5.1"
     }
   ],
   "compile-devDependencies" : [

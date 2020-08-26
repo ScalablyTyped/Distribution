@@ -6,47 +6,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait b2MouseJoint extends b2Joint {
   /**
     * Gets the damping ratio.
     * @return Damping ratio.
     **/
-  def GetDampingRatio(): Double
+  def GetDampingRatio(): Double = js.native
   /**
     * Gets the frequency.
     * @return Frequency.
     **/
-  def GetFrequency(): Double
+  def GetFrequency(): Double = js.native
   /**
     * Gets the max force.
     * @return Max force.
     **/
-  def GetMaxForce(): Double
+  def GetMaxForce(): Double = js.native
   /**
     * Gets the target.
     * @return Target.
     **/
-  def GetTarget(): b2Vec2
+  def GetTarget(): b2Vec2 = js.native
   /**
     * Sets the damping ratio.
     * @param ratio New damping ratio.
     **/
-  def SetDampingRatio(ratio: Double): Unit
+  def SetDampingRatio(ratio: Double): Unit = js.native
   /**
     * Sets the frequency.
     * @param hz New frequency (hertz).
     **/
-  def SetFrequency(hz: Double): Unit
+  def SetFrequency(hz: Double): Unit = js.native
   /**
     * Sets the max force.
     * @param maxForce New max force.
     **/
-  def SetMaxForce(maxForce: Double): Unit
+  def SetMaxForce(maxForce: Double): Unit = js.native
   /**
     * Use this to update the target point.
     * @param target New target.
     **/
-  def SetTarget(target: b2Vec2): Unit
+  def SetTarget(target: b2Vec2): Unit = js.native
 }
 
 object b2MouseJoint {
@@ -75,5 +76,34 @@ object b2MouseJoint {
     val __obj = js.Dynamic.literal(GetAnchorA = js.Any.fromFunction0(GetAnchorA), GetAnchorB = js.Any.fromFunction0(GetAnchorB), GetBodyA = js.Any.fromFunction0(GetBodyA), GetBodyB = js.Any.fromFunction0(GetBodyB), GetDampingRatio = js.Any.fromFunction0(GetDampingRatio), GetFrequency = js.Any.fromFunction0(GetFrequency), GetMaxForce = js.Any.fromFunction0(GetMaxForce), GetNext = js.Any.fromFunction0(GetNext), GetReactionForce = js.Any.fromFunction1(GetReactionForce), GetReactionTorque = js.Any.fromFunction1(GetReactionTorque), GetTarget = js.Any.fromFunction0(GetTarget), GetType = js.Any.fromFunction0(GetType), GetUserData = js.Any.fromFunction0(GetUserData), IsActive = js.Any.fromFunction0(IsActive), SetDampingRatio = js.Any.fromFunction1(SetDampingRatio), SetFrequency = js.Any.fromFunction1(SetFrequency), SetMaxForce = js.Any.fromFunction1(SetMaxForce), SetTarget = js.Any.fromFunction1(SetTarget), SetUserData = js.Any.fromFunction1(SetUserData))
     __obj.asInstanceOf[b2MouseJoint]
   }
+  @scala.inline
+  implicit class b2MouseJointOps[Self <: b2MouseJoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetDampingRatio(value: () => Double): Self = this.set("GetDampingRatio", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetFrequency(value: () => Double): Self = this.set("GetFrequency", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetMaxForce(value: () => Double): Self = this.set("GetMaxForce", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetTarget(value: () => b2Vec2): Self = this.set("GetTarget", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetDampingRatio(value: Double => Unit): Self = this.set("SetDampingRatio", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetFrequency(value: Double => Unit): Self = this.set("SetFrequency", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetMaxForce(value: Double => Unit): Self = this.set("SetMaxForce", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetTarget(value: b2Vec2 => Unit): Self = this.set("SetTarget", js.Any.fromFunction1(value))
+  }
+  
 }
 

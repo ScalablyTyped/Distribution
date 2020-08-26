@@ -11,8 +11,8 @@ Computes the longest prefix string that is common to each path, excluding the ba
 | Full name          | common-path-prefix |
 | Keywords           | common, path, directory, dir, file, root, typescript, common prefix, common path, common path start, common root |
 | # releases         | 3 |
-| # dependents       | 20 |
-| # downloads        | 8033611 |
+| # dependents       | 25 |
+| # downloads        | 9779498 |
 | # stars            | 2 |
 
 ## Links

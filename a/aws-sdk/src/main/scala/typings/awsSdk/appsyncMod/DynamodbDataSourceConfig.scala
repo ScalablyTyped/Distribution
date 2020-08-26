@@ -30,18 +30,38 @@ trait DynamodbDataSourceConfig extends js.Object {
 
 object DynamodbDataSourceConfig {
   @scala.inline
-  def apply(
-    awsRegion: String,
-    tableName: String,
-    deltaSyncConfig: DeltaSyncConfig = null,
-    useCallerCredentials: js.UndefOr[Boolean] = js.undefined,
-    versioned: js.UndefOr[Boolean] = js.undefined
-  ): DynamodbDataSourceConfig = {
+  def apply(awsRegion: String, tableName: String): DynamodbDataSourceConfig = {
     val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
-    if (deltaSyncConfig != null) __obj.updateDynamic("deltaSyncConfig")(deltaSyncConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCallerCredentials)) __obj.updateDynamic("useCallerCredentials")(useCallerCredentials.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(versioned)) __obj.updateDynamic("versioned")(versioned.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamodbDataSourceConfig]
   }
+  @scala.inline
+  implicit class DynamodbDataSourceConfigOps[Self <: DynamodbDataSourceConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsRegion(value: String): Self = this.set("awsRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: String): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeltaSyncConfig(value: DeltaSyncConfig): Self = this.set("deltaSyncConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeltaSyncConfig: Self = this.set("deltaSyncConfig", js.undefined)
+    @scala.inline
+    def setUseCallerCredentials(value: Boolean): Self = this.set("useCallerCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseCallerCredentials: Self = this.set("useCallerCredentials", js.undefined)
+    @scala.inline
+    def setVersioned(value: Boolean): Self = this.set("versioned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersioned: Self = this.set("versioned", js.undefined)
+  }
+  
 }
 

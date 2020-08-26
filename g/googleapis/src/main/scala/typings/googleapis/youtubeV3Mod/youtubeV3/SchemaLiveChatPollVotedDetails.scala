@@ -18,11 +18,30 @@ trait SchemaLiveChatPollVotedDetails extends js.Object {
 
 object SchemaLiveChatPollVotedDetails {
   @scala.inline
-  def apply(itemId: String = null, pollId: String = null): SchemaLiveChatPollVotedDetails = {
+  def apply(): SchemaLiveChatPollVotedDetails = {
     val __obj = js.Dynamic.literal()
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (pollId != null) __obj.updateDynamic("pollId")(pollId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveChatPollVotedDetails]
   }
+  @scala.inline
+  implicit class SchemaLiveChatPollVotedDetailsOps[Self <: SchemaLiveChatPollVotedDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemId(value: String): Self = this.set("itemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemId: Self = this.set("itemId", js.undefined)
+    @scala.inline
+    def setPollId(value: String): Self = this.set("pollId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePollId: Self = this.set("pollId", js.undefined)
+  }
+  
 }
 

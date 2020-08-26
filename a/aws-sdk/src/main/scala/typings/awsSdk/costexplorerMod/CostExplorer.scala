@@ -147,12 +147,12 @@ trait CostExplorer extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetReservationUtilizationResponse, Unit]
   ): Request[GetReservationUtilizationResponse, AWSError] = js.native
   /**
-    * Creates recommendations that helps you save cost by identifying idle and underutilized Amazon EC2 instances. Recommendations are generated to either downsize or terminate instances, along with providing savings detail and metrics. For details on calculation and function, see Optimizing Your Cost with Rightsizing Recommendations.
+    * Creates recommendations that help you save cost by identifying idle and underutilized Amazon EC2 instances. Recommendations are generated to either downsize or terminate instances, along with providing savings detail and metrics. For details on calculation and function, see Optimizing Your Cost with Rightsizing Recommendations in the AWS Billing and Cost Management User Guide.
     */
   def getRightsizingRecommendation(): Request[GetRightsizingRecommendationResponse, AWSError] = js.native
   def getRightsizingRecommendation(callback: js.Function2[/* err */ AWSError, /* data */ GetRightsizingRecommendationResponse, Unit]): Request[GetRightsizingRecommendationResponse, AWSError] = js.native
   /**
-    * Creates recommendations that helps you save cost by identifying idle and underutilized Amazon EC2 instances. Recommendations are generated to either downsize or terminate instances, along with providing savings detail and metrics. For details on calculation and function, see Optimizing Your Cost with Rightsizing Recommendations.
+    * Creates recommendations that help you save cost by identifying idle and underutilized Amazon EC2 instances. Recommendations are generated to either downsize or terminate instances, along with providing savings detail and metrics. For details on calculation and function, see Optimizing Your Cost with Rightsizing Recommendations in the AWS Billing and Cost Management User Guide.
     */
   def getRightsizingRecommendation(params: GetRightsizingRecommendationRequest): Request[GetRightsizingRecommendationResponse, AWSError] = js.native
   def getRightsizingRecommendation(

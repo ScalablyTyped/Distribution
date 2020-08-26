@@ -1,7 +1,7 @@
 
 # Scala.js typings for mui-datatables
 
-Typings are for version 2.14
+Typings are for version 3.1
 
 ## Library description:
 Datatables for React using Material-UI
@@ -10,9 +10,9 @@ Datatables for React using Material-UI
 | ------------------ | :-------------: |
 | Full name          | mui-datatables |
 | Keywords           | material-ui, datatables, react |
-| # releases         | 102 |
-| # dependents       | 20 |
-| # downloads        | 741610 |
+| # releases         | 101 |
+| # dependents       | 21 |
+| # downloads        | 773665 |
 | # stars            | 1 |
 
 ## Links

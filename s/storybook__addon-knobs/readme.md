@@ -10,15 +10,14 @@ Storybook Addon Prop Editor Component
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-knobs |
 | Keywords           | addon, storybook |
-| # releases         | 414 |
-| # dependents       | 148 |
-| # downloads        | 25653068 |
+| # releases         | 415 |
+| # dependents       | 150 |
+| # downloads        | 26542332 |
 | # stars            | 2 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/knobs)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
-- [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-knobs)
     
 

@@ -1,6 +1,5 @@
 package typings.inquirer.mod
 
-import typings.inquirer.anon.IsFinal
 import typings.inquirer.inquirerStrings.input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,40 +11,37 @@ import scala.scalajs.js.annotation._
   * @template T
   * The type of the answers.
   */
+@js.native
 trait InputQuestion[T /* <: Answers */] extends InputQuestionOptions[T] {
   /**
     * @inheritdoc
     */
   @JSName("type")
-  var type_InputQuestion: js.UndefOr[input] = js.undefined
+  var type_InputQuestion: js.UndefOr[input] = js.native
 }
 
 object InputQuestion {
   @scala.inline
-  def apply[/* <: typings.inquirer.mod.Answers */ T](
-    default: AsyncDynamicQuestionProperty[_, T] = null,
-    filter: /* input */ js.Any => _ = null,
-    message: AsyncDynamicQuestionProperty[String, T] = null,
-    name: KeyUnion[T] = null,
-    prefix: String = null,
-    suffix: String = null,
-    transformer: (/* input */ js.Any, T, /* flags */ IsFinal) => String | js.Promise[String] = null,
-    `type`: input = null,
-    validate: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String]) = null,
-    when: AsyncDynamicQuestionProperty[Boolean, T] = null
-  ): InputQuestion[T] = {
+  def apply[/* <: typings.inquirer.mod.Answers */ T](): InputQuestion[T] = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (transformer != null) __obj.updateDynamic("transformer")(js.Any.fromFunction3(transformer))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2(validate))
-    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputQuestion[T]]
   }
+  @scala.inline
+  implicit class InputQuestionOps[Self <: InputQuestion[_], /* <: typings.inquirer.mod.Answers */ T] (val x: Self with InputQuestion[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: input): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

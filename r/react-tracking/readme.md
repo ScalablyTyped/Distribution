@@ -12,7 +12,7 @@ Declarative tracking for React apps.
 | Keywords           | declarative, layer, metrics, nyt, react, tracking |
 | # releases         | 24 |
 | # dependents       | 2 |
-| # downloads        | 718188 |
+| # downloads        | 729084 |
 | # stars            | 0 |
 
 ## Links

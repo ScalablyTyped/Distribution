@@ -54,7 +54,7 @@ class LocationSmb protected () extends CustomResource {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   val uri: Output_[String] = js.native
   /**
     * The user who can mount the share and has file and folder permissions in the SMB share.
@@ -73,8 +73,10 @@ object LocationSmb extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): LocationSmb = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LocationSmb = js.native
   def get(name: String, id: Input[ID], state: LocationSmbState): LocationSmb = js.native
   def get(name: String, id: Input[ID], state: LocationSmbState, opts: CustomResourceOptions): LocationSmb = js.native
   /**

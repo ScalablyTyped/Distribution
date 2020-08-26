@@ -38,7 +38,7 @@ trait BucketLifecycleRule extends js.Object {
   /**
     * Specifies object tags key and value.
     */
-  var tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var tags: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * Specifies a period in the object's transitions (documented below).
     */
@@ -47,26 +47,58 @@ trait BucketLifecycleRule extends js.Object {
 
 object BucketLifecycleRule {
   @scala.inline
-  def apply(
-    enabled: Boolean,
-    id: String,
-    abortIncompleteMultipartUploadDays: js.UndefOr[Double] = js.undefined,
-    expiration: BucketLifecycleRuleExpiration = null,
-    noncurrentVersionExpiration: BucketLifecycleRuleNoncurrentVersionExpiration = null,
-    noncurrentVersionTransitions: js.Array[BucketLifecycleRuleNoncurrentVersionTransition] = null,
-    prefix: String = null,
-    tags: StringDictionary[js.Any] = null,
-    transitions: js.Array[BucketLifecycleRuleTransition] = null
-  ): BucketLifecycleRule = {
+  def apply(enabled: Boolean, id: String): BucketLifecycleRule = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (!js.isUndefined(abortIncompleteMultipartUploadDays)) __obj.updateDynamic("abortIncompleteMultipartUploadDays")(abortIncompleteMultipartUploadDays.get.asInstanceOf[js.Any])
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
-    if (noncurrentVersionExpiration != null) __obj.updateDynamic("noncurrentVersionExpiration")(noncurrentVersionExpiration.asInstanceOf[js.Any])
-    if (noncurrentVersionTransitions != null) __obj.updateDynamic("noncurrentVersionTransitions")(noncurrentVersionTransitions.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (transitions != null) __obj.updateDynamic("transitions")(transitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketLifecycleRule]
   }
+  @scala.inline
+  implicit class BucketLifecycleRuleOps[Self <: BucketLifecycleRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAbortIncompleteMultipartUploadDays(value: Double): Self = this.set("abortIncompleteMultipartUploadDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortIncompleteMultipartUploadDays: Self = this.set("abortIncompleteMultipartUploadDays", js.undefined)
+    @scala.inline
+    def setExpiration(value: BucketLifecycleRuleExpiration): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiration: Self = this.set("expiration", js.undefined)
+    @scala.inline
+    def setNoncurrentVersionExpiration(value: BucketLifecycleRuleNoncurrentVersionExpiration): Self = this.set("noncurrentVersionExpiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoncurrentVersionExpiration: Self = this.set("noncurrentVersionExpiration", js.undefined)
+    @scala.inline
+    def setNoncurrentVersionTransitionsVarargs(value: BucketLifecycleRuleNoncurrentVersionTransition*): Self = this.set("noncurrentVersionTransitions", js.Array(value :_*))
+    @scala.inline
+    def setNoncurrentVersionTransitions(value: js.Array[BucketLifecycleRuleNoncurrentVersionTransition]): Self = this.set("noncurrentVersionTransitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoncurrentVersionTransitions: Self = this.set("noncurrentVersionTransitions", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTransitionsVarargs(value: BucketLifecycleRuleTransition*): Self = this.set("transitions", js.Array(value :_*))
+    @scala.inline
+    def setTransitions(value: js.Array[BucketLifecycleRuleTransition]): Self = this.set("transitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitions: Self = this.set("transitions", js.undefined)
+  }
+  
 }
 

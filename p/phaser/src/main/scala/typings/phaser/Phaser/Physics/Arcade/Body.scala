@@ -58,7 +58,7 @@ trait Body extends js.Object {
     */
   var blocked: ArcadeBodyCollision = js.native
   /**
-    * The bottom edge of this Body's boundary.
+    * The bottom edge of this Body.
     */
   val bottom: Double = js.native
   /**
@@ -66,7 +66,7 @@ trait Body extends js.Object {
     */
   var bounce: Vector2 = js.native
   /**
-    * The center of the Body's boundary.
+    * The center of the Body.
     * The midpoint of its `position` (top-left corner) and its bottom-right corner.
     */
   var center: Vector2 = js.native
@@ -103,7 +103,7 @@ trait Body extends js.Object {
     */
   var debugBodyColor: integer = js.native
   /**
-    * Whether the Body's boundary is drawn to the debug display.
+    * Whether the Body is drawn to the debug display.
     */
   var debugShowBody: Boolean = js.native
   /**
@@ -115,17 +115,18 @@ trait Body extends js.Object {
     */
   var deltaMax: Vector2 = js.native
   /**
-    * When `useDamping` is false (the default), this is absolute loss of velocity due to movement, in pixels per second squared (a vector).
-    * The x and y components are applied separately.
+    * When `useDamping` is false (the default), this is absolute loss of velocity due to movement, in pixels per second squared.
     * 
-    * When `useDamping` is true, this is 1 minus the damping factor (a number).
+    * When `useDamping` is true, this is 1 minus the damping factor.
     * A value of 1 means the Body loses no velocity.
     * A value of 0.95 means the Body loses 5% of its velocity per step.
     * A value of 0.5 means the Body loses 50% of its velocity per step.
     * 
+    * The x and y components are applied separately.
+    * 
     * Drag is applied only when `acceleration` is zero.
     */
-  var drag: Vector2 | Double = js.native
+  var drag: Vector2 = js.native
   /**
     * Whether this Body is overlapped with another and both are not moving, on at least one axis.
     */
@@ -136,7 +137,8 @@ trait Body extends js.Object {
   var enable: Boolean = js.native
   /**
     * The direction of the Body's velocity, as calculated during the last step.
-    * If the Body is moving on both axes (diagonally), this describes motion on the vertical axis only.
+    * This is a numeric constant value (FACING_UP, FACING_DOWN, FACING_LEFT, FACING_RIGHT).
+    * If the Body is moving on both axes, this describes motion on the vertical axis only.
     */
   var facing: integer = js.native
   /**
@@ -164,7 +166,7 @@ trait Body extends js.Object {
     */
   var halfWidth: Double = js.native
   /**
-    * The height of the Body boundary, in pixels.
+    * The height of the Body, in pixels.
     * If the Body is circular, this is also the diameter.
     * If you wish to change the height use the `Body.setSize` method.
     */
@@ -174,11 +176,11 @@ trait Body extends js.Object {
     */
   var immovable: Boolean = js.native
   /**
-    * Whether this Body's boundary is circular (true) or rectangular (false).
+    * Whether this Body is circular (true) or rectangular (false).
     */
   var isCircle: Boolean = js.native
   /**
-    * The left edge of the Body's boundary. Identical to x.
+    * The left edge of the Body. Identical to x.
     */
   val left: Double = js.native
   /**
@@ -262,18 +264,18 @@ trait Body extends js.Object {
     */
   var prevFrame: Vector2 = js.native
   /**
-    * If this Body is circular, this is the unscaled radius of the Body's boundary, as set by setCircle(), in source pixels.
+    * If this Body is circular, this is the unscaled radius of the Body, as set by setCircle(), in source pixels.
     * The true radius is equal to `halfWidth`.
     */
   var radius: Double = js.native
   /**
-    * The right edge of the Body's boundary.
+    * The right edge of the Body.
     */
   val right: Double = js.native
   /**
     * This body's rotation, in degrees, based on its angular acceleration and angular velocity.
     * The Body's rotation controls the `angle` of its Game Object.
-    * It doesn't rotate the Body's boundary, which is always an axis-aligned rectangle or a circle.
+    * It doesn't rotate the Body's own geometry, which is always an axis-aligned rectangle or a circle.
     */
   var rotation: Double = js.native
   /**
@@ -295,7 +297,7 @@ trait Body extends js.Object {
     */
   var syncBounds: Boolean = js.native
   /**
-    * The top edge of the Body's boundary. Identical to y.
+    * The top edge of the Body. Identical to y.
     */
   val top: Double = js.native
   /**
@@ -328,7 +330,7 @@ trait Body extends js.Object {
     */
   var wasTouching: ArcadeBodyCollision = js.native
   /**
-    * The width of the Body boundary, in pixels.
+    * The width of the Body, in pixels.
     * If the Body is circular, this is also the diameter.
     * If you wish to change the width use the `Body.setSize` method.
     */
@@ -411,7 +413,7 @@ trait Body extends js.Object {
     */
   def destroy(): Unit = js.native
   /**
-    * Draws this Body's boundary and velocity, if enabled.
+    * Draws this Body and its velocity, if enabled.
     * @param graphic The Graphics object to draw on.
     */
   def drawDebug(graphic: Graphics): Unit = js.native
@@ -421,7 +423,7 @@ trait Body extends js.Object {
     */
   def getBounds(obj: ArcadeBodyBounds): ArcadeBodyBounds = js.native
   /**
-    * Tests if the coordinates are within this Body's boundary.
+    * Tests if the coordinates are within this Body.
     * @param x The horizontal coordinate.
     * @param y The vertical coordinate.
     */
@@ -538,12 +540,13 @@ trait Body extends js.Object {
   def setBoundsRectangle(): this.type = js.native
   def setBoundsRectangle(bounds: Rectangle): this.type = js.native
   /**
-    * Sizes and positions this Body's boundary, as a circle.
+    * Sizes and positions this Body, as a circle.
     * @param radius The radius of the Body, in source pixels.
     * @param offsetX The horizontal offset of the Body from its Game Object, in source pixels.
     * @param offsetY The vertical offset of the Body from its Game Object, in source pixels.
     */
   def setCircle(radius: Double): Body = js.native
+  def setCircle(radius: Double, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): Body = js.native
   def setCircle(radius: Double, offsetX: Double): Body = js.native
   def setCircle(radius: Double, offsetX: Double, offsetY: Double): Body = js.native
   /**
@@ -555,7 +558,11 @@ trait Body extends js.Object {
     * @param bounceY If given this will be replace the `worldBounce.y` value.
     */
   def setCollideWorldBounds(): Body = js.native
+  def setCollideWorldBounds(value: js.UndefOr[scala.Nothing], bounceX: js.UndefOr[scala.Nothing], bounceY: Double): Body = js.native
+  def setCollideWorldBounds(value: js.UndefOr[scala.Nothing], bounceX: Double): Body = js.native
+  def setCollideWorldBounds(value: js.UndefOr[scala.Nothing], bounceX: Double, bounceY: Double): Body = js.native
   def setCollideWorldBounds(value: Boolean): Body = js.native
+  def setCollideWorldBounds(value: Boolean, bounceX: js.UndefOr[scala.Nothing], bounceY: Double): Body = js.native
   def setCollideWorldBounds(value: Boolean, bounceX: Double): Body = js.native
   def setCollideWorldBounds(value: Boolean, bounceX: Double, bounceY: Double): Body = js.native
   /**
@@ -643,7 +650,7 @@ trait Body extends js.Object {
   def setOffset(x: Double): Body = js.native
   def setOffset(x: Double, y: Double): Body = js.native
   /**
-    * Sizes and positions this Body's boundary, as a rectangle.
+    * Sizes and positions this Body, as a rectangle.
     * Modifies the Body `offset` if `center` is true (the default).
     * Resets the width and height to match current frame, if no width and height provided and a frame is found.
     * @param width The width of the Body in pixels. Cannot be zero. If not given, and the parent Game Object has a frame, it will use the frame width.
@@ -651,7 +658,11 @@ trait Body extends js.Object {
     * @param center Modify the Body's `offset`, placing the Body's center on its Game Object's center. Only works if the Game Object has the `getCenter` method. Default true.
     */
   def setSize(): Body = js.native
+  def setSize(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], center: Boolean): Body = js.native
+  def setSize(width: js.UndefOr[scala.Nothing], height: integer): Body = js.native
+  def setSize(width: js.UndefOr[scala.Nothing], height: integer, center: Boolean): Body = js.native
   def setSize(width: integer): Body = js.native
+  def setSize(width: integer, height: js.UndefOr[scala.Nothing], center: Boolean): Body = js.native
   def setSize(width: integer, height: integer): Body = js.native
   def setSize(width: integer, height: integer, center: Boolean): Body = js.native
   /**
@@ -693,6 +704,16 @@ trait Body extends js.Object {
     * Updates the Body's `center` from its `position`, `width`, and `height`.
     */
   def updateCenter(): Unit = js.native
+  /**
+    * Updates the Body's `position`, `width`, `height`, and `center` from its Game Object and `offset`.
+    * 
+    * You don't need to call this for Dynamic Bodies, as it happens automatically during the physics step.
+    * But you could use it if you have modified the Body offset or Game Object transform and need to immediately
+    * read the Body's new `position` or `center`.
+    * 
+    * To resynchronize the Body with its Game Object, use `reset()` instead.
+    */
+  def updateFromGameObject(): Unit = js.native
   /**
     * Whether this Body will be drawn to the debug display.
     */

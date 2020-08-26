@@ -11,8 +11,8 @@ Splunk HTTP Event Collector logging interface
 | Full name          | splunk-logging |
 | Keywords           | splunk, HTTP, event, collector, logging, stream |
 | # releases         | 3 |
-| # dependents       | 17 |
-| # downloads        | 499454 |
+| # dependents       | 18 |
+| # downloads        | 500655 |
 | # stars            | 0 |
 
 ## Links

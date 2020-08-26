@@ -38,21 +38,46 @@ trait CreateTapeWithBarcodeInput extends js.Object {
 
 object CreateTapeWithBarcodeInput {
   @scala.inline
-  def apply(
-    GatewayARN: GatewayARN,
-    TapeBarcode: TapeBarcode,
-    TapeSizeInBytes: TapeSize,
-    KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
-    KMSKey: KMSKey = null,
-    PoolId: PoolId = null,
-    Tags: Tags = null
-  ): CreateTapeWithBarcodeInput = {
+  def apply(GatewayARN: GatewayARN, TapeBarcode: TapeBarcode, TapeSizeInBytes: TapeSize): CreateTapeWithBarcodeInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], TapeBarcode = TapeBarcode.asInstanceOf[js.Any], TapeSizeInBytes = TapeSizeInBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted.get.asInstanceOf[js.Any])
-    if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey.asInstanceOf[js.Any])
-    if (PoolId != null) __obj.updateDynamic("PoolId")(PoolId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTapeWithBarcodeInput]
   }
+  @scala.inline
+  implicit class CreateTapeWithBarcodeInputOps[Self <: CreateTapeWithBarcodeInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTapeBarcode(value: TapeBarcode): Self = this.set("TapeBarcode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTapeSizeInBytes(value: TapeSize): Self = this.set("TapeSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKMSEncrypted(value: Boolean): Self = this.set("KMSEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSEncrypted: Self = this.set("KMSEncrypted", js.undefined)
+    @scala.inline
+    def setKMSKey(value: KMSKey): Self = this.set("KMSKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSKey: Self = this.set("KMSKey", js.undefined)
+    @scala.inline
+    def setPoolId(value: PoolId): Self = this.set("PoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoolId: Self = this.set("PoolId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ A library for converting plain HTML to DraftJS Editor content. Build for use wit
 | ------------------ | :-------------: |
 | Full name          | html-to-draftjs |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 84 |
-| # downloads        | 2294117 |
+| # releases         | 5 |
+| # dependents       | 90 |
+| # downloads        | 2381468 |
 | # stars            | 0 |
 
 ## Links

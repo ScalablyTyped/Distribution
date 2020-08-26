@@ -11,6 +11,10 @@ trait Report extends js.Object {
     */
   var arn: js.UndefOr[NonEmptyString] = js.native
   /**
+    * A CodeCoverageReportSummary object that contains a code coverage summary for this report.
+    */
+  var codeCoverageSummary: js.UndefOr[CodeCoverageReportSummary] = js.native
+  /**
     *  The date and time this report run occurred. 
     */
   var created: js.UndefOr[Timestamp] = js.native
@@ -47,39 +51,77 @@ trait Report extends js.Object {
     */
   var truncated: js.UndefOr[WrapperBoolean] = js.native
   /**
-    *  The type of the report that was run. 
+    * The type of the report that was run.  CODE_COVERAGE  A code coverage report.  TEST  A test report.  
     */
   var `type`: js.UndefOr[ReportType] = js.native
 }
 
 object Report {
   @scala.inline
-  def apply(
-    arn: NonEmptyString = null,
-    created: Timestamp = null,
-    executionId: String = null,
-    expired: Timestamp = null,
-    exportConfig: ReportExportConfig = null,
-    name: String = null,
-    reportGroupArn: NonEmptyString = null,
-    status: ReportStatusType = null,
-    testSummary: TestReportSummary = null,
-    truncated: js.UndefOr[WrapperBoolean] = js.undefined,
-    `type`: ReportType = null
-  ): Report = {
+  def apply(): Report = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (executionId != null) __obj.updateDynamic("executionId")(executionId.asInstanceOf[js.Any])
-    if (expired != null) __obj.updateDynamic("expired")(expired.asInstanceOf[js.Any])
-    if (exportConfig != null) __obj.updateDynamic("exportConfig")(exportConfig.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (reportGroupArn != null) __obj.updateDynamic("reportGroupArn")(reportGroupArn.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (testSummary != null) __obj.updateDynamic("testSummary")(testSummary.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Report]
   }
+  @scala.inline
+  implicit class ReportOps[Self <: Report] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCodeCoverageSummary(value: CodeCoverageReportSummary): Self = this.set("codeCoverageSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeCoverageSummary: Self = this.set("codeCoverageSummary", js.undefined)
+    @scala.inline
+    def setCreated(value: Timestamp): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setExecutionId(value: String): Self = this.set("executionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionId: Self = this.set("executionId", js.undefined)
+    @scala.inline
+    def setExpired(value: Timestamp): Self = this.set("expired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpired: Self = this.set("expired", js.undefined)
+    @scala.inline
+    def setExportConfig(value: ReportExportConfig): Self = this.set("exportConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportConfig: Self = this.set("exportConfig", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setReportGroupArn(value: NonEmptyString): Self = this.set("reportGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportGroupArn: Self = this.set("reportGroupArn", js.undefined)
+    @scala.inline
+    def setStatus(value: ReportStatusType): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTestSummary(value: TestReportSummary): Self = this.set("testSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestSummary: Self = this.set("testSummary", js.undefined)
+    @scala.inline
+    def setTruncated(value: WrapperBoolean): Self = this.set("truncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTruncated: Self = this.set("truncated", js.undefined)
+    @scala.inline
+    def setType(value: ReportType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

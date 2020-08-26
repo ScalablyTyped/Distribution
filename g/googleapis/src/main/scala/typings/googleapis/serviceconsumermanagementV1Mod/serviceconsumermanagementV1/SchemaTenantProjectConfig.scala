@@ -49,22 +49,48 @@ trait SchemaTenantProjectConfig extends js.Object {
 
 object SchemaTenantProjectConfig {
   @scala.inline
-  def apply(
-    billingConfig: SchemaBillingConfig = null,
-    folder: String = null,
-    labels: StringDictionary[String] = null,
-    serviceAccountConfig: SchemaServiceAccountConfig = null,
-    services: js.Array[String] = null,
-    tenantProjectPolicy: SchemaTenantProjectPolicy = null
-  ): SchemaTenantProjectConfig = {
+  def apply(): SchemaTenantProjectConfig = {
     val __obj = js.Dynamic.literal()
-    if (billingConfig != null) __obj.updateDynamic("billingConfig")(billingConfig.asInstanceOf[js.Any])
-    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (serviceAccountConfig != null) __obj.updateDynamic("serviceAccountConfig")(serviceAccountConfig.asInstanceOf[js.Any])
-    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
-    if (tenantProjectPolicy != null) __obj.updateDynamic("tenantProjectPolicy")(tenantProjectPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTenantProjectConfig]
   }
+  @scala.inline
+  implicit class SchemaTenantProjectConfigOps[Self <: SchemaTenantProjectConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillingConfig(value: SchemaBillingConfig): Self = this.set("billingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingConfig: Self = this.set("billingConfig", js.undefined)
+    @scala.inline
+    def setFolder(value: String): Self = this.set("folder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolder: Self = this.set("folder", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setServiceAccountConfig(value: SchemaServiceAccountConfig): Self = this.set("serviceAccountConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccountConfig: Self = this.set("serviceAccountConfig", js.undefined)
+    @scala.inline
+    def setServicesVarargs(value: String*): Self = this.set("services", js.Array(value :_*))
+    @scala.inline
+    def setServices(value: js.Array[String]): Self = this.set("services", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServices: Self = this.set("services", js.undefined)
+    @scala.inline
+    def setTenantProjectPolicy(value: SchemaTenantProjectPolicy): Self = this.set("tenantProjectPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenantProjectPolicy: Self = this.set("tenantProjectPolicy", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,38 @@ trait VolumeRecoveryPointInfo extends js.Object {
 
 object VolumeRecoveryPointInfo {
   @scala.inline
-  def apply(
-    VolumeARN: VolumeARN = null,
-    VolumeRecoveryPointTime: String = null,
-    VolumeSizeInBytes: js.UndefOr[long] = js.undefined,
-    VolumeUsageInBytes: js.UndefOr[long] = js.undefined
-  ): VolumeRecoveryPointInfo = {
+  def apply(): VolumeRecoveryPointInfo = {
     val __obj = js.Dynamic.literal()
-    if (VolumeARN != null) __obj.updateDynamic("VolumeARN")(VolumeARN.asInstanceOf[js.Any])
-    if (VolumeRecoveryPointTime != null) __obj.updateDynamic("VolumeRecoveryPointTime")(VolumeRecoveryPointTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeSizeInBytes)) __obj.updateDynamic("VolumeSizeInBytes")(VolumeSizeInBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeUsageInBytes)) __obj.updateDynamic("VolumeUsageInBytes")(VolumeUsageInBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeRecoveryPointInfo]
   }
+  @scala.inline
+  implicit class VolumeRecoveryPointInfoOps[Self <: VolumeRecoveryPointInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVolumeARN(value: VolumeARN): Self = this.set("VolumeARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeARN: Self = this.set("VolumeARN", js.undefined)
+    @scala.inline
+    def setVolumeRecoveryPointTime(value: String): Self = this.set("VolumeRecoveryPointTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeRecoveryPointTime: Self = this.set("VolumeRecoveryPointTime", js.undefined)
+    @scala.inline
+    def setVolumeSizeInBytes(value: long): Self = this.set("VolumeSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSizeInBytes: Self = this.set("VolumeSizeInBytes", js.undefined)
+    @scala.inline
+    def setVolumeUsageInBytes(value: long): Self = this.set("VolumeUsageInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeUsageInBytes: Self = this.set("VolumeUsageInBytes", js.undefined)
+  }
+  
 }
 

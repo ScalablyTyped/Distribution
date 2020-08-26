@@ -11,8 +11,8 @@ Create a HTML element string
 | Full name          | create-html-element |
 | Keywords           | html, element, create, document, string, make, tag |
 | # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 150291 |
+| # dependents       | 11 |
+| # downloads        | 145035 |
 | # stars            | 1 |
 
 ## Links

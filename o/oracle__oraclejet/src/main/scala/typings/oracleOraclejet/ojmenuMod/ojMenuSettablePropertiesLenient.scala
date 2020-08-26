@@ -8,27 +8,44 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojmenu.ojMenuSettableProperties> */
+@js.native
 trait ojMenuSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var openOptions: js.UndefOr[OpenOptions] = js.undefined
-  var translations: js.UndefOr[AriaFocusSkipLink] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
+  var openOptions: js.UndefOr[OpenOptions] = js.native
+  var translations: js.UndefOr[AriaFocusSkipLink] = js.native
 }
 
 object ojMenuSettablePropertiesLenient {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    openOptions: OpenOptions = null,
-    translations: AriaFocusSkipLink = null
-  ): ojMenuSettablePropertiesLenient = {
+  def apply(): ojMenuSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (openOptions != null) __obj.updateDynamic("openOptions")(openOptions.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojMenuSettablePropertiesLenient]
   }
+  @scala.inline
+  implicit class ojMenuSettablePropertiesLenientOps[Self <: ojMenuSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setOpenOptions(value: OpenOptions): Self = this.set("openOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenOptions: Self = this.set("openOptions", js.undefined)
+    @scala.inline
+    def setTranslations(value: AriaFocusSkipLink): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslations: Self = this.set("translations", js.undefined)
+  }
+  
 }
 

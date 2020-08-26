@@ -22,16 +22,34 @@ trait AuthorizationData extends js.Object {
 
 object AuthorizationData {
   @scala.inline
-  def apply(
-    authorizationToken: Base64 = null,
-    expiresAt: ExpirationTimestamp = null,
-    proxyEndpoint: ProxyEndpoint = null
-  ): AuthorizationData = {
+  def apply(): AuthorizationData = {
     val __obj = js.Dynamic.literal()
-    if (authorizationToken != null) __obj.updateDynamic("authorizationToken")(authorizationToken.asInstanceOf[js.Any])
-    if (expiresAt != null) __obj.updateDynamic("expiresAt")(expiresAt.asInstanceOf[js.Any])
-    if (proxyEndpoint != null) __obj.updateDynamic("proxyEndpoint")(proxyEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationData]
   }
+  @scala.inline
+  implicit class AuthorizationDataOps[Self <: AuthorizationData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizationToken(value: Base64): Self = this.set("authorizationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationToken: Self = this.set("authorizationToken", js.undefined)
+    @scala.inline
+    def setExpiresAt(value: ExpirationTimestamp): Self = this.set("expiresAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiresAt: Self = this.set("expiresAt", js.undefined)
+    @scala.inline
+    def setProxyEndpoint(value: ProxyEndpoint): Self = this.set("proxyEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyEndpoint: Self = this.set("proxyEndpoint", js.undefined)
+  }
+  
 }
 

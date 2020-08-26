@@ -1,23 +1,37 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.anon.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LabelStatement
   extends _Statement
      with Base[typings.luaparse.luaparseStrings.LabelStatement] {
-  var label: Identifier
+  var label: Identifier = js.native
 }
 
 object LabelStatement {
   @scala.inline
-  def apply(label: Identifier, `type`: typings.luaparse.luaparseStrings.LabelStatement, loc: End = null): LabelStatement = {
+  def apply(label: Identifier, `type`: typings.luaparse.luaparseStrings.LabelStatement): LabelStatement = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelStatement]
   }
+  @scala.inline
+  implicit class LabelStatementOps[Self <: LabelStatement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabel(value: Identifier): Self = this.set("label", value.asInstanceOf[js.Any])
+  }
+  
 }
 

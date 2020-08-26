@@ -5,33 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateClientOptionsWithPromise extends CreateClientOptions {
   /** Promise constructor */
-  var Promise: PromiseConstructor
+  var Promise: PromiseConstructor = js.native
 }
 
 object CreateClientOptionsWithPromise {
   @scala.inline
-  def apply(
-    Promise: PromiseConstructor,
-    key: String,
-    channel: String = null,
-    clientId: String = null,
-    clientSecret: String = null,
-    language: Language = null,
-    rate: RateOptions = null,
-    retryOptions: RetryOptions = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): CreateClientOptionsWithPromise = {
+  def apply(Promise: PromiseConstructor, key: String): CreateClientOptionsWithPromise = {
     val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
-    if (retryOptions != null) __obj.updateDynamic("retryOptions")(retryOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClientOptionsWithPromise]
   }
+  @scala.inline
+  implicit class CreateClientOptionsWithPromiseOps[Self <: CreateClientOptionsWithPromise] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPromise(value: PromiseConstructor): Self = this.set("Promise", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Gpio protected () extends js.Object {
   def this(gpio: Double, direction: Direction) = this()
   def this(gpio: Double, direction: Direction, edge: Edge) = this()
+  def this(gpio: Double, direction: Direction, edge: js.UndefOr[scala.Nothing], options: Options) = this()
   def this(gpio: Double, direction: Direction, edge: Edge, options: Options) = this()
   def activeLow(): Boolean = js.native
   def direction(): Direction = js.native

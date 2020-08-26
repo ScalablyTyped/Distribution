@@ -26,15 +26,32 @@ trait UpdateUserDefinedFunctionRequest extends js.Object {
 
 object UpdateUserDefinedFunctionRequest {
   @scala.inline
-  def apply(
-    DatabaseName: NameString,
-    FunctionInput: UserDefinedFunctionInput,
-    FunctionName: NameString,
-    CatalogId: CatalogIdString = null
-  ): UpdateUserDefinedFunctionRequest = {
+  def apply(DatabaseName: NameString, FunctionInput: UserDefinedFunctionInput, FunctionName: NameString): UpdateUserDefinedFunctionRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], FunctionInput = FunctionInput.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any])
-    if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserDefinedFunctionRequest]
   }
+  @scala.inline
+  implicit class UpdateUserDefinedFunctionRequestOps[Self <: UpdateUserDefinedFunctionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabaseName(value: NameString): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFunctionInput(value: UserDefinedFunctionInput): Self = this.set("FunctionInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFunctionName(value: NameString): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+  }
+  
 }
 

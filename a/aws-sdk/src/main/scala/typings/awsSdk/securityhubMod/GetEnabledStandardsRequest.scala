@@ -22,16 +22,36 @@ trait GetEnabledStandardsRequest extends js.Object {
 
 object GetEnabledStandardsRequest {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    StandardsSubscriptionArns: StandardsSubscriptionArns = null
-  ): GetEnabledStandardsRequest = {
+  def apply(): GetEnabledStandardsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StandardsSubscriptionArns != null) __obj.updateDynamic("StandardsSubscriptionArns")(StandardsSubscriptionArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEnabledStandardsRequest]
   }
+  @scala.inline
+  implicit class GetEnabledStandardsRequestOps[Self <: GetEnabledStandardsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStandardsSubscriptionArnsVarargs(value: NonEmptyString*): Self = this.set("StandardsSubscriptionArns", js.Array(value :_*))
+    @scala.inline
+    def setStandardsSubscriptionArns(value: StandardsSubscriptionArns): Self = this.set("StandardsSubscriptionArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandardsSubscriptionArns: Self = this.set("StandardsSubscriptionArns", js.undefined)
+  }
+  
 }
 

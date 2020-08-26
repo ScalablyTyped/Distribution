@@ -141,6 +141,15 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.EventEmitter
     */
   /**
+    * Gets a base64 encoded image of the window or a part of it.
+    * @function capturePage
+    * @param { CapturePageOptions } [options] options for capturePage call.
+    * @return {Promise.<string>}
+    * @memberof Window
+    * @instance
+    * @tutorial Window.capturePage
+    */
+  /**
     * Executes Javascript on the window, restricted to windows you own or windows owned by
     * applications you have created.
     * @param { string } code JavaScript code to be executed on the window.
@@ -278,6 +287,7 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.flash
     */
   def flash(): js.Promise[Unit] = js.native
+  def focusedWebViewWasChanged(): js.Promise[Unit] = js.native
   /**
     * Retrieves an array of frame info objects representing the main frame and any
     * iframes that are currently on the page.
@@ -338,11 +348,12 @@ class Window protected () extends WebContents[WindowEvents] {
     */
   def getParentWindow(): js.Promise[Window] = js.native
   /**
-    * Gets a base64 encoded PNG snapshot of the window or just part a of it.
+    * ***DEPRECATED - please use Window.capturePage.***
+    * Gets a base64 encoded PNG image of the window or just part a of it.
     * @param { Area } [area] The area of the window to be captured.
     * Omitting it will capture the whole visible window.
     * @return {Promise.<string>}
-    * @tutorial Window.getSnapshot
+    * @tutorial Window.capturePage
     */
   def getSnapshot(): js.Promise[String] = js.native
   def getSnapshot(area: Area): js.Promise[String] = js.native
@@ -500,6 +511,7 @@ class Window protected () extends WebContents[WindowEvents] {
     * @tutorial Window.showAt
     */
   def showAt(left: Double, top: Double): js.Promise[Unit] = js.native
+  def showAt(left: Double, top: Double, force: js.UndefOr[scala.Nothing], options: WindowMovementOptions): js.Promise[Unit] = js.native
   def showAt(left: Double, top: Double, force: Boolean): js.Promise[Unit] = js.native
   def showAt(left: Double, top: Double, force: Boolean, options: WindowMovementOptions): js.Promise[Unit] = js.native
   /**

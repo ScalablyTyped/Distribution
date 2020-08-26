@@ -23,11 +23,29 @@ trait RegexMatchSetRegexMatchTupleFieldToMatch extends js.Object {
 
 object RegexMatchSetRegexMatchTupleFieldToMatch {
   @scala.inline
-  def apply(`type`: Input[String], data: Input[String] = null): RegexMatchSetRegexMatchTupleFieldToMatch = {
+  def apply(`type`: Input[String]): RegexMatchSetRegexMatchTupleFieldToMatch = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexMatchSetRegexMatchTupleFieldToMatch]
   }
+  @scala.inline
+  implicit class RegexMatchSetRegexMatchTupleFieldToMatchOps[Self <: RegexMatchSetRegexMatchTupleFieldToMatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setData(value: Input[String]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+  }
+  
 }
 

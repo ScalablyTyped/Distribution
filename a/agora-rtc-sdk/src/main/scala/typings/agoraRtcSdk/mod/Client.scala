@@ -153,6 +153,7 @@ trait Client extends js.Object {
     * - "DISABLE_DUALSTREAM_FAILED": Fails to disable dual streams.
     */
   def disableDualStream(): Unit = js.native
+  def disableDualStream(onSuccess: js.UndefOr[scala.Nothing], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   def disableDualStream(onSuccess: js.Function0[Unit]): Unit = js.native
   def disableDualStream(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**
@@ -212,6 +213,7 @@ trait Client extends js.Object {
     * - "ENABLE_DUALSTREAM_FAILED": Fails to enable dual streams.
     */
   def enableDualStream(): Unit = js.native
+  def enableDualStream(onSuccess: js.UndefOr[scala.Nothing], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   def enableDualStream(onSuccess: js.Function0[Unit]): Unit = js.native
   def enableDualStream(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**
@@ -504,23 +506,13 @@ trait Client extends js.Object {
     * - `"BAD_ENVIRONMENT"`: Unsupported web browser.
     */
   def init(appId: String): Unit = js.native
-  def init(appId: String, onSuccess: js.Function0[Unit]): Unit = js.native
-  def init(appId: String, onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
-  def join(tokenOrKey: String, channel: String): Unit = js.native
-  def join(tokenOrKey: String, channel: String, uid: String): Unit = js.native
-  def join(
-    tokenOrKey: String,
-    channel: String,
-    uid: String,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit]
-  ): Unit = js.native
-  def join(
-    tokenOrKey: String,
-    channel: String,
-    uid: String,
-    onSuccess: js.Function1[/* uid */ Double | String, Unit],
+  def init(
+    appId: String,
+    onSuccess: js.UndefOr[scala.Nothing],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
+  def init(appId: String, onSuccess: js.Function0[Unit]): Unit = js.native
+  def init(appId: String, onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**
     * Joins an AgoraRTC Channel
     *
@@ -567,7 +559,36 @@ trait Client extends js.Object {
     * - "ERR_REPEAT_JOIN": The local client has already joined the channel.
     * - "SOCKET_ERROR": The SDK disconnects with the Agora server when joining the channel.
     */
+  def join(tokenOrKey: String, channel: String): Unit = js.native
+  def join(tokenOrKey: String, channel: String, uid: String): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: String,
+    onSuccess: js.UndefOr[scala.Nothing],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: String,
+    onSuccess: js.Function1[/* uid */ Double | String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: String,
+    onSuccess: js.Function1[/* uid */ Double | String, Unit],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
   def join(tokenOrKey: String, channel: String, uid: Double): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: Double,
+    onSuccess: js.UndefOr[scala.Nothing],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
   def join(
     tokenOrKey: String,
     channel: String,
@@ -579,6 +600,13 @@ trait Client extends js.Object {
     channel: String,
     uid: Double,
     onSuccess: js.Function1[/* uid */ Double | String, Unit],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: String,
+    channel: String,
+    uid: Null,
+    onSuccess: js.UndefOr[scala.Nothing],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(
@@ -600,6 +628,13 @@ trait Client extends js.Object {
     tokenOrKey: Null,
     channel: String,
     uid: String,
+    onSuccess: js.UndefOr[scala.Nothing],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: String,
     onSuccess: js.Function1[/* uid */ Double | String, Unit]
   ): Unit = js.native
   def join(
@@ -614,6 +649,13 @@ trait Client extends js.Object {
     tokenOrKey: Null,
     channel: String,
     uid: Double,
+    onSuccess: js.UndefOr[scala.Nothing],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: Double,
     onSuccess: js.Function1[/* uid */ Double | String, Unit]
   ): Unit = js.native
   def join(
@@ -621,6 +663,13 @@ trait Client extends js.Object {
     channel: String,
     uid: Double,
     onSuccess: js.Function1[/* uid */ Double | String, Unit],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  def join(
+    tokenOrKey: Null,
+    channel: String,
+    uid: Null,
+    onSuccess: js.UndefOr[scala.Nothing],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(
@@ -662,6 +711,7 @@ trait Client extends js.Object {
     * - "LEAVE_MSG_TIMEOUT": The request to leave the channel times out. In this case, the SDK automatically disconnects and leaves the channel.
     */
   def leave(): Unit = js.native
+  def leave(onSuccess: js.UndefOr[scala.Nothing], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   def leave(onSuccess: js.Function0[Unit]): Unit = js.native
   def leave(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**
@@ -1375,6 +1425,7 @@ trait Client extends js.Object {
     * - "INVALID_OPERATION": The user is not in the channel. Call this method after the user joins a channel.
     */
   def renewChannelKey(key: String): Unit = js.native
+  def renewChannelKey(key: String, onSuccess: js.UndefOr[scala.Nothing], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   def renewChannelKey(key: String, onSuccess: js.Function0[Unit]): Unit = js.native
   def renewChannelKey(key: String, onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**
@@ -1528,7 +1579,6 @@ trait Client extends js.Object {
     * @param param The video profile of the low-quality video stream.
     */
   def setLowStreamParameter(param: Bitrate): Unit = js.native
-  def setProxyServer(): Unit = js.native
   /**
     * Deploys a Proxy Server
     *
@@ -1544,6 +1594,7 @@ trait Client extends js.Object {
     * @example `client.setProxyServer(proxyServer);`
     * @param proxyServer Your proxy server domain name. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes. See {@link ClientConfig.proxyServer} for details.
     */
+  def setProxyServer(): Unit = js.native
   def setProxyServer(proxyServer: String): Unit = js.native
   /**
     * Sets the stream type of a remote stream
@@ -1609,7 +1660,6 @@ trait Client extends js.Object {
   def setStreamFallbackOption_1(stream: Stream, fallbackType: `1`): Unit = js.native
   @JSName("setStreamFallbackOption")
   def setStreamFallbackOption_2(stream: Stream, fallbackType: `2`): Unit = js.native
-  def setTurnServer(): Unit = js.native
   /**
     * Deploys the TURN Server
     *
@@ -1623,6 +1673,7 @@ trait Client extends js.Object {
     * @example `client.setTurnServer(config);`
     * @param turnServer The TURN server settings. See {@link ClientConfig.turnServer} for details.
     */
+  def setTurnServer(): Unit = js.native
   def setTurnServer(turnServer: js.Array[Forceturn]): Unit = js.native
   /**
     * Starts relaying media streams across channels.
@@ -1790,6 +1841,11 @@ trait Client extends js.Object {
     * ```
     */
   def subscribe(stream: Stream): Unit = js.native
+  def subscribe(
+    stream: Stream,
+    options: js.UndefOr[scala.Nothing],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
   def subscribe(stream: Stream, options: Video): Unit = js.native
   def subscribe(stream: Stream, options: Video, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**

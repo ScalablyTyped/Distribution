@@ -71,6 +71,7 @@ trait CustomProperties extends js.Object {
     * @param asyncContext - Optional. Any state data that is passed to the callback method.
     */
   def saveAsync(): Unit = js.native
+  def saveAsync(callback: js.UndefOr[scala.Nothing], asyncContext: js.Any): Unit = js.native
   def saveAsync(callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def saveAsync(callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit], asyncContext: js.Any): Unit = js.native
   /**

@@ -44,21 +44,21 @@ class Messages protected () extends EventEmitter {
   /**
     * Send Message to the channel
     * @param {String} message - Message to post
-    * @param {Object} attributes Message attributes
+    * @param {any} attributes Message attributes
     * @returns Returns promise which can fail
     */
   def send(message: String): js.Promise[_] = js.native
-  def send(message: String, attributes: js.Object): js.Promise[_] = js.native
+  def send(message: String, attributes: js.Any): js.Promise[_] = js.native
   /**
     * Send Media Message to the channel
     * @param {FormData | Channel#SendMediaOptions} mediaContent - Media content to post
-    * @param {Object} attributes Message attributes
+    * @param {any} attributes Message attributes
     * @returns Returns promise which can fail
     */
   def sendMedia(mediaContent: FormData): js.Promise[_] = js.native
-  def sendMedia(mediaContent: FormData, attributes: js.Object): js.Promise[_] = js.native
+  def sendMedia(mediaContent: FormData, attributes: js.Any): js.Promise[_] = js.native
   def sendMedia(mediaContent: SendMediaOptions): js.Promise[_] = js.native
-  def sendMedia(mediaContent: SendMediaOptions, attributes: js.Object): js.Promise[_] = js.native
+  def sendMedia(mediaContent: SendMediaOptions, attributes: js.Any): js.Promise[_] = js.native
   /**
     * Subscribe to the Messages Event Stream
     * @param {String} name - The name of Sync object for the Messages resource.

@@ -27,7 +27,16 @@ class Schema_ protected () extends js.Object {
     *   this requires the corresponding tag to be available in this schema.
     */
   def createNode(value: js.Any): Node = js.native
+  def createNode(
+    value: js.Any,
+    wrapScalars: js.UndefOr[scala.Nothing],
+    tag: js.UndefOr[scala.Nothing],
+    ctx: CreateNodeContext
+  ): Node = js.native
+  def createNode(value: js.Any, wrapScalars: js.UndefOr[scala.Nothing], tag: String): Node = js.native
+  def createNode(value: js.Any, wrapScalars: js.UndefOr[scala.Nothing], tag: String, ctx: CreateNodeContext): Node = js.native
   def createNode(value: js.Any, wrapScalars: Boolean): Node = js.native
+  def createNode(value: js.Any, wrapScalars: Boolean, tag: js.UndefOr[scala.Nothing], ctx: CreateNodeContext): Node = js.native
   def createNode(value: js.Any, wrapScalars: Boolean, tag: String): Node = js.native
   def createNode(value: js.Any, wrapScalars: Boolean, tag: String, ctx: CreateNodeContext): Node = js.native
   /**

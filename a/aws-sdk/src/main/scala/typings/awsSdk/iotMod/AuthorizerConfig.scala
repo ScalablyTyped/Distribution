@@ -18,14 +18,30 @@ trait AuthorizerConfig extends js.Object {
 
 object AuthorizerConfig {
   @scala.inline
-  def apply(
-    allowAuthorizerOverride: js.UndefOr[AllowAuthorizerOverride] = js.undefined,
-    defaultAuthorizerName: AuthorizerName = null
-  ): AuthorizerConfig = {
+  def apply(): AuthorizerConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAuthorizerOverride)) __obj.updateDynamic("allowAuthorizerOverride")(allowAuthorizerOverride.get.asInstanceOf[js.Any])
-    if (defaultAuthorizerName != null) __obj.updateDynamic("defaultAuthorizerName")(defaultAuthorizerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizerConfig]
   }
+  @scala.inline
+  implicit class AuthorizerConfigOps[Self <: AuthorizerConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowAuthorizerOverride(value: AllowAuthorizerOverride): Self = this.set("allowAuthorizerOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowAuthorizerOverride: Self = this.set("allowAuthorizerOverride", js.undefined)
+    @scala.inline
+    def setDefaultAuthorizerName(value: AuthorizerName): Self = this.set("defaultAuthorizerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAuthorizerName: Self = this.set("defaultAuthorizerName", js.undefined)
+  }
+  
 }
 

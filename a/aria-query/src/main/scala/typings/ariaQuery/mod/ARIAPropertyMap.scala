@@ -4,162 +4,275 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ARIAPropertyMap extends js.Object {
-  var `aria-activedescendant`: js.UndefOr[js.Any] = js.undefined
-  var `aria-atomic`: js.UndefOr[js.Any] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[js.Any] = js.undefined
-  var `aria-busy`: js.UndefOr[js.Any] = js.undefined
-  var `aria-checked`: js.UndefOr[js.Any] = js.undefined
-  var `aria-colcount`: js.UndefOr[js.Any] = js.undefined
-  var `aria-colindex`: js.UndefOr[js.Any] = js.undefined
-  var `aria-colspan`: js.UndefOr[js.Any] = js.undefined
-  var `aria-controls`: js.UndefOr[js.Any] = js.undefined
-  var `aria-current`: js.UndefOr[ARIAPropertyCurrent | Null] = js.undefined
-  var `aria-describedat`: js.UndefOr[js.Any] = js.undefined
-  var `aria-describedby`: js.UndefOr[js.Any] = js.undefined
-  var `aria-details`: js.UndefOr[js.Any] = js.undefined
-  var `aria-disabled`: js.UndefOr[js.Any] = js.undefined
-  var `aria-dropeffect`: js.UndefOr[js.Any] = js.undefined
-  var `aria-errormessage`: js.UndefOr[js.Any] = js.undefined
-  var `aria-expanded`: js.UndefOr[js.Any] = js.undefined
-  var `aria-flowto`: js.UndefOr[js.Any] = js.undefined
-  var `aria-grabbed`: js.UndefOr[js.Any] = js.undefined
-  var `aria-haspopup`: js.UndefOr[js.Any] = js.undefined
-  var `aria-hidden`: js.UndefOr[js.Any] = js.undefined
-  var `aria-invalid`: js.UndefOr[js.Any] = js.undefined
-  var `aria-keyshortcuts`: js.UndefOr[js.Any] = js.undefined
-  var `aria-label`: js.UndefOr[js.Any] = js.undefined
-  var `aria-labelledby`: js.UndefOr[js.Any] = js.undefined
-  var `aria-level`: js.UndefOr[js.Any] = js.undefined
-  var `aria-live`: js.UndefOr[js.Any] = js.undefined
-  var `aria-modal`: js.UndefOr[js.Any] = js.undefined
-  var `aria-multiline`: js.UndefOr[js.Any] = js.undefined
-  var `aria-multiselectable`: js.UndefOr[js.Any] = js.undefined
-  var `aria-orientation`: js.UndefOr[js.Any] = js.undefined
-  var `aria-owns`: js.UndefOr[js.Any] = js.undefined
-  var `aria-placeholder`: js.UndefOr[js.Any] = js.undefined
-  var `aria-posinset`: js.UndefOr[js.Any] = js.undefined
-  var `aria-pressed`: js.UndefOr[js.Any] = js.undefined
-  var `aria-readonly`: js.UndefOr[js.Any] = js.undefined
-  var `aria-relevant`: js.UndefOr[js.Any] = js.undefined
-  var `aria-required`: js.UndefOr[js.Any] = js.undefined
-  var `aria-roledescription`: js.UndefOr[js.Any] = js.undefined
-  var `aria-rowcount`: js.UndefOr[js.Any] = js.undefined
-  var `aria-rowindex`: js.UndefOr[js.Any] = js.undefined
-  var `aria-rowspan`: js.UndefOr[js.Any] = js.undefined
-  var `aria-selected`: js.UndefOr[js.Any] = js.undefined
-  var `aria-setsize`: js.UndefOr[js.Any] = js.undefined
-  var `aria-sort`: js.UndefOr[js.Any] = js.undefined
-  var `aria-valuemax`: js.UndefOr[js.Any] = js.undefined
-  var `aria-valuemin`: js.UndefOr[js.Any] = js.undefined
-  var `aria-valuenow`: js.UndefOr[js.Any] = js.undefined
-  var `aria-valuetext`: js.UndefOr[js.Any] = js.undefined
+  var `aria-activedescendant`: js.UndefOr[js.Any] = js.native
+  var `aria-atomic`: js.UndefOr[js.Any] = js.native
+  var `aria-autocomplete`: js.UndefOr[js.Any] = js.native
+  var `aria-busy`: js.UndefOr[js.Any] = js.native
+  var `aria-checked`: js.UndefOr[js.Any] = js.native
+  var `aria-colcount`: js.UndefOr[js.Any] = js.native
+  var `aria-colindex`: js.UndefOr[js.Any] = js.native
+  var `aria-colspan`: js.UndefOr[js.Any] = js.native
+  var `aria-controls`: js.UndefOr[js.Any] = js.native
+  var `aria-current`: js.UndefOr[ARIAPropertyCurrent | Null] = js.native
+  var `aria-describedat`: js.UndefOr[js.Any] = js.native
+  var `aria-describedby`: js.UndefOr[js.Any] = js.native
+  var `aria-details`: js.UndefOr[js.Any] = js.native
+  var `aria-disabled`: js.UndefOr[js.Any] = js.native
+  var `aria-dropeffect`: js.UndefOr[js.Any] = js.native
+  var `aria-errormessage`: js.UndefOr[js.Any] = js.native
+  var `aria-expanded`: js.UndefOr[js.Any] = js.native
+  var `aria-flowto`: js.UndefOr[js.Any] = js.native
+  var `aria-grabbed`: js.UndefOr[js.Any] = js.native
+  var `aria-haspopup`: js.UndefOr[js.Any] = js.native
+  var `aria-hidden`: js.UndefOr[js.Any] = js.native
+  var `aria-invalid`: js.UndefOr[js.Any] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[js.Any] = js.native
+  var `aria-label`: js.UndefOr[js.Any] = js.native
+  var `aria-labelledby`: js.UndefOr[js.Any] = js.native
+  var `aria-level`: js.UndefOr[js.Any] = js.native
+  var `aria-live`: js.UndefOr[js.Any] = js.native
+  var `aria-modal`: js.UndefOr[js.Any] = js.native
+  var `aria-multiline`: js.UndefOr[js.Any] = js.native
+  var `aria-multiselectable`: js.UndefOr[js.Any] = js.native
+  var `aria-orientation`: js.UndefOr[js.Any] = js.native
+  var `aria-owns`: js.UndefOr[js.Any] = js.native
+  var `aria-placeholder`: js.UndefOr[js.Any] = js.native
+  var `aria-posinset`: js.UndefOr[js.Any] = js.native
+  var `aria-pressed`: js.UndefOr[js.Any] = js.native
+  var `aria-readonly`: js.UndefOr[js.Any] = js.native
+  var `aria-relevant`: js.UndefOr[js.Any] = js.native
+  var `aria-required`: js.UndefOr[js.Any] = js.native
+  var `aria-roledescription`: js.UndefOr[js.Any] = js.native
+  var `aria-rowcount`: js.UndefOr[js.Any] = js.native
+  var `aria-rowindex`: js.UndefOr[js.Any] = js.native
+  var `aria-rowspan`: js.UndefOr[js.Any] = js.native
+  var `aria-selected`: js.UndefOr[js.Any] = js.native
+  var `aria-setsize`: js.UndefOr[js.Any] = js.native
+  var `aria-sort`: js.UndefOr[js.Any] = js.native
+  var `aria-valuemax`: js.UndefOr[js.Any] = js.native
+  var `aria-valuemin`: js.UndefOr[js.Any] = js.native
+  var `aria-valuenow`: js.UndefOr[js.Any] = js.native
+  var `aria-valuetext`: js.UndefOr[js.Any] = js.native
 }
 
 object ARIAPropertyMap {
   @scala.inline
-  def apply(
-    `aria-activedescendant`: js.Any = null,
-    `aria-atomic`: js.Any = null,
-    `aria-autocomplete`: js.Any = null,
-    `aria-busy`: js.Any = null,
-    `aria-checked`: js.Any = null,
-    `aria-colcount`: js.Any = null,
-    `aria-colindex`: js.Any = null,
-    `aria-colspan`: js.Any = null,
-    `aria-controls`: js.Any = null,
-    `aria-current`: js.UndefOr[Null | ARIAPropertyCurrent] = js.undefined,
-    `aria-describedat`: js.Any = null,
-    `aria-describedby`: js.Any = null,
-    `aria-details`: js.Any = null,
-    `aria-disabled`: js.Any = null,
-    `aria-dropeffect`: js.Any = null,
-    `aria-errormessage`: js.Any = null,
-    `aria-expanded`: js.Any = null,
-    `aria-flowto`: js.Any = null,
-    `aria-grabbed`: js.Any = null,
-    `aria-haspopup`: js.Any = null,
-    `aria-hidden`: js.Any = null,
-    `aria-invalid`: js.Any = null,
-    `aria-keyshortcuts`: js.Any = null,
-    `aria-label`: js.Any = null,
-    `aria-labelledby`: js.Any = null,
-    `aria-level`: js.Any = null,
-    `aria-live`: js.Any = null,
-    `aria-modal`: js.Any = null,
-    `aria-multiline`: js.Any = null,
-    `aria-multiselectable`: js.Any = null,
-    `aria-orientation`: js.Any = null,
-    `aria-owns`: js.Any = null,
-    `aria-placeholder`: js.Any = null,
-    `aria-posinset`: js.Any = null,
-    `aria-pressed`: js.Any = null,
-    `aria-readonly`: js.Any = null,
-    `aria-relevant`: js.Any = null,
-    `aria-required`: js.Any = null,
-    `aria-roledescription`: js.Any = null,
-    `aria-rowcount`: js.Any = null,
-    `aria-rowindex`: js.Any = null,
-    `aria-rowspan`: js.Any = null,
-    `aria-selected`: js.Any = null,
-    `aria-setsize`: js.Any = null,
-    `aria-sort`: js.Any = null,
-    `aria-valuemax`: js.Any = null,
-    `aria-valuemin`: js.Any = null,
-    `aria-valuenow`: js.Any = null,
-    `aria-valuetext`: js.Any = null
-  ): ARIAPropertyMap = {
+  def apply(): ARIAPropertyMap = {
     val __obj = js.Dynamic.literal()
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (`aria-atomic` != null) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (`aria-busy` != null) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-current`)) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedat` != null) __obj.updateDynamic("aria-describedat")(`aria-describedat`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (`aria-disabled` != null) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (`aria-expanded` != null) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (`aria-grabbed` != null) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (`aria-hidden` != null) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (`aria-modal` != null) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (`aria-multiline` != null) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (`aria-multiselectable` != null) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (`aria-readonly` != null) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (`aria-required` != null) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (`aria-selected` != null) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARIAPropertyMap]
   }
+  @scala.inline
+  implicit class ARIAPropertyMapOps[Self <: ARIAPropertyMap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setAria-activedescendant`(value: js.Any): Self = this.set("aria-activedescendant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-activedescendant`: Self = this.set("aria-activedescendant", js.undefined)
+    @scala.inline
+    def `setAria-atomic`(value: js.Any): Self = this.set("aria-atomic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-atomic`: Self = this.set("aria-atomic", js.undefined)
+    @scala.inline
+    def `setAria-autocomplete`(value: js.Any): Self = this.set("aria-autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-autocomplete`: Self = this.set("aria-autocomplete", js.undefined)
+    @scala.inline
+    def `setAria-busy`(value: js.Any): Self = this.set("aria-busy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-busy`: Self = this.set("aria-busy", js.undefined)
+    @scala.inline
+    def `setAria-checked`(value: js.Any): Self = this.set("aria-checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-checked`: Self = this.set("aria-checked", js.undefined)
+    @scala.inline
+    def `setAria-colcount`(value: js.Any): Self = this.set("aria-colcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colcount`: Self = this.set("aria-colcount", js.undefined)
+    @scala.inline
+    def `setAria-colindex`(value: js.Any): Self = this.set("aria-colindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colindex`: Self = this.set("aria-colindex", js.undefined)
+    @scala.inline
+    def `setAria-colspan`(value: js.Any): Self = this.set("aria-colspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colspan`: Self = this.set("aria-colspan", js.undefined)
+    @scala.inline
+    def `setAria-controls`(value: js.Any): Self = this.set("aria-controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-controls`: Self = this.set("aria-controls", js.undefined)
+    @scala.inline
+    def `setAria-current`(value: ARIAPropertyCurrent): Self = this.set("aria-current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-current`: Self = this.set("aria-current", js.undefined)
+    @scala.inline
+    def `setAria-currentNull`: Self = this.set("aria-current", null)
+    @scala.inline
+    def `setAria-describedat`(value: js.Any): Self = this.set("aria-describedat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-describedat`: Self = this.set("aria-describedat", js.undefined)
+    @scala.inline
+    def `setAria-describedby`(value: js.Any): Self = this.set("aria-describedby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-describedby`: Self = this.set("aria-describedby", js.undefined)
+    @scala.inline
+    def `setAria-details`(value: js.Any): Self = this.set("aria-details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-details`: Self = this.set("aria-details", js.undefined)
+    @scala.inline
+    def `setAria-disabled`(value: js.Any): Self = this.set("aria-disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-disabled`: Self = this.set("aria-disabled", js.undefined)
+    @scala.inline
+    def `setAria-dropeffect`(value: js.Any): Self = this.set("aria-dropeffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-dropeffect`: Self = this.set("aria-dropeffect", js.undefined)
+    @scala.inline
+    def `setAria-errormessage`(value: js.Any): Self = this.set("aria-errormessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-errormessage`: Self = this.set("aria-errormessage", js.undefined)
+    @scala.inline
+    def `setAria-expanded`(value: js.Any): Self = this.set("aria-expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-expanded`: Self = this.set("aria-expanded", js.undefined)
+    @scala.inline
+    def `setAria-flowto`(value: js.Any): Self = this.set("aria-flowto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-flowto`: Self = this.set("aria-flowto", js.undefined)
+    @scala.inline
+    def `setAria-grabbed`(value: js.Any): Self = this.set("aria-grabbed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-grabbed`: Self = this.set("aria-grabbed", js.undefined)
+    @scala.inline
+    def `setAria-haspopup`(value: js.Any): Self = this.set("aria-haspopup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-haspopup`: Self = this.set("aria-haspopup", js.undefined)
+    @scala.inline
+    def `setAria-hidden`(value: js.Any): Self = this.set("aria-hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-hidden`: Self = this.set("aria-hidden", js.undefined)
+    @scala.inline
+    def `setAria-invalid`(value: js.Any): Self = this.set("aria-invalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-invalid`: Self = this.set("aria-invalid", js.undefined)
+    @scala.inline
+    def `setAria-keyshortcuts`(value: js.Any): Self = this.set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-keyshortcuts`: Self = this.set("aria-keyshortcuts", js.undefined)
+    @scala.inline
+    def `setAria-label`(value: js.Any): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    @scala.inline
+    def `setAria-labelledby`(value: js.Any): Self = this.set("aria-labelledby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-labelledby`: Self = this.set("aria-labelledby", js.undefined)
+    @scala.inline
+    def `setAria-level`(value: js.Any): Self = this.set("aria-level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-level`: Self = this.set("aria-level", js.undefined)
+    @scala.inline
+    def `setAria-live`(value: js.Any): Self = this.set("aria-live", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-live`: Self = this.set("aria-live", js.undefined)
+    @scala.inline
+    def `setAria-modal`(value: js.Any): Self = this.set("aria-modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-modal`: Self = this.set("aria-modal", js.undefined)
+    @scala.inline
+    def `setAria-multiline`(value: js.Any): Self = this.set("aria-multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiline`: Self = this.set("aria-multiline", js.undefined)
+    @scala.inline
+    def `setAria-multiselectable`(value: js.Any): Self = this.set("aria-multiselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiselectable`: Self = this.set("aria-multiselectable", js.undefined)
+    @scala.inline
+    def `setAria-orientation`(value: js.Any): Self = this.set("aria-orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-orientation`: Self = this.set("aria-orientation", js.undefined)
+    @scala.inline
+    def `setAria-owns`(value: js.Any): Self = this.set("aria-owns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-owns`: Self = this.set("aria-owns", js.undefined)
+    @scala.inline
+    def `setAria-placeholder`(value: js.Any): Self = this.set("aria-placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-placeholder`: Self = this.set("aria-placeholder", js.undefined)
+    @scala.inline
+    def `setAria-posinset`(value: js.Any): Self = this.set("aria-posinset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-posinset`: Self = this.set("aria-posinset", js.undefined)
+    @scala.inline
+    def `setAria-pressed`(value: js.Any): Self = this.set("aria-pressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-pressed`: Self = this.set("aria-pressed", js.undefined)
+    @scala.inline
+    def `setAria-readonly`(value: js.Any): Self = this.set("aria-readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-readonly`: Self = this.set("aria-readonly", js.undefined)
+    @scala.inline
+    def `setAria-relevant`(value: js.Any): Self = this.set("aria-relevant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-relevant`: Self = this.set("aria-relevant", js.undefined)
+    @scala.inline
+    def `setAria-required`(value: js.Any): Self = this.set("aria-required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-required`: Self = this.set("aria-required", js.undefined)
+    @scala.inline
+    def `setAria-roledescription`(value: js.Any): Self = this.set("aria-roledescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-roledescription`: Self = this.set("aria-roledescription", js.undefined)
+    @scala.inline
+    def `setAria-rowcount`(value: js.Any): Self = this.set("aria-rowcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowcount`: Self = this.set("aria-rowcount", js.undefined)
+    @scala.inline
+    def `setAria-rowindex`(value: js.Any): Self = this.set("aria-rowindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowindex`: Self = this.set("aria-rowindex", js.undefined)
+    @scala.inline
+    def `setAria-rowspan`(value: js.Any): Self = this.set("aria-rowspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowspan`: Self = this.set("aria-rowspan", js.undefined)
+    @scala.inline
+    def `setAria-selected`(value: js.Any): Self = this.set("aria-selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-selected`: Self = this.set("aria-selected", js.undefined)
+    @scala.inline
+    def `setAria-setsize`(value: js.Any): Self = this.set("aria-setsize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-setsize`: Self = this.set("aria-setsize", js.undefined)
+    @scala.inline
+    def `setAria-sort`(value: js.Any): Self = this.set("aria-sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-sort`: Self = this.set("aria-sort", js.undefined)
+    @scala.inline
+    def `setAria-valuemax`(value: js.Any): Self = this.set("aria-valuemax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemax`: Self = this.set("aria-valuemax", js.undefined)
+    @scala.inline
+    def `setAria-valuemin`(value: js.Any): Self = this.set("aria-valuemin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemin`: Self = this.set("aria-valuemin", js.undefined)
+    @scala.inline
+    def `setAria-valuenow`(value: js.Any): Self = this.set("aria-valuenow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuenow`: Self = this.set("aria-valuenow", js.undefined)
+    @scala.inline
+    def `setAria-valuetext`(value: js.Any): Self = this.set("aria-valuetext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuetext`: Self = this.set("aria-valuetext", js.undefined)
+  }
+  
 }
 

@@ -57,7 +57,7 @@ object TextPropTypes extends js.Object {
   var onMagicTap: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit]]]] = js.native
   var onPress: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]] = js.native
   var selectable: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
-  var selectionColor: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+  var selectionColor: js.UndefOr[Validator[js.UndefOr[ColorValue]]] = js.native
   var style: js.UndefOr[Validator[js.UndefOr[StyleProp[TextStyle]]]] = js.native
   var suppressHighlighting: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
   var testID: js.UndefOr[Validator[js.UndefOr[String]]] = js.native

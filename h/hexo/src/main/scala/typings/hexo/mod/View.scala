@@ -13,6 +13,7 @@ trait View extends js.Object {
     */
   def render(): js.Promise[String] = js.native
   def render(fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[_] = js.native
+  def render(options: js.UndefOr[scala.Nothing], fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
   def render(options: js.Any): js.Promise[String] = js.native
   def render(options: js.Any, fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
   /**

@@ -22,11 +22,32 @@ trait SchemaErrorLogEntry extends js.Object {
 
 object SchemaErrorLogEntry {
   @scala.inline
-  def apply(errorDetails: js.Array[String] = null, url: String = null): SchemaErrorLogEntry = {
+  def apply(): SchemaErrorLogEntry = {
     val __obj = js.Dynamic.literal()
-    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaErrorLogEntry]
   }
+  @scala.inline
+  implicit class SchemaErrorLogEntryOps[Self <: SchemaErrorLogEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorDetailsVarargs(value: String*): Self = this.set("errorDetails", js.Array(value :_*))
+    @scala.inline
+    def setErrorDetails(value: js.Array[String]): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

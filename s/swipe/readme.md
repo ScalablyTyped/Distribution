@@ -10,9 +10,9 @@ Swipe component with touch support
 | ------------------ | :-------------: |
 | Full name          | swipe |
 | Keywords           | carousel, slide, slides, swipe, touch, ui |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 5538 |
+| # downloads        | 5780 |
 | # stars            | 0 |
 
 ## Links

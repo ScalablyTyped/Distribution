@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply(logger: ^): Plugin = js.native
+  def apply(logger: ^, requestId: js.UndefOr[scala.Nothing], extra: js.Object): Plugin = js.native
   def apply(logger: ^, requestId: String): Plugin = js.native
   def apply(logger: ^, requestId: String, extra: js.Object): Plugin = js.native
 }

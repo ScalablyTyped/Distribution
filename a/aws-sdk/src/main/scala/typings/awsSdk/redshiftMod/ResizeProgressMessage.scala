@@ -74,42 +74,92 @@ trait ResizeProgressMessage extends js.Object {
 
 object ResizeProgressMessage {
   @scala.inline
-  def apply(
-    AvgResizeRateInMegaBytesPerSecond: js.UndefOr[DoubleOptional] = js.undefined,
-    DataTransferProgressPercent: js.UndefOr[DoubleOptional] = js.undefined,
-    ElapsedTimeInSeconds: js.UndefOr[LongOptional] = js.undefined,
-    EstimatedTimeToCompletionInSeconds: js.UndefOr[LongOptional] = js.undefined,
-    ImportTablesCompleted: ImportTablesCompleted = null,
-    ImportTablesInProgress: ImportTablesInProgress = null,
-    ImportTablesNotStarted: ImportTablesNotStarted = null,
-    Message: String = null,
-    ProgressInMegaBytes: js.UndefOr[LongOptional] = js.undefined,
-    ResizeType: String = null,
-    Status: String = null,
-    TargetClusterType: String = null,
-    TargetEncryptionType: String = null,
-    TargetNodeType: String = null,
-    TargetNumberOfNodes: js.UndefOr[IntegerOptional] = js.undefined,
-    TotalResizeDataInMegaBytes: js.UndefOr[LongOptional] = js.undefined
-  ): ResizeProgressMessage = {
+  def apply(): ResizeProgressMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AvgResizeRateInMegaBytesPerSecond)) __obj.updateDynamic("AvgResizeRateInMegaBytesPerSecond")(AvgResizeRateInMegaBytesPerSecond.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataTransferProgressPercent)) __obj.updateDynamic("DataTransferProgressPercent")(DataTransferProgressPercent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ElapsedTimeInSeconds)) __obj.updateDynamic("ElapsedTimeInSeconds")(ElapsedTimeInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EstimatedTimeToCompletionInSeconds)) __obj.updateDynamic("EstimatedTimeToCompletionInSeconds")(EstimatedTimeToCompletionInSeconds.get.asInstanceOf[js.Any])
-    if (ImportTablesCompleted != null) __obj.updateDynamic("ImportTablesCompleted")(ImportTablesCompleted.asInstanceOf[js.Any])
-    if (ImportTablesInProgress != null) __obj.updateDynamic("ImportTablesInProgress")(ImportTablesInProgress.asInstanceOf[js.Any])
-    if (ImportTablesNotStarted != null) __obj.updateDynamic("ImportTablesNotStarted")(ImportTablesNotStarted.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgressInMegaBytes)) __obj.updateDynamic("ProgressInMegaBytes")(ProgressInMegaBytes.get.asInstanceOf[js.Any])
-    if (ResizeType != null) __obj.updateDynamic("ResizeType")(ResizeType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TargetClusterType != null) __obj.updateDynamic("TargetClusterType")(TargetClusterType.asInstanceOf[js.Any])
-    if (TargetEncryptionType != null) __obj.updateDynamic("TargetEncryptionType")(TargetEncryptionType.asInstanceOf[js.Any])
-    if (TargetNodeType != null) __obj.updateDynamic("TargetNodeType")(TargetNodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(TargetNumberOfNodes)) __obj.updateDynamic("TargetNumberOfNodes")(TargetNumberOfNodes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalResizeDataInMegaBytes)) __obj.updateDynamic("TotalResizeDataInMegaBytes")(TotalResizeDataInMegaBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeProgressMessage]
   }
+  @scala.inline
+  implicit class ResizeProgressMessageOps[Self <: ResizeProgressMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvgResizeRateInMegaBytesPerSecond(value: DoubleOptional): Self = this.set("AvgResizeRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvgResizeRateInMegaBytesPerSecond: Self = this.set("AvgResizeRateInMegaBytesPerSecond", js.undefined)
+    @scala.inline
+    def setDataTransferProgressPercent(value: DoubleOptional): Self = this.set("DataTransferProgressPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTransferProgressPercent: Self = this.set("DataTransferProgressPercent", js.undefined)
+    @scala.inline
+    def setElapsedTimeInSeconds(value: LongOptional): Self = this.set("ElapsedTimeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElapsedTimeInSeconds: Self = this.set("ElapsedTimeInSeconds", js.undefined)
+    @scala.inline
+    def setEstimatedTimeToCompletionInSeconds(value: LongOptional): Self = this.set("EstimatedTimeToCompletionInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedTimeToCompletionInSeconds: Self = this.set("EstimatedTimeToCompletionInSeconds", js.undefined)
+    @scala.inline
+    def setImportTablesCompletedVarargs(value: String*): Self = this.set("ImportTablesCompleted", js.Array(value :_*))
+    @scala.inline
+    def setImportTablesCompleted(value: ImportTablesCompleted): Self = this.set("ImportTablesCompleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportTablesCompleted: Self = this.set("ImportTablesCompleted", js.undefined)
+    @scala.inline
+    def setImportTablesInProgressVarargs(value: String*): Self = this.set("ImportTablesInProgress", js.Array(value :_*))
+    @scala.inline
+    def setImportTablesInProgress(value: ImportTablesInProgress): Self = this.set("ImportTablesInProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportTablesInProgress: Self = this.set("ImportTablesInProgress", js.undefined)
+    @scala.inline
+    def setImportTablesNotStartedVarargs(value: String*): Self = this.set("ImportTablesNotStarted", js.Array(value :_*))
+    @scala.inline
+    def setImportTablesNotStarted(value: ImportTablesNotStarted): Self = this.set("ImportTablesNotStarted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportTablesNotStarted: Self = this.set("ImportTablesNotStarted", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setProgressInMegaBytes(value: LongOptional): Self = this.set("ProgressInMegaBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressInMegaBytes: Self = this.set("ProgressInMegaBytes", js.undefined)
+    @scala.inline
+    def setResizeType(value: String): Self = this.set("ResizeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizeType: Self = this.set("ResizeType", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTargetClusterType(value: String): Self = this.set("TargetClusterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetClusterType: Self = this.set("TargetClusterType", js.undefined)
+    @scala.inline
+    def setTargetEncryptionType(value: String): Self = this.set("TargetEncryptionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetEncryptionType: Self = this.set("TargetEncryptionType", js.undefined)
+    @scala.inline
+    def setTargetNodeType(value: String): Self = this.set("TargetNodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetNodeType: Self = this.set("TargetNodeType", js.undefined)
+    @scala.inline
+    def setTargetNumberOfNodes(value: IntegerOptional): Self = this.set("TargetNumberOfNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetNumberOfNodes: Self = this.set("TargetNumberOfNodes", js.undefined)
+    @scala.inline
+    def setTotalResizeDataInMegaBytes(value: LongOptional): Self = this.set("TotalResizeDataInMegaBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalResizeDataInMegaBytes: Self = this.set("TotalResizeDataInMegaBytes", js.undefined)
+  }
+  
 }
 

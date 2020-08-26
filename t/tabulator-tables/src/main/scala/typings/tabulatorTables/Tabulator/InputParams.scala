@@ -4,33 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputParams
   extends SharedEditorParams
      with _EditorParams {
   /**Changes input type to 'search' and shows an 'X' clear button to clear the cell value easily */
-  var search: js.UndefOr[Boolean] = js.undefined
+  var search: js.UndefOr[Boolean] = js.native
 }
 
 object InputParams {
   @scala.inline
-  def apply(
-    elementAttributes: JSONRecord = null,
-    mask: String = null,
-    maskAutoFill: js.UndefOr[Boolean] = js.undefined,
-    maskLetterChar: String = null,
-    maskNumberChar: String = null,
-    maskWildcardChar: String = null,
-    search: js.UndefOr[Boolean] = js.undefined
-  ): InputParams = {
+  def apply(): InputParams = {
     val __obj = js.Dynamic.literal()
-    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskAutoFill)) __obj.updateDynamic("maskAutoFill")(maskAutoFill.get.asInstanceOf[js.Any])
-    if (maskLetterChar != null) __obj.updateDynamic("maskLetterChar")(maskLetterChar.asInstanceOf[js.Any])
-    if (maskNumberChar != null) __obj.updateDynamic("maskNumberChar")(maskNumberChar.asInstanceOf[js.Any])
-    if (maskWildcardChar != null) __obj.updateDynamic("maskWildcardChar")(maskWildcardChar.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputParams]
   }
+  @scala.inline
+  implicit class InputParamsOps[Self <: InputParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSearch(value: Boolean): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch: Self = this.set("search", js.undefined)
+  }
+  
 }
 

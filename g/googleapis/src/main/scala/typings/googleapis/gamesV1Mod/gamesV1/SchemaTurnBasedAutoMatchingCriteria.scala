@@ -34,18 +34,38 @@ trait SchemaTurnBasedAutoMatchingCriteria extends js.Object {
 
 object SchemaTurnBasedAutoMatchingCriteria {
   @scala.inline
-  def apply(
-    exclusiveBitmask: String = null,
-    kind: String = null,
-    maxAutoMatchingPlayers: js.UndefOr[Double] = js.undefined,
-    minAutoMatchingPlayers: js.UndefOr[Double] = js.undefined
-  ): SchemaTurnBasedAutoMatchingCriteria = {
+  def apply(): SchemaTurnBasedAutoMatchingCriteria = {
     val __obj = js.Dynamic.literal()
-    if (exclusiveBitmask != null) __obj.updateDynamic("exclusiveBitmask")(exclusiveBitmask.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAutoMatchingPlayers)) __obj.updateDynamic("maxAutoMatchingPlayers")(maxAutoMatchingPlayers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minAutoMatchingPlayers)) __obj.updateDynamic("minAutoMatchingPlayers")(minAutoMatchingPlayers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTurnBasedAutoMatchingCriteria]
   }
+  @scala.inline
+  implicit class SchemaTurnBasedAutoMatchingCriteriaOps[Self <: SchemaTurnBasedAutoMatchingCriteria] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExclusiveBitmask(value: String): Self = this.set("exclusiveBitmask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveBitmask: Self = this.set("exclusiveBitmask", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMaxAutoMatchingPlayers(value: Double): Self = this.set("maxAutoMatchingPlayers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAutoMatchingPlayers: Self = this.set("maxAutoMatchingPlayers", js.undefined)
+    @scala.inline
+    def setMinAutoMatchingPlayers(value: Double): Self = this.set("minAutoMatchingPlayers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinAutoMatchingPlayers: Self = this.set("minAutoMatchingPlayers", js.undefined)
+  }
+  
 }
 

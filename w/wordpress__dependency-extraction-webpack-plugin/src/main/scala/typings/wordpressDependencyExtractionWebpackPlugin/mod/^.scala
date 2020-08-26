@@ -1,9 +1,5 @@
 package typings.wordpressDependencyExtractionWebpackPlugin.mod
 
-import typings.std.Set
-import typings.webpack.mod.Compiler_
-import typings.webpack.mod.ExternalsFunctionCallback
-import typings.webpack.mod.ExternalsPlugin
 import typings.wordpressDependencyExtractionWebpackPlugin.anon.PartialOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -53,47 +49,5 @@ class ^ protected () extends DependencyExtractionWebpackPlugin {
     * @param {Partial<Options>} options
     */
   def this(options: PartialOptions) = this()
-  /**
-    * Track requests that are externalized.
-    *
-    * Because we don't have a closed set of dependencies, we need to track what has
-    * been externalized so we can recognize them in a later phase when the dependency
-    * lists are generated.
-    *
-    * @type {Set<string>}
-    */
-  /* CompleteClass */
-  override var externalizedDeps: Set[String] = js.native
-  /* CompleteClass */
-  override var externalsPlugin: ExternalsPlugin = js.native
-  /** @type {Options} */
-  /* CompleteClass */
-  override var options: Options = js.native
-  /**
-    * @param {WebpackCompiler} compiler
-    * @return {void}
-    */
-  /* CompleteClass */
-  @JSName("apply")
-  override def apply(compiler: Compiler_): Unit = js.native
-  /**
-    * @param {Parameters<WebpackExternalsFunction>[0]} _context
-    * @param {Parameters<WebpackExternalsFunction>[1]} request
-    * @param {Parameters<WebpackExternalsFunction>[2]} callback
-    */
-  /* CompleteClass */
-  override def externalizeWpDeps(_context: js.Any, request: js.Any, callback: ExternalsFunctionCallback): Unit = js.native
-  /**
-    * @param {string} request
-    * @return {string} Transformed request
-    */
-  /* CompleteClass */
-  override def mapRequestToDependency(request: String): String = js.native
-  /**
-    * @param {Object} asset
-    * @return {string} Stringified asset
-    */
-  /* CompleteClass */
-  override def stringify(asset: js.Object): String = js.native
 }
 

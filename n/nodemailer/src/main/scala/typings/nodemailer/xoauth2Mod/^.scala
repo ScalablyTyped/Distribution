@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends XOAuth2 {
   def this(options: Options) = this()
+  def this(options: js.UndefOr[scala.Nothing], logger: Logger) = this()
   def this(options: Options, logger: Logger) = this()
 }
 

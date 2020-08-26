@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
   * Marker interface for controls which are suitable for use as label.
   * @resource sap/ui/core/library.js
   */
+@js.native
 trait Label extends js.Object
 

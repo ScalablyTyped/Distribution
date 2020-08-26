@@ -40,6 +40,7 @@ class DetailsListBase protected ()
   var _groupedList: js.Any = js.native
   var _header: js.Any = js.native
   var _initialFocusedIndex: js.Any = js.native
+  var _isRightArrow: js.Any = js.native
   var _list: js.Any = js.native
   var _notifyColumnsResized: js.Any = js.native
   /**
@@ -82,7 +83,6 @@ class DetailsListBase protected ()
   var _setFocusToRow: js.Any = js.native
   var _setFocusToRowIfPending: js.Any = js.native
   var _sumColumnWidths: js.Any = js.native
-  var isRightArrow: js.Any = js.native
   @JSName("UNSAFE_componentWillReceiveProps")
   def UNSAFE_componentWillReceiveProps_MDetailsListBase(newProps: IDetailsListProps): Unit = js.native
   /* protected */ def _onRenderRow(props: IDetailsRowProps): Element = js.native

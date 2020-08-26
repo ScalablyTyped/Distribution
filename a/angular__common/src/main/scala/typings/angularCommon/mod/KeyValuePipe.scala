@@ -16,8 +16,6 @@ class KeyValuePipe protected () extends PipeTransform {
   var differ: js.Any = js.native
   val differs: js.Any = js.native
   var keyValues: js.Any = js.native
-  /* CompleteClass */
-  override def transform(value: js.Any, args: js.Any*): js.Any = js.native
   def transform[V](): (js.Array[KeyValue[String, V]]) | Null = js.native
   def transform[V](input: NumberDictionary[V]): js.Array[KeyValue[Double, V]] = js.native
   def transform[V](

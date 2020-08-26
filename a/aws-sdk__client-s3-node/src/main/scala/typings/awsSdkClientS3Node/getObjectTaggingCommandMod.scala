@@ -27,17 +27,10 @@ object getObjectTaggingCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetObjectTaggingInput) = this()
-    /* CompleteClass */
-    override val input: GetObjectTaggingInput = js.native
     val middlewareStack: MiddlewareStack[GetObjectTaggingInput, GetObjectTaggingOutput, Readable] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[GetObjectTaggingInput, GetObjectTaggingOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[GetObjectTaggingInput, GetObjectTaggingOutput] = js.native
   }

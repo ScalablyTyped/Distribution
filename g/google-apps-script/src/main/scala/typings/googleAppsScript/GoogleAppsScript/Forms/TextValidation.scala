@@ -16,5 +16,6 @@ import scala.scalajs.js.annotation._
   *     textItem.setValidation(textValidation);
   */
 // tslint:disable-next-line: no-empty-interface
+@js.native
 trait TextValidation extends js.Object
 

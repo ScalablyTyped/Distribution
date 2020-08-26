@@ -8,38 +8,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdbAdapterConfiguration extends LocalDatabaseConfiguration {
   @JSName("adapter")
-  var adapter_IdbAdapterConfiguration: idb
+  var adapter_IdbAdapterConfiguration: idb = js.native
   /**
     * Configures storage persistence.
     *
     * Only works in Firefox 26+.
     */
-  var storage: js.UndefOr[persistent | temporary] = js.undefined
+  var storage: js.UndefOr[persistent | temporary] = js.native
 }
 
 object IdbAdapterConfiguration {
   @scala.inline
-  def apply(
-    adapter: idb,
-    auto_compaction: js.UndefOr[Boolean] = js.undefined,
-    deterministic_revs: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    prefix: String = null,
-    revs_limit: js.UndefOr[Double] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined,
-    storage: persistent | temporary = null
-  ): IdbAdapterConfiguration = {
+  def apply(adapter: idb): IdbAdapterConfiguration = {
     val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto_compaction)) __obj.updateDynamic("auto_compaction")(auto_compaction.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deterministic_revs)) __obj.updateDynamic("deterministic_revs")(deterministic_revs.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(revs_limit)) __obj.updateDynamic("revs_limit")(revs_limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdbAdapterConfiguration]
   }
+  @scala.inline
+  implicit class IdbAdapterConfigurationOps[Self <: IdbAdapterConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdapter(value: idb): Self = this.set("adapter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStorage(value: persistent | temporary): Self = this.set("storage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorage: Self = this.set("storage", js.undefined)
+  }
+  
 }
 

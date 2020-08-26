@@ -51,12 +51,52 @@ trait NameSpace extends js.Object {
   def GetStoreFromID(ID: String): Store = js.native
   def Logoff(): Unit = js.native
   def Logon(): Unit = js.native
+  def Logon(
+    Profile: js.UndefOr[scala.Nothing],
+    Password: js.UndefOr[scala.Nothing],
+    ShowDialog: js.UndefOr[scala.Nothing],
+    NewSession: js.Any
+  ): Unit = js.native
+  def Logon(Profile: js.UndefOr[scala.Nothing], Password: js.UndefOr[scala.Nothing], ShowDialog: js.Any): Unit = js.native
+  def Logon(
+    Profile: js.UndefOr[scala.Nothing],
+    Password: js.UndefOr[scala.Nothing],
+    ShowDialog: js.Any,
+    NewSession: js.Any
+  ): Unit = js.native
+  def Logon(Profile: js.UndefOr[scala.Nothing], Password: js.Any): Unit = js.native
+  def Logon(
+    Profile: js.UndefOr[scala.Nothing],
+    Password: js.Any,
+    ShowDialog: js.UndefOr[scala.Nothing],
+    NewSession: js.Any
+  ): Unit = js.native
+  def Logon(Profile: js.UndefOr[scala.Nothing], Password: js.Any, ShowDialog: js.Any): Unit = js.native
+  def Logon(Profile: js.UndefOr[scala.Nothing], Password: js.Any, ShowDialog: js.Any, NewSession: js.Any): Unit = js.native
   def Logon(Profile: js.Any): Unit = js.native
+  def Logon(
+    Profile: js.Any,
+    Password: js.UndefOr[scala.Nothing],
+    ShowDialog: js.UndefOr[scala.Nothing],
+    NewSession: js.Any
+  ): Unit = js.native
+  def Logon(Profile: js.Any, Password: js.UndefOr[scala.Nothing], ShowDialog: js.Any): Unit = js.native
+  def Logon(Profile: js.Any, Password: js.UndefOr[scala.Nothing], ShowDialog: js.Any, NewSession: js.Any): Unit = js.native
   def Logon(Profile: js.Any, Password: js.Any): Unit = js.native
+  def Logon(Profile: js.Any, Password: js.Any, ShowDialog: js.UndefOr[scala.Nothing], NewSession: js.Any): Unit = js.native
   def Logon(Profile: js.Any, Password: js.Any, ShowDialog: js.Any): Unit = js.native
   def Logon(Profile: js.Any, Password: js.Any, ShowDialog: js.Any, NewSession: js.Any): Unit = js.native
   def OpenSharedFolder(Path: String): Folder = js.native
+  def OpenSharedFolder(
+    Path: String,
+    Name: js.UndefOr[scala.Nothing],
+    DownloadAttachments: js.UndefOr[scala.Nothing],
+    UseTTL: js.Any
+  ): Folder = js.native
+  def OpenSharedFolder(Path: String, Name: js.UndefOr[scala.Nothing], DownloadAttachments: js.Any): Folder = js.native
+  def OpenSharedFolder(Path: String, Name: js.UndefOr[scala.Nothing], DownloadAttachments: js.Any, UseTTL: js.Any): Folder = js.native
   def OpenSharedFolder(Path: String, Name: js.Any): Folder = js.native
+  def OpenSharedFolder(Path: String, Name: js.Any, DownloadAttachments: js.UndefOr[scala.Nothing], UseTTL: js.Any): Folder = js.native
   def OpenSharedFolder(Path: String, Name: js.Any, DownloadAttachments: js.Any): Folder = js.native
   def OpenSharedFolder(Path: String, Name: js.Any, DownloadAttachments: js.Any, UseTTL: js.Any): Folder = js.native
   def OpenSharedItem(Path: String): js.Any = js.native

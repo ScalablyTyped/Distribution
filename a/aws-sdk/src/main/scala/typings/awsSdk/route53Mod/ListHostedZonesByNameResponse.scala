@@ -38,21 +38,46 @@ trait ListHostedZonesByNameResponse extends js.Object {
 
 object ListHostedZonesByNameResponse {
   @scala.inline
-  def apply(
-    HostedZones: HostedZones,
-    IsTruncated: PageTruncated,
-    MaxItems: PageMaxItems,
-    DNSName: DNSName = null,
-    HostedZoneId: ResourceId = null,
-    NextDNSName: DNSName = null,
-    NextHostedZoneId: ResourceId = null
-  ): ListHostedZonesByNameResponse = {
+  def apply(HostedZones: HostedZones, IsTruncated: PageTruncated, MaxItems: PageMaxItems): ListHostedZonesByNameResponse = {
     val __obj = js.Dynamic.literal(HostedZones = HostedZones.asInstanceOf[js.Any], IsTruncated = IsTruncated.asInstanceOf[js.Any], MaxItems = MaxItems.asInstanceOf[js.Any])
-    if (DNSName != null) __obj.updateDynamic("DNSName")(DNSName.asInstanceOf[js.Any])
-    if (HostedZoneId != null) __obj.updateDynamic("HostedZoneId")(HostedZoneId.asInstanceOf[js.Any])
-    if (NextDNSName != null) __obj.updateDynamic("NextDNSName")(NextDNSName.asInstanceOf[js.Any])
-    if (NextHostedZoneId != null) __obj.updateDynamic("NextHostedZoneId")(NextHostedZoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHostedZonesByNameResponse]
   }
+  @scala.inline
+  implicit class ListHostedZonesByNameResponseOps[Self <: ListHostedZonesByNameResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostedZonesVarargs(value: HostedZone*): Self = this.set("HostedZones", js.Array(value :_*))
+    @scala.inline
+    def setHostedZones(value: HostedZones): Self = this.set("HostedZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsTruncated(value: PageTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDNSName(value: DNSName): Self = this.set("DNSName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDNSName: Self = this.set("DNSName", js.undefined)
+    @scala.inline
+    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZoneId: Self = this.set("HostedZoneId", js.undefined)
+    @scala.inline
+    def setNextDNSName(value: DNSName): Self = this.set("NextDNSName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextDNSName: Self = this.set("NextDNSName", js.undefined)
+    @scala.inline
+    def setNextHostedZoneId(value: ResourceId): Self = this.set("NextHostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextHostedZoneId: Self = this.set("NextHostedZoneId", js.undefined)
+  }
+  
 }
 

@@ -2,19 +2,13 @@ package typings.mfiles.global.MFiles
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.mfiles.IMonthlyDateTrigger
-import typings.mfiles.MFiles.MFTriggerMonth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.MonthlyDateTrigger")
 @js.native
-class MonthlyDateTrigger () extends IMonthlyDateTrigger {
-  /* CompleteClass */
-  override var Days: Double = js.native
-  /* CompleteClass */
-  override var Months: MFTriggerMonth = js.native
-}
+class MonthlyDateTrigger () extends IMonthlyDateTrigger
 
 @JSGlobal("MFiles.MonthlyDateTrigger")
 @js.native

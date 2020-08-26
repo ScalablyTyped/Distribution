@@ -4,29 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreditEllipsoid extends js.Object {
-  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.undefined
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
-  var proxy: js.UndefOr[js.Any] = js.undefined
-  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.undefined
-  var url: String
+  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var proxy: js.UndefOr[js.Any] = js.native
+  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.native
+  var url: String = js.native
 }
 
 object CreditEllipsoid {
   @scala.inline
-  def apply(
-    url: String,
-    credit: typings.cesium.mod.Credit | String = null,
-    ellipsoid: typings.cesium.mod.Ellipsoid = null,
-    proxy: js.Any = null,
-    rectangle: typings.cesium.mod.Rectangle = null
-  ): CreditEllipsoid = {
+  def apply(url: String): CreditEllipsoid = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreditEllipsoid]
   }
+  @scala.inline
+  implicit class CreditEllipsoidOps[Self <: CreditEllipsoid] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCredit(value: typings.cesium.mod.Credit | String): Self = this.set("credit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredit: Self = this.set("credit", js.undefined)
+    @scala.inline
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    @scala.inline
+    def setProxy(value: js.Any): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxy: Self = this.set("proxy", js.undefined)
+    @scala.inline
+    def setRectangle(value: typings.cesium.mod.Rectangle): Self = this.set("rectangle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRectangle: Self = this.set("rectangle", js.undefined)
+  }
+  
 }
 

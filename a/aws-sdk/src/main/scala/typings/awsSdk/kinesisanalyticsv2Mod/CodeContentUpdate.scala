@@ -22,16 +22,34 @@ trait CodeContentUpdate extends js.Object {
 
 object CodeContentUpdate {
   @scala.inline
-  def apply(
-    S3ContentLocationUpdate: S3ContentLocationUpdate = null,
-    TextContentUpdate: TextContent = null,
-    ZipFileContentUpdate: ZipFileContent = null
-  ): CodeContentUpdate = {
+  def apply(): CodeContentUpdate = {
     val __obj = js.Dynamic.literal()
-    if (S3ContentLocationUpdate != null) __obj.updateDynamic("S3ContentLocationUpdate")(S3ContentLocationUpdate.asInstanceOf[js.Any])
-    if (TextContentUpdate != null) __obj.updateDynamic("TextContentUpdate")(TextContentUpdate.asInstanceOf[js.Any])
-    if (ZipFileContentUpdate != null) __obj.updateDynamic("ZipFileContentUpdate")(ZipFileContentUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeContentUpdate]
   }
+  @scala.inline
+  implicit class CodeContentUpdateOps[Self <: CodeContentUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3ContentLocationUpdate(value: S3ContentLocationUpdate): Self = this.set("S3ContentLocationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3ContentLocationUpdate: Self = this.set("S3ContentLocationUpdate", js.undefined)
+    @scala.inline
+    def setTextContentUpdate(value: TextContent): Self = this.set("TextContentUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextContentUpdate: Self = this.set("TextContentUpdate", js.undefined)
+    @scala.inline
+    def setZipFileContentUpdate(value: ZipFileContent): Self = this.set("ZipFileContentUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZipFileContentUpdate: Self = this.set("ZipFileContentUpdate", js.undefined)
+  }
+  
 }
 

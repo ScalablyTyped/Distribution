@@ -22,16 +22,34 @@ trait EnableMacieRequest extends js.Object {
 
 object EnableMacieRequest {
   @scala.inline
-  def apply(
-    clientToken: string = null,
-    findingPublishingFrequency: FindingPublishingFrequency = null,
-    status: MacieStatus = null
-  ): EnableMacieRequest = {
+  def apply(): EnableMacieRequest = {
     val __obj = js.Dynamic.literal()
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (findingPublishingFrequency != null) __obj.updateDynamic("findingPublishingFrequency")(findingPublishingFrequency.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableMacieRequest]
   }
+  @scala.inline
+  implicit class EnableMacieRequestOps[Self <: EnableMacieRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientToken(value: string): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    @scala.inline
+    def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = this.set("findingPublishingFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindingPublishingFrequency: Self = this.set("findingPublishingFrequency", js.undefined)
+    @scala.inline
+    def setStatus(value: MacieStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

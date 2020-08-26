@@ -131,50 +131,102 @@ trait SchemaCloudFunction extends js.Object {
 
 object SchemaCloudFunction {
   @scala.inline
-  def apply(
-    availableMemoryMb: js.UndefOr[Double] = js.undefined,
-    description: String = null,
-    entryPoint: String = null,
-    environmentVariables: StringDictionary[String] = null,
-    eventTrigger: SchemaEventTrigger = null,
-    httpsTrigger: SchemaHttpsTrigger = null,
-    labels: StringDictionary[String] = null,
-    maxInstances: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    network: String = null,
-    runtime: String = null,
-    serviceAccountEmail: String = null,
-    sourceArchiveUrl: String = null,
-    sourceRepository: SchemaSourceRepository = null,
-    sourceUploadUrl: String = null,
-    status: String = null,
-    timeout: String = null,
-    updateTime: String = null,
-    versionId: String = null,
-    vpcConnector: String = null
-  ): SchemaCloudFunction = {
+  def apply(): SchemaCloudFunction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(availableMemoryMb)) __obj.updateDynamic("availableMemoryMb")(availableMemoryMb.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (entryPoint != null) __obj.updateDynamic("entryPoint")(entryPoint.asInstanceOf[js.Any])
-    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
-    if (eventTrigger != null) __obj.updateDynamic("eventTrigger")(eventTrigger.asInstanceOf[js.Any])
-    if (httpsTrigger != null) __obj.updateDynamic("httpsTrigger")(httpsTrigger.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxInstances)) __obj.updateDynamic("maxInstances")(maxInstances.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (runtime != null) __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])
-    if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail.asInstanceOf[js.Any])
-    if (sourceArchiveUrl != null) __obj.updateDynamic("sourceArchiveUrl")(sourceArchiveUrl.asInstanceOf[js.Any])
-    if (sourceRepository != null) __obj.updateDynamic("sourceRepository")(sourceRepository.asInstanceOf[js.Any])
-    if (sourceUploadUrl != null) __obj.updateDynamic("sourceUploadUrl")(sourceUploadUrl.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
-    if (vpcConnector != null) __obj.updateDynamic("vpcConnector")(vpcConnector.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCloudFunction]
   }
+  @scala.inline
+  implicit class SchemaCloudFunctionOps[Self <: SchemaCloudFunction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailableMemoryMb(value: Double): Self = this.set("availableMemoryMb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableMemoryMb: Self = this.set("availableMemoryMb", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEntryPoint(value: String): Self = this.set("entryPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntryPoint: Self = this.set("entryPoint", js.undefined)
+    @scala.inline
+    def setEnvironmentVariables(value: StringDictionary[String]): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    @scala.inline
+    def setEventTrigger(value: SchemaEventTrigger): Self = this.set("eventTrigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTrigger: Self = this.set("eventTrigger", js.undefined)
+    @scala.inline
+    def setHttpsTrigger(value: SchemaHttpsTrigger): Self = this.set("httpsTrigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpsTrigger: Self = this.set("httpsTrigger", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMaxInstances(value: Double): Self = this.set("maxInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxInstances: Self = this.set("maxInstances", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setRuntime(value: String): Self = this.set("runtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntime: Self = this.set("runtime", js.undefined)
+    @scala.inline
+    def setServiceAccountEmail(value: String): Self = this.set("serviceAccountEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccountEmail: Self = this.set("serviceAccountEmail", js.undefined)
+    @scala.inline
+    def setSourceArchiveUrl(value: String): Self = this.set("sourceArchiveUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceArchiveUrl: Self = this.set("sourceArchiveUrl", js.undefined)
+    @scala.inline
+    def setSourceRepository(value: SchemaSourceRepository): Self = this.set("sourceRepository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRepository: Self = this.set("sourceRepository", js.undefined)
+    @scala.inline
+    def setSourceUploadUrl(value: String): Self = this.set("sourceUploadUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceUploadUrl: Self = this.set("sourceUploadUrl", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setVersionId(value: String): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("versionId", js.undefined)
+    @scala.inline
+    def setVpcConnector(value: String): Self = this.set("vpcConnector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConnector: Self = this.set("vpcConnector", js.undefined)
+  }
+  
 }
 

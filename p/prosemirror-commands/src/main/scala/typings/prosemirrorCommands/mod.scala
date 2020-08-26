@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @JSImport("prosemirror-commands", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
+  var baseKeymap: Keymap[js.Any] = js.native
+  var macBaseKeymap: Keymap[js.Any] = js.native
+  var pcBaseKeymap: Keymap[js.Any] = js.native
   def autoJoin[S /* <: Schema[_, _] */](
     command: js.Function2[
       /* state */ EditorState[S], 
@@ -39,19 +42,7 @@ object mod extends js.Object {
     /* p1 */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
   ] = js.native
-  def chainCommands[S /* <: Schema[_, _] */](
-    commands: (js.Function3[
-      /* p1 */ EditorState[S], 
-      /* p2 */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
-      /* p3 */ js.UndefOr[EditorView[S]], 
-      Boolean
-    ])*
-  ): js.Function3[
-    /* p1 */ EditorState[S], 
-    /* p2 */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
-    /* p3 */ js.UndefOr[EditorView[S]], 
-    Boolean
-  ] = js.native
+  def chainCommands[S /* <: Schema[_, _] */](commands: Command[S]*): Command[S] = js.native
   def createParagraphNear[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
   def createParagraphNear[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
   def deleteSelection[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
@@ -59,11 +50,13 @@ object mod extends js.Object {
   def exitCode[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
   def exitCode[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
   def joinBackward[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
+  def joinBackward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.UndefOr[scala.Nothing], view: EditorView[S]): Boolean = js.native
   def joinBackward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
   def joinBackward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit], view: EditorView[S]): Boolean = js.native
   def joinDown[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
   def joinDown[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
   def joinForward[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
+  def joinForward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.UndefOr[scala.Nothing], view: EditorView[S]): Boolean = js.native
   def joinForward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
   def joinForward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit], view: EditorView[S]): Boolean = js.native
   def joinUp[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
@@ -77,9 +70,11 @@ object mod extends js.Object {
   def selectAll[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
   def selectAll[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
   def selectNodeBackward[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
+  def selectNodeBackward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.UndefOr[scala.Nothing], view: EditorView[S]): Boolean = js.native
   def selectNodeBackward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
   def selectNodeBackward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit], view: EditorView[S]): Boolean = js.native
   def selectNodeForward[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
+  def selectNodeForward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.UndefOr[scala.Nothing], view: EditorView[S]): Boolean = js.native
   def selectNodeForward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit]): Boolean = js.native
   def selectNodeForward[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* tr */ Transaction[S], Unit], view: EditorView[S]): Boolean = js.native
   def selectParentNode[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
@@ -118,17 +113,12 @@ object mod extends js.Object {
     /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
     Boolean
   ] = js.native
-  @js.native
-  object baseKeymap
-    extends /* key */ StringDictionary[js.Any]
-  
-  @js.native
-  object macBaseKeymap
-    extends /* key */ StringDictionary[js.Any]
-  
-  @js.native
-  object pcBaseKeymap
-    extends /* key */ StringDictionary[js.Any]
-  
+  type Command[S /* <: Schema[_, _] */] = js.Function3[
+    /* state */ EditorState[S], 
+    /* dispatch */ js.UndefOr[js.Function1[/* tr */ Transaction[S], Unit]], 
+    /* view */ js.UndefOr[EditorView[S]], 
+    Boolean
+  ]
+  type Keymap[S /* <: Schema[_, _] */] = StringDictionary[Command[S]]
 }
 

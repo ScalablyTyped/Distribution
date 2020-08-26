@@ -22,11 +22,32 @@ trait SchemaAchievementResetMultipleForAllRequest extends js.Object {
 
 object SchemaAchievementResetMultipleForAllRequest {
   @scala.inline
-  def apply(achievement_ids: js.Array[String] = null, kind: String = null): SchemaAchievementResetMultipleForAllRequest = {
+  def apply(): SchemaAchievementResetMultipleForAllRequest = {
     val __obj = js.Dynamic.literal()
-    if (achievement_ids != null) __obj.updateDynamic("achievement_ids")(achievement_ids.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAchievementResetMultipleForAllRequest]
   }
+  @scala.inline
+  implicit class SchemaAchievementResetMultipleForAllRequestOps[Self <: SchemaAchievementResetMultipleForAllRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAchievement_idsVarargs(value: String*): Self = this.set("achievement_ids", js.Array(value :_*))
+    @scala.inline
+    def setAchievement_ids(value: js.Array[String]): Self = this.set("achievement_ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAchievement_ids: Self = this.set("achievement_ids", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

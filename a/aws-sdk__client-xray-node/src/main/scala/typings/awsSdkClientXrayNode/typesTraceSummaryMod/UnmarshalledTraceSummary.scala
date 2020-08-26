@@ -9,57 +9,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledTraceSummary extends TraceSummary {
   /**
     * <p>Annotations from the trace's segment documents.</p>
     */
   @JSName("Annotations")
-  var Annotations_UnmarshalledTraceSummary: js.UndefOr[StringDictionary[js.Array[UnmarshalledValueWithServiceIds]]] = js.undefined
+  var Annotations_UnmarshalledTraceSummary: js.UndefOr[StringDictionary[js.Array[UnmarshalledValueWithServiceIds]]] = js.native
   /**
     * <p>Information about the HTTP request served by the trace.</p>
     */
   @JSName("Http")
-  var Http_UnmarshalledTraceSummary: js.UndefOr[UnmarshalledHttp] = js.undefined
+  var Http_UnmarshalledTraceSummary: js.UndefOr[UnmarshalledHttp] = js.native
   /**
     * <p>Service IDs from the trace's segment documents.</p>
     */
   @JSName("ServiceIds")
-  var ServiceIds_UnmarshalledTraceSummary: js.UndefOr[js.Array[UnmarshalledServiceId]] = js.undefined
+  var ServiceIds_UnmarshalledTraceSummary: js.UndefOr[js.Array[UnmarshalledServiceId]] = js.native
   /**
     * <p>Users from the trace's segment documents.</p>
     */
   @JSName("Users")
-  var Users_UnmarshalledTraceSummary: js.UndefOr[js.Array[UnmarshalledTraceUser]] = js.undefined
+  var Users_UnmarshalledTraceSummary: js.UndefOr[js.Array[UnmarshalledTraceUser]] = js.native
 }
 
 object UnmarshalledTraceSummary {
   @scala.inline
-  def apply(
-    Annotations: StringDictionary[js.Array[UnmarshalledValueWithServiceIds]] = null,
-    Duration: js.UndefOr[Double] = js.undefined,
-    HasError: js.UndefOr[Boolean] = js.undefined,
-    HasFault: js.UndefOr[Boolean] = js.undefined,
-    HasThrottle: js.UndefOr[Boolean] = js.undefined,
-    Http: UnmarshalledHttp = null,
-    Id: String = null,
-    IsPartial: js.UndefOr[Boolean] = js.undefined,
-    ResponseTime: js.UndefOr[Double] = js.undefined,
-    ServiceIds: js.Array[UnmarshalledServiceId] = null,
-    Users: js.Array[UnmarshalledTraceUser] = null
-  ): UnmarshalledTraceSummary = {
+  def apply(): UnmarshalledTraceSummary = {
     val __obj = js.Dynamic.literal()
-    if (Annotations != null) __obj.updateDynamic("Annotations")(Annotations.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasError)) __obj.updateDynamic("HasError")(HasError.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasFault)) __obj.updateDynamic("HasFault")(HasFault.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasThrottle)) __obj.updateDynamic("HasThrottle")(HasThrottle.get.asInstanceOf[js.Any])
-    if (Http != null) __obj.updateDynamic("Http")(Http.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsPartial)) __obj.updateDynamic("IsPartial")(IsPartial.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ResponseTime)) __obj.updateDynamic("ResponseTime")(ResponseTime.get.asInstanceOf[js.Any])
-    if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds.asInstanceOf[js.Any])
-    if (Users != null) __obj.updateDynamic("Users")(Users.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledTraceSummary]
   }
+  @scala.inline
+  implicit class UnmarshalledTraceSummaryOps[Self <: UnmarshalledTraceSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotations(value: StringDictionary[js.Array[UnmarshalledValueWithServiceIds]]): Self = this.set("Annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("Annotations", js.undefined)
+    @scala.inline
+    def setHttp(value: UnmarshalledHttp): Self = this.set("Http", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttp: Self = this.set("Http", js.undefined)
+    @scala.inline
+    def setServiceIdsVarargs(value: UnmarshalledServiceId*): Self = this.set("ServiceIds", js.Array(value :_*))
+    @scala.inline
+    def setServiceIds(value: js.Array[UnmarshalledServiceId]): Self = this.set("ServiceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceIds: Self = this.set("ServiceIds", js.undefined)
+    @scala.inline
+    def setUsersVarargs(value: UnmarshalledTraceUser*): Self = this.set("Users", js.Array(value :_*))
+    @scala.inline
+    def setUsers(value: js.Array[UnmarshalledTraceUser]): Self = this.set("Users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsers: Self = this.set("Users", js.undefined)
+  }
+  
 }
 

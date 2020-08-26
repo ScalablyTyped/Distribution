@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "azure-arm-resource" : "7.3.0"
+      "azure-arm-resource" : "7.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "azure-arm-resource" : "7.3.0"
+      "azure-arm-resource" : "7.4.0"
     }
   ],
   "compile-devDependencies" : [

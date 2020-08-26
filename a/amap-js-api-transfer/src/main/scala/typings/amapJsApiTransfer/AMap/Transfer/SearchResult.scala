@@ -19,13 +19,9 @@ object SearchResult {
     info: String,
     origin: LngLat,
     plans: js.Array[TransferPlan],
-    taxi_cost: Double,
-    end: Poi = null,
-    start: Poi = null
+    taxi_cost: Double
   ): SearchResult = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], plans = plans.asInstanceOf[js.Any], taxi_cost = taxi_cost.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResult]
   }
   @scala.inline

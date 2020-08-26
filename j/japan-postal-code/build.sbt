@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "japan-postal-code"
-version := "0.2-dt-20200228Z-569314"
-scalaVersion := "2.13.2"
+version := "0.2-dt-20200228Z-6f0641"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

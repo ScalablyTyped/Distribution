@@ -17,6 +17,11 @@ trait LineString extends AbstractGeometry {
   ): Unit = js.native
   def eachLatLngAlt(
     eachFn: js.Function4[/* lat */ Latitude, /* lng */ Longitude, /* alt */ Altitude, /* index */ Double, Unit],
+    opt_start: js.UndefOr[scala.Nothing],
+    opt_end: Double
+  ): Unit = js.native
+  def eachLatLngAlt(
+    eachFn: js.Function4[/* lat */ Latitude, /* lng */ Longitude, /* alt */ Altitude, /* index */ Double, Unit],
     opt_start: Double
   ): Unit = js.native
   def eachLatLngAlt(
@@ -105,6 +110,7 @@ trait LineString extends AbstractGeometry {
     * @throws {H.lang.InvalidArgumentError} - in case of invalid opt_latLngAlts argument
     */
   def spliceLatLngAlts(index: Double): js.Array[Double] = js.native
+  def spliceLatLngAlts(index: Double, opt_nRemove: js.UndefOr[scala.Nothing], opt_latLngAlts: js.Array[Double]): js.Array[Double] = js.native
   def spliceLatLngAlts(index: Double, opt_nRemove: Double): js.Array[Double] = js.native
   def spliceLatLngAlts(index: Double, opt_nRemove: Double, opt_latLngAlts: js.Array[Double]): js.Array[Double] = js.native
 }

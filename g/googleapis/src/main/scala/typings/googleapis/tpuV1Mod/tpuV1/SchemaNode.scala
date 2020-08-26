@@ -93,42 +93,88 @@ trait SchemaNode extends js.Object {
 
 object SchemaNode {
   @scala.inline
-  def apply(
-    acceleratorType: String = null,
-    cidrBlock: String = null,
-    createTime: String = null,
-    description: String = null,
-    health: String = null,
-    healthDescription: String = null,
-    ipAddress: String = null,
-    labels: StringDictionary[String] = null,
-    name: String = null,
-    network: String = null,
-    networkEndpoints: js.Array[SchemaNetworkEndpoint] = null,
-    port: String = null,
-    schedulingConfig: SchemaSchedulingConfig = null,
-    serviceAccount: String = null,
-    state: String = null,
-    tensorflowVersion: String = null
-  ): SchemaNode = {
+  def apply(): SchemaNode = {
     val __obj = js.Dynamic.literal()
-    if (acceleratorType != null) __obj.updateDynamic("acceleratorType")(acceleratorType.asInstanceOf[js.Any])
-    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (health != null) __obj.updateDynamic("health")(health.asInstanceOf[js.Any])
-    if (healthDescription != null) __obj.updateDynamic("healthDescription")(healthDescription.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (networkEndpoints != null) __obj.updateDynamic("networkEndpoints")(networkEndpoints.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (schedulingConfig != null) __obj.updateDynamic("schedulingConfig")(schedulingConfig.asInstanceOf[js.Any])
-    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tensorflowVersion != null) __obj.updateDynamic("tensorflowVersion")(tensorflowVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNode]
   }
+  @scala.inline
+  implicit class SchemaNodeOps[Self <: SchemaNode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorType(value: String): Self = this.set("acceleratorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorType: Self = this.set("acceleratorType", js.undefined)
+    @scala.inline
+    def setCidrBlock(value: String): Self = this.set("cidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlock: Self = this.set("cidrBlock", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setHealth(value: String): Self = this.set("health", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealth: Self = this.set("health", js.undefined)
+    @scala.inline
+    def setHealthDescription(value: String): Self = this.set("healthDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthDescription: Self = this.set("healthDescription", js.undefined)
+    @scala.inline
+    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setNetworkEndpointsVarargs(value: SchemaNetworkEndpoint*): Self = this.set("networkEndpoints", js.Array(value :_*))
+    @scala.inline
+    def setNetworkEndpoints(value: js.Array[SchemaNetworkEndpoint]): Self = this.set("networkEndpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkEndpoints: Self = this.set("networkEndpoints", js.undefined)
+    @scala.inline
+    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setSchedulingConfig(value: SchemaSchedulingConfig): Self = this.set("schedulingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedulingConfig: Self = this.set("schedulingConfig", js.undefined)
+    @scala.inline
+    def setServiceAccount(value: String): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTensorflowVersion(value: String): Self = this.set("tensorflowVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTensorflowVersion: Self = this.set("tensorflowVersion", js.undefined)
+  }
+  
 }
 

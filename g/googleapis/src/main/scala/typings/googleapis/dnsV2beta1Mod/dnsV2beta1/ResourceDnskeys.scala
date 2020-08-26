@@ -90,6 +90,7 @@ class ResourceDnskeys protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDnsKey] = js.native
   def get(callback: BodyResponseCallback[SchemaDnsKey]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDnsKey] = js.native
   def get(params: ParamsResourceDnskeysGet): GaxiosPromise[SchemaDnsKey] = js.native
   def get(params: ParamsResourceDnskeysGet, callback: BodyResponseCallback[SchemaDnsKey]): Unit = js.native
   def get(
@@ -190,6 +191,7 @@ class ResourceDnskeys protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaDnsKeysListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDnsKeysListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDnsKeysListResponse] = js.native
   def list(params: ParamsResourceDnskeysList): GaxiosPromise[SchemaDnsKeysListResponse] = js.native
   def list(params: ParamsResourceDnskeysList, callback: BodyResponseCallback[SchemaDnsKeysListResponse]): Unit = js.native
   def list(

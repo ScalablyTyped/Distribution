@@ -46,26 +46,58 @@ trait ActionDeclaration extends js.Object {
 
 object ActionDeclaration {
   @scala.inline
-  def apply(
-    actionTypeId: ActionTypeId,
-    name: ActionName,
-    configuration: ActionConfigurationMap = null,
-    inputArtifacts: InputArtifactList = null,
-    namespace: ActionNamespace = null,
-    outputArtifacts: OutputArtifactList = null,
-    region: AWSRegionName = null,
-    roleArn: RoleArn = null,
-    runOrder: js.UndefOr[ActionRunOrder] = js.undefined
-  ): ActionDeclaration = {
+  def apply(actionTypeId: ActionTypeId, name: ActionName): ActionDeclaration = {
     val __obj = js.Dynamic.literal(actionTypeId = actionTypeId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (inputArtifacts != null) __obj.updateDynamic("inputArtifacts")(inputArtifacts.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (outputArtifacts != null) __obj.updateDynamic("outputArtifacts")(outputArtifacts.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(runOrder)) __obj.updateDynamic("runOrder")(runOrder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionDeclaration]
   }
+  @scala.inline
+  implicit class ActionDeclarationOps[Self <: ActionDeclaration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionTypeId(value: ActionTypeId): Self = this.set("actionTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ActionName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfiguration(value: ActionConfigurationMap): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setInputArtifactsVarargs(value: InputArtifact*): Self = this.set("inputArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setInputArtifacts(value: InputArtifactList): Self = this.set("inputArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputArtifacts: Self = this.set("inputArtifacts", js.undefined)
+    @scala.inline
+    def setNamespace(value: ActionNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setOutputArtifactsVarargs(value: OutputArtifact*): Self = this.set("outputArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setOutputArtifacts(value: OutputArtifactList): Self = this.set("outputArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputArtifacts: Self = this.set("outputArtifacts", js.undefined)
+    @scala.inline
+    def setRegion(value: AWSRegionName): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    @scala.inline
+    def setRunOrder(value: ActionRunOrder): Self = this.set("runOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunOrder: Self = this.set("runOrder", js.undefined)
+  }
+  
 }
 

@@ -34,7 +34,17 @@ trait SpinePlugin extends ScenePlugin {
   var spineTextures: BaseCache = js.native
   var textures: TextureManager = js.native
   def add(x: Double, y: Double): SpineGameObject = js.native
+  def add(
+    x: Double,
+    y: Double,
+    key: js.UndefOr[scala.Nothing],
+    animationName: js.UndefOr[scala.Nothing],
+    loop: Boolean
+  ): SpineGameObject = js.native
+  def add(x: Double, y: Double, key: js.UndefOr[scala.Nothing], animationName: String): SpineGameObject = js.native
+  def add(x: Double, y: Double, key: js.UndefOr[scala.Nothing], animationName: String, loop: Boolean): SpineGameObject = js.native
   def add(x: Double, y: Double, key: String): SpineGameObject = js.native
+  def add(x: Double, y: Double, key: String, animationName: js.UndefOr[scala.Nothing], loop: Boolean): SpineGameObject = js.native
   def add(x: Double, y: Double, key: String, animationName: String): SpineGameObject = js.native
   def add(x: Double, y: Double, key: String, animationName: String, loop: Boolean): SpineGameObject = js.native
   def createAnimationState(skeleton: Skeleton): js.Any = js.native

@@ -29,6 +29,7 @@ class ViewFactory protected () extends js.Object {
     * @return The created view.
     */
   def create(container: Container): View_ = js.native
+  def create(container: Container, createInstruction: js.UndefOr[scala.Nothing], element: Element): View_ = js.native
   def create(container: Container, createInstruction: ViewCreateInstruction): View_ = js.native
   def create(container: Container, createInstruction: ViewCreateInstruction, element: Element): View_ = js.native
   /**

@@ -12,24 +12,24 @@ sealed trait ApiKeyScope extends js.Object
 @js.native
 object ApiKeyScope extends js.Object {
   @js.native
-  sealed trait manage extends ApiKeyScope
+  sealed trait MANAGE extends ApiKeyScope
   
   @js.native
-  sealed trait read extends ApiKeyScope
+  sealed trait READ extends ApiKeyScope
   
   @js.native
-  sealed trait write extends ApiKeyScope
+  sealed trait WRITE extends ApiKeyScope
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ApiKeyScope with String] = js.native
   /* "manage" */ @js.native
-  object manage extends TopLevel[manage with String]
+  object MANAGE extends TopLevel[MANAGE with String]
   
   /* "read" */ @js.native
-  object read extends TopLevel[read with String]
+  object READ extends TopLevel[READ with String]
   
   /* "write" */ @js.native
-  object write extends TopLevel[write with String]
+  object WRITE extends TopLevel[WRITE with String]
   
 }
 

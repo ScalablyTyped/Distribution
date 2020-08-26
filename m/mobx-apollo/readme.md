@@ -12,7 +12,7 @@ A MobX and Apollo Client integration utility.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 11881 |
+| # downloads        | 12412 |
 | # stars            | 1 |
 
 ## Links

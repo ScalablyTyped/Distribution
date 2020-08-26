@@ -33,6 +33,7 @@ trait Paper extends Element {
     vbh: Double
   ): js.Object = js.native
   def rect(x: Double, y: Double, width: Double, height: Double): Element = js.native
+  def rect(x: Double, y: Double, width: Double, height: Double, rx: js.UndefOr[scala.Nothing], ry: Double): Element = js.native
   def rect(x: Double, y: Double, width: Double, height: Double, rx: Double): Element = js.native
   def rect(x: Double, y: Double, width: Double, height: Double, rx: Double, ry: Double): Element = js.native
   def svg(

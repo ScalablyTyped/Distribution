@@ -26,15 +26,34 @@ trait CreatePermissionRequest extends js.Object {
 
 object CreatePermissionRequest {
   @scala.inline
-  def apply(
-    Actions: ActionList,
-    CertificateAuthorityArn: Arn,
-    Principal: Principal,
-    SourceAccount: AccountId = null
-  ): CreatePermissionRequest = {
+  def apply(Actions: ActionList, CertificateAuthorityArn: Arn, Principal: Principal): CreatePermissionRequest = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any], Principal = Principal.asInstanceOf[js.Any])
-    if (SourceAccount != null) __obj.updateDynamic("SourceAccount")(SourceAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePermissionRequest]
   }
+  @scala.inline
+  implicit class CreatePermissionRequestOps[Self <: CreatePermissionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsVarargs(value: ActionType*): Self = this.set("Actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: ActionList): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrincipal(value: Principal): Self = this.set("Principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceAccount(value: AccountId): Self = this.set("SourceAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceAccount: Self = this.set("SourceAccount", js.undefined)
+  }
+  
 }
 

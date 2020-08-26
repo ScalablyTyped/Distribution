@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object progress
   extends TopLevel[
-      Instantiable2[/* runner */ Runner, js.UndefOr[/* options */ MochaOptions], Progress]
+      Instantiable2[/* runner */ Runner, /* options */ js.UndefOr[MochaOptions], Progress]
     ]
 

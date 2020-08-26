@@ -23,14 +23,32 @@ trait SchemaNonGuaranteedAuctionTerms extends js.Object {
 
 object SchemaNonGuaranteedAuctionTerms {
   @scala.inline
-  def apply(
-    autoOptimizePrivateAuction: js.UndefOr[Boolean] = js.undefined,
-    reservePricesPerBuyer: js.Array[SchemaPricePerBuyer] = null
-  ): SchemaNonGuaranteedAuctionTerms = {
+  def apply(): SchemaNonGuaranteedAuctionTerms = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoOptimizePrivateAuction)) __obj.updateDynamic("autoOptimizePrivateAuction")(autoOptimizePrivateAuction.get.asInstanceOf[js.Any])
-    if (reservePricesPerBuyer != null) __obj.updateDynamic("reservePricesPerBuyer")(reservePricesPerBuyer.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNonGuaranteedAuctionTerms]
   }
+  @scala.inline
+  implicit class SchemaNonGuaranteedAuctionTermsOps[Self <: SchemaNonGuaranteedAuctionTerms] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoOptimizePrivateAuction(value: Boolean): Self = this.set("autoOptimizePrivateAuction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoOptimizePrivateAuction: Self = this.set("autoOptimizePrivateAuction", js.undefined)
+    @scala.inline
+    def setReservePricesPerBuyerVarargs(value: SchemaPricePerBuyer*): Self = this.set("reservePricesPerBuyer", js.Array(value :_*))
+    @scala.inline
+    def setReservePricesPerBuyer(value: js.Array[SchemaPricePerBuyer]): Self = this.set("reservePricesPerBuyer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservePricesPerBuyer: Self = this.set("reservePricesPerBuyer", js.undefined)
+  }
+  
 }
 

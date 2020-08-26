@@ -4,114 +4,193 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WindowOptions extends js.Object {
-  var actions: js.UndefOr[js.Any] = js.undefined
-  var activate: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
-  var animation: js.UndefOr[Boolean | WindowAnimation] = js.undefined
-  var appendTo: js.UndefOr[js.Any | String] = js.undefined
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var close: js.UndefOr[js.Function1[/* e */ WindowCloseEvent, Unit]] = js.undefined
-  var content: js.UndefOr[String | WindowContent] = js.undefined
-  var deactivate: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
-  var dragend: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
-  var draggable: js.UndefOr[Boolean | WindowDraggable] = js.undefined
-  var dragstart: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
-  var error: js.UndefOr[js.Function1[/* e */ WindowErrorEvent, Unit]] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var iframe: js.UndefOr[Boolean] = js.undefined
-  var maxHeight: js.UndefOr[Double] = js.undefined
-  var maxWidth: js.UndefOr[Double] = js.undefined
-  var maximize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
-  var minHeight: js.UndefOr[Double] = js.undefined
-  var minWidth: js.UndefOr[Double] = js.undefined
-  var minimize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
-  var modal: js.UndefOr[Boolean | WindowModal] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var open: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
-  var pinned: js.UndefOr[Boolean] = js.undefined
-  var position: js.UndefOr[WindowPosition] = js.undefined
-  var refresh: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
-  var resizable: js.UndefOr[Boolean] = js.undefined
-  var resize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.undefined
-  var scrollable: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String | Boolean] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
+  var actions: js.UndefOr[js.Any] = js.native
+  var activate: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var animation: js.UndefOr[Boolean | WindowAnimation] = js.native
+  var appendTo: js.UndefOr[js.Any | String] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ WindowCloseEvent, Unit]] = js.native
+  var content: js.UndefOr[String | WindowContent] = js.native
+  var deactivate: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var dragend: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var draggable: js.UndefOr[Boolean | WindowDraggable] = js.native
+  var dragstart: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ WindowErrorEvent, Unit]] = js.native
+  var height: js.UndefOr[Double | String] = js.native
+  var iframe: js.UndefOr[Boolean] = js.native
+  var maxHeight: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.native
+  var maximize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var minHeight: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.native
+  var minimize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var modal: js.UndefOr[Boolean | WindowModal] = js.native
+  var name: js.UndefOr[String] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var pinned: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[WindowPosition] = js.native
+  var refresh: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var resizable: js.UndefOr[Boolean] = js.native
+  var resize: js.UndefOr[js.Function1[/* e */ WindowEvent, Unit]] = js.native
+  var scrollable: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String | Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 
 object WindowOptions {
   @scala.inline
-  def apply(
-    actions: js.Any = null,
-    activate: /* e */ WindowEvent => Unit = null,
-    animation: Boolean | WindowAnimation = null,
-    appendTo: js.Any | String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    close: /* e */ WindowCloseEvent => Unit = null,
-    content: String | WindowContent = null,
-    deactivate: /* e */ WindowEvent => Unit = null,
-    dragend: /* e */ WindowEvent => Unit = null,
-    draggable: Boolean | WindowDraggable = null,
-    dragstart: /* e */ WindowEvent => Unit = null,
-    error: /* e */ WindowErrorEvent => Unit = null,
-    height: Double | String = null,
-    iframe: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    maximize: /* e */ WindowEvent => Unit = null,
-    minHeight: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    minimize: /* e */ WindowEvent => Unit = null,
-    modal: Boolean | WindowModal = null,
-    name: String = null,
-    open: /* e */ WindowEvent => Unit = null,
-    pinned: js.UndefOr[Boolean] = js.undefined,
-    position: WindowPosition = null,
-    refresh: /* e */ WindowEvent => Unit = null,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    resize: /* e */ WindowEvent => Unit = null,
-    scrollable: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
-    title: String | Boolean = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String = null
-  ): WindowOptions = {
+  def apply(): WindowOptions = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction1(activate))
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction1(deactivate))
-    if (dragend != null) __obj.updateDynamic("dragend")(js.Any.fromFunction1(dragend))
-    if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (dragstart != null) __obj.updateDynamic("dragstart")(js.Any.fromFunction1(dragstart))
-    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (maximize != null) __obj.updateDynamic("maximize")(js.Any.fromFunction1(maximize))
-    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (minimize != null) __obj.updateDynamic("minimize")(js.Any.fromFunction1(minimize))
-    if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
-    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction1(refresh))
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))
-    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowOptions]
   }
+  @scala.inline
+  implicit class WindowOptionsOps[Self <: WindowOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActions(value: js.Any): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+    @scala.inline
+    def setActivate(value: /* e */ WindowEvent => Unit): Self = this.set("activate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteActivate: Self = this.set("activate", js.undefined)
+    @scala.inline
+    def setAnimation(value: Boolean | WindowAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAppendTo(value: js.Any | String): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setClose(value: /* e */ WindowCloseEvent => Unit): Self = this.set("close", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setContent(value: String | WindowContent): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDeactivate(value: /* e */ WindowEvent => Unit): Self = this.set("deactivate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDeactivate: Self = this.set("deactivate", js.undefined)
+    @scala.inline
+    def setDragend(value: /* e */ WindowEvent => Unit): Self = this.set("dragend", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragend: Self = this.set("dragend", js.undefined)
+    @scala.inline
+    def setDraggable(value: Boolean | WindowDraggable): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setDragstart(value: /* e */ WindowEvent => Unit): Self = this.set("dragstart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragstart: Self = this.set("dragstart", js.undefined)
+    @scala.inline
+    def setError(value: /* e */ WindowErrorEvent => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIframe(value: Boolean): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIframe: Self = this.set("iframe", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMaximize(value: /* e */ WindowEvent => Unit): Self = this.set("maximize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMaximize: Self = this.set("maximize", js.undefined)
+    @scala.inline
+    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setMinimize(value: /* e */ WindowEvent => Unit): Self = this.set("minimize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMinimize: Self = this.set("minimize", js.undefined)
+    @scala.inline
+    def setModal(value: Boolean | WindowModal): Self = this.set("modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModal: Self = this.set("modal", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOpen(value: /* e */ WindowEvent => Unit): Self = this.set("open", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setPinned(value: Boolean): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinned: Self = this.set("pinned", js.undefined)
+    @scala.inline
+    def setPosition(value: WindowPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRefresh(value: /* e */ WindowEvent => Unit): Self = this.set("refresh", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    @scala.inline
+    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizable: Self = this.set("resizable", js.undefined)
+    @scala.inline
+    def setResize(value: /* e */ WindowEvent => Unit): Self = this.set("resize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteResize: Self = this.set("resize", js.undefined)
+    @scala.inline
+    def setScrollable(value: Boolean): Self = this.set("scrollable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollable: Self = this.set("scrollable", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTitle(value: String | Boolean): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

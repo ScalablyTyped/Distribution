@@ -50,30 +50,64 @@ trait NewTransitVirtualInterface extends js.Object {
 
 object NewTransitVirtualInterface {
   @scala.inline
-  def apply(
-    addressFamily: AddressFamily = null,
-    amazonAddress: AmazonAddress = null,
-    asn: js.UndefOr[ASN] = js.undefined,
-    authKey: BGPAuthKey = null,
-    customerAddress: CustomerAddress = null,
-    directConnectGatewayId: DirectConnectGatewayId = null,
-    mtu: js.UndefOr[MTU] = js.undefined,
-    tags: TagList = null,
-    virtualInterfaceName: VirtualInterfaceName = null,
-    vlan: js.UndefOr[VLAN] = js.undefined
-  ): NewTransitVirtualInterface = {
+  def apply(): NewTransitVirtualInterface = {
     val __obj = js.Dynamic.literal()
-    if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
-    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(asn)) __obj.updateDynamic("asn")(asn.get.asInstanceOf[js.Any])
-    if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
-    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
-    if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(mtu)) __obj.updateDynamic("mtu")(mtu.get.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (virtualInterfaceName != null) __obj.updateDynamic("virtualInterfaceName")(virtualInterfaceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(vlan)) __obj.updateDynamic("vlan")(vlan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewTransitVirtualInterface]
   }
+  @scala.inline
+  implicit class NewTransitVirtualInterfaceOps[Self <: NewTransitVirtualInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressFamily(value: AddressFamily): Self = this.set("addressFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressFamily: Self = this.set("addressFamily", js.undefined)
+    @scala.inline
+    def setAmazonAddress(value: AmazonAddress): Self = this.set("amazonAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmazonAddress: Self = this.set("amazonAddress", js.undefined)
+    @scala.inline
+    def setAsn(value: ASN): Self = this.set("asn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsn: Self = this.set("asn", js.undefined)
+    @scala.inline
+    def setAuthKey(value: BGPAuthKey): Self = this.set("authKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthKey: Self = this.set("authKey", js.undefined)
+    @scala.inline
+    def setCustomerAddress(value: CustomerAddress): Self = this.set("customerAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerAddress: Self = this.set("customerAddress", js.undefined)
+    @scala.inline
+    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = this.set("directConnectGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectConnectGatewayId: Self = this.set("directConnectGatewayId", js.undefined)
+    @scala.inline
+    def setMtu(value: MTU): Self = this.set("mtu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMtu: Self = this.set("mtu", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVirtualInterfaceName(value: VirtualInterfaceName): Self = this.set("virtualInterfaceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualInterfaceName: Self = this.set("virtualInterfaceName", js.undefined)
+    @scala.inline
+    def setVlan(value: VLAN): Self = this.set("vlan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVlan: Self = this.set("vlan", js.undefined)
+  }
+  
 }
 

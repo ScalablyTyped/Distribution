@@ -60,6 +60,7 @@ trait Event extends js.Object {
     */
   def composedPath(): js.Array[EventTarget] = js.native
   def initEvent(`type`: java.lang.String): Unit = js.native
+  def initEvent(`type`: java.lang.String, bubbles: js.UndefOr[scala.Nothing], cancelable: scala.Boolean): Unit = js.native
   def initEvent(`type`: java.lang.String, bubbles: scala.Boolean): Unit = js.native
   def initEvent(`type`: java.lang.String, bubbles: scala.Boolean, cancelable: scala.Boolean): Unit = js.native
   /**

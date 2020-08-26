@@ -14,10 +14,26 @@ trait CloudWatchLogsLogGroup extends js.Object {
 
 object CloudWatchLogsLogGroup {
   @scala.inline
-  def apply(logGroupArn: Arn = null): CloudWatchLogsLogGroup = {
+  def apply(): CloudWatchLogsLogGroup = {
     val __obj = js.Dynamic.literal()
-    if (logGroupArn != null) __obj.updateDynamic("logGroupArn")(logGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchLogsLogGroup]
   }
+  @scala.inline
+  implicit class CloudWatchLogsLogGroupOps[Self <: CloudWatchLogsLogGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogGroupArn(value: Arn): Self = this.set("logGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupArn: Self = this.set("logGroupArn", js.undefined)
+  }
+  
 }
 

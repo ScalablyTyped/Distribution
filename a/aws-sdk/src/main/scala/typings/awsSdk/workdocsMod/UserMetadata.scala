@@ -30,20 +30,42 @@ trait UserMetadata extends js.Object {
 
 object UserMetadata {
   @scala.inline
-  def apply(
-    EmailAddress: EmailAddressType = null,
-    GivenName: UserAttributeValueType = null,
-    Id: IdType = null,
-    Surname: UserAttributeValueType = null,
-    Username: UsernameType = null
-  ): UserMetadata = {
+  def apply(): UserMetadata = {
     val __obj = js.Dynamic.literal()
-    if (EmailAddress != null) __obj.updateDynamic("EmailAddress")(EmailAddress.asInstanceOf[js.Any])
-    if (GivenName != null) __obj.updateDynamic("GivenName")(GivenName.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Surname != null) __obj.updateDynamic("Surname")(Surname.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserMetadata]
   }
+  @scala.inline
+  implicit class UserMetadataOps[Self <: UserMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmailAddress(value: EmailAddressType): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailAddress: Self = this.set("EmailAddress", js.undefined)
+    @scala.inline
+    def setGivenName(value: UserAttributeValueType): Self = this.set("GivenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGivenName: Self = this.set("GivenName", js.undefined)
+    @scala.inline
+    def setId(value: IdType): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setSurname(value: UserAttributeValueType): Self = this.set("Surname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSurname: Self = this.set("Surname", js.undefined)
+    @scala.inline
+    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

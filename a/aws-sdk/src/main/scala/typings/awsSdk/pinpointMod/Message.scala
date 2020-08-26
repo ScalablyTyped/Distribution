@@ -58,34 +58,70 @@ trait Message extends js.Object {
 
 object Message {
   @scala.inline
-  def apply(
-    Action: Action = null,
-    Body: string = null,
-    ImageIconUrl: string = null,
-    ImageSmallIconUrl: string = null,
-    ImageUrl: string = null,
-    JsonBody: string = null,
-    MediaUrl: string = null,
-    RawContent: string = null,
-    SilentPush: js.UndefOr[boolean] = js.undefined,
-    TimeToLive: js.UndefOr[integer] = js.undefined,
-    Title: string = null,
-    Url: string = null
-  ): Message = {
+  def apply(): Message = {
     val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (ImageIconUrl != null) __obj.updateDynamic("ImageIconUrl")(ImageIconUrl.asInstanceOf[js.Any])
-    if (ImageSmallIconUrl != null) __obj.updateDynamic("ImageSmallIconUrl")(ImageSmallIconUrl.asInstanceOf[js.Any])
-    if (ImageUrl != null) __obj.updateDynamic("ImageUrl")(ImageUrl.asInstanceOf[js.Any])
-    if (JsonBody != null) __obj.updateDynamic("JsonBody")(JsonBody.asInstanceOf[js.Any])
-    if (MediaUrl != null) __obj.updateDynamic("MediaUrl")(MediaUrl.asInstanceOf[js.Any])
-    if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(SilentPush)) __obj.updateDynamic("SilentPush")(SilentPush.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeToLive)) __obj.updateDynamic("TimeToLive")(TimeToLive.get.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
+  @scala.inline
+  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setImageIconUrl(value: string): Self = this.set("ImageIconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageIconUrl: Self = this.set("ImageIconUrl", js.undefined)
+    @scala.inline
+    def setImageSmallIconUrl(value: string): Self = this.set("ImageSmallIconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageSmallIconUrl: Self = this.set("ImageSmallIconUrl", js.undefined)
+    @scala.inline
+    def setImageUrl(value: string): Self = this.set("ImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("ImageUrl", js.undefined)
+    @scala.inline
+    def setJsonBody(value: string): Self = this.set("JsonBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonBody: Self = this.set("JsonBody", js.undefined)
+    @scala.inline
+    def setMediaUrl(value: string): Self = this.set("MediaUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaUrl: Self = this.set("MediaUrl", js.undefined)
+    @scala.inline
+    def setRawContent(value: string): Self = this.set("RawContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawContent: Self = this.set("RawContent", js.undefined)
+    @scala.inline
+    def setSilentPush(value: boolean): Self = this.set("SilentPush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilentPush: Self = this.set("SilentPush", js.undefined)
+    @scala.inline
+    def setTimeToLive(value: integer): Self = this.set("TimeToLive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeToLive: Self = this.set("TimeToLive", js.undefined)
+    @scala.inline
+    def setTitle(value: string): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+    @scala.inline
+    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

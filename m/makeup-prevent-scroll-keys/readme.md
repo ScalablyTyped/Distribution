@@ -12,7 +12,7 @@ Prevents default scroll event when pressing down arrow, page down, spacebar, etc
 | Keywords           | makeup, ebay, accessibility, a11y |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 2486 |
+| # downloads        | 2493 |
 | # stars            | 0 |
 
 ## Links

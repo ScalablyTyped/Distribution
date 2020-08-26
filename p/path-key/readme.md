@@ -10,9 +10,9 @@ Get the PATH environment variable key cross-platform
 | ------------------ | :-------------: |
 | Full name          | path-key |
 | Keywords           | path, key, environment, env, variable, var, get, cross-platform, windows |
-| # releases         | 2 |
-| # dependents       | 60 |
-| # downloads        | 448584956 |
+| # releases         | 4 |
+| # dependents       | 63 |
+| # downloads        | 491778863 |
 | # stars            | 2 |
 
 ## Links

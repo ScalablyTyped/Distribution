@@ -8,6 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RSocketWebSocketClient extends DuplexConnection
 
 object RSocketWebSocketClient {

@@ -13,6 +13,12 @@ class FunctionExpr protected () extends Expression {
   def this(
     params: js.Array[FnParam],
     statements: js.Array[Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
     `type`: Null,
     sourceSpan: ParseSourceSpan
   ) = this()
@@ -21,6 +27,34 @@ class FunctionExpr protected () extends Expression {
     statements: js.Array[Statement],
     `type`: Type,
     sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: js.UndefOr[scala.Nothing],
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: Null,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: Null,
+    sourceSpan: js.UndefOr[scala.Nothing],
+    name: String
   ) = this()
   def this(
     params: js.Array[FnParam],
@@ -34,6 +68,13 @@ class FunctionExpr protected () extends Expression {
     statements: js.Array[Statement],
     `type`: Null,
     sourceSpan: ParseSourceSpan,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[Statement],
+    `type`: Type,
+    sourceSpan: js.UndefOr[scala.Nothing],
     name: String
   ) = this()
   def this(

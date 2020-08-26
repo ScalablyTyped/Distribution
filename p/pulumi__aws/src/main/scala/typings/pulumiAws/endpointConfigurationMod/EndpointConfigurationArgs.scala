@@ -24,22 +24,43 @@ trait EndpointConfigurationArgs extends js.Object {
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object EndpointConfigurationArgs {
   @scala.inline
-  def apply(
-    productionVariants: Input[js.Array[Input[EndpointConfigurationProductionVariant]]],
-    kmsKeyArn: Input[String] = null,
-    name: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): EndpointConfigurationArgs = {
+  def apply(productionVariants: Input[js.Array[Input[EndpointConfigurationProductionVariant]]]): EndpointConfigurationArgs = {
     val __obj = js.Dynamic.literal(productionVariants = productionVariants.asInstanceOf[js.Any])
-    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointConfigurationArgs]
   }
+  @scala.inline
+  implicit class EndpointConfigurationArgsOps[Self <: EndpointConfigurationArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProductionVariantsVarargs(value: Input[EndpointConfigurationProductionVariant]*): Self = this.set("productionVariants", js.Array(value :_*))
+    @scala.inline
+    def setProductionVariants(value: Input[js.Array[Input[EndpointConfigurationProductionVariant]]]): Self = this.set("productionVariants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKmsKeyArn(value: Input[String]): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

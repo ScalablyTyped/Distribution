@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object verifyPhone extends js.Object {
   def apply(phone: String, code: String): Unit = js.native
+  def apply(phone: String, code: String, newPassword: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def apply(phone: String, code: String, newPassword: String): Unit = js.native
   def apply(phone: String, code: String, newPassword: String, callback: js.Function): Unit = js.native
   def apply(phone: String, code: String, newPassword: js.Function): Unit = js.native

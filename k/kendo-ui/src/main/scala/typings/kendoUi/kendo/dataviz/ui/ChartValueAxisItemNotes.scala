@@ -4,33 +4,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartValueAxisItemNotes extends js.Object {
-  var data: js.UndefOr[js.Array[ChartValueAxisItemNotesDataItem]] = js.undefined
-  var icon: js.UndefOr[ChartValueAxisItemNotesIcon] = js.undefined
-  var label: js.UndefOr[ChartValueAxisItemNotesLabel] = js.undefined
-  var line: js.UndefOr[ChartValueAxisItemNotesLine] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var visual: js.UndefOr[js.Function] = js.undefined
+  var data: js.UndefOr[js.Array[ChartValueAxisItemNotesDataItem]] = js.native
+  var icon: js.UndefOr[ChartValueAxisItemNotesIcon] = js.native
+  var label: js.UndefOr[ChartValueAxisItemNotesLabel] = js.native
+  var line: js.UndefOr[ChartValueAxisItemNotesLine] = js.native
+  var position: js.UndefOr[String] = js.native
+  var visual: js.UndefOr[js.Function] = js.native
 }
 
 object ChartValueAxisItemNotes {
   @scala.inline
-  def apply(
-    data: js.Array[ChartValueAxisItemNotesDataItem] = null,
-    icon: ChartValueAxisItemNotesIcon = null,
-    label: ChartValueAxisItemNotesLabel = null,
-    line: ChartValueAxisItemNotesLine = null,
-    position: String = null,
-    visual: js.Function = null
-  ): ChartValueAxisItemNotes = {
+  def apply(): ChartValueAxisItemNotes = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartValueAxisItemNotes]
   }
+  @scala.inline
+  implicit class ChartValueAxisItemNotesOps[Self <: ChartValueAxisItemNotes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataVarargs(value: ChartValueAxisItemNotesDataItem*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[ChartValueAxisItemNotesDataItem]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setIcon(value: ChartValueAxisItemNotesIcon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setLabel(value: ChartValueAxisItemNotesLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLine(value: ChartValueAxisItemNotesLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setVisual(value: js.Function): Self = this.set("visual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisual: Self = this.set("visual", js.undefined)
+  }
+  
 }
 

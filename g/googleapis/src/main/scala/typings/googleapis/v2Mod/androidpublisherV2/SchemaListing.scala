@@ -32,20 +32,42 @@ trait SchemaListing extends js.Object {
 
 object SchemaListing {
   @scala.inline
-  def apply(
-    fullDescription: String = null,
-    language: String = null,
-    shortDescription: String = null,
-    title: String = null,
-    video: String = null
-  ): SchemaListing = {
+  def apply(): SchemaListing = {
     val __obj = js.Dynamic.literal()
-    if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListing]
   }
+  @scala.inline
+  implicit class SchemaListingOps[Self <: SchemaListing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFullDescription(value: String): Self = this.set("fullDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullDescription: Self = this.set("fullDescription", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setShortDescription(value: String): Self = this.set("shortDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortDescription: Self = this.set("shortDescription", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVideo(value: String): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+  }
+  
 }
 

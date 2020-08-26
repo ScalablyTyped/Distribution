@@ -6,36 +6,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConstructorOptions extends js.Object {
-  var client: js.UndefOr[RedisClient] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var ns: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[ClientOpts] = js.undefined
-  var password: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var realtime: js.UndefOr[Boolean] = js.undefined
+  var client: js.UndefOr[RedisClient] = js.native
+  var host: js.UndefOr[String] = js.native
+  var ns: js.UndefOr[String] = js.native
+  var options: js.UndefOr[ClientOpts] = js.native
+  var password: js.UndefOr[String] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var realtime: js.UndefOr[Boolean] = js.native
 }
 
 object ConstructorOptions {
   @scala.inline
-  def apply(
-    client: RedisClient = null,
-    host: String = null,
-    ns: String = null,
-    options: ClientOpts = null,
-    password: String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    realtime: js.UndefOr[Boolean] = js.undefined
-  ): ConstructorOptions = {
+  def apply(): ConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorOptions]
   }
+  @scala.inline
+  implicit class ConstructorOptionsOps[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClient(value: RedisClient): Self = this.set("client", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient: Self = this.set("client", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setNs(value: String): Self = this.set("ns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNs: Self = this.set("ns", js.undefined)
+    @scala.inline
+    def setOptions(value: ClientOpts): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setRealtime(value: Boolean): Self = this.set("realtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealtime: Self = this.set("realtime", js.undefined)
+  }
+  
 }
 

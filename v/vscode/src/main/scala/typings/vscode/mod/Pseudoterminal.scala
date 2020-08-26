@@ -85,8 +85,9 @@ trait Pseudoterminal extends js.Object {
   var onDidOverrideDimensions: js.UndefOr[Event[js.UndefOr[TerminalDimensions]]] = js.native
   /**
     * An event that when fired will write data to the terminal. Unlike
-    * [Terminal.sendText](#Terminal.sendText) which sends text to the underlying _process_
-    * (the pty "slave"), this will write the text to the terminal itself (the pty "master").
+    * [Terminal.sendText](#Terminal.sendText) which sends text to the underlying child
+    * pseudo-device (the child), this will write the text to parent pseudo-device (the
+    * _terminal_ itself).
     *
     * Note writing `\n` will just move the cursor down 1 row, you need to write `\r` as well
     * to move the cursor to the left-most cell.
@@ -129,8 +130,9 @@ trait Pseudoterminal extends js.Object {
   def close(): Unit = js.native
   /**
     * An event that when fired will write data to the terminal. Unlike
-    * [Terminal.sendText](#Terminal.sendText) which sends text to the underlying _process_
-    * (the pty "slave"), this will write the text to the terminal itself (the pty "master").
+    * [Terminal.sendText](#Terminal.sendText) which sends text to the underlying child
+    * pseudo-device (the child), this will write the text to parent pseudo-device (the
+    * _terminal_ itself).
     *
     * Note writing `\n` will just move the cursor down 1 row, you need to write `\r` as well
     * to move the cursor to the left-most cell.
@@ -152,6 +154,11 @@ trait Pseudoterminal extends js.Object {
     * ```
     */
   def onDidWrite(listener: js.Function1[/* e */ String, _]): Disposable = js.native
+  def onDidWrite(
+    listener: js.Function1[/* e */ String, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onDidWrite(listener: js.Function1[/* e */ String, _], thisArgs: js.Any): Disposable = js.native
   def onDidWrite(listener: js.Function1[/* e */ String, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   /**

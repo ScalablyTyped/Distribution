@@ -18,7 +18,7 @@ trait BigUint64ArrayConstructor
      with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, BigUint64Array]
      with Instantiable3[
       /* buffer */ ArrayBufferLike, 
-      /* byteOffset */ Double, 
+      js.UndefOr[/* byteOffset */ Double], 
       /* length */ Double, 
       BigUint64Array
     ] {

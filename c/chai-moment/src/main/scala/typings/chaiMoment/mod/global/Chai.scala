@@ -15,10 +15,12 @@ object Chai extends js.Object {
     def afterMoment(`val`: js.Any, exp: js.Any, granularity: Granularity, msg: String): Unit = js.native
     def afterMoment(`val`: js.Any, exp: js.Any, msg: String): Unit = js.native
     def beforeMoment(`val`: js.Any, exp: js.Any): Unit = js.native
+    def beforeMoment(`val`: js.Any, exp: js.Any, granularity: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
     def beforeMoment(`val`: js.Any, exp: js.Any, granularity: Granularity): Unit = js.native
     def beforeMoment(`val`: js.Any, exp: js.Any, granularity: Granularity, msg: String): Unit = js.native
     def beforeMoment(`val`: js.Any, exp: js.Any, msg: String): Unit = js.native
     def sameMoment(`val`: js.Any, exp: js.Any): Unit = js.native
+    def sameMoment(`val`: js.Any, exp: js.Any, granularity: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
     def sameMoment(`val`: js.Any, exp: js.Any, granularity: Granularity): Unit = js.native
     def sameMoment(`val`: js.Any, exp: js.Any, granularity: Granularity, msg: String): Unit = js.native
     def sameMoment(`val`: js.Any, exp: js.Any, msg: String): Unit = js.native

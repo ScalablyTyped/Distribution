@@ -43,11 +43,32 @@ trait SchemaGoogleIamV1AuditConfig extends js.Object {
 
 object SchemaGoogleIamV1AuditConfig {
   @scala.inline
-  def apply(auditLogConfigs: js.Array[SchemaGoogleIamV1AuditLogConfig] = null, service: String = null): SchemaGoogleIamV1AuditConfig = {
+  def apply(): SchemaGoogleIamV1AuditConfig = {
     val __obj = js.Dynamic.literal()
-    if (auditLogConfigs != null) __obj.updateDynamic("auditLogConfigs")(auditLogConfigs.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleIamV1AuditConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleIamV1AuditConfigOps[Self <: SchemaGoogleIamV1AuditConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditLogConfigsVarargs(value: SchemaGoogleIamV1AuditLogConfig*): Self = this.set("auditLogConfigs", js.Array(value :_*))
+    @scala.inline
+    def setAuditLogConfigs(value: js.Array[SchemaGoogleIamV1AuditLogConfig]): Self = this.set("auditLogConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditLogConfigs: Self = this.set("auditLogConfigs", js.undefined)
+    @scala.inline
+    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+  }
+  
 }
 

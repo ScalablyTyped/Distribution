@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hast-util-from-parse5" : "6.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hast-util-from-parse5" : "6.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -12,7 +12,7 @@ Utility types for TypeScript.
 | Keywords           | - |
 | # releases         | 11 |
 | # dependents       | 4 |
-| # downloads        | 35727 |
+| # downloads        | 51630 |
 | # stars            | 0 |
 
 ## Links

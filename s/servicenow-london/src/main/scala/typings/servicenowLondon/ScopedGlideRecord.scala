@@ -54,6 +54,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def _query(): Unit = js.native
+  def _query(name: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def _query(name: String): Unit = js.native
   def _query(name: String, value: js.Any): Unit = js.native
   /**
@@ -140,6 +141,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gr.query();
     */
   def addJoinQuery(joinTable: String): ScopedQueryCondition = js.native
+  def addJoinQuery(joinTable: String, primaryField: js.UndefOr[scala.Nothing], joinTableField: String): ScopedQueryCondition = js.native
   def addJoinQuery(joinTable: String, primaryField: String): ScopedQueryCondition = js.native
   def addJoinQuery(joinTable: String, primaryField: String, joinTableField: String): ScopedQueryCondition = js.native
   /**
@@ -747,6 +749,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def query(): Unit = js.native
+  def query(field: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def query(field: String): Unit = js.native
   def query(field: String, value: js.Any): Unit = js.native
   /**

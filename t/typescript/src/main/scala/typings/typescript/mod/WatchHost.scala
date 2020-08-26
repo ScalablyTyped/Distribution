@@ -30,6 +30,12 @@ trait WatchHost extends js.Object {
   ] = js.native
   /** Used to watch resolved module's failed lookup locations, config file specs, type roots where auto type reference directives are added */
   def watchDirectory(path: java.lang.String, callback: DirectoryWatcherCallback): FileWatcher = js.native
+  def watchDirectory(
+    path: java.lang.String,
+    callback: DirectoryWatcherCallback,
+    recursive: js.UndefOr[scala.Nothing],
+    options: CompilerOptions
+  ): FileWatcher = js.native
   def watchDirectory(path: java.lang.String, callback: DirectoryWatcherCallback, recursive: Boolean): FileWatcher = js.native
   def watchDirectory(
     path: java.lang.String,
@@ -39,6 +45,12 @@ trait WatchHost extends js.Object {
   ): FileWatcher = js.native
   /** Used to watch changes in source files, missing files needed to update the program or config file */
   def watchFile(path: java.lang.String, callback: FileWatcherCallback): FileWatcher = js.native
+  def watchFile(
+    path: java.lang.String,
+    callback: FileWatcherCallback,
+    pollingInterval: js.UndefOr[scala.Nothing],
+    options: CompilerOptions
+  ): FileWatcher = js.native
   def watchFile(path: java.lang.String, callback: FileWatcherCallback, pollingInterval: Double): FileWatcher = js.native
   def watchFile(
     path: java.lang.String,

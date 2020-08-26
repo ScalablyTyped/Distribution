@@ -13,11 +13,12 @@ import scala.scalajs.js.annotation._
   *
   * @param locationService a [[LocationServices]] implementation
   * @param locationConfig a [[LocationConfig]] implementation
-  * @internalapi
+  * @internal
   */
 class UIRouter ()
   extends typings.uirouterCore.routerMod.UIRouter {
   def this(locationService: LocationServices) = this()
+  def this(locationService: js.UndefOr[scala.Nothing], locationConfig: LocationConfig) = this()
   def this(locationService: LocationServices, locationConfig: LocationConfig) = this()
 }
 

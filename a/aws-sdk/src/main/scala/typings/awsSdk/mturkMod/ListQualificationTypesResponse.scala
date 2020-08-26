@@ -19,16 +19,36 @@ trait ListQualificationTypesResponse extends js.Object {
 
 object ListQualificationTypesResponse {
   @scala.inline
-  def apply(
-    NextToken: PaginationToken = null,
-    NumResults: js.UndefOr[Integer] = js.undefined,
-    QualificationTypes: QualificationTypeList = null
-  ): ListQualificationTypesResponse = {
+  def apply(): ListQualificationTypesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumResults)) __obj.updateDynamic("NumResults")(NumResults.get.asInstanceOf[js.Any])
-    if (QualificationTypes != null) __obj.updateDynamic("QualificationTypes")(QualificationTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQualificationTypesResponse]
   }
+  @scala.inline
+  implicit class ListQualificationTypesResponseOps[Self <: ListQualificationTypesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setNumResults(value: Integer): Self = this.set("NumResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumResults: Self = this.set("NumResults", js.undefined)
+    @scala.inline
+    def setQualificationTypesVarargs(value: QualificationType*): Self = this.set("QualificationTypes", js.Array(value :_*))
+    @scala.inline
+    def setQualificationTypes(value: QualificationTypeList): Self = this.set("QualificationTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualificationTypes: Self = this.set("QualificationTypes", js.undefined)
+  }
+  
 }
 

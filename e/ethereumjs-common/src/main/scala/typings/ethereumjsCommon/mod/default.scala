@@ -20,10 +20,13 @@ class default protected () extends Common {
   def this(chain: String, hardfork: String) = this()
   def this(chain: js.Object, hardfork: String) = this()
   def this(chain: Double, hardfork: String) = this()
+  def this(chain: String, hardfork: js.UndefOr[scala.Nothing], supportedHardforks: js.Array[String]) = this()
   def this(chain: String, hardfork: String, supportedHardforks: js.Array[String]) = this()
   def this(chain: String, hardfork: Null, supportedHardforks: js.Array[String]) = this()
+  def this(chain: js.Object, hardfork: js.UndefOr[scala.Nothing], supportedHardforks: js.Array[String]) = this()
   def this(chain: js.Object, hardfork: String, supportedHardforks: js.Array[String]) = this()
   def this(chain: js.Object, hardfork: Null, supportedHardforks: js.Array[String]) = this()
+  def this(chain: Double, hardfork: js.UndefOr[scala.Nothing], supportedHardforks: js.Array[String]) = this()
   def this(chain: Double, hardfork: String, supportedHardforks: js.Array[String]) = this()
   def this(chain: Double, hardfork: Null, supportedHardforks: js.Array[String]) = this()
 }
@@ -44,6 +47,12 @@ object default extends js.Object {
     * @param supportedHardforks Limit parameter returns to the given hardforks (optional)
     */
   def forCustomChain(baseChain: String, customChainParams: PartialChain): Common = js.native
+  def forCustomChain(
+    baseChain: String,
+    customChainParams: PartialChain,
+    hardfork: js.UndefOr[scala.Nothing],
+    supportedHardforks: js.Array[String]
+  ): Common = js.native
   def forCustomChain(baseChain: String, customChainParams: PartialChain, hardfork: String): Common = js.native
   def forCustomChain(
     baseChain: String,
@@ -58,6 +67,12 @@ object default extends js.Object {
     supportedHardforks: js.Array[String]
   ): Common = js.native
   def forCustomChain(baseChain: Double, customChainParams: PartialChain): Common = js.native
+  def forCustomChain(
+    baseChain: Double,
+    customChainParams: PartialChain,
+    hardfork: js.UndefOr[scala.Nothing],
+    supportedHardforks: js.Array[String]
+  ): Common = js.native
   def forCustomChain(baseChain: Double, customChainParams: PartialChain, hardfork: String): Common = js.native
   def forCustomChain(
     baseChain: Double,

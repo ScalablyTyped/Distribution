@@ -7,8 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var allowNullable: js.UndefOr[Boolean] = js.undefined
+  var allowNullable: js.UndefOr[Boolean] = js.native
   var requestValidationFn: js.UndefOr[
     js.Function3[
       /* req */ Request_[ParamsDictionary, _, _, Query], 
@@ -16,7 +17,7 @@ trait Options extends js.Object {
       /* errors */ js.Any, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var responseValidationFn: js.UndefOr[
     js.Function3[
       /* req */ Request_[ParamsDictionary, _, _, Query], 
@@ -24,29 +25,56 @@ trait Options extends js.Object {
       /* errors */ js.Any, 
       Unit
     ]
-  ] = js.undefined
-  var schema: String
-  var validateRequest: js.UndefOr[Boolean] = js.undefined
-  var validateResponse: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var schema: String = js.native
+  var validateRequest: js.UndefOr[Boolean] = js.native
+  var validateResponse: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    schema: String,
-    allowNullable: js.UndefOr[Boolean] = js.undefined,
-    requestValidationFn: (/* req */ Request_[ParamsDictionary, _, _, Query], /* data */ js.Any, /* errors */ js.Any) => Unit = null,
-    responseValidationFn: (/* req */ Request_[ParamsDictionary, _, _, Query], /* data */ js.Any, /* errors */ js.Any) => Unit = null,
-    validateRequest: js.UndefOr[Boolean] = js.undefined,
-    validateResponse: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(schema: String): Options = {
     val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNullable)) __obj.updateDynamic("allowNullable")(allowNullable.get.asInstanceOf[js.Any])
-    if (requestValidationFn != null) __obj.updateDynamic("requestValidationFn")(js.Any.fromFunction3(requestValidationFn))
-    if (responseValidationFn != null) __obj.updateDynamic("responseValidationFn")(js.Any.fromFunction3(responseValidationFn))
-    if (!js.isUndefined(validateRequest)) __obj.updateDynamic("validateRequest")(validateRequest.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateResponse)) __obj.updateDynamic("validateResponse")(validateResponse.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSchema(value: String): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowNullable(value: Boolean): Self = this.set("allowNullable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowNullable: Self = this.set("allowNullable", js.undefined)
+    @scala.inline
+    def setRequestValidationFn(
+      value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* data */ js.Any, /* errors */ js.Any) => Unit
+    ): Self = this.set("requestValidationFn", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteRequestValidationFn: Self = this.set("requestValidationFn", js.undefined)
+    @scala.inline
+    def setResponseValidationFn(
+      value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* data */ js.Any, /* errors */ js.Any) => Unit
+    ): Self = this.set("responseValidationFn", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteResponseValidationFn: Self = this.set("responseValidationFn", js.undefined)
+    @scala.inline
+    def setValidateRequest(value: Boolean): Self = this.set("validateRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateRequest: Self = this.set("validateRequest", js.undefined)
+    @scala.inline
+    def setValidateResponse(value: Boolean): Self = this.set("validateResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateResponse: Self = this.set("validateResponse", js.undefined)
+  }
+  
 }
 

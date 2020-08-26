@@ -31,16 +31,34 @@ trait SchemaCreateShapeRequest extends js.Object {
 
 object SchemaCreateShapeRequest {
   @scala.inline
-  def apply(
-    elementProperties: SchemaPageElementProperties = null,
-    objectId: String = null,
-    shapeType: String = null
-  ): SchemaCreateShapeRequest = {
+  def apply(): SchemaCreateShapeRequest = {
     val __obj = js.Dynamic.literal()
-    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (shapeType != null) __obj.updateDynamic("shapeType")(shapeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateShapeRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateShapeRequestOps[Self <: SchemaCreateShapeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElementProperties(value: SchemaPageElementProperties): Self = this.set("elementProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElementProperties: Self = this.set("elementProperties", js.undefined)
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    @scala.inline
+    def setShapeType(value: String): Self = this.set("shapeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapeType: Self = this.set("shapeType", js.undefined)
+  }
+  
 }
 

@@ -22,5 +22,22 @@ object InputChannelLevel {
     val __obj = js.Dynamic.literal(Gain = Gain.asInstanceOf[js.Any], InputChannel = InputChannel.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputChannelLevel]
   }
+  @scala.inline
+  implicit class InputChannelLevelOps[Self <: InputChannelLevel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGain(value: integerMinNegative60Max6): Self = this.set("Gain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputChannel(value: integerMin0Max15): Self = this.set("InputChannel", value.asInstanceOf[js.Any])
+  }
+  
 }
 

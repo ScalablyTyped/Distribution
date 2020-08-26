@@ -20,25 +20,5 @@ class ASPxClientUploadControlValidationErrorOccurredEventArgs protected ()
     errorText: String,
     invalidFiles: js.Array[typings.devexpressWeb.ASPxClientUploadControlInvalidFileInfo]
   ) = this()
-  /**
-    * Gets or sets the error text.
-    */
-  /* CompleteClass */
-  override var errorText: String = js.native
-  /**
-    * Returns an array of invalid files.
-    */
-  /* CompleteClass */
-  override var invalidFiles: js.Array[typings.devexpressWeb.ASPxClientUploadControlInvalidFileInfo] = js.native
-  /**
-    * Gets or sets a value specifying whether an alert message is displayed when the ASPxClientUploadControl.ValidationErrorOccurred event fires.
-    */
-  /* CompleteClass */
-  override var showAlert: Boolean = js.native
-  /**
-    * Gets the validation settings for the selected files.
-    */
-  /* CompleteClass */
-  override var validationSettings: typings.devexpressWeb.ASPxClientUploadControlValidationSettings = js.native
 }
 

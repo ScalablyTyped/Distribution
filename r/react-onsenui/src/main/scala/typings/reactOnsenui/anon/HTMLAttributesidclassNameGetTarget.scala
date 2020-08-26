@@ -9,64 +9,109 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {  getTarget ? :(): react.react.ReactInstance,   onCancel ? :(): void,   isOpen ? :boolean,   isCancelable ? :boolean,   isDisabled ? :boolean,   animation ? :'none' | 'default',   modifier ? :string,   maskColor ? :string,   animationOptions ? :react-onsenui.react-onsenui.AnimationOptions,   onPreShow ? :(): void,   onPostShow ? :(): void,   onPreHide ? :(): void,   onPostHide ? :(): void} */
+/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {  getTarget :(): react.react.ReactInstance | undefined,   onCancel :(): void | undefined,   isOpen :boolean | undefined,   isCancelable :boolean | undefined,   isDisabled :boolean | undefined,   animation :'none' | 'default' | undefined,   modifier :string | undefined,   maskColor :string | undefined,   animationOptions :react-onsenui.react-onsenui.AnimationOptions | undefined,   onPreShow :(): void | undefined,   onPostShow :(): void | undefined,   onPreHide :(): void | undefined,   onPostHide :(): void | undefined} */
+@js.native
 trait HTMLAttributesidclassNameGetTarget extends js.Object {
-  var animation: js.UndefOr[none | default] = js.undefined
-  var animationOptions: js.UndefOr[AnimationOptions] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var getTarget: js.UndefOr[js.Function0[ReactInstance]] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var isCancelable: js.UndefOr[Boolean] = js.undefined
-  var isDisabled: js.UndefOr[Boolean] = js.undefined
-  var isOpen: js.UndefOr[Boolean] = js.undefined
-  var maskColor: js.UndefOr[String] = js.undefined
-  var modifier: js.UndefOr[String] = js.undefined
-  var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPostHide: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPostShow: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPreHide: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPreShow: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var animation: js.UndefOr[none | default] = js.native
+  var animationOptions: js.UndefOr[AnimationOptions] = js.native
+  var className: js.UndefOr[String] = js.native
+  var getTarget: js.UndefOr[js.Function0[ReactInstance]] = js.native
+  var id: js.UndefOr[String] = js.native
+  var isCancelable: js.UndefOr[Boolean] = js.native
+  var isDisabled: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.native
+  var maskColor: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.native
+  var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPostHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPostShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPreHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPreShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object HTMLAttributesidclassNameGetTarget {
   @scala.inline
-  def apply(
-    animation: none | default = null,
-    animationOptions: AnimationOptions = null,
-    className: String = null,
-    getTarget: () => ReactInstance = null,
-    id: String = null,
-    isCancelable: js.UndefOr[Boolean] = js.undefined,
-    isDisabled: js.UndefOr[Boolean] = js.undefined,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    maskColor: String = null,
-    modifier: String = null,
-    onCancel: () => Unit = null,
-    onPostHide: () => Unit = null,
-    onPostShow: () => Unit = null,
-    onPreHide: () => Unit = null,
-    onPreShow: () => Unit = null,
-    style: CSSProperties = null
-  ): HTMLAttributesidclassNameGetTarget = {
+  def apply(): HTMLAttributesidclassNameGetTarget = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (getTarget != null) __obj.updateDynamic("getTarget")(js.Any.fromFunction0(getTarget))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCancelable)) __obj.updateDynamic("isCancelable")(isCancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
-    if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor.asInstanceOf[js.Any])
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
-    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
-    if (onPostHide != null) __obj.updateDynamic("onPostHide")(js.Any.fromFunction0(onPostHide))
-    if (onPostShow != null) __obj.updateDynamic("onPostShow")(js.Any.fromFunction0(onPostShow))
-    if (onPreHide != null) __obj.updateDynamic("onPreHide")(js.Any.fromFunction0(onPreHide))
-    if (onPreShow != null) __obj.updateDynamic("onPreShow")(js.Any.fromFunction0(onPreShow))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributesidclassNameGetTarget]
   }
+  @scala.inline
+  implicit class HTMLAttributesidclassNameGetTargetOps[Self <: HTMLAttributesidclassNameGetTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: none | default): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimationOptions(value: AnimationOptions): Self = this.set("animationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationOptions: Self = this.set("animationOptions", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setGetTarget(value: () => ReactInstance): Self = this.set("getTarget", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTarget: Self = this.set("getTarget", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsCancelable(value: Boolean): Self = this.set("isCancelable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsCancelable: Self = this.set("isCancelable", js.undefined)
+    @scala.inline
+    def setIsDisabled(value: Boolean): Self = this.set("isDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDisabled: Self = this.set("isDisabled", js.undefined)
+    @scala.inline
+    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    @scala.inline
+    def setMaskColor(value: String): Self = this.set("maskColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskColor: Self = this.set("maskColor", js.undefined)
+    @scala.inline
+    def setModifier(value: String): Self = this.set("modifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifier: Self = this.set("modifier", js.undefined)
+    @scala.inline
+    def setOnCancel(value: () => Unit): Self = this.set("onCancel", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnCancel: Self = this.set("onCancel", js.undefined)
+    @scala.inline
+    def setOnPostHide(value: () => Unit): Self = this.set("onPostHide", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPostHide: Self = this.set("onPostHide", js.undefined)
+    @scala.inline
+    def setOnPostShow(value: () => Unit): Self = this.set("onPostShow", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPostShow: Self = this.set("onPostShow", js.undefined)
+    @scala.inline
+    def setOnPreHide(value: () => Unit): Self = this.set("onPreHide", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPreHide: Self = this.set("onPreHide", js.undefined)
+    @scala.inline
+    def setOnPreShow(value: () => Unit): Self = this.set("onPreShow", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPreShow: Self = this.set("onPreShow", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

@@ -31,17 +31,50 @@ trait Pane extends js.Object {
   def AutoScroll(Velocity: Double): Unit = js.native
   def Close(): Unit = js.native
   def LargeScroll(): Unit = js.native
+  def LargeScroll(
+    Down: js.UndefOr[scala.Nothing],
+    Up: js.UndefOr[scala.Nothing],
+    ToRight: js.UndefOr[scala.Nothing],
+    ToLeft: js.Any
+  ): Unit = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: js.Any): Unit = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: js.Any, ToLeft: js.Any): Unit = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any): Unit = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.Any): Unit = js.native
+  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
   def LargeScroll(Down: js.Any): Unit = js.native
+  def LargeScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
+  def LargeScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.Any): Unit = js.native
+  def LargeScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.Any, ToLeft: js.Any): Unit = js.native
   def LargeScroll(Down: js.Any, Up: js.Any): Unit = js.native
+  def LargeScroll(Down: js.Any, Up: js.Any, ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
   def LargeScroll(Down: js.Any, Up: js.Any, ToRight: js.Any): Unit = js.native
   def LargeScroll(Down: js.Any, Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
   def NewFrameset(): Unit = js.native
   def PageScroll(): Unit = js.native
+  def PageScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any): Unit = js.native
   def PageScroll(Down: js.Any): Unit = js.native
   def PageScroll(Down: js.Any, Up: js.Any): Unit = js.native
   def SmallScroll(): Unit = js.native
+  def SmallScroll(
+    Down: js.UndefOr[scala.Nothing],
+    Up: js.UndefOr[scala.Nothing],
+    ToRight: js.UndefOr[scala.Nothing],
+    ToLeft: js.Any
+  ): Unit = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: js.Any): Unit = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: js.Any, ToLeft: js.Any): Unit = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any): Unit = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.Any): Unit = js.native
+  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
   def SmallScroll(Down: js.Any): Unit = js.native
+  def SmallScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
+  def SmallScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.Any): Unit = js.native
+  def SmallScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.Any, ToLeft: js.Any): Unit = js.native
   def SmallScroll(Down: js.Any, Up: js.Any): Unit = js.native
+  def SmallScroll(Down: js.Any, Up: js.Any, ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
   def SmallScroll(Down: js.Any, Up: js.Any, ToRight: js.Any): Unit = js.native
   def SmallScroll(Down: js.Any, Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
   def TOCInFrameset(): Unit = js.native

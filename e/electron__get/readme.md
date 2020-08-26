@@ -10,9 +10,9 @@ Utility for downloading artifacts from different versions of Electron
 | ------------------ | :-------------: |
 | Full name          | @electron/get |
 | Keywords           | electron, download, prebuild, get, artifact, release |
-| # releases         | 21 |
-| # dependents       | 9 |
-| # downloads        | 1267991 |
+| # releases         | 28 |
+| # dependents       | 13 |
+| # downloads        | 5399487 |
 | # stars            | 0 |
 
 ## Links

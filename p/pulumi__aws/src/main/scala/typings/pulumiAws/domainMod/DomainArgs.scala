@@ -2,6 +2,7 @@ package typings.pulumiAws.domainMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.documentsMod.PolicyDocument
+import typings.pulumiAws.inputMod.elasticsearch.DomainAdvancedSecurityOptions
 import typings.pulumiAws.inputMod.elasticsearch.DomainClusterConfig
 import typings.pulumiAws.inputMod.elasticsearch.DomainCognitoOptions
 import typings.pulumiAws.inputMod.elasticsearch.DomainDomainEndpointOptions
@@ -28,7 +29,11 @@ trait DomainArgs extends js.Object {
     * may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
     * domain on every apply.
     */
-  val advancedOptions: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val advancedOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  /**
+    * Options for [fine-grained access control](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/fgac.html). See below for more details.
+    */
+  val advancedSecurityOptions: js.UndefOr[Input[DomainAdvancedSecurityOptions]] = js.native
   /**
     * Cluster configuration of the domain, see below.
     */
@@ -67,9 +72,9 @@ trait DomainArgs extends js.Object {
     */
   val snapshotOptions: js.UndefOr[Input[DomainSnapshotOptions]] = js.native
   /**
-    * A mapping of tags to assign to the resource
+    * A map of tags to assign to the resource
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
     */
@@ -78,38 +83,84 @@ trait DomainArgs extends js.Object {
 
 object DomainArgs {
   @scala.inline
-  def apply(
-    accessPolicies: Input[String | PolicyDocument] = null,
-    advancedOptions: Input[StringDictionary[_]] = null,
-    clusterConfig: Input[DomainClusterConfig] = null,
-    cognitoOptions: Input[DomainCognitoOptions] = null,
-    domainEndpointOptions: Input[DomainDomainEndpointOptions] = null,
-    domainName: Input[String] = null,
-    ebsOptions: Input[DomainEbsOptions] = null,
-    elasticsearchVersion: Input[String] = null,
-    encryptAtRest: Input[DomainEncryptAtRest] = null,
-    logPublishingOptions: Input[js.Array[Input[DomainLogPublishingOption]]] = null,
-    nodeToNodeEncryption: Input[DomainNodeToNodeEncryption] = null,
-    snapshotOptions: Input[DomainSnapshotOptions] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpcOptions: Input[DomainVpcOptions] = null
-  ): DomainArgs = {
+  def apply(): DomainArgs = {
     val __obj = js.Dynamic.literal()
-    if (accessPolicies != null) __obj.updateDynamic("accessPolicies")(accessPolicies.asInstanceOf[js.Any])
-    if (advancedOptions != null) __obj.updateDynamic("advancedOptions")(advancedOptions.asInstanceOf[js.Any])
-    if (clusterConfig != null) __obj.updateDynamic("clusterConfig")(clusterConfig.asInstanceOf[js.Any])
-    if (cognitoOptions != null) __obj.updateDynamic("cognitoOptions")(cognitoOptions.asInstanceOf[js.Any])
-    if (domainEndpointOptions != null) __obj.updateDynamic("domainEndpointOptions")(domainEndpointOptions.asInstanceOf[js.Any])
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (ebsOptions != null) __obj.updateDynamic("ebsOptions")(ebsOptions.asInstanceOf[js.Any])
-    if (elasticsearchVersion != null) __obj.updateDynamic("elasticsearchVersion")(elasticsearchVersion.asInstanceOf[js.Any])
-    if (encryptAtRest != null) __obj.updateDynamic("encryptAtRest")(encryptAtRest.asInstanceOf[js.Any])
-    if (logPublishingOptions != null) __obj.updateDynamic("logPublishingOptions")(logPublishingOptions.asInstanceOf[js.Any])
-    if (nodeToNodeEncryption != null) __obj.updateDynamic("nodeToNodeEncryption")(nodeToNodeEncryption.asInstanceOf[js.Any])
-    if (snapshotOptions != null) __obj.updateDynamic("snapshotOptions")(snapshotOptions.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcOptions != null) __obj.updateDynamic("vpcOptions")(vpcOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainArgs]
   }
+  @scala.inline
+  implicit class DomainArgsOps[Self <: DomainArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessPolicies(value: Input[String | PolicyDocument]): Self = this.set("accessPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessPolicies: Self = this.set("accessPolicies", js.undefined)
+    @scala.inline
+    def setAdvancedOptions(value: Input[StringDictionary[Input[String]]]): Self = this.set("advancedOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvancedOptions: Self = this.set("advancedOptions", js.undefined)
+    @scala.inline
+    def setAdvancedSecurityOptions(value: Input[DomainAdvancedSecurityOptions]): Self = this.set("advancedSecurityOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvancedSecurityOptions: Self = this.set("advancedSecurityOptions", js.undefined)
+    @scala.inline
+    def setClusterConfig(value: Input[DomainClusterConfig]): Self = this.set("clusterConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterConfig: Self = this.set("clusterConfig", js.undefined)
+    @scala.inline
+    def setCognitoOptions(value: Input[DomainCognitoOptions]): Self = this.set("cognitoOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCognitoOptions: Self = this.set("cognitoOptions", js.undefined)
+    @scala.inline
+    def setDomainEndpointOptions(value: Input[DomainDomainEndpointOptions]): Self = this.set("domainEndpointOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainEndpointOptions: Self = this.set("domainEndpointOptions", js.undefined)
+    @scala.inline
+    def setDomainName(value: Input[String]): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setEbsOptions(value: Input[DomainEbsOptions]): Self = this.set("ebsOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptions: Self = this.set("ebsOptions", js.undefined)
+    @scala.inline
+    def setElasticsearchVersion(value: Input[String]): Self = this.set("elasticsearchVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticsearchVersion: Self = this.set("elasticsearchVersion", js.undefined)
+    @scala.inline
+    def setEncryptAtRest(value: Input[DomainEncryptAtRest]): Self = this.set("encryptAtRest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptAtRest: Self = this.set("encryptAtRest", js.undefined)
+    @scala.inline
+    def setLogPublishingOptionsVarargs(value: Input[DomainLogPublishingOption]*): Self = this.set("logPublishingOptions", js.Array(value :_*))
+    @scala.inline
+    def setLogPublishingOptions(value: Input[js.Array[Input[DomainLogPublishingOption]]]): Self = this.set("logPublishingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogPublishingOptions: Self = this.set("logPublishingOptions", js.undefined)
+    @scala.inline
+    def setNodeToNodeEncryption(value: Input[DomainNodeToNodeEncryption]): Self = this.set("nodeToNodeEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeToNodeEncryption: Self = this.set("nodeToNodeEncryption", js.undefined)
+    @scala.inline
+    def setSnapshotOptions(value: Input[DomainSnapshotOptions]): Self = this.set("snapshotOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotOptions: Self = this.set("snapshotOptions", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcOptions(value: Input[DomainVpcOptions]): Self = this.set("vpcOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcOptions: Self = this.set("vpcOptions", js.undefined)
+  }
+  
 }
 

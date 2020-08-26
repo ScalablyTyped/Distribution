@@ -38,7 +38,7 @@ class Policy protected () extends CustomResource {
     */
   val name: Output_[String] = js.native
   /**
-    * The type of policy to create. Currently, the only valid values are `SERVICE_CONTROL_POLICY` (SCP) and `TAG_POLICY`. Defaults to `SERVICE_CONTROL_POLICY`.
+    * The type of policy to create. Valid values are `BACKUP_POLICY`, `SERVICE_CONTROL_POLICY` (SCP), and `TAG_POLICY`. Defaults to `SERVICE_CONTROL_POLICY`.
     */
   val `type`: Output_[js.UndefOr[String]] = js.native
 }
@@ -54,8 +54,10 @@ object Policy extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Policy = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Policy = js.native
   def get(name: String, id: Input[ID], state: PolicyState): Policy = js.native
   def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): Policy = js.native
   /**

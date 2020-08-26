@@ -15,11 +15,32 @@ trait DescribeLogStreamsResponse extends js.Object {
 
 object DescribeLogStreamsResponse {
   @scala.inline
-  def apply(logStreams: LogStreams = null, nextToken: NextToken = null): DescribeLogStreamsResponse = {
+  def apply(): DescribeLogStreamsResponse = {
     val __obj = js.Dynamic.literal()
-    if (logStreams != null) __obj.updateDynamic("logStreams")(logStreams.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLogStreamsResponse]
   }
+  @scala.inline
+  implicit class DescribeLogStreamsResponseOps[Self <: DescribeLogStreamsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogStreamsVarargs(value: LogStream*): Self = this.set("logStreams", js.Array(value :_*))
+    @scala.inline
+    def setLogStreams(value: LogStreams): Self = this.set("logStreams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogStreams: Self = this.set("logStreams", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

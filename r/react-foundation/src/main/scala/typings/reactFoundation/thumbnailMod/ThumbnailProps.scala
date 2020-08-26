@@ -1,82 +1,6 @@
 package typings.reactFoundation.thumbnailMod
 
-import typings.react.anon.Html
-import typings.react.mod.AnimationEvent
-import typings.react.mod.Booleanish
-import typings.react.mod.CSSProperties
-import typings.react.mod.ClipboardEvent
-import typings.react.mod.CompositionEvent
-import typings.react.mod.DragEvent
-import typings.react.mod.FocusEvent
-import typings.react.mod.FormEvent
 import typings.react.mod.ImgHTMLAttributes
-import typings.react.mod.KeyboardEvent
-import typings.react.mod.MouseEvent
-import typings.react.mod.NativeMouseEvent
-import typings.react.mod.NativeUIEvent
-import typings.react.mod.PointerEvent
-import typings.react.mod.ReactNode
-import typings.react.mod.SyntheticEvent
-import typings.react.mod.TouchEvent
-import typings.react.mod.TransitionEvent
-import typings.react.mod.UIEvent
-import typings.react.mod.WheelEvent
-import typings.react.reactStrings._empty
-import typings.react.reactStrings.`additions text`
-import typings.react.reactStrings.`inline`
-import typings.react.reactStrings.`lazy`
-import typings.react.reactStrings.`no-referrer`
-import typings.react.reactStrings.`unsafe-url`
-import typings.react.reactStrings.`use-credentials`
-import typings.react.reactStrings.additions
-import typings.react.reactStrings.all
-import typings.react.reactStrings.anonymous
-import typings.react.reactStrings.ascending
-import typings.react.reactStrings.assertive
-import typings.react.reactStrings.async
-import typings.react.reactStrings.auto
-import typings.react.reactStrings.both
-import typings.react.reactStrings.copy
-import typings.react.reactStrings.date
-import typings.react.reactStrings.decimal
-import typings.react.reactStrings.descending
-import typings.react.reactStrings.dialog
-import typings.react.reactStrings.eager
-import typings.react.reactStrings.email
-import typings.react.reactStrings.execute
-import typings.react.reactStrings.grammar
-import typings.react.reactStrings.grid
-import typings.react.reactStrings.horizontal
-import typings.react.reactStrings.inherit
-import typings.react.reactStrings.link
-import typings.react.reactStrings.list
-import typings.react.reactStrings.listbox
-import typings.react.reactStrings.location
-import typings.react.reactStrings.menu
-import typings.react.reactStrings.mixed
-import typings.react.reactStrings.move
-import typings.react.reactStrings.no
-import typings.react.reactStrings.none
-import typings.react.reactStrings.numeric
-import typings.react.reactStrings.off
-import typings.react.reactStrings.on
-import typings.react.reactStrings.origin
-import typings.react.reactStrings.other
-import typings.react.reactStrings.page
-import typings.react.reactStrings.polite
-import typings.react.reactStrings.popup
-import typings.react.reactStrings.removals
-import typings.react.reactStrings.search
-import typings.react.reactStrings.spelling
-import typings.react.reactStrings.step
-import typings.react.reactStrings.sync
-import typings.react.reactStrings.tel
-import typings.react.reactStrings.text
-import typings.react.reactStrings.time
-import typings.react.reactStrings.tree
-import typings.react.reactStrings.url
-import typings.react.reactStrings.vertical
-import typings.react.reactStrings.yes
 import typings.reactFoundation.enumsMod.Breakpoints
 import typings.reactFoundation.enumsMod.ExtendedBreakpoints
 import typings.reactFoundation.enumsMod.FloatTypes
@@ -85,7 +9,6 @@ import typings.reactFoundation.enumsMod.SpaceControls
 import typings.reactFoundation.enumsMod.VerticalAlignments
 import typings.reactFoundation.reactFoundationStrings.large
 import typings.reactFoundation.reactFoundationStrings.medium
-import typings.std.Event
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -94,467 +17,168 @@ import scala.scalajs.js.annotation._
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactFoundation.utilsMod.ClassNameProps because var conflicts: className. Inlined noDefaultClassName
 - typings.reactFoundation.utilsMod.GeneralPropTypes because var conflicts: className. Inlined showFor, showOnlyFor, hideFor, hideOnlyFor, isHidden, isInvisible, showForLandscape, showForPortrait, showForSr, showOnFocus, isClearfix, float
-- typings.reactFoundation.utilsMod.FlexboxPropTypes because var conflicts: className. Inlined alignX, alignY, selfAlignX, selfAlignY, centerAlign, flexContainer, flexDirRow, flexDirRowRev, flexDirCol, flexDirColRev, flexChild, flexOrder, flexOrderSmall, flexOrderMedium, flexOrderLarge */ trait ThumbnailProps extends ImgHTMLAttributes[HTMLImageElement] {
-  var alignX: js.UndefOr[HorizontalAlignments] = js.undefined
-  var alignY: js.UndefOr[VerticalAlignments] = js.undefined
-  var centerAlign: js.UndefOr[Boolean] = js.undefined
-  var flexChild: js.UndefOr[SpaceControls] = js.undefined
-  var flexContainer: js.UndefOr[Boolean] = js.undefined
-  var flexDirCol: js.UndefOr[ExtendedBreakpoints] = js.undefined
-  var flexDirColRev: js.UndefOr[ExtendedBreakpoints] = js.undefined
-  var flexDirRow: js.UndefOr[ExtendedBreakpoints] = js.undefined
-  var flexDirRowRev: js.UndefOr[ExtendedBreakpoints] = js.undefined
-  var flexOrder: js.UndefOr[Double] = js.undefined
-  var flexOrderLarge: js.UndefOr[Double] = js.undefined
-  var flexOrderMedium: js.UndefOr[Double] = js.undefined
-  var flexOrderSmall: js.UndefOr[Double] = js.undefined
-  var float: js.UndefOr[FloatTypes] = js.undefined
-  var hideFor: js.UndefOr[medium | large] = js.undefined
-  var hideOnlyFor: js.UndefOr[Breakpoints] = js.undefined
-  var isClearfix: js.UndefOr[Boolean] = js.undefined
-  var isHidden: js.UndefOr[Boolean] = js.undefined
-  var isInvisible: js.UndefOr[Boolean] = js.undefined
-  var noDefaultClassName: js.UndefOr[String] = js.undefined
-  var selfAlignX: js.UndefOr[HorizontalAlignments] = js.undefined
-  var selfAlignY: js.UndefOr[VerticalAlignments] = js.undefined
-  var showFor: js.UndefOr[Breakpoints] = js.undefined
-  var showForLandscape: js.UndefOr[Boolean] = js.undefined
-  var showForPortrait: js.UndefOr[Boolean] = js.undefined
-  var showForSr: js.UndefOr[Boolean] = js.undefined
-  var showOnFocus: js.UndefOr[Boolean] = js.undefined
-  var showOnlyFor: js.UndefOr[Breakpoints] = js.undefined
+- typings.reactFoundation.utilsMod.FlexboxPropTypes because var conflicts: className. Inlined alignX, alignY, selfAlignX, selfAlignY, centerAlign, flexContainer, flexDirRow, flexDirRowRev, flexDirCol, flexDirColRev, flexChild, flexOrder, flexOrderSmall, flexOrderMedium, flexOrderLarge */ @js.native
+trait ThumbnailProps extends ImgHTMLAttributes[HTMLImageElement] {
+  var alignX: js.UndefOr[HorizontalAlignments] = js.native
+  var alignY: js.UndefOr[VerticalAlignments] = js.native
+  var centerAlign: js.UndefOr[Boolean] = js.native
+  var flexChild: js.UndefOr[SpaceControls] = js.native
+  var flexContainer: js.UndefOr[Boolean] = js.native
+  var flexDirCol: js.UndefOr[ExtendedBreakpoints] = js.native
+  var flexDirColRev: js.UndefOr[ExtendedBreakpoints] = js.native
+  var flexDirRow: js.UndefOr[ExtendedBreakpoints] = js.native
+  var flexDirRowRev: js.UndefOr[ExtendedBreakpoints] = js.native
+  var flexOrder: js.UndefOr[Double] = js.native
+  var flexOrderLarge: js.UndefOr[Double] = js.native
+  var flexOrderMedium: js.UndefOr[Double] = js.native
+  var flexOrderSmall: js.UndefOr[Double] = js.native
+  var float: js.UndefOr[FloatTypes] = js.native
+  var hideFor: js.UndefOr[medium | large] = js.native
+  var hideOnlyFor: js.UndefOr[Breakpoints] = js.native
+  var isClearfix: js.UndefOr[Boolean] = js.native
+  var isHidden: js.UndefOr[Boolean] = js.native
+  var isInvisible: js.UndefOr[Boolean] = js.native
+  var noDefaultClassName: js.UndefOr[String] = js.native
+  var selfAlignX: js.UndefOr[HorizontalAlignments] = js.native
+  var selfAlignY: js.UndefOr[VerticalAlignments] = js.native
+  var showFor: js.UndefOr[Breakpoints] = js.native
+  var showForLandscape: js.UndefOr[Boolean] = js.native
+  var showForPortrait: js.UndefOr[Boolean] = js.native
+  var showForSr: js.UndefOr[Boolean] = js.native
+  var showOnFocus: js.UndefOr[Boolean] = js.native
+  var showOnlyFor: js.UndefOr[Breakpoints] = js.native
 }
 
 object ThumbnailProps {
   @scala.inline
-  def apply(
-    about: String = null,
-    accessKey: String = null,
-    alignX: HorizontalAlignments = null,
-    alignY: VerticalAlignments = null,
-    alt: String = null,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: js.UndefOr[Double] = js.undefined,
-    `aria-colindex`: js.UndefOr[Double] = js.undefined,
-    `aria-colspan`: js.UndefOr[Double] = js.undefined,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: js.UndefOr[Double] = js.undefined,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: js.UndefOr[Double] = js.undefined,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
-    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
-    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: js.UndefOr[Double] = js.undefined,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
-    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
-    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
-    `aria-valuetext`: String = null,
-    autoCapitalize: String = null,
-    autoCorrect: String = null,
-    autoSave: String = null,
-    centerAlign: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    className: String = null,
-    color: String = null,
-    contentEditable: Booleanish | inherit = null,
-    contextMenu: String = null,
-    crossOrigin: anonymous | `use-credentials` | _empty = null,
-    dangerouslySetInnerHTML: Html = null,
-    datatype: String = null,
-    decoding: async | auto | sync = null,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | Double | js.Array[String] = null,
-    dir: String = null,
-    draggable: js.UndefOr[Booleanish] = js.undefined,
-    flexChild: SpaceControls = null,
-    flexContainer: js.UndefOr[Boolean] = js.undefined,
-    flexDirCol: ExtendedBreakpoints = null,
-    flexDirColRev: ExtendedBreakpoints = null,
-    flexDirRow: ExtendedBreakpoints = null,
-    flexDirRowRev: ExtendedBreakpoints = null,
-    flexOrder: js.UndefOr[Double] = js.undefined,
-    flexOrderLarge: js.UndefOr[Double] = js.undefined,
-    flexOrderMedium: js.UndefOr[Double] = js.undefined,
-    flexOrderSmall: js.UndefOr[Double] = js.undefined,
-    float: FloatTypes = null,
-    height: Double | String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hideFor: medium | large = null,
-    hideOnlyFor: Breakpoints = null,
-    id: String = null,
-    inlist: js.Any = null,
-    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
-    is: String = null,
-    isClearfix: js.UndefOr[Boolean] = js.undefined,
-    isHidden: js.UndefOr[Boolean] = js.undefined,
-    isInvisible: js.UndefOr[Boolean] = js.undefined,
-    itemID: String = null,
-    itemProp: String = null,
-    itemRef: String = null,
-    itemScope: js.UndefOr[Boolean] = js.undefined,
-    itemType: String = null,
-    lang: String = null,
-    loading: eager | `lazy` = null,
-    noDefaultClassName: String = null,
-    onAbort: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onAnimationEnd: AnimationEvent[HTMLImageElement] => Unit = null,
-    onAnimationIteration: AnimationEvent[HTMLImageElement] => Unit = null,
-    onAnimationStart: AnimationEvent[HTMLImageElement] => Unit = null,
-    onAuxClick: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
-    onBeforeInput: FormEvent[HTMLImageElement] => Unit = null,
-    onBlur: FocusEvent[HTMLImageElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onChange: FormEvent[HTMLImageElement] => Unit = null,
-    onClick: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
-    onCompositionEnd: CompositionEvent[HTMLImageElement] => Unit = null,
-    onCompositionStart: CompositionEvent[HTMLImageElement] => Unit = null,
-    onCompositionUpdate: CompositionEvent[HTMLImageElement] => Unit = null,
-    onContextMenu: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
-    onCopy: ClipboardEvent[HTMLImageElement] => Unit = null,
-    onCut: ClipboardEvent[HTMLImageElement] => Unit = null,
-    onDoubleClick: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
-    onDrag: DragEvent[HTMLImageElement] => Unit = null,
-    onDragEnd: DragEvent[HTMLImageElement] => Unit = null,
-    onDragEnter: DragEvent[HTMLImageElement] => Unit = null,
-    onDragExit: DragEvent[HTMLImageElement] => Unit = null,
-    onDragLeave: DragEvent[HTMLImageElement] => Unit = null,
-    onDragOver: DragEvent[HTMLImageElement] => Unit = null,
-    onDragStart: DragEvent[HTMLImageElement] => Unit = null,
-    onDrop: DragEvent[HTMLImageElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onEnded: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onError: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onFocus: FocusEvent[HTMLImageElement] => Unit = null,
-    onInput: FormEvent[HTMLImageElement] => Unit = null,
-    onInvalid: FormEvent[HTMLImageElement] => Unit = null,
-    onKeyDown: KeyboardEvent[HTMLImageElement] => Unit = null,
-    onKeyPress: KeyboardEvent[HTMLImageElement] => Unit = null,
-    onKeyUp: KeyboardEvent[HTMLImageElement] => Unit = null,
-    onLoad: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onMouseDown: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
-    onMouseEnter: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
-    onMouseMove: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
-    onMouseOut: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
-    onMouseOver: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
-    onMouseUp: MouseEvent[HTMLImageElement, NativeMouseEvent] => Unit = null,
-    onPaste: ClipboardEvent[HTMLImageElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onPlay: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onPointerCancel: PointerEvent[HTMLImageElement] => Unit = null,
-    onPointerDown: PointerEvent[HTMLImageElement] => Unit = null,
-    onPointerEnter: PointerEvent[HTMLImageElement] => Unit = null,
-    onPointerLeave: PointerEvent[HTMLImageElement] => Unit = null,
-    onPointerMove: PointerEvent[HTMLImageElement] => Unit = null,
-    onPointerOut: PointerEvent[HTMLImageElement] => Unit = null,
-    onPointerOver: PointerEvent[HTMLImageElement] => Unit = null,
-    onPointerUp: PointerEvent[HTMLImageElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onReset: FormEvent[HTMLImageElement] => Unit = null,
-    onScroll: UIEvent[HTMLImageElement, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onSelect: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onStalled: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onSubmit: FormEvent[HTMLImageElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onTouchCancel: TouchEvent[HTMLImageElement] => Unit = null,
-    onTouchEnd: TouchEvent[HTMLImageElement] => Unit = null,
-    onTouchMove: TouchEvent[HTMLImageElement] => Unit = null,
-    onTouchStart: TouchEvent[HTMLImageElement] => Unit = null,
-    onTransitionEnd: TransitionEvent[HTMLImageElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLImageElement, Event] => Unit = null,
-    onWheel: WheelEvent[HTMLImageElement] => Unit = null,
-    placeholder: String = null,
-    prefix: String = null,
-    property: String = null,
-    radioGroup: String = null,
-    referrerPolicy: `no-referrer` | origin | `unsafe-url` = null,
-    resource: String = null,
-    results: js.UndefOr[Double] = js.undefined,
-    role: String = null,
-    security: String = null,
-    selfAlignX: HorizontalAlignments = null,
-    selfAlignY: VerticalAlignments = null,
-    showFor: Breakpoints = null,
-    showForLandscape: js.UndefOr[Boolean] = js.undefined,
-    showForPortrait: js.UndefOr[Boolean] = js.undefined,
-    showForSr: js.UndefOr[Boolean] = js.undefined,
-    showOnFocus: js.UndefOr[Boolean] = js.undefined,
-    showOnlyFor: Breakpoints = null,
-    sizes: String = null,
-    slot: String = null,
-    spellCheck: js.UndefOr[Booleanish] = js.undefined,
-    src: String = null,
-    srcSet: String = null,
-    style: CSSProperties = null,
-    suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
-    suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    title: String = null,
-    translate: yes | no = null,
-    typeof: String = null,
-    unselectable: on | off = null,
-    useMap: String = null,
-    vocab: String = null,
-    width: Double | String = null
-  ): ThumbnailProps = {
+  def apply(): ThumbnailProps = {
     val __obj = js.Dynamic.literal()
-    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (alignX != null) __obj.updateDynamic("alignX")(alignX.asInstanceOf[js.Any])
-    if (alignY != null) __obj.updateDynamic("alignY")(alignY.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerAlign)) __obj.updateDynamic("centerAlign")(centerAlign.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (decoding != null) __obj.updateDynamic("decoding")(decoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (flexChild != null) __obj.updateDynamic("flexChild")(flexChild.asInstanceOf[js.Any])
-    if (!js.isUndefined(flexContainer)) __obj.updateDynamic("flexContainer")(flexContainer.get.asInstanceOf[js.Any])
-    if (flexDirCol != null) __obj.updateDynamic("flexDirCol")(flexDirCol.asInstanceOf[js.Any])
-    if (flexDirColRev != null) __obj.updateDynamic("flexDirColRev")(flexDirColRev.asInstanceOf[js.Any])
-    if (flexDirRow != null) __obj.updateDynamic("flexDirRow")(flexDirRow.asInstanceOf[js.Any])
-    if (flexDirRowRev != null) __obj.updateDynamic("flexDirRowRev")(flexDirRowRev.asInstanceOf[js.Any])
-    if (!js.isUndefined(flexOrder)) __obj.updateDynamic("flexOrder")(flexOrder.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flexOrderLarge)) __obj.updateDynamic("flexOrderLarge")(flexOrderLarge.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flexOrderMedium)) __obj.updateDynamic("flexOrderMedium")(flexOrderMedium.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flexOrderSmall)) __obj.updateDynamic("flexOrderSmall")(flexOrderSmall.get.asInstanceOf[js.Any])
-    if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (hideFor != null) __obj.updateDynamic("hideFor")(hideFor.asInstanceOf[js.Any])
-    if (hideOnlyFor != null) __obj.updateDynamic("hideOnlyFor")(hideOnlyFor.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClearfix)) __obj.updateDynamic("isClearfix")(isClearfix.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInvisible)) __obj.updateDynamic("isInvisible")(isInvisible.get.asInstanceOf[js.Any])
-    if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (noDefaultClassName != null) __obj.updateDynamic("noDefaultClassName")(noDefaultClassName.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1(onAuxClick))
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1(onBeforeInput))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1(onCanPlay))
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1(onCanPlayThrough))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1(onCompositionEnd))
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1(onCompositionStart))
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1(onCompositionUpdate))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1(onDragEnter))
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1(onDragExit))
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1(onDragLeave))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1(onDragOver))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1(onDurationChange))
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1(onEmptied))
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1(onLoadStart))
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1(onLoadedData))
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1(onLoadedMetadata))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction1(onPlaying))
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1(onPointerCancel))
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1(onPointerDown))
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1(onPointerEnter))
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1(onPointerLeave))
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1(onPointerMove))
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1(onPointerOut))
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1(onPointerOver))
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1(onPointerUp))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1(onSeeking))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1(onStalled))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1(onSuspend))
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1(onTimeUpdate))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (selfAlignX != null) __obj.updateDynamic("selfAlignX")(selfAlignX.asInstanceOf[js.Any])
-    if (selfAlignY != null) __obj.updateDynamic("selfAlignY")(selfAlignY.asInstanceOf[js.Any])
-    if (showFor != null) __obj.updateDynamic("showFor")(showFor.asInstanceOf[js.Any])
-    if (!js.isUndefined(showForLandscape)) __obj.updateDynamic("showForLandscape")(showForLandscape.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showForPortrait)) __obj.updateDynamic("showForPortrait")(showForPortrait.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showForSr)) __obj.updateDynamic("showForSr")(showForSr.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnFocus)) __obj.updateDynamic("showOnFocus")(showOnFocus.get.asInstanceOf[js.Any])
-    if (showOnlyFor != null) __obj.updateDynamic("showOnlyFor")(showOnlyFor.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
-    if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
-    if (useMap != null) __obj.updateDynamic("useMap")(useMap.asInstanceOf[js.Any])
-    if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbnailProps]
   }
+  @scala.inline
+  implicit class ThumbnailPropsOps[Self <: ThumbnailProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignX(value: HorizontalAlignments): Self = this.set("alignX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignX: Self = this.set("alignX", js.undefined)
+    @scala.inline
+    def setAlignY(value: VerticalAlignments): Self = this.set("alignY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignY: Self = this.set("alignY", js.undefined)
+    @scala.inline
+    def setCenterAlign(value: Boolean): Self = this.set("centerAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenterAlign: Self = this.set("centerAlign", js.undefined)
+    @scala.inline
+    def setFlexChild(value: SpaceControls): Self = this.set("flexChild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexChild: Self = this.set("flexChild", js.undefined)
+    @scala.inline
+    def setFlexContainer(value: Boolean): Self = this.set("flexContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexContainer: Self = this.set("flexContainer", js.undefined)
+    @scala.inline
+    def setFlexDirCol(value: ExtendedBreakpoints): Self = this.set("flexDirCol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexDirCol: Self = this.set("flexDirCol", js.undefined)
+    @scala.inline
+    def setFlexDirColRev(value: ExtendedBreakpoints): Self = this.set("flexDirColRev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexDirColRev: Self = this.set("flexDirColRev", js.undefined)
+    @scala.inline
+    def setFlexDirRow(value: ExtendedBreakpoints): Self = this.set("flexDirRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexDirRow: Self = this.set("flexDirRow", js.undefined)
+    @scala.inline
+    def setFlexDirRowRev(value: ExtendedBreakpoints): Self = this.set("flexDirRowRev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexDirRowRev: Self = this.set("flexDirRowRev", js.undefined)
+    @scala.inline
+    def setFlexOrder(value: Double): Self = this.set("flexOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexOrder: Self = this.set("flexOrder", js.undefined)
+    @scala.inline
+    def setFlexOrderLarge(value: Double): Self = this.set("flexOrderLarge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexOrderLarge: Self = this.set("flexOrderLarge", js.undefined)
+    @scala.inline
+    def setFlexOrderMedium(value: Double): Self = this.set("flexOrderMedium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexOrderMedium: Self = this.set("flexOrderMedium", js.undefined)
+    @scala.inline
+    def setFlexOrderSmall(value: Double): Self = this.set("flexOrderSmall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexOrderSmall: Self = this.set("flexOrderSmall", js.undefined)
+    @scala.inline
+    def setFloat(value: FloatTypes): Self = this.set("float", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloat: Self = this.set("float", js.undefined)
+    @scala.inline
+    def setHideFor(value: medium | large): Self = this.set("hideFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideFor: Self = this.set("hideFor", js.undefined)
+    @scala.inline
+    def setHideOnlyFor(value: Breakpoints): Self = this.set("hideOnlyFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideOnlyFor: Self = this.set("hideOnlyFor", js.undefined)
+    @scala.inline
+    def setIsClearfix(value: Boolean): Self = this.set("isClearfix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsClearfix: Self = this.set("isClearfix", js.undefined)
+    @scala.inline
+    def setIsHidden(value: Boolean): Self = this.set("isHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsHidden: Self = this.set("isHidden", js.undefined)
+    @scala.inline
+    def setIsInvisible(value: Boolean): Self = this.set("isInvisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsInvisible: Self = this.set("isInvisible", js.undefined)
+    @scala.inline
+    def setNoDefaultClassName(value: String): Self = this.set("noDefaultClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoDefaultClassName: Self = this.set("noDefaultClassName", js.undefined)
+    @scala.inline
+    def setSelfAlignX(value: HorizontalAlignments): Self = this.set("selfAlignX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfAlignX: Self = this.set("selfAlignX", js.undefined)
+    @scala.inline
+    def setSelfAlignY(value: VerticalAlignments): Self = this.set("selfAlignY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfAlignY: Self = this.set("selfAlignY", js.undefined)
+    @scala.inline
+    def setShowFor(value: Breakpoints): Self = this.set("showFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFor: Self = this.set("showFor", js.undefined)
+    @scala.inline
+    def setShowForLandscape(value: Boolean): Self = this.set("showForLandscape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowForLandscape: Self = this.set("showForLandscape", js.undefined)
+    @scala.inline
+    def setShowForPortrait(value: Boolean): Self = this.set("showForPortrait", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowForPortrait: Self = this.set("showForPortrait", js.undefined)
+    @scala.inline
+    def setShowForSr(value: Boolean): Self = this.set("showForSr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowForSr: Self = this.set("showForSr", js.undefined)
+    @scala.inline
+    def setShowOnFocus(value: Boolean): Self = this.set("showOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOnFocus: Self = this.set("showOnFocus", js.undefined)
+    @scala.inline
+    def setShowOnlyFor(value: Breakpoints): Self = this.set("showOnlyFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOnlyFor: Self = this.set("showOnlyFor", js.undefined)
+  }
+  
 }
 

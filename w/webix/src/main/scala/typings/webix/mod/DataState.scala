@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataState extends js.Object {
-  def getState(): js.Any
-  def setState(state: js.Any): Unit
+  def getState(): js.Any = js.native
+  def setState(state: js.Any): Unit = js.native
 }
 
 @JSImport("webix", "DataState")

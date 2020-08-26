@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ngx-infinite-scroll/public_api", JSImport.Namespace)
+@JSImport("ngx-infinite-scroll/public-api", JSImport.Namespace)
 @js.native
 object publicApiMod extends js.Object {
   @js.native

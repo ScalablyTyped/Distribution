@@ -12,7 +12,7 @@ class UpdateTemplateRequest protected () extends js.Object {
     Subject: js.UndefOr[String],
     HtmlBody: js.UndefOr[String],
     TextBody: js.UndefOr[String],
-    Alias: js.UndefOr[Null | String],
+    Alias: js.UndefOr[String | Null],
     TemplateType: js.UndefOr[TemplateTypes],
     LayoutTemplate: js.UndefOr[String]
   ) = this()

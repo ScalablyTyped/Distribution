@@ -12,7 +12,7 @@ XMLHttpRequest polyfill for node.js
 | Keywords           | XMLHttpRequest, cookies, xhr2 |
 | # releases         | 0 |
 | # dependents       | 62 |
-| # downloads        | 2676024 |
+| # downloads        | 2723938 |
 | # stars            | 0 |
 
 ## Links

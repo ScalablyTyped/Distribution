@@ -34,22 +34,50 @@ trait SchemaInvoiceSummary extends js.Object {
 
 object SchemaInvoiceSummary {
   @scala.inline
-  def apply(
-    additionalChargeSummaries: js.Array[SchemaInvoiceSummaryAdditionalChargeSummary] = null,
-    customerBalance: SchemaAmount = null,
-    googleBalance: SchemaAmount = null,
-    merchantBalance: SchemaAmount = null,
-    productTotal: SchemaAmount = null,
-    promotionSummaries: js.Array[SchemaPromotion] = null
-  ): SchemaInvoiceSummary = {
+  def apply(): SchemaInvoiceSummary = {
     val __obj = js.Dynamic.literal()
-    if (additionalChargeSummaries != null) __obj.updateDynamic("additionalChargeSummaries")(additionalChargeSummaries.asInstanceOf[js.Any])
-    if (customerBalance != null) __obj.updateDynamic("customerBalance")(customerBalance.asInstanceOf[js.Any])
-    if (googleBalance != null) __obj.updateDynamic("googleBalance")(googleBalance.asInstanceOf[js.Any])
-    if (merchantBalance != null) __obj.updateDynamic("merchantBalance")(merchantBalance.asInstanceOf[js.Any])
-    if (productTotal != null) __obj.updateDynamic("productTotal")(productTotal.asInstanceOf[js.Any])
-    if (promotionSummaries != null) __obj.updateDynamic("promotionSummaries")(promotionSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInvoiceSummary]
   }
+  @scala.inline
+  implicit class SchemaInvoiceSummaryOps[Self <: SchemaInvoiceSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalChargeSummariesVarargs(value: SchemaInvoiceSummaryAdditionalChargeSummary*): Self = this.set("additionalChargeSummaries", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalChargeSummaries(value: js.Array[SchemaInvoiceSummaryAdditionalChargeSummary]): Self = this.set("additionalChargeSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalChargeSummaries: Self = this.set("additionalChargeSummaries", js.undefined)
+    @scala.inline
+    def setCustomerBalance(value: SchemaAmount): Self = this.set("customerBalance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerBalance: Self = this.set("customerBalance", js.undefined)
+    @scala.inline
+    def setGoogleBalance(value: SchemaAmount): Self = this.set("googleBalance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogleBalance: Self = this.set("googleBalance", js.undefined)
+    @scala.inline
+    def setMerchantBalance(value: SchemaAmount): Self = this.set("merchantBalance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchantBalance: Self = this.set("merchantBalance", js.undefined)
+    @scala.inline
+    def setProductTotal(value: SchemaAmount): Self = this.set("productTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductTotal: Self = this.set("productTotal", js.undefined)
+    @scala.inline
+    def setPromotionSummariesVarargs(value: SchemaPromotion*): Self = this.set("promotionSummaries", js.Array(value :_*))
+    @scala.inline
+    def setPromotionSummaries(value: js.Array[SchemaPromotion]): Self = this.set("promotionSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotionSummaries: Self = this.set("promotionSummaries", js.undefined)
+  }
+  
 }
 

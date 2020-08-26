@@ -1,9 +1,6 @@
 package typings.webpackStream
 
 import typings.node.NodeJS.ReadWriteStream
-import typings.webpack.mod.Compiler_.Handler
-import typings.webpack.mod.Configuration
-import typings.webpackStream.anon.Call
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +16,36 @@ object mod extends js.Object {
     * @param callback - A callback with the webpack stats and error objects.
     */
   def apply(): ReadWriteStream = js.native
-  def apply(config: Configuration): ReadWriteStream = js.native
-  def apply(config: Configuration, wp: Call): ReadWriteStream = js.native
-  def apply(config: Configuration, wp: Call, callback: Handler): ReadWriteStream = js.native
+  def apply(
+    config: js.UndefOr[scala.Nothing],
+    wp: js.UndefOr[scala.Nothing],
+    callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler.Handler */ js.Any
+  ): ReadWriteStream = js.native
+  def apply(
+    config: js.UndefOr[scala.Nothing],
+    wp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof webpack */ js.Any
+  ): ReadWriteStream = js.native
+  def apply(
+    config: js.UndefOr[scala.Nothing],
+    wp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof webpack */ js.Any,
+    callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler.Handler */ js.Any
+  ): ReadWriteStream = js.native
+  def apply(
+    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
+  ): ReadWriteStream = js.native
+  def apply(
+    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any,
+    wp: js.UndefOr[scala.Nothing],
+    callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler.Handler */ js.Any
+  ): ReadWriteStream = js.native
+  def apply(
+    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any,
+    wp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof webpack */ js.Any
+  ): ReadWriteStream = js.native
+  def apply(
+    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any,
+    wp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof webpack */ js.Any,
+    callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler.Handler */ js.Any
+  ): ReadWriteStream = js.native
 }
 

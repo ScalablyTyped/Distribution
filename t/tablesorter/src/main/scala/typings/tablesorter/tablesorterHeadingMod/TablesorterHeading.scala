@@ -9,61 +9,84 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TablesorterHeading extends TablesorterConfigBase {
   /**
     * The sorting to apply for empty cells.
     */
-  var empty: js.UndefOr[EmptySorting] = js.undefined
+  var empty: js.UndefOr[EmptySorting] = js.native
   /**
     * The filter-concept for the column.
     */
-  var filter: js.UndefOr[ColumnFilter] = js.undefined
+  var filter: js.UndefOr[ColumnFilter] = js.native
   /**
     * The locked sort-order of the heading.
     */
-  var lockedOrder: js.UndefOr[SortOrder] = js.undefined
+  var lockedOrder: js.UndefOr[SortOrder] = js.native
   /**
     * Either the name of the parser to use for text-extraction or a value indicating whether text-extraction is enabled.
     */
-  var parser: js.UndefOr[String | Boolean] = js.undefined
+  var parser: js.UndefOr[String | Boolean] = js.native
   /**
     * A value indicating whether the column should be resizable.
     */
-  var resizable: js.UndefOr[Boolean] = js.undefined
+  var resizable: js.UndefOr[Boolean] = js.native
   /**
     * Either the name of the parser to use for sorting or a value indicating whether sorting is enabled.
     */
-  var sorter: js.UndefOr[String | Boolean] = js.undefined
+  var sorter: js.UndefOr[String | Boolean] = js.native
   /**
     * The sorting to apply for text-cells.
     */
-  var string: js.UndefOr[StringSorting] = js.undefined
+  var string: js.UndefOr[StringSorting] = js.native
 }
 
 object TablesorterHeading {
   @scala.inline
-  def apply(
-    dateFormat: String = null,
-    empty: EmptySorting = null,
-    filter: ColumnFilter = null,
-    lockedOrder: SortOrder = null,
-    parser: String | Boolean = null,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    sortInitialOrder: SortOrder = null,
-    sorter: String | Boolean = null,
-    string: StringSorting = null
-  ): TablesorterHeading = {
+  def apply(): TablesorterHeading = {
     val __obj = js.Dynamic.literal()
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (lockedOrder != null) __obj.updateDynamic("lockedOrder")(lockedOrder.asInstanceOf[js.Any])
-    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
-    if (sortInitialOrder != null) __obj.updateDynamic("sortInitialOrder")(sortInitialOrder.asInstanceOf[js.Any])
-    if (sorter != null) __obj.updateDynamic("sorter")(sorter.asInstanceOf[js.Any])
-    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[TablesorterHeading]
   }
+  @scala.inline
+  implicit class TablesorterHeadingOps[Self <: TablesorterHeading] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmpty(value: EmptySorting): Self = this.set("empty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmpty: Self = this.set("empty", js.undefined)
+    @scala.inline
+    def setFilter(value: ColumnFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setLockedOrder(value: SortOrder): Self = this.set("lockedOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockedOrder: Self = this.set("lockedOrder", js.undefined)
+    @scala.inline
+    def setParser(value: String | Boolean): Self = this.set("parser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParser: Self = this.set("parser", js.undefined)
+    @scala.inline
+    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizable: Self = this.set("resizable", js.undefined)
+    @scala.inline
+    def setSorter(value: String | Boolean): Self = this.set("sorter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSorter: Self = this.set("sorter", js.undefined)
+    @scala.inline
+    def setString(value: StringSorting): Self = this.set("string", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteString: Self = this.set("string", js.undefined)
+  }
+  
 }
 

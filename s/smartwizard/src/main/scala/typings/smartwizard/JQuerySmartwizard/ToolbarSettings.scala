@@ -5,30 +5,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ToolbarSettings extends js.Object {
-  var showNextButton: js.UndefOr[Boolean] = js.undefined
-  var showPreviousButton: js.UndefOr[Boolean] = js.undefined
-  var toolbarButtonPosition: js.UndefOr[ToolbarButtonPosition] = js.undefined
-  var toolbarExtraButtons: js.UndefOr[js.Array[JQuery]] = js.undefined
-  var toolbarPosition: js.UndefOr[ToolbarPosition] = js.undefined
+  var showNextButton: js.UndefOr[Boolean] = js.native
+  var showPreviousButton: js.UndefOr[Boolean] = js.native
+  var toolbarButtonPosition: js.UndefOr[ToolbarButtonPosition] = js.native
+  var toolbarExtraButtons: js.UndefOr[js.Array[JQuery]] = js.native
+  var toolbarPosition: js.UndefOr[ToolbarPosition] = js.native
 }
 
 object ToolbarSettings {
   @scala.inline
-  def apply(
-    showNextButton: js.UndefOr[Boolean] = js.undefined,
-    showPreviousButton: js.UndefOr[Boolean] = js.undefined,
-    toolbarButtonPosition: ToolbarButtonPosition = null,
-    toolbarExtraButtons: js.Array[JQuery] = null,
-    toolbarPosition: ToolbarPosition = null
-  ): ToolbarSettings = {
+  def apply(): ToolbarSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showNextButton)) __obj.updateDynamic("showNextButton")(showNextButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPreviousButton)) __obj.updateDynamic("showPreviousButton")(showPreviousButton.get.asInstanceOf[js.Any])
-    if (toolbarButtonPosition != null) __obj.updateDynamic("toolbarButtonPosition")(toolbarButtonPosition.asInstanceOf[js.Any])
-    if (toolbarExtraButtons != null) __obj.updateDynamic("toolbarExtraButtons")(toolbarExtraButtons.asInstanceOf[js.Any])
-    if (toolbarPosition != null) __obj.updateDynamic("toolbarPosition")(toolbarPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarSettings]
   }
+  @scala.inline
+  implicit class ToolbarSettingsOps[Self <: ToolbarSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShowNextButton(value: Boolean): Self = this.set("showNextButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowNextButton: Self = this.set("showNextButton", js.undefined)
+    @scala.inline
+    def setShowPreviousButton(value: Boolean): Self = this.set("showPreviousButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPreviousButton: Self = this.set("showPreviousButton", js.undefined)
+    @scala.inline
+    def setToolbarButtonPosition(value: ToolbarButtonPosition): Self = this.set("toolbarButtonPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarButtonPosition: Self = this.set("toolbarButtonPosition", js.undefined)
+    @scala.inline
+    def setToolbarExtraButtonsVarargs(value: JQuery*): Self = this.set("toolbarExtraButtons", js.Array(value :_*))
+    @scala.inline
+    def setToolbarExtraButtons(value: js.Array[JQuery]): Self = this.set("toolbarExtraButtons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarExtraButtons: Self = this.set("toolbarExtraButtons", js.undefined)
+    @scala.inline
+    def setToolbarPosition(value: ToolbarPosition): Self = this.set("toolbarPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarPosition: Self = this.set("toolbarPosition", js.undefined)
+  }
+  
 }
 

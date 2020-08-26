@@ -14,10 +14,25 @@ object ccmMod extends js.Object {
     def this(
       key: Uint8Array,
       nonce: Uint8Array,
-      adata: js.UndefOr[Uint8Array],
-      tagSize: js.UndefOr[Double],
+      adata: js.UndefOr[scala.Nothing],
+      tagSize: js.UndefOr[scala.Nothing],
       dataLength: Double
     ) = this()
+    def this(
+      key: Uint8Array,
+      nonce: Uint8Array,
+      adata: js.UndefOr[scala.Nothing],
+      tagSize: Double,
+      dataLength: Double
+    ) = this()
+    def this(
+      key: Uint8Array,
+      nonce: Uint8Array,
+      adata: Uint8Array,
+      tagSize: js.UndefOr[scala.Nothing],
+      dataLength: Double
+    ) = this()
+    def this(key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagSize: Double, dataLength: Double) = this()
     var AES_CTR_set_options: js.Any = js.native
     val adata: js.Any = js.native
     var counter: js.Any = js.native
@@ -39,9 +54,23 @@ object ccmMod extends js.Object {
   @js.native
   object AES_CCM extends js.Object {
     def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
+    def decrypt(
+      cipher: Uint8Array,
+      key: Uint8Array,
+      nonce: Uint8Array,
+      adata: js.UndefOr[scala.Nothing],
+      tagsize: Double
+    ): Uint8Array = js.native
     def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
     def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
     def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
+    def encrypt(
+      clear: Uint8Array,
+      key: Uint8Array,
+      nonce: Uint8Array,
+      adata: js.UndefOr[scala.Nothing],
+      tagsize: Double
+    ): Uint8Array = js.native
     def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
     def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
   }

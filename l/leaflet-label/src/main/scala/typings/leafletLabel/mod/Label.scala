@@ -8,14 +8,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IEventPowered<Label> * / any */ trait Label extends js.Object {
-  def close(): Unit
-  def onAdd(map: Map_): Unit
-  def onRemove(map: Map_): Unit
-  def setContent(content: String): Label
-  def setLatLng(latlng: LatLng_): Label
-  def setOpacity(opacity: Double): Unit
-  def updateZIndex(zIndex: Double): Unit
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IEventPowered<Label> * / any */ @js.native
+trait Label extends js.Object {
+  def close(): Unit = js.native
+  def onAdd(map: Map_): Unit = js.native
+  def onRemove(map: Map_): Unit = js.native
+  def setContent(content: String): Label = js.native
+  def setLatLng(latlng: LatLng_): Label = js.native
+  def setOpacity(opacity: Double): Unit = js.native
+  def updateZIndex(zIndex: Double): Unit = js.native
 }
 
 @JSImport("leaflet", "Label")

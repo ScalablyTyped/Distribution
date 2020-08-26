@@ -55,6 +55,7 @@ object mod extends js.Object {
       def init(): Unit = js.native
       def isConnected(): Boolean = js.native
       def login(): IPromise[js.Object] = js.native
+      def login(permissions: js.UndefOr[scala.Nothing], rerequest: Boolean): IPromise[js.Object] = js.native
       def login(permissions: String): IPromise[js.Object] = js.native
       def login(permissions: String, rerequest: Boolean): IPromise[js.Object] = js.native
       def logout(): IPromise[Unit] = js.native

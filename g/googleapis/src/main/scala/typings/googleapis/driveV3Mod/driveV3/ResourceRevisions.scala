@@ -31,6 +31,7 @@ class ResourceRevisions protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRevisionsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRevisionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -60,6 +61,7 @@ class ResourceRevisions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRevision] = js.native
   def get(callback: BodyResponseCallback[SchemaRevision]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRevision] = js.native
   def get(params: ParamsResourceRevisionsGet): GaxiosPromise[SchemaRevision] = js.native
   def get(params: ParamsResourceRevisionsGet, callback: BodyResponseCallback[SchemaRevision]): Unit = js.native
   def get(
@@ -89,6 +91,7 @@ class ResourceRevisions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaRevisionList] = js.native
   def list(callback: BodyResponseCallback[SchemaRevisionList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRevisionList] = js.native
   def list(params: ParamsResourceRevisionsList): GaxiosPromise[SchemaRevisionList] = js.native
   def list(params: ParamsResourceRevisionsList, callback: BodyResponseCallback[SchemaRevisionList]): Unit = js.native
   def list(
@@ -118,6 +121,7 @@ class ResourceRevisions protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaRevision] = js.native
   def update(callback: BodyResponseCallback[SchemaRevision]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRevision] = js.native
   def update(params: ParamsResourceRevisionsUpdate): GaxiosPromise[SchemaRevision] = js.native
   def update(params: ParamsResourceRevisionsUpdate, callback: BodyResponseCallback[SchemaRevision]): Unit = js.native
   def update(

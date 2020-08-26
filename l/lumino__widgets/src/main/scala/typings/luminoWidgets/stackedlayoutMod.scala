@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/stackedlayout", JSImport.Namespace)
+@JSImport("@lumino/widgets/types/stackedlayout", JSImport.Namespace)
 @js.native
 object stackedlayoutMod extends js.Object {
   @js.native

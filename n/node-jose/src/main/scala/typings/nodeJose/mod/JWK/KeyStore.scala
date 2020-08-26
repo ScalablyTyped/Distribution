@@ -32,15 +32,10 @@ trait KeyStore extends js.Object {
     * - "x509" for a DER encoded PKIX X.509 certificate
     * - "pem" for a PEM encoded of PKCS8 / SPKI / PKIX
     */
-  def add(key: String | Buffer | Key | js.Object): js.Promise[Key] = js.native
   def add(
     key: String | Buffer | Key | js.Object,
-    form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem
-  ): js.Promise[Key] = js.native
-  def add(
-    key: String | Buffer | Key | js.Object,
-    form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
-    extras: Record[String, _]
+    form: js.UndefOr[json | `private` | pkcs8 | public | spki | pkix | x509 | pem],
+    extras: js.UndefOr[Record[String, _]]
   ): js.Promise[Key] = js.native
   def add(key: RawKey): js.Promise[Key] = js.native
   def all(): js.Array[RawKey] = js.native
@@ -63,6 +58,7 @@ trait KeyStore extends js.Object {
     * acceptable usage.
     */
   def generate(kty: String): js.Promise[Key] = js.native
+  def generate(kty: String, size: js.UndefOr[scala.Nothing], props: js.Any): js.Promise[Key] = js.native
   def generate(kty: String, size: String): js.Promise[Key] = js.native
   def generate(kty: String, size: String, props: js.Any): js.Promise[Key] = js.native
   def generate(kty: String, size: Double): js.Promise[Key] = js.native

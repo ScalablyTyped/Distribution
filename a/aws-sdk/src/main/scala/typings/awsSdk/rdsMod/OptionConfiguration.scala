@@ -34,21 +34,50 @@ trait OptionConfiguration extends js.Object {
 
 object OptionConfiguration {
   @scala.inline
-  def apply(
-    OptionName: String,
-    DBSecurityGroupMemberships: DBSecurityGroupNameList = null,
-    OptionSettings: OptionSettingsList = null,
-    OptionVersion: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
-    VpcSecurityGroupMemberships: VpcSecurityGroupIdList = null
-  ): OptionConfiguration = {
+  def apply(OptionName: String): OptionConfiguration = {
     val __obj = js.Dynamic.literal(OptionName = OptionName.asInstanceOf[js.Any])
-    if (DBSecurityGroupMemberships != null) __obj.updateDynamic("DBSecurityGroupMemberships")(DBSecurityGroupMemberships.asInstanceOf[js.Any])
-    if (OptionSettings != null) __obj.updateDynamic("OptionSettings")(OptionSettings.asInstanceOf[js.Any])
-    if (OptionVersion != null) __obj.updateDynamic("OptionVersion")(OptionVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (VpcSecurityGroupMemberships != null) __obj.updateDynamic("VpcSecurityGroupMemberships")(VpcSecurityGroupMemberships.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionConfiguration]
   }
+  @scala.inline
+  implicit class OptionConfigurationOps[Self <: OptionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOptionName(value: String): Self = this.set("OptionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDBSecurityGroupMembershipsVarargs(value: String*): Self = this.set("DBSecurityGroupMemberships", js.Array(value :_*))
+    @scala.inline
+    def setDBSecurityGroupMemberships(value: DBSecurityGroupNameList): Self = this.set("DBSecurityGroupMemberships", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBSecurityGroupMemberships: Self = this.set("DBSecurityGroupMemberships", js.undefined)
+    @scala.inline
+    def setOptionSettingsVarargs(value: OptionSetting*): Self = this.set("OptionSettings", js.Array(value :_*))
+    @scala.inline
+    def setOptionSettings(value: OptionSettingsList): Self = this.set("OptionSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionSettings: Self = this.set("OptionSettings", js.undefined)
+    @scala.inline
+    def setOptionVersion(value: String): Self = this.set("OptionVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionVersion: Self = this.set("OptionVersion", js.undefined)
+    @scala.inline
+    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupMembershipsVarargs(value: String*): Self = this.set("VpcSecurityGroupMemberships", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroupMemberships(value: VpcSecurityGroupIdList): Self = this.set("VpcSecurityGroupMemberships", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroupMemberships: Self = this.set("VpcSecurityGroupMemberships", js.undefined)
+  }
+  
 }
 

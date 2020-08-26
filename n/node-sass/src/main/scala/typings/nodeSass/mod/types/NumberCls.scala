@@ -12,13 +12,5 @@ class NumberCls protected () extends Number {
     */
   def this(value: Double) = this()
   def this(value: Double, unit: java.lang.String) = this()
-  /* CompleteClass */
-  override def getUnit(): java.lang.String = js.native
-  /* CompleteClass */
-  override def getValue(): Double = js.native
-  /* CompleteClass */
-  override def setUnit(u: java.lang.String): Unit = js.native
-  /* CompleteClass */
-  override def setValue(n: Double): Unit = js.native
 }
 

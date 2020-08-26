@@ -10,9 +10,9 @@ Typings are for version 2.6
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-visualizer |
 | Keywords           | - |
-| # releases         | 49 |
+| # releases         | 51 |
 | # dependents       | 20 |
-| # downloads        | 904237 |
+| # downloads        | 950927 |
 | # stars            | 1 |
 
 ## Links

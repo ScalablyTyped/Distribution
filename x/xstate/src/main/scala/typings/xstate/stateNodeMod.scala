@@ -56,6 +56,17 @@ object stateNodeMod extends js.Object {
       * The raw config used to create the machine.
       */
     config: StateNodeConfig[TContext, TStateSchema, TEvent],
+      options: js.UndefOr[scala.Nothing],
+      /**
+      * The initial extended state
+      */
+    context: TContext
+    ) = this()
+    def this(
+      /**
+      * The raw config used to create the machine.
+      */
+    config: StateNodeConfig[TContext, TStateSchema, TEvent],
       options: Partial[MachineOptions[TContext, TEvent]],
       /**
       * The initial extended state
@@ -85,13 +96,13 @@ object stateNodeMod extends js.Object {
       */
     var context: js.UndefOr[TContext] = js.native
     /**
-      * The data sent with the "done.state._id_" event if this is a final state node.
-      */
-    var data: js.UndefOr[(Mapper[TContext, TEvent]) | (PropertyMapper[TContext, TEvent])] = js.native
-    /**
       * The string delimiter for serializing the path to a string. The default is "."
       */
     var delimiter: String = js.native
+    /**
+      * The data sent with the "done.state._id_" event if this is a final state node.
+      */
+    var doneData: js.UndefOr[(Mapper[TContext, TEvent, _]) | (PropertyMapper[TContext, TEvent, _])] = js.native
     /**
       * Whether the given state node "escapes" this state node. If the `stateNode` is equal to or the parent of
       * this state node, it does not escape.
@@ -230,6 +241,11 @@ object stateNodeMod extends js.Object {
       * @param resolve Whether state nodes should resolve to initial child state nodes
       */
     def getRelativeStateNodes(relativeStateId: StateNode[TContext, _, TEvent, _]): js.Array[StateNode[TContext, _, TEvent, _]] = js.native
+    def getRelativeStateNodes(
+      relativeStateId: StateNode[TContext, _, TEvent, _],
+      historyValue: js.UndefOr[scala.Nothing],
+      resolve: Boolean
+    ): js.Array[StateNode[TContext, _, TEvent, _]] = js.native
     def getRelativeStateNodes(relativeStateId: StateNode[TContext, _, TEvent, _], historyValue: HistoryValue): js.Array[StateNode[TContext, _, TEvent, _]] = js.native
     def getRelativeStateNodes(relativeStateId: StateNode[TContext, _, TEvent, _], historyValue: HistoryValue, resolve: Boolean): js.Array[StateNode[TContext, _, TEvent, _]] = js.native
     /**
@@ -305,6 +321,14 @@ object stateNodeMod extends js.Object {
       */
     def target: js.UndefOr[StateValue] = js.native
     def toJSON(): StateNodeDefinition[TContext, TStateSchema, TEvent] = js.native
+    def transition(state: js.UndefOr[scala.Nothing], event: Event[TEvent]): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(state: js.UndefOr[scala.Nothing], event: Event[TEvent], context: TContext): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(state: js.UndefOr[scala.Nothing], event: typings.xstate.typesMod.SCXML.Event[TEvent]): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(
+      state: js.UndefOr[scala.Nothing],
+      event: typings.xstate.typesMod.SCXML.Event[TEvent],
+      context: TContext
+    ): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
     /**
       * Determines the next state given the current `state` and sent `event`.
       *
@@ -312,24 +336,25 @@ object stateNodeMod extends js.Object {
       * @param event The event that was sent at the current state
       * @param context The current context (extended state) of the current state
       */
+    def transition(state: String, event: Event[TEvent]): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(state: String, event: Event[TEvent], context: TContext): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(state: String, event: typings.xstate.typesMod.SCXML.Event[TEvent]): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(state: String, event: typings.xstate.typesMod.SCXML.Event[TEvent], context: TContext): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(state: State[TContext, TEvent, _, ContextValue[TContext]], event: Event[TEvent]): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(state: State[TContext, TEvent, _, ContextValue[TContext]], event: Event[TEvent], context: TContext): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
     def transition(
-      state: js.UndefOr[(State[TContext, TEvent, _, ContextValue[TContext]]) | StateValueMap | String],
-      event: Event[TEvent]
-    ): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
-    def transition(
-      state: js.UndefOr[(State[TContext, TEvent, _, ContextValue[TContext]]) | StateValueMap | String],
-      event: Event[TEvent],
-      context: TContext
-    ): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
-    def transition(
-      state: js.UndefOr[(State[TContext, TEvent, _, ContextValue[TContext]]) | StateValueMap | String],
+      state: State[TContext, TEvent, _, ContextValue[TContext]],
       event: typings.xstate.typesMod.SCXML.Event[TEvent]
     ): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
     def transition(
-      state: js.UndefOr[(State[TContext, TEvent, _, ContextValue[TContext]]) | StateValueMap | String],
+      state: State[TContext, TEvent, _, ContextValue[TContext]],
       event: typings.xstate.typesMod.SCXML.Event[TEvent],
       context: TContext
     ): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(state: StateValueMap, event: Event[TEvent]): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(state: StateValueMap, event: Event[TEvent], context: TContext): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(state: StateValueMap, event: typings.xstate.typesMod.SCXML.Event[TEvent]): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
+    def transition(state: StateValueMap, event: typings.xstate.typesMod.SCXML.Event[TEvent], context: TContext): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
     /**
       * All the transitions that can be taken from this state node.
       */

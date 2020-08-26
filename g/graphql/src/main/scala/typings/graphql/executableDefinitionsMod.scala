@@ -10,6 +10,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object executableDefinitionsMod extends js.Object {
   def ExecutableDefinitions(context: ASTValidationContext): ASTVisitor = js.native
-  def nonExecutableDefinitionMessage(defName: String): String = js.native
 }
 

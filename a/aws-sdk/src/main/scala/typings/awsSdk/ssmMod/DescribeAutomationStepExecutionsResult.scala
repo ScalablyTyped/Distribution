@@ -18,11 +18,32 @@ trait DescribeAutomationStepExecutionsResult extends js.Object {
 
 object DescribeAutomationStepExecutionsResult {
   @scala.inline
-  def apply(NextToken: NextToken = null, StepExecutions: StepExecutionList = null): DescribeAutomationStepExecutionsResult = {
+  def apply(): DescribeAutomationStepExecutionsResult = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StepExecutions != null) __obj.updateDynamic("StepExecutions")(StepExecutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAutomationStepExecutionsResult]
   }
+  @scala.inline
+  implicit class DescribeAutomationStepExecutionsResultOps[Self <: DescribeAutomationStepExecutionsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStepExecutionsVarargs(value: StepExecution*): Self = this.set("StepExecutions", js.Array(value :_*))
+    @scala.inline
+    def setStepExecutions(value: StepExecutionList): Self = this.set("StepExecutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepExecutions: Self = this.set("StepExecutions", js.undefined)
+  }
+  
 }
 

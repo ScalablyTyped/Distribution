@@ -22,16 +22,34 @@ trait NodegroupScalingConfig extends js.Object {
 
 object NodegroupScalingConfig {
   @scala.inline
-  def apply(
-    desiredSize: js.UndefOr[Capacity] = js.undefined,
-    maxSize: js.UndefOr[Capacity] = js.undefined,
-    minSize: js.UndefOr[Capacity] = js.undefined
-  ): NodegroupScalingConfig = {
+  def apply(): NodegroupScalingConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(desiredSize)) __obj.updateDynamic("desiredSize")(desiredSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodegroupScalingConfig]
   }
+  @scala.inline
+  implicit class NodegroupScalingConfigOps[Self <: NodegroupScalingConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesiredSize(value: Capacity): Self = this.set("desiredSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredSize: Self = this.set("desiredSize", js.undefined)
+    @scala.inline
+    def setMaxSize(value: Capacity): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    @scala.inline
+    def setMinSize(value: Capacity): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSize: Self = this.set("minSize", js.undefined)
+  }
+  
 }
 

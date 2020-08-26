@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-compose/lib/ObjectTypeComposer", "ObjectTypeComposer")
 @js.native
 class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputType[TSource, TContext] {
-  def this(gqType: GraphQLObjectType[_, _, StringDictionary[_]], schemaComposer: SchemaComposer[TContext]) = this()
+  def this(gqType: GraphQLObjectType[_, _], schemaComposer: SchemaComposer[TContext]) = this()
   var gqType: GraphQLObjectTypeExtended[TSource, TContext] = js.native
   var schemaComposer: SchemaComposer[TContext] = js.native
   def addFieldArgs(fieldName: String, newArgs: ComposeFieldConfigMap[TSource, TContext]): this.type = js.native
@@ -150,6 +150,7 @@ class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputT
     * Get function that returns record id, from provided object.
     */
   def getRecordId(source: TSource): String | Double = js.native
+  def getRecordId(source: TSource, args: js.UndefOr[scala.Nothing], context: TContext): String | Double = js.native
   def getRecordId(source: TSource, args: ArgsMap): String | Double = js.native
   def getRecordId(source: TSource, args: ArgsMap, context: TContext): String | Double = js.native
   def getRecordIdFn(): GetRecordIdFn[TSource, TContext] = js.native
@@ -188,10 +189,10 @@ class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputT
     * Type methods
     * -----------------------------------------------
     */
-  def getType(): GraphQLObjectType[_, _, StringDictionary[_]] = js.native
+  def getType(): GraphQLObjectType[_, _] = js.native
   def getTypeName(): String = js.native
-  def getTypeNonNull(): GraphQLNonNull[GraphQLObjectType[_, _, StringDictionary[_]]] = js.native
-  def getTypePlural(): GraphQLList[GraphQLObjectType[_, _, StringDictionary[_]]] = js.native
+  def getTypeNonNull(): GraphQLNonNull[GraphQLObjectType[_, _]] = js.native
+  def getTypePlural(): GraphQLList[GraphQLObjectType[_, _]] = js.native
   def hasExtension(extensionName: String): Boolean = js.native
   def hasField(fieldName: String): Boolean = js.native
   def hasFieldArg(fieldName: String, argName: String): Boolean = js.native
@@ -213,7 +214,7 @@ class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputT
     * Merge fields and interfaces from provided `GraphQLObjectType`, or `ObjectTypeComposer`.
     * Also you may provide `GraphQLInterfaceType` or `InterfaceTypeComposer` for adding fields.
     */
-  def merge(`type`: GraphQLObjectType[_, _, StringDictionary[_]]): this.type = js.native
+  def merge(`type`: GraphQLObjectType[_, _]): this.type = js.native
   def merge(`type`: InterfaceTypeComposer[_, _]): this.type = js.native
   def merge(`type`: ObjectTypeComposer[_, _]): this.type = js.native
   def removeExtension(extensionName: String): this.type = js.native

@@ -64,28 +64,62 @@ trait SchemaInstanceGroupConfig extends js.Object {
 
 object SchemaInstanceGroupConfig {
   @scala.inline
-  def apply(
-    accelerators: js.Array[SchemaAcceleratorConfig] = null,
-    diskConfig: SchemaDiskConfig = null,
-    imageUri: String = null,
-    instanceNames: js.Array[String] = null,
-    isPreemptible: js.UndefOr[Boolean] = js.undefined,
-    machineTypeUri: String = null,
-    managedGroupConfig: SchemaManagedGroupConfig = null,
-    minCpuPlatform: String = null,
-    numInstances: js.UndefOr[Double] = js.undefined
-  ): SchemaInstanceGroupConfig = {
+  def apply(): SchemaInstanceGroupConfig = {
     val __obj = js.Dynamic.literal()
-    if (accelerators != null) __obj.updateDynamic("accelerators")(accelerators.asInstanceOf[js.Any])
-    if (diskConfig != null) __obj.updateDynamic("diskConfig")(diskConfig.asInstanceOf[js.Any])
-    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
-    if (instanceNames != null) __obj.updateDynamic("instanceNames")(instanceNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPreemptible)) __obj.updateDynamic("isPreemptible")(isPreemptible.get.asInstanceOf[js.Any])
-    if (machineTypeUri != null) __obj.updateDynamic("machineTypeUri")(machineTypeUri.asInstanceOf[js.Any])
-    if (managedGroupConfig != null) __obj.updateDynamic("managedGroupConfig")(managedGroupConfig.asInstanceOf[js.Any])
-    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
-    if (!js.isUndefined(numInstances)) __obj.updateDynamic("numInstances")(numInstances.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupConfig]
   }
+  @scala.inline
+  implicit class SchemaInstanceGroupConfigOps[Self <: SchemaInstanceGroupConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = this.set("accelerators", js.Array(value :_*))
+    @scala.inline
+    def setAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = this.set("accelerators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerators: Self = this.set("accelerators", js.undefined)
+    @scala.inline
+    def setDiskConfig(value: SchemaDiskConfig): Self = this.set("diskConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskConfig: Self = this.set("diskConfig", js.undefined)
+    @scala.inline
+    def setImageUri(value: String): Self = this.set("imageUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUri: Self = this.set("imageUri", js.undefined)
+    @scala.inline
+    def setInstanceNamesVarargs(value: String*): Self = this.set("instanceNames", js.Array(value :_*))
+    @scala.inline
+    def setInstanceNames(value: js.Array[String]): Self = this.set("instanceNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceNames: Self = this.set("instanceNames", js.undefined)
+    @scala.inline
+    def setIsPreemptible(value: Boolean): Self = this.set("isPreemptible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPreemptible: Self = this.set("isPreemptible", js.undefined)
+    @scala.inline
+    def setMachineTypeUri(value: String): Self = this.set("machineTypeUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachineTypeUri: Self = this.set("machineTypeUri", js.undefined)
+    @scala.inline
+    def setManagedGroupConfig(value: SchemaManagedGroupConfig): Self = this.set("managedGroupConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedGroupConfig: Self = this.set("managedGroupConfig", js.undefined)
+    @scala.inline
+    def setMinCpuPlatform(value: String): Self = this.set("minCpuPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCpuPlatform: Self = this.set("minCpuPlatform", js.undefined)
+    @scala.inline
+    def setNumInstances(value: Double): Self = this.set("numInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumInstances: Self = this.set("numInstances", js.undefined)
+  }
+  
 }
 

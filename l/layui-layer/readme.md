@@ -12,7 +12,7 @@ npm version of layui-layer
 | Keywords           | layer, layui, dialog, prompt |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 5854 |
+| # downloads        | 6109 |
 | # stars            | 0 |
 
 ## Links

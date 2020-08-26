@@ -23,11 +23,30 @@ trait SchemaPhotoResponse extends js.Object {
 
 object SchemaPhotoResponse {
   @scala.inline
-  def apply(photo: SchemaPhoto = null, status: SchemaStatus = null): SchemaPhotoResponse = {
+  def apply(): SchemaPhotoResponse = {
     val __obj = js.Dynamic.literal()
-    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPhotoResponse]
   }
+  @scala.inline
+  implicit class SchemaPhotoResponseOps[Self <: SchemaPhotoResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPhoto(value: SchemaPhoto): Self = this.set("photo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoto: Self = this.set("photo", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

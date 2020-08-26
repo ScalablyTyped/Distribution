@@ -6,9 +6,12 @@ import typings.aceBuilds.aceBuildsStrings.ace
 import typings.aceBuilds.aceBuildsStrings.always
 import typings.aceBuilds.aceBuildsStrings.auto
 import typings.aceBuilds.aceBuildsStrings.code
+import typings.aceBuilds.aceBuildsStrings.free
 import typings.aceBuilds.aceBuildsStrings.manual
 import typings.aceBuilds.aceBuildsStrings.markbegin
 import typings.aceBuilds.aceBuildsStrings.markbeginend
+import typings.aceBuilds.aceBuildsStrings.off
+import typings.aceBuilds.aceBuildsStrings.printmargin_
 import typings.aceBuilds.aceBuildsStrings.slim
 import typings.aceBuilds.aceBuildsStrings.smooth
 import typings.aceBuilds.aceBuildsStrings.text
@@ -20,174 +23,298 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<ace-builds.ace-builds.Ace.EditorOptions> */
+@js.native
 trait PartialEditorOptions extends js.Object {
-  var animatedScroll: js.UndefOr[Boolean] = js.undefined
-  var autoScrollEditorIntoView: js.UndefOr[Boolean] = js.undefined
-  var behavioursEnabled: js.UndefOr[Boolean] = js.undefined
-  var copyWithEmptySelection: js.UndefOr[Boolean] = js.undefined
-  var cursorStyle: js.UndefOr[ace | slim | smooth | wide] = js.undefined
-  var displayIndentGuides: js.UndefOr[Boolean] = js.undefined
-  var dragDelay: js.UndefOr[Double] = js.undefined
-  var dragEnabled: js.UndefOr[Boolean] = js.undefined
-  var fadeFoldWidgets: js.UndefOr[Boolean] = js.undefined
-  var firstLineNumber: js.UndefOr[Double] = js.undefined
-  var fixedWidthGutter: js.UndefOr[Boolean] = js.undefined
-  var focusTimeout: js.UndefOr[Double] = js.undefined
-  var foldStyle: js.UndefOr[markbegin | markbeginend | manual] = js.undefined
-  var fontFamily: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[Double] = js.undefined
-  var hScrollBarAlwaysVisible: js.UndefOr[Boolean] = js.undefined
-  var hasCssTransforms: js.UndefOr[Boolean] = js.undefined
-  var highlightActiveLine: js.UndefOr[Boolean] = js.undefined
-  var highlightGutterLine: js.UndefOr[Boolean] = js.undefined
-  var highlightSelectedWord: js.UndefOr[Boolean] = js.undefined
-  var indentedSoftWrap: js.UndefOr[Boolean] = js.undefined
-  var keyboardHandler: js.UndefOr[String] = js.undefined
-  var maxLines: js.UndefOr[Double] = js.undefined
-  var maxPixelHeight: js.UndefOr[Double] = js.undefined
-  var mergeUndoDeltas: js.UndefOr[`true` | `false` | always] = js.undefined
-  var minLines: js.UndefOr[Double] = js.undefined
-  var mode: js.UndefOr[String] = js.undefined
-  var navigateWithinSoftTabs: js.UndefOr[Boolean] = js.undefined
-  var newLineMode: js.UndefOr[NewLineMode] = js.undefined
-  var overwrite: js.UndefOr[Boolean] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var printMargin: js.UndefOr[Boolean | Double] = js.undefined
-  var printMarginColumn: js.UndefOr[Double] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var scrollPastEnd: js.UndefOr[Boolean] = js.undefined
-  var scrollSpeed: js.UndefOr[Double] = js.undefined
-  var selectionStyle: js.UndefOr[String] = js.undefined
-  var session: js.UndefOr[EditSession] = js.undefined
-  var showFoldWidgets: js.UndefOr[Boolean] = js.undefined
-  var showGutter: js.UndefOr[Boolean] = js.undefined
-  var showInvisibles: js.UndefOr[Boolean] = js.undefined
-  var showLineNumbers: js.UndefOr[Boolean] = js.undefined
-  var showPrintMargin: js.UndefOr[Boolean] = js.undefined
-  var tabSize: js.UndefOr[Double] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
-  var tooltipFollowsMouse: js.UndefOr[Boolean] = js.undefined
-  var useSoftTabs: js.UndefOr[Boolean] = js.undefined
-  var useWorker: js.UndefOr[Boolean] = js.undefined
-  var vScrollBarAlwaysVisible: js.UndefOr[Boolean] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
-  var wrap: js.UndefOr[String | Double] = js.undefined
-  var wrapBehavioursEnabled: js.UndefOr[Boolean] = js.undefined
-  var wrapMethod: js.UndefOr[code | text | auto] = js.undefined
+  var animatedScroll: js.UndefOr[Boolean] = js.native
+  var autoScrollEditorIntoView: js.UndefOr[Boolean] = js.native
+  var behavioursEnabled: js.UndefOr[Boolean] = js.native
+  var copyWithEmptySelection: js.UndefOr[Boolean] = js.native
+  var cursorStyle: js.UndefOr[ace | slim | smooth | wide] = js.native
+  var displayIndentGuides: js.UndefOr[Boolean] = js.native
+  var dragDelay: js.UndefOr[Double] = js.native
+  var dragEnabled: js.UndefOr[Boolean] = js.native
+  var enableAutoIndent: js.UndefOr[Boolean] = js.native
+  var fadeFoldWidgets: js.UndefOr[Boolean] = js.native
+  var firstLineNumber: js.UndefOr[Double] = js.native
+  var fixedWidthGutter: js.UndefOr[Boolean] = js.native
+  var focusTimeout: js.UndefOr[Double] = js.native
+  var foldStyle: js.UndefOr[markbegin | markbeginend | manual] = js.native
+  var fontFamily: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[Double] = js.native
+  var hScrollBarAlwaysVisible: js.UndefOr[Boolean] = js.native
+  var hasCssTransforms: js.UndefOr[Boolean] = js.native
+  var highlightActiveLine: js.UndefOr[Boolean] = js.native
+  var highlightGutterLine: js.UndefOr[Boolean] = js.native
+  var highlightSelectedWord: js.UndefOr[Boolean] = js.native
+  var indentedSoftWrap: js.UndefOr[Boolean] = js.native
+  var keyboardHandler: js.UndefOr[String] = js.native
+  var maxLines: js.UndefOr[Double] = js.native
+  var maxPixelHeight: js.UndefOr[Double] = js.native
+  var mergeUndoDeltas: js.UndefOr[`true` | `false` | always] = js.native
+  var minLines: js.UndefOr[Double] = js.native
+  var mode: js.UndefOr[String] = js.native
+  var navigateWithinSoftTabs: js.UndefOr[Boolean] = js.native
+  var newLineMode: js.UndefOr[NewLineMode] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var printMargin: js.UndefOr[Boolean | Double] = js.native
+  var printMarginColumn: js.UndefOr[Double] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var scrollPastEnd: js.UndefOr[Boolean] = js.native
+  var scrollSpeed: js.UndefOr[Double] = js.native
+  var selectionStyle: js.UndefOr[String] = js.native
+  var session: js.UndefOr[EditSession] = js.native
+  var showFoldWidgets: js.UndefOr[Boolean] = js.native
+  var showGutter: js.UndefOr[Boolean] = js.native
+  var showInvisibles: js.UndefOr[Boolean] = js.native
+  var showLineNumbers: js.UndefOr[Boolean] = js.native
+  var showPrintMargin: js.UndefOr[Boolean] = js.native
+  var tabSize: js.UndefOr[Double] = js.native
+  var theme: js.UndefOr[String] = js.native
+  var tooltipFollowsMouse: js.UndefOr[Boolean] = js.native
+  var useSoftTabs: js.UndefOr[Boolean] = js.native
+  var useWorker: js.UndefOr[Boolean] = js.native
+  var vScrollBarAlwaysVisible: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[String] = js.native
+  var wrap: js.UndefOr[off | free | printmargin_ | Boolean | Double] = js.native
+  var wrapBehavioursEnabled: js.UndefOr[Boolean] = js.native
+  var wrapMethod: js.UndefOr[code | text | auto] = js.native
 }
 
 object PartialEditorOptions {
   @scala.inline
-  def apply(
-    animatedScroll: js.UndefOr[Boolean] = js.undefined,
-    autoScrollEditorIntoView: js.UndefOr[Boolean] = js.undefined,
-    behavioursEnabled: js.UndefOr[Boolean] = js.undefined,
-    copyWithEmptySelection: js.UndefOr[Boolean] = js.undefined,
-    cursorStyle: ace | slim | smooth | wide = null,
-    displayIndentGuides: js.UndefOr[Boolean] = js.undefined,
-    dragDelay: js.UndefOr[Double] = js.undefined,
-    dragEnabled: js.UndefOr[Boolean] = js.undefined,
-    fadeFoldWidgets: js.UndefOr[Boolean] = js.undefined,
-    firstLineNumber: js.UndefOr[Double] = js.undefined,
-    fixedWidthGutter: js.UndefOr[Boolean] = js.undefined,
-    focusTimeout: js.UndefOr[Double] = js.undefined,
-    foldStyle: markbegin | markbeginend | manual = null,
-    fontFamily: String = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    hScrollBarAlwaysVisible: js.UndefOr[Boolean] = js.undefined,
-    hasCssTransforms: js.UndefOr[Boolean] = js.undefined,
-    highlightActiveLine: js.UndefOr[Boolean] = js.undefined,
-    highlightGutterLine: js.UndefOr[Boolean] = js.undefined,
-    highlightSelectedWord: js.UndefOr[Boolean] = js.undefined,
-    indentedSoftWrap: js.UndefOr[Boolean] = js.undefined,
-    keyboardHandler: String = null,
-    maxLines: js.UndefOr[Double] = js.undefined,
-    maxPixelHeight: js.UndefOr[Double] = js.undefined,
-    mergeUndoDeltas: `true` | `false` | always = null,
-    minLines: js.UndefOr[Double] = js.undefined,
-    mode: String = null,
-    navigateWithinSoftTabs: js.UndefOr[Boolean] = js.undefined,
-    newLineMode: NewLineMode = null,
-    overwrite: js.UndefOr[Boolean] = js.undefined,
-    placeholder: String = null,
-    printMargin: Boolean | Double = null,
-    printMarginColumn: js.UndefOr[Double] = js.undefined,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    scrollPastEnd: js.UndefOr[Boolean] = js.undefined,
-    scrollSpeed: js.UndefOr[Double] = js.undefined,
-    selectionStyle: String = null,
-    session: EditSession = null,
-    showFoldWidgets: js.UndefOr[Boolean] = js.undefined,
-    showGutter: js.UndefOr[Boolean] = js.undefined,
-    showInvisibles: js.UndefOr[Boolean] = js.undefined,
-    showLineNumbers: js.UndefOr[Boolean] = js.undefined,
-    showPrintMargin: js.UndefOr[Boolean] = js.undefined,
-    tabSize: js.UndefOr[Double] = js.undefined,
-    theme: String = null,
-    tooltipFollowsMouse: js.UndefOr[Boolean] = js.undefined,
-    useSoftTabs: js.UndefOr[Boolean] = js.undefined,
-    useWorker: js.UndefOr[Boolean] = js.undefined,
-    vScrollBarAlwaysVisible: js.UndefOr[Boolean] = js.undefined,
-    value: String = null,
-    wrap: String | Double = null,
-    wrapBehavioursEnabled: js.UndefOr[Boolean] = js.undefined,
-    wrapMethod: code | text | auto = null
-  ): PartialEditorOptions = {
+  def apply(): PartialEditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animatedScroll)) __obj.updateDynamic("animatedScroll")(animatedScroll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoScrollEditorIntoView)) __obj.updateDynamic("autoScrollEditorIntoView")(autoScrollEditorIntoView.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(behavioursEnabled)) __obj.updateDynamic("behavioursEnabled")(behavioursEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyWithEmptySelection)) __obj.updateDynamic("copyWithEmptySelection")(copyWithEmptySelection.get.asInstanceOf[js.Any])
-    if (cursorStyle != null) __obj.updateDynamic("cursorStyle")(cursorStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayIndentGuides)) __obj.updateDynamic("displayIndentGuides")(displayIndentGuides.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragDelay)) __obj.updateDynamic("dragDelay")(dragDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragEnabled)) __obj.updateDynamic("dragEnabled")(dragEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeFoldWidgets)) __obj.updateDynamic("fadeFoldWidgets")(fadeFoldWidgets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstLineNumber)) __obj.updateDynamic("firstLineNumber")(firstLineNumber.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedWidthGutter)) __obj.updateDynamic("fixedWidthGutter")(fixedWidthGutter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusTimeout)) __obj.updateDynamic("focusTimeout")(focusTimeout.get.asInstanceOf[js.Any])
-    if (foldStyle != null) __obj.updateDynamic("foldStyle")(foldStyle.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hScrollBarAlwaysVisible)) __obj.updateDynamic("hScrollBarAlwaysVisible")(hScrollBarAlwaysVisible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCssTransforms)) __obj.updateDynamic("hasCssTransforms")(hasCssTransforms.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightActiveLine)) __obj.updateDynamic("highlightActiveLine")(highlightActiveLine.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightGutterLine)) __obj.updateDynamic("highlightGutterLine")(highlightGutterLine.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightSelectedWord)) __obj.updateDynamic("highlightSelectedWord")(highlightSelectedWord.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentedSoftWrap)) __obj.updateDynamic("indentedSoftWrap")(indentedSoftWrap.get.asInstanceOf[js.Any])
-    if (keyboardHandler != null) __obj.updateDynamic("keyboardHandler")(keyboardHandler.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLines)) __obj.updateDynamic("maxLines")(maxLines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxPixelHeight)) __obj.updateDynamic("maxPixelHeight")(maxPixelHeight.get.asInstanceOf[js.Any])
-    if (mergeUndoDeltas != null) __obj.updateDynamic("mergeUndoDeltas")(mergeUndoDeltas.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLines)) __obj.updateDynamic("minLines")(minLines.get.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigateWithinSoftTabs)) __obj.updateDynamic("navigateWithinSoftTabs")(navigateWithinSoftTabs.get.asInstanceOf[js.Any])
-    if (newLineMode != null) __obj.updateDynamic("newLineMode")(newLineMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (printMargin != null) __obj.updateDynamic("printMargin")(printMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(printMarginColumn)) __obj.updateDynamic("printMarginColumn")(printMarginColumn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollPastEnd)) __obj.updateDynamic("scrollPastEnd")(scrollPastEnd.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollSpeed)) __obj.updateDynamic("scrollSpeed")(scrollSpeed.get.asInstanceOf[js.Any])
-    if (selectionStyle != null) __obj.updateDynamic("selectionStyle")(selectionStyle.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFoldWidgets)) __obj.updateDynamic("showFoldWidgets")(showFoldWidgets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGutter)) __obj.updateDynamic("showGutter")(showGutter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInvisibles)) __obj.updateDynamic("showInvisibles")(showInvisibles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLineNumbers)) __obj.updateDynamic("showLineNumbers")(showLineNumbers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPrintMargin)) __obj.updateDynamic("showPrintMargin")(showPrintMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipFollowsMouse)) __obj.updateDynamic("tooltipFollowsMouse")(tooltipFollowsMouse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSoftTabs)) __obj.updateDynamic("useSoftTabs")(useSoftTabs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(vScrollBarAlwaysVisible)) __obj.updateDynamic("vScrollBarAlwaysVisible")(vScrollBarAlwaysVisible.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapBehavioursEnabled)) __obj.updateDynamic("wrapBehavioursEnabled")(wrapBehavioursEnabled.get.asInstanceOf[js.Any])
-    if (wrapMethod != null) __obj.updateDynamic("wrapMethod")(wrapMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialEditorOptions]
   }
+  @scala.inline
+  implicit class PartialEditorOptionsOps[Self <: PartialEditorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimatedScroll(value: Boolean): Self = this.set("animatedScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimatedScroll: Self = this.set("animatedScroll", js.undefined)
+    @scala.inline
+    def setAutoScrollEditorIntoView(value: Boolean): Self = this.set("autoScrollEditorIntoView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScrollEditorIntoView: Self = this.set("autoScrollEditorIntoView", js.undefined)
+    @scala.inline
+    def setBehavioursEnabled(value: Boolean): Self = this.set("behavioursEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBehavioursEnabled: Self = this.set("behavioursEnabled", js.undefined)
+    @scala.inline
+    def setCopyWithEmptySelection(value: Boolean): Self = this.set("copyWithEmptySelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyWithEmptySelection: Self = this.set("copyWithEmptySelection", js.undefined)
+    @scala.inline
+    def setCursorStyle(value: ace | slim | smooth | wide): Self = this.set("cursorStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursorStyle: Self = this.set("cursorStyle", js.undefined)
+    @scala.inline
+    def setDisplayIndentGuides(value: Boolean): Self = this.set("displayIndentGuides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayIndentGuides: Self = this.set("displayIndentGuides", js.undefined)
+    @scala.inline
+    def setDragDelay(value: Double): Self = this.set("dragDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragDelay: Self = this.set("dragDelay", js.undefined)
+    @scala.inline
+    def setDragEnabled(value: Boolean): Self = this.set("dragEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragEnabled: Self = this.set("dragEnabled", js.undefined)
+    @scala.inline
+    def setEnableAutoIndent(value: Boolean): Self = this.set("enableAutoIndent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAutoIndent: Self = this.set("enableAutoIndent", js.undefined)
+    @scala.inline
+    def setFadeFoldWidgets(value: Boolean): Self = this.set("fadeFoldWidgets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFadeFoldWidgets: Self = this.set("fadeFoldWidgets", js.undefined)
+    @scala.inline
+    def setFirstLineNumber(value: Double): Self = this.set("firstLineNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstLineNumber: Self = this.set("firstLineNumber", js.undefined)
+    @scala.inline
+    def setFixedWidthGutter(value: Boolean): Self = this.set("fixedWidthGutter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedWidthGutter: Self = this.set("fixedWidthGutter", js.undefined)
+    @scala.inline
+    def setFocusTimeout(value: Double): Self = this.set("focusTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusTimeout: Self = this.set("focusTimeout", js.undefined)
+    @scala.inline
+    def setFoldStyle(value: markbegin | markbeginend | manual): Self = this.set("foldStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFoldStyle: Self = this.set("foldStyle", js.undefined)
+    @scala.inline
+    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setHScrollBarAlwaysVisible(value: Boolean): Self = this.set("hScrollBarAlwaysVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHScrollBarAlwaysVisible: Self = this.set("hScrollBarAlwaysVisible", js.undefined)
+    @scala.inline
+    def setHasCssTransforms(value: Boolean): Self = this.set("hasCssTransforms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasCssTransforms: Self = this.set("hasCssTransforms", js.undefined)
+    @scala.inline
+    def setHighlightActiveLine(value: Boolean): Self = this.set("highlightActiveLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightActiveLine: Self = this.set("highlightActiveLine", js.undefined)
+    @scala.inline
+    def setHighlightGutterLine(value: Boolean): Self = this.set("highlightGutterLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightGutterLine: Self = this.set("highlightGutterLine", js.undefined)
+    @scala.inline
+    def setHighlightSelectedWord(value: Boolean): Self = this.set("highlightSelectedWord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightSelectedWord: Self = this.set("highlightSelectedWord", js.undefined)
+    @scala.inline
+    def setIndentedSoftWrap(value: Boolean): Self = this.set("indentedSoftWrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentedSoftWrap: Self = this.set("indentedSoftWrap", js.undefined)
+    @scala.inline
+    def setKeyboardHandler(value: String): Self = this.set("keyboardHandler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardHandler: Self = this.set("keyboardHandler", js.undefined)
+    @scala.inline
+    def setMaxLines(value: Double): Self = this.set("maxLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLines: Self = this.set("maxLines", js.undefined)
+    @scala.inline
+    def setMaxPixelHeight(value: Double): Self = this.set("maxPixelHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPixelHeight: Self = this.set("maxPixelHeight", js.undefined)
+    @scala.inline
+    def setMergeUndoDeltas(value: `true` | `false` | always): Self = this.set("mergeUndoDeltas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeUndoDeltas: Self = this.set("mergeUndoDeltas", js.undefined)
+    @scala.inline
+    def setMinLines(value: Double): Self = this.set("minLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLines: Self = this.set("minLines", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setNavigateWithinSoftTabs(value: Boolean): Self = this.set("navigateWithinSoftTabs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigateWithinSoftTabs: Self = this.set("navigateWithinSoftTabs", js.undefined)
+    @scala.inline
+    def setNewLineMode(value: NewLineMode): Self = this.set("newLineMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewLineMode: Self = this.set("newLineMode", js.undefined)
+    @scala.inline
+    def setOverwrite(value: Boolean): Self = this.set("overwrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPrintMargin(value: Boolean | Double): Self = this.set("printMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrintMargin: Self = this.set("printMargin", js.undefined)
+    @scala.inline
+    def setPrintMarginColumn(value: Double): Self = this.set("printMarginColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrintMarginColumn: Self = this.set("printMarginColumn", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setScrollPastEnd(value: Boolean): Self = this.set("scrollPastEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollPastEnd: Self = this.set("scrollPastEnd", js.undefined)
+    @scala.inline
+    def setScrollSpeed(value: Double): Self = this.set("scrollSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollSpeed: Self = this.set("scrollSpeed", js.undefined)
+    @scala.inline
+    def setSelectionStyle(value: String): Self = this.set("selectionStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionStyle: Self = this.set("selectionStyle", js.undefined)
+    @scala.inline
+    def setSession(value: EditSession): Self = this.set("session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession: Self = this.set("session", js.undefined)
+    @scala.inline
+    def setShowFoldWidgets(value: Boolean): Self = this.set("showFoldWidgets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFoldWidgets: Self = this.set("showFoldWidgets", js.undefined)
+    @scala.inline
+    def setShowGutter(value: Boolean): Self = this.set("showGutter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowGutter: Self = this.set("showGutter", js.undefined)
+    @scala.inline
+    def setShowInvisibles(value: Boolean): Self = this.set("showInvisibles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowInvisibles: Self = this.set("showInvisibles", js.undefined)
+    @scala.inline
+    def setShowLineNumbers(value: Boolean): Self = this.set("showLineNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowLineNumbers: Self = this.set("showLineNumbers", js.undefined)
+    @scala.inline
+    def setShowPrintMargin(value: Boolean): Self = this.set("showPrintMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPrintMargin: Self = this.set("showPrintMargin", js.undefined)
+    @scala.inline
+    def setTabSize(value: Double): Self = this.set("tabSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabSize: Self = this.set("tabSize", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTooltipFollowsMouse(value: Boolean): Self = this.set("tooltipFollowsMouse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipFollowsMouse: Self = this.set("tooltipFollowsMouse", js.undefined)
+    @scala.inline
+    def setUseSoftTabs(value: Boolean): Self = this.set("useSoftTabs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseSoftTabs: Self = this.set("useSoftTabs", js.undefined)
+    @scala.inline
+    def setUseWorker(value: Boolean): Self = this.set("useWorker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseWorker: Self = this.set("useWorker", js.undefined)
+    @scala.inline
+    def setVScrollBarAlwaysVisible(value: Boolean): Self = this.set("vScrollBarAlwaysVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVScrollBarAlwaysVisible: Self = this.set("vScrollBarAlwaysVisible", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setWrap(value: off | free | printmargin_ | Boolean | Double): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap: Self = this.set("wrap", js.undefined)
+    @scala.inline
+    def setWrapBehavioursEnabled(value: Boolean): Self = this.set("wrapBehavioursEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapBehavioursEnabled: Self = this.set("wrapBehavioursEnabled", js.undefined)
+    @scala.inline
+    def setWrapMethod(value: code | text | auto): Self = this.set("wrapMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapMethod: Self = this.set("wrapMethod", js.undefined)
+  }
+  
 }
 

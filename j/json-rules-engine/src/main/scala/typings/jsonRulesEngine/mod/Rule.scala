@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 class Rule protected () extends RuleProperties {
   def this(ruleProps: String) = this()
   def this(ruleProps: RuleProperties) = this()
-  /* CompleteClass */
-  override var conditions: TopLevelCondition = js.native
-  /* CompleteClass */
-  override var event: Event = js.native
   @JSName("name")
   var name_Rule: String = js.native
   @JSName("priority")

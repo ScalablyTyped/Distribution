@@ -18,10 +18,28 @@ trait Locale extends js.Object {
 
 object Locale {
   @scala.inline
-  def apply(Country: CountryParameters, Subdivision: CountryParameters = null): Locale = {
+  def apply(Country: CountryParameters): Locale = {
     val __obj = js.Dynamic.literal(Country = Country.asInstanceOf[js.Any])
-    if (Subdivision != null) __obj.updateDynamic("Subdivision")(Subdivision.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locale]
   }
+  @scala.inline
+  implicit class LocaleOps[Self <: Locale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountry(value: CountryParameters): Self = this.set("Country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubdivision(value: CountryParameters): Self = this.set("Subdivision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubdivision: Self = this.set("Subdivision", js.undefined)
+  }
+  
 }
 

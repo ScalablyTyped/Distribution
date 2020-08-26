@@ -55,6 +55,7 @@ object cursor extends js.Object {
     * @param m column number, default=1
     */
   def position(): String = js.native
+  def position(n: js.UndefOr[scala.Nothing], m: Double): String = js.native
   def position(n: Double): String = js.native
   def position(n: Double, m: Double): String = js.native
   /**

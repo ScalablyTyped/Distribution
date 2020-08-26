@@ -22,16 +22,34 @@ trait Coverage extends js.Object {
 
 object Coverage {
   @scala.inline
-  def apply(
-    CoverageCost: CoverageCost = null,
-    CoverageHours: CoverageHours = null,
-    CoverageNormalizedUnits: CoverageNormalizedUnits = null
-  ): Coverage = {
+  def apply(): Coverage = {
     val __obj = js.Dynamic.literal()
-    if (CoverageCost != null) __obj.updateDynamic("CoverageCost")(CoverageCost.asInstanceOf[js.Any])
-    if (CoverageHours != null) __obj.updateDynamic("CoverageHours")(CoverageHours.asInstanceOf[js.Any])
-    if (CoverageNormalizedUnits != null) __obj.updateDynamic("CoverageNormalizedUnits")(CoverageNormalizedUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coverage]
   }
+  @scala.inline
+  implicit class CoverageOps[Self <: Coverage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoverageCost(value: CoverageCost): Self = this.set("CoverageCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverageCost: Self = this.set("CoverageCost", js.undefined)
+    @scala.inline
+    def setCoverageHours(value: CoverageHours): Self = this.set("CoverageHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverageHours: Self = this.set("CoverageHours", js.undefined)
+    @scala.inline
+    def setCoverageNormalizedUnits(value: CoverageNormalizedUnits): Self = this.set("CoverageNormalizedUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverageNormalizedUnits: Self = this.set("CoverageNormalizedUnits", js.undefined)
+  }
+  
 }
 

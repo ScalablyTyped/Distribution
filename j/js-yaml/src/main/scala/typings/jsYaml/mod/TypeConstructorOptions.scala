@@ -8,41 +8,74 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeConstructorOptions extends js.Object {
-  var construct: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.undefined
-  var defaultStyle: js.UndefOr[String] = js.undefined
-  var instanceOf: js.UndefOr[js.Object] = js.undefined
-  var kind: js.UndefOr[sequence | scalar | mapping] = js.undefined
-  var predicate: js.UndefOr[js.Function1[/* data */ js.Object, Boolean]] = js.undefined
+  var construct: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+  var defaultStyle: js.UndefOr[String] = js.native
+  var instanceOf: js.UndefOr[js.Object] = js.native
+  var kind: js.UndefOr[sequence | scalar | mapping] = js.native
+  var predicate: js.UndefOr[js.Function1[/* data */ js.Object, Boolean]] = js.native
   var represent: js.UndefOr[
     (js.Function1[/* data */ js.Object, _]) | (StringDictionary[js.Function1[/* data */ js.Object, _]])
-  ] = js.undefined
-  var resolve: js.UndefOr[js.Function1[/* data */ js.Any, Boolean]] = js.undefined
-  var styleAliases: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  ] = js.native
+  var resolve: js.UndefOr[js.Function1[/* data */ js.Any, Boolean]] = js.native
+  var styleAliases: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 
 object TypeConstructorOptions {
   @scala.inline
-  def apply(
-    construct: /* data */ js.Any => _ = null,
-    defaultStyle: String = null,
-    instanceOf: js.Object = null,
-    kind: sequence | scalar | mapping = null,
-    predicate: /* data */ js.Object => Boolean = null,
-    represent: (js.Function1[/* data */ js.Object, _]) | (StringDictionary[js.Function1[/* data */ js.Object, _]]) = null,
-    resolve: /* data */ js.Any => Boolean = null,
-    styleAliases: StringDictionary[js.Any] = null
-  ): TypeConstructorOptions = {
+  def apply(): TypeConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (construct != null) __obj.updateDynamic("construct")(js.Any.fromFunction1(construct))
-    if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle.asInstanceOf[js.Any])
-    if (instanceOf != null) __obj.updateDynamic("instanceOf")(instanceOf.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction1(predicate))
-    if (represent != null) __obj.updateDynamic("represent")(represent.asInstanceOf[js.Any])
-    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction1(resolve))
-    if (styleAliases != null) __obj.updateDynamic("styleAliases")(styleAliases.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeConstructorOptions]
   }
+  @scala.inline
+  implicit class TypeConstructorOptionsOps[Self <: TypeConstructorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConstruct(value: /* data */ js.Any => _): Self = this.set("construct", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteConstruct: Self = this.set("construct", js.undefined)
+    @scala.inline
+    def setDefaultStyle(value: String): Self = this.set("defaultStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultStyle: Self = this.set("defaultStyle", js.undefined)
+    @scala.inline
+    def setInstanceOf(value: js.Object): Self = this.set("instanceOf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceOf: Self = this.set("instanceOf", js.undefined)
+    @scala.inline
+    def setKind(value: sequence | scalar | mapping): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPredicate(value: /* data */ js.Object => Boolean): Self = this.set("predicate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePredicate: Self = this.set("predicate", js.undefined)
+    @scala.inline
+    def setRepresentFunction1(value: /* data */ js.Object => _): Self = this.set("represent", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRepresent(
+      value: (js.Function1[/* data */ js.Object, _]) | (StringDictionary[js.Function1[/* data */ js.Object, _]])
+    ): Self = this.set("represent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepresent: Self = this.set("represent", js.undefined)
+    @scala.inline
+    def setResolve(value: /* data */ js.Any => Boolean): Self = this.set("resolve", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteResolve: Self = this.set("resolve", js.undefined)
+    @scala.inline
+    def setStyleAliases(value: StringDictionary[js.Any]): Self = this.set("styleAliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleAliases: Self = this.set("styleAliases", js.undefined)
+  }
+  
 }
 

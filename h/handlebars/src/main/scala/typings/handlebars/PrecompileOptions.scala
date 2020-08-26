@@ -4,41 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PrecompileOptions extends CompileOptions {
-  var destName: js.UndefOr[String] = js.undefined
-  var srcName: js.UndefOr[String] = js.undefined
+  var destName: js.UndefOr[String] = js.native
+  var srcName: js.UndefOr[String] = js.native
 }
 
 object PrecompileOptions {
   @scala.inline
-  def apply(
-    assumeObjects: js.UndefOr[Boolean] = js.undefined,
-    compat: js.UndefOr[Boolean] = js.undefined,
-    data: js.UndefOr[Boolean] = js.undefined,
-    destName: String = null,
-    explicitPartialContext: js.UndefOr[Boolean] = js.undefined,
-    ignoreStandalone: js.UndefOr[Boolean] = js.undefined,
-    knownHelpers: KnownHelpers = null,
-    knownHelpersOnly: js.UndefOr[Boolean] = js.undefined,
-    noEscape: js.UndefOr[Boolean] = js.undefined,
-    preventIndent: js.UndefOr[Boolean] = js.undefined,
-    srcName: String = null,
-    strict: js.UndefOr[Boolean] = js.undefined
-  ): PrecompileOptions = {
+  def apply(): PrecompileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assumeObjects)) __obj.updateDynamic("assumeObjects")(assumeObjects.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(compat)) __obj.updateDynamic("compat")(compat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.get.asInstanceOf[js.Any])
-    if (destName != null) __obj.updateDynamic("destName")(destName.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicitPartialContext)) __obj.updateDynamic("explicitPartialContext")(explicitPartialContext.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreStandalone)) __obj.updateDynamic("ignoreStandalone")(ignoreStandalone.get.asInstanceOf[js.Any])
-    if (knownHelpers != null) __obj.updateDynamic("knownHelpers")(knownHelpers.asInstanceOf[js.Any])
-    if (!js.isUndefined(knownHelpersOnly)) __obj.updateDynamic("knownHelpersOnly")(knownHelpersOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noEscape)) __obj.updateDynamic("noEscape")(noEscape.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventIndent)) __obj.updateDynamic("preventIndent")(preventIndent.get.asInstanceOf[js.Any])
-    if (srcName != null) __obj.updateDynamic("srcName")(srcName.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrecompileOptions]
   }
+  @scala.inline
+  implicit class PrecompileOptionsOps[Self <: PrecompileOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestName(value: String): Self = this.set("destName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestName: Self = this.set("destName", js.undefined)
+    @scala.inline
+    def setSrcName(value: String): Self = this.set("srcName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrcName: Self = this.set("srcName", js.undefined)
+  }
+  
 }
 

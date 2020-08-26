@@ -9,14 +9,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined screeps.FindPathOpts & screeps.FilterOptions<screeps.FIND_STRUCTURES> & {  algorithm ? :string} */
+/* Inlined screeps.FindPathOpts & screeps.FilterOptions<screeps.FIND_STRUCTURES> & {  algorithm :string | undefined} */
+@js.native
 trait FindPathOptsFilterOptions extends js.Object {
-  var algorithm: js.UndefOr[String] = js.undefined
+  var algorithm: js.UndefOr[String] = js.native
   /**
     * An array of the room's objects or RoomPosition objects which should be treated as obstacles during the search. This option cannot
     * be used when the new PathFinder is enabled (use costCallback option instead).
     */
-  var avoid: js.UndefOr[js.Array[_ | RoomPosition]] = js.undefined
+  var avoid: js.UndefOr[js.Array[_ | RoomPosition]] = js.native
   /**
     * You can use this callback to modify a CostMatrix for any room during the search. The callback accepts two arguments, roomName
     * and costMatrix. Use the costMatrix instance to make changes to the positions costs. If you return a new matrix from this callback,
@@ -28,96 +29,145 @@ trait FindPathOptsFilterOptions extends js.Object {
     */
   var costCallback: js.UndefOr[
     js.Function2[/* roomName */ String, /* costMatrix */ CostMatrix, Unit | CostMatrix]
-  ] = js.undefined
-  var filter: FilterFunction[FIND_STRUCTURES] | FilterObject | String
+  ] = js.native
+  var filter: FilterFunction[FIND_STRUCTURES] | FilterObject | String = js.native
   /**
     * Weight to apply to the heuristic in the A* formula F = G + weight * H. Use this option only if you understand the underlying
     * A* algorithm mechanics! The default value is 1.2.
     */
-  var heuristicWeight: js.UndefOr[Double] = js.undefined
+  var heuristicWeight: js.UndefOr[Double] = js.native
   /**
     * An array of the room's objects or RoomPosition objects which should be treated as walkable tiles during the search. This option
     * cannot be used when the new PathFinder is enabled (use costCallback option instead).
     */
-  var ignore: js.UndefOr[js.Array[_ | RoomPosition]] = js.undefined
+  var ignore: js.UndefOr[js.Array[_ | RoomPosition]] = js.native
   /**
     * Treat squares with creeps as walkable. Can be useful with too many moving creeps around or in some other cases. The default
     * value is false.
     */
-  var ignoreCreeps: js.UndefOr[Boolean] = js.undefined
+  var ignoreCreeps: js.UndefOr[Boolean] = js.native
   /**
     * Treat squares with destructible structures (constructed walls, ramparts, spawns, extensions) as walkable. Use this flag when
     * you need to move through a territory blocked by hostile structures. If a creep with an ATTACK body part steps on such a square,
     * it automatically attacks the structure. The default value is false.
     */
-  var ignoreDestructibleStructures: js.UndefOr[Boolean] = js.undefined
+  var ignoreDestructibleStructures: js.UndefOr[Boolean] = js.native
   /**
     * Ignore road structures. Enabling this option can speed up the search. The default value is false. This is only used when the
     * new PathFinder is enabled.
     */
-  var ignoreRoads: js.UndefOr[Boolean] = js.undefined
+  var ignoreRoads: js.UndefOr[Boolean] = js.native
   /**
     * The maximum limit of possible pathfinding operations. You can limit CPU time used for the search based on ratio 1 op ~ 0.001 CPU.
     * The default value is 2000.
     */
-  var maxOps: js.UndefOr[Double] = js.undefined
+  var maxOps: js.UndefOr[Double] = js.native
   /**
     * The maximum allowed rooms to search. The default (and maximum) is 16. This is only used when the new PathFinder is enabled.
     */
-  var maxRooms: js.UndefOr[Double] = js.undefined
+  var maxRooms: js.UndefOr[Double] = js.native
   /**
     * Cost for walking on plain positions. The default is 1.
     */
-  var plainCost: js.UndefOr[Double] = js.undefined
+  var plainCost: js.UndefOr[Double] = js.native
   /**
     * Path to within (range) tiles of target tile. The default is to path to the tile that the target is on (0).
     */
-  var range: js.UndefOr[Double] = js.undefined
+  var range: js.UndefOr[Double] = js.native
   /**
     * If true, the result path will be serialized using Room.serializePath. The default is false.
     */
-  var serialize: js.UndefOr[Boolean] = js.undefined
+  var serialize: js.UndefOr[Boolean] = js.native
   /**
     * Cost for walking on swamp positions. The default is 5.
     */
-  var swampCost: js.UndefOr[Double] = js.undefined
+  var swampCost: js.UndefOr[Double] = js.native
 }
 
 object FindPathOptsFilterOptions {
   @scala.inline
-  def apply(
-    filter: FilterFunction[FIND_STRUCTURES] | FilterObject | String,
-    algorithm: String = null,
-    avoid: js.Array[_ | RoomPosition] = null,
-    costCallback: (/* roomName */ String, /* costMatrix */ CostMatrix) => Unit | CostMatrix = null,
-    heuristicWeight: js.UndefOr[Double] = js.undefined,
-    ignore: js.Array[_ | RoomPosition] = null,
-    ignoreCreeps: js.UndefOr[Boolean] = js.undefined,
-    ignoreDestructibleStructures: js.UndefOr[Boolean] = js.undefined,
-    ignoreRoads: js.UndefOr[Boolean] = js.undefined,
-    maxOps: js.UndefOr[Double] = js.undefined,
-    maxRooms: js.UndefOr[Double] = js.undefined,
-    plainCost: js.UndefOr[Double] = js.undefined,
-    range: js.UndefOr[Double] = js.undefined,
-    serialize: js.UndefOr[Boolean] = js.undefined,
-    swampCost: js.UndefOr[Double] = js.undefined
-  ): FindPathOptsFilterOptions = {
+  def apply(filter: FilterFunction[FIND_STRUCTURES] | FilterObject | String): FindPathOptsFilterOptions = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (avoid != null) __obj.updateDynamic("avoid")(avoid.asInstanceOf[js.Any])
-    if (costCallback != null) __obj.updateDynamic("costCallback")(js.Any.fromFunction2(costCallback))
-    if (!js.isUndefined(heuristicWeight)) __obj.updateDynamic("heuristicWeight")(heuristicWeight.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCreeps)) __obj.updateDynamic("ignoreCreeps")(ignoreCreeps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreDestructibleStructures)) __obj.updateDynamic("ignoreDestructibleStructures")(ignoreDestructibleStructures.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreRoads)) __obj.updateDynamic("ignoreRoads")(ignoreRoads.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxOps)) __obj.updateDynamic("maxOps")(maxOps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRooms)) __obj.updateDynamic("maxRooms")(maxRooms.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(plainCost)) __obj.updateDynamic("plainCost")(plainCost.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(serialize)) __obj.updateDynamic("serialize")(serialize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(swampCost)) __obj.updateDynamic("swampCost")(swampCost.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindPathOptsFilterOptions]
   }
+  @scala.inline
+  implicit class FindPathOptsFilterOptionsOps[Self <: FindPathOptsFilterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterFunction1(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ /* object */ js.Any => Boolean
+    ): Self = this.set("filter", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFilter(value: FilterFunction[FIND_STRUCTURES] | FilterObject | String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    @scala.inline
+    def setAvoidVarargs(value: (js.Any | RoomPosition)*): Self = this.set("avoid", js.Array(value :_*))
+    @scala.inline
+    def setAvoid(value: js.Array[_ | RoomPosition]): Self = this.set("avoid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvoid: Self = this.set("avoid", js.undefined)
+    @scala.inline
+    def setCostCallback(value: (/* roomName */ String, /* costMatrix */ CostMatrix) => Unit | CostMatrix): Self = this.set("costCallback", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCostCallback: Self = this.set("costCallback", js.undefined)
+    @scala.inline
+    def setHeuristicWeight(value: Double): Self = this.set("heuristicWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeuristicWeight: Self = this.set("heuristicWeight", js.undefined)
+    @scala.inline
+    def setIgnoreVarargs(value: (js.Any | RoomPosition)*): Self = this.set("ignore", js.Array(value :_*))
+    @scala.inline
+    def setIgnore(value: js.Array[_ | RoomPosition]): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    @scala.inline
+    def setIgnoreCreeps(value: Boolean): Self = this.set("ignoreCreeps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreCreeps: Self = this.set("ignoreCreeps", js.undefined)
+    @scala.inline
+    def setIgnoreDestructibleStructures(value: Boolean): Self = this.set("ignoreDestructibleStructures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreDestructibleStructures: Self = this.set("ignoreDestructibleStructures", js.undefined)
+    @scala.inline
+    def setIgnoreRoads(value: Boolean): Self = this.set("ignoreRoads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreRoads: Self = this.set("ignoreRoads", js.undefined)
+    @scala.inline
+    def setMaxOps(value: Double): Self = this.set("maxOps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxOps: Self = this.set("maxOps", js.undefined)
+    @scala.inline
+    def setMaxRooms(value: Double): Self = this.set("maxRooms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRooms: Self = this.set("maxRooms", js.undefined)
+    @scala.inline
+    def setPlainCost(value: Double): Self = this.set("plainCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlainCost: Self = this.set("plainCost", js.undefined)
+    @scala.inline
+    def setRange(value: Double): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setSerialize(value: Boolean): Self = this.set("serialize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerialize: Self = this.set("serialize", js.undefined)
+    @scala.inline
+    def setSwampCost(value: Double): Self = this.set("swampCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwampCost: Self = this.set("swampCost", js.undefined)
+  }
+  
 }
 

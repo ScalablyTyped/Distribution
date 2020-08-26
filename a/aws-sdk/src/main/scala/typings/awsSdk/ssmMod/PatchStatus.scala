@@ -22,16 +22,34 @@ trait PatchStatus extends js.Object {
 
 object PatchStatus {
   @scala.inline
-  def apply(
-    ApprovalDate: DateTime = null,
-    ComplianceLevel: PatchComplianceLevel = null,
-    DeploymentStatus: PatchDeploymentStatus = null
-  ): PatchStatus = {
+  def apply(): PatchStatus = {
     val __obj = js.Dynamic.literal()
-    if (ApprovalDate != null) __obj.updateDynamic("ApprovalDate")(ApprovalDate.asInstanceOf[js.Any])
-    if (ComplianceLevel != null) __obj.updateDynamic("ComplianceLevel")(ComplianceLevel.asInstanceOf[js.Any])
-    if (DeploymentStatus != null) __obj.updateDynamic("DeploymentStatus")(DeploymentStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchStatus]
   }
+  @scala.inline
+  implicit class PatchStatusOps[Self <: PatchStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApprovalDate(value: DateTime): Self = this.set("ApprovalDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalDate: Self = this.set("ApprovalDate", js.undefined)
+    @scala.inline
+    def setComplianceLevel(value: PatchComplianceLevel): Self = this.set("ComplianceLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceLevel: Self = this.set("ComplianceLevel", js.undefined)
+    @scala.inline
+    def setDeploymentStatus(value: PatchDeploymentStatus): Self = this.set("DeploymentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentStatus: Self = this.set("DeploymentStatus", js.undefined)
+  }
+  
 }
 

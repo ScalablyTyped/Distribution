@@ -26,18 +26,40 @@ trait ListAssessmentRunsRequest extends js.Object {
 
 object ListAssessmentRunsRequest {
   @scala.inline
-  def apply(
-    assessmentTemplateArns: ListParentArnList = null,
-    filter: AssessmentRunFilter = null,
-    maxResults: js.UndefOr[ListMaxResults] = js.undefined,
-    nextToken: PaginationToken = null
-  ): ListAssessmentRunsRequest = {
+  def apply(): ListAssessmentRunsRequest = {
     val __obj = js.Dynamic.literal()
-    if (assessmentTemplateArns != null) __obj.updateDynamic("assessmentTemplateArns")(assessmentTemplateArns.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssessmentRunsRequest]
   }
+  @scala.inline
+  implicit class ListAssessmentRunsRequestOps[Self <: ListAssessmentRunsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssessmentTemplateArnsVarargs(value: Arn*): Self = this.set("assessmentTemplateArns", js.Array(value :_*))
+    @scala.inline
+    def setAssessmentTemplateArns(value: ListParentArnList): Self = this.set("assessmentTemplateArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssessmentTemplateArns: Self = this.set("assessmentTemplateArns", js.undefined)
+    @scala.inline
+    def setFilter(value: AssessmentRunFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setMaxResults(value: ListMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

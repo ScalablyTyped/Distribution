@@ -14,27 +14,6 @@ object basickeyhandlerMod extends js.Object {
   class BasicKeyHandler () extends IKeyHandler {
     var _disposed: js.Any = js.native
     /**
-      * Test whether the object has been disposed.
-      *
-      * #### Notes
-      * This property is always safe to access.
-      */
-    /* CompleteClass */
-    override val isDisposed: Boolean = js.native
-    /**
-      * Dispose of the resources held by the object.
-      *
-      * #### Notes
-      * If the object's `dispose` method is called more than once, all
-      * calls made after the first will be a no-op.
-      *
-      * #### Undefined Behavior
-      * It is undefined behavior to use any functionality of the object
-      * after it has been disposed unless otherwise explicitly noted.
-      */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    /**
       * Handle the `'ArrowDown'` key press for the data grid.
       *
       * @param grid - The data grid of interest.
@@ -90,18 +69,6 @@ object basickeyhandlerMod extends js.Object {
       * @param event - The keyboard event of interest.
       */
     /* protected */ def onKeyC(grid: DataGrid, event: KeyboardEvent): Unit = js.native
-    /**
-      * Handle the key down event for the data grid.
-      *
-      * @param grid - The data grid of interest.
-      *
-      * @param event - The keydown event of interest.
-      *
-      * #### Notes
-      * This will not be called if the mouse button is pressed.
-      */
-    /* CompleteClass */
-    override def onKeyDown(grid: DataGrid, event: KeyboardEvent): Unit = js.native
     /**
       * Handle the `'PageDown'` key press for the data grid.
       *

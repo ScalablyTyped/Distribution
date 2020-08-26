@@ -1,7 +1,5 @@
 package typings.pulumiAws.mod
 
-import typings.pulumiAws.eventSubscriptionMod.EventSubscriptionArgs
-import typings.pulumiAws.eventSubscriptionMod.EventSubscriptionState
 import typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstanceArgs
 import typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstanceState
 import typings.pulumiAws.neptuneClusterMod.ClusterArgs
@@ -10,6 +8,8 @@ import typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroupAr
 import typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroupState
 import typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshotArgs
 import typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshotState
+import typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscriptionArgs
+import typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscriptionState
 import typings.pulumiAws.neptuneParameterGroupMod.ParameterGroupArgs
 import typings.pulumiAws.neptuneParameterGroupMod.ParameterGroupState
 import typings.pulumiAws.neptuneSubnetGroupMod.SubnetGroupArgs
@@ -36,6 +36,7 @@ object neptune extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: ClusterArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -133,8 +134,10 @@ object neptune extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
     def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
     def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterMod.Cluster = js.native
     /**
@@ -154,8 +157,10 @@ object neptune extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
     def get(name: String, id: Input[ID], state: ClusterInstanceState): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
     def get(name: String, id: Input[ID], state: ClusterInstanceState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterInstanceMod.ClusterInstance = js.native
     /**
@@ -175,8 +180,10 @@ object neptune extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
     def get(name: String, id: Input[ID], state: ClusterParameterGroupState): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
     def get(name: String, id: Input[ID], state: ClusterParameterGroupState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
     /**
@@ -196,8 +203,10 @@ object neptune extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
     def get(name: String, id: Input[ID], state: ClusterSnapshotState): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
     def get(name: String, id: Input[ID], state: ClusterSnapshotState, opts: CustomResourceOptions): typings.pulumiAws.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
     /**
@@ -217,10 +226,12 @@ object neptune extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def get(name: String, id: Input[ID]): typings.pulumiAws.eventSubscriptionMod.EventSubscription = js.native
-    def get(name: String, id: Input[ID], state: EventSubscriptionState): typings.pulumiAws.eventSubscriptionMod.EventSubscription = js.native
-    def get(name: String, id: Input[ID], state: EventSubscriptionState, opts: CustomResourceOptions): typings.pulumiAws.eventSubscriptionMod.EventSubscription = js.native
+    def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
+    def get(name: String, id: Input[ID], state: EventSubscriptionState): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
+    def get(name: String, id: Input[ID], state: EventSubscriptionState, opts: CustomResourceOptions): typings.pulumiAws.neptuneEventSubscriptionMod.EventSubscription = js.native
     /**
       * Returns true if the given object is an instance of EventSubscription.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
@@ -238,8 +249,10 @@ object neptune extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
     def get(name: String, id: Input[ID], state: ParameterGroupState): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
     def get(name: String, id: Input[ID], state: ParameterGroupState, opts: CustomResourceOptions): typings.pulumiAws.neptuneParameterGroupMod.ParameterGroup = js.native
     /**
@@ -259,8 +272,10 @@ object neptune extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.neptuneSubnetGroupMod.SubnetGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.neptuneSubnetGroupMod.SubnetGroup = js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState): typings.pulumiAws.neptuneSubnetGroupMod.SubnetGroup = js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState, opts: CustomResourceOptions): typings.pulumiAws.neptuneSubnetGroupMod.SubnetGroup = js.native
     /**

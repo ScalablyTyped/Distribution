@@ -16,15 +16,5 @@ class ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs protected ()
     * @param row An ASPxClientVerticalGridRow object that is the processed grid row. This value is assigned to the ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs.row property.
     */
   def this(row: typings.devexpressWeb.ASPxClientVerticalGridRow) = this()
-  /**
-    * Gets or sets a value specifying whether the event was handled.
-    */
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /**
-    * Gets the currently processed row.
-    */
-  /* CompleteClass */
-  override var row: typings.devexpressWeb.ASPxClientVerticalGridRow = js.native
 }
 

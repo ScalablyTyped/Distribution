@@ -12,7 +12,7 @@ A pure JS client for interacting with server-side RESTful resources. Think Resta
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 41370 |
+| # downloads        | 42509 |
 | # stars            | 4 |
 
 ## Links

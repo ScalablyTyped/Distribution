@@ -46,24 +46,49 @@ trait AnalyzerSummary extends js.Object {
 
 object AnalyzerSummary {
   @scala.inline
-  def apply(
-    arn: AnalyzerArn,
-    createdAt: Timestamp,
-    name: Name,
-    status: AnalyzerStatus,
-    `type`: Type,
-    lastResourceAnalyzed: String = null,
-    lastResourceAnalyzedAt: Timestamp = null,
-    statusReason: StatusReason = null,
-    tags: TagsMap = null
-  ): AnalyzerSummary = {
+  def apply(arn: AnalyzerArn, createdAt: Timestamp, name: Name, status: AnalyzerStatus, `type`: Type): AnalyzerSummary = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lastResourceAnalyzed != null) __obj.updateDynamic("lastResourceAnalyzed")(lastResourceAnalyzed.asInstanceOf[js.Any])
-    if (lastResourceAnalyzedAt != null) __obj.updateDynamic("lastResourceAnalyzedAt")(lastResourceAnalyzedAt.asInstanceOf[js.Any])
-    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzerSummary]
   }
+  @scala.inline
+  implicit class AnalyzerSummaryOps[Self <: AnalyzerSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: AnalyzerArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: AnalyzerStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Type): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastResourceAnalyzed(value: String): Self = this.set("lastResourceAnalyzed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastResourceAnalyzed: Self = this.set("lastResourceAnalyzed", js.undefined)
+    @scala.inline
+    def setLastResourceAnalyzedAt(value: Timestamp): Self = this.set("lastResourceAnalyzedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastResourceAnalyzedAt: Self = this.set("lastResourceAnalyzedAt", js.undefined)
+    @scala.inline
+    def setStatusReason(value: StatusReason): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+    @scala.inline
+    def setTags(value: TagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

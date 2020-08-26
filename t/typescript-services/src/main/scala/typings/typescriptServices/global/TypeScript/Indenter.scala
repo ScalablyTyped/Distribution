@@ -7,16 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("TypeScript.Indenter")
 @js.native
 class Indenter ()
-  extends typings.typescriptServices.TypeScript.Indenter {
-  /* CompleteClass */
-  override var indentAmt: Double = js.native
-  /* CompleteClass */
-  override def decreaseIndent(): Unit = js.native
-  /* CompleteClass */
-  override def getIndent(): String = js.native
-  /* CompleteClass */
-  override def increaseIndent(): Unit = js.native
-}
+  extends typings.typescriptServices.TypeScript.Indenter
 
 /* static members */
 @JSGlobal("TypeScript.Indenter")

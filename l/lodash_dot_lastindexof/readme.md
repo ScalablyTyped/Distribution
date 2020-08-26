@@ -12,7 +12,7 @@ The lodash method `_.lastIndexOf` exported as a module.
 | Keywords           | lodash-modularized, lastindexof |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 73239 |
+| # downloads        | 72992 |
 | # stars            | 0 |
 
 ## Links

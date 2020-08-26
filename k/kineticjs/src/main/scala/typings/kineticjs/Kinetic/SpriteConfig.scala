@@ -4,72 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpriteConfig
   extends DrawOptionsConfig
      with ObjectOptionsConfig {
-  var animation: js.UndefOr[js.Any] = js.undefined
-  var animations: js.UndefOr[js.Any] = js.undefined
-  var frameRate: js.UndefOr[Double] = js.undefined
-  var image: js.Any
+  var animation: js.UndefOr[js.Any] = js.native
+  var animations: js.UndefOr[js.Any] = js.native
+  var frameRate: js.UndefOr[Double] = js.native
+  var image: js.Any = js.native
 }
 
 object SpriteConfig {
   @scala.inline
-  def apply(
-    image: js.Any,
-    animation: js.Any = null,
-    animations: js.Any = null,
-    dragBoundFunc: /* pos */ Vector2d => Vector2d = null,
-    dragBounds: js.Any = null,
-    dragConstraint: String = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    fill: String = null,
-    frameRate: js.UndefOr[Double] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    lineJoin: String = null,
-    listening: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    offset: Vector2d = null,
-    opacity: js.Any = null,
-    rotation: js.UndefOr[Double] = js.undefined,
-    rotationDeg: js.UndefOr[Double] = js.undefined,
-    scale: Vector2d = null,
-    shadow: js.Any = null,
-    stroke: String = null,
-    strokeWidth: js.UndefOr[Double] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): SpriteConfig = {
+  def apply(image: js.Any): SpriteConfig = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animations != null) __obj.updateDynamic("animations")(animations.asInstanceOf[js.Any])
-    if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(js.Any.fromFunction1(dragBoundFunc))
-    if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds.asInstanceOf[js.Any])
-    if (dragConstraint != null) __obj.updateDynamic("dragConstraint")(dragConstraint.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (!js.isUndefined(frameRate)) __obj.updateDynamic("frameRate")(frameRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (!js.isUndefined(listening)) __obj.updateDynamic("listening")(listening.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotationDeg)) __obj.updateDynamic("rotationDeg")(rotationDeg.get.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpriteConfig]
   }
+  @scala.inline
+  implicit class SpriteConfigOps[Self <: SpriteConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImage(value: js.Any): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnimation(value: js.Any): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimations(value: js.Any): Self = this.set("animations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimations: Self = this.set("animations", js.undefined)
+    @scala.inline
+    def setFrameRate(value: Double): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+  }
+  
 }
 

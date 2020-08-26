@@ -8,107 +8,120 @@ import scala.scalajs.js.annotation._
   * Prescription for vision correction products for a patient
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait VisionPrescription extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait VisionPrescription extends DomainResource {
   /**
     * Contains extended information for property 'dateWritten'.
     */
-  var _dateWritten: js.UndefOr[Element] = js.undefined
+  var _dateWritten: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * When prescription was authorized
     */
-  var dateWritten: js.UndefOr[dateTime] = js.undefined
+  var dateWritten: js.UndefOr[dateTime] = js.native
   /**
     * Vision supply authorization
     */
-  var dispense: js.UndefOr[js.Array[VisionPrescriptionDispense]] = js.undefined
+  var dispense: js.UndefOr[js.Array[VisionPrescriptionDispense]] = js.native
   /**
     * Created during encounter / admission / stay
     */
-  var encounter: js.UndefOr[Reference] = js.undefined
+  var encounter: js.UndefOr[Reference] = js.native
   /**
     * Business identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Who prescription is for
     */
-  var patient: js.UndefOr[Reference] = js.undefined
+  var patient: js.UndefOr[Reference] = js.native
   /**
     * Who authorizes the vision product
     */
-  var prescriber: js.UndefOr[Reference] = js.undefined
+  var prescriber: js.UndefOr[Reference] = js.native
   /**
     * Reason or indication for writing the prescription
     */
-  var reasonCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
+  var reasonCodeableConcept: js.UndefOr[CodeableConcept] = js.native
   /**
     * Reason or indication for writing the prescription
     */
-  var reasonReference: js.UndefOr[Reference] = js.undefined
+  var reasonReference: js.UndefOr[Reference] = js.native
   /**
     * active | cancelled | draft | entered-in-error
     */
-  var status: js.UndefOr[code] = js.undefined
+  var status: js.UndefOr[code] = js.native
 }
 
 object VisionPrescription {
   @scala.inline
-  def apply(
-    _dateWritten: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    contained: js.Array[Resource] = null,
-    dateWritten: dateTime = null,
-    dispense: js.Array[VisionPrescriptionDispense] = null,
-    encounter: Reference = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    patient: Reference = null,
-    prescriber: Reference = null,
-    reasonCodeableConcept: CodeableConcept = null,
-    reasonReference: Reference = null,
-    resourceType: code = null,
-    status: code = null,
-    text: Narrative = null
-  ): VisionPrescription = {
+  def apply(): VisionPrescription = {
     val __obj = js.Dynamic.literal()
-    if (_dateWritten != null) __obj.updateDynamic("_dateWritten")(_dateWritten.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (dateWritten != null) __obj.updateDynamic("dateWritten")(dateWritten.asInstanceOf[js.Any])
-    if (dispense != null) __obj.updateDynamic("dispense")(dispense.asInstanceOf[js.Any])
-    if (encounter != null) __obj.updateDynamic("encounter")(encounter.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (patient != null) __obj.updateDynamic("patient")(patient.asInstanceOf[js.Any])
-    if (prescriber != null) __obj.updateDynamic("prescriber")(prescriber.asInstanceOf[js.Any])
-    if (reasonCodeableConcept != null) __obj.updateDynamic("reasonCodeableConcept")(reasonCodeableConcept.asInstanceOf[js.Any])
-    if (reasonReference != null) __obj.updateDynamic("reasonReference")(reasonReference.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisionPrescription]
   }
+  @scala.inline
+  implicit class VisionPrescriptionOps[Self <: VisionPrescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_dateWritten(value: Element): Self = this.set("_dateWritten", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_dateWritten: Self = this.set("_dateWritten", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setDateWritten(value: dateTime): Self = this.set("dateWritten", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateWritten: Self = this.set("dateWritten", js.undefined)
+    @scala.inline
+    def setDispenseVarargs(value: VisionPrescriptionDispense*): Self = this.set("dispense", js.Array(value :_*))
+    @scala.inline
+    def setDispense(value: js.Array[VisionPrescriptionDispense]): Self = this.set("dispense", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDispense: Self = this.set("dispense", js.undefined)
+    @scala.inline
+    def setEncounter(value: Reference): Self = this.set("encounter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncounter: Self = this.set("encounter", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatient: Self = this.set("patient", js.undefined)
+    @scala.inline
+    def setPrescriber(value: Reference): Self = this.set("prescriber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrescriber: Self = this.set("prescriber", js.undefined)
+    @scala.inline
+    def setReasonCodeableConcept(value: CodeableConcept): Self = this.set("reasonCodeableConcept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonCodeableConcept: Self = this.set("reasonCodeableConcept", js.undefined)
+    @scala.inline
+    def setReasonReference(value: Reference): Self = this.set("reasonReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonReference: Self = this.set("reasonReference", js.undefined)
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

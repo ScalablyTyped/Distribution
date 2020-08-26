@@ -111,7 +111,6 @@ class WebGLRenderer () extends Renderer {
   var state: WebGLState = js.native
   var toneMapping: ToneMapping = js.native
   var toneMappingExposure: Double = js.native
-  var toneMappingWhitePoint: Double = js.native
   /**
   	 * @deprecated Use {@link WebGLRenderer#xr .xr} instead.
   	 */
@@ -126,7 +125,11 @@ class WebGLRenderer () extends Renderer {
   	 * Arguments default to true
   	 */
   def clear(): Unit = js.native
+  def clear(color: js.UndefOr[scala.Nothing], depth: js.UndefOr[scala.Nothing], stencil: Boolean): Unit = js.native
+  def clear(color: js.UndefOr[scala.Nothing], depth: Boolean): Unit = js.native
+  def clear(color: js.UndefOr[scala.Nothing], depth: Boolean, stencil: Boolean): Unit = js.native
   def clear(color: Boolean): Unit = js.native
+  def clear(color: Boolean, depth: js.UndefOr[scala.Nothing], stencil: Boolean): Unit = js.native
   def clear(color: Boolean, depth: Boolean): Unit = js.native
   def clear(color: Boolean, depth: Boolean, stencil: Boolean): Unit = js.native
   def clearColor(): Unit = js.native
@@ -136,7 +139,7 @@ class WebGLRenderer () extends Renderer {
   /**
   	 * Compiles all materials in the scene with the camera. This is useful to precompile shaders before the first rendering.
   	 */
-  def compile(scene: Scene, camera: Camera): Unit = js.native
+  def compile(scene: Object3D, camera: Camera): Unit = js.native
   /**
   	 * Copies a region of the currently bound framebuffer into the selected mipmap level of the selected texture.
   	 * This region is defined by the size of the destination texture's mip level, offset by the input position.
@@ -253,11 +256,11 @@ class WebGLRenderer () extends Renderer {
   	 * @deprecated Use {@link WebGLState#reset .state.reset()} instead.
   	 */
   def resetGLState(): Unit = js.native
-  def setAnimationLoop(): Unit = js.native
   /**
   	 * A build in function that can be used instead of requestAnimationFrame. For WebXR projects this function must be used.
   	 * @param callback The function will be called every available frame. If `null` is passed it will stop any already ongoing animation.
   	 */
+  def setAnimationLoop(): Unit = js.native
   def setAnimationLoop(callback: js.Function): Unit = js.native
   def setClearAlpha(alpha: Double): Unit = js.native
   def setClearColor(color: String): Unit = js.native
@@ -282,9 +285,6 @@ class WebGLRenderer () extends Renderer {
   	 */
   def setOpaqueSort(method: js.Function): Unit = js.native
   def setPixelRatio(value: Double): Unit = js.native
-  def setRenderTarget(): Unit = js.native
-  def setRenderTarget(renderTarget: Null, activeCubeFace: Double): Unit = js.native
-  def setRenderTarget(renderTarget: Null, activeCubeFace: Double, activeMipmapLevel: Double): Unit = js.native
   /**
   	 * Sets the active render target.
   	 *
@@ -292,18 +292,31 @@ class WebGLRenderer () extends Renderer {
   	 * @param activeCubeFace Specifies the active cube side (PX 0, NX 1, PY 2, NY 3, PZ 4, NZ 5) of {@link WebGLCubeRenderTarget}.
   	 * @param activeMipmapLevel Specifies the active mipmap level.
   	 */
+  def setRenderTarget(): Unit = js.native
+  def setRenderTarget(renderTarget: Null, activeCubeFace: js.UndefOr[scala.Nothing], activeMipmapLevel: Double): Unit = js.native
+  def setRenderTarget(renderTarget: Null, activeCubeFace: Double): Unit = js.native
+  def setRenderTarget(renderTarget: Null, activeCubeFace: Double, activeMipmapLevel: Double): Unit = js.native
   def setRenderTarget(renderTarget: RenderTarget): Unit = js.native
+  def setRenderTarget(renderTarget: RenderTarget, activeCubeFace: js.UndefOr[scala.Nothing], activeMipmapLevel: Double): Unit = js.native
   def setRenderTarget(renderTarget: RenderTarget, activeCubeFace: Double): Unit = js.native
   def setRenderTarget(renderTarget: RenderTarget, activeCubeFace: Double, activeMipmapLevel: Double): Unit = js.native
   def setScissor(x: Double): Unit = js.native
+  def setScissor(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
+  def setScissor(x: Double, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
+  def setScissor(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
   def setScissor(x: Double, y: Double): Unit = js.native
+  def setScissor(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def setScissor(x: Double, y: Double, width: Double): Unit = js.native
   def setScissor(x: Double, y: Double, width: Double, height: Double): Unit = js.native
   /**
   	 * Sets the scissor area from (x, y) to (x + width, y + height).
   	 */
   def setScissor(x: Vector4): Unit = js.native
+  def setScissor(x: Vector4, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
+  def setScissor(x: Vector4, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
+  def setScissor(x: Vector4, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
   def setScissor(x: Vector4, y: Double): Unit = js.native
+  def setScissor(x: Vector4, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def setScissor(x: Vector4, y: Double, width: Double): Unit = js.native
   def setScissor(x: Vector4, y: Double, width: Double, height: Double): Unit = js.native
   /**
@@ -315,7 +328,11 @@ class WebGLRenderer () extends Renderer {
   	 */
   def setTransparentSort(method: js.Function): Unit = js.native
   def setViewport(x: Double): Unit = js.native
+  def setViewport(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
+  def setViewport(x: Double, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
+  def setViewport(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
   def setViewport(x: Double, y: Double): Unit = js.native
+  def setViewport(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def setViewport(x: Double, y: Double, width: Double): Unit = js.native
   def setViewport(x: Double, y: Double, width: Double, height: Double): Unit = js.native
   /**
@@ -323,7 +340,11 @@ class WebGLRenderer () extends Renderer {
   	 * (x, y) is the lower-left corner of the region.
   	 */
   def setViewport(x: Vector4): Unit = js.native
+  def setViewport(x: Vector4, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
+  def setViewport(x: Vector4, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
+  def setViewport(x: Vector4, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
   def setViewport(x: Vector4, y: Double): Unit = js.native
+  def setViewport(x: Vector4, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def setViewport(x: Vector4, y: Double, width: Double): Unit = js.native
   def setViewport(x: Vector4, y: Double, width: Double, height: Double): Unit = js.native
   /**

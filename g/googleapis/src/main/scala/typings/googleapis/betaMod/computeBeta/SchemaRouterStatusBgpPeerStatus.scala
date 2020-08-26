@@ -51,30 +51,64 @@ trait SchemaRouterStatusBgpPeerStatus extends js.Object {
 
 object SchemaRouterStatusBgpPeerStatus {
   @scala.inline
-  def apply(
-    advertisedRoutes: js.Array[SchemaRoute] = null,
-    ipAddress: String = null,
-    linkedVpnTunnel: String = null,
-    name: String = null,
-    numLearnedRoutes: js.UndefOr[Double] = js.undefined,
-    peerIpAddress: String = null,
-    state: String = null,
-    status: String = null,
-    uptime: String = null,
-    uptimeSeconds: String = null
-  ): SchemaRouterStatusBgpPeerStatus = {
+  def apply(): SchemaRouterStatusBgpPeerStatus = {
     val __obj = js.Dynamic.literal()
-    if (advertisedRoutes != null) __obj.updateDynamic("advertisedRoutes")(advertisedRoutes.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (linkedVpnTunnel != null) __obj.updateDynamic("linkedVpnTunnel")(linkedVpnTunnel.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(numLearnedRoutes)) __obj.updateDynamic("numLearnedRoutes")(numLearnedRoutes.get.asInstanceOf[js.Any])
-    if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (uptime != null) __obj.updateDynamic("uptime")(uptime.asInstanceOf[js.Any])
-    if (uptimeSeconds != null) __obj.updateDynamic("uptimeSeconds")(uptimeSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouterStatusBgpPeerStatus]
   }
+  @scala.inline
+  implicit class SchemaRouterStatusBgpPeerStatusOps[Self <: SchemaRouterStatusBgpPeerStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertisedRoutesVarargs(value: SchemaRoute*): Self = this.set("advertisedRoutes", js.Array(value :_*))
+    @scala.inline
+    def setAdvertisedRoutes(value: js.Array[SchemaRoute]): Self = this.set("advertisedRoutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertisedRoutes: Self = this.set("advertisedRoutes", js.undefined)
+    @scala.inline
+    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    @scala.inline
+    def setLinkedVpnTunnel(value: String): Self = this.set("linkedVpnTunnel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkedVpnTunnel: Self = this.set("linkedVpnTunnel", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNumLearnedRoutes(value: Double): Self = this.set("numLearnedRoutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumLearnedRoutes: Self = this.set("numLearnedRoutes", js.undefined)
+    @scala.inline
+    def setPeerIpAddress(value: String): Self = this.set("peerIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerIpAddress: Self = this.set("peerIpAddress", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setUptime(value: String): Self = this.set("uptime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUptime: Self = this.set("uptime", js.undefined)
+    @scala.inline
+    def setUptimeSeconds(value: String): Self = this.set("uptimeSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUptimeSeconds: Self = this.set("uptimeSeconds", js.undefined)
+  }
+  
 }
 

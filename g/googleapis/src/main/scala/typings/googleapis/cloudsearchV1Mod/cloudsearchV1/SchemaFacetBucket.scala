@@ -29,16 +29,34 @@ trait SchemaFacetBucket extends js.Object {
 
 object SchemaFacetBucket {
   @scala.inline
-  def apply(
-    count: js.UndefOr[Double] = js.undefined,
-    percentage: js.UndefOr[Double] = js.undefined,
-    value: SchemaValue = null
-  ): SchemaFacetBucket = {
+  def apply(): SchemaFacetBucket = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFacetBucket]
   }
+  @scala.inline
+  implicit class SchemaFacetBucketOps[Self <: SchemaFacetBucket] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setPercentage(value: Double): Self = this.set("percentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentage: Self = this.set("percentage", js.undefined)
+    @scala.inline
+    def setValue(value: SchemaValue): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

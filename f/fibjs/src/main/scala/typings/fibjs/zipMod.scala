@@ -16,12 +16,15 @@ object zipMod extends js.Object {
   val ZIP_STORED: /* 0 */ Double = js.native
   def isZipFile(filename: String): Boolean = js.native
   def open(data: ClassBuffer): ClassZipFile = js.native
+  def open(data: ClassBuffer, mod: js.UndefOr[scala.Nothing], compress_type: Double): ClassZipFile = js.native
   def open(data: ClassBuffer, mod: String): ClassZipFile = js.native
   def open(data: ClassBuffer, mod: String, compress_type: Double): ClassZipFile = js.native
   def open(path: String): ClassZipFile = js.native
+  def open(path: String, mod: js.UndefOr[scala.Nothing], compress_type: Double): ClassZipFile = js.native
   def open(path: String, mod: String): ClassZipFile = js.native
   def open(path: String, mod: String, compress_type: Double): ClassZipFile = js.native
   def open(strm: ClassSeekableStream): ClassZipFile = js.native
+  def open(strm: ClassSeekableStream, mod: js.UndefOr[scala.Nothing], compress_type: Double): ClassZipFile = js.native
   def open(strm: ClassSeekableStream, mod: String): ClassZipFile = js.native
   def open(strm: ClassSeekableStream, mod: String, compress_type: Double): ClassZipFile = js.native
 }

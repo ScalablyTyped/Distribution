@@ -20,8 +20,76 @@ object testingMod extends js.Object {
   object TestScheduler extends js.Object {
     /** @nocollapse */
     def parseMarbles(marbles: String): js.Array[TestMessage] = js.native
+    def parseMarbles(
+      marbles: String,
+      values: js.UndefOr[scala.Nothing],
+      errorValue: js.UndefOr[scala.Nothing],
+      materializeInnerObservables: js.UndefOr[scala.Nothing],
+      runMode: Boolean
+    ): js.Array[TestMessage] = js.native
+    def parseMarbles(
+      marbles: String,
+      values: js.UndefOr[scala.Nothing],
+      errorValue: js.UndefOr[scala.Nothing],
+      materializeInnerObservables: Boolean
+    ): js.Array[TestMessage] = js.native
+    def parseMarbles(
+      marbles: String,
+      values: js.UndefOr[scala.Nothing],
+      errorValue: js.UndefOr[scala.Nothing],
+      materializeInnerObservables: Boolean,
+      runMode: Boolean
+    ): js.Array[TestMessage] = js.native
+    def parseMarbles(marbles: String, values: js.UndefOr[scala.Nothing], errorValue: js.Any): js.Array[TestMessage] = js.native
+    def parseMarbles(
+      marbles: String,
+      values: js.UndefOr[scala.Nothing],
+      errorValue: js.Any,
+      materializeInnerObservables: js.UndefOr[scala.Nothing],
+      runMode: Boolean
+    ): js.Array[TestMessage] = js.native
+    def parseMarbles(
+      marbles: String,
+      values: js.UndefOr[scala.Nothing],
+      errorValue: js.Any,
+      materializeInnerObservables: Boolean
+    ): js.Array[TestMessage] = js.native
+    def parseMarbles(
+      marbles: String,
+      values: js.UndefOr[scala.Nothing],
+      errorValue: js.Any,
+      materializeInnerObservables: Boolean,
+      runMode: Boolean
+    ): js.Array[TestMessage] = js.native
     def parseMarbles(marbles: String, values: js.Any): js.Array[TestMessage] = js.native
+    def parseMarbles(
+      marbles: String,
+      values: js.Any,
+      errorValue: js.UndefOr[scala.Nothing],
+      materializeInnerObservables: js.UndefOr[scala.Nothing],
+      runMode: Boolean
+    ): js.Array[TestMessage] = js.native
+    def parseMarbles(
+      marbles: String,
+      values: js.Any,
+      errorValue: js.UndefOr[scala.Nothing],
+      materializeInnerObservables: Boolean
+    ): js.Array[TestMessage] = js.native
+    def parseMarbles(
+      marbles: String,
+      values: js.Any,
+      errorValue: js.UndefOr[scala.Nothing],
+      materializeInnerObservables: Boolean,
+      runMode: Boolean
+    ): js.Array[TestMessage] = js.native
     def parseMarbles(marbles: String, values: js.Any, errorValue: js.Any): js.Array[TestMessage] = js.native
+    def parseMarbles(
+      marbles: String,
+      values: js.Any,
+      errorValue: js.Any,
+      materializeInnerObservables: js.UndefOr[scala.Nothing],
+      runMode: Boolean
+    ): js.Array[TestMessage] = js.native
     def parseMarbles(marbles: String, values: js.Any, errorValue: js.Any, materializeInnerObservables: Boolean): js.Array[TestMessage] = js.native
     def parseMarbles(
       marbles: String,

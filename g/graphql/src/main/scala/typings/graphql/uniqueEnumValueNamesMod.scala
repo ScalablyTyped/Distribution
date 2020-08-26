@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object uniqueEnumValueNamesMod extends js.Object {
   def UniqueEnumValueNames(context: SDLValidationContext): ASTVisitor = js.native
-  def duplicateEnumValueNameMessage(typeName: String, valueName: String): String = js.native
-  def existedEnumValueNameMessage(typeName: String, valueName: String): String = js.native
 }
 

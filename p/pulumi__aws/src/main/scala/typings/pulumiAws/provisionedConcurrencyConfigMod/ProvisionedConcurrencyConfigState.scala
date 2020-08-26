@@ -23,16 +23,34 @@ trait ProvisionedConcurrencyConfigState extends js.Object {
 
 object ProvisionedConcurrencyConfigState {
   @scala.inline
-  def apply(
-    functionName: Input[String] = null,
-    provisionedConcurrentExecutions: Input[Double] = null,
-    qualifier: Input[String] = null
-  ): ProvisionedConcurrencyConfigState = {
+  def apply(): ProvisionedConcurrencyConfigState = {
     val __obj = js.Dynamic.literal()
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
-    if (provisionedConcurrentExecutions != null) __obj.updateDynamic("provisionedConcurrentExecutions")(provisionedConcurrentExecutions.asInstanceOf[js.Any])
-    if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionedConcurrencyConfigState]
   }
+  @scala.inline
+  implicit class ProvisionedConcurrencyConfigStateOps[Self <: ProvisionedConcurrencyConfigState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFunctionName(value: Input[String]): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionName: Self = this.set("functionName", js.undefined)
+    @scala.inline
+    def setProvisionedConcurrentExecutions(value: Input[Double]): Self = this.set("provisionedConcurrentExecutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedConcurrentExecutions: Self = this.set("provisionedConcurrentExecutions", js.undefined)
+    @scala.inline
+    def setQualifier(value: Input[String]): Self = this.set("qualifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualifier: Self = this.set("qualifier", js.undefined)
+  }
+  
 }
 

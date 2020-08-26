@@ -10,15 +10,15 @@ Minimalistic but perfect custom scrollbar plugin
 | ------------------ | :-------------: |
 | Full name          | perfect-scrollbar |
 | Keywords           | frontend, scroll, scrollbar |
-| # releases         | 2 |
-| # dependents       | 204 |
-| # downloads        | 10251616 |
+| # releases         | 1 |
+| # dependents       | 209 |
+| # downloads        | 10816370 |
 | # stars            | 16 |
 
 ## Links
-- [Homepage](https://github.com/utatti/perfect-scrollbar#readme)
-- [Bugs](https://github.com/utatti/perfect-scrollbar/issues)
-- [Repository](https://github.com/utatti/perfect-scrollbar)
+- [Homepage](https://github.com/mdbootstrap/perfect-scrollbar#readme)
+- [Bugs](https://github.com/mdbootstrap/perfect-scrollbar/issues)
+- [Repository](https://github.com/mdbootstrap/perfect-scrollbar)
 - [Npm](https://www.npmjs.com/package/perfect-scrollbar)
     
 

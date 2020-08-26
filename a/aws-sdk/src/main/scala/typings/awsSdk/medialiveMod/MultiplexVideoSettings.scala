@@ -20,14 +20,30 @@ trait MultiplexVideoSettings extends js.Object {
 
 object MultiplexVideoSettings {
   @scala.inline
-  def apply(
-    ConstantBitrate: js.UndefOr[integerMin100000Max100000000] = js.undefined,
-    StatmuxSettings: MultiplexStatmuxVideoSettings = null
-  ): MultiplexVideoSettings = {
+  def apply(): MultiplexVideoSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ConstantBitrate)) __obj.updateDynamic("ConstantBitrate")(ConstantBitrate.get.asInstanceOf[js.Any])
-    if (StatmuxSettings != null) __obj.updateDynamic("StatmuxSettings")(StatmuxSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiplexVideoSettings]
   }
+  @scala.inline
+  implicit class MultiplexVideoSettingsOps[Self <: MultiplexVideoSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConstantBitrate(value: integerMin100000Max100000000): Self = this.set("ConstantBitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstantBitrate: Self = this.set("ConstantBitrate", js.undefined)
+    @scala.inline
+    def setStatmuxSettings(value: MultiplexStatmuxVideoSettings): Self = this.set("StatmuxSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatmuxSettings: Self = this.set("StatmuxSettings", js.undefined)
+  }
+  
 }
 

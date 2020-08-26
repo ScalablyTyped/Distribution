@@ -12,7 +12,7 @@ Easily link to other apps with React Native.
 | Keywords           | React, Native, js |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 154180 |
+| # downloads        | 157418 |
 | # stars            | 3 |
 
 ## Links

@@ -37,9 +37,9 @@ trait PictureMarkerSymbol
     *
     *
     * > **Known Limitations**
-    *   * Using this property to render SVG documents as images is not supported in IE11.
+    *   * Rendering SVG documents and PNG images is not supported in IE11.
     *   * SVG documents must include a definition for width and height to load properly in Firefox.
-    *   * Animated gif/png images are not supported. See the [Custom WebGL layer view](https://developers.arcgis.com/javascript/latest/sample-code/custom-gl-visuals/index.html) sample to learn how to accomplish this using WebGL.
+    *   * Animated GIF and PNG images are not supported in [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). See the [Custom WebGL layer view](https://developers.arcgis.com/javascript/latest/sample-code/custom-gl-visuals/index.html) sample to learn how to accomplish this using WebGL.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#url)
     */

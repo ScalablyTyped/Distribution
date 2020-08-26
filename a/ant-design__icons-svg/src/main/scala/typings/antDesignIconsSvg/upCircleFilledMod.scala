@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/UpCircleFilled", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/UpCircleFilled", JSImport.Namespace)
 @js.native
 object upCircleFilledMod extends js.Object {
   val default: IconDefinition = js.native

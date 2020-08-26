@@ -69,17 +69,12 @@ object mergeStyleSetsMod extends js.Object {
   def mergeStyleSets[TStyleSet](): IProcessedStyleSet[ObjectOnly[TStyleSet]] = js.native
   def mergeStyleSets[TStyleSet](styleSet: TStyleSet): IProcessedStyleSet[ObjectOnly[TStyleSet]] = js.native
   def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
+  def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: js.UndefOr[scala.Nothing], styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
   def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: Null, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1TStyleSet2TStyleSet3[TStyleSet1, TStyleSet2, TStyleSet3](): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3]] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1TStyleSet2TStyleSet3TStyleSet4[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4](): IProcessedStyleSet[
-    ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3] with ObjectOnly[TStyleSet4]
-  ] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_false(styleSets: (js.UndefOr[IStyleSet[StringDictionary[_]] | `false` | Null])*): IProcessedStyleSet[_] = js.native
   @JSName("mergeStyleSets")
@@ -87,39 +82,29 @@ object mergeStyleSetsMod extends js.Object {
   @JSName("mergeStyleSets")
   def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
   @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: js.UndefOr[scala.Nothing], styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
+  @JSName("mergeStyleSets")
   def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: Null, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: `false`, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: `false`, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3](styleSet1: TStyleSet1 | `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3]] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3](styleSet1: TStyleSet1 | `false`, styleSet2: TStyleSet2 | `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3]] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3](styleSet1: TStyleSet1 | `false`, styleSet2: TStyleSet2 | `false`, styleSet3: TStyleSet3 | `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3]] = js.native
+  def mergeStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3](
+    styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+    styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+    styleSet3: js.UndefOr[TStyleSet3 | `false` | Null]
+  ): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3]] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4](
-    styleSet1: TStyleSet1 | `false`,
-    styleSet2: TStyleSet2 | `false`,
-    styleSet3: TStyleSet3 | `false`,
-    styleSet4: TStyleSet4 | `false`
+    styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+    styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+    styleSet3: js.UndefOr[TStyleSet3 | `false` | Null],
+    styleSet4: js.UndefOr[TStyleSet4 | `false` | Null]
   ): IProcessedStyleSet[
     ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3] with ObjectOnly[TStyleSet4]
   ] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_false_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2]] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1TStyleSet2TStyleSet3TStyleSet4[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4](styleSet1: TStyleSet1 | `false`): IProcessedStyleSet[
-    ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3] with ObjectOnly[TStyleSet4]
-  ] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1TStyleSet2TStyleSet3TStyleSet4[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4](styleSet1: TStyleSet1 | `false`, styleSet2: TStyleSet2 | `false`): IProcessedStyleSet[
-    ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3] with ObjectOnly[TStyleSet4]
-  ] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_false_TStyleSet1TStyleSet2TStyleSet3TStyleSet4[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4](styleSet1: TStyleSet1 | `false`, styleSet2: TStyleSet2 | `false`, styleSet3: TStyleSet3 | `false`): IProcessedStyleSet[
-    ObjectOnly[TStyleSet1] with ObjectOnly[TStyleSet2] with ObjectOnly[TStyleSet3] with ObjectOnly[TStyleSet4]
-  ] = js.native
 }
 

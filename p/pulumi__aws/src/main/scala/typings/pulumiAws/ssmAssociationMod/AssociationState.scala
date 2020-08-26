@@ -53,7 +53,7 @@ trait AssociationState extends js.Object {
   /**
     * A block of arbitrary string parameters to pass to the SSM document.
     */
-  val parameters: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * A cron expression when the association will be applied to the target(s).
     */
@@ -66,36 +66,76 @@ trait AssociationState extends js.Object {
 
 object AssociationState {
   @scala.inline
-  def apply(
-    associationId: Input[String] = null,
-    associationName: Input[String] = null,
-    automationTargetParameterName: Input[String] = null,
-    complianceSeverity: Input[String] = null,
-    documentVersion: Input[String] = null,
-    instanceId: Input[String] = null,
-    maxConcurrency: Input[String] = null,
-    maxErrors: Input[String] = null,
-    name: Input[String] = null,
-    outputLocation: Input[AssociationOutputLocation] = null,
-    parameters: Input[StringDictionary[_]] = null,
-    scheduleExpression: Input[String] = null,
-    targets: Input[js.Array[Input[AssociationTarget]]] = null
-  ): AssociationState = {
+  def apply(): AssociationState = {
     val __obj = js.Dynamic.literal()
-    if (associationId != null) __obj.updateDynamic("associationId")(associationId.asInstanceOf[js.Any])
-    if (associationName != null) __obj.updateDynamic("associationName")(associationName.asInstanceOf[js.Any])
-    if (automationTargetParameterName != null) __obj.updateDynamic("automationTargetParameterName")(automationTargetParameterName.asInstanceOf[js.Any])
-    if (complianceSeverity != null) __obj.updateDynamic("complianceSeverity")(complianceSeverity.asInstanceOf[js.Any])
-    if (documentVersion != null) __obj.updateDynamic("documentVersion")(documentVersion.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (maxConcurrency != null) __obj.updateDynamic("maxConcurrency")(maxConcurrency.asInstanceOf[js.Any])
-    if (maxErrors != null) __obj.updateDynamic("maxErrors")(maxErrors.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outputLocation != null) __obj.updateDynamic("outputLocation")(outputLocation.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (scheduleExpression != null) __obj.updateDynamic("scheduleExpression")(scheduleExpression.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationState]
   }
+  @scala.inline
+  implicit class AssociationStateOps[Self <: AssociationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationId(value: Input[String]): Self = this.set("associationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("associationId", js.undefined)
+    @scala.inline
+    def setAssociationName(value: Input[String]): Self = this.set("associationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationName: Self = this.set("associationName", js.undefined)
+    @scala.inline
+    def setAutomationTargetParameterName(value: Input[String]): Self = this.set("automationTargetParameterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomationTargetParameterName: Self = this.set("automationTargetParameterName", js.undefined)
+    @scala.inline
+    def setComplianceSeverity(value: Input[String]): Self = this.set("complianceSeverity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceSeverity: Self = this.set("complianceSeverity", js.undefined)
+    @scala.inline
+    def setDocumentVersion(value: Input[String]): Self = this.set("documentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersion: Self = this.set("documentVersion", js.undefined)
+    @scala.inline
+    def setInstanceId(value: Input[String]): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setMaxConcurrency(value: Input[String]): Self = this.set("maxConcurrency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConcurrency: Self = this.set("maxConcurrency", js.undefined)
+    @scala.inline
+    def setMaxErrors(value: Input[String]): Self = this.set("maxErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxErrors: Self = this.set("maxErrors", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOutputLocation(value: Input[AssociationOutputLocation]): Self = this.set("outputLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputLocation: Self = this.set("outputLocation", js.undefined)
+    @scala.inline
+    def setParameters(value: Input[StringDictionary[Input[String]]]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setScheduleExpression(value: Input[String]): Self = this.set("scheduleExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleExpression: Self = this.set("scheduleExpression", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: Input[AssociationTarget]*): Self = this.set("targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: Input[js.Array[Input[AssociationTarget]]]): Self = this.set("targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("targets", js.undefined)
+  }
+  
 }
 

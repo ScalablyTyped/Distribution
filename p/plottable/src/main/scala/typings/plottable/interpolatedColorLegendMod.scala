@@ -36,7 +36,6 @@ object interpolatedColorLegendMod extends js.Object {
     var _upperLabel: js.Any = js.native
     var _wrapper: js.Any = js.native
     var _writer: js.Any = js.native
-    /* private */ def _generateTicks(): js.Any = js.native
     /* private */ def _generateTicks(numSwatches: js.Any): js.Any = js.native
     /* private */ def _isVertical(): js.Any = js.native
     /**

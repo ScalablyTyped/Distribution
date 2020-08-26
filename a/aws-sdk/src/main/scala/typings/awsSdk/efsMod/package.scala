@@ -16,6 +16,7 @@ package object efsMod {
   type ClientToken = java.lang.String
   type CreationToken = java.lang.String
   type Encrypted = scala.Boolean
+  type FileSystemArn = java.lang.String
   type FileSystemDescriptions = js.Array[typings.awsSdk.efsMod.FileSystemDescription]
   type FileSystemId = java.lang.String
   type FileSystemNullableSizeValue = scala.Double
@@ -57,6 +58,14 @@ package object efsMod {
   type SecondaryGids = js.Array[typings.awsSdk.efsMod.Gid]
   type SecurityGroup = java.lang.String
   type SecurityGroups = js.Array[typings.awsSdk.efsMod.SecurityGroup]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - typings.awsSdk.awsSdkStrings.ENABLING
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - typings.awsSdk.awsSdkStrings.DISABLING
+    - java.lang.String
+  */
+  type Status = typings.awsSdk.efsMod._Status | java.lang.String
   type SubnetId = java.lang.String
   type TagKey = java.lang.String
   type TagKeys = js.Array[typings.awsSdk.efsMod.TagKey]
@@ -80,6 +89,7 @@ package object efsMod {
   */
   type TransitionToIARules = typings.awsSdk.efsMod._TransitionToIARules | java.lang.String
   type Uid = scala.Double
+  type VpcId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2015-02-01`
     - typings.awsSdk.awsSdkStrings.latest_

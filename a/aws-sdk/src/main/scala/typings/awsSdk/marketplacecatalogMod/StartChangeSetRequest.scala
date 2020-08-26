@@ -26,16 +26,36 @@ trait StartChangeSetRequest extends js.Object {
 
 object StartChangeSetRequest {
   @scala.inline
-  def apply(
-    Catalog: Catalog,
-    ChangeSet: RequestedChangeList,
-    ChangeSetName: ChangeSetName = null,
-    ClientRequestToken: ClientRequestToken = null
-  ): StartChangeSetRequest = {
+  def apply(Catalog: Catalog, ChangeSet: RequestedChangeList): StartChangeSetRequest = {
     val __obj = js.Dynamic.literal(Catalog = Catalog.asInstanceOf[js.Any], ChangeSet = ChangeSet.asInstanceOf[js.Any])
-    if (ChangeSetName != null) __obj.updateDynamic("ChangeSetName")(ChangeSetName.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartChangeSetRequest]
   }
+  @scala.inline
+  implicit class StartChangeSetRequestOps[Self <: StartChangeSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCatalog(value: Catalog): Self = this.set("Catalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChangeSetVarargs(value: Change*): Self = this.set("ChangeSet", js.Array(value :_*))
+    @scala.inline
+    def setChangeSet(value: RequestedChangeList): Self = this.set("ChangeSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChangeSetName(value: ChangeSetName): Self = this.set("ChangeSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetName: Self = this.set("ChangeSetName", js.undefined)
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+  }
+  
 }
 

@@ -31,13 +31,67 @@ trait SourceMapConsumerConstructor
   def fromSourceMap(sourceMap: SourceMapGenerator, sourceMapUrl: SourceMapUrl): js.Promise[BasicSourceMapConsumer] = js.native
   def `with`[T](
     rawSourceMap: String,
-    sourceMapUrl: js.UndefOr[Null | SourceMapUrl],
-    callback: js.Function1[BasicSourceMapConsumer | IndexedSourceMapConsumer, js.Promise[T] | T]
+    sourceMapUrl: js.UndefOr[scala.Nothing],
+    callback: js.Function1[
+      /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
+      js.Promise[T] | T
+    ]
+  ): js.Promise[T] = js.native
+  def `with`[T](
+    rawSourceMap: String,
+    sourceMapUrl: Null,
+    callback: js.Function1[
+      /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
+      js.Promise[T] | T
+    ]
+  ): js.Promise[T] = js.native
+  def `with`[T](
+    rawSourceMap: String,
+    sourceMapUrl: SourceMapUrl,
+    callback: js.Function1[
+      /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
+      js.Promise[T] | T
+    ]
   ): js.Promise[T] = js.native
   def `with`[T](
     rawSourceMap: RawIndexMap,
-    sourceMapUrl: js.UndefOr[Null | SourceMapUrl],
-    callback: js.Function1[BasicSourceMapConsumer | IndexedSourceMapConsumer, js.Promise[T] | T]
+    sourceMapUrl: js.UndefOr[scala.Nothing],
+    callback: js.Function1[
+      /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
+      js.Promise[T] | T
+    ]
+  ): js.Promise[T] = js.native
+  def `with`[T](
+    rawSourceMap: RawIndexMap,
+    sourceMapUrl: Null,
+    callback: js.Function1[
+      /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
+      js.Promise[T] | T
+    ]
+  ): js.Promise[T] = js.native
+  def `with`[T](
+    rawSourceMap: RawIndexMap,
+    sourceMapUrl: SourceMapUrl,
+    callback: js.Function1[
+      /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
+      js.Promise[T] | T
+    ]
+  ): js.Promise[T] = js.native
+  def `with`[T](
+    rawSourceMap: RawSourceMap,
+    sourceMapUrl: js.UndefOr[scala.Nothing],
+    callback: js.Function1[
+      /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
+      js.Promise[T] | T
+    ]
+  ): js.Promise[T] = js.native
+  def `with`[T](
+    rawSourceMap: RawSourceMap,
+    sourceMapUrl: Null,
+    callback: js.Function1[
+      /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
+      js.Promise[T] | T
+    ]
   ): js.Promise[T] = js.native
   /**
     * Construct a new `SourceMapConsumer` from `rawSourceMap` and `sourceMapUrl`
@@ -71,8 +125,11 @@ trait SourceMapConsumerConstructor
     */
   def `with`[T](
     rawSourceMap: RawSourceMap,
-    sourceMapUrl: js.UndefOr[Null | SourceMapUrl],
-    callback: js.Function1[BasicSourceMapConsumer | IndexedSourceMapConsumer, js.Promise[T] | T]
+    sourceMapUrl: SourceMapUrl,
+    callback: js.Function1[
+      /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
+      js.Promise[T] | T
+    ]
   ): js.Promise[T] = js.native
 }
 

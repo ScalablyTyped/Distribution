@@ -26,7 +26,7 @@ abstract class DataViewControlBarButton protected () extends ControlBarButton {
   @JSName("model")
   var model_FDataViewControlBarButton: IModel = js.native
   def tabIndex: Double = js.native
-  def tabIndex(newValue: Double): js.Any = js.native
+  def tabIndex_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

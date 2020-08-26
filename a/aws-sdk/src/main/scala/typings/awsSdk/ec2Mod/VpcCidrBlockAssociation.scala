@@ -22,12 +22,34 @@ trait VpcCidrBlockAssociation extends js.Object {
 
 object VpcCidrBlockAssociation {
   @scala.inline
-  def apply(AssociationId: String = null, CidrBlock: String = null, CidrBlockState: VpcCidrBlockState = null): VpcCidrBlockAssociation = {
+  def apply(): VpcCidrBlockAssociation = {
     val __obj = js.Dynamic.literal()
-    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
-    if (CidrBlock != null) __obj.updateDynamic("CidrBlock")(CidrBlock.asInstanceOf[js.Any])
-    if (CidrBlockState != null) __obj.updateDynamic("CidrBlockState")(CidrBlockState.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcCidrBlockAssociation]
   }
+  @scala.inline
+  implicit class VpcCidrBlockAssociationOps[Self <: VpcCidrBlockAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationId(value: String): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    @scala.inline
+    def setCidrBlock(value: String): Self = this.set("CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlock: Self = this.set("CidrBlock", js.undefined)
+    @scala.inline
+    def setCidrBlockState(value: VpcCidrBlockState): Self = this.set("CidrBlockState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlockState: Self = this.set("CidrBlockState", js.undefined)
+  }
+  
 }
 

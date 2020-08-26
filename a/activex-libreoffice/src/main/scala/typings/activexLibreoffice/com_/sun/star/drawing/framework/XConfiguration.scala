@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * {@link XConfigurationChangeRequest} interface.
   * @see XConfigurationController
   */
+@js.native
 trait XConfiguration extends XCloneable {
   /**
     * Add a resource to the configuration.
@@ -24,7 +25,7 @@ trait XConfiguration extends XCloneable {
     * @param xResourceId The resource to add to the configuration. When the specified resource is already part of the configuration then this call is silently
     * @throws IllegalArgumentException When an empty resource id is given then an IllegalArgumentException is thrown.
     */
-  def addResource(xResourceId: XResourceId): Unit
+  def addResource(xResourceId: XResourceId): Unit = js.native
   /**
     * Returns the list of resources that are bound directly and/or indirectly to the given anchor. A URL filter can reduce the set of returned resource ids.
     * @param xAnchorId This anchor typically is either a pane or an empty {@link XResourceId} object. An empty reference is treated like an {@link XResourceId
@@ -32,7 +33,7 @@ trait XConfiguration extends XCloneable {
     * @param eSearchMode This flag defines whether to return only resources that are directly bound to the given anchor or a recursive search is to be made. N
     * @returns The set of returned resource ids may be empty when there are no resource ids that match all conditions. The resources in the sequence are ordered
     */
-  def getResources(xAnchorId: XResourceId, sTargetURLPrefix: String, eSearchMode: AnchorBindingMode): SafeArray[XResourceId]
+  def getResources(xAnchorId: XResourceId, sTargetURLPrefix: String, eSearchMode: AnchorBindingMode): SafeArray[XResourceId] = js.native
   /**
     * Returns whether the specified resource is part of the configuration.
     *
@@ -40,7 +41,7 @@ trait XConfiguration extends XCloneable {
     * @param xResourceId The id of a resource. May be empty (empty reference or empty {@link XResourceId} object) in which case `FALSE` is returned.
     * @returns Returns `TRUE` when the resource is part of the configuration and `FALSE` when it is not.
     */
-  def hasResource(xResourceId: XResourceId): Boolean
+  def hasResource(xResourceId: XResourceId): Boolean = js.native
   /**
     * Remove a resource from the configuration.
     *
@@ -48,7 +49,7 @@ trait XConfiguration extends XCloneable {
     * @param xResourceId The resource to remove from the configuration. When the specified resource is not part of the configuration then this call is silentl
     * @throws IllegalArgumentException When an empty resource id is given then an IllegalArgumentException is thrown.
     */
-  def removeResource(xResourceId: XResourceId): Unit
+  def removeResource(xResourceId: XResourceId): Unit = js.native
 }
 
 object XConfiguration {
@@ -66,5 +67,26 @@ object XConfiguration {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addResource = js.Any.fromFunction1(addResource), createClone = js.Any.fromFunction0(createClone), getResources = js.Any.fromFunction3(getResources), hasResource = js.Any.fromFunction1(hasResource), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeResource = js.Any.fromFunction1(removeResource))
     __obj.asInstanceOf[XConfiguration]
   }
+  @scala.inline
+  implicit class XConfigurationOps[Self <: XConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddResource(value: XResourceId => Unit): Self = this.set("addResource", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetResources(value: (XResourceId, String, AnchorBindingMode) => SafeArray[XResourceId]): Self = this.set("getResources", js.Any.fromFunction3(value))
+    @scala.inline
+    def setHasResource(value: XResourceId => Boolean): Self = this.set("hasResource", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveResource(value: XResourceId => Unit): Self = this.set("removeResource", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation._
 object estimatorsMod extends js.Object {
   def directiveEstimator(): ComplexityEstimator = js.native
   def directiveEstimator(options: js.Object): ComplexityEstimator = js.native
-  def fieldConfigEstimator(): ComplexityEstimator = js.native
   def fieldExtensionsEstimator(): ComplexityEstimator = js.native
-  def legacyEstimator(): ComplexityEstimator = js.native
   def simpleEstimator(): ComplexityEstimator = js.native
   def simpleEstimator(options: DefaultComplexity): ComplexityEstimator = js.native
 }

@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   * Provides the unified interface of {@link theGlobalEventBroadcaster} singleton.
   * @since LibreOffice 4.0
   */
+@js.native
 trait XGlobalEventBroadcaster
   extends XSet
      with XEventsSupplier

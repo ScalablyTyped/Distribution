@@ -30,18 +30,38 @@ trait CreateNetworkInterfacePermissionRequest extends js.Object {
 
 object CreateNetworkInterfacePermissionRequest {
   @scala.inline
-  def apply(
-    NetworkInterfaceId: NetworkInterfaceId,
-    Permission: InterfacePermissionType,
-    AwsAccountId: String = null,
-    AwsService: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): CreateNetworkInterfacePermissionRequest = {
+  def apply(NetworkInterfaceId: NetworkInterfaceId, Permission: InterfacePermissionType): CreateNetworkInterfacePermissionRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any], Permission = Permission.asInstanceOf[js.Any])
-    if (AwsAccountId != null) __obj.updateDynamic("AwsAccountId")(AwsAccountId.asInstanceOf[js.Any])
-    if (AwsService != null) __obj.updateDynamic("AwsService")(AwsService.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNetworkInterfacePermissionRequest]
   }
+  @scala.inline
+  implicit class CreateNetworkInterfacePermissionRequestOps[Self <: CreateNetworkInterfacePermissionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPermission(value: InterfacePermissionType): Self = this.set("Permission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAwsAccountId(value: String): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsAccountId: Self = this.set("AwsAccountId", js.undefined)
+    @scala.inline
+    def setAwsService(value: String): Self = this.set("AwsService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsService: Self = this.set("AwsService", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "roads-req" : "0.4.2"
+      "roads-req" : "0.4.5"
     }
   ],
   "test-dependencies" : [
     {
-      "roads-req" : "0.4.2"
+      "roads-req" : "0.4.5"
     }
   ],
   "compile-devDependencies" : [

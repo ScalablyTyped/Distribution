@@ -138,50 +138,14 @@ trait PivotTable extends js.Object {
   var _Default: String = js.native
   def ActiveFilters(Index: Double): PivotFilter = js.native
   def AddDataField(Field: js.Any): PivotField = js.native
+  def AddDataField(Field: js.Any, Caption: js.UndefOr[scala.Nothing], Function: js.Any): PivotField = js.native
   def AddDataField(Field: js.Any, Caption: js.Any): PivotField = js.native
   def AddDataField(Field: js.Any, Caption: js.Any, Function: js.Any): PivotField = js.native
-  def AddFields(): js.Any = js.native
-  def AddFields(RowFields: String): js.Any = js.native
-  def AddFields(RowFields: String, ColumnFields: String): js.Any = js.native
-  def AddFields(RowFields: String, ColumnFields: String, PageFields: String): js.Any = js.native
-  def AddFields(RowFields: String, ColumnFields: String, PageFields: String, AddToTable: Boolean): js.Any = js.native
-  def AddFields(RowFields: String, ColumnFields: String, PageFields: SafeArray[String]): js.Any = js.native
-  def AddFields(RowFields: String, ColumnFields: String, PageFields: SafeArray[String], AddToTable: Boolean): js.Any = js.native
-  def AddFields(RowFields: String, ColumnFields: SafeArray[String]): js.Any = js.native
-  def AddFields(RowFields: String, ColumnFields: SafeArray[String], PageFields: String): js.Any = js.native
-  def AddFields(RowFields: String, ColumnFields: SafeArray[String], PageFields: String, AddToTable: Boolean): js.Any = js.native
-  def AddFields(RowFields: String, ColumnFields: SafeArray[String], PageFields: SafeArray[String]): js.Any = js.native
   def AddFields(
-    RowFields: String,
-    ColumnFields: SafeArray[String],
-    PageFields: SafeArray[String],
-    AddToTable: Boolean
-  ): js.Any = js.native
-  def AddFields(RowFields: SafeArray[String]): js.Any = js.native
-  def AddFields(RowFields: SafeArray[String], ColumnFields: String): js.Any = js.native
-  def AddFields(RowFields: SafeArray[String], ColumnFields: String, PageFields: String): js.Any = js.native
-  def AddFields(RowFields: SafeArray[String], ColumnFields: String, PageFields: String, AddToTable: Boolean): js.Any = js.native
-  def AddFields(RowFields: SafeArray[String], ColumnFields: String, PageFields: SafeArray[String]): js.Any = js.native
-  def AddFields(
-    RowFields: SafeArray[String],
-    ColumnFields: String,
-    PageFields: SafeArray[String],
-    AddToTable: Boolean
-  ): js.Any = js.native
-  def AddFields(RowFields: SafeArray[String], ColumnFields: SafeArray[String]): js.Any = js.native
-  def AddFields(RowFields: SafeArray[String], ColumnFields: SafeArray[String], PageFields: String): js.Any = js.native
-  def AddFields(
-    RowFields: SafeArray[String],
-    ColumnFields: SafeArray[String],
-    PageFields: String,
-    AddToTable: Boolean
-  ): js.Any = js.native
-  def AddFields(RowFields: SafeArray[String], ColumnFields: SafeArray[String], PageFields: SafeArray[String]): js.Any = js.native
-  def AddFields(
-    RowFields: SafeArray[String],
-    ColumnFields: SafeArray[String],
-    PageFields: SafeArray[String],
-    AddToTable: Boolean
+    RowFields: js.UndefOr[String | SafeArray[String]],
+    ColumnFields: js.UndefOr[String | SafeArray[String]],
+    PageFields: js.UndefOr[String | SafeArray[String]],
+    AddToTable: js.UndefOr[Boolean]
   ): js.Any = js.native
   def AllocateChanges(): Unit = js.native
   def CalculatedFields(): typings.activexExcel.Excel.CalculatedFields = js.native
@@ -202,8 +166,76 @@ trait PivotTable extends js.Object {
   def CommitChanges(): Unit = js.native
   def ConvertToFormulas(ConvertFilters: Boolean): Unit = js.native
   def CreateCubeFile(File: String): String = js.native
+  def CreateCubeFile(
+    File: String,
+    Measures: js.UndefOr[scala.Nothing],
+    Levels: js.UndefOr[scala.Nothing],
+    Members: js.UndefOr[scala.Nothing],
+    Properties: Boolean
+  ): String = js.native
+  def CreateCubeFile(
+    File: String,
+    Measures: js.UndefOr[scala.Nothing],
+    Levels: js.UndefOr[scala.Nothing],
+    Members: SafeArray[SafeArray[String]]
+  ): String = js.native
+  def CreateCubeFile(
+    File: String,
+    Measures: js.UndefOr[scala.Nothing],
+    Levels: js.UndefOr[scala.Nothing],
+    Members: SafeArray[SafeArray[String]],
+    Properties: Boolean
+  ): String = js.native
+  def CreateCubeFile(File: String, Measures: js.UndefOr[scala.Nothing], Levels: SafeArray[String]): String = js.native
+  def CreateCubeFile(
+    File: String,
+    Measures: js.UndefOr[scala.Nothing],
+    Levels: SafeArray[String],
+    Members: js.UndefOr[scala.Nothing],
+    Properties: Boolean
+  ): String = js.native
+  def CreateCubeFile(
+    File: String,
+    Measures: js.UndefOr[scala.Nothing],
+    Levels: SafeArray[String],
+    Members: SafeArray[SafeArray[String]]
+  ): String = js.native
+  def CreateCubeFile(
+    File: String,
+    Measures: js.UndefOr[scala.Nothing],
+    Levels: SafeArray[String],
+    Members: SafeArray[SafeArray[String]],
+    Properties: Boolean
+  ): String = js.native
   def CreateCubeFile(File: String, Measures: SafeArray[String]): String = js.native
+  def CreateCubeFile(
+    File: String,
+    Measures: SafeArray[String],
+    Levels: js.UndefOr[scala.Nothing],
+    Members: js.UndefOr[scala.Nothing],
+    Properties: Boolean
+  ): String = js.native
+  def CreateCubeFile(
+    File: String,
+    Measures: SafeArray[String],
+    Levels: js.UndefOr[scala.Nothing],
+    Members: SafeArray[SafeArray[String]]
+  ): String = js.native
+  def CreateCubeFile(
+    File: String,
+    Measures: SafeArray[String],
+    Levels: js.UndefOr[scala.Nothing],
+    Members: SafeArray[SafeArray[String]],
+    Properties: Boolean
+  ): String = js.native
   def CreateCubeFile(File: String, Measures: SafeArray[String], Levels: SafeArray[String]): String = js.native
+  def CreateCubeFile(
+    File: String,
+    Measures: SafeArray[String],
+    Levels: SafeArray[String],
+    Members: js.UndefOr[scala.Nothing],
+    Properties: Boolean
+  ): String = js.native
   def CreateCubeFile(
     File: String,
     Measures: SafeArray[String],
@@ -315,6 +347,7 @@ trait PivotTable extends js.Object {
   def PivotFormulas(Index: Double): PivotFormula = js.native
   /** @param Mode [Mode=0] */
   def PivotSelect(Name: String): Unit = js.native
+  def PivotSelect(Name: String, Mode: js.UndefOr[scala.Nothing], UseStandardName: Boolean): Unit = js.native
   def PivotSelect(Name: String, Mode: XlPTSelectionMode): Unit = js.native
   def PivotSelect(Name: String, Mode: XlPTSelectionMode, UseStandardName: Boolean): Unit = js.native
   def PivotTableWizard(): Unit = js.native

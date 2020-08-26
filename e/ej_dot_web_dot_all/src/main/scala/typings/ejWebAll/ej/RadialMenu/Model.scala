@@ -4,76 +4,115 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Model extends js.Object {
   /** To show the Radial in initial render.
     */
-  var autoOpen: js.UndefOr[Boolean] = js.undefined
+  var autoOpen: js.UndefOr[Boolean] = js.native
   /** Renders the back button Image for Radial using class.
     */
-  var backImageClass: js.UndefOr[String] = js.undefined
+  var backImageClass: js.UndefOr[String] = js.native
   /** Event triggers when we click an item.
     */
-  var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
+  var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
   /** Event triggers when the menu is closed.
     */
-  var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
+  var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.native
   /** Sets the root class for RadialMenu theme. This cssClass API helps to use custom skinning option for RadialMenu control. By defining the root class using this API, we need to
     * include this root class in CSS.
     */
-  var cssClass: js.UndefOr[String] = js.undefined
+  var cssClass: js.UndefOr[String] = js.native
   /** To enable Animation for Radial Menu.
     */
-  var enableAnimation: js.UndefOr[Boolean] = js.undefined
+  var enableAnimation: js.UndefOr[Boolean] = js.native
   /** Renders the Image for Radial using Class.
     */
-  var imageClass: js.UndefOr[String] = js.undefined
+  var imageClass: js.UndefOr[String] = js.native
   /** Specify the items of radial menu
     */
-  var items: js.UndefOr[js.Array[Item]] = js.undefined
+  var items: js.UndefOr[js.Array[Item]] = js.native
   /** Event triggers when the menu is opened.
     */
-  var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
+  var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
   /** To set radial render position.
     */
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: js.UndefOr[js.Any] = js.native
   /** Specifies the radius of radial menu
     */
-  var radius: js.UndefOr[Double] = js.undefined
+  var radius: js.UndefOr[Double] = js.native
   /** To show the Radial while clicking given target element.
     */
-  var targetElementId: js.UndefOr[String] = js.undefined
+  var targetElementId: js.UndefOr[String] = js.native
 }
 
 object Model {
   @scala.inline
-  def apply(
-    autoOpen: js.UndefOr[Boolean] = js.undefined,
-    backImageClass: String = null,
-    click: /* e */ ClickEventArgs => Unit = null,
-    close: /* e */ CloseEventArgs => Unit = null,
-    cssClass: String = null,
-    enableAnimation: js.UndefOr[Boolean] = js.undefined,
-    imageClass: String = null,
-    items: js.Array[Item] = null,
-    open: /* e */ OpenEventArgs => Unit = null,
-    position: js.Any = null,
-    radius: js.UndefOr[Double] = js.undefined,
-    targetElementId: String = null
-  ): Model = {
+  def apply(): Model = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.get.asInstanceOf[js.Any])
-    if (backImageClass != null) __obj.updateDynamic("backImageClass")(backImageClass.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
-    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1(open))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(radius)) __obj.updateDynamic("radius")(radius.get.asInstanceOf[js.Any])
-    if (targetElementId != null) __obj.updateDynamic("targetElementId")(targetElementId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
+  @scala.inline
+  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoOpen(value: Boolean): Self = this.set("autoOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoOpen: Self = this.set("autoOpen", js.undefined)
+    @scala.inline
+    def setBackImageClass(value: String): Self = this.set("backImageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackImageClass: Self = this.set("backImageClass", js.undefined)
+    @scala.inline
+    def setClick(value: /* e */ ClickEventArgs => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClick: Self = this.set("click", js.undefined)
+    @scala.inline
+    def setClose(value: /* e */ CloseEventArgs => Unit): Self = this.set("close", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setEnableAnimation(value: Boolean): Self = this.set("enableAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAnimation: Self = this.set("enableAnimation", js.undefined)
+    @scala.inline
+    def setImageClass(value: String): Self = this.set("imageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageClass: Self = this.set("imageClass", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: Item*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[Item]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setOpen(value: /* e */ OpenEventArgs => Unit): Self = this.set("open", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setPosition(value: js.Any): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadius: Self = this.set("radius", js.undefined)
+    @scala.inline
+    def setTargetElementId(value: String): Self = this.set("targetElementId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetElementId: Self = this.set("targetElementId", js.undefined)
+  }
+  
 }
 

@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class TextEncoder ()
   extends typings.textEncodingUtf8.mod.TextEncoding.TextEncoder {
   def this(utfLabel: String) = this()
+  def this(utfLabel: js.UndefOr[scala.Nothing], options: TextEncoderOptions) = this()
   def this(utfLabel: String, options: TextEncoderOptions) = this()
 }
 

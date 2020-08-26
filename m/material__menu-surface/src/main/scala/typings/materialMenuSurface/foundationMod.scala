@@ -25,16 +25,14 @@ object foundationMod extends js.Object {
       */
     def close(): Unit = js.native
     def close(skipRestoreFocus: Boolean): Unit = js.native
-    // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
-    /* CompleteClass */
-    override def destroy(): Unit = js.native
+    /**
+      * Flip menu corner horizontally.
+      */
+    def flipCornerHorizontally(): Unit = js.native
     /** Handle clicks and close if not within menu-surface element. */
     def handleBodyClick(evt: MouseEvent): Unit = js.native
     /** Handle keys that close the surface. */
     def handleKeydown(evt: KeyboardEvent): Unit = js.native
-    // Subclasses should override this method to perform initialization routines (registering events, etc.)
-    /* CompleteClass */
-    override def init(): Unit = js.native
     def isOpen(): Boolean = js.native
     /**
       * Open the menu surface.
@@ -65,27 +63,27 @@ object foundationMod extends js.Object {
   /* static members */
   @js.native
   object MDCMenuSurfaceFoundation extends js.Object {
-    val Corner: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Corner */ js.Any = js.native
-    val cssClasses: ANCHOR = js.native
+    def Corner: js.Any = js.native
+    def cssClasses: ANCHOR = js.native
     /**
       * @see {@link MDCMenuSurfaceAdapter} for typing information on parameters and return types.
       */
-    val defaultAdapter: MDCMenuSurfaceAdapter = js.native
-    val numbers: ANCHORTOMENUSURFACEWIDTHRATIO = js.native
-    val strings: CLOSEDEVENT = js.native
+    def defaultAdapter: MDCMenuSurfaceAdapter = js.native
+    def numbers: ANCHORTOMENUSURFACEWIDTHRATIO = js.native
+    def strings: CLOSEDEVENT = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    val Corner: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Corner */ js.Any = js.native
-    val cssClasses: ANCHOR = js.native
+    def Corner: js.Any = js.native
+    def cssClasses: ANCHOR = js.native
     /**
       * @see {@link MDCMenuSurfaceAdapter} for typing information on parameters and return types.
       */
-    val defaultAdapter: MDCMenuSurfaceAdapter = js.native
-    val numbers: ANCHORTOMENUSURFACEWIDTHRATIO = js.native
-    val strings: CLOSEDEVENT = js.native
+    def defaultAdapter: MDCMenuSurfaceAdapter = js.native
+    def numbers: ANCHORTOMENUSURFACEWIDTHRATIO = js.native
+    def strings: CLOSEDEVENT = js.native
   }
   
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "NonNullAssert")
 @js.native
 class NonNullAssert protected ()
-  extends typings.angularCompiler.publicApiMod.NonNullAssert {
+  extends typings.angularCompiler.compilerMod.NonNullAssert {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

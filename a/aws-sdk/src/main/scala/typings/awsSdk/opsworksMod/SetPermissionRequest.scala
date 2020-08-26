@@ -30,18 +30,38 @@ trait SetPermissionRequest extends js.Object {
 
 object SetPermissionRequest {
   @scala.inline
-  def apply(
-    IamUserArn: String,
-    StackId: String,
-    AllowSsh: js.UndefOr[Boolean] = js.undefined,
-    AllowSudo: js.UndefOr[Boolean] = js.undefined,
-    Level: String = null
-  ): SetPermissionRequest = {
+  def apply(IamUserArn: String, StackId: String): SetPermissionRequest = {
     val __obj = js.Dynamic.literal(IamUserArn = IamUserArn.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowSsh)) __obj.updateDynamic("AllowSsh")(AllowSsh.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowSudo)) __obj.updateDynamic("AllowSudo")(AllowSudo.get.asInstanceOf[js.Any])
-    if (Level != null) __obj.updateDynamic("Level")(Level.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetPermissionRequest]
   }
+  @scala.inline
+  implicit class SetPermissionRequestOps[Self <: SetPermissionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIamUserArn(value: String): Self = this.set("IamUserArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowSsh(value: Boolean): Self = this.set("AllowSsh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSsh: Self = this.set("AllowSsh", js.undefined)
+    @scala.inline
+    def setAllowSudo(value: Boolean): Self = this.set("AllowSudo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSudo: Self = this.set("AllowSudo", js.undefined)
+    @scala.inline
+    def setLevel(value: String): Self = this.set("Level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("Level", js.undefined)
+  }
+  
 }
 

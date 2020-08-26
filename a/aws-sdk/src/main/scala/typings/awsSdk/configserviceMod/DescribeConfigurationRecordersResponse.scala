@@ -14,10 +14,28 @@ trait DescribeConfigurationRecordersResponse extends js.Object {
 
 object DescribeConfigurationRecordersResponse {
   @scala.inline
-  def apply(ConfigurationRecorders: ConfigurationRecorderList = null): DescribeConfigurationRecordersResponse = {
+  def apply(): DescribeConfigurationRecordersResponse = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationRecorders != null) __obj.updateDynamic("ConfigurationRecorders")(ConfigurationRecorders.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationRecordersResponse]
   }
+  @scala.inline
+  implicit class DescribeConfigurationRecordersResponseOps[Self <: DescribeConfigurationRecordersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationRecordersVarargs(value: ConfigurationRecorder*): Self = this.set("ConfigurationRecorders", js.Array(value :_*))
+    @scala.inline
+    def setConfigurationRecorders(value: ConfigurationRecorderList): Self = this.set("ConfigurationRecorders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationRecorders: Self = this.set("ConfigurationRecorders", js.undefined)
+  }
+  
 }
 

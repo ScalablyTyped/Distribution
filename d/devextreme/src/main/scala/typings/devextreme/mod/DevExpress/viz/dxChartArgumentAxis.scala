@@ -1,14 +1,9 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.anon.ColorOpacity
-import typings.devextreme.anon.Length
-import typings.devextreme.anon.Line
 import typings.devextreme.devextremeStrings.allArgumentPoints
 import typings.devextreme.devextremeStrings.auto
-import typings.devextreme.devextremeStrings.betweenLabels
 import typings.devextreme.devextremeStrings.bottom
 import typings.devextreme.devextremeStrings.continuous
-import typings.devextreme.devextremeStrings.crossLabels
 import typings.devextreme.devextremeStrings.datetime
 import typings.devextreme.devextremeStrings.day
 import typings.devextreme.devextremeStrings.discrete
@@ -35,184 +30,265 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxChartArgumentAxis extends dxChartCommonAxisSettings {
   /** @name dxChart.Options.argumentAxis.aggregateByCategory */
-  var aggregateByCategory: js.UndefOr[Boolean] = js.undefined
+  var aggregateByCategory: js.UndefOr[Boolean] = js.native
   /** @name dxChart.Options.argumentAxis.aggregationGroupWidth */
-  var aggregationGroupWidth: js.UndefOr[Double] = js.undefined
+  var aggregationGroupWidth: js.UndefOr[Double] = js.native
   /** @name dxChart.Options.argumentAxis.aggregationInterval */
   var aggregationInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.undefined
+  ] = js.native
   /** @name dxChart.Options.argumentAxis.argumentType */
-  var argumentType: js.UndefOr[datetime | numeric | string_] = js.undefined
+  var argumentType: js.UndefOr[datetime | numeric | string_] = js.native
   /** @name dxChart.Options.argumentAxis.axisDivisionFactor */
-  var axisDivisionFactor: js.UndefOr[Double] = js.undefined
+  var axisDivisionFactor: js.UndefOr[Double] = js.native
   /** @name dxChart.Options.argumentAxis.breaks */
-  var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.undefined
+  var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.native
   /** @name dxChart.Options.argumentAxis.categories */
-  var categories: js.UndefOr[js.Array[Double | String | Date]] = js.undefined
+  var categories: js.UndefOr[js.Array[Double | String | Date]] = js.native
   /** @name dxChart.Options.argumentAxis.constantLineStyle */
   @JSName("constantLineStyle")
-  var constantLineStyle_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisConstantLineStyle] = js.undefined
+  var constantLineStyle_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisConstantLineStyle] = js.native
   /** @name dxChart.Options.argumentAxis.constantLines */
-  var constantLines: js.UndefOr[js.Array[dxChartArgumentAxisConstantLines]] = js.undefined
+  var constantLines: js.UndefOr[js.Array[dxChartArgumentAxisConstantLines]] = js.native
+  /** @name dxChart.Options.argumentAxis.customPosition */
+  var customPosition: js.UndefOr[Double | Date | String] = js.native
+  /** @name dxChart.Options.argumentAxis.customPositionAxis */
+  var customPositionAxis: js.UndefOr[String] = js.native
   /** @name dxChart.Options.argumentAxis.holidays */
-  var holidays: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
+  var holidays: js.UndefOr[js.Array[Date | Double | String]] = js.native
   /** @name dxChart.Options.argumentAxis.hoverMode */
-  var hoverMode: js.UndefOr[allArgumentPoints | none] = js.undefined
+  var hoverMode: js.UndefOr[allArgumentPoints | none] = js.native
   /** @name dxChart.Options.argumentAxis.label */
   @JSName("label")
-  var label_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisLabel] = js.undefined
+  var label_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisLabel] = js.native
   /** @name dxChart.Options.argumentAxis.linearThreshold */
-  var linearThreshold: js.UndefOr[Double] = js.undefined
+  var linearThreshold: js.UndefOr[Double] = js.native
   /** @name dxChart.Options.argumentAxis.logarithmBase */
-  var logarithmBase: js.UndefOr[Double] = js.undefined
+  var logarithmBase: js.UndefOr[Double] = js.native
   /** @deprecated */
   /** @name dxChart.Options.argumentAxis.max */
-  var max: js.UndefOr[Double | Date | String] = js.undefined
+  var max: js.UndefOr[Double | Date | String] = js.native
   /** @deprecated */
   /** @name dxChart.Options.argumentAxis.min */
-  var min: js.UndefOr[Double | Date | String] = js.undefined
+  var min: js.UndefOr[Double | Date | String] = js.native
   /** @name dxChart.Options.argumentAxis.minVisualRangeLength */
   var minVisualRangeLength: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.undefined
+  ] = js.native
   /** @name dxChart.Options.argumentAxis.minorTickCount */
-  var minorTickCount: js.UndefOr[Double] = js.undefined
+  var minorTickCount: js.UndefOr[Double] = js.native
   /** @name dxChart.Options.argumentAxis.minorTickInterval */
   var minorTickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.undefined
+  ] = js.native
+  /** @name dxChart.Options.argumentAxis.offset */
+  var offset: js.UndefOr[Double] = js.native
   /** @name dxChart.Options.argumentAxis.position */
-  var position: js.UndefOr[bottom | left | right | top] = js.undefined
+  var position: js.UndefOr[bottom | left | right | top] = js.native
   /** @name dxChart.Options.argumentAxis.singleWorkdays */
-  var singleWorkdays: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
+  var singleWorkdays: js.UndefOr[js.Array[Date | Double | String]] = js.native
   /** @name dxChart.Options.argumentAxis.strips */
-  var strips: js.UndefOr[js.Array[dxChartArgumentAxisStrips]] = js.undefined
+  var strips: js.UndefOr[js.Array[dxChartArgumentAxisStrips]] = js.native
   /** @name dxChart.Options.argumentAxis.tickInterval */
   var tickInterval: js.UndefOr[
     Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.undefined
+  ] = js.native
   /** @name dxChart.Options.argumentAxis.title */
   @JSName("title")
-  var title_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisTitle] = js.undefined
+  var title_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisTitle] = js.native
   /** @name dxChart.Options.argumentAxis.type */
-  var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.undefined
+  var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.native
   /** @name dxChart.Options.argumentAxis.visualRange */
-  var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
+  var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.native
   /** @name dxChart.Options.argumentAxis.visualRangeUpdateMode */
-  var visualRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.undefined
+  var visualRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.native
   /** @name dxChart.Options.argumentAxis.wholeRange */
-  var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
+  var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.native
   /** @name dxChart.Options.argumentAxis.workWeek */
-  var workWeek: js.UndefOr[js.Array[Double]] = js.undefined
+  var workWeek: js.UndefOr[js.Array[Double]] = js.native
   /** @name dxChart.Options.argumentAxis.workdaysOnly */
-  var workdaysOnly: js.UndefOr[Boolean] = js.undefined
+  var workdaysOnly: js.UndefOr[Boolean] = js.native
 }
 
 object dxChartArgumentAxis {
   @scala.inline
-  def apply(
-    aggregateByCategory: js.UndefOr[Boolean] = js.undefined,
-    aggregationGroupWidth: js.UndefOr[Double] = js.undefined,
-    aggregationInterval: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
-    allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    argumentType: datetime | numeric | string_ = null,
-    axisDivisionFactor: js.UndefOr[Double] = js.undefined,
-    breakStyle: Line = null,
-    breaks: js.Array[ScaleBreak] = null,
-    categories: js.Array[Double | String | Date] = null,
-    color: String = null,
-    constantLineStyle: dxChartArgumentAxisConstantLineStyle = null,
-    constantLines: js.Array[dxChartArgumentAxisConstantLines] = null,
-    discreteAxisDivisionMode: betweenLabels | crossLabels = null,
-    endOnTick: js.UndefOr[Boolean] = js.undefined,
-    grid: ColorOpacity = null,
-    holidays: js.Array[Date | Double | String] = null,
-    hoverMode: allArgumentPoints | none = null,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    label: dxChartArgumentAxisLabel = null,
-    linearThreshold: js.UndefOr[Double] = js.undefined,
-    logarithmBase: js.UndefOr[Double] = js.undefined,
-    max: Double | Date | String = null,
-    maxValueMargin: js.UndefOr[Double] = js.undefined,
-    min: Double | Date | String = null,
-    minValueMargin: js.UndefOr[Double] = js.undefined,
-    minVisualRangeLength: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
-    minorGrid: ColorOpacity = null,
-    minorTick: Length = null,
-    minorTickCount: js.UndefOr[Double] = js.undefined,
-    minorTickInterval: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    placeholderSize: js.UndefOr[Double] = js.undefined,
-    position: bottom | left | right | top = null,
-    singleWorkdays: js.Array[Date | Double | String] = null,
-    stripStyle: dxChartCommonAxisSettingsStripStyle = null,
-    strips: js.Array[dxChartArgumentAxisStrips] = null,
-    tick: Length = null,
-    tickInterval: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
-    title: dxChartArgumentAxisTitle = null,
-    `type`: continuous | discrete | logarithmic = null,
-    valueMarginsEnabled: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    visualRange: VizRange | (js.Array[Double | String | Date]) = null,
-    visualRangeUpdateMode: auto | keep | reset | shift = null,
-    wholeRange: VizRange | (js.Array[Double | String | Date]) = null,
-    width: js.UndefOr[Double] = js.undefined,
-    workWeek: js.Array[Double] = null,
-    workdaysOnly: js.UndefOr[Boolean] = js.undefined
-  ): dxChartArgumentAxis = {
+  def apply(): dxChartArgumentAxis = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aggregateByCategory)) __obj.updateDynamic("aggregateByCategory")(aggregateByCategory.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(aggregationGroupWidth)) __obj.updateDynamic("aggregationGroupWidth")(aggregationGroupWidth.get.asInstanceOf[js.Any])
-    if (aggregationInterval != null) __obj.updateDynamic("aggregationInterval")(aggregationInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.get.asInstanceOf[js.Any])
-    if (argumentType != null) __obj.updateDynamic("argumentType")(argumentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(axisDivisionFactor)) __obj.updateDynamic("axisDivisionFactor")(axisDivisionFactor.get.asInstanceOf[js.Any])
-    if (breakStyle != null) __obj.updateDynamic("breakStyle")(breakStyle.asInstanceOf[js.Any])
-    if (breaks != null) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (constantLineStyle != null) __obj.updateDynamic("constantLineStyle")(constantLineStyle.asInstanceOf[js.Any])
-    if (constantLines != null) __obj.updateDynamic("constantLines")(constantLines.asInstanceOf[js.Any])
-    if (discreteAxisDivisionMode != null) __obj.updateDynamic("discreteAxisDivisionMode")(discreteAxisDivisionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(endOnTick)) __obj.updateDynamic("endOnTick")(endOnTick.get.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (holidays != null) __obj.updateDynamic("holidays")(holidays.asInstanceOf[js.Any])
-    if (hoverMode != null) __obj.updateDynamic("hoverMode")(hoverMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(linearThreshold)) __obj.updateDynamic("linearThreshold")(linearThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(logarithmBase)) __obj.updateDynamic("logarithmBase")(logarithmBase.get.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValueMargin)) __obj.updateDynamic("maxValueMargin")(maxValueMargin.get.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValueMargin)) __obj.updateDynamic("minValueMargin")(minValueMargin.get.asInstanceOf[js.Any])
-    if (minVisualRangeLength != null) __obj.updateDynamic("minVisualRangeLength")(minVisualRangeLength.asInstanceOf[js.Any])
-    if (minorGrid != null) __obj.updateDynamic("minorGrid")(minorGrid.asInstanceOf[js.Any])
-    if (minorTick != null) __obj.updateDynamic("minorTick")(minorTick.asInstanceOf[js.Any])
-    if (!js.isUndefined(minorTickCount)) __obj.updateDynamic("minorTickCount")(minorTickCount.get.asInstanceOf[js.Any])
-    if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(placeholderSize)) __obj.updateDynamic("placeholderSize")(placeholderSize.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (singleWorkdays != null) __obj.updateDynamic("singleWorkdays")(singleWorkdays.asInstanceOf[js.Any])
-    if (stripStyle != null) __obj.updateDynamic("stripStyle")(stripStyle.asInstanceOf[js.Any])
-    if (strips != null) __obj.updateDynamic("strips")(strips.asInstanceOf[js.Any])
-    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
-    if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueMarginsEnabled)) __obj.updateDynamic("valueMarginsEnabled")(valueMarginsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (visualRange != null) __obj.updateDynamic("visualRange")(visualRange.asInstanceOf[js.Any])
-    if (visualRangeUpdateMode != null) __obj.updateDynamic("visualRangeUpdateMode")(visualRangeUpdateMode.asInstanceOf[js.Any])
-    if (wholeRange != null) __obj.updateDynamic("wholeRange")(wholeRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (workWeek != null) __obj.updateDynamic("workWeek")(workWeek.asInstanceOf[js.Any])
-    if (!js.isUndefined(workdaysOnly)) __obj.updateDynamic("workdaysOnly")(workdaysOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartArgumentAxis]
   }
+  @scala.inline
+  implicit class dxChartArgumentAxisOps[Self <: dxChartArgumentAxis] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregateByCategory(value: Boolean): Self = this.set("aggregateByCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregateByCategory: Self = this.set("aggregateByCategory", js.undefined)
+    @scala.inline
+    def setAggregationGroupWidth(value: Double): Self = this.set("aggregationGroupWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregationGroupWidth: Self = this.set("aggregationGroupWidth", js.undefined)
+    @scala.inline
+    def setAggregationInterval(
+      value: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
+    ): Self = this.set("aggregationInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregationInterval: Self = this.set("aggregationInterval", js.undefined)
+    @scala.inline
+    def setArgumentType(value: datetime | numeric | string_): Self = this.set("argumentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgumentType: Self = this.set("argumentType", js.undefined)
+    @scala.inline
+    def setAxisDivisionFactor(value: Double): Self = this.set("axisDivisionFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisDivisionFactor: Self = this.set("axisDivisionFactor", js.undefined)
+    @scala.inline
+    def setBreaksVarargs(value: ScaleBreak*): Self = this.set("breaks", js.Array(value :_*))
+    @scala.inline
+    def setBreaks(value: js.Array[ScaleBreak]): Self = this.set("breaks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreaks: Self = this.set("breaks", js.undefined)
+    @scala.inline
+    def setCategoriesVarargs(value: (Double | String | Date)*): Self = this.set("categories", js.Array(value :_*))
+    @scala.inline
+    def setCategories(value: js.Array[Double | String | Date]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategories: Self = this.set("categories", js.undefined)
+    @scala.inline
+    def setConstantLineStyle(value: dxChartArgumentAxisConstantLineStyle): Self = this.set("constantLineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstantLineStyle: Self = this.set("constantLineStyle", js.undefined)
+    @scala.inline
+    def setConstantLinesVarargs(value: dxChartArgumentAxisConstantLines*): Self = this.set("constantLines", js.Array(value :_*))
+    @scala.inline
+    def setConstantLines(value: js.Array[dxChartArgumentAxisConstantLines]): Self = this.set("constantLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstantLines: Self = this.set("constantLines", js.undefined)
+    @scala.inline
+    def setCustomPosition(value: Double | Date | String): Self = this.set("customPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomPosition: Self = this.set("customPosition", js.undefined)
+    @scala.inline
+    def setCustomPositionAxis(value: String): Self = this.set("customPositionAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomPositionAxis: Self = this.set("customPositionAxis", js.undefined)
+    @scala.inline
+    def setHolidaysVarargs(value: (Date | Double | String)*): Self = this.set("holidays", js.Array(value :_*))
+    @scala.inline
+    def setHolidays(value: js.Array[Date | Double | String]): Self = this.set("holidays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHolidays: Self = this.set("holidays", js.undefined)
+    @scala.inline
+    def setHoverMode(value: allArgumentPoints | none): Self = this.set("hoverMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverMode: Self = this.set("hoverMode", js.undefined)
+    @scala.inline
+    def setLabel(value: dxChartArgumentAxisLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLinearThreshold(value: Double): Self = this.set("linearThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinearThreshold: Self = this.set("linearThreshold", js.undefined)
+    @scala.inline
+    def setLogarithmBase(value: Double): Self = this.set("logarithmBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogarithmBase: Self = this.set("logarithmBase", js.undefined)
+    @scala.inline
+    def setMax(value: Double | Date | String): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double | Date | String): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMinVisualRangeLength(
+      value: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
+    ): Self = this.set("minVisualRangeLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinVisualRangeLength: Self = this.set("minVisualRangeLength", js.undefined)
+    @scala.inline
+    def setMinorTickCount(value: Double): Self = this.set("minorTickCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorTickCount: Self = this.set("minorTickCount", js.undefined)
+    @scala.inline
+    def setMinorTickInterval(
+      value: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
+    ): Self = this.set("minorTickInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorTickInterval: Self = this.set("minorTickInterval", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPosition(value: bottom | left | right | top): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSingleWorkdaysVarargs(value: (Date | Double | String)*): Self = this.set("singleWorkdays", js.Array(value :_*))
+    @scala.inline
+    def setSingleWorkdays(value: js.Array[Date | Double | String]): Self = this.set("singleWorkdays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleWorkdays: Self = this.set("singleWorkdays", js.undefined)
+    @scala.inline
+    def setStripsVarargs(value: dxChartArgumentAxisStrips*): Self = this.set("strips", js.Array(value :_*))
+    @scala.inline
+    def setStrips(value: js.Array[dxChartArgumentAxisStrips]): Self = this.set("strips", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrips: Self = this.set("strips", js.undefined)
+    @scala.inline
+    def setTickInterval(
+      value: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
+    ): Self = this.set("tickInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickInterval: Self = this.set("tickInterval", js.undefined)
+    @scala.inline
+    def setTitle(value: dxChartArgumentAxisTitle): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: continuous | discrete | logarithmic): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVisualRangeVarargs(value: (Double | String | Date)*): Self = this.set("visualRange", js.Array(value :_*))
+    @scala.inline
+    def setVisualRange(value: VizRange | (js.Array[Double | String | Date])): Self = this.set("visualRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisualRange: Self = this.set("visualRange", js.undefined)
+    @scala.inline
+    def setVisualRangeUpdateMode(value: auto | keep | reset | shift): Self = this.set("visualRangeUpdateMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisualRangeUpdateMode: Self = this.set("visualRangeUpdateMode", js.undefined)
+    @scala.inline
+    def setWholeRangeVarargs(value: (Double | String | Date)*): Self = this.set("wholeRange", js.Array(value :_*))
+    @scala.inline
+    def setWholeRange(value: VizRange | (js.Array[Double | String | Date])): Self = this.set("wholeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWholeRange: Self = this.set("wholeRange", js.undefined)
+    @scala.inline
+    def setWorkWeekVarargs(value: Double*): Self = this.set("workWeek", js.Array(value :_*))
+    @scala.inline
+    def setWorkWeek(value: js.Array[Double]): Self = this.set("workWeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkWeek: Self = this.set("workWeek", js.undefined)
+    @scala.inline
+    def setWorkdaysOnly(value: Boolean): Self = this.set("workdaysOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkdaysOnly: Self = this.set("workdaysOnly", js.undefined)
+  }
+  
 }
 

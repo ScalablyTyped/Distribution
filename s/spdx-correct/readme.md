@@ -11,8 +11,8 @@ correct invalid SPDX expressions
 | Full name          | spdx-correct |
 | Keywords           | SPDX, law, legal, license, metadata |
 | # releases         | 5 |
-| # dependents       | 72 |
-| # downloads        | 425015896 |
+| # dependents       | 74 |
+| # downloads        | 443329573 |
 | # stars            | 0 |
 
 ## Links

@@ -81,6 +81,11 @@ trait LDClientBase extends js.Object {
     *   (which can also be obtained by calling [[variation]]).
     */
   def identify(user: LDUser): js.Promise[LDFlagSet] = js.native
+  def identify(
+    user: LDUser,
+    hash: js.UndefOr[scala.Nothing],
+    onDone: js.Function2[/* err */ Error | Null, /* flags */ LDFlagSet | Null, Unit]
+  ): js.Promise[LDFlagSet] = js.native
   def identify(user: LDUser, hash: String): js.Promise[LDFlagSet] = js.native
   def identify(
     user: LDUser,

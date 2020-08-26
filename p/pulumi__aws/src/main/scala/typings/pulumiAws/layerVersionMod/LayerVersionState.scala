@@ -17,7 +17,7 @@ trait LayerVersionState extends js.Object {
     */
   val code: js.UndefOr[Input[Archive]] = js.native
   /**
-    * A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
+    * A list of [Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/API_PublishLayerVersion.html#SSS-PublishLayerVersion-request-CompatibleRuntimes) this layer is compatible with. Up to 5 runtimes can be specified.
     */
   val compatibleRuntimes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
@@ -37,7 +37,7 @@ trait LayerVersionState extends js.Object {
     */
   val layerName: js.UndefOr[Input[String]] = js.native
   /**
-    * License info for your Lambda Layer. See [License Info][3].
+    * License info for your Lambda Layer. See [License Info](https://docs.aws.amazon.com/lambda/latest/dg/API_PublishLayerVersion.html#SSS-PublishLayerVersion-request-LicenseInfo).
     */
   val licenseInfo: js.UndefOr[Input[String]] = js.native
   /**
@@ -68,38 +68,80 @@ trait LayerVersionState extends js.Object {
 
 object LayerVersionState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    code: Input[Archive] = null,
-    compatibleRuntimes: Input[js.Array[Input[String]]] = null,
-    createdDate: Input[String] = null,
-    description: Input[String] = null,
-    layerArn: Input[String] = null,
-    layerName: Input[String] = null,
-    licenseInfo: Input[String] = null,
-    s3Bucket: Input[String] = null,
-    s3Key: Input[String] = null,
-    s3ObjectVersion: Input[String] = null,
-    sourceCodeHash: Input[String] = null,
-    sourceCodeSize: Input[Double] = null,
-    version: Input[String] = null
-  ): LayerVersionState = {
+  def apply(): LayerVersionState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (compatibleRuntimes != null) __obj.updateDynamic("compatibleRuntimes")(compatibleRuntimes.asInstanceOf[js.Any])
-    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (layerArn != null) __obj.updateDynamic("layerArn")(layerArn.asInstanceOf[js.Any])
-    if (layerName != null) __obj.updateDynamic("layerName")(layerName.asInstanceOf[js.Any])
-    if (licenseInfo != null) __obj.updateDynamic("licenseInfo")(licenseInfo.asInstanceOf[js.Any])
-    if (s3Bucket != null) __obj.updateDynamic("s3Bucket")(s3Bucket.asInstanceOf[js.Any])
-    if (s3Key != null) __obj.updateDynamic("s3Key")(s3Key.asInstanceOf[js.Any])
-    if (s3ObjectVersion != null) __obj.updateDynamic("s3ObjectVersion")(s3ObjectVersion.asInstanceOf[js.Any])
-    if (sourceCodeHash != null) __obj.updateDynamic("sourceCodeHash")(sourceCodeHash.asInstanceOf[js.Any])
-    if (sourceCodeSize != null) __obj.updateDynamic("sourceCodeSize")(sourceCodeSize.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerVersionState]
   }
+  @scala.inline
+  implicit class LayerVersionStateOps[Self <: LayerVersionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCode(value: Input[Archive]): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setCompatibleRuntimesVarargs(value: Input[String]*): Self = this.set("compatibleRuntimes", js.Array(value :_*))
+    @scala.inline
+    def setCompatibleRuntimes(value: Input[js.Array[Input[String]]]): Self = this.set("compatibleRuntimes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompatibleRuntimes: Self = this.set("compatibleRuntimes", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: Input[String]): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLayerArn(value: Input[String]): Self = this.set("layerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerArn: Self = this.set("layerArn", js.undefined)
+    @scala.inline
+    def setLayerName(value: Input[String]): Self = this.set("layerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerName: Self = this.set("layerName", js.undefined)
+    @scala.inline
+    def setLicenseInfo(value: Input[String]): Self = this.set("licenseInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseInfo: Self = this.set("licenseInfo", js.undefined)
+    @scala.inline
+    def setS3Bucket(value: Input[String]): Self = this.set("s3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Bucket: Self = this.set("s3Bucket", js.undefined)
+    @scala.inline
+    def setS3Key(value: Input[String]): Self = this.set("s3Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Key: Self = this.set("s3Key", js.undefined)
+    @scala.inline
+    def setS3ObjectVersion(value: Input[String]): Self = this.set("s3ObjectVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3ObjectVersion: Self = this.set("s3ObjectVersion", js.undefined)
+    @scala.inline
+    def setSourceCodeHash(value: Input[String]): Self = this.set("sourceCodeHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCodeHash: Self = this.set("sourceCodeHash", js.undefined)
+    @scala.inline
+    def setSourceCodeSize(value: Input[Double]): Self = this.set("sourceCodeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCodeSize: Self = this.set("sourceCodeSize", js.undefined)
+    @scala.inline
+    def setVersion(value: Input[String]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

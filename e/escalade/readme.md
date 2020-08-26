@@ -1,7 +1,7 @@
 
 # Scala.js typings for escalade
 
-Typings are for version 3.0.1
+Typings are for version 3.0.2
 
 ## Library description:
 A tiny (183B to 210B) and fast utility to ascend parent directories
@@ -10,9 +10,9 @@ A tiny (183B to 210B) and fast utility to ascend parent directories
 | ------------------ | :-------------: |
 | Full name          | escalade |
 | Keywords           | find, parent, parents, directory, search, walk |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 154 |
+| # releases         | 6 |
+| # dependents       | 3 |
+| # downloads        | 7678819 |
 | # stars            | 0 |
 
 ## Links

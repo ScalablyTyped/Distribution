@@ -36,7 +36,7 @@ class FormStore protected () extends js.Object {
   var isFieldsValidating: js.Any = js.native
   var lastValidatePromise: js.Any = js.native
   var notifyObservers: js.Any = js.native
-  var preserve: js.UndefOr[js.Any] = js.native
+  var preserve: js.Any = js.native
   var registerField: js.Any = js.native
   var resetFields: js.Any = js.native
   /**

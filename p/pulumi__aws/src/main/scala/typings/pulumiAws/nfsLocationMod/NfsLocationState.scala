@@ -28,28 +28,52 @@ trait NfsLocationState extends js.Object {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   val uri: js.UndefOr[Input[String]] = js.native
 }
 
 object NfsLocationState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    onPremConfig: Input[NfsLocationOnPremConfig] = null,
-    serverHostname: Input[String] = null,
-    subdirectory: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    uri: Input[String] = null
-  ): NfsLocationState = {
+  def apply(): NfsLocationState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (onPremConfig != null) __obj.updateDynamic("onPremConfig")(onPremConfig.asInstanceOf[js.Any])
-    if (serverHostname != null) __obj.updateDynamic("serverHostname")(serverHostname.asInstanceOf[js.Any])
-    if (subdirectory != null) __obj.updateDynamic("subdirectory")(subdirectory.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[NfsLocationState]
   }
+  @scala.inline
+  implicit class NfsLocationStateOps[Self <: NfsLocationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setOnPremConfig(value: Input[NfsLocationOnPremConfig]): Self = this.set("onPremConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPremConfig: Self = this.set("onPremConfig", js.undefined)
+    @scala.inline
+    def setServerHostname(value: Input[String]): Self = this.set("serverHostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerHostname: Self = this.set("serverHostname", js.undefined)
+    @scala.inline
+    def setSubdirectory(value: Input[String]): Self = this.set("subdirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubdirectory: Self = this.set("subdirectory", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUri(value: Input[String]): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

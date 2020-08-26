@@ -22,6 +22,12 @@ trait Framework[InitializeRet, AuthenticateRet, AuthorizeRet] extends js.Object 
   def authenticate(
     passport: Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthenticateOptions],
     name: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): js.Function1[/* repeated */ js.Any, AuthenticateRet] = js.native
+  def authenticate(
+    passport: Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthenticateOptions],
+    name: String,
     options: js.Any
   ): js.Function1[/* repeated */ js.Any, AuthenticateRet] = js.native
   def authenticate(

@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SortSpec extends js.Object {
-  var dimensionIndex: js.UndefOr[Double] = js.undefined
-  var sortOrder: js.UndefOr[String] = js.undefined
+  var dimensionIndex: js.UndefOr[Double] = js.native
+  var sortOrder: js.UndefOr[String] = js.native
 }
 
 object SortSpec {
   @scala.inline
-  def apply(dimensionIndex: js.UndefOr[Double] = js.undefined, sortOrder: String = null): SortSpec = {
+  def apply(): SortSpec = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dimensionIndex)) __obj.updateDynamic("dimensionIndex")(dimensionIndex.get.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortSpec]
   }
+  @scala.inline
+  implicit class SortSpecOps[Self <: SortSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensionIndex(value: Double): Self = this.set("dimensionIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionIndex: Self = this.set("dimensionIndex", js.undefined)
+    @scala.inline
+    def setSortOrder(value: String): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+  }
+  
 }
 

@@ -14,6 +14,7 @@ trait Circle
   def geometry(): typings.kendoUi.kendo.geometry.Circle = js.native
   def geometry(value: typings.kendoUi.kendo.geometry.Circle): Unit = js.native
   def stroke(color: String): typings.kendoUi.kendo.drawing.Circle = js.native
+  def stroke(color: String, width: js.UndefOr[scala.Nothing], opacity: Double): typings.kendoUi.kendo.drawing.Circle = js.native
   def stroke(color: String, width: Double): typings.kendoUi.kendo.drawing.Circle = js.native
   def stroke(color: String, width: Double, opacity: Double): typings.kendoUi.kendo.drawing.Circle = js.native
 }

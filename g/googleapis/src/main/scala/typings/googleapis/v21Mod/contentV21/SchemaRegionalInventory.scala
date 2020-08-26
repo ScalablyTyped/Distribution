@@ -47,24 +47,52 @@ trait SchemaRegionalInventory extends js.Object {
 
 object SchemaRegionalInventory {
   @scala.inline
-  def apply(
-    availability: String = null,
-    customAttributes: js.Array[SchemaCustomAttribute] = null,
-    kind: String = null,
-    price: SchemaPrice = null,
-    regionId: String = null,
-    salePrice: SchemaPrice = null,
-    salePriceEffectiveDate: String = null
-  ): SchemaRegionalInventory = {
+  def apply(): SchemaRegionalInventory = {
     val __obj = js.Dynamic.literal()
-    if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
-    if (customAttributes != null) __obj.updateDynamic("customAttributes")(customAttributes.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (regionId != null) __obj.updateDynamic("regionId")(regionId.asInstanceOf[js.Any])
-    if (salePrice != null) __obj.updateDynamic("salePrice")(salePrice.asInstanceOf[js.Any])
-    if (salePriceEffectiveDate != null) __obj.updateDynamic("salePriceEffectiveDate")(salePriceEffectiveDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRegionalInventory]
   }
+  @scala.inline
+  implicit class SchemaRegionalInventoryOps[Self <: SchemaRegionalInventory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailability(value: String): Self = this.set("availability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailability: Self = this.set("availability", js.undefined)
+    @scala.inline
+    def setCustomAttributesVarargs(value: SchemaCustomAttribute*): Self = this.set("customAttributes", js.Array(value :_*))
+    @scala.inline
+    def setCustomAttributes(value: js.Array[SchemaCustomAttribute]): Self = this.set("customAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAttributes: Self = this.set("customAttributes", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPrice(value: SchemaPrice): Self = this.set("price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("price", js.undefined)
+    @scala.inline
+    def setRegionId(value: String): Self = this.set("regionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionId: Self = this.set("regionId", js.undefined)
+    @scala.inline
+    def setSalePrice(value: SchemaPrice): Self = this.set("salePrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalePrice: Self = this.set("salePrice", js.undefined)
+    @scala.inline
+    def setSalePriceEffectiveDate(value: String): Self = this.set("salePriceEffectiveDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalePriceEffectiveDate: Self = this.set("salePriceEffectiveDate", js.undefined)
+  }
+  
 }
 

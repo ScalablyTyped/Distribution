@@ -15,7 +15,11 @@ package object fmsMod {
     - java.lang.String
   */
   type AccountRoleStatus = typings.awsSdk.fmsMod._AccountRoleStatus | java.lang.String
+  type AppsList = js.Array[typings.awsSdk.fmsMod.App]
+  type AppsListsData = js.Array[typings.awsSdk.fmsMod.AppsListDataSummary]
+  type AwsEc2NetworkInterfaceViolations = js.Array[typings.awsSdk.fmsMod.AwsEc2NetworkInterfaceViolation]
   type Boolean = scala.Boolean
+  type CIDR = java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.fmsMod.ClientApiVersions
   type ComplianceViolators = js.Array[typings.awsSdk.fmsMod.ComplianceViolator]
   type CustomerPolicyScopeId = java.lang.String
@@ -37,11 +41,15 @@ package object fmsMod {
   type DependentServiceName = typings.awsSdk.fmsMod._DependentServiceName | java.lang.String
   type DetailedInfo = java.lang.String
   type EvaluationResults = js.Array[typings.awsSdk.fmsMod.EvaluationResult]
+  type IPPortNumber = scala.Double
   type IssueInfoMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.fmsMod.DetailedInfo]
+  type LengthBoundedString = java.lang.String
+  type ListId = java.lang.String
   type ManagedServiceData = java.lang.String
   type MemberAccounts = js.Array[typings.awsSdk.fmsMod.AWSAccountId]
   type PaginationMaxResults = scala.Double
   type PaginationToken = java.lang.String
+  type PartialMatches = js.Array[typings.awsSdk.fmsMod.PartialMatch]
   type PolicyComplianceStatusList = js.Array[typings.awsSdk.fmsMod.PolicyComplianceStatus]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.COMPLIANT
@@ -52,16 +60,33 @@ package object fmsMod {
   type PolicyId = java.lang.String
   type PolicySummaryList = js.Array[typings.awsSdk.fmsMod.PolicySummary]
   type PolicyUpdateToken = java.lang.String
+  type PreviousAppsList = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.fmsMod.AppsList]
+  type PreviousListVersion = java.lang.String
+  type PreviousProtocolsList = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.fmsMod.ProtocolsList]
   type ProtectionData = java.lang.String
+  type Protocol = java.lang.String
+  type ProtocolsList = js.Array[typings.awsSdk.fmsMod.Protocol]
+  type ProtocolsListsData = js.Array[typings.awsSdk.fmsMod.ProtocolsListDataSummary]
+  type ReferenceRule = java.lang.String
+  type RemediationActionDescription = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.REMOVE
+    - typings.awsSdk.awsSdkStrings.MODIFY
+    - java.lang.String
+  */
+  type RemediationActionType = typings.awsSdk.fmsMod._RemediationActionType | java.lang.String
   type ResourceArn = java.lang.String
   type ResourceCount = scala.Double
   type ResourceId = java.lang.String
+  type ResourceIdList = js.Array[typings.awsSdk.fmsMod.ResourceId]
   type ResourceName = java.lang.String
   type ResourceTagKey = java.lang.String
   type ResourceTagValue = java.lang.String
   type ResourceTags = js.Array[typings.awsSdk.fmsMod.ResourceTag]
   type ResourceType = java.lang.String
   type ResourceTypeList = js.Array[typings.awsSdk.fmsMod.ResourceType]
+  type ResourceViolations = js.Array[typings.awsSdk.fmsMod.ResourceViolation]
+  type SecurityGroupRemediationActions = js.Array[typings.awsSdk.fmsMod.SecurityGroupRemediationAction]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.WAF
     - typings.awsSdk.awsSdkStrings.WAFV2
@@ -76,7 +101,10 @@ package object fmsMod {
   type TagKeyList = js.Array[typings.awsSdk.fmsMod.TagKey]
   type TagList = js.Array[typings.awsSdk.fmsMod.Tag]
   type TagValue = java.lang.String
+  type TargetViolationReason = java.lang.String
+  type TargetViolationReasons = js.Array[typings.awsSdk.fmsMod.TargetViolationReason]
   type TimeStamp = typings.std.Date
+  type UpdateToken = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.WEB_ACL_MISSING_RULE_GROUP
     - typings.awsSdk.awsSdkStrings.RESOURCE_MISSING_WEB_ACL
@@ -90,6 +118,7 @@ package object fmsMod {
     - java.lang.String
   */
   type ViolationReason = typings.awsSdk.fmsMod._ViolationReason | java.lang.String
+  type ViolationTarget = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2018-01-01`
     - typings.awsSdk.awsSdkStrings.latest_

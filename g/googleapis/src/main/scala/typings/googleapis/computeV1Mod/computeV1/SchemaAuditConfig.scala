@@ -43,16 +43,38 @@ trait SchemaAuditConfig extends js.Object {
 
 object SchemaAuditConfig {
   @scala.inline
-  def apply(
-    auditLogConfigs: js.Array[SchemaAuditLogConfig] = null,
-    exemptedMembers: js.Array[String] = null,
-    service: String = null
-  ): SchemaAuditConfig = {
+  def apply(): SchemaAuditConfig = {
     val __obj = js.Dynamic.literal()
-    if (auditLogConfigs != null) __obj.updateDynamic("auditLogConfigs")(auditLogConfigs.asInstanceOf[js.Any])
-    if (exemptedMembers != null) __obj.updateDynamic("exemptedMembers")(exemptedMembers.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAuditConfig]
   }
+  @scala.inline
+  implicit class SchemaAuditConfigOps[Self <: SchemaAuditConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditLogConfigsVarargs(value: SchemaAuditLogConfig*): Self = this.set("auditLogConfigs", js.Array(value :_*))
+    @scala.inline
+    def setAuditLogConfigs(value: js.Array[SchemaAuditLogConfig]): Self = this.set("auditLogConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditLogConfigs: Self = this.set("auditLogConfigs", js.undefined)
+    @scala.inline
+    def setExemptedMembersVarargs(value: String*): Self = this.set("exemptedMembers", js.Array(value :_*))
+    @scala.inline
+    def setExemptedMembers(value: js.Array[String]): Self = this.set("exemptedMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExemptedMembers: Self = this.set("exemptedMembers", js.undefined)
+    @scala.inline
+    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+  }
+  
 }
 

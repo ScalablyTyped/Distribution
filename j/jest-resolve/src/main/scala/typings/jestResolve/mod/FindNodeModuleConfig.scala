@@ -5,35 +5,69 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FindNodeModuleConfig extends js.Object {
-  var basedir: Path
-  var browser: js.UndefOr[Boolean] = js.undefined
-  var extensions: js.UndefOr[js.Array[String]] = js.undefined
-  var moduleDirectory: js.UndefOr[js.Array[String]] = js.undefined
-  var paths: js.UndefOr[js.Array[Path]] = js.undefined
-  var resolver: js.UndefOr[Path | Null] = js.undefined
-  var rootDir: js.UndefOr[Path] = js.undefined
+  var basedir: Path = js.native
+  var browser: js.UndefOr[Boolean] = js.native
+  var extensions: js.UndefOr[js.Array[String]] = js.native
+  var moduleDirectory: js.UndefOr[js.Array[String]] = js.native
+  var paths: js.UndefOr[js.Array[Path]] = js.native
+  var resolver: js.UndefOr[Path | Null] = js.native
+  var rootDir: js.UndefOr[Path] = js.native
 }
 
 object FindNodeModuleConfig {
   @scala.inline
-  def apply(
-    basedir: Path,
-    browser: js.UndefOr[Boolean] = js.undefined,
-    extensions: js.Array[String] = null,
-    moduleDirectory: js.Array[String] = null,
-    paths: js.Array[Path] = null,
-    resolver: js.UndefOr[Null | Path] = js.undefined,
-    rootDir: Path = null
-  ): FindNodeModuleConfig = {
+  def apply(basedir: Path): FindNodeModuleConfig = {
     val __obj = js.Dynamic.literal(basedir = basedir.asInstanceOf[js.Any])
-    if (!js.isUndefined(browser)) __obj.updateDynamic("browser")(browser.get.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (moduleDirectory != null) __obj.updateDynamic("moduleDirectory")(moduleDirectory.asInstanceOf[js.Any])
-    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolver)) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
-    if (rootDir != null) __obj.updateDynamic("rootDir")(rootDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindNodeModuleConfig]
   }
+  @scala.inline
+  implicit class FindNodeModuleConfigOps[Self <: FindNodeModuleConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBasedir(value: Path): Self = this.set("basedir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBrowser(value: Boolean): Self = this.set("browser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser: Self = this.set("browser", js.undefined)
+    @scala.inline
+    def setExtensionsVarargs(value: String*): Self = this.set("extensions", js.Array(value :_*))
+    @scala.inline
+    def setExtensions(value: js.Array[String]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    @scala.inline
+    def setModuleDirectoryVarargs(value: String*): Self = this.set("moduleDirectory", js.Array(value :_*))
+    @scala.inline
+    def setModuleDirectory(value: js.Array[String]): Self = this.set("moduleDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModuleDirectory: Self = this.set("moduleDirectory", js.undefined)
+    @scala.inline
+    def setPathsVarargs(value: Path*): Self = this.set("paths", js.Array(value :_*))
+    @scala.inline
+    def setPaths(value: js.Array[Path]): Self = this.set("paths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaths: Self = this.set("paths", js.undefined)
+    @scala.inline
+    def setResolver(value: Path): Self = this.set("resolver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolver: Self = this.set("resolver", js.undefined)
+    @scala.inline
+    def setResolverNull: Self = this.set("resolver", null)
+    @scala.inline
+    def setRootDir(value: Path): Self = this.set("rootDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootDir: Self = this.set("rootDir", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ListBootstrapActionsOutput extends js.Object {
 
 object ListBootstrapActionsOutput {
   @scala.inline
-  def apply(BootstrapActions: CommandList = null, Marker: Marker = null): ListBootstrapActionsOutput = {
+  def apply(): ListBootstrapActionsOutput = {
     val __obj = js.Dynamic.literal()
-    if (BootstrapActions != null) __obj.updateDynamic("BootstrapActions")(BootstrapActions.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBootstrapActionsOutput]
   }
+  @scala.inline
+  implicit class ListBootstrapActionsOutputOps[Self <: ListBootstrapActionsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBootstrapActionsVarargs(value: Command*): Self = this.set("BootstrapActions", js.Array(value :_*))
+    @scala.inline
+    def setBootstrapActions(value: CommandList): Self = this.set("BootstrapActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBootstrapActions: Self = this.set("BootstrapActions", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

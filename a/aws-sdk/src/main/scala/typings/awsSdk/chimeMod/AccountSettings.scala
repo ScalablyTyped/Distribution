@@ -18,14 +18,30 @@ trait AccountSettings extends js.Object {
 
 object AccountSettings {
   @scala.inline
-  def apply(
-    DisableRemoteControl: js.UndefOr[Boolean] = js.undefined,
-    EnableDialOut: js.UndefOr[Boolean] = js.undefined
-  ): AccountSettings = {
+  def apply(): AccountSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DisableRemoteControl)) __obj.updateDynamic("DisableRemoteControl")(DisableRemoteControl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableDialOut)) __obj.updateDynamic("EnableDialOut")(EnableDialOut.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountSettings]
   }
+  @scala.inline
+  implicit class AccountSettingsOps[Self <: AccountSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisableRemoteControl(value: Boolean): Self = this.set("DisableRemoteControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableRemoteControl: Self = this.set("DisableRemoteControl", js.undefined)
+    @scala.inline
+    def setEnableDialOut(value: Boolean): Self = this.set("EnableDialOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDialOut: Self = this.set("EnableDialOut", js.undefined)
+  }
+  
 }
 

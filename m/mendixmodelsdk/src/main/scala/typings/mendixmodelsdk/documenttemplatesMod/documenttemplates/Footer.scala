@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/footer-(document-template) relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/footer-document-template relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Footer")
 @js.native
@@ -26,7 +26,7 @@ class Footer protected () extends DropZone {
   @JSName("model")
   var model_FFooter: IModel = js.native
   def bottomMargin: Double = js.native
-  def bottomMargin(newValue: Double): js.Any = js.native
+  def bottomMargin_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

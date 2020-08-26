@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tree-select/lib/utils/valueUtil", JSImport.Namespace)
+@JSImport("rc-tree-select/es/utils/valueUtil", JSImport.Namespace)
 @js.native
 object valueUtilMod extends js.Object {
   def addValue(rawValues: js.Array[RawValueType], value: RawValueType): js.Array[String | Double] = js.native

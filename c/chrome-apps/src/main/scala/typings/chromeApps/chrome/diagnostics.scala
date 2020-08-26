@@ -15,8 +15,5 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("chrome.diagnostics")
 @js.native
-object diagnostics extends js.Object {
-  /** @todo TODO PROPER DOCS */
-  def sendPacket(options: js.Object, callback: js.Function0[Unit]): Unit = js.native
-}
+object diagnostics extends js.Object
 

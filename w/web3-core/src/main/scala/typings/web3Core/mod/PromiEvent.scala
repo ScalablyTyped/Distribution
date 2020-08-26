@@ -1,7 +1,6 @@
 package typings.web3Core.mod
 
 import typings.std.Error
-import typings.std.Promise
 import typings.web3Core.web3CoreStrings.confirmation
 import typings.web3Core.web3CoreStrings.error
 import typings.web3Core.web3CoreStrings.receipt
@@ -13,7 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait PromiEvent[T] extends Promise[T] {
+trait PromiEvent[T]
+  extends js.Promise[T] {
   @JSName("on")
   def on_confirmation(`type`: confirmation, handler: js.Function1[/* error */ Error | TransactionReceipt | String, Unit]): PromiEvent[T] = js.native
   @JSName("on")

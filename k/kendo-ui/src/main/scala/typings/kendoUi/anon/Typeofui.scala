@@ -29,7 +29,7 @@ trait Typeofui extends js.Object {
   var Dialog: TypeofDialog = js.native
   var Draggable: Instantiable2[
     /* element */ Element, 
-    js.UndefOr[/* options */ DraggableOptions], 
+    /* options */ js.UndefOr[DraggableOptions], 
     typings.kendoUi.kendo.ui.Draggable
   ] = js.native
   var Drawer: TypeofDrawer = js.native
@@ -38,7 +38,7 @@ trait Typeofui extends js.Object {
   var DropTarget: TypeofDropTarget = js.native
   var DropTargetArea: Instantiable2[
     /* element */ Element, 
-    js.UndefOr[/* options */ DropTargetAreaOptions], 
+    /* options */ js.UndefOr[DropTargetAreaOptions], 
     typings.kendoUi.kendo.ui.DropTargetArea
   ] = js.native
   var Editor: TypeofEditor_ = js.native
@@ -95,6 +95,11 @@ trait Typeofui extends js.Object {
   val editor: Typeofeditor = js.native
   def plugin(
     widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any
+  ): Unit = js.native
+  def plugin(
+    widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any,
+    register: js.UndefOr[scala.Nothing],
+    prefix: String
   ): Unit = js.native
   def plugin(
     widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any,

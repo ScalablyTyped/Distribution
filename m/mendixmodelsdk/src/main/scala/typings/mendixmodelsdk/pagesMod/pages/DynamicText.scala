@@ -30,14 +30,14 @@ class DynamicText protected () extends ConditionallyVisibleWidget {
   @JSName("model")
   var model_FDynamicText: IModel = js.native
   def content: ClientTemplate = js.native
-  def content(newValue: ClientTemplate): js.Any = js.native
+  def content_=(newValue: ClientTemplate): Unit = js.native
   /**
     * In version 8.0.0: introduced
     */
   def nativeTextStyle: NativeTextStyle = js.native
-  def nativeTextStyle(newValue: NativeTextStyle): js.Any = js.native
+  def nativeTextStyle_=(newValue: NativeTextStyle): Unit = js.native
   def renderMode: TextRenderMode = js.native
-  def renderMode(newValue: TextRenderMode): js.Any = js.native
+  def renderMode_=(newValue: TextRenderMode): Unit = js.native
 }
 
 /* static members */

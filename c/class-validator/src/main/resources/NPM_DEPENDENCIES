@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "class-validator" : "0.11.0"
+      "class-validator" : "0.12.2"
     }
   ],
   "test-dependencies" : [
     {
-      "class-validator" : "0.11.0"
+      "class-validator" : "0.12.2"
     }
   ],
   "compile-devDependencies" : [

@@ -59,7 +59,15 @@ trait FramebufferSystem extends System {
     * @param {PIXI.Rectangle} [destPixels] - dest rectangle in pixels, assumed to be the same as sourcePixels
     */
   def blit(): Unit = js.native
+  def blit(
+    framebuffer: js.UndefOr[scala.Nothing],
+    sourcePixels: js.UndefOr[scala.Nothing],
+    destPixels: Rectangle
+  ): Unit = js.native
+  def blit(framebuffer: js.UndefOr[scala.Nothing], sourcePixels: Rectangle): Unit = js.native
+  def blit(framebuffer: js.UndefOr[scala.Nothing], sourcePixels: Rectangle, destPixels: Rectangle): Unit = js.native
   def blit(framebuffer: Framebuffer): Unit = js.native
+  def blit(framebuffer: Framebuffer, sourcePixels: js.UndefOr[scala.Nothing], destPixels: Rectangle): Unit = js.native
   def blit(framebuffer: Framebuffer, sourcePixels: Rectangle): Unit = js.native
   def blit(framebuffer: Framebuffer, sourcePixels: Rectangle, destPixels: Rectangle): Unit = js.native
   /**

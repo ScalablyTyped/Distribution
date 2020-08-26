@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 class ObjectIDCls ()
   extends typings.meteor.Mongo.ObjectID {
   def this(hexString: String) = this()
-  /* CompleteClass */
-  override def equals(otherID: typings.meteor.Mongo.ObjectID): Boolean = js.native
-  /* CompleteClass */
-  override def toHexString(): String = js.native
 }
 

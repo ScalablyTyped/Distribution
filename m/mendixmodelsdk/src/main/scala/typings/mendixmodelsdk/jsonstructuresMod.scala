@@ -55,7 +55,7 @@ object jsonstructuresMod extends js.Object {
       @JSName("model")
       var model_FJsonElement: IModel = js.native
       def originalValue: String = js.native
-      def originalValue(newValue: String): js.Any = js.native
+      def originalValue_=(newValue: String): Unit = js.native
     }
     
     /**
@@ -92,7 +92,7 @@ object jsonstructuresMod extends js.Object {
         */
       def elements: IList[Element] = js.native
       def jsonSnippet: String = js.native
-      def jsonSnippet(newValue: String): js.Any = js.native
+      def jsonSnippet_=(newValue: String): Unit = js.native
     }
     
     /* static members */

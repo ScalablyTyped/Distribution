@@ -193,6 +193,12 @@ trait InteractionManager extends EventEmitter {
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: Container,
+    func: js.UndefOr[scala.Nothing],
+    hitTest: Boolean
+  ): Unit = js.native
+  /* protected */ def processInteractive(
+    interactionEvent: InteractionEvent,
+    displayObject: Container,
     func: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
   /* protected */ def processInteractive(
@@ -205,6 +211,12 @@ trait InteractionManager extends EventEmitter {
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: Sprite,
+    func: js.UndefOr[scala.Nothing],
+    hitTest: Boolean
+  ): Unit = js.native
+  /* protected */ def processInteractive(
+    interactionEvent: InteractionEvent,
+    displayObject: Sprite,
     func: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
   /* protected */ def processInteractive(
@@ -214,6 +226,12 @@ trait InteractionManager extends EventEmitter {
     hitTest: Boolean
   ): Unit = js.native
   /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: TilingSprite): Unit = js.native
+  /* protected */ def processInteractive(
+    interactionEvent: InteractionEvent,
+    displayObject: TilingSprite,
+    func: js.UndefOr[scala.Nothing],
+    hitTest: Boolean
+  ): Unit = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: TilingSprite,

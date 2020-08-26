@@ -18,11 +18,30 @@ trait DeleteImagePipelineResponse extends js.Object {
 
 object DeleteImagePipelineResponse {
   @scala.inline
-  def apply(imagePipelineArn: ImagePipelineArn = null, requestId: NonEmptyString = null): DeleteImagePipelineResponse = {
+  def apply(): DeleteImagePipelineResponse = {
     val __obj = js.Dynamic.literal()
-    if (imagePipelineArn != null) __obj.updateDynamic("imagePipelineArn")(imagePipelineArn.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteImagePipelineResponse]
   }
+  @scala.inline
+  implicit class DeleteImagePipelineResponseOps[Self <: DeleteImagePipelineResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImagePipelineArn(value: ImagePipelineArn): Self = this.set("imagePipelineArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagePipelineArn: Self = this.set("imagePipelineArn", js.undefined)
+    @scala.inline
+    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+  }
+  
 }
 

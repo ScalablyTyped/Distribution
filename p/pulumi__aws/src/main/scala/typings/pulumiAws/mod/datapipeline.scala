@@ -24,6 +24,7 @@ object datapipeline extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: PipelineArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: PipelineArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -37,8 +38,10 @@ object datapipeline extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.datapipelinePipelineMod.Pipeline = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.datapipelinePipelineMod.Pipeline = js.native
     def get(name: String, id: Input[ID], state: PipelineState): typings.pulumiAws.datapipelinePipelineMod.Pipeline = js.native
     def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): typings.pulumiAws.datapipelinePipelineMod.Pipeline = js.native
     /**

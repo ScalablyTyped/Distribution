@@ -8,38 +8,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabGroupProps
   extends /* x */ StringDictionary[js.Any] {
-  var className: js.UndefOr[String] = js.undefined
-  var disableStyles: js.UndefOr[Boolean] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var disableStyles: js.UndefOr[Boolean] = js.native
   var onTabClick: js.UndefOr[
     js.Function2[/* event */ MouseEvent[Element, NativeMouseEvent], /* index */ Double, Unit]
-  ] = js.undefined
-  var selectedIndex: js.UndefOr[Double] = js.undefined
-  var size: js.UndefOr[js.Any] = js.undefined
-  var tabGroupProps: js.UndefOr[js.Any] = js.undefined
+  ] = js.native
+  var selectedIndex: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[js.Any] = js.native
+  var tabGroupProps: js.UndefOr[js.Any] = js.native
 }
 
 object TabGroupProps {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    className: String = null,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    onTabClick: (/* event */ MouseEvent[Element, NativeMouseEvent], /* index */ Double) => Unit = null,
-    selectedIndex: js.UndefOr[Double] = js.undefined,
-    size: js.Any = null,
-    tabGroupProps: js.Any = null
-  ): TabGroupProps = {
+  def apply(): TabGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
-    if (onTabClick != null) __obj.updateDynamic("onTabClick")(js.Any.fromFunction2(onTabClick))
-    if (!js.isUndefined(selectedIndex)) __obj.updateDynamic("selectedIndex")(selectedIndex.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tabGroupProps != null) __obj.updateDynamic("tabGroupProps")(tabGroupProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabGroupProps]
   }
+  @scala.inline
+  implicit class TabGroupPropsOps[Self <: TabGroupProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDisableStyles(value: Boolean): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    @scala.inline
+    def setOnTabClick(value: (/* event */ MouseEvent[Element, NativeMouseEvent], /* index */ Double) => Unit): Self = this.set("onTabClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnTabClick: Self = this.set("onTabClick", js.undefined)
+    @scala.inline
+    def setSelectedIndex(value: Double): Self = this.set("selectedIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedIndex: Self = this.set("selectedIndex", js.undefined)
+    @scala.inline
+    def setSize(value: js.Any): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTabGroupProps(value: js.Any): Self = this.set("tabGroupProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabGroupProps: Self = this.set("tabGroupProps", js.undefined)
+  }
+  
 }
 

@@ -6,14 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined json-schema-ref-parser.json-schema-ref-parser.ParserOptions & {  encoding ? :string} */
+/* Inlined json-schema-ref-parser.json-schema-ref-parser.ParserOptions & {  encoding :string | undefined} */
+@js.native
 trait ParserOptionsencodingstri extends js.Object {
   /**
     * All of the built-in parsers allow empty files by default. The JSON and YAML parsers will parse empty files as `undefined`. The text parser will parse empty files as an empty string. The binary parser will parse empty files as an empty byte array.
     *
     * You can set `allowEmpty: false` on any parser, which will cause an error to be thrown if a file empty.
     */
-  var allowEmpty: js.UndefOr[Boolean] = js.undefined
+  var allowEmpty: js.UndefOr[Boolean] = js.native
   /**
     * Determines which parsers will be used for which files.
     *
@@ -21,30 +22,54 @@ trait ParserOptionsencodingstri extends js.Object {
     */
   var canParse: js.UndefOr[
     Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
-  ] = js.undefined
-  var encoding: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var encoding: js.UndefOr[String] = js.native
   /**
     * Parsers run in a specific order, relative to other parsers. For example, a parser with `order: 5` will run before a parser with `order: 10`. If a parser is unable to successfully parse a file, then the next parser is tried, until one succeeds or they all fail.
     *
     * You can change the order in which parsers run, which is useful if you know that most of your referenced files will be a certain type, or if you add your own custom parser that you want to run first.
     */
-  var order: js.UndefOr[Double] = js.undefined
+  var order: js.UndefOr[Double] = js.native
 }
 
 object ParserOptionsencodingstri {
   @scala.inline
-  def apply(
-    allowEmpty: js.UndefOr[Boolean] = js.undefined,
-    canParse: Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean]) = null,
-    encoding: String = null,
-    order: js.UndefOr[Double] = js.undefined
-  ): ParserOptionsencodingstri = {
+  def apply(): ParserOptionsencodingstri = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.get.asInstanceOf[js.Any])
-    if (canParse != null) __obj.updateDynamic("canParse")(canParse.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptionsencodingstri]
   }
+  @scala.inline
+  implicit class ParserOptionsencodingstriOps[Self <: ParserOptionsencodingstri] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowEmpty(value: Boolean): Self = this.set("allowEmpty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowEmpty: Self = this.set("allowEmpty", js.undefined)
+    @scala.inline
+    def setCanParseVarargs(value: String*): Self = this.set("canParse", js.Array(value :_*))
+    @scala.inline
+    def setCanParseFunction1(value: /* file */ FileInfo => Boolean): Self = this.set("canParse", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCanParse(value: Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])): Self = this.set("canParse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanParse: Self = this.set("canParse", js.undefined)
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setOrder(value: Double): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+  }
+  
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object lintDirtyModulesPluginMod {
-  type Compiler = typings.webpack.mod.Compiler_
+  type Compiler = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any
   type FileSystemInfoEntry = scala.Double | typings.stylelintWebpackPlugin.anon.Partialtimestampnumber
   type Lint = js.Function1[
     /* options */ typings.stylelintWebpackPlugin.getOptionsMod.Options, 

@@ -20,10 +20,6 @@ object animateShowChangeCellRendererMod extends js.Object {
     /* private */ def hideDeltaValue(): js.Any = js.native
     @JSName("init")
     def init_MAnimateShowChangeCellRenderer(params: js.Any): Unit = js.native
-    /** Get the cell to refresh. Return true if successful. Return false if not (or you don't have refresh logic),
-      * then the grid will refresh the cell for you. */
-    /* CompleteClass */
-    override def refresh(params: js.Any): Boolean = js.native
     /* private */ def setTimerToRemoveDelta(): js.Any = js.native
     /* private */ def showDelta(params: js.Any, delta: js.Any): js.Any = js.native
   }

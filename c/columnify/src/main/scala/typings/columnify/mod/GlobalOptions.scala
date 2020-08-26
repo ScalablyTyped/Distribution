@@ -2,59 +2,64 @@ package typings.columnify.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.columnify.anon.PickOptionsminWidthmaxWid
-import typings.columnify.columnifyStrings.center
-import typings.columnify.columnifyStrings.centre
-import typings.columnify.columnifyStrings.left
-import typings.columnify.columnifyStrings.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GlobalOptions extends Options {
-  var columnSplitter: js.UndefOr[String] = js.undefined
-  var columns: js.UndefOr[js.Array[String]] = js.undefined
-  var config: js.UndefOr[StringDictionary[Options]] = js.undefined
-  var maxLineWidth: js.UndefOr[Double] = js.undefined
-  var truncate: js.UndefOr[Boolean] = js.undefined
-  var widths: js.UndefOr[StringDictionary[PickOptionsminWidthmaxWid]] = js.undefined
+  var columnSplitter: js.UndefOr[String] = js.native
+  var columns: js.UndefOr[js.Array[String]] = js.native
+  var config: js.UndefOr[StringDictionary[Options]] = js.native
+  var maxLineWidth: js.UndefOr[Double] = js.native
+  var truncate: js.UndefOr[Boolean] = js.native
+  var widths: js.UndefOr[StringDictionary[PickOptionsminWidthmaxWid]] = js.native
 }
 
 object GlobalOptions {
   @scala.inline
-  def apply(
-    align: left | center | centre | right = null,
-    columnSplitter: String = null,
-    columns: js.Array[String] = null,
-    config: StringDictionary[Options] = null,
-    dataTransform: /* data */ String => String = null,
-    headingTransform: /* data */ String => String = null,
-    maxLineWidth: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    paddingChr: String = null,
-    preserveNewLines: js.UndefOr[Boolean] = js.undefined,
-    showHeaders: js.UndefOr[Boolean] = js.undefined,
-    truncate: js.UndefOr[Boolean] = js.undefined,
-    truncateMarker: String = null,
-    widths: StringDictionary[PickOptionsminWidthmaxWid] = null
-  ): GlobalOptions = {
+  def apply(): GlobalOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (columnSplitter != null) __obj.updateDynamic("columnSplitter")(columnSplitter.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (dataTransform != null) __obj.updateDynamic("dataTransform")(js.Any.fromFunction1(dataTransform))
-    if (headingTransform != null) __obj.updateDynamic("headingTransform")(js.Any.fromFunction1(headingTransform))
-    if (!js.isUndefined(maxLineWidth)) __obj.updateDynamic("maxLineWidth")(maxLineWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (paddingChr != null) __obj.updateDynamic("paddingChr")(paddingChr.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveNewLines)) __obj.updateDynamic("preserveNewLines")(preserveNewLines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.get.asInstanceOf[js.Any])
-    if (truncateMarker != null) __obj.updateDynamic("truncateMarker")(truncateMarker.asInstanceOf[js.Any])
-    if (widths != null) __obj.updateDynamic("widths")(widths.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalOptions]
   }
+  @scala.inline
+  implicit class GlobalOptionsOps[Self <: GlobalOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnSplitter(value: String): Self = this.set("columnSplitter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnSplitter: Self = this.set("columnSplitter", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: String*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[String]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setConfig(value: StringDictionary[Options]): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setMaxLineWidth(value: Double): Self = this.set("maxLineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLineWidth: Self = this.set("maxLineWidth", js.undefined)
+    @scala.inline
+    def setTruncate(value: Boolean): Self = this.set("truncate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTruncate: Self = this.set("truncate", js.undefined)
+    @scala.inline
+    def setWidths(value: StringDictionary[PickOptionsminWidthmaxWid]): Self = this.set("widths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidths: Self = this.set("widths", js.undefined)
+  }
+  
 }
 

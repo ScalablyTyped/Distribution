@@ -17,6 +17,7 @@ object reInviteUserAgentClientMod extends js.Object {
   class ReInviteUserAgentClient protected () extends UserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingInviteRequestDelegate) = this()
+    def this(dialog: SessionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
     def this(dialog: SessionDialog, delegate: OutgoingInviteRequestDelegate, options: RequestOptions) = this()
     @JSName("delegate")
     var delegate_ReInviteUserAgentClient: js.UndefOr[OutgoingInviteRequestDelegate] = js.native

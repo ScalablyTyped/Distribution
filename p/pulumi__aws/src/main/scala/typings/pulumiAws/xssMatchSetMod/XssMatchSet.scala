@@ -22,6 +22,7 @@ class XssMatchSet protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: XssMatchSetArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: XssMatchSetArgs, opts: CustomResourceOptions) = this()
   /**
     * The name of the set
@@ -44,8 +45,10 @@ object XssMatchSet extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): XssMatchSet = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): XssMatchSet = js.native
   def get(name: String, id: Input[ID], state: XssMatchSetState): XssMatchSet = js.native
   def get(name: String, id: Input[ID], state: XssMatchSetState, opts: CustomResourceOptions): XssMatchSet = js.native
   /**

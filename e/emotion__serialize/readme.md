@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__serialize
 
-Typings are for version 0.11.15
+Typings are for version 0.11.16
 
 ## Library description:
 serialization utils for emotion

@@ -1,11 +1,11 @@
 package typings.senchaTouch.Ext
 
 import typings.senchaTouch.Ext.data.IModel
-import typings.senchaTouch.Ext.mixin.IObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IComponent extends IEvented {
   /** [Method] Adds a CSS class or classes to this Component s rendered element
     * @param cls String The CSS class to add.
@@ -19,267 +19,267 @@ trait IComponent extends IEvented {
       /* suffix */ js.UndefOr[java.lang.String], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (String) */
-  var baseCls: js.UndefOr[java.lang.String] = js.undefined
+  var baseCls: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (Number/String) */
-  var border: js.UndefOr[js.Any] = js.undefined
+  var border: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number/String) */
-  var bottom: js.UndefOr[js.Any] = js.undefined
+  var bottom: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean) */
-  var centered: js.UndefOr[Boolean] = js.undefined
+  var centered: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String/String[]) */
-  var cls: js.UndefOr[js.Any] = js.undefined
+  var cls: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var componentCls: js.UndefOr[java.lang.String] = js.undefined
+  var componentCls: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (Ext.Element/HTMLElement/String) */
-  var contentEl: js.UndefOr[js.Any] = js.undefined
+  var contentEl: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Object) */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
   /** [Method] Disables this Component */
-  var disable: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var disable: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (Boolean) */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String) */
-  var disabledCls: js.UndefOr[java.lang.String] = js.undefined
+  var disabledCls: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (String) */
-  var dock: js.UndefOr[java.lang.String] = js.undefined
+  var dock: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (String) */
-  var docked: js.UndefOr[java.lang.String] = js.undefined
+  var docked: js.UndefOr[java.lang.String] = js.native
   /** [Method] Enables this Component */
-  var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var enable: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (String/Mixed) */
-  var enterAnimation: js.UndefOr[js.Any] = js.undefined
+  var enterAnimation: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String/Mixed) */
-  var exitAnimation: js.UndefOr[js.Any] = js.undefined
+  var exitAnimation: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number) */
-  var flex: js.UndefOr[Double] = js.undefined
+  var flex: js.UndefOr[Double] = js.native
   /** [Config Option] (Boolean) */
-  var floating: js.UndefOr[Boolean] = js.undefined
+  var floating: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String) */
-  var floatingCls: js.UndefOr[java.lang.String] = js.undefined
+  var floatingCls: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (Boolean) */
-  var fullscreen: js.UndefOr[Boolean] = js.undefined
+  var fullscreen: js.UndefOr[Boolean] = js.native
   /** [Method] Prepares information on aligning this to component using alignment
     * @param component Object
     * @param alignment Object
     */
   var getAlignmentInfo: js.UndefOr[
     js.Function2[/* component */ js.UndefOr[js.Any], /* alignment */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Returns the value of baseCls
     * @returns String
     */
-  var getBaseCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getBaseCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
   /** [Method] Returns the value of border
     * @returns Number/String
     */
-  var getBorder: js.UndefOr[js.Function0[_]] = js.undefined
+  var getBorder: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of bottom
     * @returns any
     */
-  var getBottom: js.UndefOr[js.Function0[_]] = js.undefined
+  var getBottom: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of centered
     * @returns Boolean
     */
-  var getCentered: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getCentered: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of cls
     * @returns any
     */
-  var getCls: js.UndefOr[js.Function0[_]] = js.undefined
+  var getCls: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of contentEl
     * @returns Ext.Element/HTMLElement/String
     */
-  var getContentEl: js.UndefOr[js.Function0[_]] = js.undefined
+  var getContentEl: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of data
     * @returns Object
     */
-  var getData: js.UndefOr[js.Function0[_]] = js.undefined
+  var getData: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of disabled
     * @returns Boolean
     */
-  var getDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getDisabled: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of disabledCls
     * @returns String
     */
-  var getDisabledCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDisabledCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
   /** [Method] Returns the value of docked
     * @returns String
     */
-  var getDocked: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getDocked: js.UndefOr[js.Function0[java.lang.String]] = js.native
   /** [Method] Retrieves the top level element representing this component
     * @returns Ext.dom.Element
     */
-  var getEl: js.UndefOr[js.Function0[typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var getEl: js.UndefOr[js.Function0[typings.senchaTouch.Ext.dom.IElement]] = js.native
   /** [Method] Returns the value of enterAnimation
     * @returns String/Mixed
     */
-  var getEnterAnimation: js.UndefOr[js.Function0[_]] = js.undefined
+  var getEnterAnimation: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of exitAnimation
     * @returns String/Mixed
     */
-  var getExitAnimation: js.UndefOr[js.Function0[_]] = js.undefined
+  var getExitAnimation: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of flex
     * @returns Number
     */
-  var getFlex: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getFlex: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of floatingCls
     * @returns String
     */
-  var getFloatingCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getFloatingCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
   /** [Method] Returns the value of height
     * @returns Number/String
     */
-  var getHeight: js.UndefOr[js.Function0[_]] = js.undefined
+  var getHeight: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of hidden
     * @returns Boolean
     */
-  var getHidden: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getHidden: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of hiddenCls
     * @returns String
     */
-  var getHiddenCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getHiddenCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
   /** [Method] Returns the value of hideAnimation
     * @returns String/Mixed
     */
-  var getHideAnimation: js.UndefOr[js.Function0[_]] = js.undefined
+  var getHideAnimation: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of html
     * @returns String/Ext.Element/HTMLElement
     */
-  var getHtml: js.UndefOr[js.Function0[_]] = js.undefined
+  var getHtml: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of itemId
     * @returns String
     */
-  var getItemId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getItemId: js.UndefOr[js.Function0[java.lang.String]] = js.native
   /** [Method] Returns the value of left
     * @returns Number/String
     */
-  var getLeft: js.UndefOr[js.Function0[_]] = js.undefined
+  var getLeft: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of margin
     * @returns Number/String
     */
-  var getMargin: js.UndefOr[js.Function0[_]] = js.undefined
+  var getMargin: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of maxHeight
     * @returns Number/String
     */
-  var getMaxHeight: js.UndefOr[js.Function0[_]] = js.undefined
+  var getMaxHeight: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of maxWidth
     * @returns Number/String
     */
-  var getMaxWidth: js.UndefOr[js.Function0[_]] = js.undefined
+  var getMaxWidth: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of minHeight
     * @returns Number/String
     */
-  var getMinHeight: js.UndefOr[js.Function0[_]] = js.undefined
+  var getMinHeight: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of minWidth
     * @returns Number/String
     */
-  var getMinWidth: js.UndefOr[js.Function0[_]] = js.undefined
+  var getMinWidth: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of padding
     * @returns Number/String
     */
-  var getPadding: js.UndefOr[js.Function0[_]] = js.undefined
+  var getPadding: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the parent of this component if it has one
     * @returns Ext.Component The parent of this component.
     */
-  var getParent: js.UndefOr[js.Function0[this.type]] = js.undefined
+  var getParent: js.UndefOr[js.Function0[this.type]] = js.native
   /** [Method] Returns the value of plugins
     * @returns Object/Array
     */
-  var getPlugins: js.UndefOr[js.Function0[_]] = js.undefined
+  var getPlugins: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of record
     * @returns Ext.data.Model
     */
-  var getRecord: js.UndefOr[js.Function0[IModel]] = js.undefined
+  var getRecord: js.UndefOr[js.Function0[IModel]] = js.native
   /** [Method] Returns the value of renderTo
     * @returns Ext.Element
     */
-  var getRenderTo: js.UndefOr[js.Function0[IElement]] = js.undefined
+  var getRenderTo: js.UndefOr[js.Function0[IElement]] = js.native
   /** [Method] Returns the value of right
     * @returns Number/String
     */
-  var getRight: js.UndefOr[js.Function0[_]] = js.undefined
+  var getRight: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of showAnimation
     * @returns String/Mixed
     */
-  var getShowAnimation: js.UndefOr[js.Function0[_]] = js.undefined
+  var getShowAnimation: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the height and width of the Component
     * @returns Object The current height and width of the Component.
     */
-  var getSize: js.UndefOr[js.Function0[_]] = js.undefined
+  var getSize: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of style
     * @returns String/Object
     */
-  var getStyle: js.UndefOr[js.Function0[_]] = js.undefined
+  var getStyle: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of styleHtmlCls
     * @returns String
     */
-  var getStyleHtmlCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getStyleHtmlCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
   /** [Method] Returns the value of styleHtmlContent
     * @returns Boolean
     */
-  var getStyleHtmlContent: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getStyleHtmlContent: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of top
     * @returns Number/String
     */
-  var getTop: js.UndefOr[js.Function0[_]] = js.undefined
+  var getTop: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of tpl
     * @returns String/String[]/Ext.Template/Ext.XTemplate[]
     */
-  var getTpl: js.UndefOr[js.Function0[_]] = js.undefined
+  var getTpl: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of tplWriteMode
     * @returns String
     */
-  var getTplWriteMode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getTplWriteMode: js.UndefOr[js.Function0[java.lang.String]] = js.native
   /** [Method] Returns the value of ui
     * @returns String
     */
-  var getUi: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getUi: js.UndefOr[js.Function0[java.lang.String]] = js.native
   /** [Method] Returns the value of width
     * @returns Number/String
     */
-  var getWidth: js.UndefOr[js.Function0[_]] = js.undefined
+  var getWidth: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns this Component s xtype hierarchy as a slash delimited string
     * @returns String The xtype hierarchy string.
     */
-  var getXTypes: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getXTypes: js.UndefOr[js.Function0[java.lang.String]] = js.native
   /** [Method] Returns the value of zIndex
     * @returns Number
     */
-  var getZIndex: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getZIndex: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns true if this component has a parent
     * @returns Boolean true if this component has a parent.
     */
-  var hasParent: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var hasParent: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Config Option] (Number/String) */
-  var height: js.UndefOr[js.Any] = js.undefined
+  var height: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean) */
-  var hidden: js.UndefOr[Boolean] = js.undefined
+  var hidden: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String) */
-  var hiddenCls: js.UndefOr[java.lang.String] = js.undefined
+  var hiddenCls: js.UndefOr[java.lang.String] = js.native
   /** [Method] Hides this Component optionally using an animation
     * @param animation Object/Boolean You can specify an animation here or a bool to use the hideAnimation config.
     * @returns Ext.Component
     */
-  var hide: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var hide: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.native
   /** [Config Option] (String/Mixed) */
-  var hideAnimation: js.UndefOr[js.Any] = js.undefined
+  var hideAnimation: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean) */
-  var hideOnMaskTap: js.UndefOr[Boolean] = js.undefined
+  var hideOnMaskTap: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String/Ext.Element/HTMLElement) */
-  var html: js.UndefOr[js.Any] = js.undefined
+  var html: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[java.lang.String] = js.native
   /** [Method] Allows addition of behavior to the rendering phase  */
-  var initialize: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var initialize: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Returns true if this Component is currently disabled
     * @returns Boolean true if currently disabled.
     */
-  var isDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isDisabled: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns true if this Component is currently hidden
     * @returns Boolean true if currently hidden.
     */
-  var isHidden: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isHidden: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Tests whether or not this Component is of a specific xtype
     * @param xtype String The xtype to check for this Component.
     * @param shallow Boolean false to check whether this Component is descended from the xtype (this is the default), or true to check whether this Component is directly of the specified xtype.
@@ -287,33 +287,33 @@ trait IComponent extends IEvented {
     */
   var isXType: js.UndefOr[
     js.Function2[/* xtype */ js.UndefOr[java.lang.String], /* shallow */ js.UndefOr[Boolean], Boolean]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (String) */
-  var itemId: js.UndefOr[java.lang.String] = js.undefined
+  var itemId: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (Boolean) */
-  var layoutOnOrientationChange: js.UndefOr[Boolean] = js.undefined
+  var layoutOnOrientationChange: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number/String) */
-  var left: js.UndefOr[js.Any] = js.undefined
+  var left: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number/String) */
-  var margin: js.UndefOr[js.Any] = js.undefined
+  var margin: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number/String) */
-  var maxHeight: js.UndefOr[js.Any] = js.undefined
+  var maxHeight: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number/String) */
-  var maxWidth: js.UndefOr[js.Any] = js.undefined
+  var maxWidth: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number/String) */
-  var minHeight: js.UndefOr[js.Any] = js.undefined
+  var minHeight: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number/String) */
-  var minWidth: js.UndefOr[js.Any] = js.undefined
+  var minWidth: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean) */
-  var modal: js.UndefOr[Boolean] = js.undefined
+  var modal: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var monitorOrientation: js.UndefOr[Boolean] = js.undefined
+  var monitorOrientation: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number/String) */
-  var padding: js.UndefOr[js.Any] = js.undefined
+  var padding: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Object/Array) */
-  var plugins: js.UndefOr[js.Any] = js.undefined
+  var plugins: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Ext.data.Model) */
-  var record: js.UndefOr[IModel] = js.undefined
+  var record: js.UndefOr[IModel] = js.native
   /** [Method] Removes the given CSS class es from this Component s rendered element
     * @param cls String The class(es) to remove.
     * @param prefix String Optional prefix to prepend before each class.
@@ -326,9 +326,9 @@ trait IComponent extends IEvented {
       /* suffix */ js.UndefOr[java.lang.String], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (Ext.Element) */
-  var renderTo: js.UndefOr[IElement] = js.undefined
+  var renderTo: js.UndefOr[IElement] = js.native
   /** [Method] Replaces specified classes with the newly specified classes
     * @param oldCls String The class(es) to remove.
     * @param newCls String The class(es) to add.
@@ -343,201 +343,201 @@ trait IComponent extends IEvented {
       /* suffix */ js.UndefOr[java.lang.String], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Resets top right bottom and left configurations to null which will un float this component  */
-  var resetFloating: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var resetFloating: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (Number/String) */
-  var right: js.UndefOr[js.Any] = js.undefined
+  var right: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean/String/Object) */
-  var scroll: js.UndefOr[js.Any] = js.undefined
+  var scroll: js.UndefOr[js.Any] = js.native
   /** [Method] Sets the value of baseCls
     * @param baseCls String The new value.
     */
-  var setBaseCls: js.UndefOr[js.Function1[/* baseCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setBaseCls: js.UndefOr[js.Function1[/* baseCls */ js.UndefOr[java.lang.String], Unit]] = js.native
   /** [Method] Sets the value of border
     * @param border Number/String The new value.
     */
-  var setBorder: js.UndefOr[js.Function1[/* border */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBorder: js.UndefOr[js.Function1[/* border */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of bottom
     * @param bottom Number/String The new value.
     */
-  var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of centered
     * @param centered Boolean The new value.
     */
-  var setCentered: js.UndefOr[js.Function1[/* centered */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setCentered: js.UndefOr[js.Function1[/* centered */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of cls
     * @param cls String/String[] The new value.
     */
-  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of contentEl
     * @param contentEl Ext.Element/HTMLElement/String The new value.
     */
-  var setContentEl: js.UndefOr[js.Function1[/* contentEl */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setContentEl: js.UndefOr[js.Function1[/* contentEl */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of data
     * @param data Object The new value.
     */
-  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of disabled
     * @param disabled Boolean The new value.
     */
-  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of disabledCls
     * @param disabledCls String The new value.
     */
-  var setDisabledCls: js.UndefOr[js.Function1[/* disabledCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDisabledCls: js.UndefOr[js.Function1[/* disabledCls */ js.UndefOr[java.lang.String], Unit]] = js.native
   /** [Method] Sets the value of docked
     * @param docked String The new value.
     */
-  var setDocked: js.UndefOr[js.Function1[/* docked */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setDocked: js.UndefOr[js.Function1[/* docked */ js.UndefOr[java.lang.String], Unit]] = js.native
   /** [Method] Sets the value of draggable
     * @param draggable Object The new value.
     */
-  var setDraggable: js.UndefOr[js.Function1[/* draggable */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDraggable: js.UndefOr[js.Function1[/* draggable */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of enterAnimation
     * @param enterAnimation String/Mixed The new value.
     */
-  var setEnterAnimation: js.UndefOr[js.Function1[/* enterAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setEnterAnimation: js.UndefOr[js.Function1[/* enterAnimation */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of exitAnimation
     * @param exitAnimation String/Mixed The new value.
     */
-  var setExitAnimation: js.UndefOr[js.Function1[/* exitAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setExitAnimation: js.UndefOr[js.Function1[/* exitAnimation */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of flex
     * @param flex Number The new value.
     */
-  var setFlex: js.UndefOr[js.Function1[/* flex */ js.UndefOr[Double], Unit]] = js.undefined
+  var setFlex: js.UndefOr[js.Function1[/* flex */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Used to update the floating state of this component
     * @param floating Boolean true if you want to float this component.
     */
-  var setFloating: js.UndefOr[js.Function1[/* floating */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setFloating: js.UndefOr[js.Function1[/* floating */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of floatingCls
     * @param floatingCls String The new value.
     */
-  var setFloatingCls: js.UndefOr[js.Function1[/* floatingCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setFloatingCls: js.UndefOr[js.Function1[/* floatingCls */ js.UndefOr[java.lang.String], Unit]] = js.native
   /** [Method] Sets the value of height
     * @param height Number/String The new value.
     */
-  var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of hidden
     * @param hidden Boolean The new value.
     */
-  var setHidden: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setHidden: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of hiddenCls
     * @param hiddenCls String The new value.
     */
-  var setHiddenCls: js.UndefOr[js.Function1[/* hiddenCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setHiddenCls: js.UndefOr[js.Function1[/* hiddenCls */ js.UndefOr[java.lang.String], Unit]] = js.native
   /** [Method] Sets the value of hideAnimation
     * @param hideAnimation String/Mixed The new value.
     */
-  var setHideAnimation: js.UndefOr[js.Function1[/* hideAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHideAnimation: js.UndefOr[js.Function1[/* hideAnimation */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of html
     * @param html String/Ext.Element/HTMLElement The new value.
     */
-  var setHtml: js.UndefOr[js.Function1[/* html */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHtml: js.UndefOr[js.Function1[/* html */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of itemId
     * @param itemId String The new value.
     */
-  var setItemId: js.UndefOr[js.Function1[/* itemId */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setItemId: js.UndefOr[js.Function1[/* itemId */ js.UndefOr[java.lang.String], Unit]] = js.native
   /** [Method] Sets the value of left
     * @param left Number/String The new value.
     */
-  var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of margin
     * @param margin Number/String The new value.
     */
-  var setMargin: js.UndefOr[js.Function1[/* margin */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMargin: js.UndefOr[js.Function1[/* margin */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of maxHeight
     * @param maxHeight Number/String The new value.
     */
-  var setMaxHeight: js.UndefOr[js.Function1[/* maxHeight */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMaxHeight: js.UndefOr[js.Function1[/* maxHeight */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of maxWidth
     * @param maxWidth Number/String The new value.
     */
-  var setMaxWidth: js.UndefOr[js.Function1[/* maxWidth */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMaxWidth: js.UndefOr[js.Function1[/* maxWidth */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of minHeight
     * @param minHeight Number/String The new value.
     */
-  var setMinHeight: js.UndefOr[js.Function1[/* minHeight */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMinHeight: js.UndefOr[js.Function1[/* minHeight */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of minWidth
     * @param minWidth Number/String The new value.
     */
-  var setMinWidth: js.UndefOr[js.Function1[/* minWidth */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMinWidth: js.UndefOr[js.Function1[/* minWidth */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of padding
     * @param padding Number/String The new value.
     */
-  var setPadding: js.UndefOr[js.Function1[/* padding */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setPadding: js.UndefOr[js.Function1[/* padding */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of plugins
     * @param plugins Object/Array The new value.
     */
-  var setPlugins: js.UndefOr[js.Function1[/* plugins */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setPlugins: js.UndefOr[js.Function1[/* plugins */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of record
     * @param record Ext.data.Model The new value.
     */
-  var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Unit]] = js.undefined
+  var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Unit]] = js.native
   /** [Method] Sets the value of renderTo
     * @param renderTo Ext.Element The new value.
     */
-  var setRenderTo: js.UndefOr[js.Function1[/* renderTo */ js.UndefOr[IElement], Unit]] = js.undefined
+  var setRenderTo: js.UndefOr[js.Function1[/* renderTo */ js.UndefOr[IElement], Unit]] = js.native
   /** [Method] Sets the value of right
     * @param right Number/String The new value.
     */
-  var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] This method has moved to Ext Container  */
-  var setScrollable: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var setScrollable: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Sets the value of showAnimation
     * @param showAnimation String/Mixed The new value.
     */
-  var setShowAnimation: js.UndefOr[js.Function1[/* showAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setShowAnimation: js.UndefOr[js.Function1[/* showAnimation */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the size of the Component
     * @param width Number The new width for the Component.
     * @param height Number The new height for the Component.
     */
   var setSize: js.UndefOr[
     js.Function2[/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Sets the value of style
     * @param style String/Object The new value.
     */
-  var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of styleHtmlCls
     * @param styleHtmlCls String The new value.
     */
-  var setStyleHtmlCls: js.UndefOr[js.Function1[/* styleHtmlCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setStyleHtmlCls: js.UndefOr[js.Function1[/* styleHtmlCls */ js.UndefOr[java.lang.String], Unit]] = js.native
   /** [Method] Sets the value of styleHtmlContent
     * @param styleHtmlContent Boolean The new value.
     */
-  var setStyleHtmlContent: js.UndefOr[js.Function1[/* styleHtmlContent */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setStyleHtmlContent: js.UndefOr[js.Function1[/* styleHtmlContent */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of top
     * @param top Number/String The new value.
     */
-  var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of tpl
     * @param tpl String/String[]/Ext.Template/Ext.XTemplate[] The new value.
     */
-  var setTpl: js.UndefOr[js.Function1[/* tpl */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTpl: js.UndefOr[js.Function1[/* tpl */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of tplWriteMode
     * @param tplWriteMode String The new value.
     */
-  var setTplWriteMode: js.UndefOr[js.Function1[/* tplWriteMode */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setTplWriteMode: js.UndefOr[js.Function1[/* tplWriteMode */ js.UndefOr[java.lang.String], Unit]] = js.native
   /** [Method] Sets the value of ui
     * @param ui String The new value.
     */
-  var setUi: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var setUi: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.native
   /** [Method] Sets the value of width
     * @param width Number/String The new value.
     */
-  var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of zIndex
     * @param zIndex Number The new value.
     */
-  var setZIndex: js.UndefOr[js.Function1[/* zIndex */ js.UndefOr[Double], Unit]] = js.undefined
+  var setZIndex: js.UndefOr[js.Function1[/* zIndex */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Shows this component optionally using an animation
     * @param animation Object/Boolean You can specify an animation here or a bool to use the showAnimation config.
     * @returns Ext.Component
     */
-  var show: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var show: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.native
   /** [Config Option] (String/Mixed) */
-  var showAnimation: js.UndefOr[js.Any] = js.undefined
+  var showAnimation: js.UndefOr[js.Any] = js.native
   /** [Method] Shows this component by another component
     * @param component Ext.Component The target component to show this component by.
     * @param alignment String The specific alignment.
@@ -548,471 +548,715 @@ trait IComponent extends IEvented {
       /* alignment */ js.UndefOr[java.lang.String], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (Boolean) */
-  var stopMaskTapEvent: js.UndefOr[Boolean] = js.undefined
+  var stopMaskTapEvent: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String/Object) */
-  var style: js.UndefOr[js.Any] = js.undefined
+  var style: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var styleHtmlCls: js.UndefOr[java.lang.String] = js.undefined
+  var styleHtmlCls: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (Boolean) */
-  var styleHtmlContent: js.UndefOr[Boolean] = js.undefined
+  var styleHtmlContent: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number/String) */
-  var top: js.UndefOr[js.Any] = js.undefined
+  var top: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String/String[]/Ext.Template/Ext.XTemplate[]) */
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var tpl: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var tplWriteMode: js.UndefOr[java.lang.String] = js.undefined
+  var tplWriteMode: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (String) */
-  var ui: js.UndefOr[java.lang.String] = js.undefined
+  var ui: js.UndefOr[java.lang.String] = js.native
   /** [Method] Walks up the ownerCt axis looking for an ancestor Container which matches the passed simple selector
     * @param selector String The simple selector to test.
     * @returns Ext.Container The matching ancestor Container (or undefined if no match was found).
     */
-  var up: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IContainer]] = js.undefined
+  var up: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IContainer]] = js.native
   /** [Method] Updates the HTML content of the Component  */
-  var update: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var update: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Updates the styleHtmlCls configuration
     * @param newHtmlCls Object
     * @param oldHtmlCls Object
     */
   var updateStyleHtmlCls: js.UndefOr[
     js.Function2[/* newHtmlCls */ js.UndefOr[js.Any], /* oldHtmlCls */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (Number/String) */
-  var width: js.UndefOr[js.Any] = js.undefined
+  var width: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String[]) */
-  var xtype: js.UndefOr[java.lang.String] = js.undefined
+  var xtype: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (Number) */
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object IComponent {
   @scala.inline
-  def apply(
-    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addCls: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
-    addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
-    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    baseCls: java.lang.String = null,
-    border: js.Any = null,
-    bottom: js.Any = null,
-    bubbleEvents: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    centered: js.UndefOr[Boolean] = js.undefined,
-    clearListeners: () => Unit = null,
-    cls: js.Any = null,
-    componentCls: java.lang.String = null,
-    config: js.Any = null,
-    contentEl: js.Any = null,
-    data: js.Any = null,
-    destroy: () => Unit = null,
-    disable: () => Unit = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledCls: java.lang.String = null,
-    dock: java.lang.String = null,
-    docked: java.lang.String = null,
-    enable: () => Unit = null,
-    enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    enterAnimation: js.Any = null,
-    exitAnimation: js.Any = null,
-    extend: java.lang.String = null,
-    fireAction: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean = null,
-    flex: js.UndefOr[Double] = js.undefined,
-    floating: js.UndefOr[Boolean] = js.undefined,
-    floatingCls: java.lang.String = null,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    getAlignmentInfo: (/* component */ js.UndefOr[js.Any], /* alignment */ js.UndefOr[js.Any]) => Unit = null,
-    getBaseCls: () => java.lang.String = null,
-    getBorder: () => _ = null,
-    getBottom: () => _ = null,
-    getBubbleEvents: () => _ = null,
-    getCentered: () => Boolean = null,
-    getCls: () => _ = null,
-    getContentEl: () => _ = null,
-    getData: () => _ = null,
-    getDisabled: () => Boolean = null,
-    getDisabledCls: () => java.lang.String = null,
-    getDocked: () => java.lang.String = null,
-    getEl: () => typings.senchaTouch.Ext.dom.IElement = null,
-    getEnterAnimation: () => _ = null,
-    getExitAnimation: () => _ = null,
-    getFlex: () => Double = null,
-    getFloatingCls: () => java.lang.String = null,
-    getHeight: () => _ = null,
-    getHidden: () => Boolean = null,
-    getHiddenCls: () => java.lang.String = null,
-    getHideAnimation: () => _ = null,
-    getHtml: () => _ = null,
-    getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getItemId: () => java.lang.String = null,
-    getLeft: () => _ = null,
-    getListeners: () => _ = null,
-    getMargin: () => _ = null,
-    getMaxHeight: () => _ = null,
-    getMaxWidth: () => _ = null,
-    getMinHeight: () => _ = null,
-    getMinWidth: () => _ = null,
-    getPadding: () => _ = null,
-    getParent: () => IComponent = null,
-    getPlugins: () => _ = null,
-    getRecord: () => IModel = null,
-    getRenderTo: () => IElement = null,
-    getRight: () => _ = null,
-    getShowAnimation: () => _ = null,
-    getSize: () => _ = null,
-    getStyle: () => _ = null,
-    getStyleHtmlCls: () => java.lang.String = null,
-    getStyleHtmlContent: () => Boolean = null,
-    getTop: () => _ = null,
-    getTpl: () => _ = null,
-    getTplWriteMode: () => java.lang.String = null,
-    getUi: () => java.lang.String = null,
-    getWidth: () => _ = null,
-    getXTypes: () => java.lang.String = null,
-    getZIndex: () => Double = null,
-    hasListener: /* eventName */ js.UndefOr[java.lang.String] => Boolean = null,
-    hasParent: () => Boolean = null,
-    height: js.Any = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hiddenCls: java.lang.String = null,
-    hide: /* animation */ js.UndefOr[js.Any] => IComponent = null,
-    hideAnimation: js.Any = null,
-    hideOnMaskTap: js.UndefOr[Boolean] = js.undefined,
-    html: js.Any = null,
-    id: java.lang.String = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    initialize: () => Unit = null,
-    isDisabled: () => Boolean = null,
-    isHidden: () => Boolean = null,
-    isXType: (/* xtype */ js.UndefOr[java.lang.String], /* shallow */ js.UndefOr[Boolean]) => Boolean = null,
-    itemId: java.lang.String = null,
-    layoutOnOrientationChange: js.UndefOr[Boolean] = js.undefined,
-    left: js.Any = null,
-    listeners: js.Any = null,
-    margin: js.Any = null,
-    maxHeight: js.Any = null,
-    maxWidth: js.Any = null,
-    minHeight: js.Any = null,
-    minWidth: js.Any = null,
-    mixins: js.Any = null,
-    modal: js.UndefOr[Boolean] = js.undefined,
-    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    monitorOrientation: js.UndefOr[Boolean] = js.undefined,
-    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
-    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    padding: js.Any = null,
-    platformConfig: js.Any = null,
-    plugins: js.Any = null,
-    record: IModel = null,
-    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
-    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeCls: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
-    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    renderTo: IElement = null,
-    replaceCls: (/* oldCls */ js.UndefOr[java.lang.String], /* newCls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit = null,
-    resetFloating: () => Unit = null,
-    resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    right: js.Any = null,
-    scroll: js.Any = null,
-    self: IClass = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setBorder: /* border */ js.UndefOr[js.Any] => Unit = null,
-    setBottom: /* bottom */ js.UndefOr[js.Any] => Unit = null,
-    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setCentered: /* centered */ js.UndefOr[Boolean] => Unit = null,
-    setCls: /* cls */ js.UndefOr[js.Any] => Unit = null,
-    setContentEl: /* contentEl */ js.UndefOr[js.Any] => Unit = null,
-    setData: /* data */ js.UndefOr[js.Any] => Unit = null,
-    setDisabled: /* disabled */ js.UndefOr[Boolean] => Unit = null,
-    setDisabledCls: /* disabledCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setDocked: /* docked */ js.UndefOr[java.lang.String] => Unit = null,
-    setDraggable: /* draggable */ js.UndefOr[js.Any] => Unit = null,
-    setEnterAnimation: /* enterAnimation */ js.UndefOr[js.Any] => Unit = null,
-    setExitAnimation: /* exitAnimation */ js.UndefOr[js.Any] => Unit = null,
-    setFlex: /* flex */ js.UndefOr[Double] => Unit = null,
-    setFloating: /* floating */ js.UndefOr[Boolean] => Unit = null,
-    setFloatingCls: /* floatingCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setHeight: /* height */ js.UndefOr[js.Any] => Unit = null,
-    setHidden: /* hidden */ js.UndefOr[Boolean] => Unit = null,
-    setHiddenCls: /* hiddenCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setHideAnimation: /* hideAnimation */ js.UndefOr[js.Any] => Unit = null,
-    setHtml: /* html */ js.UndefOr[js.Any] => Unit = null,
-    setItemId: /* itemId */ js.UndefOr[java.lang.String] => Unit = null,
-    setLeft: /* left */ js.UndefOr[js.Any] => Unit = null,
-    setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setMargin: /* margin */ js.UndefOr[js.Any] => Unit = null,
-    setMaxHeight: /* maxHeight */ js.UndefOr[js.Any] => Unit = null,
-    setMaxWidth: /* maxWidth */ js.UndefOr[js.Any] => Unit = null,
-    setMinHeight: /* minHeight */ js.UndefOr[js.Any] => Unit = null,
-    setMinWidth: /* minWidth */ js.UndefOr[js.Any] => Unit = null,
-    setPadding: /* padding */ js.UndefOr[js.Any] => Unit = null,
-    setPlugins: /* plugins */ js.UndefOr[js.Any] => Unit = null,
-    setRecord: /* record */ js.UndefOr[IModel] => Unit = null,
-    setRenderTo: /* renderTo */ js.UndefOr[IElement] => Unit = null,
-    setRight: /* right */ js.UndefOr[js.Any] => Unit = null,
-    setScrollable: () => Unit = null,
-    setShowAnimation: /* showAnimation */ js.UndefOr[js.Any] => Unit = null,
-    setSize: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit = null,
-    setStyle: /* style */ js.UndefOr[js.Any] => Unit = null,
-    setStyleHtmlCls: /* styleHtmlCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setStyleHtmlContent: /* styleHtmlContent */ js.UndefOr[Boolean] => Unit = null,
-    setTop: /* top */ js.UndefOr[js.Any] => Unit = null,
-    setTpl: /* tpl */ js.UndefOr[js.Any] => Unit = null,
-    setTplWriteMode: /* tplWriteMode */ js.UndefOr[java.lang.String] => Unit = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
-    setWidth: /* width */ js.UndefOr[js.Any] => Unit = null,
-    setZIndex: /* zIndex */ js.UndefOr[Double] => Unit = null,
-    show: /* animation */ js.UndefOr[js.Any] => IComponent = null,
-    showAnimation: js.Any = null,
-    showBy: (/* component */ js.UndefOr[IComponent], /* alignment */ js.UndefOr[java.lang.String]) => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    stopMaskTapEvent: js.UndefOr[Boolean] = js.undefined,
-    style: js.Any = null,
-    styleHtmlCls: java.lang.String = null,
-    styleHtmlContent: js.UndefOr[Boolean] = js.undefined,
-    suspendEvents: () => Unit = null,
-    top: js.Any = null,
-    tpl: js.Any = null,
-    tplWriteMode: java.lang.String = null,
-    ui: java.lang.String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[java.lang.String]) => Unit = null,
-    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    up: /* selector */ js.UndefOr[java.lang.String] => IContainer = null,
-    update: () => Unit = null,
-    updateStyleHtmlCls: (/* newHtmlCls */ js.UndefOr[js.Any], /* oldHtmlCls */ js.UndefOr[js.Any]) => Unit = null,
-    uses: Array = null,
-    width: js.Any = null,
-    xtype: java.lang.String = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): IComponent = {
+  def apply(): IComponent = {
     val __obj = js.Dynamic.literal()
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
-    if (addCls != null) __obj.updateDynamic("addCls")(js.Any.fromFunction3(addCls))
-    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
-    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
-    if (componentCls != null) __obj.updateDynamic("componentCls")(componentCls.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (contentEl != null) __obj.updateDynamic("contentEl")(contentEl.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls.asInstanceOf[js.Any])
-    if (dock != null) __obj.updateDynamic("dock")(dock.asInstanceOf[js.Any])
-    if (docked != null) __obj.updateDynamic("docked")(docked.asInstanceOf[js.Any])
-    if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation.asInstanceOf[js.Any])
-    if (exitAnimation != null) __obj.updateDynamic("exitAnimation")(exitAnimation.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.get.asInstanceOf[js.Any])
-    if (floatingCls != null) __obj.updateDynamic("floatingCls")(floatingCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
-    if (getAlignmentInfo != null) __obj.updateDynamic("getAlignmentInfo")(js.Any.fromFunction2(getAlignmentInfo))
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
-    if (getBorder != null) __obj.updateDynamic("getBorder")(js.Any.fromFunction0(getBorder))
-    if (getBottom != null) __obj.updateDynamic("getBottom")(js.Any.fromFunction0(getBottom))
-    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
-    if (getCentered != null) __obj.updateDynamic("getCentered")(js.Any.fromFunction0(getCentered))
-    if (getCls != null) __obj.updateDynamic("getCls")(js.Any.fromFunction0(getCls))
-    if (getContentEl != null) __obj.updateDynamic("getContentEl")(js.Any.fromFunction0(getContentEl))
-    if (getData != null) __obj.updateDynamic("getData")(js.Any.fromFunction0(getData))
-    if (getDisabled != null) __obj.updateDynamic("getDisabled")(js.Any.fromFunction0(getDisabled))
-    if (getDisabledCls != null) __obj.updateDynamic("getDisabledCls")(js.Any.fromFunction0(getDisabledCls))
-    if (getDocked != null) __obj.updateDynamic("getDocked")(js.Any.fromFunction0(getDocked))
-    if (getEl != null) __obj.updateDynamic("getEl")(js.Any.fromFunction0(getEl))
-    if (getEnterAnimation != null) __obj.updateDynamic("getEnterAnimation")(js.Any.fromFunction0(getEnterAnimation))
-    if (getExitAnimation != null) __obj.updateDynamic("getExitAnimation")(js.Any.fromFunction0(getExitAnimation))
-    if (getFlex != null) __obj.updateDynamic("getFlex")(js.Any.fromFunction0(getFlex))
-    if (getFloatingCls != null) __obj.updateDynamic("getFloatingCls")(js.Any.fromFunction0(getFloatingCls))
-    if (getHeight != null) __obj.updateDynamic("getHeight")(js.Any.fromFunction0(getHeight))
-    if (getHidden != null) __obj.updateDynamic("getHidden")(js.Any.fromFunction0(getHidden))
-    if (getHiddenCls != null) __obj.updateDynamic("getHiddenCls")(js.Any.fromFunction0(getHiddenCls))
-    if (getHideAnimation != null) __obj.updateDynamic("getHideAnimation")(js.Any.fromFunction0(getHideAnimation))
-    if (getHtml != null) __obj.updateDynamic("getHtml")(js.Any.fromFunction0(getHtml))
-    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getItemId != null) __obj.updateDynamic("getItemId")(js.Any.fromFunction0(getItemId))
-    if (getLeft != null) __obj.updateDynamic("getLeft")(js.Any.fromFunction0(getLeft))
-    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
-    if (getMargin != null) __obj.updateDynamic("getMargin")(js.Any.fromFunction0(getMargin))
-    if (getMaxHeight != null) __obj.updateDynamic("getMaxHeight")(js.Any.fromFunction0(getMaxHeight))
-    if (getMaxWidth != null) __obj.updateDynamic("getMaxWidth")(js.Any.fromFunction0(getMaxWidth))
-    if (getMinHeight != null) __obj.updateDynamic("getMinHeight")(js.Any.fromFunction0(getMinHeight))
-    if (getMinWidth != null) __obj.updateDynamic("getMinWidth")(js.Any.fromFunction0(getMinWidth))
-    if (getPadding != null) __obj.updateDynamic("getPadding")(js.Any.fromFunction0(getPadding))
-    if (getParent != null) __obj.updateDynamic("getParent")(js.Any.fromFunction0(getParent))
-    if (getPlugins != null) __obj.updateDynamic("getPlugins")(js.Any.fromFunction0(getPlugins))
-    if (getRecord != null) __obj.updateDynamic("getRecord")(js.Any.fromFunction0(getRecord))
-    if (getRenderTo != null) __obj.updateDynamic("getRenderTo")(js.Any.fromFunction0(getRenderTo))
-    if (getRight != null) __obj.updateDynamic("getRight")(js.Any.fromFunction0(getRight))
-    if (getShowAnimation != null) __obj.updateDynamic("getShowAnimation")(js.Any.fromFunction0(getShowAnimation))
-    if (getSize != null) __obj.updateDynamic("getSize")(js.Any.fromFunction0(getSize))
-    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction0(getStyle))
-    if (getStyleHtmlCls != null) __obj.updateDynamic("getStyleHtmlCls")(js.Any.fromFunction0(getStyleHtmlCls))
-    if (getStyleHtmlContent != null) __obj.updateDynamic("getStyleHtmlContent")(js.Any.fromFunction0(getStyleHtmlContent))
-    if (getTop != null) __obj.updateDynamic("getTop")(js.Any.fromFunction0(getTop))
-    if (getTpl != null) __obj.updateDynamic("getTpl")(js.Any.fromFunction0(getTpl))
-    if (getTplWriteMode != null) __obj.updateDynamic("getTplWriteMode")(js.Any.fromFunction0(getTplWriteMode))
-    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
-    if (getWidth != null) __obj.updateDynamic("getWidth")(js.Any.fromFunction0(getWidth))
-    if (getXTypes != null) __obj.updateDynamic("getXTypes")(js.Any.fromFunction0(getXTypes))
-    if (getZIndex != null) __obj.updateDynamic("getZIndex")(js.Any.fromFunction0(getZIndex))
-    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (hasParent != null) __obj.updateDynamic("hasParent")(js.Any.fromFunction0(hasParent))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (hiddenCls != null) __obj.updateDynamic("hiddenCls")(hiddenCls.asInstanceOf[js.Any])
-    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
-    if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnMaskTap)) __obj.updateDynamic("hideOnMaskTap")(hideOnMaskTap.get.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
-    if (isDisabled != null) __obj.updateDynamic("isDisabled")(js.Any.fromFunction0(isDisabled))
-    if (isHidden != null) __obj.updateDynamic("isHidden")(js.Any.fromFunction0(isHidden))
-    if (isXType != null) __obj.updateDynamic("isXType")(js.Any.fromFunction2(isXType))
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (!js.isUndefined(layoutOnOrientationChange)) __obj.updateDynamic("layoutOnOrientationChange")(layoutOnOrientationChange.get.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
-    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (!js.isUndefined(monitorOrientation)) __obj.updateDynamic("monitorOrientation")(monitorOrientation.get.asInstanceOf[js.Any])
-    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
-    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
-    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (record != null) __obj.updateDynamic("record")(record.asInstanceOf[js.Any])
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
-    if (removeCls != null) __obj.updateDynamic("removeCls")(js.Any.fromFunction3(removeCls))
-    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
-    if (renderTo != null) __obj.updateDynamic("renderTo")(renderTo.asInstanceOf[js.Any])
-    if (replaceCls != null) __obj.updateDynamic("replaceCls")(js.Any.fromFunction4(replaceCls))
-    if (resetFloating != null) __obj.updateDynamic("resetFloating")(js.Any.fromFunction0(resetFloating))
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
-    if (setBorder != null) __obj.updateDynamic("setBorder")(js.Any.fromFunction1(setBorder))
-    if (setBottom != null) __obj.updateDynamic("setBottom")(js.Any.fromFunction1(setBottom))
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
-    if (setCentered != null) __obj.updateDynamic("setCentered")(js.Any.fromFunction1(setCentered))
-    if (setCls != null) __obj.updateDynamic("setCls")(js.Any.fromFunction1(setCls))
-    if (setContentEl != null) __obj.updateDynamic("setContentEl")(js.Any.fromFunction1(setContentEl))
-    if (setData != null) __obj.updateDynamic("setData")(js.Any.fromFunction1(setData))
-    if (setDisabled != null) __obj.updateDynamic("setDisabled")(js.Any.fromFunction1(setDisabled))
-    if (setDisabledCls != null) __obj.updateDynamic("setDisabledCls")(js.Any.fromFunction1(setDisabledCls))
-    if (setDocked != null) __obj.updateDynamic("setDocked")(js.Any.fromFunction1(setDocked))
-    if (setDraggable != null) __obj.updateDynamic("setDraggable")(js.Any.fromFunction1(setDraggable))
-    if (setEnterAnimation != null) __obj.updateDynamic("setEnterAnimation")(js.Any.fromFunction1(setEnterAnimation))
-    if (setExitAnimation != null) __obj.updateDynamic("setExitAnimation")(js.Any.fromFunction1(setExitAnimation))
-    if (setFlex != null) __obj.updateDynamic("setFlex")(js.Any.fromFunction1(setFlex))
-    if (setFloating != null) __obj.updateDynamic("setFloating")(js.Any.fromFunction1(setFloating))
-    if (setFloatingCls != null) __obj.updateDynamic("setFloatingCls")(js.Any.fromFunction1(setFloatingCls))
-    if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction1(setHeight))
-    if (setHidden != null) __obj.updateDynamic("setHidden")(js.Any.fromFunction1(setHidden))
-    if (setHiddenCls != null) __obj.updateDynamic("setHiddenCls")(js.Any.fromFunction1(setHiddenCls))
-    if (setHideAnimation != null) __obj.updateDynamic("setHideAnimation")(js.Any.fromFunction1(setHideAnimation))
-    if (setHtml != null) __obj.updateDynamic("setHtml")(js.Any.fromFunction1(setHtml))
-    if (setItemId != null) __obj.updateDynamic("setItemId")(js.Any.fromFunction1(setItemId))
-    if (setLeft != null) __obj.updateDynamic("setLeft")(js.Any.fromFunction1(setLeft))
-    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (setMargin != null) __obj.updateDynamic("setMargin")(js.Any.fromFunction1(setMargin))
-    if (setMaxHeight != null) __obj.updateDynamic("setMaxHeight")(js.Any.fromFunction1(setMaxHeight))
-    if (setMaxWidth != null) __obj.updateDynamic("setMaxWidth")(js.Any.fromFunction1(setMaxWidth))
-    if (setMinHeight != null) __obj.updateDynamic("setMinHeight")(js.Any.fromFunction1(setMinHeight))
-    if (setMinWidth != null) __obj.updateDynamic("setMinWidth")(js.Any.fromFunction1(setMinWidth))
-    if (setPadding != null) __obj.updateDynamic("setPadding")(js.Any.fromFunction1(setPadding))
-    if (setPlugins != null) __obj.updateDynamic("setPlugins")(js.Any.fromFunction1(setPlugins))
-    if (setRecord != null) __obj.updateDynamic("setRecord")(js.Any.fromFunction1(setRecord))
-    if (setRenderTo != null) __obj.updateDynamic("setRenderTo")(js.Any.fromFunction1(setRenderTo))
-    if (setRight != null) __obj.updateDynamic("setRight")(js.Any.fromFunction1(setRight))
-    if (setScrollable != null) __obj.updateDynamic("setScrollable")(js.Any.fromFunction0(setScrollable))
-    if (setShowAnimation != null) __obj.updateDynamic("setShowAnimation")(js.Any.fromFunction1(setShowAnimation))
-    if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction2(setSize))
-    if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction1(setStyle))
-    if (setStyleHtmlCls != null) __obj.updateDynamic("setStyleHtmlCls")(js.Any.fromFunction1(setStyleHtmlCls))
-    if (setStyleHtmlContent != null) __obj.updateDynamic("setStyleHtmlContent")(js.Any.fromFunction1(setStyleHtmlContent))
-    if (setTop != null) __obj.updateDynamic("setTop")(js.Any.fromFunction1(setTop))
-    if (setTpl != null) __obj.updateDynamic("setTpl")(js.Any.fromFunction1(setTpl))
-    if (setTplWriteMode != null) __obj.updateDynamic("setTplWriteMode")(js.Any.fromFunction1(setTplWriteMode))
-    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
-    if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction1(setWidth))
-    if (setZIndex != null) __obj.updateDynamic("setZIndex")(js.Any.fromFunction1(setZIndex))
-    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation.asInstanceOf[js.Any])
-    if (showBy != null) __obj.updateDynamic("showBy")(js.Any.fromFunction2(showBy))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopMaskTapEvent)) __obj.updateDynamic("stopMaskTapEvent")(stopMaskTapEvent.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styleHtmlCls != null) __obj.updateDynamic("styleHtmlCls")(styleHtmlCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleHtmlContent)) __obj.updateDynamic("styleHtmlContent")(styleHtmlContent.get.asInstanceOf[js.Any])
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
-    if (tplWriteMode != null) __obj.updateDynamic("tplWriteMode")(tplWriteMode.asInstanceOf[js.Any])
-    if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
-    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
-    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (up != null) __obj.updateDynamic("up")(js.Any.fromFunction1(up))
-    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction0(update))
-    if (updateStyleHtmlCls != null) __obj.updateDynamic("updateStyleHtmlCls")(js.Any.fromFunction2(updateStyleHtmlCls))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xtype != null) __obj.updateDynamic("xtype")(xtype.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComponent]
   }
+  @scala.inline
+  implicit class IComponentOps[Self <: IComponent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddCls(
+      value: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit
+    ): Self = this.set("addCls", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteAddCls: Self = this.set("addCls", js.undefined)
+    @scala.inline
+    def setBaseCls(value: java.lang.String): Self = this.set("baseCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseCls: Self = this.set("baseCls", js.undefined)
+    @scala.inline
+    def setBorder(value: js.Any): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setBottom(value: js.Any): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setCentered(value: Boolean): Self = this.set("centered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCentered: Self = this.set("centered", js.undefined)
+    @scala.inline
+    def setCls(value: js.Any): Self = this.set("cls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCls: Self = this.set("cls", js.undefined)
+    @scala.inline
+    def setComponentCls(value: java.lang.String): Self = this.set("componentCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentCls: Self = this.set("componentCls", js.undefined)
+    @scala.inline
+    def setContentEl(value: js.Any): Self = this.set("contentEl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEl: Self = this.set("contentEl", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDisable(value: () => Unit): Self = this.set("disable", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDisable: Self = this.set("disable", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisabledCls(value: java.lang.String): Self = this.set("disabledCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledCls: Self = this.set("disabledCls", js.undefined)
+    @scala.inline
+    def setDock(value: java.lang.String): Self = this.set("dock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDock: Self = this.set("dock", js.undefined)
+    @scala.inline
+    def setDocked(value: java.lang.String): Self = this.set("docked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocked: Self = this.set("docked", js.undefined)
+    @scala.inline
+    def setEnable(value: () => Unit): Self = this.set("enable", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setEnterAnimation(value: js.Any): Self = this.set("enterAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnterAnimation: Self = this.set("enterAnimation", js.undefined)
+    @scala.inline
+    def setExitAnimation(value: js.Any): Self = this.set("exitAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitAnimation: Self = this.set("exitAnimation", js.undefined)
+    @scala.inline
+    def setFlex(value: Double): Self = this.set("flex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlex: Self = this.set("flex", js.undefined)
+    @scala.inline
+    def setFloating(value: Boolean): Self = this.set("floating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloating: Self = this.set("floating", js.undefined)
+    @scala.inline
+    def setFloatingCls(value: java.lang.String): Self = this.set("floatingCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloatingCls: Self = this.set("floatingCls", js.undefined)
+    @scala.inline
+    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    @scala.inline
+    def setGetAlignmentInfo(value: (/* component */ js.UndefOr[js.Any], /* alignment */ js.UndefOr[js.Any]) => Unit): Self = this.set("getAlignmentInfo", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGetAlignmentInfo: Self = this.set("getAlignmentInfo", js.undefined)
+    @scala.inline
+    def setGetBaseCls(value: () => java.lang.String): Self = this.set("getBaseCls", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetBaseCls: Self = this.set("getBaseCls", js.undefined)
+    @scala.inline
+    def setGetBorder(value: () => _): Self = this.set("getBorder", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetBorder: Self = this.set("getBorder", js.undefined)
+    @scala.inline
+    def setGetBottom(value: () => _): Self = this.set("getBottom", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetBottom: Self = this.set("getBottom", js.undefined)
+    @scala.inline
+    def setGetCentered(value: () => Boolean): Self = this.set("getCentered", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetCentered: Self = this.set("getCentered", js.undefined)
+    @scala.inline
+    def setGetCls(value: () => _): Self = this.set("getCls", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetCls: Self = this.set("getCls", js.undefined)
+    @scala.inline
+    def setGetContentEl(value: () => _): Self = this.set("getContentEl", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetContentEl: Self = this.set("getContentEl", js.undefined)
+    @scala.inline
+    def setGetData(value: () => _): Self = this.set("getData", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetData: Self = this.set("getData", js.undefined)
+    @scala.inline
+    def setGetDisabled(value: () => Boolean): Self = this.set("getDisabled", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDisabled: Self = this.set("getDisabled", js.undefined)
+    @scala.inline
+    def setGetDisabledCls(value: () => java.lang.String): Self = this.set("getDisabledCls", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDisabledCls: Self = this.set("getDisabledCls", js.undefined)
+    @scala.inline
+    def setGetDocked(value: () => java.lang.String): Self = this.set("getDocked", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDocked: Self = this.set("getDocked", js.undefined)
+    @scala.inline
+    def setGetEl(value: () => typings.senchaTouch.Ext.dom.IElement): Self = this.set("getEl", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetEl: Self = this.set("getEl", js.undefined)
+    @scala.inline
+    def setGetEnterAnimation(value: () => _): Self = this.set("getEnterAnimation", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetEnterAnimation: Self = this.set("getEnterAnimation", js.undefined)
+    @scala.inline
+    def setGetExitAnimation(value: () => _): Self = this.set("getExitAnimation", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetExitAnimation: Self = this.set("getExitAnimation", js.undefined)
+    @scala.inline
+    def setGetFlex(value: () => Double): Self = this.set("getFlex", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetFlex: Self = this.set("getFlex", js.undefined)
+    @scala.inline
+    def setGetFloatingCls(value: () => java.lang.String): Self = this.set("getFloatingCls", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetFloatingCls: Self = this.set("getFloatingCls", js.undefined)
+    @scala.inline
+    def setGetHeight(value: () => _): Self = this.set("getHeight", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetHeight: Self = this.set("getHeight", js.undefined)
+    @scala.inline
+    def setGetHidden(value: () => Boolean): Self = this.set("getHidden", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetHidden: Self = this.set("getHidden", js.undefined)
+    @scala.inline
+    def setGetHiddenCls(value: () => java.lang.String): Self = this.set("getHiddenCls", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetHiddenCls: Self = this.set("getHiddenCls", js.undefined)
+    @scala.inline
+    def setGetHideAnimation(value: () => _): Self = this.set("getHideAnimation", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetHideAnimation: Self = this.set("getHideAnimation", js.undefined)
+    @scala.inline
+    def setGetHtml(value: () => _): Self = this.set("getHtml", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetHtml: Self = this.set("getHtml", js.undefined)
+    @scala.inline
+    def setGetItemId(value: () => java.lang.String): Self = this.set("getItemId", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetItemId: Self = this.set("getItemId", js.undefined)
+    @scala.inline
+    def setGetLeft(value: () => _): Self = this.set("getLeft", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetLeft: Self = this.set("getLeft", js.undefined)
+    @scala.inline
+    def setGetMargin(value: () => _): Self = this.set("getMargin", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMargin: Self = this.set("getMargin", js.undefined)
+    @scala.inline
+    def setGetMaxHeight(value: () => _): Self = this.set("getMaxHeight", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMaxHeight: Self = this.set("getMaxHeight", js.undefined)
+    @scala.inline
+    def setGetMaxWidth(value: () => _): Self = this.set("getMaxWidth", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMaxWidth: Self = this.set("getMaxWidth", js.undefined)
+    @scala.inline
+    def setGetMinHeight(value: () => _): Self = this.set("getMinHeight", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMinHeight: Self = this.set("getMinHeight", js.undefined)
+    @scala.inline
+    def setGetMinWidth(value: () => _): Self = this.set("getMinWidth", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMinWidth: Self = this.set("getMinWidth", js.undefined)
+    @scala.inline
+    def setGetPadding(value: () => _): Self = this.set("getPadding", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPadding: Self = this.set("getPadding", js.undefined)
+    @scala.inline
+    def setGetParent(value: () => IComponent): Self = this.set("getParent", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetParent: Self = this.set("getParent", js.undefined)
+    @scala.inline
+    def setGetPlugins(value: () => _): Self = this.set("getPlugins", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPlugins: Self = this.set("getPlugins", js.undefined)
+    @scala.inline
+    def setGetRecord(value: () => IModel): Self = this.set("getRecord", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRecord: Self = this.set("getRecord", js.undefined)
+    @scala.inline
+    def setGetRenderTo(value: () => IElement): Self = this.set("getRenderTo", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRenderTo: Self = this.set("getRenderTo", js.undefined)
+    @scala.inline
+    def setGetRight(value: () => _): Self = this.set("getRight", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRight: Self = this.set("getRight", js.undefined)
+    @scala.inline
+    def setGetShowAnimation(value: () => _): Self = this.set("getShowAnimation", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetShowAnimation: Self = this.set("getShowAnimation", js.undefined)
+    @scala.inline
+    def setGetSize(value: () => _): Self = this.set("getSize", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetSize: Self = this.set("getSize", js.undefined)
+    @scala.inline
+    def setGetStyle(value: () => _): Self = this.set("getStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetStyle: Self = this.set("getStyle", js.undefined)
+    @scala.inline
+    def setGetStyleHtmlCls(value: () => java.lang.String): Self = this.set("getStyleHtmlCls", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetStyleHtmlCls: Self = this.set("getStyleHtmlCls", js.undefined)
+    @scala.inline
+    def setGetStyleHtmlContent(value: () => Boolean): Self = this.set("getStyleHtmlContent", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetStyleHtmlContent: Self = this.set("getStyleHtmlContent", js.undefined)
+    @scala.inline
+    def setGetTop(value: () => _): Self = this.set("getTop", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTop: Self = this.set("getTop", js.undefined)
+    @scala.inline
+    def setGetTpl(value: () => _): Self = this.set("getTpl", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTpl: Self = this.set("getTpl", js.undefined)
+    @scala.inline
+    def setGetTplWriteMode(value: () => java.lang.String): Self = this.set("getTplWriteMode", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTplWriteMode: Self = this.set("getTplWriteMode", js.undefined)
+    @scala.inline
+    def setGetUi(value: () => java.lang.String): Self = this.set("getUi", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetUi: Self = this.set("getUi", js.undefined)
+    @scala.inline
+    def setGetWidth(value: () => _): Self = this.set("getWidth", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetWidth: Self = this.set("getWidth", js.undefined)
+    @scala.inline
+    def setGetXTypes(value: () => java.lang.String): Self = this.set("getXTypes", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetXTypes: Self = this.set("getXTypes", js.undefined)
+    @scala.inline
+    def setGetZIndex(value: () => Double): Self = this.set("getZIndex", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetZIndex: Self = this.set("getZIndex", js.undefined)
+    @scala.inline
+    def setHasParent(value: () => Boolean): Self = this.set("hasParent", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteHasParent: Self = this.set("hasParent", js.undefined)
+    @scala.inline
+    def setHeight(value: js.Any): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setHiddenCls(value: java.lang.String): Self = this.set("hiddenCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiddenCls: Self = this.set("hiddenCls", js.undefined)
+    @scala.inline
+    def setHide(value: /* animation */ js.UndefOr[js.Any] => IComponent): Self = this.set("hide", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHide: Self = this.set("hide", js.undefined)
+    @scala.inline
+    def setHideAnimation(value: js.Any): Self = this.set("hideAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideAnimation: Self = this.set("hideAnimation", js.undefined)
+    @scala.inline
+    def setHideOnMaskTap(value: Boolean): Self = this.set("hideOnMaskTap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideOnMaskTap: Self = this.set("hideOnMaskTap", js.undefined)
+    @scala.inline
+    def setHtml(value: js.Any): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setId(value: java.lang.String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInitialize(value: () => Unit): Self = this.set("initialize", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteInitialize: Self = this.set("initialize", js.undefined)
+    @scala.inline
+    def setIsDisabled(value: () => Boolean): Self = this.set("isDisabled", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsDisabled: Self = this.set("isDisabled", js.undefined)
+    @scala.inline
+    def setIsHidden(value: () => Boolean): Self = this.set("isHidden", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsHidden: Self = this.set("isHidden", js.undefined)
+    @scala.inline
+    def setIsXType(value: (/* xtype */ js.UndefOr[java.lang.String], /* shallow */ js.UndefOr[Boolean]) => Boolean): Self = this.set("isXType", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteIsXType: Self = this.set("isXType", js.undefined)
+    @scala.inline
+    def setItemId(value: java.lang.String): Self = this.set("itemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemId: Self = this.set("itemId", js.undefined)
+    @scala.inline
+    def setLayoutOnOrientationChange(value: Boolean): Self = this.set("layoutOnOrientationChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayoutOnOrientationChange: Self = this.set("layoutOnOrientationChange", js.undefined)
+    @scala.inline
+    def setLeft(value: js.Any): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setMargin(value: js.Any): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: js.Any): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: js.Any): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeight(value: js.Any): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: js.Any): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModal: Self = this.set("modal", js.undefined)
+    @scala.inline
+    def setMonitorOrientation(value: Boolean): Self = this.set("monitorOrientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitorOrientation: Self = this.set("monitorOrientation", js.undefined)
+    @scala.inline
+    def setPadding(value: js.Any): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPlugins(value: js.Any): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+    @scala.inline
+    def setRecord(value: IModel): Self = this.set("record", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecord: Self = this.set("record", js.undefined)
+    @scala.inline
+    def setRemoveCls(
+      value: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit
+    ): Self = this.set("removeCls", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteRemoveCls: Self = this.set("removeCls", js.undefined)
+    @scala.inline
+    def setRenderTo(value: IElement): Self = this.set("renderTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderTo: Self = this.set("renderTo", js.undefined)
+    @scala.inline
+    def setReplaceCls(
+      value: (/* oldCls */ js.UndefOr[java.lang.String], /* newCls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit
+    ): Self = this.set("replaceCls", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteReplaceCls: Self = this.set("replaceCls", js.undefined)
+    @scala.inline
+    def setResetFloating(value: () => Unit): Self = this.set("resetFloating", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteResetFloating: Self = this.set("resetFloating", js.undefined)
+    @scala.inline
+    def setRight(value: js.Any): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setScroll(value: js.Any): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScroll: Self = this.set("scroll", js.undefined)
+    @scala.inline
+    def setSetBaseCls(value: /* baseCls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setBaseCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBaseCls: Self = this.set("setBaseCls", js.undefined)
+    @scala.inline
+    def setSetBorder(value: /* border */ js.UndefOr[js.Any] => Unit): Self = this.set("setBorder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBorder: Self = this.set("setBorder", js.undefined)
+    @scala.inline
+    def setSetBottom(value: /* bottom */ js.UndefOr[js.Any] => Unit): Self = this.set("setBottom", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBottom: Self = this.set("setBottom", js.undefined)
+    @scala.inline
+    def setSetCentered(value: /* centered */ js.UndefOr[Boolean] => Unit): Self = this.set("setCentered", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetCentered: Self = this.set("setCentered", js.undefined)
+    @scala.inline
+    def setSetCls(value: /* cls */ js.UndefOr[js.Any] => Unit): Self = this.set("setCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetCls: Self = this.set("setCls", js.undefined)
+    @scala.inline
+    def setSetContentEl(value: /* contentEl */ js.UndefOr[js.Any] => Unit): Self = this.set("setContentEl", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetContentEl: Self = this.set("setContentEl", js.undefined)
+    @scala.inline
+    def setSetData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = this.set("setData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetData: Self = this.set("setData", js.undefined)
+    @scala.inline
+    def setSetDisabled(value: /* disabled */ js.UndefOr[Boolean] => Unit): Self = this.set("setDisabled", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDisabled: Self = this.set("setDisabled", js.undefined)
+    @scala.inline
+    def setSetDisabledCls(value: /* disabledCls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setDisabledCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDisabledCls: Self = this.set("setDisabledCls", js.undefined)
+    @scala.inline
+    def setSetDocked(value: /* docked */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setDocked", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDocked: Self = this.set("setDocked", js.undefined)
+    @scala.inline
+    def setSetDraggable(value: /* draggable */ js.UndefOr[js.Any] => Unit): Self = this.set("setDraggable", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDraggable: Self = this.set("setDraggable", js.undefined)
+    @scala.inline
+    def setSetEnterAnimation(value: /* enterAnimation */ js.UndefOr[js.Any] => Unit): Self = this.set("setEnterAnimation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetEnterAnimation: Self = this.set("setEnterAnimation", js.undefined)
+    @scala.inline
+    def setSetExitAnimation(value: /* exitAnimation */ js.UndefOr[js.Any] => Unit): Self = this.set("setExitAnimation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetExitAnimation: Self = this.set("setExitAnimation", js.undefined)
+    @scala.inline
+    def setSetFlex(value: /* flex */ js.UndefOr[Double] => Unit): Self = this.set("setFlex", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetFlex: Self = this.set("setFlex", js.undefined)
+    @scala.inline
+    def setSetFloating(value: /* floating */ js.UndefOr[Boolean] => Unit): Self = this.set("setFloating", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetFloating: Self = this.set("setFloating", js.undefined)
+    @scala.inline
+    def setSetFloatingCls(value: /* floatingCls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setFloatingCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetFloatingCls: Self = this.set("setFloatingCls", js.undefined)
+    @scala.inline
+    def setSetHeight(value: /* height */ js.UndefOr[js.Any] => Unit): Self = this.set("setHeight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetHeight: Self = this.set("setHeight", js.undefined)
+    @scala.inline
+    def setSetHidden(value: /* hidden */ js.UndefOr[Boolean] => Unit): Self = this.set("setHidden", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetHidden: Self = this.set("setHidden", js.undefined)
+    @scala.inline
+    def setSetHiddenCls(value: /* hiddenCls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setHiddenCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetHiddenCls: Self = this.set("setHiddenCls", js.undefined)
+    @scala.inline
+    def setSetHideAnimation(value: /* hideAnimation */ js.UndefOr[js.Any] => Unit): Self = this.set("setHideAnimation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetHideAnimation: Self = this.set("setHideAnimation", js.undefined)
+    @scala.inline
+    def setSetHtml(value: /* html */ js.UndefOr[js.Any] => Unit): Self = this.set("setHtml", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetHtml: Self = this.set("setHtml", js.undefined)
+    @scala.inline
+    def setSetItemId(value: /* itemId */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setItemId", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetItemId: Self = this.set("setItemId", js.undefined)
+    @scala.inline
+    def setSetLeft(value: /* left */ js.UndefOr[js.Any] => Unit): Self = this.set("setLeft", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetLeft: Self = this.set("setLeft", js.undefined)
+    @scala.inline
+    def setSetMargin(value: /* margin */ js.UndefOr[js.Any] => Unit): Self = this.set("setMargin", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMargin: Self = this.set("setMargin", js.undefined)
+    @scala.inline
+    def setSetMaxHeight(value: /* maxHeight */ js.UndefOr[js.Any] => Unit): Self = this.set("setMaxHeight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMaxHeight: Self = this.set("setMaxHeight", js.undefined)
+    @scala.inline
+    def setSetMaxWidth(value: /* maxWidth */ js.UndefOr[js.Any] => Unit): Self = this.set("setMaxWidth", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMaxWidth: Self = this.set("setMaxWidth", js.undefined)
+    @scala.inline
+    def setSetMinHeight(value: /* minHeight */ js.UndefOr[js.Any] => Unit): Self = this.set("setMinHeight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinHeight: Self = this.set("setMinHeight", js.undefined)
+    @scala.inline
+    def setSetMinWidth(value: /* minWidth */ js.UndefOr[js.Any] => Unit): Self = this.set("setMinWidth", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinWidth: Self = this.set("setMinWidth", js.undefined)
+    @scala.inline
+    def setSetPadding(value: /* padding */ js.UndefOr[js.Any] => Unit): Self = this.set("setPadding", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetPadding: Self = this.set("setPadding", js.undefined)
+    @scala.inline
+    def setSetPlugins(value: /* plugins */ js.UndefOr[js.Any] => Unit): Self = this.set("setPlugins", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetPlugins: Self = this.set("setPlugins", js.undefined)
+    @scala.inline
+    def setSetRecord(value: /* record */ js.UndefOr[IModel] => Unit): Self = this.set("setRecord", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetRecord: Self = this.set("setRecord", js.undefined)
+    @scala.inline
+    def setSetRenderTo(value: /* renderTo */ js.UndefOr[IElement] => Unit): Self = this.set("setRenderTo", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetRenderTo: Self = this.set("setRenderTo", js.undefined)
+    @scala.inline
+    def setSetRight(value: /* right */ js.UndefOr[js.Any] => Unit): Self = this.set("setRight", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetRight: Self = this.set("setRight", js.undefined)
+    @scala.inline
+    def setSetScrollable(value: () => Unit): Self = this.set("setScrollable", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteSetScrollable: Self = this.set("setScrollable", js.undefined)
+    @scala.inline
+    def setSetShowAnimation(value: /* showAnimation */ js.UndefOr[js.Any] => Unit): Self = this.set("setShowAnimation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetShowAnimation: Self = this.set("setShowAnimation", js.undefined)
+    @scala.inline
+    def setSetSize(value: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit): Self = this.set("setSize", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSetSize: Self = this.set("setSize", js.undefined)
+    @scala.inline
+    def setSetStyle(value: /* style */ js.UndefOr[js.Any] => Unit): Self = this.set("setStyle", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetStyle: Self = this.set("setStyle", js.undefined)
+    @scala.inline
+    def setSetStyleHtmlCls(value: /* styleHtmlCls */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setStyleHtmlCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetStyleHtmlCls: Self = this.set("setStyleHtmlCls", js.undefined)
+    @scala.inline
+    def setSetStyleHtmlContent(value: /* styleHtmlContent */ js.UndefOr[Boolean] => Unit): Self = this.set("setStyleHtmlContent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetStyleHtmlContent: Self = this.set("setStyleHtmlContent", js.undefined)
+    @scala.inline
+    def setSetTop(value: /* top */ js.UndefOr[js.Any] => Unit): Self = this.set("setTop", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetTop: Self = this.set("setTop", js.undefined)
+    @scala.inline
+    def setSetTpl(value: /* tpl */ js.UndefOr[js.Any] => Unit): Self = this.set("setTpl", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetTpl: Self = this.set("setTpl", js.undefined)
+    @scala.inline
+    def setSetTplWriteMode(value: /* tplWriteMode */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setTplWriteMode", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetTplWriteMode: Self = this.set("setTplWriteMode", js.undefined)
+    @scala.inline
+    def setSetUi(value: /* ui */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setUi", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetUi: Self = this.set("setUi", js.undefined)
+    @scala.inline
+    def setSetWidth(value: /* width */ js.UndefOr[js.Any] => Unit): Self = this.set("setWidth", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetWidth: Self = this.set("setWidth", js.undefined)
+    @scala.inline
+    def setSetZIndex(value: /* zIndex */ js.UndefOr[Double] => Unit): Self = this.set("setZIndex", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetZIndex: Self = this.set("setZIndex", js.undefined)
+    @scala.inline
+    def setShow(value: /* animation */ js.UndefOr[js.Any] => IComponent): Self = this.set("show", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setShowAnimation(value: js.Any): Self = this.set("showAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAnimation: Self = this.set("showAnimation", js.undefined)
+    @scala.inline
+    def setShowBy(
+      value: (/* component */ js.UndefOr[IComponent], /* alignment */ js.UndefOr[java.lang.String]) => Unit
+    ): Self = this.set("showBy", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteShowBy: Self = this.set("showBy", js.undefined)
+    @scala.inline
+    def setStopMaskTapEvent(value: Boolean): Self = this.set("stopMaskTapEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopMaskTapEvent: Self = this.set("stopMaskTapEvent", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleHtmlCls(value: java.lang.String): Self = this.set("styleHtmlCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleHtmlCls: Self = this.set("styleHtmlCls", js.undefined)
+    @scala.inline
+    def setStyleHtmlContent(value: Boolean): Self = this.set("styleHtmlContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleHtmlContent: Self = this.set("styleHtmlContent", js.undefined)
+    @scala.inline
+    def setTop(value: js.Any): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setTpl(value: js.Any): Self = this.set("tpl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTpl: Self = this.set("tpl", js.undefined)
+    @scala.inline
+    def setTplWriteMode(value: java.lang.String): Self = this.set("tplWriteMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTplWriteMode: Self = this.set("tplWriteMode", js.undefined)
+    @scala.inline
+    def setUi(value: java.lang.String): Self = this.set("ui", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUi: Self = this.set("ui", js.undefined)
+    @scala.inline
+    def setUp(value: /* selector */ js.UndefOr[java.lang.String] => IContainer): Self = this.set("up", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUp: Self = this.set("up", js.undefined)
+    @scala.inline
+    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+    @scala.inline
+    def setUpdateStyleHtmlCls(value: (/* newHtmlCls */ js.UndefOr[js.Any], /* oldHtmlCls */ js.UndefOr[js.Any]) => Unit): Self = this.set("updateStyleHtmlCls", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteUpdateStyleHtmlCls: Self = this.set("updateStyleHtmlCls", js.undefined)
+    @scala.inline
+    def setWidth(value: js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setXtype(value: java.lang.String): Self = this.set("xtype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXtype: Self = this.set("xtype", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

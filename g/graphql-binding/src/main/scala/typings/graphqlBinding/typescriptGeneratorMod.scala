@@ -35,14 +35,14 @@ object typescriptGeneratorMod extends js.Object {
     def renderInputFieldType(`type`: GraphQLInputType | GraphQLOutputType): String = js.native
     def renderInterfaceOrObject(`type`: GraphQLInputObjectType): String = js.native
     def renderInterfaceOrObject(`type`: GraphQLInterfaceType): String = js.native
-    def renderInterfaceOrObject(`type`: GraphQLObjectType[_, _, StringDictionary[_]]): String = js.native
+    def renderInterfaceOrObject(`type`: GraphQLObjectType[_, _]): String = js.native
     def renderInterfaceWrapper(
       typeName: String,
       typeDescription: Maybe[String],
       interfaces: js.Array[GraphQLInterfaceType],
       fieldDefinition: String
     ): String = js.native
-    def renderMainMethodFields(operation: String, fields: GraphQLFieldMap[_, _, StringDictionary[_]]): String = js.native
+    def renderMainMethodFields(operation: String, fields: GraphQLFieldMap[_, _]): String = js.native
     def renderMutations(): String = js.native
     def renderQueries(): String = js.native
     def renderSubscriptions(): String = js.native

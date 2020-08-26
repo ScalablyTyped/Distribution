@@ -17,6 +17,11 @@ class AsyncHost ()
 @js.native
 object AsyncHost extends js.Object {
   def forFile(content: String): typings.grammarkdown.hostMod.AsyncSingleFileHost = js.native
+  def forFile(
+    content: String,
+    file: js.UndefOr[scala.Nothing],
+    hostFallback: typings.grammarkdown.hostMod.AsyncHost
+  ): typings.grammarkdown.hostMod.AsyncSingleFileHost = js.native
   def forFile(content: String, file: String): typings.grammarkdown.hostMod.AsyncSingleFileHost = js.native
   def forFile(content: String, file: String, hostFallback: typings.grammarkdown.hostMod.AsyncHost): typings.grammarkdown.hostMod.AsyncSingleFileHost = js.native
 }

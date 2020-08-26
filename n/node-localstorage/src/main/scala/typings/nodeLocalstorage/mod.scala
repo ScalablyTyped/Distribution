@@ -81,10 +81,6 @@ object mod extends js.Object {
       * @param message Message explaining the error.
       */
     def this(message: String) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native

@@ -9,19 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object paramTypesMod extends js.Object {
   @js.native
-  /** @internalapi */
   class ParamTypes () extends js.Object {
-    /** @internalapi */
     var defaultTypes: js.Any = js.native
-    /** @hidden */
     var enqueue: Boolean = js.native
-    /** @hidden */
     var typeQueue: js.Array[_] = js.native
-    /** @hidden */
     var types: js.Any = js.native
-    /** @internalapi */
     def _flushTypeQueue(): Unit = js.native
-    /** @internalapi */
     def dispose(): Unit = js.native
     /**
       * Registers a parameter type
@@ -29,6 +22,11 @@ object paramTypesMod extends js.Object {
       * End users should call [[UrlMatcherFactory.type]], which delegates to this method.
       */
     def `type`(name: String): js.Any = js.native
+    def `type`(
+      name: String,
+      definition: js.UndefOr[scala.Nothing],
+      definitionFn: js.Function0[ParamTypeDefinition]
+    ): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
   }

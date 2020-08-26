@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgGridGroupByColumnSettingsSummaries
   extends /**
   * Option for JSONPDataSourceSettings
@@ -22,7 +23,7 @@ trait IgGridGroupByColumnSettingsSummaries
     * "string" the name of the function as a string located in the global window object.
     * "function" which will be used for calculating the summary value.
     */
-  var customSummary: js.UndefOr[String | js.Function] = js.undefined
+  var customSummary: js.UndefOr[String | js.Function] = js.native
   /**
     * the summary function key
     *
@@ -35,28 +36,44 @@ trait IgGridGroupByColumnSettingsSummaries
     * "count" count summary function
     * "custom" custom summary summary function
     */
-  var summaryFunction: js.UndefOr[String] = js.undefined
+  var summaryFunction: js.UndefOr[String] = js.native
   /**
     * Specifies the summary text that will be shown before the value
     *
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
 }
 
 object IgGridGroupByColumnSettingsSummaries {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    customSummary: String | js.Function = null,
-    summaryFunction: String = null,
-    text: String = null
-  ): IgGridGroupByColumnSettingsSummaries = {
+  def apply(): IgGridGroupByColumnSettingsSummaries = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (customSummary != null) __obj.updateDynamic("customSummary")(customSummary.asInstanceOf[js.Any])
-    if (summaryFunction != null) __obj.updateDynamic("summaryFunction")(summaryFunction.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridGroupByColumnSettingsSummaries]
   }
+  @scala.inline
+  implicit class IgGridGroupByColumnSettingsSummariesOps[Self <: IgGridGroupByColumnSettingsSummaries] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomSummary(value: String | js.Function): Self = this.set("customSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSummary: Self = this.set("customSummary", js.undefined)
+    @scala.inline
+    def setSummaryFunction(value: String): Self = this.set("summaryFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaryFunction: Self = this.set("summaryFunction", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

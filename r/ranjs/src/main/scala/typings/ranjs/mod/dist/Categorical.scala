@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Categorical ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Categorical] {
   def this(weights: js.Array[Double]) = this()
+  def this(weights: js.UndefOr[scala.Nothing], min: Double) = this()
   def this(weights: js.Array[Double], min: Double) = this()
 }
 

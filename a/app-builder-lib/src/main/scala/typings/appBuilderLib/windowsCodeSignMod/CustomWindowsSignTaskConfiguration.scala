@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CustomWindowsSignTaskConfiguration extends WindowsSignTaskConfiguration {
-  def computeSignToolArgs(isWin: Boolean): js.Array[String]
+  def computeSignToolArgs(isWin: Boolean): js.Array[String] = js.native
 }
 
 object CustomWindowsSignTaskConfiguration {
@@ -16,18 +17,25 @@ object CustomWindowsSignTaskConfiguration {
     hash: String,
     isNest: Boolean,
     options: WindowsConfiguration,
-    path: String,
-    cscInfo: js.UndefOr[Null | FileCodeSigningInfo | CertificateFromStoreInfo] = js.undefined,
-    name: js.UndefOr[Null | String] = js.undefined,
-    resultOutputPath: String = null,
-    site: js.UndefOr[Null | String] = js.undefined
+    path: String
   ): CustomWindowsSignTaskConfiguration = {
     val __obj = js.Dynamic.literal(computeSignToolArgs = js.Any.fromFunction1(computeSignToolArgs), hash = hash.asInstanceOf[js.Any], isNest = isNest.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(cscInfo)) __obj.updateDynamic("cscInfo")(cscInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resultOutputPath != null) __obj.updateDynamic("resultOutputPath")(resultOutputPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(site)) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomWindowsSignTaskConfiguration]
   }
+  @scala.inline
+  implicit class CustomWindowsSignTaskConfigurationOps[Self <: CustomWindowsSignTaskConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputeSignToolArgs(value: Boolean => js.Array[String]): Self = this.set("computeSignToolArgs", js.Any.fromFunction1(value))
+  }
+  
 }
 

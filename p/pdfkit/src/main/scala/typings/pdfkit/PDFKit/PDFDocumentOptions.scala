@@ -13,51 +13,90 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PDFDocumentOptions extends js.Object {
-  var autoFirstPage: js.UndefOr[Boolean] = js.undefined
-  var bufferPages: js.UndefOr[Boolean] = js.undefined
-  var compress: js.UndefOr[Boolean] = js.undefined
-  var info: js.UndefOr[DocumentInfo] = js.undefined
-  var layout: js.UndefOr[portrait | landscape] = js.undefined
-  var margin: js.UndefOr[Double] = js.undefined
-  var margins: js.UndefOr[Bottom] = js.undefined
-  var ownerPassword: js.UndefOr[String] = js.undefined
-  var pdfVersion: js.UndefOr[`1Dot3` | `1Dot4` | `1Dot5` | `1Dot6` | `1Dot7` | `1Dot7ext3`] = js.undefined
-  var permissions: js.UndefOr[DocumentPermissions] = js.undefined
-  var size: js.UndefOr[js.Array[Double] | String] = js.undefined
-  var userPassword: js.UndefOr[String] = js.undefined
+  var autoFirstPage: js.UndefOr[Boolean] = js.native
+  var bufferPages: js.UndefOr[Boolean] = js.native
+  var compress: js.UndefOr[Boolean] = js.native
+  var info: js.UndefOr[DocumentInfo] = js.native
+  var layout: js.UndefOr[portrait | landscape] = js.native
+  var margin: js.UndefOr[Double] = js.native
+  var margins: js.UndefOr[Bottom] = js.native
+  var ownerPassword: js.UndefOr[String] = js.native
+  var pdfVersion: js.UndefOr[`1Dot3` | `1Dot4` | `1Dot5` | `1Dot6` | `1Dot7` | `1Dot7ext3`] = js.native
+  var permissions: js.UndefOr[DocumentPermissions] = js.native
+  var size: js.UndefOr[js.Array[Double] | String] = js.native
+  var userPassword: js.UndefOr[String] = js.native
 }
 
 object PDFDocumentOptions {
   @scala.inline
-  def apply(
-    autoFirstPage: js.UndefOr[Boolean] = js.undefined,
-    bufferPages: js.UndefOr[Boolean] = js.undefined,
-    compress: js.UndefOr[Boolean] = js.undefined,
-    info: DocumentInfo = null,
-    layout: portrait | landscape = null,
-    margin: js.UndefOr[Double] = js.undefined,
-    margins: Bottom = null,
-    ownerPassword: String = null,
-    pdfVersion: `1Dot3` | `1Dot4` | `1Dot5` | `1Dot6` | `1Dot7` | `1Dot7ext3` = null,
-    permissions: DocumentPermissions = null,
-    size: js.Array[Double] | String = null,
-    userPassword: String = null
-  ): PDFDocumentOptions = {
+  def apply(): PDFDocumentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFirstPage)) __obj.updateDynamic("autoFirstPage")(autoFirstPage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bufferPages)) __obj.updateDynamic("bufferPages")(bufferPages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
-    if (margins != null) __obj.updateDynamic("margins")(margins.asInstanceOf[js.Any])
-    if (ownerPassword != null) __obj.updateDynamic("ownerPassword")(ownerPassword.asInstanceOf[js.Any])
-    if (pdfVersion != null) __obj.updateDynamic("pdfVersion")(pdfVersion.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (userPassword != null) __obj.updateDynamic("userPassword")(userPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFDocumentOptions]
   }
+  @scala.inline
+  implicit class PDFDocumentOptionsOps[Self <: PDFDocumentOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoFirstPage(value: Boolean): Self = this.set("autoFirstPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFirstPage: Self = this.set("autoFirstPage", js.undefined)
+    @scala.inline
+    def setBufferPages(value: Boolean): Self = this.set("bufferPages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferPages: Self = this.set("bufferPages", js.undefined)
+    @scala.inline
+    def setCompress(value: Boolean): Self = this.set("compress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompress: Self = this.set("compress", js.undefined)
+    @scala.inline
+    def setInfo(value: DocumentInfo): Self = this.set("info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfo: Self = this.set("info", js.undefined)
+    @scala.inline
+    def setLayout(value: portrait | landscape): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMargins(value: Bottom): Self = this.set("margins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargins: Self = this.set("margins", js.undefined)
+    @scala.inline
+    def setOwnerPassword(value: String): Self = this.set("ownerPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerPassword: Self = this.set("ownerPassword", js.undefined)
+    @scala.inline
+    def setPdfVersion(value: `1Dot3` | `1Dot4` | `1Dot5` | `1Dot6` | `1Dot7` | `1Dot7ext3`): Self = this.set("pdfVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePdfVersion: Self = this.set("pdfVersion", js.undefined)
+    @scala.inline
+    def setPermissions(value: DocumentPermissions): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setSizeVarargs(value: Double*): Self = this.set("size", js.Array(value :_*))
+    @scala.inline
+    def setSize(value: js.Array[Double] | String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setUserPassword(value: String): Self = this.set("userPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPassword: Self = this.set("userPassword", js.undefined)
+  }
+  
 }
 

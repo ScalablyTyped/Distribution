@@ -12,11 +12,5 @@ class ^ protected () extends Cryptr {
     * @param secret key used for encryption/decryption
     */
   def this(secret: String) = this()
-  /** Decrypt a string. */
-  /* CompleteClass */
-  override def decrypt(value: String): String = js.native
-  /** Encrypt a string. */
-  /* CompleteClass */
-  override def encrypt(value: String): String = js.native
 }
 

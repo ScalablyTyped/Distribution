@@ -20,10 +20,26 @@ trait SchemaWatchVariableRequest extends js.Object {
 
 object SchemaWatchVariableRequest {
   @scala.inline
-  def apply(newerThan: String = null): SchemaWatchVariableRequest = {
+  def apply(): SchemaWatchVariableRequest = {
     val __obj = js.Dynamic.literal()
-    if (newerThan != null) __obj.updateDynamic("newerThan")(newerThan.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWatchVariableRequest]
   }
+  @scala.inline
+  implicit class SchemaWatchVariableRequestOps[Self <: SchemaWatchVariableRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewerThan(value: String): Self = this.set("newerThan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewerThan: Self = this.set("newerThan", js.undefined)
+  }
+  
 }
 

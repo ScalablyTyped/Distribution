@@ -6,36 +6,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnsignedTransaction extends js.Object {
-  var chainId: js.UndefOr[Double] = js.undefined
-  var data: js.UndefOr[BytesLike] = js.undefined
-  var gasLimit: js.UndefOr[BigNumberish] = js.undefined
-  var gasPrice: js.UndefOr[BigNumberish] = js.undefined
-  var nonce: js.UndefOr[Double] = js.undefined
-  var to: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[BigNumberish] = js.undefined
+  var chainId: js.UndefOr[Double] = js.native
+  var data: js.UndefOr[BytesLike] = js.native
+  var gasLimit: js.UndefOr[BigNumberish] = js.native
+  var gasPrice: js.UndefOr[BigNumberish] = js.native
+  var nonce: js.UndefOr[Double] = js.native
+  var to: js.UndefOr[String] = js.native
+  var value: js.UndefOr[BigNumberish] = js.native
 }
 
 object UnsignedTransaction {
   @scala.inline
-  def apply(
-    chainId: js.UndefOr[Double] = js.undefined,
-    data: BytesLike = null,
-    gasLimit: BigNumberish = null,
-    gasPrice: BigNumberish = null,
-    nonce: js.UndefOr[Double] = js.undefined,
-    to: String = null,
-    value: BigNumberish = null
-  ): UnsignedTransaction = {
+  def apply(): UnsignedTransaction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chainId)) __obj.updateDynamic("chainId")(chainId.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (gasLimit != null) __obj.updateDynamic("gasLimit")(gasLimit.asInstanceOf[js.Any])
-    if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonce)) __obj.updateDynamic("nonce")(nonce.get.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsignedTransaction]
   }
+  @scala.inline
+  implicit class UnsignedTransactionOps[Self <: UnsignedTransaction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChainId(value: Double): Self = this.set("chainId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChainId: Self = this.set("chainId", js.undefined)
+    @scala.inline
+    def setData(value: BytesLike): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setGasLimit(value: BigNumberish): Self = this.set("gasLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGasLimit: Self = this.set("gasLimit", js.undefined)
+    @scala.inline
+    def setGasPrice(value: BigNumberish): Self = this.set("gasPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGasPrice: Self = this.set("gasPrice", js.undefined)
+    @scala.inline
+    def setNonce(value: Double): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonce: Self = this.set("nonce", js.undefined)
+    @scala.inline
+    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+    @scala.inline
+    def setValue(value: BigNumberish): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

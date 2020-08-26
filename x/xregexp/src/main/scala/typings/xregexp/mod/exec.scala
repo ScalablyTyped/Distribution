@@ -37,6 +37,7 @@ object exec extends js.Object {
     * // result -> ['2', '3', '4']
     */
   def apply(str: String, regex: RegExp): ExecArray | Null = js.native
+  def apply(str: String, regex: RegExp, pos: js.UndefOr[scala.Nothing], sticky: Boolean): ExecArray | Null = js.native
   def apply(str: String, regex: RegExp, pos: Double): ExecArray | Null = js.native
   def apply(str: String, regex: RegExp, pos: Double, sticky: Boolean): ExecArray | Null = js.native
 }

@@ -11,8 +11,8 @@ Node.js interface to the GraphViz graphing tool
 | Full name          | graphviz |
 | Keywords           | graphviz, dot |
 | # releases         | 2 |
-| # dependents       | 52 |
-| # downloads        | 4183613 |
+| # dependents       | 53 |
+| # downloads        | 4340417 |
 | # stars            | 9 |
 
 ## Links

@@ -46,28 +46,58 @@ trait GetHLSStreamingSessionURLInput extends js.Object {
 
 object GetHLSStreamingSessionURLInput {
   @scala.inline
-  def apply(
-    ContainerFormat: ContainerFormat = null,
-    DiscontinuityMode: HLSDiscontinuityMode = null,
-    DisplayFragmentTimestamp: HLSDisplayFragmentTimestamp = null,
-    Expires: js.UndefOr[Expires] = js.undefined,
-    HLSFragmentSelector: HLSFragmentSelector = null,
-    MaxMediaPlaylistFragmentResults: js.UndefOr[PageLimit] = js.undefined,
-    PlaybackMode: HLSPlaybackMode = null,
-    StreamARN: ResourceARN = null,
-    StreamName: StreamName = null
-  ): GetHLSStreamingSessionURLInput = {
+  def apply(): GetHLSStreamingSessionURLInput = {
     val __obj = js.Dynamic.literal()
-    if (ContainerFormat != null) __obj.updateDynamic("ContainerFormat")(ContainerFormat.asInstanceOf[js.Any])
-    if (DiscontinuityMode != null) __obj.updateDynamic("DiscontinuityMode")(DiscontinuityMode.asInstanceOf[js.Any])
-    if (DisplayFragmentTimestamp != null) __obj.updateDynamic("DisplayFragmentTimestamp")(DisplayFragmentTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(Expires)) __obj.updateDynamic("Expires")(Expires.get.asInstanceOf[js.Any])
-    if (HLSFragmentSelector != null) __obj.updateDynamic("HLSFragmentSelector")(HLSFragmentSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxMediaPlaylistFragmentResults)) __obj.updateDynamic("MaxMediaPlaylistFragmentResults")(MaxMediaPlaylistFragmentResults.get.asInstanceOf[js.Any])
-    if (PlaybackMode != null) __obj.updateDynamic("PlaybackMode")(PlaybackMode.asInstanceOf[js.Any])
-    if (StreamARN != null) __obj.updateDynamic("StreamARN")(StreamARN.asInstanceOf[js.Any])
-    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHLSStreamingSessionURLInput]
   }
+  @scala.inline
+  implicit class GetHLSStreamingSessionURLInputOps[Self <: GetHLSStreamingSessionURLInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerFormat(value: ContainerFormat): Self = this.set("ContainerFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerFormat: Self = this.set("ContainerFormat", js.undefined)
+    @scala.inline
+    def setDiscontinuityMode(value: HLSDiscontinuityMode): Self = this.set("DiscontinuityMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscontinuityMode: Self = this.set("DiscontinuityMode", js.undefined)
+    @scala.inline
+    def setDisplayFragmentTimestamp(value: HLSDisplayFragmentTimestamp): Self = this.set("DisplayFragmentTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayFragmentTimestamp: Self = this.set("DisplayFragmentTimestamp", js.undefined)
+    @scala.inline
+    def setExpires(value: Expires): Self = this.set("Expires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpires: Self = this.set("Expires", js.undefined)
+    @scala.inline
+    def setHLSFragmentSelector(value: HLSFragmentSelector): Self = this.set("HLSFragmentSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHLSFragmentSelector: Self = this.set("HLSFragmentSelector", js.undefined)
+    @scala.inline
+    def setMaxMediaPlaylistFragmentResults(value: PageLimit): Self = this.set("MaxMediaPlaylistFragmentResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxMediaPlaylistFragmentResults: Self = this.set("MaxMediaPlaylistFragmentResults", js.undefined)
+    @scala.inline
+    def setPlaybackMode(value: HLSPlaybackMode): Self = this.set("PlaybackMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaybackMode: Self = this.set("PlaybackMode", js.undefined)
+    @scala.inline
+    def setStreamARN(value: ResourceARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamARN: Self = this.set("StreamARN", js.undefined)
+    @scala.inline
+    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+  }
+  
 }
 

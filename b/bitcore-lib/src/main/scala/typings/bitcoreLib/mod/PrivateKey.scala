@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PrivateKey () extends js.Object {
   def this(key: String) = this()
+  def this(key: js.UndefOr[scala.Nothing], network: Network) = this()
   def this(key: String, network: Network) = this()
   val network: Network = js.native
   val publicKey: PublicKey = js.native

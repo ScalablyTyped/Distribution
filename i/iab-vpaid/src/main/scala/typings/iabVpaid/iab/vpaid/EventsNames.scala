@@ -6,32 +6,32 @@ import scala.scalajs.js.annotation._
 
 /* Inlined keyof iab-vpaid.iab.vpaid.EventsMap */
 /* Rewritten from type alias, can be one of: 
-  - typings.iabVpaid.iabVpaidStrings.AdStopped
-  - typings.iabVpaid.iabVpaidStrings.AdImpression
-  - typings.iabVpaid.iabVpaidStrings.AdLinearChange
-  - typings.iabVpaid.iabVpaidStrings.AdVideoComplete
-  - typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange
-  - typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint
-  - typings.iabVpaid.iabVpaidStrings.AdUserClose
-  - typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation
-  - typings.iabVpaid.iabVpaidStrings.AdClickThru
-  - typings.iabVpaid.iabVpaidStrings.AdSkipped
-  - typings.iabVpaid.iabVpaidStrings.AdError
-  - typings.iabVpaid.iabVpaidStrings.AdLoaded
-  - typings.iabVpaid.iabVpaidStrings.AdDurationChange
-  - typings.iabVpaid.iabVpaidStrings.AdSizeChange
   - typings.iabVpaid.iabVpaidStrings.AdStarted
-  - typings.iabVpaid.iabVpaidStrings.AdVideoStart
-  - typings.iabVpaid.iabVpaidStrings.AdPlaying
   - typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile
   - typings.iabVpaid.iabVpaidStrings.AdExpandedChange
-  - typings.iabVpaid.iabVpaidStrings.AdPaused
-  - typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange
-  - typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile
-  - typings.iabVpaid.iabVpaidStrings.AdUserMinimize
-  - typings.iabVpaid.iabVpaidStrings.AdLog
   - typings.iabVpaid.iabVpaidStrings.AdInteraction
+  - typings.iabVpaid.iabVpaidStrings.AdStopped
+  - typings.iabVpaid.iabVpaidStrings.AdImpression
+  - typings.iabVpaid.iabVpaidStrings.AdClickThru
+  - typings.iabVpaid.iabVpaidStrings.AdVideoComplete
+  - typings.iabVpaid.iabVpaidStrings.AdLoaded
+  - typings.iabVpaid.iabVpaidStrings.AdVideoStart
+  - typings.iabVpaid.iabVpaidStrings.AdLog
+  - typings.iabVpaid.iabVpaidStrings.AdPlaying
+  - typings.iabVpaid.iabVpaidStrings.AdError
+  - typings.iabVpaid.iabVpaidStrings.AdDurationChange
+  - typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange
+  - typings.iabVpaid.iabVpaidStrings.AdLinearChange
+  - typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile
+  - typings.iabVpaid.iabVpaidStrings.AdUserClose
+  - typings.iabVpaid.iabVpaidStrings.AdSkipped
+  - typings.iabVpaid.iabVpaidStrings.AdSizeChange
+  - typings.iabVpaid.iabVpaidStrings.AdUserMinimize
   - typings.iabVpaid.iabVpaidStrings.AdVolumeChange
+  - typings.iabVpaid.iabVpaidStrings.AdPaused
+  - typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation
+  - typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint
+  - typings.iabVpaid.iabVpaidStrings.AdSkippableStateChange
 */
 trait EventsNames extends js.Object
 

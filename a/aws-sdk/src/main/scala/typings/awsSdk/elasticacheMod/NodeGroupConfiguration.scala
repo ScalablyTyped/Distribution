@@ -30,20 +30,44 @@ trait NodeGroupConfiguration extends js.Object {
 
 object NodeGroupConfiguration {
   @scala.inline
-  def apply(
-    NodeGroupId: AllowedNodeGroupId = null,
-    PrimaryAvailabilityZone: String = null,
-    ReplicaAvailabilityZones: AvailabilityZonesList = null,
-    ReplicaCount: js.UndefOr[IntegerOptional] = js.undefined,
-    Slots: String = null
-  ): NodeGroupConfiguration = {
+  def apply(): NodeGroupConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (NodeGroupId != null) __obj.updateDynamic("NodeGroupId")(NodeGroupId.asInstanceOf[js.Any])
-    if (PrimaryAvailabilityZone != null) __obj.updateDynamic("PrimaryAvailabilityZone")(PrimaryAvailabilityZone.asInstanceOf[js.Any])
-    if (ReplicaAvailabilityZones != null) __obj.updateDynamic("ReplicaAvailabilityZones")(ReplicaAvailabilityZones.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReplicaCount)) __obj.updateDynamic("ReplicaCount")(ReplicaCount.get.asInstanceOf[js.Any])
-    if (Slots != null) __obj.updateDynamic("Slots")(Slots.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeGroupConfiguration]
   }
+  @scala.inline
+  implicit class NodeGroupConfigurationOps[Self <: NodeGroupConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNodeGroupId(value: AllowedNodeGroupId): Self = this.set("NodeGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeGroupId: Self = this.set("NodeGroupId", js.undefined)
+    @scala.inline
+    def setPrimaryAvailabilityZone(value: String): Self = this.set("PrimaryAvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryAvailabilityZone: Self = this.set("PrimaryAvailabilityZone", js.undefined)
+    @scala.inline
+    def setReplicaAvailabilityZonesVarargs(value: String*): Self = this.set("ReplicaAvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setReplicaAvailabilityZones(value: AvailabilityZonesList): Self = this.set("ReplicaAvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaAvailabilityZones: Self = this.set("ReplicaAvailabilityZones", js.undefined)
+    @scala.inline
+    def setReplicaCount(value: IntegerOptional): Self = this.set("ReplicaCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaCount: Self = this.set("ReplicaCount", js.undefined)
+    @scala.inline
+    def setSlots(value: String): Self = this.set("Slots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlots: Self = this.set("Slots", js.undefined)
+  }
+  
 }
 

@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * constants collection {@link AccessibleStateType} .
   * @since OOo 1.1.2
   */
+@js.native
 trait XAccessibleStateSet extends XInterface {
   /**
     * Get all currently set states as a sequence of state ids.
@@ -23,19 +24,19 @@ trait XAccessibleStateSet extends XInterface {
     * contains()} for every state type. Now a single call is sufficient.
     * @returns The returned sequence contains one entry for every currently set state. This entry is the id of that state. The order of the states in the sequen
     */
-  val States: SafeArray[Double]
+  val States: SafeArray[Double] = js.native
   /**
     * Checks if the given state is a member of the state set of the called object.
     * @param aState The state for which to check membership. This has to be one of the constants of {@link AccessibleStateType} .
     * @returns Returns `TRUE` if the given state is a member of this object's state set and `FALSE` otherwise.
     */
-  def contains(aState: Double): Boolean
+  def contains(aState: Double): Boolean = js.native
   /**
     * Checks if all of the given states are in the state set of the called object.
     * @param aStateSet This sequence of states is interpreted as set and every of its members, duplicates are ignored, is checked for membership in this objec
     * @returns Returns `TRUE` if all states of the given state set are members of this object's state set. `FALSE` is returned if at least one of the states in
     */
-  def containsAll(aStateSet: SeqEquiv[Double]): Boolean
+  def containsAll(aStateSet: SeqEquiv[Double]): Boolean = js.native
   /**
     * Get all currently set states as a sequence of state ids.
     *
@@ -43,12 +44,12 @@ trait XAccessibleStateSet extends XInterface {
     * contains()} for every state type. Now a single call is sufficient.
     * @returns The returned sequence contains one entry for every currently set state. This entry is the id of that state. The order of the states in the sequen
     */
-  def getStates(): SafeArray[Double]
+  def getStates(): SafeArray[Double] = js.native
   /**
     * Checks whether the current state set is empty.
     * @returns Returns `TRUE` if there is no state in this state set and `FALSE` if there is at least one set state in it.
     */
-  def isEmpty(): Boolean
+  def isEmpty(): Boolean = js.native
 }
 
 object XAccessibleStateSet {
@@ -66,5 +67,28 @@ object XAccessibleStateSet {
     val __obj = js.Dynamic.literal(States = States.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), contains = js.Any.fromFunction1(contains), containsAll = js.Any.fromFunction1(containsAll), getStates = js.Any.fromFunction0(getStates), isEmpty = js.Any.fromFunction0(isEmpty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XAccessibleStateSet]
   }
+  @scala.inline
+  implicit class XAccessibleStateSetOps[Self <: XAccessibleStateSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStates(value: SafeArray[Double]): Self = this.set("States", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContains(value: Double => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    @scala.inline
+    def setContainsAll(value: SeqEquiv[Double] => Boolean): Self = this.set("containsAll", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetStates(value: () => SafeArray[Double]): Self = this.set("getStates", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsEmpty(value: () => Boolean): Self = this.set("isEmpty", js.Any.fromFunction0(value))
+  }
+  
 }
 

@@ -28,16 +28,34 @@ trait SchemaBulletSuggestionState extends js.Object {
 
 object SchemaBulletSuggestionState {
   @scala.inline
-  def apply(
-    listIdSuggested: js.UndefOr[Boolean] = js.undefined,
-    nestingLevelSuggested: js.UndefOr[Boolean] = js.undefined,
-    textStyleSuggestionState: SchemaTextStyleSuggestionState = null
-  ): SchemaBulletSuggestionState = {
+  def apply(): SchemaBulletSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(listIdSuggested)) __obj.updateDynamic("listIdSuggested")(listIdSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nestingLevelSuggested)) __obj.updateDynamic("nestingLevelSuggested")(nestingLevelSuggested.get.asInstanceOf[js.Any])
-    if (textStyleSuggestionState != null) __obj.updateDynamic("textStyleSuggestionState")(textStyleSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBulletSuggestionState]
   }
+  @scala.inline
+  implicit class SchemaBulletSuggestionStateOps[Self <: SchemaBulletSuggestionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setListIdSuggested(value: Boolean): Self = this.set("listIdSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListIdSuggested: Self = this.set("listIdSuggested", js.undefined)
+    @scala.inline
+    def setNestingLevelSuggested(value: Boolean): Self = this.set("nestingLevelSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNestingLevelSuggested: Self = this.set("nestingLevelSuggested", js.undefined)
+    @scala.inline
+    def setTextStyleSuggestionState(value: SchemaTextStyleSuggestionState): Self = this.set("textStyleSuggestionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyleSuggestionState: Self = this.set("textStyleSuggestionState", js.undefined)
+  }
+  
 }
 

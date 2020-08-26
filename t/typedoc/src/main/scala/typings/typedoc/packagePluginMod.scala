@@ -12,13 +12,13 @@ object packagePluginMod extends js.Object {
   @js.native
   class PackagePlugin () extends AbstractComponent[Converter] {
     var includeVersion: Boolean = js.native
-    var noReadmeFile: js.UndefOr[js.Any] = js.native
+    var noReadmeFile: js.Any = js.native
     var onBegin: js.Any = js.native
     var onBeginDocument: js.Any = js.native
     var onBeginResolve: js.Any = js.native
-    var packageFile: js.UndefOr[js.Any] = js.native
+    var packageFile: js.Any = js.native
     var readme: String = js.native
-    var readmeFile: js.UndefOr[js.Any] = js.native
+    var readmeFile: js.Any = js.native
     var visited: js.Any = js.native
   }
   

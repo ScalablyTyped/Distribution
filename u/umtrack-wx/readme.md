@@ -12,7 +12,7 @@ Typings are for version 2.3
 | Keywords           | umeng, weixin, wx |
 | # releases         | 16 |
 | # dependents       | 0 |
-| # downloads        | 1738 |
+| # downloads        | 1397 |
 | # stars            | 0 |
 
 ## Links

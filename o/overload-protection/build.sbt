@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "overload-protection"
-version := "1.2-dt-20200309Z-30bafa"
-scalaVersion := "2.13.2"
+version := "1.2-dt-20200309Z-a25c6a"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

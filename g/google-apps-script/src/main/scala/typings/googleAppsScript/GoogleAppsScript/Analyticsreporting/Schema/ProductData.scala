@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProductData extends js.Object {
-  var itemRevenue: js.UndefOr[Double] = js.undefined
-  var productName: js.UndefOr[String] = js.undefined
-  var productQuantity: js.UndefOr[String] = js.undefined
-  var productSku: js.UndefOr[String] = js.undefined
+  var itemRevenue: js.UndefOr[Double] = js.native
+  var productName: js.UndefOr[String] = js.native
+  var productQuantity: js.UndefOr[String] = js.native
+  var productSku: js.UndefOr[String] = js.native
 }
 
 object ProductData {
   @scala.inline
-  def apply(
-    itemRevenue: js.UndefOr[Double] = js.undefined,
-    productName: String = null,
-    productQuantity: String = null,
-    productSku: String = null
-  ): ProductData = {
+  def apply(): ProductData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(itemRevenue)) __obj.updateDynamic("itemRevenue")(itemRevenue.get.asInstanceOf[js.Any])
-    if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
-    if (productQuantity != null) __obj.updateDynamic("productQuantity")(productQuantity.asInstanceOf[js.Any])
-    if (productSku != null) __obj.updateDynamic("productSku")(productSku.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductData]
   }
+  @scala.inline
+  implicit class ProductDataOps[Self <: ProductData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemRevenue(value: Double): Self = this.set("itemRevenue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemRevenue: Self = this.set("itemRevenue", js.undefined)
+    @scala.inline
+    def setProductName(value: String): Self = this.set("productName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductName: Self = this.set("productName", js.undefined)
+    @scala.inline
+    def setProductQuantity(value: String): Self = this.set("productQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductQuantity: Self = this.set("productQuantity", js.undefined)
+    @scala.inline
+    def setProductSku(value: String): Self = this.set("productSku", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductSku: Self = this.set("productSku", js.undefined)
+  }
+  
 }
 

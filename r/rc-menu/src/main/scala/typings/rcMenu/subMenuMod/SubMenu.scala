@@ -8,6 +8,7 @@ import typings.rcMenu.interfaceMod.OpenEventHandler
 import typings.rcMenu.interfaceMod.SelectEventHandler
 import typings.rcMenu.menuItemMod.MenuItem
 import typings.rcMenu.subPopupMenuMod.SubPopupMenuProps
+import typings.rcTrigger.interfaceMod.MotionType
 import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -21,7 +22,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-menu/lib/SubMenu", "SubMenu")
+@JSImport("rc-menu/es/SubMenu", "SubMenu")
 @js.native
 class SubMenu protected ()
   extends Component[SubMenuProps, js.Object, js.Any] {
@@ -63,7 +64,7 @@ class SubMenu protected ()
   def getActiveClassName(): String = js.native
   def getBaseProps(): SubPopupMenuProps = js.native
   def getDisabledClassName(): String = js.native
-  def getMotion(mode: MenuMode, visible: Boolean): js.Any = js.native
+  def getMotion(mode: MenuMode, visible: Boolean): MotionType = js.native
   def getOpenClassName(): String = js.native
   def getPrefixCls(): String = js.native
   def getSelectedClassName(): String = js.native
@@ -82,7 +83,7 @@ class SubMenu protected ()
 }
 
 /* static members */
-@JSImport("rc-menu/lib/SubMenu", "SubMenu")
+@JSImport("rc-menu/es/SubMenu", "SubMenu")
 @js.native
 object SubMenu extends js.Object {
   var defaultProps: Mode = js.native

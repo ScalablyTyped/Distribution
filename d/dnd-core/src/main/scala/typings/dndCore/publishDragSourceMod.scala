@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("dnd-core/lib/actions/dragDrop/publishDragSource", JSImport.Namespace)
 @js.native
 object publishDragSourceMod extends js.Object {
-  def default(manager: DragDropManager): js.Function0[js.UndefOr[SentinelAction]] = js.native
+  def createPublishDragSource(manager: DragDropManager): js.Function0[js.UndefOr[SentinelAction]] = js.native
 }
 

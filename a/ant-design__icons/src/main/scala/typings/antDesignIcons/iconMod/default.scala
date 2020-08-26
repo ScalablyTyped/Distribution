@@ -1,13 +1,13 @@
 package typings.antDesignIcons.iconMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.antDesignIcons.anon.PickIconComponentPropsari
+import typings.antDesignIcons.anon.PickIconComponentPropsmax
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons/dist/components/Icon", JSImport.Default)
+@JSImport("@ant-design/icons/es/components/Icon", JSImport.Default)
 @js.native
-object default extends TopLevel[ForwardRefExoticComponent[PickIconComponentPropsari]]
+object default extends TopLevel[ForwardRefExoticComponent[PickIconComponentPropsmax]]
 

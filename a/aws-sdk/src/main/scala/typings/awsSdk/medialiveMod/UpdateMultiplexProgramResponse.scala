@@ -14,10 +14,26 @@ trait UpdateMultiplexProgramResponse extends js.Object {
 
 object UpdateMultiplexProgramResponse {
   @scala.inline
-  def apply(MultiplexProgram: MultiplexProgram = null): UpdateMultiplexProgramResponse = {
+  def apply(): UpdateMultiplexProgramResponse = {
     val __obj = js.Dynamic.literal()
-    if (MultiplexProgram != null) __obj.updateDynamic("MultiplexProgram")(MultiplexProgram.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMultiplexProgramResponse]
   }
+  @scala.inline
+  implicit class UpdateMultiplexProgramResponseOps[Self <: UpdateMultiplexProgramResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMultiplexProgram(value: MultiplexProgram): Self = this.set("MultiplexProgram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiplexProgram: Self = this.set("MultiplexProgram", js.undefined)
+  }
+  
 }
 

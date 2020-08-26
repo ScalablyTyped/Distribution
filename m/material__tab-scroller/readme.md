@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__tab-scroller
 
-Typings are for version 5.1.0
+Typings are for version 7.0.0
 
 ## Library description:
 The Material Components for the web tab scroller component
@@ -10,9 +10,9 @@ The Material Components for the web tab scroller component
 | ------------------ | :-------------: |
 | Full name          | @material/tab-scroller |
 | Keywords           | material components, material design, tab, scroller |
-| # releases         | 110 |
-| # dependents       | 18 |
-| # downloads        | 916036 |
+| # releases         | 159 |
+| # dependents       | 19 |
+| # downloads        | 947361 |
 | # stars            | 0 |
 
 ## Links

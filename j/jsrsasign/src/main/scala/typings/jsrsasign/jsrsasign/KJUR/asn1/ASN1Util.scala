@@ -6,9 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** ASN1 utilities class */
+@js.native
 trait ASN1Util extends js.Object {
-  def bigIntToMinTwosComplementsHex(bigIntegerValue: BigInteger): String
-  def integerToByteHex(i: Double): String
+  def bigIntToMinTwosComplementsHex(bigIntegerValue: BigInteger): String = js.native
+  def integerToByteHex(i: Double): String = js.native
   /**
     * get encoded hexadecimal string of ASN1Object specifed by JSON parameters
     *
@@ -20,7 +21,7 @@ trait ASN1Util extends js.Object {
     * @example
     * jsonToASN1HEX({'prnstr': 'aaa'});
     */
-  def jsonToASN1HEX(param: ASNObject): String
+  def jsonToASN1HEX(param: ASNObject): String = js.native
   /**
     * generate ASN1Object specifed by JSON parameters
     * @param param JSON parameter to generate ASN1Object
@@ -66,7 +67,7 @@ trait ASN1Util extends js.Object {
     *                      {'prnstr': 'aaa'}]}
     *                   ]});
     */
-  def newObject(param: ASNObject): ASN1Object
+  def newObject(param: ASNObject): ASN1Object = js.native
 }
 
 object ASN1Util {
@@ -80,5 +81,26 @@ object ASN1Util {
     val __obj = js.Dynamic.literal(bigIntToMinTwosComplementsHex = js.Any.fromFunction1(bigIntToMinTwosComplementsHex), integerToByteHex = js.Any.fromFunction1(integerToByteHex), jsonToASN1HEX = js.Any.fromFunction1(jsonToASN1HEX), newObject = js.Any.fromFunction1(newObject))
     __obj.asInstanceOf[ASN1Util]
   }
+  @scala.inline
+  implicit class ASN1UtilOps[Self <: ASN1Util] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBigIntToMinTwosComplementsHex(value: BigInteger => String): Self = this.set("bigIntToMinTwosComplementsHex", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIntegerToByteHex(value: Double => String): Self = this.set("integerToByteHex", js.Any.fromFunction1(value))
+    @scala.inline
+    def setJsonToASN1HEX(value: ASNObject => String): Self = this.set("jsonToASN1HEX", js.Any.fromFunction1(value))
+    @scala.inline
+    def setNewObject(value: ASNObject => ASN1Object): Self = this.set("newObject", js.Any.fromFunction1(value))
+  }
+  
 }
 

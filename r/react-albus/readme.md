@@ -12,7 +12,7 @@ React component library for building declarative multi-step flows.
 | Keywords           | react, react-component, wizard, step, multistep, routing |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 314182 |
+| # downloads        | 299973 |
 | # stars            | 1 |
 
 ## Links

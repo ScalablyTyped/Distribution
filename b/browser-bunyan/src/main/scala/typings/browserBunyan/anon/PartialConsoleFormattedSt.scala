@@ -5,33 +5,58 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<browser-bunyan.browser-bunyan.BrowserBunyan.ConsoleFormattedStreamLevelStyle> */
+@js.native
 trait PartialConsoleFormattedSt extends js.Object {
-  var debug: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[String] = js.undefined
-  var fatal: js.UndefOr[String] = js.undefined
-  var info: js.UndefOr[String] = js.undefined
-  var trace: js.UndefOr[String] = js.undefined
-  var warn: js.UndefOr[String] = js.undefined
+  var debug: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.native
+  var fatal: js.UndefOr[String] = js.native
+  var info: js.UndefOr[String] = js.native
+  var trace: js.UndefOr[String] = js.native
+  var warn: js.UndefOr[String] = js.native
 }
 
 object PartialConsoleFormattedSt {
   @scala.inline
-  def apply(
-    debug: String = null,
-    error: String = null,
-    fatal: String = null,
-    info: String = null,
-    trace: String = null,
-    warn: String = null
-  ): PartialConsoleFormattedSt = {
+  def apply(): PartialConsoleFormattedSt = {
     val __obj = js.Dynamic.literal()
-    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (fatal != null) __obj.updateDynamic("fatal")(fatal.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
-    if (warn != null) __obj.updateDynamic("warn")(warn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialConsoleFormattedSt]
   }
+  @scala.inline
+  implicit class PartialConsoleFormattedStOps[Self <: PartialConsoleFormattedSt] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebug(value: String): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFatal(value: String): Self = this.set("fatal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFatal: Self = this.set("fatal", js.undefined)
+    @scala.inline
+    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfo: Self = this.set("info", js.undefined)
+    @scala.inline
+    def setTrace(value: String): Self = this.set("trace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrace: Self = this.set("trace", js.undefined)
+    @scala.inline
+    def setWarn(value: String): Self = this.set("warn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarn: Self = this.set("warn", js.undefined)
+  }
+  
 }
 

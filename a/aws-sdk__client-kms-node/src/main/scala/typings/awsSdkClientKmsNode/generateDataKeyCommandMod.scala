@@ -26,16 +26,9 @@ object generateDataKeyCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GenerateDataKeyInput) = this()
-    /* CompleteClass */
-    override val input: GenerateDataKeyInput = js.native
     val middlewareStack: MiddlewareStack[GenerateDataKeyInput, GenerateDataKeyOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: KMSResolvedConfiguration
-    ): Handler[GenerateDataKeyInput, GenerateDataKeyOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: KMSResolvedConfiguration
     ): Handler[GenerateDataKeyInput, GenerateDataKeyOutput] = js.native
   }

@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FilterMenuOperators extends js.Object {
-  var date: js.UndefOr[FilterMenuOperatorsDate] = js.undefined
-  var enums: js.UndefOr[FilterMenuOperatorsEnums] = js.undefined
-  var number: js.UndefOr[FilterMenuOperatorsNumber] = js.undefined
-  var string: js.UndefOr[FilterMenuOperatorsString] = js.undefined
+  var date: js.UndefOr[FilterMenuOperatorsDate] = js.native
+  var enums: js.UndefOr[FilterMenuOperatorsEnums] = js.native
+  var number: js.UndefOr[FilterMenuOperatorsNumber] = js.native
+  var string: js.UndefOr[FilterMenuOperatorsString] = js.native
 }
 
 object FilterMenuOperators {
   @scala.inline
-  def apply(
-    date: FilterMenuOperatorsDate = null,
-    enums: FilterMenuOperatorsEnums = null,
-    number: FilterMenuOperatorsNumber = null,
-    string: FilterMenuOperatorsString = null
-  ): FilterMenuOperators = {
+  def apply(): FilterMenuOperators = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (enums != null) __obj.updateDynamic("enums")(enums.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterMenuOperators]
   }
+  @scala.inline
+  implicit class FilterMenuOperatorsOps[Self <: FilterMenuOperators] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: FilterMenuOperatorsDate): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setEnums(value: FilterMenuOperatorsEnums): Self = this.set("enums", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnums: Self = this.set("enums", js.undefined)
+    @scala.inline
+    def setNumber(value: FilterMenuOperatorsNumber): Self = this.set("number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumber: Self = this.set("number", js.undefined)
+    @scala.inline
+    def setString(value: FilterMenuOperatorsString): Self = this.set("string", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteString: Self = this.set("string", js.undefined)
+  }
+  
 }
 

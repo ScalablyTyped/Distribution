@@ -91,13 +91,219 @@ object nodeMod extends js.Object {
     arg3: Promise[A3],
     arg4: Promise[A4]
   ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = js.native
   def call[A1, A2, A3, A4, A5, T](
     fn: NodeFn5[A1, A2, A3, A4, A5, T],
-    arg1: A1 | Promise[A1],
-    arg2: A2 | Promise[A2],
-    arg3: A3 | Promise[A3],
-    arg4: A4 | Promise[A4],
-    arg5: A5 | Promise[A5]
+    arg1: A1,
+    arg2: A2,
+    arg3: A3,
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: A2,
+    arg3: Promise[A3],
+    arg4: A4,
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: A2,
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: A5
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: A2,
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: Promise[A2],
+    arg3: A3,
+    arg4: A4,
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: Promise[A2],
+    arg3: A3,
+    arg4: Promise[A4],
+    arg5: A5
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: Promise[A2],
+    arg3: A3,
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: A4,
+    arg5: A5
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: A4,
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: A5
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: A2,
+    arg3: A3,
+    arg4: A4,
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: A2,
+    arg3: A3,
+    arg4: Promise[A4],
+    arg5: A5
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: A2,
+    arg3: A3,
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: A2,
+    arg3: Promise[A3],
+    arg4: A4,
+    arg5: A5
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: A2,
+    arg3: Promise[A3],
+    arg4: A4,
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: A2,
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: A5
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: A2,
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: A3,
+    arg4: A4,
+    arg5: A5
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: A3,
+    arg4: A4,
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: A3,
+    arg4: Promise[A4],
+    arg5: A5
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: A3,
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: A4,
+    arg5: A5
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: A4,
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: A5
+  ): Promise[T] = js.native
+  def call[A1, A2, A3, A4, A5, T](
+    fn: NodeFn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: Promise[A5]
   ): Promise[T] = js.native
   def createCallback[TArg](resolver: Resolver[TArg]): js.Function2[/* err */ js.Any, /* arg */ TArg, Unit] = js.native
   def lift[T](fn: NodeFn0[T]): LiftedFn0[T] = js.native
@@ -107,6 +313,7 @@ object nodeMod extends js.Object {
   def lift[A1, A2, A3, A4, T](fn: NodeFn4[A1, A2, A3, A4, T]): LiftedFn4[A1, A2, A3, A4, T] = js.native
   def lift[A1, A2, A3, A4, A5, T](fn: NodeFn5[A1, A2, A3, A4, A5, T]): LiftedFn5[A1, A2, A3, A4, A5, T] = js.native
   def liftAll(srcApi: js.Any): js.Any = js.native
+  def liftAll(srcApi: js.Any, transform: js.UndefOr[scala.Nothing], destApi: js.Any): js.Any = js.native
   def liftAll(
     srcApi: js.Any,
     transform: js.Function3[/* destApi */ js.Any, /* liftedFunc */ js.Function, /* name */ String, _]

@@ -14,10 +14,26 @@ trait LifecyclePolicyPreviewFilter extends js.Object {
 
 object LifecyclePolicyPreviewFilter {
   @scala.inline
-  def apply(tagStatus: TagStatus = null): LifecyclePolicyPreviewFilter = {
+  def apply(): LifecyclePolicyPreviewFilter = {
     val __obj = js.Dynamic.literal()
-    if (tagStatus != null) __obj.updateDynamic("tagStatus")(tagStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecyclePolicyPreviewFilter]
   }
+  @scala.inline
+  implicit class LifecyclePolicyPreviewFilterOps[Self <: LifecyclePolicyPreviewFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTagStatus(value: TagStatus): Self = this.set("tagStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagStatus: Self = this.set("tagStatus", js.undefined)
+  }
+  
 }
 

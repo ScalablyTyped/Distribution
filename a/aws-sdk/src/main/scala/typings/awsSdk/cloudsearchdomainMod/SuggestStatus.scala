@@ -18,11 +18,30 @@ trait SuggestStatus extends js.Object {
 
 object SuggestStatus {
   @scala.inline
-  def apply(rid: String = null, timems: js.UndefOr[Long] = js.undefined): SuggestStatus = {
+  def apply(): SuggestStatus = {
     val __obj = js.Dynamic.literal()
-    if (rid != null) __obj.updateDynamic("rid")(rid.asInstanceOf[js.Any])
-    if (!js.isUndefined(timems)) __obj.updateDynamic("timems")(timems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestStatus]
   }
+  @scala.inline
+  implicit class SuggestStatusOps[Self <: SuggestStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRid(value: String): Self = this.set("rid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRid: Self = this.set("rid", js.undefined)
+    @scala.inline
+    def setTimems(value: Long): Self = this.set("timems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimems: Self = this.set("timems", js.undefined)
+  }
+  
 }
 

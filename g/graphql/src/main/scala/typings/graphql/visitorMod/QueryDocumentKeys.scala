@@ -48,8 +48,9 @@ object QueryDocumentKeys extends js.Object {
   // prettier-ignore
   var InputValueDefinition: js.Tuple5[description, name_, `type`, defaultValue, directives] = js.native
   var IntValue: EmptyTuple = js.native
-  var InterfaceTypeDefinition: js.Tuple4[description, name_, directives, fields] = js.native
-  var InterfaceTypeExtension: js.Tuple3[name_, directives, fields] = js.native
+  // prettier-ignore
+  var InterfaceTypeDefinition: js.Tuple5[description, name_, interfaces, directives, fields] = js.native
+  var InterfaceTypeExtension: js.Tuple4[name_, interfaces, directives, fields] = js.native
   var ListType: js.Array[`type`] = js.native
   var ListValue: js.Array[values] = js.native
   var Name: EmptyTuple = js.native
@@ -67,7 +68,7 @@ object QueryDocumentKeys extends js.Object {
   var OperationTypeDefinition: js.Array[`type`] = js.native
   var ScalarTypeDefinition: js.Tuple3[description, name_, directives] = js.native
   var ScalarTypeExtension: js.Tuple2[name_, directives] = js.native
-  var SchemaDefinition: js.Tuple2[directives, operationTypes] = js.native
+  var SchemaDefinition: js.Tuple3[description, directives, operationTypes] = js.native
   var SchemaExtension: js.Tuple2[directives, operationTypes] = js.native
   var SelectionSet: js.Array[selections] = js.native
   var StringValue: EmptyTuple = js.native

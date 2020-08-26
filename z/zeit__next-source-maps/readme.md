@@ -12,7 +12,7 @@ Generate source maps during production build in your Next.js project
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 1461638 |
+| # downloads        | 1615511 |
 | # stars            | 0 |
 
 ## Links

@@ -66,38 +66,78 @@ trait ASN1Subject extends js.Object {
 
 object ASN1Subject {
   @scala.inline
-  def apply(
-    CommonName: String64 = null,
-    Country: CountryCodeString = null,
-    DistinguishedNameQualifier: DistinguishedNameQualifierString = null,
-    GenerationQualifier: String3 = null,
-    GivenName: String16 = null,
-    Initials: String5 = null,
-    Locality: String128 = null,
-    Organization: String64 = null,
-    OrganizationalUnit: String64 = null,
-    Pseudonym: String128 = null,
-    SerialNumber: String64 = null,
-    State: String128 = null,
-    Surname: String40 = null,
-    Title: String64 = null
-  ): ASN1Subject = {
+  def apply(): ASN1Subject = {
     val __obj = js.Dynamic.literal()
-    if (CommonName != null) __obj.updateDynamic("CommonName")(CommonName.asInstanceOf[js.Any])
-    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
-    if (DistinguishedNameQualifier != null) __obj.updateDynamic("DistinguishedNameQualifier")(DistinguishedNameQualifier.asInstanceOf[js.Any])
-    if (GenerationQualifier != null) __obj.updateDynamic("GenerationQualifier")(GenerationQualifier.asInstanceOf[js.Any])
-    if (GivenName != null) __obj.updateDynamic("GivenName")(GivenName.asInstanceOf[js.Any])
-    if (Initials != null) __obj.updateDynamic("Initials")(Initials.asInstanceOf[js.Any])
-    if (Locality != null) __obj.updateDynamic("Locality")(Locality.asInstanceOf[js.Any])
-    if (Organization != null) __obj.updateDynamic("Organization")(Organization.asInstanceOf[js.Any])
-    if (OrganizationalUnit != null) __obj.updateDynamic("OrganizationalUnit")(OrganizationalUnit.asInstanceOf[js.Any])
-    if (Pseudonym != null) __obj.updateDynamic("Pseudonym")(Pseudonym.asInstanceOf[js.Any])
-    if (SerialNumber != null) __obj.updateDynamic("SerialNumber")(SerialNumber.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Surname != null) __obj.updateDynamic("Surname")(Surname.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASN1Subject]
   }
+  @scala.inline
+  implicit class ASN1SubjectOps[Self <: ASN1Subject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommonName(value: String64): Self = this.set("CommonName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommonName: Self = this.set("CommonName", js.undefined)
+    @scala.inline
+    def setCountry(value: CountryCodeString): Self = this.set("Country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("Country", js.undefined)
+    @scala.inline
+    def setDistinguishedNameQualifier(value: DistinguishedNameQualifierString): Self = this.set("DistinguishedNameQualifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistinguishedNameQualifier: Self = this.set("DistinguishedNameQualifier", js.undefined)
+    @scala.inline
+    def setGenerationQualifier(value: String3): Self = this.set("GenerationQualifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenerationQualifier: Self = this.set("GenerationQualifier", js.undefined)
+    @scala.inline
+    def setGivenName(value: String16): Self = this.set("GivenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGivenName: Self = this.set("GivenName", js.undefined)
+    @scala.inline
+    def setInitials(value: String5): Self = this.set("Initials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitials: Self = this.set("Initials", js.undefined)
+    @scala.inline
+    def setLocality(value: String128): Self = this.set("Locality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocality: Self = this.set("Locality", js.undefined)
+    @scala.inline
+    def setOrganization(value: String64): Self = this.set("Organization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganization: Self = this.set("Organization", js.undefined)
+    @scala.inline
+    def setOrganizationalUnit(value: String64): Self = this.set("OrganizationalUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationalUnit: Self = this.set("OrganizationalUnit", js.undefined)
+    @scala.inline
+    def setPseudonym(value: String128): Self = this.set("Pseudonym", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePseudonym: Self = this.set("Pseudonym", js.undefined)
+    @scala.inline
+    def setSerialNumber(value: String64): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerialNumber: Self = this.set("SerialNumber", js.undefined)
+    @scala.inline
+    def setState(value: String128): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setSurname(value: String40): Self = this.set("Surname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSurname: Self = this.set("Surname", js.undefined)
+    @scala.inline
+    def setTitle(value: String64): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+  }
+  
 }
 

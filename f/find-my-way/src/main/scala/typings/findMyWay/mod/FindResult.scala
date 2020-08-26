@@ -1,10 +1,6 @@
 package typings.findMyWay.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.http2Mod.Http2ServerRequest
-import typings.node.http2Mod.Http2ServerResponse
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,11 +11,6 @@ trait FindResult[V /* <: HTTPVersion */] extends js.Object {
   var handler_Original: Handler[V] = js.native
   var params: StringDictionary[js.UndefOr[String]] = js.native
   var store: js.Any = js.native
-  def handler(
-    req: Http2ServerRequest | IncomingMessage,
-    res: Http2ServerResponse | ServerResponse,
-    params: StringDictionary[js.UndefOr[String]],
-    store: js.Any
-  ): Unit = js.native
+  def handler(req: Req[V], res: Res[V], params: StringDictionary[js.UndefOr[String]], store: js.Any): Unit = js.native
 }
 

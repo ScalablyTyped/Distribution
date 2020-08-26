@@ -29,6 +29,7 @@ trait Mixpanel extends js.Object {
   def identify(): js.Any = js.native
   def identify(unique_id: String): js.Any = js.native
   def init(token: String): Mixpanel = js.native
+  def init(token: String, config: js.UndefOr[scala.Nothing], name: String): Mixpanel = js.native
   def init(token: String, config: PartialConfig): Mixpanel = js.native
   def init(token: String, config: PartialConfig, name: String): Mixpanel = js.native
   def opt_in_tracking(): Unit = js.native
@@ -39,13 +40,40 @@ trait Mixpanel extends js.Object {
   def register(props: Dict): Unit = js.native
   def register(props: Dict, days: Double): Unit = js.native
   def register_once(props: Dict): Unit = js.native
+  def register_once(props: Dict, default_value: js.UndefOr[scala.Nothing], days: Double): Unit = js.native
   def register_once(props: Dict, default_value: js.Any): Unit = js.native
   def register_once(props: Dict, default_value: js.Any, days: Double): Unit = js.native
   def reset(): Unit = js.native
   def set_config(config: PartialConfig): Unit = js.native
   def time_event(event_name: String): Unit = js.native
   def track(event_name: String): Unit = js.native
+  def track(
+    event_name: String,
+    properties: js.UndefOr[scala.Nothing],
+    optionsOrCallback: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
+  def track(event_name: String, properties: js.UndefOr[scala.Nothing], optionsOrCallback: Callback): Unit = js.native
+  def track(
+    event_name: String,
+    properties: js.UndefOr[scala.Nothing],
+    optionsOrCallback: Callback,
+    callback: Callback
+  ): Unit = js.native
+  def track(event_name: String, properties: js.UndefOr[scala.Nothing], optionsOrCallback: RequestOptions): Unit = js.native
+  def track(
+    event_name: String,
+    properties: js.UndefOr[scala.Nothing],
+    optionsOrCallback: RequestOptions,
+    callback: Callback
+  ): Unit = js.native
   def track(event_name: String, properties: Dict): Unit = js.native
+  def track(
+    event_name: String,
+    properties: Dict,
+    optionsOrCallback: js.UndefOr[scala.Nothing],
+    callback: Callback
+  ): Unit = js.native
   def track(event_name: String, properties: Dict, optionsOrCallback: Callback): Unit = js.native
   def track(event_name: String, properties: Dict, optionsOrCallback: Callback, callback: Callback): Unit = js.native
   def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions): Unit = js.native

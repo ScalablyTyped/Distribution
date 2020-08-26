@@ -108,36 +108,80 @@ trait SchemaOperation extends js.Object {
 
 object SchemaOperation {
   @scala.inline
-  def apply(
-    consumerId: String = null,
-    endTime: String = null,
-    importance: String = null,
-    labels: StringDictionary[String] = null,
-    logEntries: js.Array[SchemaLogEntry] = null,
-    metricValueSets: js.Array[SchemaMetricValueSet] = null,
-    operationId: String = null,
-    operationName: String = null,
-    quotaProperties: SchemaQuotaProperties = null,
-    resourceContainer: String = null,
-    resources: js.Array[SchemaResourceInfo] = null,
-    startTime: String = null,
-    userLabels: StringDictionary[String] = null
-  ): SchemaOperation = {
+  def apply(): SchemaOperation = {
     val __obj = js.Dynamic.literal()
-    if (consumerId != null) __obj.updateDynamic("consumerId")(consumerId.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (importance != null) __obj.updateDynamic("importance")(importance.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (logEntries != null) __obj.updateDynamic("logEntries")(logEntries.asInstanceOf[js.Any])
-    if (metricValueSets != null) __obj.updateDynamic("metricValueSets")(metricValueSets.asInstanceOf[js.Any])
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
-    if (quotaProperties != null) __obj.updateDynamic("quotaProperties")(quotaProperties.asInstanceOf[js.Any])
-    if (resourceContainer != null) __obj.updateDynamic("resourceContainer")(resourceContainer.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (userLabels != null) __obj.updateDynamic("userLabels")(userLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOperation]
   }
+  @scala.inline
+  implicit class SchemaOperationOps[Self <: SchemaOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumerId(value: String): Self = this.set("consumerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumerId: Self = this.set("consumerId", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setImportance(value: String): Self = this.set("importance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportance: Self = this.set("importance", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLogEntriesVarargs(value: SchemaLogEntry*): Self = this.set("logEntries", js.Array(value :_*))
+    @scala.inline
+    def setLogEntries(value: js.Array[SchemaLogEntry]): Self = this.set("logEntries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogEntries: Self = this.set("logEntries", js.undefined)
+    @scala.inline
+    def setMetricValueSetsVarargs(value: SchemaMetricValueSet*): Self = this.set("metricValueSets", js.Array(value :_*))
+    @scala.inline
+    def setMetricValueSets(value: js.Array[SchemaMetricValueSet]): Self = this.set("metricValueSets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricValueSets: Self = this.set("metricValueSets", js.undefined)
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setOperationName(value: String): Self = this.set("operationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationName: Self = this.set("operationName", js.undefined)
+    @scala.inline
+    def setQuotaProperties(value: SchemaQuotaProperties): Self = this.set("quotaProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaProperties: Self = this.set("quotaProperties", js.undefined)
+    @scala.inline
+    def setResourceContainer(value: String): Self = this.set("resourceContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceContainer: Self = this.set("resourceContainer", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: SchemaResourceInfo*): Self = this.set("resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: js.Array[SchemaResourceInfo]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setUserLabels(value: StringDictionary[String]): Self = this.set("userLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserLabels: Self = this.set("userLabels", js.undefined)
+  }
+  
 }
 

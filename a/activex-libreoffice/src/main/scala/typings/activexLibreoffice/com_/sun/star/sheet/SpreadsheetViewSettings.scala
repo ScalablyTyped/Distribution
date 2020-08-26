@@ -11,59 +11,60 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** contains settings which are specific to each view of a spreadsheet */
+@js.native
 trait SpreadsheetViewSettings extends XPropertySet {
   /** specifies the color in which the cell grid is displayed. */
-  var GridColor: Color
+  var GridColor: Color = js.native
   /** enables the column and row headers of the view. */
-  var HasColumnRowHeaders: Boolean
+  var HasColumnRowHeaders: Boolean = js.native
   /** enables the horizontal scroll bar of the view. */
-  var HasHorizontalScrollBar: Boolean
+  var HasHorizontalScrollBar: Boolean = js.native
   /** enables the sheet tabs of the view. */
-  var HasSheetTabs: Boolean
+  var HasSheetTabs: Boolean = js.native
   /** enables the vertical scroll bar of the view. */
-  var HasVerticalScrollBar: Boolean
+  var HasVerticalScrollBar: Boolean = js.native
   /** disables the display of marks from online spelling. */
-  var HideSpellMarks: Boolean
+  var HideSpellMarks: Boolean = js.native
   /** enables the display of outline symbols. */
-  var IsOutlineSymbolsSet: Boolean
+  var IsOutlineSymbolsSet: Boolean = js.native
   /** controls whether strings, values, and formulas are displayed in different colors. */
-  var IsValueHighlightingEnabled: Boolean
+  var IsValueHighlightingEnabled: Boolean = js.native
   /** enables display of anchor symbols when drawing objects are selected. */
-  var ShowAnchor: Boolean
+  var ShowAnchor: Boolean = js.native
   /**
     * enables the display of charts in the view.
     * @see SpreadsheetViewObjectsMode
     */
-  var ShowCharts: Double
+  var ShowCharts: Double = js.native
   /**
     * enables the display of drawing objects in the view.
     * @see SpreadsheetViewObjectsMode
     */
-  var ShowDrawing: Double
+  var ShowDrawing: Double = js.native
   /** controls whether formulas are displayed instead of their results. */
-  var ShowFormulas: Boolean
+  var ShowFormulas: Boolean = js.native
   /** enables the display of the cell grid. */
-  var ShowGrid: Boolean
+  var ShowGrid: Boolean = js.native
   /** enables display of help lines when moving drawing objects. */
-  var ShowHelpLines: Boolean
+  var ShowHelpLines: Boolean = js.native
   /** controls whether a marker is shown for notes in cells. */
-  var ShowNotes: Boolean
+  var ShowNotes: Boolean = js.native
   /**
     * enables display of embedded objects in the view.
     * @see SpreadsheetViewObjectsMode
     */
-  var ShowObjects: Double
+  var ShowObjects: Double = js.native
   /** enables display of page breaks. */
-  var ShowPageBreaks: Boolean
+  var ShowPageBreaks: Boolean = js.native
   /** enables display of zero-values. */
-  var ShowZeroValues: Boolean
+  var ShowZeroValues: Boolean = js.native
   /**
     * This property defines the zoom type for the document.
     * @see com.sun.star.view.DocumentZoomType
     */
-  var ZoomType: Double
+  var ZoomType: Double = js.native
   /** Defines the zoom value to use. Valid only if the ZoomType is set to {@link com.sun.star.view.DocumentZoomType.BY_VALUE} . */
-  var ZoomValue: Double
+  var ZoomValue: Double = js.native
 }
 
 object SpreadsheetViewSettings {
@@ -104,5 +105,58 @@ object SpreadsheetViewSettings {
     val __obj = js.Dynamic.literal(GridColor = GridColor.asInstanceOf[js.Any], HasColumnRowHeaders = HasColumnRowHeaders.asInstanceOf[js.Any], HasHorizontalScrollBar = HasHorizontalScrollBar.asInstanceOf[js.Any], HasSheetTabs = HasSheetTabs.asInstanceOf[js.Any], HasVerticalScrollBar = HasVerticalScrollBar.asInstanceOf[js.Any], HideSpellMarks = HideSpellMarks.asInstanceOf[js.Any], IsOutlineSymbolsSet = IsOutlineSymbolsSet.asInstanceOf[js.Any], IsValueHighlightingEnabled = IsValueHighlightingEnabled.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ShowAnchor = ShowAnchor.asInstanceOf[js.Any], ShowCharts = ShowCharts.asInstanceOf[js.Any], ShowDrawing = ShowDrawing.asInstanceOf[js.Any], ShowFormulas = ShowFormulas.asInstanceOf[js.Any], ShowGrid = ShowGrid.asInstanceOf[js.Any], ShowHelpLines = ShowHelpLines.asInstanceOf[js.Any], ShowNotes = ShowNotes.asInstanceOf[js.Any], ShowObjects = ShowObjects.asInstanceOf[js.Any], ShowPageBreaks = ShowPageBreaks.asInstanceOf[js.Any], ShowZeroValues = ShowZeroValues.asInstanceOf[js.Any], ZoomType = ZoomType.asInstanceOf[js.Any], ZoomValue = ZoomValue.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[SpreadsheetViewSettings]
   }
+  @scala.inline
+  implicit class SpreadsheetViewSettingsOps[Self <: SpreadsheetViewSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGridColor(value: Color): Self = this.set("GridColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasColumnRowHeaders(value: Boolean): Self = this.set("HasColumnRowHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasHorizontalScrollBar(value: Boolean): Self = this.set("HasHorizontalScrollBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasSheetTabs(value: Boolean): Self = this.set("HasSheetTabs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasVerticalScrollBar(value: Boolean): Self = this.set("HasVerticalScrollBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHideSpellMarks(value: Boolean): Self = this.set("HideSpellMarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsOutlineSymbolsSet(value: Boolean): Self = this.set("IsOutlineSymbolsSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsValueHighlightingEnabled(value: Boolean): Self = this.set("IsValueHighlightingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowAnchor(value: Boolean): Self = this.set("ShowAnchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowCharts(value: Double): Self = this.set("ShowCharts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowDrawing(value: Double): Self = this.set("ShowDrawing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowFormulas(value: Boolean): Self = this.set("ShowFormulas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowGrid(value: Boolean): Self = this.set("ShowGrid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowHelpLines(value: Boolean): Self = this.set("ShowHelpLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowNotes(value: Boolean): Self = this.set("ShowNotes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowObjects(value: Double): Self = this.set("ShowObjects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowPageBreaks(value: Boolean): Self = this.set("ShowPageBreaks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowZeroValues(value: Boolean): Self = this.set("ShowZeroValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZoomType(value: Double): Self = this.set("ZoomType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZoomValue(value: Double): Self = this.set("ZoomValue", value.asInstanceOf[js.Any])
+  }
+  
 }
 

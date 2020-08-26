@@ -22,16 +22,17 @@ import scala.scalajs.js.annotation._
   * @property {"any" | "Array" | "Boolean" | "Buffer" | "Date" | "GeoPoint" | "null" | "Number" | "Object" | "String"} type
   * @property {string} default Default value that will be used to populate loopback-explorer input fields and swagger documentation
   */
+@js.native
 trait RemoteMethodArgument extends js.Object {
   /**
     *     Argument name
     */
-  var arg: String
+  var arg: String = js.native
   /**
     *    Default value that will be used to populate loopback-explorer input fields and swagger documentation.
     *    Note: This value will not be passed into remote methods function if argument is not present.
     */
-  var default: js.UndefOr[String] = js.undefined
+  var default: js.UndefOr[String] = js.native
   /**
     * A text description of the argument. This is used by API documentation generators like Swagger.
     You can split long descriptions into arrays of strings (lines) to keep line lengths manageable.
@@ -43,7 +44,7 @@ trait RemoteMethodArgument extends js.Object {
     ]
     ```
     */
-  var description: js.UndefOr[String | js.Array[String]] = js.undefined
+  var description: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * http    Object or Function    For input arguments: a function or an object describing mapping from HTTP request to the argument value. See HTTP mapping of input arguments below.
     * http.target
@@ -51,41 +52,72 @@ trait RemoteMethodArgument extends js.Object {
     * * status sets the res.statusCode to the provided value
     * * header sets the http.header or arg named header to the value
     */
-  var http: js.UndefOr[RemoteHttpOptions] = js.undefined
+  var http: js.UndefOr[RemoteHttpOptions] = js.native
   /**
     *     True if argument is required; false otherwise.
     */
-  var required: js.UndefOr[Boolean] = js.undefined
+  var required: js.UndefOr[Boolean] = js.native
   /**
     *     For callback arguments: set this property to true if your function has a single callback argument to use as the root object returned to remote caller.
     *    Otherwise the root object returned is a map (argument-name to argument-value).
     */
-  var root: js.UndefOr[Boolean] = js.undefined
+  var root: js.UndefOr[Boolean] = js.native
   /**
     *     Argument datatype; must be a Loopback type. Additionally, callback arguments allow a special type "file"; see below.
     */
-  var `type`: any | Array | typings.loopback.loopbackStrings.Boolean | Buffer | Date | GeoPoint | `null` | Number | Object | typings.loopback.loopbackStrings.String
+  var `type`: any | Array | typings.loopback.loopbackStrings.Boolean | Buffer | Date | GeoPoint | `null` | Number | Object | typings.loopback.loopbackStrings.String = js.native
 }
 
 object RemoteMethodArgument {
   @scala.inline
   def apply(
     arg: String,
-    `type`: any | Array | typings.loopback.loopbackStrings.Boolean | Buffer | Date | GeoPoint | `null` | Number | Object | typings.loopback.loopbackStrings.String,
-    default: String = null,
-    description: String | js.Array[String] = null,
-    http: RemoteHttpOptions = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    root: js.UndefOr[Boolean] = js.undefined
+    `type`: any | Array | typings.loopback.loopbackStrings.Boolean | Buffer | Date | GeoPoint | `null` | Number | Object | typings.loopback.loopbackStrings.String
   ): RemoteMethodArgument = {
     val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteMethodArgument]
   }
+  @scala.inline
+  implicit class RemoteMethodArgumentOps[Self <: RemoteMethodArgument] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArg(value: String): Self = this.set("arg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(
+      value: any | Array | typings.loopback.loopbackStrings.Boolean | Buffer | Date | GeoPoint | `null` | Number | Object | typings.loopback.loopbackStrings.String
+    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setDescriptionVarargs(value: String*): Self = this.set("description", js.Array(value :_*))
+    @scala.inline
+    def setDescription(value: String | js.Array[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setHttp(value: RemoteHttpOptions): Self = this.set("http", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttp: Self = this.set("http", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setRoot(value: Boolean): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

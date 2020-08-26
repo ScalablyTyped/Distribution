@@ -1,6 +1,7 @@
 package typings.pulumiAws.apiMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.inputMod.apigatewayv2.ApiCorsConfiguration
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,12 +24,20 @@ trait ApiState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.native
   /**
+    * The cross-origin resource sharing (CORS) [configuration](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-cors.html). Applicable for HTTP APIs.
+    */
+  val corsConfiguration: js.UndefOr[Input[ApiCorsConfiguration]] = js.native
+  /**
+    * Part of _quick create_. Specifies any credentials required for the integration. Applicable for HTTP APIs.
+    */
+  val credentialsArn: js.UndefOr[Input[String]] = js.native
+  /**
     * The description of the API.
     */
   val description: js.UndefOr[Input[String]] = js.native
   /**
-    * The ARN prefix to be used in an [`aws.lambda.Permission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `sourceArn` attribute
-    * or in an [`aws.iam.Policy`](https://www.terraform.io/docs/providers/aws/r/iam_policy.html) to authorize access to the [`@connections` API](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-how-to-call-websocket-api-connections.html).
+    * The ARN prefix to be used in an `aws.lambda.Permission`'s `sourceArn` attribute
+    * or in an `aws.iam.Policy` to authorize access to the [`@connections` API](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-how-to-call-websocket-api-connections.html).
     * See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-control-access-iam.html) for details.
     */
   val executionArn: js.UndefOr[Input[String]] = js.native
@@ -41,14 +50,24 @@ trait ApiState extends js.Object {
     */
   val protocolType: js.UndefOr[Input[String]] = js.native
   /**
+    * Part of _quick create_. Specifies any [route key](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html). Applicable for HTTP APIs.
+    */
+  val routeKey: js.UndefOr[Input[String]] = js.native
+  /**
     * The [route selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-route-selection-expressions) for the API.
     * Defaults to `$request.method $request.path`.
     */
   val routeSelectionExpression: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the API.
+    * A map of tags to assign to the API.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  /**
+    * Part of _quick create_. Quick create produces an API with an integration, a default catch-all route, and a default stage which is configured to automatically deploy changes.
+    * For HTTP integrations, specify a fully qualified URL. For Lambda integrations, specify a function ARN.
+    * The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. Applicable for HTTP APIs.
+    */
+  val target: js.UndefOr[Input[String]] = js.native
   /**
     * A version identifier for the API.
     */
@@ -57,30 +76,78 @@ trait ApiState extends js.Object {
 
 object ApiState {
   @scala.inline
-  def apply(
-    apiEndpoint: Input[String] = null,
-    apiKeySelectionExpression: Input[String] = null,
-    arn: Input[String] = null,
-    description: Input[String] = null,
-    executionArn: Input[String] = null,
-    name: Input[String] = null,
-    protocolType: Input[String] = null,
-    routeSelectionExpression: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    version: Input[String] = null
-  ): ApiState = {
+  def apply(): ApiState = {
     val __obj = js.Dynamic.literal()
-    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint.asInstanceOf[js.Any])
-    if (apiKeySelectionExpression != null) __obj.updateDynamic("apiKeySelectionExpression")(apiKeySelectionExpression.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (executionArn != null) __obj.updateDynamic("executionArn")(executionArn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (protocolType != null) __obj.updateDynamic("protocolType")(protocolType.asInstanceOf[js.Any])
-    if (routeSelectionExpression != null) __obj.updateDynamic("routeSelectionExpression")(routeSelectionExpression.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiState]
   }
+  @scala.inline
+  implicit class ApiStateOps[Self <: ApiState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiEndpoint(value: Input[String]): Self = this.set("apiEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiEndpoint: Self = this.set("apiEndpoint", js.undefined)
+    @scala.inline
+    def setApiKeySelectionExpression(value: Input[String]): Self = this.set("apiKeySelectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiKeySelectionExpression: Self = this.set("apiKeySelectionExpression", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCorsConfiguration(value: Input[ApiCorsConfiguration]): Self = this.set("corsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorsConfiguration: Self = this.set("corsConfiguration", js.undefined)
+    @scala.inline
+    def setCredentialsArn(value: Input[String]): Self = this.set("credentialsArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentialsArn: Self = this.set("credentialsArn", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExecutionArn(value: Input[String]): Self = this.set("executionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionArn: Self = this.set("executionArn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProtocolType(value: Input[String]): Self = this.set("protocolType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocolType: Self = this.set("protocolType", js.undefined)
+    @scala.inline
+    def setRouteKey(value: Input[String]): Self = this.set("routeKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteKey: Self = this.set("routeKey", js.undefined)
+    @scala.inline
+    def setRouteSelectionExpression(value: Input[String]): Self = this.set("routeSelectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteSelectionExpression: Self = this.set("routeSelectionExpression", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTarget(value: Input[String]): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setVersion(value: Input[String]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

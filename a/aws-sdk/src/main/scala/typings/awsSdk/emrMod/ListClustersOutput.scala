@@ -18,11 +18,32 @@ trait ListClustersOutput extends js.Object {
 
 object ListClustersOutput {
   @scala.inline
-  def apply(Clusters: ClusterSummaryList = null, Marker: Marker = null): ListClustersOutput = {
+  def apply(): ListClustersOutput = {
     val __obj = js.Dynamic.literal()
-    if (Clusters != null) __obj.updateDynamic("Clusters")(Clusters.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListClustersOutput]
   }
+  @scala.inline
+  implicit class ListClustersOutputOps[Self <: ListClustersOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClustersVarargs(value: ClusterSummary*): Self = this.set("Clusters", js.Array(value :_*))
+    @scala.inline
+    def setClusters(value: ClusterSummaryList): Self = this.set("Clusters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusters: Self = this.set("Clusters", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

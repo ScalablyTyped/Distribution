@@ -34,22 +34,46 @@ trait Connection extends js.Object {
 
 object Connection {
   @scala.inline
-  def apply(
-    ConnectionArn: ConnectionArn = null,
-    ConnectionName: ConnectionName = null,
-    ConnectionStatus: ConnectionStatus = null,
-    HostArn: HostArn = null,
-    OwnerAccountId: AccountId = null,
-    ProviderType: ProviderType = null
-  ): Connection = {
+  def apply(): Connection = {
     val __obj = js.Dynamic.literal()
-    if (ConnectionArn != null) __obj.updateDynamic("ConnectionArn")(ConnectionArn.asInstanceOf[js.Any])
-    if (ConnectionName != null) __obj.updateDynamic("ConnectionName")(ConnectionName.asInstanceOf[js.Any])
-    if (ConnectionStatus != null) __obj.updateDynamic("ConnectionStatus")(ConnectionStatus.asInstanceOf[js.Any])
-    if (HostArn != null) __obj.updateDynamic("HostArn")(HostArn.asInstanceOf[js.Any])
-    if (OwnerAccountId != null) __obj.updateDynamic("OwnerAccountId")(OwnerAccountId.asInstanceOf[js.Any])
-    if (ProviderType != null) __obj.updateDynamic("ProviderType")(ProviderType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connection]
   }
+  @scala.inline
+  implicit class ConnectionOps[Self <: Connection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionArn(value: ConnectionArn): Self = this.set("ConnectionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionArn: Self = this.set("ConnectionArn", js.undefined)
+    @scala.inline
+    def setConnectionName(value: ConnectionName): Self = this.set("ConnectionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionName: Self = this.set("ConnectionName", js.undefined)
+    @scala.inline
+    def setConnectionStatus(value: ConnectionStatus): Self = this.set("ConnectionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionStatus: Self = this.set("ConnectionStatus", js.undefined)
+    @scala.inline
+    def setHostArn(value: HostArn): Self = this.set("HostArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostArn: Self = this.set("HostArn", js.undefined)
+    @scala.inline
+    def setOwnerAccountId(value: AccountId): Self = this.set("OwnerAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAccountId: Self = this.set("OwnerAccountId", js.undefined)
+    @scala.inline
+    def setProviderType(value: ProviderType): Self = this.set("ProviderType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderType: Self = this.set("ProviderType", js.undefined)
+  }
+  
 }
 

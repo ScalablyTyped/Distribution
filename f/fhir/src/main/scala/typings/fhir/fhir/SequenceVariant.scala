@@ -7,93 +7,116 @@ import scala.scalajs.js.annotation._
 /**
   * Variant in sequence
   */
+@js.native
 trait SequenceVariant extends BackboneElement {
   /**
     * Contains extended information for property 'cigar'.
     */
-  var _cigar: js.UndefOr[Element] = js.undefined
+  var _cigar: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'end'.
     */
-  var _end: js.UndefOr[Element] = js.undefined
+  var _end: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'observedAllele'.
     */
-  var _observedAllele: js.UndefOr[Element] = js.undefined
+  var _observedAllele: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'referenceAllele'.
     */
-  var _referenceAllele: js.UndefOr[Element] = js.undefined
+  var _referenceAllele: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'start'.
     */
-  var _start: js.UndefOr[Element] = js.undefined
+  var _start: js.UndefOr[Element] = js.native
   /**
     * Extended CIGAR string for aligning the sequence with reference bases
     */
-  var cigar: js.UndefOr[String] = js.undefined
+  var cigar: js.UndefOr[String] = js.native
   /**
     * End position of the variant on the reference sequence
     */
-  var end: js.UndefOr[integer] = js.undefined
+  var end: js.UndefOr[integer] = js.native
   /**
     * Allele that was observed
     */
-  var observedAllele: js.UndefOr[String] = js.undefined
+  var observedAllele: js.UndefOr[String] = js.native
   /**
     * Allele in the reference sequence
     */
-  var referenceAllele: js.UndefOr[String] = js.undefined
+  var referenceAllele: js.UndefOr[String] = js.native
   /**
     * Start position of the variant on the  reference sequence
     */
-  var start: js.UndefOr[integer] = js.undefined
+  var start: js.UndefOr[integer] = js.native
   /**
     * Pointer to observed variant information
     */
-  var variantPointer: js.UndefOr[Reference] = js.undefined
+  var variantPointer: js.UndefOr[Reference] = js.native
 }
 
 object SequenceVariant {
   @scala.inline
-  def apply(
-    _cigar: Element = null,
-    _end: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _observedAllele: Element = null,
-    _referenceAllele: Element = null,
-    _start: Element = null,
-    cigar: String = null,
-    end: js.UndefOr[integer] = js.undefined,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    observedAllele: String = null,
-    referenceAllele: String = null,
-    start: js.UndefOr[integer] = js.undefined,
-    variantPointer: Reference = null
-  ): SequenceVariant = {
+  def apply(): SequenceVariant = {
     val __obj = js.Dynamic.literal()
-    if (_cigar != null) __obj.updateDynamic("_cigar")(_cigar.asInstanceOf[js.Any])
-    if (_end != null) __obj.updateDynamic("_end")(_end.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_observedAllele != null) __obj.updateDynamic("_observedAllele")(_observedAllele.asInstanceOf[js.Any])
-    if (_referenceAllele != null) __obj.updateDynamic("_referenceAllele")(_referenceAllele.asInstanceOf[js.Any])
-    if (_start != null) __obj.updateDynamic("_start")(_start.asInstanceOf[js.Any])
-    if (cigar != null) __obj.updateDynamic("cigar")(cigar.asInstanceOf[js.Any])
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (observedAllele != null) __obj.updateDynamic("observedAllele")(observedAllele.asInstanceOf[js.Any])
-    if (referenceAllele != null) __obj.updateDynamic("referenceAllele")(referenceAllele.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
-    if (variantPointer != null) __obj.updateDynamic("variantPointer")(variantPointer.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceVariant]
   }
+  @scala.inline
+  implicit class SequenceVariantOps[Self <: SequenceVariant] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_cigar(value: Element): Self = this.set("_cigar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_cigar: Self = this.set("_cigar", js.undefined)
+    @scala.inline
+    def set_end(value: Element): Self = this.set("_end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_end: Self = this.set("_end", js.undefined)
+    @scala.inline
+    def set_observedAllele(value: Element): Self = this.set("_observedAllele", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_observedAllele: Self = this.set("_observedAllele", js.undefined)
+    @scala.inline
+    def set_referenceAllele(value: Element): Self = this.set("_referenceAllele", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_referenceAllele: Self = this.set("_referenceAllele", js.undefined)
+    @scala.inline
+    def set_start(value: Element): Self = this.set("_start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_start: Self = this.set("_start", js.undefined)
+    @scala.inline
+    def setCigar(value: String): Self = this.set("cigar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCigar: Self = this.set("cigar", js.undefined)
+    @scala.inline
+    def setEnd(value: integer): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setObservedAllele(value: String): Self = this.set("observedAllele", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObservedAllele: Self = this.set("observedAllele", js.undefined)
+    @scala.inline
+    def setReferenceAllele(value: String): Self = this.set("referenceAllele", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceAllele: Self = this.set("referenceAllele", js.undefined)
+    @scala.inline
+    def setStart(value: integer): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setVariantPointer(value: Reference): Self = this.set("variantPointer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariantPointer: Self = this.set("variantPointer", js.undefined)
+  }
+  
 }
 

@@ -5,17 +5,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FeatureReductionClusterProperties extends js.Object {
   /**
-    * Defines the radius in points (or pixels if specified) of each area in which multiple points will be grouped and visualized as a single cluster.
+    * Defines the symbol size of the largest cluster in points (or pixels if specified). Adjusting `clusterMaxSize` generally should be considered if the [clusterRadius](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterRadius) is modified.  For example, if you prefer cluster icons to not overlap, then the `clusterMaxSize` should be substantially smaller than the `clusterRadius`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterMaxSize)
+    *
+    * @default 37.5
+    */
+  var clusterMaxSize: js.UndefOr[Double | String] = js.native
+  /**
+    * Defines the symbol size of the smallest cluster in points (or pixels if specified). If [labeling](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#labelingInfo) clusters with a count or some other information in the center of the cluster, then having a `clusterMinSize` larger than the default is generally preferred.  Keep in mind that this size may be smaller than the symbol size of individual non-clustered features in the layer. In that scenario, you should either reduce the size of the symbol(s) in the layer's renderer or increase the `clusterMinSize` to be larger than the size of individual points to avoid confusion for the end user. This can most likely happen when cluster size represents feature count.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterMinSize)
+    *
+    * @default 9
+    */
+  var clusterMinSize: js.UndefOr[Double | String] = js.native
+  /**
+    * Defines the radius in points (or pixels if specified) of each area in which multiple points will be grouped and visualized as a single cluster. Adjusting `clusterRadius` generally should be considered if the [clusterMaxSize](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterMaxSize) is modified.  For example, if you prefer cluster icons to not overlap, then the `clusterRadius` should be substantially larger than the `clusterMaxSize`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#clusterRadius)
     *
     * @default 60
     */
-  var clusterRadius: js.UndefOr[Double | String] = js.undefined
+  var clusterRadius: js.UndefOr[Double | String] = js.native
   /**
-    * The [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) to apply to clustered graphics. When set, a popupTemplate independent of the [layer.popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate) is used. This popup can display summary information for the cluster, including the count of all features in the cluster and the average or predominant values of fields mapped by the renderer.  The table below describes the aggregate fields used internally by the cluster renderer, which you can reference in the cluster popup.  Aggregate fields:
+    * Defines labels for clusters as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). When set, labels independent of the [layer.labelingInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelingInfo) are used to convey information about the clusters, including the count of all features in the cluster, the average, or predominant values of fields mapped by the renderer.  It is advisable to turn off [label deconfliction](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#deconflictionStrategy) when labeling clusters with a count in the center of the cluster. To generate suggested labels for your cluster configuration based on the layer's renderer, see [clusterLabelCreator](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html).  The table below describes the aggregate fields used internally by the cluster renderer, which you can reference in the label expression.  Aggregate fields:
+    *
+    * Field Name | Type | Description
+    * -----------|------|------------
+    * `cluster_count` | number | The number of features in the cluster.
+    * `cluster_avg_{fieldName}` | number | For renderers visualizing a number field either with size, opacity, continuous color, or class breaks, this field describes the average of the rendered field among all features in the cluster.
+    * `cluster_type_{fieldName}` | string | For layers with a [UniqueValueRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html), this field describes the mode, or predominant string of the rendered field among all features within the cluster.
+    *
+    * Multiple Label classes with different `where` clauses can be used to define several labels with varying styles on the same feature. Likewise, multiple label classes may be used to label different types of clusters (e.g. blue labels for small clusters and red labels for large ones).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#labelingInfo)
+    */
+  var labelingInfo: js.UndefOr[js.Array[LabelClassProperties]] = js.native
+  /**
+    * Indicates whether to display labels for the clusters. If `true`, labels will appear as defined in the [labelingInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#labelingInfo) property.  Labels will not render for clusters if the [labelsVisible](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelsVisible) property on the layer is set to `false` even if `labelsVisible` on `featureReduction` is `true`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#labelsVisible)
+    *
+    * @default true
+    */
+  var labelsVisible: js.UndefOr[Boolean] = js.native
+  /**
+    * Indicates whether to display the cluster popup. If `true`, popups will open when the user clicks or taps a cluster. If `false`, the popup as defined in the [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#popupTemplate) will be persisted, but won't be displayed on click/tap.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#popupEnabled)
+    *
+    * @default true
+    */
+  var popupEnabled: js.UndefOr[Boolean] = js.native
+  /**
+    * The [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) to apply to clustered graphics. When set, a popupTemplate independent of the [layer.popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate) is used. This popup can display summary information for the cluster, including the count of all features in the cluster and the average or predominant values of fields mapped by the renderer.  To generate a suggested predefined popup template for your cluster configuration based on the layer's renderer, see [clusterPopupTemplateCreator](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-clusters.html).  The table below describes the aggregate fields used internally by the cluster renderer, which you can reference in the cluster popup.  Aggregate fields:
     *
     * Field Name | Type | Description
     * -----------|------|------------
@@ -103,27 +150,67 @@ trait FeatureReductionClusterProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#popupTemplate)
     */
-  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
+  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.native
   /**
     * The feature reduction type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#type)
     */
-  var `type`: js.UndefOr[cluster] = js.undefined
+  var `type`: js.UndefOr[cluster] = js.native
 }
 
 object FeatureReductionClusterProperties {
   @scala.inline
-  def apply(
-    clusterRadius: Double | String = null,
-    popupTemplate: PopupTemplateProperties = null,
-    `type`: cluster = null
-  ): FeatureReductionClusterProperties = {
+  def apply(): FeatureReductionClusterProperties = {
     val __obj = js.Dynamic.literal()
-    if (clusterRadius != null) __obj.updateDynamic("clusterRadius")(clusterRadius.asInstanceOf[js.Any])
-    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureReductionClusterProperties]
   }
+  @scala.inline
+  implicit class FeatureReductionClusterPropertiesOps[Self <: FeatureReductionClusterProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterMaxSize(value: Double | String): Self = this.set("clusterMaxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterMaxSize: Self = this.set("clusterMaxSize", js.undefined)
+    @scala.inline
+    def setClusterMinSize(value: Double | String): Self = this.set("clusterMinSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterMinSize: Self = this.set("clusterMinSize", js.undefined)
+    @scala.inline
+    def setClusterRadius(value: Double | String): Self = this.set("clusterRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterRadius: Self = this.set("clusterRadius", js.undefined)
+    @scala.inline
+    def setLabelingInfoVarargs(value: LabelClassProperties*): Self = this.set("labelingInfo", js.Array(value :_*))
+    @scala.inline
+    def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = this.set("labelingInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelingInfo: Self = this.set("labelingInfo", js.undefined)
+    @scala.inline
+    def setLabelsVisible(value: Boolean): Self = this.set("labelsVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelsVisible: Self = this.set("labelsVisible", js.undefined)
+    @scala.inline
+    def setPopupEnabled(value: Boolean): Self = this.set("popupEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupEnabled: Self = this.set("popupEnabled", js.undefined)
+    @scala.inline
+    def setPopupTemplate(value: PopupTemplateProperties): Self = this.set("popupTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupTemplate: Self = this.set("popupTemplate", js.undefined)
+    @scala.inline
+    def setType(value: cluster): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

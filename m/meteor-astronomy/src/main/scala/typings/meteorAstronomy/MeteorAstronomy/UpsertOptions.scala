@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpsertOptions extends js.Object {
-  var multi: js.UndefOr[Boolean] = js.undefined
+  var multi: js.UndefOr[Boolean] = js.native
 }
 
 object UpsertOptions {
   @scala.inline
-  def apply(multi: js.UndefOr[Boolean] = js.undefined): UpsertOptions = {
+  def apply(): UpsertOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpsertOptions]
   }
+  @scala.inline
+  implicit class UpsertOptionsOps[Self <: UpsertOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMulti(value: Boolean): Self = this.set("multi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMulti: Self = this.set("multi", js.undefined)
+  }
+  
 }
 

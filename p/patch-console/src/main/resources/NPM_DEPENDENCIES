@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "patch-console" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "patch-console" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

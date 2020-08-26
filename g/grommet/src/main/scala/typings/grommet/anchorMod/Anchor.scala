@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Anchor", "Anchor")
+@JSImport("grommet/es6/components/Anchor", "Anchor")
 @js.native
 object Anchor extends TopLevel[
       FC[

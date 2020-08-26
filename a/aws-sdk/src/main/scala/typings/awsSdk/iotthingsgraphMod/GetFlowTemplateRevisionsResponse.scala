@@ -18,11 +18,32 @@ trait GetFlowTemplateRevisionsResponse extends js.Object {
 
 object GetFlowTemplateRevisionsResponse {
   @scala.inline
-  def apply(nextToken: NextToken = null, summaries: FlowTemplateSummaries = null): GetFlowTemplateRevisionsResponse = {
+  def apply(): GetFlowTemplateRevisionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (summaries != null) __obj.updateDynamic("summaries")(summaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFlowTemplateRevisionsResponse]
   }
+  @scala.inline
+  implicit class GetFlowTemplateRevisionsResponseOps[Self <: GetFlowTemplateRevisionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setSummariesVarargs(value: FlowTemplateSummary*): Self = this.set("summaries", js.Array(value :_*))
+    @scala.inline
+    def setSummaries(value: FlowTemplateSummaries): Self = this.set("summaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaries: Self = this.set("summaries", js.undefined)
+  }
+  
 }
 

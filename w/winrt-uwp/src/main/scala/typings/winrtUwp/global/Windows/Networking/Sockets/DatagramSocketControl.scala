@@ -8,21 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Networking.Sockets.DatagramSocketControl")
 @js.native
 abstract class DatagramSocketControl ()
-  extends typings.winrtUwp.Windows.Networking.Sockets.DatagramSocketControl {
-  /** Gets or sets a Boolean value that specifies whether the DatagramSocket allows IP datagrams for UDP to be fragmented. */
-  /* CompleteClass */
-  override var dontFragment: Boolean = js.native
-  /** Gets or sets the size, in bytes, of the buffer used for receiving data on the DatagramSocket object. */
-  /* CompleteClass */
-  override var inboundBufferSizeInBytes: Double = js.native
-  /** Gets or sets a Boolean value that specifies whether the DatagramSocket is able to coexist with other Win32 or WinRT multicast sockets bound to the same address/port. */
-  /* CompleteClass */
-  override var multicastOnly: Boolean = js.native
-  /** Gets or sets the hop limit on an outbound packet sent to a unicast IP address by the DatagramSocket object. */
-  /* CompleteClass */
-  override var outboundUnicastHopLimit: Double = js.native
-  /** Gets or sets the quality of service on a DatagramSocket object. */
-  /* CompleteClass */
-  override var qualityOfService: typings.winrtUwp.Windows.Networking.Sockets.SocketQualityOfService = js.native
-}
+  extends typings.winrtUwp.Windows.Networking.Sockets.DatagramSocketControl
 

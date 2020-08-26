@@ -5,48 +5,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParameterBaseObject extends js.Object {
-  var allowEmptyValue: js.UndefOr[Boolean] = js.undefined
-  var allowReserved: js.UndefOr[Boolean] = js.undefined
-  var content: js.UndefOr[StringDictionary[MediaTypeObject]] = js.undefined
-  var deprecated: js.UndefOr[Boolean] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var example: js.UndefOr[js.Any] = js.undefined
-  var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.undefined
-  var explode: js.UndefOr[Boolean] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var schema: js.UndefOr[ReferenceObject | SchemaObject] = js.undefined
-  var style: js.UndefOr[String] = js.undefined
+  var allowEmptyValue: js.UndefOr[Boolean] = js.native
+  var allowReserved: js.UndefOr[Boolean] = js.native
+  var content: js.UndefOr[StringDictionary[MediaTypeObject]] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.native
+  var description: js.UndefOr[String] = js.native
+  var example: js.UndefOr[js.Any] = js.native
+  var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.native
+  var explode: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.native
+  var schema: js.UndefOr[ReferenceObject | SchemaObject] = js.native
+  var style: js.UndefOr[String] = js.native
 }
 
 object ParameterBaseObject {
   @scala.inline
-  def apply(
-    allowEmptyValue: js.UndefOr[Boolean] = js.undefined,
-    allowReserved: js.UndefOr[Boolean] = js.undefined,
-    content: StringDictionary[MediaTypeObject] = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    example: js.Any = null,
-    examples: StringDictionary[ReferenceObject | ExampleObject] = null,
-    explode: js.UndefOr[Boolean] = js.undefined,
-    required: js.UndefOr[Boolean] = js.undefined,
-    schema: ReferenceObject | SchemaObject = null,
-    style: String = null
-  ): ParameterBaseObject = {
+  def apply(): ParameterBaseObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmptyValue)) __obj.updateDynamic("allowEmptyValue")(allowEmptyValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowReserved)) __obj.updateDynamic("allowReserved")(allowReserved.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
-    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
-    if (!js.isUndefined(explode)) __obj.updateDynamic("explode")(explode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterBaseObject]
   }
+  @scala.inline
+  implicit class ParameterBaseObjectOps[Self <: ParameterBaseObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowEmptyValue(value: Boolean): Self = this.set("allowEmptyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowEmptyValue: Self = this.set("allowEmptyValue", js.undefined)
+    @scala.inline
+    def setAllowReserved(value: Boolean): Self = this.set("allowReserved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowReserved: Self = this.set("allowReserved", js.undefined)
+    @scala.inline
+    def setContent(value: StringDictionary[MediaTypeObject]): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDeprecated(value: Boolean): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExample(value: js.Any): Self = this.set("example", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExample: Self = this.set("example", js.undefined)
+    @scala.inline
+    def setExamples(value: StringDictionary[ReferenceObject | ExampleObject]): Self = this.set("examples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExamples: Self = this.set("examples", js.undefined)
+    @scala.inline
+    def setExplode(value: Boolean): Self = this.set("explode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplode: Self = this.set("explode", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setSchema(value: ReferenceObject | SchemaObject): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

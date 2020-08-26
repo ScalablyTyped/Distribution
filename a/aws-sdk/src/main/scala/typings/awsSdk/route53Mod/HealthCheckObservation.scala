@@ -22,12 +22,34 @@ trait HealthCheckObservation extends js.Object {
 
 object HealthCheckObservation {
   @scala.inline
-  def apply(IPAddress: IPAddress = null, Region: HealthCheckRegion = null, StatusReport: StatusReport = null): HealthCheckObservation = {
+  def apply(): HealthCheckObservation = {
     val __obj = js.Dynamic.literal()
-    if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (StatusReport != null) __obj.updateDynamic("StatusReport")(StatusReport.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthCheckObservation]
   }
+  @scala.inline
+  implicit class HealthCheckObservationOps[Self <: HealthCheckObservation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIPAddress(value: IPAddress): Self = this.set("IPAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIPAddress: Self = this.set("IPAddress", js.undefined)
+    @scala.inline
+    def setRegion(value: HealthCheckRegion): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setStatusReport(value: StatusReport): Self = this.set("StatusReport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReport: Self = this.set("StatusReport", js.undefined)
+  }
+  
 }
 

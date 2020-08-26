@@ -26,17 +26,36 @@ trait UpdateUserProfileRequest extends js.Object {
 
 object UpdateUserProfileRequest {
   @scala.inline
-  def apply(
-    userArn: UserArn,
-    displayName: UserProfileDisplayName = null,
-    emailAddress: Email = null,
-    sshPublicKey: SshPublicKey = null
-  ): UpdateUserProfileRequest = {
+  def apply(userArn: UserArn): UpdateUserProfileRequest = {
     val __obj = js.Dynamic.literal(userArn = userArn.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (sshPublicKey != null) __obj.updateDynamic("sshPublicKey")(sshPublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserProfileRequest]
   }
+  @scala.inline
+  implicit class UpdateUserProfileRequestOps[Self <: UpdateUserProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserArn(value: UserArn): Self = this.set("userArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisplayName(value: UserProfileDisplayName): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEmailAddress(value: Email): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
+    @scala.inline
+    def setSshPublicKey(value: SshPublicKey): Self = this.set("sshPublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshPublicKey: Self = this.set("sshPublicKey", js.undefined)
+  }
+  
 }
 

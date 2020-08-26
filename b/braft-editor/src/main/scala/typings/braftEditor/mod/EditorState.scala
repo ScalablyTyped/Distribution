@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined draft-js.draft-js.EditorState & {[key: string] : any, setConvertOptions (option ? : std.Object): void, toHTML (option ? : std.Object): string, toRAW (noStringify ? : boolean): draft-js.draft-js.RawDraftContentState | string, toText (): string, isEmpty (): boolean} */
+/* Inlined draft-js.draft-js.EditorState & {[key: string] : any, setConvertOptions (option : std.Object | undefined): void, toHTML (option : std.Object | undefined): string, toRAW (noStringify : boolean | undefined): draft-js.draft-js.RawDraftContentState | string, toText (): string, isEmpty (): boolean} */
 @js.native
 trait EditorState
   extends /* key */ StringDictionary[js.Any] {

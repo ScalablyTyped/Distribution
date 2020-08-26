@@ -26,18 +26,38 @@ trait AggregateComplianceByConfigRule extends js.Object {
 
 object AggregateComplianceByConfigRule {
   @scala.inline
-  def apply(
-    AccountId: AccountId = null,
-    AwsRegion: AwsRegion = null,
-    Compliance: Compliance = null,
-    ConfigRuleName: ConfigRuleName = null
-  ): AggregateComplianceByConfigRule = {
+  def apply(): AggregateComplianceByConfigRule = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (AwsRegion != null) __obj.updateDynamic("AwsRegion")(AwsRegion.asInstanceOf[js.Any])
-    if (Compliance != null) __obj.updateDynamic("Compliance")(Compliance.asInstanceOf[js.Any])
-    if (ConfigRuleName != null) __obj.updateDynamic("ConfigRuleName")(ConfigRuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateComplianceByConfigRule]
   }
+  @scala.inline
+  implicit class AggregateComplianceByConfigRuleOps[Self <: AggregateComplianceByConfigRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setAwsRegion(value: AwsRegion): Self = this.set("AwsRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsRegion: Self = this.set("AwsRegion", js.undefined)
+    @scala.inline
+    def setCompliance(value: Compliance): Self = this.set("Compliance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompliance: Self = this.set("Compliance", js.undefined)
+    @scala.inline
+    def setConfigRuleName(value: ConfigRuleName): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigRuleName: Self = this.set("ConfigRuleName", js.undefined)
+  }
+  
 }
 

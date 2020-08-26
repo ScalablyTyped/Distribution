@@ -24,17 +24,38 @@ trait HlsPackage extends js.Object {
 
 object HlsPackage {
   @scala.inline
-  def apply(
-    HlsManifests: listOfHlsManifest,
-    Encryption: HlsEncryption = null,
-    SegmentDurationSeconds: js.UndefOr[integer] = js.undefined,
-    UseAudioRenditionGroup: js.UndefOr[boolean] = js.undefined
-  ): HlsPackage = {
+  def apply(HlsManifests: listOfHlsManifest): HlsPackage = {
     val __obj = js.Dynamic.literal(HlsManifests = HlsManifests.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseAudioRenditionGroup)) __obj.updateDynamic("UseAudioRenditionGroup")(UseAudioRenditionGroup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsPackage]
   }
+  @scala.inline
+  implicit class HlsPackageOps[Self <: HlsPackage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHlsManifestsVarargs(value: HlsManifest*): Self = this.set("HlsManifests", js.Array(value :_*))
+    @scala.inline
+    def setHlsManifests(value: listOfHlsManifest): Self = this.set("HlsManifests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncryption(value: HlsEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setSegmentDurationSeconds(value: integer): Self = this.set("SegmentDurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentDurationSeconds: Self = this.set("SegmentDurationSeconds", js.undefined)
+    @scala.inline
+    def setUseAudioRenditionGroup(value: boolean): Self = this.set("UseAudioRenditionGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseAudioRenditionGroup: Self = this.set("UseAudioRenditionGroup", js.undefined)
+  }
+  
 }
 

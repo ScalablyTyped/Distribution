@@ -26,7 +26,8 @@ trait Enhancer[TKeys, TState] extends js.Object {
   var reducer_Original: Reducer[LocationState[TKeys, TState], AnyAction] = js.native
   def enhancer(next: StoreEnhancerStoreCreator[js.Object, js.Object]): StoreEnhancerStoreCreator[js.Object, js.Object] = js.native
   def middleware(api: MiddlewareAPI[Dispatch[AnyAction], _]): js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ _, _]] = js.native
-  def reducer(state: js.UndefOr[LocationState[TKeys, TState]], action: AnyAction): LocationState[TKeys, TState] = js.native
+  def reducer(state: js.UndefOr[scala.Nothing], action: AnyAction): LocationState[TKeys, TState] = js.native
+  def reducer(state: LocationState[TKeys, TState], action: AnyAction): LocationState[TKeys, TState] = js.native
   def thunk(store: Store[TState, AnyAction]): js.Promise[Nullable[RouteThunk[TState]]] = js.native
 }
 

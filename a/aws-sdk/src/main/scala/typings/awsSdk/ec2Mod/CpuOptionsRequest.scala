@@ -18,11 +18,30 @@ trait CpuOptionsRequest extends js.Object {
 
 object CpuOptionsRequest {
   @scala.inline
-  def apply(CoreCount: js.UndefOr[Integer] = js.undefined, ThreadsPerCore: js.UndefOr[Integer] = js.undefined): CpuOptionsRequest = {
+  def apply(): CpuOptionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CoreCount)) __obj.updateDynamic("CoreCount")(CoreCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ThreadsPerCore)) __obj.updateDynamic("ThreadsPerCore")(ThreadsPerCore.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CpuOptionsRequest]
   }
+  @scala.inline
+  implicit class CpuOptionsRequestOps[Self <: CpuOptionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoreCount(value: Integer): Self = this.set("CoreCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoreCount: Self = this.set("CoreCount", js.undefined)
+    @scala.inline
+    def setThreadsPerCore(value: Integer): Self = this.set("ThreadsPerCore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreadsPerCore: Self = this.set("ThreadsPerCore", js.undefined)
+  }
+  
 }
 

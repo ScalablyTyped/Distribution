@@ -91,6 +91,7 @@ trait appFrameworkStatic extends js.Object {
     * @param {Array} arguments
     */
   def asap(callback: js.Function): Unit = js.native
+  def asap(callback: js.Function, context: js.UndefOr[scala.Nothing], args: js.Array[_]): Unit = js.native
   def asap(callback: js.Function, context: js.Any): Unit = js.native
   def asap(callback: js.Function, context: js.Any, args: js.Array[_]): Unit = js.native
   /* The following are for events on objects */
@@ -116,6 +117,7 @@ trait appFrameworkStatic extends js.Object {
     * @title $.cleanUpContent(node,itself,kill)
     */
   def cleanUpContent(node: HTMLElement): Unit = js.native
+  def cleanUpContent(node: HTMLElement, itself: js.UndefOr[scala.Nothing], kill: Boolean): Unit = js.native
   def cleanUpContent(node: HTMLElement, itself: Boolean): Unit = js.native
   def cleanUpContent(node: HTMLElement, itself: Boolean, kill: Boolean): Unit = js.native
   /**

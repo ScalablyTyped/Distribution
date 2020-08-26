@@ -12,7 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/row-(document-template) relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/row-document-template relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TableRow")
 @js.native
@@ -29,7 +29,7 @@ class TableRow protected () extends Element {
   var model_FTableRow: IModel = js.native
   def cells: IList[TableCell] = js.native
   def conditionSettings: ConditionSettings = js.native
-  def conditionSettings(newValue: ConditionSettings): js.Any = js.native
+  def conditionSettings_=(newValue: ConditionSettings): Unit = js.native
   def containerAsTable: Table = js.native
 }
 

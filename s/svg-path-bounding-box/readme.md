@@ -12,7 +12,7 @@ SVG path bounding box calculator
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 348416 |
+| # downloads        | 353101 |
 | # stars            | 1 |
 
 ## Links

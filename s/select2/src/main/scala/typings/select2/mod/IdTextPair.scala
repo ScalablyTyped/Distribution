@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdTextPair extends js.Object {
-  var element: js.UndefOr[scala.Nothing] = js.undefined
-  var id: String
-  var loading: js.UndefOr[scala.Nothing] = js.undefined
-  var text: String
+  var element: js.UndefOr[scala.Nothing] = js.native
+  var id: String = js.native
+  var loading: js.UndefOr[scala.Nothing] = js.native
+  var text: String = js.native
 }
 
 object IdTextPair {
@@ -17,5 +18,22 @@ object IdTextPair {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdTextPair]
   }
+  @scala.inline
+  implicit class IdTextPairOps[Self <: IdTextPair] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+  }
+  
 }
 

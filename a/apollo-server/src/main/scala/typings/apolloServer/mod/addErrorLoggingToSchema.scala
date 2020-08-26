@@ -1,7 +1,7 @@
 package typings.apolloServer.mod
 
 import typings.graphql.mod.GraphQLSchema
-import typings.graphqlTools.interfacesMod.ILogger
+import typings.graphqlToolsSchema.typesMod.ILogger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-server", "addErrorLoggingToSchema")
 @js.native
 object addErrorLoggingToSchema extends js.Object {
-  def apply(schema: GraphQLSchema, logger: ILogger): Unit = js.native
+  def apply(schema: GraphQLSchema): GraphQLSchema = js.native
+  def apply(schema: GraphQLSchema, logger: ILogger): GraphQLSchema = js.native
 }
 

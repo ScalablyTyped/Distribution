@@ -22,89 +22,148 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateOptions extends js.Object {
   // Rendering options
-  var base: js.UndefOr[String] = js.undefined
+  var base: js.UndefOr[String] = js.native
   // Page options
-  var border: js.UndefOr[String | Bottom] = js.undefined
+  var border: js.UndefOr[String | Bottom] = js.native
   // To run Node application as Windows service
-  var childProcessOptions: js.UndefOr[Detached] = js.undefined
+  var childProcessOptions: js.UndefOr[Detached] = js.native
   // Export options
-  var directory: js.UndefOr[String] = js.undefined
-  var footer: js.UndefOr[Height] = js.undefined
-  var format: js.UndefOr[A3 | A4 | A5 | Legal | Letter | Tabloid] = js.undefined
-  var header: js.UndefOr[Contents] = js.undefined
+  var directory: js.UndefOr[String] = js.native
+  var footer: js.UndefOr[Height] = js.native
+  var format: js.UndefOr[A3 | A4 | A5 | Legal | Letter | Tabloid] = js.native
+  var header: js.UndefOr[Contents] = js.native
   // Papersize Options: http://phantomjs.org/api/webpage/property/paper-size.html
-  var height: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[String] = js.native
   // HTTP Cookies that are used for requests
-  var httpCookies: js.UndefOr[js.Array[Domain]] = js.undefined
+  var httpCookies: js.UndefOr[js.Array[Domain]] = js.native
   // HTTP Headers that are used for requests
-  var httpHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
-  var orientation: js.UndefOr[portrait | landscape] = js.undefined
-  var paginationOffset: js.UndefOr[Double] = js.undefined
-  var phantomArgs: js.UndefOr[js.Array[String]] = js.undefined
+  var httpHeaders: js.UndefOr[StringDictionary[String]] = js.native
+  var orientation: js.UndefOr[portrait | landscape] = js.native
+  var paginationOffset: js.UndefOr[Double] = js.native
+  var phantomArgs: js.UndefOr[js.Array[String]] = js.native
   // Script options
-  var phantomPath: js.UndefOr[String] = js.undefined
-  var quality: js.UndefOr[String] = js.undefined
+  var phantomPath: js.UndefOr[String] = js.native
+  var quality: js.UndefOr[String] = js.native
   // Time we should wait after window load
-  var renderDelay: js.UndefOr[manual | Double] = js.undefined
-  var script: js.UndefOr[String] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  var renderDelay: js.UndefOr[manual | Double] = js.native
+  var script: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[Double] = js.native
   // File options
-  var `type`: js.UndefOr[png | jpeg | pdf] = js.undefined
-  var width: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[png | jpeg | pdf] = js.native
+  var width: js.UndefOr[String] = js.native
   // Zooming option, can be used to scale images if `options.type` is not pdf
-  var zoomFactor: js.UndefOr[String] = js.undefined
+  var zoomFactor: js.UndefOr[String] = js.native
 }
 
 object CreateOptions {
   @scala.inline
-  def apply(
-    base: String = null,
-    border: String | Bottom = null,
-    childProcessOptions: Detached = null,
-    directory: String = null,
-    footer: Height = null,
-    format: A3 | A4 | A5 | Legal | Letter | Tabloid = null,
-    header: Contents = null,
-    height: String = null,
-    httpCookies: js.Array[Domain] = null,
-    httpHeaders: StringDictionary[String] = null,
-    orientation: portrait | landscape = null,
-    paginationOffset: js.UndefOr[Double] = js.undefined,
-    phantomArgs: js.Array[String] = null,
-    phantomPath: String = null,
-    quality: String = null,
-    renderDelay: manual | Double = null,
-    script: String = null,
-    timeout: js.UndefOr[Double] = js.undefined,
-    `type`: png | jpeg | pdf = null,
-    width: String = null,
-    zoomFactor: String = null
-  ): CreateOptions = {
+  def apply(): CreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (childProcessOptions != null) __obj.updateDynamic("childProcessOptions")(childProcessOptions.asInstanceOf[js.Any])
-    if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (httpCookies != null) __obj.updateDynamic("httpCookies")(httpCookies.asInstanceOf[js.Any])
-    if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginationOffset)) __obj.updateDynamic("paginationOffset")(paginationOffset.get.asInstanceOf[js.Any])
-    if (phantomArgs != null) __obj.updateDynamic("phantomArgs")(phantomArgs.asInstanceOf[js.Any])
-    if (phantomPath != null) __obj.updateDynamic("phantomPath")(phantomPath.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (renderDelay != null) __obj.updateDynamic("renderDelay")(renderDelay.asInstanceOf[js.Any])
-    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOptions]
   }
+  @scala.inline
+  implicit class CreateOptionsOps[Self <: CreateOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBase(value: String): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase: Self = this.set("base", js.undefined)
+    @scala.inline
+    def setBorder(value: String | Bottom): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setChildProcessOptions(value: Detached): Self = this.set("childProcessOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildProcessOptions: Self = this.set("childProcessOptions", js.undefined)
+    @scala.inline
+    def setDirectory(value: String): Self = this.set("directory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectory: Self = this.set("directory", js.undefined)
+    @scala.inline
+    def setFooter(value: Height): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setFormat(value: A3 | A4 | A5 | Legal | Letter | Tabloid): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setHeader(value: Contents): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHttpCookiesVarargs(value: Domain*): Self = this.set("httpCookies", js.Array(value :_*))
+    @scala.inline
+    def setHttpCookies(value: js.Array[Domain]): Self = this.set("httpCookies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpCookies: Self = this.set("httpCookies", js.undefined)
+    @scala.inline
+    def setHttpHeaders(value: StringDictionary[String]): Self = this.set("httpHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpHeaders: Self = this.set("httpHeaders", js.undefined)
+    @scala.inline
+    def setOrientation(value: portrait | landscape): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setPaginationOffset(value: Double): Self = this.set("paginationOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationOffset: Self = this.set("paginationOffset", js.undefined)
+    @scala.inline
+    def setPhantomArgsVarargs(value: String*): Self = this.set("phantomArgs", js.Array(value :_*))
+    @scala.inline
+    def setPhantomArgs(value: js.Array[String]): Self = this.set("phantomArgs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhantomArgs: Self = this.set("phantomArgs", js.undefined)
+    @scala.inline
+    def setPhantomPath(value: String): Self = this.set("phantomPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhantomPath: Self = this.set("phantomPath", js.undefined)
+    @scala.inline
+    def setQuality(value: String): Self = this.set("quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuality: Self = this.set("quality", js.undefined)
+    @scala.inline
+    def setRenderDelay(value: manual | Double): Self = this.set("renderDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderDelay: Self = this.set("renderDelay", js.undefined)
+    @scala.inline
+    def setScript(value: String): Self = this.set("script", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScript: Self = this.set("script", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setType(value: png | jpeg | pdf): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setZoomFactor(value: String): Self = this.set("zoomFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomFactor: Self = this.set("zoomFactor", js.undefined)
+  }
+  
 }
 

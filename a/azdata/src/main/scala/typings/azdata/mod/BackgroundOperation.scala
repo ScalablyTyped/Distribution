@@ -21,6 +21,11 @@ trait BackgroundOperation extends js.Object {
     * Event raised when operation is canceled in UI
     */
   def onCanceled(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
+  def onCanceled(
+    listener: js.Function1[/* e */ Unit, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onCanceled(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
   def onCanceled(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   /**

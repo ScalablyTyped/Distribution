@@ -18,11 +18,30 @@ trait DashConfigurationForPut extends js.Object {
 
 object DashConfigurationForPut {
   @scala.inline
-  def apply(MpdLocation: string = null, OriginManifestType: OriginManifestType = null): DashConfigurationForPut = {
+  def apply(): DashConfigurationForPut = {
     val __obj = js.Dynamic.literal()
-    if (MpdLocation != null) __obj.updateDynamic("MpdLocation")(MpdLocation.asInstanceOf[js.Any])
-    if (OriginManifestType != null) __obj.updateDynamic("OriginManifestType")(OriginManifestType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashConfigurationForPut]
   }
+  @scala.inline
+  implicit class DashConfigurationForPutOps[Self <: DashConfigurationForPut] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMpdLocation(value: string): Self = this.set("MpdLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMpdLocation: Self = this.set("MpdLocation", js.undefined)
+    @scala.inline
+    def setOriginManifestType(value: OriginManifestType): Self = this.set("OriginManifestType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginManifestType: Self = this.set("OriginManifestType", js.undefined)
+  }
+  
 }
 

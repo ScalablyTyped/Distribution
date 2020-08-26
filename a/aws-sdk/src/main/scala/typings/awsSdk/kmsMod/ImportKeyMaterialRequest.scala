@@ -30,17 +30,36 @@ trait ImportKeyMaterialRequest extends js.Object {
 
 object ImportKeyMaterialRequest {
   @scala.inline
-  def apply(
-    EncryptedKeyMaterial: CiphertextType,
-    ImportToken: CiphertextType,
-    KeyId: KeyIdType,
-    ExpirationModel: ExpirationModelType = null,
-    ValidTo: DateType = null
-  ): ImportKeyMaterialRequest = {
+  def apply(EncryptedKeyMaterial: CiphertextType, ImportToken: CiphertextType, KeyId: KeyIdType): ImportKeyMaterialRequest = {
     val __obj = js.Dynamic.literal(EncryptedKeyMaterial = EncryptedKeyMaterial.asInstanceOf[js.Any], ImportToken = ImportToken.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
-    if (ExpirationModel != null) __obj.updateDynamic("ExpirationModel")(ExpirationModel.asInstanceOf[js.Any])
-    if (ValidTo != null) __obj.updateDynamic("ValidTo")(ValidTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportKeyMaterialRequest]
   }
+  @scala.inline
+  implicit class ImportKeyMaterialRequestOps[Self <: ImportKeyMaterialRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptedKeyMaterial(value: CiphertextType): Self = this.set("EncryptedKeyMaterial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImportToken(value: CiphertextType): Self = this.set("ImportToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpirationModel(value: ExpirationModelType): Self = this.set("ExpirationModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationModel: Self = this.set("ExpirationModel", js.undefined)
+    @scala.inline
+    def setValidTo(value: DateType): Self = this.set("ValidTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidTo: Self = this.set("ValidTo", js.undefined)
+  }
+  
 }
 

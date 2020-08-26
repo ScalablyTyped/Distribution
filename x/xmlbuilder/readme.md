@@ -1,7 +1,7 @@
 
 # Scala.js typings for xmlbuilder
 
-Typings are for version 14.0.0
+Typings are for version 15.1.1
 
 ## Library description:
 An XML builder for node.js
@@ -11,8 +11,8 @@ An XML builder for node.js
 | Full name          | xmlbuilder |
 | Keywords           | xml, xmlbuilder |
 | # releases         | 14 |
-| # dependents       | 777 |
-| # downloads        | 332420883 |
+| # dependents       | 786 |
+| # downloads        | 340281079 |
 | # stars            | 29 |
 
 ## Links

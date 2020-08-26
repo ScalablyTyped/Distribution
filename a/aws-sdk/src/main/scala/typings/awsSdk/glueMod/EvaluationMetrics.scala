@@ -18,10 +18,28 @@ trait EvaluationMetrics extends js.Object {
 
 object EvaluationMetrics {
   @scala.inline
-  def apply(TransformType: TransformType, FindMatchesMetrics: FindMatchesMetrics = null): EvaluationMetrics = {
+  def apply(TransformType: TransformType): EvaluationMetrics = {
     val __obj = js.Dynamic.literal(TransformType = TransformType.asInstanceOf[js.Any])
-    if (FindMatchesMetrics != null) __obj.updateDynamic("FindMatchesMetrics")(FindMatchesMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationMetrics]
   }
+  @scala.inline
+  implicit class EvaluationMetricsOps[Self <: EvaluationMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTransformType(value: TransformType): Self = this.set("TransformType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFindMatchesMetrics(value: FindMatchesMetrics): Self = this.set("FindMatchesMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindMatchesMetrics: Self = this.set("FindMatchesMetrics", js.undefined)
+  }
+  
 }
 

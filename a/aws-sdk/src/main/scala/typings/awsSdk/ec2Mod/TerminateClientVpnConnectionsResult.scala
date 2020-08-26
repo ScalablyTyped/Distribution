@@ -22,16 +22,36 @@ trait TerminateClientVpnConnectionsResult extends js.Object {
 
 object TerminateClientVpnConnectionsResult {
   @scala.inline
-  def apply(
-    ClientVpnEndpointId: String = null,
-    ConnectionStatuses: TerminateConnectionStatusSet = null,
-    Username: String = null
-  ): TerminateClientVpnConnectionsResult = {
+  def apply(): TerminateClientVpnConnectionsResult = {
     val __obj = js.Dynamic.literal()
-    if (ClientVpnEndpointId != null) __obj.updateDynamic("ClientVpnEndpointId")(ClientVpnEndpointId.asInstanceOf[js.Any])
-    if (ConnectionStatuses != null) __obj.updateDynamic("ConnectionStatuses")(ConnectionStatuses.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminateClientVpnConnectionsResult]
   }
+  @scala.inline
+  implicit class TerminateClientVpnConnectionsResultOps[Self <: TerminateClientVpnConnectionsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientVpnEndpointId(value: String): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientVpnEndpointId: Self = this.set("ClientVpnEndpointId", js.undefined)
+    @scala.inline
+    def setConnectionStatusesVarargs(value: TerminateConnectionStatus*): Self = this.set("ConnectionStatuses", js.Array(value :_*))
+    @scala.inline
+    def setConnectionStatuses(value: TerminateConnectionStatusSet): Self = this.set("ConnectionStatuses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionStatuses: Self = this.set("ConnectionStatuses", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

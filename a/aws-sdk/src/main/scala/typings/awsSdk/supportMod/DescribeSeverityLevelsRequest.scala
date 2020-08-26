@@ -14,10 +14,26 @@ trait DescribeSeverityLevelsRequest extends js.Object {
 
 object DescribeSeverityLevelsRequest {
   @scala.inline
-  def apply(language: Language = null): DescribeSeverityLevelsRequest = {
+  def apply(): DescribeSeverityLevelsRequest = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSeverityLevelsRequest]
   }
+  @scala.inline
+  implicit class DescribeSeverityLevelsRequestOps[Self <: DescribeSeverityLevelsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguage(value: Language): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+  }
+  
 }
 

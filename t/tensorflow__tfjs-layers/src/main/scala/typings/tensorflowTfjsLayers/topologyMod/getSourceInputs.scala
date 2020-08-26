@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object getSourceInputs extends js.Object {
   def apply(tensor: SymbolicTensor): js.Array[SymbolicTensor] = js.native
+  def apply(tensor: SymbolicTensor, layer: js.UndefOr[scala.Nothing], nodeIndex: Double): js.Array[SymbolicTensor] = js.native
   def apply(tensor: SymbolicTensor, layer: Layer): js.Array[SymbolicTensor] = js.native
   def apply(tensor: SymbolicTensor, layer: Layer, nodeIndex: Double): js.Array[SymbolicTensor] = js.native
 }

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/collections/lib/linkedlist", "LinkedList.from")
+@JSImport("@lumino/collections/types/linkedlist", "LinkedList.from")
 @js.native
 object from extends js.Object {
   /**

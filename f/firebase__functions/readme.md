@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__functions
 
-Typings are for version 0.4.47
+Typings are for version 0.4.49
 
 ## Library description:
 This is the Firebase Functions component of the Firebase JS SDK.
@@ -10,9 +10,9 @@ This is the Firebase Functions component of the Firebase JS SDK.
 | ------------------ | :-------------: |
 | Full name          | @firebase/functions |
 | Keywords           | - |
-| # releases         | 879 |
+| # releases         | 899 |
 | # dependents       | 10 |
-| # downloads        | 16239099 |
+| # downloads        | 16591947 |
 | # stars            | 0 |
 
 ## Links

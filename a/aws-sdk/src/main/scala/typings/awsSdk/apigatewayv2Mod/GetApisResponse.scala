@@ -18,11 +18,32 @@ trait GetApisResponse extends js.Object {
 
 object GetApisResponse {
   @scala.inline
-  def apply(Items: listOfApi = null, NextToken: NextToken = null): GetApisResponse = {
+  def apply(): GetApisResponse = {
     val __obj = js.Dynamic.literal()
-    if (Items != null) __obj.updateDynamic("Items")(Items.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApisResponse]
   }
+  @scala.inline
+  implicit class GetApisResponseOps[Self <: GetApisResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: Api*): Self = this.set("Items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: listOfApi): Self = this.set("Items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("Items", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

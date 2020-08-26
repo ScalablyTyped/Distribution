@@ -12,7 +12,7 @@ A minimal module that adds the ability to dynamically change the locale
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 16 |
-| # downloads        | 992268 |
+| # downloads        | 994182 |
 | # stars            | 1 |
 
 ## Links

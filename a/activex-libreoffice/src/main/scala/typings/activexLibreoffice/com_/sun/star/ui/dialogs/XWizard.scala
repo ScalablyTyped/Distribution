@@ -42,12 +42,13 @@ import scala.scalajs.js.annotation._
   * @see XWizardPage
   * @since OOo 3.3
   */
+@js.native
 trait XWizard extends XExecutableDialog {
   /** provides access to the current page of the wizard */
-  val CurrentPage: XWizardPage
-  var DialogWindow: XWindow
+  val CurrentPage: XWizardPage = js.native
+  var DialogWindow: XWindow = js.native
   /** is the help URL of the wizard's main window. */
-  var HelpURL: String
+  var HelpURL: String = js.native
   /**
     * activates a path
     *
@@ -65,14 +66,14 @@ trait XWizard extends XExecutableDialog {
     * @throws com::sun::star::container::NoSuchElementException if there is no path with the given index
     * @throws com::sun::star::util::InvalidStateException if the path cannot be activated in the current state of the wizard.
     */
-  def activatePath(PathIndex: Double, Final: Boolean): Unit
+  def activatePath(PathIndex: Double, Final: Boolean): Unit = js.native
   /**
     * advances to the given page, if possible.
     *
     * Calling this method is equivalent to the user repeatedly pressing the **Next** button, until the given page is reached. Consequently, the method will
     * fail if one of the intermediate pages does not allow advancing to the next page.
     */
-  def advanceTo(PageId: Double): Boolean
+  def advanceTo(PageId: Double): Boolean = js.native
   /**
     * enables or disables a certain button in the wizard
     *
@@ -81,7 +82,7 @@ trait XWizard extends XExecutableDialog {
     * @param WizardButton denotes the button to enable or disable, as one of the {@link WizardButton} constants. Must not be {@link WizardButton.NONE} .
     * @param Enable specifies whether the button should be enabled ( `TRUE` ) or disabled ( `FALSE` )
     */
-  def enableButton(WizardButton: Double, Enable: Boolean): Unit
+  def enableButton(WizardButton: Double, Enable: Boolean): Unit = js.native
   /**
     * enables or disables the given page
     *
@@ -94,15 +95,15 @@ trait XWizard extends XExecutableDialog {
     * @throws com::sun::star::container::NoSuchElementException if there is no page with the given ID
     * @throws com::sun::star::util::InvalidStateException if the page shall be disabled, but is active currently.
     */
-  def enablePage(PageID: Double, Enable: Boolean): Unit
+  def enablePage(PageID: Double, Enable: Boolean): Unit = js.native
   /** provides access to the current page of the wizard */
-  def getCurrentPage(): XWizardPage
+  def getCurrentPage(): XWizardPage = js.native
   /**
     * goes back to the given page, if possible.
     *
     * Calling this method is equivalent to the user repeatedly pressing the **Back** button, until the given page is reached.
     */
-  def goBackTo(PageId: Double): Boolean
+  def goBackTo(PageId: Double): Boolean = js.native
   /**
     * sets a button in the wizard as default button
     *
@@ -112,20 +113,20 @@ trait XWizard extends XExecutableDialog {
     * You can use this method, for instance, to make the **Next** button the default button on all pages except the last one, where **Finish** should be
     * defaulted.
     */
-  def setDefaultButton(WizardButton: Double): Unit
+  def setDefaultButton(WizardButton: Double): Unit = js.native
   /**
     * travels to the next page, if possible
     *
     * Calling this method is equivalent to the user pressing the **Next** button in the wizard. Consequently, the method will fail if in the current state
     * of the wizard, it is not allowed to advance to a next page.
     */
-  def travelNext(): Boolean
+  def travelNext(): Boolean = js.native
   /**
     * travels to the next page, if possible
     *
     * Calling this method is equivalent to the user pressing the **Back** button in the wizard.
     */
-  def travelPrevious(): Boolean
+  def travelPrevious(): Boolean = js.native
   /**
     * updates the wizard elements which are related to traveling.
     *
@@ -133,7 +134,7 @@ trait XWizard extends XExecutableDialog {
     *
     * You usually call this method from within a wizard page whose state changed in a way that it affects the user's ability to reach other pages.
     */
-  def updateTravelUI(): Unit
+  def updateTravelUI(): Unit = js.native
 }
 
 object XWizard {
@@ -161,5 +162,44 @@ object XWizard {
     val __obj = js.Dynamic.literal(CurrentPage = CurrentPage.asInstanceOf[js.Any], DialogWindow = DialogWindow.asInstanceOf[js.Any], HelpURL = HelpURL.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), activatePath = js.Any.fromFunction2(activatePath), advanceTo = js.Any.fromFunction1(advanceTo), enableButton = js.Any.fromFunction2(enableButton), enablePage = js.Any.fromFunction2(enablePage), execute = js.Any.fromFunction0(execute), getCurrentPage = js.Any.fromFunction0(getCurrentPage), goBackTo = js.Any.fromFunction1(goBackTo), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDefaultButton = js.Any.fromFunction1(setDefaultButton), setTitle = js.Any.fromFunction1(setTitle), travelNext = js.Any.fromFunction0(travelNext), travelPrevious = js.Any.fromFunction0(travelPrevious), updateTravelUI = js.Any.fromFunction0(updateTravelUI))
     __obj.asInstanceOf[XWizard]
   }
+  @scala.inline
+  implicit class XWizardOps[Self <: XWizard] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentPage(value: XWizardPage): Self = this.set("CurrentPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDialogWindow(value: XWindow): Self = this.set("DialogWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivatePath(value: (Double, Boolean) => Unit): Self = this.set("activatePath", js.Any.fromFunction2(value))
+    @scala.inline
+    def setAdvanceTo(value: Double => Boolean): Self = this.set("advanceTo", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEnableButton(value: (Double, Boolean) => Unit): Self = this.set("enableButton", js.Any.fromFunction2(value))
+    @scala.inline
+    def setEnablePage(value: (Double, Boolean) => Unit): Self = this.set("enablePage", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetCurrentPage(value: () => XWizardPage): Self = this.set("getCurrentPage", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGoBackTo(value: Double => Boolean): Self = this.set("goBackTo", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetDefaultButton(value: Double => Unit): Self = this.set("setDefaultButton", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTravelNext(value: () => Boolean): Self = this.set("travelNext", js.Any.fromFunction0(value))
+    @scala.inline
+    def setTravelPrevious(value: () => Boolean): Self = this.set("travelPrevious", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUpdateTravelUI(value: () => Unit): Self = this.set("updateTravelUI", js.Any.fromFunction0(value))
+  }
+  
 }
 

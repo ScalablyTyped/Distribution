@@ -66,7 +66,7 @@ trait View
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#input)
     */
-  val input: Input = js.native
+  val input: inputInput = js.native
   /**
     * Indication whether the view is being interacted with (for example when panning or by an interactive tool).
     *

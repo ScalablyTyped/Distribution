@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 class Class () extends MurmurHash3 {
   def this(text: String) = this()
+  def this(text: js.UndefOr[scala.Nothing], seed: Double) = this()
   def this(text: String, seed: Double) = this()
 }
 

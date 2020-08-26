@@ -11,8 +11,8 @@ The lodash method `_.zipObject` exported as a module.
 | Full name          | lodash.zipobject |
 | Keywords           | lodash-modularized, zipobject |
 | # releases         | 0 |
-| # dependents       | 80 |
-| # downloads        | 1856505 |
+| # dependents       | 82 |
+| # downloads        | 1802510 |
 | # stars            | 0 |
 
 ## Links

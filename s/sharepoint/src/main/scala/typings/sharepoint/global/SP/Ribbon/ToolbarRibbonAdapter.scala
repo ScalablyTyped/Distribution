@@ -7,24 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SP.Ribbon.ToolbarRibbonAdapter")
 @js.native
-class ToolbarRibbonAdapter () extends PageComponent {
-  /* CompleteClass */
-  override def canHandleCommand(commandId: String): Boolean = js.native
-  /* CompleteClass */
-  override def getFocusedCommands(): js.Array[String] = js.native
-  /* CompleteClass */
-  override def getGlobalCommands(): js.Array[String] = js.native
-  /* CompleteClass */
-  override def getId(): String = js.native
-  /* CompleteClass */
-  override def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean = js.native
-  /* CompleteClass */
-  override def init(): Unit = js.native
-  /* CompleteClass */
-  override def isFocusable(): Boolean = js.native
-  /* CompleteClass */
-  override def receiveFocus(): Boolean = js.native
-  /* CompleteClass */
-  override def yieldFocus(): Boolean = js.native
-}
+class ToolbarRibbonAdapter () extends PageComponent
 

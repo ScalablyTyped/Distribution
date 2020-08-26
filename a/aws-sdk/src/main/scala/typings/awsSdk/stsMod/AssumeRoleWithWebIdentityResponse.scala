@@ -34,22 +34,46 @@ trait AssumeRoleWithWebIdentityResponse extends js.Object {
 
 object AssumeRoleWithWebIdentityResponse {
   @scala.inline
-  def apply(
-    AssumedRoleUser: AssumedRoleUser = null,
-    Audience: Audience = null,
-    Credentials: Credentials = null,
-    PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined,
-    Provider: Issuer = null,
-    SubjectFromWebIdentityToken: webIdentitySubjectType = null
-  ): AssumeRoleWithWebIdentityResponse = {
+  def apply(): AssumeRoleWithWebIdentityResponse = {
     val __obj = js.Dynamic.literal()
-    if (AssumedRoleUser != null) __obj.updateDynamic("AssumedRoleUser")(AssumedRoleUser.asInstanceOf[js.Any])
-    if (Audience != null) __obj.updateDynamic("Audience")(Audience.asInstanceOf[js.Any])
-    if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials.asInstanceOf[js.Any])
-    if (!js.isUndefined(PackedPolicySize)) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize.get.asInstanceOf[js.Any])
-    if (Provider != null) __obj.updateDynamic("Provider")(Provider.asInstanceOf[js.Any])
-    if (SubjectFromWebIdentityToken != null) __obj.updateDynamic("SubjectFromWebIdentityToken")(SubjectFromWebIdentityToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumeRoleWithWebIdentityResponse]
   }
+  @scala.inline
+  implicit class AssumeRoleWithWebIdentityResponseOps[Self <: AssumeRoleWithWebIdentityResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssumedRoleUser(value: AssumedRoleUser): Self = this.set("AssumedRoleUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssumedRoleUser: Self = this.set("AssumedRoleUser", js.undefined)
+    @scala.inline
+    def setAudience(value: Audience): Self = this.set("Audience", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudience: Self = this.set("Audience", js.undefined)
+    @scala.inline
+    def setCredentials(value: Credentials): Self = this.set("Credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("Credentials", js.undefined)
+    @scala.inline
+    def setPackedPolicySize(value: nonNegativeIntegerType): Self = this.set("PackedPolicySize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackedPolicySize: Self = this.set("PackedPolicySize", js.undefined)
+    @scala.inline
+    def setProvider(value: Issuer): Self = this.set("Provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("Provider", js.undefined)
+    @scala.inline
+    def setSubjectFromWebIdentityToken(value: webIdentitySubjectType): Self = this.set("SubjectFromWebIdentityToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubjectFromWebIdentityToken: Self = this.set("SubjectFromWebIdentityToken", js.undefined)
+  }
+  
 }
 

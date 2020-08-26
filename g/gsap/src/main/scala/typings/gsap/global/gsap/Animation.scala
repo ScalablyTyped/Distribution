@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 class Animation ()
   extends typings.gsap.gsap.Animation {
   def this(duration: Double) = this()
+  def this(duration: js.UndefOr[scala.Nothing], vars: js.Any) = this()
   def this(duration: Double, vars: js.Any) = this()
 }
 

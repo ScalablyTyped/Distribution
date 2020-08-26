@@ -50,30 +50,62 @@ trait DomainController extends js.Object {
 
 object DomainController {
   @scala.inline
-  def apply(
-    AvailabilityZone: AvailabilityZone = null,
-    DirectoryId: DirectoryId = null,
-    DnsIpAddr: IpAddr = null,
-    DomainControllerId: DomainControllerId = null,
-    LaunchTime: LaunchTime = null,
-    Status: DomainControllerStatus = null,
-    StatusLastUpdatedDateTime: LastUpdatedDateTime = null,
-    StatusReason: DomainControllerStatusReason = null,
-    SubnetId: SubnetId = null,
-    VpcId: VpcId = null
-  ): DomainController = {
+  def apply(): DomainController = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId.asInstanceOf[js.Any])
-    if (DnsIpAddr != null) __obj.updateDynamic("DnsIpAddr")(DnsIpAddr.asInstanceOf[js.Any])
-    if (DomainControllerId != null) __obj.updateDynamic("DomainControllerId")(DomainControllerId.asInstanceOf[js.Any])
-    if (LaunchTime != null) __obj.updateDynamic("LaunchTime")(LaunchTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusLastUpdatedDateTime != null) __obj.updateDynamic("StatusLastUpdatedDateTime")(StatusLastUpdatedDateTime.asInstanceOf[js.Any])
-    if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainController]
   }
+  @scala.inline
+  implicit class DomainControllerOps[Self <: DomainController] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: AvailabilityZone): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    @scala.inline
+    def setDnsIpAddr(value: IpAddr): Self = this.set("DnsIpAddr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsIpAddr: Self = this.set("DnsIpAddr", js.undefined)
+    @scala.inline
+    def setDomainControllerId(value: DomainControllerId): Self = this.set("DomainControllerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainControllerId: Self = this.set("DomainControllerId", js.undefined)
+    @scala.inline
+    def setLaunchTime(value: LaunchTime): Self = this.set("LaunchTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTime: Self = this.set("LaunchTime", js.undefined)
+    @scala.inline
+    def setStatus(value: DomainControllerStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusLastUpdatedDateTime(value: LastUpdatedDateTime): Self = this.set("StatusLastUpdatedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusLastUpdatedDateTime: Self = this.set("StatusLastUpdatedDateTime", js.undefined)
+    @scala.inline
+    def setStatusReason(value: DomainControllerStatusReason): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+    @scala.inline
+    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

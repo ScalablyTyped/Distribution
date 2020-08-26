@@ -17,7 +17,7 @@ trait TypeofCommand
      with Instantiable4[
       /* name */ String, 
       /* args */ js.Array[ValueType], 
-      /* opts */ CommandOptions, 
+      js.UndefOr[/* opts */ CommandOptions], 
       /* callback */ js.Function2[/* err */ Null, /* result */ js.Any, Unit], 
       Command
     ] {

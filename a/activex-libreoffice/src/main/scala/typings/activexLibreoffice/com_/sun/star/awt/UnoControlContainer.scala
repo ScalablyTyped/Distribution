@@ -14,6 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** specifies an abstract control which contains other controls. */
+@js.native
 trait UnoControlContainer
   extends XControl
      with XWindow

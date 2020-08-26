@@ -1,6 +1,5 @@
 package typings.graphqlRelay.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.definitionMod.GraphQLFieldConfigMap
 import typings.graphql.definitionMod.GraphQLInputFieldConfigMap
 import typings.graphql.definitionMod.GraphQLResolveInfo
@@ -17,7 +16,7 @@ trait MutationConfig extends js.Object {
   @JSName("mutateAndGetPayload")
   var mutateAndGetPayload_Original: mutationFn = js.native
   var name: String = js.native
-  var outputFields: Thunk[GraphQLFieldConfigMap[_, _, StringDictionary[_]]] = js.native
+  var outputFields: Thunk[GraphQLFieldConfigMap[_, _]] = js.native
   def mutateAndGetPayload(`object`: js.Any, ctx: js.Any, info: GraphQLResolveInfo): js.Promise[_] | js.Any = js.native
 }
 

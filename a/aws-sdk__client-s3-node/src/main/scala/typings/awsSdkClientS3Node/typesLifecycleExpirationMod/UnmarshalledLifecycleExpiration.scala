@@ -5,26 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledLifecycleExpiration extends LifecycleExpiration {
   /**
     * <p>Indicates at what date the object is to be moved or deleted. Should be in GMT ISO 8601 Format.</p>
     */
   @JSName("Date")
-  var Date_UnmarshalledLifecycleExpiration: js.UndefOr[Date] = js.undefined
+  var Date_UnmarshalledLifecycleExpiration: js.UndefOr[Date] = js.native
 }
 
 object UnmarshalledLifecycleExpiration {
   @scala.inline
-  def apply(
-    Date: Date = null,
-    Days: js.UndefOr[Double] = js.undefined,
-    ExpiredObjectDeleteMarker: js.UndefOr[Boolean] = js.undefined
-  ): UnmarshalledLifecycleExpiration = {
+  def apply(): UnmarshalledLifecycleExpiration = {
     val __obj = js.Dynamic.literal()
-    if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
-    if (!js.isUndefined(Days)) __obj.updateDynamic("Days")(Days.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExpiredObjectDeleteMarker)) __obj.updateDynamic("ExpiredObjectDeleteMarker")(ExpiredObjectDeleteMarker.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledLifecycleExpiration]
   }
+  @scala.inline
+  implicit class UnmarshalledLifecycleExpirationOps[Self <: UnmarshalledLifecycleExpiration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: Date): Self = this.set("Date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("Date", js.undefined)
+  }
+  
 }
 

@@ -29,6 +29,7 @@ class ResourceProjectsBrokersInstancesServiceBindings protected () extends js.Ob
     */
   def list(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse] = js.native
   def list(params: ParamsResourceProjectsBrokersInstancesServiceBindingsList): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1ListBindingsResponse] = js.native
   def list(
     params: ParamsResourceProjectsBrokersInstancesServiceBindingsList,

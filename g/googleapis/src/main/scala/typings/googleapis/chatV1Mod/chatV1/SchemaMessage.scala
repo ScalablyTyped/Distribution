@@ -69,34 +69,74 @@ trait SchemaMessage extends js.Object {
 
 object SchemaMessage {
   @scala.inline
-  def apply(
-    actionResponse: SchemaActionResponse = null,
-    annotations: js.Array[SchemaAnnotation] = null,
-    argumentText: String = null,
-    cards: js.Array[SchemaCard] = null,
-    createTime: String = null,
-    fallbackText: String = null,
-    name: String = null,
-    previewText: String = null,
-    sender: SchemaUser = null,
-    space: SchemaSpace = null,
-    text: String = null,
-    thread: SchemaThread = null
-  ): SchemaMessage = {
+  def apply(): SchemaMessage = {
     val __obj = js.Dynamic.literal()
-    if (actionResponse != null) __obj.updateDynamic("actionResponse")(actionResponse.asInstanceOf[js.Any])
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (argumentText != null) __obj.updateDynamic("argumentText")(argumentText.asInstanceOf[js.Any])
-    if (cards != null) __obj.updateDynamic("cards")(cards.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (fallbackText != null) __obj.updateDynamic("fallbackText")(fallbackText.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (previewText != null) __obj.updateDynamic("previewText")(previewText.asInstanceOf[js.Any])
-    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
-    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (thread != null) __obj.updateDynamic("thread")(thread.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMessage]
   }
+  @scala.inline
+  implicit class SchemaMessageOps[Self <: SchemaMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionResponse(value: SchemaActionResponse): Self = this.set("actionResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionResponse: Self = this.set("actionResponse", js.undefined)
+    @scala.inline
+    def setAnnotationsVarargs(value: SchemaAnnotation*): Self = this.set("annotations", js.Array(value :_*))
+    @scala.inline
+    def setAnnotations(value: js.Array[SchemaAnnotation]): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    @scala.inline
+    def setArgumentText(value: String): Self = this.set("argumentText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgumentText: Self = this.set("argumentText", js.undefined)
+    @scala.inline
+    def setCardsVarargs(value: SchemaCard*): Self = this.set("cards", js.Array(value :_*))
+    @scala.inline
+    def setCards(value: js.Array[SchemaCard]): Self = this.set("cards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCards: Self = this.set("cards", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setFallbackText(value: String): Self = this.set("fallbackText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackText: Self = this.set("fallbackText", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPreviewText(value: String): Self = this.set("previewText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewText: Self = this.set("previewText", js.undefined)
+    @scala.inline
+    def setSender(value: SchemaUser): Self = this.set("sender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSender: Self = this.set("sender", js.undefined)
+    @scala.inline
+    def setSpace(value: SchemaSpace): Self = this.set("space", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpace: Self = this.set("space", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setThread(value: SchemaThread): Self = this.set("thread", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThread: Self = this.set("thread", js.undefined)
+  }
+  
 }
 

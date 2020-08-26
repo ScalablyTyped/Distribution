@@ -29,6 +29,7 @@ class ResourceCloudloading protected () extends js.Object {
     */
   def addBook(): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def addBook(callback: BodyResponseCallback[SchemaBooksCloudloadingResource]): Unit = js.native
+  def addBook(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def addBook(params: ParamsResourceCloudloadingAddbook): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def addBook(
     params: ParamsResourceCloudloadingAddbook,
@@ -59,6 +60,7 @@ class ResourceCloudloading protected () extends js.Object {
     */
   def deleteBook(): GaxiosPromise[Unit] = js.native
   def deleteBook(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def deleteBook(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def deleteBook(params: ParamsResourceCloudloadingDeletebook): GaxiosPromise[Unit] = js.native
   def deleteBook(params: ParamsResourceCloudloadingDeletebook, callback: BodyResponseCallback[Unit]): Unit = js.native
   def deleteBook(
@@ -85,6 +87,7 @@ class ResourceCloudloading protected () extends js.Object {
     */
   def updateBook(): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def updateBook(callback: BodyResponseCallback[SchemaBooksCloudloadingResource]): Unit = js.native
+  def updateBook(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def updateBook(params: ParamsResourceCloudloadingUpdatebook): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def updateBook(
     params: ParamsResourceCloudloadingUpdatebook,

@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/tab-page relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/tab-container relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage")
 @js.native
@@ -29,23 +29,19 @@ class TabPage protected () extends Element {
   @JSName("model")
   var model_FTabPage: IModel = js.native
   def caption: Text = js.native
-  def caption(newValue: Text): js.Any = js.native
-  def conditionalVisibilitySettings(): js.Any = js.native
-  def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
-  @JSName("conditionalVisibilitySettings")
-  def conditionalVisibilitySettings_Union: ConditionalVisibilitySettings | Null = js.native
+  def caption_=(newValue: Text): Unit = js.native
+  def conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings_=(newValue: ConditionalVisibilitySettings | Null): Unit = js.native
   def containerAsTabContainer: TabContainer = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def refreshOnShow: Boolean = js.native
-  def refreshOnShow(newValue: Boolean): js.Any = js.native
-  def widget(): js.Any = js.native
-  def widget(newValue: Widget): js.Any = js.native
+  def refreshOnShow_=(newValue: Boolean): Unit = js.native
   /**
     * In version 7.15.0: deleted
     */
-  @JSName("widget")
-  def widget_Union: Widget | Null = js.native
+  def widget: Widget | Null = js.native
+  def widget_=(newValue: Widget | Null): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */

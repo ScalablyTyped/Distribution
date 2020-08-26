@@ -42,26 +42,54 @@ trait Thumbnails extends js.Object {
 
 object Thumbnails {
   @scala.inline
-  def apply(
-    AspectRatio: AspectRatio = null,
-    Format: JpgOrPng = null,
-    Interval: Digits = null,
-    MaxHeight: DigitsOrAuto = null,
-    MaxWidth: DigitsOrAuto = null,
-    PaddingPolicy: PaddingPolicy = null,
-    Resolution: ThumbnailResolution = null,
-    SizingPolicy: SizingPolicy = null
-  ): Thumbnails = {
+  def apply(): Thumbnails = {
     val __obj = js.Dynamic.literal()
-    if (AspectRatio != null) __obj.updateDynamic("AspectRatio")(AspectRatio.asInstanceOf[js.Any])
-    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (Interval != null) __obj.updateDynamic("Interval")(Interval.asInstanceOf[js.Any])
-    if (MaxHeight != null) __obj.updateDynamic("MaxHeight")(MaxHeight.asInstanceOf[js.Any])
-    if (MaxWidth != null) __obj.updateDynamic("MaxWidth")(MaxWidth.asInstanceOf[js.Any])
-    if (PaddingPolicy != null) __obj.updateDynamic("PaddingPolicy")(PaddingPolicy.asInstanceOf[js.Any])
-    if (Resolution != null) __obj.updateDynamic("Resolution")(Resolution.asInstanceOf[js.Any])
-    if (SizingPolicy != null) __obj.updateDynamic("SizingPolicy")(SizingPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Thumbnails]
   }
+  @scala.inline
+  implicit class ThumbnailsOps[Self <: Thumbnails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAspectRatio(value: AspectRatio): Self = this.set("AspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspectRatio: Self = this.set("AspectRatio", js.undefined)
+    @scala.inline
+    def setFormat(value: JpgOrPng): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("Format", js.undefined)
+    @scala.inline
+    def setInterval(value: Digits): Self = this.set("Interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("Interval", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: DigitsOrAuto): Self = this.set("MaxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("MaxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: DigitsOrAuto): Self = this.set("MaxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("MaxWidth", js.undefined)
+    @scala.inline
+    def setPaddingPolicy(value: PaddingPolicy): Self = this.set("PaddingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingPolicy: Self = this.set("PaddingPolicy", js.undefined)
+    @scala.inline
+    def setResolution(value: ThumbnailResolution): Self = this.set("Resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("Resolution", js.undefined)
+    @scala.inline
+    def setSizingPolicy(value: SizingPolicy): Self = this.set("SizingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizingPolicy: Self = this.set("SizingPolicy", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ return whether two buffers are equal
 | Keywords           | buffer, equal |
 | # releases         | 0 |
 | # dependents       | 80 |
-| # downloads        | 83741611 |
+| # downloads        | 85118871 |
 | # stars            | 1 |
 
 ## Links

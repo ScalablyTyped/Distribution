@@ -10,9 +10,9 @@ Electron helper to prompt for a value via input or select
 | ------------------ | :-------------: |
 | Full name          | electron-prompt |
 | Keywords           | electron, prompt, string |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 7 |
-| # downloads        | 35860 |
+| # downloads        | 36800 |
 | # stars            | 0 |
 
 ## Links

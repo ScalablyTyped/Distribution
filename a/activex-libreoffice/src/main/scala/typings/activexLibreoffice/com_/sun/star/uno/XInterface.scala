@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   * The UNO object does not export the state of the reference count ( {@link acquire()} and {@link release()} do not have return values). In general, also
   * the UNO object itself should not make any assumption on the concrete value of the reference count (except on the transition from one to zero ).
   */
+@js.native
 trait XInterface extends js.Object {
   /**
     * increases the reference counter by one.
@@ -30,7 +31,7 @@ trait XInterface extends js.Object {
     *
     * Every call to acquire must be followed by a corresponding call to release some time later, which may eventually lead to the destruction of the object.
     */
-  def acquire(): Unit
+  def acquire(): Unit = js.native
   /**
     * queries for a new interface to an existing UNO object.
     *
@@ -61,7 +62,7 @@ trait XInterface extends js.Object {
     * @param aType a UNO interface type, for which an object reference shall be obtained.
     * @returns an interface reference in case the requested interface is supported by the object, a void any otherwise.
     */
-  def queryInterface(aType: `type`): js.Any
+  def queryInterface(aType: `type`): js.Any = js.native
   /**
     * decreases the reference counter by one.
     *
@@ -69,7 +70,7 @@ trait XInterface extends js.Object {
     *
     * Calling {@link release()} on the object is often called releasing or clearing the reference to an object.
     */
-  def release(): Unit
+  def release(): Unit = js.native
 }
 
 object XInterface {
@@ -78,5 +79,24 @@ object XInterface {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XInterface]
   }
+  @scala.inline
+  implicit class XInterfaceOps[Self <: XInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcquire(value: () => Unit): Self = this.set("acquire", js.Any.fromFunction0(value))
+    @scala.inline
+    def setQueryInterface(value: `type` => js.Any): Self = this.set("queryInterface", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRelease(value: () => Unit): Self = this.set("release", js.Any.fromFunction0(value))
+  }
+  
 }
 

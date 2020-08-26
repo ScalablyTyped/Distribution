@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.ImageDisplayProperties")
 @js.native
 abstract class ImageDisplayProperties ()
-  extends typings.winrtUwp.Windows.Media.ImageDisplayProperties {
-  /** Gets or sets the subtitle of the image. */
-  /* CompleteClass */
-  override var subtitle: String = js.native
-  /** Gets or sets the title of the image. */
-  /* CompleteClass */
-  override var title: String = js.native
-}
+  extends typings.winrtUwp.Windows.Media.ImageDisplayProperties
 

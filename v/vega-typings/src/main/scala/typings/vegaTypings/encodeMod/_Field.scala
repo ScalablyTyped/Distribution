@@ -18,15 +18,13 @@ object _Field {
     __obj.asInstanceOf[_Field]
   }
   @scala.inline
-  def GroupFieldRef(group: Field, level: js.UndefOr[Double] = js.undefined): _Field = {
+  def GroupFieldRef(group: Field): _Field = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Field]
   }
   @scala.inline
-  def ParentFieldRef(parent: Field, level: js.UndefOr[Double] = js.undefined): _Field = {
+  def ParentFieldRef(parent: Field): _Field = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Field]
   }
 }

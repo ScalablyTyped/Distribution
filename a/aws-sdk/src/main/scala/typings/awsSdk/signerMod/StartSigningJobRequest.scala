@@ -26,15 +26,32 @@ trait StartSigningJobRequest extends js.Object {
 
 object StartSigningJobRequest {
   @scala.inline
-  def apply(
-    clientRequestToken: ClientRequestToken,
-    destination: Destination,
-    source: Source,
-    profileName: ProfileName = null
-  ): StartSigningJobRequest = {
+  def apply(clientRequestToken: ClientRequestToken, destination: Destination, source: Source): StartSigningJobRequest = {
     val __obj = js.Dynamic.literal(clientRequestToken = clientRequestToken.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    if (profileName != null) __obj.updateDynamic("profileName")(profileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSigningJobRequest]
   }
+  @scala.inline
+  implicit class StartSigningJobRequestOps[Self <: StartSigningJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestination(value: Destination): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: Source): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfileName(value: ProfileName): Self = this.set("profileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileName: Self = this.set("profileName", js.undefined)
+  }
+  
 }
 

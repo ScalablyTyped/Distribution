@@ -12,7 +12,7 @@ A node module (un|re)loader.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 180911 |
+| # downloads        | 180203 |
 | # stars            | 1 |
 
 ## Links

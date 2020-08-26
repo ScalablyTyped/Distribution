@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPrioritySignal extends ISignal {
   /**
     * Subscribes a one-time listener for this signal.
@@ -22,7 +23,7 @@ trait IPrioritySignal extends ISignal {
     * @return a ISlot, which contains the Function passed as the parameter
     * @see ISlot
     */
-  def addOnceWithPriority(listener: js.Function, priority: Double): ISlot
+  def addOnceWithPriority(listener: js.Function, priority: Double): ISlot = js.native
   /**
     * Subscribes a listener for the signal.
     * After you successfully register an event listener,
@@ -35,7 +36,7 @@ trait IPrioritySignal extends ISignal {
     * @return a ISlot, which contains the Function passed as the parameter
     * @see ISlot
     */
-  def addWithPriority(listener: js.Function, priority: Double): ISlot
+  def addWithPriority(listener: js.Function, priority: Double): ISlot = js.native
 }
 
 @JSImport("signals.js/lib/org/osflash/signals/IPrioritySignal", "IPrioritySignal")

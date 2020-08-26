@@ -13,6 +13,7 @@ trait Circle extends Element {
   def geometry(): typings.kendoUi.kendo.geometry.Circle = js.native
   def geometry(value: typings.kendoUi.kendo.geometry.Circle): Unit = js.native
   def stroke(color: String): Circle = js.native
+  def stroke(color: String, width: js.UndefOr[scala.Nothing], opacity: Double): Circle = js.native
   def stroke(color: String, width: Double): Circle = js.native
   def stroke(color: String, width: Double, opacity: Double): Circle = js.native
 }

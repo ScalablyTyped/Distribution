@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class ^ () extends ParcelBundler {
   def this(entryFiles: String) = this()
   def this(entryFiles: js.Array[String]) = this()
+  def this(entryFiles: js.UndefOr[scala.Nothing], options: ParcelOptions) = this()
   def this(entryFiles: String, options: ParcelOptions) = this()
   def this(entryFiles: js.Array[String], options: ParcelOptions) = this()
 }

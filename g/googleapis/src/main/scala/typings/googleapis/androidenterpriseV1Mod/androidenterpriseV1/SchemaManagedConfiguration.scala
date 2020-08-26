@@ -34,18 +34,40 @@ trait SchemaManagedConfiguration extends js.Object {
 
 object SchemaManagedConfiguration {
   @scala.inline
-  def apply(
-    configurationVariables: SchemaConfigurationVariables = null,
-    kind: String = null,
-    managedProperty: js.Array[SchemaManagedProperty] = null,
-    productId: String = null
-  ): SchemaManagedConfiguration = {
+  def apply(): SchemaManagedConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (configurationVariables != null) __obj.updateDynamic("configurationVariables")(configurationVariables.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (managedProperty != null) __obj.updateDynamic("managedProperty")(managedProperty.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedConfiguration]
   }
+  @scala.inline
+  implicit class SchemaManagedConfigurationOps[Self <: SchemaManagedConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationVariables(value: SchemaConfigurationVariables): Self = this.set("configurationVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationVariables: Self = this.set("configurationVariables", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setManagedPropertyVarargs(value: SchemaManagedProperty*): Self = this.set("managedProperty", js.Array(value :_*))
+    @scala.inline
+    def setManagedProperty(value: js.Array[SchemaManagedProperty]): Self = this.set("managedProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedProperty: Self = this.set("managedProperty", js.undefined)
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+  }
+  
 }
 

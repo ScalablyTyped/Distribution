@@ -20,8 +20,24 @@ class Bus ()
   var glNode: js.UndefOr[Node] = js.native
   var id: Double = js.native
   def capture(): js.Array[_] = js.native
+  def capture(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    w: js.UndefOr[scala.Nothing],
+    h: Double
+  ): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double, h: Double): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: Double): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: Double, w: js.UndefOr[scala.Nothing], h: Double): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: Double, w: Double): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: Double, w: Double, h: Double): js.Array[_] = js.native
   def capture(x: Double): js.Array[_] = js.native
+  def capture(x: Double, y: js.UndefOr[scala.Nothing], w: js.UndefOr[scala.Nothing], h: Double): js.Array[_] = js.native
+  def capture(x: Double, y: js.UndefOr[scala.Nothing], w: Double): js.Array[_] = js.native
+  def capture(x: Double, y: js.UndefOr[scala.Nothing], w: Double, h: Double): js.Array[_] = js.native
   def capture(x: Double, y: Double): js.Array[_] = js.native
+  def capture(x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): js.Array[_] = js.native
   def capture(x: Double, y: Double, w: Double): js.Array[_] = js.native
   def capture(x: Double, y: Double, w: Double, h: Double): js.Array[_] = js.native
   def getChildContext(): GlParentBus = js.native

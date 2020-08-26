@@ -1,7 +1,7 @@
 
 # Scala.js typings for keytar
 
-Typings are for version 5.6.0
+Typings are for version 6.0.1
 
 ## Library description:
 Bindings to native Mac/Linux/Windows password APIs

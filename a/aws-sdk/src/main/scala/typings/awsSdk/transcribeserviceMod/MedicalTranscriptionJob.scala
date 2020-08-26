@@ -63,38 +63,78 @@ trait MedicalTranscriptionJob extends js.Object {
 
 object MedicalTranscriptionJob {
   @scala.inline
-  def apply(
-    CompletionTime: DateTime = null,
-    CreationTime: DateTime = null,
-    FailureReason: FailureReason = null,
-    LanguageCode: LanguageCode = null,
-    Media: Media = null,
-    MediaFormat: MediaFormat = null,
-    MediaSampleRateHertz: js.UndefOr[MediaSampleRateHertz] = js.undefined,
-    MedicalTranscriptionJobName: TranscriptionJobName = null,
-    Settings: MedicalTranscriptionSetting = null,
-    Specialty: Specialty = null,
-    StartTime: DateTime = null,
-    Transcript: MedicalTranscript = null,
-    TranscriptionJobStatus: TranscriptionJobStatus = null,
-    Type: Type = null
-  ): MedicalTranscriptionJob = {
+  def apply(): MedicalTranscriptionJob = {
     val __obj = js.Dynamic.literal()
-    if (CompletionTime != null) __obj.updateDynamic("CompletionTime")(CompletionTime.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (Media != null) __obj.updateDynamic("Media")(Media.asInstanceOf[js.Any])
-    if (MediaFormat != null) __obj.updateDynamic("MediaFormat")(MediaFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(MediaSampleRateHertz)) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.get.asInstanceOf[js.Any])
-    if (MedicalTranscriptionJobName != null) __obj.updateDynamic("MedicalTranscriptionJobName")(MedicalTranscriptionJobName.asInstanceOf[js.Any])
-    if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
-    if (Specialty != null) __obj.updateDynamic("Specialty")(Specialty.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Transcript != null) __obj.updateDynamic("Transcript")(Transcript.asInstanceOf[js.Any])
-    if (TranscriptionJobStatus != null) __obj.updateDynamic("TranscriptionJobStatus")(TranscriptionJobStatus.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[MedicalTranscriptionJob]
   }
+  @scala.inline
+  implicit class MedicalTranscriptionJobOps[Self <: MedicalTranscriptionJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionTime(value: DateTime): Self = this.set("CompletionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionTime: Self = this.set("CompletionTime", js.undefined)
+    @scala.inline
+    def setCreationTime(value: DateTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setMedia(value: Media): Self = this.set("Media", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedia: Self = this.set("Media", js.undefined)
+    @scala.inline
+    def setMediaFormat(value: MediaFormat): Self = this.set("MediaFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaFormat: Self = this.set("MediaFormat", js.undefined)
+    @scala.inline
+    def setMediaSampleRateHertz(value: MediaSampleRateHertz): Self = this.set("MediaSampleRateHertz", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaSampleRateHertz: Self = this.set("MediaSampleRateHertz", js.undefined)
+    @scala.inline
+    def setMedicalTranscriptionJobName(value: TranscriptionJobName): Self = this.set("MedicalTranscriptionJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedicalTranscriptionJobName: Self = this.set("MedicalTranscriptionJobName", js.undefined)
+    @scala.inline
+    def setSettings(value: MedicalTranscriptionSetting): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("Settings", js.undefined)
+    @scala.inline
+    def setSpecialty(value: Specialty): Self = this.set("Specialty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecialty: Self = this.set("Specialty", js.undefined)
+    @scala.inline
+    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setTranscript(value: MedicalTranscript): Self = this.set("Transcript", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranscript: Self = this.set("Transcript", js.undefined)
+    @scala.inline
+    def setTranscriptionJobStatus(value: TranscriptionJobStatus): Self = this.set("TranscriptionJobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranscriptionJobStatus: Self = this.set("TranscriptionJobStatus", js.undefined)
+    @scala.inline
+    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

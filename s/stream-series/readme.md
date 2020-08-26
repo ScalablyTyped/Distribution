@@ -11,7 +11,7 @@ Waterfalls for streams
 | Keywords           | stream, control, flow, series |
 | # releases         | 1 |
 | # dependents       | 19 |
-| # downloads        | 274624 |
+| # downloads        | 273224 |
 | # stars            | 3 |
 
 ## Links

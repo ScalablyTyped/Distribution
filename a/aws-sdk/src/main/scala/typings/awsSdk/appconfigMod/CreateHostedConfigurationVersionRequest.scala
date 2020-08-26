@@ -38,14 +38,39 @@ object CreateHostedConfigurationVersionRequest {
     ApplicationId: Id,
     ConfigurationProfileId: Id,
     Content: _Blob,
-    ContentType: StringWithLengthBetween1And255,
-    Description: Description = null,
-    LatestVersionNumber: js.UndefOr[Integer] = js.undefined
+    ContentType: StringWithLengthBetween1And255
   ): CreateHostedConfigurationVersionRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ConfigurationProfileId = ConfigurationProfileId.asInstanceOf[js.Any], Content = Content.asInstanceOf[js.Any], ContentType = ContentType.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(LatestVersionNumber)) __obj.updateDynamic("LatestVersionNumber")(LatestVersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHostedConfigurationVersionRequest]
   }
+  @scala.inline
+  implicit class CreateHostedConfigurationVersionRequestOps[Self <: CreateHostedConfigurationVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: Id): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigurationProfileId(value: Id): Self = this.set("ConfigurationProfileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContent(value: _Blob): Self = this.set("Content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentType(value: StringWithLengthBetween1And255): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLatestVersionNumber(value: Integer): Self = this.set("LatestVersionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestVersionNumber: Self = this.set("LatestVersionNumber", js.undefined)
+  }
+  
 }
 

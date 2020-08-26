@@ -12,7 +12,7 @@ Make a promise, waiting for a specified amount of time, util something is done.
 | Keywords           | promise, node, wait, before, after, every, and, until, till, async |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 376019 |
+| # downloads        | 376469 |
 | # stars            | 0 |
 
 ## Links

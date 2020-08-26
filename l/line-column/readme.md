@@ -12,7 +12,7 @@ Convert efficiently index to/from line-column in a string
 | Keywords           | string, index, line, column, linecol, position |
 | # releases         | 0 |
 | # dependents       | 24 |
-| # downloads        | 316200 |
+| # downloads        | 349319 |
 | # stars            | 1 |
 
 ## Links

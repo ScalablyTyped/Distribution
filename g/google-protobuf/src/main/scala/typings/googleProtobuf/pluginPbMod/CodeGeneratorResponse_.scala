@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CodeGeneratorResponse_ () extends Message {
   def addFile(): File = js.native
+  def addFile(value: js.UndefOr[scala.Nothing], index: Double): File = js.native
   def addFile(value: File): File = js.native
   def addFile(value: File, index: Double): File = js.native
   def clearError(): Unit = js.native

@@ -24,6 +24,13 @@ class ImageTile protected () extends Tile {
     tileCoord: TileCoord,
     state: State,
     src: String,
+    crossOrigin: js.UndefOr[scala.Nothing],
+    tileLoadFunction: TileLoadFunctionType
+  ) = this()
+  def this(
+    tileCoord: TileCoord,
+    state: State,
+    src: String,
     crossOrigin: String,
     tileLoadFunction: TileLoadFunctionType
   ) = this()

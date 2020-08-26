@@ -48,18 +48,19 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.lang.XMultiComponentFactory
   * @since OOo 2.0.3
   */
+@js.native
 trait ObjectInspector extends XObjectInspector {
   /**
     * creates a default instance of the {@link ObjectInspector}
     * @since OOo 2.2
     */
-  def createDefault(): Unit
+  def createDefault(): Unit = js.native
   /**
     * creates an instance of the {@link ObjectInspector} , using a given {@link ObjectInspectorModel}
     * @since OOo 2.2
     * @throws com::sun::star::lang::IllegalArgumentException if Model is `NULL` .
     */
-  def createWithModel(Model: XObjectInspectorModel): Unit
+  def createWithModel(Model: XObjectInspectorModel): Unit = js.native
 }
 
 object ObjectInspector {
@@ -92,5 +93,22 @@ object ObjectInspector {
     val __obj = js.Dynamic.literal(Frame = Frame.asInstanceOf[js.Any], InspectorModel = InspectorModel.asInstanceOf[js.Any], InspectorUI = InspectorUI.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], ViewData = ViewData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), createDefault = js.Any.fromFunction0(createDefault), createWithModel = js.Any.fromFunction1(createWithModel), dispose = js.Any.fromFunction0(dispose), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getViewData = js.Any.fromFunction0(getViewData), inspect = js.Any.fromFunction1(inspect), queryDispatch = js.Any.fromFunction3(queryDispatch), queryDispatches = js.Any.fromFunction1(queryDispatches), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), restoreViewData = js.Any.fromFunction1(restoreViewData), suspend = js.Any.fromFunction1(suspend))
     __obj.asInstanceOf[ObjectInspector]
   }
+  @scala.inline
+  implicit class ObjectInspectorOps[Self <: ObjectInspector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateDefault(value: () => Unit): Self = this.set("createDefault", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCreateWithModel(value: XObjectInspectorModel => Unit): Self = this.set("createWithModel", js.Any.fromFunction1(value))
+  }
+  
 }
 

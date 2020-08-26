@@ -12,7 +12,7 @@ Retrieves values from JSON objects for data binding. Offers params, nested queri
 | Keywords           | data binding, filter, json, query |
 | # releases         | 1 |
 | # dependents       | 70 |
-| # downloads        | 539782 |
+| # downloads        | 520579 |
 | # stars            | 28 |
 
 ## Links

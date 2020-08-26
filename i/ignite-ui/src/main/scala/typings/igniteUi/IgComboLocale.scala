@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgComboLocale
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,40 +15,58 @@ trait IgComboLocale
     * Gets/Sets title for html element which represent the clear button.
     *
     */
-  var clearButtonTitle: js.UndefOr[js.Any] = js.undefined
+  var clearButtonTitle: js.UndefOr[js.Any] = js.native
   /**
     * Gets/Sets title for html element which represent the drop-down button.
     *
     */
-  var dropDownButtonTitle: js.UndefOr[js.Any] = js.undefined
+  var dropDownButtonTitle: js.UndefOr[js.Any] = js.native
   /**
     * Gets/Sets text of list item for condition when [filteringType](ui.igcombo#options:filteringType) option is enabled and no match was found.
     *
     */
-  var noMatchFoundText: js.UndefOr[js.Any] = js.undefined
+  var noMatchFoundText: js.UndefOr[js.Any] = js.native
   /**
     * Gets/Sets value that is displayed when input field is empty.
     *
     */
-  var placeHolder: js.UndefOr[js.Any] = js.undefined
+  var placeHolder: js.UndefOr[js.Any] = js.native
 }
 
 object IgComboLocale {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    clearButtonTitle: js.Any = null,
-    dropDownButtonTitle: js.Any = null,
-    noMatchFoundText: js.Any = null,
-    placeHolder: js.Any = null
-  ): IgComboLocale = {
+  def apply(): IgComboLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (clearButtonTitle != null) __obj.updateDynamic("clearButtonTitle")(clearButtonTitle.asInstanceOf[js.Any])
-    if (dropDownButtonTitle != null) __obj.updateDynamic("dropDownButtonTitle")(dropDownButtonTitle.asInstanceOf[js.Any])
-    if (noMatchFoundText != null) __obj.updateDynamic("noMatchFoundText")(noMatchFoundText.asInstanceOf[js.Any])
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgComboLocale]
   }
+  @scala.inline
+  implicit class IgComboLocaleOps[Self <: IgComboLocale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClearButtonTitle(value: js.Any): Self = this.set("clearButtonTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearButtonTitle: Self = this.set("clearButtonTitle", js.undefined)
+    @scala.inline
+    def setDropDownButtonTitle(value: js.Any): Self = this.set("dropDownButtonTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropDownButtonTitle: Self = this.set("dropDownButtonTitle", js.undefined)
+    @scala.inline
+    def setNoMatchFoundText(value: js.Any): Self = this.set("noMatchFoundText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoMatchFoundText: Self = this.set("noMatchFoundText", js.undefined)
+    @scala.inline
+    def setPlaceHolder(value: js.Any): Self = this.set("placeHolder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceHolder: Self = this.set("placeHolder", js.undefined)
+  }
+  
 }
 

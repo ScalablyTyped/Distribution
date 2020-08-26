@@ -50,30 +50,64 @@ trait Activation extends js.Object {
 
 object Activation {
   @scala.inline
-  def apply(
-    ActivationId: ActivationId = null,
-    CreatedDate: CreatedDate = null,
-    DefaultInstanceName: DefaultInstanceName = null,
-    Description: ActivationDescription = null,
-    ExpirationDate: ExpirationDate = null,
-    Expired: js.UndefOr[Boolean] = js.undefined,
-    IamRole: IamRole = null,
-    RegistrationLimit: js.UndefOr[RegistrationLimit] = js.undefined,
-    RegistrationsCount: js.UndefOr[RegistrationsCount] = js.undefined,
-    Tags: TagList = null
-  ): Activation = {
+  def apply(): Activation = {
     val __obj = js.Dynamic.literal()
-    if (ActivationId != null) __obj.updateDynamic("ActivationId")(ActivationId.asInstanceOf[js.Any])
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (DefaultInstanceName != null) __obj.updateDynamic("DefaultInstanceName")(DefaultInstanceName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ExpirationDate != null) __obj.updateDynamic("ExpirationDate")(ExpirationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(Expired)) __obj.updateDynamic("Expired")(Expired.get.asInstanceOf[js.Any])
-    if (IamRole != null) __obj.updateDynamic("IamRole")(IamRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(RegistrationLimit)) __obj.updateDynamic("RegistrationLimit")(RegistrationLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RegistrationsCount)) __obj.updateDynamic("RegistrationsCount")(RegistrationsCount.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Activation]
   }
+  @scala.inline
+  implicit class ActivationOps[Self <: Activation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivationId(value: ActivationId): Self = this.set("ActivationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivationId: Self = this.set("ActivationId", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: CreatedDate): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setDefaultInstanceName(value: DefaultInstanceName): Self = this.set("DefaultInstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultInstanceName: Self = this.set("DefaultInstanceName", js.undefined)
+    @scala.inline
+    def setDescription(value: ActivationDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: ExpirationDate): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
+    @scala.inline
+    def setExpired(value: Boolean): Self = this.set("Expired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpired: Self = this.set("Expired", js.undefined)
+    @scala.inline
+    def setIamRole(value: IamRole): Self = this.set("IamRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRole: Self = this.set("IamRole", js.undefined)
+    @scala.inline
+    def setRegistrationLimit(value: RegistrationLimit): Self = this.set("RegistrationLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrationLimit: Self = this.set("RegistrationLimit", js.undefined)
+    @scala.inline
+    def setRegistrationsCount(value: RegistrationsCount): Self = this.set("RegistrationsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrationsCount: Self = this.set("RegistrationsCount", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

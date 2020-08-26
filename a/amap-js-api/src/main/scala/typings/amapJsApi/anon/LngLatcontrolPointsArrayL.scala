@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined amap-js-api.AMap.LngLat & {  controlPoints  :std.Array<amap-js-api.AMap.LngLat>} */
+/* Inlined amap-js-api.AMap.LngLat & {  controlPoints :std.Array<amap-js-api.AMap.LngLat>} */
 @js.native
 trait LngLatcontrolPointsArrayL extends js.Object {
   var controlPoints: js.Array[LngLat] = js.native

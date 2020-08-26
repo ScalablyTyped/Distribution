@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object getTokenAtPosition extends js.Object {
   def apply(parent: Node, pos: Double): js.UndefOr[Node] = js.native
+  def apply(parent: Node, pos: Double, sourceFile: js.UndefOr[scala.Nothing], allowJsDoc: Boolean): js.UndefOr[Node] = js.native
   def apply(parent: Node, pos: Double, sourceFile: SourceFile): js.UndefOr[Node] = js.native
   def apply(parent: Node, pos: Double, sourceFile: SourceFile, allowJsDoc: Boolean): js.UndefOr[Node] = js.native
 }

@@ -28,18 +28,38 @@ trait EventPermissionState extends js.Object {
 
 object EventPermissionState {
   @scala.inline
-  def apply(
-    action: Input[String] = null,
-    condition: Input[EventPermissionCondition] = null,
-    principal: Input[String] = null,
-    statementId: Input[String] = null
-  ): EventPermissionState = {
+  def apply(): EventPermissionState = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
-    if (statementId != null) __obj.updateDynamic("statementId")(statementId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventPermissionState]
   }
+  @scala.inline
+  implicit class EventPermissionStateOps[Self <: EventPermissionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: Input[String]): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setCondition(value: Input[EventPermissionCondition]): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+    @scala.inline
+    def setPrincipal(value: Input[String]): Self = this.set("principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipal: Self = this.set("principal", js.undefined)
+    @scala.inline
+    def setStatementId(value: Input[String]): Self = this.set("statementId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatementId: Self = this.set("statementId", js.undefined)
+  }
+  
 }
 

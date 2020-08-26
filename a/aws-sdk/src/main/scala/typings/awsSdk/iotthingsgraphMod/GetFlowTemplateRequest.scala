@@ -18,10 +18,28 @@ trait GetFlowTemplateRequest extends js.Object {
 
 object GetFlowTemplateRequest {
   @scala.inline
-  def apply(id: Urn, revisionNumber: js.UndefOr[Version] = js.undefined): GetFlowTemplateRequest = {
+  def apply(id: Urn): GetFlowTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (!js.isUndefined(revisionNumber)) __obj.updateDynamic("revisionNumber")(revisionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFlowTemplateRequest]
   }
+  @scala.inline
+  implicit class GetFlowTemplateRequestOps[Self <: GetFlowTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: Urn): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevisionNumber(value: Version): Self = this.set("revisionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionNumber: Self = this.set("revisionNumber", js.undefined)
+  }
+  
 }
 

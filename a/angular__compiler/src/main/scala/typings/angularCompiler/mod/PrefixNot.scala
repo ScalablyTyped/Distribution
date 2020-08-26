@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "PrefixNot")
 @js.native
 class PrefixNot protected ()
-  extends typings.angularCompiler.publicApiMod.PrefixNot {
+  extends typings.angularCompiler.compilerMod.PrefixNot {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

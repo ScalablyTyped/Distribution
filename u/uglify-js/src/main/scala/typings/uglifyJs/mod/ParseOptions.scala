@@ -4,33 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParseOptions extends js.Object {
   /**
     * Support top level `return` statements
     * @default false
     */
-  var bare_returns: js.UndefOr[Boolean] = js.undefined
+  var bare_returns: js.UndefOr[Boolean] = js.native
   /** @default true */
-  var html5_comments: js.UndefOr[Boolean] = js.undefined
+  var html5_comments: js.UndefOr[Boolean] = js.native
   /**
     * Support `#!command` as the first line
     * @default true
     */
-  var shebang: js.UndefOr[Boolean] = js.undefined
+  var shebang: js.UndefOr[Boolean] = js.native
 }
 
 object ParseOptions {
   @scala.inline
-  def apply(
-    bare_returns: js.UndefOr[Boolean] = js.undefined,
-    html5_comments: js.UndefOr[Boolean] = js.undefined,
-    shebang: js.UndefOr[Boolean] = js.undefined
-  ): ParseOptions = {
+  def apply(): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bare_returns)) __obj.updateDynamic("bare_returns")(bare_returns.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(html5_comments)) __obj.updateDynamic("html5_comments")(html5_comments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shebang)) __obj.updateDynamic("shebang")(shebang.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
+  @scala.inline
+  implicit class ParseOptionsOps[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBare_returns(value: Boolean): Self = this.set("bare_returns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBare_returns: Self = this.set("bare_returns", js.undefined)
+    @scala.inline
+    def setHtml5_comments(value: Boolean): Self = this.set("html5_comments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml5_comments: Self = this.set("html5_comments", js.undefined)
+    @scala.inline
+    def setShebang(value: Boolean): Self = this.set("shebang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShebang: Self = this.set("shebang", js.undefined)
+  }
+  
 }
 

@@ -16,6 +16,7 @@ trait Autocomplete extends Handsontable {
   def highlightBestMatchingChoice(): Unit = js.native
   def highlightBestMatchingChoice(index: Double): Unit = js.native
   def limitDropdownIfNeeded(): Unit = js.native
+  def limitDropdownIfNeeded(spaceAvailable: js.UndefOr[scala.Nothing], dropdownHeight: Double): Unit = js.native
   def limitDropdownIfNeeded(spaceAvailable: Double): Unit = js.native
   def limitDropdownIfNeeded(spaceAvailable: Double, dropdownHeight: Double): Unit = js.native
   def queryChoices(): Unit = js.native
@@ -23,7 +24,11 @@ trait Autocomplete extends Handsontable {
   def setDropdownHeight(): Unit = js.native
   def setDropdownHeight(height: Double): Unit = js.native
   def sortByRelevance(): js.Array[_] = js.native
+  def sortByRelevance(value: js.UndefOr[scala.Nothing], choices: js.UndefOr[scala.Nothing], caseSensitive: Boolean): js.Array[_] = js.native
+  def sortByRelevance(value: js.UndefOr[scala.Nothing], choices: js.Array[CellValue]): js.Array[_] = js.native
+  def sortByRelevance(value: js.UndefOr[scala.Nothing], choices: js.Array[CellValue], caseSensitive: Boolean): js.Array[_] = js.native
   def sortByRelevance(value: CellValue): js.Array[_] = js.native
+  def sortByRelevance(value: CellValue, choices: js.UndefOr[scala.Nothing], caseSensitive: Boolean): js.Array[_] = js.native
   def sortByRelevance(value: CellValue, choices: js.Array[CellValue]): js.Array[_] = js.native
   def sortByRelevance(value: CellValue, choices: js.Array[CellValue], caseSensitive: Boolean): js.Array[_] = js.native
   def unflipDropdown(): Unit = js.native

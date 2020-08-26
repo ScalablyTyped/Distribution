@@ -12,44 +12,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WindowEventMapping[Topic, Type] extends WebContentsEventMapping[String, String] {
-  var `auth-requested`: WindowAuthRequestedEvent[Topic, Type]
-  var `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[Topic, Type]
-  var blurred: WindowEvent[Topic, Type]
-  var `bounds-changed`: WindowBoundsChange[Topic, Type]
-  var `bounds-changing`: WindowBoundsChange[Topic, Type]
-  var `close-requested`: WindowEvent[Topic, Type]
-  var closed: WindowEvent[Topic, Type]
-  var closing: WindowEvent[Topic, Type]
-  var `disabled-movement-bounds-changed`: WindowBoundsChange[Topic, Type]
-  var `disabled-movement-bounds-changing`: WindowBoundsChange[Topic, Type]
-  var embedded: WindowEvent[Topic, Type]
-  var `end-user-bounds-changing`: WindowEndBoundsChangingEvent[Topic, Type]
-  var `external-process-exited`: WindowExternalProcessExitedEvent[Topic, Type]
-  var `external-process-started`: WindowExternalProcessStartedEvent[Topic, Type]
-  var focused: WindowEvent[Topic, Type]
-  var `group-changed`: WindowGroupChanged[Topic, Type]
-  var hidden: WindowHiddenEvent[Topic, Type]
-  var hotkey: InputEvent with (WindowEvent[Topic, Type])
-  var initialized: WindowEvent[Topic, Type]
-  var `layout-initialized`: WindowEvent[Topic, Type]
-  var `layout-ready`: WindowEvent[Topic, Type]
-  var maximized: WindowEvent[Topic, Type]
-  var minimized: WindowEvent[Topic, Type]
-  var `options-changed`: WindowOptionsChangedEvent[Topic, Type]
-  var `performance-report`: WindowPerformanceReport[Topic, Type]
-  var `preload-scripts-state-changed`: WindowPreloadScriptsStateChangeEvent[Topic, Type]
-  var `preload-scripts-state-changing`: WindowPreloadScriptsStateChangeEvent[Topic, Type]
-  var reloaded: WindowReloadedEvent[Topic, Type]
-  var restored: WindowEvent[Topic, Type]
-  var `show-requested`: WindowEvent[Topic, Type]
-  var shown: WindowEvent[Topic, Type]
-  var `user-movement-disabled`: WindowEvent[Topic, Type]
-  var `user-movement-enabled`: WindowEvent[Topic, Type]
-  var `view-attached`: WindowEvent[Topic, Type]
-  var `view-detached`: ViewDetached[Topic, Type]
-  var `will-move`: WillMoveOrResize[Topic, Type]
-  var `will-resize`: WillMoveOrResize[Topic, Type]
+  var `auth-requested`: WindowAuthRequestedEvent[Topic, Type] = js.native
+  var `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[Topic, Type] = js.native
+  var `bounds-changed`: WindowBoundsChange[Topic, Type] = js.native
+  var `bounds-changing`: WindowBoundsChange[Topic, Type] = js.native
+  var `close-requested`: WindowEvent[Topic, Type] = js.native
+  var closed: WindowEvent[Topic, Type] = js.native
+  var closing: WindowEvent[Topic, Type] = js.native
+  var `disabled-movement-bounds-changed`: WindowBoundsChange[Topic, Type] = js.native
+  var `disabled-movement-bounds-changing`: WindowBoundsChange[Topic, Type] = js.native
+  var embedded: WindowEvent[Topic, Type] = js.native
+  var `end-user-bounds-changing`: WindowEndBoundsChangingEvent[Topic, Type] = js.native
+  var `external-process-exited`: WindowExternalProcessExitedEvent[Topic, Type] = js.native
+  var `external-process-started`: WindowExternalProcessStartedEvent[Topic, Type] = js.native
+  var `group-changed`: WindowGroupChanged[Topic, Type] = js.native
+  var hidden: WindowHiddenEvent[Topic, Type] = js.native
+  var hotkey: InputEvent with (WindowEvent[Topic, Type]) = js.native
+  var initialized: WindowEvent[Topic, Type] = js.native
+  var `layout-initialized`: WindowEvent[Topic, Type] = js.native
+  var `layout-ready`: WindowEvent[Topic, Type] = js.native
+  var maximized: WindowEvent[Topic, Type] = js.native
+  var minimized: WindowEvent[Topic, Type] = js.native
+  var `options-changed`: WindowOptionsChangedEvent[Topic, Type] = js.native
+  var `performance-report`: WindowPerformanceReport[Topic, Type] = js.native
+  var `preload-scripts-state-changed`: WindowPreloadScriptsStateChangeEvent[Topic, Type] = js.native
+  var `preload-scripts-state-changing`: WindowPreloadScriptsStateChangeEvent[Topic, Type] = js.native
+  var reloaded: WindowReloadedEvent[Topic, Type] = js.native
+  var restored: WindowEvent[Topic, Type] = js.native
+  var `show-requested`: WindowEvent[Topic, Type] = js.native
+  var shown: WindowEvent[Topic, Type] = js.native
+  var `user-movement-disabled`: WindowEvent[Topic, Type] = js.native
+  var `user-movement-enabled`: WindowEvent[Topic, Type] = js.native
+  var `view-attached`: WindowEvent[Topic, Type] = js.native
+  var `view-detached`: ViewDetached[Topic, Type] = js.native
+  var `will-move`: WillMoveOrResize[Topic, Type] = js.native
+  var `will-resize`: WillMoveOrResize[Topic, Type] = js.native
 }
 
 object WindowEventMapping {
@@ -57,7 +56,7 @@ object WindowEventMapping {
   def apply[Topic, Type](
     `auth-requested`: WindowAuthRequestedEvent[Topic, Type],
     `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[Topic, Type],
-    blurred: WindowEvent[Topic, Type],
+    blurred: WindowEvent[String, String],
     `bounds-changed`: WindowBoundsChange[Topic, Type],
     `bounds-changing`: WindowBoundsChange[Topic, Type],
     `certificate-error`: CertificateErrorEvent[String, String],
@@ -72,7 +71,7 @@ object WindowEventMapping {
     `end-user-bounds-changing`: WindowEndBoundsChangingEvent[Topic, Type],
     `external-process-exited`: WindowExternalProcessExitedEvent[Topic, Type],
     `external-process-started`: WindowExternalProcessStartedEvent[Topic, Type],
-    focused: WindowEvent[Topic, Type],
+    focused: WindowEvent[String, String],
     `found-in-page`: WindowEvent[String, String],
     `group-changed`: WindowGroupChanged[Topic, Type],
     hidden: WindowHiddenEvent[Topic, Type],
@@ -139,5 +138,88 @@ object WindowEventMapping {
     __obj.updateDynamic("will-resize")(`will-resize`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowEventMapping[Topic, Type]]
   }
+  @scala.inline
+  implicit class WindowEventMappingOps[Self <: WindowEventMapping[_, _], Topic, Type] (val x: Self with (WindowEventMapping[Topic, Type])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setAuth-requested`(value: WindowAuthRequestedEvent[Topic, Type]): Self = this.set("auth-requested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBegin-user-bounds-changing`(value: WindowBeginBoundsChangingEvent[Topic, Type]): Self = this.set("begin-user-bounds-changing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBounds-changed`(value: WindowBoundsChange[Topic, Type]): Self = this.set("bounds-changed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setBounds-changing`(value: WindowBoundsChange[Topic, Type]): Self = this.set("bounds-changing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setClose-requested`(value: WindowEvent[Topic, Type]): Self = this.set("close-requested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClosed(value: WindowEvent[Topic, Type]): Self = this.set("closed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClosing(value: WindowEvent[Topic, Type]): Self = this.set("closing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setDisabled-movement-bounds-changed`(value: WindowBoundsChange[Topic, Type]): Self = this.set("disabled-movement-bounds-changed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setDisabled-movement-bounds-changing`(value: WindowBoundsChange[Topic, Type]): Self = this.set("disabled-movement-bounds-changing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmbedded(value: WindowEvent[Topic, Type]): Self = this.set("embedded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setEnd-user-bounds-changing`(value: WindowEndBoundsChangingEvent[Topic, Type]): Self = this.set("end-user-bounds-changing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setExternal-process-exited`(value: WindowExternalProcessExitedEvent[Topic, Type]): Self = this.set("external-process-exited", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setExternal-process-started`(value: WindowExternalProcessStartedEvent[Topic, Type]): Self = this.set("external-process-started", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setGroup-changed`(value: WindowGroupChanged[Topic, Type]): Self = this.set("group-changed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHidden(value: WindowHiddenEvent[Topic, Type]): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHotkey(value: InputEvent with (WindowEvent[Topic, Type])): Self = this.set("hotkey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInitialized(value: WindowEvent[Topic, Type]): Self = this.set("initialized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setLayout-initialized`(value: WindowEvent[Topic, Type]): Self = this.set("layout-initialized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setLayout-ready`(value: WindowEvent[Topic, Type]): Self = this.set("layout-ready", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaximized(value: WindowEvent[Topic, Type]): Self = this.set("maximized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinimized(value: WindowEvent[Topic, Type]): Self = this.set("minimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setOptions-changed`(value: WindowOptionsChangedEvent[Topic, Type]): Self = this.set("options-changed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setPerformance-report`(value: WindowPerformanceReport[Topic, Type]): Self = this.set("performance-report", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setPreload-scripts-state-changed`(value: WindowPreloadScriptsStateChangeEvent[Topic, Type]): Self = this.set("preload-scripts-state-changed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setPreload-scripts-state-changing`(value: WindowPreloadScriptsStateChangeEvent[Topic, Type]): Self = this.set("preload-scripts-state-changing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReloaded(value: WindowReloadedEvent[Topic, Type]): Self = this.set("reloaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRestored(value: WindowEvent[Topic, Type]): Self = this.set("restored", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setShow-requested`(value: WindowEvent[Topic, Type]): Self = this.set("show-requested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShown(value: WindowEvent[Topic, Type]): Self = this.set("shown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setUser-movement-disabled`(value: WindowEvent[Topic, Type]): Self = this.set("user-movement-disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setUser-movement-enabled`(value: WindowEvent[Topic, Type]): Self = this.set("user-movement-enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setView-attached`(value: WindowEvent[Topic, Type]): Self = this.set("view-attached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setView-detached`(value: ViewDetached[Topic, Type]): Self = this.set("view-detached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWill-move`(value: WillMoveOrResize[Topic, Type]): Self = this.set("will-move", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWill-resize`(value: WillMoveOrResize[Topic, Type]): Self = this.set("will-resize", value.asInstanceOf[js.Any])
+  }
+  
 }
 

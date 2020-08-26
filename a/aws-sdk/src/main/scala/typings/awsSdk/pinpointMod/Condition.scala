@@ -18,11 +18,32 @@ trait Condition extends js.Object {
 
 object Condition {
   @scala.inline
-  def apply(Conditions: ListOfSimpleCondition = null, Operator: Operator = null): Condition = {
+  def apply(): Condition = {
     val __obj = js.Dynamic.literal()
-    if (Conditions != null) __obj.updateDynamic("Conditions")(Conditions.asInstanceOf[js.Any])
-    if (Operator != null) __obj.updateDynamic("Operator")(Operator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition]
   }
+  @scala.inline
+  implicit class ConditionOps[Self <: Condition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConditionsVarargs(value: SimpleCondition*): Self = this.set("Conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: ListOfSimpleCondition): Self = this.set("Conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("Conditions", js.undefined)
+    @scala.inline
+    def setOperator(value: Operator): Self = this.set("Operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("Operator", js.undefined)
+  }
+  
 }
 

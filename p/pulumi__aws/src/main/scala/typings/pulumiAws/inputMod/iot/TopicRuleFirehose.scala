@@ -23,10 +23,30 @@ trait TopicRuleFirehose extends js.Object {
 
 object TopicRuleFirehose {
   @scala.inline
-  def apply(deliveryStreamName: Input[String], roleArn: Input[String], separator: Input[String] = null): TopicRuleFirehose = {
+  def apply(deliveryStreamName: Input[String], roleArn: Input[String]): TopicRuleFirehose = {
     val __obj = js.Dynamic.literal(deliveryStreamName = deliveryStreamName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleFirehose]
   }
+  @scala.inline
+  implicit class TopicRuleFirehoseOps[Self <: TopicRuleFirehose] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeliveryStreamName(value: Input[String]): Self = this.set("deliveryStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSeparator(value: Input[String]): Self = this.set("separator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparator: Self = this.set("separator", js.undefined)
+  }
+  
 }
 

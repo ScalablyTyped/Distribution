@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @wordpress/element.@wordpress/element.Component<{}, {}, any> & {  occurrence ? :number} */
+/* Inlined @wordpress/element.@wordpress/element.Component<{}, {}, any> & {  occurrence :number | undefined} */
 @js.native
 trait Componentanyoccurrencenum extends js.Object {
   /**
@@ -189,10 +189,10 @@ trait Componentanyoccurrencenum extends js.Object {
   def forceUpdate(): Unit = js.native
   def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
   def render(): ReactNode = js.native
-  def setState[K /* <: /* keyof {} */ String */](): Unit = js.native
   // We MUST keep setState() as a unified signature because it allows proper checking of the method return type.
   // See: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/18365#issuecomment-351013257
   // Also, the ` | S` allows intellisense to not be dumbisense
+  def setState[K /* <: /* keyof {} */ String */](): Unit = js.native
   def setState[K /* <: /* keyof {} */ String */](
     state: js.Function2[
       /* prevState */ js.Object, 

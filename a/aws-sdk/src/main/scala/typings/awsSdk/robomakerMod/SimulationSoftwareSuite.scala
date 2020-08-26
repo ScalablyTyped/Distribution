@@ -18,11 +18,30 @@ trait SimulationSoftwareSuite extends js.Object {
 
 object SimulationSoftwareSuite {
   @scala.inline
-  def apply(name: SimulationSoftwareSuiteType = null, version: SimulationSoftwareSuiteVersionType = null): SimulationSoftwareSuite = {
+  def apply(): SimulationSoftwareSuite = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimulationSoftwareSuite]
   }
+  @scala.inline
+  implicit class SimulationSoftwareSuiteOps[Self <: SimulationSoftwareSuite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: SimulationSoftwareSuiteType): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setVersion(value: SimulationSoftwareSuiteVersionType): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

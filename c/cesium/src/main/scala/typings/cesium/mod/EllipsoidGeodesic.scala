@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class EllipsoidGeodesic () extends js.Object {
   def this(start: Cartographic) = this()
+  def this(start: js.UndefOr[scala.Nothing], end: Cartographic) = this()
   def this(start: Cartographic, end: Cartographic) = this()
+  def this(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], ellipsoid: Ellipsoid) = this()
+  def this(start: js.UndefOr[scala.Nothing], end: Cartographic, ellipsoid: Ellipsoid) = this()
+  def this(start: Cartographic, end: js.UndefOr[scala.Nothing], ellipsoid: Ellipsoid) = this()
   def this(start: Cartographic, end: Cartographic, ellipsoid: Ellipsoid) = this()
   var end: Cartographic = js.native
   var endHeading: Double = js.native

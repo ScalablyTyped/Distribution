@@ -78,44 +78,90 @@ trait GetTrailStatusResponse extends js.Object {
 
 object GetTrailStatusResponse {
   @scala.inline
-  def apply(
-    IsLogging: js.UndefOr[Boolean] = js.undefined,
-    LatestCloudWatchLogsDeliveryError: String = null,
-    LatestCloudWatchLogsDeliveryTime: Date = null,
-    LatestDeliveryAttemptSucceeded: String = null,
-    LatestDeliveryAttemptTime: String = null,
-    LatestDeliveryError: String = null,
-    LatestDeliveryTime: Date = null,
-    LatestDigestDeliveryError: String = null,
-    LatestDigestDeliveryTime: Date = null,
-    LatestNotificationAttemptSucceeded: String = null,
-    LatestNotificationAttemptTime: String = null,
-    LatestNotificationError: String = null,
-    LatestNotificationTime: Date = null,
-    StartLoggingTime: Date = null,
-    StopLoggingTime: Date = null,
-    TimeLoggingStarted: String = null,
-    TimeLoggingStopped: String = null
-  ): GetTrailStatusResponse = {
+  def apply(): GetTrailStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IsLogging)) __obj.updateDynamic("IsLogging")(IsLogging.get.asInstanceOf[js.Any])
-    if (LatestCloudWatchLogsDeliveryError != null) __obj.updateDynamic("LatestCloudWatchLogsDeliveryError")(LatestCloudWatchLogsDeliveryError.asInstanceOf[js.Any])
-    if (LatestCloudWatchLogsDeliveryTime != null) __obj.updateDynamic("LatestCloudWatchLogsDeliveryTime")(LatestCloudWatchLogsDeliveryTime.asInstanceOf[js.Any])
-    if (LatestDeliveryAttemptSucceeded != null) __obj.updateDynamic("LatestDeliveryAttemptSucceeded")(LatestDeliveryAttemptSucceeded.asInstanceOf[js.Any])
-    if (LatestDeliveryAttemptTime != null) __obj.updateDynamic("LatestDeliveryAttemptTime")(LatestDeliveryAttemptTime.asInstanceOf[js.Any])
-    if (LatestDeliveryError != null) __obj.updateDynamic("LatestDeliveryError")(LatestDeliveryError.asInstanceOf[js.Any])
-    if (LatestDeliveryTime != null) __obj.updateDynamic("LatestDeliveryTime")(LatestDeliveryTime.asInstanceOf[js.Any])
-    if (LatestDigestDeliveryError != null) __obj.updateDynamic("LatestDigestDeliveryError")(LatestDigestDeliveryError.asInstanceOf[js.Any])
-    if (LatestDigestDeliveryTime != null) __obj.updateDynamic("LatestDigestDeliveryTime")(LatestDigestDeliveryTime.asInstanceOf[js.Any])
-    if (LatestNotificationAttemptSucceeded != null) __obj.updateDynamic("LatestNotificationAttemptSucceeded")(LatestNotificationAttemptSucceeded.asInstanceOf[js.Any])
-    if (LatestNotificationAttemptTime != null) __obj.updateDynamic("LatestNotificationAttemptTime")(LatestNotificationAttemptTime.asInstanceOf[js.Any])
-    if (LatestNotificationError != null) __obj.updateDynamic("LatestNotificationError")(LatestNotificationError.asInstanceOf[js.Any])
-    if (LatestNotificationTime != null) __obj.updateDynamic("LatestNotificationTime")(LatestNotificationTime.asInstanceOf[js.Any])
-    if (StartLoggingTime != null) __obj.updateDynamic("StartLoggingTime")(StartLoggingTime.asInstanceOf[js.Any])
-    if (StopLoggingTime != null) __obj.updateDynamic("StopLoggingTime")(StopLoggingTime.asInstanceOf[js.Any])
-    if (TimeLoggingStarted != null) __obj.updateDynamic("TimeLoggingStarted")(TimeLoggingStarted.asInstanceOf[js.Any])
-    if (TimeLoggingStopped != null) __obj.updateDynamic("TimeLoggingStopped")(TimeLoggingStopped.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTrailStatusResponse]
   }
+  @scala.inline
+  implicit class GetTrailStatusResponseOps[Self <: GetTrailStatusResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsLogging(value: Boolean): Self = this.set("IsLogging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsLogging: Self = this.set("IsLogging", js.undefined)
+    @scala.inline
+    def setLatestCloudWatchLogsDeliveryError(value: String): Self = this.set("LatestCloudWatchLogsDeliveryError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestCloudWatchLogsDeliveryError: Self = this.set("LatestCloudWatchLogsDeliveryError", js.undefined)
+    @scala.inline
+    def setLatestCloudWatchLogsDeliveryTime(value: Date): Self = this.set("LatestCloudWatchLogsDeliveryTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestCloudWatchLogsDeliveryTime: Self = this.set("LatestCloudWatchLogsDeliveryTime", js.undefined)
+    @scala.inline
+    def setLatestDeliveryAttemptSucceeded(value: String): Self = this.set("LatestDeliveryAttemptSucceeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestDeliveryAttemptSucceeded: Self = this.set("LatestDeliveryAttemptSucceeded", js.undefined)
+    @scala.inline
+    def setLatestDeliveryAttemptTime(value: String): Self = this.set("LatestDeliveryAttemptTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestDeliveryAttemptTime: Self = this.set("LatestDeliveryAttemptTime", js.undefined)
+    @scala.inline
+    def setLatestDeliveryError(value: String): Self = this.set("LatestDeliveryError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestDeliveryError: Self = this.set("LatestDeliveryError", js.undefined)
+    @scala.inline
+    def setLatestDeliveryTime(value: Date): Self = this.set("LatestDeliveryTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestDeliveryTime: Self = this.set("LatestDeliveryTime", js.undefined)
+    @scala.inline
+    def setLatestDigestDeliveryError(value: String): Self = this.set("LatestDigestDeliveryError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestDigestDeliveryError: Self = this.set("LatestDigestDeliveryError", js.undefined)
+    @scala.inline
+    def setLatestDigestDeliveryTime(value: Date): Self = this.set("LatestDigestDeliveryTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestDigestDeliveryTime: Self = this.set("LatestDigestDeliveryTime", js.undefined)
+    @scala.inline
+    def setLatestNotificationAttemptSucceeded(value: String): Self = this.set("LatestNotificationAttemptSucceeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestNotificationAttemptSucceeded: Self = this.set("LatestNotificationAttemptSucceeded", js.undefined)
+    @scala.inline
+    def setLatestNotificationAttemptTime(value: String): Self = this.set("LatestNotificationAttemptTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestNotificationAttemptTime: Self = this.set("LatestNotificationAttemptTime", js.undefined)
+    @scala.inline
+    def setLatestNotificationError(value: String): Self = this.set("LatestNotificationError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestNotificationError: Self = this.set("LatestNotificationError", js.undefined)
+    @scala.inline
+    def setLatestNotificationTime(value: Date): Self = this.set("LatestNotificationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestNotificationTime: Self = this.set("LatestNotificationTime", js.undefined)
+    @scala.inline
+    def setStartLoggingTime(value: Date): Self = this.set("StartLoggingTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartLoggingTime: Self = this.set("StartLoggingTime", js.undefined)
+    @scala.inline
+    def setStopLoggingTime(value: Date): Self = this.set("StopLoggingTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopLoggingTime: Self = this.set("StopLoggingTime", js.undefined)
+    @scala.inline
+    def setTimeLoggingStarted(value: String): Self = this.set("TimeLoggingStarted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeLoggingStarted: Self = this.set("TimeLoggingStarted", js.undefined)
+    @scala.inline
+    def setTimeLoggingStopped(value: String): Self = this.set("TimeLoggingStopped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeLoggingStopped: Self = this.set("TimeLoggingStopped", js.undefined)
+  }
+  
 }
 

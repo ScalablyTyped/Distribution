@@ -8,54 +8,97 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnimatableProperties[S /* <: js.Object */] extends js.Object {
-  var animation: js.UndefOr[Animation | String | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var direction: js.UndefOr[Direction] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var easing: js.UndefOr[Easing] = js.undefined
-  var iterationCount: js.UndefOr[Double | infinite] = js.undefined
-  var iterationDelay: js.UndefOr[Double] = js.undefined
-  var onAnimationBegin: js.UndefOr[js.Function] = js.undefined
-  var onAnimationEnd: js.UndefOr[js.Function] = js.undefined
-  var onTransitionBegin: js.UndefOr[js.Function1[/* property */ String, Unit]] = js.undefined
-  var onTransitionEnd: js.UndefOr[js.Function1[/* property */ String, Unit]] = js.undefined
-  var transition: js.UndefOr[(/* keyof S */ String) | (js.Array[/* keyof S */ String])] = js.undefined
-  var useNativeDriver: js.UndefOr[Boolean] = js.undefined
+  var animation: js.UndefOr[Animation | String | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[Direction] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var easing: js.UndefOr[Easing] = js.native
+  var iterationCount: js.UndefOr[Double | infinite] = js.native
+  var iterationDelay: js.UndefOr[Double] = js.native
+  var onAnimationBegin: js.UndefOr[js.Function] = js.native
+  var onAnimationEnd: js.UndefOr[js.Function] = js.native
+  var onTransitionBegin: js.UndefOr[js.Function1[/* property */ String, Unit]] = js.native
+  var onTransitionEnd: js.UndefOr[js.Function1[/* property */ String, Unit]] = js.native
+  var transition: js.UndefOr[(/* keyof S */ String) | (js.Array[/* keyof S */ String])] = js.native
+  var useNativeDriver: js.UndefOr[Boolean] = js.native
 }
 
 object AnimatableProperties {
   @scala.inline
-  def apply[/* <: js.Object */ S](
-    animation: Animation | String | (CustomAnimation[TextStyle with ViewStyle with ImageStyle]) = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    direction: Direction = null,
-    duration: js.UndefOr[Double] = js.undefined,
-    easing: Easing = null,
-    iterationCount: Double | infinite = null,
-    iterationDelay: js.UndefOr[Double] = js.undefined,
-    onAnimationBegin: js.Function = null,
-    onAnimationEnd: js.Function = null,
-    onTransitionBegin: /* property */ String => Unit = null,
-    onTransitionEnd: /* property */ String => Unit = null,
-    transition: (/* keyof S */ String) | (js.Array[/* keyof S */ String]) = null,
-    useNativeDriver: js.UndefOr[Boolean] = js.undefined
-  ): AnimatableProperties[S] = {
+  def apply[/* <: js.Object */ S](): AnimatableProperties[S] = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (iterationCount != null) __obj.updateDynamic("iterationCount")(iterationCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(iterationDelay)) __obj.updateDynamic("iterationDelay")(iterationDelay.get.asInstanceOf[js.Any])
-    if (onAnimationBegin != null) __obj.updateDynamic("onAnimationBegin")(onAnimationBegin.asInstanceOf[js.Any])
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd.asInstanceOf[js.Any])
-    if (onTransitionBegin != null) __obj.updateDynamic("onTransitionBegin")(js.Any.fromFunction1(onTransitionBegin))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatableProperties[S]]
   }
+  @scala.inline
+  implicit class AnimatablePropertiesOps[Self <: AnimatableProperties[_], /* <: js.Object */ S] (val x: Self with AnimatableProperties[S]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Animation | String | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDirection(value: Direction): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEasingFunction1(value: /* t */ Double => Double): Self = this.set("easing", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEasing(value: Easing): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setIterationCount(value: Double | infinite): Self = this.set("iterationCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIterationCount: Self = this.set("iterationCount", js.undefined)
+    @scala.inline
+    def setIterationDelay(value: Double): Self = this.set("iterationDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIterationDelay: Self = this.set("iterationDelay", js.undefined)
+    @scala.inline
+    def setOnAnimationBegin(value: js.Function): Self = this.set("onAnimationBegin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationBegin: Self = this.set("onAnimationBegin", js.undefined)
+    @scala.inline
+    def setOnAnimationEnd(value: js.Function): Self = this.set("onAnimationEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAnimationEnd: Self = this.set("onAnimationEnd", js.undefined)
+    @scala.inline
+    def setOnTransitionBegin(value: /* property */ String => Unit): Self = this.set("onTransitionBegin", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTransitionBegin: Self = this.set("onTransitionBegin", js.undefined)
+    @scala.inline
+    def setOnTransitionEnd(value: /* property */ String => Unit): Self = this.set("onTransitionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    @scala.inline
+    def setTransitionVarargs(value: (/* keyof S */ String)*): Self = this.set("transition", js.Array(value :_*))
+    @scala.inline
+    def setTransition(value: (/* keyof S */ String) | (js.Array[/* keyof S */ String])): Self = this.set("transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransition: Self = this.set("transition", js.undefined)
+    @scala.inline
+    def setUseNativeDriver(value: Boolean): Self = this.set("useNativeDriver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseNativeDriver: Self = this.set("useNativeDriver", js.undefined)
+  }
+  
 }
 

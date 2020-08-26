@@ -132,7 +132,11 @@ object Math extends js.Object {
   def factorial(n: Double): Double = js.native
   def fromSNorm(value: Double): Double = js.native
   def incrementWrap(): Double = js.native
+  def incrementWrap(n: js.UndefOr[scala.Nothing], maximumValue: js.UndefOr[scala.Nothing], minimumValue: Double): Double = js.native
+  def incrementWrap(n: js.UndefOr[scala.Nothing], maximumValue: Double): Double = js.native
+  def incrementWrap(n: js.UndefOr[scala.Nothing], maximumValue: Double, minimumValue: Double): Double = js.native
   def incrementWrap(n: Double): Double = js.native
+  def incrementWrap(n: Double, maximumValue: js.UndefOr[scala.Nothing], minimumValue: Double): Double = js.native
   def incrementWrap(n: Double, maximumValue: Double): Double = js.native
   def incrementWrap(n: Double, maximumValue: Double, minimumValue: Double): Double = js.native
   def isPowerOfTwo(n: Double): Boolean = js.native

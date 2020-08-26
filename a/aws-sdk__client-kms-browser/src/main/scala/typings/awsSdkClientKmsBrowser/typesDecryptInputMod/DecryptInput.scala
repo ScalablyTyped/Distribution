@@ -11,6 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DecryptInput extends InputTypesUnion {
   /**
     * An object that may be queried to determine if the underlying operation has been aborted.
@@ -18,48 +19,73 @@ trait DecryptInput extends InputTypesUnion {
     * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
     */
   @JSName("$abortSignal")
-  var $abortSignal: js.UndefOr[AbortSignal] = js.undefined
+  var $abortSignal: js.UndefOr[AbortSignal] = js.native
   /**
     * Per-request HTTP configuration options. If set, any options specified will override the corresponding HTTP option set on the client for this command.
     */
   @JSName("$httpOptions")
-  var $httpOptions: js.UndefOr[BrowserHttpOptions] = js.undefined
+  var $httpOptions: js.UndefOr[BrowserHttpOptions] = js.native
   /**
     * The maximum number of times this operation should be retried. If set, this value will override the `maxRetries` configuration set on the client for this command.
     */
   @JSName("$maxRetries")
-  var $maxRetries: js.UndefOr[Double] = js.undefined
+  var $maxRetries: js.UndefOr[Double] = js.native
   /**
     * <p>Ciphertext to be decrypted. The blob includes metadata.</p>
     */
-  var CiphertextBlob: ArrayBuffer | ArrayBufferView | String
+  var CiphertextBlob: ArrayBuffer | ArrayBufferView | String = js.native
   /**
     * <p>The encryption context. If this was specified in the <a>Encrypt</a> function, it must be specified here or the decryption operation will fail. For more information, see <a href="http://docs.aws.amazon.com/kms/latest/developerguide/encryption-context.html">Encryption Context</a>.</p>
     */
-  var EncryptionContext: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+  var EncryptionContext: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.native
   /**
     * <p>A list of grant tokens.</p> <p>For more information, see <a href="http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token">Grant Tokens</a> in the <i>AWS Key Management Service Developer Guide</i>.</p>
     */
-  var GrantTokens: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+  var GrantTokens: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
 }
 
 object DecryptInput {
   @scala.inline
-  def apply(
-    CiphertextBlob: ArrayBuffer | ArrayBufferView | String,
-    $abortSignal: AbortSignal = null,
-    $httpOptions: BrowserHttpOptions = null,
-    $maxRetries: js.UndefOr[Double] = js.undefined,
-    EncryptionContext: StringDictionary[String] | (Iterable[js.Tuple2[String, String]]) = null,
-    GrantTokens: js.Array[String] | Iterable[String] = null
-  ): DecryptInput = {
+  def apply(CiphertextBlob: ArrayBuffer | ArrayBufferView | String): DecryptInput = {
     val __obj = js.Dynamic.literal(CiphertextBlob = CiphertextBlob.asInstanceOf[js.Any])
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined($maxRetries)) __obj.updateDynamic("$maxRetries")($maxRetries.get.asInstanceOf[js.Any])
-    if (EncryptionContext != null) __obj.updateDynamic("EncryptionContext")(EncryptionContext.asInstanceOf[js.Any])
-    if (GrantTokens != null) __obj.updateDynamic("GrantTokens")(GrantTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptInput]
   }
+  @scala.inline
+  implicit class DecryptInputOps[Self <: DecryptInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCiphertextBlob(value: ArrayBuffer | ArrayBufferView | String): Self = this.set("CiphertextBlob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set$abortSignal(value: AbortSignal): Self = this.set("$abortSignal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$abortSignal: Self = this.set("$abortSignal", js.undefined)
+    @scala.inline
+    def set$httpOptions(value: BrowserHttpOptions): Self = this.set("$httpOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$httpOptions: Self = this.set("$httpOptions", js.undefined)
+    @scala.inline
+    def set$maxRetries(value: Double): Self = this.set("$maxRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$maxRetries: Self = this.set("$maxRetries", js.undefined)
+    @scala.inline
+    def setEncryptionContext(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = this.set("EncryptionContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionContext: Self = this.set("EncryptionContext", js.undefined)
+    @scala.inline
+    def setGrantTokensVarargs(value: String*): Self = this.set("GrantTokens", js.Array(value :_*))
+    @scala.inline
+    def setGrantTokens(value: js.Array[String] | Iterable[String]): Self = this.set("GrantTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantTokens: Self = this.set("GrantTokens", js.undefined)
+  }
+  
 }
 

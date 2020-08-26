@@ -1,8 +1,8 @@
 package typings.ts3NodejsLibrary.teamSpeakQueryMod
 
 import typings.node.eventsMod.EventEmitter
-import typings.ts3NodejsLibrary.queryResponseMod.QueryResponseTypes
-import typings.ts3NodejsLibrary.teamSpeakMod.ConnectionParams
+import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak.ConnectionParams
+import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.Response
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.executeArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -66,9 +66,9 @@ class TeamSpeakQuery_ protected () extends EventEmitter {
     */
   def connect(): Unit = js.native
   /** sends a command to the TeamSpeak Server */
-  def execute(command: String, args: executeArgs*): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  def execute(command: String, args: executeArgs*): js.Promise[js.Array[Response]] = js.native
   /** sends a priorized command to the TeamSpeak Server */
-  def executePrio(command: String, args: executeArgs*): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  def executePrio(command: String, args: executeArgs*): js.Promise[js.Array[Response]] = js.native
   /** forcefully closes the socket connection */
   def forceQuit(): Unit = js.native
   def isConnected(): Boolean = js.native

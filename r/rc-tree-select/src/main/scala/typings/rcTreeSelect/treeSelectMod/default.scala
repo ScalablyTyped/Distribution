@@ -6,12 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tree-select/lib/TreeSelect", JSImport.Default)
+@JSImport("rc-tree-select/es/TreeSelect", JSImport.Default)
 @js.native
 class default[ValueType] () extends TreeSelect[ValueType]
 
 /* static members */
-@JSImport("rc-tree-select/lib/TreeSelect", JSImport.Default)
+@JSImport("rc-tree-select/es/TreeSelect", JSImport.Default)
 @js.native
 object default extends js.Object {
   var SHOW_ALL: /* "SHOW_ALL" */ String = js.native

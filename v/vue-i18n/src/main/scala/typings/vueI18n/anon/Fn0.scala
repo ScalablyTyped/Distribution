@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 trait Fn0 extends js.Object {
   def apply(value: Double): NumberFormatResult = js.native
   def apply(value: Double, args: StringDictionary[String]): NumberFormatResult = js.native
+  def apply(value: Double, key: js.UndefOr[scala.Nothing], locale: Locale): NumberFormatResult = js.native
   def apply(value: Double, key: Path): NumberFormatResult = js.native
   def apply(value: Double, key: Path, locale: Locale): NumberFormatResult = js.native
 }

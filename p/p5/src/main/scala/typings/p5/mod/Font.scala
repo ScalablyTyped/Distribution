@@ -26,6 +26,7 @@ trait Font extends js.Object {
     *   w, h
     */
   def textBounds(line: String, x: Double, y: Double): js.Object = js.native
+  def textBounds(line: String, x: Double, y: Double, fontSize: js.UndefOr[scala.Nothing], options: js.Object): js.Object = js.native
   def textBounds(line: String, x: Double, y: Double, fontSize: Double): js.Object = js.native
   def textBounds(line: String, x: Double, y: Double, fontSize: Double, options: js.Object): js.Object = js.native
   /**

@@ -46,7 +46,7 @@ object operationMod extends js.Object {
     /**
       * Wraps the `complete` and `error` events in a Promise.
       *
-      * @return {promise}
+      * @return {Promise}
       */
     def promise(): js.Promise[_] = js.native
     /**

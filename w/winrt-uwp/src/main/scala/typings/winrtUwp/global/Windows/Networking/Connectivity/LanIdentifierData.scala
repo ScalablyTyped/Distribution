@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Networking.Connectivity
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Networking.Connectivity.LanIdentifierData")
 @js.native
 abstract class LanIdentifierData ()
-  extends typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifierData {
-  /** Gets a value indicating the type of data stored in the value field of the LanIdentifierData object according to the Link Layer Discovery Protocol (LLDP) protocol. */
-  /* CompleteClass */
-  override var `type`: Double = js.native
-  /** Gets the serialized value. */
-  /* CompleteClass */
-  override var value: IVectorView[Double] = js.native
-}
+  extends typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifierData
 

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AuthorizeClientVpnIngressRequest extends js.Object {
   /**
-    * The ID of the group to grant access to, for example, the Active Directory group or identity provider (IdP) group.
+    * The ID of the group to grant access to, for example, the Active Directory group or identity provider (IdP) group. Required if AuthorizeAllGroups is false or not specified.
     */
   var AccessGroupId: js.UndefOr[String] = js.native
   /**
-    * Indicates whether to grant access to all clients. Use true to grant all clients who successfully establish a VPN connection access to the network.
+    * Indicates whether to grant access to all clients. Specify true to grant all clients who successfully establish a VPN connection access to the network. Must be set to true if AccessGroupId is not specified.
     */
   var AuthorizeAllGroups: js.UndefOr[Boolean] = js.native
   /**
@@ -38,22 +38,46 @@ trait AuthorizeClientVpnIngressRequest extends js.Object {
 
 object AuthorizeClientVpnIngressRequest {
   @scala.inline
-  def apply(
-    ClientVpnEndpointId: ClientVpnEndpointId,
-    TargetNetworkCidr: String,
-    AccessGroupId: String = null,
-    AuthorizeAllGroups: js.UndefOr[Boolean] = js.undefined,
-    ClientToken: String = null,
-    Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): AuthorizeClientVpnIngressRequest = {
+  def apply(ClientVpnEndpointId: ClientVpnEndpointId, TargetNetworkCidr: String): AuthorizeClientVpnIngressRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any], TargetNetworkCidr = TargetNetworkCidr.asInstanceOf[js.Any])
-    if (AccessGroupId != null) __obj.updateDynamic("AccessGroupId")(AccessGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AuthorizeAllGroups)) __obj.updateDynamic("AuthorizeAllGroups")(AuthorizeAllGroups.get.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeClientVpnIngressRequest]
   }
+  @scala.inline
+  implicit class AuthorizeClientVpnIngressRequestOps[Self <: AuthorizeClientVpnIngressRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetNetworkCidr(value: String): Self = this.set("TargetNetworkCidr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessGroupId(value: String): Self = this.set("AccessGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessGroupId: Self = this.set("AccessGroupId", js.undefined)
+    @scala.inline
+    def setAuthorizeAllGroups(value: Boolean): Self = this.set("AuthorizeAllGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizeAllGroups: Self = this.set("AuthorizeAllGroups", js.undefined)
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

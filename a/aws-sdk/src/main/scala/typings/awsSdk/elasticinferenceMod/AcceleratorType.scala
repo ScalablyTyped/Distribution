@@ -22,16 +22,36 @@ trait AcceleratorType extends js.Object {
 
 object AcceleratorType {
   @scala.inline
-  def apply(
-    acceleratorTypeName: AcceleratorTypeName = null,
-    memoryInfo: MemoryInfo = null,
-    throughputInfo: ThroughputInfoList = null
-  ): AcceleratorType = {
+  def apply(): AcceleratorType = {
     val __obj = js.Dynamic.literal()
-    if (acceleratorTypeName != null) __obj.updateDynamic("acceleratorTypeName")(acceleratorTypeName.asInstanceOf[js.Any])
-    if (memoryInfo != null) __obj.updateDynamic("memoryInfo")(memoryInfo.asInstanceOf[js.Any])
-    if (throughputInfo != null) __obj.updateDynamic("throughputInfo")(throughputInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceleratorType]
   }
+  @scala.inline
+  implicit class AcceleratorTypeOps[Self <: AcceleratorType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorTypeName(value: AcceleratorTypeName): Self = this.set("acceleratorTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorTypeName: Self = this.set("acceleratorTypeName", js.undefined)
+    @scala.inline
+    def setMemoryInfo(value: MemoryInfo): Self = this.set("memoryInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryInfo: Self = this.set("memoryInfo", js.undefined)
+    @scala.inline
+    def setThroughputInfoVarargs(value: KeyValuePair*): Self = this.set("throughputInfo", js.Array(value :_*))
+    @scala.inline
+    def setThroughputInfo(value: ThroughputInfoList): Self = this.set("throughputInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThroughputInfo: Self = this.set("throughputInfo", js.undefined)
+  }
+  
 }
 

@@ -20,6 +20,12 @@ trait Polyline_ extends GeoShape {
     * @param opt_scope {{}=} - An object defining the scope for the handler function
     */
   def addEventListener(`type`: String, handler: js.Function0[Unit]): Unit = js.native
+  def addEventListener(
+    `type`: String,
+    handler: js.Function0[Unit],
+    opt_capture: js.UndefOr[scala.Nothing],
+    opt_scope: js.Object
+  ): Unit = js.native
   def addEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean): Unit = js.native
   def addEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean, opt_scope: js.Object): Unit = js.native
   /**
@@ -54,6 +60,12 @@ trait Polyline_ extends GeoShape {
     * @param opt_scope {{}=} - An object defining the scope for the handler function
     */
   def removeEventListener(`type`: String, handler: js.Function0[Unit]): Unit = js.native
+  def removeEventListener(
+    `type`: String,
+    handler: js.Function0[Unit],
+    opt_capture: js.UndefOr[scala.Nothing],
+    opt_scope: js.Object
+  ): Unit = js.native
   def removeEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean): Unit = js.native
   def removeEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean, opt_scope: js.Object): Unit = js.native
   /**

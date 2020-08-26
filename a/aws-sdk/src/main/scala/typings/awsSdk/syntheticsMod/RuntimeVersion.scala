@@ -26,18 +26,38 @@ trait RuntimeVersion extends js.Object {
 
 object RuntimeVersion {
   @scala.inline
-  def apply(
-    DeprecationDate: Timestamp = null,
-    Description: String = null,
-    ReleaseDate: Timestamp = null,
-    VersionName: String = null
-  ): RuntimeVersion = {
+  def apply(): RuntimeVersion = {
     val __obj = js.Dynamic.literal()
-    if (DeprecationDate != null) __obj.updateDynamic("DeprecationDate")(DeprecationDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ReleaseDate != null) __obj.updateDynamic("ReleaseDate")(ReleaseDate.asInstanceOf[js.Any])
-    if (VersionName != null) __obj.updateDynamic("VersionName")(VersionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeVersion]
   }
+  @scala.inline
+  implicit class RuntimeVersionOps[Self <: RuntimeVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeprecationDate(value: Timestamp): Self = this.set("DeprecationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecationDate: Self = this.set("DeprecationDate", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setReleaseDate(value: Timestamp): Self = this.set("ReleaseDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseDate: Self = this.set("ReleaseDate", js.undefined)
+    @scala.inline
+    def setVersionName(value: String): Self = this.set("VersionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionName: Self = this.set("VersionName", js.undefined)
+  }
+  
 }
 

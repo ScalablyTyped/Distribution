@@ -20,21 +20,6 @@ object Data extends js.Object {
       */
     def this(px: Double, py: Double) = this()
     def this(px: Double, py: Double, pz: Double) = this()
-    /** @type {number} Returns the position along the X axis. */
-    /* CompleteClass */
-    override var px: Double = js.native
-    /** @type {number} Returns the position along the Y axis. */
-    /* CompleteClass */
-    override var py: Double = js.native
-    /** @type {number} Returns the position along the Z axis. */
-    /* CompleteClass */
-    override var pz: Double = js.native
-    /**
-      * Indicates whether the position is expressed using floating point values or not.
-      * @return {boolean} Returns: true if the position is expressed using floating point values.
-      */
-    /* CompleteClass */
-    override def isFloat(): Boolean = js.native
   }
   
 }

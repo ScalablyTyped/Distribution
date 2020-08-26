@@ -4,7 +4,10 @@ import typings.grpcGrpcJs.callStreamMod.Http2CallStream
 import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
 import typings.grpcGrpcJs.channelMod.ConnectivityState
 import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
+import typings.grpcGrpcJs.filterMod.Filter
+import typings.grpcGrpcJs.filterMod.FilterFactory
 import typings.grpcGrpcJs.metadataMod.Metadata
+import typings.grpcGrpcJs.uriParserMod.GrpcUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +26,7 @@ class Subchannel protected () extends js.Object {
     *     connection
     */
   def this(
-    channelTarget: String,
+    channelTarget: GrpcUri,
     subchannelAddress: SubchannelAddress,
     options: ChannelOptions,
     credentials: ChannelCredentials
@@ -49,6 +52,7 @@ class Subchannel protected () extends js.Object {
     * CONNECTING instead of IDLE when the backoff timeout ends.
     */
   var continueConnecting: js.Any = js.native
+  var createSession: js.Any = js.native
   var credentials: js.Any = js.native
   /**
     * A list of listener functions that will be called when the underlying
@@ -56,6 +60,7 @@ class Subchannel protected () extends js.Object {
     * status.
     */
   var disconnectListeners: js.Any = js.native
+  var handleBackoffTimer: js.Any = js.native
   /**
     * Timer reference for timeout that indicates when to send the next ping
     */
@@ -147,6 +152,7 @@ class Subchannel protected () extends js.Object {
     * @param callStream
     */
   def startCallStream(metadata: Metadata, callStream: Http2CallStream): Unit = js.native
+  def startCallStream(metadata: Metadata, callStream: Http2CallStream, extraFilterFactory: FilterFactory[Filter]): Unit = js.native
   /**
     * If the subchannel is currently IDLE, start connecting and switch to the
     * CONNECTING state. If the subchannel is current in TRANSIENT_FAILURE,

@@ -27,7 +27,7 @@ trait Instance extends js.Object {
     */
   var bundleId: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The timestamp when the instance was created (e.g., 1479734909.17).
+    * The timestamp when the instance was created (e.g., 1479734909.17) in Unix time format.
     */
   var createdAt: js.UndefOr[IsoDate] = js.native
   /**
@@ -90,50 +90,106 @@ trait Instance extends js.Object {
 
 object Instance {
   @scala.inline
-  def apply(
-    addOns: AddOnList = null,
-    arn: NonEmptyString = null,
-    blueprintId: NonEmptyString = null,
-    blueprintName: NonEmptyString = null,
-    bundleId: NonEmptyString = null,
-    createdAt: IsoDate = null,
-    hardware: InstanceHardware = null,
-    ipv6Address: IpV6Address = null,
-    isStaticIp: js.UndefOr[Boolean] = js.undefined,
-    location: ResourceLocation = null,
-    name: ResourceName = null,
-    networking: InstanceNetworking = null,
-    privateIpAddress: IpAddress = null,
-    publicIpAddress: IpAddress = null,
-    resourceType: ResourceType = null,
-    sshKeyName: ResourceName = null,
-    state: InstanceState = null,
-    supportCode: String = null,
-    tags: TagList = null,
-    username: NonEmptyString = null
-  ): Instance = {
+  def apply(): Instance = {
     val __obj = js.Dynamic.literal()
-    if (addOns != null) __obj.updateDynamic("addOns")(addOns.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (blueprintId != null) __obj.updateDynamic("blueprintId")(blueprintId.asInstanceOf[js.Any])
-    if (blueprintName != null) __obj.updateDynamic("blueprintName")(blueprintName.asInstanceOf[js.Any])
-    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (hardware != null) __obj.updateDynamic("hardware")(hardware.asInstanceOf[js.Any])
-    if (ipv6Address != null) __obj.updateDynamic("ipv6Address")(ipv6Address.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStaticIp)) __obj.updateDynamic("isStaticIp")(isStaticIp.get.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (networking != null) __obj.updateDynamic("networking")(networking.asInstanceOf[js.Any])
-    if (privateIpAddress != null) __obj.updateDynamic("privateIpAddress")(privateIpAddress.asInstanceOf[js.Any])
-    if (publicIpAddress != null) __obj.updateDynamic("publicIpAddress")(publicIpAddress.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (sshKeyName != null) __obj.updateDynamic("sshKeyName")(sshKeyName.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (supportCode != null) __obj.updateDynamic("supportCode")(supportCode.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }
+  @scala.inline
+  implicit class InstanceOps[Self <: Instance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddOnsVarargs(value: AddOn*): Self = this.set("addOns", js.Array(value :_*))
+    @scala.inline
+    def setAddOns(value: AddOnList): Self = this.set("addOns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddOns: Self = this.set("addOns", js.undefined)
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setBlueprintId(value: NonEmptyString): Self = this.set("blueprintId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlueprintId: Self = this.set("blueprintId", js.undefined)
+    @scala.inline
+    def setBlueprintName(value: NonEmptyString): Self = this.set("blueprintName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlueprintName: Self = this.set("blueprintName", js.undefined)
+    @scala.inline
+    def setBundleId(value: NonEmptyString): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setHardware(value: InstanceHardware): Self = this.set("hardware", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHardware: Self = this.set("hardware", js.undefined)
+    @scala.inline
+    def setIpv6Address(value: IpV6Address): Self = this.set("ipv6Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Address: Self = this.set("ipv6Address", js.undefined)
+    @scala.inline
+    def setIsStaticIp(value: Boolean): Self = this.set("isStaticIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsStaticIp: Self = this.set("isStaticIp", js.undefined)
+    @scala.inline
+    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetworking(value: InstanceNetworking): Self = this.set("networking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworking: Self = this.set("networking", js.undefined)
+    @scala.inline
+    def setPrivateIpAddress(value: IpAddress): Self = this.set("privateIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddress: Self = this.set("privateIpAddress", js.undefined)
+    @scala.inline
+    def setPublicIpAddress(value: IpAddress): Self = this.set("publicIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIpAddress: Self = this.set("publicIpAddress", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setSshKeyName(value: ResourceName): Self = this.set("sshKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshKeyName: Self = this.set("sshKeyName", js.undefined)
+    @scala.inline
+    def setState(value: InstanceState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUsername(value: NonEmptyString): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

@@ -19,6 +19,8 @@ class I18n_ () extends js.Object {
   @JSName("_")
   def _underscore(id: String): String = js.native
   @JSName("_")
+  def _underscore(id: String, values: js.UndefOr[scala.Nothing], messageOptions: MessageOptions): String = js.native
+  @JSName("_")
   def _underscore(id: String, values: js.Object): String = js.native
   @JSName("_")
   def _underscore(id: String, values: js.Object, messageOptions: MessageOptions): String = js.native

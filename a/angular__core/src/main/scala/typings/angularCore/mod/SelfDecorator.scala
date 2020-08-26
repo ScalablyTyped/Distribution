@@ -23,7 +23,6 @@ trait SelfDecorator extends Instantiable0[Self] {
     * <code-example path="core/di/ts/metadata_spec.ts" region="Self">
     * </code-example>
     *
-    *
     * @see `SkipSelf`
     * @see `Optional`
     *

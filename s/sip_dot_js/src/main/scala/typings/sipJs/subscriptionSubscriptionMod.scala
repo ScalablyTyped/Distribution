@@ -41,6 +41,7 @@ object subscriptionSubscriptionMod extends js.Object {
       * @param options - Options bucket
       */
     def subscribe(): OutgoingSubscribeRequest = js.native
+    def subscribe(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): OutgoingSubscribeRequest = js.native
     def subscribe(delegate: OutgoingSubscribeRequestDelegate): OutgoingSubscribeRequest = js.native
     def subscribe(delegate: OutgoingSubscribeRequestDelegate, options: RequestOptions): OutgoingSubscribeRequest = js.native
     /**

@@ -29,6 +29,7 @@ class ResourceManagementRemarketingaudience protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementRemarketingaudienceDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementRemarketingaudienceDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -58,6 +59,7 @@ class ResourceManagementRemarketingaudience protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def get(callback: BodyResponseCallback[SchemaRemarketingAudience]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def get(params: ParamsResourceManagementRemarketingaudienceGet): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def get(
     params: ParamsResourceManagementRemarketingaudienceGet,
@@ -90,6 +92,7 @@ class ResourceManagementRemarketingaudience protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def insert(callback: BodyResponseCallback[SchemaRemarketingAudience]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def insert(params: ParamsResourceManagementRemarketingaudienceInsert): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def insert(
     params: ParamsResourceManagementRemarketingaudienceInsert,
@@ -124,6 +127,7 @@ class ResourceManagementRemarketingaudience protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaRemarketingAudiences] = js.native
   def list(callback: BodyResponseCallback[SchemaRemarketingAudiences]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingAudiences] = js.native
   def list(params: ParamsResourceManagementRemarketingaudienceList): GaxiosPromise[SchemaRemarketingAudiences] = js.native
   def list(
     params: ParamsResourceManagementRemarketingaudienceList,
@@ -158,6 +162,7 @@ class ResourceManagementRemarketingaudience protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def patch(callback: BodyResponseCallback[SchemaRemarketingAudience]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def patch(params: ParamsResourceManagementRemarketingaudiencePatch): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def patch(
     params: ParamsResourceManagementRemarketingaudiencePatch,
@@ -191,6 +196,7 @@ class ResourceManagementRemarketingaudience protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def update(callback: BodyResponseCallback[SchemaRemarketingAudience]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def update(params: ParamsResourceManagementRemarketingaudienceUpdate): GaxiosPromise[SchemaRemarketingAudience] = js.native
   def update(
     params: ParamsResourceManagementRemarketingaudienceUpdate,

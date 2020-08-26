@@ -11,8 +11,8 @@ Clones a React element while preserving its original ref
 | Full name          | react-clone-referenced-element |
 | Keywords           | react, clone, element |
 | # releases         | 2 |
-| # dependents       | 88 |
-| # downloads        | 10157888 |
+| # dependents       | 90 |
+| # downloads        | 10056431 |
 | # stars            | 1 |
 
 ## Links

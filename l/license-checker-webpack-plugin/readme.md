@@ -12,7 +12,7 @@ Verifies licenses of all external dependencies in a compilation, and outputs the
 | Keywords           | license, webpack |
 | # releases         | 16 |
 | # dependents       | 0 |
-| # downloads        | 102236 |
+| # downloads        | 106518 |
 | # stars            | 0 |
 
 ## Links

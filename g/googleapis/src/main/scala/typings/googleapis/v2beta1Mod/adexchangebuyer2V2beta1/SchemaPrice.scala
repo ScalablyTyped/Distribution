@@ -21,11 +21,30 @@ trait SchemaPrice extends js.Object {
 
 object SchemaPrice {
   @scala.inline
-  def apply(amount: SchemaMoney = null, pricingType: String = null): SchemaPrice = {
+  def apply(): SchemaPrice = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (pricingType != null) __obj.updateDynamic("pricingType")(pricingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPrice]
   }
+  @scala.inline
+  implicit class SchemaPriceOps[Self <: SchemaPrice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: SchemaMoney): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setPricingType(value: String): Self = this.set("pricingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricingType: Self = this.set("pricingType", js.undefined)
+  }
+  
 }
 

@@ -5,36 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CardView extends js.Object {
-  var AllowInCellEditing: Boolean
-  val Application: typings.activexOutlook.Outlook.Application
-  val AutoFormatRules: typings.activexOutlook.Outlook.AutoFormatRules
-  val BodyFont: ViewFont
-  val Class: OlObjectClass
-  var Filter: String
-  val HeadingsFont: ViewFont
-  var Language: String
-  var LockUserChanges: Boolean
-  var MultiLineFieldHeight: Double
-  var Name: String
+  var AllowInCellEditing: Boolean = js.native
+  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val AutoFormatRules: typings.activexOutlook.Outlook.AutoFormatRules = js.native
+  val BodyFont: ViewFont = js.native
+  val Class: OlObjectClass = js.native
+  var Filter: String = js.native
+  val HeadingsFont: ViewFont = js.native
+  var Language: String = js.native
+  var LockUserChanges: Boolean = js.native
+  var MultiLineFieldHeight: Double = js.native
+  var Name: String = js.native
   @JSName("Outlook.CardView_typekey")
-  var OutlookDotCardView_typekey: CardView
-  val Parent: js.Any
-  val SaveOption: OlViewSaveOption
-  val Session: NameSpace
-  var ShowEmptyFields: Boolean
-  val SortFields: OrderFields
-  val Standard: Boolean
-  val ViewFields: typings.activexOutlook.Outlook.ViewFields
-  val ViewType: OlViewType
-  var Width: Double
-  var XML: String
-  def Apply(): Unit
-  def Copy(Name: String, SaveOption: OlViewSaveOption): View
-  def Delete(): Unit
-  def GoToDate(Date: VarDate): Unit
-  def Reset(): Unit
-  def Save(): Unit
+  var OutlookDotCardView_typekey: CardView = js.native
+  val Parent: js.Any = js.native
+  val SaveOption: OlViewSaveOption = js.native
+  val Session: NameSpace = js.native
+  var ShowEmptyFields: Boolean = js.native
+  val SortFields: OrderFields = js.native
+  val Standard: Boolean = js.native
+  val ViewFields: typings.activexOutlook.Outlook.ViewFields = js.native
+  val ViewType: OlViewType = js.native
+  var Width: Double = js.native
+  var XML: String = js.native
+  def Apply(): Unit = js.native
+  def Copy(Name: String, SaveOption: OlViewSaveOption): View = js.native
+  def Delete(): Unit = js.native
+  def GoToDate(Date: VarDate): Unit = js.native
+  def Reset(): Unit = js.native
+  def Save(): Unit = js.native
 }
 
 object CardView {
@@ -73,5 +74,74 @@ object CardView {
     __obj.updateDynamic("Outlook.CardView_typekey")(OutlookDotCardView_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardView]
   }
+  @scala.inline
+  implicit class CardViewOps[Self <: CardView] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowInCellEditing(value: Boolean): Self = this.set("AllowInCellEditing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApply(value: () => Unit): Self = this.set("Apply", js.Any.fromFunction0(value))
+    @scala.inline
+    def setAutoFormatRules(value: AutoFormatRules): Self = this.set("AutoFormatRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBodyFont(value: ViewFont): Self = this.set("BodyFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCopy(value: (String, OlViewSaveOption) => View): Self = this.set("Copy", js.Any.fromFunction2(value))
+    @scala.inline
+    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGoToDate(value: VarDate => Unit): Self = this.set("GoToDate", js.Any.fromFunction1(value))
+    @scala.inline
+    def setHeadingsFont(value: ViewFont): Self = this.set("HeadingsFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("Language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLockUserChanges(value: Boolean): Self = this.set("LockUserChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMultiLineFieldHeight(value: Double): Self = this.set("MultiLineFieldHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutlookDotCardView_typekey(value: CardView): Self = this.set("Outlook.CardView_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReset(value: () => Unit): Self = this.set("Reset", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSave(value: () => Unit): Self = this.set("Save", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSaveOption(value: OlViewSaveOption): Self = this.set("SaveOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowEmptyFields(value: Boolean): Self = this.set("ShowEmptyFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSortFields(value: OrderFields): Self = this.set("SortFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStandard(value: Boolean): Self = this.set("Standard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setViewFields(value: ViewFields): Self = this.set("ViewFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setViewType(value: OlViewType): Self = this.set("ViewType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setXML(value: String): Self = this.set("XML", value.asInstanceOf[js.Any])
+  }
+  
 }
 

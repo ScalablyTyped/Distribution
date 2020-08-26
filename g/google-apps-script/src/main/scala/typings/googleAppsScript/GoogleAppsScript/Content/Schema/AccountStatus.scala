@@ -4,33 +4,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountStatus extends js.Object {
-  var accountId: js.UndefOr[String] = js.undefined
-  var accountLevelIssues: js.UndefOr[js.Array[AccountStatusAccountLevelIssue]] = js.undefined
-  var dataQualityIssues: js.UndefOr[js.Array[AccountStatusDataQualityIssue]] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var products: js.UndefOr[js.Array[AccountStatusProducts]] = js.undefined
-  var websiteClaimed: js.UndefOr[Boolean] = js.undefined
+  var accountId: js.UndefOr[String] = js.native
+  var accountLevelIssues: js.UndefOr[js.Array[AccountStatusAccountLevelIssue]] = js.native
+  var dataQualityIssues: js.UndefOr[js.Array[AccountStatusDataQualityIssue]] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var products: js.UndefOr[js.Array[AccountStatusProducts]] = js.native
+  var websiteClaimed: js.UndefOr[Boolean] = js.native
 }
 
 object AccountStatus {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    accountLevelIssues: js.Array[AccountStatusAccountLevelIssue] = null,
-    dataQualityIssues: js.Array[AccountStatusDataQualityIssue] = null,
-    kind: String = null,
-    products: js.Array[AccountStatusProducts] = null,
-    websiteClaimed: js.UndefOr[Boolean] = js.undefined
-  ): AccountStatus = {
+  def apply(): AccountStatus = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (accountLevelIssues != null) __obj.updateDynamic("accountLevelIssues")(accountLevelIssues.asInstanceOf[js.Any])
-    if (dataQualityIssues != null) __obj.updateDynamic("dataQualityIssues")(dataQualityIssues.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (products != null) __obj.updateDynamic("products")(products.asInstanceOf[js.Any])
-    if (!js.isUndefined(websiteClaimed)) __obj.updateDynamic("websiteClaimed")(websiteClaimed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountStatus]
   }
+  @scala.inline
+  implicit class AccountStatusOps[Self <: AccountStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAccountLevelIssuesVarargs(value: AccountStatusAccountLevelIssue*): Self = this.set("accountLevelIssues", js.Array(value :_*))
+    @scala.inline
+    def setAccountLevelIssues(value: js.Array[AccountStatusAccountLevelIssue]): Self = this.set("accountLevelIssues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountLevelIssues: Self = this.set("accountLevelIssues", js.undefined)
+    @scala.inline
+    def setDataQualityIssuesVarargs(value: AccountStatusDataQualityIssue*): Self = this.set("dataQualityIssues", js.Array(value :_*))
+    @scala.inline
+    def setDataQualityIssues(value: js.Array[AccountStatusDataQualityIssue]): Self = this.set("dataQualityIssues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataQualityIssues: Self = this.set("dataQualityIssues", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setProductsVarargs(value: AccountStatusProducts*): Self = this.set("products", js.Array(value :_*))
+    @scala.inline
+    def setProducts(value: js.Array[AccountStatusProducts]): Self = this.set("products", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProducts: Self = this.set("products", js.undefined)
+    @scala.inline
+    def setWebsiteClaimed(value: Boolean): Self = this.set("websiteClaimed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteClaimed: Self = this.set("websiteClaimed", js.undefined)
+  }
+  
 }
 

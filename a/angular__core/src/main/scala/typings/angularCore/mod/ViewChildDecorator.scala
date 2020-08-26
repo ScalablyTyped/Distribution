@@ -34,7 +34,7 @@ trait ViewChildDecorator
     * **Metadata Properties**:
     *
     * * **selector** - The directive type or the name used for querying.
-    * * **read** - True to read a different token from the queried elements.
+    * * **read** - Used to read a different token from the queried elements.
     * * **static** - True to resolve query results before change detection runs,
     * false to resolve after change detection. Defaults to false.
     *
@@ -44,7 +44,7 @@ trait ViewChildDecorator
     *   * A template reference variable as a string (e.g. query `<my-component #cmp></my-component>`
     * with `@ViewChild('cmp')`)
     *   * Any provider defined in the child component tree of the current component (e.g.
-    * `@ViewChild(SomeService) someService: SomeService`)
+    * `@ViewChild(SomeComponent) someComponent: SomeComponent`)
     *   * Any provider defined through a string token (e.g. `@ViewChild('someToken') someTokenVal:
     * any`)
     *   * A `TemplateRef` (e.g. query `<ng-template></ng-template>` with `@ViewChild(TemplateRef)

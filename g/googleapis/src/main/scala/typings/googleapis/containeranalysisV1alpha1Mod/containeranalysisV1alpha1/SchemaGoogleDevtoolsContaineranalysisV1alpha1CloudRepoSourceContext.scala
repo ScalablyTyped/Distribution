@@ -26,16 +26,34 @@ trait SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext extend
 
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext {
   @scala.inline
-  def apply(
-    aliasContext: SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext = null,
-    repoId: SchemaGoogleDevtoolsContaineranalysisV1alpha1RepoId = null,
-    revisionId: String = null
-  ): SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext = {
+  def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext = {
     val __obj = js.Dynamic.literal()
-    if (aliasContext != null) __obj.updateDynamic("aliasContext")(aliasContext.asInstanceOf[js.Any])
-    if (repoId != null) __obj.updateDynamic("repoId")(repoId.asInstanceOf[js.Any])
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContextOps[Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasContext(value: SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext): Self = this.set("aliasContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasContext: Self = this.set("aliasContext", js.undefined)
+    @scala.inline
+    def setRepoId(value: SchemaGoogleDevtoolsContaineranalysisV1alpha1RepoId): Self = this.set("repoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepoId: Self = this.set("repoId", js.undefined)
+    @scala.inline
+    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+  }
+  
 }
 

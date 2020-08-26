@@ -10,9 +10,9 @@ Load node modules according to tsconfig paths, in run-time or via API.
 | ------------------ | :-------------: |
 | Full name          | tsconfig-paths |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 216 |
-| # downloads        | 40820117 |
+| # releases         | 6 |
+| # dependents       | 227 |
+| # downloads        | 49476664 |
 | # stars            | 4 |
 
 ## Links

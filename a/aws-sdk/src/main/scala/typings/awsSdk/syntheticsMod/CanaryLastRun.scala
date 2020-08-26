@@ -18,11 +18,30 @@ trait CanaryLastRun extends js.Object {
 
 object CanaryLastRun {
   @scala.inline
-  def apply(CanaryName: CanaryName = null, LastRun: CanaryRun = null): CanaryLastRun = {
+  def apply(): CanaryLastRun = {
     val __obj = js.Dynamic.literal()
-    if (CanaryName != null) __obj.updateDynamic("CanaryName")(CanaryName.asInstanceOf[js.Any])
-    if (LastRun != null) __obj.updateDynamic("LastRun")(LastRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanaryLastRun]
   }
+  @scala.inline
+  implicit class CanaryLastRunOps[Self <: CanaryLastRun] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanaryName(value: CanaryName): Self = this.set("CanaryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanaryName: Self = this.set("CanaryName", js.undefined)
+    @scala.inline
+    def setLastRun(value: CanaryRun): Self = this.set("LastRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRun: Self = this.set("LastRun", js.undefined)
+  }
+  
 }
 

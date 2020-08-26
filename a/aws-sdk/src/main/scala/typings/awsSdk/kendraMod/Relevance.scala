@@ -30,20 +30,42 @@ trait Relevance extends js.Object {
 
 object Relevance {
   @scala.inline
-  def apply(
-    Duration: Duration = null,
-    Freshness: js.UndefOr[DocumentMetadataBoolean] = js.undefined,
-    Importance: js.UndefOr[Importance] = js.undefined,
-    RankOrder: Order = null,
-    ValueImportanceMap: ValueImportanceMap = null
-  ): Relevance = {
+  def apply(): Relevance = {
     val __obj = js.Dynamic.literal()
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(Freshness)) __obj.updateDynamic("Freshness")(Freshness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Importance)) __obj.updateDynamic("Importance")(Importance.get.asInstanceOf[js.Any])
-    if (RankOrder != null) __obj.updateDynamic("RankOrder")(RankOrder.asInstanceOf[js.Any])
-    if (ValueImportanceMap != null) __obj.updateDynamic("ValueImportanceMap")(ValueImportanceMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Relevance]
   }
+  @scala.inline
+  implicit class RelevanceOps[Self <: Relevance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: Duration): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setFreshness(value: DocumentMetadataBoolean): Self = this.set("Freshness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFreshness: Self = this.set("Freshness", js.undefined)
+    @scala.inline
+    def setImportance(value: Importance): Self = this.set("Importance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportance: Self = this.set("Importance", js.undefined)
+    @scala.inline
+    def setRankOrder(value: Order): Self = this.set("RankOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRankOrder: Self = this.set("RankOrder", js.undefined)
+    @scala.inline
+    def setValueImportanceMap(value: ValueImportanceMap): Self = this.set("ValueImportanceMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueImportanceMap: Self = this.set("ValueImportanceMap", js.undefined)
+  }
+  
 }
 

@@ -19,6 +19,10 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     * }
     */
   def frame(): this.type = js.native
+  def frame(
+    frameId: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
   def frame(frameId: String): this.type = js.native
   def frame(
     frameId: String,
@@ -48,6 +52,11 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     * Change focus to another window or close the current window. Shouldn't normally be used directly, instead `.switchWindow()` and `.closeWindow()` should be used.
     */
   def window(method: String): this.type = js.native
+  def window(
+    method: String,
+    handleOrName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
   def window(method: String, handleOrName: String): this.type = js.native
   def window(
     method: String,

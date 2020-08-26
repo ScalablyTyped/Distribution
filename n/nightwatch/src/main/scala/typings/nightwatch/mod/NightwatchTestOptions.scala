@@ -4,55 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NightwatchTestOptions extends NightwatchTestSettingGeneric {
-  var screenshots: Boolean
-  var screenshotsPath: String
+  var screenshots: Boolean = js.native
+  var screenshotsPath: String = js.native
 }
 
 object NightwatchTestOptions {
   @scala.inline
-  def apply(
-    screenshots: Boolean,
-    screenshotsPath: String,
-    access_key: String = null,
-    cli_args: js.Any = null,
-    desiredCapabilities: NightwatchDesiredCapabilities = null,
-    disable_colors: js.UndefOr[Boolean] = js.undefined,
-    end_session_on_fail: js.UndefOr[Boolean] = js.undefined,
-    exclude: js.Array[String] = null,
-    filter: String = null,
-    globals: NightwatchTestHooks = null,
-    launch_url: String = null,
-    log_screenshot_data: js.UndefOr[Boolean] = js.undefined,
-    output: js.UndefOr[Boolean] = js.undefined,
-    proxy: String = null,
-    selenium_host: String = null,
-    selenium_port: js.UndefOr[Double] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    skip_testcases_on_fail: js.UndefOr[Boolean] = js.undefined,
-    use_xpath: js.UndefOr[Boolean] = js.undefined,
-    username: String = null
-  ): NightwatchTestOptions = {
+  def apply(screenshots: Boolean, screenshotsPath: String): NightwatchTestOptions = {
     val __obj = js.Dynamic.literal(screenshots = screenshots.asInstanceOf[js.Any], screenshotsPath = screenshotsPath.asInstanceOf[js.Any])
-    if (access_key != null) __obj.updateDynamic("access_key")(access_key.asInstanceOf[js.Any])
-    if (cli_args != null) __obj.updateDynamic("cli_args")(cli_args.asInstanceOf[js.Any])
-    if (desiredCapabilities != null) __obj.updateDynamic("desiredCapabilities")(desiredCapabilities.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_colors)) __obj.updateDynamic("disable_colors")(disable_colors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(end_session_on_fail)) __obj.updateDynamic("end_session_on_fail")(end_session_on_fail.get.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
-    if (launch_url != null) __obj.updateDynamic("launch_url")(launch_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(log_screenshot_data)) __obj.updateDynamic("log_screenshot_data")(log_screenshot_data.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(output)) __obj.updateDynamic("output")(output.get.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (selenium_host != null) __obj.updateDynamic("selenium_host")(selenium_host.asInstanceOf[js.Any])
-    if (!js.isUndefined(selenium_port)) __obj.updateDynamic("selenium_port")(selenium_port.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip_testcases_on_fail)) __obj.updateDynamic("skip_testcases_on_fail")(skip_testcases_on_fail.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(use_xpath)) __obj.updateDynamic("use_xpath")(use_xpath.get.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchTestOptions]
   }
+  @scala.inline
+  implicit class NightwatchTestOptionsOps[Self <: NightwatchTestOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScreenshots(value: Boolean): Self = this.set("screenshots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScreenshotsPath(value: String): Self = this.set("screenshotsPath", value.asInstanceOf[js.Any])
+  }
+  
 }
 

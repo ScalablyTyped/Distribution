@@ -22,26 +22,22 @@ class RangeRuleInfo protected () extends RuleInfo {
   ) = this()
   @JSName("model")
   var model_FRangeRuleInfo: IModel = js.native
-  def maxAttribute(): js.Any = js.native
-  def maxAttribute(newValue: IAttribute): js.Any = js.native
+  def maxAttribute: IAttribute | Null = js.native
   def maxAttributeQualifiedName: String | Null = js.native
-  @JSName("maxAttribute")
-  def maxAttribute_Union: IAttribute | Null = js.native
+  def maxAttribute_=(newValue: IAttribute | Null): Unit = js.native
   def maxValue: String = js.native
-  def maxValue(newValue: String): js.Any = js.native
-  def minAttribute(): js.Any = js.native
-  def minAttribute(newValue: IAttribute): js.Any = js.native
+  def maxValue_=(newValue: String): Unit = js.native
+  def minAttribute: IAttribute | Null = js.native
   def minAttributeQualifiedName: String | Null = js.native
-  @JSName("minAttribute")
-  def minAttribute_Union: IAttribute | Null = js.native
+  def minAttribute_=(newValue: IAttribute | Null): Unit = js.native
   def minValue: String = js.native
-  def minValue(newValue: String): js.Any = js.native
+  def minValue_=(newValue: String): Unit = js.native
   def typeOfRange: RangeType = js.native
-  def typeOfRange(newValue: RangeType): js.Any = js.native
+  def typeOfRange_=(newValue: RangeType): Unit = js.native
   def useMaxValue: Boolean = js.native
-  def useMaxValue(newValue: Boolean): js.Any = js.native
+  def useMaxValue_=(newValue: Boolean): Unit = js.native
   def useMinValue: Boolean = js.native
-  def useMinValue(newValue: Boolean): js.Any = js.native
+  def useMinValue_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

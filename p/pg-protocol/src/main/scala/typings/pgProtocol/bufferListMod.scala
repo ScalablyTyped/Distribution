@@ -27,6 +27,7 @@ object bufferListMod extends js.Object {
     def getByteLength(): Double = js.native
     def getByteLength(initial: Double): Double = js.native
     def join(): Buffer = js.native
+    def join(appendLength: js.UndefOr[scala.Nothing], char: String): Buffer = js.native
     def join(appendLength: Boolean): Buffer = js.native
     def join(appendLength: Boolean, char: String): Buffer = js.native
   }

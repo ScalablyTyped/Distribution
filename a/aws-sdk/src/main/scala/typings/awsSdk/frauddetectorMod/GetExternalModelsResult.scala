@@ -18,11 +18,32 @@ trait GetExternalModelsResult extends js.Object {
 
 object GetExternalModelsResult {
   @scala.inline
-  def apply(externalModels: ExternalModelList = null, nextToken: String = null): GetExternalModelsResult = {
+  def apply(): GetExternalModelsResult = {
     val __obj = js.Dynamic.literal()
-    if (externalModels != null) __obj.updateDynamic("externalModels")(externalModels.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExternalModelsResult]
   }
+  @scala.inline
+  implicit class GetExternalModelsResultOps[Self <: GetExternalModelsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExternalModelsVarargs(value: ExternalModel*): Self = this.set("externalModels", js.Array(value :_*))
+    @scala.inline
+    def setExternalModels(value: ExternalModelList): Self = this.set("externalModels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalModels: Self = this.set("externalModels", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
   * @see {@link http://msdn.microsoft.com/en-us/library/bb397705(v=vs.100).aspx}
   * This type supports the .NET Framework infrastructure and is not intended to be used directly from your code.
   */
+@js.native
 trait Res extends js.Object
 

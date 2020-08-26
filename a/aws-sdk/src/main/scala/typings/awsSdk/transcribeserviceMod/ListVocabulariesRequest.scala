@@ -26,18 +26,38 @@ trait ListVocabulariesRequest extends js.Object {
 
 object ListVocabulariesRequest {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NameContains: VocabularyName = null,
-    NextToken: NextToken = null,
-    StateEquals: VocabularyState = null
-  ): ListVocabulariesRequest = {
+  def apply(): ListVocabulariesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StateEquals != null) __obj.updateDynamic("StateEquals")(StateEquals.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVocabulariesRequest]
   }
+  @scala.inline
+  implicit class ListVocabulariesRequestOps[Self <: ListVocabulariesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNameContains(value: VocabularyName): Self = this.set("NameContains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameContains: Self = this.set("NameContains", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStateEquals(value: VocabularyState): Self = this.set("StateEquals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateEquals: Self = this.set("StateEquals", js.undefined)
+  }
+  
 }
 

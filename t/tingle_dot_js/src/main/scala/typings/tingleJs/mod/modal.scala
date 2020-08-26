@@ -12,10 +12,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class modal () extends js.Object {
   def this(options: Options) = this()
-  def addFooterBtn(label: String, cssClass: js.UndefOr[String]): HTMLButtonElement = js.native
+  def addFooterBtn(label: String): HTMLButtonElement = js.native
   def addFooterBtn(
     label: String,
-    cssClass: js.UndefOr[String],
+    cssClass: js.UndefOr[scala.Nothing],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]
+  ): HTMLButtonElement = js.native
+  def addFooterBtn(label: String, cssClass: String): HTMLButtonElement = js.native
+  def addFooterBtn(
+    label: String,
+    cssClass: String,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]
   ): HTMLButtonElement = js.native
   def checkOverflow(): Unit = js.native

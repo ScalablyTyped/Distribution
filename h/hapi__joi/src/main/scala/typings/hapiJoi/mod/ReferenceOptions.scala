@@ -1,11 +1,11 @@
 package typings.hapiJoi.mod
 
 import typings.hapiJoi.anon.Global
-import typings.hapiJoi.hapiJoiBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReferenceOptions extends HierarchySeparatorOptions {
   /**
     * a function with the signature `function(value)` where `value` is the resolved reference value and the return value is the adjusted value to use.
@@ -14,53 +14,77 @@ trait ReferenceOptions extends HierarchySeparatorOptions {
     *
     * @example `(value) => value + 5`
     */
-  var adjust: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
+  var adjust: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
   /**
     * If set to a number, sets the reference relative starting point.
     * Cannot be combined with separator prefix characters.
     * Defaults to the reference key prefix (or 1 if none present)
     */
-  var ancestor: js.UndefOr[Double] = js.undefined
+  var ancestor: js.UndefOr[Double] = js.native
   /**
     * creates an in-reference.
     */
-  var in: js.UndefOr[Boolean] = js.undefined
+  var in: js.UndefOr[Boolean] = js.native
   /**
     * when true, the reference resolves by reaching into maps and sets.
     */
-  var iterables: js.UndefOr[Boolean] = js.undefined
+  var iterables: js.UndefOr[Boolean] = js.native
   /**
     * an array of array pairs using the format `[[key, value], [key, value]]` used to maps the resolved reference value to another value.
     * If the resolved value is not in the map, it is returned as-is.
     * Cannot be used with `adjust`.
     */
-  var map: js.UndefOr[js.Array[js.Tuple2[_, _]]] = js.undefined
+  var map: js.UndefOr[js.Array[js.Tuple2[_, _]]] = js.native
   /**
     * overrides default prefix characters.
     */
-  var prefix: js.UndefOr[Global] = js.undefined
+  var prefix: js.UndefOr[Global] = js.native
 }
 
 object ReferenceOptions {
   @scala.inline
-  def apply(
-    adjust: /* value */ js.Any => _ = null,
-    ancestor: js.UndefOr[Double] = js.undefined,
-    in: js.UndefOr[Boolean] = js.undefined,
-    iterables: js.UndefOr[Boolean] = js.undefined,
-    map: js.Array[js.Tuple2[_, _]] = null,
-    prefix: Global = null,
-    separator: String | `false` = null
-  ): ReferenceOptions = {
+  def apply(): ReferenceOptions = {
     val __obj = js.Dynamic.literal()
-    if (adjust != null) __obj.updateDynamic("adjust")(js.Any.fromFunction1(adjust))
-    if (!js.isUndefined(ancestor)) __obj.updateDynamic("ancestor")(ancestor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iterables)) __obj.updateDynamic("iterables")(iterables.get.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceOptions]
   }
+  @scala.inline
+  implicit class ReferenceOptionsOps[Self <: ReferenceOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdjust(value: /* value */ js.Any => _): Self = this.set("adjust", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAdjust: Self = this.set("adjust", js.undefined)
+    @scala.inline
+    def setAncestor(value: Double): Self = this.set("ancestor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAncestor: Self = this.set("ancestor", js.undefined)
+    @scala.inline
+    def setIn(value: Boolean): Self = this.set("in", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIn: Self = this.set("in", js.undefined)
+    @scala.inline
+    def setIterables(value: Boolean): Self = this.set("iterables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIterables: Self = this.set("iterables", js.undefined)
+    @scala.inline
+    def setMapVarargs(value: (js.Tuple2[js.Any, js.Any])*): Self = this.set("map", js.Array(value :_*))
+    @scala.inline
+    def setMap(value: js.Array[js.Tuple2[_, _]]): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMap: Self = this.set("map", js.undefined)
+    @scala.inline
+    def setPrefix(value: Global): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+  }
+  
 }
 

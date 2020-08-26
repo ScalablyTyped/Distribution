@@ -48,26 +48,54 @@ trait JobDefinitionState extends js.Object {
 
 object JobDefinitionState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    containerProperties: Input[String] = null,
-    name: Input[String] = null,
-    parameters: Input[StringDictionary[Input[String]]] = null,
-    retryStrategy: Input[JobDefinitionRetryStrategy] = null,
-    revision: Input[Double] = null,
-    timeout: Input[JobDefinitionTimeout] = null,
-    `type`: Input[String] = null
-  ): JobDefinitionState = {
+  def apply(): JobDefinitionState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (containerProperties != null) __obj.updateDynamic("containerProperties")(containerProperties.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(retryStrategy.asInstanceOf[js.Any])
-    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobDefinitionState]
   }
+  @scala.inline
+  implicit class JobDefinitionStateOps[Self <: JobDefinitionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setContainerProperties(value: Input[String]): Self = this.set("containerProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerProperties: Self = this.set("containerProperties", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParameters(value: Input[StringDictionary[Input[String]]]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setRetryStrategy(value: Input[JobDefinitionRetryStrategy]): Self = this.set("retryStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryStrategy: Self = this.set("retryStrategy", js.undefined)
+    @scala.inline
+    def setRevision(value: Input[Double]): Self = this.set("revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevision: Self = this.set("revision", js.undefined)
+    @scala.inline
+    def setTimeout(value: Input[JobDefinitionTimeout]): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

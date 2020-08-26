@@ -4,63 +4,96 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContentType extends Entity {
   // The collection of columns that are required by this content type
-  var columnLinks: js.UndefOr[js.Array[ColumnLink]] = js.undefined
+  var columnLinks: js.UndefOr[js.Array[ColumnLink]] = js.native
   // The descriptive text for the item.
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   // The name of the group this content type belongs to. Helps organize related content types.
-  var group: js.UndefOr[String] = js.undefined
+  var group: js.UndefOr[String] = js.native
   // Indicates whether the content type is hidden in the list's 'New' menu.
-  var hidden: js.UndefOr[Boolean] = js.undefined
+  var hidden: js.UndefOr[Boolean] = js.native
   /**
     * If this content type is inherited from another scope (like a site), provides a reference to the item where the content
     * type is defined.
     */
-  var inheritedFrom: js.UndefOr[ItemReference] = js.undefined
+  var inheritedFrom: js.UndefOr[ItemReference] = js.native
   // The name of the content type.
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   // Specifies the order in which the content type appears in the selection UI.
-  var order: js.UndefOr[ContentTypeOrder] = js.undefined
+  var order: js.UndefOr[ContentTypeOrder] = js.native
   // The unique identifier of the content type.
-  var parentId: js.UndefOr[String] = js.undefined
+  var parentId: js.UndefOr[String] = js.native
   // If true, the content type cannot be modified unless this value is first set to false.
-  var readOnly: js.UndefOr[Boolean] = js.undefined
+  var readOnly: js.UndefOr[Boolean] = js.native
   /**
     * If true, the content type cannot be modified by users or through push-down operations. Only site collection
     * administrators can seal or unseal content types.
     */
-  var `sealed`: js.UndefOr[Boolean] = js.undefined
+  var `sealed`: js.UndefOr[Boolean] = js.native
 }
 
 object ContentType {
   @scala.inline
-  def apply(
-    columnLinks: js.Array[ColumnLink] = null,
-    description: String = null,
-    group: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    inheritedFrom: ItemReference = null,
-    name: String = null,
-    order: ContentTypeOrder = null,
-    parentId: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    `sealed`: js.UndefOr[Boolean] = js.undefined
-  ): ContentType = {
+  def apply(): ContentType = {
     val __obj = js.Dynamic.literal()
-    if (columnLinks != null) __obj.updateDynamic("columnLinks")(columnLinks.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inheritedFrom != null) __obj.updateDynamic("inheritedFrom")(inheritedFrom.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`sealed`)) __obj.updateDynamic("sealed")(`sealed`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentType]
   }
+  @scala.inline
+  implicit class ContentTypeOps[Self <: ContentType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnLinksVarargs(value: ColumnLink*): Self = this.set("columnLinks", js.Array(value :_*))
+    @scala.inline
+    def setColumnLinks(value: js.Array[ColumnLink]): Self = this.set("columnLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnLinks: Self = this.set("columnLinks", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setInheritedFrom(value: ItemReference): Self = this.set("inheritedFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInheritedFrom: Self = this.set("inheritedFrom", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrder(value: ContentTypeOrder): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+    @scala.inline
+    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("parentId", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setSealed(value: Boolean): Self = this.set("sealed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSealed: Self = this.set("sealed", js.undefined)
+  }
+  
 }
 

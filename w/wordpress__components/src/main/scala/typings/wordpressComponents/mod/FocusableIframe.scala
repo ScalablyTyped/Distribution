@@ -1,0 +1,13 @@
+package typings.wordpressComponents.mod
+
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ComponentType
+import typings.wordpressComponents.focusableIframeMod.FocusableIframe.Props
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@wordpress/components", "FocusableIframe")
+@js.native
+object FocusableIframe extends TopLevel[ComponentType[Props]]
+

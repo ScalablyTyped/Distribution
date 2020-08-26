@@ -1,15 +1,8 @@
 package typings.winrtUwp.global.Windows.UI
 
-import typings.std.Date
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Uri
-import typings.winrtUwp.Windows.UI.Color
-import typings.winrtUwp.Windows.UI.StartScreen.ForegroundText
-import typings.winrtUwp.Windows.UI.StartScreen.JumpListItemKind
-import typings.winrtUwp.Windows.UI.StartScreen.JumpListSystemGroupKind
 import typings.winrtUwp.Windows.UI.StartScreen.TileOptions
 import typings.winrtUwp.Windows.UI.StartScreen.TileSize
 import scala.scalajs.js
@@ -23,47 +16,12 @@ object StartScreen extends js.Object {
   /** Provides functionality for selecting the type of system-managed jump list that is used by an app, adding custom task entry points to an app's jump list, and adding custom groups to an app's jump list. A jump list consists of an optional system-provided list of items, as well as optional app-provided items. Not all device families support jump lists. */
   @js.native
   abstract class JumpList ()
-    extends typings.winrtUwp.Windows.UI.StartScreen.JumpList {
-    /** Gets the list of JumpListItem 's for the jump list. Items is of type IVector(JumpListItem) . */
-    /* CompleteClass */
-    override var items: IVector[typings.winrtUwp.Windows.UI.StartScreen.JumpListItem] = js.native
-    /** Gets or sets the current type of the system managed jump list group. */
-    /* CompleteClass */
-    override var systemGroupKind: JumpListSystemGroupKind = js.native
-    /**
-      * Asynchronously saves changes to the jump list and its items.
-      * @return Returns an IAsyncAction object that is used to control the asynchronous operation. If the system does not support jump lists, the SaveAsync method has no effect and future calls to LoadCurrentAsync will produce an empty jump list. An app can check for this case using the IsSupported method.
-      */
-    /* CompleteClass */
-    override def saveAsync(): IPromiseWithIAsyncAction = js.native
-  }
+    extends typings.winrtUwp.Windows.UI.StartScreen.JumpList
   
   /** Provides functionality for creating and defining jump list items for an app's jump list. */
   @js.native
   abstract class JumpListItem ()
-    extends typings.winrtUwp.Windows.UI.StartScreen.JumpListItem {
-    /** Gets the command line arguments for the jump list item. */
-    /* CompleteClass */
-    override var arguments: String = js.native
-    /** Gets or sets the jump list item task description. */
-    /* CompleteClass */
-    override var description: String = js.native
-    /** Gets or sets the jump list item display name. The display name can also be specified as a parameter using the CreateWithArguments method when the jump list item is created. */
-    /* CompleteClass */
-    override var displayName: String = js.native
-    /** Gets or sets the jump list item custom group name. If no name is specified, the item will be added to the Tasks group by default. */
-    /* CompleteClass */
-    override var groupName: String = js.native
-    /** Gets the JumpListItemKind of a jump list item. */
-    /* CompleteClass */
-    override var kind: JumpListItemKind = js.native
-    /** Gets or sets the jump list item's logo. */
-    /* CompleteClass */
-    override var logo: Uri = js.native
-    /** Gets a boolean indicating whether the jump list item was removed from the app's jump list by the user. */
-    /* CompleteClass */
-    override var removedByUser: Boolean = js.native
-  }
+    extends typings.winrtUwp.Windows.UI.StartScreen.JumpListItem
   
   /** Creates, enumerates, and provides information about a secondary tile. */
   @js.native
@@ -125,83 +83,22 @@ object StartScreen extends js.Object {
   /** Contains properties through which you can get or set a secondary tile's background color, foreground text, tile images, and app name display options. The properties in this class replace these SecondaryTile properties: */
   @js.native
   abstract class SecondaryTileVisualElements ()
-    extends typings.winrtUwp.Windows.UI.StartScreen.SecondaryTileVisualElements {
-    /** Gets or sets the secondary tile's background color. */
-    /* CompleteClass */
-    override var backgroundColor: Color = js.native
-    /** Specifies whether the tile should use dark or light text. */
-    /* CompleteClass */
-    override var foregroundText: ForegroundText = js.native
-    /** Specifies whether the display name should be shown on the medium secondary tile. */
-    /* CompleteClass */
-    override var showNameOnSquare150x150Logo: Boolean = js.native
-    /** Specifies whether the display name should be shown on the large secondary tile. */
-    /* CompleteClass */
-    override var showNameOnSquare310x310Logo: Boolean = js.native
-    /** Specifies whether the display name should be shown on the wide secondary tile. */
-    /* CompleteClass */
-    override var showNameOnWide310x150Logo: Boolean = js.native
-    /** Gets or sets the medium secondary tile image. */
-    /* CompleteClass */
-    override var square150x150Logo: Uri = js.native
-    /** Gets or sets the square30x30 secondary tile image. */
-    /* CompleteClass */
-    override var square30x30Logo: Uri = js.native
-    /** Gets or sets the large secondary tile image. */
-    /* CompleteClass */
-    override var square310x310Logo: Uri = js.native
-    /** Gets or sets the square44x44 secondary tile image. */
-    /* CompleteClass */
-    override var square44x44Logo: Uri = js.native
-    /** Gets or sets the small secondary tile image. */
-    /* CompleteClass */
-    override var square70x70Logo: Uri = js.native
-    /** Gets or sets the small secondary tile image. */
-    /* CompleteClass */
-    override var square71x71Logo: Uri = js.native
-    /** Gets or sets the wide secondary tile image. */
-    /* CompleteClass */
-    override var wide310x150Logo: Uri = js.native
-  }
+    extends typings.winrtUwp.Windows.UI.StartScreen.SecondaryTileVisualElements
   
   /** Provides a method to delay the display of the Pin to Start flyout, as well as methods through which you can set the visual elements of the secondary tile to be presented in that flyout as well as alternate versions of the tile that can also be presented as options. */
   @js.native
   abstract class VisualElementsRequest ()
-    extends typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequest {
-    /** Gets a set of objects that provide alternate logo images, background and foreground colors, and display name. These alternates are shown to the user in the Pin to Start flyout. */
-    /* CompleteClass */
-    override var alternateVisualElements: IVectorView[typings.winrtUwp.Windows.UI.StartScreen.SecondaryTileVisualElements] = js.native
-    /** Gets the approximate time at which the deferral will time-out. */
-    /* CompleteClass */
-    override var deadline: Date = js.native
-    /** Gets a copy of the parent secondary tile's SecondaryTileVisualElements object. The visual elements properties can be set or read through this object. When deferral is complete (or the handler returns without a deferral), the properties in this object are verified and then reflected in the Pin to Start flyout. */
-    /* CompleteClass */
-    override var visualElements: typings.winrtUwp.Windows.UI.StartScreen.SecondaryTileVisualElements = js.native
-    /**
-      * Retrieves a deferral object, which allows the app time to provide information and assets used in the Pin to Start flyout.
-      * @return The deferral object.
-      */
-    /* CompleteClass */
-    override def getDeferral(): typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequestDeferral = js.native
-  }
+    extends typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequest
   
   /** A deferral object used during the creation of the Pin to Start flyout. By using this object, the app can delay the display of the flyout while it gathers the information and assets that will be shown in that flyout. */
   @js.native
   abstract class VisualElementsRequestDeferral ()
-    extends typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequestDeferral {
-    /** Tells Windows that the app is ready to display the Pin to Start flyout. The app calls this method when it has finished setting the properties that specify what to show in that flyout. */
-    /* CompleteClass */
-    override def complete(): Unit = js.native
-  }
+    extends typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequestDeferral
   
   /** Passed to the SecondaryTile.VisualElementsRequested event handler to provide the visual elements details. */
   @js.native
   abstract class VisualElementsRequestedEventArgs ()
-    extends typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequestedEventArgs {
-    /** Gets the VisualElementsRequest object for the event. */
-    /* CompleteClass */
-    override var request: typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequest = js.native
-  }
+    extends typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequestedEventArgs
   
   /** Specifies the color of the tile's foreground text. */
   @js.native

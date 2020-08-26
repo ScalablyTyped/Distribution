@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object touch extends js.Object {
   def apply(filepath: String): js.Promise[Unit] = js.native
+  def apply(filepath: String, mtime: js.UndefOr[scala.Nothing], ctime: Date): js.Promise[Unit] = js.native
   def apply(filepath: String, mtime: Date): js.Promise[Unit] = js.native
   def apply(filepath: String, mtime: Date, ctime: Date): js.Promise[Unit] = js.native
 }

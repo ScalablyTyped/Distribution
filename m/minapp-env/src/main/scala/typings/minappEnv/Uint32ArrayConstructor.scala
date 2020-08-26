@@ -31,6 +31,7 @@ trait Uint32ArrayConstructor
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
   def from(arrayLike: ArrayLike[Double]): Uint32Array = js.native
+  def from(arrayLike: ArrayLike[Double], mapfn: js.UndefOr[scala.Nothing], thisArg: js.Any): Uint32Array = js.native
   def from(arrayLike: ArrayLike[Double], mapfn: js.Function2[/* v */ Double, /* k */ Double, Double]): Uint32Array = js.native
   def from(
     arrayLike: ArrayLike[Double],
@@ -44,6 +45,7 @@ trait Uint32ArrayConstructor
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
   def from(arrayLike: Iterable[Double]): Uint32Array = js.native
+  def from(arrayLike: Iterable[Double], mapfn: js.UndefOr[scala.Nothing], thisArg: js.Any): Uint32Array = js.native
   def from(arrayLike: Iterable[Double], mapfn: js.Function2[/* v */ Double, /* k */ Double, Double]): Uint32Array = js.native
   def from(
     arrayLike: Iterable[Double],

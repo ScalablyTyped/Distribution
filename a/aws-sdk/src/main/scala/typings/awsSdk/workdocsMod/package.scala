@@ -116,12 +116,12 @@ package object workdocsMod {
   type IdType = java.lang.String
   type LimitType = scala.Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsSdk.awsSdkStrings.en
+    - typings.awsSdk.awsSdkStrings.en_
     - typings.awsSdk.awsSdkStrings.fr_
     - typings.awsSdk.awsSdkStrings.ko
     - typings.awsSdk.awsSdkStrings.de_
     - typings.awsSdk.awsSdkStrings.es_
-    - typings.awsSdk.awsSdkStrings.ja
+    - typings.awsSdk.awsSdkStrings.ja_
     - typings.awsSdk.awsSdkStrings.ru_
     - typings.awsSdk.awsSdkStrings.zh_CN
     - typings.awsSdk.awsSdkStrings.zh_TW

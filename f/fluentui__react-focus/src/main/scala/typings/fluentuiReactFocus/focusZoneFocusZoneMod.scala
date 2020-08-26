@@ -54,10 +54,6 @@ object focusZoneFocusZoneMod extends js.Object {
       * Handle the keystrokes.
       */
     var _onKeyDown: js.Any = js.native
-    /**
-      * Handle global tab presses so that we can patch tabindexes on the fly.
-      */
-    var _onKeyDownCapture: js.Any = js.native
     var _onMouseDown: js.Any = js.native
     var _parkedTabIndex: js.Any = js.native
     /**
@@ -96,6 +92,12 @@ object focusZoneFocusZoneMod extends js.Object {
   /* static members */
   @js.native
   object FocusZone extends js.Object {
+    /**
+      * Handle global tab presses so that we can patch tabindexes on the fly.
+      * HEADS UP: This must not be an arrow function in order to be referentially equal among instances
+      * for ref counting to work correctly!
+      */
+    var _onKeyDownCapture: js.Any = js.native
     var defaultProps: IFocusZoneProps = js.native
     /** Used for testing purposes only. */
     def getOuterZones(): Double = js.native

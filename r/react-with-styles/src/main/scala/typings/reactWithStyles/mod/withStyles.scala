@@ -22,6 +22,16 @@ object withStyles extends js.Object {
       ComponentState
     ]
   ] = js.native
+  def apply[T](styleFn: js.UndefOr[scala.Nothing], options: WithStylesOptions): js.Function1[
+    /* component */ ComponentType[_], 
+    ComponentClass[
+      Omit[
+        ElementConfig[ComponentType[_]], 
+        /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ typings.reactWithStyles.reactWithStylesStrings.css | styles | theme
+      ], 
+      ComponentState
+    ]
+  ] = js.native
   def apply[T](styleFn: js.Function1[/* theme */ T, Styles]): js.Function1[
     /* component */ ComponentType[_], 
     ComponentClass[

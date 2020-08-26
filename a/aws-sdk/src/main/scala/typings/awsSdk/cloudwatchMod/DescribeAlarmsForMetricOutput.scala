@@ -14,10 +14,28 @@ trait DescribeAlarmsForMetricOutput extends js.Object {
 
 object DescribeAlarmsForMetricOutput {
   @scala.inline
-  def apply(MetricAlarms: MetricAlarms = null): DescribeAlarmsForMetricOutput = {
+  def apply(): DescribeAlarmsForMetricOutput = {
     val __obj = js.Dynamic.literal()
-    if (MetricAlarms != null) __obj.updateDynamic("MetricAlarms")(MetricAlarms.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAlarmsForMetricOutput]
   }
+  @scala.inline
+  implicit class DescribeAlarmsForMetricOutputOps[Self <: DescribeAlarmsForMetricOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetricAlarmsVarargs(value: MetricAlarm*): Self = this.set("MetricAlarms", js.Array(value :_*))
+    @scala.inline
+    def setMetricAlarms(value: MetricAlarms): Self = this.set("MetricAlarms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricAlarms: Self = this.set("MetricAlarms", js.undefined)
+  }
+  
 }
 

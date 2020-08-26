@@ -52,22 +52,22 @@ trait Lightpick extends js.Object {
     * Set date when singleDate is true.
     */
   def setDate(): Unit = js.native
+  def setDate(date: js.UndefOr[InputDate], preventOnSelect: Boolean): Unit = js.native
   def setDate(date: InputDate): Unit = js.native
-  def setDate(date: InputDate, preventOnSelect: Boolean): Unit = js.native
   /**
     * Set date range.
     */
   def setDateRange(): Unit = js.native
+  def setDateRange(start: js.UndefOr[InputDate], end: js.UndefOr[InputDate], preventOnSelect: Boolean): Unit = js.native
+  def setDateRange(start: js.UndefOr[InputDate], end: InputDate): Unit = js.native
   def setDateRange(start: InputDate): Unit = js.native
-  def setDateRange(start: InputDate, end: InputDate): Unit = js.native
-  def setDateRange(start: InputDate, end: InputDate, preventOnSelect: Boolean): Unit = js.native
   def setDisableDates(dates: js.Array[DisabledDate]): Unit = js.native
   def setEndDate(): Unit = js.native
+  def setEndDate(date: js.UndefOr[InputDate], preventOnSelect: Boolean): Unit = js.native
   def setEndDate(date: InputDate): Unit = js.native
-  def setEndDate(date: InputDate, preventOnSelect: Boolean): Unit = js.native
   def setStartDate(): Unit = js.native
+  def setStartDate(date: js.UndefOr[InputDate], preventOnSelect: Boolean): Unit = js.native
   def setStartDate(date: InputDate): Unit = js.native
-  def setStartDate(date: InputDate, preventOnSelect: Boolean): Unit = js.native
   /**
     * Make the picker visible.
     */

@@ -18,11 +18,30 @@ trait PublicAccess extends js.Object {
 
 object PublicAccess {
   @scala.inline
-  def apply(EffectivePermission: String = null, PermissionConfiguration: PermissionConfiguration = null): PublicAccess = {
+  def apply(): PublicAccess = {
     val __obj = js.Dynamic.literal()
-    if (EffectivePermission != null) __obj.updateDynamic("EffectivePermission")(EffectivePermission.asInstanceOf[js.Any])
-    if (PermissionConfiguration != null) __obj.updateDynamic("PermissionConfiguration")(PermissionConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicAccess]
   }
+  @scala.inline
+  implicit class PublicAccessOps[Self <: PublicAccess] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEffectivePermission(value: String): Self = this.set("EffectivePermission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectivePermission: Self = this.set("EffectivePermission", js.undefined)
+    @scala.inline
+    def setPermissionConfiguration(value: PermissionConfiguration): Self = this.set("PermissionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionConfiguration: Self = this.set("PermissionConfiguration", js.undefined)
+  }
+  
 }
 

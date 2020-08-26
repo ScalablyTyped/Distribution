@@ -6,81 +6,136 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Metadata extends js.Object {
-  val author: js.UndefOr[AuthorMetadata | Null] = js.undefined
+  val author: js.UndefOr[AuthorMetadata | Null] = js.native
   /**
     * The electron-builder configuration.
     */
-  val build: js.UndefOr[Configuration] = js.undefined
+  val build: js.UndefOr[Configuration] = js.native
   /** @private */
-  val dependencies: js.UndefOr[StringDictionary[String]] = js.undefined
+  val dependencies: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * The application description.
     */
-  val description: js.UndefOr[String] = js.undefined
+  val description: js.UndefOr[String] = js.native
   /**
     * The url to the project [homepage](https://docs.npmjs.com/files/package.json#homepage) (NuGet Package `projectUrl` (optional) or Linux Package URL (required)).
     *
     * If not specified and your project repository is public on GitHub, it will be `https://github.com/${user}/${project}` by default.
     */
-  val homepage: js.UndefOr[String | Null] = js.undefined
+  val homepage: js.UndefOr[String | Null] = js.native
   /**
     * *linux-only.* The [license](https://docs.npmjs.com/files/package.json#license) name.
     */
-  val license: js.UndefOr[String | Null] = js.undefined
+  val license: js.UndefOr[String | Null] = js.native
   /** @private */
-  val main: js.UndefOr[String | Null] = js.undefined
+  val main: js.UndefOr[String | Null] = js.native
   /**
     * The application name.
     * @required
     */
-  val name: js.UndefOr[String] = js.undefined
+  val name: js.UndefOr[String] = js.native
   /** @private */
-  val productName: js.UndefOr[String | Null] = js.undefined
+  val productName: js.UndefOr[String | Null] = js.native
   /**
     * The [repository](https://docs.npmjs.com/files/package.json#repository).
     */
-  val repository: js.UndefOr[String | RepositoryInfo | Null] = js.undefined
+  val repository: js.UndefOr[String | RepositoryInfo | Null] = js.native
   /** @private */
-  val shortVersion: js.UndefOr[String | Null] = js.undefined
+  val shortVersion: js.UndefOr[String | Null] = js.native
   /** @private */
-  val shortVersionWindows: js.UndefOr[String | Null] = js.undefined
+  val shortVersionWindows: js.UndefOr[String | Null] = js.native
   /** @private */
-  val version: js.UndefOr[String] = js.undefined
+  val version: js.UndefOr[String] = js.native
 }
 
 object Metadata {
   @scala.inline
-  def apply(
-    author: js.UndefOr[Null | AuthorMetadata] = js.undefined,
-    build: Configuration = null,
-    dependencies: StringDictionary[String] = null,
-    description: String = null,
-    homepage: js.UndefOr[Null | String] = js.undefined,
-    license: js.UndefOr[Null | String] = js.undefined,
-    main: js.UndefOr[Null | String] = js.undefined,
-    name: String = null,
-    productName: js.UndefOr[Null | String] = js.undefined,
-    repository: js.UndefOr[Null | String | RepositoryInfo] = js.undefined,
-    shortVersion: js.UndefOr[Null | String] = js.undefined,
-    shortVersionWindows: js.UndefOr[Null | String] = js.undefined,
-    version: String = null
-  ): Metadata = {
+  def apply(): Metadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(author)) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(homepage)) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
-    if (!js.isUndefined(license)) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
-    if (!js.isUndefined(main)) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(productName)) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
-    if (!js.isUndefined(repository)) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
-    if (!js.isUndefined(shortVersion)) __obj.updateDynamic("shortVersion")(shortVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(shortVersionWindows)) __obj.updateDynamic("shortVersionWindows")(shortVersionWindows.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
+  @scala.inline
+  implicit class MetadataOps[Self <: Metadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthor(value: AuthorMetadata): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setAuthorNull: Self = this.set("author", null)
+    @scala.inline
+    def setBuild(value: Configuration): Self = this.set("build", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuild: Self = this.set("build", js.undefined)
+    @scala.inline
+    def setDependencies(value: StringDictionary[String]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setHomepage(value: String): Self = this.set("homepage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomepage: Self = this.set("homepage", js.undefined)
+    @scala.inline
+    def setHomepageNull: Self = this.set("homepage", null)
+    @scala.inline
+    def setLicense(value: String): Self = this.set("license", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicense: Self = this.set("license", js.undefined)
+    @scala.inline
+    def setLicenseNull: Self = this.set("license", null)
+    @scala.inline
+    def setMain(value: String): Self = this.set("main", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMain: Self = this.set("main", js.undefined)
+    @scala.inline
+    def setMainNull: Self = this.set("main", null)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProductName(value: String): Self = this.set("productName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductName: Self = this.set("productName", js.undefined)
+    @scala.inline
+    def setProductNameNull: Self = this.set("productName", null)
+    @scala.inline
+    def setRepository(value: String | RepositoryInfo): Self = this.set("repository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepository: Self = this.set("repository", js.undefined)
+    @scala.inline
+    def setRepositoryNull: Self = this.set("repository", null)
+    @scala.inline
+    def setShortVersion(value: String): Self = this.set("shortVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortVersion: Self = this.set("shortVersion", js.undefined)
+    @scala.inline
+    def setShortVersionNull: Self = this.set("shortVersion", null)
+    @scala.inline
+    def setShortVersionWindows(value: String): Self = this.set("shortVersionWindows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortVersionWindows: Self = this.set("shortVersionWindows", js.undefined)
+    @scala.inline
+    def setShortVersionWindowsNull: Self = this.set("shortVersionWindows", null)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait UpdateItemOutput extends js.Object {
 
 object UpdateItemOutput {
   @scala.inline
-  def apply(
-    Attributes: AttributeMap = null,
-    ConsumedCapacity: ConsumedCapacity = null,
-    ItemCollectionMetrics: ItemCollectionMetrics = null
-  ): UpdateItemOutput = {
+  def apply(): UpdateItemOutput = {
     val __obj = js.Dynamic.literal()
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity.asInstanceOf[js.Any])
-    if (ItemCollectionMetrics != null) __obj.updateDynamic("ItemCollectionMetrics")(ItemCollectionMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateItemOutput]
   }
+  @scala.inline
+  implicit class UpdateItemOutputOps[Self <: UpdateItemOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: AttributeMap): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setConsumedCapacity(value: ConsumedCapacity): Self = this.set("ConsumedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumedCapacity: Self = this.set("ConsumedCapacity", js.undefined)
+    @scala.inline
+    def setItemCollectionMetrics(value: ItemCollectionMetrics): Self = this.set("ItemCollectionMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemCollectionMetrics: Self = this.set("ItemCollectionMetrics", js.undefined)
+  }
+  
 }
 

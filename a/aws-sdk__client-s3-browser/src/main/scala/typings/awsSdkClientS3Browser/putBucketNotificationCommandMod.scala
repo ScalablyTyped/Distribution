@@ -27,17 +27,10 @@ object putBucketNotificationCommandMod extends js.Object {
           Blob
         ] {
     def this(input: PutBucketNotificationInput) = this()
-    /* CompleteClass */
-    override val input: PutBucketNotificationInput = js.native
     val middlewareStack: MiddlewareStack[PutBucketNotificationInput, PutBucketNotificationOutput, Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[PutBucketNotificationInput, PutBucketNotificationOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[PutBucketNotificationInput, PutBucketNotificationOutput] = js.native
   }

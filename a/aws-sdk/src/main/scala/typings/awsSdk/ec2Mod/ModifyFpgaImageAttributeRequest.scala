@@ -50,29 +50,66 @@ trait ModifyFpgaImageAttributeRequest extends js.Object {
 
 object ModifyFpgaImageAttributeRequest {
   @scala.inline
-  def apply(
-    FpgaImageId: FpgaImageId,
-    Attribute: FpgaImageAttributeName = null,
-    Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    LoadPermission: LoadPermissionModifications = null,
-    Name: String = null,
-    OperationType: OperationType = null,
-    ProductCodes: ProductCodeStringList = null,
-    UserGroups: UserGroupStringList = null,
-    UserIds: UserIdStringList = null
-  ): ModifyFpgaImageAttributeRequest = {
+  def apply(FpgaImageId: FpgaImageId): ModifyFpgaImageAttributeRequest = {
     val __obj = js.Dynamic.literal(FpgaImageId = FpgaImageId.asInstanceOf[js.Any])
-    if (Attribute != null) __obj.updateDynamic("Attribute")(Attribute.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (LoadPermission != null) __obj.updateDynamic("LoadPermission")(LoadPermission.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OperationType != null) __obj.updateDynamic("OperationType")(OperationType.asInstanceOf[js.Any])
-    if (ProductCodes != null) __obj.updateDynamic("ProductCodes")(ProductCodes.asInstanceOf[js.Any])
-    if (UserGroups != null) __obj.updateDynamic("UserGroups")(UserGroups.asInstanceOf[js.Any])
-    if (UserIds != null) __obj.updateDynamic("UserIds")(UserIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyFpgaImageAttributeRequest]
   }
+  @scala.inline
+  implicit class ModifyFpgaImageAttributeRequestOps[Self <: ModifyFpgaImageAttributeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFpgaImageId(value: FpgaImageId): Self = this.set("FpgaImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttribute(value: FpgaImageAttributeName): Self = this.set("Attribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttribute: Self = this.set("Attribute", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setLoadPermission(value: LoadPermissionModifications): Self = this.set("LoadPermission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadPermission: Self = this.set("LoadPermission", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOperationType(value: OperationType): Self = this.set("OperationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationType: Self = this.set("OperationType", js.undefined)
+    @scala.inline
+    def setProductCodesVarargs(value: String*): Self = this.set("ProductCodes", js.Array(value :_*))
+    @scala.inline
+    def setProductCodes(value: ProductCodeStringList): Self = this.set("ProductCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductCodes: Self = this.set("ProductCodes", js.undefined)
+    @scala.inline
+    def setUserGroupsVarargs(value: String*): Self = this.set("UserGroups", js.Array(value :_*))
+    @scala.inline
+    def setUserGroups(value: UserGroupStringList): Self = this.set("UserGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserGroups: Self = this.set("UserGroups", js.undefined)
+    @scala.inline
+    def setUserIdsVarargs(value: String*): Self = this.set("UserIds", js.Array(value :_*))
+    @scala.inline
+    def setUserIds(value: UserIdStringList): Self = this.set("UserIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserIds: Self = this.set("UserIds", js.undefined)
+  }
+  
 }
 

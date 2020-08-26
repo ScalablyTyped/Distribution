@@ -19,6 +19,7 @@ object RectangleOutlineGeometry extends js.Object {
   def pack(value: BoundingSphere, array: js.Array[Double]): js.Array[Double] = js.native
   def pack(value: BoundingSphere, array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
   def unpack(array: js.Array[Double]): RectangleOutlineGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: RectangleGeometry): RectangleOutlineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): RectangleOutlineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: RectangleGeometry): RectangleOutlineGeometry = js.native
 }

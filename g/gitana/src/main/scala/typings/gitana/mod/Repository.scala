@@ -39,6 +39,12 @@ class Repository protected () extends AbstractRepositoryObject {
   def readConflict(conflictId: String): MergeConflict = js.native
   def readRelease(releaseId: String): Release = js.native
   def startChanges(sourceBranchId: String, targetBranchId: String): js.Any = js.native
+  def startChanges(
+    sourceBranchId: String,
+    targetBranchId: String,
+    optionsOrCallback: js.UndefOr[scala.Nothing],
+    callback: js.Any
+  ): js.Any = js.native
   def startChanges(sourceBranchId: String, targetBranchId: String, optionsOrCallback: js.Any): js.Any = js.native
   def startChanges(sourceBranchId: String, targetBranchId: String, optionsOrCallback: js.Any, callback: js.Any): js.Any = js.native
   def startCopyFrom(sourceBranchId: String, targetBranchId: String, config: js.Any, callback: js.Any): js.Any = js.native

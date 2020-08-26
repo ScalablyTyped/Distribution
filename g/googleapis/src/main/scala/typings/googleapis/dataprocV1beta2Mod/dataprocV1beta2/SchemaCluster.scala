@@ -58,26 +58,56 @@ trait SchemaCluster extends js.Object {
 
 object SchemaCluster {
   @scala.inline
-  def apply(
-    clusterName: String = null,
-    clusterUuid: String = null,
-    config: SchemaClusterConfig = null,
-    labels: StringDictionary[String] = null,
-    metrics: SchemaClusterMetrics = null,
-    projectId: String = null,
-    status: SchemaClusterStatus = null,
-    statusHistory: js.Array[SchemaClusterStatus] = null
-  ): SchemaCluster = {
+  def apply(): SchemaCluster = {
     val __obj = js.Dynamic.literal()
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
-    if (clusterUuid != null) __obj.updateDynamic("clusterUuid")(clusterUuid.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusHistory != null) __obj.updateDynamic("statusHistory")(statusHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCluster]
   }
+  @scala.inline
+  implicit class SchemaClusterOps[Self <: SchemaCluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    @scala.inline
+    def setClusterUuid(value: String): Self = this.set("clusterUuid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterUuid: Self = this.set("clusterUuid", js.undefined)
+    @scala.inline
+    def setConfig(value: SchemaClusterConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMetrics(value: SchemaClusterMetrics): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaClusterStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusHistoryVarargs(value: SchemaClusterStatus*): Self = this.set("statusHistory", js.Array(value :_*))
+    @scala.inline
+    def setStatusHistory(value: js.Array[SchemaClusterStatus]): Self = this.set("statusHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusHistory: Self = this.set("statusHistory", js.undefined)
+  }
+  
 }
 

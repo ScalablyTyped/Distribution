@@ -24,10 +24,10 @@ class WidgetEnumerationValue protected () extends Element {
   @JSName("model")
   var model_FWidgetEnumerationValue: IModel = js.native
   def caption: String = js.native
-  def caption(newValue: String): js.Any = js.native
+  def caption_=(newValue: String): Unit = js.native
   def containerAsWidgetValueType: WidgetValueType = js.native
   def key: String = js.native
-  def key(newValue: String): js.Any = js.native
+  def key_=(newValue: String): Unit = js.native
 }
 
 /* static members */

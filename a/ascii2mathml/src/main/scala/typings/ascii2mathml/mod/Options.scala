@@ -8,39 +8,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var annotate: js.UndefOr[Boolean] = js.undefined
-  var bare: js.UndefOr[Boolean] = js.undefined
-  var colSep: js.UndefOr[String] = js.undefined
-  var decimalMark: js.UndefOr[String] = js.undefined
-  var dir: js.UndefOr[ltr | rtl] = js.undefined
-  var display: js.UndefOr[`inline` | block] = js.undefined
-  var rowSep: js.UndefOr[String] = js.undefined
-  var standalone: js.UndefOr[Boolean] = js.undefined
+  var annotate: js.UndefOr[Boolean] = js.native
+  var bare: js.UndefOr[Boolean] = js.native
+  var colSep: js.UndefOr[String] = js.native
+  var decimalMark: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[ltr | rtl] = js.native
+  var display: js.UndefOr[`inline` | block] = js.native
+  var rowSep: js.UndefOr[String] = js.native
+  var standalone: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    annotate: js.UndefOr[Boolean] = js.undefined,
-    bare: js.UndefOr[Boolean] = js.undefined,
-    colSep: String = null,
-    decimalMark: String = null,
-    dir: ltr | rtl = null,
-    display: `inline` | block = null,
-    rowSep: String = null,
-    standalone: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(annotate)) __obj.updateDynamic("annotate")(annotate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bare)) __obj.updateDynamic("bare")(bare.get.asInstanceOf[js.Any])
-    if (colSep != null) __obj.updateDynamic("colSep")(colSep.asInstanceOf[js.Any])
-    if (decimalMark != null) __obj.updateDynamic("decimalMark")(decimalMark.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (rowSep != null) __obj.updateDynamic("rowSep")(rowSep.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotate(value: Boolean): Self = this.set("annotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotate: Self = this.set("annotate", js.undefined)
+    @scala.inline
+    def setBare(value: Boolean): Self = this.set("bare", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBare: Self = this.set("bare", js.undefined)
+    @scala.inline
+    def setColSep(value: String): Self = this.set("colSep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColSep: Self = this.set("colSep", js.undefined)
+    @scala.inline
+    def setDecimalMark(value: String): Self = this.set("decimalMark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecimalMark: Self = this.set("decimalMark", js.undefined)
+    @scala.inline
+    def setDir(value: ltr | rtl): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setDisplay(value: `inline` | block): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setRowSep(value: String): Self = this.set("rowSep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowSep: Self = this.set("rowSep", js.undefined)
+    @scala.inline
+    def setStandalone(value: Boolean): Self = this.set("standalone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandalone: Self = this.set("standalone", js.undefined)
+  }
+  
 }
 

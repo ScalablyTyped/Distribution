@@ -22,9 +22,6 @@ object typedocStrings {
   sealed trait categoryOrder extends js.Object
   
   @js.native
-  sealed trait configFilePath extends IgnoredTsOptionKeys
-  
-  @js.native
   sealed trait declaration extends IgnoredTsOptionKeys
   
   @js.native
@@ -40,6 +37,9 @@ object typedocStrings {
   sealed trait disableOutputCheck extends js.Object
   
   @js.native
+  sealed trait disableSources extends js.Object
+  
+  @js.native
   sealed trait dts extends js.Object
   
   @js.native
@@ -53,6 +53,9 @@ object typedocStrings {
   
   @js.native
   sealed trait excludeExternals extends js.Object
+  
+  @js.native
+  sealed trait excludeNotDocumented extends js.Object
   
   @js.native
   sealed trait excludeNotExported extends js.Object
@@ -77,6 +80,9 @@ object typedocStrings {
   
   @js.native
   sealed trait gaSite extends js.Object
+  
+  @js.native
+  sealed trait gitRemote extends js.Object
   
   @js.native
   sealed trait gitRevision extends js.Object
@@ -191,8 +197,6 @@ object typedocStrings {
   @scala.inline
   def categoryOrder: categoryOrder = "categoryOrder".asInstanceOf[categoryOrder]
   @scala.inline
-  def configFilePath: configFilePath = "configFilePath".asInstanceOf[configFilePath]
-  @scala.inline
   def declaration: declaration = "declaration".asInstanceOf[declaration]
   @scala.inline
   def declarationDir: declarationDir = "declarationDir".asInstanceOf[declarationDir]
@@ -203,6 +207,8 @@ object typedocStrings {
   @scala.inline
   def disableOutputCheck: disableOutputCheck = "disableOutputCheck".asInstanceOf[disableOutputCheck]
   @scala.inline
+  def disableSources: disableSources = "disableSources".asInstanceOf[disableSources]
+  @scala.inline
   def dts: dts = "dts".asInstanceOf[dts]
   @scala.inline
   def emitDeclarationOnly: emitDeclarationOnly = "emitDeclarationOnly".asInstanceOf[emitDeclarationOnly]
@@ -212,6 +218,8 @@ object typedocStrings {
   def exclude: exclude = "exclude".asInstanceOf[exclude]
   @scala.inline
   def excludeExternals: excludeExternals = "excludeExternals".asInstanceOf[excludeExternals]
+  @scala.inline
+  def excludeNotDocumented: excludeNotDocumented = "excludeNotDocumented".asInstanceOf[excludeNotDocumented]
   @scala.inline
   def excludeNotExported: excludeNotExported = "excludeNotExported".asInstanceOf[excludeNotExported]
   @scala.inline
@@ -228,6 +236,8 @@ object typedocStrings {
   def gaID: gaID = "gaID".asInstanceOf[gaID]
   @scala.inline
   def gaSite: gaSite = "gaSite".asInstanceOf[gaSite]
+  @scala.inline
+  def gitRemote: gitRemote = "gitRemote".asInstanceOf[gitRemote]
   @scala.inline
   def gitRevision: gitRevision = "gitRevision".asInstanceOf[gitRevision]
   @scala.inline

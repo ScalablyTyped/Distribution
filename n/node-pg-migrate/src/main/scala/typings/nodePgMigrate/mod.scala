@@ -4,6 +4,8 @@ import typings.nodePgMigrate.dbMod.DBConnection
 import typings.nodePgMigrate.distTypesMod.Logger
 import typings.nodePgMigrate.distTypesMod.MigrationBuilderActions
 import typings.nodePgMigrate.distTypesMod.RunnerOption
+import typings.nodePgMigrate.migrationMod.CreateOptions
+import typings.nodePgMigrate.migrationMod.FilenameFormat
 import typings.nodePgMigrate.migrationMod.RunMigration
 import typings.nodePgMigrate.nodePgMigrateStrings.js_
 import typings.nodePgMigrate.nodePgMigrateStrings.sql
@@ -33,6 +35,14 @@ object mod extends js.Object {
       migrationPath: String,
       hasUpDown: MigrationBuilderActions,
       options: RunnerOption,
+      typeShorthands: js.UndefOr[scala.Nothing],
+      logger: Logger
+    ) = this()
+    def this(
+      db: DBConnection,
+      migrationPath: String,
+      hasUpDown: MigrationBuilderActions,
+      options: RunnerOption,
       typeShorthands: ColumnDefinitions,
       logger: Logger
     ) = this()
@@ -48,18 +58,97 @@ object mod extends js.Object {
   @js.native
   object Migration extends js.Object {
     def create(name: String, directory: String): js.Promise[String] = js.native
+    def create(
+      name: String,
+      directory: String,
+      _language: js.UndefOr[scala.Nothing],
+      _ignorePattern: js.UndefOr[scala.Nothing],
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = js.native
+    def create(name: String, directory: String, _language: js.UndefOr[scala.Nothing], _ignorePattern: String): js.Promise[String] = js.native
+    def create(
+      name: String,
+      directory: String,
+      _language: js.UndefOr[scala.Nothing],
+      _ignorePattern: String,
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = js.native
+    def create(name: String, directory: String, _language: CreateOptions): js.Promise[String] = js.native
+    def create(
+      name: String,
+      directory: String,
+      _language: CreateOptions,
+      _ignorePattern: js.UndefOr[scala.Nothing],
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = js.native
+    def create(name: String, directory: String, _language: CreateOptions, _ignorePattern: String): js.Promise[String] = js.native
+    def create(
+      name: String,
+      directory: String,
+      _language: CreateOptions,
+      _ignorePattern: String,
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = js.native
     @JSName("create")
-    def create_js(name: String, directory: String, language: js_): js.Promise[String] = js.native
+    def create_js(name: String, directory: String, _language: js_): js.Promise[String] = js.native
     @JSName("create")
-    def create_js(name: String, directory: String, language: js_, ignorePattern: String): js.Promise[String] = js.native
+    def create_js(
+      name: String,
+      directory: String,
+      _language: js_,
+      _ignorePattern: js.UndefOr[scala.Nothing],
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = js.native
     @JSName("create")
-    def create_sql(name: String, directory: String, language: sql): js.Promise[String] = js.native
+    def create_js(name: String, directory: String, _language: js_, _ignorePattern: String): js.Promise[String] = js.native
     @JSName("create")
-    def create_sql(name: String, directory: String, language: sql, ignorePattern: String): js.Promise[String] = js.native
+    def create_js(
+      name: String,
+      directory: String,
+      _language: js_,
+      _ignorePattern: String,
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = js.native
     @JSName("create")
-    def create_ts(name: String, directory: String, language: ts): js.Promise[String] = js.native
+    def create_sql(name: String, directory: String, _language: sql): js.Promise[String] = js.native
     @JSName("create")
-    def create_ts(name: String, directory: String, language: ts, ignorePattern: String): js.Promise[String] = js.native
+    def create_sql(
+      name: String,
+      directory: String,
+      _language: sql,
+      _ignorePattern: js.UndefOr[scala.Nothing],
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = js.native
+    @JSName("create")
+    def create_sql(name: String, directory: String, _language: sql, _ignorePattern: String): js.Promise[String] = js.native
+    @JSName("create")
+    def create_sql(
+      name: String,
+      directory: String,
+      _language: sql,
+      _ignorePattern: String,
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = js.native
+    @JSName("create")
+    def create_ts(name: String, directory: String, _language: ts): js.Promise[String] = js.native
+    @JSName("create")
+    def create_ts(
+      name: String,
+      directory: String,
+      _language: ts,
+      _ignorePattern: js.UndefOr[scala.Nothing],
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = js.native
+    @JSName("create")
+    def create_ts(name: String, directory: String, _language: ts, _ignorePattern: String): js.Promise[String] = js.native
+    @JSName("create")
+    def create_ts(
+      name: String,
+      directory: String,
+      _language: ts,
+      _ignorePattern: String,
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = js.native
   }
   
   /* static members */

@@ -60,22 +60,48 @@ trait SchemaQuotaOperation extends js.Object {
 
 object SchemaQuotaOperation {
   @scala.inline
-  def apply(
-    consumerId: String = null,
-    labels: StringDictionary[String] = null,
-    methodName: String = null,
-    operationId: String = null,
-    quotaMetrics: js.Array[SchemaMetricValueSet] = null,
-    quotaMode: String = null
-  ): SchemaQuotaOperation = {
+  def apply(): SchemaQuotaOperation = {
     val __obj = js.Dynamic.literal()
-    if (consumerId != null) __obj.updateDynamic("consumerId")(consumerId.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics.asInstanceOf[js.Any])
-    if (quotaMode != null) __obj.updateDynamic("quotaMode")(quotaMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuotaOperation]
   }
+  @scala.inline
+  implicit class SchemaQuotaOperationOps[Self <: SchemaQuotaOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumerId(value: String): Self = this.set("consumerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumerId: Self = this.set("consumerId", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMethodName(value: String): Self = this.set("methodName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethodName: Self = this.set("methodName", js.undefined)
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = this.set("quotaMetrics", js.Array(value :_*))
+    @scala.inline
+    def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = this.set("quotaMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaMetrics: Self = this.set("quotaMetrics", js.undefined)
+    @scala.inline
+    def setQuotaMode(value: String): Self = this.set("quotaMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaMode: Self = this.set("quotaMode", js.undefined)
+  }
+  
 }
 

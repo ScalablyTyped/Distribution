@@ -50,30 +50,62 @@ trait BackupSummary extends js.Object {
 
 object BackupSummary {
   @scala.inline
-  def apply(
-    BackupArn: BackupArn = null,
-    BackupCreationDateTime: BackupCreationDateTime = null,
-    BackupExpiryDateTime: Date = null,
-    BackupName: BackupName = null,
-    BackupSizeBytes: js.UndefOr[BackupSizeBytes] = js.undefined,
-    BackupStatus: BackupStatus = null,
-    BackupType: BackupType = null,
-    TableArn: TableArn = null,
-    TableId: TableId = null,
-    TableName: TableName = null
-  ): BackupSummary = {
+  def apply(): BackupSummary = {
     val __obj = js.Dynamic.literal()
-    if (BackupArn != null) __obj.updateDynamic("BackupArn")(BackupArn.asInstanceOf[js.Any])
-    if (BackupCreationDateTime != null) __obj.updateDynamic("BackupCreationDateTime")(BackupCreationDateTime.asInstanceOf[js.Any])
-    if (BackupExpiryDateTime != null) __obj.updateDynamic("BackupExpiryDateTime")(BackupExpiryDateTime.asInstanceOf[js.Any])
-    if (BackupName != null) __obj.updateDynamic("BackupName")(BackupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(BackupSizeBytes)) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.get.asInstanceOf[js.Any])
-    if (BackupStatus != null) __obj.updateDynamic("BackupStatus")(BackupStatus.asInstanceOf[js.Any])
-    if (BackupType != null) __obj.updateDynamic("BackupType")(BackupType.asInstanceOf[js.Any])
-    if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn.asInstanceOf[js.Any])
-    if (TableId != null) __obj.updateDynamic("TableId")(TableId.asInstanceOf[js.Any])
-    if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupSummary]
   }
+  @scala.inline
+  implicit class BackupSummaryOps[Self <: BackupSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupArn(value: BackupArn): Self = this.set("BackupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupArn: Self = this.set("BackupArn", js.undefined)
+    @scala.inline
+    def setBackupCreationDateTime(value: BackupCreationDateTime): Self = this.set("BackupCreationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupCreationDateTime: Self = this.set("BackupCreationDateTime", js.undefined)
+    @scala.inline
+    def setBackupExpiryDateTime(value: Date): Self = this.set("BackupExpiryDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupExpiryDateTime: Self = this.set("BackupExpiryDateTime", js.undefined)
+    @scala.inline
+    def setBackupName(value: BackupName): Self = this.set("BackupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupName: Self = this.set("BackupName", js.undefined)
+    @scala.inline
+    def setBackupSizeBytes(value: BackupSizeBytes): Self = this.set("BackupSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupSizeBytes: Self = this.set("BackupSizeBytes", js.undefined)
+    @scala.inline
+    def setBackupStatus(value: BackupStatus): Self = this.set("BackupStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupStatus: Self = this.set("BackupStatus", js.undefined)
+    @scala.inline
+    def setBackupType(value: BackupType): Self = this.set("BackupType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupType: Self = this.set("BackupType", js.undefined)
+    @scala.inline
+    def setTableArn(value: TableArn): Self = this.set("TableArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableArn: Self = this.set("TableArn", js.undefined)
+    @scala.inline
+    def setTableId(value: TableId): Self = this.set("TableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableId: Self = this.set("TableId", js.undefined)
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableName: Self = this.set("TableName", js.undefined)
+  }
+  
 }
 

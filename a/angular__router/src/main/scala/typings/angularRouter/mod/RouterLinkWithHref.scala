@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCommon.mod.LocationStrategy
 import typings.angularCore.mod.OnChanges
 import typings.angularCore.mod.OnDestroy
-import typings.angularCore.mod.SimpleChanges
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,37 +66,19 @@ class RouterLinkWithHref protected ()
   var target: String = js.native
   var updateTargetUrlAndHref: js.Any = js.native
   def ngOnChanges(changes: js.Object): js.Any = js.native
-  /**
-    * A callback method that is invoked immediately after the
-    * default change detector has checked data-bound properties
-    * if at least one has changed, and before the view and content
-    * children are checked.
-    * @param changes The changed properties.
-    */
-  /* CompleteClass */
-  override def ngOnChanges(changes: SimpleChanges): Unit = js.native
-  /**
-    * A callback method that performs custom clean-up, invoked immediately
-    * before a directive, pipe, or service instance is destroyed.
-    */
-  /* CompleteClass */
-  override def ngOnDestroy(): Unit = js.native
   def onClick(button: Double, ctrlKey: Boolean, metaKey: Boolean, shiftKey: Boolean): Boolean = js.native
   /**
     * @deprecated As of Angular v4.0 use `queryParamsHandling` instead.
     */
-  def preserveQueryParams(value: Boolean): js.Any = js.native
+  def preserveQueryParams_=(value: Boolean): Unit = js.native
   /**
-    * @param commands An array of commands to pass to {@link Router#createUrlTree
-    *     Router#createUrlTree}.
+    * Commands to pass to {@link Router#createUrlTree Router#createUrlTree}.
     *   - **array**: commands to pass to {@link Router#createUrlTree Router#createUrlTree}.
     *   - **string**: shorthand for array of commands with just the string, i.e. `['/route']`
     *   - **null|undefined**: shorthand for an empty array of commands, i.e. `[]`
     * @see {@link Router#createUrlTree Router#createUrlTree}
     */
-  def routerLink(): js.Any = js.native
-  def routerLink(commands: String): js.Any = js.native
-  def routerLink(commands: js.Array[_]): js.Any = js.native
+  def routerLink_=(commands: js.UndefOr[js.Array[_] | String | Null]): Unit = js.native
   def urlTree: UrlTree = js.native
 }
 

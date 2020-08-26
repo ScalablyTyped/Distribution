@@ -52,8 +52,10 @@ object fsx extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.lustreFileSystemMod.LustreFileSystem = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.lustreFileSystemMod.LustreFileSystem = js.native
     def get(name: String, id: Input[ID], state: LustreFileSystemState): typings.pulumiAws.lustreFileSystemMod.LustreFileSystem = js.native
     def get(name: String, id: Input[ID], state: LustreFileSystemState, opts: CustomResourceOptions): typings.pulumiAws.lustreFileSystemMod.LustreFileSystem = js.native
     /**
@@ -73,8 +75,10 @@ object fsx extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.windowsFileSystemMod.WindowsFileSystem = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.windowsFileSystemMod.WindowsFileSystem = js.native
     def get(name: String, id: Input[ID], state: WindowsFileSystemState): typings.pulumiAws.windowsFileSystemMod.WindowsFileSystem = js.native
     def get(name: String, id: Input[ID], state: WindowsFileSystemState, opts: CustomResourceOptions): typings.pulumiAws.windowsFileSystemMod.WindowsFileSystem = js.native
     /**

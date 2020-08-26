@@ -26,15 +26,32 @@ trait PostAgentProfileRequest extends js.Object {
 
 object PostAgentProfileRequest {
   @scala.inline
-  def apply(
-    agentProfile: AgentProfile,
-    contentType: String,
-    profilingGroupName: ProfilingGroupName,
-    profileToken: ClientToken = null
-  ): PostAgentProfileRequest = {
+  def apply(agentProfile: AgentProfile, contentType: String, profilingGroupName: ProfilingGroupName): PostAgentProfileRequest = {
     val __obj = js.Dynamic.literal(agentProfile = agentProfile.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
-    if (profileToken != null) __obj.updateDynamic("profileToken")(profileToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostAgentProfileRequest]
   }
+  @scala.inline
+  implicit class PostAgentProfileRequestOps[Self <: PostAgentProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentProfile(value: AgentProfile): Self = this.set("agentProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfileToken(value: ClientToken): Self = this.set("profileToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileToken: Self = this.set("profileToken", js.undefined)
+  }
+  
 }
 

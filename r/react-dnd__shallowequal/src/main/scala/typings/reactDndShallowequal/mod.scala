@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def shallowEqual[T](objA: T, objB: T): Boolean = js.native
+  def shallowEqual[T](objA: T, objB: T, compare: js.UndefOr[scala.Nothing], compareContext: js.Any): Boolean = js.native
   def shallowEqual[T](
     objA: T,
     objB: T,

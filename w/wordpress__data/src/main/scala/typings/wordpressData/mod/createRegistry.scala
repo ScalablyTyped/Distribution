@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createRegistry extends js.Object {
   def apply(): DataRegistry = js.native
+  def apply(storeConfigs: js.UndefOr[scala.Nothing], parent: DataRegistry): DataRegistry = js.native
   def apply(storeConfigs: js.Object): DataRegistry = js.native
   def apply(storeConfigs: js.Object, parent: DataRegistry): DataRegistry = js.native
 }

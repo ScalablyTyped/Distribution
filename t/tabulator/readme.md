@@ -12,7 +12,7 @@ Put data into tables
 | Keywords           | - |
 | # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 4884 |
+| # downloads        | 5362 |
 | # stars            | 0 |
 
 ## Links

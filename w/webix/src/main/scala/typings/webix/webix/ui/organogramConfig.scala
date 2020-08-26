@@ -8,150 +8,261 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait organogramConfig extends js.Object {
-  var animate: js.UndefOr[js.Any] = js.undefined
-  var ariaLabel: js.UndefOr[String] = js.undefined
-  var autoheight: js.UndefOr[Boolean] = js.undefined
-  var autowidth: js.UndefOr[Boolean] = js.undefined
-  var borderless: js.UndefOr[Boolean] = js.undefined
-  var click: js.UndefOr[String | WebixCallback] = js.undefined
-  var container: js.UndefOr[String | HTMLElement] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[String | js.Array[_]] = js.undefined
-  var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
-  var datathrottle: js.UndefOr[Double] = js.undefined
-  var datatype: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var filterMode: js.UndefOr[js.Any] = js.undefined
-  var gravity: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var id: js.UndefOr[String | Double] = js.undefined
-  var item: js.UndefOr[js.Any] = js.undefined
-  var keyPressTimeout: js.UndefOr[Double] = js.undefined
-  var maxHeight: js.UndefOr[Double] = js.undefined
-  var maxWidth: js.UndefOr[Double] = js.undefined
-  var minHeight: js.UndefOr[Double] = js.undefined
-  var minWidth: js.UndefOr[Double] = js.undefined
-  var mouseEventDelay: js.UndefOr[Double] = js.undefined
-  var multiselect: js.UndefOr[String | Boolean] = js.undefined
-  var on: js.UndefOr[EventHash] = js.undefined
-  var onClick: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var onContext: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var onDblClick: js.UndefOr[WebixCallback] = js.undefined
-  var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
-  var ready: js.UndefOr[WebixCallback] = js.undefined
-  var removeMissed: js.UndefOr[Boolean] = js.undefined
-  var save: js.UndefOr[js.Any] = js.undefined
-  var scheme: js.UndefOr[js.Any] = js.undefined
-  var scroll: js.UndefOr[Boolean | String] = js.undefined
-  var scrollSpeed: js.UndefOr[String] = js.undefined
-  var select: js.UndefOr[Boolean | String] = js.undefined
-  var template: js.UndefOr[String | WebixCallback] = js.undefined
-  var threeState: js.UndefOr[Boolean] = js.undefined
-  var tooltip: js.UndefOr[js.Any] = js.undefined
-  var `type`: js.UndefOr[js.Any] = js.undefined
-  var url: js.UndefOr[js.Any] = js.undefined
-  var view: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var animate: js.UndefOr[js.Any] = js.native
+  var ariaLabel: js.UndefOr[String] = js.native
+  var autoheight: js.UndefOr[Boolean] = js.native
+  var autowidth: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.native
+  var click: js.UndefOr[String | WebixCallback] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.native
+  var css: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var dataFeed: js.UndefOr[String | WebixCallback] = js.native
+  var datathrottle: js.UndefOr[Double] = js.native
+  var datatype: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var filterMode: js.UndefOr[js.Any] = js.native
+  var gravity: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[String | Double] = js.native
+  var item: js.UndefOr[js.Any] = js.native
+  var keyPressTimeout: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.native
+  var mouseEventDelay: js.UndefOr[Double] = js.native
+  var multiselect: js.UndefOr[String | Boolean] = js.native
+  var on: js.UndefOr[EventHash] = js.native
+  var onClick: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var onContext: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var onDblClick: js.UndefOr[WebixCallback] = js.native
+  var onMouseMove: js.UndefOr[WebixCallback] = js.native
+  var ready: js.UndefOr[WebixCallback] = js.native
+  var removeMissed: js.UndefOr[Boolean] = js.native
+  var save: js.UndefOr[js.Any] = js.native
+  var scheme: js.UndefOr[js.Any] = js.native
+  var scroll: js.UndefOr[Boolean | String] = js.native
+  var scrollSpeed: js.UndefOr[String] = js.native
+  var select: js.UndefOr[Boolean | String] = js.native
+  var template: js.UndefOr[String | WebixCallback] = js.native
+  var threeState: js.UndefOr[Boolean] = js.native
+  var tooltip: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.native
+  var view: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object organogramConfig {
   @scala.inline
-  def apply(
-    animate: js.Any = null,
-    ariaLabel: String = null,
-    autoheight: js.UndefOr[Boolean] = js.undefined,
-    autowidth: js.UndefOr[Boolean] = js.undefined,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    click: String | WebixCallback = null,
-    container: String | HTMLElement = null,
-    css: js.Any = null,
-    data: String | js.Array[_] = null,
-    dataFeed: String | WebixCallback = null,
-    datathrottle: js.UndefOr[Double] = js.undefined,
-    datatype: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    filterMode: js.Any = null,
-    gravity: js.UndefOr[Double] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String | Double = null,
-    item: js.Any = null,
-    keyPressTimeout: js.UndefOr[Double] = js.undefined,
-    maxHeight: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    minHeight: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    mouseEventDelay: js.UndefOr[Double] = js.undefined,
-    multiselect: String | Boolean = null,
-    on: EventHash = null,
-    onClick: StringDictionary[js.Any] = null,
-    onContext: StringDictionary[js.Any] = null,
-    onDblClick: /* repeated */ js.Any => js.Any = null,
-    onMouseMove: /* repeated */ js.Any => js.Any = null,
-    ready: /* repeated */ js.Any => js.Any = null,
-    removeMissed: js.UndefOr[Boolean] = js.undefined,
-    save: js.Any = null,
-    scheme: js.Any = null,
-    scroll: Boolean | String = null,
-    scrollSpeed: String = null,
-    select: Boolean | String = null,
-    template: String | WebixCallback = null,
-    threeState: js.UndefOr[Boolean] = js.undefined,
-    tooltip: js.Any = null,
-    `type`: js.Any = null,
-    url: js.Any = null,
-    view: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): organogramConfig = {
+  def apply(): organogramConfig = {
     val __obj = js.Dynamic.literal()
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoheight)) __obj.updateDynamic("autoheight")(autoheight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autowidth)) __obj.updateDynamic("autowidth")(autowidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.get.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataFeed != null) __obj.updateDynamic("dataFeed")(dataFeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(datathrottle)) __obj.updateDynamic("datathrottle")(datathrottle.get.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(gravity)) __obj.updateDynamic("gravity")(gravity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyPressTimeout)) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseEventDelay)) __obj.updateDynamic("mouseEventDelay")(mouseEventDelay.get.asInstanceOf[js.Any])
-    if (multiselect != null) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (onContext != null) __obj.updateDynamic("onContext")(onContext.asInstanceOf[js.Any])
-    if (onDblClick != null) __obj.updateDynamic("onDblClick")(js.Any.fromFunction1(onDblClick))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.get.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(threeState)) __obj.updateDynamic("threeState")(threeState.get.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[organogramConfig]
   }
+  @scala.inline
+  implicit class organogramConfigOps[Self <: organogramConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimate(value: js.Any): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setAriaLabel(value: String): Self = this.set("ariaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaLabel: Self = this.set("ariaLabel", js.undefined)
+    @scala.inline
+    def setAutoheight(value: Boolean): Self = this.set("autoheight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoheight: Self = this.set("autoheight", js.undefined)
+    @scala.inline
+    def setAutowidth(value: Boolean): Self = this.set("autowidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutowidth: Self = this.set("autowidth", js.undefined)
+    @scala.inline
+    def setBorderless(value: Boolean): Self = this.set("borderless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderless: Self = this.set("borderless", js.undefined)
+    @scala.inline
+    def setClickFunction1(value: /* repeated */ js.Any => js.Any): Self = this.set("click", js.Any.fromFunction1(value))
+    @scala.inline
+    def setClick(value: String | WebixCallback): Self = this.set("click", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClick: Self = this.set("click", js.undefined)
+    @scala.inline
+    def setContainer(value: String | HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setCss(value: js.Any): Self = this.set("css", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCss: Self = this.set("css", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: String | js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataFeedFunction1(value: /* repeated */ js.Any => js.Any): Self = this.set("dataFeed", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDataFeed(value: String | WebixCallback): Self = this.set("dataFeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataFeed: Self = this.set("dataFeed", js.undefined)
+    @scala.inline
+    def setDatathrottle(value: Double): Self = this.set("datathrottle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatathrottle: Self = this.set("datathrottle", js.undefined)
+    @scala.inline
+    def setDatatype(value: String): Self = this.set("datatype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatatype: Self = this.set("datatype", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setFilterMode(value: js.Any): Self = this.set("filterMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterMode: Self = this.set("filterMode", js.undefined)
+    @scala.inline
+    def setGravity(value: Double): Self = this.set("gravity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGravity: Self = this.set("gravity", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItem(value: js.Any): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setKeyPressTimeout(value: Double): Self = this.set("keyPressTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPressTimeout: Self = this.set("keyPressTimeout", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setMouseEventDelay(value: Double): Self = this.set("mouseEventDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseEventDelay: Self = this.set("mouseEventDelay", js.undefined)
+    @scala.inline
+    def setMultiselect(value: String | Boolean): Self = this.set("multiselect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiselect: Self = this.set("multiselect", js.undefined)
+    @scala.inline
+    def setOn(value: EventHash): Self = this.set("on", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOn: Self = this.set("on", js.undefined)
+    @scala.inline
+    def setOnClick(value: StringDictionary[js.Any]): Self = this.set("onClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnContext(value: StringDictionary[js.Any]): Self = this.set("onContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnContext: Self = this.set("onContext", js.undefined)
+    @scala.inline
+    def setOnDblClick(value: /* repeated */ js.Any => js.Any): Self = this.set("onDblClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDblClick: Self = this.set("onDblClick", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: /* repeated */ js.Any => js.Any): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setReady(value: /* repeated */ js.Any => js.Any): Self = this.set("ready", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteReady: Self = this.set("ready", js.undefined)
+    @scala.inline
+    def setRemoveMissed(value: Boolean): Self = this.set("removeMissed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveMissed: Self = this.set("removeMissed", js.undefined)
+    @scala.inline
+    def setSave(value: js.Any): Self = this.set("save", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSave: Self = this.set("save", js.undefined)
+    @scala.inline
+    def setScheme(value: js.Any): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheme: Self = this.set("scheme", js.undefined)
+    @scala.inline
+    def setScroll(value: Boolean | String): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScroll: Self = this.set("scroll", js.undefined)
+    @scala.inline
+    def setScrollSpeed(value: String): Self = this.set("scrollSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollSpeed: Self = this.set("scrollSpeed", js.undefined)
+    @scala.inline
+    def setSelect(value: Boolean | String): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setTemplateFunction1(value: /* repeated */ js.Any => js.Any): Self = this.set("template", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTemplate(value: String | WebixCallback): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setThreeState(value: Boolean): Self = this.set("threeState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreeState: Self = this.set("threeState", js.undefined)
+    @scala.inline
+    def setTooltip(value: js.Any): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUrl(value: js.Any): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

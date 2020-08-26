@@ -62,30 +62,62 @@ trait SchemaCounterStructuredName extends js.Object {
 
 object SchemaCounterStructuredName {
   @scala.inline
-  def apply(
-    componentStepName: String = null,
-    executionStepName: String = null,
-    inputIndex: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    origin: String = null,
-    originNamespace: String = null,
-    originalRequestingStepName: String = null,
-    originalStepName: String = null,
-    portion: String = null,
-    workerId: String = null
-  ): SchemaCounterStructuredName = {
+  def apply(): SchemaCounterStructuredName = {
     val __obj = js.Dynamic.literal()
-    if (componentStepName != null) __obj.updateDynamic("componentStepName")(componentStepName.asInstanceOf[js.Any])
-    if (executionStepName != null) __obj.updateDynamic("executionStepName")(executionStepName.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputIndex)) __obj.updateDynamic("inputIndex")(inputIndex.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (originNamespace != null) __obj.updateDynamic("originNamespace")(originNamespace.asInstanceOf[js.Any])
-    if (originalRequestingStepName != null) __obj.updateDynamic("originalRequestingStepName")(originalRequestingStepName.asInstanceOf[js.Any])
-    if (originalStepName != null) __obj.updateDynamic("originalStepName")(originalStepName.asInstanceOf[js.Any])
-    if (portion != null) __obj.updateDynamic("portion")(portion.asInstanceOf[js.Any])
-    if (workerId != null) __obj.updateDynamic("workerId")(workerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCounterStructuredName]
   }
+  @scala.inline
+  implicit class SchemaCounterStructuredNameOps[Self <: SchemaCounterStructuredName] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentStepName(value: String): Self = this.set("componentStepName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentStepName: Self = this.set("componentStepName", js.undefined)
+    @scala.inline
+    def setExecutionStepName(value: String): Self = this.set("executionStepName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionStepName: Self = this.set("executionStepName", js.undefined)
+    @scala.inline
+    def setInputIndex(value: Double): Self = this.set("inputIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputIndex: Self = this.set("inputIndex", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+    @scala.inline
+    def setOriginNamespace(value: String): Self = this.set("originNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginNamespace: Self = this.set("originNamespace", js.undefined)
+    @scala.inline
+    def setOriginalRequestingStepName(value: String): Self = this.set("originalRequestingStepName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalRequestingStepName: Self = this.set("originalRequestingStepName", js.undefined)
+    @scala.inline
+    def setOriginalStepName(value: String): Self = this.set("originalStepName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalStepName: Self = this.set("originalStepName", js.undefined)
+    @scala.inline
+    def setPortion(value: String): Self = this.set("portion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortion: Self = this.set("portion", js.undefined)
+    @scala.inline
+    def setWorkerId(value: String): Self = this.set("workerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerId: Self = this.set("workerId", js.undefined)
+  }
+  
 }
 

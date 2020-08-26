@@ -74,46 +74,94 @@ trait EventSourceMappingState extends js.Object {
 
 object EventSourceMappingState {
   @scala.inline
-  def apply(
-    batchSize: Input[Double] = null,
-    bisectBatchOnFunctionError: Input[Boolean] = null,
-    destinationConfig: Input[EventSourceMappingDestinationConfig] = null,
-    enabled: Input[Boolean] = null,
-    eventSourceArn: Input[String] = null,
-    functionArn: Input[String] = null,
-    functionName: Input[String] = null,
-    lastModified: Input[String] = null,
-    lastProcessingResult: Input[String] = null,
-    maximumBatchingWindowInSeconds: Input[Double] = null,
-    maximumRecordAgeInSeconds: Input[Double] = null,
-    maximumRetryAttempts: Input[Double] = null,
-    parallelizationFactor: Input[Double] = null,
-    startingPosition: Input[String] = null,
-    startingPositionTimestamp: Input[String] = null,
-    state: Input[String] = null,
-    stateTransitionReason: Input[String] = null,
-    uuid: Input[String] = null
-  ): EventSourceMappingState = {
+  def apply(): EventSourceMappingState = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (bisectBatchOnFunctionError != null) __obj.updateDynamic("bisectBatchOnFunctionError")(bisectBatchOnFunctionError.asInstanceOf[js.Any])
-    if (destinationConfig != null) __obj.updateDynamic("destinationConfig")(destinationConfig.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (eventSourceArn != null) __obj.updateDynamic("eventSourceArn")(eventSourceArn.asInstanceOf[js.Any])
-    if (functionArn != null) __obj.updateDynamic("functionArn")(functionArn.asInstanceOf[js.Any])
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
-    if (lastProcessingResult != null) __obj.updateDynamic("lastProcessingResult")(lastProcessingResult.asInstanceOf[js.Any])
-    if (maximumBatchingWindowInSeconds != null) __obj.updateDynamic("maximumBatchingWindowInSeconds")(maximumBatchingWindowInSeconds.asInstanceOf[js.Any])
-    if (maximumRecordAgeInSeconds != null) __obj.updateDynamic("maximumRecordAgeInSeconds")(maximumRecordAgeInSeconds.asInstanceOf[js.Any])
-    if (maximumRetryAttempts != null) __obj.updateDynamic("maximumRetryAttempts")(maximumRetryAttempts.asInstanceOf[js.Any])
-    if (parallelizationFactor != null) __obj.updateDynamic("parallelizationFactor")(parallelizationFactor.asInstanceOf[js.Any])
-    if (startingPosition != null) __obj.updateDynamic("startingPosition")(startingPosition.asInstanceOf[js.Any])
-    if (startingPositionTimestamp != null) __obj.updateDynamic("startingPositionTimestamp")(startingPositionTimestamp.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (stateTransitionReason != null) __obj.updateDynamic("stateTransitionReason")(stateTransitionReason.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSourceMappingState]
   }
+  @scala.inline
+  implicit class EventSourceMappingStateOps[Self <: EventSourceMappingState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchSize(value: Input[Double]): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    @scala.inline
+    def setBisectBatchOnFunctionError(value: Input[Boolean]): Self = this.set("bisectBatchOnFunctionError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBisectBatchOnFunctionError: Self = this.set("bisectBatchOnFunctionError", js.undefined)
+    @scala.inline
+    def setDestinationConfig(value: Input[EventSourceMappingDestinationConfig]): Self = this.set("destinationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationConfig: Self = this.set("destinationConfig", js.undefined)
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setEventSourceArn(value: Input[String]): Self = this.set("eventSourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventSourceArn: Self = this.set("eventSourceArn", js.undefined)
+    @scala.inline
+    def setFunctionArn(value: Input[String]): Self = this.set("functionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionArn: Self = this.set("functionArn", js.undefined)
+    @scala.inline
+    def setFunctionName(value: Input[String]): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionName: Self = this.set("functionName", js.undefined)
+    @scala.inline
+    def setLastModified(value: Input[String]): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    @scala.inline
+    def setLastProcessingResult(value: Input[String]): Self = this.set("lastProcessingResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastProcessingResult: Self = this.set("lastProcessingResult", js.undefined)
+    @scala.inline
+    def setMaximumBatchingWindowInSeconds(value: Input[Double]): Self = this.set("maximumBatchingWindowInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumBatchingWindowInSeconds: Self = this.set("maximumBatchingWindowInSeconds", js.undefined)
+    @scala.inline
+    def setMaximumRecordAgeInSeconds(value: Input[Double]): Self = this.set("maximumRecordAgeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumRecordAgeInSeconds: Self = this.set("maximumRecordAgeInSeconds", js.undefined)
+    @scala.inline
+    def setMaximumRetryAttempts(value: Input[Double]): Self = this.set("maximumRetryAttempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumRetryAttempts: Self = this.set("maximumRetryAttempts", js.undefined)
+    @scala.inline
+    def setParallelizationFactor(value: Input[Double]): Self = this.set("parallelizationFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelizationFactor: Self = this.set("parallelizationFactor", js.undefined)
+    @scala.inline
+    def setStartingPosition(value: Input[String]): Self = this.set("startingPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartingPosition: Self = this.set("startingPosition", js.undefined)
+    @scala.inline
+    def setStartingPositionTimestamp(value: Input[String]): Self = this.set("startingPositionTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartingPositionTimestamp: Self = this.set("startingPositionTimestamp", js.undefined)
+    @scala.inline
+    def setState(value: Input[String]): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStateTransitionReason(value: Input[String]): Self = this.set("stateTransitionReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateTransitionReason: Self = this.set("stateTransitionReason", js.undefined)
+    @scala.inline
+    def setUuid(value: Input[String]): Self = this.set("uuid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUuid: Self = this.set("uuid", js.undefined)
+  }
+  
 }
 

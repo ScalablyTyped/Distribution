@@ -22,16 +22,34 @@ trait ReplicationInstanceTaskLog extends js.Object {
 
 object ReplicationInstanceTaskLog {
   @scala.inline
-  def apply(
-    ReplicationInstanceTaskLogSize: js.UndefOr[Long] = js.undefined,
-    ReplicationTaskArn: String = null,
-    ReplicationTaskName: String = null
-  ): ReplicationInstanceTaskLog = {
+  def apply(): ReplicationInstanceTaskLog = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ReplicationInstanceTaskLogSize)) __obj.updateDynamic("ReplicationInstanceTaskLogSize")(ReplicationInstanceTaskLogSize.get.asInstanceOf[js.Any])
-    if (ReplicationTaskArn != null) __obj.updateDynamic("ReplicationTaskArn")(ReplicationTaskArn.asInstanceOf[js.Any])
-    if (ReplicationTaskName != null) __obj.updateDynamic("ReplicationTaskName")(ReplicationTaskName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationInstanceTaskLog]
   }
+  @scala.inline
+  implicit class ReplicationInstanceTaskLogOps[Self <: ReplicationInstanceTaskLog] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReplicationInstanceTaskLogSize(value: Long): Self = this.set("ReplicationInstanceTaskLogSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceTaskLogSize: Self = this.set("ReplicationInstanceTaskLogSize", js.undefined)
+    @scala.inline
+    def setReplicationTaskArn(value: String): Self = this.set("ReplicationTaskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskArn: Self = this.set("ReplicationTaskArn", js.undefined)
+    @scala.inline
+    def setReplicationTaskName(value: String): Self = this.set("ReplicationTaskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskName: Self = this.set("ReplicationTaskName", js.undefined)
+  }
+  
 }
 

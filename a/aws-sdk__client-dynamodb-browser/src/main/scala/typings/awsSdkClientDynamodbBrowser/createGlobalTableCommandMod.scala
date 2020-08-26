@@ -26,16 +26,9 @@ object createGlobalTableCommandMod extends js.Object {
           Blob
         ] {
     def this(input: CreateGlobalTableInput) = this()
-    /* CompleteClass */
-    override val input: CreateGlobalTableInput = js.native
     val middlewareStack: MiddlewareStack[CreateGlobalTableInput, CreateGlobalTableOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: DynamoDBResolvedConfiguration
-    ): Handler[CreateGlobalTableInput, CreateGlobalTableOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: DynamoDBResolvedConfiguration
     ): Handler[CreateGlobalTableInput, CreateGlobalTableOutput] = js.native
   }

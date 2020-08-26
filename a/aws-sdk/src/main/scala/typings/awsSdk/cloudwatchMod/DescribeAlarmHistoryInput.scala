@@ -42,26 +42,56 @@ trait DescribeAlarmHistoryInput extends js.Object {
 
 object DescribeAlarmHistoryInput {
   @scala.inline
-  def apply(
-    AlarmName: AlarmName = null,
-    AlarmTypes: AlarmTypes = null,
-    EndDate: Timestamp = null,
-    HistoryItemType: HistoryItemType = null,
-    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
-    NextToken: NextToken = null,
-    ScanBy: ScanBy = null,
-    StartDate: Timestamp = null
-  ): DescribeAlarmHistoryInput = {
+  def apply(): DescribeAlarmHistoryInput = {
     val __obj = js.Dynamic.literal()
-    if (AlarmName != null) __obj.updateDynamic("AlarmName")(AlarmName.asInstanceOf[js.Any])
-    if (AlarmTypes != null) __obj.updateDynamic("AlarmTypes")(AlarmTypes.asInstanceOf[js.Any])
-    if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
-    if (HistoryItemType != null) __obj.updateDynamic("HistoryItemType")(HistoryItemType.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ScanBy != null) __obj.updateDynamic("ScanBy")(ScanBy.asInstanceOf[js.Any])
-    if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAlarmHistoryInput]
   }
+  @scala.inline
+  implicit class DescribeAlarmHistoryInputOps[Self <: DescribeAlarmHistoryInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlarmName(value: AlarmName): Self = this.set("AlarmName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmName: Self = this.set("AlarmName", js.undefined)
+    @scala.inline
+    def setAlarmTypesVarargs(value: AlarmType*): Self = this.set("AlarmTypes", js.Array(value :_*))
+    @scala.inline
+    def setAlarmTypes(value: AlarmTypes): Self = this.set("AlarmTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmTypes: Self = this.set("AlarmTypes", js.undefined)
+    @scala.inline
+    def setEndDate(value: Timestamp): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("EndDate", js.undefined)
+    @scala.inline
+    def setHistoryItemType(value: HistoryItemType): Self = this.set("HistoryItemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistoryItemType: Self = this.set("HistoryItemType", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: MaxRecords): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setScanBy(value: ScanBy): Self = this.set("ScanBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanBy: Self = this.set("ScanBy", js.undefined)
+    @scala.inline
+    def setStartDate(value: Timestamp): Self = this.set("StartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+  }
+  
 }
 

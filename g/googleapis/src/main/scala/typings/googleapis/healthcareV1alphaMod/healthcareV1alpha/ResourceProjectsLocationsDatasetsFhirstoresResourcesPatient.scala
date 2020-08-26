@@ -33,6 +33,8 @@ class ResourceProjectsLocationsDatasetsFhirstoresResourcesPatient protected () e
   @JSName("get$everything")
   def get$everything(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
   @JSName("get$everything")
+  def get$everything(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  @JSName("get$everything")
   def get$everything(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesPatientGeteverything): GaxiosPromise[SchemaHttpBody] = js.native
   @JSName("get$everything")
   def get$everything(

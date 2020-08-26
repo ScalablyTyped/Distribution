@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class DateTimePicker ()
   extends AbstractPureComponent2[IDateTimePickerProps, IDateTimePickerState, js.Object] {
   def this(props: IDateTimePickerProps) = this()
+  def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
   def this(props: IDateTimePickerProps, context: js.Any) = this()
   @JSName("componentDidUpdate")
   def componentDidUpdate_MDateTimePicker(prevProps: IDatePickerProps): Unit = js.native

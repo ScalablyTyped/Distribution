@@ -12,7 +12,7 @@ KeystoneJS Admin UI App.
 | Keywords           | - |
 | # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 11665 |
+| # downloads        | 13724 |
 | # stars            | 0 |
 
 ## Links

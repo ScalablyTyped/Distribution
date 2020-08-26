@@ -114,6 +114,17 @@ object mod extends js.Object {
       * The raw config used to create the machine.
       */
     config: StateNodeConfig[TContext, TStateSchema, TEvent],
+      options: js.UndefOr[scala.Nothing],
+      /**
+      * The initial extended state
+      */
+    context: TContext
+    ) = this()
+    def this(
+      /**
+      * The raw config used to create the machine.
+      */
+    config: StateNodeConfig[TContext, TStateSchema, TEvent],
       options: Partial[MachineOptions[TContext, TEvent]],
       /**
       * The initial extended state
@@ -123,6 +134,11 @@ object mod extends js.Object {
   }
   
   def Machine[TContext, TEvent /* <: EventObject */](config: MachineConfig[TContext, _, TEvent]): StateMachine[TContext, _, TEvent, _] = js.native
+  def Machine[TContext, TEvent /* <: EventObject */](
+    config: MachineConfig[TContext, _, TEvent],
+    options: js.UndefOr[scala.Nothing],
+    initialContext: TContext
+  ): StateMachine[TContext, _, TEvent, _] = js.native
   def Machine[TContext, TEvent /* <: EventObject */](config: MachineConfig[TContext, _, TEvent], options: Partial[MachineOptions[TContext, TEvent]]): StateMachine[TContext, _, TEvent, _] = js.native
   def Machine[TContext, TEvent /* <: EventObject */](
     config: MachineConfig[TContext, _, TEvent],
@@ -131,6 +147,12 @@ object mod extends js.Object {
   ): StateMachine[TContext, _, TEvent, _] = js.native
   @JSName("Machine")
   def Machine_TContextTStateSchema_StateSchemaWildcardTEvent_EventObject[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](config: MachineConfig[TContext, TStateSchema, TEvent]): StateMachine[TContext, TStateSchema, TEvent, _] = js.native
+  @JSName("Machine")
+  def Machine_TContextTStateSchema_StateSchemaWildcardTEvent_EventObject[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
+    config: MachineConfig[TContext, TStateSchema, TEvent],
+    options: js.UndefOr[scala.Nothing],
+    initialContext: TContext
+  ): StateMachine[TContext, TStateSchema, TEvent, _] = js.native
   @JSName("Machine")
   def Machine_TContextTStateSchema_StateSchemaWildcardTEvent_EventObject[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
     config: MachineConfig[TContext, TStateSchema, TEvent],
@@ -327,6 +349,7 @@ object mod extends js.Object {
       options: SendActionOptions[TContext, TEvent]
     ): SendAction[TContext, TEvent, AnyEventObject] = js.native
     def log[TContext, TEvent /* <: EventObject */](): LogAction[TContext, TEvent] = js.native
+    def log[TContext, TEvent /* <: EventObject */](expr: js.UndefOr[scala.Nothing], label: String): LogAction[TContext, TEvent] = js.native
     def log[TContext, TEvent /* <: EventObject */](expr: String): LogAction[TContext, TEvent] = js.native
     def log[TContext, TEvent /* <: EventObject */](expr: String, label: String): LogAction[TContext, TEvent] = js.native
     def log[TContext, TEvent /* <: EventObject */](expr: LogExpr[TContext, TEvent]): LogAction[TContext, TEvent] = js.native

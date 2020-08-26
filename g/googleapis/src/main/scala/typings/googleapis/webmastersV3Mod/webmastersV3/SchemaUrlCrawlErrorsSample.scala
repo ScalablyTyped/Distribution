@@ -33,20 +33,42 @@ trait SchemaUrlCrawlErrorsSample extends js.Object {
 
 object SchemaUrlCrawlErrorsSample {
   @scala.inline
-  def apply(
-    first_detected: String = null,
-    last_crawled: String = null,
-    pageUrl: String = null,
-    responseCode: js.UndefOr[Double] = js.undefined,
-    urlDetails: SchemaUrlSampleDetails = null
-  ): SchemaUrlCrawlErrorsSample = {
+  def apply(): SchemaUrlCrawlErrorsSample = {
     val __obj = js.Dynamic.literal()
-    if (first_detected != null) __obj.updateDynamic("first_detected")(first_detected.asInstanceOf[js.Any])
-    if (last_crawled != null) __obj.updateDynamic("last_crawled")(last_crawled.asInstanceOf[js.Any])
-    if (pageUrl != null) __obj.updateDynamic("pageUrl")(pageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(responseCode)) __obj.updateDynamic("responseCode")(responseCode.get.asInstanceOf[js.Any])
-    if (urlDetails != null) __obj.updateDynamic("urlDetails")(urlDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUrlCrawlErrorsSample]
   }
+  @scala.inline
+  implicit class SchemaUrlCrawlErrorsSampleOps[Self <: SchemaUrlCrawlErrorsSample] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFirst_detected(value: String): Self = this.set("first_detected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirst_detected: Self = this.set("first_detected", js.undefined)
+    @scala.inline
+    def setLast_crawled(value: String): Self = this.set("last_crawled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLast_crawled: Self = this.set("last_crawled", js.undefined)
+    @scala.inline
+    def setPageUrl(value: String): Self = this.set("pageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageUrl: Self = this.set("pageUrl", js.undefined)
+    @scala.inline
+    def setResponseCode(value: Double): Self = this.set("responseCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseCode: Self = this.set("responseCode", js.undefined)
+    @scala.inline
+    def setUrlDetails(value: SchemaUrlSampleDetails): Self = this.set("urlDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlDetails: Self = this.set("urlDetails", js.undefined)
+  }
+  
 }
 

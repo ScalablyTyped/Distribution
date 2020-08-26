@@ -36,19 +36,40 @@ trait EventStream extends js.Object {
 
 object EventStream {
   @scala.inline
-  def apply(
-    ApplicationId: string,
-    DestinationStreamArn: string,
-    RoleArn: string,
-    ExternalId: string = null,
-    LastModifiedDate: string = null,
-    LastUpdatedBy: string = null
-  ): EventStream = {
+  def apply(ApplicationId: string, DestinationStreamArn: string, RoleArn: string): EventStream = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], DestinationStreamArn = DestinationStreamArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (LastUpdatedBy != null) __obj.updateDynamic("LastUpdatedBy")(LastUpdatedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventStream]
   }
+  @scala.inline
+  implicit class EventStreamOps[Self <: EventStream] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationStreamArn(value: string): Self = this.set("DestinationStreamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExternalId(value: string): Self = this.set("ExternalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("ExternalId", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: string): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    @scala.inline
+    def setLastUpdatedBy(value: string): Self = this.set("LastUpdatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedBy: Self = this.set("LastUpdatedBy", js.undefined)
+  }
+  
 }
 

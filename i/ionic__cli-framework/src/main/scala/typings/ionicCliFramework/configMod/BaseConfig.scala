@@ -16,7 +16,7 @@ abstract class BaseConfig[T /* <: js.Object */] protected () extends js.Object {
   val p: String = js.native
   val pathPrefix: js.Array[String] = js.native
   def c: T = js.native
-  def c(value: T): js.Any = js.native
+  def c_=(value: T): Unit = js.native
   def file: js.Any = js.native
   def get[P /* <: /* keyof T */ String */](property: P): /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any = js.native
   def get[P /* <: /* keyof T */ String */](

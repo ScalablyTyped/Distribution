@@ -26,16 +26,36 @@ trait SchemaJobStatus extends js.Object {
 
 object SchemaJobStatus {
   @scala.inline
-  def apply(
-    errorResult: SchemaErrorProto = null,
-    errors: js.Array[SchemaErrorProto] = null,
-    state: String = null
-  ): SchemaJobStatus = {
+  def apply(): SchemaJobStatus = {
     val __obj = js.Dynamic.literal()
-    if (errorResult != null) __obj.updateDynamic("errorResult")(errorResult.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobStatus]
   }
+  @scala.inline
+  implicit class SchemaJobStatusOps[Self <: SchemaJobStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorResult(value: SchemaErrorProto): Self = this.set("errorResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorResult: Self = this.set("errorResult", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: SchemaErrorProto*): Self = this.set("errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: js.Array[SchemaErrorProto]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

@@ -3,7 +3,6 @@ package typings.oracleOraclejet.ojganttMod
 import typings.oracleOraclejet.anon.AccessibleDependencyInfo
 import typings.oracleOraclejet.anon.Baseline
 import typings.oracleOraclejet.anon.BaselineDate
-import typings.oracleOraclejet.anon.HeightNumber
 import typings.oracleOraclejet.anon.Index
 import typings.oracleOraclejet.anon.MaxWidth
 import typings.oracleOraclejet.anon.Move
@@ -11,7 +10,8 @@ import typings.oracleOraclejet.anon.OffsetY
 import typings.oracleOraclejet.anon.RowIndex
 import typings.oracleOraclejet.anon.Scale
 import typings.oracleOraclejet.anon.Vertical
-import typings.oracleOraclejet.anon.`7`
+import typings.oracleOraclejet.anon.`8`
+import typings.oracleOraclejet.anon.`9`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojganttMod.ojGantt.ReferenceObject
@@ -103,27 +103,27 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   var onOjViewportChange: (js.Function1[/* event */ ojViewportChange, _]) | Null = js.native
   var onReferenceObjectsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[ReferenceObject]], _]) | Null = js.native
   var onRowAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxWidth[K2, D2]], _]) | Null = js.native
-  var onRowDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[HeightNumber], _]) | Null = js.native
+  var onRowDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[`8`], _]) | Null = js.native
   var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[OffsetY], _]) | Null = js.native
   var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K2]], _]) | Null = js.native
   var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], _]) | Null = js.native
   var onStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onTaskDataChanged: (js.Function1[/* event */ JetElementCustomEvent[js.UndefOr[DataProvider[K2, D2]]], _]) | Null = js.native
   var onTaskDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[Baseline], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`7`[K2, D2]], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`9`[K2, D2]], _]) | Null = js.native
   var onValueFormatsChanged: (js.Function1[/* event */ JetElementCustomEvent[BaselineDate], _]) | Null = js.native
   var onViewportEndChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onViewportStartChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var referenceObjects: js.Array[ReferenceObject] = js.native
   var rowAxis: MaxWidth[K2, D2] = js.native
-  var rowDefaults: HeightNumber = js.native
+  var rowDefaults: `8` = js.native
   var scrollPosition: OffsetY = js.native
   var selection: js.Array[K2] = js.native
   var selectionMode: single | multiple | none = js.native
   var start: String = js.native
   var taskData: js.UndefOr[DataProvider[K2, D2]] = js.native
   var taskDefaults: Baseline = js.native
-  var tooltip: `7`[K2, D2] = js.native
+  var tooltip: `9`[K2, D2] = js.native
   @JSName("translations")
   var translations_ojGantt_ : AccessibleDependencyInfo = js.native
   var valueFormats: BaselineDate = js.native
@@ -297,12 +297,12 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("addEventListener")
   def addEventListener_rowDefaultsChanged(
     `type`: rowDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[HeightNumber], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`8`], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_rowDefaultsChanged(
     `type`: rowDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[HeightNumber], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`8`], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -371,12 +371,12 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`7`[K2, D2]], _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`9`[K2, D2]], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`7`[K2, D2]], _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`9`[K2, D2]], _],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -438,7 +438,7 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("getProperty")
   def getProperty_rowAxis(property: rowAxis): MaxWidth[K2, D2] = js.native
   @JSName("getProperty")
-  def getProperty_rowDefaults(property: rowDefaults): HeightNumber = js.native
+  def getProperty_rowDefaults(property: rowDefaults): `8` = js.native
   @JSName("getProperty")
   def getProperty_scrollPosition(property: scrollPosition): OffsetY = js.native
   @JSName("getProperty")
@@ -452,7 +452,7 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("getProperty")
   def getProperty_taskDefaults(property: taskDefaults): Baseline = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): `7`[K2, D2] = js.native
+  def getProperty_tooltip(property: tooltip): `9`[K2, D2] = js.native
   @JSName("getProperty")
   def getProperty_valueFormats(property: valueFormats): BaselineDate = js.native
   @JSName("getProperty")
@@ -472,6 +472,8 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("setProperty")
   def setProperty_as(property: as, value: String): Unit = js.native
   @JSName("setProperty")
+  def setProperty_dependencyData(property: dependencyData): Unit = js.native
+  @JSName("setProperty")
   def setProperty_dependencyData(property: dependencyData, value: DataProvider[K1, D1]): Unit = js.native
   @JSName("setProperty")
   def setProperty_dnd(property: dnd, value: Move): Unit = js.native
@@ -488,7 +490,7 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("setProperty")
   def setProperty_rowAxis(property: rowAxis, value: MaxWidth[K2, D2]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_rowDefaults(property: rowDefaults, value: HeightNumber): Unit = js.native
+  def setProperty_rowDefaults(property: rowDefaults, value: `8`): Unit = js.native
   @JSName("setProperty")
   def setProperty_scrollPosition(property: scrollPosition, value: OffsetY): Unit = js.native
   @JSName("setProperty")
@@ -496,11 +498,13 @@ trait ojGantt_[K1, K2, D1, D2] extends dvtTimeComponent[ojGanttSettablePropertie
   @JSName("setProperty")
   def setProperty_start(property: start, value: String): Unit = js.native
   @JSName("setProperty")
+  def setProperty_taskData(property: taskData): Unit = js.native
+  @JSName("setProperty")
   def setProperty_taskData(property: taskData, value: DataProvider[K2, D2]): Unit = js.native
   @JSName("setProperty")
   def setProperty_taskDefaults(property: taskDefaults, value: Baseline): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: `7`[K2, D2]): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: `9`[K2, D2]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: AccessibleDependencyInfo): Unit = js.native
   @JSName("setProperty")

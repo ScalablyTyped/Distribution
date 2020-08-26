@@ -6,24 +6,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StorageObserver[T] extends js.Object {
-  var complete: js.UndefOr[CompleteFn | Null] = js.undefined
-  var error: js.UndefOr[ErrorFn | Null] = js.undefined
-  var next: js.UndefOr[NextFn[T] | Null] = js.undefined
+  var complete: js.UndefOr[CompleteFn | Null] = js.native
+  var error: js.UndefOr[ErrorFn | Null] = js.native
+  var next: js.UndefOr[NextFn[T] | Null] = js.native
 }
 
 object StorageObserver {
   @scala.inline
-  def apply[T](
-    complete: js.UndefOr[Null | (() => Unit)] = js.undefined,
-    error: js.UndefOr[Null | (/* error */ Error | FirebaseStorageError => Unit)] = js.undefined,
-    next: js.UndefOr[Null | (T => Unit)] = js.undefined
-  ): StorageObserver[T] = {
+  def apply[T](): StorageObserver[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(if (complete != null) js.Any.fromFunction0(complete.asInstanceOf[() => Unit]) else null)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(if (error != null) js.Any.fromFunction1(error.asInstanceOf[/* error */ Error | FirebaseStorageError => Unit]) else null)
-    if (!js.isUndefined(next)) __obj.updateDynamic("next")(if (next != null) js.Any.fromFunction1(next.asInstanceOf[T => Unit]) else null)
     __obj.asInstanceOf[StorageObserver[T]]
   }
+  @scala.inline
+  implicit class StorageObserverOps[Self <: StorageObserver[_], T] (val x: Self with StorageObserver[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteComplete: Self = this.set("complete", js.undefined)
+    @scala.inline
+    def setCompleteNull: Self = this.set("complete", null)
+    @scala.inline
+    def setError(value: /* error */ Error | FirebaseStorageError => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setErrorNull: Self = this.set("error", null)
+    @scala.inline
+    def setNext(value: T => Unit): Self = this.set("next", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNext: Self = this.set("next", js.undefined)
+    @scala.inline
+    def setNextNull: Self = this.set("next", null)
+  }
+  
 }
 

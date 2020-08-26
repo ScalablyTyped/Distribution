@@ -73,6 +73,7 @@ trait Navigation extends js.Object {
     * @param data Data to be passed into the data parameter.
     */
   def openWebResource(name: String): Unit = js.native
+  def openWebResource(name: String, options: js.UndefOr[scala.Nothing], data: String): Unit = js.native
   def openWebResource(name: String, options: OpenWebResourceOptions): Unit = js.native
   def openWebResource(name: String, options: OpenWebResourceOptions, data: String): Unit = js.native
 }

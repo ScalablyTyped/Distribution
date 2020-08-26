@@ -8,29 +8,47 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LinkProps
   extends /* propName */ StringDictionary[js.Any] {
-  var component: js.UndefOr[ComponentType[_]] = js.undefined
-  var replace: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[js.Any] = js.undefined
-  var to: LocationDescriptor[LocationState]
+  var component: js.UndefOr[ComponentType[_]] = js.native
+  var replace: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[js.Any] = js.native
+  var to: LocationDescriptor[LocationState] = js.native
 }
 
 object LinkProps {
   @scala.inline
-  def apply(
-    to: LocationDescriptor[LocationState],
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    component: ComponentType[_] = null,
-    replace: js.UndefOr[Boolean] = js.undefined,
-    style: js.Any = null
-  ): LinkProps = {
+  def apply(to: LocationDescriptor[LocationState]): LinkProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkProps]
   }
+  @scala.inline
+  implicit class LinkPropsOps[Self <: LinkProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTo(value: LocationDescriptor[LocationState]): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComponent(value: ComponentType[_]): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setReplace(value: Boolean): Self = this.set("replace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplace: Self = this.set("replace", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

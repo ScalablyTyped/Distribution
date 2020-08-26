@@ -26,18 +26,38 @@ trait ApplicationComponent extends js.Object {
 
 object ApplicationComponent {
   @scala.inline
-  def apply(
-    ComponentName: ComponentName = null,
-    Monitor: js.UndefOr[Monitor] = js.undefined,
-    ResourceType: ResourceType = null,
-    Tier: Tier = null
-  ): ApplicationComponent = {
+  def apply(): ApplicationComponent = {
     val __obj = js.Dynamic.literal()
-    if (ComponentName != null) __obj.updateDynamic("ComponentName")(ComponentName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Monitor)) __obj.updateDynamic("Monitor")(Monitor.get.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationComponent]
   }
+  @scala.inline
+  implicit class ApplicationComponentOps[Self <: ApplicationComponent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentName(value: ComponentName): Self = this.set("ComponentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentName: Self = this.set("ComponentName", js.undefined)
+    @scala.inline
+    def setMonitor(value: Monitor): Self = this.set("Monitor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitor: Self = this.set("Monitor", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setTier(value: Tier): Self = this.set("Tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTier: Self = this.set("Tier", js.undefined)
+  }
+  
 }
 

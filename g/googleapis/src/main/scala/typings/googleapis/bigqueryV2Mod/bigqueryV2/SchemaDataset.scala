@@ -107,38 +107,80 @@ trait SchemaDataset extends js.Object {
 
 object SchemaDataset {
   @scala.inline
-  def apply(
-    access: js.Array[Domain] = null,
-    creationTime: String = null,
-    datasetReference: SchemaDatasetReference = null,
-    defaultPartitionExpirationMs: String = null,
-    defaultTableExpirationMs: String = null,
-    description: String = null,
-    etag: String = null,
-    friendlyName: String = null,
-    id: String = null,
-    kind: String = null,
-    labels: StringDictionary[String] = null,
-    lastModifiedTime: String = null,
-    location: String = null,
-    selfLink: String = null
-  ): SchemaDataset = {
+  def apply(): SchemaDataset = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (datasetReference != null) __obj.updateDynamic("datasetReference")(datasetReference.asInstanceOf[js.Any])
-    if (defaultPartitionExpirationMs != null) __obj.updateDynamic("defaultPartitionExpirationMs")(defaultPartitionExpirationMs.asInstanceOf[js.Any])
-    if (defaultTableExpirationMs != null) __obj.updateDynamic("defaultTableExpirationMs")(defaultTableExpirationMs.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDataset]
   }
+  @scala.inline
+  implicit class SchemaDatasetOps[Self <: SchemaDataset] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessVarargs(value: Domain*): Self = this.set("access", js.Array(value :_*))
+    @scala.inline
+    def setAccess(value: js.Array[Domain]): Self = this.set("access", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccess: Self = this.set("access", js.undefined)
+    @scala.inline
+    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDatasetReference(value: SchemaDatasetReference): Self = this.set("datasetReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetReference: Self = this.set("datasetReference", js.undefined)
+    @scala.inline
+    def setDefaultPartitionExpirationMs(value: String): Self = this.set("defaultPartitionExpirationMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPartitionExpirationMs: Self = this.set("defaultPartitionExpirationMs", js.undefined)
+    @scala.inline
+    def setDefaultTableExpirationMs(value: String): Self = this.set("defaultTableExpirationMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTableExpirationMs: Self = this.set("defaultTableExpirationMs", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFriendlyName: Self = this.set("friendlyName", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: String): Self = this.set("lastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("lastModifiedTime", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+  }
+  
 }
 

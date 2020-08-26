@@ -4,23 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SitesListResponse extends js.Object {
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#sitesListResponse". */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** Pagination token to be used for the next list operation. */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String] = js.native
   /** Site collection. */
-  var sites: js.UndefOr[js.Array[Site]] = js.undefined
+  var sites: js.UndefOr[js.Array[Site]] = js.native
 }
 
 object SitesListResponse {
   @scala.inline
-  def apply(kind: String = null, nextPageToken: String = null, sites: js.Array[Site] = null): SitesListResponse = {
+  def apply(): SitesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (sites != null) __obj.updateDynamic("sites")(sites.asInstanceOf[js.Any])
     __obj.asInstanceOf[SitesListResponse]
   }
+  @scala.inline
+  implicit class SitesListResponseOps[Self <: SitesListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setSitesVarargs(value: Site*): Self = this.set("sites", js.Array(value :_*))
+    @scala.inline
+    def setSites(value: js.Array[Site]): Self = this.set("sites", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSites: Self = this.set("sites", js.undefined)
+  }
+  
 }
 

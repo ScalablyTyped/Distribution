@@ -13,11 +13,30 @@ trait RuleResults extends js.Object {
 
 object RuleResults {
   @scala.inline
-  def apply(locale: String = null, ruleResults: StringDictionary[Groups] = null): RuleResults = {
+  def apply(): RuleResults = {
     val __obj = js.Dynamic.literal()
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (ruleResults != null) __obj.updateDynamic("ruleResults")(ruleResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleResults]
   }
+  @scala.inline
+  implicit class RuleResultsOps[Self <: RuleResults] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setRuleResults(value: StringDictionary[Groups]): Self = this.set("ruleResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleResults: Self = this.set("ruleResults", js.undefined)
+  }
+  
 }
 

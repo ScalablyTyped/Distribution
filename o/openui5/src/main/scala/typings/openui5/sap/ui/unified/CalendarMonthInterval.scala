@@ -114,7 +114,7 @@ trait CalendarMonthInterval extends Control {
     * @param oDate JavaScript date object for displayed date. (The month of this date will be displayed.)
     * @returns <code>this</code> to allow method chaining
     */
-  def displayDate(oDate: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def displayDate(oDate: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Fires event <code>cancel</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
@@ -139,7 +139,7 @@ trait CalendarMonthInterval extends Control {
     * @param oDate JavaScript date object for focused date. (The month of this date will be focused.)
     * @returns <code>this</code> to allow method chaining
     */
-  def focusDate(oDate: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
+  def focusDate(oDate: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Calendar_] = js.native
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.

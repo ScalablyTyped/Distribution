@@ -123,6 +123,7 @@ trait UIManagerStatic extends js.Object {
     * @platform ios
     */
   def takeSnapshot(): js.Promise[String] = js.native
+  def takeSnapshot(view: js.UndefOr[scala.Nothing], options: Format): js.Promise[String] = js.native
   def takeSnapshot(view: Double): js.Promise[String] = js.native
   def takeSnapshot(view: Double, options: Format): js.Promise[String] = js.native
   def takeSnapshot(view: ReactElement): js.Promise[String] = js.native

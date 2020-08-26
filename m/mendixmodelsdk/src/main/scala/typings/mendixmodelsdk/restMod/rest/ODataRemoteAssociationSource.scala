@@ -37,9 +37,9 @@ class ODataRemoteAssociationSource protected () extends RemoteAssociationSource 
   @JSName("containerAsAssociationBase")
   def containerAsAssociationBase_MODataRemoteAssociationSource: AssociationBase = js.native
   def remoteChildNavigationProperty: String = js.native
-  def remoteChildNavigationProperty(newValue: String): js.Any = js.native
+  def remoteChildNavigationProperty_=(newValue: String): Unit = js.native
   def remoteParentNavigationProperty: String = js.native
-  def remoteParentNavigationProperty(newValue: String): js.Any = js.native
+  def remoteParentNavigationProperty_=(newValue: String): Unit = js.native
 }
 
 /* static members */

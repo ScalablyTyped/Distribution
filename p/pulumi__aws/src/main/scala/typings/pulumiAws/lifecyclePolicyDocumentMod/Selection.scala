@@ -39,14 +39,39 @@ object Selection {
   def apply(
     countNumber: Input[Double],
     countType: Input[imageCountMoreThan | sinceImagePushed],
-    tagStatus: Input[tagged | untagged | any],
-    countUnit: Input[String] = null,
-    tagPrefixList: Input[String] | js.Array[Input[String]] = null
+    tagStatus: Input[tagged | untagged | any]
   ): Selection = {
     val __obj = js.Dynamic.literal(countNumber = countNumber.asInstanceOf[js.Any], countType = countType.asInstanceOf[js.Any], tagStatus = tagStatus.asInstanceOf[js.Any])
-    if (countUnit != null) __obj.updateDynamic("countUnit")(countUnit.asInstanceOf[js.Any])
-    if (tagPrefixList != null) __obj.updateDynamic("tagPrefixList")(tagPrefixList.asInstanceOf[js.Any])
     __obj.asInstanceOf[Selection]
   }
+  @scala.inline
+  implicit class SelectionOps[Self <: Selection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountNumber(value: Input[Double]): Self = this.set("countNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCountType(value: Input[imageCountMoreThan | sinceImagePushed]): Self = this.set("countType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagStatus(value: Input[tagged | untagged | any]): Self = this.set("tagStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCountUnit(value: Input[String]): Self = this.set("countUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountUnit: Self = this.set("countUnit", js.undefined)
+    @scala.inline
+    def setTagPrefixListVarargs(value: Input[String]*): Self = this.set("tagPrefixList", js.Array(value :_*))
+    @scala.inline
+    def setTagPrefixList(value: Input[String] | js.Array[Input[String]]): Self = this.set("tagPrefixList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagPrefixList: Self = this.set("tagPrefixList", js.undefined)
+  }
+  
 }
 

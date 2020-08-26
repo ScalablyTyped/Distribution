@@ -11,7 +11,7 @@ JSON Schema based editor
 | Keywords           | json, schema, jsonschema, editor |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 194463 |
+| # downloads        | 193834 |
 | # stars            | 14 |
 
 ## Links

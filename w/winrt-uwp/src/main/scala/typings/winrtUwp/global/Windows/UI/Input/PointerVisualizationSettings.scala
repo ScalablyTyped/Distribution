@@ -8,14 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
 @js.native
 abstract class PointerVisualizationSettings ()
-  extends typings.winrtUwp.Windows.UI.Input.PointerVisualizationSettings {
-  /** Gets or sets a value that indicates whether visual feedback is enabled for pen/stylus input when the barrel button is pressed. */
-  /* CompleteClass */
-  override var isBarrelButtonFeedbackEnabled: Boolean = js.native
-  /** Gets or sets a value that indicates whether visual feedback is enabled when a pointer contact is detected. */
-  /* CompleteClass */
-  override var isContactFeedbackEnabled: Boolean = js.native
-}
+  extends typings.winrtUwp.Windows.UI.Input.PointerVisualizationSettings
 
 /* static members */
 @JSGlobal("Windows.UI.Input.PointerVisualizationSettings")

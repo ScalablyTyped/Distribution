@@ -33,8 +33,54 @@ trait PlusZip extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   def compress(): Unit = js.native
+  def compress(
+    src: js.UndefOr[scala.Nothing],
+    zipfile: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def compress(src: js.UndefOr[scala.Nothing], zipfile: js.UndefOr[scala.Nothing], successCB: js.Function0[Unit]): Unit = js.native
+  def compress(
+    src: js.UndefOr[scala.Nothing],
+    zipfile: js.UndefOr[scala.Nothing],
+    successCB: js.Function0[Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def compress(src: js.UndefOr[scala.Nothing], zipfile: String): Unit = js.native
+  def compress(
+    src: js.UndefOr[scala.Nothing],
+    zipfile: String,
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def compress(src: js.UndefOr[scala.Nothing], zipfile: String, successCB: js.Function0[Unit]): Unit = js.native
+  def compress(
+    src: js.UndefOr[scala.Nothing],
+    zipfile: String,
+    successCB: js.Function0[Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def compress(src: String): Unit = js.native
+  def compress(
+    src: String,
+    zipfile: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def compress(src: String, zipfile: js.UndefOr[scala.Nothing], successCB: js.Function0[Unit]): Unit = js.native
+  def compress(
+    src: String,
+    zipfile: js.UndefOr[scala.Nothing],
+    successCB: js.Function0[Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def compress(src: String, zipfile: String): Unit = js.native
+  def compress(
+    src: String,
+    zipfile: String,
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def compress(src: String, zipfile: String, successCB: js.Function0[Unit]): Unit = js.native
   def compress(
     src: String,
@@ -49,7 +95,23 @@ trait PlusZip extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   def compressImage(): Unit = js.native
+  def compressImage(
+    options: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def compressImage(options: js.UndefOr[scala.Nothing], successCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def compressImage(
+    options: js.UndefOr[scala.Nothing],
+    successCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def compressImage(options: PlusZipCompressImageOptions): Unit = js.native
+  def compressImage(
+    options: PlusZipCompressImageOptions,
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def compressImage(options: PlusZipCompressImageOptions, successCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def compressImage(
     options: PlusZipCompressImageOptions,
@@ -62,8 +124,58 @@ trait PlusZip extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   def decompress(): Unit = js.native
+  def decompress(
+    zipfile: js.UndefOr[scala.Nothing],
+    target: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def decompress(
+    zipfile: js.UndefOr[scala.Nothing],
+    target: js.UndefOr[scala.Nothing],
+    successCB: js.Function0[Unit]
+  ): Unit = js.native
+  def decompress(
+    zipfile: js.UndefOr[scala.Nothing],
+    target: js.UndefOr[scala.Nothing],
+    successCB: js.Function0[Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def decompress(zipfile: js.UndefOr[scala.Nothing], target: String): Unit = js.native
+  def decompress(
+    zipfile: js.UndefOr[scala.Nothing],
+    target: String,
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def decompress(zipfile: js.UndefOr[scala.Nothing], target: String, successCB: js.Function0[Unit]): Unit = js.native
+  def decompress(
+    zipfile: js.UndefOr[scala.Nothing],
+    target: String,
+    successCB: js.Function0[Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def decompress(zipfile: String): Unit = js.native
+  def decompress(
+    zipfile: String,
+    target: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def decompress(zipfile: String, target: js.UndefOr[scala.Nothing], successCB: js.Function0[Unit]): Unit = js.native
+  def decompress(
+    zipfile: String,
+    target: js.UndefOr[scala.Nothing],
+    successCB: js.Function0[Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def decompress(zipfile: String, target: String): Unit = js.native
+  def decompress(
+    zipfile: String,
+    target: String,
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def decompress(zipfile: String, target: String, successCB: js.Function0[Unit]): Unit = js.native
   def decompress(
     zipfile: String,

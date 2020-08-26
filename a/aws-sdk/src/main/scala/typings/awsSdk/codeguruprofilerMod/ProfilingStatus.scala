@@ -22,16 +22,34 @@ trait ProfilingStatus extends js.Object {
 
 object ProfilingStatus {
   @scala.inline
-  def apply(
-    latestAgentOrchestratedAt: Timestamp = null,
-    latestAgentProfileReportedAt: Timestamp = null,
-    latestAggregatedProfile: AggregatedProfileTime = null
-  ): ProfilingStatus = {
+  def apply(): ProfilingStatus = {
     val __obj = js.Dynamic.literal()
-    if (latestAgentOrchestratedAt != null) __obj.updateDynamic("latestAgentOrchestratedAt")(latestAgentOrchestratedAt.asInstanceOf[js.Any])
-    if (latestAgentProfileReportedAt != null) __obj.updateDynamic("latestAgentProfileReportedAt")(latestAgentProfileReportedAt.asInstanceOf[js.Any])
-    if (latestAggregatedProfile != null) __obj.updateDynamic("latestAggregatedProfile")(latestAggregatedProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfilingStatus]
   }
+  @scala.inline
+  implicit class ProfilingStatusOps[Self <: ProfilingStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLatestAgentOrchestratedAt(value: Timestamp): Self = this.set("latestAgentOrchestratedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestAgentOrchestratedAt: Self = this.set("latestAgentOrchestratedAt", js.undefined)
+    @scala.inline
+    def setLatestAgentProfileReportedAt(value: Timestamp): Self = this.set("latestAgentProfileReportedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestAgentProfileReportedAt: Self = this.set("latestAgentProfileReportedAt", js.undefined)
+    @scala.inline
+    def setLatestAggregatedProfile(value: AggregatedProfileTime): Self = this.set("latestAggregatedProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestAggregatedProfile: Self = this.set("latestAggregatedProfile", js.undefined)
+  }
+  
 }
 

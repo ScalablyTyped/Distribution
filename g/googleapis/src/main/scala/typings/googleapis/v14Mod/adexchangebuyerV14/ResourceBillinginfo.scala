@@ -28,6 +28,7 @@ class ResourceBillinginfo protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaBillingInfo] = js.native
   def get(callback: BodyResponseCallback[SchemaBillingInfo]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBillingInfo] = js.native
   def get(params: ParamsResourceBillinginfoGet): GaxiosPromise[SchemaBillingInfo] = js.native
   def get(params: ParamsResourceBillinginfoGet, callback: BodyResponseCallback[SchemaBillingInfo]): Unit = js.native
   def get(
@@ -55,6 +56,7 @@ class ResourceBillinginfo protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaBillingInfoList] = js.native
   def list(callback: BodyResponseCallback[SchemaBillingInfoList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBillingInfoList] = js.native
   def list(params: ParamsResourceBillinginfoList): GaxiosPromise[SchemaBillingInfoList] = js.native
   def list(params: ParamsResourceBillinginfoList, callback: BodyResponseCallback[SchemaBillingInfoList]): Unit = js.native
   def list(

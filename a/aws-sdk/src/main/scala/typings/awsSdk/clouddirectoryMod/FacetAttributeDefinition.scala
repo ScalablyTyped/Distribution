@@ -26,17 +26,36 @@ trait FacetAttributeDefinition extends js.Object {
 
 object FacetAttributeDefinition {
   @scala.inline
-  def apply(
-    Type: FacetAttributeType,
-    DefaultValue: TypedAttributeValue = null,
-    IsImmutable: js.UndefOr[Bool] = js.undefined,
-    Rules: RuleMap = null
-  ): FacetAttributeDefinition = {
+  def apply(Type: FacetAttributeType): FacetAttributeDefinition = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsImmutable)) __obj.updateDynamic("IsImmutable")(IsImmutable.get.asInstanceOf[js.Any])
-    if (Rules != null) __obj.updateDynamic("Rules")(Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacetAttributeDefinition]
   }
+  @scala.inline
+  implicit class FacetAttributeDefinitionOps[Self <: FacetAttributeDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: FacetAttributeType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultValue(value: TypedAttributeValue): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    @scala.inline
+    def setIsImmutable(value: Bool): Self = this.set("IsImmutable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsImmutable: Self = this.set("IsImmutable", js.undefined)
+    @scala.inline
+    def setRules(value: RuleMap): Self = this.set("Rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("Rules", js.undefined)
+  }
+  
 }
 

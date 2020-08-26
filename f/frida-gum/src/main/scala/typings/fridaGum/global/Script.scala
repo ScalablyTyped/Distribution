@@ -36,7 +36,6 @@ object Script extends js.Object {
     * schedule cleanup on another thread.
     */
   def pin(): Unit = js.native
-  def setGlobalAccessHandler(): Unit = js.native
   /**
     * Installs or uninstalls a handler that is used to resolve attempts to
     * access non-existent global variables.
@@ -47,6 +46,7 @@ object Script extends js.Object {
     * @param handler The handler to install, or `null` to uninstall a
     *                previously installed handler.
     */
+  def setGlobalAccessHandler(): Unit = js.native
   def setGlobalAccessHandler(handler: GlobalAccessHandler): Unit = js.native
   /**
     * Reverses a previous `pin()` so the current script may be unloaded.

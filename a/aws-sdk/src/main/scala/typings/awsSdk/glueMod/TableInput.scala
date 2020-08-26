@@ -47,6 +47,10 @@ trait TableInput extends js.Object {
     */
   var TableType: js.UndefOr[TableTypeString] = js.native
   /**
+    * A TableIdentifier structure that describes a target table for resource linking.
+    */
+  var TargetTable: js.UndefOr[TableIdentifier] = js.native
+  /**
     * If the table is a view, the expanded text of the view; otherwise null.
     */
   var ViewExpandedText: js.UndefOr[ViewTextString] = js.native
@@ -58,33 +62,74 @@ trait TableInput extends js.Object {
 
 object TableInput {
   @scala.inline
-  def apply(
-    Name: NameString,
-    Description: DescriptionString = null,
-    LastAccessTime: Timestamp = null,
-    LastAnalyzedTime: Timestamp = null,
-    Owner: NameString = null,
-    Parameters: ParametersMap = null,
-    PartitionKeys: ColumnList = null,
-    Retention: js.UndefOr[NonNegativeInteger] = js.undefined,
-    StorageDescriptor: StorageDescriptor = null,
-    TableType: TableTypeString = null,
-    ViewExpandedText: ViewTextString = null,
-    ViewOriginalText: ViewTextString = null
-  ): TableInput = {
+  def apply(Name: NameString): TableInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (LastAccessTime != null) __obj.updateDynamic("LastAccessTime")(LastAccessTime.asInstanceOf[js.Any])
-    if (LastAnalyzedTime != null) __obj.updateDynamic("LastAnalyzedTime")(LastAnalyzedTime.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (PartitionKeys != null) __obj.updateDynamic("PartitionKeys")(PartitionKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(Retention)) __obj.updateDynamic("Retention")(Retention.get.asInstanceOf[js.Any])
-    if (StorageDescriptor != null) __obj.updateDynamic("StorageDescriptor")(StorageDescriptor.asInstanceOf[js.Any])
-    if (TableType != null) __obj.updateDynamic("TableType")(TableType.asInstanceOf[js.Any])
-    if (ViewExpandedText != null) __obj.updateDynamic("ViewExpandedText")(ViewExpandedText.asInstanceOf[js.Any])
-    if (ViewOriginalText != null) __obj.updateDynamic("ViewOriginalText")(ViewOriginalText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableInput]
   }
+  @scala.inline
+  implicit class TableInputOps[Self <: TableInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLastAccessTime(value: Timestamp): Self = this.set("LastAccessTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAccessTime: Self = this.set("LastAccessTime", js.undefined)
+    @scala.inline
+    def setLastAnalyzedTime(value: Timestamp): Self = this.set("LastAnalyzedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAnalyzedTime: Self = this.set("LastAnalyzedTime", js.undefined)
+    @scala.inline
+    def setOwner(value: NameString): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+    @scala.inline
+    def setParameters(value: ParametersMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setPartitionKeysVarargs(value: Column*): Self = this.set("PartitionKeys", js.Array(value :_*))
+    @scala.inline
+    def setPartitionKeys(value: ColumnList): Self = this.set("PartitionKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionKeys: Self = this.set("PartitionKeys", js.undefined)
+    @scala.inline
+    def setRetention(value: NonNegativeInteger): Self = this.set("Retention", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetention: Self = this.set("Retention", js.undefined)
+    @scala.inline
+    def setStorageDescriptor(value: StorageDescriptor): Self = this.set("StorageDescriptor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageDescriptor: Self = this.set("StorageDescriptor", js.undefined)
+    @scala.inline
+    def setTableType(value: TableTypeString): Self = this.set("TableType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableType: Self = this.set("TableType", js.undefined)
+    @scala.inline
+    def setTargetTable(value: TableIdentifier): Self = this.set("TargetTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetTable: Self = this.set("TargetTable", js.undefined)
+    @scala.inline
+    def setViewExpandedText(value: ViewTextString): Self = this.set("ViewExpandedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewExpandedText: Self = this.set("ViewExpandedText", js.undefined)
+    @scala.inline
+    def setViewOriginalText(value: ViewTextString): Self = this.set("ViewOriginalText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewOriginalText: Self = this.set("ViewOriginalText", js.undefined)
+  }
+  
 }
 

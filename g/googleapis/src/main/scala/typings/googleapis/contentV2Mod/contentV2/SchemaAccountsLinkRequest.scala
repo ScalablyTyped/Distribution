@@ -23,12 +23,34 @@ trait SchemaAccountsLinkRequest extends js.Object {
 
 object SchemaAccountsLinkRequest {
   @scala.inline
-  def apply(action: String = null, linkType: String = null, linkedAccountId: String = null): SchemaAccountsLinkRequest = {
+  def apply(): SchemaAccountsLinkRequest = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (linkType != null) __obj.updateDynamic("linkType")(linkType.asInstanceOf[js.Any])
-    if (linkedAccountId != null) __obj.updateDynamic("linkedAccountId")(linkedAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountsLinkRequest]
   }
+  @scala.inline
+  implicit class SchemaAccountsLinkRequestOps[Self <: SchemaAccountsLinkRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setLinkType(value: String): Self = this.set("linkType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkType: Self = this.set("linkType", js.undefined)
+    @scala.inline
+    def setLinkedAccountId(value: String): Self = this.set("linkedAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkedAccountId: Self = this.set("linkedAccountId", js.undefined)
+  }
+  
 }
 

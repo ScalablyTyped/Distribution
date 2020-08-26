@@ -12,7 +12,7 @@ Absinthe Socket Apollo Link
 | Keywords           | absinthe, phoenix, socket, apollo, link, apollo-link, client, graphql, utilities, utils |
 | # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 262229 |
+| # downloads        | 281508 |
 | # stars            | 0 |
 
 ## Links

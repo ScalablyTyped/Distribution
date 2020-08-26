@@ -4,18 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ToneInfo extends js.Object {
-  var sequenceId: js.UndefOr[Double] = js.undefined
-  var tone: js.UndefOr[Tone] = js.undefined
+  // An incremental identifier used for ordering DTMF events.
+  var sequenceId: js.UndefOr[Double] = js.native
+  // Possible values are: tone0, tone1, tone2, tone3, tone4, tone5, tone6, tone7, tone8, tone9, star, pound
+  var tone: js.UndefOr[Tone] = js.native
 }
 
 object ToneInfo {
   @scala.inline
-  def apply(sequenceId: js.UndefOr[Double] = js.undefined, tone: Tone = null): ToneInfo = {
+  def apply(): ToneInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(sequenceId)) __obj.updateDynamic("sequenceId")(sequenceId.get.asInstanceOf[js.Any])
-    if (tone != null) __obj.updateDynamic("tone")(tone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToneInfo]
   }
+  @scala.inline
+  implicit class ToneInfoOps[Self <: ToneInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSequenceId(value: Double): Self = this.set("sequenceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSequenceId: Self = this.set("sequenceId", js.undefined)
+    @scala.inline
+    def setTone(value: Tone): Self = this.set("tone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTone: Self = this.set("tone", js.undefined)
+  }
+  
 }
 

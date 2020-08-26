@@ -24,6 +24,7 @@ trait IAssistance extends js.Object {
     * @param Scope [Scope='']
     */
   def ShowHelp(): Unit = js.native
+  def ShowHelp(HelpId: js.UndefOr[scala.Nothing], Scope: String): Unit = js.native
   def ShowHelp(HelpId: String): Unit = js.native
   def ShowHelp(HelpId: String, Scope: String): Unit = js.native
 }

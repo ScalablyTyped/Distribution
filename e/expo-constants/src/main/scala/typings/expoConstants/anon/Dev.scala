@@ -5,39 +5,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Dev
   extends /* key */ StringDictionary[js.Any] {
-  var dev: js.UndefOr[Boolean] = js.undefined
-  var hostType: js.UndefOr[String] = js.undefined
-  var lanType: js.UndefOr[String] = js.undefined
-  var minify: js.UndefOr[Boolean] = js.undefined
-  var strict: js.UndefOr[Boolean] = js.undefined
-  var urlRandomness: js.UndefOr[String] = js.undefined
-  var urlType: js.UndefOr[String] = js.undefined
+  var dev: js.UndefOr[Boolean] = js.native
+  var hostType: js.UndefOr[String] = js.native
+  var lanType: js.UndefOr[String] = js.native
+  var minify: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.native
+  var urlRandomness: js.UndefOr[String] = js.native
+  var urlType: js.UndefOr[String] = js.native
 }
 
 object Dev {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    dev: js.UndefOr[Boolean] = js.undefined,
-    hostType: String = null,
-    lanType: String = null,
-    minify: js.UndefOr[Boolean] = js.undefined,
-    strict: js.UndefOr[Boolean] = js.undefined,
-    urlRandomness: String = null,
-    urlType: String = null
-  ): Dev = {
+  def apply(): Dev = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.get.asInstanceOf[js.Any])
-    if (hostType != null) __obj.updateDynamic("hostType")(hostType.asInstanceOf[js.Any])
-    if (lanType != null) __obj.updateDynamic("lanType")(lanType.asInstanceOf[js.Any])
-    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
-    if (urlRandomness != null) __obj.updateDynamic("urlRandomness")(urlRandomness.asInstanceOf[js.Any])
-    if (urlType != null) __obj.updateDynamic("urlType")(urlType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dev]
   }
+  @scala.inline
+  implicit class DevOps[Self <: Dev] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDev(value: Boolean): Self = this.set("dev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDev: Self = this.set("dev", js.undefined)
+    @scala.inline
+    def setHostType(value: String): Self = this.set("hostType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostType: Self = this.set("hostType", js.undefined)
+    @scala.inline
+    def setLanType(value: String): Self = this.set("lanType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanType: Self = this.set("lanType", js.undefined)
+    @scala.inline
+    def setMinify(value: Boolean): Self = this.set("minify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinify: Self = this.set("minify", js.undefined)
+    @scala.inline
+    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrict: Self = this.set("strict", js.undefined)
+    @scala.inline
+    def setUrlRandomness(value: String): Self = this.set("urlRandomness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlRandomness: Self = this.set("urlRandomness", js.undefined)
+    @scala.inline
+    def setUrlType(value: String): Self = this.set("urlType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlType: Self = this.set("urlType", js.undefined)
+  }
+  
 }
 

@@ -79,6 +79,11 @@ class Timeline protected () extends js.Object {
     * Move the window such that given time is centered on screen.
     */
   def moveTo(time: DateType): Unit = js.native
+  def moveTo(
+    time: DateType,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* properties */ js.UndefOr[js.Any], Unit]
+  ): Unit = js.native
   def moveTo(time: DateType, options: TimelineAnimationOptions): Unit = js.native
   def moveTo(
     time: DateType,
@@ -93,6 +98,7 @@ class Timeline protected () extends js.Object {
   def off(event: TimelineEvents): Unit = js.native
   def off(event: TimelineEvents, callback: js.Function1[/* properties */ js.UndefOr[js.Any], Unit]): Unit = js.native
   def on(): Unit = js.native
+  def on(event: js.UndefOr[scala.Nothing], callback: js.Function1[/* properties */ js.Any, Unit]): Unit = js.native
   def on(event: String): Unit = js.native
   def on(event: String, callback: js.Function1[/* properties */ js.Any, Unit]): Unit = js.native
   /**
@@ -169,6 +175,7 @@ class Timeline protected () extends js.Object {
     * @param callback The callback function
     */
   def setWindow(start: DateType, end: DateType): Unit = js.native
+  def setWindow(start: DateType, end: DateType, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def setWindow(start: DateType, end: DateType, options: TimelineAnimationOptions): Unit = js.native
   def setWindow(start: DateType, end: DateType, options: TimelineAnimationOptions, callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -182,6 +189,7 @@ class Timeline protected () extends js.Object {
     * @param callback The callback function
     */
   def zoomIn(percentage: Double): Unit = js.native
+  def zoomIn(percentage: Double, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def zoomIn(percentage: Double, options: TimelineAnimationOptions): Unit = js.native
   def zoomIn(percentage: Double, options: TimelineAnimationOptions, callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -191,6 +199,7 @@ class Timeline protected () extends js.Object {
     * @param callback The callback function
     */
   def zoomOut(percentage: Double): Unit = js.native
+  def zoomOut(percentage: Double, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def zoomOut(percentage: Double, options: TimelineAnimationOptions): Unit = js.native
   def zoomOut(percentage: Double, options: TimelineAnimationOptions, callback: js.Function0[Unit]): Unit = js.native
 }

@@ -29,6 +29,7 @@ object actionMod extends js.Object {
     def schedule(): Subscription = js.native
     def schedule(state: T): Subscription = js.native
     def schedule(state: T, delay: Double): Subscription = js.native
+    def schedule(state: js.UndefOr[scala.Nothing], delay: Double): Subscription = js.native
   }
   
 }

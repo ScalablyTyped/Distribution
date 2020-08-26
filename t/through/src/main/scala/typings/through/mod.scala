@@ -16,7 +16,11 @@ object mod extends js.Object {
   }
   
   def apply(): ThroughStream = js.native
+  def apply(write: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], opts: AutoDestroy): ThroughStream = js.native
+  def apply(write: js.UndefOr[scala.Nothing], end: js.Function0[Unit]): ThroughStream = js.native
+  def apply(write: js.UndefOr[scala.Nothing], end: js.Function0[Unit], opts: AutoDestroy): ThroughStream = js.native
   def apply(write: js.Function1[/* data */ js.Any, Unit]): ThroughStream = js.native
+  def apply(write: js.Function1[/* data */ js.Any, Unit], end: js.UndefOr[scala.Nothing], opts: AutoDestroy): ThroughStream = js.native
   def apply(write: js.Function1[/* data */ js.Any, Unit], end: js.Function0[Unit]): ThroughStream = js.native
   def apply(write: js.Function1[/* data */ js.Any, Unit], end: js.Function0[Unit], opts: AutoDestroy): ThroughStream = js.native
 }

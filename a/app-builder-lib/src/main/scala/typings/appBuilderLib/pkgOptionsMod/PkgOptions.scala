@@ -2,12 +2,12 @@ package typings.appBuilderLib.pkgOptionsMod
 
 import typings.appBuilderLib.appBuilderLibStrings.update
 import typings.appBuilderLib.appBuilderLibStrings.upgrade
-import typings.appBuilderLib.coreMod.Publish
 import typings.appBuilderLib.coreMod.TargetSpecificOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PkgOptions extends TargetSpecificOptions {
   /**
     * Whether can be installed at the root of any volume, including non-system volumes. Otherwise, it cannot be installed at the root of a volume.
@@ -15,7 +15,7 @@ trait PkgOptions extends TargetSpecificOptions {
     * Corresponds to [enable_anywhere](https://developer.apple.com/library/content/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Distribution_XML_Ref.html#//apple_ref/doc/uid/TP40005370-CH100-SW70).
     * @default true
     */
-  val allowAnywhere: js.UndefOr[Boolean | Null] = js.undefined
+  val allowAnywhere: js.UndefOr[Boolean | Null] = js.native
   /**
     * Whether can be installed into the current user’s home directory.
     * A home directory installation is done as the current user (not as root), and it cannot write outside of the home directory.
@@ -24,55 +24,55 @@ trait PkgOptions extends TargetSpecificOptions {
     * Corresponds to [enable_currentUserHome](https://developer.apple.com/library/content/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Distribution_XML_Ref.html#//apple_ref/doc/uid/TP40005370-CH100-SW70).
     * @default true
     */
-  val allowCurrentUserHome: js.UndefOr[Boolean | Null] = js.undefined
+  val allowCurrentUserHome: js.UndefOr[Boolean | Null] = js.native
   /**
     * Whether can be installed into the root directory. Should usually be `true` unless the product can be installed only to the user’s home directory.
     *
     * Corresponds to [enable_localSystem](https://developer.apple.com/library/content/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Distribution_XML_Ref.html#//apple_ref/doc/uid/TP40005370-CH100-SW70).
     * @default true
     */
-  val allowRootDirectory: js.UndefOr[Boolean | Null] = js.undefined
+  val allowRootDirectory: js.UndefOr[Boolean | Null] = js.native
   /**
     * Options for the background image for the installer.
     */
-  val background: js.UndefOr[PkgBackgroundOptions | Null] = js.undefined
+  val background: js.UndefOr[PkgBackgroundOptions | Null] = js.native
   /**
     * The path to the conclusion file. This may be used to customize the text on the final "Summary" page of the installer.
     */
-  val conclusion: js.UndefOr[String | Null] = js.undefined
+  val conclusion: js.UndefOr[String | Null] = js.native
   /**
     * Require identical bundle identifiers at install path?
     * @default true
     */
-  val hasStrictIdentifier: js.UndefOr[Boolean | Null] = js.undefined
+  val hasStrictIdentifier: js.UndefOr[Boolean | Null] = js.native
   /**
     * The name of certificate to use when signing. Consider using environment variables [CSC_LINK or CSC_NAME](/code-signing) instead of specifying this option.
     */
-  val identity: js.UndefOr[String | Null] = js.undefined
+  val identity: js.UndefOr[String | Null] = js.native
   /**
     * The install location. [Do not use it](https://stackoverflow.com/questions/12863944/how-do-you-specify-a-default-install-location-to-home-with-pkgbuild) to create per-user package.
     * Mostly never you will need to change this option. `/Applications` would install it as expected into `/Applications` if the local system domain is chosen, or into `$HOME/Applications` if the home installation is chosen.
     * @default /Applications
     */
-  val installLocation: js.UndefOr[String | Null] = js.undefined
+  val installLocation: js.UndefOr[String | Null] = js.native
   /**
     * Install bundle over previous version if moved by user?
     * @default true
     */
-  val isRelocatable: js.UndefOr[Boolean | Null] = js.undefined
+  val isRelocatable: js.UndefOr[Boolean | Null] = js.native
   /**
     * Don't install bundle if newer version on disk?
     * @default true
     */
-  val isVersionChecked: js.UndefOr[Boolean | Null] = js.undefined
+  val isVersionChecked: js.UndefOr[Boolean | Null] = js.native
   /**
     * The path to EULA license file. Defaults to `license.txt` or `eula.txt` (or uppercase variants). In addition to `txt, `rtf` and `html` supported (don't forget to use `target="_blank"` for links).
     */
-  val license: js.UndefOr[String | Null] = js.undefined
+  val license: js.UndefOr[String | Null] = js.native
   /**
     * Identifies applications that must be closed before the package is installed.\n\nCorresponds to [must-close](https://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Distribution_XML_Ref.html#//apple_ref/doc/uid/TP40005370-CH100-SW77)
     */
-  val mustClose: js.UndefOr[js.Array[String] | Null] = js.undefined
+  val mustClose: js.UndefOr[js.Array[String] | Null] = js.native
   /**
     * Specifies how an existing version of the bundle on disk should be handled when the version in
     * the package is installed.
@@ -91,12 +91,12 @@ trait PkgOptions extends TargetSpecificOptions {
     *
     * @default upgrade
     */
-  val overwriteAction: js.UndefOr[upgrade | update | Null] = js.undefined
+  val overwriteAction: js.UndefOr[upgrade | update | Null] = js.native
   /**
     * should be not documented, only to experiment
     * @private
     */
-  val productbuild: js.UndefOr[js.Array[String] | Null] = js.undefined
+  val productbuild: js.UndefOr[js.Array[String] | Null] = js.native
   /**
     * The scripts directory, relative to `build` (build resources directory).
     * The scripts can be in any language so long as the files are marked executable and have the appropriate shebang indicating the path to the interpreter.
@@ -104,55 +104,131 @@ trait PkgOptions extends TargetSpecificOptions {
     * @default build/pkg-scripts
     * @see [Scripting in installer packages](http://macinstallers.blogspot.de/2012/07/scripting-in-installer-packages.html).
     */
-  val scripts: js.UndefOr[String | Null] = js.undefined
+  val scripts: js.UndefOr[String | Null] = js.native
   /**
     * The path to the welcome file. This may be used to customize the text on the Introduction page of the installer.
     */
-  val welcome: js.UndefOr[String | Null] = js.undefined
+  val welcome: js.UndefOr[String | Null] = js.native
 }
 
 object PkgOptions {
   @scala.inline
-  def apply(
-    allowAnywhere: js.UndefOr[Null | Boolean] = js.undefined,
-    allowCurrentUserHome: js.UndefOr[Null | Boolean] = js.undefined,
-    allowRootDirectory: js.UndefOr[Null | Boolean] = js.undefined,
-    artifactName: js.UndefOr[Null | String] = js.undefined,
-    background: js.UndefOr[Null | PkgBackgroundOptions] = js.undefined,
-    conclusion: js.UndefOr[Null | String] = js.undefined,
-    hasStrictIdentifier: js.UndefOr[Null | Boolean] = js.undefined,
-    identity: js.UndefOr[Null | String] = js.undefined,
-    installLocation: js.UndefOr[Null | String] = js.undefined,
-    isRelocatable: js.UndefOr[Null | Boolean] = js.undefined,
-    isVersionChecked: js.UndefOr[Null | Boolean] = js.undefined,
-    license: js.UndefOr[Null | String] = js.undefined,
-    mustClose: js.UndefOr[Null | js.Array[String]] = js.undefined,
-    overwriteAction: js.UndefOr[Null | upgrade | update] = js.undefined,
-    productbuild: js.UndefOr[Null | js.Array[String]] = js.undefined,
-    publish: js.UndefOr[Null | Publish] = js.undefined,
-    scripts: js.UndefOr[Null | String] = js.undefined,
-    welcome: js.UndefOr[Null | String] = js.undefined
-  ): PkgOptions = {
+  def apply(): PkgOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAnywhere)) __obj.updateDynamic("allowAnywhere")(allowAnywhere.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCurrentUserHome)) __obj.updateDynamic("allowCurrentUserHome")(allowCurrentUserHome.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowRootDirectory)) __obj.updateDynamic("allowRootDirectory")(allowRootDirectory.asInstanceOf[js.Any])
-    if (!js.isUndefined(artifactName)) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(conclusion)) __obj.updateDynamic("conclusion")(conclusion.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasStrictIdentifier)) __obj.updateDynamic("hasStrictIdentifier")(hasStrictIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(identity)) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
-    if (!js.isUndefined(installLocation)) __obj.updateDynamic("installLocation")(installLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRelocatable)) __obj.updateDynamic("isRelocatable")(isRelocatable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVersionChecked)) __obj.updateDynamic("isVersionChecked")(isVersionChecked.asInstanceOf[js.Any])
-    if (!js.isUndefined(license)) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
-    if (!js.isUndefined(mustClose)) __obj.updateDynamic("mustClose")(mustClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwriteAction)) __obj.updateDynamic("overwriteAction")(overwriteAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(productbuild)) __obj.updateDynamic("productbuild")(productbuild.asInstanceOf[js.Any])
-    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (!js.isUndefined(scripts)) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (!js.isUndefined(welcome)) __obj.updateDynamic("welcome")(welcome.asInstanceOf[js.Any])
     __obj.asInstanceOf[PkgOptions]
   }
+  @scala.inline
+  implicit class PkgOptionsOps[Self <: PkgOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowAnywhere(value: Boolean): Self = this.set("allowAnywhere", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowAnywhere: Self = this.set("allowAnywhere", js.undefined)
+    @scala.inline
+    def setAllowAnywhereNull: Self = this.set("allowAnywhere", null)
+    @scala.inline
+    def setAllowCurrentUserHome(value: Boolean): Self = this.set("allowCurrentUserHome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCurrentUserHome: Self = this.set("allowCurrentUserHome", js.undefined)
+    @scala.inline
+    def setAllowCurrentUserHomeNull: Self = this.set("allowCurrentUserHome", null)
+    @scala.inline
+    def setAllowRootDirectory(value: Boolean): Self = this.set("allowRootDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowRootDirectory: Self = this.set("allowRootDirectory", js.undefined)
+    @scala.inline
+    def setAllowRootDirectoryNull: Self = this.set("allowRootDirectory", null)
+    @scala.inline
+    def setBackground(value: PkgBackgroundOptions): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBackgroundNull: Self = this.set("background", null)
+    @scala.inline
+    def setConclusion(value: String): Self = this.set("conclusion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConclusion: Self = this.set("conclusion", js.undefined)
+    @scala.inline
+    def setConclusionNull: Self = this.set("conclusion", null)
+    @scala.inline
+    def setHasStrictIdentifier(value: Boolean): Self = this.set("hasStrictIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasStrictIdentifier: Self = this.set("hasStrictIdentifier", js.undefined)
+    @scala.inline
+    def setHasStrictIdentifierNull: Self = this.set("hasStrictIdentifier", null)
+    @scala.inline
+    def setIdentity(value: String): Self = this.set("identity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentity: Self = this.set("identity", js.undefined)
+    @scala.inline
+    def setIdentityNull: Self = this.set("identity", null)
+    @scala.inline
+    def setInstallLocation(value: String): Self = this.set("installLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallLocation: Self = this.set("installLocation", js.undefined)
+    @scala.inline
+    def setInstallLocationNull: Self = this.set("installLocation", null)
+    @scala.inline
+    def setIsRelocatable(value: Boolean): Self = this.set("isRelocatable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRelocatable: Self = this.set("isRelocatable", js.undefined)
+    @scala.inline
+    def setIsRelocatableNull: Self = this.set("isRelocatable", null)
+    @scala.inline
+    def setIsVersionChecked(value: Boolean): Self = this.set("isVersionChecked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsVersionChecked: Self = this.set("isVersionChecked", js.undefined)
+    @scala.inline
+    def setIsVersionCheckedNull: Self = this.set("isVersionChecked", null)
+    @scala.inline
+    def setLicense(value: String): Self = this.set("license", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicense: Self = this.set("license", js.undefined)
+    @scala.inline
+    def setLicenseNull: Self = this.set("license", null)
+    @scala.inline
+    def setMustCloseVarargs(value: String*): Self = this.set("mustClose", js.Array(value :_*))
+    @scala.inline
+    def setMustClose(value: js.Array[String]): Self = this.set("mustClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMustClose: Self = this.set("mustClose", js.undefined)
+    @scala.inline
+    def setMustCloseNull: Self = this.set("mustClose", null)
+    @scala.inline
+    def setOverwriteAction(value: upgrade | update): Self = this.set("overwriteAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverwriteAction: Self = this.set("overwriteAction", js.undefined)
+    @scala.inline
+    def setOverwriteActionNull: Self = this.set("overwriteAction", null)
+    @scala.inline
+    def setProductbuildVarargs(value: String*): Self = this.set("productbuild", js.Array(value :_*))
+    @scala.inline
+    def setProductbuild(value: js.Array[String]): Self = this.set("productbuild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductbuild: Self = this.set("productbuild", js.undefined)
+    @scala.inline
+    def setProductbuildNull: Self = this.set("productbuild", null)
+    @scala.inline
+    def setScripts(value: String): Self = this.set("scripts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScripts: Self = this.set("scripts", js.undefined)
+    @scala.inline
+    def setScriptsNull: Self = this.set("scripts", null)
+    @scala.inline
+    def setWelcome(value: String): Self = this.set("welcome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWelcome: Self = this.set("welcome", js.undefined)
+    @scala.inline
+    def setWelcomeNull: Self = this.set("welcome", null)
+  }
+  
 }
 

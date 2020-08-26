@@ -19,29 +19,7 @@ object canvasTextureMod extends js.Object {
   @js.native
   class CanvasTexture protected () extends Texture {
     def this(
-      canvas: HTMLCanvasElement,
-      mapping: js.UndefOr[Mapping],
-      wrapS: js.UndefOr[Wrapping],
-      wrapT: js.UndefOr[Wrapping],
-      magFilter: js.UndefOr[TextureFilter],
-      minFilter: js.UndefOr[TextureFilter],
-      format: js.UndefOr[PixelFormat],
-      `type`: js.UndefOr[TextureDataType],
-      anisotropy: js.UndefOr[Double]
-    ) = this()
-    def this(
-      canvas: HTMLImageElement,
-      mapping: js.UndefOr[Mapping],
-      wrapS: js.UndefOr[Wrapping],
-      wrapT: js.UndefOr[Wrapping],
-      magFilter: js.UndefOr[TextureFilter],
-      minFilter: js.UndefOr[TextureFilter],
-      format: js.UndefOr[PixelFormat],
-      `type`: js.UndefOr[TextureDataType],
-      anisotropy: js.UndefOr[Double]
-    ) = this()
-    def this(
-      canvas: HTMLVideoElement,
+      canvas: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement,
       mapping: js.UndefOr[Mapping],
       wrapS: js.UndefOr[Wrapping],
       wrapT: js.UndefOr[Wrapping],

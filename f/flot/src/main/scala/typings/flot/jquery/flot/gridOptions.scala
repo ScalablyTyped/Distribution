@@ -4,76 +4,125 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait gridOptions extends js.Object {
-  var aboveData: js.UndefOr[Boolean] = js.undefined
-  var autoHighlight: js.UndefOr[Boolean] = js.undefined
-  var axisMargin: js.UndefOr[Double] = js.undefined
+  var aboveData: js.UndefOr[Boolean] = js.native
+  var autoHighlight: js.UndefOr[Boolean] = js.native
+  var axisMargin: js.UndefOr[Double] = js.native
                   // color
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
+  var backgroundColor: js.UndefOr[js.Any] = js.native
             // number or width object
-  var borderColor: js.UndefOr[js.Any] = js.undefined
+  var borderColor: js.UndefOr[js.Any] = js.native
                //array of markings or (fn: axes -> array of markings)
-  var borderWidth: js.UndefOr[js.Any] = js.undefined
+  var borderWidth: js.UndefOr[js.Any] = js.native
          // or null
-  var clickable: js.UndefOr[Boolean] = js.undefined
-  var color: js.UndefOr[js.Any] = js.undefined
-  var hoverable: js.UndefOr[Boolean] = js.undefined
+  var clickable: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[js.Any] = js.native
+  var hoverable: js.UndefOr[Boolean] = js.native
                   // number or margin object
-  var labelMargin: js.UndefOr[Double] = js.undefined
+  var labelMargin: js.UndefOr[Double] = js.native
         //color/gradient or null
-  var margin: js.UndefOr[js.Any] = js.undefined
-  var markings: js.UndefOr[js.Any] = js.undefined
-  var markingsColor: js.UndefOr[js.Any] = js.undefined
-  var markingsLineWidth: js.UndefOr[Double] = js.undefined
+  var margin: js.UndefOr[js.Any] = js.native
+  var markings: js.UndefOr[js.Any] = js.native
+  var markingsColor: js.UndefOr[js.Any] = js.native
+  var markingsLineWidth: js.UndefOr[Double] = js.native
             // color or null
-  var minBorderMargin: js.UndefOr[Double] = js.undefined
-  var mouseActiveRadius: js.UndefOr[Double] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
-  var tickColor: js.UndefOr[js.Any] = js.undefined
+  var minBorderMargin: js.UndefOr[Double] = js.native
+  var mouseActiveRadius: js.UndefOr[Double] = js.native
+  var show: js.UndefOr[Boolean] = js.native
+  var tickColor: js.UndefOr[js.Any] = js.native
 }
 
 object gridOptions {
   @scala.inline
-  def apply(
-    aboveData: js.UndefOr[Boolean] = js.undefined,
-    autoHighlight: js.UndefOr[Boolean] = js.undefined,
-    axisMargin: js.UndefOr[Double] = js.undefined,
-    backgroundColor: js.Any = null,
-    borderColor: js.Any = null,
-    borderWidth: js.Any = null,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    color: js.Any = null,
-    hoverable: js.UndefOr[Boolean] = js.undefined,
-    labelMargin: js.UndefOr[Double] = js.undefined,
-    margin: js.Any = null,
-    markings: js.Any = null,
-    markingsColor: js.Any = null,
-    markingsLineWidth: js.UndefOr[Double] = js.undefined,
-    minBorderMargin: js.UndefOr[Double] = js.undefined,
-    mouseActiveRadius: js.UndefOr[Double] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    tickColor: js.Any = null
-  ): gridOptions = {
+  def apply(): gridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aboveData)) __obj.updateDynamic("aboveData")(aboveData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHighlight)) __obj.updateDynamic("autoHighlight")(autoHighlight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(axisMargin)) __obj.updateDynamic("axisMargin")(axisMargin.get.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelMargin)) __obj.updateDynamic("labelMargin")(labelMargin.get.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (markings != null) __obj.updateDynamic("markings")(markings.asInstanceOf[js.Any])
-    if (markingsColor != null) __obj.updateDynamic("markingsColor")(markingsColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(markingsLineWidth)) __obj.updateDynamic("markingsLineWidth")(markingsLineWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minBorderMargin)) __obj.updateDynamic("minBorderMargin")(minBorderMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseActiveRadius)) __obj.updateDynamic("mouseActiveRadius")(mouseActiveRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[gridOptions]
   }
+  @scala.inline
+  implicit class gridOptionsOps[Self <: gridOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAboveData(value: Boolean): Self = this.set("aboveData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAboveData: Self = this.set("aboveData", js.undefined)
+    @scala.inline
+    def setAutoHighlight(value: Boolean): Self = this.set("autoHighlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHighlight: Self = this.set("autoHighlight", js.undefined)
+    @scala.inline
+    def setAxisMargin(value: Double): Self = this.set("axisMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisMargin: Self = this.set("axisMargin", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: js.Any): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderColor(value: js.Any): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: js.Any): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setClickable(value: Boolean): Self = this.set("clickable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickable: Self = this.set("clickable", js.undefined)
+    @scala.inline
+    def setColor(value: js.Any): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setHoverable(value: Boolean): Self = this.set("hoverable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverable: Self = this.set("hoverable", js.undefined)
+    @scala.inline
+    def setLabelMargin(value: Double): Self = this.set("labelMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelMargin: Self = this.set("labelMargin", js.undefined)
+    @scala.inline
+    def setMargin(value: js.Any): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMarkings(value: js.Any): Self = this.set("markings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkings: Self = this.set("markings", js.undefined)
+    @scala.inline
+    def setMarkingsColor(value: js.Any): Self = this.set("markingsColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkingsColor: Self = this.set("markingsColor", js.undefined)
+    @scala.inline
+    def setMarkingsLineWidth(value: Double): Self = this.set("markingsLineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkingsLineWidth: Self = this.set("markingsLineWidth", js.undefined)
+    @scala.inline
+    def setMinBorderMargin(value: Double): Self = this.set("minBorderMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinBorderMargin: Self = this.set("minBorderMargin", js.undefined)
+    @scala.inline
+    def setMouseActiveRadius(value: Double): Self = this.set("mouseActiveRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseActiveRadius: Self = this.set("mouseActiveRadius", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setTickColor(value: js.Any): Self = this.set("tickColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickColor: Self = this.set("tickColor", js.undefined)
+  }
+  
 }
 

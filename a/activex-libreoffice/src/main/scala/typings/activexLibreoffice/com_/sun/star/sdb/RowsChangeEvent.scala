@@ -7,8 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** indicates which rows have changed and the type of change action on the row set. */
+@js.native
 trait RowsChangeEvent extends RowChangeEvent {
-  var Bookmarks: SafeArray[_]
+  var Bookmarks: SafeArray[_] = js.native
 }
 
 object RowsChangeEvent {
@@ -17,5 +18,20 @@ object RowsChangeEvent {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Bookmarks = Bookmarks.asInstanceOf[js.Any], Rows = Rows.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowsChangeEvent]
   }
+  @scala.inline
+  implicit class RowsChangeEventOps[Self <: RowsChangeEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBookmarks(value: SafeArray[_]): Self = this.set("Bookmarks", value.asInstanceOf[js.Any])
+  }
+  
 }
 

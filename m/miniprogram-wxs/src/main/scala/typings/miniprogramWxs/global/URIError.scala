@@ -11,10 +11,6 @@ import scala.scalajs.js.annotation._
 class URIError ()
   extends typings.std.Error {
   def this(message: String) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 
 @JSGlobal("URIError")

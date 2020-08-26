@@ -25,19 +25,19 @@ class MsdAttribute protected () extends Element {
   @JSName("model")
   var model_FMsdAttribute: IModel = js.native
   def attributeType: String = js.native
-  def attributeType(newValue: String): js.Any = js.native
+  def attributeType_=(newValue: String): Unit = js.native
   def containerAsDataAttribute: DataAttribute = js.native
   def containerAsMsdEntity: MsdEntity = js.native
   def defaultValue: String = js.native
-  def defaultValue(newValue: String): js.Any = js.native
+  def defaultValue_=(newValue: String): Unit = js.native
   def enumerationName: String = js.native
-  def enumerationName(newValue: String): js.Any = js.native
+  def enumerationName_=(newValue: String): Unit = js.native
   def guid: String = js.native
-  def guid(newValue: String): js.Any = js.native
+  def guid_=(newValue: String): Unit = js.native
   def length: Double = js.native
-  def length(newValue: Double): js.Any = js.native
+  def length_=(newValue: Double): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
 }
 
 /* static members */

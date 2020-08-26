@@ -29,6 +29,14 @@ package object appmeshMod {
   */
   type EgressFilterType = typings.awsSdk.appmeshMod._EgressFilterType | java.lang.String
   type FilePath = java.lang.String
+  type GatewayRouteList = js.Array[typings.awsSdk.appmeshMod.GatewayRouteRef]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACTIVE
+    - typings.awsSdk.awsSdkStrings.DELETED
+    - typings.awsSdk.awsSdkStrings.INACTIVE
+    - java.lang.String
+  */
+  type GatewayRouteStatusCode = typings.awsSdk.appmeshMod._GatewayRouteStatusCode | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.cancelled__
     - typings.awsSdk.awsSdkStrings.`deadline-exceeded`
@@ -68,8 +76,10 @@ package object appmeshMod {
     - java.lang.String
   */
   type HttpScheme = typings.awsSdk.appmeshMod._HttpScheme | java.lang.String
+  type ListGatewayRoutesLimit = scala.Double
   type ListMeshesLimit = scala.Double
   type ListRoutesLimit = scala.Double
+  type ListVirtualGatewaysLimit = scala.Double
   type ListVirtualNodesLimit = scala.Double
   type ListVirtualRoutersLimit = scala.Double
   type ListVirtualServicesLimit = scala.Double
@@ -123,6 +133,33 @@ package object appmeshMod {
   type TcpRetryPolicyEvent = typings.awsSdk.awsSdkStrings.`connection-error` | java.lang.String
   type TcpRetryPolicyEvents = js.Array[typings.awsSdk.appmeshMod.TcpRetryPolicyEvent]
   type Timestamp = typings.std.Date
+  type VirtualGatewayCertificateAuthorityArns = js.Array[typings.awsSdk.appmeshMod.Arn]
+  type VirtualGatewayHealthCheckIntervalMillis = scala.Double
+  type VirtualGatewayHealthCheckThreshold = scala.Double
+  type VirtualGatewayHealthCheckTimeoutMillis = scala.Double
+  type VirtualGatewayList = js.Array[typings.awsSdk.appmeshMod.VirtualGatewayRef]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - typings.awsSdk.awsSdkStrings.PERMISSIVE
+    - typings.awsSdk.awsSdkStrings.STRICT
+    - java.lang.String
+  */
+  type VirtualGatewayListenerTlsMode = typings.awsSdk.appmeshMod._VirtualGatewayListenerTlsMode | java.lang.String
+  type VirtualGatewayListeners = js.Array[typings.awsSdk.appmeshMod.VirtualGatewayListener]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.grpc
+    - typings.awsSdk.awsSdkStrings.http_
+    - typings.awsSdk.awsSdkStrings.http2
+    - java.lang.String
+  */
+  type VirtualGatewayPortProtocol = typings.awsSdk.appmeshMod._VirtualGatewayPortProtocol | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACTIVE
+    - typings.awsSdk.awsSdkStrings.DELETED
+    - typings.awsSdk.awsSdkStrings.INACTIVE
+    - java.lang.String
+  */
+  type VirtualGatewayStatusCode = typings.awsSdk.appmeshMod._VirtualGatewayStatusCode | java.lang.String
   type VirtualNodeList = js.Array[typings.awsSdk.appmeshMod.VirtualNodeRef]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ACTIVE

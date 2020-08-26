@@ -42,26 +42,54 @@ trait Statistics extends js.Object {
 
 object Statistics {
   @scala.inline
-  def apply(
-    average: js.UndefOr[Average] = js.undefined,
-    count: js.UndefOr[Count] = js.undefined,
-    maximum: js.UndefOr[Maximum] = js.undefined,
-    minimum: js.UndefOr[Minimum] = js.undefined,
-    stdDeviation: js.UndefOr[StdDeviation] = js.undefined,
-    sum: js.UndefOr[Sum] = js.undefined,
-    sumOfSquares: js.UndefOr[SumOfSquares] = js.undefined,
-    variance: js.UndefOr[Variance] = js.undefined
-  ): Statistics = {
+  def apply(): Statistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdDeviation)) __obj.updateDynamic("stdDeviation")(stdDeviation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sum)) __obj.updateDynamic("sum")(sum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sumOfSquares)) __obj.updateDynamic("sumOfSquares")(sumOfSquares.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(variance)) __obj.updateDynamic("variance")(variance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statistics]
   }
+  @scala.inline
+  implicit class StatisticsOps[Self <: Statistics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAverage(value: Average): Self = this.set("average", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAverage: Self = this.set("average", js.undefined)
+    @scala.inline
+    def setCount(value: Count): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setMaximum(value: Maximum): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    @scala.inline
+    def setMinimum(value: Minimum): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    @scala.inline
+    def setStdDeviation(value: StdDeviation): Self = this.set("stdDeviation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdDeviation: Self = this.set("stdDeviation", js.undefined)
+    @scala.inline
+    def setSum(value: Sum): Self = this.set("sum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSum: Self = this.set("sum", js.undefined)
+    @scala.inline
+    def setSumOfSquares(value: SumOfSquares): Self = this.set("sumOfSquares", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSumOfSquares: Self = this.set("sumOfSquares", js.undefined)
+    @scala.inline
+    def setVariance(value: Variance): Self = this.set("variance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariance: Self = this.set("variance", js.undefined)
+  }
+  
 }
 

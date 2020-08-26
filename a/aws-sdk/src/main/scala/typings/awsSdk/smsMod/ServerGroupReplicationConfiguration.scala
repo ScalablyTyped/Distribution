@@ -18,14 +18,32 @@ trait ServerGroupReplicationConfiguration extends js.Object {
 
 object ServerGroupReplicationConfiguration {
   @scala.inline
-  def apply(
-    serverGroupId: ServerGroupId = null,
-    serverReplicationConfigurations: ServerReplicationConfigurations = null
-  ): ServerGroupReplicationConfiguration = {
+  def apply(): ServerGroupReplicationConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (serverGroupId != null) __obj.updateDynamic("serverGroupId")(serverGroupId.asInstanceOf[js.Any])
-    if (serverReplicationConfigurations != null) __obj.updateDynamic("serverReplicationConfigurations")(serverReplicationConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerGroupReplicationConfiguration]
   }
+  @scala.inline
+  implicit class ServerGroupReplicationConfigurationOps[Self <: ServerGroupReplicationConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServerGroupId(value: ServerGroupId): Self = this.set("serverGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerGroupId: Self = this.set("serverGroupId", js.undefined)
+    @scala.inline
+    def setServerReplicationConfigurationsVarargs(value: ServerReplicationConfiguration*): Self = this.set("serverReplicationConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setServerReplicationConfigurations(value: ServerReplicationConfigurations): Self = this.set("serverReplicationConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerReplicationConfigurations: Self = this.set("serverReplicationConfigurations", js.undefined)
+  }
+  
 }
 

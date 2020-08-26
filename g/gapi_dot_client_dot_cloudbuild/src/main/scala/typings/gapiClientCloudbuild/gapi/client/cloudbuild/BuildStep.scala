@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BuildStep extends js.Object {
   /**
     * A list of arguments that will be presented to the step when it is started.
@@ -13,29 +14,29 @@ trait BuildStep extends js.Object {
     * an entrypoint, the first element in args will be used as the entrypoint,
     * and the remainder will be used as arguments.
     */
-  var args: js.UndefOr[js.Array[String]] = js.undefined
+  var args: js.UndefOr[js.Array[String]] = js.native
   /**
     * Working directory (relative to project source root) to use when running
     * this operation's container.
     */
-  var dir: js.UndefOr[String] = js.undefined
+  var dir: js.UndefOr[String] = js.native
   /**
     * Optional entrypoint to be used instead of the build step image's default
     * If unset, the image's default will be used.
     */
-  var entrypoint: js.UndefOr[String] = js.undefined
+  var entrypoint: js.UndefOr[String] = js.native
   /**
     * A list of environment variable definitions to be used when running a step.
     *
     * The elements are of the form "KEY=VALUE" for the environment variable "KEY"
     * being given the value "VALUE".
     */
-  var env: js.UndefOr[js.Array[String]] = js.undefined
+  var env: js.UndefOr[js.Array[String]] = js.native
   /**
     * Optional unique identifier for this build step, used in wait_for to
     * reference this build step as a dependency.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * The name of the container image that will run this particular build step.
     *
@@ -54,12 +55,12 @@ trait BuildStep extends js.Object {
     * host's Docker daemon's cache and is available to use as the name for a
     * later build step.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * A list of environment variables which are encrypted using a Cloud KMS
     * crypto key. These values must be specified in the build's secrets.
     */
-  var secretEnv: js.UndefOr[js.Array[String]] = js.undefined
+  var secretEnv: js.UndefOr[js.Array[String]] = js.native
   /**
     * List of volumes to mount into the build step.
     *
@@ -70,7 +71,7 @@ trait BuildStep extends js.Object {
     * Using a named volume in only one step is not valid as it is indicative
     * of a mis-configured build request.
     */
-  var volumes: js.UndefOr[js.Array[Volume]] = js.undefined
+  var volumes: js.UndefOr[js.Array[Volume]] = js.native
   /**
     * The ID(s) of the step(s) that this build step depends on.
     * This build step will not start until all the build steps in wait_for
@@ -78,33 +79,73 @@ trait BuildStep extends js.Object {
     * start when all previous build steps in the Build.Steps list have completed
     * successfully.
     */
-  var waitFor: js.UndefOr[js.Array[String]] = js.undefined
+  var waitFor: js.UndefOr[js.Array[String]] = js.native
 }
 
 object BuildStep {
   @scala.inline
-  def apply(
-    args: js.Array[String] = null,
-    dir: String = null,
-    entrypoint: String = null,
-    env: js.Array[String] = null,
-    id: String = null,
-    name: String = null,
-    secretEnv: js.Array[String] = null,
-    volumes: js.Array[Volume] = null,
-    waitFor: js.Array[String] = null
-  ): BuildStep = {
+  def apply(): BuildStep = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (entrypoint != null) __obj.updateDynamic("entrypoint")(entrypoint.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (secretEnv != null) __obj.updateDynamic("secretEnv")(secretEnv.asInstanceOf[js.Any])
-    if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
-    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildStep]
   }
+  @scala.inline
+  implicit class BuildStepOps[Self <: BuildStep] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setEntrypoint(value: String): Self = this.set("entrypoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntrypoint: Self = this.set("entrypoint", js.undefined)
+    @scala.inline
+    def setEnvVarargs(value: String*): Self = this.set("env", js.Array(value :_*))
+    @scala.inline
+    def setEnv(value: js.Array[String]): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSecretEnvVarargs(value: String*): Self = this.set("secretEnv", js.Array(value :_*))
+    @scala.inline
+    def setSecretEnv(value: js.Array[String]): Self = this.set("secretEnv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretEnv: Self = this.set("secretEnv", js.undefined)
+    @scala.inline
+    def setVolumesVarargs(value: Volume*): Self = this.set("volumes", js.Array(value :_*))
+    @scala.inline
+    def setVolumes(value: js.Array[Volume]): Self = this.set("volumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumes: Self = this.set("volumes", js.undefined)
+    @scala.inline
+    def setWaitForVarargs(value: String*): Self = this.set("waitFor", js.Array(value :_*))
+    @scala.inline
+    def setWaitFor(value: js.Array[String]): Self = this.set("waitFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitFor: Self = this.set("waitFor", js.undefined)
+  }
+  
 }
 

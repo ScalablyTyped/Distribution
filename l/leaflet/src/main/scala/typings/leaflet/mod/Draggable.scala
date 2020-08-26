@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Draggable protected () extends Evented {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, dragStartTarget: HTMLElement) = this()
+  def this(element: HTMLElement, dragStartTarget: js.UndefOr[scala.Nothing], preventOutline: Boolean) = this()
   def this(element: HTMLElement, dragStartTarget: HTMLElement, preventOutline: Boolean) = this()
   def disable(): Unit = js.native
   def enable(): Unit = js.native

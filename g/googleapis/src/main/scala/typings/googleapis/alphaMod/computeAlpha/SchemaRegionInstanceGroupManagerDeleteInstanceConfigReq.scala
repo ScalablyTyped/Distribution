@@ -23,11 +23,34 @@ trait SchemaRegionInstanceGroupManagerDeleteInstanceConfigReq extends js.Object 
 
 object SchemaRegionInstanceGroupManagerDeleteInstanceConfigReq {
   @scala.inline
-  def apply(instances: js.Array[String] = null, names: js.Array[String] = null): SchemaRegionInstanceGroupManagerDeleteInstanceConfigReq = {
+  def apply(): SchemaRegionInstanceGroupManagerDeleteInstanceConfigReq = {
     val __obj = js.Dynamic.literal()
-    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
-    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRegionInstanceGroupManagerDeleteInstanceConfigReq]
   }
+  @scala.inline
+  implicit class SchemaRegionInstanceGroupManagerDeleteInstanceConfigReqOps[Self <: SchemaRegionInstanceGroupManagerDeleteInstanceConfigReq] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstancesVarargs(value: String*): Self = this.set("instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: js.Array[String]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("instances", js.undefined)
+    @scala.inline
+    def setNamesVarargs(value: String*): Self = this.set("names", js.Array(value :_*))
+    @scala.inline
+    def setNames(value: js.Array[String]): Self = this.set("names", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNames: Self = this.set("names", js.undefined)
+  }
+  
 }
 

@@ -21,9 +21,9 @@ trait ReplicationSubnetGroupArgs extends js.Object {
     */
   val subnetIds: Input[js.Array[Input[String]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object ReplicationSubnetGroupArgs {
@@ -31,12 +31,35 @@ object ReplicationSubnetGroupArgs {
   def apply(
     replicationSubnetGroupDescription: Input[String],
     replicationSubnetGroupId: Input[String],
-    subnetIds: Input[js.Array[Input[String]]],
-    tags: Input[StringDictionary[_]] = null
+    subnetIds: Input[js.Array[Input[String]]]
   ): ReplicationSubnetGroupArgs = {
     val __obj = js.Dynamic.literal(replicationSubnetGroupDescription = replicationSubnetGroupDescription.asInstanceOf[js.Any], replicationSubnetGroupId = replicationSubnetGroupId.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationSubnetGroupArgs]
   }
+  @scala.inline
+  implicit class ReplicationSubnetGroupArgsOps[Self <: ReplicationSubnetGroupArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReplicationSubnetGroupDescription(value: Input[String]): Self = this.set("replicationSubnetGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplicationSubnetGroupId(value: Input[String]): Self = this.set("replicationSubnetGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetIdsVarargs(value: Input[String]*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

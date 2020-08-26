@@ -8,16 +8,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait NewExpression_
+- typings.babelTypes.mod._Node because Already inherited */ @js.native
+trait NewExpression_
   extends Expression
      with BaseNode {
-  var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]
-  var callee: Expression | V8IntrinsicIdentifier_
-  var optional: `true` | `false` | Null
-  var typeArguments: TypeParameterInstantiation_ | Null
-  var typeParameters: TSTypeParameterInstantiation_ | Null
+  var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_] = js.native
+  var callee: Expression | V8IntrinsicIdentifier_ = js.native
+  var optional: `true` | `false` | Null = js.native
+  var typeArguments: TypeParameterInstantiation_ | Null = js.native
+  var typeParameters: TSTypeParameterInstantiation_ | Null = js.native
   @JSName("type")
-  var type_NewExpression_ : NewExpression
+  var type_NewExpression_ : NewExpression = js.native
 }
 
 object NewExpression_ {
@@ -25,20 +26,44 @@ object NewExpression_ {
   def apply(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
     callee: Expression | V8IntrinsicIdentifier_,
-    `type`: NewExpression,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    optional: `true` | `false` = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null,
-    typeArguments: TypeParameterInstantiation_ = null,
-    typeParameters: TSTypeParameterInstantiation_ = null
+    `type`: NewExpression
   ): NewExpression_ = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeArguments = typeArguments.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewExpression_]
   }
+  @scala.inline
+  implicit class NewExpression_Ops[Self <: NewExpression_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgumentsVarargs(value: (Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_)*): Self = this.set("arguments", js.Array(value :_*))
+    @scala.inline
+    def setArguments(value: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCallee(value: Expression | V8IntrinsicIdentifier_): Self = this.set("callee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: NewExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptional(value: `true` | `false`): Self = this.set("optional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptionalNull: Self = this.set("optional", null)
+    @scala.inline
+    def setTypeArguments(value: TypeParameterInstantiation_): Self = this.set("typeArguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypeArgumentsNull: Self = this.set("typeArguments", null)
+    @scala.inline
+    def setTypeParameters(value: TSTypeParameterInstantiation_): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypeParametersNull: Self = this.set("typeParameters", null)
+  }
+  
 }
 

@@ -15,33 +15,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextType extends js.Object {
-  var converter: js.UndefOr[typings.oracleOraclejet.ojvalidationBaseMod.Converter[String]] = js.undefined
-  var rendered: js.UndefOr[on | off] = js.undefined
-  var scaling: js.UndefOr[none | thousand | million | billion | trillion | quadrillion | auto] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var textType: js.UndefOr[percent | number] = js.undefined
+  var converter: js.UndefOr[typings.oracleOraclejet.ojvalidationBaseMod.Converter[String]] = js.native
+  var rendered: js.UndefOr[on | off] = js.native
+  var scaling: js.UndefOr[none | thousand | million | billion | trillion | quadrillion | auto] = js.native
+  var style: js.UndefOr[js.Object] = js.native
+  var text: js.UndefOr[String] = js.native
+  var textType: js.UndefOr[percent | number] = js.native
 }
 
 object TextType {
   @scala.inline
-  def apply(
-    converter: typings.oracleOraclejet.ojvalidationBaseMod.Converter[String] = null,
-    rendered: on | off = null,
-    scaling: none | thousand | million | billion | trillion | quadrillion | auto = null,
-    style: js.Object = null,
-    text: String = null,
-    textType: percent | number = null
-  ): TextType = {
+  def apply(): TextType = {
     val __obj = js.Dynamic.literal()
-    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
-    if (rendered != null) __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
-    if (scaling != null) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textType != null) __obj.updateDynamic("textType")(textType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextType]
   }
+  @scala.inline
+  implicit class TextTypeOps[Self <: TextType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConverter(value: typings.oracleOraclejet.ojvalidationBaseMod.Converter[String]): Self = this.set("converter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConverter: Self = this.set("converter", js.undefined)
+    @scala.inline
+    def setRendered(value: on | off): Self = this.set("rendered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRendered: Self = this.set("rendered", js.undefined)
+    @scala.inline
+    def setScaling(value: none | thousand | million | billion | trillion | quadrillion | auto): Self = this.set("scaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaling: Self = this.set("scaling", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextType(value: percent | number): Self = this.set("textType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextType: Self = this.set("textType", js.undefined)
+  }
+  
 }
 

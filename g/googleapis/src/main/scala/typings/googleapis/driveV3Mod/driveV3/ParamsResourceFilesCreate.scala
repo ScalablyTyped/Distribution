@@ -51,40 +51,54 @@ trait ParamsResourceFilesCreate extends StandardParameters {
 
 object ParamsResourceFilesCreate {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    fields: String = null,
-    ignoreDefaultVisibility: js.UndefOr[Boolean] = js.undefined,
-    keepRevisionForever: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    media: Body = null,
-    oauth_token: String = null,
-    ocrLanguage: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    requestBody: SchemaFile = null,
-    supportsTeamDrives: js.UndefOr[Boolean] = js.undefined,
-    useContentAsIndexableText: js.UndefOr[Boolean] = js.undefined,
-    userIp: String = null
-  ): ParamsResourceFilesCreate = {
+  def apply(): ParamsResourceFilesCreate = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreDefaultVisibility)) __obj.updateDynamic("ignoreDefaultVisibility")(ignoreDefaultVisibility.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepRevisionForever)) __obj.updateDynamic("keepRevisionForever")(keepRevisionForever.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (ocrLanguage != null) __obj.updateDynamic("ocrLanguage")(ocrLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useContentAsIndexableText)) __obj.updateDynamic("useContentAsIndexableText")(useContentAsIndexableText.get.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceFilesCreate]
   }
+  @scala.inline
+  implicit class ParamsResourceFilesCreateOps[Self <: ParamsResourceFilesCreate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setIgnoreDefaultVisibility(value: Boolean): Self = this.set("ignoreDefaultVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreDefaultVisibility: Self = this.set("ignoreDefaultVisibility", js.undefined)
+    @scala.inline
+    def setKeepRevisionForever(value: Boolean): Self = this.set("keepRevisionForever", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepRevisionForever: Self = this.set("keepRevisionForever", js.undefined)
+    @scala.inline
+    def setMedia(value: Body): Self = this.set("media", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedia: Self = this.set("media", js.undefined)
+    @scala.inline
+    def setOcrLanguage(value: String): Self = this.set("ocrLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOcrLanguage: Self = this.set("ocrLanguage", js.undefined)
+    @scala.inline
+    def setRequestBody(value: SchemaFile): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    @scala.inline
+    def setSupportsTeamDrives(value: Boolean): Self = this.set("supportsTeamDrives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsTeamDrives: Self = this.set("supportsTeamDrives", js.undefined)
+    @scala.inline
+    def setUseContentAsIndexableText(value: Boolean): Self = this.set("useContentAsIndexableText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseContentAsIndexableText: Self = this.set("useContentAsIndexableText", js.undefined)
+  }
+  
 }
 

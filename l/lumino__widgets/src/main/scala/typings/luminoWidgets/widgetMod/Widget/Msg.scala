@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 /**
   * A collection of stateless messages related to widgets.
   */
-@JSImport("@lumino/widgets/lib/widget", "Widget.Msg")
+@JSImport("@lumino/widgets/types/widget", "Widget.Msg")
 @js.native
 object Msg extends js.Object {
   /**

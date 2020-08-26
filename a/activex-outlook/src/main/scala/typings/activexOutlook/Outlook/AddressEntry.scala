@@ -32,6 +32,7 @@ trait AddressEntry extends js.Object {
   def GetFreeBusy(Start: VarDate, MinPerChar: Double): String = js.native
   def GetFreeBusy(Start: VarDate, MinPerChar: Double, CompleteFormat: js.Any): String = js.native
   def Update(): Unit = js.native
+  def Update(MakePermanent: js.UndefOr[scala.Nothing], Refresh: js.Any): Unit = js.native
   def Update(MakePermanent: js.Any): Unit = js.native
   def Update(MakePermanent: js.Any, Refresh: js.Any): Unit = js.native
   def UpdateFreeBusy(): Unit = js.native

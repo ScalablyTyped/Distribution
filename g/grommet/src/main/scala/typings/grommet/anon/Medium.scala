@@ -4,33 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Medium extends js.Object {
-  var large: js.UndefOr[String] = js.undefined
-  var medium: js.UndefOr[String] = js.undefined
-  var none: js.UndefOr[String] = js.undefined
-  var small: js.UndefOr[String] = js.undefined
-  var xlarge: js.UndefOr[String] = js.undefined
-  var xsmall: js.UndefOr[String] = js.undefined
+  var large: js.UndefOr[String] = js.native
+  var medium: js.UndefOr[String] = js.native
+  var small: js.UndefOr[String] = js.native
+  var xlarge: js.UndefOr[String] = js.native
+  var xsmall: js.UndefOr[String] = js.native
 }
 
 object Medium {
   @scala.inline
-  def apply(
-    large: String = null,
-    medium: String = null,
-    none: String = null,
-    small: String = null,
-    xlarge: String = null,
-    xsmall: String = null
-  ): Medium = {
+  def apply(): Medium = {
     val __obj = js.Dynamic.literal()
-    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
-    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
-    if (none != null) __obj.updateDynamic("none")(none.asInstanceOf[js.Any])
-    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
-    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge.asInstanceOf[js.Any])
-    if (xsmall != null) __obj.updateDynamic("xsmall")(xsmall.asInstanceOf[js.Any])
     __obj.asInstanceOf[Medium]
   }
+  @scala.inline
+  implicit class MediumOps[Self <: Medium] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLarge(value: String): Self = this.set("large", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLarge: Self = this.set("large", js.undefined)
+    @scala.inline
+    def setMedium(value: String): Self = this.set("medium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedium: Self = this.set("medium", js.undefined)
+    @scala.inline
+    def setSmall(value: String): Self = this.set("small", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmall: Self = this.set("small", js.undefined)
+    @scala.inline
+    def setXlarge(value: String): Self = this.set("xlarge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXlarge: Self = this.set("xlarge", js.undefined)
+    @scala.inline
+    def setXsmall(value: String): Self = this.set("xsmall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXsmall: Self = this.set("xsmall", js.undefined)
+  }
+  
 }
 

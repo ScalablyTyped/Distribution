@@ -38,23 +38,50 @@ trait CreateFileSystemRequest extends js.Object {
 
 object CreateFileSystemRequest {
   @scala.inline
-  def apply(
-    CreationToken: CreationToken,
-    Encrypted: js.UndefOr[Encrypted] = js.undefined,
-    KmsKeyId: KmsKeyId = null,
-    PerformanceMode: PerformanceMode = null,
-    ProvisionedThroughputInMibps: js.UndefOr[ProvisionedThroughputInMibps] = js.undefined,
-    Tags: Tags = null,
-    ThroughputMode: ThroughputMode = null
-  ): CreateFileSystemRequest = {
+  def apply(CreationToken: CreationToken): CreateFileSystemRequest = {
     val __obj = js.Dynamic.literal(CreationToken = CreationToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (PerformanceMode != null) __obj.updateDynamic("PerformanceMode")(PerformanceMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProvisionedThroughputInMibps)) __obj.updateDynamic("ProvisionedThroughputInMibps")(ProvisionedThroughputInMibps.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (ThroughputMode != null) __obj.updateDynamic("ThroughputMode")(ThroughputMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFileSystemRequest]
   }
+  @scala.inline
+  implicit class CreateFileSystemRequestOps[Self <: CreateFileSystemRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationToken(value: CreationToken): Self = this.set("CreationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncrypted(value: Encrypted): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setPerformanceMode(value: PerformanceMode): Self = this.set("PerformanceMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceMode: Self = this.set("PerformanceMode", js.undefined)
+    @scala.inline
+    def setProvisionedThroughputInMibps(value: ProvisionedThroughputInMibps): Self = this.set("ProvisionedThroughputInMibps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedThroughputInMibps: Self = this.set("ProvisionedThroughputInMibps", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setThroughputMode(value: ThroughputMode): Self = this.set("ThroughputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThroughputMode: Self = this.set("ThroughputMode", js.undefined)
+  }
+  
 }
 

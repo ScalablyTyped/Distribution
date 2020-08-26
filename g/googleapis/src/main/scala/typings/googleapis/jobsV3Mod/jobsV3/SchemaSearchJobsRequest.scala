@@ -126,36 +126,74 @@ trait SchemaSearchJobsRequest extends js.Object {
 
 object SchemaSearchJobsRequest {
   @scala.inline
-  def apply(
-    disableKeywordMatch: js.UndefOr[Boolean] = js.undefined,
-    diversificationLevel: String = null,
-    enableBroadening: js.UndefOr[Boolean] = js.undefined,
-    histogramFacets: SchemaHistogramFacets = null,
-    jobQuery: SchemaJobQuery = null,
-    jobView: String = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    orderBy: String = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    pageToken: String = null,
-    requestMetadata: SchemaRequestMetadata = null,
-    requirePreciseResultSize: js.UndefOr[Boolean] = js.undefined,
-    searchMode: String = null
-  ): SchemaSearchJobsRequest = {
+  def apply(): SchemaSearchJobsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableKeywordMatch)) __obj.updateDynamic("disableKeywordMatch")(disableKeywordMatch.get.asInstanceOf[js.Any])
-    if (diversificationLevel != null) __obj.updateDynamic("diversificationLevel")(diversificationLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBroadening)) __obj.updateDynamic("enableBroadening")(enableBroadening.get.asInstanceOf[js.Any])
-    if (histogramFacets != null) __obj.updateDynamic("histogramFacets")(histogramFacets.asInstanceOf[js.Any])
-    if (jobQuery != null) __obj.updateDynamic("jobQuery")(jobQuery.asInstanceOf[js.Any])
-    if (jobView != null) __obj.updateDynamic("jobView")(jobView.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(requirePreciseResultSize)) __obj.updateDynamic("requirePreciseResultSize")(requirePreciseResultSize.get.asInstanceOf[js.Any])
-    if (searchMode != null) __obj.updateDynamic("searchMode")(searchMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchJobsRequest]
   }
+  @scala.inline
+  implicit class SchemaSearchJobsRequestOps[Self <: SchemaSearchJobsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisableKeywordMatch(value: Boolean): Self = this.set("disableKeywordMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableKeywordMatch: Self = this.set("disableKeywordMatch", js.undefined)
+    @scala.inline
+    def setDiversificationLevel(value: String): Self = this.set("diversificationLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiversificationLevel: Self = this.set("diversificationLevel", js.undefined)
+    @scala.inline
+    def setEnableBroadening(value: Boolean): Self = this.set("enableBroadening", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableBroadening: Self = this.set("enableBroadening", js.undefined)
+    @scala.inline
+    def setHistogramFacets(value: SchemaHistogramFacets): Self = this.set("histogramFacets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistogramFacets: Self = this.set("histogramFacets", js.undefined)
+    @scala.inline
+    def setJobQuery(value: SchemaJobQuery): Self = this.set("jobQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobQuery: Self = this.set("jobQuery", js.undefined)
+    @scala.inline
+    def setJobView(value: String): Self = this.set("jobView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobView: Self = this.set("jobView", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setRequestMetadata(value: SchemaRequestMetadata): Self = this.set("requestMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestMetadata: Self = this.set("requestMetadata", js.undefined)
+    @scala.inline
+    def setRequirePreciseResultSize(value: Boolean): Self = this.set("requirePreciseResultSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequirePreciseResultSize: Self = this.set("requirePreciseResultSize", js.undefined)
+    @scala.inline
+    def setSearchMode(value: String): Self = this.set("searchMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchMode: Self = this.set("searchMode", js.undefined)
+  }
+  
 }
 

@@ -31,16 +31,36 @@ trait SslNegotiationPolicyArgs extends js.Object {
 
 object SslNegotiationPolicyArgs {
   @scala.inline
-  def apply(
-    lbPort: Input[Double],
-    loadBalancer: Input[String],
-    attributes: Input[js.Array[Input[SslNegotiationPolicyAttribute]]] = null,
-    name: Input[String] = null
-  ): SslNegotiationPolicyArgs = {
+  def apply(lbPort: Input[Double], loadBalancer: Input[String]): SslNegotiationPolicyArgs = {
     val __obj = js.Dynamic.literal(lbPort = lbPort.asInstanceOf[js.Any], loadBalancer = loadBalancer.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SslNegotiationPolicyArgs]
   }
+  @scala.inline
+  implicit class SslNegotiationPolicyArgsOps[Self <: SslNegotiationPolicyArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLbPort(value: Input[Double]): Self = this.set("lbPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoadBalancer(value: Input[String]): Self = this.set("loadBalancer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributesVarargs(value: Input[SslNegotiationPolicyAttribute]*): Self = this.set("attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: Input[js.Array[Input[SslNegotiationPolicyAttribute]]]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

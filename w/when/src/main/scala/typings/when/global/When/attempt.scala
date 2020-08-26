@@ -51,13 +51,149 @@ object attempt extends js.Object {
     arg3: Promise[A3],
     arg4: Promise[A4]
   ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4], arg5: Promise[A5]): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4, arg5: Promise[A5]): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: Promise[A4], arg5: A5): Promise[T] = js.native
   def apply[A1, A2, A3, A4, A5, T](
     f: Fn5[A1, A2, A3, A4, A5, T],
-    arg1: A1 | Promise[A1],
-    arg2: A2 | Promise[A2],
-    arg3: A3 | Promise[A3],
-    arg4: A4 | Promise[A4],
-    arg5: A5 | Promise[A5]
+    arg1: A1,
+    arg2: A2,
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: Promise[A2],
+    arg3: A3,
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: A4,
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: A5
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: A1,
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4, arg5: Promise[A5]): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: Promise[A4], arg5: A5): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: A2,
+    arg3: A3,
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: A4, arg5: A5): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: A2,
+    arg3: Promise[A3],
+    arg4: A4,
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: A2,
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: A5
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: A2,
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](f: Fn5[A1, A2, A3, A4, A5, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: A4, arg5: A5): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: A3,
+    arg4: A4,
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: A3,
+    arg4: Promise[A4],
+    arg5: A5
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: A3,
+    arg4: Promise[A4],
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: A4,
+    arg5: A5
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: A4,
+    arg5: Promise[A5]
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: A5
+  ): Promise[T] = js.native
+  def apply[A1, A2, A3, A4, A5, T](
+    f: Fn5[A1, A2, A3, A4, A5, T],
+    arg1: Promise[A1],
+    arg2: Promise[A2],
+    arg3: Promise[A3],
+    arg4: Promise[A4],
+    arg5: Promise[A5]
   ): Promise[T] = js.native
 }
 

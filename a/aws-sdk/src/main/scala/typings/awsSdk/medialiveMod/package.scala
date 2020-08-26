@@ -91,6 +91,7 @@ package object medialiveMod {
     - java.lang.String
   */
   type Ac3MetadataControl = typings.awsSdk.medialiveMod._Ac3MetadataControl | java.lang.String
+  type AcceptHeader = typings.awsSdk.awsSdkStrings.imageSlashjpeg | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AUTO
     - typings.awsSdk.awsSdkStrings.FIXED
@@ -238,6 +239,7 @@ package object medialiveMod {
   */
   type ChannelState = typings.awsSdk.medialiveMod._ChannelState | java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.medialiveMod.ClientApiVersions
+  type ContentType = typings.awsSdk.awsSdkStrings.imageSlashjpeg | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.SYNCED
     - typings.awsSdk.awsSdkStrings.SYNCING
@@ -399,6 +401,18 @@ package object medialiveMod {
     - java.lang.String
   */
   type Eac3SurroundMode = typings.awsSdk.medialiveMod._Eac3SurroundMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.EXCLUDE
+    - typings.awsSdk.awsSdkStrings.INCLUDE
+    - java.lang.String
+  */
+  type EbuTtDDestinationStyleControl = typings.awsSdk.medialiveMod._EbuTtDDestinationStyleControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - java.lang.String
+  */
+  type EbuTtDFillLineGapControl = typings.awsSdk.medialiveMod._EbuTtDFillLineGapControl | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DISABLED
     - typings.awsSdk.awsSdkStrings.UPCONVERT
@@ -710,7 +724,12 @@ package object medialiveMod {
     - java.lang.String
   */
   type H265RateControlMode = typings.awsSdk.medialiveMod._H265RateControlMode | java.lang.String
-  type H265ScanType = typings.awsSdk.awsSdkStrings.PROGRESSIVE | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.INTERLACED
+    - typings.awsSdk.awsSdkStrings.PROGRESSIVE
+    - java.lang.String
+  */
+  type H265ScanType = typings.awsSdk.medialiveMod._H265ScanType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DISABLED
     - typings.awsSdk.awsSdkStrings.ENABLED
@@ -819,6 +838,7 @@ package object medialiveMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.MANIFESTS_AND_SEGMENTS
     - typings.awsSdk.awsSdkStrings.SEGMENTS_ONLY
+    - typings.awsSdk.awsSdkStrings.VARIANT_MANIFESTS_AND_SEGMENTS
     - java.lang.String
   */
   type HlsOutputSelection = typings.awsSdk.medialiveMod._HlsOutputSelection | java.lang.String
@@ -933,6 +953,7 @@ package object medialiveMod {
     - java.lang.String
   */
   type InputDeviceState = typings.awsSdk.medialiveMod._InputDeviceState | java.lang.String
+  type InputDeviceThumbnail = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.medialiveMod.Blob | java.lang.String | typings.node.streamMod.Readable
   type InputDeviceType = typings.awsSdk.awsSdkStrings.HD | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AUTO
@@ -1620,6 +1641,7 @@ package object medialiveMod {
   type listOfScte35Descriptor = js.Array[typings.awsSdk.medialiveMod.Scte35Descriptor]
   type listOfString = js.Array[typings.awsSdk.medialiveMod.string]
   type listOfVideoDescription = js.Array[typings.awsSdk.medialiveMod.VideoDescription]
+  type long = scala.Double
   type longMin0Max1099511627775 = scala.Double
   type longMin0Max4294967295 = scala.Double
   type longMin0Max8589934591 = scala.Double
@@ -1629,8 +1651,10 @@ package object medialiveMod {
   type stringMin1 = java.lang.String
   type stringMin1Max255 = java.lang.String
   type stringMin1Max256 = java.lang.String
+  type stringMin1Max35 = java.lang.String
   type stringMin32Max32 = java.lang.String
   type stringMin34Max34 = java.lang.String
   type stringMin3Max3 = java.lang.String
   type stringMin6Max6 = java.lang.String
+  type timestamp = typings.std.Date
 }

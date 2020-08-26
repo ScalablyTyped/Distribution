@@ -11,7 +11,7 @@ Deep object merge utility.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 377208 |
+| # downloads        | 347398 |
 | # stars            | 0 |
 
 ## Links

@@ -25,18 +25,14 @@ class AssociationDeleteBehavior protected () extends Element {
   @JSName("model")
   var model_FAssociationDeleteBehavior: IModel = js.native
   def childDeleteBehavior: DeletingBehavior = js.native
-  def childDeleteBehavior(newValue: DeletingBehavior): js.Any = js.native
-  def childErrorMessage(): js.Any = js.native
-  def childErrorMessage(newValue: Text): js.Any = js.native
-  @JSName("childErrorMessage")
-  def childErrorMessage_Union: Text | Null = js.native
+  def childDeleteBehavior_=(newValue: DeletingBehavior): Unit = js.native
+  def childErrorMessage: Text | Null = js.native
+  def childErrorMessage_=(newValue: Text | Null): Unit = js.native
   def containerAsAssociationBase: AssociationBase = js.native
   def parentDeleteBehavior: DeletingBehavior = js.native
-  def parentDeleteBehavior(newValue: DeletingBehavior): js.Any = js.native
-  def parentErrorMessage(): js.Any = js.native
-  def parentErrorMessage(newValue: Text): js.Any = js.native
-  @JSName("parentErrorMessage")
-  def parentErrorMessage_Union: Text | Null = js.native
+  def parentDeleteBehavior_=(newValue: DeletingBehavior): Unit = js.native
+  def parentErrorMessage: Text | Null = js.native
+  def parentErrorMessage_=(newValue: Text | Null): Unit = js.native
 }
 
 /* static members */

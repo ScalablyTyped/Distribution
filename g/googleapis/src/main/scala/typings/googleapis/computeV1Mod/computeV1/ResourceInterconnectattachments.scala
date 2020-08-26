@@ -99,6 +99,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaInterconnectAttachmentAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaInterconnectAttachmentAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInterconnectAttachmentAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceInterconnectattachmentsAggregatedlist): GaxiosPromise[SchemaInterconnectAttachmentAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceInterconnectattachmentsAggregatedlist,
@@ -190,6 +191,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInterconnectattachmentsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceInterconnectattachmentsDelete,
@@ -282,6 +284,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInterconnectAttachment] = js.native
   def get(callback: BodyResponseCallback[SchemaInterconnectAttachment]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInterconnectAttachment] = js.native
   def get(params: ParamsResourceInterconnectattachmentsGet): GaxiosPromise[SchemaInterconnectAttachment] = js.native
   def get(
     params: ParamsResourceInterconnectattachmentsGet,
@@ -374,6 +377,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInterconnectattachmentsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(
     params: ParamsResourceInterconnectattachmentsInsert,
@@ -479,6 +483,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaInterconnectAttachmentList] = js.native
   def list(callback: BodyResponseCallback[SchemaInterconnectAttachmentList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInterconnectAttachmentList] = js.native
   def list(params: ParamsResourceInterconnectattachmentsList): GaxiosPromise[SchemaInterconnectAttachmentList] = js.native
   def list(
     params: ParamsResourceInterconnectattachmentsList,
@@ -515,6 +520,7 @@ class ResourceInterconnectattachments protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceInterconnectattachmentsPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(
     params: ParamsResourceInterconnectattachmentsPatch,

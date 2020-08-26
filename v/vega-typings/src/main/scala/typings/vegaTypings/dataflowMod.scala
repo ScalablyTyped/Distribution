@@ -13,6 +13,7 @@ object dataflowMod extends js.Object {
   trait Changeset_ extends js.Object {
     def insert(tuples: js.Any): this.type = js.native
     def modify(tuple: js.Any): this.type = js.native
+    def modify(tuple: js.Any, field: js.UndefOr[scala.Nothing], value: js.Any): this.type = js.native
     def modify(tuple: js.Any, field: String): this.type = js.native
     def modify(tuple: js.Any, field: String, value: js.Any): this.type = js.native
     def remove(tuples: js.Any): this.type = js.native
@@ -21,8 +22,43 @@ object dataflowMod extends js.Object {
   @js.native
   class Operator () extends js.Object {
     def this(init: js.Any) = this()
+    def this(init: js.UndefOr[scala.Nothing], update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _]) = this()
     def this(init: js.Any, update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _]) = this()
+    def this(init: js.UndefOr[scala.Nothing], update: js.UndefOr[scala.Nothing], params: js.Any) = this()
+    def this(
+      init: js.UndefOr[scala.Nothing],
+      update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _],
+      params: js.Any
+    ) = this()
+    def this(init: js.Any, update: js.UndefOr[scala.Nothing], params: js.Any) = this()
     def this(init: js.Any, update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _], params: js.Any) = this()
+    def this(
+      init: js.UndefOr[scala.Nothing],
+      update: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      react: Boolean
+    ) = this()
+    def this(init: js.UndefOr[scala.Nothing], update: js.UndefOr[scala.Nothing], params: js.Any, react: Boolean) = this()
+    def this(
+      init: js.UndefOr[scala.Nothing],
+      update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _],
+      params: js.UndefOr[scala.Nothing],
+      react: Boolean
+    ) = this()
+    def this(
+      init: js.UndefOr[scala.Nothing],
+      update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _],
+      params: js.Any,
+      react: Boolean
+    ) = this()
+    def this(init: js.Any, update: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], react: Boolean) = this()
+    def this(init: js.Any, update: js.UndefOr[scala.Nothing], params: js.Any, react: Boolean) = this()
+    def this(
+      init: js.Any,
+      update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _],
+      params: js.UndefOr[scala.Nothing],
+      react: Boolean
+    ) = this()
     def this(
       init: js.Any,
       update: js.Function2[/* obj */ js.Any, /* pulse */ js.Any, _],
@@ -33,6 +69,7 @@ object dataflowMod extends js.Object {
     def marshall(stamp: Double): js.Any = js.native
     def modified(): js.Function1[/* state */ js.Any, _] = js.native
     def parameters(params: js.Object): js.Array[Operator] = js.native
+    def parameters(params: js.Object, react: js.UndefOr[scala.Nothing], initonly: Boolean): js.Array[Operator] = js.native
     def parameters(params: js.Object, react: Boolean): js.Array[Operator] = js.native
     def parameters(params: js.Object, react: Boolean, initonly: Boolean): js.Array[Operator] = js.native
     def run(pulse: js.Any): js.Any = js.native
@@ -44,6 +81,7 @@ object dataflowMod extends js.Object {
   @js.native
   class Transform () extends Operator {
     def this(init: js.Any) = this()
+    def this(init: js.UndefOr[scala.Nothing], params: js.Any) = this()
     def this(init: js.Any, params: js.Any) = this()
     def transform(pulse: js.Any): js.Any = js.native
     def transform(pulse: js.Any, params: js.Any): js.Any = js.native

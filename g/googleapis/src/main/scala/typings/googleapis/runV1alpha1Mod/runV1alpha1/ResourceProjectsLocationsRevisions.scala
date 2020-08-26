@@ -31,6 +31,7 @@ class ResourceProjectsLocationsRevisions protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsRevisionsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsRevisionsDelete,
@@ -61,6 +62,7 @@ class ResourceProjectsLocationsRevisions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRevision] = js.native
   def get(callback: BodyResponseCallback[SchemaRevision]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRevision] = js.native
   def get(params: ParamsResourceProjectsLocationsRevisionsGet): GaxiosPromise[SchemaRevision] = js.native
   def get(
     params: ParamsResourceProjectsLocationsRevisionsGet,
@@ -98,6 +100,7 @@ class ResourceProjectsLocationsRevisions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListRevisionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListRevisionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListRevisionsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsRevisionsList): GaxiosPromise[SchemaListRevisionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsRevisionsList,

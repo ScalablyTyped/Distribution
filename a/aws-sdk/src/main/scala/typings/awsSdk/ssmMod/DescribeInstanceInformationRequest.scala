@@ -26,18 +26,42 @@ trait DescribeInstanceInformationRequest extends js.Object {
 
 object DescribeInstanceInformationRequest {
   @scala.inline
-  def apply(
-    Filters: InstanceInformationStringFilterList = null,
-    InstanceInformationFilterList: InstanceInformationFilterList = null,
-    MaxResults: js.UndefOr[MaxResultsEC2Compatible] = js.undefined,
-    NextToken: NextToken = null
-  ): DescribeInstanceInformationRequest = {
+  def apply(): DescribeInstanceInformationRequest = {
     val __obj = js.Dynamic.literal()
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (InstanceInformationFilterList != null) __obj.updateDynamic("InstanceInformationFilterList")(InstanceInformationFilterList.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstanceInformationRequest]
   }
+  @scala.inline
+  implicit class DescribeInstanceInformationRequestOps[Self <: DescribeInstanceInformationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: InstanceInformationStringFilter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: InstanceInformationStringFilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setInstanceInformationFilterListVarargs(value: InstanceInformationFilter*): Self = this.set("InstanceInformationFilterList", js.Array(value :_*))
+    @scala.inline
+    def setInstanceInformationFilterList(value: InstanceInformationFilterList): Self = this.set("InstanceInformationFilterList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceInformationFilterList: Self = this.set("InstanceInformationFilterList", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResultsEC2Compatible): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

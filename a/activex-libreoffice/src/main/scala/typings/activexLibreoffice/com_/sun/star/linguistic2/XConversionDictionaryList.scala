@@ -16,9 +16,10 @@ import scala.scalajs.js.annotation._
   * flushed upon termination of the dictionary list.
   * @since OOo 1.1.2
   */
+@js.native
 trait XConversionDictionaryList extends XInterface {
   /** @returns the name container interface to the dictionaries in the list.  The interface can be used to add, remove or retrieve dictionaries from the list by */
-  val DictionaryContainer: XNameContainer
+  val DictionaryContainer: XNameContainer = js.native
   /**
     * creates a new dictionary and adds it to the dictionary list.
     *
@@ -30,9 +31,9 @@ trait XConversionDictionaryList extends XInterface {
     * @throws NoSupportException when **nConversionDictionaryType** is not known by the implementation.
     * @throws ElementExistException when a dictionary with the specified name already exists.
     */
-  def addNewDictionary(aName: String, aLocale: Locale, nConversionDictionaryType: Double): XConversionDictionary
+  def addNewDictionary(aName: String, aLocale: Locale, nConversionDictionaryType: Double): XConversionDictionary = js.native
   /** @returns the name container interface to the dictionaries in the list.  The interface can be used to add, remove or retrieve dictionaries from the list by */
-  def getDictionaryContainer(): XNameContainer
+  def getDictionaryContainer(): XNameContainer = js.native
   /**
     * searches for entries that match the given text.
     *
@@ -58,7 +59,7 @@ trait XConversionDictionaryList extends XInterface {
     nConversionDictionaryType: Double,
     eDirection: ConversionDirection,
     nTextConversionOptions: Double
-  ): SafeArray[String]
+  ): SafeArray[String] = js.native
   /**
     * returns the maximum number of characters used as left or right text in entries.
     *
@@ -70,7 +71,7 @@ trait XConversionDictionaryList extends XInterface {
     * @param eDirection specifies if the left text or the right text of entries will be used.
     * @see com.sun.star.linguistic2.ConversionDirection
     */
-  def queryMaxCharCount(aLocale: Locale, nConversionDictionaryType: Double, eDirection: ConversionDirection): Double
+  def queryMaxCharCount(aLocale: Locale, nConversionDictionaryType: Double, eDirection: ConversionDirection): Double = js.native
 }
 
 object XConversionDictionaryList {
@@ -88,5 +89,28 @@ object XConversionDictionaryList {
     val __obj = js.Dynamic.literal(DictionaryContainer = DictionaryContainer.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addNewDictionary = js.Any.fromFunction3(addNewDictionary), getDictionaryContainer = js.Any.fromFunction0(getDictionaryContainer), queryConversions = js.Any.fromFunction7(queryConversions), queryInterface = js.Any.fromFunction1(queryInterface), queryMaxCharCount = js.Any.fromFunction3(queryMaxCharCount), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XConversionDictionaryList]
   }
+  @scala.inline
+  implicit class XConversionDictionaryListOps[Self <: XConversionDictionaryList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDictionaryContainer(value: XNameContainer): Self = this.set("DictionaryContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddNewDictionary(value: (String, Locale, Double) => XConversionDictionary): Self = this.set("addNewDictionary", js.Any.fromFunction3(value))
+    @scala.inline
+    def setGetDictionaryContainer(value: () => XNameContainer): Self = this.set("getDictionaryContainer", js.Any.fromFunction0(value))
+    @scala.inline
+    def setQueryConversions(value: (String, Double, Double, Locale, Double, ConversionDirection, Double) => SafeArray[String]): Self = this.set("queryConversions", js.Any.fromFunction7(value))
+    @scala.inline
+    def setQueryMaxCharCount(value: (Locale, Double, ConversionDirection) => Double): Self = this.set("queryMaxCharCount", js.Any.fromFunction3(value))
+  }
+  
 }
 

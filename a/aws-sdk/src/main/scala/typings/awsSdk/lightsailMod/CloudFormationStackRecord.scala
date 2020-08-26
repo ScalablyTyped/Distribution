@@ -42,26 +42,56 @@ trait CloudFormationStackRecord extends js.Object {
 
 object CloudFormationStackRecord {
   @scala.inline
-  def apply(
-    arn: NonEmptyString = null,
-    createdAt: IsoDate = null,
-    destinationInfo: DestinationInfo = null,
-    location: ResourceLocation = null,
-    name: ResourceName = null,
-    resourceType: ResourceType = null,
-    sourceInfo: CloudFormationStackRecordSourceInfoList = null,
-    state: RecordState = null
-  ): CloudFormationStackRecord = {
+  def apply(): CloudFormationStackRecord = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (destinationInfo != null) __obj.updateDynamic("destinationInfo")(destinationInfo.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (sourceInfo != null) __obj.updateDynamic("sourceInfo")(sourceInfo.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudFormationStackRecord]
   }
+  @scala.inline
+  implicit class CloudFormationStackRecordOps[Self <: CloudFormationStackRecord] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDestinationInfo(value: DestinationInfo): Self = this.set("destinationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationInfo: Self = this.set("destinationInfo", js.undefined)
+    @scala.inline
+    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setSourceInfoVarargs(value: CloudFormationStackRecordSourceInfo*): Self = this.set("sourceInfo", js.Array(value :_*))
+    @scala.inline
+    def setSourceInfo(value: CloudFormationStackRecordSourceInfoList): Self = this.set("sourceInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceInfo: Self = this.set("sourceInfo", js.undefined)
+    @scala.inline
+    def setState(value: RecordState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

@@ -10,70 +10,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WritingOptions extends CommonOptions {
   /** Override workbook properties on save */
-  var Props: js.UndefOr[Properties] = js.undefined
+  var Props: js.UndefOr[Properties] = js.native
   /**
     * Generate Shared String Table
     * @default false
     */
-  var bookSST: js.UndefOr[Boolean] = js.undefined
+  var bookSST: js.UndefOr[Boolean] = js.native
   /**
     * File format of generated workbook
     * @default 'xlsx'
     */
-  var bookType: js.UndefOr[BookType] = js.undefined
+  var bookType: js.UndefOr[BookType] = js.native
   /**
     * Use ZIP compression for ZIP-based formats
     * @default false
     */
-  var compression: js.UndefOr[Boolean] = js.undefined
+  var compression: js.UndefOr[Boolean] = js.native
   /**
     * Suppress "number stored as text" errors in generated files
     * @default true
     */
-  var ignoreEC: js.UndefOr[Boolean] = js.undefined
+  var ignoreEC: js.UndefOr[Boolean] = js.native
   /**
     * Name of Worksheet (for single-sheet formats)
     * @default ''
     */
-  var sheet: js.UndefOr[String] = js.undefined
+  var sheet: js.UndefOr[String] = js.native
   /** Output data encoding */
-  var `type`: js.UndefOr[base64 | binary | buffer | file | array | string] = js.undefined
+  var `type`: js.UndefOr[base64 | binary | buffer | file | array | string] = js.native
 }
 
 object WritingOptions {
   @scala.inline
-  def apply(
-    Props: Properties = null,
-    WTF: js.UndefOr[Boolean] = js.undefined,
-    bookSST: js.UndefOr[Boolean] = js.undefined,
-    bookType: BookType = null,
-    bookVBA: js.UndefOr[Boolean] = js.undefined,
-    cellDates: js.UndefOr[Boolean] = js.undefined,
-    cellStyles: js.UndefOr[Boolean] = js.undefined,
-    compression: js.UndefOr[Boolean] = js.undefined,
-    ignoreEC: js.UndefOr[Boolean] = js.undefined,
-    password: String = null,
-    sheet: String = null,
-    sheetStubs: js.UndefOr[Boolean] = js.undefined,
-    `type`: base64 | binary | buffer | file | array | string = null
-  ): WritingOptions = {
+  def apply(): WritingOptions = {
     val __obj = js.Dynamic.literal()
-    if (Props != null) __obj.updateDynamic("Props")(Props.asInstanceOf[js.Any])
-    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bookSST)) __obj.updateDynamic("bookSST")(bookSST.get.asInstanceOf[js.Any])
-    if (bookType != null) __obj.updateDynamic("bookType")(bookType.asInstanceOf[js.Any])
-    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEC)) __obj.updateDynamic("ignoreEC")(ignoreEC.get.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (sheet != null) __obj.updateDynamic("sheet")(sheet.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetStubs)) __obj.updateDynamic("sheetStubs")(sheetStubs.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WritingOptions]
   }
+  @scala.inline
+  implicit class WritingOptionsOps[Self <: WritingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProps(value: Properties): Self = this.set("Props", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProps: Self = this.set("Props", js.undefined)
+    @scala.inline
+    def setBookSST(value: Boolean): Self = this.set("bookSST", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBookSST: Self = this.set("bookSST", js.undefined)
+    @scala.inline
+    def setBookType(value: BookType): Self = this.set("bookType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBookType: Self = this.set("bookType", js.undefined)
+    @scala.inline
+    def setCompression(value: Boolean): Self = this.set("compression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompression: Self = this.set("compression", js.undefined)
+    @scala.inline
+    def setIgnoreEC(value: Boolean): Self = this.set("ignoreEC", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreEC: Self = this.set("ignoreEC", js.undefined)
+    @scala.inline
+    def setSheet(value: String): Self = this.set("sheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheet: Self = this.set("sheet", js.undefined)
+    @scala.inline
+    def setType(value: base64 | binary | buffer | file | array | string): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

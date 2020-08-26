@@ -9,5 +9,6 @@ package object fileSystemTypesMod {
     /* data */ typings.expoFileSystem.fileSystemTypesMod.DownloadProgressData, 
     scala.Unit
   ]
+  type FileSystemUploadOptions = (typings.expoFileSystem.anon.UploadType | typings.expoFileSystem.anon.FieldName) with typings.expoFileSystem.anon.Headers
   type PlatformMethod = js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]
 }

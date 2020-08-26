@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   * Optionally provides a signal if one or more of the specified payment
   * methods exists for the current user.
   */
+@js.native
 trait IsReadyToPayRequest extends js.Object {
   /**
     * List of allowed payment methods.
@@ -30,7 +31,7 @@ trait IsReadyToPayRequest extends js.Object {
     * parameters field to see if the properties within are applicable for
     * `IsReadyToPayRequest`.
     */
-  var allowedPaymentMethods: js.Array[IsReadyToPayPaymentMethodSpecification]
+  var allowedPaymentMethods: js.Array[IsReadyToPayPaymentMethodSpecification] = js.native
   /**
     * Major API version.
     *
@@ -43,7 +44,7 @@ trait IsReadyToPayRequest extends js.Object {
     *
     * This field is required.
     */
-  var apiVersion: Double
+  var apiVersion: Double = js.native
   /**
     * Minor API version.
     *
@@ -56,7 +57,7 @@ trait IsReadyToPayRequest extends js.Object {
     *
     * This field is required.
     */
-  var apiVersionMinor: Double
+  var apiVersionMinor: Double = js.native
   /**
     * If set to `true` then the
     * [[IsReadyToPayResponse.paymentMethodPresent|`IsReadyToPayResponse.paymentMethodPresent`]]
@@ -67,7 +68,7 @@ trait IsReadyToPayRequest extends js.Object {
     *
     * @default false
     */
-  var existingPaymentMethodRequired: js.UndefOr[`false` | `true`] = js.undefined
+  var existingPaymentMethodRequired: js.UndefOr[`false` | `true`] = js.native
 }
 
 object IsReadyToPayRequest {
@@ -75,12 +76,35 @@ object IsReadyToPayRequest {
   def apply(
     allowedPaymentMethods: js.Array[IsReadyToPayPaymentMethodSpecification],
     apiVersion: Double,
-    apiVersionMinor: Double,
-    existingPaymentMethodRequired: `false` | `true` = null
+    apiVersionMinor: Double
   ): IsReadyToPayRequest = {
     val __obj = js.Dynamic.literal(allowedPaymentMethods = allowedPaymentMethods.asInstanceOf[js.Any], apiVersion = apiVersion.asInstanceOf[js.Any], apiVersionMinor = apiVersionMinor.asInstanceOf[js.Any])
-    if (existingPaymentMethodRequired != null) __obj.updateDynamic("existingPaymentMethodRequired")(existingPaymentMethodRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsReadyToPayRequest]
   }
+  @scala.inline
+  implicit class IsReadyToPayRequestOps[Self <: IsReadyToPayRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedPaymentMethodsVarargs(value: IsReadyToPayPaymentMethodSpecification*): Self = this.set("allowedPaymentMethods", js.Array(value :_*))
+    @scala.inline
+    def setAllowedPaymentMethods(value: js.Array[IsReadyToPayPaymentMethodSpecification]): Self = this.set("allowedPaymentMethods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiVersion(value: Double): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiVersionMinor(value: Double): Self = this.set("apiVersionMinor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExistingPaymentMethodRequired(value: `false` | `true`): Self = this.set("existingPaymentMethodRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExistingPaymentMethodRequired: Self = this.set("existingPaymentMethodRequired", js.undefined)
+  }
+  
 }
 

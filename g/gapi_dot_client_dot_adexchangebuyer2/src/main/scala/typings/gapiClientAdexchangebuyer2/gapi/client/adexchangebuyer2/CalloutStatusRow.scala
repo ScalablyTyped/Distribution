@@ -4,33 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CalloutStatusRow extends js.Object {
   /**
     * The ID of the callout status.
     * See [callout-status-codes](https://developers.google.com/ad-exchange/rtb/downloads/callout-status-codes).
     */
-  var calloutStatusId: js.UndefOr[Double] = js.undefined
+  var calloutStatusId: js.UndefOr[Double] = js.native
   /**
     * The number of impressions for which there was a bid request or bid response
     * with the specified callout status.
     */
-  var impressionCount: js.UndefOr[MetricValue] = js.undefined
+  var impressionCount: js.UndefOr[MetricValue] = js.native
   /** The values of all dimensions associated with metric values in this row. */
-  var rowDimensions: js.UndefOr[RowDimensions] = js.undefined
+  var rowDimensions: js.UndefOr[RowDimensions] = js.native
 }
 
 object CalloutStatusRow {
   @scala.inline
-  def apply(
-    calloutStatusId: js.UndefOr[Double] = js.undefined,
-    impressionCount: MetricValue = null,
-    rowDimensions: RowDimensions = null
-  ): CalloutStatusRow = {
+  def apply(): CalloutStatusRow = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(calloutStatusId)) __obj.updateDynamic("calloutStatusId")(calloutStatusId.get.asInstanceOf[js.Any])
-    if (impressionCount != null) __obj.updateDynamic("impressionCount")(impressionCount.asInstanceOf[js.Any])
-    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalloutStatusRow]
   }
+  @scala.inline
+  implicit class CalloutStatusRowOps[Self <: CalloutStatusRow] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCalloutStatusId(value: Double): Self = this.set("calloutStatusId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalloutStatusId: Self = this.set("calloutStatusId", js.undefined)
+    @scala.inline
+    def setImpressionCount(value: MetricValue): Self = this.set("impressionCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImpressionCount: Self = this.set("impressionCount", js.undefined)
+    @scala.inline
+    def setRowDimensions(value: RowDimensions): Self = this.set("rowDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowDimensions: Self = this.set("rowDimensions", js.undefined)
+  }
+  
 }
 

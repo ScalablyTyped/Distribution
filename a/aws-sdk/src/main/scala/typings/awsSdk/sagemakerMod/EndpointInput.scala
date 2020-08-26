@@ -26,16 +26,34 @@ trait EndpointInput extends js.Object {
 
 object EndpointInput {
   @scala.inline
-  def apply(
-    EndpointName: EndpointName,
-    LocalPath: ProcessingLocalPath,
-    S3DataDistributionType: ProcessingS3DataDistributionType = null,
-    S3InputMode: ProcessingS3InputMode = null
-  ): EndpointInput = {
+  def apply(EndpointName: EndpointName, LocalPath: ProcessingLocalPath): EndpointInput = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any], LocalPath = LocalPath.asInstanceOf[js.Any])
-    if (S3DataDistributionType != null) __obj.updateDynamic("S3DataDistributionType")(S3DataDistributionType.asInstanceOf[js.Any])
-    if (S3InputMode != null) __obj.updateDynamic("S3InputMode")(S3InputMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointInput]
   }
+  @scala.inline
+  implicit class EndpointInputOps[Self <: EndpointInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointName(value: EndpointName): Self = this.set("EndpointName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocalPath(value: ProcessingLocalPath): Self = this.set("LocalPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3DataDistributionType(value: ProcessingS3DataDistributionType): Self = this.set("S3DataDistributionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3DataDistributionType: Self = this.set("S3DataDistributionType", js.undefined)
+    @scala.inline
+    def setS3InputMode(value: ProcessingS3InputMode): Self = this.set("S3InputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3InputMode: Self = this.set("S3InputMode", js.undefined)
+  }
+  
 }
 

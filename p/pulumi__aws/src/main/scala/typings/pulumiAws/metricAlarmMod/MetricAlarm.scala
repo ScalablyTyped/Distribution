@@ -50,7 +50,7 @@ class MetricAlarm protected () extends CustomResource {
   /**
     * The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
     */
-  val dimensions: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val dimensions: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Used only for alarms
     * based on percentiles. If you specify `ignore`, the alarm state will not
@@ -104,9 +104,9 @@ class MetricAlarm protected () extends CustomResource {
     */
   val statistic: Output_[js.UndefOr[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
     */
@@ -136,8 +136,10 @@ object MetricAlarm extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): MetricAlarm = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MetricAlarm = js.native
   def get(name: String, id: Input[ID], state: MetricAlarmState): MetricAlarm = js.native
   def get(name: String, id: Input[ID], state: MetricAlarmState, opts: CustomResourceOptions): MetricAlarm = js.native
   /**

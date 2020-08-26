@@ -14,8 +14,29 @@ import scala.scalajs.js.annotation._
 object updateImportEqualsDeclaration extends js.Object {
   def apply(
     node: ImportEqualsDeclaration,
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    moduleReference: ModuleReference
+  ): ImportEqualsDeclaration = js.native
+  def apply(
+    node: ImportEqualsDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    moduleReference: ModuleReference
+  ): ImportEqualsDeclaration = js.native
+  def apply(
+    node: ImportEqualsDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    moduleReference: ModuleReference
+  ): ImportEqualsDeclaration = js.native
+  def apply(
+    node: ImportEqualsDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     name: Identifier,
     moduleReference: ModuleReference
   ): ImportEqualsDeclaration = js.native

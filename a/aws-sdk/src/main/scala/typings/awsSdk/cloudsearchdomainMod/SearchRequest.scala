@@ -66,37 +66,76 @@ trait SearchRequest extends js.Object {
 
 object SearchRequest {
   @scala.inline
-  def apply(
-    query: Query,
-    cursor: Cursor = null,
-    expr: Expr = null,
-    facet: Facet = null,
-    filterQuery: FilterQuery = null,
-    highlight: Highlight = null,
-    partial: js.UndefOr[Partial] = js.undefined,
-    queryOptions: QueryOptions = null,
-    queryParser: QueryParser = null,
-    `return`: Return = null,
-    size: js.UndefOr[Size] = js.undefined,
-    sort: Sort = null,
-    start: js.UndefOr[Start] = js.undefined,
-    stats: Stat = null
-  ): SearchRequest = {
+  def apply(query: Query): SearchRequest = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (expr != null) __obj.updateDynamic("expr")(expr.asInstanceOf[js.Any])
-    if (facet != null) __obj.updateDynamic("facet")(facet.asInstanceOf[js.Any])
-    if (filterQuery != null) __obj.updateDynamic("filterQuery")(filterQuery.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.get.asInstanceOf[js.Any])
-    if (queryOptions != null) __obj.updateDynamic("queryOptions")(queryOptions.asInstanceOf[js.Any])
-    if (queryParser != null) __obj.updateDynamic("queryParser")(queryParser.asInstanceOf[js.Any])
-    if (`return` != null) __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
-    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchRequest]
   }
+  @scala.inline
+  implicit class SearchRequestOps[Self <: SearchRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCursor(value: Cursor): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursor: Self = this.set("cursor", js.undefined)
+    @scala.inline
+    def setExpr(value: Expr): Self = this.set("expr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpr: Self = this.set("expr", js.undefined)
+    @scala.inline
+    def setFacet(value: Facet): Self = this.set("facet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFacet: Self = this.set("facet", js.undefined)
+    @scala.inline
+    def setFilterQuery(value: FilterQuery): Self = this.set("filterQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterQuery: Self = this.set("filterQuery", js.undefined)
+    @scala.inline
+    def setHighlight(value: Highlight): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    @scala.inline
+    def setPartial(value: Partial): Self = this.set("partial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartial: Self = this.set("partial", js.undefined)
+    @scala.inline
+    def setQueryOptions(value: QueryOptions): Self = this.set("queryOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryOptions: Self = this.set("queryOptions", js.undefined)
+    @scala.inline
+    def setQueryParser(value: QueryParser): Self = this.set("queryParser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryParser: Self = this.set("queryParser", js.undefined)
+    @scala.inline
+    def setReturn(value: Return): Self = this.set("return", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturn: Self = this.set("return", js.undefined)
+    @scala.inline
+    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSort(value: Sort): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setStart(value: Start): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setStats(value: Stat): Self = this.set("stats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStats: Self = this.set("stats", js.undefined)
+  }
+  
 }
 

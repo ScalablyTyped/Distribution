@@ -18,11 +18,30 @@ trait GetBranchInput extends js.Object {
 
 object GetBranchInput {
   @scala.inline
-  def apply(branchName: BranchName = null, repositoryName: RepositoryName = null): GetBranchInput = {
+  def apply(): GetBranchInput = {
     val __obj = js.Dynamic.literal()
-    if (branchName != null) __obj.updateDynamic("branchName")(branchName.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBranchInput]
   }
+  @scala.inline
+  implicit class GetBranchInputOps[Self <: GetBranchInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBranchName(value: BranchName): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBranchName: Self = this.set("branchName", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+  }
+  
 }
 

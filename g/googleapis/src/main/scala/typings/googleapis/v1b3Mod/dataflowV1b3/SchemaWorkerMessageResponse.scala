@@ -26,16 +26,34 @@ trait SchemaWorkerMessageResponse extends js.Object {
 
 object SchemaWorkerMessageResponse {
   @scala.inline
-  def apply(
-    workerHealthReportResponse: SchemaWorkerHealthReportResponse = null,
-    workerMetricsResponse: SchemaResourceUtilizationReportResponse = null,
-    workerShutdownNoticeResponse: SchemaWorkerShutdownNoticeResponse = null
-  ): SchemaWorkerMessageResponse = {
+  def apply(): SchemaWorkerMessageResponse = {
     val __obj = js.Dynamic.literal()
-    if (workerHealthReportResponse != null) __obj.updateDynamic("workerHealthReportResponse")(workerHealthReportResponse.asInstanceOf[js.Any])
-    if (workerMetricsResponse != null) __obj.updateDynamic("workerMetricsResponse")(workerMetricsResponse.asInstanceOf[js.Any])
-    if (workerShutdownNoticeResponse != null) __obj.updateDynamic("workerShutdownNoticeResponse")(workerShutdownNoticeResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWorkerMessageResponse]
   }
+  @scala.inline
+  implicit class SchemaWorkerMessageResponseOps[Self <: SchemaWorkerMessageResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWorkerHealthReportResponse(value: SchemaWorkerHealthReportResponse): Self = this.set("workerHealthReportResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerHealthReportResponse: Self = this.set("workerHealthReportResponse", js.undefined)
+    @scala.inline
+    def setWorkerMetricsResponse(value: SchemaResourceUtilizationReportResponse): Self = this.set("workerMetricsResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerMetricsResponse: Self = this.set("workerMetricsResponse", js.undefined)
+    @scala.inline
+    def setWorkerShutdownNoticeResponse(value: SchemaWorkerShutdownNoticeResponse): Self = this.set("workerShutdownNoticeResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerShutdownNoticeResponse: Self = this.set("workerShutdownNoticeResponse", js.undefined)
+  }
+  
 }
 

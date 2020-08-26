@@ -12,7 +12,7 @@ Gettext support for Angular.js
 | Keywords           | angular, gettext |
 | # releases         | 4 |
 | # dependents       | 13 |
-| # downloads        | 510707 |
+| # downloads        | 518905 |
 | # stars            | 5 |
 
 ## Links

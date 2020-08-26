@@ -4,29 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SignOptions extends js.Object {
-  var canonical: js.UndefOr[Boolean] = js.undefined
+  var canonical: js.UndefOr[Boolean] = js.native
   var k: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-  ] = js.undefined
-  var pers: js.UndefOr[js.Any] = js.undefined
-  var persEnc: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var pers: js.UndefOr[js.Any] = js.native
+  var persEnc: js.UndefOr[String] = js.native
 }
 
 object SignOptions {
   @scala.inline
-  def apply(
-    canonical: js.UndefOr[Boolean] = js.undefined,
-    k: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = null,
-    pers: js.Any = null,
-    persEnc: String = null
-  ): SignOptions = {
+  def apply(): SignOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canonical)) __obj.updateDynamic("canonical")(canonical.get.asInstanceOf[js.Any])
-    if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
-    if (pers != null) __obj.updateDynamic("pers")(pers.asInstanceOf[js.Any])
-    if (persEnc != null) __obj.updateDynamic("persEnc")(persEnc.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOptions]
   }
+  @scala.inline
+  implicit class SignOptionsOps[Self <: SignOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanonical(value: Boolean): Self = this.set("canonical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanonical: Self = this.set("canonical", js.undefined)
+    @scala.inline
+    def setK(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+    ): Self = this.set("k", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteK: Self = this.set("k", js.undefined)
+    @scala.inline
+    def setPers(value: js.Any): Self = this.set("pers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePers: Self = this.set("pers", js.undefined)
+    @scala.inline
+    def setPersEnc(value: String): Self = this.set("persEnc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersEnc: Self = this.set("persEnc", js.undefined)
+  }
+  
 }
 

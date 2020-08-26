@@ -24,7 +24,7 @@ trait BucketReplicationConfigurationRule extends js.Object {
     */
   var prefix: js.UndefOr[Input[String]] = js.native
   /**
-    * The priority associated with the rule.
+    * is optional (with a default value of `0`) but must be unique between multiple rules
     */
   var priority: js.UndefOr[Input[Double]] = js.native
   /**
@@ -39,22 +39,46 @@ trait BucketReplicationConfigurationRule extends js.Object {
 
 object BucketReplicationConfigurationRule {
   @scala.inline
-  def apply(
-    destination: Input[BucketReplicationConfigurationRuleDestination],
-    status: Input[String],
-    filter: Input[BucketReplicationConfigurationRuleFilter] = null,
-    id: Input[String] = null,
-    prefix: Input[String] = null,
-    priority: Input[Double] = null,
-    sourceSelectionCriteria: Input[BucketReplicationConfigurationRuleSourceSelectionCriteria] = null
-  ): BucketReplicationConfigurationRule = {
+  def apply(destination: Input[BucketReplicationConfigurationRuleDestination], status: Input[String]): BucketReplicationConfigurationRule = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (sourceSelectionCriteria != null) __obj.updateDynamic("sourceSelectionCriteria")(sourceSelectionCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketReplicationConfigurationRule]
   }
+  @scala.inline
+  implicit class BucketReplicationConfigurationRuleOps[Self <: BucketReplicationConfigurationRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestination(value: Input[BucketReplicationConfigurationRuleDestination]): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: Input[BucketReplicationConfigurationRuleFilter]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setId(value: Input[String]): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setPrefix(value: Input[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setSourceSelectionCriteria(value: Input[BucketReplicationConfigurationRuleSourceSelectionCriteria]): Self = this.set("sourceSelectionCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSelectionCriteria: Self = this.set("sourceSelectionCriteria", js.undefined)
+  }
+  
 }
 

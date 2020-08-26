@@ -30,20 +30,44 @@ trait TriggerUpdate extends js.Object {
 
 object TriggerUpdate {
   @scala.inline
-  def apply(
-    Actions: ActionList = null,
-    Description: DescriptionString = null,
-    Name: NameString = null,
-    Predicate: Predicate = null,
-    Schedule: GenericString = null
-  ): TriggerUpdate = {
+  def apply(): TriggerUpdate = {
     val __obj = js.Dynamic.literal()
-    if (Actions != null) __obj.updateDynamic("Actions")(Actions.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Predicate != null) __obj.updateDynamic("Predicate")(Predicate.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerUpdate]
   }
+  @scala.inline
+  implicit class TriggerUpdateOps[Self <: TriggerUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsVarargs(value: Action*): Self = this.set("Actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: ActionList): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("Actions", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPredicate(value: Predicate): Self = this.set("Predicate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredicate: Self = this.set("Predicate", js.undefined)
+    @scala.inline
+    def setSchedule(value: GenericString): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+  }
+  
 }
 

@@ -24,14 +24,30 @@ trait SchemaPrivateEnvironmentConfig extends js.Object {
 
 object SchemaPrivateEnvironmentConfig {
   @scala.inline
-  def apply(
-    enablePrivateEnvironment: js.UndefOr[Boolean] = js.undefined,
-    privateClusterConfig: SchemaPrivateClusterConfig = null
-  ): SchemaPrivateEnvironmentConfig = {
+  def apply(): SchemaPrivateEnvironmentConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePrivateEnvironment)) __obj.updateDynamic("enablePrivateEnvironment")(enablePrivateEnvironment.get.asInstanceOf[js.Any])
-    if (privateClusterConfig != null) __obj.updateDynamic("privateClusterConfig")(privateClusterConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPrivateEnvironmentConfig]
   }
+  @scala.inline
+  implicit class SchemaPrivateEnvironmentConfigOps[Self <: SchemaPrivateEnvironmentConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnablePrivateEnvironment(value: Boolean): Self = this.set("enablePrivateEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePrivateEnvironment: Self = this.set("enablePrivateEnvironment", js.undefined)
+    @scala.inline
+    def setPrivateClusterConfig(value: SchemaPrivateClusterConfig): Self = this.set("privateClusterConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateClusterConfig: Self = this.set("privateClusterConfig", js.undefined)
+  }
+  
 }
 

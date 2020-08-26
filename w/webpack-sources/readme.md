@@ -11,8 +11,8 @@ Source code handling classes for webpack
 | Full name          | webpack-sources |
 | Keywords           | webpack, source-map |
 | # releases         | 16 |
-| # dependents       | 702 |
-| # downloads        | 342737289 |
+| # dependents       | 720 |
+| # downloads        | 349748907 |
 | # stars            | 2 |
 
 ## Links

@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   *
   * This interface contains methods that can help to create and initialize an embedded object based on system clipboard.
   */
+@js.native
 trait XEmbedObjectClipboardCreator extends XInterface {
   /**
     * creates a new object and initializes it from the system clipboard.
@@ -28,7 +29,7 @@ trait XEmbedObjectClipboardCreator extends XInterface {
     * @throws com::sun::star::io::IOException in case of io problems during opening or creation
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def createInstanceInitFromClipboard(xStorage: XStorage, sEntryName: String, aObjectArgs: SeqEquiv[PropertyValue]): InsertedObjectInfo
+  def createInstanceInitFromClipboard(xStorage: XStorage, sEntryName: String, aObjectArgs: SeqEquiv[PropertyValue]): InsertedObjectInfo = js.native
 }
 
 object XEmbedObjectClipboardCreator {
@@ -42,5 +43,20 @@ object XEmbedObjectClipboardCreator {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstanceInitFromClipboard = js.Any.fromFunction3(createInstanceInitFromClipboard), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XEmbedObjectClipboardCreator]
   }
+  @scala.inline
+  implicit class XEmbedObjectClipboardCreatorOps[Self <: XEmbedObjectClipboardCreator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateInstanceInitFromClipboard(value: (XStorage, String, SeqEquiv[PropertyValue]) => InsertedObjectInfo): Self = this.set("createInstanceInitFromClipboard", js.Any.fromFunction3(value))
+  }
+  
 }
 

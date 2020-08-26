@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object isObjectExpression extends js.Object {
   def apply(): /* is @babel/types.@babel/types.ObjectExpression */ Boolean = js.native
+  def apply(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.ObjectExpression */ Boolean = js.native
   def apply(node: js.Object): /* is @babel/types.@babel/types.ObjectExpression */ Boolean = js.native
   def apply(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ObjectExpression */ Boolean = js.native
   def apply(node: Null, opts: js.Object): /* is @babel/types.@babel/types.ObjectExpression */ Boolean = js.native

@@ -23,11 +23,30 @@ trait SchemaBasicAutoscalingAlgorithm extends js.Object {
 
 object SchemaBasicAutoscalingAlgorithm {
   @scala.inline
-  def apply(cooldownPeriod: String = null, yarnConfig: SchemaBasicYarnAutoscalingConfig = null): SchemaBasicAutoscalingAlgorithm = {
+  def apply(): SchemaBasicAutoscalingAlgorithm = {
     val __obj = js.Dynamic.literal()
-    if (cooldownPeriod != null) __obj.updateDynamic("cooldownPeriod")(cooldownPeriod.asInstanceOf[js.Any])
-    if (yarnConfig != null) __obj.updateDynamic("yarnConfig")(yarnConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBasicAutoscalingAlgorithm]
   }
+  @scala.inline
+  implicit class SchemaBasicAutoscalingAlgorithmOps[Self <: SchemaBasicAutoscalingAlgorithm] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCooldownPeriod(value: String): Self = this.set("cooldownPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCooldownPeriod: Self = this.set("cooldownPeriod", js.undefined)
+    @scala.inline
+    def setYarnConfig(value: SchemaBasicYarnAutoscalingConfig): Self = this.set("yarnConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYarnConfig: Self = this.set("yarnConfig", js.undefined)
+  }
+  
 }
 

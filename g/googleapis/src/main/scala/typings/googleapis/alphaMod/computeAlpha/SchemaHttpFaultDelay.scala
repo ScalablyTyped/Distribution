@@ -24,11 +24,30 @@ trait SchemaHttpFaultDelay extends js.Object {
 
 object SchemaHttpFaultDelay {
   @scala.inline
-  def apply(fixedDelay: SchemaDuration = null, percentage: js.UndefOr[Double] = js.undefined): SchemaHttpFaultDelay = {
+  def apply(): SchemaHttpFaultDelay = {
     val __obj = js.Dynamic.literal()
-    if (fixedDelay != null) __obj.updateDynamic("fixedDelay")(fixedDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpFaultDelay]
   }
+  @scala.inline
+  implicit class SchemaHttpFaultDelayOps[Self <: SchemaHttpFaultDelay] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFixedDelay(value: SchemaDuration): Self = this.set("fixedDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedDelay: Self = this.set("fixedDelay", js.undefined)
+    @scala.inline
+    def setPercentage(value: Double): Self = this.set("percentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentage: Self = this.set("percentage", js.undefined)
+  }
+  
 }
 

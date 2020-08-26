@@ -17,10 +17,5 @@ class ASPxClientCalendarCellClickEventArgs protected ()
     * @param date A DateTime object representing the clicked date cell.
     */
   def this(date: Date) = this()
-  /**
-    * Gets the date that relates to the processed calendar's cell click.
-    */
-  /* CompleteClass */
-  override var date: Date = js.native
 }
 

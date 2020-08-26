@@ -18,10 +18,28 @@ trait UpdateRepositoryDescriptionInput extends js.Object {
 
 object UpdateRepositoryDescriptionInput {
   @scala.inline
-  def apply(repositoryName: RepositoryName, repositoryDescription: RepositoryDescription = null): UpdateRepositoryDescriptionInput = {
+  def apply(repositoryName: RepositoryName): UpdateRepositoryDescriptionInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
-    if (repositoryDescription != null) __obj.updateDynamic("repositoryDescription")(repositoryDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRepositoryDescriptionInput]
   }
+  @scala.inline
+  implicit class UpdateRepositoryDescriptionInputOps[Self <: UpdateRepositoryDescriptionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepositoryDescription(value: RepositoryDescription): Self = this.set("repositoryDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryDescription: Self = this.set("repositoryDescription", js.undefined)
+  }
+  
 }
 

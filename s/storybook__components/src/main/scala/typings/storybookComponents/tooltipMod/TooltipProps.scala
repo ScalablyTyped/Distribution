@@ -44,22 +44,48 @@ trait TooltipProps extends js.Object {
 
 object TooltipProps {
   @scala.inline
-  def apply(
-    arrowProps: js.Any = null,
-    arrowRef: js.Any = null,
-    color: primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText = null,
-    hasChrome: js.UndefOr[Boolean] = js.undefined,
-    placement: String = null,
-    tooltipRef: js.Any = null
-  ): TooltipProps = {
+  def apply(): TooltipProps = {
     val __obj = js.Dynamic.literal()
-    if (arrowProps != null) __obj.updateDynamic("arrowProps")(arrowProps.asInstanceOf[js.Any])
-    if (arrowRef != null) __obj.updateDynamic("arrowRef")(arrowRef.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasChrome)) __obj.updateDynamic("hasChrome")(hasChrome.get.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (tooltipRef != null) __obj.updateDynamic("tooltipRef")(tooltipRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipProps]
   }
+  @scala.inline
+  implicit class TooltipPropsOps[Self <: TooltipProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrowProps(value: js.Any): Self = this.set("arrowProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowProps: Self = this.set("arrowProps", js.undefined)
+    @scala.inline
+    def setArrowRef(value: js.Any): Self = this.set("arrowRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowRef: Self = this.set("arrowRef", js.undefined)
+    @scala.inline
+    def setColor(
+      value: primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText
+    ): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setHasChrome(value: Boolean): Self = this.set("hasChrome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasChrome: Self = this.set("hasChrome", js.undefined)
+    @scala.inline
+    def setPlacement(value: String): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("placement", js.undefined)
+    @scala.inline
+    def setTooltipRef(value: js.Any): Self = this.set("tooltipRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipRef: Self = this.set("tooltipRef", js.undefined)
+  }
+  
 }
 

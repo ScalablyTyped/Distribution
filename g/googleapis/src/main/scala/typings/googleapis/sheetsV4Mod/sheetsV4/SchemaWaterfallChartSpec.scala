@@ -37,22 +37,48 @@ trait SchemaWaterfallChartSpec extends js.Object {
 
 object SchemaWaterfallChartSpec {
   @scala.inline
-  def apply(
-    connectorLineStyle: SchemaLineStyle = null,
-    domain: SchemaWaterfallChartDomain = null,
-    firstValueIsTotal: js.UndefOr[Boolean] = js.undefined,
-    hideConnectorLines: js.UndefOr[Boolean] = js.undefined,
-    series: js.Array[SchemaWaterfallChartSeries] = null,
-    stackedType: String = null
-  ): SchemaWaterfallChartSpec = {
+  def apply(): SchemaWaterfallChartSpec = {
     val __obj = js.Dynamic.literal()
-    if (connectorLineStyle != null) __obj.updateDynamic("connectorLineStyle")(connectorLineStyle.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstValueIsTotal)) __obj.updateDynamic("firstValueIsTotal")(firstValueIsTotal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideConnectorLines)) __obj.updateDynamic("hideConnectorLines")(hideConnectorLines.get.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (stackedType != null) __obj.updateDynamic("stackedType")(stackedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWaterfallChartSpec]
   }
+  @scala.inline
+  implicit class SchemaWaterfallChartSpecOps[Self <: SchemaWaterfallChartSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectorLineStyle(value: SchemaLineStyle): Self = this.set("connectorLineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectorLineStyle: Self = this.set("connectorLineStyle", js.undefined)
+    @scala.inline
+    def setDomain(value: SchemaWaterfallChartDomain): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setFirstValueIsTotal(value: Boolean): Self = this.set("firstValueIsTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstValueIsTotal: Self = this.set("firstValueIsTotal", js.undefined)
+    @scala.inline
+    def setHideConnectorLines(value: Boolean): Self = this.set("hideConnectorLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideConnectorLines: Self = this.set("hideConnectorLines", js.undefined)
+    @scala.inline
+    def setSeriesVarargs(value: SchemaWaterfallChartSeries*): Self = this.set("series", js.Array(value :_*))
+    @scala.inline
+    def setSeries(value: js.Array[SchemaWaterfallChartSeries]): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setStackedType(value: String): Self = this.set("stackedType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackedType: Self = this.set("stackedType", js.undefined)
+  }
+  
 }
 

@@ -4,39 +4,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RenameOptions extends js.Object {
   /**
     * if true, does not delete the old key name, keeping both the new and old keys in place. Defaults to false.
     */
-  var alias: js.UndefOr[Boolean] = js.undefined
+  var alias: js.UndefOr[Boolean] = js.native
   /**
     * if true, skip renaming of a key if it's undefined. Defaults to false.
     */
-  var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
+  var ignoreUndefined: js.UndefOr[Boolean] = js.native
   /**
     * if true, allows renaming multiple keys to the same destination where the last rename wins. Defaults to false.
     */
-  var multiple: js.UndefOr[Boolean] = js.undefined
+  var multiple: js.UndefOr[Boolean] = js.native
   /**
     * if true, allows renaming a key over an existing key. Defaults to false.
     */
-  var `override`: js.UndefOr[Boolean] = js.undefined
+  var `override`: js.UndefOr[Boolean] = js.native
 }
 
 object RenameOptions {
   @scala.inline
-  def apply(
-    alias: js.UndefOr[Boolean] = js.undefined,
-    ignoreUndefined: js.UndefOr[Boolean] = js.undefined,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    `override`: js.UndefOr[Boolean] = js.undefined
-  ): RenameOptions = {
+  def apply(): RenameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameOptions]
   }
+  @scala.inline
+  implicit class RenameOptionsOps[Self <: RenameOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlias(value: Boolean): Self = this.set("alias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlias: Self = this.set("alias", js.undefined)
+    @scala.inline
+    def setIgnoreUndefined(value: Boolean): Self = this.set("ignoreUndefined", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUndefined: Self = this.set("ignoreUndefined", js.undefined)
+    @scala.inline
+    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    @scala.inline
+    def setOverride(value: Boolean): Self = this.set("override", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverride: Self = this.set("override", js.undefined)
+  }
+  
 }
 

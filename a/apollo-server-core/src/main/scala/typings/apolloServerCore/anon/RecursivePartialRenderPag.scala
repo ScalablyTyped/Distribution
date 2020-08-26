@@ -10,66 +10,133 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined apollo-server-core.apollo-server-core/dist/playground.RecursivePartial<@apollographql/graphql-playground-html.@apollographql/graphql-playground-html/dist/render-playground-page.RenderPageOptions> */
+@js.native
 trait RecursivePartialRenderPag extends js.Object {
-  var cdnUrl: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.undefined
+  var cdnUrl: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
   var codeTheme: js.UndefOr[
     EditorColours | RecursivePartial[js.UndefOr[EditorColours]] | js.Array[RecursivePartial[_]]
-  ] = js.undefined
-  var config: js.UndefOr[js.Any | RecursivePartial[js.UndefOr[_]] | js.Array[RecursivePartial[_]]] = js.undefined
-  var endpoint: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.undefined
-  var env: js.UndefOr[js.Any | RecursivePartial[js.UndefOr[_]] | js.Array[RecursivePartial[_]]] = js.undefined
+  ] = js.native
+  var config: js.UndefOr[js.Any | RecursivePartial[js.UndefOr[_]] | js.Array[RecursivePartial[_]]] = js.native
+  var endpoint: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+  var env: js.UndefOr[js.Any | RecursivePartial[js.UndefOr[_]] | js.Array[RecursivePartial[_]]] = js.native
   var faviconUrl: js.UndefOr[
     String | Null | (RecursivePartial[js.UndefOr[String | Null]]) | js.Array[RecursivePartial[_]]
-  ] = js.undefined
+  ] = js.native
   var schema: js.UndefOr[
     IntrospectionResult | RecursivePartial[js.UndefOr[IntrospectionResult]] | js.Array[RecursivePartial[_]]
-  ] = js.undefined
+  ] = js.native
   var settings: js.UndefOr[
     ISettings | RecursivePartial[js.UndefOr[ISettings]] | js.Array[RecursivePartial[_]]
-  ] = js.undefined
-  var subscriptionEndpoint: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.undefined
+  ] = js.native
+  var subscriptionEndpoint: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
   var tabs: js.UndefOr[
     (js.Array[RecursivePartial[_] | Tab]) | RecursivePartial[js.UndefOr[js.Array[Tab]]]
-  ] = js.undefined
-  var title: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.undefined
-  var version: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.undefined
-  var workspaceName: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.undefined
+  ] = js.native
+  var title: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+  var version: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
+  var workspaceName: js.UndefOr[String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]] = js.native
 }
 
 object RecursivePartialRenderPag {
   @scala.inline
-  def apply(
-    cdnUrl: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]] = null,
-    codeTheme: EditorColours | RecursivePartial[js.UndefOr[EditorColours]] | js.Array[RecursivePartial[_]] = null,
-    config: js.Any | RecursivePartial[js.UndefOr[_]] | js.Array[RecursivePartial[_]] = null,
-    endpoint: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]] = null,
-    env: js.Any | RecursivePartial[js.UndefOr[_]] | js.Array[RecursivePartial[_]] = null,
-    faviconUrl: js.UndefOr[
-      Null | String | (RecursivePartial[js.UndefOr[String | Null]]) | js.Array[RecursivePartial[_]]
-    ] = js.undefined,
-    schema: IntrospectionResult | RecursivePartial[js.UndefOr[IntrospectionResult]] | js.Array[RecursivePartial[_]] = null,
-    settings: ISettings | RecursivePartial[js.UndefOr[ISettings]] | js.Array[RecursivePartial[_]] = null,
-    subscriptionEndpoint: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]] = null,
-    tabs: (js.Array[RecursivePartial[_] | Tab]) | RecursivePartial[js.UndefOr[js.Array[Tab]]] = null,
-    title: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]] = null,
-    version: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]] = null,
-    workspaceName: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]] = null
-  ): RecursivePartialRenderPag = {
+  def apply(): RecursivePartialRenderPag = {
     val __obj = js.Dynamic.literal()
-    if (cdnUrl != null) __obj.updateDynamic("cdnUrl")(cdnUrl.asInstanceOf[js.Any])
-    if (codeTheme != null) __obj.updateDynamic("codeTheme")(codeTheme.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(faviconUrl)) __obj.updateDynamic("faviconUrl")(faviconUrl.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (subscriptionEndpoint != null) __obj.updateDynamic("subscriptionEndpoint")(subscriptionEndpoint.asInstanceOf[js.Any])
-    if (tabs != null) __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (workspaceName != null) __obj.updateDynamic("workspaceName")(workspaceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecursivePartialRenderPag]
   }
+  @scala.inline
+  implicit class RecursivePartialRenderPagOps[Self <: RecursivePartialRenderPag] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCdnUrlVarargs(value: RecursivePartial[js.Any]*): Self = this.set("cdnUrl", js.Array(value :_*))
+    @scala.inline
+    def setCdnUrl(value: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = this.set("cdnUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdnUrl: Self = this.set("cdnUrl", js.undefined)
+    @scala.inline
+    def setCodeThemeVarargs(value: RecursivePartial[js.Any]*): Self = this.set("codeTheme", js.Array(value :_*))
+    @scala.inline
+    def setCodeTheme(value: EditorColours | RecursivePartial[js.UndefOr[EditorColours]] | js.Array[RecursivePartial[_]]): Self = this.set("codeTheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeTheme: Self = this.set("codeTheme", js.undefined)
+    @scala.inline
+    def setConfigVarargs(value: RecursivePartial[js.Any]*): Self = this.set("config", js.Array(value :_*))
+    @scala.inline
+    def setConfig(value: js.Any | RecursivePartial[js.UndefOr[_]] | js.Array[RecursivePartial[_]]): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setEndpointVarargs(value: RecursivePartial[js.Any]*): Self = this.set("endpoint", js.Array(value :_*))
+    @scala.inline
+    def setEndpoint(value: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setEnvVarargs(value: RecursivePartial[js.Any]*): Self = this.set("env", js.Array(value :_*))
+    @scala.inline
+    def setEnv(value: js.Any | RecursivePartial[js.UndefOr[_]] | js.Array[RecursivePartial[_]]): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setFaviconUrlVarargs(value: RecursivePartial[js.Any]*): Self = this.set("faviconUrl", js.Array(value :_*))
+    @scala.inline
+    def setFaviconUrl(value: String | (RecursivePartial[js.UndefOr[String | Null]]) | js.Array[RecursivePartial[_]]): Self = this.set("faviconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaviconUrl: Self = this.set("faviconUrl", js.undefined)
+    @scala.inline
+    def setFaviconUrlNull: Self = this.set("faviconUrl", null)
+    @scala.inline
+    def setSchemaVarargs(value: RecursivePartial[js.Any]*): Self = this.set("schema", js.Array(value :_*))
+    @scala.inline
+    def setSchema(
+      value: IntrospectionResult | RecursivePartial[js.UndefOr[IntrospectionResult]] | js.Array[RecursivePartial[_]]
+    ): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setSettingsVarargs(value: RecursivePartial[js.Any]*): Self = this.set("settings", js.Array(value :_*))
+    @scala.inline
+    def setSettings(value: ISettings | RecursivePartial[js.UndefOr[ISettings]] | js.Array[RecursivePartial[_]]): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setSubscriptionEndpointVarargs(value: RecursivePartial[js.Any]*): Self = this.set("subscriptionEndpoint", js.Array(value :_*))
+    @scala.inline
+    def setSubscriptionEndpoint(value: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = this.set("subscriptionEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriptionEndpoint: Self = this.set("subscriptionEndpoint", js.undefined)
+    @scala.inline
+    def setTabsVarargs(value: (RecursivePartial[js.Any] | Tab)*): Self = this.set("tabs", js.Array(value :_*))
+    @scala.inline
+    def setTabs(value: (js.Array[RecursivePartial[_] | Tab]) | RecursivePartial[js.UndefOr[js.Array[Tab]]]): Self = this.set("tabs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabs: Self = this.set("tabs", js.undefined)
+    @scala.inline
+    def setTitleVarargs(value: RecursivePartial[js.Any]*): Self = this.set("title", js.Array(value :_*))
+    @scala.inline
+    def setTitle(value: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVersionVarargs(value: RecursivePartial[js.Any]*): Self = this.set("version", js.Array(value :_*))
+    @scala.inline
+    def setVersion(value: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setWorkspaceNameVarargs(value: RecursivePartial[js.Any]*): Self = this.set("workspaceName", js.Array(value :_*))
+    @scala.inline
+    def setWorkspaceName(value: String | RecursivePartial[js.UndefOr[String]] | js.Array[RecursivePartial[_]]): Self = this.set("workspaceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaceName: Self = this.set("workspaceName", js.undefined)
+  }
+  
 }
 

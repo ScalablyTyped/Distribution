@@ -39,6 +39,7 @@ import scala.scalajs.js.annotation._
   * //     }
   * //   }
   */
+@js.native
 trait DERBitString extends ASN1Object {
   /**
     * set ASN.1 DER BitString by binary string
@@ -52,7 +53,7 @@ trait DERBitString extends ASN1Object {
     * o = new KJUR.asn1.DERBitString();
     * o.setByBooleanArray("01011");
     */
-  def setByBinaryString(binaryString: String): Unit
+  def setByBinaryString(binaryString: String): Unit = js.native
   /**
     * set ASN.1 TLV value(V) by an array of boolean
     * @param booleanArray array of boolean (ex. [true, false, true])
@@ -62,15 +63,15 @@ trait DERBitString extends ASN1Object {
     * o = new KJUR.asn1.DERBitString();
     * o.setByBooleanArray([false, true, false, true, true]);
     */
-  def setByBooleanArray(booleanArray: js.Array[Boolean]): Unit
+  def setByBooleanArray(booleanArray: js.Array[Boolean]): Unit = js.native
   /**
     * set ASN.1 value(V) by a hexadecimal string including unused bits
     */
-  def setHexValueIncludingUnusedBits(newHexStringIncludingUnusedBits: String): Unit
+  def setHexValueIncludingUnusedBits(newHexStringIncludingUnusedBits: String): Unit = js.native
   /**
     * set ASN.1 value(V) by unused bit and hexadecimal string of value
     */
-  def setUnusedBitsAndHexValue(unusedBits: Double, hValue: String): Unit
+  def setUnusedBitsAndHexValue(unusedBits: Double, hValue: String): Unit = js.native
 }
 
 object DERBitString {
@@ -93,5 +94,26 @@ object DERBitString {
     val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByBinaryString = js.Any.fromFunction1(setByBinaryString), setByBooleanArray = js.Any.fromFunction1(setByBooleanArray), setHexValueIncludingUnusedBits = js.Any.fromFunction1(setHexValueIncludingUnusedBits), setUnusedBitsAndHexValue = js.Any.fromFunction2(setUnusedBitsAndHexValue))
     __obj.asInstanceOf[DERBitString]
   }
+  @scala.inline
+  implicit class DERBitStringOps[Self <: DERBitString] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSetByBinaryString(value: String => Unit): Self = this.set("setByBinaryString", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetByBooleanArray(value: js.Array[Boolean] => Unit): Self = this.set("setByBooleanArray", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetHexValueIncludingUnusedBits(value: String => Unit): Self = this.set("setHexValueIncludingUnusedBits", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetUnusedBitsAndHexValue(value: (Double, String) => Unit): Self = this.set("setUnusedBitsAndHexValue", js.Any.fromFunction2(value))
+  }
+  
 }
 

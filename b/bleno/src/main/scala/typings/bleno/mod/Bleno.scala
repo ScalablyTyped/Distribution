@@ -13,7 +13,7 @@ import typings.bleno.blenoStrings.servicesSet
 import typings.bleno.blenoStrings.servicesSetError
 import typings.bleno.blenoStrings.stateChange
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,6 +56,11 @@ trait Bleno extends EventEmitter {
     callback: js.Function1[/* arg */ js.UndefOr[Error | Null], Unit]
   ): Unit = js.native
   def startAdvertising(name: String): Unit = js.native
+  def startAdvertising(
+    name: String,
+    serviceUuids: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* arg */ js.UndefOr[Error | Null], Unit]
+  ): Unit = js.native
   def startAdvertising(name: String, serviceUuids: js.Array[String]): Unit = js.native
   def startAdvertising(
     name: String,

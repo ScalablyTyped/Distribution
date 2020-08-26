@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeReference extends ObjectType {
-  var node: js.UndefOr[TypeReferenceNode | ArrayTypeNode | TupleTypeNode] = js.undefined
-  var target: GenericType
-  var typeArguments: js.UndefOr[js.Array[Type]] = js.undefined
+  var node: js.UndefOr[TypeReferenceNode | ArrayTypeNode | TupleTypeNode] = js.native
+  var target: GenericType = js.native
+  var typeArguments: js.UndefOr[js.Array[Type]] = js.native
 }
 
 object TypeReference {
@@ -38,20 +39,35 @@ object TypeReference {
     isUnionOrIntersection: () => /* is typescript.typescript.UnionOrIntersectionType */ Boolean,
     objectFlags: ObjectFlags,
     symbol: Symbol,
-    target: GenericType,
-    aliasSymbol: Symbol = null,
-    aliasTypeArguments: js.Array[Type] = null,
-    node: TypeReferenceNode | ArrayTypeNode | TupleTypeNode = null,
-    pattern: DestructuringPattern = null,
-    typeArguments: js.Array[Type] = null
+    target: GenericType
   ): TypeReference = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], getApparentProperties = js.Any.fromFunction0(getApparentProperties), getBaseTypes = js.Any.fromFunction0(getBaseTypes), getCallSignatures = js.Any.fromFunction0(getCallSignatures), getConstraint = js.Any.fromFunction0(getConstraint), getConstructSignatures = js.Any.fromFunction0(getConstructSignatures), getDefault = js.Any.fromFunction0(getDefault), getFlags = js.Any.fromFunction0(getFlags), getNonNullableType = js.Any.fromFunction0(getNonNullableType), getNumberIndexType = js.Any.fromFunction0(getNumberIndexType), getProperties = js.Any.fromFunction0(getProperties), getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = js.Any.fromFunction0(getStringIndexType), getSymbol = js.Any.fromFunction0(getSymbol), isClass = js.Any.fromFunction0(isClass), isClassOrInterface = js.Any.fromFunction0(isClassOrInterface), isIntersection = js.Any.fromFunction0(isIntersection), isLiteral = js.Any.fromFunction0(isLiteral), isNumberLiteral = js.Any.fromFunction0(isNumberLiteral), isStringLiteral = js.Any.fromFunction0(isStringLiteral), isTypeParameter = js.Any.fromFunction0(isTypeParameter), isUnion = js.Any.fromFunction0(isUnion), isUnionOrIntersection = js.Any.fromFunction0(isUnionOrIntersection), objectFlags = objectFlags.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol.asInstanceOf[js.Any])
-    if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeReference]
   }
+  @scala.inline
+  implicit class TypeReferenceOps[Self <: TypeReference] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTarget(value: GenericType): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNode(value: TypeReferenceNode | ArrayTypeNode | TupleTypeNode): Self = this.set("node", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNode: Self = this.set("node", js.undefined)
+    @scala.inline
+    def setTypeArgumentsVarargs(value: Type*): Self = this.set("typeArguments", js.Array(value :_*))
+    @scala.inline
+    def setTypeArguments(value: js.Array[Type]): Self = this.set("typeArguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeArguments: Self = this.set("typeArguments", js.undefined)
+  }
+  
 }
 

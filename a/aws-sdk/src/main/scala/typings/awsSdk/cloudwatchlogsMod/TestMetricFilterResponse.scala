@@ -14,10 +14,28 @@ trait TestMetricFilterResponse extends js.Object {
 
 object TestMetricFilterResponse {
   @scala.inline
-  def apply(matches: MetricFilterMatches = null): TestMetricFilterResponse = {
+  def apply(): TestMetricFilterResponse = {
     val __obj = js.Dynamic.literal()
-    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestMetricFilterResponse]
   }
+  @scala.inline
+  implicit class TestMetricFilterResponseOps[Self <: TestMetricFilterResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMatchesVarargs(value: MetricFilterMatchRecord*): Self = this.set("matches", js.Array(value :_*))
+    @scala.inline
+    def setMatches(value: MetricFilterMatches): Self = this.set("matches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatches: Self = this.set("matches", js.undefined)
+  }
+  
 }
 

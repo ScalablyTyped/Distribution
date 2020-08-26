@@ -29,6 +29,7 @@ class ResourceNamespacesAuthorizeddomains protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListAuthorizedDomainsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAuthorizedDomainsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAuthorizedDomainsResponse] = js.native
   def list(params: ParamsResourceNamespacesAuthorizeddomainsList): GaxiosPromise[SchemaListAuthorizedDomainsResponse] = js.native
   def list(
     params: ParamsResourceNamespacesAuthorizeddomainsList,

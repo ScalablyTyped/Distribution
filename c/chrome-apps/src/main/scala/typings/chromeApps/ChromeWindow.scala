@@ -1,7 +1,9 @@
 package typings.chromeApps
 
-import typings.std.History_
-import typings.std.Location_
+import org.scalablytyped.runtime.Instantiable0
+import typings.chromeApps.anon.InstantiableAudioContext
+import typings.std.History
+import typings.std.Location
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,12 +26,12 @@ trait ChromeWindow extends js.Object {
   ///
   /// Other APIs
   ///
-  var AudioContext: AnonInstantiableAudioContext = js.native
+  var AudioContext: InstantiableAudioContext with Instantiable0[typings.std.global.AudioContext] = js.native
   /**
     * ❗ window.history is not available in packaged apps. ❗
     * Links open up with the system web browser.
     */
-  val history: History_ = js.native
+  val history: History = js.native
   /**
     * ❗ window.localStorage is not available in packaged apps. Use chrome.storage.local instead. ❗
     */
@@ -38,7 +40,7 @@ trait ChromeWindow extends js.Object {
     * ❗ window.location is not available in packaged apps. ❗
     * Links open up with the system web browser.
     */
-  var location: Location_ = js.native
+  var location: Location = js.native
   ///
   /// Disabled Web Features
   /// https://developer.chrome.com/apps/app_deprecated

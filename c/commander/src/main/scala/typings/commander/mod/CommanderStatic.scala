@@ -9,5 +9,6 @@ trait CommanderStatic extends Command {
   var Command: CommandConstructor = js.native
   var CommanderError: CommanderErrorConstructor = js.native
   var Option: OptionConstructor = js.native
+  var program: Command = js.native
 }
 

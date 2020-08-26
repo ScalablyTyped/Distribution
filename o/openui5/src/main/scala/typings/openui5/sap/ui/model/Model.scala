@@ -76,11 +76,29 @@ trait Model extends MessageProcessor {
     * @param oEvents event handlers can be passed to the binding ({change:myHandler})
     */
   def bindContext(sPath: String): ContextBinding = js.native
+  def bindContext(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    mParameters: js.UndefOr[scala.Nothing],
+    oEvents: js.Any
+  ): ContextBinding = js.native
+  def bindContext(sPath: String, oContext: js.UndefOr[scala.Nothing], mParameters: js.Any): ContextBinding = js.native
+  def bindContext(sPath: String, oContext: js.UndefOr[scala.Nothing], mParameters: js.Any, oEvents: js.Any): ContextBinding = js.native
   def bindContext(sPath: String, oContext: js.Any): ContextBinding = js.native
+  def bindContext(sPath: String, oContext: js.Any, mParameters: js.UndefOr[scala.Nothing], oEvents: js.Any): ContextBinding = js.native
   def bindContext(sPath: String, oContext: js.Any, mParameters: js.Any): ContextBinding = js.native
   def bindContext(sPath: String, oContext: js.Any, mParameters: js.Any, oEvents: js.Any): ContextBinding = js.native
   def bindContext(sPath: js.Any): ContextBinding = js.native
+  def bindContext(
+    sPath: js.Any,
+    oContext: js.UndefOr[scala.Nothing],
+    mParameters: js.UndefOr[scala.Nothing],
+    oEvents: js.Any
+  ): ContextBinding = js.native
+  def bindContext(sPath: js.Any, oContext: js.UndefOr[scala.Nothing], mParameters: js.Any): ContextBinding = js.native
+  def bindContext(sPath: js.Any, oContext: js.UndefOr[scala.Nothing], mParameters: js.Any, oEvents: js.Any): ContextBinding = js.native
   def bindContext(sPath: js.Any, oContext: js.Any): ContextBinding = js.native
+  def bindContext(sPath: js.Any, oContext: js.Any, mParameters: js.UndefOr[scala.Nothing], oEvents: js.Any): ContextBinding = js.native
   def bindContext(sPath: js.Any, oContext: js.Any, mParameters: js.Any): ContextBinding = js.native
   def bindContext(sPath: js.Any, oContext: js.Any, mParameters: js.Any, oEvents: js.Any): ContextBinding = js.native
   /**
@@ -92,8 +110,71 @@ trait Model extends MessageProcessor {
     * @param mParameters additional model specific parameters (optional)
     */
   def bindList(sPath: String): ListBinding = js.native
+  def bindList(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    aSorters: js.UndefOr[scala.Nothing],
+    aFilters: js.UndefOr[scala.Nothing],
+    mParameters: js.Any
+  ): ListBinding = js.native
+  def bindList(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    aSorters: js.UndefOr[scala.Nothing],
+    aFilters: js.Array[Filter]
+  ): ListBinding = js.native
+  def bindList(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    aSorters: js.UndefOr[scala.Nothing],
+    aFilters: js.Array[Filter],
+    mParameters: js.Any
+  ): ListBinding = js.native
+  def bindList(sPath: String, oContext: js.UndefOr[scala.Nothing], aSorters: js.Array[Sorter]): ListBinding = js.native
+  def bindList(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    aSorters: js.Array[Sorter],
+    aFilters: js.UndefOr[scala.Nothing],
+    mParameters: js.Any
+  ): ListBinding = js.native
+  def bindList(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    aSorters: js.Array[Sorter],
+    aFilters: js.Array[Filter]
+  ): ListBinding = js.native
+  def bindList(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    aSorters: js.Array[Sorter],
+    aFilters: js.Array[Filter],
+    mParameters: js.Any
+  ): ListBinding = js.native
   def bindList(sPath: String, oContext: Context): ListBinding = js.native
+  def bindList(
+    sPath: String,
+    oContext: Context,
+    aSorters: js.UndefOr[scala.Nothing],
+    aFilters: js.UndefOr[scala.Nothing],
+    mParameters: js.Any
+  ): ListBinding = js.native
+  def bindList(sPath: String, oContext: Context, aSorters: js.UndefOr[scala.Nothing], aFilters: js.Array[Filter]): ListBinding = js.native
+  def bindList(
+    sPath: String,
+    oContext: Context,
+    aSorters: js.UndefOr[scala.Nothing],
+    aFilters: js.Array[Filter],
+    mParameters: js.Any
+  ): ListBinding = js.native
   def bindList(sPath: String, oContext: Context, aSorters: js.Array[Sorter]): ListBinding = js.native
+  def bindList(
+    sPath: String,
+    oContext: Context,
+    aSorters: js.Array[Sorter],
+    aFilters: js.UndefOr[scala.Nothing],
+    mParameters: js.Any
+  ): ListBinding = js.native
   def bindList(sPath: String, oContext: Context, aSorters: js.Array[Sorter], aFilters: js.Array[Filter]): ListBinding = js.native
   def bindList(
     sPath: String,
@@ -109,6 +190,7 @@ trait Model extends MessageProcessor {
     * @param mParameters additional model specific parameters (optional)
     */
   def bindProperty(sPath: String): PropertyBinding = js.native
+  def bindProperty(sPath: String, oContext: js.UndefOr[scala.Nothing], mParameters: js.Any): PropertyBinding = js.native
   def bindProperty(sPath: String, oContext: js.Any): PropertyBinding = js.native
   def bindProperty(sPath: String, oContext: js.Any, mParameters: js.Any): PropertyBinding = js.native
   /**
@@ -120,8 +202,66 @@ trait Model extends MessageProcessor {
     * @param aSorters predefined sap.ui.model.sorter/s contained in an array (optional)
     */
   def bindTree(sPath: String): TreeBinding = js.native
+  def bindTree(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    aFilters: js.UndefOr[scala.Nothing],
+    mParameters: js.UndefOr[scala.Nothing],
+    aSorters: js.Array[_]
+  ): TreeBinding = js.native
+  def bindTree(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    aFilters: js.UndefOr[scala.Nothing],
+    mParameters: js.Any
+  ): TreeBinding = js.native
+  def bindTree(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    aFilters: js.UndefOr[scala.Nothing],
+    mParameters: js.Any,
+    aSorters: js.Array[_]
+  ): TreeBinding = js.native
+  def bindTree(sPath: String, oContext: js.UndefOr[scala.Nothing], aFilters: js.Array[_]): TreeBinding = js.native
+  def bindTree(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    aFilters: js.Array[_],
+    mParameters: js.UndefOr[scala.Nothing],
+    aSorters: js.Array[_]
+  ): TreeBinding = js.native
+  def bindTree(sPath: String, oContext: js.UndefOr[scala.Nothing], aFilters: js.Array[_], mParameters: js.Any): TreeBinding = js.native
+  def bindTree(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    aFilters: js.Array[_],
+    mParameters: js.Any,
+    aSorters: js.Array[_]
+  ): TreeBinding = js.native
   def bindTree(sPath: String, oContext: js.Any): TreeBinding = js.native
+  def bindTree(
+    sPath: String,
+    oContext: js.Any,
+    aFilters: js.UndefOr[scala.Nothing],
+    mParameters: js.UndefOr[scala.Nothing],
+    aSorters: js.Array[_]
+  ): TreeBinding = js.native
+  def bindTree(sPath: String, oContext: js.Any, aFilters: js.UndefOr[scala.Nothing], mParameters: js.Any): TreeBinding = js.native
+  def bindTree(
+    sPath: String,
+    oContext: js.Any,
+    aFilters: js.UndefOr[scala.Nothing],
+    mParameters: js.Any,
+    aSorters: js.Array[_]
+  ): TreeBinding = js.native
   def bindTree(sPath: String, oContext: js.Any, aFilters: js.Array[_]): TreeBinding = js.native
+  def bindTree(
+    sPath: String,
+    oContext: js.Any,
+    aFilters: js.Array[_],
+    mParameters: js.UndefOr[scala.Nothing],
+    aSorters: js.Array[_]
+  ): TreeBinding = js.native
   def bindTree(sPath: String, oContext: js.Any, aFilters: js.Array[_], mParameters: js.Any): TreeBinding = js.native
   def bindTree(sPath: String, oContext: js.Any, aFilters: js.Array[_], mParameters: js.Any, aSorters: js.Array[_]): TreeBinding = js.native
   /**
@@ -135,8 +275,66 @@ trait Model extends MessageProcessor {
     * @returns the binding context, if it could be created synchronously
     */
   def createBindingContext(sPath: String): Context = js.native
+  def createBindingContext(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    mParameters: js.UndefOr[scala.Nothing],
+    fnCallBack: js.UndefOr[scala.Nothing],
+    bReload: Boolean
+  ): Context = js.native
+  def createBindingContext(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    mParameters: js.UndefOr[scala.Nothing],
+    fnCallBack: js.Any
+  ): Context = js.native
+  def createBindingContext(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    mParameters: js.UndefOr[scala.Nothing],
+    fnCallBack: js.Any,
+    bReload: Boolean
+  ): Context = js.native
+  def createBindingContext(sPath: String, oContext: js.UndefOr[scala.Nothing], mParameters: js.Any): Context = js.native
+  def createBindingContext(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    mParameters: js.Any,
+    fnCallBack: js.UndefOr[scala.Nothing],
+    bReload: Boolean
+  ): Context = js.native
+  def createBindingContext(sPath: String, oContext: js.UndefOr[scala.Nothing], mParameters: js.Any, fnCallBack: js.Any): Context = js.native
+  def createBindingContext(
+    sPath: String,
+    oContext: js.UndefOr[scala.Nothing],
+    mParameters: js.Any,
+    fnCallBack: js.Any,
+    bReload: Boolean
+  ): Context = js.native
   def createBindingContext(sPath: String, oContext: js.Any): Context = js.native
+  def createBindingContext(
+    sPath: String,
+    oContext: js.Any,
+    mParameters: js.UndefOr[scala.Nothing],
+    fnCallBack: js.UndefOr[scala.Nothing],
+    bReload: Boolean
+  ): Context = js.native
+  def createBindingContext(sPath: String, oContext: js.Any, mParameters: js.UndefOr[scala.Nothing], fnCallBack: js.Any): Context = js.native
+  def createBindingContext(
+    sPath: String,
+    oContext: js.Any,
+    mParameters: js.UndefOr[scala.Nothing],
+    fnCallBack: js.Any,
+    bReload: Boolean
+  ): Context = js.native
   def createBindingContext(sPath: String, oContext: js.Any, mParameters: js.Any): Context = js.native
+  def createBindingContext(
+    sPath: String,
+    oContext: js.Any,
+    mParameters: js.Any,
+    fnCallBack: js.UndefOr[scala.Nothing],
+    bReload: Boolean
+  ): Context = js.native
   def createBindingContext(sPath: String, oContext: js.Any, mParameters: js.Any, fnCallBack: js.Any): Context = js.native
   def createBindingContext(sPath: String, oContext: js.Any, mParameters: js.Any, fnCallBack: js.Any, bReload: Boolean): Context = js.native
   /**
@@ -241,6 +439,7 @@ trait Model extends MessageProcessor {
     * @param mParameters additional model specific parameters
     */
   def getObject(sPath: String): Unit = js.native
+  def getObject(sPath: String, oContext: js.UndefOr[scala.Nothing], mParameters: js.Any): Unit = js.native
   def getObject(sPath: String, oContext: js.Any): Unit = js.native
   def getObject(sPath: String, oContext: js.Any, mParameters: js.Any): Unit = js.native
   /**

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object setDirection extends js.Object {
   def apply(): String = js.native
+  def apply(isVertical: js.UndefOr[scala.Nothing], gutters: String): String = js.native
   def apply(isVertical: Boolean): String = js.native
   def apply(isVertical: Boolean, gutters: String): String = js.native
 }

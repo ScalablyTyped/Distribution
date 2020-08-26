@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
   * Base class for all widgets that can be added to a Card.
   */
 // tslint:disable-next-line: no-empty-interface
+@js.native
 trait Widget extends js.Object
 

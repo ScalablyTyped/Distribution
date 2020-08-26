@@ -29,6 +29,7 @@ class ResourceOrganizationsAssets protected () extends js.Object {
     */
   def group(): GaxiosPromise[SchemaGroupAssetsResponse] = js.native
   def group(callback: BodyResponseCallback[SchemaGroupAssetsResponse]): Unit = js.native
+  def group(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroupAssetsResponse] = js.native
   def group(params: ParamsResourceOrganizationsAssetsGroup): GaxiosPromise[SchemaGroupAssetsResponse] = js.native
   def group(
     params: ParamsResourceOrganizationsAssetsGroup,
@@ -66,6 +67,7 @@ class ResourceOrganizationsAssets protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListAssetsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAssetsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAssetsResponse] = js.native
   def list(params: ParamsResourceOrganizationsAssetsList): GaxiosPromise[SchemaListAssetsResponse] = js.native
   def list(
     params: ParamsResourceOrganizationsAssetsList,
@@ -100,6 +102,7 @@ class ResourceOrganizationsAssets protected () extends js.Object {
     */
   def runDiscovery(): GaxiosPromise[SchemaOperation] = js.native
   def runDiscovery(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def runDiscovery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def runDiscovery(params: ParamsResourceOrganizationsAssetsRundiscovery): GaxiosPromise[SchemaOperation] = js.native
   def runDiscovery(
     params: ParamsResourceOrganizationsAssetsRundiscovery,
@@ -133,6 +136,7 @@ class ResourceOrganizationsAssets protected () extends js.Object {
     */
   def updateSecurityMarks(): GaxiosPromise[SchemaSecurityMarks] = js.native
   def updateSecurityMarks(callback: BodyResponseCallback[SchemaSecurityMarks]): Unit = js.native
+  def updateSecurityMarks(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSecurityMarks] = js.native
   def updateSecurityMarks(params: ParamsResourceOrganizationsAssetsUpdatesecuritymarks): GaxiosPromise[SchemaSecurityMarks] = js.native
   def updateSecurityMarks(
     params: ParamsResourceOrganizationsAssetsUpdatesecuritymarks,

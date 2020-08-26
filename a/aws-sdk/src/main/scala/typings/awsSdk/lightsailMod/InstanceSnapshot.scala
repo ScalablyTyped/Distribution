@@ -74,42 +74,90 @@ trait InstanceSnapshot extends js.Object {
 
 object InstanceSnapshot {
   @scala.inline
-  def apply(
-    arn: NonEmptyString = null,
-    createdAt: IsoDate = null,
-    fromAttachedDisks: DiskList = null,
-    fromBlueprintId: String = null,
-    fromBundleId: String = null,
-    fromInstanceArn: NonEmptyString = null,
-    fromInstanceName: ResourceName = null,
-    isFromAutoSnapshot: js.UndefOr[Boolean] = js.undefined,
-    location: ResourceLocation = null,
-    name: ResourceName = null,
-    progress: String = null,
-    resourceType: ResourceType = null,
-    sizeInGb: js.UndefOr[integer] = js.undefined,
-    state: InstanceSnapshotState = null,
-    supportCode: String = null,
-    tags: TagList = null
-  ): InstanceSnapshot = {
+  def apply(): InstanceSnapshot = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (fromAttachedDisks != null) __obj.updateDynamic("fromAttachedDisks")(fromAttachedDisks.asInstanceOf[js.Any])
-    if (fromBlueprintId != null) __obj.updateDynamic("fromBlueprintId")(fromBlueprintId.asInstanceOf[js.Any])
-    if (fromBundleId != null) __obj.updateDynamic("fromBundleId")(fromBundleId.asInstanceOf[js.Any])
-    if (fromInstanceArn != null) __obj.updateDynamic("fromInstanceArn")(fromInstanceArn.asInstanceOf[js.Any])
-    if (fromInstanceName != null) __obj.updateDynamic("fromInstanceName")(fromInstanceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFromAutoSnapshot)) __obj.updateDynamic("isFromAutoSnapshot")(isFromAutoSnapshot.get.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeInGb)) __obj.updateDynamic("sizeInGb")(sizeInGb.get.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (supportCode != null) __obj.updateDynamic("supportCode")(supportCode.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceSnapshot]
   }
+  @scala.inline
+  implicit class InstanceSnapshotOps[Self <: InstanceSnapshot] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setFromAttachedDisksVarargs(value: Disk*): Self = this.set("fromAttachedDisks", js.Array(value :_*))
+    @scala.inline
+    def setFromAttachedDisks(value: DiskList): Self = this.set("fromAttachedDisks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromAttachedDisks: Self = this.set("fromAttachedDisks", js.undefined)
+    @scala.inline
+    def setFromBlueprintId(value: String): Self = this.set("fromBlueprintId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromBlueprintId: Self = this.set("fromBlueprintId", js.undefined)
+    @scala.inline
+    def setFromBundleId(value: String): Self = this.set("fromBundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromBundleId: Self = this.set("fromBundleId", js.undefined)
+    @scala.inline
+    def setFromInstanceArn(value: NonEmptyString): Self = this.set("fromInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromInstanceArn: Self = this.set("fromInstanceArn", js.undefined)
+    @scala.inline
+    def setFromInstanceName(value: ResourceName): Self = this.set("fromInstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromInstanceName: Self = this.set("fromInstanceName", js.undefined)
+    @scala.inline
+    def setIsFromAutoSnapshot(value: Boolean): Self = this.set("isFromAutoSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFromAutoSnapshot: Self = this.set("isFromAutoSnapshot", js.undefined)
+    @scala.inline
+    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProgress(value: String): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("progress", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setSizeInGb(value: integer): Self = this.set("sizeInGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeInGb: Self = this.set("sizeInGb", js.undefined)
+    @scala.inline
+    def setState(value: InstanceSnapshotState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -4,204 +4,343 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LangNavigationPopupOptions extends js.Object {
-  var addButton: js.UndefOr[String] = js.undefined
-  var arrowLine: js.UndefOr[String] = js.undefined
-  var arrowRay: js.UndefOr[String] = js.undefined
-  var arrowSegment: js.UndefOr[String] = js.undefined
-  var background: js.UndefOr[String] = js.undefined
-  var backgroundColor: js.UndefOr[String] = js.undefined
-  var backgroundColors: js.UndefOr[String] = js.undefined
-  var borderColor: js.UndefOr[String] = js.undefined
-  var borderRadius: js.UndefOr[String] = js.undefined
-  var borderWidth: js.UndefOr[String] = js.undefined
-  var circle: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var connector: js.UndefOr[String] = js.undefined
-  var crooked3: js.UndefOr[String] = js.undefined
-  var crooked5: js.UndefOr[String] = js.undefined
-  var crosshairX: js.UndefOr[String] = js.undefined
-  var crosshairY: js.UndefOr[String] = js.undefined
-  var editButton: js.UndefOr[String] = js.undefined
-  var elliott3: js.UndefOr[String] = js.undefined
-  var elliott5: js.UndefOr[String] = js.undefined
-  var fibonacci: js.UndefOr[String] = js.undefined
-  var fill: js.UndefOr[String] = js.undefined
-  var flags: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[String] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[String] = js.undefined
-  var horizontalLine: js.UndefOr[String] = js.undefined
-  var infinityLine: js.UndefOr[String] = js.undefined
-  var innerBackground: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var labelOptions: js.UndefOr[String] = js.undefined
-  var labels: js.UndefOr[String] = js.undefined
-  var line: js.UndefOr[String] = js.undefined
-  var lines: js.UndefOr[String] = js.undefined
-  var measure: js.UndefOr[String] = js.undefined
-  var measureX: js.UndefOr[String] = js.undefined
-  var measureXY: js.UndefOr[String] = js.undefined
-  var measureY: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var outerBackground: js.UndefOr[String] = js.undefined
-  var padding: js.UndefOr[String] = js.undefined
-  var parallelChannel: js.UndefOr[String] = js.undefined
-  var pitchfork: js.UndefOr[String] = js.undefined
-  var ray: js.UndefOr[String] = js.undefined
-  var rectangle: js.UndefOr[String] = js.undefined
-  var removeButton: js.UndefOr[String] = js.undefined
-  var saveButton: js.UndefOr[String] = js.undefined
-  var segment: js.UndefOr[String] = js.undefined
-  var series: js.UndefOr[String] = js.undefined
-  var shapeOptions: js.UndefOr[String] = js.undefined
-  var shapes: js.UndefOr[String] = js.undefined
-  var simpleShapes: js.UndefOr[String] = js.undefined
-  var stroke: js.UndefOr[String] = js.undefined
-  var strokeWidth: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var tunnel: js.UndefOr[String] = js.undefined
-  var typeOptions: js.UndefOr[String] = js.undefined
-  var verticalArrow: js.UndefOr[String] = js.undefined
-  var verticalCounter: js.UndefOr[String] = js.undefined
-  var verticalLabel: js.UndefOr[String] = js.undefined
-  var verticalLine: js.UndefOr[String] = js.undefined
-  var volume: js.UndefOr[String] = js.undefined
+  var addButton: js.UndefOr[String] = js.native
+  var arrowLine: js.UndefOr[String] = js.native
+  var arrowRay: js.UndefOr[String] = js.native
+  var arrowSegment: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColors: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.native
+  var borderRadius: js.UndefOr[String] = js.native
+  var borderWidth: js.UndefOr[String] = js.native
+  var circle: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.native
+  var connector: js.UndefOr[String] = js.native
+  var crooked3: js.UndefOr[String] = js.native
+  var crooked5: js.UndefOr[String] = js.native
+  var crosshairX: js.UndefOr[String] = js.native
+  var crosshairY: js.UndefOr[String] = js.native
+  var editButton: js.UndefOr[String] = js.native
+  var elliott3: js.UndefOr[String] = js.native
+  var elliott5: js.UndefOr[String] = js.native
+  var fibonacci: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.native
+  var flags: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.native
+  var horizontalLine: js.UndefOr[String] = js.native
+  var infinityLine: js.UndefOr[String] = js.native
+  var innerBackground: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.native
+  var labelOptions: js.UndefOr[String] = js.native
+  var labels: js.UndefOr[String] = js.native
+  var line: js.UndefOr[String] = js.native
+  var lines: js.UndefOr[String] = js.native
+  var measure: js.UndefOr[String] = js.native
+  var measureX: js.UndefOr[String] = js.native
+  var measureXY: js.UndefOr[String] = js.native
+  var measureY: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var outerBackground: js.UndefOr[String] = js.native
+  var padding: js.UndefOr[String] = js.native
+  var parallelChannel: js.UndefOr[String] = js.native
+  var pitchfork: js.UndefOr[String] = js.native
+  var ray: js.UndefOr[String] = js.native
+  var rectangle: js.UndefOr[String] = js.native
+  var removeButton: js.UndefOr[String] = js.native
+  var saveButton: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.native
+  var series: js.UndefOr[String] = js.native
+  var shapeOptions: js.UndefOr[String] = js.native
+  var shapes: js.UndefOr[String] = js.native
+  var simpleShapes: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.native
+  var strokeWidth: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var tunnel: js.UndefOr[String] = js.native
+  var typeOptions: js.UndefOr[String] = js.native
+  var verticalArrow: js.UndefOr[String] = js.native
+  var verticalCounter: js.UndefOr[String] = js.native
+  var verticalLabel: js.UndefOr[String] = js.native
+  var verticalLine: js.UndefOr[String] = js.native
+  var volume: js.UndefOr[String] = js.native
 }
 
 object LangNavigationPopupOptions {
   @scala.inline
-  def apply(
-    addButton: String = null,
-    arrowLine: String = null,
-    arrowRay: String = null,
-    arrowSegment: String = null,
-    background: String = null,
-    backgroundColor: String = null,
-    backgroundColors: String = null,
-    borderColor: String = null,
-    borderRadius: String = null,
-    borderWidth: String = null,
-    circle: String = null,
-    color: String = null,
-    connector: String = null,
-    crooked3: String = null,
-    crooked5: String = null,
-    crosshairX: String = null,
-    crosshairY: String = null,
-    editButton: String = null,
-    elliott3: String = null,
-    elliott5: String = null,
-    fibonacci: String = null,
-    fill: String = null,
-    flags: String = null,
-    fontSize: String = null,
-    format: String = null,
-    height: String = null,
-    horizontalLine: String = null,
-    infinityLine: String = null,
-    innerBackground: String = null,
-    label: String = null,
-    labelOptions: String = null,
-    labels: String = null,
-    line: String = null,
-    lines: String = null,
-    measure: String = null,
-    measureX: String = null,
-    measureXY: String = null,
-    measureY: String = null,
-    name: String = null,
-    outerBackground: String = null,
-    padding: String = null,
-    parallelChannel: String = null,
-    pitchfork: String = null,
-    ray: String = null,
-    rectangle: String = null,
-    removeButton: String = null,
-    saveButton: String = null,
-    segment: String = null,
-    series: String = null,
-    shapeOptions: String = null,
-    shapes: String = null,
-    simpleShapes: String = null,
-    stroke: String = null,
-    strokeWidth: String = null,
-    style: String = null,
-    title: String = null,
-    tunnel: String = null,
-    typeOptions: String = null,
-    verticalArrow: String = null,
-    verticalCounter: String = null,
-    verticalLabel: String = null,
-    verticalLine: String = null,
-    volume: String = null
-  ): LangNavigationPopupOptions = {
+  def apply(): LangNavigationPopupOptions = {
     val __obj = js.Dynamic.literal()
-    if (addButton != null) __obj.updateDynamic("addButton")(addButton.asInstanceOf[js.Any])
-    if (arrowLine != null) __obj.updateDynamic("arrowLine")(arrowLine.asInstanceOf[js.Any])
-    if (arrowRay != null) __obj.updateDynamic("arrowRay")(arrowRay.asInstanceOf[js.Any])
-    if (arrowSegment != null) __obj.updateDynamic("arrowSegment")(arrowSegment.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (backgroundColors != null) __obj.updateDynamic("backgroundColors")(backgroundColors.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (circle != null) __obj.updateDynamic("circle")(circle.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (connector != null) __obj.updateDynamic("connector")(connector.asInstanceOf[js.Any])
-    if (crooked3 != null) __obj.updateDynamic("crooked3")(crooked3.asInstanceOf[js.Any])
-    if (crooked5 != null) __obj.updateDynamic("crooked5")(crooked5.asInstanceOf[js.Any])
-    if (crosshairX != null) __obj.updateDynamic("crosshairX")(crosshairX.asInstanceOf[js.Any])
-    if (crosshairY != null) __obj.updateDynamic("crosshairY")(crosshairY.asInstanceOf[js.Any])
-    if (editButton != null) __obj.updateDynamic("editButton")(editButton.asInstanceOf[js.Any])
-    if (elliott3 != null) __obj.updateDynamic("elliott3")(elliott3.asInstanceOf[js.Any])
-    if (elliott5 != null) __obj.updateDynamic("elliott5")(elliott5.asInstanceOf[js.Any])
-    if (fibonacci != null) __obj.updateDynamic("fibonacci")(fibonacci.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (horizontalLine != null) __obj.updateDynamic("horizontalLine")(horizontalLine.asInstanceOf[js.Any])
-    if (infinityLine != null) __obj.updateDynamic("infinityLine")(infinityLine.asInstanceOf[js.Any])
-    if (innerBackground != null) __obj.updateDynamic("innerBackground")(innerBackground.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelOptions != null) __obj.updateDynamic("labelOptions")(labelOptions.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
-    if (measureX != null) __obj.updateDynamic("measureX")(measureX.asInstanceOf[js.Any])
-    if (measureXY != null) __obj.updateDynamic("measureXY")(measureXY.asInstanceOf[js.Any])
-    if (measureY != null) __obj.updateDynamic("measureY")(measureY.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outerBackground != null) __obj.updateDynamic("outerBackground")(outerBackground.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (parallelChannel != null) __obj.updateDynamic("parallelChannel")(parallelChannel.asInstanceOf[js.Any])
-    if (pitchfork != null) __obj.updateDynamic("pitchfork")(pitchfork.asInstanceOf[js.Any])
-    if (ray != null) __obj.updateDynamic("ray")(ray.asInstanceOf[js.Any])
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
-    if (removeButton != null) __obj.updateDynamic("removeButton")(removeButton.asInstanceOf[js.Any])
-    if (saveButton != null) __obj.updateDynamic("saveButton")(saveButton.asInstanceOf[js.Any])
-    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (shapeOptions != null) __obj.updateDynamic("shapeOptions")(shapeOptions.asInstanceOf[js.Any])
-    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
-    if (simpleShapes != null) __obj.updateDynamic("simpleShapes")(simpleShapes.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (tunnel != null) __obj.updateDynamic("tunnel")(tunnel.asInstanceOf[js.Any])
-    if (typeOptions != null) __obj.updateDynamic("typeOptions")(typeOptions.asInstanceOf[js.Any])
-    if (verticalArrow != null) __obj.updateDynamic("verticalArrow")(verticalArrow.asInstanceOf[js.Any])
-    if (verticalCounter != null) __obj.updateDynamic("verticalCounter")(verticalCounter.asInstanceOf[js.Any])
-    if (verticalLabel != null) __obj.updateDynamic("verticalLabel")(verticalLabel.asInstanceOf[js.Any])
-    if (verticalLine != null) __obj.updateDynamic("verticalLine")(verticalLine.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangNavigationPopupOptions]
   }
+  @scala.inline
+  implicit class LangNavigationPopupOptionsOps[Self <: LangNavigationPopupOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddButton(value: String): Self = this.set("addButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddButton: Self = this.set("addButton", js.undefined)
+    @scala.inline
+    def setArrowLine(value: String): Self = this.set("arrowLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowLine: Self = this.set("arrowLine", js.undefined)
+    @scala.inline
+    def setArrowRay(value: String): Self = this.set("arrowRay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowRay: Self = this.set("arrowRay", js.undefined)
+    @scala.inline
+    def setArrowSegment(value: String): Self = this.set("arrowSegment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowSegment: Self = this.set("arrowSegment", js.undefined)
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBackgroundColors(value: String): Self = this.set("backgroundColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColors: Self = this.set("backgroundColors", js.undefined)
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderRadius(value: String): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: String): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setCircle(value: String): Self = this.set("circle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCircle: Self = this.set("circle", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setConnector(value: String): Self = this.set("connector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnector: Self = this.set("connector", js.undefined)
+    @scala.inline
+    def setCrooked3(value: String): Self = this.set("crooked3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrooked3: Self = this.set("crooked3", js.undefined)
+    @scala.inline
+    def setCrooked5(value: String): Self = this.set("crooked5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrooked5: Self = this.set("crooked5", js.undefined)
+    @scala.inline
+    def setCrosshairX(value: String): Self = this.set("crosshairX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrosshairX: Self = this.set("crosshairX", js.undefined)
+    @scala.inline
+    def setCrosshairY(value: String): Self = this.set("crosshairY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrosshairY: Self = this.set("crosshairY", js.undefined)
+    @scala.inline
+    def setEditButton(value: String): Self = this.set("editButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditButton: Self = this.set("editButton", js.undefined)
+    @scala.inline
+    def setElliott3(value: String): Self = this.set("elliott3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElliott3: Self = this.set("elliott3", js.undefined)
+    @scala.inline
+    def setElliott5(value: String): Self = this.set("elliott5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElliott5: Self = this.set("elliott5", js.undefined)
+    @scala.inline
+    def setFibonacci(value: String): Self = this.set("fibonacci", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFibonacci: Self = this.set("fibonacci", js.undefined)
+    @scala.inline
+    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setFlags(value: String): Self = this.set("flags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlags: Self = this.set("flags", js.undefined)
+    @scala.inline
+    def setFontSize(value: String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHorizontalLine(value: String): Self = this.set("horizontalLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalLine: Self = this.set("horizontalLine", js.undefined)
+    @scala.inline
+    def setInfinityLine(value: String): Self = this.set("infinityLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfinityLine: Self = this.set("infinityLine", js.undefined)
+    @scala.inline
+    def setInnerBackground(value: String): Self = this.set("innerBackground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerBackground: Self = this.set("innerBackground", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelOptions(value: String): Self = this.set("labelOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelOptions: Self = this.set("labelOptions", js.undefined)
+    @scala.inline
+    def setLabels(value: String): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLine(value: String): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setLines(value: String): Self = this.set("lines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLines: Self = this.set("lines", js.undefined)
+    @scala.inline
+    def setMeasure(value: String): Self = this.set("measure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeasure: Self = this.set("measure", js.undefined)
+    @scala.inline
+    def setMeasureX(value: String): Self = this.set("measureX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeasureX: Self = this.set("measureX", js.undefined)
+    @scala.inline
+    def setMeasureXY(value: String): Self = this.set("measureXY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeasureXY: Self = this.set("measureXY", js.undefined)
+    @scala.inline
+    def setMeasureY(value: String): Self = this.set("measureY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeasureY: Self = this.set("measureY", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOuterBackground(value: String): Self = this.set("outerBackground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOuterBackground: Self = this.set("outerBackground", js.undefined)
+    @scala.inline
+    def setPadding(value: String): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setParallelChannel(value: String): Self = this.set("parallelChannel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelChannel: Self = this.set("parallelChannel", js.undefined)
+    @scala.inline
+    def setPitchfork(value: String): Self = this.set("pitchfork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePitchfork: Self = this.set("pitchfork", js.undefined)
+    @scala.inline
+    def setRay(value: String): Self = this.set("ray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRay: Self = this.set("ray", js.undefined)
+    @scala.inline
+    def setRectangle(value: String): Self = this.set("rectangle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRectangle: Self = this.set("rectangle", js.undefined)
+    @scala.inline
+    def setRemoveButton(value: String): Self = this.set("removeButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveButton: Self = this.set("removeButton", js.undefined)
+    @scala.inline
+    def setSaveButton(value: String): Self = this.set("saveButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaveButton: Self = this.set("saveButton", js.undefined)
+    @scala.inline
+    def setSegment(value: String): Self = this.set("segment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegment: Self = this.set("segment", js.undefined)
+    @scala.inline
+    def setSeries(value: String): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setShapeOptions(value: String): Self = this.set("shapeOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapeOptions: Self = this.set("shapeOptions", js.undefined)
+    @scala.inline
+    def setShapes(value: String): Self = this.set("shapes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapes: Self = this.set("shapes", js.undefined)
+    @scala.inline
+    def setSimpleShapes(value: String): Self = this.set("simpleShapes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimpleShapes: Self = this.set("simpleShapes", js.undefined)
+    @scala.inline
+    def setStroke(value: String): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+    @scala.inline
+    def setStrokeWidth(value: String): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTunnel(value: String): Self = this.set("tunnel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTunnel: Self = this.set("tunnel", js.undefined)
+    @scala.inline
+    def setTypeOptions(value: String): Self = this.set("typeOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeOptions: Self = this.set("typeOptions", js.undefined)
+    @scala.inline
+    def setVerticalArrow(value: String): Self = this.set("verticalArrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalArrow: Self = this.set("verticalArrow", js.undefined)
+    @scala.inline
+    def setVerticalCounter(value: String): Self = this.set("verticalCounter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalCounter: Self = this.set("verticalCounter", js.undefined)
+    @scala.inline
+    def setVerticalLabel(value: String): Self = this.set("verticalLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalLabel: Self = this.set("verticalLabel", js.undefined)
+    @scala.inline
+    def setVerticalLine(value: String): Self = this.set("verticalLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalLine: Self = this.set("verticalLine", js.undefined)
+    @scala.inline
+    def setVolume(value: String): Self = this.set("volume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolume: Self = this.set("volume", js.undefined)
+  }
+  
 }
 

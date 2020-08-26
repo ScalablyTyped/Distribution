@@ -15,11 +15,32 @@ trait AutomaticTapeCreationPolicyInfo extends js.Object {
 
 object AutomaticTapeCreationPolicyInfo {
   @scala.inline
-  def apply(AutomaticTapeCreationRules: AutomaticTapeCreationRules = null, GatewayARN: GatewayARN = null): AutomaticTapeCreationPolicyInfo = {
+  def apply(): AutomaticTapeCreationPolicyInfo = {
     val __obj = js.Dynamic.literal()
-    if (AutomaticTapeCreationRules != null) __obj.updateDynamic("AutomaticTapeCreationRules")(AutomaticTapeCreationRules.asInstanceOf[js.Any])
-    if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomaticTapeCreationPolicyInfo]
   }
+  @scala.inline
+  implicit class AutomaticTapeCreationPolicyInfoOps[Self <: AutomaticTapeCreationPolicyInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomaticTapeCreationRulesVarargs(value: AutomaticTapeCreationRule*): Self = this.set("AutomaticTapeCreationRules", js.Array(value :_*))
+    @scala.inline
+    def setAutomaticTapeCreationRules(value: AutomaticTapeCreationRules): Self = this.set("AutomaticTapeCreationRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticTapeCreationRules: Self = this.set("AutomaticTapeCreationRules", js.undefined)
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+  }
+  
 }
 

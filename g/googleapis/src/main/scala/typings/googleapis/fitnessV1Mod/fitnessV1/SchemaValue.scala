@@ -36,18 +36,40 @@ trait SchemaValue extends js.Object {
 
 object SchemaValue {
   @scala.inline
-  def apply(
-    fpVal: js.UndefOr[Double] = js.undefined,
-    intVal: js.UndefOr[Double] = js.undefined,
-    mapVal: js.Array[SchemaValueMapValEntry] = null,
-    stringVal: String = null
-  ): SchemaValue = {
+  def apply(): SchemaValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fpVal)) __obj.updateDynamic("fpVal")(fpVal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(intVal)) __obj.updateDynamic("intVal")(intVal.get.asInstanceOf[js.Any])
-    if (mapVal != null) __obj.updateDynamic("mapVal")(mapVal.asInstanceOf[js.Any])
-    if (stringVal != null) __obj.updateDynamic("stringVal")(stringVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaValue]
   }
+  @scala.inline
+  implicit class SchemaValueOps[Self <: SchemaValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFpVal(value: Double): Self = this.set("fpVal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFpVal: Self = this.set("fpVal", js.undefined)
+    @scala.inline
+    def setIntVal(value: Double): Self = this.set("intVal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntVal: Self = this.set("intVal", js.undefined)
+    @scala.inline
+    def setMapValVarargs(value: SchemaValueMapValEntry*): Self = this.set("mapVal", js.Array(value :_*))
+    @scala.inline
+    def setMapVal(value: js.Array[SchemaValueMapValEntry]): Self = this.set("mapVal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapVal: Self = this.set("mapVal", js.undefined)
+    @scala.inline
+    def setStringVal(value: String): Self = this.set("stringVal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringVal: Self = this.set("stringVal", js.undefined)
+  }
+  
 }
 

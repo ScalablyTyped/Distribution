@@ -1,7 +1,6 @@
 package typings.winrtUwp.global.Windows.Security.Credentials
 
 import typings.winrtUwp.Windows.Foundation.Uri
-import typings.winrtUwp.Windows.System.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,23 +17,5 @@ class WebAccountProvider protected ()
     * @param iconUri The Uri of the icon image to display for the web account provider.
     */
   def this(id: String, displayName: String, iconUri: Uri) = this()
-  /** Gets the authority of the web account provider. Use authority to disambiguate between a single provider with multiple identities (such as a Microsoft account versus Azure Active Directory). */
-  /* CompleteClass */
-  override var authority: String = js.native
-  /** Gets the display name for the web account provider. */
-  /* CompleteClass */
-  override var displayName: String = js.native
-  /** Gets the display purpose of the web account provider. */
-  /* CompleteClass */
-  override var displayPurpose: String = js.native
-  /** Gets the Uri of the icon image to display for the web account provider. */
-  /* CompleteClass */
-  override var iconUri: Uri = js.native
-  /** Gets the web account provider id. */
-  /* CompleteClass */
-  override var id: String = js.native
-  /** Gets the user associated with the provider. */
-  /* CompleteClass */
-  override var user: User = js.native
 }
 

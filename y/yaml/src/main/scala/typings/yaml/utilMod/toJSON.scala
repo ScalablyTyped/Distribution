@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object toJSON extends js.Object {
   def apply(value: js.Any): js.Any = js.native
+  def apply(value: js.Any, arg: js.UndefOr[scala.Nothing], ctx: CreateNodeContext): js.Any = js.native
   def apply(value: js.Any, arg: js.Any): js.Any = js.native
   def apply(value: js.Any, arg: js.Any, ctx: CreateNodeContext): js.Any = js.native
 }

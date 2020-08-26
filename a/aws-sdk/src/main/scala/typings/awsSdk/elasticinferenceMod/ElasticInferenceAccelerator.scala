@@ -30,20 +30,42 @@ trait ElasticInferenceAccelerator extends js.Object {
 
 object ElasticInferenceAccelerator {
   @scala.inline
-  def apply(
-    acceleratorHealth: ElasticInferenceAcceleratorHealth = null,
-    acceleratorId: AcceleratorId = null,
-    acceleratorType: AcceleratorTypeName = null,
-    attachedResource: ResourceArn = null,
-    availabilityZone: AvailabilityZone = null
-  ): ElasticInferenceAccelerator = {
+  def apply(): ElasticInferenceAccelerator = {
     val __obj = js.Dynamic.literal()
-    if (acceleratorHealth != null) __obj.updateDynamic("acceleratorHealth")(acceleratorHealth.asInstanceOf[js.Any])
-    if (acceleratorId != null) __obj.updateDynamic("acceleratorId")(acceleratorId.asInstanceOf[js.Any])
-    if (acceleratorType != null) __obj.updateDynamic("acceleratorType")(acceleratorType.asInstanceOf[js.Any])
-    if (attachedResource != null) __obj.updateDynamic("attachedResource")(attachedResource.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticInferenceAccelerator]
   }
+  @scala.inline
+  implicit class ElasticInferenceAcceleratorOps[Self <: ElasticInferenceAccelerator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorHealth(value: ElasticInferenceAcceleratorHealth): Self = this.set("acceleratorHealth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorHealth: Self = this.set("acceleratorHealth", js.undefined)
+    @scala.inline
+    def setAcceleratorId(value: AcceleratorId): Self = this.set("acceleratorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorId: Self = this.set("acceleratorId", js.undefined)
+    @scala.inline
+    def setAcceleratorType(value: AcceleratorTypeName): Self = this.set("acceleratorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorType: Self = this.set("acceleratorType", js.undefined)
+    @scala.inline
+    def setAttachedResource(value: ResourceArn): Self = this.set("attachedResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachedResource: Self = this.set("attachedResource", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: AvailabilityZone): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+  }
+  
 }
 

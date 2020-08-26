@@ -22,6 +22,13 @@ class QueueEventSubscription protected ()
     name: String,
     queue: typings.pulumiAws.sqsQueueMod.Queue,
     handler: QueueEventHandler,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions
+  ) = this()
+  def this(
+    name: String,
+    queue: typings.pulumiAws.sqsQueueMod.Queue,
+    handler: QueueEventHandler,
     args: QueueEventSubscriptionArgs,
     opts: ComponentResourceOptions
   ) = this()

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/boxengine", JSImport.Namespace)
+@JSImport("@lumino/widgets/types/boxengine", JSImport.Namespace)
 @js.native
 object boxengineMod extends js.Object {
   @js.native

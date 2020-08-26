@@ -4,25 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MatcherTrackParams extends MatcherLyricsParams {
-  var f_has_lyrics: js.UndefOr[TBoolean] = js.undefined
-  var f_has_subtitle: js.UndefOr[TBoolean] = js.undefined
+  var f_has_lyrics: js.UndefOr[TBoolean] = js.native
+  var f_has_subtitle: js.UndefOr[TBoolean] = js.native
 }
 
 object MatcherTrackParams {
   @scala.inline
-  def apply(
-    f_has_lyrics: TBoolean = null,
-    f_has_subtitle: TBoolean = null,
-    q_artist: String = null,
-    q_track: String = null
-  ): MatcherTrackParams = {
+  def apply(): MatcherTrackParams = {
     val __obj = js.Dynamic.literal()
-    if (f_has_lyrics != null) __obj.updateDynamic("f_has_lyrics")(f_has_lyrics.asInstanceOf[js.Any])
-    if (f_has_subtitle != null) __obj.updateDynamic("f_has_subtitle")(f_has_subtitle.asInstanceOf[js.Any])
-    if (q_artist != null) __obj.updateDynamic("q_artist")(q_artist.asInstanceOf[js.Any])
-    if (q_track != null) __obj.updateDynamic("q_track")(q_track.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatcherTrackParams]
   }
+  @scala.inline
+  implicit class MatcherTrackParamsOps[Self <: MatcherTrackParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setF_has_lyrics(value: TBoolean): Self = this.set("f_has_lyrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteF_has_lyrics: Self = this.set("f_has_lyrics", js.undefined)
+    @scala.inline
+    def setF_has_subtitle(value: TBoolean): Self = this.set("f_has_subtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteF_has_subtitle: Self = this.set("f_has_subtitle", js.undefined)
+  }
+  
 }
 

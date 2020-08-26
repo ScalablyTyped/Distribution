@@ -36,10 +36,10 @@ class Range protected () extends js.Object {
     * Test if range is in this range. If the range is equal to this range, will return true.
     */
   def containsRange(range: IRange): Boolean = js.native
-  def equalsRange(): Boolean = js.native
   /**
     * Test if this range equals other.
     */
+  def equalsRange(): Boolean = js.native
   def equalsRange(other: IRange): Boolean = js.native
   /**
     * Return the end position (which will be after or equal to the start position)
@@ -102,6 +102,7 @@ object Range extends js.Object {
     * It will first compare ranges on the startPosition and then on the endPosition
     */
   def compareRangesUsingStarts(): Double = js.native
+  def compareRangesUsingStarts(a: js.UndefOr[scala.Nothing], b: IRange): Double = js.native
   def compareRangesUsingStarts(a: Null, b: IRange): Double = js.native
   def compareRangesUsingStarts(a: IRange): Double = js.native
   def compareRangesUsingStarts(a: IRange, b: IRange): Double = js.native
@@ -113,12 +114,12 @@ object Range extends js.Object {
     * Test if `otherRange` is in `range`. If the ranges are equal, will return true.
     */
   def containsRange(range: IRange, otherRange: IRange): Boolean = js.native
-  def equalsRange(): Boolean = js.native
-  def equalsRange(a: Null, b: IRange): Boolean = js.native
-  def equalsRange(a: IRange): Boolean = js.native
   /**
     * Test if range `a` equals `b`.
     */
+  def equalsRange(): Boolean = js.native
+  def equalsRange(a: Null, b: IRange): Boolean = js.native
+  def equalsRange(a: IRange): Boolean = js.native
   def equalsRange(a: IRange, b: IRange): Boolean = js.native
   def fromPositions(start: IPosition): Range = js.native
   def fromPositions(start: IPosition, end: IPosition): Range = js.native

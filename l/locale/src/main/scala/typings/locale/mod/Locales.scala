@@ -20,6 +20,7 @@ class Locales () extends js.Object {
   def this(str: js.Array[String | Locale]) = this()
   def this(str: Locale) = this()
   def this(str: Locales) = this()
+  def this(str: js.UndefOr[scala.Nothing], `def`: String) = this()
   def this(str: String, `def`: String) = this()
   def this(str: js.Array[String | Locale], `def`: String) = this()
   def this(str: Locale, `def`: String) = this()

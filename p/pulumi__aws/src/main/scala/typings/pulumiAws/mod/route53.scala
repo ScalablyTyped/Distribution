@@ -50,6 +50,7 @@ object route53 extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: DelegationSetArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: DelegationSetArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -149,6 +150,7 @@ object route53 extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: ZoneArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ZoneArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -166,17 +168,20 @@ object route53 extends js.Object {
     def this(name: String, args: ZoneAssociationArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getDelegationSet(args: GetDelegationSetArgs): js.Promise[GetDelegationSetResult] with GetDelegationSetResult = js.native
-  def getDelegationSet(args: GetDelegationSetArgs, opts: InvokeOptions): js.Promise[GetDelegationSetResult] with GetDelegationSetResult = js.native
-  def getResolverRule(): js.Promise[GetResolverRuleResult] with GetResolverRuleResult = js.native
-  def getResolverRule(args: GetResolverRuleArgs): js.Promise[GetResolverRuleResult] with GetResolverRuleResult = js.native
-  def getResolverRule(args: GetResolverRuleArgs, opts: InvokeOptions): js.Promise[GetResolverRuleResult] with GetResolverRuleResult = js.native
-  def getResolverRules(): js.Promise[GetResolverRulesResult] with GetResolverRulesResult = js.native
-  def getResolverRules(args: GetResolverRulesArgs): js.Promise[GetResolverRulesResult] with GetResolverRulesResult = js.native
-  def getResolverRules(args: GetResolverRulesArgs, opts: InvokeOptions): js.Promise[GetResolverRulesResult] with GetResolverRulesResult = js.native
-  def getZone(): js.Promise[GetZoneResult] with GetZoneResult = js.native
-  def getZone(args: GetZoneArgs): js.Promise[GetZoneResult] with GetZoneResult = js.native
-  def getZone(args: GetZoneArgs, opts: InvokeOptions): js.Promise[GetZoneResult] with GetZoneResult = js.native
+  def getDelegationSet(args: GetDelegationSetArgs): js.Promise[GetDelegationSetResult] = js.native
+  def getDelegationSet(args: GetDelegationSetArgs, opts: InvokeOptions): js.Promise[GetDelegationSetResult] = js.native
+  def getResolverRule(): js.Promise[GetResolverRuleResult] = js.native
+  def getResolverRule(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetResolverRuleResult] = js.native
+  def getResolverRule(args: GetResolverRuleArgs): js.Promise[GetResolverRuleResult] = js.native
+  def getResolverRule(args: GetResolverRuleArgs, opts: InvokeOptions): js.Promise[GetResolverRuleResult] = js.native
+  def getResolverRules(): js.Promise[GetResolverRulesResult] = js.native
+  def getResolverRules(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetResolverRulesResult] = js.native
+  def getResolverRules(args: GetResolverRulesArgs): js.Promise[GetResolverRulesResult] = js.native
+  def getResolverRules(args: GetResolverRulesArgs, opts: InvokeOptions): js.Promise[GetResolverRulesResult] = js.native
+  def getZone(): js.Promise[GetZoneResult] = js.native
+  def getZone(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetZoneResult] = js.native
+  def getZone(args: GetZoneArgs): js.Promise[GetZoneResult] = js.native
+  def getZone(args: GetZoneArgs, opts: InvokeOptions): js.Promise[GetZoneResult] = js.native
   /* static members */
   @js.native
   object DelegationSet extends js.Object {
@@ -187,8 +192,10 @@ object route53 extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
     def get(name: String, id: Input[ID], state: DelegationSetState): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
     def get(name: String, id: Input[ID], state: DelegationSetState, opts: CustomResourceOptions): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
     /**
@@ -208,8 +215,10 @@ object route53 extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
     def get(name: String, id: Input[ID], state: HealthCheckState): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
     def get(name: String, id: Input[ID], state: HealthCheckState, opts: CustomResourceOptions): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
     /**
@@ -229,8 +238,10 @@ object route53 extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.queryLogMod.QueryLog = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.queryLogMod.QueryLog = js.native
     def get(name: String, id: Input[ID], state: QueryLogState): typings.pulumiAws.queryLogMod.QueryLog = js.native
     def get(name: String, id: Input[ID], state: QueryLogState, opts: CustomResourceOptions): typings.pulumiAws.queryLogMod.QueryLog = js.native
     /**
@@ -250,8 +261,10 @@ object route53 extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.recordMod.Record = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.recordMod.Record = js.native
     def get(name: String, id: Input[ID], state: RecordState): typings.pulumiAws.recordMod.Record = js.native
     def get(name: String, id: Input[ID], state: RecordState, opts: CustomResourceOptions): typings.pulumiAws.recordMod.Record = js.native
     /**
@@ -287,8 +300,10 @@ object route53 extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
     def get(name: String, id: Input[ID], state: ResolverEndpointState): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
     def get(name: String, id: Input[ID], state: ResolverEndpointState, opts: CustomResourceOptions): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
     /**
@@ -308,8 +323,10 @@ object route53 extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
     def get(name: String, id: Input[ID], state: ResolverRuleState): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
     def get(name: String, id: Input[ID], state: ResolverRuleState, opts: CustomResourceOptions): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
     /**
@@ -329,8 +346,10 @@ object route53 extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
     def get(name: String, id: Input[ID], state: ResolverRuleAssociationState): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
     def get(name: String, id: Input[ID], state: ResolverRuleAssociationState, opts: CustomResourceOptions): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
     /**
@@ -350,8 +369,10 @@ object route53 extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.zoneMod.Zone = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.zoneMod.Zone = js.native
     def get(name: String, id: Input[ID], state: ZoneState): typings.pulumiAws.zoneMod.Zone = js.native
     def get(name: String, id: Input[ID], state: ZoneState, opts: CustomResourceOptions): typings.pulumiAws.zoneMod.Zone = js.native
     /**
@@ -371,8 +392,10 @@ object route53 extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
     def get(name: String, id: Input[ID], state: ZoneAssociationState): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
     def get(name: String, id: Input[ID], state: ZoneAssociationState, opts: CustomResourceOptions): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
     /**

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tabs/lib/hooks/useRaf", JSImport.Namespace)
+@JSImport("rc-tabs/es/hooks/useRaf", JSImport.Namespace)
 @js.native
 object useRafMod extends js.Object {
   def default[Callback /* <: js.Function */](callback: Callback): js.Function1[/* repeated */ js.Any, Unit] = js.native

@@ -37,7 +37,23 @@ class Segment ()
     */
   def this(`object`: js.Object) = this()
   def this(point: typings.paper.paper.Point) = this()
+  def this(point: js.UndefOr[scala.Nothing], handleIn: typings.paper.paper.Point) = this()
   def this(point: typings.paper.paper.Point, handleIn: typings.paper.paper.Point) = this()
+  def this(
+    point: js.UndefOr[scala.Nothing],
+    handleIn: js.UndefOr[scala.Nothing],
+    handleOut: typings.paper.paper.Point
+  ) = this()
+  def this(
+    point: js.UndefOr[scala.Nothing],
+    handleIn: typings.paper.paper.Point,
+    handleOut: typings.paper.paper.Point
+  ) = this()
+  def this(
+    point: typings.paper.paper.Point,
+    handleIn: js.UndefOr[scala.Nothing],
+    handleOut: typings.paper.paper.Point
+  ) = this()
   def this(
     point: typings.paper.paper.Point,
     handleIn: typings.paper.paper.Point,

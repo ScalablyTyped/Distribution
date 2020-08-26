@@ -8,14 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object messageQueueMod extends js.Object {
   @js.native
-  class default () extends MessageQueue {
-    /* CompleteClass */
-    override def getCallableModule(name: String): js.Object = js.native
-    /* CompleteClass */
-    override def registerCallableModule(name: String, module: js.Object): Unit = js.native
-    /* CompleteClass */
-    override def registerLazyCallableModule(name: String, factory: js.Function0[js.Object]): Unit = js.native
-  }
+  class default () extends MessageQueue
   
   /* static members */
   @js.native

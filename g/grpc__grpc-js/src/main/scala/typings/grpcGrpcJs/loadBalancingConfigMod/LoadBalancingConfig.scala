@@ -1,22 +1,61 @@
 package typings.grpcGrpcJs.loadBalancingConfigMod
 
+import typings.grpcGrpcJs.grpcGrpcJsStrings.eds
+import typings.grpcGrpcJs.grpcGrpcJsStrings.grpclb
+import typings.grpcGrpcJs.grpcGrpcJsStrings.pick_first
+import typings.grpcGrpcJs.grpcGrpcJsStrings.priority
+import typings.grpcGrpcJs.grpcGrpcJsStrings.round_robin
+import typings.grpcGrpcJs.grpcGrpcJsStrings.weighted_target
+import typings.grpcGrpcJs.grpcGrpcJsStrings.xds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LoadBalancingConfig extends js.Object {
-  var grpclb: js.UndefOr[GrpcLbConfig] = js.undefined
-  var round_robin: js.UndefOr[RoundRobinConfig] = js.undefined
-  var xds: js.UndefOr[XdsConfig] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.grpcGrpcJs.loadBalancingConfigMod.PickFirstLoadBalancingConfig
+  - typings.grpcGrpcJs.loadBalancingConfigMod.RoundRobinLoadBalancingConfig
+  - typings.grpcGrpcJs.loadBalancingConfigMod.XdsLoadBalancingConfig
+  - typings.grpcGrpcJs.loadBalancingConfigMod.GrpcLbLoadBalancingConfig
+  - typings.grpcGrpcJs.loadBalancingConfigMod.PriorityLoadBalancingConfig
+  - typings.grpcGrpcJs.loadBalancingConfigMod.WeightedTargetLoadBalancingConfig
+  - typings.grpcGrpcJs.loadBalancingConfigMod.EdsLoadBalancingConfig
+*/
+trait LoadBalancingConfig extends js.Object
 
 object LoadBalancingConfig {
   @scala.inline
-  def apply(grpclb: GrpcLbConfig = null, round_robin: RoundRobinConfig = null, xds: XdsConfig = null): LoadBalancingConfig = {
-    val __obj = js.Dynamic.literal()
-    if (grpclb != null) __obj.updateDynamic("grpclb")(grpclb.asInstanceOf[js.Any])
-    if (round_robin != null) __obj.updateDynamic("round_robin")(round_robin.asInstanceOf[js.Any])
-    if (xds != null) __obj.updateDynamic("xds")(xds.asInstanceOf[js.Any])
+  def XdsLoadBalancingConfig(name: xds, xds: XdsConfig): LoadBalancingConfig = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], xds = xds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancingConfig]
+  }
+  @scala.inline
+  def RoundRobinLoadBalancingConfig(name: round_robin, round_robin: RoundRobinConfig): LoadBalancingConfig = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], round_robin = round_robin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancingConfig]
+  }
+  @scala.inline
+  def GrpcLbLoadBalancingConfig(grpclb: GrpcLbConfig, name: grpclb): LoadBalancingConfig = {
+    val __obj = js.Dynamic.literal(grpclb = grpclb.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancingConfig]
+  }
+  @scala.inline
+  def WeightedTargetLoadBalancingConfig(name: weighted_target, weighted_target: WeightedTargetLbConfig): LoadBalancingConfig = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], weighted_target = weighted_target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancingConfig]
+  }
+  @scala.inline
+  def EdsLoadBalancingConfig(eds: EdsLbConfig, name: eds): LoadBalancingConfig = {
+    val __obj = js.Dynamic.literal(eds = eds.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancingConfig]
+  }
+  @scala.inline
+  def PickFirstLoadBalancingConfig(name: pick_first, pick_first: PickFirstConfig): LoadBalancingConfig = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pick_first = pick_first.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancingConfig]
+  }
+  @scala.inline
+  def PriorityLoadBalancingConfig(name: priority, priority: PriorityLbConfig): LoadBalancingConfig = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancingConfig]
   }
 }

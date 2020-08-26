@@ -11,8 +11,8 @@ A JavaScript mock Date object that can be used to change when "now" is.
 | Full name          | mockdate |
 | Keywords           | date, mock, test |
 | # releases         | 4 |
-| # dependents       | 32 |
-| # downloads        | 9097621 |
+| # dependents       | 34 |
+| # downloads        | 9440613 |
 | # stars            | 5 |
 
 ## Links

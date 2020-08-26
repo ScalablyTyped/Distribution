@@ -22,11 +22,30 @@ trait SchemaGoogleCloudVideointelligenceV1beta2LabelFrame extends js.Object {
 
 object SchemaGoogleCloudVideointelligenceV1beta2LabelFrame {
   @scala.inline
-  def apply(confidence: js.UndefOr[Double] = js.undefined, timeOffset: String = null): SchemaGoogleCloudVideointelligenceV1beta2LabelFrame = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1beta2LabelFrame = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
-    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1beta2LabelFrame]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1beta2LabelFrameOps[Self <: SchemaGoogleCloudVideointelligenceV1beta2LabelFrame] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    @scala.inline
+    def setTimeOffset(value: String): Self = this.set("timeOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeOffset: Self = this.set("timeOffset", js.undefined)
+  }
+  
 }
 

@@ -14,6 +14,7 @@ import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
 import typings.qs.mod.ParsedQs
 import typings.std.Error
+import typings.std.Record
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -49,7 +50,7 @@ trait Application
   @JSName("head")
   var head_Original: IRouterMatcher[this.type, head] = js.native
   var length: Int = js.native
-  var locals: js.Any = js.native
+  var locals: Record[String, _] = js.native
   @JSName("lock")
   var lock_Original: IRouterMatcher[this.type, _] = js.native
   @JSName("m-search")
@@ -430,6 +431,11 @@ trait Application
     */
   def render(name: String): Unit = js.native
   def render(name: String, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+  def render(
+    name: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* html */ String, Unit]
+  ): Unit = js.native
   def render(name: String, options: js.Object): Unit = js.native
   def render(name: String, options: js.Object, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
   def report(path: PathParams, subApplication: Application): this.type = js.native

@@ -57,7 +57,6 @@ import typings.ionicReact.anon.IonSlidePickHTMLAttribute
 import typings.ionicReact.anon.IonSlidesPickHTMLAttribut
 import typings.ionicReact.anon.IonSpinnerPickHTMLAttribu
 import typings.ionicReact.anon.IonSplitPanePickHTMLAttri
-import typings.ionicReact.anon.IonTabButtonPickHTMLAttri
 import typings.ionicReact.anon.IonTabPickHTMLAttributesH
 import typings.ionicReact.anon.IonTextPickHTMLAttributes
 import typings.ionicReact.anon.IonTextareaPickHTMLAttrib
@@ -144,7 +143,6 @@ object proxiesMod extends js.Object {
   val IonSpinner: ForwardRefExoticComponent[IonSpinnerPickHTMLAttribu] = js.native
   val IonSplitPane: ForwardRefExoticComponent[IonSplitPanePickHTMLAttri] = js.native
   val IonTab: ForwardRefExoticComponent[IonTabPickHTMLAttributesH] = js.native
-  val IonTabButton: ForwardRefExoticComponent[IonTabButtonPickHTMLAttri] = js.native
   val IonText: ForwardRefExoticComponent[IonTextPickHTMLAttributes] = js.native
   val IonTextarea: ForwardRefExoticComponent[IonTextareaPickHTMLAttrib] = js.native
   val IonThumbnail: ForwardRefExoticComponent[IonThumbnailPickHTMLAttri] = js.native

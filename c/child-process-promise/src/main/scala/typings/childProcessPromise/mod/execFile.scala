@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object execFile extends js.Object {
   def apply(file: String): ChildProcessPromise[PromiseResult[String]] = js.native
+  def apply(file: String, args: js.UndefOr[scala.Nothing], options: ReadonlyOptionsExecFileOpCapture): ChildProcessPromise[PromiseResult[String]] = js.native
   def apply(file: String, args: js.Array[String]): ChildProcessPromise[PromiseResult[String]] = js.native
   def apply(file: String, args: js.Array[String], options: ReadonlyOptionsExecFileOp): ChildProcessPromise[PromiseResult[Buffer]] = js.native
   def apply(file: String, args: js.Array[String], options: ReadonlyOptionsExecFileOpCapture): ChildProcessPromise[PromiseResult[String | Buffer]] = js.native

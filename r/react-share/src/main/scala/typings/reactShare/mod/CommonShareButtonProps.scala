@@ -10,103 +10,145 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommonShareButtonProps extends js.Object {
   /**
     * An object to pass any additional properties, such as `aria-*` attributes.
     */
-  var additionalProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
+  var additionalProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
   /**
     *  Takes a function that returns a Promise to be fulfilled before calling
     * `onClick`. If you do not return promise, `onClick` is called immediately.
     */
-  var beforeOnClick: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
+  var beforeOnClick: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
   /**
     * A class name to add to the others added by react-share (SocialMediaShareButton, ...).
     */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /** Disables click action and adds `disabled` class */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /**
     * Style when button is disabled
     * @default { opacity: 0.6 }
     */
-  var disabledStyle: js.UndefOr[StyleHTMLAttributes[HTMLDivElement]] = js.undefined
+  var disabledStyle: js.UndefOr[StyleHTMLAttributes[HTMLDivElement]] = js.native
   /**
     * Click callback handler.
     */
-  var onClick: js.UndefOr[js.Function1[/* link */ String, Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* link */ String, Unit]] = js.native
   /**
     * Takes a function to be called after closing share dialog.
     */
-  var onShareWindowClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onShareWindowClose: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * If false, does not open a new window and call the onClick callback instead.
     * @default true
     */
-  var openWindow: js.UndefOr[Boolean] = js.undefined
+  var openWindow: js.UndefOr[Boolean] = js.native
   /**
     * The HTML role of the div.
     * @default "button"
     */
-  var role: js.UndefOr[String] = js.undefined
+  var role: js.UndefOr[String] = js.native
   /**
     * Extra style for the button.
     */
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.native
   /**
     * Indicates that its element can be focused, and where it participates in sequential keyboard
     * navigation.
     * @default "0"
     */
-  var tabIndex: js.UndefOr[Double] = js.undefined
+  var tabIndex: js.UndefOr[Double] = js.native
   /**
     * URL of the shared page
     */
-  var url: String
-  var windowHeight: js.UndefOr[Double] = js.undefined
+  var url: String = js.native
+  var windowHeight: js.UndefOr[Double] = js.native
   /**
     * Whether to center the share box respectively to the screen or to the window.
     * @default "windowCenter"
     */
-  var windowPosition: js.UndefOr[windowCenter | screenCenter] = js.undefined
-  var windowWidth: js.UndefOr[Double] = js.undefined
+  var windowPosition: js.UndefOr[windowCenter | screenCenter] = js.native
+  var windowWidth: js.UndefOr[Double] = js.native
 }
 
 object CommonShareButtonProps {
   @scala.inline
-  def apply(
-    url: String,
-    additionalProps: HTMLAttributes[HTMLDivElement] = null,
-    beforeOnClick: () => js.Promise[Unit] | Unit = null,
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledStyle: StyleHTMLAttributes[HTMLDivElement] = null,
-    onClick: /* link */ String => Unit = null,
-    onShareWindowClose: () => Unit = null,
-    openWindow: js.UndefOr[Boolean] = js.undefined,
-    role: String = null,
-    style: CSSProperties = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    windowHeight: js.UndefOr[Double] = js.undefined,
-    windowPosition: windowCenter | screenCenter = null,
-    windowWidth: js.UndefOr[Double] = js.undefined
-  ): CommonShareButtonProps = {
+  def apply(url: String): CommonShareButtonProps = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (additionalProps != null) __obj.updateDynamic("additionalProps")(additionalProps.asInstanceOf[js.Any])
-    if (beforeOnClick != null) __obj.updateDynamic("beforeOnClick")(js.Any.fromFunction0(beforeOnClick))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (disabledStyle != null) __obj.updateDynamic("disabledStyle")(disabledStyle.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onShareWindowClose != null) __obj.updateDynamic("onShareWindowClose")(js.Any.fromFunction0(onShareWindowClose))
-    if (!js.isUndefined(openWindow)) __obj.updateDynamic("openWindow")(openWindow.get.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowHeight)) __obj.updateDynamic("windowHeight")(windowHeight.get.asInstanceOf[js.Any])
-    if (windowPosition != null) __obj.updateDynamic("windowPosition")(windowPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowWidth)) __obj.updateDynamic("windowWidth")(windowWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonShareButtonProps]
   }
+  @scala.inline
+  implicit class CommonShareButtonPropsOps[Self <: CommonShareButtonProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditionalProps(value: HTMLAttributes[HTMLDivElement]): Self = this.set("additionalProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalProps: Self = this.set("additionalProps", js.undefined)
+    @scala.inline
+    def setBeforeOnClick(value: () => js.Promise[Unit] | Unit): Self = this.set("beforeOnClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteBeforeOnClick: Self = this.set("beforeOnClick", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisabledStyle(value: StyleHTMLAttributes[HTMLDivElement]): Self = this.set("disabledStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledStyle: Self = this.set("disabledStyle", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* link */ String => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnShareWindowClose(value: () => Unit): Self = this.set("onShareWindowClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnShareWindowClose: Self = this.set("onShareWindowClose", js.undefined)
+    @scala.inline
+    def setOpenWindow(value: Boolean): Self = this.set("openWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenWindow: Self = this.set("openWindow", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setWindowHeight(value: Double): Self = this.set("windowHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowHeight: Self = this.set("windowHeight", js.undefined)
+    @scala.inline
+    def setWindowPosition(value: windowCenter | screenCenter): Self = this.set("windowPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowPosition: Self = this.set("windowPosition", js.undefined)
+    @scala.inline
+    def setWindowWidth(value: Double): Self = this.set("windowWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowWidth: Self = this.set("windowWidth", js.undefined)
+  }
+  
 }
 

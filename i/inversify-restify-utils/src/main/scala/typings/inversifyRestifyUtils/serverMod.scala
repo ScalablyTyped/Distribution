@@ -22,12 +22,10 @@ object serverMod extends js.Object {
     var configFn: js.Any = js.native
     var container: js.Any = js.native
     var defaultRoot: js.Any = js.native
+    var handlerFactory: js.Any = js.native
+    var registerControllers: js.Any = js.native
+    var resolveMiddleware: js.Any = js.native
     def build(): Server = js.native
-    /* private */ def handlerFactory(controllerName: js.Any, key: js.Any): js.Any = js.native
-    /* private */ def registerControllers(): js.Any = js.native
-    /* private */ def resolveMiddleware(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param middleware because its type <none> is not an array type */ middleware: js.Any
-    ): js.Any = js.native
     def setConfig(fn: ConfigFunction): InversifyRestifyServer = js.native
   }
   

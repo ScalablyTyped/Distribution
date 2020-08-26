@@ -11,10 +11,6 @@ object Lights extends js.Object {
   class AmbientLight protected ()
     extends typings.amapJsApiMap3d.AMap.Lights.AmbientLight {
     def this(color: js.Tuple3[Double, Double, Double], intensity: Double) = this()
-    /* CompleteClass */
-    override def setColor(color: js.Tuple3[Double, Double, Double]): Unit = js.native
-    /* CompleteClass */
-    override def setIntensity(intensity: Double): Unit = js.native
   }
   
   @js.native
@@ -25,14 +21,6 @@ object Lights extends js.Object {
       color: js.Tuple3[Double, Double, Double],
       intensity: Double
     ) = this()
-    /* CompleteClass */
-    override def setColor(direction: js.Tuple3[Double, Double, Double]): Unit = js.native
-    /* CompleteClass */
-    override def setDirection(direction: js.Tuple3[Double, Double, Double]): Unit = js.native
-    /* CompleteClass */
-    override def setIntensity(intensity: Double): Unit = js.native
-    /* CompleteClass */
-    override def update(): Unit = js.native
   }
   
 }

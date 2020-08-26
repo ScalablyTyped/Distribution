@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
 class Provider ()
   extends typings.heredatalens.H.datalens.Provider {
   def this(data: Data) = this()
+  def this(data: js.UndefOr[scala.Nothing], options: Options) = this()
   def this(data: Data, options: Options) = this()
 }
 

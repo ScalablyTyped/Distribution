@@ -82,46 +82,98 @@ trait MLTransform extends js.Object {
 
 object MLTransform {
   @scala.inline
-  def apply(
-    CreatedOn: Timestamp = null,
-    Description: DescriptionString = null,
-    EvaluationMetrics: EvaluationMetrics = null,
-    GlueVersion: GlueVersionString = null,
-    InputRecordTables: GlueTables = null,
-    LabelCount: js.UndefOr[LabelCount] = js.undefined,
-    LastModifiedOn: Timestamp = null,
-    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
-    MaxRetries: js.UndefOr[NullableInteger] = js.undefined,
-    Name: NameString = null,
-    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
-    Parameters: TransformParameters = null,
-    Role: RoleString = null,
-    Schema: TransformSchema = null,
-    Status: TransformStatusType = null,
-    Timeout: js.UndefOr[Timeout] = js.undefined,
-    TransformId: HashString = null,
-    WorkerType: WorkerType = null
-  ): MLTransform = {
+  def apply(): MLTransform = {
     val __obj = js.Dynamic.literal()
-    if (CreatedOn != null) __obj.updateDynamic("CreatedOn")(CreatedOn.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EvaluationMetrics != null) __obj.updateDynamic("EvaluationMetrics")(EvaluationMetrics.asInstanceOf[js.Any])
-    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion.asInstanceOf[js.Any])
-    if (InputRecordTables != null) __obj.updateDynamic("InputRecordTables")(InputRecordTables.asInstanceOf[js.Any])
-    if (!js.isUndefined(LabelCount)) __obj.updateDynamic("LabelCount")(LabelCount.get.asInstanceOf[js.Any])
-    if (LastModifiedOn != null) __obj.updateDynamic("LastModifiedOn")(LastModifiedOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRetries)) __obj.updateDynamic("MaxRetries")(MaxRetries.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
-    if (Schema != null) __obj.updateDynamic("Schema")(Schema.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
-    if (TransformId != null) __obj.updateDynamic("TransformId")(TransformId.asInstanceOf[js.Any])
-    if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MLTransform]
   }
+  @scala.inline
+  implicit class MLTransformOps[Self <: MLTransform] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedOn(value: Timestamp): Self = this.set("CreatedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedOn: Self = this.set("CreatedOn", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEvaluationMetrics(value: EvaluationMetrics): Self = this.set("EvaluationMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationMetrics: Self = this.set("EvaluationMetrics", js.undefined)
+    @scala.inline
+    def setGlueVersion(value: GlueVersionString): Self = this.set("GlueVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlueVersion: Self = this.set("GlueVersion", js.undefined)
+    @scala.inline
+    def setInputRecordTablesVarargs(value: GlueTable*): Self = this.set("InputRecordTables", js.Array(value :_*))
+    @scala.inline
+    def setInputRecordTables(value: GlueTables): Self = this.set("InputRecordTables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputRecordTables: Self = this.set("InputRecordTables", js.undefined)
+    @scala.inline
+    def setLabelCount(value: LabelCount): Self = this.set("LabelCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelCount: Self = this.set("LabelCount", js.undefined)
+    @scala.inline
+    def setLastModifiedOn(value: Timestamp): Self = this.set("LastModifiedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedOn: Self = this.set("LastModifiedOn", js.undefined)
+    @scala.inline
+    def setMaxCapacity(value: NullableDouble): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    @scala.inline
+    def setMaxRetries(value: NullableInteger): Self = this.set("MaxRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRetries: Self = this.set("MaxRetries", js.undefined)
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNumberOfWorkers(value: NullableInteger): Self = this.set("NumberOfWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfWorkers: Self = this.set("NumberOfWorkers", js.undefined)
+    @scala.inline
+    def setParameters(value: TransformParameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setRole(value: RoleString): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("Role", js.undefined)
+    @scala.inline
+    def setSchemaVarargs(value: SchemaColumn*): Self = this.set("Schema", js.Array(value :_*))
+    @scala.inline
+    def setSchema(value: TransformSchema): Self = this.set("Schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("Schema", js.undefined)
+    @scala.inline
+    def setStatus(value: TransformStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    @scala.inline
+    def setTransformId(value: HashString): Self = this.set("TransformId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformId: Self = this.set("TransformId", js.undefined)
+    @scala.inline
+    def setWorkerType(value: WorkerType): Self = this.set("WorkerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerType: Self = this.set("WorkerType", js.undefined)
+  }
+  
 }
 

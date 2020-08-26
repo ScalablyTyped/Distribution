@@ -12,7 +12,7 @@ The scrypt crypto library for NodeJS
 | Keywords           | scrypt, password, auth, authentication, encryption, crypto, secret, key, secret key, hash, verify |
 | # releases         | 1 |
 | # dependents       | 84 |
-| # downloads        | 3102402 |
+| # downloads        | 3111068 |
 | # stars            | 22 |
 
 ## Links

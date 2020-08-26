@@ -9,31 +9,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * The alias to use.
     *
     * @default null
     */
-  var alias: js.UndefOr[String] = js.undefined
+  var alias: js.UndefOr[String] = js.native
   /**
     * Allow to enter -.
     *
     * @default true
     */
-  var allowMinus: js.UndefOr[Boolean] = js.undefined
+  var allowMinus: js.UndefOr[Boolean] = js.native
   /**
     * Definition of the symbols used to indicate an alternator part in the mask.
     *
     * @default "|"
     */
-  var alternatormarker: js.UndefOr[String] = js.undefined
+  var alternatormarker: js.UndefOr[String] = js.native
   /**
     * Enable grouping of the integer part.
     *
     * @default false
     */
-  var autoGroup: js.UndefOr[Boolean] = js.undefined
+  var autoGroup: js.UndefOr[Boolean] = js.native
   /**
     * Automatically unmask the value when retrieved.
     *
@@ -41,25 +42,25 @@ trait Options extends js.Object {
     *
     * @default false
     */
-  var autoUnmask: js.UndefOr[Boolean] = js.undefined
+  var autoUnmask: js.UndefOr[Boolean] = js.native
   /**
     * Apply casing at the mask-level.
     *
     * @default undefined
     */
-  var casing: js.UndefOr[Casing] = js.undefined
+  var casing: js.UndefOr[Casing] = js.native
   /**
     * Clear the incomplete input on blur.
     *
     * @default false
     */
-  var clearIncomplete: js.UndefOr[Boolean] = js.undefined
+  var clearIncomplete: js.UndefOr[Boolean] = js.native
   /**
     * Remove the empty mask on blur or when not empty removes the optional trailing part.
     *
     * @default true
     */
-  var clearMaskOnLostFocus: js.UndefOr[Boolean] = js.undefined
+  var clearMaskOnLostFocus: js.UndefOr[Boolean] = js.native
   /**
     * Create a css styleable mask.
     *
@@ -70,17 +71,17 @@ trait Options extends js.Object {
     *
     * @default false
     */
-  var colorMask: js.UndefOr[Boolean] = js.undefined
+  var colorMask: js.UndefOr[Boolean] = js.native
   /**
     * Do not allow assumption of decimals input without entering the radixpoint.
     *
     * @default true
     */
-  var decimalProtect: js.UndefOr[Boolean] = js.undefined
+  var decimalProtect: js.UndefOr[Boolean] = js.native
   /**
     * Add new definitions to this inputmask.
     */
-  var definitions: js.UndefOr[StringDictionary[Definition]] = js.undefined
+  var definitions: js.UndefOr[StringDictionary[Definition]] = js.native
   /**
     * Number of fractionalDigits.
     *
@@ -92,13 +93,13 @@ trait Options extends js.Object {
     *
     * @default "*"
     */
-  var digits: js.UndefOr[String] = js.undefined
+  var digits: js.UndefOr[String] = js.native
   /**
     * Specify wheter the digits are optional.
     *
     * @default true
     */
-  var digitsOptional: js.UndefOr[Boolean] = js.undefined
+  var digitsOptional: js.UndefOr[Boolean] = js.native
   /**
     * Disables predictive text on mobile devices.
     *
@@ -113,49 +114,49 @@ trait Options extends js.Object {
     *
     * @default false
     */
-  var disablePredictiveText: js.UndefOr[Boolean] = js.undefined
+  var disablePredictiveText: js.UndefOr[Boolean] = js.native
   /**
     * Enforces the decimal part when leaving the input field.
     *
     * @default false
     */
-  var enforceDigitsOnBlur: js.UndefOr[Boolean] = js.undefined
+  var enforceDigitsOnBlur: js.UndefOr[Boolean] = js.native
   /**
     * Definition of the symbols used to escape a part in the mask.
     *
     * @default "\\"
     */
-  var escapeChar: js.UndefOr[String] = js.undefined
+  var escapeChar: js.UndefOr[String] = js.native
   /**
     * Toggle to allocate as much possible or the opposite. Non-greedy repeat function. With the non-greedy option
     * set to `false`, you can specify `*` as repeat. This makes an endless repeat.
     *
     * @default false
     */
-  var greedy: js.UndefOr[Boolean] = js.undefined
+  var greedy: js.UndefOr[Boolean] = js.native
   /**
     * Define the groupseparator.
     *
     * @default ""
     */
-  var groupSeparator: js.UndefOr[String] = js.undefined
+  var groupSeparator: js.UndefOr[String] = js.native
   /**
     * Define the grouping of the integer part.
     *
     * @default 3
     */
-  var groupSize: js.UndefOr[Double] = js.undefined
+  var groupSize: js.UndefOr[Double] = js.native
   /**
     * Definition of the symbols used to indicate a group in the mask.
     *
     * @default { start: "(", end: ")" }
     */
-  var groupmarker: js.UndefOr[Range] = js.undefined
+  var groupmarker: js.UndefOr[Range] = js.native
   /**
     * Specify keyCodes which should not be considered in the keypress event, otherwise the `preventDefault` will
     * stop their default behavior especially in FF.
     */
-  var ignorables: js.UndefOr[js.Array[Double]] = js.undefined
+  var ignorables: js.UndefOr[js.Array[Double]] = js.native
   /**
     * Specify to use the `data-inputmask` attributes or to ignore them.
     *
@@ -163,7 +164,7 @@ trait Options extends js.Object {
     *
     * @default true
     */
-  var importDataAttributes: js.UndefOr[Boolean] = js.undefined
+  var importDataAttributes: js.UndefOr[Boolean] = js.native
   /**
     * Format used to input a date. This option is only effective for the datetime alias.
     *
@@ -204,49 +205,49 @@ trait Options extends js.Object {
     *
     * @default "isoDateTime"
     */
-  var inputFormat: js.UndefOr[String] = js.undefined
+  var inputFormat: js.UndefOr[String] = js.native
   /**
     * Indicates whether the value passed for initialization is text or a number
     *
     * @default "text"
     */
-  var inputType: js.UndefOr[text | number] = js.undefined
+  var inputType: js.UndefOr[text | number] = js.native
   /**
     * Specify the inputmode - already in place for when browsers start to support them
     * https://html.spec.whatwg.org/#input-modalities:-the-inputmode-attribute
     *
     * @default "verbatim"
     */
-  var inputmode: js.UndefOr[InputMode] = js.undefined
+  var inputmode: js.UndefOr[InputMode] = js.native
   /**
     * Toggle to insert or overwrite input. This option can be altered by pressing the Insert key.
     *
     * @default true
     */
-  var insertMode: js.UndefOr[Boolean] = js.undefined
+  var insertMode: js.UndefOr[Boolean] = js.native
   /**
     * Number of integerDigits
     *
     * @default "+"
     */
-  var integerDigits: js.UndefOr[String] = js.undefined
+  var integerDigits: js.UndefOr[String] = js.native
   /**
     * Specify wheter the integerdigits are optional.
     *
     * @default true
     */
-  var integerOptional: js.UndefOr[Boolean] = js.undefined
+  var integerOptional: js.UndefOr[Boolean] = js.native
   /**
     * With this call-in (hook) you can override the default implementation of the isComplete function.
     */
-  var isComplete: js.UndefOr[js.Function2[/* buffer */ js.Array[String], /* opts */ Options, Boolean]] = js.undefined
+  var isComplete: js.UndefOr[js.Function2[/* buffer */ js.Array[String], /* opts */ this.type, Boolean]] = js.native
   /**
     * Just in time masking. With the `jitMasking` option you can enable jit masking. The mask will only be
     * visible for the user entered characters.
     *
     * @default false
     */
-  var jitMasking: js.UndefOr[Boolean] = js.undefined
+  var jitMasking: js.UndefOr[Boolean] = js.native
   /**
     * Use in combination with the alternator syntax Try to keep the mask static while typing. Decisions to alter the
     * mask will be postponed if possible.
@@ -260,56 +261,56 @@ trait Options extends js.Object {
     *
     * @default null
     */
-  var keepStatic: js.UndefOr[Boolean | Null] = js.undefined
+  var keepStatic: js.UndefOr[Boolean | Null] = js.native
   /**
     * The mask to use.
     */
   var mask: js.UndefOr[
     String | js.Array[String] | (js.Function1[/* opts */ this.type, String | js.Array[String]])
-  ] = js.undefined
+  ] = js.native
   /**
     * Maximum value. This needs to be in the same format as the `inputFormat` when used with the datetime alias.
     */
-  var max: js.UndefOr[String] = js.undefined
+  var max: js.UndefOr[String] = js.native
   /**
     * Minimum value. This needs to be in the same format as the `inputFormat` when used with the datetime alias.
     */
-  var min: js.UndefOr[String] = js.undefined
+  var min: js.UndefOr[String] = js.native
   /**
     * Define your negationSymbol.
     *
     * @default { front: "-", back: "" }
     */
-  var negationSymbol: js.UndefOr[Back] = js.undefined
+  var negationSymbol: js.UndefOr[Back] = js.native
   /**
     * Disable value property patching
     *
     * @default false
     */
-  var noValuePatching: js.UndefOr[Boolean] = js.undefined
+  var noValuePatching: js.UndefOr[Boolean] = js.native
   /**
     * Return nothing from the input `value` property when the user hasn't entered anything. If this is false,
     * the mask might be returned.
     *
     * @default true
     */
-  var nullable: js.UndefOr[Boolean] = js.undefined
+  var nullable: js.UndefOr[Boolean] = js.native
   /**
     * Numeric input direction. Keeps the caret at the end.
     *
     * @default false
     */
-  var numericInput: js.UndefOr[Boolean] = js.undefined
+  var numericInput: js.UndefOr[Boolean] = js.native
   /**
     * Executes before masking the initial value to allow preprocessing of the initial value.
     */
-  var onBeforeMask: js.UndefOr[js.Function2[/* initialValue */ String, /* opts */ Options, String]] = js.undefined
+  var onBeforeMask: js.UndefOr[js.Function2[/* initialValue */ String, /* opts */ this.type, String]] = js.native
   /**
     * This callback allows for preprocessing the pasted value before actually handling the value for masking.
     * This can be useful for stripping away some characters before processing. You can also disable pasting
     * a value by returning false in the `onBeforePaste` call.
     */
-  var onBeforePaste: js.UndefOr[js.Function2[/* pastedValue */ String, /* opts */ Options, String]] = js.undefined
+  var onBeforePaste: js.UndefOr[js.Function2[/* pastedValue */ String, /* opts */ this.type, String]] = js.native
   /**
     * Executes before writing to the masked element Use this to do some extra processing of the input. This can
     * be useful when implementing an alias, ex. decimal alias, autofill the digits when leaving the inputfield.
@@ -319,10 +320,10 @@ trait Options extends js.Object {
       /* event */ KeyboardEvent, 
       /* buffer */ js.Array[String], 
       /* caretPos */ Double, 
-      /* opts */ Options, 
+      /* opts */ this.type, 
       CommandObject
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Callback to implement autocomplete on certain keys for example.
     */
@@ -331,42 +332,42 @@ trait Options extends js.Object {
       /* event */ KeyboardEvent, 
       /* buffer */ js.Array[String], 
       /* caretPos */ Double, 
-      /* opts */ Options, 
+      /* opts */ this.type, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Callback function is executed on every keyvalidation with the key & result as parameter.
     */
-  var onKeyValidation: js.UndefOr[js.Function2[/* key */ Double, /* result */ Boolean, Unit]] = js.undefined
+  var onKeyValidation: js.UndefOr[js.Function2[/* key */ Double, /* result */ Boolean, Unit]] = js.native
   /**
     * Executes after unmasking to allow post-processing of the unmaskedvalue.
     *
     * @returns New unmasked value
     */
-  var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ String, /* unmaskedValue */ String, String]] = js.undefined
+  var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ String, /* unmaskedValue */ String, String]] = js.native
   /**
     * Execute a function when the mask is cleared.
     */
-  var oncleared: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var oncleared: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Execute a function when the mask is completed.
     */
-  var oncomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var oncomplete: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Execute a function when the mask is cleared.
     */
-  var onincomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onincomplete: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Definition of the symbols used to indicate an optional part in the mask.
     *
     * @default { start: "[", end: "]" }
     */
-  var optionalmarker: js.UndefOr[Range] = js.undefined
+  var optionalmarker: js.UndefOr[Range] = js.native
   /**
     * Format of the unmasked value. This is only effective when used with the datetime alias.
     */
-  var outputFormat: js.UndefOr[String] = js.undefined
+  var outputFormat: js.UndefOr[String] = js.native
   /**
     * Change the mask placeholder. Instead of "_", you can change the unfilled characters mask as you like, simply
     * by adding the placeholder option. For example, placeholder: " " will change the default autofill with empty
@@ -374,7 +375,7 @@ trait Options extends js.Object {
     *
     * @default "_"
     */
-  var placeholder: js.UndefOr[String] = js.undefined
+  var placeholder: js.UndefOr[String] = js.native
   /**
     * Positioning of the caret on click.
     *
@@ -388,13 +389,13 @@ trait Options extends js.Object {
     *
     * @default "lvp"
     */
-  var positionCaretOnClick: js.UndefOr[PositionCaretOnClick] = js.undefined
+  var positionCaretOnClick: js.UndefOr[PositionCaretOnClick] = js.native
   /**
     * When enabled the caret position is set after the latest valid position on TAB.
     *
     * @default true
     */
-  var positionCaretOnTab: js.UndefOr[Boolean] = js.undefined
+  var positionCaretOnTab: js.UndefOr[Boolean] = js.native
   /**
     * Hook to postValidate the result from isValid. Useful for validating the entry as a whole.
     */
@@ -403,10 +404,10 @@ trait Options extends js.Object {
       /* buffer */ js.Array[String], 
       /* pos */ Double, 
       /* currentResult */ CommandObject, 
-      /* opts */ Options, 
+      /* opts */ this.type, 
       Boolean | CommandObject
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Hook to preValidate the input. Useful for validating regardless the definition. When return true, the normal
     * validation kicks in, otherwise it is skipped.
@@ -417,46 +418,46 @@ trait Options extends js.Object {
       /* pos */ Double, 
       /* char */ String, 
       /* isSelection */ Boolean, 
-      /* opts */ Options, 
+      /* opts */ this.type, 
       Boolean | CommandObject
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Define a prefix.
     *
     * @default ""
     */
-  var prefix: js.UndefOr[String] = js.undefined
+  var prefix: js.UndefOr[String] = js.native
   /**
     * Definition of the symbols used to indicate a quantifier in the mask.
     *
     * @default { start: "{", end: "}" }
     */
-  var quantifiermarker: js.UndefOr[Range] = js.undefined
+  var quantifiermarker: js.UndefOr[Range] = js.native
   /**
     * Define the radixpoint (decimal separator)
     *
     * @default ""
     */
-  var radixPoint: js.UndefOr[String] = js.undefined
+  var radixPoint: js.UndefOr[String] = js.native
   /**
     * Use a regular expression as a mask. When using shorthands be aware that you need to double escape or use
     * String.raw with a string literal.
     */
-  var regex: js.UndefOr[String] = js.undefined
+  var regex: js.UndefOr[String] = js.native
   /**
     * Remove the mask before submitting the form.
     *
     * @default false
     */
-  var removeMaskOnSubmit: js.UndefOr[Boolean] = js.undefined
+  var removeMaskOnSubmit: js.UndefOr[Boolean] = js.native
   /**
     * Mask repeat function. Repeat the mask definition x-times.
     * `*` ~ forever, otherwise specify an integer
     *
     * @default 0
     */
-  var repeat: js.UndefOr[Double | String] = js.undefined
+  var repeat: js.UndefOr[Double | String] = js.native
   /**
     * Align the input to the right
     *
@@ -465,7 +466,7 @@ trait Options extends js.Object {
     *
     * @default true
     */
-  var rightAlign: js.UndefOr[Boolean] = js.undefined
+  var rightAlign: js.UndefOr[Boolean] = js.native
   /**
     * Shift position of the mask entries on entry and deletion. In some cases shift the mask enties isn't desired.
     *
@@ -473,25 +474,25 @@ trait Options extends js.Object {
     *
     * @default true
     */
-  var shiftPositions: js.UndefOr[Boolean] = js.undefined
+  var shiftPositions: js.UndefOr[Boolean] = js.native
   /**
     * Shows the mask when the input gets focus.
     *
     * @default true
     */
-  var showMaskOnFocus: js.UndefOr[Boolean] = js.undefined
+  var showMaskOnFocus: js.UndefOr[Boolean] = js.native
   /**
     * Shows the mask when the input is hevered by the mouse cursor.
     *
     * @default true
     */
-  var showMaskOnHover: js.UndefOr[Boolean] = js.undefined
+  var showMaskOnHover: js.UndefOr[Boolean] = js.native
   /**
     * A character which can be used to skip an optional part of a mask.
     *
     * @default " "
     */
-  var skipOptionalPartCharacter: js.UndefOr[String] = js.undefined
+  var skipOptionalPartCharacter: js.UndefOr[String] = js.native
   /**
     * The `staticDefinitionSymbol` option is used to indicate that the static entries in the mask can match a
     * certain definition. Especially useful with alternators so that static element in the mask can match
@@ -499,37 +500,37 @@ trait Options extends js.Object {
     *
     * @default undefined
     */
-  var staticDefinitionSymbol: js.UndefOr[String] = js.undefined
+  var staticDefinitionSymbol: js.UndefOr[String] = js.native
   /**
     * Define the step the ctrl-up & ctrl-down must take.
     *
     * @default 1
     */
-  var step: js.UndefOr[Double] = js.undefined
+  var step: js.UndefOr[Double] = js.native
   /**
     * Define a suffix.
     *
     * @default ""
     */
-  var suffix: js.UndefOr[String] = js.undefined
+  var suffix: js.UndefOr[String] = js.native
   /**
     * List with the supported input types
     *
     * @default ["text", "tel", "url", "password", "search"]
     */
-  var supportsInputType: js.UndefOr[js.Array[String]] = js.undefined
+  var supportsInputType: js.UndefOr[js.Array[String]] = js.native
   /**
     * Allows for tabbing through the different parts of the masked field.
     *
     * @default false
     */
-  var tabThrough: js.UndefOr[Boolean] = js.undefined
+  var tabThrough: js.UndefOr[Boolean] = js.native
   /**
     * Make escape behave like undo. (ctrl-Z) Pressing escape reverts the value to the value before focus.
     *
     * @default true
     */
-  var undoOnEscape: js.UndefOr[Boolean] = js.undefined
+  var undoOnEscape: js.UndefOr[Boolean] = js.native
   /**
     * Make unmasking returning a number instead of a string.
     *
@@ -537,159 +538,333 @@ trait Options extends js.Object {
     *
     * @default false
     */
-  var unmaskAsNumber: js.UndefOr[Boolean] = js.undefined
+  var unmaskAsNumber: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    alias: String = null,
-    allowMinus: js.UndefOr[Boolean] = js.undefined,
-    alternatormarker: String = null,
-    autoGroup: js.UndefOr[Boolean] = js.undefined,
-    autoUnmask: js.UndefOr[Boolean] = js.undefined,
-    casing: Casing = null,
-    clearIncomplete: js.UndefOr[Boolean] = js.undefined,
-    clearMaskOnLostFocus: js.UndefOr[Boolean] = js.undefined,
-    colorMask: js.UndefOr[Boolean] = js.undefined,
-    decimalProtect: js.UndefOr[Boolean] = js.undefined,
-    definitions: StringDictionary[Definition] = null,
-    digits: String = null,
-    digitsOptional: js.UndefOr[Boolean] = js.undefined,
-    disablePredictiveText: js.UndefOr[Boolean] = js.undefined,
-    enforceDigitsOnBlur: js.UndefOr[Boolean] = js.undefined,
-    escapeChar: String = null,
-    greedy: js.UndefOr[Boolean] = js.undefined,
-    groupSeparator: String = null,
-    groupSize: js.UndefOr[Double] = js.undefined,
-    groupmarker: Range = null,
-    ignorables: js.Array[Double] = null,
-    importDataAttributes: js.UndefOr[Boolean] = js.undefined,
-    inputFormat: String = null,
-    inputType: text | number = null,
-    inputmode: InputMode = null,
-    insertMode: js.UndefOr[Boolean] = js.undefined,
-    integerDigits: String = null,
-    integerOptional: js.UndefOr[Boolean] = js.undefined,
-    isComplete: (/* buffer */ js.Array[String], /* opts */ Options) => Boolean = null,
-    jitMasking: js.UndefOr[Boolean] = js.undefined,
-    keepStatic: js.UndefOr[Null | Boolean] = js.undefined,
-    mask: String | js.Array[String] | (js.Function1[Options, String | js.Array[String]]) = null,
-    max: String = null,
-    min: String = null,
-    negationSymbol: Back = null,
-    noValuePatching: js.UndefOr[Boolean] = js.undefined,
-    nullable: js.UndefOr[Boolean] = js.undefined,
-    numericInput: js.UndefOr[Boolean] = js.undefined,
-    onBeforeMask: (/* initialValue */ String, /* opts */ Options) => String = null,
-    onBeforePaste: (/* pastedValue */ String, /* opts */ Options) => String = null,
-    onBeforeWrite: (/* event */ KeyboardEvent, /* buffer */ js.Array[String], /* caretPos */ Double, /* opts */ Options) => CommandObject = null,
-    onKeyDown: (/* event */ KeyboardEvent, /* buffer */ js.Array[String], /* caretPos */ Double, /* opts */ Options) => Unit = null,
-    onKeyValidation: (/* key */ Double, /* result */ Boolean) => Unit = null,
-    onUnMask: (/* maskedValue */ String, /* unmaskedValue */ String) => String = null,
-    oncleared: () => Unit = null,
-    oncomplete: () => Unit = null,
-    onincomplete: () => Unit = null,
-    optionalmarker: Range = null,
-    outputFormat: String = null,
-    placeholder: String = null,
-    positionCaretOnClick: PositionCaretOnClick = null,
-    positionCaretOnTab: js.UndefOr[Boolean] = js.undefined,
-    postValidation: (/* buffer */ js.Array[String], /* pos */ Double, /* currentResult */ CommandObject, /* opts */ Options) => Boolean | CommandObject = null,
-    preValidation: (/* buffer */ js.Array[String], /* pos */ Double, /* char */ String, /* isSelection */ Boolean, /* opts */ Options) => Boolean | CommandObject = null,
-    prefix: String = null,
-    quantifiermarker: Range = null,
-    radixPoint: String = null,
-    regex: String = null,
-    removeMaskOnSubmit: js.UndefOr[Boolean] = js.undefined,
-    repeat: Double | String = null,
-    rightAlign: js.UndefOr[Boolean] = js.undefined,
-    shiftPositions: js.UndefOr[Boolean] = js.undefined,
-    showMaskOnFocus: js.UndefOr[Boolean] = js.undefined,
-    showMaskOnHover: js.UndefOr[Boolean] = js.undefined,
-    skipOptionalPartCharacter: String = null,
-    staticDefinitionSymbol: String = null,
-    step: js.UndefOr[Double] = js.undefined,
-    suffix: String = null,
-    supportsInputType: js.Array[String] = null,
-    tabThrough: js.UndefOr[Boolean] = js.undefined,
-    undoOnEscape: js.UndefOr[Boolean] = js.undefined,
-    unmaskAsNumber: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMinus)) __obj.updateDynamic("allowMinus")(allowMinus.get.asInstanceOf[js.Any])
-    if (alternatormarker != null) __obj.updateDynamic("alternatormarker")(alternatormarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoGroup)) __obj.updateDynamic("autoGroup")(autoGroup.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUnmask)) __obj.updateDynamic("autoUnmask")(autoUnmask.get.asInstanceOf[js.Any])
-    if (casing != null) __obj.updateDynamic("casing")(casing.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearIncomplete)) __obj.updateDynamic("clearIncomplete")(clearIncomplete.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearMaskOnLostFocus)) __obj.updateDynamic("clearMaskOnLostFocus")(clearMaskOnLostFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorMask)) __obj.updateDynamic("colorMask")(colorMask.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(decimalProtect)) __obj.updateDynamic("decimalProtect")(decimalProtect.get.asInstanceOf[js.Any])
-    if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (!js.isUndefined(digitsOptional)) __obj.updateDynamic("digitsOptional")(digitsOptional.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePredictiveText)) __obj.updateDynamic("disablePredictiveText")(disablePredictiveText.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceDigitsOnBlur)) __obj.updateDynamic("enforceDigitsOnBlur")(enforceDigitsOnBlur.get.asInstanceOf[js.Any])
-    if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar.asInstanceOf[js.Any])
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.get.asInstanceOf[js.Any])
-    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupSize)) __obj.updateDynamic("groupSize")(groupSize.get.asInstanceOf[js.Any])
-    if (groupmarker != null) __obj.updateDynamic("groupmarker")(groupmarker.asInstanceOf[js.Any])
-    if (ignorables != null) __obj.updateDynamic("ignorables")(ignorables.asInstanceOf[js.Any])
-    if (!js.isUndefined(importDataAttributes)) __obj.updateDynamic("importDataAttributes")(importDataAttributes.get.asInstanceOf[js.Any])
-    if (inputFormat != null) __obj.updateDynamic("inputFormat")(inputFormat.asInstanceOf[js.Any])
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
-    if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertMode)) __obj.updateDynamic("insertMode")(insertMode.get.asInstanceOf[js.Any])
-    if (integerDigits != null) __obj.updateDynamic("integerDigits")(integerDigits.asInstanceOf[js.Any])
-    if (!js.isUndefined(integerOptional)) __obj.updateDynamic("integerOptional")(integerOptional.get.asInstanceOf[js.Any])
-    if (isComplete != null) __obj.updateDynamic("isComplete")(js.Any.fromFunction2(isComplete))
-    if (!js.isUndefined(jitMasking)) __obj.updateDynamic("jitMasking")(jitMasking.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepStatic)) __obj.updateDynamic("keepStatic")(keepStatic.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (negationSymbol != null) __obj.updateDynamic("negationSymbol")(negationSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValuePatching)) __obj.updateDynamic("noValuePatching")(noValuePatching.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numericInput)) __obj.updateDynamic("numericInput")(numericInput.get.asInstanceOf[js.Any])
-    if (onBeforeMask != null) __obj.updateDynamic("onBeforeMask")(js.Any.fromFunction2(onBeforeMask))
-    if (onBeforePaste != null) __obj.updateDynamic("onBeforePaste")(js.Any.fromFunction2(onBeforePaste))
-    if (onBeforeWrite != null) __obj.updateDynamic("onBeforeWrite")(js.Any.fromFunction4(onBeforeWrite))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction4(onKeyDown))
-    if (onKeyValidation != null) __obj.updateDynamic("onKeyValidation")(js.Any.fromFunction2(onKeyValidation))
-    if (onUnMask != null) __obj.updateDynamic("onUnMask")(js.Any.fromFunction2(onUnMask))
-    if (oncleared != null) __obj.updateDynamic("oncleared")(js.Any.fromFunction0(oncleared))
-    if (oncomplete != null) __obj.updateDynamic("oncomplete")(js.Any.fromFunction0(oncomplete))
-    if (onincomplete != null) __obj.updateDynamic("onincomplete")(js.Any.fromFunction0(onincomplete))
-    if (optionalmarker != null) __obj.updateDynamic("optionalmarker")(optionalmarker.asInstanceOf[js.Any])
-    if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (positionCaretOnClick != null) __obj.updateDynamic("positionCaretOnClick")(positionCaretOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionCaretOnTab)) __obj.updateDynamic("positionCaretOnTab")(positionCaretOnTab.get.asInstanceOf[js.Any])
-    if (postValidation != null) __obj.updateDynamic("postValidation")(js.Any.fromFunction4(postValidation))
-    if (preValidation != null) __obj.updateDynamic("preValidation")(js.Any.fromFunction5(preValidation))
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (quantifiermarker != null) __obj.updateDynamic("quantifiermarker")(quantifiermarker.asInstanceOf[js.Any])
-    if (radixPoint != null) __obj.updateDynamic("radixPoint")(radixPoint.asInstanceOf[js.Any])
-    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeMaskOnSubmit)) __obj.updateDynamic("removeMaskOnSubmit")(removeMaskOnSubmit.get.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightAlign)) __obj.updateDynamic("rightAlign")(rightAlign.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftPositions)) __obj.updateDynamic("shiftPositions")(shiftPositions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMaskOnFocus)) __obj.updateDynamic("showMaskOnFocus")(showMaskOnFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMaskOnHover)) __obj.updateDynamic("showMaskOnHover")(showMaskOnHover.get.asInstanceOf[js.Any])
-    if (skipOptionalPartCharacter != null) __obj.updateDynamic("skipOptionalPartCharacter")(skipOptionalPartCharacter.asInstanceOf[js.Any])
-    if (staticDefinitionSymbol != null) __obj.updateDynamic("staticDefinitionSymbol")(staticDefinitionSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (supportsInputType != null) __obj.updateDynamic("supportsInputType")(supportsInputType.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabThrough)) __obj.updateDynamic("tabThrough")(tabThrough.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(undoOnEscape)) __obj.updateDynamic("undoOnEscape")(undoOnEscape.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmaskAsNumber)) __obj.updateDynamic("unmaskAsNumber")(unmaskAsNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlias: Self = this.set("alias", js.undefined)
+    @scala.inline
+    def setAllowMinus(value: Boolean): Self = this.set("allowMinus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowMinus: Self = this.set("allowMinus", js.undefined)
+    @scala.inline
+    def setAlternatormarker(value: String): Self = this.set("alternatormarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternatormarker: Self = this.set("alternatormarker", js.undefined)
+    @scala.inline
+    def setAutoGroup(value: Boolean): Self = this.set("autoGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoGroup: Self = this.set("autoGroup", js.undefined)
+    @scala.inline
+    def setAutoUnmask(value: Boolean): Self = this.set("autoUnmask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoUnmask: Self = this.set("autoUnmask", js.undefined)
+    @scala.inline
+    def setCasing(value: Casing): Self = this.set("casing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCasing: Self = this.set("casing", js.undefined)
+    @scala.inline
+    def setClearIncomplete(value: Boolean): Self = this.set("clearIncomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearIncomplete: Self = this.set("clearIncomplete", js.undefined)
+    @scala.inline
+    def setClearMaskOnLostFocus(value: Boolean): Self = this.set("clearMaskOnLostFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearMaskOnLostFocus: Self = this.set("clearMaskOnLostFocus", js.undefined)
+    @scala.inline
+    def setColorMask(value: Boolean): Self = this.set("colorMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorMask: Self = this.set("colorMask", js.undefined)
+    @scala.inline
+    def setDecimalProtect(value: Boolean): Self = this.set("decimalProtect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecimalProtect: Self = this.set("decimalProtect", js.undefined)
+    @scala.inline
+    def setDefinitions(value: StringDictionary[Definition]): Self = this.set("definitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefinitions: Self = this.set("definitions", js.undefined)
+    @scala.inline
+    def setDigits(value: String): Self = this.set("digits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigits: Self = this.set("digits", js.undefined)
+    @scala.inline
+    def setDigitsOptional(value: Boolean): Self = this.set("digitsOptional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigitsOptional: Self = this.set("digitsOptional", js.undefined)
+    @scala.inline
+    def setDisablePredictiveText(value: Boolean): Self = this.set("disablePredictiveText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisablePredictiveText: Self = this.set("disablePredictiveText", js.undefined)
+    @scala.inline
+    def setEnforceDigitsOnBlur(value: Boolean): Self = this.set("enforceDigitsOnBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceDigitsOnBlur: Self = this.set("enforceDigitsOnBlur", js.undefined)
+    @scala.inline
+    def setEscapeChar(value: String): Self = this.set("escapeChar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEscapeChar: Self = this.set("escapeChar", js.undefined)
+    @scala.inline
+    def setGreedy(value: Boolean): Self = this.set("greedy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreedy: Self = this.set("greedy", js.undefined)
+    @scala.inline
+    def setGroupSeparator(value: String): Self = this.set("groupSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupSeparator: Self = this.set("groupSeparator", js.undefined)
+    @scala.inline
+    def setGroupSize(value: Double): Self = this.set("groupSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupSize: Self = this.set("groupSize", js.undefined)
+    @scala.inline
+    def setGroupmarker(value: Range): Self = this.set("groupmarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupmarker: Self = this.set("groupmarker", js.undefined)
+    @scala.inline
+    def setIgnorablesVarargs(value: Double*): Self = this.set("ignorables", js.Array(value :_*))
+    @scala.inline
+    def setIgnorables(value: js.Array[Double]): Self = this.set("ignorables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnorables: Self = this.set("ignorables", js.undefined)
+    @scala.inline
+    def setImportDataAttributes(value: Boolean): Self = this.set("importDataAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportDataAttributes: Self = this.set("importDataAttributes", js.undefined)
+    @scala.inline
+    def setInputFormat(value: String): Self = this.set("inputFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputFormat: Self = this.set("inputFormat", js.undefined)
+    @scala.inline
+    def setInputType(value: text | number): Self = this.set("inputType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputType: Self = this.set("inputType", js.undefined)
+    @scala.inline
+    def setInputmode(value: InputMode): Self = this.set("inputmode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputmode: Self = this.set("inputmode", js.undefined)
+    @scala.inline
+    def setInsertMode(value: Boolean): Self = this.set("insertMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertMode: Self = this.set("insertMode", js.undefined)
+    @scala.inline
+    def setIntegerDigits(value: String): Self = this.set("integerDigits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegerDigits: Self = this.set("integerDigits", js.undefined)
+    @scala.inline
+    def setIntegerOptional(value: Boolean): Self = this.set("integerOptional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegerOptional: Self = this.set("integerOptional", js.undefined)
+    @scala.inline
+    def setIsComplete(value: (/* buffer */ js.Array[String], Options) => Boolean): Self = this.set("isComplete", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteIsComplete: Self = this.set("isComplete", js.undefined)
+    @scala.inline
+    def setJitMasking(value: Boolean): Self = this.set("jitMasking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJitMasking: Self = this.set("jitMasking", js.undefined)
+    @scala.inline
+    def setKeepStatic(value: Boolean): Self = this.set("keepStatic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepStatic: Self = this.set("keepStatic", js.undefined)
+    @scala.inline
+    def setKeepStaticNull: Self = this.set("keepStatic", null)
+    @scala.inline
+    def setMaskVarargs(value: String*): Self = this.set("mask", js.Array(value :_*))
+    @scala.inline
+    def setMaskFunction1(value: Options => String | js.Array[String]): Self = this.set("mask", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMask(value: String | js.Array[String] | (js.Function1[Options, String | js.Array[String]])): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: String): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setNegationSymbol(value: Back): Self = this.set("negationSymbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegationSymbol: Self = this.set("negationSymbol", js.undefined)
+    @scala.inline
+    def setNoValuePatching(value: Boolean): Self = this.set("noValuePatching", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoValuePatching: Self = this.set("noValuePatching", js.undefined)
+    @scala.inline
+    def setNullable(value: Boolean): Self = this.set("nullable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNullable: Self = this.set("nullable", js.undefined)
+    @scala.inline
+    def setNumericInput(value: Boolean): Self = this.set("numericInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumericInput: Self = this.set("numericInput", js.undefined)
+    @scala.inline
+    def setOnBeforeMask(value: (/* initialValue */ String, Options) => String): Self = this.set("onBeforeMask", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnBeforeMask: Self = this.set("onBeforeMask", js.undefined)
+    @scala.inline
+    def setOnBeforePaste(value: (/* pastedValue */ String, Options) => String): Self = this.set("onBeforePaste", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnBeforePaste: Self = this.set("onBeforePaste", js.undefined)
+    @scala.inline
+    def setOnBeforeWrite(
+      value: (/* event */ KeyboardEvent, /* buffer */ js.Array[String], /* caretPos */ Double, Options) => CommandObject
+    ): Self = this.set("onBeforeWrite", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteOnBeforeWrite: Self = this.set("onBeforeWrite", js.undefined)
+    @scala.inline
+    def setOnKeyDown(
+      value: (/* event */ KeyboardEvent, /* buffer */ js.Array[String], /* caretPos */ Double, Options) => Unit
+    ): Self = this.set("onKeyDown", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setOnKeyValidation(value: (/* key */ Double, /* result */ Boolean) => Unit): Self = this.set("onKeyValidation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnKeyValidation: Self = this.set("onKeyValidation", js.undefined)
+    @scala.inline
+    def setOnUnMask(value: (/* maskedValue */ String, /* unmaskedValue */ String) => String): Self = this.set("onUnMask", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnUnMask: Self = this.set("onUnMask", js.undefined)
+    @scala.inline
+    def setOncleared(value: () => Unit): Self = this.set("oncleared", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOncleared: Self = this.set("oncleared", js.undefined)
+    @scala.inline
+    def setOncomplete(value: () => Unit): Self = this.set("oncomplete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOncomplete: Self = this.set("oncomplete", js.undefined)
+    @scala.inline
+    def setOnincomplete(value: () => Unit): Self = this.set("onincomplete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnincomplete: Self = this.set("onincomplete", js.undefined)
+    @scala.inline
+    def setOptionalmarker(value: Range): Self = this.set("optionalmarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionalmarker: Self = this.set("optionalmarker", js.undefined)
+    @scala.inline
+    def setOutputFormat(value: String): Self = this.set("outputFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputFormat: Self = this.set("outputFormat", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPositionCaretOnClick(value: PositionCaretOnClick): Self = this.set("positionCaretOnClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionCaretOnClick: Self = this.set("positionCaretOnClick", js.undefined)
+    @scala.inline
+    def setPositionCaretOnTab(value: Boolean): Self = this.set("positionCaretOnTab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionCaretOnTab: Self = this.set("positionCaretOnTab", js.undefined)
+    @scala.inline
+    def setPostValidation(
+      value: (/* buffer */ js.Array[String], /* pos */ Double, /* currentResult */ CommandObject, Options) => Boolean | CommandObject
+    ): Self = this.set("postValidation", js.Any.fromFunction4(value))
+    @scala.inline
+    def deletePostValidation: Self = this.set("postValidation", js.undefined)
+    @scala.inline
+    def setPreValidation(
+      value: (/* buffer */ js.Array[String], /* pos */ Double, /* char */ String, /* isSelection */ Boolean, Options) => Boolean | CommandObject
+    ): Self = this.set("preValidation", js.Any.fromFunction5(value))
+    @scala.inline
+    def deletePreValidation: Self = this.set("preValidation", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setQuantifiermarker(value: Range): Self = this.set("quantifiermarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantifiermarker: Self = this.set("quantifiermarker", js.undefined)
+    @scala.inline
+    def setRadixPoint(value: String): Self = this.set("radixPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadixPoint: Self = this.set("radixPoint", js.undefined)
+    @scala.inline
+    def setRegex(value: String): Self = this.set("regex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegex: Self = this.set("regex", js.undefined)
+    @scala.inline
+    def setRemoveMaskOnSubmit(value: Boolean): Self = this.set("removeMaskOnSubmit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveMaskOnSubmit: Self = this.set("removeMaskOnSubmit", js.undefined)
+    @scala.inline
+    def setRepeat(value: Double | String): Self = this.set("repeat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeat: Self = this.set("repeat", js.undefined)
+    @scala.inline
+    def setRightAlign(value: Boolean): Self = this.set("rightAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightAlign: Self = this.set("rightAlign", js.undefined)
+    @scala.inline
+    def setShiftPositions(value: Boolean): Self = this.set("shiftPositions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShiftPositions: Self = this.set("shiftPositions", js.undefined)
+    @scala.inline
+    def setShowMaskOnFocus(value: Boolean): Self = this.set("showMaskOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMaskOnFocus: Self = this.set("showMaskOnFocus", js.undefined)
+    @scala.inline
+    def setShowMaskOnHover(value: Boolean): Self = this.set("showMaskOnHover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMaskOnHover: Self = this.set("showMaskOnHover", js.undefined)
+    @scala.inline
+    def setSkipOptionalPartCharacter(value: String): Self = this.set("skipOptionalPartCharacter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipOptionalPartCharacter: Self = this.set("skipOptionalPartCharacter", js.undefined)
+    @scala.inline
+    def setStaticDefinitionSymbol(value: String): Self = this.set("staticDefinitionSymbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticDefinitionSymbol: Self = this.set("staticDefinitionSymbol", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setSuffix(value: String): Self = this.set("suffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuffix: Self = this.set("suffix", js.undefined)
+    @scala.inline
+    def setSupportsInputTypeVarargs(value: String*): Self = this.set("supportsInputType", js.Array(value :_*))
+    @scala.inline
+    def setSupportsInputType(value: js.Array[String]): Self = this.set("supportsInputType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsInputType: Self = this.set("supportsInputType", js.undefined)
+    @scala.inline
+    def setTabThrough(value: Boolean): Self = this.set("tabThrough", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabThrough: Self = this.set("tabThrough", js.undefined)
+    @scala.inline
+    def setUndoOnEscape(value: Boolean): Self = this.set("undoOnEscape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUndoOnEscape: Self = this.set("undoOnEscape", js.undefined)
+    @scala.inline
+    def setUnmaskAsNumber(value: Boolean): Self = this.set("unmaskAsNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnmaskAsNumber: Self = this.set("unmaskAsNumber", js.undefined)
+  }
+  
 }
 

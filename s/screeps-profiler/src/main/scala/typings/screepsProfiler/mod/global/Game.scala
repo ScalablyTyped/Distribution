@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
   * screeps-profiler extends the Game interface with itself
   * @see http://docs.screeps.com/api/#Game
   */
+@js.native
 trait Game extends js.Object {
-  var profiler: ScreepsGameProfiler
+  var profiler: ScreepsGameProfiler = js.native
 }
 
 @JSGlobal("Game")

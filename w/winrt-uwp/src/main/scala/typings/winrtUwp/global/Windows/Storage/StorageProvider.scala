@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Storage.StorageProvider")
 @js.native
 abstract class StorageProvider ()
-  extends typings.winrtUwp.Windows.Storage.StorageProvider {
-  /** Gets a user-friendly name for the current provider of files and folders. */
-  /* CompleteClass */
-  override var displayName: String = js.native
-  /** Gets an identifier for the current provider of files and folders. */
-  /* CompleteClass */
-  override var id: String = js.native
-}
+  extends typings.winrtUwp.Windows.Storage.StorageProvider
 

@@ -4,99 +4,168 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait confirmOptions extends js.Object {
-  var autoClose: js.UndefOr[String] = js.undefined
-  var backgroundDismiss: js.UndefOr[js.Any] = js.undefined
-  var backgroundDismissAnimation: js.UndefOr[String] = js.undefined
-  var bootstrapClasses: js.UndefOr[js.Any] = js.undefined
-  var boxWidth: js.UndefOr[String] = js.undefined
-  var buttons: js.UndefOr[js.Any] = js.undefined
-  var closeIcon: js.UndefOr[js.Any] = js.undefined
-  var closeIconClass: js.UndefOr[String] = js.undefined
-  var columnClass: js.UndefOr[String] = js.undefined
-  var containerFluid: js.UndefOr[Boolean] = js.undefined
-  var content: js.UndefOr[js.Any] = js.undefined
-  var contentLoaded: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var dragWindowBorder: js.UndefOr[Boolean] = js.undefined
-  var dragWindowGap: js.UndefOr[Double] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
-  var escapeKey: js.UndefOr[String | Boolean] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var lazyOpen: js.UndefOr[Boolean] = js.undefined
-  var onAction: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onContentReady: js.UndefOr[js.Any] = js.undefined
-  var onDestroy: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onOpenBefore: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var title: js.UndefOr[String | Boolean] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var typeAnimated: js.UndefOr[Boolean] = js.undefined
-  var useBootstrap: js.UndefOr[Boolean] = js.undefined
+  var autoClose: js.UndefOr[String] = js.native
+  var backgroundDismiss: js.UndefOr[js.Any] = js.native
+  var backgroundDismissAnimation: js.UndefOr[String] = js.native
+  var bootstrapClasses: js.UndefOr[js.Any] = js.native
+  var boxWidth: js.UndefOr[String] = js.native
+  var buttons: js.UndefOr[js.Any] = js.native
+  var closeIcon: js.UndefOr[js.Any] = js.native
+  var closeIconClass: js.UndefOr[String] = js.native
+  var columnClass: js.UndefOr[String] = js.native
+  var containerFluid: js.UndefOr[Boolean] = js.native
+  var content: js.UndefOr[js.Any] = js.native
+  var contentLoaded: js.UndefOr[js.Function0[Unit]] = js.native
+  var dragWindowBorder: js.UndefOr[Boolean] = js.native
+  var dragWindowGap: js.UndefOr[Double] = js.native
+  var draggable: js.UndefOr[Boolean] = js.native
+  var escapeKey: js.UndefOr[String | Boolean] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var lazyOpen: js.UndefOr[Boolean] = js.native
+  var onAction: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onContentReady: js.UndefOr[js.Any] = js.native
+  var onDestroy: js.UndefOr[js.Function0[Unit]] = js.native
+  var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+  var onOpenBefore: js.UndefOr[js.Function0[Unit]] = js.native
+  var title: js.UndefOr[String | Boolean] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var typeAnimated: js.UndefOr[Boolean] = js.native
+  var useBootstrap: js.UndefOr[Boolean] = js.native
 }
 
 object confirmOptions {
   @scala.inline
-  def apply(
-    autoClose: String = null,
-    backgroundDismiss: js.Any = null,
-    backgroundDismissAnimation: String = null,
-    bootstrapClasses: js.Any = null,
-    boxWidth: String = null,
-    buttons: js.Any = null,
-    closeIcon: js.Any = null,
-    closeIconClass: String = null,
-    columnClass: String = null,
-    containerFluid: js.UndefOr[Boolean] = js.undefined,
-    content: js.Any = null,
-    contentLoaded: () => Unit = null,
-    dragWindowBorder: js.UndefOr[Boolean] = js.undefined,
-    dragWindowGap: js.UndefOr[Double] = js.undefined,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    escapeKey: String | Boolean = null,
-    icon: String = null,
-    lazyOpen: js.UndefOr[Boolean] = js.undefined,
-    onAction: () => Unit = null,
-    onClose: () => Unit = null,
-    onContentReady: js.Any = null,
-    onDestroy: () => Unit = null,
-    onOpen: () => Unit = null,
-    onOpenBefore: () => Unit = null,
-    title: String | Boolean = null,
-    `type`: String = null,
-    typeAnimated: js.UndefOr[Boolean] = js.undefined,
-    useBootstrap: js.UndefOr[Boolean] = js.undefined
-  ): confirmOptions = {
+  def apply(): confirmOptions = {
     val __obj = js.Dynamic.literal()
-    if (autoClose != null) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
-    if (backgroundDismiss != null) __obj.updateDynamic("backgroundDismiss")(backgroundDismiss.asInstanceOf[js.Any])
-    if (backgroundDismissAnimation != null) __obj.updateDynamic("backgroundDismissAnimation")(backgroundDismissAnimation.asInstanceOf[js.Any])
-    if (bootstrapClasses != null) __obj.updateDynamic("bootstrapClasses")(bootstrapClasses.asInstanceOf[js.Any])
-    if (boxWidth != null) __obj.updateDynamic("boxWidth")(boxWidth.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
-    if (closeIconClass != null) __obj.updateDynamic("closeIconClass")(closeIconClass.asInstanceOf[js.Any])
-    if (columnClass != null) __obj.updateDynamic("columnClass")(columnClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerFluid)) __obj.updateDynamic("containerFluid")(containerFluid.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentLoaded != null) __obj.updateDynamic("contentLoaded")(js.Any.fromFunction0(contentLoaded))
-    if (!js.isUndefined(dragWindowBorder)) __obj.updateDynamic("dragWindowBorder")(dragWindowBorder.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragWindowGap)) __obj.updateDynamic("dragWindowGap")(dragWindowGap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (escapeKey != null) __obj.updateDynamic("escapeKey")(escapeKey.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyOpen)) __obj.updateDynamic("lazyOpen")(lazyOpen.get.asInstanceOf[js.Any])
-    if (onAction != null) __obj.updateDynamic("onAction")(js.Any.fromFunction0(onAction))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(onContentReady.asInstanceOf[js.Any])
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
-    if (onOpenBefore != null) __obj.updateDynamic("onOpenBefore")(js.Any.fromFunction0(onOpenBefore))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(typeAnimated)) __obj.updateDynamic("typeAnimated")(typeAnimated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBootstrap)) __obj.updateDynamic("useBootstrap")(useBootstrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[confirmOptions]
   }
+  @scala.inline
+  implicit class confirmOptionsOps[Self <: confirmOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoClose(value: String): Self = this.set("autoClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoClose: Self = this.set("autoClose", js.undefined)
+    @scala.inline
+    def setBackgroundDismiss(value: js.Any): Self = this.set("backgroundDismiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundDismiss: Self = this.set("backgroundDismiss", js.undefined)
+    @scala.inline
+    def setBackgroundDismissAnimation(value: String): Self = this.set("backgroundDismissAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundDismissAnimation: Self = this.set("backgroundDismissAnimation", js.undefined)
+    @scala.inline
+    def setBootstrapClasses(value: js.Any): Self = this.set("bootstrapClasses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBootstrapClasses: Self = this.set("bootstrapClasses", js.undefined)
+    @scala.inline
+    def setBoxWidth(value: String): Self = this.set("boxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoxWidth: Self = this.set("boxWidth", js.undefined)
+    @scala.inline
+    def setButtons(value: js.Any): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtons: Self = this.set("buttons", js.undefined)
+    @scala.inline
+    def setCloseIcon(value: js.Any): Self = this.set("closeIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseIcon: Self = this.set("closeIcon", js.undefined)
+    @scala.inline
+    def setCloseIconClass(value: String): Self = this.set("closeIconClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseIconClass: Self = this.set("closeIconClass", js.undefined)
+    @scala.inline
+    def setColumnClass(value: String): Self = this.set("columnClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnClass: Self = this.set("columnClass", js.undefined)
+    @scala.inline
+    def setContainerFluid(value: Boolean): Self = this.set("containerFluid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerFluid: Self = this.set("containerFluid", js.undefined)
+    @scala.inline
+    def setContent(value: js.Any): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setContentLoaded(value: () => Unit): Self = this.set("contentLoaded", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteContentLoaded: Self = this.set("contentLoaded", js.undefined)
+    @scala.inline
+    def setDragWindowBorder(value: Boolean): Self = this.set("dragWindowBorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragWindowBorder: Self = this.set("dragWindowBorder", js.undefined)
+    @scala.inline
+    def setDragWindowGap(value: Double): Self = this.set("dragWindowGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragWindowGap: Self = this.set("dragWindowGap", js.undefined)
+    @scala.inline
+    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setEscapeKey(value: String | Boolean): Self = this.set("escapeKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEscapeKey: Self = this.set("escapeKey", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setLazyOpen(value: Boolean): Self = this.set("lazyOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazyOpen: Self = this.set("lazyOpen", js.undefined)
+    @scala.inline
+    def setOnAction(value: () => Unit): Self = this.set("onAction", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnAction: Self = this.set("onAction", js.undefined)
+    @scala.inline
+    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnContentReady(value: js.Any): Self = this.set("onContentReady", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnContentReady: Self = this.set("onContentReady", js.undefined)
+    @scala.inline
+    def setOnDestroy(value: () => Unit): Self = this.set("onDestroy", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDestroy: Self = this.set("onDestroy", js.undefined)
+    @scala.inline
+    def setOnOpen(value: () => Unit): Self = this.set("onOpen", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    @scala.inline
+    def setOnOpenBefore(value: () => Unit): Self = this.set("onOpenBefore", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnOpenBefore: Self = this.set("onOpenBefore", js.undefined)
+    @scala.inline
+    def setTitle(value: String | Boolean): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setTypeAnimated(value: Boolean): Self = this.set("typeAnimated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeAnimated: Self = this.set("typeAnimated", js.undefined)
+    @scala.inline
+    def setUseBootstrap(value: Boolean): Self = this.set("useBootstrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseBootstrap: Self = this.set("useBootstrap", js.undefined)
+  }
+  
 }
 

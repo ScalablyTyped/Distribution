@@ -20,7 +20,6 @@ object runtimeInvokeMod extends js.Object {
   
   def invoke(tok: String, props: Inputs): js.Promise[_] = js.native
   def invoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[_] = js.native
-  def invokeFallbackToAsync[T](tok: String, props: Inputs, opts: InvokeOptions): T = js.native
   def streamInvoke(tok: String, props: Inputs): js.Promise[StreamInvokeResponse[_]] = js.native
   def streamInvoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[StreamInvokeResponse[_]] = js.native
 }

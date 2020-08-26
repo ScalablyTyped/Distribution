@@ -18,11 +18,30 @@ trait GetItemOutput extends js.Object {
 
 object GetItemOutput {
   @scala.inline
-  def apply(ConsumedCapacity: ConsumedCapacity = null, Item: AttributeMap = null): GetItemOutput = {
+  def apply(): GetItemOutput = {
     val __obj = js.Dynamic.literal()
-    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity.asInstanceOf[js.Any])
-    if (Item != null) __obj.updateDynamic("Item")(Item.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetItemOutput]
   }
+  @scala.inline
+  implicit class GetItemOutputOps[Self <: GetItemOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumedCapacity(value: ConsumedCapacity): Self = this.set("ConsumedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumedCapacity: Self = this.set("ConsumedCapacity", js.undefined)
+    @scala.inline
+    def setItem(value: AttributeMap): Self = this.set("Item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("Item", js.undefined)
+  }
+  
 }
 

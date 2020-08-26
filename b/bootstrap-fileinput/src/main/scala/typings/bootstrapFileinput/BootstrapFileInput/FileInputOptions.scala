@@ -16,6 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FileInputOptions extends js.Object {
   /**
     * additional ajax settings to pass to the plugin before submitting the delete ajax request in each initial preview thumbnail.
@@ -23,14 +24,14 @@ trait FileInputOptions extends js.Object {
     * This can be useful to pass additional tokens to headers or one can use it for setting other ajax options for advanced cases.
     * Refer the jQuery ajax documentation for the various settings you can configure.
     */
-  var ajaxDeleteSettings: js.UndefOr[JQueryAjaxSettings] = js.undefined
+  var ajaxDeleteSettings: js.UndefOr[JQueryAjaxSettings] = js.native
   /**
     * additional ajax settings to pass to the plugin before submitting the ajax request for upload.
     * Applicable only for ajax uploads.
     * This can be useful to pass additional tokens to headers or one can use it for setting other ajax options for advanced cases.
     * Refer the jQuery ajax documentation for the various settings you can configure.
     */
-  var ajaxSettings: js.UndefOr[JQueryAjaxSettings] = js.undefined
+  var ajaxSettings: js.UndefOr[JQueryAjaxSettings] = js.native
   /**
     * the list of allowed file extensions for upload.
     * This by default is set to null which means the plugin supports all file extensions for upload.
@@ -39,7 +40,7 @@ trait FileInputOptions extends js.Object {
     * You need to be careful in case you are setting both allowedFileTypes and allowedFileExtensions.
     * In this case, the allowedFileTypes property is validated first and generally precedes the allowedFileExtensions setting (and the latter validation maybe skipped).
     */
-  var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
+  var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.native
   /**
     * the list of allowed file types for upload.
     * This by default is set to null which means the plugin supports all file types for upload.
@@ -48,13 +49,13 @@ trait FileInputOptions extends js.Object {
     * You need to be careful in case you are setting both allowedFileTypes and allowedFileExtensions.
     * In this case, the allowedFileTypes property is validated first and generally precedes the allowedFileExtensions setting (and the latter validation maybe skipped).
     */
-  var allowedFileTypes: js.UndefOr[js.Array[image | html | text | video | audio | flash | `object`]] = js.undefined
+  var allowedFileTypes: js.UndefOr[js.Array[image | html | text | video | audio | flash | `object`]] = js.native
   /**
     * the list of allowed mime types for preview.
     * This is set to null by default which means all possible mime types are allowed.
     * This setting works in combination with allowedPreviewTypes to filter only the needed file types allowed for preview.
     */
-  var allowedPreviewMimeTypes: js.UndefOr[js.Array[String]] = js.undefined
+  var allowedPreviewMimeTypes: js.UndefOr[js.Array[String]] = js.native
   /**
     * the list of allowed preview types for your widget.
     * This by default supports all file types for preview.
@@ -62,42 +63,42 @@ trait FileInputOptions extends js.Object {
     * To disable this behavior, you can remove object from the list of allowedPreviewTypes OR fine tune it through allowedPreviewMimeTypes.
     * To disable content preview for all file-types and show the previewIcon instead as a thumbnail, set this to null, empty, or false.
     */
-  var allowedPreviewTypes: js.UndefOr[js.Array[image | html | text | video | audio | flash | `object`]] = js.undefined
+  var allowedPreviewTypes: js.UndefOr[js.Array[image | html | text | video | audio | flash | `object`]] = js.native
   /**
     * Whether to automatically replace the files in the preview after the maxFileCount limit is reached and a new set of file(s) is/are selected.
     * This will only work if a valid maxFileCount is set.
     * @default false
     */
-  var autoReplace: js.UndefOr[Boolean] = js.undefined
+  var autoReplace: js.UndefOr[Boolean] = js.native
   /**
     * the CSS class for the file picker/browse button. Defaults to btn btn-primary.
     */
-  var browseClass: js.UndefOr[String] = js.undefined
+  var browseClass: js.UndefOr[String] = js.native
   /**
     * the icon to display before the label for the file picker/browse button. Defaults to <i class="glyphicon glyphicon-folder-open"></i>&nbsp;.
     */
-  var browseIcon: js.UndefOr[String] = js.undefined
+  var browseIcon: js.UndefOr[String] = js.native
   /**
     * the label to display for the file picker/browse button. Defaults to Browse ….
     */
-  var browseLabel: js.UndefOr[String] = js.undefined
+  var browseLabel: js.UndefOr[String] = js.native
   /**
     * the CSS class for the each of the button labels for browse, remove, upload, and cancel.
     * Defaults to hidden-xs, which automatically hides the button labels for small screen devices and renders as smaller iconic buttons to fit to the screen.
     */
-  var buttonLabelClass: js.UndefOr[String] = js.undefined
+  var buttonLabelClass: js.UndefOr[String] = js.native
   /**
     * Any additional CSS class to append to the caption container.
     */
-  var captionClass: js.UndefOr[String] = js.undefined
+  var captionClass: js.UndefOr[String] = js.native
   /**
     * the list of additional custom tags that will be replaced in the layout templates.
     */
-  var customLayoutTags: js.UndefOr[js.Object] = js.undefined
+  var customLayoutTags: js.UndefOr[js.Object] = js.native
   /**
     * the list of additional custom tags that will be replaced in the preview templates.
     */
-  var customPreviewTags: js.UndefOr[js.Object] = js.undefined
+  var customPreviewTags: js.UndefOr[js.Object] = js.native
   /**
     * the default content / markup to show by default in the preview window whenever the files are cleared or the input is cleared.
     * This can be useful for use cases like showing the default user profile picture or profile image before upload to overwrite.
@@ -106,7 +107,7 @@ trait FileInputOptions extends js.Object {
     * At other times when files have been selected this will be overwritten temporarily until file(s) selected is/are cleared.
     * This property can be useful to display for example a default user profile picture (or saved picture) in the preview window unless the user selects a picture.
     */
-  var defaultPreviewContent: js.UndefOr[String] = js.undefined
+  var defaultPreviewContent: js.UndefOr[String] = js.native
   /**
     * the extra data that will be passed as data to the initial preview delete url/AJAX server call via POST.
     * This will be overridden by the initialPreviewConfig['extra'] property.
@@ -117,7 +118,7 @@ trait FileInputOptions extends js.Object {
     *     key: the key setting as setup in initialPreviewConfig['key']
     *     any other extra data passed as key: value pairs either via initialPreviewConfig['extra'] OR deleteExtraData if former is not set.
     */
-  var deleteExtraData: js.UndefOr[js.Object | js.Function0[js.Object]] = js.undefined
+  var deleteExtraData: js.UndefOr[js.Object | js.Function0[js.Object]] = js.native
   /**
     * the URL for deleting the image/content in the initial preview via AJAX post response. This will be overridden by the initialPreviewConfig['url'] property.
     * Note
@@ -125,56 +126,56 @@ trait FileInputOptions extends js.Object {
     *     key: the key setting as setup in initialPreviewConfig['key']
     *     any other extra data passed as key: value pairs either via initialPreviewConfig['extra'] OR deleteExtraData if former is not set.
     */
-  var deleteUrl: js.UndefOr[String] = js.undefined
+  var deleteUrl: js.UndefOr[String] = js.native
   /**
     * whether to enable a drag and drop zone for dragging and dropping files to.
     * This is available only for ajax based uploads.
     * @default true
     */
-  var dropZoneEnabled: js.UndefOr[Boolean] = js.undefined
+  var dropZoneEnabled: js.UndefOr[Boolean] = js.native
   /**
     * title to be displayed in the drag and drop zone.
     * This is available only for ajax based uploads.
     * Defaults to:
     *     Drag & drop files here ….
     */
-  var dropZoneTitle: js.UndefOr[String] = js.undefined
+  var dropZoneTitle: js.UndefOr[String] = js.native
   /**
     * CSS class for the drag & drop zone title.
     * Defaults to file-drop-zone-title.
     */
-  var dropZoneTitleClass: js.UndefOr[String] = js.undefined
+  var dropZoneTitleClass: js.UndefOr[String] = js.native
   /**
     * the identifier for the container element containing the caption (e.g. '#id').
     * If not set, will default to the container with CSS class file-caption inside the main plugin container.
     */
-  var elCaptionContainer: js.UndefOr[String] = js.undefined
+  var elCaptionContainer: js.UndefOr[String] = js.native
   /**
     * the identifier for the container element containing the caption text (e.g. '#id').
     * If not set, will default to the container with CSS class file-caption-name inside the main plugin container.
     */
-  var elCaptionText: js.UndefOr[String] = js.undefined
+  var elCaptionText: js.UndefOr[String] = js.native
   /**
     * the identifier for the container element displaying the error (e.g. '#id').
     * If not set, will default to the container with CSS class kv-fileinput-error inside the preview container (identified by elPreviewContainer).
     * The msgErrorClass will be automatically appended to this container before displaying the error.
     */
-  var elErrorContainer: js.UndefOr[String] = js.undefined
+  var elErrorContainer: js.UndefOr[String] = js.native
   /**
     * the identifier for the container element containing the preview (e.g. '#id').
     * If not set, will default to the container with CSS class file-preview inside the main plugin container.
     */
-  var elPreviewContainer: js.UndefOr[String] = js.undefined
+  var elPreviewContainer: js.UndefOr[String] = js.native
   /**
     * the identifier for the element containing the preview image thumbnails (e.g. '#id').
     * If not set, will default to the container with CSS class file-preview-thumbnails inside the main plugin container.
     */
-  var elPreviewImage: js.UndefOr[String] = js.undefined
+  var elPreviewImage: js.UndefOr[String] = js.native
   /**
     * the identifier for the element containing the preview progress status (e.g. '#id').
     * If not set, will default to the container with CSS class file-preview-status inside the main plugin container.
     */
-  var elPreviewStatus: js.UndefOr[String] = js.undefined
+  var elPreviewStatus: js.UndefOr[String] = js.native
   /**
     * Whether to encode all the URLs before triggering the ajax calls.
     * The following URLs are currently set and used within the plugin:
@@ -186,38 +187,38 @@ trait FileInputOptions extends js.Object {
     *     * testUrl within resumableUploadOptions
     * @default true
     */
-  var encodeUrl: js.UndefOr[Boolean] = js.undefined
+  var encodeUrl: js.UndefOr[Boolean] = js.native
   /**
     * configuration for setting up file actions for newly selected file thumbnails in the preview window.
     */
-  var fileActionSettings: js.UndefOr[FileActionSettings] = js.undefined
+  var fileActionSettings: js.UndefOr[FileActionSettings] = js.native
   /**
     * the settings to validate and identify each file type when a file is selected for upload.
     * This is a list of callbacks, which accepts the file mime type and file name as a parameter.
     */
-  var fileTypeSettings: js.UndefOr[FileTypeSettings] = js.undefined
+  var fileTypeSettings: js.UndefOr[FileTypeSettings] = js.native
   /**
     * Whether to focus the file caption after browsing and selecting a file.
     * @default true
     */
-  var focusCaptionOnBrowse: js.UndefOr[Boolean] = js.undefined
+  var focusCaptionOnBrowse: js.UndefOr[Boolean] = js.native
   /**
     * Whether to focus the file caption after clearing / removing the files (using the remove button for example).
     * @default true
     */
-  var focusCaptionOnClear: js.UndefOr[Boolean] = js.undefined
+  var focusCaptionOnClear: js.UndefOr[Boolean] = js.native
   /**
     * Whether to hide the preview content (image, pdf content, text content, etc.) within the thumbnail.
     * When set to true, only the file name and file size as defined in the thumbnail footer layout template will be displayed.
     * @default false
     */
-  var hideThumbnailContent: js.UndefOr[Boolean] = js.undefined
+  var hideThumbnailContent: js.UndefOr[Boolean] = js.native
   /**
     * the initial preview caption text to be displayed.
     * If you do not set a value here and initialPreview is set to true this will default to "{preview-file-count} files selected",
     * where {preview-file-count} is the count of the files passed in initialPreview.
     */
-  var initialCaption: js.UndefOr[String] = js.undefined
+  var initialCaption: js.UndefOr[String] = js.native
   /**
     * The initial preview content to be displayed.
     * You can pass the minimal HTML markup for displaying your image, text, or file.
@@ -229,89 +230,89 @@ trait FileInputOptions extends js.Object {
     * text files: Include CSS class file-preview-text
     * other files: Include CSS class file-preview-other
     */
-  var initialPreview: js.UndefOr[String | js.Array[_]] = js.undefined
+  var initialPreview: js.UndefOr[String | js.Array[_]] = js.native
   /**
     * the configuration for setting up important properties for each initialPreview item (that is setup as part of initialPreview).
     */
-  var initialPreviewConfig: js.UndefOr[js.Array[PreviewConfig]] = js.undefined
+  var initialPreviewConfig: js.UndefOr[js.Array[PreviewConfig]] = js.native
   /**
     * the count of initial preview items that will be added to the count of files selected in preview.
     * This is applicable when displaying the right caption, when overwriteInitial is set to false.
     */
-  var initialPreviewCount: js.UndefOr[Double] = js.undefined
+  var initialPreviewCount: js.UndefOr[Double] = js.native
   /**
     * the delimiter to be used for splitting the initial preview content as individual file thumbnails (applicable only if initialPreview is passed as a string instead of array).
     * Defaults to *$$*.
     */
-  var initialPreviewDelimiter: js.UndefOr[String] = js.undefined
+  var initialPreviewDelimiter: js.UndefOr[String] = js.native
   /**
     * whether the delete button will be displayed for each thumbnail that has been created with initialPreview.
     */
-  var initialPreviewShowDelete: js.UndefOr[Boolean] = js.undefined
+  var initialPreviewShowDelete: js.UndefOr[Boolean] = js.native
   /**
     * this is an extension of previewThumbTags specifically for initial preview content - but will be configured as an array of objects corresponding to each initial preview thumbnail.
     * The initial preview thumbnails set via initialPreview will read this configuration for replacing tags.
     */
-  var initialPreviewThumbTags: js.UndefOr[StringDictionary[String]] = js.undefined
+  var initialPreviewThumbTags: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * Language configuration for the plugin to enable the plugin to display messages for your locale (you must set the ISO code for the language).
     * You can have multiple language widgets on the same page.
     * The locale JS file for the language code must be defined as mentioned in the translations section: http://plugins.krajee.com/file-input#translations
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String] = js.native
   /**
     * the templates configuration for rendering each part of the layout.
     */
-  var layoutTemplates: js.UndefOr[LayoutTemplates] = js.undefined
+  var layoutTemplates: js.UndefOr[LayoutTemplates] = js.native
   /**
     * Any additional CSS class to append to the main plugin container.
     */
-  var mainClass: js.UndefOr[String] = js.undefined
+  var mainClass: js.UndefOr[String] = js.native
   /**
     * the maximum number of files allowed for each multiple upload.
     * If set to 0, it means number of files allowed is unlimited.
     * Defaults to 0.
     */
-  var maxFileCount: js.UndefOr[Double] = js.undefined
+  var maxFileCount: js.UndefOr[Double] = js.native
   /**
     * the maximum file size for upload in KB.
     * If set to 0, it means size allowed is unlimited.
     * Defaults to 0.
     */
-  var maxFileSize: js.UndefOr[Double] = js.undefined
+  var maxFileSize: js.UndefOr[Double] = js.native
   /**
     * the maximum allowed image height in px if you are uploading image files.
     * Defaults to null which means no limit on image height.
     * Note that if you set resizeImage property to true, then the entire image will be resized within this height (depending on resizePreference).
     */
-  var maxImageHeight: js.UndefOr[Double] = js.undefined
+  var maxImageHeight: js.UndefOr[Double] = js.native
   /**
     * the maximum allowed image width in px if you are uploading image files.
     * Defaults to null which means no limit on image width.
     * Note that if you set resizeImage property to true, then the entire image will be resized within this width (depending on resizePreference).
     */
-  var maxImageWidth: js.UndefOr[Double] = js.undefined
+  var maxImageWidth: js.UndefOr[Double] = js.native
   /**
     * the minimum number of files allowed for each multiple upload.
     * If set to 0, it means number of files are optional.
     * Defaults to 0.
     */
-  var minFileCount: js.UndefOr[Double] = js.undefined
+  var minFileCount: js.UndefOr[Double] = js.native
   /**
     * the minimum allowed image height in px if you are uploading image files.
     * Defaults to null which means no limit on image height.
     */
-  var minImageHeight: js.UndefOr[Double] = js.undefined
+  var minImageHeight: js.UndefOr[Double] = js.native
   /**
     * the message that will be displayed within the progress bar when file upload is aborted or cancelled.
     * Defaults to Cancelled.
     */
-  var msgCancelled: js.UndefOr[String] = js.undefined
+  var msgCancelled: js.UndefOr[String] = js.native
   /**
     * the css class for the error message to be displayed in the preview window when the file size exceeds maxSize.
     * Defaults to file-error-message.
     */
-  var msgErrorClass: js.UndefOr[String] = js.undefined
+  var msgErrorClass: js.UndefOr[String] = js.native
   /**
     * the exception message to be displayed when the file selected is not found by the FileReader.
     * Defaults to:
@@ -319,7 +320,7 @@ trait FileInputOptions extends js.Object {
     * where:
     *     {name}: will be replaced by the file name being uploaded
     */
-  var msgFileNotFound: js.UndefOr[String] = js.undefined
+  var msgFileNotFound: js.UndefOr[String] = js.native
   /**
     * the exception message to be displayed when the file selected is not readable by the FileReader API.
     * Defaults to:
@@ -327,7 +328,7 @@ trait FileInputOptions extends js.Object {
     * where:
     *     {name}: will be replaced by the file name being uploaded
     */
-  var msgFileNotReadable: js.UndefOr[String] = js.undefined
+  var msgFileNotReadable: js.UndefOr[String] = js.native
   /**
     * the exception message to be displayed when the file preview upload is aborted.
     * Defaults to:
@@ -335,7 +336,7 @@ trait FileInputOptions extends js.Object {
     * where:
     *     {name}: will be replaced by the file name being uploaded
     */
-  var msgFilePreviewAborted: js.UndefOr[String] = js.undefined
+  var msgFilePreviewAborted: js.UndefOr[String] = js.native
   /**
     * the exception message to be displayed for any other error when previewing the file.
     * Defaults to:
@@ -343,7 +344,7 @@ trait FileInputOptions extends js.Object {
     * where:
     *     {name}: will be replaced by the file name being uploaded
     */
-  var msgFilePreviewError: js.UndefOr[String] = js.undefined
+  var msgFilePreviewError: js.UndefOr[String] = js.native
   /**
     * the exception message to be displayed when the file selected is not allowed to be accessed due to a security exception.
     * Defaults to:
@@ -351,7 +352,7 @@ trait FileInputOptions extends js.Object {
     * where:
     *     {name}: will be replaced by the file name being uploaded
     */
-  var msgFileSecured: js.UndefOr[String] = js.undefined
+  var msgFileSecured: js.UndefOr[String] = js.native
   /**
     * message to be displayed when the file count is less than the minimum count as set in minFileCount.
     * Defaults to:
@@ -360,7 +361,7 @@ trait FileInputOptions extends js.Object {
     *     {n}: will be replaced by the allowed minimum files as set in minFileCount.
     *     {files}: will be replaced with fileSingle or filePlural properties in locale file depending on the minFileCount.
     */
-  var msgFilesTooLess: js.UndefOr[String] = js.undefined
+  var msgFilesTooLess: js.UndefOr[String] = js.native
   /**
     * the message to be displayed when the file count exceeds maximum count as set in maxFileCount.
     * Defaults to:
@@ -369,7 +370,7 @@ trait FileInputOptions extends js.Object {
     *     {n}: will be replaced by number of files selected for upload
     *     {m}: will be replaced by the allowed maximum files as set in maxFileCount
     */
-  var msgFilesTooMany: js.UndefOr[String] = js.undefined
+  var msgFilesTooMany: js.UndefOr[String] = js.native
   /**
     * the message displayed when a folder has been dragged to the drop zone.
     * Defaults to:
@@ -377,7 +378,7 @@ trait FileInputOptions extends js.Object {
     * The following variables will be replaced:
     *     {n}: the number of folders dropped.
     */
-  var msgFoldersNotAllowed: js.UndefOr[String] = js.undefined
+  var msgFoldersNotAllowed: js.UndefOr[String] = js.native
   /**
     * the exception message to be displayed when the file selected for preview is an image and its height exceeds the maxImageHeight setting.
     * Defaults to:
@@ -386,7 +387,7 @@ trait FileInputOptions extends js.Object {
     *     {name}: will be replaced by the file name being uploaded.
     *     {size}: will be replaced by the maxImageHeight setting.
     */
-  var msgImageHeightLarge: js.UndefOr[String] = js.undefined
+  var msgImageHeightLarge: js.UndefOr[String] = js.native
   /**
     * the exception message to be displayed when the file selected for preview is an image and its height is less than the minImageHeight setting.
     * Defaults to:
@@ -395,7 +396,7 @@ trait FileInputOptions extends js.Object {
     *     {name}: will be replaced by the file name being uploaded.
     *     {size}: will be replaced by the minImageHeight setting.
     */
-  var msgImageHeightSmall: js.UndefOr[String] = js.undefined
+  var msgImageHeightSmall: js.UndefOr[String] = js.native
   /**
     * the exception message to be displayed when the file selected for preview is an image and its width exceeds the maxImageWidth setting.
     * Defaults to:
@@ -404,7 +405,7 @@ trait FileInputOptions extends js.Object {
     *     {name}: will be replaced by the file name being uploaded.
     *     {size}: will be replaced by the maxImageWidth setting.
     */
-  var msgImageWidthLarge: js.UndefOr[String] = js.undefined
+  var msgImageWidthLarge: js.UndefOr[String] = js.native
   /**
     * the exception message to be displayed when the file selected for preview is an image and its width is less than the minImageWidth setting.
     * Defaults to:
@@ -413,7 +414,7 @@ trait FileInputOptions extends js.Object {
     *     {name}: will be replaced by the file name being uploaded.
     *     {size}: will be replaced by the minImageWidth setting.
     */
-  var msgImageWidthSmall: js.UndefOr[String] = js.undefined
+  var msgImageWidthSmall: js.UndefOr[String] = js.native
   /**
     * the message to be displayed when the file type is not in one of the file extensions set in allowedFileExtensions.
     * Defaults to:
@@ -422,7 +423,7 @@ trait FileInputOptions extends js.Object {
     *     {name}: will be replaced by the file name being uploaded
     *     {extensions}: will be replaced by the comma separated list of extensions defined in allowedFileExtensions.
     */
-  var msgInvalidFileExtension: js.UndefOr[String] = js.undefined
+  var msgInvalidFileExtension: js.UndefOr[String] = js.native
   /**
     * the message to be displayed when the file type is not in one of the file types set in allowedFileTypes.
     * Defaults to:
@@ -431,7 +432,7 @@ trait FileInputOptions extends js.Object {
     *     {name}: will be replaced by the file name being uploaded
     *     {types}: will be replaced by the comma separated list of types defined in allowedFileTypes.
     */
-  var msgInvalidFileType: js.UndefOr[String] = js.undefined
+  var msgInvalidFileType: js.UndefOr[String] = js.native
   /**
     * the message displayed when the files are getting read and loaded for preview.
     * Defaults to
@@ -440,12 +441,12 @@ trait FileInputOptions extends js.Object {
     *     {index}: the sequence number of the current file being loaded.
     *     {files}: the total number of files selected for upload.
     */
-  var msgLoading: js.UndefOr[String] = js.undefined
+  var msgLoading: js.UndefOr[String] = js.native
   /**
     * the message that will be displayed when ZERO files are found.
     * Defaults to No.
     */
-  var msgNo: js.UndefOr[String] = js.undefined
+  var msgNo: js.UndefOr[String] = js.native
   /**
     * the progress message displayed as each file is loaded for preview.
     * Defaults to:
@@ -456,7 +457,7 @@ trait FileInputOptions extends js.Object {
     *     {percent}: the percentage of file read and loaded.
     *     {name}: the name of the current file being loaded.
     */
-  var msgProgress: js.UndefOr[String] = js.undefined
+  var msgProgress: js.UndefOr[String] = js.native
   /**
     * the progress message displayed in caption window when multiple (more than one) files are selected.
     * Defaults to:
@@ -464,7 +465,7 @@ trait FileInputOptions extends js.Object {
     * The following variables will be replaced:
     *     {n}: the number of files selected.
     */
-  var msgSelected: js.UndefOr[String] = js.undefined
+  var msgSelected: js.UndefOr[String] = js.native
   /**
     * the message to be displayed when the file size exceeds maximum size.
     * Defaults to:
@@ -474,56 +475,56 @@ trait FileInputOptions extends js.Object {
     *     {size}: will be replaced by the uploaded file size
     *     {maxSize}: will be replaced by the maxFileSize parameter.
     */
-  var msgSizeTooLarge: js.UndefOr[String] = js.undefined
+  var msgSizeTooLarge: js.UndefOr[String] = js.native
   /**
     * the message to be displayed when an ongoing ajax file upload is aborted by pressing the Cancel button.
     * Defaults to The file upload was aborted.
     * If this is set to null or empty, the internal ajax error message will be displayed - Defaults to File Upload Error.
     */
-  var msgUploadAborted: js.UndefOr[String] = js.undefined
+  var msgUploadAborted: js.UndefOr[String] = js.native
   /**
     * the exception message to be displayed within the caption container (instead of msgFilesSelected), when a validation error is encountered.
     * Defaults to File Upload Error.
     */
-  var msgValidationError: js.UndefOr[String] = js.undefined
+  var msgValidationError: js.UndefOr[String] = js.native
   /**
     * the css class for the validation error message displayed in the caption container.
     * Defaults to text-danger.
     */
-  var msgValidationErrorClass: js.UndefOr[String] = js.undefined
+  var msgValidationErrorClass: js.UndefOr[String] = js.native
   /**
     * the icon to be displayed before the validation error in the caption container.
     * Defaults to <i class="glyphicon glyphicon-exclamation-sign"></i>
     */
-  var msgValidationErrorIcon: js.UndefOr[String] = js.undefined
+  var msgValidationErrorIcon: js.UndefOr[String] = js.native
   /**
     * the heading of the modal dialog that displays the zoomed file content.
     * This is currently applicable only for text file previews.
     * Defaults to Detailed Preview.
     */
-  var msgZoomModalHeading: js.UndefOr[String] = js.undefined
+  var msgZoomModalHeading: js.UndefOr[String] = js.native
   /**
     * the title displayed (before the file name) on hover of the zoom button for zooming the file content in a modal window.
     * This is currently applicable only for text file previews.
     * Defaults to View details.
     */
-  var msgZoomTitle: js.UndefOr[String] = js.undefined
+  var msgZoomTitle: js.UndefOr[String] = js.native
   /**
     * markup for additional action buttons to display within the initial preview thumbnails (for example displaying an image edit button).
     * The following tag can be used in the markup and will be automatically replaced:
     *     {dataKey}: Will be replaced with the key set within initialPreviewConfig.
     */
-  var otherActionButtons: js.UndefOr[String] = js.undefined
+  var otherActionButtons: js.UndefOr[String] = js.native
   /**
     * whether you wish to overwrite the initial preview content and caption setup.
     * This defaults to true, whereby, any initialPreview content set will be overwritten, when new file is uploaded or when files are cleared.
     * Setting it to false will help displaying a saved image or file from database always - useful especially when using the multiple file upload feature.
     */
-  var overwriteInitial: js.UndefOr[Boolean] = js.undefined
+  var overwriteInitial: js.UndefOr[Boolean] = js.native
   /**
     * Any additional CSS class to append to the preview container.
     */
-  var previewClass: js.UndefOr[String] = js.undefined
+  var previewClass: js.UndefOr[String] = js.native
   /**
     * the extensions to be auto derived for each file extension (type).
     * This is useful if you want to set the same icon for multiple file extension types.
@@ -532,22 +533,22 @@ trait FileInputOptions extends js.Object {
     *     ext: string, the file extension (without the . [dot]) of the file currently selected in the preview.
     * You can configure the callback to match the set of file extensions (via regex or similar) for each `key` and return a boolean output if the file extension matches.
     */
-  var previewFileExtSettings: js.UndefOr[PreviewFileExtSettings] = js.undefined
+  var previewFileExtSettings: js.UndefOr[PreviewFileExtSettings] = js.native
   /**
     * the icon to be shown in each preview file thumbnail when an unreadable file type for preview is detected. Defaults to <i class="glyphicon glyphicon-file"></i> &nbsp;.
     */
-  var previewFileIcon: js.UndefOr[String] = js.undefined
+  var previewFileIcon: js.UndefOr[String] = js.native
   /**
     * the CSS class to be applied to the preview file icon container. Defaults to file-icon-4x.
     */
-  var previewFileIconClass: js.UndefOr[String] = js.undefined
+  var previewFileIconClass: js.UndefOr[String] = js.native
   /**
     * the preview icon markup settings for each file extension (type).
     * You need to set this as key: value pairs, where the key corresponds to a file extension (e.g. doc, docx, xls etc.), and the value corresponds to the markup of the icon to be rendered.
     * If this is not set OR a file extension is not set here, the preview will default to previewFileIcon.
     * Note that displaying the icons instead of file content is controlled via allowedPreviewTypes and allowedPreviewMimeTypes
     */
-  var previewFileIconSettings: js.UndefOr[PreviewFileIconSettings] = js.undefined
+  var previewFileIconSettings: js.UndefOr[PreviewFileIconSettings] = js.native
   /**
     * the type of files that are to be displayed in the preview window.
     * Defaults to image.
@@ -557,65 +558,65 @@ trait FileInputOptions extends js.Object {
     *     any: Both image and text files content will be shown in preview.
     * Files other than image or text will be displayed as a thumbnail with the filename in the preview window.
     */
-  var previewFileType: js.UndefOr[image | text | any] = js.undefined
+  var previewFileType: js.UndefOr[image | text | any] = js.native
   /**
     * the format settings (width and height) for rendering each preview file type.
     */
-  var previewSettings: js.UndefOr[PreviewSettings] = js.undefined
+  var previewSettings: js.UndefOr[PreviewSettings] = js.native
   /**
     * the templates configuration for rendering each preview file type.
     */
-  var previewTemplates: js.UndefOr[PreviewTemplates] = js.undefined
+  var previewTemplates: js.UndefOr[PreviewTemplates] = js.native
   /**
     * this will be a list of tags used in thumbnail templates that will be replaced dynamically within the thumbnail markup, when the thumbnail is rendered.
     */
-  var previewThumbTags: js.UndefOr[StringDictionary[String]] = js.undefined
+  var previewThumbTags: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * the upload progress bar CSS class to be applied when AJAX upload is in process (applicable only for ajax uploads).
     * Defaults to progress-bar progress-bar-success progress-bar-striped active.
     */
-  var progressClass: js.UndefOr[String] = js.undefined
+  var progressClass: js.UndefOr[String] = js.native
   /**
     * the upload progress bar CSS class to be applied when AJAX upload is in process (applicable only for ajax uploads).
     * Defaults to progress-bar progress-bar-success progress-bar-striped active.
     */
-  var progressCompleteClass: js.UndefOr[String] = js.undefined
+  var progressCompleteClass: js.UndefOr[String] = js.native
   /**
     * the upload progress bar CSS class to be applied when AJAX upload is cancelled or aborted.
     * Defaults to progress-bar progress-bar-danger.
     */
-  var progressErrorClass: js.UndefOr[String] = js.undefined
+  var progressErrorClass: js.UndefOr[String] = js.native
   /**
     * the CSS class for the file remove button. Defaults to btn btn-default.
     */
-  var removeClass: js.UndefOr[String] = js.undefined
+  var removeClass: js.UndefOr[String] = js.native
   /**
     * whether the file thumbnail should be removed from preview on error. Defaults to false.
     */
-  var removeFromPreviewOnError: js.UndefOr[Boolean] = js.undefined
+  var removeFromPreviewOnError: js.UndefOr[Boolean] = js.native
   /**
     * the icon to display before the label for the file picker/remove button. Defaults to <i class="glyphicon glyphicon-trash"></i> &nbsp;.
     */
-  var removeIcon: js.UndefOr[String] = js.undefined
+  var removeIcon: js.UndefOr[String] = js.native
   /**
     * the label to display for the file remove button. Defaults to Remove.
     */
-  var removeLabel: js.UndefOr[String] = js.undefined
+  var removeLabel: js.UndefOr[String] = js.native
   /**
     * the title to display on hover for the file remove button. Defaults to Clear selected files.
     */
-  var removeTitle: js.UndefOr[String] = js.undefined
+  var removeTitle: js.UndefOr[String] = js.native
   /**
     * Whether file selection is mandatory before upload (for ajax) or submit of the form (for non-ajax). When set to true, and if files are not
     * selected before upload, this will show the error message as set in msgFilerequired.
     * @default false
     */
-  var required: js.UndefOr[Boolean] = js.undefined
+  var required: js.UndefOr[Boolean] = js.native
   /**
     * the default image mime type of the converted image after resize.
     * Defaults to image/jpeg.
     */
-  var resizeDefaultImageType: js.UndefOr[String] = js.undefined
+  var resizeDefaultImageType: js.UndefOr[String] = js.native
   /**
     * whether to add ability to resize uploaded images. Defaults to false.
     * Note that resizing images requires HTML5 canvas support which is supported on most modern browsers.
@@ -624,12 +625,12 @@ trait FileInputOptions extends js.Object {
     * The JavaScript-Canvas-to-Blob source files are available in js/plugins folder of bootstrap-fileinput project page.
     * The canvas-to-blob.js plugin is a polyfill for canvas.toBlob method and is needed for allowing the resized image files via HTML5 canvas to be returned as a blob
     */
-  var resizeImage: js.UndefOr[Boolean] = js.undefined
+  var resizeImage: js.UndefOr[Boolean] = js.native
   /**
     * the quality of the resized image. This must be a decimal number between 0.00 to 1.00.
     * Defaults to 0.92.
     */
-  var resizeImageQuality: js.UndefOr[Double] = js.undefined
+  var resizeImageQuality: js.UndefOr[Double] = js.native
   /**
     * preference to resize the image based on width or height.
     * Defaults to width.
@@ -640,82 +641,82 @@ trait FileInputOptions extends js.Object {
     * This will behave conversely, when resizePreference is set to height - the maxImageHeight will be first tested against image height
     * and then the rest of steps will be similarly parsed with preference given to height instead of width as before.
     */
-  var resizePreference: js.UndefOr[width | height] = js.undefined
+  var resizePreference: js.UndefOr[width | height] = js.native
   /**
     * Whether to orient the widget in Right-To-Left (RTL) mode. To view RTL orientation you must set this to true and also must load the
     * css/fileinput-rtl.css file after the css/fileinput.css on your page for RTL styling.
     * @default false
     */
-  var rtl: js.UndefOr[Boolean] = js.undefined
+  var rtl: js.UndefOr[Boolean] = js.native
   /**
     * whether to show details of the error stack from the server log when an error is encountered via ajax response.
     * @default true
     */
-  var showAjaxErrorDetails: js.UndefOr[Boolean] = js.undefined
+  var showAjaxErrorDetails: js.UndefOr[Boolean] = js.native
   /**
     * Whether to display the file upload cancel button.
     * @default true
     * This will be only enabled and displayed when an AJAX upload is in process.
     */
-  var showCancel: js.UndefOr[Boolean] = js.undefined
+  var showCancel: js.UndefOr[Boolean] = js.native
   /**
     * Whether to display the file caption.
     * @default true
     */
-  var showCaption: js.UndefOr[Boolean] = js.undefined
+  var showCaption: js.UndefOr[Boolean] = js.native
   /**
     * Whether to display the close icon in the preview.
     * @default true
     * This will be only parsed when showPreview is true or when you are using the {close} tag in your preview templates.
     */
-  var showClose: js.UndefOr[Boolean] = js.undefined
+  var showClose: js.UndefOr[Boolean] = js.native
   /**
     * Whether to display the file preview.
     * @default true
     */
-  var showPreview: js.UndefOr[Boolean] = js.undefined
+  var showPreview: js.UndefOr[Boolean] = js.native
   /**
     * Whether to display the file remove/clear button.
     * @default true
     */
-  var showRemove: js.UndefOr[Boolean] = js.undefined
+  var showRemove: js.UndefOr[Boolean] = js.native
   /**
     * Whether to display the file upload button.
     * @default true
     * This will default to a form submit button, unless the uploadUrl is specified.
     */
-  var showUpload: js.UndefOr[Boolean] = js.undefined
+  var showUpload: js.UndefOr[Boolean] = js.native
   /**
     * Whether to persist display of the uploaded file thumbnails in the preview window (for ajax uploads) until the remove/clear button is pressed.
     * @default true
     * When set to false, a next batch of files selected for upload will clear these thumbnails from preview.
     */
-  var showUploadedThumbs: js.UndefOr[Boolean] = js.undefined
+  var showUploadedThumbs: js.UndefOr[Boolean] = js.native
   /**
     * a callback to convert the filename as a slug string eliminating special characters.
     * If not set, it will use the plugin's own internal slugDefault method.
     * This callback function includes the filename as parameter and must return a converted filename string.
     */
-  var slugCallback: js.UndefOr[js.Function1[/* filename */ String, String]] = js.undefined
+  var slugCallback: js.UndefOr[js.Function1[/* filename */ String, String]] = js.native
   /**
     * the encoding to be used while reading a text file.
     * Applicable only for previewing text files.
     * Defaults to UTF-8.
     */
-  var textEncoding: js.UndefOr[String] = js.undefined
+  var textEncoding: js.UndefOr[String] = js.native
   /**
     * Theming
     */
-  var theme: js.UndefOr[String] = js.undefined
+  var theme: js.UndefOr[String] = js.native
   /**
     * whether the batch upload of multiple files will be asynchronous/in parallel.
     * @default true
     */
-  var uploadAsync: js.UndefOr[Boolean] = js.undefined
+  var uploadAsync: js.UndefOr[Boolean] = js.native
   /**
     * the CSS class for the file upload button. Defaults to btn btn-default.
     */
-  var uploadClass: js.UndefOr[String] = js.undefined
+  var uploadClass: js.UndefOr[String] = js.native
   /**
     * the extra data that will be passed as data to the url/AJAX server call via POST.
     * This property is only applicable for ajax uploads and when you have set a value for uploadUrl.
@@ -728,20 +729,20 @@ trait FileInputOptions extends js.Object {
     */
   var uploadExtraData: js.UndefOr[
     js.Object | (js.Function2[/* previewId */ js.UndefOr[String], /* index */ js.UndefOr[Double], js.Object])
-  ] = js.undefined
+  ] = js.native
   /**
     * the icon to display before the label for the file upload button. Defaults to <i class="glyphicon glyphicon-upload"></i> &nbsp;.
     */
-  var uploadIcon: js.UndefOr[String] = js.undefined
+  var uploadIcon: js.UndefOr[String] = js.native
   /**
     * the label to display for the file upload button. Defaults to Upload.
     */
-  var uploadLabel: js.UndefOr[String] = js.undefined
+  var uploadLabel: js.UndefOr[String] = js.native
   /**
     * the title to display on hover for the file remove button.
     * Defaults to Upload selected files.
     */
-  var uploadTitle: js.UndefOr[String] = js.undefined
+  var uploadTitle: js.UndefOr[String] = js.native
   /**
     * the URL for the upload processing action (typically for ajax based processing).
     * Defaults to null.
@@ -751,266 +752,536 @@ trait FileInputOptions extends js.Object {
     *     The plugin automatically send $_FILES data to the server with the input `name` attribute as the key if provided.
     *     If input name is not set, the key defaults to file-data.
     */
-  var uploadUrl: js.UndefOr[String] = js.undefined
+  var uploadUrl: js.UndefOr[String] = js.native
   /**
     * whether to include initial preview file count (server uploaded files) in validating minFileCount and maxFileCount.
     * @default false
     */
-  var validateInitialCount: js.UndefOr[Boolean] = js.undefined
+  var validateInitialCount: js.UndefOr[Boolean] = js.native
   /**
     * the icon for zooming the file content in a new modal dialog.
     * This is currently applicable only for text file previews.
     * Defaults to <i class="glyphicon glyphicon-zoom-in"></i>
     */
-  var zoomIndicator: js.UndefOr[String] = js.undefined
+  var zoomIndicator: js.UndefOr[String] = js.native
 }
 
 object FileInputOptions {
   @scala.inline
-  def apply(
-    ajaxDeleteSettings: JQueryAjaxSettings = null,
-    ajaxSettings: JQueryAjaxSettings = null,
-    allowedFileExtensions: js.Array[String] = null,
-    allowedFileTypes: js.Array[image | html | text | video | audio | flash | `object`] = null,
-    allowedPreviewMimeTypes: js.Array[String] = null,
-    allowedPreviewTypes: js.Array[image | html | text | video | audio | flash | `object`] = null,
-    autoReplace: js.UndefOr[Boolean] = js.undefined,
-    browseClass: String = null,
-    browseIcon: String = null,
-    browseLabel: String = null,
-    buttonLabelClass: String = null,
-    captionClass: String = null,
-    customLayoutTags: js.Object = null,
-    customPreviewTags: js.Object = null,
-    defaultPreviewContent: String = null,
-    deleteExtraData: js.Object | js.Function0[js.Object] = null,
-    deleteUrl: String = null,
-    dropZoneEnabled: js.UndefOr[Boolean] = js.undefined,
-    dropZoneTitle: String = null,
-    dropZoneTitleClass: String = null,
-    elCaptionContainer: String = null,
-    elCaptionText: String = null,
-    elErrorContainer: String = null,
-    elPreviewContainer: String = null,
-    elPreviewImage: String = null,
-    elPreviewStatus: String = null,
-    encodeUrl: js.UndefOr[Boolean] = js.undefined,
-    fileActionSettings: FileActionSettings = null,
-    fileTypeSettings: FileTypeSettings = null,
-    focusCaptionOnBrowse: js.UndefOr[Boolean] = js.undefined,
-    focusCaptionOnClear: js.UndefOr[Boolean] = js.undefined,
-    hideThumbnailContent: js.UndefOr[Boolean] = js.undefined,
-    initialCaption: String = null,
-    initialPreview: String | js.Array[_] = null,
-    initialPreviewConfig: js.Array[PreviewConfig] = null,
-    initialPreviewCount: js.UndefOr[Double] = js.undefined,
-    initialPreviewDelimiter: String = null,
-    initialPreviewShowDelete: js.UndefOr[Boolean] = js.undefined,
-    initialPreviewThumbTags: StringDictionary[String] = null,
-    language: String = null,
-    layoutTemplates: LayoutTemplates = null,
-    mainClass: String = null,
-    maxFileCount: js.UndefOr[Double] = js.undefined,
-    maxFileSize: js.UndefOr[Double] = js.undefined,
-    maxImageHeight: js.UndefOr[Double] = js.undefined,
-    maxImageWidth: js.UndefOr[Double] = js.undefined,
-    minFileCount: js.UndefOr[Double] = js.undefined,
-    minImageHeight: js.UndefOr[Double] = js.undefined,
-    msgCancelled: String = null,
-    msgErrorClass: String = null,
-    msgFileNotFound: String = null,
-    msgFileNotReadable: String = null,
-    msgFilePreviewAborted: String = null,
-    msgFilePreviewError: String = null,
-    msgFileSecured: String = null,
-    msgFilesTooLess: String = null,
-    msgFilesTooMany: String = null,
-    msgFoldersNotAllowed: String = null,
-    msgImageHeightLarge: String = null,
-    msgImageHeightSmall: String = null,
-    msgImageWidthLarge: String = null,
-    msgImageWidthSmall: String = null,
-    msgInvalidFileExtension: String = null,
-    msgInvalidFileType: String = null,
-    msgLoading: String = null,
-    msgNo: String = null,
-    msgProgress: String = null,
-    msgSelected: String = null,
-    msgSizeTooLarge: String = null,
-    msgUploadAborted: String = null,
-    msgValidationError: String = null,
-    msgValidationErrorClass: String = null,
-    msgValidationErrorIcon: String = null,
-    msgZoomModalHeading: String = null,
-    msgZoomTitle: String = null,
-    otherActionButtons: String = null,
-    overwriteInitial: js.UndefOr[Boolean] = js.undefined,
-    previewClass: String = null,
-    previewFileExtSettings: PreviewFileExtSettings = null,
-    previewFileIcon: String = null,
-    previewFileIconClass: String = null,
-    previewFileIconSettings: PreviewFileIconSettings = null,
-    previewFileType: image | text | any = null,
-    previewSettings: PreviewSettings = null,
-    previewTemplates: PreviewTemplates = null,
-    previewThumbTags: StringDictionary[String] = null,
-    progressClass: String = null,
-    progressCompleteClass: String = null,
-    progressErrorClass: String = null,
-    removeClass: String = null,
-    removeFromPreviewOnError: js.UndefOr[Boolean] = js.undefined,
-    removeIcon: String = null,
-    removeLabel: String = null,
-    removeTitle: String = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    resizeDefaultImageType: String = null,
-    resizeImage: js.UndefOr[Boolean] = js.undefined,
-    resizeImageQuality: js.UndefOr[Double] = js.undefined,
-    resizePreference: width | height = null,
-    rtl: js.UndefOr[Boolean] = js.undefined,
-    showAjaxErrorDetails: js.UndefOr[Boolean] = js.undefined,
-    showCancel: js.UndefOr[Boolean] = js.undefined,
-    showCaption: js.UndefOr[Boolean] = js.undefined,
-    showClose: js.UndefOr[Boolean] = js.undefined,
-    showPreview: js.UndefOr[Boolean] = js.undefined,
-    showRemove: js.UndefOr[Boolean] = js.undefined,
-    showUpload: js.UndefOr[Boolean] = js.undefined,
-    showUploadedThumbs: js.UndefOr[Boolean] = js.undefined,
-    slugCallback: /* filename */ String => String = null,
-    textEncoding: String = null,
-    theme: String = null,
-    uploadAsync: js.UndefOr[Boolean] = js.undefined,
-    uploadClass: String = null,
-    uploadExtraData: js.Object | (js.Function2[/* previewId */ js.UndefOr[String], /* index */ js.UndefOr[Double], js.Object]) = null,
-    uploadIcon: String = null,
-    uploadLabel: String = null,
-    uploadTitle: String = null,
-    uploadUrl: String = null,
-    validateInitialCount: js.UndefOr[Boolean] = js.undefined,
-    zoomIndicator: String = null
-  ): FileInputOptions = {
+  def apply(): FileInputOptions = {
     val __obj = js.Dynamic.literal()
-    if (ajaxDeleteSettings != null) __obj.updateDynamic("ajaxDeleteSettings")(ajaxDeleteSettings.asInstanceOf[js.Any])
-    if (ajaxSettings != null) __obj.updateDynamic("ajaxSettings")(ajaxSettings.asInstanceOf[js.Any])
-    if (allowedFileExtensions != null) __obj.updateDynamic("allowedFileExtensions")(allowedFileExtensions.asInstanceOf[js.Any])
-    if (allowedFileTypes != null) __obj.updateDynamic("allowedFileTypes")(allowedFileTypes.asInstanceOf[js.Any])
-    if (allowedPreviewMimeTypes != null) __obj.updateDynamic("allowedPreviewMimeTypes")(allowedPreviewMimeTypes.asInstanceOf[js.Any])
-    if (allowedPreviewTypes != null) __obj.updateDynamic("allowedPreviewTypes")(allowedPreviewTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReplace)) __obj.updateDynamic("autoReplace")(autoReplace.get.asInstanceOf[js.Any])
-    if (browseClass != null) __obj.updateDynamic("browseClass")(browseClass.asInstanceOf[js.Any])
-    if (browseIcon != null) __obj.updateDynamic("browseIcon")(browseIcon.asInstanceOf[js.Any])
-    if (browseLabel != null) __obj.updateDynamic("browseLabel")(browseLabel.asInstanceOf[js.Any])
-    if (buttonLabelClass != null) __obj.updateDynamic("buttonLabelClass")(buttonLabelClass.asInstanceOf[js.Any])
-    if (captionClass != null) __obj.updateDynamic("captionClass")(captionClass.asInstanceOf[js.Any])
-    if (customLayoutTags != null) __obj.updateDynamic("customLayoutTags")(customLayoutTags.asInstanceOf[js.Any])
-    if (customPreviewTags != null) __obj.updateDynamic("customPreviewTags")(customPreviewTags.asInstanceOf[js.Any])
-    if (defaultPreviewContent != null) __obj.updateDynamic("defaultPreviewContent")(defaultPreviewContent.asInstanceOf[js.Any])
-    if (deleteExtraData != null) __obj.updateDynamic("deleteExtraData")(deleteExtraData.asInstanceOf[js.Any])
-    if (deleteUrl != null) __obj.updateDynamic("deleteUrl")(deleteUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropZoneEnabled)) __obj.updateDynamic("dropZoneEnabled")(dropZoneEnabled.get.asInstanceOf[js.Any])
-    if (dropZoneTitle != null) __obj.updateDynamic("dropZoneTitle")(dropZoneTitle.asInstanceOf[js.Any])
-    if (dropZoneTitleClass != null) __obj.updateDynamic("dropZoneTitleClass")(dropZoneTitleClass.asInstanceOf[js.Any])
-    if (elCaptionContainer != null) __obj.updateDynamic("elCaptionContainer")(elCaptionContainer.asInstanceOf[js.Any])
-    if (elCaptionText != null) __obj.updateDynamic("elCaptionText")(elCaptionText.asInstanceOf[js.Any])
-    if (elErrorContainer != null) __obj.updateDynamic("elErrorContainer")(elErrorContainer.asInstanceOf[js.Any])
-    if (elPreviewContainer != null) __obj.updateDynamic("elPreviewContainer")(elPreviewContainer.asInstanceOf[js.Any])
-    if (elPreviewImage != null) __obj.updateDynamic("elPreviewImage")(elPreviewImage.asInstanceOf[js.Any])
-    if (elPreviewStatus != null) __obj.updateDynamic("elPreviewStatus")(elPreviewStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(encodeUrl)) __obj.updateDynamic("encodeUrl")(encodeUrl.get.asInstanceOf[js.Any])
-    if (fileActionSettings != null) __obj.updateDynamic("fileActionSettings")(fileActionSettings.asInstanceOf[js.Any])
-    if (fileTypeSettings != null) __obj.updateDynamic("fileTypeSettings")(fileTypeSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusCaptionOnBrowse)) __obj.updateDynamic("focusCaptionOnBrowse")(focusCaptionOnBrowse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusCaptionOnClear)) __obj.updateDynamic("focusCaptionOnClear")(focusCaptionOnClear.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideThumbnailContent)) __obj.updateDynamic("hideThumbnailContent")(hideThumbnailContent.get.asInstanceOf[js.Any])
-    if (initialCaption != null) __obj.updateDynamic("initialCaption")(initialCaption.asInstanceOf[js.Any])
-    if (initialPreview != null) __obj.updateDynamic("initialPreview")(initialPreview.asInstanceOf[js.Any])
-    if (initialPreviewConfig != null) __obj.updateDynamic("initialPreviewConfig")(initialPreviewConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialPreviewCount)) __obj.updateDynamic("initialPreviewCount")(initialPreviewCount.get.asInstanceOf[js.Any])
-    if (initialPreviewDelimiter != null) __obj.updateDynamic("initialPreviewDelimiter")(initialPreviewDelimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialPreviewShowDelete)) __obj.updateDynamic("initialPreviewShowDelete")(initialPreviewShowDelete.get.asInstanceOf[js.Any])
-    if (initialPreviewThumbTags != null) __obj.updateDynamic("initialPreviewThumbTags")(initialPreviewThumbTags.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (layoutTemplates != null) __obj.updateDynamic("layoutTemplates")(layoutTemplates.asInstanceOf[js.Any])
-    if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFileCount)) __obj.updateDynamic("maxFileCount")(maxFileCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFileSize)) __obj.updateDynamic("maxFileSize")(maxFileSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxImageHeight)) __obj.updateDynamic("maxImageHeight")(maxImageHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxImageWidth)) __obj.updateDynamic("maxImageWidth")(maxImageWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minFileCount)) __obj.updateDynamic("minFileCount")(minFileCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minImageHeight)) __obj.updateDynamic("minImageHeight")(minImageHeight.get.asInstanceOf[js.Any])
-    if (msgCancelled != null) __obj.updateDynamic("msgCancelled")(msgCancelled.asInstanceOf[js.Any])
-    if (msgErrorClass != null) __obj.updateDynamic("msgErrorClass")(msgErrorClass.asInstanceOf[js.Any])
-    if (msgFileNotFound != null) __obj.updateDynamic("msgFileNotFound")(msgFileNotFound.asInstanceOf[js.Any])
-    if (msgFileNotReadable != null) __obj.updateDynamic("msgFileNotReadable")(msgFileNotReadable.asInstanceOf[js.Any])
-    if (msgFilePreviewAborted != null) __obj.updateDynamic("msgFilePreviewAborted")(msgFilePreviewAborted.asInstanceOf[js.Any])
-    if (msgFilePreviewError != null) __obj.updateDynamic("msgFilePreviewError")(msgFilePreviewError.asInstanceOf[js.Any])
-    if (msgFileSecured != null) __obj.updateDynamic("msgFileSecured")(msgFileSecured.asInstanceOf[js.Any])
-    if (msgFilesTooLess != null) __obj.updateDynamic("msgFilesTooLess")(msgFilesTooLess.asInstanceOf[js.Any])
-    if (msgFilesTooMany != null) __obj.updateDynamic("msgFilesTooMany")(msgFilesTooMany.asInstanceOf[js.Any])
-    if (msgFoldersNotAllowed != null) __obj.updateDynamic("msgFoldersNotAllowed")(msgFoldersNotAllowed.asInstanceOf[js.Any])
-    if (msgImageHeightLarge != null) __obj.updateDynamic("msgImageHeightLarge")(msgImageHeightLarge.asInstanceOf[js.Any])
-    if (msgImageHeightSmall != null) __obj.updateDynamic("msgImageHeightSmall")(msgImageHeightSmall.asInstanceOf[js.Any])
-    if (msgImageWidthLarge != null) __obj.updateDynamic("msgImageWidthLarge")(msgImageWidthLarge.asInstanceOf[js.Any])
-    if (msgImageWidthSmall != null) __obj.updateDynamic("msgImageWidthSmall")(msgImageWidthSmall.asInstanceOf[js.Any])
-    if (msgInvalidFileExtension != null) __obj.updateDynamic("msgInvalidFileExtension")(msgInvalidFileExtension.asInstanceOf[js.Any])
-    if (msgInvalidFileType != null) __obj.updateDynamic("msgInvalidFileType")(msgInvalidFileType.asInstanceOf[js.Any])
-    if (msgLoading != null) __obj.updateDynamic("msgLoading")(msgLoading.asInstanceOf[js.Any])
-    if (msgNo != null) __obj.updateDynamic("msgNo")(msgNo.asInstanceOf[js.Any])
-    if (msgProgress != null) __obj.updateDynamic("msgProgress")(msgProgress.asInstanceOf[js.Any])
-    if (msgSelected != null) __obj.updateDynamic("msgSelected")(msgSelected.asInstanceOf[js.Any])
-    if (msgSizeTooLarge != null) __obj.updateDynamic("msgSizeTooLarge")(msgSizeTooLarge.asInstanceOf[js.Any])
-    if (msgUploadAborted != null) __obj.updateDynamic("msgUploadAborted")(msgUploadAborted.asInstanceOf[js.Any])
-    if (msgValidationError != null) __obj.updateDynamic("msgValidationError")(msgValidationError.asInstanceOf[js.Any])
-    if (msgValidationErrorClass != null) __obj.updateDynamic("msgValidationErrorClass")(msgValidationErrorClass.asInstanceOf[js.Any])
-    if (msgValidationErrorIcon != null) __obj.updateDynamic("msgValidationErrorIcon")(msgValidationErrorIcon.asInstanceOf[js.Any])
-    if (msgZoomModalHeading != null) __obj.updateDynamic("msgZoomModalHeading")(msgZoomModalHeading.asInstanceOf[js.Any])
-    if (msgZoomTitle != null) __obj.updateDynamic("msgZoomTitle")(msgZoomTitle.asInstanceOf[js.Any])
-    if (otherActionButtons != null) __obj.updateDynamic("otherActionButtons")(otherActionButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwriteInitial)) __obj.updateDynamic("overwriteInitial")(overwriteInitial.get.asInstanceOf[js.Any])
-    if (previewClass != null) __obj.updateDynamic("previewClass")(previewClass.asInstanceOf[js.Any])
-    if (previewFileExtSettings != null) __obj.updateDynamic("previewFileExtSettings")(previewFileExtSettings.asInstanceOf[js.Any])
-    if (previewFileIcon != null) __obj.updateDynamic("previewFileIcon")(previewFileIcon.asInstanceOf[js.Any])
-    if (previewFileIconClass != null) __obj.updateDynamic("previewFileIconClass")(previewFileIconClass.asInstanceOf[js.Any])
-    if (previewFileIconSettings != null) __obj.updateDynamic("previewFileIconSettings")(previewFileIconSettings.asInstanceOf[js.Any])
-    if (previewFileType != null) __obj.updateDynamic("previewFileType")(previewFileType.asInstanceOf[js.Any])
-    if (previewSettings != null) __obj.updateDynamic("previewSettings")(previewSettings.asInstanceOf[js.Any])
-    if (previewTemplates != null) __obj.updateDynamic("previewTemplates")(previewTemplates.asInstanceOf[js.Any])
-    if (previewThumbTags != null) __obj.updateDynamic("previewThumbTags")(previewThumbTags.asInstanceOf[js.Any])
-    if (progressClass != null) __obj.updateDynamic("progressClass")(progressClass.asInstanceOf[js.Any])
-    if (progressCompleteClass != null) __obj.updateDynamic("progressCompleteClass")(progressCompleteClass.asInstanceOf[js.Any])
-    if (progressErrorClass != null) __obj.updateDynamic("progressErrorClass")(progressErrorClass.asInstanceOf[js.Any])
-    if (removeClass != null) __obj.updateDynamic("removeClass")(removeClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeFromPreviewOnError)) __obj.updateDynamic("removeFromPreviewOnError")(removeFromPreviewOnError.get.asInstanceOf[js.Any])
-    if (removeIcon != null) __obj.updateDynamic("removeIcon")(removeIcon.asInstanceOf[js.Any])
-    if (removeLabel != null) __obj.updateDynamic("removeLabel")(removeLabel.asInstanceOf[js.Any])
-    if (removeTitle != null) __obj.updateDynamic("removeTitle")(removeTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (resizeDefaultImageType != null) __obj.updateDynamic("resizeDefaultImageType")(resizeDefaultImageType.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeImage)) __obj.updateDynamic("resizeImage")(resizeImage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeImageQuality)) __obj.updateDynamic("resizeImageQuality")(resizeImageQuality.get.asInstanceOf[js.Any])
-    if (resizePreference != null) __obj.updateDynamic("resizePreference")(resizePreference.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAjaxErrorDetails)) __obj.updateDynamic("showAjaxErrorDetails")(showAjaxErrorDetails.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCaption)) __obj.updateDynamic("showCaption")(showCaption.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRemove)) __obj.updateDynamic("showRemove")(showRemove.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showUpload)) __obj.updateDynamic("showUpload")(showUpload.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showUploadedThumbs)) __obj.updateDynamic("showUploadedThumbs")(showUploadedThumbs.get.asInstanceOf[js.Any])
-    if (slugCallback != null) __obj.updateDynamic("slugCallback")(js.Any.fromFunction1(slugCallback))
-    if (textEncoding != null) __obj.updateDynamic("textEncoding")(textEncoding.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(uploadAsync)) __obj.updateDynamic("uploadAsync")(uploadAsync.get.asInstanceOf[js.Any])
-    if (uploadClass != null) __obj.updateDynamic("uploadClass")(uploadClass.asInstanceOf[js.Any])
-    if (uploadExtraData != null) __obj.updateDynamic("uploadExtraData")(uploadExtraData.asInstanceOf[js.Any])
-    if (uploadIcon != null) __obj.updateDynamic("uploadIcon")(uploadIcon.asInstanceOf[js.Any])
-    if (uploadLabel != null) __obj.updateDynamic("uploadLabel")(uploadLabel.asInstanceOf[js.Any])
-    if (uploadTitle != null) __obj.updateDynamic("uploadTitle")(uploadTitle.asInstanceOf[js.Any])
-    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateInitialCount)) __obj.updateDynamic("validateInitialCount")(validateInitialCount.get.asInstanceOf[js.Any])
-    if (zoomIndicator != null) __obj.updateDynamic("zoomIndicator")(zoomIndicator.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileInputOptions]
   }
+  @scala.inline
+  implicit class FileInputOptionsOps[Self <: FileInputOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAjaxDeleteSettings(value: JQueryAjaxSettings): Self = this.set("ajaxDeleteSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAjaxDeleteSettings: Self = this.set("ajaxDeleteSettings", js.undefined)
+    @scala.inline
+    def setAjaxSettings(value: JQueryAjaxSettings): Self = this.set("ajaxSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAjaxSettings: Self = this.set("ajaxSettings", js.undefined)
+    @scala.inline
+    def setAllowedFileExtensionsVarargs(value: String*): Self = this.set("allowedFileExtensions", js.Array(value :_*))
+    @scala.inline
+    def setAllowedFileExtensions(value: js.Array[String]): Self = this.set("allowedFileExtensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedFileExtensions: Self = this.set("allowedFileExtensions", js.undefined)
+    @scala.inline
+    def setAllowedFileTypesVarargs(value: (image | html | text | video | audio | flash | `object`)*): Self = this.set("allowedFileTypes", js.Array(value :_*))
+    @scala.inline
+    def setAllowedFileTypes(value: js.Array[image | html | text | video | audio | flash | `object`]): Self = this.set("allowedFileTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedFileTypes: Self = this.set("allowedFileTypes", js.undefined)
+    @scala.inline
+    def setAllowedPreviewMimeTypesVarargs(value: String*): Self = this.set("allowedPreviewMimeTypes", js.Array(value :_*))
+    @scala.inline
+    def setAllowedPreviewMimeTypes(value: js.Array[String]): Self = this.set("allowedPreviewMimeTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedPreviewMimeTypes: Self = this.set("allowedPreviewMimeTypes", js.undefined)
+    @scala.inline
+    def setAllowedPreviewTypesVarargs(value: (image | html | text | video | audio | flash | `object`)*): Self = this.set("allowedPreviewTypes", js.Array(value :_*))
+    @scala.inline
+    def setAllowedPreviewTypes(value: js.Array[image | html | text | video | audio | flash | `object`]): Self = this.set("allowedPreviewTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedPreviewTypes: Self = this.set("allowedPreviewTypes", js.undefined)
+    @scala.inline
+    def setAutoReplace(value: Boolean): Self = this.set("autoReplace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoReplace: Self = this.set("autoReplace", js.undefined)
+    @scala.inline
+    def setBrowseClass(value: String): Self = this.set("browseClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowseClass: Self = this.set("browseClass", js.undefined)
+    @scala.inline
+    def setBrowseIcon(value: String): Self = this.set("browseIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowseIcon: Self = this.set("browseIcon", js.undefined)
+    @scala.inline
+    def setBrowseLabel(value: String): Self = this.set("browseLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowseLabel: Self = this.set("browseLabel", js.undefined)
+    @scala.inline
+    def setButtonLabelClass(value: String): Self = this.set("buttonLabelClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonLabelClass: Self = this.set("buttonLabelClass", js.undefined)
+    @scala.inline
+    def setCaptionClass(value: String): Self = this.set("captionClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionClass: Self = this.set("captionClass", js.undefined)
+    @scala.inline
+    def setCustomLayoutTags(value: js.Object): Self = this.set("customLayoutTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLayoutTags: Self = this.set("customLayoutTags", js.undefined)
+    @scala.inline
+    def setCustomPreviewTags(value: js.Object): Self = this.set("customPreviewTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomPreviewTags: Self = this.set("customPreviewTags", js.undefined)
+    @scala.inline
+    def setDefaultPreviewContent(value: String): Self = this.set("defaultPreviewContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPreviewContent: Self = this.set("defaultPreviewContent", js.undefined)
+    @scala.inline
+    def setDeleteExtraDataFunction0(value: () => js.Object): Self = this.set("deleteExtraData", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDeleteExtraData(value: js.Object | js.Function0[js.Object]): Self = this.set("deleteExtraData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteExtraData: Self = this.set("deleteExtraData", js.undefined)
+    @scala.inline
+    def setDeleteUrl(value: String): Self = this.set("deleteUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteUrl: Self = this.set("deleteUrl", js.undefined)
+    @scala.inline
+    def setDropZoneEnabled(value: Boolean): Self = this.set("dropZoneEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropZoneEnabled: Self = this.set("dropZoneEnabled", js.undefined)
+    @scala.inline
+    def setDropZoneTitle(value: String): Self = this.set("dropZoneTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropZoneTitle: Self = this.set("dropZoneTitle", js.undefined)
+    @scala.inline
+    def setDropZoneTitleClass(value: String): Self = this.set("dropZoneTitleClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropZoneTitleClass: Self = this.set("dropZoneTitleClass", js.undefined)
+    @scala.inline
+    def setElCaptionContainer(value: String): Self = this.set("elCaptionContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElCaptionContainer: Self = this.set("elCaptionContainer", js.undefined)
+    @scala.inline
+    def setElCaptionText(value: String): Self = this.set("elCaptionText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElCaptionText: Self = this.set("elCaptionText", js.undefined)
+    @scala.inline
+    def setElErrorContainer(value: String): Self = this.set("elErrorContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElErrorContainer: Self = this.set("elErrorContainer", js.undefined)
+    @scala.inline
+    def setElPreviewContainer(value: String): Self = this.set("elPreviewContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElPreviewContainer: Self = this.set("elPreviewContainer", js.undefined)
+    @scala.inline
+    def setElPreviewImage(value: String): Self = this.set("elPreviewImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElPreviewImage: Self = this.set("elPreviewImage", js.undefined)
+    @scala.inline
+    def setElPreviewStatus(value: String): Self = this.set("elPreviewStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElPreviewStatus: Self = this.set("elPreviewStatus", js.undefined)
+    @scala.inline
+    def setEncodeUrl(value: Boolean): Self = this.set("encodeUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodeUrl: Self = this.set("encodeUrl", js.undefined)
+    @scala.inline
+    def setFileActionSettings(value: FileActionSettings): Self = this.set("fileActionSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileActionSettings: Self = this.set("fileActionSettings", js.undefined)
+    @scala.inline
+    def setFileTypeSettings(value: FileTypeSettings): Self = this.set("fileTypeSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileTypeSettings: Self = this.set("fileTypeSettings", js.undefined)
+    @scala.inline
+    def setFocusCaptionOnBrowse(value: Boolean): Self = this.set("focusCaptionOnBrowse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusCaptionOnBrowse: Self = this.set("focusCaptionOnBrowse", js.undefined)
+    @scala.inline
+    def setFocusCaptionOnClear(value: Boolean): Self = this.set("focusCaptionOnClear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusCaptionOnClear: Self = this.set("focusCaptionOnClear", js.undefined)
+    @scala.inline
+    def setHideThumbnailContent(value: Boolean): Self = this.set("hideThumbnailContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideThumbnailContent: Self = this.set("hideThumbnailContent", js.undefined)
+    @scala.inline
+    def setInitialCaption(value: String): Self = this.set("initialCaption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialCaption: Self = this.set("initialCaption", js.undefined)
+    @scala.inline
+    def setInitialPreviewVarargs(value: js.Any*): Self = this.set("initialPreview", js.Array(value :_*))
+    @scala.inline
+    def setInitialPreview(value: String | js.Array[_]): Self = this.set("initialPreview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialPreview: Self = this.set("initialPreview", js.undefined)
+    @scala.inline
+    def setInitialPreviewConfigVarargs(value: PreviewConfig*): Self = this.set("initialPreviewConfig", js.Array(value :_*))
+    @scala.inline
+    def setInitialPreviewConfig(value: js.Array[PreviewConfig]): Self = this.set("initialPreviewConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialPreviewConfig: Self = this.set("initialPreviewConfig", js.undefined)
+    @scala.inline
+    def setInitialPreviewCount(value: Double): Self = this.set("initialPreviewCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialPreviewCount: Self = this.set("initialPreviewCount", js.undefined)
+    @scala.inline
+    def setInitialPreviewDelimiter(value: String): Self = this.set("initialPreviewDelimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialPreviewDelimiter: Self = this.set("initialPreviewDelimiter", js.undefined)
+    @scala.inline
+    def setInitialPreviewShowDelete(value: Boolean): Self = this.set("initialPreviewShowDelete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialPreviewShowDelete: Self = this.set("initialPreviewShowDelete", js.undefined)
+    @scala.inline
+    def setInitialPreviewThumbTags(value: StringDictionary[String]): Self = this.set("initialPreviewThumbTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialPreviewThumbTags: Self = this.set("initialPreviewThumbTags", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLayoutTemplates(value: LayoutTemplates): Self = this.set("layoutTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayoutTemplates: Self = this.set("layoutTemplates", js.undefined)
+    @scala.inline
+    def setMainClass(value: String): Self = this.set("mainClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainClass: Self = this.set("mainClass", js.undefined)
+    @scala.inline
+    def setMaxFileCount(value: Double): Self = this.set("maxFileCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFileCount: Self = this.set("maxFileCount", js.undefined)
+    @scala.inline
+    def setMaxFileSize(value: Double): Self = this.set("maxFileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFileSize: Self = this.set("maxFileSize", js.undefined)
+    @scala.inline
+    def setMaxImageHeight(value: Double): Self = this.set("maxImageHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxImageHeight: Self = this.set("maxImageHeight", js.undefined)
+    @scala.inline
+    def setMaxImageWidth(value: Double): Self = this.set("maxImageWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxImageWidth: Self = this.set("maxImageWidth", js.undefined)
+    @scala.inline
+    def setMinFileCount(value: Double): Self = this.set("minFileCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinFileCount: Self = this.set("minFileCount", js.undefined)
+    @scala.inline
+    def setMinImageHeight(value: Double): Self = this.set("minImageHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinImageHeight: Self = this.set("minImageHeight", js.undefined)
+    @scala.inline
+    def setMsgCancelled(value: String): Self = this.set("msgCancelled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgCancelled: Self = this.set("msgCancelled", js.undefined)
+    @scala.inline
+    def setMsgErrorClass(value: String): Self = this.set("msgErrorClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgErrorClass: Self = this.set("msgErrorClass", js.undefined)
+    @scala.inline
+    def setMsgFileNotFound(value: String): Self = this.set("msgFileNotFound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgFileNotFound: Self = this.set("msgFileNotFound", js.undefined)
+    @scala.inline
+    def setMsgFileNotReadable(value: String): Self = this.set("msgFileNotReadable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgFileNotReadable: Self = this.set("msgFileNotReadable", js.undefined)
+    @scala.inline
+    def setMsgFilePreviewAborted(value: String): Self = this.set("msgFilePreviewAborted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgFilePreviewAborted: Self = this.set("msgFilePreviewAborted", js.undefined)
+    @scala.inline
+    def setMsgFilePreviewError(value: String): Self = this.set("msgFilePreviewError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgFilePreviewError: Self = this.set("msgFilePreviewError", js.undefined)
+    @scala.inline
+    def setMsgFileSecured(value: String): Self = this.set("msgFileSecured", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgFileSecured: Self = this.set("msgFileSecured", js.undefined)
+    @scala.inline
+    def setMsgFilesTooLess(value: String): Self = this.set("msgFilesTooLess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgFilesTooLess: Self = this.set("msgFilesTooLess", js.undefined)
+    @scala.inline
+    def setMsgFilesTooMany(value: String): Self = this.set("msgFilesTooMany", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgFilesTooMany: Self = this.set("msgFilesTooMany", js.undefined)
+    @scala.inline
+    def setMsgFoldersNotAllowed(value: String): Self = this.set("msgFoldersNotAllowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgFoldersNotAllowed: Self = this.set("msgFoldersNotAllowed", js.undefined)
+    @scala.inline
+    def setMsgImageHeightLarge(value: String): Self = this.set("msgImageHeightLarge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgImageHeightLarge: Self = this.set("msgImageHeightLarge", js.undefined)
+    @scala.inline
+    def setMsgImageHeightSmall(value: String): Self = this.set("msgImageHeightSmall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgImageHeightSmall: Self = this.set("msgImageHeightSmall", js.undefined)
+    @scala.inline
+    def setMsgImageWidthLarge(value: String): Self = this.set("msgImageWidthLarge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgImageWidthLarge: Self = this.set("msgImageWidthLarge", js.undefined)
+    @scala.inline
+    def setMsgImageWidthSmall(value: String): Self = this.set("msgImageWidthSmall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgImageWidthSmall: Self = this.set("msgImageWidthSmall", js.undefined)
+    @scala.inline
+    def setMsgInvalidFileExtension(value: String): Self = this.set("msgInvalidFileExtension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgInvalidFileExtension: Self = this.set("msgInvalidFileExtension", js.undefined)
+    @scala.inline
+    def setMsgInvalidFileType(value: String): Self = this.set("msgInvalidFileType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgInvalidFileType: Self = this.set("msgInvalidFileType", js.undefined)
+    @scala.inline
+    def setMsgLoading(value: String): Self = this.set("msgLoading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgLoading: Self = this.set("msgLoading", js.undefined)
+    @scala.inline
+    def setMsgNo(value: String): Self = this.set("msgNo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgNo: Self = this.set("msgNo", js.undefined)
+    @scala.inline
+    def setMsgProgress(value: String): Self = this.set("msgProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgProgress: Self = this.set("msgProgress", js.undefined)
+    @scala.inline
+    def setMsgSelected(value: String): Self = this.set("msgSelected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgSelected: Self = this.set("msgSelected", js.undefined)
+    @scala.inline
+    def setMsgSizeTooLarge(value: String): Self = this.set("msgSizeTooLarge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgSizeTooLarge: Self = this.set("msgSizeTooLarge", js.undefined)
+    @scala.inline
+    def setMsgUploadAborted(value: String): Self = this.set("msgUploadAborted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgUploadAborted: Self = this.set("msgUploadAborted", js.undefined)
+    @scala.inline
+    def setMsgValidationError(value: String): Self = this.set("msgValidationError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgValidationError: Self = this.set("msgValidationError", js.undefined)
+    @scala.inline
+    def setMsgValidationErrorClass(value: String): Self = this.set("msgValidationErrorClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgValidationErrorClass: Self = this.set("msgValidationErrorClass", js.undefined)
+    @scala.inline
+    def setMsgValidationErrorIcon(value: String): Self = this.set("msgValidationErrorIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgValidationErrorIcon: Self = this.set("msgValidationErrorIcon", js.undefined)
+    @scala.inline
+    def setMsgZoomModalHeading(value: String): Self = this.set("msgZoomModalHeading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgZoomModalHeading: Self = this.set("msgZoomModalHeading", js.undefined)
+    @scala.inline
+    def setMsgZoomTitle(value: String): Self = this.set("msgZoomTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsgZoomTitle: Self = this.set("msgZoomTitle", js.undefined)
+    @scala.inline
+    def setOtherActionButtons(value: String): Self = this.set("otherActionButtons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtherActionButtons: Self = this.set("otherActionButtons", js.undefined)
+    @scala.inline
+    def setOverwriteInitial(value: Boolean): Self = this.set("overwriteInitial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverwriteInitial: Self = this.set("overwriteInitial", js.undefined)
+    @scala.inline
+    def setPreviewClass(value: String): Self = this.set("previewClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewClass: Self = this.set("previewClass", js.undefined)
+    @scala.inline
+    def setPreviewFileExtSettings(value: PreviewFileExtSettings): Self = this.set("previewFileExtSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewFileExtSettings: Self = this.set("previewFileExtSettings", js.undefined)
+    @scala.inline
+    def setPreviewFileIcon(value: String): Self = this.set("previewFileIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewFileIcon: Self = this.set("previewFileIcon", js.undefined)
+    @scala.inline
+    def setPreviewFileIconClass(value: String): Self = this.set("previewFileIconClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewFileIconClass: Self = this.set("previewFileIconClass", js.undefined)
+    @scala.inline
+    def setPreviewFileIconSettings(value: PreviewFileIconSettings): Self = this.set("previewFileIconSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewFileIconSettings: Self = this.set("previewFileIconSettings", js.undefined)
+    @scala.inline
+    def setPreviewFileType(value: image | text | any): Self = this.set("previewFileType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewFileType: Self = this.set("previewFileType", js.undefined)
+    @scala.inline
+    def setPreviewSettings(value: PreviewSettings): Self = this.set("previewSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewSettings: Self = this.set("previewSettings", js.undefined)
+    @scala.inline
+    def setPreviewTemplates(value: PreviewTemplates): Self = this.set("previewTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewTemplates: Self = this.set("previewTemplates", js.undefined)
+    @scala.inline
+    def setPreviewThumbTags(value: StringDictionary[String]): Self = this.set("previewThumbTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviewThumbTags: Self = this.set("previewThumbTags", js.undefined)
+    @scala.inline
+    def setProgressClass(value: String): Self = this.set("progressClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressClass: Self = this.set("progressClass", js.undefined)
+    @scala.inline
+    def setProgressCompleteClass(value: String): Self = this.set("progressCompleteClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressCompleteClass: Self = this.set("progressCompleteClass", js.undefined)
+    @scala.inline
+    def setProgressErrorClass(value: String): Self = this.set("progressErrorClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressErrorClass: Self = this.set("progressErrorClass", js.undefined)
+    @scala.inline
+    def setRemoveClass(value: String): Self = this.set("removeClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveClass: Self = this.set("removeClass", js.undefined)
+    @scala.inline
+    def setRemoveFromPreviewOnError(value: Boolean): Self = this.set("removeFromPreviewOnError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveFromPreviewOnError: Self = this.set("removeFromPreviewOnError", js.undefined)
+    @scala.inline
+    def setRemoveIcon(value: String): Self = this.set("removeIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveIcon: Self = this.set("removeIcon", js.undefined)
+    @scala.inline
+    def setRemoveLabel(value: String): Self = this.set("removeLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveLabel: Self = this.set("removeLabel", js.undefined)
+    @scala.inline
+    def setRemoveTitle(value: String): Self = this.set("removeTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveTitle: Self = this.set("removeTitle", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setResizeDefaultImageType(value: String): Self = this.set("resizeDefaultImageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizeDefaultImageType: Self = this.set("resizeDefaultImageType", js.undefined)
+    @scala.inline
+    def setResizeImage(value: Boolean): Self = this.set("resizeImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizeImage: Self = this.set("resizeImage", js.undefined)
+    @scala.inline
+    def setResizeImageQuality(value: Double): Self = this.set("resizeImageQuality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizeImageQuality: Self = this.set("resizeImageQuality", js.undefined)
+    @scala.inline
+    def setResizePreference(value: width | height): Self = this.set("resizePreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizePreference: Self = this.set("resizePreference", js.undefined)
+    @scala.inline
+    def setRtl(value: Boolean): Self = this.set("rtl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtl: Self = this.set("rtl", js.undefined)
+    @scala.inline
+    def setShowAjaxErrorDetails(value: Boolean): Self = this.set("showAjaxErrorDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAjaxErrorDetails: Self = this.set("showAjaxErrorDetails", js.undefined)
+    @scala.inline
+    def setShowCancel(value: Boolean): Self = this.set("showCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCancel: Self = this.set("showCancel", js.undefined)
+    @scala.inline
+    def setShowCaption(value: Boolean): Self = this.set("showCaption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCaption: Self = this.set("showCaption", js.undefined)
+    @scala.inline
+    def setShowClose(value: Boolean): Self = this.set("showClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowClose: Self = this.set("showClose", js.undefined)
+    @scala.inline
+    def setShowPreview(value: Boolean): Self = this.set("showPreview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPreview: Self = this.set("showPreview", js.undefined)
+    @scala.inline
+    def setShowRemove(value: Boolean): Self = this.set("showRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowRemove: Self = this.set("showRemove", js.undefined)
+    @scala.inline
+    def setShowUpload(value: Boolean): Self = this.set("showUpload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowUpload: Self = this.set("showUpload", js.undefined)
+    @scala.inline
+    def setShowUploadedThumbs(value: Boolean): Self = this.set("showUploadedThumbs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowUploadedThumbs: Self = this.set("showUploadedThumbs", js.undefined)
+    @scala.inline
+    def setSlugCallback(value: /* filename */ String => String): Self = this.set("slugCallback", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSlugCallback: Self = this.set("slugCallback", js.undefined)
+    @scala.inline
+    def setTextEncoding(value: String): Self = this.set("textEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextEncoding: Self = this.set("textEncoding", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setUploadAsync(value: Boolean): Self = this.set("uploadAsync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadAsync: Self = this.set("uploadAsync", js.undefined)
+    @scala.inline
+    def setUploadClass(value: String): Self = this.set("uploadClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadClass: Self = this.set("uploadClass", js.undefined)
+    @scala.inline
+    def setUploadExtraDataFunction2(value: (/* previewId */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => js.Object): Self = this.set("uploadExtraData", js.Any.fromFunction2(value))
+    @scala.inline
+    def setUploadExtraData(
+      value: js.Object | (js.Function2[/* previewId */ js.UndefOr[String], /* index */ js.UndefOr[Double], js.Object])
+    ): Self = this.set("uploadExtraData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadExtraData: Self = this.set("uploadExtraData", js.undefined)
+    @scala.inline
+    def setUploadIcon(value: String): Self = this.set("uploadIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadIcon: Self = this.set("uploadIcon", js.undefined)
+    @scala.inline
+    def setUploadLabel(value: String): Self = this.set("uploadLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadLabel: Self = this.set("uploadLabel", js.undefined)
+    @scala.inline
+    def setUploadTitle(value: String): Self = this.set("uploadTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadTitle: Self = this.set("uploadTitle", js.undefined)
+    @scala.inline
+    def setUploadUrl(value: String): Self = this.set("uploadUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadUrl: Self = this.set("uploadUrl", js.undefined)
+    @scala.inline
+    def setValidateInitialCount(value: Boolean): Self = this.set("validateInitialCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateInitialCount: Self = this.set("validateInitialCount", js.undefined)
+    @scala.inline
+    def setZoomIndicator(value: String): Self = this.set("zoomIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomIndicator: Self = this.set("zoomIndicator", js.undefined)
+  }
+  
 }
 

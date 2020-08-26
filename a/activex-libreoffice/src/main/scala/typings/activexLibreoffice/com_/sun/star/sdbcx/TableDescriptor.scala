@@ -17,16 +17,17 @@ import scala.scalajs.js.annotation._
   * appended at the database.
   * @see com.sun.star.sdbcx.Table
   */
+@js.native
 trait TableDescriptor
   extends Descriptor
      with XColumnsSupplier
      with XKeysSupplier {
   /** is the name of the table catalog. */
-  var CatalogName: String
+  var CatalogName: String = js.native
   /** supplies a comment on the table, Could be empty if not supported by the driver. */
-  var Description: String
+  var Description: String = js.native
   /** is the name of the table schema. */
-  var SchemaName: String
+  var SchemaName: String = js.native
 }
 
 object TableDescriptor {
@@ -55,5 +56,24 @@ object TableDescriptor {
     val __obj = js.Dynamic.literal(CatalogName = CatalogName.asInstanceOf[js.Any], Columns = Columns.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Keys = Keys.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getColumns = js.Any.fromFunction0(getColumns), getKeys = js.Any.fromFunction0(getKeys), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[TableDescriptor]
   }
+  @scala.inline
+  implicit class TableDescriptorOps[Self <: TableDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCatalogName(value: String): Self = this.set("CatalogName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchemaName(value: String): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

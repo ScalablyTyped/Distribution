@@ -24,7 +24,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined typpy.typpy.IsFn & typpy.typpy.CompareFn & {  is  :typpy.typpy.CompareFn,   get  :typpy.typpy.GetFn} */
+/* Inlined typpy.typpy.IsFn & typpy.typpy.CompareFn & {  is :typpy.typpy.CompareFn,   get :typpy.typpy.GetFn} */
 @js.native
 trait TyppyFn extends js.Object {
   @JSName("get")
@@ -32,6 +32,7 @@ trait TyppyFn extends js.Object {
   @JSName("is")
   var is_Original: CompareFn = js.native
   def apply(): `true` = js.native
+  def apply(input: js.UndefOr[scala.Nothing]): undefined = js.native
   def apply(input: js.UndefOr[scala.Nothing], compareTo: undefined): `true` = js.native
   def apply(input: String): string = js.native
   def apply(input: String, compareTo: StringConstructor): `true` = js.native
@@ -56,6 +57,7 @@ trait TyppyFn extends js.Object {
   def apply(input: Double, compareTo: nan): Boolean = js.native
    // tslint:disable-line:ban-types
   def apply(input: Double, compareTo: number): Boolean = js.native
+  def apply(input: Null): `null` = js.native
   def apply(input: Null, compareTo: `null`): `true` = js.native
   def apply(input: RegExp): regexp = js.native
   def apply(input: RegExp, compareTo: RegExpConstructor): `true` = js.native

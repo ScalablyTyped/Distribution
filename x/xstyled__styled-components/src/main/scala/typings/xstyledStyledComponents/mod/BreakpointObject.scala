@@ -5,24 +5,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ Key in keyof @xstyled/styled-components.@xstyled/styled-components.Breakpoints ]:? ArgType} */
+@js.native
 trait BreakpointObject[ArgType] extends js.Object {
-  var lg: js.UndefOr[ArgType] = js.undefined
-  var md: js.UndefOr[ArgType] = js.undefined
-  var sm: js.UndefOr[ArgType] = js.undefined
-  var xl: js.UndefOr[ArgType] = js.undefined
-  var xs: js.UndefOr[ArgType] = js.undefined
+  var lg: js.UndefOr[ArgType] = js.native
+  var md: js.UndefOr[ArgType] = js.native
+  var sm: js.UndefOr[ArgType] = js.native
+  var xl: js.UndefOr[ArgType] = js.native
+  var xs: js.UndefOr[ArgType] = js.native
 }
 
 object BreakpointObject {
   @scala.inline
-  def apply[ArgType](lg: ArgType = null, md: ArgType = null, sm: ArgType = null, xl: ArgType = null, xs: ArgType = null): BreakpointObject[ArgType] = {
+  def apply[ArgType](): BreakpointObject[ArgType] = {
     val __obj = js.Dynamic.literal()
-    if (lg != null) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
-    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
-    if (sm != null) __obj.updateDynamic("sm")(sm.asInstanceOf[js.Any])
-    if (xl != null) __obj.updateDynamic("xl")(xl.asInstanceOf[js.Any])
-    if (xs != null) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreakpointObject[ArgType]]
   }
+  @scala.inline
+  implicit class BreakpointObjectOps[Self <: BreakpointObject[_], ArgType] (val x: Self with BreakpointObject[ArgType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLg(value: ArgType): Self = this.set("lg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLg: Self = this.set("lg", js.undefined)
+    @scala.inline
+    def setMd(value: ArgType): Self = this.set("md", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMd: Self = this.set("md", js.undefined)
+    @scala.inline
+    def setSm(value: ArgType): Self = this.set("sm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSm: Self = this.set("sm", js.undefined)
+    @scala.inline
+    def setXl(value: ArgType): Self = this.set("xl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXl: Self = this.set("xl", js.undefined)
+    @scala.inline
+    def setXs(value: ArgType): Self = this.set("xs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXs: Self = this.set("xs", js.undefined)
+  }
+  
 }
 

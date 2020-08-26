@@ -18,11 +18,30 @@ trait GlobalNodeGroup extends js.Object {
 
 object GlobalNodeGroup {
   @scala.inline
-  def apply(GlobalNodeGroupId: String = null, Slots: String = null): GlobalNodeGroup = {
+  def apply(): GlobalNodeGroup = {
     val __obj = js.Dynamic.literal()
-    if (GlobalNodeGroupId != null) __obj.updateDynamic("GlobalNodeGroupId")(GlobalNodeGroupId.asInstanceOf[js.Any])
-    if (Slots != null) __obj.updateDynamic("Slots")(Slots.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalNodeGroup]
   }
+  @scala.inline
+  implicit class GlobalNodeGroupOps[Self <: GlobalNodeGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGlobalNodeGroupId(value: String): Self = this.set("GlobalNodeGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalNodeGroupId: Self = this.set("GlobalNodeGroupId", js.undefined)
+    @scala.inline
+    def setSlots(value: String): Self = this.set("Slots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlots: Self = this.set("Slots", js.undefined)
+  }
+  
 }
 

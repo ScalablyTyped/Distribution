@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 class RowFocusChanged protected ()
   extends typings.sharepoint.SP.JsGrid.EventArgs.RowFocusChanged {
   def this(newRecordKey: Double, oldRecordKey: Double) = this()
-  /* CompleteClass */
-  override var newRecordKey: Double = js.native
-  /* CompleteClass */
-  override var oldRecordKey: Double = js.native
 }
 

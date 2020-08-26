@@ -24,6 +24,7 @@ object circleMod extends js.Object {
   class default protected () extends Circle {
     def this(center: Coordinate) = this()
     def this(center: Coordinate, opt_radius: Double) = this()
+    def this(center: Coordinate, opt_radius: js.UndefOr[scala.Nothing], opt_layout: GeometryLayout) = this()
     def this(center: Coordinate, opt_radius: Double, opt_layout: GeometryLayout) = this()
   }
   

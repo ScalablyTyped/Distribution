@@ -6,45 +6,45 @@ import scala.scalajs.js.annotation._
 
 /* Inlined @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataType] */
 /* Rewritten from type alias, can be one of: 
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.entries
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reduceRight
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.pop
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.every
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.join
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.sort
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reverse
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.unshift
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.toLocaleString
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.map
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.length
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.entries
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.pop
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.set
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.fill
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.join
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.copyWithin
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BYTES_PER_ELEMENT
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.buffer
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.keys
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.sort
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.forEach
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.concat
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.includes
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.slice
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valueOf
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.shift
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.push
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reverse
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flat
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.splice
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.some
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.find
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.lastIndexOf
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flatMap
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.unshift
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.filter
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.subarray
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.toString
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valueOf
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findIndex
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.indexOf
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.splice
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.push
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.concat
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.byteLength
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.fill
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.buffer
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reduceRight
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findIndex
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reduce
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.copyWithin
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.slice
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.byteLength
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.values
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BYTES_PER_ELEMENT
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flatMap
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.toLocaleString
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.every
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.lastIndexOf
   - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.byteOffset
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.length
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.set
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flat
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.shift
-  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.filter
+  - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.find
 */
 trait DataValues extends js.Object
 

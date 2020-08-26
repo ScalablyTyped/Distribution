@@ -12,13 +12,13 @@ import typings.node.anon.BaseEncodingOptionswithFiEncoding
 import typings.node.anon.EmitClose
 import typings.node.anon.Encoding
 import typings.node.anon.EncodingBufferEncoding
-import typings.node.anon.EncodingNull
 import typings.node.anon.Interval
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
 import typings.node.anon.Persistent
 import typings.node.anon.Recursive
 import typings.node.anon.WithFileTypes
+import typings.node.anon.`3`
 import typings.node.fsMod.BaseEncodingOptions
 import typings.node.fsMod.BufferEncodingOption
 import typings.node.fsMod.Dir
@@ -158,12 +158,12 @@ trait Typeoffs extends js.Object {
   def readFileSync(path: Double, options: BufferEncoding): String = js.native
   def readFileSync(path: Double, options: BaseEncodingOptionsflagst): String | Buffer = js.native
   def readFileSync(path: Double, options: EncodingBufferEncoding): String = js.native
-  def readFileSync(path: Double, options: EncodingNull): Buffer = js.native
+  def readFileSync(path: Double, options: `3`): Buffer = js.native
   def readFileSync(path: PathLike): String | Buffer = js.native
   def readFileSync(path: PathLike, options: BufferEncoding): String = js.native
   def readFileSync(path: PathLike, options: BaseEncodingOptionsflagst): String | Buffer = js.native
   def readFileSync(path: PathLike, options: EncodingBufferEncoding): String = js.native
-  def readFileSync(path: PathLike, options: EncodingNull): Buffer = js.native
+  def readFileSync(path: PathLike, options: `3`): Buffer = js.native
   @JSName("readFileSync")
   def readFileSync_Buffer(path: Double): Buffer = js.native
   @JSName("readFileSync")
@@ -217,6 +217,11 @@ trait Typeoffs extends js.Object {
   def utimesSync(path: PathLike, atime: Date, mtime: Date): Unit = js.native
   def watch(filename: PathLike): FSWatcher = js.native
   def watch(filename: PathLike, listener: js.Function2[/* event */ String, /* filename */ String, _]): FSWatcher = js.native
+  def watch(
+    filename: PathLike,
+    options: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* event */ String, /* filename */ String, Unit]
+  ): FSWatcher = js.native
   def watch(filename: PathLike, options: String): FSWatcher = js.native
   def watch(
     filename: PathLike,
@@ -249,7 +254,12 @@ trait Typeoffs extends js.Object {
   def watchFile(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
   def watchFile(
     filename: PathLike,
-    options: js.UndefOr[Interval],
+    options: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
+  ): Unit = js.native
+  def watchFile(
+    filename: PathLike,
+    options: Interval,
     listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
   ): Unit = js.native
   @JSName("watch")
@@ -269,14 +279,51 @@ trait Typeoffs extends js.Object {
   def writeFileSync(path: PathLike, data: ArrayBufferView): Unit = js.native
   def writeFileSync(path: PathLike, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView): Double = js.native
+  def writeSync(
+    fd: Double,
+    buffer: ArrayBufferView,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
+  def writeSync(
+    fd: Double,
+    buffer: ArrayBufferView,
+    offset: js.UndefOr[scala.Nothing],
+    length: Double,
+    position: Double
+  ): Double = js.native
+  def writeSync(
+    fd: Double,
+    buffer: ArrayBufferView,
+    offset: js.UndefOr[scala.Nothing],
+    length: Null,
+    position: Double
+  ): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
+  def writeSync(
+    fd: Double,
+    buffer: ArrayBufferView,
+    offset: Double,
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
+  def writeSync(
+    fd: Double,
+    buffer: ArrayBufferView,
+    offset: Null,
+    length: js.UndefOr[scala.Nothing],
+    position: Double
+  ): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
   def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
   def writeSync(fd: Double, string: String): Double = js.native
+  def writeSync(fd: Double, string: String, position: js.UndefOr[scala.Nothing], encoding: BufferEncoding): Double = js.native
   def writeSync(fd: Double, string: String, position: Double): Double = js.native
   def writeSync(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = js.native
   def writeSync(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = js.native

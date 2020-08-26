@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 class Declaration protected () extends Node {
   def this(unescapedAttrs: StringDictionary[String]) = this()
   var attrs: StringDictionary[String] = js.native
-  /* CompleteClass */
-  override def visit(visitor: IVisitor): js.Any = js.native
 }
 

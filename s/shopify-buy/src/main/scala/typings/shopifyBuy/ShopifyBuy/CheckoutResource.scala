@@ -19,9 +19,155 @@ trait CheckoutResource extends js.Object {
   def clearLineItems(checkoutId: String, lineItems: js.Array[LineItem]): js.Promise[Cart] = js.native
   def clearLineItems(checkoutId: Double, lineItems: js.Array[LineItem]): js.Promise[Cart] = js.native
   def create(): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.UndefOr[scala.Nothing],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: js.UndefOr[scala.Nothing],
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.UndefOr[scala.Nothing],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: String
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.UndefOr[scala.Nothing],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: String,
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
+  def create(email: js.UndefOr[scala.Nothing], lineItems: js.UndefOr[scala.Nothing], shippingAddress: Address): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.UndefOr[scala.Nothing],
+    shippingAddress: Address,
+    note: js.UndefOr[scala.Nothing],
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.UndefOr[scala.Nothing],
+    shippingAddress: Address,
+    note: String
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.UndefOr[scala.Nothing],
+    shippingAddress: Address,
+    note: String,
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
+  def create(email: js.UndefOr[scala.Nothing], lineItems: js.Array[LineItem]): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.Array[LineItem],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: js.UndefOr[scala.Nothing],
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.Array[LineItem],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: String
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.Array[LineItem],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: String,
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
+  def create(email: js.UndefOr[scala.Nothing], lineItems: js.Array[LineItem], shippingAddress: Address): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.Array[LineItem],
+    shippingAddress: Address,
+    note: js.UndefOr[scala.Nothing],
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.Array[LineItem],
+    shippingAddress: Address,
+    note: String
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: js.UndefOr[scala.Nothing],
+    lineItems: js.Array[LineItem],
+    shippingAddress: Address,
+    note: String,
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
   def create(email: String): js.Promise[Cart] = js.native
+  def create(
+    email: String,
+    lineItems: js.UndefOr[scala.Nothing],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: js.UndefOr[scala.Nothing],
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: String,
+    lineItems: js.UndefOr[scala.Nothing],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: String
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: String,
+    lineItems: js.UndefOr[scala.Nothing],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: String,
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
+  def create(email: String, lineItems: js.UndefOr[scala.Nothing], shippingAddress: Address): js.Promise[Cart] = js.native
+  def create(
+    email: String,
+    lineItems: js.UndefOr[scala.Nothing],
+    shippingAddress: Address,
+    note: js.UndefOr[scala.Nothing],
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
+  def create(email: String, lineItems: js.UndefOr[scala.Nothing], shippingAddress: Address, note: String): js.Promise[Cart] = js.native
+  def create(
+    email: String,
+    lineItems: js.UndefOr[scala.Nothing],
+    shippingAddress: Address,
+    note: String,
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
   def create(email: String, lineItems: js.Array[LineItem]): js.Promise[Cart] = js.native
+  def create(
+    email: String,
+    lineItems: js.Array[LineItem],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: js.UndefOr[scala.Nothing],
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: String,
+    lineItems: js.Array[LineItem],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: String
+  ): js.Promise[Cart] = js.native
+  def create(
+    email: String,
+    lineItems: js.Array[LineItem],
+    shippingAddress: js.UndefOr[scala.Nothing],
+    note: String,
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
   def create(email: String, lineItems: js.Array[LineItem], shippingAddress: Address): js.Promise[Cart] = js.native
+  def create(
+    email: String,
+    lineItems: js.Array[LineItem],
+    shippingAddress: Address,
+    note: js.UndefOr[scala.Nothing],
+    customAttributes: js.Array[AttributeInput]
+  ): js.Promise[Cart] = js.native
   def create(email: String, lineItems: js.Array[LineItem], shippingAddress: Address, note: String): js.Promise[Cart] = js.native
   def create(
     email: String,

@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebsiteScanRequest extends js.Object {
   /**
     * @param Url string
     * URL of the website to scan; should begin with http:// or https://
     */
-  var Url: String
+  var Url: String = js.native
 }
 
 @JSImport("cloudmersive-virus-api-client", "WebsiteScanRequest")

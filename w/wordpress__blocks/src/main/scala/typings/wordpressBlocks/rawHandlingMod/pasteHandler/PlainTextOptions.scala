@@ -1,34 +1,39 @@
 package typings.wordpressBlocks.rawHandlingMod.pasteHandler
 
-import typings.wordpressBlocks.wordpressBlocksStrings.AUTO
-import typings.wordpressBlocks.wordpressBlocksStrings.BLOCKS
-import typings.wordpressBlocks.wordpressBlocksStrings.INLINE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlainTextOptions
   extends BaseOptions
      with Options {
   /**
     * Plain text version.
     */
-  var plainText: String
+  var plainText: String = js.native
 }
 
 object PlainTextOptions {
   @scala.inline
-  def apply(
-    plainText: String,
-    canUserUseUnfilteredHTML: js.UndefOr[Boolean] = js.undefined,
-    mode: AUTO | INLINE | BLOCKS = null,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any = null
-  ): PlainTextOptions = {
+  def apply(plainText: String): PlainTextOptions = {
     val __obj = js.Dynamic.literal(plainText = plainText.asInstanceOf[js.Any])
-    if (!js.isUndefined(canUserUseUnfilteredHTML)) __obj.updateDynamic("canUserUseUnfilteredHTML")(canUserUseUnfilteredHTML.get.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlainTextOptions]
   }
+  @scala.inline
+  implicit class PlainTextOptionsOps[Self <: PlainTextOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlainText(value: String): Self = this.set("plainText", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -7,6 +7,7 @@ import typings.semanticUiReact.genericMod.SemanticFLOATS
 import typings.semanticUiReact.genericMod.SemanticSIZES
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
+import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.genericMod.SemanticVERTICALALIGNMENTS
 import typings.semanticUiReact.listItemMod.ListItemProps
 import typings.semanticUiReact.semanticUiReactStrings.very
@@ -15,33 +16,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrictListProps extends js.Object {
   /** A list can animate to set the current item apart from the list. */
-  var animated: js.UndefOr[Boolean] = js.undefined
+  var animated: js.UndefOr[Boolean] = js.native
   /** An element type to render as (string or function). */
-  var as: js.UndefOr[js.Any] = js.undefined
+  var as: js.UndefOr[js.Any] = js.native
   /** A list can mark items with a bullet. */
-  var bulleted: js.UndefOr[Boolean] = js.undefined
+  var bulleted: js.UndefOr[Boolean] = js.native
   /** A list can divide its items into cells. */
-  var celled: js.UndefOr[Boolean] = js.undefined
+  var celled: js.UndefOr[Boolean] = js.native
   /** Primary content. */
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.native
   /** Additional classes. */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /** Shorthand for primary content. */
-  var content: js.UndefOr[SemanticShorthandContent] = js.undefined
+  var content: js.UndefOr[SemanticShorthandContent] = js.native
   /** A list can show divisions between content. */
-  var divided: js.UndefOr[Boolean] = js.undefined
+  var divided: js.UndefOr[Boolean] = js.native
   /** An list can be floated left or right. */
-  var floated: js.UndefOr[SemanticFLOATS] = js.undefined
+  var floated: js.UndefOr[SemanticFLOATS] = js.native
   /** A list can be formatted to have items appear horizontally. */
-  var horizontal: js.UndefOr[Boolean] = js.undefined
+  var horizontal: js.UndefOr[Boolean] = js.native
   /** A list can be inverted to appear on a dark background. */
-  var inverted: js.UndefOr[Boolean] = js.undefined
+  var inverted: js.UndefOr[Boolean] = js.native
   /** Shorthand array of props for ListItem. */
-  var items: js.UndefOr[SemanticShorthandCollection[ListItemProps]] = js.undefined
+  var items: js.UndefOr[SemanticShorthandCollection[ListItemProps]] = js.native
   /** A list can be specially formatted for navigation links. */
-  var link: js.UndefOr[Boolean] = js.undefined
+  var link: js.UndefOr[Boolean] = js.native
   /**
     * onClick handler for ListItem. Mutually exclusive with children.
     *
@@ -54,63 +56,117 @@ trait StrictListProps extends js.Object {
       /* data */ ListItemProps, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** A list can be ordered numerically. */
-  var ordered: js.UndefOr[Boolean] = js.undefined
+  var ordered: js.UndefOr[Boolean] = js.native
   /** A list can relax its padding to provide more negative space. */
-  var relaxed: js.UndefOr[Boolean | very] = js.undefined
+  var relaxed: js.UndefOr[Boolean | very] = js.native
   /** A selection list formats list items as possible choices. */
-  var selection: js.UndefOr[Boolean] = js.undefined
+  var selection: js.UndefOr[Boolean] = js.native
   /** A list can vary in size. */
-  var size: js.UndefOr[SemanticSIZES] = js.undefined
+  var size: js.UndefOr[SemanticSIZES] = js.native
   /** An element inside a list can be vertically aligned. */
-  var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
+  var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.native
 }
 
 object StrictListProps {
   @scala.inline
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    as: js.Any = null,
-    bulleted: js.UndefOr[Boolean] = js.undefined,
-    celled: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    className: String = null,
-    content: SemanticShorthandContent = null,
-    divided: js.UndefOr[Boolean] = js.undefined,
-    floated: SemanticFLOATS = null,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    items: SemanticShorthandCollection[ListItemProps] = null,
-    link: js.UndefOr[Boolean] = js.undefined,
-    onItemClick: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ ListItemProps) => Unit = null,
-    ordered: js.UndefOr[Boolean] = js.undefined,
-    relaxed: Boolean | very = null,
-    selection: js.UndefOr[Boolean] = js.undefined,
-    size: SemanticSIZES = null,
-    verticalAlign: SemanticVERTICALALIGNMENTS = null
-  ): StrictListProps = {
+  def apply(): StrictListProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(bulleted)) __obj.updateDynamic("bulleted")(bulleted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(celled)) __obj.updateDynamic("celled")(celled.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(divided)) __obj.updateDynamic("divided")(divided.get.asInstanceOf[js.Any])
-    if (floated != null) __obj.updateDynamic("floated")(floated.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link.get.asInstanceOf[js.Any])
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.get.asInstanceOf[js.Any])
-    if (relaxed != null) __obj.updateDynamic("relaxed")(relaxed.asInstanceOf[js.Any])
-    if (!js.isUndefined(selection)) __obj.updateDynamic("selection")(selection.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictListProps]
   }
+  @scala.inline
+  implicit class StrictListPropsOps[Self <: StrictListProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setAs(value: js.Any): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setBulleted(value: Boolean): Self = this.set("bulleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBulleted: Self = this.set("bulleted", js.undefined)
+    @scala.inline
+    def setCelled(value: Boolean): Self = this.set("celled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCelled: Self = this.set("celled", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setContent(value: SemanticShorthandContent): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDivided(value: Boolean): Self = this.set("divided", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDivided: Self = this.set("divided", js.undefined)
+    @scala.inline
+    def setFloated(value: SemanticFLOATS): Self = this.set("floated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloated: Self = this.set("floated", js.undefined)
+    @scala.inline
+    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverted: Self = this.set("inverted", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: SemanticShorthandItem[ListItemProps]*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: SemanticShorthandCollection[ListItemProps]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setLink(value: Boolean): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setOnItemClick(
+      value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ ListItemProps) => Unit
+    ): Self = this.set("onItemClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnItemClick: Self = this.set("onItemClick", js.undefined)
+    @scala.inline
+    def setOrdered(value: Boolean): Self = this.set("ordered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrdered: Self = this.set("ordered", js.undefined)
+    @scala.inline
+    def setRelaxed(value: Boolean | very): Self = this.set("relaxed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelaxed: Self = this.set("relaxed", js.undefined)
+    @scala.inline
+    def setSelection(value: Boolean): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setSize(value: SemanticSIZES): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+  }
+  
 }
 

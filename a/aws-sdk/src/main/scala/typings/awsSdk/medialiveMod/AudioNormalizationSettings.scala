@@ -22,16 +22,34 @@ trait AudioNormalizationSettings extends js.Object {
 
 object AudioNormalizationSettings {
   @scala.inline
-  def apply(
-    Algorithm: AudioNormalizationAlgorithm = null,
-    AlgorithmControl: AudioNormalizationAlgorithmControl = null,
-    TargetLkfs: js.UndefOr[doubleMinNegative59Max0] = js.undefined
-  ): AudioNormalizationSettings = {
+  def apply(): AudioNormalizationSettings = {
     val __obj = js.Dynamic.literal()
-    if (Algorithm != null) __obj.updateDynamic("Algorithm")(Algorithm.asInstanceOf[js.Any])
-    if (AlgorithmControl != null) __obj.updateDynamic("AlgorithmControl")(AlgorithmControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(TargetLkfs)) __obj.updateDynamic("TargetLkfs")(TargetLkfs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioNormalizationSettings]
   }
+  @scala.inline
+  implicit class AudioNormalizationSettingsOps[Self <: AudioNormalizationSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithm(value: AudioNormalizationAlgorithm): Self = this.set("Algorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithm: Self = this.set("Algorithm", js.undefined)
+    @scala.inline
+    def setAlgorithmControl(value: AudioNormalizationAlgorithmControl): Self = this.set("AlgorithmControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithmControl: Self = this.set("AlgorithmControl", js.undefined)
+    @scala.inline
+    def setTargetLkfs(value: doubleMinNegative59Max0): Self = this.set("TargetLkfs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetLkfs: Self = this.set("TargetLkfs", js.undefined)
+  }
+  
 }
 

@@ -17,6 +17,7 @@ class Tabs protected ()
   def this(props: PropsType) = this()
   var AnimatedScrollView: ScrollView = js.native
   var scrollView: Component = js.native
+  def goToTab(index: Double, force: js.UndefOr[scala.Nothing], animated: Boolean): Boolean = js.native
   def goToTab(index: Double, force: Boolean, animated: Boolean): Boolean = js.native
   def handleLayout(
     e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.LayoutChangeEvent */ js.Any

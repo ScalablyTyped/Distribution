@@ -12,7 +12,7 @@ Just a reasonable typeof
 | Keywords           | type, typeof |
 | # releases         | 0 |
 | # dependents       | 34 |
-| # downloads        | 12570514 |
+| # downloads        | 12323314 |
 | # stars            | 3 |
 
 ## Links

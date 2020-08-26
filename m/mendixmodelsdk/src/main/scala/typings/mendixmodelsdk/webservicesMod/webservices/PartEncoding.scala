@@ -25,9 +25,9 @@ class PartEncoding protected () extends Element {
   var model_FPartEncoding: IModel = js.native
   def containerAsOperationInfo: OperationInfo = js.native
   def partName: String = js.native
-  def partName(newValue: String): js.Any = js.native
+  def partName_=(newValue: String): Unit = js.native
   def partXsdType: String = js.native
-  def partXsdType(newValue: String): js.Any = js.native
+  def partXsdType_=(newValue: String): Unit = js.native
 }
 
 /* static members */

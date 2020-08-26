@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object init extends js.Object {
   def apply(dom: HTMLCanvasElement): ECharts = js.native
+  def apply(dom: HTMLCanvasElement, theme: js.UndefOr[scala.Nothing], opts: DevicePixelRatio): ECharts = js.native
   def apply(dom: HTMLCanvasElement, theme: String): ECharts = js.native
   def apply(dom: HTMLCanvasElement, theme: String, opts: DevicePixelRatio): ECharts = js.native
   def apply(dom: HTMLCanvasElement, theme: js.Object): ECharts = js.native
@@ -39,6 +40,7 @@ object init extends js.Object {
     *     (instance container) will be used.
     */
   def apply(dom: HTMLDivElement): ECharts = js.native
+  def apply(dom: HTMLDivElement, theme: js.UndefOr[scala.Nothing], opts: DevicePixelRatio): ECharts = js.native
   def apply(dom: HTMLDivElement, theme: String): ECharts = js.native
   def apply(dom: HTMLDivElement, theme: String, opts: DevicePixelRatio): ECharts = js.native
   def apply(dom: HTMLDivElement, theme: js.Object): ECharts = js.native

@@ -27,20 +27,44 @@ trait SchemaNodeGroupNode extends js.Object {
 
 object SchemaNodeGroupNode {
   @scala.inline
-  def apply(
-    instances: js.Array[String] = null,
-    name: String = null,
-    nodeType: String = null,
-    serverBinding: SchemaServerBinding = null,
-    status: String = null
-  ): SchemaNodeGroupNode = {
+  def apply(): SchemaNodeGroupNode = {
     val __obj = js.Dynamic.literal()
-    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nodeType != null) __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
-    if (serverBinding != null) __obj.updateDynamic("serverBinding")(serverBinding.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNodeGroupNode]
   }
+  @scala.inline
+  implicit class SchemaNodeGroupNodeOps[Self <: SchemaNodeGroupNode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstancesVarargs(value: String*): Self = this.set("instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: js.Array[String]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("instances", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNodeType(value: String): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeType: Self = this.set("nodeType", js.undefined)
+    @scala.inline
+    def setServerBinding(value: SchemaServerBinding): Self = this.set("serverBinding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerBinding: Self = this.set("serverBinding", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

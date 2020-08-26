@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql
 
-Typings are for version 14.6.0
+Typings are for version 15.3.0
 
 ## Library description:
 A Query Language and Runtime which can target any service.
@@ -10,9 +10,9 @@ A Query Language and Runtime which can target any service.
 | ------------------ | :-------------: |
 | Full name          | graphql |
 | Keywords           | graphql, graphql-js |
-| # releases         | 30 |
-| # dependents       | 3094 |
-| # downloads        | 89706095 |
+| # releases         | 29 |
+| # dependents       | 3103 |
+| # downloads        | 89925330 |
 | # stars            | 110 |
 
 ## Links

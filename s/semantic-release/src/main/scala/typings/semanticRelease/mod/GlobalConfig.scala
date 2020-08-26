@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * semantic-release options, after normalization and defaults have been
   * applied.
   */
+@js.native
 trait GlobalConfig extends Options {
   /**
     * The branches on which releases should happen. By default
@@ -42,7 +43,7 @@ trait GlobalConfig extends Options {
     * for more details.
     */
   @JSName("branches")
-  var branches_GlobalConfig: js.Array[BranchSpec] | BranchSpec
+  var branches_GlobalConfig: js.Array[BranchSpec] | BranchSpec = js.native
   /**
     * Define the list of plugins to use. Plugins will run in series, in
     * the order defined, for each [step](https://semantic-release.gitbook.io/semantic-release/#release-steps)
@@ -62,7 +63,7 @@ trait GlobalConfig extends Options {
     * ]`
     */
   @JSName("plugins")
-  var plugins_GlobalConfig: js.Array[PluginSpec]
+  var plugins_GlobalConfig: js.Array[PluginSpec] = js.native
   /**
     * The git repository URL.
     *
@@ -72,7 +73,7 @@ trait GlobalConfig extends Options {
     * Default: `repository` property in `package.json`, or git origin url.
     */
   @JSName("repositoryUrl")
-  var repositoryUrl_GlobalConfig: String
+  var repositoryUrl_GlobalConfig: String = js.native
   /**
     * The git tag format used by **semantic-release** to identify
     * releases. The tag name is generated with [Lodash template](https://lodash.com/docs#template)
@@ -83,7 +84,7 @@ trait GlobalConfig extends Options {
     * [valid git reference](https://git-scm.com/docs/git-check-ref-format#_description).
     */
   @JSName("tagFormat")
-  var tagFormat_GlobalConfig: String
+  var tagFormat_GlobalConfig: String = js.native
 }
 
 object GlobalConfig {
@@ -92,16 +93,35 @@ object GlobalConfig {
     branches: js.Array[BranchSpec] | BranchSpec,
     plugins: js.Array[PluginSpec],
     repositoryUrl: String,
-    tagFormat: String,
-    ci: js.UndefOr[Boolean] = js.undefined,
-    dryRun: js.UndefOr[Boolean] = js.undefined,
-    `extends`: js.Array[String] | String = null
+    tagFormat: String
   ): GlobalConfig = {
     val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], repositoryUrl = repositoryUrl.asInstanceOf[js.Any], tagFormat = tagFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.get.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalConfig]
   }
+  @scala.inline
+  implicit class GlobalConfigOps[Self <: GlobalConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBranchesVarargs(value: BranchSpec*): Self = this.set("branches", js.Array(value :_*))
+    @scala.inline
+    def setBranches(value: js.Array[BranchSpec] | BranchSpec): Self = this.set("branches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPluginsVarargs(value: PluginSpec*): Self = this.set("plugins", js.Array(value :_*))
+    @scala.inline
+    def setPlugins(value: js.Array[PluginSpec]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepositoryUrl(value: String): Self = this.set("repositoryUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagFormat(value: String): Self = this.set("tagFormat", value.asInstanceOf[js.Any])
+  }
+  
 }
 

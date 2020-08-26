@@ -13,7 +13,7 @@ class URLSigner protected () extends js.Object {
   def this(authClient: AuthClient, bucket: BucketI, file: FileI) = this()
   var authClient: js.Any = js.native
   var bucket: js.Any = js.native
-  var file: js.UndefOr[js.Any] = js.native
+  var file: js.Any = js.native
   var getSignedUrlV2: js.Any = js.native
   var getSignedUrlV4: js.Any = js.native
   /**

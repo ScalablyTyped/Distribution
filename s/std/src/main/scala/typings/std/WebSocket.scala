@@ -107,6 +107,7 @@ trait WebSocket extends EventTarget {
     * Closes the WebSocket connection, optionally using code as the the WebSocket connection close code and reason as the the WebSocket connection close reason.
     */
   def close(): Unit = js.native
+  def close(code: js.UndefOr[scala.Nothing], reason: java.lang.String): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, reason: java.lang.String): Unit = js.native
   @JSName("removeEventListener")

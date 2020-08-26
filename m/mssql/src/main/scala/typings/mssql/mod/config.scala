@@ -5,59 +5,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait config extends js.Object {
   /**
     * Invoked before opening the connection. The parameter conn is the configured
     * tedious Connection. It can be used for attaching event handlers.
     */
-  var beforeConnect: js.UndefOr[js.Function1[/* conn */ Connection, Unit]] = js.undefined
-  var connectionTimeout: js.UndefOr[Double] = js.undefined
-  var database: String
-  var domain: js.UndefOr[String] = js.undefined
-  var driver: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[IOptions] = js.undefined
-  var parseJSON: js.UndefOr[Boolean] = js.undefined
-  var password: js.UndefOr[String] = js.undefined
-  var pool: js.UndefOr[IPool] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var requestTimeout: js.UndefOr[Double] = js.undefined
-  var server: String
-  var stream: js.UndefOr[Boolean] = js.undefined
-  var user: js.UndefOr[String] = js.undefined
+  var beforeConnect: js.UndefOr[js.Function1[/* conn */ Connection, Unit]] = js.native
+  var connectionTimeout: js.UndefOr[Double] = js.native
+  var database: String = js.native
+  var domain: js.UndefOr[String] = js.native
+  var driver: js.UndefOr[String] = js.native
+  var options: js.UndefOr[IOptions] = js.native
+  var parseJSON: js.UndefOr[Boolean] = js.native
+  var password: js.UndefOr[String] = js.native
+  var pool: js.UndefOr[IPool] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var requestTimeout: js.UndefOr[Double] = js.native
+  var server: String = js.native
+  var stream: js.UndefOr[Boolean] = js.native
+  var user: js.UndefOr[String] = js.native
 }
 
 object config {
   @scala.inline
-  def apply(
-    database: String,
-    server: String,
-    beforeConnect: /* conn */ Connection => Unit = null,
-    connectionTimeout: js.UndefOr[Double] = js.undefined,
-    domain: String = null,
-    driver: String = null,
-    options: IOptions = null,
-    parseJSON: js.UndefOr[Boolean] = js.undefined,
-    password: String = null,
-    pool: IPool = null,
-    port: js.UndefOr[Double] = js.undefined,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    stream: js.UndefOr[Boolean] = js.undefined,
-    user: String = null
-  ): config = {
+  def apply(database: String, server: String): config = {
     val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
-    if (beforeConnect != null) __obj.updateDynamic("beforeConnect")(js.Any.fromFunction1(beforeConnect))
-    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout.get.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (driver != null) __obj.updateDynamic("driver")(driver.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseJSON)) __obj.updateDynamic("parseJSON")(parseJSON.get.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (pool != null) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.get.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[config]
   }
+  @scala.inline
+  implicit class configOps[Self <: config] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabase(value: String): Self = this.set("database", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBeforeConnect(value: /* conn */ Connection => Unit): Self = this.set("beforeConnect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeConnect: Self = this.set("beforeConnect", js.undefined)
+    @scala.inline
+    def setConnectionTimeout(value: Double): Self = this.set("connectionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionTimeout: Self = this.set("connectionTimeout", js.undefined)
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setDriver(value: String): Self = this.set("driver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriver: Self = this.set("driver", js.undefined)
+    @scala.inline
+    def setOptions(value: IOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setParseJSON(value: Boolean): Self = this.set("parseJSON", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParseJSON: Self = this.set("parseJSON", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPool(value: IPool): Self = this.set("pool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePool: Self = this.set("pool", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setRequestTimeout(value: Double): Self = this.set("requestTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestTimeout: Self = this.set("requestTimeout", js.undefined)
+    @scala.inline
+    def setStream(value: Boolean): Self = this.set("stream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStream: Self = this.set("stream", js.undefined)
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+  }
+  
 }
 

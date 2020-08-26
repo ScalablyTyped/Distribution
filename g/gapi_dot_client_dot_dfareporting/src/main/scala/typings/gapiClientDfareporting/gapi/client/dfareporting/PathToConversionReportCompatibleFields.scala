@@ -4,35 +4,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PathToConversionReportCompatibleFields extends js.Object {
   /** Conversion dimensions which are compatible to be selected in the "conversionDimensions" section of the report. */
-  var conversionDimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
+  var conversionDimensions: js.UndefOr[js.Array[Dimension]] = js.native
   /** Custom floodlight variables which are compatible to be selected in the "customFloodlightVariables" section of the report. */
-  var customFloodlightVariables: js.UndefOr[js.Array[Dimension]] = js.undefined
+  var customFloodlightVariables: js.UndefOr[js.Array[Dimension]] = js.native
   /** The kind of resource this is, in this case dfareporting#pathToConversionReportCompatibleFields. */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** Metrics which are compatible to be selected in the "metricNames" section of the report. */
-  var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
+  var metrics: js.UndefOr[js.Array[Metric]] = js.native
   /** Per-interaction dimensions which are compatible to be selected in the "perInteractionDimensions" section of the report. */
-  var perInteractionDimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
+  var perInteractionDimensions: js.UndefOr[js.Array[Dimension]] = js.native
 }
 
 object PathToConversionReportCompatibleFields {
   @scala.inline
-  def apply(
-    conversionDimensions: js.Array[Dimension] = null,
-    customFloodlightVariables: js.Array[Dimension] = null,
-    kind: String = null,
-    metrics: js.Array[Metric] = null,
-    perInteractionDimensions: js.Array[Dimension] = null
-  ): PathToConversionReportCompatibleFields = {
+  def apply(): PathToConversionReportCompatibleFields = {
     val __obj = js.Dynamic.literal()
-    if (conversionDimensions != null) __obj.updateDynamic("conversionDimensions")(conversionDimensions.asInstanceOf[js.Any])
-    if (customFloodlightVariables != null) __obj.updateDynamic("customFloodlightVariables")(customFloodlightVariables.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (perInteractionDimensions != null) __obj.updateDynamic("perInteractionDimensions")(perInteractionDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathToConversionReportCompatibleFields]
   }
+  @scala.inline
+  implicit class PathToConversionReportCompatibleFieldsOps[Self <: PathToConversionReportCompatibleFields] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConversionDimensionsVarargs(value: Dimension*): Self = this.set("conversionDimensions", js.Array(value :_*))
+    @scala.inline
+    def setConversionDimensions(value: js.Array[Dimension]): Self = this.set("conversionDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversionDimensions: Self = this.set("conversionDimensions", js.undefined)
+    @scala.inline
+    def setCustomFloodlightVariablesVarargs(value: Dimension*): Self = this.set("customFloodlightVariables", js.Array(value :_*))
+    @scala.inline
+    def setCustomFloodlightVariables(value: js.Array[Dimension]): Self = this.set("customFloodlightVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomFloodlightVariables: Self = this.set("customFloodlightVariables", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMetricsVarargs(value: Metric*): Self = this.set("metrics", js.Array(value :_*))
+    @scala.inline
+    def setMetrics(value: js.Array[Metric]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    @scala.inline
+    def setPerInteractionDimensionsVarargs(value: Dimension*): Self = this.set("perInteractionDimensions", js.Array(value :_*))
+    @scala.inline
+    def setPerInteractionDimensions(value: js.Array[Dimension]): Self = this.set("perInteractionDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerInteractionDimensions: Self = this.set("perInteractionDimensions", js.undefined)
+  }
+  
 }
 

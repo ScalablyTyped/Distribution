@@ -1,15 +1,5 @@
 package typings.solidityParserAntlr.mod
 
-import typings.solidityParserAntlr.solidityParserAntlrStrings.days
-import typings.solidityParserAntlr.solidityParserAntlrStrings.ether
-import typings.solidityParserAntlr.solidityParserAntlrStrings.finney
-import typings.solidityParserAntlr.solidityParserAntlrStrings.hours
-import typings.solidityParserAntlr.solidityParserAntlrStrings.minutes
-import typings.solidityParserAntlr.solidityParserAntlrStrings.seconds
-import typings.solidityParserAntlr.solidityParserAntlrStrings.szabo
-import typings.solidityParserAntlr.solidityParserAntlrStrings.weeks
-import typings.solidityParserAntlr.solidityParserAntlrStrings.wei
-import typings.solidityParserAntlr.solidityParserAntlrStrings.years
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,255 +29,134 @@ trait AssemblyItem extends ASTNode
 
 object AssemblyItem {
   @scala.inline
-  def NumberLiteral(
-    number: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null,
-    subdenomination: wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years = null
-  ): AssemblyItem = {
-    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], subdenomination = subdenomination.asInstanceOf[js.Any])
+  def NumberLiteral(number: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral): AssemblyItem = {
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def StringLiteral(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.StringLiteral,
-    value: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def StringLiteral(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.StringLiteral, value: String): AssemblyItem = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
   def AssemblyCall(
     arguments: js.Array[AssemblyExpression],
     functionName: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
+    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall
   ): AssemblyItem = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def AssemblyIf(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyIf,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def AssemblyIf(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyIf): AssemblyItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def AssemblyFunctionDefinition(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def AssemblyFunctionDefinition(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionDefinition): AssemblyItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def AssemblyLocalDefinition(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLocalDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def AssemblyLocalDefinition(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLocalDefinition): AssemblyItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def AssemblyFor(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def AssemblyFor(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor): AssemblyItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def AssemblyStackAssignment(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyStackAssignment,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def AssemblyStackAssignment(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyStackAssignment): AssemblyItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def DecimalNumber(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.DecimalNumber,
-    value: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def DecimalNumber(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.DecimalNumber, value: String): AssemblyItem = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
   def AssemblyAssignment(
     expression: AssemblyExpression,
     names: js.Array[Identifier],
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyAssignment,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
+    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyAssignment
   ): AssemblyItem = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def Continue(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Continue,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def Continue(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Continue): AssemblyItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def AssemblyLiteral(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def AssemblyLiteral(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral): AssemblyItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def Break(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Break,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def Break(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Break): AssemblyItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def HexLiteral(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral,
-    value: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def HexLiteral(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral, value: String): AssemblyItem = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def Identifier(
-    name: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Identifier,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def Identifier(name: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.Identifier): AssemblyItem = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def HexNumber(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.HexNumber,
-    value: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def HexNumber(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.HexNumber, value: String): AssemblyItem = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def AssemblySwitch(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def AssemblySwitch(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch): AssemblyItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def LabelDefinition(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def LabelDefinition(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition): AssemblyItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
   def AssemblyBlock(
     operations: js.Array[AssemblyItem],
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
+    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock
   ): AssemblyItem = {
     val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
   @scala.inline
-  def SubAssembly(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.SubAssembly,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyItem = {
+  def SubAssembly(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.SubAssembly): AssemblyItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyItem]
   }
 }

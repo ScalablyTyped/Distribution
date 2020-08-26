@@ -10,9 +10,9 @@ Brings the node url api layer to whatwg-url class
 | ------------------ | :-------------: |
 | Full name          | native-url |
 | Keywords           | url, uri, normalization, normalisation, query, querystring, whatwg-url, parse, format, resolve, resolveObject |
-| # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 65181 |
+| # releases         | 10 |
+| # dependents       | 6 |
+| # downloads        | 419711 |
 | # stars            | 0 |
 
 ## Links

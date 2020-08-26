@@ -30,6 +30,13 @@ object featureManagementApiMod extends js.Object {
     def queryFeatureStatesForDefaultScope(query: ContributedFeatureStateQuery, userScope: String): js.Promise[ContributedFeatureStateQuery] = js.native
     def queryFeatureStatesForNamedScope(query: ContributedFeatureStateQuery, userScope: String, scopeName: String, scopeValue: String): js.Promise[ContributedFeatureStateQuery] = js.native
     def setFeatureState(feature: ContributedFeatureState, featureId: String, userScope: String): js.Promise[ContributedFeatureState] = js.native
+    def setFeatureState(
+      feature: ContributedFeatureState,
+      featureId: String,
+      userScope: String,
+      reason: js.UndefOr[scala.Nothing],
+      reasonCode: String
+    ): js.Promise[ContributedFeatureState] = js.native
     def setFeatureState(feature: ContributedFeatureState, featureId: String, userScope: String, reason: String): js.Promise[ContributedFeatureState] = js.native
     def setFeatureState(
       feature: ContributedFeatureState,
@@ -44,6 +51,15 @@ object featureManagementApiMod extends js.Object {
       userScope: String,
       scopeName: String,
       scopeValue: String
+    ): js.Promise[ContributedFeatureState] = js.native
+    def setFeatureStateForScope(
+      feature: ContributedFeatureState,
+      featureId: String,
+      userScope: String,
+      scopeName: String,
+      scopeValue: String,
+      reason: js.UndefOr[scala.Nothing],
+      reasonCode: String
     ): js.Promise[ContributedFeatureState] = js.native
     def setFeatureStateForScope(
       feature: ContributedFeatureState,

@@ -63,24 +63,61 @@ object HyperParameterTrainingJobSummary {
     TrainingJobArn: TrainingJobArn,
     TrainingJobName: TrainingJobName,
     TrainingJobStatus: TrainingJobStatus,
-    TunedHyperParameters: HyperParameters,
-    FailureReason: FailureReason = null,
-    FinalHyperParameterTuningJobObjectiveMetric: FinalHyperParameterTuningJobObjectiveMetric = null,
-    ObjectiveStatus: ObjectiveStatus = null,
-    TrainingEndTime: Timestamp = null,
-    TrainingJobDefinitionName: HyperParameterTrainingJobDefinitionName = null,
-    TrainingStartTime: Timestamp = null,
-    TuningJobName: HyperParameterTuningJobName = null
+    TunedHyperParameters: HyperParameters
   ): HyperParameterTrainingJobSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], TrainingJobArn = TrainingJobArn.asInstanceOf[js.Any], TrainingJobName = TrainingJobName.asInstanceOf[js.Any], TrainingJobStatus = TrainingJobStatus.asInstanceOf[js.Any], TunedHyperParameters = TunedHyperParameters.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (FinalHyperParameterTuningJobObjectiveMetric != null) __obj.updateDynamic("FinalHyperParameterTuningJobObjectiveMetric")(FinalHyperParameterTuningJobObjectiveMetric.asInstanceOf[js.Any])
-    if (ObjectiveStatus != null) __obj.updateDynamic("ObjectiveStatus")(ObjectiveStatus.asInstanceOf[js.Any])
-    if (TrainingEndTime != null) __obj.updateDynamic("TrainingEndTime")(TrainingEndTime.asInstanceOf[js.Any])
-    if (TrainingJobDefinitionName != null) __obj.updateDynamic("TrainingJobDefinitionName")(TrainingJobDefinitionName.asInstanceOf[js.Any])
-    if (TrainingStartTime != null) __obj.updateDynamic("TrainingStartTime")(TrainingStartTime.asInstanceOf[js.Any])
-    if (TuningJobName != null) __obj.updateDynamic("TuningJobName")(TuningJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperParameterTrainingJobSummary]
   }
+  @scala.inline
+  implicit class HyperParameterTrainingJobSummaryOps[Self <: HyperParameterTrainingJobSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingJobArn(value: TrainingJobArn): Self = this.set("TrainingJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingJobName(value: TrainingJobName): Self = this.set("TrainingJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingJobStatus(value: TrainingJobStatus): Self = this.set("TrainingJobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTunedHyperParameters(value: HyperParameters): Self = this.set("TunedHyperParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setFinalHyperParameterTuningJobObjectiveMetric(value: FinalHyperParameterTuningJobObjectiveMetric): Self = this.set("FinalHyperParameterTuningJobObjectiveMetric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalHyperParameterTuningJobObjectiveMetric: Self = this.set("FinalHyperParameterTuningJobObjectiveMetric", js.undefined)
+    @scala.inline
+    def setObjectiveStatus(value: ObjectiveStatus): Self = this.set("ObjectiveStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectiveStatus: Self = this.set("ObjectiveStatus", js.undefined)
+    @scala.inline
+    def setTrainingEndTime(value: Timestamp): Self = this.set("TrainingEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingEndTime: Self = this.set("TrainingEndTime", js.undefined)
+    @scala.inline
+    def setTrainingJobDefinitionName(value: HyperParameterTrainingJobDefinitionName): Self = this.set("TrainingJobDefinitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingJobDefinitionName: Self = this.set("TrainingJobDefinitionName", js.undefined)
+    @scala.inline
+    def setTrainingStartTime(value: Timestamp): Self = this.set("TrainingStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingStartTime: Self = this.set("TrainingStartTime", js.undefined)
+    @scala.inline
+    def setTuningJobName(value: HyperParameterTuningJobName): Self = this.set("TuningJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTuningJobName: Self = this.set("TuningJobName", js.undefined)
+  }
+  
 }
 

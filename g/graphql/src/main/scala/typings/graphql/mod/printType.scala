@@ -1,7 +1,7 @@
 package typings.graphql.mod
 
 import typings.graphql.definitionMod.GraphQLNamedType
-import typings.graphql.schemaPrinterMod.Options
+import typings.graphql.printSchemaMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

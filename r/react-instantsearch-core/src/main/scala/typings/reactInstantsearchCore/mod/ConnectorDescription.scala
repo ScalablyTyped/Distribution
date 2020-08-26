@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectorDescription[TProvided, TExposed] extends js.Object {
   /**
     * This method is called when a widget is about to unmount in order to clean the searchState.
@@ -21,9 +22,9 @@ trait ConnectorDescription[TProvided, TExposed] extends js.Object {
       /* searchState */ SearchState, 
       SearchState
     ]
-  ] = js.undefined
-  var defaultProps: js.UndefOr[js.Any] = js.undefined
-  var displayName: String
+  ] = js.native
+  var defaultProps: js.UndefOr[js.Any] = js.native
+  var displayName: String = js.native
   /**
     * This method allows the widget to register a custom metadata object for any props and state combination.
     * If your widget is stateful, the corresponding URL key should be declared on the metadata object as the id property, so that the InstantSearch
@@ -41,7 +42,7 @@ trait ConnectorDescription[TProvided, TExposed] extends js.Object {
       /* repeated */ js.Any, 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * This method applies the current props and state to the provided SearchParameters, and returns a new SearchParameters. The SearchParameters
     * type is described in the Helper’s documentation.
@@ -57,8 +58,8 @@ trait ConnectorDescription[TProvided, TExposed] extends js.Object {
       /* searchState */ SearchState, 
       SearchParameters
     ]
-  ] = js.undefined
-  var propTypes: js.UndefOr[js.Any] = js.undefined
+  ] = js.native
+  var propTypes: js.UndefOr[js.Any] = js.native
   /**
     * This method defines exactly how the refine prop of widgets affects the search state.
     * It takes in the current props of the higher-order component, the search state of all widgets, as well as all arguments passed
@@ -72,7 +73,7 @@ trait ConnectorDescription[TProvided, TExposed] extends js.Object {
       /* repeated */ js.Any, 
       SearchState
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * This method needs to be implemented if you want to have the ability to perform a search for facet values inside your widget.
     * It takes in the current props of the higher-order component, the search state of all widgets, as well as all arguments passed to the searchForFacetValues
@@ -86,7 +87,7 @@ trait ConnectorDescription[TProvided, TExposed] extends js.Object {
       /* nextRefinement */ js.UndefOr[js.Any], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * This method should return the props to forward to the composed component.
     * props are the props that were provided to the higher-order component.
@@ -102,59 +103,100 @@ trait ConnectorDescription[TProvided, TExposed] extends js.Object {
     searchResults: ConnectorSearchResults[_],
     metadata: js.Any,
     resultsFacetValues: js.Any
-  ): TProvided
+  ): TProvided = js.native
 }
 
 object ConnectorDescription {
   @scala.inline
   def apply[TProvided, TExposed](
     displayName: String,
-    getProvidedProps: (TExposed, SearchState, ConnectorSearchResults[_], js.Any, js.Any) => TProvided,
-    cleanUp: js.ThisFunction2[
-      /* this */ Component[TExposed, js.Object, _], 
-      /* props */ TExposed, 
-      /* searchState */ SearchState, 
-      SearchState
-    ] = null,
-    defaultProps: js.Any = null,
-    getMetadata: js.ThisFunction3[
-      /* this */ Component[TExposed, js.Object, _], 
-      /* props */ TExposed, 
-      /* searchState */ SearchState, 
-      /* repeated */ js.Any, 
-      _
-    ] = null,
-    getSearchParameters: js.ThisFunction3[
-      /* this */ Component[TExposed, js.Object, _], 
-      /* searchParameters */ SearchParameters, 
-      /* props */ TExposed, 
-      /* searchState */ SearchState, 
-      SearchParameters
-    ] = null,
-    propTypes: js.Any = null,
-    refine: js.ThisFunction3[
-      /* this */ Component[TExposed, js.Object, _], 
-      /* props */ TExposed, 
-      /* searchState */ SearchState, 
-      /* repeated */ js.Any, 
-      SearchState
-    ] = null,
-    searchForFacetValues: js.ThisFunction2[
-      /* this */ Component[TExposed, js.Object, _], 
-      /* searchState */ SearchState, 
-      /* nextRefinement */ js.UndefOr[js.Any], 
-      _
-    ] = null
+    getProvidedProps: (TExposed, SearchState, ConnectorSearchResults[_], js.Any, js.Any) => TProvided
   ): ConnectorDescription[TProvided, TExposed] = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], getProvidedProps = js.Any.fromFunction5(getProvidedProps))
-    if (cleanUp != null) __obj.updateDynamic("cleanUp")(cleanUp.asInstanceOf[js.Any])
-    if (defaultProps != null) __obj.updateDynamic("defaultProps")(defaultProps.asInstanceOf[js.Any])
-    if (getMetadata != null) __obj.updateDynamic("getMetadata")(getMetadata.asInstanceOf[js.Any])
-    if (getSearchParameters != null) __obj.updateDynamic("getSearchParameters")(getSearchParameters.asInstanceOf[js.Any])
-    if (propTypes != null) __obj.updateDynamic("propTypes")(propTypes.asInstanceOf[js.Any])
-    if (refine != null) __obj.updateDynamic("refine")(refine.asInstanceOf[js.Any])
-    if (searchForFacetValues != null) __obj.updateDynamic("searchForFacetValues")(searchForFacetValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorDescription[TProvided, TExposed]]
   }
+  @scala.inline
+  implicit class ConnectorDescriptionOps[Self <: ConnectorDescription[_, _], TProvided, TExposed] (val x: Self with (ConnectorDescription[TProvided, TExposed])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetProvidedProps(value: (TExposed, SearchState, ConnectorSearchResults[_], js.Any, js.Any) => TProvided): Self = this.set("getProvidedProps", js.Any.fromFunction5(value))
+    @scala.inline
+    def setCleanUp(
+      value: js.ThisFunction2[
+          /* this */ Component[TExposed, js.Object, _], 
+          /* props */ TExposed, 
+          /* searchState */ SearchState, 
+          SearchState
+        ]
+    ): Self = this.set("cleanUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCleanUp: Self = this.set("cleanUp", js.undefined)
+    @scala.inline
+    def setDefaultProps(value: js.Any): Self = this.set("defaultProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultProps: Self = this.set("defaultProps", js.undefined)
+    @scala.inline
+    def setGetMetadata(
+      value: js.ThisFunction3[
+          /* this */ Component[TExposed, js.Object, _], 
+          /* props */ TExposed, 
+          /* searchState */ SearchState, 
+          /* repeated */ js.Any, 
+          _
+        ]
+    ): Self = this.set("getMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetMetadata: Self = this.set("getMetadata", js.undefined)
+    @scala.inline
+    def setGetSearchParameters(
+      value: js.ThisFunction3[
+          /* this */ Component[TExposed, js.Object, _], 
+          /* searchParameters */ SearchParameters, 
+          /* props */ TExposed, 
+          /* searchState */ SearchState, 
+          SearchParameters
+        ]
+    ): Self = this.set("getSearchParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetSearchParameters: Self = this.set("getSearchParameters", js.undefined)
+    @scala.inline
+    def setPropTypes(value: js.Any): Self = this.set("propTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropTypes: Self = this.set("propTypes", js.undefined)
+    @scala.inline
+    def setRefine(
+      value: js.ThisFunction3[
+          /* this */ Component[TExposed, js.Object, _], 
+          /* props */ TExposed, 
+          /* searchState */ SearchState, 
+          /* repeated */ js.Any, 
+          SearchState
+        ]
+    ): Self = this.set("refine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefine: Self = this.set("refine", js.undefined)
+    @scala.inline
+    def setSearchForFacetValues(
+      value: js.ThisFunction2[
+          /* this */ Component[TExposed, js.Object, _], 
+          /* searchState */ SearchState, 
+          /* nextRefinement */ js.UndefOr[js.Any], 
+          _
+        ]
+    ): Self = this.set("searchForFacetValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchForFacetValues: Self = this.set("searchForFacetValues", js.undefined)
+  }
+  
 }
 

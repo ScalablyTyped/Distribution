@@ -28,6 +28,7 @@ class ResourceProjectsTriggers protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaBuildTrigger] = js.native
   def create(callback: BodyResponseCallback[SchemaBuildTrigger]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildTrigger] = js.native
   def create(params: ParamsResourceProjectsTriggersCreate): GaxiosPromise[SchemaBuildTrigger] = js.native
   def create(params: ParamsResourceProjectsTriggersCreate, callback: BodyResponseCallback[SchemaBuildTrigger]): Unit = js.native
   def create(
@@ -57,6 +58,7 @@ class ResourceProjectsTriggers protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsTriggersDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsTriggersDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -86,6 +88,7 @@ class ResourceProjectsTriggers protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaBuildTrigger] = js.native
   def get(callback: BodyResponseCallback[SchemaBuildTrigger]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildTrigger] = js.native
   def get(params: ParamsResourceProjectsTriggersGet): GaxiosPromise[SchemaBuildTrigger] = js.native
   def get(params: ParamsResourceProjectsTriggersGet, callback: BodyResponseCallback[SchemaBuildTrigger]): Unit = js.native
   def get(
@@ -115,6 +118,7 @@ class ResourceProjectsTriggers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListBuildTriggersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListBuildTriggersResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListBuildTriggersResponse] = js.native
   def list(params: ParamsResourceProjectsTriggersList): GaxiosPromise[SchemaListBuildTriggersResponse] = js.native
   def list(
     params: ParamsResourceProjectsTriggersList,
@@ -148,6 +152,7 @@ class ResourceProjectsTriggers protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaBuildTrigger] = js.native
   def patch(callback: BodyResponseCallback[SchemaBuildTrigger]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuildTrigger] = js.native
   def patch(params: ParamsResourceProjectsTriggersPatch): GaxiosPromise[SchemaBuildTrigger] = js.native
   def patch(params: ParamsResourceProjectsTriggersPatch, callback: BodyResponseCallback[SchemaBuildTrigger]): Unit = js.native
   def patch(
@@ -177,6 +182,7 @@ class ResourceProjectsTriggers protected () extends js.Object {
     */
   def run(): GaxiosPromise[SchemaOperation] = js.native
   def run(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def run(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourceProjectsTriggersRun): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourceProjectsTriggersRun, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def run(

@@ -62,6 +62,7 @@ trait Expect extends js.Object {
     *
     * Optionally, you can provide a type for the elements via a generic.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def arrayContaining[E](arr: js.Array[E]): js.Any = js.native
   /**
     * Verifies that a certain number of assertions are called during a test.
@@ -87,6 +88,7 @@ trait Expect extends js.Object {
     * Optionally, you can provide a type for the object via a generic.
     * This ensures that the object contains the desired structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def objectContaining[E](obj: E): js.Any = js.native
   def setState(state: js.Object): Unit = js.native
   /**

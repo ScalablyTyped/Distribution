@@ -49,7 +49,7 @@ class Fleet protected () extends CustomResource {
   /**
     * Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Nested argument containing target capacity configurations. Defined below.
     */
@@ -79,8 +79,10 @@ object Fleet extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Fleet = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Fleet = js.native
   def get(name: String, id: Input[ID], state: FleetState): Fleet = js.native
   def get(name: String, id: Input[ID], state: FleetState, opts: CustomResourceOptions): Fleet = js.native
   /**

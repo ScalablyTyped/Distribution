@@ -12,7 +12,7 @@ Static binaries for ffprobe.
 | Keywords           | ffprobe, ffmpeg |
 | # releases         | 2 |
 | # dependents       | 22 |
-| # downloads        | 598501 |
+| # downloads        | 592031 |
 | # stars            | 1 |
 
 ## Links

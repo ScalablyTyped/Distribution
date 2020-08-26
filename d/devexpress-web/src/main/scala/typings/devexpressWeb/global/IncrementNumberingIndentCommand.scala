@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("IncrementNumberingIndentCommand")
 @js.native
 class IncrementNumberingIndentCommand ()
-  extends typings.devexpressWeb.IncrementNumberingIndentCommand {
-  /**
-    * Executes the IncrementNumberingIndentCommand command.
-    */
-  /* CompleteClass */
-  override def execute(): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.IncrementNumberingIndentCommand
 

@@ -32,18 +32,38 @@ trait SchemaModification extends js.Object {
 
 object SchemaModification {
   @scala.inline
-  def apply(
-    create: SchemaColumnFamily = null,
-    drop: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    update: SchemaColumnFamily = null
-  ): SchemaModification = {
+  def apply(): SchemaModification = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
-    if (!js.isUndefined(drop)) __obj.updateDynamic("drop")(drop.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaModification]
   }
+  @scala.inline
+  implicit class SchemaModificationOps[Self <: SchemaModification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreate(value: SchemaColumnFamily): Self = this.set("create", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setDrop(value: Boolean): Self = this.set("drop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrop: Self = this.set("drop", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setUpdate(value: SchemaColumnFamily): Self = this.set("update", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+  }
+  
 }
 

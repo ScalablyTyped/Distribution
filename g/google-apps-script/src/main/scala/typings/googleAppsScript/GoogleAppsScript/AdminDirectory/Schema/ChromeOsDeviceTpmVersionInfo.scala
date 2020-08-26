@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChromeOsDeviceTpmVersionInfo extends js.Object {
-  var family: js.UndefOr[String] = js.undefined
-  var firmwareVersion: js.UndefOr[String] = js.undefined
-  var manufacturer: js.UndefOr[String] = js.undefined
-  var specLevel: js.UndefOr[String] = js.undefined
-  var tpmModel: js.UndefOr[String] = js.undefined
-  var vendorSpecific: js.UndefOr[String] = js.undefined
+  var family: js.UndefOr[String] = js.native
+  var firmwareVersion: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.native
+  var specLevel: js.UndefOr[String] = js.native
+  var tpmModel: js.UndefOr[String] = js.native
+  var vendorSpecific: js.UndefOr[String] = js.native
 }
 
 object ChromeOsDeviceTpmVersionInfo {
   @scala.inline
-  def apply(
-    family: String = null,
-    firmwareVersion: String = null,
-    manufacturer: String = null,
-    specLevel: String = null,
-    tpmModel: String = null,
-    vendorSpecific: String = null
-  ): ChromeOsDeviceTpmVersionInfo = {
+  def apply(): ChromeOsDeviceTpmVersionInfo = {
     val __obj = js.Dynamic.literal()
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (firmwareVersion != null) __obj.updateDynamic("firmwareVersion")(firmwareVersion.asInstanceOf[js.Any])
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
-    if (specLevel != null) __obj.updateDynamic("specLevel")(specLevel.asInstanceOf[js.Any])
-    if (tpmModel != null) __obj.updateDynamic("tpmModel")(tpmModel.asInstanceOf[js.Any])
-    if (vendorSpecific != null) __obj.updateDynamic("vendorSpecific")(vendorSpecific.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeOsDeviceTpmVersionInfo]
   }
+  @scala.inline
+  implicit class ChromeOsDeviceTpmVersionInfoOps[Self <: ChromeOsDeviceTpmVersionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamily: Self = this.set("family", js.undefined)
+    @scala.inline
+    def setFirmwareVersion(value: String): Self = this.set("firmwareVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirmwareVersion: Self = this.set("firmwareVersion", js.undefined)
+    @scala.inline
+    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    @scala.inline
+    def setSpecLevel(value: String): Self = this.set("specLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecLevel: Self = this.set("specLevel", js.undefined)
+    @scala.inline
+    def setTpmModel(value: String): Self = this.set("tpmModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTpmModel: Self = this.set("tpmModel", js.undefined)
+    @scala.inline
+    def setVendorSpecific(value: String): Self = this.set("vendorSpecific", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVendorSpecific: Self = this.set("vendorSpecific", js.undefined)
+  }
+  
 }
 

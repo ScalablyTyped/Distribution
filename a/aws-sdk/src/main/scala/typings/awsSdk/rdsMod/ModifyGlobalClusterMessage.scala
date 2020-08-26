@@ -22,16 +22,34 @@ trait ModifyGlobalClusterMessage extends js.Object {
 
 object ModifyGlobalClusterMessage {
   @scala.inline
-  def apply(
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
-    GlobalClusterIdentifier: String = null,
-    NewGlobalClusterIdentifier: String = null
-  ): ModifyGlobalClusterMessage = {
+  def apply(): ModifyGlobalClusterMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
-    if (GlobalClusterIdentifier != null) __obj.updateDynamic("GlobalClusterIdentifier")(GlobalClusterIdentifier.asInstanceOf[js.Any])
-    if (NewGlobalClusterIdentifier != null) __obj.updateDynamic("NewGlobalClusterIdentifier")(NewGlobalClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyGlobalClusterMessage]
   }
+  @scala.inline
+  implicit class ModifyGlobalClusterMessageOps[Self <: ModifyGlobalClusterMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeletionProtection(value: BooleanOptional): Self = this.set("DeletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionProtection: Self = this.set("DeletionProtection", js.undefined)
+    @scala.inline
+    def setGlobalClusterIdentifier(value: String): Self = this.set("GlobalClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalClusterIdentifier: Self = this.set("GlobalClusterIdentifier", js.undefined)
+    @scala.inline
+    def setNewGlobalClusterIdentifier(value: String): Self = this.set("NewGlobalClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewGlobalClusterIdentifier: Self = this.set("NewGlobalClusterIdentifier", js.undefined)
+  }
+  
 }
 

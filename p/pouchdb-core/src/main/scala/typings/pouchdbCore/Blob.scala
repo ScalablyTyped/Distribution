@@ -10,7 +10,11 @@ trait Blob extends _AttachmentData {
   val size: Double = js.native
   val `type`: String = js.native
   def slice(): Blob = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], contentType: String): Blob = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): Blob = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double, contentType: String): Blob = js.native
   def slice(start: Double): Blob = js.native
+  def slice(start: Double, end: js.UndefOr[scala.Nothing], contentType: String): Blob = js.native
   def slice(start: Double, end: Double): Blob = js.native
   def slice(start: Double, end: Double, contentType: String): Blob = js.native
 }

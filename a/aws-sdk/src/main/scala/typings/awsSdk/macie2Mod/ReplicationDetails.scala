@@ -22,16 +22,36 @@ trait ReplicationDetails extends js.Object {
 
 object ReplicationDetails {
   @scala.inline
-  def apply(
-    replicated: js.UndefOr[boolean] = js.undefined,
-    replicatedExternally: js.UndefOr[boolean] = js.undefined,
-    replicationAccounts: listOfString = null
-  ): ReplicationDetails = {
+  def apply(): ReplicationDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(replicated)) __obj.updateDynamic("replicated")(replicated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(replicatedExternally)) __obj.updateDynamic("replicatedExternally")(replicatedExternally.get.asInstanceOf[js.Any])
-    if (replicationAccounts != null) __obj.updateDynamic("replicationAccounts")(replicationAccounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationDetails]
   }
+  @scala.inline
+  implicit class ReplicationDetailsOps[Self <: ReplicationDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReplicated(value: boolean): Self = this.set("replicated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicated: Self = this.set("replicated", js.undefined)
+    @scala.inline
+    def setReplicatedExternally(value: boolean): Self = this.set("replicatedExternally", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicatedExternally: Self = this.set("replicatedExternally", js.undefined)
+    @scala.inline
+    def setReplicationAccountsVarargs(value: string*): Self = this.set("replicationAccounts", js.Array(value :_*))
+    @scala.inline
+    def setReplicationAccounts(value: listOfString): Self = this.set("replicationAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationAccounts: Self = this.set("replicationAccounts", js.undefined)
+  }
+  
 }
 

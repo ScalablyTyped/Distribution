@@ -28,16 +28,36 @@ trait SchemaTableRow extends js.Object {
 
 object SchemaTableRow {
   @scala.inline
-  def apply(
-    rowHeight: SchemaDimension = null,
-    tableCells: js.Array[SchemaTableCell] = null,
-    tableRowProperties: SchemaTableRowProperties = null
-  ): SchemaTableRow = {
+  def apply(): SchemaTableRow = {
     val __obj = js.Dynamic.literal()
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (tableCells != null) __obj.updateDynamic("tableCells")(tableCells.asInstanceOf[js.Any])
-    if (tableRowProperties != null) __obj.updateDynamic("tableRowProperties")(tableRowProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTableRow]
   }
+  @scala.inline
+  implicit class SchemaTableRowOps[Self <: SchemaTableRow] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRowHeight(value: SchemaDimension): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowHeight: Self = this.set("rowHeight", js.undefined)
+    @scala.inline
+    def setTableCellsVarargs(value: SchemaTableCell*): Self = this.set("tableCells", js.Array(value :_*))
+    @scala.inline
+    def setTableCells(value: js.Array[SchemaTableCell]): Self = this.set("tableCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableCells: Self = this.set("tableCells", js.undefined)
+    @scala.inline
+    def setTableRowProperties(value: SchemaTableRowProperties): Self = this.set("tableRowProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableRowProperties: Self = this.set("tableRowProperties", js.undefined)
+  }
+  
 }
 

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartParallelAxesLabelsOptions extends js.Object {
   /**
     * (Highcharts) What part of the string the given position is anchored to.
@@ -15,7 +16,7 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     * two labels have additional option `"auto"` for automatic horizontal and
     * vertical alignment.
     */
-  var align: js.UndefOr[String] = js.undefined
+  var align: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Gantt) For horizontal axes, the allowed degrees
     * of label rotation to prevent overlapping labels. If there is enough
@@ -24,7 +25,7 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     * again with rotations 0 and -45 etc. Set it to `false` to disable
     * rotation, which will cause the labels to word-wrap if possible.
     */
-  var autoRotation: js.UndefOr[`false` | js.Array[Double]] = js.undefined
+  var autoRotation: js.UndefOr[`false` | js.Array[Double]] = js.native
   /**
     * (Highcharts, Gantt) When each category width is more than this many
     * pixels, we don't apply auto rotation. Instead, we lay out the axis label
@@ -32,7 +33,7 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     * multiple short words that don't extend the available horizontal space for
     * each label.
     */
-  var autoRotationLimit: js.UndefOr[Double] = js.undefined
+  var autoRotationLimit: js.UndefOr[Double] = js.native
   /**
     * (Highcharts) Angular gauges and solid gauges only. The label's pixel
     * distance from the perimeter of the plot area.
@@ -40,15 +41,15 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     * Since v7.1.2: If it's a percentage string, it is interpreted the same as
     * series.radius, so label can be aligned under the gauge's shape.
     */
-  var distance: js.UndefOr[Double | String] = js.undefined
+  var distance: js.UndefOr[Double | String] = js.native
   /**
     * (Highcharts) Enable or disable the axis labels.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts) A format string for the axis label.
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
   /**
     * (Highcharts) Callback JavaScript function to format the label. The value
     * is given by `this.value`. Additional properties for `this` are `axis`,
@@ -58,29 +59,29 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     *
     * Defaults to: (see online documentation for example)
     */
-  var formatter: js.UndefOr[AxisLabelsFormatterCallbackFunction] = js.undefined
+  var formatter: js.UndefOr[AxisLabelsFormatterCallbackFunction] = js.native
   /**
     * (Gantt) The number of pixels to indent the labels per level in a treegrid
     * axis.
     */
-  var indentation: js.UndefOr[Double] = js.undefined
+  var indentation: js.UndefOr[Double] = js.native
   /**
     * (Gantt) Set options on specific levels in a tree grid axis. Takes
     * precedence over labels options.
     */
-  var levels: js.UndefOr[js.Array[ChartParallelAxesLabelsLevelsOptions]] = js.undefined
+  var levels: js.UndefOr[js.Array[ChartParallelAxesLabelsLevelsOptions]] = js.native
   /**
     * (Highcharts) How to handle overflowing labels on horizontal axis. If set
     * to `"allow"`, it will not be aligned at all. By default it `"justify"`
     * labels inside the chart area. If there is room to move it, it will be
     * aligned to the edge, else it will be removed.
     */
-  var overflow: js.UndefOr[OptionsOverflowValue] = js.undefined
+  var overflow: js.UndefOr[OptionsOverflowValue] = js.native
   /**
     * (Highcharts, Gantt) The pixel padding for axis labels, to ensure white
     * space between them.
     */
-  var padding: js.UndefOr[Double] = js.undefined
+  var padding: js.UndefOr[Double] = js.native
   /**
     * (Highcharts) Defines how the labels are be repositioned according to the
     * 3D chart orientation.
@@ -100,7 +101,7 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     * orthogonal to the axis. This is very similar to `'flap'`, but prevents
     * skewing the labels (X and Y scaling are still present).
     */
-  var position3d: js.UndefOr[OptionsPosition3dValue] = js.undefined
+  var position3d: js.UndefOr[OptionsPosition3dValue] = js.native
   /**
     * (Highcharts, Gantt) Whether to reserve space for the labels. By default,
     * space is reserved for the labels in these cases:
@@ -115,11 +116,11 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     * This can be turned off when for example the labels are rendered inside
     * the plot area instead of outside.
     */
-  var reserveSpace: js.UndefOr[Boolean] = js.undefined
+  var reserveSpace: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts) Rotation of the labels in degrees.
     */
-  var rotation: js.UndefOr[Double] = js.undefined
+  var rotation: js.UndefOr[Double] = js.native
   /**
     * (Highcharts) If enabled, the axis labels will skewed to follow the
     * perspective.
@@ -129,12 +130,12 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     *
     * The final appearance depends heavily on `labels.position3d`.
     */
-  var skew3d: js.UndefOr[Boolean] = js.undefined
+  var skew3d: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts) Horizontal axes only. The number of lines to spread the
     * labels over to make room or tighter labels.
     */
-  var staggerLines: js.UndefOr[Double] = js.undefined
+  var staggerLines: js.UndefOr[Double] = js.native
   /**
     * (Highcharts) To show only every _n_'th label on the axis, set the step to
     * _n_. Setting the step to 2 shows every other label.
@@ -145,7 +146,7 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     *
     * Read more at Axis docs => What axis should I use?
     */
-  var step: js.UndefOr[Double] = js.undefined
+  var step: js.UndefOr[Double] = js.native
   /**
     * (Highcharts) CSS styles for the label. Use `whiteSpace: 'nowrap'` to
     * prevent wrapping of category labels. Use `textOverflow: 'none'` to
@@ -154,83 +155,145 @@ trait ChartParallelAxesLabelsOptions extends js.Object {
     * In styled mode, the labels are styled with the `.highcharts-axis-labels`
     * class.
     */
-  var style: js.UndefOr[CSSObject] = js.undefined
+  var style: js.UndefOr[CSSObject] = js.native
   /**
     * (Gantt) The symbol for the collapse and expand icon in a treegrid.
     */
-  var symbol: js.UndefOr[ChartParallelAxesLabelsSymbolOptions] = js.undefined
+  var symbol: js.UndefOr[ChartParallelAxesLabelsSymbolOptions] = js.native
   /**
     * (Highcharts) Whether to use HTML to render the labels.
     */
-  var useHTML: js.UndefOr[Boolean] = js.undefined
+  var useHTML: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts) The x position offset of the label relative to the tick
     * position on the axis. Defaults to -15 for left axis, 15 for right axis.
     */
-  var x: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[Double] = js.native
   /**
     * (Highcharts) The y position offset of the label relative to the tick
     * position on the axis.
     */
-  var y: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double] = js.native
   /**
     * (Highcharts) The Z index for the axis labels.
     */
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object ChartParallelAxesLabelsOptions {
   @scala.inline
-  def apply(
-    align: String = null,
-    autoRotation: `false` | js.Array[Double] = null,
-    autoRotationLimit: js.UndefOr[Double] = js.undefined,
-    distance: Double | String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    formatter: AxisLabelsFormatterCallbackFunction = null,
-    indentation: js.UndefOr[Double] = js.undefined,
-    levels: js.Array[ChartParallelAxesLabelsLevelsOptions] = null,
-    overflow: OptionsOverflowValue = null,
-    padding: js.UndefOr[Double] = js.undefined,
-    position3d: OptionsPosition3dValue = null,
-    reserveSpace: js.UndefOr[Boolean] = js.undefined,
-    rotation: js.UndefOr[Double] = js.undefined,
-    skew3d: js.UndefOr[Boolean] = js.undefined,
-    staggerLines: js.UndefOr[Double] = js.undefined,
-    step: js.UndefOr[Double] = js.undefined,
-    style: CSSObject = null,
-    symbol: ChartParallelAxesLabelsSymbolOptions = null,
-    useHTML: js.UndefOr[Boolean] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): ChartParallelAxesLabelsOptions = {
+  def apply(): ChartParallelAxesLabelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (autoRotation != null) __obj.updateDynamic("autoRotation")(autoRotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRotationLimit)) __obj.updateDynamic("autoRotationLimit")(autoRotationLimit.get.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentation)) __obj.updateDynamic("indentation")(indentation.get.asInstanceOf[js.Any])
-    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (position3d != null) __obj.updateDynamic("position3d")(position3d.asInstanceOf[js.Any])
-    if (!js.isUndefined(reserveSpace)) __obj.updateDynamic("reserveSpace")(reserveSpace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skew3d)) __obj.updateDynamic("skew3d")(skew3d.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(staggerLines)) __obj.updateDynamic("staggerLines")(staggerLines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartParallelAxesLabelsOptions]
   }
+  @scala.inline
+  implicit class ChartParallelAxesLabelsOptionsOps[Self <: ChartParallelAxesLabelsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setAutoRotationVarargs(value: Double*): Self = this.set("autoRotation", js.Array(value :_*))
+    @scala.inline
+    def setAutoRotation(value: `false` | js.Array[Double]): Self = this.set("autoRotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRotation: Self = this.set("autoRotation", js.undefined)
+    @scala.inline
+    def setAutoRotationLimit(value: Double): Self = this.set("autoRotationLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRotationLimit: Self = this.set("autoRotationLimit", js.undefined)
+    @scala.inline
+    def setDistance(value: Double | String): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistance: Self = this.set("distance", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setFormatter(value: AxisLabelsFormatterCallbackFunction): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setIndentation(value: Double): Self = this.set("indentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentation: Self = this.set("indentation", js.undefined)
+    @scala.inline
+    def setLevelsVarargs(value: ChartParallelAxesLabelsLevelsOptions*): Self = this.set("levels", js.Array(value :_*))
+    @scala.inline
+    def setLevels(value: js.Array[ChartParallelAxesLabelsLevelsOptions]): Self = this.set("levels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevels: Self = this.set("levels", js.undefined)
+    @scala.inline
+    def setOverflow(value: OptionsOverflowValue): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    @scala.inline
+    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPosition3d(value: OptionsPosition3dValue): Self = this.set("position3d", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition3d: Self = this.set("position3d", js.undefined)
+    @scala.inline
+    def setReserveSpace(value: Boolean): Self = this.set("reserveSpace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReserveSpace: Self = this.set("reserveSpace", js.undefined)
+    @scala.inline
+    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    @scala.inline
+    def setSkew3d(value: Boolean): Self = this.set("skew3d", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkew3d: Self = this.set("skew3d", js.undefined)
+    @scala.inline
+    def setStaggerLines(value: Double): Self = this.set("staggerLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaggerLines: Self = this.set("staggerLines", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSymbol(value: ChartParallelAxesLabelsSymbolOptions): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setUseHTML(value: Boolean): Self = this.set("useHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseHTML: Self = this.set("useHTML", js.undefined)
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

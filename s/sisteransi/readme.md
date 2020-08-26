@@ -1,7 +1,7 @@
 
 # Scala.js typings for sisteransi
 
-Typings are for version 1.0.4
+Typings are for version 1.0.5
 
 ## Library description:
 ANSI escape codes for some terminal swag

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(info: GraphQLResolveInfo): js.Any = js.native
+  def apply(info: GraphQLResolveInfo, obj: js.UndefOr[scala.Nothing], opts: Options): js.Any = js.native
   def apply(info: GraphQLResolveInfo, obj: js.Object): js.Any = js.native
   def apply(info: GraphQLResolveInfo, obj: js.Object, opts: Options): js.Any = js.native
 }

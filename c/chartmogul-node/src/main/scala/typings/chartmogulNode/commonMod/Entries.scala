@@ -4,27 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Entries[T] extends Cursor {
-  var entries: js.Array[T]
+  var entries: js.Array[T] = js.native
 }
 
 object Entries {
   @scala.inline
-  def apply[T](
-    entries: js.Array[T],
-    current_page: js.UndefOr[Double] = js.undefined,
-    has_more: js.UndefOr[Boolean] = js.undefined,
-    page: js.UndefOr[Double] = js.undefined,
-    per_page: js.UndefOr[Double] = js.undefined,
-    total_pages: js.UndefOr[Double] = js.undefined
-  ): Entries[T] = {
+  def apply[T](entries: js.Array[T]): Entries[T] = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
-    if (!js.isUndefined(current_page)) __obj.updateDynamic("current_page")(current_page.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(has_more)) __obj.updateDynamic("has_more")(has_more.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(per_page)) __obj.updateDynamic("per_page")(per_page.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(total_pages)) __obj.updateDynamic("total_pages")(total_pages.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entries[T]]
   }
+  @scala.inline
+  implicit class EntriesOps[Self <: Entries[_], T] (val x: Self with Entries[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntriesVarargs(value: T*): Self = this.set("entries", js.Array(value :_*))
+    @scala.inline
+    def setEntries(value: js.Array[T]): Self = this.set("entries", value.asInstanceOf[js.Any])
+  }
+  
 }
 

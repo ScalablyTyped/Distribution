@@ -2,24 +2,13 @@ package typings.mfiles.global.MFiles
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.mfiles.IAdditionalClassInfo
-import typings.mfiles.IAssignmentClassInfo
-import typings.mfiles.MFiles.MFAdditionalClassInfoType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.AdditionalClassInfo")
 @js.native
-class AdditionalClassInfo () extends IAdditionalClassInfo {
-  /* CompleteClass */
-  override var AssignmentClassInfo: IAssignmentClassInfo = js.native
-  /* CompleteClass */
-  override val InfoType: MFAdditionalClassInfoType = js.native
-  /* CompleteClass */
-  override def Clear(): Unit = js.native
-  /* CompleteClass */
-  override def Clone(): IAdditionalClassInfo = js.native
-}
+class AdditionalClassInfo () extends IAdditionalClassInfo
 
 @JSGlobal("MFiles.AdditionalClassInfo")
 @js.native

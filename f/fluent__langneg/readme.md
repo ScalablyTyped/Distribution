@@ -11,8 +11,8 @@ Language Negotiation API for Fluent
 | Full name          | @fluent/langneg |
 | Keywords           | localization, l10n, internationalization, i18n, locale, language, language-negotiation |
 | # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 10831 |
+| # dependents       | 2 |
+| # downloads        | 13580 |
 | # stars            | 0 |
 
 ## Links

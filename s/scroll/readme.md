@@ -12,7 +12,7 @@ animates the scroll top/left position of an element
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 73 |
-| # downloads        | 4007034 |
+| # downloads        | 4082451 |
 | # stars            | 9 |
 
 ## Links

@@ -1,8 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices.AllJoyn
 
-import typings.std.Date
-import typings.winrtUwp.Windows.Foundation.Collections.IMap
-import typings.winrtUwp.Windows.Foundation.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,42 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynAboutData")
 @js.native
 abstract class AllJoynAboutData ()
-  extends typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynAboutData {
-  /** A globally unique identifier associated with the app. */
-  /* CompleteClass */
-  override var appId: String = js.native
-  /** A collection of language-specific app names. */
-  /* CompleteClass */
-  override var appNames: IMap[String, String] = js.native
-  /** The date of manufacture. */
-  /* CompleteClass */
-  override var dateOfManufacture: Date = js.native
-  /** The default app name assigned by the manufacturer- either the developer or the OEM. This property is a shortcut to the entry in the AppNames property for the DefaultLanguage . */
-  /* CompleteClass */
-  override var defaultAppName: String = js.native
-  /** The default description of the app. This property is a shortcut to the entry in the Descriptions property for the DefaultLanguage . */
-  /* CompleteClass */
-  override var defaultDescription: String = js.native
-  /** The name of the manufacturer of the app. This property is a shortcut to the entry in the Manufacturers property for the DefaultLanguage . */
-  /* CompleteClass */
-  override var defaultManufacturer: String = js.native
-  /** A collection of language-specific app description strings. */
-  /* CompleteClass */
-  override var descriptions: IMap[String, String] = js.native
-  /** Indicates if the service should advertise the provided AllJoynAboutData values. */
-  /* CompleteClass */
-  override var isEnabled: Boolean = js.native
-  /** A collection of language-specific manufacturer name strings. */
-  /* CompleteClass */
-  override var manufacturers: IMap[String, String] = js.native
-  /** The model number of the device running the app. */
-  /* CompleteClass */
-  override var modelNumber: String = js.native
-  /** The version number of the app. Use of this property applies to Producer apps. */
-  /* CompleteClass */
-  override var softwareVersion: String = js.native
-  /** A URL to the manufacturer or developer support portal. */
-  /* CompleteClass */
-  override var supportUrl: Uri = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynAboutData
 

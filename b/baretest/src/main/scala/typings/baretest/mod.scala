@@ -14,6 +14,7 @@ object mod extends js.Object {
     def only(name: String, fn: SyncOrAsyncVoidFunction): Unit = js.native
     def run(): js.Promise[Boolean] = js.native
     def skip(): Unit = js.native
+    def skip(name: js.UndefOr[scala.Nothing], fn: SyncOrAsyncVoidFunction): Unit = js.native
     def skip(name: String): Unit = js.native
     def skip(name: String, fn: SyncOrAsyncVoidFunction): Unit = js.native
   }

@@ -37,18 +37,38 @@ trait SchemaHttpQueryParameterMatch extends js.Object {
 
 object SchemaHttpQueryParameterMatch {
   @scala.inline
-  def apply(
-    exactMatch: String = null,
-    name: String = null,
-    presentMatch: js.UndefOr[Boolean] = js.undefined,
-    regexMatch: String = null
-  ): SchemaHttpQueryParameterMatch = {
+  def apply(): SchemaHttpQueryParameterMatch = {
     val __obj = js.Dynamic.literal()
-    if (exactMatch != null) __obj.updateDynamic("exactMatch")(exactMatch.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(presentMatch)) __obj.updateDynamic("presentMatch")(presentMatch.get.asInstanceOf[js.Any])
-    if (regexMatch != null) __obj.updateDynamic("regexMatch")(regexMatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpQueryParameterMatch]
   }
+  @scala.inline
+  implicit class SchemaHttpQueryParameterMatchOps[Self <: SchemaHttpQueryParameterMatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExactMatch(value: String): Self = this.set("exactMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExactMatch: Self = this.set("exactMatch", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPresentMatch(value: Boolean): Self = this.set("presentMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresentMatch: Self = this.set("presentMatch", js.undefined)
+    @scala.inline
+    def setRegexMatch(value: String): Self = this.set("regexMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexMatch: Self = this.set("regexMatch", js.undefined)
+  }
+  
 }
 

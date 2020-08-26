@@ -30,6 +30,7 @@ class ResourceMachineimages protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceMachineimagesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceMachineimagesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -59,6 +60,7 @@ class ResourceMachineimages protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaMachineImage] = js.native
   def get(callback: BodyResponseCallback[SchemaMachineImage]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMachineImage] = js.native
   def get(params: ParamsResourceMachineimagesGet): GaxiosPromise[SchemaMachineImage] = js.native
   def get(params: ParamsResourceMachineimagesGet, callback: BodyResponseCallback[SchemaMachineImage]): Unit = js.native
   def get(
@@ -88,6 +90,7 @@ class ResourceMachineimages protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceMachineimagesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceMachineimagesGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -122,6 +125,7 @@ class ResourceMachineimages protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceMachineimagesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceMachineimagesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -154,6 +158,7 @@ class ResourceMachineimages protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaMachineImageList] = js.native
   def list(callback: BodyResponseCallback[SchemaMachineImageList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMachineImageList] = js.native
   def list(params: ParamsResourceMachineimagesList): GaxiosPromise[SchemaMachineImageList] = js.native
   def list(params: ParamsResourceMachineimagesList, callback: BodyResponseCallback[SchemaMachineImageList]): Unit = js.native
   def list(
@@ -184,6 +189,7 @@ class ResourceMachineimages protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceMachineimagesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceMachineimagesSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -213,6 +219,7 @@ class ResourceMachineimages protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceMachineimagesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceMachineimagesTestiampermissions,

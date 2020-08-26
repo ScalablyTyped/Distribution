@@ -12,7 +12,7 @@ fullscreen spec api in a vendor agnostic wrapper
 | Keywords           | fullscreen, browser |
 | # releases         | 0 |
 | # dependents       | 19 |
-| # downloads        | 725881 |
+| # downloads        | 784496 |
 | # stars            | 1 |
 
 ## Links

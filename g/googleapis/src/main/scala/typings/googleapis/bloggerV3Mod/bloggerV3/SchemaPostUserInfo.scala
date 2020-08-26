@@ -22,12 +22,34 @@ trait SchemaPostUserInfo extends js.Object {
 
 object SchemaPostUserInfo {
   @scala.inline
-  def apply(kind: String = null, post: SchemaPost = null, post_user_info: SchemaPostPerUserInfo = null): SchemaPostUserInfo = {
+  def apply(): SchemaPostUserInfo = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
-    if (post_user_info != null) __obj.updateDynamic("post_user_info")(post_user_info.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPostUserInfo]
   }
+  @scala.inline
+  implicit class SchemaPostUserInfoOps[Self <: SchemaPostUserInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPost(value: SchemaPost): Self = this.set("post", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePost: Self = this.set("post", js.undefined)
+    @scala.inline
+    def setPost_user_info(value: SchemaPostPerUserInfo): Self = this.set("post_user_info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePost_user_info: Self = this.set("post_user_info", js.undefined)
+  }
+  
 }
 

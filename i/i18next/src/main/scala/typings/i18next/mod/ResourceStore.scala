@@ -13,6 +13,18 @@ class ResourceStore protected () extends js.Object {
   var data: Resource = js.native
   var options: InitOptions = js.native
   /**
+    * Remove event listener
+    * removes all callback when callback not specified
+    */
+  @JSName("off")
+  def off_added(event: added): Unit = js.native
+  @JSName("off")
+  def off_added(event: added, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
+  @JSName("off")
+  def off_removed(event: removed): Unit = js.native
+  @JSName("off")
+  def off_removed(event: removed, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
+  /**
     * Gets fired when resources got added or removed
     */
   @JSName("on")

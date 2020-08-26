@@ -24,64 +24,48 @@ trait FragmentNode extends js.Object
 
 object FragmentNode {
   @scala.inline
-  def TagNode(contents: String, name: tag, location: LocationRange = null): FragmentNode = {
+  def TagNode(contents: String, name: tag): FragmentNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentNode]
   }
   @scala.inline
-  def PipeNode(
-    contents: Null,
-    name: pipe,
-    nonTerminal: String,
-    optional: Boolean,
-    params: String,
-    location: LocationRange = null
-  ): FragmentNode = {
+  def PipeNode(contents: Null, name: pipe, nonTerminal: String, optional: Boolean, params: String): FragmentNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nonTerminal = nonTerminal.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentNode]
   }
   @scala.inline
-  def TildeNode(contents: js.Array[FragmentNode], name: tilde, location: LocationRange = null): FragmentNode = {
+  def TildeNode(contents: js.Array[FragmentNode], name: tilde): FragmentNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentNode]
   }
   @scala.inline
-  def StarNode(contents: js.Array[FragmentNode], name: star, location: LocationRange = null): FragmentNode = {
+  def StarNode(contents: js.Array[FragmentNode], name: star): FragmentNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentNode]
   }
   @scala.inline
-  def TextNode(contents: String, name: text, location: LocationRange = null): FragmentNode = {
+  def TextNode(contents: String, name: text): FragmentNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentNode]
   }
   @scala.inline
-  def UnderscoreNode(contents: js.Array[FragmentNode], name: underscore, location: LocationRange = null): FragmentNode = {
+  def UnderscoreNode(contents: js.Array[FragmentNode], name: underscore): FragmentNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentNode]
   }
   @scala.inline
-  def CommentNode(contents: String, name: comment, location: LocationRange = null): FragmentNode = {
+  def CommentNode(contents: String, name: comment): FragmentNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentNode]
   }
   @scala.inline
-  def TickNode(contents: js.Array[FragmentNode], name: tick, location: LocationRange = null): FragmentNode = {
+  def TickNode(contents: js.Array[FragmentNode], name: tick): FragmentNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentNode]
   }
   @scala.inline
-  def OpaqueTagNode(contents: String, name: opaqueTag, location: LocationRange = null): FragmentNode = {
+  def OpaqueTagNode(contents: String, name: opaqueTag): FragmentNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[FragmentNode]
   }
 }

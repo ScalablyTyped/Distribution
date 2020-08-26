@@ -17,10 +17,26 @@ trait SchemaAsymmetricDecryptResponse extends js.Object {
 
 object SchemaAsymmetricDecryptResponse {
   @scala.inline
-  def apply(plaintext: String = null): SchemaAsymmetricDecryptResponse = {
+  def apply(): SchemaAsymmetricDecryptResponse = {
     val __obj = js.Dynamic.literal()
-    if (plaintext != null) __obj.updateDynamic("plaintext")(plaintext.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAsymmetricDecryptResponse]
   }
+  @scala.inline
+  implicit class SchemaAsymmetricDecryptResponseOps[Self <: SchemaAsymmetricDecryptResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlaintext(value: String): Self = this.set("plaintext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaintext: Self = this.set("plaintext", js.undefined)
+  }
+  
 }
 

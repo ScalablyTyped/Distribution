@@ -46,18 +46,40 @@ trait SchemaGoogleFirestoreAdminV1beta2Index extends js.Object {
 
 object SchemaGoogleFirestoreAdminV1beta2Index {
   @scala.inline
-  def apply(
-    fields: js.Array[SchemaGoogleFirestoreAdminV1beta2IndexField] = null,
-    name: String = null,
-    queryScope: String = null,
-    state: String = null
-  ): SchemaGoogleFirestoreAdminV1beta2Index = {
+  def apply(): SchemaGoogleFirestoreAdminV1beta2Index = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (queryScope != null) __obj.updateDynamic("queryScope")(queryScope.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1beta2Index]
   }
+  @scala.inline
+  implicit class SchemaGoogleFirestoreAdminV1beta2IndexOps[Self <: SchemaGoogleFirestoreAdminV1beta2Index] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFieldsVarargs(value: SchemaGoogleFirestoreAdminV1beta2IndexField*): Self = this.set("fields", js.Array(value :_*))
+    @scala.inline
+    def setFields(value: js.Array[SchemaGoogleFirestoreAdminV1beta2IndexField]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setQueryScope(value: String): Self = this.set("queryScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryScope: Self = this.set("queryScope", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

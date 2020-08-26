@@ -35,10 +35,11 @@ import scala.scalajs.js.annotation._
   *           .setDataTable(sampleData)
   *           .build();
   */
+@js.native
 trait TextStyle extends js.Object {
-  def getColor(): String
-  def getFontName(): String
-  def getFontSize(): Double
+  def getColor(): String = js.native
+  def getFontName(): String = js.native
+  def getFontSize(): Double = js.native
 }
 
 object TextStyle {
@@ -47,5 +48,24 @@ object TextStyle {
     val __obj = js.Dynamic.literal(getColor = js.Any.fromFunction0(getColor), getFontName = js.Any.fromFunction0(getFontName), getFontSize = js.Any.fromFunction0(getFontSize))
     __obj.asInstanceOf[TextStyle]
   }
+  @scala.inline
+  implicit class TextStyleOps[Self <: TextStyle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetColor(value: () => String): Self = this.set("getColor", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetFontName(value: () => String): Self = this.set("getFontName", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetFontSize(value: () => Double): Self = this.set("getFontSize", js.Any.fromFunction0(value))
+  }
+  
 }
 

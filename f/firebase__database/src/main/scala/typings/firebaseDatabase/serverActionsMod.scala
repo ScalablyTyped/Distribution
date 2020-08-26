@@ -73,6 +73,7 @@ object serverActionsMod extends js.Object {
       * @param {string=} hash
       */
     def put(pathString: String, data: js.Any): Unit = js.native
+    def put(pathString: String, data: js.Any, onComplete: js.UndefOr[scala.Nothing], hash: String): Unit = js.native
     def put(pathString: String, data: js.Any, onComplete: js.Function2[/* a */ String, /* b */ String, Unit]): Unit = js.native
     def put(
       pathString: String,
@@ -89,13 +90,13 @@ object serverActionsMod extends js.Object {
       * @param {Object.<string, *>} stats
       */
     def reportStats(stats: StringDictionary[js.Any]): Unit = js.native
-    def unlisten(query: Query): Unit = js.native
     /**
       * Remove a listen.
       *
       * @param {!Query} query
       * @param {?number} tag
       */
+    def unlisten(query: Query): Unit = js.native
     def unlisten(query: Query, tag: Double): Unit = js.native
   }
   

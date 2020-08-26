@@ -12,7 +12,7 @@ Render JJV errors
 | Keywords           | jjv, json, schema, jsonschema, errors |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 45195 |
+| # downloads        | 44899 |
 | # stars            | 0 |
 
 ## Links

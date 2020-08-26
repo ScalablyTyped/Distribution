@@ -23,7 +23,7 @@ object transactionMod extends js.Object {
     var _implementsEIP155: js.Any = js.native
     var _isSigned: js.Any = js.native
     var _overrideVSetterWithValidation: js.Any = js.native
-    var _senderPubKey: js.UndefOr[js.Any] = js.native
+    var _senderPubKey: js.Any = js.native
     var _validateV: js.Any = js.native
     var data: Buffer = js.native
     var gasLimit: Buffer = js.native
@@ -133,6 +133,7 @@ object transactionMod extends js.Object {
     def this(data: PrefixedHexString) = this()
     def this(data: TxData) = this()
     def this(data: Buffer) = this()
+    def this(data: js.UndefOr[scala.Nothing], opts: TransactionOptions) = this()
     def this(data: js.Array[BufferLike], opts: TransactionOptions) = this()
     def this(data: PrefixedHexString, opts: TransactionOptions) = this()
     def this(data: TxData, opts: TransactionOptions) = this()

@@ -30,6 +30,11 @@ trait TreeView[T] extends Disposable {
     * Event that is fired when the [selection](#TreeView.selection) has changed
     */
   def onDidChangeSelection(listener: js.Function1[/* e */ TreeViewSelectionChangeEvent[T], _]): Disposable = js.native
+  def onDidChangeSelection(
+    listener: js.Function1[/* e */ TreeViewSelectionChangeEvent[T], _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onDidChangeSelection(listener: js.Function1[/* e */ TreeViewSelectionChangeEvent[T], _], thisArgs: js.Any): Disposable = js.native
   def onDidChangeSelection(
     listener: js.Function1[/* e */ TreeViewSelectionChangeEvent[T], _],
@@ -40,6 +45,11 @@ trait TreeView[T] extends Disposable {
     * Event that is fired when [visibility](#TreeView.visible) has changed
     */
   def onDidChangeVisibility(listener: js.Function1[/* e */ TreeViewVisibilityChangeEvent, _]): Disposable = js.native
+  def onDidChangeVisibility(
+    listener: js.Function1[/* e */ TreeViewVisibilityChangeEvent, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onDidChangeVisibility(listener: js.Function1[/* e */ TreeViewVisibilityChangeEvent, _], thisArgs: js.Any): Disposable = js.native
   def onDidChangeVisibility(
     listener: js.Function1[/* e */ TreeViewVisibilityChangeEvent, _],
@@ -50,6 +60,11 @@ trait TreeView[T] extends Disposable {
     * Event that is fired when an element is collapsed
     */
   def onDidCollapseElement(listener: js.Function1[/* e */ TreeViewExpansionEvent[T], _]): Disposable = js.native
+  def onDidCollapseElement(
+    listener: js.Function1[/* e */ TreeViewExpansionEvent[T], _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onDidCollapseElement(listener: js.Function1[/* e */ TreeViewExpansionEvent[T], _], thisArgs: js.Any): Disposable = js.native
   def onDidCollapseElement(
     listener: js.Function1[/* e */ TreeViewExpansionEvent[T], _],
@@ -60,6 +75,11 @@ trait TreeView[T] extends Disposable {
     * Event that is fired when an element is expanded
     */
   def onDidExpandElement(listener: js.Function1[/* e */ TreeViewExpansionEvent[T], _]): Disposable = js.native
+  def onDidExpandElement(
+    listener: js.Function1[/* e */ TreeViewExpansionEvent[T], _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onDidExpandElement(listener: js.Function1[/* e */ TreeViewExpansionEvent[T], _], thisArgs: js.Any): Disposable = js.native
   def onDidExpandElement(
     listener: js.Function1[/* e */ TreeViewExpansionEvent[T], _],

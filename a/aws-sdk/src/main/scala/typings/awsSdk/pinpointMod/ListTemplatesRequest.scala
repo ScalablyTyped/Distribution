@@ -26,18 +26,38 @@ trait ListTemplatesRequest extends js.Object {
 
 object ListTemplatesRequest {
   @scala.inline
-  def apply(
-    NextToken: string = null,
-    PageSize: string = null,
-    Prefix: string = null,
-    TemplateType: string = null
-  ): ListTemplatesRequest = {
+  def apply(): ListTemplatesRequest = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
-    if (TemplateType != null) __obj.updateDynamic("TemplateType")(TemplateType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTemplatesRequest]
   }
+  @scala.inline
+  implicit class ListTemplatesRequestOps[Self <: ListTemplatesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPageSize(value: string): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    @scala.inline
+    def setPrefix(value: string): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    @scala.inline
+    def setTemplateType(value: string): Self = this.set("TemplateType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateType: Self = this.set("TemplateType", js.undefined)
+  }
+  
 }
 

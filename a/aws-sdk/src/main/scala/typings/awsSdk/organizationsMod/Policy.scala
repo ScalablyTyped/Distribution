@@ -18,11 +18,30 @@ trait Policy extends js.Object {
 
 object Policy {
   @scala.inline
-  def apply(Content: PolicyContent = null, PolicySummary: PolicySummary = null): Policy = {
+  def apply(): Policy = {
     val __obj = js.Dynamic.literal()
-    if (Content != null) __obj.updateDynamic("Content")(Content.asInstanceOf[js.Any])
-    if (PolicySummary != null) __obj.updateDynamic("PolicySummary")(PolicySummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Policy]
   }
+  @scala.inline
+  implicit class PolicyOps[Self <: Policy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: PolicyContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("Content", js.undefined)
+    @scala.inline
+    def setPolicySummary(value: PolicySummary): Self = this.set("PolicySummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicySummary: Self = this.set("PolicySummary", js.undefined)
+  }
+  
 }
 

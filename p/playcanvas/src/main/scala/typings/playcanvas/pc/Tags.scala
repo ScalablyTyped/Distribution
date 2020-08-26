@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Create an instance of a Tags.
   * @param [parent] - Parent object who tags belong to.
-  Note: Tags are used as addition of `pc.Entity` and `pc.Asset` as `tags` field.
+  * Note: Tags are used as addition of `pc.Entity` and `pc.Asset` as `tags` field.
   */
 @js.native
 trait Tags extends EventHandler {
@@ -35,10 +35,10 @@ trait Tags extends EventHandler {
   def clear(): Unit = js.native
   /**
     * Check if tags satisfy filters.
-    Filters can be provided by simple name of tag, as well as by array of tags.
-    When an array is provided it will check if tags contain each tag within the array.
-    If any of comma separated argument is satisfied, then it will return true.
-    Any number of combinations are valid, and order is irrelevant.
+    * Filters can be provided by simple name of tag, as well as by array of tags.
+    * When an array is provided it will check if tags contain each tag within the array.
+    * If any of comma separated argument is satisfied, then it will return true.
+    * Any number of combinations are valid, and order is irrelevant.
     * @example
     * tags.has('player'); // player
     * @example

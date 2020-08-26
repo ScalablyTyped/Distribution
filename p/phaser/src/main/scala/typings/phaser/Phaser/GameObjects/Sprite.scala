@@ -59,6 +59,7 @@ trait Sprite
     * @param startFrame Optionally start the animation playing from this frame index. Default 0.
     */
   def play(key: String): this.type = js.native
+  def play(key: String, ignoreIfPlaying: js.UndefOr[scala.Nothing], startFrame: integer): this.type = js.native
   def play(key: String, ignoreIfPlaying: Boolean): this.type = js.native
   def play(key: String, ignoreIfPlaying: Boolean, startFrame: integer): this.type = js.native
   /**

@@ -31,6 +31,7 @@ class ResourceBeaconinfo protected () extends js.Object {
     */
   def getforobserved(): GaxiosPromise[SchemaGetInfoForObservedBeaconsResponse] = js.native
   def getforobserved(callback: BodyResponseCallback[SchemaGetInfoForObservedBeaconsResponse]): Unit = js.native
+  def getforobserved(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetInfoForObservedBeaconsResponse] = js.native
   def getforobserved(params: ParamsResourceBeaconinfoGetforobserved): GaxiosPromise[SchemaGetInfoForObservedBeaconsResponse] = js.native
   def getforobserved(
     params: ParamsResourceBeaconinfoGetforobserved,

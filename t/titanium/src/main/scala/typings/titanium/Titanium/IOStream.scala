@@ -28,7 +28,26 @@ trait IOStream extends Proxy {
     * Reads data from this stream into a buffer.
     */
   def read(buffer: Buffer): Double = js.native
+  def read(
+    buffer: Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, Unit]
+  ): Double = js.native
+  def read(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
+  def read(
+    buffer: Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: Double,
+    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, Unit]
+  ): Double = js.native
   def read(buffer: Buffer, offset: Double): Double = js.native
+  def read(
+    buffer: Buffer,
+    offset: Double,
+    length: js.UndefOr[scala.Nothing],
+    resultsCallback: js.Function1[/* param0 */ ReadCallbackArgs, Unit]
+  ): Double = js.native
   def read(buffer: Buffer, offset: Double, length: Double): Double = js.native
   def read(
     buffer: Buffer,
@@ -40,7 +59,26 @@ trait IOStream extends Proxy {
     * Writes data from a buffer to this stream.
     */
   def write(buffer: Buffer): Double = js.native
+  def write(
+    buffer: Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, Unit]
+  ): Double = js.native
+  def write(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
+  def write(
+    buffer: Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: Double,
+    resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, Unit]
+  ): Double = js.native
   def write(buffer: Buffer, offset: Double): Double = js.native
+  def write(
+    buffer: Buffer,
+    offset: Double,
+    length: js.UndefOr[scala.Nothing],
+    resultsCallback: js.Function1[/* param0 */ WriteCallbackArgs, Unit]
+  ): Double = js.native
   def write(buffer: Buffer, offset: Double, length: Double): Double = js.native
   def write(
     buffer: Buffer,

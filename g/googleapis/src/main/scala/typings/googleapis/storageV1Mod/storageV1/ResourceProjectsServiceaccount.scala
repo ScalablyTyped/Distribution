@@ -82,6 +82,7 @@ class ResourceProjectsServiceaccount protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaServiceAccount] = js.native
   def get(callback: BodyResponseCallback[SchemaServiceAccount]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
   def get(params: ParamsResourceProjectsServiceaccountGet): GaxiosPromise[SchemaServiceAccount] = js.native
   def get(
     params: ParamsResourceProjectsServiceaccountGet,

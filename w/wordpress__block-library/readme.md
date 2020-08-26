@@ -12,13 +12,12 @@ Block library for the WordPress editor.
 | Keywords           | wordpress, blocks |
 | # releases         | 54 |
 | # dependents       | 7 |
-| # downloads        | 85216 |
+| # downloads        | 87692 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/block-library/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
-- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fblock-library)
     
 

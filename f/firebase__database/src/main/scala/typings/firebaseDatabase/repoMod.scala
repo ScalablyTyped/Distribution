@@ -2,8 +2,7 @@ package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseAppTypes.mod.FirebaseApp
-import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
-import typings.firebaseComponent.mod.Provider
+import typings.firebaseDatabase.authTokenProviderMod.AuthTokenProvider
 import typings.firebaseDatabase.dataSnapshotMod.DataSnapshot
 import typings.firebaseDatabase.databaseMod.Database
 import typings.firebaseDatabase.eventRegistrationMod.EventRegistration
@@ -26,7 +25,7 @@ object repoMod extends js.Object {
       repoInfo_ : RepoInfo,
       forceRestClient: Boolean,
       app: FirebaseApp,
-      authProvider: Provider[FirebaseAuthInternalName]
+      authTokenProvider: AuthTokenProvider
     ) = this()
     var __database: js.Any = js.native
     var abortTransactions_ : js.Any = js.native

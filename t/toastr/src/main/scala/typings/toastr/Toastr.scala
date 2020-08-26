@@ -41,12 +41,14 @@ trait Toastr extends js.Object {
     * Clear toasts
     */
   def clear(): Unit = js.native
+  def clear(toast: js.UndefOr[scala.Nothing], clearOptions: Force): Unit = js.native
   def clear(toast: JQuery[HTMLElement]): Unit = js.native
   def clear(toast: JQuery[HTMLElement], clearOptions: Force): Unit = js.native
   /**
     * Create an error toast
     */
   def error(message: String): JQuery[HTMLElement] = js.native
+  def error(message: String, title: js.UndefOr[scala.Nothing], overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def error(message: String, title: String): JQuery[HTMLElement] = js.native
   def error(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   /**
@@ -62,6 +64,7 @@ trait Toastr extends js.Object {
     * Create an info toast
     */
   def info(message: String): JQuery[HTMLElement] = js.native
+  def info(message: String, title: js.UndefOr[scala.Nothing], overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def info(message: String, title: String): JQuery[HTMLElement] = js.native
   def info(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   /**
@@ -82,12 +85,14 @@ trait Toastr extends js.Object {
     * Create a success toast
     */
   def success(message: String): JQuery[HTMLElement] = js.native
+  def success(message: String, title: js.UndefOr[scala.Nothing], overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def success(message: String, title: String): JQuery[HTMLElement] = js.native
   def success(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   /**
     * Create a warning toast
     */
   def warning(message: String): JQuery[HTMLElement] = js.native
+  def warning(message: String, title: js.UndefOr[scala.Nothing], overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def warning(message: String, title: String): JQuery[HTMLElement] = js.native
   def warning(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
 }

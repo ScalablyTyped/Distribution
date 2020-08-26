@@ -43,7 +43,23 @@ object runtime extends js.Object {
   val unknownValue: /* "04da6b54-80e4-46f7-96ec-b56ff0331ba9" */ String = js.native
   def allConfig(): StringDictionary[String] = js.native
   def computeCodePaths(): js.Promise[Map[String, Asset | Archive]] = js.native
+  def computeCodePaths(
+    extraIncludePaths: js.UndefOr[scala.Nothing],
+    extraIncludePackages: js.UndefOr[scala.Nothing],
+    extraExcludePackages: js.Array[String]
+  ): js.Promise[Map[String, Asset | Archive]] = js.native
+  def computeCodePaths(extraIncludePaths: js.UndefOr[scala.Nothing], extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = js.native
+  def computeCodePaths(
+    extraIncludePaths: js.UndefOr[scala.Nothing],
+    extraIncludePackages: js.Array[String],
+    extraExcludePackages: js.Array[String]
+  ): js.Promise[Map[String, Asset | Archive]] = js.native
   def computeCodePaths(extraIncludePaths: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = js.native
+  def computeCodePaths(
+    extraIncludePaths: js.Array[String],
+    extraIncludePackages: js.UndefOr[scala.Nothing],
+    extraExcludePackages: js.Array[String]
+  ): js.Promise[Map[String, Asset | Archive]] = js.native
   def computeCodePaths(extraIncludePaths: js.Array[String], extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = js.native
   def computeCodePaths(
     extraIncludePaths: js.Array[String],
@@ -65,12 +81,12 @@ object runtime extends js.Object {
   def hasMonitor(): Boolean = js.native
   def invoke(tok: String, props: Inputs): js.Promise[_] = js.native
   def invoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[_] = js.native
-  def invokeFallbackToAsync[T](tok: String, props: Inputs, opts: InvokeOptions): T = js.native
   def isDryRun(): Boolean = js.native
   def isLegacyApplyEnabled(): Boolean = js.native
   def isQueryMode(): Boolean = js.native
   def isTestModeEnabled(): Boolean = js.native
   def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](): AsyncQueryable[ResolvedResource[U]] = js.native
+  def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](typeFilter: js.UndefOr[scala.Nothing], stackName: String): AsyncQueryable[ResolvedResource[U]] = js.native
   def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ Boolean]): AsyncQueryable[ResolvedResource[U]] = js.native
   def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ Boolean], stackName: String): AsyncQueryable[ResolvedResource[U]] = js.native
   def monitorSupportsSecrets(): js.Promise[Boolean] = js.native
@@ -120,11 +136,29 @@ object runtime extends js.Object {
   ] = js.native
   def setConfig(k: String, v: String): Unit = js.native
   def setMockOptions(mockMonitor: js.Any): Unit = js.native
+  def setMockOptions(
+    mockMonitor: js.Any,
+    project: js.UndefOr[scala.Nothing],
+    stack: js.UndefOr[scala.Nothing],
+    preview: Boolean
+  ): Unit = js.native
+  def setMockOptions(mockMonitor: js.Any, project: js.UndefOr[scala.Nothing], stack: String): Unit = js.native
+  def setMockOptions(mockMonitor: js.Any, project: js.UndefOr[scala.Nothing], stack: String, preview: Boolean): Unit = js.native
   def setMockOptions(mockMonitor: js.Any, project: String): Unit = js.native
+  def setMockOptions(mockMonitor: js.Any, project: String, stack: js.UndefOr[scala.Nothing], preview: Boolean): Unit = js.native
   def setMockOptions(mockMonitor: js.Any, project: String, stack: String): Unit = js.native
   def setMockOptions(mockMonitor: js.Any, project: String, stack: String, preview: Boolean): Unit = js.native
   def setMocks(mocks: Mocks): Unit = js.native
+  def setMocks(
+    mocks: Mocks,
+    project: js.UndefOr[scala.Nothing],
+    stack: js.UndefOr[scala.Nothing],
+    preview: Boolean
+  ): Unit = js.native
+  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String): Unit = js.native
+  def setMocks(mocks: Mocks, project: js.UndefOr[scala.Nothing], stack: String, preview: Boolean): Unit = js.native
   def setMocks(mocks: Mocks, project: String): Unit = js.native
+  def setMocks(mocks: Mocks, project: String, stack: js.UndefOr[scala.Nothing], preview: Boolean): Unit = js.native
   def setMocks(mocks: Mocks, project: String, stack: String): Unit = js.native
   def setMocks(mocks: Mocks, project: String, stack: String, preview: Boolean): Unit = js.native
   def setRootResource(res: typings.pulumiPulumi.resourceMod.ComponentResource[_]): js.Promise[Unit] = js.native

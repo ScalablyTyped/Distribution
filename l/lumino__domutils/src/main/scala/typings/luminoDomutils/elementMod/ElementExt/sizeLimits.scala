@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/domutils/lib/element", "ElementExt.sizeLimits")
+@JSImport("@lumino/domutils/types/element", "ElementExt.sizeLimits")
 @js.native
 object sizeLimits extends js.Object {
   /**

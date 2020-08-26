@@ -12,11 +12,7 @@ import typings.realm.Realm.Sync.RealmWatchPredicate
 import typings.realm.Realm.Sync.SSLConfiguration
 import typings.realm.Realm.Sync.SerializedTokenUser
 import typings.realm.Realm.Sync.SerializedUser
-import typings.realm.Realm.Sync.SubscriptionNotificationCallback
-import typings.realm.Realm.Sync.SubscriptionState
 import typings.realm.anon.Provider
-import typings.realm.realmStrings.adminToken
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,17 +61,7 @@ object Sync extends js.Object {
   
   @js.native
   class AdminCredentials ()
-    extends typings.realm.Realm.Sync.AdminCredentials {
-    /* CompleteClass */
-    override val identityProvider: String = js.native
-    /* CompleteClass */
-    @JSName("identityProvider")
-    override var identityProvider_AdminCredentials: adminToken = js.native
-    /* CompleteClass */
-    override val token: String = js.native
-    /* CompleteClass */
-    override val userInfo: StringDictionary[js.Any] = js.native
-  }
+    extends typings.realm.Realm.Sync.AdminCredentials
   
   /**
     * AuthError
@@ -83,64 +69,23 @@ object Sync extends js.Object {
     */
   @js.native
   class AuthError ()
-    extends typings.realm.Realm.Sync.AuthError {
-    /* CompleteClass */
-    override val code: Double = js.native
-    /* CompleteClass */
-    override val `type`: String = js.native
-  }
+    extends typings.realm.Realm.Sync.AuthError
   
   @js.native
   class Credentials ()
-    extends typings.realm.Realm.Sync.Credentials {
-    /* CompleteClass */
-    override val identityProvider: String = js.native
-    /* CompleteClass */
-    override val token: String = js.native
-    /* CompleteClass */
-    override val userInfo: StringDictionary[js.Any] = js.native
-  }
+    extends typings.realm.Realm.Sync.Credentials
   
   @js.native
   class Permission ()
-    extends typings.realm.Realm.Sync.Permission {
-    /* CompleteClass */
-    override val id: String = js.native
-    /* CompleteClass */
-    override val path: String = js.native
-    /* CompleteClass */
-    override val updatedAt: Date = js.native
-    /* CompleteClass */
-    override val userId: String = js.native
-  }
+    extends typings.realm.Realm.Sync.Permission
   
   @js.native
   class PermissionChange ()
-    extends typings.realm.Realm.Sync.PermissionChange {
-    /* CompleteClass */
-    override var createdAt: Date = js.native
-    /* CompleteClass */
-    override var id: String = js.native
-    /* CompleteClass */
-    override var realmUrl: String = js.native
-    /* CompleteClass */
-    override var updatedAt: Date = js.native
-    /* CompleteClass */
-    override var userId: String = js.native
-  }
+    extends typings.realm.Realm.Sync.PermissionChange
   
   @js.native
   class PermissionOffer ()
-    extends typings.realm.Realm.Sync.PermissionOffer {
-    /* CompleteClass */
-    override var createdAt: Date = js.native
-    /* CompleteClass */
-    override var id: String = js.native
-    /* CompleteClass */
-    override var realmUrl: String = js.native
-    /* CompleteClass */
-    override var updatedAt: Date = js.native
-  }
+    extends typings.realm.Realm.Sync.PermissionOffer
   
   /**
     * Session
@@ -156,20 +101,7 @@ object Sync extends js.Object {
     */
   @js.native
   class Subscription ()
-    extends typings.realm.Realm.Sync.Subscription {
-    /* CompleteClass */
-    override val error: String = js.native
-    /* CompleteClass */
-    override val state: SubscriptionState = js.native
-    /* CompleteClass */
-    override def addListener(subscriptionCallback: SubscriptionNotificationCallback): Unit = js.native
-    /* CompleteClass */
-    override def removeAllListeners(): Unit = js.native
-    /* CompleteClass */
-    override def removeListener(subscriptionCallback: SubscriptionNotificationCallback): Unit = js.native
-    /* CompleteClass */
-    override def unsubscribe(): Unit = js.native
-  }
+    extends typings.realm.Realm.Sync.Subscription
   
   /**
     * User
@@ -196,6 +128,7 @@ object Sync extends js.Object {
     name: RealmListenerEventName,
     changeCallback: js.Function1[/* changeEvent */ ChangeEvent, js.Promise[Unit] | Unit]
   ): js.Promise[Unit] = js.native
+  def enableSessionMultiplexing(): Unit = js.native
   @JSName("_hasExistingSessions")
   def hasExistingSessions(): Boolean = js.native
   def initiateClientReset(path: String): Unit = js.native

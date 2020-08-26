@@ -34,22 +34,48 @@ trait UserSettings extends js.Object {
 
 object UserSettings {
   @scala.inline
-  def apply(
-    ExecutionRole: RoleArn = null,
-    JupyterServerAppSettings: JupyterServerAppSettings = null,
-    KernelGatewayAppSettings: KernelGatewayAppSettings = null,
-    SecurityGroups: SecurityGroupIds = null,
-    SharingSettings: SharingSettings = null,
-    TensorBoardAppSettings: TensorBoardAppSettings = null
-  ): UserSettings = {
+  def apply(): UserSettings = {
     val __obj = js.Dynamic.literal()
-    if (ExecutionRole != null) __obj.updateDynamic("ExecutionRole")(ExecutionRole.asInstanceOf[js.Any])
-    if (JupyterServerAppSettings != null) __obj.updateDynamic("JupyterServerAppSettings")(JupyterServerAppSettings.asInstanceOf[js.Any])
-    if (KernelGatewayAppSettings != null) __obj.updateDynamic("KernelGatewayAppSettings")(KernelGatewayAppSettings.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (SharingSettings != null) __obj.updateDynamic("SharingSettings")(SharingSettings.asInstanceOf[js.Any])
-    if (TensorBoardAppSettings != null) __obj.updateDynamic("TensorBoardAppSettings")(TensorBoardAppSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserSettings]
   }
+  @scala.inline
+  implicit class UserSettingsOps[Self <: UserSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecutionRole(value: RoleArn): Self = this.set("ExecutionRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionRole: Self = this.set("ExecutionRole", js.undefined)
+    @scala.inline
+    def setJupyterServerAppSettings(value: JupyterServerAppSettings): Self = this.set("JupyterServerAppSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJupyterServerAppSettings: Self = this.set("JupyterServerAppSettings", js.undefined)
+    @scala.inline
+    def setKernelGatewayAppSettings(value: KernelGatewayAppSettings): Self = this.set("KernelGatewayAppSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKernelGatewayAppSettings: Self = this.set("KernelGatewayAppSettings", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: SecurityGroupIds): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    @scala.inline
+    def setSharingSettings(value: SharingSettings): Self = this.set("SharingSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharingSettings: Self = this.set("SharingSettings", js.undefined)
+    @scala.inline
+    def setTensorBoardAppSettings(value: TensorBoardAppSettings): Self = this.set("TensorBoardAppSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTensorBoardAppSettings: Self = this.set("TensorBoardAppSettings", js.undefined)
+  }
+  
 }
 

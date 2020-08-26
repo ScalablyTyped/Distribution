@@ -21,26 +21,6 @@ class EditSession protected () extends IEditSession {
   def this(content: String, mode: String) = this()
   def this(text: String, mode: TextMode) = this()
   def this(text: js.Array[String], mode: String) = this()
-  /**
-    * Get a Configuration Option
-    **/
-  /* CompleteClass */
-  override def getOption(name: String): js.Any = js.native
-  /**
-    * Get Configuration Options
-    **/
-  /* CompleteClass */
-  override def getOptions(): js.Any = js.native
-  /**
-    * Sets a Configuration Option
-    **/
-  /* CompleteClass */
-  override def setOption(optionName: String, optionValue: js.Any): Unit = js.native
-  /**
-    * Sets Configuration Options
-    **/
-  /* CompleteClass */
-  override def setOptions(keyValueTuples: js.Any): Unit = js.native
 }
 
 @JSGlobal("AceAjax.EditSession")

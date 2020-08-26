@@ -4,60 +4,105 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Auth0Options extends js.Object {
-  var access_token: js.UndefOr[String] = js.undefined
-  var connections: js.UndefOr[js.Array[String]] = js.undefined
-  var container: js.UndefOr[String] = js.undefined
-  var enableReturnUserExperience: js.UndefOr[Boolean] = js.undefined
-  var extraParameters: js.UndefOr[js.Any] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var protocol: js.UndefOr[String] = js.undefined
-  var request_id: js.UndefOr[String] = js.undefined
-  var scope: js.UndefOr[String] = js.undefined
-  var showForgot: js.UndefOr[Boolean] = js.undefined
-  var showIcon: js.UndefOr[Boolean] = js.undefined
-  var showSignup: js.UndefOr[Boolean] = js.undefined
-  var state: js.UndefOr[js.Any] = js.undefined
-  var userPwdConnectionName: js.UndefOr[String] = js.undefined
-  var username_style: js.UndefOr[String] = js.undefined
+  var access_token: js.UndefOr[String] = js.native
+  var connections: js.UndefOr[js.Array[String]] = js.native
+  var container: js.UndefOr[String] = js.native
+  var enableReturnUserExperience: js.UndefOr[Boolean] = js.native
+  var extraParameters: js.UndefOr[js.Any] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.native
+  var request_id: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.native
+  var showForgot: js.UndefOr[Boolean] = js.native
+  var showIcon: js.UndefOr[Boolean] = js.native
+  var showSignup: js.UndefOr[Boolean] = js.native
+  var state: js.UndefOr[js.Any] = js.native
+  var userPwdConnectionName: js.UndefOr[String] = js.native
+  var username_style: js.UndefOr[String] = js.native
 }
 
 object Auth0Options {
   @scala.inline
-  def apply(
-    access_token: String = null,
-    connections: js.Array[String] = null,
-    container: String = null,
-    enableReturnUserExperience: js.UndefOr[Boolean] = js.undefined,
-    extraParameters: js.Any = null,
-    icon: String = null,
-    protocol: String = null,
-    request_id: String = null,
-    scope: String = null,
-    showForgot: js.UndefOr[Boolean] = js.undefined,
-    showIcon: js.UndefOr[Boolean] = js.undefined,
-    showSignup: js.UndefOr[Boolean] = js.undefined,
-    state: js.Any = null,
-    userPwdConnectionName: String = null,
-    username_style: String = null
-  ): Auth0Options = {
+  def apply(): Auth0Options = {
     val __obj = js.Dynamic.literal()
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableReturnUserExperience)) __obj.updateDynamic("enableReturnUserExperience")(enableReturnUserExperience.get.asInstanceOf[js.Any])
-    if (extraParameters != null) __obj.updateDynamic("extraParameters")(extraParameters.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (request_id != null) __obj.updateDynamic("request_id")(request_id.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(showForgot)) __obj.updateDynamic("showForgot")(showForgot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSignup)) __obj.updateDynamic("showSignup")(showSignup.get.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (userPwdConnectionName != null) __obj.updateDynamic("userPwdConnectionName")(userPwdConnectionName.asInstanceOf[js.Any])
-    if (username_style != null) __obj.updateDynamic("username_style")(username_style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0Options]
   }
+  @scala.inline
+  implicit class Auth0OptionsOps[Self <: Auth0Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccess_token: Self = this.set("access_token", js.undefined)
+    @scala.inline
+    def setConnectionsVarargs(value: String*): Self = this.set("connections", js.Array(value :_*))
+    @scala.inline
+    def setConnections(value: js.Array[String]): Self = this.set("connections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnections: Self = this.set("connections", js.undefined)
+    @scala.inline
+    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setEnableReturnUserExperience(value: Boolean): Self = this.set("enableReturnUserExperience", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableReturnUserExperience: Self = this.set("enableReturnUserExperience", js.undefined)
+    @scala.inline
+    def setExtraParameters(value: js.Any): Self = this.set("extraParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraParameters: Self = this.set("extraParameters", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setRequest_id(value: String): Self = this.set("request_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest_id: Self = this.set("request_id", js.undefined)
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setShowForgot(value: Boolean): Self = this.set("showForgot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowForgot: Self = this.set("showForgot", js.undefined)
+    @scala.inline
+    def setShowIcon(value: Boolean): Self = this.set("showIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowIcon: Self = this.set("showIcon", js.undefined)
+    @scala.inline
+    def setShowSignup(value: Boolean): Self = this.set("showSignup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSignup: Self = this.set("showSignup", js.undefined)
+    @scala.inline
+    def setState(value: js.Any): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setUserPwdConnectionName(value: String): Self = this.set("userPwdConnectionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPwdConnectionName: Self = this.set("userPwdConnectionName", js.undefined)
+    @scala.inline
+    def setUsername_style(value: String): Self = this.set("username_style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername_style: Self = this.set("username_style", js.undefined)
+  }
+  
 }
 

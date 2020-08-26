@@ -9,6 +9,7 @@ import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubble
 import typings.react.mod.LegacyRef
 import typings.std.HTMLElement
 import typings.std.MouseEvent
+import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.createRefMod.IRefObject
@@ -17,117 +18,208 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/Coachmark/Coachmark.types.ICoachmarkProps> */
+@js.native
 trait PartialICoachmarkProps extends js.Object {
-  var ariaAlertText: js.UndefOr[String] = js.undefined
-  var ariaDescribedBy: js.UndefOr[String] = js.undefined
-  var ariaDescribedByText: js.UndefOr[String] = js.undefined
-  var ariaLabelledBy: js.UndefOr[String] = js.undefined
-  var ariaLabelledByText: js.UndefOr[String] = js.undefined
-  var beaconColorOne: js.UndefOr[String] = js.undefined
-  var beaconColorTwo: js.UndefOr[String] = js.undefined
-  var beakHeight: js.UndefOr[Double] = js.undefined
-  var beakWidth: js.UndefOr[Double] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var collapsed: js.UndefOr[Boolean] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var componentRef: js.UndefOr[IRefObject[ICoachmark]] = js.undefined
-  var delayBeforeCoachmarkAnimation: js.UndefOr[Double] = js.undefined
-  var delayBeforeMouseOpen: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var isCollapsed: js.UndefOr[Boolean] = js.undefined
-  var isPositionForced: js.UndefOr[Boolean] = js.undefined
-  var key: js.UndefOr[typings.react.mod.Key] = js.undefined
-  var mouseProximityOffset: js.UndefOr[Double] = js.undefined
-  var onAnimationOpenEnd: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onAnimationOpenStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
-  var onMouseMove: js.UndefOr[js.Function1[/* e */ MouseEvent, scala.Unit]] = js.undefined
-  var persistentBeak: js.UndefOr[Boolean] = js.undefined
-  var positioningContainerProps: js.UndefOr[IPositioningContainerProps] = js.undefined
-  var preventDismissOnLostFocus: js.UndefOr[Boolean] = js.undefined
-  var preventFocusOnMount: js.UndefOr[Boolean] = js.undefined
-  var ref: js.UndefOr[LegacyRef[CoachmarkBase]] = js.undefined
-  var styles: js.UndefOr[IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]] = js.undefined
-  var target: js.UndefOr[HTMLElement | String] = js.undefined
-  var teachingBubbleRef: js.UndefOr[ITeachingBubble] = js.undefined
-  var theme: js.UndefOr[ITheme] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var ariaAlertText: js.UndefOr[String] = js.native
+  var ariaDescribedBy: js.UndefOr[String] = js.native
+  var ariaDescribedByText: js.UndefOr[String] = js.native
+  var ariaLabelledBy: js.UndefOr[String] = js.native
+  var ariaLabelledByText: js.UndefOr[String] = js.native
+  var beaconColorOne: js.UndefOr[String] = js.native
+  var beaconColorTwo: js.UndefOr[String] = js.native
+  var beakHeight: js.UndefOr[Double] = js.native
+  var beakWidth: js.UndefOr[Double] = js.native
+  var className: js.UndefOr[String] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[String] = js.native
+  var componentRef: js.UndefOr[IRefObject[ICoachmark]] = js.native
+  var delayBeforeCoachmarkAnimation: js.UndefOr[Double] = js.native
+  var delayBeforeMouseOpen: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var isCollapsed: js.UndefOr[Boolean] = js.native
+  var isPositionForced: js.UndefOr[Boolean] = js.native
+  var key: js.UndefOr[typings.react.mod.Key] = js.native
+  var mouseProximityOffset: js.UndefOr[Double] = js.native
+  var onAnimationOpenEnd: js.UndefOr[js.Function0[scala.Unit]] = js.native
+  var onAnimationOpenStart: js.UndefOr[js.Function0[scala.Unit]] = js.native
+  var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], scala.Unit]] = js.native
+  var onMouseMove: js.UndefOr[js.Function1[/* e */ MouseEvent, scala.Unit]] = js.native
+  var persistentBeak: js.UndefOr[Boolean] = js.native
+  var positioningContainerProps: js.UndefOr[IPositioningContainerProps] = js.native
+  var preventDismissOnLostFocus: js.UndefOr[Boolean] = js.native
+  var preventFocusOnMount: js.UndefOr[Boolean] = js.native
+  var ref: js.UndefOr[LegacyRef[CoachmarkBase]] = js.native
+  var styles: js.UndefOr[IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]] = js.native
+  var target: js.UndefOr[HTMLElement | String | Null] = js.native
+  var teachingBubbleRef: js.UndefOr[ITeachingBubble] = js.native
+  var theme: js.UndefOr[ITheme] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object PartialICoachmarkProps {
   @scala.inline
-  def apply(
-    ariaAlertText: String = null,
-    ariaDescribedBy: String = null,
-    ariaDescribedByText: String = null,
-    ariaLabelledBy: String = null,
-    ariaLabelledByText: String = null,
-    beaconColorOne: String = null,
-    beaconColorTwo: String = null,
-    beakHeight: js.UndefOr[Double] = js.undefined,
-    beakWidth: js.UndefOr[Double] = js.undefined,
-    className: String = null,
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    componentRef: IRefObject[ICoachmark] = null,
-    delayBeforeCoachmarkAnimation: js.UndefOr[Double] = js.undefined,
-    delayBeforeMouseOpen: js.UndefOr[Double] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    isCollapsed: js.UndefOr[Boolean] = js.undefined,
-    isPositionForced: js.UndefOr[Boolean] = js.undefined,
-    key: typings.react.mod.Key = null,
-    mouseProximityOffset: js.UndefOr[Double] = js.undefined,
-    onAnimationOpenEnd: () => scala.Unit = null,
-    onAnimationOpenStart: () => scala.Unit = null,
-    onDismiss: /* ev */ js.UndefOr[js.Any] => scala.Unit = null,
-    onMouseMove: /* e */ MouseEvent => scala.Unit = null,
-    persistentBeak: js.UndefOr[Boolean] = js.undefined,
-    positioningContainerProps: IPositioningContainerProps = null,
-    preventDismissOnLostFocus: js.UndefOr[Boolean] = js.undefined,
-    preventFocusOnMount: js.UndefOr[Boolean] = js.undefined,
-    ref: js.UndefOr[Null | LegacyRef[CoachmarkBase]] = js.undefined,
-    styles: IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles] = null,
-    target: HTMLElement | String = null,
-    teachingBubbleRef: ITeachingBubble = null,
-    theme: ITheme = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): PartialICoachmarkProps = {
+  def apply(): PartialICoachmarkProps = {
     val __obj = js.Dynamic.literal()
-    if (ariaAlertText != null) __obj.updateDynamic("ariaAlertText")(ariaAlertText.asInstanceOf[js.Any])
-    if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy.asInstanceOf[js.Any])
-    if (ariaDescribedByText != null) __obj.updateDynamic("ariaDescribedByText")(ariaDescribedByText.asInstanceOf[js.Any])
-    if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy.asInstanceOf[js.Any])
-    if (ariaLabelledByText != null) __obj.updateDynamic("ariaLabelledByText")(ariaLabelledByText.asInstanceOf[js.Any])
-    if (beaconColorOne != null) __obj.updateDynamic("beaconColorOne")(beaconColorOne.asInstanceOf[js.Any])
-    if (beaconColorTwo != null) __obj.updateDynamic("beaconColorTwo")(beaconColorTwo.asInstanceOf[js.Any])
-    if (!js.isUndefined(beakHeight)) __obj.updateDynamic("beakHeight")(beakHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(beakWidth)) __obj.updateDynamic("beakWidth")(beakWidth.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayBeforeCoachmarkAnimation)) __obj.updateDynamic("delayBeforeCoachmarkAnimation")(delayBeforeCoachmarkAnimation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayBeforeMouseOpen)) __obj.updateDynamic("delayBeforeMouseOpen")(delayBeforeMouseOpen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPositionForced)) __obj.updateDynamic("isPositionForced")(isPositionForced.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseProximityOffset)) __obj.updateDynamic("mouseProximityOffset")(mouseProximityOffset.get.asInstanceOf[js.Any])
-    if (onAnimationOpenEnd != null) __obj.updateDynamic("onAnimationOpenEnd")(js.Any.fromFunction0(onAnimationOpenEnd))
-    if (onAnimationOpenStart != null) __obj.updateDynamic("onAnimationOpenStart")(js.Any.fromFunction0(onAnimationOpenStart))
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (!js.isUndefined(persistentBeak)) __obj.updateDynamic("persistentBeak")(persistentBeak.get.asInstanceOf[js.Any])
-    if (positioningContainerProps != null) __obj.updateDynamic("positioningContainerProps")(positioningContainerProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDismissOnLostFocus)) __obj.updateDynamic("preventDismissOnLostFocus")(preventDismissOnLostFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventFocusOnMount)) __obj.updateDynamic("preventFocusOnMount")(preventFocusOnMount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (teachingBubbleRef != null) __obj.updateDynamic("teachingBubbleRef")(teachingBubbleRef.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialICoachmarkProps]
   }
+  @scala.inline
+  implicit class PartialICoachmarkPropsOps[Self <: PartialICoachmarkProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAriaAlertText(value: String): Self = this.set("ariaAlertText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaAlertText: Self = this.set("ariaAlertText", js.undefined)
+    @scala.inline
+    def setAriaDescribedBy(value: String): Self = this.set("ariaDescribedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaDescribedBy: Self = this.set("ariaDescribedBy", js.undefined)
+    @scala.inline
+    def setAriaDescribedByText(value: String): Self = this.set("ariaDescribedByText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaDescribedByText: Self = this.set("ariaDescribedByText", js.undefined)
+    @scala.inline
+    def setAriaLabelledBy(value: String): Self = this.set("ariaLabelledBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaLabelledBy: Self = this.set("ariaLabelledBy", js.undefined)
+    @scala.inline
+    def setAriaLabelledByText(value: String): Self = this.set("ariaLabelledByText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaLabelledByText: Self = this.set("ariaLabelledByText", js.undefined)
+    @scala.inline
+    def setBeaconColorOne(value: String): Self = this.set("beaconColorOne", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeaconColorOne: Self = this.set("beaconColorOne", js.undefined)
+    @scala.inline
+    def setBeaconColorTwo(value: String): Self = this.set("beaconColorTwo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeaconColorTwo: Self = this.set("beaconColorTwo", js.undefined)
+    @scala.inline
+    def setBeakHeight(value: Double): Self = this.set("beakHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeakHeight: Self = this.set("beakHeight", js.undefined)
+    @scala.inline
+    def setBeakWidth(value: Double): Self = this.set("beakWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeakWidth: Self = this.set("beakWidth", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setComponentRefFunction1(value: /* ref */ ICoachmark | Null => scala.Unit): Self = this.set("componentRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def setComponentRef(value: IRefObject[ICoachmark]): Self = this.set("componentRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentRef: Self = this.set("componentRef", js.undefined)
+    @scala.inline
+    def setDelayBeforeCoachmarkAnimation(value: Double): Self = this.set("delayBeforeCoachmarkAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelayBeforeCoachmarkAnimation: Self = this.set("delayBeforeCoachmarkAnimation", js.undefined)
+    @scala.inline
+    def setDelayBeforeMouseOpen(value: Double): Self = this.set("delayBeforeMouseOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelayBeforeMouseOpen: Self = this.set("delayBeforeMouseOpen", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIsCollapsed(value: Boolean): Self = this.set("isCollapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsCollapsed: Self = this.set("isCollapsed", js.undefined)
+    @scala.inline
+    def setIsPositionForced(value: Boolean): Self = this.set("isPositionForced", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPositionForced: Self = this.set("isPositionForced", js.undefined)
+    @scala.inline
+    def setKey(value: typings.react.mod.Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setMouseProximityOffset(value: Double): Self = this.set("mouseProximityOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseProximityOffset: Self = this.set("mouseProximityOffset", js.undefined)
+    @scala.inline
+    def setOnAnimationOpenEnd(value: () => scala.Unit): Self = this.set("onAnimationOpenEnd", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnAnimationOpenEnd: Self = this.set("onAnimationOpenEnd", js.undefined)
+    @scala.inline
+    def setOnAnimationOpenStart(value: () => scala.Unit): Self = this.set("onAnimationOpenStart", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnAnimationOpenStart: Self = this.set("onAnimationOpenStart", js.undefined)
+    @scala.inline
+    def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => scala.Unit): Self = this.set("onDismiss", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: /* e */ MouseEvent => scala.Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setPersistentBeak(value: Boolean): Self = this.set("persistentBeak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersistentBeak: Self = this.set("persistentBeak", js.undefined)
+    @scala.inline
+    def setPositioningContainerProps(value: IPositioningContainerProps): Self = this.set("positioningContainerProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositioningContainerProps: Self = this.set("positioningContainerProps", js.undefined)
+    @scala.inline
+    def setPreventDismissOnLostFocus(value: Boolean): Self = this.set("preventDismissOnLostFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreventDismissOnLostFocus: Self = this.set("preventDismissOnLostFocus", js.undefined)
+    @scala.inline
+    def setPreventFocusOnMount(value: Boolean): Self = this.set("preventFocusOnMount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreventFocusOnMount: Self = this.set("preventFocusOnMount", js.undefined)
+    @scala.inline
+    def setRefFunction1(value: /* instance */ CoachmarkBase | Null => scala.Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRef(value: LegacyRef[CoachmarkBase]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setRefNull: Self = this.set("ref", null)
+    @scala.inline
+    def setStylesFunction1(value: ICoachmarkStyleProps => DeepPartial[ICoachmarkStyles]): Self = this.set("styles", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStyles(value: IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setTarget(value: HTMLElement | String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTargetNull: Self = this.set("target", null)
+    @scala.inline
+    def setTeachingBubbleRef(value: ITeachingBubble): Self = this.set("teachingBubbleRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeachingBubbleRef: Self = this.set("teachingBubbleRef", js.undefined)
+    @scala.inline
+    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

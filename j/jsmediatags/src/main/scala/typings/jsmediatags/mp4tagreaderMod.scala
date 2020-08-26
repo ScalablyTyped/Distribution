@@ -27,7 +27,42 @@ object mp4tagreaderMod extends js.Object {
       data: typings.jsmediatags.mediaFileReaderMod.default,
       offset: Double,
       length: Double,
+      tagsToRead: js.UndefOr[scala.Nothing],
+      parentAtomFullName: js.UndefOr[scala.Nothing],
+      indent: String
+    ): Unit = js.native
+    def _readAtom(
+      tags: js.Any,
+      data: typings.jsmediatags.mediaFileReaderMod.default,
+      offset: Double,
+      length: Double,
+      tagsToRead: js.UndefOr[scala.Nothing],
+      parentAtomFullName: String
+    ): Unit = js.native
+    def _readAtom(
+      tags: js.Any,
+      data: typings.jsmediatags.mediaFileReaderMod.default,
+      offset: Double,
+      length: Double,
+      tagsToRead: js.UndefOr[scala.Nothing],
+      parentAtomFullName: String,
+      indent: String
+    ): Unit = js.native
+    def _readAtom(
+      tags: js.Any,
+      data: typings.jsmediatags.mediaFileReaderMod.default,
+      offset: Double,
+      length: Double,
       tagsToRead: js.Array[String]
+    ): Unit = js.native
+    def _readAtom(
+      tags: js.Any,
+      data: typings.jsmediatags.mediaFileReaderMod.default,
+      offset: Double,
+      length: Double,
+      tagsToRead: js.Array[String],
+      parentAtomFullName: js.UndefOr[scala.Nothing],
+      indent: String
     ): Unit = js.native
     def _readAtom(
       tags: js.Any,

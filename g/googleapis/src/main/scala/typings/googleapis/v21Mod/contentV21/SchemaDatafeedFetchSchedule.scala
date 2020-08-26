@@ -56,28 +56,58 @@ trait SchemaDatafeedFetchSchedule extends js.Object {
 
 object SchemaDatafeedFetchSchedule {
   @scala.inline
-  def apply(
-    dayOfMonth: js.UndefOr[Double] = js.undefined,
-    fetchUrl: String = null,
-    hour: js.UndefOr[Double] = js.undefined,
-    minuteOfHour: js.UndefOr[Double] = js.undefined,
-    password: String = null,
-    paused: js.UndefOr[Boolean] = js.undefined,
-    timeZone: String = null,
-    username: String = null,
-    weekday: String = null
-  ): SchemaDatafeedFetchSchedule = {
+  def apply(): SchemaDatafeedFetchSchedule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dayOfMonth)) __obj.updateDynamic("dayOfMonth")(dayOfMonth.get.asInstanceOf[js.Any])
-    if (fetchUrl != null) __obj.updateDynamic("fetchUrl")(fetchUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(hour)) __obj.updateDynamic("hour")(hour.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minuteOfHour)) __obj.updateDynamic("minuteOfHour")(minuteOfHour.get.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.get.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (weekday != null) __obj.updateDynamic("weekday")(weekday.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDatafeedFetchSchedule]
   }
+  @scala.inline
+  implicit class SchemaDatafeedFetchScheduleOps[Self <: SchemaDatafeedFetchSchedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDayOfMonth(value: Double): Self = this.set("dayOfMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDayOfMonth: Self = this.set("dayOfMonth", js.undefined)
+    @scala.inline
+    def setFetchUrl(value: String): Self = this.set("fetchUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchUrl: Self = this.set("fetchUrl", js.undefined)
+    @scala.inline
+    def setHour(value: Double): Self = this.set("hour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHour: Self = this.set("hour", js.undefined)
+    @scala.inline
+    def setMinuteOfHour(value: Double): Self = this.set("minuteOfHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinuteOfHour: Self = this.set("minuteOfHour", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaused: Self = this.set("paused", js.undefined)
+    @scala.inline
+    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+    @scala.inline
+    def setWeekday(value: String): Self = this.set("weekday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeekday: Self = this.set("weekday", js.undefined)
+  }
+  
 }
 

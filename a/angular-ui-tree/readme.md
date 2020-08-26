@@ -10,9 +10,9 @@ An AngularJS UI component that can sort nested lists, provides drag & drop suppo
 | ------------------ | :-------------: |
 | Full name          | angular-ui-tree |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 762610 |
+| # downloads        | 829834 |
 | # stars            | 4 |
 
 ## Links

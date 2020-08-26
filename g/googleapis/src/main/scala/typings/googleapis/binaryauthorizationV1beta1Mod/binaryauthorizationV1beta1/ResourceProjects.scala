@@ -30,6 +30,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def getPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getPolicy(params: ParamsResourceProjectsGetpolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getPolicy(params: ParamsResourceProjectsGetpolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getPolicy(
@@ -62,6 +63,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def updatePolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def updatePolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def updatePolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def updatePolicy(params: ParamsResourceProjectsUpdatepolicy): GaxiosPromise[SchemaPolicy] = js.native
   def updatePolicy(params: ParamsResourceProjectsUpdatepolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def updatePolicy(

@@ -1,7 +1,7 @@
 package typings.pulumiAws.methodMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.restApiMod.RestApi
+import typings.pulumiAws.apigatewayMod.RestApi
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,22 +60,57 @@ object MethodArgs {
     authorization: Input[String],
     httpMethod: Input[String],
     resourceId: Input[String],
-    restApi: Input[String | RestApi],
-    apiKeyRequired: Input[Boolean] = null,
-    authorizationScopes: Input[js.Array[Input[String]]] = null,
-    authorizerId: Input[String] = null,
-    requestModels: Input[StringDictionary[Input[String]]] = null,
-    requestParameters: Input[StringDictionary[Input[Boolean]]] = null,
-    requestValidatorId: Input[String] = null
+    restApi: Input[String | RestApi]
   ): MethodArgs = {
     val __obj = js.Dynamic.literal(authorization = authorization.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
-    if (apiKeyRequired != null) __obj.updateDynamic("apiKeyRequired")(apiKeyRequired.asInstanceOf[js.Any])
-    if (authorizationScopes != null) __obj.updateDynamic("authorizationScopes")(authorizationScopes.asInstanceOf[js.Any])
-    if (authorizerId != null) __obj.updateDynamic("authorizerId")(authorizerId.asInstanceOf[js.Any])
-    if (requestModels != null) __obj.updateDynamic("requestModels")(requestModels.asInstanceOf[js.Any])
-    if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
-    if (requestValidatorId != null) __obj.updateDynamic("requestValidatorId")(requestValidatorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodArgs]
   }
+  @scala.inline
+  implicit class MethodArgsOps[Self <: MethodArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorization(value: Input[String]): Self = this.set("authorization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHttpMethod(value: Input[String]): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceId(value: Input[String]): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRestApi(value: Input[String | RestApi]): Self = this.set("restApi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiKeyRequired(value: Input[Boolean]): Self = this.set("apiKeyRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiKeyRequired: Self = this.set("apiKeyRequired", js.undefined)
+    @scala.inline
+    def setAuthorizationScopesVarargs(value: Input[String]*): Self = this.set("authorizationScopes", js.Array(value :_*))
+    @scala.inline
+    def setAuthorizationScopes(value: Input[js.Array[Input[String]]]): Self = this.set("authorizationScopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationScopes: Self = this.set("authorizationScopes", js.undefined)
+    @scala.inline
+    def setAuthorizerId(value: Input[String]): Self = this.set("authorizerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizerId: Self = this.set("authorizerId", js.undefined)
+    @scala.inline
+    def setRequestModels(value: Input[StringDictionary[Input[String]]]): Self = this.set("requestModels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestModels: Self = this.set("requestModels", js.undefined)
+    @scala.inline
+    def setRequestParameters(value: Input[StringDictionary[Input[Boolean]]]): Self = this.set("requestParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestParameters: Self = this.set("requestParameters", js.undefined)
+    @scala.inline
+    def setRequestValidatorId(value: Input[String]): Self = this.set("requestValidatorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestValidatorId: Self = this.set("requestValidatorId", js.undefined)
+  }
+  
 }
 

@@ -13,123 +13,174 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @wordpress/api-fetch.@wordpress/api-fetch.APIFetchOptions & {  parse  :false} */
+/* Inlined @wordpress/api-fetch.@wordpress/api-fetch.APIFetchOptions & {  parse :false} */
+@js.native
 trait APIFetchOptionsparsefalse extends js.Object {
   /**
     * A BodyInit object or null to set request's body.
     */
-  var body: js.UndefOr[BodyInit | Null] = js.undefined
+  var body: js.UndefOr[BodyInit | Null] = js.native
   /**
     * A string indicating how the request will interact with the browser's cache to set request's cache.
     */
-  var cache: js.UndefOr[RequestCache] = js.undefined
+  var cache: js.UndefOr[RequestCache] = js.native
   /**
     * A string indicating whether credentials will be sent with the request always, never, or only when sent to a same-origin URL. Sets request's credentials.
     */
-  var credentials: js.UndefOr[RequestCredentials] = js.undefined
+  var credentials: js.UndefOr[RequestCredentials] = js.native
   /**
     * Shorthand to be used in place of body, accepts an object value to be
     * stringified to JSON.
     */
-  var data: js.UndefOr[js.Object] = js.undefined
+  var data: js.UndefOr[js.Object] = js.native
   /**
     * A Headers object, an object literal, or an array of two-item arrays to set request's headers.
     */
-  var headers: js.UndefOr[HeadersInit] = js.undefined
+  var headers: js.UndefOr[HeadersInit] = js.native
   /**
     * A cryptographic hash of the resource to be fetched by request. Sets request's integrity.
     */
-  var integrity: js.UndefOr[String] = js.undefined
+  var integrity: js.UndefOr[String] = js.native
   /**
     * A boolean to set request's keepalive.
     */
-  var keepalive: js.UndefOr[Boolean] = js.undefined
+  var keepalive: js.UndefOr[Boolean] = js.native
   /**
     * A string to set request's method.
     */
-  var method: js.UndefOr[String] = js.undefined
+  var method: js.UndefOr[String] = js.native
   /**
     * A string to indicate whether the request will use CORS, or will be restricted to same-origin URLs. Sets request's mode.
     */
-  var mode: js.UndefOr[RequestMode] = js.undefined
+  var mode: js.UndefOr[RequestMode] = js.native
   /**
     * Unlike `fetch`, the `Promise` return value of `apiFetch` will resolve to the
     * parsed JSON result. Disable this behavior by passing `parse` as `false`.
     *
     * @defaultValue true
     */
-  var parse: js.UndefOr[Boolean with `false`] = js.undefined
+  var parse: js.UndefOr[Boolean] with `false` = js.native
   /**
     * Shorthand to be used in place of url, appended to the REST API root URL
     * for the current site.
     */
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String] = js.native
   /**
     * A string indicating whether request follows redirects, results in an error upon encountering a redirect, or returns the redirect (in an opaque fashion). Sets request's redirect.
     */
-  var redirect: js.UndefOr[RequestRedirect] = js.undefined
+  var redirect: js.UndefOr[RequestRedirect] = js.native
   /**
     * A string whose value is a same-origin URL, "about:client", or the empty string, to set request's referrer.
     */
-  var referrer: js.UndefOr[String] = js.undefined
+  var referrer: js.UndefOr[String] = js.native
   /**
     * A referrer policy to set request's referrerPolicy.
     */
-  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
+  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.native
   /**
     * An AbortSignal to set request's signal.
     */
-  var signal: js.UndefOr[AbortSignal | Null] = js.undefined
+  var signal: js.UndefOr[AbortSignal | Null] = js.native
   /**
     * Absolute URL to the endpoint from which to fetch.
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String] = js.native
   /**
     * Can only be null. Used to disassociate request from any Window.
     */
-  var window: js.UndefOr[js.Any] = js.undefined
+  var window: js.UndefOr[js.Any] = js.native
 }
 
 object APIFetchOptionsparsefalse {
   @scala.inline
-  def apply(
-    body: js.UndefOr[Null | BodyInit] = js.undefined,
-    cache: RequestCache = null,
-    credentials: RequestCredentials = null,
-    data: js.Object = null,
-    headers: HeadersInit = null,
-    integrity: String = null,
-    keepalive: js.UndefOr[Boolean] = js.undefined,
-    method: String = null,
-    mode: RequestMode = null,
-    parse: js.UndefOr[Boolean with `false`] = js.undefined,
-    path: String = null,
-    redirect: RequestRedirect = null,
-    referrer: String = null,
-    referrerPolicy: ReferrerPolicy = null,
-    signal: js.UndefOr[Null | AbortSignal] = js.undefined,
-    url: String = null,
-    window: js.Any = null
-  ): APIFetchOptionsparsefalse = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(parse)) __obj.updateDynamic("parse")(parse.get.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(signal)) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
+  def apply(parse: js.UndefOr[Boolean] with `false`): APIFetchOptionsparsefalse = {
+    val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIFetchOptionsparsefalse]
   }
+  @scala.inline
+  implicit class APIFetchOptionsparsefalseOps[Self <: APIFetchOptionsparsefalse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParse(value: js.UndefOr[Boolean] with `false`): Self = this.set("parse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBody(value: BodyInit): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setBodyNull: Self = this.set("body", null)
+    @scala.inline
+    def setCache(value: RequestCache): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setCredentials(value: RequestCredentials): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    @scala.inline
+    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setHeadersVarargs(value: js.Array[String]*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: HeadersInit): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setIntegrity(value: String): Self = this.set("integrity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrity: Self = this.set("integrity", js.undefined)
+    @scala.inline
+    def setKeepalive(value: Boolean): Self = this.set("keepalive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepalive: Self = this.set("keepalive", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setMode(value: RequestMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setRedirect(value: RequestRedirect): Self = this.set("redirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirect: Self = this.set("redirect", js.undefined)
+    @scala.inline
+    def setReferrer(value: String): Self = this.set("referrer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferrer: Self = this.set("referrer", js.undefined)
+    @scala.inline
+    def setReferrerPolicy(value: ReferrerPolicy): Self = this.set("referrerPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferrerPolicy: Self = this.set("referrerPolicy", js.undefined)
+    @scala.inline
+    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignal: Self = this.set("signal", js.undefined)
+    @scala.inline
+    def setSignalNull: Self = this.set("signal", null)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setWindow(value: js.Any): Self = this.set("window", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindow: Self = this.set("window", js.undefined)
+  }
+  
 }
 

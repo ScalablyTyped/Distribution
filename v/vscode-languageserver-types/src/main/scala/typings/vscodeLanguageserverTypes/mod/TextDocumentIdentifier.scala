@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextDocumentIdentifier extends js.Object {
   /**
     * The text document's uri.
     */
-  var uri: DocumentUri
+  var uri: DocumentUri = js.native
 }
 
 @JSImport("vscode-languageserver-types", "TextDocumentIdentifier")

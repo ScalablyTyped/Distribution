@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends EggCookies {
   def this(ctx: js.Any) = this()
+  def this(ctx: js.UndefOr[scala.Nothing], keys: js.Any) = this()
   def this(ctx: js.Any, keys: js.Any) = this()
 }
 

@@ -7,49 +7,60 @@ import scala.scalajs.js.annotation._
 /**
   * Time range defined by start and end date/time
   */
+@js.native
 trait Period extends Element {
   /**
     * Contains extended information for property 'end'.
     */
-  var _end: js.UndefOr[Element] = js.undefined
+  var _end: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'start'.
     */
-  var _start: js.UndefOr[Element] = js.undefined
+  var _start: js.UndefOr[Element] = js.native
   /**
     * End time with inclusive boundary, if not ongoing
     */
-  var end: js.UndefOr[dateTime] = js.undefined
+  var end: js.UndefOr[dateTime] = js.native
   /**
     * Starting time with inclusive boundary
     */
-  var start: js.UndefOr[dateTime] = js.undefined
+  var start: js.UndefOr[dateTime] = js.native
 }
 
 object Period {
   @scala.inline
-  def apply(
-    _end: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _start: Element = null,
-    end: dateTime = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    start: dateTime = null
-  ): Period = {
+  def apply(): Period = {
     val __obj = js.Dynamic.literal()
-    if (_end != null) __obj.updateDynamic("_end")(_end.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_start != null) __obj.updateDynamic("_start")(_start.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Period]
   }
+  @scala.inline
+  implicit class PeriodOps[Self <: Period] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_end(value: Element): Self = this.set("_end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_end: Self = this.set("_end", js.undefined)
+    @scala.inline
+    def set_start(value: Element): Self = this.set("_start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_start: Self = this.set("_start", js.undefined)
+    @scala.inline
+    def setEnd(value: dateTime): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setStart(value: dateTime): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

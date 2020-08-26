@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ProviderArgs extends js.Object {
   /**
-    * The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS
-    * console.
+    * The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console.
     */
   val accessKey: js.UndefOr[Input[String]] = js.native
   val allowedAccountIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
@@ -29,8 +28,7 @@ trait ProviderArgs extends js.Object {
     */
   val insecure: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * The maximum number of times an AWS API request is being executed. If the API request still fails, an error is
-    * thrown.
+    * The maximum number of times an AWS API request is being executed. If the API request still fails, an error is thrown.
     */
   val maxRetries: js.UndefOr[Input[Double]] = js.native
   /**
@@ -48,8 +46,7 @@ trait ProviderArgs extends js.Object {
     */
   val s3ForcePathStyle: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS
-    * console.
+    * The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console.
     */
   val secretKey: js.UndefOr[Input[String]] = js.native
   /**
@@ -67,8 +64,8 @@ trait ProviderArgs extends js.Object {
   val skipGetEc2Platforms: js.UndefOr[Input[Boolean]] = js.native
   val skipMetadataApiCheck: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * Skip static validation of region name. Used by users of alternative AWS-like APIs or users w/ access to regions that
-    * are not public (yet).
+    * Skip static validation of region name. Used by users of alternative AWS-like APIs or users w/ access to regions that are
+    * not public (yet).
     */
   val skipRegionValidation: js.UndefOr[Input[Boolean]] = js.native
   /**
@@ -83,48 +80,104 @@ trait ProviderArgs extends js.Object {
 
 object ProviderArgs {
   @scala.inline
-  def apply(
-    accessKey: Input[String] = null,
-    allowedAccountIds: Input[js.Array[Input[String]]] = null,
-    assumeRole: Input[ProviderAssumeRole] = null,
-    endpoints: Input[js.Array[Input[ProviderEndpoint]]] = null,
-    forbiddenAccountIds: Input[js.Array[Input[String]]] = null,
-    ignoreTags: Input[ProviderIgnoreTags] = null,
-    insecure: Input[Boolean] = null,
-    maxRetries: Input[Double] = null,
-    profile: Input[String] = null,
-    region: Input[Region] = null,
-    s3ForcePathStyle: Input[Boolean] = null,
-    secretKey: Input[String] = null,
-    sharedCredentialsFile: Input[String] = null,
-    skipCredentialsValidation: Input[Boolean] = null,
-    skipGetEc2Platforms: Input[Boolean] = null,
-    skipMetadataApiCheck: Input[Boolean] = null,
-    skipRegionValidation: Input[Boolean] = null,
-    skipRequestingAccountId: Input[Boolean] = null,
-    token: Input[String] = null
-  ): ProviderArgs = {
+  def apply(): ProviderArgs = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (allowedAccountIds != null) __obj.updateDynamic("allowedAccountIds")(allowedAccountIds.asInstanceOf[js.Any])
-    if (assumeRole != null) __obj.updateDynamic("assumeRole")(assumeRole.asInstanceOf[js.Any])
-    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
-    if (forbiddenAccountIds != null) __obj.updateDynamic("forbiddenAccountIds")(forbiddenAccountIds.asInstanceOf[js.Any])
-    if (ignoreTags != null) __obj.updateDynamic("ignoreTags")(ignoreTags.asInstanceOf[js.Any])
-    if (insecure != null) __obj.updateDynamic("insecure")(insecure.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (s3ForcePathStyle != null) __obj.updateDynamic("s3ForcePathStyle")(s3ForcePathStyle.asInstanceOf[js.Any])
-    if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey.asInstanceOf[js.Any])
-    if (sharedCredentialsFile != null) __obj.updateDynamic("sharedCredentialsFile")(sharedCredentialsFile.asInstanceOf[js.Any])
-    if (skipCredentialsValidation != null) __obj.updateDynamic("skipCredentialsValidation")(skipCredentialsValidation.asInstanceOf[js.Any])
-    if (skipGetEc2Platforms != null) __obj.updateDynamic("skipGetEc2Platforms")(skipGetEc2Platforms.asInstanceOf[js.Any])
-    if (skipMetadataApiCheck != null) __obj.updateDynamic("skipMetadataApiCheck")(skipMetadataApiCheck.asInstanceOf[js.Any])
-    if (skipRegionValidation != null) __obj.updateDynamic("skipRegionValidation")(skipRegionValidation.asInstanceOf[js.Any])
-    if (skipRequestingAccountId != null) __obj.updateDynamic("skipRequestingAccountId")(skipRequestingAccountId.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderArgs]
   }
+  @scala.inline
+  implicit class ProviderArgsOps[Self <: ProviderArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessKey(value: Input[String]): Self = this.set("accessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKey: Self = this.set("accessKey", js.undefined)
+    @scala.inline
+    def setAllowedAccountIdsVarargs(value: Input[String]*): Self = this.set("allowedAccountIds", js.Array(value :_*))
+    @scala.inline
+    def setAllowedAccountIds(value: Input[js.Array[Input[String]]]): Self = this.set("allowedAccountIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedAccountIds: Self = this.set("allowedAccountIds", js.undefined)
+    @scala.inline
+    def setAssumeRole(value: Input[ProviderAssumeRole]): Self = this.set("assumeRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssumeRole: Self = this.set("assumeRole", js.undefined)
+    @scala.inline
+    def setEndpointsVarargs(value: Input[ProviderEndpoint]*): Self = this.set("endpoints", js.Array(value :_*))
+    @scala.inline
+    def setEndpoints(value: Input[js.Array[Input[ProviderEndpoint]]]): Self = this.set("endpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoints: Self = this.set("endpoints", js.undefined)
+    @scala.inline
+    def setForbiddenAccountIdsVarargs(value: Input[String]*): Self = this.set("forbiddenAccountIds", js.Array(value :_*))
+    @scala.inline
+    def setForbiddenAccountIds(value: Input[js.Array[Input[String]]]): Self = this.set("forbiddenAccountIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForbiddenAccountIds: Self = this.set("forbiddenAccountIds", js.undefined)
+    @scala.inline
+    def setIgnoreTags(value: Input[ProviderIgnoreTags]): Self = this.set("ignoreTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreTags: Self = this.set("ignoreTags", js.undefined)
+    @scala.inline
+    def setInsecure(value: Input[Boolean]): Self = this.set("insecure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsecure: Self = this.set("insecure", js.undefined)
+    @scala.inline
+    def setMaxRetries(value: Input[Double]): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+    @scala.inline
+    def setProfile(value: Input[String]): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+    @scala.inline
+    def setRegion(value: Input[Region]): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setS3ForcePathStyle(value: Input[Boolean]): Self = this.set("s3ForcePathStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3ForcePathStyle: Self = this.set("s3ForcePathStyle", js.undefined)
+    @scala.inline
+    def setSecretKey(value: Input[String]): Self = this.set("secretKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretKey: Self = this.set("secretKey", js.undefined)
+    @scala.inline
+    def setSharedCredentialsFile(value: Input[String]): Self = this.set("sharedCredentialsFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedCredentialsFile: Self = this.set("sharedCredentialsFile", js.undefined)
+    @scala.inline
+    def setSkipCredentialsValidation(value: Input[Boolean]): Self = this.set("skipCredentialsValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipCredentialsValidation: Self = this.set("skipCredentialsValidation", js.undefined)
+    @scala.inline
+    def setSkipGetEc2Platforms(value: Input[Boolean]): Self = this.set("skipGetEc2Platforms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipGetEc2Platforms: Self = this.set("skipGetEc2Platforms", js.undefined)
+    @scala.inline
+    def setSkipMetadataApiCheck(value: Input[Boolean]): Self = this.set("skipMetadataApiCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipMetadataApiCheck: Self = this.set("skipMetadataApiCheck", js.undefined)
+    @scala.inline
+    def setSkipRegionValidation(value: Input[Boolean]): Self = this.set("skipRegionValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipRegionValidation: Self = this.set("skipRegionValidation", js.undefined)
+    @scala.inline
+    def setSkipRequestingAccountId(value: Input[Boolean]): Self = this.set("skipRequestingAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipRequestingAccountId: Self = this.set("skipRequestingAccountId", js.undefined)
+    @scala.inline
+    def setToken(value: Input[String]): Self = this.set("token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken: Self = this.set("token", js.undefined)
+  }
+  
 }
 

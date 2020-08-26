@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 /* Inlined @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/layers/core_serialization.CoreLayerSerialization['class_name'] */
 /* Rewritten from type alias, can be one of: 
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Flatten
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dropout
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense
 */
 trait CoreLayerClassName extends js.Object
 

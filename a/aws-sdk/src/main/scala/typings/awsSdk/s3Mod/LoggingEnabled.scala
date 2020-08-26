@@ -22,10 +22,32 @@ trait LoggingEnabled extends js.Object {
 
 object LoggingEnabled {
   @scala.inline
-  def apply(TargetBucket: TargetBucket, TargetPrefix: TargetPrefix, TargetGrants: TargetGrants = null): LoggingEnabled = {
+  def apply(TargetBucket: TargetBucket, TargetPrefix: TargetPrefix): LoggingEnabled = {
     val __obj = js.Dynamic.literal(TargetBucket = TargetBucket.asInstanceOf[js.Any], TargetPrefix = TargetPrefix.asInstanceOf[js.Any])
-    if (TargetGrants != null) __obj.updateDynamic("TargetGrants")(TargetGrants.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingEnabled]
   }
+  @scala.inline
+  implicit class LoggingEnabledOps[Self <: LoggingEnabled] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetBucket(value: TargetBucket): Self = this.set("TargetBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetPrefix(value: TargetPrefix): Self = this.set("TargetPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetGrantsVarargs(value: TargetGrant*): Self = this.set("TargetGrants", js.Array(value :_*))
+    @scala.inline
+    def setTargetGrants(value: TargetGrants): Self = this.set("TargetGrants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGrants: Self = this.set("TargetGrants", js.undefined)
+  }
+  
 }
 

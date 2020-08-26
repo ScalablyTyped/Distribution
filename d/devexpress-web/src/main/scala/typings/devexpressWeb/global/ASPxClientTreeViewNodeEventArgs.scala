@@ -16,10 +16,5 @@ class ASPxClientTreeViewNodeEventArgs protected ()
     * @param node An ASPxClientTreeViewNode object representing the node related to the event.
     */
   def this(node: typings.devexpressWeb.ASPxClientTreeViewNode) = this()
-  /**
-    * Gets a node object related to the event.
-    */
-  /* CompleteClass */
-  override var node: typings.devexpressWeb.ASPxClientTreeViewNode = js.native
 }
 

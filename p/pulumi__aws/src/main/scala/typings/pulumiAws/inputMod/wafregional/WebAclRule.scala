@@ -21,7 +21,7 @@ trait WebAclRule extends js.Object {
     */
   var priority: Input[Double] = js.native
   /**
-    * ID of the associated WAF (Regional) rule (e.g. [`aws.wafregional.Rule`](https://www.terraform.io/docs/providers/aws/r/wafregional_rule.html)). WAF (Global) rules cannot be used.
+    * ID of the associated WAF (Regional) rule (e.g. `aws.wafregional.Rule`). WAF (Global) rules cannot be used.
     */
   var ruleId: Input[String] = js.native
   /**
@@ -32,18 +32,38 @@ trait WebAclRule extends js.Object {
 
 object WebAclRule {
   @scala.inline
-  def apply(
-    priority: Input[Double],
-    ruleId: Input[String],
-    action: Input[WebAclRuleAction] = null,
-    overrideAction: Input[WebAclRuleOverrideAction] = null,
-    `type`: Input[String] = null
-  ): WebAclRule = {
+  def apply(priority: Input[Double], ruleId: Input[String]): WebAclRule = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (overrideAction != null) __obj.updateDynamic("overrideAction")(overrideAction.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRule]
   }
+  @scala.inline
+  implicit class WebAclRuleOps[Self <: WebAclRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuleId(value: Input[String]): Self = this.set("ruleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAction(value: Input[WebAclRuleAction]): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setOverrideAction(value: Input[WebAclRuleOverrideAction]): Self = this.set("overrideAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrideAction: Self = this.set("overrideAction", js.undefined)
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -59,6 +59,7 @@ trait TextureTintStripPipeline extends WebGLPipeline {
     * @param unit Texture unit to which the texture needs to be bound. Default 0.
     */
   def setTexture2D(): TextureTintStripPipeline = js.native
+  def setTexture2D(texture: js.UndefOr[scala.Nothing], unit: integer): TextureTintStripPipeline = js.native
   def setTexture2D(texture: WebGLTexture): TextureTintStripPipeline = js.native
   def setTexture2D(texture: WebGLTexture, unit: integer): TextureTintStripPipeline = js.native
 }

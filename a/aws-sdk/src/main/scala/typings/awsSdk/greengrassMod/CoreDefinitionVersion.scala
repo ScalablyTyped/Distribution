@@ -14,10 +14,28 @@ trait CoreDefinitionVersion extends js.Object {
 
 object CoreDefinitionVersion {
   @scala.inline
-  def apply(Cores: listOfCore = null): CoreDefinitionVersion = {
+  def apply(): CoreDefinitionVersion = {
     val __obj = js.Dynamic.literal()
-    if (Cores != null) __obj.updateDynamic("Cores")(Cores.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreDefinitionVersion]
   }
+  @scala.inline
+  implicit class CoreDefinitionVersionOps[Self <: CoreDefinitionVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoresVarargs(value: Core*): Self = this.set("Cores", js.Array(value :_*))
+    @scala.inline
+    def setCores(value: listOfCore): Self = this.set("Cores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCores: Self = this.set("Cores", js.undefined)
+  }
+  
 }
 

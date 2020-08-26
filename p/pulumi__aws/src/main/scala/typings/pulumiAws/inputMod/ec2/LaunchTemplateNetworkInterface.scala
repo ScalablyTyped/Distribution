@@ -12,7 +12,7 @@ trait LaunchTemplateNetworkInterface extends js.Object {
     */
   var associatePublicIpAddress: js.UndefOr[Input[String]] = js.native
   /**
-    * Whether the network interface should be destroyed on instance termination.
+    * Whether the network interface should be destroyed on instance termination. Defaults to `false` if not set.
     */
   var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
   /**
@@ -59,34 +59,76 @@ trait LaunchTemplateNetworkInterface extends js.Object {
 
 object LaunchTemplateNetworkInterface {
   @scala.inline
-  def apply(
-    associatePublicIpAddress: Input[String] = null,
-    deleteOnTermination: Input[Boolean] = null,
-    description: Input[String] = null,
-    deviceIndex: Input[Double] = null,
-    ipv4AddressCount: Input[Double] = null,
-    ipv4Addresses: Input[js.Array[Input[String]]] = null,
-    ipv6AddressCount: Input[Double] = null,
-    ipv6Addresses: Input[js.Array[Input[String]]] = null,
-    networkInterfaceId: Input[String] = null,
-    privateIpAddress: Input[String] = null,
-    securityGroups: Input[js.Array[Input[String]]] = null,
-    subnetId: Input[String] = null
-  ): LaunchTemplateNetworkInterface = {
+  def apply(): LaunchTemplateNetworkInterface = {
     val __obj = js.Dynamic.literal()
-    if (associatePublicIpAddress != null) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress.asInstanceOf[js.Any])
-    if (deleteOnTermination != null) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (deviceIndex != null) __obj.updateDynamic("deviceIndex")(deviceIndex.asInstanceOf[js.Any])
-    if (ipv4AddressCount != null) __obj.updateDynamic("ipv4AddressCount")(ipv4AddressCount.asInstanceOf[js.Any])
-    if (ipv4Addresses != null) __obj.updateDynamic("ipv4Addresses")(ipv4Addresses.asInstanceOf[js.Any])
-    if (ipv6AddressCount != null) __obj.updateDynamic("ipv6AddressCount")(ipv6AddressCount.asInstanceOf[js.Any])
-    if (ipv6Addresses != null) __obj.updateDynamic("ipv6Addresses")(ipv6Addresses.asInstanceOf[js.Any])
-    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
-    if (privateIpAddress != null) __obj.updateDynamic("privateIpAddress")(privateIpAddress.asInstanceOf[js.Any])
-    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
-    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateNetworkInterface]
   }
+  @scala.inline
+  implicit class LaunchTemplateNetworkInterfaceOps[Self <: LaunchTemplateNetworkInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociatePublicIpAddress(value: Input[String]): Self = this.set("associatePublicIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatePublicIpAddress: Self = this.set("associatePublicIpAddress", js.undefined)
+    @scala.inline
+    def setDeleteOnTermination(value: Input[Boolean]): Self = this.set("deleteOnTermination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteOnTermination: Self = this.set("deleteOnTermination", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDeviceIndex(value: Input[Double]): Self = this.set("deviceIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceIndex: Self = this.set("deviceIndex", js.undefined)
+    @scala.inline
+    def setIpv4AddressCount(value: Input[Double]): Self = this.set("ipv4AddressCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv4AddressCount: Self = this.set("ipv4AddressCount", js.undefined)
+    @scala.inline
+    def setIpv4AddressesVarargs(value: Input[String]*): Self = this.set("ipv4Addresses", js.Array(value :_*))
+    @scala.inline
+    def setIpv4Addresses(value: Input[js.Array[Input[String]]]): Self = this.set("ipv4Addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv4Addresses: Self = this.set("ipv4Addresses", js.undefined)
+    @scala.inline
+    def setIpv6AddressCount(value: Input[Double]): Self = this.set("ipv6AddressCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6AddressCount: Self = this.set("ipv6AddressCount", js.undefined)
+    @scala.inline
+    def setIpv6AddressesVarargs(value: Input[String]*): Self = this.set("ipv6Addresses", js.Array(value :_*))
+    @scala.inline
+    def setIpv6Addresses(value: Input[js.Array[Input[String]]]): Self = this.set("ipv6Addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Addresses: Self = this.set("ipv6Addresses", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: Input[String]): Self = this.set("networkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("networkInterfaceId", js.undefined)
+    @scala.inline
+    def setPrivateIpAddress(value: Input[String]): Self = this.set("privateIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddress: Self = this.set("privateIpAddress", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: Input[String]*): Self = this.set("securityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("securityGroups", js.undefined)
+    @scala.inline
+    def setSubnetId(value: Input[String]): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("subnetId", js.undefined)
+  }
+  
 }
 

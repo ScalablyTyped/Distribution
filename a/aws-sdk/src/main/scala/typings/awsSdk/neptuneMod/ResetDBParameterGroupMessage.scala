@@ -22,15 +22,34 @@ trait ResetDBParameterGroupMessage extends js.Object {
 
 object ResetDBParameterGroupMessage {
   @scala.inline
-  def apply(
-    DBParameterGroupName: String,
-    Parameters: ParametersList = null,
-    ResetAllParameters: js.UndefOr[Boolean] = js.undefined
-  ): ResetDBParameterGroupMessage = {
+  def apply(DBParameterGroupName: String): ResetDBParameterGroupMessage = {
     val __obj = js.Dynamic.literal(DBParameterGroupName = DBParameterGroupName.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(ResetAllParameters)) __obj.updateDynamic("ResetAllParameters")(ResetAllParameters.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetDBParameterGroupMessage]
   }
+  @scala.inline
+  implicit class ResetDBParameterGroupMessageOps[Self <: ResetDBParameterGroupMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBParameterGroupName(value: String): Self = this.set("DBParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: ParametersList): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setResetAllParameters(value: Boolean): Self = this.set("ResetAllParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetAllParameters: Self = this.set("ResetAllParameters", js.undefined)
+  }
+  
 }
 

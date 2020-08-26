@@ -13,22 +13,8 @@ import scala.scalajs.js.annotation._
 class TextDecoder ()
   extends typings.std.TextDecoder {
   def this(label: java.lang.String) = this()
+  def this(label: js.UndefOr[scala.Nothing], options: TextDecoderOptions) = this()
   def this(label: java.lang.String, options: TextDecoderOptions) = this()
-  /**
-    * Returns encoding's name, lowercased.
-    */
-  /* CompleteClass */
-  override val encoding: java.lang.String = js.native
-  /**
-    * Returns true if error mode is "fatal", and false otherwise.
-    */
-  /* CompleteClass */
-  override val fatal: scala.Boolean = js.native
-  /**
-    * Returns true if ignore BOM flag is set, and false otherwise.
-    */
-  /* CompleteClass */
-  override val ignoreBOM: scala.Boolean = js.native
 }
 
 @JSGlobal("TextDecoder")
@@ -37,7 +23,7 @@ object TextDecoder
   extends Instantiable0[typings.std.TextDecoder]
      with Instantiable1[/* label */ java.lang.String, typings.std.TextDecoder]
      with Instantiable2[
-      /* label */ java.lang.String, 
+      js.UndefOr[/* label */ java.lang.String], 
       /* options */ TextDecoderOptions, 
       typings.std.TextDecoder
     ]

@@ -14,8 +14,8 @@ object getBaseButtonClassNames extends js.Object {
     styles: IButtonStyles,
     className: String,
     variantClassName: String,
-    iconClassName: js.UndefOr[String],
-    menuIconClassName: js.UndefOr[String],
+    iconClassName: js.UndefOr[scala.Nothing],
+    menuIconClassName: js.UndefOr[scala.Nothing],
     disabled: Boolean,
     hasMenu: Boolean,
     checked: Boolean,
@@ -26,8 +26,83 @@ object getBaseButtonClassNames extends js.Object {
     styles: IButtonStyles,
     className: String,
     variantClassName: String,
-    iconClassName: js.UndefOr[String],
-    menuIconClassName: js.UndefOr[String],
+    iconClassName: js.UndefOr[scala.Nothing],
+    menuIconClassName: js.UndefOr[scala.Nothing],
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean,
+    isSplit: Boolean
+  ): IButtonClassNames = js.native
+  def apply(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: js.UndefOr[scala.Nothing],
+    menuIconClassName: String,
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean
+  ): IButtonClassNames = js.native
+  def apply(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: js.UndefOr[scala.Nothing],
+    menuIconClassName: String,
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean,
+    isSplit: Boolean
+  ): IButtonClassNames = js.native
+  def apply(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: String,
+    menuIconClassName: js.UndefOr[scala.Nothing],
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean
+  ): IButtonClassNames = js.native
+  def apply(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: String,
+    menuIconClassName: js.UndefOr[scala.Nothing],
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean,
+    isSplit: Boolean
+  ): IButtonClassNames = js.native
+  def apply(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: String,
+    menuIconClassName: String,
+    disabled: Boolean,
+    hasMenu: Boolean,
+    checked: Boolean,
+    expanded: Boolean
+  ): IButtonClassNames = js.native
+  def apply(
+    theme: ITheme,
+    styles: IButtonStyles,
+    className: String,
+    variantClassName: String,
+    iconClassName: String,
+    menuIconClassName: String,
     disabled: Boolean,
     hasMenu: Boolean,
     checked: Boolean,

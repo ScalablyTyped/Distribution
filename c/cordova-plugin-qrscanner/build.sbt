@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-qrscanner"
-version := "v1.0.1-dt-20200515Z-fd5c70"
-scalaVersion := "2.13.2"
+version := "v1.0.1-dt-20200515Z-2dff21"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

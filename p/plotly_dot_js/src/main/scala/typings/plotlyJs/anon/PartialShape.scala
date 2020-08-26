@@ -17,72 +17,131 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<plotly.js.plotly.js.Shape> */
+@js.native
 trait PartialShape extends js.Object {
-  var fillcolor: js.UndefOr[String] = js.undefined
-  var layer: js.UndefOr[below | above] = js.undefined
-  var line: js.UndefOr[PartialShapeLine] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var templateitemname: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[rect | circle | line | path] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var x0: js.UndefOr[Datum] = js.undefined
-  var x1: js.UndefOr[Datum] = js.undefined
-  var xanchor: js.UndefOr[Double | String] = js.undefined
-  var xref: js.UndefOr[x | paper] = js.undefined
-  var xsizemode: js.UndefOr[scaled | pixel] = js.undefined
-  var y0: js.UndefOr[Datum] = js.undefined
-  var y1: js.UndefOr[Datum] = js.undefined
-  var yanchor: js.UndefOr[Double | String] = js.undefined
-  var yref: js.UndefOr[paper | y] = js.undefined
-  var ysizemode: js.UndefOr[scaled | pixel] = js.undefined
+  var fillcolor: js.UndefOr[String] = js.native
+  var layer: js.UndefOr[below | above] = js.native
+  var line: js.UndefOr[PartialShapeLine] = js.native
+  var name: js.UndefOr[String] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var path: js.UndefOr[String] = js.native
+  var templateitemname: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[rect | circle | line | path] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var x0: js.UndefOr[Datum] = js.native
+  var x1: js.UndefOr[Datum] = js.native
+  var xanchor: js.UndefOr[Double | String] = js.native
+  var xref: js.UndefOr[x | paper] = js.native
+  var xsizemode: js.UndefOr[scaled | pixel] = js.native
+  var y0: js.UndefOr[Datum] = js.native
+  var y1: js.UndefOr[Datum] = js.native
+  var yanchor: js.UndefOr[Double | String] = js.native
+  var yref: js.UndefOr[paper | y] = js.native
+  var ysizemode: js.UndefOr[scaled | pixel] = js.native
 }
 
 object PartialShape {
   @scala.inline
-  def apply(
-    fillcolor: String = null,
-    layer: below | above = null,
-    line: PartialShapeLine = null,
-    name: String = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    path: String = null,
-    templateitemname: String = null,
-    `type`: rect | circle | line | path = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    x0: js.UndefOr[Null | Datum] = js.undefined,
-    x1: js.UndefOr[Null | Datum] = js.undefined,
-    xanchor: Double | String = null,
-    xref: x | paper = null,
-    xsizemode: scaled | pixel = null,
-    y0: js.UndefOr[Null | Datum] = js.undefined,
-    y1: js.UndefOr[Null | Datum] = js.undefined,
-    yanchor: Double | String = null,
-    yref: paper | y = null,
-    ysizemode: scaled | pixel = null
-  ): PartialShape = {
+  def apply(): PartialShape = {
     val __obj = js.Dynamic.literal()
-    if (fillcolor != null) __obj.updateDynamic("fillcolor")(fillcolor.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (templateitemname != null) __obj.updateDynamic("templateitemname")(templateitemname.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x0)) __obj.updateDynamic("x0")(x0.asInstanceOf[js.Any])
-    if (!js.isUndefined(x1)) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
-    if (xanchor != null) __obj.updateDynamic("xanchor")(xanchor.asInstanceOf[js.Any])
-    if (xref != null) __obj.updateDynamic("xref")(xref.asInstanceOf[js.Any])
-    if (xsizemode != null) __obj.updateDynamic("xsizemode")(xsizemode.asInstanceOf[js.Any])
-    if (!js.isUndefined(y0)) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
-    if (!js.isUndefined(y1)) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
-    if (yanchor != null) __obj.updateDynamic("yanchor")(yanchor.asInstanceOf[js.Any])
-    if (yref != null) __obj.updateDynamic("yref")(yref.asInstanceOf[js.Any])
-    if (ysizemode != null) __obj.updateDynamic("ysizemode")(ysizemode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialShape]
   }
+  @scala.inline
+  implicit class PartialShapeOps[Self <: PartialShape] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFillcolor(value: String): Self = this.set("fillcolor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillcolor: Self = this.set("fillcolor", js.undefined)
+    @scala.inline
+    def setLayer(value: below | above): Self = this.set("layer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayer: Self = this.set("layer", js.undefined)
+    @scala.inline
+    def setLine(value: PartialShapeLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setTemplateitemname(value: String): Self = this.set("templateitemname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateitemname: Self = this.set("templateitemname", js.undefined)
+    @scala.inline
+    def setType(value: rect | circle | line | path): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setX0(value: Datum): Self = this.set("x0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX0: Self = this.set("x0", js.undefined)
+    @scala.inline
+    def setX0Null: Self = this.set("x0", null)
+    @scala.inline
+    def setX1(value: Datum): Self = this.set("x1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX1: Self = this.set("x1", js.undefined)
+    @scala.inline
+    def setX1Null: Self = this.set("x1", null)
+    @scala.inline
+    def setXanchor(value: Double | String): Self = this.set("xanchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXanchor: Self = this.set("xanchor", js.undefined)
+    @scala.inline
+    def setXref(value: typings.plotlyJs.plotlyJsStrings.x | paper): Self = this.set("xref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXref: Self = this.set("xref", js.undefined)
+    @scala.inline
+    def setXsizemode(value: scaled | pixel): Self = this.set("xsizemode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXsizemode: Self = this.set("xsizemode", js.undefined)
+    @scala.inline
+    def setY0(value: Datum): Self = this.set("y0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY0: Self = this.set("y0", js.undefined)
+    @scala.inline
+    def setY0Null: Self = this.set("y0", null)
+    @scala.inline
+    def setY1(value: Datum): Self = this.set("y1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY1: Self = this.set("y1", js.undefined)
+    @scala.inline
+    def setY1Null: Self = this.set("y1", null)
+    @scala.inline
+    def setYanchor(value: Double | String): Self = this.set("yanchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYanchor: Self = this.set("yanchor", js.undefined)
+    @scala.inline
+    def setYref(value: paper | y): Self = this.set("yref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYref: Self = this.set("yref", js.undefined)
+    @scala.inline
+    def setYsizemode(value: scaled | pixel): Self = this.set("ysizemode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYsizemode: Self = this.set("ysizemode", js.undefined)
+  }
+  
 }
 

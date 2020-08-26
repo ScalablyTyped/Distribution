@@ -22,10 +22,30 @@ trait AdminConfirmSignUpRequest extends js.Object {
 
 object AdminConfirmSignUpRequest {
   @scala.inline
-  def apply(UserPoolId: UserPoolIdType, Username: UsernameType, ClientMetadata: ClientMetadataType = null): AdminConfirmSignUpRequest = {
+  def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminConfirmSignUpRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (ClientMetadata != null) __obj.updateDynamic("ClientMetadata")(ClientMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminConfirmSignUpRequest]
   }
+  @scala.inline
+  implicit class AdminConfirmSignUpRequestOps[Self <: AdminConfirmSignUpRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientMetadata(value: ClientMetadataType): Self = this.set("ClientMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientMetadata: Self = this.set("ClientMetadata", js.undefined)
+  }
+  
 }
 

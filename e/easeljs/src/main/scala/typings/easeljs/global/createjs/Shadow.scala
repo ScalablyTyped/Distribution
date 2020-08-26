@@ -9,15 +9,6 @@ import scala.scalajs.js.annotation._
 class Shadow protected ()
   extends typings.easeljs.createjs.Shadow {
   def this(color: String, offsetX: Double, offsetY: Double, blur: Double) = this()
-  // properties
-  /* CompleteClass */
-  override var blur: Double = js.native
-  /* CompleteClass */
-  override var color: String = js.native
-  /* CompleteClass */
-  override var offsetX: Double = js.native
-  /* CompleteClass */
-  override var offsetY: Double = js.native
 }
 
 /* static members */

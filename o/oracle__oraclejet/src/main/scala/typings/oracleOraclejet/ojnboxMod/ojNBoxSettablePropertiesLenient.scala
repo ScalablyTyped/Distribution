@@ -3,7 +3,7 @@ package typings.oracleOraclejet.ojnboxMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.oracleOraclejet.anon.CellDefaults
 import typings.oracleOraclejet.anon.HighlightedCount
-import typings.oracleOraclejet.anon.`13`
+import typings.oracleOraclejet.anon.`15`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojnboxMod.ojNBox.Cell
 import typings.oracleOraclejet.ojnboxMod.ojNBox.Column
@@ -33,110 +33,201 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojnbox.ojNBoxSettableProperties<K, D>> */
+@js.native
 trait ojNBoxSettablePropertiesLenient[K, D]
   extends /* key */ StringDictionary[js.Any] {
-  var animationOnDataChange: js.UndefOr[auto | none] = js.undefined
-  var animationOnDisplay: js.UndefOr[auto | none] = js.undefined
-  var as: js.UndefOr[String] = js.undefined
-  var cellContent: js.UndefOr[counts | auto] = js.undefined
-  var cellMaximize: js.UndefOr[off | on] = js.undefined
-  var cells: js.UndefOr[js.Array[Cell] | js.Promise[js.Array[Cell]]] = js.undefined
-  var columns: js.UndefOr[js.Array[Column] | js.Promise[js.Array[Column]]] = js.undefined
-  var columnsTitle: js.UndefOr[String] = js.undefined
-  var countLabel: js.UndefOr[js.Function1[/* context */ CountLabelContext, String | Null]] = js.undefined
-  var data: js.UndefOr[DataProvider[K, D]] = js.undefined
+  var animationOnDataChange: js.UndefOr[auto | none] = js.native
+  var animationOnDisplay: js.UndefOr[auto | none] = js.native
+  var as: js.UndefOr[String] = js.native
+  var cellContent: js.UndefOr[counts | auto] = js.native
+  var cellMaximize: js.UndefOr[off | on] = js.native
+  var cells: js.UndefOr[js.Array[Cell] | js.Promise[js.Array[Cell]] | Null] = js.native
+  var columns: js.UndefOr[js.Array[Column] | js.Promise[js.Array[Column]] | Null] = js.native
+  var columnsTitle: js.UndefOr[String] = js.native
+  var countLabel: js.UndefOr[js.Function1[/* context */ CountLabelContext, String | Null]] = js.native
+  var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.native
   var groupAttributes: js.UndefOr[
     color | indicatorColor | indicatorIconColor | indicatorIconPattern | indicatorIconShape
-  ] = js.undefined
-  var groupBehavior: js.UndefOr[acrossCells | none | withinCell] = js.undefined
-  var hiddenCategories: js.UndefOr[js.Array[String]] = js.undefined
-  var highlightMatch: js.UndefOr[any | all] = js.undefined
-  var highlightedCategories: js.UndefOr[js.Array[String]] = js.undefined
-  var hoverBehavior: js.UndefOr[dim | none] = js.undefined
-  var labelTruncation: js.UndefOr[ifRequired | on] = js.undefined
-  var maximizedColumn: js.UndefOr[String] = js.undefined
-  var maximizedRow: js.UndefOr[String] = js.undefined
-  var otherColor: js.UndefOr[String] = js.undefined
-  var otherThreshold: js.UndefOr[Double] = js.undefined
-  var rows: js.UndefOr[js.Array[Row] | js.Promise[js.Array[Row]]] = js.undefined
-  var rowsTitle: js.UndefOr[String] = js.undefined
-  var selection: js.UndefOr[js.Array[K]] = js.undefined
-  var selectionMode: js.UndefOr[none | single | multiple] = js.undefined
-  var styleDefaults: js.UndefOr[CellDefaults] = js.undefined
-  var tooltip: js.UndefOr[`13`[K]] = js.undefined
-  var touchResponse: js.UndefOr[touchStart | auto] = js.undefined
-  var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[HighlightedCount] = js.undefined
+  ] = js.native
+  var groupBehavior: js.UndefOr[acrossCells | none | withinCell] = js.native
+  var hiddenCategories: js.UndefOr[js.Array[String]] = js.native
+  var highlightMatch: js.UndefOr[any | all] = js.native
+  var highlightedCategories: js.UndefOr[js.Array[String]] = js.native
+  var hoverBehavior: js.UndefOr[dim | none] = js.native
+  var labelTruncation: js.UndefOr[ifRequired | on] = js.native
+  var maximizedColumn: js.UndefOr[String] = js.native
+  var maximizedRow: js.UndefOr[String] = js.native
+  var otherColor: js.UndefOr[String] = js.native
+  var otherThreshold: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[js.Array[Row] | js.Promise[js.Array[Row]] | Null] = js.native
+  var rowsTitle: js.UndefOr[String] = js.native
+  var selection: js.UndefOr[js.Array[K]] = js.native
+  var selectionMode: js.UndefOr[none | single | multiple] = js.native
+  var styleDefaults: js.UndefOr[CellDefaults] = js.native
+  var tooltip: js.UndefOr[`15`[K]] = js.native
+  var touchResponse: js.UndefOr[touchStart | auto] = js.native
+  var trackResize: js.UndefOr[on | off] = js.native
+  var translations: js.UndefOr[HighlightedCount] = js.native
 }
 
 object ojNBoxSettablePropertiesLenient {
   @scala.inline
-  def apply[K, D](
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    animationOnDataChange: auto | none = null,
-    animationOnDisplay: auto | none = null,
-    as: String = null,
-    cellContent: counts | auto = null,
-    cellMaximize: off | on = null,
-    cells: js.Array[Cell] | js.Promise[js.Array[Cell]] = null,
-    columns: js.Array[Column] | js.Promise[js.Array[Column]] = null,
-    columnsTitle: String = null,
-    countLabel: /* context */ CountLabelContext => String | Null = null,
-    data: DataProvider[K, D] = null,
-    groupAttributes: color | indicatorColor | indicatorIconColor | indicatorIconPattern | indicatorIconShape = null,
-    groupBehavior: acrossCells | none | withinCell = null,
-    hiddenCategories: js.Array[String] = null,
-    highlightMatch: any | all = null,
-    highlightedCategories: js.Array[String] = null,
-    hoverBehavior: dim | none = null,
-    labelTruncation: ifRequired | on = null,
-    maximizedColumn: String = null,
-    maximizedRow: String = null,
-    otherColor: String = null,
-    otherThreshold: js.UndefOr[Double] = js.undefined,
-    rows: js.Array[Row] | js.Promise[js.Array[Row]] = null,
-    rowsTitle: String = null,
-    selection: js.Array[K] = null,
-    selectionMode: none | single | multiple = null,
-    styleDefaults: CellDefaults = null,
-    tooltip: `13`[K] = null,
-    touchResponse: touchStart | auto = null,
-    trackResize: on | off = null,
-    translations: HighlightedCount = null
-  ): ojNBoxSettablePropertiesLenient[K, D] = {
+  def apply[K, D](): ojNBoxSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (animationOnDataChange != null) __obj.updateDynamic("animationOnDataChange")(animationOnDataChange.asInstanceOf[js.Any])
-    if (animationOnDisplay != null) __obj.updateDynamic("animationOnDisplay")(animationOnDisplay.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (cellContent != null) __obj.updateDynamic("cellContent")(cellContent.asInstanceOf[js.Any])
-    if (cellMaximize != null) __obj.updateDynamic("cellMaximize")(cellMaximize.asInstanceOf[js.Any])
-    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (columnsTitle != null) __obj.updateDynamic("columnsTitle")(columnsTitle.asInstanceOf[js.Any])
-    if (countLabel != null) __obj.updateDynamic("countLabel")(js.Any.fromFunction1(countLabel))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (groupAttributes != null) __obj.updateDynamic("groupAttributes")(groupAttributes.asInstanceOf[js.Any])
-    if (groupBehavior != null) __obj.updateDynamic("groupBehavior")(groupBehavior.asInstanceOf[js.Any])
-    if (hiddenCategories != null) __obj.updateDynamic("hiddenCategories")(hiddenCategories.asInstanceOf[js.Any])
-    if (highlightMatch != null) __obj.updateDynamic("highlightMatch")(highlightMatch.asInstanceOf[js.Any])
-    if (highlightedCategories != null) __obj.updateDynamic("highlightedCategories")(highlightedCategories.asInstanceOf[js.Any])
-    if (hoverBehavior != null) __obj.updateDynamic("hoverBehavior")(hoverBehavior.asInstanceOf[js.Any])
-    if (labelTruncation != null) __obj.updateDynamic("labelTruncation")(labelTruncation.asInstanceOf[js.Any])
-    if (maximizedColumn != null) __obj.updateDynamic("maximizedColumn")(maximizedColumn.asInstanceOf[js.Any])
-    if (maximizedRow != null) __obj.updateDynamic("maximizedRow")(maximizedRow.asInstanceOf[js.Any])
-    if (otherColor != null) __obj.updateDynamic("otherColor")(otherColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(otherThreshold)) __obj.updateDynamic("otherThreshold")(otherThreshold.get.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (rowsTitle != null) __obj.updateDynamic("rowsTitle")(rowsTitle.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (styleDefaults != null) __obj.updateDynamic("styleDefaults")(styleDefaults.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (touchResponse != null) __obj.updateDynamic("touchResponse")(touchResponse.asInstanceOf[js.Any])
-    if (trackResize != null) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojNBoxSettablePropertiesLenient[K, D]]
   }
+  @scala.inline
+  implicit class ojNBoxSettablePropertiesLenientOps[Self <: ojNBoxSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojNBoxSettablePropertiesLenient[K, D])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimationOnDataChange(value: auto | none): Self = this.set("animationOnDataChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationOnDataChange: Self = this.set("animationOnDataChange", js.undefined)
+    @scala.inline
+    def setAnimationOnDisplay(value: auto | none): Self = this.set("animationOnDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationOnDisplay: Self = this.set("animationOnDisplay", js.undefined)
+    @scala.inline
+    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setCellContent(value: counts | auto): Self = this.set("cellContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellContent: Self = this.set("cellContent", js.undefined)
+    @scala.inline
+    def setCellMaximize(value: off | on): Self = this.set("cellMaximize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellMaximize: Self = this.set("cellMaximize", js.undefined)
+    @scala.inline
+    def setCellsVarargs(value: Cell*): Self = this.set("cells", js.Array(value :_*))
+    @scala.inline
+    def setCells(value: js.Array[Cell] | js.Promise[js.Array[Cell]]): Self = this.set("cells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCells: Self = this.set("cells", js.undefined)
+    @scala.inline
+    def setCellsNull: Self = this.set("cells", null)
+    @scala.inline
+    def setColumnsVarargs(value: Column*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[Column] | js.Promise[js.Array[Column]]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setColumnsNull: Self = this.set("columns", null)
+    @scala.inline
+    def setColumnsTitle(value: String): Self = this.set("columnsTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnsTitle: Self = this.set("columnsTitle", js.undefined)
+    @scala.inline
+    def setCountLabel(value: /* context */ CountLabelContext => String | Null): Self = this.set("countLabel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCountLabel: Self = this.set("countLabel", js.undefined)
+    @scala.inline
+    def setData(value: DataProvider[K, D]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataNull: Self = this.set("data", null)
+    @scala.inline
+    def setGroupAttributes(value: color | indicatorColor | indicatorIconColor | indicatorIconPattern | indicatorIconShape): Self = this.set("groupAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupAttributes: Self = this.set("groupAttributes", js.undefined)
+    @scala.inline
+    def setGroupBehavior(value: acrossCells | none | withinCell): Self = this.set("groupBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupBehavior: Self = this.set("groupBehavior", js.undefined)
+    @scala.inline
+    def setHiddenCategoriesVarargs(value: String*): Self = this.set("hiddenCategories", js.Array(value :_*))
+    @scala.inline
+    def setHiddenCategories(value: js.Array[String]): Self = this.set("hiddenCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiddenCategories: Self = this.set("hiddenCategories", js.undefined)
+    @scala.inline
+    def setHighlightMatch(value: any | all): Self = this.set("highlightMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightMatch: Self = this.set("highlightMatch", js.undefined)
+    @scala.inline
+    def setHighlightedCategoriesVarargs(value: String*): Self = this.set("highlightedCategories", js.Array(value :_*))
+    @scala.inline
+    def setHighlightedCategories(value: js.Array[String]): Self = this.set("highlightedCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightedCategories: Self = this.set("highlightedCategories", js.undefined)
+    @scala.inline
+    def setHoverBehavior(value: dim | none): Self = this.set("hoverBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverBehavior: Self = this.set("hoverBehavior", js.undefined)
+    @scala.inline
+    def setLabelTruncation(value: ifRequired | on): Self = this.set("labelTruncation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelTruncation: Self = this.set("labelTruncation", js.undefined)
+    @scala.inline
+    def setMaximizedColumn(value: String): Self = this.set("maximizedColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximizedColumn: Self = this.set("maximizedColumn", js.undefined)
+    @scala.inline
+    def setMaximizedRow(value: String): Self = this.set("maximizedRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximizedRow: Self = this.set("maximizedRow", js.undefined)
+    @scala.inline
+    def setOtherColor(value: String): Self = this.set("otherColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtherColor: Self = this.set("otherColor", js.undefined)
+    @scala.inline
+    def setOtherThreshold(value: Double): Self = this.set("otherThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtherThreshold: Self = this.set("otherThreshold", js.undefined)
+    @scala.inline
+    def setRowsVarargs(value: Row*): Self = this.set("rows", js.Array(value :_*))
+    @scala.inline
+    def setRows(value: js.Array[Row] | js.Promise[js.Array[Row]]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setRowsNull: Self = this.set("rows", null)
+    @scala.inline
+    def setRowsTitle(value: String): Self = this.set("rowsTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowsTitle: Self = this.set("rowsTitle", js.undefined)
+    @scala.inline
+    def setSelectionVarargs(value: K*): Self = this.set("selection", js.Array(value :_*))
+    @scala.inline
+    def setSelection(value: js.Array[K]): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: none | single | multiple): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    @scala.inline
+    def setStyleDefaults(value: CellDefaults): Self = this.set("styleDefaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleDefaults: Self = this.set("styleDefaults", js.undefined)
+    @scala.inline
+    def setTooltip(value: `15`[K]): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTouchResponse(value: touchStart | auto): Self = this.set("touchResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchResponse: Self = this.set("touchResponse", js.undefined)
+    @scala.inline
+    def setTrackResize(value: on | off): Self = this.set("trackResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackResize: Self = this.set("trackResize", js.undefined)
+    @scala.inline
+    def setTranslations(value: HighlightedCount): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslations: Self = this.set("translations", js.undefined)
+  }
+  
 }
 

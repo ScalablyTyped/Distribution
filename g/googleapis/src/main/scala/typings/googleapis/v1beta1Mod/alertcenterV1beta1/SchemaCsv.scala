@@ -23,11 +23,34 @@ trait SchemaCsv extends js.Object {
 
 object SchemaCsv {
   @scala.inline
-  def apply(dataRows: js.Array[SchemaCsvRow] = null, headers: js.Array[String] = null): SchemaCsv = {
+  def apply(): SchemaCsv = {
     val __obj = js.Dynamic.literal()
-    if (dataRows != null) __obj.updateDynamic("dataRows")(dataRows.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCsv]
   }
+  @scala.inline
+  implicit class SchemaCsvOps[Self <: SchemaCsv] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataRowsVarargs(value: SchemaCsvRow*): Self = this.set("dataRows", js.Array(value :_*))
+    @scala.inline
+    def setDataRows(value: js.Array[SchemaCsvRow]): Self = this.set("dataRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRows: Self = this.set("dataRows", js.undefined)
+    @scala.inline
+    def setHeadersVarargs(value: String*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: js.Array[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+  }
+  
 }
 

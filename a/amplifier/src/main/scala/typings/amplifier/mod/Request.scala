@@ -15,6 +15,11 @@ trait Request extends js.Object {
     * callback: A function to invoke if the resource is retrieved successfully.
     */
   def apply(resourceId: String): Unit = js.native
+  def apply(
+    resourceId: String,
+    hash: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): Unit = js.native
   def apply(resourceId: String, hash: js.Any): Unit = js.native
   def apply(resourceId: String, hash: js.Any, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
   /***

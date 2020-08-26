@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   *
   *
   **/
+@js.native
 trait IStylesheetResource extends js.Object {
   /**
     * @ngdoc method
@@ -32,7 +33,7 @@ trait IStylesheetResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the stylesheets.
     *
     */
-  def getAll(): IPromise[IResourcePromise]
+  def getAll(): IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.stylesheetResource#getRules
@@ -52,7 +53,7 @@ trait IStylesheetResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the rules.
     *
     */
-  def getRules(id: Double): IPromise[IResourcePromise]
+  def getRules(id: Double): IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.stylesheetResource#getRulesByName
@@ -72,7 +73,7 @@ trait IStylesheetResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the rules.
     *
     */
-  def getRulesByName(name: String): IPromise[IResourcePromise]
+  def getRulesByName(name: String): IPromise[IResourcePromise] = js.native
 }
 
 object IStylesheetResource {
@@ -85,5 +86,24 @@ object IStylesheetResource {
     val __obj = js.Dynamic.literal(getAll = js.Any.fromFunction0(getAll), getRules = js.Any.fromFunction1(getRules), getRulesByName = js.Any.fromFunction1(getRulesByName))
     __obj.asInstanceOf[IStylesheetResource]
   }
+  @scala.inline
+  implicit class IStylesheetResourceOps[Self <: IStylesheetResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetAll(value: () => IPromise[IResourcePromise]): Self = this.set("getAll", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetRules(value: Double => IPromise[IResourcePromise]): Self = this.set("getRules", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetRulesByName(value: String => IPromise[IResourcePromise]): Self = this.set("getRulesByName", js.Any.fromFunction1(value))
+  }
+  
 }
 

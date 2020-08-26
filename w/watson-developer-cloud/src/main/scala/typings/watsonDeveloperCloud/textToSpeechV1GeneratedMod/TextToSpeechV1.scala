@@ -317,6 +317,7 @@ trait TextToSpeechV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listVoiceModels(): js.Promise[_] | Unit = js.native
+  def listVoiceModels(params: js.UndefOr[scala.Nothing], callback: Callback[VoiceModels]): js.Promise[_] | Unit = js.native
   def listVoiceModels(params: ListVoiceModelsParams): js.Promise[_] | Unit = js.native
   def listVoiceModels(params: ListVoiceModelsParams, callback: Callback[VoiceModels]): js.Promise[_] | Unit = js.native
   /**
@@ -334,6 +335,7 @@ trait TextToSpeechV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listVoices(): js.Promise[_] | Unit = js.native
+  def listVoices(params: js.UndefOr[scala.Nothing], callback: Callback[Voices]): js.Promise[_] | Unit = js.native
   def listVoices(params: ListVoicesParams): js.Promise[_] | Unit = js.native
   def listVoices(params: ListVoicesParams, callback: Callback[Voices]): js.Promise[_] | Unit = js.native
   /**

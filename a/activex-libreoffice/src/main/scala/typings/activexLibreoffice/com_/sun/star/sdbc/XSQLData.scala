@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * This interface must be implemented by a service that is registered in a type mapping. It is expected that this interface will normally be implemented
   * by a tool. The methods in this interface are called by the driver and are never called by a programmer directly.
   */
+@js.native
 trait XSQLData extends XInterface {
   /**
     * returns the fully-qualified name of the SQL user-defined type that this object represents.
@@ -20,7 +21,7 @@ trait XSQLData extends XInterface {
     * @returns the name of the SQL type.
     * @throws SQLException if a database access error occurs.
     */
-  val SQLTypeName: String
+  val SQLTypeName: String = js.native
   /**
     * returns the fully-qualified name of the SQL user-defined type that this object represents.
     *
@@ -28,7 +29,7 @@ trait XSQLData extends XInterface {
     * @returns the name of the SQL type.
     * @throws SQLException if a database access error occurs.
     */
-  def getSQLTypeName(): String
+  def getSQLTypeName(): String = js.native
   /**
     * populates this object with data read from the database.
     *
@@ -45,7 +46,7 @@ trait XSQLData extends XInterface {
     * @see com.sun.star.sdbc.XSQLInput
     * @throws SQLException if a database access error occurs.
     */
-  def readSQL(stream: XSQLInput, typeName: String): Unit
+  def readSQL(stream: XSQLInput, typeName: String): Unit = js.native
   /**
     * writes this object to the given SQL data stream.
     *
@@ -57,7 +58,7 @@ trait XSQLData extends XInterface {
     * @see com.sun.star.sdbc.XSQLOutput
     * @throws SQLException if a database access error occurs.
     */
-  def writeSQL(stream: XSQLOutput): Unit
+  def writeSQL(stream: XSQLOutput): Unit = js.native
 }
 
 object XSQLData {
@@ -74,5 +75,26 @@ object XSQLData {
     val __obj = js.Dynamic.literal(SQLTypeName = SQLTypeName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getSQLTypeName = js.Any.fromFunction0(getSQLTypeName), queryInterface = js.Any.fromFunction1(queryInterface), readSQL = js.Any.fromFunction2(readSQL), release = js.Any.fromFunction0(release), writeSQL = js.Any.fromFunction1(writeSQL))
     __obj.asInstanceOf[XSQLData]
   }
+  @scala.inline
+  implicit class XSQLDataOps[Self <: XSQLData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSQLTypeName(value: String): Self = this.set("SQLTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetSQLTypeName(value: () => String): Self = this.set("getSQLTypeName", js.Any.fromFunction0(value))
+    @scala.inline
+    def setReadSQL(value: (XSQLInput, String) => Unit): Self = this.set("readSQL", js.Any.fromFunction2(value))
+    @scala.inline
+    def setWriteSQL(value: XSQLOutput => Unit): Self = this.set("writeSQL", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait CaptionSelector extends js.Object {
 
 object CaptionSelector {
   @scala.inline
-  def apply(
-    CustomLanguageCode: stringMin3Max3PatternAZaZ3 = null,
-    LanguageCode: LanguageCode = null,
-    SourceSettings: CaptionSourceSettings = null
-  ): CaptionSelector = {
+  def apply(): CaptionSelector = {
     val __obj = js.Dynamic.literal()
-    if (CustomLanguageCode != null) __obj.updateDynamic("CustomLanguageCode")(CustomLanguageCode.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (SourceSettings != null) __obj.updateDynamic("SourceSettings")(SourceSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionSelector]
   }
+  @scala.inline
+  implicit class CaptionSelectorOps[Self <: CaptionSelector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomLanguageCode(value: stringMin3Max3PatternAZaZ3): Self = this.set("CustomLanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLanguageCode: Self = this.set("CustomLanguageCode", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setSourceSettings(value: CaptionSourceSettings): Self = this.set("SourceSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSettings: Self = this.set("SourceSettings", js.undefined)
+  }
+  
 }
 

@@ -17,10 +17,28 @@ trait SchemaGoogleCloudVisionV1p3beta1CropHintsAnnotation extends js.Object {
 
 object SchemaGoogleCloudVisionV1p3beta1CropHintsAnnotation {
   @scala.inline
-  def apply(cropHints: js.Array[SchemaGoogleCloudVisionV1p3beta1CropHint] = null): SchemaGoogleCloudVisionV1p3beta1CropHintsAnnotation = {
+  def apply(): SchemaGoogleCloudVisionV1p3beta1CropHintsAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (cropHints != null) __obj.updateDynamic("cropHints")(cropHints.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1CropHintsAnnotation]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p3beta1CropHintsAnnotationOps[Self <: SchemaGoogleCloudVisionV1p3beta1CropHintsAnnotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCropHintsVarargs(value: SchemaGoogleCloudVisionV1p3beta1CropHint*): Self = this.set("cropHints", js.Array(value :_*))
+    @scala.inline
+    def setCropHints(value: js.Array[SchemaGoogleCloudVisionV1p3beta1CropHint]): Self = this.set("cropHints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCropHints: Self = this.set("cropHints", js.undefined)
+  }
+  
 }
 

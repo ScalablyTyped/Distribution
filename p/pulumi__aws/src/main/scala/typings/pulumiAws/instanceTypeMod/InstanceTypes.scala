@@ -49,6 +49,22 @@ object InstanceTypes extends js.Object {
   val C5Large: InstanceType = js.native
   @JSName("C5_XLarge")
   val C5XLarge: InstanceType = js.native
+  @JSName("C5a_12XLarge")
+  val C5a12XLarge: InstanceType = js.native
+  @JSName("C5a_16XLarge")
+  val C5a16XLarge: InstanceType = js.native
+  @JSName("C5a_24XLarge")
+  val C5a24XLarge: InstanceType = js.native
+  @JSName("C5a_2XLarge")
+  val C5a2XLarge: InstanceType = js.native
+  @JSName("C5a_4XLarge")
+  val C5a4XLarge: InstanceType = js.native
+  @JSName("C5a_8XLarge")
+  val C5a8XLarge: InstanceType = js.native
+  @JSName("C5a_Large")
+  val C5aLarge: InstanceType = js.native
+  @JSName("C5a_XLarge")
+  val C5aXLarge: InstanceType = js.native
   @JSName("C5d_18XLarge")
   val C5d18XLarge: InstanceType = js.native
   @JSName("C5d_2XLarge")

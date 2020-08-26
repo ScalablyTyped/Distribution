@@ -14,7 +14,15 @@ object mod extends js.Object {
   def entropyToMnemonic(entropy: Buffer): String = js.native
   def entropyToMnemonic(entropy: Buffer, wordlist: js.Array[String]): String = js.native
   def generateMnemonic(): String = js.native
+  def generateMnemonic(strength: js.UndefOr[scala.Nothing], rng: js.UndefOr[scala.Nothing], wordlist: js.Array[String]): String = js.native
+  def generateMnemonic(strength: js.UndefOr[scala.Nothing], rng: js.Function1[/* size */ Double, Buffer]): String = js.native
+  def generateMnemonic(
+    strength: js.UndefOr[scala.Nothing],
+    rng: js.Function1[/* size */ Double, Buffer],
+    wordlist: js.Array[String]
+  ): String = js.native
   def generateMnemonic(strength: Double): String = js.native
+  def generateMnemonic(strength: Double, rng: js.UndefOr[scala.Nothing], wordlist: js.Array[String]): String = js.native
   def generateMnemonic(strength: Double, rng: js.Function1[/* size */ Double, Buffer]): String = js.native
   def generateMnemonic(strength: Double, rng: js.Function1[/* size */ Double, Buffer], wordlist: js.Array[String]): String = js.native
   def getDefaultWordlist(): String = js.native

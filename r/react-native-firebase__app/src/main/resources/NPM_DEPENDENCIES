@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-native-firebase/app" : "6.7.1"
+      "@react-native-firebase/app" : "8.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-native-firebase/app" : "6.7.1"
+      "@react-native-firebase/app" : "8.2.0"
     }
   ],
   "compile-devDependencies" : [

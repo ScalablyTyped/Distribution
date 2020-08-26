@@ -35,6 +35,12 @@ abstract class CallCredentials () extends js.Object {
 object CallCredentials extends js.Object {
   def createEmpty(): CallCredentials = js.native
   /**
+    * Create a gRPC credential from a Google credential object.
+    * @param googleCredentials The authentication client to use.
+    * @return The resulting CallCredentials object.
+    */
+  def createFromGoogleCredential(googleCredentials: OAuth2Client): CallCredentials = js.native
+  /**
     * Creates a new CallCredentials object from a given function that generates
     * Metadata objects.
     * @param metadataGenerator A function that accepts a set of options, and

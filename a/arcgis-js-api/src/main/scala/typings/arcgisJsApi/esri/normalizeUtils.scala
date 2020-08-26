@@ -17,6 +17,11 @@ trait normalizeUtils extends js.Object {
     *
     */
   def normalizeCentralMeridian(geometries: js.Array[Geometry_]): js.Promise[js.Array[Geometry_]] = js.native
+  def normalizeCentralMeridian(
+    geometries: js.Array[Geometry_],
+    geometryService: js.UndefOr[scala.Nothing],
+    requestOptions: js.Any
+  ): js.Promise[js.Array[Geometry_]] = js.native
   def normalizeCentralMeridian(geometries: js.Array[Geometry_], geometryService: GeometryService): js.Promise[js.Array[Geometry_]] = js.native
   def normalizeCentralMeridian(geometries: js.Array[Geometry_], geometryService: GeometryService, requestOptions: js.Any): js.Promise[js.Array[Geometry_]] = js.native
 }

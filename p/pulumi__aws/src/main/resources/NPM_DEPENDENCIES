@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pulumi/aws" : "1.31.0"
+      "@pulumi/aws" : "2.13.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@pulumi/aws" : "1.31.0"
+      "@pulumi/aws" : "2.13.1"
     }
   ],
   "compile-devDependencies" : [

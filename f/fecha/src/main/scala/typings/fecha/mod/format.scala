@@ -17,6 +17,7 @@ object format extends js.Object {
     * @returns {string} Formatted date string
     */
   def apply(dateObj: Date): String = js.native
+  def apply(dateObj: Date, mask: js.UndefOr[scala.Nothing], i18n: PartialI18nSettings): String = js.native
   def apply(dateObj: Date, mask: String): String = js.native
   def apply(dateObj: Date, mask: String, i18n: PartialI18nSettings): String = js.native
 }

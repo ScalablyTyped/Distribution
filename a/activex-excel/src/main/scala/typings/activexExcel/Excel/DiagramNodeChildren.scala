@@ -19,6 +19,7 @@ trait DiagramNodeChildren extends js.Object {
     * @param nodeType [nodeType=1]
     */
   def AddNode(): DiagramNode = js.native
+  def AddNode(Index: js.UndefOr[scala.Nothing], nodeType: MsoDiagramNodeType): DiagramNode = js.native
   def AddNode(Index: js.Any): DiagramNode = js.native
   def AddNode(Index: js.Any, nodeType: MsoDiagramNodeType): DiagramNode = js.native
   def Item(Index: js.Any): DiagramNode = js.native

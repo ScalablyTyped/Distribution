@@ -26,17 +26,36 @@ trait ListLogPatternsRequest extends js.Object {
 
 object ListLogPatternsRequest {
   @scala.inline
-  def apply(
-    ResourceGroupName: ResourceGroupName,
-    MaxResults: js.UndefOr[MaxEntities] = js.undefined,
-    NextToken: PaginationToken = null,
-    PatternSetName: LogPatternSetName = null
-  ): ListLogPatternsRequest = {
+  def apply(ResourceGroupName: ResourceGroupName): ListLogPatternsRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PatternSetName != null) __obj.updateDynamic("PatternSetName")(PatternSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLogPatternsRequest]
   }
+  @scala.inline
+  implicit class ListLogPatternsRequestOps[Self <: ListLogPatternsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceGroupName(value: ResourceGroupName): Self = this.set("ResourceGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxEntities): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPatternSetName(value: LogPatternSetName): Self = this.set("PatternSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternSetName: Self = this.set("PatternSetName", js.undefined)
+  }
+  
 }
 

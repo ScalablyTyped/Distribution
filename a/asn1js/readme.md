@@ -10,8 +10,8 @@ asn1js is a pure JavaScript library implementing this standard. ASN.1 is the bas
 | Full name          | asn1js |
 | Keywords           | asn1, parser, asn.1, ber, der, sequence, set, bitstring, octetstring, utctime, utf8string, bmpstring, universalstring, generalizedtime |
 | # releases         | 11 |
-| # dependents       | 37 |
-| # downloads        | 653253 |
+| # dependents       | 38 |
+| # downloads        | 659380 |
 | # stars            | 2 |
 
 ## Links

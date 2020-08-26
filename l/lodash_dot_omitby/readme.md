@@ -11,8 +11,8 @@ The lodash method `_.omitBy` exported as a module.
 | Full name          | lodash.omitby |
 | Keywords           | lodash-modularized, omitby |
 | # releases         | 0 |
-| # dependents       | 63 |
-| # downloads        | 4133126 |
+| # dependents       | 66 |
+| # downloads        | 4189236 |
 | # stars            | 0 |
 
 ## Links

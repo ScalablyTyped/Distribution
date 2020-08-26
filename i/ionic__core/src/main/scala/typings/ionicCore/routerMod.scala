@@ -40,6 +40,7 @@ object routerMod extends js.Object {
       */
     var root: String = js.native
     var routeChangeEvent: js.Any = js.native
+    var runGuards: js.Any = js.native
     var safeWriteNavState: js.Any = js.native
     var setPath: js.Any = js.native
     var state: js.Any = js.native
@@ -58,13 +59,15 @@ object routerMod extends js.Object {
       * By default, this property is `true`, change to `false` to allow hash-less URLs.
       */
     var useHash: Boolean = js.native
-    var waitPromise: js.UndefOr[js.Any] = js.native
+    var waitPromise: js.Any = js.native
     var writeNavState: js.Any = js.native
     var writeNavStateRoot: js.Any = js.native
     /**
       * Go back to previous page in the window.history.
       */
     def back(): js.Promise[Unit] = js.native
+    /** @internal */
+    def canTransition(): js.Promise[String | Boolean] = js.native
     @JSName("componentDidLoad")
     def componentDidLoad_MRouter(): Unit = js.native
     @JSName("componentWillLoad")
@@ -82,6 +85,7 @@ object routerMod extends js.Object {
       * @param direction The direction of the animation. Defaults to `"forward"`.
       */
     def push(url: String): js.Promise[Boolean] = js.native
+    def push(url: String, direction: js.UndefOr[scala.Nothing], animation: AnimationBuilder): js.Promise[Boolean] = js.native
     def push(url: String, direction: RouterDirection): js.Promise[Boolean] = js.native
     def push(url: String, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
   }

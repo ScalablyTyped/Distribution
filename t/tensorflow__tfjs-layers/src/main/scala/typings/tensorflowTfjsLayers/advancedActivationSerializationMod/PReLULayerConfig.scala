@@ -1,50 +1,57 @@
 package typings.tensorflowTfjsLayers.advancedActivationSerializationMod
 
-import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsLayers.constraintConfigMod.ConstraintSerialization
 import typings.tensorflowTfjsLayers.initializerConfigMod.InitializerSerialization
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.regularizerConfigMod.RegularizerSerialization
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PReLULayerConfig extends LayerConfig {
-  var alpha_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
-  var alpha_initializer: js.UndefOr[InitializerSerialization] = js.undefined
-  var alpha_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
-  var shared_axes: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var alpha_constraint: js.UndefOr[ConstraintSerialization] = js.native
+  var alpha_initializer: js.UndefOr[InitializerSerialization] = js.native
+  var alpha_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+  var shared_axes: js.UndefOr[Double | js.Array[Double]] = js.native
 }
 
 object PReLULayerConfig {
   @scala.inline
-  def apply(
-    alpha_constraint: ConstraintSerialization = null,
-    alpha_initializer: InitializerSerialization = null,
-    alpha_regularizer: RegularizerSerialization = null,
-    batch_input_shape: Shape = null,
-    batch_size: js.UndefOr[Double] = js.undefined,
-    dtype: DataType = null,
-    input_dtype: DataType = null,
-    input_shape: Shape = null,
-    name: String = null,
-    shared_axes: Double | js.Array[Double] = null,
-    trainable: js.UndefOr[Boolean] = js.undefined
-  ): PReLULayerConfig = {
+  def apply(): PReLULayerConfig = {
     val __obj = js.Dynamic.literal()
-    if (alpha_constraint != null) __obj.updateDynamic("alpha_constraint")(alpha_constraint.asInstanceOf[js.Any])
-    if (alpha_initializer != null) __obj.updateDynamic("alpha_initializer")(alpha_initializer.asInstanceOf[js.Any])
-    if (alpha_regularizer != null) __obj.updateDynamic("alpha_regularizer")(alpha_regularizer.asInstanceOf[js.Any])
-    if (batch_input_shape != null) __obj.updateDynamic("batch_input_shape")(batch_input_shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(batch_size)) __obj.updateDynamic("batch_size")(batch_size.get.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (input_dtype != null) __obj.updateDynamic("input_dtype")(input_dtype.asInstanceOf[js.Any])
-    if (input_shape != null) __obj.updateDynamic("input_shape")(input_shape.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (shared_axes != null) __obj.updateDynamic("shared_axes")(shared_axes.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PReLULayerConfig]
   }
+  @scala.inline
+  implicit class PReLULayerConfigOps[Self <: PReLULayerConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlpha_constraint(value: ConstraintSerialization): Self = this.set("alpha_constraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha_constraint: Self = this.set("alpha_constraint", js.undefined)
+    @scala.inline
+    def setAlpha_initializer(value: InitializerSerialization): Self = this.set("alpha_initializer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha_initializer: Self = this.set("alpha_initializer", js.undefined)
+    @scala.inline
+    def setAlpha_regularizer(value: RegularizerSerialization): Self = this.set("alpha_regularizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha_regularizer: Self = this.set("alpha_regularizer", js.undefined)
+    @scala.inline
+    def setShared_axesVarargs(value: Double*): Self = this.set("shared_axes", js.Array(value :_*))
+    @scala.inline
+    def setShared_axes(value: Double | js.Array[Double]): Self = this.set("shared_axes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShared_axes: Self = this.set("shared_axes", js.undefined)
+  }
+  
 }
 

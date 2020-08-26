@@ -18,10 +18,28 @@ trait DetectTextRequest extends js.Object {
 
 object DetectTextRequest {
   @scala.inline
-  def apply(Image: Image, Filters: DetectTextFilters = null): DetectTextRequest = {
+  def apply(Image: Image): DetectTextRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectTextRequest]
   }
+  @scala.inline
+  implicit class DetectTextRequestOps[Self <: DetectTextRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImage(value: Image): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilters(value: DetectTextFilters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+  }
+  
 }
 

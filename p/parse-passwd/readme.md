@@ -12,7 +12,7 @@ Parse a passwd file into a list of users.
 | Keywords           | etc, etc-passwd, etc/passwd, parse, parse-passwd, passwd |
 | # releases         | 1 |
 | # dependents       | 16 |
-| # downloads        | 207905115 |
+| # downloads        | 212116928 |
 | # stars            | 1 |
 
 ## Links

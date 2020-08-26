@@ -23,10 +23,28 @@ trait SchemaBuildBazelRemoteExecutionV2Platform extends js.Object {
 
 object SchemaBuildBazelRemoteExecutionV2Platform {
   @scala.inline
-  def apply(properties: js.Array[SchemaBuildBazelRemoteExecutionV2PlatformProperty] = null): SchemaBuildBazelRemoteExecutionV2Platform = {
+  def apply(): SchemaBuildBazelRemoteExecutionV2Platform = {
     val __obj = js.Dynamic.literal()
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2Platform]
   }
+  @scala.inline
+  implicit class SchemaBuildBazelRemoteExecutionV2PlatformOps[Self <: SchemaBuildBazelRemoteExecutionV2Platform] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPropertiesVarargs(value: SchemaBuildBazelRemoteExecutionV2PlatformProperty*): Self = this.set("properties", js.Array(value :_*))
+    @scala.inline
+    def setProperties(value: js.Array[SchemaBuildBazelRemoteExecutionV2PlatformProperty]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+  }
+  
 }
 

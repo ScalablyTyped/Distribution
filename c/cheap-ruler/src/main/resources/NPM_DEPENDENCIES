@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cheap-ruler" : "2.5.1"
+      "cheap-ruler" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "cheap-ruler" : "2.5.1"
+      "cheap-ruler" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

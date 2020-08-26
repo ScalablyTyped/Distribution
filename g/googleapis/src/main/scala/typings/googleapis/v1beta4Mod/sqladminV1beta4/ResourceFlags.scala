@@ -27,6 +27,7 @@ class ResourceFlags protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaFlagsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaFlagsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFlagsListResponse] = js.native
   def list(params: ParamsResourceFlagsList): GaxiosPromise[SchemaFlagsListResponse] = js.native
   def list(params: ParamsResourceFlagsList, callback: BodyResponseCallback[SchemaFlagsListResponse]): Unit = js.native
   def list(

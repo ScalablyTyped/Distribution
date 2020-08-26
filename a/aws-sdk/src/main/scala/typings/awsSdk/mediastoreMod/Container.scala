@@ -34,22 +34,46 @@ trait Container extends js.Object {
 
 object Container {
   @scala.inline
-  def apply(
-    ARN: ContainerARN = null,
-    AccessLoggingEnabled: js.UndefOr[ContainerAccessLoggingEnabled] = js.undefined,
-    CreationTime: TimeStamp = null,
-    Endpoint: Endpoint = null,
-    Name: ContainerName = null,
-    Status: ContainerStatus = null
-  ): Container = {
+  def apply(): Container = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(AccessLoggingEnabled)) __obj.updateDynamic("AccessLoggingEnabled")(AccessLoggingEnabled.get.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
+  @scala.inline
+  implicit class ContainerOps[Self <: Container] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: ContainerARN): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setAccessLoggingEnabled(value: ContainerAccessLoggingEnabled): Self = this.set("AccessLoggingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessLoggingEnabled: Self = this.set("AccessLoggingEnabled", js.undefined)
+    @scala.inline
+    def setCreationTime(value: TimeStamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setEndpoint(value: Endpoint): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setName(value: ContainerName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStatus(value: ContainerStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

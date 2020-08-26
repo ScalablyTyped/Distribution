@@ -12,7 +12,7 @@ QuickSettings is a JavaScript library for making a quick settings panel to contr
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 756 |
+| # downloads        | 707 |
 | # stars            | 1 |
 
 ## Links

@@ -34,21 +34,50 @@ trait TestAuthorizationRequest extends js.Object {
 
 object TestAuthorizationRequest {
   @scala.inline
-  def apply(
-    authInfos: AuthInfos,
-    clientId: ClientId = null,
-    cognitoIdentityPoolId: CognitoIdentityPoolId = null,
-    policyNamesToAdd: PolicyNames = null,
-    policyNamesToSkip: PolicyNames = null,
-    principal: Principal = null
-  ): TestAuthorizationRequest = {
+  def apply(authInfos: AuthInfos): TestAuthorizationRequest = {
     val __obj = js.Dynamic.literal(authInfos = authInfos.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (cognitoIdentityPoolId != null) __obj.updateDynamic("cognitoIdentityPoolId")(cognitoIdentityPoolId.asInstanceOf[js.Any])
-    if (policyNamesToAdd != null) __obj.updateDynamic("policyNamesToAdd")(policyNamesToAdd.asInstanceOf[js.Any])
-    if (policyNamesToSkip != null) __obj.updateDynamic("policyNamesToSkip")(policyNamesToSkip.asInstanceOf[js.Any])
-    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestAuthorizationRequest]
   }
+  @scala.inline
+  implicit class TestAuthorizationRequestOps[Self <: TestAuthorizationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthInfosVarargs(value: AuthInfo*): Self = this.set("authInfos", js.Array(value :_*))
+    @scala.inline
+    def setAuthInfos(value: AuthInfos): Self = this.set("authInfos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientId(value: ClientId): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setCognitoIdentityPoolId(value: CognitoIdentityPoolId): Self = this.set("cognitoIdentityPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCognitoIdentityPoolId: Self = this.set("cognitoIdentityPoolId", js.undefined)
+    @scala.inline
+    def setPolicyNamesToAddVarargs(value: PolicyName*): Self = this.set("policyNamesToAdd", js.Array(value :_*))
+    @scala.inline
+    def setPolicyNamesToAdd(value: PolicyNames): Self = this.set("policyNamesToAdd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyNamesToAdd: Self = this.set("policyNamesToAdd", js.undefined)
+    @scala.inline
+    def setPolicyNamesToSkipVarargs(value: PolicyName*): Self = this.set("policyNamesToSkip", js.Array(value :_*))
+    @scala.inline
+    def setPolicyNamesToSkip(value: PolicyNames): Self = this.set("policyNamesToSkip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyNamesToSkip: Self = this.set("policyNamesToSkip", js.undefined)
+    @scala.inline
+    def setPrincipal(value: Principal): Self = this.set("principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipal: Self = this.set("principal", js.undefined)
+  }
+  
 }
 

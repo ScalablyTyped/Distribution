@@ -30,7 +30,7 @@ object canonicalizerMod extends js.Object {
     var withComments: Boolean = js.native
     def Canonicalize(node: Node): String = js.native
     def InclusiveNamespacesPrefixList: String = js.native
-    def InclusiveNamespacesPrefixList(value: String): js.Any = js.native
+    def InclusiveNamespacesPrefixList_=(value: String): Unit = js.native
     /* protected */ def NormalizeString(input: String, `type`: XmlNodeType): String = js.native
     /* protected */ def NormalizeString(input: Null, `type`: XmlNodeType): String = js.native
     /* protected */ def WriteAttributesAxis(node: Element): Unit = js.native

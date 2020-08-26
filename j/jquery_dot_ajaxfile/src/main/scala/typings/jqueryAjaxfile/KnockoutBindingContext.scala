@@ -26,6 +26,7 @@ trait KnockoutBindingContext extends js.Object {
   @JSName("$root")
   var $root: js.Any = js.native
   def createChildContext(dataItemOrAccessor: js.Any): js.Any = js.native
+  def createChildContext(dataItemOrAccessor: js.Any, dataItemAlias: js.UndefOr[scala.Nothing], extendCallback: js.Function): js.Any = js.native
   def createChildContext(dataItemOrAccessor: js.Any, dataItemAlias: js.Any): js.Any = js.native
   def createChildContext(dataItemOrAccessor: js.Any, dataItemAlias: js.Any, extendCallback: js.Function): js.Any = js.native
   def extend(properties: js.Any): js.Any = js.native

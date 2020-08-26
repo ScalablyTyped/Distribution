@@ -9,16 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("monaco-editor", "Uri")
 @js.native
 class Uri () extends UriComponents {
-  /* CompleteClass */
-  override var authority: String = js.native
-  /* CompleteClass */
-  override var fragment: String = js.native
-  /* CompleteClass */
-  override var path: String = js.native
-  /* CompleteClass */
-  override var query: String = js.native
-  /* CompleteClass */
-  override var scheme: String = js.native
   /**
     * Returns a string representing the corresponding file system path of this Uri.
     * Will handle UNC paths, normalizes windows drive letters to lower-case, and uses the

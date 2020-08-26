@@ -22,16 +22,34 @@ trait AwsCredentials extends js.Object {
 
 object AwsCredentials {
   @scala.inline
-  def apply(
-    AccessKeyId: NonEmptyString = null,
-    SecretAccessKey: NonEmptyString = null,
-    SessionToken: NonEmptyString = null
-  ): AwsCredentials = {
+  def apply(): AwsCredentials = {
     val __obj = js.Dynamic.literal()
-    if (AccessKeyId != null) __obj.updateDynamic("AccessKeyId")(AccessKeyId.asInstanceOf[js.Any])
-    if (SecretAccessKey != null) __obj.updateDynamic("SecretAccessKey")(SecretAccessKey.asInstanceOf[js.Any])
-    if (SessionToken != null) __obj.updateDynamic("SessionToken")(SessionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsCredentials]
   }
+  @scala.inline
+  implicit class AwsCredentialsOps[Self <: AwsCredentials] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessKeyId(value: NonEmptyString): Self = this.set("AccessKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKeyId: Self = this.set("AccessKeyId", js.undefined)
+    @scala.inline
+    def setSecretAccessKey(value: NonEmptyString): Self = this.set("SecretAccessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretAccessKey: Self = this.set("SecretAccessKey", js.undefined)
+    @scala.inline
+    def setSessionToken(value: NonEmptyString): Self = this.set("SessionToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionToken: Self = this.set("SessionToken", js.undefined)
+  }
+  
 }
 

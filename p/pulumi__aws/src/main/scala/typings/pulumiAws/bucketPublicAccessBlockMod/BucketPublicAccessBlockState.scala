@@ -36,20 +36,42 @@ trait BucketPublicAccessBlockState extends js.Object {
 
 object BucketPublicAccessBlockState {
   @scala.inline
-  def apply(
-    blockPublicAcls: Input[Boolean] = null,
-    blockPublicPolicy: Input[Boolean] = null,
-    bucket: Input[String] = null,
-    ignorePublicAcls: Input[Boolean] = null,
-    restrictPublicBuckets: Input[Boolean] = null
-  ): BucketPublicAccessBlockState = {
+  def apply(): BucketPublicAccessBlockState = {
     val __obj = js.Dynamic.literal()
-    if (blockPublicAcls != null) __obj.updateDynamic("blockPublicAcls")(blockPublicAcls.asInstanceOf[js.Any])
-    if (blockPublicPolicy != null) __obj.updateDynamic("blockPublicPolicy")(blockPublicPolicy.asInstanceOf[js.Any])
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    if (ignorePublicAcls != null) __obj.updateDynamic("ignorePublicAcls")(ignorePublicAcls.asInstanceOf[js.Any])
-    if (restrictPublicBuckets != null) __obj.updateDynamic("restrictPublicBuckets")(restrictPublicBuckets.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketPublicAccessBlockState]
   }
+  @scala.inline
+  implicit class BucketPublicAccessBlockStateOps[Self <: BucketPublicAccessBlockState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockPublicAcls(value: Input[Boolean]): Self = this.set("blockPublicAcls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockPublicAcls: Self = this.set("blockPublicAcls", js.undefined)
+    @scala.inline
+    def setBlockPublicPolicy(value: Input[Boolean]): Self = this.set("blockPublicPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockPublicPolicy: Self = this.set("blockPublicPolicy", js.undefined)
+    @scala.inline
+    def setBucket(value: Input[String]): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("bucket", js.undefined)
+    @scala.inline
+    def setIgnorePublicAcls(value: Input[Boolean]): Self = this.set("ignorePublicAcls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnorePublicAcls: Self = this.set("ignorePublicAcls", js.undefined)
+    @scala.inline
+    def setRestrictPublicBuckets(value: Input[Boolean]): Self = this.set("restrictPublicBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictPublicBuckets: Self = this.set("restrictPublicBuckets", js.undefined)
+  }
+  
 }
 

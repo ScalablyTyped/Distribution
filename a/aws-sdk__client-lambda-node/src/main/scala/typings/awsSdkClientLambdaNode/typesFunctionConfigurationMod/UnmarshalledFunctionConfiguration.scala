@@ -1,17 +1,5 @@
 package typings.awsSdkClientLambdaNode.typesFunctionConfigurationMod
 
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.`nodejs4Dot3-edge`
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.dotnetcore1Dot0
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.dotnetcore2Dot0
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.dotnetcore2Dot1
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.go1Dotx
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.java8
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.nodejs
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.nodejs4Dot3
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.nodejs6Dot10
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.nodejs8Dot10
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.python2Dot7
-import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.python3Dot6
 import typings.awsSdkClientLambdaNode.typesDeadLetterConfigMod.UnmarshalledDeadLetterConfig
 import typings.awsSdkClientLambdaNode.typesEnvironmentResponseMod.UnmarshalledEnvironmentResponse
 import typings.awsSdkClientLambdaNode.typesTracingConfigResponseMod.UnmarshalledTracingConfigResponse
@@ -20,73 +8,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledFunctionConfiguration extends FunctionConfiguration {
   /**
     * <p>The function's dead letter queue.</p>
     */
   @JSName("DeadLetterConfig")
-  var DeadLetterConfig_UnmarshalledFunctionConfiguration: js.UndefOr[UnmarshalledDeadLetterConfig] = js.undefined
+  var DeadLetterConfig_UnmarshalledFunctionConfiguration: js.UndefOr[UnmarshalledDeadLetterConfig] = js.native
   /**
     * <p>The function's environment variables.</p>
     */
   @JSName("Environment")
-  var Environment_UnmarshalledFunctionConfiguration: js.UndefOr[UnmarshalledEnvironmentResponse] = js.undefined
+  var Environment_UnmarshalledFunctionConfiguration: js.UndefOr[UnmarshalledEnvironmentResponse] = js.native
   /**
     * <p>The function's AWS X-Ray tracing configuration.</p>
     */
   @JSName("TracingConfig")
-  var TracingConfig_UnmarshalledFunctionConfiguration: js.UndefOr[UnmarshalledTracingConfigResponse] = js.undefined
+  var TracingConfig_UnmarshalledFunctionConfiguration: js.UndefOr[UnmarshalledTracingConfigResponse] = js.native
   /**
     * <p>The function's networking configuration.</p>
     */
   @JSName("VpcConfig")
-  var VpcConfig_UnmarshalledFunctionConfiguration: js.UndefOr[UnmarshalledVpcConfigResponse] = js.undefined
+  var VpcConfig_UnmarshalledFunctionConfiguration: js.UndefOr[UnmarshalledVpcConfigResponse] = js.native
 }
 
 object UnmarshalledFunctionConfiguration {
   @scala.inline
-  def apply(
-    CodeSha256: String = null,
-    CodeSize: js.UndefOr[Double] = js.undefined,
-    DeadLetterConfig: UnmarshalledDeadLetterConfig = null,
-    Description: String = null,
-    Environment: UnmarshalledEnvironmentResponse = null,
-    FunctionArn: String = null,
-    FunctionName: String = null,
-    Handler: String = null,
-    KMSKeyArn: String = null,
-    LastModified: String = null,
-    MasterArn: String = null,
-    MemorySize: js.UndefOr[Double] = js.undefined,
-    RevisionId: String = null,
-    Role: String = null,
-    Runtime: nodejs | nodejs4Dot3 | nodejs6Dot10 | nodejs8Dot10 | java8 | python2Dot7 | python3Dot6 | dotnetcore1Dot0 | dotnetcore2Dot0 | dotnetcore2Dot1 | `nodejs4Dot3-edge` | go1Dotx | String = null,
-    Timeout: js.UndefOr[Double] = js.undefined,
-    TracingConfig: UnmarshalledTracingConfigResponse = null,
-    Version: String = null,
-    VpcConfig: UnmarshalledVpcConfigResponse = null
-  ): UnmarshalledFunctionConfiguration = {
+  def apply(): UnmarshalledFunctionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (CodeSha256 != null) __obj.updateDynamic("CodeSha256")(CodeSha256.asInstanceOf[js.Any])
-    if (!js.isUndefined(CodeSize)) __obj.updateDynamic("CodeSize")(CodeSize.get.asInstanceOf[js.Any])
-    if (DeadLetterConfig != null) __obj.updateDynamic("DeadLetterConfig")(DeadLetterConfig.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
-    if (FunctionArn != null) __obj.updateDynamic("FunctionArn")(FunctionArn.asInstanceOf[js.Any])
-    if (FunctionName != null) __obj.updateDynamic("FunctionName")(FunctionName.asInstanceOf[js.Any])
-    if (Handler != null) __obj.updateDynamic("Handler")(Handler.asInstanceOf[js.Any])
-    if (KMSKeyArn != null) __obj.updateDynamic("KMSKeyArn")(KMSKeyArn.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (MasterArn != null) __obj.updateDynamic("MasterArn")(MasterArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(MemorySize)) __obj.updateDynamic("MemorySize")(MemorySize.get.asInstanceOf[js.Any])
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
-    if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
-    if (Runtime != null) __obj.updateDynamic("Runtime")(Runtime.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
-    if (TracingConfig != null) __obj.updateDynamic("TracingConfig")(TracingConfig.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledFunctionConfiguration]
   }
+  @scala.inline
+  implicit class UnmarshalledFunctionConfigurationOps[Self <: UnmarshalledFunctionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeadLetterConfig(value: UnmarshalledDeadLetterConfig): Self = this.set("DeadLetterConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeadLetterConfig: Self = this.set("DeadLetterConfig", js.undefined)
+    @scala.inline
+    def setEnvironment(value: UnmarshalledEnvironmentResponse): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    @scala.inline
+    def setTracingConfig(value: UnmarshalledTracingConfigResponse): Self = this.set("TracingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTracingConfig: Self = this.set("TracingConfig", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: UnmarshalledVpcConfigResponse): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

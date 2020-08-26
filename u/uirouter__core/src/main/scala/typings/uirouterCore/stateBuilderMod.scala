@@ -26,16 +26,24 @@ object stateBuilderMod extends js.Object {
       */
     def build(state: StateObject): StateObject = js.native
     /**
+      * Gets the registered builder functions for a given property of [[StateObject]].
+      *
+      * @param property The name of the State property being registered for.
+      * @returns the registered builder(s).
+      *          note: for backwards compatibility, this may be a single builder or an array of builders
+      */
+    def builder(property: String): BuilderFunction | js.Array[BuilderFunction] = js.native
+    /**
       * Registers a [[BuilderFunction]] for a specific [[StateObject]] property (e.g., `parent`, `url`, or `path`).
       * More than one BuilderFunction can be registered for a given property.
       *
       * The BuilderFunction(s) will be used to define the property on any subsequently built [[StateObject]] objects.
       *
-      * @param name The name of the State property being registered for.
+      * @param property The name of the State property being registered for.
       * @param fn The BuilderFunction which will be used to build the State property
       * @returns a function which deregisters the BuilderFunction
       */
-    def builder(name: String, fn: BuilderFunction): BuilderFunction | js.Array[BuilderFunction] | js.Function = js.native
+    def builder(property: String, fn: BuilderFunction): js.Function = js.native
     def name(state: StateObject): String = js.native
     def parentName(state: StateObject): String = js.native
   }

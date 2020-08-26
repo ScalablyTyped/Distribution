@@ -120,6 +120,7 @@ trait KeyboardPlugin extends EventEmitter {
   def addCapture(keycode: js.Array[_ | integer]): this.type = js.native
   def addCapture(keycode: integer): this.type = js.native
   def addKey(key: String): Key = js.native
+  def addKey(key: String, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): Key = js.native
   def addKey(key: String, enableCapture: Boolean): Key = js.native
   def addKey(key: String, enableCapture: Boolean, emitOnRepeat: Boolean): Key = js.native
   /**
@@ -133,12 +134,15 @@ trait KeyboardPlugin extends EventEmitter {
     * @param emitOnRepeat Controls if the Key will continuously emit a 'down' event while being held down (true), or emit the event just once (false, the default). Default false.
     */
   def addKey(key: Key): Key = js.native
+  def addKey(key: Key, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): Key = js.native
   def addKey(key: Key, enableCapture: Boolean): Key = js.native
   def addKey(key: Key, enableCapture: Boolean, emitOnRepeat: Boolean): Key = js.native
   def addKey(key: integer): Key = js.native
+  def addKey(key: integer, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): Key = js.native
   def addKey(key: integer, enableCapture: Boolean): Key = js.native
   def addKey(key: integer, enableCapture: Boolean, emitOnRepeat: Boolean): Key = js.native
   def addKeys(keys: String): js.Object = js.native
+  def addKeys(keys: String, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): js.Object = js.native
   def addKeys(keys: String, enableCapture: Boolean): js.Object = js.native
   def addKeys(keys: String, enableCapture: Boolean, emitOnRepeat: Boolean): js.Object = js.native
   /**
@@ -166,6 +170,7 @@ trait KeyboardPlugin extends EventEmitter {
     * @param emitOnRepeat Controls if the Key will continuously emit a 'down' event while being held down (true), or emit the event just once (false, the default). Default false.
     */
   def addKeys(keys: js.Object): js.Object = js.native
+  def addKeys(keys: js.Object, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): js.Object = js.native
   def addKeys(keys: js.Object, enableCapture: Boolean): js.Object = js.native
   def addKeys(keys: js.Object, enableCapture: Boolean, emitOnRepeat: Boolean): js.Object = js.native
   /**
@@ -245,6 +250,12 @@ trait KeyboardPlugin extends EventEmitter {
     * Checks to see if both this plugin and the Scene to which it belongs is active.
     */
   def isActive(): Boolean = js.native
+  /**
+    * Removes all Key objects created by _this_ Keyboard Plugin.
+    * @param destroy Call `Key.destroy` on each removed Key object? Default false.
+    */
+  def removeAllKeys(): this.type = js.native
+  def removeAllKeys(destroy: Boolean): this.type = js.native
   /**
     * Removes an existing key capture.
     * 

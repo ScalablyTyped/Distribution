@@ -73,7 +73,7 @@ trait XmlElement[Parent] extends js.Object {
   /**
     * Sets the name of this element.
     */
-  def name(name: String): js.Any = js.native
+  def name_=(name: String): Unit = js.native
   /**
     * Adds a processing instruction to this element and returns the new
     * processing instruction.

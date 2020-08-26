@@ -19,6 +19,7 @@ trait FoldLine extends js.Object {
   def shiftRow(shift: Double): Unit = js.native
   def split(row: Double, column: Double): FoldLine = js.native
   def walk(callback: js.Function): Unit = js.native
+  def walk(callback: js.Function, endRow: js.UndefOr[scala.Nothing], endColumn: Double): Unit = js.native
   def walk(callback: js.Function, endRow: Double): Unit = js.native
   def walk(callback: js.Function, endRow: Double, endColumn: Double): Unit = js.native
 }

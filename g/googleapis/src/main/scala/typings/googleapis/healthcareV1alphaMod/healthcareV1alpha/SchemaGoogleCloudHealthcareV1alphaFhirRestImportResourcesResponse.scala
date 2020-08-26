@@ -33,18 +33,38 @@ trait SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse extends 
 
 object SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse {
   @scala.inline
-  def apply(
-    errorCount: String = null,
-    inputSize: String = null,
-    name: String = null,
-    successCount: String = null
-  ): SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse = {
+  def apply(): SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse = {
     val __obj = js.Dynamic.literal()
-    if (errorCount != null) __obj.updateDynamic("errorCount")(errorCount.asInstanceOf[js.Any])
-    if (inputSize != null) __obj.updateDynamic("inputSize")(inputSize.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (successCount != null) __obj.updateDynamic("successCount")(successCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponseOps[Self <: SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCount(value: String): Self = this.set("errorCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCount: Self = this.set("errorCount", js.undefined)
+    @scala.inline
+    def setInputSize(value: String): Self = this.set("inputSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputSize: Self = this.set("inputSize", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSuccessCount(value: String): Self = this.set("successCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessCount: Self = this.set("successCount", js.undefined)
+  }
+  
 }
 

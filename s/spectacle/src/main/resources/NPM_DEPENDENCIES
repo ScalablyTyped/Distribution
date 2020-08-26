@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "spectacle" : "5.8.0"
+      "spectacle" : "6.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "spectacle" : "5.8.0"
+      "spectacle" : "6.2.0"
     }
   ],
   "compile-devDependencies" : [

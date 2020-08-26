@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSExternalModuleReference extends Node {
-  var expression: StringLiteral_
+  var expression: StringLiteral_ = js.native
   @JSName("type")
-  var type_TSExternalModuleReference: typings.babelTypes.babelTypesStrings.TSExternalModuleReference
+  var type_TSExternalModuleReference: typings.babelTypes.babelTypesStrings.TSExternalModuleReference = js.native
 }
 
 @JSImport("babel-types", "TSExternalModuleReference")

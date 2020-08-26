@@ -44,24 +44,50 @@ trait SchemaGoogleAppsScriptTypeProcess extends js.Object {
 
 object SchemaGoogleAppsScriptTypeProcess {
   @scala.inline
-  def apply(
-    duration: String = null,
-    functionName: String = null,
-    processStatus: String = null,
-    processType: String = null,
-    projectName: String = null,
-    startTime: String = null,
-    userAccessLevel: String = null
-  ): SchemaGoogleAppsScriptTypeProcess = {
+  def apply(): SchemaGoogleAppsScriptTypeProcess = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
-    if (processStatus != null) __obj.updateDynamic("processStatus")(processStatus.asInstanceOf[js.Any])
-    if (processType != null) __obj.updateDynamic("processType")(processType.asInstanceOf[js.Any])
-    if (projectName != null) __obj.updateDynamic("projectName")(projectName.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (userAccessLevel != null) __obj.updateDynamic("userAccessLevel")(userAccessLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleAppsScriptTypeProcess]
   }
+  @scala.inline
+  implicit class SchemaGoogleAppsScriptTypeProcessOps[Self <: SchemaGoogleAppsScriptTypeProcess] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setFunctionName(value: String): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionName: Self = this.set("functionName", js.undefined)
+    @scala.inline
+    def setProcessStatus(value: String): Self = this.set("processStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessStatus: Self = this.set("processStatus", js.undefined)
+    @scala.inline
+    def setProcessType(value: String): Self = this.set("processType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessType: Self = this.set("processType", js.undefined)
+    @scala.inline
+    def setProjectName(value: String): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectName: Self = this.set("projectName", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setUserAccessLevel(value: String): Self = this.set("userAccessLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAccessLevel: Self = this.set("userAccessLevel", js.undefined)
+  }
+  
 }
 

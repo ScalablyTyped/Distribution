@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Limit extends js.Object {
-  var limit: js.UndefOr[Double] = js.undefined
-  var region: js.UndefOr[String] = js.undefined
-  var startAt: js.UndefOr[String] = js.undefined
+  var limit: js.UndefOr[Double] = js.native
+  var region: js.UndefOr[String] = js.native
+  var startAt: js.UndefOr[String] = js.native
 }
 
 object Limit {
   @scala.inline
-  def apply(limit: js.UndefOr[Double] = js.undefined, region: String = null, startAt: String = null): Limit = {
+  def apply(): Limit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Limit]
   }
+  @scala.inline
+  implicit class LimitOps[Self <: Limit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setStartAt(value: String): Self = this.set("startAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartAt: Self = this.set("startAt", js.undefined)
+  }
+  
 }
 

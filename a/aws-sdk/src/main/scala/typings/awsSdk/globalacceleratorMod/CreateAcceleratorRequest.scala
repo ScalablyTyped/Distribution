@@ -34,20 +34,46 @@ trait CreateAcceleratorRequest extends js.Object {
 
 object CreateAcceleratorRequest {
   @scala.inline
-  def apply(
-    IdempotencyToken: IdempotencyToken,
-    Name: GenericString,
-    Enabled: js.UndefOr[GenericBoolean] = js.undefined,
-    IpAddressType: IpAddressType = null,
-    IpAddresses: IpAddresses = null,
-    Tags: Tags = null
-  ): CreateAcceleratorRequest = {
+  def apply(IdempotencyToken: IdempotencyToken, Name: GenericString): CreateAcceleratorRequest = {
     val __obj = js.Dynamic.literal(IdempotencyToken = IdempotencyToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (IpAddressType != null) __obj.updateDynamic("IpAddressType")(IpAddressType.asInstanceOf[js.Any])
-    if (IpAddresses != null) __obj.updateDynamic("IpAddresses")(IpAddresses.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAcceleratorRequest]
   }
+  @scala.inline
+  implicit class CreateAcceleratorRequestOps[Self <: CreateAcceleratorRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: GenericString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: GenericBoolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setIpAddressType(value: IpAddressType): Self = this.set("IpAddressType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddressType: Self = this.set("IpAddressType", js.undefined)
+    @scala.inline
+    def setIpAddressesVarargs(value: IpAddress*): Self = this.set("IpAddresses", js.Array(value :_*))
+    @scala.inline
+    def setIpAddresses(value: IpAddresses): Self = this.set("IpAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddresses: Self = this.set("IpAddresses", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

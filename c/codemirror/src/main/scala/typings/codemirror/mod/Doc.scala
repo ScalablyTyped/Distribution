@@ -85,9 +85,11 @@ trait Doc extends js.Object {
     *          or can be left off to default to the start of the document
     *  `caseFold`: This is only relevant when matching a string. IT will cause the search to be case-insenstive */
   def getSearchCursor(query: String): SearchCursor = js.native
+  def getSearchCursor(query: String, start: js.UndefOr[scala.Nothing], caseFold: Boolean): SearchCursor = js.native
   def getSearchCursor(query: String, start: Position): SearchCursor = js.native
   def getSearchCursor(query: String, start: Position, caseFold: Boolean): SearchCursor = js.native
   def getSearchCursor(query: RegExp): SearchCursor = js.native
+  def getSearchCursor(query: RegExp, start: js.UndefOr[scala.Nothing], caseFold: Boolean): SearchCursor = js.native
   def getSearchCursor(query: RegExp, start: Position): SearchCursor = js.native
   def getSearchCursor(query: RegExp, start: Position, caseFold: Boolean): SearchCursor = js.native
   /** Get the currently selected code. */
@@ -113,6 +115,8 @@ trait Doc extends js.Object {
   def lastLine(): Double = js.native
   /** Get the number of lines in the editor. */
   def lineCount(): Double = js.native
+  /** Returns the preferred line separator string for this document, as per the option by the same name. When that option is null, the string "\n" is returned. */
+  def lineSeparator(): String = js.native
   /** Create a new document that's linked to the target document. Linked documents will stay in sync (changes to one are also applied to the other) until unlinked. */
   def linkedDoc(options: SharedHist): Doc = js.native
   /** Retrieves a list of all current selections. These will always be sorted, and never overlap (overlapping selections are merged).
@@ -137,9 +141,11 @@ trait Doc extends js.Object {
   /** Replace the part of the document between from and to with the given string.
     from and to must be {line, ch} objects. to can be left off to simply insert the string at position from. */
   def replaceRange(replacement: String, from: Position): Unit = js.native
+  def replaceRange(replacement: String, from: Position, to: js.UndefOr[scala.Nothing], origin: String): Unit = js.native
   def replaceRange(replacement: String, from: Position, to: Position): Unit = js.native
   def replaceRange(replacement: String, from: Position, to: Position, origin: String): Unit = js.native
   def replaceRange(replacement: js.Array[String], from: Position): Unit = js.native
+  def replaceRange(replacement: js.Array[String], from: Position, to: js.UndefOr[scala.Nothing], origin: String): Unit = js.native
   def replaceRange(replacement: js.Array[String], from: Position, to: Position): Unit = js.native
   def replaceRange(replacement: js.Array[String], from: Position, to: Position, origin: String): Unit = js.native
   /** Replace the selection with the given string. By default, the new selection will span the inserted text.
@@ -152,12 +158,14 @@ trait Doc extends js.Object {
   def setBookmark(pos: Position): TextMarker = js.native
   def setBookmark(pos: Position, options: InsertLeft): TextMarker = js.native
   def setCursor(pos: Double): Unit = js.native
+  def setCursor(pos: Double, ch: js.UndefOr[scala.Nothing], options: Bias): Unit = js.native
   def setCursor(pos: Double, ch: Double): Unit = js.native
   def setCursor(pos: Double, ch: Double, options: Bias): Unit = js.native
   /** Set the cursor position. You can either pass a single {line, ch} object, or the line and the character as two separate parameters.
     Will replace all selections with a single, empty selection at the given position.
     The supported options are the same as for setSelection */
   def setCursor(pos: Position): Unit = js.native
+  def setCursor(pos: Position, ch: js.UndefOr[scala.Nothing], options: Bias): Unit = js.native
   def setCursor(pos: Position, ch: Double): Unit = js.native
   def setCursor(pos: Position, ch: Double, options: Bias): Unit = js.native
   /** Sets or clears the 'extending' flag , which acts similar to the shift key,
@@ -170,6 +178,7 @@ trait Doc extends js.Object {
   def setLine(n: Double, text: String): Unit = js.native
   /** Set a single selection range. anchor and head should be {line, ch} objects. head defaults to anchor when not given. */
   def setSelection(anchor: Position): Unit = js.native
+  def setSelection(anchor: Position, head: js.UndefOr[scala.Nothing], options: Bias): Unit = js.native
   def setSelection(anchor: Position, head: Position): Unit = js.native
   def setSelection(anchor: Position, head: Position, options: Bias): Unit = js.native
   /** Sets a new set of selections. There must be at least one selection in the given array. When primary is a
@@ -177,6 +186,7 @@ trait Doc extends js.Object {
     the previous selection, or set to the last range if the previous selection had less ranges than the new one.
     Supports the same options as setSelection. */
   def setSelections(ranges: js.Array[Anchor]): Unit = js.native
+  def setSelections(ranges: js.Array[Anchor], primary: js.UndefOr[scala.Nothing], options: Bias): Unit = js.native
   def setSelections(ranges: js.Array[Anchor], primary: Double): Unit = js.native
   def setSelections(ranges: js.Array[Anchor], primary: Double, options: Bias): Unit = js.native
   /** Set the editor content. */

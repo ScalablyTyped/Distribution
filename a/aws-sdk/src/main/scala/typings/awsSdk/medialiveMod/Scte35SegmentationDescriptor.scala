@@ -56,28 +56,63 @@ object Scte35SegmentationDescriptor {
   @scala.inline
   def apply(
     SegmentationCancelIndicator: Scte35SegmentationCancelIndicator,
-    SegmentationEventId: longMin0Max4294967295,
-    DeliveryRestrictions: Scte35DeliveryRestrictions = null,
-    SegmentNum: js.UndefOr[integerMin0Max255] = js.undefined,
-    SegmentationDuration: js.UndefOr[longMin0Max1099511627775] = js.undefined,
-    SegmentationTypeId: js.UndefOr[integerMin0Max255] = js.undefined,
-    SegmentationUpid: string = null,
-    SegmentationUpidType: js.UndefOr[integerMin0Max255] = js.undefined,
-    SegmentsExpected: js.UndefOr[integerMin0Max255] = js.undefined,
-    SubSegmentNum: js.UndefOr[integerMin0Max255] = js.undefined,
-    SubSegmentsExpected: js.UndefOr[integerMin0Max255] = js.undefined
+    SegmentationEventId: longMin0Max4294967295
   ): Scte35SegmentationDescriptor = {
     val __obj = js.Dynamic.literal(SegmentationCancelIndicator = SegmentationCancelIndicator.asInstanceOf[js.Any], SegmentationEventId = SegmentationEventId.asInstanceOf[js.Any])
-    if (DeliveryRestrictions != null) __obj.updateDynamic("DeliveryRestrictions")(DeliveryRestrictions.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentNum)) __obj.updateDynamic("SegmentNum")(SegmentNum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentationDuration)) __obj.updateDynamic("SegmentationDuration")(SegmentationDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentationTypeId)) __obj.updateDynamic("SegmentationTypeId")(SegmentationTypeId.get.asInstanceOf[js.Any])
-    if (SegmentationUpid != null) __obj.updateDynamic("SegmentationUpid")(SegmentationUpid.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentationUpidType)) __obj.updateDynamic("SegmentationUpidType")(SegmentationUpidType.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentsExpected)) __obj.updateDynamic("SegmentsExpected")(SegmentsExpected.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SubSegmentNum)) __obj.updateDynamic("SubSegmentNum")(SubSegmentNum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SubSegmentsExpected)) __obj.updateDynamic("SubSegmentsExpected")(SubSegmentsExpected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35SegmentationDescriptor]
   }
+  @scala.inline
+  implicit class Scte35SegmentationDescriptorOps[Self <: Scte35SegmentationDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSegmentationCancelIndicator(value: Scte35SegmentationCancelIndicator): Self = this.set("SegmentationCancelIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSegmentationEventId(value: longMin0Max4294967295): Self = this.set("SegmentationEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeliveryRestrictions(value: Scte35DeliveryRestrictions): Self = this.set("DeliveryRestrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryRestrictions: Self = this.set("DeliveryRestrictions", js.undefined)
+    @scala.inline
+    def setSegmentNum(value: integerMin0Max255): Self = this.set("SegmentNum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentNum: Self = this.set("SegmentNum", js.undefined)
+    @scala.inline
+    def setSegmentationDuration(value: longMin0Max1099511627775): Self = this.set("SegmentationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentationDuration: Self = this.set("SegmentationDuration", js.undefined)
+    @scala.inline
+    def setSegmentationTypeId(value: integerMin0Max255): Self = this.set("SegmentationTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentationTypeId: Self = this.set("SegmentationTypeId", js.undefined)
+    @scala.inline
+    def setSegmentationUpid(value: string): Self = this.set("SegmentationUpid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentationUpid: Self = this.set("SegmentationUpid", js.undefined)
+    @scala.inline
+    def setSegmentationUpidType(value: integerMin0Max255): Self = this.set("SegmentationUpidType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentationUpidType: Self = this.set("SegmentationUpidType", js.undefined)
+    @scala.inline
+    def setSegmentsExpected(value: integerMin0Max255): Self = this.set("SegmentsExpected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentsExpected: Self = this.set("SegmentsExpected", js.undefined)
+    @scala.inline
+    def setSubSegmentNum(value: integerMin0Max255): Self = this.set("SubSegmentNum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubSegmentNum: Self = this.set("SubSegmentNum", js.undefined)
+    @scala.inline
+    def setSubSegmentsExpected(value: integerMin0Max255): Self = this.set("SubSegmentsExpected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubSegmentsExpected: Self = this.set("SubSegmentsExpected", js.undefined)
+  }
+  
 }
 

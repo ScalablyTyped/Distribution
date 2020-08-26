@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ui-select"
-version := "0.19.8-dt-20200515Z-dfdca6"
-scalaVersion := "2.13.2"
+version := "0.19.8-dt-20200515Z-32074b"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

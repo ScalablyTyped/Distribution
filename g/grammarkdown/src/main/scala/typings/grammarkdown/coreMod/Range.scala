@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Range extends js.Object {
-  var end: Position
-  var start: Position
+  var end: Position = js.native
+  var start: Position = js.native
 }
 
 @JSImport("grammarkdown/dist/core", "Range")

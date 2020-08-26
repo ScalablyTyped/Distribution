@@ -14,10 +14,28 @@ trait GetUsageTotalsResponse extends js.Object {
 
 object GetUsageTotalsResponse {
   @scala.inline
-  def apply(usageTotals: listOfUsageTotal = null): GetUsageTotalsResponse = {
+  def apply(): GetUsageTotalsResponse = {
     val __obj = js.Dynamic.literal()
-    if (usageTotals != null) __obj.updateDynamic("usageTotals")(usageTotals.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsageTotalsResponse]
   }
+  @scala.inline
+  implicit class GetUsageTotalsResponseOps[Self <: GetUsageTotalsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUsageTotalsVarargs(value: UsageTotal*): Self = this.set("usageTotals", js.Array(value :_*))
+    @scala.inline
+    def setUsageTotals(value: listOfUsageTotal): Self = this.set("usageTotals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsageTotals: Self = this.set("usageTotals", js.undefined)
+  }
+  
 }
 

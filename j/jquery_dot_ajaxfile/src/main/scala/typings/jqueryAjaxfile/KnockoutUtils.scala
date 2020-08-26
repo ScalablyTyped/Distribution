@@ -67,6 +67,7 @@ trait KnockoutUtils extends js.Object {
   def stringTokenize(str: String, delimiter: String): js.Array[String] = js.native
   def stringTrim(str: String): String = js.native
   def stringifyJson(data: js.Any): String = js.native
+  def stringifyJson(data: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
   def stringifyJson(data: js.Any, replacer: js.Function): String = js.native
   def stringifyJson(data: js.Any, replacer: js.Function, space: String): String = js.native
   def tagNameLower(element: js.Any): String = js.native

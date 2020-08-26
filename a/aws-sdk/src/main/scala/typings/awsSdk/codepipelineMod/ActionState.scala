@@ -30,20 +30,42 @@ trait ActionState extends js.Object {
 
 object ActionState {
   @scala.inline
-  def apply(
-    actionName: ActionName = null,
-    currentRevision: ActionRevision = null,
-    entityUrl: Url = null,
-    latestExecution: ActionExecution = null,
-    revisionUrl: Url = null
-  ): ActionState = {
+  def apply(): ActionState = {
     val __obj = js.Dynamic.literal()
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
-    if (currentRevision != null) __obj.updateDynamic("currentRevision")(currentRevision.asInstanceOf[js.Any])
-    if (entityUrl != null) __obj.updateDynamic("entityUrl")(entityUrl.asInstanceOf[js.Any])
-    if (latestExecution != null) __obj.updateDynamic("latestExecution")(latestExecution.asInstanceOf[js.Any])
-    if (revisionUrl != null) __obj.updateDynamic("revisionUrl")(revisionUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionState]
   }
+  @scala.inline
+  implicit class ActionStateOps[Self <: ActionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionName(value: ActionName): Self = this.set("actionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionName: Self = this.set("actionName", js.undefined)
+    @scala.inline
+    def setCurrentRevision(value: ActionRevision): Self = this.set("currentRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentRevision: Self = this.set("currentRevision", js.undefined)
+    @scala.inline
+    def setEntityUrl(value: Url): Self = this.set("entityUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityUrl: Self = this.set("entityUrl", js.undefined)
+    @scala.inline
+    def setLatestExecution(value: ActionExecution): Self = this.set("latestExecution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestExecution: Self = this.set("latestExecution", js.undefined)
+    @scala.inline
+    def setRevisionUrl(value: Url): Self = this.set("revisionUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionUrl: Self = this.set("revisionUrl", js.undefined)
+  }
+  
 }
 

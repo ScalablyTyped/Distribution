@@ -1,8 +1,6 @@
 package typings.androiduix.uk.co.senab.photoview
 
 import typings.androiduix.android.graphics.Matrix
-import typings.androiduix.android.view.MotionEvent
-import typings.androiduix.android.view.View
 import typings.androiduix.android.view.View.OnTouchListener
 import typings.androiduix.android.view.ViewTreeObserver.OnGlobalLayoutListener
 import typings.androiduix.android.widget.ImageView
@@ -11,15 +9,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("uk.co.senab.photoview.PhotoViewAttacher")
 @js.native
-class PhotoViewAttacher_ protected ()
+trait PhotoViewAttacher_
   extends IPhotoView
      with OnTouchListener
      with OnGestureListener
      with OnGlobalLayoutListener {
-  def this(imageView: ImageView) = this()
-  def this(imageView: ImageView, zoomable: Boolean) = this()
   var ZOOM_DURATION: Double = js.native
   var mAllowParentInterceptOnEdge: js.Any = js.native
   var mBaseMatrix: js.Any = js.native
@@ -58,22 +53,10 @@ class PhotoViewAttacher_ protected ()
   /* private */ def getImageViewHeight(imageView: js.Any): js.Any = js.native
   /* private */ def getImageViewWidth(imageView: js.Any): js.Any = js.native
   /* private */ def getValue(matrix: js.Any, whichValue: js.Any): js.Any = js.native
-  /* CompleteClass */
-  override def onDrag(dx: Double, dy: Double): Unit = js.native
-  /* CompleteClass */
-  override def onFling(startX: Double, startY: Double, velocityX: Double, velocityY: Double): Unit = js.native
-  /* CompleteClass */
-  override def onGlobalLayout(): js.Any = js.native
-  /* CompleteClass */
-  override def onScale(scaleFactor: Double, focusX: Double, focusY: Double): Unit = js.native
-  /* CompleteClass */
-  override def onTouch(v: View, event: MotionEvent): Unit = js.native
   /* private */ def resetMatrix(): js.Any = js.native
   /* private */ def setImageViewMatrix(matrix: js.Any): js.Any = js.native
   def setScale(scale: Double, focalX: Double, focalY: Double): Unit = js.native
-  /* private */ def setScale_2(scale: js.Any): js.Any = js.native
   /* private */ def setScale_2(scale: js.Any, animate: js.Any): js.Any = js.native
-  /* private */ def setScale_4(scale: js.Any, focalX: js.Any, focalY: js.Any): js.Any = js.native
   /* private */ def setScale_4(scale: js.Any, focalX: js.Any, focalY: js.Any, animate: js.Any): js.Any = js.native
   def update(): Unit = js.native
   /* private */ def updateBaseMatrix(d: js.Any): js.Any = js.native

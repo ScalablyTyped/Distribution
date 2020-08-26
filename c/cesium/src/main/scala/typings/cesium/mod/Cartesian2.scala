@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Cartesian2 () extends Packable {
   def this(x: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
   var x: Double = js.native
   var y: Double = js.native
@@ -35,11 +36,13 @@ object Cartesian2 extends js.Object {
   def divideByScalar(cartesian: Cartesian2, scalar: Double, result: Cartesian2): Cartesian2 = js.native
   def dot(left: Cartesian2, right: Cartesian2): Double = js.native
   def equals(): Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: Cartesian2): Boolean = js.native
   def equals(left: Cartesian2): Boolean = js.native
   def equals(left: Cartesian2, right: Cartesian2): Boolean = js.native
   def equalsEpsilon(left: Cartesian2, right: Cartesian2, relativeEpsilon: Double): Boolean = js.native
   def equalsEpsilon(left: Cartesian2, right: Cartesian2, relativeEpsilon: Double, absoluteEpsilon: Double): Boolean = js.native
   def fromArray(array: js.Array[Double]): Cartesian2 = js.native
+  def fromArray(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Cartesian2): Cartesian2 = js.native
   def fromArray(array: js.Array[Double], startingIndex: Double): Cartesian2 = js.native
   def fromArray(array: js.Array[Double], startingIndex: Double, result: Cartesian2): Cartesian2 = js.native
   def fromCartesian3(cartesian: Cartesian3): Cartesian2 = js.native
@@ -64,6 +67,7 @@ object Cartesian2 extends js.Object {
   def pack(value: Cartesian2, array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
   def subtract(left: Cartesian2, right: Cartesian2, result: Cartesian2): Cartesian2 = js.native
   def unpack(array: js.Array[Double]): Cartesian2 = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Cartesian2): Cartesian2 = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): Cartesian2 = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: Cartesian2): Cartesian2 = js.native
 }

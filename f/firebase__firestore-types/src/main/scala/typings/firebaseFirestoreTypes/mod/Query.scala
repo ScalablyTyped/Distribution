@@ -23,6 +23,11 @@ class Query[T] protected () extends js.Object {
   def onSnapshot(onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
+    onError: js.UndefOr[scala.Nothing],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
+  def onSnapshot(
+    onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
     onError: js.Function1[/* error */ Error, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
@@ -32,6 +37,12 @@ class Query[T] protected () extends js.Object {
   ): js.Function0[Unit] = js.native
   def onSnapshot(options: SnapshotListenOptions, observer: CompleteError[T]): js.Function0[Unit] = js.native
   def onSnapshot(options: SnapshotListenOptions, onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit]): js.Function0[Unit] = js.native
+  def onSnapshot(
+    options: SnapshotListenOptions,
+    onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
+    onError: js.UndefOr[scala.Nothing],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],

@@ -12,7 +12,7 @@ A specification backed popover for react
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 32 |
-| # downloads        | 1343514 |
+| # downloads        | 1432130 |
 | # stars            | 2 |
 
 ## Links

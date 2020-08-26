@@ -14,10 +14,26 @@ trait PutEncryptionConfigResult extends js.Object {
 
 object PutEncryptionConfigResult {
   @scala.inline
-  def apply(EncryptionConfig: EncryptionConfig = null): PutEncryptionConfigResult = {
+  def apply(): PutEncryptionConfigResult = {
     val __obj = js.Dynamic.literal()
-    if (EncryptionConfig != null) __obj.updateDynamic("EncryptionConfig")(EncryptionConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEncryptionConfigResult]
   }
+  @scala.inline
+  implicit class PutEncryptionConfigResultOps[Self <: PutEncryptionConfigResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptionConfig(value: EncryptionConfig): Self = this.set("EncryptionConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionConfig: Self = this.set("EncryptionConfig", js.undefined)
+  }
+  
 }
 

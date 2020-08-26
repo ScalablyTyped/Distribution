@@ -4,75 +4,128 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddressU extends js.Object {
-  var addressU: js.UndefOr[Double] = js.undefined
-  var addressV: js.UndefOr[Double] = js.undefined
-  var addressW: js.UndefOr[Double] = js.undefined
-  var anisotropy: js.UndefOr[Double] = js.undefined
-  var compareFunc: js.UndefOr[Double] = js.undefined
-  var compareOnRead: js.UndefOr[Boolean] = js.undefined
-  var cubemap: js.UndefOr[Boolean] = js.undefined
-  var depth: js.UndefOr[Double] = js.undefined
-  var fixCubemapSeams: js.UndefOr[Boolean] = js.undefined
-  var flipY: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var magFilter: js.UndefOr[Double] = js.undefined
-  var minFilter: js.UndefOr[Double] = js.undefined
-  var mipmaps: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var premultiplyAlpha: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var volume: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var addressU: js.UndefOr[Double] = js.native
+  var addressV: js.UndefOr[Double] = js.native
+  var addressW: js.UndefOr[Double] = js.native
+  var anisotropy: js.UndefOr[Double] = js.native
+  var compareFunc: js.UndefOr[Double] = js.native
+  var compareOnRead: js.UndefOr[Boolean] = js.native
+  var cubemap: js.UndefOr[Boolean] = js.native
+  var depth: js.UndefOr[Double] = js.native
+  var fixCubemapSeams: js.UndefOr[Boolean] = js.native
+  var flipY: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var magFilter: js.UndefOr[Double] = js.native
+  var minFilter: js.UndefOr[Double] = js.native
+  var mipmaps: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
+  var premultiplyAlpha: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var volume: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object AddressU {
   @scala.inline
-  def apply(
-    addressU: js.UndefOr[Double] = js.undefined,
-    addressV: js.UndefOr[Double] = js.undefined,
-    addressW: js.UndefOr[Double] = js.undefined,
-    anisotropy: js.UndefOr[Double] = js.undefined,
-    compareFunc: js.UndefOr[Double] = js.undefined,
-    compareOnRead: js.UndefOr[Boolean] = js.undefined,
-    cubemap: js.UndefOr[Boolean] = js.undefined,
-    depth: js.UndefOr[Double] = js.undefined,
-    fixCubemapSeams: js.UndefOr[Boolean] = js.undefined,
-    flipY: js.UndefOr[Boolean] = js.undefined,
-    format: js.UndefOr[Double] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    magFilter: js.UndefOr[Double] = js.undefined,
-    minFilter: js.UndefOr[Double] = js.undefined,
-    mipmaps: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    premultiplyAlpha: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    volume: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): AddressU = {
+  def apply(): AddressU = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addressU)) __obj.updateDynamic("addressU")(addressU.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(addressV)) __obj.updateDynamic("addressV")(addressV.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(addressW)) __obj.updateDynamic("addressW")(addressW.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(anisotropy)) __obj.updateDynamic("anisotropy")(anisotropy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(compareFunc)) __obj.updateDynamic("compareFunc")(compareFunc.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(compareOnRead)) __obj.updateDynamic("compareOnRead")(compareOnRead.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cubemap)) __obj.updateDynamic("cubemap")(cubemap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixCubemapSeams)) __obj.updateDynamic("fixCubemapSeams")(fixCubemapSeams.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(magFilter)) __obj.updateDynamic("magFilter")(magFilter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minFilter)) __obj.updateDynamic("minFilter")(minFilter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mipmaps)) __obj.updateDynamic("mipmaps")(mipmaps.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(premultiplyAlpha)) __obj.updateDynamic("premultiplyAlpha")(premultiplyAlpha.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressU]
   }
+  @scala.inline
+  implicit class AddressUOps[Self <: AddressU] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressU(value: Double): Self = this.set("addressU", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressU: Self = this.set("addressU", js.undefined)
+    @scala.inline
+    def setAddressV(value: Double): Self = this.set("addressV", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressV: Self = this.set("addressV", js.undefined)
+    @scala.inline
+    def setAddressW(value: Double): Self = this.set("addressW", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressW: Self = this.set("addressW", js.undefined)
+    @scala.inline
+    def setAnisotropy(value: Double): Self = this.set("anisotropy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnisotropy: Self = this.set("anisotropy", js.undefined)
+    @scala.inline
+    def setCompareFunc(value: Double): Self = this.set("compareFunc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompareFunc: Self = this.set("compareFunc", js.undefined)
+    @scala.inline
+    def setCompareOnRead(value: Boolean): Self = this.set("compareOnRead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompareOnRead: Self = this.set("compareOnRead", js.undefined)
+    @scala.inline
+    def setCubemap(value: Boolean): Self = this.set("cubemap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCubemap: Self = this.set("cubemap", js.undefined)
+    @scala.inline
+    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepth: Self = this.set("depth", js.undefined)
+    @scala.inline
+    def setFixCubemapSeams(value: Boolean): Self = this.set("fixCubemapSeams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixCubemapSeams: Self = this.set("fixCubemapSeams", js.undefined)
+    @scala.inline
+    def setFlipY(value: Boolean): Self = this.set("flipY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlipY: Self = this.set("flipY", js.undefined)
+    @scala.inline
+    def setFormat(value: Double): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setMagFilter(value: Double): Self = this.set("magFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMagFilter: Self = this.set("magFilter", js.undefined)
+    @scala.inline
+    def setMinFilter(value: Double): Self = this.set("minFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinFilter: Self = this.set("minFilter", js.undefined)
+    @scala.inline
+    def setMipmaps(value: Boolean): Self = this.set("mipmaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMipmaps: Self = this.set("mipmaps", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPremultiplyAlpha(value: Boolean): Self = this.set("premultiplyAlpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePremultiplyAlpha: Self = this.set("premultiplyAlpha", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVolume(value: Boolean): Self = this.set("volume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolume: Self = this.set("volume", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

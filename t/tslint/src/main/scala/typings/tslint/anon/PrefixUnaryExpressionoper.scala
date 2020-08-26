@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined typescript.typescript.PrefixUnaryExpression & {  operand  :typescript.typescript.NumericLiteral} */
+/* Inlined typescript.typescript.PrefixUnaryExpression & {  operand :typescript.typescript.NumericLiteral} */
 @js.native
 trait PrefixUnaryExpressionoper extends js.Object {
   var _expressionBrand: js.Any = js.native
@@ -54,6 +54,7 @@ trait PrefixUnaryExpressionoper extends js.Object {
   def getLeadingTriviaWidth(sourceFile: SourceFile): Double = js.native
   def getSourceFile(): SourceFile = js.native
   def getStart(): Double = js.native
+  def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
   def getStart(sourceFile: SourceFile): Double = js.native
   def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
   def getText(): String = js.native

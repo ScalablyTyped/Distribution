@@ -25,6 +25,10 @@ class CatalogTable protected () extends CustomResource {
   def this(name: String, args: CatalogTableArgs) = this()
   def this(name: String, args: CatalogTableArgs, opts: CustomResourceOptions) = this()
   /**
+    * The ARN of the Glue Table.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * ID of the Glue Catalog and database to create the table in. If omitted, this defaults to the AWS Account ID plus the database name.
     */
   val catalogId: Output_[String] = js.native
@@ -85,8 +89,10 @@ object CatalogTable extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): CatalogTable = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CatalogTable = js.native
   def get(name: String, id: Input[ID], state: CatalogTableState): CatalogTable = js.native
   def get(name: String, id: Input[ID], state: CatalogTableState, opts: CustomResourceOptions): CatalogTable = js.native
   /**

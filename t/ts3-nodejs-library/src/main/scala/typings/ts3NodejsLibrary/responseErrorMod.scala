@@ -1,8 +1,7 @@
 package typings.ts3NodejsLibrary
 
 import typings.std.Error
-import typings.ts3NodejsLibrary.anon.Extramsg
-import typings.ts3NodejsLibrary.commandMod.Command
+import typings.ts3NodejsLibrary.anon.ExtraMsg
 import typings.ts3NodejsLibrary.responseTypesMod.QueryErrorMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,23 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object responseErrorMod extends js.Object {
   @js.native
-  class ResponseError protected ()
-    extends Error
-       with QueryErrorMessage {
-    def this(error: QueryErrorMessage, source: Command) = this()
-    /* CompleteClass */
-    override var id: Double = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var msg: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    val source: Command = js.native
+  class ResponseError protected () extends Error {
+    def this(error: QueryErrorMessage, stack: String) = this()
+    val extraMsg: js.UndefOr[String] = js.native
+    val failedPermid: js.UndefOr[Double] = js.native
+    val id: String = js.native
+    val msg: String = js.native
     /**
       * returns a json encodeable object for this error
       */
-    def toJSON(): Extramsg = js.native
+    def toJSON(): ExtraMsg = js.native
   }
   
 }

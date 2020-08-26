@@ -17,10 +17,26 @@ trait SchemaFeatureRename extends js.Object {
 
 object SchemaFeatureRename {
   @scala.inline
-  def apply(newName: String = null): SchemaFeatureRename = {
+  def apply(): SchemaFeatureRename = {
     val __obj = js.Dynamic.literal()
-    if (newName != null) __obj.updateDynamic("newName")(newName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFeatureRename]
   }
+  @scala.inline
+  implicit class SchemaFeatureRenameOps[Self <: SchemaFeatureRename] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewName(value: String): Self = this.set("newName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewName: Self = this.set("newName", js.undefined)
+  }
+  
 }
 

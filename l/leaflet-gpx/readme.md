@@ -12,7 +12,7 @@ A Leaflet plugin for showing a GPX track on a map
 | Keywords           | leaflet, gpx, leaflet-gpx, map, gps |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 3404 |
+| # downloads        | 3513 |
 | # stars            | 0 |
 
 ## Links

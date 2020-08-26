@@ -37,6 +37,7 @@ class ResourceVolumes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaVolume] = js.native
   def get(callback: BodyResponseCallback[SchemaVolume]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVolume] = js.native
   def get(params: ParamsResourceVolumesGet): GaxiosPromise[SchemaVolume] = js.native
   def get(params: ParamsResourceVolumesGet, callback: BodyResponseCallback[SchemaVolume]): Unit = js.native
   def get(
@@ -77,6 +78,7 @@ class ResourceVolumes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaVolumes] = js.native
   def list(callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVolumes] = js.native
   def list(params: ParamsResourceVolumesList): GaxiosPromise[SchemaVolumes] = js.native
   def list(params: ParamsResourceVolumesList, callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
   def list(

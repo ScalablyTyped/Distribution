@@ -1,0 +1,22 @@
+package typings.microsoftGraph.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.microsoftGraph.microsoftGraphStrings.file
+  - typings.microsoftGraph.microsoftGraphStrings.item
+  - typings.microsoftGraph.microsoftGraphStrings.reference
+*/
+trait AttachmentType extends js.Object
+
+object AttachmentType {
+  @scala.inline
+  def file: typings.microsoftGraph.microsoftGraphStrings.file = "file".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.file]
+  @scala.inline
+  def item: typings.microsoftGraph.microsoftGraphStrings.item = "item".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.item]
+  @scala.inline
+  def reference: typings.microsoftGraph.microsoftGraphStrings.reference = "reference".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reference]
+}
+

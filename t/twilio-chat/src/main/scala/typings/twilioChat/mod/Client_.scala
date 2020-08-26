@@ -55,7 +55,7 @@ import scala.scalajs.js.annotation._
 /**
   * These options can be passed to {@link Client#createChannel}.
   * @typedef {Object} Client#CreateChannelOptions
-  * @property {Object} [attributes] - Any custom attributes to attach to the Channel
+  * @property {any} [attributes] - Any custom attributes to attach to the Channel
   * @property {String} [friendlyName] - The non-unique display name of the Channel
   * @property {Boolean} [isPrivate] - Whether or not this Channel should be visible to uninvited Clients
   * @property {String} [uniqueName] - The unique identity name of the Channel

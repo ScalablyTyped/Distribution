@@ -9,71 +9,72 @@ import scala.scalajs.js.annotation._
 /**
   * The database record associated with a job.
   */
+@js.native
 trait JobAttributes[T /* <: JobAttributesData */] extends js.Object {
   /**
     * The record identity.
     */
-  var _id: ObjectID_
+  var _id: ObjectID_ = js.native
   /**
     * The job details.
     */
-  var data: T
+  var data: T = js.native
   /**
     * Job's state
     */
-  var disabled: Boolean
+  var disabled: Boolean = js.native
   /**
     * The number of times the job has failed.
     */
-  var failCount: Double
+  var failCount: Double = js.native
   /**
     * The reason the job failed.
     */
-  var failReason: String
+  var failReason: String = js.native
   /**
     * The date/time the job last failed.
     */
-  var failedAt: Date
+  var failedAt: Date = js.native
   /**
     * Date/time the job last finished running.
     */
-  var lastFinishedAt: Date
+  var lastFinishedAt: Date = js.native
   /**
     * Date/time the job was las modified.
     */
-  var lastModifiedBy: String
+  var lastModifiedBy: String = js.native
   /**
     * Date/time the job was last run.
     */
-  var lastRunAt: Date
+  var lastRunAt: Date = js.native
   /**
     * Date/time the job was locked.
     */
-  var lockedAt: Date
+  var lockedAt: Date = js.native
   /**
     * The name of the job.
     */
-  var name: String
+  var name: String = js.native
   /**
     * Date/time the job will run next.
     */
-  var nextRunAt: Date
+  var nextRunAt: Date = js.native
   /**
     * The priority of the job.
     */
-  var priority: Double
+  var priority: Double = js.native
   /**
     * How often the job is repeated using a human-readable or cron format.
     */
-  var repeatInterval: String | Double
+  var repeatInterval: String | Double = js.native
   /**
     * The timezone that conforms to [moment-timezone](http://momentjs.com/timezone/).
     */
-  var repeatTimezone: String
+  var repeatTimezone: String = js.native
   /**
     * The type of the job (single|normal).
     */
-  var `type`: String
+  var `type`: String = js.native
 }
 
 object JobAttributes {
@@ -100,5 +101,50 @@ object JobAttributes {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobAttributes[T]]
   }
+  @scala.inline
+  implicit class JobAttributesOps[Self <: JobAttributes[_], /* <: typings.agenda.mod.JobAttributesData */ T] (val x: Self with JobAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_id(value: ObjectID_): Self = this.set("_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFailCount(value: Double): Self = this.set("failCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFailReason(value: String): Self = this.set("failReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFailedAt(value: Date): Self = this.set("failedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastFinishedAt(value: Date): Self = this.set("lastFinishedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastModifiedBy(value: String): Self = this.set("lastModifiedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastRunAt(value: Date): Self = this.set("lastRunAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLockedAt(value: Date): Self = this.set("lockedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextRunAt(value: Date): Self = this.set("nextRunAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepeatInterval(value: String | Double): Self = this.set("repeatInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepeatTimezone(value: String): Self = this.set("repeatTimezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

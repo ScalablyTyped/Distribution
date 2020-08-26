@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class StemmingTokenizer protected () extends ITokenizer {
   def this(stemmingFunction: StemmingFunction, decoratedTokenizer: ITokenizer) = this()
-  /* CompleteClass */
-  override def tokenize(text: String): js.Array[String] = js.native
 }
 

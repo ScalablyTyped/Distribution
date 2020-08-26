@@ -27,16 +27,34 @@ trait SchemaRichMediaExitOverride extends js.Object {
 
 object SchemaRichMediaExitOverride {
   @scala.inline
-  def apply(
-    clickThroughUrl: SchemaClickThroughUrl = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    exitId: String = null
-  ): SchemaRichMediaExitOverride = {
+  def apply(): SchemaRichMediaExitOverride = {
     val __obj = js.Dynamic.literal()
-    if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (exitId != null) __obj.updateDynamic("exitId")(exitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRichMediaExitOverride]
   }
+  @scala.inline
+  implicit class SchemaRichMediaExitOverrideOps[Self <: SchemaRichMediaExitOverride] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClickThroughUrl(value: SchemaClickThroughUrl): Self = this.set("clickThroughUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickThroughUrl: Self = this.set("clickThroughUrl", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setExitId(value: String): Self = this.set("exitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitId: Self = this.set("exitId", js.undefined)
+  }
+  
 }
 

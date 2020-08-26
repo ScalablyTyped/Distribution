@@ -164,14 +164,16 @@ trait WebMap
   def saveAs(portalItem: PortalItemProperties, options: WebMapSaveAsOptions): js.Promise[PortalItem] = js.native
   def saveAs(portalItem: PortalItem, options: WebMapSaveAsOptions): js.Promise[PortalItem] = js.native
   /**
-    * Update properties of the WebMap related to the view. This should usually be called just before saving a webmap. The following properties are updated from the view: 1. [InitialViewProperties.spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#spatialReference)  Depending on the provided options, the following properties are also updated:  2. [InitialViewProperties.viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#viewpoint) 3. The `thumbnail` of the [PortalItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html)
+    * Update properties of the WebMap related to the view. This should usually be called just before saving a webmap. The following properties are updated from the view: 1. [InitialViewProperties.spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#spatialReference)  Depending on the provided options, the following properties are also updated:  2. The [rotation](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html#rotation), [scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html#scale), and [targetGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html#targetGeometry) properties of [InitialViewProperties.viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#viewpoint) 3. The `thumbnail` of the [PortalItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     *
     * @param view The view to update from.
     * @param options Update options.
-    * @param options.viewpointExcluded When `true`, the initial viewpoint of the view will be updated for the webmap. Defaults to `false`.
-    * @param options.thumbnailExcluded When `true`, the thumbnail will not be updated for the webmap. Defaults to `false`.
+    * @param options.backgroundExcluded When `true`, the view's background will not be updated for the webmap. The default is `false` meaning the background will be updated for the webmap if there is a background.
+    * @param options.viewpointExcluded When `true`, the initial [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#viewpoint) of the view will not be updated for the webmap. Defaults to `false`, meaning the viewpoint will be updated for the webmap. Must set `scalePreserved` to `true` if the view's scale should be updated for the webmap.
+    * @param options.scalePreserved When `true`, the view's scale will be updated for the webmap. Defaults to `false` meaning view's scale will not be updated for the webmap. It is ignored when `viewpointExcluded` is `true`.
+    * @param options.thumbnailExcluded When `true`, the thumbnail will not be updated for the webmap. Defaults to `false` meaning the thumbnail will be updated for the webmap.
     * @param options.thumbnailSize The size of the thumbnail. Defaults to 600x400 (ratio 1.5:1). Note that the thumbnail size may currently not be larger than the size of the view.
     *
     */

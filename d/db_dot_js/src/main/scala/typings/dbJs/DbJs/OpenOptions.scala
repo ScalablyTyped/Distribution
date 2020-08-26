@@ -4,18 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OpenOptions extends js.Object {
-  var schema: js.UndefOr[js.Any] = js.undefined
-  var server: String
-  var version: Double
+  var schema: js.UndefOr[js.Any] = js.native
+  var server: String = js.native
+  var version: Double = js.native
 }
 
 object OpenOptions {
   @scala.inline
-  def apply(server: String, version: Double, schema: js.Any = null): OpenOptions = {
+  def apply(server: String, version: Double): OpenOptions = {
     val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenOptions]
   }
+  @scala.inline
+  implicit class OpenOptionsOps[Self <: OpenOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchema(value: js.Any): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 package typings.pulumiAws.apigatewayMod
 
-import typings.pulumiAws.domainNameMod.DomainNameArgs
-import typings.pulumiAws.domainNameMod.DomainNameState
+import typings.pulumiAws.apigatewayDomainNameMod.DomainNameArgs
+import typings.pulumiAws.apigatewayDomainNameMod.DomainNameState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway", "DomainName")
 @js.native
 class DomainName protected ()
-  extends typings.pulumiAws.domainNameMod.DomainName {
+  extends typings.pulumiAws.apigatewayDomainNameMod.DomainName {
   /**
     * Create a DomainName resource with the given unique name, arguments, and options.
     *
@@ -35,10 +35,12 @@ object DomainName extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  def get(name: String, id: Input[ID]): typings.pulumiAws.domainNameMod.DomainName = js.native
-  def get(name: String, id: Input[ID], state: DomainNameState): typings.pulumiAws.domainNameMod.DomainName = js.native
-  def get(name: String, id: Input[ID], state: DomainNameState, opts: CustomResourceOptions): typings.pulumiAws.domainNameMod.DomainName = js.native
+  def get(name: String, id: Input[ID]): typings.pulumiAws.apigatewayDomainNameMod.DomainName = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.apigatewayDomainNameMod.DomainName = js.native
+  def get(name: String, id: Input[ID], state: DomainNameState): typings.pulumiAws.apigatewayDomainNameMod.DomainName = js.native
+  def get(name: String, id: Input[ID], state: DomainNameState, opts: CustomResourceOptions): typings.pulumiAws.apigatewayDomainNameMod.DomainName = js.native
   /**
     * Returns true if the given object is an instance of DomainName.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.

@@ -41,20 +41,42 @@ trait SchemaDeviceIdentifier extends js.Object {
 
 object SchemaDeviceIdentifier {
   @scala.inline
-  def apply(
-    imei: String = null,
-    manufacturer: String = null,
-    meid: String = null,
-    model: String = null,
-    serialNumber: String = null
-  ): SchemaDeviceIdentifier = {
+  def apply(): SchemaDeviceIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (imei != null) __obj.updateDynamic("imei")(imei.asInstanceOf[js.Any])
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
-    if (meid != null) __obj.updateDynamic("meid")(meid.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeviceIdentifier]
   }
+  @scala.inline
+  implicit class SchemaDeviceIdentifierOps[Self <: SchemaDeviceIdentifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImei(value: String): Self = this.set("imei", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImei: Self = this.set("imei", js.undefined)
+    @scala.inline
+    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    @scala.inline
+    def setMeid(value: String): Self = this.set("meid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeid: Self = this.set("meid", js.undefined)
+    @scala.inline
+    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerialNumber: Self = this.set("serialNumber", js.undefined)
+  }
+  
 }
 

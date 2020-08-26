@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * 通过wx.checkSession() 检测用户登录态是否失效。并决定是否调用wx.login()
   * 重新获取登录态
   */
+@js.native
 trait LoginResponse extends js.Object {
   /**
     * 用户允许登录后，回调内容会带上 code（有效期五分钟），
@@ -25,9 +26,9 @@ trait LoginResponse extends js.Object {
     * 使用code 换取 session_key api，
     * 将 code 换成 openid 和 session_key
     */
-  var code: String
+  var code: String = js.native
   /** 调用结果 */
-  var errMsg: String
+  var errMsg: String = js.native
 }
 
 object LoginResponse {
@@ -36,5 +37,22 @@ object LoginResponse {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginResponse]
   }
+  @scala.inline
+  implicit class LoginResponseOps[Self <: LoginResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -21,6 +21,12 @@ class TreeItem protected () extends js.Object {
   def this(label: String, collapsibleState: TreeItemCollapsibleState) = this()
   def this(resourceUri: Uri, collapsibleState: TreeItemCollapsibleState) = this()
   /**
+    * Accessibility information used when screen reader interacts with this tree item.
+    * Generally, a TreeItem has no need to set the `role` of the accessibilityInformation;
+    * however, there are cases where a TreeItem is not displayed in a tree-like way where setting the `role` may make sense.
+    */
+  var accessibilityInformation: js.UndefOr[AccessibilityInformation] = js.native
+  /**
     * [TreeItemCollapsibleState](#TreeItemCollapsibleState) of the tree item.
     */
   var collapsibleState: js.UndefOr[TreeItemCollapsibleState] = js.native

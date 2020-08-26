@@ -28,12 +28,6 @@ class Util_ () extends js.Object {
     * @return {string} userAgent - The formatted User-Agent string.
     */
   def getUserAgentFromPackageJson(packageJson: PackageJson): String = js.native
-  def handleResp(): Unit = js.native
-  def handleResp(err: Null, resp: Null, body: ResponseBody): Unit = js.native
-  def handleResp(err: Null, resp: Null, body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
-  def handleResp(err: Null, resp: Response[_]): Unit = js.native
-  def handleResp(err: Null, resp: Response[_], body: ResponseBody): Unit = js.native
-  def handleResp(err: Null, resp: Response[_], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
   /**
     * Uniformly process an API response.
     *
@@ -42,10 +36,36 @@ class Util_ () extends js.Object {
     * @param {*} body - Body value.
     * @param {function} callback - The callback function.
     */
+  def handleResp(): Unit = js.native
+  def handleResp(
+    err: Null,
+    resp: js.UndefOr[scala.Nothing],
+    body: js.UndefOr[scala.Nothing],
+    callback: BodyResponseCallback
+  ): Unit = js.native
+  def handleResp(err: Null, resp: js.UndefOr[scala.Nothing], body: ResponseBody): Unit = js.native
+  def handleResp(err: Null, resp: js.UndefOr[scala.Nothing], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Null, resp: Null, body: js.UndefOr[scala.Nothing], callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Null, resp: Null, body: ResponseBody): Unit = js.native
+  def handleResp(err: Null, resp: Null, body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Null, resp: Response[_]): Unit = js.native
+  def handleResp(err: Null, resp: Response[_], body: js.UndefOr[scala.Nothing], callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Null, resp: Response[_], body: ResponseBody): Unit = js.native
+  def handleResp(err: Null, resp: Response[_], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
   def handleResp(err: Error): Unit = js.native
+  def handleResp(
+    err: Error,
+    resp: js.UndefOr[scala.Nothing],
+    body: js.UndefOr[scala.Nothing],
+    callback: BodyResponseCallback
+  ): Unit = js.native
+  def handleResp(err: Error, resp: js.UndefOr[scala.Nothing], body: ResponseBody): Unit = js.native
+  def handleResp(err: Error, resp: js.UndefOr[scala.Nothing], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
+  def handleResp(err: Error, resp: Null, body: js.UndefOr[scala.Nothing], callback: BodyResponseCallback): Unit = js.native
   def handleResp(err: Error, resp: Null, body: ResponseBody): Unit = js.native
   def handleResp(err: Error, resp: Null, body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
   def handleResp(err: Error, resp: Response[_]): Unit = js.native
+  def handleResp(err: Error, resp: Response[_], body: js.UndefOr[scala.Nothing], callback: BodyResponseCallback): Unit = js.native
   def handleResp(err: Error, resp: Response[_], body: ResponseBody): Unit = js.native
   def handleResp(err: Error, resp: Response[_], body: ResponseBody, callback: BodyResponseCallback): Unit = js.native
   def isCustomType(unknown: js.Any, module: String): Boolean = js.native
@@ -106,7 +126,7 @@ class Util_ () extends js.Object {
     */
   def maybeOptionsOrCallback[T, C](): js.Tuple2[T, C] = js.native
   def maybeOptionsOrCallback[T, C](optionsOrCallback: C | T): js.Tuple2[T, C] = js.native
-  def maybeOptionsOrCallback[T, C](optionsOrCallback: C | T, cb: C): js.Tuple2[T, C] = js.native
+  def maybeOptionsOrCallback[T, C](optionsOrCallback: js.UndefOr[C | T], cb: C): js.Tuple2[T, C] = js.native
   /**
     * No op.
     *

@@ -15,7 +15,7 @@ trait GetRecommendationsRequest extends js.Object {
     */
   var context: js.UndefOr[Context] = js.native
   /**
-    * The ARN of the filter to apply to the returned recommendations. For more information, see Using Filters with Amazon Personalize.
+    * The ARN of the filter to apply to the returned recommendations. For more information, see Using Filters with Amazon Personalize. When using this parameter, be sure the filter resource is ACTIVE.
     */
   var filterArn: js.UndefOr[Arn] = js.native
   /**
@@ -34,21 +34,44 @@ trait GetRecommendationsRequest extends js.Object {
 
 object GetRecommendationsRequest {
   @scala.inline
-  def apply(
-    campaignArn: Arn,
-    context: Context = null,
-    filterArn: Arn = null,
-    itemId: ItemID = null,
-    numResults: js.UndefOr[NumResults] = js.undefined,
-    userId: UserID = null
-  ): GetRecommendationsRequest = {
+  def apply(campaignArn: Arn): GetRecommendationsRequest = {
     val __obj = js.Dynamic.literal(campaignArn = campaignArn.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (filterArn != null) __obj.updateDynamic("filterArn")(filterArn.asInstanceOf[js.Any])
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (!js.isUndefined(numResults)) __obj.updateDynamic("numResults")(numResults.get.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecommendationsRequest]
   }
+  @scala.inline
+  implicit class GetRecommendationsRequestOps[Self <: GetRecommendationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCampaignArn(value: Arn): Self = this.set("campaignArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContext(value: Context): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setFilterArn(value: Arn): Self = this.set("filterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterArn: Self = this.set("filterArn", js.undefined)
+    @scala.inline
+    def setItemId(value: ItemID): Self = this.set("itemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemId: Self = this.set("itemId", js.undefined)
+    @scala.inline
+    def setNumResults(value: NumResults): Self = this.set("numResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumResults: Self = this.set("numResults", js.undefined)
+    @scala.inline
+    def setUserId(value: UserID): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

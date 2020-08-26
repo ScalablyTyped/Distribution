@@ -20,10 +20,12 @@ class Casper protected () extends js.Object {
   // Methods
   def back(): Casper = js.native
   def base64encode(url: String): String = js.native
+  def base64encode(url: String, method: js.UndefOr[scala.Nothing], data: js.Any): String = js.native
   def base64encode(url: String, method: String): String = js.native
   def base64encode(url: String, method: String, data: js.Any): String = js.native
   def bypass(nb: Double): Casper = js.native
   def capture(targetFilePath: String): Casper = js.native
+  def capture(targetFilePath: String, clipRect: js.UndefOr[scala.Nothing], imgOptions: ImgOptions): Casper = js.native
   def capture(targetFilePath: String, clipRect: ClipRect): Casper = js.native
   def capture(targetFilePath: String, clipRect: ClipRect, imgOptions: ImgOptions): Casper = js.native
   def captureBase64(format: String): String = js.native
@@ -36,6 +38,8 @@ class Casper protected () extends js.Object {
   def clearCache(): Casper = js.native
   def clearMemoryCache(): Casper = js.native
   def click(selector: String): Boolean = js.native
+  def click(selector: String, X: js.UndefOr[scala.Nothing], Y: String): Boolean = js.native
+  def click(selector: String, X: js.UndefOr[scala.Nothing], Y: Double): Boolean = js.native
   def click(selector: String, X: String): Boolean = js.native
   def click(selector: String, X: String, Y: String): Boolean = js.native
   def click(selector: String, X: String, Y: Double): Boolean = js.native
@@ -45,12 +49,14 @@ class Casper protected () extends js.Object {
   def clickLabel(label: String): Boolean = js.native
   def clickLabel(label: String, tag: String): Boolean = js.native
   def debugHTML(): Casper = js.native
+  def debugHTML(selector: js.UndefOr[scala.Nothing], outer: Boolean): Casper = js.native
   def debugHTML(selector: String): Casper = js.native
   def debugHTML(selector: String, outer: Boolean): Casper = js.native
   def debugPage(): Casper = js.native
   def die(message: String): Casper = js.native
   def die(message: String, status: Double): Casper = js.native
   def download(url: String, target: String): Casper = js.native
+  def download(url: String, target: String, method: js.UndefOr[scala.Nothing], data: js.Any): Casper = js.native
   def download(url: String, target: String, method: String): Casper = js.native
   def download(url: String, target: String, method: String, data: js.Any): Casper = js.native
   def each[T](
@@ -63,6 +69,7 @@ class Casper protected () extends js.Object {
   def echo(message: String, style: String): Casper = js.native
   def evaluate[T](fn: js.Function1[/* repeated */ js.Any, T], args: js.Any*): T = js.native
   def evaluateOrDie(fn: js.Function0[_]): Casper = js.native
+  def evaluateOrDie(fn: js.Function0[_], message: js.UndefOr[scala.Nothing], status: Double): Casper = js.native
   def evaluateOrDie(fn: js.Function0[_], message: String): Casper = js.native
   def evaluateOrDie(fn: js.Function0[_], message: String, status: Double): Casper = js.native
   def exists(selector: String): Boolean = js.native
@@ -87,14 +94,18 @@ class Casper protected () extends js.Object {
   def getFormValues(selector: String): js.Any = js.native
   def getGlobal(name: String): js.Any = js.native
   def getHTML(): String = js.native
+  def getHTML(selector: js.UndefOr[scala.Nothing], outer: Boolean): String = js.native
   def getHTML(selector: String): String = js.native
   def getHTML(selector: String, outer: Boolean): String = js.native
   def getPageContent(): String = js.native
   def getTitle(): String = js.native
   def log(message: String): Casper = js.native
+  def log(message: String, level: js.UndefOr[scala.Nothing], space: String): Casper = js.native
   def log(message: String, level: String): Casper = js.native
   def log(message: String, level: String, space: String): Casper = js.native
   def mouseEvent(`type`: String, selector: String): Boolean = js.native
+  def mouseEvent(`type`: String, selector: String, X: js.UndefOr[scala.Nothing], Y: String): Boolean = js.native
+  def mouseEvent(`type`: String, selector: String, X: js.UndefOr[scala.Nothing], Y: Double): Boolean = js.native
   def mouseEvent(`type`: String, selector: String, X: String): Boolean = js.native
   def mouseEvent(`type`: String, selector: String, X: String, Y: String): Boolean = js.native
   def mouseEvent(`type`: String, selector: String, X: String, Y: Double): Boolean = js.native
@@ -110,6 +121,7 @@ class Casper protected () extends js.Object {
   def resourceExists(test: js.Function): Boolean = js.native
   def resourceExists(test: RegExp): Boolean = js.native
   def run(): Casper = js.native
+  def run(onComplete: js.UndefOr[scala.Nothing], time: Double): Casper = js.native
   def run(onComplete: js.Function): Casper = js.native
   def run(onComplete: js.Function, time: Double): Casper = js.native
   def scrollTo(x: Double, y: Double): Casper = js.native
@@ -119,6 +131,7 @@ class Casper protected () extends js.Object {
   def setHttpAuth(username: String, password: String): Casper = js.native
   def setMaxListeners(maxListeners: Double): Casper = js.native
   def start(): Casper = js.native
+  def start(url: js.UndefOr[scala.Nothing], `then`: FunctionThen): Casper = js.native
   def start(url: String): Casper = js.native
   def start(url: String, `then`: FunctionThen): Casper = js.native
   def status(): Double = js.native
@@ -138,10 +151,15 @@ class Casper protected () extends js.Object {
   def thenClick(selector: String, `then`: FunctionThen): Casper = js.native
   def thenEvaluate(fn: js.Function0[_], args: js.Any*): Casper = js.native
   def thenOpen(location: String): Casper = js.native
+  def thenOpen(
+    location: String,
+    options: js.UndefOr[scala.Nothing],
+    `then`: js.Function1[/* response */ HttpResponse, Unit]
+  ): Casper = js.native
   def thenOpen(location: String, options: OpenSettings): Casper = js.native
   def thenOpen(location: String, options: OpenSettings, `then`: js.Function1[/* response */ HttpResponse, Unit]): Casper = js.native
   def thenOpen(location: String, `then`: js.Function1[/* response */ HttpResponse, Unit]): Casper = js.native
-  def thenOpenAndEvaluate(location: String): Casper = js.native
+  def thenOpenAndEvaluate(location: String, `then`: js.UndefOr[scala.Nothing], args: js.Any*): Casper = js.native
   def thenOpenAndEvaluate(location: String, `then`: FunctionThen, args: js.Any*): Casper = js.native
   def unwait(): Casper = js.native
   // 2017-10-19 Doc said returning String but code return Casper object.
@@ -152,8 +170,71 @@ class Casper protected () extends js.Object {
   def wait(timeout: Double): Casper = js.native
   def wait(timeout: Double, `then`: FunctionThen): Casper = js.native
   def waitFor(testFx: js.Function): Casper = js.native
+  def waitFor(
+    testFx: js.Function,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: js.UndefOr[scala.Nothing],
+    details: js.Any
+  ): Casper = js.native
+  def waitFor(
+    testFx: js.Function,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitFor(
+    testFx: js.Function,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double,
+    details: js.Any
+  ): Casper = js.native
+  def waitFor(testFx: js.Function, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitFor(
+    testFx: js.Function,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: FunctionOnTimeout,
+    timeout: js.UndefOr[scala.Nothing],
+    details: js.Any
+  ): Casper = js.native
+  def waitFor(
+    testFx: js.Function,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: FunctionOnTimeout,
+    timeout: Double
+  ): Casper = js.native
+  def waitFor(
+    testFx: js.Function,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: FunctionOnTimeout,
+    timeout: Double,
+    details: js.Any
+  ): Casper = js.native
   def waitFor(testFx: js.Function, `then`: FunctionThen): Casper = js.native
+  def waitFor(
+    testFx: js.Function,
+    `then`: FunctionThen,
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: js.UndefOr[scala.Nothing],
+    details: js.Any
+  ): Casper = js.native
+  def waitFor(testFx: js.Function, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
+  def waitFor(
+    testFx: js.Function,
+    `then`: FunctionThen,
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double,
+    details: js.Any
+  ): Casper = js.native
   def waitFor(testFx: js.Function, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitFor(
+    testFx: js.Function,
+    `then`: FunctionThen,
+    onTimeout: FunctionOnTimeout,
+    timeout: js.UndefOr[scala.Nothing],
+    details: js.Any
+  ): Casper = js.native
   def waitFor(testFx: js.Function, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitFor(
     testFx: js.Function,
@@ -163,10 +244,38 @@ class Casper protected () extends js.Object {
     details: js.Any
   ): Casper = js.native
   def waitForAlert(`then`: FunctionThen): Casper = js.native
+  def waitForAlert(`then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForAlert(`then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitForAlert(`then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitForExec(command: String, parameter: js.Array[String]): Casper = js.native
+  def waitForExec(
+    command: String,
+    parameter: js.Array[String],
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForExec(
+    command: String,
+    parameter: js.Array[String],
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: FunctionOnTimeout
+  ): Casper = js.native
+  def waitForExec(
+    command: String,
+    parameter: js.Array[String],
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: FunctionOnTimeout,
+    timeout: Double
+  ): Casper = js.native
   def waitForExec(command: String, parameter: js.Array[String], `then`: FunctionThen): Casper = js.native
+  def waitForExec(
+    command: String,
+    parameter: js.Array[String],
+    `then`: FunctionThen,
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
   def waitForExec(command: String, parameter: js.Array[String], `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitForExec(
     command: String,
@@ -176,7 +285,34 @@ class Casper protected () extends js.Object {
     timeout: Double
   ): Casper = js.native
   def waitForExec(command: Null, parameter: js.Array[String]): Casper = js.native
+  def waitForExec(
+    command: Null,
+    parameter: js.Array[String],
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForExec(
+    command: Null,
+    parameter: js.Array[String],
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: FunctionOnTimeout
+  ): Casper = js.native
+  def waitForExec(
+    command: Null,
+    parameter: js.Array[String],
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: FunctionOnTimeout,
+    timeout: Double
+  ): Casper = js.native
   def waitForExec(command: Null, parameter: js.Array[String], `then`: FunctionThen): Casper = js.native
+  def waitForExec(
+    command: Null,
+    parameter: js.Array[String],
+    `then`: FunctionThen,
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
   def waitForExec(command: Null, parameter: js.Array[String], `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitForExec(
     command: Null,
@@ -186,27 +322,105 @@ class Casper protected () extends js.Object {
     timeout: Double
   ): Casper = js.native
   def waitForPopup(urlPattern: String): Casper = js.native
+  def waitForPopup(
+    urlPattern: String,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForPopup(urlPattern: String, `then`: js.UndefOr[scala.Nothing], onTimeout: js.Function): Casper = js.native
+  def waitForPopup(urlPattern: String, `then`: js.UndefOr[scala.Nothing], onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: String, `then`: FunctionThen): Casper = js.native
+  def waitForPopup(urlPattern: String, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: String, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
   def waitForPopup(urlPattern: String, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: Double): Casper = js.native
+  def waitForPopup(
+    urlPattern: Double,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForPopup(urlPattern: Double, `then`: js.UndefOr[scala.Nothing], onTimeout: js.Function): Casper = js.native
+  def waitForPopup(urlPattern: Double, `then`: js.UndefOr[scala.Nothing], onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: Double, `then`: FunctionThen): Casper = js.native
+  def waitForPopup(urlPattern: Double, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: Double, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
   def waitForPopup(urlPattern: Double, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: FindByUrlNameTitle): Casper = js.native
+  def waitForPopup(
+    urlPattern: FindByUrlNameTitle,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForPopup(urlPattern: FindByUrlNameTitle, `then`: js.UndefOr[scala.Nothing], onTimeout: js.Function): Casper = js.native
+  def waitForPopup(
+    urlPattern: FindByUrlNameTitle,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.Function,
+    timeout: Double
+  ): Casper = js.native
   def waitForPopup(urlPattern: FindByUrlNameTitle, `then`: FunctionThen): Casper = js.native
+  def waitForPopup(
+    urlPattern: FindByUrlNameTitle,
+    `then`: FunctionThen,
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
   def waitForPopup(urlPattern: FindByUrlNameTitle, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
   def waitForPopup(urlPattern: FindByUrlNameTitle, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: RegExp): Casper = js.native
+  def waitForPopup(
+    urlPattern: RegExp,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForPopup(urlPattern: RegExp, `then`: js.UndefOr[scala.Nothing], onTimeout: js.Function): Casper = js.native
+  def waitForPopup(urlPattern: RegExp, `then`: js.UndefOr[scala.Nothing], onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: RegExp, `then`: FunctionThen): Casper = js.native
+  def waitForPopup(urlPattern: RegExp, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: RegExp, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
   def waitForPopup(urlPattern: RegExp, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForResource(testFx: String): Casper = js.native
+  def waitForResource(
+    testFx: String,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForResource(testFx: String, `then`: js.UndefOr[scala.Nothing], onTimeout: js.Function): Casper = js.native
+  def waitForResource(testFx: String, `then`: js.UndefOr[scala.Nothing], onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForResource(testFx: String, `then`: FunctionThen): Casper = js.native
+  def waitForResource(testFx: String, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForResource(testFx: String, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
   def waitForResource(testFx: String, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForResource(testFx: js.Function1[/* resource */ Url, Boolean]): Casper = js.native
+  def waitForResource(
+    testFx: js.Function1[/* resource */ Url, Boolean],
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForResource(
+    testFx: js.Function1[/* resource */ Url, Boolean],
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.Function
+  ): Casper = js.native
+  def waitForResource(
+    testFx: js.Function1[/* resource */ Url, Boolean],
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.Function,
+    timeout: Double
+  ): Casper = js.native
   def waitForResource(testFx: js.Function1[/* resource */ Url, Boolean], `then`: FunctionThen): Casper = js.native
+  def waitForResource(
+    testFx: js.Function1[/* resource */ Url, Boolean],
+    `then`: FunctionThen,
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
   def waitForResource(testFx: js.Function1[/* resource */ Url, Boolean], `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
   def waitForResource(
     testFx: js.Function1[/* resource */ Url, Boolean],
@@ -215,43 +429,138 @@ class Casper protected () extends js.Object {
     timeout: Double
   ): Casper = js.native
   def waitForResource(testFx: RegExp): Casper = js.native
+  def waitForResource(
+    testFx: RegExp,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForResource(testFx: RegExp, `then`: js.UndefOr[scala.Nothing], onTimeout: js.Function): Casper = js.native
+  def waitForResource(testFx: RegExp, `then`: js.UndefOr[scala.Nothing], onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForResource(testFx: RegExp, `then`: FunctionThen): Casper = js.native
+  def waitForResource(testFx: RegExp, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForResource(testFx: RegExp, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
   def waitForResource(testFx: RegExp, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForSelector(selector: String): Casper = js.native
+  def waitForSelector(
+    selector: String,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForSelector(selector: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitForSelector(selector: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitForSelector(selector: String, `then`: FunctionThen): Casper = js.native
+  def waitForSelector(selector: String, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForSelector(selector: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitForSelector(selector: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitForSelectorTextChange(selectors: String): Casper = js.native
+  def waitForSelectorTextChange(
+    selectors: String,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForSelectorTextChange(selectors: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitForSelectorTextChange(
+    selectors: String,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: FunctionOnTimeout,
+    timeout: Double
+  ): Casper = js.native
   def waitForSelectorTextChange(selectors: String, `then`: FunctionThen): Casper = js.native
+  def waitForSelectorTextChange(selectors: String, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForSelectorTextChange(selectors: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitForSelectorTextChange(selectors: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitForText(pattern: String): Casper = js.native
+  def waitForText(
+    pattern: String,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForText(pattern: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitForText(pattern: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitForText(pattern: String, `then`: FunctionThen): Casper = js.native
+  def waitForText(pattern: String, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForText(pattern: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitForText(pattern: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitForText(pattern: RegExp): Casper = js.native
+  def waitForText(
+    pattern: RegExp,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForText(pattern: RegExp, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitForText(pattern: RegExp, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitForText(pattern: RegExp, `then`: FunctionThen): Casper = js.native
+  def waitForText(pattern: RegExp, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForText(pattern: RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitForText(pattern: RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitForUrl(url: String): Casper = js.native
+  def waitForUrl(
+    url: String,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForUrl(url: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitForUrl(url: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitForUrl(url: String, `then`: FunctionThen): Casper = js.native
+  def waitForUrl(url: String, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForUrl(url: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitForUrl(url: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitForUrl(url: RegExp): Casper = js.native
+  def waitForUrl(
+    url: RegExp,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitForUrl(url: RegExp, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitForUrl(url: RegExp, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitForUrl(url: RegExp, `then`: FunctionThen): Casper = js.native
+  def waitForUrl(url: RegExp, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitForUrl(url: RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitForUrl(url: RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitUntilVisible(selector: String): Casper = js.native
+  def waitUntilVisible(
+    selector: String,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitUntilVisible(selector: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitUntilVisible(selector: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitUntilVisible(selector: String, `then`: FunctionThen): Casper = js.native
+  def waitUntilVisible(selector: String, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitUntilVisible(selector: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitUntilVisible(selector: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitWhileSelector(selector: String): Casper = js.native
+  def waitWhileSelector(
+    selector: String,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitWhileSelector(selector: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitWhileSelector(selector: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitWhileSelector(selector: String, `then`: FunctionThen): Casper = js.native
+  def waitWhileSelector(selector: String, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitWhileSelector(selector: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitWhileSelector(selector: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitWhileVisible(selector: String): Casper = js.native
+  def waitWhileVisible(
+    selector: String,
+    `then`: js.UndefOr[scala.Nothing],
+    onTimeout: js.UndefOr[scala.Nothing],
+    timeout: Double
+  ): Casper = js.native
+  def waitWhileVisible(selector: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitWhileVisible(selector: String, `then`: js.UndefOr[scala.Nothing], onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitWhileVisible(selector: String, `then`: FunctionThen): Casper = js.native
+  def waitWhileVisible(selector: String, `then`: FunctionThen, onTimeout: js.UndefOr[scala.Nothing], timeout: Double): Casper = js.native
   def waitWhileVisible(selector: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitWhileVisible(selector: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def warn(message: String): Casper = js.native

@@ -9,16 +9,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Execution of the {@link XCommand} animation node causes the slide show component to call back the application to perform the command. */
+@js.native
 trait XCommand extends XAnimationNode {
   /** This identifies the application specific command. See documentation of used application for commands. */
-  var Command: Double
+  var Command: Double = js.native
   /**
     * The application specific parameter for this command. See documentation of used application for supported parameters for different commands and target
     * combinations.
     */
-  var Parameter: js.Any
+  var Parameter: js.Any = js.native
   /** The application specific target. See documentation of used application for supported targets. */
-  var Target: js.Any
+  var Target: js.Any = js.native
 }
 
 object XCommand {
@@ -52,5 +53,24 @@ object XCommand {
     val __obj = js.Dynamic.literal(Acceleration = Acceleration.asInstanceOf[js.Any], AutoReverse = AutoReverse.asInstanceOf[js.Any], Begin = Begin.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any], Decelerate = Decelerate.asInstanceOf[js.Any], Duration = Duration.asInstanceOf[js.Any], End = End.asInstanceOf[js.Any], EndSync = EndSync.asInstanceOf[js.Any], Fill = Fill.asInstanceOf[js.Any], FillDefault = FillDefault.asInstanceOf[js.Any], Parameter = Parameter.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], RepeatCount = RepeatCount.asInstanceOf[js.Any], RepeatDuration = RepeatDuration.asInstanceOf[js.Any], Restart = Restart.asInstanceOf[js.Any], RestartDefault = RestartDefault.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UserData = UserData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getParent = js.Any.fromFunction0(getParent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setParent = js.Any.fromFunction1(setParent))
     __obj.asInstanceOf[XCommand]
   }
+  @scala.inline
+  implicit class XCommandOps[Self <: XCommand] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommand(value: Double): Self = this.set("Command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParameter(value: js.Any): Self = this.set("Parameter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTarget(value: js.Any): Self = this.set("Target", value.asInstanceOf[js.Any])
+  }
+  
 }
 

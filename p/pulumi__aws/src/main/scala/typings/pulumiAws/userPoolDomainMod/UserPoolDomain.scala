@@ -30,7 +30,7 @@ class UserPoolDomain protected () extends CustomResource {
     */
   val certificateArn: Output_[js.UndefOr[String]] = js.native
   /**
-    * The ARN of the CloudFront distribution.
+    * The URL of the CloudFront distribution. This is required to generate the ALIAS `aws.route53.Record`
     */
   val cloudfrontDistributionArn: Output_[String] = js.native
   /**
@@ -62,8 +62,10 @@ object UserPoolDomain extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): UserPoolDomain = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UserPoolDomain = js.native
   def get(name: String, id: Input[ID], state: UserPoolDomainState): UserPoolDomain = js.native
   def get(name: String, id: Input[ID], state: UserPoolDomainState, opts: CustomResourceOptions): UserPoolDomain = js.native
   /**

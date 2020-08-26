@@ -4,82 +4,125 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AllowWebDefinitions extends js.Object {
   /** For the dictionary layer. Whether or not to allow web definitions. */
-  var allowWebDefinitions: js.UndefOr[Boolean] = js.undefined
+  var allowWebDefinitions: js.UndefOr[Boolean] = js.native
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.undefined
+  var alt: js.UndefOr[String] = js.native
   /** The ID of the annotation data to retrieve. */
-  var annotationDataId: String
+  var annotationDataId: String = js.native
   /** The content version for the volume you are trying to retrieve. */
-  var contentVersion: String
+  var contentVersion: String = js.native
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.undefined
+  var fields: js.UndefOr[String] = js.native
   /** The requested pixel height for any images. If height is provided width must also be provided. */
-  var h: js.UndefOr[Double] = js.undefined
+  var h: js.UndefOr[Double] = js.native
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
   /** The ID for the layer to get the annotations. */
-  var layerId: String
+  var layerId: String = js.native
   /** The locale information for the data. ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. */
-  var locale: js.UndefOr[String] = js.undefined
+  var locale: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.undefined
+  var oauth_token: js.UndefOr[String] = js.native
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.undefined
+  var prettyPrint: js.UndefOr[Boolean] = js.native
   /**
     * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
     * Overrides userIp if both are provided.
     */
-  var quotaUser: js.UndefOr[String] = js.undefined
+  var quotaUser: js.UndefOr[String] = js.native
   /** The requested scale for the image. */
-  var scale: js.UndefOr[Double] = js.undefined
+  var scale: js.UndefOr[Double] = js.native
   /** String to identify the originator of this request. */
-  var source: js.UndefOr[String] = js.undefined
+  var source: js.UndefOr[String] = js.native
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
-  var userIp: js.UndefOr[String] = js.undefined
+  var userIp: js.UndefOr[String] = js.native
   /** The volume to retrieve annotations for. */
-  var volumeId: String
+  var volumeId: String = js.native
   /** The requested pixel width for any images. If width is provided height must also be provided. */
-  var w: js.UndefOr[Double] = js.undefined
+  var w: js.UndefOr[Double] = js.native
 }
 
 object AllowWebDefinitions {
   @scala.inline
-  def apply(
-    annotationDataId: String,
-    contentVersion: String,
-    layerId: String,
-    volumeId: String,
-    allowWebDefinitions: js.UndefOr[Boolean] = js.undefined,
-    alt: String = null,
-    fields: String = null,
-    h: js.UndefOr[Double] = js.undefined,
-    key: String = null,
-    locale: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    scale: js.UndefOr[Double] = js.undefined,
-    source: String = null,
-    userIp: String = null,
-    w: js.UndefOr[Double] = js.undefined
-  ): AllowWebDefinitions = {
+  def apply(annotationDataId: String, contentVersion: String, layerId: String, volumeId: String): AllowWebDefinitions = {
     val __obj = js.Dynamic.literal(annotationDataId = annotationDataId.asInstanceOf[js.Any], contentVersion = contentVersion.asInstanceOf[js.Any], layerId = layerId.asInstanceOf[js.Any], volumeId = volumeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowWebDefinitions)) __obj.updateDynamic("allowWebDefinitions")(allowWebDefinitions.get.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(h)) __obj.updateDynamic("h")(h.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
-    if (!js.isUndefined(w)) __obj.updateDynamic("w")(w.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowWebDefinitions]
   }
+  @scala.inline
+  implicit class AllowWebDefinitionsOps[Self <: AllowWebDefinitions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotationDataId(value: String): Self = this.set("annotationDataId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentVersion(value: String): Self = this.set("contentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLayerId(value: String): Self = this.set("layerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowWebDefinitions(value: Boolean): Self = this.set("allowWebDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowWebDefinitions: Self = this.set("allowWebDefinitions", js.undefined)
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt: Self = this.set("alt", js.undefined)
+    @scala.inline
+    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setH(value: Double): Self = this.set("h", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH: Self = this.set("h", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    @scala.inline
+    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    @scala.inline
+    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserIp: Self = this.set("userIp", js.undefined)
+    @scala.inline
+    def setW(value: Double): Self = this.set("w", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteW: Self = this.set("w", js.undefined)
+  }
+  
 }
 

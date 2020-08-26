@@ -69,36 +69,78 @@ trait SchemaJobStatistics extends js.Object {
 
 object SchemaJobStatistics {
   @scala.inline
-  def apply(
-    completionRatio: js.UndefOr[Double] = js.undefined,
-    creationTime: String = null,
-    endTime: String = null,
-    extract: SchemaJobStatistics4 = null,
-    load: SchemaJobStatistics3 = null,
-    numChildJobs: String = null,
-    parentJobId: String = null,
-    query: SchemaJobStatistics2 = null,
-    quotaDeferments: js.Array[String] = null,
-    reservationUsage: js.Array[SlotMs] = null,
-    startTime: String = null,
-    totalBytesProcessed: String = null,
-    totalSlotMs: String = null
-  ): SchemaJobStatistics = {
+  def apply(): SchemaJobStatistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(completionRatio)) __obj.updateDynamic("completionRatio")(completionRatio.get.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (extract != null) __obj.updateDynamic("extract")(extract.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
-    if (numChildJobs != null) __obj.updateDynamic("numChildJobs")(numChildJobs.asInstanceOf[js.Any])
-    if (parentJobId != null) __obj.updateDynamic("parentJobId")(parentJobId.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (quotaDeferments != null) __obj.updateDynamic("quotaDeferments")(quotaDeferments.asInstanceOf[js.Any])
-    if (reservationUsage != null) __obj.updateDynamic("reservationUsage")(reservationUsage.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed.asInstanceOf[js.Any])
-    if (totalSlotMs != null) __obj.updateDynamic("totalSlotMs")(totalSlotMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobStatistics]
   }
+  @scala.inline
+  implicit class SchemaJobStatisticsOps[Self <: SchemaJobStatistics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionRatio(value: Double): Self = this.set("completionRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionRatio: Self = this.set("completionRatio", js.undefined)
+    @scala.inline
+    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setExtract(value: SchemaJobStatistics4): Self = this.set("extract", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtract: Self = this.set("extract", js.undefined)
+    @scala.inline
+    def setLoad(value: SchemaJobStatistics3): Self = this.set("load", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setNumChildJobs(value: String): Self = this.set("numChildJobs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumChildJobs: Self = this.set("numChildJobs", js.undefined)
+    @scala.inline
+    def setParentJobId(value: String): Self = this.set("parentJobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentJobId: Self = this.set("parentJobId", js.undefined)
+    @scala.inline
+    def setQuery(value: SchemaJobStatistics2): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setQuotaDefermentsVarargs(value: String*): Self = this.set("quotaDeferments", js.Array(value :_*))
+    @scala.inline
+    def setQuotaDeferments(value: js.Array[String]): Self = this.set("quotaDeferments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaDeferments: Self = this.set("quotaDeferments", js.undefined)
+    @scala.inline
+    def setReservationUsageVarargs(value: SlotMs*): Self = this.set("reservationUsage", js.Array(value :_*))
+    @scala.inline
+    def setReservationUsage(value: js.Array[SlotMs]): Self = this.set("reservationUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservationUsage: Self = this.set("reservationUsage", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setTotalBytesProcessed(value: String): Self = this.set("totalBytesProcessed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalBytesProcessed: Self = this.set("totalBytesProcessed", js.undefined)
+    @scala.inline
+    def setTotalSlotMs(value: String): Self = this.set("totalSlotMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalSlotMs: Self = this.set("totalSlotMs", js.undefined)
+  }
+  
 }
 

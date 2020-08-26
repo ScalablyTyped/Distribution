@@ -8,43 +8,44 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the intrinsics that describe the camera distortion model. */
+@js.native
 trait CameraIntrinsics extends js.Object {
   /** Gets the focal length of the camera. */
-  var focalLength: Vector2
+  var focalLength: Vector2 = js.native
   /** Gets the image height of the camera, in pixels. */
-  var imageHeight: Double
+  var imageHeight: Double = js.native
   /** Gets the image width of the camera, in pixels. */
-  var imageWidth: Double
+  var imageWidth: Double = js.native
   /** Gets the principal point of the camera. */
-  var principalPoint: Vector2
+  var principalPoint: Vector2 = js.native
   /** Gets the radial distortion coefficient of the camera. */
-  var radialDistortion: Vector3
+  var radialDistortion: Vector3 = js.native
   /** Gets the tangential distortion coefficient of the camera. */
-  var tangentialDistortion: Vector2
+  var tangentialDistortion: Vector2 = js.native
   /**
     * Projects an array of camera space points into screen space pixel coordinates.
     * @param coordinates The array of camera space points to project into screen space.
     * @return The array of screen space pixel coordinates.
     */
-  def projectManyOntoFrame(coordinates: Vector3): Point
+  def projectManyOntoFrame(coordinates: Vector3): Point = js.native
   /**
     * Projects a camera space point into screen space pixel coordinates.
     * @param coordinate The camera space point to project into screen space.
     * @return The screen space pixel coordinates.
     */
-  def projectOntoFrame(coordinate: Vector3): Point
+  def projectOntoFrame(coordinate: Vector3): Point = js.native
   /**
     * Unprojects pixel coordinates into a camera space ray from the camera origin, expressed as a X, Y coordinates on the plane at Z = 1.0.
     * @param pixelCoordinate The pixel coordinates to unproject into camera space.
     * @return The X, Y coordinates of the unprojected pixel on the plane at Z = 1.0.
     */
-  def unprojectAtUnitDepth(pixelCoordinate: Point): Vector2
+  def unprojectAtUnitDepth(pixelCoordinate: Point): Vector2 = js.native
   /**
     * Unprojects an array pixel coordinates into a camera space rays from the camera origin, expressed as a X, Y coordinates on the plane at Z = 1.0.
     * @param pixelCoordinates The array of pixel coordinates to unproject into camera space.
     * @return The array of X, Y coordinates of the unprojected pixels on the plane at Z = 1.0.
     */
-  def unprojectPixelsAtUnitDepth(pixelCoordinates: Point): Vector2
+  def unprojectPixelsAtUnitDepth(pixelCoordinates: Point): Vector2 = js.native
 }
 
 object CameraIntrinsics {
@@ -64,5 +65,38 @@ object CameraIntrinsics {
     val __obj = js.Dynamic.literal(focalLength = focalLength.asInstanceOf[js.Any], imageHeight = imageHeight.asInstanceOf[js.Any], imageWidth = imageWidth.asInstanceOf[js.Any], principalPoint = principalPoint.asInstanceOf[js.Any], projectManyOntoFrame = js.Any.fromFunction1(projectManyOntoFrame), projectOntoFrame = js.Any.fromFunction1(projectOntoFrame), radialDistortion = radialDistortion.asInstanceOf[js.Any], tangentialDistortion = tangentialDistortion.asInstanceOf[js.Any], unprojectAtUnitDepth = js.Any.fromFunction1(unprojectAtUnitDepth), unprojectPixelsAtUnitDepth = js.Any.fromFunction1(unprojectPixelsAtUnitDepth))
     __obj.asInstanceOf[CameraIntrinsics]
   }
+  @scala.inline
+  implicit class CameraIntrinsicsOps[Self <: CameraIntrinsics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFocalLength(value: Vector2): Self = this.set("focalLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImageHeight(value: Double): Self = this.set("imageHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImageWidth(value: Double): Self = this.set("imageWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrincipalPoint(value: Vector2): Self = this.set("principalPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProjectManyOntoFrame(value: Vector3 => Point): Self = this.set("projectManyOntoFrame", js.Any.fromFunction1(value))
+    @scala.inline
+    def setProjectOntoFrame(value: Vector3 => Point): Self = this.set("projectOntoFrame", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRadialDistortion(value: Vector3): Self = this.set("radialDistortion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTangentialDistortion(value: Vector2): Self = this.set("tangentialDistortion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUnprojectAtUnitDepth(value: Point => Vector2): Self = this.set("unprojectAtUnitDepth", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUnprojectPixelsAtUnitDepth(value: Point => Vector2): Self = this.set("unprojectPixelsAtUnitDepth", js.Any.fromFunction1(value))
+  }
+  
 }
 

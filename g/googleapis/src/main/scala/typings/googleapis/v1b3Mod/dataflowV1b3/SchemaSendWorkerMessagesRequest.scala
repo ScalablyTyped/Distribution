@@ -23,11 +23,32 @@ trait SchemaSendWorkerMessagesRequest extends js.Object {
 
 object SchemaSendWorkerMessagesRequest {
   @scala.inline
-  def apply(location: String = null, workerMessages: js.Array[SchemaWorkerMessage] = null): SchemaSendWorkerMessagesRequest = {
+  def apply(): SchemaSendWorkerMessagesRequest = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (workerMessages != null) __obj.updateDynamic("workerMessages")(workerMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSendWorkerMessagesRequest]
   }
+  @scala.inline
+  implicit class SchemaSendWorkerMessagesRequestOps[Self <: SchemaSendWorkerMessagesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setWorkerMessagesVarargs(value: SchemaWorkerMessage*): Self = this.set("workerMessages", js.Array(value :_*))
+    @scala.inline
+    def setWorkerMessages(value: js.Array[SchemaWorkerMessage]): Self = this.set("workerMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerMessages: Self = this.set("workerMessages", js.undefined)
+  }
+  
 }
 

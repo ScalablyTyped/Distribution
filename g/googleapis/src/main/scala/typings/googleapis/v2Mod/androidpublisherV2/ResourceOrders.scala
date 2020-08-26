@@ -29,6 +29,7 @@ class ResourceOrders protected () extends js.Object {
     */
   def refund(): GaxiosPromise[Unit] = js.native
   def refund(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def refund(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def refund(params: ParamsResourceOrdersRefund): GaxiosPromise[Unit] = js.native
   def refund(params: ParamsResourceOrdersRefund, callback: BodyResponseCallback[Unit]): Unit = js.native
   def refund(

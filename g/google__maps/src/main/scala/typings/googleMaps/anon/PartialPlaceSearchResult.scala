@@ -13,60 +13,109 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@google/maps.@google/maps.PlaceSearchResult> */
+@js.native
 trait PartialPlaceSearchResult extends js.Object {
-  var alt_ids: js.UndefOr[js.Array[AlternativePlaceId]] = js.undefined
-  var formatted_address: js.UndefOr[String] = js.undefined
-  var geometry: js.UndefOr[AddressGeometry] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var opening_hours: js.UndefOr[OpeningHours] = js.undefined
-  var permanently_closed: js.UndefOr[Boolean] = js.undefined
-  var photos: js.UndefOr[js.Array[PlacePhoto]] = js.undefined
-  var place_id: js.UndefOr[String] = js.undefined
-  var plus_code: js.UndefOr[PlusCode] = js.undefined
-  var price_level: js.UndefOr[Double] = js.undefined
-  var rating: js.UndefOr[Double] = js.undefined
-  var scope: js.UndefOr[PlaceIdScope] = js.undefined
-  var types: js.UndefOr[js.Array[PlaceType1 | PlaceType2]] = js.undefined
-  var vicinity: js.UndefOr[String] = js.undefined
+  var alt_ids: js.UndefOr[js.Array[AlternativePlaceId]] = js.native
+  var formatted_address: js.UndefOr[String] = js.native
+  var geometry: js.UndefOr[AddressGeometry] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var opening_hours: js.UndefOr[OpeningHours] = js.native
+  var permanently_closed: js.UndefOr[Boolean] = js.native
+  var photos: js.UndefOr[js.Array[PlacePhoto]] = js.native
+  var place_id: js.UndefOr[String] = js.native
+  var plus_code: js.UndefOr[PlusCode] = js.native
+  var price_level: js.UndefOr[Double] = js.native
+  var rating: js.UndefOr[Double] = js.native
+  var scope: js.UndefOr[PlaceIdScope] = js.native
+  var types: js.UndefOr[js.Array[PlaceType1 | PlaceType2]] = js.native
+  var vicinity: js.UndefOr[String] = js.native
 }
 
 object PartialPlaceSearchResult {
   @scala.inline
-  def apply(
-    alt_ids: js.Array[AlternativePlaceId] = null,
-    formatted_address: String = null,
-    geometry: AddressGeometry = null,
-    icon: String = null,
-    name: String = null,
-    opening_hours: OpeningHours = null,
-    permanently_closed: js.UndefOr[Boolean] = js.undefined,
-    photos: js.Array[PlacePhoto] = null,
-    place_id: String = null,
-    plus_code: PlusCode = null,
-    price_level: js.UndefOr[Double] = js.undefined,
-    rating: js.UndefOr[Double] = js.undefined,
-    scope: PlaceIdScope = null,
-    types: js.Array[PlaceType1 | PlaceType2] = null,
-    vicinity: String = null
-  ): PartialPlaceSearchResult = {
+  def apply(): PartialPlaceSearchResult = {
     val __obj = js.Dynamic.literal()
-    if (alt_ids != null) __obj.updateDynamic("alt_ids")(alt_ids.asInstanceOf[js.Any])
-    if (formatted_address != null) __obj.updateDynamic("formatted_address")(formatted_address.asInstanceOf[js.Any])
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opening_hours != null) __obj.updateDynamic("opening_hours")(opening_hours.asInstanceOf[js.Any])
-    if (!js.isUndefined(permanently_closed)) __obj.updateDynamic("permanently_closed")(permanently_closed.get.asInstanceOf[js.Any])
-    if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
-    if (place_id != null) __obj.updateDynamic("place_id")(place_id.asInstanceOf[js.Any])
-    if (plus_code != null) __obj.updateDynamic("plus_code")(plus_code.asInstanceOf[js.Any])
-    if (!js.isUndefined(price_level)) __obj.updateDynamic("price_level")(price_level.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rating)) __obj.updateDynamic("rating")(rating.get.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
-    if (vicinity != null) __obj.updateDynamic("vicinity")(vicinity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialPlaceSearchResult]
   }
+  @scala.inline
+  implicit class PartialPlaceSearchResultOps[Self <: PartialPlaceSearchResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlt_idsVarargs(value: AlternativePlaceId*): Self = this.set("alt_ids", js.Array(value :_*))
+    @scala.inline
+    def setAlt_ids(value: js.Array[AlternativePlaceId]): Self = this.set("alt_ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt_ids: Self = this.set("alt_ids", js.undefined)
+    @scala.inline
+    def setFormatted_address(value: String): Self = this.set("formatted_address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatted_address: Self = this.set("formatted_address", js.undefined)
+    @scala.inline
+    def setGeometry(value: AddressGeometry): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeometry: Self = this.set("geometry", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOpening_hours(value: OpeningHours): Self = this.set("opening_hours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpening_hours: Self = this.set("opening_hours", js.undefined)
+    @scala.inline
+    def setPermanently_closed(value: Boolean): Self = this.set("permanently_closed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermanently_closed: Self = this.set("permanently_closed", js.undefined)
+    @scala.inline
+    def setPhotosVarargs(value: PlacePhoto*): Self = this.set("photos", js.Array(value :_*))
+    @scala.inline
+    def setPhotos(value: js.Array[PlacePhoto]): Self = this.set("photos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhotos: Self = this.set("photos", js.undefined)
+    @scala.inline
+    def setPlace_id(value: String): Self = this.set("place_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlace_id: Self = this.set("place_id", js.undefined)
+    @scala.inline
+    def setPlus_code(value: PlusCode): Self = this.set("plus_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlus_code: Self = this.set("plus_code", js.undefined)
+    @scala.inline
+    def setPrice_level(value: Double): Self = this.set("price_level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice_level: Self = this.set("price_level", js.undefined)
+    @scala.inline
+    def setRating(value: Double): Self = this.set("rating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRating: Self = this.set("rating", js.undefined)
+    @scala.inline
+    def setScope(value: PlaceIdScope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setTypesVarargs(value: (PlaceType1 | PlaceType2)*): Self = this.set("types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: js.Array[PlaceType1 | PlaceType2]): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("types", js.undefined)
+    @scala.inline
+    def setVicinity(value: String): Self = this.set("vicinity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVicinity: Self = this.set("vicinity", js.undefined)
+  }
+  
 }
 

@@ -23,7 +23,6 @@ trait HTML5FS
   /**
     * Returns a BrowserFS object representing a File.
     */
-  /* private */ def _makeFile(path: js.Any, entry: js.Any, flag: js.Any, stat: js.Any): js.Any = js.native
   /* private */ def _makeFile(path: js.Any, entry: js.Any, flag: js.Any, stat: js.Any, data: js.Any): js.Any = js.native
   /**
     * Returns an array of `FileEntry`s. Used internally by empty and readdir.
@@ -43,6 +42,7 @@ trait HTML5FS
     * Must be called before file system can be used!
     */
   def allocate(): Unit = js.native
+  def allocate(cb: js.UndefOr[scala.Nothing], deprecateMsg: Boolean): Unit = js.native
   def allocate(cb: BFSOneArgCallback): Unit = js.native
   def allocate(cb: BFSOneArgCallback, deprecateMsg: Boolean): Unit = js.native
   /* InferMemberOverrides */

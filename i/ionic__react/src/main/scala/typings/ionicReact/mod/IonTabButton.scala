@@ -1,13 +1,21 @@
 package typings.ionicReact.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.ionicReact.anon.IonTabButtonPickHTMLAttri
-import typings.react.mod.ForwardRefExoticComponent
+import typings.ionicReact.ionTabButtonMod.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@ionic/react", "IonTabButton")
 @js.native
-object IonTabButton extends TopLevel[ForwardRefExoticComponent[IonTabButtonPickHTMLAttri]]
+class IonTabButton protected ()
+  extends typings.ionicReact.componentsMod.IonTabButton {
+  def this(props: Props) = this()
+}
+
+/* static members */
+@JSImport("@ionic/react", "IonTabButton")
+@js.native
+object IonTabButton extends js.Object {
+  def displayName: String = js.native
+}
 

@@ -4,27 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GeoCoordinates extends js.Object {
   // Optional. The altitude (height), in feet, above sea level for the item. Read-only.
-  var altitude: js.UndefOr[Double] = js.undefined
+  var altitude: js.UndefOr[Double] = js.native
   // Optional. The latitude, in decimal, for the item. Read-only.
-  var latitude: js.UndefOr[Double] = js.undefined
+  var latitude: js.UndefOr[Double] = js.native
   // Optional. The longitude, in decimal, for the item. Read-only.
-  var longitude: js.UndefOr[Double] = js.undefined
+  var longitude: js.UndefOr[Double] = js.native
 }
 
 object GeoCoordinates {
   @scala.inline
-  def apply(
-    altitude: js.UndefOr[Double] = js.undefined,
-    latitude: js.UndefOr[Double] = js.undefined,
-    longitude: js.UndefOr[Double] = js.undefined
-  ): GeoCoordinates = {
+  def apply(): GeoCoordinates = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoCoordinates]
   }
+  @scala.inline
+  implicit class GeoCoordinatesOps[Self <: GeoCoordinates] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    @scala.inline
+    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    @scala.inline
+    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongitude: Self = this.set("longitude", js.undefined)
+  }
+  
 }
 

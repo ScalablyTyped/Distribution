@@ -22,11 +22,30 @@ trait SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext extends js.O
 
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext {
   @scala.inline
-  def apply(revisionId: String = null, url: String = null): SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext = {
+  def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext = {
     val __obj = js.Dynamic.literal()
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContextOps[Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

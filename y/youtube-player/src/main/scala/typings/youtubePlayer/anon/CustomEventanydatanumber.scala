@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.CustomEvent<any> & {  data  :number} */
+/* Inlined std.CustomEvent<any> & {  data :number} */
 @js.native
 trait CustomEventanydatanumber extends js.Object {
   val AT_TARGET: Double = js.native
@@ -67,6 +67,7 @@ trait CustomEventanydatanumber extends js.Object {
   def composedPath(): js.Array[EventTarget] = js.native
   def initCustomEvent(typeArg: String, canBubbleArg: Boolean, cancelableArg: Boolean, detailArg: js.Any): Unit = js.native
   def initEvent(`type`: String): Unit = js.native
+  def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
   /**

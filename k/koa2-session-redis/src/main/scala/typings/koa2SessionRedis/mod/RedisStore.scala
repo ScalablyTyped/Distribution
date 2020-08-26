@@ -17,10 +17,10 @@ trait RedisStore extends stores {
     * sends the quit command to the redis server and ends cleanly right after all running commands were properly handled
     */
   def quit(): Unit = js.native
-  def set(key: String, sess: PartialSessionexpirenumbe): js.Any = js.native
   /**
     * set session object for key, with a maxAge (in ms)
     */
+  def set(key: String, sess: PartialSessionexpirenumbe): js.Any = js.native
   def set(key: String, sess: PartialSessionexpirenumbe, maxAge: Double): js.Any = js.native
   @JSName("set")
   def set_session(key: String, sess: PartialSessionexpirenumbe, maxAge: session): js.Any = js.native

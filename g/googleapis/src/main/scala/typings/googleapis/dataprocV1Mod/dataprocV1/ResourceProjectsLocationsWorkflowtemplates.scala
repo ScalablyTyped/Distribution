@@ -28,6 +28,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     */
   def create(): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def create(callback: BodyResponseCallback[SchemaWorkflowTemplate]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def create(params: ParamsResourceProjectsLocationsWorkflowtemplatesCreate): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def create(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesCreate,
@@ -60,6 +61,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsWorkflowtemplatesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesDelete,
@@ -92,6 +94,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     */
   def get(): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def get(callback: BodyResponseCallback[SchemaWorkflowTemplate]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def get(params: ParamsResourceProjectsLocationsWorkflowtemplatesGet): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def get(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesGet,
@@ -124,6 +127,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsLocationsWorkflowtemplatesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesGetiampolicy,
@@ -161,6 +165,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     */
   def instantiate(): GaxiosPromise[SchemaOperation] = js.native
   def instantiate(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def instantiate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def instantiate(params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiate): GaxiosPromise[SchemaOperation] = js.native
   def instantiate(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiate,
@@ -201,6 +206,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     */
   def instantiateInline(): GaxiosPromise[SchemaOperation] = js.native
   def instantiateInline(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def instantiateInline(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def instantiateInline(params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiateinline): GaxiosPromise[SchemaOperation] = js.native
   def instantiateInline(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesInstantiateinline,
@@ -233,6 +239,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     */
   def list(): GaxiosPromise[SchemaListWorkflowTemplatesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListWorkflowTemplatesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListWorkflowTemplatesResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsWorkflowtemplatesList): GaxiosPromise[SchemaListWorkflowTemplatesResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesList,
@@ -265,6 +272,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsLocationsWorkflowtemplatesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesSetiampolicy,
@@ -300,6 +308,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsLocationsWorkflowtemplatesTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesTestiampermissions,
@@ -332,6 +341,7 @@ class ResourceProjectsLocationsWorkflowtemplates protected () extends js.Object 
     */
   def update(): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def update(callback: BodyResponseCallback[SchemaWorkflowTemplate]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def update(params: ParamsResourceProjectsLocationsWorkflowtemplatesUpdate): GaxiosPromise[SchemaWorkflowTemplate] = js.native
   def update(
     params: ParamsResourceProjectsLocationsWorkflowtemplatesUpdate,

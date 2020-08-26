@@ -4,40 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupOptions extends AnchorOptions {
   /**
     * Updates the rendering order of the group’s child items.
     * @default false
     * @see {@link https://zzz.dog/api#group-updatesort Zdog API}
     */
-  val updateSort: js.UndefOr[Boolean] = js.undefined
+  val updateSort: js.UndefOr[Boolean] = js.native
   /**
     * Shows or hides group, including all child items in the group.
     * {@link Shape#visible} only shows or hides the item.
     * @default true
     * @see {@link https://zzz.dog/api#group-visible Zdog API}
     */
-  val visible: js.UndefOr[Boolean] = js.undefined
+  val visible: js.UndefOr[Boolean] = js.native
 }
 
 object GroupOptions {
   @scala.inline
-  def apply(
-    addTo: Anchor = null,
-    rotate: VectorOptions = null,
-    scale: VectorOptions | Double = null,
-    translate: VectorOptions = null,
-    updateSort: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): GroupOptions = {
+  def apply(): GroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (addTo != null) __obj.updateDynamic("addTo")(addTo.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateSort)) __obj.updateDynamic("updateSort")(updateSort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupOptions]
   }
+  @scala.inline
+  implicit class GroupOptionsOps[Self <: GroupOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUpdateSort(value: Boolean): Self = this.set("updateSort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateSort: Self = this.set("updateSort", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

@@ -27,16 +27,34 @@ trait SchemaCredential extends js.Object {
 
 object SchemaCredential {
   @scala.inline
-  def apply(
-    basicAuth: SchemaBasicAuth = null,
-    serviceAccount: SchemaServiceAccount = null,
-    useProjectDefault: js.UndefOr[Boolean] = js.undefined
-  ): SchemaCredential = {
+  def apply(): SchemaCredential = {
     val __obj = js.Dynamic.literal()
-    if (basicAuth != null) __obj.updateDynamic("basicAuth")(basicAuth.asInstanceOf[js.Any])
-    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
-    if (!js.isUndefined(useProjectDefault)) __obj.updateDynamic("useProjectDefault")(useProjectDefault.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCredential]
   }
+  @scala.inline
+  implicit class SchemaCredentialOps[Self <: SchemaCredential] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBasicAuth(value: SchemaBasicAuth): Self = this.set("basicAuth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasicAuth: Self = this.set("basicAuth", js.undefined)
+    @scala.inline
+    def setServiceAccount(value: SchemaServiceAccount): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    @scala.inline
+    def setUseProjectDefault(value: Boolean): Self = this.set("useProjectDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseProjectDefault: Self = this.set("useProjectDefault", js.undefined)
+  }
+  
 }
 

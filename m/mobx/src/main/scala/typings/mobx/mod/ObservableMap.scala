@@ -11,7 +11,12 @@ import scala.scalajs.js.annotation._
 class ObservableMap[K, V] ()
   extends typings.mobx.internalMod.ObservableMap[K, V] {
   def this(initialData: IObservableMapInitialValues[K, V]) = this()
-  def this(initialData: IObservableMapInitialValues[K, V], enhancer: IEnhancer[V]) = this()
-  def this(initialData: IObservableMapInitialValues[K, V], enhancer: IEnhancer[V], name: String) = this()
+  def this(initialData: js.UndefOr[IObservableMapInitialValues[K, V]], enhancer: IEnhancer[V]) = this()
+  def this(
+    initialData: js.UndefOr[IObservableMapInitialValues[K, V]],
+    enhancer: js.UndefOr[scala.Nothing],
+    name: String
+  ) = this()
+  def this(initialData: js.UndefOr[IObservableMapInitialValues[K, V]], enhancer: IEnhancer[V], name: String) = this()
 }
 

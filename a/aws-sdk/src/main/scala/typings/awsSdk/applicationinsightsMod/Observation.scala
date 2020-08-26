@@ -146,78 +146,158 @@ trait Observation extends js.Object {
 
 object Observation {
   @scala.inline
-  def apply(
-    CloudWatchEventDetailType: CloudWatchEventDetailType = null,
-    CloudWatchEventId: CloudWatchEventId = null,
-    CloudWatchEventSource: CloudWatchEventSource = null,
-    CodeDeployApplication: CodeDeployApplication = null,
-    CodeDeployDeploymentGroup: CodeDeployDeploymentGroup = null,
-    CodeDeployDeploymentId: CodeDeployDeploymentId = null,
-    CodeDeployInstanceGroupId: CodeDeployInstanceGroupId = null,
-    CodeDeployState: CodeDeployState = null,
-    Ec2State: Ec2State = null,
-    EndTime: EndTime = null,
-    HealthEventArn: HealthEventArn = null,
-    HealthEventDescription: HealthEventDescription = null,
-    HealthEventTypeCategory: HealthEventTypeCategory = null,
-    HealthEventTypeCode: HealthEventTypeCode = null,
-    HealthService: HealthService = null,
-    Id: ObservationId = null,
-    LineTime: LineTime = null,
-    LogFilter: LogFilter = null,
-    LogGroup: LogGroup = null,
-    LogText: LogText = null,
-    MetricName: MetricName = null,
-    MetricNamespace: MetricNamespace = null,
-    SourceARN: SourceARN = null,
-    SourceType: SourceType = null,
-    StartTime: StartTime = null,
-    Unit: Unit = null,
-    Value: js.UndefOr[Value] = js.undefined,
-    XRayErrorPercent: js.UndefOr[XRayErrorPercent] = js.undefined,
-    XRayFaultPercent: js.UndefOr[XRayFaultPercent] = js.undefined,
-    XRayNodeName: XRayNodeName = null,
-    XRayNodeType: XRayNodeType = null,
-    XRayRequestAverageLatency: js.UndefOr[XRayRequestAverageLatency] = js.undefined,
-    XRayRequestCount: js.UndefOr[XRayRequestCount] = js.undefined,
-    XRayThrottlePercent: js.UndefOr[XRayThrottlePercent] = js.undefined
-  ): Observation = {
+  def apply(): Observation = {
     val __obj = js.Dynamic.literal()
-    if (CloudWatchEventDetailType != null) __obj.updateDynamic("CloudWatchEventDetailType")(CloudWatchEventDetailType.asInstanceOf[js.Any])
-    if (CloudWatchEventId != null) __obj.updateDynamic("CloudWatchEventId")(CloudWatchEventId.asInstanceOf[js.Any])
-    if (CloudWatchEventSource != null) __obj.updateDynamic("CloudWatchEventSource")(CloudWatchEventSource.asInstanceOf[js.Any])
-    if (CodeDeployApplication != null) __obj.updateDynamic("CodeDeployApplication")(CodeDeployApplication.asInstanceOf[js.Any])
-    if (CodeDeployDeploymentGroup != null) __obj.updateDynamic("CodeDeployDeploymentGroup")(CodeDeployDeploymentGroup.asInstanceOf[js.Any])
-    if (CodeDeployDeploymentId != null) __obj.updateDynamic("CodeDeployDeploymentId")(CodeDeployDeploymentId.asInstanceOf[js.Any])
-    if (CodeDeployInstanceGroupId != null) __obj.updateDynamic("CodeDeployInstanceGroupId")(CodeDeployInstanceGroupId.asInstanceOf[js.Any])
-    if (CodeDeployState != null) __obj.updateDynamic("CodeDeployState")(CodeDeployState.asInstanceOf[js.Any])
-    if (Ec2State != null) __obj.updateDynamic("Ec2State")(Ec2State.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (HealthEventArn != null) __obj.updateDynamic("HealthEventArn")(HealthEventArn.asInstanceOf[js.Any])
-    if (HealthEventDescription != null) __obj.updateDynamic("HealthEventDescription")(HealthEventDescription.asInstanceOf[js.Any])
-    if (HealthEventTypeCategory != null) __obj.updateDynamic("HealthEventTypeCategory")(HealthEventTypeCategory.asInstanceOf[js.Any])
-    if (HealthEventTypeCode != null) __obj.updateDynamic("HealthEventTypeCode")(HealthEventTypeCode.asInstanceOf[js.Any])
-    if (HealthService != null) __obj.updateDynamic("HealthService")(HealthService.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (LineTime != null) __obj.updateDynamic("LineTime")(LineTime.asInstanceOf[js.Any])
-    if (LogFilter != null) __obj.updateDynamic("LogFilter")(LogFilter.asInstanceOf[js.Any])
-    if (LogGroup != null) __obj.updateDynamic("LogGroup")(LogGroup.asInstanceOf[js.Any])
-    if (LogText != null) __obj.updateDynamic("LogText")(LogText.asInstanceOf[js.Any])
-    if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName.asInstanceOf[js.Any])
-    if (MetricNamespace != null) __obj.updateDynamic("MetricNamespace")(MetricNamespace.asInstanceOf[js.Any])
-    if (SourceARN != null) __obj.updateDynamic("SourceARN")(SourceARN.asInstanceOf[js.Any])
-    if (SourceType != null) __obj.updateDynamic("SourceType")(SourceType.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
-    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(XRayErrorPercent)) __obj.updateDynamic("XRayErrorPercent")(XRayErrorPercent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(XRayFaultPercent)) __obj.updateDynamic("XRayFaultPercent")(XRayFaultPercent.get.asInstanceOf[js.Any])
-    if (XRayNodeName != null) __obj.updateDynamic("XRayNodeName")(XRayNodeName.asInstanceOf[js.Any])
-    if (XRayNodeType != null) __obj.updateDynamic("XRayNodeType")(XRayNodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(XRayRequestAverageLatency)) __obj.updateDynamic("XRayRequestAverageLatency")(XRayRequestAverageLatency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(XRayRequestCount)) __obj.updateDynamic("XRayRequestCount")(XRayRequestCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(XRayThrottlePercent)) __obj.updateDynamic("XRayThrottlePercent")(XRayThrottlePercent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Observation]
   }
+  @scala.inline
+  implicit class ObservationOps[Self <: Observation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchEventDetailType(value: CloudWatchEventDetailType): Self = this.set("CloudWatchEventDetailType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchEventDetailType: Self = this.set("CloudWatchEventDetailType", js.undefined)
+    @scala.inline
+    def setCloudWatchEventId(value: CloudWatchEventId): Self = this.set("CloudWatchEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchEventId: Self = this.set("CloudWatchEventId", js.undefined)
+    @scala.inline
+    def setCloudWatchEventSource(value: CloudWatchEventSource): Self = this.set("CloudWatchEventSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchEventSource: Self = this.set("CloudWatchEventSource", js.undefined)
+    @scala.inline
+    def setCodeDeployApplication(value: CodeDeployApplication): Self = this.set("CodeDeployApplication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeDeployApplication: Self = this.set("CodeDeployApplication", js.undefined)
+    @scala.inline
+    def setCodeDeployDeploymentGroup(value: CodeDeployDeploymentGroup): Self = this.set("CodeDeployDeploymentGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeDeployDeploymentGroup: Self = this.set("CodeDeployDeploymentGroup", js.undefined)
+    @scala.inline
+    def setCodeDeployDeploymentId(value: CodeDeployDeploymentId): Self = this.set("CodeDeployDeploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeDeployDeploymentId: Self = this.set("CodeDeployDeploymentId", js.undefined)
+    @scala.inline
+    def setCodeDeployInstanceGroupId(value: CodeDeployInstanceGroupId): Self = this.set("CodeDeployInstanceGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeDeployInstanceGroupId: Self = this.set("CodeDeployInstanceGroupId", js.undefined)
+    @scala.inline
+    def setCodeDeployState(value: CodeDeployState): Self = this.set("CodeDeployState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeDeployState: Self = this.set("CodeDeployState", js.undefined)
+    @scala.inline
+    def setEc2State(value: Ec2State): Self = this.set("Ec2State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2State: Self = this.set("Ec2State", js.undefined)
+    @scala.inline
+    def setEndTime(value: EndTime): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setHealthEventArn(value: HealthEventArn): Self = this.set("HealthEventArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthEventArn: Self = this.set("HealthEventArn", js.undefined)
+    @scala.inline
+    def setHealthEventDescription(value: HealthEventDescription): Self = this.set("HealthEventDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthEventDescription: Self = this.set("HealthEventDescription", js.undefined)
+    @scala.inline
+    def setHealthEventTypeCategory(value: HealthEventTypeCategory): Self = this.set("HealthEventTypeCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthEventTypeCategory: Self = this.set("HealthEventTypeCategory", js.undefined)
+    @scala.inline
+    def setHealthEventTypeCode(value: HealthEventTypeCode): Self = this.set("HealthEventTypeCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthEventTypeCode: Self = this.set("HealthEventTypeCode", js.undefined)
+    @scala.inline
+    def setHealthService(value: HealthService): Self = this.set("HealthService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthService: Self = this.set("HealthService", js.undefined)
+    @scala.inline
+    def setId(value: ObservationId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLineTime(value: LineTime): Self = this.set("LineTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineTime: Self = this.set("LineTime", js.undefined)
+    @scala.inline
+    def setLogFilter(value: LogFilter): Self = this.set("LogFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogFilter: Self = this.set("LogFilter", js.undefined)
+    @scala.inline
+    def setLogGroup(value: LogGroup): Self = this.set("LogGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroup: Self = this.set("LogGroup", js.undefined)
+    @scala.inline
+    def setLogText(value: LogText): Self = this.set("LogText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogText: Self = this.set("LogText", js.undefined)
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("MetricName", js.undefined)
+    @scala.inline
+    def setMetricNamespace(value: MetricNamespace): Self = this.set("MetricNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricNamespace: Self = this.set("MetricNamespace", js.undefined)
+    @scala.inline
+    def setSourceARN(value: SourceARN): Self = this.set("SourceARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceARN: Self = this.set("SourceARN", js.undefined)
+    @scala.inline
+    def setSourceType(value: SourceType): Self = this.set("SourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceType: Self = this.set("SourceType", js.undefined)
+    @scala.inline
+    def setStartTime(value: StartTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setUnit(value: Unit): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("Unit", js.undefined)
+    @scala.inline
+    def setValue(value: Value): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+    @scala.inline
+    def setXRayErrorPercent(value: XRayErrorPercent): Self = this.set("XRayErrorPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXRayErrorPercent: Self = this.set("XRayErrorPercent", js.undefined)
+    @scala.inline
+    def setXRayFaultPercent(value: XRayFaultPercent): Self = this.set("XRayFaultPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXRayFaultPercent: Self = this.set("XRayFaultPercent", js.undefined)
+    @scala.inline
+    def setXRayNodeName(value: XRayNodeName): Self = this.set("XRayNodeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXRayNodeName: Self = this.set("XRayNodeName", js.undefined)
+    @scala.inline
+    def setXRayNodeType(value: XRayNodeType): Self = this.set("XRayNodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXRayNodeType: Self = this.set("XRayNodeType", js.undefined)
+    @scala.inline
+    def setXRayRequestAverageLatency(value: XRayRequestAverageLatency): Self = this.set("XRayRequestAverageLatency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXRayRequestAverageLatency: Self = this.set("XRayRequestAverageLatency", js.undefined)
+    @scala.inline
+    def setXRayRequestCount(value: XRayRequestCount): Self = this.set("XRayRequestCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXRayRequestCount: Self = this.set("XRayRequestCount", js.undefined)
+    @scala.inline
+    def setXRayThrottlePercent(value: XRayThrottlePercent): Self = this.set("XRayThrottlePercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXRayThrottlePercent: Self = this.set("XRayThrottlePercent", js.undefined)
+  }
+  
 }
 

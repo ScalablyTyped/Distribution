@@ -27,7 +27,6 @@ class Context protected () extends js.Object {
   def getBean(name: String): js.Any = js.native
   /* private */ def getBeanName(constructor: js.Any): js.Any = js.native
   /* private */ def getBeansForParameters(parameters: js.Any, beanName: js.Any): js.Any = js.native
-  /* private */ def lookupBeanInstance(wiringBean: js.Any, beanName: js.Any): js.Any = js.native
   /* private */ def lookupBeanInstance(wiringBean: js.Any, beanName: js.Any, optional: js.Any): js.Any = js.native
   /* private */ def methodWireBean(bean: js.Any): js.Any = js.native
   /* private */ def methodWireBeans(beans: js.Any): js.Any = js.native
@@ -36,7 +35,6 @@ class Context protected () extends js.Object {
   /* private */ def setupComponents(): js.Any = js.native
   def wireBean(bean: js.Any): Unit = js.native
   def wireBean(bean: js.Any, afterPreCreateCallback: js.Function1[/* comp */ Component, Unit]): Unit = js.native
-  /* private */ def wireBeans(beans: js.Any): js.Any = js.native
   /* private */ def wireBeans(beans: js.Any, afterPreCreateCallback: js.Any): js.Any = js.native
 }
 

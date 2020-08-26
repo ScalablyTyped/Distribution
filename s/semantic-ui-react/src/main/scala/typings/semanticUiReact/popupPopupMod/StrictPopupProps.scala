@@ -1,9 +1,12 @@
 package typings.semanticUiReact.popupPopupMod
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.Ref
+import typings.react.mod.ReactNodeArray
+import typings.react.mod.ReactType
 import typings.react.mod.RefObject
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.popupContentMod.PopupContentProps
@@ -26,36 +29,40 @@ import typings.semanticUiReact.semanticUiReactStrings.mini
 import typings.semanticUiReact.semanticUiReactStrings.small
 import typings.semanticUiReact.semanticUiReactStrings.tiny
 import typings.semanticUiReact.semanticUiReactStrings.very
+import typings.std.Document
 import typings.std.HTMLElement
+import typings.std.Record
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrictPopupProps extends StrictPortalProps {
   /** An element type to render as (string or function). */
-  var as: js.UndefOr[js.Any] = js.undefined
+  var as: js.UndefOr[js.Any] = js.native
   /** Display the popup without the pointing arrow */
-  var basic: js.UndefOr[Boolean] = js.undefined
+  var basic: js.UndefOr[Boolean] = js.native
   /** Additional classes. */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /** Simple text content for the popover. */
-  var content: js.UndefOr[SemanticShorthandItem[PopupContentProps]] = js.undefined
+  var content: js.UndefOr[SemanticShorthandItem[PopupContentProps]] = js.native
   /** Existing element the pop-up should be bound to. */
-  var context: js.UndefOr[js.Object | RefObject[HTMLElement]] = js.undefined
+  var context: js.UndefOr[Document | Window | HTMLElement | RefObject[HTMLElement]] = js.native
   /** A disabled popup only renders its trigger. */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /** Enables the Popper.js event listeners. */
-  var eventsEnabled: js.UndefOr[Boolean] = js.undefined
+  var eventsEnabled: js.UndefOr[Boolean] = js.native
   /** A flowing Popup has no maximum width and continues to flow to fit its content. */
-  var flowing: js.UndefOr[Boolean] = js.undefined
+  var flowing: js.UndefOr[Boolean] = js.native
   /** Header displayed above the content in bold. */
-  var header: js.UndefOr[SemanticShorthandItem[PopupHeaderProps]] = js.undefined
+  var header: js.UndefOr[SemanticShorthandItem[PopupHeaderProps]] = js.native
   /** Hide the Popup when scrolling the window. */
-  var hideOnScroll: js.UndefOr[Boolean] = js.undefined
+  var hideOnScroll: js.UndefOr[Boolean] = js.native
   /** Whether the popup should not close on hover. */
-  var hoverable: js.UndefOr[Boolean] = js.undefined
+  var hoverable: js.UndefOr[Boolean] = js.native
   /** Invert the colors of the popup */
-  var inverted: js.UndefOr[Boolean] = js.undefined
+  var inverted: js.UndefOr[Boolean] = js.native
   /** Offset value to apply to rendered popup. Accepts the following units:
     * - px or unit-less, interpreted as pixels
     * - %, percentage relative to the length of the trigger element
@@ -63,9 +70,9 @@ trait StrictPopupProps extends StrictPortalProps {
     * - vw, CSS viewport width unit
     * - vh, CSS viewport height unit
     */
-  var offset: js.UndefOr[Double | String] = js.undefined
+  var offset: js.UndefOr[Double | String] = js.native
   /** Events triggering the popup. */
-  var on: js.UndefOr[hover | click | focus | (js.Array[hover | click | focus])] = js.undefined
+  var on: js.UndefOr[hover | click | focus | js.Array[focus]] = js.native
   /**
     * Called when a close event happens.
     *
@@ -75,7 +82,7 @@ trait StrictPopupProps extends StrictPortalProps {
   @JSName("onClose")
   var onClose_StrictPopupProps: js.UndefOr[
     js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps, Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * Called when the portal is mounted on the DOM.
     *
@@ -83,7 +90,7 @@ trait StrictPopupProps extends StrictPortalProps {
     * @param {object} data - All props.
     */
   @JSName("onMount")
-  var onMount_StrictPopupProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PopupProps, Unit]] = js.undefined
+  var onMount_StrictPopupProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PopupProps, Unit]] = js.native
   /**
     * Called when an open event happens.
     *
@@ -93,7 +100,7 @@ trait StrictPopupProps extends StrictPortalProps {
   @JSName("onOpen")
   var onOpen_StrictPopupProps: js.UndefOr[
     js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps, Unit]
-  ] = js.undefined
+  ] = js.native
   /**
     * Called when the portal is unmounted from the DOM.
     *
@@ -101,121 +108,163 @@ trait StrictPopupProps extends StrictPortalProps {
     * @param {object} data - All props.
     */
   @JSName("onUnmount")
-  var onUnmount_StrictPopupProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PopupProps, Unit]] = js.undefined
+  var onUnmount_StrictPopupProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PopupProps, Unit]] = js.native
   /** Disables automatic repositioning of the component, it will always be placed according to the position value. */
-  var pinned: js.UndefOr[Boolean] = js.undefined
+  var pinned: js.UndefOr[Boolean] = js.native
   /** A popup can have dependencies which update will schedule a position update. */
-  var popperDependencies: js.UndefOr[js.Array[_]] = js.undefined
+  var popperDependencies: js.UndefOr[js.Array[_]] = js.native
   /** An object containing custom settings for the Popper.js modifiers. */
-  var popperModifiers: js.UndefOr[js.Object] = js.undefined
+  var popperModifiers: js.UndefOr[Record[String, _]] = js.native
   /** Position for the popover. */
   var position: js.UndefOr[
     (`top left`) | (`top right`) | (`bottom right`) | (`bottom left`) | (`right center`) | (`left center`) | (`top center`) | (`bottom center`)
-  ] = js.undefined
+  ] = js.native
   /** Tells `Popper.js` to use the `position: fixed` strategy to position the popover. */
-  var positionFixed: js.UndefOr[Boolean] = js.undefined
+  var positionFixed: js.UndefOr[Boolean] = js.native
   /** Popup size. */
-  var size: js.UndefOr[mini | tiny | small | large | huge] = js.undefined
+  var size: js.UndefOr[mini | tiny | small | large | huge] = js.native
   /** Custom Popup style. */
-  var style: js.UndefOr[js.Object] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.native
   /** Popup width. */
-  var wide: js.UndefOr[Boolean | very] = js.undefined
+  var wide: js.UndefOr[Boolean | very] = js.native
 }
 
 object StrictPopupProps {
   @scala.inline
-  def apply(
-    as: js.Any = null,
-    basic: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    className: String = null,
-    closeOnDocumentClick: js.UndefOr[Boolean] = js.undefined,
-    closeOnEscape: js.UndefOr[Boolean] = js.undefined,
-    closeOnPortalMouseLeave: js.UndefOr[Boolean] = js.undefined,
-    closeOnTriggerBlur: js.UndefOr[Boolean] = js.undefined,
-    closeOnTriggerClick: js.UndefOr[Boolean] = js.undefined,
-    closeOnTriggerMouseLeave: js.UndefOr[Boolean] = js.undefined,
-    content: SemanticShorthandItem[PopupContentProps] = null,
-    context: js.Object | RefObject[HTMLElement] = null,
-    defaultOpen: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    eventPool: String = null,
-    eventsEnabled: js.UndefOr[Boolean] = js.undefined,
-    flowing: js.UndefOr[Boolean] = js.undefined,
-    header: SemanticShorthandItem[PopupHeaderProps] = null,
-    hideOnScroll: js.UndefOr[Boolean] = js.undefined,
-    hoverable: js.UndefOr[Boolean] = js.undefined,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    mountNode: js.Any = null,
-    mouseEnterDelay: js.UndefOr[Double] = js.undefined,
-    mouseLeaveDelay: js.UndefOr[Double] = js.undefined,
-    offset: Double | String = null,
-    on: hover | click | focus | (js.Array[hover | click | focus]) = null,
-    onClose: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps) => Unit = null,
-    onMount: (/* nothing */ Null, /* data */ PopupProps) => Unit = null,
-    onOpen: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps) => Unit = null,
-    onUnmount: (/* nothing */ Null, /* data */ PopupProps) => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    openOnTriggerClick: js.UndefOr[Boolean] = js.undefined,
-    openOnTriggerFocus: js.UndefOr[Boolean] = js.undefined,
-    openOnTriggerMouseEnter: js.UndefOr[Boolean] = js.undefined,
-    pinned: js.UndefOr[Boolean] = js.undefined,
-    popperDependencies: js.Array[_] = null,
-    popperModifiers: js.Object = null,
-    position: (`top left`) | (`top right`) | (`bottom right`) | (`bottom left`) | (`right center`) | (`left center`) | (`top center`) | (`bottom center`) = null,
-    positionFixed: js.UndefOr[Boolean] = js.undefined,
-    size: mini | tiny | small | large | huge = null,
-    style: js.Object = null,
-    trigger: ReactNode = null,
-    triggerRef: js.UndefOr[Null | Ref[_]] = js.undefined,
-    wide: Boolean | very = null
-  ): StrictPopupProps = {
+  def apply(): StrictPopupProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(basic)) __obj.updateDynamic("basic")(basic.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnDocumentClick)) __obj.updateDynamic("closeOnDocumentClick")(closeOnDocumentClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnPortalMouseLeave)) __obj.updateDynamic("closeOnPortalMouseLeave")(closeOnPortalMouseLeave.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnTriggerBlur)) __obj.updateDynamic("closeOnTriggerBlur")(closeOnTriggerBlur.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnTriggerClick)) __obj.updateDynamic("closeOnTriggerClick")(closeOnTriggerClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnTriggerMouseLeave)) __obj.updateDynamic("closeOnTriggerMouseLeave")(closeOnTriggerMouseLeave.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (eventPool != null) __obj.updateDynamic("eventPool")(eventPool.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flowing)) __obj.updateDynamic("flowing")(flowing.get.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnScroll)) __obj.updateDynamic("hideOnScroll")(hideOnScroll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
-    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseEnterDelay)) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseLeaveDelay)) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
-    if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction2(onMount))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2(onOpen))
-    if (onUnmount != null) __obj.updateDynamic("onUnmount")(js.Any.fromFunction2(onUnmount))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(openOnTriggerClick)) __obj.updateDynamic("openOnTriggerClick")(openOnTriggerClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(openOnTriggerFocus)) __obj.updateDynamic("openOnTriggerFocus")(openOnTriggerFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(openOnTriggerMouseEnter)) __obj.updateDynamic("openOnTriggerMouseEnter")(openOnTriggerMouseEnter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned.get.asInstanceOf[js.Any])
-    if (popperDependencies != null) __obj.updateDynamic("popperDependencies")(popperDependencies.asInstanceOf[js.Any])
-    if (popperModifiers != null) __obj.updateDynamic("popperModifiers")(popperModifiers.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(triggerRef)) __obj.updateDynamic("triggerRef")(triggerRef.asInstanceOf[js.Any])
-    if (wide != null) __obj.updateDynamic("wide")(wide.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictPopupProps]
   }
+  @scala.inline
+  implicit class StrictPopupPropsOps[Self <: StrictPopupProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAs(value: js.Any): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setBasic(value: Boolean): Self = this.set("basic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasic: Self = this.set("basic", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setContentFunction3(
+      value: (/* component */ ReactType[PopupContentProps], PopupContentProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("content", js.Any.fromFunction3(value))
+    @scala.inline
+    def setContent(value: SemanticShorthandItem[PopupContentProps]): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setContext(value: Document | Window | HTMLElement | RefObject[HTMLElement]): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setEventsEnabled(value: Boolean): Self = this.set("eventsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventsEnabled: Self = this.set("eventsEnabled", js.undefined)
+    @scala.inline
+    def setFlowing(value: Boolean): Self = this.set("flowing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowing: Self = this.set("flowing", js.undefined)
+    @scala.inline
+    def setHeaderFunction3(
+      value: (/* component */ ReactType[PopupHeaderProps], PopupHeaderProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("header", js.Any.fromFunction3(value))
+    @scala.inline
+    def setHeader(value: SemanticShorthandItem[PopupHeaderProps]): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setHideOnScroll(value: Boolean): Self = this.set("hideOnScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideOnScroll: Self = this.set("hideOnScroll", js.undefined)
+    @scala.inline
+    def setHoverable(value: Boolean): Self = this.set("hoverable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverable: Self = this.set("hoverable", js.undefined)
+    @scala.inline
+    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverted: Self = this.set("inverted", js.undefined)
+    @scala.inline
+    def setOffset(value: Double | String): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOnVarargs(value: focus*): Self = this.set("on", js.Array(value :_*))
+    @scala.inline
+    def setOn(value: hover | click | focus | js.Array[focus]): Self = this.set("on", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOn: Self = this.set("on", js.undefined)
+    @scala.inline
+    def setOnClose(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps) => Unit): Self = this.set("onClose", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnMount(value: (/* nothing */ Null, /* data */ PopupProps) => Unit): Self = this.set("onMount", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnMount: Self = this.set("onMount", js.undefined)
+    @scala.inline
+    def setOnOpen(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ PopupProps) => Unit): Self = this.set("onOpen", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    @scala.inline
+    def setOnUnmount(value: (/* nothing */ Null, /* data */ PopupProps) => Unit): Self = this.set("onUnmount", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnUnmount: Self = this.set("onUnmount", js.undefined)
+    @scala.inline
+    def setPinned(value: Boolean): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinned: Self = this.set("pinned", js.undefined)
+    @scala.inline
+    def setPopperDependenciesVarargs(value: js.Any*): Self = this.set("popperDependencies", js.Array(value :_*))
+    @scala.inline
+    def setPopperDependencies(value: js.Array[_]): Self = this.set("popperDependencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopperDependencies: Self = this.set("popperDependencies", js.undefined)
+    @scala.inline
+    def setPopperModifiers(value: Record[String, _]): Self = this.set("popperModifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopperModifiers: Self = this.set("popperModifiers", js.undefined)
+    @scala.inline
+    def setPosition(
+      value: (`top left`) | (`top right`) | (`bottom right`) | (`bottom left`) | (`right center`) | (`left center`) | (`top center`) | (`bottom center`)
+    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setPositionFixed(value: Boolean): Self = this.set("positionFixed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionFixed: Self = this.set("positionFixed", js.undefined)
+    @scala.inline
+    def setSize(value: mini | tiny | small | large | huge): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setWide(value: Boolean | very): Self = this.set("wide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWide: Self = this.set("wide", js.undefined)
+  }
+  
 }
 

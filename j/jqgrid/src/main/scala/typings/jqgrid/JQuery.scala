@@ -45,7 +45,21 @@ trait JQuery extends js.Object {
     * @returns {} 
     */
   def saveRow(rowid: String): Unit = js.native
+  def saveRow(
+    rowid: String,
+    successfunc: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    extraparam: js.Any
+  ): Unit = js.native
+  def saveRow(rowid: String, successfunc: js.UndefOr[scala.Nothing], url: String): Unit = js.native
+  def saveRow(rowid: String, successfunc: js.UndefOr[scala.Nothing], url: String, extraparam: js.Any): Unit = js.native
   def saveRow(rowid: String, successfunc: js.Function1[/* response */ js.Any, Boolean]): Unit = js.native
+  def saveRow(
+    rowid: String,
+    successfunc: js.Function1[/* response */ js.Any, Boolean],
+    url: js.UndefOr[scala.Nothing],
+    extraparam: js.Any
+  ): Unit = js.native
   def saveRow(rowid: String, successfunc: js.Function1[/* response */ js.Any, Boolean], url: String): Unit = js.native
   def saveRow(
     rowid: String,
@@ -54,6 +68,7 @@ trait JQuery extends js.Object {
     extraparam: js.Any
   ): Unit = js.native
   def saveRow(rowid: String, successfunc: Boolean): Unit = js.native
+  def saveRow(rowid: String, successfunc: Boolean, url: js.UndefOr[scala.Nothing], extraparam: js.Any): Unit = js.native
   def saveRow(rowid: String, successfunc: Boolean, url: String): Unit = js.native
   def saveRow(rowid: String, successfunc: Boolean, url: String, extraparam: js.Any): Unit = js.native
   /**

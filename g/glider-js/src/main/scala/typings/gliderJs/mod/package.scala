@@ -13,5 +13,8 @@ package object mod {
     /* d */ scala.Double, 
     scala.Double
   ]
-  type Selector = typings.std.HTMLElement | java.lang.String
+  // Selectors are either results of querying document DOM or a string
+  // Let's default to nullable Element to allow friction free migration
+  // from JS to TS
+  type Selector = typings.gliderJs.mod.global.Element | java.lang.String
 }

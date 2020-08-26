@@ -12,7 +12,7 @@ Just do http requests without all that weird nastiness from other libs
 | Keywords           | - |
 | # releases         | 12 |
 | # dependents       | 171 |
-| # downloads        | 3937891 |
+| # downloads        | 4287390 |
 | # stars            | 8 |
 
 ## Links

@@ -34,22 +34,46 @@ trait AwsS3ObjectDetails extends js.Object {
 
 object AwsS3ObjectDetails {
   @scala.inline
-  def apply(
-    ContentType: NonEmptyString = null,
-    ETag: NonEmptyString = null,
-    LastModified: NonEmptyString = null,
-    SSEKMSKeyId: NonEmptyString = null,
-    ServerSideEncryption: NonEmptyString = null,
-    VersionId: NonEmptyString = null
-  ): AwsS3ObjectDetails = {
+  def apply(): AwsS3ObjectDetails = {
     val __obj = js.Dynamic.literal()
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId.asInstanceOf[js.Any])
-    if (ServerSideEncryption != null) __obj.updateDynamic("ServerSideEncryption")(ServerSideEncryption.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsS3ObjectDetails]
   }
+  @scala.inline
+  implicit class AwsS3ObjectDetailsOps[Self <: AwsS3ObjectDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: NonEmptyString): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setETag(value: NonEmptyString): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("ETag", js.undefined)
+    @scala.inline
+    def setLastModified(value: NonEmptyString): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setSSEKMSKeyId(value: NonEmptyString): Self = this.set("SSEKMSKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSEKMSKeyId: Self = this.set("SSEKMSKeyId", js.undefined)
+    @scala.inline
+    def setServerSideEncryption(value: NonEmptyString): Self = this.set("ServerSideEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideEncryption: Self = this.set("ServerSideEncryption", js.undefined)
+    @scala.inline
+    def setVersionId(value: NonEmptyString): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+  }
+  
 }
 

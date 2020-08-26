@@ -30,20 +30,41 @@ trait ScheduleRunTest extends js.Object {
 
 object ScheduleRunTest {
   @scala.inline
-  def apply(
-    `type`: TestType,
-    filter: Filter = null,
-    parameters: TestParameters = null,
-    testPackageArn: AmazonResourceName = null,
-    testSpecArn: AmazonResourceName = null
-  ): ScheduleRunTest = {
+  def apply(`type`: TestType): ScheduleRunTest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (testPackageArn != null) __obj.updateDynamic("testPackageArn")(testPackageArn.asInstanceOf[js.Any])
-    if (testSpecArn != null) __obj.updateDynamic("testSpecArn")(testSpecArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleRunTest]
   }
+  @scala.inline
+  implicit class ScheduleRunTestOps[Self <: ScheduleRunTest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: TestType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: Filter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setParameters(value: TestParameters): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setTestPackageArn(value: AmazonResourceName): Self = this.set("testPackageArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestPackageArn: Self = this.set("testPackageArn", js.undefined)
+    @scala.inline
+    def setTestSpecArn(value: AmazonResourceName): Self = this.set("testSpecArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestSpecArn: Self = this.set("testSpecArn", js.undefined)
+  }
+  
 }
 

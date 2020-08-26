@@ -10,9 +10,9 @@ Standalone build of Babel for use in non-Node.js environments.
 | ------------------ | :-------------: |
 | Full name          | @babel/standalone |
 | Keywords           | babel, babeljs, 6to5, transpile, transpiler |
-| # releases         | 61 |
-| # dependents       | 58 |
-| # downloads        | 1623302 |
+| # releases         | 63 |
+| # dependents       | 61 |
+| # downloads        | 1779946 |
 | # stars            | 0 |
 
 ## Links

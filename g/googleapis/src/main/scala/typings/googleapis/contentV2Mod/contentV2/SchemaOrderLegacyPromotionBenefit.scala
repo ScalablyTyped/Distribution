@@ -33,20 +33,44 @@ trait SchemaOrderLegacyPromotionBenefit extends js.Object {
 
 object SchemaOrderLegacyPromotionBenefit {
   @scala.inline
-  def apply(
-    discount: SchemaPrice = null,
-    offerIds: js.Array[String] = null,
-    subType: String = null,
-    taxImpact: SchemaPrice = null,
-    `type`: String = null
-  ): SchemaOrderLegacyPromotionBenefit = {
+  def apply(): SchemaOrderLegacyPromotionBenefit = {
     val __obj = js.Dynamic.literal()
-    if (discount != null) __obj.updateDynamic("discount")(discount.asInstanceOf[js.Any])
-    if (offerIds != null) __obj.updateDynamic("offerIds")(offerIds.asInstanceOf[js.Any])
-    if (subType != null) __obj.updateDynamic("subType")(subType.asInstanceOf[js.Any])
-    if (taxImpact != null) __obj.updateDynamic("taxImpact")(taxImpact.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrderLegacyPromotionBenefit]
   }
+  @scala.inline
+  implicit class SchemaOrderLegacyPromotionBenefitOps[Self <: SchemaOrderLegacyPromotionBenefit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiscount(value: SchemaPrice): Self = this.set("discount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscount: Self = this.set("discount", js.undefined)
+    @scala.inline
+    def setOfferIdsVarargs(value: String*): Self = this.set("offerIds", js.Array(value :_*))
+    @scala.inline
+    def setOfferIds(value: js.Array[String]): Self = this.set("offerIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferIds: Self = this.set("offerIds", js.undefined)
+    @scala.inline
+    def setSubType(value: String): Self = this.set("subType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubType: Self = this.set("subType", js.undefined)
+    @scala.inline
+    def setTaxImpact(value: SchemaPrice): Self = this.set("taxImpact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaxImpact: Self = this.set("taxImpact", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -1,10 +1,8 @@
 package typings.ionicDiscover.publisherMod
 
-import typings.ionicDiscover.ionicDiscoverStrings.error
 import typings.node.NodeJS.Timer
 import typings.node.dgramMod.Socket
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,9 +27,6 @@ class Publisher protected ()
   var timer: js.UndefOr[Timer] = js.native
   /* protected */ def buildMessage(ip: String): PublisherMessage = js.native
   /* protected */ def getInterfaces(): js.Array[Interface] = js.native
-  /* CompleteClass */
-  @JSName("on")
-  override def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   /* protected */ def sayHello(): Unit = js.native
   def start(): js.Promise[Unit] = js.native
   def stop(): Unit = js.native

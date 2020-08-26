@@ -34,135 +34,136 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PayloadTypesHash_ extends js.Object {
-  var `0`: `19`
-  var `1`: `18`
-  var `10`: typings.rtpParser.anon.`10`
-  var `100`: Name
-  var `101`: Name
-  var `102`: Name
-  var `103`: Name
-  var `104`: Name
-  var `105`: Name
-  var `106`: Name
-  var `107`: Name
-  var `108`: Name
-  var `109`: Name
-  var `11`: `9`
-  var `110`: Name
-  var `111`: Name
-  var `112`: Name
-  var `113`: Name
-  var `114`: Name
-  var `115`: Name
-  var `116`: Name
-  var `117`: Name
-  var `118`: Name
-  var `119`: Name
-  var `12`: `8`
-  var `120`: Name
-  var `121`: Name
-  var `122`: Name
-  var `123`: Name
-  var `124`: Name
-  var `125`: Name
-  var `126`: Name
-  var `127`: Name
-  var `13`: `7`
-  var `14`: `6`
-  var `15`: ChannelsClockRateMediaTypeName
-  var `16`: ChannelsClockRateMediaType
-  var `17`: ChannelsClockRate
-  var `18`: Channels
-  var `19`: `18`
-  var `2`: `18`
-  var `20`: `5`
-  var `21`: `5`
-  var `22`: `5`
-  var `23`: `5`
-  var `24`: `4`
-  var `25`: `3`
-  var `26`: `2`
-  var `27`: `4`
-  var `28`: ClockRateMediaTypeName
-  var `29`: `4`
-  var `3`: `17`
-  var `30`: `4`
-  var `31`: MediaTypeName
-  var `32`: ClockRateMediaType
-  var `33`: MediaType
-  var `34`: ClockRate
-  var `35`: `1`
-  var `36`: `1`
-  var `37`: `1`
-  var `38`: `1`
-  var `39`: `1`
-  var `4`: `16`
-  var `40`: `1`
-  var `41`: `1`
-  var `42`: `1`
-  var `43`: `1`
-  var `44`: `1`
-  var `45`: `1`
-  var `46`: `1`
-  var `47`: `1`
-  var `48`: `1`
-  var `49`: `1`
-  var `5`: `15`
-  var `50`: `1`
-  var `51`: `1`
-  var `52`: `1`
-  var `53`: `1`
-  var `54`: `1`
-  var `55`: `1`
-  var `56`: `1`
-  var `57`: `1`
-  var `58`: `1`
-  var `59`: `1`
-  var `6`: `14`
-  var `60`: `1`
-  var `61`: `1`
-  var `62`: `1`
-  var `63`: `1`
-  var `64`: `1`
-  var `65`: `1`
-  var `66`: `1`
-  var `67`: `1`
-  var `68`: `1`
-  var `69`: `1`
-  var `7`: `13`
-  var `70`: `1`
-  var `71`: `1`
-  var `72`: `0`
-  var `73`: `0`
-  var `74`: `0`
-  var `75`: `0`
-  var `76`: `0`
-  var `77`: `1`
-  var `78`: `1`
-  var `79`: `1`
-  var `8`: `12`
-  var `80`: `1`
-  var `81`: `1`
-  var `82`: `1`
-  var `83`: `1`
-  var `84`: `1`
-  var `85`: `1`
-  var `86`: `1`
-  var `87`: `1`
-  var `88`: `1`
-  var `89`: `1`
-  var `9`: `11`
-  var `90`: `1`
-  var `91`: `1`
-  var `92`: `1`
-  var `93`: `1`
-  var `94`: `1`
-  var `95`: `1`
-  var `96`: Name
-  var `97`: Name
-  var `98`: Name
-  var `99`: Name
+  var `0`: `19` = js.native
+  var `1`: `18` = js.native
+  var `10`: typings.rtpParser.anon.`10` = js.native
+  var `100`: Name = js.native
+  var `101`: Name = js.native
+  var `102`: Name = js.native
+  var `103`: Name = js.native
+  var `104`: Name = js.native
+  var `105`: Name = js.native
+  var `106`: Name = js.native
+  var `107`: Name = js.native
+  var `108`: Name = js.native
+  var `109`: Name = js.native
+  var `11`: `9` = js.native
+  var `110`: Name = js.native
+  var `111`: Name = js.native
+  var `112`: Name = js.native
+  var `113`: Name = js.native
+  var `114`: Name = js.native
+  var `115`: Name = js.native
+  var `116`: Name = js.native
+  var `117`: Name = js.native
+  var `118`: Name = js.native
+  var `119`: Name = js.native
+  var `12`: `8` = js.native
+  var `120`: Name = js.native
+  var `121`: Name = js.native
+  var `122`: Name = js.native
+  var `123`: Name = js.native
+  var `124`: Name = js.native
+  var `125`: Name = js.native
+  var `126`: Name = js.native
+  var `127`: Name = js.native
+  var `13`: `7` = js.native
+  var `14`: `6` = js.native
+  var `15`: ChannelsClockRateMediaTypeName = js.native
+  var `16`: ChannelsClockRateMediaType = js.native
+  var `17`: ChannelsClockRate = js.native
+  var `18`: Channels = js.native
+  var `19`: `18` = js.native
+  var `2`: `18` = js.native
+  var `20`: `5` = js.native
+  var `21`: `5` = js.native
+  var `22`: `5` = js.native
+  var `23`: `5` = js.native
+  var `24`: `4` = js.native
+  var `25`: `3` = js.native
+  var `26`: `2` = js.native
+  var `27`: `4` = js.native
+  var `28`: ClockRateMediaTypeName = js.native
+  var `29`: `4` = js.native
+  var `3`: `17` = js.native
+  var `30`: `4` = js.native
+  var `31`: MediaTypeName = js.native
+  var `32`: ClockRateMediaType = js.native
+  var `33`: MediaType = js.native
+  var `34`: ClockRate = js.native
+  var `35`: `1` = js.native
+  var `36`: `1` = js.native
+  var `37`: `1` = js.native
+  var `38`: `1` = js.native
+  var `39`: `1` = js.native
+  var `4`: `16` = js.native
+  var `40`: `1` = js.native
+  var `41`: `1` = js.native
+  var `42`: `1` = js.native
+  var `43`: `1` = js.native
+  var `44`: `1` = js.native
+  var `45`: `1` = js.native
+  var `46`: `1` = js.native
+  var `47`: `1` = js.native
+  var `48`: `1` = js.native
+  var `49`: `1` = js.native
+  var `5`: `15` = js.native
+  var `50`: `1` = js.native
+  var `51`: `1` = js.native
+  var `52`: `1` = js.native
+  var `53`: `1` = js.native
+  var `54`: `1` = js.native
+  var `55`: `1` = js.native
+  var `56`: `1` = js.native
+  var `57`: `1` = js.native
+  var `58`: `1` = js.native
+  var `59`: `1` = js.native
+  var `6`: `14` = js.native
+  var `60`: `1` = js.native
+  var `61`: `1` = js.native
+  var `62`: `1` = js.native
+  var `63`: `1` = js.native
+  var `64`: `1` = js.native
+  var `65`: `1` = js.native
+  var `66`: `1` = js.native
+  var `67`: `1` = js.native
+  var `68`: `1` = js.native
+  var `69`: `1` = js.native
+  var `7`: `13` = js.native
+  var `70`: `1` = js.native
+  var `71`: `1` = js.native
+  var `72`: `0` = js.native
+  var `73`: `0` = js.native
+  var `74`: `0` = js.native
+  var `75`: `0` = js.native
+  var `76`: `0` = js.native
+  var `77`: `1` = js.native
+  var `78`: `1` = js.native
+  var `79`: `1` = js.native
+  var `8`: `12` = js.native
+  var `80`: `1` = js.native
+  var `81`: `1` = js.native
+  var `82`: `1` = js.native
+  var `83`: `1` = js.native
+  var `84`: `1` = js.native
+  var `85`: `1` = js.native
+  var `86`: `1` = js.native
+  var `87`: `1` = js.native
+  var `88`: `1` = js.native
+  var `89`: `1` = js.native
+  var `9`: `11` = js.native
+  var `90`: `1` = js.native
+  var `91`: `1` = js.native
+  var `92`: `1` = js.native
+  var `93`: `1` = js.native
+  var `94`: `1` = js.native
+  var `95`: `1` = js.native
+  var `96`: Name = js.native
+  var `97`: Name = js.native
+  var `98`: Name = js.native
+  var `99`: Name = js.native
 }
 
 object PayloadTypesHash_ {
@@ -428,5 +429,274 @@ object PayloadTypesHash_ {
     __obj.updateDynamic("99")(`99`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayloadTypesHash_]
   }
+  @scala.inline
+  implicit class PayloadTypesHash_Ops[Self <: PayloadTypesHash_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set0(value: `19`): Self = this.set("0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set1(value: `18`): Self = this.set("1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set10(value: `10`): Self = this.set("10", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set100(value: Name): Self = this.set("100", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set101(value: Name): Self = this.set("101", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set102(value: Name): Self = this.set("102", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set103(value: Name): Self = this.set("103", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set104(value: Name): Self = this.set("104", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set105(value: Name): Self = this.set("105", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set106(value: Name): Self = this.set("106", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set107(value: Name): Self = this.set("107", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set108(value: Name): Self = this.set("108", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set109(value: Name): Self = this.set("109", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set11(value: `9`): Self = this.set("11", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set110(value: Name): Self = this.set("110", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set111(value: Name): Self = this.set("111", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set112(value: Name): Self = this.set("112", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set113(value: Name): Self = this.set("113", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set114(value: Name): Self = this.set("114", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set115(value: Name): Self = this.set("115", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set116(value: Name): Self = this.set("116", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set117(value: Name): Self = this.set("117", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set118(value: Name): Self = this.set("118", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set119(value: Name): Self = this.set("119", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set12(value: `8`): Self = this.set("12", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set120(value: Name): Self = this.set("120", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set121(value: Name): Self = this.set("121", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set122(value: Name): Self = this.set("122", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set123(value: Name): Self = this.set("123", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set124(value: Name): Self = this.set("124", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set125(value: Name): Self = this.set("125", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set126(value: Name): Self = this.set("126", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set127(value: Name): Self = this.set("127", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set13(value: `7`): Self = this.set("13", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set14(value: `6`): Self = this.set("14", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set15(value: ChannelsClockRateMediaTypeName): Self = this.set("15", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set16(value: ChannelsClockRateMediaType): Self = this.set("16", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set17(value: ChannelsClockRate): Self = this.set("17", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set18(value: Channels): Self = this.set("18", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set19(value: `18`): Self = this.set("19", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2(value: `18`): Self = this.set("2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set20(value: `5`): Self = this.set("20", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set21(value: `5`): Self = this.set("21", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set22(value: `5`): Self = this.set("22", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set23(value: `5`): Self = this.set("23", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set24(value: `4`): Self = this.set("24", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set25(value: `3`): Self = this.set("25", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set26(value: `2`): Self = this.set("26", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set27(value: `4`): Self = this.set("27", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set28(value: ClockRateMediaTypeName): Self = this.set("28", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set29(value: `4`): Self = this.set("29", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set3(value: `17`): Self = this.set("3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set30(value: `4`): Self = this.set("30", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set31(value: MediaTypeName): Self = this.set("31", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set32(value: ClockRateMediaType): Self = this.set("32", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set33(value: MediaType): Self = this.set("33", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set34(value: ClockRate): Self = this.set("34", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set35(value: `1`): Self = this.set("35", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set36(value: `1`): Self = this.set("36", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set37(value: `1`): Self = this.set("37", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set38(value: `1`): Self = this.set("38", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set39(value: `1`): Self = this.set("39", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set4(value: `16`): Self = this.set("4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set40(value: `1`): Self = this.set("40", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set41(value: `1`): Self = this.set("41", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set42(value: `1`): Self = this.set("42", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set43(value: `1`): Self = this.set("43", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set44(value: `1`): Self = this.set("44", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set45(value: `1`): Self = this.set("45", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set46(value: `1`): Self = this.set("46", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set47(value: `1`): Self = this.set("47", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set48(value: `1`): Self = this.set("48", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set49(value: `1`): Self = this.set("49", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set5(value: `15`): Self = this.set("5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set50(value: `1`): Self = this.set("50", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set51(value: `1`): Self = this.set("51", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set52(value: `1`): Self = this.set("52", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set53(value: `1`): Self = this.set("53", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set54(value: `1`): Self = this.set("54", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set55(value: `1`): Self = this.set("55", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set56(value: `1`): Self = this.set("56", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set57(value: `1`): Self = this.set("57", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set58(value: `1`): Self = this.set("58", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set59(value: `1`): Self = this.set("59", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set6(value: `14`): Self = this.set("6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set60(value: `1`): Self = this.set("60", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set61(value: `1`): Self = this.set("61", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set62(value: `1`): Self = this.set("62", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set63(value: `1`): Self = this.set("63", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set64(value: `1`): Self = this.set("64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set65(value: `1`): Self = this.set("65", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set66(value: `1`): Self = this.set("66", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set67(value: `1`): Self = this.set("67", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set68(value: `1`): Self = this.set("68", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set69(value: `1`): Self = this.set("69", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set7(value: `13`): Self = this.set("7", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set70(value: `1`): Self = this.set("70", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set71(value: `1`): Self = this.set("71", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set72(value: `0`): Self = this.set("72", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set73(value: `0`): Self = this.set("73", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set74(value: `0`): Self = this.set("74", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set75(value: `0`): Self = this.set("75", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set76(value: `0`): Self = this.set("76", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set77(value: `1`): Self = this.set("77", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set78(value: `1`): Self = this.set("78", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set79(value: `1`): Self = this.set("79", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set8(value: `12`): Self = this.set("8", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set80(value: `1`): Self = this.set("80", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set81(value: `1`): Self = this.set("81", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set82(value: `1`): Self = this.set("82", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set83(value: `1`): Self = this.set("83", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set84(value: `1`): Self = this.set("84", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set85(value: `1`): Self = this.set("85", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set86(value: `1`): Self = this.set("86", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set87(value: `1`): Self = this.set("87", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set88(value: `1`): Self = this.set("88", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set89(value: `1`): Self = this.set("89", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set9(value: `11`): Self = this.set("9", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set90(value: `1`): Self = this.set("90", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set91(value: `1`): Self = this.set("91", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set92(value: `1`): Self = this.set("92", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set93(value: `1`): Self = this.set("93", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set94(value: `1`): Self = this.set("94", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set95(value: `1`): Self = this.set("95", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set96(value: Name): Self = this.set("96", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set97(value: Name): Self = this.set("97", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set98(value: Name): Self = this.set("98", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set99(value: Name): Self = this.set("99", value.asInstanceOf[js.Any])
+  }
+  
 }
 

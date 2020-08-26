@@ -13,11 +13,13 @@ trait UIHandler extends js.Object {
   var selector: String = js.native
   def bindUI(element: HTMLElement): Unit = js.native
   def clickElement(element: HTMLElement): Unit = js.native
+  def clickElement(element: HTMLElement, options: js.UndefOr[scala.Nothing], event: Event): Unit = js.native
   def clickElement(element: HTMLElement, options: js.Object): Unit = js.native
   def clickElement(element: HTMLElement, options: js.Object, event: Event): Unit = js.native
   def handleUI(event: Event): Unit = js.native
   def isUrlAllowed(url: String): Boolean = js.native
   def submitForm(element: HTMLFormElement): Unit = js.native
+  def submitForm(element: HTMLFormElement, options: js.UndefOr[scala.Nothing], event: Event): Unit = js.native
   def submitForm(element: HTMLFormElement, options: js.Object): Unit = js.native
   def submitForm(element: HTMLFormElement, options: js.Object, event: Event): Unit = js.native
 }

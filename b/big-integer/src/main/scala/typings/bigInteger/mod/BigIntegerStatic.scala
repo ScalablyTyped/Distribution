@@ -2042,16 +2042,22 @@ trait BigIntegerStatic extends js.Object {
     * caseSensitive defaults to false.
     */
   def apply(string: String): BigInteger = js.native
+  def apply(
+    string: String,
+    base: js.UndefOr[BigNumber],
+    alphabet: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean
+  ): BigInteger = js.native
+  def apply(string: String, base: js.UndefOr[BigNumber], alphabet: String): BigInteger = js.native
+  def apply(string: String, base: js.UndefOr[BigNumber], alphabet: String, caseSensitive: Boolean): BigInteger = js.native
   def apply(string: String, base: BigNumber): BigInteger = js.native
-  def apply(string: String, base: BigNumber, alphabet: String): BigInteger = js.native
-  def apply(string: String, base: BigNumber, alphabet: String, caseSensitive: Boolean): BigInteger = js.native
   /**
     * Constructs a bigInt from an array of digits in specified base.
     * The optional isNegative flag will make the number negative.
     */
   def fromArray(digits: js.Array[BigNumber]): BigInteger = js.native
+  def fromArray(digits: js.Array[BigNumber], base: js.UndefOr[BigNumber], isNegative: Boolean): BigInteger = js.native
   def fromArray(digits: js.Array[BigNumber], base: BigNumber): BigInteger = js.native
-  def fromArray(digits: js.Array[BigNumber], base: BigNumber, isNegative: Boolean): BigInteger = js.native
   /**
     * Finds the greatest common denominator of a and b.
     */

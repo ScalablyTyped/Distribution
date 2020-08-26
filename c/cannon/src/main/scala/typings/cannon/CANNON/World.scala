@@ -47,6 +47,7 @@ trait World extends EventTarget {
   def remove(body: Body): Unit = js.native
   def removeConstraint(c: Constraint): Unit = js.native
   def step(dy: Double): Unit = js.native
+  def step(dy: Double, timeSinceLastCalled: js.UndefOr[scala.Nothing], maxSubSteps: Double): Unit = js.native
   def step(dy: Double, timeSinceLastCalled: Double): Unit = js.native
   def step(dy: Double, timeSinceLastCalled: Double, maxSubSteps: Double): Unit = js.native
 }

@@ -12,7 +12,7 @@ A node.js binding to MariaDB's non-blocking (MySQL-compatible) client library
 | Keywords           | mysql, sql, client, mariadb, async, nonblocking |
 | # releases         | 1 |
 | # dependents       | 30 |
-| # downloads        | 89299 |
+| # downloads        | 84417 |
 | # stars            | 19 |
 
 ## Links

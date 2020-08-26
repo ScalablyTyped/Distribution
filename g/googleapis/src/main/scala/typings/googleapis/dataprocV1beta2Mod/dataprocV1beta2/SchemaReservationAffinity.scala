@@ -25,12 +25,36 @@ trait SchemaReservationAffinity extends js.Object {
 
 object SchemaReservationAffinity {
   @scala.inline
-  def apply(consumeReservationType: String = null, key: String = null, values: js.Array[String] = null): SchemaReservationAffinity = {
+  def apply(): SchemaReservationAffinity = {
     val __obj = js.Dynamic.literal()
-    if (consumeReservationType != null) __obj.updateDynamic("consumeReservationType")(consumeReservationType.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReservationAffinity]
   }
+  @scala.inline
+  implicit class SchemaReservationAffinityOps[Self <: SchemaReservationAffinity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumeReservationType(value: String): Self = this.set("consumeReservationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumeReservationType: Self = this.set("consumeReservationType", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: String*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: js.Array[String]): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

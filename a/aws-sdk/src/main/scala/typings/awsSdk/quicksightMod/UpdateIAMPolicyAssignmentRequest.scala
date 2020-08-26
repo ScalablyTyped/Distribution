@@ -34,19 +34,40 @@ trait UpdateIAMPolicyAssignmentRequest extends js.Object {
 
 object UpdateIAMPolicyAssignmentRequest {
   @scala.inline
-  def apply(
-    AssignmentName: IAMPolicyAssignmentName,
-    AwsAccountId: AwsAccountId,
-    Namespace: Namespace,
-    AssignmentStatus: AssignmentStatus = null,
-    Identities: IdentityMap = null,
-    PolicyArn: Arn = null
-  ): UpdateIAMPolicyAssignmentRequest = {
+  def apply(AssignmentName: IAMPolicyAssignmentName, AwsAccountId: AwsAccountId, Namespace: Namespace): UpdateIAMPolicyAssignmentRequest = {
     val __obj = js.Dynamic.literal(AssignmentName = AssignmentName.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any])
-    if (AssignmentStatus != null) __obj.updateDynamic("AssignmentStatus")(AssignmentStatus.asInstanceOf[js.Any])
-    if (Identities != null) __obj.updateDynamic("Identities")(Identities.asInstanceOf[js.Any])
-    if (PolicyArn != null) __obj.updateDynamic("PolicyArn")(PolicyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateIAMPolicyAssignmentRequest]
   }
+  @scala.inline
+  implicit class UpdateIAMPolicyAssignmentRequestOps[Self <: UpdateIAMPolicyAssignmentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignmentName(value: IAMPolicyAssignmentName): Self = this.set("AssignmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssignmentStatus(value: AssignmentStatus): Self = this.set("AssignmentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentStatus: Self = this.set("AssignmentStatus", js.undefined)
+    @scala.inline
+    def setIdentities(value: IdentityMap): Self = this.set("Identities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentities: Self = this.set("Identities", js.undefined)
+    @scala.inline
+    def setPolicyArn(value: Arn): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyArn: Self = this.set("PolicyArn", js.undefined)
+  }
+  
 }
 

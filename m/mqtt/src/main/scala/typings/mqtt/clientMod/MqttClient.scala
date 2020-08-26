@@ -4,6 +4,7 @@ import typings.mqtt.clientOptionsMod.IClientOptions
 import typings.mqtt.clientOptionsMod.IClientPublishOptions
 import typings.mqtt.clientOptionsMod.IClientReconnectOptions
 import typings.mqtt.clientOptionsMod.IClientSubscribeOptions
+import typings.mqtt.mqttStrings.connect
 import typings.mqtt.mqttStrings.error
 import typings.mqtt.mqttStrings.message
 import typings.mqtt.mqttStrings.packetreceive
@@ -39,7 +40,11 @@ class MqttClient protected () extends EventEmitter {
     * @api public
     */
   def end(): this.type = js.native
+  def end(force: js.UndefOr[scala.Nothing], opts: js.UndefOr[scala.Nothing], cb: CloseCallback): this.type = js.native
+  def end(force: js.UndefOr[scala.Nothing], opts: js.Object): this.type = js.native
+  def end(force: js.UndefOr[scala.Nothing], opts: js.Object, cb: CloseCallback): this.type = js.native
   def end(force: Boolean): this.type = js.native
+  def end(force: Boolean, opts: js.UndefOr[scala.Nothing], cb: CloseCallback): this.type = js.native
   def end(force: Boolean, opts: js.Object): this.type = js.native
   def end(force: Boolean, opts: js.Object, cb: CloseCallback): this.type = js.native
   /**
@@ -57,6 +62,8 @@ class MqttClient protected () extends EventEmitter {
   def handleMessage(packet: Packet, callback: PacketCallback): Unit = js.native
   def on(event: String, cb: js.Function): this.type = js.native
   @JSName("on")
+  def on_connect(event: connect, cb: OnConnectCallback): this.type = js.native
+  @JSName("on")
   def on_error(event: error, cb: OnErrorCallback): this.type = js.native
   @JSName("on")
   def on_message(event: message, cb: OnMessageCallback): this.type = js.native
@@ -65,6 +72,8 @@ class MqttClient protected () extends EventEmitter {
   @JSName("on")
   def on_packetsend(event: packetsend, cb: OnPacketCallback): this.type = js.native
   def once(event: String, cb: js.Function): this.type = js.native
+  @JSName("once")
+  def once_connect(event: connect, cb: OnConnectCallback): this.type = js.native
   @JSName("once")
   def once_error(event: error, cb: OnErrorCallback): this.type = js.native
   @JSName("once")
@@ -168,9 +177,11 @@ class MqttClient protected () extends EventEmitter {
     * @example client.unsubscribe('topic', opts, console.log)
     */
   def unsubscribe(topic: String): this.type = js.native
+  def unsubscribe(topic: String, opts: js.UndefOr[scala.Nothing], callback: PacketCallback): this.type = js.native
   def unsubscribe(topic: String, opts: js.Object): this.type = js.native
   def unsubscribe(topic: String, opts: js.Object, callback: PacketCallback): this.type = js.native
   def unsubscribe(topic: js.Array[String]): this.type = js.native
+  def unsubscribe(topic: js.Array[String], opts: js.UndefOr[scala.Nothing], callback: PacketCallback): this.type = js.native
   def unsubscribe(topic: js.Array[String], opts: js.Object): this.type = js.native
   def unsubscribe(topic: js.Array[String], opts: js.Object, callback: PacketCallback): this.type = js.native
 }

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery-deferred"
-version := "0.3-dt-20200117Z-394b2b"
-scalaVersion := "2.13.2"
+version := "0.3-dt-20200117Z-ffedf0"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

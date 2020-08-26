@@ -11,8 +11,6 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
   var disposed: Boolean = js.native
   /** Clear out any existing subscribers. */
   def clear(): Unit = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   // Event Emission
   /** Invoke the handlers registered via ::on for the given event name. */
   def emit[T /* <: /* keyof OptionalEmissions */ String */](eventName: T): Unit = js.native

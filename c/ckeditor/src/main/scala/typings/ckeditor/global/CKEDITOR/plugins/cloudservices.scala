@@ -15,7 +15,19 @@ object cloudservices extends js.Object {
     def this(editor: typings.ckeditor.CKEDITOR.editor, fileOrData: Blob) = this()
     def this(editor: typings.ckeditor.CKEDITOR.editor, fileOrData: String, fileName: String) = this()
     def this(editor: typings.ckeditor.CKEDITOR.editor, fileOrData: Blob, fileName: String) = this()
+    def this(
+      editor: typings.ckeditor.CKEDITOR.editor,
+      fileOrData: String,
+      fileName: js.UndefOr[scala.Nothing],
+      token: String
+    ) = this()
     def this(editor: typings.ckeditor.CKEDITOR.editor, fileOrData: String, fileName: String, token: String) = this()
+    def this(
+      editor: typings.ckeditor.CKEDITOR.editor,
+      fileOrData: Blob,
+      fileName: js.UndefOr[scala.Nothing],
+      token: String
+    ) = this()
     def this(editor: typings.ckeditor.CKEDITOR.editor, fileOrData: Blob, fileName: String, token: String) = this()
   }
   

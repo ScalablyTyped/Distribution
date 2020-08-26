@@ -16,9 +16,11 @@ object mod extends js.Object {
     @js.native
     trait IAuthService extends js.Object {
       def loginCancelled(): Unit = js.native
+      def loginCancelled(data: js.UndefOr[scala.Nothing], reason: js.Any): Unit = js.native
       def loginCancelled(data: js.Any): Unit = js.native
       def loginCancelled(data: js.Any, reason: js.Any): Unit = js.native
       def loginConfirmed(): Unit = js.native
+      def loginConfirmed(data: js.UndefOr[scala.Nothing], configUpdater: Function): Unit = js.native
       def loginConfirmed(data: js.Any): Unit = js.native
       def loginConfirmed(data: js.Any, configUpdater: Function): Unit = js.native
     }

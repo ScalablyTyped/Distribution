@@ -11,8 +11,8 @@ filesystem bindings for tar-stream
 | Full name          | tar-fs |
 | Keywords           | tar, fs, file, tarball, directory, stream |
 | # releases         | 5 |
-| # dependents       | 503 |
-| # downloads        | 49933756 |
+| # dependents       | 505 |
+| # downloads        | 51393940 |
 | # stars            | 12 |
 
 ## Links

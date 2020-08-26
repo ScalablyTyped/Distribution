@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * Provides a unified interface for the new-style service {@link TextOutputStream} .
   * @since LibreOffice 4.1
   */
+@js.native
 trait XTextOutputStream2
   extends XTextOutputStream
      with XActiveDataSource

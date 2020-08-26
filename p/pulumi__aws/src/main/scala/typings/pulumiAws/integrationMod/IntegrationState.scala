@@ -75,40 +75,82 @@ trait IntegrationState extends js.Object {
 
 object IntegrationState {
   @scala.inline
-  def apply(
-    apiId: Input[String] = null,
-    connectionId: Input[String] = null,
-    connectionType: Input[String] = null,
-    contentHandlingStrategy: Input[String] = null,
-    credentialsArn: Input[String] = null,
-    description: Input[String] = null,
-    integrationMethod: Input[String] = null,
-    integrationResponseSelectionExpression: Input[String] = null,
-    integrationType: Input[String] = null,
-    integrationUri: Input[String] = null,
-    passthroughBehavior: Input[String] = null,
-    payloadFormatVersion: Input[String] = null,
-    requestTemplates: Input[StringDictionary[Input[String]]] = null,
-    templateSelectionExpression: Input[String] = null,
-    timeoutMilliseconds: Input[Double] = null
-  ): IntegrationState = {
+  def apply(): IntegrationState = {
     val __obj = js.Dynamic.literal()
-    if (apiId != null) __obj.updateDynamic("apiId")(apiId.asInstanceOf[js.Any])
-    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
-    if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
-    if (contentHandlingStrategy != null) __obj.updateDynamic("contentHandlingStrategy")(contentHandlingStrategy.asInstanceOf[js.Any])
-    if (credentialsArn != null) __obj.updateDynamic("credentialsArn")(credentialsArn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (integrationMethod != null) __obj.updateDynamic("integrationMethod")(integrationMethod.asInstanceOf[js.Any])
-    if (integrationResponseSelectionExpression != null) __obj.updateDynamic("integrationResponseSelectionExpression")(integrationResponseSelectionExpression.asInstanceOf[js.Any])
-    if (integrationType != null) __obj.updateDynamic("integrationType")(integrationType.asInstanceOf[js.Any])
-    if (integrationUri != null) __obj.updateDynamic("integrationUri")(integrationUri.asInstanceOf[js.Any])
-    if (passthroughBehavior != null) __obj.updateDynamic("passthroughBehavior")(passthroughBehavior.asInstanceOf[js.Any])
-    if (payloadFormatVersion != null) __obj.updateDynamic("payloadFormatVersion")(payloadFormatVersion.asInstanceOf[js.Any])
-    if (requestTemplates != null) __obj.updateDynamic("requestTemplates")(requestTemplates.asInstanceOf[js.Any])
-    if (templateSelectionExpression != null) __obj.updateDynamic("templateSelectionExpression")(templateSelectionExpression.asInstanceOf[js.Any])
-    if (timeoutMilliseconds != null) __obj.updateDynamic("timeoutMilliseconds")(timeoutMilliseconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegrationState]
   }
+  @scala.inline
+  implicit class IntegrationStateOps[Self <: IntegrationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiId(value: Input[String]): Self = this.set("apiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiId: Self = this.set("apiId", js.undefined)
+    @scala.inline
+    def setConnectionId(value: Input[String]): Self = this.set("connectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionId: Self = this.set("connectionId", js.undefined)
+    @scala.inline
+    def setConnectionType(value: Input[String]): Self = this.set("connectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionType: Self = this.set("connectionType", js.undefined)
+    @scala.inline
+    def setContentHandlingStrategy(value: Input[String]): Self = this.set("contentHandlingStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentHandlingStrategy: Self = this.set("contentHandlingStrategy", js.undefined)
+    @scala.inline
+    def setCredentialsArn(value: Input[String]): Self = this.set("credentialsArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentialsArn: Self = this.set("credentialsArn", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setIntegrationMethod(value: Input[String]): Self = this.set("integrationMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrationMethod: Self = this.set("integrationMethod", js.undefined)
+    @scala.inline
+    def setIntegrationResponseSelectionExpression(value: Input[String]): Self = this.set("integrationResponseSelectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrationResponseSelectionExpression: Self = this.set("integrationResponseSelectionExpression", js.undefined)
+    @scala.inline
+    def setIntegrationType(value: Input[String]): Self = this.set("integrationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrationType: Self = this.set("integrationType", js.undefined)
+    @scala.inline
+    def setIntegrationUri(value: Input[String]): Self = this.set("integrationUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrationUri: Self = this.set("integrationUri", js.undefined)
+    @scala.inline
+    def setPassthroughBehavior(value: Input[String]): Self = this.set("passthroughBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassthroughBehavior: Self = this.set("passthroughBehavior", js.undefined)
+    @scala.inline
+    def setPayloadFormatVersion(value: Input[String]): Self = this.set("payloadFormatVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayloadFormatVersion: Self = this.set("payloadFormatVersion", js.undefined)
+    @scala.inline
+    def setRequestTemplates(value: Input[StringDictionary[Input[String]]]): Self = this.set("requestTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestTemplates: Self = this.set("requestTemplates", js.undefined)
+    @scala.inline
+    def setTemplateSelectionExpression(value: Input[String]): Self = this.set("templateSelectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateSelectionExpression: Self = this.set("templateSelectionExpression", js.undefined)
+    @scala.inline
+    def setTimeoutMilliseconds(value: Input[Double]): Self = this.set("timeoutMilliseconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutMilliseconds: Self = this.set("timeoutMilliseconds", js.undefined)
+  }
+  
 }
 

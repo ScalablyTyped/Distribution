@@ -12,7 +12,7 @@ A React based date range picker
 | Keywords           | react, datepicker, calendar, date, range, react-component |
 | # releases         | 6 |
 | # dependents       | 6 |
-| # downloads        | 272150 |
+| # downloads        | 286929 |
 | # stars            | 1 |
 
 ## Links

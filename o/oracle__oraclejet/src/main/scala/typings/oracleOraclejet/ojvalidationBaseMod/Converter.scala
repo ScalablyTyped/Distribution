@@ -4,28 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Converter[V] extends js.Object {
-  var getHint: js.UndefOr[js.Function0[String | Null]] = js.undefined
-  var getOptions: js.UndefOr[js.Function0[js.Object]] = js.undefined
-  var resolvedOptions: js.UndefOr[js.Function0[js.Object]] = js.undefined
-  def format(value: V): String | Null
-  def parse(value: String): V | Null
+  var getHint: js.UndefOr[js.Function0[String | Null]] = js.native
+  var getOptions: js.UndefOr[js.Function0[js.Object]] = js.native
+  var resolvedOptions: js.UndefOr[js.Function0[js.Object]] = js.native
+  def format(value: V): String | Null = js.native
+  def parse(value: String): V | Null = js.native
 }
 
 object Converter {
   @scala.inline
-  def apply[V](
-    format: V => String | Null,
-    parse: String => V | Null,
-    getHint: () => String | Null = null,
-    getOptions: () => js.Object = null,
-    resolvedOptions: () => js.Object = null
-  ): Converter[V] = {
+  def apply[V](format: V => String | Null, parse: String => V | Null): Converter[V] = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), parse = js.Any.fromFunction1(parse))
-    if (getHint != null) __obj.updateDynamic("getHint")(js.Any.fromFunction0(getHint))
-    if (getOptions != null) __obj.updateDynamic("getOptions")(js.Any.fromFunction0(getOptions))
-    if (resolvedOptions != null) __obj.updateDynamic("resolvedOptions")(js.Any.fromFunction0(resolvedOptions))
     __obj.asInstanceOf[Converter[V]]
   }
+  @scala.inline
+  implicit class ConverterOps[Self <: Converter[_], V] (val x: Self with Converter[V]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: V => String | Null): Self = this.set("format", js.Any.fromFunction1(value))
+    @scala.inline
+    def setParse(value: String => V | Null): Self = this.set("parse", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetHint(value: () => String | Null): Self = this.set("getHint", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetHint: Self = this.set("getHint", js.undefined)
+    @scala.inline
+    def setGetOptions(value: () => js.Object): Self = this.set("getOptions", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetOptions: Self = this.set("getOptions", js.undefined)
+    @scala.inline
+    def setResolvedOptions(value: () => js.Object): Self = this.set("resolvedOptions", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteResolvedOptions: Self = this.set("resolvedOptions", js.undefined)
+  }
+  
 }
 

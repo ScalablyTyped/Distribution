@@ -10,8 +10,8 @@ multipart/form-data parser which supports streaming
 | Full name          | multiparty |
 | Keywords           | file, upload, formidable, stream, s3 |
 | # releases         | 4 |
-| # dependents       | 359 |
-| # downloads        | 15420445 |
+| # dependents       | 361 |
+| # downloads        | 15244866 |
 | # stars            | 66 |
 
 ## Links

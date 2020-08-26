@@ -11,8 +11,8 @@ Tests whether one path is inside another path
 | Full name          | path-is-inside |
 | Keywords           | path, directory, folder, inside, relative |
 | # releases         | 0 |
-| # dependents       | 152 |
-| # downloads        | 365624847 |
+| # dependents       | 153 |
+| # downloads        | 373129511 |
 | # stars            | 4 |
 
 ## Links

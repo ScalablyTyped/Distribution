@@ -24,8 +24,10 @@ trait TaskMethod extends js.Object {
     * @param option task options
     */
   def apply(name: String, deps: js.Array[String]): js.Any = js.native
+  def apply(name: String, deps: js.Array[String], fn: js.UndefOr[scala.Nothing], option: TaskOptions): js.Any = js.native
   def apply(name: String, deps: js.Array[String], fn: TaskCallback): js.Any = js.native
   def apply(name: String, deps: js.Array[String], fn: TaskCallback, option: TaskOptions): js.Any = js.native
+  def apply(name: String, fn: js.UndefOr[scala.Nothing], option: TaskOptions): js.Any = js.native
   def apply(name: String, fn: TaskCallback): js.Any = js.native
   def apply(name: String, fn: TaskCallback, option: TaskOptions): js.Any = js.native
   /**
@@ -47,8 +49,16 @@ trait TaskMethod extends js.Object {
     * @param option task options
     */
   def apply(name: String, help: HelpOption, deps: js.Array[String]): js.Any = js.native
+  def apply(
+    name: String,
+    help: HelpOption,
+    deps: js.Array[String],
+    fn: js.UndefOr[scala.Nothing],
+    option: TaskOptions
+  ): js.Any = js.native
   def apply(name: String, help: HelpOption, deps: js.Array[String], fn: TaskCallback): js.Any = js.native
   def apply(name: String, help: HelpOption, deps: js.Array[String], fn: TaskCallback, option: TaskOptions): js.Any = js.native
+  def apply(name: String, help: HelpOption, fn: js.UndefOr[scala.Nothing], option: TaskOptions): js.Any = js.native
   def apply(name: String, help: HelpOption, fn: TaskCallback): js.Any = js.native
   def apply(name: String, help: HelpOption, fn: TaskCallback, option: TaskOptions): js.Any = js.native
 }

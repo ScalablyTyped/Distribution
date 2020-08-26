@@ -31,20 +31,42 @@ trait DirectorySelfServicePermissions extends js.Object {
 
 object DirectorySelfServicePermissions {
   @scala.inline
-  def apply(
-    changeComputeType: Input[Boolean] = null,
-    increaseVolumeSize: Input[Boolean] = null,
-    rebuildWorkspace: Input[Boolean] = null,
-    restartWorkspace: Input[Boolean] = null,
-    switchRunningMode: Input[Boolean] = null
-  ): DirectorySelfServicePermissions = {
+  def apply(): DirectorySelfServicePermissions = {
     val __obj = js.Dynamic.literal()
-    if (changeComputeType != null) __obj.updateDynamic("changeComputeType")(changeComputeType.asInstanceOf[js.Any])
-    if (increaseVolumeSize != null) __obj.updateDynamic("increaseVolumeSize")(increaseVolumeSize.asInstanceOf[js.Any])
-    if (rebuildWorkspace != null) __obj.updateDynamic("rebuildWorkspace")(rebuildWorkspace.asInstanceOf[js.Any])
-    if (restartWorkspace != null) __obj.updateDynamic("restartWorkspace")(restartWorkspace.asInstanceOf[js.Any])
-    if (switchRunningMode != null) __obj.updateDynamic("switchRunningMode")(switchRunningMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectorySelfServicePermissions]
   }
+  @scala.inline
+  implicit class DirectorySelfServicePermissionsOps[Self <: DirectorySelfServicePermissions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeComputeType(value: Input[Boolean]): Self = this.set("changeComputeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeComputeType: Self = this.set("changeComputeType", js.undefined)
+    @scala.inline
+    def setIncreaseVolumeSize(value: Input[Boolean]): Self = this.set("increaseVolumeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncreaseVolumeSize: Self = this.set("increaseVolumeSize", js.undefined)
+    @scala.inline
+    def setRebuildWorkspace(value: Input[Boolean]): Self = this.set("rebuildWorkspace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRebuildWorkspace: Self = this.set("rebuildWorkspace", js.undefined)
+    @scala.inline
+    def setRestartWorkspace(value: Input[Boolean]): Self = this.set("restartWorkspace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestartWorkspace: Self = this.set("restartWorkspace", js.undefined)
+    @scala.inline
+    def setSwitchRunningMode(value: Input[Boolean]): Self = this.set("switchRunningMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwitchRunningMode: Self = this.set("switchRunningMode", js.undefined)
+  }
+  
 }
 

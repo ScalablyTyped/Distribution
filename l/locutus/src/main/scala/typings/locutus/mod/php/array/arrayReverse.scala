@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object arrayReverse extends js.Object {
   def apply(): js.Any = js.native
+  def apply(array: js.UndefOr[scala.Nothing], preserveKeys: js.Any): js.Any = js.native
   def apply(array: js.Any): js.Any = js.native
   def apply(array: js.Any, preserveKeys: js.Any): js.Any = js.native
 }

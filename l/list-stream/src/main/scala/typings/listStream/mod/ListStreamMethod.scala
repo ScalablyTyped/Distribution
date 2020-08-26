@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation._
 trait ListStreamMethod extends js.Object {
   def apply(): ListStream = js.native
   def apply(callback: js.Function2[/* err */ Error, /* data */ js.Array[_], Unit]): ListStream = js.native
+  def apply(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Array[_], Unit]
+  ): ListStream = js.native
   def apply(options: DuplexOptions): ListStream = js.native
   def apply(options: DuplexOptions, callback: js.Function2[/* err */ Error, /* data */ js.Array[_], Unit]): ListStream = js.native
 }

@@ -17,37 +17,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Step extends js.Object {
-  var disableInteraction: js.UndefOr[Boolean] = js.undefined
-  var element: js.UndefOr[String | HTMLElement | Element] = js.undefined
-  var highlightClass: js.UndefOr[String] = js.undefined
-  var intro: String
+  var disableInteraction: js.UndefOr[Boolean] = js.native
+  var element: js.UndefOr[String | HTMLElement | Element] = js.native
+  var highlightClass: js.UndefOr[String] = js.native
+  var intro: String = js.native
   var position: js.UndefOr[
     top | left | right | bottom | `bottom-left-aligned` | `bottom-middle-aligned` | `bottom-right-aligned` | auto
-  ] = js.undefined
-  var scrollTo: js.UndefOr[off | tooltip | element] = js.undefined
-  var tooltipClass: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var scrollTo: js.UndefOr[off | tooltip | element] = js.native
+  var tooltipClass: js.UndefOr[String] = js.native
 }
 
 object Step {
   @scala.inline
-  def apply(
-    intro: String,
-    disableInteraction: js.UndefOr[Boolean] = js.undefined,
-    element: String | HTMLElement | Element = null,
-    highlightClass: String = null,
-    position: top | left | right | bottom | `bottom-left-aligned` | `bottom-middle-aligned` | `bottom-right-aligned` | auto = null,
-    scrollTo: off | tooltip | element = null,
-    tooltipClass: String = null
-  ): Step = {
+  def apply(intro: String): Step = {
     val __obj = js.Dynamic.literal(intro = intro.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableInteraction)) __obj.updateDynamic("disableInteraction")(disableInteraction.get.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (highlightClass != null) __obj.updateDynamic("highlightClass")(highlightClass.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (scrollTo != null) __obj.updateDynamic("scrollTo")(scrollTo.asInstanceOf[js.Any])
-    if (tooltipClass != null) __obj.updateDynamic("tooltipClass")(tooltipClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
+  @scala.inline
+  implicit class StepOps[Self <: Step] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIntro(value: String): Self = this.set("intro", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisableInteraction(value: Boolean): Self = this.set("disableInteraction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableInteraction: Self = this.set("disableInteraction", js.undefined)
+    @scala.inline
+    def setElement(value: String | HTMLElement | Element): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    @scala.inline
+    def setHighlightClass(value: String): Self = this.set("highlightClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightClass: Self = this.set("highlightClass", js.undefined)
+    @scala.inline
+    def setPosition(
+      value: top | left | right | bottom | `bottom-left-aligned` | `bottom-middle-aligned` | `bottom-right-aligned` | auto
+    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setScrollTo(value: off | tooltip | element): Self = this.set("scrollTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollTo: Self = this.set("scrollTo", js.undefined)
+    @scala.inline
+    def setTooltipClass(value: String): Self = this.set("tooltipClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipClass: Self = this.set("tooltipClass", js.undefined)
+  }
+  
 }
 

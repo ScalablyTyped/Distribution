@@ -47,18 +47,38 @@ trait SchemaSurveyCost extends js.Object {
 
 object SchemaSurveyCost {
   @scala.inline
-  def apply(
-    costPerResponseNanos: String = null,
-    currencyCode: String = null,
-    maxCostPerResponseNanos: String = null,
-    nanos: String = null
-  ): SchemaSurveyCost = {
+  def apply(): SchemaSurveyCost = {
     val __obj = js.Dynamic.literal()
-    if (costPerResponseNanos != null) __obj.updateDynamic("costPerResponseNanos")(costPerResponseNanos.asInstanceOf[js.Any])
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
-    if (maxCostPerResponseNanos != null) __obj.updateDynamic("maxCostPerResponseNanos")(maxCostPerResponseNanos.asInstanceOf[js.Any])
-    if (nanos != null) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSurveyCost]
   }
+  @scala.inline
+  implicit class SchemaSurveyCostOps[Self <: SchemaSurveyCost] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCostPerResponseNanos(value: String): Self = this.set("costPerResponseNanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCostPerResponseNanos: Self = this.set("costPerResponseNanos", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    @scala.inline
+    def setMaxCostPerResponseNanos(value: String): Self = this.set("maxCostPerResponseNanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCostPerResponseNanos: Self = this.set("maxCostPerResponseNanos", js.undefined)
+    @scala.inline
+    def setNanos(value: String): Self = this.set("nanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNanos: Self = this.set("nanos", js.undefined)
+  }
+  
 }
 

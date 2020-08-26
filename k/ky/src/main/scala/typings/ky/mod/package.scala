@@ -24,7 +24,7 @@ package object mod {
     scala.Unit | js.Promise[scala.Unit]
   ]
   type Input = typings.std.Request | typings.std.URL | java.lang.String
-  type LiteralUnion[LiteralType /* <: BaseType */, BaseType /* <: typings.ky.mod.Primitive */] = LiteralType | (BaseType with js.Object)
+  type LiteralUnion[LiteralType /* <: BaseType */, BaseType /* <: typings.ky.mod.Primitive */] = LiteralType | (BaseType with typings.ky.anon._empty)
   type Primitive = js.UndefOr[
     scala.Null | java.lang.String | scala.Double | scala.Boolean | js.Symbol | typings.std.BigInt
   ]

@@ -22,6 +22,7 @@ trait Profiler extends js.Object {
     * recsamples is true by default.
     */
   def startProfiling(): Unit = js.native
+  def startProfiling(name: js.UndefOr[scala.Nothing], recsamples: Boolean): Unit = js.native
   def startProfiling(name: String): Unit = js.native
   def startProfiling(name: String, recsamples: Boolean): Unit = js.native
   /**

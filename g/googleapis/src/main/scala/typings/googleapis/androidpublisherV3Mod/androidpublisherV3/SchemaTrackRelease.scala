@@ -38,22 +38,50 @@ trait SchemaTrackRelease extends js.Object {
 
 object SchemaTrackRelease {
   @scala.inline
-  def apply(
-    countryTargeting: SchemaCountryTargeting = null,
-    name: String = null,
-    releaseNotes: js.Array[SchemaLocalizedText] = null,
-    status: String = null,
-    userFraction: js.UndefOr[Double] = js.undefined,
-    versionCodes: js.Array[String] = null
-  ): SchemaTrackRelease = {
+  def apply(): SchemaTrackRelease = {
     val __obj = js.Dynamic.literal()
-    if (countryTargeting != null) __obj.updateDynamic("countryTargeting")(countryTargeting.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (releaseNotes != null) __obj.updateDynamic("releaseNotes")(releaseNotes.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(userFraction)) __obj.updateDynamic("userFraction")(userFraction.get.asInstanceOf[js.Any])
-    if (versionCodes != null) __obj.updateDynamic("versionCodes")(versionCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrackRelease]
   }
+  @scala.inline
+  implicit class SchemaTrackReleaseOps[Self <: SchemaTrackRelease] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountryTargeting(value: SchemaCountryTargeting): Self = this.set("countryTargeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryTargeting: Self = this.set("countryTargeting", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setReleaseNotesVarargs(value: SchemaLocalizedText*): Self = this.set("releaseNotes", js.Array(value :_*))
+    @scala.inline
+    def setReleaseNotes(value: js.Array[SchemaLocalizedText]): Self = this.set("releaseNotes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseNotes: Self = this.set("releaseNotes", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setUserFraction(value: Double): Self = this.set("userFraction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserFraction: Self = this.set("userFraction", js.undefined)
+    @scala.inline
+    def setVersionCodesVarargs(value: String*): Self = this.set("versionCodes", js.Array(value :_*))
+    @scala.inline
+    def setVersionCodes(value: js.Array[String]): Self = this.set("versionCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionCodes: Self = this.set("versionCodes", js.undefined)
+  }
+  
 }
 

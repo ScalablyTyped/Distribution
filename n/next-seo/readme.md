@@ -10,9 +10,9 @@ SEO plugin for Next.js projects
 | ------------------ | :-------------: |
 | Full name          | next-seo |
 | Keywords           | next.js, seo, react, node, ssr |
-| # releases         | 38 |
+| # releases         | 39 |
 | # dependents       | 1 |
-| # downloads        | 340177 |
+| # downloads        | 375361 |
 | # stars            | 0 |
 
 ## Links

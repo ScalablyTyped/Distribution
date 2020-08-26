@@ -13,6 +13,8 @@ import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionCateg
 import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionState
 import typings.awsLambda.codepipelineCloudwatchPipelineMod.CodePipelineState
 import typings.awsLambda.codepipelineCloudwatchStageMod.CodePipelineStageState
+import typings.awsLambda.connectContactFlowMod.ConnectContactFlowChannel
+import typings.awsLambda.connectContactFlowMod.ConnectContactFlowInitiationMethod
 import typings.awsLambda.kinesisFirehoseTransformationMod.FirehoseRecordTransformationStatus
 import typings.awsLambda.s3BatchMod.S3BatchResultResultCode
 import typings.awsLambda.sqsMod._SQSMessageAttributeDataType
@@ -26,6 +28,9 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait ADMIN_NO_SRP_AUTH extends js.Object
+  
+  @js.native
+  sealed trait API extends ConnectContactFlowInitiationMethod
   
   @js.native
   sealed trait ARM_CONTAINER extends CodeBuildEnvironmentType
@@ -61,10 +66,16 @@ object awsLambdaStrings {
   sealed trait Build_ extends CodePipelineActionCategory
   
   @js.native
+  sealed trait CALLBACK extends ConnectContactFlowInitiationMethod
+  
+  @js.native
   sealed trait CANCELED
     extends CodePipelineActionState
        with CodePipelineStageState
        with CodePipelineState
+  
+  @js.native
+  sealed trait CHAT extends ConnectContactFlowChannel
   
   @js.native
   sealed trait CLIENT_ERROR extends CodeBuildPhaseStatusType
@@ -107,6 +118,9 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait Confirmed_ extends js.Object
+  
+  @js.native
+  sealed trait ContactFlowEvent extends js.Object
   
   @js.native
   sealed trait Create extends js.Object
@@ -210,6 +224,9 @@ object awsLambdaStrings {
   sealed trait GITHUB_ENTERPRISE extends CodeBuildSourceLocationType
   
   @js.native
+  sealed trait INBOUND extends ConnectContactFlowInitiationMethod
+  
+  @js.native
   sealed trait INSERT extends js.Object
   
   @js.native
@@ -259,6 +276,9 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait OLD_IMAGE extends js.Object
+  
+  @js.native
+  sealed trait OUTBOUND extends ConnectContactFlowInitiationMethod
   
   @js.native
   sealed trait Ok extends FirehoseRecordTransformationStatus
@@ -395,10 +415,16 @@ object awsLambdaStrings {
   sealed trait Succeeded_ extends S3BatchResultResultCode
   
   @js.native
+  sealed trait TELEPHONE_NUMBER extends js.Object
+  
+  @js.native
   sealed trait TIMED_OUT extends CodeBuildPhaseStatusType
   
   @js.native
   sealed trait TOKEN extends js.Object
+  
+  @js.native
+  sealed trait TRANSFER extends ConnectContactFlowInitiationMethod
   
   @js.native
   sealed trait TemporaryFailure extends S3BatchResultResultCode
@@ -440,10 +466,13 @@ object awsLambdaStrings {
   sealed trait UserMigration_ForgotPassword extends js.Object
   
   @js.native
+  sealed trait VOICE extends ConnectContactFlowChannel
+  
+  @js.native
   sealed trait VerifyAuthChallengeResponse_Authentication extends js.Object
   
   @js.native
-  sealed trait Voice extends js.Object
+  sealed trait Voice_ extends js.Object
   
   @js.native
   sealed trait WINDOWS_CONTAINER extends CodeBuildEnvironmentType
@@ -498,6 +527,8 @@ object awsLambdaStrings {
   @scala.inline
   def ADMIN_NO_SRP_AUTH: ADMIN_NO_SRP_AUTH = "ADMIN_NO_SRP_AUTH".asInstanceOf[ADMIN_NO_SRP_AUTH]
   @scala.inline
+  def API: API = "API".asInstanceOf[API]
+  @scala.inline
   def ARM_CONTAINER: ARM_CONTAINER = "ARM_CONTAINER".asInstanceOf[ARM_CONTAINER]
   @scala.inline
   def AWS: AWS = "AWS".asInstanceOf[AWS]
@@ -520,7 +551,11 @@ object awsLambdaStrings {
   @scala.inline
   def Build_ : Build_ = "Build".asInstanceOf[Build_]
   @scala.inline
+  def CALLBACK: CALLBACK = "CALLBACK".asInstanceOf[CALLBACK]
+  @scala.inline
   def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
+  @scala.inline
+  def CHAT: CHAT = "CHAT".asInstanceOf[CHAT]
   @scala.inline
   def CLIENT_ERROR: CLIENT_ERROR = "CLIENT_ERROR".asInstanceOf[CLIENT_ERROR]
   @scala.inline
@@ -549,6 +584,8 @@ object awsLambdaStrings {
   def ConfirmIntent: ConfirmIntent = "ConfirmIntent".asInstanceOf[ConfirmIntent]
   @scala.inline
   def Confirmed_ : Confirmed_ = "Confirmed".asInstanceOf[Confirmed_]
+  @scala.inline
+  def ContactFlowEvent: ContactFlowEvent = "ContactFlowEvent".asInstanceOf[ContactFlowEvent]
   @scala.inline
   def Create: Create = "Create".asInstanceOf[Create]
   @scala.inline
@@ -614,6 +651,8 @@ object awsLambdaStrings {
   @scala.inline
   def GITHUB_ENTERPRISE: GITHUB_ENTERPRISE = "GITHUB_ENTERPRISE".asInstanceOf[GITHUB_ENTERPRISE]
   @scala.inline
+  def INBOUND: INBOUND = "INBOUND".asInstanceOf[INBOUND]
+  @scala.inline
   def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
   @scala.inline
   def INSTALL: INSTALL = "INSTALL".asInstanceOf[INSTALL]
@@ -647,6 +686,8 @@ object awsLambdaStrings {
   def Number: Number = "Number".asInstanceOf[Number]
   @scala.inline
   def OLD_IMAGE: OLD_IMAGE = "OLD_IMAGE".asInstanceOf[OLD_IMAGE]
+  @scala.inline
+  def OUTBOUND: OUTBOUND = "OUTBOUND".asInstanceOf[OUTBOUND]
   @scala.inline
   def Ok: Ok = "Ok".asInstanceOf[Ok]
   @scala.inline
@@ -728,9 +769,13 @@ object awsLambdaStrings {
   @scala.inline
   def Succeeded_ : Succeeded_ = "Succeeded".asInstanceOf[Succeeded_]
   @scala.inline
+  def TELEPHONE_NUMBER: TELEPHONE_NUMBER = "TELEPHONE_NUMBER".asInstanceOf[TELEPHONE_NUMBER]
+  @scala.inline
   def TIMED_OUT: TIMED_OUT = "TIMED_OUT".asInstanceOf[TIMED_OUT]
   @scala.inline
   def TOKEN: TOKEN = "TOKEN".asInstanceOf[TOKEN]
+  @scala.inline
+  def TRANSFER: TRANSFER = "TRANSFER".asInstanceOf[TRANSFER]
   @scala.inline
   def TemporaryFailure: TemporaryFailure = "TemporaryFailure".asInstanceOf[TemporaryFailure]
   @scala.inline
@@ -758,9 +803,11 @@ object awsLambdaStrings {
   @scala.inline
   def UserMigration_ForgotPassword: UserMigration_ForgotPassword = "UserMigration_ForgotPassword".asInstanceOf[UserMigration_ForgotPassword]
   @scala.inline
+  def VOICE: VOICE = "VOICE".asInstanceOf[VOICE]
+  @scala.inline
   def VerifyAuthChallengeResponse_Authentication: VerifyAuthChallengeResponse_Authentication = "VerifyAuthChallengeResponse_Authentication".asInstanceOf[VerifyAuthChallengeResponse_Authentication]
   @scala.inline
-  def Voice: Voice = "Voice".asInstanceOf[Voice]
+  def Voice_ : Voice_ = "Voice".asInstanceOf[Voice_]
   @scala.inline
   def WINDOWS_CONTAINER: WINDOWS_CONTAINER = "WINDOWS_CONTAINER".asInstanceOf[WINDOWS_CONTAINER]
   @scala.inline

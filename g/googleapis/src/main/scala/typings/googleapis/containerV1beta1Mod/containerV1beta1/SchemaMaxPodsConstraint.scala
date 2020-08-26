@@ -17,10 +17,26 @@ trait SchemaMaxPodsConstraint extends js.Object {
 
 object SchemaMaxPodsConstraint {
   @scala.inline
-  def apply(maxPodsPerNode: String = null): SchemaMaxPodsConstraint = {
+  def apply(): SchemaMaxPodsConstraint = {
     val __obj = js.Dynamic.literal()
-    if (maxPodsPerNode != null) __obj.updateDynamic("maxPodsPerNode")(maxPodsPerNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMaxPodsConstraint]
   }
+  @scala.inline
+  implicit class SchemaMaxPodsConstraintOps[Self <: SchemaMaxPodsConstraint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxPodsPerNode(value: String): Self = this.set("maxPodsPerNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPodsPerNode: Self = this.set("maxPodsPerNode", js.undefined)
+  }
+  
 }
 

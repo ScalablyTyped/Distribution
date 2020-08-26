@@ -14,10 +14,26 @@ trait DescribeContainerOutput extends js.Object {
 
 object DescribeContainerOutput {
   @scala.inline
-  def apply(Container: Container = null): DescribeContainerOutput = {
+  def apply(): DescribeContainerOutput = {
     val __obj = js.Dynamic.literal()
-    if (Container != null) __obj.updateDynamic("Container")(Container.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeContainerOutput]
   }
+  @scala.inline
+  implicit class DescribeContainerOutputOps[Self <: DescribeContainerOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: Container): Self = this.set("Container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("Container", js.undefined)
+  }
+  
 }
 

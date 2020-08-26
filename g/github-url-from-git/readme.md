@@ -12,7 +12,7 @@ Parse a github git url and return the github repo url
 | Keywords           | github, git, url, parser |
 | # releases         | 0 |
 | # dependents       | 110 |
-| # downloads        | 3936458 |
+| # downloads        | 3948854 |
 | # stars            | 1 |
 
 ## Links

@@ -36,7 +36,8 @@ import scala.scalajs.js.annotation._
   * @since OOo 3.4
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait UnoControlTabPage
+- Dropped any */ @js.native
+trait UnoControlTabPage
   extends XControl
      with XWindow
      with XView

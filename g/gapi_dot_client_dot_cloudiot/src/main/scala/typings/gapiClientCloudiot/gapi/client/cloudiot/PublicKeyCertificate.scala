@@ -4,23 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PublicKeyCertificate extends js.Object {
   /** The certificate data. */
-  var certificate: js.UndefOr[String] = js.undefined
+  var certificate: js.UndefOr[String] = js.native
   /** The certificate format. */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
   /** [Output only] The certificate details. Used only for X.509 certificates. */
-  var x509Details: js.UndefOr[X509CertificateDetails] = js.undefined
+  var x509Details: js.UndefOr[X509CertificateDetails] = js.native
 }
 
 object PublicKeyCertificate {
   @scala.inline
-  def apply(certificate: String = null, format: String = null, x509Details: X509CertificateDetails = null): PublicKeyCertificate = {
+  def apply(): PublicKeyCertificate = {
     val __obj = js.Dynamic.literal()
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (x509Details != null) __obj.updateDynamic("x509Details")(x509Details.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCertificate]
   }
+  @scala.inline
+  implicit class PublicKeyCertificateOps[Self <: PublicKeyCertificate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificate(value: String): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setX509Details(value: X509CertificateDetails): Self = this.set("x509Details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX509Details: Self = this.set("x509Details", js.undefined)
+  }
+  
 }
 

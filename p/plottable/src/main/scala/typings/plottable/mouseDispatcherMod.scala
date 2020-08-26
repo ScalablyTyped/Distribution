@@ -24,7 +24,6 @@ object mouseDispatcherMod extends js.Object {
       * Computes the mouse position from the given event, and if successful
       * calls all the callbacks in the provided callbackSet.
       */
-    /* private */ def _measureAndDispatch(component: js.Any, event: js.Any, eventName: js.Any): js.Any = js.native
     /* private */ def _measureAndDispatch(component: js.Any, event: js.Any, eventName: js.Any, scope: js.Any): js.Any = js.native
     def eventInside(component: Component, event: MouseEvent): Boolean = js.native
     /**

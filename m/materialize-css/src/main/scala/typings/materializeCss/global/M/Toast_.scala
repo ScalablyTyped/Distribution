@@ -8,23 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("M.Toast")
 @js.native
-class Toast_ () extends Toast {
-  /**
-    * Describes the current pan state of the Toast.
-    */
-  /* CompleteClass */
-  override var panning: Boolean = js.native
-  /**
-    * The remaining amount of time in ms that the toast will stay before dismissal.
-    */
-  /* CompleteClass */
-  override var timeRemaining: Double = js.native
-  /**
-    * remove a specific toast
-    */
-  /* CompleteClass */
-  override def dismiss(): Unit = js.native
-}
+class Toast_ () extends Toast
 
 /* static members */
 @JSGlobal("M.Toast")

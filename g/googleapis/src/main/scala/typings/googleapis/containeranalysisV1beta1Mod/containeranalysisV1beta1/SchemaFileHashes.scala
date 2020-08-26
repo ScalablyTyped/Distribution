@@ -18,10 +18,28 @@ trait SchemaFileHashes extends js.Object {
 
 object SchemaFileHashes {
   @scala.inline
-  def apply(fileHash: js.Array[SchemaHash] = null): SchemaFileHashes = {
+  def apply(): SchemaFileHashes = {
     val __obj = js.Dynamic.literal()
-    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFileHashes]
   }
+  @scala.inline
+  implicit class SchemaFileHashesOps[Self <: SchemaFileHashes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileHashVarargs(value: SchemaHash*): Self = this.set("fileHash", js.Array(value :_*))
+    @scala.inline
+    def setFileHash(value: js.Array[SchemaHash]): Self = this.set("fileHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileHash: Self = this.set("fileHash", js.undefined)
+  }
+  
 }
 

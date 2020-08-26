@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-tooltip
 
-Typings are for version 3.7
+Typings are for version 4.2.1
 
 ## Library description:
 React Tooltip
@@ -11,8 +11,8 @@ React Tooltip
 | Full name          | rc-tooltip |
 | Keywords           | react, react-component, react-tooltip, tooltip |
 | # releases         | 8 |
-| # dependents       | 384 |
-| # downloads        | 22475860 |
+| # dependents       | 389 |
+| # downloads        | 22964593 |
 | # stars            | 8 |
 
 ## Links
@@ -24,7 +24,7 @@ React Tooltip
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

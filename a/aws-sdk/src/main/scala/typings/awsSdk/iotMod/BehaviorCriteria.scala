@@ -34,22 +34,46 @@ trait BehaviorCriteria extends js.Object {
 
 object BehaviorCriteria {
   @scala.inline
-  def apply(
-    comparisonOperator: ComparisonOperator = null,
-    consecutiveDatapointsToAlarm: js.UndefOr[ConsecutiveDatapointsToAlarm] = js.undefined,
-    consecutiveDatapointsToClear: js.UndefOr[ConsecutiveDatapointsToClear] = js.undefined,
-    durationSeconds: js.UndefOr[DurationSeconds] = js.undefined,
-    statisticalThreshold: StatisticalThreshold = null,
-    value: MetricValue = null
-  ): BehaviorCriteria = {
+  def apply(): BehaviorCriteria = {
     val __obj = js.Dynamic.literal()
-    if (comparisonOperator != null) __obj.updateDynamic("comparisonOperator")(comparisonOperator.asInstanceOf[js.Any])
-    if (!js.isUndefined(consecutiveDatapointsToAlarm)) __obj.updateDynamic("consecutiveDatapointsToAlarm")(consecutiveDatapointsToAlarm.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(consecutiveDatapointsToClear)) __obj.updateDynamic("consecutiveDatapointsToClear")(consecutiveDatapointsToClear.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(durationSeconds)) __obj.updateDynamic("durationSeconds")(durationSeconds.get.asInstanceOf[js.Any])
-    if (statisticalThreshold != null) __obj.updateDynamic("statisticalThreshold")(statisticalThreshold.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BehaviorCriteria]
   }
+  @scala.inline
+  implicit class BehaviorCriteriaOps[Self <: BehaviorCriteria] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparisonOperator(value: ComparisonOperator): Self = this.set("comparisonOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparisonOperator: Self = this.set("comparisonOperator", js.undefined)
+    @scala.inline
+    def setConsecutiveDatapointsToAlarm(value: ConsecutiveDatapointsToAlarm): Self = this.set("consecutiveDatapointsToAlarm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsecutiveDatapointsToAlarm: Self = this.set("consecutiveDatapointsToAlarm", js.undefined)
+    @scala.inline
+    def setConsecutiveDatapointsToClear(value: ConsecutiveDatapointsToClear): Self = this.set("consecutiveDatapointsToClear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsecutiveDatapointsToClear: Self = this.set("consecutiveDatapointsToClear", js.undefined)
+    @scala.inline
+    def setDurationSeconds(value: DurationSeconds): Self = this.set("durationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationSeconds: Self = this.set("durationSeconds", js.undefined)
+    @scala.inline
+    def setStatisticalThreshold(value: StatisticalThreshold): Self = this.set("statisticalThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatisticalThreshold: Self = this.set("statisticalThreshold", js.undefined)
+    @scala.inline
+    def setValue(value: MetricValue): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

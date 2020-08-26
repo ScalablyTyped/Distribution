@@ -14,6 +14,11 @@ class SymbolSet protected ()
   def this(openBraceToken: Token[OpenBraceToken], elements: js.Array[SymbolSpan]) = this()
   def this(
     openBraceToken: Token[OpenBraceToken],
+    elements: js.UndefOr[scala.Nothing],
+    closeBraceToken: Token[CloseBraceToken]
+  ) = this()
+  def this(
+    openBraceToken: Token[OpenBraceToken],
     elements: js.Array[SymbolSpan],
     closeBraceToken: Token[CloseBraceToken]
   ) = this()

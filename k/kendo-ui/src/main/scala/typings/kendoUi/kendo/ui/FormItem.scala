@@ -4,45 +4,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FormItem extends js.Object {
-  var editor: js.UndefOr[String | js.Function] = js.undefined
-  var editorOptions: js.UndefOr[js.Any] = js.undefined
-  var field: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var items: js.UndefOr[js.Array[FormItem]] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var validation: js.UndefOr[js.Any] = js.undefined
+  var editor: js.UndefOr[String | js.Function] = js.native
+  var editorOptions: js.UndefOr[js.Any] = js.native
+  var field: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var items: js.UndefOr[js.Array[FormItem]] = js.native
+  var label: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var validation: js.UndefOr[js.Any] = js.native
 }
 
 object FormItem {
   @scala.inline
-  def apply(
-    editor: String | js.Function = null,
-    editorOptions: js.Any = null,
-    field: String = null,
-    id: String = null,
-    items: js.Array[FormItem] = null,
-    label: String = null,
-    name: String = null,
-    title: String = null,
-    `type`: String = null,
-    validation: js.Any = null
-  ): FormItem = {
+  def apply(): FormItem = {
     val __obj = js.Dynamic.literal()
-    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
-    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormItem]
   }
+  @scala.inline
+  implicit class FormItemOps[Self <: FormItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEditor(value: String | js.Function): Self = this.set("editor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditor: Self = this.set("editor", js.undefined)
+    @scala.inline
+    def setEditorOptions(value: js.Any): Self = this.set("editorOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorOptions: Self = this.set("editorOptions", js.undefined)
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: FormItem*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[FormItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValidation(value: js.Any): Self = this.set("validation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidation: Self = this.set("validation", js.undefined)
+  }
+  
 }
 

@@ -17,10 +17,26 @@ trait SchemaRollbackRequest extends js.Object {
 
 object SchemaRollbackRequest {
   @scala.inline
-  def apply(transactionId: String = null): SchemaRollbackRequest = {
+  def apply(): SchemaRollbackRequest = {
     val __obj = js.Dynamic.literal()
-    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRollbackRequest]
   }
+  @scala.inline
+  implicit class SchemaRollbackRequestOps[Self <: SchemaRollbackRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
+  }
+  
 }
 

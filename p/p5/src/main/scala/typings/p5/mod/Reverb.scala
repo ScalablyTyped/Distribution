@@ -19,7 +19,16 @@ trait Reverb extends Effect {
     *   forwards.
     */
   def process(src: js.Object): Unit = js.native
+  def process(
+    src: js.Object,
+    seconds: js.UndefOr[scala.Nothing],
+    decayRate: js.UndefOr[scala.Nothing],
+    reverse: Boolean
+  ): Unit = js.native
+  def process(src: js.Object, seconds: js.UndefOr[scala.Nothing], decayRate: Double): Unit = js.native
+  def process(src: js.Object, seconds: js.UndefOr[scala.Nothing], decayRate: Double, reverse: Boolean): Unit = js.native
   def process(src: js.Object, seconds: Double): Unit = js.native
+  def process(src: js.Object, seconds: Double, decayRate: js.UndefOr[scala.Nothing], reverse: Boolean): Unit = js.native
   def process(src: js.Object, seconds: Double, decayRate: Double): Unit = js.native
   def process(src: js.Object, seconds: Double, decayRate: Double, reverse: Boolean): Unit = js.native
   /**
@@ -33,7 +42,11 @@ trait Reverb extends Effect {
     *   forwards.
     */
   def set(): Unit = js.native
+  def set(seconds: js.UndefOr[scala.Nothing], decayRate: js.UndefOr[scala.Nothing], reverse: Boolean): Unit = js.native
+  def set(seconds: js.UndefOr[scala.Nothing], decayRate: Double): Unit = js.native
+  def set(seconds: js.UndefOr[scala.Nothing], decayRate: Double, reverse: Boolean): Unit = js.native
   def set(seconds: Double): Unit = js.native
+  def set(seconds: Double, decayRate: js.UndefOr[scala.Nothing], reverse: Boolean): Unit = js.native
   def set(seconds: Double, decayRate: Double): Unit = js.native
   def set(seconds: Double, decayRate: Double, reverse: Boolean): Unit = js.native
 }

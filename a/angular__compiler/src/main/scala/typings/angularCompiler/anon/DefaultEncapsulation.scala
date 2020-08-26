@@ -6,33 +6,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultEncapsulation extends js.Object {
-  var defaultEncapsulation: js.UndefOr[ViewEncapsulation] = js.undefined
-  var jitDevMode: js.UndefOr[Boolean] = js.undefined
-  var missingTranslation: js.UndefOr[MissingTranslationStrategy | Null] = js.undefined
-  var preserveWhitespaces: js.UndefOr[Boolean] = js.undefined
-  var strictInjectionParameters: js.UndefOr[Boolean] = js.undefined
-  var useJit: js.UndefOr[Boolean] = js.undefined
+  var defaultEncapsulation: js.UndefOr[ViewEncapsulation] = js.native
+  var jitDevMode: js.UndefOr[Boolean] = js.native
+  var missingTranslation: js.UndefOr[MissingTranslationStrategy | Null] = js.native
+  var preserveWhitespaces: js.UndefOr[Boolean] = js.native
+  var strictInjectionParameters: js.UndefOr[Boolean] = js.native
+  var useJit: js.UndefOr[Boolean] = js.native
 }
 
 object DefaultEncapsulation {
   @scala.inline
-  def apply(
-    defaultEncapsulation: ViewEncapsulation = null,
-    jitDevMode: js.UndefOr[Boolean] = js.undefined,
-    missingTranslation: js.UndefOr[Null | MissingTranslationStrategy] = js.undefined,
-    preserveWhitespaces: js.UndefOr[Boolean] = js.undefined,
-    strictInjectionParameters: js.UndefOr[Boolean] = js.undefined,
-    useJit: js.UndefOr[Boolean] = js.undefined
-  ): DefaultEncapsulation = {
+  def apply(): DefaultEncapsulation = {
     val __obj = js.Dynamic.literal()
-    if (defaultEncapsulation != null) __obj.updateDynamic("defaultEncapsulation")(defaultEncapsulation.asInstanceOf[js.Any])
-    if (!js.isUndefined(jitDevMode)) __obj.updateDynamic("jitDevMode")(jitDevMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(missingTranslation)) __obj.updateDynamic("missingTranslation")(missingTranslation.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictInjectionParameters)) __obj.updateDynamic("strictInjectionParameters")(strictInjectionParameters.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useJit)) __obj.updateDynamic("useJit")(useJit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultEncapsulation]
   }
+  @scala.inline
+  implicit class DefaultEncapsulationOps[Self <: DefaultEncapsulation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultEncapsulation(value: ViewEncapsulation): Self = this.set("defaultEncapsulation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEncapsulation: Self = this.set("defaultEncapsulation", js.undefined)
+    @scala.inline
+    def setJitDevMode(value: Boolean): Self = this.set("jitDevMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJitDevMode: Self = this.set("jitDevMode", js.undefined)
+    @scala.inline
+    def setMissingTranslation(value: MissingTranslationStrategy): Self = this.set("missingTranslation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissingTranslation: Self = this.set("missingTranslation", js.undefined)
+    @scala.inline
+    def setMissingTranslationNull: Self = this.set("missingTranslation", null)
+    @scala.inline
+    def setPreserveWhitespaces(value: Boolean): Self = this.set("preserveWhitespaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveWhitespaces: Self = this.set("preserveWhitespaces", js.undefined)
+    @scala.inline
+    def setStrictInjectionParameters(value: Boolean): Self = this.set("strictInjectionParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrictInjectionParameters: Self = this.set("strictInjectionParameters", js.undefined)
+    @scala.inline
+    def setUseJit(value: Boolean): Self = this.set("useJit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseJit: Self = this.set("useJit", js.undefined)
+  }
+  
 }
 

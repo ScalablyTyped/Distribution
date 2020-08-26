@@ -33,6 +33,10 @@ trait GotPromise[B /* <: Buffer | String | js.Object */] extends js.Object {
     * @returns A Promise for the completion of which ever callback is executed.
     */
   def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.UndefOr[scala.Nothing],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Response[B], TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.Function1[/* value */ Response[B], TResult1 | js.Thenable[TResult1]],

@@ -26,17 +26,36 @@ trait StartSelector extends js.Object {
 
 object StartSelector {
   @scala.inline
-  def apply(
-    StartSelectorType: StartSelectorType,
-    AfterFragmentNumber: FragmentNumberString = null,
-    ContinuationToken: ContinuationToken = null,
-    StartTimestamp: Timestamp = null
-  ): StartSelector = {
+  def apply(StartSelectorType: StartSelectorType): StartSelector = {
     val __obj = js.Dynamic.literal(StartSelectorType = StartSelectorType.asInstanceOf[js.Any])
-    if (AfterFragmentNumber != null) __obj.updateDynamic("AfterFragmentNumber")(AfterFragmentNumber.asInstanceOf[js.Any])
-    if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken.asInstanceOf[js.Any])
-    if (StartTimestamp != null) __obj.updateDynamic("StartTimestamp")(StartTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSelector]
   }
+  @scala.inline
+  implicit class StartSelectorOps[Self <: StartSelector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStartSelectorType(value: StartSelectorType): Self = this.set("StartSelectorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAfterFragmentNumber(value: FragmentNumberString): Self = this.set("AfterFragmentNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterFragmentNumber: Self = this.set("AfterFragmentNumber", js.undefined)
+    @scala.inline
+    def setContinuationToken(value: ContinuationToken): Self = this.set("ContinuationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinuationToken: Self = this.set("ContinuationToken", js.undefined)
+    @scala.inline
+    def setStartTimestamp(value: Timestamp): Self = this.set("StartTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimestamp: Self = this.set("StartTimestamp", js.undefined)
+  }
+  
 }
 

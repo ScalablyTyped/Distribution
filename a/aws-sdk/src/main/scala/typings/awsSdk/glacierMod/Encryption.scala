@@ -22,12 +22,34 @@ trait Encryption extends js.Object {
 
 object Encryption {
   @scala.inline
-  def apply(EncryptionType: EncryptionType = null, KMSContext: String = null, KMSKeyId: String = null): Encryption = {
+  def apply(): Encryption = {
     val __obj = js.Dynamic.literal()
-    if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
-    if (KMSContext != null) __obj.updateDynamic("KMSContext")(KMSContext.asInstanceOf[js.Any])
-    if (KMSKeyId != null) __obj.updateDynamic("KMSKeyId")(KMSKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encryption]
   }
+  @scala.inline
+  implicit class EncryptionOps[Self <: Encryption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptionType(value: EncryptionType): Self = this.set("EncryptionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionType: Self = this.set("EncryptionType", js.undefined)
+    @scala.inline
+    def setKMSContext(value: String): Self = this.set("KMSContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSContext: Self = this.set("KMSContext", js.undefined)
+    @scala.inline
+    def setKMSKeyId(value: String): Self = this.set("KMSKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSKeyId: Self = this.set("KMSKeyId", js.undefined)
+  }
+  
 }
 

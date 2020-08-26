@@ -12,7 +12,7 @@ A scriptable browser like PhantomJS, based on Firefox
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 26 |
-| # downloads        | 122446 |
+| # downloads        | 120228 |
 | # stars            | 19 |
 
 ## Links

@@ -1,5 +1,6 @@
 package typings.rcSteps
 
+import typings.rcSteps.interfaceMod.Status
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +10,10 @@ object rcStepsStrings {
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends Status
   
   @js.native
-  sealed trait finish extends js.Object
+  sealed trait finish extends Status
   
   @js.native
   sealed trait horizontal extends js.Object
@@ -21,7 +22,7 @@ object rcStepsStrings {
   sealed trait navigation extends js.Object
   
   @js.native
-  sealed trait process extends js.Object
+  sealed trait process extends Status
   
   @js.native
   sealed trait small extends js.Object
@@ -30,7 +31,7 @@ object rcStepsStrings {
   sealed trait vertical extends js.Object
   
   @js.native
-  sealed trait wait extends js.Object
+  sealed trait wait extends Status
   
   @scala.inline
   def default: default = "default".asInstanceOf[default]

@@ -12,7 +12,7 @@ A navigation scripting & testing utility for PhantomJS and SlimerJS
 | Keywords           | phantomjs, slimerjs, test, testing, scraping |
 | # releases         | 1 |
 | # dependents       | 90 |
-| # downloads        | 1136436 |
+| # downloads        | 1091456 |
 | # stars            | 39 |
 
 ## Links

@@ -6,13 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Query[Value] extends js.Object {
-  var filters: js.UndefOr[js.Array[Filter[Value]]] = js.undefined
-  var keysOnly: js.UndefOr[Boolean] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var orders: js.UndefOr[js.Array[Order[Value]]] = js.undefined
-  var prefix: js.UndefOr[String] = js.undefined
+  var filters: js.UndefOr[js.Array[Filter[Value]]] = js.native
+  var keysOnly: js.UndefOr[Boolean] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.native
+  var orders: js.UndefOr[js.Array[Order[Value]]] = js.native
+  var prefix: js.UndefOr[String] = js.native
 }
 
 @JSImport("interface-datastore", "Query")

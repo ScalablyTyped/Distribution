@@ -19,6 +19,7 @@ object mod extends js.Object {
       * callback: A function to invoke if the resource is retrieved successfully.
       */
     def apply(resourceId: String): JQueryPromise[_] = js.native
+    def apply(resourceId: String, hash: js.UndefOr[scala.Nothing], callback: js.Function): JQueryPromise[_] = js.native
     def apply(resourceId: String, hash: js.Any): JQueryPromise[_] = js.native
     def apply(resourceId: String, hash: js.Any, callback: js.Function): JQueryPromise[_] = js.native
     /***

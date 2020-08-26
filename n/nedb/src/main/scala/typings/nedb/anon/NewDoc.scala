@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NewDoc[T /* <: G */, G] extends js.Object {
-  var newDoc: T
-  var oldDoc: T
+  var newDoc: T = js.native
+  var oldDoc: T = js.native
 }
 
 object NewDoc {
@@ -15,5 +16,22 @@ object NewDoc {
     val __obj = js.Dynamic.literal(newDoc = newDoc.asInstanceOf[js.Any], oldDoc = oldDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewDoc[T, G]]
   }
+  @scala.inline
+  implicit class NewDocOps[Self <: NewDoc[_, _], /* <: G */ T, G] (val x: Self with (NewDoc[T, G])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewDoc(value: T): Self = this.set("newDoc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOldDoc(value: T): Self = this.set("oldDoc", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -26,18 +26,40 @@ trait ListCertificatesRequest extends js.Object {
 
 object ListCertificatesRequest {
   @scala.inline
-  def apply(
-    CertificateStatuses: CertificateStatuses = null,
-    Includes: Filters = null,
-    MaxItems: js.UndefOr[MaxItems] = js.undefined,
-    NextToken: NextToken = null
-  ): ListCertificatesRequest = {
+  def apply(): ListCertificatesRequest = {
     val __obj = js.Dynamic.literal()
-    if (CertificateStatuses != null) __obj.updateDynamic("CertificateStatuses")(CertificateStatuses.asInstanceOf[js.Any])
-    if (Includes != null) __obj.updateDynamic("Includes")(Includes.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCertificatesRequest]
   }
+  @scala.inline
+  implicit class ListCertificatesRequestOps[Self <: ListCertificatesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateStatusesVarargs(value: CertificateStatus*): Self = this.set("CertificateStatuses", js.Array(value :_*))
+    @scala.inline
+    def setCertificateStatuses(value: CertificateStatuses): Self = this.set("CertificateStatuses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateStatuses: Self = this.set("CertificateStatuses", js.undefined)
+    @scala.inline
+    def setIncludes(value: Filters): Self = this.set("Includes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludes: Self = this.set("Includes", js.undefined)
+    @scala.inline
+    def setMaxItems(value: MaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

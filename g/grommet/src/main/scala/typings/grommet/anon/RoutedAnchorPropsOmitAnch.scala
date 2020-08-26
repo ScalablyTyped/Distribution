@@ -20,54 +20,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined grommet.grommet/components/RoutedAnchor.RoutedAnchorProps & grommet.grommet/utils.Omit<grommet.grommet/components/Anchor.AnchorProps, 'href'> */
+/* Inlined grommet.grommet/es6/components/RoutedAnchor.RoutedAnchorProps & grommet.grommet/es6/utils.Omit<grommet.grommet/es6/components/Anchor.AnchorProps, 'href'> */
+@js.native
 trait RoutedAnchorPropsOmitAnch extends js.Object {
-  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
-  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var as: js.UndefOr[PolymorphicType] = js.undefined
-  var color: js.UndefOr[ColorType] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var icon: js.UndefOr[Element] = js.undefined
-  var label: js.UndefOr[ReactNode] = js.undefined
-  var margin: js.UndefOr[MarginType] = js.undefined
-  var method: js.UndefOr[push | replace] = js.undefined
-  var path: String
-  var reverse: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[xsmall | small | medium | large | xlarge | xxlarge | String] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+  var alignSelf: js.UndefOr[AlignSelfType] = js.native
+  var as: js.UndefOr[PolymorphicType] = js.native
+  var color: js.UndefOr[ColorType] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var gridArea: js.UndefOr[GridAreaType] = js.native
+  var icon: js.UndefOr[Element] = js.native
+  var label: js.UndefOr[ReactNode] = js.native
+  var margin: js.UndefOr[MarginType] = js.native
+  var method: js.UndefOr[push | replace] = js.native
+  var path: String = js.native
+  var reverse: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[xsmall | small | medium | large | xlarge | xxlarge | String] = js.native
 }
 
 object RoutedAnchorPropsOmitAnch {
   @scala.inline
-  def apply(
-    path: String,
-    a11yTitle: A11yTitleType = null,
-    alignSelf: AlignSelfType = null,
-    as: PolymorphicType = null,
-    color: ColorType = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    gridArea: GridAreaType = null,
-    icon: Element = null,
-    label: ReactNode = null,
-    margin: MarginType = null,
-    method: push | replace = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    size: xsmall | small | medium | large | xlarge | xxlarge | String = null
-  ): RoutedAnchorPropsOmitAnch = {
+  def apply(path: String): RoutedAnchorPropsOmitAnch = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutedAnchorPropsOmitAnch]
   }
+  @scala.inline
+  implicit class RoutedAnchorPropsOmitAnchOps[Self <: RoutedAnchorPropsOmitAnch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setA11yTitle(value: A11yTitleType): Self = this.set("a11yTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA11yTitle: Self = this.set("a11yTitle", js.undefined)
+    @scala.inline
+    def setAlignSelf(value: AlignSelfType): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    @scala.inline
+    def setAs(value: PolymorphicType): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setColor(value: ColorType): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setGridArea(value: GridAreaType): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    @scala.inline
+    def setIcon(value: Element): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setLabel(value: ReactNode): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMargin(value: MarginType): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMethod(value: push | replace): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReverse: Self = this.set("reverse", js.undefined)
+    @scala.inline
+    def setSize(value: xsmall | small | medium | large | xlarge | xxlarge | String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

@@ -25,23 +25,5 @@ class AllJoynAcceptSessionJoinerEventArgs protected ()
     proximity: Double,
     acceptSessionJoiner: IAllJoynAcceptSessionJoiner
   ) = this()
-  /** Indicates if the app joining the session is on the same network. */
-  /* CompleteClass */
-  override var sameNetwork: Boolean = js.native
-  /** The app joining the session is on the same physical node. */
-  /* CompleteClass */
-  override var samePhysicalNode: Boolean = js.native
-  /** The session port being used to connect to the session. */
-  /* CompleteClass */
-  override var sessionPort: Double = js.native
-  /** The traffic type supported during the session. */
-  /* CompleteClass */
-  override var trafficType: typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynTrafficType = js.native
-  /** The unique bus name of the app requesting a session connection. */
-  /* CompleteClass */
-  override var uniqueName: String = js.native
-  /** Called to accept the session connection. */
-  /* CompleteClass */
-  override def accept(): Unit = js.native
 }
 

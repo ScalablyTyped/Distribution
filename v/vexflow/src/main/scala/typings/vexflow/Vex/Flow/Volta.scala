@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Volta extends StaveModifier {
-  def draw(stave: Stave, x: Double): Volta
-  def setShiftY(y: Double): Volta
+  def draw(stave: Stave, x: Double): Volta = js.native
+  def setShiftY(y: Double): Volta = js.native
 }
 
 @JSGlobal("Vex.Flow.Volta")

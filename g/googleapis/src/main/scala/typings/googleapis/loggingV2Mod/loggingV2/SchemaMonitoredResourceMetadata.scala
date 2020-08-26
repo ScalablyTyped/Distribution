@@ -33,11 +33,30 @@ trait SchemaMonitoredResourceMetadata extends js.Object {
 
 object SchemaMonitoredResourceMetadata {
   @scala.inline
-  def apply(systemLabels: StringDictionary[js.Any] = null, userLabels: StringDictionary[String] = null): SchemaMonitoredResourceMetadata = {
+  def apply(): SchemaMonitoredResourceMetadata = {
     val __obj = js.Dynamic.literal()
-    if (systemLabels != null) __obj.updateDynamic("systemLabels")(systemLabels.asInstanceOf[js.Any])
-    if (userLabels != null) __obj.updateDynamic("userLabels")(userLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMonitoredResourceMetadata]
   }
+  @scala.inline
+  implicit class SchemaMonitoredResourceMetadataOps[Self <: SchemaMonitoredResourceMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSystemLabels(value: StringDictionary[js.Any]): Self = this.set("systemLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemLabels: Self = this.set("systemLabels", js.undefined)
+    @scala.inline
+    def setUserLabels(value: StringDictionary[String]): Self = this.set("userLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserLabels: Self = this.set("userLabels", js.undefined)
+  }
+  
 }
 

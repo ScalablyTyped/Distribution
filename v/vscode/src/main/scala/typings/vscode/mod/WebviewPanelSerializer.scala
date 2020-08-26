@@ -36,6 +36,7 @@ import scala.scalajs.js.annotation._
   * webview first becomes visible after the restart, this state is passed to `deserializeWebviewPanel`.
   * The extension can then restore the old `WebviewPanel` from this state.
   */
+@js.native
 trait WebviewPanelSerializer extends js.Object {
   /**
     * Restore a webview panel from its serialized `state`.
@@ -48,7 +49,7 @@ trait WebviewPanelSerializer extends js.Object {
     *
     * @return Thenable indicating that the webview has been fully restored.
     */
-  def deserializeWebviewPanel(webviewPanel: WebviewPanel, state: js.Any): Thenable[Unit]
+  def deserializeWebviewPanel(webviewPanel: WebviewPanel, state: js.Any): Thenable[Unit] = js.native
 }
 
 object WebviewPanelSerializer {
@@ -57,5 +58,20 @@ object WebviewPanelSerializer {
     val __obj = js.Dynamic.literal(deserializeWebviewPanel = js.Any.fromFunction2(deserializeWebviewPanel))
     __obj.asInstanceOf[WebviewPanelSerializer]
   }
+  @scala.inline
+  implicit class WebviewPanelSerializerOps[Self <: WebviewPanelSerializer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeserializeWebviewPanel(value: (WebviewPanel, js.Any) => Thenable[Unit]): Self = this.set("deserializeWebviewPanel", js.Any.fromFunction2(value))
+  }
+  
 }
 

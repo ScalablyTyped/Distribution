@@ -5,109 +5,148 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Address extends ShopifyObject {
   /**
     * The mailing address.
     */
-  var address1: js.UndefOr[String] = js.undefined
+  var address1: js.UndefOr[String] = js.native
   /**
     * An additional field for the mailing address.
     */
-  var address2: js.UndefOr[String] = js.undefined
+  var address2: js.UndefOr[String] = js.native
   /**
     * The city.
     */
-  var city: js.UndefOr[String] = js.undefined
+  var city: js.UndefOr[String] = js.native
   /**
     * The company.
     */
-  var company: js.UndefOr[String] = js.undefined
+  var company: js.UndefOr[String] = js.native
   /**
     * The country.
     */
-  var country: js.UndefOr[String] = js.undefined
+  var country: js.UndefOr[String] = js.native
   /**
     * The two-letter country code corresponding to the country.
     */
-  var country_code: js.UndefOr[String] = js.undefined
+  var country_code: js.UndefOr[String] = js.native
   /**
     * The normalized country name.
     */
-  var country_name: js.UndefOr[String] = js.undefined
+  var country_name: js.UndefOr[String] = js.native
   /**
     * Indicates whether this address is the default address.
     */
-  var default: js.UndefOr[Boolean] = js.undefined
+  var default: js.UndefOr[Boolean] = js.native
   /**
     * The first name.
     */
-  var first_name: js.UndefOr[String] = js.undefined
+  var first_name: js.UndefOr[String] = js.native
   /**
     * The last name.
     */
-  var last_name: js.UndefOr[String] = js.undefined
+  var last_name: js.UndefOr[String] = js.native
   /**
     * The name.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * The phone number.
     */
-  var phone: js.UndefOr[String] = js.undefined
+  var phone: js.UndefOr[String] = js.native
   /**
     * The province or state name
     */
-  var province: js.UndefOr[String] = js.undefined
+  var province: js.UndefOr[String] = js.native
   /**
     * The two-letter province or state code.
     */
-  var province_code: js.UndefOr[String] = js.undefined
+  var province_code: js.UndefOr[String] = js.native
   /**
     * The ZIP or postal code.
     */
-  var zip: js.UndefOr[String] = js.undefined
+  var zip: js.UndefOr[String] = js.native
 }
 
 object Address {
   @scala.inline
-  def apply(
-    address1: String = null,
-    address2: String = null,
-    admin_graphql_api_id: String = null,
-    city: String = null,
-    company: String = null,
-    country: String = null,
-    country_code: String = null,
-    country_name: String = null,
-    default: js.UndefOr[Boolean] = js.undefined,
-    first_name: String = null,
-    id: js.UndefOr[Double] = js.undefined,
-    last_name: String = null,
-    name: String = null,
-    phone: String = null,
-    province: String = null,
-    province_code: String = null,
-    zip: String = null
-  ): Address = {
+  def apply(): Address = {
     val __obj = js.Dynamic.literal()
-    if (address1 != null) __obj.updateDynamic("address1")(address1.asInstanceOf[js.Any])
-    if (address2 != null) __obj.updateDynamic("address2")(address2.asInstanceOf[js.Any])
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (country_code != null) __obj.updateDynamic("country_code")(country_code.asInstanceOf[js.Any])
-    if (country_name != null) __obj.updateDynamic("country_name")(country_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
-    if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (province != null) __obj.updateDynamic("province")(province.asInstanceOf[js.Any])
-    if (province_code != null) __obj.updateDynamic("province_code")(province_code.asInstanceOf[js.Any])
-    if (zip != null) __obj.updateDynamic("zip")(zip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
+  @scala.inline
+  implicit class AddressOps[Self <: Address] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress1(value: String): Self = this.set("address1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress1: Self = this.set("address1", js.undefined)
+    @scala.inline
+    def setAddress2(value: String): Self = this.set("address2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress2: Self = this.set("address2", js.undefined)
+    @scala.inline
+    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("city", js.undefined)
+    @scala.inline
+    def setCompany(value: String): Self = this.set("company", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompany: Self = this.set("company", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setCountry_code(value: String): Self = this.set("country_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry_code: Self = this.set("country_code", js.undefined)
+    @scala.inline
+    def setCountry_name(value: String): Self = this.set("country_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry_name: Self = this.set("country_name", js.undefined)
+    @scala.inline
+    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setFirst_name(value: String): Self = this.set("first_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirst_name: Self = this.set("first_name", js.undefined)
+    @scala.inline
+    def setLast_name(value: String): Self = this.set("last_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLast_name: Self = this.set("last_name", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhone: Self = this.set("phone", js.undefined)
+    @scala.inline
+    def setProvince(value: String): Self = this.set("province", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvince: Self = this.set("province", js.undefined)
+    @scala.inline
+    def setProvince_code(value: String): Self = this.set("province_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvince_code: Self = this.set("province_code", js.undefined)
+    @scala.inline
+    def setZip(value: String): Self = this.set("zip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZip: Self = this.set("zip", js.undefined)
+  }
+  
 }
 

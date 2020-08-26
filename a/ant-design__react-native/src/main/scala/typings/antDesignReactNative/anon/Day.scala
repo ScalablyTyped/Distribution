@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Day extends js.Object {
   /** 上午 */
-  var am: String
+  var am: String = js.native
   /** 日 */
-  var day: String
+  var day: String = js.native
   /** 时 */
-  var hour: String
+  var hour: String = js.native
   /** 分 */
-  var minute: String
+  var minute: String = js.native
   /** 月 */
-  var month: String
+  var month: String = js.native
   /** 下午 */
-  var pm: String
+  var pm: String = js.native
   /** 年 */
-  var year: String
+  var year: String = js.native
 }
 
 object Day {
@@ -27,5 +28,32 @@ object Day {
     val __obj = js.Dynamic.literal(am = am.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], pm = pm.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     __obj.asInstanceOf[Day]
   }
+  @scala.inline
+  implicit class DayOps[Self <: Day] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAm(value: String): Self = this.set("am", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDay(value: String): Self = this.set("day", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHour(value: String): Self = this.set("hour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinute(value: String): Self = this.set("minute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMonth(value: String): Self = this.set("month", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPm(value: String): Self = this.set("pm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setYear(value: String): Self = this.set("year", value.asInstanceOf[js.Any])
+  }
+  
 }
 

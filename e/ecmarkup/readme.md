@@ -12,7 +12,7 @@ Custom element definitions and core utilities for markup that specifies ECMAScri
 | Keywords           | ecmascript, javascript, specs, specifications, markup, markdown, html, code |
 | # releases         | 8 |
 | # dependents       | 3 |
-| # downloads        | 10158 |
+| # downloads        | 10040 |
 | # stars            | 0 |
 
 ## Links

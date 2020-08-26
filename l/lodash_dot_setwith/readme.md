@@ -12,7 +12,7 @@ The lodash method `_.setWith` exported as a module.
 | Keywords           | lodash-modularized, setwith |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 203930 |
+| # downloads        | 208570 |
 | # stars            | 0 |
 
 ## Links

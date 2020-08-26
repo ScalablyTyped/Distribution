@@ -32,14 +32,32 @@ trait SchemaGooglePrivacyDlpV2KAnonymityConfig extends js.Object {
 
 object SchemaGooglePrivacyDlpV2KAnonymityConfig {
   @scala.inline
-  def apply(
-    entityId: SchemaGooglePrivacyDlpV2EntityId = null,
-    quasiIds: js.Array[SchemaGooglePrivacyDlpV2FieldId] = null
-  ): SchemaGooglePrivacyDlpV2KAnonymityConfig = {
+  def apply(): SchemaGooglePrivacyDlpV2KAnonymityConfig = {
     val __obj = js.Dynamic.literal()
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
-    if (quasiIds != null) __obj.updateDynamic("quasiIds")(quasiIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2KAnonymityConfig]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2KAnonymityConfigOps[Self <: SchemaGooglePrivacyDlpV2KAnonymityConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityId(value: SchemaGooglePrivacyDlpV2EntityId): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityId: Self = this.set("entityId", js.undefined)
+    @scala.inline
+    def setQuasiIdsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = this.set("quasiIds", js.Array(value :_*))
+    @scala.inline
+    def setQuasiIds(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = this.set("quasiIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuasiIds: Self = this.set("quasiIds", js.undefined)
+  }
+  
 }
 

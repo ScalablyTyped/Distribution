@@ -34,21 +34,44 @@ trait CreateStreamInput extends js.Object {
 
 object CreateStreamInput {
   @scala.inline
-  def apply(
-    StreamName: StreamName,
-    DataRetentionInHours: js.UndefOr[DataRetentionInHours] = js.undefined,
-    DeviceName: DeviceName = null,
-    KmsKeyId: KmsKeyId = null,
-    MediaType: MediaType = null,
-    Tags: ResourceTags = null
-  ): CreateStreamInput = {
+  def apply(StreamName: StreamName): CreateStreamInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataRetentionInHours)) __obj.updateDynamic("DataRetentionInHours")(DataRetentionInHours.get.asInstanceOf[js.Any])
-    if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (MediaType != null) __obj.updateDynamic("MediaType")(MediaType.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStreamInput]
   }
+  @scala.inline
+  implicit class CreateStreamInputOps[Self <: CreateStreamInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataRetentionInHours(value: DataRetentionInHours): Self = this.set("DataRetentionInHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRetentionInHours: Self = this.set("DataRetentionInHours", js.undefined)
+    @scala.inline
+    def setDeviceName(value: DeviceName): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setMediaType(value: MediaType): Self = this.set("MediaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaType: Self = this.set("MediaType", js.undefined)
+    @scala.inline
+    def setTags(value: ResourceTags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/panels/YearPanel", JSImport.Namespace)
+@JSImport("rc-picker/es/panels/YearPanel", JSImport.Namespace)
 @js.native
 object yearPanelMod extends js.Object {
   @js.native

@@ -15,12 +15,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class MultiError protected () extends VError {
   def this(errors: js.Array[Error]) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override def cause(): js.UndefOr[Error] = js.native
   def errors(): js.Array[Error] = js.native
 }
 

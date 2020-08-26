@@ -50,24 +50,52 @@ trait SchemaPigJob extends js.Object {
 
 object SchemaPigJob {
   @scala.inline
-  def apply(
-    continueOnFailure: js.UndefOr[Boolean] = js.undefined,
-    jarFileUris: js.Array[String] = null,
-    loggingConfig: SchemaLoggingConfig = null,
-    properties: StringDictionary[String] = null,
-    queryFileUri: String = null,
-    queryList: SchemaQueryList = null,
-    scriptVariables: StringDictionary[String] = null
-  ): SchemaPigJob = {
+  def apply(): SchemaPigJob = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(continueOnFailure)) __obj.updateDynamic("continueOnFailure")(continueOnFailure.get.asInstanceOf[js.Any])
-    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris.asInstanceOf[js.Any])
-    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (queryFileUri != null) __obj.updateDynamic("queryFileUri")(queryFileUri.asInstanceOf[js.Any])
-    if (queryList != null) __obj.updateDynamic("queryList")(queryList.asInstanceOf[js.Any])
-    if (scriptVariables != null) __obj.updateDynamic("scriptVariables")(scriptVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPigJob]
   }
+  @scala.inline
+  implicit class SchemaPigJobOps[Self <: SchemaPigJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContinueOnFailure(value: Boolean): Self = this.set("continueOnFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinueOnFailure: Self = this.set("continueOnFailure", js.undefined)
+    @scala.inline
+    def setJarFileUrisVarargs(value: String*): Self = this.set("jarFileUris", js.Array(value :_*))
+    @scala.inline
+    def setJarFileUris(value: js.Array[String]): Self = this.set("jarFileUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJarFileUris: Self = this.set("jarFileUris", js.undefined)
+    @scala.inline
+    def setLoggingConfig(value: SchemaLoggingConfig): Self = this.set("loggingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfig: Self = this.set("loggingConfig", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setQueryFileUri(value: String): Self = this.set("queryFileUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryFileUri: Self = this.set("queryFileUri", js.undefined)
+    @scala.inline
+    def setQueryList(value: SchemaQueryList): Self = this.set("queryList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryList: Self = this.set("queryList", js.undefined)
+    @scala.inline
+    def setScriptVariables(value: StringDictionary[String]): Self = this.set("scriptVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScriptVariables: Self = this.set("scriptVariables", js.undefined)
+  }
+  
 }
 

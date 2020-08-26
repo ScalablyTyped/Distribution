@@ -1,32 +1,36 @@
 package typings.atom.mod
 
-import typings.atom.anon.ClassName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ErrorNotificationOptions extends NotificationOptions {
-  var stack: js.UndefOr[String] = js.undefined
+  var stack: js.UndefOr[String] = js.native
 }
 
 object ErrorNotificationOptions {
   @scala.inline
-  def apply(
-    buttons: js.Array[ClassName] = null,
-    description: String = null,
-    detail: String = null,
-    dismissable: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    stack: String = null
-  ): ErrorNotificationOptions = {
+  def apply(): ErrorNotificationOptions = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissable)) __obj.updateDynamic("dismissable")(dismissable.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorNotificationOptions]
   }
+  @scala.inline
+  implicit class ErrorNotificationOptionsOps[Self <: ErrorNotificationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStack: Self = this.set("stack", js.undefined)
+  }
+  
 }
 

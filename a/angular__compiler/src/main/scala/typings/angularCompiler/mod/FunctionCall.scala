@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "FunctionCall")
 @js.native
 class FunctionCall protected ()
-  extends typings.angularCompiler.publicApiMod.FunctionCall {
+  extends typings.angularCompiler.compilerMod.FunctionCall {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

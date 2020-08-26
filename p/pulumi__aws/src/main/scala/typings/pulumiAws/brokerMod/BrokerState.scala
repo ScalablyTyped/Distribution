@@ -88,9 +88,9 @@ trait BrokerState extends js.Object {
     */
   val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The list of all ActiveMQ usernames for the specified broker. See below.
     */
@@ -99,46 +99,102 @@ trait BrokerState extends js.Object {
 
 object BrokerState {
   @scala.inline
-  def apply(
-    applyImmediately: Input[Boolean] = null,
-    arn: Input[String] = null,
-    autoMinorVersionUpgrade: Input[Boolean] = null,
-    brokerName: Input[String] = null,
-    configuration: Input[BrokerConfiguration] = null,
-    deploymentMode: Input[String] = null,
-    encryptionOptions: Input[BrokerEncryptionOptions] = null,
-    engineType: Input[String] = null,
-    engineVersion: Input[String] = null,
-    hostInstanceType: Input[String] = null,
-    instances: Input[js.Array[Input[BrokerInstance]]] = null,
-    logs: Input[BrokerLogs] = null,
-    maintenanceWindowStartTime: Input[BrokerMaintenanceWindowStartTime] = null,
-    publiclyAccessible: Input[Boolean] = null,
-    securityGroups: Input[js.Array[Input[String]]] = null,
-    subnetIds: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null,
-    users: Input[js.Array[Input[BrokerUser]]] = null
-  ): BrokerState = {
+  def apply(): BrokerState = {
     val __obj = js.Dynamic.literal()
-    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
-    if (brokerName != null) __obj.updateDynamic("brokerName")(brokerName.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (deploymentMode != null) __obj.updateDynamic("deploymentMode")(deploymentMode.asInstanceOf[js.Any])
-    if (encryptionOptions != null) __obj.updateDynamic("encryptionOptions")(encryptionOptions.asInstanceOf[js.Any])
-    if (engineType != null) __obj.updateDynamic("engineType")(engineType.asInstanceOf[js.Any])
-    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    if (hostInstanceType != null) __obj.updateDynamic("hostInstanceType")(hostInstanceType.asInstanceOf[js.Any])
-    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
-    if (logs != null) __obj.updateDynamic("logs")(logs.asInstanceOf[js.Any])
-    if (maintenanceWindowStartTime != null) __obj.updateDynamic("maintenanceWindowStartTime")(maintenanceWindowStartTime.asInstanceOf[js.Any])
-    if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
-    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
-    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerState]
   }
+  @scala.inline
+  implicit class BrokerStateOps[Self <: BrokerState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplyImmediately(value: Input[Boolean]): Self = this.set("applyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyImmediately: Self = this.set("applyImmediately", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: Input[Boolean]): Self = this.set("autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMinorVersionUpgrade: Self = this.set("autoMinorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setBrokerName(value: Input[String]): Self = this.set("brokerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerName: Self = this.set("brokerName", js.undefined)
+    @scala.inline
+    def setConfiguration(value: Input[BrokerConfiguration]): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setDeploymentMode(value: Input[String]): Self = this.set("deploymentMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentMode: Self = this.set("deploymentMode", js.undefined)
+    @scala.inline
+    def setEncryptionOptions(value: Input[BrokerEncryptionOptions]): Self = this.set("encryptionOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionOptions: Self = this.set("encryptionOptions", js.undefined)
+    @scala.inline
+    def setEngineType(value: Input[String]): Self = this.set("engineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineType: Self = this.set("engineType", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: Input[String]): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    @scala.inline
+    def setHostInstanceType(value: Input[String]): Self = this.set("hostInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostInstanceType: Self = this.set("hostInstanceType", js.undefined)
+    @scala.inline
+    def setInstancesVarargs(value: Input[BrokerInstance]*): Self = this.set("instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: Input[js.Array[Input[BrokerInstance]]]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("instances", js.undefined)
+    @scala.inline
+    def setLogs(value: Input[BrokerLogs]): Self = this.set("logs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogs: Self = this.set("logs", js.undefined)
+    @scala.inline
+    def setMaintenanceWindowStartTime(value: Input[BrokerMaintenanceWindowStartTime]): Self = this.set("maintenanceWindowStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceWindowStartTime: Self = this.set("maintenanceWindowStartTime", js.undefined)
+    @scala.inline
+    def setPubliclyAccessible(value: Input[Boolean]): Self = this.set("publiclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAccessible: Self = this.set("publiclyAccessible", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: Input[String]*): Self = this.set("securityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("securityGroups", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: Input[String]*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("subnetIds", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUsersVarargs(value: Input[BrokerUser]*): Self = this.set("users", js.Array(value :_*))
+    @scala.inline
+    def setUsers(value: Input[js.Array[Input[BrokerUser]]]): Self = this.set("users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsers: Self = this.set("users", js.undefined)
+  }
+  
 }
 

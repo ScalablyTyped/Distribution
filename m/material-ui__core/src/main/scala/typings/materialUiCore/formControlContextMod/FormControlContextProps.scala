@@ -34,20 +34,57 @@ object FormControlContextProps {
     onBlur: () => Unit,
     onEmpty: () => Unit,
     onFilled: () => Unit,
-    onFocus: () => Unit,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    error: js.UndefOr[Boolean] = js.undefined,
-    margin: Margin = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    variant: standard | outlined | filled = null
+    onFocus: () => Unit
   ): FormControlContextProps = {
     val __obj = js.Dynamic.literal(adornedStart = adornedStart.asInstanceOf[js.Any], filled = filled.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onEmpty = js.Any.fromFunction0(onEmpty), onFilled = js.Any.fromFunction0(onFilled), onFocus = js.Any.fromFunction0(onFocus))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormControlContextProps]
   }
+  @scala.inline
+  implicit class FormControlContextPropsOps[Self <: FormControlContextProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdornedStart(value: Boolean): Self = this.set("adornedStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilled(value: Boolean): Self = this.set("filled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFocused(value: Boolean): Self = this.set("focused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnBlur(value: () => Unit): Self = this.set("onBlur", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnEmpty(value: () => Unit): Self = this.set("onEmpty", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnFilled(value: () => Unit): Self = this.set("onFilled", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnFocus(value: () => Unit): Self = this.set("onFocus", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setMargin(value: Margin): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setVariant(value: standard | outlined | filled): Self = this.set("variant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariant: Self = this.set("variant", js.undefined)
+  }
+  
 }
 

@@ -58,26 +58,56 @@ trait SchemaProtectedRange extends js.Object {
 
 object SchemaProtectedRange {
   @scala.inline
-  def apply(
-    description: String = null,
-    editors: SchemaEditors = null,
-    namedRangeId: String = null,
-    protectedRangeId: js.UndefOr[Double] = js.undefined,
-    range: SchemaGridRange = null,
-    requestingUserCanEdit: js.UndefOr[Boolean] = js.undefined,
-    unprotectedRanges: js.Array[SchemaGridRange] = null,
-    warningOnly: js.UndefOr[Boolean] = js.undefined
-  ): SchemaProtectedRange = {
+  def apply(): SchemaProtectedRange = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (editors != null) __obj.updateDynamic("editors")(editors.asInstanceOf[js.Any])
-    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(protectedRangeId)) __obj.updateDynamic("protectedRangeId")(protectedRangeId.get.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestingUserCanEdit)) __obj.updateDynamic("requestingUserCanEdit")(requestingUserCanEdit.get.asInstanceOf[js.Any])
-    if (unprotectedRanges != null) __obj.updateDynamic("unprotectedRanges")(unprotectedRanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(warningOnly)) __obj.updateDynamic("warningOnly")(warningOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProtectedRange]
   }
+  @scala.inline
+  implicit class SchemaProtectedRangeOps[Self <: SchemaProtectedRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEditors(value: SchemaEditors): Self = this.set("editors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditors: Self = this.set("editors", js.undefined)
+    @scala.inline
+    def setNamedRangeId(value: String): Self = this.set("namedRangeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedRangeId: Self = this.set("namedRangeId", js.undefined)
+    @scala.inline
+    def setProtectedRangeId(value: Double): Self = this.set("protectedRangeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtectedRangeId: Self = this.set("protectedRangeId", js.undefined)
+    @scala.inline
+    def setRange(value: SchemaGridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setRequestingUserCanEdit(value: Boolean): Self = this.set("requestingUserCanEdit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestingUserCanEdit: Self = this.set("requestingUserCanEdit", js.undefined)
+    @scala.inline
+    def setUnprotectedRangesVarargs(value: SchemaGridRange*): Self = this.set("unprotectedRanges", js.Array(value :_*))
+    @scala.inline
+    def setUnprotectedRanges(value: js.Array[SchemaGridRange]): Self = this.set("unprotectedRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnprotectedRanges: Self = this.set("unprotectedRanges", js.undefined)
+    @scala.inline
+    def setWarningOnly(value: Boolean): Self = this.set("warningOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarningOnly: Self = this.set("warningOnly", js.undefined)
+  }
+  
 }
 

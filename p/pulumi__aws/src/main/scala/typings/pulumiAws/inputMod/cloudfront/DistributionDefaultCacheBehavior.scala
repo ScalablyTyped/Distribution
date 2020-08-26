@@ -93,26 +93,73 @@ object DistributionDefaultCacheBehavior {
     cachedMethods: Input[js.Array[Input[String]]],
     forwardedValues: Input[DistributionDefaultCacheBehaviorForwardedValues],
     targetOriginId: Input[String],
-    viewerProtocolPolicy: Input[String],
-    compress: Input[Boolean] = null,
-    defaultTtl: Input[Double] = null,
-    fieldLevelEncryptionId: Input[String] = null,
-    lambdaFunctionAssociations: Input[js.Array[Input[DistributionDefaultCacheBehaviorLambdaFunctionAssociation]]] = null,
-    maxTtl: Input[Double] = null,
-    minTtl: Input[Double] = null,
-    smoothStreaming: Input[Boolean] = null,
-    trustedSigners: Input[js.Array[Input[String]]] = null
+    viewerProtocolPolicy: Input[String]
   ): DistributionDefaultCacheBehavior = {
     val __obj = js.Dynamic.literal(allowedMethods = allowedMethods.asInstanceOf[js.Any], cachedMethods = cachedMethods.asInstanceOf[js.Any], forwardedValues = forwardedValues.asInstanceOf[js.Any], targetOriginId = targetOriginId.asInstanceOf[js.Any], viewerProtocolPolicy = viewerProtocolPolicy.asInstanceOf[js.Any])
-    if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
-    if (fieldLevelEncryptionId != null) __obj.updateDynamic("fieldLevelEncryptionId")(fieldLevelEncryptionId.asInstanceOf[js.Any])
-    if (lambdaFunctionAssociations != null) __obj.updateDynamic("lambdaFunctionAssociations")(lambdaFunctionAssociations.asInstanceOf[js.Any])
-    if (maxTtl != null) __obj.updateDynamic("maxTtl")(maxTtl.asInstanceOf[js.Any])
-    if (minTtl != null) __obj.updateDynamic("minTtl")(minTtl.asInstanceOf[js.Any])
-    if (smoothStreaming != null) __obj.updateDynamic("smoothStreaming")(smoothStreaming.asInstanceOf[js.Any])
-    if (trustedSigners != null) __obj.updateDynamic("trustedSigners")(trustedSigners.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionDefaultCacheBehavior]
   }
+  @scala.inline
+  implicit class DistributionDefaultCacheBehaviorOps[Self <: DistributionDefaultCacheBehavior] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedMethodsVarargs(value: Input[String]*): Self = this.set("allowedMethods", js.Array(value :_*))
+    @scala.inline
+    def setAllowedMethods(value: Input[js.Array[Input[String]]]): Self = this.set("allowedMethods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCachedMethodsVarargs(value: Input[String]*): Self = this.set("cachedMethods", js.Array(value :_*))
+    @scala.inline
+    def setCachedMethods(value: Input[js.Array[Input[String]]]): Self = this.set("cachedMethods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForwardedValues(value: Input[DistributionDefaultCacheBehaviorForwardedValues]): Self = this.set("forwardedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetOriginId(value: Input[String]): Self = this.set("targetOriginId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setViewerProtocolPolicy(value: Input[String]): Self = this.set("viewerProtocolPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompress(value: Input[Boolean]): Self = this.set("compress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompress: Self = this.set("compress", js.undefined)
+    @scala.inline
+    def setDefaultTtl(value: Input[Double]): Self = this.set("defaultTtl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTtl: Self = this.set("defaultTtl", js.undefined)
+    @scala.inline
+    def setFieldLevelEncryptionId(value: Input[String]): Self = this.set("fieldLevelEncryptionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldLevelEncryptionId: Self = this.set("fieldLevelEncryptionId", js.undefined)
+    @scala.inline
+    def setLambdaFunctionAssociationsVarargs(value: Input[DistributionDefaultCacheBehaviorLambdaFunctionAssociation]*): Self = this.set("lambdaFunctionAssociations", js.Array(value :_*))
+    @scala.inline
+    def setLambdaFunctionAssociations(value: Input[js.Array[Input[DistributionDefaultCacheBehaviorLambdaFunctionAssociation]]]): Self = this.set("lambdaFunctionAssociations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaFunctionAssociations: Self = this.set("lambdaFunctionAssociations", js.undefined)
+    @scala.inline
+    def setMaxTtl(value: Input[Double]): Self = this.set("maxTtl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxTtl: Self = this.set("maxTtl", js.undefined)
+    @scala.inline
+    def setMinTtl(value: Input[Double]): Self = this.set("minTtl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinTtl: Self = this.set("minTtl", js.undefined)
+    @scala.inline
+    def setSmoothStreaming(value: Input[Boolean]): Self = this.set("smoothStreaming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmoothStreaming: Self = this.set("smoothStreaming", js.undefined)
+    @scala.inline
+    def setTrustedSignersVarargs(value: Input[String]*): Self = this.set("trustedSigners", js.Array(value :_*))
+    @scala.inline
+    def setTrustedSigners(value: Input[js.Array[Input[String]]]): Self = this.set("trustedSigners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrustedSigners: Self = this.set("trustedSigners", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-collapsible" : "1.5.2"
+      "react-native-collapsible" : "1.5.3"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-collapsible" : "1.5.2"
+      "react-native-collapsible" : "1.5.3"
     }
   ],
   "compile-devDependencies" : [

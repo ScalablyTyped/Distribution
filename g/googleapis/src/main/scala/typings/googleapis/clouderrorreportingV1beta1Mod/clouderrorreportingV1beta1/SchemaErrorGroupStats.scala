@@ -72,28 +72,62 @@ trait SchemaErrorGroupStats extends js.Object {
 
 object SchemaErrorGroupStats {
   @scala.inline
-  def apply(
-    affectedServices: js.Array[SchemaServiceContext] = null,
-    affectedUsersCount: String = null,
-    count: String = null,
-    firstSeenTime: String = null,
-    group: SchemaErrorGroup = null,
-    lastSeenTime: String = null,
-    numAffectedServices: js.UndefOr[Double] = js.undefined,
-    representative: SchemaErrorEvent = null,
-    timedCounts: js.Array[SchemaTimedCount] = null
-  ): SchemaErrorGroupStats = {
+  def apply(): SchemaErrorGroupStats = {
     val __obj = js.Dynamic.literal()
-    if (affectedServices != null) __obj.updateDynamic("affectedServices")(affectedServices.asInstanceOf[js.Any])
-    if (affectedUsersCount != null) __obj.updateDynamic("affectedUsersCount")(affectedUsersCount.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (firstSeenTime != null) __obj.updateDynamic("firstSeenTime")(firstSeenTime.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (lastSeenTime != null) __obj.updateDynamic("lastSeenTime")(lastSeenTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(numAffectedServices)) __obj.updateDynamic("numAffectedServices")(numAffectedServices.get.asInstanceOf[js.Any])
-    if (representative != null) __obj.updateDynamic("representative")(representative.asInstanceOf[js.Any])
-    if (timedCounts != null) __obj.updateDynamic("timedCounts")(timedCounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaErrorGroupStats]
   }
+  @scala.inline
+  implicit class SchemaErrorGroupStatsOps[Self <: SchemaErrorGroupStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAffectedServicesVarargs(value: SchemaServiceContext*): Self = this.set("affectedServices", js.Array(value :_*))
+    @scala.inline
+    def setAffectedServices(value: js.Array[SchemaServiceContext]): Self = this.set("affectedServices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffectedServices: Self = this.set("affectedServices", js.undefined)
+    @scala.inline
+    def setAffectedUsersCount(value: String): Self = this.set("affectedUsersCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffectedUsersCount: Self = this.set("affectedUsersCount", js.undefined)
+    @scala.inline
+    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setFirstSeenTime(value: String): Self = this.set("firstSeenTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstSeenTime: Self = this.set("firstSeenTime", js.undefined)
+    @scala.inline
+    def setGroup(value: SchemaErrorGroup): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setLastSeenTime(value: String): Self = this.set("lastSeenTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSeenTime: Self = this.set("lastSeenTime", js.undefined)
+    @scala.inline
+    def setNumAffectedServices(value: Double): Self = this.set("numAffectedServices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumAffectedServices: Self = this.set("numAffectedServices", js.undefined)
+    @scala.inline
+    def setRepresentative(value: SchemaErrorEvent): Self = this.set("representative", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepresentative: Self = this.set("representative", js.undefined)
+    @scala.inline
+    def setTimedCountsVarargs(value: SchemaTimedCount*): Self = this.set("timedCounts", js.Array(value :_*))
+    @scala.inline
+    def setTimedCounts(value: js.Array[SchemaTimedCount]): Self = this.set("timedCounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimedCounts: Self = this.set("timedCounts", js.undefined)
+  }
+  
 }
 

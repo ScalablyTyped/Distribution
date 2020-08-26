@@ -10,7 +10,7 @@ object envMod extends js.Object {
   @js.native
   object env extends js.Object {
     var forceCache: Boolean = js.native
-    var isNode: js.Any = js.native
+    var isNode: Boolean = js.native
   }
   
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined aws-sdk.aws-sdk/clients/elasticache.DescribeCacheClustersMessage & {  $waiter ? :aws-sdk.aws-sdk/lib/service.WaiterConfiguration} */
+/* Inlined aws-sdk.aws-sdk/clients/elasticache.DescribeCacheClustersMessage & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
 trait DescribeCacheClustersMess extends js.Object {
   @JSName("$waiter")
@@ -37,22 +37,46 @@ trait DescribeCacheClustersMess extends js.Object {
 
 object DescribeCacheClustersMess {
   @scala.inline
-  def apply(
-    $waiter: WaiterConfiguration = null,
-    CacheClusterId: String = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    ShowCacheClustersNotInReplicationGroups: js.UndefOr[BooleanOptional] = js.undefined,
-    ShowCacheNodeInfo: js.UndefOr[BooleanOptional] = js.undefined
-  ): DescribeCacheClustersMess = {
+  def apply(): DescribeCacheClustersMess = {
     val __obj = js.Dynamic.literal()
-    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
-    if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowCacheClustersNotInReplicationGroups)) __obj.updateDynamic("ShowCacheClustersNotInReplicationGroups")(ShowCacheClustersNotInReplicationGroups.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowCacheNodeInfo)) __obj.updateDynamic("ShowCacheNodeInfo")(ShowCacheNodeInfo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCacheClustersMess]
   }
+  @scala.inline
+  implicit class DescribeCacheClustersMessOps[Self <: DescribeCacheClustersMess] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    @scala.inline
+    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setShowCacheClustersNotInReplicationGroups(value: BooleanOptional): Self = this.set("ShowCacheClustersNotInReplicationGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCacheClustersNotInReplicationGroups: Self = this.set("ShowCacheClustersNotInReplicationGroups", js.undefined)
+    @scala.inline
+    def setShowCacheNodeInfo(value: BooleanOptional): Self = this.set("ShowCacheNodeInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCacheNodeInfo: Self = this.set("ShowCacheNodeInfo", js.undefined)
+  }
+  
 }
 

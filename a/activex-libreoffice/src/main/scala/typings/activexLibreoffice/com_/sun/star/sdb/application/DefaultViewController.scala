@@ -34,6 +34,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** is the default controller implementation for OpenOffice.org's database application. */
+@js.native
 trait DefaultViewController
   extends XController
      with XDispatchProvider

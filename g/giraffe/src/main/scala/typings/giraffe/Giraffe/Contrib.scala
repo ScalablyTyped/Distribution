@@ -32,6 +32,7 @@ object Contrib extends js.Object {
       * reasons.
       */
     def on(eventName: js.Any): this.type = js.native
+    def on(eventName: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
     def on(eventName: js.Any, callback: js.Any): this.type = js.native
     def on(eventName: js.Any, callback: js.Any, context: js.Any): this.type = js.native
   }

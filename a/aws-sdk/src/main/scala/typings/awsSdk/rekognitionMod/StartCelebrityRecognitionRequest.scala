@@ -26,17 +26,36 @@ trait StartCelebrityRecognitionRequest extends js.Object {
 
 object StartCelebrityRecognitionRequest {
   @scala.inline
-  def apply(
-    Video: Video,
-    ClientRequestToken: ClientRequestToken = null,
-    JobTag: JobTag = null,
-    NotificationChannel: NotificationChannel = null
-  ): StartCelebrityRecognitionRequest = {
+  def apply(Video: Video): StartCelebrityRecognitionRequest = {
     val __obj = js.Dynamic.literal(Video = Video.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (JobTag != null) __obj.updateDynamic("JobTag")(JobTag.asInstanceOf[js.Any])
-    if (NotificationChannel != null) __obj.updateDynamic("NotificationChannel")(NotificationChannel.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartCelebrityRecognitionRequest]
   }
+  @scala.inline
+  implicit class StartCelebrityRecognitionRequestOps[Self <: StartCelebrityRecognitionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVideo(value: Video): Self = this.set("Video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setJobTag(value: JobTag): Self = this.set("JobTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobTag: Self = this.set("JobTag", js.undefined)
+    @scala.inline
+    def setNotificationChannel(value: NotificationChannel): Self = this.set("NotificationChannel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationChannel: Self = this.set("NotificationChannel", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ Sensible promise handling and middleware for redux
 | Full name          | redux-pack |
 | Keywords           | redux, middleware, promise, async, normalize, normalizr, react |
 | # releases         | 1 |
-| # dependents       | 10 |
-| # downloads        | 237970 |
+| # dependents       | 11 |
+| # downloads        | 256599 |
 | # stars            | 3 |
 
 ## Links

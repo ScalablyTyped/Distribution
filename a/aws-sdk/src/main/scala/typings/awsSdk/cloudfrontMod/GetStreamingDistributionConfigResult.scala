@@ -18,11 +18,30 @@ trait GetStreamingDistributionConfigResult extends js.Object {
 
 object GetStreamingDistributionConfigResult {
   @scala.inline
-  def apply(ETag: String = null, StreamingDistributionConfig: StreamingDistributionConfig = null): GetStreamingDistributionConfigResult = {
+  def apply(): GetStreamingDistributionConfigResult = {
     val __obj = js.Dynamic.literal()
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (StreamingDistributionConfig != null) __obj.updateDynamic("StreamingDistributionConfig")(StreamingDistributionConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStreamingDistributionConfigResult]
   }
+  @scala.inline
+  implicit class GetStreamingDistributionConfigResultOps[Self <: GetStreamingDistributionConfigResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("ETag", js.undefined)
+    @scala.inline
+    def setStreamingDistributionConfig(value: StreamingDistributionConfig): Self = this.set("StreamingDistributionConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingDistributionConfig: Self = this.set("StreamingDistributionConfig", js.undefined)
+  }
+  
 }
 

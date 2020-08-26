@@ -62,36 +62,78 @@ trait Block extends js.Object {
 
 object Block {
   @scala.inline
-  def apply(
-    BlockType: BlockType = null,
-    ColumnIndex: js.UndefOr[UInteger] = js.undefined,
-    ColumnSpan: js.UndefOr[UInteger] = js.undefined,
-    Confidence: js.UndefOr[Percent] = js.undefined,
-    EntityTypes: EntityTypes = null,
-    Geometry: Geometry = null,
-    Id: NonEmptyString = null,
-    Page: js.UndefOr[UInteger] = js.undefined,
-    Relationships: RelationshipList = null,
-    RowIndex: js.UndefOr[UInteger] = js.undefined,
-    RowSpan: js.UndefOr[UInteger] = js.undefined,
-    SelectionStatus: SelectionStatus = null,
-    Text: String = null
-  ): Block = {
+  def apply(): Block = {
     val __obj = js.Dynamic.literal()
-    if (BlockType != null) __obj.updateDynamic("BlockType")(BlockType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ColumnIndex)) __obj.updateDynamic("ColumnIndex")(ColumnIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ColumnSpan)) __obj.updateDynamic("ColumnSpan")(ColumnSpan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
-    if (EntityTypes != null) __obj.updateDynamic("EntityTypes")(EntityTypes.asInstanceOf[js.Any])
-    if (Geometry != null) __obj.updateDynamic("Geometry")(Geometry.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(Page)) __obj.updateDynamic("Page")(Page.get.asInstanceOf[js.Any])
-    if (Relationships != null) __obj.updateDynamic("Relationships")(Relationships.asInstanceOf[js.Any])
-    if (!js.isUndefined(RowIndex)) __obj.updateDynamic("RowIndex")(RowIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RowSpan)) __obj.updateDynamic("RowSpan")(RowSpan.get.asInstanceOf[js.Any])
-    if (SelectionStatus != null) __obj.updateDynamic("SelectionStatus")(SelectionStatus.asInstanceOf[js.Any])
-    if (Text != null) __obj.updateDynamic("Text")(Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]
   }
+  @scala.inline
+  implicit class BlockOps[Self <: Block] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockType(value: BlockType): Self = this.set("BlockType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockType: Self = this.set("BlockType", js.undefined)
+    @scala.inline
+    def setColumnIndex(value: UInteger): Self = this.set("ColumnIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnIndex: Self = this.set("ColumnIndex", js.undefined)
+    @scala.inline
+    def setColumnSpan(value: UInteger): Self = this.set("ColumnSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnSpan: Self = this.set("ColumnSpan", js.undefined)
+    @scala.inline
+    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    @scala.inline
+    def setEntityTypesVarargs(value: EntityType*): Self = this.set("EntityTypes", js.Array(value :_*))
+    @scala.inline
+    def setEntityTypes(value: EntityTypes): Self = this.set("EntityTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityTypes: Self = this.set("EntityTypes", js.undefined)
+    @scala.inline
+    def setGeometry(value: Geometry): Self = this.set("Geometry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeometry: Self = this.set("Geometry", js.undefined)
+    @scala.inline
+    def setId(value: NonEmptyString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setPage(value: UInteger): Self = this.set("Page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("Page", js.undefined)
+    @scala.inline
+    def setRelationshipsVarargs(value: Relationship*): Self = this.set("Relationships", js.Array(value :_*))
+    @scala.inline
+    def setRelationships(value: RelationshipList): Self = this.set("Relationships", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationships: Self = this.set("Relationships", js.undefined)
+    @scala.inline
+    def setRowIndex(value: UInteger): Self = this.set("RowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("RowIndex", js.undefined)
+    @scala.inline
+    def setRowSpan(value: UInteger): Self = this.set("RowSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowSpan: Self = this.set("RowSpan", js.undefined)
+    @scala.inline
+    def setSelectionStatus(value: SelectionStatus): Self = this.set("SelectionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionStatus: Self = this.set("SelectionStatus", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("Text", js.undefined)
+  }
+  
 }
 

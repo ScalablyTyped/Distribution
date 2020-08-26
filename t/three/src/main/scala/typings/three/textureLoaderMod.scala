@@ -17,7 +17,30 @@ object textureLoaderMod extends js.Object {
   class TextureLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     def load(url: String): Texture = js.native
+    def load(
+      url: String,
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.UndefOr[scala.Nothing],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): Texture = js.native
+    def load(
+      url: String,
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
+    ): Texture = js.native
+    def load(
+      url: String,
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): Texture = js.native
     def load(url: String, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = js.native
+    def load(
+      url: String,
+      onLoad: js.Function1[/* texture */ Texture, Unit],
+      onProgress: js.UndefOr[scala.Nothing],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): Texture = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* texture */ Texture, Unit],

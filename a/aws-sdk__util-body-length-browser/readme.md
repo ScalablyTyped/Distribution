@@ -11,8 +11,8 @@ Determines the length of a request body in browsers
 | Full name          | @aws-sdk/util-body-length-browser |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 184 |
-| # downloads        | 3979 |
+| # dependents       | 366 |
+| # downloads        | 4742 |
 | # stars            | 0 |
 
 ## Links

@@ -1,44 +1,54 @@
 package typings.antdMobile.noticeBarMod
 
-import typings.antdMobile.antdMobileStrings.closable
-import typings.antdMobile.antdMobileStrings.link
 import typings.antdMobile.marqueeMod.MarqueeProps
 import typings.antdMobile.noticeBarPropsTypeMod.NoticeBarPropsType
 import typings.react.mod.CSSProperties
-import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NoticeWebProps extends NoticeBarPropsType {
-  var className: js.UndefOr[String] = js.undefined
-  var marqueeProps: js.UndefOr[MarqueeProps] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var marqueeProps: js.UndefOr[MarqueeProps] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object NoticeWebProps {
   @scala.inline
-  def apply(
-    action: ReactElement = null,
-    className: String = null,
-    icon: js.UndefOr[Null | ReactElement] = js.undefined,
-    marqueeProps: MarqueeProps = null,
-    mode: closable | link = null,
-    onClick: () => Unit = null,
-    prefixCls: String = null,
-    style: CSSProperties = null
-  ): NoticeWebProps = {
+  def apply(): NoticeWebProps = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (marqueeProps != null) __obj.updateDynamic("marqueeProps")(marqueeProps.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoticeWebProps]
   }
+  @scala.inline
+  implicit class NoticeWebPropsOps[Self <: NoticeWebProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setMarqueeProps(value: MarqueeProps): Self = this.set("marqueeProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarqueeProps: Self = this.set("marqueeProps", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

@@ -20,20 +20,42 @@ trait Cont extends js.Object {
 
 object Cont {
   @scala.inline
-  def apply(
-    Cont: ContinuationEvent = null,
-    End: EndEvent = null,
-    Progress: ProgressEvent = null,
-    Records: RecordsEvent = null,
-    Stats: StatsEvent = null
-  ): Cont = {
+  def apply(): Cont = {
     val __obj = js.Dynamic.literal()
-    if (Cont != null) __obj.updateDynamic("Cont")(Cont.asInstanceOf[js.Any])
-    if (End != null) __obj.updateDynamic("End")(End.asInstanceOf[js.Any])
-    if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])
-    if (Records != null) __obj.updateDynamic("Records")(Records.asInstanceOf[js.Any])
-    if (Stats != null) __obj.updateDynamic("Stats")(Stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cont]
   }
+  @scala.inline
+  implicit class ContOps[Self <: Cont] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCont(value: ContinuationEvent): Self = this.set("Cont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCont: Self = this.set("Cont", js.undefined)
+    @scala.inline
+    def setEnd(value: EndEvent): Self = this.set("End", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("End", js.undefined)
+    @scala.inline
+    def setProgress(value: ProgressEvent): Self = this.set("Progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("Progress", js.undefined)
+    @scala.inline
+    def setRecords(value: RecordsEvent): Self = this.set("Records", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecords: Self = this.set("Records", js.undefined)
+    @scala.inline
+    def setStats(value: StatsEvent): Self = this.set("Stats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStats: Self = this.set("Stats", js.undefined)
+  }
+  
 }
 

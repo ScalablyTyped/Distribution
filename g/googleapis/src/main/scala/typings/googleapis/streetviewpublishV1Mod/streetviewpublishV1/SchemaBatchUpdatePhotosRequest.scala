@@ -18,10 +18,28 @@ trait SchemaBatchUpdatePhotosRequest extends js.Object {
 
 object SchemaBatchUpdatePhotosRequest {
   @scala.inline
-  def apply(updatePhotoRequests: js.Array[SchemaUpdatePhotoRequest] = null): SchemaBatchUpdatePhotosRequest = {
+  def apply(): SchemaBatchUpdatePhotosRequest = {
     val __obj = js.Dynamic.literal()
-    if (updatePhotoRequests != null) __obj.updateDynamic("updatePhotoRequests")(updatePhotoRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBatchUpdatePhotosRequest]
   }
+  @scala.inline
+  implicit class SchemaBatchUpdatePhotosRequestOps[Self <: SchemaBatchUpdatePhotosRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUpdatePhotoRequestsVarargs(value: SchemaUpdatePhotoRequest*): Self = this.set("updatePhotoRequests", js.Array(value :_*))
+    @scala.inline
+    def setUpdatePhotoRequests(value: js.Array[SchemaUpdatePhotoRequest]): Self = this.set("updatePhotoRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatePhotoRequests: Self = this.set("updatePhotoRequests", js.undefined)
+  }
+  
 }
 

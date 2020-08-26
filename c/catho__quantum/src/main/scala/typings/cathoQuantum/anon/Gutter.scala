@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Gutter extends js.Object {
-  var colors: js.UndefOr[js.Object] = js.undefined
-  var gutter: js.UndefOr[Double] = js.undefined
+  var colors: js.UndefOr[js.Object] = js.native
+  var gutter: js.UndefOr[Double] = js.native
 }
 
 object Gutter {
   @scala.inline
-  def apply(colors: js.Object = null, gutter: js.UndefOr[Double] = js.undefined): Gutter = {
+  def apply(): Gutter = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(gutter)) __obj.updateDynamic("gutter")(gutter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gutter]
   }
+  @scala.inline
+  implicit class GutterOps[Self <: Gutter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColors(value: js.Object): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setGutter(value: Double): Self = this.set("gutter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGutter: Self = this.set("gutter", js.undefined)
+  }
+  
 }
 

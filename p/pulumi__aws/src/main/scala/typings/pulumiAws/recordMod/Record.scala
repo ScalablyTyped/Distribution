@@ -84,7 +84,7 @@ class Record protected () extends CustomResource {
     */
   val weightedRoutingPolicies: Output_[js.UndefOr[js.Array[RecordWeightedRoutingPolicy]]] = js.native
   /**
-    * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See [`resource_elb.zone_id`](https://www.terraform.io/docs/providers/aws/r/elb.html#zone_id) for example.
+    * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See `resource_elb.zone_id` for example.
     */
   val zoneId: Output_[String] = js.native
 }
@@ -100,8 +100,10 @@ object Record extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Record = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Record = js.native
   def get(name: String, id: Input[ID], state: RecordState): Record = js.native
   def get(name: String, id: Input[ID], state: RecordState, opts: CustomResourceOptions): Record = js.native
   /**

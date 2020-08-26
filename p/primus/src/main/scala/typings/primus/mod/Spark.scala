@@ -28,6 +28,7 @@ trait Spark extends Stream {
   def emits(event: String, args: js.Any*): fn = js.native
   def emits(event: String, parser: parser): fn = js.native
   def end(): Unit = js.native
+  def end(data: js.UndefOr[scala.Nothing], options: Reconnect): Unit = js.native
   def end(data: js.Any): Unit = js.native
   def end(data: js.Any, options: Reconnect): Unit = js.native
   @JSName("on")

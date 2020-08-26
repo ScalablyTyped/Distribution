@@ -27,6 +27,7 @@ class ResourceJobs protected () extends js.Object {
     */
   def batchDelete(): GaxiosPromise[SchemaEmpty] = js.native
   def batchDelete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def batchDelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def batchDelete(params: ParamsResourceJobsBatchdelete): GaxiosPromise[SchemaEmpty] = js.native
   def batchDelete(params: ParamsResourceJobsBatchdelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def batchDelete(
@@ -55,6 +56,7 @@ class ResourceJobs protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaJob] = js.native
   def create(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def create(params: ParamsResourceJobsCreate): GaxiosPromise[SchemaJob] = js.native
   def create(params: ParamsResourceJobsCreate, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def create(
@@ -84,6 +86,7 @@ class ResourceJobs protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceJobsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceJobsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -114,6 +117,7 @@ class ResourceJobs protected () extends js.Object {
     */
   def deleteByFilter(): GaxiosPromise[SchemaEmpty] = js.native
   def deleteByFilter(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def deleteByFilter(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def deleteByFilter(params: ParamsResourceJobsDeletebyfilter): GaxiosPromise[SchemaEmpty] = js.native
   def deleteByFilter(params: ParamsResourceJobsDeletebyfilter, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def deleteByFilter(
@@ -142,6 +146,7 @@ class ResourceJobs protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaJob] = js.native
   def get(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceJobsGet): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceJobsGet, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def get(
@@ -172,6 +177,7 @@ class ResourceJobs protected () extends js.Object {
     */
   def histogram(): GaxiosPromise[SchemaGetHistogramResponse] = js.native
   def histogram(callback: BodyResponseCallback[SchemaGetHistogramResponse]): Unit = js.native
+  def histogram(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetHistogramResponse] = js.native
   def histogram(params: ParamsResourceJobsHistogram): GaxiosPromise[SchemaGetHistogramResponse] = js.native
   def histogram(params: ParamsResourceJobsHistogram, callback: BodyResponseCallback[SchemaGetHistogramResponse]): Unit = js.native
   def histogram(
@@ -202,6 +208,7 @@ class ResourceJobs protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListJobsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(params: ParamsResourceJobsList): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(params: ParamsResourceJobsList, callback: BodyResponseCallback[SchemaListJobsResponse]): Unit = js.native
   def list(
@@ -231,6 +238,7 @@ class ResourceJobs protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaJob] = js.native
   def patch(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def patch(params: ParamsResourceJobsPatch): GaxiosPromise[SchemaJob] = js.native
   def patch(params: ParamsResourceJobsPatch, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def patch(
@@ -256,6 +264,7 @@ class ResourceJobs protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaSearchJobsResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchJobsResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchJobsResponse] = js.native
   def search(params: ParamsResourceJobsSearch): GaxiosPromise[SchemaSearchJobsResponse] = js.native
   def search(params: ParamsResourceJobsSearch, callback: BodyResponseCallback[SchemaSearchJobsResponse]): Unit = js.native
   def search(
@@ -289,6 +298,7 @@ class ResourceJobs protected () extends js.Object {
     */
   def searchForAlert(): GaxiosPromise[SchemaSearchJobsResponse] = js.native
   def searchForAlert(callback: BodyResponseCallback[SchemaSearchJobsResponse]): Unit = js.native
+  def searchForAlert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchJobsResponse] = js.native
   def searchForAlert(params: ParamsResourceJobsSearchforalert): GaxiosPromise[SchemaSearchJobsResponse] = js.native
   def searchForAlert(params: ParamsResourceJobsSearchforalert, callback: BodyResponseCallback[SchemaSearchJobsResponse]): Unit = js.native
   def searchForAlert(

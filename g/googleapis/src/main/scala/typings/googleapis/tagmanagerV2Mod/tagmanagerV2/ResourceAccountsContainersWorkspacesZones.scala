@@ -28,6 +28,7 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaZone] = js.native
   def create(callback: BodyResponseCallback[SchemaZone]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaZone] = js.native
   def create(params: ParamsResourceAccountsContainersWorkspacesZonesCreate): GaxiosPromise[SchemaZone] = js.native
   def create(
     params: ParamsResourceAccountsContainersWorkspacesZonesCreate,
@@ -58,6 +59,7 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersWorkspacesZonesDelete): GaxiosPromise[Unit] = js.native
   def delete(
     params: ParamsResourceAccountsContainersWorkspacesZonesDelete,
@@ -88,6 +90,7 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaZone] = js.native
   def get(callback: BodyResponseCallback[SchemaZone]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaZone] = js.native
   def get(params: ParamsResourceAccountsContainersWorkspacesZonesGet): GaxiosPromise[SchemaZone] = js.native
   def get(
     params: ParamsResourceAccountsContainersWorkspacesZonesGet,
@@ -119,6 +122,7 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListZonesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListZonesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListZonesResponse] = js.native
   def list(params: ParamsResourceAccountsContainersWorkspacesZonesList): GaxiosPromise[SchemaListZonesResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersWorkspacesZonesList,
@@ -150,6 +154,7 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     */
   def revert(): GaxiosPromise[SchemaRevertZoneResponse] = js.native
   def revert(callback: BodyResponseCallback[SchemaRevertZoneResponse]): Unit = js.native
+  def revert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRevertZoneResponse] = js.native
   def revert(params: ParamsResourceAccountsContainersWorkspacesZonesRevert): GaxiosPromise[SchemaRevertZoneResponse] = js.native
   def revert(
     params: ParamsResourceAccountsContainersWorkspacesZonesRevert,
@@ -182,6 +187,7 @@ class ResourceAccountsContainersWorkspacesZones protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaZone] = js.native
   def update(callback: BodyResponseCallback[SchemaZone]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaZone] = js.native
   def update(params: ParamsResourceAccountsContainersWorkspacesZonesUpdate): GaxiosPromise[SchemaZone] = js.native
   def update(
     params: ParamsResourceAccountsContainersWorkspacesZonesUpdate,

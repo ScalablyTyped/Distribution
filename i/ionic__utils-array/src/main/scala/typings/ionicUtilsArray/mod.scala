@@ -75,7 +75,7 @@ object mod extends js.Object {
     initialValue: U
   ): js.Promise[U] = js.native
   def replace[T](array: js.Array[T], index: Double, item: T): js.Array[T] = js.native
-  def splice[T](array: js.Array[T], start: Double): js.Array[T] = js.native
+  def splice[T](array: js.Array[T], start: Double, deleteCount: js.UndefOr[scala.Nothing], items: T*): js.Array[T] = js.native
   def splice[T](array: js.Array[T], start: Double, deleteCount: Double, items: T*): js.Array[T] = js.native
 }
 

@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ButtonProps[T /* <: HTMLElement */]
   extends AllHTMLAttributes[T]
      with ClassAttributes[T] {
@@ -15,21 +16,31 @@ trait ButtonProps[T /* <: HTMLElement */]
     */
   var tag: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
-  ] = js.undefined
+  ] = js.native
 }
 
 object ButtonProps {
   @scala.inline
-  def apply[/* <: typings.std.HTMLElement */ T](
-    AllHTMLAttributes: AllHTMLAttributes[T] = null,
-    ClassAttributes: ClassAttributes[T] = null,
-    tag: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any = null
-  ): ButtonProps[T] = {
+  def apply[/* <: typings.std.HTMLElement */ T](): ButtonProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps[T]]
   }
+  @scala.inline
+  implicit class ButtonPropsOps[Self <: ButtonProps[_], /* <: typings.std.HTMLElement */ T] (val x: Self with ButtonProps[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+  }
+  
 }
 

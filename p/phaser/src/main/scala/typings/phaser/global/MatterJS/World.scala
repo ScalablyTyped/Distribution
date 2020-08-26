@@ -3,7 +3,6 @@ package typings.phaser.global.MatterJS
 import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.CompositeType
 import typings.phaser.MatterJS.ConstraintType
-import typings.phaser.MatterJS.Gravity
 import typings.phaser.MatterJS.IWorldDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,12 +23,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MatterJS.World")
 @js.native
 class World ()
-  extends typings.phaser.MatterJS.World {
-  /* CompleteClass */
-  override var bounds: typings.phaser.MatterJS.Bounds = js.native
-  /* CompleteClass */
-  override var gravity: Gravity = js.native
-}
+  extends typings.phaser.MatterJS.World
 
 /* static members */
 @JSGlobal("MatterJS.World")

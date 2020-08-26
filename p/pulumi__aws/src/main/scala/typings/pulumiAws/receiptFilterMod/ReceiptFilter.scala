@@ -22,6 +22,10 @@ class ReceiptFilter protected () extends CustomResource {
   def this(name: String, args: ReceiptFilterArgs) = this()
   def this(name: String, args: ReceiptFilterArgs, opts: CustomResourceOptions) = this()
   /**
+    * The SES receipt filter ARN.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * The IP address or address range to filter, in CIDR notation
     */
   val cidr: Output_[String] = js.native
@@ -46,8 +50,10 @@ object ReceiptFilter extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ReceiptFilter = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ReceiptFilter = js.native
   def get(name: String, id: Input[ID], state: ReceiptFilterState): ReceiptFilter = js.native
   def get(name: String, id: Input[ID], state: ReceiptFilterState, opts: CustomResourceOptions): ReceiptFilter = js.native
   /**

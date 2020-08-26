@@ -63,15 +63,7 @@ object mod extends js.Object {
       * thelistener is called immediately and passed the results of the original emitted event.
       */
     def on(event: String, listener: js.Function): this.type = js.native
-    /**
-      * Resolves this promise to a rejected state if err is passed or a fulfilled state if no err is passed.
-      * If the promise has already been fulfilled or rejected, not action is taken.
-      * err will be cast to an Error if not already instanceof Error.
-      * NOTE: overrides mpromise#resolve to provide error casting.
-      * @param err error or null
-      * @param val value to fulfill the promise with
-      */
-    def resolve(): this.type = js.native
+    def resolve(err: js.UndefOr[scala.Nothing], args: T*): this.type = js.native
   }
   
   /* static members */

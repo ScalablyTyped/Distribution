@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait _empty extends js.Object {
   @JSName("=")
-  def Equalssign(value: js.Any, predicate: js.Any): scala.Boolean
+  def Equalssign(value: js.Any, predicate: js.Any): scala.Boolean = js.native
   @JSName("==")
-  def EqualssignEqualssign(value: js.Any, predicate: js.Any): scala.Boolean
+  def EqualssignEqualssign(value: js.Any, predicate: js.Any): scala.Boolean = js.native
   @JSName("===")
-  def EqualssignEqualssignEqualssign(value: js.Any, predicate: js.Any): scala.Boolean
+  def EqualssignEqualssignEqualssign(value: js.Any, predicate: js.Any): scala.Boolean = js.native
   @JSName("!=")
-  def ExclamationmarkEqualssign(value: js.Any, predicate: js.Any): scala.Boolean
+  def ExclamationmarkEqualssign(value: js.Any, predicate: js.Any): scala.Boolean = js.native
   @JSName("!==")
-  def ExclamationmarkEqualssignEqualssign(value: js.Any, predicate: js.Any): scala.Boolean
+  def ExclamationmarkEqualssignEqualssign(value: js.Any, predicate: js.Any): scala.Boolean = js.native
   @JSName(">")
-  def Greaterthansign(value: js.Any, predicate: js.Any): scala.Boolean
+  def Greaterthansign(value: js.Any, predicate: js.Any): scala.Boolean = js.native
   @JSName(">=")
-  def GreaterthansignEqualssign(value: js.Any, predicate: js.Any): scala.Boolean
+  def GreaterthansignEqualssign(value: js.Any, predicate: js.Any): scala.Boolean = js.native
   @JSName("<")
-  def Lessthansign(value: js.Any, predicate: js.Any): scala.Boolean
+  def Lessthansign(value: js.Any, predicate: js.Any): scala.Boolean = js.native
   @JSName("<=")
-  def LessthansignEqualssign(value: js.Any, predicate: js.Any): scala.Boolean
-  def contains(value: js.Any, predicate: js.Any): scala.Boolean
-  def in(value: js.Any, predicate: js.Any): scala.Boolean
-  def isectEmpty(value: js.Any, predicate: js.Any): scala.Boolean
-  def isectNotEmpty(value: js.Any, predicate: js.Any): Double
-  def notContains(value: js.Any, predicate: js.Any): scala.Boolean
-  def notIn(value: js.Any, predicate: js.Any): scala.Boolean
+  def LessthansignEqualssign(value: js.Any, predicate: js.Any): scala.Boolean = js.native
+  def contains(value: js.Any, predicate: js.Any): scala.Boolean = js.native
+  def in(value: js.Any, predicate: js.Any): scala.Boolean = js.native
+  def isectEmpty(value: js.Any, predicate: js.Any): scala.Boolean = js.native
+  def isectNotEmpty(value: js.Any, predicate: js.Any): Double = js.native
+  def notContains(value: js.Any, predicate: js.Any): scala.Boolean = js.native
+  def notIn(value: js.Any, predicate: js.Any): scala.Boolean = js.native
 }
 
 object _empty {
@@ -62,5 +63,48 @@ object _empty {
     __obj.updateDynamic("<=")(js.Any.fromFunction2(LessthansignEqualssign))
     __obj.asInstanceOf[_empty]
   }
+  @scala.inline
+  implicit class _emptyOps[Self <: _empty] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEqualssign(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("=", js.Any.fromFunction2(value))
+    @scala.inline
+    def setEqualssignEqualssign(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("==", js.Any.fromFunction2(value))
+    @scala.inline
+    def setEqualssignEqualssignEqualssign(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("===", js.Any.fromFunction2(value))
+    @scala.inline
+    def setExclamationmarkEqualssign(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("!=", js.Any.fromFunction2(value))
+    @scala.inline
+    def setExclamationmarkEqualssignEqualssign(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("!==", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGreaterthansign(value: (js.Any, js.Any) => scala.Boolean): Self = this.set(">", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGreaterthansignEqualssign(value: (js.Any, js.Any) => scala.Boolean): Self = this.set(">=", js.Any.fromFunction2(value))
+    @scala.inline
+    def setLessthansign(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("<", js.Any.fromFunction2(value))
+    @scala.inline
+    def setLessthansignEqualssign(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("<=", js.Any.fromFunction2(value))
+    @scala.inline
+    def setContains(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("contains", js.Any.fromFunction2(value))
+    @scala.inline
+    def setIn(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("in", js.Any.fromFunction2(value))
+    @scala.inline
+    def setIsectEmpty(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("isectEmpty", js.Any.fromFunction2(value))
+    @scala.inline
+    def setIsectNotEmpty(value: (js.Any, js.Any) => Double): Self = this.set("isectNotEmpty", js.Any.fromFunction2(value))
+    @scala.inline
+    def setNotContains(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("notContains", js.Any.fromFunction2(value))
+    @scala.inline
+    def setNotIn(value: (js.Any, js.Any) => scala.Boolean): Self = this.set("notIn", js.Any.fromFunction2(value))
+  }
+  
 }
 

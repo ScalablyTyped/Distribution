@@ -1,75 +1,73 @@
 package typings.zdog.mod
 
-import typings.zdog.zdogBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BoxOptions extends RectOptions {
   /** @default true */
-  val bottomFace: js.UndefOr[Boolean | String] = js.undefined
+  val bottomFace: js.UndefOr[Boolean | String] = js.native
   /** @default 1 */
-  val depth: js.UndefOr[Double] = js.undefined
+  val depth: js.UndefOr[Double] = js.native
   /** @default true */
-  val frontFace: js.UndefOr[Boolean | String] = js.undefined
+  val frontFace: js.UndefOr[Boolean | String] = js.native
   /** @default true */
-  val leftFace: js.UndefOr[Boolean | String] = js.undefined
+  val leftFace: js.UndefOr[Boolean | String] = js.native
   /** @default true */
-  val rearFace: js.UndefOr[Boolean | String] = js.undefined
+  val rearFace: js.UndefOr[Boolean | String] = js.native
   /** @default true */
-  val rightFace: js.UndefOr[Boolean | String] = js.undefined
+  val rightFace: js.UndefOr[Boolean | String] = js.native
   /** @default true */
-  val topFace: js.UndefOr[Boolean | String] = js.undefined
+  val topFace: js.UndefOr[Boolean | String] = js.native
 }
 
 object BoxOptions {
   @scala.inline
-  def apply(
-    addTo: Anchor = null,
-    backface: Boolean | String = null,
-    bottomFace: Boolean | String = null,
-    closed: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    depth: js.UndefOr[Double] = js.undefined,
-    fill: js.UndefOr[Boolean] = js.undefined,
-    front: VectorOptions = null,
-    frontFace: Boolean | String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    leftFace: Boolean | String = null,
-    path: js.Array[PathCommand] = null,
-    rearFace: Boolean | String = null,
-    rightFace: Boolean | String = null,
-    rotate: VectorOptions = null,
-    scale: VectorOptions | Double = null,
-    stroke: Double | `false` = null,
-    topFace: Boolean | String = null,
-    translate: VectorOptions = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): BoxOptions = {
+  def apply(): BoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (addTo != null) __obj.updateDynamic("addTo")(addTo.asInstanceOf[js.Any])
-    if (backface != null) __obj.updateDynamic("backface")(backface.asInstanceOf[js.Any])
-    if (bottomFace != null) __obj.updateDynamic("bottomFace")(bottomFace.asInstanceOf[js.Any])
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
-    if (front != null) __obj.updateDynamic("front")(front.asInstanceOf[js.Any])
-    if (frontFace != null) __obj.updateDynamic("frontFace")(frontFace.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (leftFace != null) __obj.updateDynamic("leftFace")(leftFace.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (rearFace != null) __obj.updateDynamic("rearFace")(rearFace.asInstanceOf[js.Any])
-    if (rightFace != null) __obj.updateDynamic("rightFace")(rightFace.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (topFace != null) __obj.updateDynamic("topFace")(topFace.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxOptions]
   }
+  @scala.inline
+  implicit class BoxOptionsOps[Self <: BoxOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBottomFace(value: Boolean | String): Self = this.set("bottomFace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomFace: Self = this.set("bottomFace", js.undefined)
+    @scala.inline
+    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepth: Self = this.set("depth", js.undefined)
+    @scala.inline
+    def setFrontFace(value: Boolean | String): Self = this.set("frontFace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrontFace: Self = this.set("frontFace", js.undefined)
+    @scala.inline
+    def setLeftFace(value: Boolean | String): Self = this.set("leftFace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftFace: Self = this.set("leftFace", js.undefined)
+    @scala.inline
+    def setRearFace(value: Boolean | String): Self = this.set("rearFace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRearFace: Self = this.set("rearFace", js.undefined)
+    @scala.inline
+    def setRightFace(value: Boolean | String): Self = this.set("rightFace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightFace: Self = this.set("rightFace", js.undefined)
+    @scala.inline
+    def setTopFace(value: Boolean | String): Self = this.set("topFace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopFace: Self = this.set("topFace", js.undefined)
+  }
+  
 }
 

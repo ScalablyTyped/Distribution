@@ -26,5 +26,24 @@ object GetSegmentVersionRequest {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSegmentVersionRequest]
   }
+  @scala.inline
+  implicit class GetSegmentVersionRequestOps[Self <: GetSegmentVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSegmentId(value: string): Self = this.set("SegmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: string): Self = this.set("Version", value.asInstanceOf[js.Any])
+  }
+  
 }
 

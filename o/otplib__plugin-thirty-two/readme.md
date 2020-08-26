@@ -12,7 +12,7 @@ thirty-two plugin for otplib
 | Keywords           | otplib-plugin, base32 |
 | # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 47138 |
+| # downloads        | 421059 |
 | # stars            | 0 |
 
 ## Links

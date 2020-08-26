@@ -26,15 +26,32 @@ trait GetSessionRequest extends js.Object {
 
 object GetSessionRequest {
   @scala.inline
-  def apply(
-    botAlias: BotAlias,
-    botName: BotName,
-    userId: UserId,
-    checkpointLabelFilter: IntentSummaryCheckpointLabel = null
-  ): GetSessionRequest = {
+  def apply(botAlias: BotAlias, botName: BotName, userId: UserId): GetSessionRequest = {
     val __obj = js.Dynamic.literal(botAlias = botAlias.asInstanceOf[js.Any], botName = botName.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-    if (checkpointLabelFilter != null) __obj.updateDynamic("checkpointLabelFilter")(checkpointLabelFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSessionRequest]
   }
+  @scala.inline
+  implicit class GetSessionRequestOps[Self <: GetSessionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBotAlias(value: BotAlias): Self = this.set("botAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserId(value: UserId): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCheckpointLabelFilter(value: IntentSummaryCheckpointLabel): Self = this.set("checkpointLabelFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckpointLabelFilter: Self = this.set("checkpointLabelFilter", js.undefined)
+  }
+  
 }
 

@@ -16,10 +16,5 @@ class ASPxClientFilterAppliedEventArgs protected ()
     * @param filterExpression A string value that specifies the filter expression currently being applied. This value is assigned to the ASPxClientFilterAppliedEventArgs.filterExpression property.
     */
   def this(filterExpression: String) = this()
-  /**
-    * Gets the filter expression currently being applied.
-    */
-  /* CompleteClass */
-  override var filterExpression: String = js.native
 }
 

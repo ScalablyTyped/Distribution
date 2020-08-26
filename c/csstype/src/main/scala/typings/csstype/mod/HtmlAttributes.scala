@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.csstypeStrings.`[-webkit-dropzone]`
-  - typings.csstype.csstypeStrings.`[-webkit-slot]`
   - typings.csstype.csstypeStrings.`[abbr]`
   - typings.csstype.csstypeStrings.`[accept-charset]`
   - typings.csstype.csstypeStrings.`[accept]`
@@ -72,6 +71,7 @@ import scala.scalajs.js.annotation._
   - typings.csstype.csstypeStrings.`[draggable]`
   - typings.csstype.csstypeStrings.`[dropzone]`
   - typings.csstype.csstypeStrings.`[enctype]`
+  - typings.csstype.csstypeStrings.`[enterkeyhint]`
   - typings.csstype.csstypeStrings.`[exportparts]`
   - typings.csstype.csstypeStrings.`[face]`
   - typings.csstype.csstypeStrings.`[for]`
@@ -126,7 +126,6 @@ import scala.scalajs.js.annotation._
   - typings.csstype.csstypeStrings.`[minlength]`
   - typings.csstype.csstypeStrings.`[moz-opaque]`
   - typings.csstype.csstypeStrings.`[mozallowfullscreen]`
-  - typings.csstype.csstypeStrings.`[mozbrowser]`
   - typings.csstype.csstypeStrings.`[mozcurrentsampleoffset]`
   - typings.csstype.csstypeStrings.`[msallowfullscreen]`
   - typings.csstype.csstypeStrings.`[multiple]`
@@ -234,8 +233,6 @@ trait HtmlAttributes extends js.Object
 object HtmlAttributes {
   @scala.inline
   def `[-webkit-dropzone]`: typings.csstype.csstypeStrings.`[-webkit-dropzone]` = "[-webkit-dropzone]".asInstanceOf[typings.csstype.csstypeStrings.`[-webkit-dropzone]`]
-  @scala.inline
-  def `[-webkit-slot]`: typings.csstype.csstypeStrings.`[-webkit-slot]` = "[-webkit-slot]".asInstanceOf[typings.csstype.csstypeStrings.`[-webkit-slot]`]
   @scala.inline
   def `[abbr]`: typings.csstype.csstypeStrings.`[abbr]` = "[abbr]".asInstanceOf[typings.csstype.csstypeStrings.`[abbr]`]
   @scala.inline
@@ -365,6 +362,8 @@ object HtmlAttributes {
   @scala.inline
   def `[enctype]`: typings.csstype.csstypeStrings.`[enctype]` = "[enctype]".asInstanceOf[typings.csstype.csstypeStrings.`[enctype]`]
   @scala.inline
+  def `[enterkeyhint]`: typings.csstype.csstypeStrings.`[enterkeyhint]` = "[enterkeyhint]".asInstanceOf[typings.csstype.csstypeStrings.`[enterkeyhint]`]
+  @scala.inline
   def `[exportparts]`: typings.csstype.csstypeStrings.`[exportparts]` = "[exportparts]".asInstanceOf[typings.csstype.csstypeStrings.`[exportparts]`]
   @scala.inline
   def `[face]`: typings.csstype.csstypeStrings.`[face]` = "[face]".asInstanceOf[typings.csstype.csstypeStrings.`[face]`]
@@ -472,8 +471,6 @@ object HtmlAttributes {
   def `[moz-opaque]`: typings.csstype.csstypeStrings.`[moz-opaque]` = "[moz-opaque]".asInstanceOf[typings.csstype.csstypeStrings.`[moz-opaque]`]
   @scala.inline
   def `[mozallowfullscreen]`: typings.csstype.csstypeStrings.`[mozallowfullscreen]` = "[mozallowfullscreen]".asInstanceOf[typings.csstype.csstypeStrings.`[mozallowfullscreen]`]
-  @scala.inline
-  def `[mozbrowser]`: typings.csstype.csstypeStrings.`[mozbrowser]` = "[mozbrowser]".asInstanceOf[typings.csstype.csstypeStrings.`[mozbrowser]`]
   @scala.inline
   def `[mozcurrentsampleoffset]`: typings.csstype.csstypeStrings.`[mozcurrentsampleoffset]` = "[mozcurrentsampleoffset]".asInstanceOf[typings.csstype.csstypeStrings.`[mozcurrentsampleoffset]`]
   @scala.inline

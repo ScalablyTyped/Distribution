@@ -65,13 +65,32 @@ object global extends js.Object {
   @JSName("ineum")
   def ineum_trackSessions(command: trackSessions): Unit = js.native
   @JSName("ineum")
+  def ineum_trackSessions(
+    command: trackSessions,
+    sessionInactivityTimeout: js.UndefOr[scala.Nothing],
+    sessionTerminationTimeout: Double
+  ): Unit = js.native
+  @JSName("ineum")
   def ineum_trackSessions(command: trackSessions, sessionInactivityTimeout: Double): Unit = js.native
   @JSName("ineum")
   def ineum_trackSessions(command: trackSessions, sessionInactivityTimeout: Double, sessionTerminationTimeout: Double): Unit = js.native
   @JSName("ineum")
   def ineum_user(command: user): Unit = js.native
   @JSName("ineum")
+  def ineum_user(
+    command: user,
+    userId: js.UndefOr[scala.Nothing],
+    userName: js.UndefOr[scala.Nothing],
+    userEmail: String
+  ): Unit = js.native
+  @JSName("ineum")
+  def ineum_user(command: user, userId: js.UndefOr[scala.Nothing], userName: String): Unit = js.native
+  @JSName("ineum")
+  def ineum_user(command: user, userId: js.UndefOr[scala.Nothing], userName: String, userEmail: String): Unit = js.native
+  @JSName("ineum")
   def ineum_user(command: user, userId: String): Unit = js.native
+  @JSName("ineum")
+  def ineum_user(command: user, userId: String, userName: js.UndefOr[scala.Nothing], userEmail: String): Unit = js.native
   @JSName("ineum")
   def ineum_user(command: user, userId: String, userName: String): Unit = js.native
   @JSName("ineum")

@@ -43,6 +43,7 @@ class ResourceIampolicies protected () extends js.Object {
     */
   def lintPolicy(): GaxiosPromise[SchemaLintPolicyResponse] = js.native
   def lintPolicy(callback: BodyResponseCallback[SchemaLintPolicyResponse]): Unit = js.native
+  def lintPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLintPolicyResponse] = js.native
   def lintPolicy(params: ParamsResourceIampoliciesLintpolicy): GaxiosPromise[SchemaLintPolicyResponse] = js.native
   def lintPolicy(
     params: ParamsResourceIampoliciesLintpolicy,
@@ -74,6 +75,7 @@ class ResourceIampolicies protected () extends js.Object {
     */
   def queryAuditableServices(): GaxiosPromise[SchemaQueryAuditableServicesResponse] = js.native
   def queryAuditableServices(callback: BodyResponseCallback[SchemaQueryAuditableServicesResponse]): Unit = js.native
+  def queryAuditableServices(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQueryAuditableServicesResponse] = js.native
   def queryAuditableServices(params: ParamsResourceIampoliciesQueryauditableservices): GaxiosPromise[SchemaQueryAuditableServicesResponse] = js.native
   def queryAuditableServices(
     params: ParamsResourceIampoliciesQueryauditableservices,

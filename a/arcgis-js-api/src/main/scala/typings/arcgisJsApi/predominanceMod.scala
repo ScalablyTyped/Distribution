@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("esri/renderers/smartMapping/creators/predominance", JSImport.Namespace)
+@JSImport("esri/smartMapping/renderers/predominance", JSImport.Namespace)
 @js.native
 object predominanceMod extends TopLevel[predominance]
 

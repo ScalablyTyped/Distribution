@@ -10,12 +10,6 @@ import scala.scalajs.js.annotation._
 class AuthError protected ()
   extends typings.dropboxjs.Dropbox.AuthError {
   def this(queryString: QueryParams) = this()
-  /* CompleteClass */
-  override var code: String = js.native
-  /* CompleteClass */
-  override var description: String = js.native
-  /* CompleteClass */
-  override var uri: String = js.native
 }
 
 /* static members */

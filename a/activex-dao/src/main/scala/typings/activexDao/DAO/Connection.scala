@@ -24,12 +24,27 @@ trait Connection extends js.Object {
   def Cancel(): Unit = js.native
   def Close(): Unit = js.native
   def CreateQueryDef(): QueryDef = js.native
+  def CreateQueryDef(Name: js.UndefOr[scala.Nothing], SQLText: String): QueryDef = js.native
   def CreateQueryDef(Name: String): QueryDef = js.native
   def CreateQueryDef(Name: String, SQLText: String): QueryDef = js.native
   def Execute(Query: String): Unit = js.native
   def Execute(Query: String, Options: RecordsetOptionEnum): Unit = js.native
   def OpenRecordset(Name: String): Recordset = js.native
+  def OpenRecordset(
+    Name: String,
+    Type: js.UndefOr[scala.Nothing],
+    Options: js.UndefOr[scala.Nothing],
+    LockEdit: LockTypeEnum
+  ): Recordset = js.native
+  def OpenRecordset(Name: String, Type: js.UndefOr[scala.Nothing], Options: RecordsetOptionEnum): Recordset = js.native
+  def OpenRecordset(
+    Name: String,
+    Type: js.UndefOr[scala.Nothing],
+    Options: RecordsetOptionEnum,
+    LockEdit: LockTypeEnum
+  ): Recordset = js.native
   def OpenRecordset(Name: String, Type: RecordsetTypeEnum): Recordset = js.native
+  def OpenRecordset(Name: String, Type: RecordsetTypeEnum, Options: js.UndefOr[scala.Nothing], LockEdit: LockTypeEnum): Recordset = js.native
   def OpenRecordset(Name: String, Type: RecordsetTypeEnum, Options: RecordsetOptionEnum): Recordset = js.native
   def OpenRecordset(Name: String, Type: RecordsetTypeEnum, Options: RecordsetOptionEnum, LockEdit: LockTypeEnum): Recordset = js.native
   def QueryDefs(Item: String): QueryDef = js.native

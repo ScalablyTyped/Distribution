@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @classdesc A Channel represents a remote channel of communication between multiple Programmable Chat Clients
-  * @property {Object} attributes - The Channel's custom attributes
+  * @property {any} attributes - The Channel's custom attributes
   * @property {String} createdBy - The identity of the User that created this Channel
   * @property {Date} dateCreated - The Date this Channel was created
   * @property {Date} dateUpdated - The Date this Channel was last updated
@@ -51,9 +51,9 @@ class Channel protected ()
     */
   /**
     * The status of the Channel, relative to the Client: whether the Channel
-    * is <code>known</code> to local Client, Client is <code>invited</code> to or
+    * is <code>notParticipating</code> to local Client, Client is <code>invited</code> to or
     * is <code>joined</code> to this Channel
-    * @typedef {('unknown' | 'known' | 'invited' | 'joined')} Channel#Status
+    * @typedef {('unknown' | 'notParticipating' | 'invited' | 'joined')} Channel#Status
     */
   /**
     * The type of Channel (<code>public</code> or <code>private</code>).

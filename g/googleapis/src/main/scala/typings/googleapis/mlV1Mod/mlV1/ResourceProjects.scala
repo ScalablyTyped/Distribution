@@ -35,6 +35,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def getConfig(): GaxiosPromise[SchemaGoogleCloudMlV1GetConfigResponse] = js.native
   def getConfig(callback: BodyResponseCallback[SchemaGoogleCloudMlV1GetConfigResponse]): Unit = js.native
+  def getConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1GetConfigResponse] = js.native
   def getConfig(params: ParamsResourceProjectsGetconfig): GaxiosPromise[SchemaGoogleCloudMlV1GetConfigResponse] = js.native
   def getConfig(
     params: ParamsResourceProjectsGetconfig,
@@ -69,6 +70,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def predict(): GaxiosPromise[SchemaGoogleApiHttpBody] = js.native
   def predict(callback: BodyResponseCallback[SchemaGoogleApiHttpBody]): Unit = js.native
+  def predict(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleApiHttpBody] = js.native
   def predict(params: ParamsResourceProjectsPredict): GaxiosPromise[SchemaGoogleApiHttpBody] = js.native
   def predict(params: ParamsResourceProjectsPredict, callback: BodyResponseCallback[SchemaGoogleApiHttpBody]): Unit = js.native
   def predict(

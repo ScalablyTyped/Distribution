@@ -33,8 +33,6 @@ class SliderBase protected ()
   val renderedValue: js.Any = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MSliderBase(): Unit = js.native
-  /* CompleteClass */
-  override def focus(): Unit = js.native
 }
 
 /* static members */

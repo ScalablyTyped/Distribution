@@ -4,23 +4,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Resources extends js.Object {
-  var Outputs: js.UndefOr[typings.serverless.awsProviderMod.Outputs] = js.undefined
-  var Resources: CloudFormationResources
-  var extensions: js.UndefOr[CloudFormationResources] = js.undefined
+  var Outputs: js.UndefOr[typings.serverless.awsProviderMod.Outputs] = js.native
+  var Resources: CloudFormationResources = js.native
+  var extensions: js.UndefOr[CloudFormationResources] = js.native
 }
 
 object Resources {
   @scala.inline
-  def apply(
-    Resources: CloudFormationResources,
-    Outputs: Outputs = null,
-    extensions: CloudFormationResources = null
-  ): Resources = {
+  def apply(Resources: CloudFormationResources): Resources = {
     val __obj = js.Dynamic.literal(Resources = Resources.asInstanceOf[js.Any])
-    if (Outputs != null) __obj.updateDynamic("Outputs")(Outputs.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resources]
   }
+  @scala.inline
+  implicit class ResourcesOps[Self <: Resources] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResources(value: CloudFormationResources): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputs(value: Outputs): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("Outputs", js.undefined)
+    @scala.inline
+    def setExtensions(value: CloudFormationResources): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtensions: Self = this.set("extensions", js.undefined)
+  }
+  
 }
 

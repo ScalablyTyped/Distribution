@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "mainloop_dot_js"
-version := "v1.0.3-dt-20200515Z-ff8f9a"
-scalaVersion := "2.13.2"
+version := "v1.0.3-dt-20200515Z-912faa"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

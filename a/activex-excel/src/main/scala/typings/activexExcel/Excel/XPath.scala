@@ -17,6 +17,7 @@ trait XPath extends js.Object {
   val _Default: String = js.native
   def Clear(): Unit = js.native
   def SetValue(Map: XmlMap, XPath: String): Unit = js.native
+  def SetValue(Map: XmlMap, XPath: String, SelectionNamespace: js.UndefOr[scala.Nothing], Repeating: Boolean): Unit = js.native
   def SetValue(Map: XmlMap, XPath: String, SelectionNamespace: js.Any): Unit = js.native
   def SetValue(Map: XmlMap, XPath: String, SelectionNamespace: js.Any, Repeating: Boolean): Unit = js.native
 }

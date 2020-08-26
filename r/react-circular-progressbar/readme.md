@@ -10,9 +10,9 @@ A circular progress indicator component
 | ------------------ | :-------------: |
 | Full name          | react-circular-progressbar |
 | Keywords           | progressbar, react, react-component, svg |
-| # releases         | 13 |
-| # dependents       | 26 |
-| # downloads        | 1717234 |
+| # releases         | 12 |
+| # dependents       | 29 |
+| # downloads        | 1865506 |
 | # stars            | 2 |
 
 ## Links

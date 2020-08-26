@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ControlValueAccessor extends js.Object {
   /**
     * @description
@@ -22,7 +23,7 @@ trait ControlValueAccessor extends js.Object {
     *
     * @param isDisabled The disabled status to set on the element
     */
-  var setDisabledState: js.UndefOr[js.Function1[/* isDisabled */ Boolean, Unit]] = js.undefined
+  var setDisabledState: js.UndefOr[js.Function1[/* isDisabled */ Boolean, Unit]] = js.native
   /**
     * @description
     * Registers a callback function that is called when the control's value
@@ -56,10 +57,10 @@ trait ControlValueAccessor extends js.Object {
     *
     * @param fn The callback function to register
     */
-  def registerOnChange(fn: js.Any): Unit
+  def registerOnChange(fn: js.Any): Unit = js.native
   /**
     * @description
-    * Registers a callback function is called by the forms API on initialization
+    * Registers a callback function that is called by the forms API on initialization
     * to update the form model on blur.
     *
     * When implementing `registerOnTouched` in your own value accessor, save the given
@@ -88,7 +89,7 @@ trait ControlValueAccessor extends js.Object {
     *
     * @param fn The callback function to register
     */
-  def registerOnTouched(fn: js.Any): Unit
+  def registerOnTouched(fn: js.Any): Unit = js.native
   /**
     * @description
     * Writes a new value to the element.
@@ -109,20 +110,37 @@ trait ControlValueAccessor extends js.Object {
     *
     * @param obj The new value for the element
     */
-  def writeValue(obj: js.Any): Unit
+  def writeValue(obj: js.Any): Unit = js.native
 }
 
 object ControlValueAccessor {
   @scala.inline
-  def apply(
-    registerOnChange: js.Any => Unit,
-    registerOnTouched: js.Any => Unit,
-    writeValue: js.Any => Unit,
-    setDisabledState: /* isDisabled */ Boolean => Unit = null
-  ): ControlValueAccessor = {
+  def apply(registerOnChange: js.Any => Unit, registerOnTouched: js.Any => Unit, writeValue: js.Any => Unit): ControlValueAccessor = {
     val __obj = js.Dynamic.literal(registerOnChange = js.Any.fromFunction1(registerOnChange), registerOnTouched = js.Any.fromFunction1(registerOnTouched), writeValue = js.Any.fromFunction1(writeValue))
-    if (setDisabledState != null) __obj.updateDynamic("setDisabledState")(js.Any.fromFunction1(setDisabledState))
     __obj.asInstanceOf[ControlValueAccessor]
   }
+  @scala.inline
+  implicit class ControlValueAccessorOps[Self <: ControlValueAccessor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegisterOnChange(value: js.Any => Unit): Self = this.set("registerOnChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRegisterOnTouched(value: js.Any => Unit): Self = this.set("registerOnTouched", js.Any.fromFunction1(value))
+    @scala.inline
+    def setWriteValue(value: js.Any => Unit): Self = this.set("writeValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetDisabledState(value: /* isDisabled */ Boolean => Unit): Self = this.set("setDisabledState", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDisabledState: Self = this.set("setDisabledState", js.undefined)
+  }
+  
 }
 

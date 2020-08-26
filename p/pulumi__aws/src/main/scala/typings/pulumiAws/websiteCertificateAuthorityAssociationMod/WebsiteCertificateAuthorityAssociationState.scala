@@ -27,18 +27,38 @@ trait WebsiteCertificateAuthorityAssociationState extends js.Object {
 
 object WebsiteCertificateAuthorityAssociationState {
   @scala.inline
-  def apply(
-    certificate: Input[String] = null,
-    displayName: Input[String] = null,
-    fleetArn: Input[String] = null,
-    websiteCaId: Input[String] = null
-  ): WebsiteCertificateAuthorityAssociationState = {
+  def apply(): WebsiteCertificateAuthorityAssociationState = {
     val __obj = js.Dynamic.literal()
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (fleetArn != null) __obj.updateDynamic("fleetArn")(fleetArn.asInstanceOf[js.Any])
-    if (websiteCaId != null) __obj.updateDynamic("websiteCaId")(websiteCaId.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebsiteCertificateAuthorityAssociationState]
   }
+  @scala.inline
+  implicit class WebsiteCertificateAuthorityAssociationStateOps[Self <: WebsiteCertificateAuthorityAssociationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificate(value: Input[String]): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    @scala.inline
+    def setDisplayName(value: Input[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setFleetArn(value: Input[String]): Self = this.set("fleetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetArn: Self = this.set("fleetArn", js.undefined)
+    @scala.inline
+    def setWebsiteCaId(value: Input[String]): Self = this.set("websiteCaId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteCaId: Self = this.set("websiteCaId", js.undefined)
+  }
+  
 }
 

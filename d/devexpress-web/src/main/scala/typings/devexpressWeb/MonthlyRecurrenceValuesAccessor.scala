@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * An object providing access to an ASPxClientMonthlyRecurrenceControl's editor values.
   */
+@js.native
 trait MonthlyRecurrenceValuesAccessor extends DefaultRecurrenceRuleValuesAccessor
 
 object MonthlyRecurrenceValuesAccessor {

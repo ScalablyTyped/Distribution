@@ -19,6 +19,7 @@ object queueActionMod extends js.Object {
     @JSName("scheduler")
     var scheduler_QueueAction: QueueScheduler = js.native
     /* protected */ def requestAsyncId(scheduler: QueueScheduler): js.Any = js.native
+    /* protected */ def requestAsyncId(scheduler: QueueScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: QueueScheduler, id: js.Any): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: QueueScheduler, id: js.Any, delay: Double): js.Any = js.native
   }

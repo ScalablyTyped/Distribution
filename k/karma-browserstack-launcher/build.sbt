@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "karma-browserstack-launcher"
-version := "1.6-dt-20200520Z-6e2939"
-scalaVersion := "2.13.2"
+version := "1.6-dt-20200520Z-4f6481"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

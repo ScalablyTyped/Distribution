@@ -30,20 +30,48 @@ trait ClusterSecurityGroup extends js.Object {
 
 object ClusterSecurityGroup {
   @scala.inline
-  def apply(
-    ClusterSecurityGroupName: String = null,
-    Description: String = null,
-    EC2SecurityGroups: EC2SecurityGroupList = null,
-    IPRanges: IPRangeList = null,
-    Tags: TagList = null
-  ): ClusterSecurityGroup = {
+  def apply(): ClusterSecurityGroup = {
     val __obj = js.Dynamic.literal()
-    if (ClusterSecurityGroupName != null) __obj.updateDynamic("ClusterSecurityGroupName")(ClusterSecurityGroupName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EC2SecurityGroups != null) __obj.updateDynamic("EC2SecurityGroups")(EC2SecurityGroups.asInstanceOf[js.Any])
-    if (IPRanges != null) __obj.updateDynamic("IPRanges")(IPRanges.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterSecurityGroup]
   }
+  @scala.inline
+  implicit class ClusterSecurityGroupOps[Self <: ClusterSecurityGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterSecurityGroupName(value: String): Self = this.set("ClusterSecurityGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterSecurityGroupName: Self = this.set("ClusterSecurityGroupName", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEC2SecurityGroupsVarargs(value: EC2SecurityGroup*): Self = this.set("EC2SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setEC2SecurityGroups(value: EC2SecurityGroupList): Self = this.set("EC2SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEC2SecurityGroups: Self = this.set("EC2SecurityGroups", js.undefined)
+    @scala.inline
+    def setIPRangesVarargs(value: IPRange*): Self = this.set("IPRanges", js.Array(value :_*))
+    @scala.inline
+    def setIPRanges(value: IPRangeList): Self = this.set("IPRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIPRanges: Self = this.set("IPRanges", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

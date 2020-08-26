@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object async extends js.Object {
   def apply(path: String): js.Promise[js.Array[String]] = js.native
+  def apply(path: String, options: js.UndefOr[scala.Nothing], eventListener: WalkEventListener): js.Promise[js.Array[String]] = js.native
   def apply(path: String, options: WalkOptionsreturnobjectbo): js.Promise[js.Array[String] | StringDictionary[Stats]] = js.native
   def apply(path: String, options: WalkOptionsreturnobjectbo, eventListener: WalkEventListener): js.Promise[js.Array[String] | StringDictionary[Stats]] = js.native
   def apply(path: String, options: WalkOptionsreturnobjectfa): js.Promise[js.Array[String]] = js.native

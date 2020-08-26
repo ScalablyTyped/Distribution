@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimingParams
   extends /* key */ StringDictionary[js.Any] {
   /**
@@ -18,7 +19,7 @@ trait TimingParams
     *
     * Example value: `category`
     */
-  var utc: js.UndefOr[String] = js.undefined
+  var utc: js.UndefOr[String] = js.native
   /**
     * User timing label
     *
@@ -28,7 +29,7 @@ trait TimingParams
     *
     * Example value: `label`
     */
-  var utl: js.UndefOr[String] = js.undefined
+  var utl: js.UndefOr[String] = js.native
   /**
     * User timing time
     *
@@ -38,7 +39,7 @@ trait TimingParams
     *
     * Example value: `123`
     */
-  var utt: js.UndefOr[String | Double] = js.undefined
+  var utt: js.UndefOr[String | Double] = js.native
   /**
     * User timing variable name
     *
@@ -50,25 +51,43 @@ trait TimingParams
     *
     * Example value: `lookup`
     */
-  var utv: js.UndefOr[String] = js.undefined
+  var utv: js.UndefOr[String] = js.native
 }
 
 object TimingParams {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    utc: String = null,
-    utl: String = null,
-    utt: String | Double = null,
-    utv: String = null
-  ): TimingParams = {
+  def apply(): TimingParams = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (utc != null) __obj.updateDynamic("utc")(utc.asInstanceOf[js.Any])
-    if (utl != null) __obj.updateDynamic("utl")(utl.asInstanceOf[js.Any])
-    if (utt != null) __obj.updateDynamic("utt")(utt.asInstanceOf[js.Any])
-    if (utv != null) __obj.updateDynamic("utv")(utv.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimingParams]
   }
+  @scala.inline
+  implicit class TimingParamsOps[Self <: TimingParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUtc(value: String): Self = this.set("utc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtc: Self = this.set("utc", js.undefined)
+    @scala.inline
+    def setUtl(value: String): Self = this.set("utl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtl: Self = this.set("utl", js.undefined)
+    @scala.inline
+    def setUtt(value: String | Double): Self = this.set("utt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtt: Self = this.set("utt", js.undefined)
+    @scala.inline
+    def setUtv(value: String): Self = this.set("utv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtv: Self = this.set("utv", js.undefined)
+  }
+  
 }
 

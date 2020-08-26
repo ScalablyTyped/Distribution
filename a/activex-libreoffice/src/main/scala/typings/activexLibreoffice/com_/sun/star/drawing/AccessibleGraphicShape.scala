@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
   * com.sun.star.accessibility.XAccessibleImage} interface.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleGraphicShape
   extends XAccessibleExtendedComponent
      with XAccessible

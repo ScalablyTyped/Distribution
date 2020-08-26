@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Derivatives extends js.Object {
-  var derivatives: js.UndefOr[Boolean] = js.undefined
-  var drawBuffers: js.UndefOr[Boolean] = js.undefined
-  var fragDepth: js.UndefOr[Boolean] = js.undefined
-  var shaderTextureLOD: js.UndefOr[Boolean] = js.undefined
+  var derivatives: js.UndefOr[Boolean] = js.native
+  var drawBuffers: js.UndefOr[Boolean] = js.native
+  var fragDepth: js.UndefOr[Boolean] = js.native
+  var shaderTextureLOD: js.UndefOr[Boolean] = js.native
 }
 
 object Derivatives {
   @scala.inline
-  def apply(
-    derivatives: js.UndefOr[Boolean] = js.undefined,
-    drawBuffers: js.UndefOr[Boolean] = js.undefined,
-    fragDepth: js.UndefOr[Boolean] = js.undefined,
-    shaderTextureLOD: js.UndefOr[Boolean] = js.undefined
-  ): Derivatives = {
+  def apply(): Derivatives = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(derivatives)) __obj.updateDynamic("derivatives")(derivatives.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawBuffers)) __obj.updateDynamic("drawBuffers")(drawBuffers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragDepth)) __obj.updateDynamic("fragDepth")(fragDepth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shaderTextureLOD)) __obj.updateDynamic("shaderTextureLOD")(shaderTextureLOD.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Derivatives]
   }
+  @scala.inline
+  implicit class DerivativesOps[Self <: Derivatives] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDerivatives(value: Boolean): Self = this.set("derivatives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDerivatives: Self = this.set("derivatives", js.undefined)
+    @scala.inline
+    def setDrawBuffers(value: Boolean): Self = this.set("drawBuffers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawBuffers: Self = this.set("drawBuffers", js.undefined)
+    @scala.inline
+    def setFragDepth(value: Boolean): Self = this.set("fragDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFragDepth: Self = this.set("fragDepth", js.undefined)
+    @scala.inline
+    def setShaderTextureLOD(value: Boolean): Self = this.set("shaderTextureLOD", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShaderTextureLOD: Self = this.set("shaderTextureLOD", js.undefined)
+  }
+  
 }
 

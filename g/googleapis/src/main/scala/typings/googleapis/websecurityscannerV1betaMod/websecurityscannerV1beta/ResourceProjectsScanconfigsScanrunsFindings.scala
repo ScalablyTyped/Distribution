@@ -27,6 +27,7 @@ class ResourceProjectsScanconfigsScanrunsFindings protected () extends js.Object
     */
   def get(): GaxiosPromise[SchemaFinding] = js.native
   def get(callback: BodyResponseCallback[SchemaFinding]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFinding] = js.native
   def get(params: ParamsResourceProjectsScanconfigsScanrunsFindingsGet): GaxiosPromise[SchemaFinding] = js.native
   def get(
     params: ParamsResourceProjectsScanconfigsScanrunsFindingsGet,
@@ -60,6 +61,7 @@ class ResourceProjectsScanconfigsScanrunsFindings protected () extends js.Object
     */
   def list(): GaxiosPromise[SchemaListFindingsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFindingsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFindingsResponse] = js.native
   def list(params: ParamsResourceProjectsScanconfigsScanrunsFindingsList): GaxiosPromise[SchemaListFindingsResponse] = js.native
   def list(
     params: ParamsResourceProjectsScanconfigsScanrunsFindingsList,

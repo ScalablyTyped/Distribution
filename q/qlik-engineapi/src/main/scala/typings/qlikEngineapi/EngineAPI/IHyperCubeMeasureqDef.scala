@@ -7,51 +7,43 @@ import scala.scalajs.js.annotation._
 /**
   * HyperCubeMeasureqDef with extend of NxInlineMeasureDef
   */
+@js.native
 trait IHyperCubeMeasureqDef extends INxInlineMeasureDef {
-  var autoSort: js.UndefOr[Boolean] = js.undefined
-  var cId: js.UndefOr[String] = js.undefined
-  var numFormatFromTemplate: js.UndefOr[Boolean] = js.undefined
+  var autoSort: js.UndefOr[Boolean] = js.native
+  var cId: js.UndefOr[String] = js.native
+  var numFormatFromTemplate: js.UndefOr[Boolean] = js.native
 }
 
 object IHyperCubeMeasureqDef {
   @scala.inline
-  def apply(
-    qDef: String,
-    autoSort: js.UndefOr[Boolean] = js.undefined,
-    cId: String = null,
-    numFormatFromTemplate: js.UndefOr[Boolean] = js.undefined,
-    qAccumulate: js.UndefOr[Double] = js.undefined,
-    qActiveExpression: js.UndefOr[Double] = js.undefined,
-    qAggrFunc: String = null,
-    qBrutalSum: js.UndefOr[Boolean] = js.undefined,
-    qDescription: String = null,
-    qExpressions: js.Array[String] = null,
-    qGrouping: NxGrpType = null,
-    qLabel: String = null,
-    qLabelExpression: String = null,
-    qNumFormat: IFieldAttributes = null,
-    qRelative: js.UndefOr[Boolean] = js.undefined,
-    qReverseSort: js.UndefOr[Boolean] = js.undefined,
-    qTags: js.Array[String] = null
-  ): IHyperCubeMeasureqDef = {
+  def apply(qDef: String): IHyperCubeMeasureqDef = {
     val __obj = js.Dynamic.literal(qDef = qDef.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSort)) __obj.updateDynamic("autoSort")(autoSort.get.asInstanceOf[js.Any])
-    if (cId != null) __obj.updateDynamic("cId")(cId.asInstanceOf[js.Any])
-    if (!js.isUndefined(numFormatFromTemplate)) __obj.updateDynamic("numFormatFromTemplate")(numFormatFromTemplate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(qAccumulate)) __obj.updateDynamic("qAccumulate")(qAccumulate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(qActiveExpression)) __obj.updateDynamic("qActiveExpression")(qActiveExpression.get.asInstanceOf[js.Any])
-    if (qAggrFunc != null) __obj.updateDynamic("qAggrFunc")(qAggrFunc.asInstanceOf[js.Any])
-    if (!js.isUndefined(qBrutalSum)) __obj.updateDynamic("qBrutalSum")(qBrutalSum.get.asInstanceOf[js.Any])
-    if (qDescription != null) __obj.updateDynamic("qDescription")(qDescription.asInstanceOf[js.Any])
-    if (qExpressions != null) __obj.updateDynamic("qExpressions")(qExpressions.asInstanceOf[js.Any])
-    if (qGrouping != null) __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
-    if (qLabel != null) __obj.updateDynamic("qLabel")(qLabel.asInstanceOf[js.Any])
-    if (qLabelExpression != null) __obj.updateDynamic("qLabelExpression")(qLabelExpression.asInstanceOf[js.Any])
-    if (qNumFormat != null) __obj.updateDynamic("qNumFormat")(qNumFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(qRelative)) __obj.updateDynamic("qRelative")(qRelative.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(qReverseSort)) __obj.updateDynamic("qReverseSort")(qReverseSort.get.asInstanceOf[js.Any])
-    if (qTags != null) __obj.updateDynamic("qTags")(qTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHyperCubeMeasureqDef]
   }
+  @scala.inline
+  implicit class IHyperCubeMeasureqDefOps[Self <: IHyperCubeMeasureqDef] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoSort(value: Boolean): Self = this.set("autoSort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoSort: Self = this.set("autoSort", js.undefined)
+    @scala.inline
+    def setCId(value: String): Self = this.set("cId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCId: Self = this.set("cId", js.undefined)
+    @scala.inline
+    def setNumFormatFromTemplate(value: Boolean): Self = this.set("numFormatFromTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumFormatFromTemplate: Self = this.set("numFormatFromTemplate", js.undefined)
+  }
+  
 }
 

@@ -26,11 +26,30 @@ trait SchemaListConstraint extends js.Object {
 
 object SchemaListConstraint {
   @scala.inline
-  def apply(suggestedValue: String = null, supportsUnder: js.UndefOr[Boolean] = js.undefined): SchemaListConstraint = {
+  def apply(): SchemaListConstraint = {
     val __obj = js.Dynamic.literal()
-    if (suggestedValue != null) __obj.updateDynamic("suggestedValue")(suggestedValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsUnder)) __obj.updateDynamic("supportsUnder")(supportsUnder.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListConstraint]
   }
+  @scala.inline
+  implicit class SchemaListConstraintOps[Self <: SchemaListConstraint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSuggestedValue(value: String): Self = this.set("suggestedValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedValue: Self = this.set("suggestedValue", js.undefined)
+    @scala.inline
+    def setSupportsUnder(value: Boolean): Self = this.set("supportsUnder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsUnder: Self = this.set("supportsUnder", js.undefined)
+  }
+  
 }
 

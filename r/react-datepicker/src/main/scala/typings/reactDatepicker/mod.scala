@@ -50,6 +50,7 @@ object mod extends js.Object {
     var chooseDayAriaLabelPrefix: js.UndefOr[String] = js.native
     var className: js.UndefOr[String] = js.native
     var clearButtonTitle: js.UndefOr[String] = js.native
+    var closeOnScroll: js.UndefOr[Boolean | (js.Function1[/* e */ Event, Boolean])] = js.native
     var customInput: js.UndefOr[ReactNode] = js.native
     var customInputRef: js.UndefOr[String] = js.native
     var customTimeInput: js.UndefOr[ReactNode] = js.native
@@ -133,6 +134,7 @@ object mod extends js.Object {
     var scrollableYearDropdown: js.UndefOr[Boolean] = js.native
     var selected: js.UndefOr[Date | Null] = js.native
     var selectsEnd: js.UndefOr[Boolean] = js.native
+    var selectsRange: js.UndefOr[Boolean] = js.native
     var selectsStart: js.UndefOr[Boolean] = js.native
     var shouldCloseOnSelect: js.UndefOr[Boolean] = js.native
     var showDisabledMonthNavigation: js.UndefOr[Boolean] = js.native

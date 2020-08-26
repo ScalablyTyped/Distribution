@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "flatted" : "2.0.1"
+      "flatted" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "flatted" : "2.0.1"
+      "flatted" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -12,7 +12,7 @@ Async-rendering & data-fetching for universal React applications
 | Keywords           | async, decorator, lazy, load, react, resolve |
 | # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 185945 |
+| # downloads        | 185146 |
 | # stars            | 2 |
 
 ## Links

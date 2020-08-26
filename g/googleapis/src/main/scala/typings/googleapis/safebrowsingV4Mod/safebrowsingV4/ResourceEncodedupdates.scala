@@ -28,6 +28,7 @@ class ResourceEncodedupdates protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaFetchThreatListUpdatesResponse] = js.native
   def get(callback: BodyResponseCallback[SchemaFetchThreatListUpdatesResponse]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFetchThreatListUpdatesResponse] = js.native
   def get(params: ParamsResourceEncodedupdatesGet): GaxiosPromise[SchemaFetchThreatListUpdatesResponse] = js.native
   def get(
     params: ParamsResourceEncodedupdatesGet,

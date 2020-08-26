@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.anon.Filename
+import typings.playcanvas.anon.Contents
 import typings.playcanvas.pc.callbacks.AssetReady
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,22 +10,24 @@ import scala.scalajs.js.annotation._
   * Create a new Asset record. Generally, Assets are created in the loading process and you won't need to create them by hand.
   * @example
   * var file = {
-  filename: "filename.txt",
-  url: "/example/filename.txt"
-  };
+  *     filename: "filename.txt",
+  *     url: "/example/filename.txt"
+  * };
   * @example
   * var asset = new pc.Asset("a texture", "texture", {
-  url: "http://example.com/my/assets/here/texture.png"
-  });
+  *     url: "http://example.com/my/assets/here/texture.png"
+  * });
   * @property name - The name of the asset
   * @property id - The asset id
   * @property type - The type of the asset. One of ["animation", "audio", "binary", "cubemap", "css", "font", "json", "html", "material", "model", "script", "shader", "text", "texture"]
   * @property tags - Interface for tagging. Allows to find assets by tags using {@link pc.AssetRegistry#findByTag} method.
   * @property file - The file details or null if no file
   * @property [file.url] - The URL of the resource file that contains the asset data
-  * @property [file.filename] - The filename of the resource file
-  * @property [file.size] - The size of the resource file
-  * @property [file.hash] - The MD5 hash of the resource file data and the Asset data field
+  * @property [file.filename] - The filename of the resource file or null if no filename was set (e.g from using {@link pc.AssetRegistry#loadFromUrl})
+  * @property [file.size] - The size of the resource file or null if no size was set (e.g from using {@link pc.AssetRegistry#loadFromUrl})
+  * @property [file.hash] - The MD5 hash of the resource file data and the Asset data field or null if hash was set (e.g from using {@link pc.AssetRegistry#loadFromUrl})
+  * @property [file.contents] - Optional file contents. This is faster than wrapping the data
+  * in a (base64 encoded) blob. Currently only used by container assets.
   * @property [data] - Optional JSON data that contains either the complete resource data (e.g. in the case of a material) or additional data (e.g. in the case of a model it contains mappings from mesh to material)
   * @property [options] - Optional JSON data that contains the asset handler options.
   * @property resource - A reference to the resource when the asset is loaded. e.g. a {@link pc.Texture} or a {@link pc.Model}
@@ -50,7 +52,7 @@ trait Asset extends EventHandler {
   /**
     * The file details or null if no file
     */
-  var file: Filename = js.native
+  var file: Contents = js.native
   /**
     * The asset id
     */
@@ -99,7 +101,7 @@ trait Asset extends EventHandler {
     * Return the URL required to fetch the file for this asset.
     * @example
     * var assets = app.assets.find("My Image", "texture");
-    var img = "&lt;img src='" + assets[0].getFileUrl() + "'&gt;";
+    * var img = "&lt;img src='" + assets[0].getFileUrl() + "'&gt;";
     * @returns The URL.
     */
   def getFileUrl(): String = js.native
@@ -107,10 +109,10 @@ trait Asset extends EventHandler {
     * Take a callback which is called as soon as the asset is loaded. If the asset is already loaded the callback is called straight away.
     * @example
     * var asset = app.assets.find("My Asset");
-    asset.ready(function (asset) {
-    // asset loaded
-    });
-    app.assets.load(asset);
+    * asset.ready(function (asset) {
+    *   // asset loaded
+    * });
+    * app.assets.load(asset);
     * @param callback - The function called when the asset is ready. Passed the (asset) arguments.
     * @param [scope] - Scope object to use when calling the callback.
     */
@@ -120,8 +122,8 @@ trait Asset extends EventHandler {
     * Destroys the associated resource and marks asset as unloaded.
     * @example
     * var asset = app.assets.find("My Asset");
-    asset.unload();
-    // asset.resource is null
+    * asset.unload();
+    * // asset.resource is null
     */
   def unload(): Unit = js.native
 }

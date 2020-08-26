@@ -18,10 +18,30 @@ trait GetFindingsReportAccountSummaryResponse extends js.Object {
 
 object GetFindingsReportAccountSummaryResponse {
   @scala.inline
-  def apply(reportSummaries: FindingsReportSummaries, nextToken: PaginationToken = null): GetFindingsReportAccountSummaryResponse = {
+  def apply(reportSummaries: FindingsReportSummaries): GetFindingsReportAccountSummaryResponse = {
     val __obj = js.Dynamic.literal(reportSummaries = reportSummaries.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFindingsReportAccountSummaryResponse]
   }
+  @scala.inline
+  implicit class GetFindingsReportAccountSummaryResponseOps[Self <: GetFindingsReportAccountSummaryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReportSummariesVarargs(value: FindingsReportSummary*): Self = this.set("reportSummaries", js.Array(value :_*))
+    @scala.inline
+    def setReportSummaries(value: FindingsReportSummaries): Self = this.set("reportSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

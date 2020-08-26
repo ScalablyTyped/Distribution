@@ -13,6 +13,7 @@ trait UnaryHandler[RequestType, ResponseType] extends Handler[RequestType, Respo
   var deserialize_Original: Deserialize[RequestType] = js.native
   @JSName("func")
   var func_Original: handleUnaryCall[RequestType, ResponseType] = js.native
+  var path: String = js.native
   @JSName("serialize")
   var serialize_Original: Serialize[ResponseType] = js.native
   var `type`: HandlerType = js.native

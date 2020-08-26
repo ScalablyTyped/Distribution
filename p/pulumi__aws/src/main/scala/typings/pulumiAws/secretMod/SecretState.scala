@@ -39,50 +39,90 @@ trait SecretState extends js.Object {
   val recoveryWindowInDays: js.UndefOr[Input[Double]] = js.native
   /**
     * Specifies whether automatic rotation is enabled for this secret.
+    *
+    * @deprecated Use the aws_secretsmanager_secret_rotation resource instead
     */
   val rotationEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * Specifies the ARN of the Lambda function that can rotate the secret.
+    * Specifies the ARN of the Lambda function that can rotate the secret. Use the `aws.secretsmanager.SecretRotation` resource to manage this configuration instead. As of version 2.67.0, removal of this configuration will no longer remove rotation due to supporting the new resource. Either import the new resource and remove the configuration or manually remove rotation.
+    *
+    * @deprecated Use the aws_secretsmanager_secret_rotation resource instead
     */
   val rotationLambdaArn: js.UndefOr[Input[String]] = js.native
   /**
-    * A structure that defines the rotation configuration for this secret. Defined below.
+    * A structure that defines the rotation configuration for this secret. Defined below. Use the `aws.secretsmanager.SecretRotation` resource to manage this configuration instead. As of version 2.67.0, removal of this configuration will no longer remove rotation due to supporting the new resource. Either import the new resource and remove the configuration or manually remove rotation.
+    *
+    * @deprecated Use the aws_secretsmanager_secret_rotation resource instead
     */
   val rotationRules: js.UndefOr[Input[SecretRotationRules]] = js.native
   /**
     * Specifies a key-value map of user-defined tags that are attached to the secret.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object SecretState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    description: Input[String] = null,
-    kmsKeyId: Input[String] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    policy: Input[String] = null,
-    recoveryWindowInDays: Input[Double] = null,
-    rotationEnabled: Input[Boolean] = null,
-    rotationLambdaArn: Input[String] = null,
-    rotationRules: Input[SecretRotationRules] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): SecretState = {
+  def apply(): SecretState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (recoveryWindowInDays != null) __obj.updateDynamic("recoveryWindowInDays")(recoveryWindowInDays.asInstanceOf[js.Any])
-    if (rotationEnabled != null) __obj.updateDynamic("rotationEnabled")(rotationEnabled.asInstanceOf[js.Any])
-    if (rotationLambdaArn != null) __obj.updateDynamic("rotationLambdaArn")(rotationLambdaArn.asInstanceOf[js.Any])
-    if (rotationRules != null) __obj.updateDynamic("rotationRules")(rotationRules.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecretState]
   }
+  @scala.inline
+  implicit class SecretStateOps[Self <: SecretState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setPolicy(value: Input[String]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+    @scala.inline
+    def setRecoveryWindowInDays(value: Input[Double]): Self = this.set("recoveryWindowInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecoveryWindowInDays: Self = this.set("recoveryWindowInDays", js.undefined)
+    @scala.inline
+    def setRotationEnabled(value: Input[Boolean]): Self = this.set("rotationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationEnabled: Self = this.set("rotationEnabled", js.undefined)
+    @scala.inline
+    def setRotationLambdaArn(value: Input[String]): Self = this.set("rotationLambdaArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationLambdaArn: Self = this.set("rotationLambdaArn", js.undefined)
+    @scala.inline
+    def setRotationRules(value: Input[SecretRotationRules]): Self = this.set("rotationRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationRules: Self = this.set("rotationRules", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

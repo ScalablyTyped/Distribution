@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * Either the code or the file property must be set,
   * but both may not be set at the same time.
   **/
+@js.native
 trait InjectDetails extends js.Object {
   /**
     * JavaScript or CSS code to inject.
@@ -27,21 +28,40 @@ trait InjectDetails extends js.Object {
     * Warning: Be careful using the code parameter.
     * Incorrect use of it may open your app to xss attacks.
     */
-  var code: js.UndefOr[String] = js.undefined
+  var code: js.UndefOr[String] = js.native
   /**
     * JavaScript or CSS file to inject.
     */
   /** JavaScript or CSS file to inject. */
-  var file: js.UndefOr[String] = js.undefined
+  var file: js.UndefOr[String] = js.native
 }
 
 object InjectDetails {
   @scala.inline
-  def apply(code: String = null, file: String = null): InjectDetails = {
+  def apply(): InjectDetails = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectDetails]
   }
+  @scala.inline
+  implicit class InjectDetailsOps[Self <: InjectDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+  }
+  
 }
 

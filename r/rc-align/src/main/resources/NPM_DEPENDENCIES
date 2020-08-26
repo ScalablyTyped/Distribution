@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-align" : "3.0.0-rc.1"
+      "rc-align" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-align" : "3.0.0-rc.1"
+      "rc-align" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

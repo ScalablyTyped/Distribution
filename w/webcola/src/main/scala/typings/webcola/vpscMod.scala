@@ -27,6 +27,12 @@ object vpscMod extends js.Object {
     def mergeAcross(b: Block, c: Constraint, dist: Double): Unit = js.native
     def splitBetween(vl: Variable, vr: Variable): typings.webcola.anon.Constraint = js.native
     def traverse(visit: js.Function1[/* c */ Constraint, _], acc: js.Array[_]): Unit = js.native
+    def traverse(
+      visit: js.Function1[/* c */ Constraint, _],
+      acc: js.Array[_],
+      v: js.UndefOr[scala.Nothing],
+      prev: Variable
+    ): Unit = js.native
     def traverse(visit: js.Function1[/* c */ Constraint, _], acc: js.Array[_], v: Variable): Unit = js.native
     def traverse(visit: js.Function1[/* c */ Constraint, _], acc: js.Array[_], v: Variable, prev: Variable): Unit = js.native
     def updateWeightedPosition(): Unit = js.native
@@ -90,6 +96,7 @@ object vpscMod extends js.Object {
   class Variable protected () extends js.Object {
     def this(desiredPosition: Double) = this()
     def this(desiredPosition: Double, weight: Double) = this()
+    def this(desiredPosition: Double, weight: js.UndefOr[scala.Nothing], scale: Double) = this()
     def this(desiredPosition: Double, weight: Double, scale: Double) = this()
     var block: Block = js.native
     var cIn: js.Array[Constraint] = js.native
@@ -104,6 +111,7 @@ object vpscMod extends js.Object {
   }
   
   def removeOverlapInOneDimension(spans: js.Array[DesiredCenter]): LowerBound = js.native
+  def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: js.UndefOr[scala.Nothing], upperBound: Double): LowerBound = js.native
   def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double): LowerBound = js.native
   def removeOverlapInOneDimension(spans: js.Array[DesiredCenter], lowerBound: Double, upperBound: Double): LowerBound = js.native
   /* static members */

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/hooks/useCellClassName", JSImport.Namespace)
+@JSImport("rc-picker/es/hooks/useCellClassName", JSImport.Namespace)
 @js.native
 object useCellClassNameMod extends js.Object {
   def default[DateType](

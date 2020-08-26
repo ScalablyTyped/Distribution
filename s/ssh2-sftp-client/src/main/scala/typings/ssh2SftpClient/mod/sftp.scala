@@ -26,6 +26,7 @@ trait sftp extends js.Object {
   def connect(options: ConnectConfig): js.Promise[SFTPWrapper] = js.native
   def cwd(): js.Promise[String] = js.native
   def delete(remoteFilePath: String): js.Promise[String] = js.native
+  def downloadDir(srcDir: String, destDir: String): js.Promise[String] = js.native
   def end(): js.Promise[Unit] = js.native
   def exists(remotePath: String): js.Promise[`false` | d | `-_` | l] = js.native
   def fastGet(remoteFilePath: String, localPath: String): js.Promise[String] = js.native
@@ -33,6 +34,7 @@ trait sftp extends js.Object {
   def fastPut(localPath: String, remoteFilePath: String): js.Promise[String] = js.native
   def fastPut(localPath: String, remoteFilePath: String, options: TransferOptions): js.Promise[String] = js.native
   def get(path: String): js.Promise[String | WritableStream | Buffer] = js.native
+  def get(path: String, dst: js.UndefOr[scala.Nothing], options: TransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
   def get(path: String, dst: String): js.Promise[String | WritableStream | Buffer] = js.native
   def get(path: String, dst: String, options: TransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
   def get(path: String, dst: WritableStream): js.Promise[String | WritableStream | Buffer] = js.native
@@ -55,5 +57,6 @@ trait sftp extends js.Object {
   def rmdir(remoteFilePath: String): js.Promise[String] = js.native
   def rmdir(remoteFilePath: String, recursive: Boolean): js.Promise[String] = js.native
   def stat(remotePath: String): js.Promise[FileStats] = js.native
+  def uploadDir(srcDir: String, destDir: String): js.Promise[String] = js.native
 }
 

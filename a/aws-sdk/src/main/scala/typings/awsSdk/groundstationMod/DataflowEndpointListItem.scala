@@ -18,11 +18,30 @@ trait DataflowEndpointListItem extends js.Object {
 
 object DataflowEndpointListItem {
   @scala.inline
-  def apply(dataflowEndpointGroupArn: DataflowEndpointGroupArn = null, dataflowEndpointGroupId: String = null): DataflowEndpointListItem = {
+  def apply(): DataflowEndpointListItem = {
     val __obj = js.Dynamic.literal()
-    if (dataflowEndpointGroupArn != null) __obj.updateDynamic("dataflowEndpointGroupArn")(dataflowEndpointGroupArn.asInstanceOf[js.Any])
-    if (dataflowEndpointGroupId != null) __obj.updateDynamic("dataflowEndpointGroupId")(dataflowEndpointGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataflowEndpointListItem]
   }
+  @scala.inline
+  implicit class DataflowEndpointListItemOps[Self <: DataflowEndpointListItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataflowEndpointGroupArn(value: DataflowEndpointGroupArn): Self = this.set("dataflowEndpointGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataflowEndpointGroupArn: Self = this.set("dataflowEndpointGroupArn", js.undefined)
+    @scala.inline
+    def setDataflowEndpointGroupId(value: String): Self = this.set("dataflowEndpointGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataflowEndpointGroupId: Self = this.set("dataflowEndpointGroupId", js.undefined)
+  }
+  
 }
 

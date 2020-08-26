@@ -54,32 +54,68 @@ trait ConfigurationOptionDescription extends js.Object {
 
 object ConfigurationOptionDescription {
   @scala.inline
-  def apply(
-    ChangeSeverity: ConfigurationOptionSeverity = null,
-    DefaultValue: ConfigurationOptionDefaultValue = null,
-    MaxLength: js.UndefOr[OptionRestrictionMaxLength] = js.undefined,
-    MaxValue: js.UndefOr[OptionRestrictionMaxValue] = js.undefined,
-    MinValue: js.UndefOr[OptionRestrictionMinValue] = js.undefined,
-    Name: ConfigurationOptionName = null,
-    Namespace: OptionNamespace = null,
-    Regex: OptionRestrictionRegex = null,
-    UserDefined: js.UndefOr[UserDefinedOption] = js.undefined,
-    ValueOptions: ConfigurationOptionPossibleValues = null,
-    ValueType: ConfigurationOptionValueType = null
-  ): ConfigurationOptionDescription = {
+  def apply(): ConfigurationOptionDescription = {
     val __obj = js.Dynamic.literal()
-    if (ChangeSeverity != null) __obj.updateDynamic("ChangeSeverity")(ChangeSeverity.asInstanceOf[js.Any])
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxLength)) __obj.updateDynamic("MaxLength")(MaxLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxValue)) __obj.updateDynamic("MaxValue")(MaxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinValue)) __obj.updateDynamic("MinValue")(MinValue.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace.asInstanceOf[js.Any])
-    if (Regex != null) __obj.updateDynamic("Regex")(Regex.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserDefined)) __obj.updateDynamic("UserDefined")(UserDefined.get.asInstanceOf[js.Any])
-    if (ValueOptions != null) __obj.updateDynamic("ValueOptions")(ValueOptions.asInstanceOf[js.Any])
-    if (ValueType != null) __obj.updateDynamic("ValueType")(ValueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationOptionDescription]
   }
+  @scala.inline
+  implicit class ConfigurationOptionDescriptionOps[Self <: ConfigurationOptionDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeSeverity(value: ConfigurationOptionSeverity): Self = this.set("ChangeSeverity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSeverity: Self = this.set("ChangeSeverity", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: ConfigurationOptionDefaultValue): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    @scala.inline
+    def setMaxLength(value: OptionRestrictionMaxLength): Self = this.set("MaxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLength: Self = this.set("MaxLength", js.undefined)
+    @scala.inline
+    def setMaxValue(value: OptionRestrictionMaxValue): Self = this.set("MaxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("MaxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: OptionRestrictionMinValue): Self = this.set("MinValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("MinValue", js.undefined)
+    @scala.inline
+    def setName(value: ConfigurationOptionName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNamespace(value: OptionNamespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+    @scala.inline
+    def setRegex(value: OptionRestrictionRegex): Self = this.set("Regex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegex: Self = this.set("Regex", js.undefined)
+    @scala.inline
+    def setUserDefined(value: UserDefinedOption): Self = this.set("UserDefined", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserDefined: Self = this.set("UserDefined", js.undefined)
+    @scala.inline
+    def setValueOptionsVarargs(value: ConfigurationOptionPossibleValue*): Self = this.set("ValueOptions", js.Array(value :_*))
+    @scala.inline
+    def setValueOptions(value: ConfigurationOptionPossibleValues): Self = this.set("ValueOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueOptions: Self = this.set("ValueOptions", js.undefined)
+    @scala.inline
+    def setValueType(value: ConfigurationOptionValueType): Self = this.set("ValueType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueType: Self = this.set("ValueType", js.undefined)
+  }
+  
 }
 

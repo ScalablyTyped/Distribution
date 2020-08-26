@@ -26,16 +26,9 @@ object getServiceGraphCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetServiceGraphInput) = this()
-    /* CompleteClass */
-    override val input: GetServiceGraphInput = js.native
     val middlewareStack: MiddlewareStack[GetServiceGraphInput, GetServiceGraphOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: XRayResolvedConfiguration
-    ): Handler[GetServiceGraphInput, GetServiceGraphOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: XRayResolvedConfiguration
     ): Handler[GetServiceGraphInput, GetServiceGraphOutput] = js.native
   }

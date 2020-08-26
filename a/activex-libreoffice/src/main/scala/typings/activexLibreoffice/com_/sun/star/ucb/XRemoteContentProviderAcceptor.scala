@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * @author Stephan Bergmann
   * @version 1.0
   */
+@js.native
 trait XRemoteContentProviderAcceptor extends XInterface {
   /**
     * Add a remote content provider.
@@ -27,13 +28,13 @@ trait XRemoteContentProviderAcceptor extends XInterface {
     Factory: XMultiServiceFactory,
     Templates: SeqEquiv[String],
     DoneListener: XRemoteContentProviderDoneListener
-  ): Boolean
+  ): Boolean = js.native
   /**
     * Remove a remote content provider.
     * @param Identifier An arbitrary identifier uniquely identifying the remote content provider.
     * @returns true if the remote content provider has successfully been removed.
     */
-  def removeRemoteContentProvider(Identifier: String): Boolean
+  def removeRemoteContentProvider(Identifier: String): Boolean = js.native
 }
 
 object XRemoteContentProviderAcceptor {
@@ -48,5 +49,24 @@ object XRemoteContentProviderAcceptor {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addRemoteContentProvider = js.Any.fromFunction4(addRemoteContentProvider), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeRemoteContentProvider = js.Any.fromFunction1(removeRemoteContentProvider))
     __obj.asInstanceOf[XRemoteContentProviderAcceptor]
   }
+  @scala.inline
+  implicit class XRemoteContentProviderAcceptorOps[Self <: XRemoteContentProviderAcceptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddRemoteContentProvider(
+      value: (String, XMultiServiceFactory, SeqEquiv[String], XRemoteContentProviderDoneListener) => Boolean
+    ): Self = this.set("addRemoteContentProvider", js.Any.fromFunction4(value))
+    @scala.inline
+    def setRemoveRemoteContentProvider(value: String => Boolean): Self = this.set("removeRemoteContentProvider", js.Any.fromFunction1(value))
+  }
+  
 }
 

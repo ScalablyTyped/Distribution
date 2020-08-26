@@ -42,25 +42,54 @@ trait DistributionConfiguration extends js.Object {
 
 object DistributionConfiguration {
   @scala.inline
-  def apply(
-    timeoutMinutes: DistributionTimeoutMinutes,
-    arn: ImageBuilderArn = null,
-    dateCreated: DateTime = null,
-    dateUpdated: DateTime = null,
-    description: NonEmptyString = null,
-    distributions: DistributionList = null,
-    name: ResourceName = null,
-    tags: TagMap = null
-  ): DistributionConfiguration = {
+  def apply(timeoutMinutes: DistributionTimeoutMinutes): DistributionConfiguration = {
     val __obj = js.Dynamic.literal(timeoutMinutes = timeoutMinutes.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (dateCreated != null) __obj.updateDynamic("dateCreated")(dateCreated.asInstanceOf[js.Any])
-    if (dateUpdated != null) __obj.updateDynamic("dateUpdated")(dateUpdated.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (distributions != null) __obj.updateDynamic("distributions")(distributions.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionConfiguration]
   }
+  @scala.inline
+  implicit class DistributionConfigurationOps[Self <: DistributionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimeoutMinutes(value: DistributionTimeoutMinutes): Self = this.set("timeoutMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArn(value: ImageBuilderArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDateCreated(value: DateTime): Self = this.set("dateCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateCreated: Self = this.set("dateCreated", js.undefined)
+    @scala.inline
+    def setDateUpdated(value: DateTime): Self = this.set("dateUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateUpdated: Self = this.set("dateUpdated", js.undefined)
+    @scala.inline
+    def setDescription(value: NonEmptyString): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDistributionsVarargs(value: Distribution*): Self = this.set("distributions", js.Array(value :_*))
+    @scala.inline
+    def setDistributions(value: DistributionList): Self = this.set("distributions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributions: Self = this.set("distributions", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

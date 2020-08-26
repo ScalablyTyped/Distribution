@@ -8,42 +8,64 @@ import scala.scalajs.js.annotation._
 /**
   * An interface describing a JupyterLab keyboard shortcut.
   */
+@js.native
 trait IShortcut extends PartialJSONObject {
   /**
     * The optional arguments passed into the shortcut's command.
     */
-  var args: js.UndefOr[PartialJSONObject] = js.undefined
+  var args: js.UndefOr[PartialJSONObject] = js.native
   /**
     * The command invoked by the shortcut.
     */
-  var command: String
+  var command: String = js.native
   /**
     * Whether a keyboard shortcut is disabled. `False` by default.
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /**
     * The key combination of the shortcut.
     */
-  var keys: js.Array[String]
+  var keys: js.Array[String] = js.native
   /**
     * The CSS selector applicable to the shortcut.
     */
-  var selector: String
+  var selector: String = js.native
 }
 
 object IShortcut {
   @scala.inline
-  def apply(
-    command: String,
-    keys: js.Array[String],
-    selector: String,
-    args: PartialJSONObject = null,
-    disabled: js.UndefOr[Boolean] = js.undefined
-  ): IShortcut = {
+  def apply(command: String, keys: js.Array[String], selector: String): IShortcut = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShortcut]
   }
+  @scala.inline
+  implicit class IShortcutOps[Self <: IShortcut] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeysVarargs(value: String*): Self = this.set("keys", js.Array(value :_*))
+    @scala.inline
+    def setKeys(value: js.Array[String]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArgs(value: PartialJSONObject): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+  }
+  
 }
 

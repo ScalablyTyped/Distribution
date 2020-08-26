@@ -8,78 +8,133 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  buttonLabel ? :string,   buttonProps ? :{[x: string] : any},   compact ? :boolean,   defaultValue ? :string,   enableRangeSelection ? :boolean,   inputProps ? :{[x: string] : any},   locale ? :string, onBlur ? (hasDateFormattedDate : {  date  :std.Date,   formattedDate  :string}): void,   validationState ? :{  state ? :'error' | 'warning' | 'information' | 'success',   text ? :string}, [x: string] : any} & fundamental-react.fundamental-react/lib/Calendar/Calendar.CalendarBaseProps */
+/* Inlined {  buttonLabel :string | undefined,   buttonProps :{[x: string] : any} | undefined,   compact :boolean | undefined,   defaultValue :string | undefined,   enableRangeSelection :boolean | undefined,   inputProps :{[x: string] : any} | undefined,   locale :string | undefined,   onBlur :(hasDateFormattedDate : {  date :std.Date,   formattedDate :string}): void | undefined,   validationState :{  state :'error' | 'warning' | 'information' | 'success' | undefined,   text :string | undefined} | undefined, [x: string] : any} & fundamental-react.fundamental-react/lib/Calendar/Calendar.CalendarBaseProps */
+@js.native
 trait DatePickerProps
   extends /* x */ StringDictionary[js.Any] {
-  var blockedDates: js.UndefOr[js.Array[Date]] = js.undefined
-  var buttonLabel: js.UndefOr[String] = js.undefined
-  var buttonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var compact: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[String] = js.undefined
-  var disableAfterDate: js.UndefOr[Date] = js.undefined
-  var disableBeforeDate: js.UndefOr[Date] = js.undefined
-  var disableFutureDates: js.UndefOr[Boolean] = js.undefined
-  var disablePastDates: js.UndefOr[Boolean] = js.undefined
-  var disableStyles: js.UndefOr[Boolean] = js.undefined
-  var disableWeekday: js.UndefOr[js.Array[String]] = js.undefined
-  var disableWeekends: js.UndefOr[Boolean] = js.undefined
-  var disabledDates: js.UndefOr[js.Array[Date]] = js.undefined
-  var enableRangeSelection: js.UndefOr[Boolean] = js.undefined
-  var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
-  var localizedText: js.UndefOr[NextMonth] = js.undefined
+  var blockedDates: js.UndefOr[js.Array[Date]] = js.native
+  var buttonLabel: js.UndefOr[String] = js.native
+  var buttonProps: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var compact: js.UndefOr[Boolean] = js.native
+  var defaultValue: js.UndefOr[String] = js.native
+  var disableAfterDate: js.UndefOr[Date] = js.native
+  var disableBeforeDate: js.UndefOr[Date] = js.native
+  var disableFutureDates: js.UndefOr[Boolean] = js.native
+  var disablePastDates: js.UndefOr[Boolean] = js.native
+  var disableStyles: js.UndefOr[Boolean] = js.native
+  var disableWeekday: js.UndefOr[js.Array[String]] = js.native
+  var disableWeekends: js.UndefOr[Boolean] = js.native
+  var disabledDates: js.UndefOr[js.Array[Date]] = js.native
+  var enableRangeSelection: js.UndefOr[Boolean] = js.native
+  var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var localizedText: js.UndefOr[NextMonth] = js.native
   var onBlur: js.UndefOr[
     js.Function1[/* hasDateFormattedDate */ typings.fundamentalReact.anon.Date, Unit]
-  ] = js.undefined
-  var validationState: js.UndefOr[State] = js.undefined
+  ] = js.native
+  var validationState: js.UndefOr[State] = js.native
 }
 
 object DatePickerProps {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    blockedDates: js.Array[Date] = null,
-    buttonLabel: String = null,
-    buttonProps: StringDictionary[js.Any] = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String = null,
-    disableAfterDate: Date = null,
-    disableBeforeDate: Date = null,
-    disableFutureDates: js.UndefOr[Boolean] = js.undefined,
-    disablePastDates: js.UndefOr[Boolean] = js.undefined,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    disableWeekday: js.Array[String] = null,
-    disableWeekends: js.UndefOr[Boolean] = js.undefined,
-    disabledDates: js.Array[Date] = null,
-    enableRangeSelection: js.UndefOr[Boolean] = js.undefined,
-    inputProps: StringDictionary[js.Any] = null,
-    locale: String = null,
-    localizedText: NextMonth = null,
-    onBlur: /* hasDateFormattedDate */ typings.fundamentalReact.anon.Date => Unit = null,
-    validationState: State = null
-  ): DatePickerProps = {
+  def apply(): DatePickerProps = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (blockedDates != null) __obj.updateDynamic("blockedDates")(blockedDates.asInstanceOf[js.Any])
-    if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel.asInstanceOf[js.Any])
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (disableAfterDate != null) __obj.updateDynamic("disableAfterDate")(disableAfterDate.asInstanceOf[js.Any])
-    if (disableBeforeDate != null) __obj.updateDynamic("disableBeforeDate")(disableBeforeDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFutureDates)) __obj.updateDynamic("disableFutureDates")(disableFutureDates.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePastDates)) __obj.updateDynamic("disablePastDates")(disablePastDates.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
-    if (disableWeekday != null) __obj.updateDynamic("disableWeekday")(disableWeekday.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends.get.asInstanceOf[js.Any])
-    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRangeSelection)) __obj.updateDynamic("enableRangeSelection")(enableRangeSelection.get.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (validationState != null) __obj.updateDynamic("validationState")(validationState.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerProps]
   }
+  @scala.inline
+  implicit class DatePickerPropsOps[Self <: DatePickerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockedDatesVarargs(value: Date*): Self = this.set("blockedDates", js.Array(value :_*))
+    @scala.inline
+    def setBlockedDates(value: js.Array[Date]): Self = this.set("blockedDates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockedDates: Self = this.set("blockedDates", js.undefined)
+    @scala.inline
+    def setButtonLabel(value: String): Self = this.set("buttonLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonLabel: Self = this.set("buttonLabel", js.undefined)
+    @scala.inline
+    def setButtonProps(value: StringDictionary[js.Any]): Self = this.set("buttonProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonProps: Self = this.set("buttonProps", js.undefined)
+    @scala.inline
+    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompact: Self = this.set("compact", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDisableAfterDate(value: Date): Self = this.set("disableAfterDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableAfterDate: Self = this.set("disableAfterDate", js.undefined)
+    @scala.inline
+    def setDisableBeforeDate(value: Date): Self = this.set("disableBeforeDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableBeforeDate: Self = this.set("disableBeforeDate", js.undefined)
+    @scala.inline
+    def setDisableFutureDates(value: Boolean): Self = this.set("disableFutureDates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableFutureDates: Self = this.set("disableFutureDates", js.undefined)
+    @scala.inline
+    def setDisablePastDates(value: Boolean): Self = this.set("disablePastDates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisablePastDates: Self = this.set("disablePastDates", js.undefined)
+    @scala.inline
+    def setDisableStyles(value: Boolean): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    @scala.inline
+    def setDisableWeekdayVarargs(value: String*): Self = this.set("disableWeekday", js.Array(value :_*))
+    @scala.inline
+    def setDisableWeekday(value: js.Array[String]): Self = this.set("disableWeekday", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableWeekday: Self = this.set("disableWeekday", js.undefined)
+    @scala.inline
+    def setDisableWeekends(value: Boolean): Self = this.set("disableWeekends", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableWeekends: Self = this.set("disableWeekends", js.undefined)
+    @scala.inline
+    def setDisabledDatesVarargs(value: Date*): Self = this.set("disabledDates", js.Array(value :_*))
+    @scala.inline
+    def setDisabledDates(value: js.Array[Date]): Self = this.set("disabledDates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledDates: Self = this.set("disabledDates", js.undefined)
+    @scala.inline
+    def setEnableRangeSelection(value: Boolean): Self = this.set("enableRangeSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableRangeSelection: Self = this.set("enableRangeSelection", js.undefined)
+    @scala.inline
+    def setInputProps(value: StringDictionary[js.Any]): Self = this.set("inputProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputProps: Self = this.set("inputProps", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setLocalizedText(value: NextMonth): Self = this.set("localizedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalizedText: Self = this.set("localizedText", js.undefined)
+    @scala.inline
+    def setOnBlur(value: /* hasDateFormattedDate */ typings.fundamentalReact.anon.Date => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setValidationState(value: State): Self = this.set("validationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationState: Self = this.set("validationState", js.undefined)
+  }
+  
 }
 

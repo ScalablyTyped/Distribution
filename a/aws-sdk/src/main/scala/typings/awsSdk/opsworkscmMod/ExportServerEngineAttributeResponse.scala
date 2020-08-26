@@ -18,11 +18,30 @@ trait ExportServerEngineAttributeResponse extends js.Object {
 
 object ExportServerEngineAttributeResponse {
   @scala.inline
-  def apply(EngineAttribute: EngineAttribute = null, ServerName: ServerName = null): ExportServerEngineAttributeResponse = {
+  def apply(): ExportServerEngineAttributeResponse = {
     val __obj = js.Dynamic.literal()
-    if (EngineAttribute != null) __obj.updateDynamic("EngineAttribute")(EngineAttribute.asInstanceOf[js.Any])
-    if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportServerEngineAttributeResponse]
   }
+  @scala.inline
+  implicit class ExportServerEngineAttributeResponseOps[Self <: ExportServerEngineAttributeResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEngineAttribute(value: EngineAttribute): Self = this.set("EngineAttribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineAttribute: Self = this.set("EngineAttribute", js.undefined)
+    @scala.inline
+    def setServerName(value: ServerName): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerName: Self = this.set("ServerName", js.undefined)
+  }
+  
 }
 

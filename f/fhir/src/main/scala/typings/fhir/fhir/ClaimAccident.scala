@@ -7,58 +7,68 @@ import scala.scalajs.js.annotation._
 /**
   * Details about an accident
   */
+@js.native
 trait ClaimAccident extends BackboneElement {
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.undefined
+  var _date: js.UndefOr[Element] = js.native
   /**
     * When the accident occurred
     * see information codes
     * see information codes
     */
-  var date: typings.fhir.fhir.date
+  var date: typings.fhir.fhir.date = js.native
   /**
     * Accident Place
     */
-  var locationAddress: js.UndefOr[Address] = js.undefined
+  var locationAddress: js.UndefOr[Address] = js.native
   /**
     * Accident Place
     */
-  var locationReference: js.UndefOr[Reference] = js.undefined
+  var locationReference: js.UndefOr[Reference] = js.native
   /**
     * The nature of the accident
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.undefined
+  var `type`: js.UndefOr[CodeableConcept] = js.native
 }
 
 object ClaimAccident {
   @scala.inline
-  def apply(
-    date: date,
-    _date: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    locationAddress: Address = null,
-    locationReference: Reference = null,
-    modifierExtension: js.Array[Extension] = null,
-    `type`: CodeableConcept = null
-  ): ClaimAccident = {
+  def apply(date: date): ClaimAccident = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
-    if (_date != null) __obj.updateDynamic("_date")(_date.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (locationAddress != null) __obj.updateDynamic("locationAddress")(locationAddress.asInstanceOf[js.Any])
-    if (locationReference != null) __obj.updateDynamic("locationReference")(locationReference.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimAccident]
   }
+  @scala.inline
+  implicit class ClaimAccidentOps[Self <: ClaimAccident] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: date): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_date: Self = this.set("_date", js.undefined)
+    @scala.inline
+    def setLocationAddress(value: Address): Self = this.set("locationAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationAddress: Self = this.set("locationAddress", js.undefined)
+    @scala.inline
+    def setLocationReference(value: Reference): Self = this.set("locationReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationReference: Self = this.set("locationReference", js.undefined)
+    @scala.inline
+    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

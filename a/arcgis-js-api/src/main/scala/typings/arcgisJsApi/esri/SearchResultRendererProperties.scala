@@ -1,10 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SearchResultRendererProperties extends WidgetProperties {
   /**
     * Indicates whether to display the `Show more results` link within the search result's popup. A value of `true` will not display the link in the popup.
@@ -13,33 +13,41 @@ trait SearchResultRendererProperties extends WidgetProperties {
     *
     * @default false
     */
-  var showMoreResultsOpen: js.UndefOr[Boolean] = js.undefined
+  var showMoreResultsOpen: js.UndefOr[Boolean] = js.native
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [SearchViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this Search widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [SearchViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html) class to access all properties and methods on the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchResultRenderer.html#viewModel)
     */
-  var viewModel: js.UndefOr[SearchViewModelProperties] = js.undefined
+  var viewModel: js.UndefOr[SearchViewModelProperties] = js.native
 }
 
 object SearchResultRendererProperties {
   @scala.inline
-  def apply(
-    container: String | HTMLElement = null,
-    destroyed: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    label: String = null,
-    showMoreResultsOpen: js.UndefOr[Boolean] = js.undefined,
-    viewModel: SearchViewModelProperties = null
-  ): SearchResultRendererProperties = {
+  def apply(): SearchResultRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMoreResultsOpen)) __obj.updateDynamic("showMoreResultsOpen")(showMoreResultsOpen.get.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResultRendererProperties]
   }
+  @scala.inline
+  implicit class SearchResultRendererPropertiesOps[Self <: SearchResultRendererProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShowMoreResultsOpen(value: Boolean): Self = this.set("showMoreResultsOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMoreResultsOpen: Self = this.set("showMoreResultsOpen", js.undefined)
+    @scala.inline
+    def setViewModel(value: SearchViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+  }
+  
 }
 

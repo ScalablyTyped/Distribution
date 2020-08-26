@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
   * specifies all the properties for the graphic object of a pie segment.
   * @see PieDiagram
   */
+@js.native
 trait ChartPieSegmentProperties extends ChartDataPointProperties
 
 object ChartPieSegmentProperties {

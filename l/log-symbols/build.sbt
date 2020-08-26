@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "log-symbols"
-version := "3.0.0-e1461c"
-scalaVersion := "2.13.2"
+version := "4.0.0-519938"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

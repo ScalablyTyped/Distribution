@@ -12,7 +12,7 @@ A calendar heatmap component built on SVG, inspired by Github's commit calendar 
 | Keywords           | calendar, react, react-component, svg |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 132340 |
+| # downloads        | 132608 |
 | # stars            | 2 |
 
 ## Links

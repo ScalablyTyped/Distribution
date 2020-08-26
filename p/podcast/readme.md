@@ -12,7 +12,7 @@ Podcast RSS feed generator. A really simple API to add Podcast-RSS feeds to any 
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 4 |
-| # downloads        | 29666 |
+| # downloads        | 35009 |
 | # stars            | 5 |
 
 ## Links

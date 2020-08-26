@@ -22,16 +22,34 @@ trait MaintenanceWindowLambdaParameters extends js.Object {
 
 object MaintenanceWindowLambdaParameters {
   @scala.inline
-  def apply(
-    ClientContext: MaintenanceWindowLambdaClientContext = null,
-    Payload: MaintenanceWindowLambdaPayload = null,
-    Qualifier: MaintenanceWindowLambdaQualifier = null
-  ): MaintenanceWindowLambdaParameters = {
+  def apply(): MaintenanceWindowLambdaParameters = {
     val __obj = js.Dynamic.literal()
-    if (ClientContext != null) __obj.updateDynamic("ClientContext")(ClientContext.asInstanceOf[js.Any])
-    if (Payload != null) __obj.updateDynamic("Payload")(Payload.asInstanceOf[js.Any])
-    if (Qualifier != null) __obj.updateDynamic("Qualifier")(Qualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowLambdaParameters]
   }
+  @scala.inline
+  implicit class MaintenanceWindowLambdaParametersOps[Self <: MaintenanceWindowLambdaParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientContext(value: MaintenanceWindowLambdaClientContext): Self = this.set("ClientContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientContext: Self = this.set("ClientContext", js.undefined)
+    @scala.inline
+    def setPayload(value: MaintenanceWindowLambdaPayload): Self = this.set("Payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("Payload", js.undefined)
+    @scala.inline
+    def setQualifier(value: MaintenanceWindowLambdaQualifier): Self = this.set("Qualifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualifier: Self = this.set("Qualifier", js.undefined)
+  }
+  
 }
 

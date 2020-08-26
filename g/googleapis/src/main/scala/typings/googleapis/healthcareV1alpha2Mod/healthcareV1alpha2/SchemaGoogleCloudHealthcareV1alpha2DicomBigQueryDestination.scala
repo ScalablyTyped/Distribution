@@ -25,11 +25,30 @@ trait SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination extends js.Obj
 
 object SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination {
   @scala.inline
-  def apply(force: js.UndefOr[Boolean] = js.undefined, tableUri: String = null): SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination = {
+  def apply(): SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
-    if (tableUri != null) __obj.updateDynamic("tableUri")(tableUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestinationOps[Self <: SchemaGoogleCloudHealthcareV1alpha2DicomBigQueryDestination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+    @scala.inline
+    def setTableUri(value: String): Self = this.set("tableUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableUri: Self = this.set("tableUri", js.undefined)
+  }
+  
 }
 

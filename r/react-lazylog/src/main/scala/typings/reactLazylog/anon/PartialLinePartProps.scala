@@ -7,20 +7,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<react-lazylog.react-lazylog/build/LinePart.LinePartProps> */
+@js.native
 trait PartialLinePartProps extends js.Object {
-  var format: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.undefined
-  var part: js.UndefOr[Text] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var format: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.native
+  var part: js.UndefOr[Text] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialLinePartProps {
   @scala.inline
-  def apply(format: /* text */ String => ReactNode = null, part: Text = null, style: CSSProperties = null): PartialLinePartProps = {
+  def apply(): PartialLinePartProps = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1(format))
-    if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialLinePartProps]
   }
+  @scala.inline
+  implicit class PartialLinePartPropsOps[Self <: PartialLinePartProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: /* text */ String => ReactNode): Self = this.set("format", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setPart(value: Text): Self = this.set("part", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePart: Self = this.set("part", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

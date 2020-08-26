@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object uniqueDirectiveNamesMod extends js.Object {
   def UniqueDirectiveNames(context: SDLValidationContext): ASTVisitor = js.native
-  def duplicateDirectiveNameMessage(directiveName: String): String = js.native
-  def existedDirectiveNameMessage(directiveName: String): String = js.native
 }
 

@@ -14,10 +14,26 @@ trait ImportVolumeResult extends js.Object {
 
 object ImportVolumeResult {
   @scala.inline
-  def apply(ConversionTask: ConversionTask = null): ImportVolumeResult = {
+  def apply(): ImportVolumeResult = {
     val __obj = js.Dynamic.literal()
-    if (ConversionTask != null) __obj.updateDynamic("ConversionTask")(ConversionTask.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportVolumeResult]
   }
+  @scala.inline
+  implicit class ImportVolumeResultOps[Self <: ImportVolumeResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConversionTask(value: ConversionTask): Self = this.set("ConversionTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversionTask: Self = this.set("ConversionTask", js.undefined)
+  }
+  
 }
 

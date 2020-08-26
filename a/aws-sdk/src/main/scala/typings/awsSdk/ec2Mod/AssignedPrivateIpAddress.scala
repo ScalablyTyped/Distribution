@@ -14,10 +14,26 @@ trait AssignedPrivateIpAddress extends js.Object {
 
 object AssignedPrivateIpAddress {
   @scala.inline
-  def apply(PrivateIpAddress: String = null): AssignedPrivateIpAddress = {
+  def apply(): AssignedPrivateIpAddress = {
     val __obj = js.Dynamic.literal()
-    if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignedPrivateIpAddress]
   }
+  @scala.inline
+  implicit class AssignedPrivateIpAddressOps[Self <: AssignedPrivateIpAddress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrivateIpAddress(value: String): Self = this.set("PrivateIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddress: Self = this.set("PrivateIpAddress", js.undefined)
+  }
+  
 }
 

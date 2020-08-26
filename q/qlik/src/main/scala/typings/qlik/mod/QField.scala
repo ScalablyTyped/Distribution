@@ -16,6 +16,7 @@ trait QField extends js.Object {
   def getMoreData(): this.type = js.native
   def lock(): js.Promise[_] = js.native
   def select(values: js.Array[Double]): js.Promise[_] = js.native
+  def select(values: js.Array[Double], toggle: js.UndefOr[scala.Nothing], softlock: Boolean): js.Promise[_] = js.native
   def select(values: js.Array[Double], toggle: Boolean): js.Promise[_] = js.native
   def select(values: js.Array[Double], toggle: Boolean, softlock: Boolean): js.Promise[_] = js.native
   def selectAll(): js.Promise[_] = js.native
@@ -29,6 +30,7 @@ trait QField extends js.Object {
   def selectPossible(): js.Promise[_] = js.native
   def selectPossible(softlock: Boolean): js.Promise[_] = js.native
   def selectValues(values: js.Array[QFieldValue]): js.Promise[_] = js.native
+  def selectValues(values: js.Array[QFieldValue], toggle: js.UndefOr[scala.Nothing], softlock: Boolean): js.Promise[_] = js.native
   def selectValues(values: js.Array[QFieldValue], toggle: Boolean): js.Promise[_] = js.native
   def selectValues(values: js.Array[QFieldValue], toggle: Boolean, softlock: Boolean): js.Promise[_] = js.native
   def toggleSelect(`match`: String): js.Promise[_] = js.native

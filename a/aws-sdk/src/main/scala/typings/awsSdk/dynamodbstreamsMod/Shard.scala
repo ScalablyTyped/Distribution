@@ -22,16 +22,34 @@ trait Shard extends js.Object {
 
 object Shard {
   @scala.inline
-  def apply(
-    ParentShardId: ShardId = null,
-    SequenceNumberRange: SequenceNumberRange = null,
-    ShardId: ShardId = null
-  ): Shard = {
+  def apply(): Shard = {
     val __obj = js.Dynamic.literal()
-    if (ParentShardId != null) __obj.updateDynamic("ParentShardId")(ParentShardId.asInstanceOf[js.Any])
-    if (SequenceNumberRange != null) __obj.updateDynamic("SequenceNumberRange")(SequenceNumberRange.asInstanceOf[js.Any])
-    if (ShardId != null) __obj.updateDynamic("ShardId")(ShardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shard]
   }
+  @scala.inline
+  implicit class ShardOps[Self <: Shard] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParentShardId(value: ShardId): Self = this.set("ParentShardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentShardId: Self = this.set("ParentShardId", js.undefined)
+    @scala.inline
+    def setSequenceNumberRange(value: SequenceNumberRange): Self = this.set("SequenceNumberRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSequenceNumberRange: Self = this.set("SequenceNumberRange", js.undefined)
+    @scala.inline
+    def setShardId(value: ShardId): Self = this.set("ShardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShardId: Self = this.set("ShardId", js.undefined)
+  }
+  
 }
 

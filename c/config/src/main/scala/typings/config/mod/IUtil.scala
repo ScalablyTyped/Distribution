@@ -30,6 +30,7 @@ trait IUtil extends js.Object {
   def makeHidden(`object`: js.Any, propertyName: String, propertyValue: String): js.Any = js.native
   // Make a javascript object property immutable (assuring it cannot be changed from the current value).
   def makeImmutable(`object`: js.Any): js.Any = js.native
+  def makeImmutable(`object`: js.Any, propertyName: js.UndefOr[scala.Nothing], propertyValue: String): js.Any = js.native
   def makeImmutable(`object`: js.Any, propertyName: String): js.Any = js.native
   def makeImmutable(`object`: js.Any, propertyName: String, propertyValue: String): js.Any = js.native
   /**

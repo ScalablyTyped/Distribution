@@ -1,41 +1,53 @@
 package typings.materialUi.expandTransitionChildMod
 
 import typings.react.mod.CSSProperties
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExpandTransitionChildProps extends Props[ExpandTransitionChild] {
-  var enterDelay: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var transitionDelay: js.UndefOr[Double] = js.undefined
-  var transitionDuration: js.UndefOr[Double] = js.undefined
+  var enterDelay: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var transitionDelay: js.UndefOr[Double] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.native
 }
 
 object ExpandTransitionChildProps {
   @scala.inline
-  def apply(
-    children: ReactNode = null,
-    enterDelay: js.UndefOr[Double] = js.undefined,
-    key: Key = null,
-    ref: js.UndefOr[Null | LegacyRef[ExpandTransitionChild]] = js.undefined,
-    style: CSSProperties = null,
-    transitionDelay: js.UndefOr[Double] = js.undefined,
-    transitionDuration: js.UndefOr[Double] = js.undefined
-  ): ExpandTransitionChildProps = {
+  def apply(): ExpandTransitionChildProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterDelay)) __obj.updateDynamic("enterDelay")(enterDelay.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionDelay)) __obj.updateDynamic("transitionDelay")(transitionDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandTransitionChildProps]
   }
+  @scala.inline
+  implicit class ExpandTransitionChildPropsOps[Self <: ExpandTransitionChildProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnterDelay(value: Double): Self = this.set("enterDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnterDelay: Self = this.set("enterDelay", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTransitionDelay(value: Double): Self = this.set("transitionDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionDelay: Self = this.set("transitionDelay", js.undefined)
+    @scala.inline
+    def setTransitionDuration(value: Double): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+  }
+  
 }
 

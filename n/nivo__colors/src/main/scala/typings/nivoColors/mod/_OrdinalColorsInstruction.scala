@@ -13,9 +13,8 @@ object _OrdinalColorsInstruction {
     __obj.asInstanceOf[_OrdinalColorsInstruction[D]]
   }
   @scala.inline
-  def SchemeColorInstruction[D](scheme: ColorSchemeId, size: js.UndefOr[Double] = js.undefined): _OrdinalColorsInstruction[D] = {
+  def SchemeColorInstruction[D](scheme: ColorSchemeId): _OrdinalColorsInstruction[D] = {
     val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_OrdinalColorsInstruction[D]]
   }
 }

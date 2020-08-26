@@ -14,10 +14,6 @@ class PointError protected () extends Error {
     * @param points - invalid points
     */
   def this(message: String, points: js.Array[XY]) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   /**
     * Invalid points
     */

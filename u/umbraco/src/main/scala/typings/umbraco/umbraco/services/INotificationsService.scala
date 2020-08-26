@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * Section navigation and search, and maintain their state for the entire application lifetime
   *
   */
+@js.native
 trait INotificationsService extends js.Object {
   /**
     * @ngdoc property
@@ -32,7 +33,7 @@ trait INotificationsService extends js.Object {
     *
     * @returns {string} returns an array
     */
-  var current: js.Array[String]
+  var current: js.Array[String] = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#add
@@ -50,8 +51,8 @@ trait INotificationsService extends js.Object {
     * @param {Boolean} item.sticky if set to true, the notification will not auto-close
     * @returns {Object} args notification object
     */
-  def add(item: INotificationItem): INotification
-  def addView(view: String, args: js.Any*): Unit
+  def add(item: INotificationItem): INotification = js.native
+  def addView(view: String, args: js.Any*): Unit = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#error
@@ -65,7 +66,7 @@ trait INotificationsService extends js.Object {
     * @param {String} message longer text for the notication, trimmed after 200 characters, which can then be exanded
     * @returns {Object} notification object
     */
-  def error(headline: String, message: String): INotification
+  def error(headline: String, message: String): INotification = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#getCurrent
@@ -74,8 +75,8 @@ trait INotificationsService extends js.Object {
     * @description
     * Method to return all notifications from the notifcations collection
     */
-  def getCurrent(): js.Array[INotification]
-  def hasView(view: String): Boolean
+  def getCurrent(): js.Array[INotification] = js.native
+  def hasView(view: String): Boolean = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#warning
@@ -90,7 +91,7 @@ trait INotificationsService extends js.Object {
     * @param {String} message longer text for the notication, trimmed after 200 characters, which can then be exanded
     * @returns {Object} notification object
     */
-  def info(headline: String, message: String): INotification
+  def info(headline: String, message: String): INotification = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#remove
@@ -101,7 +102,7 @@ trait INotificationsService extends js.Object {
     *
     * @param {Int} index index where the notication should be removed from
     */
-  def remove(index: Double): Unit
+  def remove(index: Double): Unit = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#removeAll
@@ -110,7 +111,7 @@ trait INotificationsService extends js.Object {
     * @description
     * Removes all notifications from the notifcations collection
     */
-  def removeAll(): Unit
+  def removeAll(): Unit = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#showNotification
@@ -121,7 +122,7 @@ trait INotificationsService extends js.Object {
     *
     * @returns {Object} args notification object
     */
-  def showNotification(args: INotificationArgs): INotification
+  def showNotification(args: INotificationArgs): INotification = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#success
@@ -135,7 +136,7 @@ trait INotificationsService extends js.Object {
     * @param {String} message longer text for the notication, trimmed after 200 characters, which can then be exanded
     * @returns {Object} notification object
     */
-  def success(headline: String, message: String): INotification
+  def success(headline: String, message: String): INotification = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#warning
@@ -150,7 +151,7 @@ trait INotificationsService extends js.Object {
     * @param {String} message longer text for the notication, trimmed after 200 characters, which can then be exanded
     * @returns {Object} notification object
     */
-  def warning(headline: String, message: String): INotification
+  def warning(headline: String, message: String): INotification = js.native
 }
 
 object INotificationsService {
@@ -172,5 +173,44 @@ object INotificationsService {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addView = js.Any.fromFunction2(addView), current = current.asInstanceOf[js.Any], error = js.Any.fromFunction2(error), getCurrent = js.Any.fromFunction0(getCurrent), hasView = js.Any.fromFunction1(hasView), info = js.Any.fromFunction2(info), remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll), showNotification = js.Any.fromFunction1(showNotification), success = js.Any.fromFunction2(success), warning = js.Any.fromFunction2(warning))
     __obj.asInstanceOf[INotificationsService]
   }
+  @scala.inline
+  implicit class INotificationsServiceOps[Self <: INotificationsService] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: INotificationItem => INotification): Self = this.set("add", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAddView(value: (String, /* repeated */ js.Any) => Unit): Self = this.set("addView", js.Any.fromFunction2(value))
+    @scala.inline
+    def setCurrentVarargs(value: String*): Self = this.set("current", js.Array(value :_*))
+    @scala.inline
+    def setCurrent(value: js.Array[String]): Self = this.set("current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setError(value: (String, String) => INotification): Self = this.set("error", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetCurrent(value: () => js.Array[INotification]): Self = this.set("getCurrent", js.Any.fromFunction0(value))
+    @scala.inline
+    def setHasView(value: String => Boolean): Self = this.set("hasView", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInfo(value: (String, String) => INotification): Self = this.set("info", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRemove(value: Double => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveAll(value: () => Unit): Self = this.set("removeAll", js.Any.fromFunction0(value))
+    @scala.inline
+    def setShowNotification(value: INotificationArgs => INotification): Self = this.set("showNotification", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSuccess(value: (String, String) => INotification): Self = this.set("success", js.Any.fromFunction2(value))
+    @scala.inline
+    def setWarning(value: (String, String) => INotification): Self = this.set("warning", js.Any.fromFunction2(value))
+  }
+  
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "uuidjs" : "4.2.5"
+      "uuidjs" : "4.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "uuidjs" : "4.2.5"
+      "uuidjs" : "4.2.6"
     }
   ],
   "compile-devDependencies" : [

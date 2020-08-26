@@ -26,6 +26,7 @@ class ResourceMetagame protected () extends js.Object {
     */
   def getMetagameConfig(): GaxiosPromise[SchemaMetagameConfig] = js.native
   def getMetagameConfig(callback: BodyResponseCallback[SchemaMetagameConfig]): Unit = js.native
+  def getMetagameConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMetagameConfig] = js.native
   def getMetagameConfig(params: ParamsResourceMetagameGetmetagameconfig): GaxiosPromise[SchemaMetagameConfig] = js.native
   def getMetagameConfig(
     params: ParamsResourceMetagameGetmetagameconfig,
@@ -61,6 +62,7 @@ class ResourceMetagame protected () extends js.Object {
     */
   def listCategoriesByPlayer(): GaxiosPromise[SchemaCategoryListResponse] = js.native
   def listCategoriesByPlayer(callback: BodyResponseCallback[SchemaCategoryListResponse]): Unit = js.native
+  def listCategoriesByPlayer(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCategoryListResponse] = js.native
   def listCategoriesByPlayer(params: ParamsResourceMetagameListcategoriesbyplayer): GaxiosPromise[SchemaCategoryListResponse] = js.native
   def listCategoriesByPlayer(
     params: ParamsResourceMetagameListcategoriesbyplayer,

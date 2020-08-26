@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.reflection.TypeDescriptionProvider
   * @see com.sun.star.reflection.XTypeDescription
   */
+@js.native
 trait TypeDescriptionManager
   extends XSet
      with XHierarchicalNameAccess

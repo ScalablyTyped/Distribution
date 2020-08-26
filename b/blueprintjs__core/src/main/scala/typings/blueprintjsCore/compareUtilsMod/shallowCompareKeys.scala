@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object shallowCompareKeys extends js.Object {
   def apply[T /* <: js.Object */](objA: T, objB: T): Boolean = js.native
-  def apply[T /* <: js.Object */](objA: T, objB: T, keys: IKeyBlacklist[T]): Boolean = js.native
-  def apply[T /* <: js.Object */](objA: T, objB: T, keys: IKeyWhitelist[T]): Boolean = js.native
+  def apply[T /* <: js.Object */](objA: T, objB: T, keys: IKeyAllowlist[T]): Boolean = js.native
+  def apply[T /* <: js.Object */](objA: T, objB: T, keys: IKeyDenylist[T]): Boolean = js.native
 }
 

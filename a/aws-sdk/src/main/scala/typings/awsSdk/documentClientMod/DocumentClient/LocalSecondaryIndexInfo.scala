@@ -22,12 +22,36 @@ trait LocalSecondaryIndexInfo extends js.Object {
 
 object LocalSecondaryIndexInfo {
   @scala.inline
-  def apply(IndexName: IndexName = null, KeySchema: KeySchema = null, Projection: Projection = null): LocalSecondaryIndexInfo = {
+  def apply(): LocalSecondaryIndexInfo = {
     val __obj = js.Dynamic.literal()
-    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName.asInstanceOf[js.Any])
-    if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema.asInstanceOf[js.Any])
-    if (Projection != null) __obj.updateDynamic("Projection")(Projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalSecondaryIndexInfo]
   }
+  @scala.inline
+  implicit class LocalSecondaryIndexInfoOps[Self <: LocalSecondaryIndexInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+    @scala.inline
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
+    @scala.inline
+    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeySchema: Self = this.set("KeySchema", js.undefined)
+    @scala.inline
+    def setProjection(value: Projection): Self = this.set("Projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("Projection", js.undefined)
+  }
+  
 }
 

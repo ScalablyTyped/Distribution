@@ -40,16 +40,34 @@ trait SchemaWeightedBackendService extends js.Object {
 
 object SchemaWeightedBackendService {
   @scala.inline
-  def apply(
-    backendService: String = null,
-    headerAction: SchemaHttpHeaderAction = null,
-    weight: js.UndefOr[Double] = js.undefined
-  ): SchemaWeightedBackendService = {
+  def apply(): SchemaWeightedBackendService = {
     val __obj = js.Dynamic.literal()
-    if (backendService != null) __obj.updateDynamic("backendService")(backendService.asInstanceOf[js.Any])
-    if (headerAction != null) __obj.updateDynamic("headerAction")(headerAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWeightedBackendService]
   }
+  @scala.inline
+  implicit class SchemaWeightedBackendServiceOps[Self <: SchemaWeightedBackendService] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackendService(value: String): Self = this.set("backendService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackendService: Self = this.set("backendService", js.undefined)
+    @scala.inline
+    def setHeaderAction(value: SchemaHttpHeaderAction): Self = this.set("headerAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderAction: Self = this.set("headerAction", js.undefined)
+    @scala.inline
+    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("weight", js.undefined)
+  }
+  
 }
 

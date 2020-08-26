@@ -12,7 +12,7 @@ Library for uploadcare.com.
 | Keywords           | upload, uploadcare, api, wrapper |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 26002 |
+| # downloads        | 26695 |
 | # stars            | 1 |
 
 ## Links

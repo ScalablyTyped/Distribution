@@ -22,16 +22,38 @@ trait TargetInstances extends js.Object {
 
 object TargetInstances {
   @scala.inline
-  def apply(
-    autoScalingGroups: AutoScalingGroupNameList = null,
-    ec2TagSet: EC2TagSet = null,
-    tagFilters: EC2TagFilterList = null
-  ): TargetInstances = {
+  def apply(): TargetInstances = {
     val __obj = js.Dynamic.literal()
-    if (autoScalingGroups != null) __obj.updateDynamic("autoScalingGroups")(autoScalingGroups.asInstanceOf[js.Any])
-    if (ec2TagSet != null) __obj.updateDynamic("ec2TagSet")(ec2TagSet.asInstanceOf[js.Any])
-    if (tagFilters != null) __obj.updateDynamic("tagFilters")(tagFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetInstances]
   }
+  @scala.inline
+  implicit class TargetInstancesOps[Self <: TargetInstances] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupsVarargs(value: AutoScalingGroupName*): Self = this.set("autoScalingGroups", js.Array(value :_*))
+    @scala.inline
+    def setAutoScalingGroups(value: AutoScalingGroupNameList): Self = this.set("autoScalingGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroups: Self = this.set("autoScalingGroups", js.undefined)
+    @scala.inline
+    def setEc2TagSet(value: EC2TagSet): Self = this.set("ec2TagSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2TagSet: Self = this.set("ec2TagSet", js.undefined)
+    @scala.inline
+    def setTagFiltersVarargs(value: EC2TagFilter*): Self = this.set("tagFilters", js.Array(value :_*))
+    @scala.inline
+    def setTagFilters(value: EC2TagFilterList): Self = this.set("tagFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagFilters: Self = this.set("tagFilters", js.undefined)
+  }
+  
 }
 

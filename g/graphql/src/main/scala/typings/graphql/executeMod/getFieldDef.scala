@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/execution/execute", "getFieldDef")
 @js.native
 object getFieldDef extends js.Object {
-  def apply(schema: GraphQLSchema, parentType: GraphQLObjectType[_, _, StringDictionary[_]], fieldName: String): Maybe[GraphQLField[_, _, StringDictionary[_]]] = js.native
+  def apply(schema: GraphQLSchema, parentType: GraphQLObjectType[_, _], fieldName: String): Maybe[GraphQLField[_, _, StringDictionary[_]]] = js.native
 }
 

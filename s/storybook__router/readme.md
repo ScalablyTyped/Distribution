@@ -10,9 +10,9 @@ Core Storybook Router
 | ------------------ | :-------------: |
 | Full name          | @storybook/router |
 | Keywords           | storybook |
-| # releases         | 292 |
-| # dependents       | 19 |
-| # downloads        | 30813102 |
+| # releases         | 304 |
+| # dependents       | 14 |
+| # downloads        | 33184403 |
 | # stars            | 0 |
 
 ## Links

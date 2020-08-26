@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  def apply(secret: js.UndefOr[scala.Nothing], options: CookieParseOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(secret: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(secret: String, options: CookieParseOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
   def apply(secret: js.Array[String]): RequestHandler[ParamsDictionary, _, _, Query] = js.native

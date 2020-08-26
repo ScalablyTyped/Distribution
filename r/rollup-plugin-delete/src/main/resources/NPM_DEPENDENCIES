@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rollup-plugin-delete" : "1.2.0"
+      "rollup-plugin-delete" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rollup-plugin-delete" : "1.2.0"
+      "rollup-plugin-delete" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

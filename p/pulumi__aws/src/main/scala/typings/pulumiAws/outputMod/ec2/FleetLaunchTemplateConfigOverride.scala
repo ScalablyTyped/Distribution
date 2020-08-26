@@ -34,22 +34,46 @@ trait FleetLaunchTemplateConfigOverride extends js.Object {
 
 object FleetLaunchTemplateConfigOverride {
   @scala.inline
-  def apply(
-    availabilityZone: String = null,
-    instanceType: String = null,
-    maxPrice: String = null,
-    priority: js.UndefOr[Double] = js.undefined,
-    subnetId: String = null,
-    weightedCapacity: js.UndefOr[Double] = js.undefined
-  ): FleetLaunchTemplateConfigOverride = {
+  def apply(): FleetLaunchTemplateConfigOverride = {
     val __obj = js.Dynamic.literal()
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (maxPrice != null) __obj.updateDynamic("maxPrice")(maxPrice.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
-    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(weightedCapacity)) __obj.updateDynamic("weightedCapacity")(weightedCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetLaunchTemplateConfigOverride]
   }
+  @scala.inline
+  implicit class FleetLaunchTemplateConfigOverrideOps[Self <: FleetLaunchTemplateConfigOverride] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    @scala.inline
+    def setMaxPrice(value: String): Self = this.set("maxPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPrice: Self = this.set("maxPrice", js.undefined)
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setSubnetId(value: String): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("subnetId", js.undefined)
+    @scala.inline
+    def setWeightedCapacity(value: Double): Self = this.set("weightedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeightedCapacity: Self = this.set("weightedCapacity", js.undefined)
+  }
+  
 }
 

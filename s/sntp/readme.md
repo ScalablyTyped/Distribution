@@ -12,7 +12,7 @@ SNTP Client
 | Keywords           | sntp, ntp, time |
 | # releases         | 2 |
 | # dependents       | 50 |
-| # downloads        | 158988361 |
+| # downloads        | 154090495 |
 | # stars            | 7 |
 
 ## Links

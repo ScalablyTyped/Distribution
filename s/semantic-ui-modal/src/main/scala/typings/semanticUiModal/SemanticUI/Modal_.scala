@@ -101,72 +101,69 @@ trait Modal_ extends js.Object {
     * Refreshes centering of modal on page
     */
   def apply(behavior: refresh): JQuery = js.native
-  def apply(behavior: setting, name: allowMultiple): Boolean = js.native
+  def apply(behavior: setting, name: allowMultiple, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: allowMultiple, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: autofocus): Boolean = js.native
+  def apply(behavior: setting, name: autofocus, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: autofocus, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: className): ClassNameSettings = js.native
-  def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def apply(behavior: setting, name: closable): Boolean = js.native
+  def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+  def apply(behavior: setting, name: closable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: closable, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: context): String | JQuery = js.native
+  def apply(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
   def apply(behavior: setting, name: context, value: String): JQuery = js.native
   def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
-  def apply(behavior: setting, name: debug): Boolean = js.native
+  def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: detachable): Boolean = js.native
+  def apply(behavior: setting, name: detachable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: detachable, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: dimmerSettings): DimmerSettings = js.native
-  def apply(behavior: setting, name: dimmerSettings, value: DimmerSettings): JQuery = js.native
-  def apply(behavior: setting, name: duration): Double = js.native
+  def apply(behavior: setting, name: dimmerSettings, value: js.UndefOr[scala.Nothing]): DimmerSettings = js.native
+  def apply(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
   def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def apply(behavior: setting, name: error): ErrorSettings = js.native
+  def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
   def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def apply(behavior: setting, name: keyboardShortcuts): Boolean = js.native
+  def apply(behavior: setting, name: keyboardShortcuts, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: keyboardShortcuts, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: name): String = js.native
-  def apply(behavior: setting, name: namespace): String = js.native
+  def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
   def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
   def apply(behavior: setting, name: name, value: String): JQuery = js.native
-  def apply(behavior: setting, name: observeChanges): Boolean = js.native
+  def apply(behavior: setting, name: observeChanges, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: offset): Double = js.native
+  def apply(behavior: setting, name: offset, value: js.UndefOr[scala.Nothing]): Double = js.native
   def apply(behavior: setting, name: offset, value: Double): JQuery = js.native
-  def apply(behavior: setting, name: onApprove): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
+  def apply(behavior: setting, name: onApprove, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
   def apply(
     behavior: setting,
     name: onApprove,
     value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onDeny): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
+  def apply(behavior: setting, name: onDeny, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
   def apply(
     behavior: setting,
     name: onDeny,
     value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onHidden): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def apply(behavior: setting, name: onHidden, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def apply(behavior: setting, name: onHidden, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def apply(behavior: setting, name: onHide): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
+  def apply(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
   def apply(
     behavior: setting,
     name: onHide,
     value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onShow): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def apply(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def apply(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def apply(behavior: setting, name: onVisible): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def apply(behavior: setting, name: onVisible, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def apply(behavior: setting, name: onVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def apply(behavior: setting, name: performance): Boolean = js.native
+  def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: queue): Boolean = js.native
+  def apply(behavior: setting, name: queue, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: queue, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: selector): SelectorSettings = js.native
-  def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def apply(behavior: setting, name: silent): Boolean = js.native
+  def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
+  def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: transition): String = js.native
+  def apply(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
   def apply(behavior: setting, name: transition, value: String): JQuery = js.native
-  def apply(behavior: setting, name: verbose): Boolean = js.native
+  def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: ModalSettings): JQuery = js.native
   /**

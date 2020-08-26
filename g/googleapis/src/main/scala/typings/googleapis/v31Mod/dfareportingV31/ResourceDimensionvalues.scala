@@ -30,6 +30,7 @@ class ResourceDimensionvalues protected () extends js.Object {
     */
   def query(): GaxiosPromise[SchemaDimensionValueList] = js.native
   def query(callback: BodyResponseCallback[SchemaDimensionValueList]): Unit = js.native
+  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDimensionValueList] = js.native
   def query(params: ParamsResourceDimensionvaluesQuery): GaxiosPromise[SchemaDimensionValueList] = js.native
   def query(
     params: ParamsResourceDimensionvaluesQuery,

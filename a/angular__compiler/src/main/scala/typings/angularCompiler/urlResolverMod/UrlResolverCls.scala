@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class UrlResolverCls () extends UrlResolver {
   def this(packagePrefix: String) = this()
-  /* CompleteClass */
-  override def resolve(baseUrl: String, url: String): String = js.native
 }
 

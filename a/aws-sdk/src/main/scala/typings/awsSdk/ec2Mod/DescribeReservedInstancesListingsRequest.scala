@@ -22,16 +22,36 @@ trait DescribeReservedInstancesListingsRequest extends js.Object {
 
 object DescribeReservedInstancesListingsRequest {
   @scala.inline
-  def apply(
-    Filters: FilterList = null,
-    ReservedInstancesId: ReservationId = null,
-    ReservedInstancesListingId: ReservedInstancesListingId = null
-  ): DescribeReservedInstancesListingsRequest = {
+  def apply(): DescribeReservedInstancesListingsRequest = {
     val __obj = js.Dynamic.literal()
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (ReservedInstancesId != null) __obj.updateDynamic("ReservedInstancesId")(ReservedInstancesId.asInstanceOf[js.Any])
-    if (ReservedInstancesListingId != null) __obj.updateDynamic("ReservedInstancesListingId")(ReservedInstancesListingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReservedInstancesListingsRequest]
   }
+  @scala.inline
+  implicit class DescribeReservedInstancesListingsRequestOps[Self <: DescribeReservedInstancesListingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setReservedInstancesId(value: ReservationId): Self = this.set("ReservedInstancesId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedInstancesId: Self = this.set("ReservedInstancesId", js.undefined)
+    @scala.inline
+    def setReservedInstancesListingId(value: ReservedInstancesListingId): Self = this.set("ReservedInstancesListingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedInstancesListingId: Self = this.set("ReservedInstancesListingId", js.undefined)
+  }
+  
 }
 

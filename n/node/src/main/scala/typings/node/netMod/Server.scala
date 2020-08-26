@@ -20,6 +20,7 @@ class Server ()
      with SendHandle {
   def this(connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
   def this(options: AllowHalfOpen) = this()
+  def this(options: js.UndefOr[scala.Nothing], connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
   def this(options: AllowHalfOpen, connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
   var connections: Double = js.native
   var listening: Boolean = js.native
@@ -46,19 +47,77 @@ class Server ()
   def getConnections(cb: js.Function2[/* error */ Error | Null, /* count */ Double, Unit]): Unit = js.native
   def listen(): this.type = js.native
   def listen(handle: js.Any): this.type = js.native
+  def listen(handle: js.Any, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
   def listen(handle: js.Any, backlog: Double): this.type = js.native
   def listen(handle: js.Any, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
   def listen(handle: js.Any, listeningListener: js.Function0[Unit]): this.type = js.native
   def listen(options: ListenOptions): this.type = js.native
   def listen(options: ListenOptions, listeningListener: js.Function0[Unit]): this.type = js.native
   def listen(path: String): this.type = js.native
+  def listen(path: String, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
   def listen(path: String, backlog: Double): this.type = js.native
   def listen(path: String, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
   def listen(path: String, listeningListener: js.Function0[Unit]): this.type = js.native
+  def listen(port: js.UndefOr[scala.Nothing], backlog: Double): this.type = js.native
+  def listen(port: js.UndefOr[scala.Nothing], backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+  def listen(
+    port: js.UndefOr[scala.Nothing],
+    hostname: js.UndefOr[scala.Nothing],
+    backlog: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): this.type = js.native
+  def listen(port: js.UndefOr[scala.Nothing], hostname: js.UndefOr[scala.Nothing], backlog: Double): this.type = js.native
+  def listen(
+    port: js.UndefOr[scala.Nothing],
+    hostname: js.UndefOr[scala.Nothing],
+    backlog: Double,
+    listeningListener: js.Function0[Unit]
+  ): this.type = js.native
+  def listen(
+    port: js.UndefOr[scala.Nothing],
+    hostname: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): this.type = js.native
+  def listen(port: js.UndefOr[scala.Nothing], hostname: String): this.type = js.native
+  def listen(
+    port: js.UndefOr[scala.Nothing],
+    hostname: String,
+    backlog: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): this.type = js.native
+  def listen(port: js.UndefOr[scala.Nothing], hostname: String, backlog: Double): this.type = js.native
+  def listen(
+    port: js.UndefOr[scala.Nothing],
+    hostname: String,
+    backlog: Double,
+    listeningListener: js.Function0[Unit]
+  ): this.type = js.native
+  def listen(port: js.UndefOr[scala.Nothing], hostname: String, listeningListener: js.Function0[Unit]): this.type = js.native
+  def listen(port: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
   def listen(port: Double): this.type = js.native
   def listen(port: Double, backlog: Double): this.type = js.native
   def listen(port: Double, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+  def listen(
+    port: Double,
+    hostname: js.UndefOr[scala.Nothing],
+    backlog: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): this.type = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): this.type = js.native
+  def listen(
+    port: Double,
+    hostname: js.UndefOr[scala.Nothing],
+    backlog: Double,
+    listeningListener: js.Function0[Unit]
+  ): this.type = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, hostname: String): this.type = js.native
+  def listen(
+    port: Double,
+    hostname: String,
+    backlog: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): this.type = js.native
   def listen(port: Double, hostname: String, backlog: Double): this.type = js.native
   def listen(port: Double, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, hostname: String, listeningListener: js.Function0[Unit]): this.type = js.native

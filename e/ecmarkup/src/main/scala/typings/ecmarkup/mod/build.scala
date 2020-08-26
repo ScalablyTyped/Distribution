@@ -16,6 +16,12 @@ object build extends js.Object {
   def apply(
     path: String,
     fetch: js.Function2[/* path */ String, /* token */ CancellationToken, js.Thenable[String]],
+    opts: js.UndefOr[scala.Nothing],
+    token: CancellationToken
+  ): js.Promise[Spec] = js.native
+  def apply(
+    path: String,
+    fetch: js.Function2[/* path */ String, /* token */ CancellationToken, js.Thenable[String]],
     opts: Options
   ): js.Promise[Spec] = js.native
   def apply(

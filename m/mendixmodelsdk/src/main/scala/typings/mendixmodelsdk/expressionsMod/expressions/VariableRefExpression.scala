@@ -57,18 +57,16 @@ class VariableRefExpression protected () extends Expression {
   ) = this()
   @JSName("model")
   var model_FVariableRefExpression: IModel = js.native
-  def member(): js.Any = js.native
-  def member(newValue: MemberRef): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
-  @JSName("member")
-  def member_Union: MemberRef | Null = js.native
+  def member: MemberRef | Null = js.native
+  def member_=(newValue: MemberRef | Null): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def variable: VariableRef = js.native
-  def variable(newValue: VariableRef): js.Any = js.native
+  def variable_=(newValue: VariableRef): Unit = js.native
 }
 
 /* static members */

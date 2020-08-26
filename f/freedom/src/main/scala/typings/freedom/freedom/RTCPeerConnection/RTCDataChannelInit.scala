@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RTCDataChannelInit extends js.Object {
-  var id: js.UndefOr[Double] = js.undefined
-  var maxPacketLifeTime: js.UndefOr[Double] = js.undefined
-  var maxRetransmits: js.UndefOr[Double] = js.undefined
-  var negotiated: js.UndefOr[Boolean] = js.undefined
-  var ordered: js.UndefOr[Boolean] = js.undefined
-  var protocol: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[Double] = js.native
+  var maxPacketLifeTime: js.UndefOr[Double] = js.native
+  var maxRetransmits: js.UndefOr[Double] = js.native
+  var negotiated: js.UndefOr[Boolean] = js.native
+  var ordered: js.UndefOr[Boolean] = js.native
+  var protocol: js.UndefOr[String] = js.native
 }
 
 object RTCDataChannelInit {
   @scala.inline
-  def apply(
-    id: js.UndefOr[Double] = js.undefined,
-    maxPacketLifeTime: js.UndefOr[Double] = js.undefined,
-    maxRetransmits: js.UndefOr[Double] = js.undefined,
-    negotiated: js.UndefOr[Boolean] = js.undefined,
-    ordered: js.UndefOr[Boolean] = js.undefined,
-    protocol: String = null
-  ): RTCDataChannelInit = {
+  def apply(): RTCDataChannelInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxPacketLifeTime)) __obj.updateDynamic("maxPacketLifeTime")(maxPacketLifeTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetransmits)) __obj.updateDynamic("maxRetransmits")(maxRetransmits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(negotiated)) __obj.updateDynamic("negotiated")(negotiated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.get.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDataChannelInit]
   }
+  @scala.inline
+  implicit class RTCDataChannelInitOps[Self <: RTCDataChannelInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setMaxPacketLifeTime(value: Double): Self = this.set("maxPacketLifeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPacketLifeTime: Self = this.set("maxPacketLifeTime", js.undefined)
+    @scala.inline
+    def setMaxRetransmits(value: Double): Self = this.set("maxRetransmits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRetransmits: Self = this.set("maxRetransmits", js.undefined)
+    @scala.inline
+    def setNegotiated(value: Boolean): Self = this.set("negotiated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegotiated: Self = this.set("negotiated", js.undefined)
+    @scala.inline
+    def setOrdered(value: Boolean): Self = this.set("ordered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrdered: Self = this.set("ordered", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+  }
+  
 }
 

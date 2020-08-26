@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/title", "Title")
+@JSImport("@lumino/widgets/types/title", "Title")
 @js.native
 class Title_[T] protected () extends js.Object {
   /**

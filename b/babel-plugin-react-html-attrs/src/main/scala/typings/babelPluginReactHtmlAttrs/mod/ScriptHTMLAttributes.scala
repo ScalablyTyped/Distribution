@@ -4,53 +4,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScriptHTMLAttributes[T] extends HTMLAttributes[T] {
-  var async: js.UndefOr[Boolean | String] = js.undefined
-  var charSet: js.UndefOr[String] = js.undefined
-  var charset: js.UndefOr[String] = js.undefined
-  var crossOrigin: js.UndefOr[String] = js.undefined
-  var crossorigin: js.UndefOr[String] = js.undefined
-  var defer: js.UndefOr[Boolean | String] = js.undefined
-  var integrity: js.UndefOr[String] = js.undefined
-  var noModule: js.UndefOr[Boolean] = js.undefined
-  var nomodule: js.UndefOr[Boolean | String] = js.undefined
-  var nonce: js.UndefOr[String] = js.undefined
-  var src: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var async: js.UndefOr[Boolean | String] = js.native
+  var charSet: js.UndefOr[String] = js.native
+  var charset: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.native
+  var crossorigin: js.UndefOr[String] = js.native
+  var defer: js.UndefOr[Boolean | String] = js.native
+  var integrity: js.UndefOr[String] = js.native
+  var noModule: js.UndefOr[Boolean] = js.native
+  var nomodule: js.UndefOr[Boolean | String] = js.native
+  var nonce: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object ScriptHTMLAttributes {
   @scala.inline
-  def apply[T](
-    HTMLAttributes: HTMLAttributes[T] = null,
-    async: Boolean | String = null,
-    charSet: String = null,
-    charset: String = null,
-    crossOrigin: String = null,
-    crossorigin: String = null,
-    defer: Boolean | String = null,
-    integrity: String = null,
-    noModule: js.UndefOr[Boolean] = js.undefined,
-    nomodule: Boolean | String = null,
-    nonce: String = null,
-    src: String = null,
-    `type`: String = null
-  ): ScriptHTMLAttributes[T] = {
+  def apply[T](): ScriptHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (async != null) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (charSet != null) __obj.updateDynamic("charSet")(charSet.asInstanceOf[js.Any])
-    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (crossorigin != null) __obj.updateDynamic("crossorigin")(crossorigin.asInstanceOf[js.Any])
-    if (defer != null) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (!js.isUndefined(noModule)) __obj.updateDynamic("noModule")(noModule.get.asInstanceOf[js.Any])
-    if (nomodule != null) __obj.updateDynamic("nomodule")(nomodule.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptHTMLAttributes[T]]
   }
+  @scala.inline
+  implicit class ScriptHTMLAttributesOps[Self <: ScriptHTMLAttributes[_], T] (val x: Self with ScriptHTMLAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsync(value: Boolean | String): Self = this.set("async", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsync: Self = this.set("async", js.undefined)
+    @scala.inline
+    def setCharSet(value: String): Self = this.set("charSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharSet: Self = this.set("charSet", js.undefined)
+    @scala.inline
+    def setCrossOrigin(value: String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    @scala.inline
+    def setDefer(value: Boolean | String): Self = this.set("defer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefer: Self = this.set("defer", js.undefined)
+    @scala.inline
+    def setIntegrity(value: String): Self = this.set("integrity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrity: Self = this.set("integrity", js.undefined)
+    @scala.inline
+    def setNoModule(value: Boolean): Self = this.set("noModule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoModule: Self = this.set("noModule", js.undefined)
+    @scala.inline
+    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonce: Self = this.set("nonce", js.undefined)
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrc: Self = this.set("src", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

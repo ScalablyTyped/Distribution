@@ -49,7 +49,7 @@ object bufferAttributeMod extends js.Object {
     def getX(index: Double): Double = js.native
     def getY(index: Double): Double = js.native
     def getZ(index: Double): Double = js.native
-    def needsUpdate(value: Boolean): js.Any = js.native
+    def needsUpdate_=(value: Boolean): Unit = js.native
     def onUpload(callback: js.Function0[Unit]): this.type = js.native
     def onUploadCallback(): Unit = js.native
     def set(value: ArrayBufferView): this.type = js.native

@@ -126,68 +126,156 @@ trait Service extends js.Object {
 
 object Service {
   @scala.inline
-  def apply(
-    capacityProviderStrategy: CapacityProviderStrategy = null,
-    clusterArn: String = null,
-    createdAt: Timestamp = null,
-    createdBy: String = null,
-    deploymentConfiguration: DeploymentConfiguration = null,
-    deploymentController: DeploymentController = null,
-    deployments: Deployments = null,
-    desiredCount: js.UndefOr[Integer] = js.undefined,
-    enableECSManagedTags: js.UndefOr[Boolean] = js.undefined,
-    events: ServiceEvents = null,
-    healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.undefined,
-    launchType: LaunchType = null,
-    loadBalancers: LoadBalancers = null,
-    networkConfiguration: NetworkConfiguration = null,
-    pendingCount: js.UndefOr[Integer] = js.undefined,
-    placementConstraints: PlacementConstraints = null,
-    placementStrategy: PlacementStrategies = null,
-    platformVersion: String = null,
-    propagateTags: PropagateTags = null,
-    roleArn: String = null,
-    runningCount: js.UndefOr[Integer] = js.undefined,
-    schedulingStrategy: SchedulingStrategy = null,
-    serviceArn: String = null,
-    serviceName: String = null,
-    serviceRegistries: ServiceRegistries = null,
-    status: String = null,
-    tags: Tags = null,
-    taskDefinition: String = null,
-    taskSets: TaskSets = null
-  ): Service = {
+  def apply(): Service = {
     val __obj = js.Dynamic.literal()
-    if (capacityProviderStrategy != null) __obj.updateDynamic("capacityProviderStrategy")(capacityProviderStrategy.asInstanceOf[js.Any])
-    if (clusterArn != null) __obj.updateDynamic("clusterArn")(clusterArn.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy.asInstanceOf[js.Any])
-    if (deploymentConfiguration != null) __obj.updateDynamic("deploymentConfiguration")(deploymentConfiguration.asInstanceOf[js.Any])
-    if (deploymentController != null) __obj.updateDynamic("deploymentController")(deploymentController.asInstanceOf[js.Any])
-    if (deployments != null) __obj.updateDynamic("deployments")(deployments.asInstanceOf[js.Any])
-    if (!js.isUndefined(desiredCount)) __obj.updateDynamic("desiredCount")(desiredCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableECSManagedTags)) __obj.updateDynamic("enableECSManagedTags")(enableECSManagedTags.get.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (!js.isUndefined(healthCheckGracePeriodSeconds)) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds.get.asInstanceOf[js.Any])
-    if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
-    if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
-    if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(pendingCount)) __obj.updateDynamic("pendingCount")(pendingCount.get.asInstanceOf[js.Any])
-    if (placementConstraints != null) __obj.updateDynamic("placementConstraints")(placementConstraints.asInstanceOf[js.Any])
-    if (placementStrategy != null) __obj.updateDynamic("placementStrategy")(placementStrategy.asInstanceOf[js.Any])
-    if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
-    if (propagateTags != null) __obj.updateDynamic("propagateTags")(propagateTags.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(runningCount)) __obj.updateDynamic("runningCount")(runningCount.get.asInstanceOf[js.Any])
-    if (schedulingStrategy != null) __obj.updateDynamic("schedulingStrategy")(schedulingStrategy.asInstanceOf[js.Any])
-    if (serviceArn != null) __obj.updateDynamic("serviceArn")(serviceArn.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (serviceRegistries != null) __obj.updateDynamic("serviceRegistries")(serviceRegistries.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (taskDefinition != null) __obj.updateDynamic("taskDefinition")(taskDefinition.asInstanceOf[js.Any])
-    if (taskSets != null) __obj.updateDynamic("taskSets")(taskSets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
+  @scala.inline
+  implicit class ServiceOps[Self <: Service] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = this.set("capacityProviderStrategy", js.Array(value :_*))
+    @scala.inline
+    def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = this.set("capacityProviderStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityProviderStrategy: Self = this.set("capacityProviderStrategy", js.undefined)
+    @scala.inline
+    def setClusterArn(value: String): Self = this.set("clusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterArn: Self = this.set("clusterArn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setCreatedBy(value: String): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBy: Self = this.set("createdBy", js.undefined)
+    @scala.inline
+    def setDeploymentConfiguration(value: DeploymentConfiguration): Self = this.set("deploymentConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentConfiguration: Self = this.set("deploymentConfiguration", js.undefined)
+    @scala.inline
+    def setDeploymentController(value: DeploymentController): Self = this.set("deploymentController", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentController: Self = this.set("deploymentController", js.undefined)
+    @scala.inline
+    def setDeploymentsVarargs(value: Deployment*): Self = this.set("deployments", js.Array(value :_*))
+    @scala.inline
+    def setDeployments(value: Deployments): Self = this.set("deployments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployments: Self = this.set("deployments", js.undefined)
+    @scala.inline
+    def setDesiredCount(value: Integer): Self = this.set("desiredCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredCount: Self = this.set("desiredCount", js.undefined)
+    @scala.inline
+    def setEnableECSManagedTags(value: Boolean): Self = this.set("enableECSManagedTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableECSManagedTags: Self = this.set("enableECSManagedTags", js.undefined)
+    @scala.inline
+    def setEventsVarargs(value: ServiceEvent*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: ServiceEvents): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setHealthCheckGracePeriodSeconds(value: BoxedInteger): Self = this.set("healthCheckGracePeriodSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckGracePeriodSeconds: Self = this.set("healthCheckGracePeriodSeconds", js.undefined)
+    @scala.inline
+    def setLaunchType(value: LaunchType): Self = this.set("launchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchType: Self = this.set("launchType", js.undefined)
+    @scala.inline
+    def setLoadBalancersVarargs(value: LoadBalancer*): Self = this.set("loadBalancers", js.Array(value :_*))
+    @scala.inline
+    def setLoadBalancers(value: LoadBalancers): Self = this.set("loadBalancers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancers: Self = this.set("loadBalancers", js.undefined)
+    @scala.inline
+    def setNetworkConfiguration(value: NetworkConfiguration): Self = this.set("networkConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkConfiguration: Self = this.set("networkConfiguration", js.undefined)
+    @scala.inline
+    def setPendingCount(value: Integer): Self = this.set("pendingCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingCount: Self = this.set("pendingCount", js.undefined)
+    @scala.inline
+    def setPlacementConstraintsVarargs(value: PlacementConstraint*): Self = this.set("placementConstraints", js.Array(value :_*))
+    @scala.inline
+    def setPlacementConstraints(value: PlacementConstraints): Self = this.set("placementConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementConstraints: Self = this.set("placementConstraints", js.undefined)
+    @scala.inline
+    def setPlacementStrategyVarargs(value: PlacementStrategy*): Self = this.set("placementStrategy", js.Array(value :_*))
+    @scala.inline
+    def setPlacementStrategy(value: PlacementStrategies): Self = this.set("placementStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementStrategy: Self = this.set("placementStrategy", js.undefined)
+    @scala.inline
+    def setPlatformVersion(value: String): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
+    @scala.inline
+    def setPropagateTags(value: PropagateTags): Self = this.set("propagateTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropagateTags: Self = this.set("propagateTags", js.undefined)
+    @scala.inline
+    def setRoleArn(value: String): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    @scala.inline
+    def setRunningCount(value: Integer): Self = this.set("runningCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunningCount: Self = this.set("runningCount", js.undefined)
+    @scala.inline
+    def setSchedulingStrategy(value: SchedulingStrategy): Self = this.set("schedulingStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedulingStrategy: Self = this.set("schedulingStrategy", js.undefined)
+    @scala.inline
+    def setServiceArn(value: String): Self = this.set("serviceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceArn: Self = this.set("serviceArn", js.undefined)
+    @scala.inline
+    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    @scala.inline
+    def setServiceRegistriesVarargs(value: ServiceRegistry*): Self = this.set("serviceRegistries", js.Array(value :_*))
+    @scala.inline
+    def setServiceRegistries(value: ServiceRegistries): Self = this.set("serviceRegistries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRegistries: Self = this.set("serviceRegistries", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTaskDefinition(value: String): Self = this.set("taskDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskDefinition: Self = this.set("taskDefinition", js.undefined)
+    @scala.inline
+    def setTaskSetsVarargs(value: TaskSet*): Self = this.set("taskSets", js.Array(value :_*))
+    @scala.inline
+    def setTaskSets(value: TaskSets): Self = this.set("taskSets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskSets: Self = this.set("taskSets", js.undefined)
+  }
+  
 }
 

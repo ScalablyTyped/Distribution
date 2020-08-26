@@ -26,18 +26,38 @@ trait DataRepositoryTaskStatus extends js.Object {
 
 object DataRepositoryTaskStatus {
   @scala.inline
-  def apply(
-    FailedCount: js.UndefOr[FailedCount] = js.undefined,
-    LastUpdatedTime: LastUpdatedTime = null,
-    SucceededCount: js.UndefOr[SucceededCount] = js.undefined,
-    TotalCount: js.UndefOr[TotalCount] = js.undefined
-  ): DataRepositoryTaskStatus = {
+  def apply(): DataRepositoryTaskStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FailedCount)) __obj.updateDynamic("FailedCount")(FailedCount.get.asInstanceOf[js.Any])
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(SucceededCount)) __obj.updateDynamic("SucceededCount")(SucceededCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRepositoryTaskStatus]
   }
+  @scala.inline
+  implicit class DataRepositoryTaskStatusOps[Self <: DataRepositoryTaskStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailedCount(value: FailedCount): Self = this.set("FailedCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedCount: Self = this.set("FailedCount", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: LastUpdatedTime): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    @scala.inline
+    def setSucceededCount(value: SucceededCount): Self = this.set("SucceededCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSucceededCount: Self = this.set("SucceededCount", js.undefined)
+    @scala.inline
+    def setTotalCount(value: TotalCount): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
+  }
+  
 }
 

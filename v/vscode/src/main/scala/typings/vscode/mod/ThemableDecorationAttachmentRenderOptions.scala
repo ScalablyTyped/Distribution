@@ -4,88 +4,125 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThemableDecorationAttachmentRenderOptions extends js.Object {
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var backgroundColor: js.UndefOr[String | ThemeColor] = js.undefined
+  var backgroundColor: js.UndefOr[String | ThemeColor] = js.native
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var border: js.UndefOr[String] = js.undefined
+  var border: js.UndefOr[String] = js.native
   /**
     * CSS styling property that will be applied to text enclosed by a decoration.
     */
-  var borderColor: js.UndefOr[String | ThemeColor] = js.undefined
+  var borderColor: js.UndefOr[String | ThemeColor] = js.native
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var color: js.UndefOr[String | ThemeColor] = js.undefined
+  var color: js.UndefOr[String | ThemeColor] = js.native
   /**
     * An **absolute path** or an URI to an image to be rendered in the attachment. Either an icon
     * or a text can be shown, but not both.
     */
-  var contentIconPath: js.UndefOr[String | Uri] = js.undefined
+  var contentIconPath: js.UndefOr[String | Uri] = js.native
   /**
     * Defines a text content that is shown in the attachment. Either an icon or a text can be shown, but not both.
     */
-  var contentText: js.UndefOr[String] = js.undefined
+  var contentText: js.UndefOr[String] = js.native
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var fontStyle: js.UndefOr[String] = js.undefined
+  var fontStyle: js.UndefOr[String] = js.native
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var fontWeight: js.UndefOr[String] = js.undefined
+  var fontWeight: js.UndefOr[String] = js.native
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var height: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[String] = js.native
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var margin: js.UndefOr[String] = js.undefined
+  var margin: js.UndefOr[String] = js.native
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var textDecoration: js.UndefOr[String] = js.undefined
+  var textDecoration: js.UndefOr[String] = js.native
   /**
     * CSS styling property that will be applied to the decoration attachment.
     */
-  var width: js.UndefOr[String] = js.undefined
+  var width: js.UndefOr[String] = js.native
 }
 
 object ThemableDecorationAttachmentRenderOptions {
   @scala.inline
-  def apply(
-    backgroundColor: String | ThemeColor = null,
-    border: String = null,
-    borderColor: String | ThemeColor = null,
-    color: String | ThemeColor = null,
-    contentIconPath: String | Uri = null,
-    contentText: String = null,
-    fontStyle: String = null,
-    fontWeight: String = null,
-    height: String = null,
-    margin: String = null,
-    textDecoration: String = null,
-    width: String = null
-  ): ThemableDecorationAttachmentRenderOptions = {
+  def apply(): ThemableDecorationAttachmentRenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (contentIconPath != null) __obj.updateDynamic("contentIconPath")(contentIconPath.asInstanceOf[js.Any])
-    if (contentText != null) __obj.updateDynamic("contentText")(contentText.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemableDecorationAttachmentRenderOptions]
   }
+  @scala.inline
+  implicit class ThemableDecorationAttachmentRenderOptionsOps[Self <: ThemableDecorationAttachmentRenderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: String | ThemeColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorder(value: String): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setBorderColor(value: String | ThemeColor): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setColor(value: String | ThemeColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setContentIconPath(value: String | Uri): Self = this.set("contentIconPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentIconPath: Self = this.set("contentIconPath", js.undefined)
+    @scala.inline
+    def setContentText(value: String): Self = this.set("contentText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentText: Self = this.set("contentText", js.undefined)
+    @scala.inline
+    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    @scala.inline
+    def setFontWeight(value: String): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setMargin(value: String): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setTextDecoration(value: String): Self = this.set("textDecoration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextDecoration: Self = this.set("textDecoration", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

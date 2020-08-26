@@ -4,35 +4,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PublishAdvancedOptions extends AdvancedOptions {
-  var eligible_authid: js.UndefOr[String | js.Array[String]] = js.undefined
-  var eligible_authrole: js.UndefOr[String | js.Array[String]] = js.undefined
-  var exclude_authid: js.UndefOr[String | js.Array[String]] = js.undefined
-  var exclude_authrole: js.UndefOr[String | js.Array[String]] = js.undefined
+  var eligible_authid: js.UndefOr[String | js.Array[String]] = js.native
+  var eligible_authrole: js.UndefOr[String | js.Array[String]] = js.native
+  var exclude_authid: js.UndefOr[String | js.Array[String]] = js.native
+  var exclude_authrole: js.UndefOr[String | js.Array[String]] = js.native
 }
 
 object PublishAdvancedOptions {
   @scala.inline
-  def apply(
-    disclose_me: js.UndefOr[Boolean] = js.undefined,
-    eligible: Double | js.Array[Double] = null,
-    eligible_authid: String | js.Array[String] = null,
-    eligible_authrole: String | js.Array[String] = null,
-    exclude: Double | js.Array[Double] = null,
-    exclude_authid: String | js.Array[String] = null,
-    exclude_authrole: String | js.Array[String] = null,
-    exclude_me: js.UndefOr[Boolean] = js.undefined
-  ): PublishAdvancedOptions = {
+  def apply(): PublishAdvancedOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disclose_me)) __obj.updateDynamic("disclose_me")(disclose_me.get.asInstanceOf[js.Any])
-    if (eligible != null) __obj.updateDynamic("eligible")(eligible.asInstanceOf[js.Any])
-    if (eligible_authid != null) __obj.updateDynamic("eligible_authid")(eligible_authid.asInstanceOf[js.Any])
-    if (eligible_authrole != null) __obj.updateDynamic("eligible_authrole")(eligible_authrole.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (exclude_authid != null) __obj.updateDynamic("exclude_authid")(exclude_authid.asInstanceOf[js.Any])
-    if (exclude_authrole != null) __obj.updateDynamic("exclude_authrole")(exclude_authrole.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclude_me)) __obj.updateDynamic("exclude_me")(exclude_me.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishAdvancedOptions]
   }
+  @scala.inline
+  implicit class PublishAdvancedOptionsOps[Self <: PublishAdvancedOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEligible_authidVarargs(value: String*): Self = this.set("eligible_authid", js.Array(value :_*))
+    @scala.inline
+    def setEligible_authid(value: String | js.Array[String]): Self = this.set("eligible_authid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEligible_authid: Self = this.set("eligible_authid", js.undefined)
+    @scala.inline
+    def setEligible_authroleVarargs(value: String*): Self = this.set("eligible_authrole", js.Array(value :_*))
+    @scala.inline
+    def setEligible_authrole(value: String | js.Array[String]): Self = this.set("eligible_authrole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEligible_authrole: Self = this.set("eligible_authrole", js.undefined)
+    @scala.inline
+    def setExclude_authidVarargs(value: String*): Self = this.set("exclude_authid", js.Array(value :_*))
+    @scala.inline
+    def setExclude_authid(value: String | js.Array[String]): Self = this.set("exclude_authid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclude_authid: Self = this.set("exclude_authid", js.undefined)
+    @scala.inline
+    def setExclude_authroleVarargs(value: String*): Self = this.set("exclude_authrole", js.Array(value :_*))
+    @scala.inline
+    def setExclude_authrole(value: String | js.Array[String]): Self = this.set("exclude_authrole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclude_authrole: Self = this.set("exclude_authrole", js.undefined)
+  }
+  
 }
 

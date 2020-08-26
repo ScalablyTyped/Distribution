@@ -12,7 +12,7 @@ A general purpose buffer pool.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 29 |
-| # downloads        | 54376590 |
+| # downloads        | 57676305 |
 | # stars            | 0 |
 
 ## Links

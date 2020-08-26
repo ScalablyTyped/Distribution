@@ -12,6 +12,7 @@ object filteringParametersMod extends js.Object {
   class FilteringParameters ()
     extends Hash[js.Any] {
     def this(count: Double) = this()
+    def this(count: js.UndefOr[scala.Nothing], offset: Double) = this()
     def this(count: Double, offset: Double) = this()
     var count: js.UndefOr[Double] = js.native
     var offset: js.UndefOr[Double] = js.native

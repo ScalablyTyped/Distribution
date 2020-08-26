@@ -63,7 +63,7 @@ trait ComputeEnvironmentComputeResources extends js.Object {
   /**
     * Key-value pair tags to be applied to resources that are launched in the compute environment.
     */
-  var tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  var tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The type of compute environment. Valid items are `EC2` or `SPOT`.
     */
@@ -79,27 +79,76 @@ object ComputeEnvironmentComputeResources {
     minVcpus: Input[Double],
     securityGroupIds: Input[js.Array[Input[String]]],
     subnets: Input[js.Array[Input[String]]],
-    `type`: Input[String],
-    allocationStrategy: Input[String] = null,
-    bidPercentage: Input[Double] = null,
-    desiredVcpus: Input[Double] = null,
-    ec2KeyPair: Input[String] = null,
-    imageId: Input[String] = null,
-    launchTemplate: Input[ComputeEnvironmentComputeResourcesLaunchTemplate] = null,
-    spotIamFleetRole: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
+    `type`: Input[String]
   ): ComputeEnvironmentComputeResources = {
     val __obj = js.Dynamic.literal(instanceRole = instanceRole.asInstanceOf[js.Any], instanceTypes = instanceTypes.asInstanceOf[js.Any], maxVcpus = maxVcpus.asInstanceOf[js.Any], minVcpus = minVcpus.asInstanceOf[js.Any], securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnets = subnets.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
-    if (bidPercentage != null) __obj.updateDynamic("bidPercentage")(bidPercentage.asInstanceOf[js.Any])
-    if (desiredVcpus != null) __obj.updateDynamic("desiredVcpus")(desiredVcpus.asInstanceOf[js.Any])
-    if (ec2KeyPair != null) __obj.updateDynamic("ec2KeyPair")(ec2KeyPair.asInstanceOf[js.Any])
-    if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
-    if (launchTemplate != null) __obj.updateDynamic("launchTemplate")(launchTemplate.asInstanceOf[js.Any])
-    if (spotIamFleetRole != null) __obj.updateDynamic("spotIamFleetRole")(spotIamFleetRole.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeEnvironmentComputeResources]
   }
+  @scala.inline
+  implicit class ComputeEnvironmentComputeResourcesOps[Self <: ComputeEnvironmentComputeResources] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceRole(value: Input[String]): Self = this.set("instanceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceTypesVarargs(value: Input[String]*): Self = this.set("instanceTypes", js.Array(value :_*))
+    @scala.inline
+    def setInstanceTypes(value: Input[js.Array[Input[String]]]): Self = this.set("instanceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxVcpus(value: Input[Double]): Self = this.set("maxVcpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinVcpus(value: Input[Double]): Self = this.set("minVcpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetsVarargs(value: Input[String]*): Self = this.set("subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: Input[js.Array[Input[String]]]): Self = this.set("subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllocationStrategy(value: Input[String]): Self = this.set("allocationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationStrategy: Self = this.set("allocationStrategy", js.undefined)
+    @scala.inline
+    def setBidPercentage(value: Input[Double]): Self = this.set("bidPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBidPercentage: Self = this.set("bidPercentage", js.undefined)
+    @scala.inline
+    def setDesiredVcpus(value: Input[Double]): Self = this.set("desiredVcpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredVcpus: Self = this.set("desiredVcpus", js.undefined)
+    @scala.inline
+    def setEc2KeyPair(value: Input[String]): Self = this.set("ec2KeyPair", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2KeyPair: Self = this.set("ec2KeyPair", js.undefined)
+    @scala.inline
+    def setImageId(value: Input[String]): Self = this.set("imageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageId: Self = this.set("imageId", js.undefined)
+    @scala.inline
+    def setLaunchTemplate(value: Input[ComputeEnvironmentComputeResourcesLaunchTemplate]): Self = this.set("launchTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplate: Self = this.set("launchTemplate", js.undefined)
+    @scala.inline
+    def setSpotIamFleetRole(value: Input[String]): Self = this.set("spotIamFleetRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotIamFleetRole: Self = this.set("spotIamFleetRole", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -25,12 +25,34 @@ trait SchemaSuperStickerMetadata extends js.Object {
 
 object SchemaSuperStickerMetadata {
   @scala.inline
-  def apply(altText: String = null, altTextLanguage: String = null, stickerId: String = null): SchemaSuperStickerMetadata = {
+  def apply(): SchemaSuperStickerMetadata = {
     val __obj = js.Dynamic.literal()
-    if (altText != null) __obj.updateDynamic("altText")(altText.asInstanceOf[js.Any])
-    if (altTextLanguage != null) __obj.updateDynamic("altTextLanguage")(altTextLanguage.asInstanceOf[js.Any])
-    if (stickerId != null) __obj.updateDynamic("stickerId")(stickerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSuperStickerMetadata]
   }
+  @scala.inline
+  implicit class SchemaSuperStickerMetadataOps[Self <: SchemaSuperStickerMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltText(value: String): Self = this.set("altText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltText: Self = this.set("altText", js.undefined)
+    @scala.inline
+    def setAltTextLanguage(value: String): Self = this.set("altTextLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltTextLanguage: Self = this.set("altTextLanguage", js.undefined)
+    @scala.inline
+    def setStickerId(value: String): Self = this.set("stickerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStickerId: Self = this.set("stickerId", js.undefined)
+  }
+  
 }
 

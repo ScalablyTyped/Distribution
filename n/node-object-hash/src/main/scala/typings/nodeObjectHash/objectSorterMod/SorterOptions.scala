@@ -7,39 +7,58 @@ import scala.scalajs.js.annotation._
 /**
   * Object sorter options
   */
+@js.native
 trait SorterOptions extends js.Object {
   /**
     * If `true` enables type coercion.
     * Advanced coerce options could be provided as object
     * @default true
     */
-  var coerce: js.UndefOr[Boolean | CoerceOptions] = js.undefined
+  var coerce: js.UndefOr[Boolean | CoerceOptions] = js.native
   /**
     * If `true` enables sorting.
     * Advanced sorting options could be provided as object
     * @default true
     */
-  var sort: js.UndefOr[Boolean | SortOptions] = js.undefined
+  var sort: js.UndefOr[Boolean | SortOptions] = js.native
   /**
     * If `true` enables trimming and multiple whitespace replacement.
     * Advanced sorting options could be provided as object.
     * @default false
     */
-  var trim: js.UndefOr[Boolean | TrimOptions] = js.undefined
+  var trim: js.UndefOr[Boolean | TrimOptions] = js.native
 }
 
 object SorterOptions {
   @scala.inline
-  def apply(
-    coerce: Boolean | CoerceOptions = null,
-    sort: Boolean | SortOptions = null,
-    trim: Boolean | TrimOptions = null
-  ): SorterOptions = {
+  def apply(): SorterOptions = {
     val __obj = js.Dynamic.literal()
-    if (coerce != null) __obj.updateDynamic("coerce")(coerce.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (trim != null) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[SorterOptions]
   }
+  @scala.inline
+  implicit class SorterOptionsOps[Self <: SorterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoerce(value: Boolean | CoerceOptions): Self = this.set("coerce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoerce: Self = this.set("coerce", js.undefined)
+    @scala.inline
+    def setSort(value: Boolean | SortOptions): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setTrim(value: Boolean | TrimOptions): Self = this.set("trim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrim: Self = this.set("trim", js.undefined)
+  }
+  
 }
 

@@ -107,46 +107,96 @@ trait SchemaEventTag extends js.Object {
 
 object SchemaEventTag {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    advertiserId: String = null,
-    advertiserIdDimensionValue: SchemaDimensionValue = null,
-    campaignId: String = null,
-    campaignIdDimensionValue: SchemaDimensionValue = null,
-    enabledByDefault: js.UndefOr[Boolean] = js.undefined,
-    excludeFromAdxRequests: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    kind: String = null,
-    name: String = null,
-    siteFilterType: String = null,
-    siteIds: js.Array[String] = null,
-    sslCompliant: js.UndefOr[Boolean] = js.undefined,
-    status: String = null,
-    subaccountId: String = null,
-    `type`: String = null,
-    url: String = null,
-    urlEscapeLevels: js.UndefOr[Double] = js.undefined
-  ): SchemaEventTag = {
+  def apply(): SchemaEventTag = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue.asInstanceOf[js.Any])
-    if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId.asInstanceOf[js.Any])
-    if (campaignIdDimensionValue != null) __obj.updateDynamic("campaignIdDimensionValue")(campaignIdDimensionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabledByDefault)) __obj.updateDynamic("enabledByDefault")(enabledByDefault.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeFromAdxRequests)) __obj.updateDynamic("excludeFromAdxRequests")(excludeFromAdxRequests.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (siteFilterType != null) __obj.updateDynamic("siteFilterType")(siteFilterType.asInstanceOf[js.Any])
-    if (siteIds != null) __obj.updateDynamic("siteIds")(siteIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(urlEscapeLevels)) __obj.updateDynamic("urlEscapeLevels")(urlEscapeLevels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEventTag]
   }
+  @scala.inline
+  implicit class SchemaEventTagOps[Self <: SchemaEventTag] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setAdvertiserIdDimensionValue(value: SchemaDimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    @scala.inline
+    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    @scala.inline
+    def setCampaignIdDimensionValue(value: SchemaDimensionValue): Self = this.set("campaignIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignIdDimensionValue: Self = this.set("campaignIdDimensionValue", js.undefined)
+    @scala.inline
+    def setEnabledByDefault(value: Boolean): Self = this.set("enabledByDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledByDefault: Self = this.set("enabledByDefault", js.undefined)
+    @scala.inline
+    def setExcludeFromAdxRequests(value: Boolean): Self = this.set("excludeFromAdxRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeFromAdxRequests: Self = this.set("excludeFromAdxRequests", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSiteFilterType(value: String): Self = this.set("siteFilterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteFilterType: Self = this.set("siteFilterType", js.undefined)
+    @scala.inline
+    def setSiteIdsVarargs(value: String*): Self = this.set("siteIds", js.Array(value :_*))
+    @scala.inline
+    def setSiteIds(value: js.Array[String]): Self = this.set("siteIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteIds: Self = this.set("siteIds", js.undefined)
+    @scala.inline
+    def setSslCompliant(value: Boolean): Self = this.set("sslCompliant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslCompliant: Self = this.set("sslCompliant", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUrlEscapeLevels(value: Double): Self = this.set("urlEscapeLevels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlEscapeLevels: Self = this.set("urlEscapeLevels", js.undefined)
+  }
+  
 }
 

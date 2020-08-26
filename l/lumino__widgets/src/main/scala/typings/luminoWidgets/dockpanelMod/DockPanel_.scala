@@ -16,7 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/dockpanel", "DockPanel")
+@JSImport("@lumino/widgets/types/dockpanel", "DockPanel")
 @js.native
 /**
   * Construct a new dock panel.

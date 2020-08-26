@@ -31,6 +31,7 @@ class ResourceProjectsBrokersV2Catalog protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1ListCatalogResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1alpha1ListCatalogResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1ListCatalogResponse] = js.native
   def list(params: ParamsResourceProjectsBrokersV2CatalogList): GaxiosPromise[SchemaGoogleCloudServicebrokerV1alpha1ListCatalogResponse] = js.native
   def list(
     params: ParamsResourceProjectsBrokersV2CatalogList,

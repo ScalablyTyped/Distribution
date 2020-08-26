@@ -12,7 +12,7 @@ Simple helper for sub-classing the Error object
 | Keywords           | errors |
 | # releases         | 0 |
 | # dependents       | 70 |
-| # downloads        | 4029326 |
+| # downloads        | 4121514 |
 | # stars            | 2 |
 
 ## Links

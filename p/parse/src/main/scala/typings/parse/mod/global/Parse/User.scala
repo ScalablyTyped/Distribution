@@ -43,6 +43,7 @@ trait User[T /* <: Attributes */] extends Object[T] {
   def setUsername(username: String): Boolean = js.native
   def setUsername(username: String, options: SuccessFailureOptions): Boolean = js.native
   def signUp(): js.Promise[this.type] = js.native
+  def signUp(attrs: js.UndefOr[scala.Nothing], options: SignUpOptions): js.Promise[this.type] = js.native
   def signUp(attrs: js.Any): js.Promise[this.type] = js.native
   def signUp(attrs: js.Any, options: SignUpOptions): js.Promise[this.type] = js.native
 }

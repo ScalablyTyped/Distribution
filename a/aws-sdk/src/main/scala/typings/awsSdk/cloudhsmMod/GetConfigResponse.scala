@@ -22,12 +22,34 @@ trait GetConfigResponse extends js.Object {
 
 object GetConfigResponse {
   @scala.inline
-  def apply(ConfigCred: String = null, ConfigFile: String = null, ConfigType: String = null): GetConfigResponse = {
+  def apply(): GetConfigResponse = {
     val __obj = js.Dynamic.literal()
-    if (ConfigCred != null) __obj.updateDynamic("ConfigCred")(ConfigCred.asInstanceOf[js.Any])
-    if (ConfigFile != null) __obj.updateDynamic("ConfigFile")(ConfigFile.asInstanceOf[js.Any])
-    if (ConfigType != null) __obj.updateDynamic("ConfigType")(ConfigType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConfigResponse]
   }
+  @scala.inline
+  implicit class GetConfigResponseOps[Self <: GetConfigResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigCred(value: String): Self = this.set("ConfigCred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigCred: Self = this.set("ConfigCred", js.undefined)
+    @scala.inline
+    def setConfigFile(value: String): Self = this.set("ConfigFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigFile: Self = this.set("ConfigFile", js.undefined)
+    @scala.inline
+    def setConfigType(value: String): Self = this.set("ConfigType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigType: Self = this.set("ConfigType", js.undefined)
+  }
+  
 }
 

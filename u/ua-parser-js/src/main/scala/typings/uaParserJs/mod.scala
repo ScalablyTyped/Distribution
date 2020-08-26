@@ -19,6 +19,7 @@ object mod extends js.Object {
     */
   class UAParser () extends js.Object {
     def this(uastring: String) = this()
+    def this(uastring: js.UndefOr[scala.Nothing], extensions: js.Any) = this()
     def this(uastring: String, extensions: js.Any) = this()
     /**
       *  Returns browser information

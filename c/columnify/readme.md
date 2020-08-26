@@ -11,8 +11,8 @@ Render data in text columns. Supports in-column text-wrap.
 | Full name          | columnify |
 | Keywords           | column, text, ansi, console, terminal, wrap, table |
 | # releases         | 1 |
-| # dependents       | 403 |
-| # downloads        | 43259425 |
+| # dependents       | 408 |
+| # downloads        | 44334602 |
 | # stars            | 23 |
 
 ## Links

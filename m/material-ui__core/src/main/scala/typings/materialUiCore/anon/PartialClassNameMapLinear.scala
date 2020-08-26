@@ -29,46 +29,94 @@ trait PartialClassNameMapLinear extends js.Object {
 
 object PartialClassNameMapLinear {
   @scala.inline
-  def apply(
-    bar: String = null,
-    bar1Buffer: String = null,
-    bar1Determinate: String = null,
-    bar1Indeterminate: String = null,
-    bar2Buffer: String = null,
-    bar2Indeterminate: String = null,
-    barColorPrimary: String = null,
-    barColorSecondary: String = null,
-    buffer: String = null,
-    colorPrimary: String = null,
-    colorSecondary: String = null,
-    dashed: String = null,
-    dashedColorPrimary: String = null,
-    dashedColorSecondary: String = null,
-    determinate: String = null,
-    indeterminate: String = null,
-    query: String = null,
-    root: String = null
-  ): PartialClassNameMapLinear = {
+  def apply(): PartialClassNameMapLinear = {
     val __obj = js.Dynamic.literal()
-    if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
-    if (bar1Buffer != null) __obj.updateDynamic("bar1Buffer")(bar1Buffer.asInstanceOf[js.Any])
-    if (bar1Determinate != null) __obj.updateDynamic("bar1Determinate")(bar1Determinate.asInstanceOf[js.Any])
-    if (bar1Indeterminate != null) __obj.updateDynamic("bar1Indeterminate")(bar1Indeterminate.asInstanceOf[js.Any])
-    if (bar2Buffer != null) __obj.updateDynamic("bar2Buffer")(bar2Buffer.asInstanceOf[js.Any])
-    if (bar2Indeterminate != null) __obj.updateDynamic("bar2Indeterminate")(bar2Indeterminate.asInstanceOf[js.Any])
-    if (barColorPrimary != null) __obj.updateDynamic("barColorPrimary")(barColorPrimary.asInstanceOf[js.Any])
-    if (barColorSecondary != null) __obj.updateDynamic("barColorSecondary")(barColorSecondary.asInstanceOf[js.Any])
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
-    if (dashed != null) __obj.updateDynamic("dashed")(dashed.asInstanceOf[js.Any])
-    if (dashedColorPrimary != null) __obj.updateDynamic("dashedColorPrimary")(dashedColorPrimary.asInstanceOf[js.Any])
-    if (dashedColorSecondary != null) __obj.updateDynamic("dashedColorSecondary")(dashedColorSecondary.asInstanceOf[js.Any])
-    if (determinate != null) __obj.updateDynamic("determinate")(determinate.asInstanceOf[js.Any])
-    if (indeterminate != null) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapLinear]
   }
+  @scala.inline
+  implicit class PartialClassNameMapLinearOps[Self <: PartialClassNameMapLinear] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBar(value: String): Self = this.set("bar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBar: Self = this.set("bar", js.undefined)
+    @scala.inline
+    def setBar1Buffer(value: String): Self = this.set("bar1Buffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBar1Buffer: Self = this.set("bar1Buffer", js.undefined)
+    @scala.inline
+    def setBar1Determinate(value: String): Self = this.set("bar1Determinate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBar1Determinate: Self = this.set("bar1Determinate", js.undefined)
+    @scala.inline
+    def setBar1Indeterminate(value: String): Self = this.set("bar1Indeterminate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBar1Indeterminate: Self = this.set("bar1Indeterminate", js.undefined)
+    @scala.inline
+    def setBar2Buffer(value: String): Self = this.set("bar2Buffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBar2Buffer: Self = this.set("bar2Buffer", js.undefined)
+    @scala.inline
+    def setBar2Indeterminate(value: String): Self = this.set("bar2Indeterminate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBar2Indeterminate: Self = this.set("bar2Indeterminate", js.undefined)
+    @scala.inline
+    def setBarColorPrimary(value: String): Self = this.set("barColorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarColorPrimary: Self = this.set("barColorPrimary", js.undefined)
+    @scala.inline
+    def setBarColorSecondary(value: String): Self = this.set("barColorSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarColorSecondary: Self = this.set("barColorSecondary", js.undefined)
+    @scala.inline
+    def setBuffer(value: String): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    @scala.inline
+    def setColorPrimary(value: String): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    @scala.inline
+    def setColorSecondary(value: String): Self = this.set("colorSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSecondary: Self = this.set("colorSecondary", js.undefined)
+    @scala.inline
+    def setDashed(value: String): Self = this.set("dashed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashed: Self = this.set("dashed", js.undefined)
+    @scala.inline
+    def setDashedColorPrimary(value: String): Self = this.set("dashedColorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashedColorPrimary: Self = this.set("dashedColorPrimary", js.undefined)
+    @scala.inline
+    def setDashedColorSecondary(value: String): Self = this.set("dashedColorSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashedColorSecondary: Self = this.set("dashedColorSecondary", js.undefined)
+    @scala.inline
+    def setDeterminate(value: String): Self = this.set("determinate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeterminate: Self = this.set("determinate", js.undefined)
+    @scala.inline
+    def setIndeterminate(value: String): Self = this.set("indeterminate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndeterminate: Self = this.set("indeterminate", js.undefined)
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

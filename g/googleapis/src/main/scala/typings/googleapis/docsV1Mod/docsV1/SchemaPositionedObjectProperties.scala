@@ -22,11 +22,30 @@ trait SchemaPositionedObjectProperties extends js.Object {
 
 object SchemaPositionedObjectProperties {
   @scala.inline
-  def apply(embeddedObject: SchemaEmbeddedObject = null, positioning: SchemaPositionedObjectPositioning = null): SchemaPositionedObjectProperties = {
+  def apply(): SchemaPositionedObjectProperties = {
     val __obj = js.Dynamic.literal()
-    if (embeddedObject != null) __obj.updateDynamic("embeddedObject")(embeddedObject.asInstanceOf[js.Any])
-    if (positioning != null) __obj.updateDynamic("positioning")(positioning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPositionedObjectProperties]
   }
+  @scala.inline
+  implicit class SchemaPositionedObjectPropertiesOps[Self <: SchemaPositionedObjectProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmbeddedObject(value: SchemaEmbeddedObject): Self = this.set("embeddedObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbeddedObject: Self = this.set("embeddedObject", js.undefined)
+    @scala.inline
+    def setPositioning(value: SchemaPositionedObjectPositioning): Self = this.set("positioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositioning: Self = this.set("positioning", js.undefined)
+  }
+  
 }
 

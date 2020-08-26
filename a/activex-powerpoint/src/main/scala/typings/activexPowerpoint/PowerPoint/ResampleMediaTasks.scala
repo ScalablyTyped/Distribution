@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResampleMediaTasks extends js.Object {
-  val Count: Double
-  val PercentComplete: Double
+  val Count: Double = js.native
+  val PercentComplete: Double = js.native
   @JSName("PowerPoint.ResampleMediaTasks_typekey")
-  var PowerPointDotResampleMediaTasks_typekey: ResampleMediaTasks
-  def Cancel(): Unit
-  def Item(Index: Double): ResampleMediaTask
-  def Pause(): Unit
-  def Resume(): Unit
+  var PowerPointDotResampleMediaTasks_typekey: ResampleMediaTasks = js.native
+  def Cancel(): Unit = js.native
+  def Item(Index: Double): ResampleMediaTask = js.native
+  def Pause(): Unit = js.native
+  def Resume(): Unit = js.native
 }
 
 object ResampleMediaTasks {
@@ -30,5 +31,32 @@ object ResampleMediaTasks {
     __obj.updateDynamic("PowerPoint.ResampleMediaTasks_typekey")(PowerPointDotResampleMediaTasks_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResampleMediaTasks]
   }
+  @scala.inline
+  implicit class ResampleMediaTasksOps[Self <: ResampleMediaTasks] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: () => Unit): Self = this.set("Cancel", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItem(value: Double => ResampleMediaTask): Self = this.set("Item", js.Any.fromFunction1(value))
+    @scala.inline
+    def setPause(value: () => Unit): Self = this.set("Pause", js.Any.fromFunction0(value))
+    @scala.inline
+    def setPercentComplete(value: Double): Self = this.set("PercentComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPowerPointDotResampleMediaTasks_typekey(value: ResampleMediaTasks): Self = this.set("PowerPoint.ResampleMediaTasks_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResume(value: () => Unit): Self = this.set("Resume", js.Any.fromFunction0(value))
+  }
+  
 }
 

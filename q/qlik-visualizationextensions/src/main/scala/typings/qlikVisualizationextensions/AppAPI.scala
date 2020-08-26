@@ -33,6 +33,7 @@ object AppAPI extends js.Object {
       * @return - A promise of a Qlik engine reply.
       */
     def clearAll(): IPromise[_] = js.native
+    def clearAll(lockedAlso: js.UndefOr[scala.Nothing], state: String): IPromise[_] = js.native
     def clearAll(lockedAlso: Boolean): IPromise[_] = js.native
     def clearAll(lockedAlso: Boolean, state: String): IPromise[_] = js.native
     /**
@@ -61,6 +62,7 @@ object AppAPI extends js.Object {
       * @return - A promise of an object model.
       */
     def createGenericObject(): IPromise[_] = js.native
+    def createGenericObject(`def`: js.UndefOr[scala.Nothing], callback: js.Any): IPromise[_] = js.native
     def createGenericObject(`def`: js.Any): IPromise[_] = js.native
     def createGenericObject(`def`: js.Any, callback: js.Any): IPromise[_] = js.native
     /**
@@ -105,7 +107,11 @@ object AppAPI extends js.Object {
       * @return - A promise of a Qlik engine reply.
       */
     def doReload(): IPromise[_] = js.native
+    def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): IPromise[_] = js.native
+    def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: Boolean): IPromise[_] = js.native
+    def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: Boolean, qDebug: Boolean): IPromise[_] = js.native
     def doReload(qMode: String): IPromise[_] = js.native
+    def doReload(qMode: String, qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): IPromise[_] = js.native
     def doReload(qMode: String, qPartial: Boolean): IPromise[_] = js.native
     def doReload(qMode: String, qPartial: Boolean, qDebug: Boolean): IPromise[_] = js.native
     /**
@@ -122,6 +128,7 @@ object AppAPI extends js.Object {
       * @return - A QField object with methods and properties that can be used to manipulate the field.
       */
     def field(): IQField = js.native
+    def field(field: js.UndefOr[scala.Nothing], state: String): IQField = js.native
     def field(field: String): IQField = js.native
     def field(field: String, state: String): IQField = js.native
     /**
@@ -146,6 +153,7 @@ object AppAPI extends js.Object {
       * @param [callback] - Optional. Callback method.
       */
     def getAppObjectList(): Unit = js.native
+    def getAppObjectList(`type`: js.UndefOr[scala.Nothing], callback: js.Any): Unit = js.native
     def getAppObjectList(`type`: String): Unit = js.native
     def getAppObjectList(`type`: String, callback: js.Any): Unit = js.native
     /**
@@ -192,6 +200,7 @@ object AppAPI extends js.Object {
       * @return - A promise of an object model.
       */
     def getObject(id: String): IPromise[_] = js.native
+    def getObject(id: String, elem: js.UndefOr[scala.Nothing], options: js.Any): IPromise[_] = js.native
     def getObject(id: String, elem: String): IPromise[_] = js.native
     def getObject(id: String, elem: String, options: js.Any): IPromise[_] = js.native
     def getObject(id: String, elem: js.Any): IPromise[_] = js.native
@@ -294,6 +303,7 @@ object AppAPI extends js.Object {
       * @return - A promise of a Qlik engine reply.
       */
     def searchResults(qTerms: js.Array[_], qPage: js.Any): IPromise[_] = js.native
+    def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.UndefOr[scala.Nothing], callback: js.Any): IPromise[_] = js.native
     def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any): IPromise[_] = js.native
     def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any, callback: js.Any): IPromise[_] = js.native
     /**
@@ -306,6 +316,7 @@ object AppAPI extends js.Object {
       * @return - A promise of a Qlik engine reply.
       */
     def searchSuggest(qTerms: js.Array[_]): IPromise[_] = js.native
+    def searchSuggest(qTerms: js.Array[_], qOptions: js.UndefOr[scala.Nothing], callback: js.Any): IPromise[_] = js.native
     def searchSuggest(qTerms: js.Array[_], qOptions: js.Any): IPromise[_] = js.native
     def searchSuggest(qTerms: js.Array[_], qOptions: js.Any, callback: js.Any): IPromise[_] = js.native
     /**
@@ -318,6 +329,7 @@ object AppAPI extends js.Object {
       * @return - A promise of a Qlik engine reply.
       */
     def selectAssociations(qMatchIx: Double, qTerms: js.Array[_]): IPromise[_] = js.native
+    def selectAssociations(qMatchIx: Double, qTerms: js.Array[_], qOptions: js.UndefOr[scala.Nothing], qSoftLock: js.Any): IPromise[_] = js.native
     def selectAssociations(qMatchIx: Double, qTerms: js.Array[_], qOptions: js.Any): IPromise[_] = js.native
     def selectAssociations(qMatchIx: Double, qTerms: js.Array[_], qOptions: js.Any, qSoftLock: js.Any): IPromise[_] = js.native
     /**

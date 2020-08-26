@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EditMessageReplyMarkupOptions extends js.Object {
-  var chat_id: js.UndefOr[Double | String] = js.undefined
-  var inline_message_id: js.UndefOr[String] = js.undefined
-  var message_id: js.UndefOr[Double] = js.undefined
+  var chat_id: js.UndefOr[Double | String] = js.native
+  var inline_message_id: js.UndefOr[String] = js.native
+  var message_id: js.UndefOr[Double] = js.native
 }
 
 object EditMessageReplyMarkupOptions {
   @scala.inline
-  def apply(
-    chat_id: Double | String = null,
-    inline_message_id: String = null,
-    message_id: js.UndefOr[Double] = js.undefined
-  ): EditMessageReplyMarkupOptions = {
+  def apply(): EditMessageReplyMarkupOptions = {
     val __obj = js.Dynamic.literal()
-    if (chat_id != null) __obj.updateDynamic("chat_id")(chat_id.asInstanceOf[js.Any])
-    if (inline_message_id != null) __obj.updateDynamic("inline_message_id")(inline_message_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(message_id)) __obj.updateDynamic("message_id")(message_id.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditMessageReplyMarkupOptions]
   }
+  @scala.inline
+  implicit class EditMessageReplyMarkupOptionsOps[Self <: EditMessageReplyMarkupOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChat_id(value: Double | String): Self = this.set("chat_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChat_id: Self = this.set("chat_id", js.undefined)
+    @scala.inline
+    def setInline_message_id(value: String): Self = this.set("inline_message_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline_message_id: Self = this.set("inline_message_id", js.undefined)
+    @scala.inline
+    def setMessage_id(value: Double): Self = this.set("message_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage_id: Self = this.set("message_id", js.undefined)
+  }
+  
 }
 

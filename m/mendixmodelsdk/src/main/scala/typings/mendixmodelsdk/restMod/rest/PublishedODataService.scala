@@ -39,14 +39,12 @@ class PublishedODataService protected () extends Document {
   var model_FPublishedODataService: IModel = js.native
   def allowedModuleRoles: IList[IModuleRole] = js.native
   def allowedModuleRolesQualifiedNames: js.Array[String] = js.native
-  def authenticationMicroflow(): js.Any = js.native
-  def authenticationMicroflow(newValue: IMicroflow): js.Any = js.native
-  def authenticationMicroflowQualifiedName: String | Null = js.native
   /**
     * In version 8.0.0: introduced
     */
-  @JSName("authenticationMicroflow")
-  def authenticationMicroflow_Union: IMicroflow | Null = js.native
+  def authenticationMicroflow: IMicroflow | Null = js.native
+  def authenticationMicroflowQualifiedName: String | Null = js.native
+  def authenticationMicroflow_=(newValue: IMicroflow | Null): Unit = js.native
   /**
     * In version 8.0.0: introduced
     */
@@ -57,32 +55,37 @@ class PublishedODataService protected () extends Document {
     * In version 8.4.0: introduced
     */
   def description: String = js.native
-  def description(newValue: String): js.Any = js.native
+  def description_=(newValue: String): Unit = js.native
   def namespace: String = js.native
-  def namespace(newValue: String): js.Any = js.native
+  def namespace_=(newValue: String): Unit = js.native
   def path: String = js.native
-  def path(newValue: String): js.Any = js.native
+  def path_=(newValue: String): Unit = js.native
   /**
     * In version 7.19.0: introduced
     */
   def publishAssociations: Boolean = js.native
-  def publishAssociations(newValue: Boolean): js.Any = js.native
+  def publishAssociations_=(newValue: Boolean): Unit = js.native
+  /**
+    * In version 8.12.0: introduced
+    */
+  def replaceIllegalChars: Boolean = js.native
+  def replaceIllegalChars_=(newValue: Boolean): Unit = js.native
   def resources: IList[PublishedRestResource] = js.native
   /**
     * In version 8.0.0: introduced
     */
   def serviceName: String = js.native
-  def serviceName(newValue: String): js.Any = js.native
+  def serviceName_=(newValue: String): Unit = js.native
   /**
     * In version 8.4.0: introduced
     */
   def summary: String = js.native
-  def summary(newValue: String): js.Any = js.native
+  def summary_=(newValue: String): Unit = js.native
   /**
     * In version 8.0.0: introduced
     */
   def version: String = js.native
-  def version(newValue: String): js.Any = js.native
+  def version_=(newValue: String): Unit = js.native
 }
 
 /* static members */

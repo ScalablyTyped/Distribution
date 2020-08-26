@@ -56,135 +56,12 @@ class GitHubApi protected () extends GitHubRef {
     updatedSince: js.UndefOr[Moment]
   ): js.Promise[js.Array[Issue]] = js.native
   def loadMyOrganizationsAsync(): js.Promise[js.Array[OrganizationSummaryClass]] = js.native
-  def loadMyRepositoriesAsync(visibility: `private`, affiliation: js.Array[owner | collaborator | organization_member]): js.Promise[js.Array[Repository]] = js.native
   def loadMyRepositoriesAsync(
-    visibility: `private`,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: created
+    visibility: all | public | `private`,
+    affiliation: js.UndefOr[js.Array[owner | collaborator | organization_member]],
+    sort: js.UndefOr[created | updated | pushed | full_name],
+    ascending: js.UndefOr[Boolean]
   ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: `private`,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: created,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: `private`,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: full_name
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: `private`,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: full_name,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: `private`,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: pushed
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: `private`,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: pushed,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: `private`,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: updated
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: `private`,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: updated,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(visibility: all, affiliation: js.Array[owner | collaborator | organization_member]): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(visibility: all, affiliation: js.Array[owner | collaborator | organization_member], sort: created): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: all,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: created,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: all,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: full_name
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: all,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: full_name,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(visibility: all, affiliation: js.Array[owner | collaborator | organization_member], sort: pushed): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: all,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: pushed,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(visibility: all, affiliation: js.Array[owner | collaborator | organization_member], sort: updated): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: all,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: updated,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(visibility: public, affiliation: js.Array[owner | collaborator | organization_member]): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: public,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: created
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: public,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: created,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: public,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: full_name
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: public,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: full_name,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: public,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: pushed
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: public,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: pushed,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: public,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: updated
-  ): js.Promise[js.Array[Repository]] = js.native
-  def loadMyRepositoriesAsync(
-    visibility: public,
-    affiliation: js.Array[owner | collaborator | organization_member],
-    sort: updated,
-    ascending: Boolean
-  ): js.Promise[js.Array[Repository]] = js.native
-  @JSName("loadMyRepositoriesAsync")
-  def loadMyRepositoriesAsync_all(visibility: all): js.Promise[js.Array[Repository]] = js.native
-  @JSName("loadMyRepositoriesAsync")
-  def loadMyRepositoriesAsync_private(visibility: `private`): js.Promise[js.Array[Repository]] = js.native
-  @JSName("loadMyRepositoriesAsync")
-  def loadMyRepositoriesAsync_public(visibility: public): js.Promise[js.Array[Repository]] = js.native
   /* private */ def searchAsync[TData, TApiData](uri: js.Any, query: js.Any, sort: js.Any, ascending: js.Any, perPage: js.Any, mapping: js.Any): js.Any = js.native
   /**
     * Loads issues matching search query.
@@ -195,8 +72,18 @@ class GitHubApi protected () extends GitHubRef {
     * @returns         An array of issues that match the query
     */
   def searchIssuesAsync(query: String): js.Promise[js.Array[Issue]] = js.native
+  def searchIssuesAsync(
+    query: String,
+    sort: js.UndefOr[scala.Nothing],
+    ascending: js.UndefOr[scala.Nothing],
+    perPage: Double
+  ): js.Promise[js.Array[Issue]] = js.native
+  def searchIssuesAsync(query: String, sort: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[Issue]] = js.native
+  def searchIssuesAsync(query: String, sort: js.UndefOr[scala.Nothing], ascending: Boolean, perPage: Double): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
   def searchIssuesAsync_bestmatch(query: String, sort: `best match`): js.Promise[js.Array[Issue]] = js.native
+  @JSName("searchIssuesAsync")
+  def searchIssuesAsync_bestmatch(query: String, sort: `best match`, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
   def searchIssuesAsync_bestmatch(query: String, sort: `best match`, ascending: Boolean): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
@@ -204,17 +91,23 @@ class GitHubApi protected () extends GitHubRef {
   @JSName("searchIssuesAsync")
   def searchIssuesAsync_comments(query: String, sort: comments): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
+  def searchIssuesAsync_comments(query: String, sort: comments, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[Issue]] = js.native
+  @JSName("searchIssuesAsync")
   def searchIssuesAsync_comments(query: String, sort: comments, ascending: Boolean): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
   def searchIssuesAsync_comments(query: String, sort: comments, ascending: Boolean, perPage: Double): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
   def searchIssuesAsync_created(query: String, sort: created): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
+  def searchIssuesAsync_created(query: String, sort: created, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[Issue]] = js.native
+  @JSName("searchIssuesAsync")
   def searchIssuesAsync_created(query: String, sort: created, ascending: Boolean): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
   def searchIssuesAsync_created(query: String, sort: created, ascending: Boolean, perPage: Double): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
   def searchIssuesAsync_updated(query: String, sort: updated): js.Promise[js.Array[Issue]] = js.native
+  @JSName("searchIssuesAsync")
+  def searchIssuesAsync_updated(query: String, sort: updated, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
   def searchIssuesAsync_updated(query: String, sort: updated, ascending: Boolean): js.Promise[js.Array[Issue]] = js.native
   @JSName("searchIssuesAsync")
@@ -228,8 +121,18 @@ class GitHubApi protected () extends GitHubRef {
     * @returns         An array of issues that match the query with a score as to how well they matched
     */
   def searchIssuesWithScoreAsync(query: String): js.Promise[js.Array[SearchResult[Issue]]] = js.native
+  def searchIssuesWithScoreAsync(
+    query: String,
+    sort: js.UndefOr[scala.Nothing],
+    ascending: js.UndefOr[scala.Nothing],
+    perPage: Double
+  ): js.Promise[js.Array[SearchResult[Issue]]] = js.native
+  def searchIssuesWithScoreAsync(query: String, sort: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[SearchResult[Issue]]] = js.native
+  def searchIssuesWithScoreAsync(query: String, sort: js.UndefOr[scala.Nothing], ascending: Boolean, perPage: Double): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
   def searchIssuesWithScoreAsync_bestmatch(query: String, sort: `best match`): js.Promise[js.Array[SearchResult[Issue]]] = js.native
+  @JSName("searchIssuesWithScoreAsync")
+  def searchIssuesWithScoreAsync_bestmatch(query: String, sort: `best match`, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
   def searchIssuesWithScoreAsync_bestmatch(query: String, sort: `best match`, ascending: Boolean): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
@@ -237,17 +140,23 @@ class GitHubApi protected () extends GitHubRef {
   @JSName("searchIssuesWithScoreAsync")
   def searchIssuesWithScoreAsync_comments(query: String, sort: comments): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
+  def searchIssuesWithScoreAsync_comments(query: String, sort: comments, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[SearchResult[Issue]]] = js.native
+  @JSName("searchIssuesWithScoreAsync")
   def searchIssuesWithScoreAsync_comments(query: String, sort: comments, ascending: Boolean): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
   def searchIssuesWithScoreAsync_comments(query: String, sort: comments, ascending: Boolean, perPage: Double): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
   def searchIssuesWithScoreAsync_created(query: String, sort: created): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
+  def searchIssuesWithScoreAsync_created(query: String, sort: created, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[SearchResult[Issue]]] = js.native
+  @JSName("searchIssuesWithScoreAsync")
   def searchIssuesWithScoreAsync_created(query: String, sort: created, ascending: Boolean): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
   def searchIssuesWithScoreAsync_created(query: String, sort: created, ascending: Boolean, perPage: Double): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
   def searchIssuesWithScoreAsync_updated(query: String, sort: updated): js.Promise[js.Array[SearchResult[Issue]]] = js.native
+  @JSName("searchIssuesWithScoreAsync")
+  def searchIssuesWithScoreAsync_updated(query: String, sort: updated, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
   def searchIssuesWithScoreAsync_updated(query: String, sort: updated, ascending: Boolean): js.Promise[js.Array[SearchResult[Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
@@ -261,8 +170,18 @@ class GitHubApi protected () extends GitHubRef {
     * @returns         An array of repositories that match the query
     */
   def searchRepositoriesAsync(query: String): js.Promise[js.Array[Repository]] = js.native
+  def searchRepositoriesAsync(
+    query: String,
+    sort: js.UndefOr[scala.Nothing],
+    ascending: js.UndefOr[scala.Nothing],
+    perPage: Double
+  ): js.Promise[js.Array[Repository]] = js.native
+  def searchRepositoriesAsync(query: String, sort: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
+  def searchRepositoriesAsync(query: String, sort: js.UndefOr[scala.Nothing], ascending: Boolean, perPage: Double): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
   def searchRepositoriesAsync_bestmatch(query: String, sort: `best match`): js.Promise[js.Array[Repository]] = js.native
+  @JSName("searchRepositoriesAsync")
+  def searchRepositoriesAsync_bestmatch(query: String, sort: `best match`, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
   def searchRepositoriesAsync_bestmatch(query: String, sort: `best match`, ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
@@ -270,17 +189,23 @@ class GitHubApi protected () extends GitHubRef {
   @JSName("searchRepositoriesAsync")
   def searchRepositoriesAsync_forks(query: String, sort: forks): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
+  def searchRepositoriesAsync_forks(query: String, sort: forks, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[Repository]] = js.native
+  @JSName("searchRepositoriesAsync")
   def searchRepositoriesAsync_forks(query: String, sort: forks, ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
   def searchRepositoriesAsync_forks(query: String, sort: forks, ascending: Boolean, perPage: Double): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
   def searchRepositoriesAsync_stars(query: String, sort: stars): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
+  def searchRepositoriesAsync_stars(query: String, sort: stars, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[Repository]] = js.native
+  @JSName("searchRepositoriesAsync")
   def searchRepositoriesAsync_stars(query: String, sort: stars, ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
   def searchRepositoriesAsync_stars(query: String, sort: stars, ascending: Boolean, perPage: Double): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
   def searchRepositoriesAsync_updated(query: String, sort: updated): js.Promise[js.Array[Repository]] = js.native
+  @JSName("searchRepositoriesAsync")
+  def searchRepositoriesAsync_updated(query: String, sort: updated, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
   def searchRepositoriesAsync_updated(query: String, sort: updated, ascending: Boolean): js.Promise[js.Array[Repository]] = js.native
   @JSName("searchRepositoriesAsync")
@@ -294,8 +219,18 @@ class GitHubApi protected () extends GitHubRef {
     * @returns         An array of repositories that match the query with a score as to how well they matched
     */
   def searchRepositoriesWithScoreAsync(query: String): js.Promise[js.Array[SearchResult[Repository]]] = js.native
+  def searchRepositoriesWithScoreAsync(
+    query: String,
+    sort: js.UndefOr[scala.Nothing],
+    ascending: js.UndefOr[scala.Nothing],
+    perPage: Double
+  ): js.Promise[js.Array[SearchResult[Repository]]] = js.native
+  def searchRepositoriesWithScoreAsync(query: String, sort: js.UndefOr[scala.Nothing], ascending: Boolean): js.Promise[js.Array[SearchResult[Repository]]] = js.native
+  def searchRepositoriesWithScoreAsync(query: String, sort: js.UndefOr[scala.Nothing], ascending: Boolean, perPage: Double): js.Promise[js.Array[SearchResult[Repository]]] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
   def searchRepositoriesWithScoreAsync_bestmatch(query: String, sort: `best match`): js.Promise[js.Array[SearchResult[Repository]]] = js.native
+  @JSName("searchRepositoriesWithScoreAsync")
+  def searchRepositoriesWithScoreAsync_bestmatch(query: String, sort: `best match`, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[SearchResult[Repository]]] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
   def searchRepositoriesWithScoreAsync_bestmatch(query: String, sort: `best match`, ascending: Boolean): js.Promise[js.Array[SearchResult[Repository]]] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
@@ -303,17 +238,23 @@ class GitHubApi protected () extends GitHubRef {
   @JSName("searchRepositoriesWithScoreAsync")
   def searchRepositoriesWithScoreAsync_forks(query: String, sort: forks): js.Promise[js.Array[SearchResult[Repository]]] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
+  def searchRepositoriesWithScoreAsync_forks(query: String, sort: forks, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[SearchResult[Repository]]] = js.native
+  @JSName("searchRepositoriesWithScoreAsync")
   def searchRepositoriesWithScoreAsync_forks(query: String, sort: forks, ascending: Boolean): js.Promise[js.Array[SearchResult[Repository]]] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
   def searchRepositoriesWithScoreAsync_forks(query: String, sort: forks, ascending: Boolean, perPage: Double): js.Promise[js.Array[SearchResult[Repository]]] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
   def searchRepositoriesWithScoreAsync_stars(query: String, sort: stars): js.Promise[js.Array[SearchResult[Repository]]] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
+  def searchRepositoriesWithScoreAsync_stars(query: String, sort: stars, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[SearchResult[Repository]]] = js.native
+  @JSName("searchRepositoriesWithScoreAsync")
   def searchRepositoriesWithScoreAsync_stars(query: String, sort: stars, ascending: Boolean): js.Promise[js.Array[SearchResult[Repository]]] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
   def searchRepositoriesWithScoreAsync_stars(query: String, sort: stars, ascending: Boolean, perPage: Double): js.Promise[js.Array[SearchResult[Repository]]] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
   def searchRepositoriesWithScoreAsync_updated(query: String, sort: updated): js.Promise[js.Array[SearchResult[Repository]]] = js.native
+  @JSName("searchRepositoriesWithScoreAsync")
+  def searchRepositoriesWithScoreAsync_updated(query: String, sort: updated, ascending: js.UndefOr[scala.Nothing], perPage: Double): js.Promise[js.Array[SearchResult[Repository]]] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
   def searchRepositoriesWithScoreAsync_updated(query: String, sort: updated, ascending: Boolean): js.Promise[js.Array[SearchResult[Repository]]] = js.native
   @JSName("searchRepositoriesWithScoreAsync")

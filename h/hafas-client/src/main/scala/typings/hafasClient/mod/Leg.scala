@@ -7,37 +7,38 @@ import scala.scalajs.js.annotation._
 /**
   * Leg of journey
   */
+@js.native
 trait Leg extends js.Object {
-  var alternatives: js.UndefOr[js.Array[Alternative]] = js.undefined
-  var arrival: js.UndefOr[String] = js.undefined
-  var arrivalDelay: js.UndefOr[Double] = js.undefined
-  var arrivalPlatform: js.UndefOr[String] = js.undefined
-  var cancelled: js.UndefOr[Boolean] = js.undefined
-  var cycle: js.UndefOr[Cycle] = js.undefined
-  var departure: js.UndefOr[String] = js.undefined
-  var departureDelay: js.UndefOr[Double] = js.undefined
-  var departurePlatform: js.UndefOr[String] = js.undefined
-  var destination: Station | Stop
-  var direction: js.UndefOr[String] = js.undefined
-  var distance: js.UndefOr[Double] = js.undefined
-  var line: js.UndefOr[Line] = js.undefined
-  var loadFactor: js.UndefOr[String] = js.undefined
-  var operator: js.UndefOr[Double] = js.undefined
-  var origin: Station | Stop
-  var plannedArrival: String
-  var plannedArrivalPlatform: js.UndefOr[String] = js.undefined
-  var plannedDeparture: String
-  var plannedDeparturePlatform: js.UndefOr[String] = js.undefined
-  var polyline: js.UndefOr[FeatureCollection] = js.undefined
-  var price: js.UndefOr[Price] = js.undefined
-  var public: js.UndefOr[Boolean] = js.undefined
-  var reachable: js.UndefOr[Boolean] = js.undefined
-  var remarks: js.UndefOr[js.Array[Hint]] = js.undefined
-  var schedule: js.UndefOr[Double] = js.undefined
-  var stopovers: js.UndefOr[js.Array[StopOver]] = js.undefined
-  var transfer: js.UndefOr[Boolean] = js.undefined
-  var tripId: js.UndefOr[String] = js.undefined
-  var walking: js.UndefOr[Boolean] = js.undefined
+  var alternatives: js.UndefOr[js.Array[Alternative]] = js.native
+  var arrival: js.UndefOr[String] = js.native
+  var arrivalDelay: js.UndefOr[Double] = js.native
+  var arrivalPlatform: js.UndefOr[String] = js.native
+  var cancelled: js.UndefOr[Boolean] = js.native
+  var cycle: js.UndefOr[Cycle] = js.native
+  var departure: js.UndefOr[String] = js.native
+  var departureDelay: js.UndefOr[Double] = js.native
+  var departurePlatform: js.UndefOr[String] = js.native
+  var destination: Station | Stop = js.native
+  var direction: js.UndefOr[String] = js.native
+  var distance: js.UndefOr[Double] = js.native
+  var line: js.UndefOr[Line] = js.native
+  var loadFactor: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[Double] = js.native
+  var origin: Station | Stop = js.native
+  var plannedArrival: String = js.native
+  var plannedArrivalPlatform: js.UndefOr[String] = js.native
+  var plannedDeparture: String = js.native
+  var plannedDeparturePlatform: js.UndefOr[String] = js.native
+  var polyline: js.UndefOr[FeatureCollection] = js.native
+  var price: js.UndefOr[Price] = js.native
+  var public: js.UndefOr[Boolean] = js.native
+  var reachable: js.UndefOr[Boolean] = js.native
+  var remarks: js.UndefOr[js.Array[Hint]] = js.native
+  var schedule: js.UndefOr[Double] = js.native
+  var stopovers: js.UndefOr[js.Array[StopOver]] = js.native
+  var transfer: js.UndefOr[Boolean] = js.native
+  var tripId: js.UndefOr[String] = js.native
+  var walking: js.UndefOr[Boolean] = js.native
 }
 
 object Leg {
@@ -46,62 +47,141 @@ object Leg {
     destination: Station | Stop,
     origin: Station | Stop,
     plannedArrival: String,
-    plannedDeparture: String,
-    alternatives: js.Array[Alternative] = null,
-    arrival: String = null,
-    arrivalDelay: js.UndefOr[Double] = js.undefined,
-    arrivalPlatform: String = null,
-    cancelled: js.UndefOr[Boolean] = js.undefined,
-    cycle: Cycle = null,
-    departure: String = null,
-    departureDelay: js.UndefOr[Double] = js.undefined,
-    departurePlatform: String = null,
-    direction: String = null,
-    distance: js.UndefOr[Double] = js.undefined,
-    line: Line = null,
-    loadFactor: String = null,
-    operator: js.UndefOr[Double] = js.undefined,
-    plannedArrivalPlatform: String = null,
-    plannedDeparturePlatform: String = null,
-    polyline: FeatureCollection = null,
-    price: Price = null,
-    public: js.UndefOr[Boolean] = js.undefined,
-    reachable: js.UndefOr[Boolean] = js.undefined,
-    remarks: js.Array[Hint] = null,
-    schedule: js.UndefOr[Double] = js.undefined,
-    stopovers: js.Array[StopOver] = null,
-    transfer: js.UndefOr[Boolean] = js.undefined,
-    tripId: String = null,
-    walking: js.UndefOr[Boolean] = js.undefined
+    plannedDeparture: String
   ): Leg = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], plannedArrival = plannedArrival.asInstanceOf[js.Any], plannedDeparture = plannedDeparture.asInstanceOf[js.Any])
-    if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives.asInstanceOf[js.Any])
-    if (arrival != null) __obj.updateDynamic("arrival")(arrival.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrivalDelay)) __obj.updateDynamic("arrivalDelay")(arrivalDelay.get.asInstanceOf[js.Any])
-    if (arrivalPlatform != null) __obj.updateDynamic("arrivalPlatform")(arrivalPlatform.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelled)) __obj.updateDynamic("cancelled")(cancelled.get.asInstanceOf[js.Any])
-    if (cycle != null) __obj.updateDynamic("cycle")(cycle.asInstanceOf[js.Any])
-    if (departure != null) __obj.updateDynamic("departure")(departure.asInstanceOf[js.Any])
-    if (!js.isUndefined(departureDelay)) __obj.updateDynamic("departureDelay")(departureDelay.get.asInstanceOf[js.Any])
-    if (departurePlatform != null) __obj.updateDynamic("departurePlatform")(departurePlatform.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (loadFactor != null) __obj.updateDynamic("loadFactor")(loadFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(operator)) __obj.updateDynamic("operator")(operator.get.asInstanceOf[js.Any])
-    if (plannedArrivalPlatform != null) __obj.updateDynamic("plannedArrivalPlatform")(plannedArrivalPlatform.asInstanceOf[js.Any])
-    if (plannedDeparturePlatform != null) __obj.updateDynamic("plannedDeparturePlatform")(plannedDeparturePlatform.asInstanceOf[js.Any])
-    if (polyline != null) __obj.updateDynamic("polyline")(polyline.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reachable)) __obj.updateDynamic("reachable")(reachable.get.asInstanceOf[js.Any])
-    if (remarks != null) __obj.updateDynamic("remarks")(remarks.asInstanceOf[js.Any])
-    if (!js.isUndefined(schedule)) __obj.updateDynamic("schedule")(schedule.get.asInstanceOf[js.Any])
-    if (stopovers != null) __obj.updateDynamic("stopovers")(stopovers.asInstanceOf[js.Any])
-    if (!js.isUndefined(transfer)) __obj.updateDynamic("transfer")(transfer.get.asInstanceOf[js.Any])
-    if (tripId != null) __obj.updateDynamic("tripId")(tripId.asInstanceOf[js.Any])
-    if (!js.isUndefined(walking)) __obj.updateDynamic("walking")(walking.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Leg]
   }
+  @scala.inline
+  implicit class LegOps[Self <: Leg] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestination(value: Station | Stop): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrigin(value: Station | Stop): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlannedArrival(value: String): Self = this.set("plannedArrival", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlannedDeparture(value: String): Self = this.set("plannedDeparture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlternativesVarargs(value: Alternative*): Self = this.set("alternatives", js.Array(value :_*))
+    @scala.inline
+    def setAlternatives(value: js.Array[Alternative]): Self = this.set("alternatives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternatives: Self = this.set("alternatives", js.undefined)
+    @scala.inline
+    def setArrival(value: String): Self = this.set("arrival", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrival: Self = this.set("arrival", js.undefined)
+    @scala.inline
+    def setArrivalDelay(value: Double): Self = this.set("arrivalDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrivalDelay: Self = this.set("arrivalDelay", js.undefined)
+    @scala.inline
+    def setArrivalPlatform(value: String): Self = this.set("arrivalPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrivalPlatform: Self = this.set("arrivalPlatform", js.undefined)
+    @scala.inline
+    def setCancelled(value: Boolean): Self = this.set("cancelled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelled: Self = this.set("cancelled", js.undefined)
+    @scala.inline
+    def setCycle(value: Cycle): Self = this.set("cycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCycle: Self = this.set("cycle", js.undefined)
+    @scala.inline
+    def setDeparture(value: String): Self = this.set("departure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeparture: Self = this.set("departure", js.undefined)
+    @scala.inline
+    def setDepartureDelay(value: Double): Self = this.set("departureDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepartureDelay: Self = this.set("departureDelay", js.undefined)
+    @scala.inline
+    def setDeparturePlatform(value: String): Self = this.set("departurePlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeparturePlatform: Self = this.set("departurePlatform", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistance: Self = this.set("distance", js.undefined)
+    @scala.inline
+    def setLine(value: Line): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setLoadFactor(value: String): Self = this.set("loadFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadFactor: Self = this.set("loadFactor", js.undefined)
+    @scala.inline
+    def setOperator(value: Double): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+    @scala.inline
+    def setPlannedArrivalPlatform(value: String): Self = this.set("plannedArrivalPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlannedArrivalPlatform: Self = this.set("plannedArrivalPlatform", js.undefined)
+    @scala.inline
+    def setPlannedDeparturePlatform(value: String): Self = this.set("plannedDeparturePlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlannedDeparturePlatform: Self = this.set("plannedDeparturePlatform", js.undefined)
+    @scala.inline
+    def setPolyline(value: FeatureCollection): Self = this.set("polyline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolyline: Self = this.set("polyline", js.undefined)
+    @scala.inline
+    def setPrice(value: Price): Self = this.set("price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("price", js.undefined)
+    @scala.inline
+    def setPublic(value: Boolean): Self = this.set("public", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublic: Self = this.set("public", js.undefined)
+    @scala.inline
+    def setReachable(value: Boolean): Self = this.set("reachable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReachable: Self = this.set("reachable", js.undefined)
+    @scala.inline
+    def setRemarksVarargs(value: Hint*): Self = this.set("remarks", js.Array(value :_*))
+    @scala.inline
+    def setRemarks(value: js.Array[Hint]): Self = this.set("remarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemarks: Self = this.set("remarks", js.undefined)
+    @scala.inline
+    def setSchedule(value: Double): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setStopoversVarargs(value: StopOver*): Self = this.set("stopovers", js.Array(value :_*))
+    @scala.inline
+    def setStopovers(value: js.Array[StopOver]): Self = this.set("stopovers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopovers: Self = this.set("stopovers", js.undefined)
+    @scala.inline
+    def setTransfer(value: Boolean): Self = this.set("transfer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransfer: Self = this.set("transfer", js.undefined)
+    @scala.inline
+    def setTripId(value: String): Self = this.set("tripId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTripId: Self = this.set("tripId", js.undefined)
+    @scala.inline
+    def setWalking(value: Boolean): Self = this.set("walking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWalking: Self = this.set("walking", js.undefined)
+  }
+  
 }
 

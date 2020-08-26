@@ -30,19 +30,40 @@ trait EFSVolumeConfiguration extends js.Object {
 
 object EFSVolumeConfiguration {
   @scala.inline
-  def apply(
-    fileSystemId: String,
-    authorizationConfig: EFSAuthorizationConfig = null,
-    rootDirectory: String = null,
-    transitEncryption: EFSTransitEncryption = null,
-    transitEncryptionPort: js.UndefOr[BoxedInteger] = js.undefined
-  ): EFSVolumeConfiguration = {
+  def apply(fileSystemId: String): EFSVolumeConfiguration = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any])
-    if (authorizationConfig != null) __obj.updateDynamic("authorizationConfig")(authorizationConfig.asInstanceOf[js.Any])
-    if (rootDirectory != null) __obj.updateDynamic("rootDirectory")(rootDirectory.asInstanceOf[js.Any])
-    if (transitEncryption != null) __obj.updateDynamic("transitEncryption")(transitEncryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitEncryptionPort)) __obj.updateDynamic("transitEncryptionPort")(transitEncryptionPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EFSVolumeConfiguration]
   }
+  @scala.inline
+  implicit class EFSVolumeConfigurationOps[Self <: EFSVolumeConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileSystemId(value: String): Self = this.set("fileSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorizationConfig(value: EFSAuthorizationConfig): Self = this.set("authorizationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationConfig: Self = this.set("authorizationConfig", js.undefined)
+    @scala.inline
+    def setRootDirectory(value: String): Self = this.set("rootDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootDirectory: Self = this.set("rootDirectory", js.undefined)
+    @scala.inline
+    def setTransitEncryption(value: EFSTransitEncryption): Self = this.set("transitEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitEncryption: Self = this.set("transitEncryption", js.undefined)
+    @scala.inline
+    def setTransitEncryptionPort(value: BoxedInteger): Self = this.set("transitEncryptionPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitEncryptionPort: Self = this.set("transitEncryptionPort", js.undefined)
+  }
+  
 }
 

@@ -13,19 +13,20 @@ import scala.scalajs.js.annotation._
   * XAnimate.Values}{@link XAnimate.From}{@link XAnimate.To}{@link XAnimate.By}
   * @see http://www.w3.org/TR/smil20/animation.html#edef-animateColor
   */
+@js.native
 trait XAnimateColor extends XAnimate {
   /**
     * defines the color space which is used to perform the interpolation. ;
     * @see AnimationColorSpace
     */
-  var ColorInterpolation: Double
+  var ColorInterpolation: Double = js.native
   /**
     * defines the direction which is used to perform the interpolation inside the color space defined with {@link ColorInterpolation} . ;  Values could be
     * `TRUE` for clockwise and `FALSE` for counterclockwise.
     *
     * This attribute will be ignored for color spaces where this does not make any sense.
     */
-  var Direction: Boolean
+  var Direction: Boolean = js.native
 }
 
 object XAnimateColor {
@@ -72,5 +73,22 @@ object XAnimateColor {
     val __obj = js.Dynamic.literal(Acceleration = Acceleration.asInstanceOf[js.Any], Accumulate = Accumulate.asInstanceOf[js.Any], Additive = Additive.asInstanceOf[js.Any], AttributeName = AttributeName.asInstanceOf[js.Any], AutoReverse = AutoReverse.asInstanceOf[js.Any], Begin = Begin.asInstanceOf[js.Any], By = By.asInstanceOf[js.Any], CalcMode = CalcMode.asInstanceOf[js.Any], ColorInterpolation = ColorInterpolation.asInstanceOf[js.Any], Decelerate = Decelerate.asInstanceOf[js.Any], Direction = Direction.asInstanceOf[js.Any], Duration = Duration.asInstanceOf[js.Any], End = End.asInstanceOf[js.Any], EndSync = EndSync.asInstanceOf[js.Any], Fill = Fill.asInstanceOf[js.Any], FillDefault = FillDefault.asInstanceOf[js.Any], Formula = Formula.asInstanceOf[js.Any], From = From.asInstanceOf[js.Any], KeyTimes = KeyTimes.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], RepeatCount = RepeatCount.asInstanceOf[js.Any], RepeatDuration = RepeatDuration.asInstanceOf[js.Any], Restart = Restart.asInstanceOf[js.Any], RestartDefault = RestartDefault.asInstanceOf[js.Any], SubItem = SubItem.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any], TimeFilter = TimeFilter.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UserData = UserData.asInstanceOf[js.Any], ValueType = ValueType.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getParent = js.Any.fromFunction0(getParent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setParent = js.Any.fromFunction1(setParent))
     __obj.asInstanceOf[XAnimateColor]
   }
+  @scala.inline
+  implicit class XAnimateColorOps[Self <: XAnimateColor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorInterpolation(value: Double): Self = this.set("ColorInterpolation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDirection(value: Boolean): Self = this.set("Direction", value.asInstanceOf[js.Any])
+  }
+  
 }
 

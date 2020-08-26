@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
+@js.native
 trait PlusNativeObjViewAnimationOptions extends js.Object {
   /**
     * 动画持续时间
@@ -18,14 +19,14 @@ trait PlusNativeObjViewAnimationOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var duration: js.UndefOr[Double] = js.undefined
+  var duration: js.UndefOr[Double] = js.native
   /**
     * 动画帧数
     * 必须为大于0的整数，默认值为12。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var frames: js.UndefOr[Double] = js.undefined
+  var frames: js.UndefOr[Double] = js.native
   /**
     * 动画作用区域
     * 支持以下属性：
@@ -37,7 +38,7 @@ trait PlusNativeObjViewAnimationOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var region: js.UndefOr[PlusNativeObjRect] = js.undefined
+  var region: js.UndefOr[PlusNativeObjRect] = js.native
   /**
     * 动画类型
     * 可取值："shrink" - 从上到下分块收缩清除窗口动画。
@@ -45,23 +46,43 @@ trait PlusNativeObjViewAnimationOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var `type`: js.UndefOr[shrink] = js.undefined
+  var `type`: js.UndefOr[shrink] = js.native
 }
 
 object PlusNativeObjViewAnimationOptions {
   @scala.inline
-  def apply(
-    duration: js.UndefOr[Double] = js.undefined,
-    frames: js.UndefOr[Double] = js.undefined,
-    region: PlusNativeObjRect = null,
-    `type`: shrink = null
-  ): PlusNativeObjViewAnimationOptions = {
+  def apply(): PlusNativeObjViewAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(frames)) __obj.updateDynamic("frames")(frames.get.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjViewAnimationOptions]
   }
+  @scala.inline
+  implicit class PlusNativeObjViewAnimationOptionsOps[Self <: PlusNativeObjViewAnimationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setFrames(value: Double): Self = this.set("frames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrames: Self = this.set("frames", js.undefined)
+    @scala.inline
+    def setRegion(value: PlusNativeObjRect): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setType(value: shrink): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

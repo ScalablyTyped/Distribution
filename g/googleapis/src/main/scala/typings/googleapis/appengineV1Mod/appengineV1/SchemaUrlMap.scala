@@ -55,26 +55,54 @@ trait SchemaUrlMap extends js.Object {
 
 object SchemaUrlMap {
   @scala.inline
-  def apply(
-    apiEndpoint: SchemaApiEndpointHandler = null,
-    authFailAction: String = null,
-    login: String = null,
-    redirectHttpResponseCode: String = null,
-    script: SchemaScriptHandler = null,
-    securityLevel: String = null,
-    staticFiles: SchemaStaticFilesHandler = null,
-    urlRegex: String = null
-  ): SchemaUrlMap = {
+  def apply(): SchemaUrlMap = {
     val __obj = js.Dynamic.literal()
-    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint.asInstanceOf[js.Any])
-    if (authFailAction != null) __obj.updateDynamic("authFailAction")(authFailAction.asInstanceOf[js.Any])
-    if (login != null) __obj.updateDynamic("login")(login.asInstanceOf[js.Any])
-    if (redirectHttpResponseCode != null) __obj.updateDynamic("redirectHttpResponseCode")(redirectHttpResponseCode.asInstanceOf[js.Any])
-    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
-    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel.asInstanceOf[js.Any])
-    if (staticFiles != null) __obj.updateDynamic("staticFiles")(staticFiles.asInstanceOf[js.Any])
-    if (urlRegex != null) __obj.updateDynamic("urlRegex")(urlRegex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUrlMap]
   }
+  @scala.inline
+  implicit class SchemaUrlMapOps[Self <: SchemaUrlMap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiEndpoint(value: SchemaApiEndpointHandler): Self = this.set("apiEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiEndpoint: Self = this.set("apiEndpoint", js.undefined)
+    @scala.inline
+    def setAuthFailAction(value: String): Self = this.set("authFailAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthFailAction: Self = this.set("authFailAction", js.undefined)
+    @scala.inline
+    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogin: Self = this.set("login", js.undefined)
+    @scala.inline
+    def setRedirectHttpResponseCode(value: String): Self = this.set("redirectHttpResponseCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirectHttpResponseCode: Self = this.set("redirectHttpResponseCode", js.undefined)
+    @scala.inline
+    def setScript(value: SchemaScriptHandler): Self = this.set("script", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScript: Self = this.set("script", js.undefined)
+    @scala.inline
+    def setSecurityLevel(value: String): Self = this.set("securityLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityLevel: Self = this.set("securityLevel", js.undefined)
+    @scala.inline
+    def setStaticFiles(value: SchemaStaticFilesHandler): Self = this.set("staticFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticFiles: Self = this.set("staticFiles", js.undefined)
+    @scala.inline
+    def setUrlRegex(value: String): Self = this.set("urlRegex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlRegex: Self = this.set("urlRegex", js.undefined)
+  }
+  
 }
 

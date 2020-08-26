@@ -14,9 +14,31 @@ import scala.scalajs.js.annotation._
 object createComponent extends js.Object {
   // component functions
   def apply(): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
+  def apply(
+    translator: js.UndefOr[scala.Nothing],
+    locale: js.UndefOr[scala.Nothing],
+    reactjs: js.UndefOr[ReactInstance],
+    `type`: js.Any
+  ): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
+  def apply(translator: js.UndefOr[scala.Nothing], locale: js.UndefOr[scala.Nothing], reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
+  def apply(translator: js.UndefOr[scala.Nothing], locale: String): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
+  def apply(
+    translator: js.UndefOr[scala.Nothing],
+    locale: String,
+    reactjs: js.UndefOr[ReactInstance],
+    `type`: js.Any
+  ): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
+  def apply(translator: js.UndefOr[scala.Nothing], locale: String, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
   def apply(translator: Translator): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
+  def apply(
+    translator: Translator,
+    locale: js.UndefOr[scala.Nothing],
+    reactjs: js.UndefOr[ReactInstance],
+    `type`: js.Any
+  ): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
+  def apply(translator: Translator, locale: js.UndefOr[scala.Nothing], reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
   def apply(translator: Translator, locale: String): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
+  def apply(translator: Translator, locale: String, reactjs: js.UndefOr[ReactInstance], `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
   def apply(translator: Translator, locale: String, reactjs: ReactInstance): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
-  def apply(translator: Translator, locale: String, reactjs: ReactInstance, `type`: js.Any): Instantiable0[Component[ReactComponentProps, js.Object, js.Any]] = js.native
 }
 

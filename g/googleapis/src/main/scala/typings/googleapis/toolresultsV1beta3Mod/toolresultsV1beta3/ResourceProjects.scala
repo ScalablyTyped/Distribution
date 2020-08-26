@@ -30,6 +30,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def getSettings(): GaxiosPromise[SchemaProjectSettings] = js.native
   def getSettings(callback: BodyResponseCallback[SchemaProjectSettings]): Unit = js.native
+  def getSettings(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectSettings] = js.native
   def getSettings(params: ParamsResourceProjectsGetsettings): GaxiosPromise[SchemaProjectSettings] = js.native
   def getSettings(params: ParamsResourceProjectsGetsettings, callback: BodyResponseCallback[SchemaProjectSettings]): Unit = js.native
   def getSettings(
@@ -76,6 +77,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def initializeSettings(): GaxiosPromise[SchemaProjectSettings] = js.native
   def initializeSettings(callback: BodyResponseCallback[SchemaProjectSettings]): Unit = js.native
+  def initializeSettings(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectSettings] = js.native
   def initializeSettings(params: ParamsResourceProjectsInitializesettings): GaxiosPromise[SchemaProjectSettings] = js.native
   def initializeSettings(
     params: ParamsResourceProjectsInitializesettings,

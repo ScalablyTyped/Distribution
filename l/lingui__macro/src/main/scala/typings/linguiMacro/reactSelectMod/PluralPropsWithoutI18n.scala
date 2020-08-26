@@ -7,51 +7,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PluralPropsWithoutI18n
   extends RenderProps
      with /* exact */ StringDictionary[ReactNode] {
-  var few: js.UndefOr[ReactNode] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var many: js.UndefOr[ReactNode] = js.undefined
-  var offset: js.UndefOr[Double | String] = js.undefined
-  var one: js.UndefOr[ReactNode] = js.undefined
-  var other: ReactNode
-  var two: js.UndefOr[ReactNode] = js.undefined
-  var value: Double | String
-  var zero: js.UndefOr[ReactNode] = js.undefined
+  var few: js.UndefOr[ReactNode] = js.native
+  var id: js.UndefOr[String] = js.native
+  var many: js.UndefOr[ReactNode] = js.native
+  var offset: js.UndefOr[Double | String] = js.native
+  var one: js.UndefOr[ReactNode] = js.native
+  var other: ReactNode = js.native
+  var two: js.UndefOr[ReactNode] = js.native
+  var value: Double | String = js.native
+  var zero: js.UndefOr[ReactNode] = js.native
 }
 
 object PluralPropsWithoutI18n {
   @scala.inline
-  def apply(
-    value: Double | String,
-    StringDictionary: /* exact */ StringDictionary[ReactNode] = null,
-    className: String = null,
-    description: String = null,
-    few: ReactNode = null,
-    id: String = null,
-    many: ReactNode = null,
-    offset: Double | String = null,
-    one: ReactNode = null,
-    other: ReactNode = null,
-    render: ReactNode = null,
-    two: ReactNode = null,
-    zero: ReactNode = null
-  ): PluralPropsWithoutI18n = {
+  def apply(value: Double | String): PluralPropsWithoutI18n = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (few != null) __obj.updateDynamic("few")(few.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (many != null) __obj.updateDynamic("many")(many.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (one != null) __obj.updateDynamic("one")(one.asInstanceOf[js.Any])
-    if (other != null) __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (two != null) __obj.updateDynamic("two")(two.asInstanceOf[js.Any])
-    if (zero != null) __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluralPropsWithoutI18n]
   }
+  @scala.inline
+  implicit class PluralPropsWithoutI18nOps[Self <: PluralPropsWithoutI18n] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValue(value: Double | String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFew(value: ReactNode): Self = this.set("few", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFew: Self = this.set("few", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setMany(value: ReactNode): Self = this.set("many", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMany: Self = this.set("many", js.undefined)
+    @scala.inline
+    def setOffset(value: Double | String): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOne(value: ReactNode): Self = this.set("one", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOne: Self = this.set("one", js.undefined)
+    @scala.inline
+    def setOther(value: ReactNode): Self = this.set("other", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOther: Self = this.set("other", js.undefined)
+    @scala.inline
+    def setTwo(value: ReactNode): Self = this.set("two", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTwo: Self = this.set("two", js.undefined)
+    @scala.inline
+    def setZero(value: ReactNode): Self = this.set("zero", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZero: Self = this.set("zero", js.undefined)
+  }
+  
 }
 

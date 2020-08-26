@@ -30,6 +30,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     */
   def claim(): GaxiosPromise[SchemaClaimDeviceResponse] = js.native
   def claim(callback: BodyResponseCallback[SchemaClaimDeviceResponse]): Unit = js.native
+  def claim(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClaimDeviceResponse] = js.native
   def claim(params: ParamsResourcePartnersDevicesClaim): GaxiosPromise[SchemaClaimDeviceResponse] = js.native
   def claim(
     params: ParamsResourcePartnersDevicesClaim,
@@ -63,6 +64,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     */
   def claimAsync(): GaxiosPromise[SchemaOperation] = js.native
   def claimAsync(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def claimAsync(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def claimAsync(params: ParamsResourcePartnersDevicesClaimasync): GaxiosPromise[SchemaOperation] = js.native
   def claimAsync(params: ParamsResourcePartnersDevicesClaimasync, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def claimAsync(
@@ -91,6 +93,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     */
   def findByIdentifier(): GaxiosPromise[SchemaFindDevicesByDeviceIdentifierResponse] = js.native
   def findByIdentifier(callback: BodyResponseCallback[SchemaFindDevicesByDeviceIdentifierResponse]): Unit = js.native
+  def findByIdentifier(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFindDevicesByDeviceIdentifierResponse] = js.native
   def findByIdentifier(params: ParamsResourcePartnersDevicesFindbyidentifier): GaxiosPromise[SchemaFindDevicesByDeviceIdentifierResponse] = js.native
   def findByIdentifier(
     params: ParamsResourcePartnersDevicesFindbyidentifier,
@@ -125,6 +128,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     */
   def findByOwner(): GaxiosPromise[SchemaFindDevicesByOwnerResponse] = js.native
   def findByOwner(callback: BodyResponseCallback[SchemaFindDevicesByOwnerResponse]): Unit = js.native
+  def findByOwner(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFindDevicesByOwnerResponse] = js.native
   def findByOwner(params: ParamsResourcePartnersDevicesFindbyowner): GaxiosPromise[SchemaFindDevicesByOwnerResponse] = js.native
   def findByOwner(
     params: ParamsResourcePartnersDevicesFindbyowner,
@@ -155,6 +159,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDevice] = js.native
   def get(callback: BodyResponseCallback[SchemaDevice]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDevice] = js.native
   def get(params: ParamsResourcePartnersDevicesGet): GaxiosPromise[SchemaDevice] = js.native
   def get(params: ParamsResourcePartnersDevicesGet, callback: BodyResponseCallback[SchemaDevice]): Unit = js.native
   def get(
@@ -184,6 +189,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     */
   def metadata(): GaxiosPromise[SchemaDeviceMetadata] = js.native
   def metadata(callback: BodyResponseCallback[SchemaDeviceMetadata]): Unit = js.native
+  def metadata(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeviceMetadata] = js.native
   def metadata(params: ParamsResourcePartnersDevicesMetadata): GaxiosPromise[SchemaDeviceMetadata] = js.native
   def metadata(
     params: ParamsResourcePartnersDevicesMetadata,
@@ -216,6 +222,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     */
   def unclaim(): GaxiosPromise[SchemaEmpty] = js.native
   def unclaim(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def unclaim(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def unclaim(params: ParamsResourcePartnersDevicesUnclaim): GaxiosPromise[SchemaEmpty] = js.native
   def unclaim(params: ParamsResourcePartnersDevicesUnclaim, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def unclaim(
@@ -246,6 +253,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     */
   def unclaimAsync(): GaxiosPromise[SchemaOperation] = js.native
   def unclaimAsync(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def unclaimAsync(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def unclaimAsync(params: ParamsResourcePartnersDevicesUnclaimasync): GaxiosPromise[SchemaOperation] = js.native
   def unclaimAsync(params: ParamsResourcePartnersDevicesUnclaimasync, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def unclaimAsync(
@@ -277,6 +285,7 @@ class ResourcePartnersDevices protected () extends js.Object {
     */
   def updateMetadataAsync(): GaxiosPromise[SchemaOperation] = js.native
   def updateMetadataAsync(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def updateMetadataAsync(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateMetadataAsync(params: ParamsResourcePartnersDevicesUpdatemetadataasync): GaxiosPromise[SchemaOperation] = js.native
   def updateMetadataAsync(
     params: ParamsResourcePartnersDevicesUpdatemetadataasync,

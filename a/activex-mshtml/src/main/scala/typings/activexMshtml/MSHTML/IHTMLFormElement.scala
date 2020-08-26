@@ -18,9 +18,11 @@ trait IHTMLFormElement extends js.Object {
   var onsubmit: js.Any = js.native
   var target: String = js.native
   def apply(): js.Any = js.native
+  def apply(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def apply(name: js.Any): js.Any = js.native
   def apply(name: js.Any, index: js.Any): js.Any = js.native
   def item(): js.Any = js.native
+  def item(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def item(name: js.Any): js.Any = js.native
   def item(name: js.Any, index: js.Any): js.Any = js.native
   def reset(): Unit = js.native

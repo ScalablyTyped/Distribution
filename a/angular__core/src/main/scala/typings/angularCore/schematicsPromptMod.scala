@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core/schematics/utils/schematics_prompt", JSImport.Namespace)
 @js.native
 object schematicsPromptMod extends js.Object {
-  /* Inlined inquirer.inquirer.Inquirer & { readonly prompts ,  readonly ui } */
+  /* Inlined inquirer.inquirer.Inquirer & { readonly prompts,  readonly ui} */
   @js.native
   trait Inquirer extends js.Object {
     /**

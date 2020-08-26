@@ -71,7 +71,7 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     *
     * @param context Null to remove the current rendering context, if any.
     */
-  def context(): this.type = js.native
+  def context(context: Null): this.type = js.native
   /**
     * Set the current rendering context and return the path generator.
     * The path generator will render to the specified context.
@@ -85,8 +85,7 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     *
     * Use the generic to cast the return type of the rendering context, if it is known for a specific application.
     */
-  @JSName("context")
-  def context_C_UnionGeoContextNull_C[C /* <: GeoContext | Null */](): C = js.native
+  def context[C /* <: GeoContext | Null */](): C = js.native
   /**
     * Returns the projected planar length (typically in pixels) for the specified GeoJSON object.
     * Point and MultiPoint geometries have zero length. For Polygon and MultiPolygon geometries, this method computes the summed length of all rings.
@@ -125,7 +124,7 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     *
     * @param projection Use null to set the identity projection.
     */
-  def projection(): this.type = js.native
+  def projection(projection: Null): this.type = js.native
   /**
     * Set the current projection to be used with the geo path generator.
     *
@@ -155,7 +154,6 @@ trait GeoPath_[This, DatumObject /* <: GeoPermissibleObjects */] extends js.Obje
     *
     * Use the generic to cast the return type of the projection, if it is known for a specific application.
     */
-  @JSName("projection")
-  def projection_P_UnionGeoConicProjectionGeoProjection_GeoStreamWrapperNull_P[P /* <: GeoConicProjection | GeoProjection_ | GeoStreamWrapper | Null */](): P = js.native
+  def projection[P /* <: GeoConicProjection | GeoProjection_ | GeoStreamWrapper | Null */](): P = js.native
 }
 

@@ -12,7 +12,7 @@ Shuffle and unshuffle an array by seed/key.
 | Keywords           | shuffle, seed, unshuffle, random, array, seeded |
 | # releases         | 1 |
 | # dependents       | 3 |
-| # downloads        | 38587 |
+| # downloads        | 42458 |
 | # stars            | 1 |
 
 ## Links

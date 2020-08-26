@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/plugin-blur" : "0.9.8"
+      "@jimp/plugin-blur" : "0.14.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/plugin-blur" : "0.9.8"
+      "@jimp/plugin-blur" : "0.14.0"
     }
   ],
   "compile-devDependencies" : [

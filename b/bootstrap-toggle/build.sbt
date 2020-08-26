@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "bootstrap-toggle"
-version := "2.2-dt-20190212Z-da5c07"
-scalaVersion := "2.13.2"
+version := "2.2-dt-20190212Z-3e7d12"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

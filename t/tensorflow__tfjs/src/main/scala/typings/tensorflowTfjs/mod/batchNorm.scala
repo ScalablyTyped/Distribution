@@ -14,28 +14,9 @@ object batchNorm extends js.Object {
     x: Tensor[R] | TensorLike,
     mean: Tensor[R] | Tensor1D | TensorLike,
     variance: Tensor[R] | Tensor1D | TensorLike,
-    offset: Tensor[R] | Tensor1D | TensorLike
+    offset: js.UndefOr[Tensor[R] | Tensor1D | TensorLike],
+    scale: js.UndefOr[Tensor[R] | Tensor1D | TensorLike],
+    varianceEpsilon: js.UndefOr[Double]
   ): Tensor[R] = js.native
-  def apply[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-    x: Tensor[R] | TensorLike,
-    mean: Tensor[R] | Tensor1D | TensorLike,
-    variance: Tensor[R] | Tensor1D | TensorLike,
-    offset: Tensor[R] | Tensor1D | TensorLike,
-    scale: Tensor[R] | Tensor1D | TensorLike
-  ): Tensor[R] = js.native
-  def apply[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-    x: Tensor[R] | TensorLike,
-    mean: Tensor[R] | Tensor1D | TensorLike,
-    variance: Tensor[R] | Tensor1D | TensorLike,
-    offset: Tensor[R] | Tensor1D | TensorLike,
-    scale: Tensor[R] | Tensor1D | TensorLike,
-    varianceEpsilon: Double
-  ): Tensor[R] = js.native
-  def apply[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](
-    x: TensorLike,
-    mean: Tensor[R] | Tensor1D | TensorLike,
-    variance: Tensor[R] | Tensor1D | TensorLike
-  ): Tensor[R] = js.native
-  def apply[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](x: Tensor[R], mean: Tensor[R] | Tensor1D | TensorLike, variance: Tensor[R] | Tensor1D | TensorLike): Tensor[R] = js.native
 }
 

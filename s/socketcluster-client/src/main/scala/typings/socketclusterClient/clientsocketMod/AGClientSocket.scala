@@ -100,6 +100,7 @@ trait AGClientSocket
   def decode(message: js.Any): js.Any = js.native
   def decodeBase64(encodedString: String): String = js.native
   def disconnect(): Unit = js.native
+  def disconnect(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def disconnect(code: Double): Unit = js.native
   def disconnect(code: Double, reason: String): Unit = js.native
   @JSName("emit")
@@ -215,6 +216,7 @@ trait AGClientSocket
   // ---- Receiver logic ----
   def receiver(receiverName: String): typings.streamDemux.demuxedConsumableStreamMod.^[_] = js.native
   def reconnect(): Unit = js.native
+  def reconnect(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def reconnect(code: Double): Unit = js.native
   def reconnect(code: Double, reason: String): Unit = js.native
   def send(data: js.Any): Unit = js.native

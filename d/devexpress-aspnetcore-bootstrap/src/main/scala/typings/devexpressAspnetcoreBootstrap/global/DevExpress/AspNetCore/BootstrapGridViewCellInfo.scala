@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 class BootstrapGridViewCellInfo protected ()
   extends typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapGridViewCellInfo {
   protected def this(instance: js.Any) = this()
-  /* CompleteClass */
-  override val instance: js.Any = js.native
-  /* CompleteClass */
-  override val rowVisibleIndex: Double = js.native
 }
 

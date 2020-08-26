@@ -19,11 +19,32 @@ trait SchemaLiasettingsListPosDataProvidersResponse extends js.Object {
 
 object SchemaLiasettingsListPosDataProvidersResponse {
   @scala.inline
-  def apply(kind: String = null, posDataProviders: js.Array[SchemaPosDataProviders] = null): SchemaLiasettingsListPosDataProvidersResponse = {
+  def apply(): SchemaLiasettingsListPosDataProvidersResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (posDataProviders != null) __obj.updateDynamic("posDataProviders")(posDataProviders.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiasettingsListPosDataProvidersResponse]
   }
+  @scala.inline
+  implicit class SchemaLiasettingsListPosDataProvidersResponseOps[Self <: SchemaLiasettingsListPosDataProvidersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPosDataProvidersVarargs(value: SchemaPosDataProviders*): Self = this.set("posDataProviders", js.Array(value :_*))
+    @scala.inline
+    def setPosDataProviders(value: js.Array[SchemaPosDataProviders]): Self = this.set("posDataProviders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosDataProviders: Self = this.set("posDataProviders", js.undefined)
+  }
+  
 }
 

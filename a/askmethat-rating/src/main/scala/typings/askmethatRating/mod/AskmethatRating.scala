@@ -18,6 +18,7 @@ class AskmethatRating protected () extends js.Object {
     */
   def this(element: HTMLDivElement) = this()
   def this(element: HTMLDivElement, defaultValue: Double) = this()
+  def this(element: HTMLDivElement, defaultValue: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLDivElement, defaultValue: Double, options: js.Any) = this()
   /**
     * Default option base on @type IAskmethatRatingOptions
@@ -76,19 +77,16 @@ class AskmethatRating protected () extends js.Object {
     * @function mouse out event in rating
     * @param  {type} event?: Event {event}
     */
-  /* private */ def onMouseLeave(): js.Any = js.native
   /* private */ def onMouseLeave(event: js.Any): js.Any = js.native
   /**
     * @function mouse event enter in rating
     * @param  {type} event?: Event {event}
     */
-  /* private */ def onMouseMove(): js.Any = js.native
   /* private */ def onMouseMove(event: js.Any): js.Any = js.native
   /**
     * @function when a rating is clicked
     * @param  {type} event : Event {event object}
     */
-  /* private */ def onRatingClick(): js.Any = js.native
   /* private */ def onRatingClick(event: js.Any): js.Any = js.native
   /**
     * render a new rating, by default value is the minRating

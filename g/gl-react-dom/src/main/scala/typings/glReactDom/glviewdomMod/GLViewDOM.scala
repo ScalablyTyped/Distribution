@@ -20,9 +20,15 @@ class GLViewDOM ()
   var gl: js.UndefOr[WebGLRenderingContext] = js.native
   var webglContextAttributes: WebGLContextAttributes = js.native
   def captureAsBlob(callback: js.Function1[/* data */ Blob, Unit]): js.Promise[Blob] = js.native
+  def captureAsBlob(
+    callback: js.Function1[/* data */ Blob, Unit],
+    `type`: js.UndefOr[scala.Nothing],
+    quality: ValidQuality
+  ): js.Promise[Blob] = js.native
   def captureAsBlob(callback: js.Function1[/* data */ Blob, Unit], `type`: SupportedImage): js.Promise[Blob] = js.native
   def captureAsBlob(callback: js.Function1[/* data */ Blob, Unit], `type`: SupportedImage, quality: ValidQuality): js.Promise[Blob] = js.native
   def captureAsDataURL(): String = js.native
+  def captureAsDataURL(`type`: js.UndefOr[scala.Nothing], quality: ValidQuality): String = js.native
   def captureAsDataURL(`type`: SupportedImage): String = js.native
   def captureAsDataURL(`type`: SupportedImage, quality: ValidQuality): String = js.native
   def onRef(ref: HTMLCanvasElement): Unit = js.native

@@ -22,16 +22,34 @@ trait AddressBook extends js.Object {
 
 object AddressBook {
   @scala.inline
-  def apply(
-    AddressBookArn: Arn = null,
-    Description: AddressBookDescription = null,
-    Name: AddressBookName = null
-  ): AddressBook = {
+  def apply(): AddressBook = {
     val __obj = js.Dynamic.literal()
-    if (AddressBookArn != null) __obj.updateDynamic("AddressBookArn")(AddressBookArn.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressBook]
   }
+  @scala.inline
+  implicit class AddressBookOps[Self <: AddressBook] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressBookArn(value: Arn): Self = this.set("AddressBookArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressBookArn: Self = this.set("AddressBookArn", js.undefined)
+    @scala.inline
+    def setDescription(value: AddressBookDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setName(value: AddressBookName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

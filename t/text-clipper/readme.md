@@ -1,7 +1,7 @@
 
 # Scala.js typings for text-clipper
 
-Typings are for version 1.3.0
+Typings are for version 2.1.0
 
 ## Library description:
 Fast and correct clip functions for HTML and plain text.

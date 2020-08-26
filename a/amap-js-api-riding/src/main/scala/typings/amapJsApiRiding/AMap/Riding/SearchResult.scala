@@ -14,18 +14,8 @@ trait SearchResult extends js.Object
 
 object SearchResult {
   @scala.inline
-  def SearchResultBase(
-    count: Double,
-    destination: LngLat,
-    info: String,
-    origin: LngLat,
-    routes: js.Array[RideRoute],
-    end: Poi = null,
-    start: Poi = null
-  ): SearchResult = {
+  def SearchResultBase(count: Double, destination: LngLat, info: String, origin: LngLat, routes: js.Array[RideRoute]): SearchResult = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResult]
   }
   @scala.inline

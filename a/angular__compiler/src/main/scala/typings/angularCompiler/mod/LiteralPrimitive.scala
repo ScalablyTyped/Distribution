@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "LiteralPrimitive")
 @js.native
 class LiteralPrimitive protected ()
-  extends typings.angularCompiler.publicApiMod.LiteralPrimitive {
+  extends typings.angularCompiler.compilerMod.LiteralPrimitive {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

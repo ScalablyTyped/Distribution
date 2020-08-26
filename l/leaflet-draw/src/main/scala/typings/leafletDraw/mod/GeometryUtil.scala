@@ -29,6 +29,7 @@ object GeometryUtil extends js.Object {
     * Returns a readable area string in yards or metric
     */
   def readableArea(area: Double): String = js.native
+  def readableArea(area: Double, isMetric: js.UndefOr[scala.Nothing], precision: PrecisionOptions): String = js.native
   def readableArea(area: Double, isMetric: Boolean): String = js.native
   def readableArea(area: Double, isMetric: Boolean, precision: PrecisionOptions): String = js.native
   /**
@@ -36,8 +37,66 @@ object GeometryUtil extends js.Object {
     * The value will be rounded as defined by the precision option object.
     */
   def readableDistance(distance: Double): String = js.native
+  def readableDistance(
+    distance: Double,
+    isMetric: js.UndefOr[scala.Nothing],
+    isFeet: js.UndefOr[scala.Nothing],
+    isNauticalMile: js.UndefOr[scala.Nothing],
+    precision: PrecisionOptions
+  ): String = js.native
+  def readableDistance(
+    distance: Double,
+    isMetric: js.UndefOr[scala.Nothing],
+    isFeet: js.UndefOr[scala.Nothing],
+    isNauticalMile: Boolean
+  ): String = js.native
+  def readableDistance(
+    distance: Double,
+    isMetric: js.UndefOr[scala.Nothing],
+    isFeet: js.UndefOr[scala.Nothing],
+    isNauticalMile: Boolean,
+    precision: PrecisionOptions
+  ): String = js.native
+  def readableDistance(distance: Double, isMetric: js.UndefOr[scala.Nothing], isFeet: Boolean): String = js.native
+  def readableDistance(
+    distance: Double,
+    isMetric: js.UndefOr[scala.Nothing],
+    isFeet: Boolean,
+    isNauticalMile: js.UndefOr[scala.Nothing],
+    precision: PrecisionOptions
+  ): String = js.native
+  def readableDistance(distance: Double, isMetric: js.UndefOr[scala.Nothing], isFeet: Boolean, isNauticalMile: Boolean): String = js.native
+  def readableDistance(
+    distance: Double,
+    isMetric: js.UndefOr[scala.Nothing],
+    isFeet: Boolean,
+    isNauticalMile: Boolean,
+    precision: PrecisionOptions
+  ): String = js.native
   def readableDistance(distance: Double, isMetric: Boolean): String = js.native
+  def readableDistance(
+    distance: Double,
+    isMetric: Boolean,
+    isFeet: js.UndefOr[scala.Nothing],
+    isNauticalMile: js.UndefOr[scala.Nothing],
+    precision: PrecisionOptions
+  ): String = js.native
+  def readableDistance(distance: Double, isMetric: Boolean, isFeet: js.UndefOr[scala.Nothing], isNauticalMile: Boolean): String = js.native
+  def readableDistance(
+    distance: Double,
+    isMetric: Boolean,
+    isFeet: js.UndefOr[scala.Nothing],
+    isNauticalMile: Boolean,
+    precision: PrecisionOptions
+  ): String = js.native
   def readableDistance(distance: Double, isMetric: Boolean, isFeet: Boolean): String = js.native
+  def readableDistance(
+    distance: Double,
+    isMetric: Boolean,
+    isFeet: Boolean,
+    isNauticalMile: js.UndefOr[scala.Nothing],
+    precision: PrecisionOptions
+  ): String = js.native
   def readableDistance(distance: Double, isMetric: Boolean, isFeet: Boolean, isNauticalMile: Boolean): String = js.native
   def readableDistance(
     distance: Double,

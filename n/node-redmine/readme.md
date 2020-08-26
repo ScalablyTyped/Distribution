@@ -12,7 +12,7 @@ node-redmine is a nodejs library which supports 100% features of Redmine's REST 
 | Keywords           | Redmine, nodejs, REST API |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 13071 |
+| # downloads        | 13292 |
 | # stars            | 3 |
 
 ## Links

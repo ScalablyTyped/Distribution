@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object keyInPause extends js.Object {
   def apply(): Unit = js.native
+  def apply(query: js.UndefOr[scala.Nothing], options: BasicOptions): Unit = js.native
   def apply(query: js.Any): Unit = js.native
   def apply(query: js.Any, options: BasicOptions): Unit = js.native
 }

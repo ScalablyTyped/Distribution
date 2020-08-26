@@ -50,6 +50,7 @@ class Neuron_ () extends js.Object {
     * Hardcodes the behavior of the neuron into an optimized function.
     */
   def optimize(): Activationsentences = js.native
+  def optimize(optimized: js.UndefOr[scala.Nothing], layer: js.Any): Activationsentences = js.native
   def optimize(optimized: js.Any): Activationsentences = js.native
   def optimize(optimized: js.Any, layer: js.Any): Activationsentences = js.native
   /**

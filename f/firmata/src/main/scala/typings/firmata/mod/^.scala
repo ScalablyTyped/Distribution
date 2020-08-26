@@ -18,6 +18,11 @@ class ^ protected () extends Board {
   def this(serialPort: js.Any, optionsOrCallback: Options) = this()
   def this(
     serialPort: js.Any,
+    optionsOrCallback: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* error */ js.Any, Unit]
+  ) = this()
+  def this(
+    serialPort: js.Any,
     optionsOrCallback: js.Function1[/* error */ js.Any, Unit],
     callback: js.Function1[/* error */ js.Any, Unit]
   ) = this()

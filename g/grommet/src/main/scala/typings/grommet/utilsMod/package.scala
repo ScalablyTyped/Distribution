@@ -46,7 +46,7 @@ package object utilsMod {
   type ColorType = js.UndefOr[java.lang.String | typings.grommet.anon.Dark]
   type DeepFreeze_ = js.Function1[/* obj */ js.Object, typings.grommet.utilsMod.DeepReadonly[js.Object]]
   type DeepReadonly[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof T ]: T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias grommet.grommet/utils.DeepReadonly<T[K]> * / object : T[K]}
+  {readonly [ K in keyof T ]: T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias grommet.grommet/es6/utils.DeepReadonly<T[K]> * / object : T[K]}
     */ typings.grommet.grommetStrings.DeepReadonly with org.scalablytyped.runtime.TopLevel[js.Any]
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.none
@@ -77,13 +77,13 @@ package object utilsMod {
     - java.lang.String
   */
   type GapType = typings.grommet.utilsMod._GapType | java.lang.String
-  type GraphColorsType = js.Array[java.lang.String] | typings.grommet.anon.DarkArray
+  type GraphColorsType = js.Array[java.lang.String] | typings.grommet.anon.`23`
   type GridAreaType = java.lang.String
   type KeyboardType = js.Function1[/* event */ typings.react.mod.KeyboardEvent[typings.std.HTMLElement], scala.Unit]
   type MarginType = typings.grommet.utilsMod.EdgeType
   type NonUndefined[T] = T
   type NonUndefinedProps[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? grommet.grommet/utils.NonUndefined<T[K]>}
+  {[ K in keyof T ]:? grommet.grommet/es6/utils.NonUndefined<T[K]>}
     */ typings.grommet.grommetStrings.NonUndefinedProps with org.scalablytyped.runtime.TopLevel[T]
   type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
   /* Rewritten from type alias, can be one of: 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class PaymentError () extends FeathersError {
   def this(msg: String) = this()
   def this(msg: Error) = this()
+  def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
   def this(msg: String, data: js.Any) = this()
   def this(msg: Error, data: js.Any) = this()
 }

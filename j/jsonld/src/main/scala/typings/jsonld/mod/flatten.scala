@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object flatten extends js.Object {
   def apply(input: Document): js.Promise[JsonLdObj] = js.native
+  def apply(input: Document, ctx: js.UndefOr[Context], options: Flatten): js.Promise[JsonLdObj] = js.native
   def apply(input: Document, ctx: Null, callback: Callback[JsonLdObj]): Unit = js.native
   def apply(input: Document, ctx: Null, options: Flatten, callback: Callback[JsonLdObj]): Unit = js.native
   def apply(input: Document, ctx: Context): js.Promise[JsonLdObj] = js.native
   def apply(input: Document, ctx: Context, callback: Callback[JsonLdObj]): Unit = js.native
-  def apply(input: Document, ctx: Context, options: Flatten): js.Promise[JsonLdObj] = js.native
   def apply(input: Document, ctx: Context, options: Flatten, callback: Callback[JsonLdObj]): Unit = js.native
 }
 

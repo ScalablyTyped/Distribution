@@ -4,38 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SignIn extends Entity {
   // App name displayed in the Azure Portal.
-  var appDisplayName: js.UndefOr[String] = js.undefined
+  var appDisplayName: js.UndefOr[String] = js.native
   // Unique GUID representing the app ID in the Azure Active Directory.
-  var appId: js.UndefOr[String] = js.undefined
-  var appliedConditionalAccessPolicies: js.UndefOr[js.Array[AppliedConditionalAccessPolicy]] = js.undefined
+  var appId: js.UndefOr[String] = js.native
+  var appliedConditionalAccessPolicies: js.UndefOr[js.Array[AppliedConditionalAccessPolicy]] = js.native
   /**
     * Identifies the legacy client used for sign-in activity. Includes Browser, Exchange Active Sync, modern clients, IMAP,
     * MAPI, SMTP, and POP.
     */
-  var clientAppUsed: js.UndefOr[String] = js.undefined
+  var clientAppUsed: js.UndefOr[String] = js.native
   /**
     * Reports status of an activated conditional access policy. Possible values are: success, failure, notApplied, and
     * unknownFutureValue.
     */
-  var conditionalAccessStatus: js.UndefOr[ConditionalAccessStatus] = js.undefined
+  var conditionalAccessStatus: js.UndefOr[ConditionalAccessStatus] = js.native
   // The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity.
-  var correlationId: js.UndefOr[String] = js.undefined
+  var correlationId: js.UndefOr[String] = js.native
   // Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as '2014-01-01T00:00:00Z'.
-  var createdDateTime: js.UndefOr[String] = js.undefined
+  var createdDateTime: js.UndefOr[String] = js.native
   // Device information from where the sign-in occurred; includes device ID, operating system, and browser.
-  var deviceDetail: js.UndefOr[DeviceDetail] = js.undefined
+  var deviceDetail: js.UndefOr[DeviceDetail] = js.native
   // IP address of the client used to sign in.
-  var ipAddress: js.UndefOr[String] = js.undefined
+  var ipAddress: js.UndefOr[String] = js.native
   // Indicates if a sign-in is interactive or not.
-  var isInteractive: js.UndefOr[Boolean] = js.undefined
+  var isInteractive: js.UndefOr[Boolean] = js.native
   // Provides the city, state, and country code where the sign-in originated.
-  var location: js.UndefOr[SignInLocation] = js.undefined
+  var location: js.UndefOr[SignInLocation] = js.native
   // Name of the resource the user signed into.
-  var resourceDisplayName: js.UndefOr[String] = js.undefined
+  var resourceDisplayName: js.UndefOr[String] = js.native
   // ID of the resource that the user signed into.
-  var resourceId: js.UndefOr[String] = js.undefined
+  var resourceId: js.UndefOr[String] = js.native
   /**
     * Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: none,
     * adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset,
@@ -44,92 +45,162 @@ trait SignIn extends Entity {
     * or sign-in so far. Note: Details for this property require an Azure AD Premium P2 license. Other licenses return the
     * value hidden.
     */
-  var riskDetail: js.UndefOr[RiskDetail] = js.undefined
+  var riskDetail: js.UndefOr[RiskDetail] = js.native
   /**
     * Risk event types associated with the sign-in. The possible values are: unlikelyTravel, anonymizedIPAddress,
     * maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials,
     * investigationsThreatIntelligence, generic, and unknownFutureValue.
     */
-  var riskEventTypes: js.UndefOr[js.Array[RiskEventType]] = js.undefined
+  var riskEventTypes: js.UndefOr[js.Array[RiskEventType]] = js.native
+  /**
+    * The list of risk event types associated with the sign-in. Possible values: unlikelyTravel, anonymizedIPAddress,
+    * maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials,
+    * investigationsThreatIntelligence, generic, or unknownFutureValue.
+    */
+  var riskEventTypes_v2: js.UndefOr[js.Array[String]] = js.native
   /**
     * Aggregated risk level. The possible values are: none, low, medium, high, hidden, and unknownFutureValue. The value
     * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Note: Details for this property are
     * only available for Azure AD Premium P2 customers. All other customers will be returned hidden.
     */
-  var riskLevelAggregated: js.UndefOr[RiskLevel] = js.undefined
+  var riskLevelAggregated: js.UndefOr[RiskLevel] = js.native
   /**
     * Risk level during sign-in. The possible values are: none, low, medium, high, hidden, and unknownFutureValue. The value
     * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Note: Details for this property are
     * only available for Azure AD Premium P2 customers. All other customers will be returned hidden.
     */
-  var riskLevelDuringSignIn: js.UndefOr[RiskLevel] = js.undefined
+  var riskLevelDuringSignIn: js.UndefOr[RiskLevel] = js.native
   /**
     * Reports status of the risky user, sign-in, or a risk event. The possible values are: none, confirmedSafe, remediated,
     * dismissed, atRisk, confirmedCompromised, unknownFutureValue.
     */
-  var riskState: js.UndefOr[RiskState] = js.undefined
+  var riskState: js.UndefOr[RiskState] = js.native
   // Sign-in status. Possible values include Success and Failure.
-  var status: js.UndefOr[SignInStatus] = js.undefined
+  var status: js.UndefOr[SignInStatus] = js.native
   // Display name of the user that initiated the sign-in.
-  var userDisplayName: js.UndefOr[String] = js.undefined
+  var userDisplayName: js.UndefOr[String] = js.native
   // ID of the user that initiated the sign-in.
-  var userId: js.UndefOr[String] = js.undefined
+  var userId: js.UndefOr[String] = js.native
   // User principal name of the user that initiated the sign-in.
-  var userPrincipalName: js.UndefOr[String] = js.undefined
+  var userPrincipalName: js.UndefOr[String] = js.native
 }
 
 object SignIn {
   @scala.inline
-  def apply(
-    appDisplayName: String = null,
-    appId: String = null,
-    appliedConditionalAccessPolicies: js.Array[AppliedConditionalAccessPolicy] = null,
-    clientAppUsed: String = null,
-    conditionalAccessStatus: ConditionalAccessStatus = null,
-    correlationId: String = null,
-    createdDateTime: String = null,
-    deviceDetail: DeviceDetail = null,
-    id: String = null,
-    ipAddress: String = null,
-    isInteractive: js.UndefOr[Boolean] = js.undefined,
-    location: SignInLocation = null,
-    resourceDisplayName: String = null,
-    resourceId: String = null,
-    riskDetail: RiskDetail = null,
-    riskEventTypes: js.Array[RiskEventType] = null,
-    riskLevelAggregated: RiskLevel = null,
-    riskLevelDuringSignIn: RiskLevel = null,
-    riskState: RiskState = null,
-    status: SignInStatus = null,
-    userDisplayName: String = null,
-    userId: String = null,
-    userPrincipalName: String = null
-  ): SignIn = {
+  def apply(): SignIn = {
     val __obj = js.Dynamic.literal()
-    if (appDisplayName != null) __obj.updateDynamic("appDisplayName")(appDisplayName.asInstanceOf[js.Any])
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (appliedConditionalAccessPolicies != null) __obj.updateDynamic("appliedConditionalAccessPolicies")(appliedConditionalAccessPolicies.asInstanceOf[js.Any])
-    if (clientAppUsed != null) __obj.updateDynamic("clientAppUsed")(clientAppUsed.asInstanceOf[js.Any])
-    if (conditionalAccessStatus != null) __obj.updateDynamic("conditionalAccessStatus")(conditionalAccessStatus.asInstanceOf[js.Any])
-    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (deviceDetail != null) __obj.updateDynamic("deviceDetail")(deviceDetail.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.get.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (resourceDisplayName != null) __obj.updateDynamic("resourceDisplayName")(resourceDisplayName.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (riskDetail != null) __obj.updateDynamic("riskDetail")(riskDetail.asInstanceOf[js.Any])
-    if (riskEventTypes != null) __obj.updateDynamic("riskEventTypes")(riskEventTypes.asInstanceOf[js.Any])
-    if (riskLevelAggregated != null) __obj.updateDynamic("riskLevelAggregated")(riskLevelAggregated.asInstanceOf[js.Any])
-    if (riskLevelDuringSignIn != null) __obj.updateDynamic("riskLevelDuringSignIn")(riskLevelDuringSignIn.asInstanceOf[js.Any])
-    if (riskState != null) __obj.updateDynamic("riskState")(riskState.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (userDisplayName != null) __obj.updateDynamic("userDisplayName")(userDisplayName.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignIn]
   }
+  @scala.inline
+  implicit class SignInOps[Self <: SignIn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppDisplayName(value: String): Self = this.set("appDisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppDisplayName: Self = this.set("appDisplayName", js.undefined)
+    @scala.inline
+    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppId: Self = this.set("appId", js.undefined)
+    @scala.inline
+    def setAppliedConditionalAccessPoliciesVarargs(value: AppliedConditionalAccessPolicy*): Self = this.set("appliedConditionalAccessPolicies", js.Array(value :_*))
+    @scala.inline
+    def setAppliedConditionalAccessPolicies(value: js.Array[AppliedConditionalAccessPolicy]): Self = this.set("appliedConditionalAccessPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppliedConditionalAccessPolicies: Self = this.set("appliedConditionalAccessPolicies", js.undefined)
+    @scala.inline
+    def setClientAppUsed(value: String): Self = this.set("clientAppUsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientAppUsed: Self = this.set("clientAppUsed", js.undefined)
+    @scala.inline
+    def setConditionalAccessStatus(value: ConditionalAccessStatus): Self = this.set("conditionalAccessStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionalAccessStatus: Self = this.set("conditionalAccessStatus", js.undefined)
+    @scala.inline
+    def setCorrelationId(value: String): Self = this.set("correlationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorrelationId: Self = this.set("correlationId", js.undefined)
+    @scala.inline
+    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    @scala.inline
+    def setDeviceDetail(value: DeviceDetail): Self = this.set("deviceDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceDetail: Self = this.set("deviceDetail", js.undefined)
+    @scala.inline
+    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    @scala.inline
+    def setIsInteractive(value: Boolean): Self = this.set("isInteractive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsInteractive: Self = this.set("isInteractive", js.undefined)
+    @scala.inline
+    def setLocation(value: SignInLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setResourceDisplayName(value: String): Self = this.set("resourceDisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceDisplayName: Self = this.set("resourceDisplayName", js.undefined)
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    @scala.inline
+    def setRiskDetail(value: RiskDetail): Self = this.set("riskDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiskDetail: Self = this.set("riskDetail", js.undefined)
+    @scala.inline
+    def setRiskEventTypesVarargs(value: RiskEventType*): Self = this.set("riskEventTypes", js.Array(value :_*))
+    @scala.inline
+    def setRiskEventTypes(value: js.Array[RiskEventType]): Self = this.set("riskEventTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiskEventTypes: Self = this.set("riskEventTypes", js.undefined)
+    @scala.inline
+    def setRiskEventTypes_v2Varargs(value: String*): Self = this.set("riskEventTypes_v2", js.Array(value :_*))
+    @scala.inline
+    def setRiskEventTypes_v2(value: js.Array[String]): Self = this.set("riskEventTypes_v2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiskEventTypes_v2: Self = this.set("riskEventTypes_v2", js.undefined)
+    @scala.inline
+    def setRiskLevelAggregated(value: RiskLevel): Self = this.set("riskLevelAggregated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiskLevelAggregated: Self = this.set("riskLevelAggregated", js.undefined)
+    @scala.inline
+    def setRiskLevelDuringSignIn(value: RiskLevel): Self = this.set("riskLevelDuringSignIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiskLevelDuringSignIn: Self = this.set("riskLevelDuringSignIn", js.undefined)
+    @scala.inline
+    def setRiskState(value: RiskState): Self = this.set("riskState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiskState: Self = this.set("riskState", js.undefined)
+    @scala.inline
+    def setStatus(value: SignInStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setUserDisplayName(value: String): Self = this.set("userDisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserDisplayName: Self = this.set("userDisplayName", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+    @scala.inline
+    def setUserPrincipalName(value: String): Self = this.set("userPrincipalName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPrincipalName: Self = this.set("userPrincipalName", js.undefined)
+  }
+  
 }
 

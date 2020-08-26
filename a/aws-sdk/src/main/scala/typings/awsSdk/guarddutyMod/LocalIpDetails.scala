@@ -14,10 +14,26 @@ trait LocalIpDetails extends js.Object {
 
 object LocalIpDetails {
   @scala.inline
-  def apply(IpAddressV4: String = null): LocalIpDetails = {
+  def apply(): LocalIpDetails = {
     val __obj = js.Dynamic.literal()
-    if (IpAddressV4 != null) __obj.updateDynamic("IpAddressV4")(IpAddressV4.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalIpDetails]
   }
+  @scala.inline
+  implicit class LocalIpDetailsOps[Self <: LocalIpDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpAddressV4(value: String): Self = this.set("IpAddressV4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddressV4: Self = this.set("IpAddressV4", js.undefined)
+  }
+  
 }
 

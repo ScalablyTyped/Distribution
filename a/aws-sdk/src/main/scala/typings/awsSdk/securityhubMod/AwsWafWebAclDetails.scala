@@ -26,18 +26,40 @@ trait AwsWafWebAclDetails extends js.Object {
 
 object AwsWafWebAclDetails {
   @scala.inline
-  def apply(
-    DefaultAction: NonEmptyString = null,
-    Name: NonEmptyString = null,
-    Rules: AwsWafWebAclRuleList = null,
-    WebAclId: NonEmptyString = null
-  ): AwsWafWebAclDetails = {
+  def apply(): AwsWafWebAclDetails = {
     val __obj = js.Dynamic.literal()
-    if (DefaultAction != null) __obj.updateDynamic("DefaultAction")(DefaultAction.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Rules != null) __obj.updateDynamic("Rules")(Rules.asInstanceOf[js.Any])
-    if (WebAclId != null) __obj.updateDynamic("WebAclId")(WebAclId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsWafWebAclDetails]
   }
+  @scala.inline
+  implicit class AwsWafWebAclDetailsOps[Self <: AwsWafWebAclDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultAction(value: NonEmptyString): Self = this.set("DefaultAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAction: Self = this.set("DefaultAction", js.undefined)
+    @scala.inline
+    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: AwsWafWebAclRule*): Self = this.set("Rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: AwsWafWebAclRuleList): Self = this.set("Rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("Rules", js.undefined)
+    @scala.inline
+    def setWebAclId(value: NonEmptyString): Self = this.set("WebAclId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebAclId: Self = this.set("WebAclId", js.undefined)
+  }
+  
 }
 

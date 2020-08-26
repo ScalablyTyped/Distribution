@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("InsertSectionBreakOddPageCommand")
 @js.native
 class InsertSectionBreakOddPageCommand ()
-  extends typings.devexpressWeb.InsertSectionBreakOddPageCommand {
-  /**
-    * Executes the InsertSectionBreakOddPageCommand command.
-    */
-  /* CompleteClass */
-  override def execute(): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.InsertSectionBreakOddPageCommand
 

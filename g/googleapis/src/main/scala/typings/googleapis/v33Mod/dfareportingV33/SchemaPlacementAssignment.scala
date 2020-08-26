@@ -32,18 +32,38 @@ trait SchemaPlacementAssignment extends js.Object {
 
 object SchemaPlacementAssignment {
   @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    placementId: String = null,
-    placementIdDimensionValue: SchemaDimensionValue = null,
-    sslRequired: js.UndefOr[Boolean] = js.undefined
-  ): SchemaPlacementAssignment = {
+  def apply(): SchemaPlacementAssignment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (placementId != null) __obj.updateDynamic("placementId")(placementId.asInstanceOf[js.Any])
-    if (placementIdDimensionValue != null) __obj.updateDynamic("placementIdDimensionValue")(placementIdDimensionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlacementAssignment]
   }
+  @scala.inline
+  implicit class SchemaPlacementAssignmentOps[Self <: SchemaPlacementAssignment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setPlacementId(value: String): Self = this.set("placementId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementId: Self = this.set("placementId", js.undefined)
+    @scala.inline
+    def setPlacementIdDimensionValue(value: SchemaDimensionValue): Self = this.set("placementIdDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementIdDimensionValue: Self = this.set("placementIdDimensionValue", js.undefined)
+    @scala.inline
+    def setSslRequired(value: Boolean): Self = this.set("sslRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslRequired: Self = this.set("sslRequired", js.undefined)
+  }
+  
 }
 

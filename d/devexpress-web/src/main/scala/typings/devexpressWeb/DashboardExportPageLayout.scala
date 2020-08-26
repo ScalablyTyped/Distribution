@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Lists constants used to identify the page orientation used to export a dashboard/dashboard item.
   */
+@js.native
 trait DashboardExportPageLayout extends js.Object
 

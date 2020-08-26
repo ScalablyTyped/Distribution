@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TranslaterOptions extends js.Object {
-  var _locale: js.UndefOr[String] = js.undefined
-  var _purify: js.UndefOr[Boolean] = js.undefined
+  var _locale: js.UndefOr[String] = js.native
+  var _purify: js.UndefOr[Boolean] = js.native
 }
 
 object TranslaterOptions {
   @scala.inline
-  def apply(_locale: String = null, _purify: js.UndefOr[Boolean] = js.undefined): TranslaterOptions = {
+  def apply(): TranslaterOptions = {
     val __obj = js.Dynamic.literal()
-    if (_locale != null) __obj.updateDynamic("_locale")(_locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(_purify)) __obj.updateDynamic("_purify")(_purify.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslaterOptions]
   }
+  @scala.inline
+  implicit class TranslaterOptionsOps[Self <: TranslaterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_locale(value: String): Self = this.set("_locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_locale: Self = this.set("_locale", js.undefined)
+    @scala.inline
+    def set_purify(value: Boolean): Self = this.set("_purify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_purify: Self = this.set("_purify", js.undefined)
+  }
+  
 }
 

@@ -67,43 +67,92 @@ trait RecordArgs extends js.Object {
     */
   val weightedRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordWeightedRoutingPolicy]]]] = js.native
   /**
-    * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See [`resource_elb.zone_id`](https://www.terraform.io/docs/providers/aws/r/elb.html#zone_id) for example.
+    * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See `resource_elb.zone_id` for example.
     */
   val zoneId: Input[String] = js.native
 }
 
 object RecordArgs {
   @scala.inline
-  def apply(
-    name: Input[String],
-    `type`: Input[String | RecordType],
-    zoneId: Input[String],
-    aliases: Input[js.Array[Input[RecordAlias]]] = null,
-    allowOverwrite: Input[Boolean] = null,
-    failoverRoutingPolicies: Input[js.Array[Input[RecordFailoverRoutingPolicy]]] = null,
-    geolocationRoutingPolicies: Input[js.Array[Input[RecordGeolocationRoutingPolicy]]] = null,
-    healthCheckId: Input[String] = null,
-    latencyRoutingPolicies: Input[js.Array[Input[RecordLatencyRoutingPolicy]]] = null,
-    multivalueAnswerRoutingPolicy: Input[Boolean] = null,
-    records: Input[js.Array[Input[String]]] = null,
-    setIdentifier: Input[String] = null,
-    ttl: Input[Double] = null,
-    weightedRoutingPolicies: Input[js.Array[Input[RecordWeightedRoutingPolicy]]] = null
-  ): RecordArgs = {
+  def apply(name: Input[String], `type`: Input[String | RecordType], zoneId: Input[String]): RecordArgs = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (allowOverwrite != null) __obj.updateDynamic("allowOverwrite")(allowOverwrite.asInstanceOf[js.Any])
-    if (failoverRoutingPolicies != null) __obj.updateDynamic("failoverRoutingPolicies")(failoverRoutingPolicies.asInstanceOf[js.Any])
-    if (geolocationRoutingPolicies != null) __obj.updateDynamic("geolocationRoutingPolicies")(geolocationRoutingPolicies.asInstanceOf[js.Any])
-    if (healthCheckId != null) __obj.updateDynamic("healthCheckId")(healthCheckId.asInstanceOf[js.Any])
-    if (latencyRoutingPolicies != null) __obj.updateDynamic("latencyRoutingPolicies")(latencyRoutingPolicies.asInstanceOf[js.Any])
-    if (multivalueAnswerRoutingPolicy != null) __obj.updateDynamic("multivalueAnswerRoutingPolicy")(multivalueAnswerRoutingPolicy.asInstanceOf[js.Any])
-    if (records != null) __obj.updateDynamic("records")(records.asInstanceOf[js.Any])
-    if (setIdentifier != null) __obj.updateDynamic("setIdentifier")(setIdentifier.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (weightedRoutingPolicies != null) __obj.updateDynamic("weightedRoutingPolicies")(weightedRoutingPolicies.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordArgs]
   }
+  @scala.inline
+  implicit class RecordArgsOps[Self <: RecordArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Input[String | RecordType]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZoneId(value: Input[String]): Self = this.set("zoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAliasesVarargs(value: Input[RecordAlias]*): Self = this.set("aliases", js.Array(value :_*))
+    @scala.inline
+    def setAliases(value: Input[js.Array[Input[RecordAlias]]]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("aliases", js.undefined)
+    @scala.inline
+    def setAllowOverwrite(value: Input[Boolean]): Self = this.set("allowOverwrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowOverwrite: Self = this.set("allowOverwrite", js.undefined)
+    @scala.inline
+    def setFailoverRoutingPoliciesVarargs(value: Input[RecordFailoverRoutingPolicy]*): Self = this.set("failoverRoutingPolicies", js.Array(value :_*))
+    @scala.inline
+    def setFailoverRoutingPolicies(value: Input[js.Array[Input[RecordFailoverRoutingPolicy]]]): Self = this.set("failoverRoutingPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailoverRoutingPolicies: Self = this.set("failoverRoutingPolicies", js.undefined)
+    @scala.inline
+    def setGeolocationRoutingPoliciesVarargs(value: Input[RecordGeolocationRoutingPolicy]*): Self = this.set("geolocationRoutingPolicies", js.Array(value :_*))
+    @scala.inline
+    def setGeolocationRoutingPolicies(value: Input[js.Array[Input[RecordGeolocationRoutingPolicy]]]): Self = this.set("geolocationRoutingPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeolocationRoutingPolicies: Self = this.set("geolocationRoutingPolicies", js.undefined)
+    @scala.inline
+    def setHealthCheckId(value: Input[String]): Self = this.set("healthCheckId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckId: Self = this.set("healthCheckId", js.undefined)
+    @scala.inline
+    def setLatencyRoutingPoliciesVarargs(value: Input[RecordLatencyRoutingPolicy]*): Self = this.set("latencyRoutingPolicies", js.Array(value :_*))
+    @scala.inline
+    def setLatencyRoutingPolicies(value: Input[js.Array[Input[RecordLatencyRoutingPolicy]]]): Self = this.set("latencyRoutingPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatencyRoutingPolicies: Self = this.set("latencyRoutingPolicies", js.undefined)
+    @scala.inline
+    def setMultivalueAnswerRoutingPolicy(value: Input[Boolean]): Self = this.set("multivalueAnswerRoutingPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultivalueAnswerRoutingPolicy: Self = this.set("multivalueAnswerRoutingPolicy", js.undefined)
+    @scala.inline
+    def setRecordsVarargs(value: Input[String]*): Self = this.set("records", js.Array(value :_*))
+    @scala.inline
+    def setRecords(value: Input[js.Array[Input[String]]]): Self = this.set("records", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecords: Self = this.set("records", js.undefined)
+    @scala.inline
+    def setSetIdentifier(value: Input[String]): Self = this.set("setIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetIdentifier: Self = this.set("setIdentifier", js.undefined)
+    @scala.inline
+    def setTtl(value: Input[Double]): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTtl: Self = this.set("ttl", js.undefined)
+    @scala.inline
+    def setWeightedRoutingPoliciesVarargs(value: Input[RecordWeightedRoutingPolicy]*): Self = this.set("weightedRoutingPolicies", js.Array(value :_*))
+    @scala.inline
+    def setWeightedRoutingPolicies(value: Input[js.Array[Input[RecordWeightedRoutingPolicy]]]): Self = this.set("weightedRoutingPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeightedRoutingPolicies: Self = this.set("weightedRoutingPolicies", js.undefined)
+  }
+  
 }
 

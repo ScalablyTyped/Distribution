@@ -22,15 +22,34 @@ trait ProxyConfiguration extends js.Object {
 
 object ProxyConfiguration {
   @scala.inline
-  def apply(
-    containerName: String,
-    properties: ProxyConfigurationProperties = null,
-    `type`: ProxyConfigurationType = null
-  ): ProxyConfiguration = {
+  def apply(containerName: String): ProxyConfiguration = {
     val __obj = js.Dynamic.literal(containerName = containerName.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyConfiguration]
   }
+  @scala.inline
+  implicit class ProxyConfigurationOps[Self <: ProxyConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPropertiesVarargs(value: KeyValuePair*): Self = this.set("properties", js.Array(value :_*))
+    @scala.inline
+    def setProperties(value: ProxyConfigurationProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setType(value: ProxyConfigurationType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

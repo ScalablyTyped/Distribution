@@ -18,14 +18,30 @@ trait DataCatalogEncryptionSettings extends js.Object {
 
 object DataCatalogEncryptionSettings {
   @scala.inline
-  def apply(
-    ConnectionPasswordEncryption: ConnectionPasswordEncryption = null,
-    EncryptionAtRest: EncryptionAtRest = null
-  ): DataCatalogEncryptionSettings = {
+  def apply(): DataCatalogEncryptionSettings = {
     val __obj = js.Dynamic.literal()
-    if (ConnectionPasswordEncryption != null) __obj.updateDynamic("ConnectionPasswordEncryption")(ConnectionPasswordEncryption.asInstanceOf[js.Any])
-    if (EncryptionAtRest != null) __obj.updateDynamic("EncryptionAtRest")(EncryptionAtRest.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataCatalogEncryptionSettings]
   }
+  @scala.inline
+  implicit class DataCatalogEncryptionSettingsOps[Self <: DataCatalogEncryptionSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionPasswordEncryption(value: ConnectionPasswordEncryption): Self = this.set("ConnectionPasswordEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionPasswordEncryption: Self = this.set("ConnectionPasswordEncryption", js.undefined)
+    @scala.inline
+    def setEncryptionAtRest(value: EncryptionAtRest): Self = this.set("EncryptionAtRest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionAtRest: Self = this.set("EncryptionAtRest", js.undefined)
+  }
+  
 }
 

@@ -41,10 +41,6 @@ class DirInode[T] () extends Inode {
     *       responsibility of the FileIndex.
     */
   def getStats(): default = js.native
-  /* CompleteClass */
-  override def isDir(): Boolean = js.native
-  /* CompleteClass */
-  override def isFile(): Boolean = js.native
   /**
     * Removes the given item from the directory listing.
     * @param p Name of item to remove from the directory listing.

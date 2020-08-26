@@ -10,9 +10,9 @@ Asm.js implementation of WebCrypto API
 | ------------------ | :-------------: |
 | Full name          | asmcrypto.js |
 | Keywords           | - |
-| # releases         | 27 |
+| # releases         | 16 |
 | # dependents       | 13 |
-| # downloads        | 537854 |
+| # downloads        | 590223 |
 | # stars            | 0 |
 
 ## Links

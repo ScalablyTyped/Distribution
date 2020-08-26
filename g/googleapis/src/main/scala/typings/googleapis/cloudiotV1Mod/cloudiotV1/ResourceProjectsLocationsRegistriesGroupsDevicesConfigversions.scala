@@ -30,6 +30,7 @@ class ResourceProjectsLocationsRegistriesGroupsDevicesConfigversions protected (
     */
   def list(): GaxiosPromise[SchemaListDeviceConfigVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDeviceConfigVersionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDeviceConfigVersionsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesConfigversionsList): GaxiosPromise[SchemaListDeviceConfigVersionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesConfigversionsList,

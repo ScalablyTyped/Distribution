@@ -17,6 +17,7 @@ trait MQuery extends js.Object {
   def apply[T](`object`: MQueryResultSet[T]): MQueryResultSet[T] = js.native
   def contains(container: HTMLElement, contained: HTMLElement): Boolean = js.native
   def data(element: HTMLElement): js.Any = js.native
+  def data(element: HTMLElement, key: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
   def data(element: HTMLElement, key: String): js.Any = js.native
   def data(element: HTMLElement, key: String, value: js.Any): js.Any = js.native
   def every[T](

@@ -14,11 +14,8 @@ object lang extends js.Object {
   @js.native
   class IllegalOperationError () extends Error {
     def this(opt_caller: js.Function1[/* repeated */ js.Any, _]) = this()
+    def this(opt_caller: js.UndefOr[scala.Nothing], opt_message: js.Any) = this()
     def this(opt_caller: js.Function1[/* repeated */ js.Any, _], opt_message: js.Any) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   /**
@@ -27,12 +24,16 @@ object lang extends js.Object {
   @js.native
   class InvalidArgumentError () extends Error {
     def this(opt_caller: js.Function1[/* repeated */ js.Any, _]) = this()
+    def this(opt_caller: js.UndefOr[scala.Nothing], opt_argNr: Double) = this()
     def this(opt_caller: js.Function1[/* repeated */ js.Any, _], opt_argNr: Double) = this()
+    def this(opt_caller: js.UndefOr[scala.Nothing], opt_argNr: js.UndefOr[scala.Nothing], opt_message: js.Any) = this()
+    def this(opt_caller: js.UndefOr[scala.Nothing], opt_argNr: Double, opt_message: js.Any) = this()
+    def this(
+      opt_caller: js.Function1[/* repeated */ js.Any, _],
+      opt_argNr: js.UndefOr[scala.Nothing],
+      opt_message: js.Any
+    ) = this()
     def this(opt_caller: js.Function1[/* repeated */ js.Any, _], opt_argNr: Double, opt_message: js.Any) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   /**
@@ -41,12 +42,20 @@ object lang extends js.Object {
   @js.native
   class OutOfRangeError () extends Error {
     def this(opt_caller: js.Function1[/* repeated */ js.Any, _]) = this()
+    def this(opt_caller: js.UndefOr[scala.Nothing], opt_val: Double) = this()
     def this(opt_caller: js.Function1[/* repeated */ js.Any, _], opt_val: Double) = this()
+    def this(
+      opt_caller: js.UndefOr[scala.Nothing],
+      opt_val: js.UndefOr[scala.Nothing],
+      opt_range: js.Array[Double]
+    ) = this()
+    def this(opt_caller: js.UndefOr[scala.Nothing], opt_val: Double, opt_range: js.Array[Double]) = this()
+    def this(
+      opt_caller: js.Function1[/* repeated */ js.Any, _],
+      opt_val: js.UndefOr[scala.Nothing],
+      opt_range: js.Array[Double]
+    ) = this()
     def this(opt_caller: js.Function1[/* repeated */ js.Any, _], opt_val: Double, opt_range: js.Array[Double]) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
 }

@@ -38,23 +38,48 @@ trait VideoDescription extends js.Object {
 
 object VideoDescription {
   @scala.inline
-  def apply(
-    Name: string,
-    CodecSettings: VideoCodecSettings = null,
-    Height: js.UndefOr[integer] = js.undefined,
-    RespondToAfd: VideoDescriptionRespondToAfd = null,
-    ScalingBehavior: VideoDescriptionScalingBehavior = null,
-    Sharpness: js.UndefOr[integerMin0Max100] = js.undefined,
-    Width: js.UndefOr[integer] = js.undefined
-  ): VideoDescription = {
+  def apply(Name: string): VideoDescription = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (CodecSettings != null) __obj.updateDynamic("CodecSettings")(CodecSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height.get.asInstanceOf[js.Any])
-    if (RespondToAfd != null) __obj.updateDynamic("RespondToAfd")(RespondToAfd.asInstanceOf[js.Any])
-    if (ScalingBehavior != null) __obj.updateDynamic("ScalingBehavior")(ScalingBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(Sharpness)) __obj.updateDynamic("Sharpness")(Sharpness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoDescription]
   }
+  @scala.inline
+  implicit class VideoDescriptionOps[Self <: VideoDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCodecSettings(value: VideoCodecSettings): Self = this.set("CodecSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodecSettings: Self = this.set("CodecSettings", js.undefined)
+    @scala.inline
+    def setHeight(value: integer): Self = this.set("Height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("Height", js.undefined)
+    @scala.inline
+    def setRespondToAfd(value: VideoDescriptionRespondToAfd): Self = this.set("RespondToAfd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRespondToAfd: Self = this.set("RespondToAfd", js.undefined)
+    @scala.inline
+    def setScalingBehavior(value: VideoDescriptionScalingBehavior): Self = this.set("ScalingBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingBehavior: Self = this.set("ScalingBehavior", js.undefined)
+    @scala.inline
+    def setSharpness(value: integerMin0Max100): Self = this.set("Sharpness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharpness: Self = this.set("Sharpness", js.undefined)
+    @scala.inline
+    def setWidth(value: integer): Self = this.set("Width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("Width", js.undefined)
+  }
+  
 }
 

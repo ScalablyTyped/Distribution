@@ -12,7 +12,7 @@ Linkify URLs in a string
 | Keywords           | linkify, urls, url, link, reference, references, linkifies, href, string, text, dom |
 | # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 137954 |
+| # downloads        | 124095 |
 | # stars            | 1 |
 
 ## Links

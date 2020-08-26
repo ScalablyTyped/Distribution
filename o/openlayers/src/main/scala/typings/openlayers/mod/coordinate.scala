@@ -117,6 +117,7 @@ object coordinate extends js.Object {
     * @api stable
     */
   def toStringHDMS(): String = js.native
+  def toStringHDMS(coordinate: js.UndefOr[scala.Nothing], opt_fractionDigits: Double): String = js.native
   def toStringHDMS(coordinate: Coordinate_): String = js.native
   def toStringHDMS(coordinate: Coordinate_, opt_fractionDigits: Double): String = js.native
   /**
@@ -141,6 +142,7 @@ object coordinate extends js.Object {
     * @api stable
     */
   def toStringXY(): String = js.native
+  def toStringXY(coordinate: js.UndefOr[scala.Nothing], opt_fractionDigits: Double): String = js.native
   def toStringXY(coordinate: Coordinate_): String = js.native
   def toStringXY(coordinate: Coordinate_, opt_fractionDigits: Double): String = js.native
 }

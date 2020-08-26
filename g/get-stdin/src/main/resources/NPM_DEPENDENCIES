@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "get-stdin" : "7.0.0"
+      "get-stdin" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "get-stdin" : "7.0.0"
+      "get-stdin" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

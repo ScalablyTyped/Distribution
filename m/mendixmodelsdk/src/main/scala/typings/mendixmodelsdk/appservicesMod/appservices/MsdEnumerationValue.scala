@@ -26,11 +26,11 @@ class MsdEnumerationValue protected () extends Element {
   var model_FMsdEnumerationValue: IModel = js.native
   def containerAsMsdEnumeration: MsdEnumeration = js.native
   def guid: String = js.native
-  def guid(newValue: String): js.Any = js.native
+  def guid_=(newValue: String): Unit = js.native
   def image: String = js.native
-  def image(newValue: String): js.Any = js.native
+  def image_=(newValue: String): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def translations: IList[MsdText] = js.native
 }
 

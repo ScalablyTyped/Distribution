@@ -72,8 +72,39 @@ trait Tint extends js.Object {
     * @param bottomRight The tint being applied to the bottom-right of the Game Object.
     */
   def setTint(): this.type = js.native
+  def setTint(
+    topLeft: js.UndefOr[scala.Nothing],
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: integer
+  ): this.type = js.native
+  def setTint(topLeft: js.UndefOr[scala.Nothing], topRight: js.UndefOr[scala.Nothing], bottomLeft: integer): this.type = js.native
+  def setTint(
+    topLeft: js.UndefOr[scala.Nothing],
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: integer,
+    bottomRight: integer
+  ): this.type = js.native
+  def setTint(topLeft: js.UndefOr[scala.Nothing], topRight: integer): this.type = js.native
+  def setTint(
+    topLeft: js.UndefOr[scala.Nothing],
+    topRight: integer,
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: integer
+  ): this.type = js.native
+  def setTint(topLeft: js.UndefOr[scala.Nothing], topRight: integer, bottomLeft: integer): this.type = js.native
+  def setTint(topLeft: js.UndefOr[scala.Nothing], topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
   def setTint(topLeft: integer): this.type = js.native
+  def setTint(
+    topLeft: integer,
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: integer
+  ): this.type = js.native
+  def setTint(topLeft: integer, topRight: js.UndefOr[scala.Nothing], bottomLeft: integer): this.type = js.native
+  def setTint(topLeft: integer, topRight: js.UndefOr[scala.Nothing], bottomLeft: integer, bottomRight: integer): this.type = js.native
   def setTint(topLeft: integer, topRight: integer): this.type = js.native
+  def setTint(topLeft: integer, topRight: integer, bottomLeft: js.UndefOr[scala.Nothing], bottomRight: integer): this.type = js.native
   def setTint(topLeft: integer, topRight: integer, bottomLeft: integer): this.type = js.native
   def setTint(topLeft: integer, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
   /**
@@ -98,8 +129,39 @@ trait Tint extends js.Object {
     * @param bottomRight The tint being applied to the bottom-right of the Game Object.
     */
   def setTintFill(): this.type = js.native
+  def setTintFill(
+    topLeft: js.UndefOr[scala.Nothing],
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: integer
+  ): this.type = js.native
+  def setTintFill(topLeft: js.UndefOr[scala.Nothing], topRight: js.UndefOr[scala.Nothing], bottomLeft: integer): this.type = js.native
+  def setTintFill(
+    topLeft: js.UndefOr[scala.Nothing],
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: integer,
+    bottomRight: integer
+  ): this.type = js.native
+  def setTintFill(topLeft: js.UndefOr[scala.Nothing], topRight: integer): this.type = js.native
+  def setTintFill(
+    topLeft: js.UndefOr[scala.Nothing],
+    topRight: integer,
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: integer
+  ): this.type = js.native
+  def setTintFill(topLeft: js.UndefOr[scala.Nothing], topRight: integer, bottomLeft: integer): this.type = js.native
+  def setTintFill(topLeft: js.UndefOr[scala.Nothing], topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
   def setTintFill(topLeft: integer): this.type = js.native
+  def setTintFill(
+    topLeft: integer,
+    topRight: js.UndefOr[scala.Nothing],
+    bottomLeft: js.UndefOr[scala.Nothing],
+    bottomRight: integer
+  ): this.type = js.native
+  def setTintFill(topLeft: integer, topRight: js.UndefOr[scala.Nothing], bottomLeft: integer): this.type = js.native
+  def setTintFill(topLeft: integer, topRight: js.UndefOr[scala.Nothing], bottomLeft: integer, bottomRight: integer): this.type = js.native
   def setTintFill(topLeft: integer, topRight: integer): this.type = js.native
+  def setTintFill(topLeft: integer, topRight: integer, bottomLeft: js.UndefOr[scala.Nothing], bottomRight: integer): this.type = js.native
   def setTintFill(topLeft: integer, topRight: integer, bottomLeft: integer): this.type = js.native
   def setTintFill(topLeft: integer, topRight: integer, bottomLeft: integer, bottomRight: integer): this.type = js.native
 }

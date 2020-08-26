@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SensorRotationMatrix extends ISensorRotationMatrix
 
 object SensorRotationMatrix {

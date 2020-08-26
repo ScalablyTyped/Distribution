@@ -5,33 +5,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CellProps extends js.Object {
-  var align: js.UndefOr[Responsive[ALIGNMENT]] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var order: js.UndefOr[Responsive[Double]] = js.undefined
-  var overrides: js.UndefOr[typings.baseui.anon.Cell] = js.undefined
-  var skip: js.UndefOr[Responsive[Double]] = js.undefined
-  var span: js.UndefOr[Responsive[Double]] = js.undefined
+  var align: js.UndefOr[Responsive[ALIGNMENT]] = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var order: js.UndefOr[Responsive[Double]] = js.native
+  var overrides: js.UndefOr[typings.baseui.anon.Cell] = js.native
+  var skip: js.UndefOr[Responsive[Double]] = js.native
+  var span: js.UndefOr[Responsive[Double]] = js.native
 }
 
 object CellProps {
   @scala.inline
-  def apply(
-    align: Responsive[ALIGNMENT] = null,
-    children: ReactNode = null,
-    order: Responsive[Double] = null,
-    overrides: typings.baseui.anon.Cell = null,
-    skip: Responsive[Double] = null,
-    span: Responsive[Double] = null
-  ): CellProps = {
+  def apply(): CellProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellProps]
   }
+  @scala.inline
+  implicit class CellPropsOps[Self <: CellProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignVarargs(value: ALIGNMENT*): Self = this.set("align", js.Array(value :_*))
+    @scala.inline
+    def setAlign(value: Responsive[ALIGNMENT]): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setOrderVarargs(value: Double*): Self = this.set("order", js.Array(value :_*))
+    @scala.inline
+    def setOrder(value: Responsive[Double]): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+    @scala.inline
+    def setOverrides(value: typings.baseui.anon.Cell): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setSkipVarargs(value: Double*): Self = this.set("skip", js.Array(value :_*))
+    @scala.inline
+    def setSkip(value: Responsive[Double]): Self = this.set("skip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkip: Self = this.set("skip", js.undefined)
+    @scala.inline
+    def setSpanVarargs(value: Double*): Self = this.set("span", js.Array(value :_*))
+    @scala.inline
+    def setSpan(value: Responsive[Double]): Self = this.set("span", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpan: Self = this.set("span", js.undefined)
+  }
+  
 }
 

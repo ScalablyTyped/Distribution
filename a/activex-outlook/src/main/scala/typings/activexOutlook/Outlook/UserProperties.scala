@@ -14,6 +14,12 @@ trait UserProperties extends js.Object {
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
   def Add(Name: String, Type: OlUserPropertyType): UserProperty = js.native
+  def Add(
+    Name: String,
+    Type: OlUserPropertyType,
+    AddToFolderFields: js.UndefOr[scala.Nothing],
+    DisplayFormat: js.Any
+  ): UserProperty = js.native
   def Add(Name: String, Type: OlUserPropertyType, AddToFolderFields: js.Any): UserProperty = js.native
   def Add(Name: String, Type: OlUserPropertyType, AddToFolderFields: js.Any, DisplayFormat: js.Any): UserProperty = js.native
   def Find(Name: String): UserProperty = js.native

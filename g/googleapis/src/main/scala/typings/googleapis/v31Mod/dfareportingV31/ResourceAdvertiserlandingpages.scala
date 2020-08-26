@@ -28,6 +28,7 @@ class ResourceAdvertiserlandingpages protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLandingPage] = js.native
   def get(callback: BodyResponseCallback[SchemaLandingPage]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLandingPage] = js.native
   def get(params: ParamsResourceAdvertiserlandingpagesGet): GaxiosPromise[SchemaLandingPage] = js.native
   def get(params: ParamsResourceAdvertiserlandingpagesGet, callback: BodyResponseCallback[SchemaLandingPage]): Unit = js.native
   def get(
@@ -56,6 +57,7 @@ class ResourceAdvertiserlandingpages protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaLandingPage] = js.native
   def insert(callback: BodyResponseCallback[SchemaLandingPage]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLandingPage] = js.native
   def insert(params: ParamsResourceAdvertiserlandingpagesInsert): GaxiosPromise[SchemaLandingPage] = js.native
   def insert(
     params: ParamsResourceAdvertiserlandingpagesInsert,
@@ -95,6 +97,7 @@ class ResourceAdvertiserlandingpages protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAdvertiserLandingPagesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAdvertiserLandingPagesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdvertiserLandingPagesListResponse] = js.native
   def list(params: ParamsResourceAdvertiserlandingpagesList): GaxiosPromise[SchemaAdvertiserLandingPagesListResponse] = js.native
   def list(
     params: ParamsResourceAdvertiserlandingpagesList,
@@ -128,6 +131,7 @@ class ResourceAdvertiserlandingpages protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaLandingPage] = js.native
   def patch(callback: BodyResponseCallback[SchemaLandingPage]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLandingPage] = js.native
   def patch(params: ParamsResourceAdvertiserlandingpagesPatch): GaxiosPromise[SchemaLandingPage] = js.native
   def patch(
     params: ParamsResourceAdvertiserlandingpagesPatch,
@@ -159,6 +163,7 @@ class ResourceAdvertiserlandingpages protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaLandingPage] = js.native
   def update(callback: BodyResponseCallback[SchemaLandingPage]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLandingPage] = js.native
   def update(params: ParamsResourceAdvertiserlandingpagesUpdate): GaxiosPromise[SchemaLandingPage] = js.native
   def update(
     params: ParamsResourceAdvertiserlandingpagesUpdate,

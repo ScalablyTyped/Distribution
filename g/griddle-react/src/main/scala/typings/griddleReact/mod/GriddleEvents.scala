@@ -5,31 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GriddleEvents extends GriddleActions {
-  var onFilter: js.UndefOr[js.Function1[/* filterText */ String, Unit]] = js.undefined
-  var setSortProperties: js.UndefOr[js.Function1[/* sortProperties */ SortProperties, js.Function0[Unit]]] = js.undefined
+  var onFilter: js.UndefOr[js.Function1[/* filterText */ String, Unit]] = js.native
+  var setSortProperties: js.UndefOr[js.Function1[/* sortProperties */ SortProperties, js.Function0[Unit]]] = js.native
 }
 
 object GriddleEvents {
   @scala.inline
-  def apply(
-    onFilter: /* filterText */ String => Unit = null,
-    onGetPage: /* pageNumber */ Double => Unit = null,
-    onNext: () => Unit = null,
-    onPrevious: () => Unit = null,
-    onSort: /* sortProperties */ js.Any => Unit = null,
-    setFilter: /* filter */ GriddleFilter => Unit = null,
-    setSortProperties: /* sortProperties */ SortProperties => js.Function0[Unit] = null
-  ): GriddleEvents = {
+  def apply(): GriddleEvents = {
     val __obj = js.Dynamic.literal()
-    if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction1(onFilter))
-    if (onGetPage != null) __obj.updateDynamic("onGetPage")(js.Any.fromFunction1(onGetPage))
-    if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction0(onNext))
-    if (onPrevious != null) __obj.updateDynamic("onPrevious")(js.Any.fromFunction0(onPrevious))
-    if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction1(onSort))
-    if (setFilter != null) __obj.updateDynamic("setFilter")(js.Any.fromFunction1(setFilter))
-    if (setSortProperties != null) __obj.updateDynamic("setSortProperties")(js.Any.fromFunction1(setSortProperties))
     __obj.asInstanceOf[GriddleEvents]
   }
+  @scala.inline
+  implicit class GriddleEventsOps[Self <: GriddleEvents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnFilter(value: /* filterText */ String => Unit): Self = this.set("onFilter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFilter: Self = this.set("onFilter", js.undefined)
+    @scala.inline
+    def setSetSortProperties(value: /* sortProperties */ SortProperties => js.Function0[Unit]): Self = this.set("setSortProperties", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetSortProperties: Self = this.set("setSortProperties", js.undefined)
+  }
+  
 }
 

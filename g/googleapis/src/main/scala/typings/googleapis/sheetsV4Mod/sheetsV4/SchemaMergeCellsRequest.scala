@@ -21,11 +21,30 @@ trait SchemaMergeCellsRequest extends js.Object {
 
 object SchemaMergeCellsRequest {
   @scala.inline
-  def apply(mergeType: String = null, range: SchemaGridRange = null): SchemaMergeCellsRequest = {
+  def apply(): SchemaMergeCellsRequest = {
     val __obj = js.Dynamic.literal()
-    if (mergeType != null) __obj.updateDynamic("mergeType")(mergeType.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMergeCellsRequest]
   }
+  @scala.inline
+  implicit class SchemaMergeCellsRequestOps[Self <: SchemaMergeCellsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMergeType(value: String): Self = this.set("mergeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeType: Self = this.set("mergeType", js.undefined)
+    @scala.inline
+    def setRange(value: SchemaGridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+  }
+  
 }
 

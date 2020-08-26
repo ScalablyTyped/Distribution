@@ -22,16 +22,34 @@ trait ScalingParameters extends js.Object {
 
 object ScalingParameters {
   @scala.inline
-  def apply(
-    DesiredInstanceType: PartitionInstanceType = null,
-    DesiredPartitionCount: js.UndefOr[UIntValue] = js.undefined,
-    DesiredReplicationCount: js.UndefOr[UIntValue] = js.undefined
-  ): ScalingParameters = {
+  def apply(): ScalingParameters = {
     val __obj = js.Dynamic.literal()
-    if (DesiredInstanceType != null) __obj.updateDynamic("DesiredInstanceType")(DesiredInstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(DesiredPartitionCount)) __obj.updateDynamic("DesiredPartitionCount")(DesiredPartitionCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DesiredReplicationCount)) __obj.updateDynamic("DesiredReplicationCount")(DesiredReplicationCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingParameters]
   }
+  @scala.inline
+  implicit class ScalingParametersOps[Self <: ScalingParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesiredInstanceType(value: PartitionInstanceType): Self = this.set("DesiredInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredInstanceType: Self = this.set("DesiredInstanceType", js.undefined)
+    @scala.inline
+    def setDesiredPartitionCount(value: UIntValue): Self = this.set("DesiredPartitionCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredPartitionCount: Self = this.set("DesiredPartitionCount", js.undefined)
+    @scala.inline
+    def setDesiredReplicationCount(value: UIntValue): Self = this.set("DesiredReplicationCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredReplicationCount: Self = this.set("DesiredReplicationCount", js.undefined)
+  }
+  
 }
 

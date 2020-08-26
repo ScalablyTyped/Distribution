@@ -1,90 +1,92 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Allowrebasemerge extends js.Object {
-  var allow_merge_commit: Boolean
-  var allow_rebase_merge: Boolean
-  var allow_squash_merge: Boolean
-  var archive_url: String
-  var archived: Boolean
-  var assignees_url: String
-  var blobs_url: String
-  var branches_url: String
-  var clone_url: String
-  var collaborators_url: String
-  var comments_url: String
-  var commits_url: String
-  var compare_url: String
-  var contents_url: String
-  var contributors_url: String
-  var created_at: String
-  var default_branch: String
-  var delete_branch_on_merge: Boolean
-  var deployments_url: String
-  var description: String
-  var disabled: Boolean
-  var downloads_url: String
-  var events_url: String
-  var fork: Boolean
-  var forks_count: Double
-  var forks_url: String
-  var full_name: String
-  var git_commits_url: String
-  var git_refs_url: String
-  var git_tags_url: String
-  var git_url: String
-  var has_downloads: Boolean
-  var has_issues: Boolean
-  var has_pages: Boolean
-  var has_projects: Boolean
-  var has_wiki: Boolean
-  var homepage: String
-  var hooks_url: String
-  var html_url: String
-  var id: Double
-  var is_template: Boolean
-  var issue_comment_url: String
-  var issue_events_url: String
-  var issues_url: String
-  var keys_url: String
-  var labels_url: String
-  var language: String
-  var languages_url: String
-  var merges_url: String
-  var milestones_url: String
-  var mirror_url: String
-  var name: String
-  var network_count: Double
-  var node_id: String
-  var notifications_url: String
-  var open_issues_count: Double
-  var owner: Eventsurl
-  var `private`: Boolean
-  var pulls_url: String
-  var pushed_at: String
-  var releases_url: String
-  var size: Double
-  var ssh_url: String
-  var stargazers_count: Double
-  var stargazers_url: String
-  var statuses_url: String
-  var subscribers_count: Double
-  var subscribers_url: String
-  var subscription_url: String
-  var svn_url: String
-  var tags_url: String
-  var teams_url: String
-  var temp_clone_token: String
-  var template_repository: String
-  var topics: js.Array[String]
-  var trees_url: String
-  var updated_at: String
-  var url: String
-  var visibility: String
-  var watchers_count: Double
+  var allow_merge_commit: Boolean = js.native
+  var allow_rebase_merge: Boolean = js.native
+  var allow_squash_merge: Boolean = js.native
+  var archive_url: String = js.native
+  var archived: Boolean = js.native
+  var assignees_url: String = js.native
+  var blobs_url: String = js.native
+  var branches_url: String = js.native
+  var clone_url: String = js.native
+  var collaborators_url: String = js.native
+  var comments_url: String = js.native
+  var commits_url: String = js.native
+  var compare_url: String = js.native
+  var contents_url: String = js.native
+  var contributors_url: String = js.native
+  var created_at: String = js.native
+  var default_branch: String = js.native
+  var delete_branch_on_merge: Boolean = js.native
+  var deployments_url: String = js.native
+  var description: String = js.native
+  var disabled: Boolean = js.native
+  var downloads_url: String = js.native
+  var events_url: String = js.native
+  var fork: Boolean = js.native
+  var forks_count: Double = js.native
+  var forks_url: String = js.native
+  var full_name: String = js.native
+  var git_commits_url: String = js.native
+  var git_refs_url: String = js.native
+  var git_tags_url: String = js.native
+  var git_url: String = js.native
+  var has_downloads: Boolean = js.native
+  var has_issues: Boolean = js.native
+  var has_pages: Boolean = js.native
+  var has_projects: Boolean = js.native
+  var has_wiki: Boolean = js.native
+  var homepage: String = js.native
+  var hooks_url: String = js.native
+  var html_url: String = js.native
+  var id: Double = js.native
+  var is_template: Boolean = js.native
+  var issue_comment_url: String = js.native
+  var issue_events_url: String = js.native
+  var issues_url: String = js.native
+  var keys_url: String = js.native
+  var labels_url: String = js.native
+  var language: String = js.native
+  var languages_url: String = js.native
+  var merges_url: String = js.native
+  var milestones_url: String = js.native
+  var mirror_url: String = js.native
+  var name: String = js.native
+  var network_count: Double = js.native
+  var node_id: String = js.native
+  var notifications_url: String = js.native
+  var open_issues_count: Double = js.native
+  var owner: Avatarurl = js.native
+  var `private`: Boolean = js.native
+  var pulls_url: String = js.native
+  var pushed_at: String = js.native
+  var releases_url: String = js.native
+  var size: Double = js.native
+  var ssh_url: String = js.native
+  var stargazers_count: Double = js.native
+  var stargazers_url: String = js.native
+  var statuses_url: String = js.native
+  var subscribers_count: Double = js.native
+  var subscribers_url: String = js.native
+  var subscription_url: String = js.native
+  var svn_url: String = js.native
+  var tags_url: String = js.native
+  var teams_url: String = js.native
+  var temp_clone_token: String = js.native
+  var template_repository: StringDictionary[js.Any] = js.native
+  var topics: js.Array[String] = js.native
+  var trees_url: String = js.native
+  var updated_at: String = js.native
+  var url: String = js.native
+  var visibility: String = js.native
+  var watchers_count: Double = js.native
 }
 
 object Allowrebasemerge {
@@ -146,7 +148,7 @@ object Allowrebasemerge {
     node_id: String,
     notifications_url: String,
     open_issues_count: Double,
-    owner: Eventsurl,
+    owner: Avatarurl,
     `private`: Boolean,
     pulls_url: String,
     pushed_at: String,
@@ -163,7 +165,7 @@ object Allowrebasemerge {
     tags_url: String,
     teams_url: String,
     temp_clone_token: String,
-    template_repository: String,
+    template_repository: StringDictionary[js.Any],
     topics: js.Array[String],
     trees_url: String,
     updated_at: String,
@@ -175,5 +177,180 @@ object Allowrebasemerge {
     __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Allowrebasemerge]
   }
+  @scala.inline
+  implicit class AllowrebasemergeOps[Self <: Allowrebasemerge] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllow_merge_commit(value: Boolean): Self = this.set("allow_merge_commit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllow_rebase_merge(value: Boolean): Self = this.set("allow_rebase_merge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllow_squash_merge(value: Boolean): Self = this.set("allow_squash_merge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArchive_url(value: String): Self = this.set("archive_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssignees_url(value: String): Self = this.set("assignees_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlobs_url(value: String): Self = this.set("blobs_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBranches_url(value: String): Self = this.set("branches_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClone_url(value: String): Self = this.set("clone_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCollaborators_url(value: String): Self = this.set("collaborators_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComments_url(value: String): Self = this.set("comments_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommits_url(value: String): Self = this.set("commits_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompare_url(value: String): Self = this.set("compare_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContents_url(value: String): Self = this.set("contents_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContributors_url(value: String): Self = this.set("contributors_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefault_branch(value: String): Self = this.set("default_branch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelete_branch_on_merge(value: Boolean): Self = this.set("delete_branch_on_merge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeployments_url(value: String): Self = this.set("deployments_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDownloads_url(value: String): Self = this.set("downloads_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEvents_url(value: String): Self = this.set("events_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFork(value: Boolean): Self = this.set("fork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForks_count(value: Double): Self = this.set("forks_count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForks_url(value: String): Self = this.set("forks_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFull_name(value: String): Self = this.set("full_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGit_commits_url(value: String): Self = this.set("git_commits_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGit_refs_url(value: String): Self = this.set("git_refs_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGit_tags_url(value: String): Self = this.set("git_tags_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGit_url(value: String): Self = this.set("git_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHas_downloads(value: Boolean): Self = this.set("has_downloads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHas_issues(value: Boolean): Self = this.set("has_issues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHas_pages(value: Boolean): Self = this.set("has_pages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHas_projects(value: Boolean): Self = this.set("has_projects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHas_wiki(value: Boolean): Self = this.set("has_wiki", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHomepage(value: String): Self = this.set("homepage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHooks_url(value: String): Self = this.set("hooks_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIs_template(value: Boolean): Self = this.set("is_template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIssue_comment_url(value: String): Self = this.set("issue_comment_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIssue_events_url(value: String): Self = this.set("issue_events_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIssues_url(value: String): Self = this.set("issues_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeys_url(value: String): Self = this.set("keys_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabels_url(value: String): Self = this.set("labels_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLanguages_url(value: String): Self = this.set("languages_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMerges_url(value: String): Self = this.set("merges_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMilestones_url(value: String): Self = this.set("milestones_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMirror_url(value: String): Self = this.set("mirror_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNetwork_count(value: Double): Self = this.set("network_count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotifications_url(value: String): Self = this.set("notifications_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOpen_issues_count(value: Double): Self = this.set("open_issues_count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOwner(value: Avatarurl): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrivate(value: Boolean): Self = this.set("private", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPulls_url(value: String): Self = this.set("pulls_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPushed_at(value: String): Self = this.set("pushed_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReleases_url(value: String): Self = this.set("releases_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSsh_url(value: String): Self = this.set("ssh_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStargazers_count(value: Double): Self = this.set("stargazers_count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStargazers_url(value: String): Self = this.set("stargazers_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatuses_url(value: String): Self = this.set("statuses_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubscribers_count(value: Double): Self = this.set("subscribers_count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubscribers_url(value: String): Self = this.set("subscribers_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubscription_url(value: String): Self = this.set("subscription_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSvn_url(value: String): Self = this.set("svn_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags_url(value: String): Self = this.set("tags_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTeams_url(value: String): Self = this.set("teams_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemp_clone_token(value: String): Self = this.set("temp_clone_token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplate_repository(value: StringDictionary[js.Any]): Self = this.set("template_repository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTopicsVarargs(value: String*): Self = this.set("topics", js.Array(value :_*))
+    @scala.inline
+    def setTopics(value: js.Array[String]): Self = this.set("topics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrees_url(value: String): Self = this.set("trees_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWatchers_count(value: Double): Self = this.set("watchers_count", value.asInstanceOf[js.Any])
+  }
+  
 }
 

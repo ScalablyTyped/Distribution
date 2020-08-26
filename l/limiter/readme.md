@@ -10,9 +10,9 @@ A generic rate limiter for node.js. Useful for API clients, web crawling, or oth
 | ------------------ | :-------------: |
 | Full name          | limiter |
 | Keywords           | rate, limiting, throttling |
-| # releases         | 4 |
-| # dependents       | 157 |
-| # downloads        | 29528288 |
+| # releases         | 3 |
+| # dependents       | 165 |
+| # downloads        | 38374447 |
 | # stars            | 30 |
 
 ## Links

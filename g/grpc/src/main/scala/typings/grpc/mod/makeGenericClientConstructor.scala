@@ -11,7 +11,7 @@ object makeGenericClientConstructor extends js.Object {
   def apply(methods: ServiceDefinition[_], serviceName: String, classOptions: GenericClientOptions): Instantiable3[
     /* address */ String, 
     /* credentials */ ChannelCredentials, 
-    js.UndefOr[/* options */ js.Object], 
+    /* options */ js.UndefOr[js.Object], 
     Client
   ] = js.native
 }

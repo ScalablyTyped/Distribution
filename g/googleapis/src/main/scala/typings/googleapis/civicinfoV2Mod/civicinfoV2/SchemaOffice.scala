@@ -46,22 +46,54 @@ trait SchemaOffice extends js.Object {
 
 object SchemaOffice {
   @scala.inline
-  def apply(
-    divisionId: String = null,
-    levels: js.Array[String] = null,
-    name: String = null,
-    officialIndices: js.Array[Double] = null,
-    roles: js.Array[String] = null,
-    sources: js.Array[SchemaSource] = null
-  ): SchemaOffice = {
+  def apply(): SchemaOffice = {
     val __obj = js.Dynamic.literal()
-    if (divisionId != null) __obj.updateDynamic("divisionId")(divisionId.asInstanceOf[js.Any])
-    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (officialIndices != null) __obj.updateDynamic("officialIndices")(officialIndices.asInstanceOf[js.Any])
-    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOffice]
   }
+  @scala.inline
+  implicit class SchemaOfficeOps[Self <: SchemaOffice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDivisionId(value: String): Self = this.set("divisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDivisionId: Self = this.set("divisionId", js.undefined)
+    @scala.inline
+    def setLevelsVarargs(value: String*): Self = this.set("levels", js.Array(value :_*))
+    @scala.inline
+    def setLevels(value: js.Array[String]): Self = this.set("levels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevels: Self = this.set("levels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOfficialIndicesVarargs(value: Double*): Self = this.set("officialIndices", js.Array(value :_*))
+    @scala.inline
+    def setOfficialIndices(value: js.Array[Double]): Self = this.set("officialIndices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfficialIndices: Self = this.set("officialIndices", js.undefined)
+    @scala.inline
+    def setRolesVarargs(value: String*): Self = this.set("roles", js.Array(value :_*))
+    @scala.inline
+    def setRoles(value: js.Array[String]): Self = this.set("roles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoles: Self = this.set("roles", js.undefined)
+    @scala.inline
+    def setSourcesVarargs(value: SchemaSource*): Self = this.set("sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: js.Array[SchemaSource]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("sources", js.undefined)
+  }
+  
 }
 

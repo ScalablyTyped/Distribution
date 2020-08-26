@@ -16,6 +16,7 @@ trait Database extends js.Object {
   def apply(): FirebaseDatabase = js.native
   def apply(app: FirebaseApp): FirebaseDatabase = js.native
   def enableLogging(): js.Any = js.native
+  def enableLogging(logger: js.UndefOr[scala.Nothing], persistent: Boolean): js.Any = js.native
   def enableLogging(logger: js.Function1[/* a */ String, _]): js.Any = js.native
   def enableLogging(logger: js.Function1[/* a */ String, _], persistent: Boolean): js.Any = js.native
   def enableLogging(logger: Boolean): js.Any = js.native

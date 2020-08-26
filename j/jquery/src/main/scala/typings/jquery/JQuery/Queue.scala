@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 // region Queue
 // #region Queue
 // TODO: Is the first element always a string or is that specific to the 'fx' queue?
-/* Inlined {  0  :string} & std.Array<jquery.JQuery.QueueFunction<TElement>> */
+/* Inlined {  0 :string} & std.Array<jquery.JQuery.QueueFunction<TElement>> */
 @js.native
 trait Queue[TElement] extends /* n */ NumberDictionary[QueueFunction[TElement]] {
   var `0`: String = js.native
@@ -83,6 +83,7 @@ trait Queue[TElement] extends /* n */ NumberDictionary[QueueFunction[TElement]] 
     * length+end.
     */
   def fill(value: QueueFunction[TElement]): this.type = js.native
+  def fill(value: QueueFunction[TElement], start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: QueueFunction[TElement], start: Double): this.type = js.native
   def fill(value: QueueFunction[TElement], start: Double, end: Double): this.type = js.native
   /**
@@ -415,6 +416,7 @@ trait Queue[TElement] extends /* n */ NumberDictionary[QueueFunction[TElement]] 
     * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): js.Array[QueueFunction[TElement]] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[QueueFunction[TElement]] = js.native
   def slice(start: Double): js.Array[QueueFunction[TElement]] = js.native
   def slice(start: Double, end: Double): js.Array[QueueFunction[TElement]] = js.native
   /**

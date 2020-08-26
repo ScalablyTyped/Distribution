@@ -12,7 +12,7 @@ Parameterized test utility for Mocha
 | Keywords           | parameterized, test, mocha, each |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 321086 |
+| # downloads        | 357521 |
 | # stars            | 2 |
 
 ## Links

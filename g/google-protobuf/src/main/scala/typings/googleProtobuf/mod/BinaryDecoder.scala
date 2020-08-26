@@ -9,8 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class BinaryDecoder () extends js.Object {
   def this(bytes: ByteSource) = this()
-  def this(bytes: ByteSource, start: Double) = this()
-  def this(bytes: ByteSource, start: Double, length: Double) = this()
+  def this(bytes: js.UndefOr[ByteSource], start: Double) = this()
+  def this(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double) = this()
+  def this(bytes: js.UndefOr[ByteSource], start: Double, length: Double) = this()
   def advance(count: Double): Unit = js.native
   def atEnd(): Boolean = js.native
   def clear(): Unit = js.native
@@ -52,6 +53,7 @@ class BinaryDecoder () extends js.Object {
   def readZigzagVarint64String(): Double = js.native
   def reset(): Unit = js.native
   def setBlock(data: ByteSource): Unit = js.native
+  def setBlock(data: ByteSource, start: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
   def setBlock(data: ByteSource, start: Double): Unit = js.native
   def setBlock(data: ByteSource, start: Double, length: Double): Unit = js.native
   def setCursor(cursor: Double): Unit = js.native
@@ -65,8 +67,9 @@ class BinaryDecoder () extends js.Object {
 @js.native
 object BinaryDecoder extends js.Object {
   def alloc(): BinaryDecoder = js.native
+  def alloc(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double): BinaryDecoder = js.native
+  def alloc(bytes: js.UndefOr[ByteSource], start: Double): BinaryDecoder = js.native
+  def alloc(bytes: js.UndefOr[ByteSource], start: Double, length: Double): BinaryDecoder = js.native
   def alloc(bytes: ByteSource): BinaryDecoder = js.native
-  def alloc(bytes: ByteSource, start: Double): BinaryDecoder = js.native
-  def alloc(bytes: ByteSource, start: Double, length: Double): BinaryDecoder = js.native
 }
 

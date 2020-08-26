@@ -13,6 +13,11 @@ class ExpressionType protected () extends ExpressionType_ {
   def this(value: typings.angularCompiler.outputAstMod.Expression, modifiers: js.Array[TypeModifier]) = this()
   def this(
     value: typings.angularCompiler.outputAstMod.Expression,
+    modifiers: js.UndefOr[scala.Nothing],
+    typeParams: js.Array[typings.angularCompiler.outputAstMod.Type]
+  ) = this()
+  def this(
+    value: typings.angularCompiler.outputAstMod.Expression,
     modifiers: js.Array[TypeModifier],
     typeParams: js.Array[typings.angularCompiler.outputAstMod.Type]
   ) = this()

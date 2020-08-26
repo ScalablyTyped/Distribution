@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SourceProvenance extends js.Object {
   /**
     * Hash(es) of the build source, which can be used to verify that the original
@@ -18,31 +19,49 @@ trait SourceProvenance extends js.Object {
     * (.tar.gz), the FileHash will be for the single path to that file.
     * @OutputOnly
     */
-  var fileHashes: js.UndefOr[Record[String, FileHashes]] = js.undefined
+  var fileHashes: js.UndefOr[Record[String, FileHashes]] = js.native
   /**
     * A copy of the build's source.repo_source, if exists, with any
     * revisions resolved.
     */
-  var resolvedRepoSource: js.UndefOr[RepoSource] = js.undefined
+  var resolvedRepoSource: js.UndefOr[RepoSource] = js.native
   /**
     * A copy of the build's source.storage_source, if exists, with any
     * generations resolved.
     */
-  var resolvedStorageSource: js.UndefOr[StorageSource] = js.undefined
+  var resolvedStorageSource: js.UndefOr[StorageSource] = js.native
 }
 
 object SourceProvenance {
   @scala.inline
-  def apply(
-    fileHashes: Record[String, FileHashes] = null,
-    resolvedRepoSource: RepoSource = null,
-    resolvedStorageSource: StorageSource = null
-  ): SourceProvenance = {
+  def apply(): SourceProvenance = {
     val __obj = js.Dynamic.literal()
-    if (fileHashes != null) __obj.updateDynamic("fileHashes")(fileHashes.asInstanceOf[js.Any])
-    if (resolvedRepoSource != null) __obj.updateDynamic("resolvedRepoSource")(resolvedRepoSource.asInstanceOf[js.Any])
-    if (resolvedStorageSource != null) __obj.updateDynamic("resolvedStorageSource")(resolvedStorageSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceProvenance]
   }
+  @scala.inline
+  implicit class SourceProvenanceOps[Self <: SourceProvenance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileHashes(value: Record[String, FileHashes]): Self = this.set("fileHashes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileHashes: Self = this.set("fileHashes", js.undefined)
+    @scala.inline
+    def setResolvedRepoSource(value: RepoSource): Self = this.set("resolvedRepoSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolvedRepoSource: Self = this.set("resolvedRepoSource", js.undefined)
+    @scala.inline
+    def setResolvedStorageSource(value: StorageSource): Self = this.set("resolvedStorageSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolvedStorageSource: Self = this.set("resolvedStorageSource", js.undefined)
+  }
+  
 }
 

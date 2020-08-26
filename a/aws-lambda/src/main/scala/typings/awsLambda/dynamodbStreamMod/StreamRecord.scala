@@ -9,36 +9,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StreamRecord extends js.Object {
-  var ApproximateCreationDateTime: js.UndefOr[Double] = js.undefined
-  var Keys: js.UndefOr[StringDictionary[AttributeValue]] = js.undefined
-  var NewImage: js.UndefOr[StringDictionary[AttributeValue]] = js.undefined
-  var OldImage: js.UndefOr[StringDictionary[AttributeValue]] = js.undefined
-  var SequenceNumber: js.UndefOr[String] = js.undefined
-  var SizeBytes: js.UndefOr[Double] = js.undefined
-  var StreamViewType: js.UndefOr[KEYS_ONLY | NEW_IMAGE | OLD_IMAGE | NEW_AND_OLD_IMAGES] = js.undefined
+  var ApproximateCreationDateTime: js.UndefOr[Double] = js.native
+  var Keys: js.UndefOr[StringDictionary[AttributeValue]] = js.native
+  var NewImage: js.UndefOr[StringDictionary[AttributeValue]] = js.native
+  var OldImage: js.UndefOr[StringDictionary[AttributeValue]] = js.native
+  var SequenceNumber: js.UndefOr[String] = js.native
+  var SizeBytes: js.UndefOr[Double] = js.native
+  var StreamViewType: js.UndefOr[KEYS_ONLY | NEW_IMAGE | OLD_IMAGE | NEW_AND_OLD_IMAGES] = js.native
 }
 
 object StreamRecord {
   @scala.inline
-  def apply(
-    ApproximateCreationDateTime: js.UndefOr[Double] = js.undefined,
-    Keys: StringDictionary[AttributeValue] = null,
-    NewImage: StringDictionary[AttributeValue] = null,
-    OldImage: StringDictionary[AttributeValue] = null,
-    SequenceNumber: String = null,
-    SizeBytes: js.UndefOr[Double] = js.undefined,
-    StreamViewType: KEYS_ONLY | NEW_IMAGE | OLD_IMAGE | NEW_AND_OLD_IMAGES = null
-  ): StreamRecord = {
+  def apply(): StreamRecord = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ApproximateCreationDateTime)) __obj.updateDynamic("ApproximateCreationDateTime")(ApproximateCreationDateTime.get.asInstanceOf[js.Any])
-    if (Keys != null) __obj.updateDynamic("Keys")(Keys.asInstanceOf[js.Any])
-    if (NewImage != null) __obj.updateDynamic("NewImage")(NewImage.asInstanceOf[js.Any])
-    if (OldImage != null) __obj.updateDynamic("OldImage")(OldImage.asInstanceOf[js.Any])
-    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizeBytes)) __obj.updateDynamic("SizeBytes")(SizeBytes.get.asInstanceOf[js.Any])
-    if (StreamViewType != null) __obj.updateDynamic("StreamViewType")(StreamViewType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamRecord]
   }
+  @scala.inline
+  implicit class StreamRecordOps[Self <: StreamRecord] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApproximateCreationDateTime(value: Double): Self = this.set("ApproximateCreationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApproximateCreationDateTime: Self = this.set("ApproximateCreationDateTime", js.undefined)
+    @scala.inline
+    def setKeys(value: StringDictionary[AttributeValue]): Self = this.set("Keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeys: Self = this.set("Keys", js.undefined)
+    @scala.inline
+    def setNewImage(value: StringDictionary[AttributeValue]): Self = this.set("NewImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewImage: Self = this.set("NewImage", js.undefined)
+    @scala.inline
+    def setOldImage(value: StringDictionary[AttributeValue]): Self = this.set("OldImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOldImage: Self = this.set("OldImage", js.undefined)
+    @scala.inline
+    def setSequenceNumber(value: String): Self = this.set("SequenceNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSequenceNumber: Self = this.set("SequenceNumber", js.undefined)
+    @scala.inline
+    def setSizeBytes(value: Double): Self = this.set("SizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeBytes: Self = this.set("SizeBytes", js.undefined)
+    @scala.inline
+    def setStreamViewType(value: KEYS_ONLY | NEW_IMAGE | OLD_IMAGE | NEW_AND_OLD_IMAGES): Self = this.set("StreamViewType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamViewType: Self = this.set("StreamViewType", js.undefined)
+  }
+  
 }
 

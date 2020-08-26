@@ -18,11 +18,32 @@ trait ListGameServerGroupsOutput extends js.Object {
 
 object ListGameServerGroupsOutput {
   @scala.inline
-  def apply(GameServerGroups: GameServerGroups = null, NextToken: NonZeroAndMaxString = null): ListGameServerGroupsOutput = {
+  def apply(): ListGameServerGroupsOutput = {
     val __obj = js.Dynamic.literal()
-    if (GameServerGroups != null) __obj.updateDynamic("GameServerGroups")(GameServerGroups.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGameServerGroupsOutput]
   }
+  @scala.inline
+  implicit class ListGameServerGroupsOutputOps[Self <: ListGameServerGroupsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGameServerGroupsVarargs(value: GameServerGroup*): Self = this.set("GameServerGroups", js.Array(value :_*))
+    @scala.inline
+    def setGameServerGroups(value: GameServerGroups): Self = this.set("GameServerGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerGroups: Self = this.set("GameServerGroups", js.undefined)
+    @scala.inline
+    def setNextToken(value: NonZeroAndMaxString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

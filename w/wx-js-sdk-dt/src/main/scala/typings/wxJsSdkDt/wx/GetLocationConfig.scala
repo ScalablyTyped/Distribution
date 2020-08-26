@@ -4,30 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetLocationConfig extends WxBaseRequestConfig {
   /**
     * 默认为 wgs84 的 gps 坐标，如果要返回直接给 openLocation 用的火星坐标，可传入'gcj02'
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   @JSName("success")
-  def success_MGetLocationConfig(res: Location): Unit
+  def success_MGetLocationConfig(res: Location): Unit = js.native
 }
 
 object GetLocationConfig {
   @scala.inline
-  def apply(
-    success: Location => Unit,
-    cancel: () => Unit = null,
-    complete: /* res */ js.UndefOr[js.Any] => Unit = null,
-    fail: /* error */ js.UndefOr[js.Any] => Unit = null,
-    `type`: String = null
-  ): GetLocationConfig = {
+  def apply(success: Location => Unit): GetLocationConfig = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLocationConfig]
   }
+  @scala.inline
+  implicit class GetLocationConfigOps[Self <: GetLocationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSuccess(value: Location => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -22,7 +22,27 @@ trait Palette extends js.Object {
   var tonalOffset: Double = js.native
   var `type`: PaletteType = js.native
   def augmentColor(color: ColorPartial): Unit = js.native
+  def augmentColor(
+    color: ColorPartial,
+    mainShade: js.UndefOr[scala.Nothing],
+    lightShade: js.UndefOr[scala.Nothing],
+    darkShade: String
+  ): Unit = js.native
+  def augmentColor(
+    color: ColorPartial,
+    mainShade: js.UndefOr[scala.Nothing],
+    lightShade: js.UndefOr[scala.Nothing],
+    darkShade: Double
+  ): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: String, darkShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: String, darkShade: Double): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: Double): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: Double, darkShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: js.UndefOr[scala.Nothing], lightShade: Double, darkShade: Double): Unit = js.native
   def augmentColor(color: ColorPartial, mainShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: String, lightShade: js.UndefOr[scala.Nothing], darkShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: String, lightShade: js.UndefOr[scala.Nothing], darkShade: Double): Unit = js.native
   def augmentColor(color: ColorPartial, mainShade: String, lightShade: String): Unit = js.native
   def augmentColor(color: ColorPartial, mainShade: String, lightShade: String, darkShade: String): Unit = js.native
   def augmentColor(color: ColorPartial, mainShade: String, lightShade: String, darkShade: Double): Unit = js.native
@@ -30,6 +50,8 @@ trait Palette extends js.Object {
   def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double, darkShade: String): Unit = js.native
   def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double, darkShade: Double): Unit = js.native
   def augmentColor(color: ColorPartial, mainShade: Double): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: Double, lightShade: js.UndefOr[scala.Nothing], darkShade: String): Unit = js.native
+  def augmentColor(color: ColorPartial, mainShade: Double, lightShade: js.UndefOr[scala.Nothing], darkShade: Double): Unit = js.native
   def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String): Unit = js.native
   def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String, darkShade: String): Unit = js.native
   def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String, darkShade: Double): Unit = js.native

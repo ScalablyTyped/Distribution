@@ -19,24 +19,9 @@ object computePool2DInfo extends js.Object {
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: Double | (js.Tuple2[Double, Double]),
     dilations: Double | (js.Tuple2[Double, Double]),
-    pad: same_ | valid_ | Double
-  ): Conv2DInfo = js.native
-  def apply(
-    inShape: js.Tuple4[Double, Double, Double, Double],
-    filterSize: (js.Tuple2[Double, Double]) | Double,
-    strides: Double | (js.Tuple2[Double, Double]),
-    dilations: Double | (js.Tuple2[Double, Double]),
     pad: same_ | valid_ | Double,
-    roundingMode: floor | round | ceil
-  ): Conv2DInfo = js.native
-  def apply(
-    inShape: js.Tuple4[Double, Double, Double, Double],
-    filterSize: (js.Tuple2[Double, Double]) | Double,
-    strides: Double | (js.Tuple2[Double, Double]),
-    dilations: Double | (js.Tuple2[Double, Double]),
-    pad: same_ | valid_ | Double,
-    roundingMode: floor | round | ceil,
-    dataFormat: channelsFirst | channelsLast
+    roundingMode: js.UndefOr[floor | round | ceil],
+    dataFormat: js.UndefOr[channelsFirst | channelsLast]
   ): Conv2DInfo = js.native
 }
 

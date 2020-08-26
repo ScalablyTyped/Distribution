@@ -43,16 +43,36 @@ trait SchemaHttpRetryPolicy extends js.Object {
 
 object SchemaHttpRetryPolicy {
   @scala.inline
-  def apply(
-    numRetries: js.UndefOr[Double] = js.undefined,
-    perTryTimeout: SchemaDuration = null,
-    retryConditions: js.Array[String] = null
-  ): SchemaHttpRetryPolicy = {
+  def apply(): SchemaHttpRetryPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(numRetries)) __obj.updateDynamic("numRetries")(numRetries.get.asInstanceOf[js.Any])
-    if (perTryTimeout != null) __obj.updateDynamic("perTryTimeout")(perTryTimeout.asInstanceOf[js.Any])
-    if (retryConditions != null) __obj.updateDynamic("retryConditions")(retryConditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpRetryPolicy]
   }
+  @scala.inline
+  implicit class SchemaHttpRetryPolicyOps[Self <: SchemaHttpRetryPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNumRetries(value: Double): Self = this.set("numRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumRetries: Self = this.set("numRetries", js.undefined)
+    @scala.inline
+    def setPerTryTimeout(value: SchemaDuration): Self = this.set("perTryTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerTryTimeout: Self = this.set("perTryTimeout", js.undefined)
+    @scala.inline
+    def setRetryConditionsVarargs(value: String*): Self = this.set("retryConditions", js.Array(value :_*))
+    @scala.inline
+    def setRetryConditions(value: js.Array[String]): Self = this.set("retryConditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryConditions: Self = this.set("retryConditions", js.undefined)
+  }
+  
 }
 

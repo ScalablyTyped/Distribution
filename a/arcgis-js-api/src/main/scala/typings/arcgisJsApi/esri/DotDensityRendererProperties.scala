@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DotDensityRendererProperties extends RendererProperties {
   /**
     * Defines the variable(s) used to visualize density. This is an array of objects, each of which references a numeric field value or [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression used to drive the density. You must also set a color corresponding to each value.  If you set a single attribute, `POPULATION` and match it with a color `black` and the [dotValue](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotValue) is `100`, then number of black dots rendered for each feature will approximately equal the value of `POPULATION` divided by `100`.  This property is limited to no more than 8 attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes)
     */
-  var attributes: js.UndefOr[js.Array[AttributeColorInfoProperties]] = js.undefined
+  var attributes: js.UndefOr[js.Array[AttributeColorInfoProperties]] = js.native
   /**
     * The color used to shade the polygon fill behind the dots. This can be autocast with a named string; hex string; array of rgb or rgba values; an object with `r`, `g`, `b`, and `a` properties; or a [Color](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html) object.
     *
@@ -18,7 +19,7 @@ trait DotDensityRendererProperties extends RendererProperties {
     *
     * @default [0, 0, 0, 0.25] - black, semitransparent
     */
-  var backgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
+  var backgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
   /**
     * Only applicable when two or more [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes) are specified. When `true`, indicates that colors for overlapping dots will blend. For example, in a feature where a high density of blue dots exist on top of a high density of red dots, some of the dots may appear as purple dots if this property is `true`. When `false` only one color will be favored over the others in rendering.
     *
@@ -31,31 +32,31 @@ trait DotDensityRendererProperties extends RendererProperties {
     *
     * @default true
     */
-  var dotBlendingEnabled: js.UndefOr[Boolean] = js.undefined
+  var dotBlendingEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Defines the initial dot value used for visualizing density. If a [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) is provided, this value indicates the value of each dot at the [view.scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) matching the value in [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale). If [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) is set, the dot value will be recalculated depending on the view scale. Note the value of `dotValue` will remain constant even in this scenario. The variable dot value as displayed in the legend is recalculated using [calculateDotValue()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#calculateDotValue). If a [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) is not provided, the value specified in this property will apply to dots at all scales.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotValue)
     */
-  var dotValue: js.UndefOr[Double] = js.undefined
+  var dotValue: js.UndefOr[Double] = js.native
   /**
     * An object providing options for configuring the renderer in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#legendOptions)
     */
-  var legendOptions: js.UndefOr[DotDensityRendererLegendOptions] = js.undefined
+  var legendOptions: js.UndefOr[DotDensityRendererLegendOptions] = js.native
   /**
     * The outline of the polygon. When not set, this renders using the default [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html). It is good practice to explicitly set this for every DotDensityRenderer. Either remove the outline altogether, or set it to a very thin, transparent style so it doesn't distract from the dot density.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#outline)
     */
-  var outline: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
+  var outline: js.UndefOr[SimpleLineSymbolProperties] = js.native
   /**
     * When defined, the renderer will recalculate the dot value linearly based on the change in the view's scale using the [calculateDotValue()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#calculateDotValue) method. The rendering will maintain the density of points as drawn at the provided scale across various scales. However, the dot value will change as the user zooms in or out from the provided scale value, though the value of [dotValue](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotValue) will remain constant.  When the computed dot value reaches `1`, the dot value is no longer recalculated as the user zooms further in.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale)
     */
-  var referenceScale: js.UndefOr[Double] = js.undefined
+  var referenceScale: js.UndefOr[Double] = js.native
   /**
     * When set to a consistent value, dot placements will be preserved for the same scale given all parameters are the same in the renderer. By design, dot placement varies for the same feature across scales. If the user desires to see a different set of dot placements for a given scale, the developer may provide an alternate seed value to recalculate the random placement of dots.
     *
@@ -63,41 +64,75 @@ trait DotDensityRendererProperties extends RendererProperties {
     *
     * @default 1
     */
-  var seed: js.UndefOr[Double] = js.undefined
+  var seed: js.UndefOr[Double] = js.native
   /**
     * An array of [Size Visual Variable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) objects. Only one [ScaleDependentStops](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops) visual variable should be provided. This visual variable is used to vary the [outline](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#outline) width based on the [view.scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale). See the snippet below for an example of this.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#visualVariables)
     */
-  var visualVariables: js.UndefOr[js.Array[VisualVariableProperties]] = js.undefined
+  var visualVariables: js.UndefOr[js.Array[VisualVariableProperties]] = js.native
 }
 
 object DotDensityRendererProperties {
   @scala.inline
-  def apply(
-    attributes: js.Array[AttributeColorInfoProperties] = null,
-    authoringInfo: AuthoringInfoProperties = null,
-    backgroundColor: Color_ | js.Array[Double] | String = null,
-    dotBlendingEnabled: js.UndefOr[Boolean] = js.undefined,
-    dotValue: js.UndefOr[Double] = js.undefined,
-    legendOptions: DotDensityRendererLegendOptions = null,
-    outline: SimpleLineSymbolProperties = null,
-    referenceScale: js.UndefOr[Double] = js.undefined,
-    seed: js.UndefOr[Double] = js.undefined,
-    visualVariables: js.Array[VisualVariableProperties] = null
-  ): DotDensityRendererProperties = {
+  def apply(): DotDensityRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotBlendingEnabled)) __obj.updateDynamic("dotBlendingEnabled")(dotBlendingEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotValue)) __obj.updateDynamic("dotValue")(dotValue.get.asInstanceOf[js.Any])
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (!js.isUndefined(referenceScale)) __obj.updateDynamic("referenceScale")(referenceScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(seed)) __obj.updateDynamic("seed")(seed.get.asInstanceOf[js.Any])
-    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotDensityRendererProperties]
   }
+  @scala.inline
+  implicit class DotDensityRendererPropertiesOps[Self <: DotDensityRendererProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributesVarargs(value: AttributeColorInfoProperties*): Self = this.set("attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: js.Array[AttributeColorInfoProperties]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setBackgroundColorVarargs(value: Double*): Self = this.set("backgroundColor", js.Array(value :_*))
+    @scala.inline
+    def setBackgroundColor(value: Color_ | js.Array[Double] | String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setDotBlendingEnabled(value: Boolean): Self = this.set("dotBlendingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotBlendingEnabled: Self = this.set("dotBlendingEnabled", js.undefined)
+    @scala.inline
+    def setDotValue(value: Double): Self = this.set("dotValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotValue: Self = this.set("dotValue", js.undefined)
+    @scala.inline
+    def setLegendOptions(value: DotDensityRendererLegendOptions): Self = this.set("legendOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegendOptions: Self = this.set("legendOptions", js.undefined)
+    @scala.inline
+    def setOutline(value: SimpleLineSymbolProperties): Self = this.set("outline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutline: Self = this.set("outline", js.undefined)
+    @scala.inline
+    def setReferenceScale(value: Double): Self = this.set("referenceScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceScale: Self = this.set("referenceScale", js.undefined)
+    @scala.inline
+    def setSeed(value: Double): Self = this.set("seed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeed: Self = this.set("seed", js.undefined)
+    @scala.inline
+    def setVisualVariablesVarargs(value: VisualVariableProperties*): Self = this.set("visualVariables", js.Array(value :_*))
+    @scala.inline
+    def setVisualVariables(value: js.Array[VisualVariableProperties]): Self = this.set("visualVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisualVariables: Self = this.set("visualVariables", js.undefined)
+  }
+  
 }
 

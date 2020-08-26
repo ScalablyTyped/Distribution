@@ -5,7 +5,7 @@ import typings.electron.electronStrings.data
 import typings.electron.electronStrings.end
 import typings.electron.electronStrings.error
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

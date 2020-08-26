@@ -45,13 +45,25 @@ trait ParcelBundler extends js.Object {
   @JSName("on")
   def on_bundled(name: bundled, cb: js.Function1[/* bundle */ ParcelBundle, Unit]): Unit = js.native
   def serve(): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+  def serve(port: js.UndefOr[scala.Nothing], https: js.UndefOr[scala.Nothing], host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+  def serve(port: js.UndefOr[scala.Nothing], https: HttpsOptions): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+  def serve(port: js.UndefOr[scala.Nothing], https: HttpsOptions, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
   def serve(port: Double): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+  def serve(port: Double, https: js.UndefOr[scala.Nothing], host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
   def serve(port: Double, https: HttpsOptions): js.Promise[Server | typings.node.httpsMod.Server] = js.native
   def serve(port: Double, https: HttpsOptions, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+  @JSName("serve")
+  def serve_false(port: js.UndefOr[scala.Nothing], https: `false`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+  @JSName("serve")
+  def serve_false(port: js.UndefOr[scala.Nothing], https: `false`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
   @JSName("serve")
   def serve_false(port: Double, https: `false`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
   @JSName("serve")
   def serve_false(port: Double, https: `false`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+  @JSName("serve")
+  def serve_true(port: js.UndefOr[scala.Nothing], https: `true`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+  @JSName("serve")
+  def serve_true(port: js.UndefOr[scala.Nothing], https: `true`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
   @JSName("serve")
   def serve_true(port: Double, https: `true`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
   @JSName("serve")

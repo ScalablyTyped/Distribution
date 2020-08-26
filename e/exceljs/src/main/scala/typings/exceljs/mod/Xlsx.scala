@@ -1,7 +1,6 @@
 package typings.exceljs.mod
 
 import typings.exceljs.anon.PartialXlsxWriteOptions
-import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,10 +8,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Xlsx extends js.Object {
-  /**
-  	 * Create input stream for reading
-  	 */
-  def createInputStream(): EventEmitter = js.native
   /**
   	 * load from an array buffer
   	 * @param buffer

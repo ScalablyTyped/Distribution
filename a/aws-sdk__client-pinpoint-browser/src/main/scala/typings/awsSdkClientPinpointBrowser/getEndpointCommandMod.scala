@@ -26,16 +26,9 @@ object getEndpointCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GetEndpointInput) = this()
-    /* CompleteClass */
-    override val input: GetEndpointInput = js.native
     val middlewareStack: MiddlewareStack[GetEndpointInput, GetEndpointOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[GetEndpointInput, GetEndpointOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[GetEndpointInput, GetEndpointOutput] = js.native
   }

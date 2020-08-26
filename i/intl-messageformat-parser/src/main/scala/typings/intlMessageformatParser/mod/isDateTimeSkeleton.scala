@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object isDateTimeSkeleton extends js.Object {
   def apply(): /* is intl-messageformat-parser.intl-messageformat-parser.DateTimeSkeleton */ Boolean = js.native
-  def apply(el: String | DateTimeSkeleton): /* is intl-messageformat-parser.intl-messageformat-parser.DateTimeSkeleton */ Boolean = js.native
+  def apply(el: js.UndefOr[String | DateTimeSkeleton | Null]): /* is intl-messageformat-parser.intl-messageformat-parser.DateTimeSkeleton */ Boolean = js.native
   def apply(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser.DateTimeSkeleton */ Boolean = js.native
 }
 

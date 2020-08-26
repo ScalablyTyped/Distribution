@@ -50,30 +50,62 @@ trait Command extends js.Object {
 
 object Command {
   @scala.inline
-  def apply(
-    AcknowledgedAt: DateTime = null,
-    CommandId: String = null,
-    CompletedAt: DateTime = null,
-    CreatedAt: DateTime = null,
-    DeploymentId: String = null,
-    ExitCode: js.UndefOr[Integer] = js.undefined,
-    InstanceId: String = null,
-    LogUrl: String = null,
-    Status: String = null,
-    Type: String = null
-  ): Command = {
+  def apply(): Command = {
     val __obj = js.Dynamic.literal()
-    if (AcknowledgedAt != null) __obj.updateDynamic("AcknowledgedAt")(AcknowledgedAt.asInstanceOf[js.Any])
-    if (CommandId != null) __obj.updateDynamic("CommandId")(CommandId.asInstanceOf[js.Any])
-    if (CompletedAt != null) __obj.updateDynamic("CompletedAt")(CompletedAt.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (DeploymentId != null) __obj.updateDynamic("DeploymentId")(DeploymentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExitCode)) __obj.updateDynamic("ExitCode")(ExitCode.get.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (LogUrl != null) __obj.updateDynamic("LogUrl")(LogUrl.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
+  @scala.inline
+  implicit class CommandOps[Self <: Command] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcknowledgedAt(value: DateTime): Self = this.set("AcknowledgedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcknowledgedAt: Self = this.set("AcknowledgedAt", js.undefined)
+    @scala.inline
+    def setCommandId(value: String): Self = this.set("CommandId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommandId: Self = this.set("CommandId", js.undefined)
+    @scala.inline
+    def setCompletedAt(value: DateTime): Self = this.set("CompletedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedAt: Self = this.set("CompletedAt", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: DateTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setDeploymentId(value: String): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
+    @scala.inline
+    def setExitCode(value: Integer): Self = this.set("ExitCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExitCode: Self = this.set("ExitCode", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setLogUrl(value: String): Self = this.set("LogUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUrl: Self = this.set("LogUrl", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

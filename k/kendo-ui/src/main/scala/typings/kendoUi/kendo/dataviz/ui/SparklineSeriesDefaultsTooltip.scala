@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SparklineSeriesDefaultsTooltip extends js.Object {
-  var background: js.UndefOr[String] = js.undefined
-  var border: js.UndefOr[SparklineSeriesDefaultsTooltipBorder] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var font: js.UndefOr[String] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var padding: js.UndefOr[Double | js.Any] = js.undefined
-  var template: js.UndefOr[String | js.Function] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var background: js.UndefOr[String] = js.native
+  var border: js.UndefOr[SparklineSeriesDefaultsTooltipBorder] = js.native
+  var color: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.native
+  var padding: js.UndefOr[Double | js.Any] = js.native
+  var template: js.UndefOr[String | js.Function] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object SparklineSeriesDefaultsTooltip {
   @scala.inline
-  def apply(
-    background: String = null,
-    border: SparklineSeriesDefaultsTooltipBorder = null,
-    color: String = null,
-    font: String = null,
-    format: String = null,
-    padding: Double | js.Any = null,
-    template: String | js.Function = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): SparklineSeriesDefaultsTooltip = {
+  def apply(): SparklineSeriesDefaultsTooltip = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineSeriesDefaultsTooltip]
   }
+  @scala.inline
+  implicit class SparklineSeriesDefaultsTooltipOps[Self <: SparklineSeriesDefaultsTooltip] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBorder(value: SparklineSeriesDefaultsTooltipBorder): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setPadding(value: Double | js.Any): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

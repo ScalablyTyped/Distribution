@@ -41,20 +41,44 @@ trait SchemaQuestMilestone extends js.Object {
 
 object SchemaQuestMilestone {
   @scala.inline
-  def apply(
-    completionRewardData: String = null,
-    criteria: js.Array[SchemaQuestCriterion] = null,
-    id: String = null,
-    kind: String = null,
-    state: String = null
-  ): SchemaQuestMilestone = {
+  def apply(): SchemaQuestMilestone = {
     val __obj = js.Dynamic.literal()
-    if (completionRewardData != null) __obj.updateDynamic("completionRewardData")(completionRewardData.asInstanceOf[js.Any])
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuestMilestone]
   }
+  @scala.inline
+  implicit class SchemaQuestMilestoneOps[Self <: SchemaQuestMilestone] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionRewardData(value: String): Self = this.set("completionRewardData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionRewardData: Self = this.set("completionRewardData", js.undefined)
+    @scala.inline
+    def setCriteriaVarargs(value: SchemaQuestCriterion*): Self = this.set("criteria", js.Array(value :_*))
+    @scala.inline
+    def setCriteria(value: js.Array[SchemaQuestCriterion]): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

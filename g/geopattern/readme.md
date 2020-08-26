@@ -12,7 +12,7 @@ Generate beautiful SVG patterns
 | Keywords           | svg, pattern, geometric, background |
 | # releases         | 1 |
 | # dependents       | 18 |
-| # downloads        | 72247 |
+| # downloads        | 72653 |
 | # stars            | 3 |
 
 ## Links

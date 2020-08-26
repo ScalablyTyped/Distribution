@@ -21,11 +21,30 @@ trait SchemaListAssetsResult extends js.Object {
 
 object SchemaListAssetsResult {
   @scala.inline
-  def apply(asset: SchemaAsset = null, stateChange: String = null): SchemaListAssetsResult = {
+  def apply(): SchemaListAssetsResult = {
     val __obj = js.Dynamic.literal()
-    if (asset != null) __obj.updateDynamic("asset")(asset.asInstanceOf[js.Any])
-    if (stateChange != null) __obj.updateDynamic("stateChange")(stateChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListAssetsResult]
   }
+  @scala.inline
+  implicit class SchemaListAssetsResultOps[Self <: SchemaListAssetsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsset(value: SchemaAsset): Self = this.set("asset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsset: Self = this.set("asset", js.undefined)
+    @scala.inline
+    def setStateChange(value: String): Self = this.set("stateChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateChange: Self = this.set("stateChange", js.undefined)
+  }
+  
 }
 

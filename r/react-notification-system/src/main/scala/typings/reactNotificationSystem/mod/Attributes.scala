@@ -1,34 +1,47 @@
 package typings.reactNotificationSystem.mod
 
 import typings.react.mod.ClassAttributes
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Attributes extends ClassAttributes[System] {
-  var allowHTML: js.UndefOr[Boolean] = js.undefined
-  var noAnimation: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[Style | Boolean] = js.undefined
+  var allowHTML: js.UndefOr[Boolean] = js.native
+  var noAnimation: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Style | Boolean] = js.native
 }
 
 object Attributes {
   @scala.inline
-  def apply(
-    allowHTML: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
-    noAnimation: js.UndefOr[Boolean] = js.undefined,
-    ref: js.UndefOr[Null | LegacyRef[System]] = js.undefined,
-    style: Style | Boolean = null
-  ): Attributes = {
+  def apply(): Attributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHTML)) __obj.updateDynamic("allowHTML")(allowHTML.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAnimation)) __obj.updateDynamic("noAnimation")(noAnimation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
+  @scala.inline
+  implicit class AttributesOps[Self <: Attributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowHTML(value: Boolean): Self = this.set("allowHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowHTML: Self = this.set("allowHTML", js.undefined)
+    @scala.inline
+    def setNoAnimation(value: Boolean): Self = this.set("noAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoAnimation: Self = this.set("noAnimation", js.undefined)
+    @scala.inline
+    def setStyle(value: Style | Boolean): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

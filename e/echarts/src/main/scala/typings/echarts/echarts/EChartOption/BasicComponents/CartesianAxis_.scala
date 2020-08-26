@@ -18,31 +18,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CartesianAxis_ extends js.Object {
   /**
     * Settings related to axis label.
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.axisLabel
     */
-  var axisLabel: js.UndefOr[Label] = js.undefined
+  var axisLabel: js.UndefOr[Label] = js.native
   /**
     * Settings related to axis line.
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.axisLine
     */
-  var axisLine: js.UndefOr[Line] = js.undefined
+  var axisLine: js.UndefOr[Line] = js.native
   /**
     * axisPointer settings on the axis.
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.axisPointer
     */
-  var axisPointer: js.UndefOr[Pointer] = js.undefined
+  var axisPointer: js.UndefOr[Pointer] = js.native
   /**
     * Settings related to axis tick.
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.axisTick
     */
-  var axisTick: js.UndefOr[Tick] = js.undefined
+  var axisTick: js.UndefOr[Tick] = js.native
   /**
     * The boundary gap on both sides of a coordinate axis.
     * The setting and behavior of category axes and non-category axes are
@@ -61,7 +62,7 @@ trait CartesianAxis_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.boundaryGap
     */
-  var boundaryGap: js.UndefOr[Boolean | (js.Array[String | Double])] = js.undefined
+  var boundaryGap: js.UndefOr[Boolean | (js.Array[String | Double])] = js.native
   /**
     * Category data, available in type: `'category'` axis.
     * If `type` is not specified, but `axis.data` is specified,
@@ -91,19 +92,19 @@ trait CartesianAxis_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.data
     */
-  var data: js.UndefOr[js.Array[String | Double | DataObject]] = js.undefined
+  var data: js.UndefOr[js.Array[String | Double | DataObject]] = js.native
   /**
     * The index of grid which this axis belongs to.
     * Defaults to be in the first grid.
     *
     * @default 0
     */
-  var gridIndex: js.UndefOr[Double] = js.undefined
+  var gridIndex: js.UndefOr[Double] = js.native
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option or API.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Compulsively set segmentation interval for axis.
     * As splitNumber is a recommendation value,
@@ -118,13 +119,13 @@ trait CartesianAxis_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.interval
     */
-  var interval: js.UndefOr[Double] = js.undefined
+  var interval: js.UndefOr[Double] = js.native
   /**
     * Whether axis is inversed. New option from ECharts 3.
     *
     * @default false
     */
-  var inverse: js.UndefOr[Boolean] = js.undefined
+  var inverse: js.UndefOr[Boolean] = js.native
   /**
     * Base of logarithm, which is valid only for numeric axes with type:
     * `'log'`.
@@ -132,7 +133,7 @@ trait CartesianAxis_ extends js.Object {
     * @default 10
     * @see https://echarts.apache.org/en/option.html#yAxis.logBase
     */
-  var logBase: js.UndefOr[Double] = js.undefined
+  var logBase: js.UndefOr[Double] = js.native
   /**
     * The maximum value of axis.
     * It can be set to a special value `'dataMax'` so that
@@ -148,7 +149,7 @@ trait CartesianAxis_ extends js.Object {
     * @default null
     * @see https://echarts.apache.org/option.html#yAxis.max
     */
-  var max: js.UndefOr[Double | String | (js.Function1[/* value */ Max, Double])] = js.undefined
+  var max: js.UndefOr[Double | String | (js.Function1[/* value */ Max, Double])] = js.native
   /**
     * The minimun value of axis.
     * It can be set to a special value `'dataMin'` so that
@@ -164,7 +165,7 @@ trait CartesianAxis_ extends js.Object {
     * @default null
     * @see https://echarts.apache.org/option.html#yAxis.min
     */
-  var min: js.UndefOr[Double | String | (js.Function1[/* value */ Max, Double])] = js.undefined
+  var min: js.UndefOr[Double | String | (js.Function1[/* value */ Max, Double])] = js.native
   /**
     * Maximum gap between split lines.
     * For example, in time axis (type is `'time'`),
@@ -177,47 +178,47 @@ trait CartesianAxis_ extends js.Object {
     * It is available only for axis of type `'value'` or `'time'`.
     * @see https://echarts.apache.org/en/option.html#yAxis.minInterval
     */
-  var minInterval: js.UndefOr[js.Any] = js.undefined
+  var minInterval: js.UndefOr[js.Any] = js.native
   /**
     * Minor SplitLine of axis in grid area.
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.minorSplitLine
     */
-  var minorSplitLine: js.UndefOr[MinorSplitLine] = js.undefined
+  var minorSplitLine: js.UndefOr[MinorSplitLine] = js.native
   /**
     * Settings related to axis minor tick.
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.minorTick
     */
-  var minorTick: js.UndefOr[MinorTick] = js.undefined
+  var minorTick: js.UndefOr[MinorTick] = js.native
   /**
     * Name of axis.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Gap between axis name and axis line.
     *
     * @default 15
     */
-  var nameGap: js.UndefOr[Double] = js.undefined
+  var nameGap: js.UndefOr[Double] = js.native
   /**
     * Location of axis name.
     *
     * @default 'start'
     */
-  var nameLocation: js.UndefOr[start | middle | center | end] = js.undefined
+  var nameLocation: js.UndefOr[start | middle | center | end] = js.native
   /**
     * Rotation of axis name.
     *
     * @default null
     */
-  var nameRotate: js.UndefOr[Double] = js.undefined
+  var nameRotate: js.UndefOr[Double] = js.native
   /**
     * Text style of axis name.
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.nameTextStyle
     */
-  var nameTextStyle: js.UndefOr[TextStyleWithRich] = js.undefined
+  var nameTextStyle: js.UndefOr[TextStyleWithRich] = js.native
   /**
     * Offset of this axis relative to default position.
     * Useful when multiple axis of this type has same position value.
@@ -225,7 +226,7 @@ trait CartesianAxis_ extends js.Object {
     * @default 0
     * @see https://echarts.apache.org/en/option.html#yAxis.offset
     */
-  var offset: js.UndefOr[Double] = js.undefined
+  var offset: js.UndefOr[Double] = js.native
   /**
     * It is available only in numerical axis, i.e., type: `'value'`.
     * It specifies whether not to contain zero position
@@ -238,31 +239,31 @@ trait CartesianAxis_ extends js.Object {
     * @default false
     * @see https://echarts.apache.org/en/option.html#yAxis.scale
     */
-  var scale: js.UndefOr[Boolean] = js.undefined
+  var scale: js.UndefOr[Boolean] = js.native
   /**
     * If show this axis.
     *
     * @default 'true'
     */
-  var show: js.UndefOr[Boolean] = js.undefined
+  var show: js.UndefOr[Boolean] = js.native
   /**
     * True for axis that cannot be interacted with.
     *
     * @default false
     */
-  var silent: js.UndefOr[Boolean] = js.undefined
+  var silent: js.UndefOr[Boolean] = js.native
   /**
     * Split area of axis in grid area, not shown by default.
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.splitArea
     */
-  var splitArea: js.UndefOr[SplitArea] = js.undefined
+  var splitArea: js.UndefOr[SplitArea] = js.native
   /**
     * SplitLine of axis in grid area.
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.splitLine
     */
-  var splitLine: js.UndefOr[SplitLine] = js.undefined
+  var splitLine: js.UndefOr[SplitLine] = js.native
   /**
     * Number of segments that the axis is split into.
     * Note that this number serves only as a recommendation,
@@ -272,7 +273,7 @@ trait CartesianAxis_ extends js.Object {
     * @default 5
     * @see https://echarts.apache.org/en/option.html#yAxis.splitNumber
     */
-  var splitNumber: js.UndefOr[Double] = js.undefined
+  var splitNumber: js.UndefOr[Double] = js.native
   /**
     * Whether the labels of axis triggers and reacts to mouse events.
     * Parameters of event includes:
@@ -292,7 +293,7 @@ trait CartesianAxis_ extends js.Object {
     *
     * @default false
     */
-  var triggerEvent: js.UndefOr[Boolean] = js.undefined
+  var triggerEvent: js.UndefOr[Boolean] = js.native
   /**
     * z value of all graghical elements in this axis,
     * which controls order of drawing graphical components.
@@ -302,7 +303,7 @@ trait CartesianAxis_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#yAxis.z
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.native
   /**
     * `zlevel` value of all graghical elements in this axis.
     * `zlevel` is used to make layers with Canvas.
@@ -318,77 +319,159 @@ trait CartesianAxis_ extends js.Object {
     * @default 0
     * @see https://echarts.apache.org/en/option.html#yAxis.zlevel
     */
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var zlevel: js.UndefOr[Double] = js.native
 }
 
 object CartesianAxis_ {
   @scala.inline
-  def apply(
-    axisLabel: Label = null,
-    axisLine: Line = null,
-    axisPointer: Pointer = null,
-    axisTick: Tick = null,
-    boundaryGap: Boolean | (js.Array[String | Double]) = null,
-    data: js.Array[String | Double | DataObject] = null,
-    gridIndex: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    interval: js.UndefOr[Double] = js.undefined,
-    inverse: js.UndefOr[Boolean] = js.undefined,
-    logBase: js.UndefOr[Double] = js.undefined,
-    max: Double | String | (js.Function1[/* value */ Max, Double]) = null,
-    min: Double | String | (js.Function1[/* value */ Max, Double]) = null,
-    minInterval: js.Any = null,
-    minorSplitLine: MinorSplitLine = null,
-    minorTick: MinorTick = null,
-    name: String = null,
-    nameGap: js.UndefOr[Double] = js.undefined,
-    nameLocation: start | middle | center | end = null,
-    nameRotate: js.UndefOr[Double] = js.undefined,
-    nameTextStyle: TextStyleWithRich = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    scale: js.UndefOr[Boolean] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    splitArea: SplitArea = null,
-    splitLine: SplitLine = null,
-    splitNumber: js.UndefOr[Double] = js.undefined,
-    triggerEvent: js.UndefOr[Boolean] = js.undefined,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): CartesianAxis_ = {
+  def apply(): CartesianAxis_ = {
     val __obj = js.Dynamic.literal()
-    if (axisLabel != null) __obj.updateDynamic("axisLabel")(axisLabel.asInstanceOf[js.Any])
-    if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine.asInstanceOf[js.Any])
-    if (axisPointer != null) __obj.updateDynamic("axisPointer")(axisPointer.asInstanceOf[js.Any])
-    if (axisTick != null) __obj.updateDynamic("axisTick")(axisTick.asInstanceOf[js.Any])
-    if (boundaryGap != null) __obj.updateDynamic("boundaryGap")(boundaryGap.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(gridIndex)) __obj.updateDynamic("gridIndex")(gridIndex.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(logBase)) __obj.updateDynamic("logBase")(logBase.get.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minInterval != null) __obj.updateDynamic("minInterval")(minInterval.asInstanceOf[js.Any])
-    if (minorSplitLine != null) __obj.updateDynamic("minorSplitLine")(minorSplitLine.asInstanceOf[js.Any])
-    if (minorTick != null) __obj.updateDynamic("minorTick")(minorTick.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(nameGap)) __obj.updateDynamic("nameGap")(nameGap.get.asInstanceOf[js.Any])
-    if (nameLocation != null) __obj.updateDynamic("nameLocation")(nameLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(nameRotate)) __obj.updateDynamic("nameRotate")(nameRotate.get.asInstanceOf[js.Any])
-    if (nameTextStyle != null) __obj.updateDynamic("nameTextStyle")(nameTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (splitArea != null) __obj.updateDynamic("splitArea")(splitArea.asInstanceOf[js.Any])
-    if (splitLine != null) __obj.updateDynamic("splitLine")(splitLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(splitNumber)) __obj.updateDynamic("splitNumber")(splitNumber.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(triggerEvent)) __obj.updateDynamic("triggerEvent")(triggerEvent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CartesianAxis_]
   }
+  @scala.inline
+  implicit class CartesianAxis_Ops[Self <: CartesianAxis_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAxisLabel(value: Label): Self = this.set("axisLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisLabel: Self = this.set("axisLabel", js.undefined)
+    @scala.inline
+    def setAxisLine(value: Line): Self = this.set("axisLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisLine: Self = this.set("axisLine", js.undefined)
+    @scala.inline
+    def setAxisPointer(value: Pointer): Self = this.set("axisPointer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisPointer: Self = this.set("axisPointer", js.undefined)
+    @scala.inline
+    def setAxisTick(value: Tick): Self = this.set("axisTick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisTick: Self = this.set("axisTick", js.undefined)
+    @scala.inline
+    def setBoundaryGapVarargs(value: (String | Double)*): Self = this.set("boundaryGap", js.Array(value :_*))
+    @scala.inline
+    def setBoundaryGap(value: Boolean | (js.Array[String | Double])): Self = this.set("boundaryGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundaryGap: Self = this.set("boundaryGap", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: (String | Double | DataObject)*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[String | Double | DataObject]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setGridIndex(value: Double): Self = this.set("gridIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridIndex: Self = this.set("gridIndex", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setInverse(value: Boolean): Self = this.set("inverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverse: Self = this.set("inverse", js.undefined)
+    @scala.inline
+    def setLogBase(value: Double): Self = this.set("logBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogBase: Self = this.set("logBase", js.undefined)
+    @scala.inline
+    def setMaxFunction1(value: /* value */ Max => Double): Self = this.set("max", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMax(value: Double | String | (js.Function1[/* value */ Max, Double])): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMinFunction1(value: /* value */ Max => Double): Self = this.set("min", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMin(value: Double | String | (js.Function1[/* value */ Max, Double])): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMinInterval(value: js.Any): Self = this.set("minInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinInterval: Self = this.set("minInterval", js.undefined)
+    @scala.inline
+    def setMinorSplitLine(value: MinorSplitLine): Self = this.set("minorSplitLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorSplitLine: Self = this.set("minorSplitLine", js.undefined)
+    @scala.inline
+    def setMinorTick(value: MinorTick): Self = this.set("minorTick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorTick: Self = this.set("minorTick", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNameGap(value: Double): Self = this.set("nameGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameGap: Self = this.set("nameGap", js.undefined)
+    @scala.inline
+    def setNameLocation(value: start | middle | center | end): Self = this.set("nameLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameLocation: Self = this.set("nameLocation", js.undefined)
+    @scala.inline
+    def setNameRotate(value: Double): Self = this.set("nameRotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameRotate: Self = this.set("nameRotate", js.undefined)
+    @scala.inline
+    def setNameTextStyle(value: TextStyleWithRich): Self = this.set("nameTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameTextStyle: Self = this.set("nameTextStyle", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setScale(value: Boolean): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setSplitArea(value: SplitArea): Self = this.set("splitArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitArea: Self = this.set("splitArea", js.undefined)
+    @scala.inline
+    def setSplitLine(value: SplitLine): Self = this.set("splitLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitLine: Self = this.set("splitLine", js.undefined)
+    @scala.inline
+    def setSplitNumber(value: Double): Self = this.set("splitNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitNumber: Self = this.set("splitNumber", js.undefined)
+    @scala.inline
+    def setTriggerEvent(value: Boolean): Self = this.set("triggerEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerEvent: Self = this.set("triggerEvent", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+  }
+  
 }
 

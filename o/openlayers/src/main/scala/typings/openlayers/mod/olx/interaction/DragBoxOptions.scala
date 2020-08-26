@@ -8,27 +8,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DragBoxOptions extends js.Object {
-  var boxEndCondition: js.UndefOr[DragBoxEndConditionType] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var condition: js.UndefOr[EventsConditionType] = js.undefined
-  var minArea: js.UndefOr[Double] = js.undefined
+  var boxEndCondition: js.UndefOr[DragBoxEndConditionType] = js.native
+  var className: js.UndefOr[String] = js.native
+  var condition: js.UndefOr[EventsConditionType] = js.native
+  var minArea: js.UndefOr[Double] = js.native
 }
 
 object DragBoxOptions {
   @scala.inline
-  def apply(
-    boxEndCondition: (/* event */ MapBrowserEvent, /* pixel1 */ Pixel, /* pixel2 */ Pixel) => Boolean = null,
-    className: String = null,
-    condition: /* event */ MapBrowserEvent => Boolean = null,
-    minArea: js.UndefOr[Double] = js.undefined
-  ): DragBoxOptions = {
+  def apply(): DragBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (boxEndCondition != null) __obj.updateDynamic("boxEndCondition")(js.Any.fromFunction3(boxEndCondition))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
-    if (!js.isUndefined(minArea)) __obj.updateDynamic("minArea")(minArea.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragBoxOptions]
   }
+  @scala.inline
+  implicit class DragBoxOptionsOps[Self <: DragBoxOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoxEndCondition(value: (/* event */ MapBrowserEvent, /* pixel1 */ Pixel, /* pixel2 */ Pixel) => Boolean): Self = this.set("boxEndCondition", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteBoxEndCondition: Self = this.set("boxEndCondition", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = this.set("condition", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+    @scala.inline
+    def setMinArea(value: Double): Self = this.set("minArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinArea: Self = this.set("minArea", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,38 @@ trait DescribeVpcClassicLinkRequest extends js.Object {
 
 object DescribeVpcClassicLinkRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    VpcIds: VpcClassicLinkIdList = null
-  ): DescribeVpcClassicLinkRequest = {
+  def apply(): DescribeVpcClassicLinkRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (VpcIds != null) __obj.updateDynamic("VpcIds")(VpcIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVpcClassicLinkRequest]
   }
+  @scala.inline
+  implicit class DescribeVpcClassicLinkRequestOps[Self <: DescribeVpcClassicLinkRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setVpcIdsVarargs(value: VpcId*): Self = this.set("VpcIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcIds(value: VpcClassicLinkIdList): Self = this.set("VpcIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcIds: Self = this.set("VpcIds", js.undefined)
+  }
+  
 }
 

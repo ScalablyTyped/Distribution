@@ -12,7 +12,7 @@ Easing functions, modifiers and generators compatible with most animation librar
 | Keywords           | animation, ux, ui, popmotion, canvas animation, dom animation, dom, physics, interaction, interface |
 | # releases         | 5 |
 | # dependents       | 14 |
-| # downloads        | 3944066 |
+| # downloads        | 4191807 |
 | # stars            | 0 |
 
 ## Links

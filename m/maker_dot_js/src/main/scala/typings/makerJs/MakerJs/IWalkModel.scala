@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A model reference in a walk.
   */
+@js.native
 trait IWalkModel
   extends IRefModelInModel
      with IRouteOffset

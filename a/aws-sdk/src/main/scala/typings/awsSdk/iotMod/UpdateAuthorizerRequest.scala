@@ -30,19 +30,40 @@ trait UpdateAuthorizerRequest extends js.Object {
 
 object UpdateAuthorizerRequest {
   @scala.inline
-  def apply(
-    authorizerName: AuthorizerName,
-    authorizerFunctionArn: AuthorizerFunctionArn = null,
-    status: AuthorizerStatus = null,
-    tokenKeyName: TokenKeyName = null,
-    tokenSigningPublicKeys: PublicKeyMap = null
-  ): UpdateAuthorizerRequest = {
+  def apply(authorizerName: AuthorizerName): UpdateAuthorizerRequest = {
     val __obj = js.Dynamic.literal(authorizerName = authorizerName.asInstanceOf[js.Any])
-    if (authorizerFunctionArn != null) __obj.updateDynamic("authorizerFunctionArn")(authorizerFunctionArn.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tokenKeyName != null) __obj.updateDynamic("tokenKeyName")(tokenKeyName.asInstanceOf[js.Any])
-    if (tokenSigningPublicKeys != null) __obj.updateDynamic("tokenSigningPublicKeys")(tokenSigningPublicKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAuthorizerRequest]
   }
+  @scala.inline
+  implicit class UpdateAuthorizerRequestOps[Self <: UpdateAuthorizerRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizerName(value: AuthorizerName): Self = this.set("authorizerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorizerFunctionArn(value: AuthorizerFunctionArn): Self = this.set("authorizerFunctionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizerFunctionArn: Self = this.set("authorizerFunctionArn", js.undefined)
+    @scala.inline
+    def setStatus(value: AuthorizerStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTokenKeyName(value: TokenKeyName): Self = this.set("tokenKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenKeyName: Self = this.set("tokenKeyName", js.undefined)
+    @scala.inline
+    def setTokenSigningPublicKeys(value: PublicKeyMap): Self = this.set("tokenSigningPublicKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenSigningPublicKeys: Self = this.set("tokenSigningPublicKeys", js.undefined)
+  }
+  
 }
 

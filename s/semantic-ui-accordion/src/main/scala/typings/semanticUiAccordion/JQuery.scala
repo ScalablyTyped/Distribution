@@ -43,51 +43,53 @@ trait JQuery extends js.Object {
   @JSName("accordion")
   var accordion_Original: Accordion = js.native
   def accordion(): JQuery = js.native
-  def accordion(behavior: setting, name: animateChildren): Boolean = js.native
+  def accordion(behavior: setting, name: animateChildren, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def accordion(behavior: setting, name: animateChildren, value: Boolean): JQuery = js.native
-  def accordion(behavior: setting, name: className): ClassNameSettings = js.native
-  def accordion(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def accordion(behavior: setting, name: closeNested): Boolean = js.native
+  def accordion(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+  def accordion(behavior: setting, name: closeNested, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def accordion(behavior: setting, name: closeNested, value: Boolean): JQuery = js.native
-  def accordion(behavior: setting, name: collapsible): Boolean = js.native
+  def accordion(behavior: setting, name: collapsible, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def accordion(behavior: setting, name: collapsible, value: Boolean): JQuery = js.native
-  def accordion(behavior: setting, name: debug): Boolean = js.native
+  def accordion(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def accordion(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def accordion(behavior: setting, name: duration): Double = js.native
+  def accordion(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
   def accordion(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def accordion(behavior: setting, name: easing): String = js.native
+  def accordion(behavior: setting, name: easing, value: js.UndefOr[scala.Nothing]): String = js.native
   def accordion(behavior: setting, name: easing, value: String): JQuery = js.native
-  def accordion(behavior: setting, name: error): ErrorSettings = js.native
+  def accordion(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
   def accordion(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def accordion(behavior: setting, name: exclusive): Boolean = js.native
+  def accordion(behavior: setting, name: exclusive, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def accordion(behavior: setting, name: exclusive, value: Boolean): JQuery = js.native
-  def accordion(behavior: setting, name: name): String = js.native
-  def accordion(behavior: setting, name: namespace): String = js.native
+  def accordion(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
   def accordion(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def accordion(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
   def accordion(behavior: setting, name: name, value: String): JQuery = js.native
-  def accordion(behavior: setting, name: observeChanges): Boolean = js.native
+  def accordion(behavior: setting, name: observeChanges, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def accordion(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-  def accordion(behavior: setting, name: on): String = js.native
-  def accordion(behavior: setting, name: onChange): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def accordion(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def accordion(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def accordion(behavior: setting, name: onClose): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def accordion(behavior: setting, name: onClose, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def accordion(behavior: setting, name: onClose, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def accordion(behavior: setting, name: onClosing): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def accordion(behavior: setting, name: onClosing, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def accordion(behavior: setting, name: onClosing, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def accordion(behavior: setting, name: onOpen): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def accordion(behavior: setting, name: onOpening): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def accordion(behavior: setting, name: onOpening, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def accordion(behavior: setting, name: onOpening, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def accordion(behavior: setting, name: onOpen, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def accordion(behavior: setting, name: onOpen, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def accordion(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): String = js.native
   def accordion(behavior: setting, name: on, value: String): JQuery = js.native
-  def accordion(behavior: setting, name: performance): Boolean = js.native
+  def accordion(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def accordion(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def accordion(behavior: setting, name: selector): SelectorSettings = js.native
-  def accordion(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def accordion(behavior: setting, name: silent): Boolean = js.native
+  def accordion(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
+  def accordion(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def accordion(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def accordion(behavior: setting, name: verbose): Boolean = js.native
+  def accordion(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def accordion(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def accordion(settings: AccordionSettings): JQuery = js.native
+  @JSName("accordion")
+  def accordion_JQuery(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
+  @JSName("accordion")
+  def accordion_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
   /**
     * Closes accordion content at index
     */

@@ -8,22 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.OptimizeVaultJob")
 @js.native
-class OptimizeVaultJob () extends IOptimizeVaultJob {
-  /* CompleteClass */
-  override var GarbageCollectFiles: Boolean = js.native
-  /* CompleteClass */
-  override val Thorough: Boolean = js.native
-  /* CompleteClass */
-  override val VaultGUID: String = js.native
-  /* CompleteClass */
-  override def GetNumberOfSteps(): Double = js.native
-  /* CompleteClass */
-  override def GetOneBasedIndexOfStep(CurrentStep: Double): Double = js.native
-  /* CompleteClass */
-  override def GetStepProgressText(CurrentStep: Double): String = js.native
-  /* CompleteClass */
-  override def Set(GuidVault: String, Thorough: Boolean): Unit = js.native
-}
+class OptimizeVaultJob () extends IOptimizeVaultJob
 
 @JSGlobal("MFiles.OptimizeVaultJob")
 @js.native

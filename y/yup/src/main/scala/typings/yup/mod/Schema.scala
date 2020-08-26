@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait Schema[T] extends js.Object {
   var `type`: String = js.native
   def cast(): T = js.native
+  def cast(value: js.UndefOr[scala.Nothing], options: js.Any): T = js.native
   def cast(value: js.Any): T = js.native
   def cast(value: js.Any, options: js.Any): T = js.native
   def concat(schema: this.type): this.type = js.native
@@ -24,7 +25,7 @@ trait Schema[T] extends js.Object {
   def meta(): js.Any = js.native
   def meta(metadata: js.Any): this.type = js.native
   def notOneOf(arrayOfValues: js.Array[_]): this.type = js.native
-  def notOneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage[Values, _]): this.type = js.native
+  def notOneOf(arrayOfValues: js.Array[_], message: js.UndefOr[TestOptionsMessage[Values, _]]): this.type = js.native
   def strict(isStrict: Boolean): this.type = js.native
   def strip(strip: Boolean): this.type = js.native
   def transform(fn: TransformFunction[this.type]): this.type = js.native

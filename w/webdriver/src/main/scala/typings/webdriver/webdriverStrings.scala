@@ -4,6 +4,7 @@ import typings.webdriver.WebDriver.FirefoxLogLevels
 import typings.webdriver.WebDriver.LoggingPreferenceType
 import typings.webdriver.WebDriver.PageLoadingStrategy
 import typings.webdriver.WebDriver.ProxyTypes
+import typings.webdriver.WebDriver.SameSiteOptions
 import typings.webdriver.WebDriver.Timeouts
 import typings.webdriver.WebDriver.WebDriverLogTypes
 import scala.scalajs.js
@@ -30,10 +31,16 @@ object webdriverStrings {
   sealed trait INFO extends LoggingPreferenceType
   
   @js.native
+  sealed trait Lax extends SameSiteOptions
+  
+  @js.native
   sealed trait OFF extends LoggingPreferenceType
   
   @js.native
   sealed trait SEVERE extends LoggingPreferenceType
+  
+  @js.native
+  sealed trait Strict extends SameSiteOptions
   
   @js.native
   sealed trait WARNING extends LoggingPreferenceType
@@ -118,9 +125,13 @@ object webdriverStrings {
   @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
   @scala.inline
+  def Lax: Lax = "Lax".asInstanceOf[Lax]
+  @scala.inline
   def OFF: OFF = "OFF".asInstanceOf[OFF]
   @scala.inline
   def SEVERE: SEVERE = "SEVERE".asInstanceOf[SEVERE]
+  @scala.inline
+  def Strict: Strict = "Strict".asInstanceOf[Strict]
   @scala.inline
   def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
   @scala.inline

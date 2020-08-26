@@ -10,9 +10,9 @@ Cordova Media Capture Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-media-capture |
 | Keywords           | cordova, media, capture, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 308825 |
+| # downloads        | 308930 |
 | # stars            | 9 |
 
 ## Links

@@ -197,6 +197,19 @@ trait CodeGuruProfiler extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListProfilingGroupsResponse, Unit]
   ): Request[ListProfilingGroupsResponse, AWSError] = js.native
   /**
+    *  Returns a list of the tags that are assigned to a specified resource. 
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    *  Returns a list of the tags that are assigned to a specified resource. 
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
     *  Submits profiling data to an aggregated profile of a profiling group. To get an aggregated profile that is created with this profiling data, use  GetProfile . 
     */
   def postAgentProfile(): Request[PostAgentProfileResponse, AWSError] = js.native
@@ -261,6 +274,32 @@ trait CodeGuruProfiler extends Service {
     params: SubmitFeedbackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SubmitFeedbackResponse, Unit]
   ): Request[SubmitFeedbackResponse, AWSError] = js.native
+  /**
+    *  Use to assign one or more tags to a resource. 
+    */
+  def tagResource(): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    *  Use to assign one or more tags to a resource. 
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
+  ): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    *  Use to remove one or more tags from a resource. 
+    */
+  def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    *  Use to remove one or more tags from a resource. 
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
+  ): Request[UntagResourceResponse, AWSError] = js.native
   /**
     * Updates a profiling group.
     */

@@ -18,6 +18,7 @@ trait Connection extends js.Object {
     *
     */
   def broadcast(methodName: String): js.Array[js.Promise[_]] = js.native
+  def broadcast(methodName: String, data: js.UndefOr[scala.Nothing], options: ConnectionBroadcastOptions): js.Array[js.Promise[_]] = js.native
   def broadcast(methodName: String, data: js.Any): js.Array[js.Promise[_]] = js.native
   def broadcast(methodName: String, data: js.Any, options: ConnectionBroadcastOptions): js.Array[js.Promise[_]] = js.native
   /**
@@ -41,6 +42,7 @@ trait Connection extends js.Object {
     *
     */
   def invoke(methodName: String): js.Promise[_] = js.native
+  def invoke(methodName: String, data: js.UndefOr[scala.Nothing], options: ConnectionInvokeOptions): js.Promise[_] = js.native
   def invoke(methodName: String, data: js.Any): js.Promise[_] = js.native
   def invoke(methodName: String, data: js.Any, options: ConnectionInvokeOptions): js.Promise[_] = js.native
 }

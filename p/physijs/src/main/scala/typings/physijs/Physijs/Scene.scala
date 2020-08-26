@@ -23,6 +23,7 @@ trait Scene
   def setFixedTimeStep(fixedTimeStep: Double): Unit = js.native
   def setGravity(gravity: Vector3): Unit = js.native
   def simulate(): Boolean = js.native
+  def simulate(timeStep: js.UndefOr[scala.Nothing], maxSubSteps: Double): Boolean = js.native
   def simulate(timeStep: Double): Boolean = js.native
   def simulate(timeStep: Double, maxSubSteps: Double): Boolean = js.native
 }

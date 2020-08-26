@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 trait InstantiableLocationConfig
   extends Instantiable0[LocationConfig]
      with Instantiable1[/* uiRouter */ UIRouter, LocationConfig]
-     with Instantiable2[/* uiRouter */ UIRouter, /* isHtml5 */ Boolean, LocationConfig]
+     with Instantiable2[js.UndefOr[/* uiRouter */ UIRouter], /* isHtml5 */ Boolean, LocationConfig]
 

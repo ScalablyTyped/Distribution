@@ -1,12 +1,10 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.OverflowProperty
-import typings.csstype.mod.OverflowXProperty
-import typings.csstype.mod.OverflowYProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OverflowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
   /**
     * The overflow CSS property sets what to do when an element's content is too big to fit in its block
@@ -14,35 +12,95 @@ trait OverflowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Ob
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
     */
-  var overflow: js.UndefOr[ResponsiveValue[OverflowProperty, ThemeType]] = js.undefined
+  var overflow: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.OverflowProperty */ _, 
+      ThemeType
+    ]
+  ] = js.native
   /**
     * The overflow-x CSS property sets what shows when content overflows a block-level element's left
     * and right edges. This may be nothing, a scroll bar, or the overflow content.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x)
     */
-  var overflowX: js.UndefOr[ResponsiveValue[OverflowXProperty, ThemeType]] = js.undefined
+  var overflowX: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.OverflowXProperty */ _, 
+      ThemeType
+    ]
+  ] = js.native
   /**
     * The overflow-y CSS property sets what shows when content overflows a block-level element's top
     * and bottom edges. This may be nothing, a scroll bar, or the overflow content.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y)
     */
-  var overflowY: js.UndefOr[ResponsiveValue[OverflowYProperty, ThemeType]] = js.undefined
+  var overflowY: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.OverflowYProperty */ _, 
+      ThemeType
+    ]
+  ] = js.native
 }
 
 object OverflowProps {
   @scala.inline
-  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](
-    overflow: js.UndefOr[Null | (ResponsiveValue[OverflowProperty, ThemeType])] = js.undefined,
-    overflowX: js.UndefOr[Null | (ResponsiveValue[OverflowXProperty, ThemeType])] = js.undefined,
-    overflowY: js.UndefOr[Null | (ResponsiveValue[OverflowYProperty, ThemeType])] = js.undefined
-  ): OverflowProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](): OverflowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(overflowX)) __obj.updateDynamic("overflowX")(overflowX.asInstanceOf[js.Any])
-    if (!js.isUndefined(overflowY)) __obj.updateDynamic("overflowY")(overflowY.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverflowProps[ThemeType]]
   }
+  @scala.inline
+  implicit class OverflowPropsOps[Self <: OverflowProps[_], /* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType] (val x: Self with OverflowProps[ThemeType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOverflowVarargs(value: (js.Any | Null)*): Self = this.set("overflow", js.Array(value :_*))
+    @scala.inline
+    def setOverflow(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.OverflowProperty */ _, 
+          ThemeType
+        ]
+    ): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    @scala.inline
+    def setOverflowNull: Self = this.set("overflow", null)
+    @scala.inline
+    def setOverflowXVarargs(value: (js.Any | Null)*): Self = this.set("overflowX", js.Array(value :_*))
+    @scala.inline
+    def setOverflowX(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.OverflowXProperty */ _, 
+          ThemeType
+        ]
+    ): Self = this.set("overflowX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflowX: Self = this.set("overflowX", js.undefined)
+    @scala.inline
+    def setOverflowXNull: Self = this.set("overflowX", null)
+    @scala.inline
+    def setOverflowYVarargs(value: (js.Any | Null)*): Self = this.set("overflowY", js.Array(value :_*))
+    @scala.inline
+    def setOverflowY(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.OverflowYProperty */ _, 
+          ThemeType
+        ]
+    ): Self = this.set("overflowY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflowY: Self = this.set("overflowY", js.undefined)
+    @scala.inline
+    def setOverflowYNull: Self = this.set("overflowY", null)
+  }
+  
 }
 

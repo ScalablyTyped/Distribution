@@ -26,18 +26,40 @@ trait SearchFacesByImageResponse extends js.Object {
 
 object SearchFacesByImageResponse {
   @scala.inline
-  def apply(
-    FaceMatches: FaceMatchList = null,
-    FaceModelVersion: String = null,
-    SearchedFaceBoundingBox: BoundingBox = null,
-    SearchedFaceConfidence: js.UndefOr[Percent] = js.undefined
-  ): SearchFacesByImageResponse = {
+  def apply(): SearchFacesByImageResponse = {
     val __obj = js.Dynamic.literal()
-    if (FaceMatches != null) __obj.updateDynamic("FaceMatches")(FaceMatches.asInstanceOf[js.Any])
-    if (FaceModelVersion != null) __obj.updateDynamic("FaceModelVersion")(FaceModelVersion.asInstanceOf[js.Any])
-    if (SearchedFaceBoundingBox != null) __obj.updateDynamic("SearchedFaceBoundingBox")(SearchedFaceBoundingBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(SearchedFaceConfidence)) __obj.updateDynamic("SearchedFaceConfidence")(SearchedFaceConfidence.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchFacesByImageResponse]
   }
+  @scala.inline
+  implicit class SearchFacesByImageResponseOps[Self <: SearchFacesByImageResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFaceMatchesVarargs(value: FaceMatch*): Self = this.set("FaceMatches", js.Array(value :_*))
+    @scala.inline
+    def setFaceMatches(value: FaceMatchList): Self = this.set("FaceMatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceMatches: Self = this.set("FaceMatches", js.undefined)
+    @scala.inline
+    def setFaceModelVersion(value: String): Self = this.set("FaceModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceModelVersion: Self = this.set("FaceModelVersion", js.undefined)
+    @scala.inline
+    def setSearchedFaceBoundingBox(value: BoundingBox): Self = this.set("SearchedFaceBoundingBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchedFaceBoundingBox: Self = this.set("SearchedFaceBoundingBox", js.undefined)
+    @scala.inline
+    def setSearchedFaceConfidence(value: Percent): Self = this.set("SearchedFaceConfidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchedFaceConfidence: Self = this.set("SearchedFaceConfidence", js.undefined)
+  }
+  
 }
 

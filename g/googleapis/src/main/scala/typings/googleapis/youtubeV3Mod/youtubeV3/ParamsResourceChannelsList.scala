@@ -92,48 +92,70 @@ trait ParamsResourceChannelsList extends StandardParameters {
 
 object ParamsResourceChannelsList {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    categoryId: String = null,
-    fields: String = null,
-    forUsername: String = null,
-    hl: String = null,
-    id: String = null,
-    key: String = null,
-    managedByMe: js.UndefOr[Boolean] = js.undefined,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    mine: js.UndefOr[Boolean] = js.undefined,
-    mySubscribers: js.UndefOr[Boolean] = js.undefined,
-    oauth_token: String = null,
-    onBehalfOfContentOwner: String = null,
-    pageToken: String = null,
-    part: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    userIp: String = null
-  ): ParamsResourceChannelsList = {
+  def apply(): ParamsResourceChannelsList = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (forUsername != null) __obj.updateDynamic("forUsername")(forUsername.asInstanceOf[js.Any])
-    if (hl != null) __obj.updateDynamic("hl")(hl.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(managedByMe)) __obj.updateDynamic("managedByMe")(managedByMe.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mySubscribers)) __obj.updateDynamic("mySubscribers")(mySubscribers.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceChannelsList]
   }
+  @scala.inline
+  implicit class ParamsResourceChannelsListOps[Self <: ParamsResourceChannelsList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setCategoryId(value: String): Self = this.set("categoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoryId: Self = this.set("categoryId", js.undefined)
+    @scala.inline
+    def setForUsername(value: String): Self = this.set("forUsername", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForUsername: Self = this.set("forUsername", js.undefined)
+    @scala.inline
+    def setHl(value: String): Self = this.set("hl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHl: Self = this.set("hl", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setManagedByMe(value: Boolean): Self = this.set("managedByMe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedByMe: Self = this.set("managedByMe", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setMine(value: Boolean): Self = this.set("mine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMine: Self = this.set("mine", js.undefined)
+    @scala.inline
+    def setMySubscribers(value: Boolean): Self = this.set("mySubscribers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMySubscribers: Self = this.set("mySubscribers", js.undefined)
+    @scala.inline
+    def setOnBehalfOfContentOwner(value: String): Self = this.set("onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBehalfOfContentOwner: Self = this.set("onBehalfOfContentOwner", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setPart(value: String): Self = this.set("part", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePart: Self = this.set("part", js.undefined)
+  }
+  
 }
 

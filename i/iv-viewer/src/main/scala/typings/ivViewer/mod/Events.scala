@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Events extends js.Object {
-  var hiResImageLoad: js.UndefOr[IVEvent] = js.undefined
-  var imageLoad: js.UndefOr[IVEvent] = js.undefined
-  var mouseEnterSnapView: js.UndefOr[IVEvent] = js.undefined
-  var mouseLeaveSnapView: js.UndefOr[IVEvent] = js.undefined
-  var onWindowResize: js.UndefOr[IVEvent] = js.undefined
-  var pinchStart: js.UndefOr[IVEvent] = js.undefined
-  var snapViewOnMouseMove: js.UndefOr[IVEvent] = js.undefined
+  var hiResImageLoad: js.UndefOr[IVEvent] = js.native
+  var imageLoad: js.UndefOr[IVEvent] = js.native
+  var mouseEnterSnapView: js.UndefOr[IVEvent] = js.native
+  var mouseLeaveSnapView: js.UndefOr[IVEvent] = js.native
+  var onWindowResize: js.UndefOr[IVEvent] = js.native
+  var pinchStart: js.UndefOr[IVEvent] = js.native
+  var snapViewOnMouseMove: js.UndefOr[IVEvent] = js.native
 }
 
 object Events {
   @scala.inline
-  def apply(
-    hiResImageLoad: () => Unit = null,
-    imageLoad: () => Unit = null,
-    mouseEnterSnapView: () => Unit = null,
-    mouseLeaveSnapView: () => Unit = null,
-    onWindowResize: () => Unit = null,
-    pinchStart: () => Unit = null,
-    snapViewOnMouseMove: () => Unit = null
-  ): Events = {
+  def apply(): Events = {
     val __obj = js.Dynamic.literal()
-    if (hiResImageLoad != null) __obj.updateDynamic("hiResImageLoad")(js.Any.fromFunction0(hiResImageLoad))
-    if (imageLoad != null) __obj.updateDynamic("imageLoad")(js.Any.fromFunction0(imageLoad))
-    if (mouseEnterSnapView != null) __obj.updateDynamic("mouseEnterSnapView")(js.Any.fromFunction0(mouseEnterSnapView))
-    if (mouseLeaveSnapView != null) __obj.updateDynamic("mouseLeaveSnapView")(js.Any.fromFunction0(mouseLeaveSnapView))
-    if (onWindowResize != null) __obj.updateDynamic("onWindowResize")(js.Any.fromFunction0(onWindowResize))
-    if (pinchStart != null) __obj.updateDynamic("pinchStart")(js.Any.fromFunction0(pinchStart))
-    if (snapViewOnMouseMove != null) __obj.updateDynamic("snapViewOnMouseMove")(js.Any.fromFunction0(snapViewOnMouseMove))
     __obj.asInstanceOf[Events]
   }
+  @scala.inline
+  implicit class EventsOps[Self <: Events] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHiResImageLoad(value: () => Unit): Self = this.set("hiResImageLoad", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteHiResImageLoad: Self = this.set("hiResImageLoad", js.undefined)
+    @scala.inline
+    def setImageLoad(value: () => Unit): Self = this.set("imageLoad", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteImageLoad: Self = this.set("imageLoad", js.undefined)
+    @scala.inline
+    def setMouseEnterSnapView(value: () => Unit): Self = this.set("mouseEnterSnapView", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteMouseEnterSnapView: Self = this.set("mouseEnterSnapView", js.undefined)
+    @scala.inline
+    def setMouseLeaveSnapView(value: () => Unit): Self = this.set("mouseLeaveSnapView", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteMouseLeaveSnapView: Self = this.set("mouseLeaveSnapView", js.undefined)
+    @scala.inline
+    def setOnWindowResize(value: () => Unit): Self = this.set("onWindowResize", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnWindowResize: Self = this.set("onWindowResize", js.undefined)
+    @scala.inline
+    def setPinchStart(value: () => Unit): Self = this.set("pinchStart", js.Any.fromFunction0(value))
+    @scala.inline
+    def deletePinchStart: Self = this.set("pinchStart", js.undefined)
+    @scala.inline
+    def setSnapViewOnMouseMove(value: () => Unit): Self = this.set("snapViewOnMouseMove", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteSnapViewOnMouseMove: Self = this.set("snapViewOnMouseMove", js.undefined)
+  }
+  
 }
 

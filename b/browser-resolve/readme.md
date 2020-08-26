@@ -11,8 +11,8 @@ resolve which handles browser field support in package.json
 | Full name          | browser-resolve |
 | Keywords           | resolve, browser |
 | # releases         | 2 |
-| # dependents       | 156 |
-| # downloads        | 214364604 |
+| # dependents       | 157 |
+| # downloads        | 221252903 |
 | # stars            | 5 |
 
 ## Links

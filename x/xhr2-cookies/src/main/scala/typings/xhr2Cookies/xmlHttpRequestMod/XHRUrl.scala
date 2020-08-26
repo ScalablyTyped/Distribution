@@ -1,35 +1,37 @@
 package typings.xhr2Cookies.xmlHttpRequestMod
 
-import typings.node.querystringMod.ParsedUrlQuery
 import typings.node.urlMod.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait XHRUrl extends Url {
-  var method: js.UndefOr[String] = js.undefined
+  var method: js.UndefOr[String] = js.native
 }
 
 object XHRUrl {
   @scala.inline
-  def apply(
-    href: String,
-    auth: String = null,
-    hash: String = null,
-    host: String = null,
-    hostname: String = null,
-    method: String = null,
-    path: String = null,
-    pathname: String = null,
-    port: String = null,
-    protocol: String = null,
-    query: String | ParsedUrlQuery = null,
-    search: String = null,
-    slashes: Boolean = null.asInstanceOf[Boolean]
-  ): XHRUrl = {
-    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], auth = auth.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], slashes = slashes.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+  def apply(href: String): XHRUrl = {
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     __obj.asInstanceOf[XHRUrl]
   }
+  @scala.inline
+  implicit class XHRUrlOps[Self <: XHRUrl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+  }
+  
 }
 

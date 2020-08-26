@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubtitleColor extends js.Object {
-  var fontWeight: js.UndefOr[Double] = js.undefined
-  var subtitleColor: js.UndefOr[String] = js.undefined
-  var titleColor: js.UndefOr[String] = js.undefined
+  var fontWeight: js.UndefOr[Double] = js.native
+  var subtitleColor: js.UndefOr[String] = js.native
+  var titleColor: js.UndefOr[String] = js.native
 }
 
 object SubtitleColor {
   @scala.inline
-  def apply(
-    fontWeight: js.UndefOr[Double] = js.undefined,
-    subtitleColor: String = null,
-    titleColor: String = null
-  ): SubtitleColor = {
+  def apply(): SubtitleColor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fontWeight)) __obj.updateDynamic("fontWeight")(fontWeight.get.asInstanceOf[js.Any])
-    if (subtitleColor != null) __obj.updateDynamic("subtitleColor")(subtitleColor.asInstanceOf[js.Any])
-    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubtitleColor]
   }
+  @scala.inline
+  implicit class SubtitleColorOps[Self <: SubtitleColor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFontWeight(value: Double): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setSubtitleColor(value: String): Self = this.set("subtitleColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitleColor: Self = this.set("subtitleColor", js.undefined)
+    @scala.inline
+    def setTitleColor(value: String): Self = this.set("titleColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleColor: Self = this.set("titleColor", js.undefined)
+  }
+  
 }
 

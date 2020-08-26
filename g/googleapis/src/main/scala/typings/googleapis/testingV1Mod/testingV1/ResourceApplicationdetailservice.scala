@@ -27,6 +27,7 @@ class ResourceApplicationdetailservice protected () extends js.Object {
     */
   def getApkDetails(): GaxiosPromise[SchemaGetApkDetailsResponse] = js.native
   def getApkDetails(callback: BodyResponseCallback[SchemaGetApkDetailsResponse]): Unit = js.native
+  def getApkDetails(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetApkDetailsResponse] = js.native
   def getApkDetails(params: ParamsResourceApplicationdetailserviceGetapkdetails): GaxiosPromise[SchemaGetApkDetailsResponse] = js.native
   def getApkDetails(
     params: ParamsResourceApplicationdetailserviceGetapkdetails,

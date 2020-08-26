@@ -26,18 +26,38 @@ trait DescribeClusterVersionsMessage extends js.Object {
 
 object DescribeClusterVersionsMessage {
   @scala.inline
-  def apply(
-    ClusterParameterGroupFamily: String = null,
-    ClusterVersion: String = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
-  ): DescribeClusterVersionsMessage = {
+  def apply(): DescribeClusterVersionsMessage = {
     val __obj = js.Dynamic.literal()
-    if (ClusterParameterGroupFamily != null) __obj.updateDynamic("ClusterParameterGroupFamily")(ClusterParameterGroupFamily.asInstanceOf[js.Any])
-    if (ClusterVersion != null) __obj.updateDynamic("ClusterVersion")(ClusterVersion.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClusterVersionsMessage]
   }
+  @scala.inline
+  implicit class DescribeClusterVersionsMessageOps[Self <: DescribeClusterVersionsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterParameterGroupFamily(value: String): Self = this.set("ClusterParameterGroupFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterParameterGroupFamily: Self = this.set("ClusterParameterGroupFamily", js.undefined)
+    @scala.inline
+    def setClusterVersion(value: String): Self = this.set("ClusterVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterVersion: Self = this.set("ClusterVersion", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+  }
+  
 }
 

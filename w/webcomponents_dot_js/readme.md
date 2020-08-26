@@ -12,7 +12,7 @@ webcomponents.js
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 40 |
-| # downloads        | 1495473 |
+| # downloads        | 1435441 |
 | # stars            | 9 |
 
 ## Links

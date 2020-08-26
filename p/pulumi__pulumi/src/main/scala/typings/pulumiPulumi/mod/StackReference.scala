@@ -21,6 +21,7 @@ class StackReference protected ()
     */
   def this(name: String) = this()
   def this(name: String, args: StackReferenceArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: StackReferenceArgs, opts: CustomResourceOptions) = this()
 }
 

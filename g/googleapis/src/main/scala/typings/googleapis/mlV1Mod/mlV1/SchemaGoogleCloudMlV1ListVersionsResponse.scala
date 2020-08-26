@@ -22,11 +22,32 @@ trait SchemaGoogleCloudMlV1ListVersionsResponse extends js.Object {
 
 object SchemaGoogleCloudMlV1ListVersionsResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, versions: js.Array[SchemaGoogleCloudMlV1Version] = null): SchemaGoogleCloudMlV1ListVersionsResponse = {
+  def apply(): SchemaGoogleCloudMlV1ListVersionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1ListVersionsResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudMlV1ListVersionsResponseOps[Self <: SchemaGoogleCloudMlV1ListVersionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setVersionsVarargs(value: SchemaGoogleCloudMlV1Version*): Self = this.set("versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: js.Array[SchemaGoogleCloudMlV1Version]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersions: Self = this.set("versions", js.undefined)
+  }
+  
 }
 

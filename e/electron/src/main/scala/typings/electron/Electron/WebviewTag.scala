@@ -1459,15 +1459,6 @@ trait WebviewTag extends HTMLElement {
     */
   def getUserAgent(): String = js.native
   /**
-    * The web contents associated with this `webview`.
-    *
-    * It depends on the `remote` module, it is therefore not available when this
-    * module is disabled.
-    *
-    * @deprecated
-    */
-  def getWebContents(): WebContents_ = js.native
-  /**
     * The WebContents ID of this `webview`.
     */
   def getWebContentsId(): Double = js.native
@@ -2523,14 +2514,6 @@ trait WebviewTag extends HTMLElement {
     * Set guest page muted.
     */
   def setAudioMuted(muted: Boolean): Unit = js.native
-  /**
-    * Sets the maximum and minimum layout-based (i.e. non-visual) zoom level.
-    * 
-  **Deprecated:** This API is no longer supported by Chromium.
-    *
-    * @deprecated
-    */
-  def setLayoutZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): js.Promise[Unit] = js.native
   /**
     * Overrides the user agent for the guest page.
     */

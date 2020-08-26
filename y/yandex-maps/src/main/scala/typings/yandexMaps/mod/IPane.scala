@@ -7,12 +7,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPane extends IEventEmitter {
-  def destroy(): Unit
-  def getElement(): HTMLElement
-  def getMap(): Map_
-  def getOverflow(): visible | hidden
-  def getZIndex(): Double
+  def destroy(): Unit = js.native
+  def getElement(): HTMLElement = js.native
+  def getMap(): Map_ = js.native
+  def getOverflow(): visible | hidden = js.native
+  def getZIndex(): Double = js.native
 }
 
 object IPane {
@@ -28,5 +29,28 @@ object IPane {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), events = events.asInstanceOf[js.Any], getElement = js.Any.fromFunction0(getElement), getMap = js.Any.fromFunction0(getMap), getOverflow = js.Any.fromFunction0(getOverflow), getZIndex = js.Any.fromFunction0(getZIndex))
     __obj.asInstanceOf[IPane]
   }
+  @scala.inline
+  implicit class IPaneOps[Self <: IPane] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetElement(value: () => HTMLElement): Self = this.set("getElement", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetMap(value: () => Map_): Self = this.set("getMap", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetOverflow(value: () => visible | hidden): Self = this.set("getOverflow", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetZIndex(value: () => Double): Self = this.set("getZIndex", js.Any.fromFunction0(value))
+  }
+  
 }
 

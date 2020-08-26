@@ -12,7 +12,7 @@ A React autosuggest for the Google Maps Places API.
 | Keywords           | react, react-component, google, autosuggest, places |
 | # releases         | 7 |
 | # dependents       | 31 |
-| # downloads        | 1615541 |
+| # downloads        | 1655230 |
 | # stars            | 6 |
 
 ## Links

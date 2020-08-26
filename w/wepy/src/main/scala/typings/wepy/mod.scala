@@ -19,16 +19,20 @@ object mod extends js.Object {
     @JSName("$copy")
     var $copy_Original: FnCall = js.native
     @JSName("$createApp")
-    var $createApp_Original: js.Function2[
-        /* appClass */ AppConstructor, 
-        /* appConfig */ AppConfig, 
-        typings.wepy.appMod.default
+    var $createApp: js.UndefOr[
+        js.Function2[
+          /* appClass */ AppConstructor, 
+          /* appConfig */ AppConfig, 
+          typings.wepy.appMod.default
+        ]
       ] = js.native
     @JSName("$createPage")
-    var $createPage_Original: js.Function2[
-        /* pageClass */ PageConstructor, 
-        /* pagePath */ String | Boolean, 
-        typings.wepy.pageMod.default
+    var $createPage: js.UndefOr[
+        js.Function2[
+          /* pageClass */ PageConstructor, 
+          /* pagePath */ String | Boolean, 
+          typings.wepy.pageMod.default
+        ]
       ] = js.native
     @JSName("$extend")
     var $extend_Original: js.Function0[_] = js.native
@@ -63,18 +67,14 @@ object mod extends js.Object {
     def $copy[T](obj: T): T = js.native
     @JSName("$copy")
     def $copy[T](obj: T, deep: Boolean): T = js.native
-    @JSName("$createApp")
-    def $createApp(appClass: AppConstructor, appConfig: AppConfig): typings.wepy.appMod.default = js.native
-    @JSName("$createPage")
-    def $createPage(pageClass: PageConstructor, pagePath: String): typings.wepy.pageMod.default = js.native
-    @JSName("$createPage")
-    def $createPage(pageClass: PageConstructor, pagePath: Boolean): typings.wepy.pageMod.default = js.native
     @JSName("$extend")
     def $extend(): js.Any = js.native
     @JSName("$has")
     def $has(obj: js.Object, path: String): Boolean = js.native
     @JSName("$isDeepEqual")
     def $isDeepEqual(a: js.Any, b: js.Any): Boolean = js.native
+    @JSName("$isDeepEqual")
+    def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.UndefOr[scala.Nothing], bStack: js.Array[_]): Boolean = js.native
     @JSName("$isDeepEqual")
     def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.Array[_]): Boolean = js.native
     @JSName("$isDeepEqual")
@@ -83,6 +83,8 @@ object mod extends js.Object {
     def $isEmpty(obj: js.Object): Boolean = js.native
     @JSName("$isEqual")
     def $isEqual(a: js.Any, b: js.Any): Boolean = js.native
+    @JSName("$isEqual")
+    def $isEqual(a: js.Any, b: js.Any, aStack: js.UndefOr[scala.Nothing], bStack: js.Array[_]): Boolean = js.native
     @JSName("$isEqual")
     def $isEqual(a: js.Any, b: js.Any, aStack: js.Array[_]): Boolean = js.native
     @JSName("$isEqual")

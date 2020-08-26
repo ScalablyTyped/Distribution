@@ -129,7 +129,11 @@ trait Diagram_ extends Widget_ {
     * @returns {void}
     */
   def fitToPage(): Unit = js.native
+  def fitToPage(mode: js.UndefOr[scala.Nothing], region: js.UndefOr[scala.Nothing], margin: js.Any): Unit = js.native
+  def fitToPage(mode: js.UndefOr[scala.Nothing], region: Region): Unit = js.native
+  def fitToPage(mode: js.UndefOr[scala.Nothing], region: Region, margin: js.Any): Unit = js.native
   def fitToPage(mode: FitMode): Unit = js.native
+  def fitToPage(mode: FitMode, region: js.UndefOr[scala.Nothing], margin: js.Any): Unit = js.native
   def fitToPage(mode: FitMode, region: Region): Unit = js.native
   def fitToPage(mode: FitMode, region: Region, margin: js.Any): Unit = js.native
   /** Get the bounds of the diagram.
@@ -181,6 +185,7 @@ trait Diagram_ extends Widget_ {
     * @returns {void}
     */
   def paste(): Unit = js.native
+  def paste(`object`: js.UndefOr[scala.Nothing], rename: Boolean): Unit = js.native
   def paste(`object`: js.Any): Unit = js.native
   def paste(`object`: js.Any, rename: Boolean): Unit = js.native
   /** Print the diagram as image

@@ -30,6 +30,7 @@ object servicediscoveryMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: HttpNamespaceArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: HttpNamespaceArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -59,6 +60,7 @@ object servicediscoveryMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: PublicDnsNamespaceArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: PublicDnsNamespaceArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -74,6 +76,7 @@ object servicediscoveryMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: ServiceArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ServiceArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -87,8 +90,10 @@ object servicediscoveryMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.httpNamespaceMod.HttpNamespace = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.httpNamespaceMod.HttpNamespace = js.native
     def get(name: String, id: Input[ID], state: HttpNamespaceState): typings.pulumiAws.httpNamespaceMod.HttpNamespace = js.native
     def get(name: String, id: Input[ID], state: HttpNamespaceState, opts: CustomResourceOptions): typings.pulumiAws.httpNamespaceMod.HttpNamespace = js.native
     /**
@@ -108,8 +113,10 @@ object servicediscoveryMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = js.native
     def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = js.native
     def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState, opts: CustomResourceOptions): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = js.native
     /**
@@ -129,8 +136,10 @@ object servicediscoveryMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = js.native
     def get(name: String, id: Input[ID], state: PublicDnsNamespaceState): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = js.native
     def get(name: String, id: Input[ID], state: PublicDnsNamespaceState, opts: CustomResourceOptions): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = js.native
     /**
@@ -150,8 +159,10 @@ object servicediscoveryMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.servicediscoveryServiceMod.Service = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.servicediscoveryServiceMod.Service = js.native
     def get(name: String, id: Input[ID], state: ServiceState): typings.pulumiAws.servicediscoveryServiceMod.Service = js.native
     def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): typings.pulumiAws.servicediscoveryServiceMod.Service = js.native
     /**

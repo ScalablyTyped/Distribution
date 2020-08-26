@@ -15,98 +15,162 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CollapsibleProps
   extends AllHTMLAttributes[Collapsible]
      with ClassAttributes[Collapsible] {
-  var accordionPosition: js.UndefOr[String | Double] = js.undefined
-  var classParentString: js.UndefOr[String] = js.undefined
-  var contentContainerTagName: js.UndefOr[String] = js.undefined
-  var contentInnerClassName: js.UndefOr[String] = js.undefined
-  var contentOuterClassName: js.UndefOr[String] = js.undefined
-  var easing: js.UndefOr[String] = js.undefined
-  var handleTriggerClick: js.UndefOr[js.Function1[/* accordionPosition */ js.UndefOr[String | Double], Unit]] = js.undefined
-  var lazyRender: js.UndefOr[Boolean] = js.undefined
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onClosing: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onOpening: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onTriggerClosing: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onTriggerOpening: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var openedClassName: js.UndefOr[String] = js.undefined
-  var overflowWhenOpen: js.UndefOr[hidden | visible | auto | scroll | inherit | initial | unset] = js.undefined
-  var transitionCloseTime: js.UndefOr[Double | Null] = js.undefined
-  var transitionTime: js.UndefOr[Double] = js.undefined
-  var trigger: String | ReactElement
-  var triggerClassName: js.UndefOr[String] = js.undefined
-  var triggerDisabled: js.UndefOr[Boolean] = js.undefined
-  var triggerOpenedClassName: js.UndefOr[String] = js.undefined
-  var triggerSibling: js.UndefOr[ReactElement] = js.undefined
-  var triggerStyle: js.UndefOr[Null | CSSProperties] = js.undefined
-  var triggerTagName: js.UndefOr[String] = js.undefined
-  var triggerWhenOpen: js.UndefOr[String | ReactElement] = js.undefined
+  var accordionPosition: js.UndefOr[String | Double] = js.native
+  var classParentString: js.UndefOr[String] = js.native
+  var contentContainerTagName: js.UndefOr[String] = js.native
+  var contentInnerClassName: js.UndefOr[String] = js.native
+  var contentOuterClassName: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.native
+  var handleTriggerClick: js.UndefOr[js.Function1[/* accordionPosition */ js.UndefOr[String | Double], Unit]] = js.native
+  var lazyRender: js.UndefOr[Boolean] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClosing: js.UndefOr[js.Function0[Unit]] = js.native
+  var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+  var onOpening: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTriggerClosing: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTriggerOpening: js.UndefOr[js.Function0[Unit]] = js.native
+  var openedClassName: js.UndefOr[String] = js.native
+  var overflowWhenOpen: js.UndefOr[hidden | visible | auto | scroll | inherit | initial | unset] = js.native
+  var transitionCloseTime: js.UndefOr[Double | Null] = js.native
+  var transitionTime: js.UndefOr[Double] = js.native
+  var trigger: String | ReactElement = js.native
+  var triggerClassName: js.UndefOr[String] = js.native
+  var triggerDisabled: js.UndefOr[Boolean] = js.native
+  var triggerOpenedClassName: js.UndefOr[String] = js.native
+  var triggerSibling: js.UndefOr[ReactElement] = js.native
+  var triggerStyle: js.UndefOr[Null | CSSProperties] = js.native
+  var triggerTagName: js.UndefOr[String] = js.native
+  var triggerWhenOpen: js.UndefOr[String | ReactElement] = js.native
 }
 
 object CollapsibleProps {
   @scala.inline
-  def apply(
-    trigger: String | ReactElement,
-    AllHTMLAttributes: AllHTMLAttributes[Collapsible] = null,
-    ClassAttributes: ClassAttributes[Collapsible] = null,
-    accordionPosition: String | Double = null,
-    classParentString: String = null,
-    contentContainerTagName: String = null,
-    contentInnerClassName: String = null,
-    contentOuterClassName: String = null,
-    easing: String = null,
-    handleTriggerClick: /* accordionPosition */ js.UndefOr[String | Double] => Unit = null,
-    lazyRender: js.UndefOr[Boolean] = js.undefined,
-    onClose: () => Unit = null,
-    onClosing: () => Unit = null,
-    onOpen: () => Unit = null,
-    onOpening: () => Unit = null,
-    onTriggerClosing: () => Unit = null,
-    onTriggerOpening: () => Unit = null,
-    openedClassName: String = null,
-    overflowWhenOpen: hidden | visible | auto | scroll | inherit | initial | unset = null,
-    transitionCloseTime: js.UndefOr[Null | Double] = js.undefined,
-    transitionTime: js.UndefOr[Double] = js.undefined,
-    triggerClassName: String = null,
-    triggerDisabled: js.UndefOr[Boolean] = js.undefined,
-    triggerOpenedClassName: String = null,
-    triggerSibling: ReactElement = null,
-    triggerStyle: js.UndefOr[Null | CSSProperties] = js.undefined,
-    triggerTagName: String = null,
-    triggerWhenOpen: String | ReactElement = null
-  ): CollapsibleProps = {
+  def apply(trigger: String | ReactElement): CollapsibleProps = {
     val __obj = js.Dynamic.literal(trigger = trigger.asInstanceOf[js.Any])
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (accordionPosition != null) __obj.updateDynamic("accordionPosition")(accordionPosition.asInstanceOf[js.Any])
-    if (classParentString != null) __obj.updateDynamic("classParentString")(classParentString.asInstanceOf[js.Any])
-    if (contentContainerTagName != null) __obj.updateDynamic("contentContainerTagName")(contentContainerTagName.asInstanceOf[js.Any])
-    if (contentInnerClassName != null) __obj.updateDynamic("contentInnerClassName")(contentInnerClassName.asInstanceOf[js.Any])
-    if (contentOuterClassName != null) __obj.updateDynamic("contentOuterClassName")(contentOuterClassName.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (handleTriggerClick != null) __obj.updateDynamic("handleTriggerClick")(js.Any.fromFunction1(handleTriggerClick))
-    if (!js.isUndefined(lazyRender)) __obj.updateDynamic("lazyRender")(lazyRender.get.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (onClosing != null) __obj.updateDynamic("onClosing")(js.Any.fromFunction0(onClosing))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction0(onOpen))
-    if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction0(onOpening))
-    if (onTriggerClosing != null) __obj.updateDynamic("onTriggerClosing")(js.Any.fromFunction0(onTriggerClosing))
-    if (onTriggerOpening != null) __obj.updateDynamic("onTriggerOpening")(js.Any.fromFunction0(onTriggerOpening))
-    if (openedClassName != null) __obj.updateDynamic("openedClassName")(openedClassName.asInstanceOf[js.Any])
-    if (overflowWhenOpen != null) __obj.updateDynamic("overflowWhenOpen")(overflowWhenOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionCloseTime)) __obj.updateDynamic("transitionCloseTime")(transitionCloseTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionTime)) __obj.updateDynamic("transitionTime")(transitionTime.get.asInstanceOf[js.Any])
-    if (triggerClassName != null) __obj.updateDynamic("triggerClassName")(triggerClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(triggerDisabled)) __obj.updateDynamic("triggerDisabled")(triggerDisabled.get.asInstanceOf[js.Any])
-    if (triggerOpenedClassName != null) __obj.updateDynamic("triggerOpenedClassName")(triggerOpenedClassName.asInstanceOf[js.Any])
-    if (triggerSibling != null) __obj.updateDynamic("triggerSibling")(triggerSibling.asInstanceOf[js.Any])
-    if (!js.isUndefined(triggerStyle)) __obj.updateDynamic("triggerStyle")(triggerStyle.asInstanceOf[js.Any])
-    if (triggerTagName != null) __obj.updateDynamic("triggerTagName")(triggerTagName.asInstanceOf[js.Any])
-    if (triggerWhenOpen != null) __obj.updateDynamic("triggerWhenOpen")(triggerWhenOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapsibleProps]
   }
+  @scala.inline
+  implicit class CollapsiblePropsOps[Self <: CollapsibleProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrigger(value: String | ReactElement): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccordionPosition(value: String | Double): Self = this.set("accordionPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccordionPosition: Self = this.set("accordionPosition", js.undefined)
+    @scala.inline
+    def setClassParentString(value: String): Self = this.set("classParentString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassParentString: Self = this.set("classParentString", js.undefined)
+    @scala.inline
+    def setContentContainerTagName(value: String): Self = this.set("contentContainerTagName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentContainerTagName: Self = this.set("contentContainerTagName", js.undefined)
+    @scala.inline
+    def setContentInnerClassName(value: String): Self = this.set("contentInnerClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentInnerClassName: Self = this.set("contentInnerClassName", js.undefined)
+    @scala.inline
+    def setContentOuterClassName(value: String): Self = this.set("contentOuterClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentOuterClassName: Self = this.set("contentOuterClassName", js.undefined)
+    @scala.inline
+    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setHandleTriggerClick(value: /* accordionPosition */ js.UndefOr[String | Double] => Unit): Self = this.set("handleTriggerClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHandleTriggerClick: Self = this.set("handleTriggerClick", js.undefined)
+    @scala.inline
+    def setLazyRender(value: Boolean): Self = this.set("lazyRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazyRender: Self = this.set("lazyRender", js.undefined)
+    @scala.inline
+    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnClosing(value: () => Unit): Self = this.set("onClosing", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClosing: Self = this.set("onClosing", js.undefined)
+    @scala.inline
+    def setOnOpen(value: () => Unit): Self = this.set("onOpen", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    @scala.inline
+    def setOnOpening(value: () => Unit): Self = this.set("onOpening", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnOpening: Self = this.set("onOpening", js.undefined)
+    @scala.inline
+    def setOnTriggerClosing(value: () => Unit): Self = this.set("onTriggerClosing", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnTriggerClosing: Self = this.set("onTriggerClosing", js.undefined)
+    @scala.inline
+    def setOnTriggerOpening(value: () => Unit): Self = this.set("onTriggerOpening", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnTriggerOpening: Self = this.set("onTriggerOpening", js.undefined)
+    @scala.inline
+    def setOpenedClassName(value: String): Self = this.set("openedClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenedClassName: Self = this.set("openedClassName", js.undefined)
+    @scala.inline
+    def setOverflowWhenOpen(value: hidden | visible | auto | scroll | inherit | initial | unset): Self = this.set("overflowWhenOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflowWhenOpen: Self = this.set("overflowWhenOpen", js.undefined)
+    @scala.inline
+    def setTransitionCloseTime(value: Double): Self = this.set("transitionCloseTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionCloseTime: Self = this.set("transitionCloseTime", js.undefined)
+    @scala.inline
+    def setTransitionCloseTimeNull: Self = this.set("transitionCloseTime", null)
+    @scala.inline
+    def setTransitionTime(value: Double): Self = this.set("transitionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionTime: Self = this.set("transitionTime", js.undefined)
+    @scala.inline
+    def setTriggerClassName(value: String): Self = this.set("triggerClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerClassName: Self = this.set("triggerClassName", js.undefined)
+    @scala.inline
+    def setTriggerDisabled(value: Boolean): Self = this.set("triggerDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerDisabled: Self = this.set("triggerDisabled", js.undefined)
+    @scala.inline
+    def setTriggerOpenedClassName(value: String): Self = this.set("triggerOpenedClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerOpenedClassName: Self = this.set("triggerOpenedClassName", js.undefined)
+    @scala.inline
+    def setTriggerSibling(value: ReactElement): Self = this.set("triggerSibling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerSibling: Self = this.set("triggerSibling", js.undefined)
+    @scala.inline
+    def setTriggerStyle(value: CSSProperties): Self = this.set("triggerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerStyle: Self = this.set("triggerStyle", js.undefined)
+    @scala.inline
+    def setTriggerStyleNull: Self = this.set("triggerStyle", null)
+    @scala.inline
+    def setTriggerTagName(value: String): Self = this.set("triggerTagName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerTagName: Self = this.set("triggerTagName", js.undefined)
+    @scala.inline
+    def setTriggerWhenOpen(value: String | ReactElement): Self = this.set("triggerWhenOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerWhenOpen: Self = this.set("triggerWhenOpen", js.undefined)
+  }
+  
 }
 

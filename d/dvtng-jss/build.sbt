@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "dvtng-jss"
-version := "v0.6-dt-20200515Z-21e4aa"
-scalaVersion := "2.13.2"
+version := "v0.6-dt-20200515Z-3128bc"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

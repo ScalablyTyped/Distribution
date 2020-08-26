@@ -42,23 +42,50 @@ trait WorkspaceRequest extends js.Object {
 
 object WorkspaceRequest {
   @scala.inline
-  def apply(
-    BundleId: BundleId,
-    DirectoryId: DirectoryId,
-    UserName: UserName,
-    RootVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined,
-    Tags: TagList = null,
-    UserVolumeEncryptionEnabled: js.UndefOr[BooleanObject] = js.undefined,
-    VolumeEncryptionKey: VolumeEncryptionKey = null,
-    WorkspaceProperties: WorkspaceProperties = null
-  ): WorkspaceRequest = {
+  def apply(BundleId: BundleId, DirectoryId: DirectoryId, UserName: UserName): WorkspaceRequest = {
     val __obj = js.Dynamic.literal(BundleId = BundleId.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-    if (!js.isUndefined(RootVolumeEncryptionEnabled)) __obj.updateDynamic("RootVolumeEncryptionEnabled")(RootVolumeEncryptionEnabled.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserVolumeEncryptionEnabled)) __obj.updateDynamic("UserVolumeEncryptionEnabled")(UserVolumeEncryptionEnabled.get.asInstanceOf[js.Any])
-    if (VolumeEncryptionKey != null) __obj.updateDynamic("VolumeEncryptionKey")(VolumeEncryptionKey.asInstanceOf[js.Any])
-    if (WorkspaceProperties != null) __obj.updateDynamic("WorkspaceProperties")(WorkspaceProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceRequest]
   }
+  @scala.inline
+  implicit class WorkspaceRequestOps[Self <: WorkspaceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBundleId(value: BundleId): Self = this.set("BundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserName(value: UserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRootVolumeEncryptionEnabled(value: BooleanObject): Self = this.set("RootVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootVolumeEncryptionEnabled: Self = this.set("RootVolumeEncryptionEnabled", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setUserVolumeEncryptionEnabled(value: BooleanObject): Self = this.set("UserVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserVolumeEncryptionEnabled: Self = this.set("UserVolumeEncryptionEnabled", js.undefined)
+    @scala.inline
+    def setVolumeEncryptionKey(value: VolumeEncryptionKey): Self = this.set("VolumeEncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeEncryptionKey: Self = this.set("VolumeEncryptionKey", js.undefined)
+    @scala.inline
+    def setWorkspaceProperties(value: WorkspaceProperties): Self = this.set("WorkspaceProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaceProperties: Self = this.set("WorkspaceProperties", js.undefined)
+  }
+  
 }
 

@@ -4,80 +4,119 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DrawMarkerPointersEventArgs extends js.Object {
   /** returns the gauge model
     */
-  var Model: js.UndefOr[js.Any] = js.undefined
+  var Model: js.UndefOr[js.Any] = js.native
   /** returns the cancel option value
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** returns the context element
     */
-  var context: js.UndefOr[js.Any] = js.undefined
+  var context: js.UndefOr[js.Any] = js.native
   /** returns the current marker pointer element.
     */
-  var markerElement: js.UndefOr[js.Any] = js.undefined
+  var markerElement: js.UndefOr[js.Any] = js.native
   /** returns the index of the marker pointer.
     */
-  var markerPointerIndex: js.UndefOr[Double] = js.undefined
+  var markerPointerIndex: js.UndefOr[Double] = js.native
   /** returns the object of the gauge.
     */
-  var `object`: js.UndefOr[js.Any] = js.undefined
+  var `object`: js.UndefOr[js.Any] = js.native
   /** returns the angle of the marker pointer.
     */
-  var pointerAngle: js.UndefOr[Double] = js.undefined
+  var pointerAngle: js.UndefOr[Double] = js.native
   /** returns the value of the marker pointer.
     */
-  var pointerValue: js.UndefOr[Double] = js.undefined
+  var pointerValue: js.UndefOr[Double] = js.native
   /** returns the startX and startY of the pointer
     */
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: js.UndefOr[js.Any] = js.native
   /** returns the options of the scale element.
     */
-  var scaleElement: js.UndefOr[js.Any] = js.undefined
+  var scaleElement: js.UndefOr[js.Any] = js.native
   /** returns the scaleIndex to which the pointer belongs.
     */
-  var scaleIndex: js.UndefOr[Double] = js.undefined
+  var scaleIndex: js.UndefOr[Double] = js.native
   /** returns the ticks style
     */
-  var style: js.UndefOr[String] = js.undefined
+  var style: js.UndefOr[String] = js.native
   /** returns the name of the event
     */
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[js.Any] = js.native
 }
 
 object DrawMarkerPointersEventArgs {
   @scala.inline
-  def apply(
-    Model: js.Any = null,
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    context: js.Any = null,
-    markerElement: js.Any = null,
-    markerPointerIndex: js.UndefOr[Double] = js.undefined,
-    `object`: js.Any = null,
-    pointerAngle: js.UndefOr[Double] = js.undefined,
-    pointerValue: js.UndefOr[Double] = js.undefined,
-    position: js.Any = null,
-    scaleElement: js.Any = null,
-    scaleIndex: js.UndefOr[Double] = js.undefined,
-    style: String = null,
-    `type`: js.Any = null
-  ): DrawMarkerPointersEventArgs = {
+  def apply(): DrawMarkerPointersEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Model != null) __obj.updateDynamic("Model")(Model.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (markerElement != null) __obj.updateDynamic("markerElement")(markerElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(markerPointerIndex)) __obj.updateDynamic("markerPointerIndex")(markerPointerIndex.get.asInstanceOf[js.Any])
-    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointerAngle)) __obj.updateDynamic("pointerAngle")(pointerAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointerValue)) __obj.updateDynamic("pointerValue")(pointerValue.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleIndex)) __obj.updateDynamic("scaleIndex")(scaleIndex.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawMarkerPointersEventArgs]
   }
+  @scala.inline
+  implicit class DrawMarkerPointersEventArgsOps[Self <: DrawMarkerPointersEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("Model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("Model", js.undefined)
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setMarkerElement(value: js.Any): Self = this.set("markerElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerElement: Self = this.set("markerElement", js.undefined)
+    @scala.inline
+    def setMarkerPointerIndex(value: Double): Self = this.set("markerPointerIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerPointerIndex: Self = this.set("markerPointerIndex", js.undefined)
+    @scala.inline
+    def setObject(value: js.Any): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObject: Self = this.set("object", js.undefined)
+    @scala.inline
+    def setPointerAngle(value: Double): Self = this.set("pointerAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointerAngle: Self = this.set("pointerAngle", js.undefined)
+    @scala.inline
+    def setPointerValue(value: Double): Self = this.set("pointerValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointerValue: Self = this.set("pointerValue", js.undefined)
+    @scala.inline
+    def setPosition(value: js.Any): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setScaleElement(value: js.Any): Self = this.set("scaleElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleElement: Self = this.set("scaleElement", js.undefined)
+    @scala.inline
+    def setScaleIndex(value: Double): Self = this.set("scaleIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleIndex: Self = this.set("scaleIndex", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

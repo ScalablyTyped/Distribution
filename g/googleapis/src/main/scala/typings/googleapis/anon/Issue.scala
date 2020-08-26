@@ -14,18 +14,40 @@ trait Issue extends js.Object {
 
 object Issue {
   @scala.inline
-  def apply(
-    issue: js.Array[IssueDisplayNumber] = null,
-    orderNumber: js.UndefOr[Double] = js.undefined,
-    seriesBookType: String = null,
-    seriesId: String = null
-  ): Issue = {
+  def apply(): Issue = {
     val __obj = js.Dynamic.literal()
-    if (issue != null) __obj.updateDynamic("issue")(issue.asInstanceOf[js.Any])
-    if (!js.isUndefined(orderNumber)) __obj.updateDynamic("orderNumber")(orderNumber.get.asInstanceOf[js.Any])
-    if (seriesBookType != null) __obj.updateDynamic("seriesBookType")(seriesBookType.asInstanceOf[js.Any])
-    if (seriesId != null) __obj.updateDynamic("seriesId")(seriesId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Issue]
   }
+  @scala.inline
+  implicit class IssueOps[Self <: Issue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIssueVarargs(value: IssueDisplayNumber*): Self = this.set("issue", js.Array(value :_*))
+    @scala.inline
+    def setIssue(value: js.Array[IssueDisplayNumber]): Self = this.set("issue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssue: Self = this.set("issue", js.undefined)
+    @scala.inline
+    def setOrderNumber(value: Double): Self = this.set("orderNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderNumber: Self = this.set("orderNumber", js.undefined)
+    @scala.inline
+    def setSeriesBookType(value: String): Self = this.set("seriesBookType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeriesBookType: Self = this.set("seriesBookType", js.undefined)
+    @scala.inline
+    def setSeriesId(value: String): Self = this.set("seriesId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeriesId: Self = this.set("seriesId", js.undefined)
+  }
+  
 }
 

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NotesProperties extends js.Object {
   /**
     * The object ID of the shape on this notes page that contains the speaker
@@ -13,15 +14,31 @@ trait NotesProperties extends js.Object {
     * actual shape may have different object ID. The `GetPresentation` or
     * `GetPage` action will always return the latest object ID.
     */
-  var speakerNotesObjectId: js.UndefOr[String] = js.undefined
+  var speakerNotesObjectId: js.UndefOr[String] = js.native
 }
 
 object NotesProperties {
   @scala.inline
-  def apply(speakerNotesObjectId: String = null): NotesProperties = {
+  def apply(): NotesProperties = {
     val __obj = js.Dynamic.literal()
-    if (speakerNotesObjectId != null) __obj.updateDynamic("speakerNotesObjectId")(speakerNotesObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotesProperties]
   }
+  @scala.inline
+  implicit class NotesPropertiesOps[Self <: NotesProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpeakerNotesObjectId(value: String): Self = this.set("speakerNotesObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeakerNotesObjectId: Self = this.set("speakerNotesObjectId", js.undefined)
+  }
+  
 }
 

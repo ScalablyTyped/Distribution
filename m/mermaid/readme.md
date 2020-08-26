@@ -10,9 +10,9 @@ Markdownish syntax for generating flowcharts, sequence diagrams, class diagrams,
 | ------------------ | :-------------: |
 | Full name          | mermaid |
 | Keywords           | diagram, markdown, flowchart, sequence diagram, gantt, class diagram, git graph |
-| # releases         | 41 |
-| # dependents       | 89 |
-| # downloads        | 1984740 |
+| # releases         | 40 |
+| # dependents       | 96 |
+| # downloads        | 2084707 |
 | # stars            | 12 |
 
 ## Links

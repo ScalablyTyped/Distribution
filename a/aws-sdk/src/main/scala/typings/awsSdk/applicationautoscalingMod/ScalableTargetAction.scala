@@ -18,14 +18,30 @@ trait ScalableTargetAction extends js.Object {
 
 object ScalableTargetAction {
   @scala.inline
-  def apply(
-    MaxCapacity: js.UndefOr[ResourceCapacity] = js.undefined,
-    MinCapacity: js.UndefOr[ResourceCapacity] = js.undefined
-  ): ScalableTargetAction = {
+  def apply(): ScalableTargetAction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinCapacity)) __obj.updateDynamic("MinCapacity")(MinCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalableTargetAction]
   }
+  @scala.inline
+  implicit class ScalableTargetActionOps[Self <: ScalableTargetAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxCapacity(value: ResourceCapacity): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    @scala.inline
+    def setMinCapacity(value: ResourceCapacity): Self = this.set("MinCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCapacity: Self = this.set("MinCapacity", js.undefined)
+  }
+  
 }
 

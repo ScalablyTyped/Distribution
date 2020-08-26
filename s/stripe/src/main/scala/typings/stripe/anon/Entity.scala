@@ -12,15 +12,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Entity extends js.Object {
   /**
     * Entity which the authorization control acts on. One of account, card, or cardholder.
     */
-  var entity: account | cardholder | card
+  var entity: account | cardholder | card = js.native
   /**
     * Name of the authorization control. One of allowed_categories, blocked_categories, max_amount, max_approvals, or spending_limits.
     */
-  var name: allowed_categories | blocked_categories | max_amount | max_approvals | spending_limits
+  var name: allowed_categories | blocked_categories | max_amount | max_approvals | spending_limits = js.native
 }
 
 object Entity {
@@ -32,5 +33,22 @@ object Entity {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entity]
   }
+  @scala.inline
+  implicit class EntityOps[Self <: Entity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntity(value: account | cardholder | card): Self = this.set("entity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: allowed_categories | blocked_categories | max_amount | max_approvals | spending_limits): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

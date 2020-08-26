@@ -33,6 +33,7 @@ trait App extends js.Object {
     * For example App.onError = function (options) {}.
     * */
   def reload(): Unit = js.native
+  def reload(options: js.UndefOr[scala.Nothing], reloadData: js.Any): Unit = js.native
   def reload(options: js.Any): Unit = js.native
   def reload(options: js.Any, reloadData: js.Any): Unit = js.native
 }

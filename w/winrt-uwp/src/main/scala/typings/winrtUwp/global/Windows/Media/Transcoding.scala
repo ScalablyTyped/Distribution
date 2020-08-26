@@ -1,7 +1,5 @@
 package typings.winrtUwp.global.Windows.Media
 
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncActionWithProgress
-import typings.winrtUwp.Windows.Media.Transcoding.TranscodeFailureReason
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,20 +17,7 @@ object Transcoding extends js.Object {
   /** Represents an asynchronous media transcode deferral operation which can be used to start the transcode operation. */
   @js.native
   abstract class PrepareTranscodeResult ()
-    extends typings.winrtUwp.Windows.Media.Transcoding.PrepareTranscodeResult {
-    /** Indicates whether the trancode operation can be performed successfully. */
-    /* CompleteClass */
-    override var canTranscode: Boolean = js.native
-    /** Specifies the reason for the transcode failure. */
-    /* CompleteClass */
-    override var failureReason: TranscodeFailureReason = js.native
-    /**
-      * Creates an object to perform an asynchronous media transcode operation on media data.
-      * @return An object that is used to control the asynchronous operation.
-      */
-    /* CompleteClass */
-    override def transcodeAsync(): IPromiseWithIAsyncActionWithProgress[Double] = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Transcoding.PrepareTranscodeResult
   
   /** Defines the available algorithms used by the Transcode Video Processor (XVP). */
   @js.native

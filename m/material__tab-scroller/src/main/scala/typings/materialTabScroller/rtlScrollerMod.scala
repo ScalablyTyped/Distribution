@@ -12,7 +12,7 @@ object rtlScrollerMod extends js.Object {
   @js.native
   abstract class MDCTabScrollerRTL protected () extends js.Object {
     def this(adapter: MDCTabScrollerAdapter) = this()
-    val adapter_ : MDCTabScrollerAdapter = js.native
+    val adapter: MDCTabScrollerAdapter = js.native
     /**
       * @param scrollX The current scrollX position
       * @param translateX The current translateX position

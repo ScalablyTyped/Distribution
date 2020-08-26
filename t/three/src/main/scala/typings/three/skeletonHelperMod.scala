@@ -1,7 +1,10 @@
 package typings.three
 
 import typings.three.boneMod.Bone
+import typings.three.bufferGeometryMod.BufferGeometry
+import typings.three.geometryMod.Geometry
 import typings.three.lineSegmentsMod.LineSegments
+import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
 import scala.scalajs.js
@@ -12,7 +15,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object skeletonHelperMod extends js.Object {
   @js.native
-  class SkeletonHelper protected () extends LineSegments {
+  class SkeletonHelper protected ()
+    extends LineSegments[Geometry | BufferGeometry, Material | js.Array[Material]] {
     def this(`object`: Object3D) = this()
     var bones: js.Array[Bone] = js.native
     val isSkeletonHelper: `true` = js.native

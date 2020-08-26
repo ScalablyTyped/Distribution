@@ -1,80 +1,104 @@
 package typings.tensorflowTfjsLayers.recurrentSerializationMod
 
-import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsLayers.activationConfigMod.ActivationSerialization
 import typings.tensorflowTfjsLayers.constraintConfigMod.ConstraintSerialization
 import typings.tensorflowTfjsLayers.initializerConfigMod.InitializerSerialization
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.regularizerConfigMod.RegularizerSerialization
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SimpleRNNCellConfig extends LayerConfig {
-  var activation: js.UndefOr[ActivationSerialization] = js.undefined
-  var bias_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
-  var bias_initializer: js.UndefOr[InitializerSerialization] = js.undefined
-  var bias_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
-  var dropout: js.UndefOr[Double] = js.undefined
-  var kernel_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
-  var kernel_initializer: js.UndefOr[InitializerSerialization] = js.undefined
-  var kernel_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
-  var recurrent_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
-  var recurrent_dropout: js.UndefOr[Double] = js.undefined
-  var recurrent_initializer: js.UndefOr[InitializerSerialization] = js.undefined
-  var recurrent_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
-  var units: Double
-  var use_bias: js.UndefOr[Boolean] = js.undefined
+  var activation: js.UndefOr[ActivationSerialization] = js.native
+  var bias_constraint: js.UndefOr[ConstraintSerialization] = js.native
+  var bias_initializer: js.UndefOr[InitializerSerialization] = js.native
+  var bias_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+  var dropout: js.UndefOr[Double] = js.native
+  var kernel_constraint: js.UndefOr[ConstraintSerialization] = js.native
+  var kernel_initializer: js.UndefOr[InitializerSerialization] = js.native
+  var kernel_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+  var recurrent_constraint: js.UndefOr[ConstraintSerialization] = js.native
+  var recurrent_dropout: js.UndefOr[Double] = js.native
+  var recurrent_initializer: js.UndefOr[InitializerSerialization] = js.native
+  var recurrent_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+  var units: Double = js.native
+  var use_bias: js.UndefOr[Boolean] = js.native
 }
 
 object SimpleRNNCellConfig {
   @scala.inline
-  def apply(
-    units: Double,
-    activation: ActivationSerialization = null,
-    batch_input_shape: Shape = null,
-    batch_size: js.UndefOr[Double] = js.undefined,
-    bias_constraint: ConstraintSerialization = null,
-    bias_initializer: InitializerSerialization = null,
-    bias_regularizer: RegularizerSerialization = null,
-    dropout: js.UndefOr[Double] = js.undefined,
-    dtype: DataType = null,
-    input_dtype: DataType = null,
-    input_shape: Shape = null,
-    kernel_constraint: ConstraintSerialization = null,
-    kernel_initializer: InitializerSerialization = null,
-    kernel_regularizer: RegularizerSerialization = null,
-    name: String = null,
-    recurrent_constraint: ConstraintSerialization = null,
-    recurrent_dropout: js.UndefOr[Double] = js.undefined,
-    recurrent_initializer: InitializerSerialization = null,
-    recurrent_regularizer: RegularizerSerialization = null,
-    trainable: js.UndefOr[Boolean] = js.undefined,
-    use_bias: js.UndefOr[Boolean] = js.undefined
-  ): SimpleRNNCellConfig = {
+  def apply(units: Double): SimpleRNNCellConfig = {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any])
-    if (activation != null) __obj.updateDynamic("activation")(activation.asInstanceOf[js.Any])
-    if (batch_input_shape != null) __obj.updateDynamic("batch_input_shape")(batch_input_shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(batch_size)) __obj.updateDynamic("batch_size")(batch_size.get.asInstanceOf[js.Any])
-    if (bias_constraint != null) __obj.updateDynamic("bias_constraint")(bias_constraint.asInstanceOf[js.Any])
-    if (bias_initializer != null) __obj.updateDynamic("bias_initializer")(bias_initializer.asInstanceOf[js.Any])
-    if (bias_regularizer != null) __obj.updateDynamic("bias_regularizer")(bias_regularizer.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropout)) __obj.updateDynamic("dropout")(dropout.get.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (input_dtype != null) __obj.updateDynamic("input_dtype")(input_dtype.asInstanceOf[js.Any])
-    if (input_shape != null) __obj.updateDynamic("input_shape")(input_shape.asInstanceOf[js.Any])
-    if (kernel_constraint != null) __obj.updateDynamic("kernel_constraint")(kernel_constraint.asInstanceOf[js.Any])
-    if (kernel_initializer != null) __obj.updateDynamic("kernel_initializer")(kernel_initializer.asInstanceOf[js.Any])
-    if (kernel_regularizer != null) __obj.updateDynamic("kernel_regularizer")(kernel_regularizer.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (recurrent_constraint != null) __obj.updateDynamic("recurrent_constraint")(recurrent_constraint.asInstanceOf[js.Any])
-    if (!js.isUndefined(recurrent_dropout)) __obj.updateDynamic("recurrent_dropout")(recurrent_dropout.get.asInstanceOf[js.Any])
-    if (recurrent_initializer != null) __obj.updateDynamic("recurrent_initializer")(recurrent_initializer.asInstanceOf[js.Any])
-    if (recurrent_regularizer != null) __obj.updateDynamic("recurrent_regularizer")(recurrent_regularizer.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(use_bias)) __obj.updateDynamic("use_bias")(use_bias.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleRNNCellConfig]
   }
+  @scala.inline
+  implicit class SimpleRNNCellConfigOps[Self <: SimpleRNNCellConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUnits(value: Double): Self = this.set("units", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivation(value: ActivationSerialization): Self = this.set("activation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivation: Self = this.set("activation", js.undefined)
+    @scala.inline
+    def setBias_constraint(value: ConstraintSerialization): Self = this.set("bias_constraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBias_constraint: Self = this.set("bias_constraint", js.undefined)
+    @scala.inline
+    def setBias_initializer(value: InitializerSerialization): Self = this.set("bias_initializer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBias_initializer: Self = this.set("bias_initializer", js.undefined)
+    @scala.inline
+    def setBias_regularizer(value: RegularizerSerialization): Self = this.set("bias_regularizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBias_regularizer: Self = this.set("bias_regularizer", js.undefined)
+    @scala.inline
+    def setDropout(value: Double): Self = this.set("dropout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropout: Self = this.set("dropout", js.undefined)
+    @scala.inline
+    def setKernel_constraint(value: ConstraintSerialization): Self = this.set("kernel_constraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKernel_constraint: Self = this.set("kernel_constraint", js.undefined)
+    @scala.inline
+    def setKernel_initializer(value: InitializerSerialization): Self = this.set("kernel_initializer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKernel_initializer: Self = this.set("kernel_initializer", js.undefined)
+    @scala.inline
+    def setKernel_regularizer(value: RegularizerSerialization): Self = this.set("kernel_regularizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKernel_regularizer: Self = this.set("kernel_regularizer", js.undefined)
+    @scala.inline
+    def setRecurrent_constraint(value: ConstraintSerialization): Self = this.set("recurrent_constraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurrent_constraint: Self = this.set("recurrent_constraint", js.undefined)
+    @scala.inline
+    def setRecurrent_dropout(value: Double): Self = this.set("recurrent_dropout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurrent_dropout: Self = this.set("recurrent_dropout", js.undefined)
+    @scala.inline
+    def setRecurrent_initializer(value: InitializerSerialization): Self = this.set("recurrent_initializer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurrent_initializer: Self = this.set("recurrent_initializer", js.undefined)
+    @scala.inline
+    def setRecurrent_regularizer(value: RegularizerSerialization): Self = this.set("recurrent_regularizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurrent_regularizer: Self = this.set("recurrent_regularizer", js.undefined)
+    @scala.inline
+    def setUse_bias(value: Boolean): Self = this.set("use_bias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUse_bias: Self = this.set("use_bias", js.undefined)
+  }
+  
 }
 

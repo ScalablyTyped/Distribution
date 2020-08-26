@@ -103,50 +103,102 @@ trait SchemaActivity extends js.Object {
 
 object SchemaActivity {
   @scala.inline
-  def apply(
-    access: SchemaAcl = null,
-    actor: ClientSpecificActorInfo = null,
-    address: String = null,
-    annotation: String = null,
-    crosspostSource: String = null,
-    etag: String = null,
-    geocode: String = null,
-    id: String = null,
-    kind: String = null,
-    location: SchemaPlace = null,
-    `object`: Actor = null,
-    placeId: String = null,
-    placeName: String = null,
-    provider: Title = null,
-    published: String = null,
-    radius: String = null,
-    title: String = null,
-    updated: String = null,
-    url: String = null,
-    verb: String = null
-  ): SchemaActivity = {
+  def apply(): SchemaActivity = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
-    if (crosspostSource != null) __obj.updateDynamic("crosspostSource")(crosspostSource.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (geocode != null) __obj.updateDynamic("geocode")(geocode.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (placeId != null) __obj.updateDynamic("placeId")(placeId.asInstanceOf[js.Any])
-    if (placeName != null) __obj.updateDynamic("placeName")(placeName.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (verb != null) __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaActivity]
   }
+  @scala.inline
+  implicit class SchemaActivityOps[Self <: SchemaActivity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccess(value: SchemaAcl): Self = this.set("access", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccess: Self = this.set("access", js.undefined)
+    @scala.inline
+    def setActor(value: ClientSpecificActorInfo): Self = this.set("actor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActor: Self = this.set("actor", js.undefined)
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setAnnotation(value: String): Self = this.set("annotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotation: Self = this.set("annotation", js.undefined)
+    @scala.inline
+    def setCrosspostSource(value: String): Self = this.set("crosspostSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrosspostSource: Self = this.set("crosspostSource", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setGeocode(value: String): Self = this.set("geocode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeocode: Self = this.set("geocode", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLocation(value: SchemaPlace): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setObject(value: Actor): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObject: Self = this.set("object", js.undefined)
+    @scala.inline
+    def setPlaceId(value: String): Self = this.set("placeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceId: Self = this.set("placeId", js.undefined)
+    @scala.inline
+    def setPlaceName(value: String): Self = this.set("placeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceName: Self = this.set("placeName", js.undefined)
+    @scala.inline
+    def setProvider(value: Title): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+    @scala.inline
+    def setPublished(value: String): Self = this.set("published", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublished: Self = this.set("published", js.undefined)
+    @scala.inline
+    def setRadius(value: String): Self = this.set("radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadius: Self = this.set("radius", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setVerb(value: String): Self = this.set("verb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerb: Self = this.set("verb", js.undefined)
+  }
+  
 }
 

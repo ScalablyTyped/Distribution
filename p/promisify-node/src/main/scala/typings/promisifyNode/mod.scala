@@ -16,12 +16,15 @@ object mod extends js.Object {
     * @returns {*} exports - The resolved value from require or passed in value.
     */
   def apply(name: String): js.Any = js.native
+  def apply(name: String, test: js.UndefOr[scala.Nothing], noMutate: Boolean): js.Any = js.native
   def apply(name: String, test: js.Function): js.Any = js.native
   def apply(name: String, test: js.Function, noMutate: Boolean): js.Any = js.native
   def apply(name: js.Function): js.Any = js.native
+  def apply(name: js.Function, test: js.UndefOr[scala.Nothing], noMutate: Boolean): js.Any = js.native
   def apply(name: js.Function, test: js.Function): js.Any = js.native
   def apply(name: js.Function, test: js.Function, noMutate: Boolean): js.Any = js.native
   def apply(name: js.Object): js.Any = js.native
+  def apply(name: js.Object, test: js.UndefOr[scala.Nothing], noMutate: Boolean): js.Any = js.native
   def apply(name: js.Object, test: js.Function): js.Any = js.native
   def apply(name: js.Object, test: js.Function, noMutate: Boolean): js.Any = js.native
 }

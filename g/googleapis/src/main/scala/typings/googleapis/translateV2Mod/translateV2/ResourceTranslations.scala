@@ -32,6 +32,7 @@ class ResourceTranslations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaTranslationsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def list(params: ParamsResourceTranslationsList): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def list(
     params: ParamsResourceTranslationsList,
@@ -62,6 +63,7 @@ class ResourceTranslations protected () extends js.Object {
     */
   def translate(): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def translate(callback: BodyResponseCallback[SchemaTranslationsListResponse]): Unit = js.native
+  def translate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def translate(params: ParamsResourceTranslationsTranslate): GaxiosPromise[SchemaTranslationsListResponse] = js.native
   def translate(
     params: ParamsResourceTranslationsTranslate,

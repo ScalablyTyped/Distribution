@@ -20,11 +20,12 @@ trait Constructor
       Chainable[typings.sugar.Date]
     ]
      with Instantiable2[
-      (/* d */ typings.sugar.Date) | (/* d */ Double) | (/* d */ String), 
+      js.UndefOr[(/* d */ typings.sugar.Date) | (/* d */ Double) | (/* d */ String)], 
       /* options */ DateCreateOptions, 
       Chainable[typings.sugar.Date]
     ] {
   def apply(): Chainable[typings.sugar.Date] = js.native
+  def apply(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Chainable[typings.sugar.Date] = js.native
   def apply(d: String): Chainable[typings.sugar.Date] = js.native
   def apply(d: String, options: DateCreateOptions): Chainable[typings.sugar.Date] = js.native
   def apply(d: Double): Chainable[typings.sugar.Date] = js.native
@@ -54,8 +55,102 @@ trait Constructor
   def advance(instance: typings.sugar.Date, set: js.Object): typings.sugar.Date = js.native
   def advance(instance: typings.sugar.Date, set: js.Object, reset: Boolean): typings.sugar.Date = js.native
   def advance(instance: typings.sugar.Date, year: Double, month: Double): typings.sugar.Date = js.native
+  def advance(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
+  def advance(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double
+  ): typings.sugar.Date = js.native
+  def advance(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): typings.sugar.Date = js.native
+  def advance(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double
+  ): typings.sugar.Date = js.native
+  def advance(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
+  def advance(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: Double
+  ): typings.sugar.Date = js.native
+  def advance(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: Double,
+    second: Double
+  ): typings.sugar.Date = js.native
   def advance(instance: typings.sugar.Date, year: Double, month: Double, day: Double): typings.sugar.Date = js.native
+  def advance(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
+  def advance(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double
+  ): typings.sugar.Date = js.native
+  def advance(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): typings.sugar.Date = js.native
   def advance(instance: typings.sugar.Date, year: Double, month: Double, day: Double, hour: Double): typings.sugar.Date = js.native
+  def advance(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
   def advance(
     instance: typings.sugar.Date,
     year: Double,
@@ -84,6 +179,7 @@ trait Constructor
   def beginningOfYear(instance: typings.sugar.Date, localeCode: String): typings.sugar.Date = js.native
   def clone(instance: typings.sugar.Date): typings.sugar.Date = js.native
   def create(): typings.sugar.Date = js.native
+  def create(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): typings.sugar.Date = js.native
   def create(d: String): typings.sugar.Date = js.native
   def create(d: String, options: DateCreateOptions): typings.sugar.Date = js.native
   def create(d: Double): typings.sugar.Date = js.native
@@ -100,6 +196,7 @@ trait Constructor
   def daysSince(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
   def daysSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
   def daysUntil(instance: typings.sugar.Date): Double = js.native
+  def daysUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def daysUntil(instance: typings.sugar.Date, d: String): Double = js.native
   def daysUntil(instance: typings.sugar.Date, d: String, options: DateCreateOptions): Double = js.native
   def daysUntil(instance: typings.sugar.Date, d: Double): Double = js.native
@@ -116,6 +213,7 @@ trait Constructor
   def endOfYear(instance: typings.sugar.Date): typings.sugar.Date = js.native
   def endOfYear(instance: typings.sugar.Date, localeCode: String): typings.sugar.Date = js.native
   def format(instance: typings.sugar.Date): String = js.native
+  def format(instance: typings.sugar.Date, f: js.UndefOr[scala.Nothing], localeCode: String): String = js.native
   def format(instance: typings.sugar.Date, f: String): String = js.native
   def format(instance: typings.sugar.Date, f: String, localeCode: String): String = js.native
   def full(instance: typings.sugar.Date): String = js.native
@@ -145,6 +243,7 @@ trait Constructor
   def hoursSince(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
   def hoursSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
   def hoursUntil(instance: typings.sugar.Date): Double = js.native
+  def hoursUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def hoursUntil(instance: typings.sugar.Date, d: String): Double = js.native
   def hoursUntil(instance: typings.sugar.Date, d: String, options: DateCreateOptions): Double = js.native
   def hoursUntil(instance: typings.sugar.Date, d: Double): Double = js.native
@@ -236,6 +335,7 @@ trait Constructor
   def millisecondsSince(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
   def millisecondsSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
   def millisecondsUntil(instance: typings.sugar.Date): Double = js.native
+  def millisecondsUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def millisecondsUntil(instance: typings.sugar.Date, d: String): Double = js.native
   def millisecondsUntil(instance: typings.sugar.Date, d: String, options: DateCreateOptions): Double = js.native
   def millisecondsUntil(instance: typings.sugar.Date, d: Double): Double = js.native
@@ -251,6 +351,7 @@ trait Constructor
   def minutesSince(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
   def minutesSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
   def minutesUntil(instance: typings.sugar.Date): Double = js.native
+  def minutesUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def minutesUntil(instance: typings.sugar.Date, d: String): Double = js.native
   def minutesUntil(instance: typings.sugar.Date, d: String, options: DateCreateOptions): Double = js.native
   def minutesUntil(instance: typings.sugar.Date, d: Double): Double = js.native
@@ -266,6 +367,7 @@ trait Constructor
   def monthsSince(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
   def monthsSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
   def monthsUntil(instance: typings.sugar.Date): Double = js.native
+  def monthsUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def monthsUntil(instance: typings.sugar.Date, d: String): Double = js.native
   def monthsUntil(instance: typings.sugar.Date, d: String, options: DateCreateOptions): Double = js.native
   def monthsUntil(instance: typings.sugar.Date, d: Double): Double = js.native
@@ -273,6 +375,8 @@ trait Constructor
   def monthsUntil(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
   def monthsUntil(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
   def range(): Range = js.native
+  def range(start: js.UndefOr[scala.Nothing], end: String): Range = js.native
+  def range(start: js.UndefOr[scala.Nothing], end: typings.sugar.Date): Range = js.native
   def range(start: String): Range = js.native
   def range(start: String, end: String): Range = js.native
   def range(start: String, end: typings.sugar.Date): Range = js.native
@@ -280,6 +384,11 @@ trait Constructor
   def range(start: typings.sugar.Date, end: String): Range = js.native
   def range(start: typings.sugar.Date, end: typings.sugar.Date): Range = js.native
   def relative(instance: typings.sugar.Date): String = js.native
+  def relative(
+    instance: typings.sugar.Date,
+    localeCode: js.UndefOr[scala.Nothing],
+    relativeFn: js.Function4[/* num */ Double, /* unit */ Double, /* ms */ Double, /* loc */ Locale, String]
+  ): String = js.native
   def relative(instance: typings.sugar.Date, localeCode: String): String = js.native
   def relative(
     instance: typings.sugar.Date,
@@ -298,6 +407,7 @@ trait Constructor
   def relativeTo(instance: typings.sugar.Date, d: typings.sugar.Date, localeCode: String): String = js.native
   def removeLocale(localeCode: String): Locale = js.native
   def reset(instance: typings.sugar.Date): typings.sugar.Date = js.native
+  def reset(instance: typings.sugar.Date, unit: js.UndefOr[scala.Nothing], localeCode: String): typings.sugar.Date = js.native
   def reset(instance: typings.sugar.Date, unit: String): typings.sugar.Date = js.native
   def reset(instance: typings.sugar.Date, unit: String, localeCode: String): typings.sugar.Date = js.native
   def rewind(instance: typings.sugar.Date, milliseconds: Double): typings.sugar.Date = js.native
@@ -306,8 +416,102 @@ trait Constructor
   def rewind(instance: typings.sugar.Date, set: js.Object): typings.sugar.Date = js.native
   def rewind(instance: typings.sugar.Date, set: js.Object, reset: Boolean): typings.sugar.Date = js.native
   def rewind(instance: typings.sugar.Date, year: Double, month: Double): typings.sugar.Date = js.native
+  def rewind(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
+  def rewind(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double
+  ): typings.sugar.Date = js.native
+  def rewind(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): typings.sugar.Date = js.native
+  def rewind(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double
+  ): typings.sugar.Date = js.native
+  def rewind(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
+  def rewind(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: Double
+  ): typings.sugar.Date = js.native
+  def rewind(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: Double,
+    second: Double
+  ): typings.sugar.Date = js.native
   def rewind(instance: typings.sugar.Date, year: Double, month: Double, day: Double): typings.sugar.Date = js.native
+  def rewind(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
+  def rewind(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double
+  ): typings.sugar.Date = js.native
+  def rewind(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): typings.sugar.Date = js.native
   def rewind(instance: typings.sugar.Date, year: Double, month: Double, day: Double, hour: Double): typings.sugar.Date = js.native
+  def rewind(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
   def rewind(
     instance: typings.sugar.Date,
     year: Double,
@@ -334,6 +538,7 @@ trait Constructor
   def secondsSince(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
   def secondsSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
   def secondsUntil(instance: typings.sugar.Date): Double = js.native
+  def secondsUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def secondsUntil(instance: typings.sugar.Date, d: String): Double = js.native
   def secondsUntil(instance: typings.sugar.Date, d: String, options: DateCreateOptions): Double = js.native
   def secondsUntil(instance: typings.sugar.Date, d: Double): Double = js.native
@@ -344,8 +549,102 @@ trait Constructor
   def set(instance: typings.sugar.Date, set: js.Object): typings.sugar.Date = js.native
   def set(instance: typings.sugar.Date, set: js.Object, reset: Boolean): typings.sugar.Date = js.native
   def set(instance: typings.sugar.Date, year: Double, month: Double): typings.sugar.Date = js.native
+  def set(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
+  def set(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double
+  ): typings.sugar.Date = js.native
+  def set(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): typings.sugar.Date = js.native
+  def set(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double
+  ): typings.sugar.Date = js.native
+  def set(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
+  def set(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: Double
+  ): typings.sugar.Date = js.native
+  def set(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: js.UndefOr[scala.Nothing],
+    hour: Double,
+    minute: Double,
+    second: Double
+  ): typings.sugar.Date = js.native
   def set(instance: typings.sugar.Date, year: Double, month: Double, day: Double): typings.sugar.Date = js.native
+  def set(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
+  def set(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double
+  ): typings.sugar.Date = js.native
+  def set(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: js.UndefOr[scala.Nothing],
+    minute: Double,
+    second: Double
+  ): typings.sugar.Date = js.native
   def set(instance: typings.sugar.Date, year: Double, month: Double, day: Double, hour: Double): typings.sugar.Date = js.native
+  def set(
+    instance: typings.sugar.Date,
+    year: Double,
+    month: Double,
+    day: Double,
+    hour: Double,
+    minute: js.UndefOr[scala.Nothing],
+    second: Double
+  ): typings.sugar.Date = js.native
   def set(
     instance: typings.sugar.Date,
     year: Double,
@@ -381,6 +680,7 @@ trait Constructor
   def weeksSince(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
   def weeksSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
   def weeksUntil(instance: typings.sugar.Date): Double = js.native
+  def weeksUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def weeksUntil(instance: typings.sugar.Date, d: String): Double = js.native
   def weeksUntil(instance: typings.sugar.Date, d: String, options: DateCreateOptions): Double = js.native
   def weeksUntil(instance: typings.sugar.Date, d: Double): Double = js.native
@@ -396,6 +696,7 @@ trait Constructor
   def yearsSince(instance: typings.sugar.Date, d: typings.sugar.Date): Double = js.native
   def yearsSince(instance: typings.sugar.Date, d: typings.sugar.Date, options: DateCreateOptions): Double = js.native
   def yearsUntil(instance: typings.sugar.Date): Double = js.native
+  def yearsUntil(instance: typings.sugar.Date, d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def yearsUntil(instance: typings.sugar.Date, d: String): Double = js.native
   def yearsUntil(instance: typings.sugar.Date, d: String, options: DateCreateOptions): Double = js.native
   def yearsUntil(instance: typings.sugar.Date, d: Double): Double = js.native

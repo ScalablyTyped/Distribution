@@ -28,6 +28,7 @@ class ResourceAccounttax protected () extends js.Object {
     */
   def custombatch(): GaxiosPromise[SchemaAccounttaxCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaAccounttaxCustomBatchResponse]): Unit = js.native
+  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccounttaxCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceAccounttaxCustombatch): GaxiosPromise[SchemaAccounttaxCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceAccounttaxCustombatch,
@@ -59,6 +60,7 @@ class ResourceAccounttax protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAccountTax] = js.native
   def get(callback: BodyResponseCallback[SchemaAccountTax]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountTax] = js.native
   def get(params: ParamsResourceAccounttaxGet): GaxiosPromise[SchemaAccountTax] = js.native
   def get(params: ParamsResourceAccounttaxGet, callback: BodyResponseCallback[SchemaAccountTax]): Unit = js.native
   def get(
@@ -89,6 +91,7 @@ class ResourceAccounttax protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAccounttaxListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAccounttaxListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccounttaxListResponse] = js.native
   def list(params: ParamsResourceAccounttaxList): GaxiosPromise[SchemaAccounttaxListResponse] = js.native
   def list(params: ParamsResourceAccounttaxList, callback: BodyResponseCallback[SchemaAccounttaxListResponse]): Unit = js.native
   def list(
@@ -118,6 +121,7 @@ class ResourceAccounttax protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaAccountTax] = js.native
   def update(callback: BodyResponseCallback[SchemaAccountTax]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountTax] = js.native
   def update(params: ParamsResourceAccounttaxUpdate): GaxiosPromise[SchemaAccountTax] = js.native
   def update(params: ParamsResourceAccounttaxUpdate, callback: BodyResponseCallback[SchemaAccountTax]): Unit = js.native
   def update(

@@ -28,6 +28,7 @@ class Summary_ protected () extends js.Object {
   	 */
   def this(name: String, help: String, config: Config) = this()
   def this(name: String, help: String, labels: js.Array[String]) = this()
+  def this(name: String, help: String, labels: js.UndefOr[scala.Nothing], config: Config) = this()
   def this(name: String, help: String, labels: js.Array[String], config: Config) = this()
   /**
   	 * Return the child for given labels

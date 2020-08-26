@@ -12,7 +12,7 @@ db.js is a wrapper for IndexedDB to make it easier to work against, making it lo
 | Keywords           | indexeddb |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 5113 |
+| # downloads        | 5083 |
 | # stars            | 0 |
 
 ## Links

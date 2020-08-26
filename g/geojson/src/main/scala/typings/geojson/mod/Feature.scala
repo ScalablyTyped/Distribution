@@ -4,38 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Feature[G /* <: Geometry | Null */, P] extends GeoJsonObject {
   /**
     * The feature's geometry
     */
-  var geometry: G
+  var geometry: G = js.native
   /**
     * A value that uniquely identifies this feature in a
     * https://tools.ietf.org/html/rfc7946#section-3.2.
     */
-  var id: js.UndefOr[String | Double] = js.undefined
+  var id: js.UndefOr[String | Double] = js.native
   /**
     * Properties associated with this feature.
     */
-  var properties: P
+  var properties: P = js.native
   @JSName("type")
-  var type_Feature: typings.geojson.geojsonStrings.Feature
+  var type_Feature: typings.geojson.geojsonStrings.Feature = js.native
 }
 
 object Feature {
   @scala.inline
-  def apply[/* <: typings.geojson.mod.Geometry | scala.Null */ G, P](
-    geometry: G,
-    properties: P,
-    `type`: typings.geojson.geojsonStrings.Feature,
-    bbox: BBox = null,
-    id: String | Double = null
-  ): Feature[G, P] = {
+  def apply[/* <: typings.geojson.mod.Geometry | scala.Null */ G, P](geometry: G, properties: P, `type`: typings.geojson.geojsonStrings.Feature): Feature[G, P] = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feature[G, P]]
   }
+  @scala.inline
+  implicit class FeatureOps[Self <: Feature[_, _], /* <: typings.geojson.mod.Geometry | scala.Null */ G, P] (val x: Self with (Feature[G, P])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGeometry(value: G): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProperties(value: P): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: typings.geojson.geojsonStrings.Feature): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+  }
+  
 }
 

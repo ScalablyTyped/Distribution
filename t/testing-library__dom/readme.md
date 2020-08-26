@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__dom
 
-Typings are for version 7.19.0
+Typings are for version 7.21.7
 
 ## Library description:
 Simple and complete DOM testing utilities that encourage good testing practices.
@@ -10,9 +10,9 @@ Simple and complete DOM testing utilities that encourage good testing practices.
 | ------------------ | :-------------: |
 | Full name          | @testing-library/dom |
 | Keywords           | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
-| # releases         | 40 |
-| # dependents       | 28 |
-| # downloads        | 11423574 |
+| # releases         | 42 |
+| # dependents       | 29 |
+| # downloads        | 13581460 |
 | # stars            | 0 |
 
 ## Links

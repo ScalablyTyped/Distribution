@@ -4,66 +4,113 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Attributes extends js.Object {
-  var bgColor: js.UndefOr[Double] = js.undefined
-  var bgDefaultColor: js.UndefOr[Boolean] = js.undefined
-  var bgTransparency: js.UndefOr[Boolean] = js.undefined
-  var blink: js.UndefOr[Boolean] = js.undefined
-  var bold: js.UndefOr[Boolean] = js.undefined
-  var charTransparency: js.UndefOr[Boolean] = js.undefined
-  var color: js.UndefOr[Double] = js.undefined
-  var defaultColor: js.UndefOr[Boolean] = js.undefined
-  var dim: js.UndefOr[Boolean] = js.undefined
-  var fgTransparency: js.UndefOr[Boolean] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var inverse: js.UndefOr[Boolean] = js.undefined
-  var italic: js.UndefOr[Boolean] = js.undefined
-  var strike: js.UndefOr[Boolean] = js.undefined
-  var styleTransparency: js.UndefOr[Boolean] = js.undefined
-  var transparency: js.UndefOr[Boolean] = js.undefined
-  var underline: js.UndefOr[Boolean] = js.undefined
+  var bgColor: js.UndefOr[Double] = js.native
+  var bgDefaultColor: js.UndefOr[Boolean] = js.native
+  var bgTransparency: js.UndefOr[Boolean] = js.native
+  var blink: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.native
+  var charTransparency: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[Double] = js.native
+  var defaultColor: js.UndefOr[Boolean] = js.native
+  var dim: js.UndefOr[Boolean] = js.native
+  var fgTransparency: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var inverse: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.native
+  var strike: js.UndefOr[Boolean] = js.native
+  var styleTransparency: js.UndefOr[Boolean] = js.native
+  var transparency: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.native
 }
 
 object Attributes {
   @scala.inline
-  def apply(
-    bgColor: js.UndefOr[Double] = js.undefined,
-    bgDefaultColor: js.UndefOr[Boolean] = js.undefined,
-    bgTransparency: js.UndefOr[Boolean] = js.undefined,
-    blink: js.UndefOr[Boolean] = js.undefined,
-    bold: js.UndefOr[Boolean] = js.undefined,
-    charTransparency: js.UndefOr[Boolean] = js.undefined,
-    color: js.UndefOr[Double] = js.undefined,
-    defaultColor: js.UndefOr[Boolean] = js.undefined,
-    dim: js.UndefOr[Boolean] = js.undefined,
-    fgTransparency: js.UndefOr[Boolean] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    inverse: js.UndefOr[Boolean] = js.undefined,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    strike: js.UndefOr[Boolean] = js.undefined,
-    styleTransparency: js.UndefOr[Boolean] = js.undefined,
-    transparency: js.UndefOr[Boolean] = js.undefined,
-    underline: js.UndefOr[Boolean] = js.undefined
-  ): Attributes = {
+  def apply(): Attributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bgColor)) __obj.updateDynamic("bgColor")(bgColor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bgDefaultColor)) __obj.updateDynamic("bgDefaultColor")(bgDefaultColor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bgTransparency)) __obj.updateDynamic("bgTransparency")(bgTransparency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(blink)) __obj.updateDynamic("blink")(blink.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(charTransparency)) __obj.updateDynamic("charTransparency")(charTransparency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultColor)) __obj.updateDynamic("defaultColor")(defaultColor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dim)) __obj.updateDynamic("dim")(dim.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fgTransparency)) __obj.updateDynamic("fgTransparency")(fgTransparency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strike)) __obj.updateDynamic("strike")(strike.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleTransparency)) __obj.updateDynamic("styleTransparency")(styleTransparency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparency)) __obj.updateDynamic("transparency")(transparency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
+  @scala.inline
+  implicit class AttributesOps[Self <: Attributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBgColor(value: Double): Self = this.set("bgColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgColor: Self = this.set("bgColor", js.undefined)
+    @scala.inline
+    def setBgDefaultColor(value: Boolean): Self = this.set("bgDefaultColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgDefaultColor: Self = this.set("bgDefaultColor", js.undefined)
+    @scala.inline
+    def setBgTransparency(value: Boolean): Self = this.set("bgTransparency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgTransparency: Self = this.set("bgTransparency", js.undefined)
+    @scala.inline
+    def setBlink(value: Boolean): Self = this.set("blink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlink: Self = this.set("blink", js.undefined)
+    @scala.inline
+    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBold: Self = this.set("bold", js.undefined)
+    @scala.inline
+    def setCharTransparency(value: Boolean): Self = this.set("charTransparency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharTransparency: Self = this.set("charTransparency", js.undefined)
+    @scala.inline
+    def setColor(value: Double): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDefaultColor(value: Boolean): Self = this.set("defaultColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultColor: Self = this.set("defaultColor", js.undefined)
+    @scala.inline
+    def setDim(value: Boolean): Self = this.set("dim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDim: Self = this.set("dim", js.undefined)
+    @scala.inline
+    def setFgTransparency(value: Boolean): Self = this.set("fgTransparency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFgTransparency: Self = this.set("fgTransparency", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setInverse(value: Boolean): Self = this.set("inverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverse: Self = this.set("inverse", js.undefined)
+    @scala.inline
+    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItalic: Self = this.set("italic", js.undefined)
+    @scala.inline
+    def setStrike(value: Boolean): Self = this.set("strike", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrike: Self = this.set("strike", js.undefined)
+    @scala.inline
+    def setStyleTransparency(value: Boolean): Self = this.set("styleTransparency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleTransparency: Self = this.set("styleTransparency", js.undefined)
+    @scala.inline
+    def setTransparency(value: Boolean): Self = this.set("transparency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransparency: Self = this.set("transparency", js.undefined)
+    @scala.inline
+    def setUnderline(value: Boolean): Self = this.set("underline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnderline: Self = this.set("underline", js.undefined)
+  }
+  
 }
 

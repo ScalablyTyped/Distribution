@@ -28,11 +28,32 @@ trait SchemaCreateDatabaseRequest extends js.Object {
 
 object SchemaCreateDatabaseRequest {
   @scala.inline
-  def apply(createStatement: String = null, extraStatements: js.Array[String] = null): SchemaCreateDatabaseRequest = {
+  def apply(): SchemaCreateDatabaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (createStatement != null) __obj.updateDynamic("createStatement")(createStatement.asInstanceOf[js.Any])
-    if (extraStatements != null) __obj.updateDynamic("extraStatements")(extraStatements.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateDatabaseRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateDatabaseRequestOps[Self <: SchemaCreateDatabaseRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateStatement(value: String): Self = this.set("createStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateStatement: Self = this.set("createStatement", js.undefined)
+    @scala.inline
+    def setExtraStatementsVarargs(value: String*): Self = this.set("extraStatements", js.Array(value :_*))
+    @scala.inline
+    def setExtraStatements(value: js.Array[String]): Self = this.set("extraStatements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraStatements: Self = this.set("extraStatements", js.undefined)
+  }
+  
 }
 

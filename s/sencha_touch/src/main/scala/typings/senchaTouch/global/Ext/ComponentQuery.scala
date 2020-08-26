@@ -21,6 +21,7 @@ object ComponentQuery extends js.Object {
     * @returns Boolean true if the Component matches the selector.
     */
   def is(): Boolean = js.native
+  def is(component: js.UndefOr[scala.Nothing], selector: java.lang.String): Boolean = js.native
   def is(component: IComponent): Boolean = js.native
   def is(component: IComponent, selector: java.lang.String): Boolean = js.native
   /** [Method] Returns an array of matched Components from within the passed root object
@@ -29,6 +30,7 @@ object ComponentQuery extends js.Object {
     * @returns Ext.Component[] The matched Components.
     */
   def query(): typings.senchaTouch.Ext.Array = js.native
+  def query(selector: js.UndefOr[scala.Nothing], root: IContainer): typings.senchaTouch.Ext.Array = js.native
   def query(selector: java.lang.String): typings.senchaTouch.Ext.Array = js.native
   def query(selector: java.lang.String, root: IContainer): typings.senchaTouch.Ext.Array = js.native
 }

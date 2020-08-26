@@ -26,16 +26,9 @@ object getTraceGraphCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetTraceGraphInput) = this()
-    /* CompleteClass */
-    override val input: GetTraceGraphInput = js.native
     val middlewareStack: MiddlewareStack[GetTraceGraphInput, GetTraceGraphOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: XRayResolvedConfiguration
-    ): Handler[GetTraceGraphInput, GetTraceGraphOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: XRayResolvedConfiguration
     ): Handler[GetTraceGraphInput, GetTraceGraphOutput] = js.native
   }

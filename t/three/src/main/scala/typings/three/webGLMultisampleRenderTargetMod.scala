@@ -15,6 +15,10 @@ object webGLMultisampleRenderTargetMod extends js.Object {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, options: WebGLRenderTargetOptions) = this()
     val isWebGLMultisampleRenderTarget: `true` = js.native
+    /**
+    	 * Specifies the number of samples to be used for the renderbuffer storage.However, the maximum supported size for multisampling is platform dependent and defined via gl.MAX_SAMPLES.
+    	 */
+    var samples: Double = js.native
   }
   
 }

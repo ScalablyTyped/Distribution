@@ -22,15 +22,32 @@ trait SelectRequest extends js.Object {
 
 object SelectRequest {
   @scala.inline
-  def apply(
-    SelectExpression: String,
-    ConsistentRead: js.UndefOr[Boolean] = js.undefined,
-    NextToken: String = null
-  ): SelectRequest = {
+  def apply(SelectExpression: String): SelectRequest = {
     val __obj = js.Dynamic.literal(SelectExpression = SelectExpression.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectRequest]
   }
+  @scala.inline
+  implicit class SelectRequestOps[Self <: SelectRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSelectExpression(value: String): Self = this.set("SelectExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConsistentRead(value: Boolean): Self = this.set("ConsistentRead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsistentRead: Self = this.set("ConsistentRead", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

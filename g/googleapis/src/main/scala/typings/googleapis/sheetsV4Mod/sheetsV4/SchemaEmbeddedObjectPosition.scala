@@ -27,16 +27,34 @@ trait SchemaEmbeddedObjectPosition extends js.Object {
 
 object SchemaEmbeddedObjectPosition {
   @scala.inline
-  def apply(
-    newSheet: js.UndefOr[Boolean] = js.undefined,
-    overlayPosition: SchemaOverlayPosition = null,
-    sheetId: js.UndefOr[Double] = js.undefined
-  ): SchemaEmbeddedObjectPosition = {
+  def apply(): SchemaEmbeddedObjectPosition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(newSheet)) __obj.updateDynamic("newSheet")(newSheet.get.asInstanceOf[js.Any])
-    if (overlayPosition != null) __obj.updateDynamic("overlayPosition")(overlayPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEmbeddedObjectPosition]
   }
+  @scala.inline
+  implicit class SchemaEmbeddedObjectPositionOps[Self <: SchemaEmbeddedObjectPosition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewSheet(value: Boolean): Self = this.set("newSheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewSheet: Self = this.set("newSheet", js.undefined)
+    @scala.inline
+    def setOverlayPosition(value: SchemaOverlayPosition): Self = this.set("overlayPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayPosition: Self = this.set("overlayPosition", js.undefined)
+    @scala.inline
+    def setSheetId(value: Double): Self = this.set("sheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetId: Self = this.set("sheetId", js.undefined)
+  }
+  
 }
 

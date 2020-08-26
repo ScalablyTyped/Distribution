@@ -32,18 +32,42 @@ trait SelectionArgs extends js.Object {
 
 object SelectionArgs {
   @scala.inline
-  def apply(
-    iamRoleArn: Input[String],
-    planId: Input[String],
-    name: Input[String] = null,
-    resources: Input[js.Array[Input[String]]] = null,
-    selectionTags: Input[js.Array[Input[SelectionSelectionTag]]] = null
-  ): SelectionArgs = {
+  def apply(iamRoleArn: Input[String], planId: Input[String]): SelectionArgs = {
     val __obj = js.Dynamic.literal(iamRoleArn = iamRoleArn.asInstanceOf[js.Any], planId = planId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (selectionTags != null) __obj.updateDynamic("selectionTags")(selectionTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionArgs]
   }
+  @scala.inline
+  implicit class SelectionArgsOps[Self <: SelectionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIamRoleArn(value: Input[String]): Self = this.set("iamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlanId(value: Input[String]): Self = this.set("planId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: Input[String]*): Self = this.set("resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: Input[js.Array[Input[String]]]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+    @scala.inline
+    def setSelectionTagsVarargs(value: Input[SelectionSelectionTag]*): Self = this.set("selectionTags", js.Array(value :_*))
+    @scala.inline
+    def setSelectionTags(value: Input[js.Array[Input[SelectionSelectionTag]]]): Self = this.set("selectionTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionTags: Self = this.set("selectionTags", js.undefined)
+  }
+  
 }
 

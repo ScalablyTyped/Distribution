@@ -10,8 +10,8 @@ trait ChaiStatic extends js.Object {
   var Assertion: AssertionStatic = js.native
   var AssertionError: Instantiable3[
     /* message */ String, 
-    js.UndefOr[/* _props */ js.Any], 
-    js.UndefOr[/* ssf */ js.Function], 
+    /* _props */ js.UndefOr[js.Any], 
+    /* ssf */ js.UndefOr[js.Function], 
     typings.chai.Chai.AssertionError
   ] = js.native
   @JSName("assert")

@@ -23,10 +23,30 @@ trait WebsiteCertificateAuthorityAssociationArgs extends js.Object {
 
 object WebsiteCertificateAuthorityAssociationArgs {
   @scala.inline
-  def apply(certificate: Input[String], fleetArn: Input[String], displayName: Input[String] = null): WebsiteCertificateAuthorityAssociationArgs = {
+  def apply(certificate: Input[String], fleetArn: Input[String]): WebsiteCertificateAuthorityAssociationArgs = {
     val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], fleetArn = fleetArn.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebsiteCertificateAuthorityAssociationArgs]
   }
+  @scala.inline
+  implicit class WebsiteCertificateAuthorityAssociationArgsOps[Self <: WebsiteCertificateAuthorityAssociationArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificate(value: Input[String]): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFleetArn(value: Input[String]): Self = this.set("fleetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisplayName(value: Input[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+  }
+  
 }
 

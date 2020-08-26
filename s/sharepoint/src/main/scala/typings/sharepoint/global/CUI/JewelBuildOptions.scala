@@ -7,20 +7,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CUI.JewelBuildOptions")
 @js.native
 class JewelBuildOptions ()
-  extends typings.sharepoint.CUI.BuildOptions {
-  /* CompleteClass */
-  override var attachToDOM: Boolean = js.native
-  /* CompleteClass */
-  override var clientID: String = js.native
-  /* CompleteClass */
-  override var dataExtensions: js.Array[_] = js.native
-  /* CompleteClass */
-  override var fixedPositioningEnabled: Boolean = js.native
-  /* CompleteClass */
-  override var lazyMenuInit: Boolean = js.native
-  /* CompleteClass */
-  override var trimmedIds: js.Array[String] = js.native
-  /* CompleteClass */
-  override var validateServerRendering: Boolean = js.native
-}
+  extends typings.sharepoint.CUI.BuildOptions
 

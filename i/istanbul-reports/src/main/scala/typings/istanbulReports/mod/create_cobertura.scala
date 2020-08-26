@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object create_cobertura extends js.Object {
   def apply(name: cobertura): Visitor[Node] = js.native
-  def apply(name: cobertura, options: Partial[RootedOptions]): Visitor[Node] = js.native
+  def apply(name: cobertura, options: Partial[CoberturaOptions]): Visitor[Node] = js.native
 }
 

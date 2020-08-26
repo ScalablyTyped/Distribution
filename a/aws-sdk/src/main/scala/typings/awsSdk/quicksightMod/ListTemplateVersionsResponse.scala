@@ -26,18 +26,40 @@ trait ListTemplateVersionsResponse extends js.Object {
 
 object ListTemplateVersionsResponse {
   @scala.inline
-  def apply(
-    NextToken: String = null,
-    RequestId: String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined,
-    TemplateVersionSummaryList: TemplateVersionSummaryList = null
-  ): ListTemplateVersionsResponse = {
+  def apply(): ListTemplateVersionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
-    if (TemplateVersionSummaryList != null) __obj.updateDynamic("TemplateVersionSummaryList")(TemplateVersionSummaryList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTemplateVersionsResponse]
   }
+  @scala.inline
+  implicit class ListTemplateVersionsResponseOps[Self <: ListTemplateVersionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTemplateVersionSummaryListVarargs(value: TemplateVersionSummary*): Self = this.set("TemplateVersionSummaryList", js.Array(value :_*))
+    @scala.inline
+    def setTemplateVersionSummaryList(value: TemplateVersionSummaryList): Self = this.set("TemplateVersionSummaryList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateVersionSummaryList: Self = this.set("TemplateVersionSummaryList", js.undefined)
+  }
+  
 }
 

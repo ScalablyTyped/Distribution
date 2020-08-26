@@ -12,7 +12,7 @@ fuzzy matchers for chai
 | Keywords           | chai, chai-plugin, browser, array, testing, jasmine |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 221200 |
+| # downloads        | 222984 |
 | # stars            | 0 |
 
 ## Links

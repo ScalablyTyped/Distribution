@@ -8,25 +8,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextEffectFormat extends js.Object {
-  var Alignment: MsoTextEffectAlignment
-  val Application: js.Any
-  val Creator: Double
+  var Alignment: MsoTextEffectAlignment = js.native
+  val Application: js.Any = js.native
+  val Creator: Double = js.native
   @JSName("Excel.TextEffectFormat_typekey")
-  var ExcelDotTextEffectFormat_typekey: TextEffectFormat
-  var FontBold: MsoTriState
-  var FontItalic: MsoTriState
-  var FontName: String
-  var FontSize: Double
-  var KernedPairs: MsoTriState
-  var NormalizedHeight: MsoTriState
-  val Parent: js.Any
-  var PresetShape: MsoPresetTextEffectShape
-  var PresetTextEffect: MsoPresetTextEffect
-  var RotatedChars: MsoTriState
-  var Text: String
-  var Tracking: Double
-  def ToggleVerticalText(): Unit
+  var ExcelDotTextEffectFormat_typekey: TextEffectFormat = js.native
+  var FontBold: MsoTriState = js.native
+  var FontItalic: MsoTriState = js.native
+  var FontName: String = js.native
+  var FontSize: Double = js.native
+  var KernedPairs: MsoTriState = js.native
+  var NormalizedHeight: MsoTriState = js.native
+  val Parent: js.Any = js.native
+  var PresetShape: MsoPresetTextEffectShape = js.native
+  var PresetTextEffect: MsoPresetTextEffect = js.native
+  var RotatedChars: MsoTriState = js.native
+  var Text: String = js.native
+  var Tracking: Double = js.native
+  def ToggleVerticalText(): Unit = js.native
 }
 
 object TextEffectFormat {
@@ -54,5 +55,52 @@ object TextEffectFormat {
     __obj.updateDynamic("Excel.TextEffectFormat_typekey")(ExcelDotTextEffectFormat_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEffectFormat]
   }
+  @scala.inline
+  implicit class TextEffectFormatOps[Self <: TextEffectFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignment(value: MsoTextEffectAlignment): Self = this.set("Alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExcelDotTextEffectFormat_typekey(value: TextEffectFormat): Self = this.set("Excel.TextEffectFormat_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFontBold(value: MsoTriState): Self = this.set("FontBold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFontItalic(value: MsoTriState): Self = this.set("FontItalic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFontName(value: String): Self = this.set("FontName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("FontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKernedPairs(value: MsoTriState): Self = this.set("KernedPairs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNormalizedHeight(value: MsoTriState): Self = this.set("NormalizedHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPresetShape(value: MsoPresetTextEffectShape): Self = this.set("PresetShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPresetTextEffect(value: MsoPresetTextEffect): Self = this.set("PresetTextEffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRotatedChars(value: MsoTriState): Self = this.set("RotatedChars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToggleVerticalText(value: () => Unit): Self = this.set("ToggleVerticalText", js.Any.fromFunction0(value))
+    @scala.inline
+    def setTracking(value: Double): Self = this.set("Tracking", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-docblock
 
-Typings are for version 25.3.0
+Typings are for version 26.0.0
 
 ## Library description:
 `jest-docblock` is a package that can extract and parse a specially-formatted comment called a "docblock" at the top of a file.
@@ -10,9 +10,9 @@ Typings are for version 25.3.0
 | ------------------ | :-------------: |
 | Full name          | jest-docblock |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 28 |
 | # dependents       | 41 |
-| # downloads        | 249584623 |
+| # downloads        | 251859010 |
 | # stars            | 0 |
 
 ## Links

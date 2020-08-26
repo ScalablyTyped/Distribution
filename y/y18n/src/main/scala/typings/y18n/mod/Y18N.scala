@@ -10,7 +10,11 @@ trait Y18N extends js.Object {
     * Print a localized string, %s will be replaced with args.
     */
   def __(str: String): String = js.native
+  def __(str: String, arg1: js.UndefOr[scala.Nothing], arg2: js.UndefOr[scala.Nothing], arg3: String): String = js.native
+  def __(str: String, arg1: js.UndefOr[scala.Nothing], arg2: String): String = js.native
+  def __(str: String, arg1: js.UndefOr[scala.Nothing], arg2: String, arg3: String): String = js.native
   def __(str: String, arg1: String): String = js.native
+  def __(str: String, arg1: String, arg2: js.UndefOr[scala.Nothing], arg3: String): String = js.native
   def __(str: String, arg1: String, arg2: String): String = js.native
   def __(str: String, arg1: String, arg2: String, arg3: String): String = js.native
   /**
@@ -18,7 +22,38 @@ trait Y18N extends js.Object {
     * If %d is provided in the string, the count will replace this placeholder.
     */
   def __n(singularString: String, pluralString: String, count: Double): String = js.native
+  def __n(
+    singularString: String,
+    pluralString: String,
+    count: Double,
+    arg1: js.UndefOr[scala.Nothing],
+    arg2: js.UndefOr[scala.Nothing],
+    arg3: String
+  ): String = js.native
+  def __n(
+    singularString: String,
+    pluralString: String,
+    count: Double,
+    arg1: js.UndefOr[scala.Nothing],
+    arg2: String
+  ): String = js.native
+  def __n(
+    singularString: String,
+    pluralString: String,
+    count: Double,
+    arg1: js.UndefOr[scala.Nothing],
+    arg2: String,
+    arg3: String
+  ): String = js.native
   def __n(singularString: String, pluralString: String, count: Double, arg1: String): String = js.native
+  def __n(
+    singularString: String,
+    pluralString: String,
+    count: Double,
+    arg1: String,
+    arg2: js.UndefOr[scala.Nothing],
+    arg3: String
+  ): String = js.native
   def __n(singularString: String, pluralString: String, count: Double, arg1: String, arg2: String): String = js.native
   def __n(
     singularString: String,

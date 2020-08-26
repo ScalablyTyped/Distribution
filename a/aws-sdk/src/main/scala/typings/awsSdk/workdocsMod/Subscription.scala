@@ -22,16 +22,34 @@ trait Subscription extends js.Object {
 
 object Subscription {
   @scala.inline
-  def apply(
-    EndPoint: SubscriptionEndPointType = null,
-    Protocol: SubscriptionProtocolType = null,
-    SubscriptionId: IdType = null
-  ): Subscription = {
+  def apply(): Subscription = {
     val __obj = js.Dynamic.literal()
-    if (EndPoint != null) __obj.updateDynamic("EndPoint")(EndPoint.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
-    if (SubscriptionId != null) __obj.updateDynamic("SubscriptionId")(SubscriptionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscription]
   }
+  @scala.inline
+  implicit class SubscriptionOps[Self <: Subscription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndPoint(value: SubscriptionEndPointType): Self = this.set("EndPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndPoint: Self = this.set("EndPoint", js.undefined)
+    @scala.inline
+    def setProtocol(value: SubscriptionProtocolType): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    @scala.inline
+    def setSubscriptionId(value: IdType): Self = this.set("SubscriptionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriptionId: Self = this.set("SubscriptionId", js.undefined)
+  }
+  
 }
 

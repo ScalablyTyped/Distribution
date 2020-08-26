@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RoomLeaveRequest extends js.Object {
   /** Uniquely identifies the type of this resource. Value is always the fixed string games#roomLeaveRequest. */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** Diagnostics for a player leaving the room. */
-  var leaveDiagnostics: js.UndefOr[RoomLeaveDiagnostics] = js.undefined
+  var leaveDiagnostics: js.UndefOr[RoomLeaveDiagnostics] = js.native
   /**
     * Reason for leaving the match.
     * Possible values are:
@@ -26,17 +27,39 @@ trait RoomLeaveRequest extends js.Object {
     * - "REALTIME_DIFFERENT_CLIENT_ROOM_OPERATION" - Another client is trying to enter a room.
     * - "REALTIME_SAME_CLIENT_ROOM_OPERATION" - The same client is trying to enter a new room.
     */
-  var reason: js.UndefOr[String] = js.undefined
+  var reason: js.UndefOr[String] = js.native
 }
 
 object RoomLeaveRequest {
   @scala.inline
-  def apply(kind: String = null, leaveDiagnostics: RoomLeaveDiagnostics = null, reason: String = null): RoomLeaveRequest = {
+  def apply(): RoomLeaveRequest = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (leaveDiagnostics != null) __obj.updateDynamic("leaveDiagnostics")(leaveDiagnostics.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomLeaveRequest]
   }
+  @scala.inline
+  implicit class RoomLeaveRequestOps[Self <: RoomLeaveRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLeaveDiagnostics(value: RoomLeaveDiagnostics): Self = this.set("leaveDiagnostics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaveDiagnostics: Self = this.set("leaveDiagnostics", js.undefined)
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+  }
+  
 }
 

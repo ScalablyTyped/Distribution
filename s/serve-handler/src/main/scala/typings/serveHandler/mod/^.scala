@@ -18,8 +18,189 @@ object ^ extends js.Object {
     * more.
     */
   def apply(): js.Promise[Unit] = js.native
+  def apply(
+    request: js.UndefOr[scala.Nothing],
+    response: js.UndefOr[scala.Nothing],
+    /**
+    * If you want to customize the package's default behaviour, you can use
+    * this argument to pass any of the configuration options provided.
+    *
+    * @see https://github.com/zeit/serve-handler#options
+    */
+  config: js.UndefOr[scala.Nothing],
+    /**
+    * If you want to replace the methods the package is using for interacting
+    * with the file system and sending responses, you can pass them as the
+    * fourth argument to the function call. These are the methods used by the
+    * package (they can all return a `Promise` or be asynchronous).
+    *
+    * **NOTE:** It's important that – for native methods like
+    * `createReadStream` – all arguments are passed on to the native call.
+    */
+  methods: Methods
+  ): js.Promise[Unit] = js.native
+  def apply(
+    request: js.UndefOr[scala.Nothing],
+    response: js.UndefOr[scala.Nothing],
+    /**
+    * If you want to customize the package's default behaviour, you can use
+    * this argument to pass any of the configuration options provided.
+    *
+    * @see https://github.com/zeit/serve-handler#options
+    */
+  config: Config
+  ): js.Promise[Unit] = js.native
+  def apply(
+    request: js.UndefOr[scala.Nothing],
+    response: js.UndefOr[scala.Nothing],
+    /**
+    * If you want to customize the package's default behaviour, you can use
+    * this argument to pass any of the configuration options provided.
+    *
+    * @see https://github.com/zeit/serve-handler#options
+    */
+  config: Config,
+    /**
+    * If you want to replace the methods the package is using for interacting
+    * with the file system and sending responses, you can pass them as the
+    * fourth argument to the function call. These are the methods used by the
+    * package (they can all return a `Promise` or be asynchronous).
+    *
+    * **NOTE:** It's important that – for native methods like
+    * `createReadStream` – all arguments are passed on to the native call.
+    */
+  methods: Methods
+  ): js.Promise[Unit] = js.native
+  def apply(request: js.UndefOr[scala.Nothing], response: ServerResponse): js.Promise[Unit] = js.native
+  def apply(
+    request: js.UndefOr[scala.Nothing],
+    response: ServerResponse,
+    /**
+    * If you want to customize the package's default behaviour, you can use
+    * this argument to pass any of the configuration options provided.
+    *
+    * @see https://github.com/zeit/serve-handler#options
+    */
+  config: js.UndefOr[scala.Nothing],
+    /**
+    * If you want to replace the methods the package is using for interacting
+    * with the file system and sending responses, you can pass them as the
+    * fourth argument to the function call. These are the methods used by the
+    * package (they can all return a `Promise` or be asynchronous).
+    *
+    * **NOTE:** It's important that – for native methods like
+    * `createReadStream` – all arguments are passed on to the native call.
+    */
+  methods: Methods
+  ): js.Promise[Unit] = js.native
+  def apply(
+    request: js.UndefOr[scala.Nothing],
+    response: ServerResponse,
+    /**
+    * If you want to customize the package's default behaviour, you can use
+    * this argument to pass any of the configuration options provided.
+    *
+    * @see https://github.com/zeit/serve-handler#options
+    */
+  config: Config
+  ): js.Promise[Unit] = js.native
+  def apply(
+    request: js.UndefOr[scala.Nothing],
+    response: ServerResponse,
+    /**
+    * If you want to customize the package's default behaviour, you can use
+    * this argument to pass any of the configuration options provided.
+    *
+    * @see https://github.com/zeit/serve-handler#options
+    */
+  config: Config,
+    /**
+    * If you want to replace the methods the package is using for interacting
+    * with the file system and sending responses, you can pass them as the
+    * fourth argument to the function call. These are the methods used by the
+    * package (they can all return a `Promise` or be asynchronous).
+    *
+    * **NOTE:** It's important that – for native methods like
+    * `createReadStream` – all arguments are passed on to the native call.
+    */
+  methods: Methods
+  ): js.Promise[Unit] = js.native
   def apply(request: IncomingMessage): js.Promise[Unit] = js.native
+  def apply(
+    request: IncomingMessage,
+    response: js.UndefOr[scala.Nothing],
+    /**
+    * If you want to customize the package's default behaviour, you can use
+    * this argument to pass any of the configuration options provided.
+    *
+    * @see https://github.com/zeit/serve-handler#options
+    */
+  config: js.UndefOr[scala.Nothing],
+    /**
+    * If you want to replace the methods the package is using for interacting
+    * with the file system and sending responses, you can pass them as the
+    * fourth argument to the function call. These are the methods used by the
+    * package (they can all return a `Promise` or be asynchronous).
+    *
+    * **NOTE:** It's important that – for native methods like
+    * `createReadStream` – all arguments are passed on to the native call.
+    */
+  methods: Methods
+  ): js.Promise[Unit] = js.native
+  def apply(
+    request: IncomingMessage,
+    response: js.UndefOr[scala.Nothing],
+    /**
+    * If you want to customize the package's default behaviour, you can use
+    * this argument to pass any of the configuration options provided.
+    *
+    * @see https://github.com/zeit/serve-handler#options
+    */
+  config: Config
+  ): js.Promise[Unit] = js.native
+  def apply(
+    request: IncomingMessage,
+    response: js.UndefOr[scala.Nothing],
+    /**
+    * If you want to customize the package's default behaviour, you can use
+    * this argument to pass any of the configuration options provided.
+    *
+    * @see https://github.com/zeit/serve-handler#options
+    */
+  config: Config,
+    /**
+    * If you want to replace the methods the package is using for interacting
+    * with the file system and sending responses, you can pass them as the
+    * fourth argument to the function call. These are the methods used by the
+    * package (they can all return a `Promise` or be asynchronous).
+    *
+    * **NOTE:** It's important that – for native methods like
+    * `createReadStream` – all arguments are passed on to the native call.
+    */
+  methods: Methods
+  ): js.Promise[Unit] = js.native
   def apply(request: IncomingMessage, response: ServerResponse): js.Promise[Unit] = js.native
+  def apply(
+    request: IncomingMessage,
+    response: ServerResponse,
+    /**
+    * If you want to customize the package's default behaviour, you can use
+    * this argument to pass any of the configuration options provided.
+    *
+    * @see https://github.com/zeit/serve-handler#options
+    */
+  config: js.UndefOr[scala.Nothing],
+    /**
+    * If you want to replace the methods the package is using for interacting
+    * with the file system and sending responses, you can pass them as the
+    * fourth argument to the function call. These are the methods used by the
+    * package (they can all return a `Promise` or be asynchronous).
+    *
+    * **NOTE:** It's important that – for native methods like
+    * `createReadStream` – all arguments are passed on to the native call.
+    */
+  methods: Methods
+  ): js.Promise[Unit] = js.native
   def apply(
     request: IncomingMessage,
     response: ServerResponse,

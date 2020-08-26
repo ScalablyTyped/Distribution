@@ -116,9 +116,18 @@ trait Response extends ServerResponse {
     * @returns  the response object
     */
   def send(): js.Any = js.native
+  def send(body: js.UndefOr[scala.Nothing], headers: StringDictionary[String]): js.Any = js.native
   def send(body: js.Any): js.Any = js.native
   def send(body: js.Any, headers: StringDictionary[String]): js.Any = js.native
+  def send(
+    code: js.UndefOr[scala.Nothing],
+    body: js.UndefOr[scala.Nothing],
+    headers: StringDictionary[String]
+  ): js.Any = js.native
+  def send(code: js.UndefOr[scala.Nothing], body: js.Any): js.Any = js.native
+  def send(code: js.UndefOr[scala.Nothing], body: js.Any, headers: StringDictionary[String]): js.Any = js.native
   def send(code: Double): js.Any = js.native
+  def send(code: Double, body: js.UndefOr[scala.Nothing], headers: StringDictionary[String]): js.Any = js.native
   def send(code: Double, body: js.Any): js.Any = js.native
   def send(code: Double, body: js.Any, headers: StringDictionary[String]): js.Any = js.native
   /**
@@ -130,9 +139,18 @@ trait Response extends ServerResponse {
     * @returns  the response object
     */
   def sendRaw(): js.Any = js.native
+  def sendRaw(body: js.UndefOr[scala.Nothing], headers: StringDictionary[String]): js.Any = js.native
   def sendRaw(body: js.Any): js.Any = js.native
   def sendRaw(body: js.Any, headers: StringDictionary[String]): js.Any = js.native
+  def sendRaw(
+    code: js.UndefOr[scala.Nothing],
+    body: js.UndefOr[scala.Nothing],
+    headers: StringDictionary[String]
+  ): js.Any = js.native
+  def sendRaw(code: js.UndefOr[scala.Nothing], body: js.Any): js.Any = js.native
+  def sendRaw(code: js.UndefOr[scala.Nothing], body: js.Any, headers: StringDictionary[String]): js.Any = js.native
   def sendRaw(code: Double): js.Any = js.native
+  def sendRaw(code: Double, body: js.UndefOr[scala.Nothing], headers: StringDictionary[String]): js.Any = js.native
   def sendRaw(code: Double, body: js.Any): js.Any = js.native
   def sendRaw(code: Double, body: js.Any, headers: StringDictionary[String]): js.Any = js.native
   /**

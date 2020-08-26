@@ -1,7 +1,7 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.anon.LineStyleShadowBlur
 import typings.echarts.anon.ShadowBlur
+import typings.echarts.anon.`17`
 import typings.echarts.echarts.EChartOption.SeriesParallel.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -120,6 +120,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-parallel
   */
+@js.native
 trait SeriesParallel_ extends js.Object {
   /**
     * When perform brush selection, the selected lines will be set
@@ -130,7 +131,7 @@ trait SeriesParallel_ extends js.Object {
     * 1
     * @see https://echarts.apache.org/en/option.html#series-parallel.activeOpacity
     */
-  var activeOpacity: js.UndefOr[Double] = js.undefined
+  var activeOpacity: js.UndefOr[Double] = js.native
   /**
     * Whether to enable animation.
     *
@@ -139,7 +140,7 @@ trait SeriesParallel_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-parallel.animation
     */
-  var animation: js.UndefOr[Boolean] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.native
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -155,7 +156,7 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.animationDelay
     */
-  var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelay: js.UndefOr[js.Function | Double] = js.native
   /**
     * Delay before updating animation, which supports callback function
     * for different data to have different animation effect.
@@ -171,7 +172,7 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.animationDelayUpdate
     */
-  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -183,7 +184,7 @@ trait SeriesParallel_ extends js.Object {
     * 1000
     * @see https://echarts.apache.org/en/option.html#series-parallel.animationDuration
     */
-  var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDuration: js.UndefOr[js.Function | Double] = js.native
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -195,7 +196,7 @@ trait SeriesParallel_ extends js.Object {
     * 300
     * @see https://echarts.apache.org/en/option.html#series-parallel.animationDurationUpdate
     */
-  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -207,7 +208,7 @@ trait SeriesParallel_ extends js.Object {
     * "linear"
     * @see https://echarts.apache.org/en/option.html#series-parallel.animationEasing
     */
-  var animationEasing: js.UndefOr[String] = js.undefined
+  var animationEasing: js.UndefOr[String] = js.native
   /**
     * Easing method used for animation.
     *
@@ -216,7 +217,7 @@ trait SeriesParallel_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-parallel.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[String] = js.undefined
+  var animationEasingUpdate: js.UndefOr[String] = js.native
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -227,7 +228,7 @@ trait SeriesParallel_ extends js.Object {
     * 2000
     * @see https://echarts.apache.org/en/option.html#series-parallel.animationThreshold
     */
-  var animationThreshold: js.UndefOr[Double] = js.undefined
+  var animationThreshold: js.UndefOr[Double] = js.native
   /**
     * The coordinate used in the series, whose options are:
     *
@@ -242,7 +243,7 @@ trait SeriesParallel_ extends js.Object {
     * "parallel"
     * @see https://echarts.apache.org/en/option.html#series-parallel.coordinateSystem
     */
-  var coordinateSystem: js.UndefOr[String] = js.undefined
+  var coordinateSystem: js.UndefOr[String] = js.native
   /**
     * For example,
     * [series-parallel.data](https://echarts.apache.org/en/option.html#series-parallel.data)
@@ -262,11 +263,11 @@ trait SeriesParallel_ extends js.Object {
     */
   var data: js.UndefOr[
     js.Array[(js.Array[Double | String | DataObject]) | DataObject | Double | String]
-  ] = js.undefined
+  ] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-parallel.emphasis
     */
-  var emphasis: js.UndefOr[LineStyleShadowBlur] = js.undefined
+  var emphasis: js.UndefOr[`17`] = js.native
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -275,7 +276,7 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.id
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * When perform brush selection, the unselected lines will be set
     * as this transparency rate (which could darken those lines).
@@ -285,14 +286,14 @@ trait SeriesParallel_ extends js.Object {
     * 0.05
     * @see https://echarts.apache.org/en/option.html#series-parallel.inactiveOpacity
     */
-  var inactiveOpacity: js.UndefOr[Double] = js.undefined
+  var inactiveOpacity: js.UndefOr[Double] = js.native
   /**
     * Line style.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.lineStyle
     */
-  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[ShadowBlur] = js.native
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -303,7 +304,7 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Index of
     * [parallel coordinates](https://echarts.apache.org/en/option.html#parallel)
@@ -313,7 +314,7 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.parallelIndex
     */
-  var parallelIndex: js.UndefOr[Double] = js.undefined
+  var parallelIndex: js.UndefOr[Double] = js.native
   /**
     * `progressive` specifies the amount of graphic elements that can
     * be rendered within a frame (about 16ms) if "progressive rendering"
@@ -330,7 +331,7 @@ trait SeriesParallel_ extends js.Object {
     * 500
     * @see https://echarts.apache.org/en/option.html#series-parallel.progressive
     */
-  var progressive: js.UndefOr[Double] = js.undefined
+  var progressive: js.UndefOr[Double] = js.native
   /**
     * Chunk approach, optional values:
     *
@@ -344,7 +345,7 @@ trait SeriesParallel_ extends js.Object {
     * "sequential"
     * @see https://echarts.apache.org/en/option.html#series-parallel.progressiveChunkMode
     */
-  var progressiveChunkMode: js.UndefOr[String] = js.undefined
+  var progressiveChunkMode: js.UndefOr[String] = js.native
   /**
     * If current data amount is over the threshold, "progressive rendering"
     * is enabled.
@@ -354,7 +355,7 @@ trait SeriesParallel_ extends js.Object {
     * 3000
     * @see https://echarts.apache.org/en/option.html#series-parallel.progressiveThreshold
     */
-  var progressiveThreshold: js.UndefOr[Double] = js.undefined
+  var progressiveThreshold: js.UndefOr[Double] = js.native
   /**
     * Whether to update view in realtime.
     *
@@ -363,7 +364,7 @@ trait SeriesParallel_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-parallel.realtime
     */
-  var realtime: js.UndefOr[Boolean] = js.undefined
+  var realtime: js.UndefOr[Boolean] = js.native
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to mouse
@@ -372,7 +373,7 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.silent
     */
-  var silent: js.UndefOr[Boolean] = js.undefined
+  var silent: js.UndefOr[Boolean] = js.native
   /**
     * Whether to smooth the line.
     * It defaults to be `false` and can be set as `true` or the values
@@ -381,20 +382,20 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.smooth
     */
-  var smooth: js.UndefOr[Boolean | Double] = js.undefined
+  var smooth: js.UndefOr[Boolean | Double] = js.native
   /**
     * tooltip settings in this series.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.tooltip
     */
-  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.native
   /**
     * @default
     * "parallel"
     * @see https://echarts.apache.org/en/option.html#series-parallel.type
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * `z` value of all graghical elements in parallel, which controls
     * order of drawing graphical components.
@@ -409,7 +410,7 @@ trait SeriesParallel_ extends js.Object {
     * 2
     * @see https://echarts.apache.org/en/option.html#series-parallel.z
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.native
   /**
     * `zlevel` value of all graghical elements in parallel.
     *
@@ -427,69 +428,137 @@ trait SeriesParallel_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-parallel.zlevel
     */
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var zlevel: js.UndefOr[Double] = js.native
 }
 
 object SeriesParallel_ {
   @scala.inline
-  def apply(
-    activeOpacity: js.UndefOr[Double] = js.undefined,
-    animation: js.UndefOr[Boolean] = js.undefined,
-    animationDelay: js.Function | Double = null,
-    animationDelayUpdate: js.Function | Double = null,
-    animationDuration: js.Function | Double = null,
-    animationDurationUpdate: js.Function | Double = null,
-    animationEasing: String = null,
-    animationEasingUpdate: String = null,
-    animationThreshold: js.UndefOr[Double] = js.undefined,
-    coordinateSystem: String = null,
-    data: js.Array[(js.Array[Double | String | DataObject]) | DataObject | Double | String] = null,
-    emphasis: LineStyleShadowBlur = null,
-    id: String = null,
-    inactiveOpacity: js.UndefOr[Double] = js.undefined,
-    lineStyle: ShadowBlur = null,
-    name: String = null,
-    parallelIndex: js.UndefOr[Double] = js.undefined,
-    progressive: js.UndefOr[Double] = js.undefined,
-    progressiveChunkMode: String = null,
-    progressiveThreshold: js.UndefOr[Double] = js.undefined,
-    realtime: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    smooth: Boolean | Double = null,
-    tooltip: BaseTooltip = null,
-    `type`: String = null,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): SeriesParallel_ = {
+  def apply(): SeriesParallel_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeOpacity)) __obj.updateDynamic("activeOpacity")(activeOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
-    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
-    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(inactiveOpacity)) __obj.updateDynamic("inactiveOpacity")(inactiveOpacity.get.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(parallelIndex)) __obj.updateDynamic("parallelIndex")(parallelIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.get.asInstanceOf[js.Any])
-    if (progressiveChunkMode != null) __obj.updateDynamic("progressiveChunkMode")(progressiveChunkMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressiveThreshold)) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesParallel_]
   }
+  @scala.inline
+  implicit class SeriesParallel_Ops[Self <: SeriesParallel_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveOpacity(value: Double): Self = this.set("activeOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveOpacity: Self = this.set("activeOpacity", js.undefined)
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    @scala.inline
+    def setAnimationDelayUpdate(value: js.Function | Double): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    @scala.inline
+    def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    @scala.inline
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    @scala.inline
+    def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    @scala.inline
+    def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    @scala.inline
+    def setCoordinateSystem(value: String): Self = this.set("coordinateSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoordinateSystem: Self = this.set("coordinateSystem", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: ((js.Array[Double | String | DataObject]) | DataObject | Double | String)*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[(js.Array[Double | String | DataObject]) | DataObject | Double | String]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setEmphasis(value: `17`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInactiveOpacity(value: Double): Self = this.set("inactiveOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInactiveOpacity: Self = this.set("inactiveOpacity", js.undefined)
+    @scala.inline
+    def setLineStyle(value: ShadowBlur): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParallelIndex(value: Double): Self = this.set("parallelIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelIndex: Self = this.set("parallelIndex", js.undefined)
+    @scala.inline
+    def setProgressive(value: Double): Self = this.set("progressive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressive: Self = this.set("progressive", js.undefined)
+    @scala.inline
+    def setProgressiveChunkMode(value: String): Self = this.set("progressiveChunkMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressiveChunkMode: Self = this.set("progressiveChunkMode", js.undefined)
+    @scala.inline
+    def setProgressiveThreshold(value: Double): Self = this.set("progressiveThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressiveThreshold: Self = this.set("progressiveThreshold", js.undefined)
+    @scala.inline
+    def setRealtime(value: Boolean): Self = this.set("realtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealtime: Self = this.set("realtime", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setSmooth(value: Boolean | Double): Self = this.set("smooth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmooth: Self = this.set("smooth", js.undefined)
+    @scala.inline
+    def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+  }
+  
 }
 

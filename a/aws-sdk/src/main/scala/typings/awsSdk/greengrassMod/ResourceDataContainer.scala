@@ -30,20 +30,42 @@ trait ResourceDataContainer extends js.Object {
 
 object ResourceDataContainer {
   @scala.inline
-  def apply(
-    LocalDeviceResourceData: LocalDeviceResourceData = null,
-    LocalVolumeResourceData: LocalVolumeResourceData = null,
-    S3MachineLearningModelResourceData: S3MachineLearningModelResourceData = null,
-    SageMakerMachineLearningModelResourceData: SageMakerMachineLearningModelResourceData = null,
-    SecretsManagerSecretResourceData: SecretsManagerSecretResourceData = null
-  ): ResourceDataContainer = {
+  def apply(): ResourceDataContainer = {
     val __obj = js.Dynamic.literal()
-    if (LocalDeviceResourceData != null) __obj.updateDynamic("LocalDeviceResourceData")(LocalDeviceResourceData.asInstanceOf[js.Any])
-    if (LocalVolumeResourceData != null) __obj.updateDynamic("LocalVolumeResourceData")(LocalVolumeResourceData.asInstanceOf[js.Any])
-    if (S3MachineLearningModelResourceData != null) __obj.updateDynamic("S3MachineLearningModelResourceData")(S3MachineLearningModelResourceData.asInstanceOf[js.Any])
-    if (SageMakerMachineLearningModelResourceData != null) __obj.updateDynamic("SageMakerMachineLearningModelResourceData")(SageMakerMachineLearningModelResourceData.asInstanceOf[js.Any])
-    if (SecretsManagerSecretResourceData != null) __obj.updateDynamic("SecretsManagerSecretResourceData")(SecretsManagerSecretResourceData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDataContainer]
   }
+  @scala.inline
+  implicit class ResourceDataContainerOps[Self <: ResourceDataContainer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocalDeviceResourceData(value: LocalDeviceResourceData): Self = this.set("LocalDeviceResourceData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalDeviceResourceData: Self = this.set("LocalDeviceResourceData", js.undefined)
+    @scala.inline
+    def setLocalVolumeResourceData(value: LocalVolumeResourceData): Self = this.set("LocalVolumeResourceData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalVolumeResourceData: Self = this.set("LocalVolumeResourceData", js.undefined)
+    @scala.inline
+    def setS3MachineLearningModelResourceData(value: S3MachineLearningModelResourceData): Self = this.set("S3MachineLearningModelResourceData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3MachineLearningModelResourceData: Self = this.set("S3MachineLearningModelResourceData", js.undefined)
+    @scala.inline
+    def setSageMakerMachineLearningModelResourceData(value: SageMakerMachineLearningModelResourceData): Self = this.set("SageMakerMachineLearningModelResourceData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSageMakerMachineLearningModelResourceData: Self = this.set("SageMakerMachineLearningModelResourceData", js.undefined)
+    @scala.inline
+    def setSecretsManagerSecretResourceData(value: SecretsManagerSecretResourceData): Self = this.set("SecretsManagerSecretResourceData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretsManagerSecretResourceData: Self = this.set("SecretsManagerSecretResourceData", js.undefined)
+  }
+  
 }
 

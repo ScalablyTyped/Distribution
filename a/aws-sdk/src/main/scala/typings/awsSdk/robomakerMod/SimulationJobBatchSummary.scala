@@ -38,24 +38,50 @@ trait SimulationJobBatchSummary extends js.Object {
 
 object SimulationJobBatchSummary {
   @scala.inline
-  def apply(
-    arn: Arn = null,
-    createdAt: CreatedAt = null,
-    createdRequestCount: js.UndefOr[Integer] = js.undefined,
-    failedRequestCount: js.UndefOr[Integer] = js.undefined,
-    lastUpdatedAt: LastUpdatedAt = null,
-    pendingRequestCount: js.UndefOr[Integer] = js.undefined,
-    status: SimulationJobBatchStatus = null
-  ): SimulationJobBatchSummary = {
+  def apply(): SimulationJobBatchSummary = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(createdRequestCount)) __obj.updateDynamic("createdRequestCount")(createdRequestCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(failedRequestCount)) __obj.updateDynamic("failedRequestCount")(failedRequestCount.get.asInstanceOf[js.Any])
-    if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(pendingRequestCount)) __obj.updateDynamic("pendingRequestCount")(pendingRequestCount.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimulationJobBatchSummary]
   }
+  @scala.inline
+  implicit class SimulationJobBatchSummaryOps[Self <: SimulationJobBatchSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: CreatedAt): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setCreatedRequestCount(value: Integer): Self = this.set("createdRequestCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedRequestCount: Self = this.set("createdRequestCount", js.undefined)
+    @scala.inline
+    def setFailedRequestCount(value: Integer): Self = this.set("failedRequestCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedRequestCount: Self = this.set("failedRequestCount", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: LastUpdatedAt): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    @scala.inline
+    def setPendingRequestCount(value: Integer): Self = this.set("pendingRequestCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingRequestCount: Self = this.set("pendingRequestCount", js.undefined)
+    @scala.inline
+    def setStatus(value: SimulationJobBatchStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

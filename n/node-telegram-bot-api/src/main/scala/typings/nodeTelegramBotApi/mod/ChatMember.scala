@@ -4,66 +4,112 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChatMember extends js.Object {
-  var can_add_web_page_previews: js.UndefOr[Boolean] = js.undefined
-  var can_be_edited: js.UndefOr[Boolean] = js.undefined
-  var can_change_info: js.UndefOr[Boolean] = js.undefined
-  var can_delete_messages: js.UndefOr[Boolean] = js.undefined
-  var can_edit_messages: js.UndefOr[Boolean] = js.undefined
-  var can_invite_users: js.UndefOr[Boolean] = js.undefined
-  var can_pin_messages: js.UndefOr[Boolean] = js.undefined
-  var can_post_messages: js.UndefOr[Boolean] = js.undefined
-  var can_promote_members: js.UndefOr[Boolean] = js.undefined
-  var can_restrict_members: js.UndefOr[Boolean] = js.undefined
-  var can_send_media_messages: js.UndefOr[Boolean] = js.undefined
-  var can_send_messages: js.UndefOr[Boolean] = js.undefined
-  var can_send_other_messages: js.UndefOr[Boolean] = js.undefined
-  var can_send_polls: Boolean
-  var is_member: js.UndefOr[Boolean] = js.undefined
-  var status: ChatMemberStatus
-  var until_date: js.UndefOr[Double] = js.undefined
-  var user: User
+  var can_add_web_page_previews: js.UndefOr[Boolean] = js.native
+  var can_be_edited: js.UndefOr[Boolean] = js.native
+  var can_change_info: js.UndefOr[Boolean] = js.native
+  var can_delete_messages: js.UndefOr[Boolean] = js.native
+  var can_edit_messages: js.UndefOr[Boolean] = js.native
+  var can_invite_users: js.UndefOr[Boolean] = js.native
+  var can_pin_messages: js.UndefOr[Boolean] = js.native
+  var can_post_messages: js.UndefOr[Boolean] = js.native
+  var can_promote_members: js.UndefOr[Boolean] = js.native
+  var can_restrict_members: js.UndefOr[Boolean] = js.native
+  var can_send_media_messages: js.UndefOr[Boolean] = js.native
+  var can_send_messages: js.UndefOr[Boolean] = js.native
+  var can_send_other_messages: js.UndefOr[Boolean] = js.native
+  var can_send_polls: Boolean = js.native
+  var is_member: js.UndefOr[Boolean] = js.native
+  var status: ChatMemberStatus = js.native
+  var until_date: js.UndefOr[Double] = js.native
+  var user: User = js.native
 }
 
 object ChatMember {
   @scala.inline
-  def apply(
-    can_send_polls: Boolean,
-    status: ChatMemberStatus,
-    user: User,
-    can_add_web_page_previews: js.UndefOr[Boolean] = js.undefined,
-    can_be_edited: js.UndefOr[Boolean] = js.undefined,
-    can_change_info: js.UndefOr[Boolean] = js.undefined,
-    can_delete_messages: js.UndefOr[Boolean] = js.undefined,
-    can_edit_messages: js.UndefOr[Boolean] = js.undefined,
-    can_invite_users: js.UndefOr[Boolean] = js.undefined,
-    can_pin_messages: js.UndefOr[Boolean] = js.undefined,
-    can_post_messages: js.UndefOr[Boolean] = js.undefined,
-    can_promote_members: js.UndefOr[Boolean] = js.undefined,
-    can_restrict_members: js.UndefOr[Boolean] = js.undefined,
-    can_send_media_messages: js.UndefOr[Boolean] = js.undefined,
-    can_send_messages: js.UndefOr[Boolean] = js.undefined,
-    can_send_other_messages: js.UndefOr[Boolean] = js.undefined,
-    is_member: js.UndefOr[Boolean] = js.undefined,
-    until_date: js.UndefOr[Double] = js.undefined
-  ): ChatMember = {
+  def apply(can_send_polls: Boolean, status: ChatMemberStatus, user: User): ChatMember = {
     val __obj = js.Dynamic.literal(can_send_polls = can_send_polls.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_add_web_page_previews)) __obj.updateDynamic("can_add_web_page_previews")(can_add_web_page_previews.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_be_edited)) __obj.updateDynamic("can_be_edited")(can_be_edited.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_change_info)) __obj.updateDynamic("can_change_info")(can_change_info.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_delete_messages)) __obj.updateDynamic("can_delete_messages")(can_delete_messages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_edit_messages)) __obj.updateDynamic("can_edit_messages")(can_edit_messages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_invite_users)) __obj.updateDynamic("can_invite_users")(can_invite_users.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_pin_messages)) __obj.updateDynamic("can_pin_messages")(can_pin_messages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_post_messages)) __obj.updateDynamic("can_post_messages")(can_post_messages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_promote_members)) __obj.updateDynamic("can_promote_members")(can_promote_members.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_restrict_members)) __obj.updateDynamic("can_restrict_members")(can_restrict_members.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_media_messages)) __obj.updateDynamic("can_send_media_messages")(can_send_media_messages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_messages)) __obj.updateDynamic("can_send_messages")(can_send_messages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_other_messages)) __obj.updateDynamic("can_send_other_messages")(can_send_other_messages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_member)) __obj.updateDynamic("is_member")(is_member.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(until_date)) __obj.updateDynamic("until_date")(until_date.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatMember]
   }
+  @scala.inline
+  implicit class ChatMemberOps[Self <: ChatMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCan_send_polls(value: Boolean): Self = this.set("can_send_polls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: ChatMemberStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCan_add_web_page_previews(value: Boolean): Self = this.set("can_add_web_page_previews", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_add_web_page_previews: Self = this.set("can_add_web_page_previews", js.undefined)
+    @scala.inline
+    def setCan_be_edited(value: Boolean): Self = this.set("can_be_edited", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_be_edited: Self = this.set("can_be_edited", js.undefined)
+    @scala.inline
+    def setCan_change_info(value: Boolean): Self = this.set("can_change_info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_change_info: Self = this.set("can_change_info", js.undefined)
+    @scala.inline
+    def setCan_delete_messages(value: Boolean): Self = this.set("can_delete_messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_delete_messages: Self = this.set("can_delete_messages", js.undefined)
+    @scala.inline
+    def setCan_edit_messages(value: Boolean): Self = this.set("can_edit_messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_edit_messages: Self = this.set("can_edit_messages", js.undefined)
+    @scala.inline
+    def setCan_invite_users(value: Boolean): Self = this.set("can_invite_users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_invite_users: Self = this.set("can_invite_users", js.undefined)
+    @scala.inline
+    def setCan_pin_messages(value: Boolean): Self = this.set("can_pin_messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_pin_messages: Self = this.set("can_pin_messages", js.undefined)
+    @scala.inline
+    def setCan_post_messages(value: Boolean): Self = this.set("can_post_messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_post_messages: Self = this.set("can_post_messages", js.undefined)
+    @scala.inline
+    def setCan_promote_members(value: Boolean): Self = this.set("can_promote_members", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_promote_members: Self = this.set("can_promote_members", js.undefined)
+    @scala.inline
+    def setCan_restrict_members(value: Boolean): Self = this.set("can_restrict_members", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_restrict_members: Self = this.set("can_restrict_members", js.undefined)
+    @scala.inline
+    def setCan_send_media_messages(value: Boolean): Self = this.set("can_send_media_messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_send_media_messages: Self = this.set("can_send_media_messages", js.undefined)
+    @scala.inline
+    def setCan_send_messages(value: Boolean): Self = this.set("can_send_messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_send_messages: Self = this.set("can_send_messages", js.undefined)
+    @scala.inline
+    def setCan_send_other_messages(value: Boolean): Self = this.set("can_send_other_messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCan_send_other_messages: Self = this.set("can_send_other_messages", js.undefined)
+    @scala.inline
+    def setIs_member(value: Boolean): Self = this.set("is_member", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_member: Self = this.set("is_member", js.undefined)
+    @scala.inline
+    def setUntil_date(value: Double): Self = this.set("until_date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUntil_date: Self = this.set("until_date", js.undefined)
+  }
+  
 }
 

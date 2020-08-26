@@ -6,13 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Clipboard extends js.Object {
   /**
     * Get the clipboard object.
     *
     * @returns {Clipboard} the clipboard object.
     */
-  def get(): clip
+  def get(): clip = js.native
 }
 
 @JSGlobal("nw.Clipboard")

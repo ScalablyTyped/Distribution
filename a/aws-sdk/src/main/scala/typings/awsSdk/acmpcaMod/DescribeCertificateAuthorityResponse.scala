@@ -14,10 +14,26 @@ trait DescribeCertificateAuthorityResponse extends js.Object {
 
 object DescribeCertificateAuthorityResponse {
   @scala.inline
-  def apply(CertificateAuthority: CertificateAuthority = null): DescribeCertificateAuthorityResponse = {
+  def apply(): DescribeCertificateAuthorityResponse = {
     val __obj = js.Dynamic.literal()
-    if (CertificateAuthority != null) __obj.updateDynamic("CertificateAuthority")(CertificateAuthority.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCertificateAuthorityResponse]
   }
+  @scala.inline
+  implicit class DescribeCertificateAuthorityResponseOps[Self <: DescribeCertificateAuthorityResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateAuthority(value: CertificateAuthority): Self = this.set("CertificateAuthority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateAuthority: Self = this.set("CertificateAuthority", js.undefined)
+  }
+  
 }
 

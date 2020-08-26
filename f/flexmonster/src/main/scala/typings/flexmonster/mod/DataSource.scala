@@ -4,94 +4,163 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataSource extends js.Object {
-  var binary: js.UndefOr[Boolean] = js.undefined
-  var browseForFile: js.UndefOr[Boolean] = js.undefined
-  var catalog: js.UndefOr[String] = js.undefined
-  var cube: js.UndefOr[String] = js.undefined
-  var customData: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Array[js.Object]] = js.undefined
-  var dataSourceInfo: js.UndefOr[String] = js.undefined
-  var dataSourceType: js.UndefOr[String] = js.undefined
-  var effectiveUserName: js.UndefOr[String] = js.undefined
-  var fieldSeparator: js.UndefOr[String] = js.undefined
-  var filename: js.UndefOr[String] = js.undefined
-  var hash: js.UndefOr[String] = js.undefined
+  var binary: js.UndefOr[Boolean] = js.native
+  var browseForFile: js.UndefOr[Boolean] = js.native
+  var catalog: js.UndefOr[String] = js.native
+  var cube: js.UndefOr[String] = js.native
+  var customData: js.UndefOr[String] = js.native
+  var data: js.UndefOr[js.Array[js.Object]] = js.native
+  var dataSourceInfo: js.UndefOr[String] = js.native
+  var dataSourceType: js.UndefOr[String] = js.native
+  var effectiveUserName: js.UndefOr[String] = js.native
+  var fieldSeparator: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.native
   // elasticsearch
-  var host: js.UndefOr[String | js.Array[String] | js.Object] = js.undefined
-  var ignoreQuotedLineBreaks: js.UndefOr[Boolean] = js.undefined
-  var index: js.UndefOr[String] = js.undefined
-  var localeIdentifier: js.UndefOr[String] = js.undefined
-  var mapping: js.UndefOr[js.Object] = js.undefined
-  var password: js.UndefOr[String] = js.undefined
-  var proxyUrl: js.UndefOr[String] = js.undefined
-  var recordsetDelimiter: js.UndefOr[String] = js.undefined
-  var requestHeaders: js.UndefOr[js.Object] = js.undefined
-  var roles: js.UndefOr[String] = js.undefined
-  var subquery: js.UndefOr[String | js.Object] = js.undefined
-  var thousandSeparator: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var username: js.UndefOr[String] = js.undefined
+  var host: js.UndefOr[String | js.Array[String] | js.Object] = js.native
+  var ignoreQuotedLineBreaks: js.UndefOr[Boolean] = js.native
+  var index: js.UndefOr[String] = js.native
+  var localeIdentifier: js.UndefOr[String] = js.native
+  var mapping: js.UndefOr[js.Object] = js.native
+  var password: js.UndefOr[String] = js.native
+  var proxyUrl: js.UndefOr[String] = js.native
+  var recordsetDelimiter: js.UndefOr[String] = js.native
+  var requestHeaders: js.UndefOr[js.Object] = js.native
+  var roles: js.UndefOr[String] = js.native
+  var subquery: js.UndefOr[String | js.Object] = js.native
+  var thousandSeparator: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.native
 }
 
 object DataSource {
   @scala.inline
-  def apply(
-    binary: js.UndefOr[Boolean] = js.undefined,
-    browseForFile: js.UndefOr[Boolean] = js.undefined,
-    catalog: String = null,
-    cube: String = null,
-    customData: String = null,
-    data: js.Array[js.Object] = null,
-    dataSourceInfo: String = null,
-    dataSourceType: String = null,
-    effectiveUserName: String = null,
-    fieldSeparator: String = null,
-    filename: String = null,
-    hash: String = null,
-    host: String | js.Array[String] | js.Object = null,
-    ignoreQuotedLineBreaks: js.UndefOr[Boolean] = js.undefined,
-    index: String = null,
-    localeIdentifier: String = null,
-    mapping: js.Object = null,
-    password: String = null,
-    proxyUrl: String = null,
-    recordsetDelimiter: String = null,
-    requestHeaders: js.Object = null,
-    roles: String = null,
-    subquery: String | js.Object = null,
-    thousandSeparator: String = null,
-    `type`: String = null,
-    username: String = null
-  ): DataSource = {
+  def apply(): DataSource = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(browseForFile)) __obj.updateDynamic("browseForFile")(browseForFile.get.asInstanceOf[js.Any])
-    if (catalog != null) __obj.updateDynamic("catalog")(catalog.asInstanceOf[js.Any])
-    if (cube != null) __obj.updateDynamic("cube")(cube.asInstanceOf[js.Any])
-    if (customData != null) __obj.updateDynamic("customData")(customData.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataSourceInfo != null) __obj.updateDynamic("dataSourceInfo")(dataSourceInfo.asInstanceOf[js.Any])
-    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType.asInstanceOf[js.Any])
-    if (effectiveUserName != null) __obj.updateDynamic("effectiveUserName")(effectiveUserName.asInstanceOf[js.Any])
-    if (fieldSeparator != null) __obj.updateDynamic("fieldSeparator")(fieldSeparator.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreQuotedLineBreaks)) __obj.updateDynamic("ignoreQuotedLineBreaks")(ignoreQuotedLineBreaks.get.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (localeIdentifier != null) __obj.updateDynamic("localeIdentifier")(localeIdentifier.asInstanceOf[js.Any])
-    if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl.asInstanceOf[js.Any])
-    if (recordsetDelimiter != null) __obj.updateDynamic("recordsetDelimiter")(recordsetDelimiter.asInstanceOf[js.Any])
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
-    if (subquery != null) __obj.updateDynamic("subquery")(subquery.asInstanceOf[js.Any])
-    if (thousandSeparator != null) __obj.updateDynamic("thousandSeparator")(thousandSeparator.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSource]
   }
+  @scala.inline
+  implicit class DataSourceOps[Self <: DataSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinary: Self = this.set("binary", js.undefined)
+    @scala.inline
+    def setBrowseForFile(value: Boolean): Self = this.set("browseForFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowseForFile: Self = this.set("browseForFile", js.undefined)
+    @scala.inline
+    def setCatalog(value: String): Self = this.set("catalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalog: Self = this.set("catalog", js.undefined)
+    @scala.inline
+    def setCube(value: String): Self = this.set("cube", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCube: Self = this.set("cube", js.undefined)
+    @scala.inline
+    def setCustomData(value: String): Self = this.set("customData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomData: Self = this.set("customData", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: js.Object*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[js.Object]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataSourceInfo(value: String): Self = this.set("dataSourceInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceInfo: Self = this.set("dataSourceInfo", js.undefined)
+    @scala.inline
+    def setDataSourceType(value: String): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
+    @scala.inline
+    def setEffectiveUserName(value: String): Self = this.set("effectiveUserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectiveUserName: Self = this.set("effectiveUserName", js.undefined)
+    @scala.inline
+    def setFieldSeparator(value: String): Self = this.set("fieldSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldSeparator: Self = this.set("fieldSeparator", js.undefined)
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash: Self = this.set("hash", js.undefined)
+    @scala.inline
+    def setHostVarargs(value: String*): Self = this.set("host", js.Array(value :_*))
+    @scala.inline
+    def setHost(value: String | js.Array[String] | js.Object): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setIgnoreQuotedLineBreaks(value: Boolean): Self = this.set("ignoreQuotedLineBreaks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreQuotedLineBreaks: Self = this.set("ignoreQuotedLineBreaks", js.undefined)
+    @scala.inline
+    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setLocaleIdentifier(value: String): Self = this.set("localeIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocaleIdentifier: Self = this.set("localeIdentifier", js.undefined)
+    @scala.inline
+    def setMapping(value: js.Object): Self = this.set("mapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapping: Self = this.set("mapping", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setProxyUrl(value: String): Self = this.set("proxyUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyUrl: Self = this.set("proxyUrl", js.undefined)
+    @scala.inline
+    def setRecordsetDelimiter(value: String): Self = this.set("recordsetDelimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordsetDelimiter: Self = this.set("recordsetDelimiter", js.undefined)
+    @scala.inline
+    def setRequestHeaders(value: js.Object): Self = this.set("requestHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestHeaders: Self = this.set("requestHeaders", js.undefined)
+    @scala.inline
+    def setRoles(value: String): Self = this.set("roles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoles: Self = this.set("roles", js.undefined)
+    @scala.inline
+    def setSubquery(value: String | js.Object): Self = this.set("subquery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubquery: Self = this.set("subquery", js.undefined)
+    @scala.inline
+    def setThousandSeparator(value: String): Self = this.set("thousandSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThousandSeparator: Self = this.set("thousandSeparator", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

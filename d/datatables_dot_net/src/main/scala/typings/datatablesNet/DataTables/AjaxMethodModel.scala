@@ -21,6 +21,7 @@ trait AjaxMethodModel extends js.Object {
     * @param resetPaging Reset (default action or true) or hold the current paging position (false).
     */
   def reload(): Api = js.native
+  def reload(callback: js.UndefOr[scala.Nothing], resetPaging: Boolean): Api = js.native
   def reload(callback: js.Function1[/* json */ js.Any, Unit]): Api = js.native
   def reload(callback: js.Function1[/* json */ js.Any, Unit], resetPaging: Boolean): Api = js.native
   /**

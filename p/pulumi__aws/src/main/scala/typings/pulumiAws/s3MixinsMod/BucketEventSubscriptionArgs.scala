@@ -14,11 +14,26 @@ trait BucketEventSubscriptionArgs extends CommonBucketSubscriptionArgs {
 
 object BucketEventSubscriptionArgs {
   @scala.inline
-  def apply(events: js.Array[String], filterPrefix: String = null, filterSuffix: String = null): BucketEventSubscriptionArgs = {
+  def apply(events: js.Array[String]): BucketEventSubscriptionArgs = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
-    if (filterPrefix != null) __obj.updateDynamic("filterPrefix")(filterPrefix.asInstanceOf[js.Any])
-    if (filterSuffix != null) __obj.updateDynamic("filterSuffix")(filterSuffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketEventSubscriptionArgs]
   }
+  @scala.inline
+  implicit class BucketEventSubscriptionArgsOps[Self <: BucketEventSubscriptionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventsVarargs(value: String*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: js.Array[String]): Self = this.set("events", value.asInstanceOf[js.Any])
+  }
+  
 }
 

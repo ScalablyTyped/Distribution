@@ -17,6 +17,7 @@ class ExtensionRequest protected ()
     */
   def this(extCmd: String) = this()
   def this(extCmd: String, params: js.Object) = this()
+  def this(extCmd: String, params: js.UndefOr[scala.Nothing], room: SFSRoom) = this()
   def this(extCmd: String, params: js.Object, room: SFSRoom) = this()
 }
 

@@ -16,28 +16,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Shape extends js.Object {
-  var fillcolor: String
-  var layer: below | above
-  var line: PartialShapeLine
-  var name: String
-  var opacity: Double
-  var path: String
-  var templateitemname: String
-  var `type`: rect | circle | line | path
-  var visible: Boolean
-  var x0: Datum
-  var x1: Datum
-  var xanchor: Double | String
+  var fillcolor: String = js.native
+  var layer: below | above = js.native
+  var line: PartialShapeLine = js.native
+  var name: String = js.native
+  var opacity: Double = js.native
+  var path: String = js.native
+  var templateitemname: String = js.native
+  var `type`: rect | circle | line | path = js.native
+  var visible: Boolean = js.native
+  var x0: Datum = js.native
+  var x1: Datum = js.native
+  var xanchor: Double | String = js.native
   // x-reference is assigned to the x-values
-  var xref: x | paper
-  var xsizemode: scaled | pixel
-  var y0: Datum
-  var y1: Datum
-  var yanchor: Double | String
+  var xref: x | paper = js.native
+  var xsizemode: scaled | pixel = js.native
+  var y0: Datum = js.native
+  var y1: Datum = js.native
+  var yanchor: Double | String = js.native
   // y-reference is assigned to the plot paper [0,1]
-  var yref: paper | y
-  var ysizemode: scaled | pixel
+  var yref: paper | y = js.native
+  var ysizemode: scaled | pixel = js.native
 }
 
 object Shape {
@@ -57,15 +58,70 @@ object Shape {
     xsizemode: scaled | pixel,
     yanchor: Double | String,
     yref: paper | y,
-    ysizemode: scaled | pixel,
-    x0: Datum = null,
-    x1: Datum = null,
-    y0: Datum = null,
-    y1: Datum = null
+    ysizemode: scaled | pixel
   ): Shape = {
-    val __obj = js.Dynamic.literal(fillcolor = fillcolor.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], templateitemname = templateitemname.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], xsizemode = xsizemode.asInstanceOf[js.Any], yanchor = yanchor.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any], ysizemode = ysizemode.asInstanceOf[js.Any], x0 = x0.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], y0 = y0.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fillcolor = fillcolor.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], templateitemname = templateitemname.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], xsizemode = xsizemode.asInstanceOf[js.Any], yanchor = yanchor.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any], ysizemode = ysizemode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shape]
   }
+  @scala.inline
+  implicit class ShapeOps[Self <: Shape] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFillcolor(value: String): Self = this.set("fillcolor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLayer(value: below | above): Self = this.set("layer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLine(value: PartialShapeLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplateitemname(value: String): Self = this.set("templateitemname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: rect | circle | line | path): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setXanchor(value: Double | String): Self = this.set("xanchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setXref(value: typings.plotlyJs.plotlyJsStrings.x | paper): Self = this.set("xref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setXsizemode(value: scaled | pixel): Self = this.set("xsizemode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setYanchor(value: Double | String): Self = this.set("yanchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setYref(value: paper | y): Self = this.set("yref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setYsizemode(value: scaled | pixel): Self = this.set("ysizemode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setX0(value: Datum): Self = this.set("x0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setX0Null: Self = this.set("x0", null)
+    @scala.inline
+    def setX1(value: Datum): Self = this.set("x1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setX1Null: Self = this.set("x1", null)
+    @scala.inline
+    def setY0(value: Datum): Self = this.set("y0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setY0Null: Self = this.set("y0", null)
+    @scala.inline
+    def setY1(value: Datum): Self = this.set("y1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setY1Null: Self = this.set("y1", null)
+  }
+  
 }
 

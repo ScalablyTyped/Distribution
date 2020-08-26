@@ -17,10 +17,26 @@ trait SchemaSetBasicFilterRequest extends js.Object {
 
 object SchemaSetBasicFilterRequest {
   @scala.inline
-  def apply(filter: SchemaBasicFilter = null): SchemaSetBasicFilterRequest = {
+  def apply(): SchemaSetBasicFilterRequest = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSetBasicFilterRequest]
   }
+  @scala.inline
+  implicit class SchemaSetBasicFilterRequestOps[Self <: SchemaSetBasicFilterRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilter(value: SchemaBasicFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ JS Search is an efficient, client-side search library for JavaScript and JSON ob
 | Keywords           | search, javascript, js, clientside, client-side, local, query |
 | # releases         | 2 |
 | # dependents       | 46 |
-| # downloads        | 2233759 |
+| # downloads        | 2278428 |
 | # stars            | 1 |
 
 ## Links

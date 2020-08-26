@@ -9,60 +9,7 @@ import scala.scalajs.js.annotation._
 object Video extends js.Object {
   @js.native
   class EmbedCodeConfiguration ()
-    extends typings.sharepoint.SP.Video.EmbedCodeConfiguration {
-    /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
-    /* CompleteClass */
-    override def customWriteToXml(
-      writer: typings.sharepoint.SP.XmlWriter,
-      serializationContext: typings.sharepoint.SP.SerializationContext
-    ): Boolean = js.native
-    /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
-    /* CompleteClass */
-    override def get_autoPlay(): Boolean = js.native
-    /* CompleteClass */
-    override def get_displayTitle(): Boolean = js.native
-    /* CompleteClass */
-    override def get_linkToOwnerProfilePage(): Boolean = js.native
-    /* CompleteClass */
-    override def get_linkToVideoHomePage(): Boolean = js.native
-    /* CompleteClass */
-    override def get_loop(): Boolean = js.native
-    /* CompleteClass */
-    override def get_pixelHeight(): Double = js.native
-    /* CompleteClass */
-    override def get_pixelWidth(): Double = js.native
-    /* CompleteClass */
-    override def get_previewImagePath(): String = js.native
-    /* CompleteClass */
-    override def get_startTime(): Double = js.native
-    /* CompleteClass */
-    override def get_typeId(): String = js.native
-    /* CompleteClass */
-    override def set_autoPlay(value: Boolean): Boolean = js.native
-    /* CompleteClass */
-    override def set_displayTitle(value: Boolean): Boolean = js.native
-    /* CompleteClass */
-    override def set_linkToOwnerProfilePage(value: Boolean): Boolean = js.native
-    /* CompleteClass */
-    override def set_linkToVideoHomePage(value: Boolean): Boolean = js.native
-    /* CompleteClass */
-    override def set_loop(value: Boolean): Boolean = js.native
-    /* CompleteClass */
-    override def set_pixelHeight(value: Double): Double = js.native
-    /* CompleteClass */
-    override def set_pixelWidth(value: Double): Double = js.native
-    /* CompleteClass */
-    override def set_previewImagePath(value: String): String = js.native
-    /* CompleteClass */
-    override def set_startTime(value: Double): Double = js.native
-    /* CompleteClass */
-    override def writeToXml(
-      writer: typings.sharepoint.SP.XmlWriter,
-      serializationContext: typings.sharepoint.SP.SerializationContext
-    ): Unit = js.native
-  }
+    extends typings.sharepoint.SP.Video.EmbedCodeConfiguration
   
   @js.native
   class VideoSet ()

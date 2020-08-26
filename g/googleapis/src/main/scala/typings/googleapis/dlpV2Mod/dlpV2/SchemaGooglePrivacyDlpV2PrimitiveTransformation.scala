@@ -24,32 +24,66 @@ trait SchemaGooglePrivacyDlpV2PrimitiveTransformation extends js.Object {
 
 object SchemaGooglePrivacyDlpV2PrimitiveTransformation {
   @scala.inline
-  def apply(
-    bucketingConfig: SchemaGooglePrivacyDlpV2BucketingConfig = null,
-    characterMaskConfig: SchemaGooglePrivacyDlpV2CharacterMaskConfig = null,
-    cryptoDeterministicConfig: SchemaGooglePrivacyDlpV2CryptoDeterministicConfig = null,
-    cryptoHashConfig: SchemaGooglePrivacyDlpV2CryptoHashConfig = null,
-    cryptoReplaceFfxFpeConfig: SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig = null,
-    dateShiftConfig: SchemaGooglePrivacyDlpV2DateShiftConfig = null,
-    fixedSizeBucketingConfig: SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig = null,
-    redactConfig: SchemaGooglePrivacyDlpV2RedactConfig = null,
-    replaceConfig: SchemaGooglePrivacyDlpV2ReplaceValueConfig = null,
-    replaceWithInfoTypeConfig: SchemaGooglePrivacyDlpV2ReplaceWithInfoTypeConfig = null,
-    timePartConfig: SchemaGooglePrivacyDlpV2TimePartConfig = null
-  ): SchemaGooglePrivacyDlpV2PrimitiveTransformation = {
+  def apply(): SchemaGooglePrivacyDlpV2PrimitiveTransformation = {
     val __obj = js.Dynamic.literal()
-    if (bucketingConfig != null) __obj.updateDynamic("bucketingConfig")(bucketingConfig.asInstanceOf[js.Any])
-    if (characterMaskConfig != null) __obj.updateDynamic("characterMaskConfig")(characterMaskConfig.asInstanceOf[js.Any])
-    if (cryptoDeterministicConfig != null) __obj.updateDynamic("cryptoDeterministicConfig")(cryptoDeterministicConfig.asInstanceOf[js.Any])
-    if (cryptoHashConfig != null) __obj.updateDynamic("cryptoHashConfig")(cryptoHashConfig.asInstanceOf[js.Any])
-    if (cryptoReplaceFfxFpeConfig != null) __obj.updateDynamic("cryptoReplaceFfxFpeConfig")(cryptoReplaceFfxFpeConfig.asInstanceOf[js.Any])
-    if (dateShiftConfig != null) __obj.updateDynamic("dateShiftConfig")(dateShiftConfig.asInstanceOf[js.Any])
-    if (fixedSizeBucketingConfig != null) __obj.updateDynamic("fixedSizeBucketingConfig")(fixedSizeBucketingConfig.asInstanceOf[js.Any])
-    if (redactConfig != null) __obj.updateDynamic("redactConfig")(redactConfig.asInstanceOf[js.Any])
-    if (replaceConfig != null) __obj.updateDynamic("replaceConfig")(replaceConfig.asInstanceOf[js.Any])
-    if (replaceWithInfoTypeConfig != null) __obj.updateDynamic("replaceWithInfoTypeConfig")(replaceWithInfoTypeConfig.asInstanceOf[js.Any])
-    if (timePartConfig != null) __obj.updateDynamic("timePartConfig")(timePartConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2PrimitiveTransformation]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2PrimitiveTransformationOps[Self <: SchemaGooglePrivacyDlpV2PrimitiveTransformation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketingConfig(value: SchemaGooglePrivacyDlpV2BucketingConfig): Self = this.set("bucketingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketingConfig: Self = this.set("bucketingConfig", js.undefined)
+    @scala.inline
+    def setCharacterMaskConfig(value: SchemaGooglePrivacyDlpV2CharacterMaskConfig): Self = this.set("characterMaskConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharacterMaskConfig: Self = this.set("characterMaskConfig", js.undefined)
+    @scala.inline
+    def setCryptoDeterministicConfig(value: SchemaGooglePrivacyDlpV2CryptoDeterministicConfig): Self = this.set("cryptoDeterministicConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCryptoDeterministicConfig: Self = this.set("cryptoDeterministicConfig", js.undefined)
+    @scala.inline
+    def setCryptoHashConfig(value: SchemaGooglePrivacyDlpV2CryptoHashConfig): Self = this.set("cryptoHashConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCryptoHashConfig: Self = this.set("cryptoHashConfig", js.undefined)
+    @scala.inline
+    def setCryptoReplaceFfxFpeConfig(value: SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig): Self = this.set("cryptoReplaceFfxFpeConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCryptoReplaceFfxFpeConfig: Self = this.set("cryptoReplaceFfxFpeConfig", js.undefined)
+    @scala.inline
+    def setDateShiftConfig(value: SchemaGooglePrivacyDlpV2DateShiftConfig): Self = this.set("dateShiftConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateShiftConfig: Self = this.set("dateShiftConfig", js.undefined)
+    @scala.inline
+    def setFixedSizeBucketingConfig(value: SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig): Self = this.set("fixedSizeBucketingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedSizeBucketingConfig: Self = this.set("fixedSizeBucketingConfig", js.undefined)
+    @scala.inline
+    def setRedactConfig(value: SchemaGooglePrivacyDlpV2RedactConfig): Self = this.set("redactConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedactConfig: Self = this.set("redactConfig", js.undefined)
+    @scala.inline
+    def setReplaceConfig(value: SchemaGooglePrivacyDlpV2ReplaceValueConfig): Self = this.set("replaceConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceConfig: Self = this.set("replaceConfig", js.undefined)
+    @scala.inline
+    def setReplaceWithInfoTypeConfig(value: SchemaGooglePrivacyDlpV2ReplaceWithInfoTypeConfig): Self = this.set("replaceWithInfoTypeConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceWithInfoTypeConfig: Self = this.set("replaceWithInfoTypeConfig", js.undefined)
+    @scala.inline
+    def setTimePartConfig(value: SchemaGooglePrivacyDlpV2TimePartConfig): Self = this.set("timePartConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePartConfig: Self = this.set("timePartConfig", js.undefined)
+  }
+  
 }
 

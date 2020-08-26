@@ -7,43 +7,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExecuteSpecsOptions extends js.Object {
-  var growl: js.UndefOr[Boolean] = js.undefined
-  var includeStackTrace: js.UndefOr[Boolean] = js.undefined
-  var isVerbose: js.UndefOr[Boolean] = js.undefined
-  var junitreport: js.UndefOr[Consolidate] = js.undefined
-  var onComplete: js.UndefOr[js.Function1[/* runner */ Runner, Unit]] = js.undefined
-  var regExpSpec: RegExp
-  var showColors: js.UndefOr[Boolean] = js.undefined
-  var specFolders: js.Array[String]
-  var teamcity: js.UndefOr[String | Boolean] = js.undefined
-  var useRequireJs: js.UndefOr[Boolean] = js.undefined
+  var growl: js.UndefOr[Boolean] = js.native
+  var includeStackTrace: js.UndefOr[Boolean] = js.native
+  var isVerbose: js.UndefOr[Boolean] = js.native
+  var junitreport: js.UndefOr[Consolidate] = js.native
+  var onComplete: js.UndefOr[js.Function1[/* runner */ Runner, Unit]] = js.native
+  var regExpSpec: RegExp = js.native
+  var showColors: js.UndefOr[Boolean] = js.native
+  var specFolders: js.Array[String] = js.native
+  var teamcity: js.UndefOr[String | Boolean] = js.native
+  var useRequireJs: js.UndefOr[Boolean] = js.native
 }
 
 object ExecuteSpecsOptions {
   @scala.inline
-  def apply(
-    regExpSpec: RegExp,
-    specFolders: js.Array[String],
-    growl: js.UndefOr[Boolean] = js.undefined,
-    includeStackTrace: js.UndefOr[Boolean] = js.undefined,
-    isVerbose: js.UndefOr[Boolean] = js.undefined,
-    junitreport: Consolidate = null,
-    onComplete: /* runner */ Runner => Unit = null,
-    showColors: js.UndefOr[Boolean] = js.undefined,
-    teamcity: String | Boolean = null,
-    useRequireJs: js.UndefOr[Boolean] = js.undefined
-  ): ExecuteSpecsOptions = {
+  def apply(regExpSpec: RegExp, specFolders: js.Array[String]): ExecuteSpecsOptions = {
     val __obj = js.Dynamic.literal(regExpSpec = regExpSpec.asInstanceOf[js.Any], specFolders = specFolders.asInstanceOf[js.Any])
-    if (!js.isUndefined(growl)) __obj.updateDynamic("growl")(growl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeStackTrace)) __obj.updateDynamic("includeStackTrace")(includeStackTrace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isVerbose)) __obj.updateDynamic("isVerbose")(isVerbose.get.asInstanceOf[js.Any])
-    if (junitreport != null) __obj.updateDynamic("junitreport")(junitreport.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
-    if (!js.isUndefined(showColors)) __obj.updateDynamic("showColors")(showColors.get.asInstanceOf[js.Any])
-    if (teamcity != null) __obj.updateDynamic("teamcity")(teamcity.asInstanceOf[js.Any])
-    if (!js.isUndefined(useRequireJs)) __obj.updateDynamic("useRequireJs")(useRequireJs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteSpecsOptions]
   }
+  @scala.inline
+  implicit class ExecuteSpecsOptionsOps[Self <: ExecuteSpecsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegExpSpec(value: RegExp): Self = this.set("regExpSpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpecFoldersVarargs(value: String*): Self = this.set("specFolders", js.Array(value :_*))
+    @scala.inline
+    def setSpecFolders(value: js.Array[String]): Self = this.set("specFolders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGrowl(value: Boolean): Self = this.set("growl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowl: Self = this.set("growl", js.undefined)
+    @scala.inline
+    def setIncludeStackTrace(value: Boolean): Self = this.set("includeStackTrace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeStackTrace: Self = this.set("includeStackTrace", js.undefined)
+    @scala.inline
+    def setIsVerbose(value: Boolean): Self = this.set("isVerbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsVerbose: Self = this.set("isVerbose", js.undefined)
+    @scala.inline
+    def setJunitreport(value: Consolidate): Self = this.set("junitreport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJunitreport: Self = this.set("junitreport", js.undefined)
+    @scala.inline
+    def setOnComplete(value: /* runner */ Runner => Unit): Self = this.set("onComplete", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    @scala.inline
+    def setShowColors(value: Boolean): Self = this.set("showColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowColors: Self = this.set("showColors", js.undefined)
+    @scala.inline
+    def setTeamcity(value: String | Boolean): Self = this.set("teamcity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamcity: Self = this.set("teamcity", js.undefined)
+    @scala.inline
+    def setUseRequireJs(value: Boolean): Self = this.set("useRequireJs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseRequireJs: Self = this.set("useRequireJs", js.undefined)
+  }
+  
 }
 

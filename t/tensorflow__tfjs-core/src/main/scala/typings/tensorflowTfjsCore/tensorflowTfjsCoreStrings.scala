@@ -15,6 +15,9 @@ object tensorflowTfjsCoreStrings {
   sealed trait BYTES_PER_ELEMENT extends DataValues
   
   @js.native
+  sealed trait EXPLICIT extends PadType
+  
+  @js.native
   sealed trait Engine extends js.Object
   
   @js.native
@@ -49,12 +52,6 @@ object tensorflowTfjsCoreStrings {
   
   @js.native
   sealed trait VALID extends PadType
-  
-  @js.native
-  sealed trait all extends js.Object
-  
-  @js.native
-  sealed trait any extends js.Object
   
   @js.native
   sealed trait avg extends js.Object
@@ -127,6 +124,9 @@ object tensorflowTfjsCoreStrings {
   sealed trait flatMap extends DataValues
   
   @js.native
+  sealed trait float16 extends js.Object
+  
+  @js.native
   sealed trait float32
     extends DataType
        with NumericDataType
@@ -173,9 +173,6 @@ object tensorflowTfjsCoreStrings {
   sealed trait max extends js.Object
   
   @js.native
-  sealed trait min extends js.Object
-  
-  @js.native
   sealed trait model extends WeightGroup
   
   @js.native
@@ -192,9 +189,6 @@ object tensorflowTfjsCoreStrings {
   
   @js.native
   sealed trait prelu extends Activation
-  
-  @js.native
-  sealed trait prod extends js.Object
   
   @js.native
   sealed trait push extends DataValues
@@ -245,9 +239,6 @@ object tensorflowTfjsCoreStrings {
   sealed trait subarray extends DataValues
   
   @js.native
-  sealed trait sum extends js.Object
-  
-  @js.native
   sealed trait toLocaleString extends DataValues
   
   @js.native
@@ -263,9 +254,6 @@ object tensorflowTfjsCoreStrings {
   sealed trait unshift extends DataValues
   
   @js.native
-  sealed trait unsortedSegmentSum extends js.Object
-  
-  @js.native
   sealed trait valid_ extends js.Object
   
   @js.native
@@ -276,6 +264,8 @@ object tensorflowTfjsCoreStrings {
   
   @scala.inline
   def BYTES_PER_ELEMENT: BYTES_PER_ELEMENT = "BYTES_PER_ELEMENT".asInstanceOf[BYTES_PER_ELEMENT]
+  @scala.inline
+  def EXPLICIT: EXPLICIT = "EXPLICIT".asInstanceOf[EXPLICIT]
   @scala.inline
   def Engine: Engine = "Engine".asInstanceOf[Engine]
   @scala.inline
@@ -300,10 +290,6 @@ object tensorflowTfjsCoreStrings {
   def SAME: SAME = "SAME".asInstanceOf[SAME]
   @scala.inline
   def VALID: VALID = "VALID".asInstanceOf[VALID]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
   @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
   @scala.inline
@@ -349,6 +335,8 @@ object tensorflowTfjsCoreStrings {
   @scala.inline
   def flatMap: flatMap = "flatMap".asInstanceOf[flatMap]
   @scala.inline
+  def float16: float16 = "float16".asInstanceOf[float16]
+  @scala.inline
   def float32: float32 = "float32".asInstanceOf[float32]
   @scala.inline
   def floor: floor = "floor".asInstanceOf[floor]
@@ -377,8 +365,6 @@ object tensorflowTfjsCoreStrings {
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
   def model: model = "model".asInstanceOf[model]
   @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
@@ -390,8 +376,6 @@ object tensorflowTfjsCoreStrings {
   def pop: pop = "pop".asInstanceOf[pop]
   @scala.inline
   def prelu: prelu = "prelu".asInstanceOf[prelu]
-  @scala.inline
-  def prod: prod = "prod".asInstanceOf[prod]
   @scala.inline
   def push: push = "push".asInstanceOf[push]
   @scala.inline
@@ -425,15 +409,11 @@ object tensorflowTfjsCoreStrings {
   @scala.inline
   def subarray: subarray = "subarray".asInstanceOf[subarray]
   @scala.inline
-  def sum: sum = "sum".asInstanceOf[sum]
-  @scala.inline
   def uint16: uint16 = "uint16".asInstanceOf[uint16]
   @scala.inline
   def uint8: uint8 = "uint8".asInstanceOf[uint8]
   @scala.inline
   def unshift: unshift = "unshift".asInstanceOf[unshift]
-  @scala.inline
-  def unsortedSegmentSum: unsortedSegmentSum = "unsortedSegmentSum".asInstanceOf[unsortedSegmentSum]
   @scala.inline
   def valid_ : valid_ = "valid".asInstanceOf[valid_]
   @scala.inline

@@ -5,85 +5,148 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITagsManagerOptions extends js.Object {
-  var AjaxPush: js.UndefOr[String] = js.undefined
-  var CapitalizeFirstLetter: js.UndefOr[Boolean] = js.undefined
-  var backspace: js.UndefOr[js.Array[Double]] = js.undefined
-  var blinkBGColor_1: js.UndefOr[String] = js.undefined
-  var blinkBGColor_2: js.UndefOr[String] = js.undefined
-  var deleteTagsOnBackspace: js.UndefOr[Boolean] = js.undefined
+  var AjaxPush: js.UndefOr[String] = js.native
+  var CapitalizeFirstLetter: js.UndefOr[Boolean] = js.native
+  var backspace: js.UndefOr[js.Array[Double]] = js.native
+  var blinkBGColor_1: js.UndefOr[String] = js.native
+  var blinkBGColor_2: js.UndefOr[String] = js.native
+  var deleteTagsOnBackspace: js.UndefOr[Boolean] = js.native
    //url
-  var delimeters: js.UndefOr[js.Array[Double]] = js.undefined
-  var hiddenTagListId: js.UndefOr[String] = js.undefined
-  var hiddenTagListName: js.UndefOr[String] = js.undefined
-  var isClearInputOnEsc: js.UndefOr[Boolean] = js.undefined
-  var maxTags: js.UndefOr[Double] = js.undefined
-  var prefilled: js.UndefOr[js.Any] = js.undefined
-  var preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined
-  var tagClass: js.UndefOr[String] = js.undefined
-  var tagCloseIcon: js.UndefOr[String] = js.undefined
-  var tagsContainer: js.UndefOr[HTMLElement] = js.undefined
-  var typeahead: js.UndefOr[Boolean] = js.undefined
-  var typeaheadAjaxPolling: js.UndefOr[Boolean] = js.undefined
-  var typeaheadAjaxSource: js.UndefOr[String] = js.undefined
-  var typeaheadDelegate: js.UndefOr[js.Function] = js.undefined
-  var typeaheadOverrides: js.UndefOr[ITypeaheadOverrides] = js.undefined
-  var typeaheadSource: js.UndefOr[js.Any] = js.undefined
-  var validator: js.UndefOr[js.Function] = js.undefined
+  var delimeters: js.UndefOr[js.Array[Double]] = js.native
+  var hiddenTagListId: js.UndefOr[String] = js.native
+  var hiddenTagListName: js.UndefOr[String] = js.native
+  var isClearInputOnEsc: js.UndefOr[Boolean] = js.native
+  var maxTags: js.UndefOr[Double] = js.native
+  var prefilled: js.UndefOr[js.Any] = js.native
+  var preventSubmitOnEnter: js.UndefOr[Boolean] = js.native
+  var tagClass: js.UndefOr[String] = js.native
+  var tagCloseIcon: js.UndefOr[String] = js.native
+  var tagsContainer: js.UndefOr[HTMLElement] = js.native
+  var typeahead: js.UndefOr[Boolean] = js.native
+  var typeaheadAjaxPolling: js.UndefOr[Boolean] = js.native
+  var typeaheadAjaxSource: js.UndefOr[String] = js.native
+  var typeaheadDelegate: js.UndefOr[js.Function] = js.native
+  var typeaheadOverrides: js.UndefOr[ITypeaheadOverrides] = js.native
+  var typeaheadSource: js.UndefOr[js.Any] = js.native
+  var validator: js.UndefOr[js.Function] = js.native
 }
 
 object ITagsManagerOptions {
   @scala.inline
-  def apply(
-    AjaxPush: String = null,
-    CapitalizeFirstLetter: js.UndefOr[Boolean] = js.undefined,
-    backspace: js.Array[Double] = null,
-    blinkBGColor_1: String = null,
-    blinkBGColor_2: String = null,
-    deleteTagsOnBackspace: js.UndefOr[Boolean] = js.undefined,
-    delimeters: js.Array[Double] = null,
-    hiddenTagListId: String = null,
-    hiddenTagListName: String = null,
-    isClearInputOnEsc: js.UndefOr[Boolean] = js.undefined,
-    maxTags: js.UndefOr[Double] = js.undefined,
-    prefilled: js.Any = null,
-    preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined,
-    tagClass: String = null,
-    tagCloseIcon: String = null,
-    tagsContainer: HTMLElement = null,
-    typeahead: js.UndefOr[Boolean] = js.undefined,
-    typeaheadAjaxPolling: js.UndefOr[Boolean] = js.undefined,
-    typeaheadAjaxSource: String = null,
-    typeaheadDelegate: js.Function = null,
-    typeaheadOverrides: ITypeaheadOverrides = null,
-    typeaheadSource: js.Any = null,
-    validator: js.Function = null
-  ): ITagsManagerOptions = {
+  def apply(): ITagsManagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (AjaxPush != null) __obj.updateDynamic("AjaxPush")(AjaxPush.asInstanceOf[js.Any])
-    if (!js.isUndefined(CapitalizeFirstLetter)) __obj.updateDynamic("CapitalizeFirstLetter")(CapitalizeFirstLetter.get.asInstanceOf[js.Any])
-    if (backspace != null) __obj.updateDynamic("backspace")(backspace.asInstanceOf[js.Any])
-    if (blinkBGColor_1 != null) __obj.updateDynamic("blinkBGColor_1")(blinkBGColor_1.asInstanceOf[js.Any])
-    if (blinkBGColor_2 != null) __obj.updateDynamic("blinkBGColor_2")(blinkBGColor_2.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteTagsOnBackspace)) __obj.updateDynamic("deleteTagsOnBackspace")(deleteTagsOnBackspace.get.asInstanceOf[js.Any])
-    if (delimeters != null) __obj.updateDynamic("delimeters")(delimeters.asInstanceOf[js.Any])
-    if (hiddenTagListId != null) __obj.updateDynamic("hiddenTagListId")(hiddenTagListId.asInstanceOf[js.Any])
-    if (hiddenTagListName != null) __obj.updateDynamic("hiddenTagListName")(hiddenTagListName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClearInputOnEsc)) __obj.updateDynamic("isClearInputOnEsc")(isClearInputOnEsc.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxTags)) __obj.updateDynamic("maxTags")(maxTags.get.asInstanceOf[js.Any])
-    if (prefilled != null) __obj.updateDynamic("prefilled")(prefilled.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventSubmitOnEnter)) __obj.updateDynamic("preventSubmitOnEnter")(preventSubmitOnEnter.get.asInstanceOf[js.Any])
-    if (tagClass != null) __obj.updateDynamic("tagClass")(tagClass.asInstanceOf[js.Any])
-    if (tagCloseIcon != null) __obj.updateDynamic("tagCloseIcon")(tagCloseIcon.asInstanceOf[js.Any])
-    if (tagsContainer != null) __obj.updateDynamic("tagsContainer")(tagsContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(typeahead)) __obj.updateDynamic("typeahead")(typeahead.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(typeaheadAjaxPolling)) __obj.updateDynamic("typeaheadAjaxPolling")(typeaheadAjaxPolling.get.asInstanceOf[js.Any])
-    if (typeaheadAjaxSource != null) __obj.updateDynamic("typeaheadAjaxSource")(typeaheadAjaxSource.asInstanceOf[js.Any])
-    if (typeaheadDelegate != null) __obj.updateDynamic("typeaheadDelegate")(typeaheadDelegate.asInstanceOf[js.Any])
-    if (typeaheadOverrides != null) __obj.updateDynamic("typeaheadOverrides")(typeaheadOverrides.asInstanceOf[js.Any])
-    if (typeaheadSource != null) __obj.updateDynamic("typeaheadSource")(typeaheadSource.asInstanceOf[js.Any])
-    if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITagsManagerOptions]
   }
+  @scala.inline
+  implicit class ITagsManagerOptionsOps[Self <: ITagsManagerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAjaxPush(value: String): Self = this.set("AjaxPush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAjaxPush: Self = this.set("AjaxPush", js.undefined)
+    @scala.inline
+    def setCapitalizeFirstLetter(value: Boolean): Self = this.set("CapitalizeFirstLetter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapitalizeFirstLetter: Self = this.set("CapitalizeFirstLetter", js.undefined)
+    @scala.inline
+    def setBackspaceVarargs(value: Double*): Self = this.set("backspace", js.Array(value :_*))
+    @scala.inline
+    def setBackspace(value: js.Array[Double]): Self = this.set("backspace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackspace: Self = this.set("backspace", js.undefined)
+    @scala.inline
+    def setBlinkBGColor_1(value: String): Self = this.set("blinkBGColor_1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlinkBGColor_1: Self = this.set("blinkBGColor_1", js.undefined)
+    @scala.inline
+    def setBlinkBGColor_2(value: String): Self = this.set("blinkBGColor_2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlinkBGColor_2: Self = this.set("blinkBGColor_2", js.undefined)
+    @scala.inline
+    def setDeleteTagsOnBackspace(value: Boolean): Self = this.set("deleteTagsOnBackspace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteTagsOnBackspace: Self = this.set("deleteTagsOnBackspace", js.undefined)
+    @scala.inline
+    def setDelimetersVarargs(value: Double*): Self = this.set("delimeters", js.Array(value :_*))
+    @scala.inline
+    def setDelimeters(value: js.Array[Double]): Self = this.set("delimeters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimeters: Self = this.set("delimeters", js.undefined)
+    @scala.inline
+    def setHiddenTagListId(value: String): Self = this.set("hiddenTagListId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiddenTagListId: Self = this.set("hiddenTagListId", js.undefined)
+    @scala.inline
+    def setHiddenTagListName(value: String): Self = this.set("hiddenTagListName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiddenTagListName: Self = this.set("hiddenTagListName", js.undefined)
+    @scala.inline
+    def setIsClearInputOnEsc(value: Boolean): Self = this.set("isClearInputOnEsc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsClearInputOnEsc: Self = this.set("isClearInputOnEsc", js.undefined)
+    @scala.inline
+    def setMaxTags(value: Double): Self = this.set("maxTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxTags: Self = this.set("maxTags", js.undefined)
+    @scala.inline
+    def setPrefilled(value: js.Any): Self = this.set("prefilled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefilled: Self = this.set("prefilled", js.undefined)
+    @scala.inline
+    def setPreventSubmitOnEnter(value: Boolean): Self = this.set("preventSubmitOnEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreventSubmitOnEnter: Self = this.set("preventSubmitOnEnter", js.undefined)
+    @scala.inline
+    def setTagClass(value: String): Self = this.set("tagClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagClass: Self = this.set("tagClass", js.undefined)
+    @scala.inline
+    def setTagCloseIcon(value: String): Self = this.set("tagCloseIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagCloseIcon: Self = this.set("tagCloseIcon", js.undefined)
+    @scala.inline
+    def setTagsContainer(value: HTMLElement): Self = this.set("tagsContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagsContainer: Self = this.set("tagsContainer", js.undefined)
+    @scala.inline
+    def setTypeahead(value: Boolean): Self = this.set("typeahead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeahead: Self = this.set("typeahead", js.undefined)
+    @scala.inline
+    def setTypeaheadAjaxPolling(value: Boolean): Self = this.set("typeaheadAjaxPolling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeaheadAjaxPolling: Self = this.set("typeaheadAjaxPolling", js.undefined)
+    @scala.inline
+    def setTypeaheadAjaxSource(value: String): Self = this.set("typeaheadAjaxSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeaheadAjaxSource: Self = this.set("typeaheadAjaxSource", js.undefined)
+    @scala.inline
+    def setTypeaheadDelegate(value: js.Function): Self = this.set("typeaheadDelegate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeaheadDelegate: Self = this.set("typeaheadDelegate", js.undefined)
+    @scala.inline
+    def setTypeaheadOverrides(value: ITypeaheadOverrides): Self = this.set("typeaheadOverrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeaheadOverrides: Self = this.set("typeaheadOverrides", js.undefined)
+    @scala.inline
+    def setTypeaheadSource(value: js.Any): Self = this.set("typeaheadSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeaheadSource: Self = this.set("typeaheadSource", js.undefined)
+    @scala.inline
+    def setValidator(value: js.Function): Self = this.set("validator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidator: Self = this.set("validator", js.undefined)
+  }
+  
 }
 

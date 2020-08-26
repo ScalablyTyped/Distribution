@@ -7,27 +7,28 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a base for client button editor objects.
   */
+@js.native
 trait ASPxClientButtonEditBase extends ASPxClientTextEdit {
   /**
     * Occurs on the client side after an editor button is clicked.
     */
-  var ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]]
+  var ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]] = js.native
   /**
     * Returns a button by its index in the button collection. A button.
     * @param number A button index.
     */
-  def GetButton(number: Double): js.Any
+  def GetButton(number: Double): js.Any = js.native
   /**
     * Returns a value specifying whether a button is displayed. true, if the button visible; otherwise, false.
     * @param number An integer value specifying the button's index within the ASPxButtonEditBase.Buttons collection.
     */
-  def GetButtonVisible(number: Double): Boolean
+  def GetButtonVisible(number: Double): Boolean = js.native
   /**
     * Specifies whether the button is visible.
     * @param number An integer value specifying the button's index within the ASPxButtonEditBase.Buttons collection.
     * @param value true, to make the button visible; otherwise, false.
     */
-  def SetButtonVisible(number: Double, value: Boolean): Unit
+  def SetButtonVisible(number: Double, value: Boolean): Unit = js.native
 }
 
 object ASPxClientButtonEditBase {
@@ -86,5 +87,26 @@ object ASPxClientButtonEditBase {
     val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), ButtonClick = ButtonClick.asInstanceOf[js.Any], Focus = js.Any.fromFunction0(Focus), GetButton = js.Any.fromFunction1(GetButton), GetButtonVisible = js.Any.fromFunction1(GetButtonVisible), GetCaption = js.Any.fromFunction0(GetCaption), GetCaretPosition = js.Any.fromFunction0(GetCaretPosition), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetEnabled = js.Any.fromFunction0(GetEnabled), GetErrorText = js.Any.fromFunction0(GetErrorText), GetHeight = js.Any.fromFunction0(GetHeight), GetInputElement = js.Any.fromFunction0(GetInputElement), GetIsValid = js.Any.fromFunction0(GetIsValid), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetReadOnly = js.Any.fromFunction0(GetReadOnly), GetText = js.Any.fromFunction0(GetText), GetValue = js.Any.fromFunction0(GetValue), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), GotFocus = GotFocus.asInstanceOf[js.Any], InCallback = js.Any.fromFunction0(InCallback), Init = Init.asInstanceOf[js.Any], KeyDown = KeyDown.asInstanceOf[js.Any], KeyPress = KeyPress.asInstanceOf[js.Any], KeyUp = KeyUp.asInstanceOf[js.Any], LostFocus = LostFocus.asInstanceOf[js.Any], SelectAll = js.Any.fromFunction0(SelectAll), SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetButtonVisible = js.Any.fromFunction2(SetButtonVisible), SetCaption = js.Any.fromFunction1(SetCaption), SetCaretPosition = js.Any.fromFunction1(SetCaretPosition), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetEnabled = js.Any.fromFunction1(SetEnabled), SetErrorText = js.Any.fromFunction1(SetErrorText), SetHeight = js.Any.fromFunction1(SetHeight), SetIsValid = js.Any.fromFunction1(SetIsValid), SetReadOnly = js.Any.fromFunction1(SetReadOnly), SetSelection = js.Any.fromFunction3(SetSelection), SetText = js.Any.fromFunction1(SetText), SetValue = js.Any.fromFunction1(SetValue), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), TextChanged = TextChanged.asInstanceOf[js.Any], UserInput = UserInput.asInstanceOf[js.Any], Validate = js.Any.fromFunction0(Validate), Validation = Validation.asInstanceOf[js.Any], ValueChanged = ValueChanged.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientButtonEditBase]
   }
+  @scala.inline
+  implicit class ASPxClientButtonEditBaseOps[Self <: ASPxClientButtonEditBase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setButtonClick(value: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]]): Self = this.set("ButtonClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetButton(value: Double => js.Any): Self = this.set("GetButton", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetButtonVisible(value: Double => Boolean): Self = this.set("GetButtonVisible", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetButtonVisible(value: (Double, Boolean) => Unit): Self = this.set("SetButtonVisible", js.Any.fromFunction2(value))
+  }
+  
 }
 

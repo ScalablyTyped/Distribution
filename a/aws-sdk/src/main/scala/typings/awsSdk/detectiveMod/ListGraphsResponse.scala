@@ -18,11 +18,32 @@ trait ListGraphsResponse extends js.Object {
 
 object ListGraphsResponse {
   @scala.inline
-  def apply(GraphList: GraphList = null, NextToken: PaginationToken = null): ListGraphsResponse = {
+  def apply(): ListGraphsResponse = {
     val __obj = js.Dynamic.literal()
-    if (GraphList != null) __obj.updateDynamic("GraphList")(GraphList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGraphsResponse]
   }
+  @scala.inline
+  implicit class ListGraphsResponseOps[Self <: ListGraphsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGraphListVarargs(value: Graph*): Self = this.set("GraphList", js.Array(value :_*))
+    @scala.inline
+    def setGraphList(value: GraphList): Self = this.set("GraphList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGraphList: Self = this.set("GraphList", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

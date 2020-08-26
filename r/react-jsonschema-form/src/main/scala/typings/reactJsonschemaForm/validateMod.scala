@@ -17,36 +17,28 @@ object validateMod extends js.Object {
   def default[T](
     formData: T,
     schema: JSONSchema6Definition,
-    customValidate: js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]
+    customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]]
   ): ErrorSchema = js.native
   def default[T](
     formData: T,
     schema: JSONSchema6Definition,
-    customValidate: js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation],
-    transformErrors: js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]
+    customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]],
+    transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]]
   ): ErrorSchema = js.native
   def default[T](
     formData: T,
     schema: JSONSchema6Definition,
-    customValidate: js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation],
-    transformErrors: js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]],
-    additionalMetaSchemas: js.UndefOr[scala.Nothing],
-    customFormats: StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]
+    customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]],
+    transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]],
+    additionalMetaSchemas: js.UndefOr[js.Array[js.Object]]
   ): ErrorSchema = js.native
   def default[T](
     formData: T,
     schema: JSONSchema6Definition,
-    customValidate: js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation],
-    transformErrors: js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]],
-    additionalMetaSchemas: js.Array[js.Object]
-  ): ErrorSchema = js.native
-  def default[T](
-    formData: T,
-    schema: JSONSchema6Definition,
-    customValidate: js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation],
-    transformErrors: js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]],
-    additionalMetaSchemas: js.Array[js.Object],
-    customFormats: StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]
+    customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]],
+    transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]],
+    additionalMetaSchemas: js.UndefOr[js.Array[js.Object]],
+    customFormats: js.UndefOr[StringDictionary[(js.Function1[/* data */ String, Boolean]) | RegExp | String]]
   ): ErrorSchema = js.native
 }
 

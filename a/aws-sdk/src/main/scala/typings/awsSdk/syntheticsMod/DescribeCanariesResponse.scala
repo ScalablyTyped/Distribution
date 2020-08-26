@@ -18,11 +18,32 @@ trait DescribeCanariesResponse extends js.Object {
 
 object DescribeCanariesResponse {
   @scala.inline
-  def apply(Canaries: Canaries = null, NextToken: Token = null): DescribeCanariesResponse = {
+  def apply(): DescribeCanariesResponse = {
     val __obj = js.Dynamic.literal()
-    if (Canaries != null) __obj.updateDynamic("Canaries")(Canaries.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCanariesResponse]
   }
+  @scala.inline
+  implicit class DescribeCanariesResponseOps[Self <: DescribeCanariesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanariesVarargs(value: Canary*): Self = this.set("Canaries", js.Array(value :_*))
+    @scala.inline
+    def setCanaries(value: Canaries): Self = this.set("Canaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanaries: Self = this.set("Canaries", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -13,7 +13,5 @@ class StreamHandler protected () extends LoggerHandler {
   val filter: js.UndefOr[js.Function1[/* record */ LogRecord, Boolean]] = js.native
   val stream: WritableStream = js.native
   def clone(opts: PartialStreamHandlerOptio): StreamHandler = js.native
-  /* CompleteClass */
-  override def handle(record: LogRecord): Unit = js.native
 }
 

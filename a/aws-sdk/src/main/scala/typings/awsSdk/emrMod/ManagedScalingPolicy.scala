@@ -14,10 +14,26 @@ trait ManagedScalingPolicy extends js.Object {
 
 object ManagedScalingPolicy {
   @scala.inline
-  def apply(ComputeLimits: ComputeLimits = null): ManagedScalingPolicy = {
+  def apply(): ManagedScalingPolicy = {
     val __obj = js.Dynamic.literal()
-    if (ComputeLimits != null) __obj.updateDynamic("ComputeLimits")(ComputeLimits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedScalingPolicy]
   }
+  @scala.inline
+  implicit class ManagedScalingPolicyOps[Self <: ManagedScalingPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputeLimits(value: ComputeLimits): Self = this.set("ComputeLimits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeLimits: Self = this.set("ComputeLimits", js.undefined)
+  }
+  
 }
 

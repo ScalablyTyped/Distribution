@@ -18,11 +18,32 @@ trait ListCampaignsResponse extends js.Object {
 
 object ListCampaignsResponse {
   @scala.inline
-  def apply(campaigns: Campaigns = null, nextToken: NextToken = null): ListCampaignsResponse = {
+  def apply(): ListCampaignsResponse = {
     val __obj = js.Dynamic.literal()
-    if (campaigns != null) __obj.updateDynamic("campaigns")(campaigns.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCampaignsResponse]
   }
+  @scala.inline
+  implicit class ListCampaignsResponseOps[Self <: ListCampaignsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCampaignsVarargs(value: CampaignSummary*): Self = this.set("campaigns", js.Array(value :_*))
+    @scala.inline
+    def setCampaigns(value: Campaigns): Self = this.set("campaigns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaigns: Self = this.set("campaigns", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

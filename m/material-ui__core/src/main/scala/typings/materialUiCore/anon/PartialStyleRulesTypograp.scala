@@ -46,78 +46,158 @@ trait PartialStyleRulesTypograp extends js.Object {
 
 object PartialStyleRulesTypograp {
   @scala.inline
-  def apply(
-    alignCenter: CSSProperties = null,
-    alignJustify: CSSProperties = null,
-    alignLeft: CSSProperties = null,
-    alignRight: CSSProperties = null,
-    body1: CSSProperties = null,
-    body2: CSSProperties = null,
-    button: CSSProperties = null,
-    caption: CSSProperties = null,
-    colorError: CSSProperties = null,
-    colorInherit: CSSProperties = null,
-    colorSecondary: CSSProperties = null,
-    colorTextSecondary: CSSProperties = null,
-    display1: CSSProperties = null,
-    display2: CSSProperties = null,
-    display3: CSSProperties = null,
-    display4: CSSProperties = null,
-    gutterBottom: CSSProperties = null,
-    h1: CSSProperties = null,
-    h2: CSSProperties = null,
-    h3: CSSProperties = null,
-    h4: CSSProperties = null,
-    h5: CSSProperties = null,
-    h6: CSSProperties = null,
-    headline: CSSProperties = null,
-    `inline`: CSSProperties = null,
-    noWrap: CSSProperties = null,
-    overline: CSSProperties = null,
-    paragraph: CSSProperties = null,
-    root: CSSProperties = null,
-    srOnly: CSSProperties = null,
-    subheading: CSSProperties = null,
-    subtitle1: CSSProperties = null,
-    subtitle2: CSSProperties = null,
-    title: CSSProperties = null
-  ): PartialStyleRulesTypograp = {
+  def apply(): PartialStyleRulesTypograp = {
     val __obj = js.Dynamic.literal()
-    if (alignCenter != null) __obj.updateDynamic("alignCenter")(alignCenter.asInstanceOf[js.Any])
-    if (alignJustify != null) __obj.updateDynamic("alignJustify")(alignJustify.asInstanceOf[js.Any])
-    if (alignLeft != null) __obj.updateDynamic("alignLeft")(alignLeft.asInstanceOf[js.Any])
-    if (alignRight != null) __obj.updateDynamic("alignRight")(alignRight.asInstanceOf[js.Any])
-    if (body1 != null) __obj.updateDynamic("body1")(body1.asInstanceOf[js.Any])
-    if (body2 != null) __obj.updateDynamic("body2")(body2.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (colorError != null) __obj.updateDynamic("colorError")(colorError.asInstanceOf[js.Any])
-    if (colorInherit != null) __obj.updateDynamic("colorInherit")(colorInherit.asInstanceOf[js.Any])
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
-    if (colorTextSecondary != null) __obj.updateDynamic("colorTextSecondary")(colorTextSecondary.asInstanceOf[js.Any])
-    if (display1 != null) __obj.updateDynamic("display1")(display1.asInstanceOf[js.Any])
-    if (display2 != null) __obj.updateDynamic("display2")(display2.asInstanceOf[js.Any])
-    if (display3 != null) __obj.updateDynamic("display3")(display3.asInstanceOf[js.Any])
-    if (display4 != null) __obj.updateDynamic("display4")(display4.asInstanceOf[js.Any])
-    if (gutterBottom != null) __obj.updateDynamic("gutterBottom")(gutterBottom.asInstanceOf[js.Any])
-    if (h1 != null) __obj.updateDynamic("h1")(h1.asInstanceOf[js.Any])
-    if (h2 != null) __obj.updateDynamic("h2")(h2.asInstanceOf[js.Any])
-    if (h3 != null) __obj.updateDynamic("h3")(h3.asInstanceOf[js.Any])
-    if (h4 != null) __obj.updateDynamic("h4")(h4.asInstanceOf[js.Any])
-    if (h5 != null) __obj.updateDynamic("h5")(h5.asInstanceOf[js.Any])
-    if (h6 != null) __obj.updateDynamic("h6")(h6.asInstanceOf[js.Any])
-    if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
-    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (noWrap != null) __obj.updateDynamic("noWrap")(noWrap.asInstanceOf[js.Any])
-    if (overline != null) __obj.updateDynamic("overline")(overline.asInstanceOf[js.Any])
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (srOnly != null) __obj.updateDynamic("srOnly")(srOnly.asInstanceOf[js.Any])
-    if (subheading != null) __obj.updateDynamic("subheading")(subheading.asInstanceOf[js.Any])
-    if (subtitle1 != null) __obj.updateDynamic("subtitle1")(subtitle1.asInstanceOf[js.Any])
-    if (subtitle2 != null) __obj.updateDynamic("subtitle2")(subtitle2.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesTypograp]
   }
+  @scala.inline
+  implicit class PartialStyleRulesTypograpOps[Self <: PartialStyleRulesTypograp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignCenter(value: CSSProperties): Self = this.set("alignCenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignCenter: Self = this.set("alignCenter", js.undefined)
+    @scala.inline
+    def setAlignJustify(value: CSSProperties): Self = this.set("alignJustify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignJustify: Self = this.set("alignJustify", js.undefined)
+    @scala.inline
+    def setAlignLeft(value: CSSProperties): Self = this.set("alignLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignLeft: Self = this.set("alignLeft", js.undefined)
+    @scala.inline
+    def setAlignRight(value: CSSProperties): Self = this.set("alignRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignRight: Self = this.set("alignRight", js.undefined)
+    @scala.inline
+    def setBody1(value: CSSProperties): Self = this.set("body1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody1: Self = this.set("body1", js.undefined)
+    @scala.inline
+    def setBody2(value: CSSProperties): Self = this.set("body2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody2: Self = this.set("body2", js.undefined)
+    @scala.inline
+    def setButton(value: CSSProperties): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("button", js.undefined)
+    @scala.inline
+    def setCaption(value: CSSProperties): Self = this.set("caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaption: Self = this.set("caption", js.undefined)
+    @scala.inline
+    def setColorError(value: CSSProperties): Self = this.set("colorError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorError: Self = this.set("colorError", js.undefined)
+    @scala.inline
+    def setColorInherit(value: CSSProperties): Self = this.set("colorInherit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorInherit: Self = this.set("colorInherit", js.undefined)
+    @scala.inline
+    def setColorSecondary(value: CSSProperties): Self = this.set("colorSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSecondary: Self = this.set("colorSecondary", js.undefined)
+    @scala.inline
+    def setColorTextSecondary(value: CSSProperties): Self = this.set("colorTextSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorTextSecondary: Self = this.set("colorTextSecondary", js.undefined)
+    @scala.inline
+    def setDisplay1(value: CSSProperties): Self = this.set("display1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay1: Self = this.set("display1", js.undefined)
+    @scala.inline
+    def setDisplay2(value: CSSProperties): Self = this.set("display2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay2: Self = this.set("display2", js.undefined)
+    @scala.inline
+    def setDisplay3(value: CSSProperties): Self = this.set("display3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay3: Self = this.set("display3", js.undefined)
+    @scala.inline
+    def setDisplay4(value: CSSProperties): Self = this.set("display4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay4: Self = this.set("display4", js.undefined)
+    @scala.inline
+    def setGutterBottom(value: CSSProperties): Self = this.set("gutterBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGutterBottom: Self = this.set("gutterBottom", js.undefined)
+    @scala.inline
+    def setH1(value: CSSProperties): Self = this.set("h1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH1: Self = this.set("h1", js.undefined)
+    @scala.inline
+    def setH2(value: CSSProperties): Self = this.set("h2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH2: Self = this.set("h2", js.undefined)
+    @scala.inline
+    def setH3(value: CSSProperties): Self = this.set("h3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH3: Self = this.set("h3", js.undefined)
+    @scala.inline
+    def setH4(value: CSSProperties): Self = this.set("h4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH4: Self = this.set("h4", js.undefined)
+    @scala.inline
+    def setH5(value: CSSProperties): Self = this.set("h5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH5: Self = this.set("h5", js.undefined)
+    @scala.inline
+    def setH6(value: CSSProperties): Self = this.set("h6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH6: Self = this.set("h6", js.undefined)
+    @scala.inline
+    def setHeadline(value: CSSProperties): Self = this.set("headline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadline: Self = this.set("headline", js.undefined)
+    @scala.inline
+    def setInline(value: CSSProperties): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setNoWrap(value: CSSProperties): Self = this.set("noWrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoWrap: Self = this.set("noWrap", js.undefined)
+    @scala.inline
+    def setOverline(value: CSSProperties): Self = this.set("overline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverline: Self = this.set("overline", js.undefined)
+    @scala.inline
+    def setParagraph(value: CSSProperties): Self = this.set("paragraph", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParagraph: Self = this.set("paragraph", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSrOnly(value: CSSProperties): Self = this.set("srOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrOnly: Self = this.set("srOnly", js.undefined)
+    @scala.inline
+    def setSubheading(value: CSSProperties): Self = this.set("subheading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubheading: Self = this.set("subheading", js.undefined)
+    @scala.inline
+    def setSubtitle1(value: CSSProperties): Self = this.set("subtitle1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle1: Self = this.set("subtitle1", js.undefined)
+    @scala.inline
+    def setSubtitle2(value: CSSProperties): Self = this.set("subtitle2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle2: Self = this.set("subtitle2", js.undefined)
+    @scala.inline
+    def setTitle(value: CSSProperties): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

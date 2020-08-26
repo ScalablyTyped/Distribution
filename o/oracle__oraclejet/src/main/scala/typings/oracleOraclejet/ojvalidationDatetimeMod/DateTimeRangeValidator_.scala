@@ -12,7 +12,5 @@ class DateTimeRangeValidator_ () extends Validator[String] {
   def this(options: ValidatorOptions) = this()
   @JSName("getHint")
   def getHint_MDateTimeRangeValidator_(): String | Null = js.native
-  /* CompleteClass */
-  override def validate(value: String): Unit = js.native
 }
 

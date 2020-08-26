@@ -11,108 +11,185 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined react-svg-pan-zoom.react-svg-pan-zoom.UncontrolledRequiredProps & std.Partial<react-svg-pan-zoom.react-svg-pan-zoom.OptionalProps> & std.Partial<react-svg-pan-zoom.react-svg-pan-zoom.UncontrolledExtraOptionalProps> */
+@js.native
 trait UncontrolledProps extends js.Object {
-  var SVGBackground: js.UndefOr[String] = js.undefined
-  var background: js.UndefOr[String] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var customMiniature: js.UndefOr[ReactElement | ComponentType[js.Object]] = js.undefined
-  var customToolbar: js.UndefOr[(Component[_, js.Object, _]) | StatelessComponent[_]] = js.undefined
-  var detectAutoPan: js.UndefOr[Boolean] = js.undefined
-  var detectPinchGesture: js.UndefOr[Boolean] = js.undefined
-  var detectWheel: js.UndefOr[Boolean] = js.undefined
-  var disableDoubleClickZoomWithToolAuto: js.UndefOr[Boolean] = js.undefined
+  var SVGBackground: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.native
+  var customMiniature: js.UndefOr[ReactElement | ComponentType[js.Object]] = js.native
+  var customToolbar: js.UndefOr[(Component[_, js.Object, _]) | StatelessComponent[_]] = js.native
+  var detectAutoPan: js.UndefOr[Boolean] = js.native
+  var detectPinchGesture: js.UndefOr[Boolean] = js.native
+  var detectWheel: js.UndefOr[Boolean] = js.native
+  var disableDoubleClickZoomWithToolAuto: js.UndefOr[Boolean] = js.native
   // height of the viewer displayed on screen
-  var height: Double
-  var miniatureProps: js.UndefOr[Background] = js.undefined
-  var modifierKeys: js.UndefOr[js.Array[String]] = js.undefined
-  var onChangeTool: js.UndefOr[js.Function1[/* tool */ Tool, Unit]] = js.undefined
-  var onChangeValue: js.UndefOr[js.Function1[/* value */ Value, Unit]] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.undefined
-  var onDoubleClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.undefined
-  var onMouseDown: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.undefined
-  var onMouseMove: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.undefined
-  var onMouseUp: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.undefined
-  var onPan: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.undefined
-  var onZoom: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.undefined
-  var preventPanOutside: js.UndefOr[Boolean] = js.undefined
-  var scaleFactor: js.UndefOr[Double] = js.undefined
-  var scaleFactorMax: js.UndefOr[Double] = js.undefined
-  var scaleFactorMin: js.UndefOr[Double] = js.undefined
-  var scaleFactorOnWheel: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
-  var tool: js.UndefOr[Tool] = js.undefined
-  var toolbarProps: js.UndefOr[Position] = js.undefined
-  var value: js.UndefOr[Value] = js.undefined
+  var height: Double = js.native
+  var miniatureProps: js.UndefOr[Background] = js.native
+  var modifierKeys: js.UndefOr[js.Array[String]] = js.native
+  var onChangeTool: js.UndefOr[js.Function1[/* tool */ Tool, Unit]] = js.native
+  var onChangeValue: js.UndefOr[js.Function1[/* value */ Value, Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+  var onDoubleClick: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+  var onMouseDown: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+  var onMouseMove: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+  var onMouseUp: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+  var onPan: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+  var onZoom: js.UndefOr[js.Function1[/* event */ ViewerMouseEvent[_], Unit]] = js.native
+  var preventPanOutside: js.UndefOr[Boolean] = js.native
+  var scaleFactor: js.UndefOr[Double] = js.native
+  var scaleFactorMax: js.UndefOr[Double] = js.native
+  var scaleFactorMin: js.UndefOr[Double] = js.native
+  var scaleFactorOnWheel: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[js.Object] = js.native
+  var tool: js.UndefOr[Tool] = js.native
+  var toolbarProps: js.UndefOr[Position] = js.native
+  var value: js.UndefOr[Value | Null] = js.native
   // width of the viewer displayed on screen
-  var width: Double
+  var width: Double = js.native
 }
 
 object UncontrolledProps {
   @scala.inline
-  def apply(
-    height: Double,
-    width: Double,
-    SVGBackground: String = null,
-    background: String = null,
-    className: String = null,
-    customMiniature: ReactElement | ComponentType[js.Object] = null,
-    customToolbar: (Component[_, js.Object, _]) | StatelessComponent[_] = null,
-    detectAutoPan: js.UndefOr[Boolean] = js.undefined,
-    detectPinchGesture: js.UndefOr[Boolean] = js.undefined,
-    detectWheel: js.UndefOr[Boolean] = js.undefined,
-    disableDoubleClickZoomWithToolAuto: js.UndefOr[Boolean] = js.undefined,
-    miniatureProps: Background = null,
-    modifierKeys: js.Array[String] = null,
-    onChangeTool: /* tool */ Tool => Unit = null,
-    onChangeValue: /* value */ Value => Unit = null,
-    onClick: /* event */ ViewerMouseEvent[_] => Unit = null,
-    onDoubleClick: /* event */ ViewerMouseEvent[_] => Unit = null,
-    onMouseDown: /* event */ ViewerMouseEvent[_] => Unit = null,
-    onMouseMove: /* event */ ViewerMouseEvent[_] => Unit = null,
-    onMouseUp: /* event */ ViewerMouseEvent[_] => Unit = null,
-    onPan: /* event */ ViewerMouseEvent[_] => Unit = null,
-    onZoom: /* event */ ViewerMouseEvent[_] => Unit = null,
-    preventPanOutside: js.UndefOr[Boolean] = js.undefined,
-    scaleFactor: js.UndefOr[Double] = js.undefined,
-    scaleFactorMax: js.UndefOr[Double] = js.undefined,
-    scaleFactorMin: js.UndefOr[Double] = js.undefined,
-    scaleFactorOnWheel: js.UndefOr[Double] = js.undefined,
-    style: js.Object = null,
-    tool: Tool = null,
-    toolbarProps: Position = null,
-    value: Value = null
-  ): UncontrolledProps = {
+  def apply(height: Double, width: Double): UncontrolledProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (SVGBackground != null) __obj.updateDynamic("SVGBackground")(SVGBackground.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customMiniature != null) __obj.updateDynamic("customMiniature")(customMiniature.asInstanceOf[js.Any])
-    if (customToolbar != null) __obj.updateDynamic("customToolbar")(customToolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectAutoPan)) __obj.updateDynamic("detectAutoPan")(detectAutoPan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectPinchGesture)) __obj.updateDynamic("detectPinchGesture")(detectPinchGesture.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectWheel)) __obj.updateDynamic("detectWheel")(detectWheel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDoubleClickZoomWithToolAuto)) __obj.updateDynamic("disableDoubleClickZoomWithToolAuto")(disableDoubleClickZoomWithToolAuto.get.asInstanceOf[js.Any])
-    if (miniatureProps != null) __obj.updateDynamic("miniatureProps")(miniatureProps.asInstanceOf[js.Any])
-    if (modifierKeys != null) __obj.updateDynamic("modifierKeys")(modifierKeys.asInstanceOf[js.Any])
-    if (onChangeTool != null) __obj.updateDynamic("onChangeTool")(js.Any.fromFunction1(onChangeTool))
-    if (onChangeValue != null) __obj.updateDynamic("onChangeValue")(js.Any.fromFunction1(onChangeValue))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onPan != null) __obj.updateDynamic("onPan")(js.Any.fromFunction1(onPan))
-    if (onZoom != null) __obj.updateDynamic("onZoom")(js.Any.fromFunction1(onZoom))
-    if (!js.isUndefined(preventPanOutside)) __obj.updateDynamic("preventPanOutside")(preventPanOutside.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleFactor)) __obj.updateDynamic("scaleFactor")(scaleFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleFactorMax)) __obj.updateDynamic("scaleFactorMax")(scaleFactorMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleFactorMin)) __obj.updateDynamic("scaleFactorMin")(scaleFactorMin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleFactorOnWheel)) __obj.updateDynamic("scaleFactorOnWheel")(scaleFactorOnWheel.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tool != null) __obj.updateDynamic("tool")(tool.asInstanceOf[js.Any])
-    if (toolbarProps != null) __obj.updateDynamic("toolbarProps")(toolbarProps.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UncontrolledProps]
   }
+  @scala.inline
+  implicit class UncontrolledPropsOps[Self <: UncontrolledProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSVGBackground(value: String): Self = this.set("SVGBackground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSVGBackground: Self = this.set("SVGBackground", js.undefined)
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCustomMiniature(value: ReactElement | ComponentType[js.Object]): Self = this.set("customMiniature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMiniature: Self = this.set("customMiniature", js.undefined)
+    @scala.inline
+    def setCustomToolbar(value: (Component[_, js.Object, _]) | StatelessComponent[_]): Self = this.set("customToolbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomToolbar: Self = this.set("customToolbar", js.undefined)
+    @scala.inline
+    def setDetectAutoPan(value: Boolean): Self = this.set("detectAutoPan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectAutoPan: Self = this.set("detectAutoPan", js.undefined)
+    @scala.inline
+    def setDetectPinchGesture(value: Boolean): Self = this.set("detectPinchGesture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectPinchGesture: Self = this.set("detectPinchGesture", js.undefined)
+    @scala.inline
+    def setDetectWheel(value: Boolean): Self = this.set("detectWheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectWheel: Self = this.set("detectWheel", js.undefined)
+    @scala.inline
+    def setDisableDoubleClickZoomWithToolAuto(value: Boolean): Self = this.set("disableDoubleClickZoomWithToolAuto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableDoubleClickZoomWithToolAuto: Self = this.set("disableDoubleClickZoomWithToolAuto", js.undefined)
+    @scala.inline
+    def setMiniatureProps(value: Background): Self = this.set("miniatureProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiniatureProps: Self = this.set("miniatureProps", js.undefined)
+    @scala.inline
+    def setModifierKeysVarargs(value: String*): Self = this.set("modifierKeys", js.Array(value :_*))
+    @scala.inline
+    def setModifierKeys(value: js.Array[String]): Self = this.set("modifierKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifierKeys: Self = this.set("modifierKeys", js.undefined)
+    @scala.inline
+    def setOnChangeTool(value: /* tool */ Tool => Unit): Self = this.set("onChangeTool", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChangeTool: Self = this.set("onChangeTool", js.undefined)
+    @scala.inline
+    def setOnChangeValue(value: /* value */ Value => Unit): Self = this.set("onChangeValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChangeValue: Self = this.set("onChangeValue", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* event */ ViewerMouseEvent[_] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnDoubleClick(value: /* event */ ViewerMouseEvent[_] => Unit): Self = this.set("onDoubleClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDoubleClick: Self = this.set("onDoubleClick", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: /* event */ ViewerMouseEvent[_] => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: /* event */ ViewerMouseEvent[_] => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: /* event */ ViewerMouseEvent[_] => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setOnPan(value: /* event */ ViewerMouseEvent[_] => Unit): Self = this.set("onPan", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPan: Self = this.set("onPan", js.undefined)
+    @scala.inline
+    def setOnZoom(value: /* event */ ViewerMouseEvent[_] => Unit): Self = this.set("onZoom", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnZoom: Self = this.set("onZoom", js.undefined)
+    @scala.inline
+    def setPreventPanOutside(value: Boolean): Self = this.set("preventPanOutside", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreventPanOutside: Self = this.set("preventPanOutside", js.undefined)
+    @scala.inline
+    def setScaleFactor(value: Double): Self = this.set("scaleFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleFactor: Self = this.set("scaleFactor", js.undefined)
+    @scala.inline
+    def setScaleFactorMax(value: Double): Self = this.set("scaleFactorMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleFactorMax: Self = this.set("scaleFactorMax", js.undefined)
+    @scala.inline
+    def setScaleFactorMin(value: Double): Self = this.set("scaleFactorMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleFactorMin: Self = this.set("scaleFactorMin", js.undefined)
+    @scala.inline
+    def setScaleFactorOnWheel(value: Double): Self = this.set("scaleFactorOnWheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleFactorOnWheel: Self = this.set("scaleFactorOnWheel", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTool(value: Tool): Self = this.set("tool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTool: Self = this.set("tool", js.undefined)
+    @scala.inline
+    def setToolbarProps(value: Position): Self = this.set("toolbarProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarProps: Self = this.set("toolbarProps", js.undefined)
+    @scala.inline
+    def setValue(value: Value): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValueNull: Self = this.set("value", null)
+  }
+  
 }
 

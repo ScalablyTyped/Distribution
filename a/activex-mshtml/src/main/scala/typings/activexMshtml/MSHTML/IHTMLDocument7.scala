@@ -62,6 +62,7 @@ trait IHTMLDocument7 extends js.Object {
   var xmlVersion: String = js.native
   def adoptNode(pNodeSource: IHTMLDOMNode): IHTMLDOMNode3 = js.native
   def all(): js.Any = js.native
+  def all(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def all(name: js.Any): js.Any = js.native
   def all(name: js.Any, index: js.Any): js.Any = js.native
   def createAttribute(bstrAttrName: String): IHTMLDOMAttribute = js.native

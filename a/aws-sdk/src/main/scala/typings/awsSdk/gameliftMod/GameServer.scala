@@ -58,34 +58,70 @@ trait GameServer extends js.Object {
 
 object GameServer {
   @scala.inline
-  def apply(
-    ClaimStatus: GameServerClaimStatus = null,
-    ConnectionInfo: GameServerConnectionInfo = null,
-    CustomSortKey: GameServerSortKey = null,
-    GameServerData: GameServerData = null,
-    GameServerGroupArn: GameServerGroupArn = null,
-    GameServerGroupName: GameServerGroupName = null,
-    GameServerId: GameServerId = null,
-    InstanceId: GameServerInstanceId = null,
-    LastClaimTime: Timestamp = null,
-    LastHealthCheckTime: Timestamp = null,
-    RegistrationTime: Timestamp = null,
-    UtilizationStatus: GameServerUtilizationStatus = null
-  ): GameServer = {
+  def apply(): GameServer = {
     val __obj = js.Dynamic.literal()
-    if (ClaimStatus != null) __obj.updateDynamic("ClaimStatus")(ClaimStatus.asInstanceOf[js.Any])
-    if (ConnectionInfo != null) __obj.updateDynamic("ConnectionInfo")(ConnectionInfo.asInstanceOf[js.Any])
-    if (CustomSortKey != null) __obj.updateDynamic("CustomSortKey")(CustomSortKey.asInstanceOf[js.Any])
-    if (GameServerData != null) __obj.updateDynamic("GameServerData")(GameServerData.asInstanceOf[js.Any])
-    if (GameServerGroupArn != null) __obj.updateDynamic("GameServerGroupArn")(GameServerGroupArn.asInstanceOf[js.Any])
-    if (GameServerGroupName != null) __obj.updateDynamic("GameServerGroupName")(GameServerGroupName.asInstanceOf[js.Any])
-    if (GameServerId != null) __obj.updateDynamic("GameServerId")(GameServerId.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (LastClaimTime != null) __obj.updateDynamic("LastClaimTime")(LastClaimTime.asInstanceOf[js.Any])
-    if (LastHealthCheckTime != null) __obj.updateDynamic("LastHealthCheckTime")(LastHealthCheckTime.asInstanceOf[js.Any])
-    if (RegistrationTime != null) __obj.updateDynamic("RegistrationTime")(RegistrationTime.asInstanceOf[js.Any])
-    if (UtilizationStatus != null) __obj.updateDynamic("UtilizationStatus")(UtilizationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameServer]
   }
+  @scala.inline
+  implicit class GameServerOps[Self <: GameServer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClaimStatus(value: GameServerClaimStatus): Self = this.set("ClaimStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaimStatus: Self = this.set("ClaimStatus", js.undefined)
+    @scala.inline
+    def setConnectionInfo(value: GameServerConnectionInfo): Self = this.set("ConnectionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionInfo: Self = this.set("ConnectionInfo", js.undefined)
+    @scala.inline
+    def setCustomSortKey(value: GameServerSortKey): Self = this.set("CustomSortKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSortKey: Self = this.set("CustomSortKey", js.undefined)
+    @scala.inline
+    def setGameServerData(value: GameServerData): Self = this.set("GameServerData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerData: Self = this.set("GameServerData", js.undefined)
+    @scala.inline
+    def setGameServerGroupArn(value: GameServerGroupArn): Self = this.set("GameServerGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerGroupArn: Self = this.set("GameServerGroupArn", js.undefined)
+    @scala.inline
+    def setGameServerGroupName(value: GameServerGroupName): Self = this.set("GameServerGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerGroupName: Self = this.set("GameServerGroupName", js.undefined)
+    @scala.inline
+    def setGameServerId(value: GameServerId): Self = this.set("GameServerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerId: Self = this.set("GameServerId", js.undefined)
+    @scala.inline
+    def setInstanceId(value: GameServerInstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setLastClaimTime(value: Timestamp): Self = this.set("LastClaimTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastClaimTime: Self = this.set("LastClaimTime", js.undefined)
+    @scala.inline
+    def setLastHealthCheckTime(value: Timestamp): Self = this.set("LastHealthCheckTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastHealthCheckTime: Self = this.set("LastHealthCheckTime", js.undefined)
+    @scala.inline
+    def setRegistrationTime(value: Timestamp): Self = this.set("RegistrationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrationTime: Self = this.set("RegistrationTime", js.undefined)
+    @scala.inline
+    def setUtilizationStatus(value: GameServerUtilizationStatus): Self = this.set("UtilizationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtilizationStatus: Self = this.set("UtilizationStatus", js.undefined)
+  }
+  
 }
 

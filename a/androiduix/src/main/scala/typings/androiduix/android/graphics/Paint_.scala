@@ -10,10 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.graphics.Paint")
 @js.native
-class Paint_ () extends js.Object {
-  def this(flag: Double) = this()
+trait Paint_ extends js.Object {
   var align: js.Any = js.native
   var drawableState: js.Array[Double] = js.native
   var hasShadow: Boolean = js.native
@@ -87,6 +85,7 @@ class Paint_ () extends js.Object {
   def isAntiAlias(): Boolean = js.native
   def isEmpty(): Boolean = js.native
   def measureText(text: String): Double = js.native
+  def measureText(text: String, index: js.UndefOr[scala.Nothing], count: Double): Double = js.native
   def measureText(text: String, index: Double): Double = js.native
   def measureText(text: String, index: Double, count: Double): Double = js.native
   def set(src: Paint): Unit = js.native

@@ -10,9 +10,9 @@ Oracle JavaScript Extension Toolkit (JET) empowers developers by providing a mod
 | ------------------ | :-------------: |
 | Full name          | @oracle/oraclejet |
 | Keywords           | oraclejet |
-| # releases         | 12 |
+| # releases         | 14 |
 | # dependents       | 1 |
-| # downloads        | 133893 |
+| # downloads        | 132804 |
 | # stars            | 0 |
 
 ## Links

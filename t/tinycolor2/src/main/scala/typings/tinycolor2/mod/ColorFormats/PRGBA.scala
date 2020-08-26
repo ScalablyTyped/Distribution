@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.tinycolor2.mod._ColorInput because Already inherited
-- typings.tinycolor2.mod._ColorInputWithoutInstance because Already inherited */ trait PRGBA
+- typings.tinycolor2.mod._ColorInputWithoutInstance because Already inherited */ @js.native
+trait PRGBA
   extends PRGB
      with Alpha
 

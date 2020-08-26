@@ -22,16 +22,38 @@ trait GetResourcesResponse extends js.Object {
 
 object GetResourcesResponse {
   @scala.inline
-  def apply(
-    Documents: DocumentMetadataList = null,
-    Folders: FolderMetadataList = null,
-    Marker: PageMarkerType = null
-  ): GetResourcesResponse = {
+  def apply(): GetResourcesResponse = {
     val __obj = js.Dynamic.literal()
-    if (Documents != null) __obj.updateDynamic("Documents")(Documents.asInstanceOf[js.Any])
-    if (Folders != null) __obj.updateDynamic("Folders")(Folders.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcesResponse]
   }
+  @scala.inline
+  implicit class GetResourcesResponseOps[Self <: GetResourcesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentsVarargs(value: DocumentMetadata*): Self = this.set("Documents", js.Array(value :_*))
+    @scala.inline
+    def setDocuments(value: DocumentMetadataList): Self = this.set("Documents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocuments: Self = this.set("Documents", js.undefined)
+    @scala.inline
+    def setFoldersVarargs(value: FolderMetadata*): Self = this.set("Folders", js.Array(value :_*))
+    @scala.inline
+    def setFolders(value: FolderMetadataList): Self = this.set("Folders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolders: Self = this.set("Folders", js.undefined)
+    @scala.inline
+    def setMarker(value: PageMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

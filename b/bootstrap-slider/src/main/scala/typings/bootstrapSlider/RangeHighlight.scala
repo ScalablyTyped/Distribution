@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RangeHighlight extends js.Object {
-  var `class`: js.UndefOr[String] = js.undefined
-  var end: js.UndefOr[Double] = js.undefined
-  var start: js.UndefOr[Double] = js.undefined
+  var `class`: js.UndefOr[String] = js.native
+  var end: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.native
 }
 
 object RangeHighlight {
   @scala.inline
-  def apply(
-    `class`: String = null,
-    end: js.UndefOr[Double] = js.undefined,
-    start: js.UndefOr[Double] = js.undefined
-  ): RangeHighlight = {
+  def apply(): RangeHighlight = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeHighlight]
   }
+  @scala.inline
+  implicit class RangeHighlightOps[Self <: RangeHighlight] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClass: Self = this.set("class", js.undefined)
+    @scala.inline
+    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

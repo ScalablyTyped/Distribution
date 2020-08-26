@@ -11,8 +11,8 @@ Straightforward project scaffolding
 | Full name          | degit |
 | Keywords           | scaffolding, template, git |
 | # releases         | 12 |
-| # dependents       | 34 |
-| # downloads        | 109557 |
+| # dependents       | 38 |
+| # downloads        | 116085 |
 | # stars            | 5 |
 
 ## Links

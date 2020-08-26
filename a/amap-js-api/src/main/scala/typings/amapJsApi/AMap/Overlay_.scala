@@ -28,11 +28,11 @@ trait Overlay_[ExtraData] extends EventEmitter {
   def setHeight(): Unit = js.native
   def setHeight(height: String): Unit = js.native
   def setHeight(height: Double): Unit = js.native
-  def setMap(): Unit = js.native
   /**
     * 设置所属地图
     * @param map 地图
     */
+  def setMap(): Unit = js.native
   def setMap(map: Map): Unit = js.native
   /**
     * 显示覆盖物

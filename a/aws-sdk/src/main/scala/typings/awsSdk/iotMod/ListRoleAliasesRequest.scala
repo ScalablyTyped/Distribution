@@ -22,16 +22,34 @@ trait ListRoleAliasesRequest extends js.Object {
 
 object ListRoleAliasesRequest {
   @scala.inline
-  def apply(
-    ascendingOrder: js.UndefOr[AscendingOrder] = js.undefined,
-    marker: Marker = null,
-    pageSize: js.UndefOr[PageSize] = js.undefined
-  ): ListRoleAliasesRequest = {
+  def apply(): ListRoleAliasesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascendingOrder)) __obj.updateDynamic("ascendingOrder")(ascendingOrder.get.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRoleAliasesRequest]
   }
+  @scala.inline
+  implicit class ListRoleAliasesRequestOps[Self <: ListRoleAliasesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAscendingOrder(value: AscendingOrder): Self = this.set("ascendingOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAscendingOrder: Self = this.set("ascendingOrder", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("marker", js.undefined)
+    @scala.inline
+    def setPageSize(value: PageSize): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+  }
+  
 }
 

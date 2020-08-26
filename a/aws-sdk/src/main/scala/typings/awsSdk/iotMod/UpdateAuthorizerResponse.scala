@@ -18,11 +18,30 @@ trait UpdateAuthorizerResponse extends js.Object {
 
 object UpdateAuthorizerResponse {
   @scala.inline
-  def apply(authorizerArn: AuthorizerArn = null, authorizerName: AuthorizerName = null): UpdateAuthorizerResponse = {
+  def apply(): UpdateAuthorizerResponse = {
     val __obj = js.Dynamic.literal()
-    if (authorizerArn != null) __obj.updateDynamic("authorizerArn")(authorizerArn.asInstanceOf[js.Any])
-    if (authorizerName != null) __obj.updateDynamic("authorizerName")(authorizerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAuthorizerResponse]
   }
+  @scala.inline
+  implicit class UpdateAuthorizerResponseOps[Self <: UpdateAuthorizerResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizerArn(value: AuthorizerArn): Self = this.set("authorizerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizerArn: Self = this.set("authorizerArn", js.undefined)
+    @scala.inline
+    def setAuthorizerName(value: AuthorizerName): Self = this.set("authorizerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizerName: Self = this.set("authorizerName", js.undefined)
+  }
+  
 }
 

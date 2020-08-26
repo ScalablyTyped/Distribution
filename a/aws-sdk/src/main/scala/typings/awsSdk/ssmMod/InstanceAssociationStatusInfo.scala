@@ -58,34 +58,70 @@ trait InstanceAssociationStatusInfo extends js.Object {
 
 object InstanceAssociationStatusInfo {
   @scala.inline
-  def apply(
-    AssociationId: AssociationId = null,
-    AssociationName: AssociationName = null,
-    AssociationVersion: AssociationVersion = null,
-    DetailedStatus: StatusName = null,
-    DocumentVersion: DocumentVersion = null,
-    ErrorCode: AgentErrorCode = null,
-    ExecutionDate: DateTime = null,
-    ExecutionSummary: InstanceAssociationExecutionSummary = null,
-    InstanceId: InstanceId = null,
-    Name: DocumentARN = null,
-    OutputUrl: InstanceAssociationOutputUrl = null,
-    Status: StatusName = null
-  ): InstanceAssociationStatusInfo = {
+  def apply(): InstanceAssociationStatusInfo = {
     val __obj = js.Dynamic.literal()
-    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
-    if (AssociationName != null) __obj.updateDynamic("AssociationName")(AssociationName.asInstanceOf[js.Any])
-    if (AssociationVersion != null) __obj.updateDynamic("AssociationVersion")(AssociationVersion.asInstanceOf[js.Any])
-    if (DetailedStatus != null) __obj.updateDynamic("DetailedStatus")(DetailedStatus.asInstanceOf[js.Any])
-    if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
-    if (ExecutionDate != null) __obj.updateDynamic("ExecutionDate")(ExecutionDate.asInstanceOf[js.Any])
-    if (ExecutionSummary != null) __obj.updateDynamic("ExecutionSummary")(ExecutionSummary.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OutputUrl != null) __obj.updateDynamic("OutputUrl")(OutputUrl.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceAssociationStatusInfo]
   }
+  @scala.inline
+  implicit class InstanceAssociationStatusInfoOps[Self <: InstanceAssociationStatusInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationId(value: AssociationId): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    @scala.inline
+    def setAssociationName(value: AssociationName): Self = this.set("AssociationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationName: Self = this.set("AssociationName", js.undefined)
+    @scala.inline
+    def setAssociationVersion(value: AssociationVersion): Self = this.set("AssociationVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationVersion: Self = this.set("AssociationVersion", js.undefined)
+    @scala.inline
+    def setDetailedStatus(value: StatusName): Self = this.set("DetailedStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailedStatus: Self = this.set("DetailedStatus", js.undefined)
+    @scala.inline
+    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    @scala.inline
+    def setErrorCode(value: AgentErrorCode): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    @scala.inline
+    def setExecutionDate(value: DateTime): Self = this.set("ExecutionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionDate: Self = this.set("ExecutionDate", js.undefined)
+    @scala.inline
+    def setExecutionSummary(value: InstanceAssociationExecutionSummary): Self = this.set("ExecutionSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionSummary: Self = this.set("ExecutionSummary", js.undefined)
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setName(value: DocumentARN): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOutputUrl(value: InstanceAssociationOutputUrl): Self = this.set("OutputUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputUrl: Self = this.set("OutputUrl", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusName): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

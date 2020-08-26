@@ -7,5 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/public_api", "ConstantPool")
 @js.native
 class ConstantPool ()
-  extends typings.angularCompiler.constantPoolMod.ConstantPool
+  extends typings.angularCompiler.srcCompilerMod.ConstantPool {
+  def this(isClosureCompilerEnabled: Boolean) = this()
+}
 

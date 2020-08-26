@@ -4,102 +4,173 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Rules extends js.Object {
-  var `body-leading-blank`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.undefined
-  var `body-max-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `body-max-line-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `body-min-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `footer-leading-blank`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.undefined
-  var `footer-max-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `footer-max-line-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `footer-min-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `header-case`: js.UndefOr[Rule[Case]] = js.undefined
-  var `header-full-stop`: js.UndefOr[Rule[String]] = js.undefined
-  var `header-max-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `header-min-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `references-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.undefined
-  var `scope-case`: js.UndefOr[Rule[Case]] = js.undefined
-  var `scope-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.undefined
-  var `scope-enum`: js.UndefOr[Rule[js.Array[String]]] = js.undefined
-  var `scope-max-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `scope-min-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `signed-off-by`: js.UndefOr[Rule[String]] = js.undefined
-  var `subject-case`: js.UndefOr[Rule[Case | js.Array[Case]]] = js.undefined
-  var `subject-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.undefined
-  var `subject-full-stop`: js.UndefOr[Rule[String]] = js.undefined
-  var `subject-max-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `subject-min-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `type-case`: js.UndefOr[Rule[Case]] = js.undefined
-  var `type-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.undefined
-  var `type-enum`: js.UndefOr[Rule[js.Array[String]]] = js.undefined
-  var `type-max-length`: js.UndefOr[Rule[Double]] = js.undefined
-  var `type-min-length`: js.UndefOr[Rule[Double]] = js.undefined
+  var `body-leading-blank`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+  var `body-max-length`: js.UndefOr[Rule[Double]] = js.native
+  var `body-max-line-length`: js.UndefOr[Rule[Double]] = js.native
+  var `body-min-length`: js.UndefOr[Rule[Double]] = js.native
+  var `footer-leading-blank`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+  var `footer-max-length`: js.UndefOr[Rule[Double]] = js.native
+  var `footer-max-line-length`: js.UndefOr[Rule[Double]] = js.native
+  var `footer-min-length`: js.UndefOr[Rule[Double]] = js.native
+  var `header-case`: js.UndefOr[Rule[Case]] = js.native
+  var `header-full-stop`: js.UndefOr[Rule[String]] = js.native
+  var `header-max-length`: js.UndefOr[Rule[Double]] = js.native
+  var `header-min-length`: js.UndefOr[Rule[Double]] = js.native
+  var `references-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+  var `scope-case`: js.UndefOr[Rule[Case]] = js.native
+  var `scope-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+  var `scope-enum`: js.UndefOr[Rule[js.Array[String]]] = js.native
+  var `scope-max-length`: js.UndefOr[Rule[Double]] = js.native
+  var `scope-min-length`: js.UndefOr[Rule[Double]] = js.native
+  var `signed-off-by`: js.UndefOr[Rule[String]] = js.native
+  var `subject-case`: js.UndefOr[Rule[Case | js.Array[Case]]] = js.native
+  var `subject-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+  var `subject-full-stop`: js.UndefOr[Rule[String]] = js.native
+  var `subject-max-length`: js.UndefOr[Rule[Double]] = js.native
+  var `subject-min-length`: js.UndefOr[Rule[Double]] = js.native
+  var `type-case`: js.UndefOr[Rule[Case]] = js.native
+  var `type-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+  var `type-enum`: js.UndefOr[Rule[js.Array[String]]] = js.native
+  var `type-max-length`: js.UndefOr[Rule[Double]] = js.native
+  var `type-min-length`: js.UndefOr[Rule[Double]] = js.native
 }
 
 object Rules {
   @scala.inline
-  def apply(
-    `body-leading-blank`: Rule[js.UndefOr[scala.Nothing]] = null,
-    `body-max-length`: Rule[Double] = null,
-    `body-max-line-length`: Rule[Double] = null,
-    `body-min-length`: Rule[Double] = null,
-    `footer-leading-blank`: Rule[js.UndefOr[scala.Nothing]] = null,
-    `footer-max-length`: Rule[Double] = null,
-    `footer-max-line-length`: Rule[Double] = null,
-    `footer-min-length`: Rule[Double] = null,
-    `header-case`: Rule[Case] = null,
-    `header-full-stop`: Rule[String] = null,
-    `header-max-length`: Rule[Double] = null,
-    `header-min-length`: Rule[Double] = null,
-    `references-empty`: Rule[js.UndefOr[scala.Nothing]] = null,
-    `scope-case`: Rule[Case] = null,
-    `scope-empty`: Rule[js.UndefOr[scala.Nothing]] = null,
-    `scope-enum`: Rule[js.Array[String]] = null,
-    `scope-max-length`: Rule[Double] = null,
-    `scope-min-length`: Rule[Double] = null,
-    `signed-off-by`: Rule[String] = null,
-    `subject-case`: Rule[Case | js.Array[Case]] = null,
-    `subject-empty`: Rule[js.UndefOr[scala.Nothing]] = null,
-    `subject-full-stop`: Rule[String] = null,
-    `subject-max-length`: Rule[Double] = null,
-    `subject-min-length`: Rule[Double] = null,
-    `type-case`: Rule[Case] = null,
-    `type-empty`: Rule[js.UndefOr[scala.Nothing]] = null,
-    `type-enum`: Rule[js.Array[String]] = null,
-    `type-max-length`: Rule[Double] = null,
-    `type-min-length`: Rule[Double] = null
-  ): Rules = {
+  def apply(): Rules = {
     val __obj = js.Dynamic.literal()
-    if (`body-leading-blank` != null) __obj.updateDynamic("body-leading-blank")(`body-leading-blank`.asInstanceOf[js.Any])
-    if (`body-max-length` != null) __obj.updateDynamic("body-max-length")(`body-max-length`.asInstanceOf[js.Any])
-    if (`body-max-line-length` != null) __obj.updateDynamic("body-max-line-length")(`body-max-line-length`.asInstanceOf[js.Any])
-    if (`body-min-length` != null) __obj.updateDynamic("body-min-length")(`body-min-length`.asInstanceOf[js.Any])
-    if (`footer-leading-blank` != null) __obj.updateDynamic("footer-leading-blank")(`footer-leading-blank`.asInstanceOf[js.Any])
-    if (`footer-max-length` != null) __obj.updateDynamic("footer-max-length")(`footer-max-length`.asInstanceOf[js.Any])
-    if (`footer-max-line-length` != null) __obj.updateDynamic("footer-max-line-length")(`footer-max-line-length`.asInstanceOf[js.Any])
-    if (`footer-min-length` != null) __obj.updateDynamic("footer-min-length")(`footer-min-length`.asInstanceOf[js.Any])
-    if (`header-case` != null) __obj.updateDynamic("header-case")(`header-case`.asInstanceOf[js.Any])
-    if (`header-full-stop` != null) __obj.updateDynamic("header-full-stop")(`header-full-stop`.asInstanceOf[js.Any])
-    if (`header-max-length` != null) __obj.updateDynamic("header-max-length")(`header-max-length`.asInstanceOf[js.Any])
-    if (`header-min-length` != null) __obj.updateDynamic("header-min-length")(`header-min-length`.asInstanceOf[js.Any])
-    if (`references-empty` != null) __obj.updateDynamic("references-empty")(`references-empty`.asInstanceOf[js.Any])
-    if (`scope-case` != null) __obj.updateDynamic("scope-case")(`scope-case`.asInstanceOf[js.Any])
-    if (`scope-empty` != null) __obj.updateDynamic("scope-empty")(`scope-empty`.asInstanceOf[js.Any])
-    if (`scope-enum` != null) __obj.updateDynamic("scope-enum")(`scope-enum`.asInstanceOf[js.Any])
-    if (`scope-max-length` != null) __obj.updateDynamic("scope-max-length")(`scope-max-length`.asInstanceOf[js.Any])
-    if (`scope-min-length` != null) __obj.updateDynamic("scope-min-length")(`scope-min-length`.asInstanceOf[js.Any])
-    if (`signed-off-by` != null) __obj.updateDynamic("signed-off-by")(`signed-off-by`.asInstanceOf[js.Any])
-    if (`subject-case` != null) __obj.updateDynamic("subject-case")(`subject-case`.asInstanceOf[js.Any])
-    if (`subject-empty` != null) __obj.updateDynamic("subject-empty")(`subject-empty`.asInstanceOf[js.Any])
-    if (`subject-full-stop` != null) __obj.updateDynamic("subject-full-stop")(`subject-full-stop`.asInstanceOf[js.Any])
-    if (`subject-max-length` != null) __obj.updateDynamic("subject-max-length")(`subject-max-length`.asInstanceOf[js.Any])
-    if (`subject-min-length` != null) __obj.updateDynamic("subject-min-length")(`subject-min-length`.asInstanceOf[js.Any])
-    if (`type-case` != null) __obj.updateDynamic("type-case")(`type-case`.asInstanceOf[js.Any])
-    if (`type-empty` != null) __obj.updateDynamic("type-empty")(`type-empty`.asInstanceOf[js.Any])
-    if (`type-enum` != null) __obj.updateDynamic("type-enum")(`type-enum`.asInstanceOf[js.Any])
-    if (`type-max-length` != null) __obj.updateDynamic("type-max-length")(`type-max-length`.asInstanceOf[js.Any])
-    if (`type-min-length` != null) __obj.updateDynamic("type-min-length")(`type-min-length`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rules]
   }
+  @scala.inline
+  implicit class RulesOps[Self <: Rules] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setBody-leading-blank`(value: Rule[js.UndefOr[scala.Nothing]]): Self = this.set("body-leading-blank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBody-leading-blank`: Self = this.set("body-leading-blank", js.undefined)
+    @scala.inline
+    def `setBody-max-length`(value: Rule[Double]): Self = this.set("body-max-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBody-max-length`: Self = this.set("body-max-length", js.undefined)
+    @scala.inline
+    def `setBody-max-line-length`(value: Rule[Double]): Self = this.set("body-max-line-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBody-max-line-length`: Self = this.set("body-max-line-length", js.undefined)
+    @scala.inline
+    def `setBody-min-length`(value: Rule[Double]): Self = this.set("body-min-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBody-min-length`: Self = this.set("body-min-length", js.undefined)
+    @scala.inline
+    def `setFooter-leading-blank`(value: Rule[js.UndefOr[scala.Nothing]]): Self = this.set("footer-leading-blank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteFooter-leading-blank`: Self = this.set("footer-leading-blank", js.undefined)
+    @scala.inline
+    def `setFooter-max-length`(value: Rule[Double]): Self = this.set("footer-max-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteFooter-max-length`: Self = this.set("footer-max-length", js.undefined)
+    @scala.inline
+    def `setFooter-max-line-length`(value: Rule[Double]): Self = this.set("footer-max-line-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteFooter-max-line-length`: Self = this.set("footer-max-line-length", js.undefined)
+    @scala.inline
+    def `setFooter-min-length`(value: Rule[Double]): Self = this.set("footer-min-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteFooter-min-length`: Self = this.set("footer-min-length", js.undefined)
+    @scala.inline
+    def `setHeader-case`(value: Rule[Case]): Self = this.set("header-case", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteHeader-case`: Self = this.set("header-case", js.undefined)
+    @scala.inline
+    def `setHeader-full-stop`(value: Rule[String]): Self = this.set("header-full-stop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteHeader-full-stop`: Self = this.set("header-full-stop", js.undefined)
+    @scala.inline
+    def `setHeader-max-length`(value: Rule[Double]): Self = this.set("header-max-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteHeader-max-length`: Self = this.set("header-max-length", js.undefined)
+    @scala.inline
+    def `setHeader-min-length`(value: Rule[Double]): Self = this.set("header-min-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteHeader-min-length`: Self = this.set("header-min-length", js.undefined)
+    @scala.inline
+    def `setReferences-empty`(value: Rule[js.UndefOr[scala.Nothing]]): Self = this.set("references-empty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteReferences-empty`: Self = this.set("references-empty", js.undefined)
+    @scala.inline
+    def `setScope-case`(value: Rule[Case]): Self = this.set("scope-case", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScope-case`: Self = this.set("scope-case", js.undefined)
+    @scala.inline
+    def `setScope-empty`(value: Rule[js.UndefOr[scala.Nothing]]): Self = this.set("scope-empty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScope-empty`: Self = this.set("scope-empty", js.undefined)
+    @scala.inline
+    def `setScope-enum`(value: Rule[js.Array[String]]): Self = this.set("scope-enum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScope-enum`: Self = this.set("scope-enum", js.undefined)
+    @scala.inline
+    def `setScope-max-length`(value: Rule[Double]): Self = this.set("scope-max-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScope-max-length`: Self = this.set("scope-max-length", js.undefined)
+    @scala.inline
+    def `setScope-min-length`(value: Rule[Double]): Self = this.set("scope-min-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScope-min-length`: Self = this.set("scope-min-length", js.undefined)
+    @scala.inline
+    def `setSigned-off-by`(value: Rule[String]): Self = this.set("signed-off-by", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSigned-off-by`: Self = this.set("signed-off-by", js.undefined)
+    @scala.inline
+    def `setSubject-case`(value: Rule[Case | js.Array[Case]]): Self = this.set("subject-case", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSubject-case`: Self = this.set("subject-case", js.undefined)
+    @scala.inline
+    def `setSubject-empty`(value: Rule[js.UndefOr[scala.Nothing]]): Self = this.set("subject-empty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSubject-empty`: Self = this.set("subject-empty", js.undefined)
+    @scala.inline
+    def `setSubject-full-stop`(value: Rule[String]): Self = this.set("subject-full-stop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSubject-full-stop`: Self = this.set("subject-full-stop", js.undefined)
+    @scala.inline
+    def `setSubject-max-length`(value: Rule[Double]): Self = this.set("subject-max-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSubject-max-length`: Self = this.set("subject-max-length", js.undefined)
+    @scala.inline
+    def `setSubject-min-length`(value: Rule[Double]): Self = this.set("subject-min-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSubject-min-length`: Self = this.set("subject-min-length", js.undefined)
+    @scala.inline
+    def `setType-case`(value: Rule[Case]): Self = this.set("type-case", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteType-case`: Self = this.set("type-case", js.undefined)
+    @scala.inline
+    def `setType-empty`(value: Rule[js.UndefOr[scala.Nothing]]): Self = this.set("type-empty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteType-empty`: Self = this.set("type-empty", js.undefined)
+    @scala.inline
+    def `setType-enum`(value: Rule[js.Array[String]]): Self = this.set("type-enum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteType-enum`: Self = this.set("type-enum", js.undefined)
+    @scala.inline
+    def `setType-max-length`(value: Rule[Double]): Self = this.set("type-max-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteType-max-length`: Self = this.set("type-max-length", js.undefined)
+    @scala.inline
+    def `setType-min-length`(value: Rule[Double]): Self = this.set("type-min-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteType-min-length`: Self = this.set("type-min-length", js.undefined)
+  }
+  
 }
 

@@ -11,18 +11,6 @@ object global extends js.Object {
   class MediaMetadata ()
     extends typings.wicgMediasession.MediaMetadata {
     def this(init: MediaMetadataInit) = this()
-    // Media's album.
-    /* CompleteClass */
-    override var album: String = js.native
-    // Media's artist.
-    /* CompleteClass */
-    override var artist: String = js.native
-    // Media's artwork.
-    /* CompleteClass */
-    override var artwork: js.Array[MediaImage] = js.native
-    // Media's title.
-    /* CompleteClass */
-    override var title: String = js.native
   }
   
 }

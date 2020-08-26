@@ -58,34 +58,76 @@ trait Job extends js.Object {
 
 object Job {
   @scala.inline
-  def apply(
-    Arn: String = null,
-    Id: Id = null,
-    Input: JobInput = null,
-    Inputs: JobInputs = null,
-    Output: JobOutput = null,
-    OutputKeyPrefix: Key = null,
-    Outputs: JobOutputs = null,
-    PipelineId: Id = null,
-    Playlists: Playlists = null,
-    Status: JobStatus = null,
-    Timing: Timing = null,
-    UserMetadata: UserMetadata = null
-  ): Job = {
+  def apply(): Job = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Input != null) __obj.updateDynamic("Input")(Input.asInstanceOf[js.Any])
-    if (Inputs != null) __obj.updateDynamic("Inputs")(Inputs.asInstanceOf[js.Any])
-    if (Output != null) __obj.updateDynamic("Output")(Output.asInstanceOf[js.Any])
-    if (OutputKeyPrefix != null) __obj.updateDynamic("OutputKeyPrefix")(OutputKeyPrefix.asInstanceOf[js.Any])
-    if (Outputs != null) __obj.updateDynamic("Outputs")(Outputs.asInstanceOf[js.Any])
-    if (PipelineId != null) __obj.updateDynamic("PipelineId")(PipelineId.asInstanceOf[js.Any])
-    if (Playlists != null) __obj.updateDynamic("Playlists")(Playlists.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Timing != null) __obj.updateDynamic("Timing")(Timing.asInstanceOf[js.Any])
-    if (UserMetadata != null) __obj.updateDynamic("UserMetadata")(UserMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Job]
   }
+  @scala.inline
+  implicit class JobOps[Self <: Job] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setInput(value: JobInput): Self = this.set("Input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("Input", js.undefined)
+    @scala.inline
+    def setInputsVarargs(value: JobInput*): Self = this.set("Inputs", js.Array(value :_*))
+    @scala.inline
+    def setInputs(value: JobInputs): Self = this.set("Inputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputs: Self = this.set("Inputs", js.undefined)
+    @scala.inline
+    def setOutput(value: JobOutput): Self = this.set("Output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutput: Self = this.set("Output", js.undefined)
+    @scala.inline
+    def setOutputKeyPrefix(value: Key): Self = this.set("OutputKeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputKeyPrefix: Self = this.set("OutputKeyPrefix", js.undefined)
+    @scala.inline
+    def setOutputsVarargs(value: JobOutput*): Self = this.set("Outputs", js.Array(value :_*))
+    @scala.inline
+    def setOutputs(value: JobOutputs): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("Outputs", js.undefined)
+    @scala.inline
+    def setPipelineId(value: Id): Self = this.set("PipelineId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineId: Self = this.set("PipelineId", js.undefined)
+    @scala.inline
+    def setPlaylistsVarargs(value: Playlist*): Self = this.set("Playlists", js.Array(value :_*))
+    @scala.inline
+    def setPlaylists(value: Playlists): Self = this.set("Playlists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaylists: Self = this.set("Playlists", js.undefined)
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTiming(value: Timing): Self = this.set("Timing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTiming: Self = this.set("Timing", js.undefined)
+    @scala.inline
+    def setUserMetadata(value: UserMetadata): Self = this.set("UserMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserMetadata: Self = this.set("UserMetadata", js.undefined)
+  }
+  
 }
 

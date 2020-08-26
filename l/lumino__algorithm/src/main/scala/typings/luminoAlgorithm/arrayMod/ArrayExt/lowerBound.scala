@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.lowerBound")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.lowerBound")
 @js.native
 object lowerBound extends js.Object {
   /**
@@ -64,6 +64,13 @@ object lowerBound extends js.Object {
     * ```
     */
   def apply[T, U](array: ArrayLike[T], value: U, fn: js.Function2[/* element */ T, /* value */ U, Double]): Double = js.native
+  def apply[T, U](
+    array: ArrayLike[T],
+    value: U,
+    fn: js.Function2[/* element */ T, /* value */ U, Double],
+    start: js.UndefOr[scala.Nothing],
+    stop: Double
+  ): Double = js.native
   def apply[T, U](
     array: ArrayLike[T],
     value: U,

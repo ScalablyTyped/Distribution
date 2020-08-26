@@ -74,6 +74,7 @@ trait Rectangle extends js.Object {
     * @return {PIXI.Rectangle} Returns itself.
     */
   def ceil(): Rectangle = js.native
+  def ceil(resolution: js.UndefOr[scala.Nothing], eps: Double): Rectangle = js.native
   def ceil(resolution: Double): Rectangle = js.native
   def ceil(resolution: Double, eps: Double): Rectangle = js.native
   /**
@@ -121,6 +122,7 @@ trait Rectangle extends js.Object {
     * @return {PIXI.Rectangle} Returns itself.
     */
   def pad(): Rectangle = js.native
+  def pad(paddingX: js.UndefOr[scala.Nothing], paddingY: Double): Rectangle = js.native
   def pad(paddingX: Double): Rectangle = js.native
   def pad(paddingX: Double, paddingY: Double): Rectangle = js.native
 }

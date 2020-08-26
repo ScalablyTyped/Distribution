@@ -12,6 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatTestResultsMod extends js.Object {
   def default(results: AggregatedResult): FormattedTestResults = js.native
+  def default(
+    results: AggregatedResult,
+    codeCoverageFormatter: js.UndefOr[scala.Nothing],
+    reporter: CodeCoverageReporter
+  ): FormattedTestResults = js.native
   def default(results: AggregatedResult, codeCoverageFormatter: CodeCoverageFormatter): FormattedTestResults = js.native
   def default(
     results: AggregatedResult,

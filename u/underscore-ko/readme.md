@@ -12,7 +12,7 @@ Dead simple utility that attaches Underscore.js array and collection functions (
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 878 |
+| # downloads        | 917 |
 | # stars            | 0 |
 
 ## Links

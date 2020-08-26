@@ -31,6 +31,7 @@ trait IList extends js.Object {
     *  Note: The scrollToMode requires the measureItem callback is provided to function.
     */
   def scrollToIndex(index: Double): Unit = js.native
+  def scrollToIndex(index: Double, measureItem: js.UndefOr[scala.Nothing], scrollToMode: ScrollToMode): Unit = js.native
   def scrollToIndex(index: Double, measureItem: js.Function1[/* itemIndex */ Double, Double]): Unit = js.native
   def scrollToIndex(
     index: Double,

@@ -22,14 +22,30 @@ trait SetSubscriptionAttributesInput extends js.Object {
 
 object SetSubscriptionAttributesInput {
   @scala.inline
-  def apply(
-    AttributeName: attributeName,
-    SubscriptionArn: subscriptionARN,
-    AttributeValue: attributeValue = null
-  ): SetSubscriptionAttributesInput = {
+  def apply(AttributeName: attributeName, SubscriptionArn: subscriptionARN): SetSubscriptionAttributesInput = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], SubscriptionArn = SubscriptionArn.asInstanceOf[js.Any])
-    if (AttributeValue != null) __obj.updateDynamic("AttributeValue")(AttributeValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSubscriptionAttributesInput]
   }
+  @scala.inline
+  implicit class SetSubscriptionAttributesInputOps[Self <: SetSubscriptionAttributesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeName(value: attributeName): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubscriptionArn(value: subscriptionARN): Self = this.set("SubscriptionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributeValue(value: attributeValue): Self = this.set("AttributeValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeValue: Self = this.set("AttributeValue", js.undefined)
+  }
+  
 }
 

@@ -46,7 +46,7 @@ class ConfigurationTemplate protected () extends CustomResource {
   val settings: Output_[js.Array[ConfigurationTemplateSetting]] = js.native
   /**
     * A solution stack to base your Template
-    * off of. Example stacks can be found in the [Amazon API documentation][1]
+    * off of. Example stacks can be found in the [Amazon API documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html)
     */
   val solutionStackName: Output_[js.UndefOr[String]] = js.native
 }
@@ -62,8 +62,10 @@ object ConfigurationTemplate extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ConfigurationTemplate = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ConfigurationTemplate = js.native
   def get(name: String, id: Input[ID], state: ConfigurationTemplateState): ConfigurationTemplate = js.native
   def get(name: String, id: Input[ID], state: ConfigurationTemplateState, opts: CustomResourceOptions): ConfigurationTemplate = js.native
   /**

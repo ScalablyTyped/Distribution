@@ -22,12 +22,34 @@ trait SuggestionMatch extends js.Object {
 
 object SuggestionMatch {
   @scala.inline
-  def apply(id: String = null, score: js.UndefOr[Long] = js.undefined, suggestion: String = null): SuggestionMatch = {
+  def apply(): SuggestionMatch = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
-    if (suggestion != null) __obj.updateDynamic("suggestion")(suggestion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestionMatch]
   }
+  @scala.inline
+  implicit class SuggestionMatchOps[Self <: SuggestionMatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setScore(value: Long): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+    @scala.inline
+    def setSuggestion(value: String): Self = this.set("suggestion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestion: Self = this.set("suggestion", js.undefined)
+  }
+  
 }
 

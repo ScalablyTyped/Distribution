@@ -6,30 +6,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadContext<T>, react-bootstrap-typeahead.react-bootstrap-typeahead.MenuItemContextKeys> */
+@js.native
 trait MenuItemContext[T /* <: TypeaheadModel */] extends js.Object {
-  var activeIndex: js.UndefOr[Double] = js.undefined
-  var isOnlyResult: js.UndefOr[Boolean] = js.undefined
-  var onActiveItemChange: js.UndefOr[js.Function1[/* options */ T, Unit]] = js.undefined
-  var onInitialItemChange: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.undefined
-  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event, Unit]] = js.undefined
+  var activeIndex: js.UndefOr[Double] = js.native
+  var isOnlyResult: js.UndefOr[Boolean] = js.native
+  var onActiveItemChange: js.UndefOr[js.Function1[/* options */ T, Unit]] = js.native
+  var onInitialItemChange: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.native
+  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event, Unit]] = js.native
 }
 
 object MenuItemContext {
   @scala.inline
-  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](
-    activeIndex: js.UndefOr[Double] = js.undefined,
-    isOnlyResult: js.UndefOr[Boolean] = js.undefined,
-    onActiveItemChange: /* options */ T => Unit = null,
-    onInitialItemChange: /* option */ T => Unit = null,
-    onMenuItemClick: (/* option */ T, /* e */ Event) => Unit = null
-  ): MenuItemContext[T] = {
+  def apply[/* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T](): MenuItemContext[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeIndex)) __obj.updateDynamic("activeIndex")(activeIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOnlyResult)) __obj.updateDynamic("isOnlyResult")(isOnlyResult.get.asInstanceOf[js.Any])
-    if (onActiveItemChange != null) __obj.updateDynamic("onActiveItemChange")(js.Any.fromFunction1(onActiveItemChange))
-    if (onInitialItemChange != null) __obj.updateDynamic("onInitialItemChange")(js.Any.fromFunction1(onInitialItemChange))
-    if (onMenuItemClick != null) __obj.updateDynamic("onMenuItemClick")(js.Any.fromFunction2(onMenuItemClick))
     __obj.asInstanceOf[MenuItemContext[T]]
   }
+  @scala.inline
+  implicit class MenuItemContextOps[Self <: MenuItemContext[_], /* <: typings.reactBootstrapTypeahead.mod.TypeaheadModel */ T] (val x: Self with MenuItemContext[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveIndex(value: Double): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveIndex: Self = this.set("activeIndex", js.undefined)
+    @scala.inline
+    def setIsOnlyResult(value: Boolean): Self = this.set("isOnlyResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOnlyResult: Self = this.set("isOnlyResult", js.undefined)
+    @scala.inline
+    def setOnActiveItemChange(value: /* options */ T => Unit): Self = this.set("onActiveItemChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnActiveItemChange: Self = this.set("onActiveItemChange", js.undefined)
+    @scala.inline
+    def setOnInitialItemChange(value: /* option */ T => Unit): Self = this.set("onInitialItemChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInitialItemChange: Self = this.set("onInitialItemChange", js.undefined)
+    @scala.inline
+    def setOnMenuItemClick(value: (/* option */ T, /* e */ Event) => Unit): Self = this.set("onMenuItemClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnMenuItemClick: Self = this.set("onMenuItemClick", js.undefined)
+  }
+  
 }
 

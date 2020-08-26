@@ -56,24 +56,50 @@ trait SchemaLintResult extends js.Object {
 
 object SchemaLintResult {
   @scala.inline
-  def apply(
-    bindingOrdinal: js.UndefOr[Double] = js.undefined,
-    debugMessage: String = null,
-    fieldName: String = null,
-    level: String = null,
-    locationOffset: js.UndefOr[Double] = js.undefined,
-    severity: String = null,
-    validationUnitName: String = null
-  ): SchemaLintResult = {
+  def apply(): SchemaLintResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bindingOrdinal)) __obj.updateDynamic("bindingOrdinal")(bindingOrdinal.get.asInstanceOf[js.Any])
-    if (debugMessage != null) __obj.updateDynamic("debugMessage")(debugMessage.asInstanceOf[js.Any])
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(locationOffset)) __obj.updateDynamic("locationOffset")(locationOffset.get.asInstanceOf[js.Any])
-    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
-    if (validationUnitName != null) __obj.updateDynamic("validationUnitName")(validationUnitName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLintResult]
   }
+  @scala.inline
+  implicit class SchemaLintResultOps[Self <: SchemaLintResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBindingOrdinal(value: Double): Self = this.set("bindingOrdinal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindingOrdinal: Self = this.set("bindingOrdinal", js.undefined)
+    @scala.inline
+    def setDebugMessage(value: String): Self = this.set("debugMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugMessage: Self = this.set("debugMessage", js.undefined)
+    @scala.inline
+    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldName: Self = this.set("fieldName", js.undefined)
+    @scala.inline
+    def setLevel(value: String): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setLocationOffset(value: Double): Self = this.set("locationOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationOffset: Self = this.set("locationOffset", js.undefined)
+    @scala.inline
+    def setSeverity(value: String): Self = this.set("severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("severity", js.undefined)
+    @scala.inline
+    def setValidationUnitName(value: String): Self = this.set("validationUnitName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationUnitName: Self = this.set("validationUnitName", js.undefined)
+  }
+  
 }
 

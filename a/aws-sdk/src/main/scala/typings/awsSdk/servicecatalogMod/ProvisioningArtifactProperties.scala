@@ -30,19 +30,40 @@ trait ProvisioningArtifactProperties extends js.Object {
 
 object ProvisioningArtifactProperties {
   @scala.inline
-  def apply(
-    Info: ProvisioningArtifactInfo,
-    Description: ProvisioningArtifactDescription = null,
-    DisableTemplateValidation: js.UndefOr[DisableTemplateValidation] = js.undefined,
-    Name: ProvisioningArtifactName = null,
-    Type: ProvisioningArtifactType = null
-  ): ProvisioningArtifactProperties = {
+  def apply(Info: ProvisioningArtifactInfo): ProvisioningArtifactProperties = {
     val __obj = js.Dynamic.literal(Info = Info.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableTemplateValidation)) __obj.updateDynamic("DisableTemplateValidation")(DisableTemplateValidation.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisioningArtifactProperties]
   }
+  @scala.inline
+  implicit class ProvisioningArtifactPropertiesOps[Self <: ProvisioningArtifactProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInfo(value: ProvisioningArtifactInfo): Self = this.set("Info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: ProvisioningArtifactDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDisableTemplateValidation(value: DisableTemplateValidation): Self = this.set("DisableTemplateValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableTemplateValidation: Self = this.set("DisableTemplateValidation", js.undefined)
+    @scala.inline
+    def setName(value: ProvisioningArtifactName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setType(value: ProvisioningArtifactType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

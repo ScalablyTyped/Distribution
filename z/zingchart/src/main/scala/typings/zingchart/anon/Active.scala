@@ -4,115 +4,164 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Active extends js.Object {
-  var active: js.UndefOr[AlphaNumber] = js.undefined
+  var active: js.UndefOr[`0`] = js.native
   /**
     * Forces the plotarea to consider the preview object positioning and prevent overlapping with it. true | false | 1 | 0
     */
-  var `adjust-layout`: js.UndefOr[Boolean] = js.undefined
+  var `adjust-layout`: js.UndefOr[Boolean] = js.native
   /**
     * Sets the transparency level of the object. Values must range between 0.0 and 1.0, with 0.0 being completely transparent and 1.0 be
     * ing completely opaque. Note that values require the leading 0 before the decimal point. 0.3 | 0.4 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.undefined
+  var alpha: js.UndefOr[Double] = js.native
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g., "purple", "blue"), hexadecimal notation (e.g., "#666
     * 699", #33ccff"), or RGB notation (e.g., "rgb(255,0,0)", "rgb(0,0,255)"). "none" | "transparent" | "purple" | "#33ccff" | "rgb(100,
     *  15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.undefined
+  var `background-color`: js.UndefOr[String] = js.native
   /**
     * Sets the border color of the object. "none" | "transparent" | "purple" | "#33ccff" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.undefined
+  var `border-color`: js.UndefOr[String] = js.native
   /**
     * Sets the border width of the object. 4 | "6px" | ...
     */
-  var `border-width`: js.UndefOr[js.Any] = js.undefined
-  var handle: js.UndefOr[Borderright] = js.undefined
+  var `border-width`: js.UndefOr[js.Any] = js.native
+  var handle: js.UndefOr[Borderright] = js.native
   /**
     * Sets the object's height. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var height: js.UndefOr[js.Any] = js.undefined
-  var label: js.UndefOr[Borderradiustopleft] = js.undefined
+  var height: js.UndefOr[js.Any] = js.native
+  var label: js.UndefOr[Borderradiustopleft] = js.native
   /**
     * Sets whether the chart is updated when the preview active area is being moved. Default is false for classic theme and true for lig
     * ht/dark themes. The graph will update only when a the mouse is released. true | false | 1 | 0
     */
-  var live: js.UndefOr[Boolean] = js.undefined
+  var live: js.UndefOr[Boolean] = js.native
   /**
     * Sets the object's margins. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var margin: js.UndefOr[js.Any] = js.undefined
-  var mask: js.UndefOr[AlphaNumber] = js.undefined
+  var margin: js.UndefOr[js.Any] = js.native
+  var mask: js.UndefOr[`0`] = js.native
   /**
     * Sets the minimum width of preview's active area. 5 | 10 | ...
     */
-  var `min-distance`: js.UndefOr[Double] = js.undefined
+  var `min-distance`: js.UndefOr[Double] = js.native
   /**
     * Sets the object's position relative to its container. Similar results can be obtained by setting marginand margin-... attributes.
     */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[String] = js.native
   /**
     * Sets whether the zoom level is preserved when a chart is altered or reloaded. true | false | 1 | 0
     */
-  var `preserve-zoom`: js.UndefOr[Boolean] = js.undefined
+  var `preserve-zoom`: js.UndefOr[Boolean] = js.native
   /**
     * Sets the object's width. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var width: js.UndefOr[js.Any] = js.undefined
+  var width: js.UndefOr[js.Any] = js.native
   /**
     * Sets the "x" position of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var x: js.UndefOr[js.Any] = js.undefined
+  var x: js.UndefOr[js.Any] = js.native
   /**
     * Sets the "y" position of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var y: js.UndefOr[js.Any] = js.undefined
+  var y: js.UndefOr[js.Any] = js.native
 }
 
 object Active {
   @scala.inline
-  def apply(
-    active: AlphaNumber = null,
-    `adjust-layout`: js.UndefOr[Boolean] = js.undefined,
-    alpha: js.UndefOr[Double] = js.undefined,
-    `background-color`: String = null,
-    `border-color`: String = null,
-    `border-width`: js.Any = null,
-    handle: Borderright = null,
-    height: js.Any = null,
-    label: Borderradiustopleft = null,
-    live: js.UndefOr[Boolean] = js.undefined,
-    margin: js.Any = null,
-    mask: AlphaNumber = null,
-    `min-distance`: js.UndefOr[Double] = js.undefined,
-    position: String = null,
-    `preserve-zoom`: js.UndefOr[Boolean] = js.undefined,
-    width: js.Any = null,
-    x: js.Any = null,
-    y: js.Any = null
-  ): Active = {
+  def apply(): Active = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (!js.isUndefined(`adjust-layout`)) __obj.updateDynamic("adjust-layout")(`adjust-layout`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
-    if (`background-color` != null) __obj.updateDynamic("background-color")(`background-color`.asInstanceOf[js.Any])
-    if (`border-color` != null) __obj.updateDynamic("border-color")(`border-color`.asInstanceOf[js.Any])
-    if (`border-width` != null) __obj.updateDynamic("border-width")(`border-width`.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.get.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(`min-distance`)) __obj.updateDynamic("min-distance")(`min-distance`.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(`preserve-zoom`)) __obj.updateDynamic("preserve-zoom")(`preserve-zoom`.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Active]
   }
+  @scala.inline
+  implicit class ActiveOps[Self <: Active] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: `0`): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def `setAdjust-layout`(value: Boolean): Self = this.set("adjust-layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAdjust-layout`: Self = this.set("adjust-layout", js.undefined)
+    @scala.inline
+    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    @scala.inline
+    def `setBackground-color`(value: String): Self = this.set("background-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBackground-color`: Self = this.set("background-color", js.undefined)
+    @scala.inline
+    def `setBorder-color`(value: String): Self = this.set("border-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBorder-color`: Self = this.set("border-color", js.undefined)
+    @scala.inline
+    def `setBorder-width`(value: js.Any): Self = this.set("border-width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBorder-width`: Self = this.set("border-width", js.undefined)
+    @scala.inline
+    def setHandle(value: Borderright): Self = this.set("handle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandle: Self = this.set("handle", js.undefined)
+    @scala.inline
+    def setHeight(value: js.Any): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLabel(value: Borderradiustopleft): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLive(value: Boolean): Self = this.set("live", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLive: Self = this.set("live", js.undefined)
+    @scala.inline
+    def setMargin(value: js.Any): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMask(value: `0`): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def `setMin-distance`(value: Double): Self = this.set("min-distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteMin-distance`: Self = this.set("min-distance", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def `setPreserve-zoom`(value: Boolean): Self = this.set("preserve-zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deletePreserve-zoom`: Self = this.set("preserve-zoom", js.undefined)
+    @scala.inline
+    def setWidth(value: js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setX(value: js.Any): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: js.Any): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

@@ -1,61 +1,80 @@
 package typings.reactImageloader.mod
 
 import typings.react.mod.CSSProperties
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
 import typings.react.mod.ReactElement
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ImageLoaderProps extends Props[ImageLoader] {
   /** An optional class name for the wrapper component. */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /** An optional object containing props for the underlying img component. */
-  var imgProps: js.UndefOr[js.Any] = js.undefined
+  var imgProps: js.UndefOr[js.Any] = js.native
   /** An optional handler for the error event. */
-  var onError: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
   /** An optional handler for the load event. */
-  var onLoad: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onLoad: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
   /** An optional function that returns a React element to be shown while the image loads. */
-  var preloader: js.UndefOr[js.Function1[/* params */ js.Any, ReactElement]] = js.undefined
+  var preloader: js.UndefOr[js.Function1[/* params */ js.Any, ReactElement]] = js.native
   /** The URL of the image to be loaded. */
-  var src: String
+  var src: String = js.native
   /** An optional object containing styles for the wrapper component. */
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var style: js.UndefOr[CSSProperties] = js.native
   /** A function that takes a props argument and returns a React element to be used as the wrapper component. Defaults to React.DOM.span. */
-  var wrapper: js.UndefOr[js.Function1[/* props */ js.Any, ReactElement]] = js.undefined
+  var wrapper: js.UndefOr[js.Function1[/* props */ js.Any, ReactElement]] = js.native
 }
 
 object ImageLoaderProps {
   @scala.inline
-  def apply(
-    src: String,
-    children: ReactNode = null,
-    className: String = null,
-    imgProps: js.Any = null,
-    key: Key = null,
-    onError: /* event */ js.Any => Unit = null,
-    onLoad: /* event */ js.Any => Unit = null,
-    preloader: /* params */ js.Any => ReactElement = null,
-    ref: js.UndefOr[Null | LegacyRef[ImageLoader]] = js.undefined,
-    style: CSSProperties = null,
-    wrapper: /* props */ js.Any => ReactElement = null
-  ): ImageLoaderProps = {
+  def apply(src: String): ImageLoaderProps = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (imgProps != null) __obj.updateDynamic("imgProps")(imgProps.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (preloader != null) __obj.updateDynamic("preloader")(js.Any.fromFunction1(preloader))
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (wrapper != null) __obj.updateDynamic("wrapper")(js.Any.fromFunction1(wrapper))
     __obj.asInstanceOf[ImageLoaderProps]
   }
+  @scala.inline
+  implicit class ImageLoaderPropsOps[Self <: ImageLoaderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setImgProps(value: js.Any): Self = this.set("imgProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImgProps: Self = this.set("imgProps", js.undefined)
+    @scala.inline
+    def setOnError(value: /* event */ js.Any => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnLoad(value: /* event */ js.Any => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setPreloader(value: /* params */ js.Any => ReactElement): Self = this.set("preloader", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePreloader: Self = this.set("preloader", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setWrapper(value: /* props */ js.Any => ReactElement): Self = this.set("wrapper", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+  }
+  
 }
 

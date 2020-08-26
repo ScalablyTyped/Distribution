@@ -5,40 +5,69 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LabelOptions extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var clickable: js.UndefOr[Boolean] = js.undefined
-  var direction: js.UndefOr[String] = js.undefined
-  var noHide: js.UndefOr[Boolean] = js.undefined
-  var offset: js.UndefOr[Point_] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var clickable: js.UndefOr[Boolean] = js.native
+  var direction: js.UndefOr[String] = js.native
+  var noHide: js.UndefOr[Boolean] = js.native
+  var offset: js.UndefOr[Point_] = js.native
+  var opacity: js.UndefOr[Double] = js.native
    // 'left' | 'right' | 'auto';
-  var pane: js.UndefOr[String] = js.undefined
-  var zoomAnimation: js.UndefOr[Boolean] = js.undefined
+  var pane: js.UndefOr[String] = js.native
+  var zoomAnimation: js.UndefOr[Boolean] = js.native
 }
 
 object LabelOptions {
   @scala.inline
-  def apply(
-    className: String = null,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    direction: String = null,
-    noHide: js.UndefOr[Boolean] = js.undefined,
-    offset: Point_ = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    pane: String = null,
-    zoomAnimation: js.UndefOr[Boolean] = js.undefined
-  ): LabelOptions = {
+  def apply(): LabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(noHide)) __obj.updateDynamic("noHide")(noHide.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOptions]
   }
+  @scala.inline
+  implicit class LabelOptionsOps[Self <: LabelOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClickable(value: Boolean): Self = this.set("clickable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickable: Self = this.set("clickable", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setNoHide(value: Boolean): Self = this.set("noHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoHide: Self = this.set("noHide", js.undefined)
+    @scala.inline
+    def setOffset(value: Point_): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPane(value: String): Self = this.set("pane", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePane: Self = this.set("pane", js.undefined)
+    @scala.inline
+    def setZoomAnimation(value: Boolean): Self = this.set("zoomAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomAnimation: Self = this.set("zoomAnimation", js.undefined)
+  }
+  
 }
 

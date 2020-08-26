@@ -23,27 +23,313 @@ class Glyph protected () extends js.Object {
   def addUnicode(unicode: Double): Unit = js.native
   def bindConstructorValues(options: GlyphOptions): Unit = js.native
   def draw(ctx: CanvasRenderingContext2D): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double
+  ): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
+  def draw(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def draw(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double, fontSize: Double): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def draw(ctx: CanvasRenderingContext2D, x: Double): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def draw(ctx: CanvasRenderingContext2D, x: Double, y: js.UndefOr[scala.Nothing], fontSize: Double): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def draw(ctx: CanvasRenderingContext2D, x: Double, y: Double): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
   def draw(ctx: CanvasRenderingContext2D, x: Double, y: Double, fontSize: Double): Unit = js.native
   def draw(ctx: CanvasRenderingContext2D, x: Double, y: Double, fontSize: Double, options: RenderOptions): Unit = js.native
   def drawMetrics(ctx: CanvasRenderingContext2D): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double
+  ): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
+  def drawMetrics(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawMetrics(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double, fontSize: Double): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def drawMetrics(ctx: CanvasRenderingContext2D, x: Double): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawMetrics(ctx: CanvasRenderingContext2D, x: Double, y: js.UndefOr[scala.Nothing], fontSize: Double): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def drawMetrics(ctx: CanvasRenderingContext2D, x: Double, y: Double): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
   def drawMetrics(ctx: CanvasRenderingContext2D, x: Double, y: Double, fontSize: Double): Unit = js.native
   def drawMetrics(ctx: CanvasRenderingContext2D, x: Double, y: Double, fontSize: Double, options: RenderOptions): Unit = js.native
   def drawPoints(ctx: CanvasRenderingContext2D): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double
+  ): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
+  def drawPoints(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawPoints(ctx: CanvasRenderingContext2D, x: js.UndefOr[scala.Nothing], y: Double, fontSize: Double): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def drawPoints(ctx: CanvasRenderingContext2D, x: Double): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawPoints(ctx: CanvasRenderingContext2D, x: Double, y: js.UndefOr[scala.Nothing], fontSize: Double): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def drawPoints(ctx: CanvasRenderingContext2D, x: Double, y: Double): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
   def drawPoints(ctx: CanvasRenderingContext2D, x: Double, y: Double, fontSize: Double): Unit = js.native
   def drawPoints(ctx: CanvasRenderingContext2D, x: Double, y: Double, fontSize: Double, options: RenderOptions): Unit = js.native
   def getBoundingBox(): BoundingBox = js.native
   def getContours(): Contour = js.native
   def getMetrics(): Metrics = js.native
   def getPath(): Path = js.native
+  def getPath(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    font: Font
+  ): Path = js.native
+  def getPath(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Path = js.native
+  def getPath(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions,
+    font: Font
+  ): Path = js.native
+  def getPath(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], fontSize: Double): Path = js.native
+  def getPath(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: js.UndefOr[scala.Nothing],
+    font: Font
+  ): Path = js.native
+  def getPath(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Path = js.native
+  def getPath(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions,
+    font: Font
+  ): Path = js.native
+  def getPath(x: js.UndefOr[scala.Nothing], y: Double): Path = js.native
+  def getPath(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    font: Font
+  ): Path = js.native
+  def getPath(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Path = js.native
+  def getPath(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions,
+    font: Font
+  ): Path = js.native
+  def getPath(x: js.UndefOr[scala.Nothing], y: Double, fontSize: Double): Path = js.native
+  def getPath(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double,
+    options: js.UndefOr[scala.Nothing],
+    font: Font
+  ): Path = js.native
+  def getPath(x: js.UndefOr[scala.Nothing], y: Double, fontSize: Double, options: RenderOptions): Path = js.native
+  def getPath(x: js.UndefOr[scala.Nothing], y: Double, fontSize: Double, options: RenderOptions, font: Font): Path = js.native
   def getPath(x: Double): Path = js.native
+  def getPath(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    font: Font
+  ): Path = js.native
+  def getPath(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Path = js.native
+  def getPath(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions,
+    font: Font
+  ): Path = js.native
+  def getPath(x: Double, y: js.UndefOr[scala.Nothing], fontSize: Double): Path = js.native
+  def getPath(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: js.UndefOr[scala.Nothing],
+    font: Font
+  ): Path = js.native
+  def getPath(x: Double, y: js.UndefOr[scala.Nothing], fontSize: Double, options: RenderOptions): Path = js.native
+  def getPath(x: Double, y: js.UndefOr[scala.Nothing], fontSize: Double, options: RenderOptions, font: Font): Path = js.native
   def getPath(x: Double, y: Double): Path = js.native
+  def getPath(
+    x: Double,
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    font: Font
+  ): Path = js.native
+  def getPath(x: Double, y: Double, fontSize: js.UndefOr[scala.Nothing], options: RenderOptions): Path = js.native
+  def getPath(x: Double, y: Double, fontSize: js.UndefOr[scala.Nothing], options: RenderOptions, font: Font): Path = js.native
   def getPath(x: Double, y: Double, fontSize: Double): Path = js.native
+  def getPath(x: Double, y: Double, fontSize: Double, options: js.UndefOr[scala.Nothing], font: Font): Path = js.native
   def getPath(x: Double, y: Double, fontSize: Double, options: RenderOptions): Path = js.native
   def getPath(x: Double, y: Double, fontSize: Double, options: RenderOptions, font: Font): Path = js.native
 }

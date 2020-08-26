@@ -37,6 +37,7 @@ trait PlusOrientation extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
     */
   def getCurrentOrientation(): Unit = js.native
+  def getCurrentOrientation(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getCurrentOrientation(successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
   def getCurrentOrientation(
     successCB: js.Function1[/* result */ String, Unit],
@@ -49,7 +50,23 @@ trait PlusOrientation extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
     */
   def watchOrientation(): Double = js.native
+  def watchOrientation(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.UndefOr[scala.Nothing],
+    option: PlusOrientationOrientationOption
+  ): Double = js.native
+  def watchOrientation(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Double = js.native
+  def watchOrientation(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit],
+    option: PlusOrientationOrientationOption
+  ): Double = js.native
   def watchOrientation(successCB: js.Function1[/* result */ String, Unit]): Double = js.native
+  def watchOrientation(
+    successCB: js.Function1[/* result */ String, Unit],
+    errorCB: js.UndefOr[scala.Nothing],
+    option: PlusOrientationOrientationOption
+  ): Double = js.native
   def watchOrientation(
     successCB: js.Function1[/* result */ String, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]

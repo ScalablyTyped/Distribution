@@ -5,6 +5,7 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
+import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.genericMod.SemanticWIDTHS
 import typings.semanticUiReact.menuItemMod.MenuItemProps
 import typings.semanticUiReact.semanticUiReactStrings.bottom
@@ -23,37 +24,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrictMenuProps extends js.Object {
   /** Index of the currently active item. */
-  var activeIndex: js.UndefOr[Double | String] = js.undefined
+  var activeIndex: js.UndefOr[Double | String] = js.native
   /** An element type to render as (string or function). */
-  var as: js.UndefOr[js.Any] = js.undefined
+  var as: js.UndefOr[js.Any] = js.native
   /** A menu may be attached to other content segments. */
-  var attached: js.UndefOr[Boolean | bottom | top] = js.undefined
+  var attached: js.UndefOr[Boolean | bottom | top] = js.native
   /** A menu item or menu can have no borders. */
-  var borderless: js.UndefOr[Boolean] = js.undefined
+  var borderless: js.UndefOr[Boolean] = js.native
   /** Primary content. */
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.native
   /** Additional classes. */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /** Additional colors can be specified. */
-  var color: js.UndefOr[SemanticCOLORS] = js.undefined
+  var color: js.UndefOr[SemanticCOLORS] = js.native
   /** A menu can take up only the space necessary to fit its content. */
-  var compact: js.UndefOr[Boolean] = js.undefined
+  var compact: js.UndefOr[Boolean] = js.native
   /** Initial activeIndex value. */
-  var defaultActiveIndex: js.UndefOr[Double | String] = js.undefined
+  var defaultActiveIndex: js.UndefOr[Double | String] = js.native
   /** A menu can be fixed to a side of its context. */
-  var fixed: js.UndefOr[left | right | bottom | top] = js.undefined
+  var fixed: js.UndefOr[left | right | bottom | top] = js.native
   /** A menu can be floated. */
-  var floated: js.UndefOr[Boolean | right] = js.undefined
+  var floated: js.UndefOr[Boolean | right] = js.native
   /** A vertical menu may take the size of its container. */
-  var fluid: js.UndefOr[Boolean] = js.undefined
+  var fluid: js.UndefOr[Boolean] = js.native
   /** A menu may have labeled icons. */
-  var icon: js.UndefOr[Boolean | labeled] = js.undefined
+  var icon: js.UndefOr[Boolean | labeled] = js.native
   /** A menu may have its colors inverted to show greater contrast. */
-  var inverted: js.UndefOr[Boolean] = js.undefined
+  var inverted: js.UndefOr[Boolean] = js.native
   /** Shorthand array of props for Menu. */
-  var items: js.UndefOr[SemanticShorthandCollection[MenuItemProps]] = js.undefined
+  var items: js.UndefOr[SemanticShorthandCollection[MenuItemProps]] = js.native
   /**
     * onClick handler for MenuItem. Mutually exclusive with children.
     *
@@ -66,83 +68,149 @@ trait StrictMenuProps extends js.Object {
       /* data */ MenuItemProps, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** A pagination menu is specially formatted to present links to pages of content. */
-  var pagination: js.UndefOr[Boolean] = js.undefined
+  var pagination: js.UndefOr[Boolean] = js.native
   /** A menu can point to show its relationship to nearby content. */
-  var pointing: js.UndefOr[Boolean] = js.undefined
+  var pointing: js.UndefOr[Boolean] = js.native
   /** A menu can adjust its appearance to de-emphasize its contents. */
-  var secondary: js.UndefOr[Boolean] = js.undefined
+  var secondary: js.UndefOr[Boolean] = js.native
   /** A menu can vary in size. */
-  var size: js.UndefOr[mini | tiny | small | large | huge | massive] = js.undefined
+  var size: js.UndefOr[mini | tiny | small | large | huge | massive] = js.native
   /** A menu can stack at mobile resolutions. */
-  var stackable: js.UndefOr[Boolean] = js.undefined
+  var stackable: js.UndefOr[Boolean] = js.native
   /** A menu can be formatted to show tabs of information. */
-  var tabular: js.UndefOr[Boolean | right] = js.undefined
+  var tabular: js.UndefOr[Boolean | right] = js.native
   /** A menu can be formatted for text content. */
-  var text: js.UndefOr[Boolean] = js.undefined
+  var text: js.UndefOr[Boolean] = js.native
   /** A vertical menu displays elements vertically. */
-  var vertical: js.UndefOr[Boolean] = js.undefined
+  var vertical: js.UndefOr[Boolean] = js.native
   /** A menu can have its items divided evenly. */
-  var widths: js.UndefOr[SemanticWIDTHS] = js.undefined
+  var widths: js.UndefOr[SemanticWIDTHS] = js.native
 }
 
 object StrictMenuProps {
   @scala.inline
-  def apply(
-    activeIndex: Double | String = null,
-    as: js.Any = null,
-    attached: Boolean | bottom | top = null,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    className: String = null,
-    color: SemanticCOLORS = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    defaultActiveIndex: Double | String = null,
-    fixed: left | right | bottom | top = null,
-    floated: Boolean | right = null,
-    fluid: js.UndefOr[Boolean] = js.undefined,
-    icon: Boolean | labeled = null,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    items: SemanticShorthandCollection[MenuItemProps] = null,
-    onItemClick: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ MenuItemProps) => Unit = null,
-    pagination: js.UndefOr[Boolean] = js.undefined,
-    pointing: js.UndefOr[Boolean] = js.undefined,
-    secondary: js.UndefOr[Boolean] = js.undefined,
-    size: mini | tiny | small | large | huge | massive = null,
-    stackable: js.UndefOr[Boolean] = js.undefined,
-    tabular: Boolean | right = null,
-    text: js.UndefOr[Boolean] = js.undefined,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    widths: SemanticWIDTHS = null
-  ): StrictMenuProps = {
+  def apply(): StrictMenuProps = {
     val __obj = js.Dynamic.literal()
-    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (attached != null) __obj.updateDynamic("attached")(attached.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
-    if (defaultActiveIndex != null) __obj.updateDynamic("defaultActiveIndex")(defaultActiveIndex.asInstanceOf[js.Any])
-    if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
-    if (floated != null) __obj.updateDynamic("floated")(floated.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2(onItemClick))
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointing)) __obj.updateDynamic("pointing")(pointing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackable)) __obj.updateDynamic("stackable")(stackable.get.asInstanceOf[js.Any])
-    if (tabular != null) __obj.updateDynamic("tabular")(tabular.asInstanceOf[js.Any])
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
-    if (widths != null) __obj.updateDynamic("widths")(widths.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictMenuProps]
   }
+  @scala.inline
+  implicit class StrictMenuPropsOps[Self <: StrictMenuProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveIndex(value: Double | String): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveIndex: Self = this.set("activeIndex", js.undefined)
+    @scala.inline
+    def setAs(value: js.Any): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setAttached(value: Boolean | bottom | top): Self = this.set("attached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttached: Self = this.set("attached", js.undefined)
+    @scala.inline
+    def setBorderless(value: Boolean): Self = this.set("borderless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderless: Self = this.set("borderless", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColor(value: SemanticCOLORS): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompact: Self = this.set("compact", js.undefined)
+    @scala.inline
+    def setDefaultActiveIndex(value: Double | String): Self = this.set("defaultActiveIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultActiveIndex: Self = this.set("defaultActiveIndex", js.undefined)
+    @scala.inline
+    def setFixed(value: left | right | bottom | top): Self = this.set("fixed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixed: Self = this.set("fixed", js.undefined)
+    @scala.inline
+    def setFloated(value: Boolean | right): Self = this.set("floated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloated: Self = this.set("floated", js.undefined)
+    @scala.inline
+    def setFluid(value: Boolean): Self = this.set("fluid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFluid: Self = this.set("fluid", js.undefined)
+    @scala.inline
+    def setIcon(value: Boolean | labeled): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverted: Self = this.set("inverted", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: SemanticShorthandItem[MenuItemProps]*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: SemanticShorthandCollection[MenuItemProps]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setOnItemClick(
+      value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ MenuItemProps) => Unit
+    ): Self = this.set("onItemClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnItemClick: Self = this.set("onItemClick", js.undefined)
+    @scala.inline
+    def setPagination(value: Boolean): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagination: Self = this.set("pagination", js.undefined)
+    @scala.inline
+    def setPointing(value: Boolean): Self = this.set("pointing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointing: Self = this.set("pointing", js.undefined)
+    @scala.inline
+    def setSecondary(value: Boolean): Self = this.set("secondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    @scala.inline
+    def setSize(value: mini | tiny | small | large | huge | massive): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStackable(value: Boolean): Self = this.set("stackable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackable: Self = this.set("stackable", js.undefined)
+    @scala.inline
+    def setTabular(value: Boolean | right): Self = this.set("tabular", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabular: Self = this.set("tabular", js.undefined)
+    @scala.inline
+    def setText(value: Boolean): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical: Self = this.set("vertical", js.undefined)
+    @scala.inline
+    def setWidths(value: SemanticWIDTHS): Self = this.set("widths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidths: Self = this.set("widths", js.undefined)
+  }
+  
 }
 

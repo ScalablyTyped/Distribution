@@ -30,6 +30,13 @@ object compilerHostMod extends js.Object {
     tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ js.Any,
     tsconfigPath: String,
     basePath: String,
+    fakeFileRead: js.UndefOr[scala.Nothing],
+    additionalFiles: js.Array[String]
+  ): Host = js.native
+  def createMigrationProgram(
+    tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ js.Any,
+    tsconfigPath: String,
+    basePath: String,
     fakeFileRead: FakeReadFileFn
   ): Host = js.native
   def createMigrationProgram(

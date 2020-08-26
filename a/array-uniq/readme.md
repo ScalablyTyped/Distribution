@@ -12,7 +12,7 @@ Create an array without duplicates
 | Keywords           | array, set, uniq, unique, duplicate, remove |
 | # releases         | 3 |
 | # dependents       | 135 |
-| # downloads        | 382293879 |
+| # downloads        | 390007191 |
 | # stars            | 8 |
 
 ## Links

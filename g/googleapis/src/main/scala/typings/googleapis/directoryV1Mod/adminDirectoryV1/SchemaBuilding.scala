@@ -54,26 +54,56 @@ trait SchemaBuilding extends js.Object {
 
 object SchemaBuilding {
   @scala.inline
-  def apply(
-    address: SchemaBuildingAddress = null,
-    buildingId: String = null,
-    buildingName: String = null,
-    coordinates: SchemaBuildingCoordinates = null,
-    description: String = null,
-    etags: String = null,
-    floorNames: js.Array[String] = null,
-    kind: String = null
-  ): SchemaBuilding = {
+  def apply(): SchemaBuilding = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (buildingId != null) __obj.updateDynamic("buildingId")(buildingId.asInstanceOf[js.Any])
-    if (buildingName != null) __obj.updateDynamic("buildingName")(buildingName.asInstanceOf[js.Any])
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (etags != null) __obj.updateDynamic("etags")(etags.asInstanceOf[js.Any])
-    if (floorNames != null) __obj.updateDynamic("floorNames")(floorNames.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuilding]
   }
+  @scala.inline
+  implicit class SchemaBuildingOps[Self <: SchemaBuilding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: SchemaBuildingAddress): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setBuildingId(value: String): Self = this.set("buildingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildingId: Self = this.set("buildingId", js.undefined)
+    @scala.inline
+    def setBuildingName(value: String): Self = this.set("buildingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildingName: Self = this.set("buildingName", js.undefined)
+    @scala.inline
+    def setCoordinates(value: SchemaBuildingCoordinates): Self = this.set("coordinates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoordinates: Self = this.set("coordinates", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEtags(value: String): Self = this.set("etags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtags: Self = this.set("etags", js.undefined)
+    @scala.inline
+    def setFloorNamesVarargs(value: String*): Self = this.set("floorNames", js.Array(value :_*))
+    @scala.inline
+    def setFloorNames(value: js.Array[String]): Self = this.set("floorNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloorNames: Self = this.set("floorNames", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

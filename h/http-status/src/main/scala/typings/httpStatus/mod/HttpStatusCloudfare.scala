@@ -4,47 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HttpStatusCloudfare extends js.Object {
-  val `520`: String
-  val `520_CLASS`: String
-  val `520_MESSAGE`: String
-  val `520_NAME`: String
-  val `521`: String
-  val `521_CLASS`: String
-  val `521_MESSAGE`: String
-  val `521_NAME`: String
-  val `522`: String
-  val `522_CLASS`: String
-  val `522_MESSAGE`: String
-  val `522_NAME`: String
-  val `523`: String
-  val `523_CLASS`: String
-  val `523_MESSAGE`: String
-  val `523_NAME`: String
-  val `524`: String
-  val `524_CLASS`: String
-  val `524_MESSAGE`: String
-  val `524_NAME`: String
-  val `525`: String
-  val `525_CLASS`: String
-  val `525_MESSAGE`: String
-  val `525_NAME`: String
-  val `526`: String
-  val `526_CLASS`: String
-  val `526_MESSAGE`: String
-  val `526_NAME`: String
-  val `527`: String
-  val `527_CLASS`: String
-  val `527_MESSAGE`: String
-  val `527_NAME`: String
-  val A_TIMEOUT_OCCURRED: Double
-  val CONNECTION_TIMED_OUT: Double
-  val INVALID_SSL_CERTIFICATE: Double
-  val ORIGIN_IS_UNREACHABLE: Double
-  val RAILGUN_ERROR: Double
-  val SSL_HANDSHAKE_FAILED: Double
-  val UNKNOWN_ERROR: Double
-  val WEB_SERVER_IS_DOWN: Double
+  val `520`: String = js.native
+  val `520_CLASS`: String = js.native
+  val `520_MESSAGE`: String = js.native
+  val `520_NAME`: String = js.native
+  val `521`: String = js.native
+  val `521_CLASS`: String = js.native
+  val `521_MESSAGE`: String = js.native
+  val `521_NAME`: String = js.native
+  val `522`: String = js.native
+  val `522_CLASS`: String = js.native
+  val `522_MESSAGE`: String = js.native
+  val `522_NAME`: String = js.native
+  val `523`: String = js.native
+  val `523_CLASS`: String = js.native
+  val `523_MESSAGE`: String = js.native
+  val `523_NAME`: String = js.native
+  val `524`: String = js.native
+  val `524_CLASS`: String = js.native
+  val `524_MESSAGE`: String = js.native
+  val `524_NAME`: String = js.native
+  val `525`: String = js.native
+  val `525_CLASS`: String = js.native
+  val `525_MESSAGE`: String = js.native
+  val `525_NAME`: String = js.native
+  val `526`: String = js.native
+  val `526_CLASS`: String = js.native
+  val `526_MESSAGE`: String = js.native
+  val `526_NAME`: String = js.native
+  val `527`: String = js.native
+  val `527_CLASS`: String = js.native
+  val `527_MESSAGE`: String = js.native
+  val `527_NAME`: String = js.native
+  val A_TIMEOUT_OCCURRED: Double = js.native
+  val CONNECTION_TIMED_OUT: Double = js.native
+  val INVALID_SSL_CERTIFICATE: Double = js.native
+  val ORIGIN_IS_UNREACHABLE: Double = js.native
+  val RAILGUN_ERROR: Double = js.native
+  val SSL_HANDSHAKE_FAILED: Double = js.native
+  val UNKNOWN_ERROR: Double = js.native
+  val WEB_SERVER_IS_DOWN: Double = js.native
 }
 
 object HttpStatusCloudfare {
@@ -126,5 +127,98 @@ object HttpStatusCloudfare {
     __obj.updateDynamic("527_NAME")(`527_NAME`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpStatusCloudfare]
   }
+  @scala.inline
+  implicit class HttpStatusCloudfareOps[Self <: HttpStatusCloudfare] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set520(value: String): Self = this.set("520", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set520_CLASS(value: String): Self = this.set("520_CLASS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set520_MESSAGE(value: String): Self = this.set("520_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set520_NAME(value: String): Self = this.set("520_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set521(value: String): Self = this.set("521", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set521_CLASS(value: String): Self = this.set("521_CLASS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set521_MESSAGE(value: String): Self = this.set("521_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set521_NAME(value: String): Self = this.set("521_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set522(value: String): Self = this.set("522", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set522_CLASS(value: String): Self = this.set("522_CLASS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set522_MESSAGE(value: String): Self = this.set("522_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set522_NAME(value: String): Self = this.set("522_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set523(value: String): Self = this.set("523", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set523_CLASS(value: String): Self = this.set("523_CLASS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set523_MESSAGE(value: String): Self = this.set("523_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set523_NAME(value: String): Self = this.set("523_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set524(value: String): Self = this.set("524", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set524_CLASS(value: String): Self = this.set("524_CLASS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set524_MESSAGE(value: String): Self = this.set("524_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set524_NAME(value: String): Self = this.set("524_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set525(value: String): Self = this.set("525", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set525_CLASS(value: String): Self = this.set("525_CLASS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set525_MESSAGE(value: String): Self = this.set("525_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set525_NAME(value: String): Self = this.set("525_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set526(value: String): Self = this.set("526", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set526_CLASS(value: String): Self = this.set("526_CLASS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set526_MESSAGE(value: String): Self = this.set("526_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set526_NAME(value: String): Self = this.set("526_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set527(value: String): Self = this.set("527", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set527_CLASS(value: String): Self = this.set("527_CLASS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set527_MESSAGE(value: String): Self = this.set("527_MESSAGE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set527_NAME(value: String): Self = this.set("527_NAME", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setA_TIMEOUT_OCCURRED(value: Double): Self = this.set("A_TIMEOUT_OCCURRED", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCONNECTION_TIMED_OUT(value: Double): Self = this.set("CONNECTION_TIMED_OUT", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setINVALID_SSL_CERTIFICATE(value: Double): Self = this.set("INVALID_SSL_CERTIFICATE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setORIGIN_IS_UNREACHABLE(value: Double): Self = this.set("ORIGIN_IS_UNREACHABLE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRAILGUN_ERROR(value: Double): Self = this.set("RAILGUN_ERROR", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSSL_HANDSHAKE_FAILED(value: Double): Self = this.set("SSL_HANDSHAKE_FAILED", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUNKNOWN_ERROR(value: Double): Self = this.set("UNKNOWN_ERROR", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWEB_SERVER_IS_DOWN(value: Double): Self = this.set("WEB_SERVER_IS_DOWN", value.asInstanceOf[js.Any])
+  }
+  
 }
 

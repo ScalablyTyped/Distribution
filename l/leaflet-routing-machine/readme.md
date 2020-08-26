@@ -11,8 +11,8 @@ Routing for Leaflet
 | Full name          | leaflet-routing-machine |
 | Keywords           | leaflet, routing, osrm |
 | # releases         | 6 |
-| # dependents       | 7 |
-| # downloads        | 149354 |
+| # dependents       | 8 |
+| # downloads        | 155917 |
 | # stars            | 1 |
 
 ## Links

@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LocalContentSuggestionSettings extends ILocalContentSuggestionSettings
 
 object LocalContentSuggestionSettings {

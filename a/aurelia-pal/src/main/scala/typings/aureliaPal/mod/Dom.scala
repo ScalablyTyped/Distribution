@@ -150,7 +150,16 @@ trait Dom extends js.Object {
     * @return The Style node that was created.
     */
   def injectStyles(styles: String): Node = js.native
+  def injectStyles(
+    styles: String,
+    destination: js.UndefOr[scala.Nothing],
+    prepend: js.UndefOr[scala.Nothing],
+    id: String
+  ): Node = js.native
+  def injectStyles(styles: String, destination: js.UndefOr[scala.Nothing], prepend: Boolean): Node = js.native
+  def injectStyles(styles: String, destination: js.UndefOr[scala.Nothing], prepend: Boolean, id: String): Node = js.native
   def injectStyles(styles: String, destination: Element): Node = js.native
+  def injectStyles(styles: String, destination: Element, prepend: js.UndefOr[scala.Nothing], id: String): Node = js.native
   def injectStyles(styles: String, destination: Element, prepend: Boolean): Node = js.native
   def injectStyles(styles: String, destination: Element, prepend: Boolean, id: String): Node = js.native
   /**

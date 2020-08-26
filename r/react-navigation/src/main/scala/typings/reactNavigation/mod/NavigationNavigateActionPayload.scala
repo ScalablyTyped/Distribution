@@ -4,27 +4,47 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NavigationNavigateActionPayload extends js.Object {
   // The action to run inside the sub-router
-  var action: js.UndefOr[NavigationNavigateAction] = js.undefined
-  var key: js.UndefOr[String] = js.undefined
-  var params: js.UndefOr[NavigationParams] = js.undefined
-  var routeName: String
+  var action: js.UndefOr[NavigationNavigateAction] = js.native
+  var key: js.UndefOr[String] = js.native
+  var params: js.UndefOr[NavigationParams] = js.native
+  var routeName: String = js.native
 }
 
 object NavigationNavigateActionPayload {
   @scala.inline
-  def apply(
-    routeName: String,
-    action: NavigationNavigateAction = null,
-    key: String = null,
-    params: NavigationParams = null
-  ): NavigationNavigateActionPayload = {
+  def apply(routeName: String): NavigationNavigateActionPayload = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationNavigateActionPayload]
   }
+  @scala.inline
+  implicit class NavigationNavigateActionPayloadOps[Self <: NavigationNavigateActionPayload] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRouteName(value: String): Self = this.set("routeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAction(value: NavigationNavigateAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setParams(value: NavigationParams): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+  }
+  
 }
 

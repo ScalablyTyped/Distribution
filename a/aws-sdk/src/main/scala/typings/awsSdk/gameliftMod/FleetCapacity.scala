@@ -22,16 +22,34 @@ trait FleetCapacity extends js.Object {
 
 object FleetCapacity {
   @scala.inline
-  def apply(
-    FleetId: FleetId = null,
-    InstanceCounts: EC2InstanceCounts = null,
-    InstanceType: EC2InstanceType = null
-  ): FleetCapacity = {
+  def apply(): FleetCapacity = {
     val __obj = js.Dynamic.literal()
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (InstanceCounts != null) __obj.updateDynamic("InstanceCounts")(InstanceCounts.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetCapacity]
   }
+  @scala.inline
+  implicit class FleetCapacityOps[Self <: FleetCapacity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setInstanceCounts(value: EC2InstanceCounts): Self = this.set("InstanceCounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCounts: Self = this.set("InstanceCounts", js.undefined)
+    @scala.inline
+    def setInstanceType(value: EC2InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+  }
+  
 }
 

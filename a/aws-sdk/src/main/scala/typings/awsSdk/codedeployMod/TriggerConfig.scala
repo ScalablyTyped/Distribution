@@ -22,16 +22,36 @@ trait TriggerConfig extends js.Object {
 
 object TriggerConfig {
   @scala.inline
-  def apply(
-    triggerEvents: TriggerEventTypeList = null,
-    triggerName: TriggerName = null,
-    triggerTargetArn: TriggerTargetArn = null
-  ): TriggerConfig = {
+  def apply(): TriggerConfig = {
     val __obj = js.Dynamic.literal()
-    if (triggerEvents != null) __obj.updateDynamic("triggerEvents")(triggerEvents.asInstanceOf[js.Any])
-    if (triggerName != null) __obj.updateDynamic("triggerName")(triggerName.asInstanceOf[js.Any])
-    if (triggerTargetArn != null) __obj.updateDynamic("triggerTargetArn")(triggerTargetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerConfig]
   }
+  @scala.inline
+  implicit class TriggerConfigOps[Self <: TriggerConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTriggerEventsVarargs(value: TriggerEventType*): Self = this.set("triggerEvents", js.Array(value :_*))
+    @scala.inline
+    def setTriggerEvents(value: TriggerEventTypeList): Self = this.set("triggerEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerEvents: Self = this.set("triggerEvents", js.undefined)
+    @scala.inline
+    def setTriggerName(value: TriggerName): Self = this.set("triggerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerName: Self = this.set("triggerName", js.undefined)
+    @scala.inline
+    def setTriggerTargetArn(value: TriggerTargetArn): Self = this.set("triggerTargetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerTargetArn: Self = this.set("triggerTargetArn", js.undefined)
+  }
+  
 }
 

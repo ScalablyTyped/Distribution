@@ -16,12 +16,30 @@ object iMenuFactoryMod extends js.Object {
     def hideActiveMenu(): Unit = js.native
     def isMenuEnabled(column: Column): Boolean = js.native
     def showMenuAfterButtonClick(column: Column, eventSource: HTMLElement): Unit = js.native
+    def showMenuAfterButtonClick(
+      column: Column,
+      eventSource: HTMLElement,
+      defaultTab: js.UndefOr[scala.Nothing],
+      restrictToTabs: js.Array[String]
+    ): Unit = js.native
     def showMenuAfterButtonClick(column: Column, eventSource: HTMLElement, defaultTab: String): Unit = js.native
     def showMenuAfterButtonClick(column: Column, eventSource: HTMLElement, defaultTab: String, restrictToTabs: js.Array[String]): Unit = js.native
     def showMenuAfterMouseEvent(column: Column, mouseEvent: MouseEvent): Unit = js.native
+    def showMenuAfterMouseEvent(
+      column: Column,
+      mouseEvent: MouseEvent,
+      defaultTab: js.UndefOr[scala.Nothing],
+      restrictToTabs: js.Array[String]
+    ): Unit = js.native
     def showMenuAfterMouseEvent(column: Column, mouseEvent: MouseEvent, defaultTab: String): Unit = js.native
     def showMenuAfterMouseEvent(column: Column, mouseEvent: MouseEvent, defaultTab: String, restrictToTabs: js.Array[String]): Unit = js.native
     def showMenuAfterMouseEvent(column: Column, mouseEvent: Touch): Unit = js.native
+    def showMenuAfterMouseEvent(
+      column: Column,
+      mouseEvent: Touch,
+      defaultTab: js.UndefOr[scala.Nothing],
+      restrictToTabs: js.Array[String]
+    ): Unit = js.native
     def showMenuAfterMouseEvent(column: Column, mouseEvent: Touch, defaultTab: String): Unit = js.native
     def showMenuAfterMouseEvent(column: Column, mouseEvent: Touch, defaultTab: String, restrictToTabs: js.Array[String]): Unit = js.native
   }

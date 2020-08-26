@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Psbt () extends js.Object {
   def this(opts: PsbtOptsOptional) = this()
+  def this(opts: js.UndefOr[scala.Nothing], data: typings.bip174.mod.Psbt) = this()
   def this(opts: PsbtOptsOptional, data: typings.bip174.mod.Psbt) = this()
   var __CACHE: js.Any = js.native
   val data: typings.bip174.mod.Psbt = js.native

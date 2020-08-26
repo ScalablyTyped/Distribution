@@ -7,40 +7,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledApplicationSettingsResource extends ApplicationSettingsResource {
   /**
     * Default campaign hook.
     */
   @JSName("CampaignHook")
-  var CampaignHook_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledCampaignHook] = js.undefined
+  var CampaignHook_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledCampaignHook] = js.native
   /**
     * The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own.
     */
   @JSName("Limits")
-  var Limits_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledCampaignLimits] = js.undefined
+  var Limits_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledCampaignLimits] = js.native
   /**
     * The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own.
     */
   @JSName("QuietTime")
-  var QuietTime_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledQuietTime] = js.undefined
+  var QuietTime_UnmarshalledApplicationSettingsResource: js.UndefOr[UnmarshalledQuietTime] = js.native
 }
 
 object UnmarshalledApplicationSettingsResource {
   @scala.inline
-  def apply(
-    ApplicationId: String = null,
-    CampaignHook: UnmarshalledCampaignHook = null,
-    LastModifiedDate: String = null,
-    Limits: UnmarshalledCampaignLimits = null,
-    QuietTime: UnmarshalledQuietTime = null
-  ): UnmarshalledApplicationSettingsResource = {
+  def apply(): UnmarshalledApplicationSettingsResource = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
-    if (CampaignHook != null) __obj.updateDynamic("CampaignHook")(CampaignHook.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
-    if (QuietTime != null) __obj.updateDynamic("QuietTime")(QuietTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledApplicationSettingsResource]
   }
+  @scala.inline
+  implicit class UnmarshalledApplicationSettingsResourceOps[Self <: UnmarshalledApplicationSettingsResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCampaignHook(value: UnmarshalledCampaignHook): Self = this.set("CampaignHook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignHook: Self = this.set("CampaignHook", js.undefined)
+    @scala.inline
+    def setLimits(value: UnmarshalledCampaignLimits): Self = this.set("Limits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimits: Self = this.set("Limits", js.undefined)
+    @scala.inline
+    def setQuietTime(value: UnmarshalledQuietTime): Self = this.set("QuietTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuietTime: Self = this.set("QuietTime", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ Simple CORS middleware for Zeit's Micro
 | ------------------ | :-------------: |
 | Full name          | micro-cors |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 52 |
-| # downloads        | 245471 |
+| # releases         | 6 |
+| # dependents       | 54 |
+| # downloads        | 255957 |
 | # stars            | 1 |
 
 ## Links

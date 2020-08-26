@@ -29,6 +29,7 @@ class ResourceProjectsLocationsImageversions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListImageVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListImageVersionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListImageVersionsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsImageversionsList): GaxiosPromise[SchemaListImageVersionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsImageversionsList,

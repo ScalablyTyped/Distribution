@@ -19,10 +19,8 @@ class RandGamma protected () extends RandomGamma {
   /** Handles proper rounding for non-floating-point numbers. */
   var convertValue: js.Any = js.native
   var d: js.Any = js.native
-  var dtype: js.UndefOr[js.Any] = js.native
+  var dtype: js.Any = js.native
   var randn: js.Any = js.native
   var randu: js.Any = js.native
-  /* CompleteClass */
-  override def nextValue(): Double = js.native
 }
 

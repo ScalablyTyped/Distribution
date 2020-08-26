@@ -14,10 +14,26 @@ trait UpdateGlobalNetworkResponse extends js.Object {
 
 object UpdateGlobalNetworkResponse {
   @scala.inline
-  def apply(GlobalNetwork: GlobalNetwork = null): UpdateGlobalNetworkResponse = {
+  def apply(): UpdateGlobalNetworkResponse = {
     val __obj = js.Dynamic.literal()
-    if (GlobalNetwork != null) __obj.updateDynamic("GlobalNetwork")(GlobalNetwork.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGlobalNetworkResponse]
   }
+  @scala.inline
+  implicit class UpdateGlobalNetworkResponseOps[Self <: UpdateGlobalNetworkResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGlobalNetwork(value: GlobalNetwork): Self = this.set("GlobalNetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalNetwork: Self = this.set("GlobalNetwork", js.undefined)
+  }
+  
 }
 

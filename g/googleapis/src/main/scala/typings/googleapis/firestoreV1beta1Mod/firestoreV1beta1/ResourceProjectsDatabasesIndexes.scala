@@ -36,6 +36,7 @@ class ResourceProjectsDatabasesIndexes protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(params: ParamsResourceProjectsDatabasesIndexesCreate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(
     params: ParamsResourceProjectsDatabasesIndexesCreate,
@@ -66,6 +67,7 @@ class ResourceProjectsDatabasesIndexes protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsDatabasesIndexesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsDatabasesIndexesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -93,6 +95,7 @@ class ResourceProjectsDatabasesIndexes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1Index] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1Index]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1Index] = js.native
   def get(params: ParamsResourceProjectsDatabasesIndexesGet): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1Index] = js.native
   def get(
     params: ParamsResourceProjectsDatabasesIndexesGet,
@@ -126,6 +129,7 @@ class ResourceProjectsDatabasesIndexes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse] = js.native
   def list(params: ParamsResourceProjectsDatabasesIndexesList): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse] = js.native
   def list(
     params: ParamsResourceProjectsDatabasesIndexesList,

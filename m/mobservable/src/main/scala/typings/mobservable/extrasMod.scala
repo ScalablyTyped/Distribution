@@ -21,9 +21,11 @@ object extrasMod extends js.Object {
   def getObserverTree(thing: js.Any): IObserverTree = js.native
   def getObserverTree(thing: js.Any, property: String): IObserverTree = js.native
   def reportTransition(node: DataNode, state: String): Unit = js.native
+  def reportTransition(node: DataNode, state: String, changed: js.UndefOr[scala.Nothing], newValue: js.Any): Unit = js.native
   def reportTransition(node: DataNode, state: String, changed: Boolean): Unit = js.native
   def reportTransition(node: DataNode, state: String, changed: Boolean, newValue: js.Any): Unit = js.native
   def trackTransitions(): Lambda = js.native
+  def trackTransitions(extensive: js.UndefOr[scala.Nothing], onReport: js.Function1[/* lines */ ITransitionEvent, Unit]): Lambda = js.native
   def trackTransitions(extensive: Boolean): Lambda = js.native
   def trackTransitions(extensive: Boolean, onReport: js.Function1[/* lines */ ITransitionEvent, Unit]): Lambda = js.native
 }

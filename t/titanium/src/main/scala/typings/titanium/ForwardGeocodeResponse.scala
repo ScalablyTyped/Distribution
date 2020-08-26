@@ -9,105 +9,140 @@ import scala.scalajs.js.annotation._
   * [forwardGeocoder](Titanium.Geolocation.forwardGeocoder) method.
   * Note that Android includes a number of extra fields.
   */
+@js.native
 trait ForwardGeocodeResponse extends ErrorResponse {
   /**
     * Estimated accuracy of the geocoding, in meters.
     */
-  var accuracy: js.UndefOr[Double] = js.undefined
+  var accuracy: js.UndefOr[Double] = js.native
   /**
     * Full address.
     */
-  var address: js.UndefOr[java.lang.String] = js.undefined
+  var address: js.UndefOr[java.lang.String] = js.native
   /**
     * City name.
     */
-  var city: js.UndefOr[java.lang.String] = js.undefined
+  var city: js.UndefOr[java.lang.String] = js.native
   /**
     * Country name.
     */
-  var country: js.UndefOr[java.lang.String] = js.undefined
+  var country: js.UndefOr[java.lang.String] = js.native
   /**
     * Country code.
     */
-  var countryCode: js.UndefOr[java.lang.String] = js.undefined
+  var countryCode: js.UndefOr[java.lang.String] = js.native
   /**
     * Country code. Same as `countryCode`.
     */
-  var country_code: js.UndefOr[java.lang.String] = js.undefined
+  var country_code: js.UndefOr[java.lang.String] = js.native
   /**
     * Display address. Identical to `address`.
     */
-  var displayAddress: js.UndefOr[java.lang.String] = js.undefined
+  var displayAddress: js.UndefOr[java.lang.String] = js.native
   /**
     * Latitude of the geocoded address.
     */
-  var latitude: js.UndefOr[java.lang.String] = js.undefined
+  var latitude: js.UndefOr[java.lang.String] = js.native
   /**
     * Longitude of the geocoded address.
     */
-  var longitude: js.UndefOr[java.lang.String] = js.undefined
+  var longitude: js.UndefOr[java.lang.String] = js.native
   /**
     * Postal code.
     */
-  var postalCode: js.UndefOr[java.lang.String] = js.undefined
+  var postalCode: js.UndefOr[java.lang.String] = js.native
   /**
     * First line of region.
     */
-  var region1: js.UndefOr[java.lang.String] = js.undefined
+  var region1: js.UndefOr[java.lang.String] = js.native
   /**
     * Not used.
     */
-  var region2: js.UndefOr[java.lang.String] = js.undefined
+  var region2: js.UndefOr[java.lang.String] = js.native
   /**
     * Street name, without street address.
     */
-  var street: js.UndefOr[java.lang.String] = js.undefined
+  var street: js.UndefOr[java.lang.String] = js.native
   /**
     * Street name.
     */
-  var street1: js.UndefOr[java.lang.String] = js.undefined
+  var street1: js.UndefOr[java.lang.String] = js.native
 }
 
 object ForwardGeocodeResponse {
   @scala.inline
-  def apply(
-    accuracy: js.UndefOr[Double] = js.undefined,
-    address: java.lang.String = null,
-    city: java.lang.String = null,
-    code: js.UndefOr[Double] = js.undefined,
-    country: java.lang.String = null,
-    countryCode: java.lang.String = null,
-    country_code: java.lang.String = null,
-    displayAddress: java.lang.String = null,
-    error: java.lang.String = null,
-    latitude: java.lang.String = null,
-    longitude: java.lang.String = null,
-    postalCode: java.lang.String = null,
-    region1: java.lang.String = null,
-    region2: java.lang.String = null,
-    street: java.lang.String = null,
-    street1: java.lang.String = null,
-    success: js.UndefOr[Boolean] = js.undefined
-  ): ForwardGeocodeResponse = {
+  def apply(): ForwardGeocodeResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accuracy)) __obj.updateDynamic("accuracy")(accuracy.get.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
-    if (country_code != null) __obj.updateDynamic("country_code")(country_code.asInstanceOf[js.Any])
-    if (displayAddress != null) __obj.updateDynamic("displayAddress")(displayAddress.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
-    if (region1 != null) __obj.updateDynamic("region1")(region1.asInstanceOf[js.Any])
-    if (region2 != null) __obj.updateDynamic("region2")(region2.asInstanceOf[js.Any])
-    if (street != null) __obj.updateDynamic("street")(street.asInstanceOf[js.Any])
-    if (street1 != null) __obj.updateDynamic("street1")(street1.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardGeocodeResponse]
   }
+  @scala.inline
+  implicit class ForwardGeocodeResponseOps[Self <: ForwardGeocodeResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccuracy: Self = this.set("accuracy", js.undefined)
+    @scala.inline
+    def setAddress(value: java.lang.String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setCity(value: java.lang.String): Self = this.set("city", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("city", js.undefined)
+    @scala.inline
+    def setCountry(value: java.lang.String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setCountryCode(value: java.lang.String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    @scala.inline
+    def setCountry_code(value: java.lang.String): Self = this.set("country_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry_code: Self = this.set("country_code", js.undefined)
+    @scala.inline
+    def setDisplayAddress(value: java.lang.String): Self = this.set("displayAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayAddress: Self = this.set("displayAddress", js.undefined)
+    @scala.inline
+    def setLatitude(value: java.lang.String): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    @scala.inline
+    def setLongitude(value: java.lang.String): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    @scala.inline
+    def setPostalCode(value: java.lang.String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostalCode: Self = this.set("postalCode", js.undefined)
+    @scala.inline
+    def setRegion1(value: java.lang.String): Self = this.set("region1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion1: Self = this.set("region1", js.undefined)
+    @scala.inline
+    def setRegion2(value: java.lang.String): Self = this.set("region2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion2: Self = this.set("region2", js.undefined)
+    @scala.inline
+    def setStreet(value: java.lang.String): Self = this.set("street", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreet: Self = this.set("street", js.undefined)
+    @scala.inline
+    def setStreet1(value: java.lang.String): Self = this.set("street1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreet1: Self = this.set("street1", js.undefined)
+  }
+  
 }
 

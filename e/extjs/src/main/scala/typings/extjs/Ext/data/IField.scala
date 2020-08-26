@@ -1,105 +1,110 @@
 package typings.extjs.Ext.data
 
-import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
-import typings.extjs.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IField extends IBase {
   /** [Config Option] (Function) */
-  var convert: js.UndefOr[js.Any] = js.undefined
+  var convert: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var dateFormat: js.UndefOr[String] = js.undefined
+  var dateFormat: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var dateReadFormat: js.UndefOr[String] = js.undefined
+  var dateReadFormat: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var dateWriteFormat: js.UndefOr[String] = js.undefined
+  var dateWriteFormat: js.UndefOr[String] = js.native
   /** [Config Option] (Object) */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String/Number) */
-  var mapping: js.UndefOr[js.Any] = js.undefined
+  var mapping: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** [Config Option] (Boolean) */
-  var persist: js.UndefOr[Boolean] = js.undefined
+  var persist: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Function) */
-  var serialize: js.UndefOr[js.Any] = js.undefined
+  var serialize: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var sortDir: js.UndefOr[String] = js.undefined
+  var sortDir: js.UndefOr[String] = js.native
   /** [Config Option] (Function/String) */
-  var sortType: js.UndefOr[js.Any] = js.undefined
+  var sortType: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String/Object) */
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean) */
-  var useNull: js.UndefOr[Boolean] = js.undefined
+  var useNull: js.UndefOr[Boolean] = js.native
 }
 
 object IField {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    convert: js.Any = null,
-    dateFormat: String = null,
-    dateReadFormat: String = null,
-    dateWriteFormat: String = null,
-    defaultValue: js.Any = null,
-    extend: String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => IField = null,
-    mapping: js.Any = null,
-    mixins: js.Any = null,
-    name: String = null,
-    persist: js.UndefOr[Boolean] = js.undefined,
-    requires: Array = null,
-    self: IClass = null,
-    serialize: js.Any = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    sortDir: String = null,
-    sortType: js.Any = null,
-    statics: js.Any = null,
-    `type`: js.Any = null,
-    useNull: js.UndefOr[Boolean] = js.undefined,
-    uses: Array = null
-  ): IField = {
+  def apply(): IField = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (convert != null) __obj.updateDynamic("convert")(convert.asInstanceOf[js.Any])
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (dateReadFormat != null) __obj.updateDynamic("dateReadFormat")(dateReadFormat.asInstanceOf[js.Any])
-    if (dateWriteFormat != null) __obj.updateDynamic("dateWriteFormat")(dateWriteFormat.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.get.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (serialize != null) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (sortDir != null) __obj.updateDynamic("sortDir")(sortDir.asInstanceOf[js.Any])
-    if (sortType != null) __obj.updateDynamic("sortType")(sortType.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNull)) __obj.updateDynamic("useNull")(useNull.get.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IField]
   }
+  @scala.inline
+  implicit class IFieldOps[Self <: IField] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConvert(value: js.Any): Self = this.set("convert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvert: Self = this.set("convert", js.undefined)
+    @scala.inline
+    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    @scala.inline
+    def setDateReadFormat(value: String): Self = this.set("dateReadFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateReadFormat: Self = this.set("dateReadFormat", js.undefined)
+    @scala.inline
+    def setDateWriteFormat(value: String): Self = this.set("dateWriteFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateWriteFormat: Self = this.set("dateWriteFormat", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setMapping(value: js.Any): Self = this.set("mapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapping: Self = this.set("mapping", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPersist(value: Boolean): Self = this.set("persist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersist: Self = this.set("persist", js.undefined)
+    @scala.inline
+    def setSerialize(value: js.Any): Self = this.set("serialize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerialize: Self = this.set("serialize", js.undefined)
+    @scala.inline
+    def setSortDir(value: String): Self = this.set("sortDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortDir: Self = this.set("sortDir", js.undefined)
+    @scala.inline
+    def setSortType(value: js.Any): Self = this.set("sortType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortType: Self = this.set("sortType", js.undefined)
+    @scala.inline
+    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUseNull(value: Boolean): Self = this.set("useNull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseNull: Self = this.set("useNull", js.undefined)
+  }
+  
 }
 

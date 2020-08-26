@@ -43,14 +43,46 @@ trait Mongoose extends js.Object {
   def get(key: String): js.Any = js.native
   def isValidObjectId(value: js.Any): Boolean = js.native
   def model[T /* <: Document */](name: String): Model_[T, js.Object] = js.native
+  def model[T /* <: Document */](
+    name: String,
+    schema: js.UndefOr[scala.Nothing],
+    collection: js.UndefOr[scala.Nothing],
+    skipInit: Boolean
+  ): Model_[T, js.Object] = js.native
+  def model[T /* <: Document */](name: String, schema: js.UndefOr[scala.Nothing], collection: String): Model_[T, js.Object] = js.native
+  def model[T /* <: Document */](name: String, schema: js.UndefOr[scala.Nothing], collection: String, skipInit: Boolean): Model_[T, js.Object] = js.native
   def model[T /* <: Document */](name: String, schema: typings.mongoose.mod.Schema[_]): Model_[T, js.Object] = js.native
+  def model[T /* <: Document */](
+    name: String,
+    schema: typings.mongoose.mod.Schema[_],
+    collection: js.UndefOr[scala.Nothing],
+    skipInit: Boolean
+  ): Model_[T, js.Object] = js.native
   def model[T /* <: Document */](name: String, schema: typings.mongoose.mod.Schema[_], collection: String): Model_[T, js.Object] = js.native
   def model[T /* <: Document */](name: String, schema: typings.mongoose.mod.Schema[_], collection: String, skipInit: Boolean): Model_[T, js.Object] = js.native
   def modelNames(): js.Array[String] = js.native
   @JSName("model")
   def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String): U = js.native
   @JSName("model")
+  def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](
+    name: String,
+    schema: js.UndefOr[scala.Nothing],
+    collection: js.UndefOr[scala.Nothing],
+    skipInit: Boolean
+  ): U = js.native
+  @JSName("model")
+  def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String, schema: js.UndefOr[scala.Nothing], collection: String): U = js.native
+  @JSName("model")
+  def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String, schema: js.UndefOr[scala.Nothing], collection: String, skipInit: Boolean): U = js.native
+  @JSName("model")
   def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String, schema: typings.mongoose.mod.Schema[_]): U = js.native
+  @JSName("model")
+  def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](
+    name: String,
+    schema: typings.mongoose.mod.Schema[_],
+    collection: js.UndefOr[scala.Nothing],
+    skipInit: Boolean
+  ): U = js.native
   @JSName("model")
   def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String, schema: typings.mongoose.mod.Schema[_], collection: String): U = js.native
   @JSName("model")
@@ -61,6 +93,10 @@ trait Mongoose extends js.Object {
   def pluralize(fn: js.Function1[/* str */ String, String]): js.Function1[/* str */ String, String] = js.native
   def set(key: String, value: js.Any): Unit = js.native
   def startSession(): js.Promise[typings.mongodb.mod.ClientSession] = js.native
+  def startSession(
+    options: js.UndefOr[scala.Nothing],
+    cb: js.Function2[/* err */ js.Any, /* session */ typings.mongodb.mod.ClientSession, Unit]
+  ): js.Promise[typings.mongodb.mod.ClientSession] = js.native
   def startSession(options: SessionOptions): js.Promise[typings.mongodb.mod.ClientSession] = js.native
   def startSession(
     options: SessionOptions,

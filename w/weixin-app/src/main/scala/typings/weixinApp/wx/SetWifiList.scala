@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SetWifiList extends js.Object {
   /** Wi-Fi 设备bssid */
-  var BSSID: String
+  var BSSID: String = js.native
   /** Wi-Fi 设备ssid */
-  var SSID: String
+  var SSID: String = js.native
   /** Wi-Fi 设备密码 */
-  var password: String
+  var password: String = js.native
 }
 
 object SetWifiList {
@@ -19,5 +20,24 @@ object SetWifiList {
     val __obj = js.Dynamic.literal(BSSID = BSSID.asInstanceOf[js.Any], SSID = SSID.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetWifiList]
   }
+  @scala.inline
+  implicit class SetWifiListOps[Self <: SetWifiList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBSSID(value: String): Self = this.set("BSSID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSSID(value: String): Self = this.set("SSID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -43,6 +43,7 @@ trait Picker extends js.Object {
     * @returns An array of mesh instances that are in the selection.
     */
   def getSelection(x: Double, y: Double): js.Array[MeshInstance] = js.native
+  def getSelection(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): js.Array[MeshInstance] = js.native
   def getSelection(x: Double, y: Double, width: Double): js.Array[MeshInstance] = js.native
   def getSelection(x: Double, y: Double, width: Double, height: Double): js.Array[MeshInstance] = js.native
   /**

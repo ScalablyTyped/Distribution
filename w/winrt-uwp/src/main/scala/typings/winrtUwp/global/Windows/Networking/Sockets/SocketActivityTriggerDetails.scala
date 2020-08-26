@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Networking.Sockets.SocketActivityTriggerDetails")
 @js.native
 abstract class SocketActivityTriggerDetails ()
-  extends typings.winrtUwp.Windows.Networking.Sockets.SocketActivityTriggerDetails {
-  /** Get the reason the SocketActivityTrigger occurred. */
-  /* CompleteClass */
-  override var reason: typings.winrtUwp.Windows.Networking.Sockets.SocketActivityTriggerReason = js.native
-  /** Get the SocketActivityInformation object for socket that caused the SocketActivityTrigger to occur. */
-  /* CompleteClass */
-  override var socketInformation: typings.winrtUwp.Windows.Networking.Sockets.SocketActivityInformation = js.native
-}
+  extends typings.winrtUwp.Windows.Networking.Sockets.SocketActivityTriggerDetails
 

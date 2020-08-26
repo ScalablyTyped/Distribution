@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 class NoViewStrategy () extends js.Object {
   def this(dependencies: js.Array[String | js.Function | js.Object]) = this()
+  def this(dependencies: js.UndefOr[scala.Nothing], dependencyBaseUrl: String) = this()
   def this(dependencies: js.Array[String | js.Function | js.Object], dependencyBaseUrl: String) = this()
   /**
     * Loads a view factory.
@@ -23,6 +24,12 @@ class NoViewStrategy () extends js.Object {
     * @return A promise for the view factory that is produced by this strategy.
     */
   def loadViewFactory(viewEngine: ViewEngine, compileInstruction: ViewCompileInstruction): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(
+    viewEngine: ViewEngine,
+    compileInstruction: ViewCompileInstruction,
+    loadContext: js.UndefOr[scala.Nothing],
+    target: js.Any
+  ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(
     viewEngine: ViewEngine,
     compileInstruction: ViewCompileInstruction,

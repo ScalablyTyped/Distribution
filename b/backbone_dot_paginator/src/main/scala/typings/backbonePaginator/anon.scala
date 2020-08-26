@@ -22,7 +22,9 @@ object anon extends js.Object {
           PageableCollection[Model[js.Any, ModelSetOptions]]
         ]
        with Instantiable2[
-          /* models */ js.Array[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any], 
+          js.UndefOr[
+            /* models */ js.Array[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any]
+          ], 
           /* options */ PageableInitialOptions, 
           PageableCollection[Model[js.Any, ModelSetOptions]]
         ] {

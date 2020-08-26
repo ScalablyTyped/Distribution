@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object forceCenter extends js.Object {
   def apply[NodeDatum /* <: SimulationNodeDatum */](): ForceCenter_[NodeDatum] = js.native
+  def apply[NodeDatum /* <: SimulationNodeDatum */](x: js.UndefOr[scala.Nothing], y: Double): ForceCenter_[NodeDatum] = js.native
   def apply[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceCenter_[NodeDatum] = js.native
   def apply[NodeDatum /* <: SimulationNodeDatum */](x: Double, y: Double): ForceCenter_[NodeDatum] = js.native
 }

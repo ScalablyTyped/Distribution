@@ -19,8 +19,76 @@ class Enum protected () extends ReflectionObject {
     */
   def this(name: String) = this()
   def this(name: String, values: StringDictionary[Double]) = this()
+  def this(name: String, values: js.UndefOr[scala.Nothing], options: StringDictionary[js.Any]) = this()
   def this(name: String, values: StringDictionary[Double], options: StringDictionary[js.Any]) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: StringDictionary[js.Any],
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: js.UndefOr[scala.Nothing],
+    comment: String
+  ) = this()
   def this(name: String, values: StringDictionary[Double], options: StringDictionary[js.Any], comment: String) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    comment: js.UndefOr[scala.Nothing],
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    comment: String,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: StringDictionary[js.Any],
+    comment: js.UndefOr[scala.Nothing],
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: StringDictionary[js.Any],
+    comment: String,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: js.UndefOr[scala.Nothing],
+    comment: js.UndefOr[scala.Nothing],
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: js.UndefOr[scala.Nothing],
+    comment: String,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: StringDictionary[js.Any],
+    comment: js.UndefOr[scala.Nothing],
+    comments: StringDictionary[String]
+  ) = this()
   def this(
     name: String,
     values: StringDictionary[Double],

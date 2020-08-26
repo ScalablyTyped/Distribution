@@ -32,6 +32,7 @@ class ResourceInstalls protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceInstallsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceInstallsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -58,6 +59,7 @@ class ResourceInstalls protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInstall] = js.native
   def get(callback: BodyResponseCallback[SchemaInstall]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstall] = js.native
   def get(params: ParamsResourceInstallsGet): GaxiosPromise[SchemaInstall] = js.native
   def get(params: ParamsResourceInstallsGet, callback: BodyResponseCallback[SchemaInstall]): Unit = js.native
   def get(
@@ -88,6 +90,7 @@ class ResourceInstalls protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaInstallsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaInstallsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstallsListResponse] = js.native
   def list(params: ParamsResourceInstallsList): GaxiosPromise[SchemaInstallsListResponse] = js.native
   def list(params: ParamsResourceInstallsList, callback: BodyResponseCallback[SchemaInstallsListResponse]): Unit = js.native
   def list(
@@ -121,6 +124,7 @@ class ResourceInstalls protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaInstall] = js.native
   def patch(callback: BodyResponseCallback[SchemaInstall]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstall] = js.native
   def patch(params: ParamsResourceInstallsPatch): GaxiosPromise[SchemaInstall] = js.native
   def patch(params: ParamsResourceInstallsPatch, callback: BodyResponseCallback[SchemaInstall]): Unit = js.native
   def patch(
@@ -154,6 +158,7 @@ class ResourceInstalls protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaInstall] = js.native
   def update(callback: BodyResponseCallback[SchemaInstall]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstall] = js.native
   def update(params: ParamsResourceInstallsUpdate): GaxiosPromise[SchemaInstall] = js.native
   def update(params: ParamsResourceInstallsUpdate, callback: BodyResponseCallback[SchemaInstall]): Unit = js.native
   def update(

@@ -12,7 +12,7 @@ The type definition for IPFS package
 | Keywords           | ipfs, types, typestub |
 | # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 878 |
+| # downloads        | 866 |
 | # stars            | 0 |
 
 ## Links

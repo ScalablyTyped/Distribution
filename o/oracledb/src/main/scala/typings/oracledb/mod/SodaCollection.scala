@@ -197,5 +197,32 @@ trait SodaCollection extends js.Object {
     newDocument: Record[String, _],
     callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
   ): Unit = js.native
+  /**
+    * This method behaves like sodaCollection.insertOne() with the exception that if a document with the same key already exists, then it is updated instead.
+    * 
+    * The collection must use client-assigned keys keys, which is why save() accepts only a SodaDocument, unlike insertOne(). If the collection is not configured
+    * with client-assigned keys, then the behavior is exactly the same as sodaCollection.insertOne().
+    * 
+    * @since 5.0
+    */
+  def save(document: SodaDocument): js.Promise[SodaDocument] = js.native
+  def save(document: SodaDocument, cb: js.Function2[/* err */ DBError, /* doc */ SodaDocument, Unit]): Unit = js.native
+  /**
+    * This method behaves like sodaCollection.insertOneAndGet() with the exception that if a document with the same key already exists, then it is updated instead.
+    * 
+    * The collection must use client-assigned keys keys, which is why saveAndGet() accepts only a SodaDocument, unlike insertOneAndGet(). If the collection is not
+    * configured with client-assigned keys, then the behavior is exactly the same as sodaCollection.insertOneAndGet().
+    * 
+    * @since 5.0
+    */
+  def saveAndGet(document: SodaDocument): js.Promise[SodaDocument] = js.native
+  def saveAndGet(document: SodaDocument, cb: js.Function2[/* err */ DBError, /* doc */ SodaDocument, Unit]): Unit = js.native
+  /**
+    * This method truncates a collection, removing all documents. The collection will not be deleted.
+    * 
+    * @since 5.0
+    */
+  def truncate(): js.Promise[Unit] = js.native
+  def truncate(cb: js.Function1[/* err */ DBError, Unit]): Unit = js.native
 }
 

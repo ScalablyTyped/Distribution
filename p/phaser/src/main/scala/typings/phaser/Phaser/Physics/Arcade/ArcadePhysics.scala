@@ -59,7 +59,32 @@ trait ArcadePhysics extends js.Object {
     * @param ySpeedMax The maximum y velocity the game object can reach. Default 500.
     */
   def accelerateTo(gameObject: GameObject, x: Double, y: Double): Double = js.native
+  def accelerateTo(
+    gameObject: GameObject,
+    x: Double,
+    y: Double,
+    speed: js.UndefOr[scala.Nothing],
+    xSpeedMax: js.UndefOr[scala.Nothing],
+    ySpeedMax: Double
+  ): Double = js.native
+  def accelerateTo(gameObject: GameObject, x: Double, y: Double, speed: js.UndefOr[scala.Nothing], xSpeedMax: Double): Double = js.native
+  def accelerateTo(
+    gameObject: GameObject,
+    x: Double,
+    y: Double,
+    speed: js.UndefOr[scala.Nothing],
+    xSpeedMax: Double,
+    ySpeedMax: Double
+  ): Double = js.native
   def accelerateTo(gameObject: GameObject, x: Double, y: Double, speed: Double): Double = js.native
+  def accelerateTo(
+    gameObject: GameObject,
+    x: Double,
+    y: Double,
+    speed: Double,
+    xSpeedMax: js.UndefOr[scala.Nothing],
+    ySpeedMax: Double
+  ): Double = js.native
   def accelerateTo(gameObject: GameObject, x: Double, y: Double, speed: Double, xSpeedMax: Double): Double = js.native
   def accelerateTo(gameObject: GameObject, x: Double, y: Double, speed: Double, xSpeedMax: Double, ySpeedMax: Double): Double = js.native
   /**
@@ -76,7 +101,34 @@ trait ArcadePhysics extends js.Object {
     * @param ySpeedMax The maximum y velocity the game object can reach. Default 500.
     */
   def accelerateToObject(gameObject: GameObject, destination: GameObject): Double = js.native
+  def accelerateToObject(
+    gameObject: GameObject,
+    destination: GameObject,
+    speed: js.UndefOr[scala.Nothing],
+    xSpeedMax: js.UndefOr[scala.Nothing],
+    ySpeedMax: Double
+  ): Double = js.native
+  def accelerateToObject(
+    gameObject: GameObject,
+    destination: GameObject,
+    speed: js.UndefOr[scala.Nothing],
+    xSpeedMax: Double
+  ): Double = js.native
+  def accelerateToObject(
+    gameObject: GameObject,
+    destination: GameObject,
+    speed: js.UndefOr[scala.Nothing],
+    xSpeedMax: Double,
+    ySpeedMax: Double
+  ): Double = js.native
   def accelerateToObject(gameObject: GameObject, destination: GameObject, speed: Double): Double = js.native
+  def accelerateToObject(
+    gameObject: GameObject,
+    destination: GameObject,
+    speed: Double,
+    xSpeedMax: js.UndefOr[scala.Nothing],
+    ySpeedMax: Double
+  ): Double = js.native
   def accelerateToObject(gameObject: GameObject, destination: GameObject, speed: Double, xSpeedMax: Double): Double = js.native
   def accelerateToObject(
     gameObject: GameObject,
@@ -126,21 +178,52 @@ trait ArcadePhysics extends js.Object {
     * @param callbackContext The context in which to run the callbacks.
     */
   def collide(object1: ArcadeColliderType): Boolean = js.native
-  def collide(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
-  def collide(object1: ArcadeColliderType, object2: ArcadeColliderType, collideCallback: ArcadePhysicsCallback): Boolean = js.native
   def collide(
     object1: ArcadeColliderType,
-    object2: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collide(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def collide(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collide(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def collide(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collide(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
     collideCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback
   ): Boolean = js.native
   def collide(
     object1: ArcadeColliderType,
-    object2: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
     collideCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
+  def collide(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
   /**
     * This advanced method is specifically for testing for collision between a single Sprite and an array of Tile objects.
     * 
@@ -163,7 +246,34 @@ trait ArcadePhysics extends js.Object {
     * @param callbackContext The context in which to run the callbacks.
     */
   def collideTiles(sprite: GameObject, tiles: js.Array[Tile]): Boolean = js.native
+  def collideTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def collideTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def collideTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
   def collideTiles(sprite: GameObject, tiles: js.Array[Tile], collideCallback: ArcadePhysicsCallback): Boolean = js.native
+  def collideTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
   def collideTiles(
     sprite: GameObject,
     tiles: js.Array[Tile],
@@ -215,6 +325,7 @@ trait ArcadePhysics extends js.Object {
     * @param maxTime Time given in milliseconds (1000 = 1 sec). If set the speed is adjusted so the object will arrive at destination in the given number of ms. Default 0.
     */
   def moveTo(gameObject: GameObject, x: Double, y: Double): Double = js.native
+  def moveTo(gameObject: GameObject, x: Double, y: Double, speed: js.UndefOr[scala.Nothing], maxTime: Double): Double = js.native
   def moveTo(gameObject: GameObject, x: Double, y: Double, speed: Double): Double = js.native
   def moveTo(gameObject: GameObject, x: Double, y: Double, speed: Double, maxTime: Double): Double = js.native
   /**
@@ -230,6 +341,7 @@ trait ArcadePhysics extends js.Object {
     * @param maxTime Time given in milliseconds (1000 = 1 sec). If set the speed is adjusted so the object will arrive at destination in the given number of ms. Default 0.
     */
   def moveToObject(gameObject: GameObject, destination: js.Object): Double = js.native
+  def moveToObject(gameObject: GameObject, destination: js.Object, speed: js.UndefOr[scala.Nothing], maxTime: Double): Double = js.native
   def moveToObject(gameObject: GameObject, destination: js.Object, speed: Double): Double = js.native
   def moveToObject(gameObject: GameObject, destination: js.Object, speed: Double, maxTime: Double): Double = js.native
   /**
@@ -241,21 +353,52 @@ trait ArcadePhysics extends js.Object {
     * @param callbackContext The context in which to run the callbacks.
     */
   def overlap(object1: ArcadeColliderType): Boolean = js.native
-  def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
-  def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType, collideCallback: ArcadePhysicsCallback): Boolean = js.native
   def overlap(
     object1: ArcadeColliderType,
-    object2: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def overlap(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def overlap(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlap(
+    object1: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
     collideCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback
   ): Boolean = js.native
   def overlap(
     object1: ArcadeColliderType,
-    object2: ArcadeColliderType,
+    object2: js.UndefOr[ArcadeColliderType],
     collideCallback: ArcadePhysicsCallback,
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
+  def overlap(object1: ArcadeColliderType, object2: ArcadeColliderType): Boolean = js.native
   /**
     * This method will search the given circular area and return an array of all physics bodies that
     * overlap with it. It can return either Dynamic, Static bodies or a mixture of both.
@@ -272,6 +415,13 @@ trait ArcadePhysics extends js.Object {
     * @param includeStatic Should the search include Static Bodies? Default false.
     */
   def overlapCirc(x: Double, y: Double, radius: Double): js.Array[Body | StaticBody] = js.native
+  def overlapCirc(
+    x: Double,
+    y: Double,
+    radius: Double,
+    includeDynamic: js.UndefOr[scala.Nothing],
+    includeStatic: Boolean
+  ): js.Array[Body | StaticBody] = js.native
   def overlapCirc(x: Double, y: Double, radius: Double, includeDynamic: Boolean): js.Array[Body | StaticBody] = js.native
   def overlapCirc(x: Double, y: Double, radius: Double, includeDynamic: Boolean, includeStatic: Boolean): js.Array[Body | StaticBody] = js.native
   /**
@@ -291,6 +441,14 @@ trait ArcadePhysics extends js.Object {
     * @param includeStatic Should the search include Static Bodies? Default false.
     */
   def overlapRect(x: Double, y: Double, width: Double, height: Double): js.Array[Body | StaticBody] = js.native
+  def overlapRect(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    includeDynamic: js.UndefOr[scala.Nothing],
+    includeStatic: Boolean
+  ): js.Array[Body | StaticBody] = js.native
   def overlapRect(x: Double, y: Double, width: Double, height: Double, includeDynamic: Boolean): js.Array[Body | StaticBody] = js.native
   def overlapRect(
     x: Double,
@@ -317,7 +475,34 @@ trait ArcadePhysics extends js.Object {
     * @param callbackContext The context in which to run the callbacks.
     */
   def overlapTiles(sprite: GameObject, tiles: js.Array[Tile]): Boolean = js.native
+  def overlapTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
+  def overlapTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback
+  ): Boolean = js.native
+  def overlapTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: js.UndefOr[scala.Nothing],
+    processCallback: ArcadePhysicsCallback,
+    callbackContext: js.Any
+  ): Boolean = js.native
   def overlapTiles(sprite: GameObject, tiles: js.Array[Tile], collideCallback: ArcadePhysicsCallback): Boolean = js.native
+  def overlapTiles(
+    sprite: GameObject,
+    tiles: js.Array[Tile],
+    collideCallback: ArcadePhysicsCallback,
+    processCallback: js.UndefOr[scala.Nothing],
+    callbackContext: js.Any
+  ): Boolean = js.native
   def overlapTiles(
     sprite: GameObject,
     tiles: js.Array[Tile],
@@ -352,6 +537,7 @@ trait ArcadePhysics extends js.Object {
     * @param vec2 The Vector2 in which the x and y properties will be set to the calculated velocity.
     */
   def velocityFromAngle(angle: Double): Vector2 = js.native
+  def velocityFromAngle(angle: Double, speed: js.UndefOr[scala.Nothing], vec2: Vector2): Vector2 = js.native
   def velocityFromAngle(angle: Double, speed: Double): Vector2 = js.native
   def velocityFromAngle(angle: Double, speed: Double, vec2: Vector2): Vector2 = js.native
   /**
@@ -362,6 +548,7 @@ trait ArcadePhysics extends js.Object {
     * @param vec2 The Vector2 in which the x and y properties will be set to the calculated velocity.
     */
   def velocityFromRotation(rotation: Double): Vector2 = js.native
+  def velocityFromRotation(rotation: Double, speed: js.UndefOr[scala.Nothing], vec2: Vector2): Vector2 = js.native
   def velocityFromRotation(rotation: Double, speed: Double): Vector2 = js.native
   def velocityFromRotation(rotation: Double, speed: Double, vec2: Vector2): Vector2 = js.native
 }

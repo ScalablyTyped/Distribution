@@ -16,7 +16,7 @@ trait VpcPeeringConnectionAccepterState extends js.Object {
   val acceptStatus: js.UndefOr[Input[String]] = js.native
   /**
     * A configuration block that describes [VPC Peering Connection]
-    * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
+    * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the accepter VPC.
     */
   val accepter: js.UndefOr[Input[VpcPeeringConnectionAccepterAccepter]] = js.native
   /**
@@ -37,13 +37,13 @@ trait VpcPeeringConnectionAccepterState extends js.Object {
   val peerVpcId: js.UndefOr[Input[String]] = js.native
   /**
     * A configuration block that describes [VPC Peering Connection]
-    * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
+    * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options set for the requester VPC.
     */
   val requester: js.UndefOr[Input[VpcPeeringConnectionAccepterRequester]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The ID of the accepter VPC.
     */
@@ -56,30 +56,62 @@ trait VpcPeeringConnectionAccepterState extends js.Object {
 
 object VpcPeeringConnectionAccepterState {
   @scala.inline
-  def apply(
-    acceptStatus: Input[String] = null,
-    accepter: Input[VpcPeeringConnectionAccepterAccepter] = null,
-    autoAccept: Input[Boolean] = null,
-    peerOwnerId: Input[String] = null,
-    peerRegion: Input[String] = null,
-    peerVpcId: Input[String] = null,
-    requester: Input[VpcPeeringConnectionAccepterRequester] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpcId: Input[String] = null,
-    vpcPeeringConnectionId: Input[String] = null
-  ): VpcPeeringConnectionAccepterState = {
+  def apply(): VpcPeeringConnectionAccepterState = {
     val __obj = js.Dynamic.literal()
-    if (acceptStatus != null) __obj.updateDynamic("acceptStatus")(acceptStatus.asInstanceOf[js.Any])
-    if (accepter != null) __obj.updateDynamic("accepter")(accepter.asInstanceOf[js.Any])
-    if (autoAccept != null) __obj.updateDynamic("autoAccept")(autoAccept.asInstanceOf[js.Any])
-    if (peerOwnerId != null) __obj.updateDynamic("peerOwnerId")(peerOwnerId.asInstanceOf[js.Any])
-    if (peerRegion != null) __obj.updateDynamic("peerRegion")(peerRegion.asInstanceOf[js.Any])
-    if (peerVpcId != null) __obj.updateDynamic("peerVpcId")(peerVpcId.asInstanceOf[js.Any])
-    if (requester != null) __obj.updateDynamic("requester")(requester.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
-    if (vpcPeeringConnectionId != null) __obj.updateDynamic("vpcPeeringConnectionId")(vpcPeeringConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcPeeringConnectionAccepterState]
   }
+  @scala.inline
+  implicit class VpcPeeringConnectionAccepterStateOps[Self <: VpcPeeringConnectionAccepterState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptStatus(value: Input[String]): Self = this.set("acceptStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptStatus: Self = this.set("acceptStatus", js.undefined)
+    @scala.inline
+    def setAccepter(value: Input[VpcPeeringConnectionAccepterAccepter]): Self = this.set("accepter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccepter: Self = this.set("accepter", js.undefined)
+    @scala.inline
+    def setAutoAccept(value: Input[Boolean]): Self = this.set("autoAccept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAccept: Self = this.set("autoAccept", js.undefined)
+    @scala.inline
+    def setPeerOwnerId(value: Input[String]): Self = this.set("peerOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerOwnerId: Self = this.set("peerOwnerId", js.undefined)
+    @scala.inline
+    def setPeerRegion(value: Input[String]): Self = this.set("peerRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerRegion: Self = this.set("peerRegion", js.undefined)
+    @scala.inline
+    def setPeerVpcId(value: Input[String]): Self = this.set("peerVpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerVpcId: Self = this.set("peerVpcId", js.undefined)
+    @scala.inline
+    def setRequester(value: Input[VpcPeeringConnectionAccepterRequester]): Self = this.set("requester", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequester: Self = this.set("requester", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+    @scala.inline
+    def setVpcPeeringConnectionId(value: Input[String]): Self = this.set("vpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcPeeringConnectionId: Self = this.set("vpcPeeringConnectionId", js.undefined)
+  }
+  
 }
 

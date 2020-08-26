@@ -4,19 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  fade  :boolean,   classes  :jquery-gray.jquery-gray.Classes}> */
+/* Inlined std.Partial<{  fade :boolean,   classes :jquery-gray.jquery-gray.Classes}> */
+@js.native
 trait Options extends js.Object {
-  var classes: js.UndefOr[Classes] = js.undefined
-  var fade: js.UndefOr[Boolean] = js.undefined
+  var classes: js.UndefOr[Classes] = js.native
+  var fade: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(classes: Classes = null, fade: js.UndefOr[Boolean] = js.undefined): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClasses(value: Classes): Self = this.set("classes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClasses: Self = this.set("classes", js.undefined)
+    @scala.inline
+    def setFade(value: Boolean): Self = this.set("fade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFade: Self = this.set("fade", js.undefined)
+  }
+  
 }
 

@@ -32,8 +32,66 @@ object variablesMod extends js.Object {
       */
     def this(`val`: Tensor[Rank]) = this()
     def this(`val`: Tensor[Rank], dtype: DataType) = this()
+    def this(`val`: Tensor[Rank], dtype: js.UndefOr[scala.Nothing], name: String) = this()
     def this(`val`: Tensor[Rank], dtype: DataType, name: String) = this()
+    def this(
+      `val`: Tensor[Rank],
+      dtype: js.UndefOr[scala.Nothing],
+      name: js.UndefOr[scala.Nothing],
+      trainable: Boolean
+    ) = this()
+    def this(`val`: Tensor[Rank], dtype: js.UndefOr[scala.Nothing], name: String, trainable: Boolean) = this()
+    def this(`val`: Tensor[Rank], dtype: DataType, name: js.UndefOr[scala.Nothing], trainable: Boolean) = this()
     def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Boolean) = this()
+    def this(
+      `val`: Tensor[Rank],
+      dtype: js.UndefOr[scala.Nothing],
+      name: js.UndefOr[scala.Nothing],
+      trainable: js.UndefOr[scala.Nothing],
+      constraint: Constraint
+    ) = this()
+    def this(
+      `val`: Tensor[Rank],
+      dtype: js.UndefOr[scala.Nothing],
+      name: js.UndefOr[scala.Nothing],
+      trainable: Boolean,
+      constraint: Constraint
+    ) = this()
+    def this(
+      `val`: Tensor[Rank],
+      dtype: js.UndefOr[scala.Nothing],
+      name: String,
+      trainable: js.UndefOr[scala.Nothing],
+      constraint: Constraint
+    ) = this()
+    def this(
+      `val`: Tensor[Rank],
+      dtype: js.UndefOr[scala.Nothing],
+      name: String,
+      trainable: Boolean,
+      constraint: Constraint
+    ) = this()
+    def this(
+      `val`: Tensor[Rank],
+      dtype: DataType,
+      name: js.UndefOr[scala.Nothing],
+      trainable: js.UndefOr[scala.Nothing],
+      constraint: Constraint
+    ) = this()
+    def this(
+      `val`: Tensor[Rank],
+      dtype: DataType,
+      name: js.UndefOr[scala.Nothing],
+      trainable: Boolean,
+      constraint: Constraint
+    ) = this()
+    def this(
+      `val`: Tensor[Rank],
+      dtype: DataType,
+      name: String,
+      trainable: js.UndefOr[scala.Nothing],
+      constraint: Constraint
+    ) = this()
     def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Boolean, constraint: Constraint) = this()
     val constraint: Constraint = js.native
     val dtype: DataType = js.native
@@ -70,42 +128,391 @@ object variablesMod extends js.Object {
   def batchGetValue(xs: js.Array[LayerVariable]): js.Array[Tensor[Rank]] = js.native
   def batchSetValue(variablesAndValues: js.Array[js.Tuple2[LayerVariable, Tensor[Rank]]]): Unit = js.native
   def eyeVariable(size: Double): LayerVariable = js.native
+  def eyeVariable(size: Double, dtype: js.UndefOr[scala.Nothing], name: String): LayerVariable = js.native
   def eyeVariable(size: Double, dtype: DataType): LayerVariable = js.native
   def eyeVariable(size: Double, dtype: DataType, name: String): LayerVariable = js.native
   def gradients(lossFn: js.Function0[Scalar], variables: js.Array[LayerVariable]): js.Array[Tensor[Rank]] = js.native
   def onesLike(x: Tensor[Rank]): LayerVariable = js.native
+  def onesLike(x: Tensor[Rank], dtype: js.UndefOr[scala.Nothing], name: String): LayerVariable = js.native
   def onesLike(x: Tensor[Rank], dtype: DataType): LayerVariable = js.native
   def onesLike(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = js.native
   def onesVariable(shape: Shape): LayerVariable = js.native
+  def onesVariable(shape: Shape, dtype: js.UndefOr[scala.Nothing], name: String): LayerVariable = js.native
   def onesVariable(shape: Shape, dtype: DataType): LayerVariable = js.native
   def onesVariable(shape: Shape, dtype: DataType, name: String): LayerVariable = js.native
   def randomNormalVariable(shape: Shape): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double
+  ): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
+  def randomNormalVariable(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: js.UndefOr[scala.Nothing], dtype: DataType): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: DataType,
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: DataType,
+    seed: Double
+  ): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: DataType,
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
+  def randomNormalVariable(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: Double): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double
+  ): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
+  def randomNormalVariable(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: Double, dtype: DataType): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: Double,
+    dtype: DataType,
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def randomNormalVariable(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: Double, dtype: DataType, seed: Double): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: Double,
+    dtype: DataType,
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
   def randomNormalVariable(shape: Shape, mean: Double): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double
+  ): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
+  def randomNormalVariable(shape: Shape, mean: Double, stddev: js.UndefOr[scala.Nothing], dtype: DataType): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: DataType,
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def randomNormalVariable(shape: Shape, mean: Double, stddev: js.UndefOr[scala.Nothing], dtype: DataType, seed: Double): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: DataType,
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
   def randomNormalVariable(shape: Shape, mean: Double, stddev: Double): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: js.UndefOr[scala.Nothing], seed: Double): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
   def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType): LayerVariable = js.native
+  def randomNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: Double,
+    dtype: DataType,
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
   def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double): LayerVariable = js.native
   def randomNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double, name: String): LayerVariable = js.native
   def randomUniformVariable(shape: Shape, minval: Double, maxval: Double): LayerVariable = js.native
+  def randomUniformVariable(
+    shape: Shape,
+    minval: Double,
+    maxval: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: js.UndefOr[scala.Nothing], seed: Double): LayerVariable = js.native
+  def randomUniformVariable(
+    shape: Shape,
+    minval: Double,
+    maxval: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
   def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: DataType): LayerVariable = js.native
+  def randomUniformVariable(
+    shape: Shape,
+    minval: Double,
+    maxval: Double,
+    dtype: DataType,
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
   def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: DataType, seed: Double): LayerVariable = js.native
   def randomUniformVariable(shape: Shape, minval: Double, maxval: Double, dtype: DataType, seed: Double, name: String): LayerVariable = js.native
   def truncatedNormalVariable(shape: Shape): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: js.UndefOr[scala.Nothing], dtype: DataType): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: DataType,
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: DataType,
+    seed: Double
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: DataType,
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: Double): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: Double, dtype: DataType): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: Double,
+    dtype: DataType,
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(shape: Shape, mean: js.UndefOr[scala.Nothing], stddev: Double, dtype: DataType, seed: Double): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: js.UndefOr[scala.Nothing],
+    stddev: Double,
+    dtype: DataType,
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
   def truncatedNormalVariable(shape: Shape, mean: Double): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: js.UndefOr[scala.Nothing], dtype: DataType): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: DataType,
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: js.UndefOr[scala.Nothing], dtype: DataType, seed: Double): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: js.UndefOr[scala.Nothing],
+    dtype: DataType,
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
   def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
+  def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: js.UndefOr[scala.Nothing], seed: Double): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: Double,
+    dtype: js.UndefOr[scala.Nothing],
+    seed: Double,
+    name: String
+  ): LayerVariable = js.native
   def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType): LayerVariable = js.native
+  def truncatedNormalVariable(
+    shape: Shape,
+    mean: Double,
+    stddev: Double,
+    dtype: DataType,
+    seed: js.UndefOr[scala.Nothing],
+    name: String
+  ): LayerVariable = js.native
   def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double): LayerVariable = js.native
   def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double, name: String): LayerVariable = js.native
   def update(x: LayerVariable, xNew: Tensor[Rank]): LayerVariable = js.native
   def updateAdd(x: LayerVariable, increment: Tensor[Rank]): LayerVariable = js.native
   def updateSub(x: LayerVariable, decrement: Tensor[Rank]): LayerVariable = js.native
   def variable(x: Tensor[Rank]): LayerVariable = js.native
+  def variable(
+    x: Tensor[Rank],
+    dtype: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ): LayerVariable = js.native
+  def variable(x: Tensor[Rank], dtype: js.UndefOr[scala.Nothing], name: String): LayerVariable = js.native
+  def variable(x: Tensor[Rank], dtype: js.UndefOr[scala.Nothing], name: String, constraint: Constraint): LayerVariable = js.native
   def variable(x: Tensor[Rank], dtype: DataType): LayerVariable = js.native
+  def variable(x: Tensor[Rank], dtype: DataType, name: js.UndefOr[scala.Nothing], constraint: Constraint): LayerVariable = js.native
   def variable(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = js.native
   def variable(x: Tensor[Rank], dtype: DataType, name: String, constraint: Constraint): LayerVariable = js.native
   def zerosLike(x: Tensor[Rank]): LayerVariable = js.native
+  def zerosLike(x: Tensor[Rank], dtype: js.UndefOr[scala.Nothing], name: String): LayerVariable = js.native
   def zerosLike(x: Tensor[Rank], dtype: DataType): LayerVariable = js.native
   def zerosLike(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = js.native
   def zerosVariable(shape: Shape): LayerVariable = js.native
+  def zerosVariable(shape: Shape, dtype: js.UndefOr[scala.Nothing], name: String): LayerVariable = js.native
   def zerosVariable(shape: Shape, dtype: DataType): LayerVariable = js.native
   def zerosVariable(shape: Shape, dtype: DataType, name: String): LayerVariable = js.native
 }

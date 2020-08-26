@@ -12,7 +12,7 @@ RSS/Atom/JSON feed parser
 | Keywords           | feed, rss, atom, json, parser |
 | # releases         | 4 |
 | # dependents       | 14 |
-| # downloads        | 166294 |
+| # downloads        | 166815 |
 | # stars            | 6 |
 
 ## Links

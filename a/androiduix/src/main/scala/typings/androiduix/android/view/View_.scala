@@ -25,24 +25,19 @@ import typings.androiduix.android.view.View.TransformationInfo
 import typings.androiduix.android.view.ViewGroup.LayoutParams
 import typings.androiduix.android.view.animation.Animation
 import typings.androiduix.androidui.attr.AttrBinder.ClassBinderMap
-import typings.androiduix.java.lang.JavaObject
-import typings.androiduix.java.lang.Runnable
-import typings.androiduix.java.util.ArrayList
+import typings.androiduix.java_.lang.JavaObject
+import typings.androiduix.java_.lang.Runnable
+import typings.androiduix.java_.util.ArrayList
 import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.View")
 @js.native
-class View_ protected ()
+trait View_
   extends JavaObject
      with Callback
      with typings.androiduix.android.view.KeyEvent.Callback {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyleAttr: Map[String, String]) = this()
   var _AttrObserver: js.Any = js.native
   var _attrBinder: js.Any = js.native
   var _lastSyncHeight: js.Any = js.native
@@ -135,7 +130,6 @@ class View_ protected ()
   /* private */ def _fireStateChangeToAttribute(oldState: js.Any, newState: js.Any): js.Any = js.native
   /* private */ def _getBinderAttrValue(key: js.Any): js.Any = js.native
   /* private */ def _initAttrObserver(): js.Any = js.native
-  /* private */ def _invalidateCache(): js.Any = js.native
   /* private */ def _invalidateCache(invalidateCache: js.Any): js.Any = js.native
   /* private */ def _invalidateRect(l: js.Any, t: js.Any, r: js.Any, b: js.Any): js.Any = js.native
   /* protected */ def _syncBoundAndScrollToElement(): Unit = js.native
@@ -147,6 +141,7 @@ class View_ protected ()
   def addTouchables(views: ArrayList[View]): Unit = js.native
   def assignParent(parent: ViewParent): Unit = js.native
   def awakenScrollBars(): Boolean = js.native
+  def awakenScrollBars(startDelay: js.UndefOr[scala.Nothing], invalidate: Boolean): Boolean = js.native
   def awakenScrollBars(startDelay: Double): Boolean = js.native
   def awakenScrollBars(startDelay: Double, invalidate: Boolean): Boolean = js.native
   def bringToFront(): Unit = js.native
@@ -157,7 +152,6 @@ class View_ protected ()
   def canScrollVertically(direction: Double): Boolean = js.native
   def cancelLongPress(): Unit = js.native
   def cancelPendingInputEvents(): Unit = js.native
-  /* private */ def checkForLongClick(): js.Any = js.native
   /* private */ def checkForLongClick(delayOffset: js.Any): js.Any = js.native
   def cleanupDraw(): Unit = js.native
   def clearAnimation(): Unit = js.native
@@ -196,7 +190,6 @@ class View_ protected ()
   def dispatchWindowFocusChanged(hasFocus: Boolean): Unit = js.native
   def dispatchWindowVisibilityChanged(visibility: Double): Unit = js.native
   def draw(canvas: Canvas): Unit = js.native
-  /* private */ def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any): js.Any = js.native
   /* private */ def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any, scalingRequired: js.Any): js.Any = js.native
   /* protected */ def drawFromParent(canvas: Canvas, parent: ViewGroup, drawingTime: Double): Boolean = js.native
   /* private */ def drawShadow(canvas: js.Any): js.Any = js.native
@@ -337,8 +330,6 @@ class View_ protected ()
   def invalidate(dirty: Rect): js.Any = js.native
   def invalidate(invalidateCache: Boolean): js.Any = js.native
   def invalidate(l: Double, t: Double, r: Double, b: Double): js.Any = js.native
-  /* CompleteClass */
-  override def invalidateDrawable(who: Drawable): Unit = js.native
   def invalidateParentCaches(): Unit = js.native
   def invalidateParentIfNeeded(): Unit = js.native
   def invalidateViewProperty(invalidateParent: Boolean, forceRedraw: Boolean): Unit = js.native
@@ -396,12 +387,6 @@ class View_ protected ()
   /* protected */ def onFocusChanged(gainFocus: Boolean, direction: Double, previouslyFocusedRect: Rect): Unit = js.native
   def onFocusLost(): Unit = js.native
   def onGenericMotionEvent(event: MotionEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onKeyDown(keyCode: Double, event: KeyEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onKeyLongPress(keyCode: Double, event: KeyEvent): Boolean = js.native
-  /* CompleteClass */
-  override def onKeyUp(keyCode: Double, event: KeyEvent): Boolean = js.native
   /* protected */ def onLayout(changed: Boolean, left: Double, top: Double, right: Double, bottom: Double): Unit = js.native
   /* protected */ def onMeasure(widthMeasureSpec: Double, heightMeasureSpec: Double): Unit = js.native
   /* protected */ def onOverScrolled(scrollX: Double, scrollY: Double, clampedX: Boolean, clampedY: Boolean): Unit = js.native
@@ -435,18 +420,108 @@ class View_ protected ()
   def post(action: Runnable): Boolean = js.native
   def postDelayed(action: Runnable, delayMillis: Double): Boolean = js.native
   def postInvalidate(): Unit = js.native
+  def postInvalidate(
+    l: js.UndefOr[scala.Nothing],
+    t: js.UndefOr[scala.Nothing],
+    r: js.UndefOr[scala.Nothing],
+    b: Double
+  ): Unit = js.native
+  def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
+  def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double): Unit = js.native
+  def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double): Unit = js.native
+  def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double, b: Double): Unit = js.native
   def postInvalidate(l: Double): Unit = js.native
+  def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
   def postInvalidate(l: Double, t: Double): Unit = js.native
+  def postInvalidate(l: Double, t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
   def postInvalidate(l: Double, t: Double, r: Double): Unit = js.native
   def postInvalidate(l: Double, t: Double, r: Double, b: Double): Unit = js.native
   def postInvalidateDelayed(delayMilliseconds: Double): Unit = js.native
+  def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double
+  ): Unit = js.native
+  def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
   def postInvalidateDelayed(delayMilliseconds: Double, left: Double): Unit = js.native
+  def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
   def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double): Unit = js.native
+  def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
   def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double, right: Double): Unit = js.native
   def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double, right: Double, bottom: Double): Unit = js.native
   def postInvalidateOnAnimation(): Unit = js.native
+  def postInvalidateOnAnimation(
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
+  def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double, bottom: Double): Unit = js.native
   def postInvalidateOnAnimation(left: Double): Unit = js.native
+  def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
   def postInvalidateOnAnimation(left: Double, top: Double): Unit = js.native
+  def postInvalidateOnAnimation(left: Double, top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
   def postInvalidateOnAnimation(left: Double, top: Double, right: Double): Unit = js.native
   def postInvalidateOnAnimation(left: Double, top: Double, right: Double, bottom: Double): Unit = js.native
   def postOnAnimation(action: Runnable): Boolean = js.native
@@ -460,6 +535,7 @@ class View_ protected ()
   /* private */ def removeTapCallback(): js.Any = js.native
   /* private */ def removeUnsetPressCallback(): js.Any = js.native
   def requestFocus(): Boolean = js.native
+  def requestFocus(direction: js.UndefOr[scala.Nothing], previouslyFocusedRect: js.Any): Boolean = js.native
   def requestFocus(direction: Double): Boolean = js.native
   def requestFocus(direction: Double, previouslyFocusedRect: js.Any): Boolean = js.native
   def requestFocusFromTouch(): Boolean = js.native
@@ -473,8 +549,6 @@ class View_ protected ()
   def resolveDrawables(): Unit = js.native
   def resolvePadding(): Unit = js.native
   def rootViewRequestFocus(): Boolean = js.native
-  /* CompleteClass */
-  override def scheduleDrawable(who: Drawable, what: Runnable, when: Double): Unit = js.native
   def scrollBy(x: Double, y: Double): Unit = js.native
   def scrollTo(x: Double, y: Double): Unit = js.native
   def setActivated(activated: Boolean): Unit = js.native
@@ -488,7 +562,26 @@ class View_ protected ()
   def setClickable(clickable: Boolean): Unit = js.native
   def setClipBounds(clipBounds: Rect): Unit = js.native
   def setCornerRadius(radiusTopLeft: Double): Unit = js.native
+  def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
+  def setCornerRadius(radiusTopLeft: Double, radiusTopRight: js.UndefOr[scala.Nothing], radiusBottomRight: Double): Unit = js.native
+  def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: Double,
+    radiusBottomLeft: Double
+  ): Unit = js.native
   def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double): Unit = js.native
+  def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: Double,
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
   def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double, radiusBottomRight: Double): Unit = js.native
   def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double, radiusBottomRight: Double, radiusBottomLeft: Double): Unit = js.native
   def setCornerRadiusBottomLeft(value: Double): Unit = js.native
@@ -582,8 +675,6 @@ class View_ protected ()
   def transformRect(rect: Rect): Unit = js.native
   def unFocus(): Unit = js.native
   def unscheduleDrawable(who: Drawable): Unit = js.native
-  /* CompleteClass */
-  override def unscheduleDrawable(who: Drawable, what: Runnable): Unit = js.native
   /* private */ def updateMatrix(): js.Any = js.native
   /* protected */ def verifyDrawable(who: Drawable): Boolean = js.native
   def willNotCacheDrawing(): Boolean = js.native

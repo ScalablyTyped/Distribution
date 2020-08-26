@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/utils/getExtraFooter", JSImport.Namespace)
+@JSImport("rc-picker/es/utils/getExtraFooter", JSImport.Namespace)
 @js.native
 object getExtraFooterMod extends js.Object {
   def default(prefixCls: String, mode: PanelMode): Element = js.native

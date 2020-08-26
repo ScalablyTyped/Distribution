@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class ExpressionType_ protected () extends Type {
   def this(value: Expression) = this()
   def this(value: Expression, modifiers: js.Array[TypeModifier]) = this()
+  def this(value: Expression, modifiers: js.UndefOr[scala.Nothing], typeParams: js.Array[Type]) = this()
   def this(value: Expression, modifiers: js.Array[TypeModifier], typeParams: js.Array[Type]) = this()
   def this(value: Expression, modifiers: Null, typeParams: js.Array[Type]) = this()
   var typeParams: js.Array[Type] | Null = js.native

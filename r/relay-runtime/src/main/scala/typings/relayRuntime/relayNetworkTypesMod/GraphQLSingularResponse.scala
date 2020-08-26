@@ -13,18 +13,8 @@ trait GraphQLSingularResponse extends js.Object
 
 object GraphQLSingularResponse {
   @scala.inline
-  def GraphQLResponseWithData(
-    data: PayloadData,
-    errors: js.Array[PayloadError] = null,
-    extensions: PayloadExtensions = null,
-    label: String = null,
-    path: js.Array[Double | String] = null
-  ): GraphQLSingularResponse = {
+  def GraphQLResponseWithData(data: PayloadData): GraphQLSingularResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLSingularResponse]
   }
   @scala.inline
@@ -33,18 +23,8 @@ object GraphQLSingularResponse {
     __obj.asInstanceOf[GraphQLSingularResponse]
   }
   @scala.inline
-  def GraphQLResponseWithoutData(
-    errors: js.Array[PayloadError],
-    data: PayloadData = null,
-    extensions: PayloadExtensions = null,
-    label: String = null,
-    path: js.Array[String | Double] = null
-  ): GraphQLSingularResponse = {
+  def GraphQLResponseWithoutData(errors: js.Array[PayloadError]): GraphQLSingularResponse = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLSingularResponse]
   }
 }

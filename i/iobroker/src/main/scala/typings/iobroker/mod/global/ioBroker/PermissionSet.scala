@@ -6,13 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Defined the complete set of access rights a user has */
+@js.native
 trait PermissionSet extends ObjectPermissions {
   /** The name of the groups this ACL was merged from */
-  var groups: js.Array[String]
+  var groups: js.Array[String] = js.native
   /** The access rights for certain commands */
-  var other: Execute
+  var other: Execute = js.native
   /** The name of the user this ACL is for */
-  var user: String
+  var user: String = js.native
 }
 
 object PermissionSet {
@@ -23,13 +24,32 @@ object PermissionSet {
     `object`: ObjectOperationPermissions,
     other: Execute,
     user: String,
-    users: ObjectOperationPermissions,
-    state: ObjectOperationPermissions = null
+    users: ObjectOperationPermissions
   ): PermissionSet = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionSet]
   }
+  @scala.inline
+  implicit class PermissionSetOps[Self <: PermissionSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOther(value: Execute): Self = this.set("other", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+  }
+  
 }
 

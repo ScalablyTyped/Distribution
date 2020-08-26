@@ -16,9 +16,8 @@ trait OperationAvailability extends js.Object
 
 object OperationAvailability {
   @scala.inline
-  def FetchTime(status: available, fetchTime: js.UndefOr[Null | Double] = js.undefined): OperationAvailability = {
+  def FetchTime(status: available): OperationAvailability = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchTime)) __obj.updateDynamic("fetchTime")(fetchTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationAvailability]
   }
   @scala.inline

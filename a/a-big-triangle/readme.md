@@ -12,7 +12,7 @@ Draws a big triangle
 | Keywords           | triangle, webgl, draw |
 | # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 1765558 |
+| # downloads        | 1834184 |
 | # stars            | 1 |
 
 ## Links

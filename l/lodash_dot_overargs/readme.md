@@ -12,7 +12,7 @@ The lodash method `_.overArgs` exported as a module.
 | Keywords           | lodash-modularized, overargs |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 7039 |
+| # downloads        | 7143 |
 | # stars            | 0 |
 
 ## Links

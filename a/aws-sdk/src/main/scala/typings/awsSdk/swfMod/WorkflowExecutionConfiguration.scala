@@ -38,14 +38,39 @@ object WorkflowExecutionConfiguration {
     childPolicy: ChildPolicy,
     executionStartToCloseTimeout: DurationInSeconds,
     taskList: TaskList,
-    taskStartToCloseTimeout: DurationInSeconds,
-    lambdaRole: Arn = null,
-    taskPriority: TaskPriority = null
+    taskStartToCloseTimeout: DurationInSeconds
   ): WorkflowExecutionConfiguration = {
     val __obj = js.Dynamic.literal(childPolicy = childPolicy.asInstanceOf[js.Any], executionStartToCloseTimeout = executionStartToCloseTimeout.asInstanceOf[js.Any], taskList = taskList.asInstanceOf[js.Any], taskStartToCloseTimeout = taskStartToCloseTimeout.asInstanceOf[js.Any])
-    if (lambdaRole != null) __obj.updateDynamic("lambdaRole")(lambdaRole.asInstanceOf[js.Any])
-    if (taskPriority != null) __obj.updateDynamic("taskPriority")(taskPriority.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionConfiguration]
   }
+  @scala.inline
+  implicit class WorkflowExecutionConfigurationOps[Self <: WorkflowExecutionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildPolicy(value: ChildPolicy): Self = this.set("childPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExecutionStartToCloseTimeout(value: DurationInSeconds): Self = this.set("executionStartToCloseTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskList(value: TaskList): Self = this.set("taskList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskStartToCloseTimeout(value: DurationInSeconds): Self = this.set("taskStartToCloseTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLambdaRole(value: Arn): Self = this.set("lambdaRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaRole: Self = this.set("lambdaRole", js.undefined)
+    @scala.inline
+    def setTaskPriority(value: TaskPriority): Self = this.set("taskPriority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskPriority: Self = this.set("taskPriority", js.undefined)
+  }
+  
 }
 

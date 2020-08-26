@@ -101,8 +101,39 @@ trait Dom_ extends js.Object {
     */
   def blockTextSelection(): Unit = js.native
   def createEl(): Element = js.native
+  def createEl(
+    tagName: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    attributes: js.UndefOr[scala.Nothing],
+    content: js.Any
+  ): Element = js.native
+  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.UndefOr[scala.Nothing], attributes: js.Any): Element = js.native
+  def createEl(
+    tagName: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    attributes: js.Any,
+    content: js.Any
+  ): Element = js.native
+  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.Any): Element = js.native
+  def createEl(
+    tagName: js.UndefOr[scala.Nothing],
+    properties: js.Any,
+    attributes: js.UndefOr[scala.Nothing],
+    content: js.Any
+  ): Element = js.native
+  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.Any, attributes: js.Any): Element = js.native
+  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.Any, attributes: js.Any, content: js.Any): Element = js.native
   def createEl(tagName: String): Element = js.native
+  def createEl(
+    tagName: String,
+    properties: js.UndefOr[scala.Nothing],
+    attributes: js.UndefOr[scala.Nothing],
+    content: js.Any
+  ): Element = js.native
+  def createEl(tagName: String, properties: js.UndefOr[scala.Nothing], attributes: js.Any): Element = js.native
+  def createEl(tagName: String, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any): Element = js.native
+  def createEl(tagName: String, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any, attributes: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any, attributes: js.Any, content: js.Any): Element = js.native
   /**
@@ -125,7 +156,20 @@ trait Dom_ extends js.Object {
   @JSName("createEl")
   def createEl_canvas(tagName: canvas): HTMLCanvasElement = js.native
   @JSName("createEl")
+  def createEl_canvas(
+    tagName: canvas,
+    properties: js.UndefOr[scala.Nothing],
+    attributes: js.UndefOr[scala.Nothing],
+    content: js.Any
+  ): HTMLCanvasElement = js.native
+  @JSName("createEl")
+  def createEl_canvas(tagName: canvas, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLCanvasElement = js.native
+  @JSName("createEl")
+  def createEl_canvas(tagName: canvas, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLCanvasElement = js.native
+  @JSName("createEl")
   def createEl_canvas(tagName: canvas, properties: js.Any): HTMLCanvasElement = js.native
+  @JSName("createEl")
+  def createEl_canvas(tagName: canvas, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLCanvasElement = js.native
   @JSName("createEl")
   def createEl_canvas(tagName: canvas, properties: js.Any, attributes: js.Any): HTMLCanvasElement = js.native
   @JSName("createEl")
@@ -133,7 +177,20 @@ trait Dom_ extends js.Object {
   @JSName("createEl")
   def createEl_form(tagName: form): HTMLFormElement = js.native
   @JSName("createEl")
+  def createEl_form(
+    tagName: form,
+    properties: js.UndefOr[scala.Nothing],
+    attributes: js.UndefOr[scala.Nothing],
+    content: js.Any
+  ): HTMLFormElement = js.native
+  @JSName("createEl")
+  def createEl_form(tagName: form, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLFormElement = js.native
+  @JSName("createEl")
+  def createEl_form(tagName: form, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLFormElement = js.native
+  @JSName("createEl")
   def createEl_form(tagName: form, properties: js.Any): HTMLFormElement = js.native
+  @JSName("createEl")
+  def createEl_form(tagName: form, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLFormElement = js.native
   @JSName("createEl")
   def createEl_form(tagName: form, properties: js.Any, attributes: js.Any): HTMLFormElement = js.native
   @JSName("createEl")
@@ -141,7 +198,20 @@ trait Dom_ extends js.Object {
   @JSName("createEl")
   def createEl_img(tagName: img): HTMLImageElement = js.native
   @JSName("createEl")
+  def createEl_img(
+    tagName: img,
+    properties: js.UndefOr[scala.Nothing],
+    attributes: js.UndefOr[scala.Nothing],
+    content: js.Any
+  ): HTMLImageElement = js.native
+  @JSName("createEl")
+  def createEl_img(tagName: img, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLImageElement = js.native
+  @JSName("createEl")
+  def createEl_img(tagName: img, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLImageElement = js.native
+  @JSName("createEl")
   def createEl_img(tagName: img, properties: js.Any): HTMLImageElement = js.native
+  @JSName("createEl")
+  def createEl_img(tagName: img, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLImageElement = js.native
   @JSName("createEl")
   def createEl_img(tagName: img, properties: js.Any, attributes: js.Any): HTMLImageElement = js.native
   @JSName("createEl")
@@ -149,7 +219,20 @@ trait Dom_ extends js.Object {
   @JSName("createEl")
   def createEl_input(tagName: input): HTMLInputElement = js.native
   @JSName("createEl")
+  def createEl_input(
+    tagName: input,
+    properties: js.UndefOr[scala.Nothing],
+    attributes: js.UndefOr[scala.Nothing],
+    content: js.Any
+  ): HTMLInputElement = js.native
+  @JSName("createEl")
+  def createEl_input(tagName: input, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLInputElement = js.native
+  @JSName("createEl")
+  def createEl_input(tagName: input, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLInputElement = js.native
+  @JSName("createEl")
   def createEl_input(tagName: input, properties: js.Any): HTMLInputElement = js.native
+  @JSName("createEl")
+  def createEl_input(tagName: input, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLInputElement = js.native
   @JSName("createEl")
   def createEl_input(tagName: input, properties: js.Any, attributes: js.Any): HTMLInputElement = js.native
   @JSName("createEl")
@@ -157,7 +240,20 @@ trait Dom_ extends js.Object {
   @JSName("createEl")
   def createEl_option(tagName: option): HTMLOptionElement = js.native
   @JSName("createEl")
+  def createEl_option(
+    tagName: option,
+    properties: js.UndefOr[scala.Nothing],
+    attributes: js.UndefOr[scala.Nothing],
+    content: js.Any
+  ): HTMLOptionElement = js.native
+  @JSName("createEl")
+  def createEl_option(tagName: option, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLOptionElement = js.native
+  @JSName("createEl")
+  def createEl_option(tagName: option, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLOptionElement = js.native
+  @JSName("createEl")
   def createEl_option(tagName: option, properties: js.Any): HTMLOptionElement = js.native
+  @JSName("createEl")
+  def createEl_option(tagName: option, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLOptionElement = js.native
   @JSName("createEl")
   def createEl_option(tagName: option, properties: js.Any, attributes: js.Any): HTMLOptionElement = js.native
   @JSName("createEl")
@@ -165,7 +261,20 @@ trait Dom_ extends js.Object {
   @JSName("createEl")
   def createEl_select(tagName: select): HTMLSelectElement = js.native
   @JSName("createEl")
+  def createEl_select(
+    tagName: select,
+    properties: js.UndefOr[scala.Nothing],
+    attributes: js.UndefOr[scala.Nothing],
+    content: js.Any
+  ): HTMLSelectElement = js.native
+  @JSName("createEl")
+  def createEl_select(tagName: select, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLSelectElement = js.native
+  @JSName("createEl")
+  def createEl_select(tagName: select, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLSelectElement = js.native
+  @JSName("createEl")
   def createEl_select(tagName: select, properties: js.Any): HTMLSelectElement = js.native
+  @JSName("createEl")
+  def createEl_select(tagName: select, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLSelectElement = js.native
   @JSName("createEl")
   def createEl_select(tagName: select, properties: js.Any, attributes: js.Any): HTMLSelectElement = js.native
   @JSName("createEl")
@@ -173,7 +282,20 @@ trait Dom_ extends js.Object {
   @JSName("createEl")
   def createEl_textarea(tagName: textarea): HTMLTextAreaElement = js.native
   @JSName("createEl")
+  def createEl_textarea(
+    tagName: textarea,
+    properties: js.UndefOr[scala.Nothing],
+    attributes: js.UndefOr[scala.Nothing],
+    content: js.Any
+  ): HTMLTextAreaElement = js.native
+  @JSName("createEl")
+  def createEl_textarea(tagName: textarea, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLTextAreaElement = js.native
+  @JSName("createEl")
+  def createEl_textarea(tagName: textarea, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLTextAreaElement = js.native
+  @JSName("createEl")
   def createEl_textarea(tagName: textarea, properties: js.Any): HTMLTextAreaElement = js.native
+  @JSName("createEl")
+  def createEl_textarea(tagName: textarea, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLTextAreaElement = js.native
   @JSName("createEl")
   def createEl_textarea(tagName: textarea, properties: js.Any, attributes: js.Any): HTMLTextAreaElement = js.native
   @JSName("createEl")

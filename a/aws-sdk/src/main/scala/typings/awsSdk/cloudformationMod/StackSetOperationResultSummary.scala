@@ -34,22 +34,46 @@ trait StackSetOperationResultSummary extends js.Object {
 
 object StackSetOperationResultSummary {
   @scala.inline
-  def apply(
-    Account: Account = null,
-    AccountGateResult: AccountGateResult = null,
-    OrganizationalUnitId: OrganizationalUnitId = null,
-    Region: Region = null,
-    Status: StackSetOperationResultStatus = null,
-    StatusReason: Reason = null
-  ): StackSetOperationResultSummary = {
+  def apply(): StackSetOperationResultSummary = {
     val __obj = js.Dynamic.literal()
-    if (Account != null) __obj.updateDynamic("Account")(Account.asInstanceOf[js.Any])
-    if (AccountGateResult != null) __obj.updateDynamic("AccountGateResult")(AccountGateResult.asInstanceOf[js.Any])
-    if (OrganizationalUnitId != null) __obj.updateDynamic("OrganizationalUnitId")(OrganizationalUnitId.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSetOperationResultSummary]
   }
+  @scala.inline
+  implicit class StackSetOperationResultSummaryOps[Self <: StackSetOperationResultSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccount(value: Account): Self = this.set("Account", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccount: Self = this.set("Account", js.undefined)
+    @scala.inline
+    def setAccountGateResult(value: AccountGateResult): Self = this.set("AccountGateResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountGateResult: Self = this.set("AccountGateResult", js.undefined)
+    @scala.inline
+    def setOrganizationalUnitId(value: OrganizationalUnitId): Self = this.set("OrganizationalUnitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationalUnitId: Self = this.set("OrganizationalUnitId", js.undefined)
+    @scala.inline
+    def setRegion(value: Region): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setStatus(value: StackSetOperationResultStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: Reason): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+  }
+  
 }
 

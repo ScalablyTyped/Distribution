@@ -29,18 +29,38 @@ trait SchemaResponse extends js.Object {
 
 object SchemaResponse {
   @scala.inline
-  def apply(
-    createNamedRange: SchemaCreateNamedRangeResponse = null,
-    insertInlineImage: SchemaInsertInlineImageResponse = null,
-    insertInlineSheetsChart: SchemaInsertInlineSheetsChartResponse = null,
-    replaceAllText: SchemaReplaceAllTextResponse = null
-  ): SchemaResponse = {
+  def apply(): SchemaResponse = {
     val __obj = js.Dynamic.literal()
-    if (createNamedRange != null) __obj.updateDynamic("createNamedRange")(createNamedRange.asInstanceOf[js.Any])
-    if (insertInlineImage != null) __obj.updateDynamic("insertInlineImage")(insertInlineImage.asInstanceOf[js.Any])
-    if (insertInlineSheetsChart != null) __obj.updateDynamic("insertInlineSheetsChart")(insertInlineSheetsChart.asInstanceOf[js.Any])
-    if (replaceAllText != null) __obj.updateDynamic("replaceAllText")(replaceAllText.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResponse]
   }
+  @scala.inline
+  implicit class SchemaResponseOps[Self <: SchemaResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateNamedRange(value: SchemaCreateNamedRangeResponse): Self = this.set("createNamedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateNamedRange: Self = this.set("createNamedRange", js.undefined)
+    @scala.inline
+    def setInsertInlineImage(value: SchemaInsertInlineImageResponse): Self = this.set("insertInlineImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertInlineImage: Self = this.set("insertInlineImage", js.undefined)
+    @scala.inline
+    def setInsertInlineSheetsChart(value: SchemaInsertInlineSheetsChartResponse): Self = this.set("insertInlineSheetsChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertInlineSheetsChart: Self = this.set("insertInlineSheetsChart", js.undefined)
+    @scala.inline
+    def setReplaceAllText(value: SchemaReplaceAllTextResponse): Self = this.set("replaceAllText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceAllText: Self = this.set("replaceAllText", js.undefined)
+  }
+  
 }
 

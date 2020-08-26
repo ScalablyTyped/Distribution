@@ -37,6 +37,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SAXStream () extends Duplex {
   def this(strict: Boolean) = this()
+  def this(strict: js.UndefOr[scala.Nothing], opt: SAXOptions) = this()
   def this(strict: Boolean, opt: SAXOptions) = this()
   var _parser: SAXParser = js.native
   def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native

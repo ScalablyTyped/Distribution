@@ -12,7 +12,7 @@ A React component for wrangling image loading
 | Keywords           | react-component, react, loader, component |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 114000 |
+| # downloads        | 113117 |
 | # stars            | 4 |
 
 ## Links

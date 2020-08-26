@@ -29,6 +29,7 @@ class ResourceInapppurchases protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInappPurchase] = js.native
   def get(callback: BodyResponseCallback[SchemaInappPurchase]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInappPurchase] = js.native
   def get(params: ParamsResourceInapppurchasesGet): GaxiosPromise[SchemaInappPurchase] = js.native
   def get(params: ParamsResourceInapppurchasesGet, callback: BodyResponseCallback[SchemaInappPurchase]): Unit = js.native
   def get(

@@ -226,6 +226,7 @@ trait MarkerClusterer extends OverlayView {
     * @return True if the marker was removed from the clusterer.
     */
   def removeMarker(marker: Marker): Boolean = js.native
+  def removeMarker(marker: Marker, noDraw: js.UndefOr[scala.Nothing], noMapRemove: Boolean): Boolean = js.native
   def removeMarker(marker: Marker, noDraw: Boolean): Boolean = js.native
   def removeMarker(marker: Marker, noDraw: Boolean, noMapRemove: Boolean): Boolean = js.native
   /**
@@ -248,6 +249,7 @@ trait MarkerClusterer extends OverlayView {
     * @return True if markers were removed from the clusterer.
     */
   def removeMarkers(markers: js.Array[Marker]): Boolean = js.native
+  def removeMarkers(markers: js.Array[Marker], noDraw: js.UndefOr[scala.Nothing], noMapRemove: Boolean): Boolean = js.native
   def removeMarkers(markers: js.Array[Marker], noDraw: Boolean): Boolean = js.native
   def removeMarkers(markers: js.Array[Marker], noDraw: Boolean, noMapRemove: Boolean): Boolean = js.native
   /**

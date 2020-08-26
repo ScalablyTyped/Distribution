@@ -117,12 +117,12 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteTagsResult, Unit]
   ): Request[DeleteTagsResult, AWSError] = js.native
   /**
-    * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image and un-share the image if it is shared with other accounts. 
+    * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image and unshare the image if it is shared with other accounts. 
     */
   def deleteWorkspaceImage(): Request[DeleteWorkspaceImageResult, AWSError] = js.native
   def deleteWorkspaceImage(callback: js.Function2[/* err */ AWSError, /* data */ DeleteWorkspaceImageResult, Unit]): Request[DeleteWorkspaceImageResult, AWSError] = js.native
   /**
-    * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image and un-share the image if it is shared with other accounts. 
+    * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image and unshare the image if it is shared with other accounts. 
     */
   def deleteWorkspaceImage(params: DeleteWorkspaceImageRequest): Request[DeleteWorkspaceImageResult, AWSError] = js.native
   def deleteWorkspaceImage(
@@ -233,6 +233,21 @@ trait WorkSpaces extends Service {
     params: DescribeWorkspaceDirectoriesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkspaceDirectoriesResult, Unit]
   ): Request[DescribeWorkspaceDirectoriesResult, AWSError] = js.native
+  /**
+    * Describes the permissions that the owner of an image has granted to other AWS accounts for an image.
+    */
+  def describeWorkspaceImagePermissions(): Request[DescribeWorkspaceImagePermissionsResult, AWSError] = js.native
+  def describeWorkspaceImagePermissions(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkspaceImagePermissionsResult, Unit]
+  ): Request[DescribeWorkspaceImagePermissionsResult, AWSError] = js.native
+  /**
+    * Describes the permissions that the owner of an image has granted to other AWS accounts for an image.
+    */
+  def describeWorkspaceImagePermissions(params: DescribeWorkspaceImagePermissionsRequest): Request[DescribeWorkspaceImagePermissionsResult, AWSError] = js.native
+  def describeWorkspaceImagePermissions(
+    params: DescribeWorkspaceImagePermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkspaceImagePermissionsResult, Unit]
+  ): Request[DescribeWorkspaceImagePermissionsResult, AWSError] = js.native
   /**
     * Retrieves a list that describes one or more specified images, if the image identifiers are provided. Otherwise, all images in the account are described. 
     */
@@ -409,12 +424,12 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyWorkspaceCreationPropertiesResult, Unit]
   ): Request[ModifyWorkspaceCreationPropertiesResult, AWSError] = js.native
   /**
-    * Modifies the specified WorkSpace properties.
+    * Modifies the specified WorkSpace properties. For important information about how to modify the size of the root and user volumes, see  Modify a WorkSpace. 
     */
   def modifyWorkspaceProperties(): Request[ModifyWorkspacePropertiesResult, AWSError] = js.native
   def modifyWorkspaceProperties(callback: js.Function2[/* err */ AWSError, /* data */ ModifyWorkspacePropertiesResult, Unit]): Request[ModifyWorkspacePropertiesResult, AWSError] = js.native
   /**
-    * Modifies the specified WorkSpace properties.
+    * Modifies the specified WorkSpace properties. For important information about how to modify the size of the root and user volumes, see  Modify a WorkSpace. 
     */
   def modifyWorkspaceProperties(params: ModifyWorkspacePropertiesRequest): Request[ModifyWorkspacePropertiesResult, AWSError] = js.native
   def modifyWorkspaceProperties(
@@ -448,12 +463,12 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RebootWorkspacesResult, Unit]
   ): Request[RebootWorkspacesResult, AWSError] = js.native
   /**
-    * Rebuilds the specified WorkSpace. You cannot rebuild a WorkSpace unless its state is AVAILABLE, ERROR, UNHEALTHY, or STOPPED. Rebuilding a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Rebuild a WorkSpace. This operation is asynchronous and returns before the WorkSpaces have been completely rebuilt.
+    * Rebuilds the specified WorkSpace. You cannot rebuild a WorkSpace unless its state is AVAILABLE, ERROR, UNHEALTHY, STOPPED, or REBOOTING. Rebuilding a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Rebuild a WorkSpace. This operation is asynchronous and returns before the WorkSpaces have been completely rebuilt.
     */
   def rebuildWorkspaces(): Request[RebuildWorkspacesResult, AWSError] = js.native
   def rebuildWorkspaces(callback: js.Function2[/* err */ AWSError, /* data */ RebuildWorkspacesResult, Unit]): Request[RebuildWorkspacesResult, AWSError] = js.native
   /**
-    * Rebuilds the specified WorkSpace. You cannot rebuild a WorkSpace unless its state is AVAILABLE, ERROR, UNHEALTHY, or STOPPED. Rebuilding a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Rebuild a WorkSpace. This operation is asynchronous and returns before the WorkSpaces have been completely rebuilt.
+    * Rebuilds the specified WorkSpace. You cannot rebuild a WorkSpace unless its state is AVAILABLE, ERROR, UNHEALTHY, STOPPED, or REBOOTING. Rebuilding a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Rebuild a WorkSpace. This operation is asynchronous and returns before the WorkSpaces have been completely rebuilt.
     */
   def rebuildWorkspaces(params: RebuildWorkspacesRequest): Request[RebuildWorkspacesResult, AWSError] = js.native
   def rebuildWorkspaces(
@@ -551,5 +566,18 @@ trait WorkSpaces extends Service {
     params: UpdateRulesOfIpGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRulesOfIpGroupResult, Unit]
   ): Request[UpdateRulesOfIpGroupResult, AWSError] = js.native
+  /**
+    * Shares or unshares an image with one account by specifying whether that account has permission to copy the image. If the copy image permission is granted, the image is shared with that account. If the copy image permission is revoked, the image is unshared with the account.    To delete an image that has been shared, you must unshare the image before you delete it.   Sharing Bring Your Own License (BYOL) images across AWS accounts isn't supported at this time in the AWS GovCloud (US-West) Region. To share BYOL images across accounts in the AWS GovCloud (US-West) Region, contact AWS Support.   
+    */
+  def updateWorkspaceImagePermission(): Request[UpdateWorkspaceImagePermissionResult, AWSError] = js.native
+  def updateWorkspaceImagePermission(callback: js.Function2[/* err */ AWSError, /* data */ UpdateWorkspaceImagePermissionResult, Unit]): Request[UpdateWorkspaceImagePermissionResult, AWSError] = js.native
+  /**
+    * Shares or unshares an image with one account by specifying whether that account has permission to copy the image. If the copy image permission is granted, the image is shared with that account. If the copy image permission is revoked, the image is unshared with the account.    To delete an image that has been shared, you must unshare the image before you delete it.   Sharing Bring Your Own License (BYOL) images across AWS accounts isn't supported at this time in the AWS GovCloud (US-West) Region. To share BYOL images across accounts in the AWS GovCloud (US-West) Region, contact AWS Support.   
+    */
+  def updateWorkspaceImagePermission(params: UpdateWorkspaceImagePermissionRequest): Request[UpdateWorkspaceImagePermissionResult, AWSError] = js.native
+  def updateWorkspaceImagePermission(
+    params: UpdateWorkspaceImagePermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateWorkspaceImagePermissionResult, Unit]
+  ): Request[UpdateWorkspaceImagePermissionResult, AWSError] = js.native
 }
 

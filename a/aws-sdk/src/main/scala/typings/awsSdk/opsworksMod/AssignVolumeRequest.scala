@@ -18,10 +18,28 @@ trait AssignVolumeRequest extends js.Object {
 
 object AssignVolumeRequest {
   @scala.inline
-  def apply(VolumeId: String, InstanceId: String = null): AssignVolumeRequest = {
+  def apply(VolumeId: String): AssignVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignVolumeRequest]
   }
+  @scala.inline
+  implicit class AssignVolumeRequestOps[Self <: AssignVolumeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+  }
+  
 }
 

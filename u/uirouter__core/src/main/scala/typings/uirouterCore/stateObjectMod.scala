@@ -2,9 +2,9 @@ package typings.uirouterCore
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.uirouterCore.anon.Inherit
-import typings.uirouterCore.anon.InheritBoolean
 import typings.uirouterCore.anon.NameGlob
 import typings.uirouterCore.anon.State
+import typings.uirouterCore.anon.`0`
 import typings.uirouterCore.paramMod.Param
 import typings.uirouterCore.resolvableMod.Resolvable
 import typings.uirouterCore.stateInterfaceMod.LazyLoadResult
@@ -28,7 +28,7 @@ object stateObjectMod extends js.Object {
   /** @deprecated use State.create() */
   class StateObject () extends _StateOrName {
     def this(config: StateDeclaration) = this()
-    /** @hidden */
+    /** @internal */
     var __stateObjectCache: NameGlob = js.native
     /** Prototypally inherits from [[StateDeclaration.abstract]] */
     var `abstract`: Boolean = js.native
@@ -119,7 +119,7 @@ object stateObjectMod extends js.Object {
       * @param opts options
       */
     def parameter(id: String): Param = js.native
-    def parameter(id: String, opts: InheritBoolean): Param = js.native
+    def parameter(id: String, opts: `0`): Param = js.native
     /**
       * Gets the state's `Param` objects
       *

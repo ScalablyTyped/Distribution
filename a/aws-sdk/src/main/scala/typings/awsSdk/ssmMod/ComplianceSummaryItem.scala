@@ -22,16 +22,34 @@ trait ComplianceSummaryItem extends js.Object {
 
 object ComplianceSummaryItem {
   @scala.inline
-  def apply(
-    ComplianceType: ComplianceTypeName = null,
-    CompliantSummary: CompliantSummary = null,
-    NonCompliantSummary: NonCompliantSummary = null
-  ): ComplianceSummaryItem = {
+  def apply(): ComplianceSummaryItem = {
     val __obj = js.Dynamic.literal()
-    if (ComplianceType != null) __obj.updateDynamic("ComplianceType")(ComplianceType.asInstanceOf[js.Any])
-    if (CompliantSummary != null) __obj.updateDynamic("CompliantSummary")(CompliantSummary.asInstanceOf[js.Any])
-    if (NonCompliantSummary != null) __obj.updateDynamic("NonCompliantSummary")(NonCompliantSummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceSummaryItem]
   }
+  @scala.inline
+  implicit class ComplianceSummaryItemOps[Self <: ComplianceSummaryItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplianceType(value: ComplianceTypeName): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceType: Self = this.set("ComplianceType", js.undefined)
+    @scala.inline
+    def setCompliantSummary(value: CompliantSummary): Self = this.set("CompliantSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompliantSummary: Self = this.set("CompliantSummary", js.undefined)
+    @scala.inline
+    def setNonCompliantSummary(value: NonCompliantSummary): Self = this.set("NonCompliantSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonCompliantSummary: Self = this.set("NonCompliantSummary", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait DescribeAddressesResult extends js.Object {
 
 object DescribeAddressesResult {
   @scala.inline
-  def apply(Addresses: AddressList = null, NextToken: String = null): DescribeAddressesResult = {
+  def apply(): DescribeAddressesResult = {
     val __obj = js.Dynamic.literal()
-    if (Addresses != null) __obj.updateDynamic("Addresses")(Addresses.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAddressesResult]
   }
+  @scala.inline
+  implicit class DescribeAddressesResultOps[Self <: DescribeAddressesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressesVarargs(value: Address*): Self = this.set("Addresses", js.Array(value :_*))
+    @scala.inline
+    def setAddresses(value: AddressList): Self = this.set("Addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddresses: Self = this.set("Addresses", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

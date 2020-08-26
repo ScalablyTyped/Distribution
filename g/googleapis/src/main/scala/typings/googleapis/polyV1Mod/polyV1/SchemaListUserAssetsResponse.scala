@@ -27,16 +27,36 @@ trait SchemaListUserAssetsResponse extends js.Object {
 
 object SchemaListUserAssetsResponse {
   @scala.inline
-  def apply(
-    nextPageToken: String = null,
-    totalSize: js.UndefOr[Double] = js.undefined,
-    userAssets: js.Array[SchemaUserAsset] = null
-  ): SchemaListUserAssetsResponse = {
+  def apply(): SchemaListUserAssetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalSize)) __obj.updateDynamic("totalSize")(totalSize.get.asInstanceOf[js.Any])
-    if (userAssets != null) __obj.updateDynamic("userAssets")(userAssets.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListUserAssetsResponse]
   }
+  @scala.inline
+  implicit class SchemaListUserAssetsResponseOps[Self <: SchemaListUserAssetsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
+    @scala.inline
+    def setUserAssetsVarargs(value: SchemaUserAsset*): Self = this.set("userAssets", js.Array(value :_*))
+    @scala.inline
+    def setUserAssets(value: js.Array[SchemaUserAsset]): Self = this.set("userAssets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAssets: Self = this.set("userAssets", js.undefined)
+  }
+  
 }
 

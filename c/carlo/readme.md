@@ -11,8 +11,8 @@ Carlo is a framework for rendering Node data structures using Chrome browser.
 | Full name          | carlo |
 | Keywords           | - |
 | # releases         | 49 |
-| # dependents       | 32 |
-| # downloads        | 243058 |
+| # dependents       | 35 |
+| # downloads        | 255289 |
 | # stars            | 0 |
 
 ## Links

@@ -15,11 +15,5 @@ class MaintenanceTrigger protected ()
     * @param oneShot True if the maintenance trigger is used once; false if it is used each time the freshnessTime interval elapses.
     */
   def this(freshnessTime: Double, oneShot: Boolean) = this()
-  /** Gets the interval of a maintenance trigger. */
-  /* CompleteClass */
-  override var freshnessTime: Double = js.native
-  /** Gets whether the maintenance trigger is used only once or each time the FreshnessTime interval elapses. */
-  /* CompleteClass */
-  override var oneShot: Boolean = js.native
 }
 

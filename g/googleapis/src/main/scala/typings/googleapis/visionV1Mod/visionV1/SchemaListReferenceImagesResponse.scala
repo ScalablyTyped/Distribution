@@ -25,16 +25,36 @@ trait SchemaListReferenceImagesResponse extends js.Object {
 
 object SchemaListReferenceImagesResponse {
   @scala.inline
-  def apply(
-    nextPageToken: String = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    referenceImages: js.Array[SchemaReferenceImage] = null
-  ): SchemaListReferenceImagesResponse = {
+  def apply(): SchemaListReferenceImagesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (referenceImages != null) __obj.updateDynamic("referenceImages")(referenceImages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListReferenceImagesResponse]
   }
+  @scala.inline
+  implicit class SchemaListReferenceImagesResponseOps[Self <: SchemaListReferenceImagesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setReferenceImagesVarargs(value: SchemaReferenceImage*): Self = this.set("referenceImages", js.Array(value :_*))
+    @scala.inline
+    def setReferenceImages(value: js.Array[SchemaReferenceImage]): Self = this.set("referenceImages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceImages: Self = this.set("referenceImages", js.undefined)
+  }
+  
 }
 

@@ -45,24 +45,50 @@ trait SchemaBidMetricsRow extends js.Object {
 
 object SchemaBidMetricsRow {
   @scala.inline
-  def apply(
-    bids: SchemaMetricValue = null,
-    bidsInAuction: SchemaMetricValue = null,
-    billedImpressions: SchemaMetricValue = null,
-    impressionsWon: SchemaMetricValue = null,
-    measurableImpressions: SchemaMetricValue = null,
-    rowDimensions: SchemaRowDimensions = null,
-    viewableImpressions: SchemaMetricValue = null
-  ): SchemaBidMetricsRow = {
+  def apply(): SchemaBidMetricsRow = {
     val __obj = js.Dynamic.literal()
-    if (bids != null) __obj.updateDynamic("bids")(bids.asInstanceOf[js.Any])
-    if (bidsInAuction != null) __obj.updateDynamic("bidsInAuction")(bidsInAuction.asInstanceOf[js.Any])
-    if (billedImpressions != null) __obj.updateDynamic("billedImpressions")(billedImpressions.asInstanceOf[js.Any])
-    if (impressionsWon != null) __obj.updateDynamic("impressionsWon")(impressionsWon.asInstanceOf[js.Any])
-    if (measurableImpressions != null) __obj.updateDynamic("measurableImpressions")(measurableImpressions.asInstanceOf[js.Any])
-    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
-    if (viewableImpressions != null) __obj.updateDynamic("viewableImpressions")(viewableImpressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBidMetricsRow]
   }
+  @scala.inline
+  implicit class SchemaBidMetricsRowOps[Self <: SchemaBidMetricsRow] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBids(value: SchemaMetricValue): Self = this.set("bids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBids: Self = this.set("bids", js.undefined)
+    @scala.inline
+    def setBidsInAuction(value: SchemaMetricValue): Self = this.set("bidsInAuction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBidsInAuction: Self = this.set("bidsInAuction", js.undefined)
+    @scala.inline
+    def setBilledImpressions(value: SchemaMetricValue): Self = this.set("billedImpressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBilledImpressions: Self = this.set("billedImpressions", js.undefined)
+    @scala.inline
+    def setImpressionsWon(value: SchemaMetricValue): Self = this.set("impressionsWon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImpressionsWon: Self = this.set("impressionsWon", js.undefined)
+    @scala.inline
+    def setMeasurableImpressions(value: SchemaMetricValue): Self = this.set("measurableImpressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeasurableImpressions: Self = this.set("measurableImpressions", js.undefined)
+    @scala.inline
+    def setRowDimensions(value: SchemaRowDimensions): Self = this.set("rowDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowDimensions: Self = this.set("rowDimensions", js.undefined)
+    @scala.inline
+    def setViewableImpressions(value: SchemaMetricValue): Self = this.set("viewableImpressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewableImpressions: Self = this.set("viewableImpressions", js.undefined)
+  }
+  
 }
 

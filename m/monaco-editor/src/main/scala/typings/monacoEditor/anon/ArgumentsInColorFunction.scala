@@ -7,69 +7,118 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ArgumentsInColorFunction extends js.Object {
-  val argumentsInColorFunction: js.UndefOr[ignore | warning | error] = js.undefined
-  val boxModel: js.UndefOr[ignore | warning | error] = js.undefined
-  val compatibleVendorPrefixes: js.UndefOr[ignore | warning | error] = js.undefined
-  val duplicateProperties: js.UndefOr[ignore | warning | error] = js.undefined
-  val emptyRules: js.UndefOr[ignore | warning | error] = js.undefined
-  val float: js.UndefOr[ignore | warning | error] = js.undefined
-  val fontFaceProperties: js.UndefOr[ignore | warning | error] = js.undefined
-  val hexColorLength: js.UndefOr[ignore | warning | error] = js.undefined
-  val idSelector: js.UndefOr[ignore | warning | error] = js.undefined
-  val ieHack: js.UndefOr[ignore | warning | error] = js.undefined
-  val importStatement: js.UndefOr[ignore | warning | error] = js.undefined
-  val important: js.UndefOr[ignore | warning | error] = js.undefined
-  val propertyIgnoredDueToDisplay: js.UndefOr[ignore | warning | error] = js.undefined
-  val universalSelector: js.UndefOr[ignore | warning | error] = js.undefined
-  val unknownProperties: js.UndefOr[ignore | warning | error] = js.undefined
-  val unknownVendorSpecificProperties: js.UndefOr[ignore | warning | error] = js.undefined
-  val vendorPrefix: js.UndefOr[ignore | warning | error] = js.undefined
-  val zeroUnits: js.UndefOr[ignore | warning | error] = js.undefined
+  val argumentsInColorFunction: js.UndefOr[ignore | warning | error] = js.native
+  val boxModel: js.UndefOr[ignore | warning | error] = js.native
+  val compatibleVendorPrefixes: js.UndefOr[ignore | warning | error] = js.native
+  val duplicateProperties: js.UndefOr[ignore | warning | error] = js.native
+  val emptyRules: js.UndefOr[ignore | warning | error] = js.native
+  val float: js.UndefOr[ignore | warning | error] = js.native
+  val fontFaceProperties: js.UndefOr[ignore | warning | error] = js.native
+  val hexColorLength: js.UndefOr[ignore | warning | error] = js.native
+  val idSelector: js.UndefOr[ignore | warning | error] = js.native
+  val ieHack: js.UndefOr[ignore | warning | error] = js.native
+  val importStatement: js.UndefOr[ignore | warning | error] = js.native
+  val important: js.UndefOr[ignore | warning | error] = js.native
+  val propertyIgnoredDueToDisplay: js.UndefOr[ignore | warning | error] = js.native
+  val universalSelector: js.UndefOr[ignore | warning | error] = js.native
+  val unknownProperties: js.UndefOr[ignore | warning | error] = js.native
+  val unknownVendorSpecificProperties: js.UndefOr[ignore | warning | error] = js.native
+  val vendorPrefix: js.UndefOr[ignore | warning | error] = js.native
+  val zeroUnits: js.UndefOr[ignore | warning | error] = js.native
 }
 
 object ArgumentsInColorFunction {
   @scala.inline
-  def apply(
-    argumentsInColorFunction: ignore | warning | error = null,
-    boxModel: ignore | warning | error = null,
-    compatibleVendorPrefixes: ignore | warning | error = null,
-    duplicateProperties: ignore | warning | error = null,
-    emptyRules: ignore | warning | error = null,
-    float: ignore | warning | error = null,
-    fontFaceProperties: ignore | warning | error = null,
-    hexColorLength: ignore | warning | error = null,
-    idSelector: ignore | warning | error = null,
-    ieHack: ignore | warning | error = null,
-    importStatement: ignore | warning | error = null,
-    important: ignore | warning | error = null,
-    propertyIgnoredDueToDisplay: ignore | warning | error = null,
-    universalSelector: ignore | warning | error = null,
-    unknownProperties: ignore | warning | error = null,
-    unknownVendorSpecificProperties: ignore | warning | error = null,
-    vendorPrefix: ignore | warning | error = null,
-    zeroUnits: ignore | warning | error = null
-  ): ArgumentsInColorFunction = {
+  def apply(): ArgumentsInColorFunction = {
     val __obj = js.Dynamic.literal()
-    if (argumentsInColorFunction != null) __obj.updateDynamic("argumentsInColorFunction")(argumentsInColorFunction.asInstanceOf[js.Any])
-    if (boxModel != null) __obj.updateDynamic("boxModel")(boxModel.asInstanceOf[js.Any])
-    if (compatibleVendorPrefixes != null) __obj.updateDynamic("compatibleVendorPrefixes")(compatibleVendorPrefixes.asInstanceOf[js.Any])
-    if (duplicateProperties != null) __obj.updateDynamic("duplicateProperties")(duplicateProperties.asInstanceOf[js.Any])
-    if (emptyRules != null) __obj.updateDynamic("emptyRules")(emptyRules.asInstanceOf[js.Any])
-    if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (fontFaceProperties != null) __obj.updateDynamic("fontFaceProperties")(fontFaceProperties.asInstanceOf[js.Any])
-    if (hexColorLength != null) __obj.updateDynamic("hexColorLength")(hexColorLength.asInstanceOf[js.Any])
-    if (idSelector != null) __obj.updateDynamic("idSelector")(idSelector.asInstanceOf[js.Any])
-    if (ieHack != null) __obj.updateDynamic("ieHack")(ieHack.asInstanceOf[js.Any])
-    if (importStatement != null) __obj.updateDynamic("importStatement")(importStatement.asInstanceOf[js.Any])
-    if (important != null) __obj.updateDynamic("important")(important.asInstanceOf[js.Any])
-    if (propertyIgnoredDueToDisplay != null) __obj.updateDynamic("propertyIgnoredDueToDisplay")(propertyIgnoredDueToDisplay.asInstanceOf[js.Any])
-    if (universalSelector != null) __obj.updateDynamic("universalSelector")(universalSelector.asInstanceOf[js.Any])
-    if (unknownProperties != null) __obj.updateDynamic("unknownProperties")(unknownProperties.asInstanceOf[js.Any])
-    if (unknownVendorSpecificProperties != null) __obj.updateDynamic("unknownVendorSpecificProperties")(unknownVendorSpecificProperties.asInstanceOf[js.Any])
-    if (vendorPrefix != null) __obj.updateDynamic("vendorPrefix")(vendorPrefix.asInstanceOf[js.Any])
-    if (zeroUnits != null) __obj.updateDynamic("zeroUnits")(zeroUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgumentsInColorFunction]
   }
+  @scala.inline
+  implicit class ArgumentsInColorFunctionOps[Self <: ArgumentsInColorFunction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgumentsInColorFunction(value: ignore | warning | error): Self = this.set("argumentsInColorFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgumentsInColorFunction: Self = this.set("argumentsInColorFunction", js.undefined)
+    @scala.inline
+    def setBoxModel(value: ignore | warning | error): Self = this.set("boxModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoxModel: Self = this.set("boxModel", js.undefined)
+    @scala.inline
+    def setCompatibleVendorPrefixes(value: ignore | warning | error): Self = this.set("compatibleVendorPrefixes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompatibleVendorPrefixes: Self = this.set("compatibleVendorPrefixes", js.undefined)
+    @scala.inline
+    def setDuplicateProperties(value: ignore | warning | error): Self = this.set("duplicateProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuplicateProperties: Self = this.set("duplicateProperties", js.undefined)
+    @scala.inline
+    def setEmptyRules(value: ignore | warning | error): Self = this.set("emptyRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptyRules: Self = this.set("emptyRules", js.undefined)
+    @scala.inline
+    def setFloat(value: ignore | warning | error): Self = this.set("float", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloat: Self = this.set("float", js.undefined)
+    @scala.inline
+    def setFontFaceProperties(value: ignore | warning | error): Self = this.set("fontFaceProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFaceProperties: Self = this.set("fontFaceProperties", js.undefined)
+    @scala.inline
+    def setHexColorLength(value: ignore | warning | error): Self = this.set("hexColorLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHexColorLength: Self = this.set("hexColorLength", js.undefined)
+    @scala.inline
+    def setIdSelector(value: ignore | warning | error): Self = this.set("idSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdSelector: Self = this.set("idSelector", js.undefined)
+    @scala.inline
+    def setIeHack(value: ignore | warning | error): Self = this.set("ieHack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIeHack: Self = this.set("ieHack", js.undefined)
+    @scala.inline
+    def setImportStatement(value: ignore | warning | error): Self = this.set("importStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportStatement: Self = this.set("importStatement", js.undefined)
+    @scala.inline
+    def setImportant(value: ignore | warning | error): Self = this.set("important", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportant: Self = this.set("important", js.undefined)
+    @scala.inline
+    def setPropertyIgnoredDueToDisplay(value: ignore | warning | error): Self = this.set("propertyIgnoredDueToDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyIgnoredDueToDisplay: Self = this.set("propertyIgnoredDueToDisplay", js.undefined)
+    @scala.inline
+    def setUniversalSelector(value: ignore | warning | error): Self = this.set("universalSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniversalSelector: Self = this.set("universalSelector", js.undefined)
+    @scala.inline
+    def setUnknownProperties(value: ignore | warning | error): Self = this.set("unknownProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnknownProperties: Self = this.set("unknownProperties", js.undefined)
+    @scala.inline
+    def setUnknownVendorSpecificProperties(value: ignore | warning | error): Self = this.set("unknownVendorSpecificProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnknownVendorSpecificProperties: Self = this.set("unknownVendorSpecificProperties", js.undefined)
+    @scala.inline
+    def setVendorPrefix(value: ignore | warning | error): Self = this.set("vendorPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVendorPrefix: Self = this.set("vendorPrefix", js.undefined)
+    @scala.inline
+    def setZeroUnits(value: ignore | warning | error): Self = this.set("zeroUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZeroUnits: Self = this.set("zeroUnits", js.undefined)
+  }
+  
 }
 

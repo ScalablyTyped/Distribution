@@ -13,6 +13,13 @@ class AdamaxOptimizer protected ()
   extends typings.tensorflowTfjs.mod.AdamaxOptimizer {
   def this(learningRate: Double, beta1: Double, beta2: Double) = this()
   def this(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double) = this()
+  def this(
+    learningRate: Double,
+    beta1: Double,
+    beta2: Double,
+    epsilon: js.UndefOr[scala.Nothing],
+    decay: Double
+  ) = this()
   def this(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double, decay: Double) = this()
 }
 

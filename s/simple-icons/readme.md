@@ -12,7 +12,7 @@ SVG icons for popular brands https://simpleicons.org
 | Keywords           | svg, icons |
 | # releases         | 70 |
 | # dependents       | 11 |
-| # downloads        | 215675 |
+| # downloads        | 212428 |
 | # stars            | 1 |
 
 ## Links

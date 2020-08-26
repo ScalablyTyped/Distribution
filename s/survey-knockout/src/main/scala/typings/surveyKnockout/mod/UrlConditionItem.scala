@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UrlConditionItem () extends ExpressionItem {
   def this(expression: String) = this()
+  def this(expression: js.UndefOr[scala.Nothing], url: String) = this()
   def this(expression: String, url: String) = this()
   val locUrl: LocalizableString = js.native
   /**

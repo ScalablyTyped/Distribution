@@ -5,30 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SliderEvents extends js.Object {
-  var change: js.UndefOr[SliderEvent] = js.undefined
-  var create: js.UndefOr[SliderEvent] = js.undefined
-  var slide: js.UndefOr[SliderEvent] = js.undefined
-  var start: js.UndefOr[SliderEvent] = js.undefined
-  var stop: js.UndefOr[SliderEvent] = js.undefined
+  var change: js.UndefOr[SliderEvent] = js.native
+  var create: js.UndefOr[SliderEvent] = js.native
+  var slide: js.UndefOr[SliderEvent] = js.native
+  var start: js.UndefOr[SliderEvent] = js.native
+  var stop: js.UndefOr[SliderEvent] = js.native
 }
 
 object SliderEvents {
   @scala.inline
-  def apply(
-    change: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
-    create: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
-    slide: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
-    start: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null
-  ): SliderEvents = {
+  def apply(): SliderEvents = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction2(slide))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
     __obj.asInstanceOf[SliderEvents]
   }
+  @scala.inline
+  implicit class SliderEventsOps[Self <: SliderEvents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChange(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit): Self = this.set("change", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setCreate(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit): Self = this.set("create", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setSlide(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit): Self = this.set("slide", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSlide: Self = this.set("slide", js.undefined)
+    @scala.inline
+    def setStart(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit): Self = this.set("start", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setStop(value: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit): Self = this.set("stop", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStop: Self = this.set("stop", js.undefined)
+  }
+  
 }
 

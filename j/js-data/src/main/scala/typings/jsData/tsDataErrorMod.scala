@@ -11,10 +11,6 @@ object tsDataErrorMod extends js.Object {
   @js.native
   class TsDataError () extends Error {
     var errors: js.Any = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
 }

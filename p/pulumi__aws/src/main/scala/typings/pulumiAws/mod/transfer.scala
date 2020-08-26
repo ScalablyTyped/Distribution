@@ -31,6 +31,7 @@ object transfer extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: ServerArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ServerArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -62,8 +63,8 @@ object transfer extends js.Object {
     def this(name: String, args: UserArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getServer(args: GetServerArgs): js.Promise[GetServerResult] with GetServerResult = js.native
-  def getServer(args: GetServerArgs, opts: InvokeOptions): js.Promise[GetServerResult] with GetServerResult = js.native
+  def getServer(args: GetServerArgs): js.Promise[GetServerResult] = js.native
+  def getServer(args: GetServerArgs, opts: InvokeOptions): js.Promise[GetServerResult] = js.native
   /* static members */
   @js.native
   object Server extends js.Object {
@@ -74,8 +75,10 @@ object transfer extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.serverMod.Server = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.serverMod.Server = js.native
     def get(name: String, id: Input[ID], state: ServerState): typings.pulumiAws.serverMod.Server = js.native
     def get(name: String, id: Input[ID], state: ServerState, opts: CustomResourceOptions): typings.pulumiAws.serverMod.Server = js.native
     /**
@@ -95,8 +98,10 @@ object transfer extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.transferSshKeyMod.SshKey = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.transferSshKeyMod.SshKey = js.native
     def get(name: String, id: Input[ID], state: SshKeyState): typings.pulumiAws.transferSshKeyMod.SshKey = js.native
     def get(name: String, id: Input[ID], state: SshKeyState, opts: CustomResourceOptions): typings.pulumiAws.transferSshKeyMod.SshKey = js.native
     /**
@@ -116,8 +121,10 @@ object transfer extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.transferUserMod.User = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.transferUserMod.User = js.native
     def get(name: String, id: Input[ID], state: UserState): typings.pulumiAws.transferUserMod.User = js.native
     def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): typings.pulumiAws.transferUserMod.User = js.native
     /**

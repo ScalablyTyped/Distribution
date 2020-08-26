@@ -14,6 +14,7 @@ class CliTheme () extends EventEmitter {
   def config(config: CliThemeConfig): this.type = js.native
   def delimiter(): String = js.native
   def format(str: String): String = js.native
+  def format(str: String, style: js.UndefOr[scala.Nothing], strip: Boolean): String = js.native
   def format(str: String, style: String): String = js.native
   def format(str: String, style: String, strip: Boolean): String = js.native
   def get[K /* <: /* keyof T */ String */, V](path: K): js.UndefOr[

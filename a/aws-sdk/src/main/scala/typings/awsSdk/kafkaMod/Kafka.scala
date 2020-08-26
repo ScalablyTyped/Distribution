@@ -285,6 +285,19 @@ trait Kafka extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
+    * Reboots brokers.
+    */
+  def rebootBroker(): Request[RebootBrokerResponse, AWSError] = js.native
+  def rebootBroker(callback: js.Function2[/* err */ AWSError, /* data */ RebootBrokerResponse, Unit]): Request[RebootBrokerResponse, AWSError] = js.native
+  /**
+    * Reboots brokers.
+    */
+  def rebootBroker(params: RebootBrokerRequest): Request[RebootBrokerResponse, AWSError] = js.native
+  def rebootBroker(
+    params: RebootBrokerRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RebootBrokerResponse, Unit]
+  ): Request[RebootBrokerResponse, AWSError] = js.native
+  /**
     * 
     Adds tags to the specified MSK resource.
     

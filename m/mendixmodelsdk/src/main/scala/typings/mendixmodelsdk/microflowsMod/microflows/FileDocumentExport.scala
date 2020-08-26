@@ -23,7 +23,7 @@ class FileDocumentExport protected () extends OutputMethod {
   @JSName("model")
   var model_FFileDocumentExport: IModel = js.native
   def targetDocumentVariableName: String = js.native
-  def targetDocumentVariableName(newValue: String): js.Any = js.native
+  def targetDocumentVariableName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

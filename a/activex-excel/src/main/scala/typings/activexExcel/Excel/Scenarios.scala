@@ -14,8 +14,86 @@ trait Scenarios extends js.Object {
   def apply(Index: String): Scenario = js.native
   def apply(Index: Double): Scenario = js.native
   def Add(Name: String, ChangingCells: Range): Scenario = js.native
+  def Add(
+    Name: String,
+    ChangingCells: Range,
+    Values: js.UndefOr[scala.Nothing],
+    Comment: js.UndefOr[scala.Nothing],
+    Locked: js.UndefOr[scala.Nothing],
+    Hidden: Boolean
+  ): Scenario = js.native
+  def Add(
+    Name: String,
+    ChangingCells: Range,
+    Values: js.UndefOr[scala.Nothing],
+    Comment: js.UndefOr[scala.Nothing],
+    Locked: Boolean
+  ): Scenario = js.native
+  def Add(
+    Name: String,
+    ChangingCells: Range,
+    Values: js.UndefOr[scala.Nothing],
+    Comment: js.UndefOr[scala.Nothing],
+    Locked: Boolean,
+    Hidden: Boolean
+  ): Scenario = js.native
+  def Add(Name: String, ChangingCells: Range, Values: js.UndefOr[scala.Nothing], Comment: String): Scenario = js.native
+  def Add(
+    Name: String,
+    ChangingCells: Range,
+    Values: js.UndefOr[scala.Nothing],
+    Comment: String,
+    Locked: js.UndefOr[scala.Nothing],
+    Hidden: Boolean
+  ): Scenario = js.native
+  def Add(
+    Name: String,
+    ChangingCells: Range,
+    Values: js.UndefOr[scala.Nothing],
+    Comment: String,
+    Locked: Boolean
+  ): Scenario = js.native
+  def Add(
+    Name: String,
+    ChangingCells: Range,
+    Values: js.UndefOr[scala.Nothing],
+    Comment: String,
+    Locked: Boolean,
+    Hidden: Boolean
+  ): Scenario = js.native
   def Add(Name: String, ChangingCells: Range, Values: SafeArray[_]): Scenario = js.native
+  def Add(
+    Name: String,
+    ChangingCells: Range,
+    Values: SafeArray[_],
+    Comment: js.UndefOr[scala.Nothing],
+    Locked: js.UndefOr[scala.Nothing],
+    Hidden: Boolean
+  ): Scenario = js.native
+  def Add(
+    Name: String,
+    ChangingCells: Range,
+    Values: SafeArray[_],
+    Comment: js.UndefOr[scala.Nothing],
+    Locked: Boolean
+  ): Scenario = js.native
+  def Add(
+    Name: String,
+    ChangingCells: Range,
+    Values: SafeArray[_],
+    Comment: js.UndefOr[scala.Nothing],
+    Locked: Boolean,
+    Hidden: Boolean
+  ): Scenario = js.native
   def Add(Name: String, ChangingCells: Range, Values: SafeArray[_], Comment: String): Scenario = js.native
+  def Add(
+    Name: String,
+    ChangingCells: Range,
+    Values: SafeArray[_],
+    Comment: String,
+    Locked: js.UndefOr[scala.Nothing],
+    Hidden: Boolean
+  ): Scenario = js.native
   def Add(Name: String, ChangingCells: Range, Values: SafeArray[_], Comment: String, Locked: Boolean): Scenario = js.native
   def Add(
     Name: String,
@@ -27,6 +105,7 @@ trait Scenarios extends js.Object {
   ): Scenario = js.native
   /** @param ReportType [ReportType=1] */
   def CreateSummary(): js.Any = js.native
+  def CreateSummary(ReportType: js.UndefOr[scala.Nothing], ResultCells: Range): js.Any = js.native
   def CreateSummary(ReportType: XlSummaryReportType): js.Any = js.native
   def CreateSummary(ReportType: XlSummaryReportType, ResultCells: Range): js.Any = js.native
   def Item(Index: String): Scenario = js.native

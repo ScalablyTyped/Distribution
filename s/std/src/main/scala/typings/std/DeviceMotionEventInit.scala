@@ -4,33 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeviceMotionEventInit extends EventInit {
-  var acceleration: js.UndefOr[DeviceMotionEventAccelerationInit] = js.undefined
-  var accelerationIncludingGravity: js.UndefOr[DeviceMotionEventAccelerationInit] = js.undefined
-  var interval: js.UndefOr[Double] = js.undefined
-  var rotationRate: js.UndefOr[DeviceMotionEventRotationRateInit] = js.undefined
+  var acceleration: js.UndefOr[DeviceMotionEventAccelerationInit] = js.native
+  var accelerationIncludingGravity: js.UndefOr[DeviceMotionEventAccelerationInit] = js.native
+  var interval: js.UndefOr[Double] = js.native
+  var rotationRate: js.UndefOr[DeviceMotionEventRotationRateInit] = js.native
 }
 
 object DeviceMotionEventInit {
   @scala.inline
-  def apply(
-    acceleration: DeviceMotionEventAccelerationInit = null,
-    accelerationIncludingGravity: DeviceMotionEventAccelerationInit = null,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    interval: js.UndefOr[Double] = js.undefined,
-    rotationRate: DeviceMotionEventRotationRateInit = null
-  ): DeviceMotionEventInit = {
+  def apply(): DeviceMotionEventInit = {
     val __obj = js.Dynamic.literal()
-    if (acceleration != null) __obj.updateDynamic("acceleration")(acceleration.asInstanceOf[js.Any])
-    if (accelerationIncludingGravity != null) __obj.updateDynamic("accelerationIncludingGravity")(accelerationIncludingGravity.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (rotationRate != null) __obj.updateDynamic("rotationRate")(rotationRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceMotionEventInit]
   }
+  @scala.inline
+  implicit class DeviceMotionEventInitOps[Self <: DeviceMotionEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleration(value: DeviceMotionEventAccelerationInit): Self = this.set("acceleration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleration: Self = this.set("acceleration", js.undefined)
+    @scala.inline
+    def setAccelerationIncludingGravity(value: DeviceMotionEventAccelerationInit): Self = this.set("accelerationIncludingGravity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerationIncludingGravity: Self = this.set("accelerationIncludingGravity", js.undefined)
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setRotationRate(value: DeviceMotionEventRotationRateInit): Self = this.set("rotationRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationRate: Self = this.set("rotationRate", js.undefined)
+  }
+  
 }
 

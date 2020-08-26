@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createModel extends js.Object {
   def apply(value: String): ITextModel = js.native
+  def apply(value: String, language: js.UndefOr[scala.Nothing], uri: Uri): ITextModel = js.native
   def apply(value: String, language: String): ITextModel = js.native
   def apply(value: String, language: String, uri: Uri): ITextModel = js.native
 }

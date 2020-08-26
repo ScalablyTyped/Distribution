@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnapToRoadsRequest extends js.Object {
   /**
     * Whether to interpolate a path to include all points forming the full road-geometry.
@@ -13,7 +14,7 @@ trait SnapToRoadsRequest extends js.Object {
     *
     * @default false
     */
-  var interpolate: js.UndefOr[Boolean] = js.undefined
+  var interpolate: js.UndefOr[Boolean] = js.native
   /**
     * The path to be snapped. The `path` parameter accepts a list of latitude/longitude pairs.
     * Latitude and longitude values should be separated by commas. Coordinates should be separated by the pipe character: `"|"`.
@@ -25,15 +26,35 @@ trait SnapToRoadsRequest extends js.Object {
     *  of points are within 300m of each other. This will also help in handling any isolated, long jumps between
     * consecutive points caused by GPS signal loss, or noise.
     */
-  var path: js.Array[LatLng]
+  var path: js.Array[LatLng] = js.native
 }
 
 object SnapToRoadsRequest {
   @scala.inline
-  def apply(path: js.Array[LatLng], interpolate: js.UndefOr[Boolean] = js.undefined): SnapToRoadsRequest = {
+  def apply(path: js.Array[LatLng]): SnapToRoadsRequest = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(interpolate)) __obj.updateDynamic("interpolate")(interpolate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapToRoadsRequest]
   }
+  @scala.inline
+  implicit class SnapToRoadsRequestOps[Self <: SnapToRoadsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPathVarargs(value: LatLng*): Self = this.set("path", js.Array(value :_*))
+    @scala.inline
+    def setPath(value: js.Array[LatLng]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInterpolate(value: Boolean): Self = this.set("interpolate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterpolate: Self = this.set("interpolate", js.undefined)
+  }
+  
 }
 

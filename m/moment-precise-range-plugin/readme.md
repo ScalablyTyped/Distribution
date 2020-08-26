@@ -12,7 +12,7 @@ This is a plugin for the moment.js JavaScript library, to display date/time rang
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 8 |
-| # downloads        | 314183 |
+| # downloads        | 312057 |
 | # stars            | 0 |
 
 ## Links

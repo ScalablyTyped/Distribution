@@ -8,23 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends AlgorithmIdentifier {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var algorithmId: String = js.native
-  /* CompleteClass */
-  override var algorithmParams: js.Any = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /**
-    * Check that two "AlgorithmIdentifiers" are equal
-    * @param {AlgorithmIdentifier} algorithmIdentifier
-    * @returns {boolean}
-    */
-  /* CompleteClass */
-  override def isEqual(algorithmIdentifier: AlgorithmIdentifier): Boolean = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

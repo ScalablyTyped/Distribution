@@ -31,6 +31,7 @@ trait Primus extends EventEmitter {
   def emits(event: String, parser: parser): fn = js.native
   def enable(name: String): this.type = js.native
   def end(): Unit = js.native
+  def end(data: js.UndefOr[scala.Nothing], options: Reconnect): Unit = js.native
   def end(data: js.Any): Unit = js.native
   def end(data: js.Any, options: Reconnect): Unit = js.native
   def forEach(cb: js.Function1[/* spark */ Spark, Boolean]): this.type = js.native
@@ -69,9 +70,11 @@ trait Primus extends EventEmitter {
   @JSName("transform")
   def transform_outgoing(`type`: outgoing, fn: js.Function1[/* packet */ PrimusPacket, Unit]): this.type = js.native
   def use(fn: js.Function0[Middleware]): this.type = js.native
+  def use(fn: js.Function0[Middleware], options: js.UndefOr[scala.Nothing], level: Double): this.type = js.native
   def use(fn: js.Function0[Middleware], options: js.Object): this.type = js.native
   def use(fn: js.Function0[Middleware], options: js.Object, level: Double): this.type = js.native
   def use(name: String, fn: js.Function0[Middleware]): this.type = js.native
+  def use(name: String, fn: js.Function0[Middleware], options: js.UndefOr[scala.Nothing], level: Double): this.type = js.native
   def use(name: String, fn: js.Function0[Middleware], options: js.Object): this.type = js.native
   def use(name: String, fn: js.Function0[Middleware], options: js.Object, level: Double): this.type = js.native
   def write(data: js.Any): Unit = js.native

@@ -34,22 +34,46 @@ trait DescribeBillingGroupResponse extends js.Object {
 
 object DescribeBillingGroupResponse {
   @scala.inline
-  def apply(
-    billingGroupArn: BillingGroupArn = null,
-    billingGroupId: BillingGroupId = null,
-    billingGroupMetadata: BillingGroupMetadata = null,
-    billingGroupName: BillingGroupName = null,
-    billingGroupProperties: BillingGroupProperties = null,
-    version: js.UndefOr[Version] = js.undefined
-  ): DescribeBillingGroupResponse = {
+  def apply(): DescribeBillingGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (billingGroupArn != null) __obj.updateDynamic("billingGroupArn")(billingGroupArn.asInstanceOf[js.Any])
-    if (billingGroupId != null) __obj.updateDynamic("billingGroupId")(billingGroupId.asInstanceOf[js.Any])
-    if (billingGroupMetadata != null) __obj.updateDynamic("billingGroupMetadata")(billingGroupMetadata.asInstanceOf[js.Any])
-    if (billingGroupName != null) __obj.updateDynamic("billingGroupName")(billingGroupName.asInstanceOf[js.Any])
-    if (billingGroupProperties != null) __obj.updateDynamic("billingGroupProperties")(billingGroupProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBillingGroupResponse]
   }
+  @scala.inline
+  implicit class DescribeBillingGroupResponseOps[Self <: DescribeBillingGroupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillingGroupArn(value: BillingGroupArn): Self = this.set("billingGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingGroupArn: Self = this.set("billingGroupArn", js.undefined)
+    @scala.inline
+    def setBillingGroupId(value: BillingGroupId): Self = this.set("billingGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingGroupId: Self = this.set("billingGroupId", js.undefined)
+    @scala.inline
+    def setBillingGroupMetadata(value: BillingGroupMetadata): Self = this.set("billingGroupMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingGroupMetadata: Self = this.set("billingGroupMetadata", js.undefined)
+    @scala.inline
+    def setBillingGroupName(value: BillingGroupName): Self = this.set("billingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingGroupName: Self = this.set("billingGroupName", js.undefined)
+    @scala.inline
+    def setBillingGroupProperties(value: BillingGroupProperties): Self = this.set("billingGroupProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingGroupProperties: Self = this.set("billingGroupProperties", js.undefined)
+    @scala.inline
+    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

@@ -32,6 +32,7 @@ trait People_ extends js.Object {
   def set_once(prop: Dict): Unit = js.native
   def set_once(prop: Dict, callback: Callback): Unit = js.native
   def track_charge(amount: Double): Unit = js.native
+  def track_charge(amount: Double, propertiesOrCallback: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
   def track_charge(amount: Double, propertiesOrCallback: Callback): Unit = js.native
   def track_charge(amount: Double, propertiesOrCallback: Callback, callback: Callback): Unit = js.native
   def track_charge(amount: Double, propertiesOrCallback: Dict): Unit = js.native

@@ -47,19 +47,19 @@ object testAccessMod extends js.Object {
     /* secure */ Boolean, 
     /* namespace */ String, 
     /* webSocketOnly */ Boolean, 
-    js.UndefOr[/* persistenceKey */ String], 
-    js.UndefOr[/* includeNamespaceInQueryParams */ Boolean], 
+    /* persistenceKey */ js.UndefOr[String], 
+    /* includeNamespaceInQueryParams */ js.UndefOr[Boolean], 
     RepoInfo
   ] = js.native
   val RealTimeConnection: Instantiable8[
     /* id */ String, 
     /* repoInfo_ */ RepoInfo, 
-    js.UndefOr[/* applicationId_ */ String], 
+    /* applicationId_ */ js.UndefOr[String], 
     /* onMessage_ */ js.Function1[/* a */ js.Object, Unit], 
     /* onReady_ */ js.Function2[/* a */ Double, /* b */ String, Unit], 
     /* onDisconnect_ */ js.Function0[Unit], 
     /* onKill_ */ js.Function1[/* a */ String, Unit], 
-    js.UndefOr[/* lastSessionId */ String], 
+    /* lastSessionId */ js.UndefOr[String], 
     Connection
   ] = js.native
   def forceRestClient(forceRestClient: Boolean): Unit = js.native

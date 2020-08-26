@@ -12,7 +12,7 @@ AWS credential provider that sources credentials from the EC2 instance metadata 
 | Keywords           | aws, credentials |
 | # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 33794 |
+| # downloads        | 39488 |
 | # stars            | 0 |
 
 ## Links

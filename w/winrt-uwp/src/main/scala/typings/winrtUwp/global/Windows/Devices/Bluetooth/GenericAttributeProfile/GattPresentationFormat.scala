@@ -8,23 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat")
 @js.native
 abstract class GattPresentationFormat ()
-  extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat {
-  /** Gets the Description of the GattPresentationFormat object. */
-  /* CompleteClass */
-  override var description: Double = js.native
-  /** Gets the Exponent of the GattPresentationFormat object. */
-  /* CompleteClass */
-  override var exponent: Double = js.native
-  /** Gets the Format Type of the GattPresentationFormat object. */
-  /* CompleteClass */
-  override var formatType: Double = js.native
-  /** Gets the Namespace of the GattPresentationFormat object. */
-  /* CompleteClass */
-  override var namespace: Double = js.native
-  /** Gets the Unit of the GattPresentationFormat object. */
-  /* CompleteClass */
-  override var unit: Double = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat
 
 /* static members */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat")

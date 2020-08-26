@@ -41,20 +41,42 @@ trait SchemaSafeSearchAnnotation extends js.Object {
 
 object SchemaSafeSearchAnnotation {
   @scala.inline
-  def apply(
-    adult: String = null,
-    medical: String = null,
-    racy: String = null,
-    spoof: String = null,
-    violence: String = null
-  ): SchemaSafeSearchAnnotation = {
+  def apply(): SchemaSafeSearchAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (adult != null) __obj.updateDynamic("adult")(adult.asInstanceOf[js.Any])
-    if (medical != null) __obj.updateDynamic("medical")(medical.asInstanceOf[js.Any])
-    if (racy != null) __obj.updateDynamic("racy")(racy.asInstanceOf[js.Any])
-    if (spoof != null) __obj.updateDynamic("spoof")(spoof.asInstanceOf[js.Any])
-    if (violence != null) __obj.updateDynamic("violence")(violence.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSafeSearchAnnotation]
   }
+  @scala.inline
+  implicit class SchemaSafeSearchAnnotationOps[Self <: SchemaSafeSearchAnnotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdult(value: String): Self = this.set("adult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdult: Self = this.set("adult", js.undefined)
+    @scala.inline
+    def setMedical(value: String): Self = this.set("medical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedical: Self = this.set("medical", js.undefined)
+    @scala.inline
+    def setRacy(value: String): Self = this.set("racy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRacy: Self = this.set("racy", js.undefined)
+    @scala.inline
+    def setSpoof(value: String): Self = this.set("spoof", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpoof: Self = this.set("spoof", js.undefined)
+    @scala.inline
+    def setViolence(value: String): Self = this.set("violence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViolence: Self = this.set("violence", js.undefined)
+  }
+  
 }
 

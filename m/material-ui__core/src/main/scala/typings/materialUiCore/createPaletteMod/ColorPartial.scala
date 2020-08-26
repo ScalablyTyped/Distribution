@@ -25,38 +25,78 @@ trait ColorPartial extends PaletteColorOptions {
 
 object ColorPartial {
   @scala.inline
-  def apply(
-    `100`: String = null,
-    `200`: String = null,
-    `300`: String = null,
-    `400`: String = null,
-    `50`: String = null,
-    `500`: String = null,
-    `600`: String = null,
-    `700`: String = null,
-    `800`: String = null,
-    `900`: String = null,
-    A100: String = null,
-    A200: String = null,
-    A400: String = null,
-    A700: String = null
-  ): ColorPartial = {
+  def apply(): ColorPartial = {
     val __obj = js.Dynamic.literal()
-    if (`100` != null) __obj.updateDynamic("100")(`100`.asInstanceOf[js.Any])
-    if (`200` != null) __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    if (`300` != null) __obj.updateDynamic("300")(`300`.asInstanceOf[js.Any])
-    if (`400` != null) __obj.updateDynamic("400")(`400`.asInstanceOf[js.Any])
-    if (`50` != null) __obj.updateDynamic("50")(`50`.asInstanceOf[js.Any])
-    if (`500` != null) __obj.updateDynamic("500")(`500`.asInstanceOf[js.Any])
-    if (`600` != null) __obj.updateDynamic("600")(`600`.asInstanceOf[js.Any])
-    if (`700` != null) __obj.updateDynamic("700")(`700`.asInstanceOf[js.Any])
-    if (`800` != null) __obj.updateDynamic("800")(`800`.asInstanceOf[js.Any])
-    if (`900` != null) __obj.updateDynamic("900")(`900`.asInstanceOf[js.Any])
-    if (A100 != null) __obj.updateDynamic("A100")(A100.asInstanceOf[js.Any])
-    if (A200 != null) __obj.updateDynamic("A200")(A200.asInstanceOf[js.Any])
-    if (A400 != null) __obj.updateDynamic("A400")(A400.asInstanceOf[js.Any])
-    if (A700 != null) __obj.updateDynamic("A700")(A700.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorPartial]
   }
+  @scala.inline
+  implicit class ColorPartialOps[Self <: ColorPartial] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set100(value: String): Self = this.set("100", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete100: Self = this.set("100", js.undefined)
+    @scala.inline
+    def set200(value: String): Self = this.set("200", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete200: Self = this.set("200", js.undefined)
+    @scala.inline
+    def set300(value: String): Self = this.set("300", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete300: Self = this.set("300", js.undefined)
+    @scala.inline
+    def set400(value: String): Self = this.set("400", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete400: Self = this.set("400", js.undefined)
+    @scala.inline
+    def set50(value: String): Self = this.set("50", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete50: Self = this.set("50", js.undefined)
+    @scala.inline
+    def set500(value: String): Self = this.set("500", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete500: Self = this.set("500", js.undefined)
+    @scala.inline
+    def set600(value: String): Self = this.set("600", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete600: Self = this.set("600", js.undefined)
+    @scala.inline
+    def set700(value: String): Self = this.set("700", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete700: Self = this.set("700", js.undefined)
+    @scala.inline
+    def set800(value: String): Self = this.set("800", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete800: Self = this.set("800", js.undefined)
+    @scala.inline
+    def set900(value: String): Self = this.set("900", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete900: Self = this.set("900", js.undefined)
+    @scala.inline
+    def setA100(value: String): Self = this.set("A100", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA100: Self = this.set("A100", js.undefined)
+    @scala.inline
+    def setA200(value: String): Self = this.set("A200", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA200: Self = this.set("A200", js.undefined)
+    @scala.inline
+    def setA400(value: String): Self = this.set("A400", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA400: Self = this.set("A400", js.undefined)
+    @scala.inline
+    def setA700(value: String): Self = this.set("A700", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA700: Self = this.set("A700", js.undefined)
+  }
+  
 }
 

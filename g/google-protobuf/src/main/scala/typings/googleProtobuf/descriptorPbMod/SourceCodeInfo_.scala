@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SourceCodeInfo_ () extends Message {
   def addLocation(): Location = js.native
+  def addLocation(value: js.UndefOr[scala.Nothing], index: Double): Location = js.native
   def addLocation(value: Location): Location = js.native
   def addLocation(value: Location, index: Double): Location = js.native
   def clearLocationList(): Unit = js.native

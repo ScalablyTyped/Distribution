@@ -18,14 +18,25 @@ object digestAuthenticationMod extends js.Object {
       * @param password - Password.
       */
     def this(loggerFactory: LoggerFactory) = this()
-    def this(loggerFactory: LoggerFactory, username: String) = this()
-    def this(loggerFactory: LoggerFactory, username: String, password: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: js.UndefOr[scala.Nothing], username: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: String, username: String) = this()
+    def this(
+      loggerFactory: LoggerFactory,
+      ha1: js.UndefOr[scala.Nothing],
+      username: js.UndefOr[scala.Nothing],
+      password: String
+    ) = this()
+    def this(loggerFactory: LoggerFactory, ha1: js.UndefOr[scala.Nothing], username: String, password: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: String, username: js.UndefOr[scala.Nothing], password: String) = this()
+    def this(loggerFactory: LoggerFactory, ha1: String, username: String, password: String) = this()
     var algorithm: js.Any = js.native
     /**
       * Generate Digest 'response' value.
       */
     var calculateResponse: js.Any = js.native
     var cnonce: js.Any = js.native
+    var ha1: js.Any = js.native
     var logger: js.Any = js.native
     var method: js.Any = js.native
     var nc: js.Any = js.native

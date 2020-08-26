@@ -13,6 +13,7 @@ class ReInviteUserAgentClient protected ()
   extends typings.sipJs.reInviteUserAgentClientMod.ReInviteUserAgentClient {
   def this(dialog: SessionDialog) = this()
   def this(dialog: SessionDialog, delegate: OutgoingInviteRequestDelegate) = this()
+  def this(dialog: SessionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
   def this(dialog: SessionDialog, delegate: OutgoingInviteRequestDelegate, options: RequestOptions) = this()
 }
 

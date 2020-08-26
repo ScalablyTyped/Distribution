@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListenResponse extends js.Object {
   /** A Document has changed. */
-  var documentChange: js.UndefOr[DocumentChange] = js.undefined
+  var documentChange: js.UndefOr[DocumentChange] = js.native
   /** A Document has been deleted. */
-  var documentDelete: js.UndefOr[DocumentDelete] = js.undefined
+  var documentDelete: js.UndefOr[DocumentDelete] = js.native
   /**
     * A Document has been removed from a target (because it is no longer
     * relevant to that target).
     */
-  var documentRemove: js.UndefOr[DocumentRemove] = js.undefined
+  var documentRemove: js.UndefOr[DocumentRemove] = js.native
   /**
     * A filter to apply to the set of documents previously returned for the
     * given target.
@@ -21,27 +22,49 @@ trait ListenResponse extends js.Object {
     * Returned when documents may have been removed from the given target, but
     * the exact documents are unknown.
     */
-  var filter: js.UndefOr[ExistenceFilter] = js.undefined
+  var filter: js.UndefOr[ExistenceFilter] = js.native
   /** Targets have changed. */
-  var targetChange: js.UndefOr[TargetChange] = js.undefined
+  var targetChange: js.UndefOr[TargetChange] = js.native
 }
 
 object ListenResponse {
   @scala.inline
-  def apply(
-    documentChange: DocumentChange = null,
-    documentDelete: DocumentDelete = null,
-    documentRemove: DocumentRemove = null,
-    filter: ExistenceFilter = null,
-    targetChange: TargetChange = null
-  ): ListenResponse = {
+  def apply(): ListenResponse = {
     val __obj = js.Dynamic.literal()
-    if (documentChange != null) __obj.updateDynamic("documentChange")(documentChange.asInstanceOf[js.Any])
-    if (documentDelete != null) __obj.updateDynamic("documentDelete")(documentDelete.asInstanceOf[js.Any])
-    if (documentRemove != null) __obj.updateDynamic("documentRemove")(documentRemove.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (targetChange != null) __obj.updateDynamic("targetChange")(targetChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenResponse]
   }
+  @scala.inline
+  implicit class ListenResponseOps[Self <: ListenResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentChange(value: DocumentChange): Self = this.set("documentChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentChange: Self = this.set("documentChange", js.undefined)
+    @scala.inline
+    def setDocumentDelete(value: DocumentDelete): Self = this.set("documentDelete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentDelete: Self = this.set("documentDelete", js.undefined)
+    @scala.inline
+    def setDocumentRemove(value: DocumentRemove): Self = this.set("documentRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentRemove: Self = this.set("documentRemove", js.undefined)
+    @scala.inline
+    def setFilter(value: ExistenceFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setTargetChange(value: TargetChange): Self = this.set("targetChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetChange: Self = this.set("targetChange", js.undefined)
+  }
+  
 }
 

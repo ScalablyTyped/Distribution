@@ -19,10 +19,26 @@ trait SchemaDisableServiceResponse extends js.Object {
 
 object SchemaDisableServiceResponse {
   @scala.inline
-  def apply(service: SchemaGoogleApiServiceusageV1Service = null): SchemaDisableServiceResponse = {
+  def apply(): SchemaDisableServiceResponse = {
     val __obj = js.Dynamic.literal()
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDisableServiceResponse]
   }
+  @scala.inline
+  implicit class SchemaDisableServiceResponseOps[Self <: SchemaDisableServiceResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setService(value: SchemaGoogleApiServiceusageV1Service): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+  }
+  
 }
 

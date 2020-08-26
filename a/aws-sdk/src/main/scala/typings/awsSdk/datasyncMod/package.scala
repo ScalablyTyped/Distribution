@@ -52,6 +52,7 @@ package object datasyncMod {
   */
   type Gid = typings.awsSdk.datasyncMod._Gid | java.lang.String
   type IamRoleArn = java.lang.String
+  type InputTagList = js.Array[typings.awsSdk.datasyncMod.TagListEntry]
   type LocationArn = java.lang.String
   type LocationList = js.Array[typings.awsSdk.datasyncMod.LocationListEntry]
   type LocationUri = java.lang.String
@@ -81,6 +82,17 @@ package object datasyncMod {
     - java.lang.String
   */
   type NfsVersion = typings.awsSdk.datasyncMod._NfsVersion | java.lang.String
+  type ObjectStorageAccessKey = java.lang.String
+  type ObjectStorageBucketName = java.lang.String
+  type ObjectStorageSecretKey = java.lang.String
+  type ObjectStorageServerPort = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.HTTPS
+    - typings.awsSdk.awsSdkStrings.HTTP
+    - java.lang.String
+  */
+  type ObjectStorageServerProtocol = typings.awsSdk.datasyncMod._ObjectStorageServerProtocol | java.lang.String
+  type OutputTagList = js.Array[typings.awsSdk.datasyncMod.TagListEntry]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ALWAYS
     - typings.awsSdk.awsSdkStrings.NEVER
@@ -142,7 +154,6 @@ package object datasyncMod {
   type SourceNetworkInterfaceArns = js.Array[typings.awsSdk.datasyncMod.NetworkInterfaceArn]
   type TagKey = java.lang.String
   type TagKeyList = js.Array[typings.awsSdk.datasyncMod.TagKey]
-  type TagList = js.Array[typings.awsSdk.datasyncMod.TagListEntry]
   type TagValue = java.lang.String
   type TaggableResourceArn = java.lang.String
   type TaskArn = java.lang.String
@@ -176,6 +187,12 @@ package object datasyncMod {
   */
   type TaskStatus = typings.awsSdk.datasyncMod._TaskStatus | java.lang.String
   type Time = typings.std.Date
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.CHANGED
+    - typings.awsSdk.awsSdkStrings.ALL
+    - java.lang.String
+  */
+  type TransferMode = typings.awsSdk.datasyncMod._TransferMode | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.NONE
     - typings.awsSdk.awsSdkStrings.INT_VALUE

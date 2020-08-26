@@ -4,23 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeyValueFormat extends js.Object {
   /**
     * Specifies the horizontal text positioning of key value.
     * This field is optional. If not specified, default positioning is used.
     */
-  var position: js.UndefOr[TextPosition] = js.undefined
+  var position: js.UndefOr[TextPosition] = js.native
   /** Text formatting options for key value. */
-  var textFormat: js.UndefOr[TextFormat] = js.undefined
+  var textFormat: js.UndefOr[TextFormat] = js.native
 }
 
 object KeyValueFormat {
   @scala.inline
-  def apply(position: TextPosition = null, textFormat: TextFormat = null): KeyValueFormat = {
+  def apply(): KeyValueFormat = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyValueFormat]
   }
+  @scala.inline
+  implicit class KeyValueFormatOps[Self <: KeyValueFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPosition(value: TextPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setTextFormat(value: TextFormat): Self = this.set("textFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextFormat: Self = this.set("textFormat", js.undefined)
+  }
+  
 }
 

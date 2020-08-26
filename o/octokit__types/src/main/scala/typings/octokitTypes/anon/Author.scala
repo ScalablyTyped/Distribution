@@ -4,52 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Author extends js.Object {
-  var author: Eventsurl
-  var body: String
-  var body_html: String
-  var body_version: String
-  var comments_count: Double
-  var comments_url: String
-  var created_at: String
-  var html_url: String
-  var last_edited_at: String
-  var node_id: String
-  var number: Double
-  var pinned: Boolean
-  var `private`: Boolean
-  var reactions: `1`
-  var team_url: String
-  var title: String
-  var updated_at: String
-  var url: String
+  var author: Email = js.native
+  var committer: Email = js.native
+  var id: String = js.native
+  var message: String = js.native
+  var timestamp: String = js.native
+  var tree_id: String = js.native
 }
 
 object Author {
   @scala.inline
-  def apply(
-    author: Eventsurl,
-    body: String,
-    body_html: String,
-    body_version: String,
-    comments_count: Double,
-    comments_url: String,
-    created_at: String,
-    html_url: String,
-    last_edited_at: String,
-    node_id: String,
-    number: Double,
-    pinned: Boolean,
-    `private`: Boolean,
-    reactions: `1`,
-    team_url: String,
-    title: String,
-    updated_at: String,
-    url: String
-  ): Author = {
-    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], body_html = body_html.asInstanceOf[js.Any], body_version = body_version.asInstanceOf[js.Any], comments_count = comments_count.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], last_edited_at = last_edited_at.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], pinned = pinned.asInstanceOf[js.Any], reactions = reactions.asInstanceOf[js.Any], team_url = team_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+  def apply(author: Email, committer: Email, id: String, message: String, timestamp: String, tree_id: String): Author = {
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], tree_id = tree_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Author]
   }
+  @scala.inline
+  implicit class AuthorOps[Self <: Author] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthor(value: Email): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommitter(value: Email): Self = this.set("committer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTree_id(value: String): Self = this.set("tree_id", value.asInstanceOf[js.Any])
+  }
+  
 }
 

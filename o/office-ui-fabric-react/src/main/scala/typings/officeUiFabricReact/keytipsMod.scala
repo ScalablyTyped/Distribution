@@ -15,6 +15,7 @@ object keytipsMod extends js.Object {
   class KeytipManager ()
     extends typings.officeUiFabricReact.keytipManagerMod.KeytipManager
   
+  val DATAKTP_ARIA_TARGET: /* "data-ktp-aria-target" */ String = js.native
   val DATAKTP_EXECUTE_TARGET: /* "data-ktp-execute-target" */ String = js.native
   val DATAKTP_TARGET: /* "data-ktp-target" */ String = js.native
   val KTP_ARIA_SEPARATOR: /* ", " */ String = js.native

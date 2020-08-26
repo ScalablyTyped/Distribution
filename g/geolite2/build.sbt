@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "geolite2"
-version := "2.0-dt-20191206Z-2bff67"
-scalaVersion := "2.13.2"
+version := "2.0-dt-20191206Z-86c0e9"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

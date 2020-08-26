@@ -27,6 +27,7 @@ trait Subdocuments extends js.Object {
   def Delete(): Unit = js.native
   def Item(Index: Double): Subdocument = js.native
   def Merge(): Unit = js.native
+  def Merge(FirstSubdocument: js.UndefOr[scala.Nothing], LastSubdocument: js.Any): Unit = js.native
   def Merge(FirstSubdocument: js.Any): Unit = js.native
   def Merge(FirstSubdocument: js.Any, LastSubdocument: js.Any): Unit = js.native
   def Select(): Unit = js.native

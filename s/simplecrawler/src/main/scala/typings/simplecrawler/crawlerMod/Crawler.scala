@@ -245,6 +245,7 @@ trait Crawler extends EventEmitter {
   def queueLinkedItems(resourceData: String, queueItem: QueueItem): this.type = js.native
   def queueLinkedItems(resourceData: Buffer, queueItem: QueueItem): this.type = js.native
   def queueURL(url: String): Boolean = js.native
+  def queueURL(url: String, referrer: js.UndefOr[scala.Nothing], force: Boolean): Boolean = js.native
   def queueURL(url: String, referrer: QueueItem): Boolean = js.native
   def queueURL(url: String, referrer: QueueItem, force: Boolean): Boolean = js.native
   def removeDownloadCondition(id: js.Function0[Unit]): Boolean = js.native

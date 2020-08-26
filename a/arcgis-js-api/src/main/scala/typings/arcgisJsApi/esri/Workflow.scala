@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.create
+import typings.arcgisJsApi.arcgisJsApiStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +52,7 @@ trait Workflow extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#type)
     */
-  val `type`: String = js.native
+  val `type`: create | update = js.native
   /**
     * Cancels the active workflow.
     *

@@ -65,18 +65,40 @@ trait SchemaAggregation extends js.Object {
 
 object SchemaAggregation {
   @scala.inline
-  def apply(
-    alignmentPeriod: String = null,
-    crossSeriesReducer: String = null,
-    groupByFields: js.Array[String] = null,
-    perSeriesAligner: String = null
-  ): SchemaAggregation = {
+  def apply(): SchemaAggregation = {
     val __obj = js.Dynamic.literal()
-    if (alignmentPeriod != null) __obj.updateDynamic("alignmentPeriod")(alignmentPeriod.asInstanceOf[js.Any])
-    if (crossSeriesReducer != null) __obj.updateDynamic("crossSeriesReducer")(crossSeriesReducer.asInstanceOf[js.Any])
-    if (groupByFields != null) __obj.updateDynamic("groupByFields")(groupByFields.asInstanceOf[js.Any])
-    if (perSeriesAligner != null) __obj.updateDynamic("perSeriesAligner")(perSeriesAligner.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAggregation]
   }
+  @scala.inline
+  implicit class SchemaAggregationOps[Self <: SchemaAggregation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignmentPeriod(value: String): Self = this.set("alignmentPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignmentPeriod: Self = this.set("alignmentPeriod", js.undefined)
+    @scala.inline
+    def setCrossSeriesReducer(value: String): Self = this.set("crossSeriesReducer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossSeriesReducer: Self = this.set("crossSeriesReducer", js.undefined)
+    @scala.inline
+    def setGroupByFieldsVarargs(value: String*): Self = this.set("groupByFields", js.Array(value :_*))
+    @scala.inline
+    def setGroupByFields(value: js.Array[String]): Self = this.set("groupByFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupByFields: Self = this.set("groupByFields", js.undefined)
+    @scala.inline
+    def setPerSeriesAligner(value: String): Self = this.set("perSeriesAligner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerSeriesAligner: Self = this.set("perSeriesAligner", js.undefined)
+  }
+  
 }
 

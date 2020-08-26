@@ -4,31 +4,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LocalForageOptions extends LocalForageDbInstanceOptions {
-  var description: js.UndefOr[String] = js.undefined
-  var driver: js.UndefOr[String | js.Array[String]] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
-  var version: js.UndefOr[Double] = js.undefined
+  var description: js.UndefOr[String] = js.native
+  var driver: js.UndefOr[String | js.Array[String]] = js.native
+  var size: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.native
 }
 
 object LocalForageOptions {
   @scala.inline
-  def apply(
-    description: String = null,
-    driver: String | js.Array[String] = null,
-    name: String = null,
-    size: js.UndefOr[Double] = js.undefined,
-    storeName: String = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): LocalForageOptions = {
+  def apply(): LocalForageOptions = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (driver != null) __obj.updateDynamic("driver")(driver.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (storeName != null) __obj.updateDynamic("storeName")(storeName.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalForageOptions]
   }
+  @scala.inline
+  implicit class LocalForageOptionsOps[Self <: LocalForageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDriverVarargs(value: String*): Self = this.set("driver", js.Array(value :_*))
+    @scala.inline
+    def setDriver(value: String | js.Array[String]): Self = this.set("driver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriver: Self = this.set("driver", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

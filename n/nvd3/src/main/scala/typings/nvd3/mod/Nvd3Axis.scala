@@ -31,6 +31,7 @@ trait Nvd3Axis extends js.Object {
   def range(range: js.Array[Double]): this.type = js.native
   def rangeBand(): Double = js.native
   def rangeBands(interval: js.Tuple2[Double, Double]): this.type = js.native
+  def rangeBands(interval: js.Tuple2[Double, Double], padding: js.UndefOr[scala.Nothing], outerPadding: Double): this.type = js.native
   def rangeBands(interval: js.Tuple2[Double, Double], padding: Double): this.type = js.native
   def rangeBands(interval: js.Tuple2[Double, Double], padding: Double, outerPadding: Double): this.type = js.native
   /*Rotates the X axis labels by the specified degree.*/

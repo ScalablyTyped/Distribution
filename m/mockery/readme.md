@@ -12,7 +12,7 @@ Simplifying the use of mocks with Node.js
 | Keywords           | mock, stub, require, module, cache, unit, test, unittest, testing, tdd |
 | # releases         | 0 |
 | # dependents       | 76 |
-| # downloads        | 4536172 |
+| # downloads        | 4635263 |
 | # stars            | 28 |
 
 ## Links

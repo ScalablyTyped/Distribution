@@ -12,15 +12,8 @@ object Chai_ extends js.Object {
     extends typings.chai.Chai.AssertionError {
     def this(message: String) = this()
     def this(message: String, _props: js.Any) = this()
+    def this(message: String, _props: js.UndefOr[scala.Nothing], ssf: js.Function) = this()
     def this(message: String, _props: js.Any, ssf: js.Function) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    /* CompleteClass */
-    override var showDiff: Boolean = js.native
-    /* CompleteClass */
-    override var stack: String = js.native
   }
   
 }

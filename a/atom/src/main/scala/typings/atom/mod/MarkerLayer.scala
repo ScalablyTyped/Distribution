@@ -1,7 +1,7 @@
 package typings.atom.mod
 
-import typings.atom.anon.ExclusiveBoolean
 import typings.atom.anon.ExclusiveInvalidate
+import typings.atom.anon.`27`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ trait MarkerLayer extends js.Object {
   def isDestroyed(): Boolean = js.native
   /** Create a marker at with its head at the given position with no tail. */
   def markPosition(position: PointCompatible): Marker = js.native
-  def markPosition(position: PointCompatible, options: ExclusiveBoolean): Marker = js.native
+  def markPosition(position: PointCompatible, options: `27`): Marker = js.native
   // Marker Creation
   /** Create a marker with the given range. */
   def markRange(range: RangeCompatible): Marker = js.native

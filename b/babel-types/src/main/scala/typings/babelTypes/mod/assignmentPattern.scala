@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object assignmentPattern extends js.Object {
   def apply(): AssignmentPattern_ = js.native
+  def apply(left: js.UndefOr[scala.Nothing], right: Expression): AssignmentPattern_ = js.native
   def apply(left: Identifier_): AssignmentPattern_ = js.native
   def apply(left: Identifier_, right: Expression): AssignmentPattern_ = js.native
 }

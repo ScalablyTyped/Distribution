@@ -36,6 +36,7 @@ class Schema_ protected () extends js.Object {
   def addField[T /* <: TYPE */](name: String): this.type = js.native
   def addField[T /* <: TYPE */](name: String, `type`: T): this.type = js.native
   def addField[T /* <: TYPE */](name: String, `type`: T, options: FieldOptions[_]): this.type = js.native
+  def addField[T /* <: TYPE */](name: String, `type`: js.UndefOr[scala.Nothing], options: FieldOptions[_]): this.type = js.native
   def addFile(name: String): this.type = js.native
   def addFile(name: String, options: FieldOptions[File]): this.type = js.native
   def addGeoPoint(name: String): this.type = js.native

@@ -20,6 +20,7 @@ trait FlashLibrary extends js.Object {
   def editItem(): Boolean = js.native
   def editItem(namePath: String): Boolean = js.native
   def expandFolder(bExpand: Boolean): Boolean = js.native
+  def expandFolder(bExpand: Boolean, bRecurseNestedParents: js.UndefOr[scala.Nothing], namePath: String): Boolean = js.native
   def expandFolder(bExpand: Boolean, bRecurseNestedParents: Boolean): Boolean = js.native
   def expandFolder(bExpand: Boolean, bRecurseNestedParents: Boolean, namePath: String): Boolean = js.native
   def findItemIndex(namePath: String): Double = js.native
@@ -32,6 +33,7 @@ trait FlashLibrary extends js.Object {
   def importEmbeddedSWF(linkageName: String, swfData: js.Array[_], libName: String): Unit = js.native
   def itemExists(namePath: String): Boolean = js.native
   def moveToFolder(folderPath: String): Boolean = js.native
+  def moveToFolder(folderPath: String, itemToMove: js.UndefOr[scala.Nothing], bReplace: Boolean): Boolean = js.native
   def moveToFolder(folderPath: String, itemToMove: String): Boolean = js.native
   def moveToFolder(folderPath: String, itemToMove: String, bReplace: Boolean): Boolean = js.native
   /** Method; creates a new folder with the specified name, or a default name ("untitled folder #" ) if no folderName parameter is provided, in the currently selected folder. */
@@ -44,6 +46,7 @@ trait FlashLibrary extends js.Object {
   def selectAll(bSelectAll: Boolean): Unit = js.native
   /** Method; selects a specified library item. */
   def selectItem(namePath: String): Boolean = js.native
+  def selectItem(namePath: String, bReplaceCurrentSelection: js.UndefOr[scala.Nothing], bSelect: Boolean): Boolean = js.native
   def selectItem(namePath: String, bReplaceCurrentSelection: Boolean): Boolean = js.native
   def selectItem(namePath: String, bReplaceCurrentSelection: Boolean, bSelect: Boolean): Boolean = js.native
   /** Method; deselects all the library items. */

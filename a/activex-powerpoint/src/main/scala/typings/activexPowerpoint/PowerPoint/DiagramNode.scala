@@ -25,6 +25,7 @@ trait DiagramNode extends js.Object {
     * @param Office.MsoDiagramNodeType [NodeType=1]
     */
   def AddNode(): DiagramNode = js.native
+  def AddNode(Pos: js.UndefOr[scala.Nothing], NodeType: MsoDiagramNodeType): DiagramNode = js.native
   def AddNode(Pos: MsoRelativeNodePosition): DiagramNode = js.native
   def AddNode(Pos: MsoRelativeNodePosition, NodeType: MsoDiagramNodeType): DiagramNode = js.native
   /** @param Office.MsoRelativeNodePosition [Pos=2] */

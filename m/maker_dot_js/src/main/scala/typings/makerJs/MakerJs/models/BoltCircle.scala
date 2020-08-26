@@ -1,40 +1,37 @@
 package typings.makerJs.MakerJs.models
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.makerJs.MakerJs.IModel
-import typings.makerJs.MakerJs.IModelMap
 import typings.makerJs.MakerJs.IPathMap
-import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BoltCircle extends IModel {
   @JSName("paths")
-  var paths_BoltCircle: IPathMap
+  var paths_BoltCircle: IPathMap = js.native
 }
 
 object BoltCircle {
   @scala.inline
-  def apply(
-    paths: IPathMap,
-    exporterOptions: StringDictionary[js.Any] = null,
-    layer: String = null,
-    models: IModelMap = null,
-    notes: String = null,
-    origin: IPoint = null,
-    `type`: String = null,
-    units: String = null
-  ): BoltCircle = {
+  def apply(paths: IPathMap): BoltCircle = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
-    if (exporterOptions != null) __obj.updateDynamic("exporterOptions")(exporterOptions.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoltCircle]
   }
+  @scala.inline
+  implicit class BoltCircleOps[Self <: BoltCircle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPaths(value: IPathMap): Self = this.set("paths", value.asInstanceOf[js.Any])
+  }
+  
 }
 

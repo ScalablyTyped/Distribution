@@ -8,7 +8,6 @@ import typings.firefoxWebextBrowser.anon.Attention
 import typings.firefoxWebextBrowser.anon.Audible
 import typings.firefoxWebextBrowser.anon.BypassCache
 import typings.firefoxWebextBrowser.anon.FrameIdName
-import typings.firefoxWebextBrowser.anon.FrameIdNumber
 import typings.firefoxWebextBrowser.anon.FromIndex
 import typings.firefoxWebextBrowser.anon.Highlighted
 import typings.firefoxWebextBrowser.anon.IndexWindowId
@@ -19,7 +18,8 @@ import typings.firefoxWebextBrowser.anon.OldPosition
 import typings.firefoxWebextBrowser.anon.Populate
 import typings.firefoxWebextBrowser.anon.PreviousTabId
 import typings.firefoxWebextBrowser.anon.TabIds
-import typings.firefoxWebextBrowser.anon.`0`
+import typings.firefoxWebextBrowser.anon.WindowIdNumber
+import typings.firefoxWebextBrowser.anon.`3`
 import typings.firefoxWebextBrowser.browser.extensionTypes.ImageDetails
 import typings.firefoxWebextBrowser.browser.extensionTypes.InjectDetails
 import typings.firefoxWebextBrowser.browser.runtime.Port
@@ -55,7 +55,9 @@ object tabs extends js.Object {
     * @param tabId The ID of the tab that has become active.
     * @deprecated Please use `tabs.onActivated`.
     */
-  val onActiveChanged: js.UndefOr[WebExtEvent[js.Function2[/* tabId */ Double, /* selectInfo */ `0`, Unit]]] = js.native
+  val onActiveChanged: js.UndefOr[
+    WebExtEvent[js.Function2[/* tabId */ Double, /* selectInfo */ WindowIdNumber, Unit]]
+  ] = js.native
   /** Fired when a tab is attached to a window, for example because it was moved between windows. */
   val onAttached: WebExtEvent[js.Function2[/* tabId */ Double, /* attachInfo */ NewPosition, Unit]] = js.native
   /* tabs events */
@@ -89,7 +91,9 @@ object tabs extends js.Object {
     * @param tabId The ID of the tab that has become active.
     * @deprecated Please use `tabs.onActivated`.
     */
-  val onSelectionChanged: js.UndefOr[WebExtEvent[js.Function2[/* tabId */ Double, /* selectInfo */ `0`, Unit]]] = js.native
+  val onSelectionChanged: js.UndefOr[
+    WebExtEvent[js.Function2[/* tabId */ Double, /* selectInfo */ WindowIdNumber, Unit]]
+  ] = js.native
   /**
     * Fired when a tab is updated.
     * @param changeInfo Lists the changes to the state of the tab that was updated.
@@ -103,6 +107,7 @@ object tabs extends js.Object {
     * @param [tabId] The tab to capture. Defaults to the active tab of the current window.
     */
   def captureTab(): js.Promise[String] = js.native
+  def captureTab(tabId: js.UndefOr[scala.Nothing], options: ImageDetails): js.Promise[String] = js.native
   def captureTab(tabId: Double): js.Promise[String] = js.native
   def captureTab(tabId: Double, options: ImageDetails): js.Promise[String] = js.native
   /**
@@ -111,6 +116,7 @@ object tabs extends js.Object {
     * @param [windowId] The target window. Defaults to the current window.
     */
   def captureVisibleTab(): js.Promise[String] = js.native
+  def captureVisibleTab(windowId: js.UndefOr[scala.Nothing], options: ImageDetails): js.Promise[String] = js.native
   def captureVisibleTab(windowId: Double): js.Promise[String] = js.native
   def captureVisibleTab(windowId: Double, options: ImageDetails): js.Promise[String] = js.native
   /**
@@ -240,6 +246,7 @@ object tabs extends js.Object {
     *     the first tab in the array instead.
     */
   def moveInSuccession(tabIds: js.Array[Double]): js.Promise[_] = js.native
+  def moveInSuccession(tabIds: js.Array[Double], tabId: js.UndefOr[scala.Nothing], options: Append): js.Promise[_] = js.native
   def moveInSuccession(tabIds: js.Array[Double], tabId: Double): js.Promise[_] = js.native
   def moveInSuccession(tabIds: js.Array[Double], tabId: Double, options: Append): js.Promise[_] = js.native
   /** Prints page in active tab. */
@@ -253,6 +260,7 @@ object tabs extends js.Object {
     * @param [tabId] The ID of the tab to reload; defaults to the selected tab of the current window.
     */
   def reload(): js.Promise[Unit] = js.native
+  def reload(tabId: js.UndefOr[scala.Nothing], reloadProperties: BypassCache): js.Promise[Unit] = js.native
   def reload(tabId: Double): js.Promise[Unit] = js.native
   def reload(tabId: Double, reloadProperties: BypassCache): js.Promise[Unit] = js.native
   def remove(tabIds: js.Array[Double]): js.Promise[Unit] = js.native
@@ -285,7 +293,7 @@ object tabs extends js.Object {
     * tab for the current extension.
     */
   def sendMessage(tabId: Double, message: js.Any): js.Promise[_] = js.native
-  def sendMessage(tabId: Double, message: js.Any, options: FrameIdNumber): js.Promise[_] = js.native
+  def sendMessage(tabId: Double, message: js.Any, options: `3`): js.Promise[_] = js.native
   /**
     * Sends a single request to the content script(s) in the specified tab, with an optional callback to run when a
     * response is sent back. The `extension.onRequest` event is fired in each content script running in the specified

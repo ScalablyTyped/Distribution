@@ -4,46 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseServiceOptions extends UserOptions {
   @JSName("headers")
-  var headers_BaseServiceOptions: HeaderOptions
-  var qs: js.Any
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+  var headers_BaseServiceOptions: HeaderOptions = js.native
+  var qs: js.Any = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
   @JSName("url")
-  var url_BaseServiceOptions: String
+  var url_BaseServiceOptions: String = js.native
 }
 
 object BaseServiceOptions {
   @scala.inline
-  def apply(
-    headers: HeaderOptions,
-    qs: js.Any,
-    url: String,
-    apikey: String = null,
-    disable_ssl_verification: js.UndefOr[Boolean] = js.undefined,
-    iam_access_token: String = null,
-    iam_apikey: String = null,
-    iam_url: String = null,
-    password: String = null,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    token: String = null,
-    use_unauthenticated: js.UndefOr[Boolean] = js.undefined,
-    username: String = null,
-    version: String = null
-  ): BaseServiceOptions = {
+  def apply(headers: HeaderOptions, qs: js.Any, url: String): BaseServiceOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], qs = qs.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (apikey != null) __obj.updateDynamic("apikey")(apikey.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_ssl_verification)) __obj.updateDynamic("disable_ssl_verification")(disable_ssl_verification.get.asInstanceOf[js.Any])
-    if (iam_access_token != null) __obj.updateDynamic("iam_access_token")(iam_access_token.asInstanceOf[js.Any])
-    if (iam_apikey != null) __obj.updateDynamic("iam_apikey")(iam_apikey.asInstanceOf[js.Any])
-    if (iam_url != null) __obj.updateDynamic("iam_url")(iam_url.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (!js.isUndefined(use_unauthenticated)) __obj.updateDynamic("use_unauthenticated")(use_unauthenticated.get.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseServiceOptions]
   }
+  @scala.inline
+  implicit class BaseServiceOptionsOps[Self <: BaseServiceOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeaders(value: HeaderOptions): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQs(value: js.Any): Self = this.set("qs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
+  }
+  
 }
 

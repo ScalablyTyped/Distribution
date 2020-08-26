@@ -30,16 +30,34 @@ trait SchemaResourcePolicySnapshotSchedulePolicy extends js.Object {
 
 object SchemaResourcePolicySnapshotSchedulePolicy {
   @scala.inline
-  def apply(
-    retentionPolicy: SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy = null,
-    schedule: SchemaResourcePolicySnapshotSchedulePolicySchedule = null,
-    snapshotProperties: SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties = null
-  ): SchemaResourcePolicySnapshotSchedulePolicy = {
+  def apply(): SchemaResourcePolicySnapshotSchedulePolicy = {
     val __obj = js.Dynamic.literal()
-    if (retentionPolicy != null) __obj.updateDynamic("retentionPolicy")(retentionPolicy.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (snapshotProperties != null) __obj.updateDynamic("snapshotProperties")(snapshotProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourcePolicySnapshotSchedulePolicy]
   }
+  @scala.inline
+  implicit class SchemaResourcePolicySnapshotSchedulePolicyOps[Self <: SchemaResourcePolicySnapshotSchedulePolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRetentionPolicy(value: SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy): Self = this.set("retentionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetentionPolicy: Self = this.set("retentionPolicy", js.undefined)
+    @scala.inline
+    def setSchedule(value: SchemaResourcePolicySnapshotSchedulePolicySchedule): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setSnapshotProperties(value: SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties): Self = this.set("snapshotProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotProperties: Self = this.set("snapshotProperties", js.undefined)
+  }
+  
 }
 

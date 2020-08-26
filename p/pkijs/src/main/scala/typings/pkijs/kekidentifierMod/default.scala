@@ -1,6 +1,5 @@
 package typings.pkijs.kekidentifierMod
 
-import typings.asn1js.mod.OctetString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,14 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends KEKIdentifier {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var keyIdentifier: OctetString = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

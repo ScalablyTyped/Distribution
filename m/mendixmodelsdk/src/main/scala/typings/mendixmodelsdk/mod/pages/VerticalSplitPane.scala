@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/vertical-split-pane relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/scroll-container relevant section in reference guide}
   *
   * In version 8.0.0: deleted
   */

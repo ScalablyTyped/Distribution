@@ -28,16 +28,36 @@ trait SchemaNumericBucketingResult extends js.Object {
 
 object SchemaNumericBucketingResult {
   @scala.inline
-  def apply(
-    counts: js.Array[SchemaBucketizedCount] = null,
-    maxValue: js.UndefOr[Double] = js.undefined,
-    minValue: js.UndefOr[Double] = js.undefined
-  ): SchemaNumericBucketingResult = {
+  def apply(): SchemaNumericBucketingResult = {
     val __obj = js.Dynamic.literal()
-    if (counts != null) __obj.updateDynamic("counts")(counts.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNumericBucketingResult]
   }
+  @scala.inline
+  implicit class SchemaNumericBucketingResultOps[Self <: SchemaNumericBucketingResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountsVarargs(value: SchemaBucketizedCount*): Self = this.set("counts", js.Array(value :_*))
+    @scala.inline
+    def setCounts(value: js.Array[SchemaBucketizedCount]): Self = this.set("counts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCounts: Self = this.set("counts", js.undefined)
+    @scala.inline
+    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+  }
+  
 }
 

@@ -26,16 +26,34 @@ trait SchemaSegmentFilterClause extends js.Object {
 
 object SchemaSegmentFilterClause {
   @scala.inline
-  def apply(
-    dimensionFilter: SchemaSegmentDimensionFilter = null,
-    metricFilter: SchemaSegmentMetricFilter = null,
-    not: js.UndefOr[Boolean] = js.undefined
-  ): SchemaSegmentFilterClause = {
+  def apply(): SchemaSegmentFilterClause = {
     val __obj = js.Dynamic.literal()
-    if (dimensionFilter != null) __obj.updateDynamic("dimensionFilter")(dimensionFilter.asInstanceOf[js.Any])
-    if (metricFilter != null) __obj.updateDynamic("metricFilter")(metricFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(not)) __obj.updateDynamic("not")(not.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSegmentFilterClause]
   }
+  @scala.inline
+  implicit class SchemaSegmentFilterClauseOps[Self <: SchemaSegmentFilterClause] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensionFilter(value: SchemaSegmentDimensionFilter): Self = this.set("dimensionFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionFilter: Self = this.set("dimensionFilter", js.undefined)
+    @scala.inline
+    def setMetricFilter(value: SchemaSegmentMetricFilter): Self = this.set("metricFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricFilter: Self = this.set("metricFilter", js.undefined)
+    @scala.inline
+    def setNot(value: Boolean): Self = this.set("not", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNot: Self = this.set("not", js.undefined)
+  }
+  
 }
 

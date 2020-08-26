@@ -29,16 +29,36 @@ trait SchemaCreateCollectdTimeSeriesRequest extends js.Object {
 
 object SchemaCreateCollectdTimeSeriesRequest {
   @scala.inline
-  def apply(
-    collectdPayloads: js.Array[SchemaCollectdPayload] = null,
-    collectdVersion: String = null,
-    resource: SchemaMonitoredResource = null
-  ): SchemaCreateCollectdTimeSeriesRequest = {
+  def apply(): SchemaCreateCollectdTimeSeriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (collectdPayloads != null) __obj.updateDynamic("collectdPayloads")(collectdPayloads.asInstanceOf[js.Any])
-    if (collectdVersion != null) __obj.updateDynamic("collectdVersion")(collectdVersion.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateCollectdTimeSeriesRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateCollectdTimeSeriesRequestOps[Self <: SchemaCreateCollectdTimeSeriesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollectdPayloadsVarargs(value: SchemaCollectdPayload*): Self = this.set("collectdPayloads", js.Array(value :_*))
+    @scala.inline
+    def setCollectdPayloads(value: js.Array[SchemaCollectdPayload]): Self = this.set("collectdPayloads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectdPayloads: Self = this.set("collectdPayloads", js.undefined)
+    @scala.inline
+    def setCollectdVersion(value: String): Self = this.set("collectdVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectdVersion: Self = this.set("collectdVersion", js.undefined)
+    @scala.inline
+    def setResource(value: SchemaMonitoredResource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+  }
+  
 }
 

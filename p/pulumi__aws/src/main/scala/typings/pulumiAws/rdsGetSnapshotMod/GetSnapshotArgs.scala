@@ -40,22 +40,46 @@ trait GetSnapshotArgs extends js.Object {
 
 object GetSnapshotArgs {
   @scala.inline
-  def apply(
-    dbInstanceIdentifier: String = null,
-    dbSnapshotIdentifier: String = null,
-    includePublic: js.UndefOr[Boolean] = js.undefined,
-    includeShared: js.UndefOr[Boolean] = js.undefined,
-    mostRecent: js.UndefOr[Boolean] = js.undefined,
-    snapshotType: String = null
-  ): GetSnapshotArgs = {
+  def apply(): GetSnapshotArgs = {
     val __obj = js.Dynamic.literal()
-    if (dbInstanceIdentifier != null) __obj.updateDynamic("dbInstanceIdentifier")(dbInstanceIdentifier.asInstanceOf[js.Any])
-    if (dbSnapshotIdentifier != null) __obj.updateDynamic("dbSnapshotIdentifier")(dbSnapshotIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(includePublic)) __obj.updateDynamic("includePublic")(includePublic.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeShared)) __obj.updateDynamic("includeShared")(includeShared.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent.get.asInstanceOf[js.Any])
-    if (snapshotType != null) __obj.updateDynamic("snapshotType")(snapshotType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSnapshotArgs]
   }
+  @scala.inline
+  implicit class GetSnapshotArgsOps[Self <: GetSnapshotArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDbInstanceIdentifier(value: String): Self = this.set("dbInstanceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbInstanceIdentifier: Self = this.set("dbInstanceIdentifier", js.undefined)
+    @scala.inline
+    def setDbSnapshotIdentifier(value: String): Self = this.set("dbSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbSnapshotIdentifier: Self = this.set("dbSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setIncludePublic(value: Boolean): Self = this.set("includePublic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludePublic: Self = this.set("includePublic", js.undefined)
+    @scala.inline
+    def setIncludeShared(value: Boolean): Self = this.set("includeShared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeShared: Self = this.set("includeShared", js.undefined)
+    @scala.inline
+    def setMostRecent(value: Boolean): Self = this.set("mostRecent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMostRecent: Self = this.set("mostRecent", js.undefined)
+    @scala.inline
+    def setSnapshotType(value: String): Self = this.set("snapshotType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotType: Self = this.set("snapshotType", js.undefined)
+  }
+  
 }
 

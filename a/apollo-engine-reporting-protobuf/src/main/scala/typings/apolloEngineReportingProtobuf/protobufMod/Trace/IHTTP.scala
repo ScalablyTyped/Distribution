@@ -8,47 +8,92 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Properties of a HTTP. */
+@js.native
 trait IHTTP extends js.Object {
   /** HTTP host */
-  var host: js.UndefOr[String | Null] = js.undefined
+  var host: js.UndefOr[String | Null] = js.native
   /** HTTP method */
-  var method: js.UndefOr[Method | Null] = js.undefined
+  var method: js.UndefOr[Method | Null] = js.native
   /** HTTP path */
-  var path: js.UndefOr[String | Null] = js.undefined
+  var path: js.UndefOr[String | Null] = js.native
   /** HTTP protocol */
-  var protocol: js.UndefOr[String | Null] = js.undefined
+  var protocol: js.UndefOr[String | Null] = js.native
   /** HTTP requestHeaders */
-  var requestHeaders: js.UndefOr[StringDictionary[IValues] | Null] = js.undefined
+  var requestHeaders: js.UndefOr[StringDictionary[IValues] | Null] = js.native
   /** HTTP responseHeaders */
-  var responseHeaders: js.UndefOr[StringDictionary[IValues] | Null] = js.undefined
+  var responseHeaders: js.UndefOr[StringDictionary[IValues] | Null] = js.native
   /** HTTP secure */
-  var secure: js.UndefOr[Boolean | Null] = js.undefined
+  var secure: js.UndefOr[Boolean | Null] = js.native
   /** HTTP statusCode */
-  var statusCode: js.UndefOr[Double | Null] = js.undefined
+  var statusCode: js.UndefOr[Double | Null] = js.native
 }
 
 object IHTTP {
   @scala.inline
-  def apply(
-    host: js.UndefOr[Null | String] = js.undefined,
-    method: js.UndefOr[Null | Method] = js.undefined,
-    path: js.UndefOr[Null | String] = js.undefined,
-    protocol: js.UndefOr[Null | String] = js.undefined,
-    requestHeaders: js.UndefOr[Null | StringDictionary[IValues]] = js.undefined,
-    responseHeaders: js.UndefOr[Null | StringDictionary[IValues]] = js.undefined,
-    secure: js.UndefOr[Null | Boolean] = js.undefined,
-    statusCode: js.UndefOr[Null | Double] = js.undefined
-  ): IHTTP = {
+  def apply(): IHTTP = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(host)) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(protocol)) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestHeaders)) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(responseHeaders)) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusCode)) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHTTP]
   }
+  @scala.inline
+  implicit class IHTTPOps[Self <: IHTTP] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHostNull: Self = this.set("host", null)
+    @scala.inline
+    def setMethod(value: Method): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setMethodNull: Self = this.set("method", null)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPathNull: Self = this.set("path", null)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setProtocolNull: Self = this.set("protocol", null)
+    @scala.inline
+    def setRequestHeaders(value: StringDictionary[IValues]): Self = this.set("requestHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestHeaders: Self = this.set("requestHeaders", js.undefined)
+    @scala.inline
+    def setRequestHeadersNull: Self = this.set("requestHeaders", null)
+    @scala.inline
+    def setResponseHeaders(value: StringDictionary[IValues]): Self = this.set("responseHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseHeaders: Self = this.set("responseHeaders", js.undefined)
+    @scala.inline
+    def setResponseHeadersNull: Self = this.set("responseHeaders", null)
+    @scala.inline
+    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecure: Self = this.set("secure", js.undefined)
+    @scala.inline
+    def setSecureNull: Self = this.set("secure", null)
+    @scala.inline
+    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+    @scala.inline
+    def setStatusCodeNull: Self = this.set("statusCode", null)
+  }
+  
 }
 

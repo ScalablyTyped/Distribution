@@ -26,11 +26,30 @@ trait SchemaSendCommandToDeviceRequest extends js.Object {
 
 object SchemaSendCommandToDeviceRequest {
   @scala.inline
-  def apply(binaryData: String = null, subfolder: String = null): SchemaSendCommandToDeviceRequest = {
+  def apply(): SchemaSendCommandToDeviceRequest = {
     val __obj = js.Dynamic.literal()
-    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData.asInstanceOf[js.Any])
-    if (subfolder != null) __obj.updateDynamic("subfolder")(subfolder.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSendCommandToDeviceRequest]
   }
+  @scala.inline
+  implicit class SchemaSendCommandToDeviceRequestOps[Self <: SchemaSendCommandToDeviceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBinaryData(value: String): Self = this.set("binaryData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinaryData: Self = this.set("binaryData", js.undefined)
+    @scala.inline
+    def setSubfolder(value: String): Self = this.set("subfolder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubfolder: Self = this.set("subfolder", js.undefined)
+  }
+  
 }
 

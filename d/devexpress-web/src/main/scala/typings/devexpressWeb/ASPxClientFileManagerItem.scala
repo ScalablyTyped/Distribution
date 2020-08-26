@@ -27,6 +27,7 @@ trait ASPxClientFileManagerItem extends js.Object {
     * @param skipRootFolder true, to skip the root folder; otherwise, false.
     */
   def GetFullName(): String = js.native
+  def GetFullName(separator: js.UndefOr[scala.Nothing], skipRootFolder: Boolean): String = js.native
   def GetFullName(separator: String): String = js.native
   def GetFullName(separator: String, skipRootFolder: Boolean): String = js.native
   /**

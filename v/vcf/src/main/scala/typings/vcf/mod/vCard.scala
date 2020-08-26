@@ -30,6 +30,7 @@ trait vCard extends js.Object {
   def toJCard(version: CardVersion): jCard = js.native
   /** Returns a formatted jCard JSON object */
   def toJSON(): jCard = js.native
+  def toString(version: js.UndefOr[scala.Nothing], charset: String): String = js.native
   def toString(version: CardVersion): String = js.native
   def toString(version: CardVersion, charset: String): String = js.native
 }

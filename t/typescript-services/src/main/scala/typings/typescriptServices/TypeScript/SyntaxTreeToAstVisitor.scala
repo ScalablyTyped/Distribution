@@ -22,6 +22,13 @@ trait SyntaxTreeToAstVisitor extends ISyntaxVisitor {
   /* private */ def moveTo(element1: js.Any, element2: js.Any): js.Any = js.native
   /* private */ def setCommentsAndSpan(ast: js.Any, fullStart: js.Any, node: js.Any): js.Any = js.native
   def setSpan(span: AST, fullStart: Double, element: ISyntaxElement): Unit = js.native
+  def setSpan(
+    span: AST,
+    fullStart: Double,
+    element: ISyntaxElement,
+    firstToken: js.UndefOr[scala.Nothing],
+    lastToken: ISyntaxToken
+  ): Unit = js.native
   def setSpan(span: AST, fullStart: Double, element: ISyntaxElement, firstToken: ISyntaxToken): Unit = js.native
   def setSpan(
     span: AST,

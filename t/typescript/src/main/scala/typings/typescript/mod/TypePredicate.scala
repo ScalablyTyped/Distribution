@@ -34,20 +34,13 @@ object TypePredicate {
     __obj.asInstanceOf[TypePredicate]
   }
   @scala.inline
-  def AssertsThisTypePredicate(kind: AssertsThis, `type`: Type = null): TypePredicate = {
+  def AssertsThisTypePredicate(kind: AssertsThis): TypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypePredicate]
   }
   @scala.inline
-  def AssertsIdentifierTypePredicate(
-    kind: AssertsIdentifier,
-    parameterIndex: Double,
-    parameterName: java.lang.String,
-    `type`: Type = null
-  ): TypePredicate = {
+  def AssertsIdentifierTypePredicate(kind: AssertsIdentifier, parameterIndex: Double, parameterName: java.lang.String): TypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypePredicate]
   }
 }

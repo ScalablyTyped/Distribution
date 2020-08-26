@@ -24,7 +24,7 @@ abstract class ActionItem protected () extends Element {
   @JSName("model")
   var model_FActionItem: IModel = js.native
   def action: ClientAction = js.native
-  def action(newValue: ClientAction): js.Any = js.native
+  def action_=(newValue: ClientAction): Unit = js.native
   def containerAsDropDownButton: DropDownButton = js.native
   def containerAsNavigationList: NavigationList = js.native
 }

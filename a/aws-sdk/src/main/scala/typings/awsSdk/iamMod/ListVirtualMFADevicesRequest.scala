@@ -22,16 +22,34 @@ trait ListVirtualMFADevicesRequest extends js.Object {
 
 object ListVirtualMFADevicesRequest {
   @scala.inline
-  def apply(
-    AssignmentStatus: assignmentStatusType = null,
-    Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined
-  ): ListVirtualMFADevicesRequest = {
+  def apply(): ListVirtualMFADevicesRequest = {
     val __obj = js.Dynamic.literal()
-    if (AssignmentStatus != null) __obj.updateDynamic("AssignmentStatus")(AssignmentStatus.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVirtualMFADevicesRequest]
   }
+  @scala.inline
+  implicit class ListVirtualMFADevicesRequestOps[Self <: ListVirtualMFADevicesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignmentStatus(value: assignmentStatusType): Self = this.set("AssignmentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentStatus: Self = this.set("AssignmentStatus", js.undefined)
+    @scala.inline
+    def setMarker(value: markerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxItems(value: maxItemsType): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+  }
+  
 }
 

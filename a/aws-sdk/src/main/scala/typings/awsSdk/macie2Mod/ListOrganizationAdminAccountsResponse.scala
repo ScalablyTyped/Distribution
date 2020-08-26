@@ -18,11 +18,32 @@ trait ListOrganizationAdminAccountsResponse extends js.Object {
 
 object ListOrganizationAdminAccountsResponse {
   @scala.inline
-  def apply(adminAccounts: listOfAdminAccount = null, nextToken: string = null): ListOrganizationAdminAccountsResponse = {
+  def apply(): ListOrganizationAdminAccountsResponse = {
     val __obj = js.Dynamic.literal()
-    if (adminAccounts != null) __obj.updateDynamic("adminAccounts")(adminAccounts.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOrganizationAdminAccountsResponse]
   }
+  @scala.inline
+  implicit class ListOrganizationAdminAccountsResponseOps[Self <: ListOrganizationAdminAccountsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdminAccountsVarargs(value: AdminAccount*): Self = this.set("adminAccounts", js.Array(value :_*))
+    @scala.inline
+    def setAdminAccounts(value: listOfAdminAccount): Self = this.set("adminAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminAccounts: Self = this.set("adminAccounts", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

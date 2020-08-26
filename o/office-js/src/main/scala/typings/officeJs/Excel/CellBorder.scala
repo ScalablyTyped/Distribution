@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
+@js.native
 trait CellBorder extends js.Object {
   /**
     *
@@ -29,7 +30,7 @@ trait CellBorder extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /**
     *
     * Represents the `style` property of a single border.
@@ -38,37 +39,59 @@ trait CellBorder extends js.Object {
     */
   var style: js.UndefOr[
     BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot
-  ] = js.undefined
+  ] = js.native
   /**
     *
     * Represents the `tintAndShade` property of a single border.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tintAndShade: js.UndefOr[scala.Double] = js.undefined
+  var tintAndShade: js.UndefOr[scala.Double] = js.native
   /**
     *
     * Represents the `weight` property of a single border.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var weight: js.UndefOr[BorderWeight | Hairline | Thin | Medium | Thick] = js.undefined
+  var weight: js.UndefOr[BorderWeight | Hairline | Thin | Medium | Thick] = js.native
 }
 
 object CellBorder {
   @scala.inline
-  def apply(
-    color: String = null,
-    style: BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot = null,
-    tintAndShade: js.UndefOr[scala.Double] = js.undefined,
-    weight: BorderWeight | Hairline | Thin | Medium | Thick = null
-  ): CellBorder = {
+  def apply(): CellBorder = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.get.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellBorder]
   }
+  @scala.inline
+  implicit class CellBorderOps[Self <: CellBorder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setStyle(
+      value: BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot
+    ): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTintAndShade(value: scala.Double): Self = this.set("tintAndShade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTintAndShade: Self = this.set("tintAndShade", js.undefined)
+    @scala.inline
+    def setWeight(value: BorderWeight | Hairline | Thin | Medium | Thick): Self = this.set("weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("weight", js.undefined)
+  }
+  
 }
 

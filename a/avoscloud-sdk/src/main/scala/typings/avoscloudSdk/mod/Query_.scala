@@ -79,6 +79,7 @@ class Query_ protected () extends BaseObject {
   def ascending(key: String): Query = js.native
   def ascending(key: js.Array[String]): Query = js.native
   def collection(): Collection[Object] = js.native
+  def collection(items: js.UndefOr[scala.Nothing], options: Options): Collection[Object] = js.native
   def collection(items: js.Array[Object]): Collection[Object] = js.native
   def collection(items: js.Array[Object], options: Options): Collection[Object] = js.native
   def containedIn(key: String, values: js.Array[_]): Query = js.native

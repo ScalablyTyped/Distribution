@@ -72,48 +72,70 @@ trait ParamsResourceTasksList extends StandardParameters {
 
 object ParamsResourceTasksList {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    completedMax: String = null,
-    completedMin: String = null,
-    dueMax: String = null,
-    dueMin: String = null,
-    fields: String = null,
-    key: String = null,
-    maxResults: String = null,
-    oauth_token: String = null,
-    pageToken: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    showCompleted: js.UndefOr[Boolean] = js.undefined,
-    showDeleted: js.UndefOr[Boolean] = js.undefined,
-    showHidden: js.UndefOr[Boolean] = js.undefined,
-    tasklist: String = null,
-    updatedMin: String = null,
-    userIp: String = null
-  ): ParamsResourceTasksList = {
+  def apply(): ParamsResourceTasksList = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (completedMax != null) __obj.updateDynamic("completedMax")(completedMax.asInstanceOf[js.Any])
-    if (completedMin != null) __obj.updateDynamic("completedMin")(completedMin.asInstanceOf[js.Any])
-    if (dueMax != null) __obj.updateDynamic("dueMax")(dueMax.asInstanceOf[js.Any])
-    if (dueMin != null) __obj.updateDynamic("dueMin")(dueMin.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCompleted)) __obj.updateDynamic("showCompleted")(showCompleted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDeleted)) __obj.updateDynamic("showDeleted")(showDeleted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden.get.asInstanceOf[js.Any])
-    if (tasklist != null) __obj.updateDynamic("tasklist")(tasklist.asInstanceOf[js.Any])
-    if (updatedMin != null) __obj.updateDynamic("updatedMin")(updatedMin.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceTasksList]
   }
+  @scala.inline
+  implicit class ParamsResourceTasksListOps[Self <: ParamsResourceTasksList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setCompletedMax(value: String): Self = this.set("completedMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedMax: Self = this.set("completedMax", js.undefined)
+    @scala.inline
+    def setCompletedMin(value: String): Self = this.set("completedMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedMin: Self = this.set("completedMin", js.undefined)
+    @scala.inline
+    def setDueMax(value: String): Self = this.set("dueMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDueMax: Self = this.set("dueMax", js.undefined)
+    @scala.inline
+    def setDueMin(value: String): Self = this.set("dueMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDueMin: Self = this.set("dueMin", js.undefined)
+    @scala.inline
+    def setMaxResults(value: String): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setShowCompleted(value: Boolean): Self = this.set("showCompleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCompleted: Self = this.set("showCompleted", js.undefined)
+    @scala.inline
+    def setShowDeleted(value: Boolean): Self = this.set("showDeleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDeleted: Self = this.set("showDeleted", js.undefined)
+    @scala.inline
+    def setShowHidden(value: Boolean): Self = this.set("showHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowHidden: Self = this.set("showHidden", js.undefined)
+    @scala.inline
+    def setTasklist(value: String): Self = this.set("tasklist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTasklist: Self = this.set("tasklist", js.undefined)
+    @scala.inline
+    def setUpdatedMin(value: String): Self = this.set("updatedMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedMin: Self = this.set("updatedMin", js.undefined)
+  }
+  
 }
 

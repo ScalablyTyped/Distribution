@@ -46,28 +46,60 @@ trait DescribeCasesRequest extends js.Object {
 
 object DescribeCasesRequest {
   @scala.inline
-  def apply(
-    afterTime: AfterTime = null,
-    beforeTime: BeforeTime = null,
-    caseIdList: CaseIdList = null,
-    displayId: DisplayId = null,
-    includeCommunications: js.UndefOr[IncludeCommunications] = js.undefined,
-    includeResolvedCases: js.UndefOr[IncludeResolvedCases] = js.undefined,
-    language: Language = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null
-  ): DescribeCasesRequest = {
+  def apply(): DescribeCasesRequest = {
     val __obj = js.Dynamic.literal()
-    if (afterTime != null) __obj.updateDynamic("afterTime")(afterTime.asInstanceOf[js.Any])
-    if (beforeTime != null) __obj.updateDynamic("beforeTime")(beforeTime.asInstanceOf[js.Any])
-    if (caseIdList != null) __obj.updateDynamic("caseIdList")(caseIdList.asInstanceOf[js.Any])
-    if (displayId != null) __obj.updateDynamic("displayId")(displayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeCommunications)) __obj.updateDynamic("includeCommunications")(includeCommunications.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeResolvedCases)) __obj.updateDynamic("includeResolvedCases")(includeResolvedCases.get.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCasesRequest]
   }
+  @scala.inline
+  implicit class DescribeCasesRequestOps[Self <: DescribeCasesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterTime(value: AfterTime): Self = this.set("afterTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterTime: Self = this.set("afterTime", js.undefined)
+    @scala.inline
+    def setBeforeTime(value: BeforeTime): Self = this.set("beforeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeTime: Self = this.set("beforeTime", js.undefined)
+    @scala.inline
+    def setCaseIdListVarargs(value: CaseId*): Self = this.set("caseIdList", js.Array(value :_*))
+    @scala.inline
+    def setCaseIdList(value: CaseIdList): Self = this.set("caseIdList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseIdList: Self = this.set("caseIdList", js.undefined)
+    @scala.inline
+    def setDisplayId(value: DisplayId): Self = this.set("displayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayId: Self = this.set("displayId", js.undefined)
+    @scala.inline
+    def setIncludeCommunications(value: IncludeCommunications): Self = this.set("includeCommunications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeCommunications: Self = this.set("includeCommunications", js.undefined)
+    @scala.inline
+    def setIncludeResolvedCases(value: IncludeResolvedCases): Self = this.set("includeResolvedCases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeResolvedCases: Self = this.set("includeResolvedCases", js.undefined)
+    @scala.inline
+    def setLanguage(value: Language): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

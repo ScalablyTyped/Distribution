@@ -10,9 +10,9 @@ StoryShots is a Jest Snapshot Testing Addon for Storybook.
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-storyshots |
 | Keywords           | addon, storybook |
-| # releases         | 412 |
-| # dependents       | 39 |
-| # downloads        | 6849372 |
+| # releases         | 413 |
+| # dependents       | 40 |
+| # downloads        | 7081422 |
 | # stars            | 0 |
 
 ## Links

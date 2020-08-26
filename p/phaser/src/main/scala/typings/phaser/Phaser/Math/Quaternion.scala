@@ -129,12 +129,32 @@ trait Quaternion extends js.Object {
     * @param w The w component. Default 0.
     */
   def set(): Quaternion = js.native
+  def set(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    z: js.UndefOr[scala.Nothing],
+    w: Double
+  ): Quaternion = js.native
+  def set(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Quaternion = js.native
+  def set(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double): Quaternion = js.native
+  def set(x: js.UndefOr[scala.Nothing], y: Double): Quaternion = js.native
+  def set(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double): Quaternion = js.native
+  def set(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Quaternion = js.native
+  def set(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double): Quaternion = js.native
   def set(x: js.Object): Quaternion = js.native
+  def set(x: js.Object, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): Quaternion = js.native
+  def set(x: js.Object, y: js.UndefOr[scala.Nothing], z: Double): Quaternion = js.native
+  def set(x: js.Object, y: js.UndefOr[scala.Nothing], z: Double, w: Double): Quaternion = js.native
   def set(x: js.Object, y: Double): Quaternion = js.native
+  def set(x: js.Object, y: Double, z: js.UndefOr[scala.Nothing], w: Double): Quaternion = js.native
   def set(x: js.Object, y: Double, z: Double): Quaternion = js.native
   def set(x: js.Object, y: Double, z: Double, w: Double): Quaternion = js.native
   def set(x: Double): Quaternion = js.native
+  def set(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): Quaternion = js.native
+  def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Quaternion = js.native
+  def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double): Quaternion = js.native
   def set(x: Double, y: Double): Quaternion = js.native
+  def set(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double): Quaternion = js.native
   def set(x: Double, y: Double, z: Double): Quaternion = js.native
   def set(x: Double, y: Double, z: Double, w: Double): Quaternion = js.native
   /**

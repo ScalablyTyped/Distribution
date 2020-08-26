@@ -22,6 +22,13 @@ abstract class ContextBinding protected ()
     oModel: typings.openui5.sap.ui.model.Model,
     sPath: String,
     oContext: js.Any,
+    mParameters: js.UndefOr[scala.Nothing],
+    oEvents: js.Any
+  ) = this()
+  def this(
+    oModel: typings.openui5.sap.ui.model.Model,
+    sPath: String,
+    oContext: js.Any,
     mParameters: js.Any,
     oEvents: js.Any
   ) = this()

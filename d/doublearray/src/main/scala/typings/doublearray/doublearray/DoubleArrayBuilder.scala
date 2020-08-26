@@ -11,6 +11,7 @@ trait DoubleArrayBuilder extends js.Object {
   var keys: js.Array[KeyValue] = js.native
   def append(key: String, record: Double): DoubleArrayBuilder = js.native
   def build(): DoubleArray = js.native
+  def build(keys: js.UndefOr[scala.Nothing], sorted: Boolean): DoubleArray = js.native
   def build(keys: js.Array[KeyValue]): DoubleArray = js.native
   def build(keys: js.Array[KeyValue], sorted: Boolean): DoubleArray = js.native
   def findAllocatableBase(children_info: Int32Array): Double = js.native

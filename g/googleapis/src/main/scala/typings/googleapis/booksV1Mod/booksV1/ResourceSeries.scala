@@ -28,6 +28,7 @@ class ResourceSeries protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSeries] = js.native
   def get(callback: BodyResponseCallback[SchemaSeries]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSeries] = js.native
   def get(params: ParamsResourceSeriesGet): GaxiosPromise[SchemaSeries] = js.native
   def get(params: ParamsResourceSeriesGet, callback: BodyResponseCallback[SchemaSeries]): Unit = js.native
   def get(

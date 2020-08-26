@@ -5,30 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledSamplingTargetDocument extends SamplingTargetDocument {
   /**
     * <p>When the reservoir quota expires.</p>
     */
   @JSName("ReservoirQuotaTTL")
-  var ReservoirQuotaTTL_UnmarshalledSamplingTargetDocument: js.UndefOr[Date] = js.undefined
+  var ReservoirQuotaTTL_UnmarshalledSamplingTargetDocument: js.UndefOr[Date] = js.native
 }
 
 object UnmarshalledSamplingTargetDocument {
   @scala.inline
-  def apply(
-    FixedRate: js.UndefOr[Double] = js.undefined,
-    Interval: js.UndefOr[Double] = js.undefined,
-    ReservoirQuota: js.UndefOr[Double] = js.undefined,
-    ReservoirQuotaTTL: Date = null,
-    RuleName: String = null
-  ): UnmarshalledSamplingTargetDocument = {
+  def apply(): UnmarshalledSamplingTargetDocument = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FixedRate)) __obj.updateDynamic("FixedRate")(FixedRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Interval)) __obj.updateDynamic("Interval")(Interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReservoirQuota)) __obj.updateDynamic("ReservoirQuota")(ReservoirQuota.get.asInstanceOf[js.Any])
-    if (ReservoirQuotaTTL != null) __obj.updateDynamic("ReservoirQuotaTTL")(ReservoirQuotaTTL.asInstanceOf[js.Any])
-    if (RuleName != null) __obj.updateDynamic("RuleName")(RuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledSamplingTargetDocument]
   }
+  @scala.inline
+  implicit class UnmarshalledSamplingTargetDocumentOps[Self <: UnmarshalledSamplingTargetDocument] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReservoirQuotaTTL(value: Date): Self = this.set("ReservoirQuotaTTL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservoirQuotaTTL: Self = this.set("ReservoirQuotaTTL", js.undefined)
+  }
+  
 }
 

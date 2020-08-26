@@ -11,6 +11,11 @@ trait SchedulerLike extends js.Object {
   def schedule[T](work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ js.UndefOr[T], Unit]): Subscription = js.native
   def schedule[T](
     work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ js.UndefOr[T], Unit],
+    delay: js.UndefOr[scala.Nothing],
+    state: T
+  ): Subscription = js.native
+  def schedule[T](
+    work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ js.UndefOr[T], Unit],
     delay: Double
   ): Subscription = js.native
   def schedule[T](

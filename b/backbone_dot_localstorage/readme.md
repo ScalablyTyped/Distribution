@@ -12,7 +12,7 @@ Typings are for version 1.0
 | Keywords           | backbone, localstorage, local, storage, cache, sync |
 | # releases         | 1 |
 | # dependents       | 5 |
-| # downloads        | 162314 |
+| # downloads        | 166240 |
 | # stars            | 5 |
 
 ## Links

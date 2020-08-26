@@ -33,21 +33,21 @@ class OfflineEntityConfig protected () extends Element {
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
   def constraint: String = js.native
-  def constraint(newValue: String): js.Any = js.native
+  def constraint_=(newValue: String): Unit = js.native
   def containerAsNavigationProfileBase: NavigationProfileBase = js.native
   /**
     * In version 8.9.0: introduced
     */
   def downloadMode: OfflineEntitySyncDownloadMode = js.native
-  def downloadMode(newValue: OfflineEntitySyncDownloadMode): js.Any = js.native
+  def downloadMode_=(newValue: OfflineEntitySyncDownloadMode): Unit = js.native
   def entity: IEntity = js.native
-  def entity(newValue: IEntity): js.Any = js.native
   def entityQualifiedName: String = js.native
+  def entity_=(newValue: IEntity): Unit = js.native
   /**
     * In version 8.9.0: deleted
     */
   def shouldDownload: Boolean = js.native
-  def shouldDownload(newValue: Boolean): js.Any = js.native
+  def shouldDownload_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

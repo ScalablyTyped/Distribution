@@ -22,14 +22,30 @@ trait PortMapping extends js.Object {
 
 object PortMapping {
   @scala.inline
-  def apply(
-    applicationPort: NonSystemPort,
-    jobPort: Port,
-    enableOnPublicIp: js.UndefOr[Boolean] = js.undefined
-  ): PortMapping = {
+  def apply(applicationPort: NonSystemPort, jobPort: Port): PortMapping = {
     val __obj = js.Dynamic.literal(applicationPort = applicationPort.asInstanceOf[js.Any], jobPort = jobPort.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableOnPublicIp)) __obj.updateDynamic("enableOnPublicIp")(enableOnPublicIp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortMapping]
   }
+  @scala.inline
+  implicit class PortMappingOps[Self <: PortMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationPort(value: NonSystemPort): Self = this.set("applicationPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobPort(value: Port): Self = this.set("jobPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnableOnPublicIp(value: Boolean): Self = this.set("enableOnPublicIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableOnPublicIp: Self = this.set("enableOnPublicIp", js.undefined)
+  }
+  
 }
 

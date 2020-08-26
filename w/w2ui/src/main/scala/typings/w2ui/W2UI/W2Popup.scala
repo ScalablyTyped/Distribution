@@ -24,7 +24,11 @@ trait W2Popup
   def min(): Unit = js.native
   def open(options: js.Object): Unit = js.native
   def reset(): Unit = js.native
+  def resize(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], callback: js.Function): Double = js.native
+  def resize(width: js.UndefOr[scala.Nothing], height: Double): Double = js.native
+  def resize(width: js.UndefOr[scala.Nothing], height: Double, callback: js.Function): Double = js.native
   def resize(width: Double): Double = js.native
+  def resize(width: Double, height: js.UndefOr[scala.Nothing], callback: js.Function): Double = js.native
   def resize(width: Double, height: Double): Double = js.native
   def resize(width: Double, height: Double, callback: js.Function): Double = js.native
   @JSName("resize")

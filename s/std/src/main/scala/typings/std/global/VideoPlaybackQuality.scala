@@ -8,14 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("VideoPlaybackQuality")
 @js.native
 class VideoPlaybackQuality ()
-  extends typings.std.VideoPlaybackQuality {
-  /* CompleteClass */
-  override val creationTime: Double = js.native
-  /* CompleteClass */
-  override val droppedVideoFrames: Double = js.native
-  /* CompleteClass */
-  override val totalVideoFrames: Double = js.native
-}
+  extends typings.std.VideoPlaybackQuality
 
 @JSGlobal("VideoPlaybackQuality")
 @js.native

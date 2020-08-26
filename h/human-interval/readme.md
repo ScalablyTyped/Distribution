@@ -12,7 +12,7 @@ Human readable time measurements
 | Keywords           | interval, time, date |
 | # releases         | 2 |
 | # dependents       | 58 |
-| # downloads        | 1624899 |
+| # downloads        | 1651849 |
 | # stars            | 4 |
 
 ## Links

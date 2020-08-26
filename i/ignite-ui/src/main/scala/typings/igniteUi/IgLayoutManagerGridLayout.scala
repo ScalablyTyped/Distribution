@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgLayoutManagerGridLayout
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,12 +15,12 @@ trait IgLayoutManagerGridLayout
     * Specifies the duration of the animations in the layout manager"s grid layout
     *
     */
-  var animationDuration: js.UndefOr[Double] = js.undefined
+  var animationDuration: js.UndefOr[Double] = js.native
   /**
     * Number of columns in the grid
     *
     */
-  var cols: js.UndefOr[Double] = js.undefined
+  var cols: js.UndefOr[Double] = js.native
   /**
     * Accepts number, string with height in px, percents,                        or asterisk (*) which will distribute all the height between all the columns equally.
     *                         It can also accept an array, specifying height for each column. If more than one column
@@ -27,7 +28,7 @@ trait IgLayoutManagerGridLayout
     *                     array The column height can be set as an array of heights.
     *
     */
-  var columnHeight: js.UndefOr[String | Double | js.Array[_]] = js.undefined
+  var columnHeight: js.UndefOr[String | Double | js.Array[_]] = js.native
   /**
     * Accepts number or string with width in px, percents                        or asterisk (*) which will distribute all the width between all the columns equally.
     *                         It can also accept an array, specifying width for each column. If more than one column
@@ -35,61 +36,93 @@ trait IgLayoutManagerGridLayout
     *                     array The column width can be set as an array of widths.
     *
     */
-  var columnWidth: js.UndefOr[String | Double | js.Array[_]] = js.undefined
+  var columnWidth: js.UndefOr[String | Double | js.Array[_]] = js.native
   /**
     * Specifies the margin left css property for items
     *
     */
-  var marginLeft: js.UndefOr[Double] = js.undefined
+  var marginLeft: js.UndefOr[Double] = js.native
   /**
     * Specifies the margin top css property for items
     *
     */
-  var marginTop: js.UndefOr[Double] = js.undefined
+  var marginTop: js.UndefOr[Double] = js.native
   /**
     * Specifies whether the previous set options should be overriden when setting options
     *
     */
-  var overrideConfigOnSetOption: js.UndefOr[Boolean] = js.undefined
+  var overrideConfigOnSetOption: js.UndefOr[Boolean] = js.native
   /**
     * Specified whether the items should rearrange to fit in the container when it is resized.
     *                         Have effect only when fixed columnWidth option is set.
     *
     */
-  var rearrangeItems: js.UndefOr[Boolean] = js.undefined
+  var rearrangeItems: js.UndefOr[Boolean] = js.native
   /**
     * Number of rows in the grid
     *
     */
-  var rows: js.UndefOr[Double] = js.undefined
+  var rows: js.UndefOr[Double] = js.native
 }
 
 object IgLayoutManagerGridLayout {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    cols: js.UndefOr[Double] = js.undefined,
-    columnHeight: String | Double | js.Array[_] = null,
-    columnWidth: String | Double | js.Array[_] = null,
-    marginLeft: js.UndefOr[Double] = js.undefined,
-    marginTop: js.UndefOr[Double] = js.undefined,
-    overrideConfigOnSetOption: js.UndefOr[Boolean] = js.undefined,
-    rearrangeItems: js.UndefOr[Boolean] = js.undefined,
-    rows: js.UndefOr[Double] = js.undefined
-  ): IgLayoutManagerGridLayout = {
+  def apply(): IgLayoutManagerGridLayout = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
-    if (columnHeight != null) __obj.updateDynamic("columnHeight")(columnHeight.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginLeft)) __obj.updateDynamic("marginLeft")(marginLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginTop)) __obj.updateDynamic("marginTop")(marginTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideConfigOnSetOption)) __obj.updateDynamic("overrideConfigOnSetOption")(overrideConfigOnSetOption.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rearrangeItems)) __obj.updateDynamic("rearrangeItems")(rearrangeItems.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgLayoutManagerGridLayout]
   }
+  @scala.inline
+  implicit class IgLayoutManagerGridLayoutOps[Self <: IgLayoutManagerGridLayout] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setCols(value: Double): Self = this.set("cols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCols: Self = this.set("cols", js.undefined)
+    @scala.inline
+    def setColumnHeightVarargs(value: js.Any*): Self = this.set("columnHeight", js.Array(value :_*))
+    @scala.inline
+    def setColumnHeight(value: String | Double | js.Array[_]): Self = this.set("columnHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnHeight: Self = this.set("columnHeight", js.undefined)
+    @scala.inline
+    def setColumnWidthVarargs(value: js.Any*): Self = this.set("columnWidth", js.Array(value :_*))
+    @scala.inline
+    def setColumnWidth(value: String | Double | js.Array[_]): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    @scala.inline
+    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    @scala.inline
+    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    @scala.inline
+    def setOverrideConfigOnSetOption(value: Boolean): Self = this.set("overrideConfigOnSetOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrideConfigOnSetOption: Self = this.set("overrideConfigOnSetOption", js.undefined)
+    @scala.inline
+    def setRearrangeItems(value: Boolean): Self = this.set("rearrangeItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRearrangeItems: Self = this.set("rearrangeItems", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+  }
+  
 }
 

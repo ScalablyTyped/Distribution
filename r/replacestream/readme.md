@@ -12,7 +12,7 @@ A node.js through stream that does basic streaming text search and replace and i
 | Keywords           | replace, text, regex, stream, streams, streaming, search |
 | # releases         | 1 |
 | # dependents       | 192 |
-| # downloads        | 10771705 |
+| # downloads        | 10817618 |
 | # stars            | 11 |
 
 ## Links

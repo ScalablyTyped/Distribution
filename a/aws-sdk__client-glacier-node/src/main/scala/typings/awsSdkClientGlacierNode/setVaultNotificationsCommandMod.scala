@@ -26,16 +26,9 @@ object setVaultNotificationsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: SetVaultNotificationsInput) = this()
-    /* CompleteClass */
-    override val input: SetVaultNotificationsInput = js.native
     val middlewareStack: MiddlewareStack[SetVaultNotificationsInput, SetVaultNotificationsOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: GlacierResolvedConfiguration
-    ): Handler[SetVaultNotificationsInput, SetVaultNotificationsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: GlacierResolvedConfiguration
     ): Handler[SetVaultNotificationsInput, SetVaultNotificationsOutput] = js.native
   }

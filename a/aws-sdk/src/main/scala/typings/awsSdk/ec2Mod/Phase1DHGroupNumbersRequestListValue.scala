@@ -14,10 +14,26 @@ trait Phase1DHGroupNumbersRequestListValue extends js.Object {
 
 object Phase1DHGroupNumbersRequestListValue {
   @scala.inline
-  def apply(Value: js.UndefOr[Integer] = js.undefined): Phase1DHGroupNumbersRequestListValue = {
+  def apply(): Phase1DHGroupNumbersRequestListValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Phase1DHGroupNumbersRequestListValue]
   }
+  @scala.inline
+  implicit class Phase1DHGroupNumbersRequestListValueOps[Self <: Phase1DHGroupNumbersRequestListValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValue(value: Integer): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+  }
+  
 }
 

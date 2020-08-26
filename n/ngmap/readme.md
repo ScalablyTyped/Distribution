@@ -12,7 +12,7 @@ The Simplest AngularJS Google Maps V3 Directive
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 426883 |
+| # downloads        | 436749 |
 | # stars            | 3 |
 
 ## Links

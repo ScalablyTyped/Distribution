@@ -44,11 +44,11 @@ class ODataKeyPart protected () extends Element {
   val type_FODataKeyPart: IAttributeType = js.native
   def containerAsODataKey: ODataKey = js.native
   def entityKeyPartName: String = js.native
-  def entityKeyPartName(newValue: String): js.Any = js.native
+  def entityKeyPartName_=(newValue: String): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def `type`: AttributeType = js.native
-  def `type`(newValue: AttributeType): js.Any = js.native
+  def type_=(newValue: AttributeType): Unit = js.native
 }
 
 /* static members */

@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EncodingFlag extends js.Object {
-  var encoding: js.UndefOr[String] = js.undefined
-  var flag: js.UndefOr[String] = js.undefined
-  var mode: js.UndefOr[Double | String] = js.undefined
+  var encoding: js.UndefOr[String] = js.native
+  var flag: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[Double | String] = js.native
 }
 
 object EncodingFlag {
   @scala.inline
-  def apply(encoding: String = null, flag: String = null, mode: Double | String = null): EncodingFlag = {
+  def apply(): EncodingFlag = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodingFlag]
   }
+  @scala.inline
+  implicit class EncodingFlagOps[Self <: EncodingFlag] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setFlag(value: String): Self = this.set("flag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlag: Self = this.set("flag", js.undefined)
+    @scala.inline
+    def setMode(value: Double | String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+  }
+  
 }
 

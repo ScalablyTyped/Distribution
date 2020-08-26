@@ -18,11 +18,32 @@ trait UpdatePipelineResponse extends js.Object {
 
 object UpdatePipelineResponse {
   @scala.inline
-  def apply(Pipeline: Pipeline = null, Warnings: Warnings = null): UpdatePipelineResponse = {
+  def apply(): UpdatePipelineResponse = {
     val __obj = js.Dynamic.literal()
-    if (Pipeline != null) __obj.updateDynamic("Pipeline")(Pipeline.asInstanceOf[js.Any])
-    if (Warnings != null) __obj.updateDynamic("Warnings")(Warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePipelineResponse]
   }
+  @scala.inline
+  implicit class UpdatePipelineResponseOps[Self <: UpdatePipelineResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPipeline(value: Pipeline): Self = this.set("Pipeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipeline: Self = this.set("Pipeline", js.undefined)
+    @scala.inline
+    def setWarningsVarargs(value: Warning*): Self = this.set("Warnings", js.Array(value :_*))
+    @scala.inline
+    def setWarnings(value: Warnings): Self = this.set("Warnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarnings: Self = this.set("Warnings", js.undefined)
+  }
+  
 }
 

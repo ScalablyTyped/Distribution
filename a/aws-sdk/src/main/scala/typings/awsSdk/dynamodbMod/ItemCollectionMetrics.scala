@@ -18,14 +18,32 @@ trait ItemCollectionMetrics extends js.Object {
 
 object ItemCollectionMetrics {
   @scala.inline
-  def apply(
-    ItemCollectionKey: ItemCollectionKeyAttributeMap = null,
-    SizeEstimateRangeGB: ItemCollectionSizeEstimateRange = null
-  ): ItemCollectionMetrics = {
+  def apply(): ItemCollectionMetrics = {
     val __obj = js.Dynamic.literal()
-    if (ItemCollectionKey != null) __obj.updateDynamic("ItemCollectionKey")(ItemCollectionKey.asInstanceOf[js.Any])
-    if (SizeEstimateRangeGB != null) __obj.updateDynamic("SizeEstimateRangeGB")(SizeEstimateRangeGB.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemCollectionMetrics]
   }
+  @scala.inline
+  implicit class ItemCollectionMetricsOps[Self <: ItemCollectionMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemCollectionKey(value: ItemCollectionKeyAttributeMap): Self = this.set("ItemCollectionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemCollectionKey: Self = this.set("ItemCollectionKey", js.undefined)
+    @scala.inline
+    def setSizeEstimateRangeGBVarargs(value: ItemCollectionSizeEstimateBound*): Self = this.set("SizeEstimateRangeGB", js.Array(value :_*))
+    @scala.inline
+    def setSizeEstimateRangeGB(value: ItemCollectionSizeEstimateRange): Self = this.set("SizeEstimateRangeGB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeEstimateRangeGB: Self = this.set("SizeEstimateRangeGB", js.undefined)
+  }
+  
 }
 

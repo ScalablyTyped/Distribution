@@ -34,28 +34,28 @@ class ReferenceSelector protected () extends AssociationWidget {
     * In version 7.2.0: introduced
     */
   def emptyOptionCaption: Text = js.native
-  def emptyOptionCaption(newValue: Text): js.Any = js.native
+  def emptyOptionCaption_=(newValue: Text): Unit = js.native
   def formattingInfo: FormattingInfo = js.native
-  def formattingInfo(newValue: FormattingInfo): js.Any = js.native
+  def formattingInfo_=(newValue: FormattingInfo): Unit = js.native
   def gotoPageSettings: PageSettings = js.native
-  def gotoPageSettings(newValue: PageSettings): js.Any = js.native
+  def gotoPageSettings_=(newValue: PageSettings): Unit = js.native
   def renderMode: ReferenceSelectorRenderModeType = js.native
-  def renderMode(newValue: ReferenceSelectorRenderModeType): js.Any = js.native
+  def renderMode_=(newValue: ReferenceSelectorRenderModeType): Unit = js.native
   /**
     * In version 7.6.0: deleted
     */
   def required: Boolean = js.native
-  def required(newValue: Boolean): js.Any = js.native
   /**
     * In version 7.6.0: deleted
     */
   def requiredMessage: Text = js.native
-  def requiredMessage(newValue: Text): js.Any = js.native
+  def requiredMessage_=(newValue: Text): Unit = js.native
+  def required_=(newValue: Boolean): Unit = js.native
   /**
     * In version 7.6.0: introduced
     */
   def validation: WidgetValidation = js.native
-  def validation(newValue: WidgetValidation): js.Any = js.native
+  def validation_=(newValue: WidgetValidation): Unit = js.native
 }
 
 /* static members */

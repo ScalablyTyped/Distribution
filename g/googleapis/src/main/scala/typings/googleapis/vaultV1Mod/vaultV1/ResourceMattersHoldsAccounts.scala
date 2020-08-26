@@ -31,6 +31,7 @@ class ResourceMattersHoldsAccounts protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaHeldAccount] = js.native
   def create(callback: BodyResponseCallback[SchemaHeldAccount]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHeldAccount] = js.native
   def create(params: ParamsResourceMattersHoldsAccountsCreate): GaxiosPromise[SchemaHeldAccount] = js.native
   def create(
     params: ParamsResourceMattersHoldsAccountsCreate,
@@ -64,6 +65,7 @@ class ResourceMattersHoldsAccounts protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceMattersHoldsAccountsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceMattersHoldsAccountsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -95,6 +97,7 @@ class ResourceMattersHoldsAccounts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListHeldAccountsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListHeldAccountsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListHeldAccountsResponse] = js.native
   def list(params: ParamsResourceMattersHoldsAccountsList): GaxiosPromise[SchemaListHeldAccountsResponse] = js.native
   def list(
     params: ParamsResourceMattersHoldsAccountsList,

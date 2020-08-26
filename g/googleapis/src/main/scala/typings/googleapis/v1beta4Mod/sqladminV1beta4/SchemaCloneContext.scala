@@ -31,18 +31,38 @@ trait SchemaCloneContext extends js.Object {
 
 object SchemaCloneContext {
   @scala.inline
-  def apply(
-    binLogCoordinates: SchemaBinLogCoordinates = null,
-    destinationInstanceName: String = null,
-    kind: String = null,
-    pitrTimestampMs: String = null
-  ): SchemaCloneContext = {
+  def apply(): SchemaCloneContext = {
     val __obj = js.Dynamic.literal()
-    if (binLogCoordinates != null) __obj.updateDynamic("binLogCoordinates")(binLogCoordinates.asInstanceOf[js.Any])
-    if (destinationInstanceName != null) __obj.updateDynamic("destinationInstanceName")(destinationInstanceName.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (pitrTimestampMs != null) __obj.updateDynamic("pitrTimestampMs")(pitrTimestampMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCloneContext]
   }
+  @scala.inline
+  implicit class SchemaCloneContextOps[Self <: SchemaCloneContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBinLogCoordinates(value: SchemaBinLogCoordinates): Self = this.set("binLogCoordinates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinLogCoordinates: Self = this.set("binLogCoordinates", js.undefined)
+    @scala.inline
+    def setDestinationInstanceName(value: String): Self = this.set("destinationInstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationInstanceName: Self = this.set("destinationInstanceName", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPitrTimestampMs(value: String): Self = this.set("pitrTimestampMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePitrTimestampMs: Self = this.set("pitrTimestampMs", js.undefined)
+  }
+  
 }
 

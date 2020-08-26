@@ -32,18 +32,38 @@ trait SchemaDuplicateSheetRequest extends js.Object {
 
 object SchemaDuplicateSheetRequest {
   @scala.inline
-  def apply(
-    insertSheetIndex: js.UndefOr[Double] = js.undefined,
-    newSheetId: js.UndefOr[Double] = js.undefined,
-    newSheetName: String = null,
-    sourceSheetId: js.UndefOr[Double] = js.undefined
-  ): SchemaDuplicateSheetRequest = {
+  def apply(): SchemaDuplicateSheetRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(insertSheetIndex)) __obj.updateDynamic("insertSheetIndex")(insertSheetIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(newSheetId)) __obj.updateDynamic("newSheetId")(newSheetId.get.asInstanceOf[js.Any])
-    if (newSheetName != null) __obj.updateDynamic("newSheetName")(newSheetName.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceSheetId)) __obj.updateDynamic("sourceSheetId")(sourceSheetId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDuplicateSheetRequest]
   }
+  @scala.inline
+  implicit class SchemaDuplicateSheetRequestOps[Self <: SchemaDuplicateSheetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInsertSheetIndex(value: Double): Self = this.set("insertSheetIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSheetIndex: Self = this.set("insertSheetIndex", js.undefined)
+    @scala.inline
+    def setNewSheetId(value: Double): Self = this.set("newSheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewSheetId: Self = this.set("newSheetId", js.undefined)
+    @scala.inline
+    def setNewSheetName(value: String): Self = this.set("newSheetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewSheetName: Self = this.set("newSheetName", js.undefined)
+    @scala.inline
+    def setSourceSheetId(value: Double): Self = this.set("sourceSheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSheetId: Self = this.set("sourceSheetId", js.undefined)
+  }
+  
 }
 

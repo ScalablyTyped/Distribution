@@ -13,6 +13,7 @@ class ^ protected () extends Long {
     */
   def this(low: Double) = this()
   def this(low: Double, high: Double) = this()
+  def this(low: Double, high: js.UndefOr[scala.Nothing], unsigned: Boolean) = this()
   def this(low: Double, high: Double, unsigned: Boolean) = this()
 }
 
@@ -60,6 +61,7 @@ object ^ extends js.Object {
     * Creates a Long from its byte representation.
     */
   def fromBytes(bytes: js.Array[Double]): Long = js.native
+  def fromBytes(bytes: js.Array[Double], unsigned: js.UndefOr[scala.Nothing], le: Boolean): Long = js.native
   def fromBytes(bytes: js.Array[Double], unsigned: Boolean): Long = js.native
   def fromBytes(bytes: js.Array[Double], unsigned: Boolean, le: Boolean): Long = js.native
   /**
@@ -86,6 +88,7 @@ object ^ extends js.Object {
     * Returns a Long representation of the given string, written using the specified radix.
     */
   def fromString(str: String): Long = js.native
+  def fromString(str: String, unsigned: js.UndefOr[scala.Nothing], radix: Double): Long = js.native
   def fromString(str: String, unsigned: Boolean): Long = js.native
   def fromString(str: String, unsigned: Boolean, radix: Double): Long = js.native
   def fromString(str: String, unsigned: Double): Long = js.native

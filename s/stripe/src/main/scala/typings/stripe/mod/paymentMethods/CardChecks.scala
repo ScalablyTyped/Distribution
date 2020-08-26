@@ -8,30 +8,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CardChecks extends js.Object {
   /**
     * If a address line1 was provided, results of the check, one of `pass`, `failed`, `unavailable` or `unchecked`.
     */
-  var address_line1_check: pass | failed | unavailable | unchecked | Null
+  var address_line1_check: pass | failed | unavailable | unchecked | Null = js.native
   /**
     * If a address postal code was provided, results of the check, one of `pass`, `failed`, `unavailable` or `unchecked`.
     */
-  var address_postal_code_check: pass | failed | unavailable | unchecked | Null
+  var address_postal_code_check: pass | failed | unavailable | unchecked | Null = js.native
   /**
     * If a CVC was provided, results of the check, one of `pass`, `failed`, `unavailable` or `unchecked`.
     */
-  var cvc_check: pass | failed | unavailable | unchecked | Null
+  var cvc_check: pass | failed | unavailable | unchecked | Null = js.native
 }
 
 object CardChecks {
   @scala.inline
-  def apply(
-    address_line1_check: pass | failed | unavailable | unchecked = null,
-    address_postal_code_check: pass | failed | unavailable | unchecked = null,
-    cvc_check: pass | failed | unavailable | unchecked = null
-  ): CardChecks = {
-    val __obj = js.Dynamic.literal(address_line1_check = address_line1_check.asInstanceOf[js.Any], address_postal_code_check = address_postal_code_check.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any])
+  def apply(): CardChecks = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CardChecks]
   }
+  @scala.inline
+  implicit class CardChecksOps[Self <: CardChecks] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress_line1_check(value: pass | failed | unavailable | unchecked): Self = this.set("address_line1_check", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddress_line1_checkNull: Self = this.set("address_line1_check", null)
+    @scala.inline
+    def setAddress_postal_code_check(value: pass | failed | unavailable | unchecked): Self = this.set("address_postal_code_check", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddress_postal_code_checkNull: Self = this.set("address_postal_code_check", null)
+    @scala.inline
+    def setCvc_check(value: pass | failed | unavailable | unchecked): Self = this.set("cvc_check", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCvc_checkNull: Self = this.set("cvc_check", null)
+  }
+  
 }
 

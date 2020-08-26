@@ -17,10 +17,7 @@ object Global extends js.Object {
   
   @js.native
   class UserInfo ()
-    extends typings.webgme.Global_.UserInfo {
-    /* CompleteClass */
-    override var _id: String = js.native
-  }
+    extends typings.webgme.Global_.UserInfo
   
 }
 

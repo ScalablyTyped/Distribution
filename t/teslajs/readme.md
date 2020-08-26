@@ -12,7 +12,7 @@ Full-featured Tesla REST API NodeJS package
 | Keywords           | Tesla, Model S, Model X, Model 3, REST |
 | # releases         | 55 |
 | # dependents       | 8 |
-| # downloads        | 24276 |
+| # downloads        | 25573 |
 | # stars            | 2 |
 
 ## Links

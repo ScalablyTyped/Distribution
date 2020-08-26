@@ -39,26 +39,54 @@ trait SchemaPosCustomBatchRequestEntry extends js.Object {
 
 object SchemaPosCustomBatchRequestEntry {
   @scala.inline
-  def apply(
-    batchId: js.UndefOr[Double] = js.undefined,
-    inventory: SchemaPosInventory = null,
-    merchantId: String = null,
-    method: String = null,
-    sale: SchemaPosSale = null,
-    store: SchemaPosStore = null,
-    storeCode: String = null,
-    targetMerchantId: String = null
-  ): SchemaPosCustomBatchRequestEntry = {
+  def apply(): SchemaPosCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
-    if (inventory != null) __obj.updateDynamic("inventory")(inventory.asInstanceOf[js.Any])
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (sale != null) __obj.updateDynamic("sale")(sale.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (storeCode != null) __obj.updateDynamic("storeCode")(storeCode.asInstanceOf[js.Any])
-    if (targetMerchantId != null) __obj.updateDynamic("targetMerchantId")(targetMerchantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPosCustomBatchRequestEntry]
   }
+  @scala.inline
+  implicit class SchemaPosCustomBatchRequestEntryOps[Self <: SchemaPosCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    @scala.inline
+    def setInventory(value: SchemaPosInventory): Self = this.set("inventory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventory: Self = this.set("inventory", js.undefined)
+    @scala.inline
+    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setSale(value: SchemaPosSale): Self = this.set("sale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSale: Self = this.set("sale", js.undefined)
+    @scala.inline
+    def setStore(value: SchemaPosStore): Self = this.set("store", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStore: Self = this.set("store", js.undefined)
+    @scala.inline
+    def setStoreCode(value: String): Self = this.set("storeCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreCode: Self = this.set("storeCode", js.undefined)
+    @scala.inline
+    def setTargetMerchantId(value: String): Self = this.set("targetMerchantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetMerchantId: Self = this.set("targetMerchantId", js.undefined)
+  }
+  
 }
 

@@ -26,17 +26,38 @@ trait DescribeConfigurationAggregatorSourcesStatusRequest extends js.Object {
 
 object DescribeConfigurationAggregatorSourcesStatusRequest {
   @scala.inline
-  def apply(
-    ConfigurationAggregatorName: ConfigurationAggregatorName,
-    Limit: js.UndefOr[Limit] = js.undefined,
-    NextToken: String = null,
-    UpdateStatus: AggregatedSourceStatusTypeList = null
-  ): DescribeConfigurationAggregatorSourcesStatusRequest = {
+  def apply(ConfigurationAggregatorName: ConfigurationAggregatorName): DescribeConfigurationAggregatorSourcesStatusRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (UpdateStatus != null) __obj.updateDynamic("UpdateStatus")(UpdateStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationAggregatorSourcesStatusRequest]
   }
+  @scala.inline
+  implicit class DescribeConfigurationAggregatorSourcesStatusRequestOps[Self <: DescribeConfigurationAggregatorSourcesStatusRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = this.set("ConfigurationAggregatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimit(value: Limit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setUpdateStatusVarargs(value: AggregatedSourceStatusType*): Self = this.set("UpdateStatus", js.Array(value :_*))
+    @scala.inline
+    def setUpdateStatus(value: AggregatedSourceStatusTypeList): Self = this.set("UpdateStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateStatus: Self = this.set("UpdateStatus", js.undefined)
+  }
+  
 }
 

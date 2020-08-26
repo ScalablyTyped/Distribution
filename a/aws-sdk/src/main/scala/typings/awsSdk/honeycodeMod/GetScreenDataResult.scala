@@ -22,10 +22,30 @@ trait GetScreenDataResult extends js.Object {
 
 object GetScreenDataResult {
   @scala.inline
-  def apply(results: ResultSetMap, workbookCursor: WorkbookCursor, nextToken: PaginationToken = null): GetScreenDataResult = {
+  def apply(results: ResultSetMap, workbookCursor: WorkbookCursor): GetScreenDataResult = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], workbookCursor = workbookCursor.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScreenDataResult]
   }
+  @scala.inline
+  implicit class GetScreenDataResultOps[Self <: GetScreenDataResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResults(value: ResultSetMap): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkbookCursor(value: WorkbookCursor): Self = this.set("workbookCursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

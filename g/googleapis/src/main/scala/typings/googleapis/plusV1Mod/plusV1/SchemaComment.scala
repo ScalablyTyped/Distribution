@@ -2,8 +2,8 @@ package typings.googleapis.plusV1Mod.plusV1
 
 import typings.googleapis.anon.IdUrl
 import typings.googleapis.anon.ObjectType
-import typings.googleapis.anon.TotalItemsNumber
 import typings.googleapis.anon.Verification
+import typings.googleapis.anon.`7`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ trait SchemaComment extends js.Object {
   /**
     * People who +1&#39;d this comment.
     */
-  var plusoners: js.UndefOr[TotalItemsNumber] = js.native
+  var plusoners: js.UndefOr[`7`] = js.native
   /**
     * The time at which this comment was initially published. Formatted as an
     * RFC 3339 timestamp.
@@ -61,32 +61,68 @@ trait SchemaComment extends js.Object {
 
 object SchemaComment {
   @scala.inline
-  def apply(
-    actor: Verification = null,
-    etag: String = null,
-    id: String = null,
-    inReplyTo: js.Array[IdUrl] = null,
-    kind: String = null,
-    `object`: ObjectType = null,
-    plusoners: TotalItemsNumber = null,
-    published: String = null,
-    selfLink: String = null,
-    updated: String = null,
-    verb: String = null
-  ): SchemaComment = {
+  def apply(): SchemaComment = {
     val __obj = js.Dynamic.literal()
-    if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (plusoners != null) __obj.updateDynamic("plusoners")(plusoners.asInstanceOf[js.Any])
-    if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (verb != null) __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaComment]
   }
+  @scala.inline
+  implicit class SchemaCommentOps[Self <: SchemaComment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActor(value: Verification): Self = this.set("actor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActor: Self = this.set("actor", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInReplyToVarargs(value: IdUrl*): Self = this.set("inReplyTo", js.Array(value :_*))
+    @scala.inline
+    def setInReplyTo(value: js.Array[IdUrl]): Self = this.set("inReplyTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInReplyTo: Self = this.set("inReplyTo", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setObject(value: ObjectType): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObject: Self = this.set("object", js.undefined)
+    @scala.inline
+    def setPlusoners(value: `7`): Self = this.set("plusoners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlusoners: Self = this.set("plusoners", js.undefined)
+    @scala.inline
+    def setPublished(value: String): Self = this.set("published", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublished: Self = this.set("published", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+    @scala.inline
+    def setVerb(value: String): Self = this.set("verb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerb: Self = this.set("verb", js.undefined)
+  }
+  
 }
 

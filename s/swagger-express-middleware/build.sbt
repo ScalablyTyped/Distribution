@@ -1,22 +1,23 @@
 organization := "org.scalablytyped"
 name := "swagger-express-middleware"
-version := "1.x-dt-20200515Z-9850c7"
-scalaVersion := "2.13.2"
+version := "1.x-dt-20200515Z-c41dee"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-8ef17f",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200515Z-72dac4",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20200515Z-d9cc4e",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200624Z-cd1cc0",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20200515Z-a16f63",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "openapi-types" % "1.3.5-28c53a",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20200519Z-7b3798",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c5e2e8",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200519Z-9b0303",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8",
-  "org.scalablytyped" %%% "swagger-parser" % "8.0.4-d6b1d1")
+  "org.scalablytyped" %%% "apidevtools__swagger-parser" % "10.0.1-d59ea3",
+  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-3a735c",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20200515Z-3cac79",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20200706Z-53ce1b",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200722Z-ebd859",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20200722Z-298525",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "openapi-types" % "7.0.0-9d9925",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20200519Z-556671",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-3a906b",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20200519Z-4f6d32",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13",
+  "org.scalablytyped" %%% "swagger-parser" % "10.0.1-8040df")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

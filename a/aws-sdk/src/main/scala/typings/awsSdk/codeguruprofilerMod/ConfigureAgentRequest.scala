@@ -22,15 +22,32 @@ trait ConfigureAgentRequest extends js.Object {
 
 object ConfigureAgentRequest {
   @scala.inline
-  def apply(
-    profilingGroupName: ProfilingGroupName,
-    fleetInstanceId: FleetInstanceId = null,
-    metadata: Metadata = null
-  ): ConfigureAgentRequest = {
+  def apply(profilingGroupName: ProfilingGroupName): ConfigureAgentRequest = {
     val __obj = js.Dynamic.literal(profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
-    if (fleetInstanceId != null) __obj.updateDynamic("fleetInstanceId")(fleetInstanceId.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureAgentRequest]
   }
+  @scala.inline
+  implicit class ConfigureAgentRequestOps[Self <: ConfigureAgentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFleetInstanceId(value: FleetInstanceId): Self = this.set("fleetInstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetInstanceId: Self = this.set("fleetInstanceId", js.undefined)
+    @scala.inline
+    def setMetadata(value: Metadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+  }
+  
 }
 

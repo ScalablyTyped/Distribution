@@ -11,8 +11,8 @@ tiny binary search function with comparators
 | Full name          | binary-search |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 78 |
-| # downloads        | 3069371 |
+| # dependents       | 80 |
+| # downloads        | 3255996 |
 | # stars            | 7 |
 
 ## Links

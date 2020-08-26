@@ -12,7 +12,7 @@ Regular expression for matching IP addresses (IPv4 & IPv6)
 | Keywords           | ip, ipv6, ipv4, regex, regexp, re, match, test, find, text, pattern, internet, protocol, address, validate |
 | # releases         | 4 |
 | # dependents       | 77 |
-| # downloads        | 248803073 |
+| # downloads        | 258762054 |
 | # stars            | 5 |
 
 ## Links

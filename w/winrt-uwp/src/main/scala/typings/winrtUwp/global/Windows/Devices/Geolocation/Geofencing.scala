@@ -1,8 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Geolocation
 
 import typings.std.Date
-import typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.GeofenceRemovalReason
-import typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.GeofenceState
 import typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates
 import typings.winrtUwp.Windows.Devices.Geolocation.IGeoshape
 import scala.scalajs.js
@@ -65,27 +63,6 @@ object Geofencing extends js.Object {
       startTime: Date,
       duration: Double
     ) = this()
-    /** Gets the time window, beginning after the StartTime , during which the Geofence is monitored. */
-    /* CompleteClass */
-    override var duration: Double = js.native
-    /** The minimum time that a position has to be inside or outside of the Geofence in order for the notification to be triggered. */
-    /* CompleteClass */
-    override var dwellTime: Double = js.native
-    /** The shape of the geofence region. */
-    /* CompleteClass */
-    override var geoshape: IGeoshape = js.native
-    /** The id of the Geofence . */
-    /* CompleteClass */
-    override var id: String = js.native
-    /** Indicates the states that the Geofence is being monitored for. */
-    /* CompleteClass */
-    override var monitoredStates: MonitoredGeofenceStates = js.native
-    /** Indicates whether the Geofence should be triggered once or multiple times. */
-    /* CompleteClass */
-    override var singleUse: Boolean = js.native
-    /** The time to start monitoring the Geofence . */
-    /* CompleteClass */
-    override var startTime: Date = js.native
   }
   
   /** Contains the information about the monitored Geofence objects. */
@@ -96,20 +73,7 @@ object Geofencing extends js.Object {
   /** Contains the information about the state changes for a Geofence . */
   @js.native
   abstract class GeofenceStateChangeReport ()
-    extends typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.GeofenceStateChangeReport {
-    /** The Geofence object whose state has changed. */
-    /* CompleteClass */
-    override var geofence: typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.Geofence = js.native
-    /** The position of the Geofence object whose state has changed. */
-    /* CompleteClass */
-    override var geoposition: typings.winrtUwp.Windows.Devices.Geolocation.Geoposition = js.native
-    /** The new state of the Geofence object whose state has changed. */
-    /* CompleteClass */
-    override var newState: GeofenceState = js.native
-    /** Indicates the reason a Geofence was removed. */
-    /* CompleteClass */
-    override var removalReason: GeofenceRemovalReason = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.GeofenceStateChangeReport
   
   /* static members */
   @js.native

@@ -1,7 +1,7 @@
 package typings.nodeFetch
 
 import typings.nodeFetch.anon.Capture
-import typings.nodeFetch.anon.CaptureBoolean
+import typings.nodeFetch.anon.`0`
 import typings.nodeFetch.nodeFetchStrings.abort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,7 +41,7 @@ object externalsMod extends js.Object {
     def removeEventListener_abort(
       `type`: abort,
       listener: js.ThisFunction1[/* this */ this.type, /* event */ js.Any, _],
-      options: CaptureBoolean
+      options: `0`
     ): Unit = js.native
   }
   

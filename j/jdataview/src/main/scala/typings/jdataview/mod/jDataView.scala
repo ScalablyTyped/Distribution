@@ -9,18 +9,32 @@ import scala.scalajs.js.annotation._
 trait jDataView extends DataView {
   def createBuffer(bytes: Double*): Buffer = js.native
   def getBytes(length: Double): js.Array[Double] = js.native
+  def getBytes(
+    length: Double,
+    byteOffset: js.UndefOr[scala.Nothing],
+    littleEndian: js.UndefOr[scala.Nothing],
+    toArray: Boolean
+  ): js.Array[Double] = js.native
+  def getBytes(length: Double, byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): js.Array[Double] = js.native
+  def getBytes(length: Double, byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean, toArray: Boolean): js.Array[Double] = js.native
   def getBytes(length: Double, byteOffset: Double): js.Array[Double] = js.native
+  def getBytes(length: Double, byteOffset: Double, littleEndian: js.UndefOr[scala.Nothing], toArray: Boolean): js.Array[Double] = js.native
   def getBytes(length: Double, byteOffset: Double, littleEndian: Boolean): js.Array[Double] = js.native
   def getBytes(length: Double, byteOffset: Double, littleEndian: Boolean, toArray: Boolean): js.Array[Double] = js.native
   // Strings and Blobs
   def getChar(): String = js.native
   def getChar(byteOffset: Double): String = js.native
   def getFloat32(): Double = js.native
+  def getFloat32(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
   def getFloat64(): Double = js.native
+  def getFloat64(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
   def getInt16(): Double = js.native
+  def getInt16(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
   def getInt32(): Double = js.native
+  def getInt32(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
   // 64 bit integers
   def getInt64(): Int64 = js.native
+  def getInt64(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Int64 = js.native
   def getInt64(byteOffset: Double): Int64 = js.native
   def getInt64(byteOffset: Double, littleEndian: Boolean): Int64 = js.native
   // Specification getters
@@ -29,11 +43,15 @@ trait jDataView extends DataView {
   def getSigned(bitLength: Double): Double = js.native
   def getSigned(bitLength: Double, byteOffset: Double): Double = js.native
   def getString(byteLength: Double): String = js.native
+  def getString(byteLength: Double, byteOffset: js.UndefOr[scala.Nothing], encoding: String): String = js.native
   def getString(byteLength: Double, byteOffset: Double): String = js.native
   def getString(byteLength: Double, byteOffset: Double, encoding: String): String = js.native
   def getUint16(): Double = js.native
+  def getUint16(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
   def getUint32(): Double = js.native
+  def getUint32(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Double = js.native
   def getUint64(): Uint64 = js.native
+  def getUint64(byteOffset: js.UndefOr[scala.Nothing], littleEndian: Boolean): Uint64 = js.native
   def getUint64(byteOffset: Double): Uint64 = js.native
   def getUint64(byteOffset: Double, littleEndian: Boolean): Uint64 = js.native
   def getUint8(): Double = js.native
@@ -54,6 +72,7 @@ trait jDataView extends DataView {
   def setUnsigned(byteOffset: Double, value: Double, bitLength: Double): Unit = js.native
   def skip(byteLength: Double): Double = js.native
   def slice(start: Double): jDataView = js.native
+  def slice(start: Double, end: js.UndefOr[scala.Nothing], forceCopy: Boolean): jDataView = js.native
   def slice(start: Double, end: Double): jDataView = js.native
   def slice(start: Double, end: Double, forceCopy: Boolean): jDataView = js.native
   def tell(): Double = js.native

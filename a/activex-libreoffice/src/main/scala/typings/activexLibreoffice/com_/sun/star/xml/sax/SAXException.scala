@@ -15,9 +15,10 @@ import scala.scalajs.js.annotation._
   *
   * SAX = Simple API for XMLURI = Uniform Resource IdentifierDTD = document type definition
   */
+@js.native
 trait SAXException extends Exception {
   /** This field may contain a wrapped exception. */
-  var WrappedException: js.Any
+  var WrappedException: js.Any = js.native
 }
 
 object SAXException {
@@ -26,5 +27,20 @@ object SAXException {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], WrappedException = WrappedException.asInstanceOf[js.Any])
     __obj.asInstanceOf[SAXException]
   }
+  @scala.inline
+  implicit class SAXExceptionOps[Self <: SAXException] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWrappedException(value: js.Any): Self = this.set("WrappedException", value.asInstanceOf[js.Any])
+  }
+  
 }
 

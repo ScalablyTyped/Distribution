@@ -18,11 +18,30 @@ trait QueryExecutionContext extends js.Object {
 
 object QueryExecutionContext {
   @scala.inline
-  def apply(Catalog: CatalogNameString = null, Database: DatabaseString = null): QueryExecutionContext = {
+  def apply(): QueryExecutionContext = {
     val __obj = js.Dynamic.literal()
-    if (Catalog != null) __obj.updateDynamic("Catalog")(Catalog.asInstanceOf[js.Any])
-    if (Database != null) __obj.updateDynamic("Database")(Database.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExecutionContext]
   }
+  @scala.inline
+  implicit class QueryExecutionContextOps[Self <: QueryExecutionContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCatalog(value: CatalogNameString): Self = this.set("Catalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalog: Self = this.set("Catalog", js.undefined)
+    @scala.inline
+    def setDatabase(value: DatabaseString): Self = this.set("Database", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabase: Self = this.set("Database", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-draggable
 
-Typings are for version 4.2.0
+Typings are for version 4.4.3
 
 ## Library description:
 React draggable component

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReactiveDictCls () extends ReactiveDict {
   def this(name: String) = this()
+  def this(name: js.UndefOr[scala.Nothing], initialValue: EJSONable) = this()
   def this(name: String, initialValue: EJSONable) = this()
 }
 

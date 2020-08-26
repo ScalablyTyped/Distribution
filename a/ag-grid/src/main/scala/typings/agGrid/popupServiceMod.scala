@@ -20,6 +20,8 @@ object popupServiceMod extends js.Object {
     var gridCore: js.Any = js.native
     var gridOptionsWrapper: js.Any = js.native
     def addAsModalPopup(eChild: js.Any, closeOnEsc: Boolean): js.Function1[/* event */ js.UndefOr[js.Any], Unit] = js.native
+    def addAsModalPopup(eChild: js.Any, closeOnEsc: Boolean, closedCallback: js.UndefOr[scala.Nothing], click: MouseEvent): js.Function1[/* event */ js.UndefOr[js.Any], Unit] = js.native
+    def addAsModalPopup(eChild: js.Any, closeOnEsc: Boolean, closedCallback: js.UndefOr[scala.Nothing], click: Touch): js.Function1[/* event */ js.UndefOr[js.Any], Unit] = js.native
     def addAsModalPopup(eChild: js.Any, closeOnEsc: Boolean, closedCallback: js.Function0[Unit]): js.Function1[/* event */ js.UndefOr[js.Any], Unit] = js.native
     def addAsModalPopup(eChild: js.Any, closeOnEsc: Boolean, closedCallback: js.Function0[Unit], click: MouseEvent): js.Function1[/* event */ js.UndefOr[js.Any], Unit] = js.native
     def addAsModalPopup(eChild: js.Any, closeOnEsc: Boolean, closedCallback: js.Function0[Unit], click: Touch): js.Function1[/* event */ js.UndefOr[js.Any], Unit] = js.native

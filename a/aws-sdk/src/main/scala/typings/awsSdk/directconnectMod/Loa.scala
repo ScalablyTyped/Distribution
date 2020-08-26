@@ -18,11 +18,30 @@ trait Loa extends js.Object {
 
 object Loa {
   @scala.inline
-  def apply(loaContent: LoaContent = null, loaContentType: LoaContentType = null): Loa = {
+  def apply(): Loa = {
     val __obj = js.Dynamic.literal()
-    if (loaContent != null) __obj.updateDynamic("loaContent")(loaContent.asInstanceOf[js.Any])
-    if (loaContentType != null) __obj.updateDynamic("loaContentType")(loaContentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Loa]
   }
+  @scala.inline
+  implicit class LoaOps[Self <: Loa] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoaContent(value: LoaContent): Self = this.set("loaContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoaContent: Self = this.set("loaContent", js.undefined)
+    @scala.inline
+    def setLoaContentType(value: LoaContentType): Self = this.set("loaContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoaContentType: Self = this.set("loaContentType", js.undefined)
+  }
+  
 }
 

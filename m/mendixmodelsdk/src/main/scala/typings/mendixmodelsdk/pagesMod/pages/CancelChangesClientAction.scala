@@ -29,7 +29,7 @@ class CancelChangesClientAction protected () extends ClientAction {
   @JSName("model")
   var model_FCancelChangesClientAction: IModel = js.native
   def closePage: Boolean = js.native
-  def closePage(newValue: Boolean): js.Any = js.native
+  def closePage_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

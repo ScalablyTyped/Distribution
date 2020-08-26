@@ -6,24 +6,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EditorProps extends js.Object {
-  var ariaActiveDescendantID: js.UndefOr[String] = js.undefined
-  var ariaAutoComplete: js.UndefOr[String] = js.undefined
-  var ariaDescribedBy: js.UndefOr[String] = js.undefined
-  var ariaExpanded: js.UndefOr[String] = js.undefined
-  var ariaHasPopup: js.UndefOr[String] = js.undefined
-  var ariaLabel: js.UndefOr[String] = js.undefined
-  var ariaOwneeID: js.UndefOr[String] = js.undefined
-  var contentState: js.UndefOr[RawDraftContentState] = js.undefined
-  var customBlockRenderFunc: js.UndefOr[js.Function1[/* block */ ContentBlock, _]] = js.undefined
-  var customDecorators: js.UndefOr[js.Array[js.Object]] = js.undefined
-  var customStyleMap: js.UndefOr[js.Object] = js.undefined
-  var defaultContentState: js.UndefOr[RawDraftContentState] = js.undefined
-  var defaultEditorState: js.UndefOr[EditorState] = js.undefined
-  var editorClassName: js.UndefOr[String] = js.undefined
-  var editorRef: js.UndefOr[js.Function1[/* ref */ js.Object, Unit]] = js.undefined
-  var editorState: js.UndefOr[EditorState] = js.undefined
-  var editorStyle: js.UndefOr[CSSProperties] = js.undefined
+  var ariaActiveDescendantID: js.UndefOr[String] = js.native
+  var ariaAutoComplete: js.UndefOr[String] = js.native
+  var ariaDescribedBy: js.UndefOr[String] = js.native
+  var ariaExpanded: js.UndefOr[String] = js.native
+  var ariaHasPopup: js.UndefOr[String] = js.native
+  var ariaLabel: js.UndefOr[String] = js.native
+  var ariaOwneeID: js.UndefOr[String] = js.native
+  var contentState: js.UndefOr[RawDraftContentState] = js.native
+  var customBlockRenderFunc: js.UndefOr[js.Function1[/* block */ ContentBlock, _]] = js.native
+  var customDecorators: js.UndefOr[js.Array[js.Object]] = js.native
+  var customStyleMap: js.UndefOr[js.Object] = js.native
+  var defaultContentState: js.UndefOr[RawDraftContentState] = js.native
+  var defaultEditorState: js.UndefOr[EditorState] = js.native
+  var editorClassName: js.UndefOr[String] = js.native
+  var editorRef: js.UndefOr[js.Function1[/* ref */ js.Object, Unit]] = js.native
+  var editorState: js.UndefOr[EditorState] = js.native
+  var editorStyle: js.UndefOr[CSSProperties] = js.native
   var handlePastedText: js.UndefOr[
     js.Function4[
       /* text */ String, 
@@ -32,132 +33,240 @@ trait EditorProps extends js.Object {
       /* onChange */ js.Function1[/* editorState */ EditorState, Unit], 
       Boolean
     ]
-  ] = js.undefined
-  var hashtag: js.UndefOr[js.Object] = js.undefined
-  var initialContentState: js.UndefOr[RawDraftContentState] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
-  var localization: js.UndefOr[js.Object] = js.undefined
-  var mention: js.UndefOr[js.Object] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* event */ SyntheticEvent, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* contentState */ RawDraftContentState, Unit]] = js.undefined
-  var onContentStateChange: js.UndefOr[js.Function1[/* contentState */ RawDraftContentState, Unit]] = js.undefined
-  var onEditorStateChange: js.UndefOr[js.Function1[/* editorState */ EditorState, Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* event */ SyntheticEvent, Unit]] = js.undefined
-  var onTab: js.UndefOr[js.Function1[/* event */ SyntheticKeyboardEvent, Unit]] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var spellCheck: js.UndefOr[Boolean] = js.undefined
-  var stripPastedStyles: js.UndefOr[Boolean] = js.undefined
-  var tabIndex: js.UndefOr[Double] = js.undefined
-  var textAlignment: js.UndefOr[String] = js.undefined
-  var toolbar: js.UndefOr[js.Object] = js.undefined
-  var toolbarClassName: js.UndefOr[String] = js.undefined
-  var toolbarCustomButtons: js.UndefOr[js.Array[ReactElement]] = js.undefined
-  var toolbarHidden: js.UndefOr[Boolean] = js.undefined
-  var toolbarOnFocus: js.UndefOr[Boolean] = js.undefined
-  var toolbarStyle: js.UndefOr[js.Object] = js.undefined
-  var uploadCallback: js.UndefOr[js.Function1[/* file */ js.Object, js.Promise[js.Object]]] = js.undefined
-  var wrapperClassName: js.UndefOr[String] = js.undefined
-  var wrapperId: js.UndefOr[Double] = js.undefined
-  var wrapperStyle: js.UndefOr[CSSProperties] = js.undefined
+  ] = js.native
+  var hashtag: js.UndefOr[js.Object] = js.native
+  var initialContentState: js.UndefOr[RawDraftContentState] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var localization: js.UndefOr[js.Object] = js.native
+  var mention: js.UndefOr[js.Object] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* event */ SyntheticEvent, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* contentState */ RawDraftContentState, Unit]] = js.native
+  var onContentStateChange: js.UndefOr[js.Function1[/* contentState */ RawDraftContentState, Unit]] = js.native
+  var onEditorStateChange: js.UndefOr[js.Function1[/* editorState */ EditorState, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* event */ SyntheticEvent, Unit]] = js.native
+  var onTab: js.UndefOr[js.Function1[/* event */ SyntheticKeyboardEvent, Unit]] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var spellCheck: js.UndefOr[Boolean] = js.native
+  var stripPastedStyles: js.UndefOr[Boolean] = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
+  var textAlignment: js.UndefOr[String] = js.native
+  var toolbar: js.UndefOr[js.Object] = js.native
+  var toolbarClassName: js.UndefOr[String] = js.native
+  var toolbarCustomButtons: js.UndefOr[js.Array[ReactElement]] = js.native
+  var toolbarHidden: js.UndefOr[Boolean] = js.native
+  var toolbarOnFocus: js.UndefOr[Boolean] = js.native
+  var toolbarStyle: js.UndefOr[js.Object] = js.native
+  var uploadCallback: js.UndefOr[js.Function1[/* file */ js.Object, js.Promise[js.Object]]] = js.native
+  var wrapperClassName: js.UndefOr[String] = js.native
+  var wrapperId: js.UndefOr[Double] = js.native
+  var wrapperStyle: js.UndefOr[CSSProperties] = js.native
 }
 
 object EditorProps {
   @scala.inline
-  def apply(
-    ariaActiveDescendantID: String = null,
-    ariaAutoComplete: String = null,
-    ariaDescribedBy: String = null,
-    ariaExpanded: String = null,
-    ariaHasPopup: String = null,
-    ariaLabel: String = null,
-    ariaOwneeID: String = null,
-    contentState: RawDraftContentState = null,
-    customBlockRenderFunc: /* block */ ContentBlock => _ = null,
-    customDecorators: js.Array[js.Object] = null,
-    customStyleMap: js.Object = null,
-    defaultContentState: RawDraftContentState = null,
-    defaultEditorState: EditorState = null,
-    editorClassName: String = null,
-    editorRef: /* ref */ js.Object => Unit = null,
-    editorState: EditorState = null,
-    editorStyle: CSSProperties = null,
-    handlePastedText: (/* text */ String, /* html */ String, /* editorState */ EditorState, /* onChange */ js.Function1[/* editorState */ EditorState, Unit]) => Boolean = null,
-    hashtag: js.Object = null,
-    initialContentState: RawDraftContentState = null,
-    locale: String = null,
-    localization: js.Object = null,
-    mention: js.Object = null,
-    onBlur: /* event */ SyntheticEvent => Unit = null,
-    onChange: /* contentState */ RawDraftContentState => Unit = null,
-    onContentStateChange: /* contentState */ RawDraftContentState => Unit = null,
-    onEditorStateChange: /* editorState */ EditorState => Unit = null,
-    onFocus: /* event */ SyntheticEvent => Unit = null,
-    onTab: /* event */ SyntheticKeyboardEvent => Unit = null,
-    placeholder: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    spellCheck: js.UndefOr[Boolean] = js.undefined,
-    stripPastedStyles: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    textAlignment: String = null,
-    toolbar: js.Object = null,
-    toolbarClassName: String = null,
-    toolbarCustomButtons: js.Array[ReactElement] = null,
-    toolbarHidden: js.UndefOr[Boolean] = js.undefined,
-    toolbarOnFocus: js.UndefOr[Boolean] = js.undefined,
-    toolbarStyle: js.Object = null,
-    uploadCallback: /* file */ js.Object => js.Promise[js.Object] = null,
-    wrapperClassName: String = null,
-    wrapperId: js.UndefOr[Double] = js.undefined,
-    wrapperStyle: CSSProperties = null
-  ): EditorProps = {
+  def apply(): EditorProps = {
     val __obj = js.Dynamic.literal()
-    if (ariaActiveDescendantID != null) __obj.updateDynamic("ariaActiveDescendantID")(ariaActiveDescendantID.asInstanceOf[js.Any])
-    if (ariaAutoComplete != null) __obj.updateDynamic("ariaAutoComplete")(ariaAutoComplete.asInstanceOf[js.Any])
-    if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy.asInstanceOf[js.Any])
-    if (ariaExpanded != null) __obj.updateDynamic("ariaExpanded")(ariaExpanded.asInstanceOf[js.Any])
-    if (ariaHasPopup != null) __obj.updateDynamic("ariaHasPopup")(ariaHasPopup.asInstanceOf[js.Any])
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (ariaOwneeID != null) __obj.updateDynamic("ariaOwneeID")(ariaOwneeID.asInstanceOf[js.Any])
-    if (contentState != null) __obj.updateDynamic("contentState")(contentState.asInstanceOf[js.Any])
-    if (customBlockRenderFunc != null) __obj.updateDynamic("customBlockRenderFunc")(js.Any.fromFunction1(customBlockRenderFunc))
-    if (customDecorators != null) __obj.updateDynamic("customDecorators")(customDecorators.asInstanceOf[js.Any])
-    if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap.asInstanceOf[js.Any])
-    if (defaultContentState != null) __obj.updateDynamic("defaultContentState")(defaultContentState.asInstanceOf[js.Any])
-    if (defaultEditorState != null) __obj.updateDynamic("defaultEditorState")(defaultEditorState.asInstanceOf[js.Any])
-    if (editorClassName != null) __obj.updateDynamic("editorClassName")(editorClassName.asInstanceOf[js.Any])
-    if (editorRef != null) __obj.updateDynamic("editorRef")(js.Any.fromFunction1(editorRef))
-    if (editorState != null) __obj.updateDynamic("editorState")(editorState.asInstanceOf[js.Any])
-    if (editorStyle != null) __obj.updateDynamic("editorStyle")(editorStyle.asInstanceOf[js.Any])
-    if (handlePastedText != null) __obj.updateDynamic("handlePastedText")(js.Any.fromFunction4(handlePastedText))
-    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag.asInstanceOf[js.Any])
-    if (initialContentState != null) __obj.updateDynamic("initialContentState")(initialContentState.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (localization != null) __obj.updateDynamic("localization")(localization.asInstanceOf[js.Any])
-    if (mention != null) __obj.updateDynamic("mention")(mention.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onContentStateChange != null) __obj.updateDynamic("onContentStateChange")(js.Any.fromFunction1(onContentStateChange))
-    if (onEditorStateChange != null) __obj.updateDynamic("onEditorStateChange")(js.Any.fromFunction1(onEditorStateChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onTab != null) __obj.updateDynamic("onTab")(js.Any.fromFunction1(onTab))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripPastedStyles)) __obj.updateDynamic("stripPastedStyles")(stripPastedStyles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (toolbarClassName != null) __obj.updateDynamic("toolbarClassName")(toolbarClassName.asInstanceOf[js.Any])
-    if (toolbarCustomButtons != null) __obj.updateDynamic("toolbarCustomButtons")(toolbarCustomButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbarHidden)) __obj.updateDynamic("toolbarHidden")(toolbarHidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbarOnFocus)) __obj.updateDynamic("toolbarOnFocus")(toolbarOnFocus.get.asInstanceOf[js.Any])
-    if (toolbarStyle != null) __obj.updateDynamic("toolbarStyle")(toolbarStyle.asInstanceOf[js.Any])
-    if (uploadCallback != null) __obj.updateDynamic("uploadCallback")(js.Any.fromFunction1(uploadCallback))
-    if (wrapperClassName != null) __obj.updateDynamic("wrapperClassName")(wrapperClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapperId)) __obj.updateDynamic("wrapperId")(wrapperId.get.asInstanceOf[js.Any])
-    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorProps]
   }
+  @scala.inline
+  implicit class EditorPropsOps[Self <: EditorProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAriaActiveDescendantID(value: String): Self = this.set("ariaActiveDescendantID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaActiveDescendantID: Self = this.set("ariaActiveDescendantID", js.undefined)
+    @scala.inline
+    def setAriaAutoComplete(value: String): Self = this.set("ariaAutoComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaAutoComplete: Self = this.set("ariaAutoComplete", js.undefined)
+    @scala.inline
+    def setAriaDescribedBy(value: String): Self = this.set("ariaDescribedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaDescribedBy: Self = this.set("ariaDescribedBy", js.undefined)
+    @scala.inline
+    def setAriaExpanded(value: String): Self = this.set("ariaExpanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaExpanded: Self = this.set("ariaExpanded", js.undefined)
+    @scala.inline
+    def setAriaHasPopup(value: String): Self = this.set("ariaHasPopup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaHasPopup: Self = this.set("ariaHasPopup", js.undefined)
+    @scala.inline
+    def setAriaLabel(value: String): Self = this.set("ariaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaLabel: Self = this.set("ariaLabel", js.undefined)
+    @scala.inline
+    def setAriaOwneeID(value: String): Self = this.set("ariaOwneeID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaOwneeID: Self = this.set("ariaOwneeID", js.undefined)
+    @scala.inline
+    def setContentState(value: RawDraftContentState): Self = this.set("contentState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentState: Self = this.set("contentState", js.undefined)
+    @scala.inline
+    def setCustomBlockRenderFunc(value: /* block */ ContentBlock => _): Self = this.set("customBlockRenderFunc", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomBlockRenderFunc: Self = this.set("customBlockRenderFunc", js.undefined)
+    @scala.inline
+    def setCustomDecoratorsVarargs(value: js.Object*): Self = this.set("customDecorators", js.Array(value :_*))
+    @scala.inline
+    def setCustomDecorators(value: js.Array[js.Object]): Self = this.set("customDecorators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDecorators: Self = this.set("customDecorators", js.undefined)
+    @scala.inline
+    def setCustomStyleMap(value: js.Object): Self = this.set("customStyleMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomStyleMap: Self = this.set("customStyleMap", js.undefined)
+    @scala.inline
+    def setDefaultContentState(value: RawDraftContentState): Self = this.set("defaultContentState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultContentState: Self = this.set("defaultContentState", js.undefined)
+    @scala.inline
+    def setDefaultEditorState(value: EditorState): Self = this.set("defaultEditorState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEditorState: Self = this.set("defaultEditorState", js.undefined)
+    @scala.inline
+    def setEditorClassName(value: String): Self = this.set("editorClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorClassName: Self = this.set("editorClassName", js.undefined)
+    @scala.inline
+    def setEditorRef(value: /* ref */ js.Object => Unit): Self = this.set("editorRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEditorRef: Self = this.set("editorRef", js.undefined)
+    @scala.inline
+    def setEditorState(value: EditorState): Self = this.set("editorState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorState: Self = this.set("editorState", js.undefined)
+    @scala.inline
+    def setEditorStyle(value: CSSProperties): Self = this.set("editorStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorStyle: Self = this.set("editorStyle", js.undefined)
+    @scala.inline
+    def setHandlePastedText(
+      value: (/* text */ String, /* html */ String, /* editorState */ EditorState, /* onChange */ js.Function1[/* editorState */ EditorState, Unit]) => Boolean
+    ): Self = this.set("handlePastedText", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteHandlePastedText: Self = this.set("handlePastedText", js.undefined)
+    @scala.inline
+    def setHashtag(value: js.Object): Self = this.set("hashtag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashtag: Self = this.set("hashtag", js.undefined)
+    @scala.inline
+    def setInitialContentState(value: RawDraftContentState): Self = this.set("initialContentState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialContentState: Self = this.set("initialContentState", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setLocalization(value: js.Object): Self = this.set("localization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalization: Self = this.set("localization", js.undefined)
+    @scala.inline
+    def setMention(value: js.Object): Self = this.set("mention", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMention: Self = this.set("mention", js.undefined)
+    @scala.inline
+    def setOnBlur(value: /* event */ SyntheticEvent => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* contentState */ RawDraftContentState => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnContentStateChange(value: /* contentState */ RawDraftContentState => Unit): Self = this.set("onContentStateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnContentStateChange: Self = this.set("onContentStateChange", js.undefined)
+    @scala.inline
+    def setOnEditorStateChange(value: /* editorState */ EditorState => Unit): Self = this.set("onEditorStateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEditorStateChange: Self = this.set("onEditorStateChange", js.undefined)
+    @scala.inline
+    def setOnFocus(value: /* event */ SyntheticEvent => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnTab(value: /* event */ SyntheticKeyboardEvent => Unit): Self = this.set("onTab", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTab: Self = this.set("onTab", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setSpellCheck(value: Boolean): Self = this.set("spellCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellCheck: Self = this.set("spellCheck", js.undefined)
+    @scala.inline
+    def setStripPastedStyles(value: Boolean): Self = this.set("stripPastedStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripPastedStyles: Self = this.set("stripPastedStyles", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTextAlignment(value: String): Self = this.set("textAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAlignment: Self = this.set("textAlignment", js.undefined)
+    @scala.inline
+    def setToolbar(value: js.Object): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    @scala.inline
+    def setToolbarClassName(value: String): Self = this.set("toolbarClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarClassName: Self = this.set("toolbarClassName", js.undefined)
+    @scala.inline
+    def setToolbarCustomButtonsVarargs(value: ReactElement*): Self = this.set("toolbarCustomButtons", js.Array(value :_*))
+    @scala.inline
+    def setToolbarCustomButtons(value: js.Array[ReactElement]): Self = this.set("toolbarCustomButtons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarCustomButtons: Self = this.set("toolbarCustomButtons", js.undefined)
+    @scala.inline
+    def setToolbarHidden(value: Boolean): Self = this.set("toolbarHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarHidden: Self = this.set("toolbarHidden", js.undefined)
+    @scala.inline
+    def setToolbarOnFocus(value: Boolean): Self = this.set("toolbarOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarOnFocus: Self = this.set("toolbarOnFocus", js.undefined)
+    @scala.inline
+    def setToolbarStyle(value: js.Object): Self = this.set("toolbarStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarStyle: Self = this.set("toolbarStyle", js.undefined)
+    @scala.inline
+    def setUploadCallback(value: /* file */ js.Object => js.Promise[js.Object]): Self = this.set("uploadCallback", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUploadCallback: Self = this.set("uploadCallback", js.undefined)
+    @scala.inline
+    def setWrapperClassName(value: String): Self = this.set("wrapperClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapperClassName: Self = this.set("wrapperClassName", js.undefined)
+    @scala.inline
+    def setWrapperId(value: Double): Self = this.set("wrapperId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapperId: Self = this.set("wrapperId", js.undefined)
+    @scala.inline
+    def setWrapperStyle(value: CSSProperties): Self = this.set("wrapperStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapperStyle: Self = this.set("wrapperStyle", js.undefined)
+  }
+  
 }
 

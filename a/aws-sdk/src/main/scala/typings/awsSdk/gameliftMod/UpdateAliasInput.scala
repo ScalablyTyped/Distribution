@@ -26,17 +26,36 @@ trait UpdateAliasInput extends js.Object {
 
 object UpdateAliasInput {
   @scala.inline
-  def apply(
-    AliasId: AliasIdOrArn,
-    Description: NonZeroAndMaxString = null,
-    Name: NonBlankAndLengthConstraintString = null,
-    RoutingStrategy: RoutingStrategy = null
-  ): UpdateAliasInput = {
+  def apply(AliasId: AliasIdOrArn): UpdateAliasInput = {
     val __obj = js.Dynamic.literal(AliasId = AliasId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RoutingStrategy != null) __obj.updateDynamic("RoutingStrategy")(RoutingStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAliasInput]
   }
+  @scala.inline
+  implicit class UpdateAliasInputOps[Self <: UpdateAliasInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasId(value: AliasIdOrArn): Self = this.set("AliasId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: NonZeroAndMaxString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setName(value: NonBlankAndLengthConstraintString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRoutingStrategy(value: RoutingStrategy): Self = this.set("RoutingStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutingStrategy: Self = this.set("RoutingStrategy", js.undefined)
+  }
+  
 }
 

@@ -11,7 +11,7 @@ class View protected () extends js.Object {
   def this(el: HTMLElement, liveSocket: LiveSocket, parentView: View, href: String, o: js.Any) = this()
   def ackJoin(child: js.Any): Unit = js.native
   def addHook(el: HTMLElement): Unit = js.native
-  def applyJoinPatch(live_patch: js.Any, html: js.Any): Unit = js.native
+  def applyJoinPatch(live_patch: js.Any, html: js.Any, events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
   def applyPendingUpdates(): Unit = js.native
   def attachTrueDocEl(): Unit = js.native
   def bindChannel(): Unit = js.native
@@ -19,13 +19,14 @@ class View protected () extends js.Object {
   def closestComponentID(): Double | Null = js.native
   def closestComponentID(targetCtx: js.Object): Double | Null = js.native
   def componentID(el: HTMLElement): Double | Null = js.native
-  def componentPatch(diff: js.Any, cid: Double, ref: js.Any): Boolean = js.native
+  def componentPatch(diff: js.Any, cid: Double): Boolean = js.native
   def connectParams(): js.Object = js.native
   def destroy(): Unit = js.native
   def destroy(callback: js.Function0[Unit]): Unit = js.native
   def destroyAllChildren(): Unit = js.native
   def destroyDescendent(id: String): js.Any = js.native
   def destroyHook(hook: ViewHookInterface): Unit = js.native
+  def dispatchEvents(events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
   def displayError(): Unit = js.native
   def dropPendingRefs(): Unit = js.native
   def expandURL(to: String): String = js.native
@@ -51,15 +52,16 @@ class View protected () extends js.Object {
   def name(): String = js.native
   def onAllChildJoinsComplete(): Unit = js.native
   def onChannel(event: String, cb: js.Function1[/* resp */ js.Any, Unit]): Unit = js.native
+  def onClose(): Unit = js.native
   def onError(reason: js.Any): Unit = js.native
   def onJoin(resp: js.Object): Unit = js.native
-  def onJoinComplete(resp: js.Object, html: js.Any): Unit = js.native
+  def onJoinComplete(resp: js.Object, html: js.Any, events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
   def onJoinError(resp: js.Object): Unit = js.native
   def onLivePatch(redir: js.Object): Unit = js.native
   def onLiveRedirect(redir: js.Object): Unit = js.native
   def onRedirect(redir: js.Object): Unit = js.native
   def ownsElement(el: HTMLElement): Boolean = js.native
-  def performPatch(patch: js.Any): Boolean = js.native
+  def performPatch(patch: js.Any, pruneCids: Boolean): Boolean = js.native
   def pushEvent(`type`: String, el: HTMLElement, targetCtx: js.Object, phxEvent: String, meta: js.Object): Unit = js.native
   def pushEvent(`type`: String, el: HTMLElement, targetCtx: Null, phxEvent: String, meta: js.Object): Unit = js.native
   def pushFormRecovery(form: HTMLElement, callback: js.Any): Unit = js.native
@@ -82,7 +84,10 @@ class View protected () extends js.Object {
   def submitForm(form: HTMLElement, targetCtx: Null, phxEvent: String): Unit = js.native
   def targetComponentID(target: HTMLElement): Double | Null = js.native
   def targetComponentID(target: HTMLElement, targetCtx: js.Object): Double | Null = js.native
+  def triggerBeforeUpdate(fromEl: HTMLElement, toEl: HTMLElement): js.Any = js.native
   def triggerReconnected(): Unit = js.native
-  def update(diff: js.Any, cidAck: js.Any, ref: js.Any): Unit = js.native
+  def triggerUpdatedHook(hook: js.Any): Unit = js.native
+  def undoRefs(ref: Double): Unit = js.native
+  def update(diff: js.Any, events: js.Array[js.Tuple2[String, js.Object]]): Unit = js.native
 }
 

@@ -27,6 +27,7 @@ class ResourceCalendarlist protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCalendarlistDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCalendarlistDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -54,6 +55,7 @@ class ResourceCalendarlist protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def get(callback: BodyResponseCallback[SchemaCalendarListEntry]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def get(params: ParamsResourceCalendarlistGet): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def get(params: ParamsResourceCalendarlistGet, callback: BodyResponseCallback[SchemaCalendarListEntry]): Unit = js.native
   def get(
@@ -82,6 +84,7 @@ class ResourceCalendarlist protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def insert(callback: BodyResponseCallback[SchemaCalendarListEntry]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def insert(params: ParamsResourceCalendarlistInsert): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def insert(params: ParamsResourceCalendarlistInsert, callback: BodyResponseCallback[SchemaCalendarListEntry]): Unit = js.native
   def insert(
@@ -114,6 +117,7 @@ class ResourceCalendarlist protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCalendarList] = js.native
   def list(callback: BodyResponseCallback[SchemaCalendarList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendarList] = js.native
   def list(params: ParamsResourceCalendarlistList): GaxiosPromise[SchemaCalendarList] = js.native
   def list(params: ParamsResourceCalendarlistList, callback: BodyResponseCallback[SchemaCalendarList]): Unit = js.native
   def list(
@@ -144,6 +148,7 @@ class ResourceCalendarlist protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def patch(callback: BodyResponseCallback[SchemaCalendarListEntry]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def patch(params: ParamsResourceCalendarlistPatch): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def patch(params: ParamsResourceCalendarlistPatch, callback: BodyResponseCallback[SchemaCalendarListEntry]): Unit = js.native
   def patch(
@@ -173,6 +178,7 @@ class ResourceCalendarlist protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def update(callback: BodyResponseCallback[SchemaCalendarListEntry]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def update(params: ParamsResourceCalendarlistUpdate): GaxiosPromise[SchemaCalendarListEntry] = js.native
   def update(params: ParamsResourceCalendarlistUpdate, callback: BodyResponseCallback[SchemaCalendarListEntry]): Unit = js.native
   def update(
@@ -206,6 +212,7 @@ class ResourceCalendarlist protected () extends js.Object {
     */
   def watch(): GaxiosPromise[SchemaChannel] = js.native
   def watch(callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
+  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceCalendarlistWatch): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceCalendarlistWatch, callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
   def watch(

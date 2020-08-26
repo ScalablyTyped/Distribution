@@ -37,7 +37,7 @@ trait TrackEntry extends js.Object {
   var trackLast: Double = js.native
   var trackTime: Double = js.native
   def endTime: Double = js.native
-  def endTime(value: Double): js.Any = js.native
+  def endTime_=(value: Double): Unit = js.native
   def getAnimationTime(): Double = js.native
   def isComplete(): Boolean = js.native
   def loopsCount(): Double = js.native
@@ -49,6 +49,6 @@ trait TrackEntry extends js.Object {
   def resetRotationDirections(): Unit = js.native
   def setAnimationLast(animationLast: Double): Unit = js.native
   def time: Double = js.native
-  def time(value: Double): js.Any = js.native
+  def time_=(value: Double): Unit = js.native
 }
 

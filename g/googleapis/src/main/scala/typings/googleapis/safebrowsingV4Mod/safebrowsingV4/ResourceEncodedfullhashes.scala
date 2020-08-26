@@ -28,6 +28,7 @@ class ResourceEncodedfullhashes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaFindFullHashesResponse] = js.native
   def get(callback: BodyResponseCallback[SchemaFindFullHashesResponse]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFindFullHashesResponse] = js.native
   def get(params: ParamsResourceEncodedfullhashesGet): GaxiosPromise[SchemaFindFullHashesResponse] = js.native
   def get(
     params: ParamsResourceEncodedfullhashesGet,

@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sdbc.XConnection
   * @since LibreOffice 4.0
   */
+@js.native
 trait XDriverManager2
   extends XEnumerationAccess
      with XDriverManager

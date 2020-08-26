@@ -49,85 +49,204 @@ trait ContainerDefinition extends js.Object {
 
 object ContainerDefinition {
   @scala.inline
-  def apply(
-    name: String,
-    command: js.Array[String] = null,
-    cpu: js.UndefOr[Double] = js.undefined,
-    dependsOn: js.Array[ContainerDependency] = null,
-    disableNetworking: js.UndefOr[Boolean] = js.undefined,
-    dnsSearchDomains: js.Array[String] = null,
-    dnsServers: js.Array[String] = null,
-    dockerLabels: StringDictionary[String] = null,
-    dockerSecurityOptions: js.Array[String] = null,
-    entryPoint: js.Array[String] = null,
-    environment: js.Array[KeyValuePair] = null,
-    essential: js.UndefOr[Boolean] = js.undefined,
-    extraHosts: js.Array[HostEntry] = null,
-    firelensConfiguration: FirelensConfiguration = null,
-    healthCheck: HealthCheck = null,
-    hostname: String = null,
-    image: String = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    links: js.Array[String] = null,
-    linuxParameters: LinuxParameters = null,
-    logConfiguration: LogConfiguration = null,
-    memory: js.UndefOr[Double] = js.undefined,
-    memoryReservation: js.UndefOr[Double] = js.undefined,
-    mountPoints: js.Array[MountPoint] = null,
-    portMappings: js.Array[PortMapping] = null,
-    privileged: js.UndefOr[Boolean] = js.undefined,
-    pseudoTerminal: js.UndefOr[Boolean] = js.undefined,
-    readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined,
-    repositoryCredentials: RepositoryCredentials = null,
-    resourceRequirements: js.Array[ResourceRequirements] = null,
-    secrets: js.Array[Secret] = null,
-    startTimeout: js.UndefOr[Double] = js.undefined,
-    stopTimeout: js.UndefOr[Double] = js.undefined,
-    systemControls: js.Array[SystemControl] = null,
-    ulimits: js.Array[Ulimit] = null,
-    user: String = null,
-    volumesFrom: js.Array[VolumeFrom] = null,
-    workingDirectory: String = null
-  ): ContainerDefinition = {
+  def apply(name: String): ContainerDefinition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu.get.asInstanceOf[js.Any])
-    if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNetworking)) __obj.updateDynamic("disableNetworking")(disableNetworking.get.asInstanceOf[js.Any])
-    if (dnsSearchDomains != null) __obj.updateDynamic("dnsSearchDomains")(dnsSearchDomains.asInstanceOf[js.Any])
-    if (dnsServers != null) __obj.updateDynamic("dnsServers")(dnsServers.asInstanceOf[js.Any])
-    if (dockerLabels != null) __obj.updateDynamic("dockerLabels")(dockerLabels.asInstanceOf[js.Any])
-    if (dockerSecurityOptions != null) __obj.updateDynamic("dockerSecurityOptions")(dockerSecurityOptions.asInstanceOf[js.Any])
-    if (entryPoint != null) __obj.updateDynamic("entryPoint")(entryPoint.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (!js.isUndefined(essential)) __obj.updateDynamic("essential")(essential.get.asInstanceOf[js.Any])
-    if (extraHosts != null) __obj.updateDynamic("extraHosts")(extraHosts.asInstanceOf[js.Any])
-    if (firelensConfiguration != null) __obj.updateDynamic("firelensConfiguration")(firelensConfiguration.asInstanceOf[js.Any])
-    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (linuxParameters != null) __obj.updateDynamic("linuxParameters")(linuxParameters.asInstanceOf[js.Any])
-    if (logConfiguration != null) __obj.updateDynamic("logConfiguration")(logConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(memoryReservation)) __obj.updateDynamic("memoryReservation")(memoryReservation.get.asInstanceOf[js.Any])
-    if (mountPoints != null) __obj.updateDynamic("mountPoints")(mountPoints.asInstanceOf[js.Any])
-    if (portMappings != null) __obj.updateDynamic("portMappings")(portMappings.asInstanceOf[js.Any])
-    if (!js.isUndefined(privileged)) __obj.updateDynamic("privileged")(privileged.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pseudoTerminal)) __obj.updateDynamic("pseudoTerminal")(pseudoTerminal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonlyRootFilesystem)) __obj.updateDynamic("readonlyRootFilesystem")(readonlyRootFilesystem.get.asInstanceOf[js.Any])
-    if (repositoryCredentials != null) __obj.updateDynamic("repositoryCredentials")(repositoryCredentials.asInstanceOf[js.Any])
-    if (resourceRequirements != null) __obj.updateDynamic("resourceRequirements")(resourceRequirements.asInstanceOf[js.Any])
-    if (secrets != null) __obj.updateDynamic("secrets")(secrets.asInstanceOf[js.Any])
-    if (!js.isUndefined(startTimeout)) __obj.updateDynamic("startTimeout")(startTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopTimeout)) __obj.updateDynamic("stopTimeout")(stopTimeout.get.asInstanceOf[js.Any])
-    if (systemControls != null) __obj.updateDynamic("systemControls")(systemControls.asInstanceOf[js.Any])
-    if (ulimits != null) __obj.updateDynamic("ulimits")(ulimits.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (volumesFrom != null) __obj.updateDynamic("volumesFrom")(volumesFrom.asInstanceOf[js.Any])
-    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerDefinition]
   }
+  @scala.inline
+  implicit class ContainerDefinitionOps[Self <: ContainerDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommandVarargs(value: String*): Self = this.set("command", js.Array(value :_*))
+    @scala.inline
+    def setCommand(value: js.Array[String]): Self = this.set("command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommand: Self = this.set("command", js.undefined)
+    @scala.inline
+    def setCpu(value: Double): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpu: Self = this.set("cpu", js.undefined)
+    @scala.inline
+    def setDependsOnVarargs(value: ContainerDependency*): Self = this.set("dependsOn", js.Array(value :_*))
+    @scala.inline
+    def setDependsOn(value: js.Array[ContainerDependency]): Self = this.set("dependsOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependsOn: Self = this.set("dependsOn", js.undefined)
+    @scala.inline
+    def setDisableNetworking(value: Boolean): Self = this.set("disableNetworking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableNetworking: Self = this.set("disableNetworking", js.undefined)
+    @scala.inline
+    def setDnsSearchDomainsVarargs(value: String*): Self = this.set("dnsSearchDomains", js.Array(value :_*))
+    @scala.inline
+    def setDnsSearchDomains(value: js.Array[String]): Self = this.set("dnsSearchDomains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsSearchDomains: Self = this.set("dnsSearchDomains", js.undefined)
+    @scala.inline
+    def setDnsServersVarargs(value: String*): Self = this.set("dnsServers", js.Array(value :_*))
+    @scala.inline
+    def setDnsServers(value: js.Array[String]): Self = this.set("dnsServers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsServers: Self = this.set("dnsServers", js.undefined)
+    @scala.inline
+    def setDockerLabels(value: StringDictionary[String]): Self = this.set("dockerLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDockerLabels: Self = this.set("dockerLabels", js.undefined)
+    @scala.inline
+    def setDockerSecurityOptionsVarargs(value: String*): Self = this.set("dockerSecurityOptions", js.Array(value :_*))
+    @scala.inline
+    def setDockerSecurityOptions(value: js.Array[String]): Self = this.set("dockerSecurityOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDockerSecurityOptions: Self = this.set("dockerSecurityOptions", js.undefined)
+    @scala.inline
+    def setEntryPointVarargs(value: String*): Self = this.set("entryPoint", js.Array(value :_*))
+    @scala.inline
+    def setEntryPoint(value: js.Array[String]): Self = this.set("entryPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntryPoint: Self = this.set("entryPoint", js.undefined)
+    @scala.inline
+    def setEnvironmentVarargs(value: KeyValuePair*): Self = this.set("environment", js.Array(value :_*))
+    @scala.inline
+    def setEnvironment(value: js.Array[KeyValuePair]): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setEssential(value: Boolean): Self = this.set("essential", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEssential: Self = this.set("essential", js.undefined)
+    @scala.inline
+    def setExtraHostsVarargs(value: HostEntry*): Self = this.set("extraHosts", js.Array(value :_*))
+    @scala.inline
+    def setExtraHosts(value: js.Array[HostEntry]): Self = this.set("extraHosts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraHosts: Self = this.set("extraHosts", js.undefined)
+    @scala.inline
+    def setFirelensConfiguration(value: FirelensConfiguration): Self = this.set("firelensConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirelensConfiguration: Self = this.set("firelensConfiguration", js.undefined)
+    @scala.inline
+    def setHealthCheck(value: HealthCheck): Self = this.set("healthCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheck: Self = this.set("healthCheck", js.undefined)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("hostname", js.undefined)
+    @scala.inline
+    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setInteractive(value: Boolean): Self = this.set("interactive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteractive: Self = this.set("interactive", js.undefined)
+    @scala.inline
+    def setLinksVarargs(value: String*): Self = this.set("links", js.Array(value :_*))
+    @scala.inline
+    def setLinks(value: js.Array[String]): Self = this.set("links", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinks: Self = this.set("links", js.undefined)
+    @scala.inline
+    def setLinuxParameters(value: LinuxParameters): Self = this.set("linuxParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinuxParameters: Self = this.set("linuxParameters", js.undefined)
+    @scala.inline
+    def setLogConfiguration(value: LogConfiguration): Self = this.set("logConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogConfiguration: Self = this.set("logConfiguration", js.undefined)
+    @scala.inline
+    def setMemory(value: Double): Self = this.set("memory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemory: Self = this.set("memory", js.undefined)
+    @scala.inline
+    def setMemoryReservation(value: Double): Self = this.set("memoryReservation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryReservation: Self = this.set("memoryReservation", js.undefined)
+    @scala.inline
+    def setMountPointsVarargs(value: MountPoint*): Self = this.set("mountPoints", js.Array(value :_*))
+    @scala.inline
+    def setMountPoints(value: js.Array[MountPoint]): Self = this.set("mountPoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountPoints: Self = this.set("mountPoints", js.undefined)
+    @scala.inline
+    def setPortMappingsVarargs(value: PortMapping*): Self = this.set("portMappings", js.Array(value :_*))
+    @scala.inline
+    def setPortMappings(value: js.Array[PortMapping]): Self = this.set("portMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortMappings: Self = this.set("portMappings", js.undefined)
+    @scala.inline
+    def setPrivileged(value: Boolean): Self = this.set("privileged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivileged: Self = this.set("privileged", js.undefined)
+    @scala.inline
+    def setPseudoTerminal(value: Boolean): Self = this.set("pseudoTerminal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePseudoTerminal: Self = this.set("pseudoTerminal", js.undefined)
+    @scala.inline
+    def setReadonlyRootFilesystem(value: Boolean): Self = this.set("readonlyRootFilesystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadonlyRootFilesystem: Self = this.set("readonlyRootFilesystem", js.undefined)
+    @scala.inline
+    def setRepositoryCredentials(value: RepositoryCredentials): Self = this.set("repositoryCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryCredentials: Self = this.set("repositoryCredentials", js.undefined)
+    @scala.inline
+    def setResourceRequirementsVarargs(value: ResourceRequirements*): Self = this.set("resourceRequirements", js.Array(value :_*))
+    @scala.inline
+    def setResourceRequirements(value: js.Array[ResourceRequirements]): Self = this.set("resourceRequirements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceRequirements: Self = this.set("resourceRequirements", js.undefined)
+    @scala.inline
+    def setSecretsVarargs(value: Secret*): Self = this.set("secrets", js.Array(value :_*))
+    @scala.inline
+    def setSecrets(value: js.Array[Secret]): Self = this.set("secrets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecrets: Self = this.set("secrets", js.undefined)
+    @scala.inline
+    def setStartTimeout(value: Double): Self = this.set("startTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimeout: Self = this.set("startTimeout", js.undefined)
+    @scala.inline
+    def setStopTimeout(value: Double): Self = this.set("stopTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopTimeout: Self = this.set("stopTimeout", js.undefined)
+    @scala.inline
+    def setSystemControlsVarargs(value: SystemControl*): Self = this.set("systemControls", js.Array(value :_*))
+    @scala.inline
+    def setSystemControls(value: js.Array[SystemControl]): Self = this.set("systemControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemControls: Self = this.set("systemControls", js.undefined)
+    @scala.inline
+    def setUlimitsVarargs(value: Ulimit*): Self = this.set("ulimits", js.Array(value :_*))
+    @scala.inline
+    def setUlimits(value: js.Array[Ulimit]): Self = this.set("ulimits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUlimits: Self = this.set("ulimits", js.undefined)
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+    @scala.inline
+    def setVolumesFromVarargs(value: VolumeFrom*): Self = this.set("volumesFrom", js.Array(value :_*))
+    @scala.inline
+    def setVolumesFrom(value: js.Array[VolumeFrom]): Self = this.set("volumesFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumesFrom: Self = this.set("volumesFrom", js.undefined)
+    @scala.inline
+    def setWorkingDirectory(value: String): Self = this.set("workingDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkingDirectory: Self = this.set("workingDirectory", js.undefined)
+  }
+  
 }
 

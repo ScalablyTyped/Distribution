@@ -4,30 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Symbol extends js.Object {
-  var symbol: js.UndefOr[Boolean | String] = js.undefined
+  var symbol: js.UndefOr[Boolean | String] = js.native
   /**
     * Whether to generate a <title> element containing the filename if no title is provided in the SVG.
     */
-  var title: js.UndefOr[Boolean] = js.undefined
-  var use: js.UndefOr[Boolean] = js.undefined
-  var view: js.UndefOr[Boolean | String] = js.undefined
+  var title: js.UndefOr[Boolean] = js.native
+  var use: js.UndefOr[Boolean] = js.native
+  var view: js.UndefOr[Boolean | String] = js.native
 }
 
 object Symbol {
   @scala.inline
-  def apply(
-    symbol: Boolean | String = null,
-    title: js.UndefOr[Boolean] = js.undefined,
-    use: js.UndefOr[Boolean] = js.undefined,
-    view: Boolean | String = null
-  ): Symbol = {
+  def apply(): Symbol = {
     val __obj = js.Dynamic.literal()
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(use)) __obj.updateDynamic("use")(use.get.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Symbol]
   }
+  @scala.inline
+  implicit class SymbolOps[Self <: Symbol] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSymbol(value: Boolean | String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setTitle(value: Boolean): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUse(value: Boolean): Self = this.set("use", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUse: Self = this.set("use", js.undefined)
+    @scala.inline
+    def setView(value: Boolean | String): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+  }
+  
 }
 

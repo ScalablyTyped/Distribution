@@ -19,7 +19,12 @@ trait TemplateRender extends js.Object {
   	 * @returns {string}   rendered template
   	 */
   def apply(): String = js.native
+  def apply(data: js.UndefOr[scala.Nothing], helpersOrContext: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
+  def apply(data: js.UndefOr[scala.Nothing], helpersOrContext: Hash[_]): String = js.native
+  def apply(data: js.UndefOr[scala.Nothing], helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
+  def apply(data: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
   def apply(data: js.Any): String = js.native
+  def apply(data: js.Any, helpersOrContext: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
   def apply(data: js.Any, helpersOrContext: Hash[_]): String = js.native
   def apply(data: js.Any, helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
   def apply(data: js.Any, noIteration: Boolean): String = js.native

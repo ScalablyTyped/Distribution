@@ -12,7 +12,7 @@ Simple way to initialize a new git repository in an empty directory, add a file 
 | Keywords           | add, commit, first, first-commit, git, git-add, git-commit, git-init, init |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 667 |
+| # downloads        | 650 |
 | # stars            | 0 |
 
 ## Links

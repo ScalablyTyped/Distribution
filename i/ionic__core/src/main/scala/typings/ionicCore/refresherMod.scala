@@ -15,7 +15,7 @@ object refresherMod extends js.Object {
   class Refresher () extends ComponentInterface {
     var animations: js.Any = js.native
     var appliedStyles: js.Any = js.native
-    var backgroundContentEl: js.UndefOr[js.Any] = js.native
+    var backgroundContentEl: js.Any = js.native
     var beginRefresh: js.Any = js.native
     var canStart: js.Any = js.native
     var checkNativeRefresher: js.Any = js.native
@@ -34,8 +34,8 @@ object refresherMod extends js.Object {
       */
     var disabled: Boolean = js.native
     var el: HTMLIonRefresherElement = js.native
-    var elementToTransform: js.UndefOr[js.Any] = js.native
-    var gesture: js.UndefOr[js.Any] = js.native
+    var elementToTransform: js.Any = js.native
+    var gesture: js.Any = js.native
     /**
       * Emitted while the user is pulling down the content and exposing the refresher.
       */
@@ -90,8 +90,8 @@ object refresherMod extends js.Object {
       */
     var pullMin: Double = js.native
     var resetNativeRefresher: js.Any = js.native
-    var scrollEl: js.UndefOr[js.Any] = js.native
-    var scrollListenerCallback: js.UndefOr[js.Any] = js.native
+    var scrollEl: js.Any = js.native
+    var scrollListenerCallback: js.Any = js.native
     var setCss: js.Any = js.native
     var setupMDNativeRefresher: js.Any = js.native
     var setupNativeRefresher: js.Any = js.native

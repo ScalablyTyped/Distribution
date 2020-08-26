@@ -22,6 +22,7 @@ class ExternalKey protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: ExternalKeyArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ExternalKeyArgs, opts: CustomResourceOptions) = this()
   /**
     * The Amazon Resource Name (ARN) of the key.
@@ -62,7 +63,7 @@ class ExternalKey protected () extends CustomResource {
   /**
     * A key-value map of tags to assign to the key.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Time at which the imported key material expires. When the key material expires, AWS KMS deletes the key material and the CMK becomes unusable. If not specified, key material does not expire. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
     */
@@ -80,8 +81,10 @@ object ExternalKey extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ExternalKey = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ExternalKey = js.native
   def get(name: String, id: Input[ID], state: ExternalKeyState): ExternalKey = js.native
   def get(name: String, id: Input[ID], state: ExternalKeyState, opts: CustomResourceOptions): ExternalKey = js.native
   /**

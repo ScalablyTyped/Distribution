@@ -104,6 +104,7 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listClassifiers(): js.Promise[_] | Unit = js.native
+  def listClassifiers(params: js.UndefOr[scala.Nothing], callback: Callback[ClassifierList]): js.Promise[_] | Unit = js.native
   def listClassifiers(params: ListClassifiersParams): js.Promise[_] | Unit = js.native
   def listClassifiers(params: ListClassifiersParams, callback: Callback[ClassifierList]): js.Promise[_] | Unit = js.native
 }

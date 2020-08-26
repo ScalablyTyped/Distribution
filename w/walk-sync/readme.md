@@ -1,7 +1,7 @@
 
 # Scala.js typings for walk-sync
 
-Typings are for version 2.0.2
+Typings are for version 2.2.0
 
 ## Library description:
 Get an array of recursive directory contents
@@ -11,8 +11,8 @@ Get an array of recursive directory contents
 | Full name          | walk-sync |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 284 |
-| # downloads        | 26941937 |
+| # dependents       | 290 |
+| # downloads        | 27580439 |
 | # stars            | 4 |
 
 ## Links

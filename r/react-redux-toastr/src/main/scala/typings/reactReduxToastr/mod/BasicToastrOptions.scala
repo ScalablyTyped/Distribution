@@ -6,60 +6,103 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BasicToastrOptions extends js.Object {
-  var attention: js.UndefOr[Boolean] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var component: js.UndefOr[(Component[js.Object, js.Object, _]) | Element] = js.undefined
-  var getState: js.UndefOr[js.Function1[/* state */ ToastrState, ToastrState]] = js.undefined
-  var icon: js.UndefOr[Element] = js.undefined
-  var onCloseButtonClick: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onHideComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onShowComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onToastrClick: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var progressBar: js.UndefOr[Boolean] = js.undefined
-  var removeOnHover: js.UndefOr[Boolean] = js.undefined
-  var showCloseButton: js.UndefOr[Boolean] = js.undefined
-  var timeOut: js.UndefOr[Double] = js.undefined
-  var transitionIn: js.UndefOr[transitionInType] = js.undefined
-  var transitionOut: js.UndefOr[transitionOutType] = js.undefined
+  var attention: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
+  var component: js.UndefOr[(Component[js.Object, js.Object, _]) | Element] = js.native
+  var getState: js.UndefOr[js.Function1[/* state */ ToastrState, ToastrState]] = js.native
+  var icon: js.UndefOr[Element] = js.native
+  var onCloseButtonClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHideComplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShowComplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var onToastrClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var progressBar: js.UndefOr[Boolean] = js.native
+  var removeOnHover: js.UndefOr[Boolean] = js.native
+  var showCloseButton: js.UndefOr[Boolean] = js.native
+  var timeOut: js.UndefOr[Double] = js.native
+  var transitionIn: js.UndefOr[transitionInType] = js.native
+  var transitionOut: js.UndefOr[transitionOutType] = js.native
 }
 
 object BasicToastrOptions {
   @scala.inline
-  def apply(
-    attention: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    component: (Component[js.Object, js.Object, _]) | Element = null,
-    getState: /* state */ ToastrState => ToastrState = null,
-    icon: Element = null,
-    onCloseButtonClick: () => Unit = null,
-    onHideComplete: () => Unit = null,
-    onShowComplete: () => Unit = null,
-    onToastrClick: () => Unit = null,
-    progressBar: js.UndefOr[Boolean] = js.undefined,
-    removeOnHover: js.UndefOr[Boolean] = js.undefined,
-    showCloseButton: js.UndefOr[Boolean] = js.undefined,
-    timeOut: js.UndefOr[Double] = js.undefined,
-    transitionIn: transitionInType = null,
-    transitionOut: transitionOutType = null
-  ): BasicToastrOptions = {
+  def apply(): BasicToastrOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attention)) __obj.updateDynamic("attention")(attention.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction1(getState))
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (onCloseButtonClick != null) __obj.updateDynamic("onCloseButtonClick")(js.Any.fromFunction0(onCloseButtonClick))
-    if (onHideComplete != null) __obj.updateDynamic("onHideComplete")(js.Any.fromFunction0(onHideComplete))
-    if (onShowComplete != null) __obj.updateDynamic("onShowComplete")(js.Any.fromFunction0(onShowComplete))
-    if (onToastrClick != null) __obj.updateDynamic("onToastrClick")(js.Any.fromFunction0(onToastrClick))
-    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeOnHover)) __obj.updateDynamic("removeOnHover")(removeOnHover.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeOut)) __obj.updateDynamic("timeOut")(timeOut.get.asInstanceOf[js.Any])
-    if (transitionIn != null) __obj.updateDynamic("transitionIn")(transitionIn.asInstanceOf[js.Any])
-    if (transitionOut != null) __obj.updateDynamic("transitionOut")(transitionOut.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicToastrOptions]
   }
+  @scala.inline
+  implicit class BasicToastrOptionsOps[Self <: BasicToastrOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttention(value: Boolean): Self = this.set("attention", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttention: Self = this.set("attention", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setComponent(value: (Component[js.Object, js.Object, _]) | Element): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setGetState(value: /* state */ ToastrState => ToastrState): Self = this.set("getState", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetState: Self = this.set("getState", js.undefined)
+    @scala.inline
+    def setIcon(value: Element): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setOnCloseButtonClick(value: () => Unit): Self = this.set("onCloseButtonClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnCloseButtonClick: Self = this.set("onCloseButtonClick", js.undefined)
+    @scala.inline
+    def setOnHideComplete(value: () => Unit): Self = this.set("onHideComplete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnHideComplete: Self = this.set("onHideComplete", js.undefined)
+    @scala.inline
+    def setOnShowComplete(value: () => Unit): Self = this.set("onShowComplete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnShowComplete: Self = this.set("onShowComplete", js.undefined)
+    @scala.inline
+    def setOnToastrClick(value: () => Unit): Self = this.set("onToastrClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnToastrClick: Self = this.set("onToastrClick", js.undefined)
+    @scala.inline
+    def setProgressBar(value: Boolean): Self = this.set("progressBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressBar: Self = this.set("progressBar", js.undefined)
+    @scala.inline
+    def setRemoveOnHover(value: Boolean): Self = this.set("removeOnHover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveOnHover: Self = this.set("removeOnHover", js.undefined)
+    @scala.inline
+    def setShowCloseButton(value: Boolean): Self = this.set("showCloseButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCloseButton: Self = this.set("showCloseButton", js.undefined)
+    @scala.inline
+    def setTimeOut(value: Double): Self = this.set("timeOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeOut: Self = this.set("timeOut", js.undefined)
+    @scala.inline
+    def setTransitionIn(value: transitionInType): Self = this.set("transitionIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionIn: Self = this.set("transitionIn", js.undefined)
+    @scala.inline
+    def setTransitionOut(value: transitionOutType): Self = this.set("transitionOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionOut: Self = this.set("transitionOut", js.undefined)
+  }
+  
 }
 

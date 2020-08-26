@@ -26,15 +26,32 @@ trait RestoreManagedPrefixListVersionRequest extends js.Object {
 
 object RestoreManagedPrefixListVersionRequest {
   @scala.inline
-  def apply(
-    CurrentVersion: Long,
-    PrefixListId: PrefixListResourceId,
-    PreviousVersion: Long,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): RestoreManagedPrefixListVersionRequest = {
+  def apply(CurrentVersion: Long, PrefixListId: PrefixListResourceId, PreviousVersion: Long): RestoreManagedPrefixListVersionRequest = {
     val __obj = js.Dynamic.literal(CurrentVersion = CurrentVersion.asInstanceOf[js.Any], PrefixListId = PrefixListId.asInstanceOf[js.Any], PreviousVersion = PreviousVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreManagedPrefixListVersionRequest]
   }
+  @scala.inline
+  implicit class RestoreManagedPrefixListVersionRequestOps[Self <: RestoreManagedPrefixListVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentVersion(value: Long): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrefixListId(value: PrefixListResourceId): Self = this.set("PrefixListId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPreviousVersion(value: Long): Self = this.set("PreviousVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

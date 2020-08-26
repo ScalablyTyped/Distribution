@@ -4,13 +4,8 @@ import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
-import typings.i18next.i18nextStrings.`3rdParty`
-import typings.i18next.i18nextStrings.backend
-import typings.i18next.i18nextStrings.i18nFormat
-import typings.i18next.i18nextStrings.languageDetector
-import typings.i18next.i18nextStrings.logger
-import typings.i18next.i18nextStrings.postProcessor
 import typings.i18next.mod.Module
+import typings.i18nextExpressMiddleware.i18nextExpressMiddlewareStrings.languageDetector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,17 +15,21 @@ import scala.scalajs.js.annotation._
 class LanguageDetector () extends Module {
   def this(options: LanguageDetectorOptions) = this()
   def this(services: LanguageDetectorServices) = this()
+  def this(options: js.UndefOr[scala.Nothing], allOptions: LanguageDetectorAllOptions) = this()
   def this(options: LanguageDetectorOptions, allOptions: LanguageDetectorAllOptions) = this()
   def this(services: LanguageDetectorServices, options: LanguageDetectorOptions) = this()
+  def this(
+    services: LanguageDetectorServices,
+    options: js.UndefOr[scala.Nothing],
+    allOptions: LanguageDetectorAllOptions
+  ) = this()
   def this(
     services: LanguageDetectorServices,
     options: LanguageDetectorOptions,
     allOptions: LanguageDetectorAllOptions
   ) = this()
-  /* CompleteClass */
-  override var `type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty` = js.native
   @JSName("type")
-  var type_LanguageDetector: typings.i18nextExpressMiddleware.i18nextExpressMiddlewareStrings.languageDetector = js.native
+  var type_LanguageDetector: languageDetector = js.native
   def addDetector(detector: LanguageDetectorInterface): Unit = js.native
   def cacheUserLanguage(
     req: Request_[ParamsDictionary, _, _, Query],
@@ -44,9 +43,15 @@ class LanguageDetector () extends Module {
     detectionOrder: LanguageDetectorOrder
   ): Unit = js.native
   def init(): Unit = js.native
+  def init(options: js.UndefOr[scala.Nothing], allOptions: LanguageDetectorAllOptions): Unit = js.native
   def init(options: LanguageDetectorOptions): Unit = js.native
   def init(options: LanguageDetectorOptions, allOptions: LanguageDetectorAllOptions): Unit = js.native
   def init(services: LanguageDetectorServices): Unit = js.native
+  def init(
+    services: LanguageDetectorServices,
+    options: js.UndefOr[scala.Nothing],
+    allOptions: LanguageDetectorAllOptions
+  ): Unit = js.native
   def init(services: LanguageDetectorServices, options: LanguageDetectorOptions): Unit = js.native
   def init(
     services: LanguageDetectorServices,

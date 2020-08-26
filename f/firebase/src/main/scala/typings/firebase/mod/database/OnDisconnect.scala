@@ -99,14 +99,14 @@ trait OnDisconnect extends js.Object {
     */
   def set(value: js.Any): js.Promise[_] = js.native
   def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-  def setWithPriority(value: js.Any): js.Promise[_] = js.native
-  def setWithPriority(value: js.Any, priority: String): js.Promise[_] = js.native
-  def setWithPriority(value: js.Any, priority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
   /**
     * Ensures the data at this location is set to the specified value and priority
     * when the client is disconnected (due to closing the browser, navigating to a
     * new page, or network issues).
     */
+  def setWithPriority(value: js.Any): js.Promise[_] = js.native
+  def setWithPriority(value: js.Any, priority: String): js.Promise[_] = js.native
+  def setWithPriority(value: js.Any, priority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
   def setWithPriority(value: js.Any, priority: Double): js.Promise[_] = js.native
   def setWithPriority(value: js.Any, priority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
   def setWithPriority(value: js.Any, priority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native

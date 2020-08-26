@@ -81,6 +81,7 @@ trait Matrix2D extends Proxy {
     * Returns a `Matrix2D` object that specifies a scaling animation from one scale to another.
     */
   def scale(sx: Double, sy: Double): Matrix2D = js.native
+  def scale(sx: Double, sy: Double, toSx: js.UndefOr[scala.Nothing], toSy: Double): Matrix2D = js.native
   def scale(sx: Double, sy: Double, toSx: Double): Matrix2D = js.native
   def scale(sx: Double, sy: Double, toSx: Double, toSy: Double): Matrix2D = js.native
   /**

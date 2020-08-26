@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AlertableOptions extends js.Object {
-  var cancelButton: js.UndefOr[String] = js.undefined
-  var container: js.UndefOr[String] = js.undefined
-  var hide: js.UndefOr[js.Function] = js.undefined
-  var html: js.UndefOr[Boolean] = js.undefined
-  var modal: js.UndefOr[String] = js.undefined
-  var okButton: js.UndefOr[String] = js.undefined
-  var overlay: js.UndefOr[String] = js.undefined
-  var prompt: js.UndefOr[String] = js.undefined
-  var show: js.UndefOr[js.Function] = js.undefined
+  var cancelButton: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.native
+  var hide: js.UndefOr[js.Function] = js.native
+  var html: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[String] = js.native
+  var okButton: js.UndefOr[String] = js.native
+  var overlay: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.native
+  var show: js.UndefOr[js.Function] = js.native
 }
 
 object AlertableOptions {
   @scala.inline
-  def apply(
-    cancelButton: String = null,
-    container: String = null,
-    hide: js.Function = null,
-    html: js.UndefOr[Boolean] = js.undefined,
-    modal: String = null,
-    okButton: String = null,
-    overlay: String = null,
-    prompt: String = null,
-    show: js.Function = null
-  ): AlertableOptions = {
+  def apply(): AlertableOptions = {
     val __obj = js.Dynamic.literal()
-    if (cancelButton != null) __obj.updateDynamic("cancelButton")(cancelButton.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
-    if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (okButton != null) __obj.updateDynamic("okButton")(okButton.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertableOptions]
   }
+  @scala.inline
+  implicit class AlertableOptionsOps[Self <: AlertableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancelButton(value: String): Self = this.set("cancelButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelButton: Self = this.set("cancelButton", js.undefined)
+    @scala.inline
+    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setHide(value: js.Function): Self = this.set("hide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHide: Self = this.set("hide", js.undefined)
+    @scala.inline
+    def setHtml(value: Boolean): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setModal(value: String): Self = this.set("modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModal: Self = this.set("modal", js.undefined)
+    @scala.inline
+    def setOkButton(value: String): Self = this.set("okButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOkButton: Self = this.set("okButton", js.undefined)
+    @scala.inline
+    def setOverlay(value: String): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    @scala.inline
+    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrompt: Self = this.set("prompt", js.undefined)
+    @scala.inline
+    def setShow(value: js.Function): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+  }
+  
 }
 

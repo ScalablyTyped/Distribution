@@ -10,9 +10,9 @@ React TimePicker
 | ------------------ | :-------------: |
 | Full name          | rc-time-picker |
 | Keywords           | react, react-time-picker, react-component, timepicker, time-picker, ui component, ui, component |
-| # releases         | 17 |
-| # dependents       | 228 |
-| # downloads        | 11335870 |
+| # releases         | 19 |
+| # dependents       | 232 |
+| # downloads        | 11812366 |
 | # stars            | 1 |
 
 ## Links

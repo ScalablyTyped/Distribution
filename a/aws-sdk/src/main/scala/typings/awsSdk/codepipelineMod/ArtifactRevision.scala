@@ -34,22 +34,46 @@ trait ArtifactRevision extends js.Object {
 
 object ArtifactRevision {
   @scala.inline
-  def apply(
-    created: Timestamp = null,
-    name: ArtifactName = null,
-    revisionChangeIdentifier: RevisionChangeIdentifier = null,
-    revisionId: Revision = null,
-    revisionSummary: RevisionSummary = null,
-    revisionUrl: Url = null
-  ): ArtifactRevision = {
+  def apply(): ArtifactRevision = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (revisionChangeIdentifier != null) __obj.updateDynamic("revisionChangeIdentifier")(revisionChangeIdentifier.asInstanceOf[js.Any])
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
-    if (revisionSummary != null) __obj.updateDynamic("revisionSummary")(revisionSummary.asInstanceOf[js.Any])
-    if (revisionUrl != null) __obj.updateDynamic("revisionUrl")(revisionUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactRevision]
   }
+  @scala.inline
+  implicit class ArtifactRevisionOps[Self <: ArtifactRevision] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreated(value: Timestamp): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setName(value: ArtifactName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRevisionChangeIdentifier(value: RevisionChangeIdentifier): Self = this.set("revisionChangeIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionChangeIdentifier: Self = this.set("revisionChangeIdentifier", js.undefined)
+    @scala.inline
+    def setRevisionId(value: Revision): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    @scala.inline
+    def setRevisionSummary(value: RevisionSummary): Self = this.set("revisionSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionSummary: Self = this.set("revisionSummary", js.undefined)
+    @scala.inline
+    def setRevisionUrl(value: Url): Self = this.set("revisionUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionUrl: Self = this.set("revisionUrl", js.undefined)
+  }
+  
 }
 

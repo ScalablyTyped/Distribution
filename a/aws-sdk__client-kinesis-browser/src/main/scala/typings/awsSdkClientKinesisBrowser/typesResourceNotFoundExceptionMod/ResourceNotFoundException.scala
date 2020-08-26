@@ -30,6 +30,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceNotFoundException
   extends ServiceException[ResourceNotFoundExceptionDetails]
      with AddTagsToStreamExceptionsUnion
@@ -57,7 +58,7 @@ trait ResourceNotFoundException
      with StopStreamEncryptionExceptionsUnion
      with UpdateShardCountExceptionsUnion {
   @JSName("name")
-  var name_ResourceNotFoundException: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ResourceNotFoundException
+  var name_ResourceNotFoundException: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ResourceNotFoundException = js.native
 }
 
 object ResourceNotFoundException {
@@ -66,12 +67,27 @@ object ResourceNotFoundException {
     $metadata: ResponseMetadata,
     details: ResourceNotFoundExceptionDetails,
     message: String,
-    name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ResourceNotFoundException,
-    stack: String = null
+    name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ResourceNotFoundException
   ): ResourceNotFoundException = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceNotFoundException]
   }
+  @scala.inline
+  implicit class ResourceNotFoundExceptionOps[Self <: ResourceNotFoundException] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(
+      value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ResourceNotFoundException
+    ): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

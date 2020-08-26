@@ -18,11 +18,32 @@ trait BrokerEngineType extends js.Object {
 
 object BrokerEngineType {
   @scala.inline
-  def apply(EngineType: EngineType = null, EngineVersions: listOfEngineVersion = null): BrokerEngineType = {
+  def apply(): BrokerEngineType = {
     val __obj = js.Dynamic.literal()
-    if (EngineType != null) __obj.updateDynamic("EngineType")(EngineType.asInstanceOf[js.Any])
-    if (EngineVersions != null) __obj.updateDynamic("EngineVersions")(EngineVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerEngineType]
   }
+  @scala.inline
+  implicit class BrokerEngineTypeOps[Self <: BrokerEngineType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEngineType(value: EngineType): Self = this.set("EngineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineType: Self = this.set("EngineType", js.undefined)
+    @scala.inline
+    def setEngineVersionsVarargs(value: EngineVersion*): Self = this.set("EngineVersions", js.Array(value :_*))
+    @scala.inline
+    def setEngineVersions(value: listOfEngineVersion): Self = this.set("EngineVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersions: Self = this.set("EngineVersions", js.undefined)
+  }
+  
 }
 

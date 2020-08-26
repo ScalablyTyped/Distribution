@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  auto  :'auto',   always  :'always'}[keyof {  auto  :'auto',   always  :'always'}] */
+/* Inlined {  auto :'auto',   always :'always'}[keyof {  auto :'auto',   always :'always'}] */
 /* Rewritten from type alias, can be one of: 
   - typings.officeUiFabricReact.officeUiFabricReactStrings.auto
   - typings.officeUiFabricReact.officeUiFabricReactStrings.always

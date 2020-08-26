@@ -9,33 +9,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectableEvents extends js.Object {
-  var selected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Selected, Unit]] = js.undefined
-  var selecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Selecting, Unit]] = js.undefined
-  var start: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ js.Any, Unit]] = js.undefined
-  var stop: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ js.Any, Unit]] = js.undefined
-  var unselected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Unselected, Unit]] = js.undefined
-  var unselecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Unselecting, Unit]] = js.undefined
+  var selected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Selected, Unit]] = js.native
+  var selecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Selecting, Unit]] = js.native
+  var start: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ js.Any, Unit]] = js.native
+  var stop: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ js.Any, Unit]] = js.native
+  var unselected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Unselected, Unit]] = js.native
+  var unselecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Unselecting, Unit]] = js.native
 }
 
 object SelectableEvents {
   @scala.inline
-  def apply(
-    selected: (/* event */ JQueryEventObject, /* ui */ Selected) => Unit = null,
-    selecting: (/* event */ JQueryEventObject, /* ui */ Selecting) => Unit = null,
-    start: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
-    unselected: (/* event */ JQueryEventObject, /* ui */ Unselected) => Unit = null,
-    unselecting: (/* event */ JQueryEventObject, /* ui */ Unselecting) => Unit = null
-  ): SelectableEvents = {
+  def apply(): SelectableEvents = {
     val __obj = js.Dynamic.literal()
-    if (selected != null) __obj.updateDynamic("selected")(js.Any.fromFunction2(selected))
-    if (selecting != null) __obj.updateDynamic("selecting")(js.Any.fromFunction2(selecting))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
-    if (unselected != null) __obj.updateDynamic("unselected")(js.Any.fromFunction2(unselected))
-    if (unselecting != null) __obj.updateDynamic("unselecting")(js.Any.fromFunction2(unselecting))
     __obj.asInstanceOf[SelectableEvents]
   }
+  @scala.inline
+  implicit class SelectableEventsOps[Self <: SelectableEvents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSelected(value: (/* event */ JQueryEventObject, /* ui */ Selected) => Unit): Self = this.set("selected", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setSelecting(value: (/* event */ JQueryEventObject, /* ui */ Selecting) => Unit): Self = this.set("selecting", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSelecting: Self = this.set("selecting", js.undefined)
+    @scala.inline
+    def setStart(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = this.set("start", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setStop(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = this.set("stop", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStop: Self = this.set("stop", js.undefined)
+    @scala.inline
+    def setUnselected(value: (/* event */ JQueryEventObject, /* ui */ Unselected) => Unit): Self = this.set("unselected", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteUnselected: Self = this.set("unselected", js.undefined)
+    @scala.inline
+    def setUnselecting(value: (/* event */ JQueryEventObject, /* ui */ Unselecting) => Unit): Self = this.set("unselecting", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteUnselecting: Self = this.set("unselecting", js.undefined)
+  }
+  
 }
 

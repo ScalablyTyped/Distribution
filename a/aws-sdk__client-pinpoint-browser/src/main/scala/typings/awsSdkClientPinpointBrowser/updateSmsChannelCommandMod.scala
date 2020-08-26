@@ -26,16 +26,9 @@ object updateSmsChannelCommandMod extends js.Object {
           Blob
         ] {
     def this(input: UpdateSmsChannelInput) = this()
-    /* CompleteClass */
-    override val input: UpdateSmsChannelInput = js.native
     val middlewareStack: MiddlewareStack[UpdateSmsChannelInput, UpdateSmsChannelOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[UpdateSmsChannelInput, UpdateSmsChannelOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[UpdateSmsChannelInput, UpdateSmsChannelOutput] = js.native
   }

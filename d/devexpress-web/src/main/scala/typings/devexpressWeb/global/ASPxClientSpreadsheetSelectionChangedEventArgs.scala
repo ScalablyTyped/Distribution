@@ -16,10 +16,5 @@ class ASPxClientSpreadsheetSelectionChangedEventArgs protected ()
     * @param selection An ASPxClientSpreadsheetSelection object defining the selection in the Spreadsheet.
     */
   def this(selection: typings.devexpressWeb.ASPxClientSpreadsheetSelection) = this()
-  /**
-    * Gets an object that determines the currently selected region within the Spreadsheet.
-    */
-  /* CompleteClass */
-  override var selection: typings.devexpressWeb.ASPxClientSpreadsheetSelection = js.native
 }
 

@@ -41,8 +41,24 @@ object Solver extends js.Object {
     * @param d Number
     */
   def cubicFunction(): Unit = js.native
+  def cubicFunction(
+    a: js.UndefOr[scala.Nothing],
+    b: js.UndefOr[scala.Nothing],
+    c: js.UndefOr[scala.Nothing],
+    d: Double
+  ): Unit = js.native
+  def cubicFunction(a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
+  def cubicFunction(a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], c: Double, d: Double): Unit = js.native
+  def cubicFunction(a: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  def cubicFunction(a: js.UndefOr[scala.Nothing], b: Double, c: js.UndefOr[scala.Nothing], d: Double): Unit = js.native
+  def cubicFunction(a: js.UndefOr[scala.Nothing], b: Double, c: Double): Unit = js.native
+  def cubicFunction(a: js.UndefOr[scala.Nothing], b: Double, c: Double, d: Double): Unit = js.native
   def cubicFunction(a: Double): Unit = js.native
+  def cubicFunction(a: Double, b: js.UndefOr[scala.Nothing], c: js.UndefOr[scala.Nothing], d: Double): Unit = js.native
+  def cubicFunction(a: Double, b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
+  def cubicFunction(a: Double, b: js.UndefOr[scala.Nothing], c: Double, d: Double): Unit = js.native
   def cubicFunction(a: Double, b: Double): Unit = js.native
+  def cubicFunction(a: Double, b: Double, c: js.UndefOr[scala.Nothing], d: Double): Unit = js.native
   def cubicFunction(a: Double, b: Double, c: Double): Unit = js.native
   def cubicFunction(a: Double, b: Double, c: Double, d: Double): Unit = js.native
   /** [Method] Cubic root of number
@@ -69,6 +85,7 @@ object Solver extends js.Object {
     * @param b Number
     */
   def linearFunction(): Unit = js.native
+  def linearFunction(a: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
   def linearFunction(a: Double): Unit = js.native
   def linearFunction(a: Double, b: Double): Unit = js.native
   /** [Method] Returns the function f x a  x  2  b  x  c and solver for f x y
@@ -77,7 +94,11 @@ object Solver extends js.Object {
     * @param c Number
     */
   def quadraticFunction(): Unit = js.native
+  def quadraticFunction(a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
+  def quadraticFunction(a: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  def quadraticFunction(a: js.UndefOr[scala.Nothing], b: Double, c: Double): Unit = js.native
   def quadraticFunction(a: Double): Unit = js.native
+  def quadraticFunction(a: Double, b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
   def quadraticFunction(a: Double, b: Double): Unit = js.native
   def quadraticFunction(a: Double, b: Double, c: Double): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

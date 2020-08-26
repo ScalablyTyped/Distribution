@@ -188,80 +188,178 @@ trait SchemaAttributes extends js.Object {
 
 object SchemaAttributes {
   @scala.inline
-  def apply(
-    additionalImageLink: js.Array[SchemaImage] = null,
-    ageGroup: String = null,
-    brand: String = null,
-    capacity: SchemaCapacity = null,
-    color: String = null,
-    count: SchemaCount = null,
-    description: String = null,
-    disclosureDate: String = null,
-    excludedDestination: js.Array[String] = null,
-    featureDescription: js.Array[SchemaFeatureDescription] = null,
-    flavor: String = null,
-    format: String = null,
-    gender: String = null,
-    gtin: js.Array[String] = null,
-    imageLink: SchemaImage = null,
-    includedDestination: js.Array[String] = null,
-    itemGroupId: String = null,
-    material: String = null,
-    mpn: String = null,
-    pattern: String = null,
-    productDetail: js.Array[SchemaProductDetail] = null,
-    productLine: String = null,
-    productName: String = null,
-    productPageUrl: String = null,
-    productType: js.Array[String] = null,
-    releaseDate: String = null,
-    scent: String = null,
-    size: String = null,
-    sizeSystem: String = null,
-    sizeType: String = null,
-    suggestedRetailPrice: SchemaPrice = null,
-    targetClientId: String = null,
-    theme: String = null,
-    title: String = null,
-    videoLink: js.Array[String] = null
-  ): SchemaAttributes = {
+  def apply(): SchemaAttributes = {
     val __obj = js.Dynamic.literal()
-    if (additionalImageLink != null) __obj.updateDynamic("additionalImageLink")(additionalImageLink.asInstanceOf[js.Any])
-    if (ageGroup != null) __obj.updateDynamic("ageGroup")(ageGroup.asInstanceOf[js.Any])
-    if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
-    if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (disclosureDate != null) __obj.updateDynamic("disclosureDate")(disclosureDate.asInstanceOf[js.Any])
-    if (excludedDestination != null) __obj.updateDynamic("excludedDestination")(excludedDestination.asInstanceOf[js.Any])
-    if (featureDescription != null) __obj.updateDynamic("featureDescription")(featureDescription.asInstanceOf[js.Any])
-    if (flavor != null) __obj.updateDynamic("flavor")(flavor.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
-    if (gtin != null) __obj.updateDynamic("gtin")(gtin.asInstanceOf[js.Any])
-    if (imageLink != null) __obj.updateDynamic("imageLink")(imageLink.asInstanceOf[js.Any])
-    if (includedDestination != null) __obj.updateDynamic("includedDestination")(includedDestination.asInstanceOf[js.Any])
-    if (itemGroupId != null) __obj.updateDynamic("itemGroupId")(itemGroupId.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (mpn != null) __obj.updateDynamic("mpn")(mpn.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (productDetail != null) __obj.updateDynamic("productDetail")(productDetail.asInstanceOf[js.Any])
-    if (productLine != null) __obj.updateDynamic("productLine")(productLine.asInstanceOf[js.Any])
-    if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
-    if (productPageUrl != null) __obj.updateDynamic("productPageUrl")(productPageUrl.asInstanceOf[js.Any])
-    if (productType != null) __obj.updateDynamic("productType")(productType.asInstanceOf[js.Any])
-    if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate.asInstanceOf[js.Any])
-    if (scent != null) __obj.updateDynamic("scent")(scent.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sizeSystem != null) __obj.updateDynamic("sizeSystem")(sizeSystem.asInstanceOf[js.Any])
-    if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType.asInstanceOf[js.Any])
-    if (suggestedRetailPrice != null) __obj.updateDynamic("suggestedRetailPrice")(suggestedRetailPrice.asInstanceOf[js.Any])
-    if (targetClientId != null) __obj.updateDynamic("targetClientId")(targetClientId.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (videoLink != null) __obj.updateDynamic("videoLink")(videoLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttributes]
   }
+  @scala.inline
+  implicit class SchemaAttributesOps[Self <: SchemaAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalImageLinkVarargs(value: SchemaImage*): Self = this.set("additionalImageLink", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalImageLink(value: js.Array[SchemaImage]): Self = this.set("additionalImageLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalImageLink: Self = this.set("additionalImageLink", js.undefined)
+    @scala.inline
+    def setAgeGroup(value: String): Self = this.set("ageGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgeGroup: Self = this.set("ageGroup", js.undefined)
+    @scala.inline
+    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrand: Self = this.set("brand", js.undefined)
+    @scala.inline
+    def setCapacity(value: SchemaCapacity): Self = this.set("capacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacity: Self = this.set("capacity", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setCount(value: SchemaCount): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisclosureDate(value: String): Self = this.set("disclosureDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisclosureDate: Self = this.set("disclosureDate", js.undefined)
+    @scala.inline
+    def setExcludedDestinationVarargs(value: String*): Self = this.set("excludedDestination", js.Array(value :_*))
+    @scala.inline
+    def setExcludedDestination(value: js.Array[String]): Self = this.set("excludedDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedDestination: Self = this.set("excludedDestination", js.undefined)
+    @scala.inline
+    def setFeatureDescriptionVarargs(value: SchemaFeatureDescription*): Self = this.set("featureDescription", js.Array(value :_*))
+    @scala.inline
+    def setFeatureDescription(value: js.Array[SchemaFeatureDescription]): Self = this.set("featureDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureDescription: Self = this.set("featureDescription", js.undefined)
+    @scala.inline
+    def setFlavor(value: String): Self = this.set("flavor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlavor: Self = this.set("flavor", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGender: Self = this.set("gender", js.undefined)
+    @scala.inline
+    def setGtinVarargs(value: String*): Self = this.set("gtin", js.Array(value :_*))
+    @scala.inline
+    def setGtin(value: js.Array[String]): Self = this.set("gtin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGtin: Self = this.set("gtin", js.undefined)
+    @scala.inline
+    def setImageLink(value: SchemaImage): Self = this.set("imageLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageLink: Self = this.set("imageLink", js.undefined)
+    @scala.inline
+    def setIncludedDestinationVarargs(value: String*): Self = this.set("includedDestination", js.Array(value :_*))
+    @scala.inline
+    def setIncludedDestination(value: js.Array[String]): Self = this.set("includedDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludedDestination: Self = this.set("includedDestination", js.undefined)
+    @scala.inline
+    def setItemGroupId(value: String): Self = this.set("itemGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemGroupId: Self = this.set("itemGroupId", js.undefined)
+    @scala.inline
+    def setMaterial(value: String): Self = this.set("material", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaterial: Self = this.set("material", js.undefined)
+    @scala.inline
+    def setMpn(value: String): Self = this.set("mpn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMpn: Self = this.set("mpn", js.undefined)
+    @scala.inline
+    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setProductDetailVarargs(value: SchemaProductDetail*): Self = this.set("productDetail", js.Array(value :_*))
+    @scala.inline
+    def setProductDetail(value: js.Array[SchemaProductDetail]): Self = this.set("productDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductDetail: Self = this.set("productDetail", js.undefined)
+    @scala.inline
+    def setProductLine(value: String): Self = this.set("productLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductLine: Self = this.set("productLine", js.undefined)
+    @scala.inline
+    def setProductName(value: String): Self = this.set("productName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductName: Self = this.set("productName", js.undefined)
+    @scala.inline
+    def setProductPageUrl(value: String): Self = this.set("productPageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductPageUrl: Self = this.set("productPageUrl", js.undefined)
+    @scala.inline
+    def setProductTypeVarargs(value: String*): Self = this.set("productType", js.Array(value :_*))
+    @scala.inline
+    def setProductType(value: js.Array[String]): Self = this.set("productType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductType: Self = this.set("productType", js.undefined)
+    @scala.inline
+    def setReleaseDate(value: String): Self = this.set("releaseDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseDate: Self = this.set("releaseDate", js.undefined)
+    @scala.inline
+    def setScent(value: String): Self = this.set("scent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScent: Self = this.set("scent", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSizeSystem(value: String): Self = this.set("sizeSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeSystem: Self = this.set("sizeSystem", js.undefined)
+    @scala.inline
+    def setSizeType(value: String): Self = this.set("sizeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeType: Self = this.set("sizeType", js.undefined)
+    @scala.inline
+    def setSuggestedRetailPrice(value: SchemaPrice): Self = this.set("suggestedRetailPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedRetailPrice: Self = this.set("suggestedRetailPrice", js.undefined)
+    @scala.inline
+    def setTargetClientId(value: String): Self = this.set("targetClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetClientId: Self = this.set("targetClientId", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVideoLinkVarargs(value: String*): Self = this.set("videoLink", js.Array(value :_*))
+    @scala.inline
+    def setVideoLink(value: js.Array[String]): Self = this.set("videoLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoLink: Self = this.set("videoLink", js.undefined)
+  }
+  
 }
 

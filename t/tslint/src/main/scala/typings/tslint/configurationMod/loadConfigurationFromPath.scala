@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object loadConfigurationFromPath extends js.Object {
   def apply(): IConfigurationFile = js.native
+  def apply(configFilePath: js.UndefOr[scala.Nothing], _originalFilePath: String): IConfigurationFile = js.native
   def apply(configFilePath: String): IConfigurationFile = js.native
   def apply(configFilePath: String, _originalFilePath: String): IConfigurationFile = js.native
 }

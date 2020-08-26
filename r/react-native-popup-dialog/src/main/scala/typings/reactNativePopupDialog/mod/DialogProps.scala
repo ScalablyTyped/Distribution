@@ -6,72 +6,127 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DialogProps extends js.Object {
-  var animationDuration: js.UndefOr[Double] = js.undefined
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var dialogAnimation: js.UndefOr[FadeAnimation | ScaleAnimation | SlideAnimation] = js.undefined
-  var dialogStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var dialogTitle: js.UndefOr[js.Any] = js.undefined
-  var footer: js.UndefOr[js.Any] = js.undefined
-  var hasOverlay: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onHardwareBackPress: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onTouchOutside: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var overlayBackgroundColor: js.UndefOr[String] = js.undefined
-  var overlayOpacity: js.UndefOr[Double] = js.undefined
-  var overlayPointerEvents: js.UndefOr[OverlayPointerEventTypes] = js.undefined
-  var rounded: js.UndefOr[Boolean] = js.undefined
-  var useNativeDriver: js.UndefOr[Boolean] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var animationDuration: js.UndefOr[Double] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var dialogAnimation: js.UndefOr[FadeAnimation | ScaleAnimation | SlideAnimation] = js.native
+  var dialogStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var dialogTitle: js.UndefOr[js.Any] = js.native
+  var footer: js.UndefOr[js.Any] = js.native
+  var hasOverlay: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHardwareBackPress: js.UndefOr[js.Function0[Boolean]] = js.native
+  var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTouchOutside: js.UndefOr[js.Function0[Unit]] = js.native
+  var overlayBackgroundColor: js.UndefOr[String] = js.native
+  var overlayOpacity: js.UndefOr[Double] = js.native
+  var overlayPointerEvents: js.UndefOr[OverlayPointerEventTypes] = js.native
+  var rounded: js.UndefOr[Boolean] = js.native
+  var useNativeDriver: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object DialogProps {
   @scala.inline
-  def apply(
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    dialogAnimation: FadeAnimation | ScaleAnimation | SlideAnimation = null,
-    dialogStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    dialogTitle: js.Any = null,
-    footer: js.Any = null,
-    hasOverlay: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    onDismiss: () => Unit = null,
-    onHardwareBackPress: () => Boolean = null,
-    onShow: () => Unit = null,
-    onTouchOutside: () => Unit = null,
-    overlayBackgroundColor: String = null,
-    overlayOpacity: js.UndefOr[Double] = js.undefined,
-    overlayPointerEvents: OverlayPointerEventTypes = null,
-    rounded: js.UndefOr[Boolean] = js.undefined,
-    useNativeDriver: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): DialogProps = {
+  def apply(): DialogProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (dialogAnimation != null) __obj.updateDynamic("dialogAnimation")(dialogAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(dialogStyle)) __obj.updateDynamic("dialogStyle")(dialogStyle.asInstanceOf[js.Any])
-    if (dialogTitle != null) __obj.updateDynamic("dialogTitle")(dialogTitle.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasOverlay)) __obj.updateDynamic("hasOverlay")(hasOverlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
-    if (onHardwareBackPress != null) __obj.updateDynamic("onHardwareBackPress")(js.Any.fromFunction0(onHardwareBackPress))
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
-    if (onTouchOutside != null) __obj.updateDynamic("onTouchOutside")(js.Any.fromFunction0(onTouchOutside))
-    if (overlayBackgroundColor != null) __obj.updateDynamic("overlayBackgroundColor")(overlayBackgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlayOpacity)) __obj.updateDynamic("overlayOpacity")(overlayOpacity.get.asInstanceOf[js.Any])
-    if (overlayPointerEvents != null) __obj.updateDynamic("overlayPointerEvents")(overlayPointerEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogProps]
   }
+  @scala.inline
+  implicit class DialogPropsOps[Self <: DialogProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    @scala.inline
+    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    @scala.inline
+    def setDialogAnimation(value: FadeAnimation | ScaleAnimation | SlideAnimation): Self = this.set("dialogAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialogAnimation: Self = this.set("dialogAnimation", js.undefined)
+    @scala.inline
+    def setDialogStyle(value: StyleProp[ViewStyle]): Self = this.set("dialogStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialogStyle: Self = this.set("dialogStyle", js.undefined)
+    @scala.inline
+    def setDialogStyleNull: Self = this.set("dialogStyle", null)
+    @scala.inline
+    def setDialogTitle(value: js.Any): Self = this.set("dialogTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialogTitle: Self = this.set("dialogTitle", js.undefined)
+    @scala.inline
+    def setFooter(value: js.Any): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setHasOverlay(value: Boolean): Self = this.set("hasOverlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasOverlay: Self = this.set("hasOverlay", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setOnDismiss(value: () => Unit): Self = this.set("onDismiss", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    @scala.inline
+    def setOnHardwareBackPress(value: () => Boolean): Self = this.set("onHardwareBackPress", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnHardwareBackPress: Self = this.set("onHardwareBackPress", js.undefined)
+    @scala.inline
+    def setOnShow(value: () => Unit): Self = this.set("onShow", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    @scala.inline
+    def setOnTouchOutside(value: () => Unit): Self = this.set("onTouchOutside", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnTouchOutside: Self = this.set("onTouchOutside", js.undefined)
+    @scala.inline
+    def setOverlayBackgroundColor(value: String): Self = this.set("overlayBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayBackgroundColor: Self = this.set("overlayBackgroundColor", js.undefined)
+    @scala.inline
+    def setOverlayOpacity(value: Double): Self = this.set("overlayOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayOpacity: Self = this.set("overlayOpacity", js.undefined)
+    @scala.inline
+    def setOverlayPointerEvents(value: OverlayPointerEventTypes): Self = this.set("overlayPointerEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayPointerEvents: Self = this.set("overlayPointerEvents", js.undefined)
+    @scala.inline
+    def setRounded(value: Boolean): Self = this.set("rounded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRounded: Self = this.set("rounded", js.undefined)
+    @scala.inline
+    def setUseNativeDriver(value: Boolean): Self = this.set("useNativeDriver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseNativeDriver: Self = this.set("useNativeDriver", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

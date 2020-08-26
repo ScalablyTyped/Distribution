@@ -7,47 +7,48 @@ import scala.scalajs.js.annotation._
 /**
   * Named sections for reader convenience
   */
+@js.native
 trait StructureMapGroup extends BackboneElement {
   /**
     * Contains extended information for property 'documentation'.
     */
-  var _documentation: js.UndefOr[Element] = js.undefined
+  var _documentation: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'extends'.
     */
-  var _extends: js.UndefOr[Element] = js.undefined
+  var _extends: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'typeMode'.
     */
-  var _typeMode: js.UndefOr[Element] = js.undefined
+  var _typeMode: js.UndefOr[Element] = js.native
   /**
     * Additional description/explaination for group
     */
-  var documentation: js.UndefOr[String] = js.undefined
+  var documentation: js.UndefOr[String] = js.native
   /**
     * Another group that this group adds rules to
     */
-  var `extends`: js.UndefOr[id] = js.undefined
+  var `extends`: js.UndefOr[id] = js.native
   /**
     * Named instance provided when invoking the map
     */
-  var input: js.Array[StructureMapGroupInput]
+  var input: js.Array[StructureMapGroupInput] = js.native
   /**
     * Human-readable label
     */
-  var name: id
+  var name: id = js.native
   /**
     * Transform Rule from source to target
     */
-  var rule: js.Array[StructureMapGroupRule]
+  var rule: js.Array[StructureMapGroupRule] = js.native
   /**
     * none | types | type-and-types
     */
-  var typeMode: code
+  var typeMode: code = js.native
 }
 
 object StructureMapGroup {
@@ -56,34 +57,59 @@ object StructureMapGroup {
     input: js.Array[StructureMapGroupInput],
     name: id,
     rule: js.Array[StructureMapGroupRule],
-    typeMode: code,
-    _documentation: Element = null,
-    _extends: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _name: Element = null,
-    _typeMode: Element = null,
-    documentation: String = null,
-    `extends`: id = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null
+    typeMode: code
   ): StructureMapGroup = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], typeMode = typeMode.asInstanceOf[js.Any])
-    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation.asInstanceOf[js.Any])
-    if (_extends != null) __obj.updateDynamic("_extends")(_extends.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_typeMode != null) __obj.updateDynamic("_typeMode")(_typeMode.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructureMapGroup]
   }
+  @scala.inline
+  implicit class StructureMapGroupOps[Self <: StructureMapGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputVarargs(value: StructureMapGroupInput*): Self = this.set("input", js.Array(value :_*))
+    @scala.inline
+    def setInput(value: js.Array[StructureMapGroupInput]): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: id): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuleVarargs(value: StructureMapGroupRule*): Self = this.set("rule", js.Array(value :_*))
+    @scala.inline
+    def setRule(value: js.Array[StructureMapGroupRule]): Self = this.set("rule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypeMode(value: code): Self = this.set("typeMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_documentation(value: Element): Self = this.set("_documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_documentation: Self = this.set("_documentation", js.undefined)
+    @scala.inline
+    def set_extends(value: Element): Self = this.set("_extends", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_extends: Self = this.set("_extends", js.undefined)
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_typeMode(value: Element): Self = this.set("_typeMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_typeMode: Self = this.set("_typeMode", js.undefined)
+    @scala.inline
+    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    @scala.inline
+    def setExtends(value: id): Self = this.set("extends", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtends: Self = this.set("extends", js.undefined)
+  }
+  
 }
 

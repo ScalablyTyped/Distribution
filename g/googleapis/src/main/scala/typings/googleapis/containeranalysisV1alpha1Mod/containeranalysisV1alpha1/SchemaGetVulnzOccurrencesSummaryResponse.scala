@@ -18,10 +18,28 @@ trait SchemaGetVulnzOccurrencesSummaryResponse extends js.Object {
 
 object SchemaGetVulnzOccurrencesSummaryResponse {
   @scala.inline
-  def apply(counts: js.Array[SchemaSeverityCount] = null): SchemaGetVulnzOccurrencesSummaryResponse = {
+  def apply(): SchemaGetVulnzOccurrencesSummaryResponse = {
     val __obj = js.Dynamic.literal()
-    if (counts != null) __obj.updateDynamic("counts")(counts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetVulnzOccurrencesSummaryResponse]
   }
+  @scala.inline
+  implicit class SchemaGetVulnzOccurrencesSummaryResponseOps[Self <: SchemaGetVulnzOccurrencesSummaryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountsVarargs(value: SchemaSeverityCount*): Self = this.set("counts", js.Array(value :_*))
+    @scala.inline
+    def setCounts(value: js.Array[SchemaSeverityCount]): Self = this.set("counts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCounts: Self = this.set("counts", js.undefined)
+  }
+  
 }
 

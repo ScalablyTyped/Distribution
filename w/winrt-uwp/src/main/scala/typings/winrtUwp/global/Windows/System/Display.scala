@@ -12,14 +12,7 @@ object Display extends js.Object {
   @js.native
   /** Creates an instance of the DisplayRequest class. */
   class DisplayRequest ()
-    extends typings.winrtUwp.Windows.System.Display.DisplayRequest {
-    /** Activates a display request. */
-    /* CompleteClass */
-    override def requestActive(): Unit = js.native
-    /** Deactivates a display request. */
-    /* CompleteClass */
-    override def requestRelease(): Unit = js.native
-  }
+    extends typings.winrtUwp.Windows.System.Display.DisplayRequest
   
 }
 

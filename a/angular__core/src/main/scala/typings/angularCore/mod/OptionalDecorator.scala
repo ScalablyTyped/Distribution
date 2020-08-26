@@ -15,8 +15,6 @@ trait OptionalDecorator extends Instantiable0[Optional] {
     * Can be used together with other parameter decorators
     * that modify how dependency injection operates.
     *
-    * Learn more in the ["Dependency Injection Guide"](guide/dependency-injection).
-    *
     * @usageNotes
     *
     * The following code allows the possibility of a null result:
@@ -24,6 +22,7 @@ trait OptionalDecorator extends Instantiable0[Optional] {
     * <code-example path="core/di/ts/metadata_spec.ts" region="Optional">
     * </code-example>
     *
+    * @see ["Dependency Injection Guide"](guide/dependency-injection).
     */
   def apply(): js.Any = js.native
 }

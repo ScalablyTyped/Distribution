@@ -11,6 +11,7 @@ trait ASPxClientSidePreviewModel extends js.Object {
   var tabPanel: ASPxClientDocumentPreviewTabPanel = js.native
   def Close(): Unit = js.native
   def ExportTo(): Unit = js.native
+  def ExportTo(format: js.UndefOr[scala.Nothing], inlineResult: Boolean): Unit = js.native
   def ExportTo(format: String): Unit = js.native
   def ExportTo(format: String, inlineResult: Boolean): Unit = js.native
   def GetCurrentPageIndex(): Double = js.native

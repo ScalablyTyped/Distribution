@@ -46,28 +46,64 @@ trait ElasticLoadBalancer extends js.Object {
 
 object ElasticLoadBalancer {
   @scala.inline
-  def apply(
-    AvailabilityZones: Strings = null,
-    DnsName: String = null,
-    Ec2InstanceIds: Strings = null,
-    ElasticLoadBalancerName: String = null,
-    LayerId: String = null,
-    Region: String = null,
-    StackId: String = null,
-    SubnetIds: Strings = null,
-    VpcId: String = null
-  ): ElasticLoadBalancer = {
+  def apply(): ElasticLoadBalancer = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
-    if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName.asInstanceOf[js.Any])
-    if (Ec2InstanceIds != null) __obj.updateDynamic("Ec2InstanceIds")(Ec2InstanceIds.asInstanceOf[js.Any])
-    if (ElasticLoadBalancerName != null) __obj.updateDynamic("ElasticLoadBalancerName")(ElasticLoadBalancerName.asInstanceOf[js.Any])
-    if (LayerId != null) __obj.updateDynamic("LayerId")(LayerId.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticLoadBalancer]
   }
+  @scala.inline
+  implicit class ElasticLoadBalancerOps[Self <: ElasticLoadBalancer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: String*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: Strings): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    @scala.inline
+    def setDnsName(value: String): Self = this.set("DnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsName: Self = this.set("DnsName", js.undefined)
+    @scala.inline
+    def setEc2InstanceIdsVarargs(value: String*): Self = this.set("Ec2InstanceIds", js.Array(value :_*))
+    @scala.inline
+    def setEc2InstanceIds(value: Strings): Self = this.set("Ec2InstanceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2InstanceIds: Self = this.set("Ec2InstanceIds", js.undefined)
+    @scala.inline
+    def setElasticLoadBalancerName(value: String): Self = this.set("ElasticLoadBalancerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticLoadBalancerName: Self = this.set("ElasticLoadBalancerName", js.undefined)
+    @scala.inline
+    def setLayerId(value: String): Self = this.set("LayerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerId: Self = this.set("LayerId", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: String*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: Strings): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

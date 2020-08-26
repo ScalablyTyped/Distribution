@@ -26,16 +26,34 @@ trait SchemaChannelStatus extends js.Object {
 
 object SchemaChannelStatus {
   @scala.inline
-  def apply(
-    isLinked: js.UndefOr[Boolean] = js.undefined,
-    longUploadsStatus: String = null,
-    privacyStatus: String = null
-  ): SchemaChannelStatus = {
+  def apply(): SchemaChannelStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isLinked)) __obj.updateDynamic("isLinked")(isLinked.get.asInstanceOf[js.Any])
-    if (longUploadsStatus != null) __obj.updateDynamic("longUploadsStatus")(longUploadsStatus.asInstanceOf[js.Any])
-    if (privacyStatus != null) __obj.updateDynamic("privacyStatus")(privacyStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChannelStatus]
   }
+  @scala.inline
+  implicit class SchemaChannelStatusOps[Self <: SchemaChannelStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsLinked(value: Boolean): Self = this.set("isLinked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsLinked: Self = this.set("isLinked", js.undefined)
+    @scala.inline
+    def setLongUploadsStatus(value: String): Self = this.set("longUploadsStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongUploadsStatus: Self = this.set("longUploadsStatus", js.undefined)
+    @scala.inline
+    def setPrivacyStatus(value: String): Self = this.set("privacyStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivacyStatus: Self = this.set("privacyStatus", js.undefined)
+  }
+  
 }
 

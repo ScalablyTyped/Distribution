@@ -6,44 +6,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HeaderProps
   extends AllHTMLAttributes[js.Any]
      with ClassAttributes[js.Any] {
-  var hideSpacer: js.UndefOr[Boolean] = js.undefined
-  var hideTop: js.UndefOr[Boolean] = js.undefined
+  var hideSpacer: js.UndefOr[Boolean] = js.native
+  var hideTop: js.UndefOr[Boolean] = js.native
    // string | JSX.Element
-  var scroll: js.UndefOr[Boolean] = js.undefined
-  var seamed: js.UndefOr[Boolean] = js.undefined
+  var scroll: js.UndefOr[Boolean] = js.native
+  var seamed: js.UndefOr[Boolean] = js.native
   @JSName("title")
-  var title_HeaderProps: js.UndefOr[js.Any] = js.undefined
-  var transparent: js.UndefOr[Boolean] = js.undefined
-  var waterfall: js.UndefOr[Boolean] = js.undefined
+  var title_HeaderProps: js.UndefOr[js.Any] = js.native
+  var transparent: js.UndefOr[Boolean] = js.native
+  var waterfall: js.UndefOr[Boolean] = js.native
 }
 
 object HeaderProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    hideSpacer: js.UndefOr[Boolean] = js.undefined,
-    hideTop: js.UndefOr[Boolean] = js.undefined,
-    scroll: js.UndefOr[Boolean] = js.undefined,
-    seamed: js.UndefOr[Boolean] = js.undefined,
-    title: js.Any = null,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    waterfall: js.UndefOr[Boolean] = js.undefined
-  ): HeaderProps = {
+  def apply(): HeaderProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(hideSpacer)) __obj.updateDynamic("hideSpacer")(hideSpacer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTop)) __obj.updateDynamic("hideTop")(hideTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(seamed)) __obj.updateDynamic("seamed")(seamed.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(waterfall)) __obj.updateDynamic("waterfall")(waterfall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderProps]
   }
+  @scala.inline
+  implicit class HeaderPropsOps[Self <: HeaderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHideSpacer(value: Boolean): Self = this.set("hideSpacer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideSpacer: Self = this.set("hideSpacer", js.undefined)
+    @scala.inline
+    def setHideTop(value: Boolean): Self = this.set("hideTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideTop: Self = this.set("hideTop", js.undefined)
+    @scala.inline
+    def setScroll(value: Boolean): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScroll: Self = this.set("scroll", js.undefined)
+    @scala.inline
+    def setSeamed(value: Boolean): Self = this.set("seamed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeamed: Self = this.set("seamed", js.undefined)
+    @scala.inline
+    def setTitle(value: js.Any): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    @scala.inline
+    def setWaterfall(value: Boolean): Self = this.set("waterfall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaterfall: Self = this.set("waterfall", js.undefined)
+  }
+  
 }
 

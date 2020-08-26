@@ -35,11 +35,11 @@ trait Circle
     * points shown at the center and around the circumference of the circle.
     */
   def setEditable(editable: Boolean): Unit = js.native
-  def setMap(): Unit = js.native
   /**
     * Renders the circle on the specified map. If map is set to null, the
     * circle will be removed.
     */
+  def setMap(): Unit = js.native
   def setMap(map: Map[Element]): Unit = js.native
   def setOptions(options: CircleOptions): Unit = js.native
   /** Sets the radius of this circle (in meters). */

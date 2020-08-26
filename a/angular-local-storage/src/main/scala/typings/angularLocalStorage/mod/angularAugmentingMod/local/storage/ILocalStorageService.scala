@@ -24,7 +24,29 @@ trait ILocalStorageService extends js.Object {
     * Returns: deregistration function for this listener.
     */
   def bind(scope: IScope, property: String): js.Function0[Unit] = js.native
+  def bind(
+    scope: IScope,
+    property: String,
+    value: js.UndefOr[scala.Nothing],
+    key: js.UndefOr[scala.Nothing],
+    storageType: StorageType
+  ): js.Function0[Unit] = js.native
+  def bind(scope: IScope, property: String, value: js.UndefOr[scala.Nothing], key: String): js.Function0[Unit] = js.native
+  def bind(
+    scope: IScope,
+    property: String,
+    value: js.UndefOr[scala.Nothing],
+    key: String,
+    storageType: StorageType
+  ): js.Function0[Unit] = js.native
   def bind(scope: IScope, property: String, value: js.Any): js.Function0[Unit] = js.native
+  def bind(
+    scope: IScope,
+    property: String,
+    value: js.Any,
+    key: js.UndefOr[scala.Nothing],
+    storageType: StorageType
+  ): js.Function0[Unit] = js.native
   def bind(scope: IScope, property: String, value: js.Any, key: String): js.Function0[Unit] = js.native
   def bind(scope: IScope, property: String, value: js.Any, key: String, storageType: StorageType): js.Function0[Unit] = js.native
   /**
@@ -37,6 +59,7 @@ trait ILocalStorageService extends js.Object {
     * Note: Optionally takes a regular expression string and removes matching.
     */
   def clearAll(): Boolean = js.native
+  def clearAll(regularExpression: js.UndefOr[scala.Nothing], storageType: StorageType): Boolean = js.native
   def clearAll(regularExpression: RegExp): Boolean = js.native
   def clearAll(regularExpression: RegExp, storageType: StorageType): Boolean = js.native
   /**

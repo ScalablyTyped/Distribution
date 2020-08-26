@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Distribution")
+@JSImport("grommet/es6", "Distribution")
 @js.native
 class Distribution protected ()
   extends Component[
@@ -27,7 +27,7 @@ class Distribution protected ()
   ) = this()
 }
 
-@JSImport("grommet", "Distribution")
+@JSImport("grommet/es6", "Distribution")
 @js.native
 object Distribution extends TopLevel[
       ComponentClass[

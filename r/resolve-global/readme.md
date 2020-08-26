@@ -12,7 +12,7 @@ Resolve the path of a globally installed module
 | Keywords           | resolve, global, package, module, globally, path, npm, yarn, packages, require |
 | # releases         | 2 |
 | # dependents       | 21 |
-| # downloads        | 10502777 |
+| # downloads        | 11356716 |
 | # stars            | 0 |
 
 ## Links

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): Server = js.native
+  def apply(httpServer: js.UndefOr[scala.Nothing], opts: ServerOptions): Server = js.native
   def apply(httpServer: typings.node.netMod.Server): Server = js.native
   def apply(httpServer: typings.node.netMod.Server, opts: ServerOptions): Server = js.native
 }

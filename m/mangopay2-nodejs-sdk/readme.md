@@ -10,9 +10,9 @@ Mangopay Node.js SDK
 | ------------------ | :-------------: |
 | Full name          | mangopay2-nodejs-sdk |
 | Keywords           | mangopay, nodejs, sdk, credit cards, api |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 150594 |
+| # downloads        | 149398 |
 | # stars            | 1 |
 
 ## Links

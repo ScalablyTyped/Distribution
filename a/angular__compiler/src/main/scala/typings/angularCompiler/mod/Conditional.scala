@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "Conditional")
 @js.native
 class Conditional protected ()
-  extends typings.angularCompiler.publicApiMod.Conditional {
+  extends typings.angularCompiler.compilerMod.Conditional {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

@@ -14,10 +14,26 @@ trait M2tsScte35Esam extends js.Object {
 
 object M2tsScte35Esam {
   @scala.inline
-  def apply(Scte35EsamPid: js.UndefOr[integerMin32Max8182] = js.undefined): M2tsScte35Esam = {
+  def apply(): M2tsScte35Esam = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Scte35EsamPid)) __obj.updateDynamic("Scte35EsamPid")(Scte35EsamPid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[M2tsScte35Esam]
   }
+  @scala.inline
+  implicit class M2tsScte35EsamOps[Self <: M2tsScte35Esam] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScte35EsamPid(value: integerMin32Max8182): Self = this.set("Scte35EsamPid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScte35EsamPid: Self = this.set("Scte35EsamPid", js.undefined)
+  }
+  
 }
 

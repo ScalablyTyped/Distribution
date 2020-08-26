@@ -11,7 +11,7 @@ Sorting with support for numbers, dates, unicode and more.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 112872 |
+| # downloads        | 114429 |
 | # stars            | 1 |
 
 ## Links

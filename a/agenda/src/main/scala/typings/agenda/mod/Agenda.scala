@@ -29,7 +29,26 @@ trait Agenda extends EventEmitter {
     * Connect to the specified MongoDB server and database.
     */
   def database(url: String): this.type = js.native
+  def database(
+    url: String,
+    collection: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    cb: ResultCallback[Collection[DefaultSchema]]
+  ): this.type = js.native
+  def database(url: String, collection: js.UndefOr[scala.Nothing], options: js.Any): this.type = js.native
+  def database(
+    url: String,
+    collection: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    cb: ResultCallback[Collection[DefaultSchema]]
+  ): this.type = js.native
   def database(url: String, collection: String): this.type = js.native
+  def database(
+    url: String,
+    collection: String,
+    options: js.UndefOr[scala.Nothing],
+    cb: ResultCallback[Collection[DefaultSchema]]
+  ): this.type = js.native
   def database(url: String, collection: String, options: js.Any): this.type = js.native
   def database(url: String, collection: String, options: js.Any, cb: ResultCallback[Collection[DefaultSchema]]): this.type = js.native
   /**
@@ -70,9 +89,11 @@ trait Agenda extends EventEmitter {
   def every[T /* <: JobAttributesData */](interval: String, names: String): js.Promise[Job[T]] = js.native
   def every[T /* <: JobAttributesData */](interval: String, names: String, data: T): js.Promise[Job[T]] = js.native
   def every[T /* <: JobAttributesData */](interval: String, names: String, data: T, options: js.Any): js.Promise[Job[T]] = js.native
+  def every[T /* <: JobAttributesData */](interval: String, names: String, data: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[Job[T]] = js.native
   def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String]): js.Promise[js.Array[Job[T]]] = js.native
   def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: T): js.Promise[js.Array[Job[T]]] = js.native
   def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: T, options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
+  def every[T /* <: JobAttributesData */](interval: String, names: js.Array[String], data: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
   /**
     * Runs job name at the given interval. Optionally, data and options can be passed in.
     * @param interval Can be a human-readable format String, a cron format String, or a Number.
@@ -83,9 +104,11 @@ trait Agenda extends EventEmitter {
   def every[T /* <: JobAttributesData */](interval: Double, names: String): js.Promise[Job[T]] = js.native
   def every[T /* <: JobAttributesData */](interval: Double, names: String, data: T): js.Promise[Job[T]] = js.native
   def every[T /* <: JobAttributesData */](interval: Double, names: String, data: T, options: js.Any): js.Promise[Job[T]] = js.native
+  def every[T /* <: JobAttributesData */](interval: Double, names: String, data: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[Job[T]] = js.native
   def every[T /* <: JobAttributesData */](interval: Double, names: js.Array[String]): js.Promise[js.Array[Job[T]]] = js.native
   def every[T /* <: JobAttributesData */](interval: Double, names: js.Array[String], data: T): js.Promise[js.Array[Job[T]]] = js.native
   def every[T /* <: JobAttributesData */](interval: Double, names: js.Array[String], data: T, options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
+  def every[T /* <: JobAttributesData */](interval: Double, names: js.Array[String], data: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[js.Array[Job[T]]] = js.native
   /**
     * Find all Jobs matching `query` and pass same back in cb().
     * @param query
@@ -107,6 +130,7 @@ trait Agenda extends EventEmitter {
     * Initialize agenda with an existing MongoDB connection.
     */
   def mongo(db: Db): this.type = js.native
+  def mongo(db: Db, collection: js.UndefOr[scala.Nothing], cb: ResultCallback[Collection[DefaultSchema]]): this.type = js.native
   def mongo(db: Db, collection: String): this.type = js.native
   def mongo(db: Db, collection: String, cb: ResultCallback[Collection[DefaultSchema]]): this.type = js.native
   /**

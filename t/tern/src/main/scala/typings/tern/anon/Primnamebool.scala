@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined tern.tern/lib/infer.Prim & {  name  :'bool'} */
+/* Inlined tern.tern/lib/infer.Prim & {  name :'bool'} */
 @js.native
 trait Primnamebool extends js.Object {
   /** The name of the type, if any. */

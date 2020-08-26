@@ -23,11 +23,30 @@ trait SchemaGoogleFirestoreAdminV1beta1Progress extends js.Object {
 
 object SchemaGoogleFirestoreAdminV1beta1Progress {
   @scala.inline
-  def apply(workCompleted: String = null, workEstimated: String = null): SchemaGoogleFirestoreAdminV1beta1Progress = {
+  def apply(): SchemaGoogleFirestoreAdminV1beta1Progress = {
     val __obj = js.Dynamic.literal()
-    if (workCompleted != null) __obj.updateDynamic("workCompleted")(workCompleted.asInstanceOf[js.Any])
-    if (workEstimated != null) __obj.updateDynamic("workEstimated")(workEstimated.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1beta1Progress]
   }
+  @scala.inline
+  implicit class SchemaGoogleFirestoreAdminV1beta1ProgressOps[Self <: SchemaGoogleFirestoreAdminV1beta1Progress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWorkCompleted(value: String): Self = this.set("workCompleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkCompleted: Self = this.set("workCompleted", js.undefined)
+    @scala.inline
+    def setWorkEstimated(value: String): Self = this.set("workEstimated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkEstimated: Self = this.set("workEstimated", js.undefined)
+  }
+  
 }
 

@@ -82,45 +82,96 @@ trait UpdateAppRequest extends js.Object {
 
 object UpdateAppRequest {
   @scala.inline
-  def apply(
-    appId: AppId,
-    accessToken: AccessToken = null,
-    autoBranchCreationConfig: AutoBranchCreationConfig = null,
-    autoBranchCreationPatterns: AutoBranchCreationPatterns = null,
-    basicAuthCredentials: BasicAuthCredentials = null,
-    buildSpec: BuildSpec = null,
-    customRules: CustomRules = null,
-    description: Description = null,
-    enableAutoBranchCreation: js.UndefOr[EnableAutoBranchCreation] = js.undefined,
-    enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined,
-    enableBranchAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined,
-    enableBranchAutoDeletion: js.UndefOr[EnableBranchAutoDeletion] = js.undefined,
-    environmentVariables: EnvironmentVariables = null,
-    iamServiceRoleArn: ServiceRoleArn = null,
-    name: Name = null,
-    oauthToken: OauthToken = null,
-    platform: Platform = null,
-    repository: Repository = null
-  ): UpdateAppRequest = {
+  def apply(appId: AppId): UpdateAppRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
-    if (autoBranchCreationConfig != null) __obj.updateDynamic("autoBranchCreationConfig")(autoBranchCreationConfig.asInstanceOf[js.Any])
-    if (autoBranchCreationPatterns != null) __obj.updateDynamic("autoBranchCreationPatterns")(autoBranchCreationPatterns.asInstanceOf[js.Any])
-    if (basicAuthCredentials != null) __obj.updateDynamic("basicAuthCredentials")(basicAuthCredentials.asInstanceOf[js.Any])
-    if (buildSpec != null) __obj.updateDynamic("buildSpec")(buildSpec.asInstanceOf[js.Any])
-    if (customRules != null) __obj.updateDynamic("customRules")(customRules.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutoBranchCreation)) __obj.updateDynamic("enableAutoBranchCreation")(enableAutoBranchCreation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBranchAutoBuild)) __obj.updateDynamic("enableBranchAutoBuild")(enableBranchAutoBuild.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableBranchAutoDeletion)) __obj.updateDynamic("enableBranchAutoDeletion")(enableBranchAutoDeletion.get.asInstanceOf[js.Any])
-    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
-    if (iamServiceRoleArn != null) __obj.updateDynamic("iamServiceRoleArn")(iamServiceRoleArn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (oauthToken != null) __obj.updateDynamic("oauthToken")(oauthToken.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAppRequest]
   }
+  @scala.inline
+  implicit class UpdateAppRequestOps[Self <: UpdateAppRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessToken(value: AccessToken): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    @scala.inline
+    def setAutoBranchCreationConfig(value: AutoBranchCreationConfig): Self = this.set("autoBranchCreationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBranchCreationConfig: Self = this.set("autoBranchCreationConfig", js.undefined)
+    @scala.inline
+    def setAutoBranchCreationPatternsVarargs(value: AutoBranchCreationPattern*): Self = this.set("autoBranchCreationPatterns", js.Array(value :_*))
+    @scala.inline
+    def setAutoBranchCreationPatterns(value: AutoBranchCreationPatterns): Self = this.set("autoBranchCreationPatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBranchCreationPatterns: Self = this.set("autoBranchCreationPatterns", js.undefined)
+    @scala.inline
+    def setBasicAuthCredentials(value: BasicAuthCredentials): Self = this.set("basicAuthCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasicAuthCredentials: Self = this.set("basicAuthCredentials", js.undefined)
+    @scala.inline
+    def setBuildSpec(value: BuildSpec): Self = this.set("buildSpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildSpec: Self = this.set("buildSpec", js.undefined)
+    @scala.inline
+    def setCustomRulesVarargs(value: CustomRule*): Self = this.set("customRules", js.Array(value :_*))
+    @scala.inline
+    def setCustomRules(value: CustomRules): Self = this.set("customRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomRules: Self = this.set("customRules", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnableAutoBranchCreation(value: EnableAutoBranchCreation): Self = this.set("enableAutoBranchCreation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAutoBranchCreation: Self = this.set("enableAutoBranchCreation", js.undefined)
+    @scala.inline
+    def setEnableBasicAuth(value: EnableBasicAuth): Self = this.set("enableBasicAuth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableBasicAuth: Self = this.set("enableBasicAuth", js.undefined)
+    @scala.inline
+    def setEnableBranchAutoBuild(value: EnableAutoBuild): Self = this.set("enableBranchAutoBuild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableBranchAutoBuild: Self = this.set("enableBranchAutoBuild", js.undefined)
+    @scala.inline
+    def setEnableBranchAutoDeletion(value: EnableBranchAutoDeletion): Self = this.set("enableBranchAutoDeletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableBranchAutoDeletion: Self = this.set("enableBranchAutoDeletion", js.undefined)
+    @scala.inline
+    def setEnvironmentVariables(value: EnvironmentVariables): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    @scala.inline
+    def setIamServiceRoleArn(value: ServiceRoleArn): Self = this.set("iamServiceRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamServiceRoleArn: Self = this.set("iamServiceRoleArn", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOauthToken(value: OauthToken): Self = this.set("oauthToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthToken: Self = this.set("oauthToken", js.undefined)
+    @scala.inline
+    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setRepository(value: Repository): Self = this.set("repository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepository: Self = this.set("repository", js.undefined)
+  }
+  
 }
 

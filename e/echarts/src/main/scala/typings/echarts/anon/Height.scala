@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Height extends js.Object {
   /**
     * Color filled in this element.
@@ -13,7 +14,7 @@ trait Height extends js.Object {
     * '#000'
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.fill
     */
-  var fill: js.UndefOr[String] = js.undefined
+  var fill: js.UndefOr[String] = js.native
   /**
     * The height of the shape of the element.
     *
@@ -42,7 +43,7 @@ trait Height extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.height
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     * Specify contant of the image, can be a URL, or
     * [dataURI](https://tools.ietf.org/html/rfc2397)
@@ -51,14 +52,14 @@ trait Height extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.image
     */
-  var image: js.UndefOr[String] = js.undefined
+  var image: js.UndefOr[String] = js.native
   /**
     * Width of stroke.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.lineWidth
     */
-  var lineWidth: js.UndefOr[Double] = js.undefined
+  var lineWidth: js.UndefOr[Double] = js.native
   /**
     * Width of shadow.
     *
@@ -67,7 +68,7 @@ trait Height extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.shadowBlur
     */
-  var shadowBlur: js.UndefOr[Double] = js.undefined
+  var shadowBlur: js.UndefOr[Double] = js.native
   /**
     * color of shadow.
     *
@@ -76,7 +77,7 @@ trait Height extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.shadowColor
     */
-  var shadowColor: js.UndefOr[Double] = js.undefined
+  var shadowColor: js.UndefOr[Double] = js.native
   /**
     * X offset of shadow.
     *
@@ -85,7 +86,7 @@ trait Height extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.shadowOffsetX
     */
-  var shadowOffsetX: js.UndefOr[Double] = js.undefined
+  var shadowOffsetX: js.UndefOr[Double] = js.native
   /**
     * Y offset of shadow.
     *
@@ -94,21 +95,21 @@ trait Height extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.shadowOffsetY
     */
-  var shadowOffsetY: js.UndefOr[Double] = js.undefined
+  var shadowOffsetY: js.UndefOr[Double] = js.native
   /**
     * Color of stroke.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.stroke
     */
-  var stroke: js.UndefOr[String] = js.undefined
+  var stroke: js.UndefOr[String] = js.native
   /**
     * The width of the shape of the element.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.width
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
   /**
     * The x value of the left-top corner of the element
     * in the coordinate system of its parent.
@@ -116,7 +117,7 @@ trait Height extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.x
     */
-  var x: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[Double] = js.native
   /**
     * The y value of the left-top corner of the element
     * in the coordinate system of its parent.
@@ -124,39 +125,75 @@ trait Height extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.style.y
     */
-  var y: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double] = js.native
 }
 
 object Height {
   @scala.inline
-  def apply(
-    fill: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    image: String = null,
-    lineWidth: js.UndefOr[Double] = js.undefined,
-    shadowBlur: js.UndefOr[Double] = js.undefined,
-    shadowColor: js.UndefOr[Double] = js.undefined,
-    shadowOffsetX: js.UndefOr[Double] = js.undefined,
-    shadowOffsetY: js.UndefOr[Double] = js.undefined,
-    stroke: String = null,
-    width: js.UndefOr[Double] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): Height = {
+  def apply(): Height = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowBlur)) __obj.updateDynamic("shadowBlur")(shadowBlur.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowColor)) __obj.updateDynamic("shadowColor")(shadowColor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowOffsetX)) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowOffsetY)) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.get.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Height]
   }
+  @scala.inline
+  implicit class HeightOps[Self <: Height] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    @scala.inline
+    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowBlur: Self = this.set("shadowBlur", js.undefined)
+    @scala.inline
+    def setShadowColor(value: Double): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
+    @scala.inline
+    def setShadowOffsetX(value: Double): Self = this.set("shadowOffsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowOffsetX: Self = this.set("shadowOffsetX", js.undefined)
+    @scala.inline
+    def setShadowOffsetY(value: Double): Self = this.set("shadowOffsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowOffsetY: Self = this.set("shadowOffsetY", js.undefined)
+    @scala.inline
+    def setStroke(value: String): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

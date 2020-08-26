@@ -5,7 +5,6 @@ import typings.reactNativeCalendars.reactNativeCalendarsStrings.`multi-dot`
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.`multi-period`
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.custom
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.period
-import typings.reactNativeCalendars.reactNativeCalendarsStrings.simple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +18,8 @@ object _CalendarMarkingProps {
     __obj.asInstanceOf[_CalendarMarkingProps]
   }
   @scala.inline
-  def DotMarkingProps(markedDates: StringDictionary[DotMarking], markingType: simple = null): _CalendarMarkingProps = {
+  def DotMarkingProps(markedDates: StringDictionary[DotMarking]): _CalendarMarkingProps = {
     val __obj = js.Dynamic.literal(markedDates = markedDates.asInstanceOf[js.Any])
-    if (markingType != null) __obj.updateDynamic("markingType")(markingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[_CalendarMarkingProps]
   }
   @scala.inline

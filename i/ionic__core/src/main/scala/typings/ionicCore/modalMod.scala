@@ -42,9 +42,10 @@ object modalMod extends js.Object {
     var delegate: js.UndefOr[FrameworkDelegate] = js.native
     @JSName("el")
     var el_Modal: HTMLIonModalElement = js.native
-    var gesture: js.UndefOr[js.Any] = js.native
+    var gesture: js.Any = js.native
     var gestureAnimationDismissing: js.Any = js.native
     var initSwipeToClose: js.Any = js.native
+    var lastFocus: js.UndefOr[HTMLElement] = js.native
     var onBackdropTap: js.Any = js.native
     var onDismiss: js.Any = js.native
     var onLifecycle: js.Any = js.native
@@ -61,7 +62,9 @@ object modalMod extends js.Object {
       * If `true`, the modal can be swiped to dismiss. Only applies in iOS mode.
       */
     var swipeToClose: Boolean = js.native
-    var usersElement: js.UndefOr[js.Any] = js.native
+    var usersElement: js.Any = js.native
+    @JSName("connectedCallback")
+    def connectedCallback_MModal(): Unit = js.native
     /**
       * Returns a promise that resolves when the modal did dismiss.
       */

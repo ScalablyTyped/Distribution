@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait R extends js.Object {
   /**
     * The height of the shape of the element.
@@ -11,7 +12,7 @@ trait R extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.height
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     * Specify border radius of the rectangular here.
     * Generally, `r` should be `[topLeftRadius, topRightRadius,
@@ -28,14 +29,14 @@ trait R extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.r
     */
-  var r: js.UndefOr[js.Array[_]] = js.undefined
+  var r: js.UndefOr[js.Array[_]] = js.native
   /**
     * The width of the shape of the element.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.width
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
   /**
     * The x value of the left-top corner of the element
     * in the coordinate system of its parent.
@@ -43,7 +44,7 @@ trait R extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.x
     */
-  var x: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[Double] = js.native
   /**
     * The y value of the left-top corner of the element
     * in the coordinate system of its parent.
@@ -51,25 +52,49 @@ trait R extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.y
     */
-  var y: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double] = js.native
 }
 
 object R {
   @scala.inline
-  def apply(
-    height: js.UndefOr[Double] = js.undefined,
-    r: js.Array[_] = null,
-    width: js.UndefOr[Double] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): R = {
+  def apply(): R = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[R]
   }
+  @scala.inline
+  implicit class ROps[Self <: R] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setRVarargs(value: js.Any*): Self = this.set("r", js.Array(value :_*))
+    @scala.inline
+    def setR(value: js.Array[_]): Self = this.set("r", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteR: Self = this.set("r", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

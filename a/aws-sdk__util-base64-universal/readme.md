@@ -12,7 +12,7 @@ A cross-platform Base64 <-> UInt8Array converter
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 217 |
+| # downloads        | 247 |
 | # stars            | 0 |
 
 ## Links

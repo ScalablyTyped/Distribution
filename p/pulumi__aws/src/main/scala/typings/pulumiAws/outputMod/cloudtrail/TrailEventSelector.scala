@@ -22,16 +22,36 @@ trait TrailEventSelector extends js.Object {
 
 object TrailEventSelector {
   @scala.inline
-  def apply(
-    dataResources: js.Array[TrailEventSelectorDataResource] = null,
-    includeManagementEvents: js.UndefOr[Boolean] = js.undefined,
-    readWriteType: String = null
-  ): TrailEventSelector = {
+  def apply(): TrailEventSelector = {
     val __obj = js.Dynamic.literal()
-    if (dataResources != null) __obj.updateDynamic("dataResources")(dataResources.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeManagementEvents)) __obj.updateDynamic("includeManagementEvents")(includeManagementEvents.get.asInstanceOf[js.Any])
-    if (readWriteType != null) __obj.updateDynamic("readWriteType")(readWriteType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrailEventSelector]
   }
+  @scala.inline
+  implicit class TrailEventSelectorOps[Self <: TrailEventSelector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataResourcesVarargs(value: TrailEventSelectorDataResource*): Self = this.set("dataResources", js.Array(value :_*))
+    @scala.inline
+    def setDataResources(value: js.Array[TrailEventSelectorDataResource]): Self = this.set("dataResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataResources: Self = this.set("dataResources", js.undefined)
+    @scala.inline
+    def setIncludeManagementEvents(value: Boolean): Self = this.set("includeManagementEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeManagementEvents: Self = this.set("includeManagementEvents", js.undefined)
+    @scala.inline
+    def setReadWriteType(value: String): Self = this.set("readWriteType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadWriteType: Self = this.set("readWriteType", js.undefined)
+  }
+  
 }
 

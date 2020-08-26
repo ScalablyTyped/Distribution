@@ -22,16 +22,36 @@ trait DailyVolume extends js.Object {
 
 object DailyVolume {
   @scala.inline
-  def apply(
-    DomainIspPlacements: DomainIspPlacements = null,
-    StartDate: Timestamp = null,
-    VolumeStatistics: VolumeStatistics = null
-  ): DailyVolume = {
+  def apply(): DailyVolume = {
     val __obj = js.Dynamic.literal()
-    if (DomainIspPlacements != null) __obj.updateDynamic("DomainIspPlacements")(DomainIspPlacements.asInstanceOf[js.Any])
-    if (StartDate != null) __obj.updateDynamic("StartDate")(StartDate.asInstanceOf[js.Any])
-    if (VolumeStatistics != null) __obj.updateDynamic("VolumeStatistics")(VolumeStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[DailyVolume]
   }
+  @scala.inline
+  implicit class DailyVolumeOps[Self <: DailyVolume] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = this.set("DomainIspPlacements", js.Array(value :_*))
+    @scala.inline
+    def setDomainIspPlacements(value: DomainIspPlacements): Self = this.set("DomainIspPlacements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainIspPlacements: Self = this.set("DomainIspPlacements", js.undefined)
+    @scala.inline
+    def setStartDate(value: Timestamp): Self = this.set("StartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("StartDate", js.undefined)
+    @scala.inline
+    def setVolumeStatistics(value: VolumeStatistics): Self = this.set("VolumeStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeStatistics: Self = this.set("VolumeStatistics", js.undefined)
+  }
+  
 }
 

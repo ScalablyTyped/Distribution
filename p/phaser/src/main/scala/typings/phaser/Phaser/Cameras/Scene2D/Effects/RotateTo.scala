@@ -97,7 +97,7 @@ trait RotateTo extends js.Object {
     radians: Double,
     shortestPath: js.UndefOr[Boolean],
     duration: js.UndefOr[integer],
-    ease: js.UndefOr[js.Function | String],
+    ease: js.UndefOr[String | js.Function],
     force: js.UndefOr[Boolean],
     callback: js.UndefOr[CameraRotateCallback],
     context: js.UndefOr[js.Any]
@@ -108,5 +108,74 @@ trait RotateTo extends js.Object {
     * @param delta The delta time, in ms, elapsed since the last frame.
     */
   def update(time: integer, delta: Double): Unit = js.native
+}
+
+object RotateTo {
+  @scala.inline
+  def apply(
+    camera: Camera,
+    clockwise: Boolean,
+    current: Double,
+    destination: Double,
+    destroy: () => Unit,
+    duration: integer,
+    ease: js.Function,
+    effectComplete: () => Unit,
+    isRunning: Boolean,
+    progress: Double,
+    reset: () => Unit,
+    shortestPath: Boolean,
+    source: Double,
+    start: (Double, js.UndefOr[Boolean], js.UndefOr[integer], js.UndefOr[String | js.Function], js.UndefOr[Boolean], js.UndefOr[CameraRotateCallback], js.UndefOr[js.Any]) => Camera,
+    update: (integer, Double) => Unit
+  ): RotateTo = {
+    val __obj = js.Dynamic.literal(camera = camera.asInstanceOf[js.Any], clockwise = clockwise.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), duration = duration.asInstanceOf[js.Any], ease = ease.asInstanceOf[js.Any], effectComplete = js.Any.fromFunction0(effectComplete), isRunning = isRunning.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), shortestPath = shortestPath.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = js.Any.fromFunction7(start), update = js.Any.fromFunction2(update))
+    __obj.asInstanceOf[RotateTo]
+  }
+  @scala.inline
+  implicit class RotateToOps[Self <: RotateTo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCamera(value: Camera): Self = this.set("camera", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClockwise(value: Boolean): Self = this.set("clockwise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrent(value: Double): Self = this.set("current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestination(value: Double): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDuration(value: integer): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEase(value: js.Function): Self = this.set("ease", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEffectComplete(value: () => Unit): Self = this.set("effectComplete", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsRunning(value: Boolean): Self = this.set("isRunning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    @scala.inline
+    def setShortestPath(value: Boolean): Self = this.set("shortestPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: Double): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStart(
+      value: (Double, js.UndefOr[Boolean], js.UndefOr[integer], js.UndefOr[String | js.Function], js.UndefOr[Boolean], js.UndefOr[CameraRotateCallback], js.UndefOr[js.Any]) => Camera
+    ): Self = this.set("start", js.Any.fromFunction7(value))
+    @scala.inline
+    def setUpdate(value: (integer, Double) => Unit): Self = this.set("update", js.Any.fromFunction2(value))
+  }
+  
 }
 

@@ -80,6 +80,7 @@ class ResourceTransferoperations protected () extends js.Object {
     */
   def cancel(): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(params: ParamsResourceTransferoperationsCancel): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(params: ParamsResourceTransferoperationsCancel, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def cancel(
@@ -159,6 +160,7 @@ class ResourceTransferoperations protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceTransferoperationsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceTransferoperationsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -240,6 +242,7 @@ class ResourceTransferoperations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaOperation] = js.native
   def get(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceTransferoperationsGet): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceTransferoperationsGet, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def get(
@@ -345,6 +348,7 @@ class ResourceTransferoperations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListOperationsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(params: ParamsResourceTransferoperationsList): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(
     params: ParamsResourceTransferoperationsList,
@@ -432,6 +436,7 @@ class ResourceTransferoperations protected () extends js.Object {
     */
   def pause(): GaxiosPromise[SchemaEmpty] = js.native
   def pause(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def pause(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def pause(params: ParamsResourceTransferoperationsPause): GaxiosPromise[SchemaEmpty] = js.native
   def pause(params: ParamsResourceTransferoperationsPause, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def pause(
@@ -516,6 +521,7 @@ class ResourceTransferoperations protected () extends js.Object {
     */
   def resume(): GaxiosPromise[SchemaEmpty] = js.native
   def resume(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def resume(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def resume(params: ParamsResourceTransferoperationsResume): GaxiosPromise[SchemaEmpty] = js.native
   def resume(params: ParamsResourceTransferoperationsResume, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def resume(

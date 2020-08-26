@@ -22,6 +22,7 @@ trait SafariExtension extends js.Object {
   def addContentStyleSheetFromURL(url: String, whitelist: js.Array[String], blacklist: js.Array[String]): String = js.native
   def createMenu(identifier: String): SafariExtensionMenu = js.native
   def createPopover(identifier: String, url: String): SafariExtensionPopover = js.native
+  def createPopover(identifier: String, url: String, width: js.UndefOr[scala.Nothing], height: Double): SafariExtensionPopover = js.native
   def createPopover(identifier: String, url: String, width: Double): SafariExtensionPopover = js.native
   def createPopover(identifier: String, url: String, width: Double, height: Double): SafariExtensionPopover = js.native
   def removeContentScript(url: String): Unit = js.native

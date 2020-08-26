@@ -18,11 +18,34 @@ trait BatchModifyClusterSnapshotsOutputMessage extends js.Object {
 
 object BatchModifyClusterSnapshotsOutputMessage {
   @scala.inline
-  def apply(Errors: BatchSnapshotOperationErrors = null, Resources: SnapshotIdentifierList = null): BatchModifyClusterSnapshotsOutputMessage = {
+  def apply(): BatchModifyClusterSnapshotsOutputMessage = {
     val __obj = js.Dynamic.literal()
-    if (Errors != null) __obj.updateDynamic("Errors")(Errors.asInstanceOf[js.Any])
-    if (Resources != null) __obj.updateDynamic("Resources")(Resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchModifyClusterSnapshotsOutputMessage]
   }
+  @scala.inline
+  implicit class BatchModifyClusterSnapshotsOutputMessageOps[Self <: BatchModifyClusterSnapshotsOutputMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorsVarargs(value: SnapshotErrorMessage*): Self = this.set("Errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: BatchSnapshotOperationErrors): Self = this.set("Errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("Errors", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: String*): Self = this.set("Resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: SnapshotIdentifierList): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("Resources", js.undefined)
+  }
+  
 }
 

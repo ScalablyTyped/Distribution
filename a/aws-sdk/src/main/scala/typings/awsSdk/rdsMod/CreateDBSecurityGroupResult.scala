@@ -11,10 +11,26 @@ trait CreateDBSecurityGroupResult extends js.Object {
 
 object CreateDBSecurityGroupResult {
   @scala.inline
-  def apply(DBSecurityGroup: DBSecurityGroup = null): CreateDBSecurityGroupResult = {
+  def apply(): CreateDBSecurityGroupResult = {
     val __obj = js.Dynamic.literal()
-    if (DBSecurityGroup != null) __obj.updateDynamic("DBSecurityGroup")(DBSecurityGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDBSecurityGroupResult]
   }
+  @scala.inline
+  implicit class CreateDBSecurityGroupResultOps[Self <: CreateDBSecurityGroupResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBSecurityGroup(value: DBSecurityGroup): Self = this.set("DBSecurityGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBSecurityGroup: Self = this.set("DBSecurityGroup", js.undefined)
+  }
+  
 }
 

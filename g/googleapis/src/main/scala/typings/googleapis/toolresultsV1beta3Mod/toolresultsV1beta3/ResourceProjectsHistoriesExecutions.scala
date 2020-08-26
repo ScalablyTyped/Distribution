@@ -36,6 +36,7 @@ class ResourceProjectsHistoriesExecutions protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaExecution] = js.native
   def create(callback: BodyResponseCallback[SchemaExecution]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExecution] = js.native
   def create(params: ParamsResourceProjectsHistoriesExecutionsCreate): GaxiosPromise[SchemaExecution] = js.native
   def create(
     params: ParamsResourceProjectsHistoriesExecutionsCreate,
@@ -71,6 +72,7 @@ class ResourceProjectsHistoriesExecutions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaExecution] = js.native
   def get(callback: BodyResponseCallback[SchemaExecution]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExecution] = js.native
   def get(params: ParamsResourceProjectsHistoriesExecutionsGet): GaxiosPromise[SchemaExecution] = js.native
   def get(
     params: ParamsResourceProjectsHistoriesExecutionsGet,
@@ -109,6 +111,7 @@ class ResourceProjectsHistoriesExecutions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListExecutionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListExecutionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListExecutionsResponse] = js.native
   def list(params: ParamsResourceProjectsHistoriesExecutionsList): GaxiosPromise[SchemaListExecutionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsHistoriesExecutionsList,
@@ -148,6 +151,7 @@ class ResourceProjectsHistoriesExecutions protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaExecution] = js.native
   def patch(callback: BodyResponseCallback[SchemaExecution]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExecution] = js.native
   def patch(params: ParamsResourceProjectsHistoriesExecutionsPatch): GaxiosPromise[SchemaExecution] = js.native
   def patch(
     params: ParamsResourceProjectsHistoriesExecutionsPatch,

@@ -95,58 +95,90 @@ trait ParamsResourceFilesPatch extends StandardParameters {
 
 object ParamsResourceFilesPatch {
   @scala.inline
-  def apply(
-    addParents: String = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    convert: js.UndefOr[Boolean] = js.undefined,
-    fields: String = null,
-    fileId: String = null,
-    key: String = null,
-    modifiedDateBehavior: String = null,
-    newRevision: js.UndefOr[Boolean] = js.undefined,
-    oauth_token: String = null,
-    ocr: js.UndefOr[Boolean] = js.undefined,
-    ocrLanguage: String = null,
-    pinned: js.UndefOr[Boolean] = js.undefined,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    removeParents: String = null,
-    requestBody: SchemaFile = null,
-    setModifiedDate: js.UndefOr[Boolean] = js.undefined,
-    supportsTeamDrives: js.UndefOr[Boolean] = js.undefined,
-    timedTextLanguage: String = null,
-    timedTextTrackName: String = null,
-    updateViewedDate: js.UndefOr[Boolean] = js.undefined,
-    useContentAsIndexableText: js.UndefOr[Boolean] = js.undefined,
-    userIp: String = null
-  ): ParamsResourceFilesPatch = {
+  def apply(): ParamsResourceFilesPatch = {
     val __obj = js.Dynamic.literal()
-    if (addParents != null) __obj.updateDynamic("addParents")(addParents.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert.get.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (modifiedDateBehavior != null) __obj.updateDynamic("modifiedDateBehavior")(modifiedDateBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(newRevision)) __obj.updateDynamic("newRevision")(newRevision.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(ocr)) __obj.updateDynamic("ocr")(ocr.get.asInstanceOf[js.Any])
-    if (ocrLanguage != null) __obj.updateDynamic("ocrLanguage")(ocrLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (removeParents != null) __obj.updateDynamic("removeParents")(removeParents.asInstanceOf[js.Any])
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(setModifiedDate)) __obj.updateDynamic("setModifiedDate")(setModifiedDate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.get.asInstanceOf[js.Any])
-    if (timedTextLanguage != null) __obj.updateDynamic("timedTextLanguage")(timedTextLanguage.asInstanceOf[js.Any])
-    if (timedTextTrackName != null) __obj.updateDynamic("timedTextTrackName")(timedTextTrackName.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateViewedDate)) __obj.updateDynamic("updateViewedDate")(updateViewedDate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useContentAsIndexableText)) __obj.updateDynamic("useContentAsIndexableText")(useContentAsIndexableText.get.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceFilesPatch]
   }
+  @scala.inline
+  implicit class ParamsResourceFilesPatchOps[Self <: ParamsResourceFilesPatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddParents(value: String): Self = this.set("addParents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddParents: Self = this.set("addParents", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setConvert(value: Boolean): Self = this.set("convert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvert: Self = this.set("convert", js.undefined)
+    @scala.inline
+    def setFileId(value: String): Self = this.set("fileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileId: Self = this.set("fileId", js.undefined)
+    @scala.inline
+    def setModifiedDateBehavior(value: String): Self = this.set("modifiedDateBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedDateBehavior: Self = this.set("modifiedDateBehavior", js.undefined)
+    @scala.inline
+    def setNewRevision(value: Boolean): Self = this.set("newRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewRevision: Self = this.set("newRevision", js.undefined)
+    @scala.inline
+    def setOcr(value: Boolean): Self = this.set("ocr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOcr: Self = this.set("ocr", js.undefined)
+    @scala.inline
+    def setOcrLanguage(value: String): Self = this.set("ocrLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOcrLanguage: Self = this.set("ocrLanguage", js.undefined)
+    @scala.inline
+    def setPinned(value: Boolean): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinned: Self = this.set("pinned", js.undefined)
+    @scala.inline
+    def setRemoveParents(value: String): Self = this.set("removeParents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveParents: Self = this.set("removeParents", js.undefined)
+    @scala.inline
+    def setRequestBody(value: SchemaFile): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    @scala.inline
+    def setSetModifiedDate(value: Boolean): Self = this.set("setModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetModifiedDate: Self = this.set("setModifiedDate", js.undefined)
+    @scala.inline
+    def setSupportsTeamDrives(value: Boolean): Self = this.set("supportsTeamDrives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsTeamDrives: Self = this.set("supportsTeamDrives", js.undefined)
+    @scala.inline
+    def setTimedTextLanguage(value: String): Self = this.set("timedTextLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimedTextLanguage: Self = this.set("timedTextLanguage", js.undefined)
+    @scala.inline
+    def setTimedTextTrackName(value: String): Self = this.set("timedTextTrackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimedTextTrackName: Self = this.set("timedTextTrackName", js.undefined)
+    @scala.inline
+    def setUpdateViewedDate(value: Boolean): Self = this.set("updateViewedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateViewedDate: Self = this.set("updateViewedDate", js.undefined)
+    @scala.inline
+    def setUseContentAsIndexableText(value: Boolean): Self = this.set("useContentAsIndexableText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseContentAsIndexableText: Self = this.set("useContentAsIndexableText", js.undefined)
+  }
+  
 }
 

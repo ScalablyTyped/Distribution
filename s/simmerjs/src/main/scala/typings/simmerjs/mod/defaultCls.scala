@@ -24,7 +24,11 @@ import scala.scalajs.js.annotation._
   */
 class defaultCls () extends Simmer {
   def this(scope: Scope) = this()
+  def this(scope: js.UndefOr[scala.Nothing], options: Options) = this()
   def this(scope: Scope, options: Options) = this()
+  def this(scope: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], query: QueryEngine) = this()
+  def this(scope: js.UndefOr[scala.Nothing], options: Options, query: QueryEngine) = this()
+  def this(scope: Scope, options: js.UndefOr[scala.Nothing], query: QueryEngine) = this()
   def this(scope: Scope, options: Options, query: QueryEngine) = this()
 }
 

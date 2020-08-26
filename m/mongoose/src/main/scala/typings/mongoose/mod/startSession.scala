@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object startSession extends js.Object {
   def apply(): js.Promise[typings.mongodb.mod.ClientSession] = js.native
+  def apply(
+    options: js.UndefOr[scala.Nothing],
+    cb: js.Function2[/* err */ js.Any, /* session */ typings.mongodb.mod.ClientSession, Unit]
+  ): js.Promise[typings.mongodb.mod.ClientSession] = js.native
   def apply(options: SessionOptions): js.Promise[typings.mongodb.mod.ClientSession] = js.native
   def apply(
     options: SessionOptions,

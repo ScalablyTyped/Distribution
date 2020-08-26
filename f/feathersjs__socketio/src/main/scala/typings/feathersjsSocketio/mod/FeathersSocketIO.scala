@@ -17,6 +17,7 @@ trait FeathersSocketIO extends js.Object {
   def apply(options: Double, callback: js.Function1[/* io */ Server, Unit]): js.Function0[Unit] = js.native
   def apply(options: ServerOptions): js.Function0[Unit] = js.native
   def apply(options: ServerOptions, callback: js.Function1[/* io */ Server, Unit]): js.Function0[Unit] = js.native
+  def apply(port: Double, options: js.UndefOr[scala.Nothing], callback: js.Function1[/* io */ Server, Unit]): js.Function0[Unit] = js.native
   def apply(port: Double, options: ServerOptions): js.Function0[Unit] = js.native
   def apply(port: Double, options: ServerOptions, callback: js.Function1[/* io */ Server, Unit]): js.Function0[Unit] = js.native
   def default(): js.Function0[Unit] = js.native
@@ -25,6 +26,7 @@ trait FeathersSocketIO extends js.Object {
   def default(options: Double, callback: js.Function1[/* io */ Server, Unit]): js.Function0[Unit] = js.native
   def default(options: ServerOptions): js.Function0[Unit] = js.native
   def default(options: ServerOptions, callback: js.Function1[/* io */ Server, Unit]): js.Function0[Unit] = js.native
+  def default(port: Double, options: js.UndefOr[scala.Nothing], callback: js.Function1[/* io */ Server, Unit]): js.Function0[Unit] = js.native
   def default(port: Double, options: ServerOptions): js.Function0[Unit] = js.native
   def default(port: Double, options: ServerOptions, callback: js.Function1[/* io */ Server, Unit]): js.Function0[Unit] = js.native
 }

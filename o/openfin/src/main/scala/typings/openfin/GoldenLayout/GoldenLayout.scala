@@ -1,7 +1,7 @@
 package typings.openfin.GoldenLayout
 
 import typings.jquery.JQuery
-import typings.openfin.anon.Top
+import typings.openfin.anon.HeightLeft
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -63,6 +63,7 @@ trait GoldenLayout extends EventEmitter {
     * @param parent A parent item
     */
   def createContentItem(): ContentItem = js.native
+  def createContentItem(itemConfiguration: js.UndefOr[scala.Nothing], parent: ContentItem): ContentItem = js.native
   def createContentItem(itemConfiguration: ItemConfigType): ContentItem = js.native
   def createContentItem(itemConfiguration: ItemConfigType, parent: ContentItem): ContentItem = js.native
   def createDragSource(element: JQuery[HTMLElement], itemConfiguration: ItemConfigType): js.Object = js.native
@@ -75,9 +76,15 @@ trait GoldenLayout extends EventEmitter {
     *         dragSource from the layout later.
     */
   def createDragSource(element: HTMLElement, itemConfiguration: ItemConfigType): js.Object = js.native
-  def createPopout(configOrContentItem: ContentItem, dimensions: Top): Unit = js.native
-  def createPopout(configOrContentItem: ContentItem, dimensions: Top, parentId: String): Unit = js.native
-  def createPopout(configOrContentItem: ContentItem, dimensions: Top, parentId: String, indexInParent: Double): Unit = js.native
+  def createPopout(configOrContentItem: ContentItem, dimensions: HeightLeft): Unit = js.native
+  def createPopout(
+    configOrContentItem: ContentItem,
+    dimensions: HeightLeft,
+    parentId: js.UndefOr[scala.Nothing],
+    indexInParent: Double
+  ): Unit = js.native
+  def createPopout(configOrContentItem: ContentItem, dimensions: HeightLeft, parentId: String): Unit = js.native
+  def createPopout(configOrContentItem: ContentItem, dimensions: HeightLeft, parentId: String, indexInParent: Double): Unit = js.native
   /**
     * Creates a new popout window with configOrContentItem as contents at the position specified in dimensions
     * @param configOrContentItem   The content item or config that will be created in the new window. If a item is
@@ -89,9 +96,20 @@ trait GoldenLayout extends EventEmitter {
     *                  when popIn is clicked
     * @param indexInParent The index at which the child window's contents will be appended to. Default: null
     */
-  def createPopout(configOrContentItem: ItemConfigType, dimensions: Top): Unit = js.native
-  def createPopout(configOrContentItem: ItemConfigType, dimensions: Top, parentId: String): Unit = js.native
-  def createPopout(configOrContentItem: ItemConfigType, dimensions: Top, parentId: String, indexInParent: Double): Unit = js.native
+  def createPopout(configOrContentItem: ItemConfigType, dimensions: HeightLeft): Unit = js.native
+  def createPopout(
+    configOrContentItem: ItemConfigType,
+    dimensions: HeightLeft,
+    parentId: js.UndefOr[scala.Nothing],
+    indexInParent: Double
+  ): Unit = js.native
+  def createPopout(configOrContentItem: ItemConfigType, dimensions: HeightLeft, parentId: String): Unit = js.native
+  def createPopout(
+    configOrContentItem: ItemConfigType,
+    dimensions: HeightLeft,
+    parentId: String,
+    indexInParent: Double
+  ): Unit = js.native
   /**
     * Destroys the layout. Recursively calls destroy on all components and content items, removes all event
     * listeners and finally removes itself from the DOM.
@@ -134,6 +152,7 @@ trait GoldenLayout extends EventEmitter {
     * @param height The outer height the layout should be resized to. Default: The container elements height
     */
   def updateSize(): Unit = js.native
+  def updateSize(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def updateSize(width: Double): Unit = js.native
   def updateSize(width: Double, height: Double): Unit = js.native
 }

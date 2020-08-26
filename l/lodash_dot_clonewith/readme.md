@@ -12,7 +12,7 @@ The lodash method `_.cloneWith` exported as a module.
 | Keywords           | lodash-modularized, clonewith |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 6160 |
+| # downloads        | 6734 |
 | # stars            | 0 |
 
 ## Links

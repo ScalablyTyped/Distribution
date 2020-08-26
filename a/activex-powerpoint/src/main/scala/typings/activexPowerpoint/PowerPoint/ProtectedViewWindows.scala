@@ -18,6 +18,7 @@ trait ProtectedViewWindows extends js.Object {
     * @param Office.MsoTriState [OpenAndRepair=0]
     */
   def Open(FileName: String): ProtectedViewWindow = js.native
+  def Open(FileName: String, ReadPassword: js.UndefOr[scala.Nothing], OpenAndRepair: MsoTriState): ProtectedViewWindow = js.native
   def Open(FileName: String, ReadPassword: String): ProtectedViewWindow = js.native
   def Open(FileName: String, ReadPassword: String, OpenAndRepair: MsoTriState): ProtectedViewWindow = js.native
 }

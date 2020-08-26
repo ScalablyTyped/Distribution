@@ -18,6 +18,7 @@ class TiledImage protected () extends js.Object {
   def destroy(): Unit = js.native
   def draw(): Unit = js.native
   def fitBounds(bounds: Rect): Unit = js.native
+  def fitBounds(bounds: Rect, anchor: js.UndefOr[scala.Nothing], immediately: Boolean): Unit = js.native
   def fitBounds(bounds: Rect, anchor: Placement): Unit = js.native
   def fitBounds(bounds: Rect, anchor: Placement, immediately: Boolean): Unit = js.native
   def getBounds(): Rect = js.native
@@ -41,12 +42,79 @@ class TiledImage protected () extends js.Object {
   def imageToViewportCoordinates(position: Point): Point = js.native
   def imageToViewportCoordinates(position: Point, current: Boolean): Point = js.native
   def imageToViewportRectangle(imageX: Double): Rect = js.native
+  def imageToViewportRectangle(
+    imageX: Double,
+    imageY: js.UndefOr[scala.Nothing],
+    pixelWidth: js.UndefOr[scala.Nothing],
+    pixelHeight: js.UndefOr[scala.Nothing],
+    current: Boolean
+  ): Rect = js.native
+  def imageToViewportRectangle(
+    imageX: Double,
+    imageY: js.UndefOr[scala.Nothing],
+    pixelWidth: js.UndefOr[scala.Nothing],
+    pixelHeight: Double
+  ): Rect = js.native
+  def imageToViewportRectangle(
+    imageX: Double,
+    imageY: js.UndefOr[scala.Nothing],
+    pixelWidth: js.UndefOr[scala.Nothing],
+    pixelHeight: Double,
+    current: Boolean
+  ): Rect = js.native
+  def imageToViewportRectangle(imageX: Double, imageY: js.UndefOr[scala.Nothing], pixelWidth: Double): Rect = js.native
+  def imageToViewportRectangle(
+    imageX: Double,
+    imageY: js.UndefOr[scala.Nothing],
+    pixelWidth: Double,
+    pixelHeight: js.UndefOr[scala.Nothing],
+    current: Boolean
+  ): Rect = js.native
+  def imageToViewportRectangle(imageX: Double, imageY: js.UndefOr[scala.Nothing], pixelWidth: Double, pixelHeight: Double): Rect = js.native
+  def imageToViewportRectangle(
+    imageX: Double,
+    imageY: js.UndefOr[scala.Nothing],
+    pixelWidth: Double,
+    pixelHeight: Double,
+    current: Boolean
+  ): Rect = js.native
   def imageToViewportRectangle(imageX: Double, imageY: Double): Rect = js.native
+  def imageToViewportRectangle(
+    imageX: Double,
+    imageY: Double,
+    pixelWidth: js.UndefOr[scala.Nothing],
+    pixelHeight: js.UndefOr[scala.Nothing],
+    current: Boolean
+  ): Rect = js.native
+  def imageToViewportRectangle(imageX: Double, imageY: Double, pixelWidth: js.UndefOr[scala.Nothing], pixelHeight: Double): Rect = js.native
+  def imageToViewportRectangle(
+    imageX: Double,
+    imageY: Double,
+    pixelWidth: js.UndefOr[scala.Nothing],
+    pixelHeight: Double,
+    current: Boolean
+  ): Rect = js.native
   def imageToViewportRectangle(imageX: Double, imageY: Double, pixelWidth: Double): Rect = js.native
+  def imageToViewportRectangle(
+    imageX: Double,
+    imageY: Double,
+    pixelWidth: Double,
+    pixelHeight: js.UndefOr[scala.Nothing],
+    current: Boolean
+  ): Rect = js.native
   def imageToViewportRectangle(imageX: Double, imageY: Double, pixelWidth: Double, pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Double, imageY: Double, pixelWidth: Double, pixelHeight: Double, current: Boolean): Rect = js.native
   def imageToViewportRectangle(position: Rect): Rect = js.native
+  def imageToViewportRectangle(
+    position: Rect,
+    pixelWidth: js.UndefOr[scala.Nothing],
+    pixelHeight: js.UndefOr[scala.Nothing],
+    current: Boolean
+  ): Rect = js.native
+  def imageToViewportRectangle(position: Rect, pixelWidth: js.UndefOr[scala.Nothing], pixelHeight: Double): Rect = js.native
+  def imageToViewportRectangle(position: Rect, pixelWidth: js.UndefOr[scala.Nothing], pixelHeight: Double, current: Boolean): Rect = js.native
   def imageToViewportRectangle(position: Rect, pixelWidth: Double): Rect = js.native
+  def imageToViewportRectangle(position: Rect, pixelWidth: Double, pixelHeight: js.UndefOr[scala.Nothing], current: Boolean): Rect = js.native
   def imageToViewportRectangle(position: Rect, pixelWidth: Double, pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(position: Rect, pixelWidth: Double, pixelHeight: Double, current: Boolean): Rect = js.native
   def imageToViewportZoom(imageZoom: Double): Double = js.native
@@ -79,7 +147,29 @@ class TiledImage protected () extends js.Object {
   def viewportToImageCoordinates(viewerX: Double, viewerY: Double, current: Boolean): Point = js.native
   def viewportToImageRectangle(position: Rect): Rect = js.native
   def viewportToImageRectangle(viewportX: Double, viewportY: Double): Rect = js.native
+  def viewportToImageRectangle(
+    viewportX: Double,
+    viewportY: Double,
+    pixelWidth: js.UndefOr[scala.Nothing],
+    pixelHeight: js.UndefOr[scala.Nothing],
+    current: Boolean
+  ): Rect = js.native
+  def viewportToImageRectangle(viewportX: Double, viewportY: Double, pixelWidth: js.UndefOr[scala.Nothing], pixelHeight: Double): Rect = js.native
+  def viewportToImageRectangle(
+    viewportX: Double,
+    viewportY: Double,
+    pixelWidth: js.UndefOr[scala.Nothing],
+    pixelHeight: Double,
+    current: Boolean
+  ): Rect = js.native
   def viewportToImageRectangle(viewportX: Double, viewportY: Double, pixelWidth: Double): Rect = js.native
+  def viewportToImageRectangle(
+    viewportX: Double,
+    viewportY: Double,
+    pixelWidth: Double,
+    pixelHeight: js.UndefOr[scala.Nothing],
+    current: Boolean
+  ): Rect = js.native
   def viewportToImageRectangle(viewportX: Double, viewportY: Double, pixelWidth: Double, pixelHeight: Double): Rect = js.native
   def viewportToImageRectangle(viewportX: Double, viewportY: Double, pixelWidth: Double, pixelHeight: Double, current: Boolean): Rect = js.native
   def viewportToImageZoom(viewportZoom: Double): Double = js.native

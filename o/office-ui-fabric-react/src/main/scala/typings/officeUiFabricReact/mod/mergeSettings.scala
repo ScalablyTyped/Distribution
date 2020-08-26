@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object mergeSettings extends js.Object {
   def apply(): ISettings = js.native
+  def apply(oldSettings: js.UndefOr[scala.Nothing], newSettings: ISettings): ISettings = js.native
+  def apply(oldSettings: js.UndefOr[scala.Nothing], newSettings: ISettingsFunction): ISettings = js.native
   def apply(oldSettings: ISettings): ISettings = js.native
   def apply(oldSettings: ISettings, newSettings: ISettings): ISettings = js.native
   def apply(oldSettings: ISettings, newSettings: ISettingsFunction): ISettings = js.native

@@ -87,6 +87,7 @@ class ResourceControllerDebuggees protected () extends js.Object {
     */
   def register(): GaxiosPromise[SchemaRegisterDebuggeeResponse] = js.native
   def register(callback: BodyResponseCallback[SchemaRegisterDebuggeeResponse]): Unit = js.native
+  def register(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegisterDebuggeeResponse] = js.native
   def register(params: ParamsResourceControllerDebuggeesRegister): GaxiosPromise[SchemaRegisterDebuggeeResponse] = js.native
   def register(
     params: ParamsResourceControllerDebuggeesRegister,

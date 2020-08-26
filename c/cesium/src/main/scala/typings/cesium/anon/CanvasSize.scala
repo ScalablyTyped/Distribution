@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CanvasSize extends js.Object {
-  var canvasSize: js.UndefOr[Double] = js.undefined
-  var cells: js.UndefOr[Double] = js.undefined
-  var color: js.UndefOr[typings.cesium.mod.Color] = js.undefined
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
-  var glowColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
-  var glowWidth: js.UndefOr[Double] = js.undefined
-  var tileHeight: js.UndefOr[Double] = js.undefined
-  var tileWidth: js.UndefOr[Double] = js.undefined
-  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.undefined
+  var canvasSize: js.UndefOr[Double] = js.native
+  var cells: js.UndefOr[Double] = js.native
+  var color: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var glowColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var glowWidth: js.UndefOr[Double] = js.native
+  var tileHeight: js.UndefOr[Double] = js.native
+  var tileWidth: js.UndefOr[Double] = js.native
+  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.native
 }
 
 object CanvasSize {
   @scala.inline
-  def apply(
-    canvasSize: js.UndefOr[Double] = js.undefined,
-    cells: js.UndefOr[Double] = js.undefined,
-    color: typings.cesium.mod.Color = null,
-    ellipsoid: typings.cesium.mod.Ellipsoid = null,
-    glowColor: typings.cesium.mod.Color = null,
-    glowWidth: js.UndefOr[Double] = js.undefined,
-    tileHeight: js.UndefOr[Double] = js.undefined,
-    tileWidth: js.UndefOr[Double] = js.undefined,
-    tilingScheme: typings.cesium.mod.TilingScheme = null
-  ): CanvasSize = {
+  def apply(): CanvasSize = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canvasSize)) __obj.updateDynamic("canvasSize")(canvasSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cells)) __obj.updateDynamic("cells")(cells.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
-    if (glowColor != null) __obj.updateDynamic("glowColor")(glowColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(glowWidth)) __obj.updateDynamic("glowWidth")(glowWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tileHeight)) __obj.updateDynamic("tileHeight")(tileHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tileWidth)) __obj.updateDynamic("tileWidth")(tileWidth.get.asInstanceOf[js.Any])
-    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasSize]
   }
+  @scala.inline
+  implicit class CanvasSizeOps[Self <: CanvasSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanvasSize(value: Double): Self = this.set("canvasSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanvasSize: Self = this.set("canvasSize", js.undefined)
+    @scala.inline
+    def setCells(value: Double): Self = this.set("cells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCells: Self = this.set("cells", js.undefined)
+    @scala.inline
+    def setColor(value: typings.cesium.mod.Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    @scala.inline
+    def setGlowColor(value: typings.cesium.mod.Color): Self = this.set("glowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlowColor: Self = this.set("glowColor", js.undefined)
+    @scala.inline
+    def setGlowWidth(value: Double): Self = this.set("glowWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlowWidth: Self = this.set("glowWidth", js.undefined)
+    @scala.inline
+    def setTileHeight(value: Double): Self = this.set("tileHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileHeight: Self = this.set("tileHeight", js.undefined)
+    @scala.inline
+    def setTileWidth(value: Double): Self = this.set("tileWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileWidth: Self = this.set("tileWidth", js.undefined)
+    @scala.inline
+    def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = this.set("tilingScheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTilingScheme: Self = this.set("tilingScheme", js.undefined)
+  }
+  
 }
 

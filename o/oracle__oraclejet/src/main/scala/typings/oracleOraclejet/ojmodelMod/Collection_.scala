@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Collection_ () extends js.Object {
   def this(models: js.Array[Model]) = this()
+  def this(models: js.UndefOr[scala.Nothing], options: js.Object) = this()
   def this(models: js.Array[Model], options: js.Object) = this()
   var changes: js.Array[Double] = js.native
   var comparator: Null | String | (js.Function2[/* param0 */ Model, /* param1 */ js.UndefOr[Model], Double]) = js.native
@@ -57,6 +58,7 @@ class Collection_ () extends js.Object {
   def contains(model: js.Object): Boolean | js.Promise[Boolean] = js.native
   def contains(model: js.Object, options: js.Object): Boolean | js.Promise[Boolean] = js.native
   def create(): Model | Boolean | js.Promise[Model] = js.native
+  def create(attributes: js.UndefOr[scala.Nothing], options: At): Model | Boolean | js.Promise[Model] = js.native
   def create(attributes: js.Object): Model | Boolean | js.Promise[Model] = js.native
   def create(attributes: js.Object, options: At): Model | Boolean | js.Promise[Model] = js.native
   def difference(var_args: js.Array[Model]*): js.Array[Model] = js.native
@@ -71,6 +73,7 @@ class Collection_ () extends js.Object {
   def findWhere(attrs: js.Object): Model | js.Promise[Model] = js.native
   def findWhere(attrs: js.Object, options: DictpropNameDeferred): Model | js.Promise[Model] = js.native
   def first(): js.Array[Model] | Null | js.Promise[_] = js.native
+  def first(n: js.UndefOr[scala.Nothing], options: js.Object): js.Array[Model] | Null | js.Promise[_] = js.native
   def first(n: Double): js.Array[Model] | Null | js.Promise[_] = js.native
   def first(n: Double, options: js.Object): js.Array[Model] | Null | js.Promise[_] = js.native
   def get(id: String): Model | Null | js.Promise[Model] = js.native
@@ -95,6 +98,7 @@ class Collection_ () extends js.Object {
   def isEmpty(): Boolean = js.native
   def isRangeLocal(start: Double, count: Double): Boolean = js.native
   def last(): js.Promise[Model] | js.Array[Model] | Null = js.native
+  def last(n: js.UndefOr[scala.Nothing], options: js.Object): js.Promise[Model] | js.Array[Model] | Null = js.native
   def last(n: Double): js.Promise[Model] | js.Array[Model] | Null = js.native
   def last(n: Double, options: js.Object): js.Promise[Model] | js.Array[Model] | Null = js.native
   def lastIndexOf(model: Model): Double = js.native
@@ -119,7 +123,18 @@ class Collection_ () extends js.Object {
   def next(n: Double): js.Object | Null = js.native
   def next(n: Double, options: Error): js.Object | Null = js.native
   def off(): js.UndefOr[scala.Nothing] = js.native
+  def off(eventType: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Object): js.UndefOr[scala.Nothing] = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* eventType */ String, /* data */ js.Object, Unit]
+  ): js.UndefOr[scala.Nothing] = js.native
+  def off(
+    eventType: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* eventType */ String, /* data */ js.Object, Unit],
+    context: js.Object
+  ): js.UndefOr[scala.Nothing] = js.native
   def off(eventType: String): js.UndefOr[scala.Nothing] = js.native
+  def off(eventType: String, callback: js.UndefOr[scala.Nothing], context: js.Object): js.UndefOr[scala.Nothing] = js.native
   def off(eventType: String, callback: js.Function2[/* eventType */ String, /* data */ js.Object, Unit]): js.UndefOr[scala.Nothing] = js.native
   def off(
     eventType: String,
@@ -127,6 +142,7 @@ class Collection_ () extends js.Object {
     context: js.Object
   ): js.UndefOr[scala.Nothing] = js.native
   def off(eventType: js.Object): js.UndefOr[scala.Nothing] = js.native
+  def off(eventType: js.Object, callback: js.UndefOr[scala.Nothing], context: js.Object): js.UndefOr[scala.Nothing] = js.native
   def off(eventType: js.Object, callback: js.Function2[/* eventType */ String, /* data */ js.Object, Unit]): js.UndefOr[scala.Nothing] = js.native
   def off(
     eventType: js.Object,
@@ -168,9 +184,11 @@ class Collection_ () extends js.Object {
   def remove(m: Model): js.Array[Model] | js.Object = js.native
   def remove(m: Model, options: js.Object): js.Array[Model] | js.Object = js.native
   def reset(): Model | js.Array[Model] = js.native
+  def reset(data: js.UndefOr[scala.Nothing], options: DictpropNameSilent): Model | js.Array[Model] = js.native
   def reset(data: js.Object): Model | js.Array[Model] = js.native
   def reset(data: js.Object, options: DictpropNameSilent): Model | js.Array[Model] = js.native
   def rest(): js.Array[js.Object] | js.Promise[_] = js.native
+  def rest(n: js.UndefOr[scala.Nothing], options: js.Object): js.Array[js.Object] | js.Promise[_] = js.native
   def rest(n: Double): js.Array[js.Object] | js.Promise[_] = js.native
   def rest(n: Double, options: js.Object): js.Array[js.Object] | js.Promise[_] = js.native
   def set(models: js.Object): js.Promise[_] | Null = js.native
@@ -182,6 +200,7 @@ class Collection_ () extends js.Object {
   def shift(options: js.Object): Model | js.Promise[Model] | Null = js.native
   def size(): Double = js.native
   def slice(start: Double): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
+  def slice(start: Double, end: js.UndefOr[scala.Nothing], options: js.Object): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def slice(start: Double, end: Double): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def slice(start: Double, end: Double, options: js.Object): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def sort(): js.Promise[SetRangeLocalPromise] | Null = js.native
@@ -193,7 +212,23 @@ class Collection_ () extends js.Object {
   def sortedIndex(comparator: String): Double = js.native
   def sortedIndex(comparator: js.Function2[/* param0 */ Model, /* param1 */ js.UndefOr[Model], js.Object]): Double = js.native
   def stopListening(): js.UndefOr[scala.Nothing] = js.native
+  def stopListening(
+    otherObj: js.UndefOr[scala.Nothing],
+    eventType: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* eventType */ String, /* data */ js.Object, Unit]
+  ): js.UndefOr[scala.Nothing] = js.native
+  def stopListening(otherObj: js.UndefOr[scala.Nothing], eventType: String): js.UndefOr[scala.Nothing] = js.native
+  def stopListening(
+    otherObj: js.UndefOr[scala.Nothing],
+    eventType: String,
+    callback: js.Function2[/* eventType */ String, /* data */ js.Object, Unit]
+  ): js.UndefOr[scala.Nothing] = js.native
   def stopListening(otherObj: js.Object): js.UndefOr[scala.Nothing] = js.native
+  def stopListening(
+    otherObj: js.Object,
+    eventType: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* eventType */ String, /* data */ js.Object, Unit]
+  ): js.UndefOr[scala.Nothing] = js.native
   def stopListening(otherObj: js.Object, eventType: String): js.UndefOr[scala.Nothing] = js.native
   def stopListening(
     otherObj: js.Object,

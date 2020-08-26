@@ -14,10 +14,26 @@ trait JourneyPushMessage extends js.Object {
 
 object JourneyPushMessage {
   @scala.inline
-  def apply(TimeToLive: string = null): JourneyPushMessage = {
+  def apply(): JourneyPushMessage = {
     val __obj = js.Dynamic.literal()
-    if (TimeToLive != null) __obj.updateDynamic("TimeToLive")(TimeToLive.asInstanceOf[js.Any])
     __obj.asInstanceOf[JourneyPushMessage]
   }
+  @scala.inline
+  implicit class JourneyPushMessageOps[Self <: JourneyPushMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimeToLive(value: string): Self = this.set("TimeToLive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeToLive: Self = this.set("TimeToLive", js.undefined)
+  }
+  
 }
 

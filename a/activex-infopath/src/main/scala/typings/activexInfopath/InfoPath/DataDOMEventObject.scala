@@ -30,7 +30,38 @@ trait DataDOMEventObject extends js.Object {
     varNode: js.Any,
     bstrShortErrorMessage: String,
     fSiteIndependent: Boolean,
+    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
+    lErrorCode: js.UndefOr[scala.Nothing],
+    bstrType: String
+  ): ErrorObject = js.native
+  def ReportError(
+    varNode: js.Any,
+    bstrShortErrorMessage: String,
+    fSiteIndependent: Boolean,
+    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
+    lErrorCode: Double
+  ): ErrorObject = js.native
+  def ReportError(
+    varNode: js.Any,
+    bstrShortErrorMessage: String,
+    fSiteIndependent: Boolean,
+    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
+    lErrorCode: Double,
+    bstrType: String
+  ): ErrorObject = js.native
+  def ReportError(
+    varNode: js.Any,
+    bstrShortErrorMessage: String,
+    fSiteIndependent: Boolean,
     bstrDetailedErrorMessage: String
+  ): ErrorObject = js.native
+  def ReportError(
+    varNode: js.Any,
+    bstrShortErrorMessage: String,
+    fSiteIndependent: Boolean,
+    bstrDetailedErrorMessage: String,
+    lErrorCode: js.UndefOr[scala.Nothing],
+    bstrType: String
   ): ErrorObject = js.native
   def ReportError(
     varNode: js.Any,

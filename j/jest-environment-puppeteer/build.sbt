@@ -1,23 +1,24 @@
 organization := "org.scalablytyped"
 name := "jest-environment-puppeteer"
-version := "4.3-dt-20200624Z-487b7f"
-scalaVersion := "2.13.2"
+version := "4.3-dt-20200624Z-4197d7"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "callsites" % "3.1.0-195967",
-  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20200609Z-62a062",
-  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-eab3f9",
-  "org.scalablytyped" %%% "jest-mock" % "24.9.0-83874a",
-  "org.scalablytyped" %%% "jest__console" % "24.9.0-da5e37",
-  "org.scalablytyped" %%% "jest__fake-timers" % "24.9.0-0823cd",
-  "org.scalablytyped" %%% "jest__source-map" % "24.9.0-a7a4e8",
-  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-ff89d3",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-aea877",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "puppeteer" % "3.0-dt-20200627Z-71ac99",
-  "org.scalablytyped" %%% "stack-utils" % "1.0-dt-20200515Z-9be1be",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "callsites" % "3.1.0-feea14",
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20200609Z-73ff2c",
+  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-3ad062",
+  "org.scalablytyped" %%% "jest-mock" % "24.9.0-039104",
+  "org.scalablytyped" %%% "jest__console" % "24.9.0-945758",
+  "org.scalablytyped" %%% "jest__environment" % "26.2.0-b36189",
+  "org.scalablytyped" %%% "jest__fake-timers" % "24.9.0-c63ef4",
+  "org.scalablytyped" %%% "jest__source-map" % "24.9.0-54be48",
+  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-f4ebe1",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-dd389b",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "puppeteer" % "3.0-dt-20200627Z-8d3a56",
+  "org.scalablytyped" %%% "stack-utils" % "1.0-dt-20200515Z-f013d4",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

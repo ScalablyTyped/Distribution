@@ -9,42 +9,77 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@urql/core.@urql/core.OperationContext> */
+@js.native
 trait PartialOperationContext extends js.Object {
-  var additionalTypenames: js.UndefOr[js.Array[String]] = js.undefined
-  var fetch: js.UndefOr[FnCall] = js.undefined
-  var fetchOptions: js.UndefOr[RequestInit | js.Function0[RequestInit]] = js.undefined
-  var meta: js.UndefOr[OperationDebugMeta] = js.undefined
-  var pollInterval: js.UndefOr[Double] = js.undefined
-  var preferGetMethod: js.UndefOr[Boolean] = js.undefined
-  var requestPolicy: js.UndefOr[RequestPolicy] = js.undefined
-  var suspense: js.UndefOr[Boolean] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  var additionalTypenames: js.UndefOr[js.Array[String]] = js.native
+  var fetch: js.UndefOr[FnCall] = js.native
+  var fetchOptions: js.UndefOr[RequestInit | js.Function0[RequestInit]] = js.native
+  var meta: js.UndefOr[OperationDebugMeta] = js.native
+  var pollInterval: js.UndefOr[Double] = js.native
+  var preferGetMethod: js.UndefOr[Boolean] = js.native
+  var requestPolicy: js.UndefOr[RequestPolicy] = js.native
+  var suspense: js.UndefOr[Boolean] = js.native
+  var url: js.UndefOr[String] = js.native
 }
 
 object PartialOperationContext {
   @scala.inline
-  def apply(
-    additionalTypenames: js.Array[String] = null,
-    fetch: FnCall = null,
-    fetchOptions: RequestInit | js.Function0[RequestInit] = null,
-    meta: OperationDebugMeta = null,
-    pollInterval: js.UndefOr[Double] = js.undefined,
-    preferGetMethod: js.UndefOr[Boolean] = js.undefined,
-    requestPolicy: RequestPolicy = null,
-    suspense: js.UndefOr[Boolean] = js.undefined,
-    url: String = null
-  ): PartialOperationContext = {
+  def apply(): PartialOperationContext = {
     val __obj = js.Dynamic.literal()
-    if (additionalTypenames != null) __obj.updateDynamic("additionalTypenames")(additionalTypenames.asInstanceOf[js.Any])
-    if (fetch != null) __obj.updateDynamic("fetch")(fetch.asInstanceOf[js.Any])
-    if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (!js.isUndefined(pollInterval)) __obj.updateDynamic("pollInterval")(pollInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferGetMethod)) __obj.updateDynamic("preferGetMethod")(preferGetMethod.get.asInstanceOf[js.Any])
-    if (requestPolicy != null) __obj.updateDynamic("requestPolicy")(requestPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(suspense)) __obj.updateDynamic("suspense")(suspense.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialOperationContext]
   }
+  @scala.inline
+  implicit class PartialOperationContextOps[Self <: PartialOperationContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalTypenamesVarargs(value: String*): Self = this.set("additionalTypenames", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalTypenames(value: js.Array[String]): Self = this.set("additionalTypenames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalTypenames: Self = this.set("additionalTypenames", js.undefined)
+    @scala.inline
+    def setFetch(value: FnCall): Self = this.set("fetch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetch: Self = this.set("fetch", js.undefined)
+    @scala.inline
+    def setFetchOptionsFunction0(value: () => RequestInit): Self = this.set("fetchOptions", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFetchOptions(value: RequestInit | js.Function0[RequestInit]): Self = this.set("fetchOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchOptions: Self = this.set("fetchOptions", js.undefined)
+    @scala.inline
+    def setMeta(value: OperationDebugMeta): Self = this.set("meta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeta: Self = this.set("meta", js.undefined)
+    @scala.inline
+    def setPollInterval(value: Double): Self = this.set("pollInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePollInterval: Self = this.set("pollInterval", js.undefined)
+    @scala.inline
+    def setPreferGetMethod(value: Boolean): Self = this.set("preferGetMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferGetMethod: Self = this.set("preferGetMethod", js.undefined)
+    @scala.inline
+    def setRequestPolicy(value: RequestPolicy): Self = this.set("requestPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPolicy: Self = this.set("requestPolicy", js.undefined)
+    @scala.inline
+    def setSuspense(value: Boolean): Self = this.set("suspense", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspense: Self = this.set("suspense", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

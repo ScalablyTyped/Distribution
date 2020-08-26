@@ -7,9 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLOptions extends js.Object {
   def addOption(id: String, value: js.Any): Unit = js.native
+  def addOption(id: String, value: js.Any, show: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def addOption(id: String, value: js.Any, show: Boolean): Unit = js.native
   def addOption(id: String, value: js.Any, show: Boolean, index: Double): Unit = js.native
   def addOption(id: Double, value: js.Any): Unit = js.native
+  def addOption(id: Double, value: js.Any, show: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def addOption(id: Double, value: js.Any, show: Boolean): Unit = js.native
   def addOption(id: Double, value: js.Any, show: Boolean, index: Double): Unit = js.native
   def disableOption(id: String): Unit = js.native

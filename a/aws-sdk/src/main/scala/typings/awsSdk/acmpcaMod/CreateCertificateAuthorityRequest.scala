@@ -32,16 +32,41 @@ object CreateCertificateAuthorityRequest {
   @scala.inline
   def apply(
     CertificateAuthorityConfiguration: CertificateAuthorityConfiguration,
-    CertificateAuthorityType: CertificateAuthorityType,
-    IdempotencyToken: IdempotencyToken = null,
-    RevocationConfiguration: RevocationConfiguration = null,
-    Tags: TagList = null
+    CertificateAuthorityType: CertificateAuthorityType
   ): CreateCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityConfiguration = CertificateAuthorityConfiguration.asInstanceOf[js.Any], CertificateAuthorityType = CertificateAuthorityType.asInstanceOf[js.Any])
-    if (IdempotencyToken != null) __obj.updateDynamic("IdempotencyToken")(IdempotencyToken.asInstanceOf[js.Any])
-    if (RevocationConfiguration != null) __obj.updateDynamic("RevocationConfiguration")(RevocationConfiguration.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCertificateAuthorityRequest]
   }
+  @scala.inline
+  implicit class CreateCertificateAuthorityRequestOps[Self <: CreateCertificateAuthorityRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateAuthorityConfiguration(value: CertificateAuthorityConfiguration): Self = this.set("CertificateAuthorityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateAuthorityType(value: CertificateAuthorityType): Self = this.set("CertificateAuthorityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdempotencyToken: Self = this.set("IdempotencyToken", js.undefined)
+    @scala.inline
+    def setRevocationConfiguration(value: RevocationConfiguration): Self = this.set("RevocationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevocationConfiguration: Self = this.set("RevocationConfiguration", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

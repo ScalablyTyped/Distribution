@@ -11,17 +11,35 @@ trait DeletePolicyRequest extends js.Object {
     */
   var DeleteAllPolicyResources: js.UndefOr[Boolean] = js.native
   /**
-    * The ID of the policy that you want to delete. PolicyId is returned by PutPolicy and by ListPolicies.
+    * The ID of the policy that you want to delete. You can retrieve this ID from PutPolicy and ListPolicies.
     */
   var PolicyId: typings.awsSdk.fmsMod.PolicyId = js.native
 }
 
 object DeletePolicyRequest {
   @scala.inline
-  def apply(PolicyId: PolicyId, DeleteAllPolicyResources: js.UndefOr[Boolean] = js.undefined): DeletePolicyRequest = {
+  def apply(PolicyId: PolicyId): DeletePolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyId = PolicyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteAllPolicyResources)) __obj.updateDynamic("DeleteAllPolicyResources")(DeleteAllPolicyResources.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePolicyRequest]
   }
+  @scala.inline
+  implicit class DeletePolicyRequestOps[Self <: DeletePolicyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyId(value: PolicyId): Self = this.set("PolicyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeleteAllPolicyResources(value: Boolean): Self = this.set("DeleteAllPolicyResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteAllPolicyResources: Self = this.set("DeleteAllPolicyResources", js.undefined)
+  }
+  
 }
 

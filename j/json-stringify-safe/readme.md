@@ -11,8 +11,8 @@ Like JSON.stringify, but doesn't blow up on circular refs.
 | Full name          | json-stringify-safe |
 | Keywords           | json, stringify, circular, safe |
 | # releases         | 1 |
-| # dependents       | 855 |
-| # downloads        | 518427307 |
+| # dependents       | 852 |
+| # downloads        | 530907369 |
 | # stars            | 35 |
 
 ## Links

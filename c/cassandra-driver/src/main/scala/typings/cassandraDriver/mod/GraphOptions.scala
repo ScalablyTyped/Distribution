@@ -5,33 +5,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GraphOptions extends js.Object {
-  var language: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var readConsistency: js.UndefOr[consistencies] = js.undefined
-  var readTimeout: js.UndefOr[Double] = js.undefined
-  var source: js.UndefOr[String] = js.undefined
-  var writeConsistency: js.UndefOr[consistencies] = js.undefined
+  var language: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var readConsistency: js.UndefOr[consistencies] = js.native
+  var readTimeout: js.UndefOr[Double] = js.native
+  var source: js.UndefOr[String] = js.native
+  var writeConsistency: js.UndefOr[consistencies] = js.native
 }
 
 object GraphOptions {
   @scala.inline
-  def apply(
-    language: String = null,
-    name: String = null,
-    readConsistency: consistencies = null,
-    readTimeout: js.UndefOr[Double] = js.undefined,
-    source: String = null,
-    writeConsistency: consistencies = null
-  ): GraphOptions = {
+  def apply(): GraphOptions = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (readConsistency != null) __obj.updateDynamic("readConsistency")(readConsistency.asInstanceOf[js.Any])
-    if (!js.isUndefined(readTimeout)) __obj.updateDynamic("readTimeout")(readTimeout.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (writeConsistency != null) __obj.updateDynamic("writeConsistency")(writeConsistency.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphOptions]
   }
+  @scala.inline
+  implicit class GraphOptionsOps[Self <: GraphOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setReadConsistency(value: consistencies): Self = this.set("readConsistency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadConsistency: Self = this.set("readConsistency", js.undefined)
+    @scala.inline
+    def setReadTimeout(value: Double): Self = this.set("readTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadTimeout: Self = this.set("readTimeout", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setWriteConsistency(value: consistencies): Self = this.set("writeConsistency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteConsistency: Self = this.set("writeConsistency", js.undefined)
+  }
+  
 }
 

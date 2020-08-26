@@ -12,7 +12,7 @@ HTTP Client Utilities
 | Keywords           | utilities, http, client |
 | # releases         | 7 |
 | # dependents       | 238 |
-| # downloads        | 20830991 |
+| # downloads        | 19844821 |
 | # stars            | 34 |
 
 ## Links

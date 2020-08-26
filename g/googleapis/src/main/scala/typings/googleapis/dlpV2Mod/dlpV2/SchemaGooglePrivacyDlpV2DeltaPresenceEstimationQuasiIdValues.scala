@@ -28,14 +28,32 @@ trait SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues extends js.Ob
 
 object SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues {
   @scala.inline
-  def apply(
-    estimatedProbability: js.UndefOr[Double] = js.undefined,
-    quasiIdsValues: js.Array[SchemaGooglePrivacyDlpV2Value] = null
-  ): SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues = {
+  def apply(): SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(estimatedProbability)) __obj.updateDynamic("estimatedProbability")(estimatedProbability.get.asInstanceOf[js.Any])
-    if (quasiIdsValues != null) __obj.updateDynamic("quasiIdsValues")(quasiIdsValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValuesOps[Self <: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEstimatedProbability(value: Double): Self = this.set("estimatedProbability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedProbability: Self = this.set("estimatedProbability", js.undefined)
+    @scala.inline
+    def setQuasiIdsValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = this.set("quasiIdsValues", js.Array(value :_*))
+    @scala.inline
+    def setQuasiIdsValues(value: js.Array[SchemaGooglePrivacyDlpV2Value]): Self = this.set("quasiIdsValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuasiIdsValues: Self = this.set("quasiIdsValues", js.undefined)
+  }
+  
 }
 

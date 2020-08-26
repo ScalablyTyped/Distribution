@@ -13,12 +13,14 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/constant_pool", "ConstantPool")
 @js.native
 class ConstantPool () extends js.Object {
+  def this(isClosureCompilerEnabled: Boolean) = this()
   var _getLiteralFactory: js.Any = js.native
   var componentDefinitions: js.Any = js.native
   var definitionsOf: js.Any = js.native
   var directiveDefinitions: js.Any = js.native
   var freshName: js.Any = js.native
   var injectorDefinitions: js.Any = js.native
+  val isClosureCompilerEnabled: js.Any = js.native
   var keyOf: js.Any = js.native
   var literalFactories: js.Any = js.native
   var literals: js.Any = js.native

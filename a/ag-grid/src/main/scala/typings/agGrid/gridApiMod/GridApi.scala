@@ -244,6 +244,7 @@ class GridApi () extends js.Object {
   def selectAllFiltered(): Unit = js.native
   def selectIndex(index: js.Any, tryMulti: js.Any, suppressEvents: js.Any): Unit = js.native
   def selectNode(node: RowNode): Unit = js.native
+  def selectNode(node: RowNode, tryMulti: js.UndefOr[scala.Nothing], suppressEvents: Boolean): Unit = js.native
   def selectNode(node: RowNode, tryMulti: Boolean): Unit = js.native
   def selectNode(node: RowNode, tryMulti: Boolean, suppressEvents: Boolean): Unit = js.native
   def setColumnDefs(colDefs: js.Array[ColDef | ColGroupDef]): Unit = js.native

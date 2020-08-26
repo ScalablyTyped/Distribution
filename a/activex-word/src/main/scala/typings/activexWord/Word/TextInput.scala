@@ -18,7 +18,16 @@ trait TextInput extends js.Object {
   var WordDotTextInput_typekey: TextInput = js.native
   def Clear(): Unit = js.native
   def EditType(Type: WdTextFormFieldType): Unit = js.native
+  def EditType(
+    Type: WdTextFormFieldType,
+    Default: js.UndefOr[scala.Nothing],
+    Format: js.UndefOr[scala.Nothing],
+    Enabled: js.Any
+  ): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: js.UndefOr[scala.Nothing], Format: js.Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: js.UndefOr[scala.Nothing], Format: js.Any, Enabled: js.Any): Unit = js.native
   def EditType(Type: WdTextFormFieldType, Default: js.Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: js.Any, Format: js.UndefOr[scala.Nothing], Enabled: js.Any): Unit = js.native
   def EditType(Type: WdTextFormFieldType, Default: js.Any, Format: js.Any): Unit = js.native
   def EditType(Type: WdTextFormFieldType, Default: js.Any, Format: js.Any, Enabled: js.Any): Unit = js.native
 }

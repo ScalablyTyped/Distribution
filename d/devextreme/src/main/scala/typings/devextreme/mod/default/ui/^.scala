@@ -11,10 +11,12 @@ object ^ extends js.Object {
   var dxItem: js.Any = js.native
   /** @name ui.notify(message,type,displayTime) */
   def notify(message: String): Unit = js.native
+  def notify(message: String, `type`: js.UndefOr[scala.Nothing], displayTime: Double): Unit = js.native
   def notify(message: String, `type`: String): Unit = js.native
   def notify(message: String, `type`: String, displayTime: Double): Unit = js.native
   /** @name ui.notify(options,type,displayTime) */
   def notify(options: js.Any): Unit = js.native
+  def notify(options: js.Any, `type`: js.UndefOr[scala.Nothing], displayTime: Double): Unit = js.native
   def notify(options: js.Any, `type`: String): Unit = js.native
   def notify(options: js.Any, `type`: String, displayTime: Double): Unit = js.native
   /** @name ui.repaintFloatingActionButton() */

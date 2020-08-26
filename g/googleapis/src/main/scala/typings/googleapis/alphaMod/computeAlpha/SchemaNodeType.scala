@@ -70,36 +70,74 @@ trait SchemaNodeType extends js.Object {
 
 object SchemaNodeType {
   @scala.inline
-  def apply(
-    cpuPlatform: String = null,
-    creationTimestamp: String = null,
-    deprecated: SchemaDeprecationStatus = null,
-    description: String = null,
-    guestCpus: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    kind: String = null,
-    localSsdGb: js.UndefOr[Double] = js.undefined,
-    memoryMb: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    selfLink: String = null,
-    selfLinkWithId: String = null,
-    zone: String = null
-  ): SchemaNodeType = {
+  def apply(): SchemaNodeType = {
     val __obj = js.Dynamic.literal()
-    if (cpuPlatform != null) __obj.updateDynamic("cpuPlatform")(cpuPlatform.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(guestCpus)) __obj.updateDynamic("guestCpus")(guestCpus.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(localSsdGb)) __obj.updateDynamic("localSsdGb")(localSsdGb.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(memoryMb)) __obj.updateDynamic("memoryMb")(memoryMb.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNodeType]
   }
+  @scala.inline
+  implicit class SchemaNodeTypeOps[Self <: SchemaNodeType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCpuPlatform(value: String): Self = this.set("cpuPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuPlatform: Self = this.set("cpuPlatform", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDeprecated(value: SchemaDeprecationStatus): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setGuestCpus(value: Double): Self = this.set("guestCpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuestCpus: Self = this.set("guestCpus", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLocalSsdGb(value: Double): Self = this.set("localSsdGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalSsdGb: Self = this.set("localSsdGb", js.undefined)
+    @scala.inline
+    def setMemoryMb(value: Double): Self = this.set("memoryMb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryMb: Self = this.set("memoryMb", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSelfLinkWithId(value: String): Self = this.set("selfLinkWithId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLinkWithId: Self = this.set("selfLinkWithId", js.undefined)
+    @scala.inline
+    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

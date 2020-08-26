@@ -7,126 +7,171 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Sortable //////////////////////////////////////////////////
+@js.native
 trait SortableOptions extends SortableEvents {
-  var appendTo: js.UndefOr[js.Any] = js.undefined
+  var appendTo: js.UndefOr[js.Any] = js.native
    // jQuery, Element, Selector or string
-  var attribute: js.UndefOr[String] = js.undefined
-  var axis: js.UndefOr[String] = js.undefined
-  var cancel: js.UndefOr[js.Any] = js.undefined
+  var attribute: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[js.Any] = js.native
    // Selector
-  var connectWith: js.UndefOr[js.Any] = js.undefined
+  var connectWith: js.UndefOr[js.Any] = js.native
    // Selector
-  var containment: js.UndefOr[js.Any] = js.undefined
+  var containment: js.UndefOr[js.Any] = js.native
    // Element, Selector or string
-  var cursor: js.UndefOr[String] = js.undefined
-  var cursorAt: js.UndefOr[js.Any] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var distance: js.UndefOr[Double] = js.undefined
-  var dropOnEmpty: js.UndefOr[Boolean] = js.undefined
-  var forceHelperSize: js.UndefOr[Boolean] = js.undefined
-  var forcePlaceholderSize: js.UndefOr[Boolean] = js.undefined
-  var grid: js.UndefOr[js.Array[Double]] = js.undefined
-  var handle: js.UndefOr[js.Any] = js.undefined
+  var cursor: js.UndefOr[String] = js.native
+  var cursorAt: js.UndefOr[js.Any] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var distance: js.UndefOr[Double] = js.native
+  var dropOnEmpty: js.UndefOr[Boolean] = js.native
+  var forceHelperSize: js.UndefOr[Boolean] = js.native
+  var forcePlaceholderSize: js.UndefOr[Boolean] = js.native
+  var grid: js.UndefOr[js.Array[Double]] = js.native
+  var handle: js.UndefOr[js.Any] = js.native
   var helper: js.UndefOr[
     String | (js.Function2[/* event */ JQueryEventObject, /* element */ Sortable, Element])
-  ] = js.undefined
+  ] = js.native
    // Selector or Element
-  var items: js.UndefOr[js.Any] = js.undefined
+  var items: js.UndefOr[js.Any] = js.native
    // Selector
-  var opacity: js.UndefOr[Double] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var revert: js.UndefOr[js.Any] = js.undefined
+  var opacity: js.UndefOr[Double] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var revert: js.UndefOr[js.Any] = js.native
    // boolean or number
-  var scroll: js.UndefOr[Boolean] = js.undefined
-  var scrollSensitivity: js.UndefOr[Double] = js.undefined
-  var scrollSpeed: js.UndefOr[Double] = js.undefined
-  var tolerance: js.UndefOr[String] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var scroll: js.UndefOr[Boolean] = js.native
+  var scrollSensitivity: js.UndefOr[Double] = js.native
+  var scrollSpeed: js.UndefOr[Double] = js.native
+  var tolerance: js.UndefOr[String] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object SortableOptions {
   @scala.inline
-  def apply(
-    activate: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    appendTo: js.Any = null,
-    attribute: String = null,
-    axis: String = null,
-    beforeStop: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    cancel: js.Any = null,
-    change: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    connectWith: js.Any = null,
-    containment: js.Any = null,
-    cursor: String = null,
-    cursorAt: js.Any = null,
-    deactivate: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    distance: js.UndefOr[Double] = js.undefined,
-    dropOnEmpty: js.UndefOr[Boolean] = js.undefined,
-    forceHelperSize: js.UndefOr[Boolean] = js.undefined,
-    forcePlaceholderSize: js.UndefOr[Boolean] = js.undefined,
-    grid: js.Array[Double] = null,
-    handle: js.Any = null,
-    helper: String | (js.Function2[/* event */ JQueryEventObject, /* element */ Sortable, Element]) = null,
-    items: js.Any = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    out: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    over: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    placeholder: String = null,
-    receive: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    remove: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    revert: js.Any = null,
-    scroll: js.UndefOr[Boolean] = js.undefined,
-    scrollSensitivity: js.UndefOr[Double] = js.undefined,
-    scrollSpeed: js.UndefOr[Double] = js.undefined,
-    sort: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    start: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    tolerance: String = null,
-    update: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): SortableOptions = {
+  def apply(): SortableOptions = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (beforeStop != null) __obj.updateDynamic("beforeStop")(js.Any.fromFunction2(beforeStop))
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
-    if (connectWith != null) __obj.updateDynamic("connectWith")(connectWith.asInstanceOf[js.Any])
-    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (cursorAt != null) __obj.updateDynamic("cursorAt")(cursorAt.asInstanceOf[js.Any])
-    if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction2(deactivate))
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropOnEmpty)) __obj.updateDynamic("dropOnEmpty")(dropOnEmpty.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceHelperSize)) __obj.updateDynamic("forceHelperSize")(forceHelperSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forcePlaceholderSize)) __obj.updateDynamic("forcePlaceholderSize")(forcePlaceholderSize.get.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (out != null) __obj.updateDynamic("out")(js.Any.fromFunction2(out))
-    if (over != null) __obj.updateDynamic("over")(js.Any.fromFunction2(over))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (receive != null) __obj.updateDynamic("receive")(js.Any.fromFunction2(receive))
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction2(remove))
-    if (revert != null) __obj.updateDynamic("revert")(revert.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollSensitivity)) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollSpeed)) __obj.updateDynamic("scrollSpeed")(scrollSpeed.get.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableOptions]
   }
+  @scala.inline
+  implicit class SortableOptionsOps[Self <: SortableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppendTo(value: js.Any): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    @scala.inline
+    def setAttribute(value: String): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttribute: Self = this.set("attribute", js.undefined)
+    @scala.inline
+    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setCancel(value: js.Any): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setConnectWith(value: js.Any): Self = this.set("connectWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectWith: Self = this.set("connectWith", js.undefined)
+    @scala.inline
+    def setContainment(value: js.Any): Self = this.set("containment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainment: Self = this.set("containment", js.undefined)
+    @scala.inline
+    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursor: Self = this.set("cursor", js.undefined)
+    @scala.inline
+    def setCursorAt(value: js.Any): Self = this.set("cursorAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursorAt: Self = this.set("cursorAt", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistance: Self = this.set("distance", js.undefined)
+    @scala.inline
+    def setDropOnEmpty(value: Boolean): Self = this.set("dropOnEmpty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropOnEmpty: Self = this.set("dropOnEmpty", js.undefined)
+    @scala.inline
+    def setForceHelperSize(value: Boolean): Self = this.set("forceHelperSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceHelperSize: Self = this.set("forceHelperSize", js.undefined)
+    @scala.inline
+    def setForcePlaceholderSize(value: Boolean): Self = this.set("forcePlaceholderSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForcePlaceholderSize: Self = this.set("forcePlaceholderSize", js.undefined)
+    @scala.inline
+    def setGridVarargs(value: Double*): Self = this.set("grid", js.Array(value :_*))
+    @scala.inline
+    def setGrid(value: js.Array[Double]): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setHandle(value: js.Any): Self = this.set("handle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandle: Self = this.set("handle", js.undefined)
+    @scala.inline
+    def setHelperFunction2(value: (/* event */ JQueryEventObject, /* element */ Sortable) => Element): Self = this.set("helper", js.Any.fromFunction2(value))
+    @scala.inline
+    def setHelper(value: String | (js.Function2[/* event */ JQueryEventObject, /* element */ Sortable, Element])): Self = this.set("helper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelper: Self = this.set("helper", js.undefined)
+    @scala.inline
+    def setItems(value: js.Any): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setRevert(value: js.Any): Self = this.set("revert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevert: Self = this.set("revert", js.undefined)
+    @scala.inline
+    def setScroll(value: Boolean): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScroll: Self = this.set("scroll", js.undefined)
+    @scala.inline
+    def setScrollSensitivity(value: Double): Self = this.set("scrollSensitivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollSensitivity: Self = this.set("scrollSensitivity", js.undefined)
+    @scala.inline
+    def setScrollSpeed(value: Double): Self = this.set("scrollSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollSpeed: Self = this.set("scrollSpeed", js.undefined)
+    @scala.inline
+    def setTolerance(value: String): Self = this.set("tolerance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTolerance: Self = this.set("tolerance", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

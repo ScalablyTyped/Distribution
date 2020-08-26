@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object convertCyrStringMod extends js.Object {
   def apply(): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], from: js.UndefOr[scala.Nothing], to: js.Any): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], from: js.Any): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], from: js.Any, to: js.Any): js.Any = js.native
   def apply(str: js.Any): js.Any = js.native
+  def apply(str: js.Any, from: js.UndefOr[scala.Nothing], to: js.Any): js.Any = js.native
   def apply(str: js.Any, from: js.Any): js.Any = js.native
   def apply(str: js.Any, from: js.Any, to: js.Any): js.Any = js.native
 }

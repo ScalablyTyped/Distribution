@@ -1,7 +1,7 @@
 
 # Scala.js typings for class-validator
 
-Typings are for version 0.11.0
+Typings are for version 0.12.2
 
 ## Library description:
 Class-based validation with Typescript / ES6 / ES5 using decorators or validation schemas. Supports both node.js and browser

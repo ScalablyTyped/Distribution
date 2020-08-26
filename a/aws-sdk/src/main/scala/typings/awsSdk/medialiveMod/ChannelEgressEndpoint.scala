@@ -14,10 +14,26 @@ trait ChannelEgressEndpoint extends js.Object {
 
 object ChannelEgressEndpoint {
   @scala.inline
-  def apply(SourceIp: string = null): ChannelEgressEndpoint = {
+  def apply(): ChannelEgressEndpoint = {
     val __obj = js.Dynamic.literal()
-    if (SourceIp != null) __obj.updateDynamic("SourceIp")(SourceIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelEgressEndpoint]
   }
+  @scala.inline
+  implicit class ChannelEgressEndpointOps[Self <: ChannelEgressEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceIp(value: string): Self = this.set("SourceIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceIp: Self = this.set("SourceIp", js.undefined)
+  }
+  
 }
 

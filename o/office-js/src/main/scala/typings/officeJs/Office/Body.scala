@@ -20,6 +20,11 @@ import scala.scalajs.js.annotation._
 trait Body extends js.Object {
   def getAsync(coercionType: String): Unit = js.native
   def getAsync(coercionType: String, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  def getAsync(
+    coercionType: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
+  ): Unit = js.native
   def getAsync(coercionType: String, options: AsyncContextOptions): Unit = js.native
   def getAsync(
     coercionType: String,
@@ -51,6 +56,11 @@ trait Body extends js.Object {
     */
   def getAsync(coercionType: CoercionType): Unit = js.native
   def getAsync(coercionType: CoercionType, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  def getAsync(
+    coercionType: CoercionType,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
+  ): Unit = js.native
   def getAsync(coercionType: CoercionType, options: AsyncContextOptions): Unit = js.native
   def getAsync(
     coercionType: CoercionType,
@@ -76,6 +86,10 @@ trait Body extends js.Object {
     */
   def getTypeAsync(): Unit = js.native
   def getTypeAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CoercionType], Unit]): Unit = js.native
+  def getTypeAsync(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[CoercionType], Unit]
+  ): Unit = js.native
   def getTypeAsync(options: AsyncContextOptions): Unit = js.native
   def getTypeAsync(
     options: AsyncContextOptions,
@@ -117,6 +131,11 @@ trait Body extends js.Object {
     options: AsyncContextOptions with CoercionTypeOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def prependAsync(
+    data: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   /**
     * Replaces the entire body with the specified text.
     *
@@ -156,6 +175,11 @@ trait Body extends js.Object {
     options: AsyncContextOptions with CoercionTypeOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def setAsync(
+    data: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   /**
     * Replaces the selection in the body with the specified text.
     *
@@ -193,6 +217,11 @@ trait Body extends js.Object {
   def setSelectedDataAsync(
     data: String,
     options: AsyncContextOptions with CoercionTypeOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def setSelectedDataAsync(
+    data: String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
 }

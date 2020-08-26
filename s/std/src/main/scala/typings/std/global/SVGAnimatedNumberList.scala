@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SVGAnimatedNumberList")
 @js.native
 class SVGAnimatedNumberList ()
-  extends typings.std.SVGAnimatedNumberList {
-  /* CompleteClass */
-  override val animVal: typings.std.SVGNumberList = js.native
-  /* CompleteClass */
-  override val baseVal: typings.std.SVGNumberList = js.native
-}
+  extends typings.std.SVGAnimatedNumberList
 
 @JSGlobal("SVGAnimatedNumberList")
 @js.native

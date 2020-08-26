@@ -1,6 +1,6 @@
 package typings.pulumiAws.topicSubscriptionMod
 
-import typings.pulumiAws.topicMod.Topic
+import typings.pulumiAws.snsMod.Topic
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,23 +44,48 @@ trait TopicSubscriptionArgs extends js.Object {
 
 object TopicSubscriptionArgs {
   @scala.inline
-  def apply(
-    endpoint: Input[String],
-    protocol: Input[String],
-    topic: Input[String | Topic],
-    confirmationTimeoutInMinutes: Input[Double] = null,
-    deliveryPolicy: Input[String] = null,
-    endpointAutoConfirms: Input[Boolean] = null,
-    filterPolicy: Input[String] = null,
-    rawMessageDelivery: Input[Boolean] = null
-  ): TopicSubscriptionArgs = {
+  def apply(endpoint: Input[String], protocol: Input[String], topic: Input[String | Topic]): TopicSubscriptionArgs = {
     val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-    if (confirmationTimeoutInMinutes != null) __obj.updateDynamic("confirmationTimeoutInMinutes")(confirmationTimeoutInMinutes.asInstanceOf[js.Any])
-    if (deliveryPolicy != null) __obj.updateDynamic("deliveryPolicy")(deliveryPolicy.asInstanceOf[js.Any])
-    if (endpointAutoConfirms != null) __obj.updateDynamic("endpointAutoConfirms")(endpointAutoConfirms.asInstanceOf[js.Any])
-    if (filterPolicy != null) __obj.updateDynamic("filterPolicy")(filterPolicy.asInstanceOf[js.Any])
-    if (rawMessageDelivery != null) __obj.updateDynamic("rawMessageDelivery")(rawMessageDelivery.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicSubscriptionArgs]
   }
+  @scala.inline
+  implicit class TopicSubscriptionArgsOps[Self <: TopicSubscriptionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpoint(value: Input[String]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProtocol(value: Input[String]): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTopic(value: Input[String | Topic]): Self = this.set("topic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfirmationTimeoutInMinutes(value: Input[Double]): Self = this.set("confirmationTimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmationTimeoutInMinutes: Self = this.set("confirmationTimeoutInMinutes", js.undefined)
+    @scala.inline
+    def setDeliveryPolicy(value: Input[String]): Self = this.set("deliveryPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryPolicy: Self = this.set("deliveryPolicy", js.undefined)
+    @scala.inline
+    def setEndpointAutoConfirms(value: Input[Boolean]): Self = this.set("endpointAutoConfirms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointAutoConfirms: Self = this.set("endpointAutoConfirms", js.undefined)
+    @scala.inline
+    def setFilterPolicy(value: Input[String]): Self = this.set("filterPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterPolicy: Self = this.set("filterPolicy", js.undefined)
+    @scala.inline
+    def setRawMessageDelivery(value: Input[Boolean]): Self = this.set("rawMessageDelivery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawMessageDelivery: Self = this.set("rawMessageDelivery", js.undefined)
+  }
+  
 }
 

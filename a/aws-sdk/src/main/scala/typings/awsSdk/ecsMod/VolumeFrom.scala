@@ -18,11 +18,30 @@ trait VolumeFrom extends js.Object {
 
 object VolumeFrom {
   @scala.inline
-  def apply(readOnly: js.UndefOr[BoxedBoolean] = js.undefined, sourceContainer: String = null): VolumeFrom = {
+  def apply(): VolumeFrom = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (sourceContainer != null) __obj.updateDynamic("sourceContainer")(sourceContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeFrom]
   }
+  @scala.inline
+  implicit class VolumeFromOps[Self <: VolumeFrom] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReadOnly(value: BoxedBoolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setSourceContainer(value: String): Self = this.set("sourceContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceContainer: Self = this.set("sourceContainer", js.undefined)
+  }
+  
 }
 

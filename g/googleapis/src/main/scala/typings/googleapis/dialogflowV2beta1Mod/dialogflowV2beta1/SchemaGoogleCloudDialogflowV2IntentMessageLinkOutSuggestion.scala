@@ -23,11 +23,30 @@ trait SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion extends js.Obj
 
 object SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion {
   @scala.inline
-  def apply(destinationName: String = null, uri: String = null): SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion = {
+  def apply(): SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion = {
     val __obj = js.Dynamic.literal()
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestionOps[Self <: SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationName(value: String): Self = this.set("destinationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationName: Self = this.set("destinationName", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

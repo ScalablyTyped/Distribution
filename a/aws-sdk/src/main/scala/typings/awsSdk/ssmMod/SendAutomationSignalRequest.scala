@@ -22,14 +22,30 @@ trait SendAutomationSignalRequest extends js.Object {
 
 object SendAutomationSignalRequest {
   @scala.inline
-  def apply(
-    AutomationExecutionId: AutomationExecutionId,
-    SignalType: SignalType,
-    Payload: AutomationParameterMap = null
-  ): SendAutomationSignalRequest = {
+  def apply(AutomationExecutionId: AutomationExecutionId, SignalType: SignalType): SendAutomationSignalRequest = {
     val __obj = js.Dynamic.literal(AutomationExecutionId = AutomationExecutionId.asInstanceOf[js.Any], SignalType = SignalType.asInstanceOf[js.Any])
-    if (Payload != null) __obj.updateDynamic("Payload")(Payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendAutomationSignalRequest]
   }
+  @scala.inline
+  implicit class SendAutomationSignalRequestOps[Self <: SendAutomationSignalRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomationExecutionId(value: AutomationExecutionId): Self = this.set("AutomationExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSignalType(value: SignalType): Self = this.set("SignalType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPayload(value: AutomationParameterMap): Self = this.set("Payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("Payload", js.undefined)
+  }
+  
 }
 

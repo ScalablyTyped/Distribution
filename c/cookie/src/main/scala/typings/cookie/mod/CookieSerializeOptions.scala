@@ -10,13 +10,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CookieSerializeOptions extends js.Object {
   /**
     * Specifies the value for the {@link https://tools.ietf.org/html/rfc6265#section-5.2.3|Domain Set-Cookie attribute}. By default, no
     * domain is set, and most clients will consider the cookie to apply to only
     * the current domain.
     */
-  var domain: js.UndefOr[String] = js.undefined
+  var domain: js.UndefOr[String] = js.native
   /**
     * Specifies a function that will be used to encode a cookie's value. Since
     * value of a cookie has a limited character set (and must be a simple
@@ -27,7 +28,7 @@ trait CookieSerializeOptions extends js.Object {
     * encode a JavaScript string into UTF-8 byte sequences and then URL-encode
     * any that fall outside of the cookie range.
     */
-  var encode: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
+  var encode: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
   /**
     * Specifies the `Date` object to be the value for the {@link https://tools.ietf.org/html/rfc6265#section-5.2.1|`Expires` `Set-Cookie` attribute}. By default,
     * no expiration is set, and most clients will consider this a "non-persistent cookie" and will delete
@@ -38,7 +39,7 @@ trait CookieSerializeOptions extends js.Object {
     * possible not all clients by obey this, so if both are set, they should
     * point to the same date and time.
     */
-  var expires: js.UndefOr[Date] = js.undefined
+  var expires: js.UndefOr[Date] = js.native
   /**
     * Specifies the boolean value for the {@link https://tools.ietf.org/html/rfc6265#section-5.2.6|`HttpOnly` `Set-Cookie` attribute}.
     * When truthy, the `HttpOnly` attribute is set, otherwise it is not. By
@@ -47,7 +48,7 @@ trait CookieSerializeOptions extends js.Object {
     * *Note* be careful when setting this to true, as compliant clients will
     * not allow client-side JavaScript to see the cookie in `document.cookie`.
     */
-  var httpOnly: js.UndefOr[Boolean] = js.undefined
+  var httpOnly: js.UndefOr[Boolean] = js.native
   /**
     * Specifies the number (in seconds) to be the value for the `Max-Age`
     * `Set-Cookie` attribute. The given number will be converted to an integer
@@ -58,12 +59,12 @@ trait CookieSerializeOptions extends js.Object {
     * possible not all clients by obey this, so if both are set, they should
     * point to the same date and time.
     */
-  var maxAge: js.UndefOr[Double] = js.undefined
+  var maxAge: js.UndefOr[Double] = js.native
   /**
     * Specifies the value for the {@link https://tools.ietf.org/html/rfc6265#section-5.2.4|`Path` `Set-Cookie` attribute}.
     * By default, the path is considered the "default path".
     */
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String] = js.native
   /**
     * Specifies the boolean or string to be the value for the {@link https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1.2.7|`SameSite` `Set-Cookie` attribute}.
     *
@@ -81,7 +82,7 @@ trait CookieSerializeOptions extends js.Object {
     *
     * *note* This is an attribute that has not yet been fully standardized, and may change in the future. This also means many clients may ignore this attribute until they understand it.
     */
-  var sameSite: js.UndefOr[`true` | `false` | lax | strict | none] = js.undefined
+  var sameSite: js.UndefOr[`true` | `false` | lax | strict | none] = js.native
   /**
     * Specifies the boolean value for the {@link https://tools.ietf.org/html/rfc6265#section-5.2.5|`Secure` `Set-Cookie` attribute}. When truthy, the
     * `Secure` attribute is set, otherwise it is not. By default, the `Secure` attribute is not set.
@@ -90,31 +91,59 @@ trait CookieSerializeOptions extends js.Object {
     * not send the cookie back to the server in the future if the browser does
     * not have an HTTPS connection.
     */
-  var secure: js.UndefOr[Boolean] = js.undefined
+  var secure: js.UndefOr[Boolean] = js.native
 }
 
 object CookieSerializeOptions {
   @scala.inline
-  def apply(
-    domain: String = null,
-    encode: /* value */ String => String = null,
-    expires: Date = null,
-    httpOnly: js.UndefOr[Boolean] = js.undefined,
-    maxAge: js.UndefOr[Double] = js.undefined,
-    path: String = null,
-    sameSite: `true` | `false` | lax | strict | none = null,
-    secure: js.UndefOr[Boolean] = js.undefined
-  ): CookieSerializeOptions = {
+  def apply(): CookieSerializeOptions = {
     val __obj = js.Dynamic.literal()
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction1(encode))
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieSerializeOptions]
   }
+  @scala.inline
+  implicit class CookieSerializeOptionsOps[Self <: CookieSerializeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setEncode(value: /* value */ String => String): Self = this.set("encode", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEncode: Self = this.set("encode", js.undefined)
+    @scala.inline
+    def setExpires(value: Date): Self = this.set("expires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpires: Self = this.set("expires", js.undefined)
+    @scala.inline
+    def setHttpOnly(value: Boolean): Self = this.set("httpOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpOnly: Self = this.set("httpOnly", js.undefined)
+    @scala.inline
+    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setSameSite(value: `true` | `false` | lax | strict | none): Self = this.set("sameSite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSameSite: Self = this.set("sameSite", js.undefined)
+    @scala.inline
+    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecure: Self = this.set("secure", js.undefined)
+  }
+  
 }
 

@@ -1,42 +1,54 @@
 package typings.devextreme.mod.DevExpress.viz
 
 import typings.devextreme.anon.ValueValueText
-import typings.devextreme.devextremeStrings.hide
-import typings.devextreme.devextremeStrings.none
 import typings.devextreme.mod.DevExpress.ui.format
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxPolarChartValueAxisLabel extends dxPolarChartCommonAxisSettingsLabel {
   /** @name dxPolarChart.Options.valueAxis.label.customizeHint */
-  var customizeHint: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.undefined
+  var customizeHint: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.native
   /** @name dxPolarChart.Options.valueAxis.label.customizeText */
-  var customizeText: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.undefined
+  var customizeText: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.native
   /** @name dxPolarChart.Options.valueAxis.label.format */
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
 }
 
 object dxPolarChartValueAxisLabel {
   @scala.inline
-  def apply(
-    customizeHint: /* axisValue */ ValueValueText => String = null,
-    customizeText: /* axisValue */ ValueValueText => String = null,
-    font: Font = null,
-    format: format = null,
-    indentFromAxis: js.UndefOr[Double] = js.undefined,
-    overlappingBehavior: none | hide = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxPolarChartValueAxisLabel = {
+  def apply(): dxPolarChartValueAxisLabel = {
     val __obj = js.Dynamic.literal()
-    if (customizeHint != null) __obj.updateDynamic("customizeHint")(js.Any.fromFunction1(customizeHint))
-    if (customizeText != null) __obj.updateDynamic("customizeText")(js.Any.fromFunction1(customizeText))
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentFromAxis)) __obj.updateDynamic("indentFromAxis")(indentFromAxis.get.asInstanceOf[js.Any])
-    if (overlappingBehavior != null) __obj.updateDynamic("overlappingBehavior")(overlappingBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartValueAxisLabel]
   }
+  @scala.inline
+  implicit class dxPolarChartValueAxisLabelOps[Self <: dxPolarChartValueAxisLabel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomizeHint(value: /* axisValue */ ValueValueText => String): Self = this.set("customizeHint", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomizeHint: Self = this.set("customizeHint", js.undefined)
+    @scala.inline
+    def setCustomizeText(value: /* axisValue */ ValueValueText => String): Self = this.set("customizeText", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCustomizeText: Self = this.set("customizeText", js.undefined)
+    @scala.inline
+    def setFormatFunction1(value: /* value */ Double | Date => String): Self = this.set("format", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFormat(value: format): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+  }
+  
 }
 

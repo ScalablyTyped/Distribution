@@ -153,60 +153,128 @@ trait SchemaInterconnect extends js.Object {
 
 object SchemaInterconnect {
   @scala.inline
-  def apply(
-    adminEnabled: js.UndefOr[Boolean] = js.undefined,
-    circuitInfos: js.Array[SchemaInterconnectCircuitInfo] = null,
-    creationTimestamp: String = null,
-    customerName: String = null,
-    description: String = null,
-    expectedOutages: js.Array[SchemaInterconnectOutageNotification] = null,
-    googleIpAddress: String = null,
-    googleReferenceId: String = null,
-    id: String = null,
-    interconnectAttachments: js.Array[String] = null,
-    interconnectType: String = null,
-    kind: String = null,
-    labelFingerprint: String = null,
-    labels: StringDictionary[String] = null,
-    linkType: String = null,
-    location: String = null,
-    name: String = null,
-    nocContactEmail: String = null,
-    operationalStatus: String = null,
-    peerIpAddress: String = null,
-    provisionedLinkCount: js.UndefOr[Double] = js.undefined,
-    requestedLinkCount: js.UndefOr[Double] = js.undefined,
-    selfLink: String = null,
-    selfLinkWithId: String = null,
-    state: String = null
-  ): SchemaInterconnect = {
+  def apply(): SchemaInterconnect = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adminEnabled)) __obj.updateDynamic("adminEnabled")(adminEnabled.get.asInstanceOf[js.Any])
-    if (circuitInfos != null) __obj.updateDynamic("circuitInfos")(circuitInfos.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (customerName != null) __obj.updateDynamic("customerName")(customerName.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (expectedOutages != null) __obj.updateDynamic("expectedOutages")(expectedOutages.asInstanceOf[js.Any])
-    if (googleIpAddress != null) __obj.updateDynamic("googleIpAddress")(googleIpAddress.asInstanceOf[js.Any])
-    if (googleReferenceId != null) __obj.updateDynamic("googleReferenceId")(googleReferenceId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (interconnectAttachments != null) __obj.updateDynamic("interconnectAttachments")(interconnectAttachments.asInstanceOf[js.Any])
-    if (interconnectType != null) __obj.updateDynamic("interconnectType")(interconnectType.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (linkType != null) __obj.updateDynamic("linkType")(linkType.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nocContactEmail != null) __obj.updateDynamic("nocContactEmail")(nocContactEmail.asInstanceOf[js.Any])
-    if (operationalStatus != null) __obj.updateDynamic("operationalStatus")(operationalStatus.asInstanceOf[js.Any])
-    if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(provisionedLinkCount)) __obj.updateDynamic("provisionedLinkCount")(provisionedLinkCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestedLinkCount)) __obj.updateDynamic("requestedLinkCount")(requestedLinkCount.get.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInterconnect]
   }
+  @scala.inline
+  implicit class SchemaInterconnectOps[Self <: SchemaInterconnect] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdminEnabled(value: Boolean): Self = this.set("adminEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminEnabled: Self = this.set("adminEnabled", js.undefined)
+    @scala.inline
+    def setCircuitInfosVarargs(value: SchemaInterconnectCircuitInfo*): Self = this.set("circuitInfos", js.Array(value :_*))
+    @scala.inline
+    def setCircuitInfos(value: js.Array[SchemaInterconnectCircuitInfo]): Self = this.set("circuitInfos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCircuitInfos: Self = this.set("circuitInfos", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setCustomerName(value: String): Self = this.set("customerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerName: Self = this.set("customerName", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExpectedOutagesVarargs(value: SchemaInterconnectOutageNotification*): Self = this.set("expectedOutages", js.Array(value :_*))
+    @scala.inline
+    def setExpectedOutages(value: js.Array[SchemaInterconnectOutageNotification]): Self = this.set("expectedOutages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedOutages: Self = this.set("expectedOutages", js.undefined)
+    @scala.inline
+    def setGoogleIpAddress(value: String): Self = this.set("googleIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogleIpAddress: Self = this.set("googleIpAddress", js.undefined)
+    @scala.inline
+    def setGoogleReferenceId(value: String): Self = this.set("googleReferenceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogleReferenceId: Self = this.set("googleReferenceId", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInterconnectAttachmentsVarargs(value: String*): Self = this.set("interconnectAttachments", js.Array(value :_*))
+    @scala.inline
+    def setInterconnectAttachments(value: js.Array[String]): Self = this.set("interconnectAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterconnectAttachments: Self = this.set("interconnectAttachments", js.undefined)
+    @scala.inline
+    def setInterconnectType(value: String): Self = this.set("interconnectType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterconnectType: Self = this.set("interconnectType", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLinkType(value: String): Self = this.set("linkType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkType: Self = this.set("linkType", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNocContactEmail(value: String): Self = this.set("nocContactEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNocContactEmail: Self = this.set("nocContactEmail", js.undefined)
+    @scala.inline
+    def setOperationalStatus(value: String): Self = this.set("operationalStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationalStatus: Self = this.set("operationalStatus", js.undefined)
+    @scala.inline
+    def setPeerIpAddress(value: String): Self = this.set("peerIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerIpAddress: Self = this.set("peerIpAddress", js.undefined)
+    @scala.inline
+    def setProvisionedLinkCount(value: Double): Self = this.set("provisionedLinkCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedLinkCount: Self = this.set("provisionedLinkCount", js.undefined)
+    @scala.inline
+    def setRequestedLinkCount(value: Double): Self = this.set("requestedLinkCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedLinkCount: Self = this.set("requestedLinkCount", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSelfLinkWithId(value: String): Self = this.set("selfLinkWithId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLinkWithId: Self = this.set("selfLinkWithId", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

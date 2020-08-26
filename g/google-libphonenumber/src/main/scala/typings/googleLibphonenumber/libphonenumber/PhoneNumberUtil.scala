@@ -15,7 +15,9 @@ trait PhoneNumberUtil extends js.Object {
   def getCountryCodeForRegion(supportedRegion: String): String = js.native
   def getExampleNumber(regionCode: String): PhoneNumber = js.native
   def getExampleNumberForType(regionCode: String, `type`: PhoneNumberType): PhoneNumber = js.native
+  def getLengthOfGeographicalAreaCode(number: PhoneNumber): Double = js.native
   def getNddPrefixForRegion(): js.UndefOr[String] = js.native
+  def getNddPrefixForRegion(regionCode: js.UndefOr[scala.Nothing], stripNonDigits: Boolean): js.UndefOr[String] = js.native
   def getNddPrefixForRegion(regionCode: String): js.UndefOr[String] = js.native
   def getNddPrefixForRegion(regionCode: String, stripNonDigits: Boolean): js.UndefOr[String] = js.native
   def getNumberType(phoneNumber: PhoneNumber): PhoneNumberType = js.native
@@ -39,6 +41,7 @@ trait PhoneNumberUtil extends js.Object {
   def isValidNumberForRegion(phoneNumber: PhoneNumber): Boolean = js.native
   def isValidNumberForRegion(phoneNumber: PhoneNumber, region: String): Boolean = js.native
   def parse(): PhoneNumber = js.native
+  def parse(number: js.UndefOr[scala.Nothing], region: String): PhoneNumber = js.native
   def parse(number: String): PhoneNumber = js.native
   def parse(number: String, region: String): PhoneNumber = js.native
   def parseAndKeepRawInput(number: String): PhoneNumber = js.native

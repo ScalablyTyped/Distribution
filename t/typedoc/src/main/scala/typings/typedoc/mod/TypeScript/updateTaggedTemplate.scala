@@ -15,7 +15,13 @@ object updateTaggedTemplate extends js.Object {
   def apply(
     node: TaggedTemplateExpression,
     tag: Expression,
-    typeArguments: js.UndefOr[js.Array[TypeNode]],
+    typeArguments: js.UndefOr[scala.Nothing],
+    template: TemplateLiteral
+  ): TaggedTemplateExpression = js.native
+  def apply(
+    node: TaggedTemplateExpression,
+    tag: Expression,
+    typeArguments: js.Array[TypeNode],
     template: TemplateLiteral
   ): TaggedTemplateExpression = js.native
 }

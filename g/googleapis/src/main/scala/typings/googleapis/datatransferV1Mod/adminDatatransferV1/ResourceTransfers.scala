@@ -27,6 +27,7 @@ class ResourceTransfers protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDataTransfer] = js.native
   def get(callback: BodyResponseCallback[SchemaDataTransfer]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataTransfer] = js.native
   def get(params: ParamsResourceTransfersGet): GaxiosPromise[SchemaDataTransfer] = js.native
   def get(params: ParamsResourceTransfersGet, callback: BodyResponseCallback[SchemaDataTransfer]): Unit = js.native
   def get(
@@ -54,6 +55,7 @@ class ResourceTransfers protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaDataTransfer] = js.native
   def insert(callback: BodyResponseCallback[SchemaDataTransfer]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataTransfer] = js.native
   def insert(params: ParamsResourceTransfersInsert): GaxiosPromise[SchemaDataTransfer] = js.native
   def insert(params: ParamsResourceTransfersInsert, callback: BodyResponseCallback[SchemaDataTransfer]): Unit = js.native
   def insert(
@@ -87,6 +89,7 @@ class ResourceTransfers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaDataTransfersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDataTransfersListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataTransfersListResponse] = js.native
   def list(params: ParamsResourceTransfersList): GaxiosPromise[SchemaDataTransfersListResponse] = js.native
   def list(
     params: ParamsResourceTransfersList,

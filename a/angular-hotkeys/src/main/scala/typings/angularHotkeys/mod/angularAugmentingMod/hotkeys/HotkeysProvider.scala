@@ -50,61 +50,13 @@ trait HotkeysProvider extends js.Object {
   /**
     * Creates a new Hotkey and creates the Mousetrap binding.
     */
-  def add(combo: String): Hotkey = js.native
-  def add(combo: String, description: String): Hotkey = js.native
   def add(
-    combo: String,
-    description: String,
-    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit]
-  ): Hotkey = js.native
-  def add(
-    combo: String,
-    description: String,
-    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
-    action: String
-  ): Hotkey = js.native
-  def add(
-    combo: String,
-    description: String,
-    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
-    action: String,
-    allowIn: js.Array[String]
-  ): Hotkey = js.native
-  def add(
-    combo: String,
-    description: String,
-    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
-    action: String,
-    allowIn: js.Array[String],
-    persistent: Boolean
-  ): Hotkey = js.native
-  def add(combo: js.Array[String]): Hotkey = js.native
-  def add(combo: js.Array[String], description: String): Hotkey = js.native
-  def add(
-    combo: js.Array[String],
-    description: String,
-    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit]
-  ): Hotkey = js.native
-  def add(
-    combo: js.Array[String],
-    description: String,
-    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
-    action: String
-  ): Hotkey = js.native
-  def add(
-    combo: js.Array[String],
-    description: String,
-    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
-    action: String,
-    allowIn: js.Array[String]
-  ): Hotkey = js.native
-  def add(
-    combo: js.Array[String],
-    description: String,
-    callback: js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit],
-    action: String,
-    allowIn: js.Array[String],
-    persistent: Boolean
+    combo: String | js.Array[String],
+    description: js.UndefOr[String],
+    callback: js.UndefOr[js.Function2[/* event */ Event, /* hotkey */ Hotkey, Unit]],
+    action: js.UndefOr[String],
+    allowIn: js.UndefOr[js.Array[String]],
+    persistent: js.UndefOr[Boolean]
   ): Hotkey = js.native
   /**
     * Creates a new Hotkey and creates the Mousetrap binding.

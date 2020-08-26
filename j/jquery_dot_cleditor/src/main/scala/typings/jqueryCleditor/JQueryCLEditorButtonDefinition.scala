@@ -5,53 +5,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JQueryCLEditorButtonDefinition extends js.Object {
   var buttonClick: js.UndefOr[
     js.Function2[/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]
-  ] = js.undefined
-  var command: js.UndefOr[String] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
-  var getEnabled: js.UndefOr[js.Function1[/* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]] = js.undefined
-  var getPressed: js.UndefOr[js.Function1[/* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]] = js.undefined
-  var image: js.UndefOr[String] = js.undefined
-  var name: String
+  ] = js.native
+  var command: js.UndefOr[String] = js.native
+  var css: js.UndefOr[js.Any] = js.native
+  var getEnabled: js.UndefOr[js.Function1[/* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]] = js.native
+  var getPressed: js.UndefOr[js.Function1[/* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]] = js.native
+  var image: js.UndefOr[String] = js.native
+  var name: String = js.native
   var popupClick: js.UndefOr[
     js.Function2[/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData, Boolean]
-  ] = js.undefined
-  var popupContent: js.UndefOr[String] = js.undefined
-  var popupName: js.UndefOr[String] = js.undefined
-  var stripIndex: js.UndefOr[Double] = js.undefined
-  var title: String
+  ] = js.native
+  var popupContent: js.UndefOr[String] = js.native
+  var popupName: js.UndefOr[String] = js.native
+  var stripIndex: js.UndefOr[Double] = js.native
+  var title: String = js.native
 }
 
 object JQueryCLEditorButtonDefinition {
   @scala.inline
-  def apply(
-    name: String,
-    title: String,
-    buttonClick: (/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean = null,
-    command: String = null,
-    css: js.Any = null,
-    getEnabled: /* data */ JQueryCLEditorButtonDefinitionEventData => Boolean = null,
-    getPressed: /* data */ JQueryCLEditorButtonDefinitionEventData => Boolean = null,
-    image: String = null,
-    popupClick: (/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean = null,
-    popupContent: String = null,
-    popupName: String = null,
-    stripIndex: js.UndefOr[Double] = js.undefined
-  ): JQueryCLEditorButtonDefinition = {
+  def apply(name: String, title: String): JQueryCLEditorButtonDefinition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (buttonClick != null) __obj.updateDynamic("buttonClick")(js.Any.fromFunction2(buttonClick))
-    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (getEnabled != null) __obj.updateDynamic("getEnabled")(js.Any.fromFunction1(getEnabled))
-    if (getPressed != null) __obj.updateDynamic("getPressed")(js.Any.fromFunction1(getPressed))
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (popupClick != null) __obj.updateDynamic("popupClick")(js.Any.fromFunction2(popupClick))
-    if (popupContent != null) __obj.updateDynamic("popupContent")(popupContent.asInstanceOf[js.Any])
-    if (popupName != null) __obj.updateDynamic("popupName")(popupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripIndex)) __obj.updateDynamic("stripIndex")(stripIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryCLEditorButtonDefinition]
   }
+  @scala.inline
+  implicit class JQueryCLEditorButtonDefinitionOps[Self <: JQueryCLEditorButtonDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setButtonClick(value: (/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean): Self = this.set("buttonClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteButtonClick: Self = this.set("buttonClick", js.undefined)
+    @scala.inline
+    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommand: Self = this.set("command", js.undefined)
+    @scala.inline
+    def setCss(value: js.Any): Self = this.set("css", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCss: Self = this.set("css", js.undefined)
+    @scala.inline
+    def setGetEnabled(value: /* data */ JQueryCLEditorButtonDefinitionEventData => Boolean): Self = this.set("getEnabled", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetEnabled: Self = this.set("getEnabled", js.undefined)
+    @scala.inline
+    def setGetPressed(value: /* data */ JQueryCLEditorButtonDefinitionEventData => Boolean): Self = this.set("getPressed", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetPressed: Self = this.set("getPressed", js.undefined)
+    @scala.inline
+    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setPopupClick(value: (/* event */ Event, /* data */ JQueryCLEditorButtonDefinitionEventData) => Boolean): Self = this.set("popupClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deletePopupClick: Self = this.set("popupClick", js.undefined)
+    @scala.inline
+    def setPopupContent(value: String): Self = this.set("popupContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupContent: Self = this.set("popupContent", js.undefined)
+    @scala.inline
+    def setPopupName(value: String): Self = this.set("popupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupName: Self = this.set("popupName", js.undefined)
+    @scala.inline
+    def setStripIndex(value: Double): Self = this.set("stripIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripIndex: Self = this.set("stripIndex", js.undefined)
+  }
+  
 }
 

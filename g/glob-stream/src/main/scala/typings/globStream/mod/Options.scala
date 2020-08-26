@@ -1,111 +1,69 @@
 package typings.globStream.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.glob.anon.IsDirectory
-import typings.glob.globBooleans.`false`
-import typings.glob.globStrings.DIR
-import typings.glob.globStrings.FILE
 import typings.glob.mod.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends IOptions {
   /**
     * Whether or not to error upon an empty singular glob.
     */
-  var allowEmpty: js.UndefOr[Boolean] = js.undefined
+  var allowEmpty: js.UndefOr[Boolean] = js.native
   /**
     * The absolute segment of the glob path that isn't a glob. This value is attached
     * to each globobject and is useful for relative pathing.
     */
-  var base: js.UndefOr[String] = js.undefined
+  var base: js.UndefOr[String] = js.native
   /**
     * Whether or not the `cwd` and `base` should be the same.
     */
-  var cwdbase: js.UndefOr[Boolean] = js.undefined
+  var cwdbase: js.UndefOr[Boolean] = js.native
   /**
     * Filters stream to remove duplicates based on the string property name or the result of function.
     * When using a function, the function receives the streamed
     * data (objects containing `cwd`, `base`, `path` properties) to compare against.
     */
-  var uniqueBy: js.UndefOr[UniqueByStringPredicate | UniqueByFunctionPredicate] = js.undefined
+  var uniqueBy: js.UndefOr[UniqueByStringPredicate | UniqueByFunctionPredicate] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    absolute: js.UndefOr[Boolean] = js.undefined,
-    allowEmpty: js.UndefOr[Boolean] = js.undefined,
-    base: String = null,
-    cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]] = null,
-    cwd: String = null,
-    cwdbase: js.UndefOr[Boolean] = js.undefined,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    dot: js.UndefOr[Boolean] = js.undefined,
-    flipNegate: js.UndefOr[Boolean] = js.undefined,
-    follow: js.UndefOr[Boolean] = js.undefined,
-    ignore: String | js.Array[String] = null,
-    mark: js.UndefOr[Boolean] = js.undefined,
-    matchBase: js.UndefOr[Boolean] = js.undefined,
-    nobrace: js.UndefOr[Boolean] = js.undefined,
-    nocase: js.UndefOr[Boolean] = js.undefined,
-    nocomment: js.UndefOr[Boolean] = js.undefined,
-    nodir: js.UndefOr[Boolean] = js.undefined,
-    noext: js.UndefOr[Boolean] = js.undefined,
-    noglobstar: js.UndefOr[Boolean] = js.undefined,
-    nomount: js.UndefOr[Boolean] = js.undefined,
-    nonegate: js.UndefOr[Boolean] = js.undefined,
-    nonull: js.UndefOr[Boolean] = js.undefined,
-    nosort: js.UndefOr[Boolean] = js.undefined,
-    nounique: js.UndefOr[Boolean] = js.undefined,
-    realpath: js.UndefOr[Boolean] = js.undefined,
-    realpathCache: StringDictionary[String] = null,
-    root: String = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    stat: js.UndefOr[Boolean] = js.undefined,
-    statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]] = null,
-    strict: js.UndefOr[Boolean] = js.undefined,
-    symlinks: StringDictionary[js.UndefOr[Boolean]] = null,
-    sync: js.UndefOr[Boolean] = js.undefined,
-    uniqueBy: UniqueByStringPredicate | UniqueByFunctionPredicate = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.get.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (!js.isUndefined(cwdbase)) __obj.updateDynamic("cwdbase")(cwdbase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipNegate)) __obj.updateDynamic("flipNegate")(flipNegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchBase)) __obj.updateDynamic("matchBase")(matchBase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nobrace)) __obj.updateDynamic("nobrace")(nobrace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocase)) __obj.updateDynamic("nocase")(nocase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocomment)) __obj.updateDynamic("nocomment")(nocomment.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodir)) __obj.updateDynamic("nodir")(nodir.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noext)) __obj.updateDynamic("noext")(noext.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noglobstar)) __obj.updateDynamic("noglobstar")(noglobstar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nomount)) __obj.updateDynamic("nomount")(nomount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonegate)) __obj.updateDynamic("nonegate")(nonegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonull)) __obj.updateDynamic("nonull")(nonull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nosort)) __obj.updateDynamic("nosort")(nosort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nounique)) __obj.updateDynamic("nounique")(nounique.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath.get.asInstanceOf[js.Any])
-    if (realpathCache != null) __obj.updateDynamic("realpathCache")(realpathCache.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stat)) __obj.updateDynamic("stat")(stat.get.asInstanceOf[js.Any])
-    if (statCache != null) __obj.updateDynamic("statCache")(statCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
-    if (symlinks != null) __obj.updateDynamic("symlinks")(symlinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
-    if (uniqueBy != null) __obj.updateDynamic("uniqueBy")(uniqueBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowEmpty(value: Boolean): Self = this.set("allowEmpty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowEmpty: Self = this.set("allowEmpty", js.undefined)
+    @scala.inline
+    def setBase(value: String): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase: Self = this.set("base", js.undefined)
+    @scala.inline
+    def setCwdbase(value: Boolean): Self = this.set("cwdbase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCwdbase: Self = this.set("cwdbase", js.undefined)
+    @scala.inline
+    def setUniqueByFunction1(value: /* entry */ Entry => String): Self = this.set("uniqueBy", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUniqueBy(value: UniqueByStringPredicate | UniqueByFunctionPredicate): Self = this.set("uniqueBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniqueBy: Self = this.set("uniqueBy", js.undefined)
+  }
+  
 }
 

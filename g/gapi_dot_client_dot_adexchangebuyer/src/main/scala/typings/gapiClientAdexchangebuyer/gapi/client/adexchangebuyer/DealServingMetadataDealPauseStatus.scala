@@ -4,31 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DealServingMetadataDealPauseStatus extends js.Object {
-  var buyerPauseReason: js.UndefOr[String] = js.undefined
+  var buyerPauseReason: js.UndefOr[String] = js.native
   /** If the deal is paused, records which party paused the deal first. */
-  var firstPausedBy: js.UndefOr[String] = js.undefined
-  var hasBuyerPaused: js.UndefOr[Boolean] = js.undefined
-  var hasSellerPaused: js.UndefOr[Boolean] = js.undefined
-  var sellerPauseReason: js.UndefOr[String] = js.undefined
+  var firstPausedBy: js.UndefOr[String] = js.native
+  var hasBuyerPaused: js.UndefOr[Boolean] = js.native
+  var hasSellerPaused: js.UndefOr[Boolean] = js.native
+  var sellerPauseReason: js.UndefOr[String] = js.native
 }
 
 object DealServingMetadataDealPauseStatus {
   @scala.inline
-  def apply(
-    buyerPauseReason: String = null,
-    firstPausedBy: String = null,
-    hasBuyerPaused: js.UndefOr[Boolean] = js.undefined,
-    hasSellerPaused: js.UndefOr[Boolean] = js.undefined,
-    sellerPauseReason: String = null
-  ): DealServingMetadataDealPauseStatus = {
+  def apply(): DealServingMetadataDealPauseStatus = {
     val __obj = js.Dynamic.literal()
-    if (buyerPauseReason != null) __obj.updateDynamic("buyerPauseReason")(buyerPauseReason.asInstanceOf[js.Any])
-    if (firstPausedBy != null) __obj.updateDynamic("firstPausedBy")(firstPausedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasBuyerPaused)) __obj.updateDynamic("hasBuyerPaused")(hasBuyerPaused.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasSellerPaused)) __obj.updateDynamic("hasSellerPaused")(hasSellerPaused.get.asInstanceOf[js.Any])
-    if (sellerPauseReason != null) __obj.updateDynamic("sellerPauseReason")(sellerPauseReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[DealServingMetadataDealPauseStatus]
   }
+  @scala.inline
+  implicit class DealServingMetadataDealPauseStatusOps[Self <: DealServingMetadataDealPauseStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuyerPauseReason(value: String): Self = this.set("buyerPauseReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuyerPauseReason: Self = this.set("buyerPauseReason", js.undefined)
+    @scala.inline
+    def setFirstPausedBy(value: String): Self = this.set("firstPausedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstPausedBy: Self = this.set("firstPausedBy", js.undefined)
+    @scala.inline
+    def setHasBuyerPaused(value: Boolean): Self = this.set("hasBuyerPaused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasBuyerPaused: Self = this.set("hasBuyerPaused", js.undefined)
+    @scala.inline
+    def setHasSellerPaused(value: Boolean): Self = this.set("hasSellerPaused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasSellerPaused: Self = this.set("hasSellerPaused", js.undefined)
+    @scala.inline
+    def setSellerPauseReason(value: String): Self = this.set("sellerPauseReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSellerPauseReason: Self = this.set("sellerPauseReason", js.undefined)
+  }
+  
 }
 

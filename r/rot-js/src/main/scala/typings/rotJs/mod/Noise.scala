@@ -20,7 +20,7 @@ object Noise extends js.Object {
   
   @js.native
   object Simplex
-    extends TopLevel[Instantiable1[js.UndefOr[/* gradients */ Double], default]]
+    extends TopLevel[Instantiable1[/* gradients */ js.UndefOr[Double], default]]
   
 }
 

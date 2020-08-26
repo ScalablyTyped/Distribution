@@ -10,6 +10,7 @@ class Vert protected ()
   extends typings.webcola.gridrouterMod.Vert {
   def this(id: Double, x: Double, y: Double) = this()
   def this(id: Double, x: Double, y: Double, node: typings.webcola.gridrouterMod.NodeWrapper) = this()
+  def this(id: Double, x: Double, y: Double, node: js.UndefOr[scala.Nothing], line: js.Any) = this()
   def this(id: Double, x: Double, y: Double, node: typings.webcola.gridrouterMod.NodeWrapper, line: js.Any) = this()
 }
 

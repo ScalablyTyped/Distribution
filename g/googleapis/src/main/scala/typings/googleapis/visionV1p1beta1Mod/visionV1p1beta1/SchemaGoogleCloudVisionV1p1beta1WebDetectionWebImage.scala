@@ -21,11 +21,30 @@ trait SchemaGoogleCloudVisionV1p1beta1WebDetectionWebImage extends js.Object {
 
 object SchemaGoogleCloudVisionV1p1beta1WebDetectionWebImage {
   @scala.inline
-  def apply(score: js.UndefOr[Double] = js.undefined, url: String = null): SchemaGoogleCloudVisionV1p1beta1WebDetectionWebImage = {
+  def apply(): SchemaGoogleCloudVisionV1p1beta1WebDetectionWebImage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1WebDetectionWebImage]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p1beta1WebDetectionWebImageOps[Self <: SchemaGoogleCloudVisionV1p1beta1WebDetectionWebImage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

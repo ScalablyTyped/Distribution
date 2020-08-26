@@ -14,15 +14,38 @@ object global extends js.Object {
     @js.native
     trait Chainable[Subject] extends js.Object {
       def checkA11y(): Unit = js.native
-      def checkA11y(context: ElementContext): Unit = js.native
-      def checkA11y(context: ElementContext, options: Options): Unit = js.native
-      def checkA11y(context: ElementContext, options: Options, violationCallback: ViolationCallback): Unit = js.native
       def checkA11y(
-        context: ElementContext,
+        context: js.UndefOr[ElementContext],
+        options: js.UndefOr[scala.Nothing],
+        violationCallback: js.UndefOr[scala.Nothing],
+        skipFailures: Boolean
+      ): Unit = js.native
+      def checkA11y(
+        context: js.UndefOr[ElementContext],
+        options: js.UndefOr[scala.Nothing],
+        violationCallback: ViolationCallback
+      ): Unit = js.native
+      def checkA11y(
+        context: js.UndefOr[ElementContext],
+        options: js.UndefOr[scala.Nothing],
+        violationCallback: ViolationCallback,
+        skipFailures: Boolean
+      ): Unit = js.native
+      def checkA11y(context: js.UndefOr[ElementContext], options: Options): Unit = js.native
+      def checkA11y(
+        context: js.UndefOr[ElementContext],
+        options: Options,
+        violationCallback: js.UndefOr[scala.Nothing],
+        skipFailures: Boolean
+      ): Unit = js.native
+      def checkA11y(context: js.UndefOr[ElementContext], options: Options, violationCallback: ViolationCallback): Unit = js.native
+      def checkA11y(
+        context: js.UndefOr[ElementContext],
         options: Options,
         violationCallback: ViolationCallback,
         skipFailures: Boolean
       ): Unit = js.native
+      def checkA11y(context: ElementContext): Unit = js.native
       def configureAxe(): Unit = js.native
       def configureAxe(options: RunOptions): Unit = js.native
       def injectAxe(): Unit = js.native

@@ -25,14 +25,30 @@ trait SchemaPositionedObjectPropertiesSuggestionState extends js.Object {
 
 object SchemaPositionedObjectPropertiesSuggestionState {
   @scala.inline
-  def apply(
-    embeddedObjectSuggestionState: SchemaEmbeddedObjectSuggestionState = null,
-    positioningSuggestionState: SchemaPositionedObjectPositioningSuggestionState = null
-  ): SchemaPositionedObjectPropertiesSuggestionState = {
+  def apply(): SchemaPositionedObjectPropertiesSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (embeddedObjectSuggestionState != null) __obj.updateDynamic("embeddedObjectSuggestionState")(embeddedObjectSuggestionState.asInstanceOf[js.Any])
-    if (positioningSuggestionState != null) __obj.updateDynamic("positioningSuggestionState")(positioningSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPositionedObjectPropertiesSuggestionState]
   }
+  @scala.inline
+  implicit class SchemaPositionedObjectPropertiesSuggestionStateOps[Self <: SchemaPositionedObjectPropertiesSuggestionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmbeddedObjectSuggestionState(value: SchemaEmbeddedObjectSuggestionState): Self = this.set("embeddedObjectSuggestionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbeddedObjectSuggestionState: Self = this.set("embeddedObjectSuggestionState", js.undefined)
+    @scala.inline
+    def setPositioningSuggestionState(value: SchemaPositionedObjectPositioningSuggestionState): Self = this.set("positioningSuggestionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositioningSuggestionState: Self = this.set("positioningSuggestionState", js.undefined)
+  }
+  
 }
 

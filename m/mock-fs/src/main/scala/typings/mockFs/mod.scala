@@ -27,6 +27,7 @@ object mod extends js.Object {
     *                          `true`).
     */
   def apply(): Unit = js.native
+  def apply(config: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def apply(config: DirectoryItems): Unit = js.native
   def apply(config: DirectoryItems, options: Options): Unit = js.native
   /**

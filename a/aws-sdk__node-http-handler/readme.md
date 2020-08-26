@@ -10,9 +10,9 @@ Provides a way to make requests
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/node-http-handler |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 184 |
-| # downloads        | 27733 |
+| # releases         | 12 |
+| # dependents       | 372 |
+| # downloads        | 33606 |
 | # stars            | 0 |
 
 ## Links

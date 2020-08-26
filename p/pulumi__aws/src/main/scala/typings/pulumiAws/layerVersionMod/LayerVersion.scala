@@ -31,7 +31,7 @@ class LayerVersion protected () extends CustomResource {
     */
   val code: Output_[js.UndefOr[Archive]] = js.native
   /**
-    * A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
+    * A list of [Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/API_PublishLayerVersion.html#SSS-PublishLayerVersion-request-CompatibleRuntimes) this layer is compatible with. Up to 5 runtimes can be specified.
     */
   val compatibleRuntimes: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
@@ -51,7 +51,7 @@ class LayerVersion protected () extends CustomResource {
     */
   val layerName: Output_[String] = js.native
   /**
-    * License info for your Lambda Layer. See [License Info][3].
+    * License info for your Lambda Layer. See [License Info](https://docs.aws.amazon.com/lambda/latest/dg/API_PublishLayerVersion.html#SSS-PublishLayerVersion-request-LicenseInfo).
     */
   val licenseInfo: Output_[js.UndefOr[String]] = js.native
   /**
@@ -91,8 +91,10 @@ object LayerVersion extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): LayerVersion = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LayerVersion = js.native
   def get(name: String, id: Input[ID], state: LayerVersionState): LayerVersion = js.native
   def get(name: String, id: Input[ID], state: LayerVersionState, opts: CustomResourceOptions): LayerVersion = js.native
   /**

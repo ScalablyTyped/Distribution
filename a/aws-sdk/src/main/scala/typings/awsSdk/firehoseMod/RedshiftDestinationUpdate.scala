@@ -35,7 +35,7 @@ trait RedshiftDestinationUpdate extends js.Object {
     */
   var RoleARN: js.UndefOr[typings.awsSdk.firehoseMod.RoleARN] = js.native
   /**
-    * The Amazon S3 backup mode.
+    * You can update a delivery stream to enable Amazon S3 backup if it is disabled. If backup is enabled, you can't update the delivery stream to disable it. 
     */
   var S3BackupMode: js.UndefOr[RedshiftS3BackupMode] = js.native
   /**
@@ -54,32 +54,66 @@ trait RedshiftDestinationUpdate extends js.Object {
 
 object RedshiftDestinationUpdate {
   @scala.inline
-  def apply(
-    CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
-    ClusterJDBCURL: ClusterJDBCURL = null,
-    CopyCommand: CopyCommand = null,
-    Password: Password = null,
-    ProcessingConfiguration: ProcessingConfiguration = null,
-    RetryOptions: RedshiftRetryOptions = null,
-    RoleARN: RoleARN = null,
-    S3BackupMode: RedshiftS3BackupMode = null,
-    S3BackupUpdate: S3DestinationUpdate = null,
-    S3Update: S3DestinationUpdate = null,
-    Username: Username = null
-  ): RedshiftDestinationUpdate = {
+  def apply(): RedshiftDestinationUpdate = {
     val __obj = js.Dynamic.literal()
-    if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions.asInstanceOf[js.Any])
-    if (ClusterJDBCURL != null) __obj.updateDynamic("ClusterJDBCURL")(ClusterJDBCURL.asInstanceOf[js.Any])
-    if (CopyCommand != null) __obj.updateDynamic("CopyCommand")(CopyCommand.asInstanceOf[js.Any])
-    if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (ProcessingConfiguration != null) __obj.updateDynamic("ProcessingConfiguration")(ProcessingConfiguration.asInstanceOf[js.Any])
-    if (RetryOptions != null) __obj.updateDynamic("RetryOptions")(RetryOptions.asInstanceOf[js.Any])
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
-    if (S3BackupMode != null) __obj.updateDynamic("S3BackupMode")(S3BackupMode.asInstanceOf[js.Any])
-    if (S3BackupUpdate != null) __obj.updateDynamic("S3BackupUpdate")(S3BackupUpdate.asInstanceOf[js.Any])
-    if (S3Update != null) __obj.updateDynamic("S3Update")(S3Update.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftDestinationUpdate]
   }
+  @scala.inline
+  implicit class RedshiftDestinationUpdateOps[Self <: RedshiftDestinationUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = this.set("CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLoggingOptions: Self = this.set("CloudWatchLoggingOptions", js.undefined)
+    @scala.inline
+    def setClusterJDBCURL(value: ClusterJDBCURL): Self = this.set("ClusterJDBCURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterJDBCURL: Self = this.set("ClusterJDBCURL", js.undefined)
+    @scala.inline
+    def setCopyCommand(value: CopyCommand): Self = this.set("CopyCommand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyCommand: Self = this.set("CopyCommand", js.undefined)
+    @scala.inline
+    def setPassword(value: Password): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("Password", js.undefined)
+    @scala.inline
+    def setProcessingConfiguration(value: ProcessingConfiguration): Self = this.set("ProcessingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingConfiguration: Self = this.set("ProcessingConfiguration", js.undefined)
+    @scala.inline
+    def setRetryOptions(value: RedshiftRetryOptions): Self = this.set("RetryOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryOptions: Self = this.set("RetryOptions", js.undefined)
+    @scala.inline
+    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    @scala.inline
+    def setS3BackupMode(value: RedshiftS3BackupMode): Self = this.set("S3BackupMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BackupMode: Self = this.set("S3BackupMode", js.undefined)
+    @scala.inline
+    def setS3BackupUpdate(value: S3DestinationUpdate): Self = this.set("S3BackupUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BackupUpdate: Self = this.set("S3BackupUpdate", js.undefined)
+    @scala.inline
+    def setS3Update(value: S3DestinationUpdate): Self = this.set("S3Update", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Update: Self = this.set("S3Update", js.undefined)
+    @scala.inline
+    def setUsername(value: Username): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,38 @@ trait DescribeCustomKeyStoresRequest extends js.Object {
 
 object DescribeCustomKeyStoresRequest {
   @scala.inline
-  def apply(
-    CustomKeyStoreId: CustomKeyStoreIdType = null,
-    CustomKeyStoreName: CustomKeyStoreNameType = null,
-    Limit: js.UndefOr[LimitType] = js.undefined,
-    Marker: MarkerType = null
-  ): DescribeCustomKeyStoresRequest = {
+  def apply(): DescribeCustomKeyStoresRequest = {
     val __obj = js.Dynamic.literal()
-    if (CustomKeyStoreId != null) __obj.updateDynamic("CustomKeyStoreId")(CustomKeyStoreId.asInstanceOf[js.Any])
-    if (CustomKeyStoreName != null) __obj.updateDynamic("CustomKeyStoreName")(CustomKeyStoreName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCustomKeyStoresRequest]
   }
+  @scala.inline
+  implicit class DescribeCustomKeyStoresRequestOps[Self <: DescribeCustomKeyStoresRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = this.set("CustomKeyStoreId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomKeyStoreId: Self = this.set("CustomKeyStoreId", js.undefined)
+    @scala.inline
+    def setCustomKeyStoreName(value: CustomKeyStoreNameType): Self = this.set("CustomKeyStoreName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomKeyStoreName: Self = this.set("CustomKeyStoreName", js.undefined)
+    @scala.inline
+    def setLimit(value: LimitType): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setMarker(value: MarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Alias extends js.Object {
   /**
     * The previous name of the resource.  If not provided, the current name of the resource is
     * used.
     */
-  var name: js.UndefOr[Input[String]] = js.undefined
+  var name: js.UndefOr[Input[String]] = js.native
   /**
     * The previous parent of the resource.  If not provided (i.e. `{ name: "foo" }`), the current
     * parent of the resource is used (`opts.parent` if provided, else the implicit stack resource
@@ -18,37 +19,59 @@ trait Alias extends js.Object {
     *
     * To specify no original parent, use `{ parent: pulumi.rootStackResource }`.
     */
-  var parent: js.UndefOr[Resource | Input[URN]] = js.undefined
+  var parent: js.UndefOr[Resource | Input[URN]] = js.native
   /**
     * The previous project of the resource. If not provided, defaults to `pulumi.getProject()`.
     */
-  var project: js.UndefOr[Input[String]] = js.undefined
+  var project: js.UndefOr[Input[String]] = js.native
   /**
     * The previous stack of the resource.  If not provided, defaults to `pulumi.getStack()`.
     */
-  var stack: js.UndefOr[Input[String]] = js.undefined
+  var stack: js.UndefOr[Input[String]] = js.native
   /**
     * The previous type of the resource.  If not provided, the current type of the resource is used.
     */
-  var `type`: js.UndefOr[Input[String]] = js.undefined
+  var `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object Alias {
   @scala.inline
-  def apply(
-    name: Input[String] = null,
-    parent: Resource | Input[URN] = null,
-    project: Input[String] = null,
-    stack: Input[String] = null,
-    `type`: Input[String] = null
-  ): Alias = {
+  def apply(): Alias = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alias]
   }
+  @scala.inline
+  implicit class AliasOps[Self <: Alias] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParent(value: Resource | Input[URN]): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setProject(value: Input[String]): Self = this.set("project", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProject: Self = this.set("project", js.undefined)
+    @scala.inline
+    def setStack(value: Input[String]): Self = this.set("stack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStack: Self = this.set("stack", js.undefined)
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

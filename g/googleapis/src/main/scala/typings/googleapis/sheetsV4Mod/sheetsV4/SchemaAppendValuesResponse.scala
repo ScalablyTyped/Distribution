@@ -26,16 +26,34 @@ trait SchemaAppendValuesResponse extends js.Object {
 
 object SchemaAppendValuesResponse {
   @scala.inline
-  def apply(
-    spreadsheetId: String = null,
-    tableRange: String = null,
-    updates: SchemaUpdateValuesResponse = null
-  ): SchemaAppendValuesResponse = {
+  def apply(): SchemaAppendValuesResponse = {
     val __obj = js.Dynamic.literal()
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
-    if (tableRange != null) __obj.updateDynamic("tableRange")(tableRange.asInstanceOf[js.Any])
-    if (updates != null) __obj.updateDynamic("updates")(updates.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAppendValuesResponse]
   }
+  @scala.inline
+  implicit class SchemaAppendValuesResponseOps[Self <: SchemaAppendValuesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
+    @scala.inline
+    def setTableRange(value: String): Self = this.set("tableRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableRange: Self = this.set("tableRange", js.undefined)
+    @scala.inline
+    def setUpdates(value: SchemaUpdateValuesResponse): Self = this.set("updates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdates: Self = this.set("updates", js.undefined)
+  }
+  
 }
 

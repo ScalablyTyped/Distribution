@@ -30,17 +30,36 @@ trait PutRecordInput extends js.Object {
 
 object PutRecordInput {
   @scala.inline
-  def apply(
-    Data: Data,
-    PartitionKey: PartitionKey,
-    StreamName: StreamName,
-    ExplicitHashKey: HashKey = null,
-    SequenceNumberForOrdering: SequenceNumber = null
-  ): PutRecordInput = {
+  def apply(Data: Data, PartitionKey: PartitionKey, StreamName: StreamName): PutRecordInput = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
-    if (ExplicitHashKey != null) __obj.updateDynamic("ExplicitHashKey")(ExplicitHashKey.asInstanceOf[js.Any])
-    if (SequenceNumberForOrdering != null) __obj.updateDynamic("SequenceNumberForOrdering")(SequenceNumberForOrdering.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordInput]
   }
+  @scala.inline
+  implicit class PutRecordInputOps[Self <: PutRecordInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: Data): Self = this.set("Data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPartitionKey(value: PartitionKey): Self = this.set("PartitionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExplicitHashKey(value: HashKey): Self = this.set("ExplicitHashKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplicitHashKey: Self = this.set("ExplicitHashKey", js.undefined)
+    @scala.inline
+    def setSequenceNumberForOrdering(value: SequenceNumber): Self = this.set("SequenceNumberForOrdering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSequenceNumberForOrdering: Self = this.set("SequenceNumberForOrdering", js.undefined)
+  }
+  
 }
 

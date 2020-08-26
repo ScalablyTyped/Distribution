@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** specifies a radio button control. */
+@js.native
 trait UnoControlRadioButton
   extends XControl
      with XWindow

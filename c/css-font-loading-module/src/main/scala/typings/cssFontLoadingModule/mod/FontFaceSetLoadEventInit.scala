@@ -6,24 +6,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FontFaceSetLoadEventInit extends EventInit {
-  var fontfaces: js.UndefOr[js.Array[FontFace]] = js.undefined
+  var fontfaces: js.UndefOr[js.Array[FontFace]] = js.native
 }
 
 object FontFaceSetLoadEventInit {
   @scala.inline
-  def apply(
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    composed: js.UndefOr[Boolean] = js.undefined,
-    fontfaces: js.Array[FontFace] = null
-  ): FontFaceSetLoadEventInit = {
+  def apply(): FontFaceSetLoadEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
-    if (fontfaces != null) __obj.updateDynamic("fontfaces")(fontfaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFaceSetLoadEventInit]
   }
+  @scala.inline
+  implicit class FontFaceSetLoadEventInitOps[Self <: FontFaceSetLoadEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFontfacesVarargs(value: FontFace*): Self = this.set("fontfaces", js.Array(value :_*))
+    @scala.inline
+    def setFontfaces(value: js.Array[FontFace]): Self = this.set("fontfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontfaces: Self = this.set("fontfaces", js.undefined)
+  }
+  
 }
 

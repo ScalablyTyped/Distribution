@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 class OnEntryRecordAdded protected ()
   extends typings.sharepoint.SP.JsGrid.EventArgs.OnEntryRecordAdded {
   def this(recordKey: Double) = this()
-  /* CompleteClass */
-  override var recordKey: Double = js.native
 }
 

@@ -20,6 +20,11 @@ class EventEmitter[T] () extends js.Object {
     * The event listeners can subscribe to.
     */
   def event(listener: js.Function1[/* e */ T, _]): Disposable = js.native
+  def event(
+    listener: js.Function1[/* e */ T, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def event(listener: js.Function1[/* e */ T, _], thisArgs: js.Any): Disposable = js.native
   def event(listener: js.Function1[/* e */ T, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   /**

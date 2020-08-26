@@ -1,159 +1,172 @@
 package typings.senchaTouch.Ext.direct
 
-import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
-import typings.senchaTouch.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IEvent extends IBase {
   /** [Config Option] (Object) */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
   /** [Method] Returns the value of code
     * @returns Object
     */
-  var getCode: js.UndefOr[js.Function0[_]] = js.undefined
+  var getCode: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of data
     * @returns Object
     */
-  var getData: js.UndefOr[js.Function0[_]] = js.undefined
+  var getData: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of message
     * @returns String
     */
-  var getMessage: js.UndefOr[js.Function0[String]] = js.undefined
+  var getMessage: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of name
     * @returns String
     */
-  var getName: js.UndefOr[js.Function0[String]] = js.undefined
+  var getName: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of result
     * @returns Object
     */
-  var getResult: js.UndefOr[js.Function0[_]] = js.undefined
+  var getResult: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of status
     * @returns Boolean
     */
-  var getStatus: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getStatus: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of transaction
     * @returns Object
     */
-  var getTransaction: js.UndefOr[js.Function0[_]] = js.undefined
+  var getTransaction: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of xhr
     * @returns Object
     */
-  var getXhr: js.UndefOr[js.Function0[_]] = js.undefined
+  var getXhr: js.UndefOr[js.Function0[_]] = js.native
   /** [Config Option] (String) */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** [Method] Sets the value of code
     * @param code Object The new value.
     */
-  var setCode: js.UndefOr[js.Function1[/* code */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setCode: js.UndefOr[js.Function1[/* code */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of data
     * @param data Object The new value.
     */
-  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of message
     * @param message String The new value.
     */
-  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[String], Unit]] = js.undefined
+  var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of name
     * @param name String The new value.
     */
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of result
     * @param result Object The new value.
     */
-  var setResult: js.UndefOr[js.Function1[/* result */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setResult: js.UndefOr[js.Function1[/* result */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of status
     * @param status Boolean The new value.
     */
-  var setStatus: js.UndefOr[js.Function1[/* status */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setStatus: js.UndefOr[js.Function1[/* status */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of transaction
     * @param transaction Object The new value.
     */
-  var setTransaction: js.UndefOr[js.Function1[/* transaction */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTransaction: js.UndefOr[js.Function1[/* transaction */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of xhr
     * @param xhr Object The new value.
     */
-  var setXhr: js.UndefOr[js.Function1[/* xhr */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setXhr: js.UndefOr[js.Function1[/* xhr */ js.UndefOr[js.Any], Unit]] = js.native
 }
 
 object IEvent {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    data: js.Any = null,
-    destroy: () => Unit = null,
-    extend: String = null,
-    getCode: () => _ = null,
-    getData: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getMessage: () => String = null,
-    getName: () => String = null,
-    getResult: () => _ = null,
-    getStatus: () => Boolean = null,
-    getTransaction: () => _ = null,
-    getXhr: () => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    mixins: js.Any = null,
-    name: String = null,
-    platformConfig: js.Any = null,
-    self: IClass = null,
-    setCode: /* code */ js.UndefOr[js.Any] => Unit = null,
-    setData: /* data */ js.UndefOr[js.Any] => Unit = null,
-    setMessage: /* message */ js.UndefOr[String] => Unit = null,
-    setName: /* name */ js.UndefOr[String] => Unit = null,
-    setResult: /* result */ js.UndefOr[js.Any] => Unit = null,
-    setStatus: /* status */ js.UndefOr[Boolean] => Unit = null,
-    setTransaction: /* transaction */ js.UndefOr[js.Any] => Unit = null,
-    setXhr: /* xhr */ js.UndefOr[js.Any] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    uses: Array = null
-  ): IEvent = {
+  def apply(): IEvent = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getCode != null) __obj.updateDynamic("getCode")(js.Any.fromFunction0(getCode))
-    if (getData != null) __obj.updateDynamic("getData")(js.Any.fromFunction0(getData))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getMessage != null) __obj.updateDynamic("getMessage")(js.Any.fromFunction0(getMessage))
-    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
-    if (getResult != null) __obj.updateDynamic("getResult")(js.Any.fromFunction0(getResult))
-    if (getStatus != null) __obj.updateDynamic("getStatus")(js.Any.fromFunction0(getStatus))
-    if (getTransaction != null) __obj.updateDynamic("getTransaction")(js.Any.fromFunction0(getTransaction))
-    if (getXhr != null) __obj.updateDynamic("getXhr")(js.Any.fromFunction0(getXhr))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setCode != null) __obj.updateDynamic("setCode")(js.Any.fromFunction1(setCode))
-    if (setData != null) __obj.updateDynamic("setData")(js.Any.fromFunction1(setData))
-    if (setMessage != null) __obj.updateDynamic("setMessage")(js.Any.fromFunction1(setMessage))
-    if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
-    if (setResult != null) __obj.updateDynamic("setResult")(js.Any.fromFunction1(setResult))
-    if (setStatus != null) __obj.updateDynamic("setStatus")(js.Any.fromFunction1(setStatus))
-    if (setTransaction != null) __obj.updateDynamic("setTransaction")(js.Any.fromFunction1(setTransaction))
-    if (setXhr != null) __obj.updateDynamic("setXhr")(js.Any.fromFunction1(setXhr))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvent]
   }
+  @scala.inline
+  implicit class IEventOps[Self <: IEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setGetCode(value: () => _): Self = this.set("getCode", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetCode: Self = this.set("getCode", js.undefined)
+    @scala.inline
+    def setGetData(value: () => _): Self = this.set("getData", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetData: Self = this.set("getData", js.undefined)
+    @scala.inline
+    def setGetMessage(value: () => String): Self = this.set("getMessage", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMessage: Self = this.set("getMessage", js.undefined)
+    @scala.inline
+    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetName: Self = this.set("getName", js.undefined)
+    @scala.inline
+    def setGetResult(value: () => _): Self = this.set("getResult", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetResult: Self = this.set("getResult", js.undefined)
+    @scala.inline
+    def setGetStatus(value: () => Boolean): Self = this.set("getStatus", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetStatus: Self = this.set("getStatus", js.undefined)
+    @scala.inline
+    def setGetTransaction(value: () => _): Self = this.set("getTransaction", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTransaction: Self = this.set("getTransaction", js.undefined)
+    @scala.inline
+    def setGetXhr(value: () => _): Self = this.set("getXhr", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetXhr: Self = this.set("getXhr", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSetCode(value: /* code */ js.UndefOr[js.Any] => Unit): Self = this.set("setCode", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetCode: Self = this.set("setCode", js.undefined)
+    @scala.inline
+    def setSetData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = this.set("setData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetData: Self = this.set("setData", js.undefined)
+    @scala.inline
+    def setSetMessage(value: /* message */ js.UndefOr[String] => Unit): Self = this.set("setMessage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMessage: Self = this.set("setMessage", js.undefined)
+    @scala.inline
+    def setSetName(value: /* name */ js.UndefOr[String] => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetName: Self = this.set("setName", js.undefined)
+    @scala.inline
+    def setSetResult(value: /* result */ js.UndefOr[js.Any] => Unit): Self = this.set("setResult", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetResult: Self = this.set("setResult", js.undefined)
+    @scala.inline
+    def setSetStatus(value: /* status */ js.UndefOr[Boolean] => Unit): Self = this.set("setStatus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetStatus: Self = this.set("setStatus", js.undefined)
+    @scala.inline
+    def setSetTransaction(value: /* transaction */ js.UndefOr[js.Any] => Unit): Self = this.set("setTransaction", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetTransaction: Self = this.set("setTransaction", js.undefined)
+    @scala.inline
+    def setSetXhr(value: /* xhr */ js.UndefOr[js.Any] => Unit): Self = this.set("setXhr", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetXhr: Self = this.set("setXhr", js.undefined)
+  }
+  
 }
 

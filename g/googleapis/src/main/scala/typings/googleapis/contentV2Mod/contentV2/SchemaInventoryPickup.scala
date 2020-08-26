@@ -23,11 +23,30 @@ trait SchemaInventoryPickup extends js.Object {
 
 object SchemaInventoryPickup {
   @scala.inline
-  def apply(pickupMethod: String = null, pickupSla: String = null): SchemaInventoryPickup = {
+  def apply(): SchemaInventoryPickup = {
     val __obj = js.Dynamic.literal()
-    if (pickupMethod != null) __obj.updateDynamic("pickupMethod")(pickupMethod.asInstanceOf[js.Any])
-    if (pickupSla != null) __obj.updateDynamic("pickupSla")(pickupSla.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInventoryPickup]
   }
+  @scala.inline
+  implicit class SchemaInventoryPickupOps[Self <: SchemaInventoryPickup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPickupMethod(value: String): Self = this.set("pickupMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePickupMethod: Self = this.set("pickupMethod", js.undefined)
+    @scala.inline
+    def setPickupSla(value: String): Self = this.set("pickupSla", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePickupSla: Self = this.set("pickupSla", js.undefined)
+  }
+  
 }
 

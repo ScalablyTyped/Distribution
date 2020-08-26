@@ -35,24 +35,54 @@ trait GroupDetail extends js.Object {
 
 object GroupDetail {
   @scala.inline
-  def apply(
-    Arn: arnType = null,
-    AttachedManagedPolicies: attachedPoliciesListType = null,
-    CreateDate: dateType = null,
-    GroupId: idType = null,
-    GroupName: groupNameType = null,
-    GroupPolicyList: policyDetailListType = null,
-    Path: pathType = null
-  ): GroupDetail = {
+  def apply(): GroupDetail = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (AttachedManagedPolicies != null) __obj.updateDynamic("AttachedManagedPolicies")(AttachedManagedPolicies.asInstanceOf[js.Any])
-    if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
-    if (GroupId != null) __obj.updateDynamic("GroupId")(GroupId.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
-    if (GroupPolicyList != null) __obj.updateDynamic("GroupPolicyList")(GroupPolicyList.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupDetail]
   }
+  @scala.inline
+  implicit class GroupDetailOps[Self <: GroupDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAttachedManagedPoliciesVarargs(value: AttachedPolicy*): Self = this.set("AttachedManagedPolicies", js.Array(value :_*))
+    @scala.inline
+    def setAttachedManagedPolicies(value: attachedPoliciesListType): Self = this.set("AttachedManagedPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachedManagedPolicies: Self = this.set("AttachedManagedPolicies", js.undefined)
+    @scala.inline
+    def setCreateDate(value: dateType): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    @scala.inline
+    def setGroupId(value: idType): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("GroupId", js.undefined)
+    @scala.inline
+    def setGroupName(value: groupNameType): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    @scala.inline
+    def setGroupPolicyListVarargs(value: PolicyDetail*): Self = this.set("GroupPolicyList", js.Array(value :_*))
+    @scala.inline
+    def setGroupPolicyList(value: policyDetailListType): Self = this.set("GroupPolicyList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupPolicyList: Self = this.set("GroupPolicyList", js.undefined)
+    @scala.inline
+    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+  }
+  
 }
 

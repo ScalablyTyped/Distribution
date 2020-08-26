@@ -1,7 +1,14 @@
 package typings.materialChips
 
+import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialChips.adapterMod.MDCChipSetAdapter
-import typings.std.Element
+import typings.materialChips.anon.CHIPSELECTOR
+import typings.materialChips.anon.CHOICE
+import typings.materialChips.anon.PartialMDCChipSetAdapter
+import typings.materialChips.typesMod.MDCChipInteractionEventDetail
+import typings.materialChips.typesMod.MDCChipNavigationEventDetail
+import typings.materialChips.typesMod.MDCChipRemovalEventDetail
+import typings.materialChips.typesMod.MDCChipSelectionEventDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,35 +17,54 @@ import scala.scalajs.js.annotation._
 @js.native
 object foundationMod extends js.Object {
   @js.native
-  trait MDCChipSetFoundation
-    extends typings.materialBase.foundationMod.default[MDCChipSetAdapter] {
+  class MDCChipSetFoundation () extends MDCFoundation[MDCChipSetAdapter] {
+    def this(adapter: PartialMDCChipSetAdapter) = this()
     /**
-      * Returns a new chip element with the given text, leading icon, and trailing icon,
-      * added to the root chip set element.
+      * Returns an array of the IDs of all selected chips.
       */
-    def addChip(text: String): Element = js.native
-    def addChip(text: String, leadingIcon: Null, trailingIcon: Element): Element = js.native
-    def addChip(text: String, leadingIcon: Element): Element = js.native
-    def addChip(text: String, leadingIcon: Element, trailingIcon: Element): Element = js.native
+    def getSelectedChipIds(): js.Array[String] = js.native
     /**
-      * Deselects the given chip.
+      * Handles a chip interaction event
       */
-    def deselect(chipFoundation: default): Unit = js.native
+    def handleChipInteraction(hasChipId: MDCChipInteractionEventDetail): Unit = js.native
     /**
-      * Selects the given chip. Deselects all other chips if the chip set is of the choice variant.
+      * Handles a chip navigation event.
       */
-    def select(chipFoundation: default): Unit = js.native
+    def handleChipNavigation(hasChipIdKeySource: MDCChipNavigationEventDetail): Unit = js.native
+    /**
+      * Handles the event when a chip is removed.
+      */
+    def handleChipRemoval(hasChipIdRemovedAnnouncement: MDCChipRemovalEventDetail): Unit = js.native
+    /**
+      * Handles a chip selection event, used to handle discrepancy when selection state is set directly on the Chip.
+      */
+    def handleChipSelection(hasChipIdSelectedShouldIgnore: MDCChipSelectionEventDetail): Unit = js.native
+    /**
+      * Selects the chip with the given id. Deselects all other chips if the chip set is of the choice variant.
+      * Does not notify clients of the updated selection state.
+      */
+    def select(chipId: String): Unit = js.native
   }
   
   @js.native
-  class default () extends MDCChipSetFoundation
+  class default () extends MDCChipSetFoundation {
+    def this(adapter: PartialMDCChipSetAdapter) = this()
+  }
+  
+  /* static members */
+  @js.native
+  object MDCChipSetFoundation extends js.Object {
+    def cssClasses: CHOICE = js.native
+    def defaultAdapter: MDCChipSetAdapter = js.native
+    def strings: CHIPSELECTOR = js.native
+  }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    val cssClasses: typings.materialChips.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCChipSetAdapter = js.native
-    val strings: typings.materialChips.constantsMod.strings = js.native
+    def cssClasses: CHOICE = js.native
+    def defaultAdapter: MDCChipSetAdapter = js.native
+    def strings: CHIPSELECTOR = js.native
   }
   
 }

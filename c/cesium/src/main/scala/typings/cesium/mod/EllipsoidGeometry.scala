@@ -17,6 +17,7 @@ class EllipsoidGeometry () extends Packable {
 object EllipsoidGeometry extends js.Object {
   def createGeometry(ellipsoidGeometry: EllipsoidGeometry): Geometry = js.native
   def unpack(array: js.Array[Double]): EllipsoidGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: EllipsoidGeometry): EllipsoidGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): EllipsoidGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: EllipsoidGeometry): EllipsoidGeometry = js.native
 }

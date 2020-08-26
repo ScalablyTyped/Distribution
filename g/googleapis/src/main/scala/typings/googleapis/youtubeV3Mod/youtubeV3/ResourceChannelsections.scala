@@ -28,6 +28,7 @@ class ResourceChannelsections protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceChannelsectionsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceChannelsectionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -58,6 +59,7 @@ class ResourceChannelsections protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaChannelSection] = js.native
   def insert(callback: BodyResponseCallback[SchemaChannelSection]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannelSection] = js.native
   def insert(params: ParamsResourceChannelsectionsInsert): GaxiosPromise[SchemaChannelSection] = js.native
   def insert(params: ParamsResourceChannelsectionsInsert, callback: BodyResponseCallback[SchemaChannelSection]): Unit = js.native
   def insert(
@@ -91,6 +93,7 @@ class ResourceChannelsections protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaChannelSectionListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaChannelSectionListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannelSectionListResponse] = js.native
   def list(params: ParamsResourceChannelsectionsList): GaxiosPromise[SchemaChannelSectionListResponse] = js.native
   def list(
     params: ParamsResourceChannelsectionsList,
@@ -123,6 +126,7 @@ class ResourceChannelsections protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaChannelSection] = js.native
   def update(callback: BodyResponseCallback[SchemaChannelSection]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannelSection] = js.native
   def update(params: ParamsResourceChannelsectionsUpdate): GaxiosPromise[SchemaChannelSection] = js.native
   def update(params: ParamsResourceChannelsectionsUpdate, callback: BodyResponseCallback[SchemaChannelSection]): Unit = js.native
   def update(

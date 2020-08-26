@@ -14,5 +14,7 @@ class TrayCls protected () extends Tray {
     * Tray
     */
   def this(image: NativeImage_) = this()
+  def this(image: String, guid: String) = this()
+  def this(image: NativeImage_, guid: String) = this()
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TokenType protected () extends js.Object {
   def this(label: String) = this()
-  def this(label: String, conf: TokeTypeConfig) = this()
+  def this(label: String, conf: js.Any) = this()
   var beforeExpr: Boolean = js.native
   var binop: Double = js.native
   var isAssign: Boolean = js.native
@@ -18,6 +18,6 @@ class TokenType protected () extends js.Object {
   var postfix: Boolean = js.native
   var prefix: Boolean = js.native
   var startsExpr: Boolean = js.native
-  def updateContext(prevType: TokenType): Unit = js.native
+  var updateContext: js.UndefOr[js.Function1[/* prevType */ this.type, Unit]] = js.native
 }
 

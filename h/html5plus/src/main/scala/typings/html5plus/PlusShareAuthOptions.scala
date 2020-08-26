@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
   */
+@js.native
 trait PlusShareAuthOptions extends js.Object {
   /**
     * 分享服务平台申请的appid
@@ -18,7 +19,7 @@ trait PlusShareAuthOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var appid: js.UndefOr[String] = js.undefined
+  var appid: js.UndefOr[String] = js.native
   /**
     * 分享服务平台申请的appkey
     * 动态设置分享服务授权认证时需要使用的appkey，仅需要此参数的分享服务（如“新浪微博”）支持。
@@ -26,7 +27,7 @@ trait PlusShareAuthOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var appkey: js.UndefOr[String] = js.undefined
+  var appkey: js.UndefOr[String] = js.native
   /**
     * 分享服务平台申请的appsecret
     * 动态设置分享服务中需要使用的appsecret，仅需要此参数的分享服务（如“微信”、“新浪微博”）支持。
@@ -34,7 +35,7 @@ trait PlusShareAuthOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var appsecret: js.UndefOr[String] = js.undefined
+  var appsecret: js.UndefOr[String] = js.native
   /**
     * 分享服务平台申请的redirect_url
     * 动态设置分享服务中需要使用的redirect_url，仅需要此参数的登录授权服务（如“新浪微博登录”）支持。
@@ -42,18 +43,43 @@ trait PlusShareAuthOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var redirect_url: js.UndefOr[String] = js.undefined
+  var redirect_url: js.UndefOr[String] = js.native
 }
 
 object PlusShareAuthOptions {
   @scala.inline
-  def apply(appid: String = null, appkey: String = null, appsecret: String = null, redirect_url: String = null): PlusShareAuthOptions = {
+  def apply(): PlusShareAuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
-    if (appkey != null) __obj.updateDynamic("appkey")(appkey.asInstanceOf[js.Any])
-    if (appsecret != null) __obj.updateDynamic("appsecret")(appsecret.asInstanceOf[js.Any])
-    if (redirect_url != null) __obj.updateDynamic("redirect_url")(redirect_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusShareAuthOptions]
   }
+  @scala.inline
+  implicit class PlusShareAuthOptionsOps[Self <: PlusShareAuthOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppid(value: String): Self = this.set("appid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppid: Self = this.set("appid", js.undefined)
+    @scala.inline
+    def setAppkey(value: String): Self = this.set("appkey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppkey: Self = this.set("appkey", js.undefined)
+    @scala.inline
+    def setAppsecret(value: String): Self = this.set("appsecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppsecret: Self = this.set("appsecret", js.undefined)
+    @scala.inline
+    def setRedirect_url(value: String): Self = this.set("redirect_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirect_url: Self = this.set("redirect_url", js.undefined)
+  }
+  
 }
 

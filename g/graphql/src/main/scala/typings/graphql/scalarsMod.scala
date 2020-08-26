@@ -1,5 +1,6 @@
 package typings.graphql
 
+import typings.graphql.definitionMod.GraphQLNamedType
 import typings.graphql.definitionMod.GraphQLScalarType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +15,6 @@ object scalarsMod extends js.Object {
   val GraphQLInt: GraphQLScalarType = js.native
   val GraphQLString: GraphQLScalarType = js.native
   val specifiedScalarTypes: js.Array[GraphQLScalarType] = js.native
-  def isSpecifiedScalarType(`type`: js.Any): Boolean = js.native
+  def isSpecifiedScalarType(`type`: GraphQLNamedType): Boolean = js.native
 }
 

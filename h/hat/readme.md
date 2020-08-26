@@ -11,8 +11,8 @@ generate random IDs and avoid collisions
 | Full name          | hat |
 | Keywords           | id, uid, uuid, random, hat, rack, unique |
 | # releases         | 0 |
-| # dependents       | 245 |
-| # downloads        | 7256274 |
+| # dependents       | 244 |
+| # downloads        | 7528160 |
 | # stars            | 13 |
 
 ## Links

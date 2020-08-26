@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Calls.LockScreenCallEndCallDeferral")
 @js.native
 abstract class LockScreenCallEndCallDeferral ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Calls.LockScreenCallEndCallDeferral {
-  /** Completes the deferral of the removal of the app from the lock screen, which causes the app to be removed from the lock screen if it hasn't already been removed by other means. */
-  /* CompleteClass */
-  override def complete(): Unit = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Calls.LockScreenCallEndCallDeferral
 

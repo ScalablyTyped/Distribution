@@ -13,11 +13,6 @@ import scala.scalajs.js.annotation._
 class IonSkeletonText protected ()
   extends typings.ionicCore.componentsMod.Components.IonSkeletonText {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
-  /**
-    * If `true`, the skeleton text will animate.
-    */
-  /* CompleteClass */
-  override var animated: Boolean = js.native
   var el: HTMLElement = js.native
   var z: NgZone = js.native
 }

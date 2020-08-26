@@ -22,5 +22,22 @@ object DeltaTime {
     val __obj = js.Dynamic.literal(offsetSeconds = offsetSeconds.asInstanceOf[js.Any], timeExpression = timeExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeltaTime]
   }
+  @scala.inline
+  implicit class DeltaTimeOps[Self <: DeltaTime] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOffsetSeconds(value: OffsetSeconds): Self = this.set("offsetSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeExpression(value: TimeExpression): Self = this.set("timeExpression", value.asInstanceOf[js.Any])
+  }
+  
 }
 

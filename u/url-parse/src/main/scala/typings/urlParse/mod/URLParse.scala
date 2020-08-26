@@ -21,6 +21,8 @@ trait URLParse extends js.Object {
   val slashes: Boolean = js.native
   val username: String = js.native
   def set(part: URLPart): URLParse = js.native
+  def set(part: URLPart, value: js.UndefOr[scala.Nothing], fn: Boolean): URLParse = js.native
+  def set(part: URLPart, value: js.UndefOr[scala.Nothing], fn: QueryParser): URLParse = js.native
   def set(part: URLPart, value: String): URLParse = js.native
   def set(part: URLPart, value: String, fn: Boolean): URLParse = js.native
   def set(part: URLPart, value: String, fn: QueryParser): URLParse = js.native

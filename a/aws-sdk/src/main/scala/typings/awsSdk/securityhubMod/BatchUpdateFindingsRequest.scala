@@ -47,29 +47,66 @@ trait BatchUpdateFindingsRequest extends js.Object {
 
 object BatchUpdateFindingsRequest {
   @scala.inline
-  def apply(
-    FindingIdentifiers: AwsSecurityFindingIdentifierList,
-    Confidence: js.UndefOr[RatioScale] = js.undefined,
-    Criticality: js.UndefOr[RatioScale] = js.undefined,
-    Note: NoteUpdate = null,
-    RelatedFindings: RelatedFindingList = null,
-    Severity: SeverityUpdate = null,
-    Types: TypeList = null,
-    UserDefinedFields: FieldMap = null,
-    VerificationState: VerificationState = null,
-    Workflow: WorkflowUpdate = null
-  ): BatchUpdateFindingsRequest = {
+  def apply(FindingIdentifiers: AwsSecurityFindingIdentifierList): BatchUpdateFindingsRequest = {
     val __obj = js.Dynamic.literal(FindingIdentifiers = FindingIdentifiers.asInstanceOf[js.Any])
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Criticality)) __obj.updateDynamic("Criticality")(Criticality.get.asInstanceOf[js.Any])
-    if (Note != null) __obj.updateDynamic("Note")(Note.asInstanceOf[js.Any])
-    if (RelatedFindings != null) __obj.updateDynamic("RelatedFindings")(RelatedFindings.asInstanceOf[js.Any])
-    if (Severity != null) __obj.updateDynamic("Severity")(Severity.asInstanceOf[js.Any])
-    if (Types != null) __obj.updateDynamic("Types")(Types.asInstanceOf[js.Any])
-    if (UserDefinedFields != null) __obj.updateDynamic("UserDefinedFields")(UserDefinedFields.asInstanceOf[js.Any])
-    if (VerificationState != null) __obj.updateDynamic("VerificationState")(VerificationState.asInstanceOf[js.Any])
-    if (Workflow != null) __obj.updateDynamic("Workflow")(Workflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdateFindingsRequest]
   }
+  @scala.inline
+  implicit class BatchUpdateFindingsRequestOps[Self <: BatchUpdateFindingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFindingIdentifiersVarargs(value: AwsSecurityFindingIdentifier*): Self = this.set("FindingIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setFindingIdentifiers(value: AwsSecurityFindingIdentifierList): Self = this.set("FindingIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfidence(value: RatioScale): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    @scala.inline
+    def setCriticality(value: RatioScale): Self = this.set("Criticality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriticality: Self = this.set("Criticality", js.undefined)
+    @scala.inline
+    def setNote(value: NoteUpdate): Self = this.set("Note", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNote: Self = this.set("Note", js.undefined)
+    @scala.inline
+    def setRelatedFindingsVarargs(value: RelatedFinding*): Self = this.set("RelatedFindings", js.Array(value :_*))
+    @scala.inline
+    def setRelatedFindings(value: RelatedFindingList): Self = this.set("RelatedFindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedFindings: Self = this.set("RelatedFindings", js.undefined)
+    @scala.inline
+    def setSeverity(value: SeverityUpdate): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("Severity", js.undefined)
+    @scala.inline
+    def setTypesVarargs(value: NonEmptyString*): Self = this.set("Types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: TypeList): Self = this.set("Types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("Types", js.undefined)
+    @scala.inline
+    def setUserDefinedFields(value: FieldMap): Self = this.set("UserDefinedFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserDefinedFields: Self = this.set("UserDefinedFields", js.undefined)
+    @scala.inline
+    def setVerificationState(value: VerificationState): Self = this.set("VerificationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerificationState: Self = this.set("VerificationState", js.undefined)
+    @scala.inline
+    def setWorkflow(value: WorkflowUpdate): Self = this.set("Workflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflow: Self = this.set("Workflow", js.undefined)
+  }
+  
 }
 

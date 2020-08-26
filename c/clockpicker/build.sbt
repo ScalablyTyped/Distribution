@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "clockpicker"
-version := "0.0-dt-20200306Z-8bfdd0"
-scalaVersion := "2.13.2"
+version := "0.0-dt-20200306Z-22e096"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vue-class-component/lib/declarations", JSImport.Namespace)
 @js.native
 object declarationsMod extends js.Object {
-  /* Inlined vue-class-component.vue-class-component/lib/declarations.VueClass<vue.vue.default> & {  __decorators__ ? :std.Array<(options : vue.vue.ComponentOptions<vue.vue.default, vue.vue/types/options.DefaultData<vue.vue.default>, vue.vue/types/options.DefaultMethods<vue.vue.default>, vue.vue/types/options.DefaultComputed, vue.vue/types/options.PropsDefinition<vue.vue/types/options.DefaultProps>, vue.vue/types/options.DefaultProps>): void>} */
+  /* Inlined vue-class-component.vue-class-component/lib/declarations.VueClass<vue.vue.default> & {  __decorators__ :std.Array<(options : vue.vue.ComponentOptions<vue.vue.default, vue.vue/types/options.DefaultData<vue.vue.default>, vue.vue/types/options.DefaultMethods<vue.vue.default>, vue.vue/types/options.DefaultComputed, vue.vue/types/options.PropsDefinition<vue.vue/types/options.DefaultProps>, vue.vue/types/options.DefaultProps>): void> | undefined} */
   @js.native
   trait DecoratedClass
     extends // ideally, the return type should just contain Props, not Record<keyof Props, any>. But TS requires to have Base constructors with the same return type.

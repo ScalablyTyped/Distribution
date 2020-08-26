@@ -6,48 +6,83 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.KeySettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.KeySettings._Impl>> */
+@js.native
 trait PartialPickImplkeyofImplBackspace extends js.Object {
-  var backspace: js.UndefOr[Double] = js.undefined
-  var deleteKey: js.UndefOr[Double] = js.undefined
-  var delimiter: js.UndefOr[Double | `false`] = js.undefined
-  var downArrow: js.UndefOr[Double] = js.undefined
-  var enter: js.UndefOr[Double] = js.undefined
-  var escape: js.UndefOr[Double] = js.undefined
-  var leftArrow: js.UndefOr[Double] = js.undefined
-  var pageDown: js.UndefOr[Double] = js.undefined
-  var pageUp: js.UndefOr[Double] = js.undefined
-  var rightArrow: js.UndefOr[Double] = js.undefined
-  var upArrow: js.UndefOr[Double] = js.undefined
+  var backspace: js.UndefOr[Double] = js.native
+  var deleteKey: js.UndefOr[Double] = js.native
+  var delimiter: js.UndefOr[Double | `false`] = js.native
+  var downArrow: js.UndefOr[Double] = js.native
+  var enter: js.UndefOr[Double] = js.native
+  var escape: js.UndefOr[Double] = js.native
+  var leftArrow: js.UndefOr[Double] = js.native
+  var pageDown: js.UndefOr[Double] = js.native
+  var pageUp: js.UndefOr[Double] = js.native
+  var rightArrow: js.UndefOr[Double] = js.native
+  var upArrow: js.UndefOr[Double] = js.native
 }
 
 object PartialPickImplkeyofImplBackspace {
   @scala.inline
-  def apply(
-    backspace: js.UndefOr[Double] = js.undefined,
-    deleteKey: js.UndefOr[Double] = js.undefined,
-    delimiter: Double | `false` = null,
-    downArrow: js.UndefOr[Double] = js.undefined,
-    enter: js.UndefOr[Double] = js.undefined,
-    escape: js.UndefOr[Double] = js.undefined,
-    leftArrow: js.UndefOr[Double] = js.undefined,
-    pageDown: js.UndefOr[Double] = js.undefined,
-    pageUp: js.UndefOr[Double] = js.undefined,
-    rightArrow: js.UndefOr[Double] = js.undefined,
-    upArrow: js.UndefOr[Double] = js.undefined
-  ): PartialPickImplkeyofImplBackspace = {
+  def apply(): PartialPickImplkeyofImplBackspace = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backspace)) __obj.updateDynamic("backspace")(backspace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteKey)) __obj.updateDynamic("deleteKey")(deleteKey.get.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(downArrow)) __obj.updateDynamic("downArrow")(downArrow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enter)) __obj.updateDynamic("enter")(enter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(escape)) __obj.updateDynamic("escape")(escape.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(leftArrow)) __obj.updateDynamic("leftArrow")(leftArrow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageDown)) __obj.updateDynamic("pageDown")(pageDown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageUp)) __obj.updateDynamic("pageUp")(pageUp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightArrow)) __obj.updateDynamic("rightArrow")(rightArrow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(upArrow)) __obj.updateDynamic("upArrow")(upArrow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialPickImplkeyofImplBackspace]
   }
+  @scala.inline
+  implicit class PartialPickImplkeyofImplBackspaceOps[Self <: PartialPickImplkeyofImplBackspace] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackspace(value: Double): Self = this.set("backspace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackspace: Self = this.set("backspace", js.undefined)
+    @scala.inline
+    def setDeleteKey(value: Double): Self = this.set("deleteKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteKey: Self = this.set("deleteKey", js.undefined)
+    @scala.inline
+    def setDelimiter(value: Double | `false`): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    @scala.inline
+    def setDownArrow(value: Double): Self = this.set("downArrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownArrow: Self = this.set("downArrow", js.undefined)
+    @scala.inline
+    def setEnter(value: Double): Self = this.set("enter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnter: Self = this.set("enter", js.undefined)
+    @scala.inline
+    def setEscape(value: Double): Self = this.set("escape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEscape: Self = this.set("escape", js.undefined)
+    @scala.inline
+    def setLeftArrow(value: Double): Self = this.set("leftArrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftArrow: Self = this.set("leftArrow", js.undefined)
+    @scala.inline
+    def setPageDown(value: Double): Self = this.set("pageDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageDown: Self = this.set("pageDown", js.undefined)
+    @scala.inline
+    def setPageUp(value: Double): Self = this.set("pageUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageUp: Self = this.set("pageUp", js.undefined)
+    @scala.inline
+    def setRightArrow(value: Double): Self = this.set("rightArrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightArrow: Self = this.set("rightArrow", js.undefined)
+    @scala.inline
+    def setUpArrow(value: Double): Self = this.set("upArrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpArrow: Self = this.set("upArrow", js.undefined)
+  }
+  
 }
 

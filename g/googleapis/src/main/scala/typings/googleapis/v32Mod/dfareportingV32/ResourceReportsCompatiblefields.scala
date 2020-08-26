@@ -30,6 +30,7 @@ class ResourceReportsCompatiblefields protected () extends js.Object {
     */
   def query(): GaxiosPromise[SchemaCompatibleFields] = js.native
   def query(callback: BodyResponseCallback[SchemaCompatibleFields]): Unit = js.native
+  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCompatibleFields] = js.native
   def query(params: ParamsResourceReportsCompatiblefieldsQuery): GaxiosPromise[SchemaCompatibleFields] = js.native
   def query(
     params: ParamsResourceReportsCompatiblefieldsQuery,

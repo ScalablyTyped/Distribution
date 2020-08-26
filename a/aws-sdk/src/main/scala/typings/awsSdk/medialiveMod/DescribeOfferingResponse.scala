@@ -54,32 +54,66 @@ trait DescribeOfferingResponse extends js.Object {
 
 object DescribeOfferingResponse {
   @scala.inline
-  def apply(
-    Arn: string = null,
-    CurrencyCode: string = null,
-    Duration: js.UndefOr[integer] = js.undefined,
-    DurationUnits: OfferingDurationUnits = null,
-    FixedPrice: js.UndefOr[double] = js.undefined,
-    OfferingDescription: string = null,
-    OfferingId: string = null,
-    OfferingType: OfferingType = null,
-    Region: string = null,
-    ResourceSpecification: ReservationResourceSpecification = null,
-    UsagePrice: js.UndefOr[double] = js.undefined
-  ): DescribeOfferingResponse = {
+  def apply(): DescribeOfferingResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (DurationUnits != null) __obj.updateDynamic("DurationUnits")(DurationUnits.asInstanceOf[js.Any])
-    if (!js.isUndefined(FixedPrice)) __obj.updateDynamic("FixedPrice")(FixedPrice.get.asInstanceOf[js.Any])
-    if (OfferingDescription != null) __obj.updateDynamic("OfferingDescription")(OfferingDescription.asInstanceOf[js.Any])
-    if (OfferingId != null) __obj.updateDynamic("OfferingId")(OfferingId.asInstanceOf[js.Any])
-    if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (ResourceSpecification != null) __obj.updateDynamic("ResourceSpecification")(ResourceSpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsagePrice)) __obj.updateDynamic("UsagePrice")(UsagePrice.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOfferingResponse]
   }
+  @scala.inline
+  implicit class DescribeOfferingResponseOps[Self <: DescribeOfferingResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: string): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    @scala.inline
+    def setDuration(value: integer): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setDurationUnits(value: OfferingDurationUnits): Self = this.set("DurationUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationUnits: Self = this.set("DurationUnits", js.undefined)
+    @scala.inline
+    def setFixedPrice(value: double): Self = this.set("FixedPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedPrice: Self = this.set("FixedPrice", js.undefined)
+    @scala.inline
+    def setOfferingDescription(value: string): Self = this.set("OfferingDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingDescription: Self = this.set("OfferingDescription", js.undefined)
+    @scala.inline
+    def setOfferingId(value: string): Self = this.set("OfferingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingId: Self = this.set("OfferingId", js.undefined)
+    @scala.inline
+    def setOfferingType(value: OfferingType): Self = this.set("OfferingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingType: Self = this.set("OfferingType", js.undefined)
+    @scala.inline
+    def setRegion(value: string): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setResourceSpecification(value: ReservationResourceSpecification): Self = this.set("ResourceSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceSpecification: Self = this.set("ResourceSpecification", js.undefined)
+    @scala.inline
+    def setUsagePrice(value: double): Self = this.set("UsagePrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsagePrice: Self = this.set("UsagePrice", js.undefined)
+  }
+  
 }
 

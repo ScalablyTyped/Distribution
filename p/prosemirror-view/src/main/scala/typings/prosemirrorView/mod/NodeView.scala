@@ -11,6 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NodeView[S /* <: Schema[_, _] */] extends js.Object {
   /**
     * The DOM node that should hold the node's content. Only meaningful
@@ -20,22 +21,22 @@ trait NodeView[S /* <: Schema[_, _] */] extends js.Object {
     * is not present, the node view itself is responsible for rendering
     * (or deciding not to render) its child nodes.
     */
-  var contentDOM: js.UndefOr[Node | Null] = js.undefined
+  var contentDOM: js.UndefOr[Node | Null] = js.native
   /**
     * When defining a `selectNode` method, you should also provide a
     * `deselectNode` method to remove the effect again.
     */
-  var deselectNode: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
+  var deselectNode: js.UndefOr[js.Function0[Unit] | Null] = js.native
   /**
     * Called when the node view is removed from the editor or the whole
     * editor is destroyed.
     */
-  var destroy: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
+  var destroy: js.UndefOr[js.Function0[Unit] | Null] = js.native
   /**
     * The outer DOM node that represents the document node. When not
     * given, the default strategy is used to create a DOM node.
     */
-  var dom: js.UndefOr[Node | Null] = js.undefined
+  var dom: js.UndefOr[Node | Null] = js.native
   /**
     * Called when a DOM
     * [mutation](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
@@ -46,12 +47,12 @@ trait NodeView[S /* <: Schema[_, _] */] extends js.Object {
     * re-parse the range around the mutation, true if it can safely be
     * ignored.
     */
-  var ignoreMutation: js.UndefOr[(js.Function1[/* p */ MutationRecord | Target, Boolean]) | Null] = js.undefined
+  var ignoreMutation: js.UndefOr[(js.Function1[/* p */ MutationRecord | Target, Boolean]) | Null] = js.native
   /**
     * Can be used to override the way the node's selected status (as a
     * node selection) is displayed.
     */
-  var selectNode: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
+  var selectNode: js.UndefOr[js.Function0[Unit] | Null] = js.native
   /**
     * This will be called to handle setting the selection inside the
     * node. The `anchor` and `head` positions are relative to the start
@@ -61,13 +62,13 @@ trait NodeView[S /* <: Schema[_, _] */] extends js.Object {
     */
   var setSelection: js.UndefOr[
     (js.Function3[/* anchor */ Double, /* head */ Double, /* root */ Document, Unit]) | Null
-  ] = js.undefined
+  ] = js.native
   /**
     * Can be used to prevent the editor view from trying to handle some
     * or all DOM events that bubble up from the node view. Events for
     * which this returns true are not handled by the editor.
     */
-  var stopEvent: js.UndefOr[(js.Function1[/* event */ Event, Boolean]) | Null] = js.undefined
+  var stopEvent: js.UndefOr[(js.Function1[/* event */ Event, Boolean]) | Null] = js.native
   /**
     * When given, this will be called when the view is updating itself.
     * It will be given a node (possibly of a different type), and an
@@ -84,35 +85,83 @@ trait NodeView[S /* <: Schema[_, _] */] extends js.Object {
       /* decorations */ js.Array[Decoration[StringDictionary[_]]], 
       Boolean
     ]) | Null
-  ] = js.undefined
+  ] = js.native
 }
 
 object NodeView {
   @scala.inline
-  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](
-    contentDOM: js.UndefOr[Null | Node] = js.undefined,
-    deselectNode: js.UndefOr[Null | (() => Unit)] = js.undefined,
-    destroy: js.UndefOr[Null | (() => Unit)] = js.undefined,
-    dom: js.UndefOr[Null | Node] = js.undefined,
-    ignoreMutation: js.UndefOr[Null | (/* p */ MutationRecord | Target => Boolean)] = js.undefined,
-    selectNode: js.UndefOr[Null | (() => Unit)] = js.undefined,
-    setSelection: js.UndefOr[Null | ((/* anchor */ Double, /* head */ Double, /* root */ Document) => Unit)] = js.undefined,
-    stopEvent: js.UndefOr[Null | (/* event */ Event => Boolean)] = js.undefined,
-    update: js.UndefOr[
-      Null | ((/* node */ typings.prosemirrorModel.mod.Node[S], /* decorations */ js.Array[Decoration[StringDictionary[_]]]) => Boolean)
-    ] = js.undefined
-  ): NodeView[S] = {
+  def apply[/* <: typings.prosemirrorModel.mod.Schema[_, _] */ S](): NodeView[S] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contentDOM)) __obj.updateDynamic("contentDOM")(contentDOM.asInstanceOf[js.Any])
-    if (!js.isUndefined(deselectNode)) __obj.updateDynamic("deselectNode")(if (deselectNode != null) js.Any.fromFunction0(deselectNode.asInstanceOf[() => Unit]) else null)
-    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(if (destroy != null) js.Any.fromFunction0(destroy.asInstanceOf[() => Unit]) else null)
-    if (!js.isUndefined(dom)) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreMutation)) __obj.updateDynamic("ignoreMutation")(if (ignoreMutation != null) js.Any.fromFunction1(ignoreMutation.asInstanceOf[/* p */ MutationRecord | Target => Boolean]) else null)
-    if (!js.isUndefined(selectNode)) __obj.updateDynamic("selectNode")(if (selectNode != null) js.Any.fromFunction0(selectNode.asInstanceOf[() => Unit]) else null)
-    if (!js.isUndefined(setSelection)) __obj.updateDynamic("setSelection")(if (setSelection != null) js.Any.fromFunction3(setSelection.asInstanceOf[(/* anchor */ Double, /* head */ Double, /* root */ Document) => Unit]) else null)
-    if (!js.isUndefined(stopEvent)) __obj.updateDynamic("stopEvent")(if (stopEvent != null) js.Any.fromFunction1(stopEvent.asInstanceOf[/* event */ Event => Boolean]) else null)
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(if (update != null) js.Any.fromFunction2(update.asInstanceOf[(/* node */ typings.prosemirrorModel.mod.Node[S], /* decorations */ js.Array[Decoration[StringDictionary[_]]]) => Boolean]) else null)
     __obj.asInstanceOf[NodeView[S]]
   }
+  @scala.inline
+  implicit class NodeViewOps[Self <: NodeView[_], /* <: typings.prosemirrorModel.mod.Schema[_, _] */ S] (val x: Self with NodeView[S]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentDOM(value: Node): Self = this.set("contentDOM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDOM: Self = this.set("contentDOM", js.undefined)
+    @scala.inline
+    def setContentDOMNull: Self = this.set("contentDOM", null)
+    @scala.inline
+    def setDeselectNode(value: () => Unit): Self = this.set("deselectNode", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDeselectNode: Self = this.set("deselectNode", js.undefined)
+    @scala.inline
+    def setDeselectNodeNull: Self = this.set("deselectNode", null)
+    @scala.inline
+    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    @scala.inline
+    def setDestroyNull: Self = this.set("destroy", null)
+    @scala.inline
+    def setDom(value: Node): Self = this.set("dom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDom: Self = this.set("dom", js.undefined)
+    @scala.inline
+    def setDomNull: Self = this.set("dom", null)
+    @scala.inline
+    def setIgnoreMutation(value: /* p */ MutationRecord | Target => Boolean): Self = this.set("ignoreMutation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIgnoreMutation: Self = this.set("ignoreMutation", js.undefined)
+    @scala.inline
+    def setIgnoreMutationNull: Self = this.set("ignoreMutation", null)
+    @scala.inline
+    def setSelectNode(value: () => Unit): Self = this.set("selectNode", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteSelectNode: Self = this.set("selectNode", js.undefined)
+    @scala.inline
+    def setSelectNodeNull: Self = this.set("selectNode", null)
+    @scala.inline
+    def setSetSelection(value: (/* anchor */ Double, /* head */ Double, /* root */ Document) => Unit): Self = this.set("setSelection", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteSetSelection: Self = this.set("setSelection", js.undefined)
+    @scala.inline
+    def setSetSelectionNull: Self = this.set("setSelection", null)
+    @scala.inline
+    def setStopEvent(value: /* event */ Event => Boolean): Self = this.set("stopEvent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStopEvent: Self = this.set("stopEvent", js.undefined)
+    @scala.inline
+    def setStopEventNull: Self = this.set("stopEvent", null)
+    @scala.inline
+    def setUpdate(
+      value: (/* node */ typings.prosemirrorModel.mod.Node[S], /* decorations */ js.Array[Decoration[StringDictionary[_]]]) => Boolean
+    ): Self = this.set("update", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+    @scala.inline
+    def setUpdateNull: Self = this.set("update", null)
+  }
+  
 }
 

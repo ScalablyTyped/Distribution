@@ -15,10 +15,26 @@ trait RecordsEvent extends js.Object {
 
 object RecordsEvent {
   @scala.inline
-  def apply(Payload: Buffer = null): RecordsEvent = {
+  def apply(): RecordsEvent = {
     val __obj = js.Dynamic.literal()
-    if (Payload != null) __obj.updateDynamic("Payload")(Payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordsEvent]
   }
+  @scala.inline
+  implicit class RecordsEventOps[Self <: RecordsEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPayload(value: Buffer): Self = this.set("Payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("Payload", js.undefined)
+  }
+  
 }
 

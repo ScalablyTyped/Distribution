@@ -160,66 +160,134 @@ trait SchemaTable extends js.Object {
 
 object SchemaTable {
   @scala.inline
-  def apply(
-    clustering: SchemaClustering = null,
-    creationTime: String = null,
-    description: String = null,
-    encryptionConfiguration: SchemaEncryptionConfiguration = null,
-    etag: String = null,
-    expirationTime: String = null,
-    externalDataConfiguration: SchemaExternalDataConfiguration = null,
-    friendlyName: String = null,
-    id: String = null,
-    kind: String = null,
-    labels: StringDictionary[String] = null,
-    lastModifiedTime: String = null,
-    location: String = null,
-    materializedView: SchemaMaterializedViewDefinition = null,
-    model: SchemaModelDefinition = null,
-    numBytes: String = null,
-    numLongTermBytes: String = null,
-    numPhysicalBytes: String = null,
-    numRows: String = null,
-    rangePartitioning: SchemaRangePartitioning = null,
-    requirePartitionFilter: js.UndefOr[Boolean] = js.undefined,
-    schema: SchemaTableSchema = null,
-    selfLink: String = null,
-    streamingBuffer: SchemaStreamingbuffer = null,
-    tableReference: SchemaTableReference = null,
-    timePartitioning: SchemaTimePartitioning = null,
-    `type`: String = null,
-    view: SchemaViewDefinition = null
-  ): SchemaTable = {
+  def apply(): SchemaTable = {
     val __obj = js.Dynamic.literal()
-    if (clustering != null) __obj.updateDynamic("clustering")(clustering.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (encryptionConfiguration != null) __obj.updateDynamic("encryptionConfiguration")(encryptionConfiguration.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
-    if (externalDataConfiguration != null) __obj.updateDynamic("externalDataConfiguration")(externalDataConfiguration.asInstanceOf[js.Any])
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (materializedView != null) __obj.updateDynamic("materializedView")(materializedView.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (numBytes != null) __obj.updateDynamic("numBytes")(numBytes.asInstanceOf[js.Any])
-    if (numLongTermBytes != null) __obj.updateDynamic("numLongTermBytes")(numLongTermBytes.asInstanceOf[js.Any])
-    if (numPhysicalBytes != null) __obj.updateDynamic("numPhysicalBytes")(numPhysicalBytes.asInstanceOf[js.Any])
-    if (numRows != null) __obj.updateDynamic("numRows")(numRows.asInstanceOf[js.Any])
-    if (rangePartitioning != null) __obj.updateDynamic("rangePartitioning")(rangePartitioning.asInstanceOf[js.Any])
-    if (!js.isUndefined(requirePartitionFilter)) __obj.updateDynamic("requirePartitionFilter")(requirePartitionFilter.get.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (streamingBuffer != null) __obj.updateDynamic("streamingBuffer")(streamingBuffer.asInstanceOf[js.Any])
-    if (tableReference != null) __obj.updateDynamic("tableReference")(tableReference.asInstanceOf[js.Any])
-    if (timePartitioning != null) __obj.updateDynamic("timePartitioning")(timePartitioning.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTable]
   }
+  @scala.inline
+  implicit class SchemaTableOps[Self <: SchemaTable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClustering(value: SchemaClustering): Self = this.set("clustering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClustering: Self = this.set("clustering", js.undefined)
+    @scala.inline
+    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEncryptionConfiguration(value: SchemaEncryptionConfiguration): Self = this.set("encryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionConfiguration: Self = this.set("encryptionConfiguration", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setExpirationTime(value: String): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationTime: Self = this.set("expirationTime", js.undefined)
+    @scala.inline
+    def setExternalDataConfiguration(value: SchemaExternalDataConfiguration): Self = this.set("externalDataConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalDataConfiguration: Self = this.set("externalDataConfiguration", js.undefined)
+    @scala.inline
+    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFriendlyName: Self = this.set("friendlyName", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: String): Self = this.set("lastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("lastModifiedTime", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMaterializedView(value: SchemaMaterializedViewDefinition): Self = this.set("materializedView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaterializedView: Self = this.set("materializedView", js.undefined)
+    @scala.inline
+    def setModel(value: SchemaModelDefinition): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setNumBytes(value: String): Self = this.set("numBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumBytes: Self = this.set("numBytes", js.undefined)
+    @scala.inline
+    def setNumLongTermBytes(value: String): Self = this.set("numLongTermBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumLongTermBytes: Self = this.set("numLongTermBytes", js.undefined)
+    @scala.inline
+    def setNumPhysicalBytes(value: String): Self = this.set("numPhysicalBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumPhysicalBytes: Self = this.set("numPhysicalBytes", js.undefined)
+    @scala.inline
+    def setNumRows(value: String): Self = this.set("numRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumRows: Self = this.set("numRows", js.undefined)
+    @scala.inline
+    def setRangePartitioning(value: SchemaRangePartitioning): Self = this.set("rangePartitioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangePartitioning: Self = this.set("rangePartitioning", js.undefined)
+    @scala.inline
+    def setRequirePartitionFilter(value: Boolean): Self = this.set("requirePartitionFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequirePartitionFilter: Self = this.set("requirePartitionFilter", js.undefined)
+    @scala.inline
+    def setSchema(value: SchemaTableSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setStreamingBuffer(value: SchemaStreamingbuffer): Self = this.set("streamingBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingBuffer: Self = this.set("streamingBuffer", js.undefined)
+    @scala.inline
+    def setTableReference(value: SchemaTableReference): Self = this.set("tableReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableReference: Self = this.set("tableReference", js.undefined)
+    @scala.inline
+    def setTimePartitioning(value: SchemaTimePartitioning): Self = this.set("timePartitioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePartitioning: Self = this.set("timePartitioning", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setView(value: SchemaViewDefinition): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+  }
+  
 }
 

@@ -20,11 +20,32 @@ trait SchemaTargetInstancesScopedList extends js.Object {
 
 object SchemaTargetInstancesScopedList {
   @scala.inline
-  def apply(targetInstances: js.Array[SchemaTargetInstance] = null, warning: Code = null): SchemaTargetInstancesScopedList = {
+  def apply(): SchemaTargetInstancesScopedList = {
     val __obj = js.Dynamic.literal()
-    if (targetInstances != null) __obj.updateDynamic("targetInstances")(targetInstances.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTargetInstancesScopedList]
   }
+  @scala.inline
+  implicit class SchemaTargetInstancesScopedListOps[Self <: SchemaTargetInstancesScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetInstancesVarargs(value: SchemaTargetInstance*): Self = this.set("targetInstances", js.Array(value :_*))
+    @scala.inline
+    def setTargetInstances(value: js.Array[SchemaTargetInstance]): Self = this.set("targetInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetInstances: Self = this.set("targetInstances", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

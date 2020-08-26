@@ -59,34 +59,76 @@ trait OrganizationCustomRuleState extends js.Object {
 
 object OrganizationCustomRuleState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    description: Input[String] = null,
-    excludedAccounts: Input[js.Array[Input[String]]] = null,
-    inputParameters: Input[String] = null,
-    lambdaFunctionArn: Input[String] = null,
-    maximumExecutionFrequency: Input[String] = null,
-    name: Input[String] = null,
-    resourceIdScope: Input[String] = null,
-    resourceTypesScopes: Input[js.Array[Input[String]]] = null,
-    tagKeyScope: Input[String] = null,
-    tagValueScope: Input[String] = null,
-    triggerTypes: Input[js.Array[Input[String]]] = null
-  ): OrganizationCustomRuleState = {
+  def apply(): OrganizationCustomRuleState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (excludedAccounts != null) __obj.updateDynamic("excludedAccounts")(excludedAccounts.asInstanceOf[js.Any])
-    if (inputParameters != null) __obj.updateDynamic("inputParameters")(inputParameters.asInstanceOf[js.Any])
-    if (lambdaFunctionArn != null) __obj.updateDynamic("lambdaFunctionArn")(lambdaFunctionArn.asInstanceOf[js.Any])
-    if (maximumExecutionFrequency != null) __obj.updateDynamic("maximumExecutionFrequency")(maximumExecutionFrequency.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resourceIdScope != null) __obj.updateDynamic("resourceIdScope")(resourceIdScope.asInstanceOf[js.Any])
-    if (resourceTypesScopes != null) __obj.updateDynamic("resourceTypesScopes")(resourceTypesScopes.asInstanceOf[js.Any])
-    if (tagKeyScope != null) __obj.updateDynamic("tagKeyScope")(tagKeyScope.asInstanceOf[js.Any])
-    if (tagValueScope != null) __obj.updateDynamic("tagValueScope")(tagValueScope.asInstanceOf[js.Any])
-    if (triggerTypes != null) __obj.updateDynamic("triggerTypes")(triggerTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationCustomRuleState]
   }
+  @scala.inline
+  implicit class OrganizationCustomRuleStateOps[Self <: OrganizationCustomRuleState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExcludedAccountsVarargs(value: Input[String]*): Self = this.set("excludedAccounts", js.Array(value :_*))
+    @scala.inline
+    def setExcludedAccounts(value: Input[js.Array[Input[String]]]): Self = this.set("excludedAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedAccounts: Self = this.set("excludedAccounts", js.undefined)
+    @scala.inline
+    def setInputParameters(value: Input[String]): Self = this.set("inputParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputParameters: Self = this.set("inputParameters", js.undefined)
+    @scala.inline
+    def setLambdaFunctionArn(value: Input[String]): Self = this.set("lambdaFunctionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaFunctionArn: Self = this.set("lambdaFunctionArn", js.undefined)
+    @scala.inline
+    def setMaximumExecutionFrequency(value: Input[String]): Self = this.set("maximumExecutionFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumExecutionFrequency: Self = this.set("maximumExecutionFrequency", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResourceIdScope(value: Input[String]): Self = this.set("resourceIdScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceIdScope: Self = this.set("resourceIdScope", js.undefined)
+    @scala.inline
+    def setResourceTypesScopesVarargs(value: Input[String]*): Self = this.set("resourceTypesScopes", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypesScopes(value: Input[js.Array[Input[String]]]): Self = this.set("resourceTypesScopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypesScopes: Self = this.set("resourceTypesScopes", js.undefined)
+    @scala.inline
+    def setTagKeyScope(value: Input[String]): Self = this.set("tagKeyScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagKeyScope: Self = this.set("tagKeyScope", js.undefined)
+    @scala.inline
+    def setTagValueScope(value: Input[String]): Self = this.set("tagValueScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagValueScope: Self = this.set("tagValueScope", js.undefined)
+    @scala.inline
+    def setTriggerTypesVarargs(value: Input[String]*): Self = this.set("triggerTypes", js.Array(value :_*))
+    @scala.inline
+    def setTriggerTypes(value: Input[js.Array[Input[String]]]): Self = this.set("triggerTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerTypes: Self = this.set("triggerTypes", js.undefined)
+  }
+  
 }
 

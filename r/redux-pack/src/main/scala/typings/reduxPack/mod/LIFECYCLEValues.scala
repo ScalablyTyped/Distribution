@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.reduxPack.reduxPackStrings.start
-  - typings.reduxPack.reduxPackStrings.succes
+  - typings.reduxPack.reduxPackStrings.success
   - typings.reduxPack.reduxPackStrings.failure
 */
 trait LIFECYCLEValues extends js.Object
@@ -17,6 +17,6 @@ object LIFECYCLEValues {
   @scala.inline
   def start: typings.reduxPack.reduxPackStrings.start = "start".asInstanceOf[typings.reduxPack.reduxPackStrings.start]
   @scala.inline
-  def succes: typings.reduxPack.reduxPackStrings.succes = "succes".asInstanceOf[typings.reduxPack.reduxPackStrings.succes]
+  def success: typings.reduxPack.reduxPackStrings.success = "success".asInstanceOf[typings.reduxPack.reduxPackStrings.success]
 }
 

@@ -1,35 +1,36 @@
 package typings.asyncBusboy.mod
 
-import typings.busboy.anon.FieldNameSize
 import typings.busboy.busboy.BusboyConfig
 import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends BusboyConfig {
-  def onFile(fieldname: String, file: ReadableStream, filename: String, encoding: String, mimetype: String): Unit
+  def onFile(fieldname: String, file: ReadableStream, filename: String, encoding: String, mimetype: String): Unit = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    onFile: (String, ReadableStream, String, String, String) => Unit,
-    defCharset: String = null,
-    fileHwm: js.UndefOr[Double] = js.undefined,
-    headers: js.Any = null,
-    highWaterMark: js.UndefOr[Double] = js.undefined,
-    limits: FieldNameSize = null,
-    preservePath: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(onFile: (String, ReadableStream, String, String, String) => Unit): Options = {
     val __obj = js.Dynamic.literal(onFile = js.Any.fromFunction5(onFile))
-    if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset.asInstanceOf[js.Any])
-    if (!js.isUndefined(fileHwm)) __obj.updateDynamic("fileHwm")(fileHwm.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(highWaterMark)) __obj.updateDynamic("highWaterMark")(highWaterMark.get.asInstanceOf[js.Any])
-    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
-    if (!js.isUndefined(preservePath)) __obj.updateDynamic("preservePath")(preservePath.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnFile(value: (String, ReadableStream, String, String, String) => Unit): Self = this.set("onFile", js.Any.fromFunction5(value))
+  }
+  
 }
 

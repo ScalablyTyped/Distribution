@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Copy extends js.Object {
   def build(name: String): js.Promise[_] = js.native
+  def build(name: String, parameters: js.UndefOr[scala.Nothing], token: String): js.Promise[_] = js.native
   def build(name: String, parameters: js.Any): js.Promise[_] = js.native
   def build(name: String, parameters: js.Any, token: String): js.Promise[_] = js.native
   def build(opts: JobBuildOptions): js.Promise[_] = js.native

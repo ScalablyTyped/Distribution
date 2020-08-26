@@ -26,12 +26,34 @@ trait SchemaBuiltImage extends js.Object {
 
 object SchemaBuiltImage {
   @scala.inline
-  def apply(digest: String = null, name: String = null, pushTiming: SchemaTimeSpan = null): SchemaBuiltImage = {
+  def apply(): SchemaBuiltImage = {
     val __obj = js.Dynamic.literal()
-    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pushTiming != null) __obj.updateDynamic("pushTiming")(pushTiming.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuiltImage]
   }
+  @scala.inline
+  implicit class SchemaBuiltImageOps[Self <: SchemaBuiltImage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDigest(value: String): Self = this.set("digest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigest: Self = this.set("digest", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPushTiming(value: SchemaTimeSpan): Self = this.set("pushTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePushTiming: Self = this.set("pushTiming", js.undefined)
+  }
+  
 }
 

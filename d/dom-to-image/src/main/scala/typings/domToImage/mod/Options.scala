@@ -5,39 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var bgcolor: js.UndefOr[String] = js.undefined
-  var cacheBust: js.UndefOr[Boolean] = js.undefined
-  var filter: js.UndefOr[js.Function1[/* node */ Node, Boolean]] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var imagePlaceholder: js.UndefOr[String] = js.undefined
-  var quality: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var bgcolor: js.UndefOr[String] = js.native
+  var cacheBust: js.UndefOr[Boolean] = js.native
+  var filter: js.UndefOr[js.Function1[/* node */ Node, Boolean]] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var imagePlaceholder: js.UndefOr[String] = js.native
+  var quality: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[js.Object] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    bgcolor: String = null,
-    cacheBust: js.UndefOr[Boolean] = js.undefined,
-    filter: /* node */ Node => Boolean = null,
-    height: js.UndefOr[Double] = js.undefined,
-    imagePlaceholder: String = null,
-    quality: js.UndefOr[Double] = js.undefined,
-    style: js.Object = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheBust)) __obj.updateDynamic("cacheBust")(cacheBust.get.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (imagePlaceholder != null) __obj.updateDynamic("imagePlaceholder")(imagePlaceholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBgcolor(value: String): Self = this.set("bgcolor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgcolor: Self = this.set("bgcolor", js.undefined)
+    @scala.inline
+    def setCacheBust(value: Boolean): Self = this.set("cacheBust", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheBust: Self = this.set("cacheBust", js.undefined)
+    @scala.inline
+    def setFilter(value: /* node */ Node => Boolean): Self = this.set("filter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setImagePlaceholder(value: String): Self = this.set("imagePlaceholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagePlaceholder: Self = this.set("imagePlaceholder", js.undefined)
+    @scala.inline
+    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuality: Self = this.set("quality", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

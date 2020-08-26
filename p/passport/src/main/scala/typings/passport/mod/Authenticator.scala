@@ -21,6 +21,10 @@ trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptio
     options: AuthenticateOptions,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): AuthenticateRet = js.native
+  def authenticate(strategy: Strategy): AuthenticateRet = js.native
+  def authenticate(strategy: Strategy, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
+  def authenticate(strategy: Strategy, options: AuthenticateOptions): AuthenticateRet = js.native
+  def authenticate(strategy: Strategy, options: AuthenticateOptions, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
   def authorize(strategy: String): AuthorizeRet = js.native
   def authorize(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): AuthorizeRet = js.native
   def authorize(strategy: String, options: AuthorizeOptions): AuthorizeRet = js.native

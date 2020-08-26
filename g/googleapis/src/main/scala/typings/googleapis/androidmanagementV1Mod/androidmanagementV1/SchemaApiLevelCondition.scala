@@ -21,10 +21,26 @@ trait SchemaApiLevelCondition extends js.Object {
 
 object SchemaApiLevelCondition {
   @scala.inline
-  def apply(minApiLevel: js.UndefOr[Double] = js.undefined): SchemaApiLevelCondition = {
+  def apply(): SchemaApiLevelCondition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(minApiLevel)) __obj.updateDynamic("minApiLevel")(minApiLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApiLevelCondition]
   }
+  @scala.inline
+  implicit class SchemaApiLevelConditionOps[Self <: SchemaApiLevelCondition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMinApiLevel(value: Double): Self = this.set("minApiLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinApiLevel: Self = this.set("minApiLevel", js.undefined)
+  }
+  
 }
 

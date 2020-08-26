@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 //
 // Main options
 // ----------------------------------------------------------------------
+@js.native
 trait MethodsOptions extends js.Object {
   /**
     * remove column by number
@@ -14,7 +15,7 @@ trait MethodsOptions extends js.Object {
     * @param integer numOfColumns - number of columns to be excluded from the reference column    myTable.deleteColumn([integer], [integer]);
     */
   // tslint:disable-next-line ban-types
-  var deleteColumn: js.UndefOr[js.Function] = js.undefined
+  var deleteColumn: js.UndefOr[js.Function] = js.native
   /**
     * remove row by number
     * @param integer rowNumber - Which row should be excluded starting on zero
@@ -22,87 +23,87 @@ trait MethodsOptions extends js.Object {
     * myTable.deleteRow([integer], [integer]);
     */
   // tslint:disable-next-line ban-types
-  var deleteRow: js.UndefOr[js.Function] = js.undefined
+  var deleteRow: js.UndefOr[js.Function] = js.native
   /** Destroy all merged cells    myTable.destroyMerge(); */
   // tslint:disable-next-line ban-types
-  var destroyMerged: js.UndefOr[js.Function] = js.undefined
+  var destroyMerged: js.UndefOr[js.Function] = js.native
   /**
     * get the current data as a CSV file
     * @param bool - true to download parsed formulas.
     * myTable.download([bool]);
     */
   // tslint:disable-next-line ban-types
-  var download: js.UndefOr[js.Function] = js.undefined
+  var download: js.UndefOr[js.Function] = js.native
   /**
     * Toggle table fullscreen mode
     * @param boolean fullscreen - define fullscreen status as true or false
     * myTable.fullscreen([bool]);
     */
   // tslint:disable-next-line ban-types
-  var fullscreen: js.UndefOr[js.Function] = js.undefined
+  var fullscreen: js.UndefOr[js.Function] = js.native
   /** get current cell DOM @param string columnName - str compatible with excel, or as object.    myTable.getCell([string]); */
   // tslint:disable-next-line ban-types
-  var getCell: js.UndefOr[js.Function] = js.undefined
+  var getCell: js.UndefOr[js.Function] = js.native
   /** Get the data from one column by number @param integer columnNumber - Column number    myTable.getColumnData([int]); */
   // tslint:disable-next-line ban-types
-  var getColumnData: js.UndefOr[js.Function] = js.undefined
+  var getColumnData: js.UndefOr[js.Function] = js.native
   /** get cell comments @param mixed - cell identification or null for the whole table.    myTable.getComments([string]); */
   // tslint:disable-next-line ban-types
-  var getComments: js.UndefOr[js.Function] = js.undefined
+  var getComments: js.UndefOr[js.Function] = js.native
   /** get table definitions    myTable.getConfig(); */
   // tslint:disable-next-line ban-types
-  var getConfig: js.UndefOr[js.Function] = js.undefined
+  var getConfig: js.UndefOr[js.Function] = js.native
   /** Get the full or partial table data @param boolean onlyHighlighedCells - Get only highlighted cells    myTable.getData([bool]); */
   // tslint:disable-next-line ban-types
-  var getData: js.UndefOr[js.Function] = js.undefined
+  var getData: js.UndefOr[js.Function] = js.native
   /** get the current header by column number @param integer columnNumber - Column number starting on zero    myTable.getHeader([integer]); */
   // tslint:disable-next-line ban-types
-  var getHeader: js.UndefOr[js.Function] = js.undefined
+  var getHeader: js.UndefOr[js.Function] = js.native
   /** get all header titles    myTable.getHeaders(); */
   // tslint:disable-next-line ban-types
-  var getHeaders: js.UndefOr[js.Function] = js.undefined
+  var getHeaders: js.UndefOr[js.Function] = js.native
   /** get the current row height @param integer rowNumber - row number starting on zero    myTable.getHeight([integer]); */
   // tslint:disable-next-line ban-types
-  var getHeight: js.UndefOr[js.Function] = js.undefined
+  var getHeight: js.UndefOr[js.Function] = js.native
   /** Get the full or partial table data in JSON format @param boolean onlyHighlighedCells - Get only highlighted cells    myTable.getData([bool]); */
   // tslint:disable-next-line ban-types
-  var getJson: js.UndefOr[js.Function] = js.undefined
+  var getJson: js.UndefOr[js.Function] = js.native
   /** get current cell DOM innerHTML @param string columnName - str compatible with excel, or as object.    myTable.getLabel([string]); */
   // tslint:disable-next-line ban-types
-  var getLabel: js.UndefOr[js.Function] = js.undefined
+  var getLabel: js.UndefOr[js.Function] = js.native
   /** Get merged cells properties @param string columnName - Column name, such as A1.    myTable.getMerge([string]); */
   // tslint:disable-next-line ban-types
-  var getMerge: js.UndefOr[js.Function] = js.undefined
+  var getMerge: js.UndefOr[js.Function] = js.native
   /** get the table or cell meta information @param mixed - cell identification or null for the whole table.    myTable.getMeta([string]); */
   // tslint:disable-next-line ban-types
-  var getMeta: js.UndefOr[js.Function] = js.undefined
+  var getMeta: js.UndefOr[js.Function] = js.native
   /** Get the data from one row by number @param integer rowNumber - Row number    myTable.getRowData([int]); */
   // tslint:disable-next-line ban-types
-  var getRowData: js.UndefOr[js.Function] = js.undefined
+  var getRowData: js.UndefOr[js.Function] = js.native
   /** Get the selected columns @param boolean asIds - Get the colNumbers or row DOM elements    myTable.getSelectedColumns([bool]); */
   // tslint:disable-next-line ban-types
-  var getSelectedColumns: js.UndefOr[js.Function] = js.undefined
+  var getSelectedColumns: js.UndefOr[js.Function] = js.native
   /** Get the selected rows @param boolean asIds - Get the rowNumbers or row DOM elements    myTable.getSelectedRows([bool]); */
   // tslint:disable-next-line ban-types
-  var getSelectedRows: js.UndefOr[js.Function] = js.undefined
+  var getSelectedRows: js.UndefOr[js.Function] = js.native
   /** get table or cell style @param mixed - cell identification or null for the whole table.    myTable.getStyle([string])); */
   // tslint:disable-next-line ban-types
-  var getStyle: js.UndefOr[js.Function] = js.undefined
+  var getStyle: js.UndefOr[js.Function] = js.native
   /** get current cell value @param mixed cellIdent - str compatible with excel, or as object.    myTable.getValue([string]); */
   // tslint:disable-next-line ban-types
-  var getValue: js.UndefOr[js.Function] = js.undefined
+  var getValue: js.UndefOr[js.Function] = js.native
   /** get value from coords @param integer x @param integer y myTable.getValueFromCoords([integer], [integer]); */
   // tslint:disable-next-line ban-types
-  var getValueFromCoords: js.UndefOr[js.Function] = js.undefined
+  var getValueFromCoords: js.UndefOr[js.Function] = js.native
   /** get the current column width @param integer columnNumber - column number starting on zero    myTable.getWidth([integer]); */
   // tslint:disable-next-line ban-types
-  var getWidth: js.UndefOr[js.Function] = js.undefined
+  var getWidth: js.UndefOr[js.Function] = js.native
   /** hide column by number    myTable.hideColumn([int]); */
   // tslint:disable-next-line ban-types
-  var hideColumn: js.UndefOr[js.Function] = js.undefined
+  var hideColumn: js.UndefOr[js.Function] = js.native
   /** hide column of index numbers    myTable.hideIndex(); */
   // tslint:disable-next-line ban-types
-  var hideIndex: js.UndefOr[js.Function] = js.undefined
+  var hideIndex: js.UndefOr[js.Function] = js.native
   /**
     * add a new column
     * @param mixed - num of columns to be added or data to be added in one single column
@@ -112,7 +113,7 @@ trait MethodsOptions extends js.Object {
     * myTable.insertColumn([mixed], [integer], [boolean], [object]);
     */
   // tslint:disable-next-line ban-types
-  var insertColumn: js.UndefOr[js.Function] = js.undefined
+  var insertColumn: js.UndefOr[js.Function] = js.native
   /**
     * add a new row
     * @param mixed - number of blank lines to be insert or a single array with the data of the new row
@@ -121,7 +122,7 @@ trait MethodsOptions extends js.Object {
     * myTable.insertRow([mixed], [integer], [boolean]);
     */
   // tslint:disable-next-line ban-types
-  var insertRow: js.UndefOr[js.Function] = js.undefined
+  var insertRow: js.UndefOr[js.Function] = js.native
   /**
     * change the column position
     * @param integer columnPosition
@@ -129,7 +130,7 @@ trait MethodsOptions extends js.Object {
     * myTable.moveColumn([integer], [integer]);
     */
   // tslint:disable-next-line ban-types
-  var moveColumn: js.UndefOr[js.Function] = js.undefined
+  var moveColumn: js.UndefOr[js.Function] = js.native
   /**
     * change the row position
     * @param integer rowPosition
@@ -137,7 +138,7 @@ trait MethodsOptions extends js.Object {
     * myTable.moveRow([integer], [integer]);
     */
   // tslint:disable-next-line ban-types
-  var moveRow: js.UndefOr[js.Function] = js.undefined
+  var moveRow: js.UndefOr[js.Function] = js.native
   /**
     * reorder a column asc or desc
     * @param integer columnNumber - column number starting on zero
@@ -145,43 +146,43 @@ trait MethodsOptions extends js.Object {
     * myTable.orderBy([integer], [boolean]);
     */
   // tslint:disable-next-line ban-types
-  var orderBy: js.UndefOr[js.Function] = js.undefined
+  var orderBy: js.UndefOr[js.Function] = js.native
   /** Go to page number- Valid only when pagination is true. @param integer - Go to page number    myTable.page([integer]); */
   // tslint:disable-next-line ban-types
-  var page: js.UndefOr[js.Function] = js.undefined
+  var page: js.UndefOr[js.Function] = js.native
   /** Redo changes    myTable.redo(); */
   // tslint:disable-next-line ban-types
-  var redo: js.UndefOr[js.Function] = js.undefined
+  var redo: js.UndefOr[js.Function] = js.native
   /** Destroy merged by column name @param string columnName - Column name, such as A1.    myTable.removeMerge([string]); */
   // tslint:disable-next-line ban-types
-  var removeMerge: js.UndefOr[js.Function] = js.undefined
+  var removeMerge: js.UndefOr[js.Function] = js.native
   /** reset search table    myTable.resetSearch(); */
   // tslint:disable-next-line ban-types
-  var resetSearch: js.UndefOr[js.Function] = js.undefined
+  var resetSearch: js.UndefOr[js.Function] = js.native
   /** Reset the table selection @param boolean executeBlur - execute the blur from the table myTable.resetSelection([bool]); */
   // tslint:disable-next-line ban-types
-  var resetSelection: js.UndefOr[js.Function] = js.undefined
+  var resetSelection: js.UndefOr[js.Function] = js.native
   /** remove all style from a cell @param string columnName - Column name, example: A1, B3, etc    myTable.resetStyle([string]); */
   // tslint:disable-next-line ban-types
-  var resetStyle: js.UndefOr[js.Function] = js.undefined
+  var resetStyle: js.UndefOr[js.Function] = js.native
   /** search in the table, only if directive is enabled during inialization. @param string - Search for word    myTable.search([string]); */
   // tslint:disable-next-line ban-types
-  var search: js.UndefOr[js.Function] = js.undefined
+  var search: js.UndefOr[js.Function] = js.native
   /** Set the data from one column by number @param integer columnNumber - Column number @param array colData - Column data    myTable.setColumnData([int], [array]); */
   // tslint:disable-next-line ban-types
-  var setColumnData: js.UndefOr[js.Function] = js.undefined
+  var setColumnData: js.UndefOr[js.Function] = js.native
   /** set cell comments @param cell - cell identification @param text - comments    myTable.setComments([string], [string]); */
   // tslint:disable-next-line ban-types
-  var setComments: js.UndefOr[js.Function] = js.undefined
+  var setComments: js.UndefOr[js.Function] = js.native
   /** Set the table data @param json newData - New json data, null will reload what is in memory.    myTable.setData([json]); */
   // tslint:disable-next-line ban-types
-  var setData: js.UndefOr[js.Function] = js.undefined
+  var setData: js.UndefOr[js.Function] = js.native
   /** change header by column @param integer columnNumber - column number starting on zero @param string columnTitle - New header title    myTable.setHeader([integer], [string]); */
   // tslint:disable-next-line ban-types
-  var setHeader: js.UndefOr[js.Function] = js.undefined
+  var setHeader: js.UndefOr[js.Function] = js.native
   /** change row height @param integer rowNumber - row number starting on zero @param string newRowHeight- New row height    myTable.setHeight([integer], [integer]); */
   // tslint:disable-next-line ban-types
-  var setHeight: js.UndefOr[js.Function] = js.undefined
+  var setHeight: js.UndefOr[js.Function] = js.native
   /**
     * Merge cells
     * @param string columnName - Column name, such as A1.
@@ -190,10 +191,10 @@ trait MethodsOptions extends js.Object {
     * myTable.setMerge([string], [int], [int]);
     */
   // tslint:disable-next-line ban-types
-  var setMerge: js.UndefOr[js.Function] = js.undefined
+  var setMerge: js.UndefOr[js.Function] = js.native
   /** set the table or cell meta information @param mixed - json with whole table meta information.    myTable.setMeta[mixed]); */
   // tslint:disable-next-line ban-types
-  var setMeta: js.UndefOr[js.Function] = js.undefined
+  var setMeta: js.UndefOr[js.Function] = js.native
   /**
     * Set the data from one row by number
     * @param integer rowNumber - Row number
@@ -201,7 +202,7 @@ trait MethodsOptions extends js.Object {
     * myTable.setRowData([int], [array]);
     */
   // tslint:disable-next-line ban-types
-  var setRowData: js.UndefOr[js.Function] = js.undefined
+  var setRowData: js.UndefOr[js.Function] = js.native
   /**
     * set cell(s) CSS style
     * @param mixed - json with whole table style information or just one cell identification. Ex. A1.
@@ -210,7 +211,7 @@ trait MethodsOptions extends js.Object {
     * myTable.setSyle([object], [string], [string]);
     */
   // tslint:disable-next-line ban-types
-  var setStyle: js.UndefOr[js.Function] = js.undefined
+  var setStyle: js.UndefOr[js.Function] = js.native
   /**
     * change the cell value
     * @param mixed cellIdent - str compatible with excel, or as object.
@@ -219,7 +220,7 @@ trait MethodsOptions extends js.Object {
     * myTable.setValue([string], [string], [bool]);
     */
   // tslint:disable-next-line ban-types
-  var setValue: js.UndefOr[js.Function] = js.undefined
+  var setValue: js.UndefOr[js.Function] = js.native
   /**
     * get value from coords
     * @param integer x
@@ -229,7 +230,7 @@ trait MethodsOptions extends js.Object {
     * myTable.getValueFromCoords([integer], [integer], [string], [bool]);
     */
   // tslint:disable-next-line ban-types
-  var setValueFromCoords: js.UndefOr[js.Function] = js.undefined
+  var setValueFromCoords: js.UndefOr[js.Function] = js.native
   /**
     * change column width
     * @param integer columnNumber - column number starting on zero
@@ -237,16 +238,16 @@ trait MethodsOptions extends js.Object {
     * myTable.setWidth([integer], [integer]);
     */
   // tslint:disable-next-line ban-types
-  var setWidth: js.UndefOr[js.Function] = js.undefined
+  var setWidth: js.UndefOr[js.Function] = js.native
   /** show column by number    myTable.showIndex([int]); */
   // tslint:disable-next-line ban-types
-  var showColumn: js.UndefOr[js.Function] = js.undefined
+  var showColumn: js.UndefOr[js.Function] = js.native
   /** show column of index numbers    myTable.showIndex(); */
   // tslint:disable-next-line ban-types
-  var showIndex: js.UndefOr[js.Function] = js.undefined
+  var showIndex: js.UndefOr[js.Function] = js.native
   /** Undo last changes    myTable.undo(); */
   // tslint:disable-next-line ban-types
-  var undo: js.UndefOr[js.Function] = js.undefined
+  var undo: js.UndefOr[js.Function] = js.native
   /**
     * select cells
     * @param object startCell - cell object
@@ -255,133 +256,257 @@ trait MethodsOptions extends js.Object {
     * myTable.updateSelection([cell], [cell], true);
     */
   // tslint:disable-next-line ban-types
-  var updateSelection: js.UndefOr[js.Function] = js.undefined
+  var updateSelection: js.UndefOr[js.Function] = js.native
   /** select cells @param integer x1 @param integer y1 @param integer x2 @param integer y2    myTable.updateSelectionFromCoords([integer], [integer], [integer], [integer]); */
   // tslint:disable-next-line ban-types
-  var updateSelectionFromCoords: js.UndefOr[js.Function] = js.undefined
+  var updateSelectionFromCoords: js.UndefOr[js.Function] = js.native
   /** Which page showing on jExcel - Valid only when pagination is true.    myTable.whichPage(); */
   // tslint:disable-next-line ban-types
-  var whichPage: js.UndefOr[js.Function] = js.undefined
+  var whichPage: js.UndefOr[js.Function] = js.native
 }
 
 object MethodsOptions {
   @scala.inline
-  def apply(
-    deleteColumn: js.Function = null,
-    deleteRow: js.Function = null,
-    destroyMerged: js.Function = null,
-    download: js.Function = null,
-    fullscreen: js.Function = null,
-    getCell: js.Function = null,
-    getColumnData: js.Function = null,
-    getComments: js.Function = null,
-    getConfig: js.Function = null,
-    getData: js.Function = null,
-    getHeader: js.Function = null,
-    getHeaders: js.Function = null,
-    getHeight: js.Function = null,
-    getJson: js.Function = null,
-    getLabel: js.Function = null,
-    getMerge: js.Function = null,
-    getMeta: js.Function = null,
-    getRowData: js.Function = null,
-    getSelectedColumns: js.Function = null,
-    getSelectedRows: js.Function = null,
-    getStyle: js.Function = null,
-    getValue: js.Function = null,
-    getValueFromCoords: js.Function = null,
-    getWidth: js.Function = null,
-    hideColumn: js.Function = null,
-    hideIndex: js.Function = null,
-    insertColumn: js.Function = null,
-    insertRow: js.Function = null,
-    moveColumn: js.Function = null,
-    moveRow: js.Function = null,
-    orderBy: js.Function = null,
-    page: js.Function = null,
-    redo: js.Function = null,
-    removeMerge: js.Function = null,
-    resetSearch: js.Function = null,
-    resetSelection: js.Function = null,
-    resetStyle: js.Function = null,
-    search: js.Function = null,
-    setColumnData: js.Function = null,
-    setComments: js.Function = null,
-    setData: js.Function = null,
-    setHeader: js.Function = null,
-    setHeight: js.Function = null,
-    setMerge: js.Function = null,
-    setMeta: js.Function = null,
-    setRowData: js.Function = null,
-    setStyle: js.Function = null,
-    setValue: js.Function = null,
-    setValueFromCoords: js.Function = null,
-    setWidth: js.Function = null,
-    showColumn: js.Function = null,
-    showIndex: js.Function = null,
-    undo: js.Function = null,
-    updateSelection: js.Function = null,
-    updateSelectionFromCoords: js.Function = null,
-    whichPage: js.Function = null
-  ): MethodsOptions = {
+  def apply(): MethodsOptions = {
     val __obj = js.Dynamic.literal()
-    if (deleteColumn != null) __obj.updateDynamic("deleteColumn")(deleteColumn.asInstanceOf[js.Any])
-    if (deleteRow != null) __obj.updateDynamic("deleteRow")(deleteRow.asInstanceOf[js.Any])
-    if (destroyMerged != null) __obj.updateDynamic("destroyMerged")(destroyMerged.asInstanceOf[js.Any])
-    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (fullscreen != null) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (getCell != null) __obj.updateDynamic("getCell")(getCell.asInstanceOf[js.Any])
-    if (getColumnData != null) __obj.updateDynamic("getColumnData")(getColumnData.asInstanceOf[js.Any])
-    if (getComments != null) __obj.updateDynamic("getComments")(getComments.asInstanceOf[js.Any])
-    if (getConfig != null) __obj.updateDynamic("getConfig")(getConfig.asInstanceOf[js.Any])
-    if (getData != null) __obj.updateDynamic("getData")(getData.asInstanceOf[js.Any])
-    if (getHeader != null) __obj.updateDynamic("getHeader")(getHeader.asInstanceOf[js.Any])
-    if (getHeaders != null) __obj.updateDynamic("getHeaders")(getHeaders.asInstanceOf[js.Any])
-    if (getHeight != null) __obj.updateDynamic("getHeight")(getHeight.asInstanceOf[js.Any])
-    if (getJson != null) __obj.updateDynamic("getJson")(getJson.asInstanceOf[js.Any])
-    if (getLabel != null) __obj.updateDynamic("getLabel")(getLabel.asInstanceOf[js.Any])
-    if (getMerge != null) __obj.updateDynamic("getMerge")(getMerge.asInstanceOf[js.Any])
-    if (getMeta != null) __obj.updateDynamic("getMeta")(getMeta.asInstanceOf[js.Any])
-    if (getRowData != null) __obj.updateDynamic("getRowData")(getRowData.asInstanceOf[js.Any])
-    if (getSelectedColumns != null) __obj.updateDynamic("getSelectedColumns")(getSelectedColumns.asInstanceOf[js.Any])
-    if (getSelectedRows != null) __obj.updateDynamic("getSelectedRows")(getSelectedRows.asInstanceOf[js.Any])
-    if (getStyle != null) __obj.updateDynamic("getStyle")(getStyle.asInstanceOf[js.Any])
-    if (getValue != null) __obj.updateDynamic("getValue")(getValue.asInstanceOf[js.Any])
-    if (getValueFromCoords != null) __obj.updateDynamic("getValueFromCoords")(getValueFromCoords.asInstanceOf[js.Any])
-    if (getWidth != null) __obj.updateDynamic("getWidth")(getWidth.asInstanceOf[js.Any])
-    if (hideColumn != null) __obj.updateDynamic("hideColumn")(hideColumn.asInstanceOf[js.Any])
-    if (hideIndex != null) __obj.updateDynamic("hideIndex")(hideIndex.asInstanceOf[js.Any])
-    if (insertColumn != null) __obj.updateDynamic("insertColumn")(insertColumn.asInstanceOf[js.Any])
-    if (insertRow != null) __obj.updateDynamic("insertRow")(insertRow.asInstanceOf[js.Any])
-    if (moveColumn != null) __obj.updateDynamic("moveColumn")(moveColumn.asInstanceOf[js.Any])
-    if (moveRow != null) __obj.updateDynamic("moveRow")(moveRow.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (redo != null) __obj.updateDynamic("redo")(redo.asInstanceOf[js.Any])
-    if (removeMerge != null) __obj.updateDynamic("removeMerge")(removeMerge.asInstanceOf[js.Any])
-    if (resetSearch != null) __obj.updateDynamic("resetSearch")(resetSearch.asInstanceOf[js.Any])
-    if (resetSelection != null) __obj.updateDynamic("resetSelection")(resetSelection.asInstanceOf[js.Any])
-    if (resetStyle != null) __obj.updateDynamic("resetStyle")(resetStyle.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (setColumnData != null) __obj.updateDynamic("setColumnData")(setColumnData.asInstanceOf[js.Any])
-    if (setComments != null) __obj.updateDynamic("setComments")(setComments.asInstanceOf[js.Any])
-    if (setData != null) __obj.updateDynamic("setData")(setData.asInstanceOf[js.Any])
-    if (setHeader != null) __obj.updateDynamic("setHeader")(setHeader.asInstanceOf[js.Any])
-    if (setHeight != null) __obj.updateDynamic("setHeight")(setHeight.asInstanceOf[js.Any])
-    if (setMerge != null) __obj.updateDynamic("setMerge")(setMerge.asInstanceOf[js.Any])
-    if (setMeta != null) __obj.updateDynamic("setMeta")(setMeta.asInstanceOf[js.Any])
-    if (setRowData != null) __obj.updateDynamic("setRowData")(setRowData.asInstanceOf[js.Any])
-    if (setStyle != null) __obj.updateDynamic("setStyle")(setStyle.asInstanceOf[js.Any])
-    if (setValue != null) __obj.updateDynamic("setValue")(setValue.asInstanceOf[js.Any])
-    if (setValueFromCoords != null) __obj.updateDynamic("setValueFromCoords")(setValueFromCoords.asInstanceOf[js.Any])
-    if (setWidth != null) __obj.updateDynamic("setWidth")(setWidth.asInstanceOf[js.Any])
-    if (showColumn != null) __obj.updateDynamic("showColumn")(showColumn.asInstanceOf[js.Any])
-    if (showIndex != null) __obj.updateDynamic("showIndex")(showIndex.asInstanceOf[js.Any])
-    if (undo != null) __obj.updateDynamic("undo")(undo.asInstanceOf[js.Any])
-    if (updateSelection != null) __obj.updateDynamic("updateSelection")(updateSelection.asInstanceOf[js.Any])
-    if (updateSelectionFromCoords != null) __obj.updateDynamic("updateSelectionFromCoords")(updateSelectionFromCoords.asInstanceOf[js.Any])
-    if (whichPage != null) __obj.updateDynamic("whichPage")(whichPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodsOptions]
   }
+  @scala.inline
+  implicit class MethodsOptionsOps[Self <: MethodsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteColumn(value: js.Function): Self = this.set("deleteColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteColumn: Self = this.set("deleteColumn", js.undefined)
+    @scala.inline
+    def setDeleteRow(value: js.Function): Self = this.set("deleteRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteRow: Self = this.set("deleteRow", js.undefined)
+    @scala.inline
+    def setDestroyMerged(value: js.Function): Self = this.set("destroyMerged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestroyMerged: Self = this.set("destroyMerged", js.undefined)
+    @scala.inline
+    def setDownload(value: js.Function): Self = this.set("download", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownload: Self = this.set("download", js.undefined)
+    @scala.inline
+    def setFullscreen(value: js.Function): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    @scala.inline
+    def setGetCell(value: js.Function): Self = this.set("getCell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetCell: Self = this.set("getCell", js.undefined)
+    @scala.inline
+    def setGetColumnData(value: js.Function): Self = this.set("getColumnData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetColumnData: Self = this.set("getColumnData", js.undefined)
+    @scala.inline
+    def setGetComments(value: js.Function): Self = this.set("getComments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetComments: Self = this.set("getComments", js.undefined)
+    @scala.inline
+    def setGetConfig(value: js.Function): Self = this.set("getConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetConfig: Self = this.set("getConfig", js.undefined)
+    @scala.inline
+    def setGetData(value: js.Function): Self = this.set("getData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetData: Self = this.set("getData", js.undefined)
+    @scala.inline
+    def setGetHeader(value: js.Function): Self = this.set("getHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetHeader: Self = this.set("getHeader", js.undefined)
+    @scala.inline
+    def setGetHeaders(value: js.Function): Self = this.set("getHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetHeaders: Self = this.set("getHeaders", js.undefined)
+    @scala.inline
+    def setGetHeight(value: js.Function): Self = this.set("getHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetHeight: Self = this.set("getHeight", js.undefined)
+    @scala.inline
+    def setGetJson(value: js.Function): Self = this.set("getJson", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetJson: Self = this.set("getJson", js.undefined)
+    @scala.inline
+    def setGetLabel(value: js.Function): Self = this.set("getLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetLabel: Self = this.set("getLabel", js.undefined)
+    @scala.inline
+    def setGetMerge(value: js.Function): Self = this.set("getMerge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetMerge: Self = this.set("getMerge", js.undefined)
+    @scala.inline
+    def setGetMeta(value: js.Function): Self = this.set("getMeta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetMeta: Self = this.set("getMeta", js.undefined)
+    @scala.inline
+    def setGetRowData(value: js.Function): Self = this.set("getRowData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetRowData: Self = this.set("getRowData", js.undefined)
+    @scala.inline
+    def setGetSelectedColumns(value: js.Function): Self = this.set("getSelectedColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetSelectedColumns: Self = this.set("getSelectedColumns", js.undefined)
+    @scala.inline
+    def setGetSelectedRows(value: js.Function): Self = this.set("getSelectedRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetSelectedRows: Self = this.set("getSelectedRows", js.undefined)
+    @scala.inline
+    def setGetStyle(value: js.Function): Self = this.set("getStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetStyle: Self = this.set("getStyle", js.undefined)
+    @scala.inline
+    def setGetValue(value: js.Function): Self = this.set("getValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetValue: Self = this.set("getValue", js.undefined)
+    @scala.inline
+    def setGetValueFromCoords(value: js.Function): Self = this.set("getValueFromCoords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetValueFromCoords: Self = this.set("getValueFromCoords", js.undefined)
+    @scala.inline
+    def setGetWidth(value: js.Function): Self = this.set("getWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetWidth: Self = this.set("getWidth", js.undefined)
+    @scala.inline
+    def setHideColumn(value: js.Function): Self = this.set("hideColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideColumn: Self = this.set("hideColumn", js.undefined)
+    @scala.inline
+    def setHideIndex(value: js.Function): Self = this.set("hideIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideIndex: Self = this.set("hideIndex", js.undefined)
+    @scala.inline
+    def setInsertColumn(value: js.Function): Self = this.set("insertColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertColumn: Self = this.set("insertColumn", js.undefined)
+    @scala.inline
+    def setInsertRow(value: js.Function): Self = this.set("insertRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertRow: Self = this.set("insertRow", js.undefined)
+    @scala.inline
+    def setMoveColumn(value: js.Function): Self = this.set("moveColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoveColumn: Self = this.set("moveColumn", js.undefined)
+    @scala.inline
+    def setMoveRow(value: js.Function): Self = this.set("moveRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoveRow: Self = this.set("moveRow", js.undefined)
+    @scala.inline
+    def setOrderBy(value: js.Function): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    @scala.inline
+    def setPage(value: js.Function): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setRedo(value: js.Function): Self = this.set("redo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedo: Self = this.set("redo", js.undefined)
+    @scala.inline
+    def setRemoveMerge(value: js.Function): Self = this.set("removeMerge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveMerge: Self = this.set("removeMerge", js.undefined)
+    @scala.inline
+    def setResetSearch(value: js.Function): Self = this.set("resetSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetSearch: Self = this.set("resetSearch", js.undefined)
+    @scala.inline
+    def setResetSelection(value: js.Function): Self = this.set("resetSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetSelection: Self = this.set("resetSelection", js.undefined)
+    @scala.inline
+    def setResetStyle(value: js.Function): Self = this.set("resetStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetStyle: Self = this.set("resetStyle", js.undefined)
+    @scala.inline
+    def setSearch(value: js.Function): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch: Self = this.set("search", js.undefined)
+    @scala.inline
+    def setSetColumnData(value: js.Function): Self = this.set("setColumnData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetColumnData: Self = this.set("setColumnData", js.undefined)
+    @scala.inline
+    def setSetComments(value: js.Function): Self = this.set("setComments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetComments: Self = this.set("setComments", js.undefined)
+    @scala.inline
+    def setSetData(value: js.Function): Self = this.set("setData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetData: Self = this.set("setData", js.undefined)
+    @scala.inline
+    def setSetHeader(value: js.Function): Self = this.set("setHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetHeader: Self = this.set("setHeader", js.undefined)
+    @scala.inline
+    def setSetHeight(value: js.Function): Self = this.set("setHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetHeight: Self = this.set("setHeight", js.undefined)
+    @scala.inline
+    def setSetMerge(value: js.Function): Self = this.set("setMerge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetMerge: Self = this.set("setMerge", js.undefined)
+    @scala.inline
+    def setSetMeta(value: js.Function): Self = this.set("setMeta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetMeta: Self = this.set("setMeta", js.undefined)
+    @scala.inline
+    def setSetRowData(value: js.Function): Self = this.set("setRowData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetRowData: Self = this.set("setRowData", js.undefined)
+    @scala.inline
+    def setSetStyle(value: js.Function): Self = this.set("setStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetStyle: Self = this.set("setStyle", js.undefined)
+    @scala.inline
+    def setSetValue(value: js.Function): Self = this.set("setValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    @scala.inline
+    def setSetValueFromCoords(value: js.Function): Self = this.set("setValueFromCoords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetValueFromCoords: Self = this.set("setValueFromCoords", js.undefined)
+    @scala.inline
+    def setSetWidth(value: js.Function): Self = this.set("setWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetWidth: Self = this.set("setWidth", js.undefined)
+    @scala.inline
+    def setShowColumn(value: js.Function): Self = this.set("showColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowColumn: Self = this.set("showColumn", js.undefined)
+    @scala.inline
+    def setShowIndex(value: js.Function): Self = this.set("showIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowIndex: Self = this.set("showIndex", js.undefined)
+    @scala.inline
+    def setUndo(value: js.Function): Self = this.set("undo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUndo: Self = this.set("undo", js.undefined)
+    @scala.inline
+    def setUpdateSelection(value: js.Function): Self = this.set("updateSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateSelection: Self = this.set("updateSelection", js.undefined)
+    @scala.inline
+    def setUpdateSelectionFromCoords(value: js.Function): Self = this.set("updateSelectionFromCoords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateSelectionFromCoords: Self = this.set("updateSelectionFromCoords", js.undefined)
+    @scala.inline
+    def setWhichPage(value: js.Function): Self = this.set("whichPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhichPage: Self = this.set("whichPage", js.undefined)
+  }
+  
 }
 

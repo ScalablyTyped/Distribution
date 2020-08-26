@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object decode extends js.Object {
   def apply(): js.Any = js.native
+  def apply(json: js.UndefOr[scala.Nothing], safe: Boolean): js.Any = js.native
   def apply(json: java.lang.String): js.Any = js.native
   def apply(json: java.lang.String, safe: Boolean): js.Any = js.native
 }

@@ -1,7 +1,6 @@
 package typings.dirtyChai.mod
 
 import typings.chaiAsPromised.Chai.Eventually
-import typings.std.PromiseLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,8 +30,8 @@ object global extends js.Object {
     
     @js.native
     trait PromisedAssertion
-      extends Eventually
-         with PromiseLike[js.Any] {
+      extends js.Thenable[js.Any]
+         with Eventually {
       @JSName("ensure")
       var ensure_Original: PromisedAssertion = js.native
       def apply(): PromisedAssertion = js.native

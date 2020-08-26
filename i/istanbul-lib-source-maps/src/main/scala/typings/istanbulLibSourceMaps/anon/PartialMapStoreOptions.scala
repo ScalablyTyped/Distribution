@@ -7,27 +7,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<istanbul-lib-source-maps.istanbul-lib-source-maps.MapStoreOptions> */
+@js.native
 trait PartialMapStoreOptions extends js.Object {
-  var baseDir: js.UndefOr[String] = js.undefined
-  var sourceStore: js.UndefOr[memory | file] = js.undefined
-  var tmpdir: js.UndefOr[String] = js.undefined
-  var verbose: js.UndefOr[Boolean] = js.undefined
+  var baseDir: js.UndefOr[String] = js.native
+  var sourceStore: js.UndefOr[memory | file] = js.native
+  var tmpdir: js.UndefOr[String] = js.native
+  var verbose: js.UndefOr[Boolean] = js.native
 }
 
 object PartialMapStoreOptions {
   @scala.inline
-  def apply(
-    baseDir: String = null,
-    sourceStore: memory | file = null,
-    tmpdir: String = null,
-    verbose: js.UndefOr[Boolean] = js.undefined
-  ): PartialMapStoreOptions = {
+  def apply(): PartialMapStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
-    if (sourceStore != null) __obj.updateDynamic("sourceStore")(sourceStore.asInstanceOf[js.Any])
-    if (tmpdir != null) __obj.updateDynamic("tmpdir")(tmpdir.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialMapStoreOptions]
   }
+  @scala.inline
+  implicit class PartialMapStoreOptionsOps[Self <: PartialMapStoreOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseDir(value: String): Self = this.set("baseDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseDir: Self = this.set("baseDir", js.undefined)
+    @scala.inline
+    def setSourceStore(value: memory | file): Self = this.set("sourceStore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceStore: Self = this.set("sourceStore", js.undefined)
+    @scala.inline
+    def setTmpdir(value: String): Self = this.set("tmpdir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTmpdir: Self = this.set("tmpdir", js.undefined)
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+  }
+  
 }
 

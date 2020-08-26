@@ -1,7 +1,8 @@
 package typings.pg.mod
 
-import typings.pg.anon.TypeofarrayParser
-import typings.pgTypes.mod.TypeParser
+import typings.pgTypes.mod.TypeFormat
+import typings.pgTypes.mod.TypeId
+import typings.pgTypes.mod.TypesBuiltins
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +10,11 @@ import scala.scalajs.js.annotation._
 @JSImport("pg", "types")
 @js.native
 object types extends js.Object {
-  val arrayParser: TypeofarrayParser = js.native
-  def getTypeParser(oid: Double, format: String): TypeParser = js.native
-  def setTypeParser(oid: Double, format: String, parseFn: TypeParser): Unit = js.native
-  def setTypeParser(oid: Double, parseFn: TypeParser): Unit = js.native
+  val builtins: TypesBuiltins = js.native
+  def arrayParser(source: String, transform: js.Function1[/* entry */ js.Any, _]): js.Array[_] = js.native
+  def getTypeParser(id: TypeId): js.Any = js.native
+  def getTypeParser(id: TypeId, format: TypeFormat): js.Any = js.native
+  def setTypeParser(id: TypeId, format: TypeFormat, parseFn: js.Function1[/* value */ String, _]): Unit = js.native
+  def setTypeParser(id: TypeId, parseFn: js.Function1[/* value */ String, _]): Unit = js.native
 }
 

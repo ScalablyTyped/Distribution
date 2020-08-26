@@ -1,7 +1,7 @@
 
 # Scala.js typings for mem-fs-editor
 
-Typings are for version 5.1
+Typings are for version 7.0
 
 ## Library description:
 File edition helpers working on top of mem-fs

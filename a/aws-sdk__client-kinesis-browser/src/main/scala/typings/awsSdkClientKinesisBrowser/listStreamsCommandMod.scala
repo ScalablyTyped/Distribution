@@ -26,16 +26,9 @@ object listStreamsCommandMod extends js.Object {
           Blob
         ] {
     def this(input: ListStreamsInput) = this()
-    /* CompleteClass */
-    override val input: ListStreamsInput = js.native
     val middlewareStack: MiddlewareStack[ListStreamsInput, ListStreamsOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KinesisResolvedConfiguration
-    ): Handler[ListStreamsInput, ListStreamsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KinesisResolvedConfiguration
     ): Handler[ListStreamsInput, ListStreamsOutput] = js.native
   }

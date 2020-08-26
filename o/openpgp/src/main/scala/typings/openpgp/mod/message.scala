@@ -57,8 +57,58 @@ object message extends js.Object {
       * @returns new message with decrypted content
       */
     def decrypt(): js.Promise[Message] = js.native
+    def decrypt(
+      privateKeys: js.UndefOr[scala.Nothing],
+      passwords: js.UndefOr[scala.Nothing],
+      sessionKeys: js.UndefOr[scala.Nothing],
+      streaming: Boolean
+    ): js.Promise[Message] = js.native
+    def decrypt(
+      privateKeys: js.UndefOr[scala.Nothing],
+      passwords: js.UndefOr[scala.Nothing],
+      sessionKeys: js.Array[_]
+    ): js.Promise[Message] = js.native
+    def decrypt(
+      privateKeys: js.UndefOr[scala.Nothing],
+      passwords: js.UndefOr[scala.Nothing],
+      sessionKeys: js.Array[_],
+      streaming: Boolean
+    ): js.Promise[Message] = js.native
+    def decrypt(privateKeys: js.UndefOr[scala.Nothing], passwords: js.Array[_]): js.Promise[Message] = js.native
+    def decrypt(
+      privateKeys: js.UndefOr[scala.Nothing],
+      passwords: js.Array[_],
+      sessionKeys: js.UndefOr[scala.Nothing],
+      streaming: Boolean
+    ): js.Promise[Message] = js.native
+    def decrypt(privateKeys: js.UndefOr[scala.Nothing], passwords: js.Array[_], sessionKeys: js.Array[_]): js.Promise[Message] = js.native
+    def decrypt(
+      privateKeys: js.UndefOr[scala.Nothing],
+      passwords: js.Array[_],
+      sessionKeys: js.Array[_],
+      streaming: Boolean
+    ): js.Promise[Message] = js.native
     def decrypt(privateKeys: js.Array[_]): js.Promise[Message] = js.native
+    def decrypt(
+      privateKeys: js.Array[_],
+      passwords: js.UndefOr[scala.Nothing],
+      sessionKeys: js.UndefOr[scala.Nothing],
+      streaming: Boolean
+    ): js.Promise[Message] = js.native
+    def decrypt(privateKeys: js.Array[_], passwords: js.UndefOr[scala.Nothing], sessionKeys: js.Array[_]): js.Promise[Message] = js.native
+    def decrypt(
+      privateKeys: js.Array[_],
+      passwords: js.UndefOr[scala.Nothing],
+      sessionKeys: js.Array[_],
+      streaming: Boolean
+    ): js.Promise[Message] = js.native
     def decrypt(privateKeys: js.Array[_], passwords: js.Array[_]): js.Promise[Message] = js.native
+    def decrypt(
+      privateKeys: js.Array[_],
+      passwords: js.Array[_],
+      sessionKeys: js.UndefOr[scala.Nothing],
+      streaming: Boolean
+    ): js.Promise[Message] = js.native
     def decrypt(privateKeys: js.Array[_], passwords: js.Array[_], sessionKeys: js.Array[_]): js.Promise[Message] = js.native
     def decrypt(privateKeys: js.Array[_], passwords: js.Array[_], sessionKeys: js.Array[_], streaming: Boolean): js.Promise[Message] = js.native
     /**
@@ -68,6 +118,7 @@ object message extends js.Object {
       * @returns array of object with potential sessionKey, algorithm pairs
       */
     def decryptSessionKeys(): js.Promise[js.Array[Algorithm]] = js.native
+    def decryptSessionKeys(privateKeys: js.UndefOr[scala.Nothing], passwords: js.Array[_]): js.Promise[js.Array[Algorithm]] = js.native
     def decryptSessionKeys(privateKeys: js.Array[_]): js.Promise[js.Array[Algorithm]] = js.native
     def decryptSessionKeys(privateKeys: js.Array[_], passwords: js.Array[_]): js.Promise[js.Array[Algorithm]] = js.native
     /**
@@ -124,7 +175,21 @@ object message extends js.Object {
       * @returns new message with signed content
       */
     def sign(privateKeys: js.Array[_]): js.Promise[Message] = js.native
+    def sign(
+      privateKeys: js.Array[_],
+      signature: js.UndefOr[scala.Nothing],
+      date: js.UndefOr[scala.Nothing],
+      userIds: js.Array[_]
+    ): js.Promise[Message] = js.native
+    def sign(privateKeys: js.Array[_], signature: js.UndefOr[scala.Nothing], date: Date): js.Promise[Message] = js.native
+    def sign(privateKeys: js.Array[_], signature: js.UndefOr[scala.Nothing], date: Date, userIds: js.Array[_]): js.Promise[Message] = js.native
     def sign(privateKeys: js.Array[_], signature: Signature): js.Promise[Message] = js.native
+    def sign(
+      privateKeys: js.Array[_],
+      signature: Signature,
+      date: js.UndefOr[scala.Nothing],
+      userIds: js.Array[_]
+    ): js.Promise[Message] = js.native
     def sign(privateKeys: js.Array[_], signature: Signature, date: Date): js.Promise[Message] = js.native
     def sign(privateKeys: js.Array[_], signature: Signature, date: Date, userIds: js.Array[_]): js.Promise[Message] = js.native
     /**
@@ -136,7 +201,21 @@ object message extends js.Object {
       * @returns new detached signature of message content
       */
     def signDetached(privateKeys: js.Array[_]): js.Promise[Signature] = js.native
+    def signDetached(
+      privateKeys: js.Array[_],
+      signature: js.UndefOr[scala.Nothing],
+      date: js.UndefOr[scala.Nothing],
+      userIds: js.Array[_]
+    ): js.Promise[Signature] = js.native
+    def signDetached(privateKeys: js.Array[_], signature: js.UndefOr[scala.Nothing], date: Date): js.Promise[Signature] = js.native
+    def signDetached(privateKeys: js.Array[_], signature: js.UndefOr[scala.Nothing], date: Date, userIds: js.Array[_]): js.Promise[Signature] = js.native
     def signDetached(privateKeys: js.Array[_], signature: Signature): js.Promise[Signature] = js.native
+    def signDetached(
+      privateKeys: js.Array[_],
+      signature: Signature,
+      date: js.UndefOr[scala.Nothing],
+      userIds: js.Array[_]
+    ): js.Promise[Signature] = js.native
     def signDetached(privateKeys: js.Array[_], signature: Signature, date: Date): js.Promise[Signature] = js.native
     def signDetached(privateKeys: js.Array[_], signature: Signature, date: Date, userIds: js.Array[_]): js.Promise[Signature] = js.native
     /**
@@ -152,6 +231,7 @@ object message extends js.Object {
       * @returns list of signer's keyid and validity of signature
       */
     def verify(keys: js.Array[_]): js.Promise[js.Array[Keyid]] = js.native
+    def verify(keys: js.Array[_], date: js.UndefOr[scala.Nothing], streaming: Boolean): js.Promise[js.Array[Keyid]] = js.native
     def verify(keys: js.Array[_], date: Date): js.Promise[js.Array[Keyid]] = js.native
     def verify(keys: js.Array[_], date: Date, streaming: Boolean): js.Promise[js.Array[Keyid]] = js.native
     /**
@@ -229,6 +309,7 @@ object message extends js.Object {
     userIds: js.Array[_]
   ): js.Promise[Message] = js.native
   def fromBinary(bytes: ReadableStream[Uint8Array]): Message = js.native
+  def fromBinary(bytes: ReadableStream[Uint8Array], filename: js.UndefOr[scala.Nothing], date: Date): Message = js.native
   def fromBinary(bytes: ReadableStream[Uint8Array], filename: String): Message = js.native
   def fromBinary(bytes: ReadableStream[Uint8Array], filename: String, date: Date): Message = js.native
   /**
@@ -240,22 +321,116 @@ object message extends js.Object {
     * @returns new message object
     */
   def fromBinary(bytes: Uint8Array): Message = js.native
+  def fromBinary(bytes: Uint8Array, filename: js.UndefOr[scala.Nothing], date: Date): Message = js.native
   def fromBinary(bytes: Uint8Array, filename: String): Message = js.native
   def fromBinary(bytes: Uint8Array, filename: String, date: Date): Message = js.native
   @JSName("fromBinary")
+  def fromBinary_binary(
+    bytes: ReadableStream[Uint8Array],
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: binary
+  ): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: js.UndefOr[scala.Nothing], date: Date, `type`: binary): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_binary(
+    bytes: ReadableStream[Uint8Array],
+    filename: String,
+    date: js.UndefOr[scala.Nothing],
+    `type`: binary
+  ): Message = js.native
+  @JSName("fromBinary")
   def fromBinary_binary(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: binary): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_binary(
+    bytes: Uint8Array,
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: binary
+  ): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_binary(bytes: Uint8Array, filename: js.UndefOr[scala.Nothing], date: Date, `type`: binary): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_binary(bytes: Uint8Array, filename: String, date: js.UndefOr[scala.Nothing], `type`: binary): Message = js.native
   @JSName("fromBinary")
   def fromBinary_binary(bytes: Uint8Array, filename: String, date: Date, `type`: binary): Message = js.native
   @JSName("fromBinary")
+  def fromBinary_mime(
+    bytes: ReadableStream[Uint8Array],
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: mime
+  ): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: js.UndefOr[scala.Nothing], date: Date, `type`: mime): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: String, date: js.UndefOr[scala.Nothing], `type`: mime): Message = js.native
+  @JSName("fromBinary")
   def fromBinary_mime(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: mime): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_mime(
+    bytes: Uint8Array,
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: mime
+  ): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_mime(bytes: Uint8Array, filename: js.UndefOr[scala.Nothing], date: Date, `type`: mime): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_mime(bytes: Uint8Array, filename: String, date: js.UndefOr[scala.Nothing], `type`: mime): Message = js.native
   @JSName("fromBinary")
   def fromBinary_mime(bytes: Uint8Array, filename: String, date: Date, `type`: mime): Message = js.native
   @JSName("fromBinary")
+  def fromBinary_text(
+    bytes: ReadableStream[Uint8Array],
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: text
+  ): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: js.UndefOr[scala.Nothing], date: Date, `type`: text): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: String, date: js.UndefOr[scala.Nothing], `type`: text): Message = js.native
+  @JSName("fromBinary")
   def fromBinary_text(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: text): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_text(
+    bytes: Uint8Array,
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: text
+  ): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_text(bytes: Uint8Array, filename: js.UndefOr[scala.Nothing], date: Date, `type`: text): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_text(bytes: Uint8Array, filename: String, date: js.UndefOr[scala.Nothing], `type`: text): Message = js.native
   @JSName("fromBinary")
   def fromBinary_text(bytes: Uint8Array, filename: String, date: Date, `type`: text): Message = js.native
   @JSName("fromBinary")
+  def fromBinary_utf8(
+    bytes: ReadableStream[Uint8Array],
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: utf8
+  ): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: js.UndefOr[scala.Nothing], date: Date, `type`: utf8): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: String, date: js.UndefOr[scala.Nothing], `type`: utf8): Message = js.native
+  @JSName("fromBinary")
   def fromBinary_utf8(bytes: ReadableStream[Uint8Array], filename: String, date: Date, `type`: utf8): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_utf8(
+    bytes: Uint8Array,
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: utf8
+  ): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_utf8(bytes: Uint8Array, filename: js.UndefOr[scala.Nothing], date: Date, `type`: utf8): Message = js.native
+  @JSName("fromBinary")
+  def fromBinary_utf8(bytes: Uint8Array, filename: String, date: js.UndefOr[scala.Nothing], `type`: utf8): Message = js.native
   @JSName("fromBinary")
   def fromBinary_utf8(bytes: Uint8Array, filename: String, date: Date, `type`: utf8): Message = js.native
   /**
@@ -267,25 +442,95 @@ object message extends js.Object {
     * @returns new message object
     */
   def fromText(text: String): Message = js.native
+  def fromText(text: String, filename: js.UndefOr[scala.Nothing], date: Date): Message = js.native
   def fromText(text: String, filename: String): Message = js.native
   def fromText(text: String, filename: String, date: Date): Message = js.native
   def fromText(text: ReadableStream[String]): Message = js.native
+  def fromText(text: ReadableStream[String], filename: js.UndefOr[scala.Nothing], date: Date): Message = js.native
   def fromText(text: ReadableStream[String], filename: String): Message = js.native
   def fromText(text: ReadableStream[String], filename: String, date: Date): Message = js.native
   @JSName("fromText")
+  def fromText_binary(text: String, filename: js.UndefOr[scala.Nothing], date: js.UndefOr[scala.Nothing], `type`: binary): Message = js.native
+  @JSName("fromText")
+  def fromText_binary(text: String, filename: js.UndefOr[scala.Nothing], date: Date, `type`: binary): Message = js.native
+  @JSName("fromText")
+  def fromText_binary(text: String, filename: String, date: js.UndefOr[scala.Nothing], `type`: binary): Message = js.native
+  @JSName("fromText")
   def fromText_binary(text: String, filename: String, date: Date, `type`: binary): Message = js.native
+  @JSName("fromText")
+  def fromText_binary(
+    text: ReadableStream[String],
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: binary
+  ): Message = js.native
+  @JSName("fromText")
+  def fromText_binary(text: ReadableStream[String], filename: js.UndefOr[scala.Nothing], date: Date, `type`: binary): Message = js.native
+  @JSName("fromText")
+  def fromText_binary(text: ReadableStream[String], filename: String, date: js.UndefOr[scala.Nothing], `type`: binary): Message = js.native
   @JSName("fromText")
   def fromText_binary(text: ReadableStream[String], filename: String, date: Date, `type`: binary): Message = js.native
   @JSName("fromText")
+  def fromText_mime(text: String, filename: js.UndefOr[scala.Nothing], date: js.UndefOr[scala.Nothing], `type`: mime): Message = js.native
+  @JSName("fromText")
+  def fromText_mime(text: String, filename: js.UndefOr[scala.Nothing], date: Date, `type`: mime): Message = js.native
+  @JSName("fromText")
+  def fromText_mime(text: String, filename: String, date: js.UndefOr[scala.Nothing], `type`: mime): Message = js.native
+  @JSName("fromText")
   def fromText_mime(text: String, filename: String, date: Date, `type`: mime): Message = js.native
+  @JSName("fromText")
+  def fromText_mime(
+    text: ReadableStream[String],
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: mime
+  ): Message = js.native
+  @JSName("fromText")
+  def fromText_mime(text: ReadableStream[String], filename: js.UndefOr[scala.Nothing], date: Date, `type`: mime): Message = js.native
+  @JSName("fromText")
+  def fromText_mime(text: ReadableStream[String], filename: String, date: js.UndefOr[scala.Nothing], `type`: mime): Message = js.native
   @JSName("fromText")
   def fromText_mime(text: ReadableStream[String], filename: String, date: Date, `type`: mime): Message = js.native
   @JSName("fromText")
+  def fromText_text(text: String, filename: js.UndefOr[scala.Nothing], date: js.UndefOr[scala.Nothing], `type`: text): Message = js.native
+  @JSName("fromText")
+  def fromText_text(text: String, filename: js.UndefOr[scala.Nothing], date: Date, `type`: text): Message = js.native
+  @JSName("fromText")
+  def fromText_text(text: String, filename: String, date: js.UndefOr[scala.Nothing], `type`: text): Message = js.native
+  @JSName("fromText")
   def fromText_text(text: String, filename: String, date: Date, `type`: text): Message = js.native
+  @JSName("fromText")
+  def fromText_text(
+    text: ReadableStream[String],
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: text
+  ): Message = js.native
+  @JSName("fromText")
+  def fromText_text(text: ReadableStream[String], filename: js.UndefOr[scala.Nothing], date: Date, `type`: text): Message = js.native
+  @JSName("fromText")
+  def fromText_text(text: ReadableStream[String], filename: String, date: js.UndefOr[scala.Nothing], `type`: text): Message = js.native
   @JSName("fromText")
   def fromText_text(text: ReadableStream[String], filename: String, date: Date, `type`: text): Message = js.native
   @JSName("fromText")
+  def fromText_utf8(text: String, filename: js.UndefOr[scala.Nothing], date: js.UndefOr[scala.Nothing], `type`: utf8): Message = js.native
+  @JSName("fromText")
+  def fromText_utf8(text: String, filename: js.UndefOr[scala.Nothing], date: Date, `type`: utf8): Message = js.native
+  @JSName("fromText")
+  def fromText_utf8(text: String, filename: String, date: js.UndefOr[scala.Nothing], `type`: utf8): Message = js.native
+  @JSName("fromText")
   def fromText_utf8(text: String, filename: String, date: Date, `type`: utf8): Message = js.native
+  @JSName("fromText")
+  def fromText_utf8(
+    text: ReadableStream[String],
+    filename: js.UndefOr[scala.Nothing],
+    date: js.UndefOr[scala.Nothing],
+    `type`: utf8
+  ): Message = js.native
+  @JSName("fromText")
+  def fromText_utf8(text: ReadableStream[String], filename: js.UndefOr[scala.Nothing], date: Date, `type`: utf8): Message = js.native
+  @JSName("fromText")
+  def fromText_utf8(text: ReadableStream[String], filename: String, date: js.UndefOr[scala.Nothing], `type`: utf8): Message = js.native
   @JSName("fromText")
   def fromText_utf8(text: ReadableStream[String], filename: String, date: Date, `type`: utf8): Message = js.native
   def read(input: ReadableStream[Uint8Array]): js.Promise[Message] = js.native

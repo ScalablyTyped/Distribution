@@ -14,6 +14,13 @@ object ɵɵattribute extends js.Object {
     /* namespace */ js.UndefOr[String], 
     /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any
   ] = js.native
+  def apply(name: String, value: js.Any, sanitizer: js.UndefOr[scala.Nothing], namespace: String): js.Function4[
+    /* name */ String, 
+    /* value */ js.Any, 
+    /* sanitizer */ js.UndefOr[SanitizerFn | Null], 
+    /* namespace */ js.UndefOr[String], 
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any
+  ] = js.native
   def apply(name: String, value: js.Any, sanitizer: Null, namespace: String): js.Function4[
     /* name */ String, 
     /* value */ js.Any, 

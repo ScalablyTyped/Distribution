@@ -12,7 +12,7 @@ A date/time picker component designed to work with Bootstrap 3 and Momentjs. For
 | Keywords           | twitter-bootstrap, bootstrap, datepicker, datetimepicker, timepicker, moment |
 | # releases         | 1 |
 | # dependents       | 61 |
-| # downloads        | 2883251 |
+| # downloads        | 2911522 |
 | # stars            | 12 |
 
 ## Links

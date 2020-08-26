@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Bin protected () extends js.Object {
   def this(id: ID, x: Double, y: Double, w: Double, h: Double) = this()
   def this(id: ID, x: Double, y: Double, w: Double, h: Double, maxw: Double) = this()
+  def this(id: ID, x: Double, y: Double, w: Double, h: Double, maxw: js.UndefOr[scala.Nothing], maxh: Double) = this()
   def this(id: ID, x: Double, y: Double, w: Double, h: Double, maxw: Double, maxh: Double) = this()
   var h: Double = js.native
   var id: ID = js.native

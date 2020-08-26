@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Equaler[T] extends js.Object {
   /**
     * Tests whether two values are equal to each other.
     * @param x The first value.
     * @param y The second value.
     */
-  def equals(x: T, y: T): Boolean
+  def equals(x: T, y: T): Boolean = js.native
   /**
     * Generates a hash code for a value.
     */
-  def hash(x: T): Double
+  def hash(x: T): Double = js.native
 }
 
 @JSImport("@esfx/equatable/dist", "Equaler")

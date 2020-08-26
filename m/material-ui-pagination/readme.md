@@ -12,7 +12,7 @@ An easy to use and customizable pagination component for material ui.
 | Keywords           | pagination, material-ui |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 62780 |
+| # downloads        | 51213 |
 | # stars            | 1 |
 
 ## Links

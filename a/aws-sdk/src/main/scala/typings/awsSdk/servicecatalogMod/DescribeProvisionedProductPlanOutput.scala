@@ -22,16 +22,36 @@ trait DescribeProvisionedProductPlanOutput extends js.Object {
 
 object DescribeProvisionedProductPlanOutput {
   @scala.inline
-  def apply(
-    NextPageToken: PageToken = null,
-    ProvisionedProductPlanDetails: ProvisionedProductPlanDetails = null,
-    ResourceChanges: ResourceChanges = null
-  ): DescribeProvisionedProductPlanOutput = {
+  def apply(): DescribeProvisionedProductPlanOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (ProvisionedProductPlanDetails != null) __obj.updateDynamic("ProvisionedProductPlanDetails")(ProvisionedProductPlanDetails.asInstanceOf[js.Any])
-    if (ResourceChanges != null) __obj.updateDynamic("ResourceChanges")(ResourceChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProvisionedProductPlanOutput]
   }
+  @scala.inline
+  implicit class DescribeProvisionedProductPlanOutputOps[Self <: DescribeProvisionedProductPlanOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    @scala.inline
+    def setProvisionedProductPlanDetails(value: ProvisionedProductPlanDetails): Self = this.set("ProvisionedProductPlanDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedProductPlanDetails: Self = this.set("ProvisionedProductPlanDetails", js.undefined)
+    @scala.inline
+    def setResourceChangesVarargs(value: ResourceChange*): Self = this.set("ResourceChanges", js.Array(value :_*))
+    @scala.inline
+    def setResourceChanges(value: ResourceChanges): Self = this.set("ResourceChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceChanges: Self = this.set("ResourceChanges", js.undefined)
+  }
+  
 }
 

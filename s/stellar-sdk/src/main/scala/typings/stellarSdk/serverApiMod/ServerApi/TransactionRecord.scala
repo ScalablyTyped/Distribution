@@ -2,6 +2,8 @@ package typings.stellarSdk.serverApiMod.ServerApi
 
 import typings.stellarBase.mod.MemoType
 import typings.stellarSdk.anon.keyinaccountledgeroperati
+import typings.stellarSdk.horizonApiMod.Horizon.FeeBumpTransactionResponse
+import typings.stellarSdk.horizonApiMod.Horizon.InnerTransactionResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,15 +18,19 @@ trait TransactionRecord extends js.Object {
   @JSName("effects")
   var effects_Original: CallCollectionFunction[EffectRecord] = js.native
   var envelope_xdr: String = js.native
-  var fee_charged: Double = js.native
+  var fee_account: String = js.native
+  var fee_bump_transaction: js.UndefOr[FeeBumpTransactionResponse] = js.native
+  var fee_charged: Double | String = js.native
   var fee_meta_xdr: String = js.native
   var hash: String = js.native
   var id: String = js.native
+  var inner_transaction: js.UndefOr[InnerTransactionResponse] = js.native
   @JSName("ledger")
   var ledger_Original: CallFunction[LedgerRecord] = js.native
   var ledger_attr: Double = js.native
-  var max_fee: Double = js.native
+  var max_fee: Double | String = js.native
   var memo: js.UndefOr[String] = js.native
+  var memo_bytes: js.UndefOr[String] = js.native
   var memo_type: MemoType = js.native
   var operation_count: Double = js.native
   @JSName("operations")

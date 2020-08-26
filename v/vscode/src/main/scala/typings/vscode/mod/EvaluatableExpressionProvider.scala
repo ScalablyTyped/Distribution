@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EvaluatableExpressionProvider extends js.Object {
   /**
     * Provide an evaluatable expression for the given document and position.
@@ -16,7 +17,7 @@ trait EvaluatableExpressionProvider extends js.Object {
     * @return An EvaluatableExpression or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined` or `null`.
     */
-  def provideEvaluatableExpression(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[EvaluatableExpression]
+  def provideEvaluatableExpression(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[EvaluatableExpression] = js.native
 }
 
 object EvaluatableExpressionProvider {
@@ -27,5 +28,20 @@ object EvaluatableExpressionProvider {
     val __obj = js.Dynamic.literal(provideEvaluatableExpression = js.Any.fromFunction3(provideEvaluatableExpression))
     __obj.asInstanceOf[EvaluatableExpressionProvider]
   }
+  @scala.inline
+  implicit class EvaluatableExpressionProviderOps[Self <: EvaluatableExpressionProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvideEvaluatableExpression(value: (TextDocument, Position, CancellationToken) => ProviderResult[EvaluatableExpression]): Self = this.set("provideEvaluatableExpression", js.Any.fromFunction3(value))
+  }
+  
 }
 

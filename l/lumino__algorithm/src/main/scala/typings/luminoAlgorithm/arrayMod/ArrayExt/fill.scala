@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.fill")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.fill")
 @js.native
 object fill extends js.Object {
   /**
@@ -43,6 +43,7 @@ object fill extends js.Object {
     * ```
     */
   def apply[T](array: MutableArrayLike[T], value: T): Unit = js.native
+  def apply[T](array: MutableArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
   def apply[T](array: MutableArrayLike[T], value: T, start: Double): Unit = js.native
   def apply[T](array: MutableArrayLike[T], value: T, start: Double, stop: Double): Unit = js.native
 }

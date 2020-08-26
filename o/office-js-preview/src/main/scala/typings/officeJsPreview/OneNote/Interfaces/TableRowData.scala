@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface describing the data returned by calling "tableRow.toJSON()". */
+@js.native
 trait TableRowData extends js.Object {
   /**
     *
@@ -12,44 +13,66 @@ trait TableRowData extends js.Object {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var cellCount: js.UndefOr[Double] = js.undefined
+  var cellCount: js.UndefOr[Double] = js.native
   /**
     *
     * Gets the cells in the row. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var cells: js.UndefOr[js.Array[TableCellData]] = js.undefined
+  var cells: js.UndefOr[js.Array[TableCellData]] = js.native
   /**
     *
     * Gets the ID of the row. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     *
     * Gets the index of the row in its parent table. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var rowIndex: js.UndefOr[Double] = js.undefined
+  var rowIndex: js.UndefOr[Double] = js.native
 }
 
 object TableRowData {
   @scala.inline
-  def apply(
-    cellCount: js.UndefOr[Double] = js.undefined,
-    cells: js.Array[TableCellData] = null,
-    id: String = null,
-    rowIndex: js.UndefOr[Double] = js.undefined
-  ): TableRowData = {
+  def apply(): TableRowData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount.get.asInstanceOf[js.Any])
-    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowData]
   }
+  @scala.inline
+  implicit class TableRowDataOps[Self <: TableRowData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCellCount(value: Double): Self = this.set("cellCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellCount: Self = this.set("cellCount", js.undefined)
+    @scala.inline
+    def setCellsVarargs(value: TableCellData*): Self = this.set("cells", js.Array(value :_*))
+    @scala.inline
+    def setCells(value: js.Array[TableCellData]): Self = this.set("cells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCells: Self = this.set("cells", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+  }
+  
 }
 

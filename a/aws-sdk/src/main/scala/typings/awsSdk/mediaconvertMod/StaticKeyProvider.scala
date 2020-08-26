@@ -26,18 +26,38 @@ trait StaticKeyProvider extends js.Object {
 
 object StaticKeyProvider {
   @scala.inline
-  def apply(
-    KeyFormat: stringPatternIdentityAZaZ26AZaZ09163 = null,
-    KeyFormatVersions: stringPatternDD = null,
-    StaticKeyValue: stringPatternAZaZ0932 = null,
-    Url: string = null
-  ): StaticKeyProvider = {
+  def apply(): StaticKeyProvider = {
     val __obj = js.Dynamic.literal()
-    if (KeyFormat != null) __obj.updateDynamic("KeyFormat")(KeyFormat.asInstanceOf[js.Any])
-    if (KeyFormatVersions != null) __obj.updateDynamic("KeyFormatVersions")(KeyFormatVersions.asInstanceOf[js.Any])
-    if (StaticKeyValue != null) __obj.updateDynamic("StaticKeyValue")(StaticKeyValue.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticKeyProvider]
   }
+  @scala.inline
+  implicit class StaticKeyProviderOps[Self <: StaticKeyProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyFormat(value: stringPatternIdentityAZaZ26AZaZ09163): Self = this.set("KeyFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyFormat: Self = this.set("KeyFormat", js.undefined)
+    @scala.inline
+    def setKeyFormatVersions(value: stringPatternDD): Self = this.set("KeyFormatVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyFormatVersions: Self = this.set("KeyFormatVersions", js.undefined)
+    @scala.inline
+    def setStaticKeyValue(value: stringPatternAZaZ0932): Self = this.set("StaticKeyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticKeyValue: Self = this.set("StaticKeyValue", js.undefined)
+    @scala.inline
+    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

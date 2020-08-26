@@ -50,6 +50,7 @@ trait NotebookEditor extends js.Object {
     * Kicks off execution of all code cells. Thenable will resolve only when full execution of all cells is completed.
     */
   def runAllCells(): Thenable[Boolean] = js.native
+  def runAllCells(startCell: js.UndefOr[scala.Nothing], endCell: NotebookCell): Thenable[Boolean] = js.native
   def runAllCells(startCell: NotebookCell): Thenable[Boolean] = js.native
   def runAllCells(startCell: NotebookCell, endCell: NotebookCell): Thenable[Boolean] = js.native
   /**

@@ -26,17 +26,38 @@ trait UpdateSecurityGroupRuleDescriptionsEgressRequest extends js.Object {
 
 object UpdateSecurityGroupRuleDescriptionsEgressRequest {
   @scala.inline
-  def apply(
-    IpPermissions: IpPermissionList,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    GroupId: SecurityGroupId = null,
-    GroupName: SecurityGroupName = null
-  ): UpdateSecurityGroupRuleDescriptionsEgressRequest = {
+  def apply(IpPermissions: IpPermissionList): UpdateSecurityGroupRuleDescriptionsEgressRequest = {
     val __obj = js.Dynamic.literal(IpPermissions = IpPermissions.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (GroupId != null) __obj.updateDynamic("GroupId")(GroupId.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSecurityGroupRuleDescriptionsEgressRequest]
   }
+  @scala.inline
+  implicit class UpdateSecurityGroupRuleDescriptionsEgressRequestOps[Self <: UpdateSecurityGroupRuleDescriptionsEgressRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpPermissionsVarargs(value: IpPermission*): Self = this.set("IpPermissions", js.Array(value :_*))
+    @scala.inline
+    def setIpPermissions(value: IpPermissionList): Self = this.set("IpPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setGroupId(value: SecurityGroupId): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("GroupId", js.undefined)
+    @scala.inline
+    def setGroupName(value: SecurityGroupName): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+  }
+  
 }
 

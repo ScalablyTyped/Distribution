@@ -22,16 +22,38 @@ trait Compliance extends js.Object {
 
 object Compliance {
   @scala.inline
-  def apply(
-    RelatedRequirements: RelatedRequirementsList = null,
-    Status: ComplianceStatus = null,
-    StatusReasons: StatusReasonsList = null
-  ): Compliance = {
+  def apply(): Compliance = {
     val __obj = js.Dynamic.literal()
-    if (RelatedRequirements != null) __obj.updateDynamic("RelatedRequirements")(RelatedRequirements.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusReasons != null) __obj.updateDynamic("StatusReasons")(StatusReasons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Compliance]
   }
+  @scala.inline
+  implicit class ComplianceOps[Self <: Compliance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRelatedRequirementsVarargs(value: NonEmptyString*): Self = this.set("RelatedRequirements", js.Array(value :_*))
+    @scala.inline
+    def setRelatedRequirements(value: RelatedRequirementsList): Self = this.set("RelatedRequirements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedRequirements: Self = this.set("RelatedRequirements", js.undefined)
+    @scala.inline
+    def setStatus(value: ComplianceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusReasonsVarargs(value: StatusReason*): Self = this.set("StatusReasons", js.Array(value :_*))
+    @scala.inline
+    def setStatusReasons(value: StatusReasonsList): Self = this.set("StatusReasons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReasons: Self = this.set("StatusReasons", js.undefined)
+  }
+  
 }
 

@@ -62,6 +62,7 @@ trait ASPxClientDockPanel extends ASPxClientPopupControlBase {
     * @param y An integer value that specifies the Y-coordinate of the panel's display position.
     */
   def MakeFloat(): Unit = js.native
+  def MakeFloat(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def MakeFloat(x: Double): Unit = js.native
   def MakeFloat(x: Double, y: Double): Unit = js.native
   /**

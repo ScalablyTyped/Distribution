@@ -26,17 +26,36 @@ trait TransformInput extends js.Object {
 
 object TransformInput {
   @scala.inline
-  def apply(
-    DataSource: TransformDataSource,
-    CompressionType: CompressionType = null,
-    ContentType: ContentType = null,
-    SplitType: SplitType = null
-  ): TransformInput = {
+  def apply(DataSource: TransformDataSource): TransformInput = {
     val __obj = js.Dynamic.literal(DataSource = DataSource.asInstanceOf[js.Any])
-    if (CompressionType != null) __obj.updateDynamic("CompressionType")(CompressionType.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (SplitType != null) __obj.updateDynamic("SplitType")(SplitType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformInput]
   }
+  @scala.inline
+  implicit class TransformInputOps[Self <: TransformInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSource(value: TransformDataSource): Self = this.set("DataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompressionType(value: CompressionType): Self = this.set("CompressionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompressionType: Self = this.set("CompressionType", js.undefined)
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setSplitType(value: SplitType): Self = this.set("SplitType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitType: Self = this.set("SplitType", js.undefined)
+  }
+  
 }
 

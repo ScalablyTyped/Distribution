@@ -6,8 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ɵNOCHANGE extends js.Object {
-  var __brand__ : NO_CHANGE
+  var __brand__ : NO_CHANGE = js.native
 }
 
 @JSImport("@angular/core", "\u0275NO_CHANGE")

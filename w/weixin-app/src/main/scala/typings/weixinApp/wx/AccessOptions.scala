@@ -5,24 +5,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 文件
+@js.native
 trait AccessOptions
   extends BaseOptions[js.Any, js.Any] {
-  var path: String
+  var path: String = js.native
 }
 
 object AccessOptions {
   @scala.inline
-  def apply(
-    path: String,
-    complete: /* res */ js.Any => Unit = null,
-    fail: js.Any => Unit = null,
-    success: js.Any => Unit = null
-  ): AccessOptions = {
+  def apply(path: String): AccessOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[AccessOptions]
   }
+  @scala.inline
+  implicit class AccessOptionsOps[Self <: AccessOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -27,11 +27,30 @@ trait SchemaSubmitJobRequest extends js.Object {
 
 object SchemaSubmitJobRequest {
   @scala.inline
-  def apply(job: SchemaJob = null, requestId: String = null): SchemaSubmitJobRequest = {
+  def apply(): SchemaSubmitJobRequest = {
     val __obj = js.Dynamic.literal()
-    if (job != null) __obj.updateDynamic("job")(job.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubmitJobRequest]
   }
+  @scala.inline
+  implicit class SchemaSubmitJobRequestOps[Self <: SchemaSubmitJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJob(value: SchemaJob): Self = this.set("job", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJob: Self = this.set("job", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+  }
+  
 }
 

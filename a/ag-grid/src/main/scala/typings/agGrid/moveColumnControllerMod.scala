@@ -43,23 +43,13 @@ object moveColumnControllerMod extends js.Object {
     /* private */ def checkCenterForScrolling(xAdjustedForScroll: js.Any): js.Any = js.native
     /* private */ def ensureIntervalCleared(): js.Any = js.native
     /* private */ def ensureIntervalStarted(): js.Any = js.native
-    /* CompleteClass */
-    override def getIconName(): String = js.native
     def init(): Unit = js.native
     /* private */ def isColumnHidden(displayedColumns: js.Any, col: js.Any): js.Any = js.native
     /* private */ def moveInterval(): js.Any = js.native
     /* private */ def normaliseDirection(hDirection: js.Any): js.Any = js.native
     /* private */ def normaliseX(x: js.Any): js.Any = js.native
-    /* CompleteClass */
-    override def onDragEnter(params: DraggingEvent): Unit = js.native
-    /* CompleteClass */
-    override def onDragLeave(params: DraggingEvent): Unit = js.native
     def onDragStop(): Unit = js.native
-    /* CompleteClass */
-    override def onDragStop(params: DraggingEvent): Unit = js.native
     def onDragging(draggingEvent: DraggingEvent, fromEnter: Boolean): Unit = js.native
-    /* CompleteClass */
-    override def onDragging(params: DraggingEvent): Unit = js.native
     def registerGridComp(gridPanel: GridPanel): Unit = js.native
     def setColumnsPinned(columns: js.Array[Column], pinned: String): Unit = js.native
     def setColumnsPinned(columns: js.Array[Column], pinned: String, source: ColumnEventType): Unit = js.native

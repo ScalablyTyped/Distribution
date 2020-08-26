@@ -26,16 +26,9 @@ object enableKeyCommandMod extends js.Object {
           Readable
         ] {
     def this(input: EnableKeyInput) = this()
-    /* CompleteClass */
-    override val input: EnableKeyInput = js.native
     val middlewareStack: MiddlewareStack[EnableKeyInput, EnableKeyOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: KMSResolvedConfiguration
-    ): Handler[EnableKeyInput, EnableKeyOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: KMSResolvedConfiguration
     ): Handler[EnableKeyInput, EnableKeyOutput] = js.native
   }

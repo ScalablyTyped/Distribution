@@ -28,17 +28,8 @@ object _SvgProperties {
     __obj.asInstanceOf[_SvgProperties[T]]
   }
   @scala.inline
-  def RectProps[/* <: typings.svgIntersections.mod.SvgElements */ T](
-    height: Double,
-    width: Double,
-    x: Double,
-    y: Double,
-    rx: js.UndefOr[Double] = js.undefined,
-    ry: js.UndefOr[Double] = js.undefined
-  ): _SvgProperties[T] = {
+  def RectProps[/* <: typings.svgIntersections.mod.SvgElements */ T](height: Double, width: Double, x: Double, y: Double): _SvgProperties[T] = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (!js.isUndefined(rx)) __obj.updateDynamic("rx")(rx.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ry)) __obj.updateDynamic("ry")(ry.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SvgProperties[T]]
   }
   @scala.inline

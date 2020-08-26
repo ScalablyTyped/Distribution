@@ -18,11 +18,32 @@ trait ListLicenseSpecificationsForResourceResponse extends js.Object {
 
 object ListLicenseSpecificationsForResourceResponse {
   @scala.inline
-  def apply(LicenseSpecifications: LicenseSpecifications = null, NextToken: String = null): ListLicenseSpecificationsForResourceResponse = {
+  def apply(): ListLicenseSpecificationsForResourceResponse = {
     val __obj = js.Dynamic.literal()
-    if (LicenseSpecifications != null) __obj.updateDynamic("LicenseSpecifications")(LicenseSpecifications.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLicenseSpecificationsForResourceResponse]
   }
+  @scala.inline
+  implicit class ListLicenseSpecificationsForResourceResponseOps[Self <: ListLicenseSpecificationsForResourceResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLicenseSpecificationsVarargs(value: LicenseSpecification*): Self = this.set("LicenseSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setLicenseSpecifications(value: LicenseSpecifications): Self = this.set("LicenseSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseSpecifications: Self = this.set("LicenseSpecifications", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

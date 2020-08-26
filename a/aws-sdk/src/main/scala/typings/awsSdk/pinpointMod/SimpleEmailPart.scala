@@ -18,11 +18,30 @@ trait SimpleEmailPart extends js.Object {
 
 object SimpleEmailPart {
   @scala.inline
-  def apply(Charset: string = null, Data: string = null): SimpleEmailPart = {
+  def apply(): SimpleEmailPart = {
     val __obj = js.Dynamic.literal()
-    if (Charset != null) __obj.updateDynamic("Charset")(Charset.asInstanceOf[js.Any])
-    if (Data != null) __obj.updateDynamic("Data")(Data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleEmailPart]
   }
+  @scala.inline
+  implicit class SimpleEmailPartOps[Self <: SimpleEmailPart] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCharset(value: string): Self = this.set("Charset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharset: Self = this.set("Charset", js.undefined)
+    @scala.inline
+    def setData(value: string): Self = this.set("Data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("Data", js.undefined)
+  }
+  
 }
 

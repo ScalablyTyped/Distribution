@@ -39,13 +39,13 @@ class Association protected () extends AssociationBase {
   @JSName("model")
   var model_FAssociation: IModel = js.native
   def child: Entity = js.native
-  def child(newValue: Entity): js.Any = js.native
   def childConnection: IPoint = js.native
-  def childConnection(newValue: IPoint): js.Any = js.native
+  def childConnection_=(newValue: IPoint): Unit = js.native
+  def child_=(newValue: Entity): Unit = js.native
   @JSName("containerAsDomainModel")
   def containerAsDomainModel_MAssociation: DomainModel = js.native
   def parentConnection: IPoint = js.native
-  def parentConnection(newValue: IPoint): js.Any = js.native
+  def parentConnection_=(newValue: IPoint): Unit = js.native
 }
 
 /* static members */

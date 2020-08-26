@@ -26,7 +26,34 @@ object commonMod extends js.Object {
       */
     def this(rowHeights: js.Array[Double], columnWidths: js.Array[Double]) = this()
     def this(rowHeights: js.Array[Double], columnWidths: js.Array[Double], bleed: Double) = this()
+    def this(
+      rowHeights: js.Array[Double],
+      columnWidths: js.Array[Double],
+      bleed: js.UndefOr[scala.Nothing],
+      ghostHeight: Double
+    ) = this()
     def this(rowHeights: js.Array[Double], columnWidths: js.Array[Double], bleed: Double, ghostHeight: Double) = this()
+    def this(
+      rowHeights: js.Array[Double],
+      columnWidths: js.Array[Double],
+      bleed: js.UndefOr[scala.Nothing],
+      ghostHeight: js.UndefOr[scala.Nothing],
+      ghostWidth: Double
+    ) = this()
+    def this(
+      rowHeights: js.Array[Double],
+      columnWidths: js.Array[Double],
+      bleed: js.UndefOr[scala.Nothing],
+      ghostHeight: Double,
+      ghostWidth: Double
+    ) = this()
+    def this(
+      rowHeights: js.Array[Double],
+      columnWidths: js.Array[Double],
+      bleed: Double,
+      ghostHeight: js.UndefOr[scala.Nothing],
+      ghostWidth: Double
+    ) = this()
     def this(
       rowHeights: js.Array[Double],
       columnWidths: js.Array[Double],
@@ -193,6 +220,7 @@ object commonMod extends js.Object {
       * Assumes max >= min.
       */
     def clamp(value: Double): Double = js.native
+    def clamp(value: Double, min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
     def clamp(value: Double, min: Double): Double = js.native
     def clamp(value: Double, min: Double, max: Double): Double = js.native
     def getApproxCellHeight(

@@ -57,10 +57,20 @@ class AndroidNotification () extends js.Object {
   def setAutoCancel(autoCancel: Boolean): Notification = js.native
   def setBadgeIconType(badgeIconType: BadgeIconType): Notification = js.native
   def setBigPicture(picture: String): Notification = js.native
+  def setBigPicture(
+    picture: String,
+    largeIcon: js.UndefOr[scala.Nothing],
+    contentTitle: js.UndefOr[scala.Nothing],
+    summaryText: String
+  ): Notification = js.native
+  def setBigPicture(picture: String, largeIcon: js.UndefOr[scala.Nothing], contentTitle: String): Notification = js.native
+  def setBigPicture(picture: String, largeIcon: js.UndefOr[scala.Nothing], contentTitle: String, summaryText: String): Notification = js.native
   def setBigPicture(picture: String, largeIcon: String): Notification = js.native
+  def setBigPicture(picture: String, largeIcon: String, contentTitle: js.UndefOr[scala.Nothing], summaryText: String): Notification = js.native
   def setBigPicture(picture: String, largeIcon: String, contentTitle: String): Notification = js.native
   def setBigPicture(picture: String, largeIcon: String, contentTitle: String, summaryText: String): Notification = js.native
   def setBigText(text: String): Notification = js.native
+  def setBigText(text: String, contentTitle: js.UndefOr[scala.Nothing], summaryText: String): Notification = js.native
   def setBigText(text: String, contentTitle: String): Notification = js.native
   def setBigText(text: String, contentTitle: String, summaryText: String): Notification = js.native
   def setCategory(category: Category): Notification = js.native

@@ -28,12 +28,34 @@ trait SchemaUpdatePageElementTransformRequest extends js.Object {
 
 object SchemaUpdatePageElementTransformRequest {
   @scala.inline
-  def apply(applyMode: String = null, objectId: String = null, transform: SchemaAffineTransform = null): SchemaUpdatePageElementTransformRequest = {
+  def apply(): SchemaUpdatePageElementTransformRequest = {
     val __obj = js.Dynamic.literal()
-    if (applyMode != null) __obj.updateDynamic("applyMode")(applyMode.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdatePageElementTransformRequest]
   }
+  @scala.inline
+  implicit class SchemaUpdatePageElementTransformRequestOps[Self <: SchemaUpdatePageElementTransformRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplyMode(value: String): Self = this.set("applyMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyMode: Self = this.set("applyMode", js.undefined)
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    @scala.inline
+    def setTransform(value: SchemaAffineTransform): Self = this.set("transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+  }
+  
 }
 

@@ -22,10 +22,6 @@ class FileSystemError () extends Error {
     * or `Unknown` for unspecified errors.
     */
   val code: String = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 
 /* static members */

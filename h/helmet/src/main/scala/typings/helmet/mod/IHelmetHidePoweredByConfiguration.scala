@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IHelmetHidePoweredByConfiguration extends js.Object {
-  var setTo: js.UndefOr[String] = js.undefined
+  var setTo: js.UndefOr[String] = js.native
 }
 
 object IHelmetHidePoweredByConfiguration {
   @scala.inline
-  def apply(setTo: String = null): IHelmetHidePoweredByConfiguration = {
+  def apply(): IHelmetHidePoweredByConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (setTo != null) __obj.updateDynamic("setTo")(setTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHelmetHidePoweredByConfiguration]
   }
+  @scala.inline
+  implicit class IHelmetHidePoweredByConfigurationOps[Self <: IHelmetHidePoweredByConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSetTo(value: String): Self = this.set("setTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetTo: Self = this.set("setTo", js.undefined)
+  }
+  
 }
 

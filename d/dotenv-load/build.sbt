@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "dotenv-load"
-version := "2.0-dt-20200621Z-53844c"
-scalaVersion := "2.13.2"
+version := "2.0-dt-20200621Z-40af9f"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * This action node returns `ERROR` always.
   *
   */
+@js.native
 trait Error extends BaseNode
 
 object Error {

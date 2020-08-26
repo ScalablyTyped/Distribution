@@ -7,72 +7,123 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScrollRevealObjectOptions extends js.Object {
-  var afterReset: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
-  var afterReveal: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
-  var beforeReset: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
-  var beforeReveal: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
-  var container: js.UndefOr[js.Any] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var distance: js.UndefOr[String] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var easing: js.UndefOr[String] = js.undefined
-  var interval: js.UndefOr[Double] = js.undefined
-  var mobile: js.UndefOr[Boolean] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var origin: js.UndefOr[String] = js.undefined
-  var reset: js.UndefOr[Boolean] = js.undefined
-  var rotate: js.UndefOr[ScrollRevealRotateObject] = js.undefined
-  var scale: js.UndefOr[Double] = js.undefined
-  var useDelay: js.UndefOr[String] = js.undefined
-  var viewFactor: js.UndefOr[Double] = js.undefined
-  var viewOffset: js.UndefOr[ScrollRevealPositionObject] = js.undefined
+  var afterReset: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.native
+  var afterReveal: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.native
+  var beforeReset: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.native
+  var beforeReveal: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.native
+  var container: js.UndefOr[js.Any] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var easing: js.UndefOr[String] = js.native
+  var interval: js.UndefOr[Double] = js.native
+  var mobile: js.UndefOr[Boolean] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var origin: js.UndefOr[String] = js.native
+  var reset: js.UndefOr[Boolean] = js.native
+  var rotate: js.UndefOr[ScrollRevealRotateObject] = js.native
+  var scale: js.UndefOr[Double] = js.native
+  var useDelay: js.UndefOr[String] = js.native
+  var viewFactor: js.UndefOr[Double] = js.native
+  var viewOffset: js.UndefOr[ScrollRevealPositionObject] = js.native
 }
 
 object ScrollRevealObjectOptions {
   @scala.inline
-  def apply(
-    afterReset: /* domEl */ HTMLElement | NodeListOf[Element] => Unit = null,
-    afterReveal: /* domEl */ HTMLElement | NodeListOf[Element] => Unit = null,
-    beforeReset: /* domEl */ HTMLElement | NodeListOf[Element] => Unit = null,
-    beforeReveal: /* domEl */ HTMLElement | NodeListOf[Element] => Unit = null,
-    container: js.Any = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    distance: String = null,
-    duration: js.UndefOr[Double] = js.undefined,
-    easing: String = null,
-    interval: js.UndefOr[Double] = js.undefined,
-    mobile: js.UndefOr[Boolean] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    origin: String = null,
-    reset: js.UndefOr[Boolean] = js.undefined,
-    rotate: ScrollRevealRotateObject = null,
-    scale: js.UndefOr[Double] = js.undefined,
-    useDelay: String = null,
-    viewFactor: js.UndefOr[Double] = js.undefined,
-    viewOffset: ScrollRevealPositionObject = null
-  ): ScrollRevealObjectOptions = {
+  def apply(): ScrollRevealObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterReset != null) __obj.updateDynamic("afterReset")(js.Any.fromFunction1(afterReset))
-    if (afterReveal != null) __obj.updateDynamic("afterReveal")(js.Any.fromFunction1(afterReveal))
-    if (beforeReset != null) __obj.updateDynamic("beforeReset")(js.Any.fromFunction1(beforeReset))
-    if (beforeReveal != null) __obj.updateDynamic("beforeReveal")(js.Any.fromFunction1(beforeReveal))
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mobile)) __obj.updateDynamic("mobile")(mobile.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.get.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (useDelay != null) __obj.updateDynamic("useDelay")(useDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewFactor)) __obj.updateDynamic("viewFactor")(viewFactor.get.asInstanceOf[js.Any])
-    if (viewOffset != null) __obj.updateDynamic("viewOffset")(viewOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollRevealObjectOptions]
   }
+  @scala.inline
+  implicit class ScrollRevealObjectOptionsOps[Self <: ScrollRevealObjectOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterReset(value: /* domEl */ HTMLElement | NodeListOf[Element] => Unit): Self = this.set("afterReset", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterReset: Self = this.set("afterReset", js.undefined)
+    @scala.inline
+    def setAfterReveal(value: /* domEl */ HTMLElement | NodeListOf[Element] => Unit): Self = this.set("afterReveal", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterReveal: Self = this.set("afterReveal", js.undefined)
+    @scala.inline
+    def setBeforeReset(value: /* domEl */ HTMLElement | NodeListOf[Element] => Unit): Self = this.set("beforeReset", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeReset: Self = this.set("beforeReset", js.undefined)
+    @scala.inline
+    def setBeforeReveal(value: /* domEl */ HTMLElement | NodeListOf[Element] => Unit): Self = this.set("beforeReveal", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeReveal: Self = this.set("beforeReveal", js.undefined)
+    @scala.inline
+    def setContainer(value: js.Any): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDistance(value: String): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistance: Self = this.set("distance", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setMobile(value: Boolean): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobile: Self = this.set("mobile", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+    @scala.inline
+    def setReset(value: Boolean): Self = this.set("reset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReset: Self = this.set("reset", js.undefined)
+    @scala.inline
+    def setRotate(value: ScrollRevealRotateObject): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotate: Self = this.set("rotate", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setUseDelay(value: String): Self = this.set("useDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseDelay: Self = this.set("useDelay", js.undefined)
+    @scala.inline
+    def setViewFactor(value: Double): Self = this.set("viewFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewFactor: Self = this.set("viewFactor", js.undefined)
+    @scala.inline
+    def setViewOffset(value: ScrollRevealPositionObject): Self = this.set("viewOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewOffset: Self = this.set("viewOffset", js.undefined)
+  }
+  
 }
 

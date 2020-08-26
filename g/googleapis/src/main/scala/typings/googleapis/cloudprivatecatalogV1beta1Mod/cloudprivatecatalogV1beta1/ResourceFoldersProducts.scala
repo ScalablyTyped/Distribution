@@ -31,6 +31,7 @@ class ResourceFoldersProducts protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponse] = js.native
   def search(params: ParamsResourceFoldersProductsSearch): GaxiosPromise[SchemaGoogleCloudPrivatecatalogV1beta1SearchProductsResponse] = js.native
   def search(
     params: ParamsResourceFoldersProductsSearch,

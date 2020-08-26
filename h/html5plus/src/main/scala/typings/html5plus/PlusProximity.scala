@@ -25,6 +25,7 @@ trait PlusProximity extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/proximity.html](http://www.html5plus.org/doc/zh_cn/proximity.html)
     */
   def getCurrentProximity(): Unit = js.native
+  def getCurrentProximity(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getCurrentProximity(successCB: js.Function1[/* result */ Double, Unit]): Unit = js.native
   def getCurrentProximity(
     successCB: js.Function1[/* result */ Double, Unit],
@@ -37,6 +38,7 @@ trait PlusProximity extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/proximity.html](http://www.html5plus.org/doc/zh_cn/proximity.html)
     */
   def watchProximity(): Double = js.native
+  def watchProximity(changeCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Double = js.native
   def watchProximity(changeCB: js.Function1[/* result */ Double, Unit]): Double = js.native
   def watchProximity(
     changeCB: js.Function1[/* result */ Double, Unit],

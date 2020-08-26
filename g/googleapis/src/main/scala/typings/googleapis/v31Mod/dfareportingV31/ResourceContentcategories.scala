@@ -28,6 +28,7 @@ class ResourceContentcategories protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceContentcategoriesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceContentcategoriesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourceContentcategories protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaContentCategory] = js.native
   def get(callback: BodyResponseCallback[SchemaContentCategory]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContentCategory] = js.native
   def get(params: ParamsResourceContentcategoriesGet): GaxiosPromise[SchemaContentCategory] = js.native
   def get(params: ParamsResourceContentcategoriesGet, callback: BodyResponseCallback[SchemaContentCategory]): Unit = js.native
   def get(
@@ -84,6 +86,7 @@ class ResourceContentcategories protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaContentCategory] = js.native
   def insert(callback: BodyResponseCallback[SchemaContentCategory]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContentCategory] = js.native
   def insert(params: ParamsResourceContentcategoriesInsert): GaxiosPromise[SchemaContentCategory] = js.native
   def insert(
     params: ParamsResourceContentcategoriesInsert,
@@ -121,6 +124,7 @@ class ResourceContentcategories protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaContentCategoriesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaContentCategoriesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContentCategoriesListResponse] = js.native
   def list(params: ParamsResourceContentcategoriesList): GaxiosPromise[SchemaContentCategoriesListResponse] = js.native
   def list(
     params: ParamsResourceContentcategoriesList,
@@ -154,6 +158,7 @@ class ResourceContentcategories protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaContentCategory] = js.native
   def patch(callback: BodyResponseCallback[SchemaContentCategory]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContentCategory] = js.native
   def patch(params: ParamsResourceContentcategoriesPatch): GaxiosPromise[SchemaContentCategory] = js.native
   def patch(
     params: ParamsResourceContentcategoriesPatch,
@@ -185,6 +190,7 @@ class ResourceContentcategories protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaContentCategory] = js.native
   def update(callback: BodyResponseCallback[SchemaContentCategory]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContentCategory] = js.native
   def update(params: ParamsResourceContentcategoriesUpdate): GaxiosPromise[SchemaContentCategory] = js.native
   def update(
     params: ParamsResourceContentcategoriesUpdate,

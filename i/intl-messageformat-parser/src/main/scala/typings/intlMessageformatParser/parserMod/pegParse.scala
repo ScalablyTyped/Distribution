@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("intl-messageformat-parser/lib/parser", "pegParse")
+@JSImport("intl-messageformat-parser/lib/src/parser", "pegParse")
 @js.native
 object pegParse extends TopLevel[ParseFunction]
 

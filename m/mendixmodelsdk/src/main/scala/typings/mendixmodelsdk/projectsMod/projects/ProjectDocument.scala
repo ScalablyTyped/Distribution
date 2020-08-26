@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.unitsMod.IAbstractUnit because Already inherited
 - typings.mendixmodelsdk.unitsMod.IModelUnit because Already inherited
-- typings.mendixmodelsdk.projectsMod.projects.IProjectDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsProject */ @JSImport("mendixmodelsdk/dist/gen/projects", "projects.ProjectDocument")
+- typings.mendixmodelsdk.projectsMod.projects.IProjectDocument because var conflicts: id, isLoadable, isLoaded, isReadOnly, model, structureTypeName, unit. Inlined containerAsProject */ @JSImport("mendixmodelsdk/dist/gen/projects", "projects.ProjectDocument")
 @js.native
 abstract class ProjectDocument protected () extends ModelUnit {
   def this(

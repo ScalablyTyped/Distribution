@@ -50,30 +50,62 @@ trait ElasticsearchClusterConfig extends js.Object {
 
 object ElasticsearchClusterConfig {
   @scala.inline
-  def apply(
-    DedicatedMasterCount: js.UndefOr[IntegerClass] = js.undefined,
-    DedicatedMasterEnabled: js.UndefOr[Boolean] = js.undefined,
-    DedicatedMasterType: ESPartitionInstanceType = null,
-    InstanceCount: js.UndefOr[IntegerClass] = js.undefined,
-    InstanceType: ESPartitionInstanceType = null,
-    WarmCount: js.UndefOr[IntegerClass] = js.undefined,
-    WarmEnabled: js.UndefOr[Boolean] = js.undefined,
-    WarmType: ESWarmPartitionInstanceType = null,
-    ZoneAwarenessConfig: ZoneAwarenessConfig = null,
-    ZoneAwarenessEnabled: js.UndefOr[Boolean] = js.undefined
-  ): ElasticsearchClusterConfig = {
+  def apply(): ElasticsearchClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DedicatedMasterCount)) __obj.updateDynamic("DedicatedMasterCount")(DedicatedMasterCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DedicatedMasterEnabled)) __obj.updateDynamic("DedicatedMasterEnabled")(DedicatedMasterEnabled.get.asInstanceOf[js.Any])
-    if (DedicatedMasterType != null) __obj.updateDynamic("DedicatedMasterType")(DedicatedMasterType.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(WarmCount)) __obj.updateDynamic("WarmCount")(WarmCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(WarmEnabled)) __obj.updateDynamic("WarmEnabled")(WarmEnabled.get.asInstanceOf[js.Any])
-    if (WarmType != null) __obj.updateDynamic("WarmType")(WarmType.asInstanceOf[js.Any])
-    if (ZoneAwarenessConfig != null) __obj.updateDynamic("ZoneAwarenessConfig")(ZoneAwarenessConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(ZoneAwarenessEnabled)) __obj.updateDynamic("ZoneAwarenessEnabled")(ZoneAwarenessEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchClusterConfig]
   }
+  @scala.inline
+  implicit class ElasticsearchClusterConfigOps[Self <: ElasticsearchClusterConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDedicatedMasterCount(value: IntegerClass): Self = this.set("DedicatedMasterCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedMasterCount: Self = this.set("DedicatedMasterCount", js.undefined)
+    @scala.inline
+    def setDedicatedMasterEnabled(value: Boolean): Self = this.set("DedicatedMasterEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedMasterEnabled: Self = this.set("DedicatedMasterEnabled", js.undefined)
+    @scala.inline
+    def setDedicatedMasterType(value: ESPartitionInstanceType): Self = this.set("DedicatedMasterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedMasterType: Self = this.set("DedicatedMasterType", js.undefined)
+    @scala.inline
+    def setInstanceCount(value: IntegerClass): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCount: Self = this.set("InstanceCount", js.undefined)
+    @scala.inline
+    def setInstanceType(value: ESPartitionInstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setWarmCount(value: IntegerClass): Self = this.set("WarmCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarmCount: Self = this.set("WarmCount", js.undefined)
+    @scala.inline
+    def setWarmEnabled(value: Boolean): Self = this.set("WarmEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarmEnabled: Self = this.set("WarmEnabled", js.undefined)
+    @scala.inline
+    def setWarmType(value: ESWarmPartitionInstanceType): Self = this.set("WarmType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarmType: Self = this.set("WarmType", js.undefined)
+    @scala.inline
+    def setZoneAwarenessConfig(value: ZoneAwarenessConfig): Self = this.set("ZoneAwarenessConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneAwarenessConfig: Self = this.set("ZoneAwarenessConfig", js.undefined)
+    @scala.inline
+    def setZoneAwarenessEnabled(value: Boolean): Self = this.set("ZoneAwarenessEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneAwarenessEnabled: Self = this.set("ZoneAwarenessEnabled", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 package typings.firebaseStorage
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseStorage.authwrapperMod.AuthWrapper
+import typings.firebaseStorage.serviceMod.StorageService
 import typings.firebaseStorage.srcMetadataMod.Metadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,10 +22,10 @@ object metadataMod extends js.Object {
     def xform(p1: Metadata, p2: T): js.UndefOr[T] = js.native
   }
   
-  def addRef(metadata: Metadata, authWrapper: AuthWrapper): Unit = js.native
+  def addRef(metadata: Metadata, service: StorageService): Unit = js.native
   def downloadUrlFromResourceString(metadata: Metadata, resourceString: String): String | Null = js.native
-  def fromResource(authWrapper: AuthWrapper, resource: StringDictionary[js.Any], mappings: Mappings): Metadata = js.native
-  def fromResourceString(authWrapper: AuthWrapper, resourceString: String, mappings: Mappings): Metadata | Null = js.native
+  def fromResource(service: StorageService, resource: StringDictionary[js.Any], mappings: Mappings): Metadata = js.native
+  def fromResourceString(service: StorageService, resourceString: String, mappings: Mappings): Metadata | Null = js.native
   def getMappings(): Mappings = js.native
   def metadataValidator(p: js.Any): Unit = js.native
   @JSName("noXform_")

@@ -26,13 +26,38 @@ trait DomainMembership extends js.Object {
 
 object DomainMembership {
   @scala.inline
-  def apply(Domain: String = null, FQDN: String = null, IAMRoleName: String = null, Status: String = null): DomainMembership = {
+  def apply(): DomainMembership = {
     val __obj = js.Dynamic.literal()
-    if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
-    if (FQDN != null) __obj.updateDynamic("FQDN")(FQDN.asInstanceOf[js.Any])
-    if (IAMRoleName != null) __obj.updateDynamic("IAMRoleName")(IAMRoleName.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainMembership]
   }
+  @scala.inline
+  implicit class DomainMembershipOps[Self <: DomainMembership] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomain(value: String): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("Domain", js.undefined)
+    @scala.inline
+    def setFQDN(value: String): Self = this.set("FQDN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFQDN: Self = this.set("FQDN", js.undefined)
+    @scala.inline
+    def setIAMRoleName(value: String): Self = this.set("IAMRoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIAMRoleName: Self = this.set("IAMRoleName", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

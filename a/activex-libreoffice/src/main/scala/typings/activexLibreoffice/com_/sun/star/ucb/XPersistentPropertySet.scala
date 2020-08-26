@@ -14,27 +14,28 @@ import scala.scalajs.js.annotation._
   * @author Kai Sommerfeld
   * @version 1.0
   */
+@js.native
 trait XPersistentPropertySet extends XPropertySet {
   /**
     * returns the key used to address the set in the property set registry.
     * @returns The key.
     */
-  val Key: String
+  val Key: String = js.native
   /**
     * returns the registry used to store the property set.
     * @returns The registry.
     */
-  val Registry: XPropertySetRegistry
+  val Registry: XPropertySetRegistry = js.native
   /**
     * returns the key used to address the set in the property set registry.
     * @returns The key.
     */
-  def getKey(): String
+  def getKey(): String = js.native
   /**
     * returns the registry used to store the property set.
     * @returns The registry.
     */
-  def getRegistry(): XPropertySetRegistry
+  def getRegistry(): XPropertySetRegistry = js.native
 }
 
 object XPersistentPropertySet {
@@ -59,5 +60,26 @@ object XPersistentPropertySet {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Registry = Registry.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getKey = js.Any.fromFunction0(getKey), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getRegistry = js.Any.fromFunction0(getRegistry), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[XPersistentPropertySet]
   }
+  @scala.inline
+  implicit class XPersistentPropertySetOps[Self <: XPersistentPropertySet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: String): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegistry(value: XPropertySetRegistry): Self = this.set("Registry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetKey(value: () => String): Self = this.set("getKey", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetRegistry(value: () => XPropertySetRegistry): Self = this.set("getRegistry", js.Any.fromFunction0(value))
+  }
+  
 }
 

@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class Timeout () extends IRenderPolicy {
   var _timeoutMsec: js.Any = js.native
-  /* CompleteClass */
-  override def render(): js.Any = js.native
 }
 

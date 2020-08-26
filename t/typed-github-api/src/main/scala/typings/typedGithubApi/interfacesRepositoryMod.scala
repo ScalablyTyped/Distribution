@@ -88,9 +88,145 @@ object interfacesRepositoryMod extends js.Object {
       * @returns             The resulting array of commits
       */
     def loadCommitsAsync(): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: js.UndefOr[scala.Nothing],
+      pathIncluded: js.UndefOr[scala.Nothing],
+      author: js.UndefOr[scala.Nothing],
+      since: js.UndefOr[scala.Nothing],
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: js.UndefOr[scala.Nothing],
+      pathIncluded: js.UndefOr[scala.Nothing],
+      author: js.UndefOr[scala.Nothing],
+      since: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: js.UndefOr[scala.Nothing],
+      pathIncluded: js.UndefOr[scala.Nothing],
+      author: js.UndefOr[scala.Nothing],
+      since: Moment,
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(start: js.UndefOr[scala.Nothing], pathIncluded: js.UndefOr[scala.Nothing], author: String): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: js.UndefOr[scala.Nothing],
+      pathIncluded: js.UndefOr[scala.Nothing],
+      author: String,
+      since: js.UndefOr[scala.Nothing],
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: js.UndefOr[scala.Nothing],
+      pathIncluded: js.UndefOr[scala.Nothing],
+      author: String,
+      since: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: js.UndefOr[scala.Nothing],
+      pathIncluded: js.UndefOr[scala.Nothing],
+      author: String,
+      since: Moment,
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(start: js.UndefOr[scala.Nothing], pathIncluded: String): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: js.UndefOr[scala.Nothing],
+      pathIncluded: String,
+      author: js.UndefOr[scala.Nothing],
+      since: js.UndefOr[scala.Nothing],
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: js.UndefOr[scala.Nothing],
+      pathIncluded: String,
+      author: js.UndefOr[scala.Nothing],
+      since: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: js.UndefOr[scala.Nothing],
+      pathIncluded: String,
+      author: js.UndefOr[scala.Nothing],
+      since: Moment,
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(start: js.UndefOr[scala.Nothing], pathIncluded: String, author: String): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: js.UndefOr[scala.Nothing],
+      pathIncluded: String,
+      author: String,
+      since: js.UndefOr[scala.Nothing],
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(start: js.UndefOr[scala.Nothing], pathIncluded: String, author: String, since: Moment): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: js.UndefOr[scala.Nothing],
+      pathIncluded: String,
+      author: String,
+      since: Moment,
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
     def loadCommitsAsync(start: String): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: String,
+      pathIncluded: js.UndefOr[scala.Nothing],
+      author: js.UndefOr[scala.Nothing],
+      since: js.UndefOr[scala.Nothing],
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: String,
+      pathIncluded: js.UndefOr[scala.Nothing],
+      author: js.UndefOr[scala.Nothing],
+      since: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: String,
+      pathIncluded: js.UndefOr[scala.Nothing],
+      author: js.UndefOr[scala.Nothing],
+      since: Moment,
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(start: String, pathIncluded: js.UndefOr[scala.Nothing], author: String): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: String,
+      pathIncluded: js.UndefOr[scala.Nothing],
+      author: String,
+      since: js.UndefOr[scala.Nothing],
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(start: String, pathIncluded: js.UndefOr[scala.Nothing], author: String, since: Moment): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: String,
+      pathIncluded: js.UndefOr[scala.Nothing],
+      author: String,
+      since: Moment,
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
     def loadCommitsAsync(start: String, pathIncluded: String): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: String,
+      pathIncluded: String,
+      author: js.UndefOr[scala.Nothing],
+      since: js.UndefOr[scala.Nothing],
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(start: String, pathIncluded: String, author: js.UndefOr[scala.Nothing], since: Moment): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: String,
+      pathIncluded: String,
+      author: js.UndefOr[scala.Nothing],
+      since: Moment,
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
     def loadCommitsAsync(start: String, pathIncluded: String, author: String): js.Promise[js.Array[CommitSummary]] = js.native
+    def loadCommitsAsync(
+      start: String,
+      pathIncluded: String,
+      author: String,
+      since: js.UndefOr[scala.Nothing],
+      until: Moment
+    ): js.Promise[js.Array[CommitSummary]] = js.native
     def loadCommitsAsync(start: String, pathIncluded: String, author: String, since: Moment): js.Promise[js.Array[CommitSummary]] = js.native
     def loadCommitsAsync(start: String, pathIncluded: String, author: String, since: Moment, until: Moment): js.Promise[js.Array[CommitSummary]] = js.native
     /**
@@ -131,11 +267,11 @@ object interfacesRepositoryMod extends js.Object {
       * @returns             The resulting array of pull requests
       */
     def loadPullRequestsAsync(
-      state: js.UndefOr[all | closed | open],
+      state: js.UndefOr[open | closed | all],
       headBranch: js.UndefOr[String],
       headUsersFork: js.UndefOr[String],
       baseBranch: js.UndefOr[String],
-      sort: js.UndefOr[created | `long-running` | popularity | updated],
+      sort: js.UndefOr[created | updated | popularity | `long-running`],
       ascending: js.UndefOr[Boolean]
     ): js.Promise[js.Array[PullRequest]] = js.native
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__calendar
 
-Typings are for version 0.61.1
+Typings are for version 0.62.0
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/calendar.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/calendar)
@@ -10,9 +10,9 @@ Typings are for version 0.61.1
 | ------------------ | :-------------: |
 | Full name          | @nivo/calendar |
 | Keywords           | nivo, dataviz, react, d3, charts, calendar |
-| # releases         | 29 |
+| # releases         | 31 |
 | # dependents       | 3 |
-| # downloads        | 102902 |
+| # downloads        | 108585 |
 | # stars            | 0 |
 
 ## Links

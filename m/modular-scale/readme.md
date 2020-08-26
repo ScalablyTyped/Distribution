@@ -12,7 +12,7 @@ Module for generating a modular scale.
 | Keywords           | modular, scale, typography, design, css |
 | # releases         | 5 |
 | # dependents       | 11 |
-| # downloads        | 28234 |
+| # downloads        | 28511 |
 | # stars            | 0 |
 
 ## Links

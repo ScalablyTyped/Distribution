@@ -5,132 +5,227 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DiagramOptions extends js.Object {
-  var add: js.UndefOr[js.Function1[/* e */ DiagramAddEvent, Unit]] = js.undefined
-  var autoBind: js.UndefOr[Boolean] = js.undefined
-  var cancel: js.UndefOr[js.Function1[/* e */ DiagramCancelEvent, Unit]] = js.undefined
-  var change: js.UndefOr[js.Function1[/* e */ DiagramChangeEvent, Unit]] = js.undefined
-  var click: js.UndefOr[js.Function1[/* e */ DiagramClickEvent, Unit]] = js.undefined
-  var connectionDefaults: js.UndefOr[DiagramConnectionDefaults] = js.undefined
-  var connections: js.UndefOr[js.Array[DiagramConnection]] = js.undefined
-  var connectionsDataSource: js.UndefOr[js.Any | DataSource] = js.undefined
-  var dataBound: js.UndefOr[js.Function1[/* e */ DiagramDataBoundEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
-  var drag: js.UndefOr[js.Function1[/* e */ DiagramDragEvent, Unit]] = js.undefined
-  var dragEnd: js.UndefOr[js.Function1[/* e */ DiagramDragEndEvent, Unit]] = js.undefined
-  var dragStart: js.UndefOr[js.Function1[/* e */ DiagramDragStartEvent, Unit]] = js.undefined
-  var edit: js.UndefOr[js.Function1[/* e */ DiagramEditEvent, Unit]] = js.undefined
-  var editable: js.UndefOr[Boolean | DiagramEditable] = js.undefined
-  var itemBoundsChange: js.UndefOr[js.Function1[/* e */ DiagramItemBoundsChangeEvent, Unit]] = js.undefined
-  var itemRotate: js.UndefOr[js.Function1[/* e */ DiagramItemRotateEvent, Unit]] = js.undefined
-  var layout: js.UndefOr[DiagramLayout] = js.undefined
-  var mouseEnter: js.UndefOr[js.Function1[/* e */ DiagramMouseEnterEvent, Unit]] = js.undefined
-  var mouseLeave: js.UndefOr[js.Function1[/* e */ DiagramMouseLeaveEvent, Unit]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var pan: js.UndefOr[js.Function1[/* e */ DiagramPanEvent, Unit]] = js.undefined
-  var pannable: js.UndefOr[Boolean | DiagramPannable] = js.undefined
-  var pdf: js.UndefOr[DiagramPdf] = js.undefined
-  var remove: js.UndefOr[js.Function1[/* e */ DiagramRemoveEvent, Unit]] = js.undefined
-  var save: js.UndefOr[js.Function1[/* e */ DiagramSaveEvent, Unit]] = js.undefined
-  var select: js.UndefOr[js.Function1[/* e */ DiagramSelectEvent, Unit]] = js.undefined
-  var selectable: js.UndefOr[Boolean | DiagramSelectable] = js.undefined
-  var shapeDefaults: js.UndefOr[DiagramShapeDefaults] = js.undefined
-  var shapes: js.UndefOr[js.Array[DiagramShape]] = js.undefined
-  var template: js.UndefOr[String | js.Function] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
-  var toolBarClick: js.UndefOr[js.Function1[/* e */ DiagramToolBarClickEvent, Unit]] = js.undefined
-  var zoom: js.UndefOr[Double] = js.undefined
-  var zoomEnd: js.UndefOr[js.Function1[/* e */ DiagramZoomEndEvent, Unit]] = js.undefined
-  var zoomMax: js.UndefOr[Double] = js.undefined
-  var zoomMin: js.UndefOr[Double] = js.undefined
-  var zoomRate: js.UndefOr[Double] = js.undefined
-  var zoomStart: js.UndefOr[js.Function1[/* e */ DiagramZoomStartEvent, Unit]] = js.undefined
+  var add: js.UndefOr[js.Function1[/* e */ DiagramAddEvent, Unit]] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ DiagramCancelEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ DiagramChangeEvent, Unit]] = js.native
+  var click: js.UndefOr[js.Function1[/* e */ DiagramClickEvent, Unit]] = js.native
+  var connectionDefaults: js.UndefOr[DiagramConnectionDefaults] = js.native
+  var connections: js.UndefOr[js.Array[DiagramConnection]] = js.native
+  var connectionsDataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ DiagramDataBoundEvent, Unit]] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ DiagramDragEvent, Unit]] = js.native
+  var dragEnd: js.UndefOr[js.Function1[/* e */ DiagramDragEndEvent, Unit]] = js.native
+  var dragStart: js.UndefOr[js.Function1[/* e */ DiagramDragStartEvent, Unit]] = js.native
+  var edit: js.UndefOr[js.Function1[/* e */ DiagramEditEvent, Unit]] = js.native
+  var editable: js.UndefOr[Boolean | DiagramEditable] = js.native
+  var itemBoundsChange: js.UndefOr[js.Function1[/* e */ DiagramItemBoundsChangeEvent, Unit]] = js.native
+  var itemRotate: js.UndefOr[js.Function1[/* e */ DiagramItemRotateEvent, Unit]] = js.native
+  var layout: js.UndefOr[DiagramLayout] = js.native
+  var mouseEnter: js.UndefOr[js.Function1[/* e */ DiagramMouseEnterEvent, Unit]] = js.native
+  var mouseLeave: js.UndefOr[js.Function1[/* e */ DiagramMouseLeaveEvent, Unit]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var pan: js.UndefOr[js.Function1[/* e */ DiagramPanEvent, Unit]] = js.native
+  var pannable: js.UndefOr[Boolean | DiagramPannable] = js.native
+  var pdf: js.UndefOr[DiagramPdf] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ DiagramRemoveEvent, Unit]] = js.native
+  var save: js.UndefOr[js.Function1[/* e */ DiagramSaveEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ DiagramSelectEvent, Unit]] = js.native
+  var selectable: js.UndefOr[Boolean | DiagramSelectable] = js.native
+  var shapeDefaults: js.UndefOr[DiagramShapeDefaults] = js.native
+  var shapes: js.UndefOr[js.Array[DiagramShape]] = js.native
+  var template: js.UndefOr[String | js.Function] = js.native
+  var theme: js.UndefOr[String] = js.native
+  var toolBarClick: js.UndefOr[js.Function1[/* e */ DiagramToolBarClickEvent, Unit]] = js.native
+  var zoom: js.UndefOr[Double] = js.native
+  var zoomEnd: js.UndefOr[js.Function1[/* e */ DiagramZoomEndEvent, Unit]] = js.native
+  var zoomMax: js.UndefOr[Double] = js.native
+  var zoomMin: js.UndefOr[Double] = js.native
+  var zoomRate: js.UndefOr[Double] = js.native
+  var zoomStart: js.UndefOr[js.Function1[/* e */ DiagramZoomStartEvent, Unit]] = js.native
 }
 
 object DiagramOptions {
   @scala.inline
-  def apply(
-    add: /* e */ DiagramAddEvent => Unit = null,
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    cancel: /* e */ DiagramCancelEvent => Unit = null,
-    change: /* e */ DiagramChangeEvent => Unit = null,
-    click: /* e */ DiagramClickEvent => Unit = null,
-    connectionDefaults: DiagramConnectionDefaults = null,
-    connections: js.Array[DiagramConnection] = null,
-    connectionsDataSource: js.Any | DataSource = null,
-    dataBound: /* e */ DiagramDataBoundEvent => Unit = null,
-    dataSource: js.Any | DataSource = null,
-    drag: /* e */ DiagramDragEvent => Unit = null,
-    dragEnd: /* e */ DiagramDragEndEvent => Unit = null,
-    dragStart: /* e */ DiagramDragStartEvent => Unit = null,
-    edit: /* e */ DiagramEditEvent => Unit = null,
-    editable: Boolean | DiagramEditable = null,
-    itemBoundsChange: /* e */ DiagramItemBoundsChangeEvent => Unit = null,
-    itemRotate: /* e */ DiagramItemRotateEvent => Unit = null,
-    layout: DiagramLayout = null,
-    mouseEnter: /* e */ DiagramMouseEnterEvent => Unit = null,
-    mouseLeave: /* e */ DiagramMouseLeaveEvent => Unit = null,
-    name: String = null,
-    pan: /* e */ DiagramPanEvent => Unit = null,
-    pannable: Boolean | DiagramPannable = null,
-    pdf: DiagramPdf = null,
-    remove: /* e */ DiagramRemoveEvent => Unit = null,
-    save: /* e */ DiagramSaveEvent => Unit = null,
-    select: /* e */ DiagramSelectEvent => Unit = null,
-    selectable: Boolean | DiagramSelectable = null,
-    shapeDefaults: DiagramShapeDefaults = null,
-    shapes: js.Array[DiagramShape] = null,
-    template: String | js.Function = null,
-    theme: String = null,
-    toolBarClick: /* e */ DiagramToolBarClickEvent => Unit = null,
-    zoom: js.UndefOr[Double] = js.undefined,
-    zoomEnd: /* e */ DiagramZoomEndEvent => Unit = null,
-    zoomMax: js.UndefOr[Double] = js.undefined,
-    zoomMin: js.UndefOr[Double] = js.undefined,
-    zoomRate: js.UndefOr[Double] = js.undefined,
-    zoomStart: /* e */ DiagramZoomStartEvent => Unit = null
-  ): DiagramOptions = {
+  def apply(): DiagramOptions = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
-    if (connectionDefaults != null) __obj.updateDynamic("connectionDefaults")(connectionDefaults.asInstanceOf[js.Any])
-    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
-    if (connectionsDataSource != null) __obj.updateDynamic("connectionsDataSource")(connectionsDataSource.asInstanceOf[js.Any])
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
-    if (dragEnd != null) __obj.updateDynamic("dragEnd")(js.Any.fromFunction1(dragEnd))
-    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction1(dragStart))
-    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (itemBoundsChange != null) __obj.updateDynamic("itemBoundsChange")(js.Any.fromFunction1(itemBoundsChange))
-    if (itemRotate != null) __obj.updateDynamic("itemRotate")(js.Any.fromFunction1(itemRotate))
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (mouseEnter != null) __obj.updateDynamic("mouseEnter")(js.Any.fromFunction1(mouseEnter))
-    if (mouseLeave != null) __obj.updateDynamic("mouseLeave")(js.Any.fromFunction1(mouseLeave))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pan != null) __obj.updateDynamic("pan")(js.Any.fromFunction1(pan))
-    if (pannable != null) __obj.updateDynamic("pannable")(pannable.asInstanceOf[js.Any])
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
-    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (shapeDefaults != null) __obj.updateDynamic("shapeDefaults")(shapeDefaults.asInstanceOf[js.Any])
-    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (toolBarClick != null) __obj.updateDynamic("toolBarClick")(js.Any.fromFunction1(toolBarClick))
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
-    if (zoomEnd != null) __obj.updateDynamic("zoomEnd")(js.Any.fromFunction1(zoomEnd))
-    if (!js.isUndefined(zoomMax)) __obj.updateDynamic("zoomMax")(zoomMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomMin)) __obj.updateDynamic("zoomMin")(zoomMin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomRate)) __obj.updateDynamic("zoomRate")(zoomRate.get.asInstanceOf[js.Any])
-    if (zoomStart != null) __obj.updateDynamic("zoomStart")(js.Any.fromFunction1(zoomStart))
     __obj.asInstanceOf[DiagramOptions]
   }
+  @scala.inline
+  implicit class DiagramOptionsOps[Self <: DiagramOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: /* e */ DiagramAddEvent => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAdd: Self = this.set("add", js.undefined)
+    @scala.inline
+    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    @scala.inline
+    def setCancel(value: /* e */ DiagramCancelEvent => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setChange(value: /* e */ DiagramChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setClick(value: /* e */ DiagramClickEvent => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClick: Self = this.set("click", js.undefined)
+    @scala.inline
+    def setConnectionDefaults(value: DiagramConnectionDefaults): Self = this.set("connectionDefaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionDefaults: Self = this.set("connectionDefaults", js.undefined)
+    @scala.inline
+    def setConnectionsVarargs(value: DiagramConnection*): Self = this.set("connections", js.Array(value :_*))
+    @scala.inline
+    def setConnections(value: js.Array[DiagramConnection]): Self = this.set("connections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnections: Self = this.set("connections", js.undefined)
+    @scala.inline
+    def setConnectionsDataSource(value: js.Any | DataSource): Self = this.set("connectionsDataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionsDataSource: Self = this.set("connectionsDataSource", js.undefined)
+    @scala.inline
+    def setDataBound(value: /* e */ DiagramDataBoundEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any | DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDrag(value: /* e */ DiagramDragEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDrag: Self = this.set("drag", js.undefined)
+    @scala.inline
+    def setDragEnd(value: /* e */ DiagramDragEndEvent => Unit): Self = this.set("dragEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragEnd: Self = this.set("dragEnd", js.undefined)
+    @scala.inline
+    def setDragStart(value: /* e */ DiagramDragStartEvent => Unit): Self = this.set("dragStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDragStart: Self = this.set("dragStart", js.undefined)
+    @scala.inline
+    def setEdit(value: /* e */ DiagramEditEvent => Unit): Self = this.set("edit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEdit: Self = this.set("edit", js.undefined)
+    @scala.inline
+    def setEditable(value: Boolean | DiagramEditable): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setItemBoundsChange(value: /* e */ DiagramItemBoundsChangeEvent => Unit): Self = this.set("itemBoundsChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteItemBoundsChange: Self = this.set("itemBoundsChange", js.undefined)
+    @scala.inline
+    def setItemRotate(value: /* e */ DiagramItemRotateEvent => Unit): Self = this.set("itemRotate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteItemRotate: Self = this.set("itemRotate", js.undefined)
+    @scala.inline
+    def setLayout(value: DiagramLayout): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setMouseEnter(value: /* e */ DiagramMouseEnterEvent => Unit): Self = this.set("mouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMouseEnter: Self = this.set("mouseEnter", js.undefined)
+    @scala.inline
+    def setMouseLeave(value: /* e */ DiagramMouseLeaveEvent => Unit): Self = this.set("mouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMouseLeave: Self = this.set("mouseLeave", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPan(value: /* e */ DiagramPanEvent => Unit): Self = this.set("pan", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePan: Self = this.set("pan", js.undefined)
+    @scala.inline
+    def setPannable(value: Boolean | DiagramPannable): Self = this.set("pannable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePannable: Self = this.set("pannable", js.undefined)
+    @scala.inline
+    def setPdf(value: DiagramPdf): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePdf: Self = this.set("pdf", js.undefined)
+    @scala.inline
+    def setRemove(value: /* e */ DiagramRemoveEvent => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemove: Self = this.set("remove", js.undefined)
+    @scala.inline
+    def setSave(value: /* e */ DiagramSaveEvent => Unit): Self = this.set("save", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSave: Self = this.set("save", js.undefined)
+    @scala.inline
+    def setSelect(value: /* e */ DiagramSelectEvent => Unit): Self = this.set("select", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setSelectable(value: Boolean | DiagramSelectable): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    @scala.inline
+    def setShapeDefaults(value: DiagramShapeDefaults): Self = this.set("shapeDefaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapeDefaults: Self = this.set("shapeDefaults", js.undefined)
+    @scala.inline
+    def setShapesVarargs(value: DiagramShape*): Self = this.set("shapes", js.Array(value :_*))
+    @scala.inline
+    def setShapes(value: js.Array[DiagramShape]): Self = this.set("shapes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapes: Self = this.set("shapes", js.undefined)
+    @scala.inline
+    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setToolBarClick(value: /* e */ DiagramToolBarClickEvent => Unit): Self = this.set("toolBarClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteToolBarClick: Self = this.set("toolBarClick", js.undefined)
+    @scala.inline
+    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+    @scala.inline
+    def setZoomEnd(value: /* e */ DiagramZoomEndEvent => Unit): Self = this.set("zoomEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomEnd: Self = this.set("zoomEnd", js.undefined)
+    @scala.inline
+    def setZoomMax(value: Double): Self = this.set("zoomMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomMax: Self = this.set("zoomMax", js.undefined)
+    @scala.inline
+    def setZoomMin(value: Double): Self = this.set("zoomMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomMin: Self = this.set("zoomMin", js.undefined)
+    @scala.inline
+    def setZoomRate(value: Double): Self = this.set("zoomRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomRate: Self = this.set("zoomRate", js.undefined)
+    @scala.inline
+    def setZoomStart(value: /* e */ DiagramZoomStartEvent => Unit): Self = this.set("zoomStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteZoomStart: Self = this.set("zoomStart", js.undefined)
+  }
+  
 }
 

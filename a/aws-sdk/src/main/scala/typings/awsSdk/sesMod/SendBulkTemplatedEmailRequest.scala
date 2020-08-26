@@ -54,29 +54,66 @@ trait SendBulkTemplatedEmailRequest extends js.Object {
 
 object SendBulkTemplatedEmailRequest {
   @scala.inline
-  def apply(
-    Destinations: BulkEmailDestinationList,
-    Source: Address,
-    Template: TemplateName,
-    ConfigurationSetName: ConfigurationSetName = null,
-    DefaultTags: MessageTagList = null,
-    DefaultTemplateData: TemplateData = null,
-    ReplyToAddresses: AddressList = null,
-    ReturnPath: Address = null,
-    ReturnPathArn: AmazonResourceName = null,
-    SourceArn: AmazonResourceName = null,
-    TemplateArn: AmazonResourceName = null
-  ): SendBulkTemplatedEmailRequest = {
+  def apply(Destinations: BulkEmailDestinationList, Source: Address, Template: TemplateName): SendBulkTemplatedEmailRequest = {
     val __obj = js.Dynamic.literal(Destinations = Destinations.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Template = Template.asInstanceOf[js.Any])
-    if (ConfigurationSetName != null) __obj.updateDynamic("ConfigurationSetName")(ConfigurationSetName.asInstanceOf[js.Any])
-    if (DefaultTags != null) __obj.updateDynamic("DefaultTags")(DefaultTags.asInstanceOf[js.Any])
-    if (DefaultTemplateData != null) __obj.updateDynamic("DefaultTemplateData")(DefaultTemplateData.asInstanceOf[js.Any])
-    if (ReplyToAddresses != null) __obj.updateDynamic("ReplyToAddresses")(ReplyToAddresses.asInstanceOf[js.Any])
-    if (ReturnPath != null) __obj.updateDynamic("ReturnPath")(ReturnPath.asInstanceOf[js.Any])
-    if (ReturnPathArn != null) __obj.updateDynamic("ReturnPathArn")(ReturnPathArn.asInstanceOf[js.Any])
-    if (SourceArn != null) __obj.updateDynamic("SourceArn")(SourceArn.asInstanceOf[js.Any])
-    if (TemplateArn != null) __obj.updateDynamic("TemplateArn")(TemplateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendBulkTemplatedEmailRequest]
   }
+  @scala.inline
+  implicit class SendBulkTemplatedEmailRequestOps[Self <: SendBulkTemplatedEmailRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationsVarargs(value: BulkEmailDestination*): Self = this.set("Destinations", js.Array(value :_*))
+    @scala.inline
+    def setDestinations(value: BulkEmailDestinationList): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: Address): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplate(value: TemplateName): Self = this.set("Template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigurationSetName(value: ConfigurationSetName): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationSetName: Self = this.set("ConfigurationSetName", js.undefined)
+    @scala.inline
+    def setDefaultTagsVarargs(value: MessageTag*): Self = this.set("DefaultTags", js.Array(value :_*))
+    @scala.inline
+    def setDefaultTags(value: MessageTagList): Self = this.set("DefaultTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTags: Self = this.set("DefaultTags", js.undefined)
+    @scala.inline
+    def setDefaultTemplateData(value: TemplateData): Self = this.set("DefaultTemplateData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTemplateData: Self = this.set("DefaultTemplateData", js.undefined)
+    @scala.inline
+    def setReplyToAddressesVarargs(value: Address*): Self = this.set("ReplyToAddresses", js.Array(value :_*))
+    @scala.inline
+    def setReplyToAddresses(value: AddressList): Self = this.set("ReplyToAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplyToAddresses: Self = this.set("ReplyToAddresses", js.undefined)
+    @scala.inline
+    def setReturnPath(value: Address): Self = this.set("ReturnPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnPath: Self = this.set("ReturnPath", js.undefined)
+    @scala.inline
+    def setReturnPathArn(value: AmazonResourceName): Self = this.set("ReturnPathArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnPathArn: Self = this.set("ReturnPathArn", js.undefined)
+    @scala.inline
+    def setSourceArn(value: AmazonResourceName): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
+    @scala.inline
+    def setTemplateArn(value: AmazonResourceName): Self = this.set("TemplateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateArn: Self = this.set("TemplateArn", js.undefined)
+  }
+  
 }
 

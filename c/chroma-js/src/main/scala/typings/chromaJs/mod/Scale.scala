@@ -42,47 +42,89 @@ trait Scale[OutType] extends js.Object {
   def colors(): js.Array[Color] = js.native
   def colors(c: Double): js.Array[Color] = js.native
   @JSName("colors")
+  def colors_alpha(c: js.UndefOr[scala.Nothing], format: alpha): js.Array[Color] = js.native
+  @JSName("colors")
   def colors_alpha(c: Double, format: alpha): js.Array[Color] = js.native
+  @JSName("colors")
+  def colors_brighten(c: js.UndefOr[scala.Nothing], format: brighten): js.Array[Color] = js.native
   @JSName("colors")
   def colors_brighten(c: Double, format: brighten): js.Array[Color] = js.native
   @JSName("colors")
-  def colors_cmyk(c: js.UndefOr[Double], format: cmyk): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
+  def colors_cmyk(c: js.UndefOr[scala.Nothing], format: cmyk): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_cmyk(c: Double, format: cmyk): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_darken(c: js.UndefOr[scala.Nothing], format: darken): js.Array[Color] = js.native
   @JSName("colors")
   def colors_darken(c: Double, format: darken): js.Array[Color] = js.native
   @JSName("colors")
+  def colors_desaturate(c: js.UndefOr[scala.Nothing], format: desaturate): js.Array[Color] = js.native
+  @JSName("colors")
   def colors_desaturate(c: Double, format: desaturate): js.Array[Color] = js.native
   @JSName("colors")
-  def colors_gl(c: js.UndefOr[Double], format: gl): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
+  def colors_gl(c: js.UndefOr[scala.Nothing], format: gl): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
   @JSName("colors")
-  def colors_hcl(c: js.UndefOr[Double], format: hcl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  def colors_gl(c: Double, format: gl): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_hcl(c: js.UndefOr[scala.Nothing], format: hcl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_hcl(c: Double, format: hcl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_hex(c: js.UndefOr[scala.Nothing], format: hex): js.Array[String] = js.native
   @JSName("colors")
   def colors_hex(c: Double, format: hex): js.Array[String] = js.native
   @JSName("colors")
-  def colors_hsi(c: js.UndefOr[Double], format: hsi): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  def colors_hsi(c: js.UndefOr[scala.Nothing], format: hsi): js.Array[js.Tuple3[Double, Double, Double]] = js.native
   @JSName("colors")
-  def colors_hsl(c: js.UndefOr[Double], format: hsl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  def colors_hsi(c: Double, format: hsi): js.Array[js.Tuple3[Double, Double, Double]] = js.native
   @JSName("colors")
-  def colors_hsv(c: js.UndefOr[Double], format: hsv): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  def colors_hsl(c: js.UndefOr[scala.Nothing], format: hsl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
   @JSName("colors")
-  def colors_lab(c: js.UndefOr[Double], format: lab): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  def colors_hsl(c: Double, format: hsl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
   @JSName("colors")
-  def colors_lch(c: js.UndefOr[Double], format: lch): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  def colors_hsv(c: js.UndefOr[scala.Nothing], format: hsv): js.Array[js.Tuple3[Double, Double, Double]] = js.native
   @JSName("colors")
-  def colors_luminance(c: js.UndefOr[Double], format: luminance): js.Array[Double] = js.native
+  def colors_hsv(c: Double, format: hsv): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_lab(c: js.UndefOr[scala.Nothing], format: lab): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_lab(c: Double, format: lab): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_lch(c: js.UndefOr[scala.Nothing], format: lch): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_lch(c: Double, format: lch): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_luminance(c: js.UndefOr[scala.Nothing], format: luminance): js.Array[Double] = js.native
+  @JSName("colors")
+  def colors_luminance(c: Double, format: luminance): js.Array[Double] = js.native
+  @JSName("colors")
+  def colors_name(c: js.UndefOr[scala.Nothing], format: name): js.Array[String] = js.native
   @JSName("colors")
   def colors_name(c: Double, format: name): js.Array[String] = js.native
   @JSName("colors")
-  def colors_rgb(c: js.UndefOr[Double], format: rgb): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  def colors_rgb(c: js.UndefOr[scala.Nothing], format: rgb): js.Array[js.Tuple3[Double, Double, Double]] = js.native
   @JSName("colors")
-  def colors_rgba(c: js.UndefOr[Double], format: rgba): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
+  def colors_rgb(c: Double, format: rgb): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_rgba(c: js.UndefOr[scala.Nothing], format: rgba): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_rgba(c: Double, format: rgba): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
+  @JSName("colors")
+  def colors_saturate(c: js.UndefOr[scala.Nothing], format: saturate): js.Array[Color] = js.native
   @JSName("colors")
   def colors_saturate(c: Double, format: saturate): js.Array[Color] = js.native
   @JSName("colors")
-  def colors_temperature(c: js.UndefOr[Double], format: temperature): js.Array[Double] = js.native
+  def colors_temperature(c: js.UndefOr[scala.Nothing], format: temperature): js.Array[Double] = js.native
+  @JSName("colors")
+  def colors_temperature(c: Double, format: temperature): js.Array[Double] = js.native
   def correctLightness(): this.type = js.native
   def correctLightness(enable: Boolean): this.type = js.native
   def domain(): this.type = js.native
+  def domain(d: js.UndefOr[scala.Nothing], n: js.UndefOr[scala.Nothing], mode: String): this.type = js.native
+  def domain(d: js.UndefOr[scala.Nothing], n: Double): this.type = js.native
+  def domain(d: js.UndefOr[scala.Nothing], n: Double, mode: String): this.type = js.native
   def domain(d: js.Array[Double]): this.type = js.native
+  def domain(d: js.Array[Double], n: js.UndefOr[scala.Nothing], mode: String): this.type = js.native
   def domain(d: js.Array[Double], n: Double): this.type = js.native
   def domain(d: js.Array[Double], n: Double, mode: String): this.type = js.native
   def gamma(g: Double): this.type = js.native
@@ -90,7 +132,7 @@ trait Scale[OutType] extends js.Object {
   /**
     * Set out format for scale() call. Passing null will result in a scale which outputs colors.
     */
-  def out(): Scale[Color] = js.native
+  def out(format: Null): Scale[Color] = js.native
   @JSName("out")
   def out_cmyk(format: cmyk): Scale[js.Tuple4[Double, Double, Double, Double]] = js.native
   @JSName("out")

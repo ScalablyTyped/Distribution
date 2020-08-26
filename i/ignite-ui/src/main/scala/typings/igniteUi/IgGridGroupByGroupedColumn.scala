@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgGridGroupByGroupedColumn
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,39 +15,57 @@ trait IgGridGroupByGroupedColumn
     * [column](ui.iggrid#options:columns) object for the column that is grouped
     *
     */
-  var col: js.UndefOr[js.Any] = js.undefined
+  var col: js.UndefOr[js.Any] = js.native
   /**
     * sort order - ascending or descending
     *
     */
-  var dir: js.UndefOr[js.Any] = js.undefined
+  var dir: js.UndefOr[js.Any] = js.native
   /**
     * Key of the column that's grouped
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
   /**
     * Key of the columnLayout, if the grid is hierarchical
     *
     */
-  var layout: js.UndefOr[String] = js.undefined
+  var layout: js.UndefOr[String] = js.native
 }
 
 object IgGridGroupByGroupedColumn {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    col: js.Any = null,
-    dir: js.Any = null,
-    key: String = null,
-    layout: String = null
-  ): IgGridGroupByGroupedColumn = {
+  def apply(): IgGridGroupByGroupedColumn = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (col != null) __obj.updateDynamic("col")(col.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridGroupByGroupedColumn]
   }
+  @scala.inline
+  implicit class IgGridGroupByGroupedColumnOps[Self <: IgGridGroupByGroupedColumn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCol(value: js.Any): Self = this.set("col", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCol: Self = this.set("col", js.undefined)
+    @scala.inline
+    def setDir(value: js.Any): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+  }
+  
 }
 

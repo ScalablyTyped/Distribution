@@ -26,18 +26,38 @@ trait DescribeTypeRegistrationOutput extends js.Object {
 
 object DescribeTypeRegistrationOutput {
   @scala.inline
-  def apply(
-    Description: Description = null,
-    ProgressStatus: RegistrationStatus = null,
-    TypeArn: TypeArn = null,
-    TypeVersionArn: TypeArn = null
-  ): DescribeTypeRegistrationOutput = {
+  def apply(): DescribeTypeRegistrationOutput = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ProgressStatus != null) __obj.updateDynamic("ProgressStatus")(ProgressStatus.asInstanceOf[js.Any])
-    if (TypeArn != null) __obj.updateDynamic("TypeArn")(TypeArn.asInstanceOf[js.Any])
-    if (TypeVersionArn != null) __obj.updateDynamic("TypeVersionArn")(TypeVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTypeRegistrationOutput]
   }
+  @scala.inline
+  implicit class DescribeTypeRegistrationOutputOps[Self <: DescribeTypeRegistrationOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setProgressStatus(value: RegistrationStatus): Self = this.set("ProgressStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressStatus: Self = this.set("ProgressStatus", js.undefined)
+    @scala.inline
+    def setTypeArn(value: TypeArn): Self = this.set("TypeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeArn: Self = this.set("TypeArn", js.undefined)
+    @scala.inline
+    def setTypeVersionArn(value: TypeArn): Self = this.set("TypeVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeVersionArn: Self = this.set("TypeVersionArn", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ A Transducers implementation for JavaScript
 | Keywords           | underscore, lodash, functional, util, server, client, browser |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 227035 |
+| # downloads        | 229117 |
 | # stars            | 3 |
 
 ## Links

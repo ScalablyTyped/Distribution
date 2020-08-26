@@ -4,17 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IClientBatchGetRequest extends js.Object {
   /** ClientBatchGetRequest batchId */
-  var batchId: js.UndefOr[String | Null] = js.undefined
+  var batchId: js.UndefOr[String | Null] = js.native
 }
 
 object IClientBatchGetRequest {
   @scala.inline
-  def apply(batchId: js.UndefOr[Null | String] = js.undefined): IClientBatchGetRequest = {
+  def apply(): IClientBatchGetRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientBatchGetRequest]
   }
+  @scala.inline
+  implicit class IClientBatchGetRequestOps[Self <: IClientBatchGetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchId(value: String): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    @scala.inline
+    def setBatchIdNull: Self = this.set("batchId", null)
+  }
+  
 }
 

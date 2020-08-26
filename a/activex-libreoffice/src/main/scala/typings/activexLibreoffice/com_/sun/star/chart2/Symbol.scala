@@ -8,25 +8,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** properties that are used for {@link DataSeries} that display symbols. */
+@js.native
 trait Symbol extends js.Object {
   /**
     * The color used for drawing the border of symbols.
     *
     * Only effective if {@link Style} is SymbolStyle::AUTO, SymbolStyle::STANDARD or SymbolStyle::POLYGON.
     */
-  var BorderColor: Double
+  var BorderColor: Double = js.native
   /**
     * The color used for filling symbols that contain closed polygons.
     *
     * Only effective if {@link Style} is SymbolStyle::AUTO, SymbolStyle::STANDARD or SymbolStyle::POLYGON.
     */
-  var FillColor: Double
+  var FillColor: Double = js.native
   /** use this graphic as symbol */
-  var Graphic: XGraphic
+  var Graphic: XGraphic = js.native
   /** The given polygon is used as symbol. */
-  var PolygonCoords: PolyPolygonBezierCoords
+  var PolygonCoords: PolyPolygonBezierCoords = js.native
   /** The size of the symbol in 100th of a mm. */
-  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size
+  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
   /**
     * Use the nth standard symbol, if {@link Style} is set to SymbolStlye::STANDARD.
     *
@@ -36,9 +37,9 @@ trait Symbol extends js.Object {
     *
     * {{table here, see documentation}}
     */
-  var StandardSymbol: Double
+  var StandardSymbol: Double = js.native
   /** determines which of the following members determines the appearance of the symbol. */
-  var Style: SymbolStyle
+  var Style: SymbolStyle = js.native
 }
 
 object Symbol {
@@ -55,5 +56,32 @@ object Symbol {
     val __obj = js.Dynamic.literal(BorderColor = BorderColor.asInstanceOf[js.Any], FillColor = FillColor.asInstanceOf[js.Any], Graphic = Graphic.asInstanceOf[js.Any], PolygonCoords = PolygonCoords.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], StandardSymbol = StandardSymbol.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Symbol]
   }
+  @scala.inline
+  implicit class SymbolOps[Self <: Symbol] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderColor(value: Double): Self = this.set("BorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFillColor(value: Double): Self = this.set("FillColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGraphic(value: XGraphic): Self = this.set("Graphic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolygonCoords(value: PolyPolygonBezierCoords): Self = this.set("PolygonCoords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: Size): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStandardSymbol(value: Double): Self = this.set("StandardSymbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStyle(value: SymbolStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
+  }
+  
 }
 

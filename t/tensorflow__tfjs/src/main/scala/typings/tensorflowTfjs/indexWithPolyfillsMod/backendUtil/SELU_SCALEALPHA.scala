@@ -1,0 +1,11 @@
+package typings.tensorflowTfjs.indexWithPolyfillsMod.backendUtil
+
+import org.scalablytyped.runtime.TopLevel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "backend_util.SELU_SCALEALPHA")
+@js.native
+object SELU_SCALEALPHA extends TopLevel[/* 30 */ Double]
+

@@ -4,21 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AttendeeBase extends Recipient {
   /**
     * The type of attendee. The possible values are: required, optional, resource. Currently if the attendee is a person,
     * findMeetingTimes always considers the person is of the Required type.
     */
-  var `type`: js.UndefOr[AttendeeType] = js.undefined
+  var `type`: js.UndefOr[AttendeeType] = js.native
 }
 
 object AttendeeBase {
   @scala.inline
-  def apply(emailAddress: EmailAddress = null, `type`: AttendeeType = null): AttendeeBase = {
+  def apply(): AttendeeBase = {
     val __obj = js.Dynamic.literal()
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttendeeBase]
   }
+  @scala.inline
+  implicit class AttendeeBaseOps[Self <: AttendeeBase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: AttendeeType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

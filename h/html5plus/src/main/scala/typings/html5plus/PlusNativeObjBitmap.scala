@@ -50,7 +50,23 @@ trait PlusNativeObjBitmap extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def load(): Unit = js.native
+  def load(
+    path: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def load(path: js.UndefOr[scala.Nothing], successCallback: js.Function0[Unit]): Unit = js.native
+  def load(
+    path: js.UndefOr[scala.Nothing],
+    successCallback: js.Function0[Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def load(path: String): Unit = js.native
+  def load(
+    path: String,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def load(path: String, successCallback: js.Function0[Unit]): Unit = js.native
   def load(
     path: String,
@@ -65,7 +81,23 @@ trait PlusNativeObjBitmap extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def loadBase64Data(): Unit = js.native
+  def loadBase64Data(
+    data: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def loadBase64Data(data: js.UndefOr[scala.Nothing], successCallback: js.Function0[Unit]): Unit = js.native
+  def loadBase64Data(
+    data: js.UndefOr[scala.Nothing],
+    successCallback: js.Function0[Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def loadBase64Data(data: String): Unit = js.native
+  def loadBase64Data(
+    data: String,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def loadBase64Data(data: String, successCallback: js.Function0[Unit]): Unit = js.native
   def loadBase64Data(
     data: String,
@@ -87,8 +119,66 @@ trait PlusNativeObjBitmap extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def save(): Unit = js.native
+  def save(
+    path: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(path: js.UndefOr[scala.Nothing], options: PlusNativeObjBitmapSaveOptions): Unit = js.native
+  def save(
+    path: js.UndefOr[scala.Nothing],
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: js.UndefOr[scala.Nothing],
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: js.UndefOr[scala.Nothing],
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def save(path: String): Unit = js.native
+  def save(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: String,
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def save(path: String, options: PlusNativeObjBitmapSaveOptions): Unit = js.native
+  def save(
+    path: String,
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def save(
     path: String,
     options: PlusNativeObjBitmapSaveOptions,

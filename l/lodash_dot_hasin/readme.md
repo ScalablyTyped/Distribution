@@ -12,7 +12,7 @@ The lodash method `_.hasIn` exported as a module.
 | Keywords           | lodash-modularized, hasin |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 512764 |
+| # downloads        | 603920 |
 | # stars            | 0 |
 
 ## Links

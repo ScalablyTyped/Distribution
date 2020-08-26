@@ -16,6 +16,7 @@ class Factory protected ()
 @js.native
 object Factory extends js.Object {
   def newFromElementId(elementId: js.Any): typings.vexflow.Vex.Flow.Factory = js.native
+  def newFromElementId(elementId: js.Any, width: js.UndefOr[scala.Nothing], height: Double): typings.vexflow.Vex.Flow.Factory = js.native
   def newFromElementId(elementId: js.Any, width: Double): typings.vexflow.Vex.Flow.Factory = js.native
   def newFromElementId(elementId: js.Any, width: Double, height: Double): typings.vexflow.Vex.Flow.Factory = js.native
 }

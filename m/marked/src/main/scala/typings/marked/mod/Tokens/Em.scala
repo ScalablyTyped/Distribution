@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Em extends Token {
-  var raw: String
-  var text: String
-  var `type`: em
+  var raw: String = js.native
+  var text: String = js.native
+  var `type`: em = js.native
 }
 
 object Em {
@@ -19,5 +20,24 @@ object Em {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Em]
   }
+  @scala.inline
+  implicit class EmOps[Self <: Em] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRaw(value: String): Self = this.set("raw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: em): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

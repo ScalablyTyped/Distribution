@@ -8,6 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceQualifierObservableMap extends IObservableMap[String, String]
 
 object ResourceQualifierObservableMap {

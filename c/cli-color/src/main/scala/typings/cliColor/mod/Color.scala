@@ -29,9 +29,11 @@ trait Color
     * Move cursor x columns and y rows away. Values can be positive or negative
     */
   def move(): String = js.native
+  def move(x: js.UndefOr[scala.Nothing], y: Double): String = js.native
   def move(x: Double): String = js.native
   def move(x: Double, y: Double): String = js.native
   def slice(str: String): String = js.native
+  def slice(str: String, begin: js.UndefOr[scala.Nothing], end: Double): String = js.native
   def slice(str: String, begin: Double): String = js.native
   def slice(str: String, begin: Double, end: Double): String = js.native
   def strip(str: String): String = js.native

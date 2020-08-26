@@ -60,6 +60,7 @@ trait Typeoftabs extends js.Object {
   def detectLanguage(callback: js.Function1[/* language */ String, Unit]): Unit = js.native
   def detectLanguage(tabId: Double, callback: js.Function1[/* language */ String, Unit]): Unit = js.native
   def discard(): Unit = js.native
+  def discard(tabId: js.UndefOr[scala.Nothing], callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
   def discard(tabId: Double): Unit = js.native
   def discard(tabId: Double, callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
   def duplicate(tabId: Double): Unit = js.native
@@ -106,6 +107,7 @@ trait Typeoftabs extends js.Object {
   def reload(reloadProperties: ReloadProperties): Unit = js.native
   def reload(reloadProperties: ReloadProperties, callback: js.Function0[Unit]): Unit = js.native
   def reload(tabId: Double): Unit = js.native
+  def reload(tabId: Double, reloadProperties: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def reload(tabId: Double, reloadProperties: ReloadProperties): Unit = js.native
   def reload(tabId: Double, reloadProperties: ReloadProperties, callback: js.Function0[Unit]): Unit = js.native
   def remove(tabId: Double): Unit = js.native

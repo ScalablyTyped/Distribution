@@ -26,18 +26,40 @@ trait EventInfoMap extends js.Object {
 
 object EventInfoMap {
   @scala.inline
-  def apply(
-    EventCategories: EventCategoriesList = null,
-    EventDescription: String = null,
-    EventId: String = null,
-    Severity: String = null
-  ): EventInfoMap = {
+  def apply(): EventInfoMap = {
     val __obj = js.Dynamic.literal()
-    if (EventCategories != null) __obj.updateDynamic("EventCategories")(EventCategories.asInstanceOf[js.Any])
-    if (EventDescription != null) __obj.updateDynamic("EventDescription")(EventDescription.asInstanceOf[js.Any])
-    if (EventId != null) __obj.updateDynamic("EventId")(EventId.asInstanceOf[js.Any])
-    if (Severity != null) __obj.updateDynamic("Severity")(Severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventInfoMap]
   }
+  @scala.inline
+  implicit class EventInfoMapOps[Self <: EventInfoMap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventCategoriesVarargs(value: String*): Self = this.set("EventCategories", js.Array(value :_*))
+    @scala.inline
+    def setEventCategories(value: EventCategoriesList): Self = this.set("EventCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventCategories: Self = this.set("EventCategories", js.undefined)
+    @scala.inline
+    def setEventDescription(value: String): Self = this.set("EventDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventDescription: Self = this.set("EventDescription", js.undefined)
+    @scala.inline
+    def setEventId(value: String): Self = this.set("EventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventId: Self = this.set("EventId", js.undefined)
+    @scala.inline
+    def setSeverity(value: String): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("Severity", js.undefined)
+  }
+  
 }
 

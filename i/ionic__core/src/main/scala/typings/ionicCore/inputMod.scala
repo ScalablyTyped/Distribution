@@ -23,6 +23,7 @@ import typings.ionicCore.mod.StyleEventDetail
 import typings.ionicCore.mod.TextFieldTypes
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
+import typings.std.FocusEvent
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.KeyboardEvent
@@ -64,6 +65,7 @@ object inputMod extends js.Object {
       */
     var clearOnEdit: js.UndefOr[Boolean] = js.native
     var clearTextInput: js.Any = js.native
+    var clearTextOnEnter: js.Any = js.native
     /**
       * The color to use from your application's color palette.
       * Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`.
@@ -101,7 +103,7 @@ object inputMod extends js.Object {
     /**
       * Emitted when the input loses focus.
       */
-    var ionBlur: EventEmitter[Unit] = js.native
+    var ionBlur: EventEmitter[FocusEvent] = js.native
     /**
       * Emitted when the value has changed.
       */
@@ -109,7 +111,7 @@ object inputMod extends js.Object {
     /**
       * Emitted when the input has focus.
       */
-    var ionFocus: EventEmitter[Unit] = js.native
+    var ionFocus: EventEmitter[FocusEvent] = js.native
     /**
       * Emitted when a keyboard input occurred.
       */
@@ -143,7 +145,7 @@ object inputMod extends js.Object {
       * The name of the control, which is submitted with the form data.
       */
     var name: String = js.native
-    var nativeInput: js.UndefOr[js.Any] = js.native
+    var nativeInput: js.Any = js.native
     var onBlur: js.Any = js.native
     var onFocus: js.Any = js.native
     var onInput: js.Any = js.native
@@ -178,7 +180,7 @@ object inputMod extends js.Object {
       * Possible values are: `"any"` or a positive floating point number.
       */
     var step: js.UndefOr[String] = js.native
-    var tabindex: js.UndefOr[js.Any] = js.native
+    var tabindex: js.Any = js.native
     /**
       * The type of control to display. The default type is text.
       */

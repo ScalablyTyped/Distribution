@@ -9,27 +9,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Headers extends js.Object {
-  var headers: js.UndefOr[js.Object] = js.undefined
-  var tokenType: js.UndefOr[String] = js.undefined
-  var verb: js.UndefOr[GET | POST] = js.undefined
-  var via: js.UndefOr[header | body | query] = js.undefined
+  var headers: js.UndefOr[js.Object] = js.native
+  var tokenType: js.UndefOr[String] = js.native
+  var verb: js.UndefOr[GET | POST] = js.native
+  var via: js.UndefOr[header | body | query] = js.native
 }
 
 object Headers {
   @scala.inline
-  def apply(
-    headers: js.Object = null,
-    tokenType: String = null,
-    verb: GET | POST = null,
-    via: header | body | query = null
-  ): Headers = {
+  def apply(): Headers = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (tokenType != null) __obj.updateDynamic("tokenType")(tokenType.asInstanceOf[js.Any])
-    if (verb != null) __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
-    if (via != null) __obj.updateDynamic("via")(via.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }
+  @scala.inline
+  implicit class HeadersOps[Self <: Headers] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setTokenType(value: String): Self = this.set("tokenType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenType: Self = this.set("tokenType", js.undefined)
+    @scala.inline
+    def setVerb(value: GET | POST): Self = this.set("verb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerb: Self = this.set("verb", js.undefined)
+    @scala.inline
+    def setVia(value: header | body | query): Self = this.set("via", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVia: Self = this.set("via", js.undefined)
+  }
+  
 }
 

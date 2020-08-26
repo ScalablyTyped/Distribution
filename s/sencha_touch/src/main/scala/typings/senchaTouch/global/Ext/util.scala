@@ -121,6 +121,7 @@ object util extends js.Object {
       * @returns String The formatted date string.
       */
     def date(): java.lang.String = js.native
+    def date(value: js.UndefOr[scala.Nothing], format: java.lang.String): java.lang.String = js.native
     def date(value: js.Any): java.lang.String = js.native
     def date(value: js.Any, format: java.lang.String): java.lang.String = js.native
     /** [Method]  */
@@ -132,7 +133,11 @@ object util extends js.Object {
       * @returns String The converted text.
       */
     def ellipsis(): java.lang.String = js.native
+    def ellipsis(value: js.UndefOr[scala.Nothing], length: js.UndefOr[scala.Nothing], word: Boolean): java.lang.String = js.native
+    def ellipsis(value: js.UndefOr[scala.Nothing], length: Double): java.lang.String = js.native
+    def ellipsis(value: js.UndefOr[scala.Nothing], length: Double, word: Boolean): java.lang.String = js.native
     def ellipsis(value: java.lang.String): java.lang.String = js.native
+    def ellipsis(value: java.lang.String, length: js.UndefOr[scala.Nothing], word: Boolean): java.lang.String = js.native
     def ellipsis(value: java.lang.String, length: Double): java.lang.String = js.native
     def ellipsis(value: java.lang.String, length: Double, word: Boolean): java.lang.String = js.native
     /** [Method] Escapes the passed string for  and
@@ -184,7 +189,11 @@ object util extends js.Object {
       * @returns String The padded string.
       */
     def leftPad(): java.lang.String = js.native
+    def leftPad(string: js.UndefOr[scala.Nothing], size: js.UndefOr[scala.Nothing], char: java.lang.String): java.lang.String = js.native
+    def leftPad(string: js.UndefOr[scala.Nothing], size: Double): java.lang.String = js.native
+    def leftPad(string: js.UndefOr[scala.Nothing], size: Double, char: java.lang.String): java.lang.String = js.native
     def leftPad(string: java.lang.String): java.lang.String = js.native
+    def leftPad(string: java.lang.String, size: js.UndefOr[scala.Nothing], char: java.lang.String): java.lang.String = js.native
     def leftPad(string: java.lang.String, size: Double): java.lang.String = js.native
     def leftPad(string: java.lang.String, size: Double, char: java.lang.String): java.lang.String = js.native
     /** [Method] Get the reference to the class from which this object was instantiated
@@ -198,7 +207,11 @@ object util extends js.Object {
       * @returns String The new value
       */
     def toggle(): java.lang.String = js.native
+    def toggle(string: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], other: java.lang.String): java.lang.String = js.native
+    def toggle(string: js.UndefOr[scala.Nothing], value: java.lang.String): java.lang.String = js.native
+    def toggle(string: js.UndefOr[scala.Nothing], value: java.lang.String, other: java.lang.String): java.lang.String = js.native
     def toggle(string: java.lang.String): java.lang.String = js.native
+    def toggle(string: java.lang.String, value: js.UndefOr[scala.Nothing], other: java.lang.String): java.lang.String = js.native
     def toggle(string: java.lang.String, value: java.lang.String): java.lang.String = js.native
     def toggle(string: java.lang.String, value: java.lang.String, other: java.lang.String): java.lang.String = js.native
     /** [Method] Trims whitespace from either end of a string leaving spaces within the string intact
@@ -218,6 +231,7 @@ object util extends js.Object {
       * @returns Function aliasFn
       */
     def alias(): js.Any = js.native
+    def alias(`object`: js.UndefOr[scala.Nothing], methodName: java.lang.String): js.Any = js.native
     def alias(`object`: js.Any): js.Any = js.native
     def alias(`object`: js.Any, methodName: java.lang.String): js.Any = js.native
     /** [Method] Create a new function from the provided fn change this to the provided scope optionally overrides arguments for the
@@ -228,8 +242,43 @@ object util extends js.Object {
       * @returns Function The new function.
       */
     def bind(): js.Any = js.native
+    def bind(
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def bind(
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array
+    ): js.Any = js.native
+    def bind(
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def bind(fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    def bind(fn: js.UndefOr[scala.Nothing], scope: js.Any, args: js.UndefOr[scala.Nothing], appendArgs: js.Any): js.Any = js.native
+    def bind(fn: js.UndefOr[scala.Nothing], scope: js.Any, args: typings.senchaTouch.Ext.Array): js.Any = js.native
+    def bind(
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
     def bind(fn: js.Any): js.Any = js.native
+    def bind(fn: js.Any, scope: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], appendArgs: js.Any): js.Any = js.native
+    def bind(fn: js.Any, scope: js.UndefOr[scala.Nothing], args: typings.senchaTouch.Ext.Array): js.Any = js.native
+    def bind(
+      fn: js.Any,
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
     def bind(fn: js.Any, scope: js.Any): js.Any = js.native
+    def bind(fn: js.Any, scope: js.Any, args: js.UndefOr[scala.Nothing], appendArgs: js.Any): js.Any = js.native
     def bind(fn: js.Any, scope: js.Any, args: typings.senchaTouch.Ext.Array): js.Any = js.native
     def bind(fn: js.Any, scope: js.Any, args: typings.senchaTouch.Ext.Array, appendArgs: js.Any): js.Any = js.native
     def clone(method: js.Any): js.Any = js.native
@@ -241,8 +290,39 @@ object util extends js.Object {
       * @returns Function A function which invokes the passed function after buffering for the specified time.
       */
     def createBuffered(): js.Any = js.native
+    def createBuffered(
+      fn: js.UndefOr[scala.Nothing],
+      buffer: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array
+    ): js.Any = js.native
+    def createBuffered(fn: js.UndefOr[scala.Nothing], buffer: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    def createBuffered(
+      fn: js.UndefOr[scala.Nothing],
+      buffer: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: typings.senchaTouch.Ext.Array
+    ): js.Any = js.native
+    def createBuffered(fn: js.UndefOr[scala.Nothing], buffer: Double): js.Any = js.native
+    def createBuffered(
+      fn: js.UndefOr[scala.Nothing],
+      buffer: Double,
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array
+    ): js.Any = js.native
+    def createBuffered(fn: js.UndefOr[scala.Nothing], buffer: Double, scope: js.Any): js.Any = js.native
+    def createBuffered(fn: js.UndefOr[scala.Nothing], buffer: Double, scope: js.Any, args: typings.senchaTouch.Ext.Array): js.Any = js.native
     def createBuffered(fn: js.Any): js.Any = js.native
+    def createBuffered(
+      fn: js.Any,
+      buffer: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array
+    ): js.Any = js.native
+    def createBuffered(fn: js.Any, buffer: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    def createBuffered(fn: js.Any, buffer: js.UndefOr[scala.Nothing], scope: js.Any, args: typings.senchaTouch.Ext.Array): js.Any = js.native
     def createBuffered(fn: js.Any, buffer: Double): js.Any = js.native
+    def createBuffered(fn: js.Any, buffer: Double, scope: js.UndefOr[scala.Nothing], args: typings.senchaTouch.Ext.Array): js.Any = js.native
     def createBuffered(fn: js.Any, buffer: Double, scope: js.Any): js.Any = js.native
     def createBuffered(fn: js.Any, buffer: Double, scope: js.Any, args: typings.senchaTouch.Ext.Array): js.Any = js.native
     /** [Method] Creates a delegate callback which when called executes after a specific delay
@@ -254,9 +334,139 @@ object util extends js.Object {
       * @returns Function A function which, when called, executes the original function after the specified delay.
       */
     def createDelayed(): js.Any = js.native
+    def createDelayed(
+      fn: js.UndefOr[scala.Nothing],
+      delay: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelayed(
+      fn: js.UndefOr[scala.Nothing],
+      delay: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array
+    ): js.Any = js.native
+    def createDelayed(
+      fn: js.UndefOr[scala.Nothing],
+      delay: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelayed(fn: js.UndefOr[scala.Nothing], delay: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    def createDelayed(
+      fn: js.UndefOr[scala.Nothing],
+      delay: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelayed(
+      fn: js.UndefOr[scala.Nothing],
+      delay: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: typings.senchaTouch.Ext.Array
+    ): js.Any = js.native
+    def createDelayed(
+      fn: js.UndefOr[scala.Nothing],
+      delay: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelayed(fn: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
+    def createDelayed(
+      fn: js.UndefOr[scala.Nothing],
+      delay: Double,
+      scope: js.UndefOr[scala.Nothing],
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelayed(
+      fn: js.UndefOr[scala.Nothing],
+      delay: Double,
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array
+    ): js.Any = js.native
+    def createDelayed(
+      fn: js.UndefOr[scala.Nothing],
+      delay: Double,
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelayed(fn: js.UndefOr[scala.Nothing], delay: Double, scope: js.Any): js.Any = js.native
+    def createDelayed(
+      fn: js.UndefOr[scala.Nothing],
+      delay: Double,
+      scope: js.Any,
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelayed(fn: js.UndefOr[scala.Nothing], delay: Double, scope: js.Any, args: typings.senchaTouch.Ext.Array): js.Any = js.native
+    def createDelayed(
+      fn: js.UndefOr[scala.Nothing],
+      delay: Double,
+      scope: js.Any,
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
     def createDelayed(fn: js.Any): js.Any = js.native
+    def createDelayed(
+      fn: js.Any,
+      delay: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelayed(
+      fn: js.Any,
+      delay: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array
+    ): js.Any = js.native
+    def createDelayed(
+      fn: js.Any,
+      delay: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelayed(fn: js.Any, delay: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    def createDelayed(
+      fn: js.Any,
+      delay: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelayed(fn: js.Any, delay: js.UndefOr[scala.Nothing], scope: js.Any, args: typings.senchaTouch.Ext.Array): js.Any = js.native
+    def createDelayed(
+      fn: js.Any,
+      delay: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
     def createDelayed(fn: js.Any, delay: Double): js.Any = js.native
+    def createDelayed(
+      fn: js.Any,
+      delay: Double,
+      scope: js.UndefOr[scala.Nothing],
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelayed(fn: js.Any, delay: Double, scope: js.UndefOr[scala.Nothing], args: typings.senchaTouch.Ext.Array): js.Any = js.native
+    def createDelayed(
+      fn: js.Any,
+      delay: Double,
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
     def createDelayed(fn: js.Any, delay: Double, scope: js.Any): js.Any = js.native
+    def createDelayed(fn: js.Any, delay: Double, scope: js.Any, args: js.UndefOr[scala.Nothing], appendArgs: js.Any): js.Any = js.native
     def createDelayed(fn: js.Any, delay: Double, scope: js.Any, args: typings.senchaTouch.Ext.Array): js.Any = js.native
     def createDelayed(fn: js.Any, delay: Double, scope: js.Any, args: typings.senchaTouch.Ext.Array, appendArgs: js.Any): js.Any = js.native
     /** [Method] Create a new function from the provided fn change this to the provided scope optionally overrides arguments for the
@@ -267,8 +477,43 @@ object util extends js.Object {
       * @returns Function The new function.
       */
     def createDelegate(): js.Any = js.native
+    def createDelegate(
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelegate(
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array
+    ): js.Any = js.native
+    def createDelegate(
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
+    def createDelegate(fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    def createDelegate(fn: js.UndefOr[scala.Nothing], scope: js.Any, args: js.UndefOr[scala.Nothing], appendArgs: js.Any): js.Any = js.native
+    def createDelegate(fn: js.UndefOr[scala.Nothing], scope: js.Any, args: typings.senchaTouch.Ext.Array): js.Any = js.native
+    def createDelegate(
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
     def createDelegate(fn: js.Any): js.Any = js.native
+    def createDelegate(fn: js.Any, scope: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], appendArgs: js.Any): js.Any = js.native
+    def createDelegate(fn: js.Any, scope: js.UndefOr[scala.Nothing], args: typings.senchaTouch.Ext.Array): js.Any = js.native
+    def createDelegate(
+      fn: js.Any,
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): js.Any = js.native
     def createDelegate(fn: js.Any, scope: js.Any): js.Any = js.native
+    def createDelegate(fn: js.Any, scope: js.Any, args: js.UndefOr[scala.Nothing], appendArgs: js.Any): js.Any = js.native
     def createDelegate(fn: js.Any, scope: js.Any, args: typings.senchaTouch.Ext.Array): js.Any = js.native
     def createDelegate(fn: js.Any, scope: js.Any, args: typings.senchaTouch.Ext.Array, appendArgs: js.Any): js.Any = js.native
     /** [Method] Creates an interceptor function
@@ -279,8 +524,39 @@ object util extends js.Object {
       * @returns Function The new function.
       */
     def createInterceptor(): js.Any = js.native
+    def createInterceptor(
+      origFn: js.UndefOr[scala.Nothing],
+      newFn: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      returnValue: js.Any
+    ): js.Any = js.native
+    def createInterceptor(origFn: js.UndefOr[scala.Nothing], newFn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    def createInterceptor(
+      origFn: js.UndefOr[scala.Nothing],
+      newFn: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      returnValue: js.Any
+    ): js.Any = js.native
+    def createInterceptor(origFn: js.UndefOr[scala.Nothing], newFn: js.Any): js.Any = js.native
+    def createInterceptor(
+      origFn: js.UndefOr[scala.Nothing],
+      newFn: js.Any,
+      scope: js.UndefOr[scala.Nothing],
+      returnValue: js.Any
+    ): js.Any = js.native
+    def createInterceptor(origFn: js.UndefOr[scala.Nothing], newFn: js.Any, scope: js.Any): js.Any = js.native
+    def createInterceptor(origFn: js.UndefOr[scala.Nothing], newFn: js.Any, scope: js.Any, returnValue: js.Any): js.Any = js.native
     def createInterceptor(origFn: js.Any): js.Any = js.native
+    def createInterceptor(
+      origFn: js.Any,
+      newFn: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      returnValue: js.Any
+    ): js.Any = js.native
+    def createInterceptor(origFn: js.Any, newFn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    def createInterceptor(origFn: js.Any, newFn: js.UndefOr[scala.Nothing], scope: js.Any, returnValue: js.Any): js.Any = js.native
     def createInterceptor(origFn: js.Any, newFn: js.Any): js.Any = js.native
+    def createInterceptor(origFn: js.Any, newFn: js.Any, scope: js.UndefOr[scala.Nothing], returnValue: js.Any): js.Any = js.native
     def createInterceptor(origFn: js.Any, newFn: js.Any, scope: js.Any): js.Any = js.native
     def createInterceptor(origFn: js.Any, newFn: js.Any, scope: js.Any, returnValue: js.Any): js.Any = js.native
     /** [Method] Create a combined function call sequence of the original function  the passed function
@@ -290,7 +566,11 @@ object util extends js.Object {
       * @returns Function The new function.
       */
     def createSequence(): js.Any = js.native
+    def createSequence(originalFn: js.UndefOr[scala.Nothing], newFn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    def createSequence(originalFn: js.UndefOr[scala.Nothing], newFn: js.Any): js.Any = js.native
+    def createSequence(originalFn: js.UndefOr[scala.Nothing], newFn: js.Any, scope: js.Any): js.Any = js.native
     def createSequence(originalFn: js.Any): js.Any = js.native
+    def createSequence(originalFn: js.Any, newFn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
     def createSequence(originalFn: js.Any, newFn: js.Any): js.Any = js.native
     def createSequence(originalFn: js.Any, newFn: js.Any, scope: js.Any): js.Any = js.native
     /** [Method] Creates a throttled version of the passed function which when called repeatedly and rapidly invokes the passed func
@@ -300,7 +580,11 @@ object util extends js.Object {
       * @returns Function A function which invokes the passed function at the specified interval.
       */
     def createThrottled(): js.Any = js.native
+    def createThrottled(fn: js.UndefOr[scala.Nothing], interval: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    def createThrottled(fn: js.UndefOr[scala.Nothing], interval: Double): js.Any = js.native
+    def createThrottled(fn: js.UndefOr[scala.Nothing], interval: Double, scope: js.Any): js.Any = js.native
     def createThrottled(fn: js.Any): js.Any = js.native
+    def createThrottled(fn: js.Any, interval: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
     def createThrottled(fn: js.Any, interval: Double): js.Any = js.native
     def createThrottled(fn: js.Any, interval: Double, scope: js.Any): js.Any = js.native
     /** [Method] Calls this function after the number of milliseconds specified optionally in a specific scope
@@ -312,9 +596,139 @@ object util extends js.Object {
       * @returns Number The timeout id that can be used with clearTimeout().
       */
     def defer(): Double = js.native
+    def defer(
+      fn: js.UndefOr[scala.Nothing],
+      millis: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): Double = js.native
+    def defer(
+      fn: js.UndefOr[scala.Nothing],
+      millis: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array
+    ): Double = js.native
+    def defer(
+      fn: js.UndefOr[scala.Nothing],
+      millis: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): Double = js.native
+    def defer(fn: js.UndefOr[scala.Nothing], millis: js.UndefOr[scala.Nothing], scope: js.Any): Double = js.native
+    def defer(
+      fn: js.UndefOr[scala.Nothing],
+      millis: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): Double = js.native
+    def defer(
+      fn: js.UndefOr[scala.Nothing],
+      millis: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: typings.senchaTouch.Ext.Array
+    ): Double = js.native
+    def defer(
+      fn: js.UndefOr[scala.Nothing],
+      millis: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): Double = js.native
+    def defer(fn: js.UndefOr[scala.Nothing], millis: Double): Double = js.native
+    def defer(
+      fn: js.UndefOr[scala.Nothing],
+      millis: Double,
+      scope: js.UndefOr[scala.Nothing],
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): Double = js.native
+    def defer(
+      fn: js.UndefOr[scala.Nothing],
+      millis: Double,
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array
+    ): Double = js.native
+    def defer(
+      fn: js.UndefOr[scala.Nothing],
+      millis: Double,
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): Double = js.native
+    def defer(fn: js.UndefOr[scala.Nothing], millis: Double, scope: js.Any): Double = js.native
+    def defer(
+      fn: js.UndefOr[scala.Nothing],
+      millis: Double,
+      scope: js.Any,
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): Double = js.native
+    def defer(fn: js.UndefOr[scala.Nothing], millis: Double, scope: js.Any, args: typings.senchaTouch.Ext.Array): Double = js.native
+    def defer(
+      fn: js.UndefOr[scala.Nothing],
+      millis: Double,
+      scope: js.Any,
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): Double = js.native
     def defer(fn: js.Any): Double = js.native
+    def defer(
+      fn: js.Any,
+      millis: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): Double = js.native
+    def defer(
+      fn: js.Any,
+      millis: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array
+    ): Double = js.native
+    def defer(
+      fn: js.Any,
+      millis: js.UndefOr[scala.Nothing],
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): Double = js.native
+    def defer(fn: js.Any, millis: js.UndefOr[scala.Nothing], scope: js.Any): Double = js.native
+    def defer(
+      fn: js.Any,
+      millis: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): Double = js.native
+    def defer(fn: js.Any, millis: js.UndefOr[scala.Nothing], scope: js.Any, args: typings.senchaTouch.Ext.Array): Double = js.native
+    def defer(
+      fn: js.Any,
+      millis: js.UndefOr[scala.Nothing],
+      scope: js.Any,
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): Double = js.native
     def defer(fn: js.Any, millis: Double): Double = js.native
+    def defer(
+      fn: js.Any,
+      millis: Double,
+      scope: js.UndefOr[scala.Nothing],
+      args: js.UndefOr[scala.Nothing],
+      appendArgs: js.Any
+    ): Double = js.native
+    def defer(fn: js.Any, millis: Double, scope: js.UndefOr[scala.Nothing], args: typings.senchaTouch.Ext.Array): Double = js.native
+    def defer(
+      fn: js.Any,
+      millis: Double,
+      scope: js.UndefOr[scala.Nothing],
+      args: typings.senchaTouch.Ext.Array,
+      appendArgs: js.Any
+    ): Double = js.native
     def defer(fn: js.Any, millis: Double, scope: js.Any): Double = js.native
+    def defer(fn: js.Any, millis: Double, scope: js.Any, args: js.UndefOr[scala.Nothing], appendArgs: js.Any): Double = js.native
     def defer(fn: js.Any, millis: Double, scope: js.Any, args: typings.senchaTouch.Ext.Array): Double = js.native
     def defer(fn: js.Any, millis: Double, scope: js.Any, args: typings.senchaTouch.Ext.Array, appendArgs: js.Any): Double = js.native
     /** [Method] A very commonly used method throughout the framework
@@ -331,8 +745,39 @@ object util extends js.Object {
       * @returns Function The new function just created.
       */
     def interceptAfter(): js.Any = js.native
+    def interceptAfter(
+      `object`: js.UndefOr[scala.Nothing],
+      methodName: js.UndefOr[scala.Nothing],
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.Any
+    ): js.Any = js.native
+    def interceptAfter(`object`: js.UndefOr[scala.Nothing], methodName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    def interceptAfter(
+      `object`: js.UndefOr[scala.Nothing],
+      methodName: js.UndefOr[scala.Nothing],
+      fn: js.Any,
+      scope: js.Any
+    ): js.Any = js.native
+    def interceptAfter(`object`: js.UndefOr[scala.Nothing], methodName: java.lang.String): js.Any = js.native
+    def interceptAfter(
+      `object`: js.UndefOr[scala.Nothing],
+      methodName: java.lang.String,
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.Any
+    ): js.Any = js.native
+    def interceptAfter(`object`: js.UndefOr[scala.Nothing], methodName: java.lang.String, fn: js.Any): js.Any = js.native
+    def interceptAfter(`object`: js.UndefOr[scala.Nothing], methodName: java.lang.String, fn: js.Any, scope: js.Any): js.Any = js.native
     def interceptAfter(`object`: js.Any): js.Any = js.native
+    def interceptAfter(
+      `object`: js.Any,
+      methodName: js.UndefOr[scala.Nothing],
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.Any
+    ): js.Any = js.native
+    def interceptAfter(`object`: js.Any, methodName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    def interceptAfter(`object`: js.Any, methodName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
     def interceptAfter(`object`: js.Any, methodName: java.lang.String): js.Any = js.native
+    def interceptAfter(`object`: js.Any, methodName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
     def interceptAfter(`object`: js.Any, methodName: java.lang.String, fn: js.Any): js.Any = js.native
     def interceptAfter(`object`: js.Any, methodName: java.lang.String, fn: js.Any, scope: js.Any): js.Any = js.native
     /** [Method] Adds behavior to an existing method that is executed before the original behavior of the function
@@ -343,8 +788,39 @@ object util extends js.Object {
       * @returns Function The new function just created.
       */
     def interceptBefore(): js.Any = js.native
+    def interceptBefore(
+      `object`: js.UndefOr[scala.Nothing],
+      methodName: js.UndefOr[scala.Nothing],
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.Any
+    ): js.Any = js.native
+    def interceptBefore(`object`: js.UndefOr[scala.Nothing], methodName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    def interceptBefore(
+      `object`: js.UndefOr[scala.Nothing],
+      methodName: js.UndefOr[scala.Nothing],
+      fn: js.Any,
+      scope: js.Any
+    ): js.Any = js.native
+    def interceptBefore(`object`: js.UndefOr[scala.Nothing], methodName: java.lang.String): js.Any = js.native
+    def interceptBefore(
+      `object`: js.UndefOr[scala.Nothing],
+      methodName: java.lang.String,
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.Any
+    ): js.Any = js.native
+    def interceptBefore(`object`: js.UndefOr[scala.Nothing], methodName: java.lang.String, fn: js.Any): js.Any = js.native
+    def interceptBefore(`object`: js.UndefOr[scala.Nothing], methodName: java.lang.String, fn: js.Any, scope: js.Any): js.Any = js.native
     def interceptBefore(`object`: js.Any): js.Any = js.native
+    def interceptBefore(
+      `object`: js.Any,
+      methodName: js.UndefOr[scala.Nothing],
+      fn: js.UndefOr[scala.Nothing],
+      scope: js.Any
+    ): js.Any = js.native
+    def interceptBefore(`object`: js.Any, methodName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+    def interceptBefore(`object`: js.Any, methodName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
     def interceptBefore(`object`: js.Any, methodName: java.lang.String): js.Any = js.native
+    def interceptBefore(`object`: js.Any, methodName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
     def interceptBefore(`object`: js.Any, methodName: java.lang.String, fn: js.Any): js.Any = js.native
     def interceptBefore(`object`: js.Any, methodName: java.lang.String, fn: js.Any, scope: js.Any): js.Any = js.native
     /** [Method] Create a new function from the provided fn the arguments of which are pre set to args
@@ -354,7 +830,11 @@ object util extends js.Object {
       * @returns Function The new callback function.
       */
     def pass(): js.Any = js.native
+    def pass(fn: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+    def pass(fn: js.UndefOr[scala.Nothing], args: typings.senchaTouch.Ext.Array): js.Any = js.native
+    def pass(fn: js.UndefOr[scala.Nothing], args: typings.senchaTouch.Ext.Array, scope: js.Any): js.Any = js.native
     def pass(fn: js.Any): js.Any = js.native
+    def pass(fn: js.Any, args: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
     def pass(fn: js.Any, args: typings.senchaTouch.Ext.Array): js.Any = js.native
     def pass(fn: js.Any, args: typings.senchaTouch.Ext.Array, scope: js.Any): js.Any = js.native
   }
@@ -423,6 +903,7 @@ object util extends js.Object {
       * @param replacer String The replacement string, which can reference matches from the matcher argument
       */
     def plural(): Unit = js.native
+    def plural(matcher: js.UndefOr[scala.Nothing], replacer: java.lang.String): Unit = js.native
     def plural(matcher: RegExp): Unit = js.native
     def plural(matcher: RegExp, replacer: java.lang.String): Unit = js.native
     /** [Method] Returns the pluralized form of a word e g
@@ -436,6 +917,7 @@ object util extends js.Object {
       * @param replacer String The replacement string, which can reference matches from the matcher argument
       */
     def singular(): Unit = js.native
+    def singular(matcher: js.UndefOr[scala.Nothing], replacer: java.lang.String): Unit = js.native
     def singular(matcher: RegExp): Unit = js.native
     def singular(matcher: RegExp, replacer: java.lang.String): Unit = js.native
     /** [Method] Returns the singularized form of a word e g
@@ -583,6 +1065,7 @@ object util extends js.Object {
       * @param origin String/Object The original method name
       */
     def createAlias(): Unit = js.native
+    def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
     def createAlias(alias: js.Any): Unit = js.native
     def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
     /** [Method] Returns a new point from an object that has x and y properties if that object is not an instance of Ext util Point
@@ -643,6 +1126,7 @@ object util extends js.Object {
       * @param origin String/Object The original method name
       */
     def createAlias(): Unit = js.native
+    def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
     def createAlias(alias: js.Any): Unit = js.native
     def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
     /** [Method] Creates new Region from an object  Ext util Region from top 0 right 5 bottom 3 left  1  the above is eq

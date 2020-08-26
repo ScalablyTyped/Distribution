@@ -82,45 +82,96 @@ trait KeyMetadata extends js.Object {
 
 object KeyMetadata {
   @scala.inline
-  def apply(
-    KeyId: KeyIdType,
-    AWSAccountId: AWSAccountIdType = null,
-    Arn: ArnType = null,
-    CloudHsmClusterId: CloudHsmClusterIdType = null,
-    CreationDate: DateType = null,
-    CustomKeyStoreId: CustomKeyStoreIdType = null,
-    CustomerMasterKeySpec: CustomerMasterKeySpec = null,
-    DeletionDate: DateType = null,
-    Description: DescriptionType = null,
-    Enabled: js.UndefOr[BooleanType] = js.undefined,
-    EncryptionAlgorithms: EncryptionAlgorithmSpecList = null,
-    ExpirationModel: ExpirationModelType = null,
-    KeyManager: KeyManagerType = null,
-    KeyState: KeyState = null,
-    KeyUsage: KeyUsageType = null,
-    Origin: OriginType = null,
-    SigningAlgorithms: SigningAlgorithmSpecList = null,
-    ValidTo: DateType = null
-  ): KeyMetadata = {
+  def apply(KeyId: KeyIdType): KeyMetadata = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
-    if (AWSAccountId != null) __obj.updateDynamic("AWSAccountId")(AWSAccountId.asInstanceOf[js.Any])
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CloudHsmClusterId != null) __obj.updateDynamic("CloudHsmClusterId")(CloudHsmClusterId.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (CustomKeyStoreId != null) __obj.updateDynamic("CustomKeyStoreId")(CustomKeyStoreId.asInstanceOf[js.Any])
-    if (CustomerMasterKeySpec != null) __obj.updateDynamic("CustomerMasterKeySpec")(CustomerMasterKeySpec.asInstanceOf[js.Any])
-    if (DeletionDate != null) __obj.updateDynamic("DeletionDate")(DeletionDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (EncryptionAlgorithms != null) __obj.updateDynamic("EncryptionAlgorithms")(EncryptionAlgorithms.asInstanceOf[js.Any])
-    if (ExpirationModel != null) __obj.updateDynamic("ExpirationModel")(ExpirationModel.asInstanceOf[js.Any])
-    if (KeyManager != null) __obj.updateDynamic("KeyManager")(KeyManager.asInstanceOf[js.Any])
-    if (KeyState != null) __obj.updateDynamic("KeyState")(KeyState.asInstanceOf[js.Any])
-    if (KeyUsage != null) __obj.updateDynamic("KeyUsage")(KeyUsage.asInstanceOf[js.Any])
-    if (Origin != null) __obj.updateDynamic("Origin")(Origin.asInstanceOf[js.Any])
-    if (SigningAlgorithms != null) __obj.updateDynamic("SigningAlgorithms")(SigningAlgorithms.asInstanceOf[js.Any])
-    if (ValidTo != null) __obj.updateDynamic("ValidTo")(ValidTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyMetadata]
   }
+  @scala.inline
+  implicit class KeyMetadataOps[Self <: KeyMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAWSAccountId(value: AWSAccountIdType): Self = this.set("AWSAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAWSAccountId: Self = this.set("AWSAccountId", js.undefined)
+    @scala.inline
+    def setArn(value: ArnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = this.set("CloudHsmClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudHsmClusterId: Self = this.set("CloudHsmClusterId", js.undefined)
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = this.set("CustomKeyStoreId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomKeyStoreId: Self = this.set("CustomKeyStoreId", js.undefined)
+    @scala.inline
+    def setCustomerMasterKeySpec(value: CustomerMasterKeySpec): Self = this.set("CustomerMasterKeySpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerMasterKeySpec: Self = this.set("CustomerMasterKeySpec", js.undefined)
+    @scala.inline
+    def setDeletionDate(value: DateType): Self = this.set("DeletionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionDate: Self = this.set("DeletionDate", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionType): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEnabled(value: BooleanType): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setEncryptionAlgorithmsVarargs(value: EncryptionAlgorithmSpec*): Self = this.set("EncryptionAlgorithms", js.Array(value :_*))
+    @scala.inline
+    def setEncryptionAlgorithms(value: EncryptionAlgorithmSpecList): Self = this.set("EncryptionAlgorithms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionAlgorithms: Self = this.set("EncryptionAlgorithms", js.undefined)
+    @scala.inline
+    def setExpirationModel(value: ExpirationModelType): Self = this.set("ExpirationModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationModel: Self = this.set("ExpirationModel", js.undefined)
+    @scala.inline
+    def setKeyManager(value: KeyManagerType): Self = this.set("KeyManager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyManager: Self = this.set("KeyManager", js.undefined)
+    @scala.inline
+    def setKeyState(value: KeyState): Self = this.set("KeyState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyState: Self = this.set("KeyState", js.undefined)
+    @scala.inline
+    def setKeyUsage(value: KeyUsageType): Self = this.set("KeyUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyUsage: Self = this.set("KeyUsage", js.undefined)
+    @scala.inline
+    def setOrigin(value: OriginType): Self = this.set("Origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("Origin", js.undefined)
+    @scala.inline
+    def setSigningAlgorithmsVarargs(value: SigningAlgorithmSpec*): Self = this.set("SigningAlgorithms", js.Array(value :_*))
+    @scala.inline
+    def setSigningAlgorithms(value: SigningAlgorithmSpecList): Self = this.set("SigningAlgorithms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningAlgorithms: Self = this.set("SigningAlgorithms", js.undefined)
+    @scala.inline
+    def setValidTo(value: DateType): Self = this.set("ValidTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidTo: Self = this.set("ValidTo", js.undefined)
+  }
+  
 }
 

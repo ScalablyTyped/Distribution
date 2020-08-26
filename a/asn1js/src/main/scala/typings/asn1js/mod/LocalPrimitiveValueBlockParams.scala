@@ -5,29 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LocalPrimitiveValueBlockParams extends LocalBaseBlockParams {
-  var isHexOnly: js.UndefOr[scala.Boolean] = js.undefined
-  var valueHex: js.UndefOr[ArrayBuffer] = js.undefined
+  var isHexOnly: js.UndefOr[scala.Boolean] = js.native
+  var valueHex: js.UndefOr[ArrayBuffer] = js.native
 }
 
 object LocalPrimitiveValueBlockParams {
   @scala.inline
-  def apply(
-    blockLength: js.UndefOr[Double] = js.undefined,
-    error: String = null,
-    isHexOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    valueBeforeDecode: ArrayBuffer = null,
-    valueHex: ArrayBuffer = null,
-    warnings: js.Array[String] = null
-  ): LocalPrimitiveValueBlockParams = {
+  def apply(): LocalPrimitiveValueBlockParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blockLength)) __obj.updateDynamic("blockLength")(blockLength.get.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHexOnly)) __obj.updateDynamic("isHexOnly")(isHexOnly.get.asInstanceOf[js.Any])
-    if (valueBeforeDecode != null) __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode.asInstanceOf[js.Any])
-    if (valueHex != null) __obj.updateDynamic("valueHex")(valueHex.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalPrimitiveValueBlockParams]
   }
+  @scala.inline
+  implicit class LocalPrimitiveValueBlockParamsOps[Self <: LocalPrimitiveValueBlockParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsHexOnly(value: scala.Boolean): Self = this.set("isHexOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsHexOnly: Self = this.set("isHexOnly", js.undefined)
+    @scala.inline
+    def setValueHex(value: ArrayBuffer): Self = this.set("valueHex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueHex: Self = this.set("valueHex", js.undefined)
+  }
+  
 }
 

@@ -1,6 +1,5 @@
 package typings.envToObject.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.envToObject.envToObjectStrings.boolean
 import typings.envToObject.envToObjectStrings.integer
 import scala.scalajs.js
@@ -28,14 +27,8 @@ object Mapping {
     __obj.asInstanceOf[Mapping]
   }
   @scala.inline
-  def GenericMapping(
-    keypath: String,
-    StringDictionary: /* opt */ StringDictionary[js.Any] = null,
-    `type`: String = null
-  ): Mapping = {
+  def GenericMapping(keypath: String): Mapping = {
     val __obj = js.Dynamic.literal(keypath = keypath.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mapping]
   }
 }

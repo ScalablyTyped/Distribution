@@ -12,8 +12,6 @@ import scala.scalajs.js.annotation._
 object panorama extends js.Object {
   @js.native
   class Manager () extends IEventEmitter {
-    /* CompleteClass */
-    override var events: IEventManager = js.native
     def closePlayer(): Unit = js.native
     def disableLookup(): Unit = js.native
     def enableLookup(): Unit = js.native
@@ -29,8 +27,6 @@ object panorama extends js.Object {
     def this(element: HTMLElement, panorama: IPanorama) = this()
     def this(element: String, panorama: IPanorama, options: AutoFitToViewport) = this()
     def this(element: HTMLElement, panorama: IPanorama, options: AutoFitToViewport) = this()
-    /* CompleteClass */
-    override var events: IEventManager = js.native
     def destroy(): Unit = js.native
     def fitToViewport(): Unit = js.native
     def getDirection(): js.Array[Double] = js.native

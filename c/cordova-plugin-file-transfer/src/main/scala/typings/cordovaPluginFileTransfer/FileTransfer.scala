@@ -42,6 +42,14 @@ trait FileTransfer extends js.Object {
     target: String,
     successCallback: js.Function1[/* fileEntry */ FileEntry, Unit],
     errorCallback: js.Function1[/* error */ FileTransferError, Unit],
+    trustAllHosts: js.UndefOr[scala.Nothing],
+    options: FileDownloadOptions
+  ): Unit = js.native
+  def download(
+    source: String,
+    target: String,
+    successCallback: js.Function1[/* fileEntry */ FileEntry, Unit],
+    errorCallback: js.Function1[/* error */ FileTransferError, Unit],
     trustAllHosts: Boolean
   ): Unit = js.native
   def download(
@@ -72,6 +80,14 @@ trait FileTransfer extends js.Object {
     server: String,
     successCallback: js.Function1[/* result */ FileUploadResult, Unit],
     errorCallback: js.Function1[/* error */ FileTransferError, Unit]
+  ): Unit = js.native
+  def upload(
+    fileURL: String,
+    server: String,
+    successCallback: js.Function1[/* result */ FileUploadResult, Unit],
+    errorCallback: js.Function1[/* error */ FileTransferError, Unit],
+    options: js.UndefOr[scala.Nothing],
+    trustAllHosts: Boolean
   ): Unit = js.native
   def upload(
     fileURL: String,

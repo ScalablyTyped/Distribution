@@ -52,7 +52,7 @@ object namedNodeMod extends js.Object {
     def site(): NamedNode = js.native
     /** Alias for value, favored by Tim */
     def uri: String = js.native
-    def uri(uri: String): js.Any = js.native
+    def uri_=(uri: String): Unit = js.native
   }
   
   @js.native

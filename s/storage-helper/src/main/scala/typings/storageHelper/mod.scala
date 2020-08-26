@@ -13,6 +13,7 @@ object mod extends js.Object {
   def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String): String | NonNullable[U] | Null = js.native
   def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: T): String | NonNullable[U] | Null = js.native
   def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: T, fallback: U): String | NonNullable[U] | Null = js.native
+  def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: js.UndefOr[scala.Nothing], fallback: U): String | NonNullable[U] | Null = js.native
   def removeItem(key: String): Unit = js.native
   def setItem(key: String, value: String): Unit = js.native
   def setItem(key: String, value: String, permanent: Boolean): Unit = js.native
@@ -31,6 +32,7 @@ object mod extends js.Object {
     def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String): String | NonNullable[U] | Null = js.native
     def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: T): String | NonNullable[U] | Null = js.native
     def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: T, fallback: U): String | NonNullable[U] | Null = js.native
+    def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: js.UndefOr[scala.Nothing], fallback: U): String | NonNullable[U] | Null = js.native
     def removeItem(key: String): Unit = js.native
     def setItem(key: String, value: String): Unit = js.native
     def setItem(key: String, value: String, permanent: Boolean): Unit = js.native

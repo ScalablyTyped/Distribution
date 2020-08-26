@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AnswerRequiredError () extends SurveyError {
   def this(text: String) = this()
+  def this(text: js.UndefOr[scala.Nothing], errorOwner: ISurveyErrorOwner) = this()
   def this(text: String, errorOwner: ISurveyErrorOwner) = this()
 }
 

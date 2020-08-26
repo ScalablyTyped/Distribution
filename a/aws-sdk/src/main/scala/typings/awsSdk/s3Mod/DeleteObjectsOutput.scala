@@ -19,12 +19,38 @@ trait DeleteObjectsOutput extends js.Object {
 
 object DeleteObjectsOutput {
   @scala.inline
-  def apply(Deleted: DeletedObjects = null, Errors: Errors = null, RequestCharged: RequestCharged = null): DeleteObjectsOutput = {
+  def apply(): DeleteObjectsOutput = {
     val __obj = js.Dynamic.literal()
-    if (Deleted != null) __obj.updateDynamic("Deleted")(Deleted.asInstanceOf[js.Any])
-    if (Errors != null) __obj.updateDynamic("Errors")(Errors.asInstanceOf[js.Any])
-    if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteObjectsOutput]
   }
+  @scala.inline
+  implicit class DeleteObjectsOutputOps[Self <: DeleteObjectsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeletedVarargs(value: DeletedObject*): Self = this.set("Deleted", js.Array(value :_*))
+    @scala.inline
+    def setDeleted(value: DeletedObjects): Self = this.set("Deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("Deleted", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: Error*): Self = this.set("Errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: Errors): Self = this.set("Errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("Errors", js.undefined)
+    @scala.inline
+    def setRequestCharged(value: RequestCharged): Self = this.set("RequestCharged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCharged: Self = this.set("RequestCharged", js.undefined)
+  }
+  
 }
 

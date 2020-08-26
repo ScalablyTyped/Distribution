@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A command to modify a text box' relative size settings.
   */
+@js.native
 trait ChangeTextBoxRelativeSizeCommand extends ChangeFloatingObjectPropertyCommandBase[TextBoxRelativeSizeSettings]
 
 object ChangeTextBoxRelativeSizeCommand {

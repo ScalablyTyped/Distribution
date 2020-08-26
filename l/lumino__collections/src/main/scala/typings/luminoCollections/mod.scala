@@ -50,13 +50,13 @@ object mod extends js.Object {
       * A forward iterator for nodes in a linked list.
       */
     @js.native
+    /**
+      * Construct a forward node iterator.
+      *
+      * @param node - The first node in the list.
+      */
     class ForwardNodeIterator[T] ()
       extends typings.luminoCollections.linkedlistMod.LinkedList.ForwardNodeIterator[T] {
-      /**
-        * Construct a forward node iterator.
-        *
-        * @param node - The first node in the list.
-        */
       def this(node: INode[T]) = this()
     }
     
@@ -64,13 +64,13 @@ object mod extends js.Object {
       * A forward iterator for values in a linked list.
       */
     @js.native
+    /**
+      * Construct a forward value iterator.
+      *
+      * @param node - The first node in the list.
+      */
     class ForwardValueIterator[T] ()
       extends typings.luminoCollections.linkedlistMod.LinkedList.ForwardValueIterator[T] {
-      /**
-        * Construct a forward value iterator.
-        *
-        * @param node - The first node in the list.
-        */
       def this(node: INode[T]) = this()
     }
     
@@ -78,13 +78,13 @@ object mod extends js.Object {
       * A reverse iterator for nodes in a linked list.
       */
     @js.native
+    /**
+      * Construct a retro node iterator.
+      *
+      * @param node - The last node in the list.
+      */
     class RetroNodeIterator[T] ()
       extends typings.luminoCollections.linkedlistMod.LinkedList.RetroNodeIterator[T] {
-      /**
-        * Construct a retro node iterator.
-        *
-        * @param node - The last node in the list.
-        */
       def this(node: INode[T]) = this()
     }
     
@@ -92,13 +92,13 @@ object mod extends js.Object {
       * A reverse iterator for values in a linked list.
       */
     @js.native
+    /**
+      * Construct a retro value iterator.
+      *
+      * @param node - The last node in the list.
+      */
     class RetroValueIterator[T] ()
       extends typings.luminoCollections.linkedlistMod.LinkedList.RetroValueIterator[T] {
-      /**
-        * Construct a retro value iterator.
-        *
-        * @param node - The last node in the list.
-        */
       def this(node: INode[T]) = this()
     }
     

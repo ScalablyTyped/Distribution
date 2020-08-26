@@ -18,14 +18,34 @@ trait DeleteQueuedReservedInstancesResult extends js.Object {
 
 object DeleteQueuedReservedInstancesResult {
   @scala.inline
-  def apply(
-    FailedQueuedPurchaseDeletions: FailedQueuedPurchaseDeletionSet = null,
-    SuccessfulQueuedPurchaseDeletions: SuccessfulQueuedPurchaseDeletionSet = null
-  ): DeleteQueuedReservedInstancesResult = {
+  def apply(): DeleteQueuedReservedInstancesResult = {
     val __obj = js.Dynamic.literal()
-    if (FailedQueuedPurchaseDeletions != null) __obj.updateDynamic("FailedQueuedPurchaseDeletions")(FailedQueuedPurchaseDeletions.asInstanceOf[js.Any])
-    if (SuccessfulQueuedPurchaseDeletions != null) __obj.updateDynamic("SuccessfulQueuedPurchaseDeletions")(SuccessfulQueuedPurchaseDeletions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteQueuedReservedInstancesResult]
   }
+  @scala.inline
+  implicit class DeleteQueuedReservedInstancesResultOps[Self <: DeleteQueuedReservedInstancesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailedQueuedPurchaseDeletionsVarargs(value: FailedQueuedPurchaseDeletion*): Self = this.set("FailedQueuedPurchaseDeletions", js.Array(value :_*))
+    @scala.inline
+    def setFailedQueuedPurchaseDeletions(value: FailedQueuedPurchaseDeletionSet): Self = this.set("FailedQueuedPurchaseDeletions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedQueuedPurchaseDeletions: Self = this.set("FailedQueuedPurchaseDeletions", js.undefined)
+    @scala.inline
+    def setSuccessfulQueuedPurchaseDeletionsVarargs(value: SuccessfulQueuedPurchaseDeletion*): Self = this.set("SuccessfulQueuedPurchaseDeletions", js.Array(value :_*))
+    @scala.inline
+    def setSuccessfulQueuedPurchaseDeletions(value: SuccessfulQueuedPurchaseDeletionSet): Self = this.set("SuccessfulQueuedPurchaseDeletions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessfulQueuedPurchaseDeletions: Self = this.set("SuccessfulQueuedPurchaseDeletions", js.undefined)
+  }
+  
 }
 

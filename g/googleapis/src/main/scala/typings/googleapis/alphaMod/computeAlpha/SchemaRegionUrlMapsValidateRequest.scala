@@ -14,10 +14,26 @@ trait SchemaRegionUrlMapsValidateRequest extends js.Object {
 
 object SchemaRegionUrlMapsValidateRequest {
   @scala.inline
-  def apply(resource: SchemaUrlMap = null): SchemaRegionUrlMapsValidateRequest = {
+  def apply(): SchemaRegionUrlMapsValidateRequest = {
     val __obj = js.Dynamic.literal()
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRegionUrlMapsValidateRequest]
   }
+  @scala.inline
+  implicit class SchemaRegionUrlMapsValidateRequestOps[Self <: SchemaRegionUrlMapsValidateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResource(value: SchemaUrlMap): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+  }
+  
 }
 

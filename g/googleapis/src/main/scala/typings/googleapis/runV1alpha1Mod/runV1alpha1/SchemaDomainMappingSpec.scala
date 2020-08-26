@@ -29,16 +29,34 @@ trait SchemaDomainMappingSpec extends js.Object {
 
 object SchemaDomainMappingSpec {
   @scala.inline
-  def apply(
-    certificateMode: String = null,
-    forceOverride: js.UndefOr[Boolean] = js.undefined,
-    routeName: String = null
-  ): SchemaDomainMappingSpec = {
+  def apply(): SchemaDomainMappingSpec = {
     val __obj = js.Dynamic.literal()
-    if (certificateMode != null) __obj.updateDynamic("certificateMode")(certificateMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceOverride)) __obj.updateDynamic("forceOverride")(forceOverride.get.asInstanceOf[js.Any])
-    if (routeName != null) __obj.updateDynamic("routeName")(routeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDomainMappingSpec]
   }
+  @scala.inline
+  implicit class SchemaDomainMappingSpecOps[Self <: SchemaDomainMappingSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateMode(value: String): Self = this.set("certificateMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateMode: Self = this.set("certificateMode", js.undefined)
+    @scala.inline
+    def setForceOverride(value: Boolean): Self = this.set("forceOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceOverride: Self = this.set("forceOverride", js.undefined)
+    @scala.inline
+    def setRouteName(value: String): Self = this.set("routeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteName: Self = this.set("routeName", js.undefined)
+  }
+  
 }
 

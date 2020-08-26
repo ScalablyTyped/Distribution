@@ -31,6 +31,12 @@ object Style extends js.Object {
   def ApplySplitterStyle(domObj: HTMLElement, style: js.Any): Unit = js.native
   def CreateStyle(styleType: IStyleType, styleProps: js.Any): js.Any = js.native
   def CreateStyleFromCss(styleType: IStyleType, cssStyleName: String): js.Any = js.native
+  def CreateStyleFromCss(
+    styleType: IStyleType,
+    cssStyleName: String,
+    optExistingStyle: js.UndefOr[scala.Nothing],
+    optClassId: js.Any
+  ): js.Any = js.native
   def CreateStyleFromCss(styleType: IStyleType, cssStyleName: String, optExistingStyle: js.Any): js.Any = js.native
   def CreateStyleFromCss(styleType: IStyleType, cssStyleName: String, optExistingStyle: js.Any, optClassId: js.Any): js.Any = js.native
   def GetCellStyleDefaultBackgroundColor(): String = js.native

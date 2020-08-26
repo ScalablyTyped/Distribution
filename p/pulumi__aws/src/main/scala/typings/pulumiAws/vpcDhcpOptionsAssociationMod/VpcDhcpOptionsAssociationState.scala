@@ -19,11 +19,30 @@ trait VpcDhcpOptionsAssociationState extends js.Object {
 
 object VpcDhcpOptionsAssociationState {
   @scala.inline
-  def apply(dhcpOptionsId: Input[String] = null, vpcId: Input[String] = null): VpcDhcpOptionsAssociationState = {
+  def apply(): VpcDhcpOptionsAssociationState = {
     val __obj = js.Dynamic.literal()
-    if (dhcpOptionsId != null) __obj.updateDynamic("dhcpOptionsId")(dhcpOptionsId.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcDhcpOptionsAssociationState]
   }
+  @scala.inline
+  implicit class VpcDhcpOptionsAssociationStateOps[Self <: VpcDhcpOptionsAssociationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDhcpOptionsId(value: Input[String]): Self = this.set("dhcpOptionsId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDhcpOptionsId: Self = this.set("dhcpOptionsId", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

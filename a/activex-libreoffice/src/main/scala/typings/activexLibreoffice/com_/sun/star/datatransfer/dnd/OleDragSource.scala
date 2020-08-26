@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * This service connects the Java-like UNO drag and drop protocol to the protocol used on window platforms. It realized the drag source.
   * @see XDragSource
   */
+@js.native
 trait OleDragSource
   extends XDragSource
      with XInitialization

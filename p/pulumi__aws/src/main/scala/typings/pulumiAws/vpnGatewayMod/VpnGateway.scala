@@ -22,19 +22,24 @@ class VpnGateway protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: VpnGatewayArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: VpnGatewayArgs, opts: CustomResourceOptions) = this()
   /**
     * The Autonomous System Number (ASN) for the Amazon side of the gateway. If you don't specify an ASN, the virtual private gateway is created with the default ASN.
     */
   val amazonSideAsn: Output_[String] = js.native
   /**
+    * Amazon Resource Name (ARN) of the VPN Gateway.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * The Availability Zone for the virtual private gateway.
     */
   val availabilityZone: Output_[js.UndefOr[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The VPC ID to create in.
     */
@@ -52,8 +57,10 @@ object VpnGateway extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): VpnGateway = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpnGateway = js.native
   def get(name: String, id: Input[ID], state: VpnGatewayState): VpnGateway = js.native
   def get(name: String, id: Input[ID], state: VpnGatewayState, opts: CustomResourceOptions): VpnGateway = js.native
   /**

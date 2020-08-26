@@ -4,90 +4,153 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommonAxe extends js.Object {
-  var afterBuildTicks: js.UndefOr[js.Function2[/* scale */ js.Any, /* ticks */ js.Array[Double], js.Array[Double]]] = js.undefined
-  var afterCalculateTickRotation: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterDataLimits: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterFit: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterSetDimension: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterTickToLabelConversion: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterUpdate: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var beforeBuildTicks: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var beforeCalculateTickRotation: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var beforeDataLimits: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var beforeFit: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var beforeSetDimension: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var beforeTickToLabelConversion: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var beforeUpdate: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var bounds: js.UndefOr[String] = js.undefined
-  var display: js.UndefOr[Boolean | String] = js.undefined
-  var gridLines: js.UndefOr[GridLineOptions] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var offset: js.UndefOr[Boolean] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var scaleLabel: js.UndefOr[ScaleTitleOptions] = js.undefined
-  var stacked: js.UndefOr[Boolean] = js.undefined
-  var ticks: js.UndefOr[TickOptions] = js.undefined
-  var time: js.UndefOr[TimeScale] = js.undefined
-  var `type`: js.UndefOr[ScaleType | String] = js.undefined
+  var afterBuildTicks: js.UndefOr[js.Function2[/* scale */ js.Any, /* ticks */ js.Array[Double], js.Array[Double]]] = js.native
+  var afterCalculateTickRotation: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterDataLimits: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterFit: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterSetDimension: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterTickToLabelConversion: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterUpdate: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeBuildTicks: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeCalculateTickRotation: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeDataLimits: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeFit: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeSetDimension: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeTickToLabelConversion: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeUpdate: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var bounds: js.UndefOr[String] = js.native
+  var display: js.UndefOr[Boolean | String] = js.native
+  var gridLines: js.UndefOr[GridLineOptions] = js.native
+  var id: js.UndefOr[String] = js.native
+  var offset: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[String] = js.native
+  var scaleLabel: js.UndefOr[ScaleTitleOptions] = js.native
+  var stacked: js.UndefOr[Boolean] = js.native
+  var ticks: js.UndefOr[TickOptions] = js.native
+  var time: js.UndefOr[TimeScale] = js.native
+  var `type`: js.UndefOr[ScaleType | String] = js.native
 }
 
 object CommonAxe {
   @scala.inline
-  def apply(
-    afterBuildTicks: (/* scale */ js.Any, /* ticks */ js.Array[Double]) => js.Array[Double] = null,
-    afterCalculateTickRotation: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    afterDataLimits: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    afterFit: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    afterSetDimension: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    afterTickToLabelConversion: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    afterUpdate: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    beforeBuildTicks: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    beforeCalculateTickRotation: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    beforeDataLimits: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    beforeFit: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    beforeSetDimension: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    beforeTickToLabelConversion: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    beforeUpdate: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    bounds: String = null,
-    display: Boolean | String = null,
-    gridLines: GridLineOptions = null,
-    id: String = null,
-    offset: js.UndefOr[Boolean] = js.undefined,
-    position: String = null,
-    scaleLabel: ScaleTitleOptions = null,
-    stacked: js.UndefOr[Boolean] = js.undefined,
-    ticks: TickOptions = null,
-    time: TimeScale = null,
-    `type`: ScaleType | String = null
-  ): CommonAxe = {
+  def apply(): CommonAxe = {
     val __obj = js.Dynamic.literal()
-    if (afterBuildTicks != null) __obj.updateDynamic("afterBuildTicks")(js.Any.fromFunction2(afterBuildTicks))
-    if (afterCalculateTickRotation != null) __obj.updateDynamic("afterCalculateTickRotation")(js.Any.fromFunction1(afterCalculateTickRotation))
-    if (afterDataLimits != null) __obj.updateDynamic("afterDataLimits")(js.Any.fromFunction1(afterDataLimits))
-    if (afterFit != null) __obj.updateDynamic("afterFit")(js.Any.fromFunction1(afterFit))
-    if (afterSetDimension != null) __obj.updateDynamic("afterSetDimension")(js.Any.fromFunction1(afterSetDimension))
-    if (afterTickToLabelConversion != null) __obj.updateDynamic("afterTickToLabelConversion")(js.Any.fromFunction1(afterTickToLabelConversion))
-    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(js.Any.fromFunction1(afterUpdate))
-    if (beforeBuildTicks != null) __obj.updateDynamic("beforeBuildTicks")(js.Any.fromFunction1(beforeBuildTicks))
-    if (beforeCalculateTickRotation != null) __obj.updateDynamic("beforeCalculateTickRotation")(js.Any.fromFunction1(beforeCalculateTickRotation))
-    if (beforeDataLimits != null) __obj.updateDynamic("beforeDataLimits")(js.Any.fromFunction1(beforeDataLimits))
-    if (beforeFit != null) __obj.updateDynamic("beforeFit")(js.Any.fromFunction1(beforeFit))
-    if (beforeSetDimension != null) __obj.updateDynamic("beforeSetDimension")(js.Any.fromFunction1(beforeSetDimension))
-    if (beforeTickToLabelConversion != null) __obj.updateDynamic("beforeTickToLabelConversion")(js.Any.fromFunction1(beforeTickToLabelConversion))
-    if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(js.Any.fromFunction1(beforeUpdate))
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (scaleLabel != null) __obj.updateDynamic("scaleLabel")(scaleLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(stacked)) __obj.updateDynamic("stacked")(stacked.get.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonAxe]
   }
+  @scala.inline
+  implicit class CommonAxeOps[Self <: CommonAxe] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterBuildTicks(value: (/* scale */ js.Any, /* ticks */ js.Array[Double]) => js.Array[Double]): Self = this.set("afterBuildTicks", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAfterBuildTicks: Self = this.set("afterBuildTicks", js.undefined)
+    @scala.inline
+    def setAfterCalculateTickRotation(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterCalculateTickRotation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterCalculateTickRotation: Self = this.set("afterCalculateTickRotation", js.undefined)
+    @scala.inline
+    def setAfterDataLimits(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterDataLimits", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterDataLimits: Self = this.set("afterDataLimits", js.undefined)
+    @scala.inline
+    def setAfterFit(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterFit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterFit: Self = this.set("afterFit", js.undefined)
+    @scala.inline
+    def setAfterSetDimension(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterSetDimension", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterSetDimension: Self = this.set("afterSetDimension", js.undefined)
+    @scala.inline
+    def setAfterTickToLabelConversion(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterTickToLabelConversion", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterTickToLabelConversion: Self = this.set("afterTickToLabelConversion", js.undefined)
+    @scala.inline
+    def setAfterUpdate(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterUpdate: Self = this.set("afterUpdate", js.undefined)
+    @scala.inline
+    def setBeforeBuildTicks(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeBuildTicks", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeBuildTicks: Self = this.set("beforeBuildTicks", js.undefined)
+    @scala.inline
+    def setBeforeCalculateTickRotation(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeCalculateTickRotation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeCalculateTickRotation: Self = this.set("beforeCalculateTickRotation", js.undefined)
+    @scala.inline
+    def setBeforeDataLimits(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeDataLimits", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeDataLimits: Self = this.set("beforeDataLimits", js.undefined)
+    @scala.inline
+    def setBeforeFit(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeFit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeFit: Self = this.set("beforeFit", js.undefined)
+    @scala.inline
+    def setBeforeSetDimension(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeSetDimension", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeSetDimension: Self = this.set("beforeSetDimension", js.undefined)
+    @scala.inline
+    def setBeforeTickToLabelConversion(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeTickToLabelConversion", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeTickToLabelConversion: Self = this.set("beforeTickToLabelConversion", js.undefined)
+    @scala.inline
+    def setBeforeUpdate(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeUpdate: Self = this.set("beforeUpdate", js.undefined)
+    @scala.inline
+    def setBounds(value: String): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounds: Self = this.set("bounds", js.undefined)
+    @scala.inline
+    def setDisplay(value: Boolean | String): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setGridLines(value: GridLineOptions): Self = this.set("gridLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridLines: Self = this.set("gridLines", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setOffset(value: Boolean): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setScaleLabel(value: ScaleTitleOptions): Self = this.set("scaleLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleLabel: Self = this.set("scaleLabel", js.undefined)
+    @scala.inline
+    def setStacked(value: Boolean): Self = this.set("stacked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStacked: Self = this.set("stacked", js.undefined)
+    @scala.inline
+    def setTicks(value: TickOptions): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTicks: Self = this.set("ticks", js.undefined)
+    @scala.inline
+    def setTime(value: TimeScale): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("time", js.undefined)
+    @scala.inline
+    def setType(value: ScaleType | String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

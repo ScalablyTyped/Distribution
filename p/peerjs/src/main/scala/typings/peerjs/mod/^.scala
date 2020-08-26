@@ -19,6 +19,7 @@ class ^ () extends Peer {
     * @param options for specifying details about PeerServer
     */
   def this(options: PeerJSOption) = this()
+  def this(id: js.UndefOr[scala.Nothing], options: PeerJSOption) = this()
   def this(id: String, options: PeerJSOption) = this()
 }
 

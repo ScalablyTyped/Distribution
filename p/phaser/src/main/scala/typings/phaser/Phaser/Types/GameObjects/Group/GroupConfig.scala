@@ -6,75 +6,108 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupConfig extends js.Object {
   /**
     * Sets {@link Phaser.GameObjects.Group#active}.
     */
-  var active: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
   /**
     * Sets {@link Phaser.GameObjects.Group#classType}.
     */
-  var classType: js.UndefOr[js.Function] = js.undefined
+  var classType: js.UndefOr[js.Function] = js.native
   /**
     * Sets {@link Phaser.GameObjects.Group#createCallback}.
     */
-  var createCallback: js.UndefOr[GroupCallback] = js.undefined
+  var createCallback: js.UndefOr[GroupCallback] = js.native
   /**
     * Sets {@link Phaser.GameObjects.Group#createMultipleCallback}.
     */
-  var createMultipleCallback: js.UndefOr[GroupMultipleCreateCallback] = js.undefined
+  var createMultipleCallback: js.UndefOr[GroupMultipleCreateCallback] = js.native
   /**
     * Sets {@link Phaser.GameObjects.Group#defaultFrame}.
     */
-  var defaultFrame: js.UndefOr[String | integer] = js.undefined
+  var defaultFrame: js.UndefOr[String | integer] = js.native
   /**
     * Sets {@link Phaser.GameObjects.Group#defaultKey}.
     */
-  var defaultKey: js.UndefOr[String] = js.undefined
+  var defaultKey: js.UndefOr[String] = js.native
   /**
     * Sets {@link Phaser.GameObjects.Group#maxSize}.
     */
-  var maxSize: js.UndefOr[Double] = js.undefined
+  var maxSize: js.UndefOr[Double] = js.native
   /**
     * Sets {@link Phaser.GameObjects.Group#name}.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Sets {@link Phaser.GameObjects.Group#removeCallback}.
     */
-  var removeCallback: js.UndefOr[GroupCallback] = js.undefined
+  var removeCallback: js.UndefOr[GroupCallback] = js.native
   /**
     * Sets {@link Phaser.GameObjects.Group#runChildUpdate}.
     */
-  var runChildUpdate: js.UndefOr[Boolean] = js.undefined
+  var runChildUpdate: js.UndefOr[Boolean] = js.native
 }
 
 object GroupConfig {
   @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    classType: js.Function = null,
-    createCallback: /* item */ GameObject => Unit = null,
-    createMultipleCallback: /* items */ js.Array[GameObject] => Unit = null,
-    defaultFrame: String | integer = null,
-    defaultKey: String = null,
-    maxSize: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    removeCallback: /* item */ GameObject => Unit = null,
-    runChildUpdate: js.UndefOr[Boolean] = js.undefined
-  ): GroupConfig = {
+  def apply(): GroupConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (classType != null) __obj.updateDynamic("classType")(classType.asInstanceOf[js.Any])
-    if (createCallback != null) __obj.updateDynamic("createCallback")(js.Any.fromFunction1(createCallback))
-    if (createMultipleCallback != null) __obj.updateDynamic("createMultipleCallback")(js.Any.fromFunction1(createMultipleCallback))
-    if (defaultFrame != null) __obj.updateDynamic("defaultFrame")(defaultFrame.asInstanceOf[js.Any])
-    if (defaultKey != null) __obj.updateDynamic("defaultKey")(defaultKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (removeCallback != null) __obj.updateDynamic("removeCallback")(js.Any.fromFunction1(removeCallback))
-    if (!js.isUndefined(runChildUpdate)) __obj.updateDynamic("runChildUpdate")(runChildUpdate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupConfig]
   }
+  @scala.inline
+  implicit class GroupConfigOps[Self <: GroupConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setClassType(value: js.Function): Self = this.set("classType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassType: Self = this.set("classType", js.undefined)
+    @scala.inline
+    def setCreateCallback(value: /* item */ GameObject => Unit): Self = this.set("createCallback", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCreateCallback: Self = this.set("createCallback", js.undefined)
+    @scala.inline
+    def setCreateMultipleCallback(value: /* items */ js.Array[GameObject] => Unit): Self = this.set("createMultipleCallback", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCreateMultipleCallback: Self = this.set("createMultipleCallback", js.undefined)
+    @scala.inline
+    def setDefaultFrame(value: String | integer): Self = this.set("defaultFrame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultFrame: Self = this.set("defaultFrame", js.undefined)
+    @scala.inline
+    def setDefaultKey(value: String): Self = this.set("defaultKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultKey: Self = this.set("defaultKey", js.undefined)
+    @scala.inline
+    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRemoveCallback(value: /* item */ GameObject => Unit): Self = this.set("removeCallback", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemoveCallback: Self = this.set("removeCallback", js.undefined)
+    @scala.inline
+    def setRunChildUpdate(value: Boolean): Self = this.set("runChildUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunChildUpdate: Self = this.set("runChildUpdate", js.undefined)
+  }
+  
 }
 

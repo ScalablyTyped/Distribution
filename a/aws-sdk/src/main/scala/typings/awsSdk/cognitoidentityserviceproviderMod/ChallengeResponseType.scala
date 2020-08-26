@@ -18,11 +18,30 @@ trait ChallengeResponseType extends js.Object {
 
 object ChallengeResponseType {
   @scala.inline
-  def apply(ChallengeName: ChallengeName = null, ChallengeResponse: ChallengeResponse = null): ChallengeResponseType = {
+  def apply(): ChallengeResponseType = {
     val __obj = js.Dynamic.literal()
-    if (ChallengeName != null) __obj.updateDynamic("ChallengeName")(ChallengeName.asInstanceOf[js.Any])
-    if (ChallengeResponse != null) __obj.updateDynamic("ChallengeResponse")(ChallengeResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChallengeResponseType]
   }
+  @scala.inline
+  implicit class ChallengeResponseTypeOps[Self <: ChallengeResponseType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChallengeName(value: ChallengeName): Self = this.set("ChallengeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChallengeName: Self = this.set("ChallengeName", js.undefined)
+    @scala.inline
+    def setChallengeResponse(value: ChallengeResponse): Self = this.set("ChallengeResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChallengeResponse: Self = this.set("ChallengeResponse", js.undefined)
+  }
+  
 }
 

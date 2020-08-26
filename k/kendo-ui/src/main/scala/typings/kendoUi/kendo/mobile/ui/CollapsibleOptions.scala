@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CollapsibleOptions extends js.Object {
-  var animation: js.UndefOr[Boolean] = js.undefined
-  var collapse: js.UndefOr[js.Function1[/* e */ CollapsibleEvent, Unit]] = js.undefined
-  var collapsed: js.UndefOr[Boolean] = js.undefined
-  var expand: js.UndefOr[js.Function1[/* e */ CollapsibleEvent, Unit]] = js.undefined
-  var expandIcon: js.UndefOr[String] = js.undefined
-  var iconPosition: js.UndefOr[String] = js.undefined
-  var inset: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.native
+  var collapse: js.UndefOr[js.Function1[/* e */ CollapsibleEvent, Unit]] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.native
+  var expand: js.UndefOr[js.Function1[/* e */ CollapsibleEvent, Unit]] = js.native
+  var expandIcon: js.UndefOr[String] = js.native
+  var iconPosition: js.UndefOr[String] = js.native
+  var inset: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
 }
 
 object CollapsibleOptions {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    collapse: /* e */ CollapsibleEvent => Unit = null,
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    expand: /* e */ CollapsibleEvent => Unit = null,
-    expandIcon: String = null,
-    iconPosition: String = null,
-    inset: js.UndefOr[Boolean] = js.undefined,
-    name: String = null
-  ): CollapsibleOptions = {
+  def apply(): CollapsibleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction1(collapse))
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction1(expand))
-    if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])
-    if (iconPosition != null) __obj.updateDynamic("iconPosition")(iconPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapsibleOptions]
   }
+  @scala.inline
+  implicit class CollapsibleOptionsOps[Self <: CollapsibleOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setCollapse(value: /* e */ CollapsibleEvent => Unit): Self = this.set("collapse", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    @scala.inline
+    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    @scala.inline
+    def setExpand(value: /* e */ CollapsibleEvent => Unit): Self = this.set("expand", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteExpand: Self = this.set("expand", js.undefined)
+    @scala.inline
+    def setExpandIcon(value: String): Self = this.set("expandIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandIcon: Self = this.set("expandIcon", js.undefined)
+    @scala.inline
+    def setIconPosition(value: String): Self = this.set("iconPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconPosition: Self = this.set("iconPosition", js.undefined)
+    @scala.inline
+    def setInset(value: Boolean): Self = this.set("inset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInset: Self = this.set("inset", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

@@ -5,7 +5,7 @@ import typings.jsplumb.jsplumbStrings.click
 import typings.jsplumb.jsplumbStrings.connection
 import typings.std.Element
 import typings.std.Event
-import typings.std.Map
+import typings.std.Record
 import typings.std.Selection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,11 +15,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class jsPlumbInstance () extends js.Object {
   def addEndpoint(el: ElementGroupRef): Endpoint | js.Array[Endpoint] = js.native
+  def addEndpoint(el: ElementGroupRef, params: js.UndefOr[scala.Nothing], referenceParams: EndpointOptions): Endpoint | js.Array[Endpoint] = js.native
   def addEndpoint(el: ElementGroupRef, params: EndpointOptions): Endpoint | js.Array[Endpoint] = js.native
   def addEndpoint(el: ElementGroupRef, params: EndpointOptions, referenceParams: EndpointOptions): Endpoint | js.Array[Endpoint] = js.native
   def addEndpoints(target: ElementGroupRef, endpoints: js.Array[EndpointOptions]): js.Array[Endpoint] = js.native
   def addEndpoints(target: ElementGroupRef, endpoints: js.Array[EndpointOptions], referenceParams: EndpointOptions): js.Array[Endpoint] = js.native
   def animate(el: ElementRef): Unit = js.native
+  def animate(el: ElementRef, properties: js.UndefOr[scala.Nothing], options: js.Object): Unit = js.native
   def animate(el: ElementRef, properties: js.Object): Unit = js.native
   def animate(el: ElementRef, properties: js.Object, options: js.Object): Unit = js.native
   def batch(fn: js.Function): Unit = js.native
@@ -69,49 +71,56 @@ class jsPlumbInstance () extends js.Object {
   def empty(el: Element): Unit = js.native
   def fire(event: String, value: js.Object, originalEvent: Event): Unit = js.native
   def getAllConnections(): js.Array[Connection] = js.native
-  def getConnections(scope: String, options: js.Object): js.Array[_] | (Map[_, _]) = js.native
-  def getConnections(scope: String, options: js.Object, scope2: String): js.Array[_] | (Map[_, _]) = js.native
-  def getConnections(scope: String, options: js.Object, scope2: String, source: Selector | String): js.Array[_] | (Map[_, _]) = js.native
+  def getConnections(scope: String, options: js.Object): js.Array[_] | (Record[_, _]) = js.native
+  def getConnections(scope: String, options: js.Object, scope2: js.UndefOr[scala.Nothing], source: Selector | String): js.Array[_] | (Record[_, _]) = js.native
   def getConnections(
     scope: String,
     options: js.Object,
-    scope2: String,
-    source: Selector | String,
+    scope2: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[Selector | String],
     target: Selector | String
-  ): js.Array[_] | (Map[_, _]) = js.native
+  ): js.Array[_] | (Record[_, _]) = js.native
+  def getConnections(
+    scope: String,
+    options: js.Object,
+    scope2: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[Selector | String],
+    target: js.UndefOr[Selector | String],
+    flat: Boolean
+  ): js.Array[_] | (Record[_, _]) = js.native
+  def getConnections(scope: String, options: js.Object, scope2: String): js.Array[_] | (Record[_, _]) = js.native
+  def getConnections(scope: String, options: js.Object, scope2: String, source: Selector | String): js.Array[_] | (Record[_, _]) = js.native
   def getConnections(
     scope: String,
     options: js.Object,
     scope2: String,
-    source: Selector | String,
-    target: Selector | String,
+    source: js.UndefOr[Selector | String],
+    target: Selector | String
+  ): js.Array[_] | (Record[_, _]) = js.native
+  def getConnections(
+    scope: String,
+    options: js.Object,
+    scope2: String,
+    source: js.UndefOr[Selector | String],
+    target: js.UndefOr[Selector | String],
     flat: Boolean
-  ): js.Array[_] | (Map[_, _]) = js.native
+  ): js.Array[_] | (Record[_, _]) = js.native
   def getContainer(): Element = js.native
   def getDefaultScope(): String = js.native
   def getEndpoint(uuid: String): Endpoint = js.native
   def getEndpoints(element: String): js.Array[Endpoint] = js.native
   def getEndpoints(element: Element): js.Array[Endpoint] = js.native
-  def getHoverPaintStyle(): Selection = js.native
-  def getHoverPaintStyle(params: js.Object): Selection = js.native
-  def getHoverPaintStyle(params: js.Object, scope: String): Selection = js.native
-  def getHoverPaintStyle(params: js.Object, scope: String, source: String | Element | Selector | js.Array[_]): Selection = js.native
   def getHoverPaintStyle(
-    params: js.Object,
-    scope: String,
-    source: String | Element | Selector | js.Array[_],
-    target: String | Element | Selector | js.Array[_]
-  ): Selection = js.native
-  def getHoverPaintStyle(
-    params: js.Object,
-    scope: String,
-    source: String | Element | Selector | js.Array[_],
-    target: String | Element | Selector | js.Array[_],
-    element: String | Element | Selector | js.Array[_]
+    params: js.UndefOr[js.Object],
+    scope: js.UndefOr[String],
+    source: js.UndefOr[String | Element | Selector | js.Array[_]],
+    target: js.UndefOr[String | Element | Selector | js.Array[_]],
+    element: js.UndefOr[String | Element | Selector | js.Array[_]]
   ): Selection = js.native
   def getScope(Element: String): String = js.native
   def getScope(Element: Element): String = js.native
   def getSelector(): Unit = js.native
+  def getSelector(context: js.UndefOr[scala.Nothing], spec: String): Unit = js.native
   def getSelector(context: Selector): Unit = js.native
   def getSelector(context: Selector, spec: String): Unit = js.native
   def getSelector(context: Element): Unit = js.native
@@ -141,39 +150,19 @@ class jsPlumbInstance () extends js.Object {
   def isTargetEnabled(el: Selector | String): Boolean = js.native
   def isTargetEnabled(el: Element): Boolean = js.native
   def makeSource(
-    el: Selector | String,
+    el: String | Element | Selector,
     params: js.Object,
-    endpoint: js.UndefOr[js.Array[_] | String],
-    parent: js.UndefOr[Element | String],
-    scope: js.UndefOr[String],
-    dragOptions: js.UndefOr[js.Object],
-    deleteEndpointsOnEmpty: js.UndefOr[Boolean],
-    filter: js.UndefOr[js.Function]
-  ): Unit = js.native
-  def makeSource(
-    el: Element,
-    params: js.Object,
-    endpoint: js.UndefOr[js.Array[_] | String],
-    parent: js.UndefOr[Element | String],
+    endpoint: js.UndefOr[String | js.Array[_]],
+    parent: js.UndefOr[String | Element],
     scope: js.UndefOr[String],
     dragOptions: js.UndefOr[js.Object],
     deleteEndpointsOnEmpty: js.UndefOr[Boolean],
     filter: js.UndefOr[js.Function]
   ): Unit = js.native
   def makeTarget(
-    el: Selector | String,
+    el: String | Element | Selector,
     params: js.Object,
-    endpoint: js.UndefOr[js.Array[_] | String],
-    scope: js.UndefOr[String],
-    dropOptions: js.UndefOr[js.Object],
-    deleteEndpointsOnEmpty: js.UndefOr[Boolean],
-    maxConnections: js.UndefOr[Double],
-    onMaxConnections: js.UndefOr[js.Function]
-  ): Unit = js.native
-  def makeTarget(
-    el: Element,
-    params: js.Object,
-    endpoint: js.UndefOr[js.Array[_] | String],
+    endpoint: js.UndefOr[String | js.Array[_]],
     scope: js.UndefOr[String],
     dropOptions: js.UndefOr[js.Object],
     deleteEndpointsOnEmpty: js.UndefOr[Boolean],
@@ -183,11 +172,24 @@ class jsPlumbInstance () extends js.Object {
   def off(el: String, event: String, fn: js.Function): jsPlumbInstance = js.native
   def off(el: Element, event: String, fn: js.Function): jsPlumbInstance = js.native
   def on(el: String): jsPlumbInstance = js.native
+  def on(el: String, children: js.UndefOr[scala.Nothing], event: js.UndefOr[scala.Nothing], fn: js.Function): jsPlumbInstance = js.native
+  def on(el: String, children: js.UndefOr[scala.Nothing], event: String): jsPlumbInstance = js.native
+  def on(el: String, children: js.UndefOr[scala.Nothing], event: String, fn: js.Function): jsPlumbInstance = js.native
   def on(el: String, children: String): jsPlumbInstance = js.native
+  def on(el: String, children: String, event: js.UndefOr[scala.Nothing], fn: js.Function): jsPlumbInstance = js.native
   def on(el: String, children: String, event: String): jsPlumbInstance = js.native
   def on(el: String, children: String, event: String, fn: js.Function): jsPlumbInstance = js.native
   def on(el: Element): jsPlumbInstance = js.native
+  def on(
+    el: Element,
+    children: js.UndefOr[scala.Nothing],
+    event: js.UndefOr[scala.Nothing],
+    fn: js.Function
+  ): jsPlumbInstance = js.native
+  def on(el: Element, children: js.UndefOr[scala.Nothing], event: String): jsPlumbInstance = js.native
+  def on(el: Element, children: js.UndefOr[scala.Nothing], event: String, fn: js.Function): jsPlumbInstance = js.native
   def on(el: Element, children: String): jsPlumbInstance = js.native
+  def on(el: Element, children: String, event: js.UndefOr[scala.Nothing], fn: js.Function): jsPlumbInstance = js.native
   def on(el: Element, children: String, event: String): jsPlumbInstance = js.native
   def on(el: Element, children: String, event: String, fn: js.Function): jsPlumbInstance = js.native
   def ready(fn: js.Function): Unit = js.native
@@ -213,9 +215,145 @@ class jsPlumbInstance () extends js.Object {
   def revalidate(el: Selector | String): Unit = js.native
   def revalidate(el: Element): Unit = js.native
   def select(): Each = js.native
+  def select(
+    params: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[scala.Nothing],
+    target: js.UndefOr[scala.Nothing],
+    connections: js.Array[Connection]
+  ): Each = js.native
+  def select(
+    params: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[scala.Nothing],
+    target: String
+  ): Each = js.native
+  def select(
+    params: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[scala.Nothing],
+    target: String,
+    connections: js.Array[Connection]
+  ): Each = js.native
+  def select(params: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], source: String): Each = js.native
+  def select(
+    params: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    source: String,
+    target: js.UndefOr[scala.Nothing],
+    connections: js.Array[Connection]
+  ): Each = js.native
+  def select(
+    params: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    source: String,
+    target: String
+  ): Each = js.native
+  def select(
+    params: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    source: String,
+    target: String,
+    connections: js.Array[Connection]
+  ): Each = js.native
+  def select(params: js.UndefOr[scala.Nothing], scope: String): Each = js.native
+  def select(
+    params: js.UndefOr[scala.Nothing],
+    scope: String,
+    source: js.UndefOr[scala.Nothing],
+    target: js.UndefOr[scala.Nothing],
+    connections: js.Array[Connection]
+  ): Each = js.native
+  def select(
+    params: js.UndefOr[scala.Nothing],
+    scope: String,
+    source: js.UndefOr[scala.Nothing],
+    target: String
+  ): Each = js.native
+  def select(
+    params: js.UndefOr[scala.Nothing],
+    scope: String,
+    source: js.UndefOr[scala.Nothing],
+    target: String,
+    connections: js.Array[Connection]
+  ): Each = js.native
+  def select(params: js.UndefOr[scala.Nothing], scope: String, source: String): Each = js.native
+  def select(
+    params: js.UndefOr[scala.Nothing],
+    scope: String,
+    source: String,
+    target: js.UndefOr[scala.Nothing],
+    connections: js.Array[Connection]
+  ): Each = js.native
+  def select(params: js.UndefOr[scala.Nothing], scope: String, source: String, target: String): Each = js.native
+  def select(
+    params: js.UndefOr[scala.Nothing],
+    scope: String,
+    source: String,
+    target: String,
+    connections: js.Array[Connection]
+  ): Each = js.native
   def select(params: js.Object): Each = js.native
+  def select(
+    params: js.Object,
+    scope: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[scala.Nothing],
+    target: js.UndefOr[scala.Nothing],
+    connections: js.Array[Connection]
+  ): Each = js.native
+  def select(
+    params: js.Object,
+    scope: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[scala.Nothing],
+    target: String
+  ): Each = js.native
+  def select(
+    params: js.Object,
+    scope: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[scala.Nothing],
+    target: String,
+    connections: js.Array[Connection]
+  ): Each = js.native
+  def select(params: js.Object, scope: js.UndefOr[scala.Nothing], source: String): Each = js.native
+  def select(
+    params: js.Object,
+    scope: js.UndefOr[scala.Nothing],
+    source: String,
+    target: js.UndefOr[scala.Nothing],
+    connections: js.Array[Connection]
+  ): Each = js.native
+  def select(params: js.Object, scope: js.UndefOr[scala.Nothing], source: String, target: String): Each = js.native
+  def select(
+    params: js.Object,
+    scope: js.UndefOr[scala.Nothing],
+    source: String,
+    target: String,
+    connections: js.Array[Connection]
+  ): Each = js.native
   def select(params: js.Object, scope: String): Each = js.native
+  def select(
+    params: js.Object,
+    scope: String,
+    source: js.UndefOr[scala.Nothing],
+    target: js.UndefOr[scala.Nothing],
+    connections: js.Array[Connection]
+  ): Each = js.native
+  def select(params: js.Object, scope: String, source: js.UndefOr[scala.Nothing], target: String): Each = js.native
+  def select(
+    params: js.Object,
+    scope: String,
+    source: js.UndefOr[scala.Nothing],
+    target: String,
+    connections: js.Array[Connection]
+  ): Each = js.native
   def select(params: js.Object, scope: String, source: String): Each = js.native
+  def select(
+    params: js.Object,
+    scope: String,
+    source: String,
+    target: js.UndefOr[scala.Nothing],
+    connections: js.Array[Connection]
+  ): Each = js.native
   def select(params: js.Object, scope: String, source: String, target: String): Each = js.native
   def select(
     params: js.Object,
@@ -284,6 +422,7 @@ class jsPlumbInstance () extends js.Object {
   def toggleVisible(el: Element): Unit = js.native
   def toggleVisible(el: Element, changeEndpoints: Boolean): Unit = js.native
   def unbind(): Unit = js.native
+  def unbind(eventOrListener: js.UndefOr[scala.Nothing], listener: js.Function): Unit = js.native
   def unbind(eventOrListener: String): Unit = js.native
   def unbind(eventOrListener: String, listener: js.Function): Unit = js.native
   def unbind(eventOrListener: js.Function): Unit = js.native

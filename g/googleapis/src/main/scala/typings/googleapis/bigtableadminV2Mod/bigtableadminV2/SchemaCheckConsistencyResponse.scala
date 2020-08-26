@@ -19,10 +19,26 @@ trait SchemaCheckConsistencyResponse extends js.Object {
 
 object SchemaCheckConsistencyResponse {
   @scala.inline
-  def apply(consistent: js.UndefOr[Boolean] = js.undefined): SchemaCheckConsistencyResponse = {
+  def apply(): SchemaCheckConsistencyResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCheckConsistencyResponse]
   }
+  @scala.inline
+  implicit class SchemaCheckConsistencyResponseOps[Self <: SchemaCheckConsistencyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsistent(value: Boolean): Self = this.set("consistent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsistent: Self = this.set("consistent", js.undefined)
+  }
+  
 }
 

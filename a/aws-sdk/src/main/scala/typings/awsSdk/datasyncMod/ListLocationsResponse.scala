@@ -18,11 +18,32 @@ trait ListLocationsResponse extends js.Object {
 
 object ListLocationsResponse {
   @scala.inline
-  def apply(Locations: LocationList = null, NextToken: NextToken = null): ListLocationsResponse = {
+  def apply(): ListLocationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Locations != null) __obj.updateDynamic("Locations")(Locations.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLocationsResponse]
   }
+  @scala.inline
+  implicit class ListLocationsResponseOps[Self <: ListLocationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocationsVarargs(value: LocationListEntry*): Self = this.set("Locations", js.Array(value :_*))
+    @scala.inline
+    def setLocations(value: LocationList): Self = this.set("Locations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocations: Self = this.set("Locations", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

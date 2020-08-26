@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object animationUtilsMod extends js.Object {
   def addClassToArray(): js.Array[String] = js.native
+  def addClassToArray(classes: js.UndefOr[scala.Nothing], className: String): js.Array[String] = js.native
+  def addClassToArray(classes: js.UndefOr[scala.Nothing], className: js.Array[String]): js.Array[String] = js.native
   def addClassToArray(classes: js.Array[String]): js.Array[String] = js.native
   def addClassToArray(classes: js.Array[String], className: String): js.Array[String] = js.native
   def addClassToArray(classes: js.Array[String], className: js.Array[String]): js.Array[String] = js.native

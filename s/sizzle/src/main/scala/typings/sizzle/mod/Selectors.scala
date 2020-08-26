@@ -18,16 +18,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Selectors extends js.Object {
-  var attrHandle: AttrHandleFunctions
-  var cacheLength: Double
-  var filter: FilterFunctions
-  var find: FindFunctions
-  var `match`: Matches
-  var preFilter: PreFilterFunctions
-  var pseudos: PseudoFunctions
-  var setFilters: SetFilterFunctions
-  def createPseudo(fn: CreatePseudoFunction): PseudoFunction
+  var attrHandle: AttrHandleFunctions = js.native
+  var cacheLength: Double = js.native
+  var filter: FilterFunctions = js.native
+  var find: FindFunctions = js.native
+  var `match`: Matches = js.native
+  var preFilter: PreFilterFunctions = js.native
+  var pseudos: PseudoFunctions = js.native
+  var setFilters: SetFilterFunctions = js.native
+  def createPseudo(fn: CreatePseudoFunction): PseudoFunction = js.native
 }
 
 @JSImport("sizzle", "Selectors")

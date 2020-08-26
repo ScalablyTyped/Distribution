@@ -38,24 +38,56 @@ trait VolumeStatusItem extends js.Object {
 
 object VolumeStatusItem {
   @scala.inline
-  def apply(
-    Actions: VolumeStatusActionsList = null,
-    AttachmentStatuses: VolumeStatusAttachmentStatusList = null,
-    AvailabilityZone: String = null,
-    Events: VolumeStatusEventsList = null,
-    OutpostArn: String = null,
-    VolumeId: String = null,
-    VolumeStatus: VolumeStatusInfo = null
-  ): VolumeStatusItem = {
+  def apply(): VolumeStatusItem = {
     val __obj = js.Dynamic.literal()
-    if (Actions != null) __obj.updateDynamic("Actions")(Actions.asInstanceOf[js.Any])
-    if (AttachmentStatuses != null) __obj.updateDynamic("AttachmentStatuses")(AttachmentStatuses.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (Events != null) __obj.updateDynamic("Events")(Events.asInstanceOf[js.Any])
-    if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
-    if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId.asInstanceOf[js.Any])
-    if (VolumeStatus != null) __obj.updateDynamic("VolumeStatus")(VolumeStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeStatusItem]
   }
+  @scala.inline
+  implicit class VolumeStatusItemOps[Self <: VolumeStatusItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsVarargs(value: VolumeStatusAction*): Self = this.set("Actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: VolumeStatusActionsList): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("Actions", js.undefined)
+    @scala.inline
+    def setAttachmentStatusesVarargs(value: VolumeStatusAttachmentStatus*): Self = this.set("AttachmentStatuses", js.Array(value :_*))
+    @scala.inline
+    def setAttachmentStatuses(value: VolumeStatusAttachmentStatusList): Self = this.set("AttachmentStatuses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentStatuses: Self = this.set("AttachmentStatuses", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setEventsVarargs(value: VolumeStatusEvent*): Self = this.set("Events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: VolumeStatusEventsList): Self = this.set("Events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("Events", js.undefined)
+    @scala.inline
+    def setOutpostArn(value: String): Self = this.set("OutpostArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutpostArn: Self = this.set("OutpostArn", js.undefined)
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
+    @scala.inline
+    def setVolumeStatus(value: VolumeStatusInfo): Self = this.set("VolumeStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeStatus: Self = this.set("VolumeStatus", js.undefined)
+  }
+  
 }
 

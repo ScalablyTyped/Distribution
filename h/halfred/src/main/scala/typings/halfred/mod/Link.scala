@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5
   */
+@js.native
 trait Link extends js.Object {
   /**
     * The "deprecation" property is OPTIONAL.
@@ -25,7 +26,7 @@ trait Link extends js.Object {
     *
     * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.4
     */
-  var deprecation: js.UndefOr[String] = js.undefined
+  var deprecation: js.UndefOr[String] = js.native
   /**
     * The "href" property is REQUIRED.
     *
@@ -36,7 +37,7 @@ trait Link extends js.Object {
     *
     * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.1
     */
-  var href: String
+  var href: String = js.native
   /**
     * The "hreflang" property is OPTIONAL.
     *
@@ -45,7 +46,7 @@ trait Link extends js.Object {
     *
     * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.8
     */
-  var hreflang: js.UndefOr[String] = js.undefined
+  var hreflang: js.UndefOr[String] = js.native
   /**
     * The "name" property is OPTIONAL.
     *
@@ -54,7 +55,7 @@ trait Link extends js.Object {
     *
     * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.5
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * The "profile" property is OPTIONAL.
     *
@@ -63,7 +64,7 @@ trait Link extends js.Object {
     *
     * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.6
     */
-  var profile: js.UndefOr[String] = js.undefined
+  var profile: js.UndefOr[String] = js.native
   /**
     * The "templated" property is OPTIONAL.
     *
@@ -75,7 +76,7 @@ trait Link extends js.Object {
     *
     * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.2
     */
-  var templated: js.UndefOr[Boolean] = js.undefined
+  var templated: js.UndefOr[Boolean] = js.native
   /**
     * The "title" property is OPTIONAL.
     *
@@ -84,7 +85,7 @@ trait Link extends js.Object {
     *
     * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.7
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * The "type" property is OPTIONAL.
     *
@@ -93,30 +94,57 @@ trait Link extends js.Object {
     *
     * @see https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5.3
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object Link {
   @scala.inline
-  def apply(
-    href: String,
-    deprecation: String = null,
-    hreflang: String = null,
-    name: String = null,
-    profile: String = null,
-    templated: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    `type`: String = null
-  ): Link = {
+  def apply(href: String): Link = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-    if (deprecation != null) __obj.updateDynamic("deprecation")(deprecation.asInstanceOf[js.Any])
-    if (hreflang != null) __obj.updateDynamic("hreflang")(hreflang.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (!js.isUndefined(templated)) __obj.updateDynamic("templated")(templated.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Link]
   }
+  @scala.inline
+  implicit class LinkOps[Self <: Link] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeprecation(value: String): Self = this.set("deprecation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecation: Self = this.set("deprecation", js.undefined)
+    @scala.inline
+    def setHreflang(value: String): Self = this.set("hreflang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHreflang: Self = this.set("hreflang", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProfile(value: String): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+    @scala.inline
+    def setTemplated(value: Boolean): Self = this.set("templated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplated: Self = this.set("templated", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

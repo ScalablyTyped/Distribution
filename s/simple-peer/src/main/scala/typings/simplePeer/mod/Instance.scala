@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 trait Instance extends Duplex {
   // methods which are not documented
   val bufferSize: Double = js.native
+  def _debug(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   // used for debug logging
-  def _debug(): Unit = js.native
   def _debug(message: js.Any, optionalParams: js.Any*): Unit = js.native
   // https://github.com/feross/simple-peer/tree/v9.6.1#peeraddstreamstream
   def addStream(stream: MediaStream): Unit = js.native

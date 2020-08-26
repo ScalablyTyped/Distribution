@@ -22,6 +22,7 @@ trait UIManager extends js.Object {
   def hasFocus(id: String): Boolean = js.native
   def hasFocus(id: Double): Boolean = js.native
   def removeHotKey(key: String): Unit = js.native
+  def removeHotKey(key: String, handler: js.UndefOr[scala.Nothing], obj: js.Any): Unit = js.native
   def removeHotKey(key: String, handler: WebixCallback): Unit = js.native
   def removeHotKey(key: String, handler: WebixCallback, obj: js.Any): Unit = js.native
   def setFocus(id: String): Unit = js.native

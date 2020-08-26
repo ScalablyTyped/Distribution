@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoogleActionsV2OrdersPaymentMethodTokenizationParameters extends js.Object {
   /**
     * If tokenization_type is set to `PAYMENT_GATEWAY` then the list of
@@ -41,23 +42,39 @@ trait GoogleActionsV2OrdersPaymentMethodTokenizationParameters extends js.Object
     *   \"publicKey\": \"base64encoded...\"
     * }
     */
-  var parameters: js.UndefOr[ApiClientObjectMap[String]] = js.undefined
+  var parameters: js.UndefOr[ApiClientObjectMap[String]] = js.native
   /**
     * Required.
     */
-  var tokenizationType: js.UndefOr[GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType] = js.undefined
+  var tokenizationType: js.UndefOr[GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType] = js.native
 }
 
 object GoogleActionsV2OrdersPaymentMethodTokenizationParameters {
   @scala.inline
-  def apply(
-    parameters: ApiClientObjectMap[String] = null,
-    tokenizationType: GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType = null
-  ): GoogleActionsV2OrdersPaymentMethodTokenizationParameters = {
+  def apply(): GoogleActionsV2OrdersPaymentMethodTokenizationParameters = {
     val __obj = js.Dynamic.literal()
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (tokenizationType != null) __obj.updateDynamic("tokenizationType")(tokenizationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersPaymentMethodTokenizationParameters]
   }
+  @scala.inline
+  implicit class GoogleActionsV2OrdersPaymentMethodTokenizationParametersOps[Self <: GoogleActionsV2OrdersPaymentMethodTokenizationParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParameters(value: ApiClientObjectMap[String]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setTokenizationType(value: GoogleActionsV2OrdersPaymentMethodTokenizationParametersTokenizationType): Self = this.set("tokenizationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenizationType: Self = this.set("tokenizationType", js.undefined)
+  }
+  
 }
 

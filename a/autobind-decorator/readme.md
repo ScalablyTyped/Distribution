@@ -11,8 +11,8 @@ Decorator for binding method to an object
 | Full name          | autobind-decorator |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 321 |
-| # downloads        | 6916881 |
+| # dependents       | 324 |
+| # downloads        | 6924762 |
 | # stars            | 22 |
 
 ## Links

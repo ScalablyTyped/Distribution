@@ -140,44 +140,90 @@ trait SchemaLogEntry extends js.Object {
 
 object SchemaLogEntry {
   @scala.inline
-  def apply(
-    httpRequest: SchemaHttpRequest = null,
-    insertId: String = null,
-    jsonPayload: StringDictionary[js.Any] = null,
-    labels: StringDictionary[String] = null,
-    logName: String = null,
-    metadata: SchemaMonitoredResourceMetadata = null,
-    operation: SchemaLogEntryOperation = null,
-    protoPayload: StringDictionary[js.Any] = null,
-    receiveTimestamp: String = null,
-    resource: SchemaMonitoredResource = null,
-    severity: String = null,
-    sourceLocation: SchemaLogEntrySourceLocation = null,
-    spanId: String = null,
-    textPayload: String = null,
-    timestamp: String = null,
-    trace: String = null,
-    traceSampled: js.UndefOr[Boolean] = js.undefined
-  ): SchemaLogEntry = {
+  def apply(): SchemaLogEntry = {
     val __obj = js.Dynamic.literal()
-    if (httpRequest != null) __obj.updateDynamic("httpRequest")(httpRequest.asInstanceOf[js.Any])
-    if (insertId != null) __obj.updateDynamic("insertId")(insertId.asInstanceOf[js.Any])
-    if (jsonPayload != null) __obj.updateDynamic("jsonPayload")(jsonPayload.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (logName != null) __obj.updateDynamic("logName")(logName.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (protoPayload != null) __obj.updateDynamic("protoPayload")(protoPayload.asInstanceOf[js.Any])
-    if (receiveTimestamp != null) __obj.updateDynamic("receiveTimestamp")(receiveTimestamp.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
-    if (sourceLocation != null) __obj.updateDynamic("sourceLocation")(sourceLocation.asInstanceOf[js.Any])
-    if (spanId != null) __obj.updateDynamic("spanId")(spanId.asInstanceOf[js.Any])
-    if (textPayload != null) __obj.updateDynamic("textPayload")(textPayload.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceSampled)) __obj.updateDynamic("traceSampled")(traceSampled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLogEntry]
   }
+  @scala.inline
+  implicit class SchemaLogEntryOps[Self <: SchemaLogEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpRequest(value: SchemaHttpRequest): Self = this.set("httpRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpRequest: Self = this.set("httpRequest", js.undefined)
+    @scala.inline
+    def setInsertId(value: String): Self = this.set("insertId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertId: Self = this.set("insertId", js.undefined)
+    @scala.inline
+    def setJsonPayload(value: StringDictionary[js.Any]): Self = this.set("jsonPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonPayload: Self = this.set("jsonPayload", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLogName(value: String): Self = this.set("logName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogName: Self = this.set("logName", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaMonitoredResourceMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setOperation(value: SchemaLogEntryOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperation: Self = this.set("operation", js.undefined)
+    @scala.inline
+    def setProtoPayload(value: StringDictionary[js.Any]): Self = this.set("protoPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtoPayload: Self = this.set("protoPayload", js.undefined)
+    @scala.inline
+    def setReceiveTimestamp(value: String): Self = this.set("receiveTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReceiveTimestamp: Self = this.set("receiveTimestamp", js.undefined)
+    @scala.inline
+    def setResource(value: SchemaMonitoredResource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setSeverity(value: String): Self = this.set("severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("severity", js.undefined)
+    @scala.inline
+    def setSourceLocation(value: SchemaLogEntrySourceLocation): Self = this.set("sourceLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLocation: Self = this.set("sourceLocation", js.undefined)
+    @scala.inline
+    def setSpanId(value: String): Self = this.set("spanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpanId: Self = this.set("spanId", js.undefined)
+    @scala.inline
+    def setTextPayload(value: String): Self = this.set("textPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextPayload: Self = this.set("textPayload", js.undefined)
+    @scala.inline
+    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    @scala.inline
+    def setTrace(value: String): Self = this.set("trace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrace: Self = this.set("trace", js.undefined)
+    @scala.inline
+    def setTraceSampled(value: Boolean): Self = this.set("traceSampled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraceSampled: Self = this.set("traceSampled", js.undefined)
+  }
+  
 }
 

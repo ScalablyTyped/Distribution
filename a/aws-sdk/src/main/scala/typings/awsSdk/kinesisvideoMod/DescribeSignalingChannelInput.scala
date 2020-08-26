@@ -18,11 +18,30 @@ trait DescribeSignalingChannelInput extends js.Object {
 
 object DescribeSignalingChannelInput {
   @scala.inline
-  def apply(ChannelARN: ResourceARN = null, ChannelName: ChannelName = null): DescribeSignalingChannelInput = {
+  def apply(): DescribeSignalingChannelInput = {
     val __obj = js.Dynamic.literal()
-    if (ChannelARN != null) __obj.updateDynamic("ChannelARN")(ChannelARN.asInstanceOf[js.Any])
-    if (ChannelName != null) __obj.updateDynamic("ChannelName")(ChannelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSignalingChannelInput]
   }
+  @scala.inline
+  implicit class DescribeSignalingChannelInputOps[Self <: DescribeSignalingChannelInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelARN(value: ResourceARN): Self = this.set("ChannelARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelARN: Self = this.set("ChannelARN", js.undefined)
+    @scala.inline
+    def setChannelName(value: ChannelName): Self = this.set("ChannelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelName: Self = this.set("ChannelName", js.undefined)
+  }
+  
 }
 

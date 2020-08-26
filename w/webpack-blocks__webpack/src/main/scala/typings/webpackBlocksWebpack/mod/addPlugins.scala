@@ -1,6 +1,6 @@
 package typings.webpackBlocksWebpack.mod
 
-import typings.webpack.mod.Plugin
+import typings.std.Plugin
 import typings.webpackBlocksCore.mod.Block
 import typings.webpackBlocksCore.mod.Context
 import scala.scalajs.js

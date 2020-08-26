@@ -66,38 +66,82 @@ trait DomainDeliverabilityCampaign extends js.Object {
 
 object DomainDeliverabilityCampaign {
   @scala.inline
-  def apply(
-    CampaignId: CampaignId = null,
-    DeleteRate: js.UndefOr[Percentage] = js.undefined,
-    Esps: Esps = null,
-    FirstSeenDateTime: Timestamp = null,
-    FromAddress: Identity = null,
-    ImageUrl: ImageUrl = null,
-    InboxCount: js.UndefOr[Volume] = js.undefined,
-    LastSeenDateTime: Timestamp = null,
-    ProjectedVolume: js.UndefOr[Volume] = js.undefined,
-    ReadDeleteRate: js.UndefOr[Percentage] = js.undefined,
-    ReadRate: js.UndefOr[Percentage] = js.undefined,
-    SendingIps: IpList = null,
-    SpamCount: js.UndefOr[Volume] = js.undefined,
-    Subject: Subject = null
-  ): DomainDeliverabilityCampaign = {
+  def apply(): DomainDeliverabilityCampaign = {
     val __obj = js.Dynamic.literal()
-    if (CampaignId != null) __obj.updateDynamic("CampaignId")(CampaignId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteRate)) __obj.updateDynamic("DeleteRate")(DeleteRate.get.asInstanceOf[js.Any])
-    if (Esps != null) __obj.updateDynamic("Esps")(Esps.asInstanceOf[js.Any])
-    if (FirstSeenDateTime != null) __obj.updateDynamic("FirstSeenDateTime")(FirstSeenDateTime.asInstanceOf[js.Any])
-    if (FromAddress != null) __obj.updateDynamic("FromAddress")(FromAddress.asInstanceOf[js.Any])
-    if (ImageUrl != null) __obj.updateDynamic("ImageUrl")(ImageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(InboxCount)) __obj.updateDynamic("InboxCount")(InboxCount.get.asInstanceOf[js.Any])
-    if (LastSeenDateTime != null) __obj.updateDynamic("LastSeenDateTime")(LastSeenDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProjectedVolume)) __obj.updateDynamic("ProjectedVolume")(ProjectedVolume.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReadDeleteRate)) __obj.updateDynamic("ReadDeleteRate")(ReadDeleteRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReadRate)) __obj.updateDynamic("ReadRate")(ReadRate.get.asInstanceOf[js.Any])
-    if (SendingIps != null) __obj.updateDynamic("SendingIps")(SendingIps.asInstanceOf[js.Any])
-    if (!js.isUndefined(SpamCount)) __obj.updateDynamic("SpamCount")(SpamCount.get.asInstanceOf[js.Any])
-    if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainDeliverabilityCampaign]
   }
+  @scala.inline
+  implicit class DomainDeliverabilityCampaignOps[Self <: DomainDeliverabilityCampaign] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCampaignId(value: CampaignId): Self = this.set("CampaignId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignId: Self = this.set("CampaignId", js.undefined)
+    @scala.inline
+    def setDeleteRate(value: Percentage): Self = this.set("DeleteRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteRate: Self = this.set("DeleteRate", js.undefined)
+    @scala.inline
+    def setEspsVarargs(value: Esp*): Self = this.set("Esps", js.Array(value :_*))
+    @scala.inline
+    def setEsps(value: Esps): Self = this.set("Esps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEsps: Self = this.set("Esps", js.undefined)
+    @scala.inline
+    def setFirstSeenDateTime(value: Timestamp): Self = this.set("FirstSeenDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstSeenDateTime: Self = this.set("FirstSeenDateTime", js.undefined)
+    @scala.inline
+    def setFromAddress(value: Identity): Self = this.set("FromAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromAddress: Self = this.set("FromAddress", js.undefined)
+    @scala.inline
+    def setImageUrl(value: ImageUrl): Self = this.set("ImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("ImageUrl", js.undefined)
+    @scala.inline
+    def setInboxCount(value: Volume): Self = this.set("InboxCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInboxCount: Self = this.set("InboxCount", js.undefined)
+    @scala.inline
+    def setLastSeenDateTime(value: Timestamp): Self = this.set("LastSeenDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSeenDateTime: Self = this.set("LastSeenDateTime", js.undefined)
+    @scala.inline
+    def setProjectedVolume(value: Volume): Self = this.set("ProjectedVolume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectedVolume: Self = this.set("ProjectedVolume", js.undefined)
+    @scala.inline
+    def setReadDeleteRate(value: Percentage): Self = this.set("ReadDeleteRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadDeleteRate: Self = this.set("ReadDeleteRate", js.undefined)
+    @scala.inline
+    def setReadRate(value: Percentage): Self = this.set("ReadRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadRate: Self = this.set("ReadRate", js.undefined)
+    @scala.inline
+    def setSendingIpsVarargs(value: Ip*): Self = this.set("SendingIps", js.Array(value :_*))
+    @scala.inline
+    def setSendingIps(value: IpList): Self = this.set("SendingIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendingIps: Self = this.set("SendingIps", js.undefined)
+    @scala.inline
+    def setSpamCount(value: Volume): Self = this.set("SpamCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpamCount: Self = this.set("SpamCount", js.undefined)
+    @scala.inline
+    def setSubject(value: Subject): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("Subject", js.undefined)
+  }
+  
 }
 

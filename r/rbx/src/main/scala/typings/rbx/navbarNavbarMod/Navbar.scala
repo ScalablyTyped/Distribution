@@ -5,7 +5,7 @@ import typings.rbx.anon.NoneTAsComponentextendsElContainer
 import typings.rbx.anon.PickNavbarContainerPropsf
 import typings.rbx.anon.PreferHelpersPropsOverridBackgroundColor
 import typings.rbx.anon.TypeofNavbarContainer
-import typings.rbx.anon.`7`
+import typings.rbx.anon.`6`
 import typings.rbx.exoticMod.ForwardRefAsExoticComponent
 import typings.rbx.exoticMod.FromReactType
 import typings.rbx.navbarBurgerMod.NavbarBurgerProps
@@ -82,7 +82,7 @@ object Navbar extends js.Object {
   var defaultProps: AsElementType with (Partial[PickNavbarContainerPropsf with (Pick[_, String | Double | js.Symbol])]) = js.native
   var displayName: js.UndefOr[String] = js.native
   def apply[TAsComponent /* <: ElementType[_] */](
-    props: `7`[TAsComponent] with PickNavbarContainerPropsf with (Pick[
+    props: `6`[TAsComponent] with PickNavbarContainerPropsf with (Pick[
       ComponentProps[TAsComponent], 
       Exclude[
         /* keyof react.react.ComponentProps<TAsComponent> */ String, 

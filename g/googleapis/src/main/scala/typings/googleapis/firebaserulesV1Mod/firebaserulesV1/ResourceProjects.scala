@@ -42,6 +42,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def test(): GaxiosPromise[SchemaTestRulesetResponse] = js.native
   def test(callback: BodyResponseCallback[SchemaTestRulesetResponse]): Unit = js.native
+  def test(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestRulesetResponse] = js.native
   def test(params: ParamsResourceProjectsTest): GaxiosPromise[SchemaTestRulesetResponse] = js.native
   def test(params: ParamsResourceProjectsTest, callback: BodyResponseCallback[SchemaTestRulesetResponse]): Unit = js.native
   def test(

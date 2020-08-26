@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextEdit extends js.Object {
   /**
     * The string to be inserted. For delete operations use an
     * empty string.
     */
-  var newText: String
+  var newText: String = js.native
   /**
     * The range of the text document to be manipulated. To insert
     * text into a document create a range where start === end.
     */
-  var range: Range
+  var range: Range = js.native
 }
 
 @JSImport("vscode-languageserver-types", "TextEdit")

@@ -14,6 +14,7 @@ class LineBasicMaterial () extends Material {
   var linecap: String = js.native
   var linejoin: String = js.native
   var linewidth: Double = js.native
+  var morphTargets: Boolean = js.native
   def setValues(parameters: LineBasicMaterialParameters): Unit = js.native
 }
 

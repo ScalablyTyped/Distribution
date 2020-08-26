@@ -10,9 +10,9 @@ A React.js wrapper for howler.js (audio player)
 | ------------------ | :-------------: |
 | Full name          | react-howler |
 | Keywords           | react-component, react.js, redux, audio, player, howler, howler.js |
-| # releases         | 9 |
+| # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 52113 |
+| # downloads        | 55262 |
 | # stars            | 2 |
 
 ## Links

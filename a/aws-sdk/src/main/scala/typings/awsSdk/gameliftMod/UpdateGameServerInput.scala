@@ -34,20 +34,42 @@ trait UpdateGameServerInput extends js.Object {
 
 object UpdateGameServerInput {
   @scala.inline
-  def apply(
-    GameServerGroupName: GameServerGroupNameOrArn,
-    GameServerId: GameServerId,
-    CustomSortKey: GameServerSortKey = null,
-    GameServerData: GameServerData = null,
-    HealthCheck: GameServerHealthCheck = null,
-    UtilizationStatus: GameServerUtilizationStatus = null
-  ): UpdateGameServerInput = {
+  def apply(GameServerGroupName: GameServerGroupNameOrArn, GameServerId: GameServerId): UpdateGameServerInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any], GameServerId = GameServerId.asInstanceOf[js.Any])
-    if (CustomSortKey != null) __obj.updateDynamic("CustomSortKey")(CustomSortKey.asInstanceOf[js.Any])
-    if (GameServerData != null) __obj.updateDynamic("GameServerData")(GameServerData.asInstanceOf[js.Any])
-    if (HealthCheck != null) __obj.updateDynamic("HealthCheck")(HealthCheck.asInstanceOf[js.Any])
-    if (UtilizationStatus != null) __obj.updateDynamic("UtilizationStatus")(UtilizationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGameServerInput]
   }
+  @scala.inline
+  implicit class UpdateGameServerInputOps[Self <: UpdateGameServerInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = this.set("GameServerGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGameServerId(value: GameServerId): Self = this.set("GameServerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomSortKey(value: GameServerSortKey): Self = this.set("CustomSortKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSortKey: Self = this.set("CustomSortKey", js.undefined)
+    @scala.inline
+    def setGameServerData(value: GameServerData): Self = this.set("GameServerData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerData: Self = this.set("GameServerData", js.undefined)
+    @scala.inline
+    def setHealthCheck(value: GameServerHealthCheck): Self = this.set("HealthCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheck: Self = this.set("HealthCheck", js.undefined)
+    @scala.inline
+    def setUtilizationStatus(value: GameServerUtilizationStatus): Self = this.set("UtilizationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtilizationStatus: Self = this.set("UtilizationStatus", js.undefined)
+  }
+  
 }
 

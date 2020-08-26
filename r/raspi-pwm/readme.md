@@ -12,7 +12,7 @@ Provides access to PWM on the Raspberry Pi as part of the Raspi.js library suite
 | Keywords           | nodebots, robotics, raspberry pi |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 4193 |
+| # downloads        | 3891 |
 | # stars            | 0 |
 
 ## Links

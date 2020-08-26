@@ -65,6 +65,7 @@ object Utils extends js.Object {
     * Assumes max >= min.
     */
   def clamp(value: Double): Double = js.native
+  def clamp(value: Double, min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
   def clamp(value: Double, min: Double): Double = js.native
   def clamp(value: Double, min: Double, max: Double): Double = js.native
   def getApproxCellHeight(

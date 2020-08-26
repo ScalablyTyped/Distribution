@@ -22,14 +22,32 @@ trait SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse extends js.Object {
 
 object SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse {
   @scala.inline
-  def apply(
-    nextPageToken: String = null,
-    storedInfoTypes: js.Array[SchemaGooglePrivacyDlpV2StoredInfoType] = null
-  ): SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse = {
+  def apply(): SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (storedInfoTypes != null) __obj.updateDynamic("storedInfoTypes")(storedInfoTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponseOps[Self <: SchemaGooglePrivacyDlpV2ListStoredInfoTypesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setStoredInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2StoredInfoType*): Self = this.set("storedInfoTypes", js.Array(value :_*))
+    @scala.inline
+    def setStoredInfoTypes(value: js.Array[SchemaGooglePrivacyDlpV2StoredInfoType]): Self = this.set("storedInfoTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoredInfoTypes: Self = this.set("storedInfoTypes", js.undefined)
+  }
+  
 }
 

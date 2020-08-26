@@ -19,28 +19,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait `32` extends js.Object {
-  var `32`: `1`
-  var `37`: `14`
-  var `38`: `12`
-  var `39`: `15`
+  var `32`: `1` = js.native
+  var `37`: `14` = js.native
+  var `38`: `12` = js.native
+  var `39`: `15` = js.native
    // Directional (discrete) pad
-  var `40`: `13`
+  var `40`: `13` = js.native
    // Face (main) buttons
-  var FACE_0: `1`
-  var FACE_3: `2`
-  var FACE_4: `3`
-  var LEFT_ANALOGUE_STICK: `10`
-  var LEFT_SHOULDER: `4`
-  var LEFT_SHOULDER_BOTTOM: `6`
+  var FACE_0: `1` = js.native
+  var FACE_3: `2` = js.native
+  var FACE_4: `3` = js.native
+  var LEFT_ANALOGUE_STICK: `10` = js.native
+  var LEFT_SHOULDER: `4` = js.native
+  var LEFT_SHOULDER_BOTTOM: `6` = js.native
    // Analogue sticks (if depressible)
-  var RIGHT_ANALOGUE_STICK: `11`
+  var RIGHT_ANALOGUE_STICK: `11` = js.native
    // Top shoulder buttons
-  var RIGHT_SHOULDER: `5`
+  var RIGHT_SHOULDER: `5` = js.native
    // Bottom shoulder buttons
-  var RIGHT_SHOULDER_BOTTOM: `7`
-  var SELECT: `8`
-  var START: `9`
+  var RIGHT_SHOULDER_BOTTOM: `7` = js.native
+  var SELECT: `8` = js.native
+  var START: `9` = js.native
 }
 
 object `32` {
@@ -71,5 +72,50 @@ object `32` {
     __obj.updateDynamic("40")(`40`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`32`]
   }
+  @scala.inline
+  implicit class `32Ops`[Self <: `32`] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set32(value: `1`): Self = this.set("32", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set37(value: `14`): Self = this.set("37", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set38(value: `12`): Self = this.set("38", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set39(value: `15`): Self = this.set("39", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set40(value: `13`): Self = this.set("40", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFACE_0(value: `1`): Self = this.set("FACE_0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFACE_3(value: `2`): Self = this.set("FACE_3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFACE_4(value: `3`): Self = this.set("FACE_4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLEFT_ANALOGUE_STICK(value: `10`): Self = this.set("LEFT_ANALOGUE_STICK", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLEFT_SHOULDER(value: `4`): Self = this.set("LEFT_SHOULDER", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLEFT_SHOULDER_BOTTOM(value: `6`): Self = this.set("LEFT_SHOULDER_BOTTOM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRIGHT_ANALOGUE_STICK(value: `11`): Self = this.set("RIGHT_ANALOGUE_STICK", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRIGHT_SHOULDER(value: `5`): Self = this.set("RIGHT_SHOULDER", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRIGHT_SHOULDER_BOTTOM(value: `7`): Self = this.set("RIGHT_SHOULDER_BOTTOM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSELECT(value: `8`): Self = this.set("SELECT", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSTART(value: `9`): Self = this.set("START", value.asInstanceOf[js.Any])
+  }
+  
 }
 

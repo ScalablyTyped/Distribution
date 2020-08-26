@@ -12,7 +12,7 @@ A cryptographically secure random generator for real English words. Contains 370
 | Keywords           | random, randomly, generate, generated, generator, words, word, english, real, cryptographically secure, csprng, cprng |
 | # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 12769 |
+| # downloads        | 12905 |
 | # stars            | 0 |
 
 ## Links

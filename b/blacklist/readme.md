@@ -12,7 +12,7 @@ Returns a shallow copy of an object without blacklisted properties
 | Keywords           | blacklist, filter, object, utility |
 | # releases         | 0 |
 | # dependents       | 129 |
-| # downloads        | 2550738 |
+| # downloads        | 2599128 |
 | # stars            | 1 |
 
 ## Links

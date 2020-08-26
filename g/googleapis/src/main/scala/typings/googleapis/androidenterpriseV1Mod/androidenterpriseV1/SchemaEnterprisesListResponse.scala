@@ -22,11 +22,32 @@ trait SchemaEnterprisesListResponse extends js.Object {
 
 object SchemaEnterprisesListResponse {
   @scala.inline
-  def apply(enterprise: js.Array[SchemaEnterprise] = null, kind: String = null): SchemaEnterprisesListResponse = {
+  def apply(): SchemaEnterprisesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (enterprise != null) __obj.updateDynamic("enterprise")(enterprise.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnterprisesListResponse]
   }
+  @scala.inline
+  implicit class SchemaEnterprisesListResponseOps[Self <: SchemaEnterprisesListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnterpriseVarargs(value: SchemaEnterprise*): Self = this.set("enterprise", js.Array(value :_*))
+    @scala.inline
+    def setEnterprise(value: js.Array[SchemaEnterprise]): Self = this.set("enterprise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnterprise: Self = this.set("enterprise", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

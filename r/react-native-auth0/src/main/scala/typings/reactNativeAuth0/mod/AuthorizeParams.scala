@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AuthorizeParams extends js.Object {
-  var audience: js.UndefOr[String] = js.undefined
-  var connection: js.UndefOr[String] = js.undefined
-  var language: js.UndefOr[String] = js.undefined
-  var nonce: js.UndefOr[String] = js.undefined
-  var prompt: js.UndefOr[String] = js.undefined
-  var scope: js.UndefOr[String] = js.undefined
-  var state: js.UndefOr[String] = js.undefined
+  var audience: js.UndefOr[String] = js.native
+  var connection: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.native
 }
 
 object AuthorizeParams {
   @scala.inline
-  def apply(
-    audience: String = null,
-    connection: String = null,
-    language: String = null,
-    nonce: String = null,
-    prompt: String = null,
-    scope: String = null,
-    state: String = null
-  ): AuthorizeParams = {
+  def apply(): AuthorizeParams = {
     val __obj = js.Dynamic.literal()
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeParams]
   }
+  @scala.inline
+  implicit class AuthorizeParamsOps[Self <: AuthorizeParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudience(value: String): Self = this.set("audience", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudience: Self = this.set("audience", js.undefined)
+    @scala.inline
+    def setConnection(value: String): Self = this.set("connection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnection: Self = this.set("connection", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonce: Self = this.set("nonce", js.undefined)
+    @scala.inline
+    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrompt: Self = this.set("prompt", js.undefined)
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

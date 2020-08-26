@@ -18,10 +18,28 @@ trait FieldToMatch extends js.Object {
 
 object FieldToMatch {
   @scala.inline
-  def apply(Type: MatchFieldType, Data: MatchFieldData = null): FieldToMatch = {
+  def apply(Type: MatchFieldType): FieldToMatch = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (Data != null) __obj.updateDynamic("Data")(Data.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldToMatch]
   }
+  @scala.inline
+  implicit class FieldToMatchOps[Self <: FieldToMatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: MatchFieldType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setData(value: MatchFieldData): Self = this.set("Data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("Data", js.undefined)
+  }
+  
 }
 

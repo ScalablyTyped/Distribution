@@ -5,44 +5,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Platform extends js.Object {
-  var description: js.UndefOr[String] = js.undefined
-  var layout: js.UndefOr[String] = js.undefined
-  var manufacturer: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var os: js.UndefOr[Architecture] = js.undefined
-  var prerelease: js.UndefOr[String] = js.undefined
-  var product: js.UndefOr[String] = js.undefined
-  var ua: js.UndefOr[String] = js.undefined
-  var version: js.UndefOr[String] = js.undefined
-  def parse(ua: String): Platform
+  var description: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var os: js.UndefOr[Architecture] = js.native
+  var prerelease: js.UndefOr[String] = js.native
+  var product: js.UndefOr[String] = js.native
+  var ua: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.native
+  def parse(ua: String): Platform = js.native
 }
 
 object Platform {
   @scala.inline
-  def apply(
-    parse: String => Platform,
-    description: String = null,
-    layout: String = null,
-    manufacturer: String = null,
-    name: String = null,
-    os: Architecture = null,
-    prerelease: String = null,
-    product: String = null,
-    ua: String = null,
-    version: String = null
-  ): Platform = {
+  def apply(parse: String => Platform): Platform = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
-    if (prerelease != null) __obj.updateDynamic("prerelease")(prerelease.asInstanceOf[js.Any])
-    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (ua != null) __obj.updateDynamic("ua")(ua.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Platform]
   }
+  @scala.inline
+  implicit class PlatformOps[Self <: Platform] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParse(value: String => Platform): Self = this.set("parse", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOs(value: Architecture): Self = this.set("os", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOs: Self = this.set("os", js.undefined)
+    @scala.inline
+    def setPrerelease(value: String): Self = this.set("prerelease", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrerelease: Self = this.set("prerelease", js.undefined)
+    @scala.inline
+    def setProduct(value: String): Self = this.set("product", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduct: Self = this.set("product", js.undefined)
+    @scala.inline
+    def setUa(value: String): Self = this.set("ua", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUa: Self = this.set("ua", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "pgwmodal"
-version := "2.0-dt-20200515Z-738bdc"
-scalaVersion := "2.13.2"
+version := "2.0-dt-20200515Z-bbcec7"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

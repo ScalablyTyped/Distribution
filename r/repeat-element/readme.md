@@ -11,8 +11,8 @@ Create an array by repeating the given value n times.
 | Full name          | repeat-element |
 | Keywords           | array, element, repeat, string |
 | # releases         | 2 |
-| # dependents       | 66 |
-| # downloads        | 415160133 |
+| # dependents       | 67 |
+| # downloads        | 433526412 |
 | # stars            | 0 |
 
 ## Links

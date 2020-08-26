@@ -4,38 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterPostVotingConfigExclusions extends Generic {
-  var node_ids: js.UndefOr[String] = js.undefined
-  var node_names: js.UndefOr[String] = js.undefined
-  var timeout: js.UndefOr[String] = js.undefined
+  var node_ids: js.UndefOr[String] = js.native
+  var node_names: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.native
 }
 
 object ClusterPostVotingConfigExclusions {
   @scala.inline
-  def apply(
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    method: String = null,
-    node_ids: String = null,
-    node_names: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    timeout: String = null
-  ): ClusterPostVotingConfigExclusions = {
+  def apply(): ClusterPostVotingConfigExclusions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (node_ids != null) __obj.updateDynamic("node_ids")(node_ids.asInstanceOf[js.Any])
-    if (node_names != null) __obj.updateDynamic("node_names")(node_names.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterPostVotingConfigExclusions]
   }
+  @scala.inline
+  implicit class ClusterPostVotingConfigExclusionsOps[Self <: ClusterPostVotingConfigExclusions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNode_ids(value: String): Self = this.set("node_ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNode_ids: Self = this.set("node_ids", js.undefined)
+    @scala.inline
+    def setNode_names(value: String): Self = this.set("node_names", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNode_names: Self = this.set("node_names", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

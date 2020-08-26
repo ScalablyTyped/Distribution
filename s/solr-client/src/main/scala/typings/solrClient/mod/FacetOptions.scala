@@ -4,46 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FacetOptions extends js.Object {
-  var field: js.UndefOr[String | js.Array[String]] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
-  var mincout: js.UndefOr[Double] = js.undefined
-  var missing: js.UndefOr[Boolean] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var on: Boolean
-  var pivot: js.UndefOr[String | js.Array[String]] = js.undefined
-  var prefix: String
-  var query: js.UndefOr[String] = js.undefined
-  var sort: js.UndefOr[String] = js.undefined
+  var field: js.UndefOr[String | js.Array[String]] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var method: js.UndefOr[String] = js.native
+  var mincout: js.UndefOr[Double] = js.native
+  var missing: js.UndefOr[Boolean] = js.native
+  var offset: js.UndefOr[Double] = js.native
+  var on: Boolean = js.native
+  var pivot: js.UndefOr[String | js.Array[String]] = js.native
+  var prefix: String = js.native
+  var query: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.native
 }
 
 object FacetOptions {
   @scala.inline
-  def apply(
-    on: Boolean,
-    prefix: String,
-    field: String | js.Array[String] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    mincout: js.UndefOr[Double] = js.undefined,
-    missing: js.UndefOr[Boolean] = js.undefined,
-    offset: js.UndefOr[Double] = js.undefined,
-    pivot: String | js.Array[String] = null,
-    query: String = null,
-    sort: String = null
-  ): FacetOptions = {
+  def apply(on: Boolean, prefix: String): FacetOptions = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(mincout)) __obj.updateDynamic("mincout")(mincout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(missing)) __obj.updateDynamic("missing")(missing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (pivot != null) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacetOptions]
   }
+  @scala.inline
+  implicit class FacetOptionsOps[Self <: FacetOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOn(value: Boolean): Self = this.set("on", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFieldVarargs(value: String*): Self = this.set("field", js.Array(value :_*))
+    @scala.inline
+    def setField(value: String | js.Array[String]): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setMincout(value: Double): Self = this.set("mincout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMincout: Self = this.set("mincout", js.undefined)
+    @scala.inline
+    def setMissing(value: Boolean): Self = this.set("missing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissing: Self = this.set("missing", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPivotVarargs(value: String*): Self = this.set("pivot", js.Array(value :_*))
+    @scala.inline
+    def setPivot(value: String | js.Array[String]): Self = this.set("pivot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePivot: Self = this.set("pivot", js.undefined)
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setSort(value: String): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+  }
+  
 }
 

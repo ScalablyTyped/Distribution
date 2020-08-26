@@ -1,0 +1,23 @@
+package typings.devtoolsProtocol.mod.Protocol.Input
+
+import typings.devtoolsProtocol.devtoolsProtocolStrings.default_
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.default_
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.touch
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.mouse
+*/
+trait GestureSourceType extends js.Object
+
+object GestureSourceType {
+  @scala.inline
+  def default: default_ = "default".asInstanceOf[default_]
+  @scala.inline
+  def mouse: typings.devtoolsProtocol.devtoolsProtocolStrings.mouse = "mouse".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.mouse]
+  @scala.inline
+  def touch: typings.devtoolsProtocol.devtoolsProtocolStrings.touch = "touch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.touch]
+}
+

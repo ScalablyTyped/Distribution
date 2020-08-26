@@ -21,11 +21,30 @@ trait SchemaDeidentifySummary extends js.Object {
 
 object SchemaDeidentifySummary {
   @scala.inline
-  def apply(successResourceCount: String = null, successStoreCount: String = null): SchemaDeidentifySummary = {
+  def apply(): SchemaDeidentifySummary = {
     val __obj = js.Dynamic.literal()
-    if (successResourceCount != null) __obj.updateDynamic("successResourceCount")(successResourceCount.asInstanceOf[js.Any])
-    if (successStoreCount != null) __obj.updateDynamic("successStoreCount")(successStoreCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeidentifySummary]
   }
+  @scala.inline
+  implicit class SchemaDeidentifySummaryOps[Self <: SchemaDeidentifySummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSuccessResourceCount(value: String): Self = this.set("successResourceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessResourceCount: Self = this.set("successResourceCount", js.undefined)
+    @scala.inline
+    def setSuccessStoreCount(value: String): Self = this.set("successStoreCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessStoreCount: Self = this.set("successStoreCount", js.undefined)
+  }
+  
 }
 

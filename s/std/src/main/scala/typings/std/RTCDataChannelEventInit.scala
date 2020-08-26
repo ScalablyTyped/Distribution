@@ -4,23 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RTCDataChannelEventInit extends EventInit {
-  var channel: RTCDataChannel
+  var channel: RTCDataChannel = js.native
 }
 
 object RTCDataChannelEventInit {
   @scala.inline
-  def apply(
-    channel: RTCDataChannel,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined
-  ): RTCDataChannelEventInit = {
+  def apply(channel: RTCDataChannel): RTCDataChannelEventInit = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDataChannelEventInit]
   }
+  @scala.inline
+  implicit class RTCDataChannelEventInitOps[Self <: RTCDataChannelEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannel(value: RTCDataChannel): Self = this.set("channel", value.asInstanceOf[js.Any])
+  }
+  
 }
 

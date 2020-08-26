@@ -5,10 +5,8 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import typings.reactNative.anon.DictoptionName
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.Error
-import typings.std.PropertyKey
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,40 +20,18 @@ object global extends js.Object {
     * Initialize this controller.
     */
   class AbortController ()
-    extends typings.reactNative.AbortController {
-    /**
-      * Returns the `AbortSignal` object associated with this object.
-      */
-    /* CompleteClass */
-    override val signal: typings.reactNative.AbortSignal = js.native
-    /**
-      * Abort and signal to any observers that the associated activity is to be aborted.
-      */
-    /* CompleteClass */
-    override def abort(): Unit = js.native
-  }
+    extends typings.reactNative.AbortController
   
   @js.native
   /**
     * AbortSignal cannot be constructed directly.
     */
   class AbortSignal ()
-    extends typings.reactNative.AbortSignal {
-    /**
-      * Returns `true` if this `AbortSignal`'s `AbortController` has signaled to abort, and `false` otherwise.
-      */
-    /* CompleteClass */
-    override val aborted: Boolean = js.native
-    /* CompleteClass */
-    override def onabort(event: AbortEvent): Unit = js.native
-  }
+    extends typings.reactNative.AbortSignal
   
   @js.native
   class FormData ()
-    extends typings.reactNative.FormData {
-    /* CompleteClass */
-    override def append(name: String, value: js.Any): Unit = js.native
-  }
+    extends typings.reactNative.FormData
   
   @js.native
   class Headers ()
@@ -65,14 +41,7 @@ object global extends js.Object {
   
   @js.native
   class MessageQueue ()
-    extends typings.reactNative.MessageQueue {
-    /* CompleteClass */
-    override def getCallableModule(name: String): js.Object = js.native
-    /* CompleteClass */
-    override def registerCallableModule(name: String, module: js.Object): Unit = js.native
-    /* CompleteClass */
-    override def registerLazyCallableModule(name: String, factory: js.Function0[js.Object]): Unit = js.native
-  }
+    extends typings.reactNative.MessageQueue
   
   @js.native
   class Request protected ()
@@ -81,97 +50,29 @@ object global extends js.Object {
     def this(input: typings.reactNative.Request) = this()
     def this(input: String, init: RequestInit) = this()
     def this(input: typings.reactNative.Request, init: RequestInit) = this()
-    /* CompleteClass */
-    override val bodyUsed: Boolean = js.native
-    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
-    /* CompleteClass */
-    override var constructor: js.Function = js.native
-    /* CompleteClass */
-    override val credentials: RequestCredentials = js.native
-    /* CompleteClass */
-    override val headers: typings.reactNative.Headers = js.native
-    /* CompleteClass */
-    override val method: String = js.native
-    /* CompleteClass */
-    override val mode: RequestMode = js.native
-    /* CompleteClass */
-    override val referrer: String = js.native
-    /* CompleteClass */
-    override val url: String = js.native
-    /* CompleteClass */
-    override def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
-    /* CompleteClass */
-    override def blob(): js.Promise[Blob] = js.native
-    /* CompleteClass */
-    override def formData(): js.Promise[typings.reactNative.FormData] = js.native
-    /**
-      * Determines whether an object has a property with the specified name.
-      * @param v A property name.
-      */
-    /* CompleteClass */
-    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
-    /* CompleteClass */
-    override def json(): js.Promise[_] = js.native
-    /**
-      * Determines whether a specified property is enumerable.
-      * @param v A property name.
-      */
-    /* CompleteClass */
-    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
-    /* CompleteClass */
-    override def text(): js.Promise[String] = js.native
   }
   
   @js.native
   class Response ()
     extends typings.reactNative.Response {
     def this(body: BodyInit) = this()
-    def this(body: BodyInit, init: ResponseInit) = this()
-    /* CompleteClass */
-    override val bodyUsed: Boolean = js.native
-    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
-    /* CompleteClass */
-    override var constructor: js.Function = js.native
-    /* CompleteClass */
-    override val headers: typings.reactNative.Headers = js.native
-    /* CompleteClass */
-    override val ok: Boolean = js.native
-    /* CompleteClass */
-    override val redirected: Boolean = js.native
-    /* CompleteClass */
-    override val status: Double = js.native
-    /* CompleteClass */
-    override val statusText: String = js.native
-    /* CompleteClass */
-    override val `type`: ResponseType = js.native
-    /* CompleteClass */
-    override val url: String = js.native
-    /* CompleteClass */
-    override def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
-    /* CompleteClass */
-    override def blob(): js.Promise[Blob] = js.native
-    /* CompleteClass */
-    override def formData(): js.Promise[typings.reactNative.FormData] = js.native
-    /**
-      * Determines whether an object has a property with the specified name.
-      * @param v A property name.
-      */
-    /* CompleteClass */
-    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
-    /* CompleteClass */
-    override def json(): js.Promise[_] = js.native
-    /**
-      * Determines whether a specified property is enumerable.
-      * @param v A property name.
-      */
-    /* CompleteClass */
-    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
-    /* CompleteClass */
-    override def text(): js.Promise[String] = js.native
+    def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
   }
   
   /**
-    * Based on definitions of lib.dom and  lib.dom.iteralbe
+    * Based on definition from lib.dom but using class syntax.
+    * The properties are mutable to support users that use a `URL` polyfill, but the implementation
+    * built into React Native (as of 0.63) does not implement all the properties.
+    */
+  @js.native
+  class URL protected ()
+    extends typings.reactNative.URL {
+    def this(url: String) = this()
+    def this(url: String, base: String) = this()
+  }
+  
+  /**
+    * Based on definitions of lib.dom and lib.dom.iterable
     */
   @js.native
   class URLSearchParams ()
@@ -188,6 +89,7 @@ object global extends js.Object {
     def this(uri: String) = this()
     def this(uri: String, protocols: String) = this()
     def this(uri: String, protocols: js.Array[String]) = this()
+    def this(uri: String, protocols: js.UndefOr[scala.Nothing], options: DictoptionName) = this()
     def this(uri: String, protocols: String, options: DictoptionName) = this()
     def this(uri: String, protocols: js.Array[String], options: DictoptionName) = this()
     def this(uri: String, protocols: Null, options: DictoptionName) = this()
@@ -210,10 +112,10 @@ object global extends js.Object {
   def fetchBundle(bundleId: Double, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
   def requestAnimationFrame(callback: js.Function1[/* time */ Double, Unit]): Double = js.native
   def setImmediate(handler: js.Function1[/* repeated */ js.Any, Unit]): Double = js.native
-  def setInterval(handler: js.Any): Double = js.native
+  def setInterval(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
   def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
   def setInterval(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = js.native
-  def setTimeout(handler: js.Any): Double = js.native
+  def setTimeout(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
   def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
   def setTimeout(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = js.native
   @js.native
@@ -244,10 +146,21 @@ object global extends js.Object {
   object Response
     extends Instantiable0[typings.reactNative.Response]
        with Instantiable1[/* body */ BodyInit, typings.reactNative.Response]
-       with Instantiable2[/* body */ BodyInit, /* init */ ResponseInit, typings.reactNative.Response] {
+       with Instantiable2[
+          js.UndefOr[/* body */ BodyInit], 
+          /* init */ ResponseInit, 
+          typings.reactNative.Response
+        ] {
     def error(): typings.reactNative.Response = js.native
     def redirect(url: String): typings.reactNative.Response = js.native
     def redirect(url: String, status: Double): typings.reactNative.Response = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object URL extends js.Object {
+    def createObjectURL(blob: Blob): typings.reactNative.URL = js.native
+    def revokeObjectURL(url: String): Unit = js.native
   }
   
   @js.native
@@ -260,7 +173,9 @@ object global extends js.Object {
         ]
        with Instantiable3[
           /* uri */ String, 
-          (/* protocols */ js.Array[String]) | (/* protocols */ Null) | (/* protocols */ String), 
+          js.UndefOr[
+            (/* protocols */ js.Array[String]) | (/* protocols */ Null) | (/* protocols */ String)
+          ], 
           /* options */ DictoptionName, 
           typings.reactNative.WebSocket
         ] {

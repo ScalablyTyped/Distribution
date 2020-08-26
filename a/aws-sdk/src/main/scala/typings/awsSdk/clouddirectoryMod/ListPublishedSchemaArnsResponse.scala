@@ -18,11 +18,32 @@ trait ListPublishedSchemaArnsResponse extends js.Object {
 
 object ListPublishedSchemaArnsResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, SchemaArns: Arns = null): ListPublishedSchemaArnsResponse = {
+  def apply(): ListPublishedSchemaArnsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SchemaArns != null) __obj.updateDynamic("SchemaArns")(SchemaArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPublishedSchemaArnsResponse]
   }
+  @scala.inline
+  implicit class ListPublishedSchemaArnsResponseOps[Self <: ListPublishedSchemaArnsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSchemaArnsVarargs(value: Arn*): Self = this.set("SchemaArns", js.Array(value :_*))
+    @scala.inline
+    def setSchemaArns(value: Arns): Self = this.set("SchemaArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaArns: Self = this.set("SchemaArns", js.undefined)
+  }
+  
 }
 

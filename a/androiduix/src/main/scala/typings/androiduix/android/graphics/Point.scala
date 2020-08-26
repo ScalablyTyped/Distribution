@@ -4,11 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.graphics.Point")
 @js.native
-class Point () extends js.Object {
-  def this(src: Point) = this()
-  def this(x: Double, y: Double) = this()
+trait Point extends js.Object {
   var x: Double = js.native
   var y: Double = js.native
   def equals(o: js.Any): Boolean = js.native

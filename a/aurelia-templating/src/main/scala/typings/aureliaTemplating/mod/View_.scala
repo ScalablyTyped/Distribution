@@ -74,6 +74,7 @@ class View_ protected () extends js.Object {
     * @param overrideContext A secondary binding context that can override the standard context.
     */
   def bind(bindingContext: js.Object): Unit = js.native
+  def bind(bindingContext: js.Object, overrideContext: js.UndefOr[scala.Nothing], _systemUpdate: Boolean): Unit = js.native
   def bind(bindingContext: js.Object, overrideContext: js.Object): Unit = js.native
   def bind(bindingContext: js.Object, overrideContext: js.Object, _systemUpdate: Boolean): Unit = js.native
   /**

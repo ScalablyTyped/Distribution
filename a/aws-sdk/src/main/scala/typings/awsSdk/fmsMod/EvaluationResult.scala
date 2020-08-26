@@ -22,16 +22,34 @@ trait EvaluationResult extends js.Object {
 
 object EvaluationResult {
   @scala.inline
-  def apply(
-    ComplianceStatus: PolicyComplianceStatusType = null,
-    EvaluationLimitExceeded: js.UndefOr[Boolean] = js.undefined,
-    ViolatorCount: js.UndefOr[ResourceCount] = js.undefined
-  ): EvaluationResult = {
+  def apply(): EvaluationResult = {
     val __obj = js.Dynamic.literal()
-    if (ComplianceStatus != null) __obj.updateDynamic("ComplianceStatus")(ComplianceStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(EvaluationLimitExceeded)) __obj.updateDynamic("EvaluationLimitExceeded")(EvaluationLimitExceeded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ViolatorCount)) __obj.updateDynamic("ViolatorCount")(ViolatorCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationResult]
   }
+  @scala.inline
+  implicit class EvaluationResultOps[Self <: EvaluationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplianceStatus(value: PolicyComplianceStatusType): Self = this.set("ComplianceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceStatus: Self = this.set("ComplianceStatus", js.undefined)
+    @scala.inline
+    def setEvaluationLimitExceeded(value: Boolean): Self = this.set("EvaluationLimitExceeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationLimitExceeded: Self = this.set("EvaluationLimitExceeded", js.undefined)
+    @scala.inline
+    def setViolatorCount(value: ResourceCount): Self = this.set("ViolatorCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViolatorCount: Self = this.set("ViolatorCount", js.undefined)
+  }
+  
 }
 

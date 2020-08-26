@@ -11,8 +11,8 @@ A library to create a trace of your node app per Google's Trace Event format.
 | Full name          | chrome-trace-event |
 | Keywords           | trace-event, trace, event, trace-viewer, google |
 | # releases         | 9 |
-| # dependents       | 22 |
-| # downloads        | 218001529 |
+| # dependents       | 24 |
+| # downloads        | 228097576 |
 | # stars            | 0 |
 
 ## Links

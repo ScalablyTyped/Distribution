@@ -18,7 +18,7 @@ class Bidirectional protected () extends Wrapper {
   var backwardLayer: js.Any = js.native
   var forwardLayer: js.Any = js.native
   var mergeMode: BidirectionalMergeMode = js.native
-  var numConstants: js.UndefOr[js.Any] = js.native
+  var numConstants: js.Any = js.native
   var returnSequences: js.Any = js.native
   var returnState: js.Any = js.native
   def resetStates(states: js.Array[Tensor[Rank]]): Unit = js.native

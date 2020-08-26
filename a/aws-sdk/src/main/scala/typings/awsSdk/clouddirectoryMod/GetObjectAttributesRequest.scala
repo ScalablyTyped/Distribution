@@ -34,12 +34,37 @@ object GetObjectAttributesRequest {
     AttributeNames: AttributeNameList,
     DirectoryArn: Arn,
     ObjectReference: ObjectReference,
-    SchemaFacet: SchemaFacet,
-    ConsistencyLevel: ConsistencyLevel = null
+    SchemaFacet: SchemaFacet
   ): GetObjectAttributesRequest = {
     val __obj = js.Dynamic.literal(AttributeNames = AttributeNames.asInstanceOf[js.Any], DirectoryArn = DirectoryArn.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any], SchemaFacet = SchemaFacet.asInstanceOf[js.Any])
-    if (ConsistencyLevel != null) __obj.updateDynamic("ConsistencyLevel")(ConsistencyLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectAttributesRequest]
   }
+  @scala.inline
+  implicit class GetObjectAttributesRequestOps[Self <: GetObjectAttributesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeNamesVarargs(value: AttributeName*): Self = this.set("AttributeNames", js.Array(value :_*))
+    @scala.inline
+    def setAttributeNames(value: AttributeNameList): Self = this.set("AttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDirectoryArn(value: Arn): Self = this.set("DirectoryArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectReference(value: ObjectReference): Self = this.set("ObjectReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchemaFacet(value: SchemaFacet): Self = this.set("SchemaFacet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConsistencyLevel(value: ConsistencyLevel): Self = this.set("ConsistencyLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsistencyLevel: Self = this.set("ConsistencyLevel", js.undefined)
+  }
+  
 }
 

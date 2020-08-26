@@ -15,7 +15,7 @@ trait Openload extends js.Object {
   // TypeScript Version: 3.6
   def config: OpenloadConfig = js.native
   // TypeScript Version: 3.6
-  def config(`object`: OpenloadConfig): js.Any = js.native
+  def config_=(`object`: OpenloadConfig): Unit = js.native
   def deleteFile(file: String): js.Promise[js.Array[Boolean]] = js.native
   def deleteFile(file: js.Array[String]): js.Promise[js.Array[Boolean]] = js.native
   def getAccountInfo(): js.Promise[AccountInfo] = js.native

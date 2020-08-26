@@ -35,6 +35,16 @@ object exec extends js.Object {
   ): ChildProcess = js.native
   def apply(
     command: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ ExecException | Null, 
+      /* stdout */ String | Buffer, 
+      /* stderr */ String | Buffer, 
+      Unit
+    ]
+  ): ChildProcess = js.native
+  def apply(
+    command: String,
     options: Null,
     callback: js.Function3[
       /* error */ ExecException | Null, 

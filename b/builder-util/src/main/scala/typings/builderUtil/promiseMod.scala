@@ -12,10 +12,6 @@ object promiseMod extends js.Object {
   class NestedError protected () extends Error {
     def this(errors: js.Array[Error]) = this()
     def this(errors: js.Array[Error], message: String) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   def executeFinally[T](promise: js.Promise[T], task: js.Function1[/* isErrorOccurred */ Boolean, js.Promise[_]]): js.Promise[T] = js.native

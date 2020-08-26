@@ -4,30 +4,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HotspotOptions extends js.Object {
-  var maxZoom: js.UndefOr[Double] = js.undefined
-  var minZoom: js.UndefOr[Double] = js.undefined
-  var offsets: js.UndefOr[js.Array[Double]] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var userData: js.UndefOr[js.Any] = js.undefined
+  var maxZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.native
+  var offsets: js.UndefOr[js.Array[Double]] = js.native
+  var text: js.UndefOr[String] = js.native
+  var userData: js.UndefOr[js.Any] = js.native
 }
 
 object HotspotOptions {
   @scala.inline
-  def apply(
-    maxZoom: js.UndefOr[Double] = js.undefined,
-    minZoom: js.UndefOr[Double] = js.undefined,
-    offsets: js.Array[Double] = null,
-    text: String = null,
-    userData: js.Any = null
-  ): HotspotOptions = {
+  def apply(): HotspotOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
-    if (offsets != null) __obj.updateDynamic("offsets")(offsets.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotspotOptions]
   }
+  @scala.inline
+  implicit class HotspotOptionsOps[Self <: HotspotOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    @scala.inline
+    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    @scala.inline
+    def setOffsetsVarargs(value: Double*): Self = this.set("offsets", js.Array(value :_*))
+    @scala.inline
+    def setOffsets(value: js.Array[Double]): Self = this.set("offsets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsets: Self = this.set("offsets", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setUserData(value: js.Any): Self = this.set("userData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("userData", js.undefined)
+  }
+  
 }
 

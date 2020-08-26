@@ -34,21 +34,48 @@ trait ReceiptRule extends js.Object {
 
 object ReceiptRule {
   @scala.inline
-  def apply(
-    Name: ReceiptRuleName,
-    Actions: ReceiptActionsList = null,
-    Enabled: js.UndefOr[Enabled] = js.undefined,
-    Recipients: RecipientsList = null,
-    ScanEnabled: js.UndefOr[Enabled] = js.undefined,
-    TlsPolicy: TlsPolicy = null
-  ): ReceiptRule = {
+  def apply(Name: ReceiptRuleName): ReceiptRule = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (Actions != null) __obj.updateDynamic("Actions")(Actions.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (Recipients != null) __obj.updateDynamic("Recipients")(Recipients.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScanEnabled)) __obj.updateDynamic("ScanEnabled")(ScanEnabled.get.asInstanceOf[js.Any])
-    if (TlsPolicy != null) __obj.updateDynamic("TlsPolicy")(TlsPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiptRule]
   }
+  @scala.inline
+  implicit class ReceiptRuleOps[Self <: ReceiptRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: ReceiptRuleName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActionsVarargs(value: ReceiptAction*): Self = this.set("Actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: ReceiptActionsList): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("Actions", js.undefined)
+    @scala.inline
+    def setEnabled(value: Enabled): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setRecipientsVarargs(value: Recipient*): Self = this.set("Recipients", js.Array(value :_*))
+    @scala.inline
+    def setRecipients(value: RecipientsList): Self = this.set("Recipients", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipients: Self = this.set("Recipients", js.undefined)
+    @scala.inline
+    def setScanEnabled(value: Enabled): Self = this.set("ScanEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanEnabled: Self = this.set("ScanEnabled", js.undefined)
+    @scala.inline
+    def setTlsPolicy(value: TlsPolicy): Self = this.set("TlsPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTlsPolicy: Self = this.set("TlsPolicy", js.undefined)
+  }
+  
 }
 

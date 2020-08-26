@@ -9,21 +9,14 @@ import scala.scalajs.js.annotation._
 /**
   * Class for arc path.
   */
+@js.native
 trait Arc extends IPathArc
 
 object Arc {
   @scala.inline
-  def apply(
-    endAngle: Double,
-    origin: IPoint,
-    radius: Double,
-    startAngle: Double,
-    `type`: String,
-    layer: String = null
-  ): Arc = {
+  def apply(endAngle: Double, origin: IPoint, radius: Double, startAngle: Double, `type`: String): Arc = {
     val __obj = js.Dynamic.literal(endAngle = endAngle.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arc]
   }
 }

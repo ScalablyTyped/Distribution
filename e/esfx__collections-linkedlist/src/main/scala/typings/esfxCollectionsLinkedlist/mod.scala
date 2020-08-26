@@ -16,6 +16,8 @@ object mod extends js.Object {
     def this(equaler: Equaler[T]) = this()
     def this(equaler: EqualityComparison[T]) = this()
     def this(iterable: Iterable[T]) = this()
+    def this(iterable: js.UndefOr[scala.Nothing], equaler: Equaler[T]) = this()
+    def this(iterable: js.UndefOr[scala.Nothing], equaler: EqualityComparison[T]) = this()
     def this(iterable: Iterable[T], equaler: Equaler[T]) = this()
     def this(iterable: Iterable[T], equaler: EqualityComparison[T]) = this()
   }

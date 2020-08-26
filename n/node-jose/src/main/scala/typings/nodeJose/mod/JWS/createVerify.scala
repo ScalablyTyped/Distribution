@@ -14,6 +14,7 @@ object createVerify extends js.Object {
     * Using a keystore.
     */
   def apply(): Verifier = js.native
+  def apply(input: js.UndefOr[scala.Nothing], opts: Algorithms): Verifier = js.native
   def apply(input: String): Verifier = js.native
   def apply(input: String, opts: Algorithms): Verifier = js.native
   def apply(input: js.Object): Verifier = js.native

@@ -35,21 +35,7 @@ object global extends js.Object {
     
     @js.native
     class Error protected ()
-      extends typings.activexDao.DAO.Error {
-      /* CompleteClass */
-      @JSName("DAO.Error_typekey")
-      override var DAODotError_typekey: typings.activexDao.DAO.Error = js.native
-      /* CompleteClass */
-      override val Description: String = js.native
-      /* CompleteClass */
-      override val HelpContext: Double = js.native
-      /* CompleteClass */
-      override val HelpFile: String = js.native
-      /* CompleteClass */
-      override val Number: Double = js.native
-      /* CompleteClass */
-      override val Source: String = js.native
-    }
+      extends typings.activexDao.DAO.Error
     
     @js.native
     class Field protected ()

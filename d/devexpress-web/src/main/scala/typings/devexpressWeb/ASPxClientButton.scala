@@ -7,67 +7,68 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the ASPxButton control.
   */
+@js.native
 trait ASPxClientButton extends ASPxClientControl {
   /**
     * Occurs on the client side when the button's checked state is changed.
     */
-  var CheckedChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientButton]]
+  var CheckedChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientButton]] = js.native
   /**
     * Occurs on the client side after a button is clicked.
     */
-  var Click: ASPxClientEvent[ASPxClientButtonClickEventHandler[ASPxClientButton]]
+  var Click: ASPxClientEvent[ASPxClientButtonClickEventHandler[ASPxClientButton]] = js.native
   /**
     * Fires on the client side when the button receives input focus.
     */
-  var GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]]
+  var GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]] = js.native
   /**
     * Fires on the client side when the button loses input focus.
     */
-  var LostFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]]
+  var LostFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]] = js.native
   /**
     * Simulates a mouse click action on the button control.
     */
-  def DoClick(): Unit
+  def DoClick(): Unit = js.native
   /**
     * Sets input focus to the button.
     */
-  def Focus(): Unit
+  def Focus(): Unit = js.native
   /**
     * Returns a value indicating whether the button is checked.
     */
-  def GetChecked(): Boolean
+  def GetChecked(): Boolean = js.native
   /**
     * Returns a value indicating whether the button is enabled.
     */
-  def GetEnabled(): Boolean
+  def GetEnabled(): Boolean = js.native
   /**
     * Returns the URL pointing to the image displayed within the button.
     */
-  def GetImageUrl(): String
+  def GetImageUrl(): String = js.native
   /**
     * Returns the text displayed within the button.
     */
-  def GetText(): String
+  def GetText(): String = js.native
   /**
     * Sets a value that specifies the button's checked status.
     * @param value true if the button is checked; otherwise, false.
     */
-  def SetChecked(value: Boolean): Unit
+  def SetChecked(value: Boolean): Unit = js.native
   /**
     * Sets a value specifying whether the button is enabled.
     * @param value true to enable the button; false to disable it.
     */
-  def SetEnabled(value: Boolean): Unit
+  def SetEnabled(value: Boolean): Unit = js.native
   /**
     * Sets the URL pointing to the image displayed within the button.
     * @param value A string value that is the URL to the image displayed within the button.
     */
-  def SetImageUrl(value: String): Unit
+  def SetImageUrl(value: String): Unit = js.native
   /**
     * Sets the text to be displayed within the button.
     * @param value A string value specifying the text to be displayed within the button.
     */
-  def SetText(value: String): Unit
+  def SetText(value: String): Unit = js.native
 }
 
 object ASPxClientButton {
@@ -106,5 +107,46 @@ object ASPxClientButton {
     val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), CheckedChanged = CheckedChanged.asInstanceOf[js.Any], Click = Click.asInstanceOf[js.Any], DoClick = js.Any.fromFunction0(DoClick), Focus = js.Any.fromFunction0(Focus), GetChecked = js.Any.fromFunction0(GetChecked), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetEnabled = js.Any.fromFunction0(GetEnabled), GetHeight = js.Any.fromFunction0(GetHeight), GetImageUrl = js.Any.fromFunction0(GetImageUrl), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetText = js.Any.fromFunction0(GetText), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), GotFocus = GotFocus.asInstanceOf[js.Any], InCallback = js.Any.fromFunction0(InCallback), Init = Init.asInstanceOf[js.Any], LostFocus = LostFocus.asInstanceOf[js.Any], SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetChecked = js.Any.fromFunction1(SetChecked), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetEnabled = js.Any.fromFunction1(SetEnabled), SetHeight = js.Any.fromFunction1(SetHeight), SetImageUrl = js.Any.fromFunction1(SetImageUrl), SetText = js.Any.fromFunction1(SetText), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientButton]
   }
+  @scala.inline
+  implicit class ASPxClientButtonOps[Self <: ASPxClientButton] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckedChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientButton]]): Self = this.set("CheckedChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClick(value: ASPxClientEvent[ASPxClientButtonClickEventHandler[ASPxClientButton]]): Self = this.set("Click", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDoClick(value: () => Unit): Self = this.set("DoClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFocus(value: () => Unit): Self = this.set("Focus", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetChecked(value: () => Boolean): Self = this.set("GetChecked", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetEnabled(value: () => Boolean): Self = this.set("GetEnabled", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetImageUrl(value: () => String): Self = this.set("GetImageUrl", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetText(value: () => String): Self = this.set("GetText", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGotFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]]): Self = this.set("GotFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLostFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]]): Self = this.set("LostFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSetChecked(value: Boolean => Unit): Self = this.set("SetChecked", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetEnabled(value: Boolean => Unit): Self = this.set("SetEnabled", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetImageUrl(value: String => Unit): Self = this.set("SetImageUrl", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetText(value: String => Unit): Self = this.set("SetText", js.Any.fromFunction1(value))
+  }
+  
 }
 

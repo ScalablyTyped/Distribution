@@ -12,7 +12,7 @@ Reduce multiple reducers into a single reducer
 | Keywords           | reduce, reducers, redux |
 | # releases         | 13 |
 | # dependents       | 82 |
-| # downloads        | 13917898 |
+| # downloads        | 14161439 |
 | # stars            | 1 |
 
 ## Links

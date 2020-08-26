@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class Overlay ()
   extends AbstractPureComponent2[IOverlayProps, IOverlayState, js.Object] {
   def this(props: IOverlayProps) = this()
+  def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
   def this(props: IOverlayProps, context: js.Any) = this()
   var containerElement: HTMLElement = js.native
   var handleBackdropMouseDown: js.Any = js.native

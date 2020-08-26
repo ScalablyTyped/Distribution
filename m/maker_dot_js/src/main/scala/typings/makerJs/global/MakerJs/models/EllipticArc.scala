@@ -1,6 +1,5 @@
 package typings.makerJs.global.MakerJs.models
 
-import typings.makerJs.MakerJs.IModelMap
 import typings.makerJs.MakerJs.IPathArc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,8 +29,5 @@ class EllipticArc protected ()
     */
   def this(startAngle: Double, endAngle: Double, radiusX: Double, radiusY: Double) = this()
   def this(startAngle: Double, endAngle: Double, radiusX: Double, radiusY: Double, accuracy: Double) = this()
-  /* CompleteClass */
-  @JSName("models")
-  override var models_EllipticArc: IModelMap = js.native
 }
 

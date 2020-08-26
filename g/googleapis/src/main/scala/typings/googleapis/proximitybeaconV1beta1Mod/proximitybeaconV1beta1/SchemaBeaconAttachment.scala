@@ -52,20 +52,42 @@ trait SchemaBeaconAttachment extends js.Object {
 
 object SchemaBeaconAttachment {
   @scala.inline
-  def apply(
-    attachmentName: String = null,
-    creationTimeMs: String = null,
-    data: String = null,
-    maxDistanceMeters: js.UndefOr[Double] = js.undefined,
-    namespacedType: String = null
-  ): SchemaBeaconAttachment = {
+  def apply(): SchemaBeaconAttachment = {
     val __obj = js.Dynamic.literal()
-    if (attachmentName != null) __obj.updateDynamic("attachmentName")(attachmentName.asInstanceOf[js.Any])
-    if (creationTimeMs != null) __obj.updateDynamic("creationTimeMs")(creationTimeMs.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDistanceMeters)) __obj.updateDynamic("maxDistanceMeters")(maxDistanceMeters.get.asInstanceOf[js.Any])
-    if (namespacedType != null) __obj.updateDynamic("namespacedType")(namespacedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBeaconAttachment]
   }
+  @scala.inline
+  implicit class SchemaBeaconAttachmentOps[Self <: SchemaBeaconAttachment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentName(value: String): Self = this.set("attachmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentName: Self = this.set("attachmentName", js.undefined)
+    @scala.inline
+    def setCreationTimeMs(value: String): Self = this.set("creationTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimeMs: Self = this.set("creationTimeMs", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setMaxDistanceMeters(value: Double): Self = this.set("maxDistanceMeters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDistanceMeters: Self = this.set("maxDistanceMeters", js.undefined)
+    @scala.inline
+    def setNamespacedType(value: String): Self = this.set("namespacedType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespacedType: Self = this.set("namespacedType", js.undefined)
+  }
+  
 }
 

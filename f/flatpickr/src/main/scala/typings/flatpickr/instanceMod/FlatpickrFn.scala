@@ -27,6 +27,7 @@ trait FlatpickrFn extends js.Object {
   def formatDate(date: Date, format: String): String = js.native
   def localize(l10n: CustomLocale): Unit = js.native
   def parseDate(date: DateOption): js.UndefOr[Date] = js.native
+  def parseDate(date: DateOption, format: js.UndefOr[scala.Nothing], timeless: Boolean): js.UndefOr[Date] = js.native
   def parseDate(date: DateOption, format: String): js.UndefOr[Date] = js.native
   def parseDate(date: DateOption, format: String, timeless: Boolean): js.UndefOr[Date] = js.native
   def setDefaults(config: Options): Unit = js.native

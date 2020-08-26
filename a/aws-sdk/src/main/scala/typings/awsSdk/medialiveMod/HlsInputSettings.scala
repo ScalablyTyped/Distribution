@@ -26,18 +26,38 @@ trait HlsInputSettings extends js.Object {
 
 object HlsInputSettings {
   @scala.inline
-  def apply(
-    Bandwidth: js.UndefOr[integerMin0] = js.undefined,
-    BufferSegments: js.UndefOr[integerMin0] = js.undefined,
-    Retries: js.UndefOr[integerMin0] = js.undefined,
-    RetryInterval: js.UndefOr[integerMin0] = js.undefined
-  ): HlsInputSettings = {
+  def apply(): HlsInputSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Bandwidth)) __obj.updateDynamic("Bandwidth")(Bandwidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BufferSegments)) __obj.updateDynamic("BufferSegments")(BufferSegments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Retries)) __obj.updateDynamic("Retries")(Retries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetryInterval)) __obj.updateDynamic("RetryInterval")(RetryInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsInputSettings]
   }
+  @scala.inline
+  implicit class HlsInputSettingsOps[Self <: HlsInputSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBandwidth(value: integerMin0): Self = this.set("Bandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBandwidth: Self = this.set("Bandwidth", js.undefined)
+    @scala.inline
+    def setBufferSegments(value: integerMin0): Self = this.set("BufferSegments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferSegments: Self = this.set("BufferSegments", js.undefined)
+    @scala.inline
+    def setRetries(value: integerMin0): Self = this.set("Retries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetries: Self = this.set("Retries", js.undefined)
+    @scala.inline
+    def setRetryInterval(value: integerMin0): Self = this.set("RetryInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryInterval: Self = this.set("RetryInterval", js.undefined)
+  }
+  
 }
 

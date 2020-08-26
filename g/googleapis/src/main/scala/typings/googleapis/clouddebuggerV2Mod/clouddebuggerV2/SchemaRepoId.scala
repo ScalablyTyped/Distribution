@@ -21,11 +21,30 @@ trait SchemaRepoId extends js.Object {
 
 object SchemaRepoId {
   @scala.inline
-  def apply(projectRepoId: SchemaProjectRepoId = null, uid: String = null): SchemaRepoId = {
+  def apply(): SchemaRepoId = {
     val __obj = js.Dynamic.literal()
-    if (projectRepoId != null) __obj.updateDynamic("projectRepoId")(projectRepoId.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRepoId]
   }
+  @scala.inline
+  implicit class SchemaRepoIdOps[Self <: SchemaRepoId] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProjectRepoId(value: SchemaProjectRepoId): Self = this.set("projectRepoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectRepoId: Self = this.set("projectRepoId", js.undefined)
+    @scala.inline
+    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUid: Self = this.set("uid", js.undefined)
+  }
+  
 }
 

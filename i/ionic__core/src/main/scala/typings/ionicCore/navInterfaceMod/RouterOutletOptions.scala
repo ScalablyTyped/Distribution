@@ -7,48 +7,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouterOutletOptions extends js.Object {
-  var animated: js.UndefOr[Boolean] = js.undefined
-  var animationBuilder: js.UndefOr[AnimationBuilder] = js.undefined
-  var deepWait: js.UndefOr[Boolean] = js.undefined
-  var direction: js.UndefOr[NavDirection] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var easing: js.UndefOr[String] = js.undefined
-  var keyboardClose: js.UndefOr[Boolean] = js.undefined
-  var mode: js.UndefOr[Mode] = js.undefined
-  var progressAnimation: js.UndefOr[Boolean] = js.undefined
-  var showGoBack: js.UndefOr[Boolean] = js.undefined
-  var skipIfBusy: js.UndefOr[Boolean] = js.undefined
+  var animated: js.UndefOr[Boolean] = js.native
+  var animationBuilder: js.UndefOr[AnimationBuilder] = js.native
+  var deepWait: js.UndefOr[Boolean] = js.native
+  var direction: js.UndefOr[NavDirection] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var easing: js.UndefOr[String] = js.native
+  var keyboardClose: js.UndefOr[Boolean] = js.native
+  var mode: js.UndefOr[Mode] = js.native
+  var progressAnimation: js.UndefOr[Boolean] = js.native
+  var showGoBack: js.UndefOr[Boolean] = js.native
+  var skipIfBusy: js.UndefOr[Boolean] = js.native
 }
 
 object RouterOutletOptions {
   @scala.inline
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    animationBuilder: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
-    deepWait: js.UndefOr[Boolean] = js.undefined,
-    direction: NavDirection = null,
-    duration: js.UndefOr[Double] = js.undefined,
-    easing: String = null,
-    keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    mode: Mode = null,
-    progressAnimation: js.UndefOr[Boolean] = js.undefined,
-    showGoBack: js.UndefOr[Boolean] = js.undefined,
-    skipIfBusy: js.UndefOr[Boolean] = js.undefined
-  ): RouterOutletOptions = {
+  def apply(): RouterOutletOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (animationBuilder != null) __obj.updateDynamic("animationBuilder")(js.Any.fromFunction2(animationBuilder))
-    if (!js.isUndefined(deepWait)) __obj.updateDynamic("deepWait")(deepWait.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.get.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressAnimation)) __obj.updateDynamic("progressAnimation")(progressAnimation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGoBack)) __obj.updateDynamic("showGoBack")(showGoBack.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipIfBusy)) __obj.updateDynamic("skipIfBusy")(skipIfBusy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterOutletOptions]
   }
+  @scala.inline
+  implicit class RouterOutletOptionsOps[Self <: RouterOutletOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setAnimationBuilder(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("animationBuilder", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAnimationBuilder: Self = this.set("animationBuilder", js.undefined)
+    @scala.inline
+    def setDeepWait(value: Boolean): Self = this.set("deepWait", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeepWait: Self = this.set("deepWait", js.undefined)
+    @scala.inline
+    def setDirection(value: NavDirection): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setKeyboardClose(value: Boolean): Self = this.set("keyboardClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardClose: Self = this.set("keyboardClose", js.undefined)
+    @scala.inline
+    def setMode(value: Mode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setProgressAnimation(value: Boolean): Self = this.set("progressAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressAnimation: Self = this.set("progressAnimation", js.undefined)
+    @scala.inline
+    def setShowGoBack(value: Boolean): Self = this.set("showGoBack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowGoBack: Self = this.set("showGoBack", js.undefined)
+    @scala.inline
+    def setSkipIfBusy(value: Boolean): Self = this.set("skipIfBusy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipIfBusy: Self = this.set("skipIfBusy", js.undefined)
+  }
+  
 }
 

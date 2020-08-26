@@ -26,18 +26,38 @@ trait CodeContentDescription extends js.Object {
 
 object CodeContentDescription {
   @scala.inline
-  def apply(
-    CodeMD5: CodeMD5 = null,
-    CodeSize: js.UndefOr[CodeSize] = js.undefined,
-    S3ApplicationCodeLocationDescription: S3ApplicationCodeLocationDescription = null,
-    TextContent: TextContent = null
-  ): CodeContentDescription = {
+  def apply(): CodeContentDescription = {
     val __obj = js.Dynamic.literal()
-    if (CodeMD5 != null) __obj.updateDynamic("CodeMD5")(CodeMD5.asInstanceOf[js.Any])
-    if (!js.isUndefined(CodeSize)) __obj.updateDynamic("CodeSize")(CodeSize.get.asInstanceOf[js.Any])
-    if (S3ApplicationCodeLocationDescription != null) __obj.updateDynamic("S3ApplicationCodeLocationDescription")(S3ApplicationCodeLocationDescription.asInstanceOf[js.Any])
-    if (TextContent != null) __obj.updateDynamic("TextContent")(TextContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeContentDescription]
   }
+  @scala.inline
+  implicit class CodeContentDescriptionOps[Self <: CodeContentDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodeMD5(value: CodeMD5): Self = this.set("CodeMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeMD5: Self = this.set("CodeMD5", js.undefined)
+    @scala.inline
+    def setCodeSize(value: CodeSize): Self = this.set("CodeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeSize: Self = this.set("CodeSize", js.undefined)
+    @scala.inline
+    def setS3ApplicationCodeLocationDescription(value: S3ApplicationCodeLocationDescription): Self = this.set("S3ApplicationCodeLocationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3ApplicationCodeLocationDescription: Self = this.set("S3ApplicationCodeLocationDescription", js.undefined)
+    @scala.inline
+    def setTextContent(value: TextContent): Self = this.set("TextContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextContent: Self = this.set("TextContent", js.undefined)
+  }
+  
 }
 

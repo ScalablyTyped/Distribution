@@ -24,6 +24,7 @@ trait Call extends js.Object {
     *    @param extraHeaders Optional custom parameters (SIP headers) that should be sent after accepting incoming call. Parameter names must start with "X-" to be processed by application
     */
   def answer(): Unit = js.native
+  def answer(customData: js.UndefOr[scala.Nothing], extraHeaders: js.Object): Unit = js.native
   def answer(customData: String): Unit = js.native
   def answer(customData: String, extraHeaders: js.Object): Unit = js.native
   /**
@@ -118,6 +119,11 @@ trait Call extends js.Object {
     */
   def setRemoteVideoSize(width: Double, height: Double): Unit = js.native
   def setVideoSettings(settings: FlashVideoSettings): Unit = js.native
+  def setVideoSettings(
+    settings: FlashVideoSettings,
+    successCallback: js.UndefOr[scala.Nothing],
+    failedCallback: js.Function0[_]
+  ): Unit = js.native
   def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[_]): Unit = js.native
   def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
   /**
@@ -128,6 +134,11 @@ trait Call extends js.Object {
     *    @param failedCallback Called in WebRTC mode if video settings couldn't be applied
     */
   def setVideoSettings(settings: VideoSettings): Unit = js.native
+  def setVideoSettings(
+    settings: VideoSettings,
+    successCallback: js.UndefOr[scala.Nothing],
+    failedCallback: js.Function0[_]
+  ): Unit = js.native
   def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[_]): Unit = js.native
   def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[_], failedCallback: js.Function0[_]): Unit = js.native
   /**

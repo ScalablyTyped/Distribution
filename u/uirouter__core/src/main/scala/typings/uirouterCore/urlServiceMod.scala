@@ -18,16 +18,16 @@ object urlServiceMod extends js.Object {
   class UrlService protected ()
     extends LocationServices
        with UrlSyncApi {
-    /** @hidden */
-    def this(/** @hidden */ router: UIRouter) = this()
-    /** @hidden */ var _stopListeningFn: js.Any = js.native
+    /** @internal */
+    def this(/** @internal */ router: UIRouter) = this()
+    /** @internal */ var _stopListeningFn: js.Any = js.native
     /**
       * The nested [[UrlConfig]] API to configure the URL and retrieve URL information
       *
       * See: [[UrlConfig]] for details
       */
     var config: UrlConfig = js.native
-    /** @hidden */ var interceptDeferred: Boolean = js.native
+    /** @internal */ var interceptDeferred: Boolean = js.native
     var router: js.Any = js.native
     /**
       * The nested [[UrlRules]] API for managing URL rules and rewrites

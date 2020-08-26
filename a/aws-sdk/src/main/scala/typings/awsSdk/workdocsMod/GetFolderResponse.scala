@@ -18,11 +18,30 @@ trait GetFolderResponse extends js.Object {
 
 object GetFolderResponse {
   @scala.inline
-  def apply(CustomMetadata: CustomMetadataMap = null, Metadata: FolderMetadata = null): GetFolderResponse = {
+  def apply(): GetFolderResponse = {
     val __obj = js.Dynamic.literal()
-    if (CustomMetadata != null) __obj.updateDynamic("CustomMetadata")(CustomMetadata.asInstanceOf[js.Any])
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFolderResponse]
   }
+  @scala.inline
+  implicit class GetFolderResponseOps[Self <: GetFolderResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomMetadata(value: CustomMetadataMap): Self = this.set("CustomMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMetadata: Self = this.set("CustomMetadata", js.undefined)
+    @scala.inline
+    def setMetadata(value: FolderMetadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+  }
+  
 }
 

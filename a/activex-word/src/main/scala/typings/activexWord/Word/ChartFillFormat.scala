@@ -39,8 +39,58 @@ trait ChartFillFormat extends js.Object {
   def Solid(): Unit = js.native
   def TwoColorGradient(Style: MsoGradientStyle, Variant: Double): Unit = js.native
   def UserPicture(): Unit = js.native
+  def UserPicture(
+    PictureFile: js.UndefOr[scala.Nothing],
+    PictureFormat: js.UndefOr[scala.Nothing],
+    PictureStackUnit: js.UndefOr[scala.Nothing],
+    PicturePlacement: js.Any
+  ): Unit = js.native
+  def UserPicture(
+    PictureFile: js.UndefOr[scala.Nothing],
+    PictureFormat: js.UndefOr[scala.Nothing],
+    PictureStackUnit: js.Any
+  ): Unit = js.native
+  def UserPicture(
+    PictureFile: js.UndefOr[scala.Nothing],
+    PictureFormat: js.UndefOr[scala.Nothing],
+    PictureStackUnit: js.Any,
+    PicturePlacement: js.Any
+  ): Unit = js.native
+  def UserPicture(PictureFile: js.UndefOr[scala.Nothing], PictureFormat: js.Any): Unit = js.native
+  def UserPicture(
+    PictureFile: js.UndefOr[scala.Nothing],
+    PictureFormat: js.Any,
+    PictureStackUnit: js.UndefOr[scala.Nothing],
+    PicturePlacement: js.Any
+  ): Unit = js.native
+  def UserPicture(PictureFile: js.UndefOr[scala.Nothing], PictureFormat: js.Any, PictureStackUnit: js.Any): Unit = js.native
+  def UserPicture(
+    PictureFile: js.UndefOr[scala.Nothing],
+    PictureFormat: js.Any,
+    PictureStackUnit: js.Any,
+    PicturePlacement: js.Any
+  ): Unit = js.native
   def UserPicture(PictureFile: js.Any): Unit = js.native
+  def UserPicture(
+    PictureFile: js.Any,
+    PictureFormat: js.UndefOr[scala.Nothing],
+    PictureStackUnit: js.UndefOr[scala.Nothing],
+    PicturePlacement: js.Any
+  ): Unit = js.native
+  def UserPicture(PictureFile: js.Any, PictureFormat: js.UndefOr[scala.Nothing], PictureStackUnit: js.Any): Unit = js.native
+  def UserPicture(
+    PictureFile: js.Any,
+    PictureFormat: js.UndefOr[scala.Nothing],
+    PictureStackUnit: js.Any,
+    PicturePlacement: js.Any
+  ): Unit = js.native
   def UserPicture(PictureFile: js.Any, PictureFormat: js.Any): Unit = js.native
+  def UserPicture(
+    PictureFile: js.Any,
+    PictureFormat: js.Any,
+    PictureStackUnit: js.UndefOr[scala.Nothing],
+    PicturePlacement: js.Any
+  ): Unit = js.native
   def UserPicture(PictureFile: js.Any, PictureFormat: js.Any, PictureStackUnit: js.Any): Unit = js.native
   def UserPicture(PictureFile: js.Any, PictureFormat: js.Any, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit = js.native
   def UserTextured(TextureFile: String): Unit = js.native

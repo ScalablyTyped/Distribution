@@ -1,15 +1,13 @@
 package typings.grommet.baseMod
 
-import typings.grommet.anon.Active
 import typings.grommet.anon.Analog
 import typings.grommet.anon.Animation
+import typings.grommet.anon.AnimationDisabled
 import typings.grommet.anon.Baseline
 import typings.grommet.anon.Body
 import typings.grommet.anon.Captions
 import typings.grommet.anon.Check
-import typings.grommet.anon.ColorColors
 import typings.grommet.anon.ColorExtend
-import typings.grommet.anon.Container
 import typings.grommet.anon.Content
 import typings.grommet.anon.Continent
 import typings.grommet.anon.Control
@@ -17,149 +15,237 @@ import typings.grommet.anon.Default
 import typings.grommet.anon.DisabledExtend
 import typings.grommet.anon.Edge
 import typings.grommet.anon.Extend
-import typings.grommet.anon.ExtendExtendType
-import typings.grommet.anon.ExtendFont
-import typings.grommet.anon.ExtendFontWeight
+import typings.grommet.anon.FontWeight
 import typings.grommet.anon.Gap
 import typings.grommet.anon.GroupEnd
-import typings.grommet.anon.Header
-import typings.grommet.anon.Heading
+import typings.grommet.anon.HeadingIcons
+import typings.grommet.anon.Hover
+import typings.grommet.anon.Icon
 import typings.grommet.anon.Icons
 import typings.grommet.anon.Item
 import typings.grommet.anon.Line
-import typings.grommet.anon.Margin
 import typings.grommet.anon.MaxHeight
+import typings.grommet.anon.Overlay
 import typings.grommet.anon.Panel
 import typings.grommet.anon.ResponsiveBreakpoint
-import typings.grommet.anon.SizeDictxLarge
-import typings.grommet.anon.Small
-import typings.grommet.anon.Text
+import typings.grommet.anon.SizeText
 import typings.grommet.anon.Thumb
-import typings.grommet.anon.Xxlarge
+import typings.grommet.anon.Xlarge
+import typings.grommet.anon.Xsmall
+import typings.grommet.anon.`10`
+import typings.grommet.anon.`18`
+import typings.grommet.anon.`21`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThemeType extends js.Object {
-  var accordion: js.UndefOr[Panel] = js.undefined
-  var anchor: js.UndefOr[ExtendFontWeight] = js.undefined
-  var avatar: js.UndefOr[Text] = js.undefined
-  var box: js.UndefOr[ResponsiveBreakpoint] = js.undefined
-  var button: js.UndefOr[Default] = js.undefined
-  var calendar: js.UndefOr[Heading] = js.undefined
-  var carousel: js.UndefOr[Animation] = js.undefined
-  var chart: js.UndefOr[ColorExtend] = js.undefined
-  var checkBox: js.UndefOr[Check] = js.undefined
-  var clock: js.UndefOr[Analog] = js.undefined
-  var collapsible: js.UndefOr[Baseline] = js.undefined
-  var dataTable: js.UndefOr[GroupEnd] = js.undefined
-  var diagram: js.UndefOr[Line] = js.undefined
-  var drop: js.UndefOr[MaxHeight] = js.undefined
-  var formField: js.UndefOr[Content] = js.undefined
-  var global: js.UndefOr[Active] = js.undefined
-  var grommet: js.UndefOr[ExtendExtendType] = js.undefined
-  var heading: js.UndefOr[ExtendFont] = js.undefined
-  var icon: js.UndefOr[SizeDictxLarge] = js.undefined
-  var layer: js.UndefOr[Container] = js.undefined
-  var list: js.UndefOr[Item] = js.undefined
-  var maskedInput: js.UndefOr[Extend] = js.undefined
-  var menu: js.UndefOr[Icons] = js.undefined
-  var meter: js.UndefOr[ColorColors] = js.undefined
-  var paragraph: js.UndefOr[Xxlarge] = js.undefined
-  var radioButton: js.UndefOr[Gap] = js.undefined
-  var rangeInput: js.UndefOr[Thumb] = js.undefined
-  var rangeSelector: js.UndefOr[Edge] = js.undefined
-  var select: js.UndefOr[Control] = js.undefined
-  var tab: js.UndefOr[Margin] = js.undefined
-  var table: js.UndefOr[Body] = js.undefined
-  var tabs: js.UndefOr[Header] = js.undefined
-  var text: js.UndefOr[Small] = js.undefined
-  var textArea: js.UndefOr[DisabledExtend] = js.undefined
-  var textInput: js.UndefOr[DisabledExtend] = js.undefined
-  var video: js.UndefOr[Captions] = js.undefined
-  var worldMap: js.UndefOr[Continent] = js.undefined
+  var accordion: js.UndefOr[Panel] = js.native
+  var anchor: js.UndefOr[FontWeight] = js.native
+  var avatar: js.UndefOr[SizeText] = js.native
+  var box: js.UndefOr[ResponsiveBreakpoint] = js.native
+  var button: js.UndefOr[Default] = js.native
+  var calendar: js.UndefOr[HeadingIcons] = js.native
+  var carousel: js.UndefOr[AnimationDisabled] = js.native
+  var chart: js.UndefOr[ColorExtend] = js.native
+  var checkBox: js.UndefOr[Icon] = js.native
+  var clock: js.UndefOr[Analog] = js.native
+  var collapsible: js.UndefOr[Baseline] = js.native
+  var dataTable: js.UndefOr[GroupEnd] = js.native
+  var diagram: js.UndefOr[Line] = js.native
+  var drop: js.UndefOr[MaxHeight] = js.native
+  var formField: js.UndefOr[Content] = js.native
+  var global: js.UndefOr[Animation] = js.native
+  var grommet: js.UndefOr[`10`] = js.native
+  var heading: js.UndefOr[Extend] = js.native
+  var icon: js.UndefOr[`21`] = js.native
+  var layer: js.UndefOr[Overlay] = js.native
+  var list: js.UndefOr[Item] = js.native
+  var maskedInput: js.UndefOr[`18`] = js.native
+  var menu: js.UndefOr[Icons] = js.native
+  var meter: js.UndefOr[typings.grommet.anon.Colors] = js.native
+  var paragraph: js.UndefOr[Xlarge] = js.native
+  var radioButton: js.UndefOr[Check] = js.native
+  var rangeInput: js.UndefOr[Thumb] = js.native
+  var rangeSelector: js.UndefOr[Edge] = js.native
+  var select: js.UndefOr[Control] = js.native
+  var tab: js.UndefOr[Hover] = js.native
+  var table: js.UndefOr[Body] = js.native
+  var tabs: js.UndefOr[Gap] = js.native
+  var text: js.UndefOr[Xsmall] = js.native
+  var textArea: js.UndefOr[DisabledExtend] = js.native
+  var textInput: js.UndefOr[DisabledExtend] = js.native
+  var video: js.UndefOr[Captions] = js.native
+  var worldMap: js.UndefOr[Continent] = js.native
 }
 
 object ThemeType {
   @scala.inline
-  def apply(
-    accordion: Panel = null,
-    anchor: ExtendFontWeight = null,
-    avatar: Text = null,
-    box: ResponsiveBreakpoint = null,
-    button: Default = null,
-    calendar: Heading = null,
-    carousel: Animation = null,
-    chart: ColorExtend = null,
-    checkBox: Check = null,
-    clock: Analog = null,
-    collapsible: Baseline = null,
-    dataTable: GroupEnd = null,
-    diagram: Line = null,
-    drop: MaxHeight = null,
-    formField: Content = null,
-    global: Active = null,
-    grommet: ExtendExtendType = null,
-    heading: ExtendFont = null,
-    icon: SizeDictxLarge = null,
-    layer: Container = null,
-    list: Item = null,
-    maskedInput: Extend = null,
-    menu: Icons = null,
-    meter: ColorColors = null,
-    paragraph: Xxlarge = null,
-    radioButton: Gap = null,
-    rangeInput: Thumb = null,
-    rangeSelector: Edge = null,
-    select: Control = null,
-    tab: Margin = null,
-    table: Body = null,
-    tabs: Header = null,
-    text: Small = null,
-    textArea: DisabledExtend = null,
-    textInput: DisabledExtend = null,
-    video: Captions = null,
-    worldMap: Continent = null
-  ): ThemeType = {
+  def apply(): ThemeType = {
     val __obj = js.Dynamic.literal()
-    if (accordion != null) __obj.updateDynamic("accordion")(accordion.asInstanceOf[js.Any])
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (box != null) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])
-    if (carousel != null) __obj.updateDynamic("carousel")(carousel.asInstanceOf[js.Any])
-    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
-    if (checkBox != null) __obj.updateDynamic("checkBox")(checkBox.asInstanceOf[js.Any])
-    if (clock != null) __obj.updateDynamic("clock")(clock.asInstanceOf[js.Any])
-    if (collapsible != null) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
-    if (dataTable != null) __obj.updateDynamic("dataTable")(dataTable.asInstanceOf[js.Any])
-    if (diagram != null) __obj.updateDynamic("diagram")(diagram.asInstanceOf[js.Any])
-    if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
-    if (formField != null) __obj.updateDynamic("formField")(formField.asInstanceOf[js.Any])
-    if (global != null) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
-    if (grommet != null) __obj.updateDynamic("grommet")(grommet.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (maskedInput != null) __obj.updateDynamic("maskedInput")(maskedInput.asInstanceOf[js.Any])
-    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    if (meter != null) __obj.updateDynamic("meter")(meter.asInstanceOf[js.Any])
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
-    if (radioButton != null) __obj.updateDynamic("radioButton")(radioButton.asInstanceOf[js.Any])
-    if (rangeInput != null) __obj.updateDynamic("rangeInput")(rangeInput.asInstanceOf[js.Any])
-    if (rangeSelector != null) __obj.updateDynamic("rangeSelector")(rangeSelector.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (tabs != null) __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textArea != null) __obj.updateDynamic("textArea")(textArea.asInstanceOf[js.Any])
-    if (textInput != null) __obj.updateDynamic("textInput")(textInput.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
-    if (worldMap != null) __obj.updateDynamic("worldMap")(worldMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeType]
   }
+  @scala.inline
+  implicit class ThemeTypeOps[Self <: ThemeType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccordion(value: Panel): Self = this.set("accordion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccordion: Self = this.set("accordion", js.undefined)
+    @scala.inline
+    def setAnchor(value: FontWeight): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    @scala.inline
+    def setAvatar(value: SizeText): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvatar: Self = this.set("avatar", js.undefined)
+    @scala.inline
+    def setBox(value: ResponsiveBreakpoint): Self = this.set("box", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBox: Self = this.set("box", js.undefined)
+    @scala.inline
+    def setButton(value: Default): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("button", js.undefined)
+    @scala.inline
+    def setCalendar(value: HeadingIcons): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendar: Self = this.set("calendar", js.undefined)
+    @scala.inline
+    def setCarousel(value: AnimationDisabled): Self = this.set("carousel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCarousel: Self = this.set("carousel", js.undefined)
+    @scala.inline
+    def setChart(value: ColorExtend): Self = this.set("chart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChart: Self = this.set("chart", js.undefined)
+    @scala.inline
+    def setCheckBox(value: Icon): Self = this.set("checkBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckBox: Self = this.set("checkBox", js.undefined)
+    @scala.inline
+    def setClock(value: Analog): Self = this.set("clock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClock: Self = this.set("clock", js.undefined)
+    @scala.inline
+    def setCollapsible(value: Baseline): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    @scala.inline
+    def setDataTable(value: GroupEnd): Self = this.set("dataTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTable: Self = this.set("dataTable", js.undefined)
+    @scala.inline
+    def setDiagram(value: Line): Self = this.set("diagram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiagram: Self = this.set("diagram", js.undefined)
+    @scala.inline
+    def setDrop(value: MaxHeight): Self = this.set("drop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrop: Self = this.set("drop", js.undefined)
+    @scala.inline
+    def setFormField(value: Content): Self = this.set("formField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormField: Self = this.set("formField", js.undefined)
+    @scala.inline
+    def setGlobal(value: Animation): Self = this.set("global", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobal: Self = this.set("global", js.undefined)
+    @scala.inline
+    def setGrommet(value: `10`): Self = this.set("grommet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrommet: Self = this.set("grommet", js.undefined)
+    @scala.inline
+    def setHeading(value: Extend): Self = this.set("heading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeading: Self = this.set("heading", js.undefined)
+    @scala.inline
+    def setIcon(value: `21`): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setLayer(value: Overlay): Self = this.set("layer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayer: Self = this.set("layer", js.undefined)
+    @scala.inline
+    def setList(value: Item): Self = this.set("list", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteList: Self = this.set("list", js.undefined)
+    @scala.inline
+    def setMaskedInput(value: `18`): Self = this.set("maskedInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskedInput: Self = this.set("maskedInput", js.undefined)
+    @scala.inline
+    def setMenu(value: Icons): Self = this.set("menu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenu: Self = this.set("menu", js.undefined)
+    @scala.inline
+    def setMeter(value: typings.grommet.anon.Colors): Self = this.set("meter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeter: Self = this.set("meter", js.undefined)
+    @scala.inline
+    def setParagraph(value: Xlarge): Self = this.set("paragraph", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParagraph: Self = this.set("paragraph", js.undefined)
+    @scala.inline
+    def setRadioButton(value: Check): Self = this.set("radioButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadioButton: Self = this.set("radioButton", js.undefined)
+    @scala.inline
+    def setRangeInput(value: Thumb): Self = this.set("rangeInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeInput: Self = this.set("rangeInput", js.undefined)
+    @scala.inline
+    def setRangeSelector(value: Edge): Self = this.set("rangeSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeSelector: Self = this.set("rangeSelector", js.undefined)
+    @scala.inline
+    def setSelect(value: Control): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setTab(value: Hover): Self = this.set("tab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTab: Self = this.set("tab", js.undefined)
+    @scala.inline
+    def setTable(value: Body): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setTabs(value: Gap): Self = this.set("tabs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabs: Self = this.set("tabs", js.undefined)
+    @scala.inline
+    def setText(value: Xsmall): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextArea(value: DisabledExtend): Self = this.set("textArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextArea: Self = this.set("textArea", js.undefined)
+    @scala.inline
+    def setTextInput(value: DisabledExtend): Self = this.set("textInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextInput: Self = this.set("textInput", js.undefined)
+    @scala.inline
+    def setVideo(value: Captions): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+    @scala.inline
+    def setWorldMap(value: Continent): Self = this.set("worldMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorldMap: Self = this.set("worldMap", js.undefined)
+  }
+  
 }
 

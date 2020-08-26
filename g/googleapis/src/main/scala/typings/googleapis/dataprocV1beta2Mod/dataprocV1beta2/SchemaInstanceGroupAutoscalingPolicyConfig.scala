@@ -29,16 +29,34 @@ trait SchemaInstanceGroupAutoscalingPolicyConfig extends js.Object {
 
 object SchemaInstanceGroupAutoscalingPolicyConfig {
   @scala.inline
-  def apply(
-    maxInstances: js.UndefOr[Double] = js.undefined,
-    minInstances: js.UndefOr[Double] = js.undefined,
-    weight: js.UndefOr[Double] = js.undefined
-  ): SchemaInstanceGroupAutoscalingPolicyConfig = {
+  def apply(): SchemaInstanceGroupAutoscalingPolicyConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxInstances)) __obj.updateDynamic("maxInstances")(maxInstances.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minInstances)) __obj.updateDynamic("minInstances")(minInstances.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupAutoscalingPolicyConfig]
   }
+  @scala.inline
+  implicit class SchemaInstanceGroupAutoscalingPolicyConfigOps[Self <: SchemaInstanceGroupAutoscalingPolicyConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxInstances(value: Double): Self = this.set("maxInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxInstances: Self = this.set("maxInstances", js.undefined)
+    @scala.inline
+    def setMinInstances(value: Double): Self = this.set("minInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinInstances: Self = this.set("minInstances", js.undefined)
+    @scala.inline
+    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("weight", js.undefined)
+  }
+  
 }
 

@@ -174,92 +174,192 @@ trait Instance extends js.Object {
 
 object Instance {
   @scala.inline
-  def apply(
-    AgentVersion: String = null,
-    AmiId: String = null,
-    Architecture: Architecture = null,
-    Arn: String = null,
-    AutoScalingType: AutoScalingType = null,
-    AvailabilityZone: String = null,
-    BlockDeviceMappings: BlockDeviceMappings = null,
-    CreatedAt: DateTime = null,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
-    Ec2InstanceId: String = null,
-    EcsClusterArn: String = null,
-    EcsContainerInstanceArn: String = null,
-    ElasticIp: String = null,
-    Hostname: String = null,
-    InfrastructureClass: String = null,
-    InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined,
-    InstanceId: String = null,
-    InstanceProfileArn: String = null,
-    InstanceType: String = null,
-    LastServiceErrorId: String = null,
-    LayerIds: Strings = null,
-    Os: String = null,
-    Platform: String = null,
-    PrivateDns: String = null,
-    PrivateIp: String = null,
-    PublicDns: String = null,
-    PublicIp: String = null,
-    RegisteredBy: String = null,
-    ReportedAgentVersion: String = null,
-    ReportedOs: ReportedOs = null,
-    RootDeviceType: RootDeviceType = null,
-    RootDeviceVolumeId: String = null,
-    SecurityGroupIds: Strings = null,
-    SshHostDsaKeyFingerprint: String = null,
-    SshHostRsaKeyFingerprint: String = null,
-    SshKeyName: String = null,
-    StackId: String = null,
-    Status: String = null,
-    SubnetId: String = null,
-    Tenancy: String = null,
-    VirtualizationType: VirtualizationType = null
-  ): Instance = {
+  def apply(): Instance = {
     val __obj = js.Dynamic.literal()
-    if (AgentVersion != null) __obj.updateDynamic("AgentVersion")(AgentVersion.asInstanceOf[js.Any])
-    if (AmiId != null) __obj.updateDynamic("AmiId")(AmiId.asInstanceOf[js.Any])
-    if (Architecture != null) __obj.updateDynamic("Architecture")(Architecture.asInstanceOf[js.Any])
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (AutoScalingType != null) __obj.updateDynamic("AutoScalingType")(AutoScalingType.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
-    if (Ec2InstanceId != null) __obj.updateDynamic("Ec2InstanceId")(Ec2InstanceId.asInstanceOf[js.Any])
-    if (EcsClusterArn != null) __obj.updateDynamic("EcsClusterArn")(EcsClusterArn.asInstanceOf[js.Any])
-    if (EcsContainerInstanceArn != null) __obj.updateDynamic("EcsContainerInstanceArn")(EcsContainerInstanceArn.asInstanceOf[js.Any])
-    if (ElasticIp != null) __obj.updateDynamic("ElasticIp")(ElasticIp.asInstanceOf[js.Any])
-    if (Hostname != null) __obj.updateDynamic("Hostname")(Hostname.asInstanceOf[js.Any])
-    if (InfrastructureClass != null) __obj.updateDynamic("InfrastructureClass")(InfrastructureClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstallUpdatesOnBoot)) __obj.updateDynamic("InstallUpdatesOnBoot")(InstallUpdatesOnBoot.get.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (InstanceProfileArn != null) __obj.updateDynamic("InstanceProfileArn")(InstanceProfileArn.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (LastServiceErrorId != null) __obj.updateDynamic("LastServiceErrorId")(LastServiceErrorId.asInstanceOf[js.Any])
-    if (LayerIds != null) __obj.updateDynamic("LayerIds")(LayerIds.asInstanceOf[js.Any])
-    if (Os != null) __obj.updateDynamic("Os")(Os.asInstanceOf[js.Any])
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
-    if (PrivateDns != null) __obj.updateDynamic("PrivateDns")(PrivateDns.asInstanceOf[js.Any])
-    if (PrivateIp != null) __obj.updateDynamic("PrivateIp")(PrivateIp.asInstanceOf[js.Any])
-    if (PublicDns != null) __obj.updateDynamic("PublicDns")(PublicDns.asInstanceOf[js.Any])
-    if (PublicIp != null) __obj.updateDynamic("PublicIp")(PublicIp.asInstanceOf[js.Any])
-    if (RegisteredBy != null) __obj.updateDynamic("RegisteredBy")(RegisteredBy.asInstanceOf[js.Any])
-    if (ReportedAgentVersion != null) __obj.updateDynamic("ReportedAgentVersion")(ReportedAgentVersion.asInstanceOf[js.Any])
-    if (ReportedOs != null) __obj.updateDynamic("ReportedOs")(ReportedOs.asInstanceOf[js.Any])
-    if (RootDeviceType != null) __obj.updateDynamic("RootDeviceType")(RootDeviceType.asInstanceOf[js.Any])
-    if (RootDeviceVolumeId != null) __obj.updateDynamic("RootDeviceVolumeId")(RootDeviceVolumeId.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (SshHostDsaKeyFingerprint != null) __obj.updateDynamic("SshHostDsaKeyFingerprint")(SshHostDsaKeyFingerprint.asInstanceOf[js.Any])
-    if (SshHostRsaKeyFingerprint != null) __obj.updateDynamic("SshHostRsaKeyFingerprint")(SshHostRsaKeyFingerprint.asInstanceOf[js.Any])
-    if (SshKeyName != null) __obj.updateDynamic("SshKeyName")(SshKeyName.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])
-    if (VirtualizationType != null) __obj.updateDynamic("VirtualizationType")(VirtualizationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }
+  @scala.inline
+  implicit class InstanceOps[Self <: Instance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentVersion(value: String): Self = this.set("AgentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentVersion: Self = this.set("AgentVersion", js.undefined)
+    @scala.inline
+    def setAmiId(value: String): Self = this.set("AmiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmiId: Self = this.set("AmiId", js.undefined)
+    @scala.inline
+    def setArchitecture(value: Architecture): Self = this.set("Architecture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchitecture: Self = this.set("Architecture", js.undefined)
+    @scala.inline
+    def setArn(value: String): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAutoScalingType(value: AutoScalingType): Self = this.set("AutoScalingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingType: Self = this.set("AutoScalingType", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = this.set("BlockDeviceMappings", js.Array(value :_*))
+    @scala.inline
+    def setBlockDeviceMappings(value: BlockDeviceMappings): Self = this.set("BlockDeviceMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockDeviceMappings: Self = this.set("BlockDeviceMappings", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: DateTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setEbsOptimized(value: Boolean): Self = this.set("EbsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptimized: Self = this.set("EbsOptimized", js.undefined)
+    @scala.inline
+    def setEc2InstanceId(value: String): Self = this.set("Ec2InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2InstanceId: Self = this.set("Ec2InstanceId", js.undefined)
+    @scala.inline
+    def setEcsClusterArn(value: String): Self = this.set("EcsClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcsClusterArn: Self = this.set("EcsClusterArn", js.undefined)
+    @scala.inline
+    def setEcsContainerInstanceArn(value: String): Self = this.set("EcsContainerInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcsContainerInstanceArn: Self = this.set("EcsContainerInstanceArn", js.undefined)
+    @scala.inline
+    def setElasticIp(value: String): Self = this.set("ElasticIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticIp: Self = this.set("ElasticIp", js.undefined)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("Hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("Hostname", js.undefined)
+    @scala.inline
+    def setInfrastructureClass(value: String): Self = this.set("InfrastructureClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfrastructureClass: Self = this.set("InfrastructureClass", js.undefined)
+    @scala.inline
+    def setInstallUpdatesOnBoot(value: Boolean): Self = this.set("InstallUpdatesOnBoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallUpdatesOnBoot: Self = this.set("InstallUpdatesOnBoot", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setInstanceProfileArn(value: String): Self = this.set("InstanceProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceProfileArn: Self = this.set("InstanceProfileArn", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setLastServiceErrorId(value: String): Self = this.set("LastServiceErrorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastServiceErrorId: Self = this.set("LastServiceErrorId", js.undefined)
+    @scala.inline
+    def setLayerIdsVarargs(value: String*): Self = this.set("LayerIds", js.Array(value :_*))
+    @scala.inline
+    def setLayerIds(value: Strings): Self = this.set("LayerIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerIds: Self = this.set("LayerIds", js.undefined)
+    @scala.inline
+    def setOs(value: String): Self = this.set("Os", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOs: Self = this.set("Os", js.undefined)
+    @scala.inline
+    def setPlatform(value: String): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("Platform", js.undefined)
+    @scala.inline
+    def setPrivateDns(value: String): Self = this.set("PrivateDns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateDns: Self = this.set("PrivateDns", js.undefined)
+    @scala.inline
+    def setPrivateIp(value: String): Self = this.set("PrivateIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIp: Self = this.set("PrivateIp", js.undefined)
+    @scala.inline
+    def setPublicDns(value: String): Self = this.set("PublicDns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicDns: Self = this.set("PublicDns", js.undefined)
+    @scala.inline
+    def setPublicIp(value: String): Self = this.set("PublicIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIp: Self = this.set("PublicIp", js.undefined)
+    @scala.inline
+    def setRegisteredBy(value: String): Self = this.set("RegisteredBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisteredBy: Self = this.set("RegisteredBy", js.undefined)
+    @scala.inline
+    def setReportedAgentVersion(value: String): Self = this.set("ReportedAgentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportedAgentVersion: Self = this.set("ReportedAgentVersion", js.undefined)
+    @scala.inline
+    def setReportedOs(value: ReportedOs): Self = this.set("ReportedOs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportedOs: Self = this.set("ReportedOs", js.undefined)
+    @scala.inline
+    def setRootDeviceType(value: RootDeviceType): Self = this.set("RootDeviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootDeviceType: Self = this.set("RootDeviceType", js.undefined)
+    @scala.inline
+    def setRootDeviceVolumeId(value: String): Self = this.set("RootDeviceVolumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootDeviceVolumeId: Self = this.set("RootDeviceVolumeId", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: String*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: Strings): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setSshHostDsaKeyFingerprint(value: String): Self = this.set("SshHostDsaKeyFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshHostDsaKeyFingerprint: Self = this.set("SshHostDsaKeyFingerprint", js.undefined)
+    @scala.inline
+    def setSshHostRsaKeyFingerprint(value: String): Self = this.set("SshHostRsaKeyFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshHostRsaKeyFingerprint: Self = this.set("SshHostRsaKeyFingerprint", js.undefined)
+    @scala.inline
+    def setSshKeyName(value: String): Self = this.set("SshKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshKeyName: Self = this.set("SshKeyName", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSubnetId(value: String): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setTenancy(value: String): Self = this.set("Tenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenancy: Self = this.set("Tenancy", js.undefined)
+    @scala.inline
+    def setVirtualizationType(value: VirtualizationType): Self = this.set("VirtualizationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualizationType: Self = this.set("VirtualizationType", js.undefined)
+  }
+  
 }
 

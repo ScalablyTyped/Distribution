@@ -12,15 +12,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends PhotoSwipeUIDefault {
   def this(pswp: typings.photoswipe.mod.^[Options], framework: UIFramework) = this()
-  /**
-    * Called by PhotoSwipe after it constructs the UI.
-    */
-  /* CompleteClass */
-  override def init(): Unit = js.native
-  /**
-    * Call this method to update the UI after the items array has been modified in the original PhotoSwipe element.
-    */
-  /* CompleteClass */
-  override def update(): Unit = js.native
 }
 

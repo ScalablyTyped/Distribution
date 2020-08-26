@@ -1,7 +1,6 @@
 package typings.pulumiCloud.mod
 
 import typings.pulumiCloud.httpServerMod.RequestListenerFactory
-import typings.pulumiPulumi.outputMod.Output_
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +19,5 @@ class HttpServerCls protected ()
     */
   def this(name: String, createRequestListener: RequestListenerFactory) = this()
   def this(name: String, createRequestListener: RequestListenerFactory, opts: ResourceOptions) = this()
-  /* CompleteClass */
-  override val url: Output_[String] = js.native
 }
 

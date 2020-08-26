@@ -34,6 +34,7 @@ trait WebApi_ extends js.Object {
     * @returns The deferred object for the result of the operation. An object with interface RetrieveMultipleResponse will be resolved if successful.
     */
   def retrieveMultipleRecords(entityType: String): js.Promise[RetrieveMultipleResponse] = js.native
+  def retrieveMultipleRecords(entityType: String, options: js.UndefOr[scala.Nothing], maxPageSize: Double): js.Promise[RetrieveMultipleResponse] = js.native
   def retrieveMultipleRecords(entityType: String, options: String): js.Promise[RetrieveMultipleResponse] = js.native
   def retrieveMultipleRecords(entityType: String, options: String, maxPageSize: Double): js.Promise[RetrieveMultipleResponse] = js.native
   /**

@@ -38,18 +38,38 @@ trait SchemaCallCredentials extends js.Object {
 
 object SchemaCallCredentials {
   @scala.inline
-  def apply(
-    accessToken: String = null,
-    callCredentialType: String = null,
-    fromPlugin: SchemaMetadataCredentialsFromPlugin = null,
-    jwtServiceAccount: SchemaServiceAccountJwtAccessCredentials = null
-  ): SchemaCallCredentials = {
+  def apply(): SchemaCallCredentials = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
-    if (callCredentialType != null) __obj.updateDynamic("callCredentialType")(callCredentialType.asInstanceOf[js.Any])
-    if (fromPlugin != null) __obj.updateDynamic("fromPlugin")(fromPlugin.asInstanceOf[js.Any])
-    if (jwtServiceAccount != null) __obj.updateDynamic("jwtServiceAccount")(jwtServiceAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCallCredentials]
   }
+  @scala.inline
+  implicit class SchemaCallCredentialsOps[Self <: SchemaCallCredentials] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    @scala.inline
+    def setCallCredentialType(value: String): Self = this.set("callCredentialType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallCredentialType: Self = this.set("callCredentialType", js.undefined)
+    @scala.inline
+    def setFromPlugin(value: SchemaMetadataCredentialsFromPlugin): Self = this.set("fromPlugin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromPlugin: Self = this.set("fromPlugin", js.undefined)
+    @scala.inline
+    def setJwtServiceAccount(value: SchemaServiceAccountJwtAccessCredentials): Self = this.set("jwtServiceAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJwtServiceAccount: Self = this.set("jwtServiceAccount", js.undefined)
+  }
+  
 }
 

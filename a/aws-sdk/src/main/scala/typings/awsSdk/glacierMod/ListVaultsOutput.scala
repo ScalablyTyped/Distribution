@@ -18,11 +18,32 @@ trait ListVaultsOutput extends js.Object {
 
 object ListVaultsOutput {
   @scala.inline
-  def apply(Marker: String = null, VaultList: VaultList = null): ListVaultsOutput = {
+  def apply(): ListVaultsOutput = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (VaultList != null) __obj.updateDynamic("VaultList")(VaultList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVaultsOutput]
   }
+  @scala.inline
+  implicit class ListVaultsOutputOps[Self <: ListVaultsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setVaultListVarargs(value: DescribeVaultOutput*): Self = this.set("VaultList", js.Array(value :_*))
+    @scala.inline
+    def setVaultList(value: VaultList): Self = this.set("VaultList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVaultList: Self = this.set("VaultList", js.undefined)
+  }
+  
 }
 

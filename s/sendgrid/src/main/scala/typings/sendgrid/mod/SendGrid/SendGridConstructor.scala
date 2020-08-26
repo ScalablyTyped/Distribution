@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 trait SendGridConstructor extends js.Object {
   var mail: Helper = js.native
   def apply(apiKey: String): typings.sendgrid.mod.SendGrid.SendGrid = js.native
+  def apply(apiKey: String, host: js.UndefOr[scala.Nothing], globalHeaders: StringDictionary[String]): typings.sendgrid.mod.SendGrid.SendGrid = js.native
   def apply(apiKey: String, host: String): typings.sendgrid.mod.SendGrid.SendGrid = js.native
   def apply(apiKey: String, host: String, globalHeaders: StringDictionary[String]): typings.sendgrid.mod.SendGrid.SendGrid = js.native
 }

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
+  type BlankTerm = typings.rdfJs.mod.BlankNode
   /* Rewritten from type alias, can be one of: 
     - typings.sparqljs.mod.OperationExpression
     - typings.sparqljs.mod.FunctionCallExpression
@@ -15,7 +16,14 @@ package object mod {
     - typings.sparqljs.mod.Term
   */
   type Expression = typings.sparqljs.mod._Expression | typings.sparqljs.mod.Term
-  type Term = java.lang.String with typings.sparqljs.anon.TermBrand
-  type ValuePatternRow = org.scalablytyped.runtime.StringDictionary[typings.sparqljs.mod.Term]
-  type Variable = typings.sparqljs.mod.VariableExpression | typings.sparqljs.mod.Term
+  type IriTerm = typings.rdfJs.mod.NamedNode[java.lang.String]
+  type LiteralTerm = typings.rdfJs.mod.Literal
+  type Term = typings.sparqljs.mod.VariableTerm | typings.sparqljs.mod.IriTerm | typings.sparqljs.mod.LiteralTerm | typings.sparqljs.mod.BlankTerm
+  type ValuePatternRow = org.scalablytyped.runtime.StringDictionary[
+    js.UndefOr[
+      typings.sparqljs.mod.IriTerm | typings.sparqljs.mod.BlankTerm | typings.sparqljs.mod.LiteralTerm
+    ]
+  ]
+  type Variable = typings.sparqljs.mod.VariableExpression | typings.sparqljs.mod.VariableTerm
+  type VariableTerm = typings.rdfJs.mod.Variable
 }

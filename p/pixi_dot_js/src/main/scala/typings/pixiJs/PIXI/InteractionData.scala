@@ -146,6 +146,7 @@ trait InteractionData extends js.Object {
     *  to the DisplayObject
     */
   def getLocalPosition(displayObject: DisplayObject): Point = js.native
+  def getLocalPosition(displayObject: DisplayObject, point: js.UndefOr[scala.Nothing], globalPos: Point): Point = js.native
   def getLocalPosition(displayObject: DisplayObject, point: Point): Point = js.native
   def getLocalPosition(displayObject: DisplayObject, point: Point, globalPos: Point): Point = js.native
   /**

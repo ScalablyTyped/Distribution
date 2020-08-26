@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "WriteKeyExpr")
 @js.native
 class WriteKeyExpr protected ()
-  extends typings.angularCompiler.publicApiMod.WriteKeyExpr {
+  extends typings.angularCompiler.compilerMod.WriteKeyExpr {
   def this(
     receiver: typings.angularCompiler.outputAstMod.Expression,
     index: typings.angularCompiler.outputAstMod.Expression,
@@ -18,6 +18,13 @@ class WriteKeyExpr protected ()
     index: typings.angularCompiler.outputAstMod.Expression,
     value: typings.angularCompiler.outputAstMod.Expression,
     `type`: typings.angularCompiler.outputAstMod.Type
+  ) = this()
+  def this(
+    receiver: typings.angularCompiler.outputAstMod.Expression,
+    index: typings.angularCompiler.outputAstMod.Expression,
+    value: typings.angularCompiler.outputAstMod.Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
     receiver: typings.angularCompiler.outputAstMod.Expression,

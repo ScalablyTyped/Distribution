@@ -30,20 +30,42 @@ trait FindingsReportSummary extends js.Object {
 
 object FindingsReportSummary {
   @scala.inline
-  def apply(
-    id: FindingsReportId = null,
-    profileEndTime: Timestamp = null,
-    profileStartTime: Timestamp = null,
-    profilingGroupName: String = null,
-    totalNumberOfFindings: js.UndefOr[Integer] = js.undefined
-  ): FindingsReportSummary = {
+  def apply(): FindingsReportSummary = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (profileEndTime != null) __obj.updateDynamic("profileEndTime")(profileEndTime.asInstanceOf[js.Any])
-    if (profileStartTime != null) __obj.updateDynamic("profileStartTime")(profileStartTime.asInstanceOf[js.Any])
-    if (profilingGroupName != null) __obj.updateDynamic("profilingGroupName")(profilingGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalNumberOfFindings)) __obj.updateDynamic("totalNumberOfFindings")(totalNumberOfFindings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindingsReportSummary]
   }
+  @scala.inline
+  implicit class FindingsReportSummaryOps[Self <: FindingsReportSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: FindingsReportId): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setProfileEndTime(value: Timestamp): Self = this.set("profileEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileEndTime: Self = this.set("profileEndTime", js.undefined)
+    @scala.inline
+    def setProfileStartTime(value: Timestamp): Self = this.set("profileStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileStartTime: Self = this.set("profileStartTime", js.undefined)
+    @scala.inline
+    def setProfilingGroupName(value: String): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfilingGroupName: Self = this.set("profilingGroupName", js.undefined)
+    @scala.inline
+    def setTotalNumberOfFindings(value: Integer): Self = this.set("totalNumberOfFindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalNumberOfFindings: Self = this.set("totalNumberOfFindings", js.undefined)
+  }
+  
 }
 

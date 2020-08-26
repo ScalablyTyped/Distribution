@@ -11,13 +11,39 @@ object format extends js.Object {
   def apply(
     dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
     utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    localZone: js.UndefOr[Null | typings.timezonecomplete.timezoneMod.TimeZone],
+    localZone: js.UndefOr[scala.Nothing],
     formatString: String
   ): String = js.native
   def apply(
     dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
     utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    localZone: js.UndefOr[Null | typings.timezonecomplete.timezoneMod.TimeZone],
+    localZone: js.UndefOr[scala.Nothing],
+    formatString: String,
+    locale: PartialLocale
+  ): String = js.native
+  def apply(
+    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    localZone: Null,
+    formatString: String
+  ): String = js.native
+  def apply(
+    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    localZone: Null,
+    formatString: String,
+    locale: PartialLocale
+  ): String = js.native
+  def apply(
+    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    localZone: typings.timezonecomplete.timezoneMod.TimeZone,
+    formatString: String
+  ): String = js.native
+  def apply(
+    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    localZone: typings.timezonecomplete.timezoneMod.TimeZone,
     formatString: String,
     locale: PartialLocale
   ): String = js.native

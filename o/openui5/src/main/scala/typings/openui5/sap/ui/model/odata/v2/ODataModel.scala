@@ -306,6 +306,7 @@ trait ODataModel extends Model {
     * @returns oData Object containing the requested data if the path is valid.
     */
   def getData(sPath: String): js.Any = js.native
+  def getData(sPath: String, oContext: js.UndefOr[scala.Nothing], bIncludeExpandEntries: Boolean): js.Any = js.native
   def getData(sPath: String, oContext: js.Any): js.Any = js.native
   def getData(sPath: String, oContext: js.Any, bIncludeExpandEntries: Boolean): js.Any = js.native
   /**
@@ -332,6 +333,7 @@ trait ODataModel extends Model {
     * @returns The found ETag (or null if none could be found)
     */
   def getETag(sPath: String): String = js.native
+  def getETag(sPath: String, oContext: js.UndefOr[scala.Nothing], oEntity: js.Any): String = js.native
   def getETag(sPath: String, oContext: Context): String = js.native
   def getETag(sPath: String, oContext: Context, oEntity: js.Any): String = js.native
   /**
@@ -347,6 +349,7 @@ trait ODataModel extends Model {
   def getKey(vValue: String): String = js.native
   def getKey(vValue: js.Any): String = js.native
   def getKey(vValue: Context): String = js.native
+  def getProperty(sPath: String, oContext: js.UndefOr[scala.Nothing], bIncludeExpandEntries: Boolean): js.Any = js.native
   def getProperty(sPath: String, oContext: js.Any, bIncludeExpandEntries: Boolean): js.Any = js.native
   /**
     * Returns the current security token. If the token has not been requested from the server it will be
@@ -406,6 +409,7 @@ trait ODataModel extends Model {
     */
   def read(sPath: String): js.Any = js.native
   def read(sPath: String, mParameters: js.Any): js.Any = js.native
+  def refresh(bForceUpdate: Boolean, bRemoveData: js.UndefOr[scala.Nothing], sGroupId: String): Unit = js.native
   def refresh(bForceUpdate: Boolean, bRemoveData: Boolean): Unit = js.native
   def refresh(bForceUpdate: Boolean, bRemoveData: Boolean, sGroupId: String): Unit = js.native
   /**
@@ -505,6 +509,7 @@ trait ODataModel extends Model {
     * found or another entry was already updated.
     */
   def setProperty(sPath: String, oValue: js.Any): Boolean = js.native
+  def setProperty(sPath: String, oValue: js.Any, oContext: js.UndefOr[scala.Nothing], bAsyncUpdate: Boolean): Boolean = js.native
   def setProperty(sPath: String, oValue: js.Any, oContext: js.Any): Boolean = js.native
   def setProperty(sPath: String, oValue: js.Any, oContext: js.Any, bAsyncUpdate: Boolean): Boolean = js.native
   /**

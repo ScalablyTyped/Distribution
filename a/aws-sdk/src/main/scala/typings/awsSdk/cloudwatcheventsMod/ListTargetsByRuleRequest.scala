@@ -26,17 +26,36 @@ trait ListTargetsByRuleRequest extends js.Object {
 
 object ListTargetsByRuleRequest {
   @scala.inline
-  def apply(
-    Rule: RuleName,
-    EventBusName: EventBusName = null,
-    Limit: js.UndefOr[LimitMax100] = js.undefined,
-    NextToken: NextToken = null
-  ): ListTargetsByRuleRequest = {
+  def apply(Rule: RuleName): ListTargetsByRuleRequest = {
     val __obj = js.Dynamic.literal(Rule = Rule.asInstanceOf[js.Any])
-    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTargetsByRuleRequest]
   }
+  @scala.inline
+  implicit class ListTargetsByRuleRequestOps[Self <: ListTargetsByRuleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRule(value: RuleName): Self = this.set("Rule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventBusName(value: EventBusName): Self = this.set("EventBusName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventBusName: Self = this.set("EventBusName", js.undefined)
+    @scala.inline
+    def setLimit(value: LimitMax100): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

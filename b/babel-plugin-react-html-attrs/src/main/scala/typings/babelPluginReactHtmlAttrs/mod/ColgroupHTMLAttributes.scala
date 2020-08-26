@@ -4,17 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColgroupHTMLAttributes[T] extends HTMLAttributes[T] {
-  var span: js.UndefOr[Double | String] = js.undefined
+  var span: js.UndefOr[Double | String] = js.native
 }
 
 object ColgroupHTMLAttributes {
   @scala.inline
-  def apply[T](HTMLAttributes: HTMLAttributes[T] = null, span: Double | String = null): ColgroupHTMLAttributes[T] = {
+  def apply[T](): ColgroupHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColgroupHTMLAttributes[T]]
   }
+  @scala.inline
+  implicit class ColgroupHTMLAttributesOps[Self <: ColgroupHTMLAttributes[_], T] (val x: Self with ColgroupHTMLAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpan(value: Double | String): Self = this.set("span", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpan: Self = this.set("span", js.undefined)
+  }
+  
 }
 

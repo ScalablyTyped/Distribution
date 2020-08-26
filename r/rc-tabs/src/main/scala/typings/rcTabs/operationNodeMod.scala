@@ -17,7 +17,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tabs/lib/TabNavList/OperationNode", JSImport.Namespace)
+@JSImport("rc-tabs/es/TabNavList/OperationNode", JSImport.Namespace)
 @js.native
 object operationNodeMod extends js.Object {
   @js.native

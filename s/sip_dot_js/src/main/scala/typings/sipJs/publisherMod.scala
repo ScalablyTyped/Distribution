@@ -1,6 +1,5 @@
 package typings.sipJs
 
-import typings.events.mod.EventEmitter
 import typings.sipJs.coreMod.IncomingResponseMessage
 import typings.sipJs.coreMod.URI
 import typings.sipJs.emitterMod.Emitter
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object publisherMod extends js.Object {
   @js.native
-  class Publisher protected () extends EventEmitter {
+  class Publisher protected () extends js.Object {
     /**
       * Constructs a new instance of the `Publisher` class.
       *
@@ -45,10 +44,6 @@ object publisherMod extends js.Object {
     var refreshRequest: js.Any = js.native
     var request: js.Any = js.native
     var sendPublishRequest: js.Any = js.native
-    /** The publication state. */
-    val state: PublisherState = js.native
-    /** Emits when the publisher state changes. */
-    val stateChange: Emitter[PublisherState] = js.native
     /**
       * Transition publication state.
       */
@@ -69,6 +64,10 @@ object publisherMod extends js.Object {
     /* protected */ def receiveResponse(response: IncomingResponseMessage): Unit = js.native
     /** @internal */
     /* protected */ def send(): OutgoingPublishRequest = js.native
+    /** The publication state. */
+    def state: PublisherState = js.native
+    /** Emits when the publisher state changes. */
+    def stateChange: Emitter[PublisherState] = js.native
     /**
       * Unpublish.
       */

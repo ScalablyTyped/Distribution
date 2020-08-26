@@ -17,12 +17,7 @@ class SessionRequest protected ()
     */
   def this(appId: String) = this()
   def this(appId: String, capabilities: js.Array[typings.chrome.chrome.cast.Capability]) = this()
+  def this(appId: String, capabilities: js.UndefOr[scala.Nothing], timeout: Double) = this()
   def this(appId: String, capabilities: js.Array[typings.chrome.chrome.cast.Capability], timeout: Double) = this()
-  /* CompleteClass */
-  override var appId: String = js.native
-  /* CompleteClass */
-  override var capabilities: js.Array[typings.chrome.chrome.cast.Capability] = js.native
-  /* CompleteClass */
-  override var requestSessionTimeout: Double = js.native
 }
 

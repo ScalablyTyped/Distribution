@@ -1,6 +1,5 @@
 package typings.androiduix.android.support.v4.view
 
-import typings.androiduix.android.content.Context
 import typings.androiduix.android.graphics.drawable.Drawable
 import typings.androiduix.android.support.v4.view.ViewPager.OnAdapterChangeListener
 import typings.androiduix.android.support.v4.view.ViewPager.OnPageChangeListener
@@ -8,17 +7,12 @@ import typings.androiduix.android.support.v4.view.ViewPager.PageTransformer
 import typings.androiduix.android.view.KeyEvent
 import typings.androiduix.android.view.View
 import typings.androiduix.android.view.ViewGroup
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.support.v4.view.ViewPager")
 @js.native
-class ViewPager_ protected () extends ViewGroup {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: js.Any) = this()
+trait ViewPager_ extends ViewGroup {
   var mActivePointerId: js.Any = js.native
   var mAdapter: js.Any = js.native
   var mAdapterChangeListener: js.Any = js.native

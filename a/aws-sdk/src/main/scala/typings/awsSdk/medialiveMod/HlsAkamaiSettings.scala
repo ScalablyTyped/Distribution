@@ -38,24 +38,50 @@ trait HlsAkamaiSettings extends js.Object {
 
 object HlsAkamaiSettings {
   @scala.inline
-  def apply(
-    ConnectionRetryInterval: js.UndefOr[integerMin0] = js.undefined,
-    FilecacheDuration: js.UndefOr[integerMin0Max600] = js.undefined,
-    HttpTransferMode: HlsAkamaiHttpTransferMode = null,
-    NumRetries: js.UndefOr[integerMin0] = js.undefined,
-    RestartDelay: js.UndefOr[integerMin0Max15] = js.undefined,
-    Salt: string = null,
-    Token: string = null
-  ): HlsAkamaiSettings = {
+  def apply(): HlsAkamaiSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ConnectionRetryInterval)) __obj.updateDynamic("ConnectionRetryInterval")(ConnectionRetryInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FilecacheDuration)) __obj.updateDynamic("FilecacheDuration")(FilecacheDuration.get.asInstanceOf[js.Any])
-    if (HttpTransferMode != null) __obj.updateDynamic("HttpTransferMode")(HttpTransferMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumRetries)) __obj.updateDynamic("NumRetries")(NumRetries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RestartDelay)) __obj.updateDynamic("RestartDelay")(RestartDelay.get.asInstanceOf[js.Any])
-    if (Salt != null) __obj.updateDynamic("Salt")(Salt.asInstanceOf[js.Any])
-    if (Token != null) __obj.updateDynamic("Token")(Token.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsAkamaiSettings]
   }
+  @scala.inline
+  implicit class HlsAkamaiSettingsOps[Self <: HlsAkamaiSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionRetryInterval(value: integerMin0): Self = this.set("ConnectionRetryInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionRetryInterval: Self = this.set("ConnectionRetryInterval", js.undefined)
+    @scala.inline
+    def setFilecacheDuration(value: integerMin0Max600): Self = this.set("FilecacheDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilecacheDuration: Self = this.set("FilecacheDuration", js.undefined)
+    @scala.inline
+    def setHttpTransferMode(value: HlsAkamaiHttpTransferMode): Self = this.set("HttpTransferMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpTransferMode: Self = this.set("HttpTransferMode", js.undefined)
+    @scala.inline
+    def setNumRetries(value: integerMin0): Self = this.set("NumRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumRetries: Self = this.set("NumRetries", js.undefined)
+    @scala.inline
+    def setRestartDelay(value: integerMin0Max15): Self = this.set("RestartDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestartDelay: Self = this.set("RestartDelay", js.undefined)
+    @scala.inline
+    def setSalt(value: string): Self = this.set("Salt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalt: Self = this.set("Salt", js.undefined)
+    @scala.inline
+    def setToken(value: string): Self = this.set("Token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken: Self = this.set("Token", js.undefined)
+  }
+  
 }
 

@@ -23,6 +23,7 @@ class StackReference protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: StackReferenceArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: StackReferenceArgs, opts: CustomResourceOptions) = this()
   /**
     * The name of the referenced stack.
@@ -32,17 +33,11 @@ class StackReference protected () extends CustomResource {
     * The outputs of the referenced stack.
     */
   val outputs: Output_[StringDictionary[_]] = js.native
-  var readOutputSync: js.Any = js.native
-  var readOutputsSync: js.Any = js.native
+  var readOutputValue: js.Any = js.native
   /**
     * The names of any stack outputs which contain secrets.
     */
   val secretOutputNames: Output_[js.Array[String]] = js.native
-  val stackReferenceName: js.Any = js.native
-  var syncName: js.Any = js.native
-  var syncOutputs: js.Any = js.native
-  var syncOutputsSupported: js.Any = js.native
-  var syncSecretOutputNames: js.Any = js.native
   /**
     * Fetches the value of the named stack output, or undefined if the stack output was not found.
     *
@@ -57,7 +52,7 @@ class StackReference protected () extends CustomResource {
     *
     * @param name The name of the stack output to fetch.
     */
-  def getOutputSync(name: String): js.Any = js.native
+  def getOutputValue(name: String): js.Promise[_] = js.native
   /**
     * Fetches the value of the named stack output, or throws an error if the output was not found.
     *
@@ -72,6 +67,6 @@ class StackReference protected () extends CustomResource {
     *
     * @param name The name of the stack output to fetch.
     */
-  def requireOutputSync(name: String): js.Any = js.native
+  def requireOutputValue(name: String): js.Promise[_] = js.native
 }
 

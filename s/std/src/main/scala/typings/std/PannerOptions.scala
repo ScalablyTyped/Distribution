@@ -4,63 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PannerOptions extends AudioNodeOptions {
-  var coneInnerAngle: js.UndefOr[Double] = js.undefined
-  var coneOuterAngle: js.UndefOr[Double] = js.undefined
-  var coneOuterGain: js.UndefOr[Double] = js.undefined
-  var distanceModel: js.UndefOr[DistanceModelType] = js.undefined
-  var maxDistance: js.UndefOr[Double] = js.undefined
-  var orientationX: js.UndefOr[Double] = js.undefined
-  var orientationY: js.UndefOr[Double] = js.undefined
-  var orientationZ: js.UndefOr[Double] = js.undefined
-  var panningModel: js.UndefOr[PanningModelType] = js.undefined
-  var positionX: js.UndefOr[Double] = js.undefined
-  var positionY: js.UndefOr[Double] = js.undefined
-  var positionZ: js.UndefOr[Double] = js.undefined
-  var refDistance: js.UndefOr[Double] = js.undefined
-  var rolloffFactor: js.UndefOr[Double] = js.undefined
+  var coneInnerAngle: js.UndefOr[Double] = js.native
+  var coneOuterAngle: js.UndefOr[Double] = js.native
+  var coneOuterGain: js.UndefOr[Double] = js.native
+  var distanceModel: js.UndefOr[DistanceModelType] = js.native
+  var maxDistance: js.UndefOr[Double] = js.native
+  var orientationX: js.UndefOr[Double] = js.native
+  var orientationY: js.UndefOr[Double] = js.native
+  var orientationZ: js.UndefOr[Double] = js.native
+  var panningModel: js.UndefOr[PanningModelType] = js.native
+  var positionX: js.UndefOr[Double] = js.native
+  var positionY: js.UndefOr[Double] = js.native
+  var positionZ: js.UndefOr[Double] = js.native
+  var refDistance: js.UndefOr[Double] = js.native
+  var rolloffFactor: js.UndefOr[Double] = js.native
 }
 
 object PannerOptions {
   @scala.inline
-  def apply(
-    channelCount: js.UndefOr[Double] = js.undefined,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    coneInnerAngle: js.UndefOr[Double] = js.undefined,
-    coneOuterAngle: js.UndefOr[Double] = js.undefined,
-    coneOuterGain: js.UndefOr[Double] = js.undefined,
-    distanceModel: DistanceModelType = null,
-    maxDistance: js.UndefOr[Double] = js.undefined,
-    orientationX: js.UndefOr[Double] = js.undefined,
-    orientationY: js.UndefOr[Double] = js.undefined,
-    orientationZ: js.UndefOr[Double] = js.undefined,
-    panningModel: PanningModelType = null,
-    positionX: js.UndefOr[Double] = js.undefined,
-    positionY: js.UndefOr[Double] = js.undefined,
-    positionZ: js.UndefOr[Double] = js.undefined,
-    refDistance: js.UndefOr[Double] = js.undefined,
-    rolloffFactor: js.UndefOr[Double] = js.undefined
-  ): PannerOptions = {
+  def apply(): PannerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (!js.isUndefined(coneInnerAngle)) __obj.updateDynamic("coneInnerAngle")(coneInnerAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(coneOuterAngle)) __obj.updateDynamic("coneOuterAngle")(coneOuterAngle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(coneOuterGain)) __obj.updateDynamic("coneOuterGain")(coneOuterGain.get.asInstanceOf[js.Any])
-    if (distanceModel != null) __obj.updateDynamic("distanceModel")(distanceModel.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDistance)) __obj.updateDynamic("maxDistance")(maxDistance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(orientationX)) __obj.updateDynamic("orientationX")(orientationX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(orientationY)) __obj.updateDynamic("orientationY")(orientationY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(orientationZ)) __obj.updateDynamic("orientationZ")(orientationZ.get.asInstanceOf[js.Any])
-    if (panningModel != null) __obj.updateDynamic("panningModel")(panningModel.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionX)) __obj.updateDynamic("positionX")(positionX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionY)) __obj.updateDynamic("positionY")(positionY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionZ)) __obj.updateDynamic("positionZ")(positionZ.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(refDistance)) __obj.updateDynamic("refDistance")(refDistance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rolloffFactor)) __obj.updateDynamic("rolloffFactor")(rolloffFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PannerOptions]
   }
+  @scala.inline
+  implicit class PannerOptionsOps[Self <: PannerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConeInnerAngle(value: Double): Self = this.set("coneInnerAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConeInnerAngle: Self = this.set("coneInnerAngle", js.undefined)
+    @scala.inline
+    def setConeOuterAngle(value: Double): Self = this.set("coneOuterAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConeOuterAngle: Self = this.set("coneOuterAngle", js.undefined)
+    @scala.inline
+    def setConeOuterGain(value: Double): Self = this.set("coneOuterGain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConeOuterGain: Self = this.set("coneOuterGain", js.undefined)
+    @scala.inline
+    def setDistanceModel(value: DistanceModelType): Self = this.set("distanceModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistanceModel: Self = this.set("distanceModel", js.undefined)
+    @scala.inline
+    def setMaxDistance(value: Double): Self = this.set("maxDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDistance: Self = this.set("maxDistance", js.undefined)
+    @scala.inline
+    def setOrientationX(value: Double): Self = this.set("orientationX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientationX: Self = this.set("orientationX", js.undefined)
+    @scala.inline
+    def setOrientationY(value: Double): Self = this.set("orientationY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientationY: Self = this.set("orientationY", js.undefined)
+    @scala.inline
+    def setOrientationZ(value: Double): Self = this.set("orientationZ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientationZ: Self = this.set("orientationZ", js.undefined)
+    @scala.inline
+    def setPanningModel(value: PanningModelType): Self = this.set("panningModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanningModel: Self = this.set("panningModel", js.undefined)
+    @scala.inline
+    def setPositionX(value: Double): Self = this.set("positionX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionX: Self = this.set("positionX", js.undefined)
+    @scala.inline
+    def setPositionY(value: Double): Self = this.set("positionY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionY: Self = this.set("positionY", js.undefined)
+    @scala.inline
+    def setPositionZ(value: Double): Self = this.set("positionZ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionZ: Self = this.set("positionZ", js.undefined)
+    @scala.inline
+    def setRefDistance(value: Double): Self = this.set("refDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefDistance: Self = this.set("refDistance", js.undefined)
+    @scala.inline
+    def setRolloffFactor(value: Double): Self = this.set("rolloffFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRolloffFactor: Self = this.set("rolloffFactor", js.undefined)
+  }
+  
 }
 

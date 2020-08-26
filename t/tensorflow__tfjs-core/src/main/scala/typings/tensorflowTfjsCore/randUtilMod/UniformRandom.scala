@@ -10,21 +10,36 @@ import scala.scalajs.js.annotation._
 @js.native
 class UniformRandom () extends RandomBase {
   def this(min: Double) = this()
+  def this(min: js.UndefOr[scala.Nothing], max: Double) = this()
   def this(min: Double, max: Double) = this()
-  def this(min: Double, max: Double, dtype: float32) = this()
-  def this(min: Double, max: Double, dtype: int32) = this()
-  def this(min: Double, max: Double, dtype: float32, seed: String) = this()
-  def this(min: Double, max: Double, dtype: float32, seed: Double) = this()
-  def this(min: Double, max: Double, dtype: int32, seed: String) = this()
-  def this(min: Double, max: Double, dtype: int32, seed: Double) = this()
+  def this(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], dtype: float32 | int32) = this()
+  def this(min: js.UndefOr[scala.Nothing], max: Double, dtype: float32 | int32) = this()
+  def this(min: Double, max: js.UndefOr[scala.Nothing], dtype: float32 | int32) = this()
+  def this(min: Double, max: Double, dtype: float32 | int32) = this()
+  def this(
+    min: js.UndefOr[scala.Nothing],
+    max: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[float32 | int32],
+    seed: String
+  ) = this()
+  def this(
+    min: js.UndefOr[scala.Nothing],
+    max: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[float32 | int32],
+    seed: Double
+  ) = this()
+  def this(min: js.UndefOr[scala.Nothing], max: Double, dtype: js.UndefOr[float32 | int32], seed: String) = this()
+  def this(min: js.UndefOr[scala.Nothing], max: Double, dtype: js.UndefOr[float32 | int32], seed: Double) = this()
+  def this(min: Double, max: js.UndefOr[scala.Nothing], dtype: js.UndefOr[float32 | int32], seed: String) = this()
+  def this(min: Double, max: js.UndefOr[scala.Nothing], dtype: js.UndefOr[float32 | int32], seed: Double) = this()
+  def this(min: Double, max: Double, dtype: js.UndefOr[float32 | int32], seed: String) = this()
+  def this(min: Double, max: Double, dtype: js.UndefOr[float32 | int32], seed: Double) = this()
   /** Handles proper rounding for non floating point numbers. */
   var canReturnFloat: js.Any = js.native
   var convertValue: js.Any = js.native
-  var dtype: js.UndefOr[js.Any] = js.native
+  var dtype: js.Any = js.native
   var min: js.Any = js.native
   var random: js.Any = js.native
   var range: js.Any = js.native
-  /* CompleteClass */
-  override def nextValue(): Double = js.native
 }
 

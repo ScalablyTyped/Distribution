@@ -26,16 +26,34 @@ trait SchemaEnvFromSource extends js.Object {
 
 object SchemaEnvFromSource {
   @scala.inline
-  def apply(
-    configMapRef: SchemaConfigMapEnvSource = null,
-    prefix: String = null,
-    secretRef: SchemaSecretEnvSource = null
-  ): SchemaEnvFromSource = {
+  def apply(): SchemaEnvFromSource = {
     val __obj = js.Dynamic.literal()
-    if (configMapRef != null) __obj.updateDynamic("configMapRef")(configMapRef.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (secretRef != null) __obj.updateDynamic("secretRef")(secretRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnvFromSource]
   }
+  @scala.inline
+  implicit class SchemaEnvFromSourceOps[Self <: SchemaEnvFromSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigMapRef(value: SchemaConfigMapEnvSource): Self = this.set("configMapRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigMapRef: Self = this.set("configMapRef", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setSecretRef(value: SchemaSecretEnvSource): Self = this.set("secretRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretRef: Self = this.set("secretRef", js.undefined)
+  }
+  
 }
 

@@ -19,7 +19,7 @@ trait PutCompositeAlarmInput extends js.Object {
     */
   var AlarmDescription: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmDescription] = js.native
   /**
-    * The name for the composite alarm. This name must be unique within your AWS account.
+    * The name for the composite alarm. This name must be unique within the Region.
     */
   var AlarmName: typings.awsSdk.cloudwatchMod.AlarmName = js.native
   /**
@@ -42,24 +42,58 @@ trait PutCompositeAlarmInput extends js.Object {
 
 object PutCompositeAlarmInput {
   @scala.inline
-  def apply(
-    AlarmName: AlarmName,
-    AlarmRule: AlarmRule,
-    ActionsEnabled: js.UndefOr[ActionsEnabled] = js.undefined,
-    AlarmActions: ResourceList = null,
-    AlarmDescription: AlarmDescription = null,
-    InsufficientDataActions: ResourceList = null,
-    OKActions: ResourceList = null,
-    Tags: TagList = null
-  ): PutCompositeAlarmInput = {
+  def apply(AlarmName: AlarmName, AlarmRule: AlarmRule): PutCompositeAlarmInput = {
     val __obj = js.Dynamic.literal(AlarmName = AlarmName.asInstanceOf[js.Any], AlarmRule = AlarmRule.asInstanceOf[js.Any])
-    if (!js.isUndefined(ActionsEnabled)) __obj.updateDynamic("ActionsEnabled")(ActionsEnabled.get.asInstanceOf[js.Any])
-    if (AlarmActions != null) __obj.updateDynamic("AlarmActions")(AlarmActions.asInstanceOf[js.Any])
-    if (AlarmDescription != null) __obj.updateDynamic("AlarmDescription")(AlarmDescription.asInstanceOf[js.Any])
-    if (InsufficientDataActions != null) __obj.updateDynamic("InsufficientDataActions")(InsufficientDataActions.asInstanceOf[js.Any])
-    if (OKActions != null) __obj.updateDynamic("OKActions")(OKActions.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutCompositeAlarmInput]
   }
+  @scala.inline
+  implicit class PutCompositeAlarmInputOps[Self <: PutCompositeAlarmInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlarmName(value: AlarmName): Self = this.set("AlarmName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlarmRule(value: AlarmRule): Self = this.set("AlarmRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActionsEnabled(value: ActionsEnabled): Self = this.set("ActionsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionsEnabled: Self = this.set("ActionsEnabled", js.undefined)
+    @scala.inline
+    def setAlarmActionsVarargs(value: ResourceName*): Self = this.set("AlarmActions", js.Array(value :_*))
+    @scala.inline
+    def setAlarmActions(value: ResourceList): Self = this.set("AlarmActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmActions: Self = this.set("AlarmActions", js.undefined)
+    @scala.inline
+    def setAlarmDescription(value: AlarmDescription): Self = this.set("AlarmDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmDescription: Self = this.set("AlarmDescription", js.undefined)
+    @scala.inline
+    def setInsufficientDataActionsVarargs(value: ResourceName*): Self = this.set("InsufficientDataActions", js.Array(value :_*))
+    @scala.inline
+    def setInsufficientDataActions(value: ResourceList): Self = this.set("InsufficientDataActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsufficientDataActions: Self = this.set("InsufficientDataActions", js.undefined)
+    @scala.inline
+    def setOKActionsVarargs(value: ResourceName*): Self = this.set("OKActions", js.Array(value :_*))
+    @scala.inline
+    def setOKActions(value: ResourceList): Self = this.set("OKActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOKActions: Self = this.set("OKActions", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

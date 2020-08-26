@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/splitlayout", "SplitLayout.getStretch")
+@JSImport("@lumino/widgets/types/splitlayout", "SplitLayout.getStretch")
 @js.native
 object getStretch extends js.Object {
   /**

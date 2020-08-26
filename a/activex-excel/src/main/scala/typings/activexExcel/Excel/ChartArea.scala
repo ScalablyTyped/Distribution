@@ -4,30 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartArea extends js.Object {
-  val Application: typings.activexExcel.Excel.Application
-  var AutoScaleFont: js.Any
-  val Border: typings.activexExcel.Excel.Border
-  val Creator: XlCreator
+  val Application: typings.activexExcel.Excel.Application = js.native
+  var AutoScaleFont: js.Any = js.native
+  val Border: typings.activexExcel.Excel.Border = js.native
+  val Creator: XlCreator = js.native
   @JSName("Excel.ChartArea_typekey")
-  var ExcelDotChartArea_typekey: ChartArea
-  val Fill: ChartFillFormat
-  val Font: typings.activexExcel.Excel.Font
-  val Format: ChartFormat
-  var Height: Double
-  val Interior: typings.activexExcel.Excel.Interior
-  var Left: Double
-  val Name: String
-  val Parent: js.Any
-  var RoundedCorners: Boolean
-  var Shadow: Boolean
-  var Top: Double
-  var Width: Double
-  def Clear(): js.Any
-  def ClearContents(): js.Any
-  def ClearFormats(): js.Any
-  def Copy(): js.Any
-  def Select(): js.Any
+  var ExcelDotChartArea_typekey: ChartArea = js.native
+  val Fill: ChartFillFormat = js.native
+  val Font: typings.activexExcel.Excel.Font = js.native
+  val Format: ChartFormat = js.native
+  var Height: Double = js.native
+  val Interior: typings.activexExcel.Excel.Interior = js.native
+  var Left: Double = js.native
+  val Name: String = js.native
+  val Parent: js.Any = js.native
+  var RoundedCorners: Boolean = js.native
+  var Shadow: Boolean = js.native
+  var Top: Double = js.native
+  var Width: Double = js.native
+  def Clear(): js.Any = js.native
+  def ClearContents(): js.Any = js.native
+  def ClearFormats(): js.Any = js.native
+  def Copy(): js.Any = js.native
+  def Select(): js.Any = js.native
 }
 
 object ChartArea {
@@ -60,5 +61,62 @@ object ChartArea {
     __obj.updateDynamic("Excel.ChartArea_typekey")(ExcelDotChartArea_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartArea]
   }
+  @scala.inline
+  implicit class ChartAreaOps[Self <: ChartArea] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoScaleFont(value: js.Any): Self = this.set("AutoScaleFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBorder(value: Border): Self = this.set("Border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClear(value: () => js.Any): Self = this.set("Clear", js.Any.fromFunction0(value))
+    @scala.inline
+    def setClearContents(value: () => js.Any): Self = this.set("ClearContents", js.Any.fromFunction0(value))
+    @scala.inline
+    def setClearFormats(value: () => js.Any): Self = this.set("ClearFormats", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCopy(value: () => js.Any): Self = this.set("Copy", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExcelDotChartArea_typekey(value: ChartArea): Self = this.set("Excel.ChartArea_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFill(value: ChartFillFormat): Self = this.set("Fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFont(value: Font): Self = this.set("Font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormat(value: ChartFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInterior(value: Interior): Self = this.set("Interior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLeft(value: Double): Self = this.set("Left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoundedCorners(value: Boolean): Self = this.set("RoundedCorners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelect(value: () => js.Any): Self = this.set("Select", js.Any.fromFunction0(value))
+    @scala.inline
+    def setShadow(value: Boolean): Self = this.set("Shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTop(value: Double): Self = this.set("Top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -18,10 +18,28 @@ trait PurchaseReservedNodeOfferingMessage extends js.Object {
 
 object PurchaseReservedNodeOfferingMessage {
   @scala.inline
-  def apply(ReservedNodeOfferingId: String, NodeCount: js.UndefOr[IntegerOptional] = js.undefined): PurchaseReservedNodeOfferingMessage = {
+  def apply(ReservedNodeOfferingId: String): PurchaseReservedNodeOfferingMessage = {
     val __obj = js.Dynamic.literal(ReservedNodeOfferingId = ReservedNodeOfferingId.asInstanceOf[js.Any])
-    if (!js.isUndefined(NodeCount)) __obj.updateDynamic("NodeCount")(NodeCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseReservedNodeOfferingMessage]
   }
+  @scala.inline
+  implicit class PurchaseReservedNodeOfferingMessageOps[Self <: PurchaseReservedNodeOfferingMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReservedNodeOfferingId(value: String): Self = this.set("ReservedNodeOfferingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeCount(value: IntegerOptional): Self = this.set("NodeCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeCount: Self = this.set("NodeCount", js.undefined)
+  }
+  
 }
 

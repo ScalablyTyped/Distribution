@@ -70,9 +70,202 @@ trait Shake extends js.Object {
     * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
     */
   def start(): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(duration: js.UndefOr[scala.Nothing], intensity: js.UndefOr[scala.Nothing], force: Boolean): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraShakeCallback
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraShakeCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(duration: js.UndefOr[scala.Nothing], intensity: Double): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Double,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Double,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Double,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(duration: js.UndefOr[scala.Nothing], intensity: Double, force: Boolean): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Double,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Double,
+    force: Boolean,
+    callback: CameraShakeCallback
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Double,
+    force: Boolean,
+    callback: CameraShakeCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(duration: js.UndefOr[scala.Nothing], intensity: Vector2): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Vector2,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Vector2,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Vector2,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(duration: js.UndefOr[scala.Nothing], intensity: Vector2, force: Boolean): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Vector2,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Vector2,
+    force: Boolean,
+    callback: CameraShakeCallback
+  ): Camera = js.native
+  def start(
+    duration: js.UndefOr[scala.Nothing],
+    intensity: Vector2,
+    force: Boolean,
+    callback: CameraShakeCallback,
+    context: js.Any
+  ): Camera = js.native
   def start(duration: integer): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback
+  ): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(duration: integer, intensity: js.UndefOr[scala.Nothing], force: Boolean): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraShakeCallback
+  ): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraShakeCallback,
+    context: js.Any
+  ): Camera = js.native
   def start(duration: integer, intensity: Double): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: Double,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: Double,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback
+  ): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: Double,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback,
+    context: js.Any
+  ): Camera = js.native
   def start(duration: integer, intensity: Double, force: Boolean): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: Double,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
   def start(duration: integer, intensity: Double, force: Boolean, callback: CameraShakeCallback): Camera = js.native
   def start(
     duration: integer,
@@ -82,7 +275,34 @@ trait Shake extends js.Object {
     context: js.Any
   ): Camera = js.native
   def start(duration: integer, intensity: Vector2): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: Vector2,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: Vector2,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback
+  ): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: Vector2,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraShakeCallback,
+    context: js.Any
+  ): Camera = js.native
   def start(duration: integer, intensity: Vector2, force: Boolean): Camera = js.native
+  def start(
+    duration: integer,
+    intensity: Vector2,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
   def start(duration: integer, intensity: Vector2, force: Boolean, callback: CameraShakeCallback): Camera = js.native
   def start(
     duration: integer,

@@ -5,59 +5,110 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReduxLoggerOptions extends js.Object {
-  var actionTransformer: js.UndefOr[js.Function1[/* action */ js.Any, _]] = js.undefined
-  var collapsed: js.UndefOr[Boolean | LoggerPredicate] = js.undefined
-  var colors: js.UndefOr[ColorsObject | `false`] = js.undefined
-  var diff: js.UndefOr[Boolean] = js.undefined
-  var diffPredicate: js.UndefOr[LoggerPredicate] = js.undefined
-  var duration: js.UndefOr[Boolean] = js.undefined
-  var errorTransformer: js.UndefOr[js.Function1[/* error */ js.Any, _]] = js.undefined
-  var level: js.UndefOr[String | ActionToString | LevelObject] = js.undefined
-  var logErrors: js.UndefOr[Boolean] = js.undefined
-  var logger: js.UndefOr[js.Any] = js.undefined
-  var predicate: js.UndefOr[LoggerPredicate] = js.undefined
-  var stateTransformer: js.UndefOr[js.Function1[/* state */ js.Any, _]] = js.undefined
-  var timestamp: js.UndefOr[Boolean] = js.undefined
+  var actionTransformer: js.UndefOr[js.Function1[/* action */ js.Any, _]] = js.native
+  var collapsed: js.UndefOr[Boolean | LoggerPredicate] = js.native
+  var colors: js.UndefOr[ColorsObject | `false`] = js.native
+  var diff: js.UndefOr[Boolean] = js.native
+  var diffPredicate: js.UndefOr[LoggerPredicate] = js.native
+  var duration: js.UndefOr[Boolean] = js.native
+  var errorTransformer: js.UndefOr[js.Function1[/* error */ js.Any, _]] = js.native
+  var level: js.UndefOr[String | ActionToString | LevelObject] = js.native
+  var logErrors: js.UndefOr[Boolean] = js.native
+  var logger: js.UndefOr[js.Any] = js.native
+  var predicate: js.UndefOr[LoggerPredicate] = js.native
+  var stateTransformer: js.UndefOr[js.Function1[/* state */ js.Any, _]] = js.native
+  var timestamp: js.UndefOr[Boolean] = js.native
   var titleFormatter: js.UndefOr[
     js.Function3[/* formattedAction */ js.Any, /* formattedTime */ String, /* took */ Double, String]
-  ] = js.undefined
+  ] = js.native
 }
 
 object ReduxLoggerOptions {
   @scala.inline
-  def apply(
-    actionTransformer: /* action */ js.Any => _ = null,
-    collapsed: Boolean | LoggerPredicate = null,
-    colors: ColorsObject | `false` = null,
-    diff: js.UndefOr[Boolean] = js.undefined,
-    diffPredicate: (/* getState */ js.Function0[js.Any], /* action */ js.Any, /* logEntry */ js.UndefOr[LogEntryObject]) => Boolean = null,
-    duration: js.UndefOr[Boolean] = js.undefined,
-    errorTransformer: /* error */ js.Any => _ = null,
-    level: String | ActionToString | LevelObject = null,
-    logErrors: js.UndefOr[Boolean] = js.undefined,
-    logger: js.Any = null,
-    predicate: (/* getState */ js.Function0[js.Any], /* action */ js.Any, /* logEntry */ js.UndefOr[LogEntryObject]) => Boolean = null,
-    stateTransformer: /* state */ js.Any => _ = null,
-    timestamp: js.UndefOr[Boolean] = js.undefined,
-    titleFormatter: (/* formattedAction */ js.Any, /* formattedTime */ String, /* took */ Double) => String = null
-  ): ReduxLoggerOptions = {
+  def apply(): ReduxLoggerOptions = {
     val __obj = js.Dynamic.literal()
-    if (actionTransformer != null) __obj.updateDynamic("actionTransformer")(js.Any.fromFunction1(actionTransformer))
-    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(diff)) __obj.updateDynamic("diff")(diff.get.asInstanceOf[js.Any])
-    if (diffPredicate != null) __obj.updateDynamic("diffPredicate")(js.Any.fromFunction3(diffPredicate))
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (errorTransformer != null) __obj.updateDynamic("errorTransformer")(js.Any.fromFunction1(errorTransformer))
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(logErrors)) __obj.updateDynamic("logErrors")(logErrors.get.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction3(predicate))
-    if (stateTransformer != null) __obj.updateDynamic("stateTransformer")(js.Any.fromFunction1(stateTransformer))
-    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
-    if (titleFormatter != null) __obj.updateDynamic("titleFormatter")(js.Any.fromFunction3(titleFormatter))
     __obj.asInstanceOf[ReduxLoggerOptions]
   }
+  @scala.inline
+  implicit class ReduxLoggerOptionsOps[Self <: ReduxLoggerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionTransformer(value: /* action */ js.Any => _): Self = this.set("actionTransformer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteActionTransformer: Self = this.set("actionTransformer", js.undefined)
+    @scala.inline
+    def setCollapsedFunction3(
+      value: (/* getState */ js.Function0[js.Any], /* action */ js.Any, /* logEntry */ js.UndefOr[LogEntryObject]) => Boolean
+    ): Self = this.set("collapsed", js.Any.fromFunction3(value))
+    @scala.inline
+    def setCollapsed(value: Boolean | LoggerPredicate): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    @scala.inline
+    def setColors(value: ColorsObject | `false`): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setDiff(value: Boolean): Self = this.set("diff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiff: Self = this.set("diff", js.undefined)
+    @scala.inline
+    def setDiffPredicate(
+      value: (/* getState */ js.Function0[js.Any], /* action */ js.Any, /* logEntry */ js.UndefOr[LogEntryObject]) => Boolean
+    ): Self = this.set("diffPredicate", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteDiffPredicate: Self = this.set("diffPredicate", js.undefined)
+    @scala.inline
+    def setDuration(value: Boolean): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setErrorTransformer(value: /* error */ js.Any => _): Self = this.set("errorTransformer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteErrorTransformer: Self = this.set("errorTransformer", js.undefined)
+    @scala.inline
+    def setLevelFunction1(value: /* action */ js.Any => String): Self = this.set("level", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLevel(value: String | ActionToString | LevelObject): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setLogErrors(value: Boolean): Self = this.set("logErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogErrors: Self = this.set("logErrors", js.undefined)
+    @scala.inline
+    def setLogger(value: js.Any): Self = this.set("logger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogger: Self = this.set("logger", js.undefined)
+    @scala.inline
+    def setPredicate(
+      value: (/* getState */ js.Function0[js.Any], /* action */ js.Any, /* logEntry */ js.UndefOr[LogEntryObject]) => Boolean
+    ): Self = this.set("predicate", js.Any.fromFunction3(value))
+    @scala.inline
+    def deletePredicate: Self = this.set("predicate", js.undefined)
+    @scala.inline
+    def setStateTransformer(value: /* state */ js.Any => _): Self = this.set("stateTransformer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStateTransformer: Self = this.set("stateTransformer", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Boolean): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    @scala.inline
+    def setTitleFormatter(value: (/* formattedAction */ js.Any, /* formattedTime */ String, /* took */ Double) => String): Self = this.set("titleFormatter", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteTitleFormatter: Self = this.set("titleFormatter", js.undefined)
+  }
+  
 }
 

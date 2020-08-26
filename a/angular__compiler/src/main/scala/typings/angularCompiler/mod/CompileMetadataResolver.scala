@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "CompileMetadataResolver")
 @js.native
 class CompileMetadataResolver protected ()
-  extends typings.angularCompiler.publicApiMod.CompileMetadataResolver {
+  extends typings.angularCompiler.compilerMod.CompileMetadataResolver {
   def this(
     _config: typings.angularCompiler.configMod.CompilerConfig,
     _htmlParser: typings.angularCompiler.htmlParserMod.HtmlParser,

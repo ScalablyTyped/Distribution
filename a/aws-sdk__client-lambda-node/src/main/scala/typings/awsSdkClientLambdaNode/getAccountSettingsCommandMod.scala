@@ -26,16 +26,9 @@ object getAccountSettingsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetAccountSettingsInput) = this()
-    /* CompleteClass */
-    override val input: GetAccountSettingsInput = js.native
     val middlewareStack: MiddlewareStack[GetAccountSettingsInput, GetAccountSettingsOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: LambdaResolvedConfiguration
-    ): Handler[GetAccountSettingsInput, GetAccountSettingsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: LambdaResolvedConfiguration
     ): Handler[GetAccountSettingsInput, GetAccountSettingsOutput] = js.native
   }

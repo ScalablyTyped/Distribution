@@ -28,6 +28,7 @@ class ResourceLineitems protected () extends js.Object {
     */
   def downloadlineitems(): GaxiosPromise[SchemaDownloadLineItemsResponse] = js.native
   def downloadlineitems(callback: BodyResponseCallback[SchemaDownloadLineItemsResponse]): Unit = js.native
+  def downloadlineitems(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDownloadLineItemsResponse] = js.native
   def downloadlineitems(params: ParamsResourceLineitemsDownloadlineitems): GaxiosPromise[SchemaDownloadLineItemsResponse] = js.native
   def downloadlineitems(
     params: ParamsResourceLineitemsDownloadlineitems,
@@ -59,6 +60,7 @@ class ResourceLineitems protected () extends js.Object {
     */
   def uploadlineitems(): GaxiosPromise[SchemaUploadLineItemsResponse] = js.native
   def uploadlineitems(callback: BodyResponseCallback[SchemaUploadLineItemsResponse]): Unit = js.native
+  def uploadlineitems(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUploadLineItemsResponse] = js.native
   def uploadlineitems(params: ParamsResourceLineitemsUploadlineitems): GaxiosPromise[SchemaUploadLineItemsResponse] = js.native
   def uploadlineitems(
     params: ParamsResourceLineitemsUploadlineitems,

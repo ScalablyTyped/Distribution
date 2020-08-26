@@ -24,16 +24,14 @@ class AppServiceCallAction protected () extends MicroflowAction {
   ) = this()
   @JSName("model")
   var model_FAppServiceCallAction: IModel = js.native
-  def appServiceAction(): js.Any = js.native
-  def appServiceAction(newValue: IAppServiceAction): js.Any = js.native
+  def appServiceAction: IAppServiceAction | Null = js.native
   def appServiceActionQualifiedName: String | Null = js.native
-  @JSName("appServiceAction")
-  def appServiceAction_Union: IAppServiceAction | Null = js.native
+  def appServiceAction_=(newValue: IAppServiceAction | Null): Unit = js.native
   def outputVariableName: String = js.native
-  def outputVariableName(newValue: String): js.Any = js.native
+  def outputVariableName_=(newValue: String): Unit = js.native
   def parameterMappings: IList[AppServiceCallParameterMapping] = js.native
   def useVariable: Boolean = js.native
-  def useVariable(newValue: Boolean): js.Any = js.native
+  def useVariable_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

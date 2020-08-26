@@ -50,30 +50,66 @@ trait DBClusterEndpoint extends js.Object {
 
 object DBClusterEndpoint {
   @scala.inline
-  def apply(
-    CustomEndpointType: String = null,
-    DBClusterEndpointArn: String = null,
-    DBClusterEndpointIdentifier: String = null,
-    DBClusterEndpointResourceIdentifier: String = null,
-    DBClusterIdentifier: String = null,
-    Endpoint: String = null,
-    EndpointType: String = null,
-    ExcludedMembers: StringList = null,
-    StaticMembers: StringList = null,
-    Status: String = null
-  ): DBClusterEndpoint = {
+  def apply(): DBClusterEndpoint = {
     val __obj = js.Dynamic.literal()
-    if (CustomEndpointType != null) __obj.updateDynamic("CustomEndpointType")(CustomEndpointType.asInstanceOf[js.Any])
-    if (DBClusterEndpointArn != null) __obj.updateDynamic("DBClusterEndpointArn")(DBClusterEndpointArn.asInstanceOf[js.Any])
-    if (DBClusterEndpointIdentifier != null) __obj.updateDynamic("DBClusterEndpointIdentifier")(DBClusterEndpointIdentifier.asInstanceOf[js.Any])
-    if (DBClusterEndpointResourceIdentifier != null) __obj.updateDynamic("DBClusterEndpointResourceIdentifier")(DBClusterEndpointResourceIdentifier.asInstanceOf[js.Any])
-    if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier.asInstanceOf[js.Any])
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
-    if (ExcludedMembers != null) __obj.updateDynamic("ExcludedMembers")(ExcludedMembers.asInstanceOf[js.Any])
-    if (StaticMembers != null) __obj.updateDynamic("StaticMembers")(StaticMembers.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterEndpoint]
   }
+  @scala.inline
+  implicit class DBClusterEndpointOps[Self <: DBClusterEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomEndpointType(value: String): Self = this.set("CustomEndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomEndpointType: Self = this.set("CustomEndpointType", js.undefined)
+    @scala.inline
+    def setDBClusterEndpointArn(value: String): Self = this.set("DBClusterEndpointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterEndpointArn: Self = this.set("DBClusterEndpointArn", js.undefined)
+    @scala.inline
+    def setDBClusterEndpointIdentifier(value: String): Self = this.set("DBClusterEndpointIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterEndpointIdentifier: Self = this.set("DBClusterEndpointIdentifier", js.undefined)
+    @scala.inline
+    def setDBClusterEndpointResourceIdentifier(value: String): Self = this.set("DBClusterEndpointResourceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterEndpointResourceIdentifier: Self = this.set("DBClusterEndpointResourceIdentifier", js.undefined)
+    @scala.inline
+    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterIdentifier: Self = this.set("DBClusterIdentifier", js.undefined)
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setEndpointType(value: String): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    @scala.inline
+    def setExcludedMembersVarargs(value: String*): Self = this.set("ExcludedMembers", js.Array(value :_*))
+    @scala.inline
+    def setExcludedMembers(value: StringList): Self = this.set("ExcludedMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedMembers: Self = this.set("ExcludedMembers", js.undefined)
+    @scala.inline
+    def setStaticMembersVarargs(value: String*): Self = this.set("StaticMembers", js.Array(value :_*))
+    @scala.inline
+    def setStaticMembers(value: StringList): Self = this.set("StaticMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticMembers: Self = this.set("StaticMembers", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

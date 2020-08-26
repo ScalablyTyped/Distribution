@@ -12,6 +12,7 @@ trait Messaging extends js.Object {
     */
   var ios: IOSMessaging = js.native
   def deleteToken(): js.Promise[Unit] = js.native
+  def deleteToken(authorizedEntity: js.UndefOr[scala.Nothing], scope: String): js.Promise[Unit] = js.native
   def deleteToken(authorizedEntity: String): js.Promise[Unit] = js.native
   def deleteToken(authorizedEntity: String, scope: String): js.Promise[Unit] = js.native
   /**

@@ -8,54 +8,89 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PaneProps
   extends /* otherProps */ StringDictionary[js.Any] {
-  var children: js.UndefOr[String | ReactNode] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var defaultSize: js.UndefOr[Height] = js.undefined
-  var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
-  var maxHeight: js.UndefOr[PaneSize] = js.undefined
-  var maxWidth: js.UndefOr[PaneSize] = js.undefined
-  var minHeight: js.UndefOr[PaneSize] = js.undefined
-  var minWidth: js.UndefOr[PaneSize] = js.undefined
-  var onSizeChange: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var resizable: js.UndefOr[IsPaneResizable] = js.undefined
-  var size: js.UndefOr[Height] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var children: js.UndefOr[String | ReactNode] = js.native
+  var className: js.UndefOr[String] = js.native
+  var defaultSize: js.UndefOr[Height] = js.native
+  var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var maxHeight: js.UndefOr[PaneSize] = js.native
+  var maxWidth: js.UndefOr[PaneSize] = js.native
+  var minHeight: js.UndefOr[PaneSize] = js.native
+  var minWidth: js.UndefOr[PaneSize] = js.native
+  var onSizeChange: js.UndefOr[js.Function0[Unit]] = js.native
+  var resizable: js.UndefOr[IsPaneResizable] = js.native
+  var size: js.UndefOr[Height] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object PaneProps {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    children: String | ReactNode = null,
-    className: String = null,
-    defaultSize: Height = null,
-    grid: js.Tuple2[Double, Double] = null,
-    maxHeight: PaneSize = null,
-    maxWidth: PaneSize = null,
-    minHeight: PaneSize = null,
-    minWidth: PaneSize = null,
-    onSizeChange: () => Unit = null,
-    resizable: IsPaneResizable = null,
-    size: Height = null,
-    style: CSSProperties = null
-  ): PaneProps = {
+  def apply(): PaneProps = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultSize != null) __obj.updateDynamic("defaultSize")(defaultSize.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onSizeChange != null) __obj.updateDynamic("onSizeChange")(js.Any.fromFunction0(onSizeChange))
-    if (resizable != null) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneProps]
   }
+  @scala.inline
+  implicit class PanePropsOps[Self <: PaneProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: String | ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDefaultSize(value: Height): Self = this.set("defaultSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSize: Self = this.set("defaultSize", js.undefined)
+    @scala.inline
+    def setGrid(value: js.Tuple2[Double, Double]): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: PaneSize): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: PaneSize): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeight(value: PaneSize): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: PaneSize): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setOnSizeChange(value: () => Unit): Self = this.set("onSizeChange", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnSizeChange: Self = this.set("onSizeChange", js.undefined)
+    @scala.inline
+    def setResizable(value: IsPaneResizable): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizable: Self = this.set("resizable", js.undefined)
+    @scala.inline
+    def setSize(value: Height): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

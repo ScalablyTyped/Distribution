@@ -22,11 +22,34 @@ trait DimensionGroup extends js.Object {
 
 object DimensionGroup {
   @scala.inline
-  def apply(Group: String, Dimensions: StringList = null, Limit: js.UndefOr[Limit] = js.undefined): DimensionGroup = {
+  def apply(Group: String): DimensionGroup = {
     val __obj = js.Dynamic.literal(Group = Group.asInstanceOf[js.Any])
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionGroup]
   }
+  @scala.inline
+  implicit class DimensionGroupOps[Self <: DimensionGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroup(value: String): Self = this.set("Group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDimensionsVarargs(value: String*): Self = this.set("Dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: StringList): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setLimit(value: Limit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+  }
+  
 }
 

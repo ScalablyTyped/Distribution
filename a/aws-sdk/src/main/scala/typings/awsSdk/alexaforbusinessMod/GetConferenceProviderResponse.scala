@@ -14,10 +14,26 @@ trait GetConferenceProviderResponse extends js.Object {
 
 object GetConferenceProviderResponse {
   @scala.inline
-  def apply(ConferenceProvider: ConferenceProvider = null): GetConferenceProviderResponse = {
+  def apply(): GetConferenceProviderResponse = {
     val __obj = js.Dynamic.literal()
-    if (ConferenceProvider != null) __obj.updateDynamic("ConferenceProvider")(ConferenceProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConferenceProviderResponse]
   }
+  @scala.inline
+  implicit class GetConferenceProviderResponseOps[Self <: GetConferenceProviderResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConferenceProvider(value: ConferenceProvider): Self = this.set("ConferenceProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConferenceProvider: Self = this.set("ConferenceProvider", js.undefined)
+  }
+  
 }
 

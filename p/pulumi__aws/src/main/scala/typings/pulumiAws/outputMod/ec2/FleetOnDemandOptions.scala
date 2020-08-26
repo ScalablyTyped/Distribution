@@ -14,10 +14,26 @@ trait FleetOnDemandOptions extends js.Object {
 
 object FleetOnDemandOptions {
   @scala.inline
-  def apply(allocationStrategy: String = null): FleetOnDemandOptions = {
+  def apply(): FleetOnDemandOptions = {
     val __obj = js.Dynamic.literal()
-    if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetOnDemandOptions]
   }
+  @scala.inline
+  implicit class FleetOnDemandOptionsOps[Self <: FleetOnDemandOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationStrategy(value: String): Self = this.set("allocationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationStrategy: Self = this.set("allocationStrategy", js.undefined)
+  }
+  
 }
 

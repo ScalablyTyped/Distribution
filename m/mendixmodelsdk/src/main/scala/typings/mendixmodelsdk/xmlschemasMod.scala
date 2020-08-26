@@ -114,7 +114,7 @@ object xmlschemasMod extends js.Object {
       def containerAsFolderBase_MXmlSchema: FolderBase = js.native
       def entries: IList[XmlSchemaEntry] = js.native
       def filePath: String = js.native
-      def filePath(newValue: String): js.Any = js.native
+      def filePath_=(newValue: String): Unit = js.native
     }
     
     @js.native
@@ -133,15 +133,15 @@ object xmlschemasMod extends js.Object {
       def containerAsWsdlDescription: WsdlDescription = js.native
       def containerAsXmlSchema: XmlSchema = js.native
       def contents: String = js.native
-      def contents(newValue: String): js.Any = js.native
+      def contents_=(newValue: String): Unit = js.native
       def localizedContentsFormat: String = js.native
-      def localizedContentsFormat(newValue: String): js.Any = js.native
+      def localizedContentsFormat_=(newValue: String): Unit = js.native
       def localizedLocationFormat: String = js.native
-      def localizedLocationFormat(newValue: String): js.Any = js.native
+      def localizedLocationFormat_=(newValue: String): Unit = js.native
       def location: String = js.native
-      def location(newValue: String): js.Any = js.native
+      def location_=(newValue: String): Unit = js.native
       def targetNamespace: String = js.native
-      def targetNamespace(newValue: String): js.Any = js.native
+      def targetNamespace_=(newValue: String): Unit = js.native
     }
     
     /* static members */

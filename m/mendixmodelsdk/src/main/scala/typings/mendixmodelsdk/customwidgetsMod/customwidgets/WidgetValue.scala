@@ -41,103 +41,81 @@ class WidgetValue protected () extends Element {
     * In version 7.19.0: introduced
     */
   def action: ClientAction = js.native
-  def action(newValue: ClientAction): js.Any = js.native
+  def action_=(newValue: ClientAction): Unit = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
   def attributePath: String = js.native
-  def attributePath(newValue: String): js.Any = js.native
-  def attributeRef(): js.Any = js.native
-  def attributeRef(newValue: AttributeRef): js.Any = js.native
+  def attributePath_=(newValue: String): Unit = js.native
   /**
     * In version 7.11.0: introduced
     */
-  @JSName("attributeRef")
-  def attributeRef_Union: AttributeRef | Null = js.native
+  def attributeRef: AttributeRef | Null = js.native
+  def attributeRef_=(newValue: AttributeRef | Null): Unit = js.native
   def containerAsWidgetProperty: WidgetProperty = js.native
-  def dataSource(): js.Any = js.native
-  def dataSource(newValue: DataSource): js.Any = js.native
   /**
     * In version 8.3.0: introduced
     */
-  @JSName("dataSource")
-  def dataSource_Union: DataSource | Null = js.native
+  def dataSource: DataSource | Null = js.native
+  def dataSource_=(newValue: DataSource | Null): Unit = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyEntityPath.
     *
     * In version 7.11.0: deleted
     */
   def entityPath: String = js.native
-  def entityPath(newValue: String): js.Any = js.native
-  def entityRef(): js.Any = js.native
-  def entityRef(newValue: EntityRef): js.Any = js.native
+  def entityPath_=(newValue: String): Unit = js.native
   /**
     * In version 7.11.0: introduced
     */
-  @JSName("entityRef")
-  def entityRef_Union: EntityRef | Null = js.native
+  def entityRef: EntityRef | Null = js.native
+  def entityRef_=(newValue: EntityRef | Null): Unit = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     *
     * In version 8.0.0: introduced
     */
   def expression: String = js.native
-  def expression(newValue: String): js.Any = js.native
-  def icon(): js.Any = js.native
-  def icon(newValue: Icon): js.Any = js.native
+  def expression_=(newValue: String): Unit = js.native
   /**
     * In version 8.0.0: introduced
     */
-  @JSName("icon")
-  def icon_Union: Icon | Null = js.native
-  def image(): js.Any = js.native
-  def image(newValue: IImage): js.Any = js.native
+  def icon: Icon | Null = js.native
+  def icon_=(newValue: Icon | Null): Unit = js.native
+  def image: IImage | Null = js.native
   def imageQualifiedName: String | Null = js.native
-  @JSName("image")
-  def image_Union: IImage | Null = js.native
-  def microflow(): js.Any = js.native
-  def microflow(newValue: IMicroflow): js.Any = js.native
+  def image_=(newValue: IImage | Null): Unit = js.native
+  def microflow: IMicroflow | Null = js.native
   def microflowQualifiedName: String | Null = js.native
-  @JSName("microflow")
-  def microflow_Union: IMicroflow | Null = js.native
-  def nanoflow(): js.Any = js.native
-  def nanoflow(newValue: INanoflow): js.Any = js.native
-  def nanoflowQualifiedName: String | Null = js.native
+  def microflow_=(newValue: IMicroflow | Null): Unit = js.native
   /**
     * In version 7.13.0: introduced
     */
-  @JSName("nanoflow")
-  def nanoflow_Union: INanoflow | Null = js.native
+  def nanoflow: INanoflow | Null = js.native
+  def nanoflowQualifiedName: String | Null = js.native
+  def nanoflow_=(newValue: INanoflow | Null): Unit = js.native
   def objects: IList[WidgetObject] = js.native
-  def page(): js.Any = js.native
-  def page(newValue: IPage): js.Any = js.native
+  def page: IPage | Null = js.native
   def pageQualifiedName: String | Null = js.native
-  @JSName("page")
-  def page_Union: IPage | Null = js.native
+  def page_=(newValue: IPage | Null): Unit = js.native
   def primitiveValue: String = js.native
-  def primitiveValue(newValue: String): js.Any = js.native
-  def sourceVariable(): js.Any = js.native
-  def sourceVariable(newValue: PageVariable): js.Any = js.native
+  def primitiveValue_=(newValue: String): Unit = js.native
   /**
     * In version 8.8.0: introduced
     */
-  @JSName("sourceVariable")
-  def sourceVariable_Union: PageVariable | Null = js.native
-  def textTemplate(): js.Any = js.native
-  def textTemplate(newValue: ClientTemplate): js.Any = js.native
+  def sourceVariable: PageVariable | Null = js.native
+  def sourceVariable_=(newValue: PageVariable | Null): Unit = js.native
   /**
     * In version 7.23.0: introduced
     */
-  @JSName("textTemplate")
-  def textTemplate_Union: ClientTemplate | Null = js.native
-  def translatableValue(): js.Any = js.native
-  def translatableValue(newValue: Text): js.Any = js.native
-  @JSName("translatableValue")
-  def translatableValue_Union: Text | Null = js.native
+  def textTemplate: ClientTemplate | Null = js.native
+  def textTemplate_=(newValue: ClientTemplate | Null): Unit = js.native
+  def translatableValue: Text | Null = js.native
+  def translatableValue_=(newValue: Text | Null): Unit = js.native
   def `type`: WidgetValueType = js.native
-  def `type`(newValue: WidgetValueType): js.Any = js.native
+  def type_=(newValue: WidgetValueType): Unit = js.native
   /**
     * In version 8.2.0: introduced
     */
@@ -146,7 +124,7 @@ class WidgetValue protected () extends Element {
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
   def xPathConstraint: String = js.native
-  def xPathConstraint(newValue: String): js.Any = js.native
+  def xPathConstraint_=(newValue: String): Unit = js.native
 }
 
 /* static members */

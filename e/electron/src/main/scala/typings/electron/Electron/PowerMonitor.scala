@@ -11,7 +11,7 @@ import typings.electron.electronStrings.resume
 import typings.electron.electronStrings.shutdown
 import typings.electron.electronStrings.suspend
 import typings.electron.electronStrings.unknown_
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,6 +69,8 @@ trait PowerMonitor extends EventEmitter {
   def on_onbattery(event: `on-battery`, listener: js.Function): this.type = js.native
   /**
     * Emitted when system is resuming.
+    *
+    * @platform linux,win32
     */
   @JSName("on")
   def on_resume(event: resume, listener: js.Function): this.type = js.native
@@ -84,6 +86,8 @@ trait PowerMonitor extends EventEmitter {
   def on_shutdown(event: shutdown, listener: js.Function): this.type = js.native
   /**
     * Emitted when the system is suspending.
+    *
+    * @platform linux,win32
     */
   @JSName("on")
   def on_suspend(event: suspend, listener: js.Function): this.type = js.native

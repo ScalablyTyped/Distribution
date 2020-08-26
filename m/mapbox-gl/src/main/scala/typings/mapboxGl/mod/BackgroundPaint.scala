@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BackgroundPaint extends AnyPaint {
-  var `background-color`: js.UndefOr[String | Expression] = js.undefined
-  var `background-color-transition`: js.UndefOr[Transition] = js.undefined
-  var `background-opacity`: js.UndefOr[Double | Expression] = js.undefined
-  var `background-opacity-transition`: js.UndefOr[Transition] = js.undefined
-  var `background-pattern`: js.UndefOr[String] = js.undefined
-  var `background-pattern-transition`: js.UndefOr[Transition] = js.undefined
+  var `background-color`: js.UndefOr[String | Expression] = js.native
+  var `background-color-transition`: js.UndefOr[Transition] = js.native
+  var `background-opacity`: js.UndefOr[Double | Expression] = js.native
+  var `background-opacity-transition`: js.UndefOr[Transition] = js.native
+  var `background-pattern`: js.UndefOr[String] = js.native
+  var `background-pattern-transition`: js.UndefOr[Transition] = js.native
 }
 
 object BackgroundPaint {
   @scala.inline
-  def apply(
-    `background-color`: String | Expression = null,
-    `background-color-transition`: Transition = null,
-    `background-opacity`: Double | Expression = null,
-    `background-opacity-transition`: Transition = null,
-    `background-pattern`: String = null,
-    `background-pattern-transition`: Transition = null
-  ): BackgroundPaint = {
+  def apply(): BackgroundPaint = {
     val __obj = js.Dynamic.literal()
-    if (`background-color` != null) __obj.updateDynamic("background-color")(`background-color`.asInstanceOf[js.Any])
-    if (`background-color-transition` != null) __obj.updateDynamic("background-color-transition")(`background-color-transition`.asInstanceOf[js.Any])
-    if (`background-opacity` != null) __obj.updateDynamic("background-opacity")(`background-opacity`.asInstanceOf[js.Any])
-    if (`background-opacity-transition` != null) __obj.updateDynamic("background-opacity-transition")(`background-opacity-transition`.asInstanceOf[js.Any])
-    if (`background-pattern` != null) __obj.updateDynamic("background-pattern")(`background-pattern`.asInstanceOf[js.Any])
-    if (`background-pattern-transition` != null) __obj.updateDynamic("background-pattern-transition")(`background-pattern-transition`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundPaint]
   }
+  @scala.inline
+  implicit class BackgroundPaintOps[Self <: BackgroundPaint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setBackground-color`(value: String | Expression): Self = this.set("background-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBackground-color`: Self = this.set("background-color", js.undefined)
+    @scala.inline
+    def `setBackground-color-transition`(value: Transition): Self = this.set("background-color-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBackground-color-transition`: Self = this.set("background-color-transition", js.undefined)
+    @scala.inline
+    def `setBackground-opacity`(value: Double | Expression): Self = this.set("background-opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBackground-opacity`: Self = this.set("background-opacity", js.undefined)
+    @scala.inline
+    def `setBackground-opacity-transition`(value: Transition): Self = this.set("background-opacity-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBackground-opacity-transition`: Self = this.set("background-opacity-transition", js.undefined)
+    @scala.inline
+    def `setBackground-pattern`(value: String): Self = this.set("background-pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBackground-pattern`: Self = this.set("background-pattern", js.undefined)
+    @scala.inline
+    def `setBackground-pattern-transition`(value: Transition): Self = this.set("background-pattern-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBackground-pattern-transition`: Self = this.set("background-pattern-transition", js.undefined)
+  }
+  
 }
 

@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 abstract class Reflection protected () extends js.Object {
   def this(name: String, kind: ReflectionKind) = this()
   def this(name: String, kind: ReflectionKind, parent: Reflection) = this()
-  var _alias: js.UndefOr[js.Any] = js.native
-  var _aliases: js.UndefOr[js.Any] = js.native
+  var _alias: js.Any = js.native
+  var _aliases: js.Any = js.native
   var anchor: js.UndefOr[String] = js.native
   var comment: js.UndefOr[Comment] = js.native
   var cssClasses: js.UndefOr[String] = js.native

@@ -4,7 +4,6 @@ import typings.agGrid.componentMod.Component
 import typings.agGrid.contextMod.Context
 import typings.agGrid.floatingFilterMod.FloatingFilterChange
 import typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper
-import typings.agGrid.iFilterMod.IDoesFilterPassParams
 import typings.agGrid.iFilterMod.IFilter
 import typings.agGrid.iFilterMod.IFilterParams
 import typings.agGrid.textFilterMod.INumberFilterParams
@@ -38,29 +37,16 @@ abstract class BaseFilter[T, P /* <: IFilterParams */, M] ()
   /* private */ def createConditionBody(`type`: js.Any): js.Any = js.native
   /* private */ def createConditionTemplate(`type`: js.Any): js.Any = js.native
   def customInit(): Unit = js.native
-  /* private */ def doOnFilterChanged(): js.Any = js.native
   /* private */ def doOnFilterChanged(applyNow: js.Any): js.Any = js.native
-  /** The grid will ask each active filter, in turn, whether each row in the grid passes. If any
-    filter fails, then the row will be excluded from the final set. The method is provided a
-    params object with attributes node (the rodNode the grid creates that wraps the data) and data
-    (the data object that you provided to the grid for that row). */
-  /* CompleteClass */
-  override def doesFilterPass(params: IDoesFilterPassParams): Boolean = js.native
   def floatingFilter(from: String): Unit = js.native
   def generateFilterHeader(`type`: FilterConditionType): String = js.native
   /* private */ def generateTemplate(): js.Any = js.native
   def getDebounceMs(filterParams: INumberFilterParams): Double = js.native
   def getDebounceMs(filterParams: ITextFilterParams): Double = js.native
-  /** Gets the filter state for storing */
-  /* CompleteClass */
-  override def getModel(): js.Any = js.native
   def getNullableModel(): M | CombinedFilter[M] = js.native
   @JSName("init")
   def init_MBaseFilter(params: P): Unit = js.native
   def initialiseFilterBodyUi(`type`: FilterConditionType): Unit = js.native
-  /** This is used to show the filter icon in the header. If true, the filter icon will be shown. */
-  /* CompleteClass */
-  override def isFilterActive(): Boolean = js.native
   def isFilterConditionActive(`type`: FilterConditionType): Boolean = js.native
   def modelFromFloatingFilter(from: String): M = js.native
   def onClearButton(): Unit = js.native
@@ -77,9 +63,6 @@ abstract class BaseFilter[T, P /* <: IFilterParams */, M] ()
   def resetState(): Unit = js.native
   def serialize(`type`: FilterConditionType): M = js.native
   def setModel(model: M): Unit = js.native
-  /** Restores the filter state. */
-  /* CompleteClass */
-  override def setModel(model: js.Any): Unit = js.native
   def setModel(model: CombinedFilter[M]): Unit = js.native
   def translate(toTranslate: String): String = js.native
   def wrapCondition(mainCondition: String): String = js.native

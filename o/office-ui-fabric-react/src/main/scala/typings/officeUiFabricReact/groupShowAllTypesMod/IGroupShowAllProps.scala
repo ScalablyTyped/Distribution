@@ -1,83 +1,44 @@
 package typings.officeUiFabricReact.groupShowAllTypesMod
 
-import typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps
-import typings.officeUiFabricReact.groupedListTypesMod.IGroup
 import typings.officeUiFabricReact.groupedListTypesMod.IGroupDividerProps
-import typings.officeUiFabricReact.withViewportMod.IViewport
-import typings.react.mod.HTMLAttributes
-import typings.react.mod.global.JSX.Element
-import typings.std.HTMLButtonElement
+import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricStyling.ithemeMod.ITheme
-import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IGroupShowAllProps extends IGroupDividerProps {
   /**
     * Style function to be passed in to override the themed or default styles
     */
-  var styles: js.UndefOr[IStyleFunctionOrObject[IGroupShowAllStyleProps, IGroupShowAllStyles]] = js.undefined
+  var styles: js.UndefOr[IStyleFunctionOrObject[IGroupShowAllStyleProps, IGroupShowAllStyles]] = js.native
 }
 
 object IGroupShowAllProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    componentRef: IRefObject[js.Object] = null,
-    expandButtonProps: HTMLAttributes[HTMLButtonElement] = null,
-    footerText: String = null,
-    group: IGroup = null,
-    groupIndex: js.UndefOr[Double] = js.undefined,
-    groupLevel: js.UndefOr[Double] = js.undefined,
-    groups: js.Array[IGroup] = null,
-    indentWidth: js.UndefOr[Double] = js.undefined,
-    isCollapsedGroupSelectVisible: js.UndefOr[Boolean] = js.undefined,
-    isGroupLoading: /* group */ IGroup => Boolean = null,
-    isSelected: js.UndefOr[Boolean] = js.undefined,
-    loadingText: String = null,
-    onGroupHeaderClick: /* group */ IGroup => Unit = null,
-    onRenderTitle: (/* props */ js.UndefOr[IGroupHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupHeaderProps], Element | Null]]) => Element | Null = null,
-    onToggleCollapse: /* group */ IGroup => Unit = null,
-    onToggleSelectGroup: /* group */ IGroup => Unit = null,
-    onToggleSummarize: /* group */ IGroup => Unit = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    selectionMode: SelectionMode = null,
-    showAllLinkText: String = null,
-    styles: IStyleFunctionOrObject[IGroupShowAllStyleProps, IGroupShowAllStyles] = null,
-    theme: ITheme = null,
-    viewport: IViewport = null
-  ): IGroupShowAllProps = {
+  def apply(): IGroupShowAllProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (expandButtonProps != null) __obj.updateDynamic("expandButtonProps")(expandButtonProps.asInstanceOf[js.Any])
-    if (footerText != null) __obj.updateDynamic("footerText")(footerText.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupIndex)) __obj.updateDynamic("groupIndex")(groupIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupLevel)) __obj.updateDynamic("groupLevel")(groupLevel.get.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentWidth)) __obj.updateDynamic("indentWidth")(indentWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCollapsedGroupSelectVisible)) __obj.updateDynamic("isCollapsedGroupSelectVisible")(isCollapsedGroupSelectVisible.get.asInstanceOf[js.Any])
-    if (isGroupLoading != null) __obj.updateDynamic("isGroupLoading")(js.Any.fromFunction1(isGroupLoading))
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.get.asInstanceOf[js.Any])
-    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText.asInstanceOf[js.Any])
-    if (onGroupHeaderClick != null) __obj.updateDynamic("onGroupHeaderClick")(js.Any.fromFunction1(onGroupHeaderClick))
-    if (onRenderTitle != null) __obj.updateDynamic("onRenderTitle")(js.Any.fromFunction2(onRenderTitle))
-    if (onToggleCollapse != null) __obj.updateDynamic("onToggleCollapse")(js.Any.fromFunction1(onToggleCollapse))
-    if (onToggleSelectGroup != null) __obj.updateDynamic("onToggleSelectGroup")(js.Any.fromFunction1(onToggleSelectGroup))
-    if (onToggleSummarize != null) __obj.updateDynamic("onToggleSummarize")(js.Any.fromFunction1(onToggleSummarize))
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (showAllLinkText != null) __obj.updateDynamic("showAllLinkText")(showAllLinkText.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroupShowAllProps]
   }
+  @scala.inline
+  implicit class IGroupShowAllPropsOps[Self <: IGroupShowAllProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStylesFunction1(value: IGroupShowAllStyleProps => DeepPartial[IGroupShowAllStyles]): Self = this.set("styles", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStyles(value: IStyleFunctionOrObject[IGroupShowAllStyleProps, IGroupShowAllStyles]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+  }
+  
 }
 

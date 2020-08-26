@@ -21,12 +21,6 @@ class HttpCookiePairHeaderValue protected ()
     * @param value A value for the cookie.
     */
   def this(name: String, value: String) = this()
-  /** Gets a token that represents the cookie name used in the Cookie HTTP header. */
-  /* CompleteClass */
-  override var name: String = js.native
-  /** Gets or sets a value for the cookie used in the Cookie HTTP header. */
-  /* CompleteClass */
-  override var value: String = js.native
 }
 
 /* static members */

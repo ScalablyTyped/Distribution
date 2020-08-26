@@ -54,46 +54,50 @@ trait ParamsResourceProjectsGroupsList extends StandardParameters {
 
 object ParamsResourceProjectsGroupsList {
   @scala.inline
-  def apply(
-    $Dotxgafv: String = null,
-    access_token: String = null,
-    alt: String = null,
-    ancestorsOfGroup: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    callback: String = null,
-    childrenOfGroup: String = null,
-    descendantsOfGroup: String = null,
-    fields: String = null,
-    key: String = null,
-    name: String = null,
-    oauth_token: String = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    pageToken: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    uploadType: String = null,
-    upload_protocol: String = null
-  ): ParamsResourceProjectsGroupsList = {
+  def apply(): ParamsResourceProjectsGroupsList = {
     val __obj = js.Dynamic.literal()
-    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (ancestorsOfGroup != null) __obj.updateDynamic("ancestorsOfGroup")(ancestorsOfGroup.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (childrenOfGroup != null) __obj.updateDynamic("childrenOfGroup")(childrenOfGroup.asInstanceOf[js.Any])
-    if (descendantsOfGroup != null) __obj.updateDynamic("descendantsOfGroup")(descendantsOfGroup.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceProjectsGroupsList]
   }
+  @scala.inline
+  implicit class ParamsResourceProjectsGroupsListOps[Self <: ParamsResourceProjectsGroupsList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAncestorsOfGroup(value: String): Self = this.set("ancestorsOfGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAncestorsOfGroup: Self = this.set("ancestorsOfGroup", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setChildrenOfGroup(value: String): Self = this.set("childrenOfGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildrenOfGroup: Self = this.set("childrenOfGroup", js.undefined)
+    @scala.inline
+    def setDescendantsOfGroup(value: String): Self = this.set("descendantsOfGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescendantsOfGroup: Self = this.set("descendantsOfGroup", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+  }
+  
 }
 

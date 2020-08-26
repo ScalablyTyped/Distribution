@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 trait DateConstructor extends _NativeConstructor {
   def addLocale(localeCode: java.lang.String, `def`: js.Object): Locale = js.native
   def create(): Date = js.native
+  def create(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Date = js.native
   def create(d: java.lang.String): Date = js.native
   def create(d: java.lang.String, options: DateCreateOptions): Date = js.native
   def create(d: Double): Date = js.native
@@ -23,6 +24,8 @@ trait DateConstructor extends _NativeConstructor {
   def getLocale(): Locale = js.native
   def getLocale(localeCode: java.lang.String): Locale = js.native
   def range(): Range = js.native
+  def range(start: js.UndefOr[scala.Nothing], end: java.lang.String): Range = js.native
+  def range(start: js.UndefOr[scala.Nothing], end: Date): Range = js.native
   def range(start: java.lang.String): Range = js.native
   def range(start: java.lang.String, end: java.lang.String): Range = js.native
   def range(start: java.lang.String, end: Date): Range = js.native

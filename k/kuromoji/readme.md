@@ -12,7 +12,7 @@ JavaScript implementation of Japanese morphological analyzer
 | Keywords           | japanese, morphological analyzer, nlp, pos, pos tagger, tokenizer |
 | # releases         | 2 |
 | # dependents       | 32 |
-| # downloads        | 241834 |
+| # downloads        | 251436 |
 | # stars            | 2 |
 
 ## Links

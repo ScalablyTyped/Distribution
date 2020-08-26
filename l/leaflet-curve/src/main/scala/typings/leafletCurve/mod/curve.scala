@@ -11,7 +11,6 @@ object curve extends js.Object {
   /*
     * Drawing Bezier curves and other complex shapes.
     */
-  def apply(path: js.Array[_]): Curve_ = js.native
-  def apply(path: js.Array[_], options: PathOptions): Curve_ = js.native
+  def apply(path: js.Array[_], options: js.UndefOr[PathOptions]): Curve_ = js.native
 }
 

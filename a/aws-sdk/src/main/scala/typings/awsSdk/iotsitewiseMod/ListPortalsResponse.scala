@@ -18,11 +18,32 @@ trait ListPortalsResponse extends js.Object {
 
 object ListPortalsResponse {
   @scala.inline
-  def apply(nextToken: NextToken = null, portalSummaries: PortalSummaries = null): ListPortalsResponse = {
+  def apply(): ListPortalsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (portalSummaries != null) __obj.updateDynamic("portalSummaries")(portalSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPortalsResponse]
   }
+  @scala.inline
+  implicit class ListPortalsResponseOps[Self <: ListPortalsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setPortalSummariesVarargs(value: PortalSummary*): Self = this.set("portalSummaries", js.Array(value :_*))
+    @scala.inline
+    def setPortalSummaries(value: PortalSummaries): Self = this.set("portalSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortalSummaries: Self = this.set("portalSummaries", js.undefined)
+  }
+  
 }
 

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends BPMNModdle {
   def this(packages: js.Any) = this()
+  def this(packages: js.UndefOr[scala.Nothing], options: Option) = this()
   def this(packages: js.Any, options: Option) = this()
 }
 

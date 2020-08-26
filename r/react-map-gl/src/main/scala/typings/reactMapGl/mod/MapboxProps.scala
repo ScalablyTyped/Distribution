@@ -5,84 +5,141 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<react-map-gl.react-map-gl.ViewState> */
+@js.native
 trait MapboxProps extends js.Object {
-  var altitude: js.UndefOr[Double] = js.undefined
-  var attributionControl: js.UndefOr[Boolean] = js.undefined
-  var bearing: js.UndefOr[Double] = js.undefined
-  var container: js.UndefOr[js.Object] = js.undefined
-  var gl: js.UndefOr[js.Object] = js.undefined
-  var height: Double | String
-  var latitude: js.UndefOr[Double] = js.undefined
-  var longitude: js.UndefOr[Double] = js.undefined
-  var mapOptions: js.UndefOr[js.Object] = js.undefined
-  var mapStyle: js.UndefOr[String | js.Object] = js.undefined
-  var mapboxApiAccessToken: js.UndefOr[String] = js.undefined
-  var mapboxApiUrl: js.UndefOr[String] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* e */ MapError, Unit]] = js.undefined
-  var onLoad: js.UndefOr[js.Function1[/* event */ MapLoadEvent, Unit]] = js.undefined
-  var pitch: js.UndefOr[Double] = js.undefined
-  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
-  var reuseMap: js.UndefOr[Boolean] = js.undefined
-  var reuseMaps: js.UndefOr[Boolean] = js.undefined
+  var altitude: js.UndefOr[Double] = js.native
+  var attributionControl: js.UndefOr[Boolean] = js.native
+  var bearing: js.UndefOr[Double] = js.native
+  var container: js.UndefOr[js.Object] = js.native
+  var gl: js.UndefOr[js.Object] = js.native
+  var height: Double | String = js.native
+  var latitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.native
+  var mapOptions: js.UndefOr[js.Object] = js.native
+  var mapStyle: js.UndefOr[String | js.Object] = js.native
+  var mapboxApiAccessToken: js.UndefOr[String] = js.native
+  var mapboxApiUrl: js.UndefOr[String] = js.native
+  var onError: js.UndefOr[js.Function1[/* e */ MapError, Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* event */ MapLoadEvent, Unit]] = js.native
+  var pitch: js.UndefOr[Double] = js.native
+  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.native
+  var reuseMap: js.UndefOr[Boolean] = js.native
+  var reuseMaps: js.UndefOr[Boolean] = js.native
   var transformRequest: js.UndefOr[
     js.Function2[/* url */ js.UndefOr[String], /* resourceType */ js.UndefOr[String], MapRequest]
-  ] = js.undefined
-  var viewState: js.UndefOr[ViewState] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var width: Double | String
-  var zoom: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var viewState: js.UndefOr[ViewState] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var width: Double | String = js.native
+  var zoom: js.UndefOr[Double] = js.native
 }
 
 object MapboxProps {
   @scala.inline
-  def apply(
-    height: Double | String,
-    width: Double | String,
-    altitude: js.UndefOr[Double] = js.undefined,
-    attributionControl: js.UndefOr[Boolean] = js.undefined,
-    bearing: js.UndefOr[Double] = js.undefined,
-    container: js.Object = null,
-    gl: js.Object = null,
-    latitude: js.UndefOr[Double] = js.undefined,
-    longitude: js.UndefOr[Double] = js.undefined,
-    mapOptions: js.Object = null,
-    mapStyle: String | js.Object = null,
-    mapboxApiAccessToken: String = null,
-    mapboxApiUrl: String = null,
-    onError: /* e */ MapError => Unit = null,
-    onLoad: /* event */ MapLoadEvent => Unit = null,
-    pitch: js.UndefOr[Double] = js.undefined,
-    preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined,
-    reuseMap: js.UndefOr[Boolean] = js.undefined,
-    reuseMaps: js.UndefOr[Boolean] = js.undefined,
-    transformRequest: (/* url */ js.UndefOr[String], /* resourceType */ js.UndefOr[String]) => MapRequest = null,
-    viewState: ViewState = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zoom: js.UndefOr[Double] = js.undefined
-  ): MapboxProps = {
+  def apply(height: Double | String, width: Double | String): MapboxProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (gl != null) __obj.updateDynamic("gl")(gl.asInstanceOf[js.Any])
-    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
-    if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions.asInstanceOf[js.Any])
-    if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
-    if (mapboxApiAccessToken != null) __obj.updateDynamic("mapboxApiAccessToken")(mapboxApiAccessToken.asInstanceOf[js.Any])
-    if (mapboxApiUrl != null) __obj.updateDynamic("mapboxApiUrl")(mapboxApiUrl.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseMap)) __obj.updateDynamic("reuseMap")(reuseMap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseMaps)) __obj.updateDynamic("reuseMaps")(reuseMaps.get.asInstanceOf[js.Any])
-    if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction2(transformRequest))
-    if (viewState != null) __obj.updateDynamic("viewState")(viewState.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapboxProps]
   }
+  @scala.inline
+  implicit class MapboxPropsOps[Self <: MapboxProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    @scala.inline
+    def setAttributionControl(value: Boolean): Self = this.set("attributionControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributionControl: Self = this.set("attributionControl", js.undefined)
+    @scala.inline
+    def setBearing(value: Double): Self = this.set("bearing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBearing: Self = this.set("bearing", js.undefined)
+    @scala.inline
+    def setContainer(value: js.Object): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setGl(value: js.Object): Self = this.set("gl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGl: Self = this.set("gl", js.undefined)
+    @scala.inline
+    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    @scala.inline
+    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    @scala.inline
+    def setMapOptions(value: js.Object): Self = this.set("mapOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapOptions: Self = this.set("mapOptions", js.undefined)
+    @scala.inline
+    def setMapStyle(value: String | js.Object): Self = this.set("mapStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapStyle: Self = this.set("mapStyle", js.undefined)
+    @scala.inline
+    def setMapboxApiAccessToken(value: String): Self = this.set("mapboxApiAccessToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapboxApiAccessToken: Self = this.set("mapboxApiAccessToken", js.undefined)
+    @scala.inline
+    def setMapboxApiUrl(value: String): Self = this.set("mapboxApiUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapboxApiUrl: Self = this.set("mapboxApiUrl", js.undefined)
+    @scala.inline
+    def setOnError(value: /* e */ MapError => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnLoad(value: /* event */ MapLoadEvent => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePitch: Self = this.set("pitch", js.undefined)
+    @scala.inline
+    def setPreserveDrawingBuffer(value: Boolean): Self = this.set("preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveDrawingBuffer: Self = this.set("preserveDrawingBuffer", js.undefined)
+    @scala.inline
+    def setReuseMap(value: Boolean): Self = this.set("reuseMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReuseMap: Self = this.set("reuseMap", js.undefined)
+    @scala.inline
+    def setReuseMaps(value: Boolean): Self = this.set("reuseMaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReuseMaps: Self = this.set("reuseMaps", js.undefined)
+    @scala.inline
+    def setTransformRequest(value: (/* url */ js.UndefOr[String], /* resourceType */ js.UndefOr[String]) => MapRequest): Self = this.set("transformRequest", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteTransformRequest: Self = this.set("transformRequest", js.undefined)
+    @scala.inline
+    def setViewState(value: ViewState): Self = this.set("viewState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewState: Self = this.set("viewState", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+  }
+  
 }
 

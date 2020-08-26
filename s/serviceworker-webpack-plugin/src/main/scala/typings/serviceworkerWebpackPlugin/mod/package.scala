@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type ServiceWorkerWebpackPlugin[T] = typings.webpack.mod.Plugin
+  type ServiceWorkerWebpackPlugin[T] = typings.std.Plugin
 }

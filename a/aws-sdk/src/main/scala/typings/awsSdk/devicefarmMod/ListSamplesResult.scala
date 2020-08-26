@@ -18,11 +18,32 @@ trait ListSamplesResult extends js.Object {
 
 object ListSamplesResult {
   @scala.inline
-  def apply(nextToken: PaginationToken = null, samples: Samples = null): ListSamplesResult = {
+  def apply(): ListSamplesResult = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (samples != null) __obj.updateDynamic("samples")(samples.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSamplesResult]
   }
+  @scala.inline
+  implicit class ListSamplesResultOps[Self <: ListSamplesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setSamplesVarargs(value: Sample*): Self = this.set("samples", js.Array(value :_*))
+    @scala.inline
+    def setSamples(value: Samples): Self = this.set("samples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamples: Self = this.set("samples", js.undefined)
+  }
+  
 }
 

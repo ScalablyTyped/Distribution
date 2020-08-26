@@ -140,13 +140,13 @@ trait ChainReference[DataType, ReferenceKey, IsTop /* <: pre_root | root | `fals
     * **Warning**: The Timegraph extension isn't required by default, you would need to include at "gun/lib/time.js"
     */
   /** Pushes data to a Timegraph with it's time set to Gun.state()'s time */
-  var time: js.UndefOr[
-    (js.Function2[
+  var time: (js.UndefOr[
+    js.Function2[
       /* callback */ js.Function3[/* data */ ArrayOf[DataType], /* key */ ReferenceKey, /* time */ Double, Unit], 
       /* alsoReceiveNOldEvents */ js.UndefOr[Double], 
       ChainReference[DataType, ReferenceKey, `false`]
-    ]) with (js.Function1[/* data */ ArrayOf[DataType], Unit])
-  ] = js.native
+    ]
+  ]) with (js.UndefOr[js.Function1[/* data */ ArrayOf[DataType], Unit]]) = js.native
   /**
     * After you save some data in an unordered list, you may need to remove it.
     *
@@ -164,6 +164,7 @@ trait ChainReference[DataType, ReferenceKey, IsTop /* <: pre_root | root | `fals
     * @param opt Option Object containing options for authentiaction. (In gun options are added at end of syntax. opt is rarely used, hence is added at the end.)
     */
   def auth(alias: String, pass: String): ChainReference[_, _, `false`] = js.native
+  def auth(alias: String, pass: String, cb: js.UndefOr[scala.Nothing], opt: js.Object): ChainReference[_, _, `false`] = js.native
   def auth(alias: String, pass: String, cb: js.Function1[/* ack */ Ack | ErrString, Unit]): ChainReference[_, _, `false`] = js.native
   def auth(alias: String, pass: String, cb: js.Function1[/* ack */ Ack | ErrString, Unit], opt: js.Object): ChainReference[_, _, `false`] = js.native
   /**
@@ -186,6 +187,7 @@ trait ChainReference[DataType, ReferenceKey, IsTop /* <: pre_root | root | `fals
     * @param opt Option Object containing options for creation. (In gun options are added at end of syntax. opt is rarely used, hence is added at the end.)
     */
   def create(alias: String, pass: String): ChainReference[_, _, `false`] = js.native
+  def create(alias: String, pass: String, cb: js.UndefOr[scala.Nothing], opt: js.Object): ChainReference[_, _, `false`] = js.native
   def create(alias: String, pass: String, cb: js.Function1[/* ack */ Pub | ErrString, Unit]): ChainReference[_, _, `false`] = js.native
   def create(alias: String, pass: String, cb: js.Function1[/* ack */ Pub | ErrString, Unit], opt: js.Object): ChainReference[_, _, `false`] = js.native
   /**
@@ -227,6 +229,7 @@ trait ChainReference[DataType, ReferenceKey, IsTop /* <: pre_root | root | `fals
     * @param cb unused in current implementation.
     */
   def leave(): ChainReference[_, _, `false`] = js.native
+  def leave(opt: js.UndefOr[scala.Nothing], cb: scala.Nothing): ChainReference[_, _, `false`] = js.native
   def leave(opt: scala.Nothing): ChainReference[_, _, `false`] = js.native
   def leave(opt: scala.Nothing, cb: scala.Nothing): ChainReference[_, _, `false`] = js.native
   /**
@@ -284,6 +287,7 @@ trait ChainReference[DataType, ReferenceKey, IsTop /* <: pre_root | root | `fals
     * @returns In the document, it said the return value may change in the future. Don't rely on it.
     */
   def once(): ChainReference[DataType, ReferenceKey, `false`] = js.native
+  def once(callback: js.UndefOr[scala.Nothing], option: Wait): ChainReference[DataType, ReferenceKey, `false`] = js.native
   def once(
     callback: js.Function2[
       /* data */ js.UndefOr[DisallowPrimitives[IsTop, AlwaysDisallowedType[ArrayAsRecord[DataType]]]], 
@@ -336,10 +340,14 @@ trait ChainReference[DataType, ReferenceKey, IsTop /* <: pre_root | root | `fals
     * @param cb internally the callback is passed on to the user.auth function to logged the user back in. Refer to user.auth for callback documentation.
     */
   def recall(): ChainReference[_, _, `false`] = js.native
+  def recall(
+    opt: js.UndefOr[scala.Nothing],
+    cb: /* import warning: importer.ImportType#apply Failed type conversion: gun.gun.Gun.Parameters<(alias : string, pass : string, cb : (ack : gun.anon.Ack | gun.anon.ErrString): void | undefined, opt : {} | undefined): gun.gun.Gun.ChainReference<any, any, false>>[2] */ js.Any
+  ): ChainReference[_, _, `false`] = js.native
   def recall(opt: SessionStorage): ChainReference[_, _, `false`] = js.native
   def recall(
     opt: SessionStorage,
-    cb: /* import warning: importer.ImportType#apply Failed type conversion: gun.gun.Gun.Parameters<(alias : string, pass : string, cb ? : (ack : gun.anon.Ack | gun.anon.ErrString): void, opt ? : {}): gun.gun.Gun.ChainReference<any, any, false>>[2] */ js.Any
+    cb: /* import warning: importer.ImportType#apply Failed type conversion: gun.gun.Gun.Parameters<(alias : string, pass : string, cb : (ack : gun.anon.Ack | gun.anon.ErrString): void | undefined, opt : {} | undefined): gun.gun.Gun.ChainReference<any, any, false>>[2] */ js.Any
   ): ChainReference[_, _, `false`] = js.native
   /**
     * **.set does not means 'set data', it means a Mathematical Set**

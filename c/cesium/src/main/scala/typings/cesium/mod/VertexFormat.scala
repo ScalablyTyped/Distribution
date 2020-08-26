@@ -30,6 +30,7 @@ object VertexFormat extends js.Object {
   def clone(cartesian: VertexFormat): VertexFormat = js.native
   def clone(cartesian: VertexFormat, result: VertexFormat): VertexFormat = js.native
   def unpack(array: js.Array[Double]): VertexFormat = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: VertexFormat): VertexFormat = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): VertexFormat = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: VertexFormat): VertexFormat = js.native
 }

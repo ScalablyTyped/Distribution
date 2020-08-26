@@ -4,7 +4,7 @@ import typings.autocannon.autocannonStrings.body
 import typings.autocannon.autocannonStrings.headers
 import typings.autocannon.autocannonStrings.response
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.httpMod.IncomingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,6 +54,8 @@ trait Client extends EventEmitter {
     * @param body - should be a `String` or `Buffer`, or `undefined` if you want to remove the body.
     */
   def setHeadersAndBody(): Unit = js.native
+  def setHeadersAndBody(headers: js.UndefOr[scala.Nothing], body: String): Unit = js.native
+  def setHeadersAndBody(headers: js.UndefOr[scala.Nothing], body: Buffer): Unit = js.native
   def setHeadersAndBody(headers: IncomingHttpHeaders): Unit = js.native
   def setHeadersAndBody(headers: IncomingHttpHeaders, body: String): Unit = js.native
   def setHeadersAndBody(headers: IncomingHttpHeaders, body: Buffer): Unit = js.native

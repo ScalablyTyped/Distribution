@@ -29,6 +29,7 @@ class ResourceAccountsAlerts protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsAlertsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsAlertsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -57,6 +58,7 @@ class ResourceAccountsAlerts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAlerts] = js.native
   def list(callback: BodyResponseCallback[SchemaAlerts]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAlerts] = js.native
   def list(params: ParamsResourceAccountsAlertsList): GaxiosPromise[SchemaAlerts] = js.native
   def list(params: ParamsResourceAccountsAlertsList, callback: BodyResponseCallback[SchemaAlerts]): Unit = js.native
   def list(

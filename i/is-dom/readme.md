@@ -11,8 +11,8 @@ Check if the given object is a dom node
 | Full name          | is-dom |
 | Keywords           | dom, html, is dom, dom node, dom object |
 | # releases         | 2 |
-| # dependents       | 53 |
-| # downloads        | 50602407 |
+| # dependents       | 54 |
+| # downloads        | 59314901 |
 | # stars            | 3 |
 
 ## Links

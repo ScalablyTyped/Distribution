@@ -5,37 +5,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IComputedValueOptions[T] extends js.Object {
-  var context: js.UndefOr[js.Any] = js.undefined
+  var context: js.UndefOr[js.Any] = js.native
   @JSName("equals")
-  var equals_FIComputedValueOptions: js.UndefOr[IEqualsComparer[T]] = js.undefined
-  var get: js.UndefOr[js.Function0[T]] = js.undefined
-  var keepAlive: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var requiresReaction: js.UndefOr[Boolean] = js.undefined
-  var set: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
+  var equals_FIComputedValueOptions: js.UndefOr[IEqualsComparer[T]] = js.native
+  var get: js.UndefOr[js.Function0[T]] = js.native
+  var keepAlive: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
+  var requiresReaction: js.UndefOr[Boolean] = js.native
+  var set: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
 }
 
 object IComputedValueOptions {
   @scala.inline
-  def apply[T](
-    context: js.Any = null,
-    equals: (T, T) => Boolean = null,
-    get: () => T = null,
-    keepAlive: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    requiresReaction: js.UndefOr[Boolean] = js.undefined,
-    set: /* value */ T => Unit = null
-  ): IComputedValueOptions[T] = {
+  def apply[T](): IComputedValueOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
-    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction0(get))
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(requiresReaction)) __obj.updateDynamic("requiresReaction")(requiresReaction.get.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1(set))
     __obj.asInstanceOf[IComputedValueOptions[T]]
   }
+  @scala.inline
+  implicit class IComputedValueOptionsOps[Self <: IComputedValueOptions[_], T] (val x: Self with IComputedValueOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setEquals(value: (T, T) => Boolean): Self = this.set("equals", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteEquals: Self = this.set("equals", js.undefined)
+    @scala.inline
+    def setGet(value: () => T): Self = this.set("get", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGet: Self = this.set("get", js.undefined)
+    @scala.inline
+    def setKeepAlive(value: Boolean): Self = this.set("keepAlive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepAlive: Self = this.set("keepAlive", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRequiresReaction(value: Boolean): Self = this.set("requiresReaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiresReaction: Self = this.set("requiresReaction", js.undefined)
+    @scala.inline
+    def setSet(value: /* value */ T => Unit): Self = this.set("set", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSet: Self = this.set("set", js.undefined)
+  }
+  
 }
 

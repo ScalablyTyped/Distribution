@@ -67,6 +67,7 @@ object mod extends js.Object {
   def setIn[T](collection: T, path: js.Array[Double | String], value: js.Any): T = js.native
   def shift[T](array: js.Array[T]): js.Array[T] = js.native
   def slice[T](array: js.Array[T]): js.Array[T] = js.native
+  def slice[T](array: js.Array[T], begin: js.UndefOr[scala.Nothing], end: Double): js.Array[T] = js.native
   def slice[T](array: js.Array[T], begin: Double): js.Array[T] = js.native
   def slice[T](array: js.Array[T], begin: Double, end: Double): js.Array[T] = js.native
   def sort[T](array: js.Array[T]): js.Array[T] = js.native

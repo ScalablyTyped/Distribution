@@ -26,18 +26,44 @@ trait DescribePlacementGroupsRequest extends js.Object {
 
 object DescribePlacementGroupsRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    GroupIds: PlacementGroupIdStringList = null,
-    GroupNames: PlacementGroupStringList = null
-  ): DescribePlacementGroupsRequest = {
+  def apply(): DescribePlacementGroupsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (GroupIds != null) __obj.updateDynamic("GroupIds")(GroupIds.asInstanceOf[js.Any])
-    if (GroupNames != null) __obj.updateDynamic("GroupNames")(GroupNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePlacementGroupsRequest]
   }
+  @scala.inline
+  implicit class DescribePlacementGroupsRequestOps[Self <: DescribePlacementGroupsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setGroupIdsVarargs(value: PlacementGroupId*): Self = this.set("GroupIds", js.Array(value :_*))
+    @scala.inline
+    def setGroupIds(value: PlacementGroupIdStringList): Self = this.set("GroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupIds: Self = this.set("GroupIds", js.undefined)
+    @scala.inline
+    def setGroupNamesVarargs(value: PlacementGroupName*): Self = this.set("GroupNames", js.Array(value :_*))
+    @scala.inline
+    def setGroupNames(value: PlacementGroupStringList): Self = this.set("GroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupNames: Self = this.set("GroupNames", js.undefined)
+  }
+  
 }
 

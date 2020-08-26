@@ -26,17 +26,40 @@ trait ThingIndexingConfiguration extends js.Object {
 
 object ThingIndexingConfiguration {
   @scala.inline
-  def apply(
-    thingIndexingMode: ThingIndexingMode,
-    customFields: Fields = null,
-    managedFields: Fields = null,
-    thingConnectivityIndexingMode: ThingConnectivityIndexingMode = null
-  ): ThingIndexingConfiguration = {
+  def apply(thingIndexingMode: ThingIndexingMode): ThingIndexingConfiguration = {
     val __obj = js.Dynamic.literal(thingIndexingMode = thingIndexingMode.asInstanceOf[js.Any])
-    if (customFields != null) __obj.updateDynamic("customFields")(customFields.asInstanceOf[js.Any])
-    if (managedFields != null) __obj.updateDynamic("managedFields")(managedFields.asInstanceOf[js.Any])
-    if (thingConnectivityIndexingMode != null) __obj.updateDynamic("thingConnectivityIndexingMode")(thingConnectivityIndexingMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingIndexingConfiguration]
   }
+  @scala.inline
+  implicit class ThingIndexingConfigurationOps[Self <: ThingIndexingConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingIndexingMode(value: ThingIndexingMode): Self = this.set("thingIndexingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomFieldsVarargs(value: Field*): Self = this.set("customFields", js.Array(value :_*))
+    @scala.inline
+    def setCustomFields(value: Fields): Self = this.set("customFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomFields: Self = this.set("customFields", js.undefined)
+    @scala.inline
+    def setManagedFieldsVarargs(value: Field*): Self = this.set("managedFields", js.Array(value :_*))
+    @scala.inline
+    def setManagedFields(value: Fields): Self = this.set("managedFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedFields: Self = this.set("managedFields", js.undefined)
+    @scala.inline
+    def setThingConnectivityIndexingMode(value: ThingConnectivityIndexingMode): Self = this.set("thingConnectivityIndexingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingConnectivityIndexingMode: Self = this.set("thingConnectivityIndexingMode", js.undefined)
+  }
+  
 }
 

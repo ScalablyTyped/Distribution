@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartSeriesItemNotes extends js.Object {
-  var icon: js.UndefOr[ChartSeriesItemNotesIcon] = js.undefined
-  var label: js.UndefOr[ChartSeriesItemNotesLabel] = js.undefined
-  var line: js.UndefOr[ChartSeriesItemNotesLine] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var visual: js.UndefOr[js.Function] = js.undefined
+  var icon: js.UndefOr[ChartSeriesItemNotesIcon] = js.native
+  var label: js.UndefOr[ChartSeriesItemNotesLabel] = js.native
+  var line: js.UndefOr[ChartSeriesItemNotesLine] = js.native
+  var position: js.UndefOr[String] = js.native
+  var visual: js.UndefOr[js.Function] = js.native
 }
 
 object ChartSeriesItemNotes {
   @scala.inline
-  def apply(
-    icon: ChartSeriesItemNotesIcon = null,
-    label: ChartSeriesItemNotesLabel = null,
-    line: ChartSeriesItemNotesLine = null,
-    position: String = null,
-    visual: js.Function = null
-  ): ChartSeriesItemNotes = {
+  def apply(): ChartSeriesItemNotes = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesItemNotes]
   }
+  @scala.inline
+  implicit class ChartSeriesItemNotesOps[Self <: ChartSeriesItemNotes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIcon(value: ChartSeriesItemNotesIcon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setLabel(value: ChartSeriesItemNotesLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLine(value: ChartSeriesItemNotesLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setVisual(value: js.Function): Self = this.set("visual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisual: Self = this.set("visual", js.undefined)
+  }
+  
 }
 

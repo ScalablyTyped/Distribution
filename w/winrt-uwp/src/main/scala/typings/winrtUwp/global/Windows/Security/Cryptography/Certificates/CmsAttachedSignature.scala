@@ -1,7 +1,6 @@
 package typings.winrtUwp.global.Windows.Security.Cryptography.Certificates
 
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
@@ -18,21 +17,6 @@ class CmsAttachedSignature protected ()
     * @param inputBlob A signed CMS message blob.
     */
   def this(inputBlob: IBuffer) = this()
-  /** Gets the list of certificates that are used for chain building for the signer certificate. */
-  /* CompleteClass */
-  override var certificates: IVectorView[typings.winrtUwp.Windows.Security.Cryptography.Certificates.Certificate] = js.native
-  /** Gets the content of the signed CMS message. */
-  /* CompleteClass */
-  override var content: Double = js.native
-  /** Gets the list of signers that are used for creating or verifying the signature. */
-  /* CompleteClass */
-  override var signers: IVectorView[typings.winrtUwp.Windows.Security.Cryptography.Certificates.CmsSignerInfo] = js.native
-  /**
-    * Verifies the signature contained in the signed CMS message.
-    * @return The result of the signature verification operation.
-    */
-  /* CompleteClass */
-  override def verifySignature(): typings.winrtUwp.Windows.Security.Cryptography.Certificates.SignatureValidationResult = js.native
 }
 
 /* static members */

@@ -5,92 +5,153 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AuthOptions extends js.Object {
-  var __tryLocalStorageFirst: js.UndefOr[Boolean] = js.undefined
-  var _csrf: js.UndefOr[String] = js.undefined
-  var _disableDeprecationWarnings: js.UndefOr[Boolean] = js.undefined
-  var _intstate: js.UndefOr[String] = js.undefined
-  var _sendTelemetry: js.UndefOr[Boolean] = js.undefined
-  var _telemetryInfo: js.UndefOr[js.Any] = js.undefined
-  var _timesToRetryFailedRequests: js.UndefOr[Double] = js.undefined
-  var audience: js.UndefOr[String] = js.undefined
-  var clientID: String
-  var domain: String
-  var jwksURI: js.UndefOr[String] = js.undefined
-  var leeway: js.UndefOr[Double] = js.undefined
+  var __tryLocalStorageFirst: js.UndefOr[Boolean] = js.native
+  var _csrf: js.UndefOr[String] = js.native
+  var _disableDeprecationWarnings: js.UndefOr[Boolean] = js.native
+  var _intstate: js.UndefOr[String] = js.native
+  var _sendTelemetry: js.UndefOr[Boolean] = js.native
+  var _telemetryInfo: js.UndefOr[js.Any] = js.native
+  var _timesToRetryFailedRequests: js.UndefOr[Double] = js.native
+  var audience: js.UndefOr[String] = js.native
+  var clientID: String = js.native
+  var domain: String = js.native
+  var jwksURI: js.UndefOr[String] = js.native
+  var leeway: js.UndefOr[Double] = js.native
   /**
     * maximum elapsed time in seconds since the last time the user
     * was actively authenticated by the authorization server.
     */
-  var maxAge: js.UndefOr[Double] = js.undefined
-  var overrides: js.UndefOr[Jwksuri] = js.undefined
-  var plugins: js.UndefOr[js.Any] = js.undefined
-  var popupOrigin: js.UndefOr[String] = js.undefined
-  var protocol: js.UndefOr[String] = js.undefined
-  var redirectUri: js.UndefOr[String] = js.undefined
-  var responseMode: js.UndefOr[String] = js.undefined
-  var responseType: js.UndefOr[String] = js.undefined
-  var response_type: js.UndefOr[String] = js.undefined
-  var scope: js.UndefOr[String] = js.undefined
-  var state: js.UndefOr[String] = js.undefined
-  var tenant: js.UndefOr[String] = js.undefined
-  var universalLoginPage: js.UndefOr[Boolean] = js.undefined
+  var maxAge: js.UndefOr[Double] = js.native
+  var overrides: js.UndefOr[Jwksuri] = js.native
+  var plugins: js.UndefOr[js.Any] = js.native
+  var popupOrigin: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.native
+  var redirectUri: js.UndefOr[String] = js.native
+  var responseMode: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.native
+  var response_type: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.native
+  var tenant: js.UndefOr[String] = js.native
+  var universalLoginPage: js.UndefOr[Boolean] = js.native
 }
 
 object AuthOptions {
   @scala.inline
-  def apply(
-    clientID: String,
-    domain: String,
-    __tryLocalStorageFirst: js.UndefOr[Boolean] = js.undefined,
-    _csrf: String = null,
-    _disableDeprecationWarnings: js.UndefOr[Boolean] = js.undefined,
-    _intstate: String = null,
-    _sendTelemetry: js.UndefOr[Boolean] = js.undefined,
-    _telemetryInfo: js.Any = null,
-    _timesToRetryFailedRequests: js.UndefOr[Double] = js.undefined,
-    audience: String = null,
-    jwksURI: String = null,
-    leeway: js.UndefOr[Double] = js.undefined,
-    maxAge: js.UndefOr[Double] = js.undefined,
-    overrides: Jwksuri = null,
-    plugins: js.Any = null,
-    popupOrigin: String = null,
-    protocol: String = null,
-    redirectUri: String = null,
-    responseMode: String = null,
-    responseType: String = null,
-    response_type: String = null,
-    scope: String = null,
-    state: String = null,
-    tenant: String = null,
-    universalLoginPage: js.UndefOr[Boolean] = js.undefined
-  ): AuthOptions = {
+  def apply(clientID: String, domain: String): AuthOptions = {
     val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any])
-    if (!js.isUndefined(__tryLocalStorageFirst)) __obj.updateDynamic("__tryLocalStorageFirst")(__tryLocalStorageFirst.get.asInstanceOf[js.Any])
-    if (_csrf != null) __obj.updateDynamic("_csrf")(_csrf.asInstanceOf[js.Any])
-    if (!js.isUndefined(_disableDeprecationWarnings)) __obj.updateDynamic("_disableDeprecationWarnings")(_disableDeprecationWarnings.get.asInstanceOf[js.Any])
-    if (_intstate != null) __obj.updateDynamic("_intstate")(_intstate.asInstanceOf[js.Any])
-    if (!js.isUndefined(_sendTelemetry)) __obj.updateDynamic("_sendTelemetry")(_sendTelemetry.get.asInstanceOf[js.Any])
-    if (_telemetryInfo != null) __obj.updateDynamic("_telemetryInfo")(_telemetryInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(_timesToRetryFailedRequests)) __obj.updateDynamic("_timesToRetryFailedRequests")(_timesToRetryFailedRequests.get.asInstanceOf[js.Any])
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (jwksURI != null) __obj.updateDynamic("jwksURI")(jwksURI.asInstanceOf[js.Any])
-    if (!js.isUndefined(leeway)) __obj.updateDynamic("leeway")(leeway.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (popupOrigin != null) __obj.updateDynamic("popupOrigin")(popupOrigin.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
-    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tenant != null) __obj.updateDynamic("tenant")(tenant.asInstanceOf[js.Any])
-    if (!js.isUndefined(universalLoginPage)) __obj.updateDynamic("universalLoginPage")(universalLoginPage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
+  @scala.inline
+  implicit class AuthOptionsOps[Self <: AuthOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientID(value: String): Self = this.set("clientID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set__tryLocalStorageFirst(value: Boolean): Self = this.set("__tryLocalStorageFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete__tryLocalStorageFirst: Self = this.set("__tryLocalStorageFirst", js.undefined)
+    @scala.inline
+    def set_csrf(value: String): Self = this.set("_csrf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_csrf: Self = this.set("_csrf", js.undefined)
+    @scala.inline
+    def set_disableDeprecationWarnings(value: Boolean): Self = this.set("_disableDeprecationWarnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_disableDeprecationWarnings: Self = this.set("_disableDeprecationWarnings", js.undefined)
+    @scala.inline
+    def set_intstate(value: String): Self = this.set("_intstate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_intstate: Self = this.set("_intstate", js.undefined)
+    @scala.inline
+    def set_sendTelemetry(value: Boolean): Self = this.set("_sendTelemetry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_sendTelemetry: Self = this.set("_sendTelemetry", js.undefined)
+    @scala.inline
+    def set_telemetryInfo(value: js.Any): Self = this.set("_telemetryInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_telemetryInfo: Self = this.set("_telemetryInfo", js.undefined)
+    @scala.inline
+    def set_timesToRetryFailedRequests(value: Double): Self = this.set("_timesToRetryFailedRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_timesToRetryFailedRequests: Self = this.set("_timesToRetryFailedRequests", js.undefined)
+    @scala.inline
+    def setAudience(value: String): Self = this.set("audience", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudience: Self = this.set("audience", js.undefined)
+    @scala.inline
+    def setJwksURI(value: String): Self = this.set("jwksURI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJwksURI: Self = this.set("jwksURI", js.undefined)
+    @scala.inline
+    def setLeeway(value: Double): Self = this.set("leeway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeeway: Self = this.set("leeway", js.undefined)
+    @scala.inline
+    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    @scala.inline
+    def setOverrides(value: Jwksuri): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setPlugins(value: js.Any): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+    @scala.inline
+    def setPopupOrigin(value: String): Self = this.set("popupOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupOrigin: Self = this.set("popupOrigin", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setRedirectUri(value: String): Self = this.set("redirectUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirectUri: Self = this.set("redirectUri", js.undefined)
+    @scala.inline
+    def setResponseMode(value: String): Self = this.set("responseMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseMode: Self = this.set("responseMode", js.undefined)
+    @scala.inline
+    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    @scala.inline
+    def setResponse_type(value: String): Self = this.set("response_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse_type: Self = this.set("response_type", js.undefined)
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTenant(value: String): Self = this.set("tenant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenant: Self = this.set("tenant", js.undefined)
+    @scala.inline
+    def setUniversalLoginPage(value: Boolean): Self = this.set("universalLoginPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniversalLoginPage: Self = this.set("universalLoginPage", js.undefined)
+  }
+  
 }
 

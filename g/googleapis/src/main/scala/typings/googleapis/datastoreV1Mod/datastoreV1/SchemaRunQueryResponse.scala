@@ -21,11 +21,30 @@ trait SchemaRunQueryResponse extends js.Object {
 
 object SchemaRunQueryResponse {
   @scala.inline
-  def apply(batch: SchemaQueryResultBatch = null, query: SchemaQuery = null): SchemaRunQueryResponse = {
+  def apply(): SchemaRunQueryResponse = {
     val __obj = js.Dynamic.literal()
-    if (batch != null) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRunQueryResponse]
   }
+  @scala.inline
+  implicit class SchemaRunQueryResponseOps[Self <: SchemaRunQueryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatch(value: SchemaQueryResultBatch): Self = this.set("batch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatch: Self = this.set("batch", js.undefined)
+    @scala.inline
+    def setQuery(value: SchemaQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+  }
+  
 }
 

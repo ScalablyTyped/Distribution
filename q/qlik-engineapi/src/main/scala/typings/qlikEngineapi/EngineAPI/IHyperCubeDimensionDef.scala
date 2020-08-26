@@ -4,40 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IHyperCubeDimensionDef extends INxDimension {
   @JSName("qDef")
-  var qDef_IHyperCubeDimensionDef: IHyperCubeDimensionqDef
+  var qDef_IHyperCubeDimensionDef: IHyperCubeDimensionqDef = js.native
 }
 
 object IHyperCubeDimensionDef {
   @scala.inline
-  def apply(
-    qDef: IHyperCubeDimensionqDef,
-    qAttributeDimensions: js.Array[INxAttrDimDef] = null,
-    qAttributeExpressions: js.Array[INxAttrExprDef] = null,
-    qCalcCond: IValueExpr = null,
-    qIncludeElemValue: js.UndefOr[Boolean] = js.undefined,
-    qLibraryId: String = null,
-    qNullSuppression: js.UndefOr[Boolean] = js.undefined,
-    qOtherLabel: IStringExpressionContainer = null,
-    qOtherTotalSpec: IOtherTotalSpecProp = null,
-    qShowAll: js.UndefOr[Boolean] = js.undefined,
-    qShowTotal: js.UndefOr[Boolean] = js.undefined,
-    qTotalLabel: IStringExpressionContainer = null
-  ): IHyperCubeDimensionDef = {
+  def apply(qDef: IHyperCubeDimensionqDef): IHyperCubeDimensionDef = {
     val __obj = js.Dynamic.literal(qDef = qDef.asInstanceOf[js.Any])
-    if (qAttributeDimensions != null) __obj.updateDynamic("qAttributeDimensions")(qAttributeDimensions.asInstanceOf[js.Any])
-    if (qAttributeExpressions != null) __obj.updateDynamic("qAttributeExpressions")(qAttributeExpressions.asInstanceOf[js.Any])
-    if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond.asInstanceOf[js.Any])
-    if (!js.isUndefined(qIncludeElemValue)) __obj.updateDynamic("qIncludeElemValue")(qIncludeElemValue.get.asInstanceOf[js.Any])
-    if (qLibraryId != null) __obj.updateDynamic("qLibraryId")(qLibraryId.asInstanceOf[js.Any])
-    if (!js.isUndefined(qNullSuppression)) __obj.updateDynamic("qNullSuppression")(qNullSuppression.get.asInstanceOf[js.Any])
-    if (qOtherLabel != null) __obj.updateDynamic("qOtherLabel")(qOtherLabel.asInstanceOf[js.Any])
-    if (qOtherTotalSpec != null) __obj.updateDynamic("qOtherTotalSpec")(qOtherTotalSpec.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowAll)) __obj.updateDynamic("qShowAll")(qShowAll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowTotal)) __obj.updateDynamic("qShowTotal")(qShowTotal.get.asInstanceOf[js.Any])
-    if (qTotalLabel != null) __obj.updateDynamic("qTotalLabel")(qTotalLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHyperCubeDimensionDef]
   }
+  @scala.inline
+  implicit class IHyperCubeDimensionDefOps[Self <: IHyperCubeDimensionDef] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQDef(value: IHyperCubeDimensionqDef): Self = this.set("qDef", value.asInstanceOf[js.Any])
+  }
+  
 }
 

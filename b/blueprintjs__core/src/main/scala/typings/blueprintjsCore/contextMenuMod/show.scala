@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object show extends js.Object {
   def apply(menu: Element, offset: IOffset): Unit = js.native
+  def apply(menu: Element, offset: IOffset, onClose: js.UndefOr[scala.Nothing], isDarkTheme: Boolean): Unit = js.native
   def apply(menu: Element, offset: IOffset, onClose: js.Function0[Unit]): Unit = js.native
   def apply(menu: Element, offset: IOffset, onClose: js.Function0[Unit], isDarkTheme: Boolean): Unit = js.native
 }

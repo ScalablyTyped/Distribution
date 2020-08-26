@@ -1,7 +1,7 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod.DevExpress.event
+import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid
 import typings.devextreme.mod.DevExpress.ui.dxDataGridRowObject
 import typings.devextreme.mod.global.JQueryEventObject
@@ -9,63 +9,108 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CellElement extends js.Object {
-  var cellElement: js.UndefOr[dxElement] = js.undefined
-  var column: js.UndefOr[js.Any] = js.undefined
-  var columnIndex: js.UndefOr[Double] = js.undefined
-  var component: js.UndefOr[dxDataGrid] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var displayValue: js.UndefOr[js.Any] = js.undefined
-  var element: js.UndefOr[dxElement] = js.undefined
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.event] = js.undefined
-  var jQueryEvent: js.UndefOr[JQueryEventObject] = js.undefined
-  var key: js.UndefOr[js.Any] = js.undefined
-  var model: js.UndefOr[js.Any] = js.undefined
-  var row: js.UndefOr[dxDataGridRowObject] = js.undefined
-  var rowIndex: js.UndefOr[Double] = js.undefined
-  var rowType: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  var cellElement: js.UndefOr[dxElement] = js.native
+  var column: js.UndefOr[js.Any] = js.native
+  var columnIndex: js.UndefOr[Double] = js.native
+  var component: js.UndefOr[dxDataGrid] = js.native
+  var data: js.UndefOr[js.Any] = js.native
+  var displayValue: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[dxElement] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var jQueryEvent: js.UndefOr[JQueryEventObject] = js.native
+  var key: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.native
+  var row: js.UndefOr[dxDataGridRowObject] = js.native
+  var rowIndex: js.UndefOr[Double] = js.native
+  var rowType: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.native
+  var value: js.UndefOr[js.Any] = js.native
 }
 
 object CellElement {
   @scala.inline
-  def apply(
-    cellElement: dxElement = null,
-    column: js.Any = null,
-    columnIndex: js.UndefOr[Double] = js.undefined,
-    component: dxDataGrid = null,
-    data: js.Any = null,
-    displayValue: js.Any = null,
-    element: dxElement = null,
-    event: event = null,
-    jQueryEvent: JQueryEventObject = null,
-    key: js.Any = null,
-    model: js.Any = null,
-    row: dxDataGridRowObject = null,
-    rowIndex: js.UndefOr[Double] = js.undefined,
-    rowType: String = null,
-    text: String = null,
-    value: js.Any = null
-  ): CellElement = {
+  def apply(): CellElement = {
     val __obj = js.Dynamic.literal()
-    if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (displayValue != null) __obj.updateDynamic("displayValue")(displayValue.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (jQueryEvent != null) __obj.updateDynamic("jQueryEvent")(jQueryEvent.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
-    if (rowType != null) __obj.updateDynamic("rowType")(rowType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellElement]
   }
+  @scala.inline
+  implicit class CellElementOps[Self <: CellElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCellElement(value: dxElement): Self = this.set("cellElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellElement: Self = this.set("cellElement", js.undefined)
+    @scala.inline
+    def setColumn(value: js.Any): Self = this.set("column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumn: Self = this.set("column", js.undefined)
+    @scala.inline
+    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    @scala.inline
+    def setComponent(value: dxDataGrid): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDisplayValue(value: js.Any): Self = this.set("displayValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayValue: Self = this.set("displayValue", js.undefined)
+    @scala.inline
+    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    @scala.inline
+    def setEvent(value: event): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvent: Self = this.set("event", js.undefined)
+    @scala.inline
+    def setJQueryEvent(value: JQueryEventObject): Self = this.set("jQueryEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJQueryEvent: Self = this.set("jQueryEvent", js.undefined)
+    @scala.inline
+    def setKey(value: js.Any): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setRow(value: dxDataGridRowObject): Self = this.set("row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRow: Self = this.set("row", js.undefined)
+    @scala.inline
+    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    @scala.inline
+    def setRowType(value: String): Self = this.set("rowType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowType: Self = this.set("rowType", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

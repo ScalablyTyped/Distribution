@@ -12,7 +12,7 @@ AWS credential provider that sources credentials from ~/.aws/credentials and ~/.
 | Keywords           | aws, credentials |
 | # releases         | 9 |
 | # dependents       | 2 |
-| # downloads        | 35985 |
+| # downloads        | 39442 |
 | # stars            | 0 |
 
 ## Links

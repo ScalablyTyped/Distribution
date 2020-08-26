@@ -4,58 +4,79 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IndicesClearCacheParams extends GenericParams {
-  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
-  var fieldData: js.UndefOr[Boolean] = js.undefined
-  var fielddata: js.UndefOr[Boolean] = js.undefined
+  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var fieldData: js.UndefOr[Boolean] = js.native
+  var fielddata: js.UndefOr[Boolean] = js.native
       // yes the docs really have both
-  var fields: js.UndefOr[NameList] = js.undefined
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
-  var index: js.UndefOr[NameList] = js.undefined
-  var query: js.UndefOr[Boolean] = js.undefined
-  var recycler: js.UndefOr[Boolean] = js.undefined
-  var request: js.UndefOr[Boolean] = js.undefined
+  var fields: js.UndefOr[NameList] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var index: js.UndefOr[NameList] = js.native
+  var query: js.UndefOr[Boolean] = js.native
+  var recycler: js.UndefOr[Boolean] = js.native
+  var request: js.UndefOr[Boolean] = js.native
 }
 
 object IndicesClearCacheParams {
   @scala.inline
-  def apply(
-    allowNoIndices: js.UndefOr[Boolean] = js.undefined,
-    body: js.Any = null,
-    expandWildcards: ExpandWildcards = null,
-    fieldData: js.UndefOr[Boolean] = js.undefined,
-    fielddata: js.UndefOr[Boolean] = js.undefined,
-    fields: NameList = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    ignoreUnavailable: js.UndefOr[Boolean] = js.undefined,
-    index: NameList = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    query: js.UndefOr[Boolean] = js.undefined,
-    recycler: js.UndefOr[Boolean] = js.undefined,
-    request: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: js.UndefOr[Double] = js.undefined
-  ): IndicesClearCacheParams = {
+  def apply(): IndicesClearCacheParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.get.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
-    if (!js.isUndefined(fieldData)) __obj.updateDynamic("fieldData")(fieldData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fielddata)) __obj.updateDynamic("fielddata")(fielddata.get.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.get.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(query)) __obj.updateDynamic("query")(query.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(recycler)) __obj.updateDynamic("recycler")(recycler.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(request)) __obj.updateDynamic("request")(request.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesClearCacheParams]
   }
+  @scala.inline
+  implicit class IndicesClearCacheParamsOps[Self <: IndicesClearCacheParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowNoIndices(value: Boolean): Self = this.set("allowNoIndices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowNoIndices: Self = this.set("allowNoIndices", js.undefined)
+    @scala.inline
+    def setExpandWildcards(value: ExpandWildcards): Self = this.set("expandWildcards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandWildcards: Self = this.set("expandWildcards", js.undefined)
+    @scala.inline
+    def setFieldData(value: Boolean): Self = this.set("fieldData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldData: Self = this.set("fieldData", js.undefined)
+    @scala.inline
+    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    @scala.inline
+    def setFields(value: NameList): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setIgnoreUnavailable(value: Boolean): Self = this.set("ignoreUnavailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUnavailable: Self = this.set("ignoreUnavailable", js.undefined)
+    @scala.inline
+    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    @scala.inline
+    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setQuery(value: Boolean): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setRecycler(value: Boolean): Self = this.set("recycler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecycler: Self = this.set("recycler", js.undefined)
+    @scala.inline
+    def setRequest(value: Boolean): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+  }
+  
 }
 

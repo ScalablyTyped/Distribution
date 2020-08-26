@@ -25,12 +25,10 @@ class DropDownButtonItem protected () extends ActionItem {
   @JSName("model")
   var model_FDropDownButtonItem: IModel = js.native
   def caption: Text = js.native
-  def caption(newValue: Text): js.Any = js.native
-  def image(): js.Any = js.native
-  def image(newValue: IImage): js.Any = js.native
+  def caption_=(newValue: Text): Unit = js.native
+  def image: IImage | Null = js.native
   def imageQualifiedName: String | Null = js.native
-  @JSName("image")
-  def image_Union: IImage | Null = js.native
+  def image_=(newValue: IImage | Null): Unit = js.native
 }
 
 /* static members */

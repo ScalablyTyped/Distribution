@@ -30,18 +30,38 @@ trait BuildConfiguration extends js.Object {
 
 object BuildConfiguration {
   @scala.inline
-  def apply(
-    CodeBuildServiceRole: NonEmptyString,
-    Image: NonEmptyString,
-    ArtifactName: String = null,
-    ComputeType: ComputeType = null,
-    TimeoutInMinutes: js.UndefOr[BoxedInt] = js.undefined
-  ): BuildConfiguration = {
+  def apply(CodeBuildServiceRole: NonEmptyString, Image: NonEmptyString): BuildConfiguration = {
     val __obj = js.Dynamic.literal(CodeBuildServiceRole = CodeBuildServiceRole.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any])
-    if (ArtifactName != null) __obj.updateDynamic("ArtifactName")(ArtifactName.asInstanceOf[js.Any])
-    if (ComputeType != null) __obj.updateDynamic("ComputeType")(ComputeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeoutInMinutes)) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildConfiguration]
   }
+  @scala.inline
+  implicit class BuildConfigurationOps[Self <: BuildConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodeBuildServiceRole(value: NonEmptyString): Self = this.set("CodeBuildServiceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImage(value: NonEmptyString): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArtifactName(value: String): Self = this.set("ArtifactName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactName: Self = this.set("ArtifactName", js.undefined)
+    @scala.inline
+    def setComputeType(value: ComputeType): Self = this.set("ComputeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeType: Self = this.set("ComputeType", js.undefined)
+    @scala.inline
+    def setTimeoutInMinutes(value: BoxedInt): Self = this.set("TimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutInMinutes: Self = this.set("TimeoutInMinutes", js.undefined)
+  }
+  
 }
 

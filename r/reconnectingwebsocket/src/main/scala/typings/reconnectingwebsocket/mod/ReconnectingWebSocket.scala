@@ -194,6 +194,11 @@ trait ReconnectingWebSocket extends EventTarget {
     * Closes the WebSocket connection or connection attempt, if any.
     * If the connection is already `CLOSED`, this method does nothing.
     */
+  def close(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
+  /**
+    * Closes the WebSocket connection or connection attempt, if any.
+    * If the connection is already `CLOSED`, this method does nothing.
+    */
   def close(code: Double): Unit = js.native
   /**
     * Closes the WebSocket connection or connection attempt, if any.

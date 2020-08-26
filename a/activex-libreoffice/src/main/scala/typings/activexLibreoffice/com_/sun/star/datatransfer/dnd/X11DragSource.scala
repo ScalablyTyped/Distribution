@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * via Drag and Drop operations.
   * @see XDragSource
   */
+@js.native
 trait X11DragSource
   extends XDragSource
      with XInitialization

@@ -19,7 +19,7 @@ trait Endpoint extends js.Object {
     */
   var DmsTransferSettings: js.UndefOr[typings.awsSdk.dmsMod.DmsTransferSettings] = js.native
   /**
-    * The settings for the target DynamoDB database. For more information, see the DynamoDBSettings structure.
+    * The settings for the DynamoDB target endpoint. For more information, see the DynamoDBSettings structure.
     */
   var DynamoDbSettings: js.UndefOr[typings.awsSdk.dmsMod.DynamoDbSettings] = js.native
   /**
@@ -59,6 +59,10 @@ trait Endpoint extends js.Object {
     */
   var ExtraConnectionAttributes: js.UndefOr[String] = js.native
   /**
+    * The settings for the IBM Db2 LUW source endpoint. For more information, see the IBMDb2Settings structure. 
+    */
+  var IBMDb2Settings: js.UndefOr[typings.awsSdk.dmsMod.IBMDb2Settings] = js.native
+  /**
     * The settings for the Apache Kafka target endpoint. For more information, see the KafkaSettings structure.
     */
   var KafkaSettings: js.UndefOr[typings.awsSdk.dmsMod.KafkaSettings] = js.native
@@ -71,17 +75,33 @@ trait Endpoint extends js.Object {
     */
   var KmsKeyId: js.UndefOr[String] = js.native
   /**
+    * The settings for the Microsoft SQL Server source and target endpoint. For more information, see the MicrosoftSQLServerSettings structure.
+    */
+  var MicrosoftSQLServerSettings: js.UndefOr[typings.awsSdk.dmsMod.MicrosoftSQLServerSettings] = js.native
+  /**
     * The settings for the MongoDB source endpoint. For more information, see the MongoDbSettings structure.
     */
   var MongoDbSettings: js.UndefOr[typings.awsSdk.dmsMod.MongoDbSettings] = js.native
+  /**
+    * The settings for the MySQL source and target endpoint. For more information, see the MySQLSettings structure.
+    */
+  var MySQLSettings: js.UndefOr[typings.awsSdk.dmsMod.MySQLSettings] = js.native
   /**
     * The settings for the Amazon Neptune target endpoint. For more information, see the NeptuneSettings structure.
     */
   var NeptuneSettings: js.UndefOr[typings.awsSdk.dmsMod.NeptuneSettings] = js.native
   /**
+    * The settings for the Oracle source and target endpoint. For more information, see the OracleSettings structure.
+    */
+  var OracleSettings: js.UndefOr[typings.awsSdk.dmsMod.OracleSettings] = js.native
+  /**
     * The port value used to access the endpoint.
     */
   var Port: js.UndefOr[IntegerOptional] = js.native
+  /**
+    * The settings for the PostgreSQL source and target endpoint. For more information, see the PostgreSQLSettings structure.
+    */
+  var PostgreSQLSettings: js.UndefOr[typings.awsSdk.dmsMod.PostgreSQLSettings] = js.native
   /**
     * Settings for the Amazon Redshift endpoint.
     */
@@ -107,6 +127,10 @@ trait Endpoint extends js.Object {
     */
   var Status: js.UndefOr[String] = js.native
   /**
+    * The settings for the SAP ASE source and target endpoint. For more information, see the SybaseSettings structure.
+    */
+  var SybaseSettings: js.UndefOr[typings.awsSdk.dmsMod.SybaseSettings] = js.native
+  /**
     * The user name used to connect to the endpoint.
     */
   var Username: js.UndefOr[String] = js.native
@@ -114,62 +138,150 @@ trait Endpoint extends js.Object {
 
 object Endpoint {
   @scala.inline
-  def apply(
-    CertificateArn: String = null,
-    DatabaseName: String = null,
-    DmsTransferSettings: DmsTransferSettings = null,
-    DynamoDbSettings: DynamoDbSettings = null,
-    ElasticsearchSettings: ElasticsearchSettings = null,
-    EndpointArn: String = null,
-    EndpointIdentifier: String = null,
-    EndpointType: ReplicationEndpointTypeValue = null,
-    EngineDisplayName: String = null,
-    EngineName: String = null,
-    ExternalId: String = null,
-    ExternalTableDefinition: String = null,
-    ExtraConnectionAttributes: String = null,
-    KafkaSettings: KafkaSettings = null,
-    KinesisSettings: KinesisSettings = null,
-    KmsKeyId: String = null,
-    MongoDbSettings: MongoDbSettings = null,
-    NeptuneSettings: NeptuneSettings = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
-    RedshiftSettings: RedshiftSettings = null,
-    S3Settings: S3Settings = null,
-    ServerName: String = null,
-    ServiceAccessRoleArn: String = null,
-    SslMode: DmsSslModeValue = null,
-    Status: String = null,
-    Username: String = null
-  ): Endpoint = {
+  def apply(): Endpoint = {
     val __obj = js.Dynamic.literal()
-    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
-    if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
-    if (DmsTransferSettings != null) __obj.updateDynamic("DmsTransferSettings")(DmsTransferSettings.asInstanceOf[js.Any])
-    if (DynamoDbSettings != null) __obj.updateDynamic("DynamoDbSettings")(DynamoDbSettings.asInstanceOf[js.Any])
-    if (ElasticsearchSettings != null) __obj.updateDynamic("ElasticsearchSettings")(ElasticsearchSettings.asInstanceOf[js.Any])
-    if (EndpointArn != null) __obj.updateDynamic("EndpointArn")(EndpointArn.asInstanceOf[js.Any])
-    if (EndpointIdentifier != null) __obj.updateDynamic("EndpointIdentifier")(EndpointIdentifier.asInstanceOf[js.Any])
-    if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
-    if (EngineDisplayName != null) __obj.updateDynamic("EngineDisplayName")(EngineDisplayName.asInstanceOf[js.Any])
-    if (EngineName != null) __obj.updateDynamic("EngineName")(EngineName.asInstanceOf[js.Any])
-    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId.asInstanceOf[js.Any])
-    if (ExternalTableDefinition != null) __obj.updateDynamic("ExternalTableDefinition")(ExternalTableDefinition.asInstanceOf[js.Any])
-    if (ExtraConnectionAttributes != null) __obj.updateDynamic("ExtraConnectionAttributes")(ExtraConnectionAttributes.asInstanceOf[js.Any])
-    if (KafkaSettings != null) __obj.updateDynamic("KafkaSettings")(KafkaSettings.asInstanceOf[js.Any])
-    if (KinesisSettings != null) __obj.updateDynamic("KinesisSettings")(KinesisSettings.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (MongoDbSettings != null) __obj.updateDynamic("MongoDbSettings")(MongoDbSettings.asInstanceOf[js.Any])
-    if (NeptuneSettings != null) __obj.updateDynamic("NeptuneSettings")(NeptuneSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (RedshiftSettings != null) __obj.updateDynamic("RedshiftSettings")(RedshiftSettings.asInstanceOf[js.Any])
-    if (S3Settings != null) __obj.updateDynamic("S3Settings")(S3Settings.asInstanceOf[js.Any])
-    if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName.asInstanceOf[js.Any])
-    if (ServiceAccessRoleArn != null) __obj.updateDynamic("ServiceAccessRoleArn")(ServiceAccessRoleArn.asInstanceOf[js.Any])
-    if (SslMode != null) __obj.updateDynamic("SslMode")(SslMode.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Endpoint]
   }
+  @scala.inline
+  implicit class EndpointOps[Self <: Endpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateArn(value: String): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    @scala.inline
+    def setDatabaseName(value: String): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    @scala.inline
+    def setDmsTransferSettings(value: DmsTransferSettings): Self = this.set("DmsTransferSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDmsTransferSettings: Self = this.set("DmsTransferSettings", js.undefined)
+    @scala.inline
+    def setDynamoDbSettings(value: DynamoDbSettings): Self = this.set("DynamoDbSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamoDbSettings: Self = this.set("DynamoDbSettings", js.undefined)
+    @scala.inline
+    def setElasticsearchSettings(value: ElasticsearchSettings): Self = this.set("ElasticsearchSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticsearchSettings: Self = this.set("ElasticsearchSettings", js.undefined)
+    @scala.inline
+    def setEndpointArn(value: String): Self = this.set("EndpointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointArn: Self = this.set("EndpointArn", js.undefined)
+    @scala.inline
+    def setEndpointIdentifier(value: String): Self = this.set("EndpointIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointIdentifier: Self = this.set("EndpointIdentifier", js.undefined)
+    @scala.inline
+    def setEndpointType(value: ReplicationEndpointTypeValue): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    @scala.inline
+    def setEngineDisplayName(value: String): Self = this.set("EngineDisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineDisplayName: Self = this.set("EngineDisplayName", js.undefined)
+    @scala.inline
+    def setEngineName(value: String): Self = this.set("EngineName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineName: Self = this.set("EngineName", js.undefined)
+    @scala.inline
+    def setExternalId(value: String): Self = this.set("ExternalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("ExternalId", js.undefined)
+    @scala.inline
+    def setExternalTableDefinition(value: String): Self = this.set("ExternalTableDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalTableDefinition: Self = this.set("ExternalTableDefinition", js.undefined)
+    @scala.inline
+    def setExtraConnectionAttributes(value: String): Self = this.set("ExtraConnectionAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraConnectionAttributes: Self = this.set("ExtraConnectionAttributes", js.undefined)
+    @scala.inline
+    def setIBMDb2Settings(value: IBMDb2Settings): Self = this.set("IBMDb2Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIBMDb2Settings: Self = this.set("IBMDb2Settings", js.undefined)
+    @scala.inline
+    def setKafkaSettings(value: KafkaSettings): Self = this.set("KafkaSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKafkaSettings: Self = this.set("KafkaSettings", js.undefined)
+    @scala.inline
+    def setKinesisSettings(value: KinesisSettings): Self = this.set("KinesisSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisSettings: Self = this.set("KinesisSettings", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setMicrosoftSQLServerSettings(value: MicrosoftSQLServerSettings): Self = this.set("MicrosoftSQLServerSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMicrosoftSQLServerSettings: Self = this.set("MicrosoftSQLServerSettings", js.undefined)
+    @scala.inline
+    def setMongoDbSettings(value: MongoDbSettings): Self = this.set("MongoDbSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMongoDbSettings: Self = this.set("MongoDbSettings", js.undefined)
+    @scala.inline
+    def setMySQLSettings(value: MySQLSettings): Self = this.set("MySQLSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMySQLSettings: Self = this.set("MySQLSettings", js.undefined)
+    @scala.inline
+    def setNeptuneSettings(value: NeptuneSettings): Self = this.set("NeptuneSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeptuneSettings: Self = this.set("NeptuneSettings", js.undefined)
+    @scala.inline
+    def setOracleSettings(value: OracleSettings): Self = this.set("OracleSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOracleSettings: Self = this.set("OracleSettings", js.undefined)
+    @scala.inline
+    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setPostgreSQLSettings(value: PostgreSQLSettings): Self = this.set("PostgreSQLSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostgreSQLSettings: Self = this.set("PostgreSQLSettings", js.undefined)
+    @scala.inline
+    def setRedshiftSettings(value: RedshiftSettings): Self = this.set("RedshiftSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedshiftSettings: Self = this.set("RedshiftSettings", js.undefined)
+    @scala.inline
+    def setS3Settings(value: S3Settings): Self = this.set("S3Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Settings: Self = this.set("S3Settings", js.undefined)
+    @scala.inline
+    def setServerName(value: String): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerName: Self = this.set("ServerName", js.undefined)
+    @scala.inline
+    def setServiceAccessRoleArn(value: String): Self = this.set("ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccessRoleArn: Self = this.set("ServiceAccessRoleArn", js.undefined)
+    @scala.inline
+    def setSslMode(value: DmsSslModeValue): Self = this.set("SslMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslMode: Self = this.set("SslMode", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSybaseSettings(value: SybaseSettings): Self = this.set("SybaseSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSybaseSettings: Self = this.set("SybaseSettings", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

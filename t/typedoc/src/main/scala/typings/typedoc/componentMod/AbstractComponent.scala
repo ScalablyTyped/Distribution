@@ -16,10 +16,8 @@ abstract class AbstractComponent[O /* <: ComponentHost */] protected ()
      with ComponentHost {
   def this(owner: O) = this()
   def this(owner: js.Symbol) = this()
-  var _componentOptions: js.UndefOr[js.Any] = js.native
+  var _componentOptions: js.Any = js.native
   var _componentOwner: js.Any = js.native
-  /* CompleteClass */
-  override val application: Application = js.native
   var componentName: String = js.native
   @JSName("application")
   def application_MAbstractComponent: Application = js.native

@@ -12,7 +12,7 @@ Log a deprecation message with stack
 | Keywords           | deprecate, deprecated, deprecation |
 | # releases         | 9 |
 | # dependents       | 8 |
-| # downloads        | 25052282 |
+| # downloads        | 28001267 |
 | # stars            | 0 |
 
 ## Links

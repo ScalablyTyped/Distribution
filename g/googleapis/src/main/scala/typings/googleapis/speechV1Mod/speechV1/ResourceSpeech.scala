@@ -32,6 +32,7 @@ class ResourceSpeech protected () extends js.Object {
     */
   def longrunningrecognize(): GaxiosPromise[SchemaOperation] = js.native
   def longrunningrecognize(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def longrunningrecognize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def longrunningrecognize(params: ParamsResourceSpeechLongrunningrecognize): GaxiosPromise[SchemaOperation] = js.native
   def longrunningrecognize(params: ParamsResourceSpeechLongrunningrecognize, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def longrunningrecognize(
@@ -60,6 +61,7 @@ class ResourceSpeech protected () extends js.Object {
     */
   def recognize(): GaxiosPromise[SchemaRecognizeResponse] = js.native
   def recognize(callback: BodyResponseCallback[SchemaRecognizeResponse]): Unit = js.native
+  def recognize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRecognizeResponse] = js.native
   def recognize(params: ParamsResourceSpeechRecognize): GaxiosPromise[SchemaRecognizeResponse] = js.native
   def recognize(params: ParamsResourceSpeechRecognize, callback: BodyResponseCallback[SchemaRecognizeResponse]): Unit = js.native
   def recognize(

@@ -32,18 +32,38 @@ trait SchemaSecuritySettings extends js.Object {
 
 object SchemaSecuritySettings {
   @scala.inline
-  def apply(
-    authenticationPolicy: SchemaAuthenticationPolicy = null,
-    authorizationConfig: SchemaAuthorizationConfig = null,
-    clientTlsSettings: SchemaClientTlsSettings = null,
-    serverSettingsSelector: SchemaServerSecuritySettingsSelector = null
-  ): SchemaSecuritySettings = {
+  def apply(): SchemaSecuritySettings = {
     val __obj = js.Dynamic.literal()
-    if (authenticationPolicy != null) __obj.updateDynamic("authenticationPolicy")(authenticationPolicy.asInstanceOf[js.Any])
-    if (authorizationConfig != null) __obj.updateDynamic("authorizationConfig")(authorizationConfig.asInstanceOf[js.Any])
-    if (clientTlsSettings != null) __obj.updateDynamic("clientTlsSettings")(clientTlsSettings.asInstanceOf[js.Any])
-    if (serverSettingsSelector != null) __obj.updateDynamic("serverSettingsSelector")(serverSettingsSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecuritySettings]
   }
+  @scala.inline
+  implicit class SchemaSecuritySettingsOps[Self <: SchemaSecuritySettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticationPolicy(value: SchemaAuthenticationPolicy): Self = this.set("authenticationPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationPolicy: Self = this.set("authenticationPolicy", js.undefined)
+    @scala.inline
+    def setAuthorizationConfig(value: SchemaAuthorizationConfig): Self = this.set("authorizationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationConfig: Self = this.set("authorizationConfig", js.undefined)
+    @scala.inline
+    def setClientTlsSettings(value: SchemaClientTlsSettings): Self = this.set("clientTlsSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientTlsSettings: Self = this.set("clientTlsSettings", js.undefined)
+    @scala.inline
+    def setServerSettingsSelector(value: SchemaServerSecuritySettingsSelector): Self = this.set("serverSettingsSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSettingsSelector: Self = this.set("serverSettingsSelector", js.undefined)
+  }
+  
 }
 

@@ -114,20 +114,33 @@ trait AnimatedSprite_ extends Sprite {
     */
   def gotoAndStop(frameNumber: Double): Unit = js.native
   /**
-    * Function to call when an AnimatedSprite finishes playing.
+    * User-assigned function to call when an AnimatedSprite finishes playing.
     *
+    * @example
+    * animation.onComplete = function () {
+    *   // finished!
+    * };
     * @member {Function} PIXI.AnimatedSprite#onComplete
     */
   def onComplete(params: js.Any*): js.Any = js.native
   /**
-    * Function to call when an AnimatedSprite changes which texture is being rendered.
+    * User-assigned function to call when an AnimatedSprite changes which texture is being rendered.
     *
+    * @example
+    * animation.onFrameChange = function () {
+    *   // updated!
+    * };
     * @member {Function} PIXI.AnimatedSprite#onFrameChange
     */
   def onFrameChange(params: js.Any*): js.Any = js.native
   /**
-    * Function to call when `loop` is true, and an AnimatedSprite is played and loops around to start again.
+    * User-assigned function to call when `loop` is true, and an AnimatedSprite is played and
+    * loops around to start again.
     *
+    * @example
+    * animation.onLoop = function () {
+    *   // looped!
+    * };
     * @member {Function} PIXI.AnimatedSprite#onLoop
     */
   def onLoop(params: js.Any*): js.Any = js.native

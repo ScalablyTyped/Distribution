@@ -10,9 +10,9 @@ Provides a method to inject and analyze web pages using aXe
 | ------------------ | :-------------: |
 | Full name          | axe-webdriverjs |
 | Keywords           | a11y, unit, testing, tdd, bdd, accessibility, aXe, selenium, webdriver, webdriverjs |
-| # releases         | 30 |
+| # releases         | 32 |
 | # dependents       | 24 |
-| # downloads        | 929736 |
+| # downloads        | 977428 |
 | # stars            | 2 |
 
 ## Links

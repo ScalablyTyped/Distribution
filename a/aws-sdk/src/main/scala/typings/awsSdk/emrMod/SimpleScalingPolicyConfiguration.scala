@@ -22,15 +22,32 @@ trait SimpleScalingPolicyConfiguration extends js.Object {
 
 object SimpleScalingPolicyConfiguration {
   @scala.inline
-  def apply(
-    ScalingAdjustment: Integer,
-    AdjustmentType: AdjustmentType = null,
-    CoolDown: js.UndefOr[Integer] = js.undefined
-  ): SimpleScalingPolicyConfiguration = {
+  def apply(ScalingAdjustment: Integer): SimpleScalingPolicyConfiguration = {
     val __obj = js.Dynamic.literal(ScalingAdjustment = ScalingAdjustment.asInstanceOf[js.Any])
-    if (AdjustmentType != null) __obj.updateDynamic("AdjustmentType")(AdjustmentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(CoolDown)) __obj.updateDynamic("CoolDown")(CoolDown.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleScalingPolicyConfiguration]
   }
+  @scala.inline
+  implicit class SimpleScalingPolicyConfigurationOps[Self <: SimpleScalingPolicyConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScalingAdjustment(value: Integer): Self = this.set("ScalingAdjustment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdjustmentType(value: AdjustmentType): Self = this.set("AdjustmentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustmentType: Self = this.set("AdjustmentType", js.undefined)
+    @scala.inline
+    def setCoolDown(value: Integer): Self = this.set("CoolDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoolDown: Self = this.set("CoolDown", js.undefined)
+  }
+  
 }
 

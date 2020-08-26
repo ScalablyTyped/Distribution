@@ -12,7 +12,7 @@ Read command line key presses from process.stdin.
 | Keywords           | command line, cli, key, keypress, stdin, event |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 1186 |
+| # downloads        | 1071 |
 | # stars            | 0 |
 
 ## Links

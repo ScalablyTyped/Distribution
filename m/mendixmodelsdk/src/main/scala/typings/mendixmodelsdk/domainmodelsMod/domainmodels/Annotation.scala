@@ -28,12 +28,12 @@ class Annotation protected () extends Element {
   @JSName("model")
   var model_FAnnotation: IModel = js.native
   def caption: String = js.native
-  def caption(newValue: String): js.Any = js.native
+  def caption_=(newValue: String): Unit = js.native
   def containerAsDomainModel: DomainModel = js.native
   def location: IPoint = js.native
-  def location(newValue: IPoint): js.Any = js.native
+  def location_=(newValue: IPoint): Unit = js.native
   def width: Double = js.native
-  def width(newValue: Double): js.Any = js.native
+  def width_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

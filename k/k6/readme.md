@@ -12,7 +12,7 @@ Dummy package for autocompleting k6 scripts.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 28011 |
+| # downloads        | 31493 |
 | # stars            | 0 |
 
 ## Links

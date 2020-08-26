@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fastq", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[T](context: T, worker: worker[T], concurrency: Double): queue = js.native
-  def apply[T](worker: worker[T], concurrency: Double): queue = js.native
+  def apply[C, T, R](context: C, worker: worker[C, T, R], concurrency: Double): queue[T, R] = js.native
+  def apply[C, T, R](worker: worker[C, T, R], concurrency: Double): queue[T, R] = js.native
 }
 

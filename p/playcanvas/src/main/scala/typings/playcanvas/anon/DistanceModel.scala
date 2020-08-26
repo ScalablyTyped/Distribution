@@ -5,48 +5,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistanceModel extends js.Object {
-  var distanceModel: js.UndefOr[String] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var maxDistance: js.UndefOr[Double] = js.undefined
-  var pitch: js.UndefOr[Double] = js.undefined
-  var position: js.UndefOr[Vec3] = js.undefined
-  var refDistance: js.UndefOr[Double] = js.undefined
-  var rollOffFactor: js.UndefOr[Double] = js.undefined
-  var startTime: js.UndefOr[Double] = js.undefined
-  var velocity: js.UndefOr[Vec3] = js.undefined
-  var volume: js.UndefOr[Double] = js.undefined
+  var distanceModel: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var maxDistance: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Vec3] = js.native
+  var refDistance: js.UndefOr[Double] = js.native
+  var rollOffFactor: js.UndefOr[Double] = js.native
+  var startTime: js.UndefOr[Double] = js.native
+  var velocity: js.UndefOr[Vec3] = js.native
+  var volume: js.UndefOr[Double] = js.native
 }
 
 object DistanceModel {
   @scala.inline
-  def apply(
-    distanceModel: String = null,
-    duration: js.UndefOr[Double] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    maxDistance: js.UndefOr[Double] = js.undefined,
-    pitch: js.UndefOr[Double] = js.undefined,
-    position: Vec3 = null,
-    refDistance: js.UndefOr[Double] = js.undefined,
-    rollOffFactor: js.UndefOr[Double] = js.undefined,
-    startTime: js.UndefOr[Double] = js.undefined,
-    velocity: Vec3 = null,
-    volume: js.UndefOr[Double] = js.undefined
-  ): DistanceModel = {
+  def apply(): DistanceModel = {
     val __obj = js.Dynamic.literal()
-    if (distanceModel != null) __obj.updateDynamic("distanceModel")(distanceModel.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDistance)) __obj.updateDynamic("maxDistance")(maxDistance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(refDistance)) __obj.updateDynamic("refDistance")(refDistance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rollOffFactor)) __obj.updateDynamic("rollOffFactor")(rollOffFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
-    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
-    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceModel]
   }
+  @scala.inline
+  implicit class DistanceModelOps[Self <: DistanceModel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDistanceModel(value: String): Self = this.set("distanceModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistanceModel: Self = this.set("distanceModel", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setMaxDistance(value: Double): Self = this.set("maxDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDistance: Self = this.set("maxDistance", js.undefined)
+    @scala.inline
+    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePitch: Self = this.set("pitch", js.undefined)
+    @scala.inline
+    def setPosition(value: Vec3): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRefDistance(value: Double): Self = this.set("refDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefDistance: Self = this.set("refDistance", js.undefined)
+    @scala.inline
+    def setRollOffFactor(value: Double): Self = this.set("rollOffFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRollOffFactor: Self = this.set("rollOffFactor", js.undefined)
+    @scala.inline
+    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setVelocity(value: Vec3): Self = this.set("velocity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVelocity: Self = this.set("velocity", js.undefined)
+    @scala.inline
+    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolume: Self = this.set("volume", js.undefined)
+  }
+  
 }
 

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BarLayout extends js.Object {
   /**
     * When `barLayout` is needed, (for example, when attaching
@@ -19,7 +20,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.barLayout
     */
-  var barLayout: js.UndefOr[js.Function] = js.undefined
+  var barLayout: js.UndefOr[js.Function] = js.native
   /**
     * Convert data to coordinate.
     *
@@ -28,7 +29,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.coord
     */
-  var coord: js.UndefOr[js.Function] = js.undefined
+  var coord: js.UndefOr[js.Function] = js.native
   /**
     * Obtain the current series index.
     * Notice that the `currentSeriesIndex` is different
@@ -43,7 +44,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.currentSeriesIndices
     */
-  var currentSeriesIndices: js.UndefOr[js.Function] = js.undefined
+  var currentSeriesIndices: js.UndefOr[js.Function] = js.native
   /**
     * Obtain font string, which can be used on style setting
     * directly.
@@ -53,7 +54,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.font
     */
-  var font: js.UndefOr[js.Function] = js.undefined
+  var font: js.UndefOr[js.Function] = js.native
   /**
     * ```
     * @return {number} The current devicePixelRatio。
@@ -63,7 +64,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.getDevicePixelRatio
     */
-  var getDevicePixelRatio: js.UndefOr[js.Function] = js.undefined
+  var getDevicePixelRatio: js.UndefOr[js.Function] = js.native
   /**
     * ```
     * @return {number} Height of echarts container.
@@ -73,7 +74,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.getHeight
     */
-  var getHeight: js.UndefOr[js.Function] = js.undefined
+  var getHeight: js.UndefOr[js.Function] = js.native
   /**
     * ```
     * @return {number} Width of echarts containter.
@@ -83,7 +84,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.getWidth
     */
-  var getWidth: js.UndefOr[js.Function] = js.undefined
+  var getWidth: js.UndefOr[js.Function] = js.native
   /**
     * ```
     * @return {module:zrender} zrender instance.
@@ -93,7 +94,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.getZr
     */
-  var getZr: js.UndefOr[js.Function] = js.undefined
+  var getZr: js.UndefOr[js.Function] = js.native
   /**
     * Get the size by the given data range.
     *
@@ -116,7 +117,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.size
     */
-  var size: js.UndefOr[js.Function] = js.undefined
+  var size: js.UndefOr[js.Function] = js.native
   /**
     * The method obtains style info defined in
     * [series.itemStyle](https://echarts.apache.org/en/option.html#series-custom.itemStyle)
@@ -133,7 +134,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.style
     */
-  var style: js.UndefOr[js.Function] = js.undefined
+  var style: js.UndefOr[js.Function] = js.native
   /**
     * The method obtains style info defined in
     * [series.itemStyle.emphasis](https://echarts.apache.org/en/option.html#series-custom.itemStyle.emphasis)
@@ -150,7 +151,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.styleEmphasis
     */
-  var styleEmphasis: js.UndefOr[js.Function] = js.undefined
+  var styleEmphasis: js.UndefOr[js.Function] = js.native
   /**
     * Get value on the given dimension.
     *
@@ -159,7 +160,7 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.value
     */
-  var value: js.UndefOr[js.Function] = js.undefined
+  var value: js.UndefOr[js.Function] = js.native
   /**
     * Get the visual info. It is rarely be used.
     *
@@ -168,41 +169,79 @@ trait BarLayout extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.arguments.api.visual
     */
-  var visual: js.UndefOr[js.Function] = js.undefined
+  var visual: js.UndefOr[js.Function] = js.native
 }
 
 object BarLayout {
   @scala.inline
-  def apply(
-    barLayout: js.Function = null,
-    coord: js.Function = null,
-    currentSeriesIndices: js.Function = null,
-    font: js.Function = null,
-    getDevicePixelRatio: js.Function = null,
-    getHeight: js.Function = null,
-    getWidth: js.Function = null,
-    getZr: js.Function = null,
-    size: js.Function = null,
-    style: js.Function = null,
-    styleEmphasis: js.Function = null,
-    value: js.Function = null,
-    visual: js.Function = null
-  ): BarLayout = {
+  def apply(): BarLayout = {
     val __obj = js.Dynamic.literal()
-    if (barLayout != null) __obj.updateDynamic("barLayout")(barLayout.asInstanceOf[js.Any])
-    if (coord != null) __obj.updateDynamic("coord")(coord.asInstanceOf[js.Any])
-    if (currentSeriesIndices != null) __obj.updateDynamic("currentSeriesIndices")(currentSeriesIndices.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (getDevicePixelRatio != null) __obj.updateDynamic("getDevicePixelRatio")(getDevicePixelRatio.asInstanceOf[js.Any])
-    if (getHeight != null) __obj.updateDynamic("getHeight")(getHeight.asInstanceOf[js.Any])
-    if (getWidth != null) __obj.updateDynamic("getWidth")(getWidth.asInstanceOf[js.Any])
-    if (getZr != null) __obj.updateDynamic("getZr")(getZr.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styleEmphasis != null) __obj.updateDynamic("styleEmphasis")(styleEmphasis.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarLayout]
   }
+  @scala.inline
+  implicit class BarLayoutOps[Self <: BarLayout] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBarLayout(value: js.Function): Self = this.set("barLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarLayout: Self = this.set("barLayout", js.undefined)
+    @scala.inline
+    def setCoord(value: js.Function): Self = this.set("coord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoord: Self = this.set("coord", js.undefined)
+    @scala.inline
+    def setCurrentSeriesIndices(value: js.Function): Self = this.set("currentSeriesIndices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentSeriesIndices: Self = this.set("currentSeriesIndices", js.undefined)
+    @scala.inline
+    def setFont(value: js.Function): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setGetDevicePixelRatio(value: js.Function): Self = this.set("getDevicePixelRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetDevicePixelRatio: Self = this.set("getDevicePixelRatio", js.undefined)
+    @scala.inline
+    def setGetHeight(value: js.Function): Self = this.set("getHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetHeight: Self = this.set("getHeight", js.undefined)
+    @scala.inline
+    def setGetWidth(value: js.Function): Self = this.set("getWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetWidth: Self = this.set("getWidth", js.undefined)
+    @scala.inline
+    def setGetZr(value: js.Function): Self = this.set("getZr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetZr: Self = this.set("getZr", js.undefined)
+    @scala.inline
+    def setSize(value: js.Function): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Function): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleEmphasis(value: js.Function): Self = this.set("styleEmphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleEmphasis: Self = this.set("styleEmphasis", js.undefined)
+    @scala.inline
+    def setValue(value: js.Function): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setVisual(value: js.Function): Self = this.set("visual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisual: Self = this.set("visual", js.undefined)
+  }
+  
 }
 

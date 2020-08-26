@@ -124,48 +124,54 @@ trait ParamsResourceAssetlinksCheck extends StandardParameters {
 
 object ParamsResourceAssetlinksCheck {
   @scala.inline
-  def apply(
-    $Dotxgafv: String = null,
-    access_token: String = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    callback: String = null,
-    fields: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    relation: String = null,
-    sourceDotandroidAppDotcertificateDotsha256Fingerprint: String = null,
-    sourceDotandroidAppDotpackageName: String = null,
-    sourceDotwebDotsite: String = null,
-    targetDotandroidAppDotcertificateDotsha256Fingerprint: String = null,
-    targetDotandroidAppDotpackageName: String = null,
-    targetDotwebDotsite: String = null,
-    uploadType: String = null,
-    upload_protocol: String = null
-  ): ParamsResourceAssetlinksCheck = {
+  def apply(): ParamsResourceAssetlinksCheck = {
     val __obj = js.Dynamic.literal()
-    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (relation != null) __obj.updateDynamic("relation")(relation.asInstanceOf[js.Any])
-    if (sourceDotandroidAppDotcertificateDotsha256Fingerprint != null) __obj.updateDynamic("source.androidApp.certificate.sha256Fingerprint")(sourceDotandroidAppDotcertificateDotsha256Fingerprint.asInstanceOf[js.Any])
-    if (sourceDotandroidAppDotpackageName != null) __obj.updateDynamic("source.androidApp.packageName")(sourceDotandroidAppDotpackageName.asInstanceOf[js.Any])
-    if (sourceDotwebDotsite != null) __obj.updateDynamic("source.web.site")(sourceDotwebDotsite.asInstanceOf[js.Any])
-    if (targetDotandroidAppDotcertificateDotsha256Fingerprint != null) __obj.updateDynamic("target.androidApp.certificate.sha256Fingerprint")(targetDotandroidAppDotcertificateDotsha256Fingerprint.asInstanceOf[js.Any])
-    if (targetDotandroidAppDotpackageName != null) __obj.updateDynamic("target.androidApp.packageName")(targetDotandroidAppDotpackageName.asInstanceOf[js.Any])
-    if (targetDotwebDotsite != null) __obj.updateDynamic("target.web.site")(targetDotwebDotsite.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceAssetlinksCheck]
   }
+  @scala.inline
+  implicit class ParamsResourceAssetlinksCheckOps[Self <: ParamsResourceAssetlinksCheck] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setRelation(value: String): Self = this.set("relation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelation: Self = this.set("relation", js.undefined)
+    @scala.inline
+    def setSourceDotandroidAppDotcertificateDotsha256Fingerprint(value: String): Self = this.set("source.androidApp.certificate.sha256Fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDotandroidAppDotcertificateDotsha256Fingerprint: Self = this.set("source.androidApp.certificate.sha256Fingerprint", js.undefined)
+    @scala.inline
+    def setSourceDotandroidAppDotpackageName(value: String): Self = this.set("source.androidApp.packageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDotandroidAppDotpackageName: Self = this.set("source.androidApp.packageName", js.undefined)
+    @scala.inline
+    def setSourceDotwebDotsite(value: String): Self = this.set("source.web.site", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDotwebDotsite: Self = this.set("source.web.site", js.undefined)
+    @scala.inline
+    def setTargetDotandroidAppDotcertificateDotsha256Fingerprint(value: String): Self = this.set("target.androidApp.certificate.sha256Fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetDotandroidAppDotcertificateDotsha256Fingerprint: Self = this.set("target.androidApp.certificate.sha256Fingerprint", js.undefined)
+    @scala.inline
+    def setTargetDotandroidAppDotpackageName(value: String): Self = this.set("target.androidApp.packageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetDotandroidAppDotpackageName: Self = this.set("target.androidApp.packageName", js.undefined)
+    @scala.inline
+    def setTargetDotwebDotsite(value: String): Self = this.set("target.web.site", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetDotwebDotsite: Self = this.set("target.web.site", js.undefined)
+  }
+  
 }
 

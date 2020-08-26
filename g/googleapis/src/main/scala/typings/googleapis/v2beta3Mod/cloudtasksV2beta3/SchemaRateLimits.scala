@@ -57,16 +57,34 @@ trait SchemaRateLimits extends js.Object {
 
 object SchemaRateLimits {
   @scala.inline
-  def apply(
-    maxBurstSize: js.UndefOr[Double] = js.undefined,
-    maxConcurrentDispatches: js.UndefOr[Double] = js.undefined,
-    maxDispatchesPerSecond: js.UndefOr[Double] = js.undefined
-  ): SchemaRateLimits = {
+  def apply(): SchemaRateLimits = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxBurstSize)) __obj.updateDynamic("maxBurstSize")(maxBurstSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxConcurrentDispatches)) __obj.updateDynamic("maxConcurrentDispatches")(maxConcurrentDispatches.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDispatchesPerSecond)) __obj.updateDynamic("maxDispatchesPerSecond")(maxDispatchesPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRateLimits]
   }
+  @scala.inline
+  implicit class SchemaRateLimitsOps[Self <: SchemaRateLimits] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxBurstSize(value: Double): Self = this.set("maxBurstSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBurstSize: Self = this.set("maxBurstSize", js.undefined)
+    @scala.inline
+    def setMaxConcurrentDispatches(value: Double): Self = this.set("maxConcurrentDispatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConcurrentDispatches: Self = this.set("maxConcurrentDispatches", js.undefined)
+    @scala.inline
+    def setMaxDispatchesPerSecond(value: Double): Self = this.set("maxDispatchesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDispatchesPerSecond: Self = this.set("maxDispatchesPerSecond", js.undefined)
+  }
+  
 }
 

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ComponentInterface
   extends /* prop */ StringDictionary[js.Any] {
   /**
@@ -15,8 +16,8 @@ trait ComponentInterface
     *
     * componentDidLoad will only be called once.
     */
-  var componentDidLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var componentDidRender: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var componentDidLoad: js.UndefOr[js.Function0[Unit]] = js.native
+  var componentDidRender: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * The component has just re-rendered.
     *
@@ -26,7 +27,18 @@ trait ComponentInterface
     * componentWillUpdate is not called on the
     * first render.
     */
-  var componentDidUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var componentDidUpdate: js.UndefOr[js.Function0[Unit]] = js.native
+  /**
+    * A `@Prop` or `@State` property changed and a rerender is about to be requested.
+    *
+    * Called multiple times throughout the life of
+    * the component as its properties change.
+    *
+    * componentShouldUpdate is not called on the first render.
+    */
+  var componentShouldUpdate: js.UndefOr[
+    js.Function3[/* newVal */ js.Any, /* oldVal */ js.Any, /* propName */ String, Boolean | Unit]
+  ] = js.native
   /**
     * The component is about to load and it has not
     * rendered yet.
@@ -36,8 +48,8 @@ trait ComponentInterface
     *
     * componentWillLoad will only be called once.
     */
-  var componentWillLoad: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
-  var componentWillRender: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
+  var componentWillLoad: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
+  var componentWillRender: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
   /**
     * The component is about to update and re-render.
     *
@@ -46,38 +58,70 @@ trait ComponentInterface
     *
     * componentWillUpdate is not called on the first render.
     */
-  var componentWillUpdate: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
-  var connectedCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var disconnectedCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var render: js.UndefOr[js.Function0[_]] = js.undefined
+  var componentWillUpdate: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
+  var connectedCallback: js.UndefOr[js.Function0[Unit]] = js.native
+  var disconnectedCallback: js.UndefOr[js.Function0[Unit]] = js.native
+  var render: js.UndefOr[js.Function0[_]] = js.native
 }
 
 object ComponentInterface {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    componentDidLoad: () => Unit = null,
-    componentDidRender: () => Unit = null,
-    componentDidUpdate: () => Unit = null,
-    componentWillLoad: () => js.Promise[Unit] | Unit = null,
-    componentWillRender: () => js.Promise[Unit] | Unit = null,
-    componentWillUpdate: () => js.Promise[Unit] | Unit = null,
-    connectedCallback: () => Unit = null,
-    disconnectedCallback: () => Unit = null,
-    render: () => _ = null
-  ): ComponentInterface = {
+  def apply(): ComponentInterface = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (componentDidLoad != null) __obj.updateDynamic("componentDidLoad")(js.Any.fromFunction0(componentDidLoad))
-    if (componentDidRender != null) __obj.updateDynamic("componentDidRender")(js.Any.fromFunction0(componentDidRender))
-    if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(js.Any.fromFunction0(componentDidUpdate))
-    if (componentWillLoad != null) __obj.updateDynamic("componentWillLoad")(js.Any.fromFunction0(componentWillLoad))
-    if (componentWillRender != null) __obj.updateDynamic("componentWillRender")(js.Any.fromFunction0(componentWillRender))
-    if (componentWillUpdate != null) __obj.updateDynamic("componentWillUpdate")(js.Any.fromFunction0(componentWillUpdate))
-    if (connectedCallback != null) __obj.updateDynamic("connectedCallback")(js.Any.fromFunction0(connectedCallback))
-    if (disconnectedCallback != null) __obj.updateDynamic("disconnectedCallback")(js.Any.fromFunction0(disconnectedCallback))
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction0(render))
     __obj.asInstanceOf[ComponentInterface]
   }
+  @scala.inline
+  implicit class ComponentInterfaceOps[Self <: ComponentInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentDidLoad(value: () => Unit): Self = this.set("componentDidLoad", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteComponentDidLoad: Self = this.set("componentDidLoad", js.undefined)
+    @scala.inline
+    def setComponentDidRender(value: () => Unit): Self = this.set("componentDidRender", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteComponentDidRender: Self = this.set("componentDidRender", js.undefined)
+    @scala.inline
+    def setComponentDidUpdate(value: () => Unit): Self = this.set("componentDidUpdate", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteComponentDidUpdate: Self = this.set("componentDidUpdate", js.undefined)
+    @scala.inline
+    def setComponentShouldUpdate(value: (/* newVal */ js.Any, /* oldVal */ js.Any, /* propName */ String) => Boolean | Unit): Self = this.set("componentShouldUpdate", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteComponentShouldUpdate: Self = this.set("componentShouldUpdate", js.undefined)
+    @scala.inline
+    def setComponentWillLoad(value: () => js.Promise[Unit] | Unit): Self = this.set("componentWillLoad", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteComponentWillLoad: Self = this.set("componentWillLoad", js.undefined)
+    @scala.inline
+    def setComponentWillRender(value: () => js.Promise[Unit] | Unit): Self = this.set("componentWillRender", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteComponentWillRender: Self = this.set("componentWillRender", js.undefined)
+    @scala.inline
+    def setComponentWillUpdate(value: () => js.Promise[Unit] | Unit): Self = this.set("componentWillUpdate", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteComponentWillUpdate: Self = this.set("componentWillUpdate", js.undefined)
+    @scala.inline
+    def setConnectedCallback(value: () => Unit): Self = this.set("connectedCallback", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteConnectedCallback: Self = this.set("connectedCallback", js.undefined)
+    @scala.inline
+    def setDisconnectedCallback(value: () => Unit): Self = this.set("disconnectedCallback", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDisconnectedCallback: Self = this.set("disconnectedCallback", js.undefined)
+    @scala.inline
+    def setRender(value: () => _): Self = this.set("render", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRender: Self = this.set("render", js.undefined)
+  }
+  
 }
 

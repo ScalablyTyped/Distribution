@@ -1,14 +1,18 @@
 organization := "org.scalablytyped"
 name := "material__select"
-version := "0.35-dt-20200515Z-9b56f2"
-scalaVersion := "2.13.2"
+version := "7.0.0-c683ec"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "material__base" % "0.35-dt-20200515Z-5bcbd5",
-  "org.scalablytyped" %%% "material__floating-label" % "0.35-dt-20200515Z-1d89e5",
-  "org.scalablytyped" %%% "material__line-ripple" % "0.35-dt-20200515Z-b1049e",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "material__base" % "7.0.0-39ae3e",
+  "org.scalablytyped" %%% "material__floating-label" % "7.0.0-049dd3",
+  "org.scalablytyped" %%% "material__line-ripple" % "7.0.0-ce8de9",
+  "org.scalablytyped" %%% "material__list" % "7.0.0-d3fc04",
+  "org.scalablytyped" %%% "material__menu" % "7.0.0-38e9eb",
+  "org.scalablytyped" %%% "material__menu-surface" % "7.0.0-1ee6d3",
+  "org.scalablytyped" %%% "material__notched-outline" % "7.0.0-4bfa79",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

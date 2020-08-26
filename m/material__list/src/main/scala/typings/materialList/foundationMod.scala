@@ -1,9 +1,14 @@
 package typings.materialList
 
-import typings.materialBase.foundationMod.default
+import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialList.adapterMod.MDCListAdapter
-import typings.materialList.constantsMod.Index
-import typings.std.Event
+import typings.materialList.anon.ACTIONEVENT
+import typings.materialList.anon.LISTITEMACTIVATEDCLASS
+import typings.materialList.anon.PartialMDCListAdapter
+import typings.materialList.anon.TYPEAHEADBUFFERCLEARTIMEOUTMS
+import typings.materialList.typesMod.MDCListIndex
+import typings.std.FocusEvent
+import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,8 +17,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object foundationMod extends js.Object {
   @js.native
-  class MDCListFoundation protected () extends default[MDCListFoundation] {
-    def this(adapter: MDCListAdapter) = this()
+  class MDCListFoundation () extends MDCFoundation[MDCListAdapter] {
+    def this(adapter: PartialMDCListAdapter) = this()
+    /**
+      * Clears the typeahead buffer.
+      */
+    def clearTypeaheadBuffer(): Unit = js.native
     def focusFirstElement(): Double = js.native
     def focusLastElement(): Double = js.native
     /**
@@ -24,7 +33,7 @@ object foundationMod extends js.Object {
       * Focuses the previous element on the list.
       */
     def focusPrevElement(index: Double): Double = js.native
-    def getSelectedIndex(): Index = js.native
+    def getSelectedIndex(): MDCListIndex = js.native
     /**
       * Click handler for the list.
       */
@@ -32,17 +41,31 @@ object foundationMod extends js.Object {
     /**
       * Focus in handler for the list items.
       */
-    def handleFocusIn(evt: Event, listItemIndex: Double): Unit = js.native
+    def handleFocusIn(_underscore: FocusEvent, listItemIndex: Double): Unit = js.native
     /**
       * Focus out handler for the list items.
       */
-    def handleFocusOut(evt: Event, listItemIndex: Double): Unit = js.native
+    def handleFocusOut(_underscore: FocusEvent, listItemIndex: Double): Unit = js.native
     /**
       * Key handler for the list.
       */
-    def handleKeydown(evt: Event, isRootListItem: Boolean, listItemIndex: Double): Unit = js.native
+    def handleKeydown(event: KeyboardEvent, isRootListItem: Boolean, listItemIndex: Double): Unit = js.native
+    /**
+      * @return Whether typeahead is currently matching a user-specified prefix.
+      */
+    def isTypeaheadInProgress(): Boolean = js.native
     def layout(): Unit = js.native
-    def setSelectedIndex(index: Index): Unit = js.native
+    /**
+      * @param itemIndex Index of the list item
+      * @param isEnabled Sets the list item to enabled or disabled.
+      */
+    def setEnabled(itemIndex: Double, isEnabled: Boolean): Unit = js.native
+    /**
+      * Sets whether typeahead is enabled on the list.
+      * @param hasTypeahead Whether typeahead is enabled.
+      */
+    def setHasTypeahead(hasTypeahead: Boolean): Unit = js.native
+    def setSelectedIndex(index: MDCListIndex): Unit = js.native
     /**
       * Sets the isSingleSelectionList_ private variable.
       */
@@ -59,15 +82,46 @@ object foundationMod extends js.Object {
       * Sets the private wrapFocus_ variable.
       */
     def setWrapFocus(value: Boolean): Unit = js.native
+    /**
+      * Given the next desired character from the user, adds it to the typeahead
+      * buffer. Then, attempts to find the next option matching the buffer. Wraps
+      * around if at the end of options.
+      *
+      * @param nextChar The next character to add to the prefix buffer.
+      * @param startingIndex The index from which to start matching. Only relevant
+      *     when starting a new match sequence. To start a new match sequence,
+      *     clear the buffer using `clearTypeaheadBuffer`, or wait for the buffer
+      *     to clear after a set interval defined in list foundation. Defaults to
+      *     the currently focused index.
+      * @return The index of the matched item, or -1 if no match.
+      */
+    def typeaheadMatchItem(nextChar: String): Double = js.native
+    def typeaheadMatchItem(nextChar: String, startingIndex: js.UndefOr[scala.Nothing], skipFocus: Boolean): Double = js.native
+    def typeaheadMatchItem(nextChar: String, startingIndex: Double): Double = js.native
+    def typeaheadMatchItem(nextChar: String, startingIndex: Double, skipFocus: Boolean): Double = js.native
   }
   
-  val ELEMENTS_KEY_ALLOWED_IN: js.Array[String] = js.native
+  @js.native
+  class default () extends MDCListFoundation {
+    def this(adapter: PartialMDCListAdapter) = this()
+  }
+  
   /* static members */
   @js.native
   object MDCListFoundation extends js.Object {
-    val cssClasses: typings.materialList.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCListAdapter = js.native
-    val strings: typings.materialList.constantsMod.strings = js.native
+    def cssClasses: LISTITEMACTIVATEDCLASS = js.native
+    def defaultAdapter: MDCListAdapter = js.native
+    def numbers: TYPEAHEADBUFFERCLEARTIMEOUTMS = js.native
+    def strings: ACTIONEVENT = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object default extends js.Object {
+    def cssClasses: LISTITEMACTIVATEDCLASS = js.native
+    def defaultAdapter: MDCListAdapter = js.native
+    def numbers: TYPEAHEADBUFFERCLEARTIMEOUTMS = js.native
+    def strings: ACTIONEVENT = js.native
   }
   
 }

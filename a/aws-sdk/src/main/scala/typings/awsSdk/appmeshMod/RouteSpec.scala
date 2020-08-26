@@ -31,20 +31,42 @@ trait RouteSpec extends js.Object {
 
 object RouteSpec {
   @scala.inline
-  def apply(
-    grpcRoute: GrpcRoute = null,
-    http2Route: HttpRoute = null,
-    httpRoute: HttpRoute = null,
-    priority: js.UndefOr[RoutePriority] = js.undefined,
-    tcpRoute: TcpRoute = null
-  ): RouteSpec = {
+  def apply(): RouteSpec = {
     val __obj = js.Dynamic.literal()
-    if (grpcRoute != null) __obj.updateDynamic("grpcRoute")(grpcRoute.asInstanceOf[js.Any])
-    if (http2Route != null) __obj.updateDynamic("http2Route")(http2Route.asInstanceOf[js.Any])
-    if (httpRoute != null) __obj.updateDynamic("httpRoute")(httpRoute.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
-    if (tcpRoute != null) __obj.updateDynamic("tcpRoute")(tcpRoute.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpec]
   }
+  @scala.inline
+  implicit class RouteSpecOps[Self <: RouteSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGrpcRoute(value: GrpcRoute): Self = this.set("grpcRoute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrpcRoute: Self = this.set("grpcRoute", js.undefined)
+    @scala.inline
+    def setHttp2Route(value: HttpRoute): Self = this.set("http2Route", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttp2Route: Self = this.set("http2Route", js.undefined)
+    @scala.inline
+    def setHttpRoute(value: HttpRoute): Self = this.set("httpRoute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpRoute: Self = this.set("httpRoute", js.undefined)
+    @scala.inline
+    def setPriority(value: RoutePriority): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setTcpRoute(value: TcpRoute): Self = this.set("tcpRoute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTcpRoute: Self = this.set("tcpRoute", js.undefined)
+  }
+  
 }
 

@@ -7,69 +7,86 @@ import scala.scalajs.js.annotation._
 /**
   * Entry in the bundle - will have a resource, or information
   */
+@js.native
 trait BundleEntry extends BackboneElement {
   /**
     * Contains extended information for property 'fullUrl'.
     */
-  var _fullUrl: js.UndefOr[Element] = js.undefined
+  var _fullUrl: js.UndefOr[Element] = js.native
   /**
     * Absolute URL for resource (server address, or UUID/OID)
     */
-  var fullUrl: js.UndefOr[uri] = js.undefined
+  var fullUrl: js.UndefOr[uri] = js.native
   /**
     * Links related to this entry
     */
-  var link: js.UndefOr[js.Array[BundleLink]] = js.undefined
+  var link: js.UndefOr[js.Array[BundleLink]] = js.native
   /**
     * Transaction Related Information
     */
-  var request: js.UndefOr[BundleEntryRequest] = js.undefined
+  var request: js.UndefOr[BundleEntryRequest] = js.native
   /**
     * A resource in the bundle
     */
-  var resource: js.UndefOr[Resource] = js.undefined
+  var resource: js.UndefOr[Resource] = js.native
   /**
     * Transaction Related Information
     */
-  var response: js.UndefOr[BundleEntryResponse] = js.undefined
+  var response: js.UndefOr[BundleEntryResponse] = js.native
   /**
     * Search related information
     */
-  var search: js.UndefOr[BundleEntrySearch] = js.undefined
+  var search: js.UndefOr[BundleEntrySearch] = js.native
 }
 
 object BundleEntry {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _fullUrl: Element = null,
-    _id: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    fullUrl: uri = null,
-    id: String = null,
-    link: js.Array[BundleLink] = null,
-    modifierExtension: js.Array[Extension] = null,
-    request: BundleEntryRequest = null,
-    resource: Resource = null,
-    response: BundleEntryResponse = null,
-    search: BundleEntrySearch = null
-  ): BundleEntry = {
+  def apply(): BundleEntry = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_fullUrl != null) __obj.updateDynamic("_fullUrl")(_fullUrl.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (fullUrl != null) __obj.updateDynamic("fullUrl")(fullUrl.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleEntry]
   }
+  @scala.inline
+  implicit class BundleEntryOps[Self <: BundleEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_fullUrl(value: Element): Self = this.set("_fullUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_fullUrl: Self = this.set("_fullUrl", js.undefined)
+    @scala.inline
+    def setFullUrl(value: uri): Self = this.set("fullUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullUrl: Self = this.set("fullUrl", js.undefined)
+    @scala.inline
+    def setLinkVarargs(value: BundleLink*): Self = this.set("link", js.Array(value :_*))
+    @scala.inline
+    def setLink(value: js.Array[BundleLink]): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setRequest(value: BundleEntryRequest): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setResource(value: Resource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setResponse(value: BundleEntryResponse): Self = this.set("response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("response", js.undefined)
+    @scala.inline
+    def setSearch(value: BundleEntrySearch): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch: Self = this.set("search", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait GetActivityTaskOutput extends js.Object {
 
 object GetActivityTaskOutput {
   @scala.inline
-  def apply(input: SensitiveDataJobInput = null, taskToken: TaskToken = null): GetActivityTaskOutput = {
+  def apply(): GetActivityTaskOutput = {
     val __obj = js.Dynamic.literal()
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (taskToken != null) __obj.updateDynamic("taskToken")(taskToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetActivityTaskOutput]
   }
+  @scala.inline
+  implicit class GetActivityTaskOutputOps[Self <: GetActivityTaskOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInput(value: SensitiveDataJobInput): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setTaskToken(value: TaskToken): Self = this.set("taskToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskToken: Self = this.set("taskToken", js.undefined)
+  }
+  
 }
 

@@ -19,7 +19,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  tabs  :std.Array<rc-tabs.rc-tabs/lib/interface.Tab>} & rc-tabs.rc-tabs/lib/TabNavList.TabNavListProps */
+/* Inlined {  tabs :std.Array<rc-tabs.rc-tabs/es/interface.Tab>} & rc-tabs.rc-tabs/es/TabNavList.TabNavListProps */
 @js.native
 trait tabsArrayTabTabNavListPro extends js.Object {
   var activeKey: String = js.native

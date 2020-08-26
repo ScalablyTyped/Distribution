@@ -23,12 +23,34 @@ trait SchemaManagedInstanceInstanceHealth extends js.Object {
 
 object SchemaManagedInstanceInstanceHealth {
   @scala.inline
-  def apply(detailedHealthState: String = null, healthCheck: String = null, healthState: String = null): SchemaManagedInstanceInstanceHealth = {
+  def apply(): SchemaManagedInstanceInstanceHealth = {
     val __obj = js.Dynamic.literal()
-    if (detailedHealthState != null) __obj.updateDynamic("detailedHealthState")(detailedHealthState.asInstanceOf[js.Any])
-    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
-    if (healthState != null) __obj.updateDynamic("healthState")(healthState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedInstanceInstanceHealth]
   }
+  @scala.inline
+  implicit class SchemaManagedInstanceInstanceHealthOps[Self <: SchemaManagedInstanceInstanceHealth] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetailedHealthState(value: String): Self = this.set("detailedHealthState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailedHealthState: Self = this.set("detailedHealthState", js.undefined)
+    @scala.inline
+    def setHealthCheck(value: String): Self = this.set("healthCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheck: Self = this.set("healthCheck", js.undefined)
+    @scala.inline
+    def setHealthState(value: String): Self = this.set("healthState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthState: Self = this.set("healthState", js.undefined)
+  }
+  
 }
 

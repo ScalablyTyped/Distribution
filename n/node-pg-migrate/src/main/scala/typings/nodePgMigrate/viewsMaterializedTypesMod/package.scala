@@ -41,5 +41,5 @@ package object viewsMaterializedTypesMod {
     /* newViewName */ typings.nodePgMigrate.generalTypesMod.Name, 
     java.lang.String | js.Array[java.lang.String]
   ]
-  type StorageParameters = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type StorageParameters = org.scalablytyped.runtime.StringDictionary[scala.Boolean | scala.Double]
 }

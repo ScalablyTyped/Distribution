@@ -1,8 +1,6 @@
 package typings.angularCore
 
 import typings.angularCore.ngQueryVisitorMod.ClassMetadataMap
-import typings.angularCore.queryDefinitionMod.NgQueryDefinition
-import typings.angularCore.timingStrategyMod.TimingResult
 import typings.angularCore.timingStrategyMod.TimingStrategy
 import typings.typescript.mod.CompilerHost
 import scala.scalajs.js
@@ -31,12 +29,6 @@ object templateStrategyMod extends js.Object {
     var host: js.Any = js.native
     var metadataResolver: js.Any = js.native
     var projectPath: js.Any = js.native
-    /** Detects the timing result for a given query. */
-    /* CompleteClass */
-    override def detectTiming(query: NgQueryDefinition): TimingResult = js.native
-    /** Sets up the given strategy. Throws if the strategy could not be set up. */
-    /* CompleteClass */
-    override def setup(): Unit = js.native
   }
   
 }

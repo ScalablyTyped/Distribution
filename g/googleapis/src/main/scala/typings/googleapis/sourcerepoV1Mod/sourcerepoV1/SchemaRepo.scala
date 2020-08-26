@@ -41,20 +41,42 @@ trait SchemaRepo extends js.Object {
 
 object SchemaRepo {
   @scala.inline
-  def apply(
-    mirrorConfig: SchemaMirrorConfig = null,
-    name: String = null,
-    pubsubConfigs: StringDictionary[SchemaPubsubConfig] = null,
-    size: String = null,
-    url: String = null
-  ): SchemaRepo = {
+  def apply(): SchemaRepo = {
     val __obj = js.Dynamic.literal()
-    if (mirrorConfig != null) __obj.updateDynamic("mirrorConfig")(mirrorConfig.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pubsubConfigs != null) __obj.updateDynamic("pubsubConfigs")(pubsubConfigs.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRepo]
   }
+  @scala.inline
+  implicit class SchemaRepoOps[Self <: SchemaRepo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMirrorConfig(value: SchemaMirrorConfig): Self = this.set("mirrorConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMirrorConfig: Self = this.set("mirrorConfig", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPubsubConfigs(value: StringDictionary[SchemaPubsubConfig]): Self = this.set("pubsubConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubsubConfigs: Self = this.set("pubsubConfigs", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

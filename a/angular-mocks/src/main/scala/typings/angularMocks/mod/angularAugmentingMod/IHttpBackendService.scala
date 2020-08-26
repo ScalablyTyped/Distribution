@@ -23,24 +23,12 @@ trait IHttpBackendService extends js.Object {
     * @param headers HTTP headers object or function that receives the headers and returns true if the headers match the current expectation.
     * @param keys Array of keys to assign to regex matches in the request url.
     */
-  def expect(method: String, url: String | RegExp | (js.Function1[/* url */ String, Boolean])): IRequestHandler = js.native
   def expect(
     method: String,
     url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])
-  ): IRequestHandler = js.native
-  def expect(
-    method: String,
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])
-  ): IRequestHandler = js.native
-  def expect(
-    method: String,
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean]),
-    keys: js.Array[String]
+    data: js.UndefOr[String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])],
+    headers: js.UndefOr[IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])],
+    keys: js.UndefOr[js.Array[String]]
   ): IRequestHandler = js.native
   /**
     * Creates a new request expectation for DELETE requests.
@@ -51,11 +39,17 @@ trait IHttpBackendService extends js.Object {
     * @param keys Array of keys to assign to regex matches in the request url.
     */
   def expectDELETE(url: String): IRequestHandler = js.native
+  def expectDELETE(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def expectDELETE(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def expectDELETE(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def expectDELETE(url: String, headers: IHttpHeaders): IRequestHandler = js.native
   def expectDELETE(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def expectDELETE(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
+  def expectDELETE(
+    url: js.Function1[/* url */ String, Boolean],
+    headers: js.UndefOr[scala.Nothing],
+    keys: js.Array[String]
+  ): IRequestHandler = js.native
   def expectDELETE(
     url: js.Function1[/* url */ String, Boolean],
     headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -68,6 +62,7 @@ trait IHttpBackendService extends js.Object {
   def expectDELETE(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
   def expectDELETE(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def expectDELETE(url: RegExp): IRequestHandler = js.native
+  def expectDELETE(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def expectDELETE(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def expectDELETE(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def expectDELETE(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
@@ -81,11 +76,17 @@ trait IHttpBackendService extends js.Object {
     * @param keys Array of keys to assign to regex matches in the request url.
     */
   def expectGET(url: String): IRequestHandler = js.native
+  def expectGET(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def expectGET(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def expectGET(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def expectGET(url: String, headers: IHttpHeaders): IRequestHandler = js.native
   def expectGET(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def expectGET(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
+  def expectGET(
+    url: js.Function1[/* url */ String, Boolean],
+    headers: js.UndefOr[scala.Nothing],
+    keys: js.Array[String]
+  ): IRequestHandler = js.native
   def expectGET(
     url: js.Function1[/* url */ String, Boolean],
     headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -98,6 +99,7 @@ trait IHttpBackendService extends js.Object {
   def expectGET(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
   def expectGET(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def expectGET(url: RegExp): IRequestHandler = js.native
+  def expectGET(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def expectGET(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def expectGET(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def expectGET(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
@@ -111,11 +113,17 @@ trait IHttpBackendService extends js.Object {
     * @param keys Array of keys to assign to regex matches in the request url.
     */
   def expectHEAD(url: String): IRequestHandler = js.native
+  def expectHEAD(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def expectHEAD(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def expectHEAD(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def expectHEAD(url: String, headers: IHttpHeaders): IRequestHandler = js.native
   def expectHEAD(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def expectHEAD(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
+  def expectHEAD(
+    url: js.Function1[/* url */ String, Boolean],
+    headers: js.UndefOr[scala.Nothing],
+    keys: js.Array[String]
+  ): IRequestHandler = js.native
   def expectHEAD(
     url: js.Function1[/* url */ String, Boolean],
     headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -128,6 +136,7 @@ trait IHttpBackendService extends js.Object {
   def expectHEAD(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
   def expectHEAD(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def expectHEAD(url: RegExp): IRequestHandler = js.native
+  def expectHEAD(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def expectHEAD(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def expectHEAD(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def expectHEAD(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
@@ -154,21 +163,11 @@ trait IHttpBackendService extends js.Object {
     * @param headers HTTP headers object or function that receives the headers and returns true if the headers match the current expectation.
     * @param keys Array of keys to assign to regex matches in the request url.
     */
-  def expectPATCH(url: String | RegExp | (js.Function1[/* url */ String, Boolean])): IRequestHandler = js.native
   def expectPATCH(
     url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])
-  ): IRequestHandler = js.native
-  def expectPATCH(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])
-  ): IRequestHandler = js.native
-  def expectPATCH(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean]),
-    keys: js.Array[String]
+    data: js.UndefOr[String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])],
+    headers: js.UndefOr[IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])],
+    keys: js.UndefOr[js.Array[String]]
   ): IRequestHandler = js.native
   /**
     * Creates a new request expectation for POST requests.
@@ -179,21 +178,11 @@ trait IHttpBackendService extends js.Object {
     * @param headers HTTP headers object or function that receives the headers and returns true if the headers match the current expectation.
     * @param keys Array of keys to assign to regex matches in the request url.
     */
-  def expectPOST(url: String | RegExp | (js.Function1[/* url */ String, Boolean])): IRequestHandler = js.native
   def expectPOST(
     url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])
-  ): IRequestHandler = js.native
-  def expectPOST(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])
-  ): IRequestHandler = js.native
-  def expectPOST(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean]),
-    keys: js.Array[String]
+    data: js.UndefOr[String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])],
+    headers: js.UndefOr[IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])],
+    keys: js.UndefOr[js.Array[String]]
   ): IRequestHandler = js.native
   /**
     * Creates a new request expectation for PUT requests.
@@ -204,21 +193,11 @@ trait IHttpBackendService extends js.Object {
     * @param headers HTTP headers object or function that receives the headers and returns true if the headers match the current expectation.
     * @param keys Array of keys to assign to regex matches in the request url.
     */
-  def expectPUT(url: String | RegExp | (js.Function1[/* url */ String, Boolean])): IRequestHandler = js.native
   def expectPUT(
     url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])
-  ): IRequestHandler = js.native
-  def expectPUT(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])
-  ): IRequestHandler = js.native
-  def expectPUT(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean]),
-    keys: js.Array[String]
+    data: js.UndefOr[String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])],
+    headers: js.UndefOr[IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])],
+    keys: js.UndefOr[js.Array[String]]
   ): IRequestHandler = js.native
   /**
     * Creates a new request expectation that compares only with the requested route.
@@ -243,6 +222,7 @@ trait IHttpBackendService extends js.Object {
     * @param skip Number of pending requests to skip. For example, a value of 5 would skip the first 5 pending requests and start flushing from the 6th onwards. _(default: 0)_
     */
   def flush(): Unit = js.native
+  def flush(count: js.UndefOr[scala.Nothing], skip: Double): Unit = js.native
   def flush(count: Double): Unit = js.native
   def flush(count: Double, skip: Double): Unit = js.native
   /**
@@ -270,24 +250,12 @@ trait IHttpBackendService extends js.Object {
     * @param headers HTTP headers object or function that receives the headers and returns true if the headers match the current expectation.
     * @param keys Array of keys to assign to regex matches in the request url.
     */
-  def when(method: String, url: String | RegExp | (js.Function1[/* url */ String, Boolean])): IRequestHandler = js.native
   def when(
     method: String,
     url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])
-  ): IRequestHandler = js.native
-  def when(
-    method: String,
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])
-  ): IRequestHandler = js.native
-  def when(
-    method: String,
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean]),
-    keys: js.Array[String]
+    data: js.UndefOr[String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])],
+    headers: js.UndefOr[IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])],
+    keys: js.UndefOr[js.Array[String]]
   ): IRequestHandler = js.native
   /**
     * Creates a new backend definition for DELETE requests.
@@ -297,11 +265,17 @@ trait IHttpBackendService extends js.Object {
     * @param keys Array of keys to assign to regex matches in the request url.
     */
   def whenDELETE(url: String): IRequestHandler = js.native
+  def whenDELETE(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def whenDELETE(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def whenDELETE(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def whenDELETE(url: String, headers: IHttpHeaders): IRequestHandler = js.native
   def whenDELETE(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def whenDELETE(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
+  def whenDELETE(
+    url: js.Function1[/* url */ String, Boolean],
+    headers: js.UndefOr[scala.Nothing],
+    keys: js.Array[String]
+  ): IRequestHandler = js.native
   def whenDELETE(
     url: js.Function1[/* url */ String, Boolean],
     headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -314,6 +288,7 @@ trait IHttpBackendService extends js.Object {
   def whenDELETE(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
   def whenDELETE(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def whenDELETE(url: RegExp): IRequestHandler = js.native
+  def whenDELETE(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def whenDELETE(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def whenDELETE(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def whenDELETE(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
@@ -327,11 +302,17 @@ trait IHttpBackendService extends js.Object {
     * @param keys Array of keys to assign to regex matches in the request url.
     */
   def whenGET(url: String): IRequestHandler = js.native
+  def whenGET(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def whenGET(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def whenGET(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def whenGET(url: String, headers: IHttpHeaders): IRequestHandler = js.native
   def whenGET(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def whenGET(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
+  def whenGET(
+    url: js.Function1[/* url */ String, Boolean],
+    headers: js.UndefOr[scala.Nothing],
+    keys: js.Array[String]
+  ): IRequestHandler = js.native
   def whenGET(
     url: js.Function1[/* url */ String, Boolean],
     headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -344,6 +325,7 @@ trait IHttpBackendService extends js.Object {
   def whenGET(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
   def whenGET(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def whenGET(url: RegExp): IRequestHandler = js.native
+  def whenGET(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def whenGET(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def whenGET(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def whenGET(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
@@ -356,11 +338,17 @@ trait IHttpBackendService extends js.Object {
     * @param keys Array of keys to assign to regex matches in the request url.
     */
   def whenHEAD(url: String): IRequestHandler = js.native
+  def whenHEAD(url: String, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def whenHEAD(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def whenHEAD(url: String, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def whenHEAD(url: String, headers: IHttpHeaders): IRequestHandler = js.native
   def whenHEAD(url: String, headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def whenHEAD(url: js.Function1[/* url */ String, Boolean]): IRequestHandler = js.native
+  def whenHEAD(
+    url: js.Function1[/* url */ String, Boolean],
+    headers: js.UndefOr[scala.Nothing],
+    keys: js.Array[String]
+  ): IRequestHandler = js.native
   def whenHEAD(
     url: js.Function1[/* url */ String, Boolean],
     headers: js.Function1[/* headers */ IHttpHeaders, Boolean]
@@ -373,6 +361,7 @@ trait IHttpBackendService extends js.Object {
   def whenHEAD(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders): IRequestHandler = js.native
   def whenHEAD(url: js.Function1[/* url */ String, Boolean], headers: IHttpHeaders, keys: js.Array[String]): IRequestHandler = js.native
   def whenHEAD(url: RegExp): IRequestHandler = js.native
+  def whenHEAD(url: RegExp, headers: js.UndefOr[scala.Nothing], keys: js.Array[String]): IRequestHandler = js.native
   def whenHEAD(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean]): IRequestHandler = js.native
   def whenHEAD(url: RegExp, headers: js.Function1[/* headers */ IHttpHeaders, Boolean], keys: js.Array[String]): IRequestHandler = js.native
   def whenHEAD(url: RegExp, headers: IHttpHeaders): IRequestHandler = js.native
@@ -398,21 +387,11 @@ trait IHttpBackendService extends js.Object {
     * @param headers HTTP headers object or function that receives the headers and returns true if the headers match the current expectation.
     * @param keys Array of keys to assign to regex matches in the request url.
     */
-  def whenPATCH(url: String | RegExp | (js.Function1[/* url */ String, Boolean])): IRequestHandler = js.native
   def whenPATCH(
     url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])
-  ): IRequestHandler = js.native
-  def whenPATCH(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])
-  ): IRequestHandler = js.native
-  def whenPATCH(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean]),
-    keys: js.Array[String]
+    data: js.UndefOr[String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])],
+    headers: js.UndefOr[IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])],
+    keys: js.UndefOr[js.Array[String]]
   ): IRequestHandler = js.native
   /**
     * Creates a new backend definition for POST requests.
@@ -423,21 +402,11 @@ trait IHttpBackendService extends js.Object {
     * @param headers HTTP headers object or function that receives the headers and returns true if the headers match the current expectation.
     * @param keys Array of keys to assign to regex matches in the request url.
     */
-  def whenPOST(url: String | RegExp | (js.Function1[/* url */ String, Boolean])): IRequestHandler = js.native
   def whenPOST(
     url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])
-  ): IRequestHandler = js.native
-  def whenPOST(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])
-  ): IRequestHandler = js.native
-  def whenPOST(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean]),
-    keys: js.Array[String]
+    data: js.UndefOr[String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])],
+    headers: js.UndefOr[IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])],
+    keys: js.UndefOr[js.Array[String]]
   ): IRequestHandler = js.native
   /**
     * Creates a new backend definition for PUT requests.
@@ -450,21 +419,11 @@ trait IHttpBackendService extends js.Object {
     * headers match the current definition.
     * @param keys Array of keys to assign to regex matches in the request url.
     */
-  def whenPUT(url: String | RegExp | (js.Function1[/* url */ String, Boolean])): IRequestHandler = js.native
   def whenPUT(
     url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])
-  ): IRequestHandler = js.native
-  def whenPUT(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])
-  ): IRequestHandler = js.native
-  def whenPUT(
-    url: String | RegExp | (js.Function1[/* url */ String, Boolean]),
-    data: String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean]),
-    headers: IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean]),
-    keys: js.Array[String]
+    data: js.UndefOr[String | RegExp | js.Object | (js.Function1[/* data */ String, Boolean])],
+    headers: js.UndefOr[IHttpHeaders | (js.Function1[/* headers */ IHttpHeaders, Boolean])],
+    keys: js.UndefOr[js.Array[String]]
   ): IRequestHandler = js.native
   /**
     * Creates a new backend definition that compares only with the requested route.

@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Range () extends js.Object {
   def this(start: Double) = this()
+  def this(start: js.UndefOr[scala.Nothing], end: Double) = this()
   def this(start: Double, end: Double) = this()
+  def this(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], step: Double) = this()
+  def this(start: js.UndefOr[scala.Nothing], end: Double, step: Double) = this()
+  def this(start: Double, end: js.UndefOr[scala.Nothing], step: Double) = this()
   def this(start: Double, end: Double, step: Double) = this()
   /** Whether the class contains the specified value. */
   def contains(value: Double): Boolean = js.native

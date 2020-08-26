@@ -124,54 +124,112 @@ trait SchemaCourseWork extends js.Object {
 
 object SchemaCourseWork {
   @scala.inline
-  def apply(
-    alternateLink: String = null,
-    assigneeMode: String = null,
-    assignment: SchemaAssignment = null,
-    associatedWithDeveloper: js.UndefOr[Boolean] = js.undefined,
-    courseId: String = null,
-    creationTime: String = null,
-    creatorUserId: String = null,
-    description: String = null,
-    dueDate: SchemaDate = null,
-    dueTime: SchemaTimeOfDay = null,
-    id: String = null,
-    individualStudentsOptions: SchemaIndividualStudentsOptions = null,
-    materials: js.Array[SchemaMaterial] = null,
-    maxPoints: js.UndefOr[Double] = js.undefined,
-    multipleChoiceQuestion: SchemaMultipleChoiceQuestion = null,
-    scheduledTime: String = null,
-    state: String = null,
-    submissionModificationMode: String = null,
-    title: String = null,
-    topicId: String = null,
-    updateTime: String = null,
-    workType: String = null
-  ): SchemaCourseWork = {
+  def apply(): SchemaCourseWork = {
     val __obj = js.Dynamic.literal()
-    if (alternateLink != null) __obj.updateDynamic("alternateLink")(alternateLink.asInstanceOf[js.Any])
-    if (assigneeMode != null) __obj.updateDynamic("assigneeMode")(assigneeMode.asInstanceOf[js.Any])
-    if (assignment != null) __obj.updateDynamic("assignment")(assignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(associatedWithDeveloper)) __obj.updateDynamic("associatedWithDeveloper")(associatedWithDeveloper.get.asInstanceOf[js.Any])
-    if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (creatorUserId != null) __obj.updateDynamic("creatorUserId")(creatorUserId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (dueDate != null) __obj.updateDynamic("dueDate")(dueDate.asInstanceOf[js.Any])
-    if (dueTime != null) __obj.updateDynamic("dueTime")(dueTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (individualStudentsOptions != null) __obj.updateDynamic("individualStudentsOptions")(individualStudentsOptions.asInstanceOf[js.Any])
-    if (materials != null) __obj.updateDynamic("materials")(materials.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxPoints)) __obj.updateDynamic("maxPoints")(maxPoints.get.asInstanceOf[js.Any])
-    if (multipleChoiceQuestion != null) __obj.updateDynamic("multipleChoiceQuestion")(multipleChoiceQuestion.asInstanceOf[js.Any])
-    if (scheduledTime != null) __obj.updateDynamic("scheduledTime")(scheduledTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (submissionModificationMode != null) __obj.updateDynamic("submissionModificationMode")(submissionModificationMode.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (topicId != null) __obj.updateDynamic("topicId")(topicId.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (workType != null) __obj.updateDynamic("workType")(workType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCourseWork]
   }
+  @scala.inline
+  implicit class SchemaCourseWorkOps[Self <: SchemaCourseWork] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlternateLink(value: String): Self = this.set("alternateLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternateLink: Self = this.set("alternateLink", js.undefined)
+    @scala.inline
+    def setAssigneeMode(value: String): Self = this.set("assigneeMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssigneeMode: Self = this.set("assigneeMode", js.undefined)
+    @scala.inline
+    def setAssignment(value: SchemaAssignment): Self = this.set("assignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignment: Self = this.set("assignment", js.undefined)
+    @scala.inline
+    def setAssociatedWithDeveloper(value: Boolean): Self = this.set("associatedWithDeveloper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedWithDeveloper: Self = this.set("associatedWithDeveloper", js.undefined)
+    @scala.inline
+    def setCourseId(value: String): Self = this.set("courseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCourseId: Self = this.set("courseId", js.undefined)
+    @scala.inline
+    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setCreatorUserId(value: String): Self = this.set("creatorUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorUserId: Self = this.set("creatorUserId", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDueDate(value: SchemaDate): Self = this.set("dueDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDueDate: Self = this.set("dueDate", js.undefined)
+    @scala.inline
+    def setDueTime(value: SchemaTimeOfDay): Self = this.set("dueTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDueTime: Self = this.set("dueTime", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIndividualStudentsOptions(value: SchemaIndividualStudentsOptions): Self = this.set("individualStudentsOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndividualStudentsOptions: Self = this.set("individualStudentsOptions", js.undefined)
+    @scala.inline
+    def setMaterialsVarargs(value: SchemaMaterial*): Self = this.set("materials", js.Array(value :_*))
+    @scala.inline
+    def setMaterials(value: js.Array[SchemaMaterial]): Self = this.set("materials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaterials: Self = this.set("materials", js.undefined)
+    @scala.inline
+    def setMaxPoints(value: Double): Self = this.set("maxPoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPoints: Self = this.set("maxPoints", js.undefined)
+    @scala.inline
+    def setMultipleChoiceQuestion(value: SchemaMultipleChoiceQuestion): Self = this.set("multipleChoiceQuestion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultipleChoiceQuestion: Self = this.set("multipleChoiceQuestion", js.undefined)
+    @scala.inline
+    def setScheduledTime(value: String): Self = this.set("scheduledTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduledTime: Self = this.set("scheduledTime", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setSubmissionModificationMode(value: String): Self = this.set("submissionModificationMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmissionModificationMode: Self = this.set("submissionModificationMode", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTopicId(value: String): Self = this.set("topicId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicId: Self = this.set("topicId", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setWorkType(value: String): Self = this.set("workType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkType: Self = this.set("workType", js.undefined)
+  }
+  
 }
 

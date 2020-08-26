@@ -46,28 +46,58 @@ trait Activity extends js.Object {
 
 object Activity {
   @scala.inline
-  def apply(
-    CommentMetadata: CommentMetadata = null,
-    Initiator: UserMetadata = null,
-    IsIndirectActivity: js.UndefOr[BooleanType] = js.undefined,
-    OrganizationId: IdType = null,
-    OriginalParent: ResourceMetadata = null,
-    Participants: Participants = null,
-    ResourceMetadata: ResourceMetadata = null,
-    TimeStamp: TimestampType = null,
-    Type: ActivityType = null
-  ): Activity = {
+  def apply(): Activity = {
     val __obj = js.Dynamic.literal()
-    if (CommentMetadata != null) __obj.updateDynamic("CommentMetadata")(CommentMetadata.asInstanceOf[js.Any])
-    if (Initiator != null) __obj.updateDynamic("Initiator")(Initiator.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsIndirectActivity)) __obj.updateDynamic("IsIndirectActivity")(IsIndirectActivity.get.asInstanceOf[js.Any])
-    if (OrganizationId != null) __obj.updateDynamic("OrganizationId")(OrganizationId.asInstanceOf[js.Any])
-    if (OriginalParent != null) __obj.updateDynamic("OriginalParent")(OriginalParent.asInstanceOf[js.Any])
-    if (Participants != null) __obj.updateDynamic("Participants")(Participants.asInstanceOf[js.Any])
-    if (ResourceMetadata != null) __obj.updateDynamic("ResourceMetadata")(ResourceMetadata.asInstanceOf[js.Any])
-    if (TimeStamp != null) __obj.updateDynamic("TimeStamp")(TimeStamp.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Activity]
   }
+  @scala.inline
+  implicit class ActivityOps[Self <: Activity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommentMetadata(value: CommentMetadata): Self = this.set("CommentMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommentMetadata: Self = this.set("CommentMetadata", js.undefined)
+    @scala.inline
+    def setInitiator(value: UserMetadata): Self = this.set("Initiator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitiator: Self = this.set("Initiator", js.undefined)
+    @scala.inline
+    def setIsIndirectActivity(value: BooleanType): Self = this.set("IsIndirectActivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsIndirectActivity: Self = this.set("IsIndirectActivity", js.undefined)
+    @scala.inline
+    def setOrganizationId(value: IdType): Self = this.set("OrganizationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationId: Self = this.set("OrganizationId", js.undefined)
+    @scala.inline
+    def setOriginalParent(value: ResourceMetadata): Self = this.set("OriginalParent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalParent: Self = this.set("OriginalParent", js.undefined)
+    @scala.inline
+    def setParticipants(value: Participants): Self = this.set("Participants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParticipants: Self = this.set("Participants", js.undefined)
+    @scala.inline
+    def setResourceMetadata(value: ResourceMetadata): Self = this.set("ResourceMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceMetadata: Self = this.set("ResourceMetadata", js.undefined)
+    @scala.inline
+    def setTimeStamp(value: TimestampType): Self = this.set("TimeStamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeStamp: Self = this.set("TimeStamp", js.undefined)
+    @scala.inline
+    def setType(value: ActivityType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

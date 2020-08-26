@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ui-box/dist/enhancers/flex", JSImport.Namespace)
+@JSImport("ui-box/dist/src/enhancers/flex", JSImport.Namespace)
 @js.native
 object flexMod extends js.Object {
   val propAliases: PropAliases = js.native

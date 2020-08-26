@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Boolean extends Value {
-  def getValue(): scala.Boolean
+  def getValue(): scala.Boolean = js.native
 }
 
 @JSImport("node-sass", "types.Boolean")

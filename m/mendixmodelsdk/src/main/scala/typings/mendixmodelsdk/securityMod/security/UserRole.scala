@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/user-role relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/user-roles relevant section in reference guide}
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -39,31 +39,23 @@ class UserRole protected ()
   var model_FUserRole: IModel = js.native
   @JSName("name")
   val name_FUserRole: String = js.native
-  /**
-    * Returns the qualified name of this element, or
-    * null if this element is not a part of the model,
-    * or if it or one of its namespace containers does not have a
-    * valid name.
-    */
-  /* CompleteClass */
-  override val qualifiedName: String | Null = js.native
   def checkSecurity: Boolean = js.native
-  def checkSecurity(newValue: Boolean): js.Any = js.native
+  def checkSecurity_=(newValue: Boolean): Unit = js.native
   def containerAsProjectSecurity: ProjectSecurity = js.native
   def description: String = js.native
-  def description(newValue: String): js.Any = js.native
+  def description_=(newValue: String): Unit = js.native
   def guid: String = js.native
-  def guid(newValue: String): js.Any = js.native
+  def guid_=(newValue: String): Unit = js.native
   def manageAllRoles: Boolean = js.native
-  def manageAllRoles(newValue: Boolean): js.Any = js.native
+  def manageAllRoles_=(newValue: Boolean): Unit = js.native
   def manageUsersWithoutRoles: Boolean = js.native
-  def manageUsersWithoutRoles(newValue: Boolean): js.Any = js.native
+  def manageUsersWithoutRoles_=(newValue: Boolean): Unit = js.native
   def manageableRoles: IList[IUserRole] = js.native
   def manageableRolesQualifiedNames: js.Array[String] = js.native
   def moduleRoles: IList[IModuleRole] = js.native
   def moduleRolesQualifiedNames: js.Array[String] = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   @JSName("qualifiedName")
   def qualifiedName_MUserRole: String | Null = js.native
 }

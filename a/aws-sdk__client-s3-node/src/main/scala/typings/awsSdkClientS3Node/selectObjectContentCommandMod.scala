@@ -27,17 +27,10 @@ object selectObjectContentCommandMod extends js.Object {
           Readable
         ] {
     def this(input: SelectObjectContentInput) = this()
-    /* CompleteClass */
-    override val input: SelectObjectContentInput = js.native
     val middlewareStack: MiddlewareStack[SelectObjectContentInput, SelectObjectContentOutput, Readable] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[SelectObjectContentInput, SelectObjectContentOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[SelectObjectContentInput, SelectObjectContentOutput] = js.native
   }

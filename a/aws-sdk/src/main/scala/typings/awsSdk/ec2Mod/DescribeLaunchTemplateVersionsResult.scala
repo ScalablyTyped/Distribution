@@ -18,11 +18,32 @@ trait DescribeLaunchTemplateVersionsResult extends js.Object {
 
 object DescribeLaunchTemplateVersionsResult {
   @scala.inline
-  def apply(LaunchTemplateVersions: LaunchTemplateVersionSet = null, NextToken: String = null): DescribeLaunchTemplateVersionsResult = {
+  def apply(): DescribeLaunchTemplateVersionsResult = {
     val __obj = js.Dynamic.literal()
-    if (LaunchTemplateVersions != null) __obj.updateDynamic("LaunchTemplateVersions")(LaunchTemplateVersions.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLaunchTemplateVersionsResult]
   }
+  @scala.inline
+  implicit class DescribeLaunchTemplateVersionsResultOps[Self <: DescribeLaunchTemplateVersionsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLaunchTemplateVersionsVarargs(value: LaunchTemplateVersion*): Self = this.set("LaunchTemplateVersions", js.Array(value :_*))
+    @scala.inline
+    def setLaunchTemplateVersions(value: LaunchTemplateVersionSet): Self = this.set("LaunchTemplateVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateVersions: Self = this.set("LaunchTemplateVersions", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

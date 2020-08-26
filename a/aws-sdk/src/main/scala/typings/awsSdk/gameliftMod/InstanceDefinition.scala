@@ -18,10 +18,28 @@ trait InstanceDefinition extends js.Object {
 
 object InstanceDefinition {
   @scala.inline
-  def apply(InstanceType: GameServerGroupInstanceType, WeightedCapacity: WeightedCapacity = null): InstanceDefinition = {
+  def apply(InstanceType: GameServerGroupInstanceType): InstanceDefinition = {
     val __obj = js.Dynamic.literal(InstanceType = InstanceType.asInstanceOf[js.Any])
-    if (WeightedCapacity != null) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceDefinition]
   }
+  @scala.inline
+  implicit class InstanceDefinitionOps[Self <: InstanceDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceType(value: GameServerGroupInstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWeightedCapacity(value: WeightedCapacity): Self = this.set("WeightedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeightedCapacity: Self = this.set("WeightedCapacity", js.undefined)
+  }
+  
 }
 

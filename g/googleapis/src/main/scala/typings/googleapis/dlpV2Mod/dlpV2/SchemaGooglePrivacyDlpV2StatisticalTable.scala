@@ -32,16 +32,36 @@ trait SchemaGooglePrivacyDlpV2StatisticalTable extends js.Object {
 
 object SchemaGooglePrivacyDlpV2StatisticalTable {
   @scala.inline
-  def apply(
-    quasiIds: js.Array[SchemaGooglePrivacyDlpV2QuasiIdentifierField] = null,
-    relativeFrequency: SchemaGooglePrivacyDlpV2FieldId = null,
-    table: SchemaGooglePrivacyDlpV2BigQueryTable = null
-  ): SchemaGooglePrivacyDlpV2StatisticalTable = {
+  def apply(): SchemaGooglePrivacyDlpV2StatisticalTable = {
     val __obj = js.Dynamic.literal()
-    if (quasiIds != null) __obj.updateDynamic("quasiIds")(quasiIds.asInstanceOf[js.Any])
-    if (relativeFrequency != null) __obj.updateDynamic("relativeFrequency")(relativeFrequency.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2StatisticalTable]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2StatisticalTableOps[Self <: SchemaGooglePrivacyDlpV2StatisticalTable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQuasiIdsVarargs(value: SchemaGooglePrivacyDlpV2QuasiIdentifierField*): Self = this.set("quasiIds", js.Array(value :_*))
+    @scala.inline
+    def setQuasiIds(value: js.Array[SchemaGooglePrivacyDlpV2QuasiIdentifierField]): Self = this.set("quasiIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuasiIds: Self = this.set("quasiIds", js.undefined)
+    @scala.inline
+    def setRelativeFrequency(value: SchemaGooglePrivacyDlpV2FieldId): Self = this.set("relativeFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativeFrequency: Self = this.set("relativeFrequency", js.undefined)
+    @scala.inline
+    def setTable(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+  }
+  
 }
 

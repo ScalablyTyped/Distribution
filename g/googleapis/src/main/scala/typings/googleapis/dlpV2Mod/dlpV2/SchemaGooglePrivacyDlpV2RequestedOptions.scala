@@ -16,14 +16,30 @@ trait SchemaGooglePrivacyDlpV2RequestedOptions extends js.Object {
 
 object SchemaGooglePrivacyDlpV2RequestedOptions {
   @scala.inline
-  def apply(
-    jobConfig: SchemaGooglePrivacyDlpV2InspectJobConfig = null,
-    snapshotInspectTemplate: SchemaGooglePrivacyDlpV2InspectTemplate = null
-  ): SchemaGooglePrivacyDlpV2RequestedOptions = {
+  def apply(): SchemaGooglePrivacyDlpV2RequestedOptions = {
     val __obj = js.Dynamic.literal()
-    if (jobConfig != null) __obj.updateDynamic("jobConfig")(jobConfig.asInstanceOf[js.Any])
-    if (snapshotInspectTemplate != null) __obj.updateDynamic("snapshotInspectTemplate")(snapshotInspectTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2RequestedOptions]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2RequestedOptionsOps[Self <: SchemaGooglePrivacyDlpV2RequestedOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobConfig(value: SchemaGooglePrivacyDlpV2InspectJobConfig): Self = this.set("jobConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobConfig: Self = this.set("jobConfig", js.undefined)
+    @scala.inline
+    def setSnapshotInspectTemplate(value: SchemaGooglePrivacyDlpV2InspectTemplate): Self = this.set("snapshotInspectTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotInspectTemplate: Self = this.set("snapshotInspectTemplate", js.undefined)
+  }
+  
 }
 

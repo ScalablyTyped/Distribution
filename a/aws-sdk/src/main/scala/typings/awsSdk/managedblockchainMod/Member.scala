@@ -42,26 +42,54 @@ trait Member extends js.Object {
 
 object Member {
   @scala.inline
-  def apply(
-    CreationDate: Timestamp = null,
-    Description: DescriptionString = null,
-    FrameworkAttributes: MemberFrameworkAttributes = null,
-    Id: ResourceIdString = null,
-    LogPublishingConfiguration: MemberLogPublishingConfiguration = null,
-    Name: NetworkMemberNameString = null,
-    NetworkId: ResourceIdString = null,
-    Status: MemberStatus = null
-  ): Member = {
+  def apply(): Member = {
     val __obj = js.Dynamic.literal()
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (FrameworkAttributes != null) __obj.updateDynamic("FrameworkAttributes")(FrameworkAttributes.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (LogPublishingConfiguration != null) __obj.updateDynamic("LogPublishingConfiguration")(LogPublishingConfiguration.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NetworkId != null) __obj.updateDynamic("NetworkId")(NetworkId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Member]
   }
+  @scala.inline
+  implicit class MemberOps[Self <: Member] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: Timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setFrameworkAttributes(value: MemberFrameworkAttributes): Self = this.set("FrameworkAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameworkAttributes: Self = this.set("FrameworkAttributes", js.undefined)
+    @scala.inline
+    def setId(value: ResourceIdString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLogPublishingConfiguration(value: MemberLogPublishingConfiguration): Self = this.set("LogPublishingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogPublishingConfiguration: Self = this.set("LogPublishingConfiguration", js.undefined)
+    @scala.inline
+    def setName(value: NetworkMemberNameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNetworkId(value: ResourceIdString): Self = this.set("NetworkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkId: Self = this.set("NetworkId", js.undefined)
+    @scala.inline
+    def setStatus(value: MemberStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

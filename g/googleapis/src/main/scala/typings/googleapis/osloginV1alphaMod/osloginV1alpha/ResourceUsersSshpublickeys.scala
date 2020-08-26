@@ -27,6 +27,7 @@ class ResourceUsersSshpublickeys protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceUsersSshpublickeysDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceUsersSshpublickeysDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -54,6 +55,7 @@ class ResourceUsersSshpublickeys protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSshPublicKey] = js.native
   def get(callback: BodyResponseCallback[SchemaSshPublicKey]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSshPublicKey] = js.native
   def get(params: ParamsResourceUsersSshpublickeysGet): GaxiosPromise[SchemaSshPublicKey] = js.native
   def get(params: ParamsResourceUsersSshpublickeysGet, callback: BodyResponseCallback[SchemaSshPublicKey]): Unit = js.native
   def get(
@@ -84,6 +86,7 @@ class ResourceUsersSshpublickeys protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaSshPublicKey] = js.native
   def patch(callback: BodyResponseCallback[SchemaSshPublicKey]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSshPublicKey] = js.native
   def patch(params: ParamsResourceUsersSshpublickeysPatch): GaxiosPromise[SchemaSshPublicKey] = js.native
   def patch(params: ParamsResourceUsersSshpublickeysPatch, callback: BodyResponseCallback[SchemaSshPublicKey]): Unit = js.native
   def patch(

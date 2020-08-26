@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * Default: `['sha512']`
@@ -17,7 +18,7 @@ trait Options extends js.Object {
     * Currently only supports one algorithm at a time (i.e., an array
     * length of exactly `1`). Has no effect if `opts.integrity` is present.
     */
-  var algorithms: js.UndefOr[js.Array[String]] = js.undefined
+  var algorithms: js.UndefOr[js.Array[String]] = js.native
   /**
     * If present, the pre-calculated digest for the inserted content. If
     * this option if provided and does not match the post-insertion digest,
@@ -25,7 +26,7 @@ trait Options extends js.Object {
     *
     * `algorithms` has no effect if this option is present.
     */
-  var integrity: js.UndefOr[String] = js.undefined
+  var integrity: js.UndefOr[String] = js.native
   /**
     * Default: `null`
     *
@@ -42,33 +43,59 @@ trait Options extends js.Object {
     * `memoize: false` to the reader functions, but their default will be
     * to read from memory.
     */
-  var memoize: js.UndefOr[Null | Boolean] = js.undefined
+  var memoize: js.UndefOr[Null | Boolean] = js.native
   /** Arbitrary metadata to be attached to the inserted key. */
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  var metadata: js.UndefOr[js.Any] = js.native
   /**
     * If provided, the data stream will be verified to check that enough
     * data was passed through. If there's more or less data than expected,
     * insertion will fail with an `EBADSIZE` error.
     */
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    algorithms: js.Array[String] = null,
-    integrity: String = null,
-    memoize: js.UndefOr[Null | Boolean] = js.undefined,
-    metadata: js.Any = null,
-    size: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (!js.isUndefined(memoize)) __obj.updateDynamic("memoize")(memoize.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithmsVarargs(value: String*): Self = this.set("algorithms", js.Array(value :_*))
+    @scala.inline
+    def setAlgorithms(value: js.Array[String]): Self = this.set("algorithms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithms: Self = this.set("algorithms", js.undefined)
+    @scala.inline
+    def setIntegrity(value: String): Self = this.set("integrity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrity: Self = this.set("integrity", js.undefined)
+    @scala.inline
+    def setMemoize(value: Boolean): Self = this.set("memoize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoize: Self = this.set("memoize", js.undefined)
+    @scala.inline
+    def setMemoizeNull: Self = this.set("memoize", null)
+    @scala.inline
+    def setMetadata(value: js.Any): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait PackageSource extends js.Object {
 
 object PackageSource {
   @scala.inline
-  def apply(S3BucketName: S3BucketName = null, S3Key: S3Key = null): PackageSource = {
+  def apply(): PackageSource = {
     val __obj = js.Dynamic.literal()
-    if (S3BucketName != null) __obj.updateDynamic("S3BucketName")(S3BucketName.asInstanceOf[js.Any])
-    if (S3Key != null) __obj.updateDynamic("S3Key")(S3Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageSource]
   }
+  @scala.inline
+  implicit class PackageSourceOps[Self <: PackageSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3BucketName(value: S3BucketName): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BucketName: Self = this.set("S3BucketName", js.undefined)
+    @scala.inline
+    def setS3Key(value: S3Key): Self = this.set("S3Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Key: Self = this.set("S3Key", js.undefined)
+  }
+  
 }
 

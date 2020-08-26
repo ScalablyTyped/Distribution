@@ -5,24 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var asBytes: js.UndefOr[Boolean] = js.undefined
-  var asString: js.UndefOr[Boolean] = js.undefined
-  var encoding: js.UndefOr[binary | String] = js.undefined
+  var asBytes: js.UndefOr[Boolean] = js.native
+  var asString: js.UndefOr[Boolean] = js.native
+  var encoding: js.UndefOr[binary | String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    asBytes: js.UndefOr[Boolean] = js.undefined,
-    asString: js.UndefOr[Boolean] = js.undefined,
-    encoding: binary | String = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asBytes)) __obj.updateDynamic("asBytes")(asBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(asString)) __obj.updateDynamic("asString")(asString.get.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsBytes(value: Boolean): Self = this.set("asBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsBytes: Self = this.set("asBytes", js.undefined)
+    @scala.inline
+    def setAsString(value: Boolean): Self = this.set("asString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsString: Self = this.set("asString", js.undefined)
+    @scala.inline
+    def setEncoding(value: binary | String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+  }
+  
 }
 

@@ -49,12 +49,14 @@ object mod extends js.Object {
   class DateTimePicker ()
     extends typings.blueprintjsDatetime.dateTimePickerMod.DateTimePicker {
     def this(props: IDateTimePickerProps) = this()
+    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
     def this(props: IDateTimePickerProps, context: js.Any) = this()
   }
   
   @js.native
   trait IDatePickerLocaleUtils extends js.Object {
     def formatDate(date: Date): String = js.native
+    def formatDate(date: Date, format: js.UndefOr[scala.Nothing], locale: String): String = js.native
     def formatDate(date: Date, format: String): String = js.native
     def formatDate(date: Date, format: String, locale: String): String = js.native
     def formatDate(date: Date, format: js.Array[String]): String = js.native
@@ -72,6 +74,7 @@ object mod extends js.Object {
     def getMonths(): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
     def getMonths(locale: String): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
     def parseDate(str: String): Date = js.native
+    def parseDate(str: String, format: js.UndefOr[scala.Nothing], locale: String): Date = js.native
     def parseDate(str: String, format: String): Date = js.native
     def parseDate(str: String, format: String, locale: String): Date = js.native
   }
@@ -80,6 +83,7 @@ object mod extends js.Object {
   class TimePicker ()
     extends typings.blueprintjsDatetime.timePickerMod.TimePicker {
     def this(props: ITimePickerProps) = this()
+    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
     def this(props: ITimePickerProps, context: js.Any) = this()
   }
   

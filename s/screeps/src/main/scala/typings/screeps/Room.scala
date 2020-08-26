@@ -121,13 +121,27 @@ trait Room extends js.Object {
     * @returns The name of a new flag, or one of the following error codes: ERR_NAME_EXISTS, ERR_INVALID_ARGS
     */
   def createFlag(pos: RoomPosition): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(
+    pos: RoomPosition,
+    name: js.UndefOr[scala.Nothing],
+    color: js.UndefOr[ColorConstant],
+    secondaryColor: ColorConstant
+  ): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: RoomPosition, name: js.UndefOr[scala.Nothing], color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: RoomPosition, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: RoomPosition, name: String, color: js.UndefOr[ColorConstant], secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: RoomPosition, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: RoomPosition, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: Pos): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(
+    pos: Pos,
+    name: js.UndefOr[scala.Nothing],
+    color: js.UndefOr[ColorConstant],
+    secondaryColor: ColorConstant
+  ): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: js.UndefOr[scala.Nothing], color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: Pos, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: String, color: js.UndefOr[ColorConstant], secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: Pos, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: Pos, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   /**
     * Create new Flag at the specified location.
     * @param x The X position.
@@ -144,9 +158,23 @@ trait Room extends js.Object {
     * @returns The name of a new flag, or one of the following error codes: ERR_NAME_EXISTS, ERR_INVALID_ARGS
     */
   def createFlag(x: Double, y: Double): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(
+    x: Double,
+    y: Double,
+    name: js.UndefOr[scala.Nothing],
+    color: js.UndefOr[ColorConstant],
+    secondaryColor: ColorConstant
+  ): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(x: Double, y: Double, name: js.UndefOr[scala.Nothing], color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(x: Double, y: Double, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(
+    x: Double,
+    y: Double,
+    name: String,
+    color: js.UndefOr[ColorConstant],
+    secondaryColor: ColorConstant
+  ): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(x: Double, y: Double, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(x: Double, y: Double, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   /**
     * Find all objects of the specified type in the room.
     * @param type One of the following constants:

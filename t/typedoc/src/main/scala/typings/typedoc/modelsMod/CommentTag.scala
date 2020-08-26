@@ -10,6 +10,7 @@ class CommentTag protected ()
   extends typings.typedoc.commentsMod.CommentTag {
   def this(tagName: String) = this()
   def this(tagName: String, paramName: String) = this()
+  def this(tagName: String, paramName: js.UndefOr[scala.Nothing], text: String) = this()
   def this(tagName: String, paramName: String, text: String) = this()
 }
 

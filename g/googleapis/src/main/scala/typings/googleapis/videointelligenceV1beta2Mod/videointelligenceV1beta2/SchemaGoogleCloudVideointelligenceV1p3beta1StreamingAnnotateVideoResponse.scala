@@ -30,16 +30,34 @@ trait SchemaGoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse 
 
 object SchemaGoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse {
   @scala.inline
-  def apply(
-    annotationResults: SchemaGoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults = null,
-    annotationResultsUri: String = null,
-    error: SchemaGoogleRpcStatus = null
-  ): SchemaGoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse = {
     val __obj = js.Dynamic.literal()
-    if (annotationResults != null) __obj.updateDynamic("annotationResults")(annotationResults.asInstanceOf[js.Any])
-    if (annotationResultsUri != null) __obj.updateDynamic("annotationResultsUri")(annotationResultsUri.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponseOps[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotationResults(value: SchemaGoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults): Self = this.set("annotationResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotationResults: Self = this.set("annotationResults", js.undefined)
+    @scala.inline
+    def setAnnotationResultsUri(value: String): Self = this.set("annotationResultsUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotationResultsUri: Self = this.set("annotationResultsUri", js.undefined)
+    @scala.inline
+    def setError(value: SchemaGoogleRpcStatus): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+  }
+  
 }
 

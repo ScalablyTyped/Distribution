@@ -359,6 +359,7 @@ trait Pointer extends js.Object {
     * @param out An array to store the results in. If not provided a new one will be created.
     */
   def getInterpolatedPosition(): js.Array[_] = js.native
+  def getInterpolatedPosition(steps: js.UndefOr[scala.Nothing], out: js.Array[_]): js.Array[_] = js.native
   def getInterpolatedPosition(steps: integer): js.Array[_] = js.native
   def getInterpolatedPosition(steps: integer, out: js.Array[_]): js.Array[_] = js.native
   /**

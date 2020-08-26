@@ -10,11 +10,12 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("express-brute-redis", JSImport.Namespace)
 @js.native
-/**
-  * @summary constructor
-  * @param options Options to configure the Redis client.
-  */
-class ^ () extends expressBruteRedis {
+class ^ protected () extends expressBruteRedis {
+  def this(options: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+  /**
+    * @summary constructor
+    * @param options Options to configure the Redis client.
+    */
   def this(options: ClientOpts, args: js.Any*) = this()
 }
 

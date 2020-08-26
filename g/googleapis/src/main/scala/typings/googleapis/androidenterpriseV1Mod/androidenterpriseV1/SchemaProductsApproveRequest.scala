@@ -28,11 +28,30 @@ trait SchemaProductsApproveRequest extends js.Object {
 
 object SchemaProductsApproveRequest {
   @scala.inline
-  def apply(approvalUrlInfo: SchemaApprovalUrlInfo = null, approvedPermissions: String = null): SchemaProductsApproveRequest = {
+  def apply(): SchemaProductsApproveRequest = {
     val __obj = js.Dynamic.literal()
-    if (approvalUrlInfo != null) __obj.updateDynamic("approvalUrlInfo")(approvalUrlInfo.asInstanceOf[js.Any])
-    if (approvedPermissions != null) __obj.updateDynamic("approvedPermissions")(approvedPermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProductsApproveRequest]
   }
+  @scala.inline
+  implicit class SchemaProductsApproveRequestOps[Self <: SchemaProductsApproveRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApprovalUrlInfo(value: SchemaApprovalUrlInfo): Self = this.set("approvalUrlInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalUrlInfo: Self = this.set("approvalUrlInfo", js.undefined)
+    @scala.inline
+    def setApprovedPermissions(value: String): Self = this.set("approvedPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovedPermissions: Self = this.set("approvedPermissions", js.undefined)
+  }
+  
 }
 

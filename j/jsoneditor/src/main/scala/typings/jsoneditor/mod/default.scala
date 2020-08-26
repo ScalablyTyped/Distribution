@@ -18,6 +18,7 @@ class default protected () extends JSONEditor {
     */
   def this(container: HTMLElement) = this()
   def this(container: HTMLElement, options: JSONEditorOptions) = this()
+  def this(container: HTMLElement, options: js.UndefOr[scala.Nothing], json: js.Any) = this()
   def this(container: HTMLElement, options: JSONEditorOptions, json: js.Any) = this()
 }
 

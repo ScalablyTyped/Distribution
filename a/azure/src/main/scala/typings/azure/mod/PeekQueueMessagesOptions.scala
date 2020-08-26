@@ -4,24 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PeekQueueMessagesOptions extends TimeoutIntervalOptions {
-  var numofmessages: js.UndefOr[Double] = js.undefined
+  var numofmessages: js.UndefOr[Double] = js.native
 }
 
 object PeekQueueMessagesOptions {
   @scala.inline
-  def apply(
-    locationMode: String = null,
-    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
-    numofmessages: js.UndefOr[Double] = js.undefined,
-    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined
-  ): PeekQueueMessagesOptions = {
+  def apply(): PeekQueueMessagesOptions = {
     val __obj = js.Dynamic.literal()
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numofmessages)) __obj.updateDynamic("numofmessages")(numofmessages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeekQueueMessagesOptions]
   }
+  @scala.inline
+  implicit class PeekQueueMessagesOptionsOps[Self <: PeekQueueMessagesOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNumofmessages(value: Double): Self = this.set("numofmessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumofmessages: Self = this.set("numofmessages", js.undefined)
+  }
+  
 }
 

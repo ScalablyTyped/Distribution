@@ -23,7 +23,7 @@ trait VpcAttachmentAccepterState extends js.Object {
   /**
     * Key-value tags for the EC2 Transit Gateway VPC Attachment.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The ID of the EC2 Transit Gateway Attachment to manage.
     */
@@ -52,30 +52,64 @@ trait VpcAttachmentAccepterState extends js.Object {
 
 object VpcAttachmentAccepterState {
   @scala.inline
-  def apply(
-    dnsSupport: Input[String] = null,
-    ipv6Support: Input[String] = null,
-    subnetIds: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null,
-    transitGatewayAttachmentId: Input[String] = null,
-    transitGatewayDefaultRouteTableAssociation: Input[Boolean] = null,
-    transitGatewayDefaultRouteTablePropagation: Input[Boolean] = null,
-    transitGatewayId: Input[String] = null,
-    vpcId: Input[String] = null,
-    vpcOwnerId: Input[String] = null
-  ): VpcAttachmentAccepterState = {
+  def apply(): VpcAttachmentAccepterState = {
     val __obj = js.Dynamic.literal()
-    if (dnsSupport != null) __obj.updateDynamic("dnsSupport")(dnsSupport.asInstanceOf[js.Any])
-    if (ipv6Support != null) __obj.updateDynamic("ipv6Support")(ipv6Support.asInstanceOf[js.Any])
-    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (transitGatewayAttachmentId != null) __obj.updateDynamic("transitGatewayAttachmentId")(transitGatewayAttachmentId.asInstanceOf[js.Any])
-    if (transitGatewayDefaultRouteTableAssociation != null) __obj.updateDynamic("transitGatewayDefaultRouteTableAssociation")(transitGatewayDefaultRouteTableAssociation.asInstanceOf[js.Any])
-    if (transitGatewayDefaultRouteTablePropagation != null) __obj.updateDynamic("transitGatewayDefaultRouteTablePropagation")(transitGatewayDefaultRouteTablePropagation.asInstanceOf[js.Any])
-    if (transitGatewayId != null) __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
-    if (vpcOwnerId != null) __obj.updateDynamic("vpcOwnerId")(vpcOwnerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcAttachmentAccepterState]
   }
+  @scala.inline
+  implicit class VpcAttachmentAccepterStateOps[Self <: VpcAttachmentAccepterState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDnsSupport(value: Input[String]): Self = this.set("dnsSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsSupport: Self = this.set("dnsSupport", js.undefined)
+    @scala.inline
+    def setIpv6Support(value: Input[String]): Self = this.set("ipv6Support", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Support: Self = this.set("ipv6Support", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: Input[String]*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("subnetIds", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTransitGatewayAttachmentId(value: Input[String]): Self = this.set("transitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayAttachmentId: Self = this.set("transitGatewayAttachmentId", js.undefined)
+    @scala.inline
+    def setTransitGatewayDefaultRouteTableAssociation(value: Input[Boolean]): Self = this.set("transitGatewayDefaultRouteTableAssociation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayDefaultRouteTableAssociation: Self = this.set("transitGatewayDefaultRouteTableAssociation", js.undefined)
+    @scala.inline
+    def setTransitGatewayDefaultRouteTablePropagation(value: Input[Boolean]): Self = this.set("transitGatewayDefaultRouteTablePropagation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayDefaultRouteTablePropagation: Self = this.set("transitGatewayDefaultRouteTablePropagation", js.undefined)
+    @scala.inline
+    def setTransitGatewayId(value: Input[String]): Self = this.set("transitGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayId: Self = this.set("transitGatewayId", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+    @scala.inline
+    def setVpcOwnerId(value: Input[String]): Self = this.set("vpcOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcOwnerId: Self = this.set("vpcOwnerId", js.undefined)
+  }
+  
 }
 

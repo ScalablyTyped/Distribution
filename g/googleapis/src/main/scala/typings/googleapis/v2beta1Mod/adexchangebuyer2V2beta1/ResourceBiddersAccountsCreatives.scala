@@ -31,6 +31,7 @@ class ResourceBiddersAccountsCreatives protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceBiddersAccountsCreativesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceBiddersAccountsCreativesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(

@@ -12,7 +12,7 @@ Convert HEX to RGBA
 | Keywords           | hex, rgba, convert, colors |
 | # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 596773 |
+| # downloads        | 616985 |
 | # stars            | 1 |
 
 ## Links

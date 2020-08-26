@@ -1,6 +1,5 @@
 package typings.blueprintjsCore.toastMod
 
-import typings.blueprintjsCore.intentMod.Intent
 import typings.blueprintjsCore.propsMod.IActionProps
 import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.blueprintjsCore.propsMod.ILinkProps
@@ -12,6 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IToastProps
   extends IProps
      with IIntentProps {
@@ -21,44 +21,64 @@ trait IToastProps
     * cannot have its own intent color that might conflict with the toast's intent). Omit this
     * prop to omit the action button.
     */
-  var action: js.UndefOr[IActionProps with ILinkProps] = js.undefined
+  var action: js.UndefOr[IActionProps with ILinkProps] = js.native
   /** Name of a Blueprint UI icon (or an icon element) to render before the message. */
-  var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
+  var icon: js.UndefOr[IconName | MaybeElement] = js.native
   /** Message to display in the body of the toast. */
-  var message: ReactNode
+  var message: ReactNode = js.native
   /**
     * Callback invoked when the toast is dismissed, either by the user or by the timeout.
     * The value of the argument indicates whether the toast was closed because the timeout expired.
     */
-  var onDismiss: js.UndefOr[js.Function1[/* didTimeoutExpire */ Boolean, Unit]] = js.undefined
+  var onDismiss: js.UndefOr[js.Function1[/* didTimeoutExpire */ Boolean, Unit]] = js.native
   /**
     * Milliseconds to wait before automatically dismissing toast.
     * Providing a value less than or equal to 0 will disable the timeout (this is discouraged).
     * @default 5000
     */
-  var timeout: js.UndefOr[Double] = js.undefined
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object IToastProps {
   @scala.inline
-  def apply(
-    action: IActionProps with ILinkProps = null,
-    className: String = null,
-    icon: js.UndefOr[Null | IconName | MaybeElement] = js.undefined,
-    intent: Intent = null,
-    message: ReactNode = null,
-    onDismiss: /* didTimeoutExpire */ Boolean => Unit = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): IToastProps = {
+  def apply(): IToastProps = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToastProps]
   }
+  @scala.inline
+  implicit class IToastPropsOps[Self <: IToastProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: IActionProps with ILinkProps): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setIcon(value: IconName | MaybeElement): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconNull: Self = this.set("icon", null)
+    @scala.inline
+    def setMessage(value: ReactNode): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setOnDismiss(value: /* didTimeoutExpire */ Boolean => Unit): Self = this.set("onDismiss", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

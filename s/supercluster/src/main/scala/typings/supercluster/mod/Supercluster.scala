@@ -41,6 +41,7 @@ trait Supercluster[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] e
     * @param offset The amount of points to skip (for pagination).
     */
   def getLeaves(clusterId: Double): js.Array[PointFeature[P]] = js.native
+  def getLeaves(clusterId: Double, limit: js.UndefOr[scala.Nothing], offset: Double): js.Array[PointFeature[P]] = js.native
   def getLeaves(clusterId: Double, limit: Double): js.Array[PointFeature[P]] = js.native
   def getLeaves(clusterId: Double, limit: Double, offset: Double): js.Array[PointFeature[P]] = js.native
   /**

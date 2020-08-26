@@ -12,7 +12,7 @@ Screen-reader-friendly alert messages.
 | Keywords           | - |
 | # releases         | 20 |
 | # dependents       | 13 |
-| # downloads        | 207057 |
+| # downloads        | 221460 |
 | # stars            | 0 |
 
 ## Links

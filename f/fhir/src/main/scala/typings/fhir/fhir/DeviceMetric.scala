@@ -8,117 +8,129 @@ import scala.scalajs.js.annotation._
   * Measurement, calculation or setting capability of a medical device
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait DeviceMetric extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait DeviceMetric extends DomainResource {
   /**
     * Contains extended information for property 'category'.
     */
-  var _category: js.UndefOr[Element] = js.undefined
+  var _category: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'color'.
     */
-  var _color: js.UndefOr[Element] = js.undefined
+  var _color: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'operationalStatus'.
     */
-  var _operationalStatus: js.UndefOr[Element] = js.undefined
+  var _operationalStatus: js.UndefOr[Element] = js.native
   /**
     * Describes the calibrations that have been performed or that are required to be performed
     */
-  var calibration: js.UndefOr[js.Array[DeviceMetricCalibration]] = js.undefined
+  var calibration: js.UndefOr[js.Array[DeviceMetricCalibration]] = js.native
   /**
     * measurement | setting | calculation | unspecified
     */
-  var category: code
+  var category: code = js.native
   /**
     * black | red | green | yellow | blue | magenta | cyan | white
     */
-  var color: js.UndefOr[code] = js.undefined
+  var color: js.UndefOr[code] = js.native
   /**
     * Unique identifier of this DeviceMetric
     */
-  var identifier: Identifier
+  var identifier: Identifier = js.native
   /**
     * Describes the measurement repetition time
     */
-  var measurementPeriod: js.UndefOr[Timing] = js.undefined
+  var measurementPeriod: js.UndefOr[Timing] = js.native
   /**
     * on | off | standby | entered-in-error
     */
-  var operationalStatus: js.UndefOr[code] = js.undefined
+  var operationalStatus: js.UndefOr[code] = js.native
   /**
     * Describes the link to the parent DeviceComponent
     */
-  var parent: js.UndefOr[Reference] = js.undefined
+  var parent: js.UndefOr[Reference] = js.native
   /**
     * Describes the link to the source Device
     */
-  var source: js.UndefOr[Reference] = js.undefined
+  var source: js.UndefOr[Reference] = js.native
   /**
     * Identity of metric, for example Heart Rate or PEEP Setting
     */
-  var `type`: CodeableConcept
+  var `type`: CodeableConcept = js.native
   /**
     * Unit of Measure for the Metric
     */
-  var unit: js.UndefOr[CodeableConcept] = js.undefined
+  var unit: js.UndefOr[CodeableConcept] = js.native
 }
 
 object DeviceMetric {
   @scala.inline
-  def apply(
-    category: code,
-    identifier: Identifier,
-    `type`: CodeableConcept,
-    _category: Element = null,
-    _color: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _operationalStatus: Element = null,
-    _resourceType: Element = null,
-    calibration: js.Array[DeviceMetricCalibration] = null,
-    color: code = null,
-    contained: js.Array[Resource] = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    implicitRules: uri = null,
-    language: code = null,
-    measurementPeriod: Timing = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    operationalStatus: code = null,
-    parent: Reference = null,
-    resourceType: code = null,
-    source: Reference = null,
-    text: Narrative = null,
-    unit: CodeableConcept = null
-  ): DeviceMetric = {
+  def apply(category: code, identifier: Identifier, `type`: CodeableConcept): DeviceMetric = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_category != null) __obj.updateDynamic("_category")(_category.asInstanceOf[js.Any])
-    if (_color != null) __obj.updateDynamic("_color")(_color.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_operationalStatus != null) __obj.updateDynamic("_operationalStatus")(_operationalStatus.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (calibration != null) __obj.updateDynamic("calibration")(calibration.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (measurementPeriod != null) __obj.updateDynamic("measurementPeriod")(measurementPeriod.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (operationalStatus != null) __obj.updateDynamic("operationalStatus")(operationalStatus.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceMetric]
   }
+  @scala.inline
+  implicit class DeviceMetricOps[Self <: DeviceMetric] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: code): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: CodeableConcept): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_category(value: Element): Self = this.set("_category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_category: Self = this.set("_category", js.undefined)
+    @scala.inline
+    def set_color(value: Element): Self = this.set("_color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_color: Self = this.set("_color", js.undefined)
+    @scala.inline
+    def set_operationalStatus(value: Element): Self = this.set("_operationalStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_operationalStatus: Self = this.set("_operationalStatus", js.undefined)
+    @scala.inline
+    def setCalibrationVarargs(value: DeviceMetricCalibration*): Self = this.set("calibration", js.Array(value :_*))
+    @scala.inline
+    def setCalibration(value: js.Array[DeviceMetricCalibration]): Self = this.set("calibration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalibration: Self = this.set("calibration", js.undefined)
+    @scala.inline
+    def setColor(value: code): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setMeasurementPeriod(value: Timing): Self = this.set("measurementPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeasurementPeriod: Self = this.set("measurementPeriod", js.undefined)
+    @scala.inline
+    def setOperationalStatus(value: code): Self = this.set("operationalStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationalStatus: Self = this.set("operationalStatus", js.undefined)
+    @scala.inline
+    def setParent(value: Reference): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setSource(value: Reference): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setUnit(value: CodeableConcept): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,42 @@ trait StartExportTaskRequest extends js.Object {
 
 object StartExportTaskRequest {
   @scala.inline
-  def apply(
-    endTime: TimeStamp = null,
-    exportDataFormat: ExportDataFormats = null,
-    filters: ExportFilters = null,
-    startTime: TimeStamp = null
-  ): StartExportTaskRequest = {
+  def apply(): StartExportTaskRequest = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (exportDataFormat != null) __obj.updateDynamic("exportDataFormat")(exportDataFormat.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartExportTaskRequest]
   }
+  @scala.inline
+  implicit class StartExportTaskRequestOps[Self <: StartExportTaskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: TimeStamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setExportDataFormatVarargs(value: ExportDataFormat*): Self = this.set("exportDataFormat", js.Array(value :_*))
+    @scala.inline
+    def setExportDataFormat(value: ExportDataFormats): Self = this.set("exportDataFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportDataFormat: Self = this.set("exportDataFormat", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: ExportFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: ExportFilters): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setStartTime(value: TimeStamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

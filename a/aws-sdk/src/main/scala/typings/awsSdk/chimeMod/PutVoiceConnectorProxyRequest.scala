@@ -33,14 +33,39 @@ object PutVoiceConnectorProxyRequest {
   def apply(
     DefaultSessionExpiryMinutes: Integer,
     PhoneNumberPoolCountries: CountryList,
-    VoiceConnectorId: NonEmptyString128,
-    Disabled: js.UndefOr[Boolean] = js.undefined,
-    FallBackPhoneNumber: E164PhoneNumber = null
+    VoiceConnectorId: NonEmptyString128
   ): PutVoiceConnectorProxyRequest = {
     val __obj = js.Dynamic.literal(DefaultSessionExpiryMinutes = DefaultSessionExpiryMinutes.asInstanceOf[js.Any], PhoneNumberPoolCountries = PhoneNumberPoolCountries.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.get.asInstanceOf[js.Any])
-    if (FallBackPhoneNumber != null) __obj.updateDynamic("FallBackPhoneNumber")(FallBackPhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutVoiceConnectorProxyRequest]
   }
+  @scala.inline
+  implicit class PutVoiceConnectorProxyRequestOps[Self <: PutVoiceConnectorProxyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultSessionExpiryMinutes(value: Integer): Self = this.set("DefaultSessionExpiryMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPhoneNumberPoolCountriesVarargs(value: Country*): Self = this.set("PhoneNumberPoolCountries", js.Array(value :_*))
+    @scala.inline
+    def setPhoneNumberPoolCountries(value: CountryList): Self = this.set("PhoneNumberPoolCountries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVoiceConnectorId(value: NonEmptyString128): Self = this.set("VoiceConnectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("Disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("Disabled", js.undefined)
+    @scala.inline
+    def setFallBackPhoneNumber(value: E164PhoneNumber): Self = this.set("FallBackPhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallBackPhoneNumber: Self = this.set("FallBackPhoneNumber", js.undefined)
+  }
+  
 }
 

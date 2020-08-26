@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 class UrlResolverCls ()
   extends typings.angularCompiler.urlResolverMod.UrlResolver {
   def this(packagePrefix: String) = this()
-  /* CompleteClass */
-  override def resolve(baseUrl: String, url: String): String = js.native
 }
 

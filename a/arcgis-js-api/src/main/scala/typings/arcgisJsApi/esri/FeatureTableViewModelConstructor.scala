@@ -15,10 +15,10 @@ trait FeatureTableViewModelConstructor
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#getValue)
     *
-    * @param objectId The `ObjectId` of the specified row (feature).
+    * @param objectId The `ObjectId` field of the specified row (feature).
     * @param fieldName The name of the field in which to get the associated `ObjectId`'s row (feature) value.
     *
     */
-  def getValue(objectId: Double, fieldName: String): Graphic = js.native
+  def getValue(objectId: Double, fieldName: String): String | Double | js.Any = js.native
 }
 

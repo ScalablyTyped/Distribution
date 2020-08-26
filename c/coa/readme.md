@@ -11,8 +11,8 @@ Command-Option-Argument: Yet another parser for command line options.
 | Full name          | coa |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 88 |
-| # downloads        | 252061536 |
+| # dependents       | 95 |
+| # downloads        | 301724101 |
 | # stars            | 3 |
 
 ## Links

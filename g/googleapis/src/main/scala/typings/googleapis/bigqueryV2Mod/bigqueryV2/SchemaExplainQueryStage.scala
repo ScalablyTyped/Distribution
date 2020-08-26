@@ -127,68 +127,142 @@ trait SchemaExplainQueryStage extends js.Object {
 
 object SchemaExplainQueryStage {
   @scala.inline
-  def apply(
-    completedParallelInputs: String = null,
-    computeMsAvg: String = null,
-    computeMsMax: String = null,
-    computeRatioAvg: js.UndefOr[Double] = js.undefined,
-    computeRatioMax: js.UndefOr[Double] = js.undefined,
-    endMs: String = null,
-    id: String = null,
-    inputStages: js.Array[String] = null,
-    name: String = null,
-    parallelInputs: String = null,
-    readMsAvg: String = null,
-    readMsMax: String = null,
-    readRatioAvg: js.UndefOr[Double] = js.undefined,
-    readRatioMax: js.UndefOr[Double] = js.undefined,
-    recordsRead: String = null,
-    recordsWritten: String = null,
-    shuffleOutputBytes: String = null,
-    shuffleOutputBytesSpilled: String = null,
-    startMs: String = null,
-    status: String = null,
-    steps: js.Array[SchemaExplainQueryStep] = null,
-    waitMsAvg: String = null,
-    waitMsMax: String = null,
-    waitRatioAvg: js.UndefOr[Double] = js.undefined,
-    waitRatioMax: js.UndefOr[Double] = js.undefined,
-    writeMsAvg: String = null,
-    writeMsMax: String = null,
-    writeRatioAvg: js.UndefOr[Double] = js.undefined,
-    writeRatioMax: js.UndefOr[Double] = js.undefined
-  ): SchemaExplainQueryStage = {
+  def apply(): SchemaExplainQueryStage = {
     val __obj = js.Dynamic.literal()
-    if (completedParallelInputs != null) __obj.updateDynamic("completedParallelInputs")(completedParallelInputs.asInstanceOf[js.Any])
-    if (computeMsAvg != null) __obj.updateDynamic("computeMsAvg")(computeMsAvg.asInstanceOf[js.Any])
-    if (computeMsMax != null) __obj.updateDynamic("computeMsMax")(computeMsMax.asInstanceOf[js.Any])
-    if (!js.isUndefined(computeRatioAvg)) __obj.updateDynamic("computeRatioAvg")(computeRatioAvg.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(computeRatioMax)) __obj.updateDynamic("computeRatioMax")(computeRatioMax.get.asInstanceOf[js.Any])
-    if (endMs != null) __obj.updateDynamic("endMs")(endMs.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputStages != null) __obj.updateDynamic("inputStages")(inputStages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parallelInputs != null) __obj.updateDynamic("parallelInputs")(parallelInputs.asInstanceOf[js.Any])
-    if (readMsAvg != null) __obj.updateDynamic("readMsAvg")(readMsAvg.asInstanceOf[js.Any])
-    if (readMsMax != null) __obj.updateDynamic("readMsMax")(readMsMax.asInstanceOf[js.Any])
-    if (!js.isUndefined(readRatioAvg)) __obj.updateDynamic("readRatioAvg")(readRatioAvg.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(readRatioMax)) __obj.updateDynamic("readRatioMax")(readRatioMax.get.asInstanceOf[js.Any])
-    if (recordsRead != null) __obj.updateDynamic("recordsRead")(recordsRead.asInstanceOf[js.Any])
-    if (recordsWritten != null) __obj.updateDynamic("recordsWritten")(recordsWritten.asInstanceOf[js.Any])
-    if (shuffleOutputBytes != null) __obj.updateDynamic("shuffleOutputBytes")(shuffleOutputBytes.asInstanceOf[js.Any])
-    if (shuffleOutputBytesSpilled != null) __obj.updateDynamic("shuffleOutputBytesSpilled")(shuffleOutputBytesSpilled.asInstanceOf[js.Any])
-    if (startMs != null) __obj.updateDynamic("startMs")(startMs.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
-    if (waitMsAvg != null) __obj.updateDynamic("waitMsAvg")(waitMsAvg.asInstanceOf[js.Any])
-    if (waitMsMax != null) __obj.updateDynamic("waitMsMax")(waitMsMax.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitRatioAvg)) __obj.updateDynamic("waitRatioAvg")(waitRatioAvg.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitRatioMax)) __obj.updateDynamic("waitRatioMax")(waitRatioMax.get.asInstanceOf[js.Any])
-    if (writeMsAvg != null) __obj.updateDynamic("writeMsAvg")(writeMsAvg.asInstanceOf[js.Any])
-    if (writeMsMax != null) __obj.updateDynamic("writeMsMax")(writeMsMax.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeRatioAvg)) __obj.updateDynamic("writeRatioAvg")(writeRatioAvg.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeRatioMax)) __obj.updateDynamic("writeRatioMax")(writeRatioMax.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExplainQueryStage]
   }
+  @scala.inline
+  implicit class SchemaExplainQueryStageOps[Self <: SchemaExplainQueryStage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletedParallelInputs(value: String): Self = this.set("completedParallelInputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedParallelInputs: Self = this.set("completedParallelInputs", js.undefined)
+    @scala.inline
+    def setComputeMsAvg(value: String): Self = this.set("computeMsAvg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeMsAvg: Self = this.set("computeMsAvg", js.undefined)
+    @scala.inline
+    def setComputeMsMax(value: String): Self = this.set("computeMsMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeMsMax: Self = this.set("computeMsMax", js.undefined)
+    @scala.inline
+    def setComputeRatioAvg(value: Double): Self = this.set("computeRatioAvg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeRatioAvg: Self = this.set("computeRatioAvg", js.undefined)
+    @scala.inline
+    def setComputeRatioMax(value: Double): Self = this.set("computeRatioMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeRatioMax: Self = this.set("computeRatioMax", js.undefined)
+    @scala.inline
+    def setEndMs(value: String): Self = this.set("endMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndMs: Self = this.set("endMs", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInputStagesVarargs(value: String*): Self = this.set("inputStages", js.Array(value :_*))
+    @scala.inline
+    def setInputStages(value: js.Array[String]): Self = this.set("inputStages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputStages: Self = this.set("inputStages", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParallelInputs(value: String): Self = this.set("parallelInputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelInputs: Self = this.set("parallelInputs", js.undefined)
+    @scala.inline
+    def setReadMsAvg(value: String): Self = this.set("readMsAvg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadMsAvg: Self = this.set("readMsAvg", js.undefined)
+    @scala.inline
+    def setReadMsMax(value: String): Self = this.set("readMsMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadMsMax: Self = this.set("readMsMax", js.undefined)
+    @scala.inline
+    def setReadRatioAvg(value: Double): Self = this.set("readRatioAvg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadRatioAvg: Self = this.set("readRatioAvg", js.undefined)
+    @scala.inline
+    def setReadRatioMax(value: Double): Self = this.set("readRatioMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadRatioMax: Self = this.set("readRatioMax", js.undefined)
+    @scala.inline
+    def setRecordsRead(value: String): Self = this.set("recordsRead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordsRead: Self = this.set("recordsRead", js.undefined)
+    @scala.inline
+    def setRecordsWritten(value: String): Self = this.set("recordsWritten", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordsWritten: Self = this.set("recordsWritten", js.undefined)
+    @scala.inline
+    def setShuffleOutputBytes(value: String): Self = this.set("shuffleOutputBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShuffleOutputBytes: Self = this.set("shuffleOutputBytes", js.undefined)
+    @scala.inline
+    def setShuffleOutputBytesSpilled(value: String): Self = this.set("shuffleOutputBytesSpilled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShuffleOutputBytesSpilled: Self = this.set("shuffleOutputBytesSpilled", js.undefined)
+    @scala.inline
+    def setStartMs(value: String): Self = this.set("startMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartMs: Self = this.set("startMs", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStepsVarargs(value: SchemaExplainQueryStep*): Self = this.set("steps", js.Array(value :_*))
+    @scala.inline
+    def setSteps(value: js.Array[SchemaExplainQueryStep]): Self = this.set("steps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSteps: Self = this.set("steps", js.undefined)
+    @scala.inline
+    def setWaitMsAvg(value: String): Self = this.set("waitMsAvg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitMsAvg: Self = this.set("waitMsAvg", js.undefined)
+    @scala.inline
+    def setWaitMsMax(value: String): Self = this.set("waitMsMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitMsMax: Self = this.set("waitMsMax", js.undefined)
+    @scala.inline
+    def setWaitRatioAvg(value: Double): Self = this.set("waitRatioAvg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitRatioAvg: Self = this.set("waitRatioAvg", js.undefined)
+    @scala.inline
+    def setWaitRatioMax(value: Double): Self = this.set("waitRatioMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitRatioMax: Self = this.set("waitRatioMax", js.undefined)
+    @scala.inline
+    def setWriteMsAvg(value: String): Self = this.set("writeMsAvg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteMsAvg: Self = this.set("writeMsAvg", js.undefined)
+    @scala.inline
+    def setWriteMsMax(value: String): Self = this.set("writeMsMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteMsMax: Self = this.set("writeMsMax", js.undefined)
+    @scala.inline
+    def setWriteRatioAvg(value: Double): Self = this.set("writeRatioAvg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteRatioAvg: Self = this.set("writeRatioAvg", js.undefined)
+    @scala.inline
+    def setWriteRatioMax(value: Double): Self = this.set("writeRatioMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteRatioMax: Self = this.set("writeRatioMax", js.undefined)
+  }
+  
 }
 

@@ -29,6 +29,7 @@ class ResourceLivestreams protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLivestreamsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLivestreamsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -60,6 +61,7 @@ class ResourceLivestreams protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaLiveStream] = js.native
   def insert(callback: BodyResponseCallback[SchemaLiveStream]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveStream] = js.native
   def insert(params: ParamsResourceLivestreamsInsert): GaxiosPromise[SchemaLiveStream] = js.native
   def insert(params: ParamsResourceLivestreamsInsert, callback: BodyResponseCallback[SchemaLiveStream]): Unit = js.native
   def insert(
@@ -94,6 +96,7 @@ class ResourceLivestreams protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaLiveStreamListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaLiveStreamListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveStreamListResponse] = js.native
   def list(params: ParamsResourceLivestreamsList): GaxiosPromise[SchemaLiveStreamListResponse] = js.native
   def list(
     params: ParamsResourceLivestreamsList,
@@ -129,6 +132,7 @@ class ResourceLivestreams protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaLiveStream] = js.native
   def update(callback: BodyResponseCallback[SchemaLiveStream]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveStream] = js.native
   def update(params: ParamsResourceLivestreamsUpdate): GaxiosPromise[SchemaLiveStream] = js.native
   def update(params: ParamsResourceLivestreamsUpdate, callback: BodyResponseCallback[SchemaLiveStream]): Unit = js.native
   def update(

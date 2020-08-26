@@ -57,32 +57,66 @@ trait SchemaCellFormat extends js.Object {
 
 object SchemaCellFormat {
   @scala.inline
-  def apply(
-    backgroundColor: SchemaColor = null,
-    borders: SchemaBorders = null,
-    horizontalAlignment: String = null,
-    hyperlinkDisplayType: String = null,
-    numberFormat: SchemaNumberFormat = null,
-    padding: SchemaPadding = null,
-    textDirection: String = null,
-    textFormat: SchemaTextFormat = null,
-    textRotation: SchemaTextRotation = null,
-    verticalAlignment: String = null,
-    wrapStrategy: String = null
-  ): SchemaCellFormat = {
+  def apply(): SchemaCellFormat = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (hyperlinkDisplayType != null) __obj.updateDynamic("hyperlinkDisplayType")(hyperlinkDisplayType.asInstanceOf[js.Any])
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (textDirection != null) __obj.updateDynamic("textDirection")(textDirection.asInstanceOf[js.Any])
-    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat.asInstanceOf[js.Any])
-    if (textRotation != null) __obj.updateDynamic("textRotation")(textRotation.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (wrapStrategy != null) __obj.updateDynamic("wrapStrategy")(wrapStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCellFormat]
   }
+  @scala.inline
+  implicit class SchemaCellFormatOps[Self <: SchemaCellFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: SchemaColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorders(value: SchemaBorders): Self = this.set("borders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorders: Self = this.set("borders", js.undefined)
+    @scala.inline
+    def setHorizontalAlignment(value: String): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    @scala.inline
+    def setHyperlinkDisplayType(value: String): Self = this.set("hyperlinkDisplayType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHyperlinkDisplayType: Self = this.set("hyperlinkDisplayType", js.undefined)
+    @scala.inline
+    def setNumberFormat(value: SchemaNumberFormat): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    @scala.inline
+    def setPadding(value: SchemaPadding): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setTextDirection(value: String): Self = this.set("textDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextDirection: Self = this.set("textDirection", js.undefined)
+    @scala.inline
+    def setTextFormat(value: SchemaTextFormat): Self = this.set("textFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextFormat: Self = this.set("textFormat", js.undefined)
+    @scala.inline
+    def setTextRotation(value: SchemaTextRotation): Self = this.set("textRotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextRotation: Self = this.set("textRotation", js.undefined)
+    @scala.inline
+    def setVerticalAlignment(value: String): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    @scala.inline
+    def setWrapStrategy(value: String): Self = this.set("wrapStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapStrategy: Self = this.set("wrapStrategy", js.undefined)
+  }
+  
 }
 

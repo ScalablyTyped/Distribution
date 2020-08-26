@@ -18,11 +18,32 @@ trait ListRecordHistoryOutput extends js.Object {
 
 object ListRecordHistoryOutput {
   @scala.inline
-  def apply(NextPageToken: PageToken = null, RecordDetails: RecordDetails = null): ListRecordHistoryOutput = {
+  def apply(): ListRecordHistoryOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (RecordDetails != null) __obj.updateDynamic("RecordDetails")(RecordDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRecordHistoryOutput]
   }
+  @scala.inline
+  implicit class ListRecordHistoryOutputOps[Self <: ListRecordHistoryOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    @scala.inline
+    def setRecordDetailsVarargs(value: RecordDetail*): Self = this.set("RecordDetails", js.Array(value :_*))
+    @scala.inline
+    def setRecordDetails(value: RecordDetails): Self = this.set("RecordDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordDetails: Self = this.set("RecordDetails", js.undefined)
+  }
+  
 }
 

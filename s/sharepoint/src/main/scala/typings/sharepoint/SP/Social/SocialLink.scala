@@ -9,11 +9,12 @@ import scala.scalajs.js.annotation._
 
 /** Defines a link that includes a URI and text representation.
   This class is used to represent the location of a web site.  */
+@js.native
 trait SocialLink extends ClientValueObject {
-  def get_text(): String
-  def get_uri(): String
-  def set_text(value: String): String
-  def set_uri(value: String): String
+  def get_text(): String = js.native
+  def get_uri(): String = js.native
+  def set_text(value: String): String = js.native
+  def set_uri(value: String): String = js.native
 }
 
 object SocialLink {
@@ -32,5 +33,26 @@ object SocialLink {
     val __obj = js.Dynamic.literal(customFromJson = js.Any.fromFunction1(customFromJson), customWriteToXml = js.Any.fromFunction2(customWriteToXml), fromJson = js.Any.fromFunction1(fromJson), get_text = js.Any.fromFunction0(get_text), get_typeId = js.Any.fromFunction0(get_typeId), get_uri = js.Any.fromFunction0(get_uri), set_text = js.Any.fromFunction1(set_text), set_uri = js.Any.fromFunction1(set_uri), writeToXml = js.Any.fromFunction2(writeToXml))
     __obj.asInstanceOf[SocialLink]
   }
+  @scala.inline
+  implicit class SocialLinkOps[Self <: SocialLink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGet_text(value: () => String): Self = this.set("get_text", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_uri(value: () => String): Self = this.set("get_uri", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSet_text(value: String => String): Self = this.set("set_text", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSet_uri(value: String => String): Self = this.set("set_uri", js.Any.fromFunction1(value))
+  }
+  
 }
 

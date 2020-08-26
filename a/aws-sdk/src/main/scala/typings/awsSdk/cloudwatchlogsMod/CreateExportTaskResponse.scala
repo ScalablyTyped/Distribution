@@ -14,10 +14,26 @@ trait CreateExportTaskResponse extends js.Object {
 
 object CreateExportTaskResponse {
   @scala.inline
-  def apply(taskId: ExportTaskId = null): CreateExportTaskResponse = {
+  def apply(): CreateExportTaskResponse = {
     val __obj = js.Dynamic.literal()
-    if (taskId != null) __obj.updateDynamic("taskId")(taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateExportTaskResponse]
   }
+  @scala.inline
+  implicit class CreateExportTaskResponseOps[Self <: CreateExportTaskResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTaskId(value: ExportTaskId): Self = this.set("taskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskId: Self = this.set("taskId", js.undefined)
+  }
+  
 }
 

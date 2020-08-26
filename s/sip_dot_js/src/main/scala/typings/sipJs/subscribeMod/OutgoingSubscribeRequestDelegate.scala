@@ -1,45 +1,51 @@
 package typings.sipJs.subscribeMod
 
-import typings.sipJs.incomingResponseMod.IncomingResponse
 import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OutgoingSubscribeRequestDelegate extends OutgoingRequestDelegate {
   /**
     * Received the initial subscription creating NOTIFY in response to this request.
     * Called for out of dialog SUBSCRIBE requests only (not called for re-SUBSCRIBE requests).
     * @param request - Incoming NOTIFY request (including a Subscription).
     */
-  var onNotify: js.UndefOr[js.Function1[/* request */ IncomingRequestWithSubscription, Unit]] = js.undefined
+  var onNotify: js.UndefOr[js.Function1[/* request */ IncomingRequestWithSubscription, Unit]] = js.native
   /**
     * Timed out waiting to receive the initial subscription creating NOTIFY in response to this request.
     * Called for out of dialog SUBSCRIBE requests only (not called for re-SUBSCRIBE requests).
     */
-  var onNotifyTimeout: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onNotifyTimeout: js.UndefOr[js.Function0[Unit]] = js.native
 }
 
 object OutgoingSubscribeRequestDelegate {
   @scala.inline
-  def apply(
-    onAccept: /* response */ IncomingResponse => Unit = null,
-    onNotify: /* request */ IncomingRequestWithSubscription => Unit = null,
-    onNotifyTimeout: () => Unit = null,
-    onProgress: /* response */ IncomingResponse => Unit = null,
-    onRedirect: /* response */ IncomingResponse => Unit = null,
-    onReject: /* response */ IncomingResponse => Unit = null,
-    onTrying: /* response */ IncomingResponse => Unit = null
-  ): OutgoingSubscribeRequestDelegate = {
+  def apply(): OutgoingSubscribeRequestDelegate = {
     val __obj = js.Dynamic.literal()
-    if (onAccept != null) __obj.updateDynamic("onAccept")(js.Any.fromFunction1(onAccept))
-    if (onNotify != null) __obj.updateDynamic("onNotify")(js.Any.fromFunction1(onNotify))
-    if (onNotifyTimeout != null) __obj.updateDynamic("onNotifyTimeout")(js.Any.fromFunction0(onNotifyTimeout))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (onRedirect != null) __obj.updateDynamic("onRedirect")(js.Any.fromFunction1(onRedirect))
-    if (onReject != null) __obj.updateDynamic("onReject")(js.Any.fromFunction1(onReject))
-    if (onTrying != null) __obj.updateDynamic("onTrying")(js.Any.fromFunction1(onTrying))
     __obj.asInstanceOf[OutgoingSubscribeRequestDelegate]
   }
+  @scala.inline
+  implicit class OutgoingSubscribeRequestDelegateOps[Self <: OutgoingSubscribeRequestDelegate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnNotify(value: /* request */ IncomingRequestWithSubscription => Unit): Self = this.set("onNotify", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnNotify: Self = this.set("onNotify", js.undefined)
+    @scala.inline
+    def setOnNotifyTimeout(value: () => Unit): Self = this.set("onNotifyTimeout", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnNotifyTimeout: Self = this.set("onNotifyTimeout", js.undefined)
+  }
+  
 }
 

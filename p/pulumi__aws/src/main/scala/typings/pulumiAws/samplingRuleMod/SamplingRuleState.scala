@@ -64,36 +64,74 @@ trait SamplingRuleState extends js.Object {
 
 object SamplingRuleState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    attributes: Input[StringDictionary[Input[String]]] = null,
-    fixedRate: Input[Double] = null,
-    host: Input[String] = null,
-    httpMethod: Input[String] = null,
-    priority: Input[Double] = null,
-    reservoirSize: Input[Double] = null,
-    resourceArn: Input[String] = null,
-    ruleName: Input[String] = null,
-    serviceName: Input[String] = null,
-    serviceType: Input[String] = null,
-    urlPath: Input[String] = null,
-    version: Input[Double] = null
-  ): SamplingRuleState = {
+  def apply(): SamplingRuleState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (fixedRate != null) __obj.updateDynamic("fixedRate")(fixedRate.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (reservoirSize != null) __obj.updateDynamic("reservoirSize")(reservoirSize.asInstanceOf[js.Any])
-    if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
-    if (ruleName != null) __obj.updateDynamic("ruleName")(ruleName.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (serviceType != null) __obj.updateDynamic("serviceType")(serviceType.asInstanceOf[js.Any])
-    if (urlPath != null) __obj.updateDynamic("urlPath")(urlPath.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingRuleState]
   }
+  @scala.inline
+  implicit class SamplingRuleStateOps[Self <: SamplingRuleState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAttributes(value: Input[StringDictionary[Input[String]]]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setFixedRate(value: Input[Double]): Self = this.set("fixedRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedRate: Self = this.set("fixedRate", js.undefined)
+    @scala.inline
+    def setHost(value: Input[String]): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHttpMethod(value: Input[String]): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    @scala.inline
+    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setReservoirSize(value: Input[Double]): Self = this.set("reservoirSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservoirSize: Self = this.set("reservoirSize", js.undefined)
+    @scala.inline
+    def setResourceArn(value: Input[String]): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("resourceArn", js.undefined)
+    @scala.inline
+    def setRuleName(value: Input[String]): Self = this.set("ruleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleName: Self = this.set("ruleName", js.undefined)
+    @scala.inline
+    def setServiceName(value: Input[String]): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    @scala.inline
+    def setServiceType(value: Input[String]): Self = this.set("serviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceType: Self = this.set("serviceType", js.undefined)
+    @scala.inline
+    def setUrlPath(value: Input[String]): Self = this.set("urlPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlPath: Self = this.set("urlPath", js.undefined)
+    @scala.inline
+    def setVersion(value: Input[Double]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

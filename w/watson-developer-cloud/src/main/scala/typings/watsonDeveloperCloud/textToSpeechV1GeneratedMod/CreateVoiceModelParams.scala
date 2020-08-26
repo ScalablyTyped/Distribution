@@ -6,32 +6,54 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Parameters for the `createVoiceModel` operation. */
+@js.native
 trait CreateVoiceModelParams extends js.Object {
   /** A description of the new custom voice model. Specifying a description is recommended. */
-  var description: js.UndefOr[String] = js.undefined
-  var headers: js.UndefOr[js.Object] = js.undefined
+  var description: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[js.Object] = js.native
   /** The language of the new custom voice model. Omit the parameter to use the the default language, `en-US`. */
-  var language: js.UndefOr[Language | String] = js.undefined
+  var language: js.UndefOr[Language | String] = js.native
   /** The name of the new custom voice model. */
-  var name: String
-  var return_response: js.UndefOr[Boolean] = js.undefined
+  var name: String = js.native
+  var return_response: js.UndefOr[Boolean] = js.native
 }
 
 object CreateVoiceModelParams {
   @scala.inline
-  def apply(
-    name: String,
-    description: String = null,
-    headers: js.Object = null,
-    language: Language | String = null,
-    return_response: js.UndefOr[Boolean] = js.undefined
-  ): CreateVoiceModelParams = {
+  def apply(name: String): CreateVoiceModelParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVoiceModelParams]
   }
+  @scala.inline
+  implicit class CreateVoiceModelParamsOps[Self <: CreateVoiceModelParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setLanguage(value: Language | String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+  }
+  
 }
 

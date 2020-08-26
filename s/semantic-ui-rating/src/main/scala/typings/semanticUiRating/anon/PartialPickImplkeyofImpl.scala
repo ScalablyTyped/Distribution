@@ -10,57 +10,98 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<std.Pick<semantic-ui-rating.SemanticUI.RatingSettings._Impl, keyof semantic-ui-rating.SemanticUI.RatingSettings._Impl>> */
+@js.native
 trait PartialPickImplkeyofImpl extends js.Object {
-  var className: js.UndefOr[ClassNameSettings] = js.undefined
-  var clearable: js.UndefOr[auto | Boolean] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var error: js.UndefOr[ErrorSettings] = js.undefined
-  var fireOnInit: js.UndefOr[Boolean] = js.undefined
-  var initialRating: js.UndefOr[Double] = js.undefined
-  var interactive: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var namespace: js.UndefOr[String] = js.undefined
-  var onRate: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]] = js.undefined
-  var performance: js.UndefOr[Boolean] = js.undefined
-  var selector: js.UndefOr[SelectorSettings] = js.undefined
-  var silent: js.UndefOr[Boolean] = js.undefined
-  var verbose: js.UndefOr[Boolean] = js.undefined
+  var className: js.UndefOr[ClassNameSettings] = js.native
+  var clearable: js.UndefOr[auto | Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.native
+  var fireOnInit: js.UndefOr[Boolean] = js.native
+  var initialRating: js.UndefOr[Double] = js.native
+  var interactive: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.native
+  var onRate: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]] = js.native
+  var performance: js.UndefOr[Boolean] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.native
+  var silent: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.native
 }
 
 object PartialPickImplkeyofImpl {
   @scala.inline
-  def apply(
-    className: ClassNameSettings = null,
-    clearable: auto | Boolean = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    error: ErrorSettings = null,
-    fireOnInit: js.UndefOr[Boolean] = js.undefined,
-    initialRating: js.UndefOr[Double] = js.undefined,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    namespace: String = null,
-    onRate: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit] = null,
-    performance: js.UndefOr[Boolean] = js.undefined,
-    selector: SelectorSettings = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    verbose: js.UndefOr[Boolean] = js.undefined
-  ): PartialPickImplkeyofImpl = {
+  def apply(): PartialPickImplkeyofImpl = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearable != null) __obj.updateDynamic("clearable")(clearable.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(fireOnInit)) __obj.updateDynamic("fireOnInit")(fireOnInit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialRating)) __obj.updateDynamic("initialRating")(initialRating.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (onRate != null) __obj.updateDynamic("onRate")(onRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(performance)) __obj.updateDynamic("performance")(performance.get.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialPickImplkeyofImpl]
   }
+  @scala.inline
+  implicit class PartialPickImplkeyofImplOps[Self <: PartialPickImplkeyofImpl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: ClassNameSettings): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClearable(value: auto | Boolean): Self = this.set("clearable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearable: Self = this.set("clearable", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setError(value: ErrorSettings): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFireOnInit(value: Boolean): Self = this.set("fireOnInit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFireOnInit: Self = this.set("fireOnInit", js.undefined)
+    @scala.inline
+    def setInitialRating(value: Double): Self = this.set("initialRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialRating: Self = this.set("initialRating", js.undefined)
+    @scala.inline
+    def setInteractive(value: Boolean): Self = this.set("interactive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteractive: Self = this.set("interactive", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setOnRate(value: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]): Self = this.set("onRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnRate: Self = this.set("onRate", js.undefined)
+    @scala.inline
+    def setPerformance(value: Boolean): Self = this.set("performance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformance: Self = this.set("performance", js.undefined)
+    @scala.inline
+    def setSelector(value: SelectorSettings): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+  }
+  
 }
 

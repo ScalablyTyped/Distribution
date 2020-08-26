@@ -16,132 +16,227 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaterialParameters extends js.Object {
-  var alphaTest: js.UndefOr[Double] = js.undefined
-  var blendDst: js.UndefOr[BlendingDstFactor] = js.undefined
-  var blendDstAlpha: js.UndefOr[Double] = js.undefined
-  var blendEquation: js.UndefOr[BlendingEquation] = js.undefined
-  var blendEquationAlpha: js.UndefOr[Double] = js.undefined
-  var blendSrc: js.UndefOr[BlendingSrcFactor | BlendingDstFactor] = js.undefined
-  var blendSrcAlpha: js.UndefOr[Double] = js.undefined
-  var blending: js.UndefOr[Blending] = js.undefined
-  var clipIntersection: js.UndefOr[Boolean] = js.undefined
-  var clipShadows: js.UndefOr[Boolean] = js.undefined
-  var clippingPlanes: js.UndefOr[js.Array[Plane]] = js.undefined
-  var colorWrite: js.UndefOr[Boolean] = js.undefined
-  var defines: js.UndefOr[js.Any] = js.undefined
-  var depthFunc: js.UndefOr[DepthModes] = js.undefined
-  var depthTest: js.UndefOr[Boolean] = js.undefined
-  var depthWrite: js.UndefOr[Boolean] = js.undefined
-  var dithering: js.UndefOr[Boolean] = js.undefined
-  var flatShading: js.UndefOr[Boolean] = js.undefined
-  var fog: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var polygonOffset: js.UndefOr[Boolean] = js.undefined
-  var polygonOffsetFactor: js.UndefOr[Double] = js.undefined
-  var polygonOffsetUnits: js.UndefOr[Double] = js.undefined
-  var precision: js.UndefOr[highp | mediump | lowp | Null] = js.undefined
-  var premultipliedAlpha: js.UndefOr[Boolean] = js.undefined
-  var shadowSide: js.UndefOr[Side] = js.undefined
-  var side: js.UndefOr[Side] = js.undefined
-  var stencilFail: js.UndefOr[StencilOp] = js.undefined
-  var stencilFunc: js.UndefOr[StencilFunc] = js.undefined
-  var stencilMask: js.UndefOr[Double] = js.undefined
-  var stencilRef: js.UndefOr[Double] = js.undefined
-  var stencilWrite: js.UndefOr[Boolean] = js.undefined
-  var stencilZFail: js.UndefOr[StencilOp] = js.undefined
-  var stencilZPass: js.UndefOr[StencilOp] = js.undefined
-  var toneMapped: js.UndefOr[Boolean] = js.undefined
-  var transparent: js.UndefOr[Boolean] = js.undefined
-  var vertexColors: js.UndefOr[Boolean] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var alphaTest: js.UndefOr[Double] = js.native
+  var blendDst: js.UndefOr[BlendingDstFactor] = js.native
+  var blendDstAlpha: js.UndefOr[Double] = js.native
+  var blendEquation: js.UndefOr[BlendingEquation] = js.native
+  var blendEquationAlpha: js.UndefOr[Double] = js.native
+  var blendSrc: js.UndefOr[BlendingSrcFactor | BlendingDstFactor] = js.native
+  var blendSrcAlpha: js.UndefOr[Double] = js.native
+  var blending: js.UndefOr[Blending] = js.native
+  var clipIntersection: js.UndefOr[Boolean] = js.native
+  var clipShadows: js.UndefOr[Boolean] = js.native
+  var clippingPlanes: js.UndefOr[js.Array[Plane]] = js.native
+  var colorWrite: js.UndefOr[Boolean] = js.native
+  var defines: js.UndefOr[js.Any] = js.native
+  var depthFunc: js.UndefOr[DepthModes] = js.native
+  var depthTest: js.UndefOr[Boolean] = js.native
+  var depthWrite: js.UndefOr[Boolean] = js.native
+  var dithering: js.UndefOr[Boolean] = js.native
+  var flatShading: js.UndefOr[Boolean] = js.native
+  var fog: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var polygonOffset: js.UndefOr[Boolean] = js.native
+  var polygonOffsetFactor: js.UndefOr[Double] = js.native
+  var polygonOffsetUnits: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[highp | mediump | lowp | Null] = js.native
+  var premultipliedAlpha: js.UndefOr[Boolean] = js.native
+  var shadowSide: js.UndefOr[Side] = js.native
+  var side: js.UndefOr[Side] = js.native
+  var stencilFail: js.UndefOr[StencilOp] = js.native
+  var stencilFunc: js.UndefOr[StencilFunc] = js.native
+  var stencilMask: js.UndefOr[Double] = js.native
+  var stencilRef: js.UndefOr[Double] = js.native
+  var stencilWrite: js.UndefOr[Boolean] = js.native
+  var stencilZFail: js.UndefOr[StencilOp] = js.native
+  var stencilZPass: js.UndefOr[StencilOp] = js.native
+  var toneMapped: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.native
+  var vertexColors: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object MaterialParameters {
   @scala.inline
-  def apply(
-    alphaTest: js.UndefOr[Double] = js.undefined,
-    blendDst: BlendingDstFactor = null,
-    blendDstAlpha: js.UndefOr[Double] = js.undefined,
-    blendEquation: BlendingEquation = null,
-    blendEquationAlpha: js.UndefOr[Double] = js.undefined,
-    blendSrc: BlendingSrcFactor | BlendingDstFactor = null,
-    blendSrcAlpha: js.UndefOr[Double] = js.undefined,
-    blending: Blending = null,
-    clipIntersection: js.UndefOr[Boolean] = js.undefined,
-    clipShadows: js.UndefOr[Boolean] = js.undefined,
-    clippingPlanes: js.Array[Plane] = null,
-    colorWrite: js.UndefOr[Boolean] = js.undefined,
-    defines: js.Any = null,
-    depthFunc: DepthModes = null,
-    depthTest: js.UndefOr[Boolean] = js.undefined,
-    depthWrite: js.UndefOr[Boolean] = js.undefined,
-    dithering: js.UndefOr[Boolean] = js.undefined,
-    flatShading: js.UndefOr[Boolean] = js.undefined,
-    fog: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    polygonOffset: js.UndefOr[Boolean] = js.undefined,
-    polygonOffsetFactor: js.UndefOr[Double] = js.undefined,
-    polygonOffsetUnits: js.UndefOr[Double] = js.undefined,
-    precision: js.UndefOr[Null | highp | mediump | lowp] = js.undefined,
-    premultipliedAlpha: js.UndefOr[Boolean] = js.undefined,
-    shadowSide: Side = null,
-    side: Side = null,
-    stencilFail: StencilOp = null,
-    stencilFunc: StencilFunc = null,
-    stencilMask: js.UndefOr[Double] = js.undefined,
-    stencilRef: js.UndefOr[Double] = js.undefined,
-    stencilWrite: js.UndefOr[Boolean] = js.undefined,
-    stencilZFail: StencilOp = null,
-    stencilZPass: StencilOp = null,
-    toneMapped: js.UndefOr[Boolean] = js.undefined,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    vertexColors: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): MaterialParameters = {
+  def apply(): MaterialParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alphaTest)) __obj.updateDynamic("alphaTest")(alphaTest.get.asInstanceOf[js.Any])
-    if (blendDst != null) __obj.updateDynamic("blendDst")(blendDst.asInstanceOf[js.Any])
-    if (!js.isUndefined(blendDstAlpha)) __obj.updateDynamic("blendDstAlpha")(blendDstAlpha.get.asInstanceOf[js.Any])
-    if (blendEquation != null) __obj.updateDynamic("blendEquation")(blendEquation.asInstanceOf[js.Any])
-    if (!js.isUndefined(blendEquationAlpha)) __obj.updateDynamic("blendEquationAlpha")(blendEquationAlpha.get.asInstanceOf[js.Any])
-    if (blendSrc != null) __obj.updateDynamic("blendSrc")(blendSrc.asInstanceOf[js.Any])
-    if (!js.isUndefined(blendSrcAlpha)) __obj.updateDynamic("blendSrcAlpha")(blendSrcAlpha.get.asInstanceOf[js.Any])
-    if (blending != null) __obj.updateDynamic("blending")(blending.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipIntersection)) __obj.updateDynamic("clipIntersection")(clipIntersection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipShadows)) __obj.updateDynamic("clipShadows")(clipShadows.get.asInstanceOf[js.Any])
-    if (clippingPlanes != null) __obj.updateDynamic("clippingPlanes")(clippingPlanes.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorWrite)) __obj.updateDynamic("colorWrite")(colorWrite.get.asInstanceOf[js.Any])
-    if (defines != null) __obj.updateDynamic("defines")(defines.asInstanceOf[js.Any])
-    if (depthFunc != null) __obj.updateDynamic("depthFunc")(depthFunc.asInstanceOf[js.Any])
-    if (!js.isUndefined(depthTest)) __obj.updateDynamic("depthTest")(depthTest.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(depthWrite)) __obj.updateDynamic("depthWrite")(depthWrite.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dithering)) __obj.updateDynamic("dithering")(dithering.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatShading)) __obj.updateDynamic("flatShading")(flatShading.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(polygonOffset)) __obj.updateDynamic("polygonOffset")(polygonOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(polygonOffsetFactor)) __obj.updateDynamic("polygonOffsetFactor")(polygonOffsetFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(polygonOffsetUnits)) __obj.updateDynamic("polygonOffsetUnits")(polygonOffsetUnits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha.get.asInstanceOf[js.Any])
-    if (shadowSide != null) __obj.updateDynamic("shadowSide")(shadowSide.asInstanceOf[js.Any])
-    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
-    if (stencilFail != null) __obj.updateDynamic("stencilFail")(stencilFail.asInstanceOf[js.Any])
-    if (stencilFunc != null) __obj.updateDynamic("stencilFunc")(stencilFunc.asInstanceOf[js.Any])
-    if (!js.isUndefined(stencilMask)) __obj.updateDynamic("stencilMask")(stencilMask.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stencilRef)) __obj.updateDynamic("stencilRef")(stencilRef.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stencilWrite)) __obj.updateDynamic("stencilWrite")(stencilWrite.get.asInstanceOf[js.Any])
-    if (stencilZFail != null) __obj.updateDynamic("stencilZFail")(stencilZFail.asInstanceOf[js.Any])
-    if (stencilZPass != null) __obj.updateDynamic("stencilZPass")(stencilZPass.asInstanceOf[js.Any])
-    if (!js.isUndefined(toneMapped)) __obj.updateDynamic("toneMapped")(toneMapped.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertexColors)) __obj.updateDynamic("vertexColors")(vertexColors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaterialParameters]
   }
+  @scala.inline
+  implicit class MaterialParametersOps[Self <: MaterialParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlphaTest(value: Double): Self = this.set("alphaTest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlphaTest: Self = this.set("alphaTest", js.undefined)
+    @scala.inline
+    def setBlendDst(value: BlendingDstFactor): Self = this.set("blendDst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlendDst: Self = this.set("blendDst", js.undefined)
+    @scala.inline
+    def setBlendDstAlpha(value: Double): Self = this.set("blendDstAlpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlendDstAlpha: Self = this.set("blendDstAlpha", js.undefined)
+    @scala.inline
+    def setBlendEquation(value: BlendingEquation): Self = this.set("blendEquation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlendEquation: Self = this.set("blendEquation", js.undefined)
+    @scala.inline
+    def setBlendEquationAlpha(value: Double): Self = this.set("blendEquationAlpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlendEquationAlpha: Self = this.set("blendEquationAlpha", js.undefined)
+    @scala.inline
+    def setBlendSrc(value: BlendingSrcFactor | BlendingDstFactor): Self = this.set("blendSrc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlendSrc: Self = this.set("blendSrc", js.undefined)
+    @scala.inline
+    def setBlendSrcAlpha(value: Double): Self = this.set("blendSrcAlpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlendSrcAlpha: Self = this.set("blendSrcAlpha", js.undefined)
+    @scala.inline
+    def setBlending(value: Blending): Self = this.set("blending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlending: Self = this.set("blending", js.undefined)
+    @scala.inline
+    def setClipIntersection(value: Boolean): Self = this.set("clipIntersection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClipIntersection: Self = this.set("clipIntersection", js.undefined)
+    @scala.inline
+    def setClipShadows(value: Boolean): Self = this.set("clipShadows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClipShadows: Self = this.set("clipShadows", js.undefined)
+    @scala.inline
+    def setClippingPlanesVarargs(value: Plane*): Self = this.set("clippingPlanes", js.Array(value :_*))
+    @scala.inline
+    def setClippingPlanes(value: js.Array[Plane]): Self = this.set("clippingPlanes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClippingPlanes: Self = this.set("clippingPlanes", js.undefined)
+    @scala.inline
+    def setColorWrite(value: Boolean): Self = this.set("colorWrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorWrite: Self = this.set("colorWrite", js.undefined)
+    @scala.inline
+    def setDefines(value: js.Any): Self = this.set("defines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefines: Self = this.set("defines", js.undefined)
+    @scala.inline
+    def setDepthFunc(value: DepthModes): Self = this.set("depthFunc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepthFunc: Self = this.set("depthFunc", js.undefined)
+    @scala.inline
+    def setDepthTest(value: Boolean): Self = this.set("depthTest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepthTest: Self = this.set("depthTest", js.undefined)
+    @scala.inline
+    def setDepthWrite(value: Boolean): Self = this.set("depthWrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepthWrite: Self = this.set("depthWrite", js.undefined)
+    @scala.inline
+    def setDithering(value: Boolean): Self = this.set("dithering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDithering: Self = this.set("dithering", js.undefined)
+    @scala.inline
+    def setFlatShading(value: Boolean): Self = this.set("flatShading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlatShading: Self = this.set("flatShading", js.undefined)
+    @scala.inline
+    def setFog(value: Boolean): Self = this.set("fog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFog: Self = this.set("fog", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPolygonOffset(value: Boolean): Self = this.set("polygonOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolygonOffset: Self = this.set("polygonOffset", js.undefined)
+    @scala.inline
+    def setPolygonOffsetFactor(value: Double): Self = this.set("polygonOffsetFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolygonOffsetFactor: Self = this.set("polygonOffsetFactor", js.undefined)
+    @scala.inline
+    def setPolygonOffsetUnits(value: Double): Self = this.set("polygonOffsetUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolygonOffsetUnits: Self = this.set("polygonOffsetUnits", js.undefined)
+    @scala.inline
+    def setPrecision(value: highp | mediump | lowp): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+    @scala.inline
+    def setPrecisionNull: Self = this.set("precision", null)
+    @scala.inline
+    def setPremultipliedAlpha(value: Boolean): Self = this.set("premultipliedAlpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePremultipliedAlpha: Self = this.set("premultipliedAlpha", js.undefined)
+    @scala.inline
+    def setShadowSide(value: Side): Self = this.set("shadowSide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowSide: Self = this.set("shadowSide", js.undefined)
+    @scala.inline
+    def setSide(value: Side): Self = this.set("side", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSide: Self = this.set("side", js.undefined)
+    @scala.inline
+    def setStencilFail(value: StencilOp): Self = this.set("stencilFail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStencilFail: Self = this.set("stencilFail", js.undefined)
+    @scala.inline
+    def setStencilFunc(value: StencilFunc): Self = this.set("stencilFunc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStencilFunc: Self = this.set("stencilFunc", js.undefined)
+    @scala.inline
+    def setStencilMask(value: Double): Self = this.set("stencilMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStencilMask: Self = this.set("stencilMask", js.undefined)
+    @scala.inline
+    def setStencilRef(value: Double): Self = this.set("stencilRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStencilRef: Self = this.set("stencilRef", js.undefined)
+    @scala.inline
+    def setStencilWrite(value: Boolean): Self = this.set("stencilWrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStencilWrite: Self = this.set("stencilWrite", js.undefined)
+    @scala.inline
+    def setStencilZFail(value: StencilOp): Self = this.set("stencilZFail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStencilZFail: Self = this.set("stencilZFail", js.undefined)
+    @scala.inline
+    def setStencilZPass(value: StencilOp): Self = this.set("stencilZPass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStencilZPass: Self = this.set("stencilZPass", js.undefined)
+    @scala.inline
+    def setToneMapped(value: Boolean): Self = this.set("toneMapped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToneMapped: Self = this.set("toneMapped", js.undefined)
+    @scala.inline
+    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    @scala.inline
+    def setVertexColors(value: Boolean): Self = this.set("vertexColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertexColors: Self = this.set("vertexColors", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

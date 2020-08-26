@@ -26,18 +26,38 @@ trait RealtimeEndpointInfo extends js.Object {
 
 object RealtimeEndpointInfo {
   @scala.inline
-  def apply(
-    CreatedAt: EpochTime = null,
-    EndpointStatus: RealtimeEndpointStatus = null,
-    EndpointUrl: VipURL = null,
-    PeakRequestsPerSecond: js.UndefOr[IntegerType] = js.undefined
-  ): RealtimeEndpointInfo = {
+  def apply(): RealtimeEndpointInfo = {
     val __obj = js.Dynamic.literal()
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (EndpointStatus != null) __obj.updateDynamic("EndpointStatus")(EndpointStatus.asInstanceOf[js.Any])
-    if (EndpointUrl != null) __obj.updateDynamic("EndpointUrl")(EndpointUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(PeakRequestsPerSecond)) __obj.updateDynamic("PeakRequestsPerSecond")(PeakRequestsPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealtimeEndpointInfo]
   }
+  @scala.inline
+  implicit class RealtimeEndpointInfoOps[Self <: RealtimeEndpointInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAt(value: EpochTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setEndpointStatus(value: RealtimeEndpointStatus): Self = this.set("EndpointStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointStatus: Self = this.set("EndpointStatus", js.undefined)
+    @scala.inline
+    def setEndpointUrl(value: VipURL): Self = this.set("EndpointUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointUrl: Self = this.set("EndpointUrl", js.undefined)
+    @scala.inline
+    def setPeakRequestsPerSecond(value: IntegerType): Self = this.set("PeakRequestsPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeakRequestsPerSecond: Self = this.set("PeakRequestsPerSecond", js.undefined)
+  }
+  
 }
 

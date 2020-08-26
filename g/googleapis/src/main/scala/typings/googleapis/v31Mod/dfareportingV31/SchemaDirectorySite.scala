@@ -97,38 +97,84 @@ trait SchemaDirectorySite extends js.Object {
 
 object SchemaDirectorySite {
   @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    contactAssignments: js.Array[SchemaDirectorySiteContactAssignment] = null,
-    countryId: String = null,
-    currencyId: String = null,
-    description: String = null,
-    id: String = null,
-    idDimensionValue: SchemaDimensionValue = null,
-    inpageTagFormats: js.Array[String] = null,
-    interstitialTagFormats: js.Array[String] = null,
-    kind: String = null,
-    name: String = null,
-    parentId: String = null,
-    settings: SchemaDirectorySiteSettings = null,
-    url: String = null
-  ): SchemaDirectorySite = {
+  def apply(): SchemaDirectorySite = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (contactAssignments != null) __obj.updateDynamic("contactAssignments")(contactAssignments.asInstanceOf[js.Any])
-    if (countryId != null) __obj.updateDynamic("countryId")(countryId.asInstanceOf[js.Any])
-    if (currencyId != null) __obj.updateDynamic("currencyId")(currencyId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
-    if (inpageTagFormats != null) __obj.updateDynamic("inpageTagFormats")(inpageTagFormats.asInstanceOf[js.Any])
-    if (interstitialTagFormats != null) __obj.updateDynamic("interstitialTagFormats")(interstitialTagFormats.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDirectorySite]
   }
+  @scala.inline
+  implicit class SchemaDirectorySiteOps[Self <: SchemaDirectorySite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setContactAssignmentsVarargs(value: SchemaDirectorySiteContactAssignment*): Self = this.set("contactAssignments", js.Array(value :_*))
+    @scala.inline
+    def setContactAssignments(value: js.Array[SchemaDirectorySiteContactAssignment]): Self = this.set("contactAssignments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactAssignments: Self = this.set("contactAssignments", js.undefined)
+    @scala.inline
+    def setCountryId(value: String): Self = this.set("countryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryId: Self = this.set("countryId", js.undefined)
+    @scala.inline
+    def setCurrencyId(value: String): Self = this.set("currencyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyId: Self = this.set("currencyId", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdDimensionValue(value: SchemaDimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    @scala.inline
+    def setInpageTagFormatsVarargs(value: String*): Self = this.set("inpageTagFormats", js.Array(value :_*))
+    @scala.inline
+    def setInpageTagFormats(value: js.Array[String]): Self = this.set("inpageTagFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInpageTagFormats: Self = this.set("inpageTagFormats", js.undefined)
+    @scala.inline
+    def setInterstitialTagFormatsVarargs(value: String*): Self = this.set("interstitialTagFormats", js.Array(value :_*))
+    @scala.inline
+    def setInterstitialTagFormats(value: js.Array[String]): Self = this.set("interstitialTagFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterstitialTagFormats: Self = this.set("interstitialTagFormats", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("parentId", js.undefined)
+    @scala.inline
+    def setSettings(value: SchemaDirectorySiteSettings): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

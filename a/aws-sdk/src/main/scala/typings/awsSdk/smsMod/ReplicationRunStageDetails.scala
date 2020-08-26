@@ -18,11 +18,30 @@ trait ReplicationRunStageDetails extends js.Object {
 
 object ReplicationRunStageDetails {
   @scala.inline
-  def apply(stage: ReplicationRunStage = null, stageProgress: ReplicationRunStageProgress = null): ReplicationRunStageDetails = {
+  def apply(): ReplicationRunStageDetails = {
     val __obj = js.Dynamic.literal()
-    if (stage != null) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])
-    if (stageProgress != null) __obj.updateDynamic("stageProgress")(stageProgress.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationRunStageDetails]
   }
+  @scala.inline
+  implicit class ReplicationRunStageDetailsOps[Self <: ReplicationRunStageDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStage(value: ReplicationRunStage): Self = this.set("stage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStage: Self = this.set("stage", js.undefined)
+    @scala.inline
+    def setStageProgress(value: ReplicationRunStageProgress): Self = this.set("stageProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageProgress: Self = this.set("stageProgress", js.undefined)
+  }
+  
 }
 

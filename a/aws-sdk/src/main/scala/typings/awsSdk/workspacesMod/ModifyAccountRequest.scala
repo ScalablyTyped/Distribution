@@ -18,14 +18,30 @@ trait ModifyAccountRequest extends js.Object {
 
 object ModifyAccountRequest {
   @scala.inline
-  def apply(
-    DedicatedTenancyManagementCidrRange: DedicatedTenancyManagementCidrRange = null,
-    DedicatedTenancySupport: DedicatedTenancySupportEnum = null
-  ): ModifyAccountRequest = {
+  def apply(): ModifyAccountRequest = {
     val __obj = js.Dynamic.literal()
-    if (DedicatedTenancyManagementCidrRange != null) __obj.updateDynamic("DedicatedTenancyManagementCidrRange")(DedicatedTenancyManagementCidrRange.asInstanceOf[js.Any])
-    if (DedicatedTenancySupport != null) __obj.updateDynamic("DedicatedTenancySupport")(DedicatedTenancySupport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyAccountRequest]
   }
+  @scala.inline
+  implicit class ModifyAccountRequestOps[Self <: ModifyAccountRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDedicatedTenancyManagementCidrRange(value: DedicatedTenancyManagementCidrRange): Self = this.set("DedicatedTenancyManagementCidrRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedTenancyManagementCidrRange: Self = this.set("DedicatedTenancyManagementCidrRange", js.undefined)
+    @scala.inline
+    def setDedicatedTenancySupport(value: DedicatedTenancySupportEnum): Self = this.set("DedicatedTenancySupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedTenancySupport: Self = this.set("DedicatedTenancySupport", js.undefined)
+  }
+  
 }
 

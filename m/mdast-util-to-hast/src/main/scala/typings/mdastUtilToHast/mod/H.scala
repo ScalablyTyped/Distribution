@@ -18,6 +18,7 @@ trait H extends js.Object {
   @JSName("unknownHandler")
   var unknownHandler_Original: Handler = js.native
   def apply(node: Node, tagName: String): Node = js.native
+  def apply(node: Node, tagName: String, props: js.UndefOr[scala.Nothing], children: js.Array[Node]): Node = js.native
   def apply(node: Node, tagName: String, props: js.Object): Node = js.native
   def apply(node: Node, tagName: String, props: js.Object, children: js.Array[Node]): Node = js.native
   def augment(left: Node, right: Node): Node = js.native

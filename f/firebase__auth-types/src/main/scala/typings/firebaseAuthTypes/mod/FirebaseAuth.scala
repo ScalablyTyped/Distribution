@@ -24,6 +24,11 @@ class FirebaseAuth protected () extends js.Object {
   def getRedirectResult(): js.Promise[UserCredential] = js.native
   def isSignInWithEmailLink(emailLink: String): Boolean = js.native
   def onAuthStateChanged(nextOrObserver: js.Function1[/* a */ User | Null, _]): Unsubscribe = js.native
+  def onAuthStateChanged(
+    nextOrObserver: js.Function1[/* a */ User | Null, _],
+    error: js.UndefOr[scala.Nothing],
+    completed: Unsubscribe
+  ): Unsubscribe = js.native
   def onAuthStateChanged(nextOrObserver: js.Function1[/* a */ User | Null, _], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
   def onAuthStateChanged(
     nextOrObserver: js.Function1[/* a */ User | Null, _],
@@ -31,9 +36,15 @@ class FirebaseAuth protected () extends js.Object {
     completed: Unsubscribe
   ): Unsubscribe = js.native
   def onAuthStateChanged(nextOrObserver: Observer[_]): Unsubscribe = js.native
+  def onAuthStateChanged(nextOrObserver: Observer[_], error: js.UndefOr[scala.Nothing], completed: Unsubscribe): Unsubscribe = js.native
   def onAuthStateChanged(nextOrObserver: Observer[_], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
   def onAuthStateChanged(nextOrObserver: Observer[_], error: js.Function1[/* a */ Error, _], completed: Unsubscribe): Unsubscribe = js.native
   def onIdTokenChanged(nextOrObserver: js.Function1[/* a */ User | Null, _]): Unsubscribe = js.native
+  def onIdTokenChanged(
+    nextOrObserver: js.Function1[/* a */ User | Null, _],
+    error: js.UndefOr[scala.Nothing],
+    completed: Unsubscribe
+  ): Unsubscribe = js.native
   def onIdTokenChanged(nextOrObserver: js.Function1[/* a */ User | Null, _], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
   def onIdTokenChanged(
     nextOrObserver: js.Function1[/* a */ User | Null, _],
@@ -41,6 +52,7 @@ class FirebaseAuth protected () extends js.Object {
     completed: Unsubscribe
   ): Unsubscribe = js.native
   def onIdTokenChanged(nextOrObserver: Observer[_]): Unsubscribe = js.native
+  def onIdTokenChanged(nextOrObserver: Observer[_], error: js.UndefOr[scala.Nothing], completed: Unsubscribe): Unsubscribe = js.native
   def onIdTokenChanged(nextOrObserver: Observer[_], error: js.Function1[/* a */ Error, _]): Unsubscribe = js.native
   def onIdTokenChanged(nextOrObserver: Observer[_], error: js.Function1[/* a */ Error, _], completed: Unsubscribe): Unsubscribe = js.native
   def sendPasswordResetEmail(email: String): js.Promise[Unit] = js.native

@@ -12,14 +12,30 @@ trait SchemaStatefulPolicy extends js.Object {
 
 object SchemaStatefulPolicy {
   @scala.inline
-  def apply(
-    preservedResources: SchemaStatefulPolicyPreservedResources = null,
-    preservedState: SchemaStatefulPolicyPreservedState = null
-  ): SchemaStatefulPolicy = {
+  def apply(): SchemaStatefulPolicy = {
     val __obj = js.Dynamic.literal()
-    if (preservedResources != null) __obj.updateDynamic("preservedResources")(preservedResources.asInstanceOf[js.Any])
-    if (preservedState != null) __obj.updateDynamic("preservedState")(preservedState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStatefulPolicy]
   }
+  @scala.inline
+  implicit class SchemaStatefulPolicyOps[Self <: SchemaStatefulPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPreservedResources(value: SchemaStatefulPolicyPreservedResources): Self = this.set("preservedResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreservedResources: Self = this.set("preservedResources", js.undefined)
+    @scala.inline
+    def setPreservedState(value: SchemaStatefulPolicyPreservedState): Self = this.set("preservedState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreservedState: Self = this.set("preservedState", js.undefined)
+  }
+  
 }
 

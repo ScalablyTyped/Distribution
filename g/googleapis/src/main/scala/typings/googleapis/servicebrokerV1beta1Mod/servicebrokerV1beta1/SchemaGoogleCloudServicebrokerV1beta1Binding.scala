@@ -53,26 +53,54 @@ trait SchemaGoogleCloudServicebrokerV1beta1Binding extends js.Object {
 
 object SchemaGoogleCloudServicebrokerV1beta1Binding {
   @scala.inline
-  def apply(
-    bind_resource: StringDictionary[js.Any] = null,
-    binding_id: String = null,
-    createTime: String = null,
-    deploymentName: String = null,
-    parameters: StringDictionary[js.Any] = null,
-    plan_id: String = null,
-    resourceName: String = null,
-    service_id: String = null
-  ): SchemaGoogleCloudServicebrokerV1beta1Binding = {
+  def apply(): SchemaGoogleCloudServicebrokerV1beta1Binding = {
     val __obj = js.Dynamic.literal()
-    if (bind_resource != null) __obj.updateDynamic("bind_resource")(bind_resource.asInstanceOf[js.Any])
-    if (binding_id != null) __obj.updateDynamic("binding_id")(binding_id.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (deploymentName != null) __obj.updateDynamic("deploymentName")(deploymentName.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (plan_id != null) __obj.updateDynamic("plan_id")(plan_id.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
-    if (service_id != null) __obj.updateDynamic("service_id")(service_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1beta1Binding]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudServicebrokerV1beta1BindingOps[Self <: SchemaGoogleCloudServicebrokerV1beta1Binding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBind_resource(value: StringDictionary[js.Any]): Self = this.set("bind_resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBind_resource: Self = this.set("bind_resource", js.undefined)
+    @scala.inline
+    def setBinding_id(value: String): Self = this.set("binding_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinding_id: Self = this.set("binding_id", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDeploymentName(value: String): Self = this.set("deploymentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentName: Self = this.set("deploymentName", js.undefined)
+    @scala.inline
+    def setParameters(value: StringDictionary[js.Any]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setPlan_id(value: String): Self = this.set("plan_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlan_id: Self = this.set("plan_id", js.undefined)
+    @scala.inline
+    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    @scala.inline
+    def setService_id(value: String): Self = this.set("service_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService_id: Self = this.set("service_id", js.undefined)
+  }
+  
 }
 

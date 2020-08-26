@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "tempfile"
-version := "3.0.0-a2308a"
-scalaVersion := "2.13.2"
+version := "3.0.0-eccc73"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

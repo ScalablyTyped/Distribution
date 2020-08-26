@@ -45,5 +45,32 @@ object WebhookDefinition {
     val __obj = js.Dynamic.literal(authentication = authentication.asInstanceOf[js.Any], authenticationConfiguration = authenticationConfiguration.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], targetAction = targetAction.asInstanceOf[js.Any], targetPipeline = targetPipeline.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookDefinition]
   }
+  @scala.inline
+  implicit class WebhookDefinitionOps[Self <: WebhookDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthentication(value: WebhookAuthenticationType): Self = this.set("authentication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationConfiguration(value: WebhookAuthConfiguration): Self = this.set("authenticationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFiltersVarargs(value: WebhookFilterRule*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: WebhookFilters): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: WebhookName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetAction(value: ActionName): Self = this.set("targetAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetPipeline(value: PipelineName): Self = this.set("targetPipeline", value.asInstanceOf[js.Any])
+  }
+  
 }
 

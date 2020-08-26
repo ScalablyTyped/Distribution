@@ -64,22 +64,61 @@ object CreateReplicationTaskMessage {
     ReplicationTaskIdentifier: String,
     SourceEndpointArn: String,
     TableMappings: String,
-    TargetEndpointArn: String,
-    CdcStartPosition: String = null,
-    CdcStartTime: TStamp = null,
-    CdcStopPosition: String = null,
-    ReplicationTaskSettings: String = null,
-    Tags: TagList = null,
-    TaskData: String = null
+    TargetEndpointArn: String
   ): CreateReplicationTaskMessage = {
     val __obj = js.Dynamic.literal(MigrationType = MigrationType.asInstanceOf[js.Any], ReplicationInstanceArn = ReplicationInstanceArn.asInstanceOf[js.Any], ReplicationTaskIdentifier = ReplicationTaskIdentifier.asInstanceOf[js.Any], SourceEndpointArn = SourceEndpointArn.asInstanceOf[js.Any], TableMappings = TableMappings.asInstanceOf[js.Any], TargetEndpointArn = TargetEndpointArn.asInstanceOf[js.Any])
-    if (CdcStartPosition != null) __obj.updateDynamic("CdcStartPosition")(CdcStartPosition.asInstanceOf[js.Any])
-    if (CdcStartTime != null) __obj.updateDynamic("CdcStartTime")(CdcStartTime.asInstanceOf[js.Any])
-    if (CdcStopPosition != null) __obj.updateDynamic("CdcStopPosition")(CdcStopPosition.asInstanceOf[js.Any])
-    if (ReplicationTaskSettings != null) __obj.updateDynamic("ReplicationTaskSettings")(ReplicationTaskSettings.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TaskData != null) __obj.updateDynamic("TaskData")(TaskData.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReplicationTaskMessage]
   }
+  @scala.inline
+  implicit class CreateReplicationTaskMessageOps[Self <: CreateReplicationTaskMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMigrationType(value: MigrationTypeValue): Self = this.set("MigrationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplicationInstanceArn(value: String): Self = this.set("ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplicationTaskIdentifier(value: String): Self = this.set("ReplicationTaskIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceEndpointArn(value: String): Self = this.set("SourceEndpointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableMappings(value: String): Self = this.set("TableMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetEndpointArn(value: String): Self = this.set("TargetEndpointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCdcStartPosition(value: String): Self = this.set("CdcStartPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdcStartPosition: Self = this.set("CdcStartPosition", js.undefined)
+    @scala.inline
+    def setCdcStartTime(value: TStamp): Self = this.set("CdcStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdcStartTime: Self = this.set("CdcStartTime", js.undefined)
+    @scala.inline
+    def setCdcStopPosition(value: String): Self = this.set("CdcStopPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdcStopPosition: Self = this.set("CdcStopPosition", js.undefined)
+    @scala.inline
+    def setReplicationTaskSettings(value: String): Self = this.set("ReplicationTaskSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskSettings: Self = this.set("ReplicationTaskSettings", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTaskData(value: String): Self = this.set("TaskData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskData: Self = this.set("TaskData", js.undefined)
+  }
+  
 }
 

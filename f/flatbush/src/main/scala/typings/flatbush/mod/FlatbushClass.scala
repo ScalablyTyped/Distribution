@@ -55,7 +55,29 @@ trait FlatbushClass extends js.Object {
     * Returns an array of item indices in order of distance from the given x, y (known as K nearest neighbors, or KNN).
     */
   def neighbors(x: Double, y: Double): js.Array[Double] = js.native
+  def neighbors(
+    x: Double,
+    y: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    maxDistance: js.UndefOr[scala.Nothing],
+    filter: js.Function1[/* idx */ Double, Boolean]
+  ): js.Array[Double] = js.native
+  def neighbors(x: Double, y: Double, maxResults: js.UndefOr[scala.Nothing], maxDistance: Double): js.Array[Double] = js.native
+  def neighbors(
+    x: Double,
+    y: Double,
+    maxResults: js.UndefOr[scala.Nothing],
+    maxDistance: Double,
+    filter: js.Function1[/* idx */ Double, Boolean]
+  ): js.Array[Double] = js.native
   def neighbors(x: Double, y: Double, maxResults: Double): js.Array[Double] = js.native
+  def neighbors(
+    x: Double,
+    y: Double,
+    maxResults: Double,
+    maxDistance: js.UndefOr[scala.Nothing],
+    filter: js.Function1[/* idx */ Double, Boolean]
+  ): js.Array[Double] = js.native
   def neighbors(x: Double, y: Double, maxResults: Double, maxDistance: Double): js.Array[Double] = js.native
   def neighbors(
     x: Double,

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(session: Call): Instantiable3[
     /* options */ Options, 
-    js.UndefOr[/* connection */ js.Any], 
-    js.UndefOr[/* callback */ js.Function1[/* error */ js.Any, Unit]], 
+    /* connection */ js.UndefOr[js.Any], 
+    /* callback */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]], 
     MySQLStoreClass
   ] = js.native
 }

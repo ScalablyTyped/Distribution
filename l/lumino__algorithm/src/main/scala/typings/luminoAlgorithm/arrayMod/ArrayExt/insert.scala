@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.insert")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.insert")
 @js.native
 object insert extends js.Object {
   /**

@@ -25,6 +25,12 @@ object global extends js.Object {
     @JSName("off")
     def off_dpchange(events: dpDotchange, handler: js.Function1[/* eventobject */ ChangeEventObject, _]): JQuery = js.native
     @JSName("off")
+    def off_dpchange(
+      events: dpDotchange,
+      selector: js.UndefOr[scala.Nothing],
+      handler: js.Function1[/* eventobject */ ChangeEventObject, _]
+    ): JQuery = js.native
+    @JSName("off")
     def off_dpchange(events: dpDotchange, selector: String): JQuery = js.native
     @JSName("off")
     def off_dpchange(
@@ -37,6 +43,12 @@ object global extends js.Object {
     @JSName("off")
     def off_dperror(events: dpDoterror, handler: js.Function1[/* eventobject */ ErrorEventObject, _]): JQuery = js.native
     @JSName("off")
+    def off_dperror(
+      events: dpDoterror,
+      selector: js.UndefOr[scala.Nothing],
+      handler: js.Function1[/* eventobject */ ErrorEventObject, _]
+    ): JQuery = js.native
+    @JSName("off")
     def off_dperror(events: dpDoterror, selector: String): JQuery = js.native
     @JSName("off")
     def off_dperror(events: dpDoterror, selector: String, handler: js.Function1[/* eventobject */ ErrorEventObject, _]): JQuery = js.native
@@ -44,6 +56,12 @@ object global extends js.Object {
     def off_dphide(events: dpDothide): JQuery = js.native
     @JSName("off")
     def off_dphide(events: dpDothide, handler: js.Function1[/* eventobject */ HideEventObject, _]): JQuery = js.native
+    @JSName("off")
+    def off_dphide(
+      events: dpDothide,
+      selector: js.UndefOr[scala.Nothing],
+      handler: js.Function1[/* eventobject */ HideEventObject, _]
+    ): JQuery = js.native
     @JSName("off")
     def off_dphide(events: dpDothide, selector: String): JQuery = js.native
     @JSName("off")
@@ -53,6 +71,12 @@ object global extends js.Object {
     @JSName("off")
     def off_dpshow(events: dpDotshow, handler: js.Function1[/* eventobject */ JQueryEventObject, _]): JQuery = js.native
     @JSName("off")
+    def off_dpshow(
+      events: dpDotshow,
+      selector: js.UndefOr[scala.Nothing],
+      handler: js.Function1[/* eventobject */ JQueryEventObject, _]
+    ): JQuery = js.native
+    @JSName("off")
     def off_dpshow(events: dpDotshow, selector: String): JQuery = js.native
     @JSName("off")
     def off_dpshow(events: dpDotshow, selector: String, handler: js.Function1[/* eventobject */ JQueryEventObject, _]): JQuery = js.native
@@ -60,6 +84,12 @@ object global extends js.Object {
     def off_dpupdate(events: dpDotupdate): JQuery = js.native
     @JSName("off")
     def off_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventobject */ UpdateEventObject, _]): JQuery = js.native
+    @JSName("off")
+    def off_dpupdate(
+      events: dpDotupdate,
+      selector: js.UndefOr[scala.Nothing],
+      handler: js.Function1[/* eventobject */ UpdateEventObject, _]
+    ): JQuery = js.native
     @JSName("off")
     def off_dpupdate(events: dpDotupdate, selector: String): JQuery = js.native
     @JSName("off")

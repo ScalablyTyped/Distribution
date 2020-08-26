@@ -47,30 +47,70 @@ trait UserDetail extends js.Object {
 
 object UserDetail {
   @scala.inline
-  def apply(
-    Arn: arnType = null,
-    AttachedManagedPolicies: attachedPoliciesListType = null,
-    CreateDate: dateType = null,
-    GroupList: groupNameListType = null,
-    Path: pathType = null,
-    PermissionsBoundary: AttachedPermissionsBoundary = null,
-    Tags: tagListType = null,
-    UserId: idType = null,
-    UserName: userNameType = null,
-    UserPolicyList: policyDetailListType = null
-  ): UserDetail = {
+  def apply(): UserDetail = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (AttachedManagedPolicies != null) __obj.updateDynamic("AttachedManagedPolicies")(AttachedManagedPolicies.asInstanceOf[js.Any])
-    if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
-    if (GroupList != null) __obj.updateDynamic("GroupList")(GroupList.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
-    if (PermissionsBoundary != null) __obj.updateDynamic("PermissionsBoundary")(PermissionsBoundary.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (UserId != null) __obj.updateDynamic("UserId")(UserId.asInstanceOf[js.Any])
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
-    if (UserPolicyList != null) __obj.updateDynamic("UserPolicyList")(UserPolicyList.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDetail]
   }
+  @scala.inline
+  implicit class UserDetailOps[Self <: UserDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAttachedManagedPoliciesVarargs(value: AttachedPolicy*): Self = this.set("AttachedManagedPolicies", js.Array(value :_*))
+    @scala.inline
+    def setAttachedManagedPolicies(value: attachedPoliciesListType): Self = this.set("AttachedManagedPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachedManagedPolicies: Self = this.set("AttachedManagedPolicies", js.undefined)
+    @scala.inline
+    def setCreateDate(value: dateType): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    @scala.inline
+    def setGroupListVarargs(value: groupNameType*): Self = this.set("GroupList", js.Array(value :_*))
+    @scala.inline
+    def setGroupList(value: groupNameListType): Self = this.set("GroupList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupList: Self = this.set("GroupList", js.undefined)
+    @scala.inline
+    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+    @scala.inline
+    def setPermissionsBoundary(value: AttachedPermissionsBoundary): Self = this.set("PermissionsBoundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionsBoundary: Self = this.set("PermissionsBoundary", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: tagListType): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setUserId(value: idType): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("UserId", js.undefined)
+    @scala.inline
+    def setUserName(value: userNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("UserName", js.undefined)
+    @scala.inline
+    def setUserPolicyListVarargs(value: PolicyDetail*): Self = this.set("UserPolicyList", js.Array(value :_*))
+    @scala.inline
+    def setUserPolicyList(value: policyDetailListType): Self = this.set("UserPolicyList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPolicyList: Self = this.set("UserPolicyList", js.undefined)
+  }
+  
 }
 

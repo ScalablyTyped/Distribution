@@ -20,15 +20,5 @@ class ASPxClientCustomizeParameterEditorsEventArgs protected ()
     parameter: typings.devexpressWeb.ASPxDesignerElementParameterDescriptor,
     info: typings.devexpressWeb.ASPxDesignerElementSerializationInfo
   ) = this()
-  /**
-    * Provides access to an object that stores information required to serialize a parameter editor.
-    */
-  /* CompleteClass */
-  override var info: typings.devexpressWeb.ASPxDesignerElementSerializationInfo = js.native
-  /**
-    * Provides access to an object that stores information about a parameter.
-    */
-  /* CompleteClass */
-  override var parameter: typings.devexpressWeb.ASPxDesignerElementParameterDescriptor = js.native
 }
 

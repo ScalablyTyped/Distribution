@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSExpressionWithTypeArguments
   extends Node
      with TSType {
-  var expression: TSEntityName
-  var typeParameters: TypeParameterInstantiation_ | Null
+  var expression: TSEntityName = js.native
+  var typeParameters: TypeParameterInstantiation_ | Null = js.native
   @JSName("type")
-  var type_TSExpressionWithTypeArguments: typings.babelTypes.babelTypesStrings.TSExpressionWithTypeArguments
+  var type_TSExpressionWithTypeArguments: typings.babelTypes.babelTypesStrings.TSExpressionWithTypeArguments = js.native
 }
 
 @JSImport("babel-types", "TSExpressionWithTypeArguments")

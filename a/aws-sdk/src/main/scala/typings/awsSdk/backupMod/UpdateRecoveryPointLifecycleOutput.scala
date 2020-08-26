@@ -26,18 +26,38 @@ trait UpdateRecoveryPointLifecycleOutput extends js.Object {
 
 object UpdateRecoveryPointLifecycleOutput {
   @scala.inline
-  def apply(
-    BackupVaultArn: ARN = null,
-    CalculatedLifecycle: CalculatedLifecycle = null,
-    Lifecycle: Lifecycle = null,
-    RecoveryPointArn: ARN = null
-  ): UpdateRecoveryPointLifecycleOutput = {
+  def apply(): UpdateRecoveryPointLifecycleOutput = {
     val __obj = js.Dynamic.literal()
-    if (BackupVaultArn != null) __obj.updateDynamic("BackupVaultArn")(BackupVaultArn.asInstanceOf[js.Any])
-    if (CalculatedLifecycle != null) __obj.updateDynamic("CalculatedLifecycle")(CalculatedLifecycle.asInstanceOf[js.Any])
-    if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
-    if (RecoveryPointArn != null) __obj.updateDynamic("RecoveryPointArn")(RecoveryPointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRecoveryPointLifecycleOutput]
   }
+  @scala.inline
+  implicit class UpdateRecoveryPointLifecycleOutputOps[Self <: UpdateRecoveryPointLifecycleOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupVaultArn(value: ARN): Self = this.set("BackupVaultArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupVaultArn: Self = this.set("BackupVaultArn", js.undefined)
+    @scala.inline
+    def setCalculatedLifecycle(value: CalculatedLifecycle): Self = this.set("CalculatedLifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalculatedLifecycle: Self = this.set("CalculatedLifecycle", js.undefined)
+    @scala.inline
+    def setLifecycle(value: Lifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+    @scala.inline
+    def setRecoveryPointArn(value: ARN): Self = this.set("RecoveryPointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecoveryPointArn: Self = this.set("RecoveryPointArn", js.undefined)
+  }
+  
 }
 

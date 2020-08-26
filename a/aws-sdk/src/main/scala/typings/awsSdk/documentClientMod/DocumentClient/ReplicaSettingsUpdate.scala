@@ -26,17 +26,38 @@ trait ReplicaSettingsUpdate extends js.Object {
 
 object ReplicaSettingsUpdate {
   @scala.inline
-  def apply(
-    RegionName: RegionName,
-    ReplicaGlobalSecondaryIndexSettingsUpdate: ReplicaGlobalSecondaryIndexSettingsUpdateList = null,
-    ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: AutoScalingSettingsUpdate = null,
-    ReplicaProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
-  ): ReplicaSettingsUpdate = {
+  def apply(RegionName: RegionName): ReplicaSettingsUpdate = {
     val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
-    if (ReplicaGlobalSecondaryIndexSettingsUpdate != null) __obj.updateDynamic("ReplicaGlobalSecondaryIndexSettingsUpdate")(ReplicaGlobalSecondaryIndexSettingsUpdate.asInstanceOf[js.Any])
-    if (ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate")(ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReplicaProvisionedReadCapacityUnits)) __obj.updateDynamic("ReplicaProvisionedReadCapacityUnits")(ReplicaProvisionedReadCapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicaSettingsUpdate]
   }
+  @scala.inline
+  implicit class ReplicaSettingsUpdateOps[Self <: ReplicaSettingsUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegionName(value: RegionName): Self = this.set("RegionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplicaGlobalSecondaryIndexSettingsUpdateVarargs(value: ReplicaGlobalSecondaryIndexSettingsUpdate*): Self = this.set("ReplicaGlobalSecondaryIndexSettingsUpdate", js.Array(value :_*))
+    @scala.inline
+    def setReplicaGlobalSecondaryIndexSettingsUpdate(value: ReplicaGlobalSecondaryIndexSettingsUpdateList): Self = this.set("ReplicaGlobalSecondaryIndexSettingsUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaGlobalSecondaryIndexSettingsUpdate: Self = this.set("ReplicaGlobalSecondaryIndexSettingsUpdate", js.undefined)
+    @scala.inline
+    def setReplicaProvisionedReadCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = this.set("ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: Self = this.set("ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate", js.undefined)
+    @scala.inline
+    def setReplicaProvisionedReadCapacityUnits(value: PositiveLongObject): Self = this.set("ReplicaProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaProvisionedReadCapacityUnits: Self = this.set("ReplicaProvisionedReadCapacityUnits", js.undefined)
+  }
+  
 }
 

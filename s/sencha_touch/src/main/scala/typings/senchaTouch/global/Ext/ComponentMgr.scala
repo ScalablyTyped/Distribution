@@ -41,6 +41,7 @@ object ComponentMgr extends js.Object {
     * @returns Ext.Component The newly instantiated Component.
     */
   def create(): IComponent = js.native
+  def create(component: js.UndefOr[scala.Nothing], defaultType: js.Any): IComponent = js.native
   def create(component: js.Any): IComponent = js.native
   def create(component: js.Any, defaultType: js.Any): IComponent = js.native
   /** [Method]  */

@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
+import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,13 +15,13 @@ trait Zoom extends Widget_ {
     */
   var iconClass: String = js.native
   /**
-    * Determines the layout/orientation of the Zoom widget.  **Possible Values:** vertical | horizontal
+    * Determines the layout/orientation of the Zoom widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#layout)
     *
     * @default vertical
     */
-  var layout: String = js.native
+  var layout: vertical | horizontal = js.native
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
     *

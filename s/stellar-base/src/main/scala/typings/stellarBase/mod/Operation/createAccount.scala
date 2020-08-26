@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-base", "Operation.createAccount")
 @js.native
 object createAccount extends js.Object {
-  def apply(options: CreateAccount): typings.stellarBase.mod.xdr.Operation[CreateAccount_] = js.native
+  def apply(options: CreateAccount): typings.stellarBase.xdrMod.default.Operation[CreateAccount_] = js.native
 }
 

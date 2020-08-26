@@ -12,7 +12,7 @@ Native 64-bit integers with overflow protection.
 | Keywords           | integer, 64-bit, 64bit, int, overflow, native |
 | # releases         | 9 |
 | # dependents       | 8 |
-| # downloads        | 2074903 |
+| # downloads        | 2128909 |
 | # stars            | 0 |
 
 ## Links

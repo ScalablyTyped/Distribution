@@ -62,36 +62,74 @@ trait Statement extends js.Object {
 
 object Statement {
   @scala.inline
-  def apply(
-    AndStatement: AndStatement = null,
-    ByteMatchStatement: ByteMatchStatement = null,
-    GeoMatchStatement: GeoMatchStatement = null,
-    IPSetReferenceStatement: IPSetReferenceStatement = null,
-    ManagedRuleGroupStatement: ManagedRuleGroupStatement = null,
-    NotStatement: NotStatement = null,
-    OrStatement: OrStatement = null,
-    RateBasedStatement: RateBasedStatement = null,
-    RegexPatternSetReferenceStatement: RegexPatternSetReferenceStatement = null,
-    RuleGroupReferenceStatement: RuleGroupReferenceStatement = null,
-    SizeConstraintStatement: SizeConstraintStatement = null,
-    SqliMatchStatement: SqliMatchStatement = null,
-    XssMatchStatement: XssMatchStatement = null
-  ): Statement = {
+  def apply(): Statement = {
     val __obj = js.Dynamic.literal()
-    if (AndStatement != null) __obj.updateDynamic("AndStatement")(AndStatement.asInstanceOf[js.Any])
-    if (ByteMatchStatement != null) __obj.updateDynamic("ByteMatchStatement")(ByteMatchStatement.asInstanceOf[js.Any])
-    if (GeoMatchStatement != null) __obj.updateDynamic("GeoMatchStatement")(GeoMatchStatement.asInstanceOf[js.Any])
-    if (IPSetReferenceStatement != null) __obj.updateDynamic("IPSetReferenceStatement")(IPSetReferenceStatement.asInstanceOf[js.Any])
-    if (ManagedRuleGroupStatement != null) __obj.updateDynamic("ManagedRuleGroupStatement")(ManagedRuleGroupStatement.asInstanceOf[js.Any])
-    if (NotStatement != null) __obj.updateDynamic("NotStatement")(NotStatement.asInstanceOf[js.Any])
-    if (OrStatement != null) __obj.updateDynamic("OrStatement")(OrStatement.asInstanceOf[js.Any])
-    if (RateBasedStatement != null) __obj.updateDynamic("RateBasedStatement")(RateBasedStatement.asInstanceOf[js.Any])
-    if (RegexPatternSetReferenceStatement != null) __obj.updateDynamic("RegexPatternSetReferenceStatement")(RegexPatternSetReferenceStatement.asInstanceOf[js.Any])
-    if (RuleGroupReferenceStatement != null) __obj.updateDynamic("RuleGroupReferenceStatement")(RuleGroupReferenceStatement.asInstanceOf[js.Any])
-    if (SizeConstraintStatement != null) __obj.updateDynamic("SizeConstraintStatement")(SizeConstraintStatement.asInstanceOf[js.Any])
-    if (SqliMatchStatement != null) __obj.updateDynamic("SqliMatchStatement")(SqliMatchStatement.asInstanceOf[js.Any])
-    if (XssMatchStatement != null) __obj.updateDynamic("XssMatchStatement")(XssMatchStatement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statement]
   }
+  @scala.inline
+  implicit class StatementOps[Self <: Statement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndStatement(value: AndStatement): Self = this.set("AndStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndStatement: Self = this.set("AndStatement", js.undefined)
+    @scala.inline
+    def setByteMatchStatement(value: ByteMatchStatement): Self = this.set("ByteMatchStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByteMatchStatement: Self = this.set("ByteMatchStatement", js.undefined)
+    @scala.inline
+    def setGeoMatchStatement(value: GeoMatchStatement): Self = this.set("GeoMatchStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeoMatchStatement: Self = this.set("GeoMatchStatement", js.undefined)
+    @scala.inline
+    def setIPSetReferenceStatement(value: IPSetReferenceStatement): Self = this.set("IPSetReferenceStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIPSetReferenceStatement: Self = this.set("IPSetReferenceStatement", js.undefined)
+    @scala.inline
+    def setManagedRuleGroupStatement(value: ManagedRuleGroupStatement): Self = this.set("ManagedRuleGroupStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedRuleGroupStatement: Self = this.set("ManagedRuleGroupStatement", js.undefined)
+    @scala.inline
+    def setNotStatement(value: NotStatement): Self = this.set("NotStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotStatement: Self = this.set("NotStatement", js.undefined)
+    @scala.inline
+    def setOrStatement(value: OrStatement): Self = this.set("OrStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrStatement: Self = this.set("OrStatement", js.undefined)
+    @scala.inline
+    def setRateBasedStatement(value: RateBasedStatement): Self = this.set("RateBasedStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRateBasedStatement: Self = this.set("RateBasedStatement", js.undefined)
+    @scala.inline
+    def setRegexPatternSetReferenceStatement(value: RegexPatternSetReferenceStatement): Self = this.set("RegexPatternSetReferenceStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexPatternSetReferenceStatement: Self = this.set("RegexPatternSetReferenceStatement", js.undefined)
+    @scala.inline
+    def setRuleGroupReferenceStatement(value: RuleGroupReferenceStatement): Self = this.set("RuleGroupReferenceStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleGroupReferenceStatement: Self = this.set("RuleGroupReferenceStatement", js.undefined)
+    @scala.inline
+    def setSizeConstraintStatement(value: SizeConstraintStatement): Self = this.set("SizeConstraintStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeConstraintStatement: Self = this.set("SizeConstraintStatement", js.undefined)
+    @scala.inline
+    def setSqliMatchStatement(value: SqliMatchStatement): Self = this.set("SqliMatchStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqliMatchStatement: Self = this.set("SqliMatchStatement", js.undefined)
+    @scala.inline
+    def setXssMatchStatement(value: XssMatchStatement): Self = this.set("XssMatchStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXssMatchStatement: Self = this.set("XssMatchStatement", js.undefined)
+  }
+  
 }
 

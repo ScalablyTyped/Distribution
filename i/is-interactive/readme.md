@@ -12,7 +12,7 @@ Check if stdout or stderr is interactive
 | Keywords           | interactive, stdout, stderr, detect, is, terminal, shell, tty |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 1337503 |
+| # downloads        | 2033987 |
 | # stars            | 0 |
 
 ## Links

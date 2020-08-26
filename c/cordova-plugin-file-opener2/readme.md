@@ -10,9 +10,9 @@ A File Opener Plugin for Cordova. (The Original Version)
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-file-opener2 |
 | Keywords           | ecosystem:cordova, cordova-android, cordova-ios, cordova-wp8, cordova-windows |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 441789 |
+| # releases         | 6 |
+| # dependents       | 4 |
+| # downloads        | 452120 |
 | # stars            | 6 |
 
 ## Links

@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Photo extends js.Object {
   /**
     * Absolute time when the photo was captured.
     * When the photo has no exif timestamp, this is used to set a timestamp in
     * the photo metadata.
     */
-  var captureTime: js.UndefOr[String] = js.undefined
+  var captureTime: js.UndefOr[String] = js.native
   /**
     * Connections to other photos. A connection represents the link from this
     * photo to another photo.
     */
-  var connections: js.UndefOr[js.Array[Connection]] = js.undefined
+  var connections: js.UndefOr[js.Array[Connection]] = js.native
   /**
     * Output only. The download URL for the photo bytes. This field is set only
     * when
@@ -23,56 +24,92 @@ trait Photo extends js.Object {
     * is set to
     * PhotoView.INCLUDE_DOWNLOAD_URL.
     */
-  var downloadUrl: js.UndefOr[String] = js.undefined
+  var downloadUrl: js.UndefOr[String] = js.native
   /**
     * Required when updating a photo. Output only when creating a photo.
     * Identifier for the photo, which is unique among all photos in
     * Google.
     */
-  var photoId: js.UndefOr[PhotoId] = js.undefined
+  var photoId: js.UndefOr[PhotoId] = js.native
   /** Places where this photo belongs. */
-  var places: js.UndefOr[js.Array[Place]] = js.undefined
+  var places: js.UndefOr[js.Array[Place]] = js.native
   /** Pose of the photo. */
-  var pose: js.UndefOr[Pose] = js.undefined
+  var pose: js.UndefOr[Pose] = js.native
   /** Output only. The share link for the photo. */
-  var shareLink: js.UndefOr[String] = js.undefined
+  var shareLink: js.UndefOr[String] = js.native
   /** Output only. The thumbnail URL for showing a preview of the given photo. */
-  var thumbnailUrl: js.UndefOr[String] = js.undefined
+  var thumbnailUrl: js.UndefOr[String] = js.native
   /**
     * Required when creating a photo. Input only. The resource URL where the
     * photo bytes are uploaded to.
     */
-  var uploadReference: js.UndefOr[UploadRef] = js.undefined
+  var uploadReference: js.UndefOr[UploadRef] = js.native
   /** Output only. View count of the photo. */
-  var viewCount: js.UndefOr[String] = js.undefined
+  var viewCount: js.UndefOr[String] = js.native
 }
 
 object Photo {
   @scala.inline
-  def apply(
-    captureTime: String = null,
-    connections: js.Array[Connection] = null,
-    downloadUrl: String = null,
-    photoId: PhotoId = null,
-    places: js.Array[Place] = null,
-    pose: Pose = null,
-    shareLink: String = null,
-    thumbnailUrl: String = null,
-    uploadReference: UploadRef = null,
-    viewCount: String = null
-  ): Photo = {
+  def apply(): Photo = {
     val __obj = js.Dynamic.literal()
-    if (captureTime != null) __obj.updateDynamic("captureTime")(captureTime.asInstanceOf[js.Any])
-    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
-    if (downloadUrl != null) __obj.updateDynamic("downloadUrl")(downloadUrl.asInstanceOf[js.Any])
-    if (photoId != null) __obj.updateDynamic("photoId")(photoId.asInstanceOf[js.Any])
-    if (places != null) __obj.updateDynamic("places")(places.asInstanceOf[js.Any])
-    if (pose != null) __obj.updateDynamic("pose")(pose.asInstanceOf[js.Any])
-    if (shareLink != null) __obj.updateDynamic("shareLink")(shareLink.asInstanceOf[js.Any])
-    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl.asInstanceOf[js.Any])
-    if (uploadReference != null) __obj.updateDynamic("uploadReference")(uploadReference.asInstanceOf[js.Any])
-    if (viewCount != null) __obj.updateDynamic("viewCount")(viewCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Photo]
   }
+  @scala.inline
+  implicit class PhotoOps[Self <: Photo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptureTime(value: String): Self = this.set("captureTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureTime: Self = this.set("captureTime", js.undefined)
+    @scala.inline
+    def setConnectionsVarargs(value: Connection*): Self = this.set("connections", js.Array(value :_*))
+    @scala.inline
+    def setConnections(value: js.Array[Connection]): Self = this.set("connections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnections: Self = this.set("connections", js.undefined)
+    @scala.inline
+    def setDownloadUrl(value: String): Self = this.set("downloadUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadUrl: Self = this.set("downloadUrl", js.undefined)
+    @scala.inline
+    def setPhotoId(value: PhotoId): Self = this.set("photoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhotoId: Self = this.set("photoId", js.undefined)
+    @scala.inline
+    def setPlacesVarargs(value: Place*): Self = this.set("places", js.Array(value :_*))
+    @scala.inline
+    def setPlaces(value: js.Array[Place]): Self = this.set("places", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaces: Self = this.set("places", js.undefined)
+    @scala.inline
+    def setPose(value: Pose): Self = this.set("pose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePose: Self = this.set("pose", js.undefined)
+    @scala.inline
+    def setShareLink(value: String): Self = this.set("shareLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShareLink: Self = this.set("shareLink", js.undefined)
+    @scala.inline
+    def setThumbnailUrl(value: String): Self = this.set("thumbnailUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailUrl: Self = this.set("thumbnailUrl", js.undefined)
+    @scala.inline
+    def setUploadReference(value: UploadRef): Self = this.set("uploadReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadReference: Self = this.set("uploadReference", js.undefined)
+    @scala.inline
+    def setViewCount(value: String): Self = this.set("viewCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewCount: Self = this.set("viewCount", js.undefined)
+  }
+  
 }
 

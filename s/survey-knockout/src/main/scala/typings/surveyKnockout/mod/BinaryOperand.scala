@@ -9,7 +9,16 @@ import scala.scalajs.js.annotation._
 class BinaryOperand protected () extends Operand {
   def this(operatorName: String) = this()
   def this(operatorName: String, left: js.Any) = this()
+  def this(operatorName: String, left: js.UndefOr[scala.Nothing], right: js.Any) = this()
   def this(operatorName: String, left: js.Any, right: js.Any) = this()
+  def this(
+    operatorName: String,
+    left: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    isArithmeticOp: Boolean
+  ) = this()
+  def this(operatorName: String, left: js.UndefOr[scala.Nothing], right: js.Any, isArithmeticOp: Boolean) = this()
+  def this(operatorName: String, left: js.Any, right: js.UndefOr[scala.Nothing], isArithmeticOp: Boolean) = this()
   def this(operatorName: String, left: js.Any, right: js.Any, isArithmeticOp: Boolean) = this()
   val conjunction: String = js.native
   val isArithmetic: Boolean = js.native

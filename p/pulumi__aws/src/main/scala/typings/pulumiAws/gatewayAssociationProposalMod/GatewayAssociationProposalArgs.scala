@@ -33,18 +33,40 @@ trait GatewayAssociationProposalArgs extends js.Object {
 
 object GatewayAssociationProposalArgs {
   @scala.inline
-  def apply(
-    dxGatewayId: Input[String],
-    dxGatewayOwnerAccountId: Input[String],
-    allowedPrefixes: Input[js.Array[Input[String]]] = null,
-    associatedGatewayId: Input[String] = null,
-    vpnGatewayId: Input[String] = null
-  ): GatewayAssociationProposalArgs = {
+  def apply(dxGatewayId: Input[String], dxGatewayOwnerAccountId: Input[String]): GatewayAssociationProposalArgs = {
     val __obj = js.Dynamic.literal(dxGatewayId = dxGatewayId.asInstanceOf[js.Any], dxGatewayOwnerAccountId = dxGatewayOwnerAccountId.asInstanceOf[js.Any])
-    if (allowedPrefixes != null) __obj.updateDynamic("allowedPrefixes")(allowedPrefixes.asInstanceOf[js.Any])
-    if (associatedGatewayId != null) __obj.updateDynamic("associatedGatewayId")(associatedGatewayId.asInstanceOf[js.Any])
-    if (vpnGatewayId != null) __obj.updateDynamic("vpnGatewayId")(vpnGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayAssociationProposalArgs]
   }
+  @scala.inline
+  implicit class GatewayAssociationProposalArgsOps[Self <: GatewayAssociationProposalArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDxGatewayId(value: Input[String]): Self = this.set("dxGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDxGatewayOwnerAccountId(value: Input[String]): Self = this.set("dxGatewayOwnerAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowedPrefixesVarargs(value: Input[String]*): Self = this.set("allowedPrefixes", js.Array(value :_*))
+    @scala.inline
+    def setAllowedPrefixes(value: Input[js.Array[Input[String]]]): Self = this.set("allowedPrefixes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedPrefixes: Self = this.set("allowedPrefixes", js.undefined)
+    @scala.inline
+    def setAssociatedGatewayId(value: Input[String]): Self = this.set("associatedGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedGatewayId: Self = this.set("associatedGatewayId", js.undefined)
+    @scala.inline
+    def setVpnGatewayId(value: Input[String]): Self = this.set("vpnGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnGatewayId: Self = this.set("vpnGatewayId", js.undefined)
+  }
+  
 }
 

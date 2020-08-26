@@ -29,8 +29,8 @@ object curMod extends js.Object {
     def this(name: String, args: ReportDefinitionArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getReportDefinition(args: GetReportDefinitionArgs): js.Promise[GetReportDefinitionResult] with GetReportDefinitionResult = js.native
-  def getReportDefinition(args: GetReportDefinitionArgs, opts: InvokeOptions): js.Promise[GetReportDefinitionResult] with GetReportDefinitionResult = js.native
+  def getReportDefinition(args: GetReportDefinitionArgs): js.Promise[GetReportDefinitionResult] = js.native
+  def getReportDefinition(args: GetReportDefinitionArgs, opts: InvokeOptions): js.Promise[GetReportDefinitionResult] = js.native
   /* static members */
   @js.native
   object ReportDefinition extends js.Object {
@@ -41,8 +41,10 @@ object curMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.reportDefinitionMod.ReportDefinition = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.reportDefinitionMod.ReportDefinition = js.native
     def get(name: String, id: Input[ID], state: ReportDefinitionState): typings.pulumiAws.reportDefinitionMod.ReportDefinition = js.native
     def get(name: String, id: Input[ID], state: ReportDefinitionState, opts: CustomResourceOptions): typings.pulumiAws.reportDefinitionMod.ReportDefinition = js.native
     /**

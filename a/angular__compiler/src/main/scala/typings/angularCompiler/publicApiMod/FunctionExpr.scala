@@ -18,6 +18,12 @@ class FunctionExpr protected ()
   def this(
     params: js.Array[FnParam],
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
     `type`: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
@@ -26,6 +32,34 @@ class FunctionExpr protected ()
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
     `type`: typings.angularCompiler.outputAstMod.Type,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: js.UndefOr[scala.Nothing],
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: Null,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: Null,
+    sourceSpan: js.UndefOr[scala.Nothing],
+    name: String
   ) = this()
   def this(
     params: js.Array[FnParam],
@@ -39,6 +73,13 @@ class FunctionExpr protected ()
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
     `type`: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: typings.angularCompiler.outputAstMod.Type,
+    sourceSpan: js.UndefOr[scala.Nothing],
     name: String
   ) = this()
   def this(

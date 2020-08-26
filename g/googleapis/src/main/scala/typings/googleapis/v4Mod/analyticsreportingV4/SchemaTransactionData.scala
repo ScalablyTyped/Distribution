@@ -31,18 +31,38 @@ trait SchemaTransactionData extends js.Object {
 
 object SchemaTransactionData {
   @scala.inline
-  def apply(
-    transactionId: String = null,
-    transactionRevenue: js.UndefOr[Double] = js.undefined,
-    transactionShipping: js.UndefOr[Double] = js.undefined,
-    transactionTax: js.UndefOr[Double] = js.undefined
-  ): SchemaTransactionData = {
+  def apply(): SchemaTransactionData = {
     val __obj = js.Dynamic.literal()
-    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(transactionRevenue)) __obj.updateDynamic("transactionRevenue")(transactionRevenue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transactionShipping)) __obj.updateDynamic("transactionShipping")(transactionShipping.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transactionTax)) __obj.updateDynamic("transactionTax")(transactionTax.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTransactionData]
   }
+  @scala.inline
+  implicit class SchemaTransactionDataOps[Self <: SchemaTransactionData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
+    @scala.inline
+    def setTransactionRevenue(value: Double): Self = this.set("transactionRevenue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionRevenue: Self = this.set("transactionRevenue", js.undefined)
+    @scala.inline
+    def setTransactionShipping(value: Double): Self = this.set("transactionShipping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionShipping: Self = this.set("transactionShipping", js.undefined)
+    @scala.inline
+    def setTransactionTax(value: Double): Self = this.set("transactionTax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionTax: Self = this.set("transactionTax", js.undefined)
+  }
+  
 }
 

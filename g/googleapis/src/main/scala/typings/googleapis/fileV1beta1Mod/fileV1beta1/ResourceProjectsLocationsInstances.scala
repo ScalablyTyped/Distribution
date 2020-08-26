@@ -29,6 +29,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceProjectsLocationsInstancesCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(
     params: ParamsResourceProjectsLocationsInstancesCreate,
@@ -59,6 +60,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceProjectsLocationsInstancesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsInstancesDelete,
@@ -89,6 +91,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInstance] = js.native
   def get(callback: BodyResponseCallback[SchemaInstance]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstance] = js.native
   def get(params: ParamsResourceProjectsLocationsInstancesGet): GaxiosPromise[SchemaInstance] = js.native
   def get(
     params: ParamsResourceProjectsLocationsInstancesGet,
@@ -124,6 +127,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListInstancesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListInstancesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListInstancesResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsInstancesList): GaxiosPromise[SchemaListInstancesResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsInstancesList,
@@ -156,6 +160,7 @@ class ResourceProjectsLocationsInstances protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceProjectsLocationsInstancesPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(
     params: ParamsResourceProjectsLocationsInstancesPatch,

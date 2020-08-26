@@ -12,7 +12,7 @@ The lodash method `_.castArray` exported as a module.
 | Keywords           | lodash-modularized, castarray |
 | # releases         | 0 |
 | # dependents       | 25 |
-| # downloads        | 4972777 |
+| # downloads        | 5046224 |
 | # stars            | 0 |
 
 ## Links

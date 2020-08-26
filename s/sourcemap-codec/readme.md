@@ -10,9 +10,9 @@ Encode/decode sourcemap mappings
 | ------------------ | :-------------: |
 | Full name          | sourcemap-codec |
 | Keywords           | sourcemap, vlq |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 41 |
-| # downloads        | 58138689 |
+| # downloads        | 60482186 |
 | # stars            | 2 |
 
 ## Links

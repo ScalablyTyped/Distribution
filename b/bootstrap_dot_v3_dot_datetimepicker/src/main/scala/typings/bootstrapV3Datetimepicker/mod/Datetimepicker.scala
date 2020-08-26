@@ -37,8 +37,6 @@ trait Datetimepicker extends js.Object {
   def collapse(): Boolean = js.native
   /** If set to false the picker will display similar to sideBySide except vertical. */
   def collapse(value: Boolean): Unit = js.native
-  def date(): Unit = js.native
-  def date(date: String): Unit = js.native
   /**
     * Takes string, Date, moment, null parameter and sets the components model current moment to it.
     * Passing a null value unsets the components model current moment.
@@ -49,6 +47,8 @@ trait Datetimepicker extends js.Object {
     * Emits:
     * - dp.change - In case newDate is different from current moment
     */
+  def date(): Unit = js.native
+  def date(date: String): Unit = js.native
   def date(date: Moment): Unit = js.native
   def date(date: Date): Unit = js.native
   /** Returns the component's model current date, a moment object or null if not set. */
@@ -296,12 +296,12 @@ trait Datetimepicker extends js.Object {
   def stepping(step: Double): Unit = js.native
   /** Returns a string of options.timeZone */
   def timeZone(): String | Null = js.native
+  def timeZone(timeZone: String): Unit = js.native
   /**
     * Takes a null or a string of a valid timezone.
     * Throws:
     * - TypeError - if tooltips parameter is not a string or null
     */
-  def timeZone(timeZone: String): Unit = js.native
   @JSName("timeZone")
   def timeZone_Unit(): Unit = js.native
   /**
@@ -364,9 +364,9 @@ trait Datetimepicker extends js.Object {
   def viewMode(value: String): Unit = js.native
   /** Returns a $(element) variable with the currently set options.widgetParent option. */
   def widgetParent(): String | JQuery | Null = js.native
-  /** Takes a string or $(element) value. */
   def widgetParent(widgetParent: String): Unit = js.native
   def widgetParent(widgetParent: JQuery): Unit = js.native
+  /** Takes a string or $(element) value. */
   @JSName("widgetParent")
   def widgetParent_Unit(): Unit = js.native
   /** Returns the options.widgetPositioning object */

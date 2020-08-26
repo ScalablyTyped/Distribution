@@ -57,6 +57,8 @@ class Cluster protected () extends CustomResource {
   val configurationsJson: Output_[js.UndefOr[String]] = js.native
   /**
     * Use the `coreInstanceGroup` configuration block `instanceCount` argument instead. Number of Amazon EC2 instances used to execute the job flow. EMR will use one node as the cluster's master node and use the remainder of the nodes (`coreInstanceCount`-1) as core nodes. Cannot be specified if `coreInstanceGroup` or `instanceGroup` configuration blocks are set. Default `1`
+    *
+    * @deprecated use `core_instance_group` configuration block `instance_count` argument instead
     */
   val coreInstanceCount: Output_[Double] = js.native
   /**
@@ -65,6 +67,8 @@ class Cluster protected () extends CustomResource {
   val coreInstanceGroup: Output_[ClusterCoreInstanceGroup] = js.native
   /**
     * Use the `coreInstanceGroup` configuration block `instanceType` argument instead. The EC2 instance type of the slave nodes. Cannot be specified if `coreInstanceGroup` or `instanceGroup` configuration blocks are set.
+    *
+    * @deprecated use `core_instance_group` configuration block `instance_type` argument instead
     */
   val coreInstanceType: Output_[String] = js.native
   /**
@@ -80,7 +84,9 @@ class Cluster protected () extends CustomResource {
     */
   val ec2Attributes: Output_[js.UndefOr[ClusterEc2Attributes]] = js.native
   /**
-    * Use the `masterInstanceGroup` configuration block, `coreInstanceGroup` configuration block and [`aws.emr.InstanceGroup` resource(s)](https://www.terraform.io/docs/providers/aws/r/emr_instance_group.html) instead. A list of `instanceGroup` objects for each instance group in the cluster. Exactly one of `masterInstanceType` and `instanceGroup` must be specified. If `instanceGroup` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Cannot be specified if `masterInstanceGroup` or `coreInstanceGroup` configuration blocks are set. Defined below
+    * Use the `masterInstanceGroup` configuration block, `coreInstanceGroup` configuration block and `aws.emr.InstanceGroup` resource(s) instead. A list of `instanceGroup` objects for each instance group in the cluster. Exactly one of `masterInstanceType` and `instanceGroup` must be specified. If `instanceGroup` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Cannot be specified if `masterInstanceGroup` or `coreInstanceGroup` configuration blocks are set. Defined below
+    *
+    * @deprecated use `master_instance_group` configuration block, `core_instance_group` configuration block, and `aws_emr_instance_group` resource(s) instead
     */
   val instanceGroups: Output_[js.Array[ClusterInstanceGroup]] = js.native
   /**
@@ -101,6 +107,8 @@ class Cluster protected () extends CustomResource {
   val masterInstanceGroup: Output_[ClusterMasterInstanceGroup] = js.native
   /**
     * Use the `masterInstanceGroup` configuration block `instanceType` argument instead. The EC2 instance type of the master node. Cannot be specified if `masterInstanceGroup` or `instanceGroup` configuration blocks are set.
+    *
+    * @deprecated use `master_instance_group` configuration block `instance_type` argument instead
     */
   val masterInstanceType: Output_[String] = js.native
   /**
@@ -109,7 +117,7 @@ class Cluster protected () extends CustomResource {
     */
   val masterPublicDns: Output_[String] = js.native
   /**
-    * The name of the job flow
+    * The name of the step.
     */
   val name: Output_[String] = js.native
   /**
@@ -139,7 +147,7 @@ class Cluster protected () extends CustomResource {
   /**
     * list of tags to apply to the EMR Cluster
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Switch on/off termination protection (default is `false`, except when using multiple master nodes). Before attempting to destroy the resource when termination protection is enabled, this configuration must be applied with its value set to `false`.
     */
@@ -161,8 +169,10 @@ object Cluster extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Cluster = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Cluster = js.native
   def get(name: String, id: Input[ID], state: ClusterState): Cluster = js.native
   def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = js.native
   /**

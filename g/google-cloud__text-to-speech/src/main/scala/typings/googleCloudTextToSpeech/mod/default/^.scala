@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var TextToSpeechClient: Instantiable1[
-    js.UndefOr[/* options */ ClientOptions], 
+    /* options */ js.UndefOr[ClientOptions], 
     typings.googleCloudTextToSpeech.mod.TextToSpeechClient
   ] = js.native
 }

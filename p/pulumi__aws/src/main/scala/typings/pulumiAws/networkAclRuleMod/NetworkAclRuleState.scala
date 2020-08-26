@@ -55,32 +55,66 @@ trait NetworkAclRuleState extends js.Object {
 
 object NetworkAclRuleState {
   @scala.inline
-  def apply(
-    cidrBlock: Input[String] = null,
-    egress: Input[Boolean] = null,
-    fromPort: Input[Double] = null,
-    icmpCode: Input[String] = null,
-    icmpType: Input[String] = null,
-    ipv6CidrBlock: Input[String] = null,
-    networkAclId: Input[String] = null,
-    protocol: Input[String] = null,
-    ruleAction: Input[String] = null,
-    ruleNumber: Input[Double] = null,
-    toPort: Input[Double] = null
-  ): NetworkAclRuleState = {
+  def apply(): NetworkAclRuleState = {
     val __obj = js.Dynamic.literal()
-    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
-    if (egress != null) __obj.updateDynamic("egress")(egress.asInstanceOf[js.Any])
-    if (fromPort != null) __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
-    if (icmpCode != null) __obj.updateDynamic("icmpCode")(icmpCode.asInstanceOf[js.Any])
-    if (icmpType != null) __obj.updateDynamic("icmpType")(icmpType.asInstanceOf[js.Any])
-    if (ipv6CidrBlock != null) __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock.asInstanceOf[js.Any])
-    if (networkAclId != null) __obj.updateDynamic("networkAclId")(networkAclId.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (ruleAction != null) __obj.updateDynamic("ruleAction")(ruleAction.asInstanceOf[js.Any])
-    if (ruleNumber != null) __obj.updateDynamic("ruleNumber")(ruleNumber.asInstanceOf[js.Any])
-    if (toPort != null) __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkAclRuleState]
   }
+  @scala.inline
+  implicit class NetworkAclRuleStateOps[Self <: NetworkAclRuleState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidrBlock(value: Input[String]): Self = this.set("cidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlock: Self = this.set("cidrBlock", js.undefined)
+    @scala.inline
+    def setEgress(value: Input[Boolean]): Self = this.set("egress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEgress: Self = this.set("egress", js.undefined)
+    @scala.inline
+    def setFromPort(value: Input[Double]): Self = this.set("fromPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromPort: Self = this.set("fromPort", js.undefined)
+    @scala.inline
+    def setIcmpCode(value: Input[String]): Self = this.set("icmpCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcmpCode: Self = this.set("icmpCode", js.undefined)
+    @scala.inline
+    def setIcmpType(value: Input[String]): Self = this.set("icmpType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcmpType: Self = this.set("icmpType", js.undefined)
+    @scala.inline
+    def setIpv6CidrBlock(value: Input[String]): Self = this.set("ipv6CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6CidrBlock: Self = this.set("ipv6CidrBlock", js.undefined)
+    @scala.inline
+    def setNetworkAclId(value: Input[String]): Self = this.set("networkAclId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkAclId: Self = this.set("networkAclId", js.undefined)
+    @scala.inline
+    def setProtocol(value: Input[String]): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setRuleAction(value: Input[String]): Self = this.set("ruleAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleAction: Self = this.set("ruleAction", js.undefined)
+    @scala.inline
+    def setRuleNumber(value: Input[Double]): Self = this.set("ruleNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleNumber: Self = this.set("ruleNumber", js.undefined)
+    @scala.inline
+    def setToPort(value: Input[Double]): Self = this.set("toPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToPort: Self = this.set("toPort", js.undefined)
+  }
+  
 }
 

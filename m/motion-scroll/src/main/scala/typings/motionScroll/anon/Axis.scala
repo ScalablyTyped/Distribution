@@ -7,45 +7,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Axis extends js.Object {
-  var axis: js.UndefOr[x | y] = js.undefined
-  var callBack: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var easing: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var element: js.UndefOr[HTMLElement] = js.undefined
-  var force: js.UndefOr[Boolean] = js.undefined
-  var maxScrollTime: js.UndefOr[Double] = js.undefined
-  var minScrollTime: js.UndefOr[Double] = js.undefined
-  var scrollTo: js.UndefOr[Double] = js.undefined
-  var speed: js.UndefOr[Double] = js.undefined
+  var axis: js.UndefOr[x | y] = js.native
+  var callBack: js.UndefOr[js.Function0[Unit]] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var easing: js.UndefOr[js.Function0[Unit]] = js.native
+  var element: js.UndefOr[HTMLElement] = js.native
+  var force: js.UndefOr[Boolean] = js.native
+  var maxScrollTime: js.UndefOr[Double] = js.native
+  var minScrollTime: js.UndefOr[Double] = js.native
+  var scrollTo: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.native
 }
 
 object Axis {
   @scala.inline
-  def apply(
-    axis: x | y = null,
-    callBack: () => Unit = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    easing: () => Unit = null,
-    element: HTMLElement = null,
-    force: js.UndefOr[Boolean] = js.undefined,
-    maxScrollTime: js.UndefOr[Double] = js.undefined,
-    minScrollTime: js.UndefOr[Double] = js.undefined,
-    scrollTo: js.UndefOr[Double] = js.undefined,
-    speed: js.UndefOr[Double] = js.undefined
-  ): Axis = {
+  def apply(): Axis = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (callBack != null) __obj.updateDynamic("callBack")(js.Any.fromFunction0(callBack))
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction0(easing))
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxScrollTime)) __obj.updateDynamic("maxScrollTime")(maxScrollTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minScrollTime)) __obj.updateDynamic("minScrollTime")(minScrollTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollTo)) __obj.updateDynamic("scrollTo")(scrollTo.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Axis]
   }
+  @scala.inline
+  implicit class AxisOps[Self <: Axis] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAxis(value: typings.motionScroll.motionScrollStrings.x | y): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setCallBack(value: () => Unit): Self = this.set("callBack", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCallBack: Self = this.set("callBack", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setEasing(value: () => Unit): Self = this.set("easing", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setElement(value: HTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+    @scala.inline
+    def setMaxScrollTime(value: Double): Self = this.set("maxScrollTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxScrollTime: Self = this.set("maxScrollTime", js.undefined)
+    @scala.inline
+    def setMinScrollTime(value: Double): Self = this.set("minScrollTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinScrollTime: Self = this.set("minScrollTime", js.undefined)
+    @scala.inline
+    def setScrollTo(value: Double): Self = this.set("scrollTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollTo: Self = this.set("scrollTo", js.undefined)
+    @scala.inline
+    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeed: Self = this.set("speed", js.undefined)
+  }
+  
 }
 

@@ -133,6 +133,7 @@ trait UtilityMethods extends js.Object {
     */
   def sort(): Api = js.native
   def sort(fn: js.Function2[/* value1 */ js.Any, /* value2 */ js.Any, Double]): Api = js.native
+  def splice(index: Double, howMany: Double, value_1: js.UndefOr[scala.Nothing], value_2: js.Any*): js.Array[_] = js.native
   /**
     * Modify the contents of an Api instance's result set, adding or removing items from it as required.
     *
@@ -140,7 +141,6 @@ trait UtilityMethods extends js.Object {
     * @param howMany Number of elements to remove from the result set.
     * @param value_1 Item to add to the result set at the index specified by the first parameter.
     */
-  def splice(index: Double, howMany: Double): js.Array[_] = js.native
   def splice(index: Double, howMany: Double, value_1: js.Any, value_2: js.Any*): js.Array[_] = js.native
   /**
     * Convert the API instance to a jQuery object, with the objects from the instance's result set in the jQuery result set.

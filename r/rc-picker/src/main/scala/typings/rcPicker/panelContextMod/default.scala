@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/PanelContext", JSImport.Default)
+@JSImport("rc-picker/es/PanelContext", JSImport.Default)
 @js.native
 object default extends TopLevel[Context[PanelContextProps]]
 

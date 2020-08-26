@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.UI.Notifications
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,14 +15,5 @@ class TileNotification protected ()
     * @param content The object that provides the content for the tile notification.
     */
   def this(content: XmlDocument) = this()
-  /** Gets the XML description of the notification content, which you can then manipulate to alter the notification. */
-  /* CompleteClass */
-  override var content: XmlDocument = js.native
-  /** Gets or sets the time that Windows will remove the notification from the tile. By default, a tile update does not expire. It is a best practice to explicitly set an expiration time to avoid stale content. */
-  /* CompleteClass */
-  override var expirationTime: Date = js.native
-  /** Gets or sets a string that Windows can use to prevent duplicate notification content from appearing in the queue. */
-  /* CompleteClass */
-  override var tag: String = js.native
 }
 

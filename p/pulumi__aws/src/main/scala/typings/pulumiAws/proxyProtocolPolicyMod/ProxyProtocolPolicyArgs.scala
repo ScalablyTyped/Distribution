@@ -25,5 +25,24 @@ object ProxyProtocolPolicyArgs {
     val __obj = js.Dynamic.literal(instancePorts = instancePorts.asInstanceOf[js.Any], loadBalancer = loadBalancer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyProtocolPolicyArgs]
   }
+  @scala.inline
+  implicit class ProxyProtocolPolicyArgsOps[Self <: ProxyProtocolPolicyArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstancePortsVarargs(value: Input[String]*): Self = this.set("instancePorts", js.Array(value :_*))
+    @scala.inline
+    def setInstancePorts(value: Input[js.Array[Input[String]]]): Self = this.set("instancePorts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoadBalancer(value: Input[String]): Self = this.set("loadBalancer", value.asInstanceOf[js.Any])
+  }
+  
 }
 

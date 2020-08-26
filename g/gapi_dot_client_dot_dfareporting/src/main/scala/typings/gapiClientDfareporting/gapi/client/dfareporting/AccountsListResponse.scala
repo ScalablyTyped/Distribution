@@ -4,23 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountsListResponse extends js.Object {
   /** Account collection. */
-  var accounts: js.UndefOr[js.Array[Account]] = js.undefined
+  var accounts: js.UndefOr[js.Array[Account]] = js.native
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#accountsListResponse". */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** Pagination token to be used for the next list operation. */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String] = js.native
 }
 
 object AccountsListResponse {
   @scala.inline
-  def apply(accounts: js.Array[Account] = null, kind: String = null, nextPageToken: String = null): AccountsListResponse = {
+  def apply(): AccountsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (accounts != null) __obj.updateDynamic("accounts")(accounts.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountsListResponse]
   }
+  @scala.inline
+  implicit class AccountsListResponseOps[Self <: AccountsListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountsVarargs(value: Account*): Self = this.set("accounts", js.Array(value :_*))
+    @scala.inline
+    def setAccounts(value: js.Array[Account]): Self = this.set("accounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccounts: Self = this.set("accounts", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

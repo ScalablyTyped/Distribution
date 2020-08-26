@@ -33,6 +33,7 @@ class ResourceAccountsContainersMoveFolders protected () extends js.Object {
     */
   def update(): GaxiosPromise[Unit] = js.native
   def update(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def update(params: ParamsResourceAccountsContainersMoveFoldersUpdate): GaxiosPromise[Unit] = js.native
   def update(params: ParamsResourceAccountsContainersMoveFoldersUpdate, callback: BodyResponseCallback[Unit]): Unit = js.native
   def update(

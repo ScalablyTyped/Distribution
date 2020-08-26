@@ -12,7 +12,7 @@ require and resolve modules relative to a path of your choice
 | Keywords           | require, resolve, modules, relative |
 | # releases         | 0 |
 | # dependents       | 108 |
-| # downloads        | 17784092 |
+| # downloads        | 18137458 |
 | # stars            | 0 |
 
 ## Links

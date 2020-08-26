@@ -8,18 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CharacterData")
 @js.native
 class CharacterData ()
-  extends typings.std.CharacterData {
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: typings.std.Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: typings.std.Element | Null = js.native
-}
+  extends typings.std.CharacterData
 
 @JSGlobal("CharacterData")
 @js.native

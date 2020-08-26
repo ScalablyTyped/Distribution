@@ -22,16 +22,36 @@ trait RecordingGroup extends js.Object {
 
 object RecordingGroup {
   @scala.inline
-  def apply(
-    allSupported: js.UndefOr[AllSupported] = js.undefined,
-    includeGlobalResourceTypes: js.UndefOr[IncludeGlobalResourceTypes] = js.undefined,
-    resourceTypes: ResourceTypeList = null
-  ): RecordingGroup = {
+  def apply(): RecordingGroup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allSupported)) __obj.updateDynamic("allSupported")(allSupported.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeGlobalResourceTypes)) __obj.updateDynamic("includeGlobalResourceTypes")(includeGlobalResourceTypes.get.asInstanceOf[js.Any])
-    if (resourceTypes != null) __obj.updateDynamic("resourceTypes")(resourceTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordingGroup]
   }
+  @scala.inline
+  implicit class RecordingGroupOps[Self <: RecordingGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllSupported(value: AllSupported): Self = this.set("allSupported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllSupported: Self = this.set("allSupported", js.undefined)
+    @scala.inline
+    def setIncludeGlobalResourceTypes(value: IncludeGlobalResourceTypes): Self = this.set("includeGlobalResourceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeGlobalResourceTypes: Self = this.set("includeGlobalResourceTypes", js.undefined)
+    @scala.inline
+    def setResourceTypesVarargs(value: ResourceType*): Self = this.set("resourceTypes", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypes(value: ResourceTypeList): Self = this.set("resourceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypes: Self = this.set("resourceTypes", js.undefined)
+  }
+  
 }
 

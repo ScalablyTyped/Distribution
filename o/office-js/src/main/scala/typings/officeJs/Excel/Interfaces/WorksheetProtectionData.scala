@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface describing the data returned by calling `worksheetProtection.toJSON()`. */
+@js.native
 trait WorksheetProtectionData extends js.Object {
   /**
     *
@@ -13,23 +14,42 @@ trait WorksheetProtectionData extends js.Object {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var options: js.UndefOr[WorksheetProtectionOptions] = js.undefined
+  var options: js.UndefOr[WorksheetProtectionOptions] = js.native
   /**
     *
     * Specifies if the worksheet is protected.
     *
     * [Api set: ExcelApi 1.2]
     */
-  var `protected`: js.UndefOr[Boolean] = js.undefined
+  var `protected`: js.UndefOr[Boolean] = js.native
 }
 
 object WorksheetProtectionData {
   @scala.inline
-  def apply(options: WorksheetProtectionOptions = null, `protected`: js.UndefOr[Boolean] = js.undefined): WorksheetProtectionData = {
+  def apply(): WorksheetProtectionData = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetProtectionData]
   }
+  @scala.inline
+  implicit class WorksheetProtectionDataOps[Self <: WorksheetProtectionData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOptions(value: WorksheetProtectionOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setProtected(value: Boolean): Self = this.set("protected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtected: Self = this.set("protected", js.undefined)
+  }
+  
 }
 

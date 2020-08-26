@@ -47,6 +47,7 @@ trait IPoint extends IPointData {
     * @param {number} [y=x] - position of the point on the y axis
     */
   def set(): Unit = js.native
+  def set(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def set(x: Double): Unit = js.native
   def set(x: Double, y: Double): Unit = js.native
 }

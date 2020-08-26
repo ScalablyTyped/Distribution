@@ -24,6 +24,7 @@ class ComponentResource[TData] protected ()
     */
   def this(`type`: String, name: String) = this()
   def this(`type`: String, name: String, args: Inputs) = this()
+  def this(`type`: String, name: String, args: js.UndefOr[scala.Nothing], opts: ComponentResourceOptions) = this()
   def this(`type`: String, name: String, args: Inputs, opts: ComponentResourceOptions) = this()
 }
 

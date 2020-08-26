@@ -2,34 +2,37 @@ package typings.angularCore.anon
 
 import org.scalablytyped.runtime.TopLevel
 import typings.angularCore.mod.ContentQueriesFunction
+import typings.angularCore.mod.CssSelector
 import typings.angularCore.mod.DirectiveDefFeature
 import typings.angularCore.mod.HostBindingsFunction
 import typings.angularCore.mod.TAttributes
 import typings.angularCore.mod.Type
 import typings.angularCore.mod.ViewQueriesFunction
+import typings.angularCore.mod.ɵAttributeMarker
 import typings.angularCore.mod.ɵCssSelectorList
 import typings.angularCore.mod.ɵRenderFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContentQueries[T] extends js.Object {
   /**
     * Function to create instances of content queries associated with a given directive.
     */
-  var contentQueries: js.UndefOr[ContentQueriesFunction[T]] = js.undefined
+  var contentQueries: js.UndefOr[ContentQueriesFunction[T]] = js.native
   /**
     * Defines the name that can be used in the template to assign this directive to a variable.
     *
     * See: {@link Directive.exportAs}
     */
-  var exportAs: js.UndefOr[js.Array[String]] = js.undefined
+  var exportAs: js.UndefOr[js.Array[String]] = js.native
   /**
     * A list of optional features to apply.
     *
     * See: {@link NgOnChangesFeature}, {@link ProvidersFeature}, {@link InheritDefinitionFeature}
     */
-  var features: js.UndefOr[js.Array[DirectiveDefFeature]] = js.undefined
+  var features: js.UndefOr[js.Array[DirectiveDefFeature]] = js.native
   /**
     * Assign static attribute values to a host element.
     *
@@ -60,18 +63,18 @@ trait ContentQueries[T] extends js.Object {
     * the entries. The marker values themselves are set via entries found in the
     * [AttributeMarker] enum.
     */
-  var hostAttrs: js.UndefOr[TAttributes] = js.undefined
+  var hostAttrs: js.UndefOr[TAttributes] = js.native
   /**
     * Function executed by the parent template to allow child directive to apply host bindings.
     */
-  var hostBindings: js.UndefOr[HostBindingsFunction[T]] = js.undefined
+  var hostBindings: js.UndefOr[HostBindingsFunction[T]] = js.native
   /**
     * The number of bindings in this directive `hostBindings` (including pure fn bindings).
     *
     * Used to calculate the length of the component's LView array, so we
     * can pre-fill the array and set the host binding start index.
     */
-  var hostVars: js.UndefOr[Double] = js.undefined
+  var hostVars: js.UndefOr[Double] = js.native
   /**
     * A map of input names.
     *
@@ -119,7 +122,7 @@ trait ContentQueries[T] extends js.Object {
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string] | undefined}
     */ typings.angularCore.angularCoreStrings.ContentQueries with TopLevel[js.Any]
-  ] = js.undefined
+  ] = js.native
   /**
     * A map of output names.
     *
@@ -134,52 +137,99 @@ trait ContentQueries[T] extends js.Object {
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P_1 in keyof T ]:? string | undefined}
     */ typings.angularCore.angularCoreStrings.ContentQueries with TopLevel[js.Any]
-  ] = js.undefined
+  ] = js.native
   /** The selectors that will be used to match nodes to this directive. */
-  var selectors: js.UndefOr[ɵCssSelectorList] = js.undefined
+  var selectors: js.UndefOr[ɵCssSelectorList] = js.native
   /**
     * Directive type, needed to configure the injector.
     */
-  var `type`: Type[T]
+  var `type`: Type[T] = js.native
   /**
     * Additional set of instructions specific to view query processing. This could be seen as a
     * set of instructions to be inserted into the template function.
     */
-  var viewQuery: js.UndefOr[ViewQueriesFunction[T] | Null] = js.undefined
+  var viewQuery: js.UndefOr[ViewQueriesFunction[T] | Null] = js.native
 }
 
 object ContentQueries {
   @scala.inline
-  def apply[T](
-    `type`: Type[T],
-    contentQueries: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit = null,
-    exportAs: js.Array[String] = null,
-    features: js.Array[DirectiveDefFeature] = null,
-    hostAttrs: TAttributes = null,
-    hostBindings: (/* rf */ ɵRenderFlags, T) => Unit = null,
-    hostVars: js.UndefOr[Double] = js.undefined,
-    inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? string | [string, string] | undefined}
-    */ typings.angularCore.angularCoreStrings.ContentQueries with TopLevel[js.Any] = null,
-    outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P_1 in keyof T ]:? string | undefined}
-    */ typings.angularCore.angularCoreStrings.ContentQueries with TopLevel[js.Any] = null,
-    selectors: ɵCssSelectorList = null,
-    viewQuery: js.UndefOr[Null | ((/* rf */ ɵRenderFlags, T) => Unit)] = js.undefined
-  ): ContentQueries[T] = {
+  def apply[T](`type`: Type[T]): ContentQueries[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (contentQueries != null) __obj.updateDynamic("contentQueries")(js.Any.fromFunction3(contentQueries))
-    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs.asInstanceOf[js.Any])
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (hostAttrs != null) __obj.updateDynamic("hostAttrs")(hostAttrs.asInstanceOf[js.Any])
-    if (hostBindings != null) __obj.updateDynamic("hostBindings")(js.Any.fromFunction2(hostBindings))
-    if (!js.isUndefined(hostVars)) __obj.updateDynamic("hostVars")(hostVars.get.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewQuery)) __obj.updateDynamic("viewQuery")(if (viewQuery != null) js.Any.fromFunction2(viewQuery.asInstanceOf[(/* rf */ ɵRenderFlags, T) => Unit]) else null)
     __obj.asInstanceOf[ContentQueries[T]]
   }
+  @scala.inline
+  implicit class ContentQueriesOps[Self <: ContentQueries[_], T] (val x: Self with ContentQueries[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: Type[T]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentQueries(value: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit): Self = this.set("contentQueries", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteContentQueries: Self = this.set("contentQueries", js.undefined)
+    @scala.inline
+    def setExportAsVarargs(value: String*): Self = this.set("exportAs", js.Array(value :_*))
+    @scala.inline
+    def setExportAs(value: js.Array[String]): Self = this.set("exportAs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportAs: Self = this.set("exportAs", js.undefined)
+    @scala.inline
+    def setFeaturesVarargs(value: DirectiveDefFeature*): Self = this.set("features", js.Array(value :_*))
+    @scala.inline
+    def setFeatures(value: js.Array[DirectiveDefFeature]): Self = this.set("features", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatures: Self = this.set("features", js.undefined)
+    @scala.inline
+    def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = this.set("hostAttrs", js.Array(value :_*))
+    @scala.inline
+    def setHostAttrs(value: TAttributes): Self = this.set("hostAttrs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostAttrs: Self = this.set("hostAttrs", js.undefined)
+    @scala.inline
+    def setHostBindings(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = this.set("hostBindings", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHostBindings: Self = this.set("hostBindings", js.undefined)
+    @scala.inline
+    def setHostVars(value: Double): Self = this.set("hostVars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostVars: Self = this.set("hostVars", js.undefined)
+    @scala.inline
+    def setInputs(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof T ]:? string | [string, string] | undefined}
+      */ typings.angularCore.angularCoreStrings.ContentQueries with TopLevel[js.Any]
+    ): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputs: Self = this.set("inputs", js.undefined)
+    @scala.inline
+    def setOutputs(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P_1 in keyof T ]:? string | undefined}
+      */ typings.angularCore.angularCoreStrings.ContentQueries with TopLevel[js.Any]
+    ): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    @scala.inline
+    def setSelectorsVarargs(value: CssSelector*): Self = this.set("selectors", js.Array(value :_*))
+    @scala.inline
+    def setSelectors(value: ɵCssSelectorList): Self = this.set("selectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectors: Self = this.set("selectors", js.undefined)
+    @scala.inline
+    def setViewQuery(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = this.set("viewQuery", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteViewQuery: Self = this.set("viewQuery", js.undefined)
+    @scala.inline
+    def setViewQueryNull: Self = this.set("viewQuery", null)
+  }
+  
 }
 

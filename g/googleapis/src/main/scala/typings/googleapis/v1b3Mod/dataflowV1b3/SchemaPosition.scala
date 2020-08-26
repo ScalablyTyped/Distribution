@@ -41,22 +41,46 @@ trait SchemaPosition extends js.Object {
 
 object SchemaPosition {
   @scala.inline
-  def apply(
-    byteOffset: String = null,
-    concatPosition: SchemaConcatPosition = null,
-    end: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    recordIndex: String = null,
-    shufflePosition: String = null
-  ): SchemaPosition = {
+  def apply(): SchemaPosition = {
     val __obj = js.Dynamic.literal()
-    if (byteOffset != null) __obj.updateDynamic("byteOffset")(byteOffset.asInstanceOf[js.Any])
-    if (concatPosition != null) __obj.updateDynamic("concatPosition")(concatPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex.asInstanceOf[js.Any])
-    if (shufflePosition != null) __obj.updateDynamic("shufflePosition")(shufflePosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPosition]
   }
+  @scala.inline
+  implicit class SchemaPositionOps[Self <: SchemaPosition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setByteOffset(value: String): Self = this.set("byteOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByteOffset: Self = this.set("byteOffset", js.undefined)
+    @scala.inline
+    def setConcatPosition(value: SchemaConcatPosition): Self = this.set("concatPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConcatPosition: Self = this.set("concatPosition", js.undefined)
+    @scala.inline
+    def setEnd(value: Boolean): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setRecordIndex(value: String): Self = this.set("recordIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordIndex: Self = this.set("recordIndex", js.undefined)
+    @scala.inline
+    def setShufflePosition(value: String): Self = this.set("shufflePosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShufflePosition: Self = this.set("shufflePosition", js.undefined)
+  }
+  
 }
 

@@ -18,10 +18,28 @@ trait GetObjectRequest extends js.Object {
 
 object GetObjectRequest {
   @scala.inline
-  def apply(Path: PathNaming, Range: RangePattern = null): GetObjectRequest = {
+  def apply(Path: PathNaming): GetObjectRequest = {
     val __obj = js.Dynamic.literal(Path = Path.asInstanceOf[js.Any])
-    if (Range != null) __obj.updateDynamic("Range")(Range.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectRequest]
   }
+  @scala.inline
+  implicit class GetObjectRequestOps[Self <: GetObjectRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: PathNaming): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRange(value: RangePattern): Self = this.set("Range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("Range", js.undefined)
+  }
+  
 }
 

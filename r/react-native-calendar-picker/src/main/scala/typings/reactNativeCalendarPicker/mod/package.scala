@@ -5,6 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
+  type CustomDatesStylesFunc = js.Function1[
+    /* date */ typings.moment.mod.Moment, 
+    typings.reactNativeCalendarPicker.anon.ContainerStyle
+  ]
+  type CustomDayHeaderStylesFunc = js.Function1[
+    /* date */ typings.reactNativeCalendarPicker.mod.CustomDayHeaderStylesFuncDateArg, 
+    typings.reactNativeCalendarPicker.anon.Style
+  ]
   type DateChangedCallback = js.Function2[
     /* date */ typings.moment.mod.Moment, 
     /* type */ js.UndefOr[

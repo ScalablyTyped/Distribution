@@ -42,7 +42,11 @@ trait RestlerStatic extends js.Object {
     * @return {RestlerResult}  Result.
     */
   def json(url: String): RestlerResult = js.native
+  def json(url: String, data: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], method: String): RestlerResult = js.native
+  def json(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions): RestlerResult = js.native
+  def json(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions, method: String): RestlerResult = js.native
   def json(url: String, data: js.Any): RestlerResult = js.native
+  def json(url: String, data: js.Any, options: js.UndefOr[scala.Nothing], method: String): RestlerResult = js.native
   def json(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
   def json(url: String, data: js.Any, options: RestlerOptions, method: String): RestlerResult = js.native
   /**
@@ -61,6 +65,7 @@ trait RestlerStatic extends js.Object {
     * @return {RestlerResult}  Result.
     */
   def patchJson(url: String): RestlerResult = js.native
+  def patchJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions): RestlerResult = js.native
   def patchJson(url: String, data: js.Any): RestlerResult = js.native
   def patchJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
   /**
@@ -79,6 +84,7 @@ trait RestlerStatic extends js.Object {
     * @return {RestlerResult}  Result.
     */
   def postJson(url: String): RestlerResult = js.native
+  def postJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions): RestlerResult = js.native
   def postJson(url: String, data: js.Any): RestlerResult = js.native
   def postJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
   /**
@@ -97,6 +103,7 @@ trait RestlerStatic extends js.Object {
     * @return {RestlerResult}  Result.
     */
   def putJson(url: String): RestlerResult = js.native
+  def putJson(url: String, data: js.UndefOr[scala.Nothing], options: RestlerOptions): RestlerResult = js.native
   def putJson(url: String, data: js.Any): RestlerResult = js.native
   def putJson(url: String, data: js.Any, options: RestlerOptions): RestlerResult = js.native
   /**

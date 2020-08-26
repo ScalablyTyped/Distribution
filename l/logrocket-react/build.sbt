@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "logrocket-react"
-version := "3.0-dt-20190628Z-e24e3b"
-scalaVersion := "2.13.2"
+version := "3.0-dt-20190628Z-002936"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

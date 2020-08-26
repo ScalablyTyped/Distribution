@@ -12,7 +12,7 @@ jQuery matchers and fixture loader for Jasmine framework
 | Keywords           | jasmine, jquery |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 2865149 |
+| # downloads        | 2973658 |
 | # stars            | 3 |
 
 ## Links

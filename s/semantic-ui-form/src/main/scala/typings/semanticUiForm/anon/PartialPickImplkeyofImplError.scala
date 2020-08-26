@@ -6,21 +6,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<std.Pick<semantic-ui-form.SemanticUI.Form.TemplatesSettings._Impl, keyof semantic-ui-form.SemanticUI.Form.TemplatesSettings._Impl>> */
+@js.native
 trait PartialPickImplkeyofImplError extends js.Object {
-  var error: js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]] = js.undefined
-  var prompt: js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]] = js.native
+  var prompt: js.UndefOr[js.Function1[/* errors */ js.Array[String], JQuery]] = js.native
 }
 
 object PartialPickImplkeyofImplError {
   @scala.inline
-  def apply(
-    error: /* errors */ js.Array[String] => JQuery = null,
-    prompt: /* errors */ js.Array[String] => JQuery = null
-  ): PartialPickImplkeyofImplError = {
+  def apply(): PartialPickImplkeyofImplError = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (prompt != null) __obj.updateDynamic("prompt")(js.Any.fromFunction1(prompt))
     __obj.asInstanceOf[PartialPickImplkeyofImplError]
   }
+  @scala.inline
+  implicit class PartialPickImplkeyofImplErrorOps[Self <: PartialPickImplkeyofImplError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: /* errors */ js.Array[String] => JQuery): Self = this.set("error", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setPrompt(value: /* errors */ js.Array[String] => JQuery): Self = this.set("prompt", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePrompt: Self = this.set("prompt", js.undefined)
+  }
+  
 }
 

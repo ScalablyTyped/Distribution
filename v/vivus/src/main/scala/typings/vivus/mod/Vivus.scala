@@ -35,6 +35,7 @@ trait Vivus extends js.Object {
     * (default: `1`)
     */
   def play(): this.type = js.native
+  def play(speed: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def play(speed: Double): this.type = js.native
   def play(speed: Double, callback: js.Function0[Unit]): this.type = js.native
   /**

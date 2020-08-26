@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorFirstMod extends js.Object {
   def first[T, D](): js.Any = js.native
+  def first[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): js.Any = js.native
   def first[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 

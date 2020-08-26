@@ -10,9 +10,9 @@ Testing with karma using browserstack following open-wc recommendations
 | ------------------ | :-------------: |
 | Full name          | @open-wc/testing-karma-bs |
 | Keywords           | testing, karma, browserstack, config |
-| # releases         | 167 |
+| # releases         | 170 |
 | # dependents       | 0 |
-| # downloads        | 55775 |
+| # downloads        | 59907 |
 | # stars            | 0 |
 
 ## Links

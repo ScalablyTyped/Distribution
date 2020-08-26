@@ -12,7 +12,7 @@ A Node.js library for the new Vimeo API.
 | Keywords           | vimeo |
 | # releases         | 6 |
 | # dependents       | 15 |
-| # downloads        | 115324 |
+| # downloads        | 134098 |
 | # stars            | 6 |
 
 ## Links

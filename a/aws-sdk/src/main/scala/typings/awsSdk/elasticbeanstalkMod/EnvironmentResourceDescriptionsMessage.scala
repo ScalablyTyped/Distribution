@@ -14,10 +14,26 @@ trait EnvironmentResourceDescriptionsMessage extends js.Object {
 
 object EnvironmentResourceDescriptionsMessage {
   @scala.inline
-  def apply(EnvironmentResources: EnvironmentResourceDescription = null): EnvironmentResourceDescriptionsMessage = {
+  def apply(): EnvironmentResourceDescriptionsMessage = {
     val __obj = js.Dynamic.literal()
-    if (EnvironmentResources != null) __obj.updateDynamic("EnvironmentResources")(EnvironmentResources.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentResourceDescriptionsMessage]
   }
+  @scala.inline
+  implicit class EnvironmentResourceDescriptionsMessageOps[Self <: EnvironmentResourceDescriptionsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnvironmentResources(value: EnvironmentResourceDescription): Self = this.set("EnvironmentResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentResources: Self = this.set("EnvironmentResources", js.undefined)
+  }
+  
 }
 

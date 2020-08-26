@@ -20,6 +20,7 @@ object util extends js.Object {
     def isGeometryChanged(): Boolean = js.native
     def isIdentity(): Boolean = js.native
     def reflect(x0: Double, y0: Double): AffineTransformation = js.native
+    def reflect(x0: Double, y0: Double, x1: js.UndefOr[scala.Nothing], y1: Double): AffineTransformation = js.native
     def reflect(x0: Double, y0: Double, x1: Double): AffineTransformation = js.native
     def reflect(x0: Double, y0: Double, x1: Double, y1: Double): AffineTransformation = js.native
     def rotate(sinTheta: Double, cosTheta: Double): AffineTransformation = js.native

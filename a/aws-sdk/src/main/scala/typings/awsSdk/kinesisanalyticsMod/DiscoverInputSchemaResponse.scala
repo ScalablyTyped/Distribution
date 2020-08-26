@@ -26,18 +26,44 @@ trait DiscoverInputSchemaResponse extends js.Object {
 
 object DiscoverInputSchemaResponse {
   @scala.inline
-  def apply(
-    InputSchema: SourceSchema = null,
-    ParsedInputRecords: ParsedInputRecords = null,
-    ProcessedInputRecords: ProcessedInputRecords = null,
-    RawInputRecords: RawInputRecords = null
-  ): DiscoverInputSchemaResponse = {
+  def apply(): DiscoverInputSchemaResponse = {
     val __obj = js.Dynamic.literal()
-    if (InputSchema != null) __obj.updateDynamic("InputSchema")(InputSchema.asInstanceOf[js.Any])
-    if (ParsedInputRecords != null) __obj.updateDynamic("ParsedInputRecords")(ParsedInputRecords.asInstanceOf[js.Any])
-    if (ProcessedInputRecords != null) __obj.updateDynamic("ProcessedInputRecords")(ProcessedInputRecords.asInstanceOf[js.Any])
-    if (RawInputRecords != null) __obj.updateDynamic("RawInputRecords")(RawInputRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscoverInputSchemaResponse]
   }
+  @scala.inline
+  implicit class DiscoverInputSchemaResponseOps[Self <: DiscoverInputSchemaResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputSchema(value: SourceSchema): Self = this.set("InputSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputSchema: Self = this.set("InputSchema", js.undefined)
+    @scala.inline
+    def setParsedInputRecordsVarargs(value: ParsedInputRecord*): Self = this.set("ParsedInputRecords", js.Array(value :_*))
+    @scala.inline
+    def setParsedInputRecords(value: ParsedInputRecords): Self = this.set("ParsedInputRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParsedInputRecords: Self = this.set("ParsedInputRecords", js.undefined)
+    @scala.inline
+    def setProcessedInputRecordsVarargs(value: ProcessedInputRecord*): Self = this.set("ProcessedInputRecords", js.Array(value :_*))
+    @scala.inline
+    def setProcessedInputRecords(value: ProcessedInputRecords): Self = this.set("ProcessedInputRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessedInputRecords: Self = this.set("ProcessedInputRecords", js.undefined)
+    @scala.inline
+    def setRawInputRecordsVarargs(value: RawInputRecord*): Self = this.set("RawInputRecords", js.Array(value :_*))
+    @scala.inline
+    def setRawInputRecords(value: RawInputRecords): Self = this.set("RawInputRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawInputRecords: Self = this.set("RawInputRecords", js.undefined)
+  }
+  
 }
 

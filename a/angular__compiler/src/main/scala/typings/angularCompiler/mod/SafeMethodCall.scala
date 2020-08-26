@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "SafeMethodCall")
 @js.native
 class SafeMethodCall protected ()
-  extends typings.angularCompiler.publicApiMod.SafeMethodCall {
+  extends typings.angularCompiler.compilerMod.SafeMethodCall {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

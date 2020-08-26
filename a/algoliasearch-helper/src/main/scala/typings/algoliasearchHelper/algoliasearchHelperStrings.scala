@@ -25,16 +25,22 @@ object algoliasearchHelperStrings {
   sealed trait LessthansignEqualssign extends Operator
   
   @js.native
-  sealed trait ManagedParameters extends js.Object
+  sealed trait all extends js.Object
   
   @js.native
   sealed trait allOptional extends js.Object
+  
+  @js.native
+  sealed trait alpha extends js.Object
   
   @js.native
   sealed trait attribute extends js.Object
   
   @js.native
   sealed trait change extends js.Object
+  
+  @js.native
+  sealed trait count extends js.Object
   
   @js.native
   sealed trait disjunctive extends js.Object
@@ -142,13 +148,17 @@ object algoliasearchHelperStrings {
   @scala.inline
   def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   @scala.inline
-  def ManagedParameters: ManagedParameters = "ManagedParameters".asInstanceOf[ManagedParameters]
+  def all: all = "all".asInstanceOf[all]
   @scala.inline
   def allOptional: allOptional = "allOptional".asInstanceOf[allOptional]
+  @scala.inline
+  def alpha: alpha = "alpha".asInstanceOf[alpha]
   @scala.inline
   def attribute: attribute = "attribute".asInstanceOf[attribute]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
+  @scala.inline
+  def count: count = "count".asInstanceOf[count]
   @scala.inline
   def disjunctive: disjunctive = "disjunctive".asInstanceOf[disjunctive]
   @scala.inline

@@ -22,16 +22,34 @@ trait TransitGatewayRegistration extends js.Object {
 
 object TransitGatewayRegistration {
   @scala.inline
-  def apply(
-    GlobalNetworkId: String = null,
-    State: TransitGatewayRegistrationStateReason = null,
-    TransitGatewayArn: String = null
-  ): TransitGatewayRegistration = {
+  def apply(): TransitGatewayRegistration = {
     val __obj = js.Dynamic.literal()
-    if (GlobalNetworkId != null) __obj.updateDynamic("GlobalNetworkId")(GlobalNetworkId.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (TransitGatewayArn != null) __obj.updateDynamic("TransitGatewayArn")(TransitGatewayArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitGatewayRegistration]
   }
+  @scala.inline
+  implicit class TransitGatewayRegistrationOps[Self <: TransitGatewayRegistration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGlobalNetworkId(value: String): Self = this.set("GlobalNetworkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalNetworkId: Self = this.set("GlobalNetworkId", js.undefined)
+    @scala.inline
+    def setState(value: TransitGatewayRegistrationStateReason): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTransitGatewayArn(value: String): Self = this.set("TransitGatewayArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayArn: Self = this.set("TransitGatewayArn", js.undefined)
+  }
+  
 }
 

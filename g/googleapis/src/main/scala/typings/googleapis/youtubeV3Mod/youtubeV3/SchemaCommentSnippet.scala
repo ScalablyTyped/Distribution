@@ -86,40 +86,82 @@ trait SchemaCommentSnippet extends js.Object {
 
 object SchemaCommentSnippet {
   @scala.inline
-  def apply(
-    authorChannelId: js.Any = null,
-    authorChannelUrl: String = null,
-    authorDisplayName: String = null,
-    authorProfileImageUrl: String = null,
-    canRate: js.UndefOr[Boolean] = js.undefined,
-    channelId: String = null,
-    likeCount: js.UndefOr[Double] = js.undefined,
-    moderationStatus: String = null,
-    parentId: String = null,
-    publishedAt: String = null,
-    textDisplay: String = null,
-    textOriginal: String = null,
-    updatedAt: String = null,
-    videoId: String = null,
-    viewerRating: String = null
-  ): SchemaCommentSnippet = {
+  def apply(): SchemaCommentSnippet = {
     val __obj = js.Dynamic.literal()
-    if (authorChannelId != null) __obj.updateDynamic("authorChannelId")(authorChannelId.asInstanceOf[js.Any])
-    if (authorChannelUrl != null) __obj.updateDynamic("authorChannelUrl")(authorChannelUrl.asInstanceOf[js.Any])
-    if (authorDisplayName != null) __obj.updateDynamic("authorDisplayName")(authorDisplayName.asInstanceOf[js.Any])
-    if (authorProfileImageUrl != null) __obj.updateDynamic("authorProfileImageUrl")(authorProfileImageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(canRate)) __obj.updateDynamic("canRate")(canRate.get.asInstanceOf[js.Any])
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (!js.isUndefined(likeCount)) __obj.updateDynamic("likeCount")(likeCount.get.asInstanceOf[js.Any])
-    if (moderationStatus != null) __obj.updateDynamic("moderationStatus")(moderationStatus.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
-    if (textDisplay != null) __obj.updateDynamic("textDisplay")(textDisplay.asInstanceOf[js.Any])
-    if (textOriginal != null) __obj.updateDynamic("textOriginal")(textOriginal.asInstanceOf[js.Any])
-    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
-    if (viewerRating != null) __obj.updateDynamic("viewerRating")(viewerRating.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCommentSnippet]
   }
+  @scala.inline
+  implicit class SchemaCommentSnippetOps[Self <: SchemaCommentSnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorChannelId(value: js.Any): Self = this.set("authorChannelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorChannelId: Self = this.set("authorChannelId", js.undefined)
+    @scala.inline
+    def setAuthorChannelUrl(value: String): Self = this.set("authorChannelUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorChannelUrl: Self = this.set("authorChannelUrl", js.undefined)
+    @scala.inline
+    def setAuthorDisplayName(value: String): Self = this.set("authorDisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorDisplayName: Self = this.set("authorDisplayName", js.undefined)
+    @scala.inline
+    def setAuthorProfileImageUrl(value: String): Self = this.set("authorProfileImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorProfileImageUrl: Self = this.set("authorProfileImageUrl", js.undefined)
+    @scala.inline
+    def setCanRate(value: Boolean): Self = this.set("canRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanRate: Self = this.set("canRate", js.undefined)
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setLikeCount(value: Double): Self = this.set("likeCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLikeCount: Self = this.set("likeCount", js.undefined)
+    @scala.inline
+    def setModerationStatus(value: String): Self = this.set("moderationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModerationStatus: Self = this.set("moderationStatus", js.undefined)
+    @scala.inline
+    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("parentId", js.undefined)
+    @scala.inline
+    def setPublishedAt(value: String): Self = this.set("publishedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishedAt: Self = this.set("publishedAt", js.undefined)
+    @scala.inline
+    def setTextDisplay(value: String): Self = this.set("textDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextDisplay: Self = this.set("textDisplay", js.undefined)
+    @scala.inline
+    def setTextOriginal(value: String): Self = this.set("textOriginal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextOriginal: Self = this.set("textOriginal", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: String): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+    @scala.inline
+    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoId: Self = this.set("videoId", js.undefined)
+    @scala.inline
+    def setViewerRating(value: String): Self = this.set("viewerRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewerRating: Self = this.set("viewerRating", js.undefined)
+  }
+  
 }
 

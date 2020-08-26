@@ -9,153 +9,266 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReactNativeInputSpinnerProps extends js.Object {
-  var activeOpacity: js.UndefOr[Double] = js.undefined
-  var append: js.UndefOr[ReactElement] = js.undefined
-  var arrows: js.UndefOr[Boolean] = js.undefined
-  var background: js.UndefOr[String] = js.undefined
-  var buttonFontFamily: js.UndefOr[String] = js.undefined
-  var buttonFontSize: js.UndefOr[Double] = js.undefined
-  var buttonLeftDisabled: js.UndefOr[Boolean] = js.undefined
-  var buttonLeftImage: js.UndefOr[ReactElement] = js.undefined
-  var buttonLeftText: js.UndefOr[String] = js.undefined
-  var buttonPressLeftImage: js.UndefOr[ReactElement] = js.undefined
-  var buttonPressRightImage: js.UndefOr[ReactElement] = js.undefined
-  var buttonPressStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var buttonRightDisabled: js.UndefOr[Boolean] = js.undefined
-  var buttonRightImage: js.UndefOr[ReactElement] = js.undefined
-  var buttonRightText: js.UndefOr[String] = js.undefined
-  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var buttonTextColor: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var colorLeft: js.UndefOr[String] = js.undefined
-  var colorMax: js.UndefOr[String] = js.undefined
-  var colorMin: js.UndefOr[String] = js.undefined
-  var colorPress: js.UndefOr[String] = js.undefined
-  var colorRight: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var editable: js.UndefOr[Boolean] = js.undefined
-  var fontFamily: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[String | Double] = js.undefined
-  var inputStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var max: js.UndefOr[String | Double] = js.undefined
-  var min: js.UndefOr[String | Double] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* val */ js.UndefOr[js.Any], _]] = js.undefined
-  var onDecrease: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.undefined
-  var onIncrease: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.undefined
-  var onMax: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.undefined
-  var onMin: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.undefined
-  var precision: js.UndefOr[Double] = js.undefined
-  var prepend: js.UndefOr[ReactElement] = js.undefined
-  var rounded: js.UndefOr[Boolean] = js.undefined
-  var showBorder: js.UndefOr[Boolean] = js.undefined
-  var step: js.UndefOr[String | Double] = js.undefined
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var textColor: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[int | float] = js.undefined
-  var value: js.UndefOr[String | Double] = js.undefined
-  var width: js.UndefOr[String | Double] = js.undefined
+  var activeOpacity: js.UndefOr[Double] = js.native
+  var append: js.UndefOr[ReactElement] = js.native
+  var arrows: js.UndefOr[Boolean] = js.native
+  var background: js.UndefOr[String] = js.native
+  var buttonFontFamily: js.UndefOr[String] = js.native
+  var buttonFontSize: js.UndefOr[Double] = js.native
+  var buttonLeftDisabled: js.UndefOr[Boolean] = js.native
+  var buttonLeftImage: js.UndefOr[ReactElement] = js.native
+  var buttonLeftText: js.UndefOr[String] = js.native
+  var buttonPressLeftImage: js.UndefOr[ReactElement] = js.native
+  var buttonPressRightImage: js.UndefOr[ReactElement] = js.native
+  var buttonPressStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var buttonRightDisabled: js.UndefOr[Boolean] = js.native
+  var buttonRightImage: js.UndefOr[ReactElement] = js.native
+  var buttonRightText: js.UndefOr[String] = js.native
+  var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var buttonTextColor: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.native
+  var colorLeft: js.UndefOr[String] = js.native
+  var colorMax: js.UndefOr[String] = js.native
+  var colorMin: js.UndefOr[String] = js.native
+  var colorPress: js.UndefOr[String] = js.native
+  var colorRight: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.native
+  var fontFamily: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[String | Double] = js.native
+  var inputStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var max: js.UndefOr[String | Double] = js.native
+  var min: js.UndefOr[String | Double] = js.native
+  var onChange: js.UndefOr[js.Function1[/* val */ js.UndefOr[js.Any], _]] = js.native
+  var onDecrease: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.native
+  var onIncrease: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.native
+  var onMax: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.native
+  var onMin: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.native
+  var precision: js.UndefOr[Double] = js.native
+  var prepend: js.UndefOr[ReactElement] = js.native
+  var rounded: js.UndefOr[Boolean] = js.native
+  var showBorder: js.UndefOr[Boolean] = js.native
+  var step: js.UndefOr[String | Double] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var textColor: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[int | float] = js.native
+  var value: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.native
 }
 
 object ReactNativeInputSpinnerProps {
   @scala.inline
-  def apply(
-    activeOpacity: js.UndefOr[Double] = js.undefined,
-    append: ReactElement = null,
-    arrows: js.UndefOr[Boolean] = js.undefined,
-    background: String = null,
-    buttonFontFamily: String = null,
-    buttonFontSize: js.UndefOr[Double] = js.undefined,
-    buttonLeftDisabled: js.UndefOr[Boolean] = js.undefined,
-    buttonLeftImage: ReactElement = null,
-    buttonLeftText: String = null,
-    buttonPressLeftImage: ReactElement = null,
-    buttonPressRightImage: ReactElement = null,
-    buttonPressStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    buttonRightDisabled: js.UndefOr[Boolean] = js.undefined,
-    buttonRightImage: ReactElement = null,
-    buttonRightText: String = null,
-    buttonStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    buttonTextColor: String = null,
-    color: String = null,
-    colorLeft: String = null,
-    colorMax: String = null,
-    colorMin: String = null,
-    colorPress: String = null,
-    colorRight: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    fontFamily: String = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    height: String | Double = null,
-    inputStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    max: String | Double = null,
-    min: String | Double = null,
-    onChange: /* val */ js.UndefOr[js.Any] => _ = null,
-    onDecrease: /* val */ js.Any => _ = null,
-    onIncrease: /* val */ js.Any => _ = null,
-    onMax: /* val */ js.Any => _ = null,
-    onMin: /* val */ js.Any => _ = null,
-    precision: js.UndefOr[Double] = js.undefined,
-    prepend: ReactElement = null,
-    rounded: js.UndefOr[Boolean] = js.undefined,
-    showBorder: js.UndefOr[Boolean] = js.undefined,
-    step: String | Double = null,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    textColor: String = null,
-    `type`: int | float = null,
-    value: String | Double = null,
-    width: String | Double = null
-  ): ReactNativeInputSpinnerProps = {
+  def apply(): ReactNativeInputSpinnerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeOpacity)) __obj.updateDynamic("activeOpacity")(activeOpacity.get.asInstanceOf[js.Any])
-    if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows.get.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (buttonFontFamily != null) __obj.updateDynamic("buttonFontFamily")(buttonFontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonFontSize)) __obj.updateDynamic("buttonFontSize")(buttonFontSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonLeftDisabled)) __obj.updateDynamic("buttonLeftDisabled")(buttonLeftDisabled.get.asInstanceOf[js.Any])
-    if (buttonLeftImage != null) __obj.updateDynamic("buttonLeftImage")(buttonLeftImage.asInstanceOf[js.Any])
-    if (buttonLeftText != null) __obj.updateDynamic("buttonLeftText")(buttonLeftText.asInstanceOf[js.Any])
-    if (buttonPressLeftImage != null) __obj.updateDynamic("buttonPressLeftImage")(buttonPressLeftImage.asInstanceOf[js.Any])
-    if (buttonPressRightImage != null) __obj.updateDynamic("buttonPressRightImage")(buttonPressRightImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonPressStyle)) __obj.updateDynamic("buttonPressStyle")(buttonPressStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonRightDisabled)) __obj.updateDynamic("buttonRightDisabled")(buttonRightDisabled.get.asInstanceOf[js.Any])
-    if (buttonRightImage != null) __obj.updateDynamic("buttonRightImage")(buttonRightImage.asInstanceOf[js.Any])
-    if (buttonRightText != null) __obj.updateDynamic("buttonRightText")(buttonRightText.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonStyle)) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
-    if (buttonTextColor != null) __obj.updateDynamic("buttonTextColor")(buttonTextColor.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorLeft != null) __obj.updateDynamic("colorLeft")(colorLeft.asInstanceOf[js.Any])
-    if (colorMax != null) __obj.updateDynamic("colorMax")(colorMax.asInstanceOf[js.Any])
-    if (colorMin != null) __obj.updateDynamic("colorMin")(colorMin.asInstanceOf[js.Any])
-    if (colorPress != null) __obj.updateDynamic("colorPress")(colorPress.asInstanceOf[js.Any])
-    if (colorRight != null) __obj.updateDynamic("colorRight")(colorRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputStyle)) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onDecrease != null) __obj.updateDynamic("onDecrease")(js.Any.fromFunction1(onDecrease))
-    if (onIncrease != null) __obj.updateDynamic("onIncrease")(js.Any.fromFunction1(onIncrease))
-    if (onMax != null) __obj.updateDynamic("onMax")(js.Any.fromFunction1(onMax))
-    if (onMin != null) __obj.updateDynamic("onMin")(js.Any.fromFunction1(onMin))
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (prepend != null) __obj.updateDynamic("prepend")(prepend.asInstanceOf[js.Any])
-    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBorder)) __obj.updateDynamic("showBorder")(showBorder.get.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactNativeInputSpinnerProps]
   }
+  @scala.inline
+  implicit class ReactNativeInputSpinnerPropsOps[Self <: ReactNativeInputSpinnerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveOpacity(value: Double): Self = this.set("activeOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveOpacity: Self = this.set("activeOpacity", js.undefined)
+    @scala.inline
+    def setAppend(value: ReactElement): Self = this.set("append", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppend: Self = this.set("append", js.undefined)
+    @scala.inline
+    def setArrows(value: Boolean): Self = this.set("arrows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrows: Self = this.set("arrows", js.undefined)
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setButtonFontFamily(value: String): Self = this.set("buttonFontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonFontFamily: Self = this.set("buttonFontFamily", js.undefined)
+    @scala.inline
+    def setButtonFontSize(value: Double): Self = this.set("buttonFontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonFontSize: Self = this.set("buttonFontSize", js.undefined)
+    @scala.inline
+    def setButtonLeftDisabled(value: Boolean): Self = this.set("buttonLeftDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonLeftDisabled: Self = this.set("buttonLeftDisabled", js.undefined)
+    @scala.inline
+    def setButtonLeftImage(value: ReactElement): Self = this.set("buttonLeftImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonLeftImage: Self = this.set("buttonLeftImage", js.undefined)
+    @scala.inline
+    def setButtonLeftText(value: String): Self = this.set("buttonLeftText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonLeftText: Self = this.set("buttonLeftText", js.undefined)
+    @scala.inline
+    def setButtonPressLeftImage(value: ReactElement): Self = this.set("buttonPressLeftImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonPressLeftImage: Self = this.set("buttonPressLeftImage", js.undefined)
+    @scala.inline
+    def setButtonPressRightImage(value: ReactElement): Self = this.set("buttonPressRightImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonPressRightImage: Self = this.set("buttonPressRightImage", js.undefined)
+    @scala.inline
+    def setButtonPressStyle(value: StyleProp[ViewStyle]): Self = this.set("buttonPressStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonPressStyle: Self = this.set("buttonPressStyle", js.undefined)
+    @scala.inline
+    def setButtonPressStyleNull: Self = this.set("buttonPressStyle", null)
+    @scala.inline
+    def setButtonRightDisabled(value: Boolean): Self = this.set("buttonRightDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonRightDisabled: Self = this.set("buttonRightDisabled", js.undefined)
+    @scala.inline
+    def setButtonRightImage(value: ReactElement): Self = this.set("buttonRightImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonRightImage: Self = this.set("buttonRightImage", js.undefined)
+    @scala.inline
+    def setButtonRightText(value: String): Self = this.set("buttonRightText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonRightText: Self = this.set("buttonRightText", js.undefined)
+    @scala.inline
+    def setButtonStyle(value: StyleProp[ViewStyle]): Self = this.set("buttonStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonStyle: Self = this.set("buttonStyle", js.undefined)
+    @scala.inline
+    def setButtonStyleNull: Self = this.set("buttonStyle", null)
+    @scala.inline
+    def setButtonTextColor(value: String): Self = this.set("buttonTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonTextColor: Self = this.set("buttonTextColor", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColorLeft(value: String): Self = this.set("colorLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorLeft: Self = this.set("colorLeft", js.undefined)
+    @scala.inline
+    def setColorMax(value: String): Self = this.set("colorMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorMax: Self = this.set("colorMax", js.undefined)
+    @scala.inline
+    def setColorMin(value: String): Self = this.set("colorMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorMin: Self = this.set("colorMin", js.undefined)
+    @scala.inline
+    def setColorPress(value: String): Self = this.set("colorPress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPress: Self = this.set("colorPress", js.undefined)
+    @scala.inline
+    def setColorRight(value: String): Self = this.set("colorRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorRight: Self = this.set("colorRight", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setInputStyle(value: StyleProp[ViewStyle]): Self = this.set("inputStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputStyle: Self = this.set("inputStyle", js.undefined)
+    @scala.inline
+    def setInputStyleNull: Self = this.set("inputStyle", null)
+    @scala.inline
+    def setMax(value: String | Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: String | Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* val */ js.UndefOr[js.Any] => _): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnDecrease(value: /* val */ js.Any => _): Self = this.set("onDecrease", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDecrease: Self = this.set("onDecrease", js.undefined)
+    @scala.inline
+    def setOnIncrease(value: /* val */ js.Any => _): Self = this.set("onIncrease", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIncrease: Self = this.set("onIncrease", js.undefined)
+    @scala.inline
+    def setOnMax(value: /* val */ js.Any => _): Self = this.set("onMax", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMax: Self = this.set("onMax", js.undefined)
+    @scala.inline
+    def setOnMin(value: /* val */ js.Any => _): Self = this.set("onMin", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMin: Self = this.set("onMin", js.undefined)
+    @scala.inline
+    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+    @scala.inline
+    def setPrepend(value: ReactElement): Self = this.set("prepend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrepend: Self = this.set("prepend", js.undefined)
+    @scala.inline
+    def setRounded(value: Boolean): Self = this.set("rounded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRounded: Self = this.set("rounded", js.undefined)
+    @scala.inline
+    def setShowBorder(value: Boolean): Self = this.set("showBorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowBorder: Self = this.set("showBorder", js.undefined)
+    @scala.inline
+    def setStep(value: String | Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleNull: Self = this.set("style", null)
+    @scala.inline
+    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    @scala.inline
+    def setType(value: int | float): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValue(value: String | Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

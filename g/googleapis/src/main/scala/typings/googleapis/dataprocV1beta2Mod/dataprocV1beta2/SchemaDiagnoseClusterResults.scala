@@ -18,10 +18,26 @@ trait SchemaDiagnoseClusterResults extends js.Object {
 
 object SchemaDiagnoseClusterResults {
   @scala.inline
-  def apply(outputUri: String = null): SchemaDiagnoseClusterResults = {
+  def apply(): SchemaDiagnoseClusterResults = {
     val __obj = js.Dynamic.literal()
-    if (outputUri != null) __obj.updateDynamic("outputUri")(outputUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDiagnoseClusterResults]
   }
+  @scala.inline
+  implicit class SchemaDiagnoseClusterResultsOps[Self <: SchemaDiagnoseClusterResults] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOutputUri(value: String): Self = this.set("outputUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputUri: Self = this.set("outputUri", js.undefined)
+  }
+  
 }
 

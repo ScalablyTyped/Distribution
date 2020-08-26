@@ -1,137 +1,111 @@
 package typings.reactNativeCalendars.mod
 
-import typings.react.mod.Component
-import typings.react.mod.ReactNode
-import typings.react.mod.SFC
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewStyle
-import typings.reactNativeCalendars.reactNativeCalendarsStrings.left
-import typings.reactNativeCalendars.reactNativeCalendarsStrings.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CalendarListBaseProps extends CalendarBaseProps {
   /**
     *  Set custom calendar heigth.
     */
-  var calendarHeight: js.UndefOr[Double] = js.undefined
+  var calendarHeight: js.UndefOr[Double] = js.native
   /**
     *  Set custom calendar width.
     */
-  var calendarWidth: js.UndefOr[Double] = js.undefined
+  var calendarWidth: js.UndefOr[Double] = js.native
   /**
     *  Max amount of months allowed to scroll to the future. Default = 50
     */
-  var futureScrollRange: js.UndefOr[Double] = js.undefined
+  var futureScrollRange: js.UndefOr[Double] = js.native
   /**
     *  Enable horizontal scrolling, default = false
     */
-  var horizontal: js.UndefOr[Boolean] = js.undefined
+  var horizontal: js.UndefOr[Boolean] = js.native
   /**
     *  Enable paging on horizontal, default = false
     */
-  var pagingEnabled: js.UndefOr[Boolean] = js.undefined
+  var pagingEnabled: js.UndefOr[Boolean] = js.native
   /**
     *  Max amount of months allowed to scroll to the past. Default = 50
     */
-  var pastScrollRange: js.UndefOr[Double] = js.undefined
+  var pastScrollRange: js.UndefOr[Double] = js.native
   /**
     *  Enable or disable scrolling of calendar list
     */
-  var scrollEnabled: js.UndefOr[Boolean] = js.undefined
+  var scrollEnabled: js.UndefOr[Boolean] = js.native
   /**
     *  When true, the calendar list scrolls to top when the status bar is tapped. Default = true
     */
-  var scrollsToTop: js.UndefOr[Boolean] = js.undefined
+  var scrollsToTop: js.UndefOr[Boolean] = js.native
   /**
     * Initially selected day
     */
-  var selected: js.UndefOr[String] = js.undefined
+  var selected: js.UndefOr[String] = js.native
   /**
     *  Enable or disable vertical scroll indicator. Default = false
     */
-  var showScrollIndicator: js.UndefOr[Boolean] = js.undefined
+  var showScrollIndicator: js.UndefOr[Boolean] = js.native
 }
 
 object CalendarListBaseProps {
   @scala.inline
-  def apply(
-    calendarHeight: js.UndefOr[Double] = js.undefined,
-    calendarWidth: js.UndefOr[Double] = js.undefined,
-    current: TCalendarDate = null,
-    dayComponent: (Component[DayComponentProps, js.Object, _]) | SFC[DayComponentProps] = null,
-    disableArrowLeft: js.UndefOr[Boolean] = js.undefined,
-    disableArrowRight: js.UndefOr[Boolean] = js.undefined,
-    disableMonthChange: js.UndefOr[Boolean] = js.undefined,
-    disabledByDefault: js.UndefOr[Boolean] = js.undefined,
-    displayLoadingIndicator: js.UndefOr[Boolean] = js.undefined,
-    firstDay: js.UndefOr[Double] = js.undefined,
-    futureScrollRange: js.UndefOr[Double] = js.undefined,
-    headerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    hideArrows: js.UndefOr[Boolean] = js.undefined,
-    hideDayNames: js.UndefOr[Boolean] = js.undefined,
-    hideExtraDays: js.UndefOr[Boolean] = js.undefined,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    maxDate: TCalendarDate = null,
-    minDate: TCalendarDate = null,
-    monthFormat: String = null,
-    onDayLongPress: /* date */ DateObject => Unit = null,
-    onDayPress: /* date */ DateObject => Unit = null,
-    onMonthChange: /* date */ DateObject => Unit = null,
-    onPressArrowLeft: /* substractMonth */ js.Function0[Unit] => Unit = null,
-    onPressArrowRight: /* addMonth */ js.Function0[Unit] => Unit = null,
-    onVisibleMonthsChange: /* months */ js.Array[DateObject] => Unit = null,
-    pagingEnabled: js.UndefOr[Boolean] = js.undefined,
-    pastScrollRange: js.UndefOr[Double] = js.undefined,
-    renderArrow: /* direction */ left | right => ReactNode = null,
-    scrollEnabled: js.UndefOr[Boolean] = js.undefined,
-    scrollsToTop: js.UndefOr[Boolean] = js.undefined,
-    selected: String = null,
-    showScrollIndicator: js.UndefOr[Boolean] = js.undefined,
-    showWeekNumbers: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    theme: CalendarTheme = null,
-    webAriaLevel: js.UndefOr[Double] = js.undefined
-  ): CalendarListBaseProps = {
+  def apply(): CalendarListBaseProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(calendarHeight)) __obj.updateDynamic("calendarHeight")(calendarHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(calendarWidth)) __obj.updateDynamic("calendarWidth")(calendarWidth.get.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (dayComponent != null) __obj.updateDynamic("dayComponent")(dayComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableArrowLeft)) __obj.updateDynamic("disableArrowLeft")(disableArrowLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableArrowRight)) __obj.updateDynamic("disableArrowRight")(disableArrowRight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMonthChange)) __obj.updateDynamic("disableMonthChange")(disableMonthChange.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabledByDefault)) __obj.updateDynamic("disabledByDefault")(disabledByDefault.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayLoadingIndicator)) __obj.updateDynamic("displayLoadingIndicator")(displayLoadingIndicator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstDay)) __obj.updateDynamic("firstDay")(firstDay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(futureScrollRange)) __obj.updateDynamic("futureScrollRange")(futureScrollRange.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(headerStyle)) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideArrows)) __obj.updateDynamic("hideArrows")(hideArrows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDayNames)) __obj.updateDynamic("hideDayNames")(hideDayNames.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideExtraDays)) __obj.updateDynamic("hideExtraDays")(hideExtraDays.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (monthFormat != null) __obj.updateDynamic("monthFormat")(monthFormat.asInstanceOf[js.Any])
-    if (onDayLongPress != null) __obj.updateDynamic("onDayLongPress")(js.Any.fromFunction1(onDayLongPress))
-    if (onDayPress != null) __obj.updateDynamic("onDayPress")(js.Any.fromFunction1(onDayPress))
-    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(js.Any.fromFunction1(onMonthChange))
-    if (onPressArrowLeft != null) __obj.updateDynamic("onPressArrowLeft")(js.Any.fromFunction1(onPressArrowLeft))
-    if (onPressArrowRight != null) __obj.updateDynamic("onPressArrowRight")(js.Any.fromFunction1(onPressArrowRight))
-    if (onVisibleMonthsChange != null) __obj.updateDynamic("onVisibleMonthsChange")(js.Any.fromFunction1(onVisibleMonthsChange))
-    if (!js.isUndefined(pagingEnabled)) __obj.updateDynamic("pagingEnabled")(pagingEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pastScrollRange)) __obj.updateDynamic("pastScrollRange")(pastScrollRange.get.asInstanceOf[js.Any])
-    if (renderArrow != null) __obj.updateDynamic("renderArrow")(js.Any.fromFunction1(renderArrow))
-    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollsToTop)) __obj.updateDynamic("scrollsToTop")(scrollsToTop.get.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (!js.isUndefined(showScrollIndicator)) __obj.updateDynamic("showScrollIndicator")(showScrollIndicator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(webAriaLevel)) __obj.updateDynamic("webAriaLevel")(webAriaLevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarListBaseProps]
   }
+  @scala.inline
+  implicit class CalendarListBasePropsOps[Self <: CalendarListBaseProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCalendarHeight(value: Double): Self = this.set("calendarHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendarHeight: Self = this.set("calendarHeight", js.undefined)
+    @scala.inline
+    def setCalendarWidth(value: Double): Self = this.set("calendarWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendarWidth: Self = this.set("calendarWidth", js.undefined)
+    @scala.inline
+    def setFutureScrollRange(value: Double): Self = this.set("futureScrollRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFutureScrollRange: Self = this.set("futureScrollRange", js.undefined)
+    @scala.inline
+    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setPagingEnabled(value: Boolean): Self = this.set("pagingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagingEnabled: Self = this.set("pagingEnabled", js.undefined)
+    @scala.inline
+    def setPastScrollRange(value: Double): Self = this.set("pastScrollRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePastScrollRange: Self = this.set("pastScrollRange", js.undefined)
+    @scala.inline
+    def setScrollEnabled(value: Boolean): Self = this.set("scrollEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollEnabled: Self = this.set("scrollEnabled", js.undefined)
+    @scala.inline
+    def setScrollsToTop(value: Boolean): Self = this.set("scrollsToTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollsToTop: Self = this.set("scrollsToTop", js.undefined)
+    @scala.inline
+    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setShowScrollIndicator(value: Boolean): Self = this.set("showScrollIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowScrollIndicator: Self = this.set("showScrollIndicator", js.undefined)
+  }
+  
 }
 

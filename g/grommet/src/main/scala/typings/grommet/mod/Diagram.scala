@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Diagram")
+@JSImport("grommet/es6", "Diagram")
 @js.native
 object Diagram extends TopLevel[FC[DiagramProps with SVGProps[SVGSVGElement]]]
 

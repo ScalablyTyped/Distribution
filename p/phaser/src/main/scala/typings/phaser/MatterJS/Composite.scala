@@ -14,5 +14,6 @@ import scala.scalajs.js.annotation._
   *
   * @class Composite
   */
+@js.native
 trait Composite extends js.Object
 

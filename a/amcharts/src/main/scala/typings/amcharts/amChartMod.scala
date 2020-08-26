@@ -243,42 +243,6 @@ object amChartMod extends js.Object {
       * Read-only. Indicates current version of a script.
       */
     var version: String = js.native
-    def addLabel(
-      x: String,
-      y: String,
-      text: String,
-      align: String,
-      size: js.UndefOr[Double],
-      color: js.UndefOr[String],
-      rotation: js.UndefOr[Double],
-      alpha: js.UndefOr[Double],
-      bold: js.UndefOr[Boolean],
-      url: js.UndefOr[String]
-    ): js.Any = js.native
-    def addLabel(
-      x: String,
-      y: Double,
-      text: String,
-      align: String,
-      size: js.UndefOr[Double],
-      color: js.UndefOr[String],
-      rotation: js.UndefOr[Double],
-      alpha: js.UndefOr[Double],
-      bold: js.UndefOr[Boolean],
-      url: js.UndefOr[String]
-    ): js.Any = js.native
-    def addLabel(
-      x: Double,
-      y: String,
-      text: String,
-      align: String,
-      size: js.UndefOr[Double],
-      color: js.UndefOr[String],
-      rotation: js.UndefOr[Double],
-      alpha: js.UndefOr[Double],
-      bold: js.UndefOr[Boolean],
-      url: js.UndefOr[String]
-    ): js.Any = js.native
     /**
       * Adds a label on a chart.
       * You can use it for labeling axes, adding chart title, etc. x and y coordinates can be set in
@@ -296,8 +260,8 @@ object amChartMod extends js.Object {
       * url - url
       */
     def addLabel(
-      x: Double,
-      y: Double,
+      x: Double | String,
+      y: Double | String,
       text: String,
       align: String,
       size: js.UndefOr[Double],

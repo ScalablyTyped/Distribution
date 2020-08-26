@@ -8,51 +8,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EpicEditorOptions extends js.Object {
-  var basePath: js.UndefOr[String] = js.undefined
-  var clientSideStorage: js.UndefOr[Boolean] = js.undefined
-  var container: js.UndefOr[js.Any] = js.undefined
-  var file: js.UndefOr[AutoSave] = js.undefined
-  var focusOnLoad: js.UndefOr[Boolean] = js.undefined
-  var localStorageName: js.UndefOr[String] = js.undefined
-  var parser: js.UndefOr[js.Any] = js.undefined
-  var shortcut: js.UndefOr[Fullscreen] = js.undefined
-  var string: js.UndefOr[ToggleEdit] = js.undefined
-  var textarea: js.UndefOr[js.Any] = js.undefined
-  var theme: js.UndefOr[Base] = js.undefined
-  var useNativeFullsreen: js.UndefOr[Boolean] = js.undefined
+  var basePath: js.UndefOr[String] = js.native
+  var clientSideStorage: js.UndefOr[Boolean] = js.native
+  var container: js.UndefOr[js.Any] = js.native
+  var file: js.UndefOr[AutoSave] = js.native
+  var focusOnLoad: js.UndefOr[Boolean] = js.native
+  var localStorageName: js.UndefOr[String] = js.native
+  var parser: js.UndefOr[js.Any] = js.native
+  var shortcut: js.UndefOr[Fullscreen] = js.native
+  var string: js.UndefOr[ToggleEdit] = js.native
+  var textarea: js.UndefOr[js.Any] = js.native
+  var theme: js.UndefOr[Base] = js.native
+  var useNativeFullsreen: js.UndefOr[Boolean] = js.native
 }
 
 object EpicEditorOptions {
   @scala.inline
-  def apply(
-    basePath: String = null,
-    clientSideStorage: js.UndefOr[Boolean] = js.undefined,
-    container: js.Any = null,
-    file: AutoSave = null,
-    focusOnLoad: js.UndefOr[Boolean] = js.undefined,
-    localStorageName: String = null,
-    parser: js.Any = null,
-    shortcut: Fullscreen = null,
-    string: ToggleEdit = null,
-    textarea: js.Any = null,
-    theme: Base = null,
-    useNativeFullsreen: js.UndefOr[Boolean] = js.undefined
-  ): EpicEditorOptions = {
+  def apply(): EpicEditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientSideStorage)) __obj.updateDynamic("clientSideStorage")(clientSideStorage.get.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusOnLoad)) __obj.updateDynamic("focusOnLoad")(focusOnLoad.get.asInstanceOf[js.Any])
-    if (localStorageName != null) __obj.updateDynamic("localStorageName")(localStorageName.asInstanceOf[js.Any])
-    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
-    if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut.asInstanceOf[js.Any])
-    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
-    if (textarea != null) __obj.updateDynamic("textarea")(textarea.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeFullsreen)) __obj.updateDynamic("useNativeFullsreen")(useNativeFullsreen.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EpicEditorOptions]
   }
+  @scala.inline
+  implicit class EpicEditorOptionsOps[Self <: EpicEditorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBasePath(value: String): Self = this.set("basePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasePath: Self = this.set("basePath", js.undefined)
+    @scala.inline
+    def setClientSideStorage(value: Boolean): Self = this.set("clientSideStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientSideStorage: Self = this.set("clientSideStorage", js.undefined)
+    @scala.inline
+    def setContainer(value: js.Any): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setFile(value: AutoSave): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+    @scala.inline
+    def setFocusOnLoad(value: Boolean): Self = this.set("focusOnLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusOnLoad: Self = this.set("focusOnLoad", js.undefined)
+    @scala.inline
+    def setLocalStorageName(value: String): Self = this.set("localStorageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalStorageName: Self = this.set("localStorageName", js.undefined)
+    @scala.inline
+    def setParser(value: js.Any): Self = this.set("parser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParser: Self = this.set("parser", js.undefined)
+    @scala.inline
+    def setShortcut(value: Fullscreen): Self = this.set("shortcut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortcut: Self = this.set("shortcut", js.undefined)
+    @scala.inline
+    def setString(value: ToggleEdit): Self = this.set("string", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteString: Self = this.set("string", js.undefined)
+    @scala.inline
+    def setTextarea(value: js.Any): Self = this.set("textarea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextarea: Self = this.set("textarea", js.undefined)
+    @scala.inline
+    def setTheme(value: Base): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setUseNativeFullsreen(value: Boolean): Self = this.set("useNativeFullsreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseNativeFullsreen: Self = this.set("useNativeFullsreen", js.undefined)
+  }
+  
 }
 

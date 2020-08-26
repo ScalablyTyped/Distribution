@@ -26,6 +26,7 @@ class ResourceColors protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaColors] = js.native
   def get(callback: BodyResponseCallback[SchemaColors]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaColors] = js.native
   def get(params: ParamsResourceColorsGet): GaxiosPromise[SchemaColors] = js.native
   def get(params: ParamsResourceColorsGet, callback: BodyResponseCallback[SchemaColors]): Unit = js.native
   def get(

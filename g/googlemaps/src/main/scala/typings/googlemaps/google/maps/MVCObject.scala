@@ -14,6 +14,7 @@ trait MVCObject extends js.Object {
   def addListener(eventName: String, handler: MVCEventHandler[this.type, js.Array[_]]): MapsEventListener = js.native
   /** Binds a View to a Model. */
   def bindTo(key: String, target: MVCObject): Unit = js.native
+  def bindTo(key: String, target: MVCObject, targetKey: js.UndefOr[scala.Nothing], noNotify: Boolean): Unit = js.native
   def bindTo(key: String, target: MVCObject, targetKey: String): Unit = js.native
   def bindTo(key: String, target: MVCObject, targetKey: String, noNotify: Boolean): Unit = js.native
   def changed(key: String): Unit = js.native

@@ -342,6 +342,9 @@ object exceljsStrings {
   sealed trait bottomRight extends js.Object
   
   @js.native
+  sealed trait cache extends js.Object
+  
+  @js.native
   sealed trait cellIs extends js.Object
   
   @js.native
@@ -432,6 +435,9 @@ object exceljsStrings {
   sealed trait downThenOver extends js.Object
   
   @js.native
+  sealed trait emit extends js.Object
+  
+  @js.native
   sealed trait equal
     extends CellIsOperators
        with DataValidationOperator
@@ -476,6 +482,9 @@ object exceljsStrings {
   
   @js.native
   sealed trait iconSet extends js.Object
+  
+  @js.native
+  sealed trait ignore extends js.Object
   
   @js.native
   sealed trait image extends js.Object
@@ -939,6 +948,8 @@ object exceljsStrings {
   @scala.inline
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   @scala.inline
+  def cache: cache = "cache".asInstanceOf[cache]
+  @scala.inline
   def cellIs: cellIs = "cellIs".asInstanceOf[cellIs]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
@@ -999,6 +1010,8 @@ object exceljsStrings {
   @scala.inline
   def downThenOver: downThenOver = "downThenOver".asInstanceOf[downThenOver]
   @scala.inline
+  def emit: emit = "emit".asInstanceOf[emit]
+  @scala.inline
   def equal: equal = "equal".asInstanceOf[equal]
   @scala.inline
   def expression: expression = "expression".asInstanceOf[expression]
@@ -1026,6 +1039,8 @@ object exceljsStrings {
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
   def iconSet: iconSet = "iconSet".asInstanceOf[iconSet]
+  @scala.inline
+  def ignore: ignore = "ignore".asInstanceOf[ignore]
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   @scala.inline

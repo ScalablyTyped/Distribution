@@ -23,11 +23,32 @@ trait SchemaFormAction extends js.Object {
 
 object SchemaFormAction {
   @scala.inline
-  def apply(actionMethodName: String = null, parameters: js.Array[SchemaActionParameter] = null): SchemaFormAction = {
+  def apply(): SchemaFormAction = {
     val __obj = js.Dynamic.literal()
-    if (actionMethodName != null) __obj.updateDynamic("actionMethodName")(actionMethodName.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFormAction]
   }
+  @scala.inline
+  implicit class SchemaFormActionOps[Self <: SchemaFormAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionMethodName(value: String): Self = this.set("actionMethodName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionMethodName: Self = this.set("actionMethodName", js.undefined)
+    @scala.inline
+    def setParametersVarargs(value: SchemaActionParameter*): Self = this.set("parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: js.Array[SchemaActionParameter]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+  }
+  
 }
 

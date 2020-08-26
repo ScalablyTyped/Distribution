@@ -38,9 +38,12 @@ class View protected () extends js.Object {
   def height(): Double = js.native
   def height(h: Double): this.type = js.native
   def hover(): this.type = js.native
+  def hover(hoverSet: js.UndefOr[scala.Nothing], leaveSet: EncodeEntryName): this.type = js.native
   def hover(hoverSet: EncodeEntryName): this.type = js.native
   def hover(hoverSet: EncodeEntryName, leaveSet: EncodeEntryName): this.type = js.native
   def initialize(): this.type = js.native
+  def initialize(container: js.UndefOr[scala.Nothing], bindContainer: String): this.type = js.native
+  def initialize(container: js.UndefOr[scala.Nothing], bindContainer: Element): this.type = js.native
   def initialize(container: String): this.type = js.native
   def initialize(container: String, bindContainer: String): this.type = js.native
   def initialize(container: String, bindContainer: Element): this.type = js.native
@@ -70,6 +73,11 @@ class View protected () extends js.Object {
   def run(): this.type = js.native
   def run(encode: String): this.type = js.native
   def runAfter(callback: js.Function1[/* view */ this.type, Unit]): this.type = js.native
+  def runAfter(
+    callback: js.Function1[/* view */ this.type, Unit],
+    enqueue: js.UndefOr[scala.Nothing],
+    priority: Double
+  ): this.type = js.native
   def runAfter(callback: js.Function1[/* view */ this.type, Unit], enqueue: Boolean): this.type = js.native
   def runAfter(callback: js.Function1[/* view */ this.type, Unit], enqueue: Boolean, priority: Double): this.type = js.native
   def runAsync(): js.Promise[View] = js.native
@@ -78,6 +86,7 @@ class View protected () extends js.Object {
   def signal(name: String): SignalValue = js.native
   def signal(name: String, value: SignalValue): this.type = js.native
   def toCanvas(): js.Promise[HTMLCanvasElement] = js.native
+  def toCanvas(scaleFactor: js.UndefOr[scala.Nothing], options: ToCanvasOptions): js.Promise[HTMLCanvasElement] = js.native
   def toCanvas(scaleFactor: Double): js.Promise[HTMLCanvasElement] = js.native
   def toCanvas(scaleFactor: Double, options: ToCanvasOptions): js.Promise[HTMLCanvasElement] = js.native
   def toImageURL(`type`: String): js.Promise[String] = js.native

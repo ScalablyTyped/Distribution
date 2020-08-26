@@ -12,7 +12,7 @@ Adds context as an alternative to describe to jest.
 | Keywords           | context, jest, jest-plugin, plugin, test |
 | # releases         | 6 |
 | # dependents       | 4 |
-| # downloads        | 487366 |
+| # downloads        | 499348 |
 | # stars            | 0 |
 
 ## Links

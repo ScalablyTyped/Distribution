@@ -9,13 +9,5 @@ import scala.scalajs.js.annotation._
 class CellFocusChanged protected ()
   extends typings.sharepoint.SP.JsGrid.EventArgs.CellFocusChanged {
   def this(newRecordKey: Double, newFieldKey: String, oldRecordKey: Double, oldFieldKey: String) = this()
-  /* CompleteClass */
-  override var newFieldKey: String = js.native
-  /* CompleteClass */
-  override var newRecordKey: Double = js.native
-  /* CompleteClass */
-  override var oldFieldKey: String = js.native
-  /* CompleteClass */
-  override var oldRecordKey: Double = js.native
 }
 

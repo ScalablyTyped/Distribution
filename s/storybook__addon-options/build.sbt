@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-options"
-version := "5.3.19-ec7513"
-scalaVersion := "2.13.2"
+version := "5.3.19-3ac4a8"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

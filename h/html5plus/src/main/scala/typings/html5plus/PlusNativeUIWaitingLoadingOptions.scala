@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
+@js.native
 trait PlusNativeUIWaitingLoadingOptions extends js.Object {
   /**
     * loading图标显示样式
@@ -31,14 +32,14 @@ trait PlusNativeUIWaitingLoadingOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var display: js.UndefOr[block | `inline` | none] = js.undefined
+  var display: js.UndefOr[block | `inline` | none] = js.native
   /**
     * loading图标高度
     * 设置loading图标的高度（宽度等比率缩放），取值类型：像素值，如"14px"表示14像素高。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var height: js.UndefOr[String] = js.undefined
+  var height: js.UndefOr[String] = js.native
   /**
     * loading图标路径
     * 自定义loading图标的路径，png格式，并且必须是本地资源地址；
@@ -46,30 +47,50 @@ trait PlusNativeUIWaitingLoadingOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String] = js.native
   /**
     * loading图每帧刷新间隔
     * 单位为ms（毫秒），默认值为100ms。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var interval: js.UndefOr[Double] = js.undefined
+  var interval: js.UndefOr[Double] = js.native
 }
 
 object PlusNativeUIWaitingLoadingOptions {
   @scala.inline
-  def apply(
-    display: block | `inline` | none = null,
-    height: String = null,
-    icon: String = null,
-    interval: js.UndefOr[Double] = js.undefined
-  ): PlusNativeUIWaitingLoadingOptions = {
+  def apply(): PlusNativeUIWaitingLoadingOptions = {
     val __obj = js.Dynamic.literal()
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIWaitingLoadingOptions]
   }
+  @scala.inline
+  implicit class PlusNativeUIWaitingLoadingOptionsOps[Self <: PlusNativeUIWaitingLoadingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplay(value: block | `inline` | none): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+  }
+  
 }
 

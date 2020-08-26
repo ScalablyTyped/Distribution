@@ -12,7 +12,7 @@ An Error subclass that will chain nested Errors and dump nested stacktraces
 | Keywords           | error, nested, stack |
 | # releases         | 3 |
 | # dependents       | 54 |
-| # downloads        | 32354857 |
+| # downloads        | 34160209 |
 | # stars            | 3 |
 
 ## Links

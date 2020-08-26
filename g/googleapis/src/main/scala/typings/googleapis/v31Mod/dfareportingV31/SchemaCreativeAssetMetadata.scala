@@ -64,24 +64,56 @@ trait SchemaCreativeAssetMetadata extends js.Object {
 
 object SchemaCreativeAssetMetadata {
   @scala.inline
-  def apply(
-    assetIdentifier: SchemaCreativeAssetId = null,
-    clickTags: js.Array[SchemaClickTag] = null,
-    detectedFeatures: js.Array[String] = null,
-    id: String = null,
-    idDimensionValue: SchemaDimensionValue = null,
-    kind: String = null,
-    warnedValidationRules: js.Array[String] = null
-  ): SchemaCreativeAssetMetadata = {
+  def apply(): SchemaCreativeAssetMetadata = {
     val __obj = js.Dynamic.literal()
-    if (assetIdentifier != null) __obj.updateDynamic("assetIdentifier")(assetIdentifier.asInstanceOf[js.Any])
-    if (clickTags != null) __obj.updateDynamic("clickTags")(clickTags.asInstanceOf[js.Any])
-    if (detectedFeatures != null) __obj.updateDynamic("detectedFeatures")(detectedFeatures.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (warnedValidationRules != null) __obj.updateDynamic("warnedValidationRules")(warnedValidationRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreativeAssetMetadata]
   }
+  @scala.inline
+  implicit class SchemaCreativeAssetMetadataOps[Self <: SchemaCreativeAssetMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetIdentifier(value: SchemaCreativeAssetId): Self = this.set("assetIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetIdentifier: Self = this.set("assetIdentifier", js.undefined)
+    @scala.inline
+    def setClickTagsVarargs(value: SchemaClickTag*): Self = this.set("clickTags", js.Array(value :_*))
+    @scala.inline
+    def setClickTags(value: js.Array[SchemaClickTag]): Self = this.set("clickTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickTags: Self = this.set("clickTags", js.undefined)
+    @scala.inline
+    def setDetectedFeaturesVarargs(value: String*): Self = this.set("detectedFeatures", js.Array(value :_*))
+    @scala.inline
+    def setDetectedFeatures(value: js.Array[String]): Self = this.set("detectedFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectedFeatures: Self = this.set("detectedFeatures", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdDimensionValue(value: SchemaDimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setWarnedValidationRulesVarargs(value: String*): Self = this.set("warnedValidationRules", js.Array(value :_*))
+    @scala.inline
+    def setWarnedValidationRules(value: js.Array[String]): Self = this.set("warnedValidationRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarnedValidationRules: Self = this.set("warnedValidationRules", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait CreateCertificateAuthorityAuditReportResponse extends js.Object {
 
 object CreateCertificateAuthorityAuditReportResponse {
   @scala.inline
-  def apply(AuditReportId: AuditReportId = null, S3Key: String = null): CreateCertificateAuthorityAuditReportResponse = {
+  def apply(): CreateCertificateAuthorityAuditReportResponse = {
     val __obj = js.Dynamic.literal()
-    if (AuditReportId != null) __obj.updateDynamic("AuditReportId")(AuditReportId.asInstanceOf[js.Any])
-    if (S3Key != null) __obj.updateDynamic("S3Key")(S3Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCertificateAuthorityAuditReportResponse]
   }
+  @scala.inline
+  implicit class CreateCertificateAuthorityAuditReportResponseOps[Self <: CreateCertificateAuthorityAuditReportResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditReportId(value: AuditReportId): Self = this.set("AuditReportId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditReportId: Self = this.set("AuditReportId", js.undefined)
+    @scala.inline
+    def setS3Key(value: String): Self = this.set("S3Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Key: Self = this.set("S3Key", js.undefined)
+  }
+  
 }
 

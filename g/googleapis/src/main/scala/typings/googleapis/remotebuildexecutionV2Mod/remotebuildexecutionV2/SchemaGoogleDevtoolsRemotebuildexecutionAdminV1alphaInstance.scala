@@ -36,18 +36,38 @@ trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance extends js.Ob
 
 object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance {
   @scala.inline
-  def apply(
-    location: String = null,
-    loggingEnabled: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    state: String = null
-  ): SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance = {
+  def apply(): SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(loggingEnabled)) __obj.updateDynamic("loggingEnabled")(loggingEnabled.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstanceOps[Self <: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setLoggingEnabled(value: Boolean): Self = this.set("loggingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingEnabled: Self = this.set("loggingEnabled", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

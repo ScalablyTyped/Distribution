@@ -14,10 +14,26 @@ trait NodeLogPublishingConfiguration extends js.Object {
 
 object NodeLogPublishingConfiguration {
   @scala.inline
-  def apply(Fabric: NodeFabricLogPublishingConfiguration = null): NodeLogPublishingConfiguration = {
+  def apply(): NodeLogPublishingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (Fabric != null) __obj.updateDynamic("Fabric")(Fabric.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeLogPublishingConfiguration]
   }
+  @scala.inline
+  implicit class NodeLogPublishingConfigurationOps[Self <: NodeLogPublishingConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFabric(value: NodeFabricLogPublishingConfiguration): Self = this.set("Fabric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFabric: Self = this.set("Fabric", js.undefined)
+  }
+  
 }
 

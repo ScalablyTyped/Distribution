@@ -26,10 +26,6 @@ object exitCodesMod extends js.Object {
   @js.native
   class IError () extends Error {
     var code: js.UndefOr[Double] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native

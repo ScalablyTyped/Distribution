@@ -18,11 +18,30 @@ trait DomainSuggestion extends js.Object {
 
 object DomainSuggestion {
   @scala.inline
-  def apply(Availability: String = null, DomainName: DomainName = null): DomainSuggestion = {
+  def apply(): DomainSuggestion = {
     val __obj = js.Dynamic.literal()
-    if (Availability != null) __obj.updateDynamic("Availability")(Availability.asInstanceOf[js.Any])
-    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainSuggestion]
   }
+  @scala.inline
+  implicit class DomainSuggestionOps[Self <: DomainSuggestion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailability(value: String): Self = this.set("Availability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailability: Self = this.set("Availability", js.undefined)
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+  }
+  
 }
 

@@ -10,7 +10,7 @@ trait SizeConstraintSetSizeConstraint extends js.Object {
   /**
     * The type of comparison you want to perform.
     * e.g. `EQ`, `NE`, `LT`, `GT`.
-    * See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SizeConstraint.html#WAF-Type-SizeConstraint-ComparisonOperator) for all supported values.
+    * See [docs](https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_SizeConstraint.html) for all supported values.
     */
   var comparisonOperator: Input[String] = js.native
   /**
@@ -44,5 +44,26 @@ object SizeConstraintSetSizeConstraint {
     val __obj = js.Dynamic.literal(comparisonOperator = comparisonOperator.asInstanceOf[js.Any], fieldToMatch = fieldToMatch.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], textTransformation = textTransformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeConstraintSetSizeConstraint]
   }
+  @scala.inline
+  implicit class SizeConstraintSetSizeConstraintOps[Self <: SizeConstraintSetSizeConstraint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparisonOperator(value: Input[String]): Self = this.set("comparisonOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFieldToMatch(value: Input[SizeConstraintSetSizeConstraintFieldToMatch]): Self = this.set("fieldToMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: Input[Double]): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTextTransformation(value: Input[String]): Self = this.set("textTransformation", value.asInstanceOf[js.Any])
+  }
+  
 }
 

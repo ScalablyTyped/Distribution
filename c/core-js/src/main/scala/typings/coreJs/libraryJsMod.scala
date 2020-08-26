@@ -81,9 +81,9 @@ object libraryJsMod extends js.Object {
   def locale(): java.lang.String = js.native
   def locale(lang: java.lang.String): java.lang.String = js.native
   def setImmediate(expression: js.Any, args: js.Any*): Double = js.native
-  def setInterval(handler: js.Any): Double = js.native
+  def setInterval(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
   def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
-  def setTimeout(handler: js.Any): Double = js.native
+  def setTimeout(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
   def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
   @js.native
   object Array extends js.Object {
@@ -101,6 +101,7 @@ object libraryJsMod extends js.Object {
       thisArg: js.Any
     ): Boolean = js.native
     def fill[T](array: ArrayLike[T], value: T): typings.coreJs.Array[T] = js.native
+    def fill[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], end: Double): typings.coreJs.Array[T] = js.native
     def fill[T](array: ArrayLike[T], value: T, start: Double): typings.coreJs.Array[T] = js.native
     def fill[T](array: ArrayLike[T], value: T, start: Double, end: Double): typings.coreJs.Array[T] = js.native
     def filter[T](
@@ -229,6 +230,7 @@ object libraryJsMod extends js.Object {
     def reverse[T](array: ArrayLike[T]): typings.coreJs.Array[T] = js.native
     def shift[T](array: ArrayLike[T]): T = js.native
     def slice[T](array: ArrayLike[T]): typings.coreJs.Array[T] = js.native
+    def slice[T](array: ArrayLike[T], start: js.UndefOr[scala.Nothing], end: Double): typings.coreJs.Array[T] = js.native
     def slice[T](array: ArrayLike[T], start: Double): typings.coreJs.Array[T] = js.native
     def slice[T](array: ArrayLike[T], start: Double, end: Double): typings.coreJs.Array[T] = js.native
     def some[T](
@@ -242,7 +244,7 @@ object libraryJsMod extends js.Object {
     ): Boolean = js.native
     def sort[T](array: ArrayLike[T]): typings.coreJs.Array[T] = js.native
     def sort[T](array: ArrayLike[T], compareFn: js.Function2[/* a */ T, /* b */ T, Double]): typings.coreJs.Array[T] = js.native
-    def splice[T](array: ArrayLike[T], start: Double): typings.coreJs.Array[T] = js.native
+    def splice[T](array: ArrayLike[T], start: Double, deleteCount: js.UndefOr[scala.Nothing], items: T*): typings.coreJs.Array[T] = js.native
     def splice[T](array: ArrayLike[T], start: Double, deleteCount: Double, items: T*): typings.coreJs.Array[T] = js.native
     def turn[T](
       array: ArrayLike[T],
@@ -657,18 +659,7 @@ object libraryJsMod extends js.Object {
   }
   
   @js.native
-  object Symbol extends SymbolConstructor {
-    /**
-      * Non-standard. Use simple mode for core-js symbols. See https://github.com/zloirock/core-js/#caveats-when-using-symbol-polyfill
-      */
-    /* CompleteClass */
-    override def useSimple(): Unit = js.native
-    /**
-      * Non-standard. Use setter mode for core-js symbols. See https://github.com/zloirock/core-js/#caveats-when-using-symbol-polyfill
-      */
-    /* CompleteClass */
-    override def userSetter(): Unit = js.native
-  }
+  object Symbol extends SymbolConstructor
   
   @js.native
   object WeakMap extends TopLevel[WeakMapConstructor]

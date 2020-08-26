@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
 abstract class DateTimeConverter () extends Converter[String] {
   def calculateWeek(value: String): js.UndefOr[Double] = js.native
   def compareISODates(isoStr: String, isoStr2: String): Double = js.native
-  /* CompleteClass */
-  override def format(value: String): String | Null = js.native
   def getAvailableTimeZones(): js.Array[_] = js.native
   def isDayNameSet(): Boolean = js.native
   def isDaySet(): Boolean = js.native
@@ -22,7 +20,5 @@ abstract class DateTimeConverter () extends Converter[String] {
   def isMonthSet(): Boolean = js.native
   def isSecondSet(): Boolean = js.native
   def isYearSet(): Boolean = js.native
-  /* CompleteClass */
-  override def parse(value: String): String | Null = js.native
 }
 

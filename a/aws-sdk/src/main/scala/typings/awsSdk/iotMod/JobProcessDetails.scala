@@ -46,28 +46,60 @@ trait JobProcessDetails extends js.Object {
 
 object JobProcessDetails {
   @scala.inline
-  def apply(
-    numberOfCanceledThings: js.UndefOr[CanceledThings] = js.undefined,
-    numberOfFailedThings: js.UndefOr[FailedThings] = js.undefined,
-    numberOfInProgressThings: js.UndefOr[InProgressThings] = js.undefined,
-    numberOfQueuedThings: js.UndefOr[QueuedThings] = js.undefined,
-    numberOfRejectedThings: js.UndefOr[RejectedThings] = js.undefined,
-    numberOfRemovedThings: js.UndefOr[RemovedThings] = js.undefined,
-    numberOfSucceededThings: js.UndefOr[SucceededThings] = js.undefined,
-    numberOfTimedOutThings: js.UndefOr[TimedOutThings] = js.undefined,
-    processingTargets: ProcessingTargetNameList = null
-  ): JobProcessDetails = {
+  def apply(): JobProcessDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(numberOfCanceledThings)) __obj.updateDynamic("numberOfCanceledThings")(numberOfCanceledThings.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfFailedThings)) __obj.updateDynamic("numberOfFailedThings")(numberOfFailedThings.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfInProgressThings)) __obj.updateDynamic("numberOfInProgressThings")(numberOfInProgressThings.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfQueuedThings)) __obj.updateDynamic("numberOfQueuedThings")(numberOfQueuedThings.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfRejectedThings)) __obj.updateDynamic("numberOfRejectedThings")(numberOfRejectedThings.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfRemovedThings)) __obj.updateDynamic("numberOfRemovedThings")(numberOfRemovedThings.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfSucceededThings)) __obj.updateDynamic("numberOfSucceededThings")(numberOfSucceededThings.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfTimedOutThings)) __obj.updateDynamic("numberOfTimedOutThings")(numberOfTimedOutThings.get.asInstanceOf[js.Any])
-    if (processingTargets != null) __obj.updateDynamic("processingTargets")(processingTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobProcessDetails]
   }
+  @scala.inline
+  implicit class JobProcessDetailsOps[Self <: JobProcessDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNumberOfCanceledThings(value: CanceledThings): Self = this.set("numberOfCanceledThings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfCanceledThings: Self = this.set("numberOfCanceledThings", js.undefined)
+    @scala.inline
+    def setNumberOfFailedThings(value: FailedThings): Self = this.set("numberOfFailedThings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfFailedThings: Self = this.set("numberOfFailedThings", js.undefined)
+    @scala.inline
+    def setNumberOfInProgressThings(value: InProgressThings): Self = this.set("numberOfInProgressThings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfInProgressThings: Self = this.set("numberOfInProgressThings", js.undefined)
+    @scala.inline
+    def setNumberOfQueuedThings(value: QueuedThings): Self = this.set("numberOfQueuedThings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfQueuedThings: Self = this.set("numberOfQueuedThings", js.undefined)
+    @scala.inline
+    def setNumberOfRejectedThings(value: RejectedThings): Self = this.set("numberOfRejectedThings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfRejectedThings: Self = this.set("numberOfRejectedThings", js.undefined)
+    @scala.inline
+    def setNumberOfRemovedThings(value: RemovedThings): Self = this.set("numberOfRemovedThings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfRemovedThings: Self = this.set("numberOfRemovedThings", js.undefined)
+    @scala.inline
+    def setNumberOfSucceededThings(value: SucceededThings): Self = this.set("numberOfSucceededThings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfSucceededThings: Self = this.set("numberOfSucceededThings", js.undefined)
+    @scala.inline
+    def setNumberOfTimedOutThings(value: TimedOutThings): Self = this.set("numberOfTimedOutThings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfTimedOutThings: Self = this.set("numberOfTimedOutThings", js.undefined)
+    @scala.inline
+    def setProcessingTargetsVarargs(value: ProcessingTargetName*): Self = this.set("processingTargets", js.Array(value :_*))
+    @scala.inline
+    def setProcessingTargets(value: ProcessingTargetNameList): Self = this.set("processingTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingTargets: Self = this.set("processingTargets", js.undefined)
+  }
+  
 }
 

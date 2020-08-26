@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Release extends js.Object {
   /**
     * Time the release was created.
     * Output only.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String] = js.native
   /**
     * Resource name for the `Release`.
     *
@@ -36,33 +37,53 @@ trait Release extends js.Object {
     *
     * Format: `projects/{project_id}/releases/{release_id}`
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Name of the `Ruleset` referred to by this `Release`. The `Ruleset` must
     * exist the `Release` to be created.
     */
-  var rulesetName: js.UndefOr[String] = js.undefined
+  var rulesetName: js.UndefOr[String] = js.native
   /**
     * Time the release was updated.
     * Output only.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String] = js.native
 }
 
 object Release {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    name: String = null,
-    rulesetName: String = null,
-    updateTime: String = null
-  ): Release = {
+  def apply(): Release = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rulesetName != null) __obj.updateDynamic("rulesetName")(rulesetName.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Release]
   }
+  @scala.inline
+  implicit class ReleaseOps[Self <: Release] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRulesetName(value: String): Self = this.set("rulesetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRulesetName: Self = this.set("rulesetName", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

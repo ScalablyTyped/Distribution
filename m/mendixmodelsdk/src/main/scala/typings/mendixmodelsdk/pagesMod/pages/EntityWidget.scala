@@ -23,7 +23,7 @@ abstract class EntityWidget protected () extends ConditionallyVisibleWidget {
   @JSName("model")
   var model_FEntityWidget: IModel = js.native
   def dataSource: DataSource = js.native
-  def dataSource(newValue: DataSource): js.Any = js.native
+  def dataSource_=(newValue: DataSource): Unit = js.native
 }
 
 /* static members */

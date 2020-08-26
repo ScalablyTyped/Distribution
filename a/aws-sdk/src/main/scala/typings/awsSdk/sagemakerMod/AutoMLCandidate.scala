@@ -53,18 +53,55 @@ object AutoMLCandidate {
     CandidateSteps: CandidateSteps,
     CreationTime: Timestamp,
     LastModifiedTime: Timestamp,
-    ObjectiveStatus: ObjectiveStatus,
-    EndTime: Timestamp = null,
-    FailureReason: AutoMLFailureReason = null,
-    FinalAutoMLJobObjectiveMetric: FinalAutoMLJobObjectiveMetric = null,
-    InferenceContainers: AutoMLContainerDefinitions = null
+    ObjectiveStatus: ObjectiveStatus
   ): AutoMLCandidate = {
     val __obj = js.Dynamic.literal(CandidateName = CandidateName.asInstanceOf[js.Any], CandidateStatus = CandidateStatus.asInstanceOf[js.Any], CandidateSteps = CandidateSteps.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], ObjectiveStatus = ObjectiveStatus.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (FinalAutoMLJobObjectiveMetric != null) __obj.updateDynamic("FinalAutoMLJobObjectiveMetric")(FinalAutoMLJobObjectiveMetric.asInstanceOf[js.Any])
-    if (InferenceContainers != null) __obj.updateDynamic("InferenceContainers")(InferenceContainers.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoMLCandidate]
   }
+  @scala.inline
+  implicit class AutoMLCandidateOps[Self <: AutoMLCandidate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCandidateName(value: CandidateName): Self = this.set("CandidateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCandidateStatus(value: CandidateStatus): Self = this.set("CandidateStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCandidateStepsVarargs(value: AutoMLCandidateStep*): Self = this.set("CandidateSteps", js.Array(value :_*))
+    @scala.inline
+    def setCandidateSteps(value: CandidateSteps): Self = this.set("CandidateSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectiveStatus(value: ObjectiveStatus): Self = this.set("ObjectiveStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setFailureReason(value: AutoMLFailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setFinalAutoMLJobObjectiveMetric(value: FinalAutoMLJobObjectiveMetric): Self = this.set("FinalAutoMLJobObjectiveMetric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalAutoMLJobObjectiveMetric: Self = this.set("FinalAutoMLJobObjectiveMetric", js.undefined)
+    @scala.inline
+    def setInferenceContainersVarargs(value: AutoMLContainerDefinition*): Self = this.set("InferenceContainers", js.Array(value :_*))
+    @scala.inline
+    def setInferenceContainers(value: AutoMLContainerDefinitions): Self = this.set("InferenceContainers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInferenceContainers: Self = this.set("InferenceContainers", js.undefined)
+  }
+  
 }
 

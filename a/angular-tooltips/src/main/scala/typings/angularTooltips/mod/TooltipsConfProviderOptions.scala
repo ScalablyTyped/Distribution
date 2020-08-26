@@ -17,47 +17,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooltipsConfProviderOptions extends js.Object {
-  var `class`: js.UndefOr[String] = js.undefined
-  var closeButton: js.UndefOr[Boolean] = js.undefined
-  var hideTrigger: js.UndefOr[String] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
-  var showTrigger: js.UndefOr[String] = js.undefined
+  var `class`: js.UndefOr[String] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.native
+  var hideTrigger: js.UndefOr[String] = js.native
+  var show: js.UndefOr[Boolean] = js.native
+  var showTrigger: js.UndefOr[String] = js.native
   var side: js.UndefOr[
     left | right | top | bottom | (`top left`) | (`top right`) | (`bottom left`) | (`bottom right`)
-  ] = js.undefined
-  var size: js.UndefOr[small | medium | large] = js.undefined
-  var smart: js.UndefOr[Boolean] = js.undefined
-  var speed: js.UndefOr[slow | medium | fast] = js.undefined
-  var tooltipTemplateUrlCache: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var size: js.UndefOr[small | medium | large] = js.native
+  var smart: js.UndefOr[Boolean] = js.native
+  var speed: js.UndefOr[slow | medium | fast] = js.native
+  var tooltipTemplateUrlCache: js.UndefOr[Boolean] = js.native
 }
 
 object TooltipsConfProviderOptions {
   @scala.inline
-  def apply(
-    `class`: String = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    hideTrigger: String = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    showTrigger: String = null,
-    side: left | right | top | bottom | (`top left`) | (`top right`) | (`bottom left`) | (`bottom right`) = null,
-    size: small | medium | large = null,
-    smart: js.UndefOr[Boolean] = js.undefined,
-    speed: slow | medium | fast = null,
-    tooltipTemplateUrlCache: js.UndefOr[Boolean] = js.undefined
-  ): TooltipsConfProviderOptions = {
+  def apply(): TooltipsConfProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
-    if (hideTrigger != null) __obj.updateDynamic("hideTrigger")(hideTrigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (showTrigger != null) __obj.updateDynamic("showTrigger")(showTrigger.asInstanceOf[js.Any])
-    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(smart)) __obj.updateDynamic("smart")(smart.get.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipTemplateUrlCache)) __obj.updateDynamic("tooltipTemplateUrlCache")(tooltipTemplateUrlCache.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipsConfProviderOptions]
   }
+  @scala.inline
+  implicit class TooltipsConfProviderOptionsOps[Self <: TooltipsConfProviderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClass: Self = this.set("class", js.undefined)
+    @scala.inline
+    def setCloseButton(value: Boolean): Self = this.set("closeButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseButton: Self = this.set("closeButton", js.undefined)
+    @scala.inline
+    def setHideTrigger(value: String): Self = this.set("hideTrigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideTrigger: Self = this.set("hideTrigger", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setShowTrigger(value: String): Self = this.set("showTrigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTrigger: Self = this.set("showTrigger", js.undefined)
+    @scala.inline
+    def setSide(
+      value: left | right | top | bottom | (`top left`) | (`top right`) | (`bottom left`) | (`bottom right`)
+    ): Self = this.set("side", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSide: Self = this.set("side", js.undefined)
+    @scala.inline
+    def setSize(value: small | medium | large): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSmart(value: Boolean): Self = this.set("smart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmart: Self = this.set("smart", js.undefined)
+    @scala.inline
+    def setSpeed(value: slow | medium | fast): Self = this.set("speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeed: Self = this.set("speed", js.undefined)
+    @scala.inline
+    def setTooltipTemplateUrlCache(value: Boolean): Self = this.set("tooltipTemplateUrlCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipTemplateUrlCache: Self = this.set("tooltipTemplateUrlCache", js.undefined)
+  }
+  
 }
 

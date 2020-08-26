@@ -34,18 +34,38 @@ trait SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo extends js.Object {
 
 object SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo {
   @scala.inline
-  def apply(
-    currencyConversionTimeMs: String = null,
-    dfpLineItemId: String = null,
-    originalContractedQuantity: String = null,
-    price: SchemaPrice = null
-  ): SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo = {
+  def apply(): SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo = {
     val __obj = js.Dynamic.literal()
-    if (currencyConversionTimeMs != null) __obj.updateDynamic("currencyConversionTimeMs")(currencyConversionTimeMs.asInstanceOf[js.Any])
-    if (dfpLineItemId != null) __obj.updateDynamic("dfpLineItemId")(dfpLineItemId.asInstanceOf[js.Any])
-    if (originalContractedQuantity != null) __obj.updateDynamic("originalContractedQuantity")(originalContractedQuantity.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo]
   }
+  @scala.inline
+  implicit class SchemaDealTermsGuaranteedFixedPriceTermsBillingInfoOps[Self <: SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrencyConversionTimeMs(value: String): Self = this.set("currencyConversionTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyConversionTimeMs: Self = this.set("currencyConversionTimeMs", js.undefined)
+    @scala.inline
+    def setDfpLineItemId(value: String): Self = this.set("dfpLineItemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDfpLineItemId: Self = this.set("dfpLineItemId", js.undefined)
+    @scala.inline
+    def setOriginalContractedQuantity(value: String): Self = this.set("originalContractedQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalContractedQuantity: Self = this.set("originalContractedQuantity", js.undefined)
+    @scala.inline
+    def setPrice(value: SchemaPrice): Self = this.set("price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("price", js.undefined)
+  }
+  
 }
 

@@ -23,6 +23,7 @@ trait ArrayConstructor
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
   def from[T, U](arrayLike: ArrayLike[T]): Array[U] = js.native
+  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.UndefOr[scala.Nothing], thisArg: js.Any): Array[U] = js.native
   def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = js.native
   def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): Array[U] = js.native
   /**
@@ -32,6 +33,7 @@ trait ArrayConstructor
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
   def from[T, U](iterable: Iterable[T]): Array[U] = js.native
+  def from[T, U](iterable: Iterable[T], mapfn: js.UndefOr[scala.Nothing], thisArg: js.Any): Array[U] = js.native
   def from[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = js.native
   def from[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): Array[U] = js.native
   def isArray(arg: js.Any): /* is minapp-env.Array<any> */ scala.Boolean = js.native

@@ -131,13 +131,16 @@ trait Selection extends js.Object {
   def CreateTextbox(): Unit = js.native
   def Cut(): Unit = js.native
   def Delete(): Double = js.native
+  def Delete(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def Delete(Unit: WdUnits): Double = js.native
   def Delete(Unit: WdUnits, Count: Double): Double = js.native
   def DetectLanguage(): Unit = js.native
   def EndKey(): Double = js.native
+  def EndKey(Unit: js.UndefOr[scala.Nothing], Extend: js.Any): Double = js.native
   def EndKey(Unit: js.Any): Double = js.native
   def EndKey(Unit: js.Any, Extend: js.Any): Double = js.native
   def EndOf(): Double = js.native
+  def EndOf(Unit: js.UndefOr[scala.Nothing], Extend: js.Any): Double = js.native
   def EndOf(Unit: js.Any): Double = js.native
   def EndOf(Unit: js.Any, Extend: js.Any): Double = js.native
   def EscapeKey(): Unit = js.native
@@ -173,8 +176,24 @@ trait Selection extends js.Object {
   def Extend(): Unit = js.native
   def Extend(Character: js.Any): Unit = js.native
   def GoTo(): typings.activexWord.Word.Range = js.native
+  def GoTo(
+    What: js.UndefOr[scala.Nothing],
+    Which: js.UndefOr[scala.Nothing],
+    Count: js.UndefOr[scala.Nothing],
+    Name: js.Any
+  ): typings.activexWord.Word.Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.UndefOr[scala.Nothing], Count: js.Any): typings.activexWord.Word.Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.UndefOr[scala.Nothing], Count: js.Any, Name: js.Any): typings.activexWord.Word.Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any): typings.activexWord.Word.Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any, Count: js.UndefOr[scala.Nothing], Name: js.Any): typings.activexWord.Word.Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any, Count: js.Any): typings.activexWord.Word.Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any, Count: js.Any, Name: js.Any): typings.activexWord.Word.Range = js.native
   def GoTo(What: js.Any): typings.activexWord.Word.Range = js.native
+  def GoTo(What: js.Any, Which: js.UndefOr[scala.Nothing], Count: js.UndefOr[scala.Nothing], Name: js.Any): typings.activexWord.Word.Range = js.native
+  def GoTo(What: js.Any, Which: js.UndefOr[scala.Nothing], Count: js.Any): typings.activexWord.Word.Range = js.native
+  def GoTo(What: js.Any, Which: js.UndefOr[scala.Nothing], Count: js.Any, Name: js.Any): typings.activexWord.Word.Range = js.native
   def GoTo(What: js.Any, Which: js.Any): typings.activexWord.Word.Range = js.native
+  def GoTo(What: js.Any, Which: js.Any, Count: js.UndefOr[scala.Nothing], Name: js.Any): typings.activexWord.Word.Range = js.native
   def GoTo(What: js.Any, Which: js.Any, Count: js.Any): typings.activexWord.Word.Range = js.native
   def GoTo(What: js.Any, Which: js.Any, Count: js.Any, Name: js.Any): typings.activexWord.Word.Range = js.native
   def GoToEditableRange(): typings.activexWord.Word.Range = js.native
@@ -182,6 +201,7 @@ trait Selection extends js.Object {
   def GoToNext(What: WdGoToItem): typings.activexWord.Word.Range = js.native
   def GoToPrevious(What: WdGoToItem): typings.activexWord.Word.Range = js.native
   def HomeKey(): Double = js.native
+  def HomeKey(Unit: js.UndefOr[scala.Nothing], Extend: js.Any): Double = js.native
   def HomeKey(Unit: js.Any): Double = js.native
   def HomeKey(Unit: js.Any, Extend: js.Any): Double = js.native
   def InRange(Range: typings.activexWord.Word.Range): Boolean = js.native
@@ -192,12 +212,79 @@ trait Selection extends js.Object {
   def InsertBreak(): Unit = js.native
   def InsertBreak(Type: js.Any): Unit = js.native
   def InsertCaption(Label: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    ExcludeLabel: js.Any
+  ): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.Any
+  ): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.Any,
+    ExcludeLabel: js.Any
+  ): Unit = js.native
+  def InsertCaption(Label: js.Any, Title: js.UndefOr[scala.Nothing], TitleAutoText: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.Any,
+    Position: js.UndefOr[scala.Nothing],
+    ExcludeLabel: js.Any
+  ): Unit = js.native
+  def InsertCaption(Label: js.Any, Title: js.UndefOr[scala.Nothing], TitleAutoText: js.Any, Position: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.Any,
+    Position: js.Any,
+    ExcludeLabel: js.Any
+  ): Unit = js.native
   def InsertCaption(Label: js.Any, Title: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.Any,
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    ExcludeLabel: js.Any
+  ): Unit = js.native
+  def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.UndefOr[scala.Nothing], Position: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.Any,
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.Any,
+    ExcludeLabel: js.Any
+  ): Unit = js.native
   def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.Any): Unit = js.native
+  def InsertCaption(
+    Label: js.Any,
+    Title: js.Any,
+    TitleAutoText: js.Any,
+    Position: js.UndefOr[scala.Nothing],
+    ExcludeLabel: js.Any
+  ): Unit = js.native
   def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.Any, Position: js.Any): Unit = js.native
   def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.Any, Position: js.Any, ExcludeLabel: js.Any): Unit = js.native
   def InsertCaptionXP(Label: js.Any): Unit = js.native
+  def InsertCaptionXP(
+    Label: js.Any,
+    Title: js.UndefOr[scala.Nothing],
+    TitleAutoText: js.UndefOr[scala.Nothing],
+    Position: js.Any
+  ): Unit = js.native
+  def InsertCaptionXP(Label: js.Any, Title: js.UndefOr[scala.Nothing], TitleAutoText: js.Any): Unit = js.native
+  def InsertCaptionXP(Label: js.Any, Title: js.UndefOr[scala.Nothing], TitleAutoText: js.Any, Position: js.Any): Unit = js.native
   def InsertCaptionXP(Label: js.Any, Title: js.Any): Unit = js.native
+  def InsertCaptionXP(Label: js.Any, Title: js.Any, TitleAutoText: js.UndefOr[scala.Nothing], Position: js.Any): Unit = js.native
   def InsertCaptionXP(Label: js.Any, Title: js.Any, TitleAutoText: js.Any): Unit = js.native
   def InsertCaptionXP(Label: js.Any, Title: js.Any, TitleAutoText: js.Any, Position: js.Any): Unit = js.native
   def InsertCells(): Unit = js.native
@@ -209,6 +296,65 @@ trait Selection extends js.Object {
     ReferenceType: js.Any,
     ReferenceKind: WdReferenceKind,
     ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.UndefOr[scala.Nothing],
+    SeparatorString: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.Any,
+    SeparatorString: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.Any,
+    SeparateNumbers: js.UndefOr[scala.Nothing],
+    SeparatorString: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.Any,
+    SeparateNumbers: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.Any,
+    SeparateNumbers: js.Any,
+    SeparatorString: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
     InsertAsHyperlink: js.Any
   ): Unit = js.native
   def InsertCrossReference(
@@ -216,7 +362,42 @@ trait Selection extends js.Object {
     ReferenceKind: WdReferenceKind,
     ReferenceItem: js.Any,
     InsertAsHyperlink: js.Any,
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.UndefOr[scala.Nothing],
+    SeparatorString: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.Any,
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.Any,
+    IncludePosition: js.UndefOr[scala.Nothing],
+    SeparateNumbers: js.Any,
+    SeparatorString: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.Any,
     IncludePosition: js.Any
+  ): Unit = js.native
+  def InsertCrossReference(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
+    InsertAsHyperlink: js.Any,
+    IncludePosition: js.Any,
+    SeparateNumbers: js.UndefOr[scala.Nothing],
+    SeparatorString: js.Any
   ): Unit = js.native
   def InsertCrossReference(
     ReferenceType: js.Any,
@@ -240,6 +421,13 @@ trait Selection extends js.Object {
     ReferenceType: js.Any,
     ReferenceKind: WdReferenceKind,
     ReferenceItem: js.Any,
+    InsertAsHyperlink: js.UndefOr[scala.Nothing],
+    IncludePosition: js.Any
+  ): Unit = js.native
+  def InsertCrossReference_2002(
+    ReferenceType: js.Any,
+    ReferenceKind: WdReferenceKind,
+    ReferenceItem: js.Any,
     InsertAsHyperlink: js.Any
   ): Unit = js.native
   def InsertCrossReference_2002(
@@ -250,9 +438,164 @@ trait Selection extends js.Object {
     IncludePosition: js.Any
   ): Unit = js.native
   def InsertDateTime(): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(DateTimeFormat: js.UndefOr[scala.Nothing], InsertAsField: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(DateTimeFormat: js.UndefOr[scala.Nothing], InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
   def InsertDateTime(DateTimeFormat: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.UndefOr[scala.Nothing], InsertAsFullWidth: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
   def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.UndefOr[scala.Nothing],
+    DateLanguage: js.Any,
+    CalendarType: js.Any
+  ): Unit = js.native
   def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: js.Any,
+    InsertAsField: js.Any,
+    InsertAsFullWidth: js.Any,
+    DateLanguage: js.UndefOr[scala.Nothing],
+    CalendarType: js.Any
+  ): Unit = js.native
   def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.Any, InsertAsFullWidth: js.Any, DateLanguage: js.Any): Unit = js.native
   def InsertDateTime(
     DateTimeFormat: js.Any,
@@ -262,15 +605,82 @@ trait Selection extends js.Object {
     CalendarType: js.Any
   ): Unit = js.native
   def InsertDateTimeOld(): Unit = js.native
+  def InsertDateTimeOld(
+    DateTimeFormat: js.UndefOr[scala.Nothing],
+    InsertAsField: js.UndefOr[scala.Nothing],
+    InsertAsFullWidth: js.Any
+  ): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: js.UndefOr[scala.Nothing], InsertAsField: js.Any): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: js.UndefOr[scala.Nothing], InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
   def InsertDateTimeOld(DateTimeFormat: js.Any): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: js.Any, InsertAsField: js.UndefOr[scala.Nothing], InsertAsFullWidth: js.Any): Unit = js.native
   def InsertDateTimeOld(DateTimeFormat: js.Any, InsertAsField: js.Any): Unit = js.native
   def InsertDateTimeOld(DateTimeFormat: js.Any, InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
   def InsertFile(FileName: String): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.UndefOr[scala.Nothing],
+    ConfirmConversions: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    Attachment: js.Any
+  ): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.UndefOr[scala.Nothing],
+    ConfirmConversions: js.UndefOr[scala.Nothing],
+    Link: js.Any
+  ): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.UndefOr[scala.Nothing],
+    ConfirmConversions: js.UndefOr[scala.Nothing],
+    Link: js.Any,
+    Attachment: js.Any
+  ): Unit = js.native
+  def InsertFile(FileName: String, Range: js.UndefOr[scala.Nothing], ConfirmConversions: js.Any): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.UndefOr[scala.Nothing],
+    ConfirmConversions: js.Any,
+    Link: js.UndefOr[scala.Nothing],
+    Attachment: js.Any
+  ): Unit = js.native
+  def InsertFile(FileName: String, Range: js.UndefOr[scala.Nothing], ConfirmConversions: js.Any, Link: js.Any): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.UndefOr[scala.Nothing],
+    ConfirmConversions: js.Any,
+    Link: js.Any,
+    Attachment: js.Any
+  ): Unit = js.native
   def InsertFile(FileName: String, Range: js.Any): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.Any,
+    ConfirmConversions: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    Attachment: js.Any
+  ): Unit = js.native
+  def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.UndefOr[scala.Nothing], Link: js.Any): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.Any,
+    ConfirmConversions: js.UndefOr[scala.Nothing],
+    Link: js.Any,
+    Attachment: js.Any
+  ): Unit = js.native
   def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.Any): Unit = js.native
+  def InsertFile(
+    FileName: String,
+    Range: js.Any,
+    ConfirmConversions: js.Any,
+    Link: js.UndefOr[scala.Nothing],
+    Attachment: js.Any
+  ): Unit = js.native
   def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.Any, Link: js.Any): Unit = js.native
   def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.Any, Link: js.Any, Attachment: js.Any): Unit = js.native
   def InsertFormula(): Unit = js.native
+  def InsertFormula(Formula: js.UndefOr[scala.Nothing], NumberFormat: js.Any): Unit = js.native
   def InsertFormula(Formula: js.Any): Unit = js.native
   def InsertFormula(Formula: js.Any, NumberFormat: js.Any): Unit = js.native
   def InsertNewPage(): Unit = js.native
@@ -285,7 +695,16 @@ trait Selection extends js.Object {
   def InsertRowsBelow(NumRows: js.Any): Unit = js.native
   def InsertStyleSeparator(): Unit = js.native
   def InsertSymbol(CharacterNumber: Double): Unit = js.native
+  def InsertSymbol(
+    CharacterNumber: Double,
+    Font: js.UndefOr[scala.Nothing],
+    Unicode: js.UndefOr[scala.Nothing],
+    Bias: js.Any
+  ): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: js.UndefOr[scala.Nothing], Unicode: js.Any): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: js.UndefOr[scala.Nothing], Unicode: js.Any, Bias: js.Any): Unit = js.native
   def InsertSymbol(CharacterNumber: Double, Font: js.Any): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: js.Any, Unicode: js.UndefOr[scala.Nothing], Bias: js.Any): Unit = js.native
   def InsertSymbol(CharacterNumber: Double, Font: js.Any, Unicode: js.Any): Unit = js.native
   def InsertSymbol(CharacterNumber: Double, Font: js.Any, Unicode: js.Any, Bias: js.Any): Unit = js.native
   def InsertXML(XML: String): Unit = js.native
@@ -295,12 +714,15 @@ trait Selection extends js.Object {
   def LtrPara(): Unit = js.native
   def LtrRun(): Unit = js.native
   def Move(): Double = js.native
+  def Move(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def Move(Unit: WdUnits): Double = js.native
   def Move(Unit: WdUnits, Count: Double): Double = js.native
   def MoveDown(): Double = js.native
+  def MoveDown(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def MoveDown(Unit: WdUnits): Double = js.native
   def MoveDown(Unit: WdUnits, Count: Double): Double = js.native
   def MoveEnd(): Double = js.native
+  def MoveEnd(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def MoveEnd(Unit: WdUnits): Double = js.native
   def MoveEnd(Unit: WdUnits, Count: Double): Double = js.native
   def MoveEndUntil(Cset: js.Any): Double = js.native
@@ -308,12 +730,15 @@ trait Selection extends js.Object {
   def MoveEndWhile(Cset: js.Any): Double = js.native
   def MoveEndWhile(Cset: js.Any, Count: js.Any): Double = js.native
   def MoveLeft(): Double = js.native
+  def MoveLeft(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def MoveLeft(Unit: WdUnits): Double = js.native
   def MoveLeft(Unit: WdUnits, Count: Double): Double = js.native
   def MoveRight(): Double = js.native
+  def MoveRight(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def MoveRight(Unit: WdUnits): Double = js.native
   def MoveRight(Unit: WdUnits, Count: Double): Double = js.native
   def MoveStart(): Double = js.native
+  def MoveStart(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def MoveStart(Unit: WdUnits): Double = js.native
   def MoveStart(Unit: WdUnits, Count: Double): Double = js.native
   def MoveStartUntil(Cset: js.Any): Double = js.native
@@ -323,11 +748,13 @@ trait Selection extends js.Object {
   def MoveUntil(Cset: js.Any): Double = js.native
   def MoveUntil(Cset: js.Any, Count: js.Any): Double = js.native
   def MoveUp(): Double = js.native
+  def MoveUp(Unit: js.UndefOr[scala.Nothing], Count: Double): Double = js.native
   def MoveUp(Unit: WdUnits): Double = js.native
   def MoveUp(Unit: WdUnits, Count: Double): Double = js.native
   def MoveWhile(Cset: js.Any): Double = js.native
   def MoveWhile(Cset: js.Any, Count: js.Any): Double = js.native
   def Next(): typings.activexWord.Word.Range = js.native
+  def Next(Unit: js.UndefOr[scala.Nothing], Count: Double): typings.activexWord.Word.Range = js.native
   def Next(Unit: WdUnits): typings.activexWord.Word.Range = js.native
   def Next(Unit: WdUnits, Count: Double): typings.activexWord.Word.Range = js.native
   def NextField(): Field = js.native
@@ -350,6 +777,7 @@ trait Selection extends js.Object {
     IconLabel: js.UndefOr[js.Any]
   ): Unit = js.native
   def Previous(): typings.activexWord.Word.Range = js.native
+  def Previous(Unit: js.UndefOr[scala.Nothing], Count: js.Any): typings.activexWord.Word.Range = js.native
   def Previous(Unit: js.Any): typings.activexWord.Word.Range = js.native
   def Previous(Unit: js.Any, Count: js.Any): typings.activexWord.Word.Range = js.native
   def PreviousField(): Field = js.native
@@ -438,6 +866,7 @@ trait Selection extends js.Object {
   ): Unit = js.native
   def SplitTable(): Unit = js.native
   def StartOf(): Double = js.native
+  def StartOf(Unit: js.UndefOr[scala.Nothing], Extend: js.Any): Double = js.native
   def StartOf(Unit: js.Any): Double = js.native
   def StartOf(Unit: js.Any, Extend: js.Any): Double = js.native
   def ToggleCharacterCode(): Unit = js.native

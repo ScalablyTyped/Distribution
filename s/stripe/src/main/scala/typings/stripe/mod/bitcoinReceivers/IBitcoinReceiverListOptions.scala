@@ -5,43 +5,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBitcoinReceiverListOptions extends IListOptions {
   /**
     * Filter for active receivers.
     */
-  var active: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
   /**
     * Filter for filled receivers.
     */
-  var filled: js.UndefOr[Boolean] = js.undefined
+  var filled: js.UndefOr[Boolean] = js.native
   /**
     * Filter for receivers with uncaptured funds.
     */
-  var uncaptured_funds: js.UndefOr[Boolean] = js.undefined
+  var uncaptured_funds: js.UndefOr[Boolean] = js.native
 }
 
 object IBitcoinReceiverListOptions {
   @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    ending_before: String = null,
-    expand: js.Array[String] = null,
-    filled: js.UndefOr[Boolean] = js.undefined,
-    include: js.Array[String] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    starting_after: String = null,
-    uncaptured_funds: js.UndefOr[Boolean] = js.undefined
-  ): IBitcoinReceiverListOptions = {
+  def apply(): IBitcoinReceiverListOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (!js.isUndefined(filled)) __obj.updateDynamic("filled")(filled.get.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
-    if (!js.isUndefined(uncaptured_funds)) __obj.updateDynamic("uncaptured_funds")(uncaptured_funds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBitcoinReceiverListOptions]
   }
+  @scala.inline
+  implicit class IBitcoinReceiverListOptionsOps[Self <: IBitcoinReceiverListOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setFilled(value: Boolean): Self = this.set("filled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilled: Self = this.set("filled", js.undefined)
+    @scala.inline
+    def setUncaptured_funds(value: Boolean): Self = this.set("uncaptured_funds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUncaptured_funds: Self = this.set("uncaptured_funds", js.undefined)
+  }
+  
 }
 

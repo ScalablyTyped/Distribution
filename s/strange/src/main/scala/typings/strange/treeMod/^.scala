@@ -26,8 +26,10 @@ class ^[T /* <: Date | Double | String */] protected () extends RangeTree[T] {
   def this(ranges: Range[T]) = this()
   def this(ranges: js.Array[Range[T]], left: RangeTree[T]) = this()
   def this(ranges: Range[T], left: RangeTree[T]) = this()
+  def this(ranges: js.Array[Range[T]], left: js.UndefOr[scala.Nothing], right: RangeTree[T]) = this()
   def this(ranges: js.Array[Range[T]], left: Null, right: RangeTree[T]) = this()
   def this(ranges: js.Array[Range[T]], left: RangeTree[T], right: RangeTree[T]) = this()
+  def this(ranges: Range[T], left: js.UndefOr[scala.Nothing], right: RangeTree[T]) = this()
   def this(ranges: Range[T], left: Null, right: RangeTree[T]) = this()
   def this(ranges: Range[T], left: RangeTree[T], right: RangeTree[T]) = this()
 }

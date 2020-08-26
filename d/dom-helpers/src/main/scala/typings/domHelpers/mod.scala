@@ -3800,9 +3800,9 @@ object mod extends js.Object {
   def scrollbarSize(): Double = js.native
   def scrollbarSize(recalc: Boolean): Double = js.native
   def style(node: HTMLElement, property: PartialRecordPropertystri): Unit = js.native
-  def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = js.native
+  def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any = js.native
   @JSName("style")
-  def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = js.native
+  def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any = js.native
   def toggleClass(element: Element, className: String): Unit = js.native
   def toggleClass(element: SVGElement, className: String): Unit = js.native
   def transitionEnd(element: HTMLElement, handler: Listener): js.Function0[Unit] = js.native
@@ -7556,9 +7556,9 @@ object mod extends js.Object {
     def scrollbarSize(): Double = js.native
     def scrollbarSize(recalc: Boolean): Double = js.native
     def style(node: HTMLElement, property: PartialRecordPropertystri): Unit = js.native
-    def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = js.native
+    def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any = js.native
     @JSName("style")
-    def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = js.native
+    def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any = js.native
     def toggleClass(element: Element, className: String): Unit = js.native
     def toggleClass(element: SVGElement, className: String): Unit = js.native
     def transitionEnd(element: HTMLElement, handler: Listener): js.Function0[Unit] = js.native

@@ -18,6 +18,14 @@ object resolveModuleName extends js.Object {
     containingFile: java.lang.String,
     compilerOptions: CompilerOptions,
     host: ModuleResolutionHost,
+    cache: js.UndefOr[scala.Nothing],
+    redirectedReference: ResolvedProjectReference
+  ): ResolvedModuleWithFailedLookupLocations = js.native
+  def apply(
+    moduleName: java.lang.String,
+    containingFile: java.lang.String,
+    compilerOptions: CompilerOptions,
+    host: ModuleResolutionHost,
     cache: ModuleResolutionCache
   ): ResolvedModuleWithFailedLookupLocations = js.native
   def apply(

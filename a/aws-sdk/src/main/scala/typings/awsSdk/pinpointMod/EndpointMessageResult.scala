@@ -34,20 +34,42 @@ trait EndpointMessageResult extends js.Object {
 
 object EndpointMessageResult {
   @scala.inline
-  def apply(
-    DeliveryStatus: DeliveryStatus,
-    StatusCode: integer,
-    Address: string = null,
-    MessageId: string = null,
-    StatusMessage: string = null,
-    UpdatedToken: string = null
-  ): EndpointMessageResult = {
+  def apply(DeliveryStatus: DeliveryStatus, StatusCode: integer): EndpointMessageResult = {
     val __obj = js.Dynamic.literal(DeliveryStatus = DeliveryStatus.asInstanceOf[js.Any], StatusCode = StatusCode.asInstanceOf[js.Any])
-    if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
-    if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (UpdatedToken != null) __obj.updateDynamic("UpdatedToken")(UpdatedToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointMessageResult]
   }
+  @scala.inline
+  implicit class EndpointMessageResultOps[Self <: EndpointMessageResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeliveryStatus(value: DeliveryStatus): Self = this.set("DeliveryStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatusCode(value: integer): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddress(value: string): Self = this.set("Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("Address", js.undefined)
+    @scala.inline
+    def setMessageId(value: string): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageId: Self = this.set("MessageId", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: string): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setUpdatedToken(value: string): Self = this.set("UpdatedToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedToken: Self = this.set("UpdatedToken", js.undefined)
+  }
+  
 }
 

@@ -15,132 +15,231 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AppendToBody extends js.Object {
-  var appendToBody: js.UndefOr[Boolean] = js.undefined
-  var clearable: js.UndefOr[Boolean] = js.undefined
-  var confirm: js.UndefOr[Boolean] = js.undefined
-  var confirmText: js.UndefOr[String] = js.undefined
-  var defaultValue: js.UndefOr[Date] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var disabledDate: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.undefined
-  var disabledTime: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.undefined
-  var editable: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var hourOptions: js.UndefOr[js.Array[Double]] = js.undefined
-  var hourStep: js.UndefOr[Double] = js.undefined
-  var `inline`: js.UndefOr[Boolean] = js.undefined
-  var inputAttr: js.UndefOr[js.Function0[js.Object]] = js.undefined
-  var inputClass: js.UndefOr[String] = js.undefined
-  var lang: js.UndefOr[String | Lang] = js.undefined
-  var minuteOptions: js.UndefOr[js.Array[Double]] = js.undefined
-  var minuteStep: js.UndefOr[Double] = js.undefined
-  var open: js.UndefOr[Boolean] = js.undefined
-  var partialUpdate: js.UndefOr[Boolean] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var popupClass: js.UndefOr[String] = js.undefined
-  var popupStyle: js.UndefOr[js.Function0[js.Object]] = js.undefined
-  var range: js.UndefOr[Boolean] = js.undefined
-  var rangeSeparator: js.UndefOr[String] = js.undefined
-  var secondOptions: js.UndefOr[js.Array[Double]] = js.undefined
-  var secondStep: js.UndefOr[Double] = js.undefined
-  var shortcuts: js.UndefOr[js.Array[Shortcuts]] = js.undefined
-  var showHour: js.UndefOr[Boolean] = js.undefined
-  var showMinute: js.UndefOr[Boolean] = js.undefined
-  var showSecond: js.UndefOr[Boolean] = js.undefined
-  var showTimeHeader: js.UndefOr[Boolean] = js.undefined
-  var showWeekNumber: js.UndefOr[Boolean] = js.undefined
-  var timePickerOptions: js.UndefOr[TimePickerOptions] = js.undefined
-  var timeTitleFormat: js.UndefOr[String] = js.undefined
-  var titleFormat: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[date | datetime | year | month | time | week] = js.undefined
-  var use12h: js.UndefOr[Boolean] = js.undefined
-  var valueType: js.UndefOr[ValueType] = js.undefined
+  var appendToBody: js.UndefOr[Boolean] = js.native
+  var clearable: js.UndefOr[Boolean] = js.native
+  var confirm: js.UndefOr[Boolean] = js.native
+  var confirmText: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[Date] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var disabledDate: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.native
+  var disabledTime: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.native
+  var editable: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[String] = js.native
+  var hourOptions: js.UndefOr[js.Array[Double]] = js.native
+  var hourStep: js.UndefOr[Double] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.native
+  var inputAttr: js.UndefOr[js.Function0[js.Object]] = js.native
+  var inputClass: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String | Lang] = js.native
+  var minuteOptions: js.UndefOr[js.Array[Double]] = js.native
+  var minuteStep: js.UndefOr[Double] = js.native
+  var open: js.UndefOr[Boolean] = js.native
+  var partialUpdate: js.UndefOr[Boolean] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var popupClass: js.UndefOr[String] = js.native
+  var popupStyle: js.UndefOr[js.Function0[js.Object]] = js.native
+  var range: js.UndefOr[Boolean] = js.native
+  var rangeSeparator: js.UndefOr[String] = js.native
+  var secondOptions: js.UndefOr[js.Array[Double]] = js.native
+  var secondStep: js.UndefOr[Double] = js.native
+  var shortcuts: js.UndefOr[js.Array[Shortcuts]] = js.native
+  var showHour: js.UndefOr[Boolean] = js.native
+  var showMinute: js.UndefOr[Boolean] = js.native
+  var showSecond: js.UndefOr[Boolean] = js.native
+  var showTimeHeader: js.UndefOr[Boolean] = js.native
+  var showWeekNumber: js.UndefOr[Boolean] = js.native
+  var timePickerOptions: js.UndefOr[TimePickerOptions] = js.native
+  var timeTitleFormat: js.UndefOr[String] = js.native
+  var titleFormat: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[date | datetime | year | month | time | week] = js.native
+  var use12h: js.UndefOr[Boolean] = js.native
+  var valueType: js.UndefOr[ValueType] = js.native
 }
 
 object AppendToBody {
   @scala.inline
-  def apply(
-    appendToBody: js.UndefOr[Boolean] = js.undefined,
-    clearable: js.UndefOr[Boolean] = js.undefined,
-    confirm: js.UndefOr[Boolean] = js.undefined,
-    confirmText: String = null,
-    defaultValue: Date = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledDate: /* date */ Date => Boolean = null,
-    disabledTime: /* date */ Date => Boolean = null,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    hourOptions: js.Array[Double] = null,
-    hourStep: js.UndefOr[Double] = js.undefined,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    inputAttr: () => js.Object = null,
-    inputClass: String = null,
-    lang: String | Lang = null,
-    minuteOptions: js.Array[Double] = null,
-    minuteStep: js.UndefOr[Double] = js.undefined,
-    open: js.UndefOr[Boolean] = js.undefined,
-    partialUpdate: js.UndefOr[Boolean] = js.undefined,
-    placeholder: String = null,
-    popupClass: String = null,
-    popupStyle: () => js.Object = null,
-    range: js.UndefOr[Boolean] = js.undefined,
-    rangeSeparator: String = null,
-    secondOptions: js.Array[Double] = null,
-    secondStep: js.UndefOr[Double] = js.undefined,
-    shortcuts: js.Array[Shortcuts] = null,
-    showHour: js.UndefOr[Boolean] = js.undefined,
-    showMinute: js.UndefOr[Boolean] = js.undefined,
-    showSecond: js.UndefOr[Boolean] = js.undefined,
-    showTimeHeader: js.UndefOr[Boolean] = js.undefined,
-    showWeekNumber: js.UndefOr[Boolean] = js.undefined,
-    timePickerOptions: TimePickerOptions = null,
-    timeTitleFormat: String = null,
-    titleFormat: String = null,
-    `type`: date | datetime | year | month | time | week = null,
-    use12h: js.UndefOr[Boolean] = js.undefined,
-    valueType: ValueType = null
-  ): AppendToBody = {
+  def apply(): AppendToBody = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appendToBody)) __obj.updateDynamic("appendToBody")(appendToBody.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearable)) __obj.updateDynamic("clearable")(clearable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.get.asInstanceOf[js.Any])
-    if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1(disabledDate))
-    if (disabledTime != null) __obj.updateDynamic("disabledTime")(js.Any.fromFunction1(disabledTime))
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (hourOptions != null) __obj.updateDynamic("hourOptions")(hourOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(hourStep)) __obj.updateDynamic("hourStep")(hourStep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (inputAttr != null) __obj.updateDynamic("inputAttr")(js.Any.fromFunction0(inputAttr))
-    if (inputClass != null) __obj.updateDynamic("inputClass")(inputClass.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (minuteOptions != null) __obj.updateDynamic("minuteOptions")(minuteOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(minuteStep)) __obj.updateDynamic("minuteStep")(minuteStep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(partialUpdate)) __obj.updateDynamic("partialUpdate")(partialUpdate.get.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popupClass != null) __obj.updateDynamic("popupClass")(popupClass.asInstanceOf[js.Any])
-    if (popupStyle != null) __obj.updateDynamic("popupStyle")(js.Any.fromFunction0(popupStyle))
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.get.asInstanceOf[js.Any])
-    if (rangeSeparator != null) __obj.updateDynamic("rangeSeparator")(rangeSeparator.asInstanceOf[js.Any])
-    if (secondOptions != null) __obj.updateDynamic("secondOptions")(secondOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(secondStep)) __obj.updateDynamic("secondStep")(secondStep.get.asInstanceOf[js.Any])
-    if (shortcuts != null) __obj.updateDynamic("shortcuts")(shortcuts.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTimeHeader)) __obj.updateDynamic("showTimeHeader")(showTimeHeader.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekNumber)) __obj.updateDynamic("showWeekNumber")(showWeekNumber.get.asInstanceOf[js.Any])
-    if (timePickerOptions != null) __obj.updateDynamic("timePickerOptions")(timePickerOptions.asInstanceOf[js.Any])
-    if (timeTitleFormat != null) __obj.updateDynamic("timeTitleFormat")(timeTitleFormat.asInstanceOf[js.Any])
-    if (titleFormat != null) __obj.updateDynamic("titleFormat")(titleFormat.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(use12h)) __obj.updateDynamic("use12h")(use12h.get.asInstanceOf[js.Any])
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppendToBody]
   }
+  @scala.inline
+  implicit class AppendToBodyOps[Self <: AppendToBody] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppendToBody(value: Boolean): Self = this.set("appendToBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendToBody: Self = this.set("appendToBody", js.undefined)
+    @scala.inline
+    def setClearable(value: Boolean): Self = this.set("clearable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearable: Self = this.set("clearable", js.undefined)
+    @scala.inline
+    def setConfirm(value: Boolean): Self = this.set("confirm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirm: Self = this.set("confirm", js.undefined)
+    @scala.inline
+    def setConfirmText(value: String): Self = this.set("confirmText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmText: Self = this.set("confirmText", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: Date): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisabledDate(value: /* date */ Date => Boolean): Self = this.set("disabledDate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDisabledDate: Self = this.set("disabledDate", js.undefined)
+    @scala.inline
+    def setDisabledTime(value: /* date */ Date => Boolean): Self = this.set("disabledTime", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDisabledTime: Self = this.set("disabledTime", js.undefined)
+    @scala.inline
+    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setHourOptionsVarargs(value: Double*): Self = this.set("hourOptions", js.Array(value :_*))
+    @scala.inline
+    def setHourOptions(value: js.Array[Double]): Self = this.set("hourOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHourOptions: Self = this.set("hourOptions", js.undefined)
+    @scala.inline
+    def setHourStep(value: Double): Self = this.set("hourStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHourStep: Self = this.set("hourStep", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setInputAttr(value: () => js.Object): Self = this.set("inputAttr", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteInputAttr: Self = this.set("inputAttr", js.undefined)
+    @scala.inline
+    def setInputClass(value: String): Self = this.set("inputClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputClass: Self = this.set("inputClass", js.undefined)
+    @scala.inline
+    def setLang(value: String | Lang): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setMinuteOptionsVarargs(value: Double*): Self = this.set("minuteOptions", js.Array(value :_*))
+    @scala.inline
+    def setMinuteOptions(value: js.Array[Double]): Self = this.set("minuteOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinuteOptions: Self = this.set("minuteOptions", js.undefined)
+    @scala.inline
+    def setMinuteStep(value: Double): Self = this.set("minuteStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinuteStep: Self = this.set("minuteStep", js.undefined)
+    @scala.inline
+    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setPartialUpdate(value: Boolean): Self = this.set("partialUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartialUpdate: Self = this.set("partialUpdate", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPopupClass(value: String): Self = this.set("popupClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupClass: Self = this.set("popupClass", js.undefined)
+    @scala.inline
+    def setPopupStyle(value: () => js.Object): Self = this.set("popupStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def deletePopupStyle: Self = this.set("popupStyle", js.undefined)
+    @scala.inline
+    def setRange(value: Boolean): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setRangeSeparator(value: String): Self = this.set("rangeSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeSeparator: Self = this.set("rangeSeparator", js.undefined)
+    @scala.inline
+    def setSecondOptionsVarargs(value: Double*): Self = this.set("secondOptions", js.Array(value :_*))
+    @scala.inline
+    def setSecondOptions(value: js.Array[Double]): Self = this.set("secondOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondOptions: Self = this.set("secondOptions", js.undefined)
+    @scala.inline
+    def setSecondStep(value: Double): Self = this.set("secondStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondStep: Self = this.set("secondStep", js.undefined)
+    @scala.inline
+    def setShortcutsVarargs(value: Shortcuts*): Self = this.set("shortcuts", js.Array(value :_*))
+    @scala.inline
+    def setShortcuts(value: js.Array[Shortcuts]): Self = this.set("shortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortcuts: Self = this.set("shortcuts", js.undefined)
+    @scala.inline
+    def setShowHour(value: Boolean): Self = this.set("showHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowHour: Self = this.set("showHour", js.undefined)
+    @scala.inline
+    def setShowMinute(value: Boolean): Self = this.set("showMinute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMinute: Self = this.set("showMinute", js.undefined)
+    @scala.inline
+    def setShowSecond(value: Boolean): Self = this.set("showSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSecond: Self = this.set("showSecond", js.undefined)
+    @scala.inline
+    def setShowTimeHeader(value: Boolean): Self = this.set("showTimeHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTimeHeader: Self = this.set("showTimeHeader", js.undefined)
+    @scala.inline
+    def setShowWeekNumber(value: Boolean): Self = this.set("showWeekNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowWeekNumber: Self = this.set("showWeekNumber", js.undefined)
+    @scala.inline
+    def setTimePickerOptions(value: TimePickerOptions): Self = this.set("timePickerOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePickerOptions: Self = this.set("timePickerOptions", js.undefined)
+    @scala.inline
+    def setTimeTitleFormat(value: String): Self = this.set("timeTitleFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeTitleFormat: Self = this.set("timeTitleFormat", js.undefined)
+    @scala.inline
+    def setTitleFormat(value: String): Self = this.set("titleFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleFormat: Self = this.set("titleFormat", js.undefined)
+    @scala.inline
+    def setType(value: date | datetime | year | month | time | week): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUse12h(value: Boolean): Self = this.set("use12h", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUse12h: Self = this.set("use12h", js.undefined)
+    @scala.inline
+    def setValueType(value: ValueType): Self = this.set("valueType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueType: Self = this.set("valueType", js.undefined)
+  }
+  
 }
 

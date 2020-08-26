@@ -13,6 +13,7 @@ trait FormInstance extends js.Object {
   def getFieldsError(): js.Array[FieldError] = js.native
   def getFieldsError(nameList: js.Array[NamePath]): js.Array[FieldError] = js.native
   def getFieldsValue(): Store = js.native
+  def getFieldsValue(nameList: js.UndefOr[scala.Nothing], filterFunc: js.Function1[/* meta */ Meta, Boolean]): Store = js.native
   def getFieldsValue(nameList: js.Array[NamePath]): Store = js.native
   def getFieldsValue(nameList: js.Array[NamePath], filterFunc: js.Function1[/* meta */ Meta, Boolean]): Store = js.native
   @JSName("getFieldsValue")
@@ -23,6 +24,7 @@ trait FormInstance extends js.Object {
   def isFieldValidating(name: NamePath): Boolean = js.native
   def isFieldsTouched(): Boolean = js.native
   def isFieldsTouched(allFieldsTouched: Boolean): Boolean = js.native
+  def isFieldsTouched(nameList: js.UndefOr[scala.Nothing], allFieldsTouched: Boolean): Boolean = js.native
   def isFieldsTouched(nameList: js.Array[NamePath]): Boolean = js.native
   def isFieldsTouched(nameList: js.Array[NamePath], allFieldsTouched: Boolean): Boolean = js.native
   def isFieldsValidating(nameList: js.Array[NamePath]): Boolean = js.native

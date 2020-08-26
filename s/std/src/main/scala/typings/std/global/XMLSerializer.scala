@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("XMLSerializer")
 @js.native
 class XMLSerializer ()
-  extends typings.std.XMLSerializer {
-  /* CompleteClass */
-  override def serializeToString(root: typings.std.Node): java.lang.String = js.native
-}
+  extends typings.std.XMLSerializer
 
 @JSGlobal("XMLSerializer")
 @js.native

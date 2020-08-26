@@ -91,52 +91,108 @@ trait HIT extends js.Object {
 
 object HIT {
   @scala.inline
-  def apply(
-    AssignmentDurationInSeconds: js.UndefOr[Long] = js.undefined,
-    AutoApprovalDelayInSeconds: js.UndefOr[Long] = js.undefined,
-    CreationTime: Timestamp = null,
-    Description: String = null,
-    Expiration: Timestamp = null,
-    HITGroupId: EntityId = null,
-    HITId: EntityId = null,
-    HITLayoutId: EntityId = null,
-    HITReviewStatus: HITReviewStatus = null,
-    HITStatus: HITStatus = null,
-    HITTypeId: EntityId = null,
-    Keywords: String = null,
-    MaxAssignments: js.UndefOr[Integer] = js.undefined,
-    NumberOfAssignmentsAvailable: js.UndefOr[Integer] = js.undefined,
-    NumberOfAssignmentsCompleted: js.UndefOr[Integer] = js.undefined,
-    NumberOfAssignmentsPending: js.UndefOr[Integer] = js.undefined,
-    QualificationRequirements: QualificationRequirementList = null,
-    Question: String = null,
-    RequesterAnnotation: String = null,
-    Reward: CurrencyAmount = null,
-    Title: String = null
-  ): HIT = {
+  def apply(): HIT = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AssignmentDurationInSeconds)) __obj.updateDynamic("AssignmentDurationInSeconds")(AssignmentDurationInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoApprovalDelayInSeconds)) __obj.updateDynamic("AutoApprovalDelayInSeconds")(AutoApprovalDelayInSeconds.get.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
-    if (HITGroupId != null) __obj.updateDynamic("HITGroupId")(HITGroupId.asInstanceOf[js.Any])
-    if (HITId != null) __obj.updateDynamic("HITId")(HITId.asInstanceOf[js.Any])
-    if (HITLayoutId != null) __obj.updateDynamic("HITLayoutId")(HITLayoutId.asInstanceOf[js.Any])
-    if (HITReviewStatus != null) __obj.updateDynamic("HITReviewStatus")(HITReviewStatus.asInstanceOf[js.Any])
-    if (HITStatus != null) __obj.updateDynamic("HITStatus")(HITStatus.asInstanceOf[js.Any])
-    if (HITTypeId != null) __obj.updateDynamic("HITTypeId")(HITTypeId.asInstanceOf[js.Any])
-    if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxAssignments)) __obj.updateDynamic("MaxAssignments")(MaxAssignments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfAssignmentsAvailable)) __obj.updateDynamic("NumberOfAssignmentsAvailable")(NumberOfAssignmentsAvailable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfAssignmentsCompleted)) __obj.updateDynamic("NumberOfAssignmentsCompleted")(NumberOfAssignmentsCompleted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfAssignmentsPending)) __obj.updateDynamic("NumberOfAssignmentsPending")(NumberOfAssignmentsPending.get.asInstanceOf[js.Any])
-    if (QualificationRequirements != null) __obj.updateDynamic("QualificationRequirements")(QualificationRequirements.asInstanceOf[js.Any])
-    if (Question != null) __obj.updateDynamic("Question")(Question.asInstanceOf[js.Any])
-    if (RequesterAnnotation != null) __obj.updateDynamic("RequesterAnnotation")(RequesterAnnotation.asInstanceOf[js.Any])
-    if (Reward != null) __obj.updateDynamic("Reward")(Reward.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[HIT]
   }
+  @scala.inline
+  implicit class HITOps[Self <: HIT] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignmentDurationInSeconds(value: Long): Self = this.set("AssignmentDurationInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentDurationInSeconds: Self = this.set("AssignmentDurationInSeconds", js.undefined)
+    @scala.inline
+    def setAutoApprovalDelayInSeconds(value: Long): Self = this.set("AutoApprovalDelayInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoApprovalDelayInSeconds: Self = this.set("AutoApprovalDelayInSeconds", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setExpiration(value: Timestamp): Self = this.set("Expiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiration: Self = this.set("Expiration", js.undefined)
+    @scala.inline
+    def setHITGroupId(value: EntityId): Self = this.set("HITGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHITGroupId: Self = this.set("HITGroupId", js.undefined)
+    @scala.inline
+    def setHITId(value: EntityId): Self = this.set("HITId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHITId: Self = this.set("HITId", js.undefined)
+    @scala.inline
+    def setHITLayoutId(value: EntityId): Self = this.set("HITLayoutId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHITLayoutId: Self = this.set("HITLayoutId", js.undefined)
+    @scala.inline
+    def setHITReviewStatus(value: HITReviewStatus): Self = this.set("HITReviewStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHITReviewStatus: Self = this.set("HITReviewStatus", js.undefined)
+    @scala.inline
+    def setHITStatus(value: HITStatus): Self = this.set("HITStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHITStatus: Self = this.set("HITStatus", js.undefined)
+    @scala.inline
+    def setHITTypeId(value: EntityId): Self = this.set("HITTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHITTypeId: Self = this.set("HITTypeId", js.undefined)
+    @scala.inline
+    def setKeywords(value: String): Self = this.set("Keywords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywords: Self = this.set("Keywords", js.undefined)
+    @scala.inline
+    def setMaxAssignments(value: Integer): Self = this.set("MaxAssignments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAssignments: Self = this.set("MaxAssignments", js.undefined)
+    @scala.inline
+    def setNumberOfAssignmentsAvailable(value: Integer): Self = this.set("NumberOfAssignmentsAvailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfAssignmentsAvailable: Self = this.set("NumberOfAssignmentsAvailable", js.undefined)
+    @scala.inline
+    def setNumberOfAssignmentsCompleted(value: Integer): Self = this.set("NumberOfAssignmentsCompleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfAssignmentsCompleted: Self = this.set("NumberOfAssignmentsCompleted", js.undefined)
+    @scala.inline
+    def setNumberOfAssignmentsPending(value: Integer): Self = this.set("NumberOfAssignmentsPending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfAssignmentsPending: Self = this.set("NumberOfAssignmentsPending", js.undefined)
+    @scala.inline
+    def setQualificationRequirementsVarargs(value: QualificationRequirement*): Self = this.set("QualificationRequirements", js.Array(value :_*))
+    @scala.inline
+    def setQualificationRequirements(value: QualificationRequirementList): Self = this.set("QualificationRequirements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualificationRequirements: Self = this.set("QualificationRequirements", js.undefined)
+    @scala.inline
+    def setQuestion(value: String): Self = this.set("Question", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuestion: Self = this.set("Question", js.undefined)
+    @scala.inline
+    def setRequesterAnnotation(value: String): Self = this.set("RequesterAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterAnnotation: Self = this.set("RequesterAnnotation", js.undefined)
+    @scala.inline
+    def setReward(value: CurrencyAmount): Self = this.set("Reward", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReward: Self = this.set("Reward", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+  }
+  
 }
 

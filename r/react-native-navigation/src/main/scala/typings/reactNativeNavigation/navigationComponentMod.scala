@@ -11,6 +11,7 @@ import typings.reactNativeNavigation.componentEventsMod.ScreenPoppedEvent
 import typings.reactNativeNavigation.componentEventsMod.SearchBarCancelPressedEvent
 import typings.reactNativeNavigation.componentEventsMod.SearchBarUpdatedEvent
 import typings.reactNativeNavigation.navigationComponentPropsMod.NavigationComponentProps
+import typings.reactNativeNavigation.optionsMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,6 +30,18 @@ object navigationComponentMod extends js.Object {
     def screenPopped(_event: ScreenPoppedEvent): Unit = js.native
     def searchBarCancelPressed(_event: SearchBarCancelPressedEvent): Unit = js.native
     def searchBarUpdated(_event: SearchBarUpdatedEvent): Unit = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object NavigationComponent extends js.Object {
+    /**
+      * Options used to apply a style configuration when the screen appears.
+      *
+      * This field can either contain the concrete options to be applied, or a generator function
+      * which accepts props and returns an Options object.
+      */
+    var options: (js.Function1[/* props */ js.UndefOr[js.Any], Options]) | Options = js.native
   }
   
 }

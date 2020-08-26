@@ -17,7 +17,17 @@ object mkdtemp extends js.Object {
   def apply(prefix: String, callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]): Unit = js.native
   def apply(
     prefix: String,
-    options: js.UndefOr[BaseEncodingOptions | BufferEncoding | Null | String],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
+  ): Unit = js.native
+  def apply(
+    prefix: String,
+    options: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String | Buffer, Unit]
+  ): Unit = js.native
+  def apply(
+    prefix: String,
+    options: Null,
     callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
   ): Unit = js.native
   def apply(
@@ -27,8 +37,18 @@ object mkdtemp extends js.Object {
   ): Unit = js.native
   def apply(
     prefix: String,
+    options: BufferEncoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]
+  ): Unit = js.native
+  def apply(
+    prefix: String,
     options: `2`,
     callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
+  ): Unit = js.native
+  def apply(
+    prefix: String,
+    options: BaseEncodingOptions,
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
   ): Unit = js.native
   /**
     * Asynchronously creates a unique temporary directory.

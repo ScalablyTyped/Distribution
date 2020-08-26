@@ -72,12 +72,14 @@ object releaseApiMod extends js.Object {
     def deleteDefinitionEnvironmentTemplate(project: String, templateId: String): js.Promise[Unit] = js.native
     def deleteDefinitionTag(project: String, releaseDefinitionId: Double, tag: String): js.Promise[js.Array[String]] = js.native
     def deleteFavorites(project: String, scope: String): js.Promise[Unit] = js.native
+    def deleteFavorites(project: String, scope: String, identityId: js.UndefOr[scala.Nothing], favoriteItemIds: String): js.Promise[Unit] = js.native
     def deleteFavorites(project: String, scope: String, identityId: String): js.Promise[Unit] = js.native
     def deleteFavorites(project: String, scope: String, identityId: String, favoriteItemIds: String): js.Promise[Unit] = js.native
     def deleteFolder(project: String, path: String): js.Promise[Unit] = js.native
     def deleteRelease(project: String, releaseId: Double): js.Promise[Unit] = js.native
     def deleteRelease(project: String, releaseId: Double, comment: String): js.Promise[Unit] = js.native
     def deleteReleaseDefinition(project: String, definitionId: Double): js.Promise[Unit] = js.native
+    def deleteReleaseDefinition(project: String, definitionId: Double, comment: js.UndefOr[scala.Nothing], forceDelete: Boolean): js.Promise[Unit] = js.native
     def deleteReleaseDefinition(project: String, definitionId: Double, comment: String): js.Promise[Unit] = js.native
     def deleteReleaseDefinition(project: String, definitionId: Double, comment: String, forceDelete: Boolean): js.Promise[Unit] = js.native
     def deleteReleaseTag(project: String, releaseId: Double, tag: String): js.Promise[js.Array[String]] = js.native
@@ -103,6 +105,7 @@ object releaseApiMod extends js.Object {
     def getAutoTriggerIssues(artifactType: String, sourceId: String, artifactVersionId: String, project: String): js.Promise[js.Array[AutoTriggerIssue]] = js.native
     def getDefinitionEnvironmentTemplate(project: String, templateId: String): js.Promise[ReleaseDefinitionEnvironmentTemplate] = js.native
     def getDefinitionEnvironments(project: String): js.Promise[js.Array[DefinitionEnvironmentReference]] = js.native
+    def getDefinitionEnvironments(project: String, taskGroupId: js.UndefOr[scala.Nothing], propertyFilters: js.Array[String]): js.Promise[js.Array[DefinitionEnvironmentReference]] = js.native
     def getDefinitionEnvironments(project: String, taskGroupId: String): js.Promise[js.Array[DefinitionEnvironmentReference]] = js.native
     def getDefinitionEnvironments(project: String, taskGroupId: String, propertyFilters: js.Array[String]): js.Promise[js.Array[DefinitionEnvironmentReference]] = js.native
     def getDefinitionRevision(project: String, definitionId: Double, revision: Double): js.Promise[ReadableStream] = js.native
@@ -128,6 +131,7 @@ object releaseApiMod extends js.Object {
     def getFavorites(project: String, scope: String): js.Promise[js.Array[FavoriteItem]] = js.native
     def getFavorites(project: String, scope: String, identityId: String): js.Promise[js.Array[FavoriteItem]] = js.native
     def getFolders(project: String): js.Promise[js.Array[Folder]] = js.native
+    def getFolders(project: String, path: js.UndefOr[scala.Nothing], queryOrder: FolderPathQueryOrder): js.Promise[js.Array[Folder]] = js.native
     def getFolders(project: String, path: String): js.Promise[js.Array[Folder]] = js.native
     def getFolders(project: String, path: String, queryOrder: FolderPathQueryOrder): js.Promise[js.Array[Folder]] = js.native
     def getGateLog(project: String, releaseId: Double, environmentId: Double, gateId: Double, taskId: Double): js.Promise[ReadableStream] = js.native
@@ -142,6 +146,12 @@ object releaseApiMod extends js.Object {
     def getMetrics(project: String): js.Promise[js.Array[Metric]] = js.native
     def getMetrics(project: String, minMetricsTime: Date): js.Promise[js.Array[Metric]] = js.native
     def getRelease(project: String, releaseId: Double): js.Promise[Release] = js.native
+    def getRelease(
+      project: String,
+      releaseId: Double,
+      approvalFilters: js.UndefOr[scala.Nothing],
+      propertyFilters: js.Array[String]
+    ): js.Promise[Release] = js.native
     def getRelease(project: String, releaseId: Double, approvalFilters: ApprovalFilters): js.Promise[Release] = js.native
     def getRelease(
       project: String,
@@ -150,6 +160,7 @@ object releaseApiMod extends js.Object {
       propertyFilters: js.Array[String]
     ): js.Promise[Release] = js.native
     def getReleaseChanges(project: String, releaseId: Double): js.Promise[js.Array[Change]] = js.native
+    def getReleaseChanges(project: String, releaseId: Double, baseReleaseId: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[Change]] = js.native
     def getReleaseChanges(project: String, releaseId: Double, baseReleaseId: Double): js.Promise[js.Array[Change]] = js.native
     def getReleaseChanges(project: String, releaseId: Double, baseReleaseId: Double, top: Double): js.Promise[js.Array[Change]] = js.native
     def getReleaseDefinition(project: String, definitionId: Double): js.Promise[ReleaseDefinition] = js.native
@@ -157,6 +168,13 @@ object releaseApiMod extends js.Object {
     def getReleaseDefinitionHistory(project: String, definitionId: Double): js.Promise[js.Array[ReleaseDefinitionRevision]] = js.native
     def getReleaseDefinitionRevision(project: String, definitionId: Double, revision: Double): js.Promise[ReadableStream] = js.native
     def getReleaseDefinitionSummary(project: String, definitionId: Double, releaseCount: Double): js.Promise[ReleaseDefinitionSummary] = js.native
+    def getReleaseDefinitionSummary(
+      project: String,
+      definitionId: Double,
+      releaseCount: Double,
+      includeArtifact: js.UndefOr[scala.Nothing],
+      definitionEnvironmentIdsFilter: js.Array[Double]
+    ): js.Promise[ReleaseDefinitionSummary] = js.native
     def getReleaseDefinitionSummary(project: String, definitionId: Double, releaseCount: Double, includeArtifact: Boolean): js.Promise[ReleaseDefinitionSummary] = js.native
     def getReleaseDefinitionSummary(
       project: String,
@@ -188,6 +206,7 @@ object releaseApiMod extends js.Object {
     def getReleaseSettings(project: String): js.Promise[ReleaseSettings] = js.native
     def getReleaseTags(project: String, releaseId: Double): js.Promise[js.Array[String]] = js.native
     def getReleaseWorkItemsRefs(project: String, releaseId: Double): js.Promise[js.Array[ReleaseWorkItemRef]] = js.native
+    def getReleaseWorkItemsRefs(project: String, releaseId: Double, baseReleaseId: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[ReleaseWorkItemRef]] = js.native
     def getReleaseWorkItemsRefs(project: String, releaseId: Double, baseReleaseId: Double): js.Promise[js.Array[ReleaseWorkItemRef]] = js.native
     def getReleaseWorkItemsRefs(project: String, releaseId: Double, baseReleaseId: Double, top: Double): js.Promise[js.Array[ReleaseWorkItemRef]] = js.native
     def getReleases(
@@ -247,6 +266,15 @@ object releaseApiMod extends js.Object {
       environmentId: Double,
       releaseDeployPhaseId: Double,
       taskId: Double,
+      startLine: js.UndefOr[scala.Nothing],
+      endLine: Double
+    ): js.Promise[ReadableStream] = js.native
+    def getTaskLog(
+      project: String,
+      releaseId: Double,
+      environmentId: Double,
+      releaseDeployPhaseId: Double,
+      taskId: Double,
       startLine: Double
     ): js.Promise[ReadableStream] = js.native
     def getTaskLog(
@@ -265,6 +293,16 @@ object releaseApiMod extends js.Object {
       attemptId: Double,
       timelineId: String,
       taskId: Double
+    ): js.Promise[ReadableStream] = js.native
+    def getTaskLog2(
+      project: String,
+      releaseId: Double,
+      environmentId: Double,
+      attemptId: Double,
+      timelineId: String,
+      taskId: Double,
+      startLine: js.UndefOr[scala.Nothing],
+      endLine: Double
     ): js.Promise[ReadableStream] = js.native
     def getTaskLog2(
       project: String,

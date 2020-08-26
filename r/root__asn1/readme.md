@@ -12,7 +12,7 @@ VanillaJS, Lightweight, Zero-Dependency, ASN.1 encoder and decoder.
 | Keywords           | ASN.1, asn1, x509, PEM |
 | # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 32794 |
+| # downloads        | 58976 |
 | # stars            | 0 |
 
 ## Links

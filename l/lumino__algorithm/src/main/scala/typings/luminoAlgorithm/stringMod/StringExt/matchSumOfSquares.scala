@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/string", "StringExt.matchSumOfSquares")
+@JSImport("@lumino/algorithm/types/string", "StringExt.matchSumOfSquares")
 @js.native
 object matchSumOfSquares extends js.Object {
   /**

@@ -58,6 +58,7 @@ trait BackgroundGeolocationPlugin extends js.Object {
     * @param fail
     */
   def configure(options: ConfigureOptions): Unit = js.native
+  def configure(options: ConfigureOptions, success: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
   def configure(options: ConfigureOptions, success: js.Function0[Unit]): Unit = js.native
   def configure(options: ConfigureOptions, success: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
   /**
@@ -72,6 +73,10 @@ trait BackgroundGeolocationPlugin extends js.Object {
     * @param fail
     */
   def deleteAllLocations(): Unit = js.native
+  def deleteAllLocations(
+    success: js.UndefOr[scala.Nothing],
+    fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
+  ): Unit = js.native
   def deleteAllLocations(success: js.Function0[Unit]): Unit = js.native
   def deleteAllLocations(success: js.Function0[Unit], fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]): Unit = js.native
   /**
@@ -84,6 +89,11 @@ trait BackgroundGeolocationPlugin extends js.Object {
     * @param fail
     */
   def deleteLocation(locationId: Double): Unit = js.native
+  def deleteLocation(
+    locationId: Double,
+    success: js.UndefOr[scala.Nothing],
+    fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
+  ): Unit = js.native
   def deleteLocation(locationId: Double, success: js.Function0[Unit]): Unit = js.native
   def deleteLocation(
     locationId: Double,
@@ -98,6 +108,11 @@ trait BackgroundGeolocationPlugin extends js.Object {
     * @param fail
     */
   def endTask(taskKey: Double): Unit = js.native
+  def endTask(
+    taskKey: Double,
+    success: js.UndefOr[scala.Nothing],
+    fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
+  ): Unit = js.native
   def endTask(taskKey: Double, success: js.Function0[Unit]): Unit = js.native
   def endTask(
     taskKey: Double,
@@ -114,6 +129,10 @@ trait BackgroundGeolocationPlugin extends js.Object {
     * @param fail
     */
   def forceSync(): Unit = js.native
+  def forceSync(
+    success: js.UndefOr[scala.Nothing],
+    fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
+  ): Unit = js.native
   def forceSync(success: js.Function0[Unit]): Unit = js.native
   def forceSync(success: js.Function0[Unit], fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]): Unit = js.native
   /**
@@ -137,6 +156,11 @@ trait BackgroundGeolocationPlugin extends js.Object {
     * @param options
     */
   def getCurrentLocation(success: js.Function1[/* location */ Location, Unit]): Unit = js.native
+  def getCurrentLocation(
+    success: js.Function1[/* location */ Location, Unit],
+    fail: js.UndefOr[scala.Nothing],
+    options: LocationOptions
+  ): Unit = js.native
   def getCurrentLocation(
     success: js.Function1[/* location */ Location, Unit],
     fail: js.Function1[/* error */ LocationError, Unit | Null]
@@ -397,6 +421,11 @@ trait BackgroundGeolocationPlugin extends js.Object {
     * BackgroundGeolocation.switchMode(BackgroundGeolocation.BACKGROUND_MODE);
     */
   def switchMode(modeId: ServiceMode): Unit = js.native
+  def switchMode(
+    modeId: ServiceMode,
+    success: js.UndefOr[scala.Nothing],
+    fail: js.Function1[/* error */ BackgroundGeolocationError, Unit]
+  ): Unit = js.native
   def switchMode(modeId: ServiceMode, success: js.Function0[Unit]): Unit = js.native
   def switchMode(
     modeId: ServiceMode,

@@ -23,7 +23,7 @@ trait GetServiceQuotaResult extends js.Object {
     */
   val globalQuota: Boolean = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   val quotaCode: String = js.native
@@ -56,5 +56,38 @@ object GetServiceQuotaResult {
     val __obj = js.Dynamic.literal(adjustable = adjustable.asInstanceOf[js.Any], arn = arn.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], globalQuota = globalQuota.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], quotaCode = quotaCode.asInstanceOf[js.Any], quotaName = quotaName.asInstanceOf[js.Any], serviceCode = serviceCode.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceQuotaResult]
   }
+  @scala.inline
+  implicit class GetServiceQuotaResultOps[Self <: GetServiceQuotaResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdjustable(value: Boolean): Self = this.set("adjustable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultValue(value: Double): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGlobalQuota(value: Boolean): Self = this.set("globalQuota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQuotaCode(value: String): Self = this.set("quotaCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQuotaName(value: String): Self = this.set("quotaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceCode(value: String): Self = this.set("serviceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+  }
+  
 }
 

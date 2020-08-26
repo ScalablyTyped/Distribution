@@ -42,26 +42,56 @@ trait VirtualInterfaceTestHistory extends js.Object {
 
 object VirtualInterfaceTestHistory {
   @scala.inline
-  def apply(
-    bgpPeers: BGPPeerIdList = null,
-    endTime: EndTime = null,
-    ownerAccount: OwnerAccount = null,
-    startTime: StartTime = null,
-    status: FailureTestHistoryStatus = null,
-    testDurationInMinutes: js.UndefOr[TestDuration] = js.undefined,
-    testId: TestId = null,
-    virtualInterfaceId: VirtualInterfaceId = null
-  ): VirtualInterfaceTestHistory = {
+  def apply(): VirtualInterfaceTestHistory = {
     val __obj = js.Dynamic.literal()
-    if (bgpPeers != null) __obj.updateDynamic("bgpPeers")(bgpPeers.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(testDurationInMinutes)) __obj.updateDynamic("testDurationInMinutes")(testDurationInMinutes.get.asInstanceOf[js.Any])
-    if (testId != null) __obj.updateDynamic("testId")(testId.asInstanceOf[js.Any])
-    if (virtualInterfaceId != null) __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualInterfaceTestHistory]
   }
+  @scala.inline
+  implicit class VirtualInterfaceTestHistoryOps[Self <: VirtualInterfaceTestHistory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBgpPeersVarargs(value: BGPPeerId*): Self = this.set("bgpPeers", js.Array(value :_*))
+    @scala.inline
+    def setBgpPeers(value: BGPPeerIdList): Self = this.set("bgpPeers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgpPeers: Self = this.set("bgpPeers", js.undefined)
+    @scala.inline
+    def setEndTime(value: EndTime): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setOwnerAccount(value: OwnerAccount): Self = this.set("ownerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAccount: Self = this.set("ownerAccount", js.undefined)
+    @scala.inline
+    def setStartTime(value: StartTime): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: FailureTestHistoryStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTestDurationInMinutes(value: TestDuration): Self = this.set("testDurationInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestDurationInMinutes: Self = this.set("testDurationInMinutes", js.undefined)
+    @scala.inline
+    def setTestId(value: TestId): Self = this.set("testId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestId: Self = this.set("testId", js.undefined)
+    @scala.inline
+    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = this.set("virtualInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualInterfaceId: Self = this.set("virtualInterfaceId", js.undefined)
+  }
+  
 }
 

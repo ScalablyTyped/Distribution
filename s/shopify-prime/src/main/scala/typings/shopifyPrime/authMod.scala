@@ -12,7 +12,38 @@ import scala.scalajs.js.annotation._
 object authMod extends js.Object {
   def authorize(code: String, shopDomain: String, shopifyApiKey: String, shopifySecretKey: String): js.Promise[String] = js.native
   def buildAuthorizationUrl(scopes: js.Array[AuthScope], shopifyDomain: String, shopifyApiKey: String): js.Promise[String] = js.native
+  def buildAuthorizationUrl(
+    scopes: js.Array[AuthScope],
+    shopifyDomain: String,
+    shopifyApiKey: String,
+    redirectUrl: js.UndefOr[scala.Nothing],
+    state: js.UndefOr[scala.Nothing],
+    grants: js.Array[AuthGrant]
+  ): js.Promise[String] = js.native
+  def buildAuthorizationUrl(
+    scopes: js.Array[AuthScope],
+    shopifyDomain: String,
+    shopifyApiKey: String,
+    redirectUrl: js.UndefOr[scala.Nothing],
+    state: String
+  ): js.Promise[String] = js.native
+  def buildAuthorizationUrl(
+    scopes: js.Array[AuthScope],
+    shopifyDomain: String,
+    shopifyApiKey: String,
+    redirectUrl: js.UndefOr[scala.Nothing],
+    state: String,
+    grants: js.Array[AuthGrant]
+  ): js.Promise[String] = js.native
   def buildAuthorizationUrl(scopes: js.Array[AuthScope], shopifyDomain: String, shopifyApiKey: String, redirectUrl: String): js.Promise[String] = js.native
+  def buildAuthorizationUrl(
+    scopes: js.Array[AuthScope],
+    shopifyDomain: String,
+    shopifyApiKey: String,
+    redirectUrl: String,
+    state: js.UndefOr[scala.Nothing],
+    grants: js.Array[AuthGrant]
+  ): js.Promise[String] = js.native
   def buildAuthorizationUrl(
     scopes: js.Array[AuthScope],
     shopifyDomain: String,

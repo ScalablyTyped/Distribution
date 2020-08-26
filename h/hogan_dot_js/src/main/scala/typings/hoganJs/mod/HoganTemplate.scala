@@ -15,6 +15,7 @@ trait HoganTemplate extends js.Object {
     * @returns A rendered template.
     */
   def render(context: Context): String = js.native
+  def render(context: Context, partials: js.UndefOr[scala.Nothing], indent: String): String = js.native
   def render(context: Context, partials: Partials): String = js.native
   def render(context: Context, partials: Partials, indent: String): String = js.native
 }

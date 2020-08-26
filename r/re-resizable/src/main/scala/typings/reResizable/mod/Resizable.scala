@@ -39,6 +39,7 @@ class Resizable protected ()
   def base: js.UndefOr[HTMLElement] = js.native
   def bindEvents(): Unit = js.native
   def calculateNewMaxFromBoundary(): MaxHeight = js.native
+  def calculateNewMaxFromBoundary(maxWidth: js.UndefOr[scala.Nothing], maxHeight: Double): MaxHeight = js.native
   def calculateNewMaxFromBoundary(maxWidth: Double): MaxHeight = js.native
   def calculateNewMaxFromBoundary(maxWidth: Double, maxHeight: Double): MaxHeight = js.native
   def calculateNewSizeFromAspectRatio(newWidth: Double, newHeight: Double, max: HeightWidth, min: HeightWidth): NewHeight = js.native

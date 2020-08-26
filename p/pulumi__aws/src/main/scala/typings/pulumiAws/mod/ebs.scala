@@ -5,6 +5,8 @@ import typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKeyState
 import typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefaultArgs
 import typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefaultState
 import typings.pulumiAws.getDefaultKmsKeyMod.GetDefaultKmsKeyResult
+import typings.pulumiAws.getEbsVolumesMod.GetEbsVolumesArgs
+import typings.pulumiAws.getEbsVolumesMod.GetEbsVolumesResult
 import typings.pulumiAws.getEncryptionByDefaultMod.GetEncryptionByDefaultResult
 import typings.pulumiAws.getSnapshotIdsMod.GetSnapshotIdsArgs
 import typings.pulumiAws.getSnapshotIdsMod.GetSnapshotIdsResult
@@ -55,6 +57,7 @@ object ebs extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: EncryptionByDefaultArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: EncryptionByDefaultArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -100,19 +103,26 @@ object ebs extends js.Object {
     def this(name: String, args: VolumeArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getDefaultKmsKey(): js.Promise[GetDefaultKmsKeyResult] with GetDefaultKmsKeyResult = js.native
-  def getDefaultKmsKey(opts: InvokeOptions): js.Promise[GetDefaultKmsKeyResult] with GetDefaultKmsKeyResult = js.native
-  def getEncryptionByDefault(): js.Promise[GetEncryptionByDefaultResult] with GetEncryptionByDefaultResult = js.native
-  def getEncryptionByDefault(opts: InvokeOptions): js.Promise[GetEncryptionByDefaultResult] with GetEncryptionByDefaultResult = js.native
-  def getSnapshot(): js.Promise[GetSnapshotResult] with GetSnapshotResult = js.native
-  def getSnapshot(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] with GetSnapshotResult = js.native
-  def getSnapshot(args: GetSnapshotArgs, opts: InvokeOptions): js.Promise[GetSnapshotResult] with GetSnapshotResult = js.native
-  def getSnapshotIds(): js.Promise[GetSnapshotIdsResult] with GetSnapshotIdsResult = js.native
-  def getSnapshotIds(args: GetSnapshotIdsArgs): js.Promise[GetSnapshotIdsResult] with GetSnapshotIdsResult = js.native
-  def getSnapshotIds(args: GetSnapshotIdsArgs, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] with GetSnapshotIdsResult = js.native
-  def getVolume(): js.Promise[GetVolumeResult] with GetVolumeResult = js.native
-  def getVolume(args: GetVolumeArgs): js.Promise[GetVolumeResult] with GetVolumeResult = js.native
-  def getVolume(args: GetVolumeArgs, opts: InvokeOptions): js.Promise[GetVolumeResult] with GetVolumeResult = js.native
+  def getDefaultKmsKey(): js.Promise[GetDefaultKmsKeyResult] = js.native
+  def getDefaultKmsKey(opts: InvokeOptions): js.Promise[GetDefaultKmsKeyResult] = js.native
+  def getEbsVolumes(): js.Promise[GetEbsVolumesResult] = js.native
+  def getEbsVolumes(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = js.native
+  def getEbsVolumes(args: GetEbsVolumesArgs): js.Promise[GetEbsVolumesResult] = js.native
+  def getEbsVolumes(args: GetEbsVolumesArgs, opts: InvokeOptions): js.Promise[GetEbsVolumesResult] = js.native
+  def getEncryptionByDefault(): js.Promise[GetEncryptionByDefaultResult] = js.native
+  def getEncryptionByDefault(opts: InvokeOptions): js.Promise[GetEncryptionByDefaultResult] = js.native
+  def getSnapshot(): js.Promise[GetSnapshotResult] = js.native
+  def getSnapshot(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSnapshotResult] = js.native
+  def getSnapshot(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] = js.native
+  def getSnapshot(args: GetSnapshotArgs, opts: InvokeOptions): js.Promise[GetSnapshotResult] = js.native
+  def getSnapshotIds(): js.Promise[GetSnapshotIdsResult] = js.native
+  def getSnapshotIds(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = js.native
+  def getSnapshotIds(args: GetSnapshotIdsArgs): js.Promise[GetSnapshotIdsResult] = js.native
+  def getSnapshotIds(args: GetSnapshotIdsArgs, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = js.native
+  def getVolume(): js.Promise[GetVolumeResult] = js.native
+  def getVolume(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVolumeResult] = js.native
+  def getVolume(args: GetVolumeArgs): js.Promise[GetVolumeResult] = js.native
+  def getVolume(args: GetVolumeArgs, opts: InvokeOptions): js.Promise[GetVolumeResult] = js.native
   /* static members */
   @js.native
   object DefaultKmsKey extends js.Object {
@@ -123,8 +133,10 @@ object ebs extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = js.native
     def get(name: String, id: Input[ID], state: DefaultKmsKeyState): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = js.native
     def get(name: String, id: Input[ID], state: DefaultKmsKeyState, opts: CustomResourceOptions): typings.pulumiAws.defaultKmsKeyMod.DefaultKmsKey = js.native
     /**
@@ -144,8 +156,10 @@ object ebs extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = js.native
     def get(name: String, id: Input[ID], state: EncryptionByDefaultState): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = js.native
     def get(name: String, id: Input[ID], state: EncryptionByDefaultState, opts: CustomResourceOptions): typings.pulumiAws.encryptionByDefaultMod.EncryptionByDefault = js.native
     /**
@@ -165,8 +179,10 @@ object ebs extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.snapshotMod.Snapshot = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.snapshotMod.Snapshot = js.native
     def get(name: String, id: Input[ID], state: SnapshotState): typings.pulumiAws.snapshotMod.Snapshot = js.native
     def get(name: String, id: Input[ID], state: SnapshotState, opts: CustomResourceOptions): typings.pulumiAws.snapshotMod.Snapshot = js.native
     /**
@@ -186,8 +202,10 @@ object ebs extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = js.native
     def get(name: String, id: Input[ID], state: SnapshotCopyState): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = js.native
     def get(name: String, id: Input[ID], state: SnapshotCopyState, opts: CustomResourceOptions): typings.pulumiAws.snapshotCopyMod.SnapshotCopy = js.native
     /**
@@ -207,8 +225,10 @@ object ebs extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.volumeMod.Volume = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.volumeMod.Volume = js.native
     def get(name: String, id: Input[ID], state: VolumeState): typings.pulumiAws.volumeMod.Volume = js.native
     def get(name: String, id: Input[ID], state: VolumeState, opts: CustomResourceOptions): typings.pulumiAws.volumeMod.Volume = js.native
     /**

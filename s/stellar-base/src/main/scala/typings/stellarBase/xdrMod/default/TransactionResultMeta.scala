@@ -1,0 +1,35 @@
+package typings.stellarBase.xdrMod.default
+
+import typings.node.Buffer
+import typings.stellarBase.anon.FeeProcessing
+import typings.stellarBase.stellarBaseStrings.base64
+import typings.stellarBase.stellarBaseStrings.hex
+import typings.stellarBase.stellarBaseStrings.raw
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("stellar-base/types/xdr", "TransactionResultMeta")
+@js.native
+class TransactionResultMeta protected ()
+  extends typings.stellarBase.xdrMod.xdr.TransactionResultMeta {
+  def this(attributes: FeeProcessing) = this()
+}
+
+/* static members */
+@JSImport("stellar-base/types/xdr", "TransactionResultMeta")
+@js.native
+object TransactionResultMeta extends js.Object {
+  def fromXDR(input: Buffer): typings.stellarBase.xdrMod.xdr.TransactionResultMeta = js.native
+  @JSName("fromXDR")
+  def fromXDR_base64(input: String, format: base64): typings.stellarBase.xdrMod.xdr.TransactionResultMeta = js.native
+  @JSName("fromXDR")
+  def fromXDR_hex(input: String, format: hex): typings.stellarBase.xdrMod.xdr.TransactionResultMeta = js.native
+  @JSName("fromXDR")
+  def fromXDR_raw(input: Buffer, format: raw): typings.stellarBase.xdrMod.xdr.TransactionResultMeta = js.native
+  def isValid(value: typings.stellarBase.xdrMod.xdr.TransactionResultMeta): Boolean = js.native
+  def read(io: Buffer): typings.stellarBase.xdrMod.xdr.TransactionResultMeta = js.native
+  def toXDR(value: typings.stellarBase.xdrMod.xdr.TransactionResultMeta): Buffer = js.native
+  def write(value: typings.stellarBase.xdrMod.xdr.TransactionResultMeta, io: Buffer): Unit = js.native
+}
+

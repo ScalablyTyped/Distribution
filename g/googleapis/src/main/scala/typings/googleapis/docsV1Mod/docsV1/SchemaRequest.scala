@@ -77,42 +77,86 @@ trait SchemaRequest extends js.Object {
 
 object SchemaRequest {
   @scala.inline
-  def apply(
-    createNamedRange: SchemaCreateNamedRangeRequest = null,
-    createParagraphBullets: SchemaCreateParagraphBulletsRequest = null,
-    deleteContentRange: SchemaDeleteContentRangeRequest = null,
-    deleteNamedRange: SchemaDeleteNamedRangeRequest = null,
-    deleteParagraphBullets: SchemaDeleteParagraphBulletsRequest = null,
-    deletePositionedObject: SchemaDeletePositionedObjectRequest = null,
-    deleteTableColumn: SchemaDeleteTableColumnRequest = null,
-    deleteTableRow: SchemaDeleteTableRowRequest = null,
-    insertInlineImage: SchemaInsertInlineImageRequest = null,
-    insertPageBreak: SchemaInsertPageBreakRequest = null,
-    insertTable: SchemaInsertTableRequest = null,
-    insertTableRow: SchemaInsertTableRowRequest = null,
-    insertText: SchemaInsertTextRequest = null,
-    replaceAllText: SchemaReplaceAllTextRequest = null,
-    updateParagraphStyle: SchemaUpdateParagraphStyleRequest = null,
-    updateTextStyle: SchemaUpdateTextStyleRequest = null
-  ): SchemaRequest = {
+  def apply(): SchemaRequest = {
     val __obj = js.Dynamic.literal()
-    if (createNamedRange != null) __obj.updateDynamic("createNamedRange")(createNamedRange.asInstanceOf[js.Any])
-    if (createParagraphBullets != null) __obj.updateDynamic("createParagraphBullets")(createParagraphBullets.asInstanceOf[js.Any])
-    if (deleteContentRange != null) __obj.updateDynamic("deleteContentRange")(deleteContentRange.asInstanceOf[js.Any])
-    if (deleteNamedRange != null) __obj.updateDynamic("deleteNamedRange")(deleteNamedRange.asInstanceOf[js.Any])
-    if (deleteParagraphBullets != null) __obj.updateDynamic("deleteParagraphBullets")(deleteParagraphBullets.asInstanceOf[js.Any])
-    if (deletePositionedObject != null) __obj.updateDynamic("deletePositionedObject")(deletePositionedObject.asInstanceOf[js.Any])
-    if (deleteTableColumn != null) __obj.updateDynamic("deleteTableColumn")(deleteTableColumn.asInstanceOf[js.Any])
-    if (deleteTableRow != null) __obj.updateDynamic("deleteTableRow")(deleteTableRow.asInstanceOf[js.Any])
-    if (insertInlineImage != null) __obj.updateDynamic("insertInlineImage")(insertInlineImage.asInstanceOf[js.Any])
-    if (insertPageBreak != null) __obj.updateDynamic("insertPageBreak")(insertPageBreak.asInstanceOf[js.Any])
-    if (insertTable != null) __obj.updateDynamic("insertTable")(insertTable.asInstanceOf[js.Any])
-    if (insertTableRow != null) __obj.updateDynamic("insertTableRow")(insertTableRow.asInstanceOf[js.Any])
-    if (insertText != null) __obj.updateDynamic("insertText")(insertText.asInstanceOf[js.Any])
-    if (replaceAllText != null) __obj.updateDynamic("replaceAllText")(replaceAllText.asInstanceOf[js.Any])
-    if (updateParagraphStyle != null) __obj.updateDynamic("updateParagraphStyle")(updateParagraphStyle.asInstanceOf[js.Any])
-    if (updateTextStyle != null) __obj.updateDynamic("updateTextStyle")(updateTextStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRequest]
   }
+  @scala.inline
+  implicit class SchemaRequestOps[Self <: SchemaRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateNamedRange(value: SchemaCreateNamedRangeRequest): Self = this.set("createNamedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateNamedRange: Self = this.set("createNamedRange", js.undefined)
+    @scala.inline
+    def setCreateParagraphBullets(value: SchemaCreateParagraphBulletsRequest): Self = this.set("createParagraphBullets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateParagraphBullets: Self = this.set("createParagraphBullets", js.undefined)
+    @scala.inline
+    def setDeleteContentRange(value: SchemaDeleteContentRangeRequest): Self = this.set("deleteContentRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteContentRange: Self = this.set("deleteContentRange", js.undefined)
+    @scala.inline
+    def setDeleteNamedRange(value: SchemaDeleteNamedRangeRequest): Self = this.set("deleteNamedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteNamedRange: Self = this.set("deleteNamedRange", js.undefined)
+    @scala.inline
+    def setDeleteParagraphBullets(value: SchemaDeleteParagraphBulletsRequest): Self = this.set("deleteParagraphBullets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteParagraphBullets: Self = this.set("deleteParagraphBullets", js.undefined)
+    @scala.inline
+    def setDeletePositionedObject(value: SchemaDeletePositionedObjectRequest): Self = this.set("deletePositionedObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletePositionedObject: Self = this.set("deletePositionedObject", js.undefined)
+    @scala.inline
+    def setDeleteTableColumn(value: SchemaDeleteTableColumnRequest): Self = this.set("deleteTableColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteTableColumn: Self = this.set("deleteTableColumn", js.undefined)
+    @scala.inline
+    def setDeleteTableRow(value: SchemaDeleteTableRowRequest): Self = this.set("deleteTableRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteTableRow: Self = this.set("deleteTableRow", js.undefined)
+    @scala.inline
+    def setInsertInlineImage(value: SchemaInsertInlineImageRequest): Self = this.set("insertInlineImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertInlineImage: Self = this.set("insertInlineImage", js.undefined)
+    @scala.inline
+    def setInsertPageBreak(value: SchemaInsertPageBreakRequest): Self = this.set("insertPageBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertPageBreak: Self = this.set("insertPageBreak", js.undefined)
+    @scala.inline
+    def setInsertTable(value: SchemaInsertTableRequest): Self = this.set("insertTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertTable: Self = this.set("insertTable", js.undefined)
+    @scala.inline
+    def setInsertTableRow(value: SchemaInsertTableRowRequest): Self = this.set("insertTableRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertTableRow: Self = this.set("insertTableRow", js.undefined)
+    @scala.inline
+    def setInsertText(value: SchemaInsertTextRequest): Self = this.set("insertText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertText: Self = this.set("insertText", js.undefined)
+    @scala.inline
+    def setReplaceAllText(value: SchemaReplaceAllTextRequest): Self = this.set("replaceAllText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceAllText: Self = this.set("replaceAllText", js.undefined)
+    @scala.inline
+    def setUpdateParagraphStyle(value: SchemaUpdateParagraphStyleRequest): Self = this.set("updateParagraphStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateParagraphStyle: Self = this.set("updateParagraphStyle", js.undefined)
+    @scala.inline
+    def setUpdateTextStyle(value: SchemaUpdateTextStyleRequest): Self = this.set("updateTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTextStyle: Self = this.set("updateTextStyle", js.undefined)
+  }
+  
 }
 

@@ -26,16 +26,9 @@ object describeEndpointsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DescribeEndpointsInput) = this()
-    /* CompleteClass */
-    override val input: DescribeEndpointsInput = js.native
     val middlewareStack: MiddlewareStack[DescribeEndpointsInput, DescribeEndpointsOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: DynamoDBResolvedConfiguration
-    ): Handler[DescribeEndpointsInput, DescribeEndpointsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: DynamoDBResolvedConfiguration
     ): Handler[DescribeEndpointsInput, DescribeEndpointsOutput] = js.native
   }

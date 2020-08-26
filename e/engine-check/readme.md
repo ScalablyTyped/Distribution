@@ -11,8 +11,8 @@ Enforce node engine version from package.json
 | Full name          | engine-check |
 | Keywords           | node, npm, engines, engine, version, engine version, version check, engine version check |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 72429 |
+| # dependents       | 6 |
+| # downloads        | 80163 |
 | # stars            | 1 |
 
 ## Links

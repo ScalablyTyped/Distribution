@@ -22,16 +22,34 @@ trait SubnetIpv6CidrBlockAssociation extends js.Object {
 
 object SubnetIpv6CidrBlockAssociation {
   @scala.inline
-  def apply(
-    AssociationId: String = null,
-    Ipv6CidrBlock: String = null,
-    Ipv6CidrBlockState: SubnetCidrBlockState = null
-  ): SubnetIpv6CidrBlockAssociation = {
+  def apply(): SubnetIpv6CidrBlockAssociation = {
     val __obj = js.Dynamic.literal()
-    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
-    if (Ipv6CidrBlock != null) __obj.updateDynamic("Ipv6CidrBlock")(Ipv6CidrBlock.asInstanceOf[js.Any])
-    if (Ipv6CidrBlockState != null) __obj.updateDynamic("Ipv6CidrBlockState")(Ipv6CidrBlockState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubnetIpv6CidrBlockAssociation]
   }
+  @scala.inline
+  implicit class SubnetIpv6CidrBlockAssociationOps[Self <: SubnetIpv6CidrBlockAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationId(value: String): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    @scala.inline
+    def setIpv6CidrBlock(value: String): Self = this.set("Ipv6CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6CidrBlock: Self = this.set("Ipv6CidrBlock", js.undefined)
+    @scala.inline
+    def setIpv6CidrBlockState(value: SubnetCidrBlockState): Self = this.set("Ipv6CidrBlockState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6CidrBlockState: Self = this.set("Ipv6CidrBlockState", js.undefined)
+  }
+  
 }
 

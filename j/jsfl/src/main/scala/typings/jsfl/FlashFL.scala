@@ -44,9 +44,6 @@ trait FlashFL extends js.Object {
   var version: String = js.native
   var xmlui: FlashXMLUI = js.native
   def addEventListener(eventType: js.Any, callbackFunction: js.Any): js.Any = js.native
-  def browseForFileURL(browseType: js.Any): js.Any = js.native
-  def browseForFileURL(browseType: js.Any, title: js.Any): js.Any = js.native
-  def browseForFileURL(browseType: js.Any, title: js.Any, previewArea: js.Any): js.Any = js.native
   def browseForFileURL(browseType: js.Any, title: js.Any, previewArea: js.Any, fileFilter: js.Any): js.Any = js.native
   def browseForFolderURL(description: String): js.Any = js.native
   def clearPublishCache(): Unit = js.native
@@ -87,6 +84,7 @@ trait FlashFL extends js.Object {
   def openDocument(fileURI: String): FlashDocument = js.native
   //openProject();
   def openScript(fileURI: String): Unit = js.native
+  def openScript(fileURI: String, createExtension: js.UndefOr[scala.Nothing], className: String): Unit = js.native
   def openScript(fileURI: String, createExtension: String): Unit = js.native
   def openScript(fileURI: String, createExtension: String, className: String): Unit = js.native
   def quit(): Unit = js.native
@@ -100,6 +98,7 @@ trait FlashFL extends js.Object {
   def revertDocument(document: FlashDocument): Unit = js.native
   //revertDocumentToLastVersion();
   def runScript(fileURI: String): js.Any = js.native
+  def runScript(fileURI: String, funcName: js.UndefOr[scala.Nothing], args: js.Array[_]): js.Any = js.native
   def runScript(fileURI: String, funcName: js.Function): js.Any = js.native
   def runScript(fileURI: String, funcName: js.Function, args: js.Array[_]): js.Any = js.native
   def saveAll(): Unit = js.native

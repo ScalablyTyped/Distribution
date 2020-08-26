@@ -53,113 +53,69 @@ trait CssNodePlain extends js.Object
 
 object CssNodePlain {
   @scala.inline
-  def StringNode(`type`: String, value: java.lang.String, loc: CssLocation = null): CssNodePlain = {
+  def StringNode(`type`: String, value: java.lang.String): CssNodePlain = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def AttributeSelector(
-    name: Identifier,
-    `type`: typings.cssTree.cssTreeStrings.AttributeSelector,
-    flags: java.lang.String = null,
-    loc: CssLocation = null,
-    matcher: java.lang.String = null,
-    value: StringNode | Identifier = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], matcher = matcher.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def BlockPlain(
-    children: js.Array[CssNodePlain],
-    `type`: typings.cssTree.cssTreeStrings.Block,
-    loc: CssLocation = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def CDC(`type`: typings.cssTree.cssTreeStrings.CDC, loc: CssLocation = null): CssNodePlain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def WhiteSpace(
-    `type`: typings.cssTree.cssTreeStrings.WhiteSpace,
-    value: java.lang.String,
-    loc: CssLocation = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def Ratio(
-    left: java.lang.String,
-    right: java.lang.String,
-    `type`: typings.cssTree.cssTreeStrings.Ratio,
-    loc: CssLocation = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def NumberNode(`type`: Number, value: java.lang.String, loc: CssLocation = null): CssNodePlain = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def CDO(`type`: typings.cssTree.cssTreeStrings.CDO, loc: CssLocation = null): CssNodePlain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def TypeSelector(
-    name: java.lang.String,
-    `type`: typings.cssTree.cssTreeStrings.TypeSelector,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def AttributeSelector(name: Identifier, `type`: typings.cssTree.cssTreeStrings.AttributeSelector): CssNodePlain = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def ValuePlain(
-    children: js.Array[CssNodePlain],
-    `type`: typings.cssTree.cssTreeStrings.Value,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def BlockPlain(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.Block): CssNodePlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def AnPlusB(
-    `type`: typings.cssTree.cssTreeStrings.AnPlusB,
-    a: java.lang.String = null,
-    b: java.lang.String = null,
-    loc: CssLocation = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any])
+  def CDC(`type`: typings.cssTree.cssTreeStrings.CDC): CssNodePlain = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def WhiteSpace(`type`: typings.cssTree.cssTreeStrings.WhiteSpace, value: java.lang.String): CssNodePlain = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def Ratio(left: java.lang.String, right: java.lang.String, `type`: typings.cssTree.cssTreeStrings.Ratio): CssNodePlain = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def NumberNode(`type`: Number, value: java.lang.String): CssNodePlain = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def CDO(`type`: typings.cssTree.cssTreeStrings.CDO): CssNodePlain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def TypeSelector(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.TypeSelector): CssNodePlain = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def ValuePlain(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.Value): CssNodePlain = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def AnPlusB(`type`: typings.cssTree.cssTreeStrings.AnPlusB): CssNodePlain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
@@ -167,297 +123,178 @@ object CssNodePlain {
     important: Boolean | java.lang.String,
     property: java.lang.String,
     `type`: typings.cssTree.cssTreeStrings.Declaration,
-    value: ValuePlain | Raw,
-    loc: CssLocation = null
+    value: ValuePlain | Raw
   ): CssNodePlain = {
     val __obj = js.Dynamic.literal(important = important.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def AtrulePlain(
-    name: java.lang.String,
-    `type`: typings.cssTree.cssTreeStrings.Atrule,
-    block: BlockPlain = null,
-    loc: CssLocation = null,
-    prelude: AtrulePreludePlain | Raw = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], block = block.asInstanceOf[js.Any], prelude = prelude.asInstanceOf[js.Any])
+  def AtrulePlain(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.Atrule): CssNodePlain = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def ParenthesesPlain(
-    children: js.Array[CssNodePlain],
-    `type`: typings.cssTree.cssTreeStrings.Parentheses,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def ParenthesesPlain(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.Parentheses): CssNodePlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def SelectorListPlain(
-    children: js.Array[CssNodePlain],
-    `type`: typings.cssTree.cssTreeStrings.SelectorList,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def SelectorListPlain(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.SelectorList): CssNodePlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def UnicodeRange(
-    `type`: typings.cssTree.cssTreeStrings.UnicodeRange,
-    value: java.lang.String,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def UnicodeRange(`type`: typings.cssTree.cssTreeStrings.UnicodeRange, value: java.lang.String): CssNodePlain = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def RulePlain(
-    block: BlockPlain,
-    prelude: SelectorListPlain | Raw,
-    `type`: typings.cssTree.cssTreeStrings.Rule,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def RulePlain(block: BlockPlain, prelude: SelectorListPlain | Raw, `type`: typings.cssTree.cssTreeStrings.Rule): CssNodePlain = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], prelude = prelude.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def PseudoClassSelectorPlain(
-    name: java.lang.String,
-    `type`: typings.cssTree.cssTreeStrings.PseudoClassSelector,
-    children: js.Array[CssNodePlain] = null,
-    loc: CssLocation = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def AtrulePreludePlain(
-    children: js.Array[CssNodePlain],
-    `type`: typings.cssTree.cssTreeStrings.AtrulePrelude,
-    loc: CssLocation = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def Operator(`type`: typings.cssTree.cssTreeStrings.Operator, value: java.lang.String, loc: CssLocation = null): CssNodePlain = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def Percentage(
-    `type`: typings.cssTree.cssTreeStrings.Percentage,
-    value: java.lang.String,
-    loc: CssLocation = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def Combinator(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.Combinator, loc: CssLocation = null): CssNodePlain = {
+  def PseudoClassSelectorPlain(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.PseudoClassSelector): CssNodePlain = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def Raw(`type`: typings.cssTree.cssTreeStrings.Raw, value: java.lang.String, loc: CssLocation = null): CssNodePlain = {
+  def AtrulePreludePlain(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.AtrulePrelude): CssNodePlain = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def Operator(`type`: typings.cssTree.cssTreeStrings.Operator, value: java.lang.String): CssNodePlain = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def DeclarationListPlain(
-    children: js.Array[CssNodePlain],
-    `type`: typings.cssTree.cssTreeStrings.DeclarationList,
-    loc: CssLocation = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CssNodePlain]
-  }
-  @scala.inline
-  def Url(`type`: typings.cssTree.cssTreeStrings.Url, value: StringNode | Raw, loc: CssLocation = null): CssNodePlain = {
+  def Percentage(`type`: typings.cssTree.cssTreeStrings.Percentage, value: java.lang.String): CssNodePlain = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def Identifier(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.Identifier, loc: CssLocation = null): CssNodePlain = {
+  def Combinator(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.Combinator): CssNodePlain = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def IdSelector(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.IdSelector, loc: CssLocation = null): CssNodePlain = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def Raw(`type`: typings.cssTree.cssTreeStrings.Raw, value: java.lang.String): CssNodePlain = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def MediaQueryPlain(
-    children: js.Array[CssNodePlain],
-    `type`: typings.cssTree.cssTreeStrings.MediaQuery,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def DeclarationListPlain(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.DeclarationList): CssNodePlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def StyleSheetPlain(
-    children: js.Array[CssNodePlain],
-    `type`: typings.cssTree.cssTreeStrings.StyleSheet,
-    loc: CssLocation = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  def Url(`type`: typings.cssTree.cssTreeStrings.Url, value: StringNode | Raw): CssNodePlain = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def ClassSelector(
-    name: java.lang.String,
-    `type`: typings.cssTree.cssTreeStrings.ClassSelector,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def Identifier(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.Identifier): CssNodePlain = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def FunctionNodePlain(
-    children: js.Array[CssNodePlain],
-    name: java.lang.String,
-    `type`: Function,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def IdSelector(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.IdSelector): CssNodePlain = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def MediaQueryPlain(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.MediaQuery): CssNodePlain = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def StyleSheetPlain(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.StyleSheet): CssNodePlain = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def ClassSelector(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.ClassSelector): CssNodePlain = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssNodePlain]
+  }
+  @scala.inline
+  def FunctionNodePlain(children: js.Array[CssNodePlain], name: java.lang.String, `type`: Function): CssNodePlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def MediaFeature(
-    name: java.lang.String,
-    `type`: typings.cssTree.cssTreeStrings.MediaFeature,
-    loc: CssLocation = null,
-    value: Identifier | NumberNode | Dimension | Ratio = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def MediaFeature(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.MediaFeature): CssNodePlain = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def BracketsPlain(
-    children: js.Array[CssNodePlain],
-    `type`: typings.cssTree.cssTreeStrings.Brackets,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def BracketsPlain(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.Brackets): CssNodePlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def HexColor(`type`: typings.cssTree.cssTreeStrings.HexColor, value: java.lang.String, loc: CssLocation = null): CssNodePlain = {
+  def HexColor(`type`: typings.cssTree.cssTreeStrings.HexColor, value: java.lang.String): CssNodePlain = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def Comment(`type`: typings.cssTree.cssTreeStrings.Comment, value: java.lang.String, loc: CssLocation = null): CssNodePlain = {
+  def Comment(`type`: typings.cssTree.cssTreeStrings.Comment, value: java.lang.String): CssNodePlain = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def NthPlain(
-    nth: AnPlusB | Identifier,
-    `type`: typings.cssTree.cssTreeStrings.Nth,
-    loc: CssLocation = null,
-    selector: SelectorListPlain = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(nth = nth.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
+  def NthPlain(nth: AnPlusB | Identifier, `type`: typings.cssTree.cssTreeStrings.Nth): CssNodePlain = {
+    val __obj = js.Dynamic.literal(nth = nth.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def SelectorPlain(
-    children: js.Array[CssNodePlain],
-    `type`: typings.cssTree.cssTreeStrings.Selector,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def SelectorPlain(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.Selector): CssNodePlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def Dimension(
-    `type`: typings.cssTree.cssTreeStrings.Dimension,
-    unit: java.lang.String,
-    value: java.lang.String,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def Dimension(`type`: typings.cssTree.cssTreeStrings.Dimension, unit: java.lang.String, value: java.lang.String): CssNodePlain = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def MediaQueryListPlain(
-    children: js.Array[CssNodePlain],
-    `type`: typings.cssTree.cssTreeStrings.MediaQueryList,
-    loc: CssLocation = null
-  ): CssNodePlain = {
+  def MediaQueryListPlain(children: js.Array[CssNodePlain], `type`: typings.cssTree.cssTreeStrings.MediaQueryList): CssNodePlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
   @scala.inline
-  def PseudoElementSelectorPlain(
-    name: java.lang.String,
-    `type`: typings.cssTree.cssTreeStrings.PseudoElementSelector,
-    children: js.Array[CssNodePlain] = null,
-    loc: CssLocation = null
-  ): CssNodePlain = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
+  def PseudoElementSelectorPlain(name: java.lang.String, `type`: typings.cssTree.cssTreeStrings.PseudoElementSelector): CssNodePlain = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssNodePlain]
   }
 }

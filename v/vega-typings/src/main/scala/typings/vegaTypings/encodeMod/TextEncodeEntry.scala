@@ -1,130 +1,143 @@
 package typings.vegaTypings.encodeMod
 
-import typings.vegaTypings.configMod.Cursor
-import typings.vegaTypings.configMod.StrokeCap
-import typings.vegaTypings.configMod.StrokeJoin
+import typings.vegaTypings.anon.Test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextEncodeEntry
   extends EncodeEntry
      with AlignProperty
      with ThetaProperty {
-  var angle: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var baseline: js.UndefOr[ProductionRule[TextBaselineValueRef]] = js.undefined
-  var dir: js.UndefOr[ProductionRule[ScaledValueRef[TextDirection]]] = js.undefined
-  var dx: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var dy: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var ellipsis: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
-  var font: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
-  var fontSize: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var fontStyle: js.UndefOr[ProductionRule[FontStyleValueRef]] = js.undefined
-  var fontWeight: js.UndefOr[ProductionRule[FontWeightValueRef]] = js.undefined
-  var limit: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var lineBreak: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
+  var angle: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var baseline: js.UndefOr[ProductionRule[TextBaselineValueRef]] = js.native
+  var dir: js.UndefOr[ProductionRule[ScaledValueRef[TextDirection]]] = js.native
+  var dx: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var dy: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var ellipsis: js.UndefOr[ProductionRule[StringValueRef]] = js.native
+  var font: js.UndefOr[ProductionRule[StringValueRef]] = js.native
+  var fontSize: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var fontStyle: js.UndefOr[ProductionRule[FontStyleValueRef]] = js.native
+  var fontWeight: js.UndefOr[ProductionRule[FontWeightValueRef]] = js.native
+  var limit: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var lineBreak: js.UndefOr[ProductionRule[StringValueRef]] = js.native
   /**
     * The height, in pixels, of each line of text in a multi-line text mark or a text mark with `"line-top"` or `"line-bottom"` baseline.
     */
-  var lineHeight: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var radius: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var text: js.UndefOr[ProductionRule[TextValueRef]] = js.undefined
+  var lineHeight: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var radius: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var text: js.UndefOr[ProductionRule[TextValueRef]] = js.native
 }
 
 object TextEncodeEntry {
   @scala.inline
-  def apply(
-    align: ProductionRule[ScaledValueRef[Align]] = null,
-    angle: ProductionRule[NumericValueRef] = null,
-    aria: ProductionRule[BooleanValueRef] = null,
-    ariaRole: ProductionRule[StringValueRef] = null,
-    ariaRoleDescription: ProductionRule[StringValueRef] = null,
-    baseline: ProductionRule[TextBaselineValueRef] = null,
-    blend: ProductionRule[ScaledValueRef[Blend]] = null,
-    cursor: ProductionRule[ScaledValueRef[Cursor]] = null,
-    description: ProductionRule[StringValueRef] = null,
-    dir: ProductionRule[ScaledValueRef[TextDirection]] = null,
-    dx: ProductionRule[NumericValueRef] = null,
-    dy: ProductionRule[NumericValueRef] = null,
-    ellipsis: ProductionRule[StringValueRef] = null,
-    fill: ProductionRule[ColorValueRef] = null,
-    fillOpacity: ProductionRule[NumericValueRef] = null,
-    font: ProductionRule[StringValueRef] = null,
-    fontSize: ProductionRule[NumericValueRef] = null,
-    fontStyle: ProductionRule[FontStyleValueRef] = null,
-    fontWeight: ProductionRule[FontWeightValueRef] = null,
-    height: ProductionRule[NumericValueRef] = null,
-    limit: ProductionRule[NumericValueRef] = null,
-    lineBreak: ProductionRule[StringValueRef] = null,
-    lineHeight: ProductionRule[NumericValueRef] = null,
-    opacity: ProductionRule[NumericValueRef] = null,
-    radius: ProductionRule[NumericValueRef] = null,
-    stroke: ProductionRule[ColorValueRef] = null,
-    strokeCap: ProductionRule[ScaledValueRef[StrokeCap]] = null,
-    strokeDash: ProductionRule[ScaledValueRef[js.Array[Double]]] = null,
-    strokeDashOffset: ProductionRule[NumericValueRef] = null,
-    strokeJoin: ProductionRule[ScaledValueRef[StrokeJoin]] = null,
-    strokeMiterLimit: ProductionRule[NumericValueRef] = null,
-    strokeOpacity: ProductionRule[NumericValueRef] = null,
-    strokeWidth: ProductionRule[NumericValueRef] = null,
-    text: ProductionRule[TextValueRef] = null,
-    theta: ProductionRule[NumericValueRef] = null,
-    tooltip: ProductionRule[StringValueRef] = null,
-    width: ProductionRule[NumericValueRef] = null,
-    x: ProductionRule[NumericValueRef] = null,
-    x2: ProductionRule[NumericValueRef] = null,
-    xc: ProductionRule[NumericValueRef] = null,
-    y: ProductionRule[NumericValueRef] = null,
-    y2: ProductionRule[NumericValueRef] = null,
-    yc: ProductionRule[NumericValueRef] = null,
-    zindex: ProductionRule[NumericValueRef] = null
-  ): TextEncodeEntry = {
+  def apply(): TextEncodeEntry = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (aria != null) __obj.updateDynamic("aria")(aria.asInstanceOf[js.Any])
-    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
-    if (ariaRoleDescription != null) __obj.updateDynamic("ariaRoleDescription")(ariaRoleDescription.asInstanceOf[js.Any])
-    if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
-    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeCap != null) __obj.updateDynamic("strokeCap")(strokeCap.asInstanceOf[js.Any])
-    if (strokeDash != null) __obj.updateDynamic("strokeDash")(strokeDash.asInstanceOf[js.Any])
-    if (strokeDashOffset != null) __obj.updateDynamic("strokeDashOffset")(strokeDashOffset.asInstanceOf[js.Any])
-    if (strokeJoin != null) __obj.updateDynamic("strokeJoin")(strokeJoin.asInstanceOf[js.Any])
-    if (strokeMiterLimit != null) __obj.updateDynamic("strokeMiterLimit")(strokeMiterLimit.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (theta != null) __obj.updateDynamic("theta")(theta.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
-    if (xc != null) __obj.updateDynamic("xc")(xc.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (y2 != null) __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
-    if (yc != null) __obj.updateDynamic("yc")(yc.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEncodeEntry]
   }
+  @scala.inline
+  implicit class TextEncodeEntryOps[Self <: TextEncodeEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAngleVarargs(value: (Test with NumericValueRef)*): Self = this.set("angle", js.Array(value :_*))
+    @scala.inline
+    def setAngle(value: ProductionRule[NumericValueRef]): Self = this.set("angle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngle: Self = this.set("angle", js.undefined)
+    @scala.inline
+    def setBaselineVarargs(value: (Test with TextBaselineValueRef)*): Self = this.set("baseline", js.Array(value :_*))
+    @scala.inline
+    def setBaseline(value: ProductionRule[TextBaselineValueRef]): Self = this.set("baseline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseline: Self = this.set("baseline", js.undefined)
+    @scala.inline
+    def setDirVarargs(value: (Test with ScaledValueRef[TextDirection])*): Self = this.set("dir", js.Array(value :_*))
+    @scala.inline
+    def setDir(value: ProductionRule[ScaledValueRef[TextDirection]]): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setDxVarargs(value: (Test with NumericValueRef)*): Self = this.set("dx", js.Array(value :_*))
+    @scala.inline
+    def setDx(value: ProductionRule[NumericValueRef]): Self = this.set("dx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDx: Self = this.set("dx", js.undefined)
+    @scala.inline
+    def setDyVarargs(value: (Test with NumericValueRef)*): Self = this.set("dy", js.Array(value :_*))
+    @scala.inline
+    def setDy(value: ProductionRule[NumericValueRef]): Self = this.set("dy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDy: Self = this.set("dy", js.undefined)
+    @scala.inline
+    def setEllipsisVarargs(value: (Test with StringValueRef)*): Self = this.set("ellipsis", js.Array(value :_*))
+    @scala.inline
+    def setEllipsis(value: ProductionRule[StringValueRef]): Self = this.set("ellipsis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEllipsis: Self = this.set("ellipsis", js.undefined)
+    @scala.inline
+    def setFontVarargs(value: (Test with StringValueRef)*): Self = this.set("font", js.Array(value :_*))
+    @scala.inline
+    def setFont(value: ProductionRule[StringValueRef]): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setFontSizeVarargs(value: (Test with NumericValueRef)*): Self = this.set("fontSize", js.Array(value :_*))
+    @scala.inline
+    def setFontSize(value: ProductionRule[NumericValueRef]): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontStyleVarargs(value: (Test with FontStyleValueRef)*): Self = this.set("fontStyle", js.Array(value :_*))
+    @scala.inline
+    def setFontStyle(value: ProductionRule[FontStyleValueRef]): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    @scala.inline
+    def setFontWeightVarargs(value: (Test with FontWeightValueRef)*): Self = this.set("fontWeight", js.Array(value :_*))
+    @scala.inline
+    def setFontWeight(value: ProductionRule[FontWeightValueRef]): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setLimitVarargs(value: (Test with NumericValueRef)*): Self = this.set("limit", js.Array(value :_*))
+    @scala.inline
+    def setLimit(value: ProductionRule[NumericValueRef]): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setLineBreakVarargs(value: (Test with StringValueRef)*): Self = this.set("lineBreak", js.Array(value :_*))
+    @scala.inline
+    def setLineBreak(value: ProductionRule[StringValueRef]): Self = this.set("lineBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineBreak: Self = this.set("lineBreak", js.undefined)
+    @scala.inline
+    def setLineHeightVarargs(value: (Test with NumericValueRef)*): Self = this.set("lineHeight", js.Array(value :_*))
+    @scala.inline
+    def setLineHeight(value: ProductionRule[NumericValueRef]): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    @scala.inline
+    def setRadiusVarargs(value: (Test with NumericValueRef)*): Self = this.set("radius", js.Array(value :_*))
+    @scala.inline
+    def setRadius(value: ProductionRule[NumericValueRef]): Self = this.set("radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadius: Self = this.set("radius", js.undefined)
+    @scala.inline
+    def setTextVarargs(value: (Test with TextValueRef)*): Self = this.set("text", js.Array(value :_*))
+    @scala.inline
+    def setText(value: ProductionRule[TextValueRef]): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

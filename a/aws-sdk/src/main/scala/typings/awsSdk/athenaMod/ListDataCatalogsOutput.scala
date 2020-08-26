@@ -18,11 +18,32 @@ trait ListDataCatalogsOutput extends js.Object {
 
 object ListDataCatalogsOutput {
   @scala.inline
-  def apply(DataCatalogsSummary: DataCatalogSummaryList = null, NextToken: Token = null): ListDataCatalogsOutput = {
+  def apply(): ListDataCatalogsOutput = {
     val __obj = js.Dynamic.literal()
-    if (DataCatalogsSummary != null) __obj.updateDynamic("DataCatalogsSummary")(DataCatalogsSummary.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataCatalogsOutput]
   }
+  @scala.inline
+  implicit class ListDataCatalogsOutputOps[Self <: ListDataCatalogsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataCatalogsSummaryVarargs(value: DataCatalogSummary*): Self = this.set("DataCatalogsSummary", js.Array(value :_*))
+    @scala.inline
+    def setDataCatalogsSummary(value: DataCatalogSummaryList): Self = this.set("DataCatalogsSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataCatalogsSummary: Self = this.set("DataCatalogsSummary", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

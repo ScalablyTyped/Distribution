@@ -24,6 +24,12 @@ trait Icon_ extends js.Object {
     * @param opt_scope {Object=} - scope for the handler function
     */
   def addEventListener(`type`: String, handler: js.Function0[Unit]): Unit = js.native
+  def addEventListener(
+    `type`: String,
+    handler: js.Function0[Unit],
+    opt_capture: js.UndefOr[scala.Nothing],
+    opt_scope: js.Object
+  ): Unit = js.native
   def addEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean): Unit = js.native
   def addEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean, opt_scope: js.Object): Unit = js.native
   /**
@@ -76,6 +82,12 @@ trait Icon_ extends js.Object {
     * @param opt_scope {Object=} - scope for the handler function
     */
   def removeEventListener(`type`: String, handler: js.Function0[Unit]): Unit = js.native
+  def removeEventListener(
+    `type`: String,
+    handler: js.Function0[Unit],
+    opt_capture: js.UndefOr[scala.Nothing],
+    opt_scope: js.Object
+  ): Unit = js.native
   def removeEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean): Unit = js.native
   def removeEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean, opt_scope: js.Object): Unit = js.native
 }

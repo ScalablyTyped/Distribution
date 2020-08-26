@@ -8,81 +8,138 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Altitude extends js.Object {
-  var altitude: js.UndefOr[Double] = js.undefined
-  var applicationData: js.UndefOr[LazyMap] = js.undefined
-  var author: js.UndefOr[String] = js.undefined
-  var classifications: js.UndefOr[Map[String, String]] = js.undefined
-  var conflictSourceNoteGuid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.undefined
-  var contentClass: js.UndefOr[String] = js.undefined
-  var creatorId: js.UndefOr[UserID] = js.undefined
-  var lastEditedBy: js.UndefOr[String] = js.undefined
-  var lastEditorId: js.UndefOr[UserID] = js.undefined
-  var latitude: js.UndefOr[Double] = js.undefined
-  var longitude: js.UndefOr[Double] = js.undefined
-  var noteTitleQuality: js.UndefOr[Double] = js.undefined
-  var placeName: js.UndefOr[String] = js.undefined
-  var reminderDoneTime: js.UndefOr[Timestamp] = js.undefined
-  var reminderOrder: js.UndefOr[Double] = js.undefined
-  var reminderTime: js.UndefOr[Timestamp] = js.undefined
-  var shareDate: js.UndefOr[Timestamp] = js.undefined
-  var sharedWithBusiness: js.UndefOr[Boolean] = js.undefined
-  var source: js.UndefOr[String] = js.undefined
-  var sourceApplication: js.UndefOr[String] = js.undefined
-  var sourceURL: js.UndefOr[String] = js.undefined
-  var subjectDate: js.UndefOr[Timestamp] = js.undefined
+  var altitude: js.UndefOr[Double] = js.native
+  var applicationData: js.UndefOr[LazyMap] = js.native
+  var author: js.UndefOr[String] = js.native
+  var classifications: js.UndefOr[Map[String, String]] = js.native
+  var conflictSourceNoteGuid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.native
+  var contentClass: js.UndefOr[String] = js.native
+  var creatorId: js.UndefOr[UserID] = js.native
+  var lastEditedBy: js.UndefOr[String] = js.native
+  var lastEditorId: js.UndefOr[UserID] = js.native
+  var latitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.native
+  var noteTitleQuality: js.UndefOr[Double] = js.native
+  var placeName: js.UndefOr[String] = js.native
+  var reminderDoneTime: js.UndefOr[Timestamp] = js.native
+  var reminderOrder: js.UndefOr[Double] = js.native
+  var reminderTime: js.UndefOr[Timestamp] = js.native
+  var shareDate: js.UndefOr[Timestamp] = js.native
+  var sharedWithBusiness: js.UndefOr[Boolean] = js.native
+  var source: js.UndefOr[String] = js.native
+  var sourceApplication: js.UndefOr[String] = js.native
+  var sourceURL: js.UndefOr[String] = js.native
+  var subjectDate: js.UndefOr[Timestamp] = js.native
 }
 
 object Altitude {
   @scala.inline
-  def apply(
-    altitude: js.UndefOr[Double] = js.undefined,
-    applicationData: LazyMap = null,
-    author: String = null,
-    classifications: Map[String, String] = null,
-    conflictSourceNoteGuid: typings.evernote.mod.Types.Guid = null,
-    contentClass: String = null,
-    creatorId: js.UndefOr[UserID] = js.undefined,
-    lastEditedBy: String = null,
-    lastEditorId: js.UndefOr[UserID] = js.undefined,
-    latitude: js.UndefOr[Double] = js.undefined,
-    longitude: js.UndefOr[Double] = js.undefined,
-    noteTitleQuality: js.UndefOr[Double] = js.undefined,
-    placeName: String = null,
-    reminderDoneTime: js.UndefOr[Timestamp] = js.undefined,
-    reminderOrder: js.UndefOr[Double] = js.undefined,
-    reminderTime: js.UndefOr[Timestamp] = js.undefined,
-    shareDate: js.UndefOr[Timestamp] = js.undefined,
-    sharedWithBusiness: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    sourceApplication: String = null,
-    sourceURL: String = null,
-    subjectDate: js.UndefOr[Timestamp] = js.undefined
-  ): Altitude = {
+  def apply(): Altitude = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
-    if (applicationData != null) __obj.updateDynamic("applicationData")(applicationData.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (classifications != null) __obj.updateDynamic("classifications")(classifications.asInstanceOf[js.Any])
-    if (conflictSourceNoteGuid != null) __obj.updateDynamic("conflictSourceNoteGuid")(conflictSourceNoteGuid.asInstanceOf[js.Any])
-    if (contentClass != null) __obj.updateDynamic("contentClass")(contentClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(creatorId)) __obj.updateDynamic("creatorId")(creatorId.get.asInstanceOf[js.Any])
-    if (lastEditedBy != null) __obj.updateDynamic("lastEditedBy")(lastEditedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastEditorId)) __obj.updateDynamic("lastEditorId")(lastEditorId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noteTitleQuality)) __obj.updateDynamic("noteTitleQuality")(noteTitleQuality.get.asInstanceOf[js.Any])
-    if (placeName != null) __obj.updateDynamic("placeName")(placeName.asInstanceOf[js.Any])
-    if (!js.isUndefined(reminderDoneTime)) __obj.updateDynamic("reminderDoneTime")(reminderDoneTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reminderOrder)) __obj.updateDynamic("reminderOrder")(reminderOrder.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reminderTime)) __obj.updateDynamic("reminderTime")(reminderTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shareDate)) __obj.updateDynamic("shareDate")(shareDate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharedWithBusiness)) __obj.updateDynamic("sharedWithBusiness")(sharedWithBusiness.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (sourceApplication != null) __obj.updateDynamic("sourceApplication")(sourceApplication.asInstanceOf[js.Any])
-    if (sourceURL != null) __obj.updateDynamic("sourceURL")(sourceURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(subjectDate)) __obj.updateDynamic("subjectDate")(subjectDate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Altitude]
   }
+  @scala.inline
+  implicit class AltitudeOps[Self <: Altitude] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    @scala.inline
+    def setApplicationData(value: LazyMap): Self = this.set("applicationData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationData: Self = this.set("applicationData", js.undefined)
+    @scala.inline
+    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setClassifications(value: Map[String, String]): Self = this.set("classifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassifications: Self = this.set("classifications", js.undefined)
+    @scala.inline
+    def setConflictSourceNoteGuid(value: typings.evernote.mod.Types.Guid): Self = this.set("conflictSourceNoteGuid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConflictSourceNoteGuid: Self = this.set("conflictSourceNoteGuid", js.undefined)
+    @scala.inline
+    def setContentClass(value: String): Self = this.set("contentClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentClass: Self = this.set("contentClass", js.undefined)
+    @scala.inline
+    def setCreatorId(value: UserID): Self = this.set("creatorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorId: Self = this.set("creatorId", js.undefined)
+    @scala.inline
+    def setLastEditedBy(value: String): Self = this.set("lastEditedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEditedBy: Self = this.set("lastEditedBy", js.undefined)
+    @scala.inline
+    def setLastEditorId(value: UserID): Self = this.set("lastEditorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEditorId: Self = this.set("lastEditorId", js.undefined)
+    @scala.inline
+    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    @scala.inline
+    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    @scala.inline
+    def setNoteTitleQuality(value: Double): Self = this.set("noteTitleQuality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoteTitleQuality: Self = this.set("noteTitleQuality", js.undefined)
+    @scala.inline
+    def setPlaceName(value: String): Self = this.set("placeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceName: Self = this.set("placeName", js.undefined)
+    @scala.inline
+    def setReminderDoneTime(value: Timestamp): Self = this.set("reminderDoneTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReminderDoneTime: Self = this.set("reminderDoneTime", js.undefined)
+    @scala.inline
+    def setReminderOrder(value: Double): Self = this.set("reminderOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReminderOrder: Self = this.set("reminderOrder", js.undefined)
+    @scala.inline
+    def setReminderTime(value: Timestamp): Self = this.set("reminderTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReminderTime: Self = this.set("reminderTime", js.undefined)
+    @scala.inline
+    def setShareDate(value: Timestamp): Self = this.set("shareDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShareDate: Self = this.set("shareDate", js.undefined)
+    @scala.inline
+    def setSharedWithBusiness(value: Boolean): Self = this.set("sharedWithBusiness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedWithBusiness: Self = this.set("sharedWithBusiness", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSourceApplication(value: String): Self = this.set("sourceApplication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceApplication: Self = this.set("sourceApplication", js.undefined)
+    @scala.inline
+    def setSourceURL(value: String): Self = this.set("sourceURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceURL: Self = this.set("sourceURL", js.undefined)
+    @scala.inline
+    def setSubjectDate(value: Timestamp): Self = this.set("subjectDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubjectDate: Self = this.set("subjectDate", js.undefined)
+  }
+  
 }
 

@@ -19,6 +19,7 @@ class PreviousMap protected () extends js.Object {
   var text: String = js.native
   def consumer(): SourceMapConsumer = js.native
   def decodeInline(text: String): String = js.native
+  def getAnnotationURL(sourceMapString: String): String = js.native
   def isMap(map: js.Any): Boolean = js.native
   def loadAnnotation(css: String): Unit = js.native
   def loadMap(file: js.Any, prev: String): String = js.native

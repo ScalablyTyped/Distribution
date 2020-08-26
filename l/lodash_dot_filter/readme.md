@@ -11,8 +11,8 @@ The lodash method `_.filter` exported as a module.
 | Full name          | lodash.filter |
 | Keywords           | lodash-modularized, filter |
 | # releases         | 0 |
-| # dependents       | 168 |
-| # downloads        | 39016774 |
+| # dependents       | 169 |
+| # downloads        | 39401371 |
 | # stars            | 1 |
 
 ## Links

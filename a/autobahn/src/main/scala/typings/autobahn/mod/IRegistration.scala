@@ -15,7 +15,11 @@ trait IRegistration extends js.Object {
   var procedure: String = js.native
   var session: Session = js.native
   def endpoint(): Unit = js.native
+  def endpoint(args: js.UndefOr[scala.Nothing], kwargs: js.UndefOr[scala.Nothing], details: IInvocation): Unit = js.native
+  def endpoint(args: js.UndefOr[scala.Nothing], kwargs: js.Any): Unit = js.native
+  def endpoint(args: js.UndefOr[scala.Nothing], kwargs: js.Any, details: IInvocation): Unit = js.native
   def endpoint(args: js.Array[_]): Unit = js.native
+  def endpoint(args: js.Array[_], kwargs: js.UndefOr[scala.Nothing], details: IInvocation): Unit = js.native
   def endpoint(args: js.Array[_], kwargs: js.Any): Unit = js.native
   def endpoint(args: js.Array[_], kwargs: js.Any, details: IInvocation): Unit = js.native
   def unregister(): Promise[_] = js.native

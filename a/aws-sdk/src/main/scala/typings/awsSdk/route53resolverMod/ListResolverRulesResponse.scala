@@ -22,16 +22,36 @@ trait ListResolverRulesResponse extends js.Object {
 
 object ListResolverRulesResponse {
   @scala.inline
-  def apply(
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    ResolverRules: ResolverRules = null
-  ): ListResolverRulesResponse = {
+  def apply(): ListResolverRulesResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ResolverRules != null) __obj.updateDynamic("ResolverRules")(ResolverRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResolverRulesResponse]
   }
+  @scala.inline
+  implicit class ListResolverRulesResponseOps[Self <: ListResolverRulesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setResolverRulesVarargs(value: ResolverRule*): Self = this.set("ResolverRules", js.Array(value :_*))
+    @scala.inline
+    def setResolverRules(value: ResolverRules): Self = this.set("ResolverRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolverRules: Self = this.set("ResolverRules", js.undefined)
+  }
+  
 }
 

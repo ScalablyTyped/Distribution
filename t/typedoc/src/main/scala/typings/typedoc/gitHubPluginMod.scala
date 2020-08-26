@@ -12,7 +12,8 @@ object gitHubPluginMod extends js.Object {
   @js.native
   class GitHubPlugin () extends AbstractComponent[Converter] {
     var getRepository: js.Any = js.native
-    var gitRevision: String = js.native
+    val gitRemote: String = js.native
+    val gitRevision: String = js.native
     var ignoredPaths: js.Any = js.native
     var onEndResolve: js.Any = js.native
     var repositories: js.Any = js.native
@@ -34,7 +35,7 @@ object gitHubPluginMod extends js.Object {
   /* static members */
   @js.native
   object Repository extends js.Object {
-    def tryCreateRepository(path: String, gitRevision: String): js.UndefOr[Repository] = js.native
+    def tryCreateRepository(path: String, gitRevision: String, gitRemote: String): js.UndefOr[Repository] = js.native
   }
   
 }

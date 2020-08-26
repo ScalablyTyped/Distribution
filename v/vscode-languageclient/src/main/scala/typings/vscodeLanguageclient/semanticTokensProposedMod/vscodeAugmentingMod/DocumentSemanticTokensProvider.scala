@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * The document semantic tokens provider interface defines the contract between extensions and
   * semantic tokens.
   */
+@js.native
 trait DocumentSemanticTokensProvider extends js.Object {
   /**
     * Instead of always returning all the tokens in a file, it is possible for a `DocumentSemanticTokensProvider` to implement
@@ -72,7 +73,7 @@ trait DocumentSemanticTokensProvider extends js.Object {
       /* token */ CancellationToken, 
       ProviderResult[SemanticTokens | SemanticTokensEdits]
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * A file can contain many tokens, perhaps even hundreds of thousands of tokens. Therefore, to improve
     * the memory consumption around describing semantic tokens, we have decided to avoid allocating an object
@@ -131,18 +132,35 @@ trait DocumentSemanticTokensProvider extends js.Object {
     *    [  2,5,3,0,3,  0,5,4,1,0,  3,2,7,2,0 ]
     * ```
     */
-  def provideDocumentSemanticTokens(document: TextDocument, token: CancellationToken): ProviderResult[SemanticTokens]
+  def provideDocumentSemanticTokens(document: TextDocument, token: CancellationToken): ProviderResult[SemanticTokens] = js.native
 }
 
 object DocumentSemanticTokensProvider {
   @scala.inline
-  def apply(
-    provideDocumentSemanticTokens: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens],
-    provideDocumentSemanticTokensEdits: (/* document */ TextDocument, /* previousResultId */ String, /* token */ CancellationToken) => ProviderResult[SemanticTokens | SemanticTokensEdits] = null
-  ): DocumentSemanticTokensProvider = {
+  def apply(provideDocumentSemanticTokens: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): DocumentSemanticTokensProvider = {
     val __obj = js.Dynamic.literal(provideDocumentSemanticTokens = js.Any.fromFunction2(provideDocumentSemanticTokens))
-    if (provideDocumentSemanticTokensEdits != null) __obj.updateDynamic("provideDocumentSemanticTokensEdits")(js.Any.fromFunction3(provideDocumentSemanticTokensEdits))
     __obj.asInstanceOf[DocumentSemanticTokensProvider]
   }
+  @scala.inline
+  implicit class DocumentSemanticTokensProviderOps[Self <: DocumentSemanticTokensProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvideDocumentSemanticTokens(value: (TextDocument, CancellationToken) => ProviderResult[SemanticTokens]): Self = this.set("provideDocumentSemanticTokens", js.Any.fromFunction2(value))
+    @scala.inline
+    def setProvideDocumentSemanticTokensEdits(
+      value: (/* document */ TextDocument, /* previousResultId */ String, /* token */ CancellationToken) => ProviderResult[SemanticTokens | SemanticTokensEdits]
+    ): Self = this.set("provideDocumentSemanticTokensEdits", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteProvideDocumentSemanticTokensEdits: Self = this.set("provideDocumentSemanticTokensEdits", js.undefined)
+  }
+  
 }
 

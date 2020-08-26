@@ -17,10 +17,28 @@ trait SchemaUrlCrawlErrorsSamplesListResponse extends js.Object {
 
 object SchemaUrlCrawlErrorsSamplesListResponse {
   @scala.inline
-  def apply(urlCrawlErrorSample: js.Array[SchemaUrlCrawlErrorsSample] = null): SchemaUrlCrawlErrorsSamplesListResponse = {
+  def apply(): SchemaUrlCrawlErrorsSamplesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (urlCrawlErrorSample != null) __obj.updateDynamic("urlCrawlErrorSample")(urlCrawlErrorSample.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUrlCrawlErrorsSamplesListResponse]
   }
+  @scala.inline
+  implicit class SchemaUrlCrawlErrorsSamplesListResponseOps[Self <: SchemaUrlCrawlErrorsSamplesListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUrlCrawlErrorSampleVarargs(value: SchemaUrlCrawlErrorsSample*): Self = this.set("urlCrawlErrorSample", js.Array(value :_*))
+    @scala.inline
+    def setUrlCrawlErrorSample(value: js.Array[SchemaUrlCrawlErrorsSample]): Self = this.set("urlCrawlErrorSample", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlCrawlErrorSample: Self = this.set("urlCrawlErrorSample", js.undefined)
+  }
+  
 }
 

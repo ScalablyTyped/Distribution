@@ -42,26 +42,54 @@ trait InstanceRefresh extends js.Object {
 
 object InstanceRefresh {
   @scala.inline
-  def apply(
-    AutoScalingGroupName: XmlStringMaxLen255 = null,
-    EndTime: TimestampType = null,
-    InstanceRefreshId: XmlStringMaxLen255 = null,
-    InstancesToUpdate: js.UndefOr[InstancesToUpdate] = js.undefined,
-    PercentageComplete: js.UndefOr[IntPercent] = js.undefined,
-    StartTime: TimestampType = null,
-    Status: InstanceRefreshStatus = null,
-    StatusReason: XmlStringMaxLen1023 = null
-  ): InstanceRefresh = {
+  def apply(): InstanceRefresh = {
     val __obj = js.Dynamic.literal()
-    if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (InstanceRefreshId != null) __obj.updateDynamic("InstanceRefreshId")(InstanceRefreshId.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstancesToUpdate)) __obj.updateDynamic("InstancesToUpdate")(InstancesToUpdate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(PercentageComplete)) __obj.updateDynamic("PercentageComplete")(PercentageComplete.get.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceRefresh]
   }
+  @scala.inline
+  implicit class InstanceRefreshOps[Self <: InstanceRefresh] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupName: Self = this.set("AutoScalingGroupName", js.undefined)
+    @scala.inline
+    def setEndTime(value: TimestampType): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setInstanceRefreshId(value: XmlStringMaxLen255): Self = this.set("InstanceRefreshId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceRefreshId: Self = this.set("InstanceRefreshId", js.undefined)
+    @scala.inline
+    def setInstancesToUpdate(value: InstancesToUpdate): Self = this.set("InstancesToUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancesToUpdate: Self = this.set("InstancesToUpdate", js.undefined)
+    @scala.inline
+    def setPercentageComplete(value: IntPercent): Self = this.set("PercentageComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentageComplete: Self = this.set("PercentageComplete", js.undefined)
+    @scala.inline
+    def setStartTime(value: TimestampType): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setStatus(value: InstanceRefreshStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: XmlStringMaxLen1023): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+  }
+  
 }
 

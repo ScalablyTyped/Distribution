@@ -46,27 +46,56 @@ trait UpdateQualificationTypeRequest extends js.Object {
 
 object UpdateQualificationTypeRequest {
   @scala.inline
-  def apply(
-    QualificationTypeId: EntityId,
-    AnswerKey: String = null,
-    AutoGranted: js.UndefOr[Boolean] = js.undefined,
-    AutoGrantedValue: js.UndefOr[Integer] = js.undefined,
-    Description: String = null,
-    QualificationTypeStatus: QualificationTypeStatus = null,
-    RetryDelayInSeconds: js.UndefOr[Long] = js.undefined,
-    Test: String = null,
-    TestDurationInSeconds: js.UndefOr[Long] = js.undefined
-  ): UpdateQualificationTypeRequest = {
+  def apply(QualificationTypeId: EntityId): UpdateQualificationTypeRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any])
-    if (AnswerKey != null) __obj.updateDynamic("AnswerKey")(AnswerKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoGranted)) __obj.updateDynamic("AutoGranted")(AutoGranted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoGrantedValue)) __obj.updateDynamic("AutoGrantedValue")(AutoGrantedValue.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (QualificationTypeStatus != null) __obj.updateDynamic("QualificationTypeStatus")(QualificationTypeStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetryDelayInSeconds)) __obj.updateDynamic("RetryDelayInSeconds")(RetryDelayInSeconds.get.asInstanceOf[js.Any])
-    if (Test != null) __obj.updateDynamic("Test")(Test.asInstanceOf[js.Any])
-    if (!js.isUndefined(TestDurationInSeconds)) __obj.updateDynamic("TestDurationInSeconds")(TestDurationInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateQualificationTypeRequest]
   }
+  @scala.inline
+  implicit class UpdateQualificationTypeRequestOps[Self <: UpdateQualificationTypeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQualificationTypeId(value: EntityId): Self = this.set("QualificationTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnswerKey(value: String): Self = this.set("AnswerKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnswerKey: Self = this.set("AnswerKey", js.undefined)
+    @scala.inline
+    def setAutoGranted(value: Boolean): Self = this.set("AutoGranted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoGranted: Self = this.set("AutoGranted", js.undefined)
+    @scala.inline
+    def setAutoGrantedValue(value: Integer): Self = this.set("AutoGrantedValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoGrantedValue: Self = this.set("AutoGrantedValue", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setQualificationTypeStatus(value: QualificationTypeStatus): Self = this.set("QualificationTypeStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualificationTypeStatus: Self = this.set("QualificationTypeStatus", js.undefined)
+    @scala.inline
+    def setRetryDelayInSeconds(value: Long): Self = this.set("RetryDelayInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryDelayInSeconds: Self = this.set("RetryDelayInSeconds", js.undefined)
+    @scala.inline
+    def setTest(value: String): Self = this.set("Test", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTest: Self = this.set("Test", js.undefined)
+    @scala.inline
+    def setTestDurationInSeconds(value: Long): Self = this.set("TestDurationInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestDurationInSeconds: Self = this.set("TestDurationInSeconds", js.undefined)
+  }
+  
 }
 

@@ -42,25 +42,58 @@ trait UpdateDevEndpointRequest extends js.Object {
 
 object UpdateDevEndpointRequest {
   @scala.inline
-  def apply(
-    EndpointName: GenericString,
-    AddArguments: MapValue = null,
-    AddPublicKeys: PublicKeysList = null,
-    CustomLibraries: DevEndpointCustomLibraries = null,
-    DeleteArguments: StringList = null,
-    DeletePublicKeys: PublicKeysList = null,
-    PublicKey: GenericString = null,
-    UpdateEtlLibraries: js.UndefOr[BooleanValue] = js.undefined
-  ): UpdateDevEndpointRequest = {
+  def apply(EndpointName: GenericString): UpdateDevEndpointRequest = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any])
-    if (AddArguments != null) __obj.updateDynamic("AddArguments")(AddArguments.asInstanceOf[js.Any])
-    if (AddPublicKeys != null) __obj.updateDynamic("AddPublicKeys")(AddPublicKeys.asInstanceOf[js.Any])
-    if (CustomLibraries != null) __obj.updateDynamic("CustomLibraries")(CustomLibraries.asInstanceOf[js.Any])
-    if (DeleteArguments != null) __obj.updateDynamic("DeleteArguments")(DeleteArguments.asInstanceOf[js.Any])
-    if (DeletePublicKeys != null) __obj.updateDynamic("DeletePublicKeys")(DeletePublicKeys.asInstanceOf[js.Any])
-    if (PublicKey != null) __obj.updateDynamic("PublicKey")(PublicKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(UpdateEtlLibraries)) __obj.updateDynamic("UpdateEtlLibraries")(UpdateEtlLibraries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDevEndpointRequest]
   }
+  @scala.inline
+  implicit class UpdateDevEndpointRequestOps[Self <: UpdateDevEndpointRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointName(value: GenericString): Self = this.set("EndpointName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddArguments(value: MapValue): Self = this.set("AddArguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddArguments: Self = this.set("AddArguments", js.undefined)
+    @scala.inline
+    def setAddPublicKeysVarargs(value: GenericString*): Self = this.set("AddPublicKeys", js.Array(value :_*))
+    @scala.inline
+    def setAddPublicKeys(value: PublicKeysList): Self = this.set("AddPublicKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddPublicKeys: Self = this.set("AddPublicKeys", js.undefined)
+    @scala.inline
+    def setCustomLibraries(value: DevEndpointCustomLibraries): Self = this.set("CustomLibraries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLibraries: Self = this.set("CustomLibraries", js.undefined)
+    @scala.inline
+    def setDeleteArgumentsVarargs(value: GenericString*): Self = this.set("DeleteArguments", js.Array(value :_*))
+    @scala.inline
+    def setDeleteArguments(value: StringList): Self = this.set("DeleteArguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteArguments: Self = this.set("DeleteArguments", js.undefined)
+    @scala.inline
+    def setDeletePublicKeysVarargs(value: GenericString*): Self = this.set("DeletePublicKeys", js.Array(value :_*))
+    @scala.inline
+    def setDeletePublicKeys(value: PublicKeysList): Self = this.set("DeletePublicKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletePublicKeys: Self = this.set("DeletePublicKeys", js.undefined)
+    @scala.inline
+    def setPublicKey(value: GenericString): Self = this.set("PublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKey: Self = this.set("PublicKey", js.undefined)
+    @scala.inline
+    def setUpdateEtlLibraries(value: BooleanValue): Self = this.set("UpdateEtlLibraries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateEtlLibraries: Self = this.set("UpdateEtlLibraries", js.undefined)
+  }
+  
 }
 

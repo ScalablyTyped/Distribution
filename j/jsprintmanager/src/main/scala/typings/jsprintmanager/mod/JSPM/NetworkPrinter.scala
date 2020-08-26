@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 class NetworkPrinter protected () extends IClientPrinter {
   def this(port: Double) = this()
   def this(port: Double, ipAddress: String) = this()
+  def this(port: Double, ipAddress: js.UndefOr[scala.Nothing], dnsName: String) = this()
   def this(port: Double, ipAddress: String, dnsName: String) = this()
-  /* CompleteClass */
-  override var Id: js.Any = js.native
   @JSName("Id")
   var Id_NetworkPrinter: Double = js.native
   var _dnsName: js.Any = js.native
@@ -20,7 +19,5 @@ class NetworkPrinter protected () extends IClientPrinter {
   var dnsName: String = js.native
   var ipAddress: String = js.native
   var port: Double = js.native
-  /* CompleteClass */
-  override def serialize(): js.Any = js.native
 }
 

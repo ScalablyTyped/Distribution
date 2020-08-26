@@ -12,6 +12,7 @@ import typings.mendixmodelsdk.menusMod.menus.MenuItem
 import typings.mendixmodelsdk.microflowsMod.microflows.Microflow
 import typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate
 import typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem
+import typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile
 import typings.mendixmodelsdk.pagesMod.pages.AttributeWidget
 import typings.mendixmodelsdk.pagesMod.pages.AttributeWidgetWithPlaceholder
 import typings.mendixmodelsdk.pagesMod.pages.Button
@@ -343,6 +344,15 @@ object texts extends js.Object {
     def createInMasterDetailDetailRegionUnderTitle(container: MasterDetailDetailRegion): typings.mendixmodelsdk.textsMod.texts.Text = js.native
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
+      * The new Text will be automatically stored in the 'alternativeText' property
+      * of the parent menus.MenuItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.12.0 and higher
+      */
+    def createInMenuItemUnderAlternativeText(container: MenuItem): typings.mendixmodelsdk.textsMod.texts.Text = js.native
+    /**
+      * Creates and returns a new Text instance in the SDK and on the server.
       * The new Text will be automatically stored in the 'caption' property
       * of the parent menus.MenuItem element passed as argument.
       */
@@ -361,8 +371,20 @@ object texts extends js.Object {
     def createInMicroflowUnderConcurrencyErrorMessage(container: Microflow): typings.mendixmodelsdk.textsMod.texts.Text = js.native
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
+      * The new Text will be automatically stored in the 'appTitle' property
+      * of the parent navigation.NavigationProfile element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.12.0 and higher
+      */
+    def createInNavigationProfileUnderAppTitle(container: NavigationProfile): typings.mendixmodelsdk.textsMod.texts.Text = js.native
+    /**
+      * Creates and returns a new Text instance in the SDK and on the server.
       * The new Text will be automatically stored in the 'formTitle' property
       * of the parent pages.PageSettings element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 8.11.0
       */
     def createInPageSettingsUnderFormTitle(container: PageSettings): typings.mendixmodelsdk.textsMod.texts.Text = js.native
     /**

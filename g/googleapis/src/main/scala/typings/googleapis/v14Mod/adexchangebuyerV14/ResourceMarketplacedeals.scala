@@ -28,6 +28,7 @@ class ResourceMarketplacedeals protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaDeleteOrderDealsResponse] = js.native
   def delete(callback: BodyResponseCallback[SchemaDeleteOrderDealsResponse]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeleteOrderDealsResponse] = js.native
   def delete(params: ParamsResourceMarketplacedealsDelete): GaxiosPromise[SchemaDeleteOrderDealsResponse] = js.native
   def delete(
     params: ParamsResourceMarketplacedealsDelete,
@@ -59,6 +60,7 @@ class ResourceMarketplacedeals protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaAddOrderDealsResponse] = js.native
   def insert(callback: BodyResponseCallback[SchemaAddOrderDealsResponse]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAddOrderDealsResponse] = js.native
   def insert(params: ParamsResourceMarketplacedealsInsert): GaxiosPromise[SchemaAddOrderDealsResponse] = js.native
   def insert(
     params: ParamsResourceMarketplacedealsInsert,
@@ -90,6 +92,7 @@ class ResourceMarketplacedeals protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGetOrderDealsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGetOrderDealsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetOrderDealsResponse] = js.native
   def list(params: ParamsResourceMarketplacedealsList): GaxiosPromise[SchemaGetOrderDealsResponse] = js.native
   def list(
     params: ParamsResourceMarketplacedealsList,
@@ -121,6 +124,7 @@ class ResourceMarketplacedeals protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaEditAllOrderDealsResponse] = js.native
   def update(callback: BodyResponseCallback[SchemaEditAllOrderDealsResponse]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEditAllOrderDealsResponse] = js.native
   def update(params: ParamsResourceMarketplacedealsUpdate): GaxiosPromise[SchemaEditAllOrderDealsResponse] = js.native
   def update(
     params: ParamsResourceMarketplacedealsUpdate,

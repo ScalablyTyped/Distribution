@@ -42,25 +42,52 @@ trait UpdateFunctionCodeRequest extends js.Object {
 
 object UpdateFunctionCodeRequest {
   @scala.inline
-  def apply(
-    FunctionName: FunctionName,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Publish: js.UndefOr[Boolean] = js.undefined,
-    RevisionId: String = null,
-    S3Bucket: S3Bucket = null,
-    S3Key: S3Key = null,
-    S3ObjectVersion: S3ObjectVersion = null,
-    ZipFile: _Blob = null
-  ): UpdateFunctionCodeRequest = {
+  def apply(FunctionName: FunctionName): UpdateFunctionCodeRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Publish)) __obj.updateDynamic("Publish")(Publish.get.asInstanceOf[js.Any])
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
-    if (S3Bucket != null) __obj.updateDynamic("S3Bucket")(S3Bucket.asInstanceOf[js.Any])
-    if (S3Key != null) __obj.updateDynamic("S3Key")(S3Key.asInstanceOf[js.Any])
-    if (S3ObjectVersion != null) __obj.updateDynamic("S3ObjectVersion")(S3ObjectVersion.asInstanceOf[js.Any])
-    if (ZipFile != null) __obj.updateDynamic("ZipFile")(ZipFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFunctionCodeRequest]
   }
+  @scala.inline
+  implicit class UpdateFunctionCodeRequestOps[Self <: UpdateFunctionCodeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFunctionName(value: FunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setPublish(value: Boolean): Self = this.set("Publish", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublish: Self = this.set("Publish", js.undefined)
+    @scala.inline
+    def setRevisionId(value: String): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+    @scala.inline
+    def setS3Bucket(value: S3Bucket): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Bucket: Self = this.set("S3Bucket", js.undefined)
+    @scala.inline
+    def setS3Key(value: S3Key): Self = this.set("S3Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Key: Self = this.set("S3Key", js.undefined)
+    @scala.inline
+    def setS3ObjectVersion(value: S3ObjectVersion): Self = this.set("S3ObjectVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3ObjectVersion: Self = this.set("S3ObjectVersion", js.undefined)
+    @scala.inline
+    def setZipFile(value: _Blob): Self = this.set("ZipFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZipFile: Self = this.set("ZipFile", js.undefined)
+  }
+  
 }
 

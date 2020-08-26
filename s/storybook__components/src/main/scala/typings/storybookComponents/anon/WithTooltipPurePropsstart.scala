@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @storybook/components.@storybook/components/dist/tooltip/WithTooltip.WithTooltipPureProps & {  startOpen ? :boolean} */
+/* Inlined @storybook/components.@storybook/components/dist/tooltip/WithTooltip.WithTooltipPureProps & {  startOpen :boolean | undefined} */
 @js.native
 trait WithTooltipPurePropsstart extends js.Object {
   var children: ReactNode = js.native
@@ -31,34 +31,72 @@ trait WithTooltipPurePropsstart extends js.Object {
 
 object WithTooltipPurePropsstart {
   @scala.inline
-  def apply(
-    children: ReactNode = null,
-    closeOnClick: js.UndefOr[Boolean] = js.undefined,
-    hasChrome: js.UndefOr[Boolean] = js.undefined,
-    modifiers: Modifiers = null,
-    onDoubleClick: () => Unit = null,
-    onVisibilityChange: /* visibility */ Boolean => Unit = null,
-    placement: Placement = null,
-    startOpen: js.UndefOr[Boolean] = js.undefined,
-    svg: js.UndefOr[Boolean] = js.undefined,
-    tooltip: ReactNode | (js.Function1[/* p */ WithHideFn, ReactNode]) = null,
-    tooltipShown: js.UndefOr[Boolean] = js.undefined,
-    trigger: none | hover | click | `right-click` = null
-  ): WithTooltipPurePropsstart = {
+  def apply(): WithTooltipPurePropsstart = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasChrome)) __obj.updateDynamic("hasChrome")(hasChrome.get.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction0(onDoubleClick))
-    if (onVisibilityChange != null) __obj.updateDynamic("onVisibilityChange")(js.Any.fromFunction1(onVisibilityChange))
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(startOpen)) __obj.updateDynamic("startOpen")(startOpen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(svg)) __obj.updateDynamic("svg")(svg.get.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipShown)) __obj.updateDynamic("tooltipShown")(tooltipShown.get.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithTooltipPurePropsstart]
   }
+  @scala.inline
+  implicit class WithTooltipPurePropsstartOps[Self <: WithTooltipPurePropsstart] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setCloseOnClick(value: Boolean): Self = this.set("closeOnClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnClick: Self = this.set("closeOnClick", js.undefined)
+    @scala.inline
+    def setHasChrome(value: Boolean): Self = this.set("hasChrome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasChrome: Self = this.set("hasChrome", js.undefined)
+    @scala.inline
+    def setModifiers(value: Modifiers): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    @scala.inline
+    def setOnDoubleClick(value: () => Unit): Self = this.set("onDoubleClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDoubleClick: Self = this.set("onDoubleClick", js.undefined)
+    @scala.inline
+    def setOnVisibilityChange(value: /* visibility */ Boolean => Unit): Self = this.set("onVisibilityChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnVisibilityChange: Self = this.set("onVisibilityChange", js.undefined)
+    @scala.inline
+    def setPlacement(value: Placement): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("placement", js.undefined)
+    @scala.inline
+    def setStartOpen(value: Boolean): Self = this.set("startOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartOpen: Self = this.set("startOpen", js.undefined)
+    @scala.inline
+    def setSvg(value: Boolean): Self = this.set("svg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvg: Self = this.set("svg", js.undefined)
+    @scala.inline
+    def setTooltipFunction1(value: /* p */ WithHideFn => ReactNode): Self = this.set("tooltip", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTooltip(value: ReactNode | (js.Function1[/* p */ WithHideFn, ReactNode])): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTooltipShown(value: Boolean): Self = this.set("tooltipShown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipShown: Self = this.set("tooltipShown", js.undefined)
+    @scala.inline
+    def setTrigger(value: none | hover | click | `right-click`): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrigger: Self = this.set("trigger", js.undefined)
+  }
+  
 }
 

@@ -36,7 +36,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined node.http.ClientRequest & {  headers  :std.Record<string, string>} */
+/* Inlined node.http.ClientRequest & {  headers :std.Record<string, string>} */
 @js.native
 trait ClientRequestheadersRecor extends js.Object {
   var _writev: js.UndefOr[
@@ -144,6 +144,7 @@ trait ClientRequestheadersRecor extends js.Object {
   def end(data: String, cb: js.Function0[Unit]): Unit = js.native
   def end(data: Uint8Array): Unit = js.native
   def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+  def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   def eventNames(): js.Array[String | js.Symbol] = js.native
@@ -334,6 +335,7 @@ trait ClientRequestheadersRecor extends js.Object {
   def setNoDelay(): Unit = js.native
   def setNoDelay(noDelay: Boolean): Unit = js.native
   def setSocketKeepAlive(): Unit = js.native
+  def setSocketKeepAlive(enable: js.UndefOr[scala.Nothing], initialDelay: Double): Unit = js.native
   def setSocketKeepAlive(enable: Boolean): Unit = js.native
   def setSocketKeepAlive(enable: Boolean, initialDelay: Double): Unit = js.native
   def setTimeout(timeout: Double): this.type = js.native
@@ -350,6 +352,11 @@ trait ClientRequestheadersRecor extends js.Object {
     chunk: js.Any,
     encoding: BufferEncoding,
     cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  ): Boolean = js.native
+  def write(
+    str: String,
+    encoding: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
   ): Boolean = js.native
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native

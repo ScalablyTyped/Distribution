@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object trackCommerceEvent_purchase extends js.Object {
   def apply(event: purchase, commerce_data: js.Object): Unit = js.native
+  def apply(
+    event: purchase,
+    commerce_data: js.Object,
+    metadata: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ BranchError, Unit]
+  ): Unit = js.native
   def apply(event: purchase, commerce_data: js.Object, metadata: js.Object): Unit = js.native
   def apply(
     event: purchase,

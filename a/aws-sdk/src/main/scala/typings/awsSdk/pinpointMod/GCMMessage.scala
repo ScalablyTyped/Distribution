@@ -78,44 +78,90 @@ trait GCMMessage extends js.Object {
 
 object GCMMessage {
   @scala.inline
-  def apply(
-    Action: Action = null,
-    Body: string = null,
-    CollapseKey: string = null,
-    Data: MapOfString = null,
-    IconReference: string = null,
-    ImageIconUrl: string = null,
-    ImageUrl: string = null,
-    Priority: string = null,
-    RawContent: string = null,
-    RestrictedPackageName: string = null,
-    SilentPush: js.UndefOr[boolean] = js.undefined,
-    SmallImageIconUrl: string = null,
-    Sound: string = null,
-    Substitutions: MapOfListOfString = null,
-    TimeToLive: js.UndefOr[integer] = js.undefined,
-    Title: string = null,
-    Url: string = null
-  ): GCMMessage = {
+  def apply(): GCMMessage = {
     val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (CollapseKey != null) __obj.updateDynamic("CollapseKey")(CollapseKey.asInstanceOf[js.Any])
-    if (Data != null) __obj.updateDynamic("Data")(Data.asInstanceOf[js.Any])
-    if (IconReference != null) __obj.updateDynamic("IconReference")(IconReference.asInstanceOf[js.Any])
-    if (ImageIconUrl != null) __obj.updateDynamic("ImageIconUrl")(ImageIconUrl.asInstanceOf[js.Any])
-    if (ImageUrl != null) __obj.updateDynamic("ImageUrl")(ImageUrl.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
-    if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent.asInstanceOf[js.Any])
-    if (RestrictedPackageName != null) __obj.updateDynamic("RestrictedPackageName")(RestrictedPackageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(SilentPush)) __obj.updateDynamic("SilentPush")(SilentPush.get.asInstanceOf[js.Any])
-    if (SmallImageIconUrl != null) __obj.updateDynamic("SmallImageIconUrl")(SmallImageIconUrl.asInstanceOf[js.Any])
-    if (Sound != null) __obj.updateDynamic("Sound")(Sound.asInstanceOf[js.Any])
-    if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeToLive)) __obj.updateDynamic("TimeToLive")(TimeToLive.get.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GCMMessage]
   }
+  @scala.inline
+  implicit class GCMMessageOps[Self <: GCMMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setCollapseKey(value: string): Self = this.set("CollapseKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapseKey: Self = this.set("CollapseKey", js.undefined)
+    @scala.inline
+    def setData(value: MapOfString): Self = this.set("Data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("Data", js.undefined)
+    @scala.inline
+    def setIconReference(value: string): Self = this.set("IconReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconReference: Self = this.set("IconReference", js.undefined)
+    @scala.inline
+    def setImageIconUrl(value: string): Self = this.set("ImageIconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageIconUrl: Self = this.set("ImageIconUrl", js.undefined)
+    @scala.inline
+    def setImageUrl(value: string): Self = this.set("ImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("ImageUrl", js.undefined)
+    @scala.inline
+    def setPriority(value: string): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("Priority", js.undefined)
+    @scala.inline
+    def setRawContent(value: string): Self = this.set("RawContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawContent: Self = this.set("RawContent", js.undefined)
+    @scala.inline
+    def setRestrictedPackageName(value: string): Self = this.set("RestrictedPackageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictedPackageName: Self = this.set("RestrictedPackageName", js.undefined)
+    @scala.inline
+    def setSilentPush(value: boolean): Self = this.set("SilentPush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilentPush: Self = this.set("SilentPush", js.undefined)
+    @scala.inline
+    def setSmallImageIconUrl(value: string): Self = this.set("SmallImageIconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmallImageIconUrl: Self = this.set("SmallImageIconUrl", js.undefined)
+    @scala.inline
+    def setSound(value: string): Self = this.set("Sound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSound: Self = this.set("Sound", js.undefined)
+    @scala.inline
+    def setSubstitutions(value: MapOfListOfString): Self = this.set("Substitutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubstitutions: Self = this.set("Substitutions", js.undefined)
+    @scala.inline
+    def setTimeToLive(value: integer): Self = this.set("TimeToLive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeToLive: Self = this.set("TimeToLive", js.undefined)
+    @scala.inline
+    def setTitle(value: string): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+    @scala.inline
+    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

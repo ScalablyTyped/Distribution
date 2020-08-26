@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@formatjs/intl-displaynames" : "1.2.2"
+      "@formatjs/intl-displaynames" : "3.1.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@formatjs/intl-displaynames" : "1.2.2"
+      "@formatjs/intl-displaynames" : "3.1.7"
     }
   ],
   "compile-devDependencies" : [

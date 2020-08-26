@@ -10,6 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KMSThrottlingException
   extends ServiceException[KMSThrottlingExceptionDetails]
      with GetRecordsExceptionsUnion
@@ -17,7 +18,7 @@ trait KMSThrottlingException
      with PutRecordsExceptionsUnion
      with StartStreamEncryptionExceptionsUnion {
   @JSName("name")
-  var name_KMSThrottlingException: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSThrottlingException
+  var name_KMSThrottlingException: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSThrottlingException = js.native
 }
 
 object KMSThrottlingException {
@@ -26,12 +27,25 @@ object KMSThrottlingException {
     $metadata: ResponseMetadata,
     details: KMSThrottlingExceptionDetails,
     message: String,
-    name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSThrottlingException,
-    stack: String = null
+    name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSThrottlingException
   ): KMSThrottlingException = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[KMSThrottlingException]
   }
+  @scala.inline
+  implicit class KMSThrottlingExceptionOps[Self <: KMSThrottlingException] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSThrottlingException): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

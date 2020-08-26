@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait LocalForageDbMethodsCore extends js.Object {
   def clear(): js.Promise[Unit] = js.native
   def clear(callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
-  def getItem[T](key: String): js.Promise[T] = js.native
-  def getItem[T](key: String, callback: js.Function2[/* err */ js.Any, /* value */ T, Unit]): js.Promise[T] = js.native
+  def getItem[T](key: String): js.Promise[T | Null] = js.native
+  def getItem[T](key: String, callback: js.Function2[/* err */ js.Any, /* value */ T | Null, Unit]): js.Promise[T | Null] = js.native
   def iterate[T, U](iteratee: js.Function3[/* value */ T, /* key */ String, /* iterationNumber */ Double, U]): js.Promise[U] = js.native
   def iterate[T, U](
     iteratee: js.Function3[/* value */ T, /* key */ String, /* iterationNumber */ Double, U],

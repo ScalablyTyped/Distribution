@@ -39,6 +39,15 @@ class Image protected () extends ImageBase {
     pixelRatio: Double,
     attributions: js.Array[Attribution],
     src: String,
+    crossOrigin: js.UndefOr[scala.Nothing],
+    imageLoadFunction: ImageLoadFunctionType
+  ) = this()
+  def this(
+    extent: Extent_,
+    resolution: Double,
+    pixelRatio: Double,
+    attributions: js.Array[Attribution],
+    src: String,
     crossOrigin: String,
     imageLoadFunction: ImageLoadFunctionType
   ) = this()

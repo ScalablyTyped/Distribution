@@ -12,7 +12,7 @@ Plurals suport, generated from CLDR.
 | Keywords           | i18n, l10n, plural, plurals, pluralize, pluralizer, clrd, ldml |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 58224 |
+| # downloads        | 58932 |
 | # stars            | 0 |
 
 ## Links

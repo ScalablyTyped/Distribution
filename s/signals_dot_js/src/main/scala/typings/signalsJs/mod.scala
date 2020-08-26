@@ -10,20 +10,21 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  /**
-    * Creates a DeluxeSignal instance to dispatch events on behalf of a target object.
-    * @param    target The object the signal is dispatching events on behalf of.
-    * @param    valueClasses Any number of class references that enable type checks in dispatch().
-    * For example, new DeluxeSignal(this, String, uint)
-    * would allow: signal.dispatch("the Answer", 42)
-    * but not: signal.dispatch(true, 42.5)
-    * nor: signal.dispatch()
-    *
-    * NOTE: Subclasses cannot call super.apply(null, valueClasses),
-    * but this constructor has logic to support super(valueClasses).
-    */
-  class DeluxeSignal ()
+  class DeluxeSignal protected ()
     extends typings.signalsJs.deluxeSignalMod.DeluxeSignal {
+    def this(target: js.UndefOr[scala.Nothing], valueClasses: js.Any*) = this()
+    /**
+      * Creates a DeluxeSignal instance to dispatch events on behalf of a target object.
+      * @param    target The object the signal is dispatching events on behalf of.
+      * @param    valueClasses Any number of class references that enable type checks in dispatch().
+      * For example, new DeluxeSignal(this, String, uint)
+      * would allow: signal.dispatch("the Answer", 42)
+      * but not: signal.dispatch(true, 42.5)
+      * nor: signal.dispatch()
+      *
+      * NOTE: Subclasses cannot call super.apply(null, valueClasses),
+      * but this constructor has logic to support super(valueClasses).
+      */
     def this(target: js.Object, valueClasses: js.Any*) = this()
   }
   
@@ -110,6 +111,7 @@ object mod extends js.Object {
       */
     def this(listener: js.Function, signal: IOnceSignal) = this()
     def this(listener: js.Function, signal: IOnceSignal, once: Boolean) = this()
+    def this(listener: js.Function, signal: IOnceSignal, once: js.UndefOr[scala.Nothing], priority: Double) = this()
     def this(listener: js.Function, signal: IOnceSignal, once: Boolean, priority: Double) = this()
   }
   

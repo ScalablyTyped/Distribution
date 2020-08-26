@@ -44,6 +44,14 @@ object global extends js.Object {
       retroactiveMSecs: Double,
       current: GlideRecord,
       operation: GlideRecordOperation,
+      vars: js.UndefOr[scala.Nothing],
+      withSchedule: js.Any
+    ): GlideRecord = js.native
+    def startFlowRetroactive(
+      workflowID: String,
+      retroactiveMSecs: Double,
+      current: GlideRecord,
+      operation: GlideRecordOperation,
       vars: js.Object
     ): GlideRecord = js.native
     def startFlowRetroactive(

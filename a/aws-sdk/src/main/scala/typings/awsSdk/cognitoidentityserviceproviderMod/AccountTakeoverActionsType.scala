@@ -22,16 +22,34 @@ trait AccountTakeoverActionsType extends js.Object {
 
 object AccountTakeoverActionsType {
   @scala.inline
-  def apply(
-    HighAction: AccountTakeoverActionType = null,
-    LowAction: AccountTakeoverActionType = null,
-    MediumAction: AccountTakeoverActionType = null
-  ): AccountTakeoverActionsType = {
+  def apply(): AccountTakeoverActionsType = {
     val __obj = js.Dynamic.literal()
-    if (HighAction != null) __obj.updateDynamic("HighAction")(HighAction.asInstanceOf[js.Any])
-    if (LowAction != null) __obj.updateDynamic("LowAction")(LowAction.asInstanceOf[js.Any])
-    if (MediumAction != null) __obj.updateDynamic("MediumAction")(MediumAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountTakeoverActionsType]
   }
+  @scala.inline
+  implicit class AccountTakeoverActionsTypeOps[Self <: AccountTakeoverActionsType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHighAction(value: AccountTakeoverActionType): Self = this.set("HighAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighAction: Self = this.set("HighAction", js.undefined)
+    @scala.inline
+    def setLowAction(value: AccountTakeoverActionType): Self = this.set("LowAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowAction: Self = this.set("LowAction", js.undefined)
+    @scala.inline
+    def setMediumAction(value: AccountTakeoverActionType): Self = this.set("MediumAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediumAction: Self = this.set("MediumAction", js.undefined)
+  }
+  
 }
 

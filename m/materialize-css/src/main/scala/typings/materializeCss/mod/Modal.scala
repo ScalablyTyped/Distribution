@@ -9,28 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "Modal")
 @js.native
 class Modal ()
-  extends typings.materializeCss.M.Modal {
-  /**
-    * ID of the modal element
-    */
-  /* CompleteClass */
-  override var id: String = js.native
-  /**
-    * If the modal is open.
-    */
-  /* CompleteClass */
-  override var isOpen: Boolean = js.native
-  /**
-    * Close modal
-    */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /**
-    * Open modal
-    */
-  /* CompleteClass */
-  override def open(): Unit = js.native
-}
+  extends typings.materializeCss.M.Modal
 
 /* static members */
 @JSImport("materialize-css", "Modal")

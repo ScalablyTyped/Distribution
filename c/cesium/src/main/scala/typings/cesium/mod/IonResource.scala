@@ -19,6 +19,7 @@ class IonResource protected () extends Resource {
   def getDerivedResource(): Resource = js.native
   def getDerivedResource(option: PreserveQueryParameters): Resource = js.native
   def getUrlComponent(): String = js.native
+  def getUrlComponent(query: js.UndefOr[scala.Nothing], proxy: Boolean): String = js.native
   def getUrlComponent(query: Boolean): String = js.native
   def post(data: js.Any, options: Headers): js.UndefOr[js.Promise[_]] = js.native
   def setQueryParameters(params: js.Any): Unit = js.native

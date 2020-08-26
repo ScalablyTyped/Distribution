@@ -26,16 +26,36 @@ trait SchemaBatchUpdateDocumentResponse extends js.Object {
 
 object SchemaBatchUpdateDocumentResponse {
   @scala.inline
-  def apply(
-    documentId: String = null,
-    replies: js.Array[SchemaResponse] = null,
-    writeControl: SchemaWriteControl = null
-  ): SchemaBatchUpdateDocumentResponse = {
+  def apply(): SchemaBatchUpdateDocumentResponse = {
     val __obj = js.Dynamic.literal()
-    if (documentId != null) __obj.updateDynamic("documentId")(documentId.asInstanceOf[js.Any])
-    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
-    if (writeControl != null) __obj.updateDynamic("writeControl")(writeControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBatchUpdateDocumentResponse]
   }
+  @scala.inline
+  implicit class SchemaBatchUpdateDocumentResponseOps[Self <: SchemaBatchUpdateDocumentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentId: Self = this.set("documentId", js.undefined)
+    @scala.inline
+    def setRepliesVarargs(value: SchemaResponse*): Self = this.set("replies", js.Array(value :_*))
+    @scala.inline
+    def setReplies(value: js.Array[SchemaResponse]): Self = this.set("replies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplies: Self = this.set("replies", js.undefined)
+    @scala.inline
+    def setWriteControl(value: SchemaWriteControl): Self = this.set("writeControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteControl: Self = this.set("writeControl", js.undefined)
+  }
+  
 }
 

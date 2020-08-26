@@ -7,35 +7,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NodeToJsonContext
   extends /* key */ StringDictionary[js.Any] {
-  var anchors: js.UndefOr[js.Array[_]] = js.undefined
-  var doc: Document
-  var keep: js.UndefOr[Boolean] = js.undefined
-  var mapAsMap: js.UndefOr[Boolean] = js.undefined
-  var maxAliasCount: js.UndefOr[Double] = js.undefined
-  var onCreate: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
+  var anchors: js.UndefOr[js.Array[_]] = js.native
+  var doc: Document = js.native
+  var keep: js.UndefOr[Boolean] = js.native
+  var mapAsMap: js.UndefOr[Boolean] = js.native
+  var maxAliasCount: js.UndefOr[Double] = js.native
+  var onCreate: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.native
 }
 
 object NodeToJsonContext {
   @scala.inline
-  def apply(
-    doc: Document,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    anchors: js.Array[_] = null,
-    keep: js.UndefOr[Boolean] = js.undefined,
-    mapAsMap: js.UndefOr[Boolean] = js.undefined,
-    maxAliasCount: js.UndefOr[Double] = js.undefined,
-    onCreate: /* node */ Node => Unit = null
-  ): NodeToJsonContext = {
+  def apply(doc: Document): NodeToJsonContext = {
     val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (anchors != null) __obj.updateDynamic("anchors")(anchors.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapAsMap)) __obj.updateDynamic("mapAsMap")(mapAsMap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAliasCount)) __obj.updateDynamic("maxAliasCount")(maxAliasCount.get.asInstanceOf[js.Any])
-    if (onCreate != null) __obj.updateDynamic("onCreate")(js.Any.fromFunction1(onCreate))
     __obj.asInstanceOf[NodeToJsonContext]
   }
+  @scala.inline
+  implicit class NodeToJsonContextOps[Self <: NodeToJsonContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDoc(value: Document): Self = this.set("doc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnchorsVarargs(value: js.Any*): Self = this.set("anchors", js.Array(value :_*))
+    @scala.inline
+    def setAnchors(value: js.Array[_]): Self = this.set("anchors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchors: Self = this.set("anchors", js.undefined)
+    @scala.inline
+    def setKeep(value: Boolean): Self = this.set("keep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeep: Self = this.set("keep", js.undefined)
+    @scala.inline
+    def setMapAsMap(value: Boolean): Self = this.set("mapAsMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapAsMap: Self = this.set("mapAsMap", js.undefined)
+    @scala.inline
+    def setMaxAliasCount(value: Double): Self = this.set("maxAliasCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAliasCount: Self = this.set("maxAliasCount", js.undefined)
+    @scala.inline
+    def setOnCreate(value: /* node */ Node => Unit): Self = this.set("onCreate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCreate: Self = this.set("onCreate", js.undefined)
+  }
+  
 }
 

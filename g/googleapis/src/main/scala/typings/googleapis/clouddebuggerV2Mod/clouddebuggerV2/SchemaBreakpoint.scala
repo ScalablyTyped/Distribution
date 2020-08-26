@@ -114,42 +114,94 @@ trait SchemaBreakpoint extends js.Object {
 
 object SchemaBreakpoint {
   @scala.inline
-  def apply(
-    action: String = null,
-    condition: String = null,
-    createTime: String = null,
-    evaluatedExpressions: js.Array[SchemaVariable] = null,
-    expressions: js.Array[String] = null,
-    finalTime: String = null,
-    id: String = null,
-    isFinalState: js.UndefOr[Boolean] = js.undefined,
-    labels: StringDictionary[String] = null,
-    location: SchemaSourceLocation = null,
-    logLevel: String = null,
-    logMessageFormat: String = null,
-    stackFrames: js.Array[SchemaStackFrame] = null,
-    status: SchemaStatusMessage = null,
-    userEmail: String = null,
-    variableTable: js.Array[SchemaVariable] = null
-  ): SchemaBreakpoint = {
+  def apply(): SchemaBreakpoint = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (evaluatedExpressions != null) __obj.updateDynamic("evaluatedExpressions")(evaluatedExpressions.asInstanceOf[js.Any])
-    if (expressions != null) __obj.updateDynamic("expressions")(expressions.asInstanceOf[js.Any])
-    if (finalTime != null) __obj.updateDynamic("finalTime")(finalTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFinalState)) __obj.updateDynamic("isFinalState")(isFinalState.get.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (logMessageFormat != null) __obj.updateDynamic("logMessageFormat")(logMessageFormat.asInstanceOf[js.Any])
-    if (stackFrames != null) __obj.updateDynamic("stackFrames")(stackFrames.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail.asInstanceOf[js.Any])
-    if (variableTable != null) __obj.updateDynamic("variableTable")(variableTable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBreakpoint]
   }
+  @scala.inline
+  implicit class SchemaBreakpointOps[Self <: SchemaBreakpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setEvaluatedExpressionsVarargs(value: SchemaVariable*): Self = this.set("evaluatedExpressions", js.Array(value :_*))
+    @scala.inline
+    def setEvaluatedExpressions(value: js.Array[SchemaVariable]): Self = this.set("evaluatedExpressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluatedExpressions: Self = this.set("evaluatedExpressions", js.undefined)
+    @scala.inline
+    def setExpressionsVarargs(value: String*): Self = this.set("expressions", js.Array(value :_*))
+    @scala.inline
+    def setExpressions(value: js.Array[String]): Self = this.set("expressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressions: Self = this.set("expressions", js.undefined)
+    @scala.inline
+    def setFinalTime(value: String): Self = this.set("finalTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalTime: Self = this.set("finalTime", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsFinalState(value: Boolean): Self = this.set("isFinalState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFinalState: Self = this.set("isFinalState", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLocation(value: SchemaSourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setLogLevel(value: String): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    @scala.inline
+    def setLogMessageFormat(value: String): Self = this.set("logMessageFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogMessageFormat: Self = this.set("logMessageFormat", js.undefined)
+    @scala.inline
+    def setStackFramesVarargs(value: SchemaStackFrame*): Self = this.set("stackFrames", js.Array(value :_*))
+    @scala.inline
+    def setStackFrames(value: js.Array[SchemaStackFrame]): Self = this.set("stackFrames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackFrames: Self = this.set("stackFrames", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaStatusMessage): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setUserEmail(value: String): Self = this.set("userEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserEmail: Self = this.set("userEmail", js.undefined)
+    @scala.inline
+    def setVariableTableVarargs(value: SchemaVariable*): Self = this.set("variableTable", js.Array(value :_*))
+    @scala.inline
+    def setVariableTable(value: js.Array[SchemaVariable]): Self = this.set("variableTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariableTable: Self = this.set("variableTable", js.undefined)
+  }
+  
 }
 

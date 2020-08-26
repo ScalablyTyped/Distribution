@@ -26,17 +26,38 @@ trait UpdateJobQueueRequest extends js.Object {
 
 object UpdateJobQueueRequest {
   @scala.inline
-  def apply(
-    jobQueue: String,
-    computeEnvironmentOrder: ComputeEnvironmentOrders = null,
-    priority: js.UndefOr[Integer] = js.undefined,
-    state: JQState = null
-  ): UpdateJobQueueRequest = {
+  def apply(jobQueue: String): UpdateJobQueueRequest = {
     val __obj = js.Dynamic.literal(jobQueue = jobQueue.asInstanceOf[js.Any])
-    if (computeEnvironmentOrder != null) __obj.updateDynamic("computeEnvironmentOrder")(computeEnvironmentOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobQueueRequest]
   }
+  @scala.inline
+  implicit class UpdateJobQueueRequestOps[Self <: UpdateJobQueueRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobQueue(value: String): Self = this.set("jobQueue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComputeEnvironmentOrderVarargs(value: ComputeEnvironmentOrder*): Self = this.set("computeEnvironmentOrder", js.Array(value :_*))
+    @scala.inline
+    def setComputeEnvironmentOrder(value: ComputeEnvironmentOrders): Self = this.set("computeEnvironmentOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeEnvironmentOrder: Self = this.set("computeEnvironmentOrder", js.undefined)
+    @scala.inline
+    def setPriority(value: Integer): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setState(value: JQState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

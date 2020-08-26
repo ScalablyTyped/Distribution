@@ -26,6 +26,7 @@ trait SplitComponent
   def debounce(fn: js.Any, delay: Double): js.Function1[/* args */ js.Any, Unit] = js.native
   def handleMarkers(markers: js.Array[IMarker], editor: IAceEditorClass): Unit = js.native
   def handleOptions(props: ISplitEditorProps, editor: IAceEditorClass): Unit = js.native
+  def isInShadow(node: HTMLElement): Boolean = js.native
   def onBlur(event: js.Any): Unit = js.native
   def onChange(event: js.Any): Unit = js.native
   def onCopy(text: String): Unit = js.native

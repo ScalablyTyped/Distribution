@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-notification/lib", JSImport.Namespace)
+@JSImport("rc-notification", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   @js.native

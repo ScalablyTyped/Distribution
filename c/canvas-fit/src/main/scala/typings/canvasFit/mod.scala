@@ -31,6 +31,8 @@ object mod extends js.Object {
   }
   
   def apply(canvas: HTMLCanvasElement): resize = js.native
+  def apply(canvas: HTMLCanvasElement, parent: js.UndefOr[scala.Nothing], scale: String): resize = js.native
+  def apply(canvas: HTMLCanvasElement, parent: js.UndefOr[scala.Nothing], scale: Double): resize = js.native
   def apply(canvas: HTMLCanvasElement, parent: Document): resize = js.native
   def apply(canvas: HTMLCanvasElement, parent: Document, scale: String): resize = js.native
   def apply(canvas: HTMLCanvasElement, parent: Document, scale: Double): resize = js.native
@@ -41,6 +43,8 @@ object mod extends js.Object {
   def apply(canvas: HTMLCanvasElement, parent: HTMLElement, scale: String): resize = js.native
   def apply(canvas: HTMLCanvasElement, parent: HTMLElement, scale: Double): resize = js.native
   def apply(canvas: SVGElement): resize = js.native
+  def apply(canvas: SVGElement, parent: js.UndefOr[scala.Nothing], scale: String): resize = js.native
+  def apply(canvas: SVGElement, parent: js.UndefOr[scala.Nothing], scale: Double): resize = js.native
   def apply(canvas: SVGElement, parent: Document): resize = js.native
   def apply(canvas: SVGElement, parent: Document, scale: String): resize = js.native
   def apply(canvas: SVGElement, parent: Document, scale: Double): resize = js.native

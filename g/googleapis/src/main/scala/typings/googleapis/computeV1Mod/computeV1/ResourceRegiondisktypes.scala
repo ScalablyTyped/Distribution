@@ -30,6 +30,7 @@ class ResourceRegiondisktypes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDiskType] = js.native
   def get(callback: BodyResponseCallback[SchemaDiskType]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDiskType] = js.native
   def get(params: ParamsResourceRegiondisktypesGet): GaxiosPromise[SchemaDiskType] = js.native
   def get(params: ParamsResourceRegiondisktypesGet, callback: BodyResponseCallback[SchemaDiskType]): Unit = js.native
   def get(
@@ -63,6 +64,7 @@ class ResourceRegiondisktypes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaRegionDiskTypeList] = js.native
   def list(callback: BodyResponseCallback[SchemaRegionDiskTypeList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegionDiskTypeList] = js.native
   def list(params: ParamsResourceRegiondisktypesList): GaxiosPromise[SchemaRegionDiskTypeList] = js.native
   def list(
     params: ParamsResourceRegiondisktypesList,

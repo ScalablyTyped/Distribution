@@ -30,14 +30,61 @@ class Popup protected ()
   def this(oContent: js.Any, bModal: Boolean) = this()
   def this(oContent: typings.openui5.sap.ui.core.Control, bModal: Boolean) = this()
   def this(oContent: typings.openui5.sap.ui.core.Element, bModal: Boolean) = this()
+  def this(oContent: js.Any, bModal: js.UndefOr[scala.Nothing], bShadow: Boolean) = this()
   def this(oContent: js.Any, bModal: Boolean, bShadow: Boolean) = this()
+  def this(oContent: typings.openui5.sap.ui.core.Control, bModal: js.UndefOr[scala.Nothing], bShadow: Boolean) = this()
   def this(oContent: typings.openui5.sap.ui.core.Control, bModal: Boolean, bShadow: Boolean) = this()
+  def this(oContent: typings.openui5.sap.ui.core.Element, bModal: js.UndefOr[scala.Nothing], bShadow: Boolean) = this()
   def this(oContent: typings.openui5.sap.ui.core.Element, bModal: Boolean, bShadow: Boolean) = this()
+  def this(
+    oContent: js.Any,
+    bModal: js.UndefOr[scala.Nothing],
+    bShadow: js.UndefOr[scala.Nothing],
+    bAutoClose: Boolean
+  ) = this()
+  def this(oContent: js.Any, bModal: js.UndefOr[scala.Nothing], bShadow: Boolean, bAutoClose: Boolean) = this()
+  def this(oContent: js.Any, bModal: Boolean, bShadow: js.UndefOr[scala.Nothing], bAutoClose: Boolean) = this()
   def this(oContent: js.Any, bModal: Boolean, bShadow: Boolean, bAutoClose: Boolean) = this()
+  def this(
+    oContent: typings.openui5.sap.ui.core.Control,
+    bModal: js.UndefOr[scala.Nothing],
+    bShadow: js.UndefOr[scala.Nothing],
+    bAutoClose: Boolean
+  ) = this()
+  def this(
+    oContent: typings.openui5.sap.ui.core.Control,
+    bModal: js.UndefOr[scala.Nothing],
+    bShadow: Boolean,
+    bAutoClose: Boolean
+  ) = this()
+  def this(
+    oContent: typings.openui5.sap.ui.core.Control,
+    bModal: Boolean,
+    bShadow: js.UndefOr[scala.Nothing],
+    bAutoClose: Boolean
+  ) = this()
   def this(
     oContent: typings.openui5.sap.ui.core.Control,
     bModal: Boolean,
     bShadow: Boolean,
+    bAutoClose: Boolean
+  ) = this()
+  def this(
+    oContent: typings.openui5.sap.ui.core.Element,
+    bModal: js.UndefOr[scala.Nothing],
+    bShadow: js.UndefOr[scala.Nothing],
+    bAutoClose: Boolean
+  ) = this()
+  def this(
+    oContent: typings.openui5.sap.ui.core.Element,
+    bModal: js.UndefOr[scala.Nothing],
+    bShadow: Boolean,
+    bAutoClose: Boolean
+  ) = this()
+  def this(
+    oContent: typings.openui5.sap.ui.core.Element,
+    bModal: Boolean,
+    bShadow: js.UndefOr[scala.Nothing],
     bAutoClose: Boolean
   ) = this()
   def this(

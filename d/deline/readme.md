@@ -12,7 +12,7 @@ Template tag that takes out unwanted newlines
 | Keywords           | deline, tag, es6, multi-line, string |
 | # releases         | 1 |
 | # dependents       | 15 |
-| # downloads        | 337127 |
+| # downloads        | 355525 |
 | # stars            | 2 |
 
 ## Links

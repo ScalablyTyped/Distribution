@@ -61,11 +61,29 @@ class Viewport protected () extends js.Object {
   def imageToViewportCoordinates(imageX: Double, imageY: Double, pixelWidth: Double, pixelHeight: Double): Point = js.native
   def imageToViewportCoordinates(position: Point): Point = js.native
   def imageToViewportRectangle(imageX: Double): Rect = js.native
+  def imageToViewportRectangle(
+    imageX: Double,
+    imageY: js.UndefOr[scala.Nothing],
+    pixelWidth: js.UndefOr[scala.Nothing],
+    pixelHeight: Double
+  ): Rect = js.native
+  def imageToViewportRectangle(imageX: Double, imageY: js.UndefOr[scala.Nothing], pixelWidth: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Double, imageY: js.UndefOr[scala.Nothing], pixelWidth: Double, pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Double, imageY: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Double, imageY: Double, pixelWidth: js.UndefOr[scala.Nothing], pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Double, imageY: Double, pixelWidth: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Double, imageY: Double, pixelWidth: Double, pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Rect): Rect = js.native
+  def imageToViewportRectangle(
+    imageX: Rect,
+    imageY: js.UndefOr[scala.Nothing],
+    pixelWidth: js.UndefOr[scala.Nothing],
+    pixelHeight: Double
+  ): Rect = js.native
+  def imageToViewportRectangle(imageX: Rect, imageY: js.UndefOr[scala.Nothing], pixelWidth: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Rect, imageY: js.UndefOr[scala.Nothing], pixelWidth: Double, pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Rect, imageY: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Rect, imageY: Double, pixelWidth: js.UndefOr[scala.Nothing], pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Rect, imageY: Double, pixelWidth: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Rect, imageY: Double, pixelWidth: Double, pixelHeight: Double): Rect = js.native
   def imageToViewportZoom(imageZoom: Double): Double = js.native
@@ -103,9 +121,11 @@ class Viewport protected () extends js.Object {
   def windowToImageCoordinates(pixel: Point): Point = js.native
   def windowToViewportCoordinates(pixel: Point): Point = js.native
   def zoomBy(factor: Double): Viewport = js.native
+  def zoomBy(factor: Double, refPoint: js.UndefOr[scala.Nothing], immediately: Boolean): Viewport = js.native
   def zoomBy(factor: Double, refPoint: Point): Viewport = js.native
   def zoomBy(factor: Double, refPoint: Point, immediately: Boolean): Viewport = js.native
   def zoomTo(factor: Double): Viewport = js.native
+  def zoomTo(factor: Double, refPoint: js.UndefOr[scala.Nothing], immediately: Boolean): Viewport = js.native
   def zoomTo(factor: Double, refPoint: Point): Viewport = js.native
   def zoomTo(factor: Double, refPoint: Point, immediately: Boolean): Viewport = js.native
 }

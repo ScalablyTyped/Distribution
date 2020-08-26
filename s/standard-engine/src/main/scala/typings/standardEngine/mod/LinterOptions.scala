@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LinterOptions extends js.Object {
-  var bugs: js.UndefOr[String] = js.undefined
-  var cmd: String
+  var bugs: js.UndefOr[String] = js.native
+  var cmd: String = js.native
   /** @default process.cwd() */
-  var cwd: js.UndefOr[String] = js.undefined
-  var eslint: Typeofeslint
-  var eslintConfig: js.UndefOr[ESLintConfig] = js.undefined
-  var homepage: js.UndefOr[String] = js.undefined
+  var cwd: js.UndefOr[String] = js.native
+  var eslint: Typeofeslint = js.native
+  var eslintConfig: js.UndefOr[ESLintConfig] = js.native
+  var homepage: js.UndefOr[String] = js.native
   /**
     * This function is called with the current options object (opts),
     * any options extracted from the project's package.json (packageOpts),
@@ -22,33 +23,61 @@ trait LinterOptions extends js.Object {
     */
   var parseOpts: js.UndefOr[
     js.Function3[/* opts */ ParseOptions, /* packageOpts */ js.Any, /* rootDir */ String, ParseOptions]
-  ] = js.undefined
-  var tagline: js.UndefOr[String] = js.undefined
-  var version: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var tagline: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.native
 }
 
 object LinterOptions {
   @scala.inline
-  def apply(
-    cmd: String,
-    eslint: Typeofeslint,
-    bugs: String = null,
-    cwd: String = null,
-    eslintConfig: ESLintConfig = null,
-    homepage: String = null,
-    parseOpts: (/* opts */ ParseOptions, /* packageOpts */ js.Any, /* rootDir */ String) => ParseOptions = null,
-    tagline: String = null,
-    version: String = null
-  ): LinterOptions = {
+  def apply(cmd: String, eslint: Typeofeslint): LinterOptions = {
     val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], eslint = eslint.asInstanceOf[js.Any])
-    if (bugs != null) __obj.updateDynamic("bugs")(bugs.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (eslintConfig != null) __obj.updateDynamic("eslintConfig")(eslintConfig.asInstanceOf[js.Any])
-    if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
-    if (parseOpts != null) __obj.updateDynamic("parseOpts")(js.Any.fromFunction3(parseOpts))
-    if (tagline != null) __obj.updateDynamic("tagline")(tagline.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinterOptions]
   }
+  @scala.inline
+  implicit class LinterOptionsOps[Self <: LinterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCmd(value: String): Self = this.set("cmd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEslint(value: Typeofeslint): Self = this.set("eslint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBugs(value: String): Self = this.set("bugs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBugs: Self = this.set("bugs", js.undefined)
+    @scala.inline
+    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCwd: Self = this.set("cwd", js.undefined)
+    @scala.inline
+    def setEslintConfig(value: ESLintConfig): Self = this.set("eslintConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEslintConfig: Self = this.set("eslintConfig", js.undefined)
+    @scala.inline
+    def setHomepage(value: String): Self = this.set("homepage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomepage: Self = this.set("homepage", js.undefined)
+    @scala.inline
+    def setParseOpts(value: (/* opts */ ParseOptions, /* packageOpts */ js.Any, /* rootDir */ String) => ParseOptions): Self = this.set("parseOpts", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteParseOpts: Self = this.set("parseOpts", js.undefined)
+    @scala.inline
+    def setTagline(value: String): Self = this.set("tagline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagline: Self = this.set("tagline", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait PullRequestMergedStateChangedEventMetadata extends js.Object {
 
 object PullRequestMergedStateChangedEventMetadata {
   @scala.inline
-  def apply(
-    destinationReference: ReferenceName = null,
-    mergeMetadata: MergeMetadata = null,
-    repositoryName: RepositoryName = null
-  ): PullRequestMergedStateChangedEventMetadata = {
+  def apply(): PullRequestMergedStateChangedEventMetadata = {
     val __obj = js.Dynamic.literal()
-    if (destinationReference != null) __obj.updateDynamic("destinationReference")(destinationReference.asInstanceOf[js.Any])
-    if (mergeMetadata != null) __obj.updateDynamic("mergeMetadata")(mergeMetadata.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullRequestMergedStateChangedEventMetadata]
   }
+  @scala.inline
+  implicit class PullRequestMergedStateChangedEventMetadataOps[Self <: PullRequestMergedStateChangedEventMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationReference(value: ReferenceName): Self = this.set("destinationReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationReference: Self = this.set("destinationReference", js.undefined)
+    @scala.inline
+    def setMergeMetadata(value: MergeMetadata): Self = this.set("mergeMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeMetadata: Self = this.set("mergeMetadata", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+  }
+  
 }
 

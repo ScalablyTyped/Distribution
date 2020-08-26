@@ -14,10 +14,26 @@ trait DescribeFeatureTransformationResponse extends js.Object {
 
 object DescribeFeatureTransformationResponse {
   @scala.inline
-  def apply(featureTransformation: FeatureTransformation = null): DescribeFeatureTransformationResponse = {
+  def apply(): DescribeFeatureTransformationResponse = {
     val __obj = js.Dynamic.literal()
-    if (featureTransformation != null) __obj.updateDynamic("featureTransformation")(featureTransformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFeatureTransformationResponse]
   }
+  @scala.inline
+  implicit class DescribeFeatureTransformationResponseOps[Self <: DescribeFeatureTransformationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFeatureTransformation(value: FeatureTransformation): Self = this.set("featureTransformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureTransformation: Self = this.set("featureTransformation", js.undefined)
+  }
+  
 }
 

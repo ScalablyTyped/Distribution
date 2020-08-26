@@ -46,28 +46,60 @@ trait OrderableReplicationInstance extends js.Object {
 
 object OrderableReplicationInstance {
   @scala.inline
-  def apply(
-    AvailabilityZones: AvailabilityZonesList = null,
-    DefaultAllocatedStorage: js.UndefOr[Integer] = js.undefined,
-    EngineVersion: String = null,
-    IncludedAllocatedStorage: js.UndefOr[Integer] = js.undefined,
-    MaxAllocatedStorage: js.UndefOr[Integer] = js.undefined,
-    MinAllocatedStorage: js.UndefOr[Integer] = js.undefined,
-    ReleaseStatus: ReleaseStatusValues = null,
-    ReplicationInstanceClass: String = null,
-    StorageType: String = null
-  ): OrderableReplicationInstance = {
+  def apply(): OrderableReplicationInstance = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
-    if (!js.isUndefined(DefaultAllocatedStorage)) __obj.updateDynamic("DefaultAllocatedStorage")(DefaultAllocatedStorage.get.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludedAllocatedStorage)) __obj.updateDynamic("IncludedAllocatedStorage")(IncludedAllocatedStorage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxAllocatedStorage)) __obj.updateDynamic("MaxAllocatedStorage")(MaxAllocatedStorage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinAllocatedStorage)) __obj.updateDynamic("MinAllocatedStorage")(MinAllocatedStorage.get.asInstanceOf[js.Any])
-    if (ReleaseStatus != null) __obj.updateDynamic("ReleaseStatus")(ReleaseStatus.asInstanceOf[js.Any])
-    if (ReplicationInstanceClass != null) __obj.updateDynamic("ReplicationInstanceClass")(ReplicationInstanceClass.asInstanceOf[js.Any])
-    if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderableReplicationInstance]
   }
+  @scala.inline
+  implicit class OrderableReplicationInstanceOps[Self <: OrderableReplicationInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: String*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: AvailabilityZonesList): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    @scala.inline
+    def setDefaultAllocatedStorage(value: Integer): Self = this.set("DefaultAllocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAllocatedStorage: Self = this.set("DefaultAllocatedStorage", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setIncludedAllocatedStorage(value: Integer): Self = this.set("IncludedAllocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludedAllocatedStorage: Self = this.set("IncludedAllocatedStorage", js.undefined)
+    @scala.inline
+    def setMaxAllocatedStorage(value: Integer): Self = this.set("MaxAllocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAllocatedStorage: Self = this.set("MaxAllocatedStorage", js.undefined)
+    @scala.inline
+    def setMinAllocatedStorage(value: Integer): Self = this.set("MinAllocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinAllocatedStorage: Self = this.set("MinAllocatedStorage", js.undefined)
+    @scala.inline
+    def setReleaseStatus(value: ReleaseStatusValues): Self = this.set("ReleaseStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseStatus: Self = this.set("ReleaseStatus", js.undefined)
+    @scala.inline
+    def setReplicationInstanceClass(value: String): Self = this.set("ReplicationInstanceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceClass: Self = this.set("ReplicationInstanceClass", js.undefined)
+    @scala.inline
+    def setStorageType(value: String): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+  }
+  
 }
 

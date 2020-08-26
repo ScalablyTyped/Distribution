@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object createMessageConnection extends js.Object {
   def apply(inputStream: ReadableStream, outputStream: WritableStream): MessageConnection = js.native
+  def apply(
+    inputStream: ReadableStream,
+    outputStream: WritableStream,
+    logger: js.UndefOr[scala.Nothing],
+    strategy: ConnectionStrategy
+  ): MessageConnection = js.native
   def apply(inputStream: ReadableStream, outputStream: WritableStream, logger: Logger): MessageConnection = js.native
   def apply(
     inputStream: ReadableStream,
@@ -20,6 +26,12 @@ object createMessageConnection extends js.Object {
   def apply(
     reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
     writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter
+  ): MessageConnection = js.native
+  def apply(
+    reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
+    writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
+    logger: js.UndefOr[scala.Nothing],
+    strategy: ConnectionStrategy
   ): MessageConnection = js.native
   def apply(
     reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,

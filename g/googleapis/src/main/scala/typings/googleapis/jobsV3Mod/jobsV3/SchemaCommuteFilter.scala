@@ -47,22 +47,46 @@ trait SchemaCommuteFilter extends js.Object {
 
 object SchemaCommuteFilter {
   @scala.inline
-  def apply(
-    allowImpreciseAddresses: js.UndefOr[Boolean] = js.undefined,
-    commuteMethod: String = null,
-    departureTime: SchemaTimeOfDay = null,
-    roadTraffic: String = null,
-    startCoordinates: SchemaLatLng = null,
-    travelDuration: String = null
-  ): SchemaCommuteFilter = {
+  def apply(): SchemaCommuteFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowImpreciseAddresses)) __obj.updateDynamic("allowImpreciseAddresses")(allowImpreciseAddresses.get.asInstanceOf[js.Any])
-    if (commuteMethod != null) __obj.updateDynamic("commuteMethod")(commuteMethod.asInstanceOf[js.Any])
-    if (departureTime != null) __obj.updateDynamic("departureTime")(departureTime.asInstanceOf[js.Any])
-    if (roadTraffic != null) __obj.updateDynamic("roadTraffic")(roadTraffic.asInstanceOf[js.Any])
-    if (startCoordinates != null) __obj.updateDynamic("startCoordinates")(startCoordinates.asInstanceOf[js.Any])
-    if (travelDuration != null) __obj.updateDynamic("travelDuration")(travelDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCommuteFilter]
   }
+  @scala.inline
+  implicit class SchemaCommuteFilterOps[Self <: SchemaCommuteFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowImpreciseAddresses(value: Boolean): Self = this.set("allowImpreciseAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowImpreciseAddresses: Self = this.set("allowImpreciseAddresses", js.undefined)
+    @scala.inline
+    def setCommuteMethod(value: String): Self = this.set("commuteMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommuteMethod: Self = this.set("commuteMethod", js.undefined)
+    @scala.inline
+    def setDepartureTime(value: SchemaTimeOfDay): Self = this.set("departureTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepartureTime: Self = this.set("departureTime", js.undefined)
+    @scala.inline
+    def setRoadTraffic(value: String): Self = this.set("roadTraffic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoadTraffic: Self = this.set("roadTraffic", js.undefined)
+    @scala.inline
+    def setStartCoordinates(value: SchemaLatLng): Self = this.set("startCoordinates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartCoordinates: Self = this.set("startCoordinates", js.undefined)
+    @scala.inline
+    def setTravelDuration(value: String): Self = this.set("travelDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTravelDuration: Self = this.set("travelDuration", js.undefined)
+  }
+  
 }
 

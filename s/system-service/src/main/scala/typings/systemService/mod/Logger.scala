@@ -12,7 +12,23 @@ import scala.scalajs.js.annotation._
 class Logger ()
   extends typings.systemLogger.mod.Logger {
   def this(configuration: LoggerConfiguration) = this()
+  def this(configuration: js.UndefOr[scala.Nothing], fileConfig: FileConfiguration) = this()
   def this(configuration: LoggerConfiguration, fileConfig: FileConfiguration) = this()
+  def this(
+    configuration: js.UndefOr[scala.Nothing],
+    fileConfig: js.UndefOr[scala.Nothing],
+    sourceConfig: SourcesConfiguration
+  ) = this()
+  def this(
+    configuration: js.UndefOr[scala.Nothing],
+    fileConfig: FileConfiguration,
+    sourceConfig: SourcesConfiguration
+  ) = this()
+  def this(
+    configuration: LoggerConfiguration,
+    fileConfig: js.UndefOr[scala.Nothing],
+    sourceConfig: SourcesConfiguration
+  ) = this()
   def this(
     configuration: LoggerConfiguration,
     fileConfig: FileConfiguration,

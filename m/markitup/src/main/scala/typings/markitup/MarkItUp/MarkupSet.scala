@@ -5,163 +5,240 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MarkupSet extends js.Object {
   /**
     * Function to be called just after a markup insertion. If a global afterInsert callback is already defined this function is fired before.
     */
-  var afterInsert: js.UndefOr[js.Function1[/* h */ MarkupSet, String]] = js.undefined
+  var afterInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.native
   /**
     * Function to be called after a multiline markup insertion.
     */
-  var afterMultiInsert: js.UndefOr[js.Function1[/* h */ MarkupSet, String]] = js.undefined
+  var afterMultiInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.native
   /**
     * Returns true if the Alt key is pressed when the callback is fired.
     */
-  var altKey: js.UndefOr[Boolean] = js.undefined
+  var altKey: js.UndefOr[Boolean] = js.native
   /**
     * Function to be called just before a markup insertion. If a global beforeInsert callback is already defined this function is fired just after.
     */
-  var beforeInsert: js.UndefOr[js.Function1[/* h */ MarkupSet, String]] = js.undefined
+  var beforeInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.native
   /**
     * Function to be called before a multiline markup insertion.
     */
-  var beforeMultiInsert: js.UndefOr[js.Function1[/* h */ MarkupSet, String]] = js.undefined
+  var beforeMultiInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.native
   /**
     * Returns the position of the selection.
     */
-  var caretPosition: js.UndefOr[Double] = js.undefined
+  var caretPosition: js.UndefOr[Double] = js.native
   /**
     * Classname to be applied to this very button.
     */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /**
     * Text to be added after a whole block. Accepts functions.
     */
-  var closeBlockWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
+  var closeBlockWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
   /**
     * Markup to be added after selection. Accepts functions.
     */
-  var closeWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
+  var closeWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
   /**
     * Returns true if the Control key is pressed when the callback is fired.
     */
-  var ctrlKey: js.UndefOr[Boolean] = js.undefined
+  var ctrlKey: js.UndefOr[Boolean] = js.native
   /**
     * Open a dropdown menu with another button set.
     */
-  var dropMenu: js.UndefOr[js.Array[MarkupSet]] = js.undefined
+  var dropMenu: js.UndefOr[js.Array[MarkupSet]] = js.native
   /**
     * Keep (true) or not (false) the default behaviour of the key.
     */
-  var keepDefault: js.UndefOr[Boolean] = js.undefined
+  var keepDefault: js.UndefOr[Boolean] = js.native
   /**
     * Shortcut key to be applied to the button. Ctrl+key trigger the action of a button.
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
   /**
     * If a multi-line edition is trigged (Ctrl + Shift + click). This property return the number of the line being processed.
     */
-  var line: js.UndefOr[Double] = js.undefined
+  var line: js.UndefOr[Double] = js.native
   /**
     * Set whether the tags has to be inserted at each line or on the whole selected block.
     */
-  var multiline: js.UndefOr[Boolean] = js.undefined
+  var multiline: js.UndefOr[Boolean] = js.native
   /**
     * Button name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Text to be added before a whole block. Accepts functions.
     */
-  var openBlockWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
+  var openBlockWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
   /**
     * Markup to be added before selection. Accepts functions.
     */
-  var openWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
+  var openWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
   /**
     * Placeholder text to be inserted if no text is selected by the user.
     */
-  var placeHolder: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
+  var placeHolder: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
   /**
     * Text to be added in place of the cursor or selection. Accepts functions.
     */
-  var replaceWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
+  var replaceWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
   /**
     * Returns the position of the scrollbar.
     */
-  var scrollPosition: js.UndefOr[Double] = js.undefined
+  var scrollPosition: js.UndefOr[Double] = js.native
   /**
     * Returns the selection.
     */
-  var selection: js.UndefOr[String] = js.undefined
+  var selection: js.UndefOr[String] = js.native
   /** Not documented on the markitup site, but present in the tests */
-  var separator: js.UndefOr[String] = js.undefined
+  var separator: js.UndefOr[String] = js.native
   /**
     * Returns true if the Shift key is pressed when the callback is fired.
     */
-  var shiftKey: js.UndefOr[Boolean] = js.undefined
+  var shiftKey: js.UndefOr[Boolean] = js.native
   /**
     * Returns the textarea object.
     */
-  var textarea: js.UndefOr[HTMLElement] = js.undefined
+  var textarea: js.UndefOr[HTMLElement] = js.native
 }
 
 object MarkupSet {
   @scala.inline
-  def apply(
-    afterInsert: /* h */ MarkupSet => String = null,
-    afterMultiInsert: /* h */ MarkupSet => String = null,
-    altKey: js.UndefOr[Boolean] = js.undefined,
-    beforeInsert: /* h */ MarkupSet => String = null,
-    beforeMultiInsert: /* h */ MarkupSet => String = null,
-    caretPosition: js.UndefOr[Double] = js.undefined,
-    className: String = null,
-    closeBlockWith: String | (js.Function1[MarkupSet, String]) = null,
-    closeWith: String | (js.Function1[MarkupSet, String]) = null,
-    ctrlKey: js.UndefOr[Boolean] = js.undefined,
-    dropMenu: js.Array[MarkupSet] = null,
-    keepDefault: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    line: js.UndefOr[Double] = js.undefined,
-    multiline: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    openBlockWith: String | (js.Function1[MarkupSet, String]) = null,
-    openWith: String | (js.Function1[MarkupSet, String]) = null,
-    placeHolder: String | (js.Function1[MarkupSet, String]) = null,
-    replaceWith: String | (js.Function1[MarkupSet, String]) = null,
-    scrollPosition: js.UndefOr[Double] = js.undefined,
-    selection: String = null,
-    separator: String = null,
-    shiftKey: js.UndefOr[Boolean] = js.undefined,
-    textarea: HTMLElement = null
-  ): MarkupSet = {
+  def apply(): MarkupSet = {
     val __obj = js.Dynamic.literal()
-    if (afterInsert != null) __obj.updateDynamic("afterInsert")(js.Any.fromFunction1(afterInsert))
-    if (afterMultiInsert != null) __obj.updateDynamic("afterMultiInsert")(js.Any.fromFunction1(afterMultiInsert))
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.get.asInstanceOf[js.Any])
-    if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(js.Any.fromFunction1(beforeInsert))
-    if (beforeMultiInsert != null) __obj.updateDynamic("beforeMultiInsert")(js.Any.fromFunction1(beforeMultiInsert))
-    if (!js.isUndefined(caretPosition)) __obj.updateDynamic("caretPosition")(caretPosition.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (closeBlockWith != null) __obj.updateDynamic("closeBlockWith")(closeBlockWith.asInstanceOf[js.Any])
-    if (closeWith != null) __obj.updateDynamic("closeWith")(closeWith.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.get.asInstanceOf[js.Any])
-    if (dropMenu != null) __obj.updateDynamic("dropMenu")(dropMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepDefault)) __obj.updateDynamic("keepDefault")(keepDefault.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (openBlockWith != null) __obj.updateDynamic("openBlockWith")(openBlockWith.asInstanceOf[js.Any])
-    if (openWith != null) __obj.updateDynamic("openWith")(openWith.asInstanceOf[js.Any])
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
-    if (replaceWith != null) __obj.updateDynamic("replaceWith")(replaceWith.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollPosition)) __obj.updateDynamic("scrollPosition")(scrollPosition.get.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.get.asInstanceOf[js.Any])
-    if (textarea != null) __obj.updateDynamic("textarea")(textarea.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkupSet]
   }
+  @scala.inline
+  implicit class MarkupSetOps[Self <: MarkupSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterInsert(value: MarkupSet => String): Self = this.set("afterInsert", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterInsert: Self = this.set("afterInsert", js.undefined)
+    @scala.inline
+    def setAfterMultiInsert(value: MarkupSet => String): Self = this.set("afterMultiInsert", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterMultiInsert: Self = this.set("afterMultiInsert", js.undefined)
+    @scala.inline
+    def setAltKey(value: Boolean): Self = this.set("altKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltKey: Self = this.set("altKey", js.undefined)
+    @scala.inline
+    def setBeforeInsert(value: MarkupSet => String): Self = this.set("beforeInsert", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeInsert: Self = this.set("beforeInsert", js.undefined)
+    @scala.inline
+    def setBeforeMultiInsert(value: MarkupSet => String): Self = this.set("beforeMultiInsert", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeMultiInsert: Self = this.set("beforeMultiInsert", js.undefined)
+    @scala.inline
+    def setCaretPosition(value: Double): Self = this.set("caretPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaretPosition: Self = this.set("caretPosition", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCloseBlockWithFunction1(value: MarkupSet => String): Self = this.set("closeBlockWith", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCloseBlockWith(value: String | (js.Function1[MarkupSet, String])): Self = this.set("closeBlockWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseBlockWith: Self = this.set("closeBlockWith", js.undefined)
+    @scala.inline
+    def setCloseWithFunction1(value: MarkupSet => String): Self = this.set("closeWith", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCloseWith(value: String | (js.Function1[MarkupSet, String])): Self = this.set("closeWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseWith: Self = this.set("closeWith", js.undefined)
+    @scala.inline
+    def setCtrlKey(value: Boolean): Self = this.set("ctrlKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCtrlKey: Self = this.set("ctrlKey", js.undefined)
+    @scala.inline
+    def setDropMenuVarargs(value: MarkupSet*): Self = this.set("dropMenu", js.Array(value :_*))
+    @scala.inline
+    def setDropMenu(value: js.Array[MarkupSet]): Self = this.set("dropMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropMenu: Self = this.set("dropMenu", js.undefined)
+    @scala.inline
+    def setKeepDefault(value: Boolean): Self = this.set("keepDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepDefault: Self = this.set("keepDefault", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setMultiline(value: Boolean): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiline: Self = this.set("multiline", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOpenBlockWithFunction1(value: MarkupSet => String): Self = this.set("openBlockWith", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOpenBlockWith(value: String | (js.Function1[MarkupSet, String])): Self = this.set("openBlockWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenBlockWith: Self = this.set("openBlockWith", js.undefined)
+    @scala.inline
+    def setOpenWithFunction1(value: MarkupSet => String): Self = this.set("openWith", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOpenWith(value: String | (js.Function1[MarkupSet, String])): Self = this.set("openWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenWith: Self = this.set("openWith", js.undefined)
+    @scala.inline
+    def setPlaceHolderFunction1(value: MarkupSet => String): Self = this.set("placeHolder", js.Any.fromFunction1(value))
+    @scala.inline
+    def setPlaceHolder(value: String | (js.Function1[MarkupSet, String])): Self = this.set("placeHolder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceHolder: Self = this.set("placeHolder", js.undefined)
+    @scala.inline
+    def setReplaceWithFunction1(value: MarkupSet => String): Self = this.set("replaceWith", js.Any.fromFunction1(value))
+    @scala.inline
+    def setReplaceWith(value: String | (js.Function1[MarkupSet, String])): Self = this.set("replaceWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceWith: Self = this.set("replaceWith", js.undefined)
+    @scala.inline
+    def setScrollPosition(value: Double): Self = this.set("scrollPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollPosition: Self = this.set("scrollPosition", js.undefined)
+    @scala.inline
+    def setSelection(value: String): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparator: Self = this.set("separator", js.undefined)
+    @scala.inline
+    def setShiftKey(value: Boolean): Self = this.set("shiftKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShiftKey: Self = this.set("shiftKey", js.undefined)
+    @scala.inline
+    def setTextarea(value: HTMLElement): Self = this.set("textarea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextarea: Self = this.set("textarea", js.undefined)
+  }
+  
 }
 

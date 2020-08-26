@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 class BootstrapCardViewColumn protected ()
   extends typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapCardViewColumn {
   protected def this(instance: js.Any) = this()
-  /* CompleteClass */
-  override val instance: js.Any = js.native
 }
 

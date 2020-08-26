@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * @see XDispatchRecorder
   * @since OOo 1.1.2
   */
+@js.native
 trait XDispatchRecorderSupplier extends XInterface {
   /**
     * provides access on the recorder of this supplier
@@ -27,7 +28,7 @@ trait XDispatchRecorderSupplier extends XInterface {
     * @returns the dispatch recorder of this supplier
     * @see XDispatchRecorder
     */
-  var DispatchRecorder: XDispatchRecorder
+  var DispatchRecorder: XDispatchRecorder = js.native
   /**
     * dispatch given URL and record it if recording is enabled
     *
@@ -38,7 +39,7 @@ trait XDispatchRecorderSupplier extends XInterface {
     * XRecordableDispatch} it will be used to dispatch and record all necessary parameters of the whole process.
     * @see XRecordableDispatch
     */
-  def dispatchAndRecord(URL: URL, Arguments: SeqEquiv[PropertyValue], Dispatcher: XDispatch): Unit
+  def dispatchAndRecord(URL: URL, Arguments: SeqEquiv[PropertyValue], Dispatcher: XDispatch): Unit = js.native
   /**
     * provides access on the recorder of this supplier
     *
@@ -47,7 +48,7 @@ trait XDispatchRecorderSupplier extends XInterface {
     * @returns the dispatch recorder of this supplier
     * @see XDispatchRecorder
     */
-  def getDispatchRecorder(): XDispatchRecorder
+  def getDispatchRecorder(): XDispatchRecorder = js.native
   /**
     * set a dispatch recorder on this supplier
     *
@@ -55,7 +56,7 @@ trait XDispatchRecorderSupplier extends XInterface {
     * Java, Basic or other formats). Changing between local recording inside one {@link Frame} or global one by using more than ones can be forced too.
     * @param Recorder the new recorder for this supplier
     */
-  def setDispatchRecorder(Recorder: XDispatchRecorder): Unit
+  def setDispatchRecorder(Recorder: XDispatchRecorder): Unit = js.native
 }
 
 object XDispatchRecorderSupplier {
@@ -72,5 +73,26 @@ object XDispatchRecorderSupplier {
     val __obj = js.Dynamic.literal(DispatchRecorder = DispatchRecorder.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), dispatchAndRecord = js.Any.fromFunction3(dispatchAndRecord), getDispatchRecorder = js.Any.fromFunction0(getDispatchRecorder), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDispatchRecorder = js.Any.fromFunction1(setDispatchRecorder))
     __obj.asInstanceOf[XDispatchRecorderSupplier]
   }
+  @scala.inline
+  implicit class XDispatchRecorderSupplierOps[Self <: XDispatchRecorderSupplier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDispatchRecorder(value: XDispatchRecorder): Self = this.set("DispatchRecorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDispatchAndRecord(value: (URL, SeqEquiv[PropertyValue], XDispatch) => Unit): Self = this.set("dispatchAndRecord", js.Any.fromFunction3(value))
+    @scala.inline
+    def setGetDispatchRecorder(value: () => XDispatchRecorder): Self = this.set("getDispatchRecorder", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetDispatchRecorder(value: XDispatchRecorder => Unit): Self = this.set("setDispatchRecorder", js.Any.fromFunction1(value))
+  }
+  
 }
 

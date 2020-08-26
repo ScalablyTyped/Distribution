@@ -1,7 +1,7 @@
 package typings.pulumiAws.environmentMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.applicationVersionMod.ApplicationVersion
+import typings.pulumiAws.elasticbeanstalkMod.ApplicationVersion
 import typings.pulumiAws.outputMod.elasticbeanstalk.EnvironmentAllSetting
 import typings.pulumiAws.outputMod.elasticbeanstalk.EnvironmentSetting
 import typings.pulumiPulumi.mod.CustomResource
@@ -76,7 +76,7 @@ class Environment protected () extends CustomResource {
     */
   val name: Output_[String] = js.native
   /**
-    * The [ARN][2] of the Elastic Beanstalk [Platform][3]
+    * The [ARN](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the Elastic Beanstalk [Platform](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-platformarn)
     * to use in deployment
     */
   val platformArn: Output_[String] = js.native
@@ -99,13 +99,13 @@ class Environment protected () extends CustomResource {
   val settings: Output_[js.UndefOr[js.Array[EnvironmentSetting]]] = js.native
   /**
     * A solution stack to base your environment
-    * off of. Example stacks can be found in the [Amazon API documentation][1]
+    * off of. Example stacks can be found in the [Amazon API documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html)
     */
   val solutionStackName: Output_[String] = js.native
   /**
     * A set of tags to apply to the Environment.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The name of the Elastic Beanstalk Configuration
     * template to use in deployment
@@ -145,8 +145,10 @@ object Environment extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Environment = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Environment = js.native
   def get(name: String, id: Input[ID], state: EnvironmentState): Environment = js.native
   def get(name: String, id: Input[ID], state: EnvironmentState, opts: CustomResourceOptions): Environment = js.native
   /**

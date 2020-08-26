@@ -9,6 +9,28 @@ import scala.scalajs.js.annotation._
 @js.native
 object copyOrLinkFile extends js.Object {
   def apply(src: String, dest: String): js.Promise[_] = js.native
+  def apply(
+    src: String,
+    dest: String,
+    stats: js.UndefOr[scala.Nothing],
+    isUseHardLink: js.UndefOr[scala.Nothing],
+    exDevErrorHandler: js.Function0[Boolean]
+  ): js.Promise[_] = js.native
+  def apply(src: String, dest: String, stats: js.UndefOr[scala.Nothing], isUseHardLink: Boolean): js.Promise[_] = js.native
+  def apply(
+    src: String,
+    dest: String,
+    stats: js.UndefOr[scala.Nothing],
+    isUseHardLink: Boolean,
+    exDevErrorHandler: js.Function0[Boolean]
+  ): js.Promise[_] = js.native
+  def apply(
+    src: String,
+    dest: String,
+    stats: Null,
+    isUseHardLink: js.UndefOr[scala.Nothing],
+    exDevErrorHandler: js.Function0[Boolean]
+  ): js.Promise[_] = js.native
   def apply(src: String, dest: String, stats: Null, isUseHardLink: Boolean): js.Promise[_] = js.native
   def apply(
     src: String,
@@ -18,6 +40,13 @@ object copyOrLinkFile extends js.Object {
     exDevErrorHandler: js.Function0[Boolean]
   ): js.Promise[_] = js.native
   def apply(src: String, dest: String, stats: Stats): js.Promise[_] = js.native
+  def apply(
+    src: String,
+    dest: String,
+    stats: Stats,
+    isUseHardLink: js.UndefOr[scala.Nothing],
+    exDevErrorHandler: js.Function0[Boolean]
+  ): js.Promise[_] = js.native
   def apply(src: String, dest: String, stats: Stats, isUseHardLink: Boolean): js.Promise[_] = js.native
   def apply(
     src: String,

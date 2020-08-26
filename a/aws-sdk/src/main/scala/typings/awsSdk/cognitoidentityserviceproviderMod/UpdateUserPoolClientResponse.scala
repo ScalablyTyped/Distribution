@@ -14,10 +14,26 @@ trait UpdateUserPoolClientResponse extends js.Object {
 
 object UpdateUserPoolClientResponse {
   @scala.inline
-  def apply(UserPoolClient: UserPoolClientType = null): UpdateUserPoolClientResponse = {
+  def apply(): UpdateUserPoolClientResponse = {
     val __obj = js.Dynamic.literal()
-    if (UserPoolClient != null) __obj.updateDynamic("UserPoolClient")(UserPoolClient.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserPoolClientResponse]
   }
+  @scala.inline
+  implicit class UpdateUserPoolClientResponseOps[Self <: UpdateUserPoolClientResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserPoolClient(value: UserPoolClientType): Self = this.set("UserPoolClient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPoolClient: Self = this.set("UserPoolClient", js.undefined)
+  }
+  
 }
 

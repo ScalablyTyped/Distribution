@@ -28,6 +28,7 @@ class ResourceSchemas protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceSchemasDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceSchemasDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -52,6 +53,7 @@ class ResourceSchemas protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSchema] = js.native
   def get(callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSchema] = js.native
   def get(params: ParamsResourceSchemasGet): GaxiosPromise[SchemaSchema] = js.native
   def get(params: ParamsResourceSchemasGet, callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
   def get(
@@ -80,6 +82,7 @@ class ResourceSchemas protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaSchema] = js.native
   def insert(callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSchema] = js.native
   def insert(params: ParamsResourceSchemasInsert): GaxiosPromise[SchemaSchema] = js.native
   def insert(params: ParamsResourceSchemasInsert, callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
   def insert(
@@ -107,6 +110,7 @@ class ResourceSchemas protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSchemas] = js.native
   def list(callback: BodyResponseCallback[SchemaSchemas]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSchemas] = js.native
   def list(params: ParamsResourceSchemasList): GaxiosPromise[SchemaSchemas] = js.native
   def list(params: ParamsResourceSchemasList, callback: BodyResponseCallback[SchemaSchemas]): Unit = js.native
   def list(
@@ -136,6 +140,7 @@ class ResourceSchemas protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaSchema] = js.native
   def patch(callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSchema] = js.native
   def patch(params: ParamsResourceSchemasPatch): GaxiosPromise[SchemaSchema] = js.native
   def patch(params: ParamsResourceSchemasPatch, callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
   def patch(
@@ -165,6 +170,7 @@ class ResourceSchemas protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaSchema] = js.native
   def update(callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSchema] = js.native
   def update(params: ParamsResourceSchemasUpdate): GaxiosPromise[SchemaSchema] = js.native
   def update(params: ParamsResourceSchemasUpdate, callback: BodyResponseCallback[SchemaSchema]): Unit = js.native
   def update(

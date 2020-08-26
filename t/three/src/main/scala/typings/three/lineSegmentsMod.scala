@@ -13,17 +13,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object lineSegmentsMod extends js.Object {
   @js.native
-  class LineSegments () extends Line {
-    def this(geometry: BufferGeometry) = this()
-    def this(geometry: Geometry) = this()
-    def this(geometry: BufferGeometry, material: js.Array[Material]) = this()
-    def this(geometry: BufferGeometry, material: Material) = this()
-    def this(geometry: Geometry, material: js.Array[Material]) = this()
-    def this(geometry: Geometry, material: Material) = this()
-    def this(geometry: BufferGeometry, material: js.Array[Material], mode: Double) = this()
-    def this(geometry: BufferGeometry, material: Material, mode: Double) = this()
-    def this(geometry: Geometry, material: js.Array[Material], mode: Double) = this()
-    def this(geometry: Geometry, material: Material, mode: Double) = this()
+  class LineSegments[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] ()
+    extends Line[Geometry | BufferGeometry, Material | js.Array[Material]] {
+    def this(geometry: TGeometry) = this()
+    def this(geometry: TGeometry, material: TMaterial) = this()
+    def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial) = this()
+    def this(geometry: TGeometry, material: TMaterial, mode: Double) = this()
+    def this(geometry: TGeometry, material: js.UndefOr[scala.Nothing], mode: Double) = this()
+    def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial, mode: Double) = this()
+    def this(geometry: js.UndefOr[scala.Nothing], material: js.UndefOr[scala.Nothing], mode: Double) = this()
     val isLineSegments: `true` = js.native
     @JSName("type")
     var type_LineSegments: typings.three.threeStrings.LineSegments = js.native

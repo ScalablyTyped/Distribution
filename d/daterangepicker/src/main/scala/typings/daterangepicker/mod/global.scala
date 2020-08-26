@@ -19,6 +19,7 @@ object global extends js.Object {
     @JSName("data")
     def data_daterangepicker(key: typings.daterangepicker.daterangepickerStrings.daterangepicker): js.UndefOr[daterangepicker] = js.native
     def daterangepicker(): this.type = js.native
+    def daterangepicker(options: js.UndefOr[scala.Nothing], callback: DataRangePickerCallback): this.type = js.native
     def daterangepicker(options: Options): this.type = js.native
     def daterangepicker(options: Options, callback: DataRangePickerCallback): this.type = js.native
   }

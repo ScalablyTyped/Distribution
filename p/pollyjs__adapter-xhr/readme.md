@@ -10,9 +10,9 @@ XHR adapter for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/adapter-xhr |
 | Keywords           | polly, pollyjs, record, replay, xhr, adapter |
-| # releases         | 22 |
+| # releases         | 23 |
 | # dependents       | 3 |
-| # downloads        | 148072 |
+| # downloads        | 154456 |
 | # stars            | 0 |
 
 ## Links

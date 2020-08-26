@@ -26,16 +26,9 @@ object invokeAsyncCommandMod extends js.Object {
           Readable
         ] {
     def this(input: InvokeAsyncInput[Readable]) = this()
-    /* CompleteClass */
-    override val input: InvokeAsyncInput[Readable] = js.native
     val middlewareStack: MiddlewareStack[InvokeAsyncInput[Readable], InvokeAsyncOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: LambdaResolvedConfiguration
-    ): Handler[InvokeAsyncInput[Readable], InvokeAsyncOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: LambdaResolvedConfiguration
     ): Handler[InvokeAsyncInput[Readable], InvokeAsyncOutput] = js.native
   }

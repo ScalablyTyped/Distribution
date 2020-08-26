@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Function & {  inject ? :std.Array<any> | (): std.Array<any>} */
+/* Inlined std.Function & {  inject :std.Array<any> | (): std.Array<any> | undefined} */
 @js.native
 trait Injectable extends js.Object {
   // Non-standard extensions

@@ -5,147 +5,226 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ Y in keyof lokijs.LokiOps ]:? any} */
+@js.native
 trait YinkeyofLokiOpsany extends js.Object {
   @JSName("$aeq")
-  var $aeq: js.UndefOr[js.Any] = js.undefined
+  var $aeq: js.UndefOr[js.Any] = js.native
   @JSName("$and")
-  var $and: js.UndefOr[js.Any] = js.undefined
+  var $and: js.UndefOr[js.Any] = js.native
   @JSName("$between")
-  var $between: js.UndefOr[js.Any] = js.undefined
+  var $between: js.UndefOr[js.Any] = js.native
   @JSName("$contains")
-  var $contains: js.UndefOr[js.Any] = js.undefined
+  var $contains: js.UndefOr[js.Any] = js.native
   @JSName("$containsAny")
-  var $containsAny: js.UndefOr[js.Any] = js.undefined
+  var $containsAny: js.UndefOr[js.Any] = js.native
   @JSName("$containsNone")
-  var $containsNone: js.UndefOr[js.Any] = js.undefined
+  var $containsNone: js.UndefOr[js.Any] = js.native
   @JSName("$containsString")
-  var $containsString: js.UndefOr[js.Any] = js.undefined
+  var $containsString: js.UndefOr[js.Any] = js.native
   @JSName("$definedin")
-  var $definedin: js.UndefOr[js.Any] = js.undefined
+  var $definedin: js.UndefOr[js.Any] = js.native
   @JSName("$dteq")
-  var $dteq: js.UndefOr[js.Any] = js.undefined
+  var $dteq: js.UndefOr[js.Any] = js.native
   @JSName("$eq")
-  var $eq: js.UndefOr[js.Any] = js.undefined
+  var $eq: js.UndefOr[js.Any] = js.native
   @JSName("$finite")
-  var $finite: js.UndefOr[js.Any] = js.undefined
+  var $finite: js.UndefOr[js.Any] = js.native
   @JSName("$gt")
-  var $gt: js.UndefOr[js.Any] = js.undefined
+  var $gt: js.UndefOr[js.Any] = js.native
   @JSName("$gte")
-  var $gte: js.UndefOr[js.Any] = js.undefined
+  var $gte: js.UndefOr[js.Any] = js.native
   @JSName("$in")
-  var $in: js.UndefOr[js.Any] = js.undefined
+  var $in: js.UndefOr[js.Any] = js.native
   @JSName("$jbetween")
-  var $jbetween: js.UndefOr[js.Any] = js.undefined
+  var $jbetween: js.UndefOr[js.Any] = js.native
   @JSName("$jgt")
-  var $jgt: js.UndefOr[js.Any] = js.undefined
+  var $jgt: js.UndefOr[js.Any] = js.native
   @JSName("$jgte")
-  var $jgte: js.UndefOr[js.Any] = js.undefined
+  var $jgte: js.UndefOr[js.Any] = js.native
   @JSName("$jlt")
-  var $jlt: js.UndefOr[js.Any] = js.undefined
+  var $jlt: js.UndefOr[js.Any] = js.native
   @JSName("$jlte")
-  var $jlte: js.UndefOr[js.Any] = js.undefined
+  var $jlte: js.UndefOr[js.Any] = js.native
   @JSName("$keyin")
-  var $keyin: js.UndefOr[js.Any] = js.undefined
+  var $keyin: js.UndefOr[js.Any] = js.native
   @JSName("$len")
-  var $len: js.UndefOr[js.Any] = js.undefined
+  var $len: js.UndefOr[js.Any] = js.native
   @JSName("$lt")
-  var $lt: js.UndefOr[js.Any] = js.undefined
+  var $lt: js.UndefOr[js.Any] = js.native
   @JSName("$lte")
-  var $lte: js.UndefOr[js.Any] = js.undefined
+  var $lte: js.UndefOr[js.Any] = js.native
   @JSName("$ne")
-  var $ne: js.UndefOr[js.Any] = js.undefined
+  var $ne: js.UndefOr[js.Any] = js.native
   @JSName("$nin")
-  var $nin: js.UndefOr[js.Any] = js.undefined
+  var $nin: js.UndefOr[js.Any] = js.native
   @JSName("$nkeyin")
-  var $nkeyin: js.UndefOr[js.Any] = js.undefined
+  var $nkeyin: js.UndefOr[js.Any] = js.native
   @JSName("$not")
-  var $not: js.UndefOr[js.Any] = js.undefined
+  var $not: js.UndefOr[js.Any] = js.native
   @JSName("$or")
-  var $or: js.UndefOr[js.Any] = js.undefined
+  var $or: js.UndefOr[js.Any] = js.native
   @JSName("$regex")
-  var $regex: js.UndefOr[js.Any] = js.undefined
+  var $regex: js.UndefOr[js.Any] = js.native
   @JSName("$size")
-  var $size: js.UndefOr[js.Any] = js.undefined
+  var $size: js.UndefOr[js.Any] = js.native
   @JSName("$type")
-  var $type: js.UndefOr[js.Any] = js.undefined
+  var $type: js.UndefOr[js.Any] = js.native
   @JSName("$undefinedin")
-  var $undefinedin: js.UndefOr[js.Any] = js.undefined
+  var $undefinedin: js.UndefOr[js.Any] = js.native
   @JSName("$where")
-  var $where: js.UndefOr[js.Any] = js.undefined
+  var $where: js.UndefOr[js.Any] = js.native
 }
 
 object YinkeyofLokiOpsany {
   @scala.inline
-  def apply(
-    $aeq: js.Any = null,
-    $and: js.Any = null,
-    $between: js.Any = null,
-    $contains: js.Any = null,
-    $containsAny: js.Any = null,
-    $containsNone: js.Any = null,
-    $containsString: js.Any = null,
-    $definedin: js.Any = null,
-    $dteq: js.Any = null,
-    $eq: js.Any = null,
-    $finite: js.Any = null,
-    $gt: js.Any = null,
-    $gte: js.Any = null,
-    $in: js.Any = null,
-    $jbetween: js.Any = null,
-    $jgt: js.Any = null,
-    $jgte: js.Any = null,
-    $jlt: js.Any = null,
-    $jlte: js.Any = null,
-    $keyin: js.Any = null,
-    $len: js.Any = null,
-    $lt: js.Any = null,
-    $lte: js.Any = null,
-    $ne: js.Any = null,
-    $nin: js.Any = null,
-    $nkeyin: js.Any = null,
-    $not: js.Any = null,
-    $or: js.Any = null,
-    $regex: js.Any = null,
-    $size: js.Any = null,
-    $type: js.Any = null,
-    $undefinedin: js.Any = null,
-    $where: js.Any = null
-  ): YinkeyofLokiOpsany = {
+  def apply(): YinkeyofLokiOpsany = {
     val __obj = js.Dynamic.literal()
-    if ($aeq != null) __obj.updateDynamic("$aeq")($aeq.asInstanceOf[js.Any])
-    if ($and != null) __obj.updateDynamic("$and")($and.asInstanceOf[js.Any])
-    if ($between != null) __obj.updateDynamic("$between")($between.asInstanceOf[js.Any])
-    if ($contains != null) __obj.updateDynamic("$contains")($contains.asInstanceOf[js.Any])
-    if ($containsAny != null) __obj.updateDynamic("$containsAny")($containsAny.asInstanceOf[js.Any])
-    if ($containsNone != null) __obj.updateDynamic("$containsNone")($containsNone.asInstanceOf[js.Any])
-    if ($containsString != null) __obj.updateDynamic("$containsString")($containsString.asInstanceOf[js.Any])
-    if ($definedin != null) __obj.updateDynamic("$definedin")($definedin.asInstanceOf[js.Any])
-    if ($dteq != null) __obj.updateDynamic("$dteq")($dteq.asInstanceOf[js.Any])
-    if ($eq != null) __obj.updateDynamic("$eq")($eq.asInstanceOf[js.Any])
-    if ($finite != null) __obj.updateDynamic("$finite")($finite.asInstanceOf[js.Any])
-    if ($gt != null) __obj.updateDynamic("$gt")($gt.asInstanceOf[js.Any])
-    if ($gte != null) __obj.updateDynamic("$gte")($gte.asInstanceOf[js.Any])
-    if ($in != null) __obj.updateDynamic("$in")($in.asInstanceOf[js.Any])
-    if ($jbetween != null) __obj.updateDynamic("$jbetween")($jbetween.asInstanceOf[js.Any])
-    if ($jgt != null) __obj.updateDynamic("$jgt")($jgt.asInstanceOf[js.Any])
-    if ($jgte != null) __obj.updateDynamic("$jgte")($jgte.asInstanceOf[js.Any])
-    if ($jlt != null) __obj.updateDynamic("$jlt")($jlt.asInstanceOf[js.Any])
-    if ($jlte != null) __obj.updateDynamic("$jlte")($jlte.asInstanceOf[js.Any])
-    if ($keyin != null) __obj.updateDynamic("$keyin")($keyin.asInstanceOf[js.Any])
-    if ($len != null) __obj.updateDynamic("$len")($len.asInstanceOf[js.Any])
-    if ($lt != null) __obj.updateDynamic("$lt")($lt.asInstanceOf[js.Any])
-    if ($lte != null) __obj.updateDynamic("$lte")($lte.asInstanceOf[js.Any])
-    if ($ne != null) __obj.updateDynamic("$ne")($ne.asInstanceOf[js.Any])
-    if ($nin != null) __obj.updateDynamic("$nin")($nin.asInstanceOf[js.Any])
-    if ($nkeyin != null) __obj.updateDynamic("$nkeyin")($nkeyin.asInstanceOf[js.Any])
-    if ($not != null) __obj.updateDynamic("$not")($not.asInstanceOf[js.Any])
-    if ($or != null) __obj.updateDynamic("$or")($or.asInstanceOf[js.Any])
-    if ($regex != null) __obj.updateDynamic("$regex")($regex.asInstanceOf[js.Any])
-    if ($size != null) __obj.updateDynamic("$size")($size.asInstanceOf[js.Any])
-    if ($type != null) __obj.updateDynamic("$type")($type.asInstanceOf[js.Any])
-    if ($undefinedin != null) __obj.updateDynamic("$undefinedin")($undefinedin.asInstanceOf[js.Any])
-    if ($where != null) __obj.updateDynamic("$where")($where.asInstanceOf[js.Any])
     __obj.asInstanceOf[YinkeyofLokiOpsany]
   }
+  @scala.inline
+  implicit class YinkeyofLokiOpsanyOps[Self <: YinkeyofLokiOpsany] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$aeq(value: js.Any): Self = this.set("$aeq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$aeq: Self = this.set("$aeq", js.undefined)
+    @scala.inline
+    def set$and(value: js.Any): Self = this.set("$and", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$and: Self = this.set("$and", js.undefined)
+    @scala.inline
+    def set$between(value: js.Any): Self = this.set("$between", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$between: Self = this.set("$between", js.undefined)
+    @scala.inline
+    def set$contains(value: js.Any): Self = this.set("$contains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$contains: Self = this.set("$contains", js.undefined)
+    @scala.inline
+    def set$containsAny(value: js.Any): Self = this.set("$containsAny", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$containsAny: Self = this.set("$containsAny", js.undefined)
+    @scala.inline
+    def set$containsNone(value: js.Any): Self = this.set("$containsNone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$containsNone: Self = this.set("$containsNone", js.undefined)
+    @scala.inline
+    def set$containsString(value: js.Any): Self = this.set("$containsString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$containsString: Self = this.set("$containsString", js.undefined)
+    @scala.inline
+    def set$definedin(value: js.Any): Self = this.set("$definedin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$definedin: Self = this.set("$definedin", js.undefined)
+    @scala.inline
+    def set$dteq(value: js.Any): Self = this.set("$dteq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$dteq: Self = this.set("$dteq", js.undefined)
+    @scala.inline
+    def set$eq(value: js.Any): Self = this.set("$eq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$eq: Self = this.set("$eq", js.undefined)
+    @scala.inline
+    def set$finite(value: js.Any): Self = this.set("$finite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$finite: Self = this.set("$finite", js.undefined)
+    @scala.inline
+    def set$gt(value: js.Any): Self = this.set("$gt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$gt: Self = this.set("$gt", js.undefined)
+    @scala.inline
+    def set$gte(value: js.Any): Self = this.set("$gte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$gte: Self = this.set("$gte", js.undefined)
+    @scala.inline
+    def set$in(value: js.Any): Self = this.set("$in", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$in: Self = this.set("$in", js.undefined)
+    @scala.inline
+    def set$jbetween(value: js.Any): Self = this.set("$jbetween", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$jbetween: Self = this.set("$jbetween", js.undefined)
+    @scala.inline
+    def set$jgt(value: js.Any): Self = this.set("$jgt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$jgt: Self = this.set("$jgt", js.undefined)
+    @scala.inline
+    def set$jgte(value: js.Any): Self = this.set("$jgte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$jgte: Self = this.set("$jgte", js.undefined)
+    @scala.inline
+    def set$jlt(value: js.Any): Self = this.set("$jlt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$jlt: Self = this.set("$jlt", js.undefined)
+    @scala.inline
+    def set$jlte(value: js.Any): Self = this.set("$jlte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$jlte: Self = this.set("$jlte", js.undefined)
+    @scala.inline
+    def set$keyin(value: js.Any): Self = this.set("$keyin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$keyin: Self = this.set("$keyin", js.undefined)
+    @scala.inline
+    def set$len(value: js.Any): Self = this.set("$len", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$len: Self = this.set("$len", js.undefined)
+    @scala.inline
+    def set$lt(value: js.Any): Self = this.set("$lt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$lt: Self = this.set("$lt", js.undefined)
+    @scala.inline
+    def set$lte(value: js.Any): Self = this.set("$lte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$lte: Self = this.set("$lte", js.undefined)
+    @scala.inline
+    def set$ne(value: js.Any): Self = this.set("$ne", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$ne: Self = this.set("$ne", js.undefined)
+    @scala.inline
+    def set$nin(value: js.Any): Self = this.set("$nin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$nin: Self = this.set("$nin", js.undefined)
+    @scala.inline
+    def set$nkeyin(value: js.Any): Self = this.set("$nkeyin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$nkeyin: Self = this.set("$nkeyin", js.undefined)
+    @scala.inline
+    def set$not(value: js.Any): Self = this.set("$not", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$not: Self = this.set("$not", js.undefined)
+    @scala.inline
+    def set$or(value: js.Any): Self = this.set("$or", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$or: Self = this.set("$or", js.undefined)
+    @scala.inline
+    def set$regex(value: js.Any): Self = this.set("$regex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$regex: Self = this.set("$regex", js.undefined)
+    @scala.inline
+    def set$size(value: js.Any): Self = this.set("$size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$size: Self = this.set("$size", js.undefined)
+    @scala.inline
+    def set$type(value: js.Any): Self = this.set("$type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$type: Self = this.set("$type", js.undefined)
+    @scala.inline
+    def set$undefinedin(value: js.Any): Self = this.set("$undefinedin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$undefinedin: Self = this.set("$undefinedin", js.undefined)
+    @scala.inline
+    def set$where(value: js.Any): Self = this.set("$where", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$where: Self = this.set("$where", js.undefined)
+  }
+  
 }
 

@@ -9,14 +9,14 @@ Minimal view layer for building web interfaces.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | superfine |
-| Keywords           | superfine, frontend, virtual dom, vdom |
-| # releases         | 8 |
+| Keywords           | superfine, frontend, vdom, web, app, ui |
+| # releases         | 11 |
 | # dependents       | 7 |
-| # downloads        | 7856 |
+| # downloads        | 8381 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/jorgebucaran/superfine#readme)
+- [Homepage](https://github.com/jorgebucaran/superfine)
 - [Bugs](https://github.com/jorgebucaran/superfine/issues)
 - [Repository](https://github.com/jorgebucaran/superfine)
 - [Npm](https://www.npmjs.com/package/superfine)

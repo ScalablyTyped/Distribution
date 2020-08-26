@@ -26,18 +26,40 @@ trait DkimAttributes extends js.Object {
 
 object DkimAttributes {
   @scala.inline
-  def apply(
-    SigningAttributesOrigin: DkimSigningAttributesOrigin = null,
-    SigningEnabled: js.UndefOr[Enabled] = js.undefined,
-    Status: DkimStatus = null,
-    Tokens: DnsTokenList = null
-  ): DkimAttributes = {
+  def apply(): DkimAttributes = {
     val __obj = js.Dynamic.literal()
-    if (SigningAttributesOrigin != null) __obj.updateDynamic("SigningAttributesOrigin")(SigningAttributesOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(SigningEnabled)) __obj.updateDynamic("SigningEnabled")(SigningEnabled.get.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Tokens != null) __obj.updateDynamic("Tokens")(Tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[DkimAttributes]
   }
+  @scala.inline
+  implicit class DkimAttributesOps[Self <: DkimAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSigningAttributesOrigin(value: DkimSigningAttributesOrigin): Self = this.set("SigningAttributesOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningAttributesOrigin: Self = this.set("SigningAttributesOrigin", js.undefined)
+    @scala.inline
+    def setSigningEnabled(value: Enabled): Self = this.set("SigningEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningEnabled: Self = this.set("SigningEnabled", js.undefined)
+    @scala.inline
+    def setStatus(value: DkimStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTokensVarargs(value: DnsToken*): Self = this.set("Tokens", js.Array(value :_*))
+    @scala.inline
+    def setTokens(value: DnsTokenList): Self = this.set("Tokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokens: Self = this.set("Tokens", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for urql__core
 
-Typings are for version 1.12.2
+Typings are for version 1.12.3
 
 ## Library description:
 The shared core for the highly customizable and versatile GraphQL client
@@ -10,9 +10,9 @@ The shared core for the highly customizable and versatile GraphQL client
 | ------------------ | :-------------: |
 | Full name          | @urql/core |
 | Keywords           | graphql client, state management, cache, formidablelabs, exchanges |
-| # releases         | 12 |
-| # dependents       | 8 |
-| # downloads        | 28297 |
+| # releases         | 23 |
+| # dependents       | 10 |
+| # downloads        | 711217 |
 | # stars            | 0 |
 
 ## Links

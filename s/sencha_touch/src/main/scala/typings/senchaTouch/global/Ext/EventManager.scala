@@ -21,9 +21,139 @@ object EventManager extends js.Object {
     * @param options Object An object containing handler configuration properties. This may contain any of the following properties:
     */
   def addListener(): Unit = js.native
+  def addListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def addListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def addListener(el: js.UndefOr[scala.Nothing], eventName: js.UndefOr[scala.Nothing], handler: js.Any): Unit = js.native
+  def addListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.Any,
+    scope: js.Any
+  ): Unit = js.native
+  def addListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def addListener(el: js.UndefOr[scala.Nothing], eventName: java.lang.String): Unit = js.native
+  def addListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def addListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def addListener(el: js.UndefOr[scala.Nothing], eventName: java.lang.String, handler: js.Any): Unit = js.native
+  def addListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    handler: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addListener(el: js.UndefOr[scala.Nothing], eventName: java.lang.String, handler: js.Any, scope: js.Any): Unit = js.native
+  def addListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    handler: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
   def addListener(el: js.Any): Unit = js.native
+  def addListener(
+    el: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addListener(
+    el: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def addListener(
+    el: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def addListener(el: js.Any, eventName: js.UndefOr[scala.Nothing], handler: js.Any): Unit = js.native
+  def addListener(
+    el: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addListener(el: js.Any, eventName: js.UndefOr[scala.Nothing], handler: js.Any, scope: js.Any): Unit = js.native
+  def addListener(el: js.Any, eventName: js.UndefOr[scala.Nothing], handler: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def addListener(el: js.Any, eventName: java.lang.String): Unit = js.native
+  def addListener(
+    el: js.Any,
+    eventName: java.lang.String,
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def addListener(el: js.Any, eventName: java.lang.String, handler: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def addListener(
+    el: js.Any,
+    eventName: java.lang.String,
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
   def addListener(el: js.Any, eventName: java.lang.String, handler: js.Any): Unit = js.native
+  def addListener(
+    el: js.Any,
+    eventName: java.lang.String,
+    handler: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
   def addListener(el: js.Any, eventName: java.lang.String, handler: js.Any, scope: js.Any): Unit = js.native
   def addListener(el: js.Any, eventName: java.lang.String, handler: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   /** [Method] Appends an event handler to an element
@@ -34,9 +164,139 @@ object EventManager extends js.Object {
     * @param options Object An object containing standard addListener options
     */
   def on(): Unit = js.native
+  def on(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def on(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def on(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def on(el: js.UndefOr[scala.Nothing], eventName: js.UndefOr[scala.Nothing], handler: js.Any): Unit = js.native
+  def on(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def on(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.Any,
+    scope: js.Any
+  ): Unit = js.native
+  def on(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def on(el: js.UndefOr[scala.Nothing], eventName: java.lang.String): Unit = js.native
+  def on(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def on(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def on(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def on(el: js.UndefOr[scala.Nothing], eventName: java.lang.String, handler: js.Any): Unit = js.native
+  def on(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    handler: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def on(el: js.UndefOr[scala.Nothing], eventName: java.lang.String, handler: js.Any, scope: js.Any): Unit = js.native
+  def on(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    handler: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
   def on(el: js.Any): Unit = js.native
+  def on(
+    el: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def on(
+    el: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def on(
+    el: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
+  def on(el: js.Any, eventName: js.UndefOr[scala.Nothing], handler: js.Any): Unit = js.native
+  def on(
+    el: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    handler: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def on(el: js.Any, eventName: js.UndefOr[scala.Nothing], handler: js.Any, scope: js.Any): Unit = js.native
+  def on(el: js.Any, eventName: js.UndefOr[scala.Nothing], handler: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   def on(el: js.Any, eventName: java.lang.String): Unit = js.native
+  def on(
+    el: js.Any,
+    eventName: java.lang.String,
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
+  def on(el: js.Any, eventName: java.lang.String, handler: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def on(
+    el: js.Any,
+    eventName: java.lang.String,
+    handler: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): Unit = js.native
   def on(el: js.Any, eventName: java.lang.String, handler: js.Any): Unit = js.native
+  def on(
+    el: js.Any,
+    eventName: java.lang.String,
+    handler: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): Unit = js.native
   def on(el: js.Any, eventName: java.lang.String, handler: js.Any, scope: js.Any): Unit = js.native
   def on(el: js.Any, eventName: java.lang.String, handler: js.Any, scope: js.Any, options: js.Any): Unit = js.native
   /** [Method] Adds a listener to be notified when the document is ready before onload and before images are loaded */
@@ -47,7 +307,11 @@ object EventManager extends js.Object {
     * @param options Boolean Options object as passed to Ext.Element.addListener
     */
   def onWindowResize(): Unit = js.native
+  def onWindowResize(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
+  def onWindowResize(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def onWindowResize(fn: js.UndefOr[scala.Nothing], scope: js.Any, options: Boolean): Unit = js.native
   def onWindowResize(fn: js.Any): Unit = js.native
+  def onWindowResize(fn: js.Any, scope: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
   def onWindowResize(fn: js.Any, scope: js.Any): Unit = js.native
   def onWindowResize(fn: js.Any, scope: js.Any, options: Boolean): Unit = js.native
   /** [Method] Removes all event handers from an element
@@ -62,8 +326,29 @@ object EventManager extends js.Object {
     * @param scope Object If a scope (this reference) was specified when the listener was added, then this must refer to the same object.
     */
   def removeListener(): Unit = js.native
+  def removeListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def removeListener(el: js.UndefOr[scala.Nothing], eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeListener(el: js.UndefOr[scala.Nothing], eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def removeListener(el: js.UndefOr[scala.Nothing], eventName: java.lang.String): Unit = js.native
+  def removeListener(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def removeListener(el: js.UndefOr[scala.Nothing], eventName: java.lang.String, fn: js.Any): Unit = js.native
+  def removeListener(el: js.UndefOr[scala.Nothing], eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
   def removeListener(el: js.Any): Unit = js.native
+  def removeListener(el: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeListener(el: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeListener(el: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def removeListener(el: js.Any, eventName: java.lang.String): Unit = js.native
+  def removeListener(el: js.Any, eventName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def removeListener(el: js.Any, eventName: java.lang.String, fn: js.Any): Unit = js.native
   def removeListener(el: js.Any, eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Removes an event handler from an element
@@ -73,8 +358,29 @@ object EventManager extends js.Object {
     * @param scope Object If a scope (this reference) was specified when the listener was added, then this must refer to the same object.
     */
   def un(): Unit = js.native
+  def un(
+    el: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def un(el: js.UndefOr[scala.Nothing], eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def un(el: js.UndefOr[scala.Nothing], eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def un(el: js.UndefOr[scala.Nothing], eventName: java.lang.String): Unit = js.native
+  def un(
+    el: js.UndefOr[scala.Nothing],
+    eventName: java.lang.String,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def un(el: js.UndefOr[scala.Nothing], eventName: java.lang.String, fn: js.Any): Unit = js.native
+  def un(el: js.UndefOr[scala.Nothing], eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
   def un(el: js.Any): Unit = js.native
+  def un(el: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def un(el: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def un(el: js.Any, eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def un(el: js.Any, eventName: java.lang.String): Unit = js.native
+  def un(el: js.Any, eventName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def un(el: js.Any, eventName: java.lang.String, fn: js.Any): Unit = js.native
   def un(el: js.Any, eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
 }

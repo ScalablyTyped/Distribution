@@ -15,7 +15,7 @@ trait CreateClassificationJobRequest extends js.Object {
     */
   var customDataIdentifierIds: js.UndefOr[listOfString] = js.native
   /**
-    * A custom description of the job. The description can contain as many as 512 characters.
+    * A custom description of the job. The description can contain as many as 200 characters.
     */
   var description: js.UndefOr[string] = js.native
   /**
@@ -27,7 +27,7 @@ trait CreateClassificationJobRequest extends js.Object {
     */
   var jobType: JobType = js.native
   /**
-    * A custom name for the job. The name must contain at least 3 characters and can contain as many as 64 characters.
+    * A custom name for the job. The name can contain as many as 500 characters.
     */
   var name: string = js.native
   /**
@@ -50,26 +50,56 @@ trait CreateClassificationJobRequest extends js.Object {
 
 object CreateClassificationJobRequest {
   @scala.inline
-  def apply(
-    clientToken: string,
-    jobType: JobType,
-    name: string,
-    s3JobDefinition: S3JobDefinition,
-    customDataIdentifierIds: listOfString = null,
-    description: string = null,
-    initialRun: js.UndefOr[boolean] = js.undefined,
-    samplingPercentage: js.UndefOr[integer] = js.undefined,
-    scheduleFrequency: JobScheduleFrequency = null,
-    tags: TagMap = null
-  ): CreateClassificationJobRequest = {
+  def apply(clientToken: string, jobType: JobType, name: string, s3JobDefinition: S3JobDefinition): CreateClassificationJobRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], jobType = jobType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], s3JobDefinition = s3JobDefinition.asInstanceOf[js.Any])
-    if (customDataIdentifierIds != null) __obj.updateDynamic("customDataIdentifierIds")(customDataIdentifierIds.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialRun)) __obj.updateDynamic("initialRun")(initialRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(samplingPercentage)) __obj.updateDynamic("samplingPercentage")(samplingPercentage.get.asInstanceOf[js.Any])
-    if (scheduleFrequency != null) __obj.updateDynamic("scheduleFrequency")(scheduleFrequency.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClassificationJobRequest]
   }
+  @scala.inline
+  implicit class CreateClassificationJobRequestOps[Self <: CreateClassificationJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientToken(value: string): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobType(value: JobType): Self = this.set("jobType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: string): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3JobDefinition(value: S3JobDefinition): Self = this.set("s3JobDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomDataIdentifierIdsVarargs(value: string*): Self = this.set("customDataIdentifierIds", js.Array(value :_*))
+    @scala.inline
+    def setCustomDataIdentifierIds(value: listOfString): Self = this.set("customDataIdentifierIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDataIdentifierIds: Self = this.set("customDataIdentifierIds", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setInitialRun(value: boolean): Self = this.set("initialRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialRun: Self = this.set("initialRun", js.undefined)
+    @scala.inline
+    def setSamplingPercentage(value: integer): Self = this.set("samplingPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamplingPercentage: Self = this.set("samplingPercentage", js.undefined)
+    @scala.inline
+    def setScheduleFrequency(value: JobScheduleFrequency): Self = this.set("scheduleFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleFrequency: Self = this.set("scheduleFrequency", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

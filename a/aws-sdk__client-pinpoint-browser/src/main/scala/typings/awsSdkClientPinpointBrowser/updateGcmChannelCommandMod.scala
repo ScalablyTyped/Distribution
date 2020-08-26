@@ -26,16 +26,9 @@ object updateGcmChannelCommandMod extends js.Object {
           Blob
         ] {
     def this(input: UpdateGcmChannelInput) = this()
-    /* CompleteClass */
-    override val input: UpdateGcmChannelInput = js.native
     val middlewareStack: MiddlewareStack[UpdateGcmChannelInput, UpdateGcmChannelOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[UpdateGcmChannelInput, UpdateGcmChannelOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[UpdateGcmChannelInput, UpdateGcmChannelOutput] = js.native
   }

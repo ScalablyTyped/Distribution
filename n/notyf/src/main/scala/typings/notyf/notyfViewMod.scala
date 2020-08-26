@@ -1,6 +1,7 @@
 package typings.notyf
 
 import typings.notyf.notyfModelsMod.NotyfArrayEvent
+import typings.notyf.notyfModelsMod.NotyfEventCallback
 import typings.notyf.notyfModelsMod.NotyfNotification
 import typings.notyf.notyfOptionsMod.NotyfEvent
 import typings.std.HTMLElement
@@ -36,12 +37,12 @@ object notyfViewMod extends js.Object {
     var adjustContainerAlignment: js.Any = js.native
     var animationEndEventName: String = js.native
     var container: HTMLElement = js.native
-    var events: js.UndefOr[js.Any] = js.native
+    var events: js.Any = js.native
     var getXPosition: js.Any = js.native
     var getYPosition: js.Any = js.native
     var notifications: js.Any = js.native
     def addNotification(notification: NotyfNotification): Unit = js.native
-    def on(event: NotyfEvent, cb: js.Function1[/* notification */ NotyfNotification, Unit]): Unit = js.native
+    def on(event: NotyfEvent, cb: NotyfEventCallback): Unit = js.native
     def removeNotification(notification: NotyfNotification): Unit = js.native
     def update(notification: NotyfNotification, `type`: NotyfArrayEvent): Unit = js.native
   }

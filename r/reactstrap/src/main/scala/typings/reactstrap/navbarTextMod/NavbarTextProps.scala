@@ -10,30 +10,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NavbarTextProps
   extends AllHTMLAttributes[HTMLElement]
      with ClassAttributes[HTMLElement]
      with /* key */ StringDictionary[js.Any] {
-  var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
+  var cssModule: js.UndefOr[CSSModule] = js.native
+  var tag: js.UndefOr[String | ReactType[_]] = js.native
 }
 
 object NavbarTextProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
-    ClassAttributes: ClassAttributes[HTMLElement] = null,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    cssModule: CSSModule = null,
-    tag: String | ReactType[_] = null
-  ): NavbarTextProps = {
+  def apply(): NavbarTextProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavbarTextProps]
   }
+  @scala.inline
+  implicit class NavbarTextPropsOps[Self <: NavbarTextProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCssModule(value: CSSModule): Self = this.set("cssModule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssModule: Self = this.set("cssModule", js.undefined)
+    @scala.inline
+    def setTag(value: String | ReactType[_]): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+  }
+  
 }
 

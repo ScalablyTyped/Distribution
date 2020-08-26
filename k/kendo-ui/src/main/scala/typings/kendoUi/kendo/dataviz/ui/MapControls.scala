@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MapControls extends js.Object {
-  var attribution: js.UndefOr[Boolean | MapControlsAttribution] = js.undefined
-  var navigator: js.UndefOr[Boolean | MapControlsNavigator] = js.undefined
-  var zoom: js.UndefOr[Boolean | MapControlsZoom] = js.undefined
+  var attribution: js.UndefOr[Boolean | MapControlsAttribution] = js.native
+  var navigator: js.UndefOr[Boolean | MapControlsNavigator] = js.native
+  var zoom: js.UndefOr[Boolean | MapControlsZoom] = js.native
 }
 
 object MapControls {
   @scala.inline
-  def apply(
-    attribution: Boolean | MapControlsAttribution = null,
-    navigator: Boolean | MapControlsNavigator = null,
-    zoom: Boolean | MapControlsZoom = null
-  ): MapControls = {
+  def apply(): MapControls = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (navigator != null) __obj.updateDynamic("navigator")(navigator.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapControls]
   }
+  @scala.inline
+  implicit class MapControlsOps[Self <: MapControls] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttribution(value: Boolean | MapControlsAttribution): Self = this.set("attribution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttribution: Self = this.set("attribution", js.undefined)
+    @scala.inline
+    def setNavigator(value: Boolean | MapControlsNavigator): Self = this.set("navigator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigator: Self = this.set("navigator", js.undefined)
+    @scala.inline
+    def setZoom(value: Boolean | MapControlsZoom): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+  }
+  
 }
 

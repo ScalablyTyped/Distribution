@@ -67,6 +67,38 @@ object setTag extends js.Object {
       /* blockName */ js.UndefOr[String], 
       String
     ],
+    ends: js.UndefOr[scala.Nothing],
+    blockLevel: Boolean
+  ): Unit = js.native
+  def apply(
+    name: String,
+    parse: js.Function7[
+      /* str */ js.UndefOr[String], 
+      /* line */ js.UndefOr[String], 
+      /* parser */ js.UndefOr[js.Object], 
+      /* types */ js.UndefOr[TYPES], 
+      /* stack */ js.UndefOr[js.Any], 
+      /* opts */ js.UndefOr[js.Object], 
+      /* swig */ js.UndefOr[Swig], 
+      Boolean
+    ],
+    compile: js.Function6[
+      /* compiler */ js.UndefOr[
+        js.Function4[
+          /* content */ js.UndefOr[String], 
+          /* parents */ js.UndefOr[js.Any], 
+          /* options */ js.UndefOr[js.Any], 
+          /* blockName */ js.UndefOr[String], 
+          String
+        ]
+      ], 
+      /* args */ js.UndefOr[js.Array[_]], 
+      /* content */ js.UndefOr[String], 
+      /* parents */ js.UndefOr[js.Any], 
+      /* options */ js.UndefOr[js.Any], 
+      /* blockName */ js.UndefOr[String], 
+      String
+    ],
     ends: Boolean
   ): Unit = js.native
   def apply(

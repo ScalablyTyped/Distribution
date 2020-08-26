@@ -13,10 +13,10 @@ trait ObjectConstructor
   extends ObjectStatic
      with Instantiable0[Object[Attributes]]
      with Instantiable1[/* className */ String, Object[Attributes]]
-     with Instantiable2[/* className */ String, /* attributes */ Attributes, Object[Attributes]]
+     with Instantiable2[js.UndefOr[/* className */ String], /* attributes */ Attributes, Object[Attributes]]
      with Instantiable3[
-      /* className */ String, 
-      /* attributes */ Attributes, 
+      js.UndefOr[/* className */ String], 
+      js.UndefOr[/* attributes */ Attributes], 
       /* options */ js.Any, 
       Object[Attributes]
     ]

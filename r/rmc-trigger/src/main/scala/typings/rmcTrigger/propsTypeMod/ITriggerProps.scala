@@ -5,84 +5,143 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITriggerProps extends js.Object {
-  var afterPopupVisibleChange: js.UndefOr[js.Function] = js.undefined
-  var builtinPlacements: js.UndefOr[js.Any] = js.undefined
-  var defaultPopupVisible: js.UndefOr[Boolean] = js.undefined
-  var destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined
-  var getDocument: js.UndefOr[js.Function] = js.undefined
-  var getPopupClassNameFromAlign: js.UndefOr[js.Any] = js.undefined
-  var getPopupContainer: js.UndefOr[js.Function] = js.undefined
-  var mask: js.UndefOr[Boolean] = js.undefined
-  var maskAnimation: js.UndefOr[String] = js.undefined
-  var maskClosable: js.UndefOr[Boolean] = js.undefined
-  var maskTransitionName: js.UndefOr[String | js.Object] = js.undefined
-  var onPopupAlign: js.UndefOr[js.Function] = js.undefined
-  var onPopupVisibleChange: js.UndefOr[js.Function] = js.undefined
-  var popup: ReactNode | js.Function
-  var popupAlign: js.UndefOr[js.Any] = js.undefined
-  var popupAnimation: js.UndefOr[js.Any] = js.undefined
-  var popupClassName: js.UndefOr[String] = js.undefined
-  var popupPlacement: js.UndefOr[String] = js.undefined
-  var popupStyle: js.UndefOr[js.Any] = js.undefined
-  var popupTransitionName: js.UndefOr[String | js.Object] = js.undefined
-  var popupVisible: js.UndefOr[Boolean] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var afterPopupVisibleChange: js.UndefOr[js.Function] = js.native
+  var builtinPlacements: js.UndefOr[js.Any] = js.native
+  var defaultPopupVisible: js.UndefOr[Boolean] = js.native
+  var destroyPopupOnHide: js.UndefOr[Boolean] = js.native
+  var getDocument: js.UndefOr[js.Function] = js.native
+  var getPopupClassNameFromAlign: js.UndefOr[js.Any] = js.native
+  var getPopupContainer: js.UndefOr[js.Function] = js.native
+  var mask: js.UndefOr[Boolean] = js.native
+  var maskAnimation: js.UndefOr[String] = js.native
+  var maskClosable: js.UndefOr[Boolean] = js.native
+  var maskTransitionName: js.UndefOr[String | js.Object] = js.native
+  var onPopupAlign: js.UndefOr[js.Function] = js.native
+  var onPopupVisibleChange: js.UndefOr[js.Function] = js.native
+  var popup: ReactNode | js.Function = js.native
+  var popupAlign: js.UndefOr[js.Any] = js.native
+  var popupAnimation: js.UndefOr[js.Any] = js.native
+  var popupClassName: js.UndefOr[String] = js.native
+  var popupPlacement: js.UndefOr[String] = js.native
+  var popupStyle: js.UndefOr[js.Any] = js.native
+  var popupTransitionName: js.UndefOr[String | js.Object] = js.native
+  var popupVisible: js.UndefOr[Boolean] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object ITriggerProps {
   @scala.inline
-  def apply(
-    afterPopupVisibleChange: js.Function = null,
-    builtinPlacements: js.Any = null,
-    defaultPopupVisible: js.UndefOr[Boolean] = js.undefined,
-    destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined,
-    getDocument: js.Function = null,
-    getPopupClassNameFromAlign: js.Any = null,
-    getPopupContainer: js.Function = null,
-    mask: js.UndefOr[Boolean] = js.undefined,
-    maskAnimation: String = null,
-    maskClosable: js.UndefOr[Boolean] = js.undefined,
-    maskTransitionName: String | js.Object = null,
-    onPopupAlign: js.Function = null,
-    onPopupVisibleChange: js.Function = null,
-    popup: ReactNode | js.Function = null,
-    popupAlign: js.Any = null,
-    popupAnimation: js.Any = null,
-    popupClassName: String = null,
-    popupPlacement: String = null,
-    popupStyle: js.Any = null,
-    popupTransitionName: String | js.Object = null,
-    popupVisible: js.UndefOr[Boolean] = js.undefined,
-    prefixCls: String = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): ITriggerProps = {
+  def apply(): ITriggerProps = {
     val __obj = js.Dynamic.literal()
-    if (afterPopupVisibleChange != null) __obj.updateDynamic("afterPopupVisibleChange")(afterPopupVisibleChange.asInstanceOf[js.Any])
-    if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultPopupVisible)) __obj.updateDynamic("defaultPopupVisible")(defaultPopupVisible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyPopupOnHide)) __obj.updateDynamic("destroyPopupOnHide")(destroyPopupOnHide.get.asInstanceOf[js.Any])
-    if (getDocument != null) __obj.updateDynamic("getDocument")(getDocument.asInstanceOf[js.Any])
-    if (getPopupClassNameFromAlign != null) __obj.updateDynamic("getPopupClassNameFromAlign")(getPopupClassNameFromAlign.asInstanceOf[js.Any])
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.get.asInstanceOf[js.Any])
-    if (maskAnimation != null) __obj.updateDynamic("maskAnimation")(maskAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.get.asInstanceOf[js.Any])
-    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName.asInstanceOf[js.Any])
-    if (onPopupAlign != null) __obj.updateDynamic("onPopupAlign")(onPopupAlign.asInstanceOf[js.Any])
-    if (onPopupVisibleChange != null) __obj.updateDynamic("onPopupVisibleChange")(onPopupVisibleChange.asInstanceOf[js.Any])
-    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (popupAlign != null) __obj.updateDynamic("popupAlign")(popupAlign.asInstanceOf[js.Any])
-    if (popupAnimation != null) __obj.updateDynamic("popupAnimation")(popupAnimation.asInstanceOf[js.Any])
-    if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName.asInstanceOf[js.Any])
-    if (popupPlacement != null) __obj.updateDynamic("popupPlacement")(popupPlacement.asInstanceOf[js.Any])
-    if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])
-    if (popupTransitionName != null) __obj.updateDynamic("popupTransitionName")(popupTransitionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(popupVisible)) __obj.updateDynamic("popupVisible")(popupVisible.get.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITriggerProps]
   }
+  @scala.inline
+  implicit class ITriggerPropsOps[Self <: ITriggerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterPopupVisibleChange(value: js.Function): Self = this.set("afterPopupVisibleChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterPopupVisibleChange: Self = this.set("afterPopupVisibleChange", js.undefined)
+    @scala.inline
+    def setBuiltinPlacements(value: js.Any): Self = this.set("builtinPlacements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuiltinPlacements: Self = this.set("builtinPlacements", js.undefined)
+    @scala.inline
+    def setDefaultPopupVisible(value: Boolean): Self = this.set("defaultPopupVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPopupVisible: Self = this.set("defaultPopupVisible", js.undefined)
+    @scala.inline
+    def setDestroyPopupOnHide(value: Boolean): Self = this.set("destroyPopupOnHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestroyPopupOnHide: Self = this.set("destroyPopupOnHide", js.undefined)
+    @scala.inline
+    def setGetDocument(value: js.Function): Self = this.set("getDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetDocument: Self = this.set("getDocument", js.undefined)
+    @scala.inline
+    def setGetPopupClassNameFromAlign(value: js.Any): Self = this.set("getPopupClassNameFromAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetPopupClassNameFromAlign: Self = this.set("getPopupClassNameFromAlign", js.undefined)
+    @scala.inline
+    def setGetPopupContainer(value: js.Function): Self = this.set("getPopupContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetPopupContainer: Self = this.set("getPopupContainer", js.undefined)
+    @scala.inline
+    def setMask(value: Boolean): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setMaskAnimation(value: String): Self = this.set("maskAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskAnimation: Self = this.set("maskAnimation", js.undefined)
+    @scala.inline
+    def setMaskClosable(value: Boolean): Self = this.set("maskClosable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskClosable: Self = this.set("maskClosable", js.undefined)
+    @scala.inline
+    def setMaskTransitionName(value: String | js.Object): Self = this.set("maskTransitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskTransitionName: Self = this.set("maskTransitionName", js.undefined)
+    @scala.inline
+    def setOnPopupAlign(value: js.Function): Self = this.set("onPopupAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPopupAlign: Self = this.set("onPopupAlign", js.undefined)
+    @scala.inline
+    def setOnPopupVisibleChange(value: js.Function): Self = this.set("onPopupVisibleChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnPopupVisibleChange: Self = this.set("onPopupVisibleChange", js.undefined)
+    @scala.inline
+    def setPopup(value: ReactNode | js.Function): Self = this.set("popup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopup: Self = this.set("popup", js.undefined)
+    @scala.inline
+    def setPopupAlign(value: js.Any): Self = this.set("popupAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupAlign: Self = this.set("popupAlign", js.undefined)
+    @scala.inline
+    def setPopupAnimation(value: js.Any): Self = this.set("popupAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupAnimation: Self = this.set("popupAnimation", js.undefined)
+    @scala.inline
+    def setPopupClassName(value: String): Self = this.set("popupClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupClassName: Self = this.set("popupClassName", js.undefined)
+    @scala.inline
+    def setPopupPlacement(value: String): Self = this.set("popupPlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupPlacement: Self = this.set("popupPlacement", js.undefined)
+    @scala.inline
+    def setPopupStyle(value: js.Any): Self = this.set("popupStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupStyle: Self = this.set("popupStyle", js.undefined)
+    @scala.inline
+    def setPopupTransitionName(value: String | js.Object): Self = this.set("popupTransitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupTransitionName: Self = this.set("popupTransitionName", js.undefined)
+    @scala.inline
+    def setPopupVisible(value: Boolean): Self = this.set("popupVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupVisible: Self = this.set("popupVisible", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

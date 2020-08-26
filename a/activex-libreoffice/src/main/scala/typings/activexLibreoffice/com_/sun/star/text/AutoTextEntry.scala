@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.text.AutoTextContainer
   * @see com.sun.star.text.AutoTextGroup
   */
+@js.native
 trait AutoTextEntry
   extends XText
      with XAutoTextEntry

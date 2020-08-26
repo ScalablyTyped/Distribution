@@ -38,23 +38,50 @@ trait GetResourceShareAssociationsRequest extends js.Object {
 
 object GetResourceShareAssociationsRequest {
   @scala.inline
-  def apply(
-    associationType: ResourceShareAssociationType,
-    associationStatus: ResourceShareAssociationStatus = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: String = null,
-    principal: String = null,
-    resourceArn: String = null,
-    resourceShareArns: ResourceShareArnList = null
-  ): GetResourceShareAssociationsRequest = {
+  def apply(associationType: ResourceShareAssociationType): GetResourceShareAssociationsRequest = {
     val __obj = js.Dynamic.literal(associationType = associationType.asInstanceOf[js.Any])
-    if (associationStatus != null) __obj.updateDynamic("associationStatus")(associationStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
-    if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
-    if (resourceShareArns != null) __obj.updateDynamic("resourceShareArns")(resourceShareArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceShareAssociationsRequest]
   }
+  @scala.inline
+  implicit class GetResourceShareAssociationsRequestOps[Self <: GetResourceShareAssociationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationType(value: ResourceShareAssociationType): Self = this.set("associationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssociationStatus(value: ResourceShareAssociationStatus): Self = this.set("associationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationStatus: Self = this.set("associationStatus", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setPrincipal(value: String): Self = this.set("principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipal: Self = this.set("principal", js.undefined)
+    @scala.inline
+    def setResourceArn(value: String): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("resourceArn", js.undefined)
+    @scala.inline
+    def setResourceShareArnsVarargs(value: String*): Self = this.set("resourceShareArns", js.Array(value :_*))
+    @scala.inline
+    def setResourceShareArns(value: ResourceShareArnList): Self = this.set("resourceShareArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceShareArns: Self = this.set("resourceShareArns", js.undefined)
+  }
+  
 }
 

@@ -4,45 +4,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GanttMessagesEditor extends js.Object {
-  var assignButton: js.UndefOr[String] = js.undefined
-  var editorTitle: js.UndefOr[String] = js.undefined
-  var end: js.UndefOr[String] = js.undefined
-  var percentComplete: js.UndefOr[String] = js.undefined
-  var resources: js.UndefOr[String] = js.undefined
-  var resourcesEditorTitle: js.UndefOr[String] = js.undefined
-  var resourcesHeader: js.UndefOr[String] = js.undefined
-  var start: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var unitsHeader: js.UndefOr[String] = js.undefined
+  var assignButton: js.UndefOr[String] = js.native
+  var editorTitle: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.native
+  var percentComplete: js.UndefOr[String] = js.native
+  var resources: js.UndefOr[String] = js.native
+  var resourcesEditorTitle: js.UndefOr[String] = js.native
+  var resourcesHeader: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var unitsHeader: js.UndefOr[String] = js.native
 }
 
 object GanttMessagesEditor {
   @scala.inline
-  def apply(
-    assignButton: String = null,
-    editorTitle: String = null,
-    end: String = null,
-    percentComplete: String = null,
-    resources: String = null,
-    resourcesEditorTitle: String = null,
-    resourcesHeader: String = null,
-    start: String = null,
-    title: String = null,
-    unitsHeader: String = null
-  ): GanttMessagesEditor = {
+  def apply(): GanttMessagesEditor = {
     val __obj = js.Dynamic.literal()
-    if (assignButton != null) __obj.updateDynamic("assignButton")(assignButton.asInstanceOf[js.Any])
-    if (editorTitle != null) __obj.updateDynamic("editorTitle")(editorTitle.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (resourcesEditorTitle != null) __obj.updateDynamic("resourcesEditorTitle")(resourcesEditorTitle.asInstanceOf[js.Any])
-    if (resourcesHeader != null) __obj.updateDynamic("resourcesHeader")(resourcesHeader.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (unitsHeader != null) __obj.updateDynamic("unitsHeader")(unitsHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttMessagesEditor]
   }
+  @scala.inline
+  implicit class GanttMessagesEditorOps[Self <: GanttMessagesEditor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignButton(value: String): Self = this.set("assignButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignButton: Self = this.set("assignButton", js.undefined)
+    @scala.inline
+    def setEditorTitle(value: String): Self = this.set("editorTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorTitle: Self = this.set("editorTitle", js.undefined)
+    @scala.inline
+    def setEnd(value: String): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setPercentComplete(value: String): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentComplete: Self = this.set("percentComplete", js.undefined)
+    @scala.inline
+    def setResources(value: String): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+    @scala.inline
+    def setResourcesEditorTitle(value: String): Self = this.set("resourcesEditorTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcesEditorTitle: Self = this.set("resourcesEditorTitle", js.undefined)
+    @scala.inline
+    def setResourcesHeader(value: String): Self = this.set("resourcesHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcesHeader: Self = this.set("resourcesHeader", js.undefined)
+    @scala.inline
+    def setStart(value: String): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUnitsHeader(value: String): Self = this.set("unitsHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnitsHeader: Self = this.set("unitsHeader", js.undefined)
+  }
+  
 }
 

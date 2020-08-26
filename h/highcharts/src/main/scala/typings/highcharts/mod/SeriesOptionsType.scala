@@ -6,38 +6,38 @@ import scala.scalajs.js.annotation._
 
 /* Inlined highcharts.highcharts.SeriesOptionsRegistry[keyof highcharts.highcharts.SeriesOptionsRegistry] */
 /* Rewritten from type alias, can be one of: 
-  - typings.highcharts.highchartsStrings.dial
-  - typings.highcharts.highchartsStrings.steps
-  - typings.highcharts.highchartsStrings.colorByPoint
-  - typings.highcharts.highchartsStrings.dataParser
-  - typings.highcharts.highchartsStrings.pointPadding
-  - typings.highcharts.highchartsStrings.nodes
-  - typings.highcharts.highchartsStrings.groupZPadding
-  - typings.highcharts.highchartsStrings.edgeWidth
   - typings.highcharts.highchartsStrings.fillOpacity
-  - typings.highcharts.highchartsStrings.yAxis
-  - typings.highcharts.highchartsStrings.aroonDown
-  - typings.highcharts.highchartsStrings.groupPadding
-  - typings.highcharts.highchartsStrings.stack
-  - typings.highcharts.highchartsStrings.useOhlcData
-  - typings.highcharts.highchartsStrings.dataURL
-  - typings.highcharts.highchartsStrings.pivot
-  - typings.highcharts.highchartsStrings.depth
-  - typings.highcharts.highchartsStrings.wrap
-  - typings.highcharts.highchartsStrings.edgeColor
-  - typings.highcharts.highchartsStrings.mapData
-  - typings.highcharts.highchartsStrings.xAxis
-  - typings.highcharts.highchartsStrings.data
-  - typings.highcharts.highchartsStrings.fillColor
-  - typings.highcharts.highchartsStrings.pointWidth
-  - typings.highcharts.highchartsStrings.trackByArea
-  - typings.highcharts.highchartsStrings.baseSeries
-  - typings.highcharts.highchartsStrings.borderRadius
   - typings.highcharts.highchartsStrings.grouping
-  - typings.highcharts.highchartsStrings.cluster
+  - typings.highcharts.highchartsStrings.yAxis
   - typings.highcharts.highchartsStrings.maxPointWidth
-  - typings.highcharts.highchartsStrings.`type`
+  - typings.highcharts.highchartsStrings.baseSeries
+  - typings.highcharts.highchartsStrings.pointPadding
+  - typings.highcharts.highchartsStrings.groupZPadding
+  - typings.highcharts.highchartsStrings.trackByArea
+  - typings.highcharts.highchartsStrings.depth
+  - typings.highcharts.highchartsStrings.steps
+  - typings.highcharts.highchartsStrings.data
+  - typings.highcharts.highchartsStrings.dataParser
+  - typings.highcharts.highchartsStrings.mapData
+  - typings.highcharts.highchartsStrings.wrap
+  - typings.highcharts.highchartsStrings.groupPadding
+  - typings.highcharts.highchartsStrings.aroonDown
+  - typings.highcharts.highchartsStrings.stack
+  - typings.highcharts.highchartsStrings.colorByPoint
+  - typings.highcharts.highchartsStrings.edgeWidth
+  - typings.highcharts.highchartsStrings.xAxis
   - typings.highcharts.highchartsStrings.lowColor
+  - typings.highcharts.highchartsStrings.dial
+  - typings.highcharts.highchartsStrings.fillColor
+  - typings.highcharts.highchartsStrings.`type`
+  - typings.highcharts.highchartsStrings.borderRadius
+  - typings.highcharts.highchartsStrings.edgeColor
+  - typings.highcharts.highchartsStrings.nodes
+  - typings.highcharts.highchartsStrings.useOhlcData
+  - typings.highcharts.highchartsStrings.pivot
+  - typings.highcharts.highchartsStrings.pointWidth
+  - typings.highcharts.highchartsStrings.cluster
+  - typings.highcharts.highchartsStrings.dataURL
 */
 trait SeriesOptionsType extends js.Object
 

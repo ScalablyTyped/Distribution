@@ -31,22 +31,46 @@ trait DescribeImageScanFindingsResponse extends js.Object {
 
 object DescribeImageScanFindingsResponse {
   @scala.inline
-  def apply(
-    imageId: ImageIdentifier = null,
-    imageScanFindings: ImageScanFindings = null,
-    imageScanStatus: ImageScanStatus = null,
-    nextToken: NextToken = null,
-    registryId: RegistryId = null,
-    repositoryName: RepositoryName = null
-  ): DescribeImageScanFindingsResponse = {
+  def apply(): DescribeImageScanFindingsResponse = {
     val __obj = js.Dynamic.literal()
-    if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
-    if (imageScanFindings != null) __obj.updateDynamic("imageScanFindings")(imageScanFindings.asInstanceOf[js.Any])
-    if (imageScanStatus != null) __obj.updateDynamic("imageScanStatus")(imageScanStatus.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeImageScanFindingsResponse]
   }
+  @scala.inline
+  implicit class DescribeImageScanFindingsResponseOps[Self <: DescribeImageScanFindingsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageId(value: ImageIdentifier): Self = this.set("imageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageId: Self = this.set("imageId", js.undefined)
+    @scala.inline
+    def setImageScanFindings(value: ImageScanFindings): Self = this.set("imageScanFindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageScanFindings: Self = this.set("imageScanFindings", js.undefined)
+    @scala.inline
+    def setImageScanStatus(value: ImageScanStatus): Self = this.set("imageScanStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageScanStatus: Self = this.set("imageScanStatus", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+  }
+  
 }
 

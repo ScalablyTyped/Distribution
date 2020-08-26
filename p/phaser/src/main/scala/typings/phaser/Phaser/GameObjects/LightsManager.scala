@@ -52,9 +52,106 @@ trait LightsManager extends js.Object {
     * @param intensity The intensity of the Light. Default 1.
     */
   def addLight(): Light = js.native
+  def addLight(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    radius: js.UndefOr[scala.Nothing],
+    rgb: js.UndefOr[scala.Nothing],
+    intensity: Double
+  ): Light = js.native
+  def addLight(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    radius: js.UndefOr[scala.Nothing],
+    rgb: Double
+  ): Light = js.native
+  def addLight(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    radius: js.UndefOr[scala.Nothing],
+    rgb: Double,
+    intensity: Double
+  ): Light = js.native
+  def addLight(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], radius: Double): Light = js.native
+  def addLight(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    radius: Double,
+    rgb: js.UndefOr[scala.Nothing],
+    intensity: Double
+  ): Light = js.native
+  def addLight(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], radius: Double, rgb: Double): Light = js.native
+  def addLight(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    radius: Double,
+    rgb: Double,
+    intensity: Double
+  ): Light = js.native
+  def addLight(x: js.UndefOr[scala.Nothing], y: Double): Light = js.native
+  def addLight(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    radius: js.UndefOr[scala.Nothing],
+    rgb: js.UndefOr[scala.Nothing],
+    intensity: Double
+  ): Light = js.native
+  def addLight(x: js.UndefOr[scala.Nothing], y: Double, radius: js.UndefOr[scala.Nothing], rgb: Double): Light = js.native
+  def addLight(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    radius: js.UndefOr[scala.Nothing],
+    rgb: Double,
+    intensity: Double
+  ): Light = js.native
+  def addLight(x: js.UndefOr[scala.Nothing], y: Double, radius: Double): Light = js.native
+  def addLight(
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    radius: Double,
+    rgb: js.UndefOr[scala.Nothing],
+    intensity: Double
+  ): Light = js.native
+  def addLight(x: js.UndefOr[scala.Nothing], y: Double, radius: Double, rgb: Double): Light = js.native
+  def addLight(x: js.UndefOr[scala.Nothing], y: Double, radius: Double, rgb: Double, intensity: Double): Light = js.native
   def addLight(x: Double): Light = js.native
+  def addLight(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    radius: js.UndefOr[scala.Nothing],
+    rgb: js.UndefOr[scala.Nothing],
+    intensity: Double
+  ): Light = js.native
+  def addLight(x: Double, y: js.UndefOr[scala.Nothing], radius: js.UndefOr[scala.Nothing], rgb: Double): Light = js.native
+  def addLight(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    radius: js.UndefOr[scala.Nothing],
+    rgb: Double,
+    intensity: Double
+  ): Light = js.native
+  def addLight(x: Double, y: js.UndefOr[scala.Nothing], radius: Double): Light = js.native
+  def addLight(
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    radius: Double,
+    rgb: js.UndefOr[scala.Nothing],
+    intensity: Double
+  ): Light = js.native
+  def addLight(x: Double, y: js.UndefOr[scala.Nothing], radius: Double, rgb: Double): Light = js.native
+  def addLight(x: Double, y: js.UndefOr[scala.Nothing], radius: Double, rgb: Double, intensity: Double): Light = js.native
   def addLight(x: Double, y: Double): Light = js.native
+  def addLight(
+    x: Double,
+    y: Double,
+    radius: js.UndefOr[scala.Nothing],
+    rgb: js.UndefOr[scala.Nothing],
+    intensity: Double
+  ): Light = js.native
+  def addLight(x: Double, y: Double, radius: js.UndefOr[scala.Nothing], rgb: Double): Light = js.native
+  def addLight(x: Double, y: Double, radius: js.UndefOr[scala.Nothing], rgb: Double, intensity: Double): Light = js.native
   def addLight(x: Double, y: Double, radius: Double): Light = js.native
+  def addLight(x: Double, y: Double, radius: Double, rgb: js.UndefOr[scala.Nothing], intensity: Double): Light = js.native
   def addLight(x: Double, y: Double, radius: Double, rgb: Double): Light = js.native
   def addLight(x: Double, y: Double, radius: Double, rgb: Double, intensity: Double): Light = js.native
   /**

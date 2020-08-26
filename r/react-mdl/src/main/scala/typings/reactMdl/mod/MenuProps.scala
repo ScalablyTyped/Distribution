@@ -6,33 +6,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MenuProps
   extends AllHTMLAttributes[js.Any]
      with ClassAttributes[js.Any]
      with RippleComponent {
-  var align: js.UndefOr[String] = js.undefined
+  var align: js.UndefOr[String] = js.native
   @JSName("target")
-  var target_MenuProps: String
-  var valign: js.UndefOr[String] = js.undefined
+  var target_MenuProps: String = js.native
+  var valign: js.UndefOr[String] = js.native
 }
 
 object MenuProps {
   @scala.inline
-  def apply(
-    target: String,
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    RippleComponent: RippleComponent = null,
-    align: String = null,
-    valign: String = null
-  ): MenuProps = {
+  def apply(target: String): MenuProps = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (RippleComponent != null) js.Dynamic.global.Object.assign(__obj, RippleComponent)
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps]
   }
+  @scala.inline
+  implicit class MenuPropsOps[Self <: MenuProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setValign(value: String): Self = this.set("valign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValign: Self = this.set("valign", js.undefined)
+  }
+  
 }
 

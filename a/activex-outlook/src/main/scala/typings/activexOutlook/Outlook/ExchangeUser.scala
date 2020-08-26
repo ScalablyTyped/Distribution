@@ -58,6 +58,7 @@ trait ExchangeUser extends js.Object {
   def GetMemberOfList(): AddressEntries = js.native
   def GetPicture(): StdPicture = js.native
   def Update(): Unit = js.native
+  def Update(MakePermanent: js.UndefOr[scala.Nothing], Refresh: js.Any): Unit = js.native
   def Update(MakePermanent: js.Any): Unit = js.native
   def Update(MakePermanent: js.Any, Refresh: js.Any): Unit = js.native
   def UpdateFreeBusy(): Unit = js.native

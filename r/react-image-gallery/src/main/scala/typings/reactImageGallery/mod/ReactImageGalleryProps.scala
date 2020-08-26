@@ -17,174 +17,288 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReactImageGalleryProps extends js.Object {
-  var additionalClass: js.UndefOr[String] = js.undefined
-  var autoPlay: js.UndefOr[Boolean] = js.undefined
-  var disableArrowKeys: js.UndefOr[Boolean] = js.undefined
-  var disableSwipe: js.UndefOr[Boolean] = js.undefined
-  var disableThumbnailScroll: js.UndefOr[Boolean] = js.undefined
-  var flickThreshold: js.UndefOr[Double] = js.undefined
-  var indexSeparator: js.UndefOr[String] = js.undefined
-  var infinite: js.UndefOr[Boolean] = js.undefined
-  var isRTL: js.UndefOr[Boolean] = js.undefined
-  var items: js.Array[ReactImageGalleryItem]
-  var lazyLoad: js.UndefOr[Boolean] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
-  var onErrorImageURL: js.UndefOr[String] = js.undefined
-  var onImageError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
-  var onImageLoad: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
-  var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
-  var onMouseOver: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
-  var onPause: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
-  var onPlay: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
-  var onScreenChange: js.UndefOr[js.Function1[/* fullScreenElement */ Element, Unit]] = js.undefined
-  var onSlide: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
+  var additionalClass: js.UndefOr[String] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.native
+  var disableArrowKeys: js.UndefOr[Boolean] = js.native
+  var disableSwipe: js.UndefOr[Boolean] = js.native
+  var disableThumbnailScroll: js.UndefOr[Boolean] = js.native
+  var flickThreshold: js.UndefOr[Double] = js.native
+  var indexSeparator: js.UndefOr[String] = js.native
+  var infinite: js.UndefOr[Boolean] = js.native
+  var isRTL: js.UndefOr[Boolean] = js.native
+  var items: js.Array[ReactImageGalleryItem] = js.native
+  var lazyLoad: js.UndefOr[Boolean] = js.native
+  var onClick: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.native
+  var onErrorImageURL: js.UndefOr[String] = js.native
+  var onImageError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.native
+  var onImageLoad: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.native
+  var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.native
+  var onMouseOver: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.native
+  var onPause: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.native
+  var onPlay: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.native
+  var onScreenChange: js.UndefOr[js.Function1[/* fullScreenElement */ Element, Unit]] = js.native
+  var onSlide: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.native
   var onThumbnailClick: js.UndefOr[
     js.Function2[/* event */ MouseEventHandler[HTMLAnchorElement], /* index */ Double, Unit]
-  ] = js.undefined
-  var onThumbnailError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
-  var onTouchEnd: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.undefined
-  var onTouchMove: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.undefined
-  var onTouchStart: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.undefined
-  var preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.undefined
-  var renderCustomControls: js.UndefOr[js.Function0[ReactNode]] = js.undefined
+  ] = js.native
+  var onThumbnailError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.native
+  var onTouchEnd: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.native
+  var onTouchMove: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.native
+  var onTouchStart: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.native
+  var preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.native
+  var renderCustomControls: js.UndefOr[js.Function0[ReactNode]] = js.native
   var renderFullscreenButton: js.UndefOr[
     js.Function2[/* onClick */ MouseEventHandler[HTMLElement], /* isFullscreen */ Boolean, ReactNode]
-  ] = js.undefined
-  var renderItem: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, ReactNode]] = js.undefined
+  ] = js.native
+  var renderItem: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, ReactNode]] = js.native
   var renderLeftNav: js.UndefOr[
     js.Function2[/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean, ReactNode]
-  ] = js.undefined
+  ] = js.native
   var renderPlayPauseButton: js.UndefOr[
     js.Function2[/* onClick */ MouseEventHandler[HTMLElement], /* isPlaying */ Boolean, ReactNode]
-  ] = js.undefined
+  ] = js.native
   var renderRightNav: js.UndefOr[
     js.Function2[/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean, ReactNode]
-  ] = js.undefined
-  var renderThumbInner: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, ReactNode]] = js.undefined
-  var showBullets: js.UndefOr[Boolean] = js.undefined
-  var showFullscreenButton: js.UndefOr[Boolean] = js.undefined
-  var showIndex: js.UndefOr[Boolean] = js.undefined
-  var showNav: js.UndefOr[Boolean] = js.undefined
-  var showPlayButton: js.UndefOr[Boolean] = js.undefined
-  var showThumbnails: js.UndefOr[Boolean] = js.undefined
-  var slideDuration: js.UndefOr[Double] = js.undefined
-  var slideInterval: js.UndefOr[Double] = js.undefined
-  var slideOnThumbnailOver: js.UndefOr[Boolean] = js.undefined
-  var startIndex: js.UndefOr[Double] = js.undefined
-  var stopPropagation: js.UndefOr[Boolean] = js.undefined
-  var swipeThreshold: js.UndefOr[Double] = js.undefined
-  var swipingTransitionDuration: js.UndefOr[Double] = js.undefined
-  var thumbnailPosition: js.UndefOr[top | right | bottom | left] = js.undefined
-  var useBrowserFullscreen: js.UndefOr[Boolean] = js.undefined
-  var useTranslate3D: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var renderThumbInner: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, ReactNode]] = js.native
+  var showBullets: js.UndefOr[Boolean] = js.native
+  var showFullscreenButton: js.UndefOr[Boolean] = js.native
+  var showIndex: js.UndefOr[Boolean] = js.native
+  var showNav: js.UndefOr[Boolean] = js.native
+  var showPlayButton: js.UndefOr[Boolean] = js.native
+  var showThumbnails: js.UndefOr[Boolean] = js.native
+  var slideDuration: js.UndefOr[Double] = js.native
+  var slideInterval: js.UndefOr[Double] = js.native
+  var slideOnThumbnailOver: js.UndefOr[Boolean] = js.native
+  var startIndex: js.UndefOr[Double] = js.native
+  var stopPropagation: js.UndefOr[Boolean] = js.native
+  var swipeThreshold: js.UndefOr[Double] = js.native
+  var swipingTransitionDuration: js.UndefOr[Double] = js.native
+  var thumbnailPosition: js.UndefOr[top | right | bottom | left] = js.native
+  var useBrowserFullscreen: js.UndefOr[Boolean] = js.native
+  var useTranslate3D: js.UndefOr[Boolean] = js.native
 }
 
 object ReactImageGalleryProps {
   @scala.inline
-  def apply(
-    items: js.Array[ReactImageGalleryItem],
-    additionalClass: String = null,
-    autoPlay: js.UndefOr[Boolean] = js.undefined,
-    disableArrowKeys: js.UndefOr[Boolean] = js.undefined,
-    disableSwipe: js.UndefOr[Boolean] = js.undefined,
-    disableThumbnailScroll: js.UndefOr[Boolean] = js.undefined,
-    flickThreshold: js.UndefOr[Double] = js.undefined,
-    indexSeparator: String = null,
-    infinite: js.UndefOr[Boolean] = js.undefined,
-    isRTL: js.UndefOr[Boolean] = js.undefined,
-    lazyLoad: js.UndefOr[Boolean] = js.undefined,
-    onClick: /* event */ MouseEventHandler[HTMLDivElement] => Unit = null,
-    onErrorImageURL: String = null,
-    onImageError: /* event */ ReactEventHandler[HTMLImageElement] => Unit = null,
-    onImageLoad: /* event */ ReactEventHandler[HTMLImageElement] => Unit = null,
-    onMouseLeave: /* event */ MouseEventHandler[HTMLDivElement] => Unit = null,
-    onMouseOver: /* event */ MouseEventHandler[HTMLDivElement] => Unit = null,
-    onPause: /* currentIndex */ Double => Unit = null,
-    onPlay: /* currentIndex */ Double => Unit = null,
-    onScreenChange: /* fullScreenElement */ Element => Unit = null,
-    onSlide: /* currentIndex */ Double => Unit = null,
-    onThumbnailClick: (/* event */ MouseEventHandler[HTMLAnchorElement], /* index */ Double) => Unit = null,
-    onThumbnailError: /* event */ ReactEventHandler[HTMLImageElement] => Unit = null,
-    onTouchEnd: /* event */ TouchEventHandler[HTMLDivElement] => Unit = null,
-    onTouchMove: /* event */ TouchEventHandler[HTMLDivElement] => Unit = null,
-    onTouchStart: /* event */ TouchEventHandler[HTMLDivElement] => Unit = null,
-    preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.undefined,
-    renderCustomControls: () => ReactNode = null,
-    renderFullscreenButton: (/* onClick */ MouseEventHandler[HTMLElement], /* isFullscreen */ Boolean) => ReactNode = null,
-    renderItem: /* item */ ReactImageGalleryItem => ReactNode = null,
-    renderLeftNav: (/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean) => ReactNode = null,
-    renderPlayPauseButton: (/* onClick */ MouseEventHandler[HTMLElement], /* isPlaying */ Boolean) => ReactNode = null,
-    renderRightNav: (/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean) => ReactNode = null,
-    renderThumbInner: /* item */ ReactImageGalleryItem => ReactNode = null,
-    showBullets: js.UndefOr[Boolean] = js.undefined,
-    showFullscreenButton: js.UndefOr[Boolean] = js.undefined,
-    showIndex: js.UndefOr[Boolean] = js.undefined,
-    showNav: js.UndefOr[Boolean] = js.undefined,
-    showPlayButton: js.UndefOr[Boolean] = js.undefined,
-    showThumbnails: js.UndefOr[Boolean] = js.undefined,
-    slideDuration: js.UndefOr[Double] = js.undefined,
-    slideInterval: js.UndefOr[Double] = js.undefined,
-    slideOnThumbnailOver: js.UndefOr[Boolean] = js.undefined,
-    startIndex: js.UndefOr[Double] = js.undefined,
-    stopPropagation: js.UndefOr[Boolean] = js.undefined,
-    swipeThreshold: js.UndefOr[Double] = js.undefined,
-    swipingTransitionDuration: js.UndefOr[Double] = js.undefined,
-    thumbnailPosition: top | right | bottom | left = null,
-    useBrowserFullscreen: js.UndefOr[Boolean] = js.undefined,
-    useTranslate3D: js.UndefOr[Boolean] = js.undefined
-  ): ReactImageGalleryProps = {
+  def apply(items: js.Array[ReactImageGalleryItem]): ReactImageGalleryProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    if (additionalClass != null) __obj.updateDynamic("additionalClass")(additionalClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableArrowKeys)) __obj.updateDynamic("disableArrowKeys")(disableArrowKeys.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSwipe)) __obj.updateDynamic("disableSwipe")(disableSwipe.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableThumbnailScroll)) __obj.updateDynamic("disableThumbnailScroll")(disableThumbnailScroll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flickThreshold)) __obj.updateDynamic("flickThreshold")(flickThreshold.get.asInstanceOf[js.Any])
-    if (indexSeparator != null) __obj.updateDynamic("indexSeparator")(indexSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onErrorImageURL != null) __obj.updateDynamic("onErrorImageURL")(onErrorImageURL.asInstanceOf[js.Any])
-    if (onImageError != null) __obj.updateDynamic("onImageError")(js.Any.fromFunction1(onImageError))
-    if (onImageLoad != null) __obj.updateDynamic("onImageLoad")(js.Any.fromFunction1(onImageLoad))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
-    if (onScreenChange != null) __obj.updateDynamic("onScreenChange")(js.Any.fromFunction1(onScreenChange))
-    if (onSlide != null) __obj.updateDynamic("onSlide")(js.Any.fromFunction1(onSlide))
-    if (onThumbnailClick != null) __obj.updateDynamic("onThumbnailClick")(js.Any.fromFunction2(onThumbnailClick))
-    if (onThumbnailError != null) __obj.updateDynamic("onThumbnailError")(js.Any.fromFunction1(onThumbnailError))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (!js.isUndefined(preventDefaultTouchmoveEvent)) __obj.updateDynamic("preventDefaultTouchmoveEvent")(preventDefaultTouchmoveEvent.get.asInstanceOf[js.Any])
-    if (renderCustomControls != null) __obj.updateDynamic("renderCustomControls")(js.Any.fromFunction0(renderCustomControls))
-    if (renderFullscreenButton != null) __obj.updateDynamic("renderFullscreenButton")(js.Any.fromFunction2(renderFullscreenButton))
-    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction1(renderItem))
-    if (renderLeftNav != null) __obj.updateDynamic("renderLeftNav")(js.Any.fromFunction2(renderLeftNav))
-    if (renderPlayPauseButton != null) __obj.updateDynamic("renderPlayPauseButton")(js.Any.fromFunction2(renderPlayPauseButton))
-    if (renderRightNav != null) __obj.updateDynamic("renderRightNav")(js.Any.fromFunction2(renderRightNav))
-    if (renderThumbInner != null) __obj.updateDynamic("renderThumbInner")(js.Any.fromFunction1(renderThumbInner))
-    if (!js.isUndefined(showBullets)) __obj.updateDynamic("showBullets")(showBullets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFullscreenButton)) __obj.updateDynamic("showFullscreenButton")(showFullscreenButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIndex)) __obj.updateDynamic("showIndex")(showIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNav)) __obj.updateDynamic("showNav")(showNav.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPlayButton)) __obj.updateDynamic("showPlayButton")(showPlayButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showThumbnails)) __obj.updateDynamic("showThumbnails")(showThumbnails.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideDuration)) __obj.updateDynamic("slideDuration")(slideDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideInterval)) __obj.updateDynamic("slideInterval")(slideInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideOnThumbnailOver)) __obj.updateDynamic("slideOnThumbnailOver")(slideOnThumbnailOver.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeThreshold)) __obj.updateDynamic("swipeThreshold")(swipeThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipingTransitionDuration)) __obj.updateDynamic("swipingTransitionDuration")(swipingTransitionDuration.get.asInstanceOf[js.Any])
-    if (thumbnailPosition != null) __obj.updateDynamic("thumbnailPosition")(thumbnailPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBrowserFullscreen)) __obj.updateDynamic("useBrowserFullscreen")(useBrowserFullscreen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTranslate3D)) __obj.updateDynamic("useTranslate3D")(useTranslate3D.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactImageGalleryProps]
   }
+  @scala.inline
+  implicit class ReactImageGalleryPropsOps[Self <: ReactImageGalleryProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: ReactImageGalleryItem*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[ReactImageGalleryItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditionalClass(value: String): Self = this.set("additionalClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalClass: Self = this.set("additionalClass", js.undefined)
+    @scala.inline
+    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    @scala.inline
+    def setDisableArrowKeys(value: Boolean): Self = this.set("disableArrowKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableArrowKeys: Self = this.set("disableArrowKeys", js.undefined)
+    @scala.inline
+    def setDisableSwipe(value: Boolean): Self = this.set("disableSwipe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableSwipe: Self = this.set("disableSwipe", js.undefined)
+    @scala.inline
+    def setDisableThumbnailScroll(value: Boolean): Self = this.set("disableThumbnailScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableThumbnailScroll: Self = this.set("disableThumbnailScroll", js.undefined)
+    @scala.inline
+    def setFlickThreshold(value: Double): Self = this.set("flickThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlickThreshold: Self = this.set("flickThreshold", js.undefined)
+    @scala.inline
+    def setIndexSeparator(value: String): Self = this.set("indexSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexSeparator: Self = this.set("indexSeparator", js.undefined)
+    @scala.inline
+    def setInfinite(value: Boolean): Self = this.set("infinite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfinite: Self = this.set("infinite", js.undefined)
+    @scala.inline
+    def setIsRTL(value: Boolean): Self = this.set("isRTL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRTL: Self = this.set("isRTL", js.undefined)
+    @scala.inline
+    def setLazyLoad(value: Boolean): Self = this.set("lazyLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazyLoad: Self = this.set("lazyLoad", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* event */ MouseEventHandler[HTMLDivElement] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnErrorImageURL(value: String): Self = this.set("onErrorImageURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnErrorImageURL: Self = this.set("onErrorImageURL", js.undefined)
+    @scala.inline
+    def setOnImageError(value: /* event */ ReactEventHandler[HTMLImageElement] => Unit): Self = this.set("onImageError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnImageError: Self = this.set("onImageError", js.undefined)
+    @scala.inline
+    def setOnImageLoad(value: /* event */ ReactEventHandler[HTMLImageElement] => Unit): Self = this.set("onImageLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnImageLoad: Self = this.set("onImageLoad", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: /* event */ MouseEventHandler[HTMLDivElement] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseOver(value: /* event */ MouseEventHandler[HTMLDivElement] => Unit): Self = this.set("onMouseOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOver: Self = this.set("onMouseOver", js.undefined)
+    @scala.inline
+    def setOnPause(value: /* currentIndex */ Double => Unit): Self = this.set("onPause", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPause: Self = this.set("onPause", js.undefined)
+    @scala.inline
+    def setOnPlay(value: /* currentIndex */ Double => Unit): Self = this.set("onPlay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPlay: Self = this.set("onPlay", js.undefined)
+    @scala.inline
+    def setOnScreenChange(value: /* fullScreenElement */ Element => Unit): Self = this.set("onScreenChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScreenChange: Self = this.set("onScreenChange", js.undefined)
+    @scala.inline
+    def setOnSlide(value: /* currentIndex */ Double => Unit): Self = this.set("onSlide", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSlide: Self = this.set("onSlide", js.undefined)
+    @scala.inline
+    def setOnThumbnailClick(value: (/* event */ MouseEventHandler[HTMLAnchorElement], /* index */ Double) => Unit): Self = this.set("onThumbnailClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnThumbnailClick: Self = this.set("onThumbnailClick", js.undefined)
+    @scala.inline
+    def setOnThumbnailError(value: /* event */ ReactEventHandler[HTMLImageElement] => Unit): Self = this.set("onThumbnailError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnThumbnailError: Self = this.set("onThumbnailError", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(value: /* event */ TouchEventHandler[HTMLDivElement] => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchMove(value: /* event */ TouchEventHandler[HTMLDivElement] => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: /* event */ TouchEventHandler[HTMLDivElement] => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setPreventDefaultTouchmoveEvent(value: Boolean): Self = this.set("preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreventDefaultTouchmoveEvent: Self = this.set("preventDefaultTouchmoveEvent", js.undefined)
+    @scala.inline
+    def setRenderCustomControls(value: () => ReactNode): Self = this.set("renderCustomControls", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRenderCustomControls: Self = this.set("renderCustomControls", js.undefined)
+    @scala.inline
+    def setRenderFullscreenButton(value: (/* onClick */ MouseEventHandler[HTMLElement], /* isFullscreen */ Boolean) => ReactNode): Self = this.set("renderFullscreenButton", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRenderFullscreenButton: Self = this.set("renderFullscreenButton", js.undefined)
+    @scala.inline
+    def setRenderItem(value: /* item */ ReactImageGalleryItem => ReactNode): Self = this.set("renderItem", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderItem: Self = this.set("renderItem", js.undefined)
+    @scala.inline
+    def setRenderLeftNav(value: (/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean) => ReactNode): Self = this.set("renderLeftNav", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRenderLeftNav: Self = this.set("renderLeftNav", js.undefined)
+    @scala.inline
+    def setRenderPlayPauseButton(value: (/* onClick */ MouseEventHandler[HTMLElement], /* isPlaying */ Boolean) => ReactNode): Self = this.set("renderPlayPauseButton", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRenderPlayPauseButton: Self = this.set("renderPlayPauseButton", js.undefined)
+    @scala.inline
+    def setRenderRightNav(value: (/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean) => ReactNode): Self = this.set("renderRightNav", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRenderRightNav: Self = this.set("renderRightNav", js.undefined)
+    @scala.inline
+    def setRenderThumbInner(value: /* item */ ReactImageGalleryItem => ReactNode): Self = this.set("renderThumbInner", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderThumbInner: Self = this.set("renderThumbInner", js.undefined)
+    @scala.inline
+    def setShowBullets(value: Boolean): Self = this.set("showBullets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowBullets: Self = this.set("showBullets", js.undefined)
+    @scala.inline
+    def setShowFullscreenButton(value: Boolean): Self = this.set("showFullscreenButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFullscreenButton: Self = this.set("showFullscreenButton", js.undefined)
+    @scala.inline
+    def setShowIndex(value: Boolean): Self = this.set("showIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowIndex: Self = this.set("showIndex", js.undefined)
+    @scala.inline
+    def setShowNav(value: Boolean): Self = this.set("showNav", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowNav: Self = this.set("showNav", js.undefined)
+    @scala.inline
+    def setShowPlayButton(value: Boolean): Self = this.set("showPlayButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPlayButton: Self = this.set("showPlayButton", js.undefined)
+    @scala.inline
+    def setShowThumbnails(value: Boolean): Self = this.set("showThumbnails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowThumbnails: Self = this.set("showThumbnails", js.undefined)
+    @scala.inline
+    def setSlideDuration(value: Double): Self = this.set("slideDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideDuration: Self = this.set("slideDuration", js.undefined)
+    @scala.inline
+    def setSlideInterval(value: Double): Self = this.set("slideInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideInterval: Self = this.set("slideInterval", js.undefined)
+    @scala.inline
+    def setSlideOnThumbnailOver(value: Boolean): Self = this.set("slideOnThumbnailOver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideOnThumbnailOver: Self = this.set("slideOnThumbnailOver", js.undefined)
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    @scala.inline
+    def setStopPropagation(value: Boolean): Self = this.set("stopPropagation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopPropagation: Self = this.set("stopPropagation", js.undefined)
+    @scala.inline
+    def setSwipeThreshold(value: Double): Self = this.set("swipeThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwipeThreshold: Self = this.set("swipeThreshold", js.undefined)
+    @scala.inline
+    def setSwipingTransitionDuration(value: Double): Self = this.set("swipingTransitionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwipingTransitionDuration: Self = this.set("swipingTransitionDuration", js.undefined)
+    @scala.inline
+    def setThumbnailPosition(value: top | right | bottom | left): Self = this.set("thumbnailPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailPosition: Self = this.set("thumbnailPosition", js.undefined)
+    @scala.inline
+    def setUseBrowserFullscreen(value: Boolean): Self = this.set("useBrowserFullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseBrowserFullscreen: Self = this.set("useBrowserFullscreen", js.undefined)
+    @scala.inline
+    def setUseTranslate3D(value: Boolean): Self = this.set("useTranslate3D", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseTranslate3D: Self = this.set("useTranslate3D", js.undefined)
+  }
+  
 }
 

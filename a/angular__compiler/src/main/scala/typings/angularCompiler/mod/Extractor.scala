@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "Extractor")
 @js.native
 class Extractor protected ()
-  extends typings.angularCompiler.publicApiMod.Extractor {
+  extends typings.angularCompiler.compilerMod.Extractor {
   def this(
     host: ExtractorHost,
     staticSymbolResolver: typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver,

@@ -25,6 +25,7 @@ trait DiagramNode extends js.Object {
     * @param Office.MsoDiagramNodeType [NodeType=1]
     */
   def AddNode(): DiagramNode = js.native
+  def AddNode(Pos: js.UndefOr[scala.Nothing], NodeType: MsoDiagramNodeType): DiagramNode = js.native
   def AddNode(Pos: MsoRelativeNodePosition): DiagramNode = js.native
   def AddNode(Pos: MsoRelativeNodePosition, NodeType: MsoDiagramNodeType): DiagramNode = js.native
   /**
@@ -32,6 +33,7 @@ trait DiagramNode extends js.Object {
     * @param Office.MsoRelativeNodePosition [Pos=2]
     */
   def CloneNode(copyChildren: Boolean): DiagramNode = js.native
+  def CloneNode(copyChildren: Boolean, TargetNode: js.UndefOr[scala.Nothing], Pos: MsoRelativeNodePosition): DiagramNode = js.native
   def CloneNode(copyChildren: Boolean, TargetNode: DiagramNode): DiagramNode = js.native
   def CloneNode(copyChildren: Boolean, TargetNode: DiagramNode, Pos: MsoRelativeNodePosition): DiagramNode = js.native
   def Delete(): Unit = js.native

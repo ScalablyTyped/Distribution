@@ -20,7 +20,34 @@ class Grid protected () extends js.Object {
     */
   def this(rowHeights: js.Array[Double], columnWidths: js.Array[Double]) = this()
   def this(rowHeights: js.Array[Double], columnWidths: js.Array[Double], bleed: Double) = this()
+  def this(
+    rowHeights: js.Array[Double],
+    columnWidths: js.Array[Double],
+    bleed: js.UndefOr[scala.Nothing],
+    ghostHeight: Double
+  ) = this()
   def this(rowHeights: js.Array[Double], columnWidths: js.Array[Double], bleed: Double, ghostHeight: Double) = this()
+  def this(
+    rowHeights: js.Array[Double],
+    columnWidths: js.Array[Double],
+    bleed: js.UndefOr[scala.Nothing],
+    ghostHeight: js.UndefOr[scala.Nothing],
+    ghostWidth: Double
+  ) = this()
+  def this(
+    rowHeights: js.Array[Double],
+    columnWidths: js.Array[Double],
+    bleed: js.UndefOr[scala.Nothing],
+    ghostHeight: Double,
+    ghostWidth: Double
+  ) = this()
+  def this(
+    rowHeights: js.Array[Double],
+    columnWidths: js.Array[Double],
+    bleed: Double,
+    ghostHeight: js.UndefOr[scala.Nothing],
+    ghostWidth: Double
+  ) = this()
   def this(
     rowHeights: js.Array[Double],
     columnWidths: js.Array[Double],
@@ -55,6 +82,7 @@ class Grid protected () extends js.Object {
     * given `Rect` argument.
     */
   def getColumnIndicesInRect(rect: Rect): IColumnIndices = js.native
+  def getColumnIndicesInRect(rect: Rect, includeGhostCells: js.UndefOr[scala.Nothing], limit: Double): IColumnIndices = js.native
   def getColumnIndicesInRect(rect: Rect, includeGhostCells: Boolean): IColumnIndices = js.native
   def getColumnIndicesInRect(rect: Rect, includeGhostCells: Boolean, limit: Double): IColumnIndices = js.native
   /**
@@ -88,6 +116,7 @@ class Grid protected () extends js.Object {
     * `Rect` argument.
     */
   def getRowIndicesInRect(rect: Rect): IRowIndices = js.native
+  def getRowIndicesInRect(rect: Rect, includeGhostCells: js.UndefOr[scala.Nothing], limit: Double): IRowIndices = js.native
   def getRowIndicesInRect(rect: Rect, includeGhostCells: Boolean): IRowIndices = js.native
   def getRowIndicesInRect(rect: Rect, includeGhostCells: Boolean, limit: Double): IRowIndices = js.native
   /**

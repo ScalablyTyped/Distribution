@@ -1,6 +1,5 @@
 package typings.scChannel.mod
 
-import typings.std.IteratorResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +13,5 @@ class ^[T] protected () extends SCChannel[T] {
     eventDemux: typings.streamDemux.mod.^[T],
     dataStream: typings.asyncIterableStream.mod.^[T]
   ) = this()
-  /* CompleteClass */
-  override def next(): js.Promise[IteratorResult[T, _]] = js.native
-  /* CompleteClass */
-  override def `return`(): Unit = js.native
 }
 

@@ -31,6 +31,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     */
   def autoscaling(): GaxiosPromise[SchemaOperation] = js.native
   def autoscaling(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def autoscaling(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def autoscaling(params: ParamsResourceProjectsZonesClustersNodepoolsAutoscaling): GaxiosPromise[SchemaOperation] = js.native
   def autoscaling(
     params: ParamsResourceProjectsZonesClustersNodepoolsAutoscaling,
@@ -64,6 +65,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceProjectsZonesClustersNodepoolsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(
     params: ParamsResourceProjectsZonesClustersNodepoolsCreate,
@@ -98,6 +100,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceProjectsZonesClustersNodepoolsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceProjectsZonesClustersNodepoolsDelete,
@@ -132,6 +135,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaNodePool] = js.native
   def get(callback: BodyResponseCallback[SchemaNodePool]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNodePool] = js.native
   def get(params: ParamsResourceProjectsZonesClustersNodepoolsGet): GaxiosPromise[SchemaNodePool] = js.native
   def get(
     params: ParamsResourceProjectsZonesClustersNodepoolsGet,
@@ -165,6 +169,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListNodePoolsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListNodePoolsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListNodePoolsResponse] = js.native
   def list(params: ParamsResourceProjectsZonesClustersNodepoolsList): GaxiosPromise[SchemaListNodePoolsResponse] = js.native
   def list(
     params: ParamsResourceProjectsZonesClustersNodepoolsList,
@@ -200,6 +205,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     */
   def rollback(): GaxiosPromise[SchemaOperation] = js.native
   def rollback(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def rollback(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def rollback(params: ParamsResourceProjectsZonesClustersNodepoolsRollback): GaxiosPromise[SchemaOperation] = js.native
   def rollback(
     params: ParamsResourceProjectsZonesClustersNodepoolsRollback,
@@ -234,6 +240,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     */
   def setManagement(): GaxiosPromise[SchemaOperation] = js.native
   def setManagement(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setManagement(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setManagement(params: ParamsResourceProjectsZonesClustersNodepoolsSetmanagement): GaxiosPromise[SchemaOperation] = js.native
   def setManagement(
     params: ParamsResourceProjectsZonesClustersNodepoolsSetmanagement,
@@ -268,6 +275,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     */
   def setSize(): GaxiosPromise[SchemaOperation] = js.native
   def setSize(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setSize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setSize(params: ParamsResourceProjectsZonesClustersNodepoolsSetsize): GaxiosPromise[SchemaOperation] = js.native
   def setSize(
     params: ParamsResourceProjectsZonesClustersNodepoolsSetsize,
@@ -302,6 +310,7 @@ class ResourceProjectsZonesClustersNodepools protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceProjectsZonesClustersNodepoolsUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(
     params: ParamsResourceProjectsZonesClustersNodepoolsUpdate,

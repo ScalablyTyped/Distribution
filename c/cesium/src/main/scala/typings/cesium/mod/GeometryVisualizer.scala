@@ -12,6 +12,12 @@ class GeometryVisualizer protected () extends Visualizer {
   def this(
     scene: Scene,
     entityCollection: EntityCollection,
+    primitives: js.UndefOr[scala.Nothing],
+    groundPrimitives: PrimitiveCollection
+  ) = this()
+  def this(
+    scene: Scene,
+    entityCollection: EntityCollection,
     primitives: PrimitiveCollection,
     groundPrimitives: PrimitiveCollection
   ) = this()

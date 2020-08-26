@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Transform ()
   extends typings.vegaTypings.dataflowMod.Transform {
   def this(init: js.Any) = this()
+  def this(init: js.UndefOr[scala.Nothing], params: js.Any) = this()
   def this(init: js.Any, params: js.Any) = this()
 }
 

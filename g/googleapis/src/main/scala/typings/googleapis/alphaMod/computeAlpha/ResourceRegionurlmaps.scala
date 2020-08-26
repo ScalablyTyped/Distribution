@@ -30,6 +30,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegionurlmapsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegionurlmapsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -60,6 +61,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaUrlMap] = js.native
   def get(callback: BodyResponseCallback[SchemaUrlMap]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlMap] = js.native
   def get(params: ParamsResourceRegionurlmapsGet): GaxiosPromise[SchemaUrlMap] = js.native
   def get(params: ParamsResourceRegionurlmapsGet, callback: BodyResponseCallback[SchemaUrlMap]): Unit = js.native
   def get(
@@ -91,6 +93,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegionurlmapsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegionurlmapsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -123,6 +126,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     */
   def invalidateCache(): GaxiosPromise[SchemaOperation] = js.native
   def invalidateCache(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def invalidateCache(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def invalidateCache(params: ParamsResourceRegionurlmapsInvalidatecache): GaxiosPromise[SchemaOperation] = js.native
   def invalidateCache(
     params: ParamsResourceRegionurlmapsInvalidatecache,
@@ -159,6 +163,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaUrlMapList] = js.native
   def list(callback: BodyResponseCallback[SchemaUrlMapList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlMapList] = js.native
   def list(params: ParamsResourceRegionurlmapsList): GaxiosPromise[SchemaUrlMapList] = js.native
   def list(params: ParamsResourceRegionurlmapsList, callback: BodyResponseCallback[SchemaUrlMapList]): Unit = js.native
   def list(
@@ -192,6 +197,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceRegionurlmapsPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceRegionurlmapsPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -222,6 +228,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceRegionurlmapsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceRegionurlmapsTestiampermissions,
@@ -257,6 +264,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceRegionurlmapsUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceRegionurlmapsUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(
@@ -289,6 +297,7 @@ class ResourceRegionurlmaps protected () extends js.Object {
     */
   def validate(): GaxiosPromise[SchemaUrlMapsValidateResponse] = js.native
   def validate(callback: BodyResponseCallback[SchemaUrlMapsValidateResponse]): Unit = js.native
+  def validate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlMapsValidateResponse] = js.native
   def validate(params: ParamsResourceRegionurlmapsValidate): GaxiosPromise[SchemaUrlMapsValidateResponse] = js.native
   def validate(
     params: ParamsResourceRegionurlmapsValidate,

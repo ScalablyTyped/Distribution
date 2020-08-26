@@ -12,7 +12,7 @@ A write stream constructor that supports a flush function that is called before 
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 45 |
-| # downloads        | 278786386 |
+| # downloads        | 286995259 |
 | # stars            | 1 |
 
 ## Links

@@ -10,9 +10,9 @@ Fast and powerful CSV parser for the browser that supports web workers and strea
 | ------------------ | :-------------: |
 | Full name          | papaparse |
 | Keywords           | csv, parser, parse, parsing, delimited, text, data, auto-detect, comma, tab, pipe, file, filereader, stream, worker, workers, thread, threading, multi-threaded, jquery-plugin |
-| # releases         | 13 |
-| # dependents       | 316 |
-| # downloads        | 10823181 |
+| # releases         | 15 |
+| # dependents       | 321 |
+| # downloads        | 11245074 |
 | # stars            | 24 |
 
 ## Links

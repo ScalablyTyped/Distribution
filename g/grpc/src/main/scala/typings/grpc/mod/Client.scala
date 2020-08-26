@@ -41,6 +41,13 @@ class Client protected () extends js.Object {
     method: String,
     serialize: serialize[RequestType],
     deserialize: deserialize[ResponseType],
+    metadata: js.UndefOr[scala.Nothing],
+    options: CallOptions
+  ): ClientDuplexStream[RequestType, ResponseType] = js.native
+  def makeBidiStreamRequest[RequestType, ResponseType](
+    method: String,
+    serialize: serialize[RequestType],
+    deserialize: deserialize[ResponseType],
     metadata: Null,
     options: CallOptions
   ): ClientDuplexStream[RequestType, ResponseType] = js.native
@@ -117,6 +124,14 @@ class Client protected () extends js.Object {
     serialize: serialize[RequestType],
     deserialize: deserialize[ResponseType],
     argument: RequestType
+  ): ClientReadableStream[ResponseType] = js.native
+  def makeServerStreamRequest[RequestType, ResponseType](
+    method: String,
+    serialize: serialize[RequestType],
+    deserialize: deserialize[ResponseType],
+    argument: RequestType,
+    metadata: js.UndefOr[scala.Nothing],
+    options: CallOptions
   ): ClientReadableStream[ResponseType] = js.native
   def makeServerStreamRequest[RequestType, ResponseType](
     method: String,

@@ -43,7 +43,7 @@ class StringTemplateParameterType protected () extends ParameterType {
     * In version 8.8.0: introduced
     */
   def grammar: StringTemplateParameterGrammar = js.native
-  def grammar(newValue: StringTemplateParameterGrammar): js.Any = js.native
+  def grammar_=(newValue: StringTemplateParameterGrammar): Unit = js.native
 }
 
 /* static members */

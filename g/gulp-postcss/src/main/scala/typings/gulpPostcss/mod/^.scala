@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(): ReadWriteStream = js.native
   def apply(callback: js.Function1[/* file */ File, typings.gulpPostcss.anon.Options]): ReadWriteStream = js.native
+  def apply(plugins: js.UndefOr[scala.Nothing], options: Options): ReadWriteStream = js.native
   def apply(plugins: js.Array[_]): ReadWriteStream = js.native
   def apply(plugins: js.Array[_], options: Options): ReadWriteStream = js.native
 }

@@ -144,62 +144,152 @@ trait SchemaCreative extends js.Object {
 
 object SchemaCreative {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    adChoicesDestinationUrl: String = null,
-    advertiserName: String = null,
-    agencyId: String = null,
-    apiUpdateTime: String = null,
-    attributes: js.Array[String] = null,
-    clickThroughUrls: js.Array[String] = null,
-    corrections: js.Array[SchemaCorrection] = null,
-    creativeId: String = null,
-    dealsStatus: String = null,
-    declaredClickThroughUrls: js.Array[String] = null,
-    detectedAdvertiserIds: js.Array[String] = null,
-    detectedDomains: js.Array[String] = null,
-    detectedLanguages: js.Array[String] = null,
-    detectedProductCategories: js.Array[Double] = null,
-    detectedSensitiveCategories: js.Array[Double] = null,
-    filteringStats: SchemaFilteringStats = null,
-    html: SchemaHtmlContent = null,
-    impressionTrackingUrls: js.Array[String] = null,
-    native: SchemaNativeContent = null,
-    openAuctionStatus: String = null,
-    restrictedCategories: js.Array[String] = null,
-    servingRestrictions: js.Array[SchemaServingRestriction] = null,
-    vendorIds: js.Array[Double] = null,
-    version: js.UndefOr[Double] = js.undefined,
-    video: SchemaVideoContent = null
-  ): SchemaCreative = {
+  def apply(): SchemaCreative = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (adChoicesDestinationUrl != null) __obj.updateDynamic("adChoicesDestinationUrl")(adChoicesDestinationUrl.asInstanceOf[js.Any])
-    if (advertiserName != null) __obj.updateDynamic("advertiserName")(advertiserName.asInstanceOf[js.Any])
-    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId.asInstanceOf[js.Any])
-    if (apiUpdateTime != null) __obj.updateDynamic("apiUpdateTime")(apiUpdateTime.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (clickThroughUrls != null) __obj.updateDynamic("clickThroughUrls")(clickThroughUrls.asInstanceOf[js.Any])
-    if (corrections != null) __obj.updateDynamic("corrections")(corrections.asInstanceOf[js.Any])
-    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
-    if (dealsStatus != null) __obj.updateDynamic("dealsStatus")(dealsStatus.asInstanceOf[js.Any])
-    if (declaredClickThroughUrls != null) __obj.updateDynamic("declaredClickThroughUrls")(declaredClickThroughUrls.asInstanceOf[js.Any])
-    if (detectedAdvertiserIds != null) __obj.updateDynamic("detectedAdvertiserIds")(detectedAdvertiserIds.asInstanceOf[js.Any])
-    if (detectedDomains != null) __obj.updateDynamic("detectedDomains")(detectedDomains.asInstanceOf[js.Any])
-    if (detectedLanguages != null) __obj.updateDynamic("detectedLanguages")(detectedLanguages.asInstanceOf[js.Any])
-    if (detectedProductCategories != null) __obj.updateDynamic("detectedProductCategories")(detectedProductCategories.asInstanceOf[js.Any])
-    if (detectedSensitiveCategories != null) __obj.updateDynamic("detectedSensitiveCategories")(detectedSensitiveCategories.asInstanceOf[js.Any])
-    if (filteringStats != null) __obj.updateDynamic("filteringStats")(filteringStats.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (impressionTrackingUrls != null) __obj.updateDynamic("impressionTrackingUrls")(impressionTrackingUrls.asInstanceOf[js.Any])
-    if (native != null) __obj.updateDynamic("native")(native.asInstanceOf[js.Any])
-    if (openAuctionStatus != null) __obj.updateDynamic("openAuctionStatus")(openAuctionStatus.asInstanceOf[js.Any])
-    if (restrictedCategories != null) __obj.updateDynamic("restrictedCategories")(restrictedCategories.asInstanceOf[js.Any])
-    if (servingRestrictions != null) __obj.updateDynamic("servingRestrictions")(servingRestrictions.asInstanceOf[js.Any])
-    if (vendorIds != null) __obj.updateDynamic("vendorIds")(vendorIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreative]
   }
+  @scala.inline
+  implicit class SchemaCreativeOps[Self <: SchemaCreative] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdChoicesDestinationUrl(value: String): Self = this.set("adChoicesDestinationUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdChoicesDestinationUrl: Self = this.set("adChoicesDestinationUrl", js.undefined)
+    @scala.inline
+    def setAdvertiserName(value: String): Self = this.set("advertiserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserName: Self = this.set("advertiserName", js.undefined)
+    @scala.inline
+    def setAgencyId(value: String): Self = this.set("agencyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgencyId: Self = this.set("agencyId", js.undefined)
+    @scala.inline
+    def setApiUpdateTime(value: String): Self = this.set("apiUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiUpdateTime: Self = this.set("apiUpdateTime", js.undefined)
+    @scala.inline
+    def setAttributesVarargs(value: String*): Self = this.set("attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: js.Array[String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setClickThroughUrlsVarargs(value: String*): Self = this.set("clickThroughUrls", js.Array(value :_*))
+    @scala.inline
+    def setClickThroughUrls(value: js.Array[String]): Self = this.set("clickThroughUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickThroughUrls: Self = this.set("clickThroughUrls", js.undefined)
+    @scala.inline
+    def setCorrectionsVarargs(value: SchemaCorrection*): Self = this.set("corrections", js.Array(value :_*))
+    @scala.inline
+    def setCorrections(value: js.Array[SchemaCorrection]): Self = this.set("corrections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorrections: Self = this.set("corrections", js.undefined)
+    @scala.inline
+    def setCreativeId(value: String): Self = this.set("creativeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeId: Self = this.set("creativeId", js.undefined)
+    @scala.inline
+    def setDealsStatus(value: String): Self = this.set("dealsStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDealsStatus: Self = this.set("dealsStatus", js.undefined)
+    @scala.inline
+    def setDeclaredClickThroughUrlsVarargs(value: String*): Self = this.set("declaredClickThroughUrls", js.Array(value :_*))
+    @scala.inline
+    def setDeclaredClickThroughUrls(value: js.Array[String]): Self = this.set("declaredClickThroughUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeclaredClickThroughUrls: Self = this.set("declaredClickThroughUrls", js.undefined)
+    @scala.inline
+    def setDetectedAdvertiserIdsVarargs(value: String*): Self = this.set("detectedAdvertiserIds", js.Array(value :_*))
+    @scala.inline
+    def setDetectedAdvertiserIds(value: js.Array[String]): Self = this.set("detectedAdvertiserIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectedAdvertiserIds: Self = this.set("detectedAdvertiserIds", js.undefined)
+    @scala.inline
+    def setDetectedDomainsVarargs(value: String*): Self = this.set("detectedDomains", js.Array(value :_*))
+    @scala.inline
+    def setDetectedDomains(value: js.Array[String]): Self = this.set("detectedDomains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectedDomains: Self = this.set("detectedDomains", js.undefined)
+    @scala.inline
+    def setDetectedLanguagesVarargs(value: String*): Self = this.set("detectedLanguages", js.Array(value :_*))
+    @scala.inline
+    def setDetectedLanguages(value: js.Array[String]): Self = this.set("detectedLanguages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectedLanguages: Self = this.set("detectedLanguages", js.undefined)
+    @scala.inline
+    def setDetectedProductCategoriesVarargs(value: Double*): Self = this.set("detectedProductCategories", js.Array(value :_*))
+    @scala.inline
+    def setDetectedProductCategories(value: js.Array[Double]): Self = this.set("detectedProductCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectedProductCategories: Self = this.set("detectedProductCategories", js.undefined)
+    @scala.inline
+    def setDetectedSensitiveCategoriesVarargs(value: Double*): Self = this.set("detectedSensitiveCategories", js.Array(value :_*))
+    @scala.inline
+    def setDetectedSensitiveCategories(value: js.Array[Double]): Self = this.set("detectedSensitiveCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectedSensitiveCategories: Self = this.set("detectedSensitiveCategories", js.undefined)
+    @scala.inline
+    def setFilteringStats(value: SchemaFilteringStats): Self = this.set("filteringStats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilteringStats: Self = this.set("filteringStats", js.undefined)
+    @scala.inline
+    def setHtml(value: SchemaHtmlContent): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setImpressionTrackingUrlsVarargs(value: String*): Self = this.set("impressionTrackingUrls", js.Array(value :_*))
+    @scala.inline
+    def setImpressionTrackingUrls(value: js.Array[String]): Self = this.set("impressionTrackingUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImpressionTrackingUrls: Self = this.set("impressionTrackingUrls", js.undefined)
+    @scala.inline
+    def setNative(value: SchemaNativeContent): Self = this.set("native", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNative: Self = this.set("native", js.undefined)
+    @scala.inline
+    def setOpenAuctionStatus(value: String): Self = this.set("openAuctionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenAuctionStatus: Self = this.set("openAuctionStatus", js.undefined)
+    @scala.inline
+    def setRestrictedCategoriesVarargs(value: String*): Self = this.set("restrictedCategories", js.Array(value :_*))
+    @scala.inline
+    def setRestrictedCategories(value: js.Array[String]): Self = this.set("restrictedCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictedCategories: Self = this.set("restrictedCategories", js.undefined)
+    @scala.inline
+    def setServingRestrictionsVarargs(value: SchemaServingRestriction*): Self = this.set("servingRestrictions", js.Array(value :_*))
+    @scala.inline
+    def setServingRestrictions(value: js.Array[SchemaServingRestriction]): Self = this.set("servingRestrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServingRestrictions: Self = this.set("servingRestrictions", js.undefined)
+    @scala.inline
+    def setVendorIdsVarargs(value: Double*): Self = this.set("vendorIds", js.Array(value :_*))
+    @scala.inline
+    def setVendorIds(value: js.Array[Double]): Self = this.set("vendorIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVendorIds: Self = this.set("vendorIds", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVideo(value: SchemaVideoContent): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+  }
+  
 }
 
